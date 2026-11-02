@@ -6,34 +6,63 @@ category: jalkiruoka
 language: fi
 status: published
 diet_class: vhh_tiukka
-main_ingredient: [mantelijauho]
-cooking_method: [leivonta]
+main_ingredient:
+  - mantelijauho
+cooking_method:
+  - leivonta
 ingredients:
-  - { amount: 150, unit: g, item: mozzarella-raastetta }
-  - { amount: 50, unit: g, item: maustamatonta tuorejuustoa }
-  - { amount: 120, unit: g, item: mantelijauhoa }
-  - { amount: 1, unit: rkl, item: psylliumia }
-  - { amount: 1, unit: kpl, item: kananmunaa }
-  - { amount: 30, unit: g, item: voita täytteeseen }
-  - { amount: 2, unit: rkl, item: erytritolia täytteeseen }
-  - { amount: 1, unit: rkl, item: kanelia }
-  - { amount: 1, unit: kpl, item: kananmunaa voiteluun }
+  - amount: 150
+    unit: g
+    item: mozzarellaraastetta,20.7%
+  - amount: 50
+    unit: g
+    item: maustamatonta tuorejuustoa,11%
+  - amount: 120
+    unit: g
+    item: kokonaisista manteleista jauhettua täysrasvaista mantelijauhoa
+  - amount: 10
+    unit: g
+    item: psyllium-siemenkuorijauhetta
+  - amount: 55
+    unit: g
+    item: kuoretonta kananmunaa taikinaan
+  - amount: 30
+    unit: g
+    item: voita täytteeseen
+  - amount: 24
+    unit: g
+    item: Foodin100%erytritolia
+  - amount: 7.8
+    unit: g
+    item: kanelia
+  - amount: 55
+    unit: g
+    item: kuoretonta kananmunaa voiteluun
 servings: 8
 time_total_min: 40
 difficulty: Keskitaso
-tags: [jälkiruoka, leivonnainen, kaneli]
+tags:
+  - jälkiruoka
+  - leivonnainen
+  - kaneli
 image:
   src: jalkiruoat/vhh-korvapuustit.webp
   alt: Kanelitäytteisiä mantelitaikinasta leivottuja korvapuusteja
   width: 1536
   height: 1024
-carbs_net_per_serving_g: 1.66
-carbs_total_per_serving_g: 8.22
-protein_per_serving_g: 8.79
-fat_per_serving_g: 16.5
-
+carbs_net_per_serving_g: 1.31
+carbs_total_per_serving_g: 6.49
+protein_per_serving_g: 9.36
+fat_per_serving_g: 16.58
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status:
+  en: published
+  sv: published
+  th: published
 ---
-
 # Korvapuustit mantelitaikinasta
 
 ## Kuvaus
@@ -58,3 +87,7 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 ## Muistiinpanot
 
 Taikina on helpompi kaulia lämpimänä. Jos se tarttuu, lämmitä sitä hetki ja käytä leivinpaperia apuna.
+
+GK ja ravintoarvot koskevat vain näitä punnittuja, syötäviä ainesosia ja annosmäärää. GK on LOW-luottamuksen mallinnettu arvio: sovelletut GI-koodaukset eivät ole tämän ruoan mittaustuloksia. Pienet lähteistetyt poisrajaukset sisältyvät epävarmuuteen. Tarjoiluehdotusten lisukkeet eivät kuulu laskentaan. Tuotevaihdot ja määrien muutokset vaativat uuden arvion.
+
+Mantelijauhon koostumus on kokonaisen mantelin LOW-proxy; se ei koske rasvattomia tai osittain rasvattomia jauhoja. Mantelille ei ole keksitty GI-lukua.

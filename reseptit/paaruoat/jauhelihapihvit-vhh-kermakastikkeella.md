@@ -12,10 +12,10 @@ main_ingredient:
 cooking_method:
   - liesi
 servings: 4
-carbs_net_per_serving_g: 3.17
-carbs_total_per_serving_g: 3.34
-protein_per_serving_g: 31.83
-fat_per_serving_g: 53.44
+carbs_net_per_serving_g: 2.99
+carbs_total_per_serving_g: 3.09
+protein_per_serving_g: 31.73
+fat_per_serving_g: 53.45
 time_total_min: 35
 difficulty: helppo
 tags:
@@ -25,47 +25,46 @@ tags:
   - kermakastike
 image:
   src: paaruoat/jauhelihapihvit-kermakastikkeella.webp
-  alt: Jauhelihapihvejä pippurisessa kermakastikkeessa vihreiden papujen ja
-    kukkakaalimuusin kanssa
+  alt: Jauhelihapihvejä pippurisessa kermakastikkeessa vihreiden papujen ja kukkakaalimuusin kanssa
   width: 1280
   height: 853
 ingredients:
   - amount: 600
     unit: g
-    item: naudan jauhelihaa
-  - amount: 1
-    unit: kpl
-    item: kananmuna
-  - amount: 0.5
-    unit: dl
-    item: kuohukermaa
-  - amount: 1
-    unit: kpl
-    item: pieni sipuli
+    item: naudan jauhelihaa, rasvaa17%
+  - amount: 55
+    unit: g
+    item: kuoretonta kananmunaa
+  - amount: 50
+    unit: g
+    item: kuohukermaa pihveihin,38%
+  - amount: 30
+    unit: g
+    item: kuorittua sipulia
     note: hienoksi raastettuna
-  - amount: 1
-    unit: tl
+  - amount: 5
+    unit: g
     item: suolaa
-  - amount: 0.5
-    unit: tl
-    item: mustapippuria
-  - amount: 1
-    unit: rkl
+  - amount: 1.15
+    unit: g
+    item: mustapippuria pihveihin
+  - amount: 14
+    unit: g
     item: voita
     note: paistamiseen
-  - amount: 2
-    unit: dl
-    item: kuohukermaa
+  - amount: 200
+    unit: g
+    item: kuohukermaa kastikkeeseen,38%
     note: kastikkeeseen
-  - amount: 1
-    unit: dl
-    item: lihalientä
-  - amount: 1
-    unit: tl
-    item: Dijon-sinappia
-  - amount: 0.5
-    unit: tl
-    item: mustapippuria
+  - amount: 100
+    unit: g
+    item: käyttövalmista laimennettua lihalientä
+  - amount: 5
+    unit: g
+    item: French's Dijon Mustard US32oz
+  - amount: 1.15
+    unit: g
+    item: mustapippuria kastikkeeseen
     note: kastikkeeseen
 translation_languages:
   - en
@@ -76,7 +75,6 @@ translation_status:
   sv: published
   th: published
 ---
-
 # Jauhelihapihvit ja kermakastike ilman jauhoja
 
 Mehevät jauhelihapihvit ja pannulla keitetty kermakastike tuovat tutun kotiruoan pöytään ilman korppujauhoa tai vehnäjauhosuurusta.
@@ -96,3 +94,9 @@ Pihvit saavat rakenteensa kananmunasta ja jauhelihasta. Kastike sakenee rauhassa
 ## Muistiinpanot
 
 - Jos lihaliemi on suolaista, maista kastike ennen lisäsuolan lisäämistä.
+
+GK ja ravintoarvot koskevat vain näitä punnittuja, syötäviä ainesosia ja annosmäärää. GK on LOW-luottamuksen mallinnettu arvio: sovelletut GI-koodaukset eivät ole tämän ruoan mittaustuloksia. Pienet lähteistetyt poisrajaukset sisältyvät epävarmuuteen. Tarjoiluehdotusten lisukkeet eivät kuulu laskentaan. Tuotevaihdot ja määrien muutokset vaativat uuden arvion.
+
+Sinapin rajaus koskee French’s Dijon US 32 oz -tuotetta (GTIN 00041500741284). Etiketin pyöristettyjä nollia ei ole tulkittu todellisiksi nolliksi.
+
+Liemen koostumuksena käytetään Finelin käyttövalmiin laimennetun lihaliemen LOW-proxya. Koko reseptiin merkitty liemi sisältyy annoksiin.

@@ -1,0 +1,106 @@
+---
+title: โรปาเบียฮา เนื้อวัวฉีก
+recipe_id: ropa-vieja
+url_slug: ropa-vieja
+category: paaruoka
+language: th
+status: published
+servings: 6
+time_total_min: 210
+difficulty: ง่าย
+main_ingredient:
+  - naudanliha
+  - tomaatti
+  - paprika
+cooking_method:
+  - pitkä haudutus
+tags:
+  - คิวบา
+  - แคริบเบียน
+  - เนื้อวัว
+  - อาหารตุ๋น
+image:
+  src: paaruoat/ropa-vieja.webp
+  alt: เนื้อวัวตุ๋นฉีกกับพริกหวาน มะเขือเทศ และมะกอก
+  width: 1280
+  height: 853
+ingredients:
+  - amount: 900
+    unit: g
+    item: เนื้อวัวส่วนสำหรับอบ
+    note: yhtenä palana
+  - amount: 55
+    unit: g
+    item: หอมหัวใหญ่สีเหลืองปอกเปลือก
+    note: viipaloituna
+  - amount: 170
+    unit: g
+    item: พริกหวานสีเขียว
+    note: suikaleina
+  - amount: 170
+    unit: g
+    item: พริกหวานสีแดง
+    note: suikaleina
+  - amount: 400
+    unit: g
+    item: มะเขือเทศบดหยาบ
+  - amount: 500
+    unit: g
+    item: น้ำซุปเนื้อเจือจางพร้อมใช้
+  - amount: 10.5
+    unit: g
+    item: กระเทียมปอกเปลือก
+    note: hienonnettuna
+  - amount: 2.1
+    unit: g
+    item: เมล็ดยี่หร่า
+  - amount: 1
+    unit: g
+    item: ใบออริกาโนแห้ง
+  - amount: 0.2
+    unit: g
+    item: ใบกระวาน ใบเล็กหนึ่งใบ
+  - amount: 60
+    unit: g
+    item: มะกอกเขียว
+  - amount: 15
+    unit: g
+    item: น้ำส้มสายชูไวน์ขาว
+carbs_net_per_serving_g: 7.52
+carbs_total_per_serving_g: 9.33
+protein_per_serving_g: 34.01
+fat_per_serving_g: 6.68
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status:
+  en: published
+  sv: published
+  th: published
+source_language: fi
+source_recipe: reseptit/paaruoat/ropa-vieja.md
+translation_of: ropa-vieja
+---
+# โรปาเบียฮา เนื้อวัวฉีก
+
+## คำอธิบาย
+
+เนื้อวัวตุ๋นฉีกกับพริกหวาน มะเขือเทศ และมะกอก
+
+## วิธีทำ
+
+1. จี่เนื้อวัวในหม้อให้มีสีน้ำตาลทั่วทุกด้าน แล้วตักพักไว้ชั่วคราว
+2. ผัดหอมหัวใหญ่และพริกหวานในหม้อใบเดิมให้นุ่ม เติมกระเทียม ยี่หร่า และออริกาโน
+3. เติมมะเขือเทศบดหยาบ น้ำซุปเนื้อ และใบกระวาน ใส่เนื้อวัวกลับลงหม้อ
+4. ปิดฝาและตุ๋นด้วยไฟอ่อนมากประมาณ 2.5 ชั่วโมง จนใช้ส้อมแยกเนื้อได้ง่าย
+5. ตักเนื้อขึ้นเขียง ใช้ส้อมสองคันฉีกเนื้อ นำใบกระวานออก
+6. ใส่เนื้อกลับลงซอส เติมมะกอกและน้ำส้มสายชูไวน์ ตุ๋นต่ออีก 10 นาที
+
+## หมายเหตุ
+
+หากซอสยังเหลว ให้เคี่ยวโดยไม่ปิดฝาสักครู่ ข้าวและถั่วดำที่แนะนำเป็นเครื่องเคียงแยกต่างหาก
+
+ค่า GK และโภชนาการใช้กับส่วนผสมส่วนที่กินได้ซึ่งชั่งตามรายการนี้และจำนวนที่เสิร์ฟนี้เท่านั้น GK เป็นค่าประมาณจากแบบจำลองที่มีความเชื่อมั่นต่ำ รหัส GI ที่ใช้ไม่ใช่ผลการวัดอาหารจานนี้ การไม่นับส่วนผสมปริมาณน้อยที่มีหลักฐานกำกับเพิ่มความไม่แน่นอน เครื่องเคียงที่แนะนำไม่รวมในการคำนวณ หากเปลี่ยนผลิตภัณฑ์หรือปริมาณต้องประเมินใหม่
+
+ส่วนประกอบของน้ำซุปใช้ข้อมูลแทนของ Fineli สำหรับน้ำซุปเนื้อเจือจางพร้อมใช้ที่มีความเชื่อมั่นต่ำ โดยนับน้ำซุปที่ระบุทั้งหมดในจำนวนที่เสิร์ฟ

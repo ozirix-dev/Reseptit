@@ -15,10 +15,10 @@ servings: 4
 time_total_min: 30
 difficulty: ง่าย
 tags:
-  - "การปรุงอาหารที่บ้านแบบฟินแลนด์"
-  - "คาร์โบไฮเดรตต่ำ"
-  - "ไส้กรอกแฟรงก์เฟิร์ต"
-  - "อาหารทุกวัน"
+  - การปรุงอาหารที่บ้านแบบฟินแลนด์
+  - คาร์โบไฮเดรตต่ำ
+  - ไส้กรอกแฟรงก์เฟิร์ต
+  - อาหารทุกวัน
 image:
   src: paaruoat/nakkikastike-kukkakaalimuusi.webp
   alt: ไส้กรอกแฟรงก์เฟิร์ตในซอสครีมกับกะหล่ำดอกบด
@@ -27,42 +27,48 @@ image:
 ingredients:
   - amount: 400
     unit: g
-    item: ไส้กรอกแฟรงก์เฟิร์ต
-  - amount: 1
-    unit: ชิ้น
-    item: หัวหอมเล็ก
-  - amount: 2
-    unit: dl
-    item: วิปปิ้งครีม
-  - amount: 1
-    unit: dl
-    item: น้ำซุปเนื้อ
-  - amount: 1
-    unit: ช้อนชา
-    item: มัสตาร์ดดิฌง
-  - amount: 0.5
-    unit: ช้อนชา
+    item: ไส้กรอกแฟรงก์เฟิร์ตสุก
+  - amount: 30
+    unit: g
+    item: หอมหัวใหญ่ปอกเปลือก
+  - amount: 200
+    unit: g
+    item: วิปปิงครีม ไขมัน 38%
+  - amount: 100
+    unit: g
+    item: น้ำซุปเนื้อเจือจางพร้อมใช้
+  - amount: 5
+    unit: g
+    item: มัสตาร์ด French's Dijon รุ่นสหรัฐฯ 32 ออนซ์
+  - amount: 1.15
+    unit: g
     item: พริกไทยดำ
   - amount: 600
     unit: g
-    item: ดอกกะหล่ำ
+    item: กะหล่ำดอก
   - amount: 40
     unit: g
     item: เนย
   - amount: null
     unit: ""
     item: เกลือ
-    note: "ปรุงตามชอบ"
+    note: ปรุงตามชอบ
 source_language: fi
 source_recipe: reseptit/paaruoat/nakkikastike-kukkakaalimuusi.md
 translation_of: nakkikastike-kukkakaalimuusi
-carbs_net_per_serving_g: 7.88
-carbs_total_per_serving_g: 10.96
-protein_per_serving_g: 15.69
-fat_per_serving_g: 45.87
-
+carbs_net_per_serving_g: 7.33
+carbs_total_per_serving_g: 10.28
+protein_per_serving_g: 15.55
+fat_per_serving_g: 45.83
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status:
+  en: published
+  sv: published
+  th: published
 ---
-
 # ซอสไส้กรอกกับดอกกะหล่ำบด
 
 ซอสไส้กรอกสูตรทำเร็ว ปรุงในกระทะจนเป็นเนื้อครีม และแทนที่จะใช้มันฝรั่งบด กลับเสิร์ฟดอกกะหล่ำบดที่ปรุงด้วยเนยแทน
@@ -82,3 +88,9 @@ fat_per_serving_g: 45.87
 
 - เลือกเป็นไส้กรอกที่มีคาร์โบไฮเดรตต่ำที่สุดเท่าที่จะเป็นไปได้และตรวจสอบรายการส่วนผสม
 - หากต้องการให้ซอสข้นขึ้นก็ให้ต้มต่ออีกสักหน่อย ห้ามใช้แป้งสาลี
+
+ค่า GK และโภชนาการใช้กับส่วนผสมส่วนที่กินได้ซึ่งชั่งตามรายการนี้และจำนวนที่เสิร์ฟนี้เท่านั้น GK เป็นค่าประมาณจากแบบจำลองที่มีความเชื่อมั่นต่ำ รหัส GI ที่ใช้ไม่ใช่ผลการวัดอาหารจานนี้ การไม่นับส่วนผสมปริมาณน้อยที่มีหลักฐานกำกับเพิ่มความไม่แน่นอน เครื่องเคียงที่แนะนำไม่รวมในการคำนวณ หากเปลี่ยนผลิตภัณฑ์หรือปริมาณต้องประเมินใหม่
+
+มัสตาร์ดที่กำหนดคือ French’s Dijon รุ่นสหรัฐฯ 32 ออนซ์ (GTIN 00041500741284) ไม่ถือว่าศูนย์ที่ปัดเศษบนฉลากเป็นค่าศูนย์จริง
+
+ส่วนประกอบของน้ำซุปใช้ข้อมูลแทนของ Fineli สำหรับน้ำซุปเนื้อเจือจางพร้อมใช้ที่มีความเชื่อมั่นต่ำ โดยนับน้ำซุปที่ระบุทั้งหมดในจำนวนที่เสิร์ฟ

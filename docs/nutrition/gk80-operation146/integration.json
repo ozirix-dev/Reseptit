@@ -1,0 +1,1146 @@
+{
+  "operation": 146,
+  "baseMain": "c127a715186d1d10820ae210f8cbff7d982b4444",
+  "status": "DRAFT_AWAITING_OWNER_REVIEW",
+  "ownerApproval": false,
+  "readyAuthorized": false,
+  "mergeAuthorized": false,
+  "deployAuthorized": false,
+  "technicalIntegrations": 9,
+  "newMacroWithholdings": 0,
+  "recipes": [
+    {
+      "recipeId": "jauhelihapihvit-vhh-kermakastikkeella",
+      "batch": 1,
+      "originalPublishedPath": "reseptit/paaruoat/jauhelihapihvit-vhh-kermakastikkeella.md",
+      "previousMacros": {
+        "carbs_net_per_serving_g": 3.17,
+        "carbs_total_per_serving_g": 3.34,
+        "protein_per_serving_g": 31.83,
+        "fat_per_serving_g": 53.44
+      },
+      "newMacros": {
+        "carbs_net_per_serving_g": 2.99,
+        "carbs_total_per_serving_g": 3.09,
+        "protein_per_serving_g": 31.73,
+        "fat_per_serving_g": 53.45
+      },
+      "newInput": {
+        "recipeId": "jauhelihapihvit-vhh-kermakastikkeella",
+        "servings": 4,
+        "ingredients": [
+          {
+            "name": "naudan jauhelihaa, rasvaa17%",
+            "grams": 600,
+            "fineliRecordId": "op146-fineli-11562",
+            "giRecordId": null,
+            "massEvidence": "Defined weighed edible input; original amounts/household equivalents and preparation reviewed separately. No blanket density conversion. "
+          },
+          {
+            "name": "kuoretonta kananmunaa",
+            "grams": 55,
+            "fineliRecordId": "op146-fineli-858",
+            "giRecordId": "op142-lowcho50-v2",
+            "massEvidence": "Defined weighed edible input; original amounts/household equivalents and preparation reviewed separately. No blanket density conversion. ",
+            "foodKey": "op142-lowcho-code",
+            "preparationKey": "op142-lowcho50-v2",
+            "giMatchEvidence": "Existing project published-imputation rule, not a measured ingredient GI or family mean. Named exact application: kuoretonta kananmunaa. "
+          },
+          {
+            "name": "kuohukermaa pihveihin,38%",
+            "grams": 50,
+            "fineliRecordId": "op146-fineli-631",
+            "giRecordId": "op142-dairy-imputation30",
+            "massEvidence": "Defined weighed edible input; original amounts/household equivalents and preparation reviewed separately. No blanket density conversion. ",
+            "foodKey": "op142-dairy-code",
+            "preparationKey": "op142-dairy-imputation30",
+            "giMatchEvidence": "Existing project published-imputation rule, not a measured ingredient GI or family mean. Named exact application: kuohukermaa pihveihin,38%. "
+          },
+          {
+            "name": "kuorittua sipulia",
+            "grams": 30,
+            "fineliRecordId": "op146-fineli-335",
+            "giRecordId": "op142-vegetable-imputation40",
+            "massEvidence": "Defined weighed edible input; original amounts/household equivalents and preparation reviewed separately. No blanket density conversion. ",
+            "foodKey": "op142-low-carb-vegetable",
+            "preparationKey": "op142-vegetable-imputation40",
+            "giMatchEvidence": "Existing project published-imputation rule, not a measured ingredient GI or family mean. Named exact application: kuorittua sipulia. "
+          },
+          {
+            "name": "suolaa",
+            "grams": 5,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Pure salt/water, not mixed seasoning or broth.",
+            "estimatedAvailableCarbohydratePerServingG": 0,
+            "negligibleAssumption": "Literal pure salt or water, no nutrient-bearing mixture; no liquid density conversion needed."
+          },
+          {
+            "name": "mustapippuria pihveihin",
+            "grams": 1.15,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Documented whole-ingredient omission, not zero.",
+            "availableCarbohydrateUpperBoundPerServingG": 0.18385625,
+            "upperBoundEvidence": "USDA SR Legacy FDC170931 Spices, pepper, black: native source-total CHO includes fibre/unknown polyols and bounds omitted available CHO; same-source protein/fat/energy. Nominal source model, not physiological or lot guarantee. Whole milled spice, no fraction removed."
+          },
+          {
+            "name": "voita",
+            "grams": 14,
+            "fineliRecordId": "op146-fineli-500",
+            "giRecordId": "op142-dairy-imputation30",
+            "massEvidence": "Defined weighed edible input; original amounts/household equivalents and preparation reviewed separately. No blanket density conversion. ",
+            "foodKey": "op142-dairy-code",
+            "preparationKey": "op142-dairy-imputation30",
+            "giMatchEvidence": "Existing project published-imputation rule, not a measured ingredient GI or family mean. Named exact application: voita. "
+          },
+          {
+            "name": "kuohukermaa kastikkeeseen,38%",
+            "grams": 200,
+            "fineliRecordId": "op146-fineli-631",
+            "giRecordId": "op142-dairy-imputation30",
+            "massEvidence": "Defined weighed edible input; original amounts/household equivalents and preparation reviewed separately. No blanket density conversion. ",
+            "foodKey": "op142-dairy-code",
+            "preparationKey": "op142-dairy-imputation30",
+            "giMatchEvidence": "Existing project published-imputation rule, not a measured ingredient GI or family mean. Named exact application: kuohukermaa kastikkeeseen,38%. "
+          },
+          {
+            "name": "käyttövalmista laimennettua lihalientä",
+            "grams": 100,
+            "fineliRecordId": "op146-fineli-29",
+            "giRecordId": "op142-lowcho50-v2",
+            "massEvidence": "Defined weighed edible input; original amounts/household equivalents and preparation reviewed separately. No blanket density conversion. ",
+            "foodKey": "op142-lowcho-code",
+            "preparationKey": "op142-lowcho50-v2",
+            "giMatchEvidence": "Existing project published-imputation rule, not a measured ingredient GI or family mean. Named exact application: käyttövalmista laimennettua lihalientä. "
+          },
+          {
+            "name": "French's Dijon Mustard US32oz",
+            "grams": 5,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Documented whole-ingredient omission, not zero.",
+            "availableCarbohydrateUpperBoundPerServingG": 0.125,
+            "upperBoundEvidence": "McCormick French's Dijon US32oz GTIN00041500741284 manufacturer sheet, serving5g, labelled5kcal and0g totalC/fat/protein.21CFR101.9 rounding: nominal source-model ceilings .5g each and7.5kcal per5g; not true zero, polyols unknown, not a lot/clinical guarantee. No transfer to Maille, honey/wholegrain or other markets."
+          },
+          {
+            "name": "mustapippuria kastikkeeseen",
+            "grams": 1.15,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Documented whole-ingredient omission, not zero.",
+            "availableCarbohydrateUpperBoundPerServingG": 0.18385625,
+            "upperBoundEvidence": "USDA SR Legacy FDC170931 Spices, pepper, black: native source-total CHO includes fibre/unknown polyols and bounds omitted available CHO; same-source protein/fat/energy. Nominal source model, not physiological or lot guarantee. Whole milled spice, no fraction removed."
+          }
+        ]
+      },
+      "macroStatus": "ESTIMATE WITH EVIDENCE",
+      "sourceLfSha256": "9bbf8c89f40aacac6c68762f000edd44e7cf124ba38eeeb2e83c5bc4a7fb448a",
+      "localeLfSha256": {
+        "en": "56f8bb019c83f9222504e257c59a711a735faf73d2b2052207a3a5c98faebbcb",
+        "sv": "e9d84dbd9dfeb6d00240f0b75a5618e49fbc59d37d0060003a6b409ab3529738",
+        "th": "296d741f4233011149f9b23599a69184add45fd614242efa2f0496209d55e55a"
+      },
+      "macroEvidenceSha256": "f4b4e55e23232a205a303add5d82001b428d1eb44ac656362f3b0f924f81f789",
+      "gk": 1.09,
+      "omittedCho": 0.4927125,
+      "macroOmissionCaps": {
+        "kcal": 3.31825,
+        "netCarbohydrate": 0.4927125,
+        "totalCarbohydrate": 0.4927125,
+        "protein": 0.18474250000000003,
+        "fat": 0.143745
+      },
+      "sourceNotes": "Original beef-mince option specified at17%fat; native Fineli household/USDA pepper masses, named5g Dijon dose. All pan sauce served; no new ingredient or new macro withholding."
+    },
+    {
+      "recipeId": "ropa-vieja",
+      "batch": 1,
+      "originalPublishedPath": "reseptit/paaruoat/ropa-vieja.md",
+      "previousMacros": {
+        "carbs_net_per_serving_g": 7.67,
+        "carbs_total_per_serving_g": 9.77,
+        "protein_per_serving_g": 34.06,
+        "fat_per_serving_g": 6.77
+      },
+      "newMacros": {
+        "carbs_net_per_serving_g": 7.52,
+        "carbs_total_per_serving_g": 9.33,
+        "protein_per_serving_g": 34.01,
+        "fat_per_serving_g": 6.68
+      },
+      "newInput": {
+        "recipeId": "ropa-vieja",
+        "servings": 6,
+        "ingredients": [
+          {
+            "name": "naudanpaistia",
+            "grams": 900,
+            "fineliRecordId": "op146-fineli-718",
+            "giRecordId": null,
+            "massEvidence": "Defined weighed edible input; original amounts/household equivalents and preparation reviewed separately. No blanket density conversion. "
+          },
+          {
+            "name": "kuorittua keltasipulia",
+            "grams": 55,
+            "fineliRecordId": "op146-fineli-335",
+            "giRecordId": "op142-vegetable-imputation40",
+            "massEvidence": "Defined weighed edible input; original amounts/household equivalents and preparation reviewed separately. No blanket density conversion. ",
+            "foodKey": "op142-low-carb-vegetable",
+            "preparationKey": "op142-vegetable-imputation40",
+            "giMatchEvidence": "Existing project published-imputation rule, not a measured ingredient GI or family mean. Named exact application: kuorittua keltasipulia. "
+          },
+          {
+            "name": "vihreää paprikaa",
+            "grams": 170,
+            "fineliRecordId": "op146-fineli-387",
+            "giRecordId": "op142-vegetable-imputation40",
+            "massEvidence": "Defined weighed edible input; original amounts/household equivalents and preparation reviewed separately. No blanket density conversion. ",
+            "foodKey": "op142-low-carb-vegetable",
+            "preparationKey": "op142-vegetable-imputation40",
+            "giMatchEvidence": "Existing project published-imputation rule, not a measured ingredient GI or family mean. Named exact application: vihreää paprikaa. "
+          },
+          {
+            "name": "punaista paprikaa",
+            "grams": 170,
+            "fineliRecordId": "op146-fineli-386",
+            "giRecordId": "op142-vegetable-imputation40",
+            "massEvidence": "Defined weighed edible input; original amounts/household equivalents and preparation reviewed separately. No blanket density conversion. ",
+            "foodKey": "op142-low-carb-vegetable",
+            "preparationKey": "op142-vegetable-imputation40",
+            "giMatchEvidence": "Existing project published-imputation rule, not a measured ingredient GI or family mean. Named exact application: punaista paprikaa. "
+          },
+          {
+            "name": "tomaattimurskaa",
+            "grams": 400,
+            "fineliRecordId": "op146-fineli-398",
+            "giRecordId": "op142-vegetable-imputation40",
+            "massEvidence": "Defined weighed edible input; original amounts/household equivalents and preparation reviewed separately. No blanket density conversion. ",
+            "foodKey": "op142-low-carb-vegetable",
+            "preparationKey": "op142-vegetable-imputation40",
+            "giMatchEvidence": "Existing project published-imputation rule, not a measured ingredient GI or family mean. Named exact application: tomaattimurskaa. "
+          },
+          {
+            "name": "käyttövalmista laimennettua lihalientä",
+            "grams": 500,
+            "fineliRecordId": "op146-fineli-29",
+            "giRecordId": "op142-lowcho50-v2",
+            "massEvidence": "Defined weighed edible input; original amounts/household equivalents and preparation reviewed separately. No blanket density conversion. ",
+            "foodKey": "op142-lowcho-code",
+            "preparationKey": "op142-lowcho50-v2",
+            "giMatchEvidence": "Existing project published-imputation rule, not a measured ingredient GI or family mean. Named exact application: käyttövalmista laimennettua lihalientä. "
+          },
+          {
+            "name": "kuorittua valkosipulia",
+            "grams": 10.5,
+            "fineliRecordId": "op146-fineli-393",
+            "giRecordId": "op142-vegetable-imputation40",
+            "massEvidence": "Defined weighed edible input; original amounts/household equivalents and preparation reviewed separately. No blanket density conversion. ",
+            "foodKey": "op142-low-carb-vegetable",
+            "preparationKey": "op142-vegetable-imputation40",
+            "giMatchEvidence": "Existing project published-imputation rule, not a measured ingredient GI or family mean. Named exact application: kuorittua valkosipulia. "
+          },
+          {
+            "name": "juustokuminaa",
+            "grams": 2.1,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Documented whole-ingredient omission, not zero.",
+            "availableCarbohydrateUpperBoundPerServingG": 0.15484,
+            "upperBoundEvidence": "USDA SR Legacy FDC170923 Spices, cumin seed: native source-total CHO includes fibre/unknown polyols and bounds omitted available CHO; same-source protein/fat/energy. Nominal source model, not physiological or lot guarantee. Whole milled spice, no fraction removed."
+          },
+          {
+            "name": "kuivattua oreganoa",
+            "grams": 1,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Documented whole-ingredient omission, not zero.",
+            "availableCarbohydrateUpperBoundPerServingG": 0.11486666666666667,
+            "upperBoundEvidence": "USDA SR Legacy FDC171328 Spices, oregano, dried: native source-total CHO includes fibre/unknown polyols and bounds omitted available CHO; same-source protein/fat/energy. Nominal source model, not physiological or lot guarantee. Whole milled spice, no fraction removed."
+          },
+          {
+            "name": "laakerinlehteä,1 pieni kokonainen lehti",
+            "grams": 0.2,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Documented whole-ingredient omission, not zero.",
+            "availableCarbohydrateUpperBoundPerServingG": 0.02499,
+            "upperBoundEvidence": "USDA SR Legacy FDC170917 Spices, bay leaf: native source-total CHO includes fibre/unknown polyols and bounds omitted available CHO; same-source protein/fat/energy. Nominal source model, not physiological or lot guarantee. Whole milled spice, no fraction removed."
+          },
+          {
+            "name": "vihreitä oliiveja",
+            "grams": 60,
+            "fineliRecordId": "op146-fineli-34972",
+            "giRecordId": null,
+            "massEvidence": "Defined weighed edible input; original amounts/household equivalents and preparation reviewed separately. No blanket density conversion. "
+          },
+          {
+            "name": "valkoviinietikkaa",
+            "grams": 15,
+            "fineliRecordId": "op146-fineli-929",
+            "giRecordId": null,
+            "massEvidence": "Defined weighed edible input; original amounts/household equivalents and preparation reviewed separately. No blanket density conversion. "
+          }
+        ]
+      },
+      "macroStatus": "ESTIMATE WITH EVIDENCE",
+      "sourceLfSha256": "ef29774e3d40385de1f69ad1ec184774a981bbafbf3c4060dfdfe3527b663539",
+      "localeLfSha256": {
+        "en": "b9ee6e1cc79c71918f6b3b0a3885541b59fe6d7416dc6369f23ee63b9c0449ec",
+        "sv": "0cb193d8d874b3071d22b6b95791052b2c5714e6aa2d00b4a06b1718659852f1",
+        "th": "c2ecd8a3b7e437f0841f3ed7ae4e5f65bf7d1930eae0be7abd4b2a7340f7817e"
+      },
+      "macroEvidenceSha256": "700b33e9d0108eb93ef4cbf7c8624c1c1369eff30b9fbde992c3a7bfb57ce9ed",
+      "gk": 3.25,
+      "omittedCho": 0.3071966666666667,
+      "macroOmissionCaps": {
+        "kcal": 1.8585,
+        "netCarbohydrate": 0.29469666666666666,
+        "totalCarbohydrate": 0.29469666666666666,
+        "protein": 0.07987166666666667,
+        "fat": 0.087865
+      },
+      "sourceNotes": "Original beef-roast alternative, no unapproved flank substitution. All sauce retained. Bay leaf is removed, but full leaf source-total upper bound is counted; no extracted fraction invented."
+    },
+    {
+      "recipeId": "siskonmakkarakeitto-juurekset",
+      "batch": 1,
+      "originalPublishedPath": "reseptit/paaruoat/siskonmakkarakeitto-juurekset.md",
+      "previousMacros": {
+        "carbs_net_per_serving_g": 9.01,
+        "carbs_total_per_serving_g": 12.11,
+        "protein_per_serving_g": 12.01,
+        "fat_per_serving_g": 17.42
+      },
+      "newMacros": {
+        "carbs_net_per_serving_g": 15.5,
+        "carbs_total_per_serving_g": 18.57,
+        "protein_per_serving_g": 12.29,
+        "fat_per_serving_g": 18.4
+      },
+      "newInput": {
+        "recipeId": "siskonmakkarakeitto-juurekset",
+        "servings": 4,
+        "ingredients": [
+          {
+            "name": "siskonmakkaraa",
+            "grams": 400,
+            "fineliRecordId": "op146-fineli-30369",
+            "giRecordId": "op142-lowcho50-v2",
+            "massEvidence": "Defined weighed edible input; original amounts/household equivalents and preparation reviewed separately. No blanket density conversion. ",
+            "foodKey": "op142-lowcho-code",
+            "preparationKey": "op142-lowcho50-v2",
+            "giMatchEvidence": "Existing project published-imputation rule, not a measured ingredient GI or family mean. Named exact application: siskonmakkaraa. "
+          },
+          {
+            "name": "käyttövalmista laimennettua lihalientä",
+            "grams": 1000,
+            "fineliRecordId": "op146-fineli-29",
+            "giRecordId": "op142-lowcho50-v2",
+            "massEvidence": "Defined weighed edible input; original amounts/household equivalents and preparation reviewed separately. No blanket density conversion. ",
+            "foodKey": "op142-lowcho-code",
+            "preparationKey": "op142-lowcho50-v2",
+            "giMatchEvidence": "Existing project published-imputation rule, not a measured ingredient GI or family mean. Named exact application: käyttövalmista laimennettua lihalientä. "
+          },
+          {
+            "name": "kuorittua lanttua",
+            "grams": 250,
+            "fineliRecordId": "op146-fineli-303",
+            "giRecordId": "op142-vegetable-imputation40",
+            "massEvidence": "Defined weighed edible input; original amounts/household equivalents and preparation reviewed separately. No blanket density conversion. ",
+            "foodKey": "op142-low-carb-vegetable",
+            "preparationKey": "op142-vegetable-imputation40",
+            "giMatchEvidence": "Existing project published-imputation rule, not a measured ingredient GI or family mean. Named exact application: kuorittua lanttua. "
+          },
+          {
+            "name": "kuorittua porkkanaa",
+            "grams": 150,
+            "fineliRecordId": "op146-fineli-300",
+            "giRecordId": "op142-vegetable-imputation40",
+            "massEvidence": "Defined weighed edible input; original amounts/household equivalents and preparation reviewed separately. No blanket density conversion. ",
+            "foodKey": "op142-low-carb-vegetable",
+            "preparationKey": "op142-vegetable-imputation40",
+            "giMatchEvidence": "Existing project published-imputation rule, not a measured ingredient GI or family mean. Named exact application: kuorittua porkkanaa. "
+          },
+          {
+            "name": "kuorittua juuriselleriä",
+            "grams": 100,
+            "fineliRecordId": "op146-fineli-311",
+            "giRecordId": "op142-vegetable-imputation40",
+            "massEvidence": "Defined weighed edible input; original amounts/household equivalents and preparation reviewed separately. No blanket density conversion. ",
+            "foodKey": "op142-low-carb-vegetable",
+            "preparationKey": "op142-vegetable-imputation40",
+            "giMatchEvidence": "Existing project published-imputation rule, not a measured ingredient GI or family mean. Named exact application: kuorittua juuriselleriä. "
+          },
+          {
+            "name": "kuorittua sipulia",
+            "grams": 55,
+            "fineliRecordId": "op146-fineli-335",
+            "giRecordId": "op142-vegetable-imputation40",
+            "massEvidence": "Defined weighed edible input; original amounts/household equivalents and preparation reviewed separately. No blanket density conversion. ",
+            "foodKey": "op142-low-carb-vegetable",
+            "preparationKey": "op142-vegetable-imputation40",
+            "giMatchEvidence": "Existing project published-imputation rule, not a measured ingredient GI or family mean. Named exact application: kuorittua sipulia. "
+          },
+          {
+            "name": "laakerinlehteä,1 pieni kokonainen lehti",
+            "grams": 0.2,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Documented whole-ingredient omission, not zero.",
+            "availableCarbohydrateUpperBoundPerServingG": 0.037485,
+            "upperBoundEvidence": "USDA SR Legacy FDC170917 Spices, bay leaf: native source-total CHO includes fibre/unknown polyols and bounds omitted available CHO; same-source protein/fat/energy. Nominal source model, not physiological or lot guarantee. Whole milled spice, no fraction removed."
+          },
+          {
+            "name": "silputtua persiljaa",
+            "grams": 4,
+            "fineliRecordId": "op146-fineli-333",
+            "giRecordId": "op142-vegetable-imputation40",
+            "massEvidence": "Defined weighed edible input; original amounts/household equivalents and preparation reviewed separately. No blanket density conversion. ",
+            "foodKey": "op142-low-carb-vegetable",
+            "preparationKey": "op142-vegetable-imputation40",
+            "giMatchEvidence": "Existing project published-imputation rule, not a measured ingredient GI or family mean. Named exact application: silputtua persiljaa. "
+          },
+          {
+            "name": "mustapippuria",
+            "grams": 0.5,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Documented whole-ingredient omission, not zero.",
+            "availableCarbohydrateUpperBoundPerServingG": 0.07993750000000001,
+            "upperBoundEvidence": "USDA SR Legacy FDC170931 Spices, pepper, black: native source-total CHO includes fibre/unknown polyols and bounds omitted available CHO; same-source protein/fat/energy. Nominal source model, not physiological or lot guarantee. Whole milled spice, no fraction removed."
+          }
+        ]
+      },
+      "macroStatus": "ESTIMATE WITH EVIDENCE",
+      "sourceLfSha256": "7d470e4b9013da91f7e86c8b01a58ad10a451bfa9575bea3dddcaca501f0d65f",
+      "localeLfSha256": {
+        "en": "3da2b97520f833ff9a152b97502359e4bdb3563ef79d03dc19fc00b6dca9dcb3",
+        "sv": "801bae48852aeb93e53f46df51e455eb88761ce7663875bc3c59f7eac984d3ba",
+        "th": "5f932e5799b6443d4720d69fddd52b792267267b3c20171115a8f7d37d9d5373"
+      },
+      "macroEvidenceSha256": "d1aa84a6f164e5f03187a184f5497ef7461e9d0631d22cef6965fdfc0bafcc16",
+      "gk": 7.04,
+      "omittedCho": 0.11742250000000001,
+      "macroOmissionCaps": {
+        "kcal": 0.47025000000000006,
+        "netCarbohydrate": 0.11742250000000001,
+        "totalCarbohydrate": 0.11742250000000001,
+        "protein": 0.016792500000000002,
+        "fat": 0.008254999999999998
+      },
+      "sourceNotes": "PI40 is disclosed coding for these low-starch roots, not a measured swede/carrot GI. Generic diluted stock is a separate LOW composition proxy, all broth served. Full removed-bay bound retained."
+    },
+    {
+      "recipeId": "nakkikeitto-kukkakaalilla",
+      "batch": 2,
+      "originalPublishedPath": "reseptit/paaruoat/nakkikeitto-kukkakaalilla.md",
+      "previousMacros": {
+        "carbs_net_per_serving_g": 11.55,
+        "carbs_total_per_serving_g": 15.22,
+        "protein_per_serving_g": 13.94,
+        "fat_per_serving_g": 17.52
+      },
+      "newMacros": {
+        "carbs_net_per_serving_g": 11.08,
+        "carbs_total_per_serving_g": 14.66,
+        "protein_per_serving_g": 13.83,
+        "fat_per_serving_g": 17.51
+      },
+      "newInput": {
+        "recipeId": "nakkikeitto-kukkakaalilla",
+        "servings": 4,
+        "ingredients": [
+          {
+            "name": "keitettyjä nakkeja",
+            "grams": 350,
+            "fineliRecordId": "op146-fineli-7600",
+            "giRecordId": "op142-lowcho50-v2",
+            "massEvidence": "Defined weighed edible input; original amounts/household equivalents and preparation reviewed separately. No blanket density conversion. ",
+            "foodKey": "op142-lowcho-code",
+            "preparationKey": "op142-lowcho50-v2",
+            "giMatchEvidence": "Existing project published-imputation rule, not a measured ingredient GI or family mean. Named exact application: keitettyjä nakkeja. "
+          },
+          {
+            "name": "kukkakaalia",
+            "grams": 500,
+            "fineliRecordId": "op146-fineli-322",
+            "giRecordId": "op142-vegetable-imputation40",
+            "massEvidence": "Defined weighed edible input; original amounts/household equivalents and preparation reviewed separately. No blanket density conversion. ",
+            "foodKey": "op142-low-carb-vegetable",
+            "preparationKey": "op142-vegetable-imputation40",
+            "giMatchEvidence": "Existing project published-imputation rule, not a measured ingredient GI or family mean. Named exact application: kukkakaalia. "
+          },
+          {
+            "name": "varsiselleriä",
+            "grams": 100,
+            "fineliRecordId": "op146-fineli-339",
+            "giRecordId": "op142-vegetable-imputation40",
+            "massEvidence": "Defined weighed edible input; original amounts/household equivalents and preparation reviewed separately. No blanket density conversion. ",
+            "foodKey": "op142-low-carb-vegetable",
+            "preparationKey": "op142-vegetable-imputation40",
+            "giMatchEvidence": "Existing project published-imputation rule, not a measured ingredient GI or family mean. Named exact application: varsiselleriä. "
+          },
+          {
+            "name": "purjoa",
+            "grams": 80,
+            "fineliRecordId": "op146-fineli-337",
+            "giRecordId": "op142-vegetable-imputation40",
+            "massEvidence": "Defined weighed edible input; original amounts/household equivalents and preparation reviewed separately. No blanket density conversion. ",
+            "foodKey": "op142-low-carb-vegetable",
+            "preparationKey": "op142-vegetable-imputation40",
+            "giMatchEvidence": "Existing project published-imputation rule, not a measured ingredient GI or family mean. Named exact application: purjoa. "
+          },
+          {
+            "name": "kuorittua sipulia",
+            "grams": 30,
+            "fineliRecordId": "op146-fineli-335",
+            "giRecordId": "op142-vegetable-imputation40",
+            "massEvidence": "Defined weighed edible input; original amounts/household equivalents and preparation reviewed separately. No blanket density conversion. ",
+            "foodKey": "op142-low-carb-vegetable",
+            "preparationKey": "op142-vegetable-imputation40",
+            "giMatchEvidence": "Existing project published-imputation rule, not a measured ingredient GI or family mean. Named exact application: kuorittua sipulia. "
+          },
+          {
+            "name": "käyttövalmista laimennettua lihalientä",
+            "grams": 800,
+            "fineliRecordId": "op146-fineli-29",
+            "giRecordId": "op142-lowcho50-v2",
+            "massEvidence": "Defined weighed edible input; original amounts/household equivalents and preparation reviewed separately. No blanket density conversion. ",
+            "foodKey": "op142-lowcho-code",
+            "preparationKey": "op142-lowcho50-v2",
+            "giMatchEvidence": "Existing project published-imputation rule, not a measured ingredient GI or family mean. Named exact application: käyttövalmista laimennettua lihalientä. "
+          },
+          {
+            "name": "laakerinlehteä,1 pieni kokonainen lehti",
+            "grams": 0.2,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Documented whole-ingredient omission, not zero.",
+            "availableCarbohydrateUpperBoundPerServingG": 0.037485,
+            "upperBoundEvidence": "USDA SR Legacy FDC170917 Spices, bay leaf: native source-total CHO includes fibre/unknown polyols and bounds omitted available CHO; same-source protein/fat/energy. Nominal source model, not physiological or lot guarantee. Whole milled spice, no fraction removed."
+          },
+          {
+            "name": "mustapippuria",
+            "grams": 1.15,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Documented whole-ingredient omission, not zero.",
+            "availableCarbohydrateUpperBoundPerServingG": 0.18385625,
+            "upperBoundEvidence": "USDA SR Legacy FDC170931 Spices, pepper, black: native source-total CHO includes fibre/unknown polyols and bounds omitted available CHO; same-source protein/fat/energy. Nominal source model, not physiological or lot guarantee. Whole milled spice, no fraction removed."
+          },
+          {
+            "name": "tuoretta persiljaa",
+            "grams": 4,
+            "fineliRecordId": "op146-fineli-333",
+            "giRecordId": "op142-vegetable-imputation40",
+            "massEvidence": "Defined weighed edible input; original amounts/household equivalents and preparation reviewed separately. No blanket density conversion. ",
+            "foodKey": "op142-low-carb-vegetable",
+            "preparationKey": "op142-vegetable-imputation40",
+            "giMatchEvidence": "Existing project published-imputation rule, not a measured ingredient GI or family mean. Named exact application: tuoretta persiljaa. "
+          }
+        ]
+      },
+      "macroStatus": "ESTIMATE WITH EVIDENCE",
+      "sourceLfSha256": "70b131b928c45282a048f7001a692896d6eced1362060b514ae62df4b6d5b47d",
+      "localeLfSha256": {
+        "en": "f081498f8a34f74f1ff62fdac6d09623fdbd284d0d2985ad271d9b887bfccc7e",
+        "sv": "6964852bcb38f82fada1363661c9ca00af4cc3629959fc5ff4bfe5cf524e2104",
+        "th": "97ba7e36d27bc7ec89c07ce8e6513739d787f386ade242bcf7a9c5b4bcaf46c9"
+      },
+      "macroEvidenceSha256": "bb22a338618a5dbdf03347ad7d3df26cc4a59c6dcfbeb2f90f70387d257558af",
+      "gk": 5.13,
+      "omittedCho": 0.22134125,
+      "macroOmissionCaps": {
+        "kcal": 0.8781249999999999,
+        "netCarbohydrate": 0.22134125,
+        "totalCarbohydrate": 0.22134125,
+        "protein": 0.033676250000000005,
+        "fat": 0.013552499999999999
+      },
+      "sourceNotes": "Generic boiled frankfurter Fineli7600, not ring sausage7607. Named PI50 applies to this1.162g availableCHO/100g product proxy; no human sausage GI is asserted. All broth served, removed bay bounded whole."
+    },
+    {
+      "recipeId": "nakkikastike-kukkakaalimuusi",
+      "batch": 2,
+      "originalPublishedPath": "reseptit/paaruoat/nakkikastike-kukkakaalimuusi.md",
+      "previousMacros": {
+        "carbs_net_per_serving_g": 7.88,
+        "carbs_total_per_serving_g": 10.96,
+        "protein_per_serving_g": 15.69,
+        "fat_per_serving_g": 45.87
+      },
+      "newMacros": {
+        "carbs_net_per_serving_g": 7.33,
+        "carbs_total_per_serving_g": 10.28,
+        "protein_per_serving_g": 15.55,
+        "fat_per_serving_g": 45.83
+      },
+      "newInput": {
+        "recipeId": "nakkikastike-kukkakaalimuusi",
+        "servings": 4,
+        "ingredients": [
+          {
+            "name": "keitettyjä nakkeja",
+            "grams": 400,
+            "fineliRecordId": "op146-fineli-7600",
+            "giRecordId": "op142-lowcho50-v2",
+            "massEvidence": "Defined weighed edible input; original amounts/household equivalents and preparation reviewed separately. No blanket density conversion. ",
+            "foodKey": "op142-lowcho-code",
+            "preparationKey": "op142-lowcho50-v2",
+            "giMatchEvidence": "Existing project published-imputation rule, not a measured ingredient GI or family mean. Named exact application: keitettyjä nakkeja. "
+          },
+          {
+            "name": "kuorittua sipulia",
+            "grams": 30,
+            "fineliRecordId": "op146-fineli-335",
+            "giRecordId": "op142-vegetable-imputation40",
+            "massEvidence": "Defined weighed edible input; original amounts/household equivalents and preparation reviewed separately. No blanket density conversion. ",
+            "foodKey": "op142-low-carb-vegetable",
+            "preparationKey": "op142-vegetable-imputation40",
+            "giMatchEvidence": "Existing project published-imputation rule, not a measured ingredient GI or family mean. Named exact application: kuorittua sipulia. "
+          },
+          {
+            "name": "kuohukermaa,38%",
+            "grams": 200,
+            "fineliRecordId": "op146-fineli-631",
+            "giRecordId": "op142-dairy-imputation30",
+            "massEvidence": "Defined weighed edible input; original amounts/household equivalents and preparation reviewed separately. No blanket density conversion. ",
+            "foodKey": "op142-dairy-code",
+            "preparationKey": "op142-dairy-imputation30",
+            "giMatchEvidence": "Existing project published-imputation rule, not a measured ingredient GI or family mean. Named exact application: kuohukermaa,38%. "
+          },
+          {
+            "name": "käyttövalmista laimennettua lihalientä",
+            "grams": 100,
+            "fineliRecordId": "op146-fineli-29",
+            "giRecordId": "op142-lowcho50-v2",
+            "massEvidence": "Defined weighed edible input; original amounts/household equivalents and preparation reviewed separately. No blanket density conversion. ",
+            "foodKey": "op142-lowcho-code",
+            "preparationKey": "op142-lowcho50-v2",
+            "giMatchEvidence": "Existing project published-imputation rule, not a measured ingredient GI or family mean. Named exact application: käyttövalmista laimennettua lihalientä. "
+          },
+          {
+            "name": "French's Dijon Mustard US32oz",
+            "grams": 5,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Documented whole-ingredient omission, not zero.",
+            "availableCarbohydrateUpperBoundPerServingG": 0.125,
+            "upperBoundEvidence": "McCormick French's Dijon US32oz GTIN00041500741284 manufacturer sheet, serving5g, labelled5kcal and0g totalC/fat/protein.21CFR101.9 rounding: nominal source-model ceilings .5g each and7.5kcal per5g; not true zero, polyols unknown, not a lot/clinical guarantee. No transfer to Maille, honey/wholegrain or other markets."
+          },
+          {
+            "name": "mustapippuria",
+            "grams": 1.15,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Documented whole-ingredient omission, not zero.",
+            "availableCarbohydrateUpperBoundPerServingG": 0.18385625,
+            "upperBoundEvidence": "USDA SR Legacy FDC170931 Spices, pepper, black: native source-total CHO includes fibre/unknown polyols and bounds omitted available CHO; same-source protein/fat/energy. Nominal source model, not physiological or lot guarantee. Whole milled spice, no fraction removed."
+          },
+          {
+            "name": "kukkakaalia",
+            "grams": 600,
+            "fineliRecordId": "op146-fineli-322",
+            "giRecordId": "op142-vegetable-imputation40",
+            "massEvidence": "Defined weighed edible input; original amounts/household equivalents and preparation reviewed separately. No blanket density conversion. ",
+            "foodKey": "op142-low-carb-vegetable",
+            "preparationKey": "op142-vegetable-imputation40",
+            "giMatchEvidence": "Existing project published-imputation rule, not a measured ingredient GI or family mean. Named exact application: kukkakaalia. "
+          },
+          {
+            "name": "voita",
+            "grams": 40,
+            "fineliRecordId": "op146-fineli-500",
+            "giRecordId": "op142-dairy-imputation30",
+            "massEvidence": "Defined weighed edible input; original amounts/household equivalents and preparation reviewed separately. No blanket density conversion. ",
+            "foodKey": "op142-dairy-code",
+            "preparationKey": "op142-dairy-imputation30",
+            "giMatchEvidence": "Existing project published-imputation rule, not a measured ingredient GI or family mean. Named exact application: voita. "
+          },
+          {
+            "name": "suolaa",
+            "grams": null,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Pure salt/water, not mixed seasoning or broth.",
+            "estimatedAvailableCarbohydratePerServingG": 0,
+            "negligibleAssumption": "Literal pure salt or water, no nutrient-bearing mixture; no liquid density conversion needed."
+          }
+        ]
+      },
+      "macroStatus": "ESTIMATE WITH EVIDENCE",
+      "sourceLfSha256": "736fbab47d4a46a7ac3e33f73ce74254ffa49a868badc0b22885e49aeaea80d0",
+      "localeLfSha256": {
+        "en": "fa10bc4f5a02809d858af9aaf2fa2befc4b1b0270cecd38bb97c28b7071e1fdb",
+        "sv": "bf6cf713d400e9570b398aa6494a6eec558fb96f183125df0ef6164309554cc2",
+        "th": "ed0afdc2229399fc22cbe4e41bc9a4fbba4a528ca82a0c8082bd0e37aa571f1a"
+      },
+      "macroEvidenceSha256": "977262e84969aa7915b69be3f9e6a17cff2019b887464c366650f69056805295",
+      "gk": 2.97,
+      "omittedCho": 0.30885625,
+      "macroOmissionCaps": {
+        "kcal": 2.596625,
+        "netCarbohydrate": 0.30885625,
+        "totalCarbohydrate": 0.30885625,
+        "protein": 0.15487125000000002,
+        "fat": 0.1343725
+      },
+      "sourceNotes": "Original cauliflower mash, no starch added. Source stock portion conversion is Fineli-specific; original5g Dijon is named and bounded, not zero."
+    },
+    {
+      "recipeId": "lahi-ita-menemen-sumakilla",
+      "batch": 3,
+      "originalPublishedPath": "reseptit/aamupalat/lahi-ita-menemen-sumakilla.md",
+      "previousMacros": {
+        "carbs_net_per_serving_g": 4.45,
+        "carbs_total_per_serving_g": 6.23,
+        "protein_per_serving_g": 8.08,
+        "fat_per_serving_g": 12.27
+      },
+      "newMacros": {
+        "carbs_net_per_serving_g": 4.45,
+        "carbs_total_per_serving_g": 6.23,
+        "protein_per_serving_g": 8.08,
+        "fat_per_serving_g": 12.27
+      },
+      "newInput": {
+        "recipeId": "lahi-ita-menemen-sumakilla",
+        "servings": 2,
+        "ingredients": [
+          {
+            "name": "kuoretonta kananmunaa",
+            "grams": 110,
+            "fineliRecordId": "op146-fineli-858",
+            "giRecordId": "op142-lowcho50-v2",
+            "massEvidence": "Defined weighed edible input; original amounts/household equivalents and preparation reviewed separately. No blanket density conversion. ",
+            "foodKey": "op142-lowcho-code",
+            "preparationKey": "op142-lowcho50-v2",
+            "giMatchEvidence": "Existing project published-imputation rule, not a measured ingredient GI or family mean. Named exact application: kuoretonta kananmunaa. "
+          },
+          {
+            "name": "tomaattia",
+            "grams": 125,
+            "fineliRecordId": "op146-fineli-352",
+            "giRecordId": "op142-vegetable-imputation40",
+            "massEvidence": "Defined weighed edible input; original amounts/household equivalents and preparation reviewed separately. No blanket density conversion. ",
+            "foodKey": "op142-low-carb-vegetable",
+            "preparationKey": "op142-vegetable-imputation40",
+            "giMatchEvidence": "Existing project published-imputation rule, not a measured ingredient GI or family mean. Named exact application: tomaattia. "
+          },
+          {
+            "name": "vihreää paprikaa",
+            "grams": 170,
+            "fineliRecordId": "op146-fineli-387",
+            "giRecordId": "op142-vegetable-imputation40",
+            "massEvidence": "Defined weighed edible input; original amounts/household equivalents and preparation reviewed separately. No blanket density conversion. ",
+            "foodKey": "op142-low-carb-vegetable",
+            "preparationKey": "op142-vegetable-imputation40",
+            "giMatchEvidence": "Existing project published-imputation rule, not a measured ingredient GI or family mean. Named exact application: vihreää paprikaa. "
+          },
+          {
+            "name": "Culpeper's Sumac Ground (sumakki ja suola)",
+            "grams": 2,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Documented whole-ingredient omission, not zero.",
+            "availableCarbohydrateUpperBoundPerServingG": 0.635,
+            "upperBoundEvidence": "Culpeper supplier specification27Aug2026, dry sumac+salt, AU availableCHO63.5g/100g.2g/2serv=>.635g source-model omission ceiling. Fibre/P unreported, not0. Raw PDF SHA6e3d87010cd072999ba171da4c6c76cf0e2fb99e8667184746b4e33735966279."
+          },
+          {
+            "name": "neutraalia paistoöljyä",
+            "grams": 13.5,
+            "fineliRecordId": "op146-fineli-541",
+            "giRecordId": null,
+            "massEvidence": "Defined weighed edible input; original amounts/household equivalents and preparation reviewed separately. No blanket density conversion. "
+          },
+          {
+            "name": "suolaa",
+            "grams": null,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Pure salt/water, not mixed seasoning or broth.",
+            "estimatedAvailableCarbohydratePerServingG": 0,
+            "negligibleAssumption": "Literal pure salt or water, no nutrient-bearing mixture; no liquid density conversion needed."
+          }
+        ]
+      },
+      "macroStatus": "ESTIMATE WITH EVIDENCE",
+      "sourceLfSha256": "7581bdb41ac76fbbe1671ed8d34f34277ecca77e9768c751b967f8783805f9ee",
+      "localeLfSha256": {
+        "en": "3667290e28a028decb5ac4cfc22e7a801e4a7cdcc5905b141db7310b60ea6205",
+        "sv": "a06628c0eb7441b3b329ad943405178b3debdd18b222a313febcd4588e8babfa",
+        "th": "ecd73ef4114459b8c60dd33a388e7c9e5dc1813f9818f736cff209498a4bb379"
+      },
+      "macroEvidenceSha256": "cc0fa257850e52745edfbcf229fa42f541510167f007a9c2d96c6815586842e6",
+      "gk": 1.8,
+      "omittedCho": 0.635,
+      "macroOmissionCaps": {
+        "kcal": 9,
+        "netCarbohydrate": 1,
+        "totalCarbohydrate": 1,
+        "protein": 1,
+        "fat": 1
+      },
+      "sourceNotes": "Defined2g ordinary ground sumac dose, not a reduced1g dose to fit a threshold. Manufacturer AU availableCHO63.5 supports separate GK omission cap; all macros use full2g ingredient mass bound, without filling polyols/fibre."
+    },
+    {
+      "recipeId": "liha-juureskeitto-perunaton",
+      "batch": 3,
+      "originalPublishedPath": "reseptit/paaruoat/liha-juureskeitto-perunaton.md",
+      "previousMacros": {
+        "carbs_net_per_serving_g": 5.61,
+        "carbs_total_per_serving_g": 9.04,
+        "protein_per_serving_g": 39.75,
+        "fat_per_serving_g": 1.19
+      },
+      "newMacros": {
+        "carbs_net_per_serving_g": 6.03,
+        "carbs_total_per_serving_g": 9.02,
+        "protein_per_serving_g": 38.34,
+        "fat_per_serving_g": 6.22
+      },
+      "newInput": {
+        "recipeId": "liha-juureskeitto-perunaton",
+        "servings": 4,
+        "ingredients": [
+          {
+            "name": "luutonta naudanlapaa tai etuselkää",
+            "grams": 700,
+            "fineliRecordId": "op146-fineli-719",
+            "giRecordId": null,
+            "massEvidence": "Defined weighed edible input; original amounts/household equivalents and preparation reviewed separately. No blanket density conversion. "
+          },
+          {
+            "name": "vettä",
+            "grams": null,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Pure salt/water, not mixed seasoning or broth.",
+            "estimatedAvailableCarbohydratePerServingG": 0,
+            "negligibleAssumption": "Literal pure salt or water, no nutrient-bearing mixture; no liquid density conversion needed."
+          },
+          {
+            "name": "kuorittua lanttua",
+            "grams": 200,
+            "fineliRecordId": "op146-fineli-303",
+            "giRecordId": "op142-vegetable-imputation40",
+            "massEvidence": "Defined weighed edible input; original amounts/household equivalents and preparation reviewed separately. No blanket density conversion. ",
+            "foodKey": "op142-low-carb-vegetable",
+            "preparationKey": "op142-vegetable-imputation40",
+            "giMatchEvidence": "Existing project published-imputation rule, not a measured ingredient GI or family mean. Named exact application: kuorittua lanttua. "
+          },
+          {
+            "name": "kuorittua porkkanaa",
+            "grams": 150,
+            "fineliRecordId": "op146-fineli-300",
+            "giRecordId": "op142-vegetable-imputation40",
+            "massEvidence": "Defined weighed edible input; original amounts/household equivalents and preparation reviewed separately. No blanket density conversion. ",
+            "foodKey": "op142-low-carb-vegetable",
+            "preparationKey": "op142-vegetable-imputation40",
+            "giMatchEvidence": "Existing project published-imputation rule, not a measured ingredient GI or family mean. Named exact application: kuorittua porkkanaa. "
+          },
+          {
+            "name": "kuorittua juuriselleriä",
+            "grams": 150,
+            "fineliRecordId": "op146-fineli-311",
+            "giRecordId": "op142-vegetable-imputation40",
+            "massEvidence": "Defined weighed edible input; original amounts/household equivalents and preparation reviewed separately. No blanket density conversion. ",
+            "foodKey": "op142-low-carb-vegetable",
+            "preparationKey": "op142-vegetable-imputation40",
+            "giMatchEvidence": "Existing project published-imputation rule, not a measured ingredient GI or family mean. Named exact application: kuorittua juuriselleriä. "
+          },
+          {
+            "name": "kuorittua sipulia, siivilöitävä aromikasvis",
+            "grams": 55,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Documented whole-ingredient omission, not zero.",
+            "availableCarbohydrateUpperBoundPerServingG": 0.66,
+            "upperBoundEvidence": "Whole raw onion Fineli335 bounds the unknown consumed/leached fraction after straining; no0% or100% consumption point is invented. Frozen A4.8,FIB1.2,P0,protein1.25,fat.1; energy budget40kcal/100g consistent with USDA raw onion source model. Same existing cumulative omission limits."
+          },
+          {
+            "name": "laakerinlehtiä,2 pientä kokonaista lehteä",
+            "grams": 0.4,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Documented whole-ingredient omission, not zero.",
+            "availableCarbohydrateUpperBoundPerServingG": 0.07497,
+            "upperBoundEvidence": "USDA SR Legacy FDC170917 Spices, bay leaf: native source-total CHO includes fibre/unknown polyols and bounds omitted available CHO; same-source protein/fat/energy. Nominal source model, not physiological or lot guarantee. Whole milled spice, no fraction removed."
+          },
+          {
+            "name": "kokonaisia mustapippureita,6 kpl",
+            "grams": 0.3,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Documented whole-ingredient omission, not zero.",
+            "availableCarbohydrateUpperBoundPerServingG": 0.047962500000000005,
+            "upperBoundEvidence": "USDA SR Legacy FDC170931 Spices, pepper, black: native source-total CHO includes fibre/unknown polyols and bounds omitted available CHO; same-source protein/fat/energy. Nominal source model, not physiological or lot guarantee. Whole milled spice, no fraction removed."
+          },
+          {
+            "name": "silputtua persiljaa",
+            "grams": 4,
+            "fineliRecordId": "op146-fineli-333",
+            "giRecordId": "op142-vegetable-imputation40",
+            "massEvidence": "Defined weighed edible input; original amounts/household equivalents and preparation reviewed separately. No blanket density conversion. ",
+            "foodKey": "op142-low-carb-vegetable",
+            "preparationKey": "op142-vegetable-imputation40",
+            "giMatchEvidence": "Existing project published-imputation rule, not a measured ingredient GI or family mean. Named exact application: silputtua persiljaa. "
+          },
+          {
+            "name": "suolaa",
+            "grams": null,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Pure salt/water, not mixed seasoning or broth.",
+            "estimatedAvailableCarbohydratePerServingG": 0,
+            "negligibleAssumption": "Literal pure salt or water, no nutrient-bearing mixture; no liquid density conversion needed."
+          }
+        ]
+      },
+      "macroStatus": "ESTIMATE WITH EVIDENCE",
+      "sourceLfSha256": "00be4efd7123bf423b8798c835b7171b04c598f85ec37c5ab38449f8e6da3191",
+      "localeLfSha256": {
+        "en": "40d69ffe51eab67213785449a51c1159b962da0832818fba9557277fe34fc3d9",
+        "sv": "3cf07433a6b315e41b175e6d9cdd6e522d14e5f06a4e444655fc3015102478cc",
+        "th": "d6923309bdea11524df4fa8de65656ad6646d8a9011931dd536fe2e11b414e45"
+      },
+      "macroEvidenceSha256": "45f25e8683837151f6894950625a7d9659de051cf85a8d420b966f130691c216",
+      "gk": 2.41,
+      "omittedCho": 0.7829325,
+      "macroOmissionCaps": {
+        "kcal": 6.00125,
+        "netCarbohydrate": 0.7829325,
+        "totalCarbohydrate": 0.9479325000000001,
+        "protein": 0.1872775,
+        "fat": 0.024555
+      },
+      "sourceNotes": "Fineli719 matches the original beef-stew cut. Original onion remains strained; its entire source nutrient input is bounded, no recipe change to keep it or invented extraction percentage. Full edible beef/root input counted without unmeasured skimming-loss credit."
+    },
+    {
+      "recipeId": "vhh-letut",
+      "batch": 3,
+      "originalPublishedPath": "reseptit/jalkiruoat/vhh-letut.md",
+      "previousMacros": {
+        "carbs_net_per_serving_g": 2.57,
+        "carbs_total_per_serving_g": 7.09,
+        "protein_per_serving_g": 11.73,
+        "fat_per_serving_g": 24.56
+      },
+      "newMacros": {
+        "carbs_net_per_serving_g": 2.72,
+        "carbs_total_per_serving_g": 6.76,
+        "protein_per_serving_g": 12.28,
+        "fat_per_serving_g": 24.65
+      },
+      "newInput": {
+        "recipeId": "vhh-letut",
+        "servings": 4,
+        "ingredients": [
+          {
+            "name": "kuoretonta kananmunaa",
+            "grams": 220,
+            "fineliRecordId": "op146-fineli-858",
+            "giRecordId": "op142-lowcho50-v2",
+            "massEvidence": "Defined weighed edible input; original amounts/household equivalents and preparation reviewed separately. No blanket density conversion. ",
+            "foodKey": "op142-lowcho-code",
+            "preparationKey": "op142-lowcho50-v2",
+            "giMatchEvidence": "Existing project published-imputation rule, not a measured ingredient GI or family mean. Named exact application: kuoretonta kananmunaa. "
+          },
+          {
+            "name": "maustamatonta tuorejuustoa,11%",
+            "grams": 100,
+            "fineliRecordId": "op146-fineli-11571",
+            "giRecordId": "op142-dairy-imputation30",
+            "massEvidence": "Defined weighed edible input; original amounts/household equivalents and preparation reviewed separately. No blanket density conversion. ",
+            "foodKey": "op142-dairy-code",
+            "preparationKey": "op142-dairy-imputation30",
+            "giMatchEvidence": "Existing project published-imputation rule, not a measured ingredient GI or family mean. Named exact application: maustamatonta tuorejuustoa,11%. "
+          },
+          {
+            "name": "kokonaisista manteleista jauhettua täysrasvaista mantelijauhoa",
+            "grams": 50,
+            "fineliRecordId": "op146-fineli-379",
+            "giRecordId": null,
+            "massEvidence": "Defined weighed edible input; original amounts/household equivalents and preparation reviewed separately. No blanket density conversion. "
+          },
+          {
+            "name": "kuohukermaa,38%",
+            "grams": 100,
+            "fineliRecordId": "op146-fineli-631",
+            "giRecordId": "op142-dairy-imputation30",
+            "massEvidence": "Defined weighed edible input; original amounts/household equivalents and preparation reviewed separately. No blanket density conversion. ",
+            "foodKey": "op142-dairy-code",
+            "preparationKey": "op142-dairy-imputation30",
+            "giMatchEvidence": "Existing project published-imputation rule, not a measured ingredient GI or family mean. Named exact application: kuohukermaa,38%. "
+          },
+          {
+            "name": "Foodin100%erytritolia",
+            "grams": 12,
+            "fineliRecordId": "foodin-erythritol-200g-label-2026-10-24",
+            "giRecordId": null,
+            "massEvidence": "Defined weighed Foodin100%erythritol input; manufacturer declares all100g carbohydrate as100g polyols."
+          },
+          {
+            "name": "voita paistamiseen",
+            "grams": 4.5,
+            "fineliRecordId": "op146-fineli-500",
+            "giRecordId": "op142-dairy-imputation30",
+            "massEvidence": "Defined weighed edible input; original amounts/household equivalents and preparation reviewed separately. No blanket density conversion. ",
+            "foodKey": "op142-dairy-code",
+            "preparationKey": "op142-dairy-imputation30",
+            "giMatchEvidence": "Existing project published-imputation rule, not a measured ingredient GI or family mean. Named exact application: voita paistamiseen. "
+          },
+          {
+            "name": "suolaa",
+            "grams": null,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Pure salt/water, not mixed seasoning or broth.",
+            "estimatedAvailableCarbohydratePerServingG": 0,
+            "negligibleAssumption": "Literal pure salt or water, no nutrient-bearing mixture; no liquid density conversion needed."
+          }
+        ]
+      },
+      "macroStatus": "ESTIMATE WITH EVIDENCE",
+      "sourceLfSha256": "513be36c7bec75f235b0bbec9a1b53d9bbc8e79197b6316fbe970f0f8c801a10",
+      "localeLfSha256": {
+        "en": "ed8fbe60677166cdedc4200f66092ce6c19a9781abae61ca16908300c10986ed",
+        "sv": "411a9a8eb4e7d26824c6e2a2620f3c20392680af697b9ef57a5a3807492bd2e9",
+        "th": "d842157fc8540055704896550d9d2618d818b8d6ca197f7d3b18e23df4452238"
+      },
+      "macroEvidenceSha256": "87a5fe237923f07c303cbf01ae8c8e04a76a7c1f0a047cb1fbf2846431d54ea6",
+      "gk": 0.6,
+      "omittedCho": 0.825,
+      "macroOmissionCaps": {
+        "kcal": 0,
+        "netCarbohydrate": 0,
+        "totalCarbohydrate": 0,
+        "protein": 0,
+        "fat": 0
+      },
+      "sourceNotes": "Full-fat100%whole-almond meal, dry milling without oil/fibre separation, Fineli379 separate LOW composition proxy. Not defatted flour. No almond GI invented; small source availableCHO is explicitly omitted under existing limits. Fat/cheese percentages are specified to match composition."
+    },
+    {
+      "recipeId": "vhh-korvapuustit",
+      "batch": 3,
+      "originalPublishedPath": "reseptit/jalkiruoat/vhh-korvapuustit.md",
+      "previousMacros": {
+        "carbs_net_per_serving_g": 1.66,
+        "carbs_total_per_serving_g": 8.22,
+        "protein_per_serving_g": 8.79,
+        "fat_per_serving_g": 16.5
+      },
+      "newMacros": {
+        "carbs_net_per_serving_g": 1.31,
+        "carbs_total_per_serving_g": 6.49,
+        "protein_per_serving_g": 9.36,
+        "fat_per_serving_g": 16.58
+      },
+      "newInput": {
+        "recipeId": "vhh-korvapuustit",
+        "servings": 8,
+        "ingredients": [
+          {
+            "name": "mozzarellaraastetta,20.7%",
+            "grams": 150,
+            "fineliRecordId": "op146-fineli-29239",
+            "giRecordId": "op142-dairy-imputation30",
+            "massEvidence": "Defined weighed edible input; original amounts/household equivalents and preparation reviewed separately. No blanket density conversion. ",
+            "foodKey": "op142-dairy-code",
+            "preparationKey": "op142-dairy-imputation30",
+            "giMatchEvidence": "Existing project published-imputation rule, not a measured ingredient GI or family mean. Named exact application: mozzarellaraastetta,20.7%. "
+          },
+          {
+            "name": "maustamatonta tuorejuustoa,11%",
+            "grams": 50,
+            "fineliRecordId": "op146-fineli-11571",
+            "giRecordId": "op142-dairy-imputation30",
+            "massEvidence": "Defined weighed edible input; original amounts/household equivalents and preparation reviewed separately. No blanket density conversion. ",
+            "foodKey": "op142-dairy-code",
+            "preparationKey": "op142-dairy-imputation30",
+            "giMatchEvidence": "Existing project published-imputation rule, not a measured ingredient GI or family mean. Named exact application: maustamatonta tuorejuustoa,11%. "
+          },
+          {
+            "name": "kokonaisista manteleista jauhettua täysrasvaista mantelijauhoa",
+            "grams": 120,
+            "fineliRecordId": "op146-fineli-379",
+            "giRecordId": null,
+            "massEvidence": "Defined weighed edible input; original amounts/household equivalents and preparation reviewed separately. No blanket density conversion. "
+          },
+          {
+            "name": "psyllium-siemenkuorijauhetta",
+            "grams": 10,
+            "fineliRecordId": "op146-fineli-31681",
+            "giRecordId": null,
+            "massEvidence": "Defined weighed edible input; original amounts/household equivalents and preparation reviewed separately. No blanket density conversion. "
+          },
+          {
+            "name": "kuoretonta kananmunaa taikinaan",
+            "grams": 55,
+            "fineliRecordId": "op146-fineli-858",
+            "giRecordId": "op142-lowcho50-v2",
+            "massEvidence": "Defined weighed edible input; original amounts/household equivalents and preparation reviewed separately. No blanket density conversion. ",
+            "foodKey": "op142-lowcho-code",
+            "preparationKey": "op142-lowcho50-v2",
+            "giMatchEvidence": "Existing project published-imputation rule, not a measured ingredient GI or family mean. Named exact application: kuoretonta kananmunaa taikinaan. "
+          },
+          {
+            "name": "voita täytteeseen",
+            "grams": 30,
+            "fineliRecordId": "op146-fineli-500",
+            "giRecordId": "op142-dairy-imputation30",
+            "massEvidence": "Defined weighed edible input; original amounts/household equivalents and preparation reviewed separately. No blanket density conversion. ",
+            "foodKey": "op142-dairy-code",
+            "preparationKey": "op142-dairy-imputation30",
+            "giMatchEvidence": "Existing project published-imputation rule, not a measured ingredient GI or family mean. Named exact application: voita täytteeseen. "
+          },
+          {
+            "name": "Foodin100%erytritolia",
+            "grams": 24,
+            "fineliRecordId": "foodin-erythritol-200g-label-2026-10-24",
+            "giRecordId": null,
+            "massEvidence": "Defined weighed Foodin100%erythritol input; manufacturer declares all100g carbohydrate as100g polyols."
+          },
+          {
+            "name": "kanelia",
+            "grams": 7.8,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Documented whole-ingredient omission, not zero.",
+            "availableCarbohydrateUpperBoundPerServingG": 0.7857525000000001,
+            "upperBoundEvidence": "USDA SR Legacy FDC171320 Spices, cinnamon, ground: native source-total CHO includes fibre/unknown polyols and bounds omitted available CHO; same-source protein/fat/energy. Nominal source model, not physiological or lot guarantee. Whole milled spice, no fraction removed."
+          },
+          {
+            "name": "kuoretonta kananmunaa voiteluun",
+            "grams": 55,
+            "fineliRecordId": "op146-fineli-858",
+            "giRecordId": "op142-lowcho50-v2",
+            "massEvidence": "Defined weighed edible input; original amounts/household equivalents and preparation reviewed separately. No blanket density conversion. ",
+            "foodKey": "op142-lowcho-code",
+            "preparationKey": "op142-lowcho50-v2",
+            "giMatchEvidence": "Existing project published-imputation rule, not a measured ingredient GI or family mean. Named exact application: kuoretonta kananmunaa voiteluun. "
+          }
+        ]
+      },
+      "macroStatus": "ESTIMATE WITH EVIDENCE",
+      "sourceLfSha256": "d55991f80efa1397c256a867e68c185cdab82c2d650123b95c5890ffdd02fe7e",
+      "localeLfSha256": {
+        "en": "2a187e6e404859516266df1067f0482219f1f78269b6c83bc5103132d029f9e2",
+        "sv": "7ad81bbd66a7555bfa9dfa895209bd7030b566e83f42ae3fb98589c41e8270a3",
+        "th": "8f07cfda818a8e7109a8b2e116aa426ca10e123aeb2b823a292c6cd8a01ea4cb"
+      },
+      "macroEvidenceSha256": "78905b24e6caa2b5d7469f4a08f5c4728baef3836bee8264e224eba9545aca10",
+      "gk": 0.1,
+      "omittedCho": 1.7757525,
+      "macroOmissionCaps": {
+        "kcal": 2.40825,
+        "netCarbohydrate": 0.7857525000000001,
+        "totalCarbohydrate": 0.7857525000000001,
+        "protein": 0.0389025,
+        "fat": 0.01209
+      },
+      "sourceNotes": "Full-fat100%whole-almond meal, dry milling without oil/fibre separation, Fineli379 separate LOW composition proxy. Not defatted flour. No almond GI invented; small source availableCHO is explicitly omitted under existing limits. Fat/cheese percentages are specified to match composition. USDA cinnamon tablespoon7.8g replaces unsupported15g conversion; original1tbsp unchanged. Native Fineli psyllium tablespoon10g used, no AFCD inferredP0."
+    }
+  ]
+}

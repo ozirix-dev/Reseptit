@@ -1,0 +1,53 @@
+{
+  "files": [
+    {
+      "path": "sources/frenchs-dijon.pdf.txt",
+      "sha256": "307fdee8fa853ccfbc50de87b96a9275ca1e3bc24d34e67716bc5b9cc1223806",
+      "bytes": 4169
+    },
+    {
+      "path": "sources/nevo-documents.json",
+      "sha256": "e4b3621f1d745f9993b29e62e2b38c46ed489a601009f2938aa35fc101496763",
+      "bytes": 917
+    },
+    {
+      "path": "sources/nevo19-observation.json",
+      "sha256": "389c155b268ecb8f10699cdfcfb3568933f3c354375bac652811b4f0efdcb753",
+      "bytes": 3588
+    },
+    {
+      "path": "sources/nevo5579-observation.json",
+      "sha256": "a74380e5520c46dd4039ee24fcdaea8057c3eaa1cd4617ccb7b7c519b476660d",
+      "bytes": 6577
+    },
+    {
+      "path": "sources/nevo718-observation.json",
+      "sha256": "989d862d45262334467f8eda2e1d25ee1d5262d2bb9c4b6929cea46df206b89f",
+      "bytes": 5090
+    },
+    {
+      "path": "sources/sumac.pdf.txt",
+      "sha256": "3fc8e1ab1695ae1256d7c7e36839040bc8c21fd8c980584d86ca413dbae1f17a",
+      "bytes": 1469
+    },
+    {
+      "path": "sources/usda-selected.json",
+      "sha256": "6a40da5b5ed5c61e98c99205e3364d2390ef1ad07f4aa3577afd2058fe200922",
+      "bytes": 36222
+    }
+  ],
+  "originalPdfSources": [
+    {
+      "url": "https://www.webstaurantstore.com/documents/nutrition/mustard_dijon_32_oz_frenchs.pdf",
+      "originalPdfSha256": "f826fd78058dea6e6cfa1e231a991725fefbcab2af0c4ed245ef065a9e3d81d2",
+      "textExtraction": "sources/frenchs-dijon.pdf.txt",
+      "visualInspection": "Original PDF page rendered and inspected during source review; extracted facts checked against page."
+    },
+    {
+      "url": "https://www.culpepers.com.au/uploaded/files/product_documents/sumac_-_ground.pdf",
+      "originalPdfSha256": "6e3d87010cd072999ba171da4c6c76cf0e2fb99e8667184746b4e33735966279",
+      "textExtraction": "sources/sumac.pdf.txt",
+      "visualInspection": "Original PDF page rendered and inspected during source review; extracted facts checked against page."
+    }
+  ]
+}

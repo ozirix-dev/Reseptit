@@ -1,0 +1,170 @@
+{
+  "baseMain": "c127a715186d1d10820ae210f8cbff7d982b4444",
+  "local": {
+    "nutritionStrict": "PASS, no conflict requires review",
+    "targetedTests": {
+      "pass": 142,
+      "fail": 0
+    },
+    "staticTests": {
+      "pass": 26,
+      "fail": 0
+    },
+    "typescript": "PASS after unused-import test correction",
+    "aggregateBuild": "PASS, Vite and prerender721 routes; first pipeline stopped before Vite at unused test import, resumed from TypeScript without repeating passed audits.",
+    "translations": "All published pairs structural/known semantic regression PASS; new18 translations AUTOMATED ONLY, no human approval claimed.",
+    "decimal": {
+      "status": "PASS",
+      "checked": 9,
+      "researchScenariosChecked": 6,
+      "recipes": [
+        {
+          "recipeId": "jauhelihapihvit-vhh-kermakastikkeella",
+          "gkExact": "1.091775",
+          "omittedExact": "0.49271250",
+          "macros": {
+            "net": "2.99",
+            "total": "3.09",
+            "protein": "31.73",
+            "fat": "53.45"
+          }
+        },
+        {
+          "recipeId": "ropa-vieja",
+          "gkExact": "3.253433333333333333333333333",
+          "omittedExact": "0.30719666666666667",
+          "macros": {
+            "net": "7.52",
+            "total": "9.33",
+            "protein": "34.01",
+            "fat": "6.68"
+          }
+        },
+        {
+          "recipeId": "siskonmakkarakeitto-juurekset",
+          "gkExact": "7.0414",
+          "omittedExact": "0.11742250000000001",
+          "macros": {
+            "net": "15.50",
+            "total": "18.57",
+            "protein": "12.29",
+            "fat": "18.40"
+          }
+        },
+        {
+          "recipeId": "nakkikeitto-kukkakaalilla",
+          "gkExact": "5.133775",
+          "omittedExact": "0.22134125",
+          "macros": {
+            "net": "11.08",
+            "total": "14.66",
+            "protein": "13.83",
+            "fat": "17.51"
+          }
+        },
+        {
+          "recipeId": "nakkikastike-kukkakaalimuusi",
+          "gkExact": "2.969",
+          "omittedExact": "0.30885625",
+          "macros": {
+            "net": "7.33",
+            "total": "10.28",
+            "protein": "15.55",
+            "fat": "45.83"
+          }
+        },
+        {
+          "recipeId": "lahi-ita-menemen-sumakilla",
+          "gkExact": "1.79500",
+          "omittedExact": "0.635",
+          "macros": {
+            "net": "4.45",
+            "total": "6.23",
+            "protein": "8.08",
+            "fat": "12.27"
+          }
+        },
+        {
+          "recipeId": "liha-juureskeitto-perunaton",
+          "gkExact": "2.41190",
+          "omittedExact": "0.782932500000000005",
+          "macros": {
+            "net": "6.03",
+            "total": "9.02",
+            "protein": "38.34",
+            "fat": "6.22"
+          }
+        },
+        {
+          "recipeId": "vhh-letut",
+          "gkExact": "0.6027",
+          "omittedExact": "0.825",
+          "macros": {
+            "net": "2.72",
+            "total": "6.76",
+            "protein": "12.28",
+            "fat": "24.65"
+          }
+        },
+        {
+          "recipeId": "vhh-korvapuustit",
+          "gkExact": "0.1046250",
+          "omittedExact": "1.7757525000000001",
+          "macros": {
+            "net": "1.31",
+            "total": "6.49",
+            "protein": "9.36",
+            "fat": "16.58"
+          }
+        }
+      ],
+      "researchScenarios": [
+        {
+          "recipeId": "vhh-juustokakku",
+          "gkExact": "0.61575",
+          "omittedExact": "0.95035500000000001",
+          "activated": false
+        },
+        {
+          "recipeId": "rahkapiirakka-vhh",
+          "gkExact": "0.4996875",
+          "omittedExact": "0.7601625",
+          "activated": false
+        },
+        {
+          "recipeId": "vhh-lihapiirakka",
+          "gkExact": "0.302625",
+          "omittedExact": "1.016928125",
+          "activated": false
+        },
+        {
+          "recipeId": "keto-korvapuustit",
+          "gkExact": "0.1693125",
+          "omittedExact": "1.1869175",
+          "activated": false
+        },
+        {
+          "recipeId": "kana-parmesaanipannu-parsakaali",
+          "gkExact": "1.0611025",
+          "omittedExact": "0.07993750000000001",
+          "activated": false
+        },
+        {
+          "recipeId": "kermainen-kanasienipannu",
+          "gkExact": "0.7372125",
+          "omittedExact": "1.20493750000000001",
+          "activated": false
+        }
+      ]
+    },
+    "previousNumericResultsPreserved": 147,
+    "otherFullResultHashesPreserved": 317,
+    "originalFoodRecordsPreservedInOrder": 575,
+    "newFoodRecords": 29,
+    "candidateNumericCoverage": 156,
+    "denominator": 326,
+    "newWithholdings": 0
+  },
+  "githubCI": "Use the normal Draft PR check for its exact pushed HEAD; no manual workflow reruns.",
+  "publication": "NOT RELEASED; no Ready/merge/deploy authority."
+}

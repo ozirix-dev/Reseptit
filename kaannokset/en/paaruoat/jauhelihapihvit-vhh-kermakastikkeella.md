@@ -12,66 +12,72 @@ main_ingredient:
 cooking_method:
   - liesi
 servings: 4
-carbs_net_per_serving_g: 3.17
-carbs_total_per_serving_g: 3.34
-protein_per_serving_g: 31.83
-fat_per_serving_g: 53.44
+carbs_net_per_serving_g: 2.99
+carbs_total_per_serving_g: 3.09
+protein_per_serving_g: 31.73
+fat_per_serving_g: 53.45
 time_total_min: 35
 difficulty: easy
 tags:
-  - "Finnish home cooking"
-  - "low carb"
-  - "minced meat patties"
-  - "cream sauce"
+  - Finnish home cooking
+  - low carb
+  - minced meat patties
+  - cream sauce
 image:
   src: paaruoat/jauhelihapihvit-kermakastikkeella.webp
-  alt: Ground beef patties in a peppery cream sauce with green beans and
-    cauliflower puree
+  alt: Ground beef patties in a peppery cream sauce with green beans and cauliflower puree
   width: 1280
   height: 853
 ingredients:
   - amount: 600
     unit: g
-    item: ground beef
-  - amount: 1
-    unit: ""
-    item: egg
-  - amount: 0.5
-    unit: dl
-    item: whipping cream
-  - amount: 1
-    unit: ""
-    item: small onion
+    item: beef mince, 17% fat
+  - amount: 55
+    unit: g
+    item: egg without shell
+  - amount: 50
+    unit: g
+    item: whipping cream for the patties, 38% fat
+  - amount: 30
+    unit: g
+    item: peeled onion
     note: finely grated
-  - amount: 1
-    unit: tsp
+  - amount: 5
+    unit: g
     item: salt
-  - amount: 0.5
-    unit: tsp
-    item: black pepper
-  - amount: 1
-    unit: tbsp
+  - amount: 1.15
+    unit: g
+    item: ground black pepper for the patties
+  - amount: 14
+    unit: g
     item: butter
     note: for frying
-  - amount: 2
-    unit: dl
-    item: whipping cream
+  - amount: 200
+    unit: g
+    item: whipping cream for the sauce, 38% fat
     note: for sauce
-  - amount: 1
-    unit: dl
-    item: meat broth
-  - amount: 1
-    unit: tsp
-    item: Dijon mustard
-  - amount: 0.5
-    unit: tsp
-    item: black pepper
+  - amount: 100
+    unit: g
+    item: ready-to-use diluted beef stock
+  - amount: 5
+    unit: g
+    item: French's Dijon Mustard, US 32 oz product
+  - amount: 1.15
+    unit: g
+    item: ground black pepper for the sauce
     note: for sauce
 source_language: fi
 source_recipe: reseptit/paaruoat/jauhelihapihvit-vhh-kermakastikkeella.md
 translation_of: jauhelihapihvit-vhh-kermakastikkeella
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status:
+  en: published
+  sv: published
+  th: published
 ---
-
 # Flourless Beef Patties with Cream Sauce
 
 Succulent ground beef patties and cream sauce cooked in a pan bring familiar home cooking to the table without breadcrumbs or wheat flour.
@@ -91,3 +97,9 @@ Steaks get their structure from egg and minced meat. The sauce thickens slowly b
 ## Notes
 
 - If the broth is salty, taste the sauce before adding additional salt.
+
+GK and nutrition apply only to these weighed edible ingredients and this serving count. GK is a LOW-confidence modelled estimate: the applied GI codes are not measurements of this dish. Small documented omissions contribute uncertainty. Suggested side dishes are outside the calculation. Changes to products or amounts require a new estimate.
+
+The mustard scope is French’s Dijon US 32 oz (GTIN 00041500741284). Rounded label zeros are not treated as true zeros.
+
+Stock composition uses a LOW Fineli proxy for ready-to-use diluted beef stock. All listed stock is included in the servings.

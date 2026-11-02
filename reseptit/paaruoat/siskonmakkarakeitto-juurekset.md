@@ -18,29 +18,29 @@ ingredients:
   - amount: 400
     unit: g
     item: siskonmakkaraa
-  - amount: 1
-    unit: l
-    item: lihalientä
+  - amount: 1000
+    unit: g
+    item: käyttövalmista laimennettua lihalientä
   - amount: 250
     unit: g
-    item: lanttua
+    item: kuorittua lanttua
   - amount: 150
     unit: g
-    item: porkkanaa
+    item: kuorittua porkkanaa
   - amount: 100
     unit: g
-    item: juuriselleriä
-  - amount: 1
-    unit: kpl
-    item: sipuli
-  - amount: 1
-    unit: kpl
-    item: laakerinlehti
-  - amount: 2
-    unit: rkl
+    item: kuorittua juuriselleriä
+  - amount: 55
+    unit: g
+    item: kuorittua sipulia
+  - amount: 0.2
+    unit: g
+    item: laakerinlehteä,1 pieni kokonainen lehti
+  - amount: 4
+    unit: g
     item: silputtua persiljaa
-  - amount: null
-    unit: ""
+  - amount: 0.5
+    unit: g
     item: mustapippuria
 servings: 4
 time_total_min: 40
@@ -50,11 +50,18 @@ image:
   alt: Siskonmakkarakeitto juureksilla tarjoiltuna
   width: 1536
   height: 1024
-carbs_net_per_serving_g: 9.01
-carbs_total_per_serving_g: 12.11
-protein_per_serving_g: 12.01
-fat_per_serving_g: 17.42
-
+carbs_net_per_serving_g: 15.5
+carbs_total_per_serving_g: 18.57
+protein_per_serving_g: 12.29
+fat_per_serving_g: 18.4
+translation_languages:
+  - en
+  - sv
+  - th
+translation_status:
+  en: published
+  sv: published
+  th: published
 ---
 # Siskonmakkarakeitto juureksilla
 
@@ -77,3 +84,7 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 ## Muistiinpanot
 
 Lanttua ja porkkanaa sisältävän keiton hiilihydraattimäärä riippuu annoskoosta.
+
+GK ja ravintoarvot koskevat vain näitä punnittuja, syötäviä ainesosia ja annosmäärää. GK on LOW-luottamuksen mallinnettu arvio: sovelletut GI-koodaukset eivät ole tämän ruoan mittaustuloksia. Pienet lähteistetyt poisrajaukset sisältyvät epävarmuuteen. Tarjoiluehdotusten lisukkeet eivät kuulu laskentaan. Tuotevaihdot ja määrien muutokset vaativat uuden arvion.
+
+Liemen koostumuksena käytetään Finelin käyttövalmiin laimennetun lihaliemen LOW-proxya. Koko reseptiin merkitty liemi sisältyy annoksiin.
