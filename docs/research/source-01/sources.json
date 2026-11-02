@@ -1,0 +1,217 @@
+{
+  "status": "RESEARCH_ONLY_OWNER_REVIEW_PENDING",
+  "reviewDate": "2026-11-02",
+  "sources": [
+    {
+      "id": "NEVO",
+      "owner": "RIVM",
+      "version": "2025/9.0",
+      "foodCount": 2328,
+      "countScope": "official release count",
+      "formats": [
+        "web individual record",
+        "Excel/CSV selection",
+        "full dataset after acceptance/request"
+      ],
+      "apiStatus": "No documented stable public nutrient API verified; website endpoint is not an API contract",
+      "rights": "RIVM NEVO 2025 conditions; preserve raw data, distinguish additions, source/version attribution; no fees to users for use of NEVO data. Commercial deployment requires checking exact presentation/business model against conditions.",
+      "licenceUrl": "https://www.rivm.nl/sites/default/files/2025-11/Conditions-of-use-NEVO-online-2025-dataset_0.pdf",
+      "sourceUrl": "https://www.rivm.nl/en/dutch-food-composition-database/access-nevo-data",
+      "definitionUrl": "https://www.rivm.nl/sites/default/files/2025-11/NEVO-online-background-information-2025.pdf",
+      "carbohydrate": "available includes polyols, excludes fibre; nutrient derivation varies by value",
+      "polyols": "aggregate present in 17 samples; all report zero, many logically derived, not automatically measured",
+      "proteinFat": "both reported in 17 inspected samples; release-wide completeness not established",
+      "stateBasis": "typically per100g edible; 100ml exceptions must retain density/basis",
+      "decision": "PRIORITY_1_CONDITIONAL_LOCAL_PILOT"
+    },
+    {
+      "id": "THAI",
+      "owner": "Institute of Nutrition, Mahidol University",
+      "version": "home v3 Aug 2025; sample PDF footer v2 Sep 2018",
+      "foodCount": null,
+      "countScope": "not verified",
+      "formats": [
+        "web search",
+        "individual PDF export"
+      ],
+      "apiStatus": "No documented stable public nutrient API verified",
+      "rights": "Noncommercial access/reuse with attribution; commercial use/reproduction requires INMU permission and may incur fees. No permission obtained.",
+      "licenceUrl": "https://inmu.mahidol.ac.th/thaifcd/",
+      "sourceUrl": "https://inmu.mahidol.ac.th/thaifcd/",
+      "carbohydrate": "CHOAVLDF subtracts fibre; CHOCDF does not. Do not interchange.",
+      "polyols": "aggregate not reported in three inspected samples; unknown is not zero",
+      "proteinFat": "PROTCNT and FAT components in three samples; individual missing markers retained",
+      "stateBasis": "per100g food; edible fraction and density not assumed",
+      "decision": "HOLD_RIGHTS_AND_VERSION"
+    },
+    {
+      "id": "MEXT",
+      "owner": "MEXT, Japan",
+      "version": "8th edition 2023 supplement; corrected workbook 2026-03-27; web update 2026-06-09",
+      "foodCount": 2538,
+      "countScope": "corrected main composition workbook, five-digit food records",
+      "formats": [
+        "web records",
+        "XLSX",
+        "PDF"
+      ],
+      "apiStatus": "No documented stable public nutrient API verified",
+      "rights": "Official reuse notice permits use in books/apps without application or fee with attribution; preserve named edition and correction snapshot. Third-party material separately checked.",
+      "licenceUrl": "https://www.mext.go.jp/a_menu/syokuhinseibun/index.htm",
+      "sourceUrl": "https://fooddb.mext.go.jp/",
+      "definitionUrl": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_00001.html",
+      "carbohydrate": "mass sum, monosaccharide equivalent, available by difference and broad carbohydrate are distinct components",
+      "polyols": "aggregate component present; sample missing/trace markers preclude automatic complete calculation",
+      "proteinFat": "total protein/fat distinct from amino-acid protein and TAG-equivalent fat; preserve method",
+      "stateBasis": "per100g edible, refuse percentage and preparation state separate",
+      "decision": "PRIORITY_3_TARGETED_JAPANESE_RECORDS"
+    },
+    {
+      "id": "CoFID",
+      "owner": "Public Health England (2021 release publisher)",
+      "version": "2021",
+      "foodCount": 2887,
+      "distinctNativeFoodCodes": 2886,
+      "countScope": "rows in 1.3 Proximates; native code 13-669 collides",
+      "formats": [
+        "XLSX",
+        "PDF user guide"
+      ],
+      "apiStatus": "Versioned files; no official nutrient API verified",
+      "rights": "Open Government Licence v3.0, attribution; logos/third-party rights excluded",
+      "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+      "sourceUrl": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid",
+      "definitionUrl": "https://assets.publishing.service.gov.uk/media/60538e66d3bf7f03249bac58/McCance_and_Widdowsons_Composition_of_Foods_integrated_dataset_2021.pdf",
+      "carbohydrate": "CHO monosaccharide equivalents; conversion exceptions for starch/oligosaccharide-dominated foods; not a blanket divide by 1.05",
+      "polyols": "no aggregate column in inspected Proximates sheet; not proof of zero or database-wide absence",
+      "proteinFat": "PROT/FAT columns; missing/Tr/N retained",
+      "stateBasis": "per100g food, alcoholic beverage100ml exception; AOACFIB distinct from NSP ENGFIB",
+      "decision": "DEFER_GENERIC_IMPORT; QUARANTINE_NATIVE_ID_COLLISION"
+    },
+    {
+      "id": "Frida",
+      "owner": "DTU National Food Institute",
+      "version": "5.5 Nov 2025; figshare article version8 Jan 2026",
+      "foodCount": 1381,
+      "countScope": "distinct FoodIDs in v5.5 Food sheet",
+      "formats": [
+        "XLSX",
+        "ODS",
+        "PDF documentation"
+      ],
+      "apiStatus": "Figshare official metadata API; no stable nutrient query API verified",
+      "rights": "Dataset XLSX/ODS CC BY4.0; attribution, link to licence, identify changes. Documentation PDF has separate DTU copyright.",
+      "licenceUrl": "https://doi.org/10.11583/DTU.29500682.v8",
+      "sourceUrl": "https://api.figshare.com/v2/articles/29500682",
+      "definitionUrl": "https://ndownloader.figshare.com/files/60901597",
+      "carbohydrate": "170 difference total,172 available difference,318 labelling sum with documented fallback; methods must remain distinct",
+      "polyols": "aggregate ParameterID244; blank in sampled FoodIDs14/716/740, no zero default",
+      "proteinFat": "218 protein vs317 labelling protein;141 fat",
+      "stateBasis": "per100g edible; food waste, prepared/raw and density evidence remain separate",
+      "decision": "PRIORITY_2_REPRODUCIBLE_LOCAL_IMPORT"
+    },
+    {
+      "id": "CIQUAL",
+      "owner": "ANSES",
+      "version": "2025, catalogue v1.0 (19 Nov 2025)",
+      "foodCount": 3484,
+      "countScope": "official documentation,74 constituents",
+      "formats": [
+        "XML",
+        "XLSX",
+        "PDF documentation"
+      ],
+      "apiStatus": "Official dataset catalogue API; no stable website nutrient API verified",
+      "rights": "Licence Ouverte / Etalab2.0 in official dataset metadata; attribute source and update date, identify modifications",
+      "licenceUrl": "https://doi.org/10.57745/RDMHWY",
+      "sourceUrl": "https://entrepot.recherche.data.gouv.fr/api/datasets/:persistentId/?persistentId=doi:10.57745/RDMHWY",
+      "definitionUrl": "https://ciqual.anses.fr/cms/sites/default/files/inline-files/Table%20Ciqual%202025%20doc%20FR_2025_11_19.pdf",
+      "carbohydrate": "EU available including polyols excluding fibre, method varies",
+      "polyols": "34000 excludes erythritol; energy calculation assumed zeros are explicitly not published reliable polyol data",
+      "proteinFat": "25000 Jones protein vs25003 N*6.25;40000 fat; per-record completeness not audited",
+      "stateBasis": "per100g edible; raw/prepared distinct",
+      "decision": "SECOND_WAVE; ERYTHRITOL_SCOPE_GATE"
+    },
+    {
+      "id": "SWEDEN",
+      "owner": "Livsmedelsverket",
+      "version": "public search 2026-07-01",
+      "foodCount": null,
+      "countScope": "exact count for2026 version not verified; official2025 description about2300",
+      "formats": [
+        "web search",
+        "Excel",
+        "API information"
+      ],
+      "apiStatus": "Public API advertised; versioned endpoint/component contract not inspected sufficiently for adapter",
+      "rights": "Source/version attribution and raw-data integrity conditions; exact packaged licence/redistribution scope to archive before import",
+      "licenceUrl": "https://www.livsmedelsverket.se/livsmedel-och-innehall/naringsamne/livsmedelsdatabasen/naringsdeklaration/",
+      "sourceUrl": "https://soknaringsinnehall.livsmedelsverket.se/?soktyp=1",
+      "carbohydrate": "available carbohydrate distinct from fibre; exact native field adapter deferred",
+      "polyols": "aggregate coverage not verified",
+      "proteinFat": "reported in public composition table; exact completeness not verified",
+      "stateBasis": "per100g edible generally; source state/yield evidence required",
+      "decision": "DEFER_NATIVE_FIELD_AND_RIGHTS_SNAPSHOT"
+    },
+    {
+      "id": "NORWAY",
+      "owner": "Norwegian Food Safety Authority, with University of Oslo",
+      "version": "2026 (14 Jan 2026)",
+      "foodCount": null,
+      "countScope": "official >2000 foods and about50 nutrients, exact current count not downloaded",
+      "formats": [
+        "public JSON API",
+        "web",
+        "download"
+      ],
+      "apiStatus": "Official public unversioned foods/nutrients/sources APIs; pin date and response hash",
+      "rights": "Attribution required; formal SPDX licence not established; archive exact reuse terms before redistribution",
+      "licenceUrl": "https://www.mattilsynet.no/en/food-and-beverages/matvaretabellen/about-the-data-in-the-norwegian-food-composition-table",
+      "sourceUrl": "https://www.matvaretabellen.no/en/api/",
+      "carbohydrate": "normally sugars plus starch; some borrowed by-difference values, method-specific",
+      "polyols": "no aggregate found in inspected nutrient catalogue; reported zero may mean undetectable",
+      "proteinFat": "food-specific nitrogen factors and source methods; exact completeness not audited",
+      "stateBasis": "per100g edible, preparation and yield distinct",
+      "decision": "DEFER_POLYOL_AND_REUSE_SCOPE"
+    },
+    {
+      "id": "IFCT",
+      "owner": "ICMR - National Institute of Nutrition, India",
+      "version": "IFCT2017; newer official composition release not verified",
+      "foodCount": 528,
+      "countScope": "official IFCT2017 preface,151 components; mostlyraw except eggs",
+      "formats": [
+        "PDF"
+      ],
+      "apiStatus": "No official API verified",
+      "rights": "Commercial reuse and public dataset redistribution permission unresolved",
+      "licenceUrl": "https://www.nin.res.in/ebooks/IFCT2017.pdf",
+      "sourceUrl": "https://www.nin.res.in/ebooks/IFCT2017.pdf",
+      "carbohydrate": "native definitions and numeric adapter not verified in this bounded research",
+      "polyols": "not verified",
+      "proteinFat": "composition components; full per-record coverage not audited",
+      "stateBasis": "raw focus; no portion/state conversion approved",
+      "decision": "DEFER_RIGHTS_AND_FIELD_REVIEW"
+    },
+    {
+      "id": "KOREA",
+      "owner": "RDA / National Institute of Crop and Food Science",
+      "version": null,
+      "foodCount": null,
+      "countScope": "latest edition/count not verified; dynamic version selection not available in captured HTML",
+      "formats": [
+        "web search",
+        "Excel download interface"
+      ],
+      "apiStatus": "No official documented API contract verified",
+      "rights": "Commercial reuse and redistribution unresolved",
+      "licenceUrl": "https://www.nics.go.kr/food/eng/fctFoodSrchEng/list",
+      "sourceUrl": "https://www.nics.go.kr/food/eng/fctFoodSrchEng/list",
+      "carbohydrate": "native component definitions deferred",
+      "polyols": "not verified; blank is missing, not zero",
+      "proteinFat": "available search columns, completeness not audited",
+      "stateBasis": "state and basis not approved for adapter",
+      "decision": "DEFER_VERSION_COUNT_RIGHTS_FIELDS"
+    }
+  ]
+}

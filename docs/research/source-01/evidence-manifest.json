@@ -1,0 +1,495 @@
+{
+  "capturedOn": "2026-11-02",
+  "rawFilesIncludedInGit": false,
+  "note": "Stable requested URLs only; transient download signatures omitted. SHA identifies captured bytes, not a vendor authenticity signature. Earlier capture timestamps unknown are null. Catalogue/header records do not imply complete nutrient coverage.",
+  "captures": [
+    {
+      "name": "cofid-2021.xlsx",
+      "url": "https://assets.publishing.service.gov.uk/media/60538b91e90e07527df82ae4/McCance_Widdowsons_Composition_of_Foods_Integrated_Dataset_2021..xlsx",
+      "retrievedAt": "2026-11-02T02:48:04.878532+00:00",
+      "bytes": 4629542,
+      "sha256": "436e9445ef2adb2a75f3d7edd51302de3adad25385f9795fc94ba58bd030e97d",
+      "status": 200
+    },
+    {
+      "name": "frida-current-meta.json",
+      "url": "https://api.figshare.com/v2/articles/29500682",
+      "retrievedAt": "2026-11-02T02:48:03.632961+00:00",
+      "bytes": 7283,
+      "sha256": "d1a268998aca5d6914818c3ff341b6cf72a820d8cfb931d94a64c05ef4678ee1",
+      "status": 200
+    },
+    {
+      "name": "ciqual-current-meta.json",
+      "url": "https://entrepot.recherche.data.gouv.fr/api/datasets/:persistentId/?persistentId=doi:10.57745/RDMHWY",
+      "retrievedAt": "2026-11-02T02:48:04.046275+00:00",
+      "bytes": 17726,
+      "sha256": "1ed52f01d544bd7f6be360c71110afdb5b2422d5d4638bff775649d057ccd66b",
+      "status": 200
+    },
+    {
+      "name": "nevo-terms.pdf",
+      "url": "https://www.rivm.nl/sites/default/files/2025-11/Conditions-of-use-NEVO-online-2025-dataset_0.pdf",
+      "retrievedAt": "2026-11-02T02:48:03.776772+00:00",
+      "bytes": 108403,
+      "sha256": "21af0831faadada45e3dec459c160845b36525ad190ee72c65f20c699f9fb8f2",
+      "status": 200
+    },
+    {
+      "name": "mext-overview.html",
+      "url": "https://www.mext.go.jp/a_menu/syokuhinseibun/index.htm",
+      "retrievedAt": "2026-11-02T02:48:06.329045+00:00",
+      "bytes": 10193,
+      "sha256": "a8233454633bcb9651849d0cecddcfa969f4105ed2397787f6a96b07b61ca7a6",
+      "status": 200
+    },
+    {
+      "name": "norway-home.html",
+      "url": "https://www.matvaretabellen.no/en/",
+      "retrievedAt": "2026-11-02T02:48:04.028392+00:00",
+      "bytes": 9202,
+      "sha256": "a4a0bf772bf7a9e26c5e6ebe2944b3b2aa2d1b4f1aca4d79e364d52b8e8cc102",
+      "status": 200
+    },
+    {
+      "name": "korea-search.html",
+      "url": "https://www.nics.go.kr/food/eng/fctFoodSrchEng/list",
+      "retrievedAt": "2026-11-02T02:48:07.219180+00:00",
+      "bytes": 143462,
+      "sha256": "885cd8e440d6c7dd6e6863b00cdc7c2d6cbf3dff3228558f193b20d566332dff",
+      "status": 200
+    },
+    {
+      "name": "thai-home.html",
+      "url": "https://inmu.mahidol.ac.th/thaifcd/",
+      "retrievedAt": "2026-11-02T02:48:06.693912+00:00",
+      "bytes": 32833,
+      "sha256": "90598fb792eb48d8f36e0163ff6ad16c8f194395c2d1d68ea10e2e7031819579",
+      "status": 200
+    },
+    {
+      "name": "frida-5.5.xlsx",
+      "url": "https://ndownloader.figshare.com/files/60901603",
+      "retrievedAt": "2026-11-02T02:49:32.485784+00:00",
+      "bytes": 12298422,
+      "sha256": "6b1952a35df3c0d4d7b2699ae0a3e377add42b231108309329b40256ef600e5e",
+      "status": 200
+    },
+    {
+      "name": "mext-2023-errata20260327.xlsx",
+      "url": "https://www.mext.go.jp/content/20260327-mxt_kagsei-mext-000029402_02.xlsx",
+      "retrievedAt": "2026-11-02T02:51:00.621063+00:00",
+      "bytes": 1973402,
+      "sha256": "0d5a77077dd6cd91cbc2e6e317b8b218a38728c409eed452f1c10635a0d3099c",
+      "status": 200
+    },
+    {
+      "name": "sample-nevo-83.raw",
+      "url": "https://nevo-online.rivm.nl/Home/GetProductsDetailsByNevoCode?langSetting=en&nevoCode=83",
+      "retrievedAt": "2026-11-02T02:53:28.376056+00:00",
+      "bytes": 145414,
+      "sha256": "f2208ebd1fa127d80412c2be73a7642f9e257904a3a54e3e30bd3e6e635c1756",
+      "status": 200
+    },
+    {
+      "name": "sample-nevo-63.raw",
+      "url": "https://nevo-online.rivm.nl/Home/GetProductsDetailsByNevoCode?langSetting=en&nevoCode=63",
+      "retrievedAt": "2026-11-02T02:53:28.376720+00:00",
+      "bytes": 139508,
+      "sha256": "371e492ea8e90169c39cb0a70e3454d0c58302915bbfd6c57dbed8f09691d0b6",
+      "status": 200
+    },
+    {
+      "name": "sample-nevo-830.raw",
+      "url": "https://nevo-online.rivm.nl/Home/GetProductsDetailsByNevoCode?langSetting=en&nevoCode=830",
+      "retrievedAt": "2026-11-02T02:53:28.377227+00:00",
+      "bytes": 163527,
+      "sha256": "b07393b34db3de747011fd5dc970c5fe01d7e152982812b3df36c3cd9104be80",
+      "status": 200
+    },
+    {
+      "name": "sample-nevo-310.raw",
+      "url": "https://nevo-online.rivm.nl/Home/GetProductsDetailsByNevoCode?langSetting=en&nevoCode=310",
+      "retrievedAt": "2026-11-02T02:53:28.377936+00:00",
+      "bytes": 149655,
+      "sha256": "e9800d2a641a33e7b0cfc81cb729ac2eb292bb9387022df749727a7e87c32d6c",
+      "status": 200
+    },
+    {
+      "name": "sample-nevo-299.raw",
+      "url": "https://nevo-online.rivm.nl/Home/GetProductsDetailsByNevoCode?langSetting=en&nevoCode=299",
+      "retrievedAt": "2026-11-02T02:53:32.822800+00:00",
+      "bytes": 172690,
+      "sha256": "11974e3e9592b2eab79aa18362975e9f9dac71b59ac382ef59949db8df250a43",
+      "status": 200
+    },
+    {
+      "name": "sample-nevo-832.raw",
+      "url": "https://nevo-online.rivm.nl/Home/GetProductsDetailsByNevoCode?langSetting=en&nevoCode=832",
+      "retrievedAt": "2026-11-02T02:53:33.008622+00:00",
+      "bytes": 80733,
+      "sha256": "5062206512a63347cf16717b563318f3865cede76d75af15d2078eb31617c974",
+      "status": 200
+    },
+    {
+      "name": "sample-nevo-2737.raw",
+      "url": "https://nevo-online.rivm.nl/Home/GetProductsDetailsByNevoCode?langSetting=en&nevoCode=2737",
+      "retrievedAt": "2026-11-02T02:53:33.528043+00:00",
+      "bytes": 102829,
+      "sha256": "bf63bba3951e9abfa33684116339a41e9c0700a08d478e7db56c3338737416cc",
+      "status": 200
+    },
+    {
+      "name": "sample-nevo-14.raw",
+      "url": "https://nevo-online.rivm.nl/Home/GetProductsDetailsByNevoCode?langSetting=en&nevoCode=14",
+      "retrievedAt": "2026-11-02T02:53:33.905789+00:00",
+      "bytes": 167212,
+      "sha256": "95c9befc1a2021ea3fc928da26c7c940561813a0684c71e99619bce91a9553d6",
+      "status": 200
+    },
+    {
+      "name": "sample-nevo-5579.raw",
+      "url": "https://nevo-online.rivm.nl/Home/GetProductsDetailsByNevoCode?langSetting=en&nevoCode=5579",
+      "retrievedAt": "2026-11-02T02:53:36.581796+00:00",
+      "bytes": 171208,
+      "sha256": "5a062c9de81888338fe82e8e89168473c630e06dac91ee37ef816eccc1392dd9",
+      "status": 200
+    },
+    {
+      "name": "sample-nevo-2290.raw",
+      "url": "https://nevo-online.rivm.nl/Home/GetProductsDetailsByNevoCode?langSetting=en&nevoCode=2290",
+      "retrievedAt": "2026-11-02T02:53:36.857655+00:00",
+      "bytes": 156067,
+      "sha256": "5655273c3debda4d1b47718ed3ff4f314f34d718a262e2c67b734a523aa4406e",
+      "status": 200
+    },
+    {
+      "name": "sample-nevo-5519.raw",
+      "url": "https://nevo-online.rivm.nl/Home/GetProductsDetailsByNevoCode?langSetting=en&nevoCode=5519",
+      "retrievedAt": "2026-11-02T02:53:37.172049+00:00",
+      "bytes": 159572,
+      "sha256": "d0b337cc26c771ae6ebbef0b9f42f9b1867203fdf36fccf6740a8b5d459ca183",
+      "status": 200
+    },
+    {
+      "name": "sample-nevo-5573.raw",
+      "url": "https://nevo-online.rivm.nl/Home/GetProductsDetailsByNevoCode?langSetting=en&nevoCode=5573",
+      "retrievedAt": "2026-11-02T02:53:37.561097+00:00",
+      "bytes": 165066,
+      "sha256": "5915f9c9b1d30fc7fbb46a4c896a92d4f2ca1ca7130504e2166d28aab0b79157",
+      "status": 200
+    },
+    {
+      "name": "sample-nevo-220.raw",
+      "url": "https://nevo-online.rivm.nl/Home/GetProductsDetailsByNevoCode?langSetting=en&nevoCode=220",
+      "retrievedAt": "2026-11-02T02:53:38.647197+00:00",
+      "bytes": 174574,
+      "sha256": "625fb2e606a8bc54b8ab296d9243cbf521168db76cc3d5a7595dc80cbb3b032f",
+      "status": 200
+    },
+    {
+      "name": "sample-nevo-5.raw",
+      "url": "https://nevo-online.rivm.nl/Home/GetProductsDetailsByNevoCode?langSetting=en&nevoCode=5",
+      "retrievedAt": "2026-11-02T02:53:38.814906+00:00",
+      "bytes": 115114,
+      "sha256": "3e8de4041b320ec1952d7d10897e866ab753867ae040ef71a538c019cbc3d92f",
+      "status": 200
+    },
+    {
+      "name": "sample-nevo-823.raw",
+      "url": "https://nevo-online.rivm.nl/Home/GetProductsDetailsByNevoCode?langSetting=en&nevoCode=823",
+      "retrievedAt": "2026-11-02T02:53:39.643357+00:00",
+      "bytes": 65000,
+      "sha256": "a1d8c3c4ef4c65682bb379612581929269943e63f5bdc1af799e8162ea9b5d00",
+      "status": 200
+    },
+    {
+      "name": "sample-nevo-1528.raw",
+      "url": "https://nevo-online.rivm.nl/Home/GetProductsDetailsByNevoCode?langSetting=en&nevoCode=1528",
+      "retrievedAt": "2026-11-02T02:53:39.647740+00:00",
+      "bytes": 175922,
+      "sha256": "1181e45dc187aeb1d2a424eeca7a458e00db57bf0c2a4cdaed1a9a602e120bc1",
+      "status": 200
+    },
+    {
+      "name": "sample-nevo-691.raw",
+      "url": "https://nevo-online.rivm.nl/Home/GetProductsDetailsByNevoCode?langSetting=en&nevoCode=691",
+      "retrievedAt": "2026-11-02T02:53:40.866411+00:00",
+      "bytes": 157972,
+      "sha256": "0f31e67a1581065fc8f235f7410eee219f338ac133ac3f8dbc93b1ca38572b46",
+      "status": 200
+    },
+    {
+      "name": "sample-mext-4_04046.raw",
+      "url": "https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=4_04046_7",
+      "retrievedAt": "2026-11-02T02:53:40.971683+00:00",
+      "bytes": 26533,
+      "sha256": "92f5e35821425940736e9db16cf9d829176af29ec433692cbb9d646119035599",
+      "status": 200
+    },
+    {
+      "name": "sample-mext-17_17045.raw",
+      "url": "https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=17_17045_7",
+      "retrievedAt": "2026-11-02T02:53:42.025866+00:00",
+      "bytes": 26608,
+      "sha256": "73afdbe2386af8dce4c3c3e4f0a16e0b1bca30ecb0bc58b4f719cd27c77fa4de",
+      "status": 200
+    },
+    {
+      "name": "sample-mext-17_17021.raw",
+      "url": "https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=17_17021_7",
+      "retrievedAt": "2026-11-02T02:53:42.242018+00:00",
+      "bytes": 26722,
+      "sha256": "971bd94100674ba9bbf532a02d81ae1662a2a72179ebe0fecc8025751d47a256",
+      "status": 200
+    },
+    {
+      "name": "sample-mext-8_08013.raw",
+      "url": "https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=8_08013_7",
+      "retrievedAt": "2026-11-02T02:53:42.671810+00:00",
+      "bytes": 26486,
+      "sha256": "b2c306a455876a80b59d56dbc89924b95ffbfe6d85788ffd4d1c5bd7e725404c",
+      "status": 200
+    },
+    {
+      "name": "sample-mext-9_09004.raw",
+      "url": "https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=9_09004_7",
+      "retrievedAt": "2026-11-02T02:53:42.723718+00:00",
+      "bytes": 26467,
+      "sha256": "89a8aba298a9023c2cbb6a5d549bec7fabf2a7abca5b16976dcced8b71575705",
+      "status": 200
+    },
+    {
+      "name": "sample-mext-17_17007.raw",
+      "url": "https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=17_17007_7",
+      "retrievedAt": "2026-11-02T02:53:43.397777+00:00",
+      "bytes": 26586,
+      "sha256": "88f0b2a37e2a242b30451c8c6227a527c9c499f8457561ebaf022c7ed3f565f9",
+      "status": 200
+    },
+    {
+      "name": "sample-thai-498.raw",
+      "url": "https://inmu.mahidol.ac.th/thaifcd/foodsearch/food_name_result_std_pdf/?dbcode=STD&food_id=498",
+      "retrievedAt": "2026-11-02T02:53:43.638657+00:00",
+      "bytes": 212192,
+      "sha256": "430e8d100eecc8534a768dd9aae3233e6aeea4779bc936d9f9cde1117386c327",
+      "status": 200
+    },
+    {
+      "name": "sample-thai-836.raw",
+      "url": "https://inmu.mahidol.ac.th/thaifcd/foodsearch/food_name_result_std_pdf/?dbcode=STD&food_id=836",
+      "retrievedAt": "2026-11-02T02:53:44.058761+00:00",
+      "bytes": 211886,
+      "sha256": "e451b44cfa01dc907aefcd78bb4ee1fa406da7407411effca08e2b9d54321093",
+      "status": 200
+    },
+    {
+      "name": "sample-thai-289.raw",
+      "url": "https://inmu.mahidol.ac.th/thaifcd/foodsearch/food_name_result_std_pdf/?dbcode=STD&food_id=289",
+      "retrievedAt": "2026-11-02T02:53:44.125307+00:00",
+      "bytes": 212290,
+      "sha256": "162bdef4d30ac71b696d1316f58d2f5bd91f058ed19aa3ca5626d41db58190d0",
+      "status": 200
+    },
+    {
+      "name": "cofid-doc.pdf",
+      "url": "https://assets.publishing.service.gov.uk/media/60538e66d3bf7f03249bac58/McCance_and_Widdowsons_Composition_of_Foods_integrated_dataset_2021.pdf",
+      "retrievedAt": null,
+      "retrievalDate": "2026-11-02",
+      "timestampNote": "earlier SOURCE-01 scratch capture; exact transport time not retained",
+      "bytes": 777103,
+      "sha256": "cbac83af403531f1db260a15de058ceca1c1bae6707a8748ee3788fee7f945ec",
+      "locator": "pp. 7,10,16; especially carbohydrate conversion exceptions p.16"
+    },
+    {
+      "name": "frida-doc.pdf",
+      "url": "https://ndownloader.figshare.com/files/60901597",
+      "retrievedAt": null,
+      "retrievalDate": "2026-11-02",
+      "timestampNote": "earlier SOURCE-01 scratch capture; exact transport time not retained",
+      "bytes": 2009881,
+      "sha256": "9bddd4bffff553484e7f7e4874904cc4beaa32596314548965bc3a803dd6b694",
+      "locator": "v5.5, Nov 2025; carbohydrate/protein/fibre methods, p.13 fallback footnote"
+    },
+    {
+      "name": "nevo-doc.pdf",
+      "url": "https://www.rivm.nl/sites/default/files/2025-12/NEVO-online-achtergrondinformatie-2025.pdf",
+      "retrievedAt": null,
+      "retrievalDate": "2026-11-02",
+      "timestampNote": "earlier SOURCE-01 scratch capture; exact transport time not retained",
+      "bytes": 378728,
+      "sha256": "8107a8daf08267120d480d5138ea8edc51441b0d1ab42a9a011b06fabc7e9dd6",
+      "locator": "2025/9.0 component definitions and nutrient source methods",
+      "language": "nl"
+    },
+    {
+      "name": "ciqual-doc.pdf",
+      "url": "https://entrepot.recherche.data.gouv.fr/api/access/datafile/666748",
+      "retrievedAt": null,
+      "retrievalDate": "2026-11-02",
+      "timestampNote": "earlier SOURCE-01 scratch capture; exact transport time not retained",
+      "bytes": 4236848,
+      "sha256": "b95704eb6bb775e73e6f5824eca8bebed1634bb3b3d9631dae1987828e5a95d5",
+      "locator": "2025; sections 3.3.2-3.3.6 including erythritol exclusion"
+    },
+    {
+      "name": "ciqual-const.xml",
+      "url": "https://entrepot.recherche.data.gouv.fr/api/access/datafile/666246",
+      "retrievedAt": null,
+      "retrievalDate": "2026-11-02",
+      "timestampNote": "earlier SOURCE-01 scratch capture; exact transport time not retained",
+      "bytes": 17955,
+      "sha256": "3a231ea3e9836e4ac0b6ff94511e010210b2523d1b8b486c6b29e211066ba3f3",
+      "locator": "2025 constituent codes 25000/25003/31000/34000/34100/40000"
+    },
+    {
+      "name": "norway-nutrients.json",
+      "url": "https://www.matvaretabellen.no/api/en/nutrients.json",
+      "retrievedAt": null,
+      "retrievalDate": "2026-11-02",
+      "timestampNote": "earlier SOURCE-01 scratch capture; exact transport time not retained",
+      "bytes": 13081,
+      "sha256": "15a95f0ebd0682daa293685203dad9aaa28b07df4e9b943ca03269161fbefd91",
+      "locator": "nutrient catalogue only, not whole food dataset"
+    }
+  ],
+  "workbookChecks": {
+    "CoFID": {
+      "sheet": "1.3 Proximates",
+      "foodRows": 2887,
+      "distinctNativeCodes": 2886,
+      "collision": {
+        "nativeCode": "13-669",
+        "rows": [
+          {
+            "excelRow": 55,
+            "name": "Aubergine, flesh and skin, roasted in rapeseed oil"
+          },
+          {
+            "excelRow": 2827,
+            "name": "Watercress, raw"
+          }
+        ]
+      }
+    },
+    "Frida": {
+      "version": "5.5",
+      "FoodIDCount": 1381,
+      "foodSheet": "Food",
+      "parameterSheet": "Parameter",
+      "dataSheet": "Data_Table",
+      "headerRowParameterIDs": 4,
+      "polyolParameterID": 244,
+      "presenceSamples": [
+        {
+          "foodId": 14,
+          "name": "Cauliflower, all varieties, raw",
+          "parameterPresence": {
+            "218": {
+              "present": true,
+              "rawValueKind": "number"
+            },
+            "141": {
+              "present": true,
+              "rawValueKind": "number"
+            },
+            "168": {
+              "present": true,
+              "rawValueKind": "number"
+            },
+            "170": {
+              "present": true,
+              "rawValueKind": "number"
+            },
+            "172": {
+              "present": true,
+              "rawValueKind": "number"
+            },
+            "318": {
+              "present": true,
+              "rawValueKind": "number"
+            },
+            "244": {
+              "present": false,
+              "rawValueKind": "missing-or-code"
+            }
+          }
+        },
+        {
+          "foodId": 716,
+          "name": "Onion, raw",
+          "parameterPresence": {
+            "218": {
+              "present": true,
+              "rawValueKind": "number"
+            },
+            "141": {
+              "present": true,
+              "rawValueKind": "number"
+            },
+            "168": {
+              "present": true,
+              "rawValueKind": "number"
+            },
+            "170": {
+              "present": true,
+              "rawValueKind": "number"
+            },
+            "172": {
+              "present": true,
+              "rawValueKind": "number"
+            },
+            "318": {
+              "present": true,
+              "rawValueKind": "number"
+            },
+            "244": {
+              "present": false,
+              "rawValueKind": "missing-or-code"
+            }
+          }
+        },
+        {
+          "foodId": 740,
+          "name": "Onions, spring, raw",
+          "parameterPresence": {
+            "218": {
+              "present": true,
+              "rawValueKind": "number"
+            },
+            "141": {
+              "present": true,
+              "rawValueKind": "number"
+            },
+            "168": {
+              "present": true,
+              "rawValueKind": "number"
+            },
+            "170": {
+              "present": true,
+              "rawValueKind": "number"
+            },
+            "172": {
+              "present": true,
+              "rawValueKind": "number"
+            },
+            "318": {
+              "present": true,
+              "rawValueKind": "number"
+            },
+            "244": {
+              "present": false,
+              "rawValueKind": "missing-or-code"
+            }
+          }
+        }
+      ]
+    },
+    "MEXT": {
+      "version": "2023 supplement, errata 2026-03-27",
+      "foodCount": 2538,
+      "file": "mext-2023-errata20260327.xlsx",
+      "identityRule": "five-digit food number, preserve leading zeros"
+    }
+  }
+}
