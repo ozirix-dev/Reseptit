@@ -1,0 +1,64 @@
+{
+  "verifiedAtUtc": "2026-11-02T03:40:51.769776+00:00",
+  "baseMain": "adda64fda9bf63e69e190b6d888698587a250a2a",
+  "candidateCoverage": {
+    "numeric": 147,
+    "total": 326,
+    "incomplete": 179
+  },
+  "productionStartingCoverage": {
+    "verifiedAtUtc": "2026-11-02T03:38:11.123576+00:00",
+    "counts": [
+      326,
+      146,
+      180
+    ],
+    "main": "adda64fda9bf63e69e190b6d888698587a250a2a",
+    "url": "https://ozirix-dev.github.io/Reseptit/glykeeminen-kuorma/"
+  },
+  "unit": {
+    "pass": 234,
+    "fail": 0
+  },
+  "static": {
+    "pass": 26,
+    "fail": 0
+  },
+  "translations": {
+    "pass": 27,
+    "fail": 0
+  },
+  "changedContent": {
+    "recipeFiles": 4,
+    "evidenceFiles": 1,
+    "status": "PASS"
+  },
+  "build": {
+    "status": "PASS",
+    "routes": 703,
+    "localExecutions": 1
+  },
+  "decimal": {
+    "status": "PASS",
+    "recipes": 1,
+    "exactGk": "34.08285",
+    "omittedAvailableChoCeilingG": "0.66400"
+  },
+  "publicLocalePages": {
+    "status": "PASS",
+    "count": 4,
+    "scope": "Generated HTML, JSON-LD and public source classifications, not production or browser interaction"
+  },
+  "regression": {
+    "priorNumericResultsPreserved": 146,
+    "otherFullResultObjectsPreserved": 325,
+    "carnitasHoldPreserved": true,
+    "teaEggHoldPreserved": true
+  },
+  "markdown": "PASS",
+  "ownerApproval": "PENDING_DRAFT_REVIEW",
+  "normalPrCi": "Pending PR creation; exact pushed-head completion reported separately",
+  "ready": false,
+  "merged": false,
+  "deployed": false
+}

@@ -1,0 +1,38 @@
+{
+  "reviewed": 2,
+  "draftCandidates": 1,
+  "holds": 1,
+  "decisions": [
+    {
+      "recipeId": "marokkolainen-couscous",
+      "decision": "CONDITIONAL GO",
+      "resolved": [
+        "Original skinless boneless thigh option retained,600g edible raw flesh; no breast substitution.",
+        "Freshly salt-water-boiled whole chickpeas400g weighed after draining, added off heat. New named source GI36, no Edgell35 reheating transfer.",
+        "1000g prepared stock is a new weighed input with all remaining broth served. No1L density guess, unmeasured discarded fraction or nutrient-loss credit.",
+        "Ordinary SanRemo durum couscous250g dry +375ml boiling WATER,5min covered; no pearl/cold/toasted variant.",
+        "Current San Remo label72g available carbohydrate replaces Fineli63.6 proxy. GK37.50; all4 macros withheld because product polyols are unknown."
+      ],
+      "ownerDecisions": [
+        "Approved new cooking order and full-broth serving version.",
+        "Approved limited n7 human GI36 study as supplementary LOW food analogue; no repeated reference and sparse venous sampling disclosed.",
+        "Approved current-product/historicalGI LOW application, existing chickpea/stock composition proxies, exact recipe version and all4 macro withholding; no inherited approval."
+      ],
+      "ownerApproval": "OWNER_METHOD_AND_CONTENT_APPROVED",
+      "ownerApprovalRecord": "docs/nutrition/gk80-carnitas-couscous/owner-approval.json"
+    },
+    {
+      "recipeId": "carnitas-salaattitacot",
+      "decision": "HOLD_UNCHANGED",
+      "reason": "No source establishing a valid GI application to orange juice PLUS segments simmered with pork2.5h. Raw navel45, juice studies and canned mandarin47 are distinct foods/preparations.130g orange at8.9g availableCHO/100g gives2.8925g/serv, exceeding the individual omission threshold.",
+      "additionalUnresolved": "The historical research lime50g pulp is inconsistent with original lime juice; retained orange solids and cooking liquid also need exact quantities for any future version.",
+      "notUsed": [
+        "No raw45 transferred as cooked-orange GI.",
+        "No mandarin or juice substituted for whole-orange segments.",
+        "No orange amount reduced to fit omission thresholds.",
+        "No universal GI100 ceiling, component-sugar model, invented retention or new policy."
+      ],
+      "nextDecision": "A specifically sourced cooked-orange application or separately approved method study is required. No new recipe version is silently substituted."
+    }
+  ]
+}

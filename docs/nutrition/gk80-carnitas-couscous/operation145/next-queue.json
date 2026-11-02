@@ -1,0 +1,160 @@
+{
+  "basis": "Existing dossiers + current nonnumeric pilot results only, no fresh recipe research; priority reflects shared source blockers, not predicted guaranteed releases. Old proposals are leads, not current approved evidence.",
+  "recipes": [
+    {
+      "priority": 1,
+      "recipeId": "jauhelihapihvit-vhh-kermakastikkeella",
+      "blockerCategories": [
+        "nutrition",
+        "preparation"
+      ],
+      "nextBoundedTask": "Named Dijon/stock definitions and quantified polyols; exact weighed inputs and stock GI application must be rebound.",
+      "existingDossier": "docs/nutrition/gk80-run8/screening.json",
+      "currentBlockers": [
+        "jauhelihapihvit-vhh-kermakastikkeella: lihalientä: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
+      ],
+      "source01Potential": "Conditional: exact food/product/state, carbohydrate definition, explicit polyol/component provenance and dated evidence can help nutrition gaps. It cannot supply a missing recipe mass or substitute for a missing GI/preparation study.",
+      "researchStarted": false
+    },
+    {
+      "priority": 2,
+      "recipeId": "ropa-vieja",
+      "blockerCategories": [
+        "nutrition",
+        "preparation"
+      ],
+      "nextBoundedTask": "Source-backed bay-leaf carbohydrate bound/polyols and source-matched tomato/stock preparation; never reuse old subtotal as publication.",
+      "existingDossier": "docs/nutrition/gk80-run8/screening.json",
+      "currentBlockers": [
+        "ropa-vieja: tomaattimurskaa: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+        "ropa-vieja: lihalientä: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
+      ],
+      "source01Potential": "Conditional: exact food/product/state, carbohydrate definition, explicit polyol/component provenance and dated evidence can help nutrition gaps. It cannot supply a missing recipe mass or substitute for a missing GI/preparation study.",
+      "researchStarted": false
+    },
+    {
+      "priority": 3,
+      "recipeId": "kana-parmesaanipannu-parsakaali",
+      "blockerCategories": [
+        "nutrition",
+        "preparation"
+      ],
+      "nextBoundedTask": "Pepper AFCD component definition and exact chicken stock label/polyols; available-with/without equality is not measured P0.",
+      "existingDossier": "docs/nutrition/gk80-run8/screening.json",
+      "currentBlockers": [
+        "kana-parmesaanipannu-parsakaali: valkosipulimurskaa: Ingredient mass is missing or invalid.",
+        "kana-parmesaanipannu-parsakaali: suolaa ja mustapippuria: AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance."
+      ],
+      "source01Potential": "Conditional: exact food/product/state, carbohydrate definition, explicit polyol/component provenance and dated evidence can help nutrition gaps. It cannot supply a missing recipe mass or substitute for a missing GI/preparation study.",
+      "researchStarted": false
+    },
+    {
+      "priority": 4,
+      "recipeId": "kermainen-kanasienipannu",
+      "blockerCategories": [
+        "nutrition",
+        "preparation"
+      ],
+      "nextBoundedTask": "Same stock/Dijon issues plus pepper/thyme AFCD components; multiple independent product gaps.",
+      "existingDossier": "docs/nutrition/gk80-run8/screening.json",
+      "currentBlockers": [
+        "kermainen-kanasienipannu: salottisipuli: Ingredient mass is missing or invalid.",
+        "kermainen-kanasienipannu: suolaa ja mustapippuria: AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance."
+      ],
+      "source01Potential": "Conditional: exact food/product/state, carbohydrate definition, explicit polyol/component provenance and dated evidence can help nutrition gaps. It cannot supply a missing recipe mass or substitute for a missing GI/preparation study.",
+      "researchStarted": false
+    },
+    {
+      "priority": 5,
+      "recipeId": "siskonmakkarakeitto-juurekset",
+      "blockerCategories": [
+        "nutrition",
+        "GI",
+        "preparation"
+      ],
+      "nextBoundedTask": "Bay leaf/pepper source bounds and defined stock/sausage/swede/parsley applications; all independent gaps must pass.",
+      "existingDossier": "docs/nutrition/gk80-run8/screening.json",
+      "currentBlockers": [
+        "siskonmakkarakeitto-juurekset: lihalientä: GI evidence is missing.",
+        "siskonmakkarakeitto-juurekset: lanttua: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+        "siskonmakkarakeitto-juurekset: laakerinlehti: AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
+        "siskonmakkarakeitto-juurekset: silputtua persiljaa: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+        "siskonmakkarakeitto-juurekset: mustapippuria: AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance."
+      ],
+      "source01Potential": "Conditional: exact food/product/state, carbohydrate definition, explicit polyol/component provenance and dated evidence can help nutrition gaps. It cannot supply a missing recipe mass or substitute for a missing GI/preparation study.",
+      "researchStarted": false
+    },
+    {
+      "priority": 6,
+      "recipeId": "palak-paneer",
+      "blockerCategories": [
+        "nutrition",
+        "quantity"
+      ],
+      "nextBoundedTask": "Paneer N01301 has unquantified polyols; spices/blend exact mass/composition and existing GI scope must be rechecked.",
+      "existingDossier": "docs/nutrition/gk80-release-6/held-review.json",
+      "currentBlockers": [
+        "palak-paneer: jauhettua juustokuminaa: AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
+        "palak-paneer: kurkumaa: AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
+        "palak-paneer: garam masalaa: AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance."
+      ],
+      "source01Potential": "Conditional: exact food/product/state, carbohydrate definition, explicit polyol/component provenance and dated evidence can help nutrition gaps. It cannot supply a missing recipe mass or substitute for a missing GI/preparation study.",
+      "researchStarted": false
+    },
+    {
+      "priority": 7,
+      "recipeId": "nakkikeitto-kukkakaalilla",
+      "blockerCategories": [
+        "nutrition",
+        "GI",
+        "preparation"
+      ],
+      "nextBoundedTask": "Bay leaf source plus defined sausage/stock GI; current cumulative omission exceeds tolerance.",
+      "existingDossier": "docs/nutrition/gk80-release-6/held-review.json",
+      "currentBlockers": [
+        "nakkikeitto-kukkakaalilla: nakkeja: GI evidence is missing.",
+        "nakkikeitto-kukkakaalilla: lihalientä: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+        "nakkikeitto-kukkakaalilla: cumulative omitted available carbohydrate is 2.345 g/serving, at or above the 2 g editorial tolerance."
+      ],
+      "source01Potential": "Conditional: exact food/product/state, carbohydrate definition, explicit polyol/component provenance and dated evidence can help nutrition gaps. It cannot supply a missing recipe mass or substitute for a missing GI/preparation study.",
+      "researchStarted": false
+    },
+    {
+      "priority": 8,
+      "recipeId": "jerk-kana",
+      "blockerCategories": [
+        "quantity",
+        "nutrition",
+        "preparation"
+      ],
+      "nextBoundedTask": "Four spring onions have no verified edible mass; exact source-version remapping required, not just a new GI search.",
+      "existingDossier": "docs/nutrition/gk80-run8/README.md",
+      "currentBlockers": [
+        "jerk-kana: kevätsipuli: 4 spring onions have no recipe-specific Fineli mass; the estimate cannot establish their available carbohydrate per serving.",
+        "jerk-kana: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
+      ],
+      "source01Potential": "Conditional: exact food/product/state, carbohydrate definition, explicit polyol/component provenance and dated evidence can help nutrition gaps. It cannot supply a missing recipe mass or substitute for a missing GI/preparation study.",
+      "researchStarted": false
+    },
+    {
+      "priority": 9,
+      "recipeId": "pav-bhaji",
+      "blockerCategories": [
+        "nutrition",
+        "quantity",
+        "preparation"
+      ],
+      "nextBoundedTask": "Exact pav-bhaji masala composition and weighed coriander/source-version mapping missing.",
+      "existingDossier": "docs/nutrition/gk80-run8/README.md",
+      "currentBlockers": [
+        "pav-bhaji: pav bhaji masala -mausteseosta: No source-matched composition and preparation was resolved for “pav bhaji masala -mausteseosta”; it is not treated as zero.",
+        "pav-bhaji: tuoretta korianteria: AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
+        "pav-bhaji: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
+      ],
+      "source01Potential": "Conditional: exact food/product/state, carbohydrate definition, explicit polyol/component provenance and dated evidence can help nutrition gaps. It cannot supply a missing recipe mass or substitute for a missing GI/preparation study.",
+      "researchStarted": false
+    }
+  ],
+  "count": 9,
+  "nextBatchAuthorized": false
+}

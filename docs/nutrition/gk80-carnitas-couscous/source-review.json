@@ -1,0 +1,70 @@
+{
+  "retrievedAt": "2026-11-02",
+  "primarySnapshots": [
+    {
+      "id": "khan2008",
+      "url": "https://pjnonline.org/pjn/article/download/596/592/1212",
+      "rawSha256": "592bc0709a3ef9278c3de21b68c34725fb05953450c5d4531bd64f4d08503bae",
+      "pages": 6,
+      "textChars": 5
+    },
+    {
+      "id": "trinidad2010",
+      "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/9E5AD9820206AC94AF332BC8BCA5121F/S0007114509992157a.pdf/div-class-title-the-potential-health-benefits-of-legumes-as-a-good-source-of-dietary-fibre-div.pdf",
+      "rawSha256": "bd7b36555acfed4cf6742d86084ca91a2dc37aedfcb25f9dce49f2f4002ba2af",
+      "pages": 6,
+      "textChars": 33059
+    }
+  ],
+  "accepted": [
+    {
+      "id": "khan2008-boiled36",
+      "url": "https://doi.org/10.3923/pjn.2008.104.108",
+      "access": "https://pjnonline.org/pjn/article/download/596/592/1212",
+      "location": "Printed pp104–108, methods p105, Figure1 p106, Table2 p108; author PDF has extra cover",
+      "facts": "Seven healthy men20–30y. Whole chickpeas simply boiled in water, salt only; glucose50g reference. One reference visit and one food visit; samples0,30,60,120min. Individual iAUC ratios averaged, point36.",
+      "limits": "No ISO confirmation, repeated reference, cultivar, boiling duration or serving temperature.82g testportion not assumed wet or converted into recipe yield. Supplementary LOW application only. No additional glucose conversion.",
+      "inspection": "Scanned primaryPDF pages2–6 and supplement Table2 row3109 visually inspected; no OCR text claimed."
+    },
+    {
+      "id": "couscous65",
+      "url": "https://doi.org/10.1093/ajcn/nqab233",
+      "access": "https://nutritotal.com.br/pro/wp-content/uploads/sites/3/2021/09/Tabela1_IG.pdf",
+      "location": "Table1 row560 p39",
+      "facts": "SanRemo ordinary couscous rehydrated hot water:65 SEM7,n9, glucose2h,test2006. Named supplementary LOW comparator, no SEM-derived recipe bounds."
+    },
+    {
+      "id": "sanremo-current",
+      "url": "https://sanremo.com.au/products/couscous/",
+      "facts": "Dry ordinary durum product label: carbohydrate72, fibre3, protein12.5, fat2g/100g; polyols unreported.100g +150ml boiling water, covered5min.",
+      "limits": "Current manufacturer available-carbohydrate label replaces the materially different generic Fineli63.6 proxy. No identity with2006 GI lot, no polyols0, no complete macro publication. See operation145/source-definition.json."
+    }
+  ],
+  "rejectedAsNumericBindings": [
+    {
+      "id": "zafar2019-heated51",
+      "url": "https://doi.org/10.23751/pn.v21i2.7716",
+      "access": "https://mattioli1885journals.com/index.php/progressinnutrition/article/download/7716/7607/30686",
+      "facts": "Table2 row3101 refers to a named chilli-containing canned product microwaved90s. Primary p383 adds5g butter to both bread and chickpeas; supplement footnote38 preserves that addition.",
+      "decision": "Do not turn this compound-food response into a plain-chickpea GI or invent a GI from group-mean AUCs."
+    },
+    {
+      "id": "zafar2017-heated",
+      "url": "https://doi.org/10.1007/s13197-016-2422-6",
+      "facts": "Heated chickpea study uses18g carbohydrate preloads with bread/butter comparison. It is supportive preparation research, not a new valid glucose-scale GI for this recipe."
+    },
+    {
+      "id": "trinidad2010",
+      "url": "https://doi.org/10.1017/S0007114509992157",
+      "facts": "Separate soaked/boiled/overnight-cooled/microwaved preparation, non-diabetic n7 glucose-scale6, diabetic n6 value5.",
+      "decision": "Not applied to fresh hot chickpeas or mixed with other cohorts; no low-value selection just to reach coverage."
+    },
+    {
+      "id": "orange-raw-and-processed-citrus",
+      "url": "https://doi.org/10.1093/ajcn/nqab233",
+      "facts": "Raw navel orange45 and canned mandarin segments in juice47 represent distinct preparations/species. Neither measures2.5h orange-and-pork braise."
+    }
+  ],
+  "newBroadResearchRun": false,
+  "currentPolicyUnchanged": true
+}

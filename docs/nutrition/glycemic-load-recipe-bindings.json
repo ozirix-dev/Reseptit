@@ -175,7 +175,7 @@
     "mapo-tofu": "b938e6938daeae6b58af1a4eaa7b7a4995294a5d5f484c1c74ba7ce07013ad9f",
     "marjainen-chiavanukas": "b1dc8a2a41092d6f7f78ebb59a058e7c4d137afbf2c0cfb0754cb5da5f14da3f",
     "marjakiisseli-vaniljakastikkeella": "70e8ca27c953fb92030b439e3cf99a7a51ee67486351cd7222d7e7fdf91c8741",
-    "marokkolainen-couscous": "abe0287c838972c64acaf251163198aa95fe88a5be44fd763eddb054150ae3a0",
+    "marokkolainen-couscous": "beefd8c5c6a8e5e129a1c66a3c9e2394aed4511224a74a0abd11ffb04df760e9",
     "masala-dosa": "89524ae09e1a2eb7aa4805a9a68b9c1a946ccdfd847d44e5994f1c702c29c876",
     "massaman-curry-kanalla-vhh": "040bdf3d6d10f0f8dcc005e7463284d952bbd9604b5d921e3bd8c3ca9ed5739f",
     "medu-vada": "aa3e9b70f93d1bf23392480de8646232e27ffa701d030ee4bdbfb8c9618c0e57",
@@ -379,7 +379,7 @@
     "siemengranola-jogurtilla": "6dae3fcb994d0d7f7750b800bcbe3e4a47c1a1889c53f1aaf8d26ab346a18ab8",
     "koshari": "3c3a9f6e342aa9f9d5ab6fe37e9a647c111c33fada305b11137f0b97992498e7",
     "baozi": "49ad65ac91f6d1807789919fa73e2868f38e11d7ba08886d4e49cc39a61649ff",
-    "marokkolainen-couscous": "4c2240d56a5ec6beb4d365275b4e00722c776b711d658562b348316d3e12f7d8",
+    "marokkolainen-couscous": "5a7268fcab53b4db8c46defd568e1eb18b339492f2ca439a726270af6fea935e",
     "pasta-alla-norma": "946c4b08cd18b4a53af5987df359f5ed15522e23442ecd57c959819876a6a79d",
     "bulgogi": "dd5cbee27b1d2a4335c86c4e3ad8fee5cb02e9379a7386be59423e822f4299a0",
     "congee-riisipuuro": "4f699451629832a965b031cb7e0dae1dc781dbd2130f343483c6c0aed591d7b8",
@@ -707,7 +707,7 @@
     "siemengranola-jogurtilla": "34e532142903f9f00ad69c958f3fb26e78c0fca8f5deebd9ecb8293367e5fa07",
     "koshari": "bb4d1e6ef80481f9903066a351c71cd6d1460af82a03c5d3350c9dcaf6ced239",
     "baozi": "7a5938588f98ce6a27956dab1f35700029064f3fe22cf6b4199055bbdd8739eb",
-    "marokkolainen-couscous": "d021b77a537bfe0533c5cd7eb3b710609ba97497432c14d18092a4028de8cd19",
+    "marokkolainen-couscous": "b1a159db25cb8be53cc3904e049f65eac950051c36da16a0338d0de6a37f06d1",
     "pasta-alla-norma": "e683245a729a08dc23d40a0161cc1d076c1a429d0c0a44234fcedfd2421c61e4",
     "bulgogi": "46c7e7e29fa9494cd1d251a0ab1e9efc05ee1d3e994c1b4069ae3ed48e1dbb64",
     "congee-riisipuuro": "10602ebf9d51552f372e2197337416e6a389c2498b14943bfed8760a59276ff1",
@@ -1205,6 +1205,23 @@
         "th": {
           "path": "kaannokset/th/paaruoat/doner-kebab.md",
           "sha256": "a13c264ec404c43752d1d5cdfd53b81e1ffbde8b95908235c83659b2cf1fa41a"
+        }
+      }
+    },
+    "marokkolainen-couscous": {
+      "sourceSha256": "1c75cbd6836e70046f893c74d245babe14ae8527f30e578681cb0ff028a1ba2c",
+      "locales": {
+        "en": {
+          "path": "kaannokset/en/paaruoat/marokkolainen-couscous.md",
+          "sha256": "7ca4e6c209642ca792c707c3b6ea2ab0699245645fbd38f26b45473665b469b2"
+        },
+        "sv": {
+          "path": "kaannokset/sv/paaruoat/marokkolainen-couscous.md",
+          "sha256": "f0fb1420dab6813601617b132696fd479e7b32dfed700592f8e7e134c6d0f7d7"
+        },
+        "th": {
+          "path": "kaannokset/th/paaruoat/marokkolainen-couscous.md",
+          "sha256": "0ba1ae6c79a0e7fca355b956a710474ac322595cf296dcfa5b7d3ad894c780b7"
         }
       }
     }

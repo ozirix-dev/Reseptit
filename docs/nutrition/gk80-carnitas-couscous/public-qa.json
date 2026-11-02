@@ -1,0 +1,34 @@
+{
+  "scope": "Generated public module and4 prerendered HTML pages; not production or browser interaction",
+  "pageChecks": [
+    {
+      "recipeId": "marokkolainen-couscous",
+      "locale": "th",
+      "routePath": "/th/recipes/marokkolainen-couscous/",
+      "macroStatus": "ESTIMATE WITH EVIDENCE",
+      "pass": true
+    },
+    {
+      "recipeId": "marokkolainen-couscous",
+      "locale": "sv",
+      "routePath": "/sv/recept/marokkolainen-couscous/",
+      "macroStatus": "ESTIMATE WITH EVIDENCE",
+      "pass": true
+    },
+    {
+      "recipeId": "marokkolainen-couscous",
+      "locale": "fi",
+      "routePath": "/marokkolainen-couscous/",
+      "macroStatus": "ESTIMATE WITH EVIDENCE",
+      "pass": true
+    },
+    {
+      "recipeId": "marokkolainen-couscous",
+      "locale": "en",
+      "routePath": "/en/recipes/marokkolainen-couscous/",
+      "macroStatus": "ESTIMATE WITH EVIDENCE",
+      "pass": true
+    }
+  ],
+  "pass": 4
+}

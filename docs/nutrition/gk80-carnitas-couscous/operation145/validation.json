@@ -1,0 +1,149 @@
+{
+  "verifiedAtUtc": "2026-11-02T04:15:45.923330+00:00",
+  "contentParentHead": "c844ba4220eac979604b32bf79626e8f8fdd3c47",
+  "baseMain": "adda64fda9bf63e69e190b6d888698587a250a2a",
+  "decision": "CONDITIONAL GO",
+  "gkPerServing": 37.5,
+  "gkExact": "37.49535",
+  "confidence": "LOW",
+  "macros": "All4 WITHHELD_SOURCE_INCOMPLETE; product polyols unknown, not0.",
+  "candidateCoverage": {
+    "numeric": 147,
+    "total": 326,
+    "incomplete": 179
+  },
+  "production": {
+    "verifiedAtUtc": "2026-11-02T04:12:11.732049+00:00",
+    "url": "https://ozirix-dev.github.io/Reseptit/glykeeminen-kuorma/",
+    "counts": [
+      326,
+      146,
+      180
+    ],
+    "main": "adda64fda9bf63e69e190b6d888698587a250a2a",
+    "scope": "Production public summary; candidate147 is not deployed."
+  },
+  "focusedTests": {
+    "pass": 30,
+    "fail": 0,
+    "finalSourceBindingRegression": {
+      "pass": 4,
+      "fail": 0
+    }
+  },
+  "static": {
+    "pass": 26,
+    "fail": 0,
+    "scope": "After calculation correction; final public metadata additionally checked by four-page HTML/JSON-LD QA."
+  },
+  "translations": {
+    "pass": 27,
+    "fail": 0
+  },
+  "changedContent": {
+    "status": "PASS",
+    "recipeFiles": 4,
+    "evidenceFiles": 1
+  },
+  "strictNutritionAudit": "PASS with intentionally source-incomplete held package",
+  "decimal": {
+    "status": "PASS",
+    "recipes": 1,
+    "omittedAvailableChoCeilingG": "0.66400"
+  },
+  "publicationBuild": {
+    "status": "PASS",
+    "routes": 703,
+    "localExecutions": 2,
+    "reasonForSecond": "Final source inspection found the GI record still describing obsolete Fineli composition. Corrected current preparation/quality/note fields, preserved original research card explicitly historical, regenerated publication assets for final source metadata."
+  },
+  "publicQa": {
+    "scope": "Generated public module and4 prerendered HTML pages; not production or browser interaction",
+    "pageChecks": [
+      {
+        "recipeId": "marokkolainen-couscous",
+        "locale": "th",
+        "routePath": "/th/recipes/marokkolainen-couscous/",
+        "macroStatus": "INSUFFICIENT SOURCE DATA",
+        "pass": true
+      },
+      {
+        "recipeId": "marokkolainen-couscous",
+        "locale": "sv",
+        "routePath": "/sv/recept/marokkolainen-couscous/",
+        "macroStatus": "INSUFFICIENT SOURCE DATA",
+        "pass": true
+      },
+      {
+        "recipeId": "marokkolainen-couscous",
+        "locale": "fi",
+        "routePath": "/marokkolainen-couscous/",
+        "macroStatus": "INSUFFICIENT SOURCE DATA",
+        "pass": true
+      },
+      {
+        "recipeId": "marokkolainen-couscous",
+        "locale": "en",
+        "routePath": "/en/recipes/marokkolainen-couscous/",
+        "macroStatus": "INSUFFICIENT SOURCE DATA",
+        "pass": true
+      }
+    ],
+    "pass": 4
+  },
+  "recipeStructure": {
+    "status": "PASS",
+    "checked": [
+      {
+        "locale": "fi",
+        "unchangedRecipeAmountsTimesAndInstructions": true
+      },
+      {
+        "locale": "en",
+        "unchangedRecipeAmountsTimesAndInstructions": true
+      },
+      {
+        "locale": "sv",
+        "unchangedRecipeAmountsTimesAndInstructions": true
+      },
+      {
+        "locale": "th",
+        "unchangedRecipeAmountsTimesAndInstructions": true
+      }
+    ],
+    "carnitasFilesUnchanged": true
+  },
+  "regression": {
+    "priorNumericPreserved": 146,
+    "otherCompleteGkResultsPreserved": 325,
+    "carnitasHold": true,
+    "teaEggHold": true
+  },
+  "markdown": "PASS",
+  "ownerApproval": "PENDING_EXACT_VERSION_LOW_APPLICATION_AND_FOUR_MACRO_WITHHOLDING_REVIEW",
+  "pr": 175,
+  "draft": true,
+  "readyAuthorized": false,
+  "mergeAuthorized": false,
+  "deployAuthorized": false,
+  "ci": "Normal content-correction PR run41387500566 at04f73eac6b1206fdbda21909f47e5fe65c4b56bd, followed by a documentation-only correction of the public display description. No manual CI rerun. Final exact pushed-head completion reported in GitHub checks/final response.",
+  "verifiedPublicDisplay": [
+    {
+      "locale": "th",
+      "verifiedDisplayedRoundedGk": 38
+    },
+    {
+      "locale": "sv",
+      "verifiedDisplayedRoundedGk": 38
+    },
+    {
+      "locale": "fi",
+      "verifiedDisplayedRoundedGk": 38
+    },
+    {
+      "locale": "en",
+      "verifiedDisplayedRoundedGk": 38
+    }
+  ],
+  "documentationCorrection": "Corrected draft report’s unsupported one-significant-digit/about40 assertion to actual generated HTML about38. Calculation remains37.49535, review37.50. No publication data or code changed."
+}
