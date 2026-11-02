@@ -1,0 +1,42 @@
+{
+  "sourceCommit": "2a626c560873c0d414508522e1a1173f244f9d1c",
+  "approvalGateCommit": "0aab0b9a11e57c6e6695dc871796c48282a6d3cf",
+  "receiptBindings": {
+    "docs/research/afcd-polyol-03/rahkapiirakka-approval.json": {
+      "sha256Lf": "fe5d8aef5eff8314cc725059dbb59bcd9faf7adfe820ba1d392f14de3f881ef0",
+      "sourceCommit": "2a626c560873c0d414508522e1a1173f244f9d1c",
+      "reviewedContentCommit": "991f94ea6ba5aeae2d07fc45fdc5a574de07acde",
+      "approvedInputs": {
+        "rahkapiirakka-vhh": "4194712a2cecb7979c779f4479a1f0a92bf402e190c4ff66a2369667455acbd4"
+      }
+    },
+    "docs/research/afcd-polyol-03/bulgogi-approval.json": {
+      "sha256Lf": "8c240b1e89d15e1ef18a6035ef1a48bab1d9a46378e728eea7bb5cf991ebac71",
+      "sourceCommit": "2a626c560873c0d414508522e1a1173f244f9d1c",
+      "reviewedContentCommit": "20e77b57346cf97a4f2aa510ecdbfb8ea5ffe1f3",
+      "approvedInputs": {
+        "bulgogi": "5ae159afc878044788f07f23db47c2932168760d4f8020e5ec3d9b553f7e83c1"
+      }
+    },
+    "docs/research/afcd-polyol-03/cold-dessert-approval.json": {
+      "sha256Lf": "cfc4d980fdb9d1b160fe71b73e9fe2dad2fc55a5d2eba14740af8490f44b09ad",
+      "sourceCommit": "2a626c560873c0d414508522e1a1173f244f9d1c",
+      "reviewedContentCommit": "7272e71ecc33cae6d6183320e6b24331c6e0fdb4",
+      "approvedInputs": {
+        "kaakao-kookos-chia": "dfcb1006838f327d6dc368dbdd647180f4be3305b82518e99f88b8d25f71f8b2",
+        "rahka-marjakerroskulho": "092719e24df715f0149468125c91e24c08a5dffb29ba2d2f712bb779bd4bdc86"
+      }
+    }
+  },
+  "approvedInputs": {
+    "rahkapiirakka-vhh": "4194712a2cecb7979c779f4479a1f0a92bf402e190c4ff66a2369667455acbd4",
+    "bulgogi": "5ae159afc878044788f07f23db47c2932168760d4f8020e5ec3d9b553f7e83c1",
+    "rahka-marjakerroskulho": "092719e24df715f0149468125c91e24c08a5dffb29ba2d2f712bb779bd4bdc86",
+    "kaakao-kookos-chia": "dfcb1006838f327d6dc368dbdd647180f4be3305b82518e99f88b8d25f71f8b2"
+  },
+  "integrator": "Codex Julkaisu / GK80 Next Four",
+  "integrationAuthorizedByCurrentUserRequest": true,
+  "readyAuthorized": false,
+  "mergeAuthorized": false,
+  "deployAuthorized": false
+}

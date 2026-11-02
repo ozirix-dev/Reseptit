@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "role": "Codex Julkaisu / GK80 Next Four",
+  "main": "96a25d8c9db6fb0a505a70a37a5b357b6a83593a",
+  "sourceCommit": "2a626c560873c0d414508522e1a1173f244f9d1c",
+  "approvalGateCommit": "0aab0b9a11e57c6e6695dc871796c48282a6d3cf",
+  "integrationAuthorized": true,
+  "readyAuthorized": false,
+  "mergeAuthorized": false,
+  "deployAuthorized": false,
+  "approvedInputs": {
+    "rahkapiirakka-vhh": "4194712a2cecb7979c779f4479a1f0a92bf402e190c4ff66a2369667455acbd4",
+    "bulgogi": "5ae159afc878044788f07f23db47c2932168760d4f8020e5ec3d9b553f7e83c1",
+    "rahka-marjakerroskulho": "092719e24df715f0149468125c91e24c08a5dffb29ba2d2f712bb779bd4bdc86",
+    "kaakao-kookos-chia": "dfcb1006838f327d6dc368dbdd647180f4be3305b82518e99f88b8d25f71f8b2"
+  },
+  "expectedResults": {
+    "rahkapiirakka-vhh": {
+      "point": 0.45,
+      "unrounded": 0.44625,
+      "omittedCho": 1.736875
+    },
+    "bulgogi": {
+      "point": 41.31,
+      "unrounded": 41.30795,
+      "omittedCho": 0.0670125
+    },
+    "rahka-marjakerroskulho": {
+      "point": 2.34,
+      "unrounded": 2.33945,
+      "omittedCho": 0.67
+    },
+    "kaakao-kookos-chia": {
+      "point": 0.22,
+      "unrounded": 0.2175,
+      "omittedCho": 0.9625
+    }
+  },
+  "filesLfSha256": {
+    "docs/nutrition/gk80-next-four/cases.json": "f15c8099e4d898ea129f2b3d0ad830b8f523277dc6126f4a9ee4795c2f939bc3",
+    "docs/nutrition/gk80-next-four/sources.json": "e81dea5fa77cb855fcf219d1ce8eed6b89201507a1ced3fe3b4291ccfa40c963",
+    "docs/nutrition/gk80-next-four/approval-lineage.json": "381d1f70f2ba52d463adbde3a1048d749864c9ef837bcc710c181fee43e0ad9b",
+    "docs/nutrition/gk80-next-four/main-baseline.json": "66f903cff9eb8de76ae0db6b2ba150e9ce3c267d4e6ba68451f029d32805e6d1",
+    "docs/nutrition/gk80-next-four/public-copy.json": "3b6b7b8b2bd712f6917a05b61d923bd990523717e76c0e03e20ac9421ac44bab",
+    "docs/research/afcd-polyol-03/rahkapiirakka-approval.json": "fe5d8aef5eff8314cc725059dbb59bcd9faf7adfe820ba1d392f14de3f881ef0",
+    "docs/research/afcd-polyol-03/bulgogi-approval.json": "8c240b1e89d15e1ef18a6035ef1a48bab1d9a46378e728eea7bb5cf991ebac71",
+    "docs/research/afcd-polyol-03/cold-dessert-approval.json": "cfc4d980fdb9d1b160fe71b73e9fe2dad2fc55a5d2eba14740af8490f44b09ad"
+  },
+  "projectionPolicy": "Only four exact admitted case objects and their used source records are imported. Original receipts stay byte-identical; their full historical packet references remain pinned to sourceCommit and reviewedContentCommit rather than importing adjacent B research.",
+  "quantityContract": "GK_ONLY_NATIVE_UNITS_V1"
+}

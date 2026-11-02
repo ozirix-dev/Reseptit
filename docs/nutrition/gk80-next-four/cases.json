@@ -1,0 +1,518 @@
+{
+  "schemaVersion": 1,
+  "sourceCommit": "2a626c560873c0d414508522e1a1173f244f9d1c",
+  "activation": false,
+  "caseContexts": {
+    "rahkapiirakka-vhh": "native",
+    "bulgogi": "retained",
+    "kaakao-kookos-chia": "cold",
+    "rahka-marjakerroskulho": "cold"
+  },
+  "cases": [
+    {
+      "recipeId": "rahkapiirakka-vhh",
+      "level": "A",
+      "arithmeticProfile": "EXISTING_A",
+      "servings": 8,
+      "paths": {
+        "fi": "reseptit/jalkiruoat/rahkapiirakka-vhh.md",
+        "en": "kaannokset/en/jalkiruoat/rahkapiirakka-vhh.md",
+        "sv": "kaannokset/sv/jalkiruoat/rahkapiirakka-vhh.md",
+        "th": "kaannokset/th/jalkiruoat/rahkapiirakka-vhh.md"
+      },
+      "recipeSha256Lf": {
+        "fi": "e902035d36263b4ad41d337d5fed8283d76e8fffcbfc87c28d53076c075dfdab",
+        "en": "0d59fbd2686f79313ee9bc6a24f05462697624d6ad140f5aaa1e8771ddca2da5",
+        "sv": "40c0ef53558fc13087049e20f7edab483dcd4f4fcc2ff0bbf5296aead6a71d17",
+        "th": "edf8149c704e36acc46074d99cc0bb43195e8a28f5dbd1f327081d753ac46645"
+      },
+      "originalIngredients": [
+        {
+          "amount": 150,
+          "unit": "g",
+          "item": "mantelijauhoa"
+        },
+        {
+          "amount": 75,
+          "unit": "g",
+          "item": "voita"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "kananmuna"
+        },
+        {
+          "amount": 300,
+          "unit": "g",
+          "item": "maitorahkaa"
+        },
+        {
+          "amount": 2,
+          "unit": "kpl",
+          "item": "kananmunaa"
+        },
+        {
+          "amount": 1,
+          "unit": "dl",
+          "item": "kuohukermaa"
+        },
+        {
+          "amount": 2,
+          "unit": "rkl",
+          "item": "erytritolia"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "vaniljauutetta"
+        }
+      ],
+      "candidateIngredients": [
+        {
+          "name": "kuivat paahtamattomat mantelit; koko150g jauhetaan ja käytetään",
+          "grams": 150,
+          "compositionId": "MEXT05001",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "originalIndices": [
+            0
+          ],
+          "note": "Exact new preparation identity for original150g full-fat almond flour.150g edible dried almonds05001 weighed before grinding; all meal retained. Not a native branded-flour value."
+        },
+        {
+          "name": "voi",
+          "grams": 75,
+          "compositionId": "500",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "originalIndices": [
+            1
+          ],
+          "note": "Original75g retained."
+        },
+        {
+          "name": "kananmunat yhteensä1+2kpl",
+          "grams": 165,
+          "compositionId": "858",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "originalIndices": [
+            2,
+            4
+          ],
+          "note": "Three medium eggs by native Fineli858 KPL_M55g; no universal piece conversion. Combined for omission accounting."
+        },
+        {
+          "name": "maitorahka maustamaton alle0.5% rasvaa",
+          "grams": 300,
+          "compositionId": "622",
+          "giId": "dairy30",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "originalIndices": [
+            3
+          ],
+          "note": "Original300g retained; existing exact native dairy binding."
+        },
+        {
+          "name": "kuohukerma38%",
+          "grams": 100,
+          "compositionId": "631",
+          "giId": "dairy30",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "originalIndices": [
+            5
+          ],
+          "note": "Original1dl, native Fineli631 DL100g. Specific source portion measure, not universal liquid density."
+        },
+        {
+          "name": "Foodin100%erytritoli, alkuperäinen2rkl säilyy",
+          "grams": 0,
+          "compositionId": "foodin-erythritol",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "originalIndices": [
+            6
+          ],
+          "note": "ZERO_CHO_SENTINEL_RETAIN_ORIGINAL_2_TBSP. Mass0 in this GK calculation does not remove sweetener or assert tablespoons mass."
+        },
+        {
+          "name": "vaniljauute, erillisen version punnittu5g",
+          "grams": 5,
+          "compositionId": "vanilla-physical-cap",
+          "giId": null,
+          "carbohydrateUse": "UPPER_BOUND",
+          "originalIndices": [
+            7
+          ],
+          "note": "New weighed content decision5g replaces unspecified-mass1tsp. No claim of density/equivalence. Full5g mass cap is conservative and does not reduce the old2g unverified estimate."
+        }
+      ],
+      "preparationDecision": "Preserve eight portions, every originally specified gram amount and175C35min baking. Original teaspoon of vanilla is made a separate explicit weighed-content decision, not claimed equivalent. Specify150g dried unroasted whole edible almonds05001, finely grind without ingredient removal, keep every part in dough. This is a new physically specified full-fat ingredient version, not proof that original arbitrary almond flour had5.2gCHO. Specify5g weighed vanilla extract as a content decision; do not infer tsp density. Original2tbsp erythritol retained. Do not use almond GI50 or whole-nut GI proxy for baked flour.",
+      "requiredDecisions": [
+        "EXACT_SOURCE_AND_CONTENT_OWNER_REVIEW",
+        "MEXT05001_NEW_ROW_AND_WHOLE_INPUT_GRINDING_APPLICATION",
+        "NATIVE_POINT_NOT_LOT_UPPER_AND_0.025G_THRESHOLD_MARGIN",
+        "WEIGHED_VANILLA5G_NEW_VERSION",
+        "GK_ONLY_CONTRACT_AND_MACRO_VERSION_COMPATIBILITY"
+      ],
+      "approval": false,
+      "publicationAuthorized": false,
+      "macroAction": "PRESERVE_ALL_CURRENT_VALUES_AND_WITHHOLDINGS",
+      "confidence": "LOW",
+      "inputSha256": "4194712a2cecb7979c779f4479a1f0a92bf402e190c4ff66a2369667455acbd4"
+    },
+    {
+      "recipeId": "bulgogi",
+      "level": "A",
+      "profile": "EXISTING_A",
+      "servings": 4,
+      "paths": {
+        "fi": "reseptit/paaruoat/bulgogi.md"
+      },
+      "recipeSha256": {
+        "fi": "c84490ec24ce44ad3f0930dbb242db9017a01431f2d910e0723af526fffc8cc8"
+      },
+      "originalIngredients": [
+        {
+          "amount": 600,
+          "unit": "g",
+          "item": "naudan ulkofileetä",
+          "note": "ohuina viipaleina"
+        },
+        {
+          "amount": 300,
+          "unit": "g",
+          "item": "jasmiiniriisiä",
+          "note": "kuivapaino"
+        },
+        {
+          "amount": 60,
+          "unit": "ml",
+          "item": "soijakastiketta"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "fariinisokeria"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "seesamiöljyä"
+        },
+        {
+          "amount": 3,
+          "unit": "kpl",
+          "item": "valkosipulinkynttä",
+          "note": "hienonnettuna"
+        },
+        {
+          "amount": 100,
+          "unit": "g",
+          "item": "päärynää",
+          "note": "hienoksi raastettuna"
+        },
+        {
+          "amount": 0.5,
+          "unit": "kpl",
+          "item": "keltasipulia",
+          "note": "ohuina viipaleina"
+        },
+        {
+          "amount": 2,
+          "unit": "kpl",
+          "item": "kevätsipulia",
+          "note": "viipaloituna"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "seesaminsiemeniä"
+        },
+        {
+          "amount": 0.25,
+          "unit": "tl",
+          "item": "mustapippuria"
+        }
+      ],
+      "candidateIngredients": [
+        {
+          "name": "naudan ulkofileetä",
+          "grams": 600,
+          "compositionId": "F722",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "originalIndex": 0,
+          "note": "Original600g raw beef sirloin, native Fineli722."
+        },
+        {
+          "name": "jasmiiniriisiä",
+          "grams": 300,
+          "compositionId": "F007682",
+          "giId": "rice68",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "originalIndex": 1,
+          "note": "Original300g dry jasmine rice; native dry white rice composition proxy and existing named European-cohort jasmine68. Hot cooked by absorption; all rice served, not porridge or cooled-rice claim."
+        },
+        {
+          "name": "soijakastiketta",
+          "grams": 72,
+          "compositionId": "F008065",
+          "giId": "soyLime50",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "originalIndex": 2,
+          "note": "NEW WEIGHED CONTENT72g ordinary unsweetened commercial soy replaces original60ml; not proof60ml=72g or Fineli31 density transferable toAFCD. No kecap, dark/sweet soy or glaze concentrate."
+        },
+        {
+          "name": "fariinisokeria",
+          "grams": 14,
+          "compositionId": "F008969",
+          "giId": "sucrose60",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "originalIndex": 3,
+          "note": "NEW WEIGHED CONTENT14g brown sugar replaces unspecified-mass1tbsp; not a volume-equivalence claim. Existing sucrose-dominant analogy, not measured brown-sugar GI."
+        },
+        {
+          "name": "seesamiöljyä",
+          "grams": 0,
+          "compositionId": "F006187",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "originalIndex": 4,
+          "note": "ZERO_CHO_SENTINEL_RETAIN_ORIGINAL_1_TBSP_SESAME_OIL"
+        },
+        {
+          "name": "valkosipulinkynttä",
+          "grams": 10.5,
+          "compositionId": "F393",
+          "giId": "veg40",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "originalIndex": 5,
+          "note": "Original3 cloves by native Fineli393 KPL_M3.5g; named source measure."
+        },
+        {
+          "name": "päärynää",
+          "grams": 100,
+          "compositionId": "F11062",
+          "giId": "pear38",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "originalIndex": 6,
+          "note": "Original100g peeled ordinary pear; existing GI record already names grated briefly heated bulgogi marinade analogy."
+        },
+        {
+          "name": "keltasipulia",
+          "grams": 27.5,
+          "compositionId": "F335",
+          "giId": "veg40",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "originalIndex": 7,
+          "note": "Original half onion via native Fineli335 KPL_M55g; source reference measure."
+        },
+        {
+          "name": "kevätsipulia",
+          "grams": 40,
+          "compositionId": "F006250",
+          "giId": "veg40",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "originalIndex": 8,
+          "note": "NEW WEIGHED CONTENT40g edible spring onions defines original2pieces, not an unsourced piece-weight conversion."
+        },
+        {
+          "name": "seesaminsiemeniä",
+          "grams": 8.5,
+          "compositionId": "F385",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "originalIndex": 9,
+          "note": "Original1tbsp via same food Fineli385 RKL8.5g. PositiveGI omission, notGI0."
+        },
+        {
+          "name": "mustapippuria",
+          "grams": 0.5,
+          "compositionId": "F11177",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "originalIndex": 10,
+          "note": "Original0.25tsp via same food Fineli11177 TL2g. PositiveGI omission, notGI0."
+        }
+      ],
+      "preparationDecision": "Preserve all original gram amounts, four portions, jasmine dry300g and100g peeled ordinary pear. New weighed content72g ordinary soy,14g brown sugar and40g edible spring onions; no claim of original volume/piece mass equivalence. Fry beef quickly in batches as original; retain all marinade/onion, heat remaining marinade briefly and thoroughly, return all cooked marinade and pan juices over beef and rice. No sauce/solids discarded and no invented retained fraction. Pear38 already explicitly supports grated briefly heated bulgogi marinade as LOW analogy. No rice category mean67 or legume mean34. Sesame and black pepper use unchanged current A omissions.",
+      "requiredDecisions": [
+        "GK_ONLY_CONTRACT",
+        "EXACT_SOURCE_CONTENT_REVIEW",
+        "GK_ONLY_MACRO_VERSION_COMPATIBILITY",
+        "WEIGHED_SOY72G_SUGAR14G_SPRING_ONION40G",
+        "FULL_COOKED_MARINADE_AND_PAN_JUICES_SERVED"
+      ],
+      "macroAction": "PRESERVE_ALL_CURRENT_VALUES_AND_WITHHOLDINGS",
+      "approval": false,
+      "publicationAuthorized": false,
+      "confidence": "LOW",
+      "inputSha256": "5ae159afc878044788f07f23db47c2932168760d4f8020e5ec3d9b553f7e83c1"
+    },
+    {
+      "recipeId": "rahka-marjakerroskulho",
+      "level": "A",
+      "servings": 4,
+      "paths": {
+        "fi": "reseptit/aamupalat/rahka-marjakerroskulho.md"
+      },
+      "recipeSha256": {
+        "fi": "c571f8f509bde4da9159bfdb4e1449f856030c9c92bf8a8ba1e2376d9c33c058"
+      },
+      "candidateIngredients": [
+        {
+          "name": "maitorahka",
+          "grams": 250,
+          "compositionId": "622",
+          "giId": "dairy30",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Exact weighed edible input; full portion retained."
+        },
+        {
+          "name": "maustamaton turkkilainen jogurtti10%",
+          "grams": 100,
+          "compositionId": "32201",
+          "giId": "dairy30",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Exact weighed edible input; full portion retained."
+        },
+        {
+          "name": "tuore mansikka",
+          "grams": 100,
+          "compositionId": "447",
+          "giId": "strawberry40",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Exact weighed edible input; full portion retained."
+        },
+        {
+          "name": "tuore pohjoisamerikkalainen wild blueberry",
+          "grams": 50,
+          "compositionId": "F001290",
+          "giId": "blueberry53-recovery",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Australian raw-blueberry composition proxy for named Canadian wild-blueberry GI; not Finnish bilberry."
+        },
+        {
+          "name": "hasselpähkinä",
+          "grams": 20,
+          "compositionId": "375",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Exact weighed edible input; full portion retained."
+        },
+        {
+          "name": "punnittu sitruunankuoriraaste",
+          "grams": 2,
+          "compositionId": "physical",
+          "giId": null,
+          "carbohydrateUse": "UPPER_BOUND",
+          "note": "2g is an explicit weighed choice, not a source-verified teaspoon conversion. Total peel mass is only an availableCHO cap."
+        },
+        {
+          "name": "Foodin100%erytritoli",
+          "grams": 4,
+          "compositionId": "pure-erythritol",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Exact weighed edible input; full portion retained."
+        }
+      ],
+      "preparationDecision": "Original cold layered bowl. Use100g fresh strawberry,50g fresh Canadian wild blueberry,20g raw hazelnut and2g weighed lemon zest. Sweeten with4g pure erythritol. Preserve zest; do not swap it for juice. Raw fruit GI is named; source/variety differences remain LOW. Hazelnut and peel positive GI-lessCHO is explicitly omitted by unchanged A thresholds. No whole-meal or all-berry GI claim.",
+      "requiredDecisions": [
+        "GK_ONLY_CONTRACT",
+        "EXACT_NEW_VERSION_OWNER_APPROVAL",
+        "NEW_SOURCE_BINDINGS_REVIEW",
+        "BLUEBERRY_VARIETY_AND_COMPOSITION_ANALOGUE",
+        "WEIGHED_ZEST_2G_NOT_CONVERSION"
+      ],
+      "macroAction": "PRESERVE_ALL_CURRENT_VALUES_AND_WITHHOLDINGS",
+      "approval": false,
+      "confidence": "LOW",
+      "inputSha256": "092719e24df715f0149468125c91e24c08a5dffb29ba2d2f712bb779bd4bdc86"
+    },
+    {
+      "recipeId": "kaakao-kookos-chia",
+      "level": "A",
+      "servings": 4,
+      "paths": {
+        "fi": "reseptit/aamupalat/kaakao-kookos-chia.md"
+      },
+      "recipeSha256": {
+        "fi": "909dc73c356b1db0d393ddd5a22ebfafd76b557f5fa5068b60c624da4a72c700"
+      },
+      "candidateIngredients": [
+        {
+          "name": "chia-siemeniä",
+          "compositionId": "34847",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Original40g whole chia; native Fineli34847 available0.2. Not USDA total-minus-fibre or another chia product.",
+          "grams": 40
+        },
+        {
+          "name": "kookosjuomaa",
+          "compositionId": "koko-uk-unsweetened-cap",
+          "giId": null,
+          "carbohydrateUse": "UPPER_BOUND",
+          "note": "Original200ml retained as source-native ml. Koko0.4g labelCHO/100ml is only nominal upper; no density or GI.",
+          "millilitres": 200
+        },
+        {
+          "name": "kuohukermaa",
+          "compositionId": "631",
+          "giId": "dairy30",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Original100ml cream by its own Fineli631 DL100g; native2.9CHO/100g, unsweetened38% cream.",
+          "grams": 100
+        },
+        {
+          "name": "makeuttamatonta kaakaojauhetta",
+          "compositionId": "20",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Original1tbsp cocoa by its own Fineli20 RKL6g, native11CHO/100g.",
+          "grams": 6
+        },
+        {
+          "name": "vaniljauutetta",
+          "compositionId": "F009350",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "NEW WEIGHED CONTENT5g vanilla bean extract; not asserted originaltsp mass. Native12.6CHO/100g.",
+          "grams": 5
+        },
+        {
+          "name": "paahdettuja kookoshiutaleita",
+          "compositionId": "urtekram-roasted-cap",
+          "giId": null,
+          "carbohydrateUse": "UPPER_BOUND",
+          "note": "Original20g already-roasted topping retained as sold; exact Urtekram8.4g labelCHO/100g nominal upper; no unroasted-to-roasted conversion.",
+          "grams": 20
+        },
+        {
+          "name": "makeutusainetta maun mukaan",
+          "compositionId": "pure-erythritol",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "ZERO_CHO_SENTINEL_RETAIN_ORIGINAL_OPTIONAL_TO_TASTE; Foodin explicit100CHO minus100polyols; quantity not asserted0g.",
+          "grams": 0
+        }
+      ],
+      "preparationDecision": "Keep original40g whole chia seeds,200ml coconut drink,100ml unsweetened38% cream and20g AS-SOLD already-roasted coconut chips. Bind coconut drink to exact Koko UK chilled label and chips to exact Urtekram DK1003481; break chips smaller without discarding. Use Fineli631 ownDL100g for original cream100ml, Fineli20 ownRKL6g for original cocoa1tbsp, and separately weighed vanilla bean extract5g as NEW content decision, not originaltsp equivalence. Optional sweetener is specified Foodin100% erythritol to taste;0g is only zeroCHO computational sentinel, not removal or amount assertion. Refrigerate whole mixture at least4h; serve all four portions and full20g topping. No added sugar, no switch to full-fat coconut milk, no plantGI50 or traceGI50. All five positive unmatched ingredients separately count toward unchanged A omission thresholds.",
+      "requiredDecisions": [
+        "GK_ONLY_CONTRACT",
+        "EXACT_KOKO_UK_CHILLED_AND_URTEKRAM_DK_PRODUCT_VERSIONS",
+        "WEIGHED_VANILLA_EXTRACT5G_CONTENT_NOT_DENSITY",
+        "NAMED_FINELI_CHIA34847_AND_CREAM631_SOURCE_APPLICATION",
+        "GK_ONLY_MACRO_VERSION_AND_LANGUAGE_COMPATIBILITY"
+      ],
+      "macroAction": "PRESERVE_ALL_CURRENT_VALUES_AND_WITHHOLDINGS",
+      "approval": false,
+      "publicationAuthorized": false,
+      "confidence": "LOW",
+      "inputSha256": "dfcb1006838f327d6dc368dbdd647180f4be3305b82518e99f88b8d25f71f8b2"
+    }
+  ]
+}

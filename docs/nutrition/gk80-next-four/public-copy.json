@@ -1,0 +1,285 @@
+{
+  "quantityContract": "GK_ONLY_NATIVE_UNITS_V1",
+  "humanTranslationReview": "NOT_CLAIMED",
+  "versions": {
+    "rahkapiirakka-vhh": {
+      "ingredientNames": [
+        {
+          "fi": "kuivat paahtamattomat kokonaiset mantelit, jauhetaan itse",
+          "en": "whole dried unroasted almonds, ground at home",
+          "sv": "hela torkade orostade mandlar, mals hemma",
+          "th": "อัลมอนด์แห้งทั้งเมล็ดไม่คั่ว บดเอง"
+        },
+        {
+          "fi": "voi",
+          "en": "butter",
+          "sv": "smör",
+          "th": "เนย"
+        },
+        {
+          "fi": "kuorettomat kananmunat, yhteensä 1 + 2 kpl lähdemitan mukaan",
+          "en": "shelled eggs, original 1 + 2 eggs using the source measure",
+          "sv": "ägg utan skal, ursprungligen 1 + 2 enligt källans mått",
+          "th": "ไข่ไม่รวมเปลือก เดิม 1 + 2 ฟอง ตามน้ำหนักอ้างอิง"
+        },
+        {
+          "fi": "maustamaton vähärasvainen maitorahka",
+          "en": "plain low-fat quark",
+          "sv": "naturell mager kvarg",
+          "th": "ควาร์กรสธรรมชาติไขมันต่ำ"
+        },
+        {
+          "fi": "makeuttamaton kuohukerma 38 %",
+          "en": "unsweetened whipping cream, 38% fat",
+          "sv": "osötad vispgrädde, 38 % fett",
+          "th": "วิปปิ้งครีมไม่เติมน้ำตาล ไขมัน 38%"
+        },
+        {
+          "fi": "Foodin 100 % erytritoli, alkuperäinen lusikkamäärä säilyy",
+          "en": "Foodin 100% erythritol, original spoon amount retained",
+          "sv": "Foodin 100 % erytritol, ursprungligt skedmått behålls",
+          "th": "อิริทริทอล Foodin 100% คงปริมาณช้อนตามสูตรเดิม"
+        },
+        {
+          "fi": "punnittu vaniljauute",
+          "en": "weighed vanilla extract",
+          "sv": "vägt vaniljextrakt",
+          "th": "วานิลลาสกัดที่ชั่งน้ำหนัก"
+        }
+      ],
+      "nativeQuantities": {
+        "5": {
+          "amount": 2,
+          "unit": "tbsp"
+        }
+      },
+      "preparation": {
+        "fi": "Tämä erä on {{servings}} annosta. Punnitse {{amount:0}} g kuivia paahtamattomia kokonaisia manteleita ennen jauhamista. Jauha hienoksi ja käytä koko jauhe; älä kuori, poista rasvaa tai siivilöi mitään pois. Käytä {{amount:1}} g voita ja yhteensä {{amount:2}} g kuorettomia munia. Täytteeseen tulee {{amount:3}} g rahkaa ja {{amount:4}} g kermaa sen oman lähdemitan mukaan. Säilytä {{amount:5}} rkl Foodinin puhdasta erytritolia. Vaniljauute on erikseen punnittu {{amount:6}} g, ei teelusikan massaväite. Paista 175 °C:ssa noin 35 minuuttia ja jäähdytä. Alkuperäisen ohjeen munien jako pohjaan ja täytteeseen säilyy.",
+        "en": "This batch makes {{servings}} servings. Weigh {{amount:0}} g whole dried unroasted almonds before grinding. Grind finely and keep every part; do not blanch, defat or sieve any away. Use {{amount:1}} g butter and {{amount:2}} g shelled eggs in total. The filling contains {{amount:3}} g quark and {{amount:4}} g cream using its own source measure. Retain {{amount:5}} tbsp pure Foodin erythritol. Weigh {{amount:6}} g vanilla extract separately; this does not assert a teaspoon mass. Bake at175°C for about35 minutes, then cool. Keep the original division of eggs between crust and filling.",
+        "sv": "Satsen ger {{servings}} portioner. Väg {{amount:0}} g hela torkade orostade mandlar före malning. Mal fint och använd allt; skala inte, avfetta inte och sikta inte bort något. Använd {{amount:1}} g smör och totalt {{amount:2}} g ägg utan skal. Fyllningen innehåller {{amount:3}} g kvarg och {{amount:4}} g grädde enligt dess eget källmått. Behåll {{amount:5}} msk ren Foodin erytritol. Väg {{amount:6}} g vaniljextrakt separat; det anger inte en teskeds massa. Grädda i175°C cirka35 minuter och låt svalna. Behåll grundreceptets fördelning av äggen mellan botten och fyllning.",
+        "th": "ปริมาณนี้สำหรับ {{servings}} ที่ ชั่งอัลมอนด์แห้งทั้งเมล็ดไม่คั่ว {{amount:0}} กรัมก่อนบด บดละเอียดและใช้ทั้งหมด ไม่ลอกเปลือก ไม่แยกไขมัน และไม่ร่อนส่วนใดทิ้ง ใช้เนย {{amount:1}} กรัม และไข่ไม่รวมเปลือกรวม {{amount:2}} กรัม ไส้ใช้ควาร์ก {{amount:3}} กรัมและครีม {{amount:4}} กรัมตามหน่วยอ้างอิงของครีม คงอิริทริทอล Foodin บริสุทธิ์ {{amount:5}} ช้อนโต๊ะ ชั่งวานิลลาสกัดแยก {{amount:6}} กรัม ไม่ได้ระบุน้ำหนักต่อช้อนชา อบ175°C ประมาณ35นาทีแล้วพักให้เย็น แบ่งไข่ระหว่างฐานกับไส้ตามสูตรเดิม"
+      },
+      "limitation": {
+        "fi": "Laskettu osuus koskee vain tätä itse jauhettujen mantelien versiota, ei kaikkia mantelijauhoja. Mantelien pois jätetty CHO on 0,975 g/annos, vain 0,025 g alle yksittäisrajan. Lähdepiste ei ole erätakuu.",
+        "en": "The calculated part applies only to this whole-almond grinding version, not arbitrary almond flour. Omitted almond carbohydrate is0.975g/serving, only0.025g below the individual limit. The source point is not a batch guarantee.",
+        "sv": "Den beräknade delen gäller endast denna version med hela mandlar som mals hemma, inte valfritt mandelmjöl. Mandelns utelämnade kolhydrater är0,975g/portion, endast0,025g under den individuella gränsen. Källpunkten är ingen partigaranti.",
+        "th": "ส่วนที่คำนวณใช้เฉพาะเวอร์ชันที่บดอัลมอนด์ทั้งเมล็ดเอง ไม่ครอบคลุมแป้งอัลมอนด์ทั่วไป คาร์โบไฮเดรตอัลมอนด์ที่ละไว้0.975กรัมต่อที่ ต่ำกว่าเกณฑ์รายวัตถุดิบเพียง0.025กรัม ค่าอ้างอิงไม่รับประกันทุกล็อต"
+      }
+    },
+    "bulgogi": {
+      "ingredientNames": [
+        {
+          "fi": "raaka naudan ulkofilee",
+          "en": "beef sirloin, raw",
+          "sv": "rå nötinnanfilé",
+          "th": "เนื้อสันนอกวัวดิบ"
+        },
+        {
+          "fi": "kuiva valkoinen jasmiiniriisi",
+          "en": "dry white jasmine rice",
+          "sv": "torrt vitt jasminris",
+          "th": "ข้าวหอมมะลิขาวแห้ง"
+        },
+        {
+          "fi": "tavallinen makeuttamaton soijakastike, punnittu",
+          "en": "ordinary unsweetened soy sauce, weighed",
+          "sv": "vanlig osötad soja, vägd",
+          "th": "ซีอิ๊วธรรมดาไม่เติมความหวาน ชั่งน้ำหนัก"
+        },
+        {
+          "fi": "fariinisokeri, punnittu",
+          "en": "brown sugar, weighed",
+          "sv": "farinsocker, vägt",
+          "th": "น้ำตาลทรายแดง ชั่งน้ำหนัก"
+        },
+        {
+          "fi": "seesamiöljy, alkuperäinen lusikkamäärä",
+          "en": "sesame oil, original spoon amount",
+          "sv": "sesamolja, ursprungligt skedmått",
+          "th": "น้ำมันงา คงปริมาณช้อนเดิม"
+        },
+        {
+          "fi": "valkosipuli lähteen omalla kynsimassalla",
+          "en": "garlic using its own source clove mass",
+          "sv": "vitlök enligt källans egen klyftvikt",
+          "th": "กระเทียมตามน้ำหนักต่อกลีบของแหล่งข้อมูล"
+        },
+        {
+          "fi": "tavallinen kuorittu päärynä",
+          "en": "ordinary peeled pear",
+          "sv": "vanligt skalat päron",
+          "th": "ลูกแพร์ธรรมดาปอกเปลือก"
+        },
+        {
+          "fi": "kuorittu keltasipuli",
+          "en": "peeled yellow onion",
+          "sv": "skalad gul lök",
+          "th": "หอมหัวใหญ่ปอกเปลือก"
+        },
+        {
+          "fi": "syötävä kevätsipuli, punnittu",
+          "en": "edible spring onion, weighed",
+          "sv": "ätlig salladslök, vägd",
+          "th": "ต้นหอมส่วนที่กินได้ ชั่งน้ำหนัก"
+        },
+        {
+          "fi": "kuorelliset seesaminsiemenet",
+          "en": "unhulled sesame seeds",
+          "sv": "oskalade sesamfrön",
+          "th": "งาไม่กะเทาะเปลือก"
+        },
+        {
+          "fi": "jauhettu mustapippuri",
+          "en": "ground black pepper",
+          "sv": "malen svartpeppar",
+          "th": "พริกไทยดำป่น"
+        }
+      ],
+      "nativeQuantities": {
+        "4": {
+          "amount": 1,
+          "unit": "tbsp"
+        }
+      },
+      "preparation": {
+        "fi": "Erä on {{servings}} annosta: {{amount:0}} g naudanlihaa ja {{amount:1}} g KUIVAA jasmiiniriisiä. Keitä riisi pakkauksen ohjeen mukaan ja tarjoa tuoreena kuumana; määrä ei ole kypsän riisin paino. Marinadiin tulee {{amount:2}} g tavallista soijakastiketta, {{amount:3}} g fariinisokeria, {{amount:4}} rkl seesamiöljyä, {{amount:5}} g valkosipulia ja {{amount:6}} g kuorittua päärynää. Käytä {{amount:7}} g keltasipulia ja {{amount:8}} g kevätsipulia. Marinoi jääkaapissa 20–30 minuuttia. Paista ohut liha nopeasti erissä. Kypsennä kaikki jäljelle jäänyt marinadi sipuleineen perusteellisesti ja lyhyesti; tarjoa kaikki kypsennetty marinadi ja pannunesteet lihan ja riisin kanssa. Lisää {{amount:9}} g seesamia ja {{amount:10}} g mustapippuria. Mitään kastikeosaa ei heitetä pois. Punnitut soija-, sokeri- ja kevätsipulimäärät ovat erillinen täsmäversio, eivät alkuperäisten tilavuuksien tai kappaleiden massamuunnoksia.",
+        "en": "For {{servings}} servings use {{amount:0}} g beef and {{amount:1}} g DRY jasmine rice. Cook the rice as directed and serve freshly cooked and hot; this is not a cooked-rice weight. Use {{amount:2}} g ordinary soy sauce, {{amount:3}} g brown sugar, {{amount:4}} tbsp sesame oil, {{amount:5}} g garlic and {{amount:6}} g peeled pear for the marinade. Add {{amount:7}} g yellow onion and {{amount:8}} g spring onion. Marinate in the refrigerator for20–30 minutes. Quickly fry thin beef slices in batches. Briefly but thoroughly cook all remaining marinade with the onion; serve all cooked marinade and pan juices with the beef and rice. Add {{amount:9}} g sesame and {{amount:10}} g black pepper. Discard no sauce. The weighed soy, sugar and spring onion define a separate version, not verified conversions of the original volumes or pieces.",
+        "sv": "Till {{servings}} portioner används {{amount:0}} g nötkött och {{amount:1}} g TORRT jasminris. Koka riset enligt förpackningen och servera nykokt och varmt; detta är inte kokt risvikt. Marinaden innehåller {{amount:2}} g vanlig soja, {{amount:3}} g farinsocker, {{amount:4}} msk sesamolja, {{amount:5}} g vitlök och {{amount:6}} g skalat päron. Använd {{amount:7}} g gul lök och {{amount:8}} g salladslök. Marinera i kylskåp20–30 minuter. Stek tunna köttskivor snabbt i omgångar. Tillaga all resterande marinad med löken kort men ordentligt; servera all tillagad marinad och steksky med köttet och riset. Tillsätt {{amount:9}} g sesam och {{amount:10}} g svartpeppar. Kasta ingen sås. De vägda mängderna soja, socker och salladslök anger en separat version, inte verifierade omräkningar från originalets volym eller antal.",
+        "th": "สำหรับ {{servings}} ที่ ใช้เนื้อวัว {{amount:0}} กรัมและข้าวหอมมะลิแห้ง {{amount:1}} กรัม หุงตามคำแนะนำและเสิร์ฟร้อนทันที ปริมาณนี้ไม่ใช่น้ำหนักข้าวสุก น้ำหมักใช้ซีอิ๊วธรรมดา {{amount:2}} กรัม น้ำตาลทรายแดง {{amount:3}} กรัม น้ำมันงา {{amount:4}} ช้อนโต๊ะ กระเทียม {{amount:5}} กรัมและแพร์ปอกเปลือก {{amount:6}} กรัม ใช้หอมหัวใหญ่ {{amount:7}} กรัมและต้นหอม {{amount:8}} กรัม หมักในตู้เย็น20–30นาที ผัดเนื้อบางอย่างรวดเร็วทีละชุด นำน้ำหมักที่เหลือและหอมทั้งหมดปรุงให้สุกทั่วโดยใช้เวลาสั้น เสิร์ฟน้ำหมักที่ปรุงสุกและน้ำในกระทะทั้งหมดกับเนื้อและข้าว ใส่งา {{amount:9}} กรัมและพริกไทยดำ {{amount:10}} กรัม ไม่ทิ้งซอส ปริมาณซีอิ๊ว น้ำตาลและต้นหอมที่ชั่งเป็นข้อกำหนดของเวอร์ชันนี้ ไม่ใช่การแปลงปริมาตรหรือจำนวนชิ้นเดิมเป็นน้ำหนัก"
+      },
+      "limitation": {
+        "fi": "LOW-malli: riisin68, fariinisokerin sakkaroosivertailu60 ja lyhyesti kuumennetun päärynän38 ovat rajattuja lähdesovelluksia. Koko aterian GI:tä ei ole mitattu. Tulos edellyttää kaiken kypsennetyn marinadin ja pannunesteiden syömistä.",
+        "en": "LOW-confidence model: rice68, the sucrose-dominant brown-sugar analogy60 and briefly heated pear38 are bounded source applications. The meal GI was not measured. All cooked marinade and pan juices must be consumed.",
+        "sv": "Modell med låg säkerhet: ris68, farinsockrets sackarosanalogi60 och kort upphettat päron38 är avgränsade källtillämpningar. Måltidens GI har inte mätts. All tillagad marinad och steksky måste ätas.",
+        "th": "แบบจำลองความเชื่อมั่นต่ำ ใช้ค่าเทียบเคียงข้าว68 น้ำตาลซูโครสสำหรับน้ำตาลทรายแดง60 และแพร์ที่ผ่านความร้อนสั้น38 ภายใต้ขอบเขตที่ระบุ ไม่ได้วัด GI ทั้งมื้อ ต้องรับประทานน้ำหมักที่ปรุงสุกและน้ำในกระทะทั้งหมด"
+      }
+    },
+    "rahka-marjakerroskulho": {
+      "ingredientNames": [
+        {
+          "fi": "maustamaton vähärasvainen maitorahka",
+          "en": "plain low-fat quark",
+          "sv": "naturell mager kvarg",
+          "th": "ควาร์กรสธรรมชาติไขมันต่ำ"
+        },
+        {
+          "fi": "maustamaton turkkilainen jogurtti 10 %",
+          "en": "plain unsweetened Turkish-style yogurt, 10% fat",
+          "sv": "naturell osötad turkisk yoghurt, 10 % fett",
+          "th": "โยเกิร์ตแบบตุรกีรสธรรมชาติไม่เติมน้ำตาล ไขมัน10%"
+        },
+        {
+          "fi": "tuoreet mansikat",
+          "en": "fresh raw strawberries",
+          "sv": "färska råa jordgubbar",
+          "th": "สตรอว์เบอร์รีสด"
+        },
+        {
+          "fi": "tuore kanadalainen wild blueberry, ei suomalainen metsämustikka",
+          "en": "fresh Canadian wild blueberry, not European bilberry",
+          "sv": "färska kanadensiska wild blueberries, inte europeiska skogsblåbär",
+          "th": "บลูเบอร์รีป่าแคนาดาสด ไม่ใช่บิลเบอร์รียุโรป"
+        },
+        {
+          "fi": "raa’at kokonaiset hasselpähkinät",
+          "en": "raw whole hazelnuts",
+          "sv": "råa hela hasselnötter",
+          "th": "เฮเซลนัตดิบทั้งเมล็ด"
+        },
+        {
+          "fi": "punnittu sitruunankuoriraaste",
+          "en": "weighed lemon zest",
+          "sv": "vägt rivet citronskal",
+          "th": "ผิวเลมอนขูดที่ชั่งน้ำหนัก"
+        },
+        {
+          "fi": "Foodin 100 % erytritoli",
+          "en": "Foodin 100% erythritol",
+          "sv": "Foodin 100 % erytritol",
+          "th": "อิริทริทอล Foodin 100%"
+        }
+      ],
+      "nativeQuantities": {},
+      "preparation": {
+        "fi": "Erä on {{servings}} annosta. Kerrosta kylmänä {{amount:0}} g rahkaa, {{amount:1}} g maustamatonta turkkilaista jogurttia, {{amount:2}} g tuoreita mansikoita ja {{amount:3}} g tuoreita kanadalaisia wild blueberry -marjoja. Lisää kaikki {{amount:4}} g raakoja hasselpähkinöitä. Sitruunankuorta on erikseen punnittu {{amount:5}} g; sitä ei vaihdeta mehuksi. Makeuta {{amount:6}} g:lla Foodinin puhdasta erytritolia. Käytä koko määrä ja tarjoa kylmänä. Suomalainen metsämustikka ei kuulu tämän GK-version hyväksyntään.",
+        "en": "For {{servings}} servings, layer {{amount:0}} g quark, {{amount:1}} g plain Turkish-style yogurt, {{amount:2}} g fresh strawberries and {{amount:3}} g fresh Canadian wild blueberries. Add all {{amount:4}} g raw hazelnuts. Use {{amount:5}} g separately weighed lemon zest; do not substitute juice. Sweeten with {{amount:6}} g pure Foodin erythritol. Retain every ingredient and serve cold. European bilberries are outside this approved GL version.",
+        "sv": "Till {{servings}} portioner varvas {{amount:0}} g kvarg, {{amount:1}} g naturell turkisk yoghurt, {{amount:2}} g färska jordgubbar och {{amount:3}} g färska kanadensiska wild blueberries. Använd alla {{amount:4}} g råa hasselnötter. Väg {{amount:5}} g citronskal separat; ersätt inte med saft. Söta med {{amount:6}} g ren Foodin erytritol. Använd hela mängden och servera kallt. Europeiska skogsblåbär ingår inte i denna godkända GL-version.",
+        "th": "สำหรับ {{servings}} ที่ จัดชั้นควาร์ก {{amount:0}} กรัม โยเกิร์ตแบบตุรกีรสธรรมชาติ {{amount:1}} กรัม สตรอว์เบอร์รีสด {{amount:2}} กรัม และบลูเบอร์รีป่าแคนาดาสด {{amount:3}} กรัม ใส่เฮเซลนัตดิบทั้งหมด {{amount:4}} กรัม ชั่งผิวเลมอนขูดแยก {{amount:5}} กรัม ไม่เปลี่ยนเป็นน้ำเลมอน เติมอิริทริทอล Foodin บริสุทธิ์ {{amount:6}} กรัม ใช้วัตถุดิบทั้งหมดและเสิร์ฟเย็น การอนุมัติเวอร์ชัน GL นี้ไม่ครอบคลุมบิลเบอร์รียุโรป"
+      },
+      "limitation": {
+        "fi": "Tämä GK-versio käyttää tuoretta kanadalaista wild blueberry -marjaa, ei suomalaista metsämustikkaa. Australian geneerinen mustikkakoostumus on näkyvä LOW-analogia, ei tämän tuotteen mittaus. Alkuperäinen resepti ja sen makrot säilyvät erillisinä.",
+        "en": "This GL version uses fresh Canadian wild blueberries, not European bilberries. Generic Australian blueberry composition is an explicit LOW-confidence proxy, not a measurement of this product. The original recipe and its macros remain separate.",
+        "sv": "Denna GL-version använder färska kanadensiska wild blueberries, inte europeiska skogsblåbär. Generisk australisk blåbärssammansättning är en uttrycklig analogi med låg säkerhet, inte en mätning av produkten. Grundrecept och dess makron är separata.",
+        "th": "เวอร์ชัน GL นี้ใช้บลูเบอร์รีป่าแคนาดาสด ไม่ใช่บิลเบอร์รียุโรป ข้อมูลส่วนประกอบบลูเบอร์รีทั่วไปจากออสเตรเลียเป็นค่าเทียบเคียงความเชื่อมั่นต่ำ ไม่ใช่ผลวัดผลิตภัณฑ์นี้ สูตรเดิมและสารอาหารหลักแยกต่างหาก"
+      }
+    },
+    "kaakao-kookos-chia": {
+      "ingredientNames": [
+        {
+          "fi": "kokonaiset chia-siemenet",
+          "en": "whole chia seeds",
+          "sv": "hela chiafrön",
+          "th": "เมล็ดเจียทั้งเมล็ด"
+        },
+        {
+          "fi": "Koko UK Unsweetened No Sugar Milk, kylmäjuoma",
+          "en": "Koko UK Unsweetened No Sugar Milk, chilled",
+          "sv": "Koko UK Unsweetened No Sugar Milk, kyld dryck",
+          "th": "เครื่องดื่มแช่เย็น Koko UK Unsweetened No Sugar Milk"
+        },
+        {
+          "fi": "makeuttamaton kuohukerma 38 %, alkuperäinen tilavuus",
+          "en": "unsweetened whipping cream, 38% fat, original volume",
+          "sv": "osötad vispgrädde, 38 % fett, ursprunglig volym",
+          "th": "วิปปิ้งครีมไม่เติมน้ำตาล ไขมัน38% คงปริมาตรเดิม"
+        },
+        {
+          "fi": "makeuttamaton kaakaojauhe, lähteen oma rkl-mitta",
+          "en": "unsweetened cocoa powder, source-specific tablespoon measure",
+          "sv": "osötat kakaopulver, källans eget matskedsmått",
+          "th": "ผงโกโก้ไม่เติมน้ำตาล ใช้น้ำหนักต่อช้อนโต๊ะของแหล่งข้อมูล"
+        },
+        {
+          "fi": "punnittu vaniljauute",
+          "en": "weighed vanilla extract",
+          "sv": "vägt vaniljextrakt",
+          "th": "วานิลลาสกัดที่ชั่งน้ำหนัก"
+        },
+        {
+          "fi": "Urtekram DK1003481, valmiiksi paahdetut kookoslastut",
+          "en": "Urtekram DK1003481, already-roasted coconut chips",
+          "sv": "Urtekram DK1003481, redan rostade kokoschips",
+          "th": "มะพร้าวแผ่นอบแล้ว Urtekram DK1003481"
+        },
+        {
+          "fi": "Foodin 100 % erytritoli, valinnaisesti maun mukaan",
+          "en": "Foodin 100% erythritol, optional to taste",
+          "sv": "Foodin 100 % erytritol, valfritt efter smak",
+          "th": "อิริทริทอล Foodin 100% เติมตามชอบได้"
+        }
+      ],
+      "nativeQuantities": {
+        "1": {
+          "amount": 200,
+          "unit": "ml"
+        },
+        "2": {
+          "amount": 100,
+          "unit": "ml"
+        }
+      },
+      "preparation": {
+        "fi": "Erä on {{servings}} annosta. Sekoita {{amount:0}} g kokonaisia chia-siemeniä, {{amount:1}} ml Koko UK Unsweetened No Sugar Milk -kylmäjuomaa ja {{amount:2}} ml makeuttamatonta 38 % kuohukermaa. Koko-juoman lähdemerkintä on 0,4 g hiilihydraattia/100 ml; millilitroja ei muuteta grammoiksi. Kerman laskentamassa tulee vain Fineli631:n omasta 100 g/dl -mitasta. Lisää {{amount:3}} g kaakaojauhetta sen oman lähteen lusikkamäärän mukaan ja erikseen punnittu {{amount:4}} g vaniljauutetta; vaniljamäärä ei väitä teelusikan painoa. Voit makeuttaa Foodinin puhtaalla erytritolilla maun mukaan. Jäähdytä koko seosta vähintään 4 tuntia. Lisää kaikki {{amount:5}} g valmiiksi paahdettuja Urtekram DK1003481 -kookoslastuja; murenna halutessasi mutta älä poista mitään. Älä korvaa juomaa täysrasvaisella kookosmaidolla tai laske raakaa kookosta paahdetun tuotteen tilalle.",
+        "en": "For {{servings}} servings combine {{amount:0}} g whole chia seeds, {{amount:1}} ml Koko UK Unsweetened No Sugar Milk CHILLED and {{amount:2}} ml unsweetened38% whipping cream. The Koko label is0.4g carbohydrate/100ml; no millilitres are converted to grams. The cream calculation mass uses only Fineli631's own100g/dl source measure. Add {{amount:3}} g cocoa using its own source tablespoon measure and {{amount:4}} g separately weighed vanilla extract; the vanilla amount does not assert a teaspoon weight. Optionally sweeten with pure Foodin erythritol to taste. Refrigerate the whole mixture for at least4 hours. Add all {{amount:5}} g already-roasted Urtekram DK1003481 coconut chips; break smaller if desired without discarding any. Do not substitute full-fat coconut milk or use raw-coconut composition for the roasted product.",
+        "sv": "Till {{servings}} portioner blandas {{amount:0}} g hela chiafrön, {{amount:1}} ml Koko UK Unsweetened No Sugar Milk KYLD och {{amount:2}} ml osötad38% vispgrädde. Koko anger0,4g kolhydrater/100ml; milliliter räknas inte om till gram. Gräddens beräkningsmassa använder endast Fineli631:s eget100g/dl-mått. Tillsätt {{amount:3}} g kakao enligt dess eget källmått och {{amount:4}} g separat vägt vaniljextrakt; vaniljmängden anger inte en teskeds vikt. Söta valfritt med ren Foodin erytritol efter smak. Kyl hela blandningen minst4 timmar. Använd alla {{amount:5}} g redan rostade Urtekram DK1003481 kokoschips; smula dem gärna men kasta inget. Ersätt inte drycken med fet kokosmjölk och använd inte rå kokos som sammansättning för den rostade produkten.",
+        "th": "สำหรับ {{servings}} ที่ ผสมเมล็ดเจียทั้งเมล็ด {{amount:0}} กรัม เครื่องดื่ม Koko UK Unsweetened No Sugar Milk ชนิดแช่เย็น {{amount:1}} มล. และวิปปิ้งครีมไม่เติมน้ำตาลไขมัน38% {{amount:2}} มล. ฉลาก Koko ระบุคาร์โบไฮเดรต0.4กรัมต่อ100มล. ไม่แปลงมิลลิลิตรเป็นกรัม น้ำหนักครีมที่ใช้คำนวณอาศัยเฉพาะหน่วย100กรัมต่อเดซิลิตรของ Fineli631 ใส่โกโก้ {{amount:3}} กรัมตามน้ำหนักต่อช้อนของแหล่งข้อมูล และวานิลลาสกัดที่ชั่งแยก {{amount:4}} กรัม ปริมาณวานิลลานี้ไม่ได้ระบุน้ำหนักต่อช้อนชา เติมอิริทริทอล Foodin บริสุทธิ์ตามชอบได้ แช่เย็นส่วนผสมทั้งหมดอย่างน้อย4ชั่วโมง ใส่มะพร้าวแผ่นอบแล้ว Urtekram DK1003481 ทั้งหมด {{amount:5}} กรัม หักให้เล็กลงได้แต่ไม่ทิ้งส่วนใด ไม่เปลี่ยนเป็นกะทิไขมันเต็มหรือใช้ข้อมูลมะพร้าวดิบแทนผลิตภัณฑ์ที่อบแล้ว"
+      },
+      "limitation": {
+        "fi": "Vain kermarivin laskettu osuus: 0,22/annos. GI:töntä CHO:ta jätettiin pois 0,9625 g/annos, enemmän kuin laskentaan kuuluvaa 0,725 g:aa. Pois jätetyn osuuden vaikutusta ei tiedetä nollaksi. Tuotemerkinnät ovat nimellisiä ylärajoja, eivät erätakuita; luku ei ole koko jälkiruoan mitattu GK.",
+        "en": "Only the cream-row calculated part:0.22/serving. Omitted GI-unmatched carbohydrate is0.9625g/serving, more than the0.725g included. Its effect is not known to be zero. Product declarations are nominal upper bounds, not batch guarantees; this is not a measured whole-dessert GL.",
+        "sv": "Endast gräddradens beräknade del:0,22/portion. Utelämnade kolhydrater utan GI är0,9625g/portion, mer än de0,725g som ingår. Effekten är inte visad som noll. Produktdeklarationerna är nominella övre gränser, inte partigarantier; detta är inte uppmätt GL för hela desserten.",
+        "th": "เป็นเพียงส่วนที่คำนวณจากครีม0.22ต่อที่ คาร์โบไฮเดรตที่ไม่มีค่า GI และละไว้มี0.9625กรัมต่อที่ มากกว่า0.725กรัมที่รวมในการคำนวณ ไม่ทราบว่าผลของส่วนที่ละไว้เป็นศูนย์ ข้อมูลฉลากเป็นเพียงขอบเขตอ้างอิง ไม่รับประกันทุกล็อต และไม่ใช่ GL ของของหวานทั้งจานที่วัดได้"
+      }
+    }
+  }
+}

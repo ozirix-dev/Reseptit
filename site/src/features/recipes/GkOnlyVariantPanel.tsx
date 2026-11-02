@@ -20,25 +20,38 @@ export function gkOnlyValue(v:GkOnlyVariant,locale:RecipeLocale){
  const n=new Intl.NumberFormat(locale,{maximumFractionDigits:2});
  return v.scenarioRange?`${n.format(Math.floor(v.scenarioRange.min*10)/10)}–${n.format(Math.ceil(v.scenarioRange.max*10)/10)}`:`≈ ${n.format(v.point!)}`;
 }
+/** Display-only native units. A millilitre quantity never acquires a gram mass here. */
+export function gkOnlyQuantity(v:GkOnlyVariant,index:number,servings=v.servings){
+ const ingredient=v.ingredients[index];
+ if(!ingredient||!Number.isInteger(servings)||servings<=0||!Number.isInteger(v.servings)||v.servings<=0)throw Error('Invalid GK-only quantity/servings');
+ if(v.quantityContract!==undefined&&v.quantityContract!=='GK_ONLY_NATIVE_UNITS_V1')throw Error('Unknown GK-only quantity contract');
+ const native=ingredient.quantity;
+ if(native&&(v.quantityContract!=='GK_ONLY_NATIVE_UNITS_V1'||ingredient.grams!==null||!['ml','tbsp'].includes(native.unit)))throw Error('Invalid native GK-only quantity contract');
+ const amount=native?native.amount:ingredient.grams;
+ if(amount===null)return null;
+ if(!Number.isFinite(amount)||amount<0)throw Error('Invalid GK-only quantity');
+ return {amount:amount*servings/v.servings,unit:native?.unit??'g'};
+}
+const quantityUnit=(unit:string,locale:RecipeLocale)=>unit==='tbsp'?{fi:'rkl',en:'tbsp',sv:'msk',th:'ช้อนโต๊ะ'}[locale]:unit==='ml'&&locale==='th'?'มล.':unit;
 export function gkOnlyPreparation(v:GkOnlyVariant,locale:RecipeLocale,servings=v.servings){
  const n=new Intl.NumberFormat(locale,{maximumFractionDigits:3});
  return v.preparation[locale].replace(/\{\{(servings|amount:(\d+))\}\}/g,(_match,token,index)=>{
   if(token==='servings')return n.format(servings);
-  const amount=v.ingredients[Number(index)]?.grams;if(amount===null||amount===undefined)throw Error('Invalid GK-only preparation amount');
-  return n.format(amount*servings/v.servings);
+  const quantity=gkOnlyQuantity(v,Number(index),servings);if(quantity===null)throw Error('Invalid GK-only preparation amount');
+  return n.format(quantity.amount);
  });
 }
 export function GkOnlyVariantPanel({variant:v,locale,servings,compact=false}:{variant:GkOnlyVariant;locale:RecipeLocale;servings?:number;compact?:boolean}){
  const t=gkOnlyUi[locale],n=new Intl.NumberFormat(locale,{maximumFractionDigits:3}),Heading=compact?'h4':'h2';
- const scale=(servings??v.servings)/v.servings;
- return <section className={compact?'gk-only-variant':'recipe-panel gk-only-variant'} data-gk-version={v.versionId} data-gk-level={v.level} data-macro-scope={v.macroScope}>
+ return <section className={compact?'gk-only-variant':'recipe-panel gk-only-variant'} data-gk-version={v.versionId} data-gk-level={v.level} data-macro-scope={v.macroScope} data-gk-quantity-contract={v.quantityContract}>
   <Heading>{t.title}</Heading><p className="recipe-disclosure">{t.scope}</p>
+  {v.limitation?<p className="recipe-disclosure" data-gk-limitation="exact-version"><strong>{v.limitation[locale]}</strong></p>:null}
   <p><strong>{v.level==='A'?t.a:t.b}: {gkOnlyValue(v,locale)} {t.per}</strong></p>
   {v.omittedCho>0?<p className="recipe-disclosure" data-gk-omission="available-cho"><strong>{t.omission} {n.format(Math.ceil(v.omittedCho*10)/10)} {t.omissionEnd}</strong></p>:null}
   {v.point!==null&&v.point<1&&v.omittedCho>0?<p>{gkScopeUi[locale].partial}</p>:null}<p>{t.low}</p>
   {v.scenarioRange?<p>{t.range}</p>:null}
   {v.codingKinds.includes('PLANT50')?<p>{t.plant}</p>:null}{v.codingKinds.includes('TRACE50')?<p>{t.trace}</p>:null}
-  <details><summary>{t.details}</summary><p>{{fi:'Ainesluettelon annosmäärä',en:'Servings for these amounts',sv:'Portioner för dessa mängder',th:'จำนวนที่สำหรับปริมาณนี้'}[locale]}: {n.format(servings??v.servings)}</p><ul>{v.ingredients.map((i,index)=><li key={index}>{i.grams===null?t.original:`${n.format(i.grams*scale)} g`} — {i.name[locale]}</li>)}</ul><p>{t.prepare}</p><p>{gkOnlyPreparation(v,locale,servings)}</p></details>
+  <details><summary>{t.details}</summary><p>{{fi:'Ainesluettelon annosmäärä',en:'Servings for these amounts',sv:'Portioner för dessa mängder',th:'จำนวนที่สำหรับปริมาณนี้'}[locale]}: {n.format(servings??v.servings)}</p><ul>{v.ingredients.map((i,index)=>{const quantity=gkOnlyQuantity(v,index,servings??v.servings);return <li key={index}>{quantity?`${n.format(quantity.amount)} ${quantityUnit(quantity.unit,locale)}`:t.original} — {i.name[locale]}</li>;})}</ul><p>{t.prepare}</p><p>{gkOnlyPreparation(v,locale,servings)}</p></details>
   {v.sensitivity?<details><summary>{t.sensitivity}</summary><p>{n.format(Math.floor(v.sensitivity.min*1000)/1000)}–{n.format(Math.ceil(v.sensitivity.max*1000)/1000)} {t.per}</p><p>{t.sensitivityNote}</p></details>:null}
   <details><summary>{t.sources}</summary><ul>{v.sources.map((s,index)=><li key={index}>{s.url.startsWith('#')?<Link to={`${glycemicLoadPath(locale)}${s.url}`}>{s.title}</Link>:<a href={s.url} rel="noopener noreferrer">{s.title}</a>} — {s.note}</li>)}</ul></details>
   {!compact?<p><Link to={`${glycemicLoadPath(locale)}#${v.recipeId}`}>{t.method} ↗</Link></p>:null}
