@@ -11,19 +11,26 @@
     "sourceRecovery": "PASS;5 exact additional proposals(2A+3B), independent native-field Decimal5; no public activation",
     "sourceRecoveryTypeScript": "PASS",
     "sourceRecoveryRegressions": "PASS;23 targeted tests including original pilot11,integration7,recovery5;0 failures",
-    "sourceRecoveryMarkdown": "PASS;905 files;git diff --check PASS"
+    "sourceRecoveryMarkdown": "PASS;905 files;git diff --check PASS",
+    "preparedRoute": "PASS;8 closed numerical proposals, independent Decimal8;6 prepared-unit +2 ingredient routes; no public activation",
+    "preparedRouteRegressions": "PASS;31 targeted tests: original pilot11,integration7,recovery5,prepared8;0 failures. Includes14-input sealed review packet and all326 original result fingerprints.",
+    "preparedRouteTypeScript": "PASS;npx tsc --noEmit",
+    "preparedRouteMarkdown": "PASS;906 files;git diff --check PASS",
+    "preparedRouteTestCorrection": "Two manually transcribed expected test values corrected after independent ingredient Decimal arithmetic:baozi31.555290,upma27.630005. No recipe/source values changed to satisfy them."
   },
-  "ci": "Read exact pushed HEAD Checks; previous integration CI41449952445 does not validate new source-recovery files",
+  "ci": "Latest preceding HEAD792e7dc: CI41455792873 PASS. New prepared-route commit requires its own exact-HEAD normal PR CI; no manual rerun.",
   "production": "156/326 unchanged",
   "candidate": "172/326 for at least one exact version, including16 approved GK-only versions",
-  "pendingAdditionalProposal": 6,
+  "pendingAdditionalProposal": 14,
   "pendingCountedInCoverage": false,
   "targetProposals": 30,
-  "actualProposals": 22,
-  "targetMet": false,
+  "actualProposals": 30,
+  "targetMet": true,
   "targetCoverage": 261,
   "gapAfterCandidate": 89,
   "readyAuthorized": false,
   "mergeAuthorized": false,
-  "deployAuthorized": false
+  "deployAuthorized": false,
+  "targetMeaning": "30 distinct arithmetic proposals reached; not30 accepted source matches or publication integrations",
+  "hypotheticalCoverageAfterAllPendingAcceptedAndIntegrated": 186
 }

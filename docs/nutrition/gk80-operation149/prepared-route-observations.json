@@ -1,0 +1,199 @@
+{
+  "ifctRecords": [
+    {
+      "id": "IFCT-G010",
+      "foodCode": "G010",
+      "food": "Curry leaves (Murraya koenigii)",
+      "foodState": "RAW_FRESH_EDIBLE_LEAVES",
+      "nativeTable": 6,
+      "nativeColumn": "Total Available CHO",
+      "availablePer100g": 3.66,
+      "starchPer100g": 3.08,
+      "totalFreeSugarsPer100g": 0.6,
+      "byDifferenceTable1Value": 4.51,
+      "sourceUrl": "https://www.nin.res.in/ebooks/IFCT2017_16122024.pdf",
+      "pdfSha256": "e87629581a58faca286f4886504bc75f33d6d3771a50fb4e40e2afee2b2b32dd",
+      "definitionPdfPage": 27,
+      "observationPdfPage": 221,
+      "printedPage": 183,
+      "definition": "Available carbohydrate is the analytical total of free monosaccharides/disaccharides and starch; distinct from Table1 CHOAVLDF by difference.",
+      "transcriptionNote": "Use published native TotalAvailableCHO3.66. The printed starch+free-sugar means sum3.68; the cause of this0.02 publication difference is not established. Do not silently recompute or replace the published total.",
+      "polyols": "UNKNOWN; not included in the defined free-sugars+starch field; no P0 inferred",
+      "verified": "Source definition and aligned row inspected as rendered PDF images2026-11-02"
+    }
+  ],
+  "preparedSources": [
+    {
+      "id": "biryani-whole52",
+      "gi": 52,
+      "food": "Chicken biryani made with basmati rice",
+      "foodClass": "BASMATI_CHICKEN_BIRYANI_REHEATED",
+      "allowedUnitScopes": [
+        "PREPARED_RECIPE"
+      ],
+      "allowedRecipeIds": [
+        "hyderabadi-kanabiryani"
+      ],
+      "sourceUrl": "https://doi.org/10.1017/S0007114517001027",
+      "primaryPdfSha256": "3cb596db5973141cf78c1b9ba5d0b7e8b966d70f9762a4b3d8a2ac3685604dd0",
+      "locator": "AlDhaheri2017 Tables2/4; Atkinson2021 Table1/1960,p131",
+      "healthyN": 15,
+      "referenceCarbohydrateG": 50,
+      "testFoodMassG": 253.9,
+      "reference": "GLUCOSE_100",
+      "sem": 4,
+      "sourcePreparation": "Restaurant basmati rice with boiled chicken; rice,salt,ghee,spices,chicken,garlic,onion. Bought previous day and heated on test morning. Exact recipe ratios and storage temperature not reported.",
+      "limits": "Whole mixed-food observation, never standalone rice GI. Reference testCHO was calculated by difference. Yogurt/oil quantity and layered cooking differ in the proposed version; analogical GI error is not quantified. SEM not used as recipe interval.",
+      "kind": "HUMAN_GI_PREPARED_FOOD",
+      "evidenceIsExactTargetRecipe": false,
+      "analogyErrorQuantified": false
+    },
+    {
+      "id": "baozi-whole39",
+      "gi": 39,
+      "food": "Steamed stuffed bun with shallots and meat",
+      "foodClass": "STEAMED_WHEAT_MEAT_BUN",
+      "allowedUnitScopes": [
+        "PREPARED_RECIPE"
+      ],
+      "allowedRecipeIds": [
+        "baozi"
+      ],
+      "sourceUrl": "https://doi.org/10.3748/wjg.v12.i21.3430",
+      "locator": "Yang2006 Table2:39.1±13.0SD,n10; rounded39 in Atkinson2021 Table1/2048,p136",
+      "healthyN": 10,
+      "referenceCarbohydrateG": 50,
+      "testFoodMassG": null,
+      "reference": "GLUCOSE_100",
+      "sem": 4,
+      "sourcePreparation": "Chinese steamed meat/shallot stuffed bun; source reports usual traditional preparation, without exact recipe ratios.",
+      "limits": "Use standardized table value39. Original39.1SD13.0 is recorded, not a recipe confidence interval. Cabbage,seasoning ratios and fermentation losses are not characterized; input-derivedCHO is a nominal recipe model. This is not raw flour,pork,soy sauce or plain mantou GI.",
+      "kind": "HUMAN_GI_PREPARED_FOOD",
+      "evidenceIsExactTargetRecipe": false,
+      "analogyErrorQuantified": false
+    },
+    {
+      "id": "pizza-base52",
+      "gi": 52,
+      "food": "Boboli pizza base baked220C9min",
+      "foodClass": "BAKED_WHEAT_PIZZA_BASE",
+      "allowedUnitScopes": [
+        "PREPARED_COMPONENT"
+      ],
+      "allowedRecipeIds": [
+        "pizza-margherita"
+      ],
+      "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+      "locator": "Atkinson2021 Table1/68,p6;USA2015,UO5",
+      "healthyN": 10,
+      "referenceCarbohydrateG": 50,
+      "testFoodMassG": 104.2,
+      "reference": "GLUCOSE_100",
+      "sem": 4,
+      "sourcePreparation": "Named commercial pizza base baked220C9min; exact historical product formulation not supplied.",
+      "limits": "B analogue only for a baked wheat pizza-base component. Home dough hydration,fermentation,formulation and250C7–10min differ. Toppings have their own source assignments; no measured Margherita GI claim and no raw-flour GI52.",
+      "kind": "HUMAN_GI_PREPARED_FOOD",
+      "evidenceIsExactTargetRecipe": false,
+      "analogyErrorQuantified": false
+    },
+    {
+      "id": "roti-jala-component49",
+      "gi": 49,
+      "food": "Plain wheat lacy pancake",
+      "foodClass": "PAN_COOKED_WHEAT_LACY_PANCAKE",
+      "allowedUnitScopes": [
+        "PREPARED_COMPONENT"
+      ],
+      "allowedRecipeIds": [
+        "malesialainen-roti-jala-currykanalla"
+      ],
+      "sourceUrl": "https://doi.org/10.1159/000335224",
+      "locator": "RobertIsmail2012;Atkinson2021 Table2/3789,p119",
+      "healthyN": 0,
+      "type2N": 10,
+      "referenceCarbohydrateG": 25,
+      "testFoodMassG": 35,
+      "reference": "GLUCOSE_100",
+      "sem": 6,
+      "sourcePreparation": "Plain lacy wheat pancake, tested alone,3h glucose reference; exact batter ingredient quantities unavailable in accessed abstract/table.",
+      "limits": "Only the pancake component uses49. The same study reports81 for a meal with chicken/potato/coconut curry; never present49 as measured whole-plate GI. Proposed egg/coconut batter ratios and curry differ. Type2 cohort and3h protocol limit transfer; analogical error unquantified.",
+      "kind": "HUMAN_GI_PREPARED_FOOD",
+      "evidenceIsExactTargetRecipe": false,
+      "analogyErrorQuantified": false
+    },
+    {
+      "id": "upma-whole71",
+      "gi": 71,
+      "food": "Cooked semolina upma",
+      "foodClass": "COOKED_SEMOLINA_UPMA",
+      "allowedUnitScopes": [
+        "PREPARED_RECIPE"
+      ],
+      "allowedRecipeIds": [
+        "intialainen-mannasuurimoupma"
+      ],
+      "sourceUrl": "https://doi.org/10.1017/S0007114518000703",
+      "primaryPdfSha256": "c28757fa79b1371f69616bf00efc1fde1fc173f528aae1e8116a68df0b449764",
+      "locator": "2018 BJN breakfast study Table2/4;Atkinson2021 Table1/2091,p138",
+      "healthyN": 19,
+      "referenceCarbohydrateG": 50,
+      "testFoodMassG": 310,
+      "reference": "GLUCOSE_100",
+      "sem": 6,
+      "sourcePreparation": "75.2g commercial premix cooked in235g boiling water,stirred3min. Ingredients semolina,vegetable oil,salt,urad dal and green chilli.",
+      "limits": "Whole semolina-upma comparison, not semolina ingredient GI. Proposed peas/carrot/fresh curry leaves replace source dal/chilli profile and no oil is added. Grain/boiling form match; exact matrix differs materially. This named-reference point is not a validated estimate for every upma.",
+      "kind": "HUMAN_GI_PREPARED_FOOD",
+      "evidenceIsExactTargetRecipe": false,
+      "analogyErrorQuantified": false
+    },
+    {
+      "id": "semolina-steamed55",
+      "gi": 55,
+      "food": "Steamed gelatinized wheat semolina with groundnut oil",
+      "foodClass": "GELATINISED_WHEAT_SEMOLINA_WITH_OIL",
+      "allowedUnitScopes": [
+        "PREPARED_COMPONENT"
+      ],
+      "allowedRecipeIds": [
+        "pohjoisafrikkalainen-taatelipuuro-appelsiinilla"
+      ],
+      "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+      "locator": "Atkinson2021 Table2/3917,p127,India1991,ref277",
+      "healthyN": 0,
+      "type2N": 6,
+      "referenceCarbohydrateG": 50,
+      "testFoodMassG": 67,
+      "reference": "GLUCOSE_100",
+      "sem": 9,
+      "sourcePreparation": "Wheat semolina steamed/gelatinized with5g groundnut oil; source reference dose50gCHO. Source does not establish67g as a dry-flour yield conversion.",
+      "limits": "Older type2 n6,three sample times,reference not repeated. Proposed6.4g rapeseed oil per63.6g native componentCHO approximates reported5g fat/50g testCHO; fat type and preparation details differ. Source steaming versus proposed water-boiled porridge is an additional preparation difference. Oil addition is a new content decision. Not an oil-free porridge GI or raw flour GI.",
+      "kind": "HUMAN_GI_PREPARED_FOOD",
+      "evidenceIsExactTargetRecipe": false,
+      "analogyErrorQuantified": false
+    }
+  ],
+  "fruitSources": [
+    {
+      "id": "date-deglet42",
+      "gi": 42,
+      "compositionId": "F003496",
+      "food": "DegletNoor dates,Algeria",
+      "locator": "Atkinson2021 Table1/1101,p74,n10,glucose2h,SEM3",
+      "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+      "limitation": "Named cultivar reference. Australian dried-date composition is a proxy; test-stage moisture/cultivar differences unquantified."
+    },
+    {
+      "id": "orange-navel45",
+      "gi": 45,
+      "compositionId": "11045",
+      "food": "Raw navel orange",
+      "locator": "Atkinson2021 Table1/1150,p78,Australia2020,n10,glucose2h,SEM5",
+      "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+      "limitation": "Raw edible orange segments only; no automatic cooked citrus analogue."
+    }
+  ],
+  "background": {
+    "dodd2011": "https://pubmed.ncbi.nlm.nih.gov/21831990/",
+    "use": "Method motivation only. Never use its meal values or a global correction factor for unrelated recipes."
+  }
+}

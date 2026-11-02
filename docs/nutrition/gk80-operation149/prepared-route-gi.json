@@ -1,0 +1,128 @@
+{
+  "records": [
+    {
+      "id": "veg40",
+      "kind": "EXISTING_PUBLISHED_CODING",
+      "values": [
+        40
+      ],
+      "path": "docs/nutrition/glycemic-index-records.json",
+      "nativeId": "op142-vegetable-imputation40",
+      "nativeRowSha256": "529f04e0c0580f4492df49521fb05cede453c7424eb46bdd985457efea57d727",
+      "sourceUrl": "https://doi.org/10.2337/dc08-1239",
+      "locator": "Conclusions: assignment discussion",
+      "limitation": "Project published-imputation assignment, not measured ingredient or meal GI. Coding estimate only. Application to named fresh herbs, sprouts and alliums is an explicit project interpretation. It does not establish a physiological maximum or a one-unit uncertainty bound. Not a default for seed spices, flour, sauces or stock.",
+      "allowedCompositionIds": [
+        "303",
+        "324",
+        "33023",
+        "33456",
+        "335",
+        "352",
+        "386",
+        "387",
+        "389",
+        "393",
+        "F006250",
+        "F008806",
+        "372",
+        "11134",
+        "F002901",
+        "F003192",
+        "IFCT-G010",
+        "398"
+      ],
+      "bindingStatus": "PREPARED_ROUTE_PROPOSAL_NEW_BINDINGS_AWAITING_OWNER"
+    },
+    {
+      "id": "low50",
+      "kind": "EXISTING_PUBLISHED_CODING",
+      "values": [
+        50
+      ],
+      "path": "docs/nutrition/glycemic-index-records.json",
+      "nativeId": "op142-lowcho50-v2",
+      "nativeRowSha256": "2bdac980b38c841b2f0d0d5783b30b6fe581ef0ab3136aa65c312df3f8c0b460",
+      "sourceUrl": "https://doi.org/10.1016/j.jfca.2007.02.004",
+      "locator": "Author presentation slide 12",
+      "limitation": "Project published-imputation assignment, not measured ingredient or meal GI. Published low-carbohydrate default. The <=5 g/100 g operational cutoff and named bindings are explicit project interpretation, not a threshold validated by Schakel. Excludes ordinary fruit, flour, concentrated sauce and nuts above the cutoff.",
+      "allowedCompositionIds": [
+        "11557",
+        "11562",
+        "11565",
+        "30315",
+        "30792",
+        "345",
+        "34972",
+        "7600",
+        "8513",
+        "858",
+        "F003337",
+        "F008065",
+        "F009176",
+        "F008004",
+        "F008209",
+        "11045"
+      ],
+      "bindingStatus": "PREPARED_ROUTE_PROPOSAL_NEW_BINDINGS_AWAITING_OWNER"
+    },
+    {
+      "id": "trace50",
+      "kind": "PROPOSED_B_CODING",
+      "values": [
+        50
+      ],
+      "sourceUrl": "https://doi.org/10.1016/j.jfca.2007.02.004",
+      "path": "docs/nutrition/glycemic-index-records.json",
+      "nativeId": "op142-lowcho50-v2",
+      "nativeRowSha256": "2bdac980b38c841b2f0d0d5783b30b6fe581ef0ab3136aa65c312df3f8c0b460",
+      "locator": "Published low-carbohydrate default50; project application EXTENSION only. Named culinary trace spice/seed garnish <=0.5g CHO each and <=1g aggregate per serving",
+      "limitation": "New editorial coding reference, GI uncertainty not source-bounded. Requires explicit owner method approval. GI0–150 sensitivity is separate, not a source interval.",
+      "allowedCompositionIds": [
+        "11177",
+        "385",
+        "F006316",
+        "physical",
+        "F008214",
+        "F003327",
+        "20",
+        "F009350",
+        "F002987",
+        "F002963"
+      ],
+      "bindingStatus": "PREPARED_ROUTE_PROPOSAL_NEW_BINDINGS_AWAITING_OWNER"
+    },
+    {
+      "id": "date-deglet42",
+      "kind": "NAMED_HUMAN_GI",
+      "values": [
+        42
+      ],
+      "path": "docs/nutrition/gk80-operation149/prepared-route-observations.json",
+      "nativeId": "date-deglet42",
+      "nativeRowSha256": "9b7d7100d7afc8a68a493a202055f902b6a463b27707405477cc97d5ba8ebf60",
+      "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+      "locator": "Atkinson2021 Table1/1101,p74,n10,glucose2h,SEM3",
+      "limitation": "Named cultivar reference. Australian dried-date composition is a proxy; test-stage moisture/cultivar differences unquantified.",
+      "allowedCompositionIds": [
+        "F003496"
+      ]
+    },
+    {
+      "id": "orange-navel45",
+      "kind": "NAMED_HUMAN_GI",
+      "values": [
+        45
+      ],
+      "path": "docs/nutrition/gk80-operation149/prepared-route-observations.json",
+      "nativeId": "orange-navel45",
+      "nativeRowSha256": "a0b2f4acfdd738132a1dfe948b7865f635b1702f7c78ed40f5d4c004cb5d8ae5",
+      "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+      "locator": "Atkinson2021 Table1/1150,p78,Australia2020,n10,glucose2h,SEM5",
+      "limitation": "Raw edible orange segments only; no automatic cooked citrus analogue.",
+      "allowedCompositionIds": [
+        "11045"
+      ]
+    }
+  ]
+}
