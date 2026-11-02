@@ -1,5 +1,22 @@
 # GK80 · hyväksytyt syötteet ja ehdokkaat ilman päällekkäisyyksiä
 
+
+## Ajantasainen tilanne 3.11.2026
+
+Julkisesta listasta varmennettu **187/326**, mukana PR 192:n neljä B-versiota. Main on edelleen alla mainittu commit. Codex2:n haaran tilannekuva 07801a2 sisältää yhden uuden täsmähyväksynnän. Sitä seuraava bambulähteen täsmennys ei ole hyväksyntä.
+
+| Julkaisematon jono | Eri reseptit | Mahdollinen kertymä |
+| --- | ---: | ---: |
+| Hyväksytyt A-versiot: paella, kanatagine, hernekeitto, uunimakkara ja Panang | 5 | 192 |
+| Muut Codex1:n A-tutkimusversiot | 18 | 210 |
+| Codex1:n ehdolliset B-lähdeskenaariot | 10 | 220 |
+
+**33 mahdollista lisäystä.** Joukot on verrattu reseptitunnisteittain julkisiin riveihin. Paella ja uunimakkara kuuluvat vain hyväksyttyyn jonoon. Uudet B-skenaariot ovat [manakish](manakish-study.md) ja [moussaka](moussaka-study.md). Molemmat vaativat valmistus- tai sisältövastaavuuden päätöksen. Kaikkien 33:n eteneminen julkaisuun jättäisi vielä 41 arvoa tavoitteeseen 261. Julkaistusta tasosta puuttuu 74.
+
+Panangin hyväksytty syöte on `3439d3bb36c28dd06df3d8dbfc60a0a95f970d53011550c0a449743271954c03`. Laskettu GK-osuus **1,89**, poisjätöt **1,9328 g/annos**. Tarkistin kuittiin sidotut neljä tiedostohashia, kaikki täsmäsivät. Hyväksyntä koskee lähteitä ja reseptisisältöä sekä myöhempää integraatiota sen omistajalle. [Panangin hyväksyntäkuitti](https://github.com/ozirix-dev/Reseptit/blob/c3ec757/docs/research/afcd-polyol-03/panang-a-approval.json)
+
+## Aiempi tilannekuva
+
 Main `1276116d8bd4c84fc62ededebc8304a73c1cc9e1`. Codex2:n tutkimushaara tarkastettu commitissa `c4db68b4ca1433eb5cfc05459c04ac15bf252348`. Julkisella sivulla havaittiin 183 eri numeerista reseptiä. Neljä hyväksyttyä B-versiota on yhdistetty mainiin. Niiden julkaisuajo oli tarkistushetkellä käynnissä. [Julkinen kooste](https://ozirix-dev.github.io/Reseptit/glykeeminen-kuorma/) · [Julkaisuajo](https://github.com/ozirix-dev/Reseptit/actions/runs/41532475398)
 
 | Jono | Uusia tunnisteita havaittuun 183:een | Mahdollinen kertymä |
