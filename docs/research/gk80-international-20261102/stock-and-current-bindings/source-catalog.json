@@ -1,0 +1,788 @@
+{
+  "foods": {
+    "fineli-30792": {
+      "id": "fineli-30792",
+      "name": "BROILERI, KOIPI-REISI, NAHATON",
+      "state": "BROILERI, KOIPI-REISI, NAHATON",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/30792",
+      "basis": "per100g-as-sold",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Native Fineli field, including null. Direct CHOAVL; no fibre subtraction or inferred polyol zero.",
+      "per100g": {
+        "carbohydrate": 0.0,
+        "fibre": 0.0,
+        "polyols": 0.0,
+        "protein": 19.65,
+        "fat": 3.42
+      },
+      "nativeSourceRecord": {
+        "source_id": "30792",
+        "name": "BROILERI, KOIPI-REISI, NAHATON",
+        "food_type": "FOOD",
+        "process": "RAW",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "POULTRY",
+        "food_class": "POULTRY",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 0.0,
+          "fibre_g_per_100g": 0.0,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 19.65,
+          "fat_g_per_100g": 3.42
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "CG",
+            "method_indicator": "MIR002"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "IG",
+            "method_indicator": "MIR003"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "U",
+            "method_indicator": "MIR007"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "U",
+            "method_indicator": "MIR003"
+          }
+        },
+        "portion_mass_g": {}
+      }
+    },
+    "fineli-156": {
+      "id": "fineli-156",
+      "name": "RIISI PUUROUTUVA",
+      "state": "RIISI PUUROUTUVA",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/156",
+      "basis": "per100g-as-sold",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "polyolsSourceVerified": false,
+      "polyolsEvidence": "Native Fineli field, including null. Direct CHOAVL; no fibre subtraction or inferred polyol zero.",
+      "per100g": {
+        "carbohydrate": 75.6,
+        "fibre": 2.3,
+        "polyols": null,
+        "protein": 6.06,
+        "fat": 0.7
+      },
+      "nativeSourceRecord": {
+        "source_id": "156",
+        "name": "RIISI PUUROUTUVA",
+        "food_type": "FOOD",
+        "process": "RAW",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "RICE",
+        "food_class": "RICEADD",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 75.6,
+          "fibre_g_per_100g": 2.3,
+          "polyols_g_per_100g": null,
+          "protein_g_per_100g": 6.06,
+          "fat_g_per_100g": 0.7
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0181"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0123"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0172"
+          }
+        },
+        "portion_mass_g": {
+          "DL": 85.0,
+          "RKL": 12.5
+        }
+      }
+    },
+    "fineli-372": {
+      "id": "fineli-372",
+      "name": "PAPU, VIHREÄ TAITEPAPU, TUORE",
+      "state": "PAPU, VIHREÄ TAITEPAPU, TUORE",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/372",
+      "basis": "per100g-as-sold",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "polyolsSourceVerified": false,
+      "polyolsEvidence": "Native Fineli field, including null. Direct CHOAVL; no fibre subtraction or inferred polyol zero.",
+      "per100g": {
+        "carbohydrate": 4.754,
+        "fibre": 2.4,
+        "polyols": null,
+        "protein": 2.052,
+        "fat": 0.262
+      },
+      "nativeSourceRecord": {
+        "source_id": "372",
+        "name": "PAPU, VIHREÄ TAITEPAPU, TUORE",
+        "food_type": "FOOD",
+        "process": "RAW",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "PEABEAN",
+        "food_class": "LEGUMES",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 4.754,
+          "fibre_g_per_100g": 2.4,
+          "polyols_g_per_100g": null,
+          "protein_g_per_100g": 2.052,
+          "fat_g_per_100g": 0.262
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "D",
+            "method_type": "AG",
+            "method_indicator": "MI1302"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0181"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "D",
+            "method_type": "AG",
+            "method_indicator": "MI0123"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0172"
+          }
+        },
+        "portion_mass_g": {
+          "KPL_M": 15.0,
+          "DL": 55.0,
+          "RKL": 9.0
+        }
+      }
+    },
+    "fineli-398": {
+      "id": "fineli-398",
+      "name": "TOMAATTIMURSKA",
+      "state": "TOMAATTIMURSKA",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/398",
+      "basis": "per100g-as-sold",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Native Fineli field, including null. Direct CHOAVL; no fibre subtraction or inferred polyol zero.",
+      "per100g": {
+        "carbohydrate": 3.45,
+        "fibre": 0.4,
+        "polyols": 0.0,
+        "protein": 0.55,
+        "fat": 0.2
+      },
+      "nativeSourceRecord": {
+        "source_id": "398",
+        "name": "TOMAATTIMURSKA",
+        "food_type": "FOOD",
+        "process": "CANN",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "VEGCANN",
+        "food_class": "VEGCANN",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 3.45,
+          "fibre_g_per_100g": 0.4,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 0.55,
+          "fat_g_per_100g": 0.2
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "L",
+            "method_type": "P",
+            "method_indicator": "MIR003"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0181"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "T",
+            "method_indicator": "MI0123"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "IG",
+            "method_indicator": "MIR003"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0172"
+          }
+        },
+        "portion_mass_g": {
+          "DL": 100.0,
+          "RKL": 15.0
+        }
+      }
+    },
+    "fineli-536": {
+      "id": "fineli-536",
+      "name": "OLIIVIÖLJY",
+      "state": "OLIIVIÖLJY",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/536",
+      "basis": "per100g-as-sold",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Native Fineli field, including null. Direct CHOAVL; no fibre subtraction or inferred polyol zero.",
+      "per100g": {
+        "carbohydrate": 0.0,
+        "fibre": 0.0,
+        "polyols": 0.0,
+        "protein": 0.0,
+        "fat": 100.0
+      },
+      "nativeSourceRecord": {
+        "source_id": "536",
+        "name": "OLIIVIÖLJY",
+        "food_type": "FOOD",
+        "process": "IND",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "OIL",
+        "food_class": "OIL",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 0.0,
+          "fibre_g_per_100g": 0.0,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 0.0,
+          "fat_g_per_100g": 100.0
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "IG",
+            "method_indicator": "MIR003"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0123"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "U",
+            "method_indicator": "MIR007"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0172"
+          }
+        },
+        "portion_mass_g": {
+          "DL": 90.0,
+          "RKL": 13.5,
+          "TL": 4.5
+        }
+      }
+    },
+    "fineli-30": {
+      "id": "fineli-30",
+      "name": "RUOKASUOLA, JODIOITU",
+      "state": "RUOKASUOLA, JODIOITU",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/30",
+      "basis": "per100g-as-sold",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Native Fineli field, including null. Direct CHOAVL; no fibre subtraction or inferred polyol zero.",
+      "per100g": {
+        "carbohydrate": 0.0,
+        "fibre": 0.0,
+        "polyols": 0.0,
+        "protein": 0.63,
+        "fat": 0.0
+      },
+      "nativeSourceRecord": {
+        "source_id": "30",
+        "name": "RUOKASUOLA, JODIOITU",
+        "food_type": "FOOD",
+        "process": "IND",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "SALT",
+        "food_class": "SPICES",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 0.0,
+          "fibre_g_per_100g": 0.0,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 0.63,
+          "fat_g_per_100g": 0.0
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0181"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0123"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "U",
+            "method_indicator": "MIR003"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0172"
+          }
+        },
+        "portion_mass_g": {
+          "DL": 125.0,
+          "RKL": 20.0,
+          "TL": 6.5
+        }
+      }
+    },
+    "fineli-391": {
+      "id": "fineli-391",
+      "name": "SOIJAPAPU, KUIVATTU",
+      "state": "SOIJAPAPU, KUIVATTU",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/391",
+      "basis": "per100g-as-sold",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Native Fineli field, including null. Direct CHOAVL; no fibre subtraction or inferred polyol zero.",
+      "per100g": {
+        "carbohydrate": 10.3,
+        "fibre": 16.1,
+        "polyols": 0.0,
+        "protein": 35.88,
+        "fat": 17.7
+      },
+      "nativeSourceRecord": {
+        "source_id": "391",
+        "name": "SOIJAPAPU, KUIVATTU",
+        "food_type": "FOOD",
+        "process": "DRIE",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "PEABEAN",
+        "food_class": "LEGUMES",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 10.3,
+          "fibre_g_per_100g": 16.1,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 35.88,
+          "fat_g_per_100g": 17.7
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0181"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "T",
+            "method_indicator": "MI0123"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "U",
+            "method_indicator": "MIR007"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0172"
+          }
+        },
+        "portion_mass_g": {
+          "DL": 85.0
+        }
+      }
+    },
+    "fineli-11521": {
+      "id": "fineli-11521",
+      "name": "RIISI PITKÄJYVÄINEN, PUUROUTUMATON",
+      "state": "RIISI PITKÄJYVÄINEN, PUUROUTUMATON",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11521",
+      "basis": "per100g-as-sold",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Native Fineli field, including null. Direct CHOAVL; no fibre subtraction or inferred polyol zero.",
+      "per100g": {
+        "carbohydrate": 79.0,
+        "fibre": 1.0,
+        "polyols": 0.0,
+        "protein": 8.13,
+        "fat": 1.03
+      },
+      "nativeSourceRecord": {
+        "source_id": "11521",
+        "name": "RIISI PITKÄJYVÄINEN, PUUROUTUMATON",
+        "food_type": "FOOD",
+        "process": "RAW",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "RICE",
+        "food_class": "RICEADD",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 79.0,
+          "fibre_g_per_100g": 1.0,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 8.13,
+          "fat_g_per_100g": 1.03
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0123"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "U",
+            "method_indicator": "MIR007"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0172"
+          }
+        },
+        "portion_mass_g": {
+          "DL": 85.0,
+          "RKL": 12.0
+        }
+      }
+    },
+    "fineli-385": {
+      "id": "fineli-385",
+      "name": "SEESAMINSIEMEN, KUORINEEN",
+      "state": "SEESAMINSIEMEN, KUORINEEN",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/385",
+      "basis": "per100g-as-sold",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Native Fineli field, including null. Direct CHOAVL; no fibre subtraction or inferred polyol zero.",
+      "per100g": {
+        "carbohydrate": 0.9,
+        "fibre": 4.9,
+        "polyols": 0.0,
+        "protein": 23.5,
+        "fat": 54.8
+      },
+      "nativeSourceRecord": {
+        "source_id": "385",
+        "name": "SEESAMINSIEMEN, KUORINEEN",
+        "food_type": "FOOD",
+        "process": "DRIE",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "NUTSEED",
+        "food_class": "SNACKVEG",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 0.9,
+          "fibre_g_per_100g": 4.9,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 23.5,
+          "fat_g_per_100g": 54.8
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "D",
+            "method_type": "AG",
+            "method_indicator": "MI1302"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0181"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "D",
+            "method_type": "AG",
+            "method_indicator": "MI0123"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "U",
+            "method_indicator": "MIR003"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          }
+        },
+        "portion_mass_g": {
+          "DL": 60.0,
+          "RKL": 8.5,
+          "TL": 3.0
+        }
+      }
+    },
+    "fineli-922": {
+      "id": "fineli-922",
+      "name": "VESI, VESIJOHTOVESI",
+      "state": "VESI, VESIJOHTOVESI",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/922",
+      "basis": "per100g-as-sold",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Native Fineli field, including null. Direct CHOAVL; no fibre subtraction or inferred polyol zero.",
+      "per100g": {
+        "carbohydrate": 0.0,
+        "fibre": 0.0,
+        "polyols": 0.0,
+        "protein": 0.0,
+        "fat": 0.0
+      },
+      "nativeSourceRecord": {
+        "source_id": "922",
+        "name": "VESI, VESIJOHTOVESI",
+        "food_type": "FOOD",
+        "process": "X",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "WATER",
+        "food_class": "DRWATER",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 0.0,
+          "fibre_g_per_100g": 0.0,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 0.0,
+          "fat_g_per_100g": 0.0
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "IG",
+            "method_indicator": "MIR003"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "IG",
+            "method_indicator": "MIR003"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "IG",
+            "method_indicator": "MIR003"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "U",
+            "method_indicator": "MIR003"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0172"
+          }
+        },
+        "portion_mass_g": {
+          "DL": 100.0,
+          "RKL": 15.0,
+          "TL": 5.0
+        }
+      }
+    }
+  },
+  "existingGiCards": {
+    "legumes-category-mean-gi-34": {
+      "id": "legumes-category-mean-gi-34",
+      "gi": 34,
+      "foodKey": "legume",
+      "preparationKey": "legume-category",
+      "food": "Legumes, category mean",
+      "preparation": "Category mean of tested legume foods",
+      "qualityTier": "SUPPLEMENTARY",
+      "referenceScale": "GLUCOSE_100",
+      "matchKind": "CATEGORY_MEAN",
+      "confidence": "LOW",
+      "source": {
+        "title": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+        "url": "https://doi.org/10.1093/ajcn/nqab233",
+        "table": "Table 1 summary: legumes mean GI 34 ± 14 (n=32), values from Supplemental Table 1",
+        "year": 2021,
+        "published": true,
+        "iso26642Confirmed": false,
+        "referenceFood": "Glucose",
+        "qualityEvidence": "Published category mean calculated from the ISO-screened Supplemental Table 1 food measurements. It is not a kidney-bean-specific GI or a measurement of the recipe."
+      },
+      "note": "Broad category mean; substantial uncertainty when applied to a specific cooked bean."
+    },
+    "vegetables-category-mean-gi-66": {
+      "id": "vegetables-category-mean-gi-66",
+      "gi": 66,
+      "foodKey": "vegetable",
+      "preparationKey": "vegetable-category",
+      "food": "Vegetables other than potatoes, category mean",
+      "preparation": "Broad category mean; preparation and individual vegetables vary",
+      "qualityTier": "SUPPLEMENTARY",
+      "referenceScale": "GLUCOSE_100",
+      "matchKind": "CATEGORY_MEAN",
+      "confidence": "LOW",
+      "source": {
+        "title": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+        "url": "https://doi.org/10.1093/ajcn/nqab233",
+        "table": "Table 1 summary: vegetables other than potatoes mean GI 66 ± 19 (n=91), values from Supplemental Table 1",
+        "year": 2021,
+        "published": true,
+        "iso26642Confirmed": false,
+        "referenceFood": "Glucose",
+        "qualityEvidence": "Published broad category mean calculated from the ISO-screened Supplemental Table 1 food measurements. This category contains diverse vegetables and is not specific to cabbage, cauliflower, cucumber, zucchini, or eggplant."
+      },
+      "note": "Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence."
+    },
+    "rice-category-mean-gi-67": {
+      "id": "rice-category-mean-gi-67",
+      "gi": 67,
+      "foodKey": "rice-category-mean",
+      "preparationKey": "category-mean",
+      "food": "Rice category mean",
+      "preparation": "Category mean from Table 1; individual food and preparation were not tested as this item",
+      "qualityTier": "SUPPLEMENTARY",
+      "referenceScale": "GLUCOSE_100",
+      "source": {
+        "title": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+        "url": "https://doi.org/10.1093/ajcn/nqab233",
+        "table": "Table 1; mean of Supplemental Table 1 entries for Rice (n=128)",
+        "year": 2021,
+        "published": true,
+        "iso26642Confirmed": false,
+        "qualityEvidence": "Table 1 reports a category mean calculated from food-specific entries in Supplemental Table 1. The target ingredient was not individually tested; category matching is a broad proxy and is low confidence."
+      },
+      "note": "rice category mean; rice flour is a broad grain-form analogue",
+      "matchKind": "CATEGORY_MEAN",
+      "confidence": "LOW"
+    }
+  },
+  "stock": {
+    "sourceUrl": "https://www.unileverfoodsolutions.fi/tuotteet/knorr-kanaliemi-vaehaesuolainen-1-1-kg-34-FI-1249840.html",
+    "retrievedAtUtc": "2026-11-02T18:53:46.469419+00:00",
+    "documentSha256": "f9a013b33a5d1804bc729b2ac74e7d3843e4e9f13338ddcc58afa544b8650f78",
+    "product": "Knorr Professional reduced-salt chicken stock powder1.1kg",
+    "ufsProductCode": "F73781",
+    "consumerEan": "8721317737794",
+    "compositionBasis": "100g dry powder; generic page heading says100g/ml, interpreted for the gram-dosed powder, not ready liquid",
+    "euCarbohydrateIncludingPolyolsGPer100g": "41",
+    "individualPolyolsGPer100g": null,
+    "polyolsZeroClaimPermitted": false,
+    "powderGPerPreparedLitre": "8",
+    "manufacturerPreparedYieldL": "1",
+    "sourceModelAvailableChoUpperGPerPreparedLitre": "3.28",
+    "interpretation": "AvailableCHO cannot exceed declared EU carbohydrate under declared composition. No fibre/polyol subtraction, no universal liquid density, no GI assigned. Nominal label average is not a measured biological maximum; named application remains unapproved."
+  },
+  "quantities": {
+    "paprika": {
+      "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/ausnut/data-files",
+      "downloadSha256": "58bee1204610efb72bb831dc7fb65acc23db540b51d056f83c6ac0ce84590475",
+      "sheet": "AUSNUT 2023",
+      "measureId": 49463,
+      "row": {
+        "excelRow": 9718,
+        "cells": [
+          31302014,
+          "F006316",
+          "Paprika, dried, ground",
+          49463,
+          1,
+          "density",
+          null,
+          null,
+          null,
+          0.53,
+          1,
+          null
+        ]
+      },
+      "metricTeaspoonMl": "5",
+      "metricDefinitionSourceUrl": "https://www.martat.fi/ruoka/ruoanvalmistus/ruoka-aineiden-mitat-ja-painot/",
+      "densityGPerMl": ".53",
+      "derivedMassG": "2.65",
+      "scope": "Generic dry ground paprika household-density proxy used for the smoked dry-powder format. Not a measured recipe batch or maximum packing density. No AFCD nutrient composition transferred to smoked paprika.",
+      "physicalChoUpperAtThisMass": "All mass as carbohydrate is a conservative ceiling; no carbohydrate point or GI is inferred.",
+      "attribution": "Food Standards Australia New Zealand, AUSNUT2023 Food measures; selected source measure transcribed, values unchanged. FSANZ Data User Licence based on CC BY-SA3.0 Australia. Generic Australian density may differ from a Finnish product or spoon packing; application is a LOW proxy."
+    },
+    "saffron": {
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/170934/nutrients",
+      "documentSha256": "eac4babdb04b6f801ca85be2a1c48b090079e52eac0cbfbc52aca1b7c08badc2",
+      "fdcId": 170934,
+      "description": "Spices, saffron",
+      "foodPortion": {
+        "id": 87568,
+        "gramWeight": 0.7,
+        "sequenceNumber": 1,
+        "amount": 1.0,
+        "modifier": "tsp",
+        "measureUnit": {
+          "id": 9999,
+          "name": "undetermined",
+          "abbreviation": "undetermined"
+        }
+      },
+      "recipeTeaspoonFraction": ".25",
+      "derivedMassG": ".175",
+      "scope": "Ingredient-specific USDA household measure proxy, not measured batch; the source carbohydrate-by-difference value is NOT used. Entire consumed mass provides the CHO ceiling.",
+      "attribution": "US Department of Agriculture, FoodData Central, SR Legacy170934; selected household measure only."
+    }
+  },
+  "noNewHumanGiOrImputation": true,
+  "sourceAttribution": {
+    "name": "Fineli Food Composition Database, Release 20",
+    "publisher": "Finnish Institute for Health and Welfare (THL)",
+    "retrieved_from": "https://fineli.fi/fineli/fi/avoin-data",
+    "licence": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "Source: Finnish Institute for Health and Welfare (THL), Fineli Food Composition Database, Release 20. The source table was converted from semicolon-separated CSVs to JSON; fields were joined by food ID, names were localized to Finnish, and missing values remain null.",
+    "component_semantics": "Fineli nutrient component codes are retained in this importer: CHOAVL (available carbohydrate), FIBT (total dietary fibre), SUGOH (sugar alcohols), PROT (protein), FAT (fat).",
+    "missing_values": "Null means no source value was reported; it does not mean zero.",
+    "portion_mass_semantics": "Fineli foodaddunit MASS values are grams per the listed food-specific unit; no generic spoon, volume, or piece conversion is inferred.",
+    "use_limit": "Reference data only. Recipe matching, edible-portion state, cooking retention, and serving scope still require review."
+  }
+}

@@ -1,0 +1,392 @@
+{
+  "observedAtUtc": "2026-11-02T19:09:37.135270+00:00",
+  "currentMain": "92dc6dbe7b27e145d6938026c73b6823f2e2108f",
+  "previousCalculationBaseMain": "061f8170a7bc31244ce787c13e80d3d757f0c859",
+  "pr183": {
+    "headRefOid": "d98d77f56c244833320705b32e789ea72e30e58f",
+    "mergeCommit": {
+      "oid": "92dc6dbe7b27e145d6938026c73b6823f2e2108f"
+    },
+    "mergedAt": "2026-11-02T18:52:50Z",
+    "state": "MERGED",
+    "url": "https://github.com/ozirix-dev/Reseptit/pull/183"
+  },
+  "deployment": {
+    "runId": 41504708914,
+    "head": "92dc6dbe7b27e145d6938026c73b6823f2e2108f",
+    "conclusion": "success",
+    "url": "https://github.com/ozirix-dev/Reseptit/actions/runs/41504708914",
+    "jobs": [
+      {
+        "name": "build",
+        "conclusion": "success"
+      },
+      {
+        "name": "deploy",
+        "conclusion": "success"
+      }
+    ]
+  },
+  "productionPage": {
+    "url": "https://ozirix-dev.github.io/Reseptit/glykeeminen-kuorma/",
+    "rawHtmlSha256": "bcc687b4a4ceef5c90ed9f61a9606614c528972813fd65d8a24f9283d8dbb7b8",
+    "rawHtmlScratchPath": "D:\\Temp\\gk80-international-20261102\\broth\\published-main92.html",
+    "renderedRecipeListItems": 325,
+    "numericUniqueIds": 172,
+    "numericClassA": 166,
+    "numericClassB": 6,
+    "originalInstructionsNumeric": 156,
+    "denominatorFromPublishedRecipeSet": 326,
+    "missingGoalNumericAnyVersion": 154,
+    "gapTo261": 89,
+    "numericIds": [
+      "amritsari-kala",
+      "broileri-kukkakaaligratiini",
+      "butter-chicken",
+      "caponata",
+      "chili-con-carne-kukkakaaliriisi",
+      "congee-riisipuuro",
+      "doner-kebab",
+      "gai-yang-vhh",
+      "gazpacho",
+      "halloumimunakas",
+      "harira",
+      "hummus",
+      "indonesialainen-bubur-ayam-kanariisipuuro",
+      "indonesialainen-ketoprak-aamiaiskulho",
+      "indonesialainen-nasi-uduk-aamiaisella",
+      "intialainen-pesarattu-mungpavuista",
+      "italian-pata",
+      "janssoninkiusaus-juuriselleri",
+      "japanilainen-kabocha-puuro",
+      "japanilainen-onigiri-lohella",
+      "japanilainen-tamago-kake-gohan",
+      "jauheliha-kaalikeitto-vhh",
+      "jauheliha-makaronilaatikko",
+      "jauhelihakastike-kesakurpitsanuudeleilla",
+      "jauhelihapihvit-vhh-kermakastikkeella",
+      "kai-jiew-vhh",
+      "kana-enchilada-kukkakaalivuoka",
+      "kana-fajita-pelti",
+      "kana-parmesaanipannu-parsakaali",
+      "kana-yakitori-kaalilla",
+      "kanakeitto-pinaatti-sitruuna",
+      "kanakorma-kukkakaaliriisilla",
+      "kanapyorykat-tomaattikastike",
+      "kanasalaatti-pesto-mozzarella",
+      "kantonilainen-hoyrytetty-kala",
+      "karibia-callaloo-munakas",
+      "karibia-jamaikalainen-munakokkeli",
+      "karibia-kookosriisi-pavuilla",
+      "karibia-maissipuuro-kookoksella",
+      "karibia-mango-limejogurtti",
+      "karjalanpaisti-vhh",
+      "kermainen-kanasienipannu",
+      "kermainen-lohipata",
+      "kesakurpitsalasagne-vhh",
+      "keto-joulutortut",
+      "keto-mutakakku",
+      "keto-pannukakku",
+      "keto-pinaattiletut",
+      "keto-suklaakeksit",
+      "khao-kha-moo-vhh",
+      "khao-man-gai-vhh",
+      "kiinalainen-hirssipuuro-taateleilla",
+      "kiinalainen-musta-seesamipuuro",
+      "kiinalainen-riisipuuro-kananmunalla",
+      "kiinalainen-soijamaito-aamiaisella",
+      "kiinalainen-tomaattimunakas-riisilla",
+      "korealainen-gyeran-mari-kasviksilla",
+      "korealainen-gyeranbap-riisikulho",
+      "korealainen-jumeokbap-merilevalla",
+      "korealainen-yachaejuk-kasvisjuk",
+      "koshari",
+      "kreikkalainen-kanavuoka-oliiveilla",
+      "kukkakaaligratiini-pekonilla",
+      "kurkku-oliivi-aamiaiskulho",
+      "lahi-ita-fattet-hummus",
+      "lahi-ita-ful-medames",
+      "lahi-ita-kikherne-shakshuka",
+      "lahi-ita-kikhernejauho-yrttilettu",
+      "lahi-ita-menemen-sumakilla",
+      "lahi-ita-taatelipuuro-tahinilla",
+      "lahi-ita-zaatar-munat",
+      "lanttulaatikko-kermainen",
+      "larb-moo-vhh",
+      "liha-juureskeitto-perunaton",
+      "lihapullat-kermakastikkeessa-vhh",
+      "lohikeitto-kuohukermalla",
+      "malesialainen-congee-inkivaarilla",
+      "malesialainen-kaya-paahtoleipa",
+      "malesialainen-laksa-lemak-aamiaiseksi",
+      "malesialainen-mee-goreng-aamunuudeleilla",
+      "malesialainen-nasi-lemak-aamiaisella",
+      "marjakiisseli-vaniljakastikkeella",
+      "marokkolainen-couscous",
+      "medu-vada",
+      "meksikolainen-aamiais-tacot-mustapavuilla",
+      "meksikolainen-atole-maissipuuro",
+      "meksikolainen-huevos-a-la-mexicana",
+      "meksikolainen-kurpitsapuuro-piloncillolla",
+      "meksikolainen-molletes-pico-de-gallolla",
+      "meksikolainen-munakokkeli-pico-de-gallolla",
+      "meksikolainen-quesadilla-sienilla",
+      "menemen",
+      "moo-ping-vhh",
+      "munakasmuffinit",
+      "munakasrulla-pinaatti-tuorejuustolla",
+      "munakoiso-jauhelihavuoka-vhh",
+      "munakokkeli",
+      "munatacot-huevos-rancheros",
+      "nakkikastike-kukkakaalimuusi",
+      "nakkikeitto-kukkakaalilla",
+      "paahdettu-aamiaismunakoiso",
+      "pad-kra-pao-vhh",
+      "palak-paneer",
+      "paneer-tikka",
+      "pannacotta-marjakastikkeella",
+      "paprikainen-vhh-gulassi",
+      "paprikauunimunakkaat",
+      "parsakaali-sinihomejuustofrittata",
+      "pasta-alla-norma",
+      "pohjoisafrikkalainen-harissa-shakshuka",
+      "pohjoisafrikkalainen-kuskus-aamiaiskulho",
+      "pohjoisafrikkalainen-lablabi",
+      "pohjoisafrikkalainen-maakouda",
+      "pohjoisafrikkalainen-minttutee-kaurapuuro",
+      "poronkaristys-kukkakaalimuusilla",
+      "raejuusto-pesto-kasviskulho",
+      "raejuusto-uunimunakas",
+      "ratatouille",
+      "rogan-josh",
+      "ropa-vieja",
+      "savulohi-avokadokulho",
+      "shakshuka",
+      "shoyu-kanakeitto-konjac",
+      "siskonmakkarakeitto-juurekset",
+      "sitruuna-yrttikana-parsa",
+      "som-tam-vhh-kurkkuna",
+      "souvlaki",
+      "tabbouleh",
+      "tacokulho-nauta-avokado",
+      "tandoorikana",
+      "taytetyt-paprikat-vhh",
+      "thai-jok-kanalla",
+      "thai-kai-jiao-yrteilla",
+      "thai-khao-tom-katkaravuilla",
+      "thai-kookosriisi-mangolla",
+      "thai-papaijajogurtti",
+      "thai-porsasjok",
+      "thai-riisinuudelikeitto-aamuksi",
+      "tomaatti-kananmuna-wokki",
+      "tonnikalamunakkaat-uunissa",
+      "tortilla-de-patatas",
+      "uunikanapasta-kesakurpitsa",
+      "uunilohi-smetanakuorrutteella",
+      "uunimuna-avokadot",
+      "uunimunat-pinaatilla",
+      "uuniporsas-kermakastikkeessa-vhh",
+      "valimerellinen-halloumi-tomaattileipa",
+      "valimerellinen-jogurttikulho-hunajalla",
+      "valimerellinen-kikherne-yrttiaamiainen",
+      "valimerellinen-menemen-fetalla",
+      "valimerellinen-pinaatti-fetashakshuka",
+      "valimerellinen-ricotta-persikkakulho",
+      "valimerellinen-tahinipuuro",
+      "valimerellinen-tortilla-espanola-aamupalaksi",
+      "vhh-brita-kakku",
+      "vhh-juustokakku",
+      "vhh-kaalikaarryleet",
+      "vhh-kaalilaatikko",
+      "vhh-korvapuustit",
+      "vhh-letut",
+      "vhh-lihamureke",
+      "vhh-lohikeitto-kukkakaalilla",
+      "vhh-mansikkakakku",
+      "vhh-mokkapalat",
+      "vhh-pyttipannu",
+      "vietnamilainen-banh-mi-munalla",
+      "vietnamilainen-chao-ga-kanapuuro",
+      "vietnamilainen-hu-tieu-aamiaiskeitto",
+      "vietnamilainen-pho-ga-aamuksi",
+      "yangzhou-paistettu-riisi",
+      "yrttituorejuusto-kinkkurullat",
+      "yum-woon-sen-vhh"
+    ],
+    "newPublishedVariantIds": {
+      "jauheliha-makaronilaatikko": {
+        "level": "B",
+        "version": "gk149-187c6663c8f1"
+      },
+      "congee-riisipuuro": {
+        "level": "B",
+        "version": "gk149-319b5cf68d56"
+      },
+      "vhh-mansikkakakku": {
+        "level": "A",
+        "version": "gk149-ad411c771039"
+      },
+      "kermainen-kanasienipannu": {
+        "level": "A",
+        "version": "gk149-ec40897d09ff"
+      },
+      "kana-parmesaanipannu-parsakaali": {
+        "level": "A",
+        "version": "gk149-2c84c860a6fc"
+      },
+      "vhh-juustokakku": {
+        "level": "A",
+        "version": "gk149-5b64980bf1d2"
+      },
+      "keto-mutakakku": {
+        "level": "A",
+        "version": "gk149-b373e5621c6c"
+      },
+      "keto-suklaakeksit": {
+        "level": "A",
+        "version": "gk149-0770b52ebf84"
+      },
+      "valimerellinen-halloumi-tomaattileipa": {
+        "level": "B",
+        "version": "gk149-4beb505ecb97"
+      },
+      "japanilainen-kabocha-puuro": {
+        "level": "B",
+        "version": "gk149-21d63fbd8ffc"
+      },
+      "malesialainen-kaya-paahtoleipa": {
+        "level": "B",
+        "version": "gk149-7bd9afa3bc3b"
+      },
+      "malesialainen-laksa-lemak-aamiaiseksi": {
+        "level": "B",
+        "version": "gk149-0670b3b3f5b4"
+      },
+      "vietnamilainen-pho-ga-aamuksi": {
+        "level": "A",
+        "version": "gk149-d86363469e31"
+      },
+      "paneer-tikka": {
+        "level": "A",
+        "version": "gk149-dea9ab0c8628"
+      },
+      "palak-paneer": {
+        "level": "A",
+        "version": "gk149-550b84318812"
+      },
+      "vhh-pyttipannu": {
+        "level": "A",
+        "version": "gk149-8faf4e3e441d"
+      }
+    },
+    "pageDetailAnomaly": {
+      "missingListedRecipeIds": [
+        "maksalaatikko-kukkakaalilla"
+      ],
+      "missingRecipeBaselineStatus": "INSUFFICIENT SOURCE DATA",
+      "effectOnNumeric172Count": 0,
+      "notFixedInResearchScope": true
+    }
+  },
+  "sourceEquivalenceByExactGitBlob": {
+    "AGENTS.md": {
+      "oldGitBlobSha256": "261d66b1685f09d392e76951f8414c834c37d9c4374c80810ac624d27ec20ff3",
+      "newGitBlobSha256": "261d66b1685f09d392e76951f8414c834c37d9c4374c80810ac624d27ec20ff3",
+      "identicalGitBlobs": true,
+      "localLfMatchesNewGitBlob": true
+    },
+    "docs/rinnakkaiset-codex-ajot.md": {
+      "oldGitBlobSha256": "e92de8f1bd47d7aeb413e47cb475e7028bf7ad6c80d8949aa1f821e014fa2075",
+      "newGitBlobSha256": "e92de8f1bd47d7aeb413e47cb475e7028bf7ad6c80d8949aa1f821e014fa2075",
+      "identicalGitBlobs": true,
+      "localLfMatchesNewGitBlob": true
+    },
+    "docs/nutrition/glycemic-index-records.json": {
+      "oldGitBlobSha256": "fb465ac8f68ffc85e29eb9900f17df00b081fa0ddc3e25d253140aecb248acda",
+      "newGitBlobSha256": "fb465ac8f68ffc85e29eb9900f17df00b081fa0ddc3e25d253140aecb248acda",
+      "identicalGitBlobs": true,
+      "localLfMatchesNewGitBlob": true
+    },
+    "docs/nutrition/food-records.json": {
+      "oldGitBlobSha256": "2f8ff76b97848294c28195bb92c6d202e9754168ddb169d30ee5e8610d2c2b9b",
+      "newGitBlobSha256": "2f8ff76b97848294c28195bb92c6d202e9754168ddb169d30ee5e8610d2c2b9b",
+      "identicalGitBlobs": true,
+      "localLfMatchesNewGitBlob": true
+    },
+    "docs/nutrition/glycemic-load-pilot-input.json": {
+      "oldGitBlobSha256": "fd6f066050ac8b11ef651bacc8af86ba395116586c354f436846b5372dde152b",
+      "newGitBlobSha256": "fd6f066050ac8b11ef651bacc8af86ba395116586c354f436846b5372dde152b",
+      "identicalGitBlobs": true,
+      "localLfMatchesNewGitBlob": true
+    },
+    "docs/nutrition/glycemic-load-recipe-bindings.json": {
+      "oldGitBlobSha256": "01607e2850025bf97ab241bfe20f679a33fd1f4a836eb60952eeb2f60098239c",
+      "newGitBlobSha256": "01607e2850025bf97ab241bfe20f679a33fd1f4a836eb60952eeb2f60098239c",
+      "identicalGitBlobs": true,
+      "localLfMatchesNewGitBlob": true
+    },
+    "docs/nutrition/glycemic-coverage-run-0-inventory.json": {
+      "oldGitBlobSha256": "145b9d80c86e6f9c162a43003ae298a26f47a3255a95a9f0414eee7ed2d07f3f",
+      "newGitBlobSha256": "145b9d80c86e6f9c162a43003ae298a26f47a3255a95a9f0414eee7ed2d07f3f",
+      "identicalGitBlobs": true,
+      "localLfMatchesNewGitBlob": true
+    },
+    "site/scripts/glycemic-load-model.ts": {
+      "oldGitBlobSha256": "10ce09e465886e4538fc0b2ad2a54ca0b050a9e3729b7417eb0a91f2b946b48c",
+      "newGitBlobSha256": "10ce09e465886e4538fc0b2ad2a54ca0b050a9e3729b7417eb0a91f2b946b48c",
+      "identicalGitBlobs": true,
+      "localLfMatchesNewGitBlob": true
+    },
+    "site/scripts/gk80-candidate-model.ts": {
+      "oldGitBlobSha256": "848374babaf6baced483f07d114ef1ea6d2ce4bf70d6b932476723905252a0e1",
+      "newGitBlobSha256": "848374babaf6baced483f07d114ef1ea6d2ce4bf70d6b932476723905252a0e1",
+      "identicalGitBlobs": true,
+      "localLfMatchesNewGitBlob": true
+    },
+    "site/scripts/gk80-food-safety.ts": {
+      "oldGitBlobSha256": "2cc540bdf22d80072495ad2a45a43d6820336540387b54c6f5733297f95bf6a8",
+      "newGitBlobSha256": "2cc540bdf22d80072495ad2a45a43d6820336540387b54c6f5733297f95bf6a8",
+      "identicalGitBlobs": true,
+      "localLfMatchesNewGitBlob": true
+    },
+    "site/scripts/gk80-food-catalog.json": {
+      "oldGitBlobSha256": "d691094bf0466b9b4af78f469849490dc968f4dc5738c9862ee58b23c2e7d750",
+      "newGitBlobSha256": "d691094bf0466b9b4af78f469849490dc968f4dc5738c9862ee58b23c2e7d750",
+      "identicalGitBlobs": true,
+      "localLfMatchesNewGitBlob": true
+    },
+    "docs/nutrition/fineli-release-20-reference.json": {
+      "oldGitBlobSha256": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76",
+      "newGitBlobSha256": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76",
+      "identicalGitBlobs": true,
+      "localLfMatchesNewGitBlob": true
+    },
+    "docs/nutrition/afcd-release-3-reference.json": {
+      "oldGitBlobSha256": "02edf1cc95191c05edf791656a5109c41bcf4d4a3e707be69ef5009bc640022e",
+      "newGitBlobSha256": "02edf1cc95191c05edf791656a5109c41bcf4d4a3e707be69ef5009bc640022e",
+      "identicalGitBlobs": true,
+      "localLfMatchesNewGitBlob": true
+    },
+    "site/scripts/nutrition-model.ts": {
+      "oldGitBlobSha256": "6667190a6604523fe083d6d766cfbbdb7c2ce75366194f3036ce711a8218a7ce",
+      "newGitBlobSha256": "6667190a6604523fe083d6d766cfbbdb7c2ce75366194f3036ce711a8218a7ce",
+      "identicalGitBlobs": true,
+      "localLfMatchesNewGitBlob": true
+    },
+    "reseptit/aamupalat/korealainen-kongjuk-soijapapu-riisipuuro.md": {
+      "oldGitBlobSha256": "6aca70cdb27f83a51c2d759e58bdcd446e6a1f9f5c414a71494fb44ec9454f31",
+      "newGitBlobSha256": "6aca70cdb27f83a51c2d759e58bdcd446e6a1f9f5c414a71494fb44ec9454f31",
+      "identicalGitBlobs": true,
+      "localLfMatchesNewGitBlob": true
+    },
+    "reseptit/paaruoat/paella-valenciana.md": {
+      "oldGitBlobSha256": "49089d94833037456fa7f21b7e9b258a531c731db6f0344b2a789add6b96b3dd",
+      "newGitBlobSha256": "49089d94833037456fa7f21b7e9b258a531c731db6f0344b2a789add6b96b3dd",
+      "identicalGitBlobs": true,
+      "localLfMatchesNewGitBlob": true
+    }
+  },
+  "allOriginalRecipeMarkdownUnchangedBetweenMains": true,
+  "noAdditionalBuildRequired": "Exact core model, source data and recipe Git blobs unchanged. Existing read-only model calculations remain applicable; new production counts verified independently from raw deployed HTML and workflow head.",
+  "releasedByThisResearchRun": 0
+}

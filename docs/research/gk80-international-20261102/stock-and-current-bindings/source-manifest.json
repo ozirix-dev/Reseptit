@@ -1,0 +1,64 @@
+{
+  "repository": "ozirix-dev/Reseptit",
+  "role": "Codex1 international source research / stock and stale recipe bindings",
+  "ownedBranch": "codex/gk80-international-sources-20261102",
+  "ownedWriteScope": "docs/research/gk80-international-20261102 only",
+  "baselineMain": "92dc6dbe7b27e145d6938026c73b6823f2e2108f",
+  "baselineCoverage": {
+    "numericAnyVersion": 172,
+    "numericClassA": 166,
+    "numericClassB": 6,
+    "originalInstructionsNumeric": 156,
+    "recipes": 326,
+    "target": 261,
+    "gap": 89
+  },
+  "overlapHashes": {
+    "priority77.csv": "8bc3a5c9465b3c89aa57464998b4d2530bd9335dc34febc0caad56e3bf1598a9",
+    "joint-proposal-index.csv": "344abad19adce21def93830d72e1c6a17132913727ca66755c74c94cea4ff2da"
+  },
+  "ownNewNamedIds": [
+    "korealainen-kongjuk-soijapapu-riisipuuro",
+    "paella-valenciana"
+  ],
+  "ownIdsInCodex2Queues": [],
+  "historicFamilyUniqueIds": 24,
+  "stockPortionPassingIds": [
+    "kimchi-jjigae",
+    "paella-valenciana",
+    "sichuan-hot-pot"
+  ],
+  "allPortionPassingIdsAreNotWholeRecipeUnlocks": true,
+  "newPublishedNumeric": 0,
+  "newApprovedNumeric": 0,
+  "newDirectHumanGiFound": 0,
+  "newRuleApplied": false,
+  "existingOmissionCeilings": {
+    "eachStrictlyBelowG": 1,
+    "cumulativeStrictlyBelowG": 2
+  },
+  "modelPreflight": {
+    "configuredModel": "gpt-6.1-sol",
+    "configuredReasoning": "high",
+    "activeSelectionIndependentlyExposed": false,
+    "modelSwitched": false
+  },
+  "calculationBaseMain": "061f8170a7bc31244ce787c13e80d3d757f0c859",
+  "sourceHashesRawResearchWorktree": {
+    "AGENTS.md": "c0939f7e34d5755f24371a2114cf6939d48a026c8caaf34fcb82b687724972c4",
+    "docs/rinnakkaiset-codex-ajot.md": "b5336920c641f59acdb6f45a783c2c3b838ef7559711f5002098e4255edc3705",
+    "docs/nutrition/glycemic-index-records.json": "a5ffa3a6e4b4d48a20fee2f31fa50c3aa0ff6355f63dc58bf7b699ade4205c87",
+    "docs/nutrition/fineli-release-20-reference.json": "1205ae1fc65cbc3f56d48823ed4fcd838eb7f64b77467da100fe789dab460bc1",
+    "docs/nutrition/glycemic-load-pilot-input.json": "3745f1a1b806b6153151116518a27d9143fadb6f23c6243d24d70f21d98f6a37",
+    "site/scripts/glycemic-load-model.ts": "4398915a27a853ddb2f1cdf802a7b63fb3060a09474684b09ed900c599b3f74f"
+  },
+  "sourceLfSha256": {
+    "AGENTS.md": "261d66b1685f09d392e76951f8414c834c37d9c4374c80810ac624d27ec20ff3",
+    "docs/rinnakkaiset-codex-ajot.md": "e92de8f1bd47d7aeb413e47cb475e7028bf7ad6c80d8949aa1f821e014fa2075",
+    "docs/nutrition/glycemic-index-records.json": "fb465ac8f68ffc85e29eb9900f17df00b081fa0ddc3e25d253140aecb248acda",
+    "docs/nutrition/fineli-release-20-reference.json": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76",
+    "docs/nutrition/glycemic-load-pilot-input.json": "fd6f066050ac8b11ef651bacc8af86ba395116586c354f436846b5372dde152b",
+    "site/scripts/glycemic-load-model.ts": "10ce09e465886e4538fc0b2ad2a54ca0b050a9e3729b7417eb0a91f2b946b48c"
+  },
+  "currentMainRevalidation": "production-revalidation.json: identical original recipe, source and core model Git blobs; 172 public numeric IDs verified; no rebase or publication by this research run."
+}
