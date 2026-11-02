@@ -1,0 +1,312 @@
+{
+  "repository": "ozirix-dev/Reseptit",
+  "ownedBranch": "codex/gk80-international-sources-20261102",
+  "writeScope": "docs/research/gk80-international-20261102/",
+  "mainObserved": "554f8a414782497da89640c8e45be1ccf1580a95",
+  "calculationReferenceMain": "96a25d8c9db6fb0a505a70a37a5b357b6a83593a",
+  "main186ChangesOnlyScenarioPilotFiles": true,
+  "sourceLfSha256": {
+    "reseptit/paaruoat/uunimakkara-sipulipedilla.md": "4bc6f751fc46af1fcb7b72419438cc55fd8132b6893d74ddb65a9b732089b092",
+    "docs/nutrition/fineli-release-20-reference.json": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76",
+    "docs/nutrition/afcd-release-3-reference.json": "02edf1cc95191c05edf791656a5109c41bcf4d4a3e707be69ef5009bc640022e",
+    "docs/nutrition/glycemic-index-records.json": "fb465ac8f68ffc85e29eb9900f17df00b081fa0ddc3e25d253140aecb248acda",
+    "site/scripts/glycemic-load-model.ts": "10ce09e465886e4538fc0b2ad2a54ca0b050a9e3729b7417eb0a91f2b946b48c",
+    "docs/research/gk80-international-20261102/poha-and-main179/production-revalidation.json": "2e68751e240890c0e993e905a0e49d6f8431e91ad63f1604c84b0fd857c36d12",
+    "docs/research/gk80-international-20261102/pancake-source-and-fixed-input/source-catalog.json": "f0cd63f2e6f2f48ee6b5940d90b36db6fef3315734d18ed403c400362bf5ae55"
+  },
+  "modelConfigured": "gpt-6.1-sol",
+  "reasoningConfigured": "high",
+  "activeModelIndependentlyExposed": false,
+  "modelSwitched": false,
+  "productionPageRawSha256": "a7407a16e2c12c5674c1164e6e5aca3e2a2dd1d5fc13c6905fe579b4f90b9f40",
+  "sourcePages": {
+    "tammela": {
+      "url": "https://makutila.fi/tuote/tammelan-lenkki-2/",
+      "retrievedAtUtc": "2026-11-02T21:05:23.996516+00:00",
+      "rawHtmlSha256": "e9dd29adfc02e57ce2930d86f52dcc94a75911b55d8ec039cd550cc2c0de6d4b"
+    },
+    "range": {
+      "url": "https://makutila.fi/tuotevalikoima/makkarat/",
+      "retrievedAtUtc": "2026-11-02T21:05:25.203010+00:00",
+      "rawHtmlSha256": "8e7cb80c649076f693a500b715be2d1f064df2dae4ab6d90660915df82e1863b"
+    }
+  },
+  "copyright": "Only source facts, metadata and paraphrased limitations retained in repository; full source HTML stays disposable scratch.",
+  "mainChangeFiles": [
+    "docs/nutrition/gk-scenarios-01/README.md",
+    "docs/nutrition/gk-scenarios-01/dependencies.json",
+    "docs/nutrition/gk-scenarios-01/pilot.json",
+    "docs/nutrition/gk-scenarios-01/verification.json",
+    "site/previews/gk-scenarios.browser-check.cjs",
+    "site/previews/gk-scenarios.html",
+    "site/scripts/gk-scenario-decimal.py",
+    "site/scripts/gk-scenario-dependencies.ts",
+    "site/scripts/gk-scenario-model.ts",
+    "site/scripts/gk-scenario-pilot.ts",
+    "site/src/features/recipes/gk-scenario-types.ts",
+    "site/tests/gk-scenarios.test.ts",
+    "site/tsconfig.gk-scenarios.json"
+  ],
+  "openPullRequests": [
+    {
+      "headRefName": "codex/gk80-approval-gate-20261102",
+      "isDraft": true,
+      "number": 187,
+      "title": "GK80 APPROVAL GATE: hyväksymättömien ehdokkaiden lähde- ja sisältökatselmointi"
+    },
+    {
+      "headRefName": "codex/afcd-polyol-02-field-bindings",
+      "isDraft": true,
+      "number": 182,
+      "title": "AFCD-POLYOL-02: korjaa kolme hiilihydraattikenttäsidosta"
+    },
+    {
+      "headRefName": "codex/afcd-polyol-01-current",
+      "isDraft": true,
+      "number": 181,
+      "title": "AFCD-POLYOL-01: yhteinen lähdetulkinta ja reseptiriippuvuuksien auditointi"
+    },
+    {
+      "headRefName": "codex/operation147-method-audit",
+      "isDraft": true,
+      "number": 180,
+      "title": "Operaatio 147: ravintoarvo- ja GK-menetelmän järkeistämisauditointi"
+    },
+    {
+      "headRefName": "codex/recipavo-product-strategy-new-pr-20261102",
+      "isDraft": true,
+      "number": 178,
+      "title": "Recipavo: tuote- ja liiketoimintasuunnitelma – uusi Draft-PR"
+    },
+    {
+      "headRefName": "codex/nutrition-core-vision-20261102",
+      "isDraft": true,
+      "number": 176,
+      "title": "Nutrition Core: yhteinen ravintoainetietovaranto ja vaiheistettu arkkitehtuuri"
+    },
+    {
+      "headRefName": "codex/source-01-report-20261102",
+      "isDraft": true,
+      "number": 174,
+      "title": "SOURCE-01: loppuraportti ja SQLite/D1-kenttäkartoitus vaiheen 1 hyväksyntään"
+    },
+    {
+      "headRefName": "codex/cloudflare-images-plan-20261102",
+      "isDraft": true,
+      "number": 172,
+      "title": "Cloudflare-siirtosuunnitelma: recipavo.com, D1, kuvat ja varmuuskopiot"
+    },
+    {
+      "headRefName": "codex/gk80-operation141",
+      "isDraft": true,
+      "number": 170,
+      "title": "docs(gk80): Operation 141 — 15 numerical proposals, 30 whole-recipe reviews"
+    },
+    {
+      "headRefName": "codex/gi-source-integrity-01",
+      "isDraft": true,
+      "number": 169,
+      "title": "docs(nutrition): coconut GI source integrity and P1 binding decision"
+    },
+    {
+      "headRefName": "codex/gk80-night2-operation140",
+      "isDraft": true,
+      "number": 168,
+      "title": "fix(nutrition): US-total normalization and Operation 140 findings"
+    },
+    {
+      "headRefName": "codex/gk80-main131-night",
+      "isDraft": true,
+      "number": 166,
+      "title": "GK80 MAIN131: published-version regression guard and integration decision report"
+    },
+    {
+      "headRefName": "codex/gk80-afcd-recovery-02",
+      "isDraft": true,
+      "number": 164,
+      "title": "GK80 AFCD-RECOVERY-02: pois kytketty uunikanapastaprototyyppi, tarkkuus-HOLD"
+    },
+    {
+      "headRefName": "codex/gk80-afcd-recovery-01",
+      "isDraft": true,
+      "number": 163,
+      "title": "GK80 AFCD-RECOVERY-01: yksi ehdollinen uunikanapastapilotti"
+    },
+    {
+      "headRefName": "codex/afcd-polyol-impact-01",
+      "isDraft": true,
+      "number": 161,
+      "title": "AFCD-POLYOL-IMPACT-01: lähdekattavuuden auditointi ja rajattu korjausehdotus"
+    },
+    {
+      "headRefName": "codex/gk80-run13-review",
+      "isDraft": true,
+      "number": 160,
+      "title": "GK-80 AJO 13: 22-recipe source review (Draft, below target)"
+    },
+    {
+      "headRefName": "codex/gk80-run12-review",
+      "isDraft": true,
+      "number": 159,
+      "title": "GK-80 AJO 12: 22-recipe source review (Draft, below target)"
+    },
+    {
+      "headRefName": "codex/gk80-run11-review",
+      "isDraft": true,
+      "number": 158,
+      "title": "GK-80 AJO 11: 22-recipe source review (Draft, below target)"
+    },
+    {
+      "headRefName": "codex/gk80-run10-review",
+      "isDraft": true,
+      "number": 157,
+      "title": "GK-80 AJO 10: 22-recipe source review (Draft, below target)"
+    },
+    {
+      "headRefName": "codex/gk80-polyol-scoped-c-method",
+      "isDraft": true,
+      "number": 156,
+      "title": "POLYOLI-03: kaksi rajattua GK-integraatiota (130→132), kolme HOLD"
+    },
+    {
+      "headRefName": "codex/gk80-polyol-source-followup",
+      "isDraft": true,
+      "number": 155,
+      "title": "POLYOLI-02: maustereseptien lähdesidokset ja nakkikeiton katalogiehdotus"
+    },
+    {
+      "headRefName": "codex/gk80-polyol-policy-research",
+      "isDraft": true,
+      "number": 154,
+      "title": "POLYOLI-01: polyoli-HOLDien lähdeauditointi ja eristetty vaikutuspilotti"
+    },
+    {
+      "headRefName": "codex/gk80-run9-release",
+      "isDraft": false,
+      "number": 153,
+      "title": "GK-80 AJO9: 20 uutta arviota 22 reseptin erästä (Draft)"
+    },
+    {
+      "headRefName": "codex/gk80-run-6",
+      "isDraft": true,
+      "number": 148,
+      "title": "GK80 AJO6: 20 tutkittua, 7 uutta arviota ja 8 hyväksyntäaineistoa"
+    },
+    {
+      "headRefName": "codex/gk80-q09-quality",
+      "isDraft": true,
+      "number": 147,
+      "title": "GK-80 Q09:8 positiivista korjausta ja yhden virheellisen nollan poisto"
+    },
+    {
+      "headRefName": "codex/gk80-integration-24",
+      "isDraft": true,
+      "number": 146,
+      "title": "GK-80 AJO6:24 reseptin yhteinen julkaisuintegraatio"
+    },
+    {
+      "headRefName": "codex/gk80-release-candidate-3",
+      "isDraft": true,
+      "number": 145,
+      "title": "GK-80:12 muuta reseptiä kolmannen julkaisupaketin katselmointiin"
+    },
+    {
+      "headRefName": "codex/gk80-run-5",
+      "isDraft": true,
+      "number": 144,
+      "title": "GK-80 AJO5:26 uutta ehdotusta,48 aiemman auditointi ja261-polku"
+    },
+    {
+      "headRefName": "codex/gk80-integration-12",
+      "isDraft": true,
+      "number": 143,
+      "title": "GK-80 AJO 5: integroitu 12 reseptin julkaisuehdokas"
+    },
+    {
+      "headRefName": "codex/gk80-release-candidate-2",
+      "isDraft": true,
+      "number": 142,
+      "title": "GK80 release candidate 2: eight complete modeled recipe versions"
+    },
+    {
+      "headRefName": "codex/gk80-run-4",
+      "isDraft": true,
+      "number": 141,
+      "title": "GK80 AJO 4: 26 new numerical proposals from 50 recipes"
+    },
+    {
+      "headRefName": "codex/gk80-release-candidate-1",
+      "isDraft": true,
+      "number": 140,
+      "title": "GK-80: ensimmäinen neljän reseptin julkaisuehdokas"
+    },
+    {
+      "headRefName": "codex/gk80-run-3-v2",
+      "isDraft": true,
+      "number": 139,
+      "title": "GK-80 AJO 3 V2: 14 uutta arviota 40 reseptistä"
+    },
+    {
+      "headRefName": "codex/gk80-chicken-pans-1",
+      "isDraft": true,
+      "number": 138,
+      "title": "GK-80: kaksi ehdollista kanapannun GK-arviota katselmointiin"
+    },
+    {
+      "headRefName": "codex/gk80-broth-sauce-1",
+      "isDraft": true,
+      "number": 137,
+      "title": "GK-80: liemi- ja kastiketuotteet kahdeksalle reseptille"
+    },
+    {
+      "headRefName": "codex/gk80-run-2",
+      "isDraft": true,
+      "number": 136,
+      "title": "GK-80 AJO 2: 4 ehdollista GK-pistettä 30 reseptistä (PARTIAL)"
+    },
+    {
+      "headRefName": "codex/gk80-pilot-1",
+      "isDraft": true,
+      "number": 135,
+      "title": "GK-80 pilot 1: 20 reseptin eristetty laskentamalli ja katselmointiehdotukset"
+    },
+    {
+      "headRefName": "codex/gk-2-1-r3",
+      "isDraft": true,
+      "number": 134,
+      "title": "GK 2.1 R3: 24 reseptin lähdevarmennus ja 14 kokonaishiilihydraattiarviota"
+    },
+    {
+      "headRefName": "codex/gk-2-1-r2",
+      "isDraft": true,
+      "number": 133,
+      "title": "GK 2.1 R2: hiilihydraattiseula ja kahdeksan reseptin lähdekorjaukset"
+    },
+    {
+      "headRefName": "codex/recipe-filter-gk-chips-20261027",
+      "isDraft": true,
+      "number": 119,
+      "title": "Draft: GK-suodatin, aktiiviset suodatinvalinnat ja kokonaisajan selkeytys"
+    },
+    {
+      "headRefName": "codex/gk-range-class-scenarios-roadmap-20261027",
+      "isDraft": true,
+      "number": 118,
+      "title": "Suunnitelma: GK-vaihteluvälit, luokkavarmuus ja reseptiskenaariot (P0–P5)"
+    },
+    {
+      "headRefName": "dependabot/npm_and_yarn/site/vite-8.3.5",
+      "isDraft": false,
+      "number": 116,
+      "title": "Bump vite from 8.3.4 to 8.3.5 in /site"
+    },
+    {
+      "headRefName": "codex/nutritics-evaluation",
+      "isDraft": true,
+      "number": 100,
+      "title": "Prepare secure Nutritics evaluation"
+    }
+  ],
+  "productionVerifiedAtUtc": "2026-11-02T21:08:09.294409+00:00",
+  "productionPageIdenticalTo179NumericSnapshot": true
+}
