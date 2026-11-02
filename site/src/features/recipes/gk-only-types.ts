@@ -5,7 +5,10 @@ export interface GkOnlyVariant {
  point:number|null;scenarioRange:{min:number;max:number}|null;
  rangeKind:'NAMED_COMPARATOR_SCENARIOS'|'CONDITIONAL_CODING_MODEL'|null;
  omittedCho:number;confidence:'LOW';macroScope:'NO_MACRO_PACKAGE_FOR_THIS_VERSION';
- ingredients:Array<{name:LocalizedText;grams:number|null}>;
+ /** Absent means the original gram-only contract; sealed inputs are never rewritten. */
+ quantityContract?:'GK_ONLY_NATIVE_UNITS_V1';
+ ingredients:Array<{name:LocalizedText;grams:number|null;quantity?:{amount:number;unit:'ml'|'tbsp'}}> ;
+ limitation?:LocalizedText;
  preparation:LocalizedText;codingKinds:Array<'PLANT50'|'TRACE50'>;
  sensitivity:{min:number;max:number;kind:'ASSUMPTION_ONLY';gi:[0,150];isBiologicalBound:false;isConfidenceInterval:false}|null;
  sources:Array<{title:string;url:string;kind:'CARBOHYDRATE'|'HUMAN_GI'|'PUBLISHED_CODING'|'B_CODING'|'BOUND';note:string}>;

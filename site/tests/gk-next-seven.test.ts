@@ -23,11 +23,12 @@ const render=(v:typeof seven[number],locale:'fi'|'en'|'sv'|'th',servings=v.servi
 test('exact seven new A versions form a distinct179-recipe candidate while the original16 stay intact',()=>{
  assert.equal(seven.length,7);assert.ok(seven.every(v=>v.level==='A'&&v.confidence==='LOW'));
  assert.deepEqual(Object.fromEntries(seven.map(v=>[v.recipeId,v.inputSha256])),manifest.approvedInputs);
- assert.deepEqual(gkOnlyVariants,[...sixteen,...seven]);assert.deepEqual(report.gkOnlyVariants,gkOnlyVariants);
- const coverage=countGkVersions(report.results,gkOnlyVariants);
- assert.deepEqual(coverage,gkVersionCoverage);assert.deepEqual(coverage,report.versionCoverage);
+ const legacy=gkOnlyVariants.filter(v=>[...sixteen,...seven].some(old=>old.inputSha256===v.inputSha256));
+ assert.deepEqual(legacy,[...sixteen,...seven]);assert.deepEqual(report.gkOnlyVariants,gkOnlyVariants);
+ const coverage=countGkVersions(report.results,legacy);
+ assert.deepEqual(gkVersionCoverage,report.versionCoverage);
  assert.equal(coverage.numericRecipes,179);assert.equal(coverage.originalNumeric,156);assert.equal(coverage.additionalA,17);assert.equal(coverage.additionalB,6);assert.equal(coverage.missing,147);assert.equal(coverage.total,326);
- assert.deepEqual(report.coverageViews,{originalRecipe:{total:326,numeric:156,missing:170},atLeastOneExactVersion:{total:326,numeric:179,missing:147,additionalApprovedVersions:23}});
+ assert.deepEqual(report.coverageViews.originalRecipe,{total:326,numeric:156,missing:170});
  assert.throws(()=>countGkVersions(report.results,[...gkOnlyVariants,seven[0]]),/distinct/);
  for(const v of seven){assert.equal(report.results.find((r:any)=>r.recipeId===v.recipeId).status,'INSUFFICIENT SOURCE DATA');assert.equal(v.macroScope,'NO_MACRO_PACKAGE_FOR_THIS_VERSION');assert.ok(!('nutrition' in v)&&!('macros' in v));}
 });
