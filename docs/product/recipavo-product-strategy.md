@@ -1,6 +1,6 @@
 # Recipavo – pitkän aikavälin tuote- ja liiketoimintasuunnitelma
 
-**Suunnitteluehdotus v1 · 2.11.2026 · ei toteutus-, julkaisu- tai budjettilupaa.**
+**Suunnitteluehdotus v2 – yhteensovitus 2.11.2026 – ei toteutus-, julkaisu- tai budjettilupaa.**
 
 Recipavon ehdotettu ydinlupaus on: **Valitse mitä söit, kerro paljonko söit – Recipavo hoitaa ravintoainelaskennan.** Lupaus toteutuu vain niille ravintotekijöille, joihin on riittävä lähde-, määrä- ja valmistusnäyttö. Käyttäjän työ vähenee erityisesti toistuvissa aterioissa; puuttuvia tietoja ei täytetä nollilla helppouden saavuttamiseksi.
 
@@ -8,14 +8,16 @@ Suositus on ensin osoittaa yksi arvoa tuottava ketju: käyttäjä rakentaa oman 
 
 Suunnitelma kattaa käyttäjät, ominaisuudet, käyttökokemuksen, tietosuojan, hinnoittelun, talousskenaariot ja P0–P8-etenemisen. Se ei toteuta käyttöliittymää, käyttäjätilejä, API:a, Diary-tietokantaa, maksuja, analytiikkaa tai infrastruktuuria. Tämän dokumentin hyväksyminen ei hyväksy niiden rakentamista.
 
+**Yhteinen eteneminen:** ensin rajattu tieto-/infrastruktuuripilotti ja sen rinnalla synteettinen päiväkirja-UX, sitten hyväksytty julkinen reseptijulkaisu ennen Diaryn laajaa avaamista. Maksullisuus seuraa käyttäjänäyttöä. Tämä [PR #178](https://github.com/ozirix-dev/Reseptit/pull/178), [Cloudflare #172](https://github.com/ozirix-dev/Reseptit/pull/172) ja [Nutrition Core #176](https://github.com/ozirix-dev/Reseptit/pull/176) käyttävät luvun 17 yhteistä järjestystä. Vanha päällekkäinen #177 on suljettu; #178 on käytössä.
+
 ## 1. Tosiasiat, vaatimukset ja ehdotukset
 
 | Tila | Lähtökohta |
 |---|---|
 | Käyttäjän vaatimukset | Erittäin helppo, läpinäkyvä ja kohtuuhintainen palvelu; julkinen reseptipalvelu ja yksityinen päiväkirja; omat vakioateriat ja yhden painalluksen kirjaus; FI/EN/SV/TH julkisessa palvelussa; nykyiset reseptiosoitteet säilyvät. |
-| Tarkistettu nykytila | Reseptit main `adda64fda9bf63e69e190b6d888698587a250a2a`: React/Vite, esirenderöidyt reseptisivut, kielikohtainen haku/suodattimet, annosmäärän säätö, neljä julkista makroarvoa ja erillinen GK-menetelmä. Ei tämän tarkastuksen osoittamaa käyttäjätili-/Diary-/tilausjärjestelmää. |
+| Yhteensovitusta edeltävä tarkistettu main-snapshot | Reseptit main `adda64fda9bf63e69e190b6d888698587a250a2a`: React/Vite, esirenderöidyt reseptisivut, kielikohtainen haku/suodattimet, annosmäärän säätö, neljä julkista makroarvoa ja erillinen GK-menetelmä. Ei tämän tarkastuksen osoittamaa käyttäjätili-/Diary-/tilausjärjestelmää. |
 | Tuotteen nykyiset rajat | VHH/Keto ovat toimituksellisia luokkia; kaikille resepteille ei ole varmennettua ravintolaskentaa. Nykyinen julkinen nutrition-sopimus sisältää netto-CHO:n, kokonais-CHO:n, proteiinin ja rasvan. Energia ja kattavat mikrot eivät ole tämän neljän arvon sopimuksen taattuja kenttiä. |
-| Erilliset keskeneräiset suunnitelmat | [Cloudflare PR #172](https://github.com/ozirix-dev/Reseptit/pull/172), HEAD `1a3ba27d8b7f738d22e8a6b899bb3b0081560507`; [Nutrition Core PR #176](https://github.com/ozirix-dev/Reseptit/pull/176), HEAD `3273e59d07ef7bebffda9bb822aabf7748da8e88`; [SOURCE-01 PR #174](https://github.com/ozirix-dev/Reseptit/pull/174), HEAD `19939d95d8c93d6e93d4619d9f2510d043d246dc`. Draft ei tarkoita hyväksyttyä tai toteutettua. |
+| Yhteensovitusta edeltäneet tarkistetut suunnitelmaversiot | [Cloudflare PR #172](https://github.com/ozirix-dev/Reseptit/pull/172), HEAD `1a3ba27d8b7f738d22e8a6b899bb3b0081560507`; [Nutrition Core PR #176](https://github.com/ozirix-dev/Reseptit/pull/176), HEAD `3273e59d07ef7bebffda9bb822aabf7748da8e88`; [SOURCE-01 PR #174](https://github.com/ozirix-dev/Reseptit/pull/174), HEAD `19939d95d8c93d6e93d4619d9f2510d043d246dc`. SHA:t kuvaavat tarkastuksen lähtöversioita, eivät yhteensovituscommitien uusia HEADeja. Nykyisten suunnitelmien yhteinen järjestys on luvussa 17. Draft ei tarkoita hyväksyttyä tai toteutettua. |
 | Alustavat tuotepäätösehdotukset | Rajattu aikuisten MVP, mobiili web ensin, peruskirjaus maksuton, Plus lisäarvon perusteella, ehdotettu hinnan testaaminen 3,90/4,90/5,90 €/kk. Kaikki jäljempänä nimetyt tavoitteet ovat testattavia oletuksia. |
 | Avoin näyttö | Ei tässä todennettua kysyntää, liikennevolyymia, maksukonversiota, tukikuormaa tai hintajoustoa. Käyttäjän aiempi tieto: GSC:ssä ei ole käyttökelpoista lähtödataa. Tässä ei perusteta GSC-propertya eikä haeta käyttäjien yksityisiä tietoja. |
 
@@ -31,7 +33,7 @@ Toinen kohderyhmä on kansainvälisten reseptien kotikokki, joka siirtyy resepti
 
 Ensimmäinen tuote ei ole lasten seurantapalvelu, lääkehoitotyökalu, kliininen diabetespalvelu, ammattilaisen potilasjärjestelmä tai ravintolisien annostelija. P0–P5 eivät vaadi diagnoosia, painoa, BMI:tä, sukupuolta, tarkkaa syntymäpäivää tai verensokerimittausta. Aikuisten rajaus ja sen toteutustapa hyväksytään P2:ssa ennen oikeita käyttäjiä; myöhempi kliininen käyttö vaatii oman arvioinnin.
 
-### 2,2 Käyttäjän tehtävät ja arvolupaus
+### 2.2 Käyttäjän tehtävät ja arvolupaus
 
 | Käyttäjän tilanne | Recipavon tavoiteltu hyöty | Mitä pitää osoittaa |
 |---|---|---|
@@ -258,6 +260,8 @@ Julkinen staattinen julkaisu ei sisällä Diary-salaisuuksia, käyttäjä-JSONia
 
 ### 10.3 Vienti, poisto, säilytys ja palautus
 
+**Diary-varmistukset erotetaan #172:n ja #176:n lähde-/media-/julkaisuarkistoista.** Käyttäjätilejä, aterioita tai syömishistoriaa ei viedä niiden 365/400 vrk:n paketteihin, pysyvään ennen-siirtoa-kopioon tai yhteiseen suodattamattomaan offsite-arkistoon. Diarylle nimetään P2:ssa omat manifestit ja vientityöt sekä pääsy-/avainrajat ja valitaan erillinen tallennus. Sama palautusprosessin periaate voidaan hyödyntää, mutta lähdeaineiston pitkä säilytys ei ole henkilötietojen säilytyslupa. Käyttäjätietoja ei viedä myöskään Coreen, julkiseen Gitiin/static-vientiin, lokeihin tai maksujen metadataan.
+
 Tietojen vienti ja tilin/tietojen poisto ovat maksuttomia myös Plusin päätyttyä. Käyttöliittymä erottaa yhden merkinnän poiston, mallin arkistoinnin, tilauksen lopetuksen ja koko tilin/tietojen poiston. Poisto ei ole markkinoinnin retentiotemppu. Identiteetti varmistetaan asianmukaisesti; rekisteröidyn oikeudet ja niiden soveltuminen suunnitellaan ennen pilottia. [EDPB:n oikeusohje](https://www.edpb.europa.eu/sme/be-compliant/respect-individuals-rights_en).
 
 Ehdotetut, P2:ssa hyväksyttävät säilytysoletukset: Diary aktiivisen palvelun ajan; käyttäjän poistama tieto pois aktiivisesta käsittelystä viipymättä tavoitteen mukaan, viimeistään sovitun teknisen käsittelyajan kuluessa; salatut kiertävät varmistukset enintään 30 vrk; suppeat suojauslokit esimerkiksi 14–30 vrk. Nämä eivät ole väite kaikkien tietojen lakisääteisestä säilytysajasta. Tilaus-/kirjanpitotiedot säilytetään omalla lakiperusteellaan ja aikataulullaan erillään aterioista. Poistetun tilin tietoja ei palauteta asiakaspalvelun helpottamiseksi pysyvästä arkistosta.
@@ -481,25 +485,25 @@ Alustavat etenemisehdot, **omia testihypoteeseja, eivät alan vertailuarvoja**:
 
 ## 16. Vaiheet P0–P8 ja omistajan päätösportit
 
-Vaiheilla ei ole luvattuja kalenteripäiviä. Tavoitteet ovat omia hyväksyttäviä hypoteeseja; tulos voi olla jatka, rajaa uudelleen tai pysäytä. Alla olevat tunti-/eurorajat ovat alustavia työarvovarauksia 35 €/h, eivät tarjouksia tai tämän chatin kestoa. P0:n nykyinen infrastruktuurisuunnitelma, Core-portit ja tämän tuotteen vaiheet pysyvät erillisinä. Kaikki uudet palvelut ja aiemman 5 USD:n lisäkulurajan mahdollinen ylitys vaativat erillisen päätöksen ennen toteutusta.
+Vaiheilla ei ole luvattuja kalenteripäiviä. Tavoitteet ovat omia hyväksyttäviä hypoteeseja; tulos voi olla jatka, rajaa uudelleen tai pysäytä. Alla olevat tunti-/eurorajat ovat alustavia työarvovarauksia 35 €/h, eivät tarjouksia tai tämän chatin kestoa. P0:n nykyinen infrastruktuurisuunnitelma, Core-portit ja tämän tuotteen vaiheet säilyttävät omat tunnisteensa mutta käyttävät luvun 17 yhteisiä, rajattuja työ-/näyttöpaketteja. Kaikki uudet palvelut ja aiemman 5 USD:n lisäkulurajan mahdollinen ylitys vaativat erillisen päätöksen ennen toteutusta.
 
 ### P0 – Nykyinen perusta
 
 - **Tavoite:** julkinen resepti-/ravinto-/GK-perusta ja hallittu infra riittävän luotettavaksi tulevalle päiväkirjapilotille.
 - **Käyttäjähyöty:** ymmärrettävä resepti ja lähteistetty annos, ei tilejä tai maksumuuria lukemiseen.
 - **Vähimmäistoteutus:** nykyisen palvelun rajattu laadukas profiilijoukko; varmistetaan että testiruokia/annoksia voidaan käyttää, lähde-/kuvaoikeudet ja tiedon puutteet näkyvät. Kaupallisen pilottijoukon 5–10 reseptin toimivuus, määrät ja olennaiset kieliversiot tarkistetaan myös toimituksellisesti, ei pelkällä skeemalla.
-- **Riippuvuudet:** nykyinen main, erilliset SOURCE-01/Core-/Cloudflare-päätökset. Cloudflare-siirtoa ei pidetä tämän tuotesuunnitelman hyväksymänä.
+- **Riippuvuudet:** nimetty hyväksytty main/SOURCE/GK-snapshot ja koordinoidut SOURCE-01/Core-/Cloudflare-päätökset oikealle profiilijoukolle. P1:n synteettinen UX voi alkaa hyväksytyillä käsitteillä ja testiskenaariolla ennen koko P0-infraa. Cloudflare-siirtoa ei pidetä tämän tuotesuunnitelman hyväksymänä.
 - **Hyväksymiskriteerit:** nimetty hyväksytty lähde-/resepti-/menetelmäversio valitulle pilotille, nykyiset pidätykset säilyvät, URL:t toimivat ja ravinto-/GK-rajoitukset ymmärrettävät. Puuttuva energia tai mikrot eivät muutu keksityiksi arvoiksi.
 - **Kustannusarvio:** varsinainen infra ja data erillisissä suunnitelmissa; ei automaattisesti uutta budjettia. Työmäärä rajataan niiden toteutuspyynnöissä.
 - **Riskit:** toimituksellinen Keto-tagi, AI-käännös tai lähdeotsikko tulkitaan kliiniseksi/tarkistetuksi ravintolupaukseksi; käyttöoikeus puuttuu.
-- **Jatka/pysäytä:** omistaja hyväksyy rajatun pilottivalikoiman ja P1-prototyypin. Jos ruokien/peruslaskennan luotettavuus ei riitä, korjataan perusta; koko 326 reseptin täydellistämistä ei kuitenkaan vaadita pieneltä prototyypiltä.
+- **Jatka/pysäytä:** omistaja hyväksyy P1:n käsitteet ja synteettisen testiskenaarion omana rajattuna työnään sekä aidon profiilivalikoiman erikseen ennen sovelluskäyttöä. Epäkelpoista ruokaa/peruslaskentaa ei käytetä oikeassa pilotissa; koko historiallisen 326 reseptin joukon täydellistäminen ei ole prototyypin ehto.
 
 ### P1 – Päiväkirjan käyttöliittymäprototyyppi
 
 - **Tavoite:** osoittaa oman aamupalan luonnin ja toistokirjauksen ymmärrettävyys.
 - **Käyttäjähyöty:** polku, jossa ateriaa ei rakenneta uudelleen joka päivä.
 - **Vähimmäistoteutus:** erikseen luvalla syntyvä paikallinen/static-prototyyppi synteettisillä ruoka- ja käyttäjätiedoilla; Tänään, rakennin, määrämuutos ja tallennuksen palaute. Ei oikeaa tiliä, sähköpostia, Diary-tietoa tai maksuja.
-- **Riippuvuudet:** P0:n käsitteet ja nimetty testiskenaario; ei tarvitse odottaa kaikkia Core-mikroja.
+- **Riippuvuudet:** P0:n käsitteet ja nimetty synteettinen testiskenaario; ei tarvitse odottaa SOURCE-01:n kaikkia lähteitä, NC03–NC09:n valmistumista, Cloudflare-siirtoa tai 30 päivän jälkiseurantaa. P1 etenee omalla luvallaan rinnakkain NC03–NC05/#172 vaihe 2 -työn kanssa.
 - **Hyväksymiskriteerit:** luvun 9 tehtävätestit; päivä/määrä/malli/merkintä erotetaan; kriittiset virheet ratkaistu tai polku rajattu. Tavoitenopeudet mitataan, ei oleteta.
 - **Kustannusarvio:**12–24 h eli 420–840 € työarvoa sekä erikseen päätettävä testiosallistujien korvaus. Ei tarpeellista uutta pilvipalvelua.
 - **Riskit:** helpon näköinen mock ei vastaa tuotetietojen tai kirjautumisen todellista kitkaa; testataanko vain tekijän omaa rutiinia.
@@ -510,7 +514,7 @@ Vaiheilla ei ole luvattuja kalenteripäiviä. Tavoitteet ovat omia hyväksyttäv
 - **Tavoite:** todistaa, että oikeita käyttäjätietoja voidaan käsitellä hallitusti.
 - **Käyttäjähyöty:** pääsy vain omiin aterioihin, ymmärrettävä vienti ja poisto, toimiva tilin palautus.
 - **Vähimmäistoteutus:** myöhempi rajattu tunnistus/istunto ja Diary-tietomalli ensin synteettisillä tileillä; snapshot/revisio/omistajuus, vienti-/poistopolku ja palautusnäyttö. Palveluntarjoaja valitaan tässä, ei tässä visio-PR:ssä.
-- **Riippuvuudet:** P1, rekisterinpitäjä/tarkoitus/perusteet, DPIA-tarpeen arvio, käsittelijä-/siirtosopimukset, retentio, kustannusraja ja käyttöoikeudet.
+- **Riippuvuudet:** P1, rekisterinpitäjä/tarkoitus/perusteet, DPIA-tarpeen arvio, käsittelijä-/siirtosopimukset, erillinen Diary-retentio, kustannusraja ja käyttöoikeudet. Tietosuojasuunnittelu ja erikseen luvallinen synteettinen valmistelu voivat edetä julkisen siirron rinnalla; oikeat käyttäjätiedot odottavat kaikkia P2-portteja.
 - **Hyväksymiskriteerit:** kahden testitilin ristiinpääsy estetty kaikissa toiminnoissa, vanha snapshot ei muutu lähdepäivityksessä, vienti/poisto/backup-palautus eivät ohita omistajuutta; käyttäjädata ei löydy staattisesta buildista tai julkisista lokeista.
 - **Kustannusarvio:**30–60 h eli 1 050–2 100 € työarvoa; asiantuntija-/sopimusarvio sisällytetään MVP:n erilliseen 1 500–5 000 € varaushaarukkaan, ei oleteta ilmaiseksi. Stagen tunnistus/sähköposti/DB hinnoiteltava ennen luontia.
 - **Riskit:** arkaluonteisen tiedon aliarviointi, väärä oletus EU-sijainnista, tilikaappaus tai palautejärjestelmään vuotava ateriasisältö.
@@ -521,7 +525,7 @@ Vaiheilla ei ole luvattuja kalenteripäiviä. Tavoitteet ovat omia hyväksyttäv
 - **Tavoite:** toteuttaa vain luvun 15 MVP-ketju.
 - **Käyttäjähyöty:** oma ateria kerran, seuraavana päivänä yksi kirjauspainike; merkintä korjattavissa.
 - **Vähimmäistoteutus:** oma ateria+revision kopiointi, rajattu ruoka-/reseptivalinta, määrä ja päivä, syöty merkintä, päivän tiedot, uudelleenkirjaus, muokkaus/poisto ja ehdokkaana eilisen kopio. Ei yleistä viikkosuunnittelua, maksuja, AI:ta tai kaikkia mikroja.
-- **Riippuvuudet:** P2 ja oikeuksiltaan sallitut, käyttökelpoiset profiilit valitulle aamupalalle sekä muu pieni valikoima. Source/Core-viite on lukittu, ei latest-haku.
+- **Riippuvuudet:** P2 ja oikeuksiltaan sallitut, käyttökelpoiset profiilit valitulle aamupalalle sekä muu pieni valikoima. Source/Core-viite on lukittu, ei latest-haku. NC07:n sovellusnäyttö osoittaa aamupalan määrät, raaka/kypsä-/syötäväosaperustan, valmistuksen ja polyolit; kahden lähteen tekninen enintään 8 ruoan tuonti ei yksin riitä. Tarvittava lisälähde Coreen käy erikseen hyväksytyn rajatun NC04–NC06-kierroksen.
 - **Hyväksymiskriteerit:** pääpolku toimii kirjautuneena, retry/double-tap ei duplaa, mallimuutos ei muuta historiaa, väärä päivä/määrä korjattavissa, osatieto ei näytä täydeltä summalta. Nykyisen julkisen palvelun reitit/laskenta säilyvät.
 - **Kustannusarvio:**50–90 h eli 1 750–3 150 € työarvoa; profiilivalikoiman manuaalinen kuratointi budjetoidaan lisäksi MVP:n kokonaisarvioon. Palvelukulut mitataan hyväksytyllä rajatulla kuormalla.
 - **Riskit:** valikoima ei kata oikeita aamiaisia, käsin tehtävä korjaustyö kasvaa, nykyisen reseptiannossäätimen ja syödyn annoksen merkitys sekoittuu.
@@ -543,7 +547,7 @@ Vaiheilla ei ole luvattuja kalenteripäiviä. Tavoitteet ovat omia hyväksyttäv
 - **Tavoite:** mitata käyttäjän todellinen paluu ja omistajan todellinen tukikuorma.
 - **Käyttäjähyöty:** palvelu auttaa oikeassa arkirutiinissa ja korjauspyyntöön saa ratkaisun.
 - **Vähimmäistoteutus:**20–30 vapaaehtoista aikuista, rajattu sisältö/kieli, luvun 15 seurantatehtävät ja haastattelut. Rekrytointi ja oikeat tiedot vasta erillisellä hyväksynnällä.
-- **Riippuvuudet:** P2:n kaikki henkilötietoportit, P3–P4:n näyttö, julkaistava tietosuojainfo/ehdot, tukivastuu ja hyväksytty mittaus.
+- **Riippuvuudet:** P2:n kaikki henkilötietoportit, P3–P4:n näyttö, julkaistava tietosuojainfo/ehdot, tukivastuu ja hyväksytty mittaus. Julkisen reseptipalvelun julkaisu varmennetaan ennen Diaryn laajaa avausta. Rajatun P5:n aloitus hyväksytään erikseen; P1 tai tietosuojan valmistelu eivät odota julkisen siirron 30 päivän jälkiarviota.
 - **Hyväksymiskriteerit:** aktivointi/nopeus/paluu ja virheet raportoitu n/N-lukuina; kypsät D7/D30 eroteltu; puuttuvat tuotteet ja tikettiminuutit kirjattu. Turvallisuuskriittinen vika estää laajennuksen, eikä pieni otos todista markkinaretentiota.
 - **Kustannusarvio:**20–40 h eli 700–1 400 € työarvoa plus esimerkiksi 15 € osallistujakorvaus ×30 =450 €, jos erikseen päätetään. Pilottikulut ja tuen palveluaika mitataan, ei vuositasolle skaalattua kustannuslupausta.
 - **Riskit:** tekijän lähipiirin kohtelias palaute, maksettu osallistuminen sekoittuu todelliseen retentioon, manuaalinen apu peittää huonon tuotteen.
@@ -584,13 +588,32 @@ Vaiheilla ei ole luvattuja kalenteripäiviä. Tavoitteet ovat omia hyväksyttäv
 
 ## 17. Suhde muihin suunnitelmiin ja suurimmat riskit
 
-### 17.1 Kolme kokonaisuutta, erilliset hyväksynnät
+### 17.1 Kolme kokonaisuutta, yhteinen etenemisjärjestys
 
-- **Nutrition Core:** lähde-/komponenttimalli, oikeudet, hyväksytyt versiot ja profiilivienti. Ei käyttäjän syömistä, tiliä tai maksuhistoriaa. Tuote ei tarvitse kaikkia mikroja ollakseen pienesti testattava, mutta tarvitsemaansa hyväksyttyä profiilia se ei voi korvata arvauksella.
-- **Tämä Product Strategy:** käyttäjähyöty, UX, Diaryn toiminnallinen sopimus, hinnoittelu, talous, mittarit ja päätösportit.
-- **Cloudflare PR #172:** nykyisen julkisen sivuston D1/R2/Static Assets -siirto, media, URL:t, varmistukset ja tuotantokytkentä. Päiväkirjan tietosuoja- tai maksupäätös ei sisälly siihen.
+- **Nutrition Core #176:** yhteinen lähdekoostumus, komponenttimääritelmät, oikeudet ja hyväksytyt versiot. Ei käyttäjän syömistä, tiliä tai maksuhistoriaa.
+- **Recipavo / tämä #178:** reseptikohtaiset lähdevalinnat, hyväksytyt laskentaprofiilit ja julkaisut ovat sovelluksen vastuuta. Yksityinen Diary omistaa erikseen käyttäjän ateriat, merkinnät ja profiilisnapshotit.
+- **Cloudflare #172:** julkisen sivuston D1/R2/Static Assets -siirto, kuvat, URL:t, varmistukset ja tuotantokytkentä. Yksityisen Diaryn tietosuoja- tai maksupäätös ei sisälly siihen.
 
-Tämä työ ei päivitä, yhdistä tai hyväksy näitä muita suunnitelmia. Julkisen sivuston siirtoa ei tarvitse odottaa kaikkiin mikropilotteihin tai Plus-tuotteeseen asti; Diary-/Core-masterin vaihdot sovitetaan erillisillä päätöksillä. Muiden töiden keskeneräiset haarat eivät ole tuotteen oletusarvoinen datalähde.
+Yhteinen Core-rakenne huomioidaan jo ensimmäisessä D1-tuotantoratkaisussa pienellä hyväksytyllä aineistolla. Ensin ei rakenneta reseptikohtaista lähdemasteria ja sen rinnalle toista yhteistä masteria. Fyysiset nimet, taulu-/nimiavaruusrajat ja käyttöoikeudet päätetään NC02:ssa ja ennen stagea; alku ei edellytä useaa kantaa tai omaa Core-repoa. **Nykyinen Git-pohjainen laskenta määrää #172:n vaiheen 4 erikseen hyväksyttyyn omistajuusporttiin asti.** Lähdekoostumuksen siirto ei siirrä reseptisisältöä tai käyttäjien aterioita Corelle.
+
+| Järjestys | Yhteinen työ | Tuotteen ehto / päätös |
+|---|---|---|
+| 1 | SOURCE-01 #174 + #172 vaihe 1 + NC01–NC02, P0-rajaus | Raportti on olemassa mutta hyväksyntä puuttuu; hyväksytään SHA ja HOLD/DEFERRED-lista, omistajuus, mallisopimus, kaksi pilottinäyttöä ja kustannusraja |
+| 2, rinnakkain | NC03–NC05/#172 vaihe 2 ja P1 | Paikallinen tekninen data-/kuva-/URL-työ; P1 vain synteettinen oman aamupalan luonti, määrämuutos ja uudelleenkirjaus ilman tilejä/pilveä/oikeita aterioita |
+| 3 | NC06 + #172 vaihe 3 | Sama koordinoitu stage-erä; SQLite/D1-pariteetti, vähimmät oikeudet, kulut ja riippumattoman kopion palautus |
+| 4 | NC07 + #172 vaiheet 4–6 | Käyttökelpoiset profiilit, hyväksytty main/SOURCE/GK-snapshot ja uusittu inventaario, kuvaoikeudet/URL:t, erillinen omistajuus- ja julkaisulupa |
+| 5 | P2–P5 | Diaryn tietosuoja/tunnistus/vienti/poisto/palautus ja oma palvelubudjetti ennen oikeita tietoja; julkinen reseptipalvelu ennen laajaa Diary-avausta |
+| 6 | P6–P7, myöhemmin P8 | Käyttäjien paluu, tukikuorma ja yksikkötalous ennen maksullisuutta; yksi uusi markkina kerrallaan |
+
+Tämä ei ole kolmen suuren hankkeen peräkkäinen toteutus. Sama rajattu työ ja näyttö hyväksytään yhdessä nimetyille vaiheille. P1 ei odota koko Corea, mikroja, julkista siirtoa tai 30 päivän jälkiseurantaa. P2:n suunnittelu ja erikseen luvallinen synteettinen valmistelu voivat edetä rinnalla; oikea käsittely odottaa tietosuoja-/turvallisuus-/budjettipäätöksiä. NC08:n Ravinto-vienti ja NC09:n mikropilotti eivät ole ensimmäisen Diaryn yleisehtoja. Jos tietty Plus-ominaisuus tarvitsee mikroja, sillä on oma menetelmä- ja kattavuusportti.
+
+Tekninen Frida/MEXT-pilotti ei yksin osoita todellista aamupalalaskentaa. P0/NC07 nimeävät käyttöoikeuksiltaan sallitut ruokien ja 1–3 reseptin profiilit, joilla määrä, tila, valmistus ja polyolit voidaan todistaa. Kaupallisen pilotin laajempi 5–10 reseptin / 20–50 ruoan ehdotus kuratoidaan erikseen ennen P5:ttä; sitä ei luvata teknisen otoksen sivutuotteeksi. Puuttuvat mikrot tai energia eivät estä hyväksyttyä neljän makron pientä kokeilua, eivätkä ne oikeuta täydellisyysväitteeseen tai 4/4/9-oikopolkuun.
+
+Kuvien aiempi `583fdb9`, SOURCE-01:n `c5393a1` ja tuotetarkastuksen `adda64f` ovat eri päivättyjä havaintoja. Yksi hyväksytty siirto-snapshot nimetään #172 vaiheessa 4; muiden istuntojen työpuut eivät ole datalähde. Nykyiset neljä julkista kieltä sekä makrojen pidätykset ja GK-menetelmän rajat säilyvät.
+
+Koko Recipavon lisäkulutavoite on edelleen enintään 5 USD/kk nykyisen Workers Paidin päälle, ei 5 USD jokaista suunnitelmaa kohden. Tilin jaetut kiintiöt ja Core-/media-/varmistuskulut huomioidaan yhdessä. Diaryn tunnistus, sähköposti, tallennus, varmistukset ja tukityö arvioidaan P2:ssa; palvelujen aloitus tai rajan ylitys vaatii erillisen hyväksynnän. Luvun 12 10–250 euron Cloudflare-skenaariot eivät ole hyväksytty budjetti.
+
+Tämän yhteensovituksen tallennus tai suunnitelman mahdollinen merge ei anna lupaa toteutukseen, julkiseen siirtoon, DNS/Pages-muutoksiin tai GitHub Actions -ajoihin. Myöhemmin välttämättömät julkaisu-/palautusajot vaativat oman nimenomaisen luvan.
 
 ### 17.2 Riskit ja varhaiset vastatoimet
 
@@ -610,16 +633,16 @@ Tämä työ ei päivitä, yhdistä tai hyväksy näitä muita suunnitelmia. Julk
 
 ## 18. Avoimet päätökset, seuraava näyttö ja tämän PR:n rajaus
 
-Ennen seuraavaa toteutuspyyntöä omistaja ratkaisee:
+Ennen seuraavaa toteutuspyyntöä omistaja ratkaisee tässä järjestyksessä:
 
-1. Ensimmäinen kohderyhmä ja päiväkirjan testikieli; onko toistuva aamupala aidosti oikea aloitusongelma.
-2. P0:n hyväksytty pieni lähde-/reseptivalikoima, yksikkö-/kypsäpainoperusta ja energiaseurannan mahdollinen rajaus. Nykyinen julkinen määrä ei ole valmis Diary-profiilijoukko.
-3. P1-prototyypin budjetti ja käyttäjätesti; nopeustavoitteiden ja virheiden arviointi yhdessä.
-4. P2:ssa rekisterinpitäjä, käsittelyperusteet, DPIA-tarve, tunnistus, tallennus, retentio, vienti/poisto ja palvelukumppanien sopimukset ennen oikeita tietoja.
-5. Freemiumin pysyvä ydin, testattava Plus-hyöty ja hinnoitteluvaihtoehdot; ilman osoitettua arvoa ei maksuominaisuutta.
-6. Todellinen ilmais-/maksavien suhde, tukityö, vero-/maksukulut ja budjetti. Aiempi 5 USD lisäkulutavoite ei muutu huomaamatta kasvavan palvelun avoimeksi kululuvaksi.
-7. Kunkin P-vaiheen erillinen hyväksyntä versioineen, mittareineen ja tappio-/pysäytysrajoineen. Tämän dokumentin merge ei käynnistä toteutusta.
+1. SOURCE-01 #174:n raportti-/kenttäkarttaversion hyväksyntä ja näkyvät HOLD/DEFERRED-poissulut yhdessä #172 vaihe 1 / NC01–NC02:n kanssa. Kaikkia lähteitä ei odoteta valmiiksi.
+2. Yhteinen Core-koostumus, Recipavon reseptiprofiilit ja erillinen Diary: ensimmäinen D1-ratkaisu tämän jaon mukaan, nykyinen Git määrää erilliseen omistajuusporttiin asti. Ei kahta muokattavaa lähdemasteria.
+3. Teknisen tuontipilotin lähteet/tietueet ja erikseen oikeasti laskettava aamupala. Määrä-/tila-/polyoli-/oikeusnäyttö, mahdollisen lisälähteen rajattu hyväksyntä ja energian rajaus nimetään ennen sovelluspilottia.
+4. MVP:n suomenkielinen aikuisten kohderyhmä, maksuton ydinpolku, oma ateria / uudelleenkirjaus / määrämuutos / päivän hyväksytyt arvot sekä P1:n synteettinen testiskenaario ja budjetti. P1 voidaan hyväksyä ennen koko data-/infratyön valmistumista; nelikielinen julkinen palvelu säilyy.
+5. Yhteisen paikallis-/stage-pilotin hyväksyntä, oikeudet, palautus ja koko Recipavon 5 USD/kk lisäkuluraja todellisin tilikiintiöin. Diary-palvelujen ja tukityön kulut selvitetään erikseen ennen niiden tilaamista; kasvuskenaario ei ole kululupa.
+6. P2:ssa rekisterinpitäjä, perusteet, DPIA-tarve, tunnistus/käsittelijät, erillinen Diary-retentio sekä vienti/poisto/palautus ennen oikeita tietoja. Core-/media-arkistoihin ei sisällytetä käyttäjätietoja. Julkinen julkaisu ja Diaryn laaja avaus ovat eri hyväksynnät.
+7. Vasta P5:n näytön jälkeen testattava Plus-hyöty maksuttoman ytimen rinnalle, hintavaihtoehdot ja P6–P7:n todellinen ilmais-/maksavien suhde, tukityö, verot ja maksukulut. Jokaisella vaiheella on erillinen lupa, versiot ja pysäytysraja. Maksut ja kansainvälistyminen eivät seuraa pelkästä suunnitelman hyväksynnästä.
 
 Lähdehavaintojen tarkistuspäivä 2.11.2026; hinnat, maksupalveluehdot ja lainsäädännön soveltuminen tarkistetaan uudelleen ennen myyntiä. Kilpailijatiedot perustuvat yllä linkitettyihin virallisiin hinta-/ohjesivuihin sekä läpinäkyvästi rajattuun kuuden arvion otokseen. Käytettävyyden kilpailuetua, kysyntää, konversiota tai kannattavuutta ei ole tämän suunnittelun aikana kokeellisesti osoitettu.
 
-Tässä työssä tehdään vain dokumentaatio: yksi suunnitelma erillisessä repo_guard-varmennetussa worktreessä ja Draft-PR:ssä. Kevyet tarkistukset kohdistuvat dokumentin rakenteeseen, lähdeviitteiden muotoon, vaiheiden kenttiin, talouslaskelmien aritmetiikkaan ja Git-whitespaceen. Ei sivustobuildia, sovellustestejä, palvelutilien tai tietokantojen luontia, todellista käyttäjä-/maksudataa, tuotantokoodin muutoksia tai GitHub Actions -käynnistystä. Commit merkitään `[skip ci]`; PR #172, Nutrition Core, SOURCE-01 ja GK80 säilyvät muuttamattomina tämän työn toimesta. Ei mergeä tai toteutuksen aloitusta.
+Tämä yhteensovitus muuttaa vain kolmen olemassa olevan Draft-PR:n #172, #176 ja #178 suunnitelmadokumentteja, kunkin omassa repo_guard-varmennetussa worktreessä. Kevyet tarkistukset kohdistuvat dokumentin rakenteeseen, lähdeviitteiden muotoon, vaiheiden yhteensopivuuteen, aiemman talousmallin säilymiseen ja Git-whitespaceen. Ei sivustobuildia, sovellustestejä, palvelutilien tai tietokantojen luontia, todellista käyttäjä-/maksudataa, tuotantokoodin muutoksia tai GitHub Actions -käynnistystä. Commit merkitään `[skip ci]`; SOURCE-01:n ja GK80:n työpuut sekä Ravinto-repo säilyvät muuttamattomina. Ei uutta PR:ää, main-synkronointia, Readya, mergeä tai toteutuksen aloitusta.
