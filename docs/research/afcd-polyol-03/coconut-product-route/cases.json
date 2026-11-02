@@ -1,0 +1,178 @@
+{
+  "activation": false,
+  "ownerApproval": false,
+  "cases": [
+    {
+      "recipeId": "thai-vihrea-curry-kanalla-vhh",
+      "classification": "CONDITIONAL_A_ARITHMETIC_SOURCE_HOLD",
+      "arithmeticProfile": "EXISTING_A",
+      "servings": 4,
+      "paths": {
+        "fi": "reseptit/paaruoat/thai-vihrea-curry-kanalla-vhh.md",
+        "en": "kaannokset/en/paaruoat/thai-vihrea-curry-kanalla-vhh.md",
+        "sv": "kaannokset/sv/paaruoat/thai-vihrea-curry-kanalla-vhh.md",
+        "th": "kaannokset/th/paaruoat/thai-vihrea-curry-kanalla-vhh.md"
+      },
+      "recipeSha256Lf": {
+        "fi": "a4d7a2d111907b2ef34721eeb81bfd32999e112d894a3c39dcfd6b8230899173",
+        "en": "237dff5821a28992a213dc57a1f56e62f06fb316b9c8f4aa478f9fbbfb33b81e",
+        "sv": "9593235cf7ea1b2381f3fc6f4e83674c493f8ff535955ba826ce53d7f297a220",
+        "th": "4be67cf146b78a1ad42a5f897cc830d5c87efcdf4233b7b34a3dbb396dd53d75"
+      },
+      "originalIngredients": [
+        {
+          "amount": 600,
+          "unit": "g",
+          "item": "nahatonta broilerin reisilihaa"
+        },
+        {
+          "amount": 400,
+          "unit": "g",
+          "item": "täysrasvaista kookosmaitoa"
+        },
+        {
+          "amount": 30,
+          "unit": "g",
+          "item": "Mae Ploy vihreää currytahnaa"
+        },
+        {
+          "amount": 200,
+          "unit": "g",
+          "item": "kesäkurpitsaa",
+          "note": "lohkottuna"
+        },
+        {
+          "amount": 150,
+          "unit": "g",
+          "item": "munakoisoa",
+          "note": "lohkottuna"
+        },
+        {
+          "amount": 600,
+          "unit": "g",
+          "item": "kukkakaaliriisiä",
+          "note": "lisukkeeksi"
+        },
+        {
+          "amount": 30,
+          "unit": "g",
+          "item": "Squid Brand -kalakastiketta"
+        },
+        {
+          "amount": 4,
+          "unit": "g",
+          "item": "Foodin-erytritolia"
+        },
+        {
+          "amount": 2,
+          "unit": "g",
+          "item": "kaffirlimetinlehteä"
+        },
+        {
+          "amount": 20,
+          "unit": "g",
+          "item": "thaibasilikaa"
+        },
+        {
+          "amount": 13.5,
+          "unit": "g",
+          "item": "neutraalia öljyä"
+        }
+      ],
+      "ingredients": [
+        {
+          "originalIndex": 0,
+          "name": "nahatonta broilerin reisilihaa",
+          "grams": 600,
+          "sourceId": "A002806",
+          "giId": null
+        },
+        {
+          "originalIndex": 1,
+          "name": "täysrasvaista kookosmaitoa",
+          "grams": 400,
+          "sourceId": "FTO_1L_08_G",
+          "giId": null
+        },
+        {
+          "originalIndex": 2,
+          "name": "Mae Ploy vihreää currytahnaa",
+          "grams": 30,
+          "sourceId": "MAE_GREEN_AU64_G",
+          "giId": null
+        },
+        {
+          "originalIndex": 3,
+          "name": "kesäkurpitsaa",
+          "grams": 200,
+          "sourceId": "F389",
+          "giId": "op142-vegetable-imputation40"
+        },
+        {
+          "originalIndex": 4,
+          "name": "munakoisoa",
+          "grams": 150,
+          "sourceId": "F362",
+          "giId": "op142-vegetable-imputation40"
+        },
+        {
+          "originalIndex": 5,
+          "name": "kukkakaaliriisiä",
+          "grams": 600,
+          "sourceId": "F322",
+          "giId": "op142-vegetable-imputation40"
+        },
+        {
+          "originalIndex": 6,
+          "name": "Squid Brand -kalakastiketta",
+          "grams": 30,
+          "sourceId": "SQUID700_SUPPLIER3_G",
+          "giId": null
+        },
+        {
+          "originalIndex": 7,
+          "name": "Foodin-erytritolia",
+          "grams": 4,
+          "sourceId": "FOODIN_ERYTHRITOL",
+          "giId": null
+        },
+        {
+          "originalIndex": 8,
+          "name": "kaffirlimetinlehteä",
+          "grams": 2,
+          "sourceId": "THAI_KAFFIR_N35_TOTAL",
+          "giId": null
+        },
+        {
+          "originalIndex": 9,
+          "name": "thaibasilikaa",
+          "grams": 20,
+          "sourceId": "F11134",
+          "giId": null
+        },
+        {
+          "originalIndex": 10,
+          "name": "neutraalia öljyä",
+          "grams": 13.5,
+          "sourceId": "F541",
+          "giId": null
+        }
+      ],
+      "preparationDecision": "Keep all original eleven ingredients, gram amounts, four servings and simmering sequence. Specify400g well-mixed Fairtrade Original organic1L coconut milk product;30g Mae Ploy green exactAU400g published-label version;30g Squid exact700ml supplier reference pending primary-label mass basis. Kaffir2g fresh whole leaf; retain full-source upper accounting whether solids remain or are removed. No ml/g conversion; no replacement with rice milk or lighter coconut product. All finished sauce/vegetables included.",
+      "requiredDecisions": [
+        "EXACT_PRODUCT_SOURCE_AND_CONTENT_OWNER_REVIEW",
+        "GREEN_CURRY_AU64_VS_UK173_SAME_UPC_LABEL_VERSION",
+        "SQUID700_PRIMARY_LABEL_AND_G_VS_ML_UNIT_RESOLUTION",
+        "THAI_N35_TOTAL_CAP_ADMISSION_WITH_AVAILABLE_UNKNOWN",
+        "GK_ONLY_MACRO_VERSION_COMPATIBILITY"
+      ],
+      "ownerApproval": false,
+      "sourceQualified": false,
+      "publicationAuthorized": false,
+      "macroAction": "PRESERVE_ALL_CURRENT_VALUES_AND_WITHHOLDINGS",
+      "noNewGiConstants": true,
+      "minorBOmissionProfileActivated": false,
+      "inputSha256": "3c89be7139f76a9e5758fd97ef1ca1db748d4e155bd525a00ca0f869ec39452d"
+    }
+  ]
+}

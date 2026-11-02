@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "activation": false,
+  "ownerApproval": false,
+  "startingHead": "98e1b21ee5bdd4745a041024abb0dde851bbb806",
+  "sourceFilesLfSha256": {
+    "docs/nutrition/fineli-release-20-reference.json": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76",
+    "docs/nutrition/afcd-release-3-reference.json": "02edf1cc95191c05edf791656a5109c41bcf4d4a3e707be69ef5009bc640022e",
+    "docs/nutrition/food-records.json": "2f8ff76b97848294c28195bb92c6d202e9754168ddb169d30ee5e8610d2c2b9b",
+    "docs/nutrition/glycemic-index-records.json": "fb465ac8f68ffc85e29eb9900f17df00b081fa0ddc3e25d253140aecb248acda",
+    "site/scripts/glycemic-load-model.ts": "10ce09e465886e4538fc0b2ad2a54ca0b050a9e3729b7417eb0a91f2b946b48c"
+  },
+  "externalObservations": [
+    {
+      "id": "FTO_1L_08_G",
+      "issuer": "Fairtrade Original manufacturer",
+      "url": "https://www.fairtradeoriginal.nl/product/biologische-kokosmelk-1-l/",
+      "rawFile": "fairtrade-1l.html",
+      "rawSha256": "cf8dadda483fc8e324e6d16678df946fe3498c69f4100f4a11b96716fa7fc4a5",
+      "product": "Biologische Kokosmelk1L, GTIN8711741358382 shown in official image filename",
+      "basis": "per100g-as-sold",
+      "declaredCarbohydrate": 0.8,
+      "fat": 17,
+      "valueState": "DECLARED_LABEL_NOMINAL_UPPER_ONLY",
+      "availablePoint": null,
+      "polyolsTotal": null,
+      "admission": "NEW_EXACT_PRODUCT_APPLICATION_REVIEW",
+      "note": "Whole product mixed before weighing400g. Neither arbitrary coconut milk nor a light-product substitution. Not certified lot ceiling."
+    },
+    {
+      "id": "MAE_GREEN_AU64_G",
+      "issuer": "Oriental Merchant product data sheet supplied through Superior Food Services",
+      "url": "https://superiorfs.com.au/documents/PDF/MPGCP_1.pdf",
+      "rawFile": "mae-green-au.pdf",
+      "rawSha256": "28ae4efd561186a57c0cb910ee11380e548dfe53718fd2d5b4b9490f6c42ac5b",
+      "product": "Mae Ploy green curry400g, MCPGM400, supplier161032910, UPC044738102353",
+      "issued": "2021-07-06",
+      "page": 2,
+      "basis": "per100g-as-sold",
+      "declaredCarbohydrate": 6.4,
+      "valueState": "DECLARED_LABEL_NOMINAL_UPPER_ONLY",
+      "availablePoint": null,
+      "polyolsTotal": null,
+      "admission": "HOLD_MARKET_LABEL_AND_SOURCE_AGE_REVIEW",
+      "note": "Direct published field, not17.3 minus10.9 fibre. UK17.3 reference remains unchanged. Same UPC does not resolve market/version/basis discrepancy. Current AU50g retailer6.4 is corroboration, not evidence of identical400g lot."
+    },
+    {
+      "id": "THAI_KAFFIR_N35_TOTAL",
+      "issuer": "Institute of Nutrition Mahidol University Thai FCD v3 August2025",
+      "url": "https://inmu.mahidol.ac.th/thaifcd/foodsearch/food_name_result?mode=food_group_result&selected_id=246&selected_dbcode=STD&selected_name=Leech%20lime%20or%20Kaffir%20lime%2C%20leaves&food_name=Leech%20lime%20or%20Kaffir%20lime%2C%20leaves&page_no=1",
+      "rawFile": "thai-kaffir-result.html",
+      "rawSha256": "07e0dbcb258cbf5bbe23709eafe10306f623dcf0ab974d3ea784dfaddcd3ce3a",
+      "nativeId": "N35 / STD246",
+      "name": "Leech lime or Kaffir lime, leaves; Citrus hystrix",
+      "basis": "per100g-edible",
+      "totalCarbohydrate": 21.71,
+      "availablePoint": null,
+      "density": null,
+      "fibre": null,
+      "sugars": null,
+      "polyolsTotal": null,
+      "valueState": "TOTAL_FIELD_NOMINAL_UPPER_ONLY",
+      "admission": "NEW_SOURCE_TOTAL_CAP_REVIEW",
+      "note": "Available carbohydrate and fibre fields are dashes, not zero. No subtraction. Total field used only for positive upper omission, never with GI. No lot-certified bound. Noncommercial research with attribution; no blanket redistribution/commercial licence inferred."
+    },
+    {
+      "id": "SQUID700_SUPPLIER3_G",
+      "issuer": "Henderson Foodservice supplier product data publication",
+      "url": "https://www.henderson-foodservice.com/productpdf/download/file/id/9840/name/squid_brand_fish_sauce_(12x700ml).pdf",
+      "product": "Squid Brand Fish Sauce12x700ml, supplier product484139; outer EAN0 is unusable",
+      "basis": "per100g-as-published-by-supplier",
+      "declaredCarbohydrate": 3,
+      "valueState": "UNRESOLVED_SUPPLIER_UNIT_SCENARIO_ONLY",
+      "availablePoint": null,
+      "polyolsTotal": null,
+      "rawSha256": null,
+      "readEvidence": "Web PDF reader on2026-11-02, generated document page3 explicitly Carbohydrate Per100g(g)3. Local binary request403; no fabricated binary seal.",
+      "admission": "HOLD_NEEDS_PRIMARY_PRODUCT_LABEL_MASS_BASIS",
+      "note": "725ml AU producer/importer data have3.4 per100ml. Do not transfer ml field to30g or overwrite old registry. Require exact700ml pack identity and actual mass basis before admission."
+    },
+    {
+      "id": "SQUID725_AU34_ML_CONTROL",
+      "issuer": "Oriental Merchant product data sheet through Moco",
+      "url": "https://www.mocofoodservices.com.au/globalassets/moco---catalog-image/37419-ifss---squid-brand-fish-sauce-725ml.pdf",
+      "issued": "2021-02-04",
+      "basis": "per100ml-as-sold",
+      "declaredCarbohydrate": 3.4,
+      "rawSha256": null,
+      "readEvidence": "Web PDF search extraction; serving15ml,48 servings. Local binary403.",
+      "admission": "UNIT_MISMATCH_CONTROL_ONLY",
+      "note": "Different725ml SKU and volume basis, no density transfer."
+    }
+  ],
+  "composition": [
+    {
+      "id": "F322",
+      "kind": "FINELI_NATIVE_POINT",
+      "nativeId": "322",
+      "name": "KUKKAKAALI",
+      "availablePer100g": 2.35,
+      "nativeField": "per100g.available_carbohydrate_g_per_100g"
+    },
+    {
+      "id": "F362",
+      "kind": "FINELI_NATIVE_POINT",
+      "nativeId": "362",
+      "name": "MUNAKOISO",
+      "availablePer100g": 3.1,
+      "nativeField": "per100g.available_carbohydrate_g_per_100g"
+    },
+    {
+      "id": "F389",
+      "kind": "FINELI_NATIVE_POINT",
+      "nativeId": "389",
+      "name": "KESÄKURPITSA, ZUCCHINI",
+      "availablePer100g": 2.5,
+      "nativeField": "per100g.available_carbohydrate_g_per_100g"
+    },
+    {
+      "id": "F11134",
+      "kind": "FINELI_NATIVE_POINT",
+      "nativeId": "11134",
+      "name": "BASILIKA, TUORE",
+      "availablePer100g": 1.06,
+      "nativeField": "per100g.available_carbohydrate_g_per_100g"
+    },
+    {
+      "id": "F541",
+      "kind": "FINELI_NATIVE_POINT",
+      "nativeId": "541",
+      "name": "RUOKAÖLJY KESKIARVO, 87 % RYPSI- 8 % AURINGONKUKKA- JA 5% OLIIVIÖLJY",
+      "availablePer100g": 0.0,
+      "nativeField": "per100g.available_carbohydrate_g_per_100g"
+    },
+    {
+      "id": "A002806",
+      "kind": "AFCD_NATIVE_POINT",
+      "nativeId": "F002806",
+      "name": "Chicken, thigh, lean flesh, raw",
+      "availablePer100g": 0,
+      "nativeField": "available_carbohydrate_without_sugar_alcohols_g_per_100g"
+    },
+    {
+      "id": "FOODIN_ERYTHRITOL",
+      "kind": "EXPLICIT_LABEL_DIFFERENCE",
+      "nativeId": "foodin-erythritol-200g-label-2026-10-24",
+      "availablePer100g": 0,
+      "carbohydrate": 100,
+      "polyols": 100
+    }
+  ],
+  "giBinding": {
+    "nativeId": "op142-vegetable-imputation40",
+    "value": 40,
+    "allowedCompositionIds": [
+      "F322",
+      "F362",
+      "F389"
+    ],
+    "meaning": "Existing named nonstarchy vegetable PI coding; not measured ingredient GI or new category mean."
+  }
+}

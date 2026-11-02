@@ -11,15 +11,21 @@
 | Lisäksi hyväksytty pad see ew myöhemmin julkaistuna |179 (54,91%) |82 |
 | Lisäksi hyväksytty rahkapiirakkaversio myöhemmin julkaistuna |180 (55,21%), ehdollinen |81 |
 
-Yhteisessä35 reseptin laskenta-aineistossa24 versiolla on menetelmä- tai sisältöhyväksyntä:16 julkaistu,6 lukitussa erässä ja2 tutkimusluovutuksessa. Hyväksyttyjä mutta julkaisemattomia on8.11 reseptiltä puuttuu hyväksytty versio; niistä6 pysyy valmistetun ruoan lähde-HOLDissa.30 lähdekelpoisen julkaisuehdokkaan tavoitetta ei ole osoitettu. Uusi B-poisjättöprofiili ja hernekeiton tutkimusmalli säilyvät tutkimuksena.
+Yhteisessä36 reseptin laskenta-aineistossa24 versiolla on menetelmä- tai sisältöhyväksyntä:16 julkaistu,6 lukitussa erässä ja2 tutkimusluovutuksessa. Hyväksyttyjä mutta julkaisemattomia on8.12 reseptiltä puuttuu hyväksytty versio; niistä6 pysyy valmistetun ruoan lähde-HOLDissa ja uusi vihreän curryn skenaario yksikkö-/tuote-HOLDissa.30 lähdekelpoisen julkaisuehdokkaan tavoitetta ei ole osoitettu. Uusi B-poisjättöprofiili ja hernekeiton tutkimusmalli säilyvät tutkimuksena.
 
-[Nykytilakirjaus](current-state.json) ja [nykyinen päätösmatriisi:35 aritmeettista ehdotusta ja35 muuta HOLD-riippuvuutta](current-decision-matrix.csv) ovat vaiheiden ensisijaiset yhteenvedot. Aiemmat`summary.json`,`joint-*`-tiedostot ja [integraatiokuitti](integration-receipt.json) ovat historiallisia tilannekuvia. Niiden alkuperäisiä hyväksyntä-, laskenta- tai hash-kenttiä ei muutettu; nykytilaksi tulkinta on merkitty vanhentuneeksi ja ohjattu tähän uuteen kirjaukseen.
+[Nykytilakirjaus](current-state.json) ja [nykyinen päätösmatriisi:36 aritmeettista ehdotusta ja34 muuta HOLD-riippuvuutta](current-decision-matrix.csv) ovat vaiheiden ensisijaiset yhteenvedot. Aiemmat`summary.json`,`joint-*`-tiedostot ja [integraatiokuitti](integration-receipt.json) ovat historiallisia tilannekuvia. Niiden alkuperäisiä hyväksyntä-, laskenta- tai hash-kenttiä ei muutettu; nykytilaksi tulkinta on merkitty vanhentuneeksi ja ohjattu tähän uuteen kirjaukseen.
 
 **Codex2:n kirjoitusrajaus:** vain`D:/Projects/tmp/reseptit-afcd-polyol-03-gk80-handoff` ja`codex/afcd-polyol-03-gk80-handoff`. PR183:n`codex/gk80-operation149-v2` kuuluu Codex1:lle. Kuuden version säilytyshaaraa ei muokata. Lähdetyö luovutetaan jatkossa omana versionlukittuna pakettinaan; ei Readyä, mergeä tai deployta.
 
 Uudet projektisäännöt löytyivät mainiin PR184:llä yhdistetyistä [AGENTS.md](../../../AGENTS.md)- ja [rinnakkaisajo-ohjeista](../../rinnakkaiset-codex-ajot.md), commit`061f817`. Ne tuotiin tähän omaan työpuuhun täsmälleen samansisältöisinä. Pelkkää repo_guardin PASSia ei käsitellä haaran kirjoituslukkona. PR182 jää erilliseksi Draftiksi ja sen koko lähdetiedoston hash-/regressioriippuvuus on edelleen avoin.
 
-## Uusin natiivilähteen jatkotulos
+## Uusin yhteisen lähde-esteen jatko
+
+[Kookosmaidon tuotesidonnan päätösraportti](coconut-product-route.md) ja [sinetöity paketti](coconut-product-route/manifest.json) tarkistavat saman28 reseptin riippuvuusjoukon. Valmistajan täsmällinen1L-tuote ilmoittaa0,8g CHO/100g: seitsemän alkuperäistä grammaperusteista kookosmaitoainesosaa läpäisee yksittäisen rajan,21 tilavuusmäärälle ei johdeta massaa. Vihreälle currylle valmistui yksi **lähde-HOLDissa** oleva A-aritmetiikan skenaario: laskettu GK-osa2,38 ja poisjätöt1,66655g/annos. AU-/UK-currytahnaversion ja Squid700ml:n todellisen g/ml-perusteen näyttö pitää ratkaista ennen omistajan käyttöönottokatselmointia. Uusia lähdekelpoisia tai julkaistuja tuloksia0; uusia GI-oletuksia0.
+
+Yhteinen koonti on nyt36 aritmeettista ehdotusta ja34 muuta HOLD-riippuvuutta, yhteensä70 reseptiä. Hyväksyttyjä on24 ja julkaisemattomia hyväksyttyjä8; tuotanto172/326 ja näiden kahdeksan myöhemmän julkaisun suunnitteluluku180/326 säilyvät. Seitsemää ainesosarajan läpäisyä ei lasketa seitsemäksi valmiiksi GK-tulokseksi. Alla oleva natiivimantelin katselmointi on edellisen tutkimuserän tulos, jonka hyväksyntä säilyy muuttumattomana.
+
+## Edellisen natiivilähde-erän hyväksytty tulos
 
 [Rahkapiirakan tarkka uusi valmistusversio](native-point-followup.md) käyttää MEXT05001:n kuivan paahtamattoman mantelin natiivia CHOAVL-massasummaa5,2g/100g sekä koko150g:n jauhamista ja käyttöä. Kahdeksan annosta ja alkuperäiset grammamäärät säilyvät. Vaniljauute täsmennetään erillisen version punnituksi5g:ksi; tämä ei ole väite alkuperäisen teelusikan massasta. Nykyisen A-menetelmän laskettu GK-osa on0,45 ja positiiviset poisjätöt1,736875g CHO/annos. Mantelin oma poisjättö0,975g on vain0,025g alle yksittäisen1g-rajan: käyttäjä hyväksyi tämän rajatun lähde- ja sisältösovelluksen sekä pienen marginaalin myöhempään integraatioon: [sinetöity hyväksyntäkuitti](rahkapiirakka-approval.json). Katselmoitu991f94e-raportti ja syöte säilyvät hyväksyntää edeltävinä tilannekuvina; kuitti määrittää nykyisen hyväksynnän. Ei mantelijauhon GI50:tä, paistettujen manteleiden siirtoa tai B-poisjättöprofiilin aktivointia.
 

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "repository": "ozirix-dev/Reseptit",
+  "role": "Codex2 / Codex Tutkimus",
+  "startingHead": "98e1b21ee5bdd4745a041024abb0dde851bbb806",
+  "ownedBranch": "codex/afcd-polyol-03-gk80-handoff",
+  "activation": false,
+  "ownerApproval": false,
+  "sourceQualified": false,
+  "publicationAuthorized": false,
+  "readyAuthorized": false,
+  "mergeAuthorized": false,
+  "deployAuthorized": false,
+  "inputSha256": "3c89be7139f76a9e5758fd97ef1ca1db748d4e155bd525a00ca0f869ec39452d",
+  "filesLfSha256": {
+    "audit-coconut.py": "21bcbbc5eaa5a9504a3ac5fbbe49c2e6ec1d346c72177310776296957f658a70",
+    "cases.json": "2c34b991026e47bcb0b790172df11e2d2a0adde083fc5045103d72f975a2c2d6",
+    "decimal-results.json": "ff279060b7b95e4aded6126d5b92513a81ee6787477bdb77520929697c0d8caf",
+    "engine-results.json": "7ecbe72b6ec68465f1eab52f941df4a3cbfecf0fd83f1fe3fd51cffdb038c265",
+    "evaluate-coconut.mts": "29ad9e33abe2f2f04de5aebf668fcf6a78997c6d6e1f8073827161002542715f",
+    "source-gates.csv": "e7afba0451c22fca17f37e91baac435dfbe9473d100d7ca2dc07aebf0aa3d681",
+    "sources.json": "3fdcfdb3252e46d935258dcc1a12977b1c8591cc5888cfd299284a3a9f55db39"
+  },
+  "externalCachePolicy": "Original manufacturerHTML, AUgreenPDF and Thai sourceHTML cached outside Git; SHA256 values are raw binary. Fish PDF binary fetch403, so no fabricated raw seal or source admission. Web-read observations remain explicitly unqualified.",
+  "reproduction": "evaluate-coconut.mts ROOT DATA CACHE EXTERNAL_OUT, then audit-coconut.py with same arguments. Reuse installed tsx and Python. Only external outputs.",
+  "sourceFamilyRecipes": 28,
+  "massBasisCompatibleSingleGates": 7,
+  "volumeBasisHolds": 21,
+  "newConditionalArithmeticInputs": 1,
+  "newSourceQualifiedNumeric": 0,
+  "newPublishedNumeric": 0,
+  "existingApprovedAndUnpublishedVersions": 8
+}

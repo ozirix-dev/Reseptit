@@ -1,0 +1,88 @@
+{
+  "activation": false,
+  "results": [
+    {
+      "recipeId": "thai-vihrea-curry-kanalla-vhh",
+      "inputSha256": "3c89be7139f76a9e5758fd97ef1ca1db748d4e155bd525a00ca0f869ec39452d",
+      "conditionalCalculatedPart": "2.3750",
+      "rounded": "2.38",
+      "omittedCho": "1.66655",
+      "nominalUpperOmittedCho": "1.61355",
+      "remainingAggregateMargin": "0.33345",
+      "sourceQualified": false,
+      "publicationAuthorized": false,
+      "terms": [
+        {
+          "sourceId": "A002806",
+          "choPerServing": "0",
+          "isNominalUpper": false,
+          "gi": null
+        },
+        {
+          "sourceId": "FTO_1L_08_G",
+          "choPerServing": "0.8",
+          "isNominalUpper": true,
+          "gi": null
+        },
+        {
+          "sourceId": "MAE_GREEN_AU64_G",
+          "choPerServing": "0.48",
+          "isNominalUpper": true,
+          "gi": null
+        },
+        {
+          "sourceId": "F389",
+          "choPerServing": "1.25",
+          "isNominalUpper": false,
+          "gi": 40
+        },
+        {
+          "sourceId": "F362",
+          "choPerServing": "1.1625",
+          "isNominalUpper": false,
+          "gi": 40
+        },
+        {
+          "sourceId": "F322",
+          "choPerServing": "3.525",
+          "isNominalUpper": false,
+          "gi": 40
+        },
+        {
+          "sourceId": "SQUID700_SUPPLIER3_G",
+          "choPerServing": "0.225",
+          "isNominalUpper": true,
+          "gi": null
+        },
+        {
+          "sourceId": "FOODIN_ERYTHRITOL",
+          "choPerServing": "0",
+          "isNominalUpper": false,
+          "gi": null
+        },
+        {
+          "sourceId": "THAI_KAFFIR_N35_TOTAL",
+          "choPerServing": "0.10855",
+          "isNominalUpper": true,
+          "gi": null
+        },
+        {
+          "sourceId": "F11134",
+          "choPerServing": "0.053",
+          "isNominalUpper": false,
+          "gi": null
+        },
+        {
+          "sourceId": "F541",
+          "choPerServing": "0.00",
+          "isNominalUpper": false,
+          "gi": null
+        }
+      ]
+    }
+  ],
+  "familyRows": 28,
+  "compatibleIndividualGates": 7,
+  "volumeBasisHolds": 21,
+  "newSourceQualifiedNumeric": 0
+}
