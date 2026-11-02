@@ -172,5 +172,17 @@
     "activeRecipeOrNumericChanges": false,
     "manualWorkflowRerun": false,
     "targetedFollowup": "Four operation146 regressions and independent Decimal rerun after metadata/hash fix; no aggregate rebuild repeated."
+  },
+  "historicalTestCorrection": {
+    "failedRun": 41409919605,
+    "findings": "Three stale historical macro expectations in published-content.test.ts. Scope only nine previous macro snapshots; keep current all36 generated macro assertions separate.",
+    "recipeOrSourceDataChanged": false,
+    "manualRerun": false,
+    "targetedFollowup": {
+      "pass": 27,
+      "fail": 0,
+      "typescript": "PASS",
+      "aggregateBuildRepeated": false
+    }
   }
 }

@@ -180,3 +180,5 @@ Tämä aineisto odottaa omistajan katselmointia. Ei Ready-siirtymää, mergeä t
 ### CI:n todellisen virheen korjaus
 
 Ensimmäinen PR-CI pysähtyi PDF-tekstipoiminnan rivinloppujen tyhjiin merkkeihin ennen varsinaisia tarkistuksia. Ne poistettiin muuttamatta lähteen sanoja tai lukuja; alkuperäinen PDF-hash säilyy. Samassa rajatussa korjauksessa kuuden tutkimusskenaarion makrotulosobjektin kopioitu hash uudelleenlaskettiin vastaamaan jo oikein sidottua skenaariosyötettä. Aktiiviset yhdeksän reseptiä ja niiden tulokset eivät muuttuneet. Hash-johdonmukaisuus lisättiin kohdennettuun regressioon. Korjaus saa normaalin uuden push-CI:n; Actionsin manuaalista uusinta-ajoa ei käytetä.
+
+Toinen PR-CI saavutti varsinaiset testit ja löysi kolme historiallista makro-odotusta, jotka eivät vielä käyttäneet tämän operaation ennen-kuvaa. Vain yhdeksän muutetun reseptin aiemmat makrot rajattiin historiallisen batch-testin näkymään. Samalla nykytilan testi laajennettiin tarkistamaan suoraan kaikki36 generoituvaa kieliversiota uusine makroineen. Vanhoja Golden-arvoja, reseptejä tai laskentaa ei muutettu.
