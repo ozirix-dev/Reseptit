@@ -1,0 +1,61 @@
+{
+  "gochujang": {
+    "ownRecipes": [
+      "bibimbap",
+      "kimchi-jjigae"
+    ],
+    "immediateWholeRecipeOpenings": 0,
+    "status": "NO_ACCEPTABLE_STANDALONE_HUMAN_GI_VERIFIED_IN_THIS_TARGETED_SEARCH",
+    "rejectedNumericalWebClaims": [
+      {
+        "url": "https://www.eatbetter.app/en/food/gochujang",
+        "gi": 33,
+        "reason": "No traceable original human GI protocol found."
+      },
+      {
+        "url": "https://logifoodcoach.com/database/en/sugar-free-gochujang/",
+        "gi": 35,
+        "reason": "AI-assisted secondary composition page; no traceable original human GI."
+      }
+    ],
+    "manufacturerCompositionCheck": {
+      "url": "https://en.sempio.com/product/jangpaste/view/1013",
+      "servingG": 30,
+      "USLabelTotalChoG": 13,
+      "USLabelFibreG": 2,
+      "htmlSha256": "b36c6550006715e7d5036f0e446c27ee4d24c57216ac58adfd51636ceded46e9",
+      "limitation": "Composition only; no GI and no food-specific Finnish tablespoon mass. A30g amount would contain11g totalCHO-minus-fibre proxy before unquantified polyols; not assignable as exact availableCHO. At4servings such a hypothetical30g dose exceeds1g/serv omission. This does not prove the actual recipe tablespoon mass."
+    },
+    "searches": [
+      "gochujang glycemic index",
+      "red pepper paste glycemic index",
+      "gochujang human glycemic index glucose reference50g",
+      "고추장 혈당지수 인체 시험",
+      "University of Sydney gochujang"
+    ],
+    "decision": "Do not equate8-week fasting-glucose trials, metabolomics or a GI of rice eaten with sauce with standalone paste GI; noGI0,33,35 or generic spice50 assigned."
+  },
+  "korean2012": {
+    "doi": "10.4163/kjn.2012.45.1.80",
+    "url": "https://synapse.koreamed.org/upload/synapsedata/pdfdata/0124kjn/kjn-45-80.pdf",
+    "pdfSha256": "0861e935f4b9adb9a6a5b8715db8483d4c8b613f8f0af39048dcfe5deb744c59",
+    "visualCheck": "Page1 rendered and read. English abstract classifies653 foods:149 published data,60 similar-food imputations,444 assignedzero. This is an epidemiological compilation, not653 humanGI measurements.",
+    "decision": "No permission to import zero assignments; no separate gochujang or kimchi GI established by this check. Appendix download was unavailable; do not claim exhaustive absence."
+  },
+  "poppamiesAlternative": {
+    "url": "https://poppamies.fi/en/products/sriracha-hot-sauce/",
+    "labelChoGPer100ml": 19,
+    "htmlSha256": "0f987ecb114d619f6ef4307ff204ebe856a4aeff45b1cadb997a963a8c89de88",
+    "decision": "Do not generalize Encona14 to Poppamies19. Same15ml would add.1875g/serv and make this exact okonomiyaki omission scenario fail2g. No product quantities reduced to pass."
+  },
+  "newMeasuredGiSources": 0,
+  "newImputationRules": 0,
+  "policyChangesApplied": false,
+  "saudi2018Falafel33": {
+    "doi": "10.3923/pjn.2018.518.523",
+    "url": "https://docsdrive.com/pdfs/ansinet/pjn/2018/518-523.pdf",
+    "pdfSha256": "cc48bc2327fccb87af5df4f4cac14933897f95153f397e45d63f28ca8f7c0545",
+    "visualCheck": "PDF page3/printed519 methods rendered and read. Questionnaire/anthropometric study n480; mealGI andGL calculated from previously published ingredientGI, not new human meal challenge.",
+    "decision": "Falafel sandwich with pita,pickles,salad,tahina estimatedGI33 is not standalone measured falafelGI and is not imported."
+  }
+}

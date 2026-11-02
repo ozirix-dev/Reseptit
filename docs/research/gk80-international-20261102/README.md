@@ -1,8 +1,8 @@
 # GK80: kansainväliset GI-lähteet, Codex1
 
-> **Ajantasainen luovutus:** [stock-and-current-bindings/CURRENT.md](stock-and-current-bindings/CURRENT.md). Julkaistu kattavuus172/326, puuttuu89. Kongjukin uusi nykyreseptiehdokas ja paellan ehdollinen tuoteversio on varmennettu. Kahdeksan hyväksyttyä julkaisematonta ja viisi omaa tutkimusversiota ovat erillisiä joukkoja.
+> **Ajantasainen luovutus:** [sauces-and-legumes/CURRENT.md](sauces-and-legumes/CURRENT.md). Julkaistu kattavuus172/326, puuttuu89. Oma erillinen tutkimusjoukko sisältää nyt seitsemän hyväksymätöntä versiota: viimeisimpinä nykyinen falafel ja ehdollinen nimetty kaalilettuversio. Kahdeksan muualla hyväksyttyä julkaisematonta versiota on erillinen joukko. Ei uusia julkaisuja tältä tutkimushaaralta.
 
-Aiemmat jatkopaketit: [granola ja pellavapuuro](followup/CURRENT.md), [pistaasijogurtti ja Codex2:n marjalähdetuki](breakfast-versions/CURRENT.md).
+Aiemmat jatkopaketit: [liemi ja nykyreseptisidonnat](stock-and-current-bindings/CURRENT.md), [granola ja pellavapuuro](followup/CURRENT.md), [pistaasijogurtti ja Codex2:n marjalähdetuki](breakfast-versions/CURRENT.md).
 
 ## Ensimmäisen tutkimusajon historiallinen koonti
 
