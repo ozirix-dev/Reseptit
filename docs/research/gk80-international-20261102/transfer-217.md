@@ -1,5 +1,11 @@
 # GK80 · hyväksytyt syötteet ja ehdokkaat ilman päällekkäisyyksiä
 
+## PR 193 julkaistu
+
+Main be9dd28013ad7b777ad5fb91cdf0c75d0b037ad3. [Julkaisuajo 41536324200](https://github.com/ozirix-dev/Reseptit/actions/runs/41536324200) onnistui. Tarkistin julkisen sivun reseptitunnisteet välimuistin ohittavalla pyynnöllä. **191/326 eli 58,6 %**, tavoitevaje **70**. Kaikki neljä ovat numeerisia: paella-valenciana, kana-tagine-sitruunalla, hernekeitto-savupotkalla ja uunimakkara-sipulipedilla.
+
+Panang puuttuu edelleen julkisista numeerisista riveistä. Aiemman 33 tunnisteen unionista jää tämän erän jälkeen **29**. Yksi on hyväksytty Panang, 18 muita A-tutkimusversioita ja 10 B-skenaarioita. Kaikkien 29:n mahdollinen julkaisu tuottaisi edelleen 220/326. [Julkinen GK-kooste](https://ozirix-dev.github.io/Reseptit/glykeeminen-kuorma/)
+
 ## Julkaisuerät 3.11.2026
 
 [PR 193](https://github.com/ozirix-dev/Reseptit/pull/193), pää cd1a8ef212ae30ba3dc9587da61148a20ae350a7, kokoaa neljä hyväksyttyä laskelmaa. Paella, kanatagine, hernekeitto ja uunimakkara ovat tässä integraatioerässä. PR on avoin Draft. Saman pään [build ja kattavuustarkistus](https://github.com/ozirix-dev/Reseptit/actions/runs/41535280436/job/125585434790) läpäisivät. Tuoreessa julkisen koosteen tarkistuksessa kaikki neljä tunnistetta olivat yhä vailla numeerista arvoa. PR:n esikatselun 191/326 on ehdollinen. Main on edelleen 1276116d ja viimeksi julkisesta koosteesta varmennettu luku 187/326.
