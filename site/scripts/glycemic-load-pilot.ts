@@ -1,6 +1,7 @@
 import {buildApprovedFourVariants} from './gk-next-four';
 import {buildApprovedBVariants} from './gk-four-approved-b';
 import {buildProductAVariants} from './gk-four-product-a';
+import {buildPanangKimchiVariants} from './gk-panang-kimchi';
 import {buildGkOnlyVariants} from './gk149-integration';
 import {buildApprovedSevenVariants} from './gk-next-seven';
 import {countGkVersions} from '../src/features/recipes/gk-only-types';
@@ -155,7 +156,7 @@ const legacyResults = rawResults.map((result) => {
   return usesImputation ? {...result, assessmentType: "PUBLISHED_IMPUTATION" as const, modelScenario: "POINT_SCENARIO" as const} : result;
 });
 const results = await applyScopedPolyolC(root, await applyRecovery(root, await withdrawQ09Tea(root, await applyGk80Release(root, legacyResults))));
-const gkOnlyVariants = [...buildGkOnlyVariants(root),...buildApprovedSevenVariants(root),...buildApprovedFourVariants(root),...buildApprovedBVariants(root),...buildProductAVariants(root)];
+const gkOnlyVariants = [...buildGkOnlyVariants(root),...buildApprovedSevenVariants(root),...buildApprovedFourVariants(root),...buildApprovedBVariants(root),...buildProductAVariants(root),...buildPanangKimchiVariants(root)];
 const versionCoverage = countGkVersions(results,gkOnlyVariants);
 const report = {
   generatedAt: new Date().toISOString(),

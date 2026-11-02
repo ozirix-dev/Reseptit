@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "activation": false,
+  "ownerApproval": false,
+  "startingHead": "98e1b21ee5bdd4745a041024abb0dde851bbb806",
+  "sourceFilesLfSha256": {
+    "docs/nutrition/fineli-release-20-reference.json": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76",
+    "docs/nutrition/afcd-release-3-reference.json": "02edf1cc95191c05edf791656a5109c41bcf4d4a3e707be69ef5009bc640022e",
+    "docs/nutrition/food-records.json": "2f8ff76b97848294c28195bb92c6d202e9754168ddb169d30ee5e8610d2c2b9b",
+    "docs/nutrition/glycemic-index-records.json": "fb465ac8f68ffc85e29eb9900f17df00b081fa0ddc3e25d253140aecb248acda",
+    "site/scripts/glycemic-load-model.ts": "10ce09e465886e4538fc0b2ad2a54ca0b050a9e3729b7417eb0a91f2b946b48c"
+  },
+  "externalObservations": [
+    {
+      "id": "VADASZ400",
+      "basis": "per100g",
+      "declaredCarbohydrate": 1,
+      "url": "https://www.tesco.com/shop/en-GB/products/310844967",
+      "note": "Stir first and include the liquid in the weighed portion. Nominal label value; Waitrose and Asda agree."
+    }
+  ],
+  "composition": [
+    {
+      "id": "385",
+      "nativeId": "385",
+      "kind": "FINELI_NATIVE_POINT",
+      "name": "SEESAMINSIEMEN, KUORINEEN",
+      "nativeField": "available_carbohydrate_g_per_100g",
+      "availablePer100g": 0.9
+    },
+    {
+      "id": "F007682",
+      "nativeId": "F007682",
+      "kind": "AFCD_NATIVE_POINT",
+      "name": "Rice, white, uncooked",
+      "nativeField": "available_carbohydrate_without_sugar_alcohols_g_per_100g",
+      "availablePer100g": 74
+    },
+    {
+      "id": "F009176",
+      "nativeId": "F009176",
+      "kind": "AFCD_NATIVE_POINT",
+      "name": "Tofu (soy bean curd), firm, as purchased",
+      "nativeField": "available_carbohydrate_without_sugar_alcohols_g_per_100g",
+      "availablePer100g": 0
+    }
+  ],
+  "giBinding": {
+    "nativeId": "ehold-rice-jasmine68",
+    "allowedCompositionIds": [
+      "F007682"
+    ],
+    "meaning": "Named cooked white jasmine rice GI 68, European cohort; exact application pending.",
+    "sourceUrl": "https://doi.org/10.1186/1475-2891-13-50"
+  }
+}

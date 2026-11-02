@@ -28,8 +28,8 @@ test('the four A inputs and legacy variants remain intact as four approved B ver
  for(const previous of baseline.legacyVariants){const v=old.find(v=>v.recipeId===previous.recipeId)!;assert.equal(digest(v),previous.variantSha256,previous.recipeId);}
  const report=read('tmp/nutrition/glycemic-load-pilot.json');
  assert.deepEqual(report.gkOnlyVariants,gkOnlyVariants);assert.deepEqual(report.versionCoverage,gkVersionCoverage);
- assert.equal(gkVersionCoverage.numericRecipes,191);assert.equal(gkVersionCoverage.originalNumeric,156);assert.equal(gkVersionCoverage.additionalA,25);assert.equal(gkVersionCoverage.additionalB,10);assert.equal(gkVersionCoverage.total,326);assert.equal(gkVersionCoverage.missing,135);
- assert.deepEqual(report.coverageViews,{originalRecipe:{total:326,numeric:156,missing:170},atLeastOneExactVersion:{total:326,numeric:191,missing:135,additionalApprovedVersions:35}});
+ assert.equal(gkVersionCoverage.numericRecipes,193);assert.equal(gkVersionCoverage.originalNumeric,156);assert.equal(gkVersionCoverage.additionalA,27);assert.equal(gkVersionCoverage.additionalB,10);assert.equal(gkVersionCoverage.total,326);assert.equal(gkVersionCoverage.missing,133);
+ assert.deepEqual(report.coverageViews,{originalRecipe:{total:326,numeric:156,missing:170},atLeastOneExactVersion:{total:326,numeric:193,missing:133,additionalApprovedVersions:37}});
  assert.throws(()=>countGkVersions(report.results,[...gkOnlyVariants,four[0]]),/distinct/);
  for(const id of ['jerk-kana','sate-ayam'])assert.ok(!gkOnlyVariants.some(v=>v.recipeId===id));
 });
@@ -64,7 +64,7 @@ test('four product A versions preserve the approved calculated-part presentation
   'hernekeitto-savupotkalla': [16.22,'≈ 16,22',1.5628875],
   'uunimakkara-sipulipedilla': [0.26,gkScopeUi.fi.tiny,1.4763875],
  };
- const added = gkOnlyVariants.slice(31);
+ const added = gkOnlyVariants.slice(31,35);
  assert.deepEqual(added.map(v=>v.recipeId).sort(),Object.keys(expected).sort());
  for (const v of added) {
   const [point,display,omitted] = expected[v.recipeId as keyof typeof expected];
@@ -79,6 +79,24 @@ test('four product A versions preserve the approved calculated-part presentation
  }
  const tagine = added.find(v=>v.recipeId==='kana-tagine-sitruunalla')!;
  assert.deepEqual(gkOnlyQuantity(tagine,14,8),{amount:600,unit:'ml'});
+});
+
+test('Panang and tofu kimchi use the approved calculated portions and quantities',()=>{
+ const [panang,kimchi]=gkOnlyVariants.slice(35);
+ assert.equal(panang.recipeId,'panang-curry-kanalla-vhh');
+ assert.equal(panang.point,1.89);
+ assert.ok(Math.abs(panang.omittedCho-1.9328)<1e-10);
+ assert.deepEqual(gkOnlyQuantity(panang,6,4),{amount:15,unit:'ml'});
+ assert.equal(kimchi.recipeId,'korealainen-tofu-kimchi-aamiaiskulho');
+ assert.equal(kimchi.point,25.16);
+ assert.equal(kimchi.omittedCho,1.2);
+ assert.equal(gkOnlyQuantity(kimchi,4),null);
+ for (const variant of [panang,kimchi]) {
+  assert.equal(variant.macroScope,'NO_MACRO_PACKAGE_FOR_THIS_VERSION');
+  for (const locale of ['fi','en','sv','th'] as const) {
+   assert.ok(render(variant,locale).includes(variant.limitation![locale]));
+  }
+ }
 });
 
 test('all326 parent GK objects,23 old variants, macro sources and recipe trees remain on the main baseline',()=>{
