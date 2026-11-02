@@ -19,3 +19,11 @@ Seuraava lähdeportti on selvittää, löytyykö tietylle valutetulle bambusäil
 Tesco ilmoittaa Kingfisher Bamboo Shoots in Water 225 g / 120 g valutettuna -säilykkeelle 0,7 g CHO/100 g valutettua tuotetta. Kahdesta tölkistä punnittu 200 g antaisi 0,35 g/annos. Kingfisherin omalla tuotesivulla samat ravintoarvot on otsikoitu per 100 ml valutettuna, joten ensisijainen pakkausmerkintä on tarkistettava ennen sidontaa. [Tesco](https://www.tesco.com/shop/en-GB/products/265819146) · [Kingfisher](https://kingfisherfoods.co.uk/product-specifications/)
 
 Jos pakkaus vahvistaa massapohjan, 60 g kuorittua limeä ja alkuperäiset 15 g Squid 300 ml -kastiketta antavat yhteensä 1,7655 g/annos, eli marginaali kasvaa 0,2345 grammaan. Tämä säilyttää alkuperäisen kastikemäärän. Muutoksen kohteena on limen syötävän osuuden määrittely ja täsmällinen säilyke. Aritmeettinen skenaario odottaa pakkausmerkintää ja koko reseptin moottoritoistoa.
+
+## Pakkausmerkintä varmennettu
+
+Kahdesta tölkin takaosan kuvasta luettiin 225 g nettopaino, 120 g valutettu paino ja 0,7 g hiilihydraattia per 100 g valutettuna. Molemmissa on sama Lovering Foodsin Kiinassa pakatun tuotteen koostumus ja ravintotaulukko. Näin vähittäiskaupan massapohjainen tieto saa tuen pakkauksesta. Valmistajan verkkosivun tilavuusotsikkoa ei käytetä. Tarkastettujen kuvatiedostojen SHA-256 ovat 0f474eded95132d410aefe7e8bd622dcfa0eb7b3dede4f12fa8fc2bb60f2167e ja 4821712e8aa5c959b84a40f8961dd194dccfa2500cf6f0707494d697527e661b.
+
+[Pakkauskuva 1](https://supercostablanca.es/1547-home_default/kingfisher-sliced-bamboo-shoots-225g.jpg) · [Pakkauskuva 2](https://iseforestandgarden.com/cdn/shop/products/519gQVS1RjL_1200x1200.jpg?v=1632536072) · [Tescon massapohjainen tuotetieto](https://www.tesco.com/shop/en-GB/products/265819146)
+
+Pakkauskohtaisen syötteen nimellinen poisjättö on 1,7655 g/annos. Seuraavat portit ovat koko reseptin moottoritoisto ja tarkan sisältöversion katselmointi.
