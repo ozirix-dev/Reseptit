@@ -2,15 +2,16 @@
 
 ## Nykytila erottelun jälkeen
 
-**PR183:n Ready-sisältö on16 hyväksyttyä GK-versiota, HEAD`d98d77f`. Kuusi muuta hyväksyttyä A-versiota ovat lukitussa erillisessä haarassa`codex/gk80-six-a-isolated`, HEAD`80f4360`.22 hyväksyttyä versiota ei tarkoita22 versiota PR183:ssa eikä22 julkaistua lisäystä.**
+**PR183:n Ready-sisältö on16 hyväksyttyä GK-versiota, HEAD`d98d77f`. Kuusi muuta hyväksyttyä A-versiota ovat lukitussa erillisessä haarassa`codex/gk80-six-a-isolated`, HEAD`80f4360`.Lisäksi pad see ewin yksi tarkka A-versio on hyväksytty erillisessä tutkimusluovutuksessa.23 hyväksyttyä versiota ei tarkoita23 versiota PR183:ssa eikä23 julkaistua lisäystä.**
 
 | Näkymä | Numeerisia /326 | Ero tavoitteeseen261 |
 | --- | ---: | ---: |
 | Viimeksi varmennettu main/tuotanto |156 (47,85%) |105 |
 | Codex1:n PR183:n16 version julkaisuehdokas |172 (52,76%) |89 |
-| Molemmat erät joskus erikseen katselmoitu, integroitu ja julkaistu |178 (54,60%) |83 |
+| Molemmat aiemmat erät joskus erikseen katselmoitu, integroitu ja julkaistu |178 (54,60%) |83 |
+| Lisäksi hyväksytty pad see ew myöhemmin erikseen integroituna ja julkaistuna |179 (54,91%) |82 |
 
-Yhteisessä34 reseptin laskenta-aineistossa22 versiolla on menetelmä- tai sisältöhyväksyntä eri vaiheissa:16 integraatiossa ja6 erillään.12 reseptiltä puuttuu hyväksytty versio; niistä6 pysyy valmistetun ruoan lähde-HOLDissa.30 lähdekelpoisen julkaisuehdokkaan tavoitetta ei ole osoitettu. Uuden B-poisjättöprofiilin ja hernekeiton tutkimusmallin tila säilyy tutkimuksena.
+Yhteisessä34 reseptin laskenta-aineistossa23 versiolla on menetelmä- tai sisältöhyväksyntä eri vaiheissa:16 integraatiossa,6 lukitussa erässä ja1 tutkimusluovutuksessa.11 reseptiltä puuttuu hyväksytty versio; niistä6 pysyy valmistetun ruoan lähde-HOLDissa.30 lähdekelpoisen julkaisuehdokkaan tavoitetta ei ole osoitettu. Uuden B-poisjättöprofiilin ja hernekeiton tutkimusmallin tila säilyy tutkimuksena.
 
 [Nykytilakirjaus](current-state.json) ja [nykyinen päätösmatriisi:34 aritmeettista ehdotusta ja35 muuta HOLD-riippuvuutta](current-decision-matrix.csv) ovat vaiheiden ensisijaiset yhteenvedot. Aiemmat`summary.json`,`joint-*`-tiedostot ja [integraatiokuitti](integration-receipt.json) ovat historiallisia tilannekuvia. Niiden alkuperäisiä hyväksyntä-, laskenta- tai hash-kenttiä ei muutettu; nykytilaksi tulkinta on merkitty vanhentuneeksi ja ohjattu tähän uuteen kirjaukseen.
 
@@ -20,11 +21,11 @@ Uudet projektisäännöt löytyivät mainiin PR184:llä yhdistetyistä [AGENTS.m
 
 ## Laajan nuudelijatkoajon nykyinen tulos
 
-[Yksi uusi päätösraportti](noodle-campaign-report.md) ja [luovutuspaketti](noodle-campaign/manifest.json) kattavat14 nuudelireseptin yksityiskohtaisen tarkastelun sekä viiden lähdeperheen42 reseptin riippuvuuskartan. Uusi nykyisen A-aritmetiikan mukainen versio on **pad see ew: laskettu GK-osa0,73, positiivisia GI-puutteita pois1,5733g CHO/annos**. Tarkka Yutaka- ja valutetun KoRo-tuotteen sidonta vaatii uuden omistajan katselmoinnin. Hyväksyttyjä uusia versioita0 ja julkaistuja lisäyksiä0. Aritmeettisten ehdotusten koonti on34 uniikkia reseptiä; matriisin35 muuta uutta riviä ovat HOLD-riippuvuuksia.
+[Yksi uusi päätösraportti](noodle-campaign-report.md) ja [luovutuspaketti](noodle-campaign/manifest.json) kattavat14 nuudelireseptin yksityiskohtaisen tarkastelun sekä viiden lähdeperheen42 reseptin riippuvuuskartan. Uusi nykyisen A-aritmetiikan mukainen versio on **pad see ew: laskettu GK-osa0,73, positiivisia GI-puutteita pois1,5733g CHO/annos**. Käyttäjä hyväksyi tarkan Yutaka- ja valutetun KoRo-tuotteen sidonnan sekä tämän sisältöversion myöhempää integraatiota varten: [sinetöity hyväksyntäkuitti](pad-see-ew-approval.json). Uusia hyväksyttyjä versioita on1 ja julkaistuja lisäyksiä0. Jäädytetyn tutkimuspaketin approval=false-kentät kuvaavat hyväksyntää edeltänyttä40cd180-tilannetta; kuitti määrittää nykyisen rajatun hyväksynnän. Aritmeettisten ehdotusten koonti on34 uniikkia reseptiä; matriisin35 muuta uutta riviä ovat HOLD-riippuvuuksia.
 
 MEXT01050:n natiivi saatava massasumma65,0g/100g löytyi kuivaan vehnänuudeliin ja01051:n25,4 keitettyyn muotoon. Fineli120:n66,4 oli aiemmin jäänyt löytämättä, mutta RAW ei yksin varmista kuivapainoa. Dan Danin keitinvesi ja Lanzhoun siivilöity liemi sekä punnitsemattomat aromit pitävät ne HOLDissa. GI46 ja62 ovat erillisiä havaintoja; ne eivät ole hyväksytty vaihteluväli. Kookosmaidon28 riippuvuutta,25 ilman hyväksyttyä versiota, muodostavat suurimman yhteisen jatkoryhmän; osoitettu kokonainen lisätuotto tästä perheestä on0.
 
-[Aiempi rajattu lähdemuistio](followup-source-report.md) säilyy edellisen ajon historiallisena tuloksena, ei uusimman ajon tuottona. Aiemmat hyväksynnät, lähdehashit ja suojatut julkaisu-/säilytyshaarat pysyvät ennallaan. Tuotanto on edelleen156/326. Vasta kaikkien22 aiemman version ja tämän yhden uuden version erillisen hyväksynnän, integraation ja julkaisun jälkeen ehdollinen kattavuus olisi179/326 (54,91%);261:een puuttuisi82.
+[Aiempi rajattu lähdemuistio](followup-source-report.md) säilyy edellisen ajon historiallisena tuloksena, ei uusimman ajon tuottona. Aiemmat hyväksynnät, lähdehashit ja suojatut julkaisu-/säilytyshaarat pysyvät ennallaan. Tuotanto on edelleen156/326. Vasta kaikkien23 hyväksytyn version sovittujen integraatio- ja julkaisuporttien jälkeen ehdollinen kattavuus olisi179/326 (54,91%);261:een puuttuisi82.
 
 ## Historiallisten kirjausten lukuohje
 

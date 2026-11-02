@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "id": "GK80_PAD_SEE_EW_A_APPROVAL_2026_11_02",
+  "repository": "ozirix-dev/Reseptit",
+  "recipeId": "pad-see-ew-vhh-konjac",
+  "approvedCaseInputSha256": "aff3debfb7b5f7bf6f1957b68de41b1bda051e5eeb0d64a7e68fbeb92c235efc",
+  "reviewedContentCommit": "40cd1800eef1d58720d7a7ee04cda27e8078b30c",
+  "reviewedCasePath": "docs/research/afcd-polyol-03/noodle-campaign/cases.json",
+  "reviewedPacketFilesLfSha256": {
+    "cases.json": "c3d3431ffb8a9eebd429214d63aad8121d0f74a32eb1cf75c050d2e44e8e2cc7",
+    "sources.json": "8359fdd27a16955f541b0ab0de60182400833eeb081521df9af30e9c2b2b8185",
+    "engine-results.json": "f0f0c5d950d9ac56bae1f23cad22a153ad2950d3f34c976c9fe60d6ccba2d0a3",
+    "decimal-results.json": "a35966c35a2b4148784c0b3dc9fe69f79f135dde30ce7d34ccacef8fed3bd123",
+    "manifest.json": "300eb3dce3bb770e09cf2277df0b2036ae0648e3da4cbf5078004b80306f7916"
+  },
+  "recordedAtUtc": "2026-11-02T18:25:14.085948+00:00",
+  "decisionSource": "Explicit user answer in this chat to scoped async question call_a4c754b5a0b54f04bb8685a67882858e",
+  "userAnswer": "Kyllä, hyväksyn tarkan paketin myöhempään integraatioon",
+  "sourceAndContentApproved": true,
+  "currentAArithmeticAccepted": true,
+  "acceptedProductBindings": [
+    "KoRo ready-in-water product,600g weighed after draining",
+    "Yutaka named dark soy sauce product,15g; manufacturer8g CHO/100g nominal upper"
+  ],
+  "nominalCeilingLimitationAccepted": true,
+  "calculatedGkPart": 0.73,
+  "omittedChoPerServing": 1.5733,
+  "requiresIntegrationChecks": [
+    "GK_ONLY_CONTRACT_AND_MACRO_VERSION_COMPATIBILITY",
+    "SOURCE_AND_RECIPE_HASHES_STILL_MATCH",
+    "PLANNED_FUTURE_BATCH_THROUGH_CODEX_JULKAISU"
+  ],
+  "integrationAuthorizedForOwnerInLaterBatch": true,
+  "integrationOwner": "Codex1 / Codex Julkaisu",
+  "codex2ReleaseBranchWriteAuthorized": false,
+  "integratedInPr183": false,
+  "integratedAnywhere": false,
+  "published": false,
+  "readyAuthorized": false,
+  "mergeAuthorized": false,
+  "deployAuthorized": false,
+  "frozenResearchSnapshotPolicy": "Case approval=false and historical research result ownerApproval=false remain unchanged in the reviewed40cd180 packet. This separate receipt is the current scoped user approval; it is not activation or publication."
+}

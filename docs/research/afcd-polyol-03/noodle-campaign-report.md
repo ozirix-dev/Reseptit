@@ -2,6 +2,8 @@
 
 Tutkimus- ja päätösajo 2.11.2026. Codex2 / Codex Tutkimus.
 
+**Hyväksyntäpäivitys:** käyttäjä hyväksyi tämän raportin pad see ew -version lähteet ja sisällön myöhempää Codex Julkaisu -integraatiota varten. [Hyväksyntäkuitti](pad-see-ew-approval.json) sitoo päätöksen tarkkaan40cd180-sisältöön ja syötehashiin. Hyväksyttyjä mutta julkaisemattomia versioita on nyt23; integraatiota tai julkaisua ei tehty. Alla oleva tutkimustulos ja paketin ownerApproval=false-kentät ovat hyväksyntää edeltänyt tilannekuva. `audit-campaign.py` rakentaa saman historiallisen tutkimustilan, ei tämän myöhemmän hyväksynnän nykytilaa. Nykytila on `current-state.json`:ssa ja yhteisessä päätösmatriisissa.
+
 ## A. Rajaus ja luovutus
 
 Lähtö-HEAD `c850f479dc88322520ab452876501f1d9909be40`, oma haara

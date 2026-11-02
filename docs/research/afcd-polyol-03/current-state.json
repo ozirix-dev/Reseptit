@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "recordRole": "CURRENT_STATE_AFTER_SEPARATION",
-  "observedAtUtc": "2026-11-02T18:09:28.917670+00:00",
+  "observedAtUtc": "2026-11-02T18:25:14.085948+00:00",
   "repository": "ozirix-dev/Reseptit",
   "role": "Codex2 / Codex Tutkimus",
   "ownedWorktree": "D:\\Projects\\tmp\\reseptit-afcd-polyol-03-gk80-handoff",
@@ -44,12 +44,12 @@
     "productionGapTo261": 105,
     "productionPercent": 47.85,
     "distinctArithmeticProposalRecipes": 34,
-    "methodOrContentApprovedVersionsAcrossSeparateBatches": 22,
+    "methodOrContentApprovedVersionsAcrossSeparateBatches": 23,
     "approvedIntegratedInPr183": 16,
-    "approvedParkedSeparately": 6,
-    "distinctRecipesWithoutApprovedVersion": 12,
+    "approvedParkedSeparately": 7,
+    "distinctRecipesWithoutApprovedVersion": 11,
     "knownPreparedFoodSourceHolds": 6,
-    "otherPendingRecipes": 6,
+    "otherPendingRecipes": 5,
     "conditionalAfterBothBatchesReleased": 178,
     "conditionalPercent": 54.6,
     "conditionalGapTo261": 83,
@@ -58,7 +58,12 @@
     "newPublishedResults": 0,
     "decisionMatrixRowsIncludingNewHolds": 69,
     "arithmeticCountScope": "34 prepared arithmetic proposal recipe IDs: prior33 plus one new source-based A version; the other35 matrix rows are newly indexed HOLD dependencies, not arithmetic candidates.",
-    "legacyCorrectionFieldsNote": "Fields mentioning ThisCorrection refer to the prior correction pass. Latest campaign counts are in latestResearchPass; production and owner approvals did not change."
+    "legacyCorrectionFieldsNote": "Fields mentioning ThisCorrection refer to the prior correction pass. Latest campaign counts are in latestResearchPass; production and owner approvals did not change.",
+    "approvedLockedSix": 6,
+    "approvedResearchHandoff": 1,
+    "conditionalAfterAll23ApprovedVersionsReleased": 179,
+    "conditionalAfterAll23Percent": 54.91,
+    "conditionalAfterAll23GapTo261": 82
   },
   "historicalEvent": {
     "temporaryIntegrationHead": "80f4360435b978d1cfa81088df1414430a88c222",
@@ -120,6 +125,17 @@
     "potentialOnlyAfter22AlreadyApprovedAndThisVersionSeparatelyReviewedAndReleased": 179,
     "potentialPercent": 54.91,
     "potentialGapTo261": 82,
-    "nextHighDependencySourceFamily": "COCONUT_MILK:28 dependencies,25 without approved version; eight also depend on curry paste. Not a25-result promise."
+    "nextHighDependencySourceFamily": "COCONUT_MILK:28 dependencies,25 without approved version; eight also depend on curry paste. Not a25-result promise.",
+    "recordRole": "FROZEN_RESEARCH_PASS_40cd180_BEFORE_NEW_OWNER_APPROVAL; current approval is overlaid separately"
+  },
+  "approvedResearchHandoff": {
+    "recipeId": "pad-see-ew-vhh-konjac",
+    "inputSha256": "aff3debfb7b5f7bf6f1957b68de41b1bda051e5eeb0d64a7e68fbeb92c235efc",
+    "reviewedContentHead": "40cd1800eef1d58720d7a7ee04cda27e8078b30c",
+    "sourceAndContentApproved": true,
+    "receipt": "pad-see-ew-approval.json",
+    "futureIntegrationOwner": "Codex1 / Codex Julkaisu",
+    "integrated": false,
+    "published": false
   }
 }
