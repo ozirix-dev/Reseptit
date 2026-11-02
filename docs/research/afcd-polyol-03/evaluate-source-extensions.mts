@@ -1,16 +1,107 @@
-// Read-only computation against the pinned common pilot; all outputs stay outside Git.
-import fs from 'node:fs/promises';import path from 'node:path';import {createHash} from 'node:crypto';import assert from 'node:assert/strict';import {pathToFileURL} from 'node:url';import {execFileSync} from 'node:child_process';
-const root=path.resolve(process.argv[2]),snapshot=path.resolve(process.argv[3]),data=path.resolve(process.argv[4]),out=path.resolve(process.argv[5]);let parent=out;while(true){try{parent=await fs.realpath(parent);break;}catch(e:any){if(e.code!=='ENOENT')throw e;parent=path.dirname(parent);}}try{execFileSync('git',['rev-parse','--show-toplevel'],{cwd:parent,stdio:'ignore'});throw Error('External scratch output required');}catch(e:any){if(e.status!==128)throw e;}await fs.mkdir(out,{recursive:true});
-const read=async(p:string)=>JSON.parse(await fs.readFile(p,'utf8')),digest=(v:any)=>createHash('sha256').update(JSON.stringify(v)).digest('hex');
-const {evaluate}=await import(pathToFileURL(snapshot+'/model-runner.mts').href),pack=await read(snapshot+'/cases.json'),baseResults=(await read(snapshot+'/results.json')).results,baseComps=(await read(snapshot+'/composition-sources.json')).records,baseGis=(await read(snapshot+'/gi-sources.json')).records,addedComps=(await read(data+'/composition-sources.json')).records,addedGis=(await read(data+'/gi-sources.json')).records,observations=await read(data+'/source-observations.json'),method=await read(data+'/method.json'),cases=(await fs.readFile(data+'/cases.jsonl','utf8')).trim().split('\n').map(JSON.parse);
-assert.deepEqual(method.newCases,cases.map((c:any)=>({recipeId:c.recipeId,inputSha256:c.inputSha256})));assert.equal(method.activation,false);assert.equal(method.ownerApproval,false);assert.equal(method.newMainFoodGi50Default,false);assert.equal(method.sourceOnlyCoreRulesChanged,false);
-const afcd=(await read(root+'/docs/nutrition/afcd-release-3-reference.json')).foods,fi=(await read(root+'/docs/nutrition/fineli-release-20-reference.json')).foods;
-for(const c of addedComps){const native=(c.kind==='FINELI_CHOAVL'?fi:afcd).find((n:any)=>n.source_id===c.nativeId);assert.ok(native);assert.equal(digest(native),c.nativeRowSha256);assert.equal(c.availablePer100g,c.kind==='FINELI_CHOAVL'?native.per100g.available_carbohydrate_g_per_100g:native.available_carbohydrate_without_sugar_alcohols_g_per_100g);}
-for(const g of addedGis){let source:any;if(g.path.startsWith('docs/research/afcd-polyol-03/source-extensions/'))source=observations;else if(g.path.startsWith('docs/nutrition/gk80-operation149/'))source=await read(snapshot+'/'+path.basename(g.path));else source=await read(root+'/'+g.path);const rows=Array.isArray(source)?source:source.records,native=rows.find((n:any)=>n.id===g.nativeId);assert.ok(native);assert.equal(digest(native),g.nativeRowSha256);assert.deepEqual(g.values,typeof native.gi==='number'?[native.gi]:native.values);}
-const comps=[...baseComps,...addedComps],gis=[...baseGis.filter((g:any)=>!addedGis.some((a:any)=>a.id===g.id)),...addedGis];assert.equal(new Set(comps.map((c:any)=>c.id)).size,comps.length,'Unique source identities');
-for(const c of pack.cases)assert.deepEqual(evaluate(c,comps,gis),baseResults.find((r:any)=>r.recipeId===c.recipeId),'Existing shared result preserved: '+c.recipeId);
-const rows=[],numericIds=new Set(baseResults.filter((r:any)=>r.numericProposal).map((r:any)=>r.recipeId)),allResults=[];
-for(const c of cases){assert.ok(pack.selectedRecipeIds.includes(c.recipeId));assert.ok(!numericIds.has(c.recipeId));assert.equal(c.approval,false);const {inputSha256,...body}=c;assert.equal(digest(body),inputSha256);for(const [locale,p] of Object.entries(c.paths)){const t=await fs.readFile(root+'/'+p,'utf8');assert.equal(createHash('sha256').update(t.replaceAll('\r\n','\n')).digest('hex'),c.recipeSha256[locale]);}const r=evaluate(c,comps,gis);assert.equal(r.numericProposal,true,r.blockers.join('; '));if(c.level==='B'){assert.equal(r.omittedCho,0);assert.equal(r.unknownGiCho,0);}else{assert.equal(r.point,10.92);assert.equal(r.omittedCho,0.3);}assert.equal(r.publicationAuthorized,false);numericIds.add(c.recipeId);allResults.push(r);rows.push({recipeId:c.recipeId,level:c.level,point:r.point??'',sourceScenarioMin:r.scenarioRange?.min??'',sourceScenarioMax:r.scenarioRange?.max??'',rangeKind:r.rangeKind,dominantUncertainty:r.dominantUncertainty,omittedCho:r.omittedCho,unknownGiCho:r.unknownGiCho,newMainFoodGi50Default:false,existingTrace50StillPending:c.requiredDecisions.includes('EXISTING_PROPOSED_TRACE50_CONTRACT'),inputSha256:c.inputSha256,publicationAuthorized:false});}
-const csv=(rows:any[])=>{const k=Object.keys(rows[0]);return [k.join(','),...rows.map(r=>k.map(x=>'"'+String(r[x]??'').replaceAll('"','""')+'"').join(','))].join('\n')+'\n';};
-const summary={existingNumeric:156,previousSharedCandidates:numericIds.size-cases.length,verifiedExtensionA:cases.filter((c:any)=>c.level==='A').length,newSourceFirstB:cases.filter((c:any)=>c.level==='B').length,newDistinctBeyondCurrentUpstream17:1,totalPreparedCandidates:numericIds.size,a:baseResults.filter((r:any)=>r.numericProposal&&r.level==='A').length+cases.filter((c:any)=>c.level==='A').length,b:baseResults.filter((r:any)=>r.numericProposal&&r.level==='B').length+cases.filter((c:any)=>c.level==='B').length,classOnly:0,approvedNewPublished:0,conditionalCoverage:156+numericIds.size,denominator:326,percent:Number(((156+numericIds.size)/326*100).toFixed(2)),target30Shortfall:30-numericIds.size,target80Percent:261,remainingTo80AfterAllCandidateApprovals:261-156-numericIds.size,assumptionResearchCasesCounted:0,publicationAuthorized:false};
-await fs.writeFile(out+'/source-first-candidates.csv',csv(rows));await fs.writeFile(out+'/source-first-results.json',JSON.stringify({summary,results:allResults},null,2)+'\n');console.log(JSON.stringify({summary,results:rows},null,2));
+// Read-only proposal arithmetic; outputs are restricted to external non-Git scratch.
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import {createHash} from 'node:crypto';
+import assert from 'node:assert/strict';
+import {pathToFileURL} from 'node:url';
+import {execFileSync} from 'node:child_process';
+import {labelAvailableUpper} from './label-carbohydrate-upper';
+
+const [root,snapshot,data,out]=process.argv.slice(2).map(p=>path.resolve(p));
+if (![root,snapshot,data,out].every(Boolean)) throw Error('ROOT SNAPSHOT DATA EXTERNAL_OUT required');
+let parent=out;
+while (true) {
+  try { parent=await fs.realpath(parent);break; }
+  catch(e:any) { if(e.code!=='ENOENT') throw e;parent=path.dirname(parent); }
+}
+try {
+  execFileSync('git',['rev-parse','--show-toplevel'],{cwd:parent,stdio:'ignore'});
+  throw Error('External scratch output required');
+} catch(e:any) { if(e.status!==128) throw e; }
+const read=async(p:string)=>JSON.parse(await fs.readFile(p,'utf8'));
+const digest=(v:any)=>createHash('sha256').update(JSON.stringify(v)).digest('hex');
+const textHash=(v:string)=>createHash('sha256').update(v.replaceAll('\r\n','\n')).digest('hex');
+const {evaluate}=await import(pathToFileURL(snapshot+'/model-runner.mts').href);
+const pack=await read(snapshot+'/cases.json');
+const baseResults=(await read(snapshot+'/results.json')).results;
+const baseComps=(await read(snapshot+'/composition-sources.json')).records;
+const baseGis=(await read(snapshot+'/gi-sources.json')).records;
+const addedComps=(await read(data+'/composition-sources.json')).records;
+const addedGis=(await read(data+'/gi-sources.json')).records;
+const observations=await read(data+'/source-observations.json');
+const products=await read(data+'/product-observations.json');
+const method=await read(data+'/method.json');
+const cases=(await fs.readFile(data+'/cases.jsonl','utf8')).trim().split('\n').map(JSON.parse);
+for (const key of ['activation','ownerApproval','readyAuthorized','mergeAuthorized','deployAuthorized','newMainFoodGi50Default','sourceOnlyCoreRulesChanged']) assert.equal(method[key],false,key);
+assert.equal(method.baseHead,'7127c0014edd525ac2ced97cf36b3eb511032ae2');
+assert.deepEqual(method.newCases,cases.map((c:any)=>({recipeId:c.recipeId,inputSha256:c.inputSha256})));
+const afcd=(await read(root+'/docs/nutrition/afcd-release-3-reference.json')).foods;
+const fi=(await read(root+'/docs/nutrition/fineli-release-20-reference.json')).foods;
+for (const c of addedComps) {
+  if(c.kind==='LABEL_CARBOHYDRATE_UPPER') {
+    assert.equal(c.path,'docs/research/afcd-polyol-03/source-extensions/product-observations.json');
+    assert.equal(c.nativeField,'carbohydrate');
+    const o=products.records.find((o:any)=>o.id===c.nativeId);
+    assert.ok(o);assert.equal(digest(o),c.nativeRowSha256);
+    const bound=labelAvailableUpper(o,'g');
+    assert.equal(bound.availableUpper,c.availablePer100g);assert.equal(bound.totalPolyols,null);
+    // Actual rejected source classes: per100ml, unknown CHO and implicit zero.
+    assert.throws(()=>labelAvailableUpper({...o,basisUnit:'ml'},'g'));
+    assert.throws(()=>labelAvailableUpper({...o,carbohydrate:null},'g'));
+    assert.equal(labelAvailableUpper({...o,carbohydrate:0},'g').valueState,'SOURCE_DECLARED_ZERO');
+    continue;
+  }
+  assert.ok(['FINELI_CHOAVL','AFCD_WITHOUT_SUGAR_ALCOHOLS'].includes(c.kind));
+  const isFi=c.kind==='FINELI_CHOAVL';
+  const native=(isFi?fi:afcd).find((n:any)=>n.source_id===c.nativeId);
+  assert.ok(native);assert.equal(digest(native),c.nativeRowSha256);
+  assert.equal(c.nativeField,isFi?'per100g.available_carbohydrate_g_per_100g':'available_carbohydrate_without_sugar_alcohols_g_per_100g');
+  assert.equal(c.availablePer100g,isFi?native.per100g.available_carbohydrate_g_per_100g:native.available_carbohydrate_without_sugar_alcohols_g_per_100g);
+}
+for (const g of addedGis) {
+  let source:any;
+  if(g.path.startsWith('docs/research/afcd-polyol-03/source-extensions/')) source=observations;
+  else if(g.path.startsWith('docs/nutrition/gk80-operation149/')) source=await read(snapshot+'/'+path.basename(g.path));
+  else source=await read(root+'/'+g.path);
+  const native=(Array.isArray(source)?source:source.records).find((n:any)=>n.id===g.nativeId);
+  assert.ok(native);assert.equal(digest(native),g.nativeRowSha256);
+  assert.deepEqual(g.values,typeof native.gi==='number'?[native.gi]:native.values);
+  assert.ok(['NAMED_HUMAN_GI','EXISTING_PUBLISHED_CODING','PROPOSED_B_CODING'].includes(g.kind));
+}
+const comps=[...baseComps,...addedComps];
+const gis=[...baseGis.filter((g:any)=>!addedGis.some((a:any)=>a.id===g.id)),...addedGis];
+assert.equal(new Set(comps.map((c:any)=>c.id)).size,comps.length);
+assert.equal(new Set(gis.map((g:any)=>g.id)).size,gis.length);
+for(const c of pack.cases) assert.deepEqual(evaluate(c,comps,gis),baseResults.find((r:any)=>r.recipeId===c.recipeId),'Existing19 result preserved: '+c.recipeId);
+const priority=(await fs.readFile(snapshot+'/hold-screen.csv','utf8')).trim().split('\n');
+// The user explicitly selected the existing39 model +38 product/preparation cohort.
+const eligibleIds=new Set(priority.slice(1).filter(line=>/^[^,]+,[23],/.test(line)).map(line=>line.split(',')[0]));
+assert.equal(eligibleIds.size,77);
+const numericIds=new Set(baseResults.filter((r:any)=>r.numericProposal).map((r:any)=>r.recipeId));
+const rows:any[]=[],allResults:any[]=[];
+for(const c of cases) {
+  assert.ok(eligibleIds.has(c.recipeId));assert.ok(!numericIds.has(c.recipeId));
+  assert.equal(c.approval,false);assert.equal(c.macroAction,'PRESERVE_ALL_CURRENT_VALUES_AND_WITHHOLDINGS');
+  assert.ok(c.requiredDecisions.includes('GK_ONLY_CONTRACT'));
+  const {inputSha256,...body}=c;assert.equal(digest(body),inputSha256);
+  for(const [locale,p] of Object.entries(c.paths)) assert.equal(textHash(await fs.readFile(root+'/'+p,'utf8')),c.recipeSha256[locale]);
+  for(const i of c.candidateIngredients) if(comps.find((f:any)=>f.id===i.compositionId)?.kind==='LABEL_CARBOHYDRATE_UPPER') assert.equal(i.carbohydrateUse,'UPPER_BOUND');
+  if(c.recipeId==='japanilainen-dashimaki-tamago-aamiaislautasella') {
+    const o=products.records.find((o:any)=>o.id==='hondashi-th-dilution');
+    assert.equal(o.powderGrams*o.recipePreparedSoupMl,o.recipePowderGrams*o.preparedSoupMl);
+    assert.equal(c.candidateIngredients.find((i:any)=>i.compositionId==='physical').grams,o.recipePowderGrams);
+  }
+  const r=evaluate(c,comps,gis);assert.equal(r.numericProposal,true,r.blockers.join('; '));
+  if(c.level==='B') { assert.equal(r.omittedCho,0);assert.equal(r.unknownGiCho,0); }
+  else { assert.ok(r.omittedCho<2);assert.ok(r.unknownGiCho<=r.omittedCho+1e-9); }
+  assert.equal(r.publicationAuthorized,false);numericIds.add(c.recipeId);allResults.push(r);
+  rows.push({recipeId:c.recipeId,level:c.level,point:r.point??'',sourceScenarioMin:r.scenarioRange?.min??'',sourceScenarioMax:r.scenarioRange?.max??'',rangeKind:r.rangeKind,dominantUncertainty:r.dominantUncertainty,omittedCho:r.omittedCho,unknownGiCho:r.unknownGiCho,newMainFoodGi50Default:false,inputSha256:c.inputSha256,publicationAuthorized:false});
+}
+const total=numericIds.size;
+const summary={existingNumeric:156,previousSharedCandidates:16,verifiedExtensionA:cases.filter((c:any)=>c.level==='A').length,verifiedExtensionB:cases.filter((c:any)=>c.level==='B').length,newDistinctBeyondCurrentUpstream17:total-17,totalPreparedCandidates:total,a:baseResults.filter((r:any)=>r.numericProposal&&r.level==='A').length+cases.filter((c:any)=>c.level==='A').length,b:baseResults.filter((r:any)=>r.numericProposal&&r.level==='B').length+cases.filter((c:any)=>c.level==='B').length,classOnly:0,approvedNewPublished:0,conditionalCoverage:156+total,denominator:326,percent:Number(((156+total)/326*100).toFixed(2)),target30Shortfall:30-total,target80Percent:261,remainingTo80AfterAllCandidateApprovals:261-156-total,assumptionResearchCasesCounted:0,publicationAuthorized:false};
+const keys=Object.keys(rows[0]);
+const csv=[keys.join(','),...rows.map(r=>keys.map(k=>'"'+String(r[k]??'').replaceAll('"','""')+'"').join(','))].join('\n')+'\n';
+await fs.mkdir(out,{recursive:true});
+await fs.writeFile(out+'/source-first-candidates.csv',csv);
+await fs.writeFile(out+'/source-first-results.json',JSON.stringify({summary,results:allResults},null,2)+'\n');
+console.log(JSON.stringify({summary,results:rows.map(({dominantUncertainty,...r})=>r)},null,2));

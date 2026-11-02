@@ -77,7 +77,7 @@
       "nativeRowSha256": "d977dc0e145519ada95c1d0a3fd234e83847372c190d414b35350fec63747fbd",
       "sourceUrl": "https://doi.org/10.2337/dc08-1239",
       "locator": "Conclusions, low-carbohydrate product assignment",
-      "limitation": "Project published-imputation assignment, not measured ingredient or meal GI. Not tested cream, cheese or butter. Excludes plant drinks and sweetened dairy. Named Fineli620 unsweetened Bulgarian yogurt application needs explicit review; no approval inferred from the other16 versions.",
+      "limitation": "Project published-imputation assignment, not measured ingredient or meal GI. Not tested cream, cheese or butter. Excludes plant drinks and sweetened dairy. Named Fineli620 unsweetened Bulgarian yogurt application needs explicit review; no approval inferred from the other16 versions. Additional named unsweetened yogurt32201 application; original16 approval does not authorize this recipe.",
       "allowedCompositionIds": [
         "11571",
         "29065",
@@ -94,7 +94,8 @@
         "655",
         "684",
         "parmesan",
-        "620"
+        "620",
+        "32201"
       ]
     },
     {
@@ -117,6 +118,97 @@
       "nativeRowSha256": "299a0bff9c4cdd4d24c0c56d9db8f192267ffe8cba6672348d3a8d1303db2c7b",
       "allowedCompositionIds": [
         "11049"
+      ]
+    },
+    {
+      "id": "persimmon61",
+      "kind": "NAMED_HUMAN_GI",
+      "values": [
+        61
+      ],
+      "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+      "tablePdf": "https://nutritotal.com.br/pro/wp-content/uploads/sites/3/2021/09/Tabela1_IG.pdf",
+      "tablePdfSha256": "e930c4a090697abd4f7331a64837b524cf4701513cbb9865a739f4f9fb131061",
+      "locator": "Supplement1 printed page78 item1163",
+      "food": "Persimmon, Diospyros kaki, Italy2004",
+      "reference": "Glucose2h",
+      "scale": "GLUCOSE_100",
+      "limitation": "Source reports >=9 healthy participants, exact cultivar/ripeness/peeling incompletely stated. Raw ordinary kaki application, no dried/cooked fruit. Not a measured yogurt/tea mixture or error bound.",
+      "path": "docs/research/afcd-polyol-03/source-extensions/source-observations.json",
+      "nativeId": "persimmon61",
+      "nativeRowSha256": "edc8730bd542f129a7f51b05ec243e5771edcc8b891cd1e076bd5d70ff186af2",
+      "allowedCompositionIds": [
+        "33038"
+      ],
+      "referenceNumber": "UO14",
+      "healthyParticipantsMinimum": 9
+    },
+    {
+      "id": "wild-blueberry53",
+      "kind": "NAMED_HUMAN_GI",
+      "values": [
+        53
+      ],
+      "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+      "tablePdf": "https://nutritotal.com.br/pro/wp-content/uploads/sites/3/2021/09/Tabela1_IG.pdf",
+      "tablePdfSha256": "e930c4a090697abd4f7331a64837b524cf4701513cbb9865a739f4f9fb131061",
+      "locator": "Supplement1 printed page74 item1092",
+      "food": "Wild blueberries, Wild Blueberries Association Canada,2004-2007",
+      "reference": "Bread2h",
+      "scale": "GLUCOSE_100",
+      "limitation": "GI53 is the table glucose-scale value despite bread-reference testing; do not convert again. Tested Canadian wild blueberry is not verified as European bilberry Vaccinium myrtillus. Cross-species B analogy requires explicit owner decision; neither exact food match nor a physiological bound.",
+      "path": "docs/research/afcd-polyol-03/source-extensions/source-observations.json",
+      "nativeId": "wild-blueberry53",
+      "nativeRowSha256": "46a664bc2e0f7618d91bcf29091f9ec3ee0b64bea3806fd5ebafe7d5271a5441",
+      "allowedCompositionIds": [
+        "442"
+      ],
+      "referenceNumber": "UO5",
+      "healthyParticipants": 10
+    },
+    {
+      "id": "jasmine68",
+      "kind": "NAMED_HUMAN_GI",
+      "values": [
+        68
+      ],
+      "path": "docs/nutrition/glycemic-index-records.json",
+      "nativeId": "ehold-rice-jasmine68",
+      "nativeRowSha256": "8db54250fd0c6f96da967f5ccc0d4112d099cc41cd29d450073b1a68f0b8bd7a",
+      "sourceUrl": "https://doi.org/10.1186/1475-2891-13-50",
+      "locator": "Table2 European cohort glucose-reference column",
+      "limitation": "European cohort selected consistently, not pooled with Chinese cohort. Other cohort means and CIs are not food-preparation bounds. Brown sugar is only an applied sucrose-dominant analogy.",
+      "allowedCompositionIds": [
+        "F007682"
+      ]
+    },
+    {
+      "id": "low50",
+      "kind": "EXISTING_PUBLISHED_CODING",
+      "values": [
+        50
+      ],
+      "path": "docs/nutrition/glycemic-index-records.json",
+      "nativeId": "op142-lowcho50-v2",
+      "nativeRowSha256": "2bdac980b38c841b2f0d0d5783b30b6fe581ef0ab3136aa65c312df3f8c0b460",
+      "sourceUrl": "https://doi.org/10.1016/j.jfca.2007.02.004",
+      "locator": "Author presentation slide 12",
+      "limitation": "Project published-imputation assignment, not measured ingredient or meal GI. Published low-carbohydrate default. The <=5 g/100 g operational cutoff and named bindings are explicit project interpretation, not a threshold validated by Schakel. Excludes ordinary fruit, flour, concentrated sauce and nuts above the cutoff. Explicit new named raw whole-hazelnut375 binding under unchanged <=5g/100g project cutoff;3.4g/100g. Not measured hazelnut GI, not an almond-flour default.",
+      "allowedCompositionIds": [
+        "11557",
+        "11562",
+        "11565",
+        "30315",
+        "30792",
+        "345",
+        "34972",
+        "7600",
+        "8513",
+        "858",
+        "F003337",
+        "F008065",
+        "F009176",
+        "375"
       ]
     }
   ]

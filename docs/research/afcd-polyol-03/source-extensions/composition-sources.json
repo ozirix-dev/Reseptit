@@ -83,6 +83,102 @@
       "name": "JOGURTTI, MAUSTAMATON, BULGARIAN, RASVAA 3,9%",
       "polyols": "UNKNOWN_OR_UNUSED; no zero inferred",
       "url": "https://fineli.fi/fineli/fi/elintarvikkeet/620"
+    },
+    {
+      "id": "muso-hojicha-label-upper",
+      "kind": "LABEL_CARBOHYDRATE_UPPER",
+      "path": "docs/research/afcd-polyol-03/source-extensions/product-observations.json",
+      "nativeId": "muso-hojicha-leaf-tlf013",
+      "nativeField": "carbohydrate",
+      "nativeRowSha256": "6341b6643ceedaee325ec1abf1ba740fc17e1f71ec5547d6d59585938f2c9e23",
+      "availablePer100g": 13.2,
+      "name": "MUSO JAS ORGANIC HOJICHA TLF013; whole dry roasted green tea leaf",
+      "polyols": "UNKNOWN; label carbohydrate is used only as source-model availableCHO upper",
+      "url": "https://muso-intl.com/wp-content/uploads/2022/01/TLF013-JAS-ORGANIC-HOJICHA-WEB.pdf"
+    },
+    {
+      "id": "33038",
+      "kind": "FINELI_CHOAVL",
+      "path": "docs/nutrition/fineli-release-20-reference.json",
+      "nativeId": "33038",
+      "nativeField": "per100g.available_carbohydrate_g_per_100g",
+      "nativeRowSha256": "bcd377be2c650ad03a5048e3e0ab42780d1e3fee9cdd03afdfd1f69eaf876664",
+      "availablePer100g": 16,
+      "name": "SHARON, KAKI, PERSIMON",
+      "polyols": "UNKNOWN_OR_UNUSED; no zero inferred",
+      "url": "https://fineli.fi/fineli/fi/elintarvikkeet/33038"
+    },
+    {
+      "id": "31",
+      "kind": "FINELI_CHOAVL",
+      "path": "docs/nutrition/fineli-release-20-reference.json",
+      "nativeId": "31",
+      "nativeField": "per100g.available_carbohydrate_g_per_100g",
+      "nativeRowSha256": "5c994243427231328c5cb20114ad9a7e726b1becfb7fa150b8b2081c8924c9ed",
+      "availablePer100g": 9.5,
+      "name": "MAUSTEKASTIKE, SOIJAKASTIKE",
+      "polyols": "UNKNOWN_OR_UNUSED; no zero inferred",
+      "url": "https://fineli.fi/fineli/fi/elintarvikkeet/31"
+    },
+    {
+      "id": "540",
+      "kind": "FINELI_CHOAVL",
+      "path": "docs/nutrition/fineli-release-20-reference.json",
+      "nativeId": "540",
+      "nativeField": "per100g.available_carbohydrate_g_per_100g",
+      "nativeRowSha256": "e36faa6e45f4a564931e014be53a572fd6a496bcc6e36acb4ba4ba680289de6a",
+      "availablePer100g": 0,
+      "name": "AURINGONKUKKAÖLJY",
+      "polyols": "UNKNOWN_OR_UNUSED; no zero inferred",
+      "url": "https://fineli.fi/fineli/fi/elintarvikkeet/540"
+    },
+    {
+      "id": "32201",
+      "kind": "FINELI_CHOAVL",
+      "path": "docs/nutrition/fineli-release-20-reference.json",
+      "nativeId": "32201",
+      "nativeField": "per100g.available_carbohydrate_g_per_100g",
+      "nativeRowSha256": "6a1dc2b2b266777bf385b3b0f7be5359a6cbea615e50b2924b235e6b9f55bfe2",
+      "availablePer100g": 4.298,
+      "name": "JOGURTTI, TURKKILAINEN/KREIKKALAINEN, RASVAA 10 %",
+      "polyols": "UNKNOWN_OR_UNUSED; no zero inferred",
+      "url": "https://fineli.fi/fineli/fi/elintarvikkeet/32201"
+    },
+    {
+      "id": "375",
+      "kind": "FINELI_CHOAVL",
+      "path": "docs/nutrition/fineli-release-20-reference.json",
+      "nativeId": "375",
+      "nativeField": "per100g.available_carbohydrate_g_per_100g",
+      "nativeRowSha256": "4d9d1cb3750ce2ff6b43282c8fe8a6897a92562a10ecad13408b019198de6f20",
+      "availablePer100g": 3.4,
+      "name": "PÄHKINÄ, HASSELPÄHKINÄ",
+      "polyols": "UNKNOWN_OR_UNUSED; no zero inferred",
+      "url": "https://fineli.fi/fineli/fi/elintarvikkeet/375"
+    },
+    {
+      "id": "442",
+      "kind": "FINELI_CHOAVL",
+      "path": "docs/nutrition/fineli-release-20-reference.json",
+      "nativeId": "442",
+      "nativeField": "per100g.available_carbohydrate_g_per_100g",
+      "nativeRowSha256": "1032eeded83c38c9357c9d7edd725063a606b90ea7ae2b363129a157bf14640f",
+      "availablePer100g": 10.182,
+      "name": "MUSTIKKA, METSÄMUSTIKKA",
+      "polyols": "UNKNOWN_OR_UNUSED; no zero inferred",
+      "url": "https://fineli.fi/fineli/fi/elintarvikkeet/442"
+    },
+    {
+      "id": "F005172",
+      "kind": "AFCD_WITHOUT_SUGAR_ALCOHOLS",
+      "path": "docs/nutrition/afcd-release-3-reference.json",
+      "nativeId": "F005172",
+      "nativeField": "available_carbohydrate_without_sugar_alcohols_g_per_100g",
+      "nativeRowSha256": "42aebeb9839b711a27d0827238e3a8d6ea10327e7eb10378f8dac25675eaf5d2",
+      "availablePer100g": 0,
+      "name": "Lemon peel, raw",
+      "polyols": "UNKNOWN_OR_UNUSED; no zero inferred",
+      "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd"
     }
   ]
 }

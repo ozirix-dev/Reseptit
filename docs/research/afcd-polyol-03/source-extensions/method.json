@@ -1,5 +1,5 @@
 {
-  "id": "SOURCE_FIRST_GK_EXTENSIONS-v2",
+  "id": "SOURCE_FIRST_GK_EXTENSIONS-v3",
   "activation": false,
   "ownerApproval": false,
   "readyAuthorized": false,
@@ -19,11 +19,23 @@
     {
       "recipeId": "intialainen-ven-pongal",
       "inputSha256": "af1bcffe2111700c2bd3f91b9f3b7d72f493db1e18e896afd887be19188bf344"
+    },
+    {
+      "recipeId": "japanilainen-dashimaki-tamago-aamiaislautasella",
+      "inputSha256": "a9f8daa4b86c5b9326eed7a0f35577ed80fcb5e306d9d106276a9f8a84ab3aa8"
+    },
+    {
+      "recipeId": "japanilainen-hojicha-jogurtti-persimonilla",
+      "inputSha256": "2f0e19fde34c89031e3e4a0a11b340b86a49b3a07a9c536d3504b797abed7413"
+    },
+    {
+      "recipeId": "rahka-marjakerroskulho",
+      "inputSha256": "309fdb4e31b5c59ed01f25d96f8d1aa865ef154a12d7391cc5e9fe0e89c8ab18"
     }
   ],
-  "notes": "Two verified extension inputs: preferred A coffee proposal already present in PR183, plus new B whole-mung pongal. One recipe counted once. Original16 method/content approved in separate pinned upstream record; extension inputs remain unapproved and unpublished.",
+  "notes": "Five verified extension inputs including preferred A coffee already in PR183. Four distinct additions beyond upstream17: pongal plus two current-A source/bound versions and one explicit bilberry B analogy. All extensions unapproved/unpublished; original16 approval retained separately. No fruit/seed quantities reduced; no almond50; label13.2 is upper only, polyols unknown.",
   "preferredCoffee": "A10.918125 agrees with PR183 additional-proposal; coffee0.3gCHO omitted by unchanged A. B source-comparator alternative excluded from unique count.",
   "upstreamCurrentHead": "54615726324d855bbfe0d72c3fc3ba58ceced9d4",
   "upstreamAlreadyContainsCoffeeProposal": true,
-  "newDistinctBeyondUpstream17": 1
+  "newDistinctBeyondUpstream17": 4
 }

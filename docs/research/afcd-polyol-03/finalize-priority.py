@@ -43,24 +43,28 @@ if len(sys.argv)>5:
  additions=[json.loads(line) for line in (source_dir/'cases.jsonl').read_text(encoding='utf-8').splitlines()]
  source_eval=load(source_results/'source-first-results.json')
  expected={r['recipeId']:r for r in source_eval['results']}
- assert len(additions)==2 and len({c['recipeId'] for c in additions})==2
+ assert len(additions)==len(expected)==len({c['recipeId'] for c in additions})
  assert not {c['recipeId'] for c in additions}&{r['recipeId'] for r in rows}
  assert all(c['recipeId'] in {r['recipeId'] for r in priority} for c in additions)
  assert all(expected[c['recipeId']]['numericProposal'] and expected[c['recipeId']]['publicationAuthorized'] is False for c in additions)
- extra_ids={c['recipeId'] for c in additions}
+ extra_ids={c['recipeId'] for c in additions};all_ids=extra_ids|{r['recipeId'] for r in rows}
  for r in priority:
   r['sourceExtensionNumeric']=r['recipeId'] in extra_ids
   r['jointPreparedNumeric']=bool(r['currentPilotNumeric'] or r['sourceExtensionNumeric'])
  writecsv('priority77.csv',priority)
+ methods.append({'methodId':'CURRENT_A_SOURCE_PRODUCT_BOUNDS','scope':'Current A physical/label upper bounds with fixed original ingredient amounts','dependentRecipes':'japanilainen-dashimaki-tamago-aamiaislautasella;japanilainen-hojicha-jogurtti-persimonilla','actualPreparedNumeric':0,'additionalBeyond16':0,'approvedNewPublished':0,'researchArithmeticOnly':0,'remainingConditions':'Exact manufacturer dilution/product and current source assignments; unchanged per-ingredient and cumulative A bounds; owner version review','risk':'Labels are source-model upper bounds, not biological limits. Hojicha also belongs to product38; count unique IDs, not row sums.','dependentRecipeCount':2})
  for m in methods:
-  ids=set(m['dependentRecipes'].split(';'))
-  selected=ids&extra_ids
-  m['actualPreparedNumeric']+=len(selected)
-  m['additionalBeyond16']+=len(selected)
+  ids=set(m['dependentRecipes'].split(';'));prepared=ids&all_ids;selected=ids&extra_ids
+  m['actualPreparedNumeric']=len(prepared);m['additionalBeyond16']=len(selected);m['preparedRecipeIds']=';'.join(sorted(prepared))
   if selected:m['remainingConditions']+='; only '+','.join(sorted(selected))+' verified; other dependent recipes remain unresolved'
-  if m['methodId']=='PULSE_PREPARATION_GROUP':m['risk']+='; cashew22-27 scenario spread does not bound mung/rice porridge uncertainty'
+  if m['methodId']=='PULSE_PREPARATION_GROUP':m['risk']+='; cashew22-27 spread does not bound mung/rice porridge uncertainty'
+  if m['methodId']=='RAW_BERRY_GI_AND_PRODUCT':m['risk']+='; bilberry proposal is explicit LOW Canadian-blueberry interspecies analogy; chia/raspberry case remains HOLD'
+ assert set().union(*(set(m['preparedRecipeIds'].split(';'))-{''} for m in methods))==all_ids
  writecsv('method-impact.csv',methods)
- summary.update({'sharedA':10,'sharedB':6,'newSupplementA':1,'newSupplementB':1,'uniqueJointNumericCandidates':18,'preparedA':11,'preparedB':7,'jointCoverage':'174/326','jointCoveragePercent':53.37,'target30Shortfall':12,'remainingAfterJointCandidatesTo80':87,'priorityUnresolvedAfterKnownB':71,'priorityUnresolvedAfterAllPrepared':69,'upstreamMethodAndContentApproved':16,'upstreamAdditionalUnapprovedCandidate':1,'newDistinctBeyondCurrentUpstream17':1,'extensionMethodAndVersionApprovalsRequired':2,'newApprovedPublishedNumeric':0,'upstreamHead':'54615726324d855bbfe0d72c3fc3ba58ceced9d4','ownerClarification':'Original16 have exact approval recorded upstream; extensions unapproved, no release approval'})
+ a=sum(r['level']=='A' for r in rows)+sum(c['level']=='A' for c in additions)
+ b=sum(r['level']=='B' for r in rows)+sum(c['level']=='B' for c in additions)
+ total=len(all_ids);conditional=156+total;unresolved=sum(not r['jointPreparedNumeric'] for r in priority)
+ summary.update({'sharedA':10,'sharedB':6,'newSupplementA':sum(c['level']=='A' for c in additions),'newSupplementB':sum(c['level']=='B' for c in additions),'uniqueJointNumericCandidates':total,'preparedA':a,'preparedB':b,'jointCoverage':str(conditional)+'/326','jointCoveragePercent':round(100*conditional/326,2),'target30Shortfall':30-total,'remainingAfterJointCandidatesTo80':261-conditional,'priorityUnresolvedAfterAllPrepared':unresolved,'upstreamMethodAndContentApproved':16,'upstreamAdditionalUnapprovedCandidate':1,'newDistinctBeyondCurrentUpstream17':total-17,'extensionMethodAndVersionApprovalsRequired':len(additions),'newApprovedPublishedNumeric':0,'upstreamHead':'54615726324d855bbfe0d72c3fc3ba58ceced9d4','ownerClarification':'Original16 exact approval recorded upstream; all supplement versions unapproved, no release approval','methodImpactRowsOverlap':'Hojicha belongs to product38 and A source/bound method; unique preparedRecipeIds union gives total, never sum row counts'})
  (out/'summary.json').write_text(json.dumps(summary,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
- base_summary.update({'finalizedCandidates':18,'A':11,'B':7,'priorityUnresolved':69,'currentUpstreamMethodContentApproved':16,'newDistinctBeyondCurrentUpstream17':1})
+ base_summary.update({'finalizedCandidates':total,'A':a,'B':b,'priorityUnresolved':unresolved,'currentUpstreamMethodContentApproved':16,'newDistinctBeyondCurrentUpstream17':total-17,'methodGroups':len(methods)})
 print(json.dumps(base_summary))

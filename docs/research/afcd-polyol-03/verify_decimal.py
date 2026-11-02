@@ -88,14 +88,15 @@ if len(sys.argv)>5:
         lo,hi,omitted,ok=calculate(case,source_comps,source_gis)
         assert ok
         result=expected_new[case['recipeId']]
-        if case['level']=='A':
-            assert omitted==d('0.3') and rounded(lo)==d(result['point'])
+        assert abs(omitted-d(result['omittedCho']))<Decimal('1e-10')
+        if result['point'] is not None:
+            assert lo==hi and rounded(lo)==d(result['point']),case['recipeId']
         else:
-            assert omitted==0
             expected_range=result['scenarioRange']
             assert abs(lo-d(expected_range['min']))<Decimal('1e-10')
             assert abs(hi-d(expected_range['max']))<Decimal('1e-10')
+        assert case['level']=='A' or omitted==0
         source_first_count+=1
-        checks.append({'recipeId':case['recipeId'],'source':'NAMED_FOOD_OBSERVATIONS','exactMin':str(lo),'exactMax':str(hi)})
-    assert source_first_count==2
+        checks.append({'recipeId':case['recipeId'],'source':'NATIVE_CHO_GI_AND_SOURCE_BOUNDS','exactMin':str(lo),'exactMax':str(hi)})
+    assert source_first_count==len(expected_new)
 print(json.dumps({'status':'PASS','sharedCasesChecked':len(pack['cases']),'sharedNumeric':base_numeric,'verifiedSourceExtensionInputs':source_first_count,'eligiblePreparedProposals':base_numeric+source_first_count,'assumptionResearchCases':len(cases),'assumptionCasesCountedTowardCoverage':False,'publicationAuthorized':False,'endpoints':checks},ensure_ascii=False,indent=2))
