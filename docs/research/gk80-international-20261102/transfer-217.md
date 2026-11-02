@@ -1,14 +1,22 @@
 # GK80 · hyväksytyt syötteet ja ehdokkaat ilman päällekkäisyyksiä
 
+## Julkaisuerät 3.11.2026
 
-## Ajantasainen tilanne 3.11.2026
+[PR 193](https://github.com/ozirix-dev/Reseptit/pull/193), pää cd1a8ef212ae30ba3dc9587da61148a20ae350a7, kokoaa neljä hyväksyttyä laskelmaa. Paella, kanatagine, hernekeitto ja uunimakkara ovat tässä integraatioerässä. PR oli tarkistushetkellä avoin Draft ja [build](https://github.com/ozirix-dev/Reseptit/actions/runs/41535280436/job/125585434790) käynnissä. PR:n esikatselun 191/326 on ehdollinen. Main on edelleen 1276116d ja viimeksi julkisesta koosteesta varmennettu luku 187/326.
+
+Panang kuuluu Codex2:n luovutuskuitin c82b8dd mukaan eri, myöhempään julkaisuomistajan erään. Syötehashi ja reseptien lähdetiivisteet on jo tarkistettu. Neljän PR 193 -reseptin ja Panangin mahdollinen julkaisu nostaisi luvun 192/326:een ja jättäisi 69 arvoa tavoitteeseen. Nämä viisi ovat alla olevan 33 ehdokkaan joukossa. Älä lisää PR 193:a toistamiseen unionin päälle.
+
+[Viiden hyväksytyn version reseptisidonta](approved-main-bindings.md) · [Viiden muun A-laskelman sisältöportit](five-a-gates.md) · [Siemengranolan nimetty tuotesidonta](granola-flakes.md)
+
+
+## Luovutus ennen PR 193:a, 3.11.2026
 
 Julkisesta listasta varmennettu **187/326**, mukana PR 192:n neljä B-versiota. Main on edelleen alla mainittu commit. Codex2:n haaran tilannekuva 07801a2 sisältää yhden uuden täsmähyväksynnän. Sitä seuraava bambulähteen täsmennys ei ole hyväksyntä.
 
 | Julkaisematon jono | Eri reseptit | Mahdollinen kertymä |
 | --- | ---: | ---: |
 | Hyväksytyt A-versiot: paella, kanatagine, hernekeitto, uunimakkara ja Panang | 5 | 192 |
-| Muut Codex1:n A-tutkimusversiot | 18 | 210 |
+| Muut Codex1:n A-tutkimusversiot, sisältö- ja lähdepäätökset avoinna | 18 | 210 |
 | Codex1:n ehdolliset B-lähdeskenaariot | 10 | 220 |
 
 **33 mahdollista lisäystä.** Joukot on verrattu reseptitunnisteittain julkisiin riveihin. Paella ja uunimakkara kuuluvat vain hyväksyttyyn jonoon. Uudet B-skenaariot ovat [manakish](manakish-study.md) ja [moussaka](moussaka-study.md). Molemmat vaativat valmistus- tai sisältövastaavuuden päätöksen. Kaikkien 33:n eteneminen julkaisuun jättäisi vielä 41 arvoa tavoitteeseen 261. Julkaistusta tasosta puuttuu 74.
