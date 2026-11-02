@@ -1,0 +1,429 @@
+{
+  "sourceCommit": "c127a715186d1d10820ae210f8cbff7d982b4444",
+  "recipes": 326,
+  "publicPackages": 259,
+  "evidencePackages": 204,
+  "legacyPackagesWithoutCurrentEvidence": 55,
+  "missingPackages": 67,
+  "currentEvidenceFiles": 212,
+  "noEvidenceFiles": 114,
+  "scenarios": [
+    {
+      "scenario": "S0",
+      "newRecipes": 0,
+      "newFields": 0,
+      "fieldsByNutrient": {
+        "netCarbohydrate": 0,
+        "totalCarbohydrate": 0,
+        "protein": 0,
+        "fat": 0
+      },
+      "restoredPackages": 0,
+      "remainingMissingFields": 268,
+      "recipesStillIncomplete": 67,
+      "gkCount": 147,
+      "gkDelta": 0,
+      "gkClassChanges": 0,
+      "numericConflicts": 0,
+      "newRecipeIds": [],
+      "unknownRecipesWithoutCurrentMacroEvidence": 114,
+      "withdrawnPackagesNotReused": 2,
+      "safeProductionActivation": "NOT_AUTHORIZED"
+    },
+    {
+      "scenario": "S1",
+      "newRecipes": 4,
+      "newFields": 8,
+      "fieldsByNutrient": {
+        "netCarbohydrate": 0,
+        "totalCarbohydrate": 0,
+        "protein": 4,
+        "fat": 4
+      },
+      "restoredPackages": 0,
+      "remainingMissingFields": 260,
+      "recipesStillIncomplete": 67,
+      "gkCount": 147,
+      "gkDelta": 0,
+      "gkClassChanges": 0,
+      "numericConflicts": 0,
+      "newRecipeIds": [
+        "janssoninkiusaus-juuriselleri",
+        "marokkolainen-couscous",
+        "paprikainen-vhh-gulassi",
+        "pasta-alla-norma"
+      ],
+      "unknownRecipesWithoutCurrentMacroEvidence": 114,
+      "withdrawnPackagesNotReused": 2,
+      "safeProductionActivation": "NOT_AUTHORIZED"
+    },
+    {
+      "scenario": "S2",
+      "newRecipes": 0,
+      "newFields": 0,
+      "fieldsByNutrient": {
+        "netCarbohydrate": 0,
+        "totalCarbohydrate": 0,
+        "protein": 0,
+        "fat": 0
+      },
+      "restoredPackages": 0,
+      "remainingMissingFields": 268,
+      "recipesStillIncomplete": 67,
+      "gkCount": 147,
+      "gkDelta": 0,
+      "gkClassChanges": 0,
+      "numericConflicts": 0,
+      "newRecipeIds": [],
+      "unknownRecipesWithoutCurrentMacroEvidence": 114,
+      "withdrawnPackagesNotReused": 2,
+      "safeProductionActivation": "NOT_AUTHORIZED"
+    },
+    {
+      "scenario": "S3_1",
+      "newRecipes": 0,
+      "newFields": 0,
+      "fieldsByNutrient": {
+        "netCarbohydrate": 0,
+        "totalCarbohydrate": 0,
+        "protein": 0,
+        "fat": 0
+      },
+      "restoredPackages": 0,
+      "remainingMissingFields": 268,
+      "recipesStillIncomplete": 67,
+      "gkCount": 147,
+      "gkDelta": 0,
+      "gkClassChanges": 0,
+      "numericConflicts": 0,
+      "newRecipeIds": [],
+      "unknownRecipesWithoutCurrentMacroEvidence": 114,
+      "withdrawnPackagesNotReused": 2,
+      "safeProductionActivation": "NOT_AUTHORIZED"
+    },
+    {
+      "scenario": "S3_1.5",
+      "newRecipes": 1,
+      "newFields": 4,
+      "fieldsByNutrient": {
+        "netCarbohydrate": 1,
+        "totalCarbohydrate": 1,
+        "protein": 1,
+        "fat": 1
+      },
+      "restoredPackages": 1,
+      "remainingMissingFields": 264,
+      "recipesStillIncomplete": 66,
+      "gkCount": 147,
+      "gkDelta": 0,
+      "gkClassChanges": 0,
+      "numericConflicts": 0,
+      "newRecipeIds": [
+        "sitruuna-yrttikana-parsa"
+      ],
+      "unknownRecipesWithoutCurrentMacroEvidence": 114,
+      "withdrawnPackagesNotReused": 2,
+      "safeProductionActivation": "NOT_AUTHORIZED"
+    },
+    {
+      "scenario": "S3_2",
+      "newRecipes": 1,
+      "newFields": 4,
+      "fieldsByNutrient": {
+        "netCarbohydrate": 1,
+        "totalCarbohydrate": 1,
+        "protein": 1,
+        "fat": 1
+      },
+      "restoredPackages": 1,
+      "remainingMissingFields": 264,
+      "recipesStillIncomplete": 66,
+      "gkCount": 147,
+      "gkDelta": 0,
+      "gkClassChanges": 0,
+      "numericConflicts": 0,
+      "newRecipeIds": [
+        "sitruuna-yrttikana-parsa"
+      ],
+      "unknownRecipesWithoutCurrentMacroEvidence": 114,
+      "withdrawnPackagesNotReused": 2,
+      "safeProductionActivation": "NOT_AUTHORIZED"
+    },
+    {
+      "scenario": "S3_relative",
+      "newRecipes": 0,
+      "newFields": 0,
+      "fieldsByNutrient": {
+        "netCarbohydrate": 0,
+        "totalCarbohydrate": 0,
+        "protein": 0,
+        "fat": 0
+      },
+      "restoredPackages": 0,
+      "remainingMissingFields": 268,
+      "recipesStillIncomplete": 67,
+      "gkCount": 147,
+      "gkDelta": 0,
+      "gkClassChanges": 0,
+      "numericConflicts": 0,
+      "newRecipeIds": [],
+      "unknownRecipesWithoutCurrentMacroEvidence": 114,
+      "withdrawnPackagesNotReused": 2,
+      "safeProductionActivation": "NOT_AUTHORIZED"
+    },
+    {
+      "scenario": "S4",
+      "newRecipes": 0,
+      "newFields": 0,
+      "fieldsByNutrient": {
+        "netCarbohydrate": 0,
+        "totalCarbohydrate": 0,
+        "protein": 0,
+        "fat": 0
+      },
+      "restoredPackages": 0,
+      "remainingMissingFields": 268,
+      "recipesStillIncomplete": 67,
+      "gkCount": 147,
+      "gkDelta": 0,
+      "gkClassChanges": 0,
+      "numericConflicts": 0,
+      "newRecipeIds": [],
+      "unknownRecipesWithoutCurrentMacroEvidence": 114,
+      "withdrawnPackagesNotReused": 2,
+      "safeProductionActivation": "NOT_AUTHORIZED"
+    },
+    {
+      "scenario": "S5",
+      "newRecipes": 0,
+      "newFields": 0,
+      "fieldsByNutrient": {
+        "netCarbohydrate": 0,
+        "totalCarbohydrate": 0,
+        "protein": 0,
+        "fat": 0
+      },
+      "restoredPackages": 0,
+      "remainingMissingFields": 268,
+      "recipesStillIncomplete": 67,
+      "gkCount": 147,
+      "gkDelta": 0,
+      "gkClassChanges": 0,
+      "numericConflicts": 0,
+      "newRecipeIds": [],
+      "unknownRecipesWithoutCurrentMacroEvidence": 114,
+      "withdrawnPackagesNotReused": 2,
+      "safeProductionActivation": "NOT_AUTHORIZED"
+    },
+    {
+      "scenario": "S6",
+      "newRecipes": 4,
+      "newFields": 9,
+      "fieldsByNutrient": {
+        "netCarbohydrate": 1,
+        "totalCarbohydrate": 0,
+        "protein": 4,
+        "fat": 4
+      },
+      "restoredPackages": 0,
+      "remainingMissingFields": 259,
+      "recipesStillIncomplete": 67,
+      "gkCount": 147,
+      "gkDelta": 0,
+      "gkClassChanges": 0,
+      "numericConflicts": 0,
+      "newRecipeIds": [
+        "janssoninkiusaus-juuriselleri",
+        "marokkolainen-couscous",
+        "paprikainen-vhh-gulassi",
+        "pasta-alla-norma"
+      ],
+      "unknownRecipesWithoutCurrentMacroEvidence": 114,
+      "withdrawnPackagesNotReused": 2,
+      "safeProductionActivation": "NOT_AUTHORIZED"
+    }
+  ],
+  "decimalComponentChecks": 828,
+  "numericConflicts": [],
+  "productionDifferences": [],
+  "productionGkSummary": [
+    326,
+    147,
+    179
+  ],
+  "productionVerifiedAtUtc": "2026-11-02T07:44:20.426778+00:00",
+  "gk": {
+    "recipes": 326,
+    "calculated": 147,
+    "insufficientSourceData": 179
+  },
+  "gkSensitivity": [
+    {
+      "perIngredientStrictlyLessThan": 1.5,
+      "cumulativeStrictlyLessThan": 2,
+      "calculated": 152,
+      "newRecipeIds": [
+        "rahkapiirakka-vhh",
+        "vhh-lihapiirakka",
+        "vhh-runebergintortut",
+        "keto-korvapuustit",
+        "paella-valenciana"
+      ],
+      "unresolved": 174,
+      "classification": "REVIEW REQUIRED; method sensitivity only, no approvals transferred"
+    },
+    {
+      "perIngredientStrictlyLessThan": 2,
+      "cumulativeStrictlyLessThan": 2,
+      "calculated": 152,
+      "newRecipeIds": [
+        "rahkapiirakka-vhh",
+        "vhh-lihapiirakka",
+        "vhh-runebergintortut",
+        "keto-korvapuustit",
+        "paella-valenciana"
+      ],
+      "unresolved": 174,
+      "classification": "REVIEW REQUIRED; method sensitivity only, no approvals transferred"
+    },
+    {
+      "perIngredientStrictlyLessThan": 1,
+      "cumulativeStrictlyLessThan": 3,
+      "calculated": 149,
+      "newRecipeIds": [
+        "siemengranola-jogurtilla",
+        "pad-see-ew-vhh-konjac"
+      ],
+      "unresolved": 177,
+      "classification": "REVIEW REQUIRED; method sensitivity only, no approvals transferred"
+    },
+    {
+      "perIngredientStrictlyLessThan": 1.5,
+      "cumulativeStrictlyLessThan": 3,
+      "calculated": 154,
+      "newRecipeIds": [
+        "siemengranola-jogurtilla",
+        "rahkapiirakka-vhh",
+        "vhh-lihapiirakka",
+        "vhh-runebergintortut",
+        "keto-korvapuustit",
+        "pad-see-ew-vhh-konjac",
+        "paella-valenciana"
+      ],
+      "unresolved": 172,
+      "classification": "REVIEW REQUIRED; method sensitivity only, no approvals transferred"
+    },
+    {
+      "perIngredientStrictlyLessThan": 2,
+      "cumulativeStrictlyLessThan": 4,
+      "calculated": 158,
+      "newRecipeIds": [
+        "siemengranola-jogurtilla",
+        "rahkapiirakka-vhh",
+        "vhh-lihapiirakka",
+        "vhh-runebergintortut",
+        "keto-korvapuustit",
+        "pad-kee-mao-vhh-konjac",
+        "pad-see-ew-vhh-konjac",
+        "keto-kauralesesampylat",
+        "nakkikastike-kukkakaalimuusi",
+        "paella-valenciana",
+        "paneer-tikka"
+      ],
+      "unresolved": 168,
+      "classification": "REVIEW REQUIRED; method sensitivity only, no approvals transferred"
+    }
+  ],
+  "gkOmissionScenario": {
+    "recipes": 147,
+    "classCanChange": 1,
+    "coreClassCanChange": 2,
+    "displayCanChange": 46,
+    "biologicalBoundEstablished": false
+  },
+  "roundingExamples": [
+    {
+      "a": "7.38",
+      "b": "7.39",
+      "sameAt1Decimal": true,
+      "meaning": "Display equality alone is not approval or a source-error bound"
+    },
+    {
+      "a": "1.04",
+      "b": "1.05",
+      "sameAt1Decimal": false,
+      "meaning": "Display equality alone is not approval or a source-error bound"
+    },
+    {
+      "a": "0.04",
+      "b": "0.05",
+      "sameAt1Decimal": false,
+      "meaning": "Display equality alone is not approval or a source-error bound"
+    }
+  ],
+  "chickenCeilings": {
+    "netCarbohydrate": "1.0432950",
+    "totalCarbohydrate": "1.0432950",
+    "protein": "0.1943000",
+    "fat": "0.0483825",
+    "kcal": "8.90375"
+  },
+  "chickenBoundDetails": [
+    {
+      "ingredientIndex": 5,
+      "item": "kuivattua jauhettua timjamia",
+      "sourceId": "170938",
+      "massG": 2,
+      "ceiling": {
+        "netCarbohydrate": "0.31970",
+        "totalCarbohydrate": "0.31970",
+        "protein": "0.04555",
+        "fat": "0.03715",
+        "kcal": "1.380"
+      },
+      "energyRule": "same-source energy"
+    },
+    {
+      "ingredientIndex": 6,
+      "item": "valkosipulijauhetta",
+      "sourceId": "171325",
+      "massG": 3.1,
+      "ceiling": {
+        "netCarbohydrate": "0.5636575",
+        "totalCarbohydrate": "0.5636575",
+        "protein": "0.1282625",
+        "fat": "0.0056575",
+        "kcal": "6.97500"
+      },
+      "energyRule": "mass * 9 kcal/g"
+    },
+    {
+      "ingredientIndex": 7,
+      "item": "jauhettua mustapippuria",
+      "sourceId": "170931",
+      "massG": 0.5,
+      "ceiling": {
+        "netCarbohydrate": "0.0799375",
+        "totalCarbohydrate": "0.0799375",
+        "protein": "0.0129875",
+        "fat": "0.0040750",
+        "kcal": "0.31375"
+      },
+      "energyRule": "same-source energy"
+    },
+    {
+      "ingredientIndex": 8,
+      "item": "hienoksi raastettua sitruunan ulkokuorta",
+      "sourceId": "167749",
+      "massG": 2,
+      "ceiling": {
+        "netCarbohydrate": "0.080",
+        "totalCarbohydrate": "0.080",
+        "protein": "0.0075",
+        "fat": "0.0015",
+        "kcal": "0.235"
+      },
+      "energyRule": "same-source energy"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "sources": [
+    {
+      "name": "afcd-nutrients.xlsx",
+      "url": "https://www.foodstandards.gov.au/sites/default/files/2025-12/AFCD%20Release%203%20-%20Nutrient%20details.xlsx",
+      "sha256": "7c455129a90e65d29840ecd188fa223cca8bdf0729b21efebc286884d69fafaa"
+    },
+    {
+      "name": "afcd-about.pdf",
+      "url": "https://www.foodstandards.gov.au/sites/default/files/2025-12/About%20the%20Australian%20Food%20Composition%20Database%20-%20Release%203.pdf",
+      "sha256": "4bab2ee27256e0f4976038c912697a35e55edd0387759c05d551baf621e1a78a"
+    }
+  ],
+  "rows": [
+    {
+      "sheet": "Proximates",
+      "row": 35,
+      "cells": {
+        "A35": "Erythritol"
+      }
+    },
+    {
+      "sheet": "Proximates",
+      "row": 36,
+      "cells": {
+        "A36": "Maltitol"
+      }
+    },
+    {
+      "sheet": "Proximates",
+      "row": 37,
+      "cells": {
+        "A37": "Xylitol"
+      }
+    },
+    {
+      "sheet": "Proximates",
+      "row": 38,
+      "cells": {
+        "A38": "Available carbohydrate, without sugar alcohols",
+        "G38": "Fructose + Glucose + Sucrose + Lactose + Maltose + Galactose + Maltotriose + Starch + Other available carbohydrates (glycogen + raffinose + stachyose + Dextrins + Maltodextrins + other undifferentiated oligosaccharides) "
+      }
+    },
+    {
+      "sheet": "Proximates",
+      "row": 39,
+      "cells": {
+        "A39": "Available carbohydrate, with sugar alcohols",
+        "G39": "Fructose + Glucose + Sucrose + Lactose + Maltose + Galactose + Maltotriose + Starch + Other available carbohydrates (glycogen + raffinose + stachyose + Dextrins + Maltodextrins + other undifferentiated oligosaccharides + sorbitol + mannitol + glycerol) "
+      }
+    }
+  ],
+  "interpretation": "The paired equations differ by sorbitol, mannitol and glycerol, not an exhaustive reported aggregate of all polyols. Without-field is source available carbohydrate; label-derived values may use a different method."
+}
