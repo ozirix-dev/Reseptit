@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "activation": false,
+  "ownerApproval": false,
+  "sourceFilesLfSha256": {
+    "docs/nutrition/fineli-release-20-reference.json": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76",
+    "docs/nutrition/afcd-release-3-reference.json": "02edf1cc95191c05edf791656a5109c41bcf4d4a3e707be69ef5009bc640022e",
+    "docs/nutrition/glycemic-index-records.json": "fb465ac8f68ffc85e29eb9900f17df00b081fa0ddc3e25d253140aecb248acda",
+    "site/scripts/glycemic-load-model.ts": "10ce09e465886e4538fc0b2ad2a54ca0b050a9e3729b7417eb0a91f2b946b48c"
+  },
+  "sourceFilesMatchObservedMain": "12cce31acaa1fcaf4516440b58a1f5c30390fdea",
+  "products": [
+    {
+      "id": "maille-dijon-fr215",
+      "name": "Maille Moutarde de Dijon L’Originale, FR215g jar",
+      "url": "https://fr.maille.com/products/moutarde-de-dijon-loriginale-215-g",
+      "observedAtUtc": "2026-11-02T21:38:54.905449+00:00",
+      "basis": "PER_100_G_AS_SOLD",
+      "declaredCarbohydrate": 3.5,
+      "availablePoint": null,
+      "polyols": null,
+      "subtractFibre": false,
+      "nominalOnlyNotLotBound": true,
+      "note": "Manufacturer FR215g per100g column; do not use different market/pack, serving-rounded value or sweet mustard.",
+      "rawFile": null,
+      "rawSha256": null,
+      "rawFetchStatus": "WEB_REVIEWED_NO_RAW_SEAL: HTTPError 429"
+    },
+    {
+      "id": "makutila-maalaislenkki",
+      "name": "Makutila Maalaislenkki",
+      "url": "https://makutila.fi/tuotevalikoima/kuluttajapakkaukset/",
+      "observedAtUtc": "2026-11-02",
+      "basis": "PER_100_G_AS_SOLD",
+      "declaredCarbohydrate": 0.2,
+      "availablePoint": null,
+      "polyols": null,
+      "subtractFibre": false,
+      "nominalOnlyNotLotBound": true,
+      "note": "Named manufacturer declaration per 100 g as sold.",
+      "rawFile": null,
+      "rawSha256": null,
+      "rawFetchStatus": "WEB_REVIEWED_NO_RAW_SEAL: HTTPError 403 on earlier manufacturer URL"
+    }
+  ],
+  "composition": [
+    {
+      "id": "335",
+      "nativeId": "335",
+      "kind": "FINELI_CHOAVL",
+      "name": "SIPULI, KELTASIPULI",
+      "availablePer100g": 4.8,
+      "process": "RAW",
+      "portionMasses": {
+        "KPL_S": 30.0,
+        "KPL_M": 55.0,
+        "KPL_L": 200.0,
+        "DL": 90.0
+      }
+    },
+    {
+      "id": "500",
+      "nativeId": "500",
+      "kind": "FINELI_CHOAVL",
+      "name": "VOI",
+      "availablePer100g": 0.8,
+      "process": "IND",
+      "portionMasses": {
+        "DL": 95.0,
+        "RKL": 14.0,
+        "TL": 4.5
+      }
+    },
+    {
+      "id": "628",
+      "nativeId": "628",
+      "kind": "FINELI_CHOAVL",
+      "name": "CREME FRAICHE, RANSKANKERMA, RASVAA 28 %",
+      "availablePer100g": 3.0,
+      "process": "IND",
+      "portionMasses": {
+        "DL": 100.0,
+        "RKL": 15.0,
+        "TL": 5.0
+      }
+    },
+    {
+      "id": "698",
+      "nativeId": "698",
+      "kind": "FINELI_CHOAVL",
+      "name": "JUUSTO, CHEDDAR, RASVAA 34 %",
+      "availablePer100g": 0.1,
+      "process": "IND",
+      "portionMasses": {
+        "KPL_M": 20.0
+      }
+    },
+    {
+      "id": "11177",
+      "nativeId": "11177",
+      "kind": "FINELI_CHOAVL",
+      "name": "MUSTAPIPPURI",
+      "availablePer100g": 38.31,
+      "process": "DRIE",
+      "portionMasses": {
+        "RKL": 6.5,
+        "TL": 2.0
+      }
+    },
+    {
+      "id": "F006316",
+      "nativeId": "F006316",
+      "kind": "AFCD_WITHOUT_SUGAR_ALCOHOLS",
+      "name": "Paprika, dry powder",
+      "availablePer100g": 19.1
+    },
+    {
+      "id": "maille-dijon-fr215",
+      "observationId": "maille-dijon-fr215",
+      "kind": "LABEL_UPPER_PER100G",
+      "declaredCarbohydrate": 3.5,
+      "availablePoint": null,
+      "polyols": null
+    },
+    {
+      "id": "makutila-maalaislenkki",
+      "observationId": "makutila-maalaislenkki",
+      "kind": "LABEL_UPPER_PER100G",
+      "declaredCarbohydrate": 0.2,
+      "availablePoint": null,
+      "polyols": null
+    }
+  ],
+  "giBindings": [
+    {
+      "id": "veg40",
+      "kind": "EXISTING_PUBLISHED_CODING",
+      "nativeId": "op142-vegetable-imputation40",
+      "gi": 40,
+      "allowedCompositionIds": [
+        "335"
+      ],
+      "sourceUrl": "https://doi.org/10.2337/dc08-1239",
+      "note": "Existing named plain non-starchy vegetable/allium/fresh-herb coding. New recipe applications need approval. Native garlic393 same named coding as approved bulgogi; no spice/paste/stock GI assignment."
+    }
+  ],
+  "pdfs": [],
+  "sourceRule": "A label cap is an omitted-CHO bookkeeping limit under the stated product and amount, not a point, GI0, or a verified lot upper bound. Physical cap is the input mass. No new GI assumption or B omission profile."
+}

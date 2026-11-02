@@ -28,8 +28,8 @@ test('the four A inputs and legacy variants remain intact as four approved B ver
  for(const previous of baseline.legacyVariants){const v=old.find(v=>v.recipeId===previous.recipeId)!;assert.equal(digest(v),previous.variantSha256,previous.recipeId);}
  const report=read('tmp/nutrition/glycemic-load-pilot.json');
  assert.deepEqual(report.gkOnlyVariants,gkOnlyVariants);assert.deepEqual(report.versionCoverage,gkVersionCoverage);
- assert.equal(gkVersionCoverage.numericRecipes,187);assert.equal(gkVersionCoverage.originalNumeric,156);assert.equal(gkVersionCoverage.additionalA,21);assert.equal(gkVersionCoverage.additionalB,10);assert.equal(gkVersionCoverage.total,326);assert.equal(gkVersionCoverage.missing,139);
- assert.deepEqual(report.coverageViews,{originalRecipe:{total:326,numeric:156,missing:170},atLeastOneExactVersion:{total:326,numeric:187,missing:139,additionalApprovedVersions:31}});
+ assert.equal(gkVersionCoverage.numericRecipes,191);assert.equal(gkVersionCoverage.originalNumeric,156);assert.equal(gkVersionCoverage.additionalA,25);assert.equal(gkVersionCoverage.additionalB,10);assert.equal(gkVersionCoverage.total,326);assert.equal(gkVersionCoverage.missing,135);
+ assert.deepEqual(report.coverageViews,{originalRecipe:{total:326,numeric:156,missing:170},atLeastOneExactVersion:{total:326,numeric:191,missing:135,additionalApprovedVersions:35}});
  assert.throws(()=>countGkVersions(report.results,[...gkOnlyVariants,four[0]]),/distinct/);
  for(const id of ['jerk-kana','sate-ayam'])assert.ok(!gkOnlyVariants.some(v=>v.recipeId===id));
 });
@@ -40,7 +40,7 @@ test('only the approved B inputs appear with outward-rounded source ranges',()=>
   'intialainen-mannasuurimoupma': ['365f6eaff17867ea8fc415dd57af8d2ef91176e2c80239dfbc0d69ac2dc2d1cc','26–27'],
   'intialainen-ven-pongal': ['88400041451f8120facd3394a151f79639d901cc4c8359f36859fe9251bc1345','40–46'],
  };
- const added = gkOnlyVariants.slice(27);
+ const added = gkOnlyVariants.slice(27,31);
  assert.deepEqual(added.map(v=>v.recipeId).sort(),Object.keys(expected).sort());
  for (const v of added) {
   const [input,range] = expected[v.recipeId as keyof typeof expected];
@@ -55,6 +55,30 @@ test('only the approved B inputs appear with outward-rounded source ranges',()=>
  }
  const pongal = added.find(v=>v.recipeId==='intialainen-ven-pongal')!;
  assert.deepEqual(gkOnlyQuantity(pongal,4,4),{amount:1400,unit:'ml'});
+});
+
+test('four product A versions preserve the approved calculated-part presentation',()=>{
+ const expected = {
+  'paella-valenciana': [40.35,'39–41',1.675],
+  'kana-tagine-sitruunalla': [21.05,'21–25',1.68725],
+  'hernekeitto-savupotkalla': [16.22,'≈ 16,22',1.5628875],
+  'uunimakkara-sipulipedilla': [0.26,gkScopeUi.fi.tiny,1.4763875],
+ };
+ const added = gkOnlyVariants.slice(31);
+ assert.deepEqual(added.map(v=>v.recipeId).sort(),Object.keys(expected).sort());
+ for (const v of added) {
+  const [point,display,omitted] = expected[v.recipeId as keyof typeof expected];
+  assert.equal(v.point,point);
+  assert.equal(gkOnlyValue(v,'fi'),display);
+  assert.ok(Math.abs(v.omittedCho-Number(omitted))<1e-10);
+  assert.equal(v.level,'A');
+  assert.equal(v.macroScope,'NO_MACRO_PACKAGE_FOR_THIS_VERSION');
+  for (const locale of ['fi','en','sv','th'] as const) {
+   assert.ok(render(v,locale).includes(v.limitation![locale]));
+  }
+ }
+ const tagine = added.find(v=>v.recipeId==='kana-tagine-sitruunalla')!;
+ assert.deepEqual(gkOnlyQuantity(tagine,14,8),{amount:600,unit:'ml'});
 });
 
 test('all326 parent GK objects,23 old variants, macro sources and recipe trees remain on the main baseline',()=>{

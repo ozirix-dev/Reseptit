@@ -1,0 +1,608 @@
+{
+  "schemaVersion": 1,
+  "profile": "EXISTING_A_STRICT_1_AND_2",
+  "activation": false,
+  "ownerApproval": false,
+  "publicationAuthorized": false,
+  "originalCohortCount": 70,
+  "cases": [
+    {
+      "recipeId": "paella-valenciana",
+      "level": "A",
+      "servings": 4,
+      "paths": {
+        "fi": "reseptit/paaruoat/paella-valenciana.md",
+        "en": "kaannokset/en/paaruoat/paella-valenciana.md",
+        "sv": "kaannokset/sv/paaruoat/paella-valenciana.md",
+        "th": "kaannokset/th/paaruoat/paella-valenciana.md"
+      },
+      "recipeSha256Lf": {
+        "fi": "49089d94833037456fa7f21b7e9b258a531c731db6f0344b2a789add6b96b3dd",
+        "en": "08774b35d965bf8664f489d6f2ee29b902ffdc927a4aea2d4ddc59716a17b50f",
+        "sv": "a2c5e9185073eebddb9233ba94bd19e3672231cdb55a3ac831b592ad4a454ca5",
+        "th": "4bb2dd4171bf2ba9e71f06c925a3f6b029427fcd35cce246c36d0706bbc684fa"
+      },
+      "originalIngredients": [
+        {
+          "amount": 700,
+          "unit": "g",
+          "item": "nahatonta ja luutonta broilerin reisilihaa"
+        },
+        {
+          "amount": 300,
+          "unit": "g",
+          "item": "puuroriisiä, kuivapaino"
+        },
+        {
+          "amount": 150,
+          "unit": "g",
+          "item": "tuoreita vihreitä papuja",
+          "note": "paloiteltuna"
+        },
+        {
+          "amount": 150,
+          "unit": "g",
+          "item": "tomaattimurskaa"
+        },
+        {
+          "amount": 1,
+          "unit": "l",
+          "item": "kanalientä"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "savupaprikajauhetta"
+        },
+        {
+          "amount": 0.25,
+          "unit": "tl",
+          "item": "sahramia"
+        },
+        {
+          "amount": 3,
+          "unit": "rkl",
+          "item": "oliiviöljyä"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "suolaa"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "rosmariinin oksa",
+          "note": "valinnainen"
+        }
+      ],
+      "candidateIngredients": [
+        {
+          "originalIndex": 0,
+          "name": "nahaton luuton broilerin reisiliha",
+          "grams": 700,
+          "compositionId": "F002806",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Original700g; plain raw lean thigh, source availableCHO0."
+        },
+        {
+          "originalIndex": 1,
+          "name": "kuiva Arborio-riisi",
+          "grams": 300,
+          "compositionId": "156",
+          "giId": "arborio69",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Original300g dry; defined Arborio white short-grain absorption-cooked version. Native porridge-rice composition proxy."
+        },
+        {
+          "originalIndex": 2,
+          "name": "tuoreet vihreät taitepavut",
+          "grams": 150,
+          "compositionId": "372",
+          "giId": "veg40",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Original150g; named fresh green beans, cooked in dish; existing vegetable40 coding."
+        },
+        {
+          "originalIndex": 3,
+          "name": "maustamaton tomaattimurska",
+          "grams": 150,
+          "compositionId": "398",
+          "giId": "veg40",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Original150g; plain crushed tomato native point; existing named vegetable40 application, no sweetened sauce."
+        },
+        {
+          "originalIndex": 4,
+          "name": "Bong tavallinen Kanafondi, tiiviste",
+          "grams": 50,
+          "compositionId": "bong-kanafondi",
+          "giId": null,
+          "carbohydrateUse": "UPPER_BOUND",
+          "note": "NEW weighed50g concentrate, actual label7g/100g; nominal cap0.875g/serv, not available point or diluted label."
+        },
+        {
+          "originalIndex": 4,
+          "name": "vesi kanaliemeen",
+          "grams": 950,
+          "compositionId": "922",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "NEW weighed950g water; stock total1000g not proven equal to original1L."
+        },
+        {
+          "originalIndex": 5,
+          "name": "savupaprikajauhe",
+          "grams": 2,
+          "compositionId": "whole-input-mass",
+          "giId": null,
+          "carbohydrateUse": "UPPER_BOUND",
+          "note": "NEW weighed2g plain smoked paprika, not tablespoon/teaspoon conversion; entire input mass cap."
+        },
+        {
+          "originalIndex": 6,
+          "name": "sahrami",
+          "grams": 0.2,
+          "compositionId": "whole-input-mass",
+          "giId": null,
+          "carbohydrateUse": "UPPER_BOUND",
+          "note": "NEW weighed0.2g saffron; entire input mass cap, no spice GI."
+        },
+        {
+          "originalIndex": 7,
+          "name": "oliiviöljy",
+          "grams": 40.5,
+          "compositionId": "536",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Original3tbsp via same Fineli536 RKL13.5g; availableCHO0."
+        },
+        {
+          "originalIndex": 8,
+          "name": "ruokasuola",
+          "grams": 6.5,
+          "compositionId": "30",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Original1tsp via same Fineli30 TL6.5g; availableCHO0."
+        },
+        {
+          "originalIndex": 9,
+          "name": "rosmariinin oksa",
+          "grams": 1,
+          "compositionId": "whole-input-mass",
+          "giId": null,
+          "carbohydrateUse": "UPPER_BOUND",
+          "note": "Original permitted optional sprig included, NEW weighed1g; remove before service, use entire input mass cap for uncertain transfer."
+        }
+      ],
+      "preparationDecision": "Chicken-only option from original note; no rabbit added. Retain700g skinless boneless thigh,300g dry white Arborio,150g fresh green beans and150g plain crushed tomato, four servings. Brown chicken in olive oil, fry beans briefly, add tomatoes and all weighed paprika. Coat dry rice in pan oil briefly. Mix all50g ordinary Bong Kanafondi with950g weighed water, heat and steep all0.2g saffron; add all stock. Use1g rosemary sprig during cooking, remove before serving; no guessed extraction. Add native teaspoon of salt. Cook original8min medium+12–15min low without stirring, rest5min and serve all rice/meat/retained cooking liquid, no draining. New stock by mass and spice weights are deliberate content quantities, not equivalences to original litres/spoons/sprig. SunRice boiled Arborio69 is a low-confidence named cooking analogue, not measured paella GI.",
+      "scenarios": [
+        {
+          "id": "FINELI156_SHORT_GRAIN",
+          "compositionOverrides": {}
+        },
+        {
+          "id": "AFCD_F007682_WHITE_DRY",
+          "compositionOverrides": {
+            "1": "F007682"
+          }
+        }
+      ],
+      "requiredDecisions": [
+        "WEIGHED_50G_FOND_950G_WATER_AND_ALL_LIQUID",
+        "ARBORIO69_BOILED_TO_PAN_ABSORPTION_ANALOGY",
+        "CHICKEN_ONLY_AND_WEIGHED_SPICES",
+        "EXACT_SOURCE_CONTENT_OWNER_ACCEPTANCE",
+        "GK_ONLY_MACRO_LANGUAGE_OWNER_INTEGRATION"
+      ],
+      "macros": "PRESERVE_CURRENT_VALUES_AND_WITHHOLDINGS; DO_NOT_INHERIT_IN_NEW_GK_VERSION",
+      "approval": false,
+      "publicationAuthorized": false,
+      "confidence": "LOW",
+      "inputSha256": "5e9c7deff4c545411210ed1c5979ff29c0c63e37c746f1cc9fcc192d11b9fa69"
+    },
+    {
+      "recipeId": "kana-tagine-sitruunalla",
+      "level": "A",
+      "servings": 4,
+      "paths": {
+        "fi": "reseptit/paaruoat/kana-tagine-sitruunalla.md",
+        "en": "kaannokset/en/paaruoat/kana-tagine-sitruunalla.md",
+        "sv": "kaannokset/sv/paaruoat/kana-tagine-sitruunalla.md",
+        "th": "kaannokset/th/paaruoat/kana-tagine-sitruunalla.md"
+      },
+      "recipeSha256Lf": {
+        "fi": "1efaed05eda7723792938f24021539622d044cfa24263c4bacad1eaddb939f49",
+        "en": "16f7bb7d26274894dd47e3c41e15685d4d32db6feaab94b5e7b151f4db98f0e8",
+        "sv": "eb2745df4d7ddaee0c3b7dbb235db8aec044f2e799b0c7061e2dd4788bc41950",
+        "th": "4ddc78d021931c5f72f84061ab0c9b325de90cefeb851a60f49ac87e2ef7ac9a"
+      },
+      "originalIngredients": [
+        {
+          "amount": 800,
+          "unit": "g",
+          "item": "broilerin koipia"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "sipuli",
+          "note": "viipaloituna"
+        },
+        {
+          "amount": 2,
+          "unit": "kpl",
+          "item": "valkosipulinkynttä",
+          "note": "hienonnettuna"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "jauhettua inkivääriä"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "kurkumaa"
+        },
+        {
+          "amount": 0.5,
+          "unit": "tl",
+          "item": "juustokuminaa"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "säilöttyä sitruunaa",
+          "note": "kuori pieneksi pilkottuna"
+        },
+        {
+          "amount": 120,
+          "unit": "g",
+          "item": "vihreitä oliiveja"
+        },
+        {
+          "amount": 3,
+          "unit": "dl",
+          "item": "kanalientä"
+        },
+        {
+          "amount": 2,
+          "unit": "rkl",
+          "item": "oliiviöljyä"
+        },
+        {
+          "amount": 10,
+          "unit": "g",
+          "item": "tuoretta korianteria",
+          "note": "silputtuna"
+        },
+        {
+          "amount": 0.5,
+          "unit": "tl",
+          "item": "suolaa"
+        }
+      ],
+      "candidateIngredients": [
+        {
+          "originalIndex": 0,
+          "name": "broilerin koivet luineen",
+          "grams": 800,
+          "compositionId": "F002809",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Original800g gross bone-in; edible plain raw thigh with skin source CHO0, no edible-yield or macro claim."
+        },
+        {
+          "originalIndex": 1,
+          "name": "keltasipuli",
+          "grams": 55,
+          "compositionId": "335",
+          "giId": "veg40",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Original one medium onion via native KPL_M55g, weigh edible55g in exact version."
+        },
+        {
+          "originalIndex": 2,
+          "name": "valkosipuli",
+          "grams": 7,
+          "compositionId": "393",
+          "giId": "veg40",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Original two medium cloves by same native KPL_M3.5g; existing named allium coding, as in approved bulgogi source use."
+        },
+        {
+          "originalIndex": 3,
+          "name": "jauhettu inkivääri",
+          "grams": 2,
+          "compositionId": "F004210",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "NEW weighed2g dried ground ginger; native positive omission, no inferred spoon mass."
+        },
+        {
+          "originalIndex": 4,
+          "name": "jauhettu kurkuma",
+          "grams": 3,
+          "compositionId": "F009335",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "NEW weighed3g dried ground turmeric; native positive omission."
+        },
+        {
+          "originalIndex": 5,
+          "name": "jauhettu juustokumina",
+          "grams": 1,
+          "compositionId": "F003327",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "NEW weighed1g dried ground cumin; native positive omission."
+        },
+        {
+          "originalIndex": 6,
+          "name": "Santa Maria Preserved Lemon Paste",
+          "grams": 40,
+          "compositionId": "santamaria-lemon-paste",
+          "giId": null,
+          "carbohydrateUse": "UPPER_BOUND",
+          "note": "NEW weighed40g homogeneous named paste instead of original one rind-only preserved lemon. Not a peeled/whole/drained fruit equivalence. Entire label cap0.72g/serv."
+        },
+        {
+          "originalIndex": 7,
+          "name": "valutetut kivettömät vihreät oliivit",
+          "grams": 120,
+          "compositionId": "34972",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Original120g defined drained pitted green brine olives; native availableCHO0, no brine mass counted."
+        },
+        {
+          "originalIndex": 8,
+          "name": "Bong tavallinen Kanafondi, tiiviste",
+          "grams": 15,
+          "compositionId": "bong-kanafondi",
+          "giId": null,
+          "carbohydrateUse": "UPPER_BOUND",
+          "note": "NEW weighed15g stock concentrate, nominal cap0.2625g/serv from named label."
+        },
+        {
+          "originalIndex": 8,
+          "name": "vesi kanaliemeen",
+          "grams": 285,
+          "compositionId": "922",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "NEW weighed285g water;300g stock does not assert original3dl density equivalence."
+        },
+        {
+          "originalIndex": 9,
+          "name": "oliiviöljy",
+          "grams": 27,
+          "compositionId": "536",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Original2tbsp via native same-food RKL13.5g; availableCHO0."
+        },
+        {
+          "originalIndex": 10,
+          "name": "tuore korianteri",
+          "grams": 10,
+          "compositionId": "34238",
+          "giId": "veg40",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Original10g fresh coriander; named existing fresh herb vegetable40 coding."
+        },
+        {
+          "originalIndex": 11,
+          "name": "ruokasuola",
+          "grams": 3.25,
+          "compositionId": "30",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Original0.5tsp via own native TL6.5g; availableCHO0."
+        },
+        {
+          "originalIndex": null,
+          "name": "tavallinen kuiva durumvehnäkuskus",
+          "grams": 200,
+          "compositionId": "29208",
+          "giId": "couscous65",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "NEW explicit original couscous-or-bread serving option:200g dry batch, all served, no pearl/wholemeal or bread substitution."
+        },
+        {
+          "originalIndex": null,
+          "name": "vesi kuskusiin",
+          "grams": 300,
+          "compositionId": "922",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "NEW300ml hot water via Fineli922 own100g/dl; all absorbed, no broth/oil addition to side."
+        }
+      ],
+      "preparationDecision": "Four servings; retain original800g bone-in chicken,120g olives and10g coriander. Brown chicken in original olive oil, soften onion55g and garlic7g, then stir in weighed2g ground ginger,3g turmeric and1g ground cumin. Return chicken; add all40g specified Santa Maria Preserved Lemon Paste and stock from15g standard Bong concentrate+285g water. Paste replaces rind-only preserved lemon; no assumed equivalence. Cover and simmer45min, then add all120g drained green olives and simmer10min; finish with original salt and10g coriander. Retain all sauce and edible chicken. Serve entire side from200g plain dry durum couscous and300ml boiling water, cover5min and fluff; no added bread, pearl grains or discarding cooking water. Hot-water ratio follows current named San Remo preparation guidance, not proof of original study exact preparation. Named65 applies only to couscous.",
+      "scenarios": [
+        {
+          "id": "FINELI29208_DRY_COUSCOUS",
+          "compositionOverrides": {}
+        },
+        {
+          "id": "AFCD_F003239_DRY_COUSCOUS",
+          "compositionOverrides": {
+            "13": "F003239"
+          }
+        }
+      ],
+      "requiredDecisions": [
+        "WEIGHED_15G_FOND_285G_WATER",
+        "40G_NAMED_LEMON_PASTE_NEW_CONTENT",
+        "EXPLICIT_200G_DRY_COUSCOUS_AND_ALL_SAUCE",
+        "NAMED_HOT_WATER_COUSCOUS65_ANALOGY",
+        "EXACT_SOURCE_CONTENT_OWNER_ACCEPTANCE",
+        "GK_ONLY_MACRO_LANGUAGE_OWNER_INTEGRATION"
+      ],
+      "macros": "PRESERVE_CURRENT_VALUES_AND_WITHHOLDINGS; DO_NOT_INHERIT_IN_NEW_GK_VERSION",
+      "approval": false,
+      "publicationAuthorized": false,
+      "confidence": "LOW",
+      "inputSha256": "1d9e7a0b626d42571ef29d35a0732982e21f9b94cff8472b9b52a8a824d42c7c"
+    },
+    {
+      "recipeId": "hernekeitto-savupotkalla",
+      "level": "A",
+      "servings": 4,
+      "paths": {
+        "fi": "reseptit/paaruoat/hernekeitto-savupotkalla.md"
+      },
+      "recipeSha256Lf": {
+        "fi": "5ecde580ab6f4707451004339aecf82bb956d9a32bfed7851e6fd9c862d2bd6d"
+      },
+      "originalIngredients": [
+        {
+          "amount": 500,
+          "unit": "g",
+          "item": "kuivattuja herneitä"
+        },
+        {
+          "amount": 700,
+          "unit": "g",
+          "item": "savupotkaa"
+        },
+        {
+          "amount": 2,
+          "unit": "l",
+          "item": "vettä"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "sipuli"
+        },
+        {
+          "amount": 2,
+          "unit": "kpl",
+          "item": "laakerinlehteä"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "meiramia"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "suolaa ja mustapippuria"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "sinappia tarjoiluun"
+        }
+      ],
+      "candidateIngredients": [
+        {
+          "originalIndex": 0,
+          "name": "kuivat vihreät kokonaiset herneet",
+          "grams": 500,
+          "compositionId": "371",
+          "giId": "marrowfat47",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Original500g dried whole green pea, not cooked weight. No guessed soaking-loss correction."
+        },
+        {
+          "originalIndex": 1,
+          "name": "Kivikylän savupotka luineen",
+          "grams": 700,
+          "compositionId": "kivikyla-savupotka",
+          "giId": null,
+          "carbohydrateUse": "UPPER_BOUND",
+          "note": "Original700g gross bone-in, named EAN2363013000008. Edible mass no greater than gross; nominal cap0.875g/serv. No edible-yield guess."
+        },
+        {
+          "originalIndex": 2,
+          "name": "vesi keittoon",
+          "grams": 2000,
+          "compositionId": "922",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Original2L cooking water from native own100g/dl; separate soaking water discarded as original."
+        },
+        {
+          "originalIndex": 3,
+          "name": "keltasipuli",
+          "grams": 55,
+          "compositionId": "335",
+          "giId": "veg40",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Original one onion defined weighed55g, unchanged from frozen prior research."
+        },
+        {
+          "originalIndex": 4,
+          "name": "kaksi laakerinlehteä",
+          "grams": 1,
+          "compositionId": "whole-input-mass",
+          "giId": null,
+          "carbohydrateUse": "UPPER_BOUND",
+          "note": "Two leaves total1g as frozen prior candidate; whole mass cap even if leaves removed after cooking."
+        },
+        {
+          "originalIndex": 5,
+          "name": "kuivattu meirami",
+          "grams": 1,
+          "compositionId": "whole-input-mass",
+          "giId": null,
+          "carbohydrateUse": "UPPER_BOUND",
+          "note": "Weighed1g as frozen prior candidate, not inferred original teaspoon mass."
+        },
+        {
+          "originalIndex": 6,
+          "name": "mustapippuri",
+          "grams": 0.5,
+          "compositionId": "11177",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed0.5g as prior candidate; source positive omission, not GI0."
+        },
+        {
+          "originalIndex": 6,
+          "name": "ruokasuolaa maun mukaan",
+          "grams": 0,
+          "compositionId": "30",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "ZERO_CHO_SENTINEL original salt-to-taste remains; no claim0g salt."
+        },
+        {
+          "originalIndex": 7,
+          "name": "Maille Moutarde de Dijon L’Originale FR215g",
+          "grams": 16,
+          "compositionId": "maille-dijon-fr215",
+          "giId": null,
+          "carbohydrateUse": "UPPER_BOUND",
+          "note": "Existing weighed serving dose16g unchanged, NEW exact French215g product. Total nominal label cap0.14g/serv, no mustard GI."
+        }
+      ],
+      "preparationDecision": "Retain four servings,500g dry whole green peas,700g named Kivikylä smoked hock with bone and original2L cooking water. Soak peas overnight and discard separate soaking water as in original; calculate from complete dry input without inventing an absorbed-yield or carbohydrate-loss correction. Cook1.5–2h until soft with55g onion and two bay leaves weighing1g total. Remove bones and leaves; return all edible meat and retain broth. Season with weighed1g dried marjoram and0.5g pepper and original salt-to-taste. Serve the full16g named Maille FR215g Dijon mustard in total across four servings. Existing research spice/serving weights fixed before the mustard choice. Marrowfat47 is a small historical boiled pea comparator; cultivar, overnight soak and long mixed soup preparation remain low-confidence analogies.",
+      "scenarios": [
+        {
+          "id": "FINELI371_WHOLE_DRY_PEA",
+          "compositionOverrides": {}
+        }
+      ],
+      "requiredDecisions": [
+        "ORIGINAL_500G_PEA_700G_KIVIKYLA_HOCK_2L_WATER",
+        "EXACT_FR215G_MAILLE_16G_SAME_PREVIOUS_DOSE",
+        "MARROWFAT47_N6_LONG_GREEN_PEA_SOUP_ANALOGY",
+        "EXACT_SOURCE_CONTENT_OWNER_ACCEPTANCE",
+        "GK_ONLY_MACRO_LANGUAGE_OWNER_INTEGRATION"
+      ],
+      "macros": "PRESERVE_CURRENT_VALUES_AND_WITHHOLDINGS; DO_NOT_INHERIT_IN_NEW_GK_VERSION",
+      "approval": false,
+      "publicationAuthorized": false,
+      "confidence": "LOW",
+      "inputSha256": "ed3041f5514e3668a93361f9f5c353d38530f9a88a7db07650d2fce46fb61990"
+    }
+  ]
+}

@@ -1,0 +1,446 @@
+{
+  "schemaVersion": 1,
+  "activation": false,
+  "ownerApproval": false,
+  "sourceFilesLfSha256": {
+    "docs/nutrition/fineli-release-20-reference.json": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76",
+    "docs/nutrition/afcd-release-3-reference.json": "02edf1cc95191c05edf791656a5109c41bcf4d4a3e707be69ef5009bc640022e",
+    "docs/nutrition/glycemic-index-records.json": "fb465ac8f68ffc85e29eb9900f17df00b081fa0ddc3e25d253140aecb248acda",
+    "site/scripts/glycemic-load-model.ts": "10ce09e465886e4538fc0b2ad2a54ca0b050a9e3729b7417eb0a91f2b946b48c"
+  },
+  "sourceFilesMatchObservedMain": "12cce31acaa1fcaf4516440b58a1f5c30390fdea",
+  "products": [
+    {
+      "id": "bong-kanafondi",
+      "name": "Bong Touch of Taste Kanafondi, standard non-organic concentrate",
+      "url": "https://www.bongtouchoftaste.fi/tuotteet/kanafondi",
+      "observedAtUtc": "2026-11-02T21:38:54.905449+00:00",
+      "basis": "PER_100_G_AS_SOLD",
+      "declaredCarbohydrate": 7,
+      "availablePoint": null,
+      "polyols": null,
+      "subtractFibre": false,
+      "nominalOnlyNotLotBound": true,
+      "note": "Manufacturer; first per100g concentrate column, never unspecified prepared column. Selleri allergen in source.",
+      "rawFile": "bong-kanafondi.html",
+      "rawSha256": "c14cea576bcc6b2fdf818fd18dc529b0ace032837ddebcffdff410e22c11dd39",
+      "rawFetchStatus": "VERIFIED_RESPONSE_CACHED"
+    },
+    {
+      "id": "santamaria-lemon-paste",
+      "name": "Santa Maria Preserved Lemon Paste 750g GTIN07311312009104",
+      "url": "https://www.dabas.com/productsheet/07311312009104",
+      "observedAtUtc": "2026-11-02T21:38:54.905449+00:00",
+      "basis": "PER_100_G_AS_SOLD",
+      "declaredCarbohydrate": 7.2,
+      "availablePoint": null,
+      "polyols": null,
+      "subtractFibre": false,
+      "nominalOnlyNotLotBound": true,
+      "note": "Santa Maria AB supplier declaration, uncooked as-sold homogeneous paste,76% lemon puree. Same named750g SKU, not preserved rind or drained lemon.",
+      "rawFile": "santamaria-lemon-paste.html",
+      "rawSha256": "fab83f50bbfde09877b143cd1cd6522d53544754674e8b37793db18a886090b0",
+      "rawFetchStatus": "VERIFIED_RESPONSE_CACHED"
+    },
+    {
+      "id": "kivikyla-savupotka",
+      "name": "Kivikylä savupotka EAN2363013000008",
+      "url": "https://www.kivikylan.fi/tuotteet/palvilihat/savupotka/",
+      "observedAtUtc": "2026-11-02T21:38:54.905449+00:00",
+      "basis": "PER_100_G_AS_SOLD",
+      "declaredCarbohydrate": 0.5,
+      "availablePoint": null,
+      "polyols": null,
+      "subtractFibre": false,
+      "nominalOnlyNotLotBound": true,
+      "note": "Manufacturer;700g gross bone-in caps edible amount without guessing yield. Source declares0.5 carbohydrate and0.5 sugars. Not a zero or plain pork proxy.",
+      "rawFile": "kivikyla-savupotka.html",
+      "rawSha256": "54db0295a94406dc2438966ad4be257729ea6415269d417a943e410f8ca82a6c",
+      "rawFetchStatus": "VERIFIED_RESPONSE_CACHED"
+    },
+    {
+      "id": "maille-dijon-fr215",
+      "name": "Maille Moutarde de Dijon L’Originale, FR215g jar",
+      "url": "https://fr.maille.com/products/moutarde-de-dijon-loriginale-215-g",
+      "observedAtUtc": "2026-11-02T21:38:54.905449+00:00",
+      "basis": "PER_100_G_AS_SOLD",
+      "declaredCarbohydrate": 3.5,
+      "availablePoint": null,
+      "polyols": null,
+      "subtractFibre": false,
+      "nominalOnlyNotLotBound": true,
+      "note": "Manufacturer FR215g per100g column; do not use different market/pack, serving-rounded value or sweet mustard.",
+      "rawFile": null,
+      "rawSha256": null,
+      "rawFetchStatus": "WEB_REVIEWED_NO_RAW_SEAL: HTTPError 429"
+    }
+  ],
+  "composition": [
+    {
+      "id": "156",
+      "kind": "FINELI_CHOAVL",
+      "nativeId": "156",
+      "name": "RIISI PUUROUTUVA",
+      "availablePer100g": 75.6,
+      "process": "RAW",
+      "portionMasses": {
+        "DL": 85.0,
+        "RKL": 12.5
+      },
+      "nativeRowPythonJsonSha256": "85d743a0cc49e509d1703a51f0a043f97d311d6b68f2184cccfd3460f0ef49b6"
+    },
+    {
+      "id": "372",
+      "kind": "FINELI_CHOAVL",
+      "nativeId": "372",
+      "name": "PAPU, VIHREÄ TAITEPAPU, TUORE",
+      "availablePer100g": 4.754,
+      "process": "RAW",
+      "portionMasses": {
+        "KPL_M": 15.0,
+        "DL": 55.0,
+        "RKL": 9.0
+      },
+      "nativeRowPythonJsonSha256": "9b78367f2ec76237fe9d93c0e1445ce1431c3e4f97792773a8366f28082218a4"
+    },
+    {
+      "id": "398",
+      "kind": "FINELI_CHOAVL",
+      "nativeId": "398",
+      "name": "TOMAATTIMURSKA",
+      "availablePer100g": 3.45,
+      "process": "CANN",
+      "portionMasses": {
+        "DL": 100.0,
+        "RKL": 15.0
+      },
+      "nativeRowPythonJsonSha256": "aa5630e84e92f8ab160ee0df04d6ca7cf4134fa96ae28c3c1bf12e5ccb7ebb67"
+    },
+    {
+      "id": "922",
+      "kind": "FINELI_CHOAVL",
+      "nativeId": "922",
+      "name": "VESI, VESIJOHTOVESI",
+      "availablePer100g": 0.0,
+      "process": "X",
+      "portionMasses": {
+        "DL": 100.0,
+        "RKL": 15.0,
+        "TL": 5.0
+      },
+      "nativeRowPythonJsonSha256": "41972b8a17ac88e177afef853eea1ea77952f50a1f65f36ad4bf2ab36d31a22f"
+    },
+    {
+      "id": "536",
+      "kind": "FINELI_CHOAVL",
+      "nativeId": "536",
+      "name": "OLIIVIÖLJY",
+      "availablePer100g": 0.0,
+      "process": "IND",
+      "portionMasses": {
+        "DL": 90.0,
+        "RKL": 13.5,
+        "TL": 4.5
+      },
+      "nativeRowPythonJsonSha256": "b82026ea0625c9a181227898f3a666102e449710866ff1f6c9bbc621dba71175"
+    },
+    {
+      "id": "30",
+      "kind": "FINELI_CHOAVL",
+      "nativeId": "30",
+      "name": "RUOKASUOLA, JODIOITU",
+      "availablePer100g": 0.0,
+      "process": "IND",
+      "portionMasses": {
+        "DL": 125.0,
+        "RKL": 20.0,
+        "TL": 6.5
+      },
+      "nativeRowPythonJsonSha256": "205f135e85c7f4b0490893082e770f693242c191518a163d48d427d6b61a0b2e"
+    },
+    {
+      "id": "335",
+      "kind": "FINELI_CHOAVL",
+      "nativeId": "335",
+      "name": "SIPULI, KELTASIPULI",
+      "availablePer100g": 4.8,
+      "process": "RAW",
+      "portionMasses": {
+        "KPL_S": 30.0,
+        "KPL_M": 55.0,
+        "KPL_L": 200.0,
+        "DL": 90.0
+      },
+      "nativeRowPythonJsonSha256": "fc933b2defc31567f227521b9fd0aefd02380bae2533d0350afb71d847149959"
+    },
+    {
+      "id": "393",
+      "kind": "FINELI_CHOAVL",
+      "nativeId": "393",
+      "name": "VALKOSIPULI",
+      "availablePer100g": 16.3,
+      "process": "RAW",
+      "portionMasses": {
+        "KPL_M": 3.5
+      },
+      "nativeRowPythonJsonSha256": "d6293feccd34055d94e082db1e5dd878fe791609a617641ce0cdf03730636158"
+    },
+    {
+      "id": "34238",
+      "kind": "FINELI_CHOAVL",
+      "nativeId": "34238",
+      "name": "KORIANTERI, TUORE",
+      "availablePer100g": 0.505,
+      "process": "RAW",
+      "portionMasses": {
+        "DL": 13.0
+      },
+      "nativeRowPythonJsonSha256": "b3317671713ccca628d753da30b7ff24266d4b8c2652a42eafd52715d190c40c"
+    },
+    {
+      "id": "34972",
+      "kind": "FINELI_CHOAVL",
+      "nativeId": "34972",
+      "name": "OLIIVI, KESKIARVO, KIVETÖN, SUOLALIEMESSÄ, VIHREÄ",
+      "availablePer100g": 0.0,
+      "process": "CANN",
+      "portionMasses": {
+        "KPL_M": 4.0,
+        "DL": 30.0
+      },
+      "nativeRowPythonJsonSha256": "b44e1bf2e5a7a427a0a08092979c2e88e7aacbc5218b20e0a3d34899726ff76b"
+    },
+    {
+      "id": "29208",
+      "kind": "FINELI_CHOAVL",
+      "nativeId": "29208",
+      "name": "KUSKUS",
+      "availablePer100g": 63.6,
+      "process": "RAW",
+      "portionMasses": {
+        "DL": 80.0,
+        "RKL": 12.0,
+        "TL": 4.0
+      },
+      "nativeRowPythonJsonSha256": "ba5117a3f66669f3842c59633356ef61e689ba9df6c2e36be72c0b1cdf6260b8"
+    },
+    {
+      "id": "371",
+      "kind": "FINELI_CHOAVL",
+      "nativeId": "371",
+      "name": "HERNE, VIHREÄ, KUIVATTU",
+      "availablePer100g": 27.166,
+      "process": "DRIE",
+      "portionMasses": {
+        "DL": 85.0
+      },
+      "nativeRowPythonJsonSha256": "01e78b1dd6703bce16256f7d0cd2213209dd8a0f8f45873dbb674dc9a70ec990"
+    },
+    {
+      "id": "11177",
+      "kind": "FINELI_CHOAVL",
+      "nativeId": "11177",
+      "name": "MUSTAPIPPURI",
+      "availablePer100g": 38.31,
+      "process": "DRIE",
+      "portionMasses": {
+        "RKL": 6.5,
+        "TL": 2.0
+      },
+      "nativeRowPythonJsonSha256": "86f1c32056079fea25fdb3667d7c27c0ed6923b80dc34416db5638c746aff731"
+    },
+    {
+      "id": "F002806",
+      "kind": "AFCD_WITHOUT_SUGAR_ALCOHOLS",
+      "nativeId": "F002806",
+      "name": "Chicken, thigh, lean flesh, raw",
+      "availablePer100g": 0,
+      "nativeRowPythonJsonSha256": "4f489f50f66b69c783509032bff2901f1ca28bd919899772fefd8b0f8f23c43a"
+    },
+    {
+      "id": "F002809",
+      "kind": "AFCD_WITHOUT_SUGAR_ALCOHOLS",
+      "nativeId": "F002809",
+      "name": "Chicken, thigh, lean flesh, skin & fat, raw",
+      "availablePer100g": 0,
+      "nativeRowPythonJsonSha256": "d3920cc95c0f12964edb19b80115d925a316a1d499e1ab909cf379dc7c24c429"
+    },
+    {
+      "id": "F007682",
+      "kind": "AFCD_WITHOUT_SUGAR_ALCOHOLS",
+      "nativeId": "F007682",
+      "name": "Rice, white, uncooked",
+      "availablePer100g": 74,
+      "nativeRowPythonJsonSha256": "8e418483d9959c0721db5201f2b2092a53bf389c735921a45ad31e9bdafb5932"
+    },
+    {
+      "id": "F003239",
+      "kind": "AFCD_WITHOUT_SUGAR_ALCOHOLS",
+      "nativeId": "F003239",
+      "name": "Couscous, uncooked",
+      "availablePer100g": 73.6,
+      "nativeRowPythonJsonSha256": "f202fcde6a47c80100eeae218fc078b254f8cc9620e5b14776871af8874230c6"
+    },
+    {
+      "id": "F004210",
+      "kind": "AFCD_WITHOUT_SUGAR_ALCOHOLS",
+      "nativeId": "F004210",
+      "name": "Ginger, dried, ground",
+      "availablePer100g": 57.5,
+      "nativeRowPythonJsonSha256": "fe35ee444fc3a57c6fa572522999b1ffa0a81dc77f272af0addca2ba82347d2d"
+    },
+    {
+      "id": "F009335",
+      "kind": "AFCD_WITHOUT_SUGAR_ALCOHOLS",
+      "nativeId": "F009335",
+      "name": "Turmeric, dried, ground",
+      "availablePer100g": 44.4,
+      "nativeRowPythonJsonSha256": "99ae74a23e1b5ab8a645889a7ec1612ab818dcabb225f8c7961fb4ad753aefe3"
+    },
+    {
+      "id": "F003327",
+      "kind": "AFCD_WITHOUT_SUGAR_ALCOHOLS",
+      "nativeId": "F003327",
+      "name": "Cumin (cummin) seed, dried, ground",
+      "availablePer100g": 33.7,
+      "nativeRowPythonJsonSha256": "2af180ea11a2306732119d617be1964d9a7d4d52a64f825f11a684fea754e54b"
+    },
+    {
+      "id": "bong-kanafondi",
+      "kind": "LABEL_UPPER_PER100G",
+      "observationId": "bong-kanafondi",
+      "declaredCarbohydrate": 7,
+      "availablePoint": null,
+      "polyols": null
+    },
+    {
+      "id": "santamaria-lemon-paste",
+      "kind": "LABEL_UPPER_PER100G",
+      "observationId": "santamaria-lemon-paste",
+      "declaredCarbohydrate": 7.2,
+      "availablePoint": null,
+      "polyols": null
+    },
+    {
+      "id": "kivikyla-savupotka",
+      "kind": "LABEL_UPPER_PER100G",
+      "observationId": "kivikyla-savupotka",
+      "declaredCarbohydrate": 0.5,
+      "availablePoint": null,
+      "polyols": null
+    },
+    {
+      "id": "maille-dijon-fr215",
+      "kind": "LABEL_UPPER_PER100G",
+      "observationId": "maille-dijon-fr215",
+      "declaredCarbohydrate": 3.5,
+      "availablePoint": null,
+      "polyols": null
+    },
+    {
+      "id": "whole-input-mass",
+      "kind": "PHYSICAL_MASS_UPPER",
+      "availablePoint": null,
+      "polyols": null,
+      "note": "All weighed input mass limits possible CHO mass, including partial extraction before removal. Not100gCHO nutrient record."
+    }
+  ],
+  "giBindings": [
+    {
+      "id": "veg40",
+      "kind": "EXISTING_PUBLISHED_CODING",
+      "nativeId": "op142-vegetable-imputation40",
+      "gi": 40,
+      "allowedCompositionIds": [
+        "372",
+        "398",
+        "335",
+        "393",
+        "34238"
+      ],
+      "sourceUrl": "https://doi.org/10.2337/dc08-1239",
+      "note": "Existing named plain non-starchy vegetable/allium/fresh-herb coding. New recipe applications need approval. Native garlic393 same named coding as approved bulgogi; no spice/paste/stock GI assignment."
+    },
+    {
+      "id": "arborio69",
+      "kind": "NAMED_HUMAN_GI",
+      "gi": 69,
+      "pdf": "atkinson2021-table1.pdf",
+      "pdfPage": 45,
+      "item": 648,
+      "healthyParticipants": 10,
+      "testYear": 2005,
+      "testAvailableChoG": 50,
+      "reference": "GLUCOSE_100_2_H",
+      "iso26642Confirmed": false,
+      "food": "Boiled SunRice Arborio",
+      "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+      "allowedCompositionIds": [
+        "156",
+        "F007682"
+      ],
+      "note": "Named white Arborio comparison. Target oils/toasts rice then absorbs stock, not source boil or whole-meal GI; mixed-matrix and processing error not quantified. UO5 original unpublished."
+    },
+    {
+      "id": "couscous65",
+      "kind": "NAMED_HUMAN_GI",
+      "gi": 65,
+      "pdf": "atkinson2021-table1.pdf",
+      "pdfPage": 39,
+      "item": 560,
+      "healthyParticipants": 9,
+      "testYear": 2006,
+      "testAvailableChoG": 50,
+      "reference": "GLUCOSE_100_2_H",
+      "iso26642Confirmed": false,
+      "food": "San Remo plain durum couscous rehydrated in hot water",
+      "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+      "allowedCompositionIds": [
+        "29208",
+        "F003239"
+      ],
+      "note": "Plain quick-hydrating semolina comparator, not pearl/wholemeal couscous, bread or whole tagine. UO5 original unpublished. Generic dry regional CHO points are not lot bounds."
+    },
+    {
+      "id": "marrowfat47",
+      "kind": "NAMED_HUMAN_GI",
+      "gi": 47,
+      "pdf": "atkinson2021-table2.pdf",
+      "pdfPage": 75,
+      "item": 3146,
+      "healthyParticipants": 6,
+      "testYear": 1981,
+      "testAvailableChoG": 50,
+      "reference": "GLUCOSE_100_2_H",
+      "iso26642Confirmed": false,
+      "food": "Boiled dried marrowfat peas",
+      "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+      "allowedCompositionIds": [
+        "371"
+      ],
+      "note": "Historical small human study, reference132; repeated glucose yes and sampling0,15,30,45,60,90,120min. Regional dry green pea and long cooked soft soup analogy, not measured target meal or category mean."
+    }
+  ],
+  "pdfs": [
+    {
+      "file": "atkinson2021-table1.pdf",
+      "rawSha256": "e930c4a090697abd4f7331a64837b524cf4701513cbb9865a739f4f9fb131061",
+      "visualPagesChecked": [
+        39,
+        45
+      ],
+      "doi": "https://doi.org/10.1093/ajcn/nqab233",
+      "captureNote": "Cached publisher supplement; independent official Sydney index agrees with points"
+    },
+    {
+      "file": "atkinson2021-table2.pdf",
+      "rawSha256": "af92f778e018a5b0779846cf756061370c674b386f7823d9917a505347a4ccba",
+      "visualPagesChecked": [
+        75
+      ],
+      "doi": "https://doi.org/10.1093/ajcn/nqab233",
+      "captureNote": "Existing cached table2 matches minor-omission source card; fresh mirror response403, no new raw claim"
+    }
+  ],
+  "sourceRule": "A label cap is an omitted-CHO bookkeeping limit under the stated product and amount, not a point, GI0, or a verified lot upper bound. Physical cap is the input mass. No new GI assumption or B omission profile."
+}
