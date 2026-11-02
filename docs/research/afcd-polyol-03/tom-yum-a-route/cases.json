@@ -1,0 +1,188 @@
+{
+  "activation": false,
+  "ownerApproval": false,
+  "cases": [
+    {
+      "recipeId": "tom-yum-goong-vhh",
+      "classification": "CONDITIONAL_A_ARITHMETIC_SOURCE_HOLD",
+      "arithmeticProfile": "EXISTING_A",
+      "servings": 4,
+      "paths": {
+        "fi": "reseptit/paaruoat/tom-yum-goong-vhh.md",
+        "en": "kaannokset/en/paaruoat/tom-yum-goong-vhh.md",
+        "sv": "kaannokset/sv/paaruoat/tom-yum-goong-vhh.md",
+        "th": "kaannokset/th/paaruoat/tom-yum-goong-vhh.md"
+      },
+      "recipeSha256Lf": {
+        "fi": "e2ac45c320ad6ecdcde131dcb8cea63c572b5ed14c50001822741232884db308",
+        "en": "377d477e42aa2af420ee056a1f0ff4922b6d866726a23cc51e4c89ab141c218a",
+        "sv": "6a7dab8f5e643e5368851acdde5990cd0da60df174a3df0cb3db41d91b5de6dc",
+        "th": "967dd27699a809fe5e40300ae7ada08f154ed92898c0078ca2d994ca2fc72319"
+      },
+      "originalIngredients": [
+        {
+          "amount": 500,
+          "unit": "g",
+          "item": "raakoja kuorittuja katkarapuja"
+        },
+        {
+          "amount": 200,
+          "unit": "g",
+          "item": "osterivinokkaita tai herkkusieniä"
+        },
+        {
+          "amount": 1000,
+          "unit": "g",
+          "item": "vettä"
+        },
+        {
+          "amount": 22,
+          "unit": "g",
+          "item": "kalaliemikuutiota, murskattuna"
+        },
+        {
+          "amount": 40,
+          "unit": "g",
+          "item": "sitruunaruohoa, murskattuna; poista ennen tarjoilua"
+        },
+        {
+          "amount": 25,
+          "unit": "g",
+          "item": "tuoretta inkivääriä, viipaleina"
+        },
+        {
+          "amount": 2,
+          "unit": "g",
+          "item": "kaffirlimetinlehtiä; poista ennen tarjoilua"
+        },
+        {
+          "amount": 24,
+          "unit": "g",
+          "item": "punaista chiliä",
+          "note": "tulisuus oman maun mukaan"
+        },
+        {
+          "amount": 30,
+          "unit": "g",
+          "item": "Squid Brand -kalakastiketta"
+        },
+        {
+          "amount": 45,
+          "unit": "g",
+          "item": "limettimehua"
+        },
+        {
+          "amount": 150,
+          "unit": "g",
+          "item": "kirsikkatomaatteja"
+        },
+        {
+          "amount": 12,
+          "unit": "g",
+          "item": "tuoretta korianteria"
+        }
+      ],
+      "ingredients": [
+        {
+          "originalIndex": 0,
+          "name": "Raw peeled banana prawn flesh",
+          "grams": 500,
+          "sourceId": "F007422",
+          "giId": null
+        },
+        {
+          "originalIndex": 1,
+          "name": "Fresh white button mushrooms",
+          "grams": 200,
+          "sourceId": "345",
+          "giId": null
+        },
+        {
+          "originalIndex": 2,
+          "name": "Water",
+          "grams": 950,
+          "sourceId": "922",
+          "giId": null
+        },
+        {
+          "originalIndex": 3,
+          "name": "Bong Kalafondi concentrate",
+          "grams": 50,
+          "sourceId": "BONG_FISH",
+          "giId": null
+        },
+        {
+          "originalIndex": 4,
+          "name": "Dried lemongrass, removed after simmering",
+          "grams": 1.5,
+          "sourceId": "LEMONGRASS_WHOLE_MASS",
+          "giId": null
+        },
+        {
+          "originalIndex": 5,
+          "name": "tuoretta inkivääriä, viipaleina",
+          "grams": 25,
+          "sourceId": "F004213",
+          "giId": null
+        },
+        {
+          "originalIndex": 6,
+          "name": "kaffirlimetinlehtiä; poista ennen tarjoilua",
+          "grams": 2,
+          "sourceId": "THAI_KAFFIR_N35_TOTAL",
+          "giId": null
+        },
+        {
+          "originalIndex": 7,
+          "name": "punaista chiliä",
+          "grams": 24,
+          "sourceId": "F002901",
+          "giId": null
+        },
+        {
+          "originalIndex": 8,
+          "name": "Squid fish sauce 300 ml EAN 8850620888012",
+          "grams": 30,
+          "sourceId": "SQUID300",
+          "giId": null
+        },
+        {
+          "originalIndex": 9,
+          "name": "limettimehua",
+          "grams": 45,
+          "sourceId": "F004729",
+          "giId": null
+        },
+        {
+          "originalIndex": 10,
+          "name": "kirsikkatomaatteja",
+          "grams": 150,
+          "sourceId": "F009190",
+          "giId": "op142-vegetable-imputation40"
+        },
+        {
+          "originalIndex": 11,
+          "name": "tuoretta korianteria",
+          "grams": 12,
+          "sourceId": "F003192",
+          "giId": null
+        }
+      ],
+      "preparationDecision": "Use 950 g water and 50 g Bong fish concentrate in place of original water and cubes. Simmer 1.5 g dried lemongrass and 2 g fresh makrut leaves for 8 minutes, then remove them. Retain all broth, tomatoes and the specified mushrooms, and serve four portions.",
+      "requiredDecisions": [
+        "EXACT_PRODUCT_SOURCE_AND_CONTENT_OWNER_REVIEW",
+        "GREEN_CURRY_AU64_VS_UK173_SAME_UPC_LABEL_VERSION",
+        "SQUID700_PRIMARY_LABEL_AND_G_VS_ML_UNIT_RESOLUTION",
+        "THAI_N35_TOTAL_CAP_ADMISSION_WITH_AVAILABLE_UNKNOWN",
+        "GK_ONLY_MACRO_VERSION_COMPATIBILITY"
+      ],
+      "ownerApproval": false,
+      "sourceQualified": false,
+      "publicationAuthorized": false,
+      "macroAction": "PRESERVE_ALL_CURRENT_VALUES_AND_WITHHOLDINGS",
+      "noNewGiConstants": true,
+      "minorBOmissionProfileActivated": false,
+      "inputSha256": "cdfa2fd16c3127ec42fe9bcfb3cf664ffcdfcf02b38718d1a769114ca7ffce4e"
+    }
+  ]
+}
