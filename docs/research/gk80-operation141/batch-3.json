@@ -1,0 +1,4567 @@
+{
+  "batch": 3,
+  "recipeIds": [
+    "bulgogi",
+    "bun-cha-hanoi",
+    "carnitas-salaattitacot",
+    "doner-kebab",
+    "marokkolainen-couscous"
+  ],
+  "cases": [
+    {
+      "scenarioId": "defined-weighed-hot-version",
+      "input": {
+        "recipeId": "carnitas-salaattitacot",
+        "servings": 4,
+        "ingredients": [
+          {
+            "name": "porsaan niskaa",
+            "grams": 800,
+            "fineliRecordId": "op141-fineli-34190",
+            "giRecordId": null,
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes."
+          },
+          {
+            "name": "appelsiini",
+            "grams": 130,
+            "fineliRecordId": "op141-fineli-11045",
+            "giRecordId": "op141-orange45-r4",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "orange",
+            "preparationKey": "op141-orange45-r4",
+            "giMatchEvidence": "Specific human comparator, explicit LOW preparation/food application. Whole edible orange130g and lime50g including juice, all fruit solids and cooking liquid consumed. Fresh romaine144g and coriander10g explicitly matched. No tortillas. Ground cumin from whole seed."
+          },
+          {
+            "name": "kuoritun tavallisen limetin hedelmälihaa mehuineen",
+            "grams": 50,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Source-backed source-total ceiling under existing GK omission rule.",
+            "availableCarbohydrateUpperBoundPerServingG": 0.9675,
+            "upperBoundEvidence": "USDA SR Legacy2018 FDC168155 Limes, raw; nutrient1005 totalCHO 10.54g/100g; retained 50g/4servings. Same-source nutrient1079 fibre2.8g/100g is subtracted only to tighten the ceiling; unknown polyols remain in the residual. Nominal source-model ceiling only; not a clinical or lot maximum."
+          },
+          {
+            "name": "juustokuminaa",
+            "grams": 2,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Source-backed source-total ceiling under existing GK omission rule.",
+            "availableCarbohydrateUpperBoundPerServingG": 0.2212,
+            "upperBoundEvidence": "USDA SR Legacy2018 FDC170923 Spices, cumin seed; nutrient1005 totalCHO 44.24g/100g; retained 2g/4servings. No fibre/polyol subtraction. Nominal source-model ceiling only; not a clinical or lot maximum."
+          },
+          {
+            "name": "kuivattua oreganoa",
+            "grams": 1,
+            "fineliRecordId": "op141-fineli-11191",
+            "giRecordId": null,
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "giMatchEvidence": "No matching GI; source-known Fineli CHOAVL 0.054075g/serving is counted in cumulative omission; not zero. CHOAVL already excludes polyols."
+          },
+          {
+            "name": "tuoretta kuorittua valkosipulia",
+            "grams": 6,
+            "fineliRecordId": "op141-fineli-393",
+            "giRecordId": "op141-vegetable-imputation40",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "low-carb-vegetable",
+            "preparationKey": "op141-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Whole edible orange130g and lime50g including juice, all fruit solids and cooking liquid consumed. Fresh romaine144g and coriander10g explicitly matched. No tortillas. Ground cumin from whole seed."
+          },
+          {
+            "name": "vettä",
+            "grams": 150,
+            "fineliRecordId": "op141-fineli-922",
+            "giRecordId": null,
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes."
+          },
+          {
+            "name": "roomansalaatinlehtiä",
+            "grams": 144,
+            "fineliRecordId": "op141-fineli-34233",
+            "giRecordId": "op141-vegetable-imputation40",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "low-carb-vegetable",
+            "preparationKey": "op141-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Whole edible orange130g and lime50g including juice, all fruit solids and cooking liquid consumed. Fresh romaine144g and coriander10g explicitly matched. No tortillas. Ground cumin from whole seed."
+          },
+          {
+            "name": "tomaattia pico de galloon",
+            "grams": 70,
+            "fineliRecordId": "op141-fineli-352",
+            "giRecordId": "op141-vegetable-imputation40",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "low-carb-vegetable",
+            "preparationKey": "op141-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Whole edible orange130g and lime50g including juice, all fruit solids and cooking liquid consumed. Fresh romaine144g and coriander10g explicitly matched. No tortillas. Ground cumin from whole seed."
+          },
+          {
+            "name": "punasipulia pico de galloon",
+            "grams": 20,
+            "fineliRecordId": "op141-fineli-34234",
+            "giRecordId": "op141-vegetable-imputation40",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "low-carb-vegetable",
+            "preparationKey": "op141-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Whole edible orange130g and lime50g including juice, all fruit solids and cooking liquid consumed. Fresh romaine144g and coriander10g explicitly matched. No tortillas. Ground cumin from whole seed."
+          },
+          {
+            "name": "tuoretta korianteria pico de galloon",
+            "grams": 10,
+            "fineliRecordId": "op141-fineli-34238",
+            "giRecordId": "op141-vegetable-imputation40",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "low-carb-vegetable",
+            "preparationKey": "op141-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Whole edible orange130g and lime50g including juice, all fruit solids and cooking liquid consumed. Fresh romaine144g and coriander10g explicitly matched. No tortillas. Ground cumin from whole seed."
+          },
+          {
+            "name": "jauhettua mustapippuria",
+            "grams": 0.5,
+            "fineliRecordId": "op141-fineli-11177",
+            "giRecordId": null,
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "giMatchEvidence": "No matching GI; source-known Fineli CHOAVL 0.0478875g/serving is counted in cumulative omission; not zero. CHOAVL already excludes polyols."
+          }
+        ]
+      },
+      "modelInputSha256": "4d612b1d66b18f357fb1e64374bb1942f799a565c4dfc9a8b02d5df20d647409",
+      "version": {
+        "recipeId": "carnitas-salaattitacot",
+        "scenarioId": "defined-weighed-hot-version",
+        "publishedPath": "reseptit/paaruoat/carnitas-salaattitacot.md",
+        "publishedSourceLfSha256": "49a8897b6832d1a6fb68574c366acba08311463a8e39baa586f94c1fb369e548",
+        "publishedIngredients": [
+          {
+            "amount": 800,
+            "unit": "g",
+            "item": "porsaan niskaa"
+          },
+          {
+            "amount": 1,
+            "unit": "kpl",
+            "item": "appelsiini"
+          },
+          {
+            "amount": 1,
+            "unit": "kpl",
+            "item": "limetti"
+          },
+          {
+            "amount": 1,
+            "unit": "tl",
+            "item": "juustokuminaa"
+          },
+          {
+            "amount": 1,
+            "unit": "tl",
+            "item": "oreganoa"
+          },
+          {
+            "amount": 2,
+            "unit": "kpl",
+            "item": "valkosipulinkynttä"
+          },
+          {
+            "amount": 150,
+            "unit": "ml",
+            "item": "vettä"
+          },
+          {
+            "amount": 12,
+            "unit": "kpl",
+            "item": "roomansalaatinlehtiä"
+          },
+          {
+            "amount": 70,
+            "unit": "g",
+            "item": "tomaattia pico de galloon"
+          },
+          {
+            "amount": 20,
+            "unit": "g",
+            "item": "punasipulia pico de galloon"
+          },
+          {
+            "amount": 10,
+            "unit": "g",
+            "item": "tuoretta korianteria pico de galloon"
+          },
+          {
+            "amount": null,
+            "unit": "",
+            "item": "suolaa ja pippuria"
+          }
+        ],
+        "priorCommit": "b8ece7ee1e4b80fc26abeb9b94944514875188d7",
+        "priorPack": "gk80-release-8",
+        "preparationBase": [
+          "Paloittele 800 g porsaan niskaa. Hienonna 130 g kuorittua appelsiinia ja 50 g tavallista kuorittua limettiä kaikkine mehuineen.",
+          "Yhdistä liha, hedelmät, 6 g valkosipulia, 2 g juustokuminaa, 1 g oreganoa, 0,5 g mustapippuria ja 150 g vettä. Hauduta kannen alla 150 °C:ssa noin 2,5 tuntia, kunnes liha on mureaa. Kaikki hedelmäliha, rasva ja kastike syödään.",
+          "Revi liha ja tarjoa koko kastikkeen kanssa. Sekoita 70 g tomaattia, 20 g punasipulia ja 10 g korianteria pico de galloksi ja jaa kaikkien 144 g:n salaatinlehtien kanssa neljään annokseen."
+        ],
+        "bindingVersionNotes": "Whole edible orange130g and lime50g including juice, all fruit solids and cooking liquid consumed. Fresh romaine144g and coriander10g explicitly matched. No tortillas. Ground cumin from whole seed.",
+        "weighedIngredients": [
+          {
+            "name": "porsaan niskaa",
+            "grams": 800,
+            "fineliRecordId": "op141-fineli-34190",
+            "giRecordId": null,
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes."
+          },
+          {
+            "name": "appelsiini",
+            "grams": 130,
+            "fineliRecordId": "op141-fineli-11045",
+            "giRecordId": "op141-orange45-r4",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "orange",
+            "preparationKey": "op141-orange45-r4",
+            "giMatchEvidence": "Specific human comparator, explicit LOW preparation/food application. Whole edible orange130g and lime50g including juice, all fruit solids and cooking liquid consumed. Fresh romaine144g and coriander10g explicitly matched. No tortillas. Ground cumin from whole seed."
+          },
+          {
+            "name": "kuoritun tavallisen limetin hedelmälihaa mehuineen",
+            "grams": 50,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Source-backed source-total ceiling under existing GK omission rule.",
+            "availableCarbohydrateUpperBoundPerServingG": 0.9675,
+            "upperBoundEvidence": "USDA SR Legacy2018 FDC168155 Limes, raw; nutrient1005 totalCHO 10.54g/100g; retained 50g/4servings. Same-source nutrient1079 fibre2.8g/100g is subtracted only to tighten the ceiling; unknown polyols remain in the residual. Nominal source-model ceiling only; not a clinical or lot maximum."
+          },
+          {
+            "name": "juustokuminaa",
+            "grams": 2,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Source-backed source-total ceiling under existing GK omission rule.",
+            "availableCarbohydrateUpperBoundPerServingG": 0.2212,
+            "upperBoundEvidence": "USDA SR Legacy2018 FDC170923 Spices, cumin seed; nutrient1005 totalCHO 44.24g/100g; retained 2g/4servings. No fibre/polyol subtraction. Nominal source-model ceiling only; not a clinical or lot maximum."
+          },
+          {
+            "name": "kuivattua oreganoa",
+            "grams": 1,
+            "fineliRecordId": "op141-fineli-11191",
+            "giRecordId": null,
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "giMatchEvidence": "No matching GI; source-known Fineli CHOAVL 0.054075g/serving is counted in cumulative omission; not zero. CHOAVL already excludes polyols."
+          },
+          {
+            "name": "tuoretta kuorittua valkosipulia",
+            "grams": 6,
+            "fineliRecordId": "op141-fineli-393",
+            "giRecordId": "op141-vegetable-imputation40",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "low-carb-vegetable",
+            "preparationKey": "op141-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Whole edible orange130g and lime50g including juice, all fruit solids and cooking liquid consumed. Fresh romaine144g and coriander10g explicitly matched. No tortillas. Ground cumin from whole seed."
+          },
+          {
+            "name": "vettä",
+            "grams": 150,
+            "fineliRecordId": "op141-fineli-922",
+            "giRecordId": null,
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes."
+          },
+          {
+            "name": "roomansalaatinlehtiä",
+            "grams": 144,
+            "fineliRecordId": "op141-fineli-34233",
+            "giRecordId": "op141-vegetable-imputation40",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "low-carb-vegetable",
+            "preparationKey": "op141-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Whole edible orange130g and lime50g including juice, all fruit solids and cooking liquid consumed. Fresh romaine144g and coriander10g explicitly matched. No tortillas. Ground cumin from whole seed."
+          },
+          {
+            "name": "tomaattia pico de galloon",
+            "grams": 70,
+            "fineliRecordId": "op141-fineli-352",
+            "giRecordId": "op141-vegetable-imputation40",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "low-carb-vegetable",
+            "preparationKey": "op141-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Whole edible orange130g and lime50g including juice, all fruit solids and cooking liquid consumed. Fresh romaine144g and coriander10g explicitly matched. No tortillas. Ground cumin from whole seed."
+          },
+          {
+            "name": "punasipulia pico de galloon",
+            "grams": 20,
+            "fineliRecordId": "op141-fineli-34234",
+            "giRecordId": "op141-vegetable-imputation40",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "low-carb-vegetable",
+            "preparationKey": "op141-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Whole edible orange130g and lime50g including juice, all fruit solids and cooking liquid consumed. Fresh romaine144g and coriander10g explicitly matched. No tortillas. Ground cumin from whole seed."
+          },
+          {
+            "name": "tuoretta korianteria pico de galloon",
+            "grams": 10,
+            "fineliRecordId": "op141-fineli-34238",
+            "giRecordId": "op141-vegetable-imputation40",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "low-carb-vegetable",
+            "preparationKey": "op141-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Whole edible orange130g and lime50g including juice, all fruit solids and cooking liquid consumed. Fresh romaine144g and coriander10g explicitly matched. No tortillas. Ground cumin from whole seed."
+          },
+          {
+            "name": "jauhettua mustapippuria",
+            "grams": 0.5,
+            "fineliRecordId": "op141-fineli-11177",
+            "giRecordId": null,
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "giMatchEvidence": "No matching GI; source-known Fineli CHOAVL 0.0478875g/serving is counted in cumulative omission; not zero. CHOAVL already excludes polyols."
+          }
+        ],
+        "servings": 4,
+        "ownerApproved": false,
+        "publicationAuthorized": false,
+        "macrosRecalculated": false,
+        "methodChange": false
+      },
+      "versionSha256": "3cf1ed265a0bd7cc3a995b6a4ea3a8f82e43b215982aeb3d2b669a2853d8961e",
+      "ingredientEvidence": [
+        {
+          "index": 0,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "34190",
+          "massG": 800,
+          "choPer100g": 0.0,
+          "aggregatePolyols": 0.0,
+          "fibre": 0.0,
+          "giSourceId": null,
+          "omitted": false
+        },
+        {
+          "index": 1,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "11045",
+          "massG": 130,
+          "choPer100g": 8.9,
+          "aggregatePolyols": 0.0,
+          "fibre": 2.4,
+          "giSourceId": "op141-orange45-r4",
+          "omitted": false
+        },
+        {
+          "index": 2,
+          "kind": "USDA_TOTAL_CEILING",
+          "source": {
+            "key": "lime_raw",
+            "fdc_id": "168155",
+            "description": "Limes, raw",
+            "nutrients": {
+              "1186": {
+                "id": "1334562",
+                "fdc_id": "168155",
+                "nutrient_id": "1186",
+                "amount": "0",
+                "data_points": "0",
+                "derivation_id": "68",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1261": {
+                "id": "1334563",
+                "fdc_id": "168155",
+                "nutrient_id": "1261",
+                "amount": "0",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1263": {
+                "id": "1334564",
+                "fdc_id": "168155",
+                "nutrient_id": "1263",
+                "amount": "0",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1278": {
+                "id": "1334565",
+                "fdc_id": "168155",
+                "nutrient_id": "1278",
+                "amount": "0",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1280": {
+                "id": "1334566",
+                "fdc_id": "168155",
+                "nutrient_id": "1280",
+                "amount": "0",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1272": {
+                "id": "1334567",
+                "fdc_id": "168155",
+                "nutrient_id": "1272",
+                "amount": "0",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1057": {
+                "id": "1334568",
+                "fdc_id": "168155",
+                "nutrient_id": "1057",
+                "amount": "0",
+                "data_points": "0",
+                "derivation_id": "68",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1058": {
+                "id": "1334569",
+                "fdc_id": "168155",
+                "nutrient_id": "1058",
+                "amount": "0",
+                "data_points": "0",
+                "derivation_id": "68",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1259": {
+                "id": "1334570",
+                "fdc_id": "168155",
+                "nutrient_id": "1259",
+                "amount": "0",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1260": {
+                "id": "1334571",
+                "fdc_id": "168155",
+                "nutrient_id": "1260",
+                "amount": "0",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1262": {
+                "id": "1334572",
+                "fdc_id": "168155",
+                "nutrient_id": "1262",
+                "amount": "0",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1271": {
+                "id": "1334573",
+                "fdc_id": "168155",
+                "nutrient_id": "1271",
+                "amount": "0",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1276": {
+                "id": "1334574",
+                "fdc_id": "168155",
+                "nutrient_id": "1276",
+                "amount": "0",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1277": {
+                "id": "1334575",
+                "fdc_id": "168155",
+                "nutrient_id": "1277",
+                "amount": "0",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1279": {
+                "id": "1334576",
+                "fdc_id": "168155",
+                "nutrient_id": "1279",
+                "amount": "0",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1110": {
+                "id": "1334577",
+                "fdc_id": "168155",
+                "nutrient_id": "1110",
+                "amount": "0",
+                "data_points": "0",
+                "derivation_id": "68",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1018": {
+                "id": "1334578",
+                "fdc_id": "168155",
+                "nutrient_id": "1018",
+                "amount": "0",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1123": {
+                "id": "1334579",
+                "fdc_id": "168155",
+                "nutrient_id": "1123",
+                "amount": "0",
+                "data_points": "0",
+                "derivation_id": "20",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1167": {
+                "id": "1334580",
+                "fdc_id": "168155",
+                "nutrient_id": "1167",
+                "amount": "0.2",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1170": {
+                "id": "1334581",
+                "fdc_id": "168155",
+                "nutrient_id": "1170",
+                "amount": "0.217",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1175": {
+                "id": "1334582",
+                "fdc_id": "168155",
+                "nutrient_id": "1175",
+                "amount": "0.043",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1004": {
+                "id": "1334583",
+                "fdc_id": "168155",
+                "nutrient_id": "1004",
+                "amount": "0.2",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1005": {
+                "id": "1334584",
+                "fdc_id": "168155",
+                "nutrient_id": "1005",
+                "amount": "10.54",
+                "data_points": "0",
+                "derivation_id": "49",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "2000": {
+                "id": "1334585",
+                "fdc_id": "168155",
+                "nutrient_id": "2000",
+                "amount": "1.69",
+                "data_points": "0",
+                "derivation_id": "20",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1087": {
+                "id": "1334586",
+                "fdc_id": "168155",
+                "nutrient_id": "1087",
+                "amount": "33",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1092": {
+                "id": "1334587",
+                "fdc_id": "168155",
+                "nutrient_id": "1092",
+                "amount": "102",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1095": {
+                "id": "1334588",
+                "fdc_id": "168155",
+                "nutrient_id": "1095",
+                "amount": "0.11",
+                "data_points": "1",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1103": {
+                "id": "1334589",
+                "fdc_id": "168155",
+                "nutrient_id": "1103",
+                "amount": "0.4",
+                "data_points": "0",
+                "derivation_id": "16",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1109": {
+                "id": "1334590",
+                "fdc_id": "168155",
+                "nutrient_id": "1109",
+                "amount": "0.22",
+                "data_points": "0",
+                "derivation_id": "20",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1051": {
+                "id": "1334591",
+                "fdc_id": "168155",
+                "nutrient_id": "1051",
+                "amount": "88.26",
+                "data_points": "5",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1265": {
+                "id": "1334592",
+                "fdc_id": "168155",
+                "nutrient_id": "1265",
+                "amount": "0.02",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1266": {
+                "id": "1334593",
+                "fdc_id": "168155",
+                "nutrient_id": "1266",
+                "amount": "0.001",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1268": {
+                "id": "1334594",
+                "fdc_id": "168155",
+                "nutrient_id": "1268",
+                "amount": "0.016",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1269": {
+                "id": "1334595",
+                "fdc_id": "168155",
+                "nutrient_id": "1269",
+                "amount": "0.036",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1270": {
+                "id": "1334596",
+                "fdc_id": "168155",
+                "nutrient_id": "1270",
+                "amount": "0.019",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1292": {
+                "id": "1334597",
+                "fdc_id": "168155",
+                "nutrient_id": "1292",
+                "amount": "0.019",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1293": {
+                "id": "1334598",
+                "fdc_id": "168155",
+                "nutrient_id": "1293",
+                "amount": "0.055",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1003": {
+                "id": "1334599",
+                "fdc_id": "168155",
+                "nutrient_id": "1003",
+                "amount": "0.7",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1007": {
+                "id": "1334600",
+                "fdc_id": "168155",
+                "nutrient_id": "1007",
+                "amount": "0.3",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1106": {
+                "id": "1334601",
+                "fdc_id": "168155",
+                "nutrient_id": "1106",
+                "amount": "2",
+                "data_points": "0",
+                "derivation_id": "20",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1107": {
+                "id": "1334602",
+                "fdc_id": "168155",
+                "nutrient_id": "1107",
+                "amount": "30",
+                "data_points": "0",
+                "derivation_id": "20",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1108": {
+                "id": "1334603",
+                "fdc_id": "168155",
+                "nutrient_id": "1108",
+                "amount": "0",
+                "data_points": "0",
+                "derivation_id": "20",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1089": {
+                "id": "1334604",
+                "fdc_id": "168155",
+                "nutrient_id": "1089",
+                "amount": "0.6",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1090": {
+                "id": "1334605",
+                "fdc_id": "168155",
+                "nutrient_id": "1090",
+                "amount": "6",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1091": {
+                "id": "1334606",
+                "fdc_id": "168155",
+                "nutrient_id": "1091",
+                "amount": "18",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1093": {
+                "id": "1334607",
+                "fdc_id": "168155",
+                "nutrient_id": "1093",
+                "amount": "2",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1098": {
+                "id": "1334608",
+                "fdc_id": "168155",
+                "nutrient_id": "1098",
+                "amount": "0.065",
+                "data_points": "1",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1101": {
+                "id": "1334609",
+                "fdc_id": "168155",
+                "nutrient_id": "1101",
+                "amount": "0.008",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1104": {
+                "id": "1334610",
+                "fdc_id": "168155",
+                "nutrient_id": "1104",
+                "amount": "50",
+                "data_points": "0",
+                "derivation_id": "20",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1275": {
+                "id": "1334611",
+                "fdc_id": "168155",
+                "nutrient_id": "1275",
+                "amount": "0.003",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1258": {
+                "id": "1334612",
+                "fdc_id": "168155",
+                "nutrient_id": "1258",
+                "amount": "0.022",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1264": {
+                "id": "1334613",
+                "fdc_id": "168155",
+                "nutrient_id": "1264",
+                "amount": "0.001",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1185": {
+                "id": "1334614",
+                "fdc_id": "168155",
+                "nutrient_id": "1185",
+                "amount": "0.6",
+                "data_points": "0",
+                "derivation_id": "20",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1120": {
+                "id": "1334615",
+                "fdc_id": "168155",
+                "nutrient_id": "1120",
+                "amount": "0",
+                "data_points": "0",
+                "derivation_id": "20",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1122": {
+                "id": "1334616",
+                "fdc_id": "168155",
+                "nutrient_id": "1122",
+                "amount": "0",
+                "data_points": "0",
+                "derivation_id": "20",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1162": {
+                "id": "1334617",
+                "fdc_id": "168155",
+                "nutrient_id": "1162",
+                "amount": "29.1",
+                "data_points": "1",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1165": {
+                "id": "1334618",
+                "fdc_id": "168155",
+                "nutrient_id": "1165",
+                "amount": "0.03",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1166": {
+                "id": "1334619",
+                "fdc_id": "168155",
+                "nutrient_id": "1166",
+                "amount": "0.02",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1177": {
+                "id": "1334620",
+                "fdc_id": "168155",
+                "nutrient_id": "1177",
+                "amount": "8",
+                "data_points": "7",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1105": {
+                "id": "1334621",
+                "fdc_id": "168155",
+                "nutrient_id": "1105",
+                "amount": "0",
+                "data_points": "0",
+                "derivation_id": "68",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1257": {
+                "id": "1334622",
+                "fdc_id": "168155",
+                "nutrient_id": "1257",
+                "amount": "0",
+                "data_points": "0",
+                "derivation_id": "68",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1214": {
+                "id": "1334623",
+                "fdc_id": "168155",
+                "nutrient_id": "1214",
+                "amount": "0.014",
+                "data_points": "10",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1253": {
+                "id": "1334624",
+                "fdc_id": "168155",
+                "nutrient_id": "1253",
+                "amount": "0",
+                "data_points": "0",
+                "derivation_id": "68",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1210": {
+                "id": "1334625",
+                "fdc_id": "168155",
+                "nutrient_id": "1210",
+                "amount": "0.003",
+                "data_points": "10",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1215": {
+                "id": "1334626",
+                "fdc_id": "168155",
+                "nutrient_id": "1215",
+                "amount": "0.002",
+                "data_points": "6",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1079": {
+                "id": "1334627",
+                "fdc_id": "168155",
+                "nutrient_id": "1079",
+                "amount": "2.8",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1178": {
+                "id": "1334628",
+                "fdc_id": "168155",
+                "nutrient_id": "1178",
+                "amount": "0",
+                "data_points": "0",
+                "derivation_id": "68",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1242": {
+                "id": "1334629",
+                "fdc_id": "168155",
+                "nutrient_id": "1242",
+                "amount": "0",
+                "data_points": "0",
+                "derivation_id": "68",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1246": {
+                "id": "1334630",
+                "fdc_id": "168155",
+                "nutrient_id": "1246",
+                "amount": "0",
+                "data_points": "0",
+                "derivation_id": "68",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1114": {
+                "id": "1334631",
+                "fdc_id": "168155",
+                "nutrient_id": "1114",
+                "amount": "0",
+                "data_points": "0",
+                "derivation_id": "68",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1008": {
+                "id": "1334632",
+                "fdc_id": "168155",
+                "nutrient_id": "1008",
+                "amount": "30",
+                "data_points": "0",
+                "derivation_id": "49",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1190": {
+                "id": "1334633",
+                "fdc_id": "168155",
+                "nutrient_id": "1190",
+                "amount": "8",
+                "data_points": "0",
+                "derivation_id": "49",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1180": {
+                "id": "1334634",
+                "fdc_id": "168155",
+                "nutrient_id": "1180",
+                "amount": "5.1",
+                "data_points": "0",
+                "derivation_id": "20",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1187": {
+                "id": "1334635",
+                "fdc_id": "168155",
+                "nutrient_id": "1187",
+                "amount": "8",
+                "data_points": "7",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1062": {
+                "id": "1334636",
+                "fdc_id": "168155",
+                "nutrient_id": "1062",
+                "amount": "126",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              }
+            },
+            "archiveSha256": "b80817294b8850530aaedf2e515c02593b1824f763a0ff356e5c2081643e6fd0",
+            "sourceUrl": "https://fdc.nal.usda.gov/food-details/168155/nutrients"
+          },
+          "massG": 50,
+          "availableUpperPerServingG": "0.9675",
+          "aggregatePolyols": null
+        },
+        {
+          "index": 3,
+          "kind": "USDA_TOTAL_CEILING",
+          "source": {
+            "key": "cumin",
+            "fdc_id": "170923",
+            "data_type": "sr_legacy_food",
+            "description": "Spices, cumin seed",
+            "food_category_id": "2",
+            "publication_date": "2019-04-01",
+            "nutrients": {
+              "1003": {
+                "id": "1565769",
+                "fdc_id": "170923",
+                "nutrient_id": "1003",
+                "amount": "17.81",
+                "data_points": "12",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1079": {
+                "id": "1565771",
+                "fdc_id": "170923",
+                "nutrient_id": "1079",
+                "amount": "10.5",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1004": {
+                "id": "1565785",
+                "fdc_id": "170923",
+                "nutrient_id": "1004",
+                "amount": "22.27",
+                "data_points": "13",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1005": {
+                "id": "1565786",
+                "fdc_id": "170923",
+                "nutrient_id": "1005",
+                "amount": "44.24",
+                "data_points": "0",
+                "derivation_id": "49",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "2000": {
+                "id": "1565823",
+                "fdc_id": "170923",
+                "nutrient_id": "2000",
+                "amount": "2.25",
+                "data_points": "1",
+                "derivation_id": "1",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              }
+            },
+            "portions": [
+              {
+                "id": "87544",
+                "fdc_id": "170923",
+                "seq_num": "1",
+                "amount": "1",
+                "measure_unit_id": "9999",
+                "portion_description": "",
+                "modifier": "tsp, whole",
+                "gram_weight": "2.1",
+                "data_points": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              {
+                "id": "87545",
+                "fdc_id": "170923",
+                "seq_num": "2",
+                "amount": "1",
+                "measure_unit_id": "9999",
+                "portion_description": "",
+                "modifier": "tbsp, whole",
+                "gram_weight": "6",
+                "data_points": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              }
+            ]
+          },
+          "massG": 2,
+          "availableUpperPerServingG": "0.2212",
+          "aggregatePolyols": null
+        },
+        {
+          "index": 4,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "11191",
+          "massG": 1,
+          "choPer100g": 21.63,
+          "aggregatePolyols": null,
+          "fibre": null,
+          "giSourceId": null,
+          "omitted": true
+        },
+        {
+          "index": 5,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "393",
+          "massG": 6,
+          "choPer100g": 16.3,
+          "aggregatePolyols": 0.0,
+          "fibre": null,
+          "giSourceId": "op141-vegetable-imputation40",
+          "omitted": false
+        },
+        {
+          "index": 6,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "922",
+          "massG": 150,
+          "choPer100g": 0.0,
+          "aggregatePolyols": 0.0,
+          "fibre": 0.0,
+          "giSourceId": null,
+          "omitted": false
+        },
+        {
+          "index": 7,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "34233",
+          "massG": 144,
+          "choPer100g": 2.591,
+          "aggregatePolyols": 0.0,
+          "fibre": null,
+          "giSourceId": "op141-vegetable-imputation40",
+          "omitted": false
+        },
+        {
+          "index": 8,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "352",
+          "massG": 70,
+          "choPer100g": 3.45,
+          "aggregatePolyols": 0.0,
+          "fibre": 0.4,
+          "giSourceId": "op141-vegetable-imputation40",
+          "omitted": false
+        },
+        {
+          "index": 9,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "34234",
+          "massG": 20,
+          "choPer100g": 5.447,
+          "aggregatePolyols": 0.0,
+          "fibre": 1.2,
+          "giSourceId": "op141-vegetable-imputation40",
+          "omitted": false
+        },
+        {
+          "index": 10,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "34238",
+          "massG": 10,
+          "choPer100g": 0.505,
+          "aggregatePolyols": 0.0,
+          "fibre": null,
+          "giSourceId": "op141-vegetable-imputation40",
+          "omitted": false
+        },
+        {
+          "index": 11,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "11177",
+          "massG": 0.5,
+          "choPer100g": 38.31,
+          "aggregatePolyols": null,
+          "fibre": null,
+          "giSourceId": null,
+          "omitted": true
+        }
+      ],
+      "expectedOmittedPerServingG": "1.2906625",
+      "evidenceBundleSha256": "ca6a8ba913b91adab276d2404ee47a3ab2a69c8665587ad9fe055ee467a1215b"
+    },
+    {
+      "scenarioId": "defined-weighed-hot-version",
+      "input": {
+        "recipeId": "doner-kebab",
+        "servings": 4,
+        "ingredients": [
+          {
+            "name": "naudan jauhelihaa, rasvaa 17 %",
+            "grams": 600,
+            "fineliRecordId": "op141-fineli-11562",
+            "giRecordId": null,
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes."
+          },
+          {
+            "name": "maustamatonta laktoositonta kreikkalaista jogurttia, rasvaa 7 %",
+            "grams": 100,
+            "fineliRecordId": "op141-fineli-34611",
+            "giRecordId": "op141-dairy-imputation30",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "dairy-code",
+            "preparationKey": "op141-dairy-imputation30",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Raw white cabbage200g replaces undefined prepared coleslaw. Whole pita220g included. All meat juices/fat retained. Existing pita comparator must be independently checked before publication."
+          },
+          {
+            "name": "sipuli",
+            "grams": 55,
+            "fineliRecordId": "op141-fineli-335",
+            "giRecordId": "op141-vegetable-imputation40",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "low-carb-vegetable",
+            "preparationKey": "op141-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Raw white cabbage200g replaces undefined prepared coleslaw. Whole pita220g included. All meat juices/fat retained. Existing pita comparator must be independently checked before publication."
+          },
+          {
+            "name": "tuoretta kuorittua valkosipulia",
+            "grams": 6,
+            "fineliRecordId": "op141-fineli-393",
+            "giRecordId": "op141-vegetable-imputation40",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "low-carb-vegetable",
+            "preparationKey": "op141-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Raw white cabbage200g replaces undefined prepared coleslaw. Whole pita220g included. All meat juices/fat retained. Existing pita comparator must be independently checked before publication."
+          },
+          {
+            "name": "juustokuminaa",
+            "grams": 2,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Source-backed source-total ceiling under existing GK omission rule.",
+            "availableCarbohydrateUpperBoundPerServingG": 0.2212,
+            "upperBoundEvidence": "USDA SR Legacy2018 FDC170923 Spices, cumin seed; nutrient1005 totalCHO 44.24g/100g; retained 2g/4servings. No fibre/polyol subtraction. Nominal source-model ceiling only; not a clinical or lot maximum."
+          },
+          {
+            "name": "paprikajauhetta",
+            "grams": 2,
+            "fineliRecordId": "op141-fineli-11182",
+            "giRecordId": null,
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "giMatchEvidence": "No matching GI; source-known Fineli CHOAVL 0.0917g/serving is counted in cumulative omission; not zero. CHOAVL already excludes polyols."
+          },
+          {
+            "name": "kuivattua oreganoa",
+            "grams": 1.0,
+            "fineliRecordId": "op141-fineli-11191",
+            "giRecordId": null,
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "giMatchEvidence": "No matching GI; source-known Fineli CHOAVL 0.054075g/serving is counted in cumulative omission; not zero. CHOAVL already excludes polyols."
+          },
+          {
+            "name": "suolaa",
+            "grams": null,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Explicit pure salt",
+            "estimatedAvailableCarbohydratePerServingG": 0,
+            "negligibleAssumption": "Pure salt, no carbohydrate. Unknown salt mass remains null."
+          },
+          {
+            "name": "jauhettua mustapippuria",
+            "grams": 0.5,
+            "fineliRecordId": "op141-fineli-11177",
+            "giRecordId": null,
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "giMatchEvidence": "No matching GI; source-known Fineli CHOAVL 0.0478875g/serving is counted in cumulative omission; not zero. CHOAVL already excludes polyols."
+          },
+          {
+            "name": "pitaleipää",
+            "grams": 220,
+            "fineliRecordId": "op141-fineli-1056",
+            "giRecordId": "op141-pita-white68-r4",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "white-pita",
+            "preparationKey": "op141-pita-white68-r4",
+            "giMatchEvidence": "Specific human comparator, explicit LOW preparation/food application. Raw white cabbage200g replaces undefined prepared coleslaw. Whole pita220g included. All meat juices/fat retained. Existing pita comparator must be independently checked before publication."
+          },
+          {
+            "name": "raakaa valkokaalia",
+            "grams": 200,
+            "fineliRecordId": "op141-fineli-320",
+            "giRecordId": "op141-vegetable-imputation40",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "low-carb-vegetable",
+            "preparationKey": "op141-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Raw white cabbage200g replaces undefined prepared coleslaw. Whole pita220g included. All meat juices/fat retained. Existing pita comparator must be independently checked before publication."
+          }
+        ]
+      },
+      "modelInputSha256": "9fe1d100c8a6a272f7debbc4539827a5757ee6252ccf1f2fab5a5eb913b56df5",
+      "version": {
+        "recipeId": "doner-kebab",
+        "scenarioId": "defined-weighed-hot-version",
+        "publishedPath": "reseptit/paaruoat/doner-kebab.md",
+        "publishedSourceLfSha256": "d1f882063dcb951563a1de6b67a3ac93cf62d31c98ffbf40ec46844cc4538917",
+        "publishedIngredients": [
+          {
+            "amount": 600,
+            "unit": "g",
+            "item": "naudan jauhelihaa"
+          },
+          {
+            "amount": 100,
+            "unit": "g",
+            "item": "kreikkalaista jogurttia"
+          },
+          {
+            "amount": 1,
+            "unit": "kpl",
+            "item": "sipuli",
+            "note": "raastettuna"
+          },
+          {
+            "amount": 2,
+            "unit": "kpl",
+            "item": "valkosipulinkynttä",
+            "note": "murskattuna"
+          },
+          {
+            "amount": 1,
+            "unit": "tl",
+            "item": "juustokuminaa"
+          },
+          {
+            "amount": 1,
+            "unit": "tl",
+            "item": "paprikajauhetta"
+          },
+          {
+            "amount": 0.5,
+            "unit": "tl",
+            "item": "oreganoa"
+          },
+          {
+            "amount": 1,
+            "unit": "tl",
+            "item": "suolaa"
+          },
+          {
+            "amount": 0.25,
+            "unit": "tl",
+            "item": "mustapippuria"
+          },
+          {
+            "amount": 4,
+            "unit": "kpl",
+            "item": "pitaleipää",
+            "note": "tarjoiluun"
+          },
+          {
+            "amount": 200,
+            "unit": "g",
+            "item": "kaalisalaattia",
+            "note": "tarjoiluun"
+          }
+        ],
+        "priorCommit": "b8ece7ee1e4b80fc26abeb9b94944514875188d7",
+        "priorPack": "gk80-release-8",
+        "preparationBase": [
+          "Kuumenna uuni 220 °C:seen. Sekoita 600 g naudan 17 % jauhelihaa, 100 g maustamatonta 7 % kreikkalaista jogurttia, 55 g sipulia, 6 g valkosipulia ja kaikki punnitut mausteet.",
+          "Levitä liha ohueksi kerrokseksi leivinpaperille. Paista 12–15 min, kunnes liha on kauttaaltaan kypsää, ja leikkaa lastuiksi. Viimeistele lastut pannulla omassa rasvassaan ja säästä kaikki rasva ja neste.",
+          "Lämmitä 220 g valmista vaaleaa pitaleipää ilman lisäöljyä. Tarjoa koko liha nesteineen ja 200 g raakaa valkokaalia neljänä annoksena; erillinen kaalisalaattikastike ei sisälly tähän versioon."
+        ],
+        "bindingVersionNotes": "Raw white cabbage200g replaces undefined prepared coleslaw. Whole pita220g included. All meat juices/fat retained. Existing pita comparator must be independently checked before publication.",
+        "weighedIngredients": [
+          {
+            "name": "naudan jauhelihaa, rasvaa 17 %",
+            "grams": 600,
+            "fineliRecordId": "op141-fineli-11562",
+            "giRecordId": null,
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes."
+          },
+          {
+            "name": "maustamatonta laktoositonta kreikkalaista jogurttia, rasvaa 7 %",
+            "grams": 100,
+            "fineliRecordId": "op141-fineli-34611",
+            "giRecordId": "op141-dairy-imputation30",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "dairy-code",
+            "preparationKey": "op141-dairy-imputation30",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Raw white cabbage200g replaces undefined prepared coleslaw. Whole pita220g included. All meat juices/fat retained. Existing pita comparator must be independently checked before publication."
+          },
+          {
+            "name": "sipuli",
+            "grams": 55,
+            "fineliRecordId": "op141-fineli-335",
+            "giRecordId": "op141-vegetable-imputation40",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "low-carb-vegetable",
+            "preparationKey": "op141-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Raw white cabbage200g replaces undefined prepared coleslaw. Whole pita220g included. All meat juices/fat retained. Existing pita comparator must be independently checked before publication."
+          },
+          {
+            "name": "tuoretta kuorittua valkosipulia",
+            "grams": 6,
+            "fineliRecordId": "op141-fineli-393",
+            "giRecordId": "op141-vegetable-imputation40",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "low-carb-vegetable",
+            "preparationKey": "op141-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Raw white cabbage200g replaces undefined prepared coleslaw. Whole pita220g included. All meat juices/fat retained. Existing pita comparator must be independently checked before publication."
+          },
+          {
+            "name": "juustokuminaa",
+            "grams": 2,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Source-backed source-total ceiling under existing GK omission rule.",
+            "availableCarbohydrateUpperBoundPerServingG": 0.2212,
+            "upperBoundEvidence": "USDA SR Legacy2018 FDC170923 Spices, cumin seed; nutrient1005 totalCHO 44.24g/100g; retained 2g/4servings. No fibre/polyol subtraction. Nominal source-model ceiling only; not a clinical or lot maximum."
+          },
+          {
+            "name": "paprikajauhetta",
+            "grams": 2,
+            "fineliRecordId": "op141-fineli-11182",
+            "giRecordId": null,
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "giMatchEvidence": "No matching GI; source-known Fineli CHOAVL 0.0917g/serving is counted in cumulative omission; not zero. CHOAVL already excludes polyols."
+          },
+          {
+            "name": "kuivattua oreganoa",
+            "grams": 1.0,
+            "fineliRecordId": "op141-fineli-11191",
+            "giRecordId": null,
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "giMatchEvidence": "No matching GI; source-known Fineli CHOAVL 0.054075g/serving is counted in cumulative omission; not zero. CHOAVL already excludes polyols."
+          },
+          {
+            "name": "suolaa",
+            "grams": null,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Explicit pure salt",
+            "estimatedAvailableCarbohydratePerServingG": 0,
+            "negligibleAssumption": "Pure salt, no carbohydrate. Unknown salt mass remains null."
+          },
+          {
+            "name": "jauhettua mustapippuria",
+            "grams": 0.5,
+            "fineliRecordId": "op141-fineli-11177",
+            "giRecordId": null,
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "giMatchEvidence": "No matching GI; source-known Fineli CHOAVL 0.0478875g/serving is counted in cumulative omission; not zero. CHOAVL already excludes polyols."
+          },
+          {
+            "name": "pitaleipää",
+            "grams": 220,
+            "fineliRecordId": "op141-fineli-1056",
+            "giRecordId": "op141-pita-white68-r4",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "white-pita",
+            "preparationKey": "op141-pita-white68-r4",
+            "giMatchEvidence": "Specific human comparator, explicit LOW preparation/food application. Raw white cabbage200g replaces undefined prepared coleslaw. Whole pita220g included. All meat juices/fat retained. Existing pita comparator must be independently checked before publication."
+          },
+          {
+            "name": "raakaa valkokaalia",
+            "grams": 200,
+            "fineliRecordId": "op141-fineli-320",
+            "giRecordId": "op141-vegetable-imputation40",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "low-carb-vegetable",
+            "preparationKey": "op141-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Raw white cabbage200g replaces undefined prepared coleslaw. Whole pita220g included. All meat juices/fat retained. Existing pita comparator must be independently checked before publication."
+          }
+        ],
+        "servings": 4,
+        "ownerApproved": false,
+        "publicationAuthorized": false,
+        "macrosRecalculated": false,
+        "methodChange": false
+      },
+      "versionSha256": "22e1938f34ea92482c441fc587f8423fb6640013511c95d896e76c7276c53e1a",
+      "ingredientEvidence": [
+        {
+          "index": 0,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "11562",
+          "massG": 600,
+          "choPer100g": 0.0,
+          "aggregatePolyols": 0.0,
+          "fibre": 0.0,
+          "giSourceId": null,
+          "omitted": false
+        },
+        {
+          "index": 1,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "34611",
+          "massG": 100,
+          "choPer100g": 2.917,
+          "aggregatePolyols": 0.0,
+          "fibre": 0.0,
+          "giSourceId": "op141-dairy-imputation30",
+          "omitted": false
+        },
+        {
+          "index": 2,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "335",
+          "massG": 55,
+          "choPer100g": 4.8,
+          "aggregatePolyols": 0.0,
+          "fibre": 1.2,
+          "giSourceId": "op141-vegetable-imputation40",
+          "omitted": false
+        },
+        {
+          "index": 3,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "393",
+          "massG": 6,
+          "choPer100g": 16.3,
+          "aggregatePolyols": 0.0,
+          "fibre": null,
+          "giSourceId": "op141-vegetable-imputation40",
+          "omitted": false
+        },
+        {
+          "index": 4,
+          "kind": "USDA_TOTAL_CEILING",
+          "source": {
+            "key": "cumin",
+            "fdc_id": "170923",
+            "data_type": "sr_legacy_food",
+            "description": "Spices, cumin seed",
+            "food_category_id": "2",
+            "publication_date": "2019-04-01",
+            "nutrients": {
+              "1003": {
+                "id": "1565769",
+                "fdc_id": "170923",
+                "nutrient_id": "1003",
+                "amount": "17.81",
+                "data_points": "12",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1079": {
+                "id": "1565771",
+                "fdc_id": "170923",
+                "nutrient_id": "1079",
+                "amount": "10.5",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1004": {
+                "id": "1565785",
+                "fdc_id": "170923",
+                "nutrient_id": "1004",
+                "amount": "22.27",
+                "data_points": "13",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1005": {
+                "id": "1565786",
+                "fdc_id": "170923",
+                "nutrient_id": "1005",
+                "amount": "44.24",
+                "data_points": "0",
+                "derivation_id": "49",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "2000": {
+                "id": "1565823",
+                "fdc_id": "170923",
+                "nutrient_id": "2000",
+                "amount": "2.25",
+                "data_points": "1",
+                "derivation_id": "1",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              }
+            },
+            "portions": [
+              {
+                "id": "87544",
+                "fdc_id": "170923",
+                "seq_num": "1",
+                "amount": "1",
+                "measure_unit_id": "9999",
+                "portion_description": "",
+                "modifier": "tsp, whole",
+                "gram_weight": "2.1",
+                "data_points": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              {
+                "id": "87545",
+                "fdc_id": "170923",
+                "seq_num": "2",
+                "amount": "1",
+                "measure_unit_id": "9999",
+                "portion_description": "",
+                "modifier": "tbsp, whole",
+                "gram_weight": "6",
+                "data_points": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              }
+            ]
+          },
+          "massG": 2,
+          "availableUpperPerServingG": "0.2212",
+          "aggregatePolyols": null
+        },
+        {
+          "index": 5,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "11182",
+          "massG": 2,
+          "choPer100g": 18.34,
+          "aggregatePolyols": null,
+          "fibre": null,
+          "giSourceId": null,
+          "omitted": true
+        },
+        {
+          "index": 6,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "11191",
+          "massG": 1.0,
+          "choPer100g": 21.63,
+          "aggregatePolyols": null,
+          "fibre": null,
+          "giSourceId": null,
+          "omitted": true
+        },
+        {
+          "index": 8,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "11177",
+          "massG": 0.5,
+          "choPer100g": 38.31,
+          "aggregatePolyols": null,
+          "fibre": null,
+          "giSourceId": null,
+          "omitted": true
+        },
+        {
+          "index": 9,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "1056",
+          "massG": 220,
+          "choPer100g": 46.08,
+          "aggregatePolyols": 0.0,
+          "fibre": 2.322,
+          "giSourceId": "op141-pita-white68-r4",
+          "omitted": false
+        },
+        {
+          "index": 10,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "320",
+          "massG": 200,
+          "choPer100g": 4.97,
+          "aggregatePolyols": 0.0,
+          "fibre": 2.0,
+          "giSourceId": "op141-vegetable-imputation40",
+          "omitted": false
+        }
+      ],
+      "expectedOmittedPerServingG": "0.4148625",
+      "evidenceBundleSha256": "0c94a148dd2b6facc468540b45506cbb2c13c8d6fe5c10401ba91c558f00d69d"
+    },
+    {
+      "scenarioId": "defined-weighed-version",
+      "input": {
+        "recipeId": "marokkolainen-couscous",
+        "servings": 4,
+        "ingredients": [
+          {
+            "name": "maustamatonta raakaa broilerisuikaletta",
+            "grams": 600,
+            "fineliRecordId": "op141-fineli-754",
+            "giRecordId": null,
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes."
+          },
+          {
+            "name": "kuivaa couscousia",
+            "grams": 250,
+            "fineliRecordId": "op141-fineli-29208",
+            "giRecordId": "op141-couscous65",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "couscous",
+            "preparationKey": "op141-couscous65",
+            "giMatchEvidence": "Specific human comparator, explicit LOW preparation/food application. New named drained-canned chickpea human comparator GI35 (Edgell2018,not family mean28). Fineli11089 cooked chickpea is a separate LOW composition proxy; reheating in stew is a disclosed preparation analogy. Version specifies600g unseasoned raw chicken strips (Fineli754,not AFCD thigh),250g dry durum couscous(Fineli29208 composition proxy; SanRemoGI65),1000g prepared diluted chicken stock(Fineli30315),all stock consumed. Take375g of the stock for5-minute covered couscous hydration, no extra butter/oil. All spices retained; ground cumin/coriander from whole seeds. This is a new exact owner-pending version, not original thigh variant."
+          },
+          {
+            "name": "sipuli",
+            "grams": 55,
+            "fineliRecordId": "op141-fineli-335",
+            "giRecordId": "op141-vegetable-imputation40",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "low-carb-vegetable",
+            "preparationKey": "op141-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. New named drained-canned chickpea human comparator GI35 (Edgell2018,not family mean28). Fineli11089 cooked chickpea is a separate LOW composition proxy; reheating in stew is a disclosed preparation analogy. Version specifies600g unseasoned raw chicken strips (Fineli754,not AFCD thigh),250g dry durum couscous(Fineli29208 composition proxy; SanRemoGI65),1000g prepared diluted chicken stock(Fineli30315),all stock consumed. Take375g of the stock for5-minute covered couscous hydration, no extra butter/oil. All spices retained; ground cumin/coriander from whole seeds. This is a new exact owner-pending version, not original thigh variant."
+          },
+          {
+            "name": "porkkanaa",
+            "grams": 110,
+            "fineliRecordId": "op141-fineli-300",
+            "giRecordId": "op141-vegetable-imputation40",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "low-carb-vegetable",
+            "preparationKey": "op141-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. New named drained-canned chickpea human comparator GI35 (Edgell2018,not family mean28). Fineli11089 cooked chickpea is a separate LOW composition proxy; reheating in stew is a disclosed preparation analogy. Version specifies600g unseasoned raw chicken strips (Fineli754,not AFCD thigh),250g dry durum couscous(Fineli29208 composition proxy; SanRemoGI65),1000g prepared diluted chicken stock(Fineli30315),all stock consumed. Take375g of the stock for5-minute covered couscous hydration, no extra butter/oil. All spices retained; ground cumin/coriander from whole seeds. This is a new exact owner-pending version, not original thigh variant."
+          },
+          {
+            "name": "kesäkurpitsaa",
+            "grams": 200,
+            "fineliRecordId": "op141-fineli-389",
+            "giRecordId": "op141-vegetable-imputation40",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "low-carb-vegetable",
+            "preparationKey": "op141-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. New named drained-canned chickpea human comparator GI35 (Edgell2018,not family mean28). Fineli11089 cooked chickpea is a separate LOW composition proxy; reheating in stew is a disclosed preparation analogy. Version specifies600g unseasoned raw chicken strips (Fineli754,not AFCD thigh),250g dry durum couscous(Fineli29208 composition proxy; SanRemoGI65),1000g prepared diluted chicken stock(Fineli30315),all stock consumed. Take375g of the stock for5-minute covered couscous hydration, no extra butter/oil. All spices retained; ground cumin/coriander from whole seeds. This is a new exact owner-pending version, not original thigh variant."
+          },
+          {
+            "name": "kypsiä valutettuja kikherneitä",
+            "grams": 400,
+            "fineliRecordId": "op141-fineli-11089",
+            "giRecordId": "op141-op141-chickpea-edgell35",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "chickpea",
+            "preparationKey": "op141-op141-chickpea-edgell35",
+            "giMatchEvidence": "Specific human comparator, explicit LOW preparation/food application. New named drained-canned chickpea human comparator GI35 (Edgell2018,not family mean28). Fineli11089 cooked chickpea is a separate LOW composition proxy; reheating in stew is a disclosed preparation analogy. Version specifies600g unseasoned raw chicken strips (Fineli754,not AFCD thigh),250g dry durum couscous(Fineli29208 composition proxy; SanRemoGI65),1000g prepared diluted chicken stock(Fineli30315),all stock consumed. Take375g of the stock for5-minute covered couscous hydration, no extra butter/oil. All spices retained; ground cumin/coriander from whole seeds. This is a new exact owner-pending version, not original thigh variant."
+          },
+          {
+            "name": "käyttövalmista lientä, AFCD:n yleinen koostumusvertailu",
+            "grams": 1000,
+            "fineliRecordId": "op141-fineli-30315",
+            "giRecordId": "op141-lowcho50-v2",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "lowcho-code",
+            "preparationKey": "op141-lowcho50-v2",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. New named drained-canned chickpea human comparator GI35 (Edgell2018,not family mean28). Fineli11089 cooked chickpea is a separate LOW composition proxy; reheating in stew is a disclosed preparation analogy. Version specifies600g unseasoned raw chicken strips (Fineli754,not AFCD thigh),250g dry durum couscous(Fineli29208 composition proxy; SanRemoGI65),1000g prepared diluted chicken stock(Fineli30315),all stock consumed. Take375g of the stock for5-minute covered couscous hydration, no extra butter/oil. All spices retained; ground cumin/coriander from whole seeds. This is a new exact owner-pending version, not original thigh variant."
+          },
+          {
+            "name": "juustokuminaa",
+            "grams": 2,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Source-backed source-total ceiling under existing GK omission rule.",
+            "availableCarbohydrateUpperBoundPerServingG": 0.2212,
+            "upperBoundEvidence": "USDA SR Legacy2018 FDC170923 Spices, cumin seed; nutrient1005 totalCHO 44.24g/100g; retained 2g/4servings. No fibre/polyol subtraction. Nominal source-model ceiling only; not a clinical or lot maximum."
+          },
+          {
+            "name": "jauhettua korianterinsiementä",
+            "grams": 2,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Source-backed source-total ceiling under existing GK omission rule.",
+            "availableCarbohydrateUpperBoundPerServingG": 0.27495,
+            "upperBoundEvidence": "USDA SR Legacy2018 FDC170922 Spices, coriander seed; nutrient1005 totalCHO 54.99g/100g; retained 2g/4servings. No fibre/polyol subtraction. Nominal source-model ceiling only; not a clinical or lot maximum."
+          },
+          {
+            "name": "kurkumaa",
+            "grams": 1.0,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Source-backed source-total ceiling under existing GK omission rule.",
+            "availableCarbohydrateUpperBoundPerServingG": 0.16785,
+            "upperBoundEvidence": "USDA SR Legacy2018 FDC172231 Spices, turmeric, ground; nutrient1005 totalCHO 67.14g/100g; retained 1.0g/4servings. No fibre/polyol subtraction. Nominal source-model ceiling only; not a clinical or lot maximum."
+          },
+          {
+            "name": "oliiviöljyä",
+            "grams": 27.0,
+            "fineliRecordId": "op141-fineli-536",
+            "giRecordId": null,
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes."
+          },
+          {
+            "name": "suolaa",
+            "grams": null,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Explicit pure salt",
+            "estimatedAvailableCarbohydratePerServingG": 0,
+            "negligibleAssumption": "Pure salt, no carbohydrate. Unknown salt mass remains null."
+          }
+        ]
+      },
+      "modelInputSha256": "890056038cd8bcf101c57bdec206ccd3d0101a8557dc1f171e1d4f9d72544099",
+      "version": {
+        "recipeId": "marokkolainen-couscous",
+        "scenarioId": "defined-weighed-version",
+        "publishedPath": "reseptit/paaruoat/marokkolainen-couscous.md",
+        "publishedSourceLfSha256": "ac56be985edbbaa8d44fd385f50d5b19587f3c34b6acfe9148232605f52778f9",
+        "publishedIngredients": [
+          {
+            "amount": 600,
+            "unit": "g",
+            "item": "broilerin koipia tai paistileikettä"
+          },
+          {
+            "amount": 250,
+            "unit": "g",
+            "item": "couscousia"
+          },
+          {
+            "amount": 1,
+            "unit": "kpl",
+            "item": "sipuli",
+            "note": "hienonnettuna"
+          },
+          {
+            "amount": 2,
+            "unit": "kpl",
+            "item": "porkkanaa",
+            "note": "paloina"
+          },
+          {
+            "amount": 1,
+            "unit": "kpl",
+            "item": "kesäkurpitsaa",
+            "note": "paloina"
+          },
+          {
+            "amount": 400,
+            "unit": "g",
+            "item": "kikherneitä",
+            "note": "huuhdeltuna"
+          },
+          {
+            "amount": 1,
+            "unit": "l",
+            "item": "kanalientä"
+          },
+          {
+            "amount": 1,
+            "unit": "tl",
+            "item": "juustokuminaa"
+          },
+          {
+            "amount": 1,
+            "unit": "tl",
+            "item": "jauhettua korianteria"
+          },
+          {
+            "amount": 0.5,
+            "unit": "tl",
+            "item": "kurkumaa"
+          },
+          {
+            "amount": 2,
+            "unit": "rkl",
+            "item": "oliiviöljyä"
+          },
+          {
+            "amount": 1,
+            "unit": "tl",
+            "item": "suolaa"
+          }
+        ],
+        "priorCommit": "b8ece7ee1e4b80fc26abeb9b94944514875188d7",
+        "priorPack": "gk80-release-8",
+        "preparationBase": [
+          "Punnitse600g maustamatonta raakaa broilerisuikaletta,55g sipulia,110g porkkanaa ja200g kesäkurpitsaa. Kypsennä27g oliiviöljyssä.",
+          "Lisää1000g Finelin laimennetun kanaliemen koostumusta vastaavaa käyttövalmista lientä ja kaikki punnitut mausteet. Kypsennä kana kauttaaltaan. Lisää400g kypsiä valutettuja säilykekikherneitä ja kuumenna.",
+          "Ota375g kuumaa lientä250g kuivan durumcouscousin turvottamiseen5min kannen alla. Yhdistä kaikki couscous ja jäljellä oleva liemi, kana ja kasvikset. Jaa kaikki neljään annokseen. Ei ylimääräisiä lisäkkeitä, voita tai harissaa."
+        ],
+        "bindingVersionNotes": "New named drained-canned chickpea human comparator GI35 (Edgell2018,not family mean28). Fineli11089 cooked chickpea is a separate LOW composition proxy; reheating in stew is a disclosed preparation analogy. Version specifies600g unseasoned raw chicken strips (Fineli754,not AFCD thigh),250g dry durum couscous(Fineli29208 composition proxy; SanRemoGI65),1000g prepared diluted chicken stock(Fineli30315),all stock consumed. Take375g of the stock for5-minute covered couscous hydration, no extra butter/oil. All spices retained; ground cumin/coriander from whole seeds. This is a new exact owner-pending version, not original thigh variant.",
+        "weighedIngredients": [
+          {
+            "name": "maustamatonta raakaa broilerisuikaletta",
+            "grams": 600,
+            "fineliRecordId": "op141-fineli-754",
+            "giRecordId": null,
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes."
+          },
+          {
+            "name": "kuivaa couscousia",
+            "grams": 250,
+            "fineliRecordId": "op141-fineli-29208",
+            "giRecordId": "op141-couscous65",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "couscous",
+            "preparationKey": "op141-couscous65",
+            "giMatchEvidence": "Specific human comparator, explicit LOW preparation/food application. New named drained-canned chickpea human comparator GI35 (Edgell2018,not family mean28). Fineli11089 cooked chickpea is a separate LOW composition proxy; reheating in stew is a disclosed preparation analogy. Version specifies600g unseasoned raw chicken strips (Fineli754,not AFCD thigh),250g dry durum couscous(Fineli29208 composition proxy; SanRemoGI65),1000g prepared diluted chicken stock(Fineli30315),all stock consumed. Take375g of the stock for5-minute covered couscous hydration, no extra butter/oil. All spices retained; ground cumin/coriander from whole seeds. This is a new exact owner-pending version, not original thigh variant."
+          },
+          {
+            "name": "sipuli",
+            "grams": 55,
+            "fineliRecordId": "op141-fineli-335",
+            "giRecordId": "op141-vegetable-imputation40",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "low-carb-vegetable",
+            "preparationKey": "op141-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. New named drained-canned chickpea human comparator GI35 (Edgell2018,not family mean28). Fineli11089 cooked chickpea is a separate LOW composition proxy; reheating in stew is a disclosed preparation analogy. Version specifies600g unseasoned raw chicken strips (Fineli754,not AFCD thigh),250g dry durum couscous(Fineli29208 composition proxy; SanRemoGI65),1000g prepared diluted chicken stock(Fineli30315),all stock consumed. Take375g of the stock for5-minute covered couscous hydration, no extra butter/oil. All spices retained; ground cumin/coriander from whole seeds. This is a new exact owner-pending version, not original thigh variant."
+          },
+          {
+            "name": "porkkanaa",
+            "grams": 110,
+            "fineliRecordId": "op141-fineli-300",
+            "giRecordId": "op141-vegetable-imputation40",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "low-carb-vegetable",
+            "preparationKey": "op141-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. New named drained-canned chickpea human comparator GI35 (Edgell2018,not family mean28). Fineli11089 cooked chickpea is a separate LOW composition proxy; reheating in stew is a disclosed preparation analogy. Version specifies600g unseasoned raw chicken strips (Fineli754,not AFCD thigh),250g dry durum couscous(Fineli29208 composition proxy; SanRemoGI65),1000g prepared diluted chicken stock(Fineli30315),all stock consumed. Take375g of the stock for5-minute covered couscous hydration, no extra butter/oil. All spices retained; ground cumin/coriander from whole seeds. This is a new exact owner-pending version, not original thigh variant."
+          },
+          {
+            "name": "kesäkurpitsaa",
+            "grams": 200,
+            "fineliRecordId": "op141-fineli-389",
+            "giRecordId": "op141-vegetable-imputation40",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "low-carb-vegetable",
+            "preparationKey": "op141-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. New named drained-canned chickpea human comparator GI35 (Edgell2018,not family mean28). Fineli11089 cooked chickpea is a separate LOW composition proxy; reheating in stew is a disclosed preparation analogy. Version specifies600g unseasoned raw chicken strips (Fineli754,not AFCD thigh),250g dry durum couscous(Fineli29208 composition proxy; SanRemoGI65),1000g prepared diluted chicken stock(Fineli30315),all stock consumed. Take375g of the stock for5-minute covered couscous hydration, no extra butter/oil. All spices retained; ground cumin/coriander from whole seeds. This is a new exact owner-pending version, not original thigh variant."
+          },
+          {
+            "name": "kypsiä valutettuja kikherneitä",
+            "grams": 400,
+            "fineliRecordId": "op141-fineli-11089",
+            "giRecordId": "op141-op141-chickpea-edgell35",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "chickpea",
+            "preparationKey": "op141-op141-chickpea-edgell35",
+            "giMatchEvidence": "Specific human comparator, explicit LOW preparation/food application. New named drained-canned chickpea human comparator GI35 (Edgell2018,not family mean28). Fineli11089 cooked chickpea is a separate LOW composition proxy; reheating in stew is a disclosed preparation analogy. Version specifies600g unseasoned raw chicken strips (Fineli754,not AFCD thigh),250g dry durum couscous(Fineli29208 composition proxy; SanRemoGI65),1000g prepared diluted chicken stock(Fineli30315),all stock consumed. Take375g of the stock for5-minute covered couscous hydration, no extra butter/oil. All spices retained; ground cumin/coriander from whole seeds. This is a new exact owner-pending version, not original thigh variant."
+          },
+          {
+            "name": "käyttövalmista lientä, AFCD:n yleinen koostumusvertailu",
+            "grams": 1000,
+            "fineliRecordId": "op141-fineli-30315",
+            "giRecordId": "op141-lowcho50-v2",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "lowcho-code",
+            "preparationKey": "op141-lowcho50-v2",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. New named drained-canned chickpea human comparator GI35 (Edgell2018,not family mean28). Fineli11089 cooked chickpea is a separate LOW composition proxy; reheating in stew is a disclosed preparation analogy. Version specifies600g unseasoned raw chicken strips (Fineli754,not AFCD thigh),250g dry durum couscous(Fineli29208 composition proxy; SanRemoGI65),1000g prepared diluted chicken stock(Fineli30315),all stock consumed. Take375g of the stock for5-minute covered couscous hydration, no extra butter/oil. All spices retained; ground cumin/coriander from whole seeds. This is a new exact owner-pending version, not original thigh variant."
+          },
+          {
+            "name": "juustokuminaa",
+            "grams": 2,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Source-backed source-total ceiling under existing GK omission rule.",
+            "availableCarbohydrateUpperBoundPerServingG": 0.2212,
+            "upperBoundEvidence": "USDA SR Legacy2018 FDC170923 Spices, cumin seed; nutrient1005 totalCHO 44.24g/100g; retained 2g/4servings. No fibre/polyol subtraction. Nominal source-model ceiling only; not a clinical or lot maximum."
+          },
+          {
+            "name": "jauhettua korianterinsiementä",
+            "grams": 2,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Source-backed source-total ceiling under existing GK omission rule.",
+            "availableCarbohydrateUpperBoundPerServingG": 0.27495,
+            "upperBoundEvidence": "USDA SR Legacy2018 FDC170922 Spices, coriander seed; nutrient1005 totalCHO 54.99g/100g; retained 2g/4servings. No fibre/polyol subtraction. Nominal source-model ceiling only; not a clinical or lot maximum."
+          },
+          {
+            "name": "kurkumaa",
+            "grams": 1.0,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Source-backed source-total ceiling under existing GK omission rule.",
+            "availableCarbohydrateUpperBoundPerServingG": 0.16785,
+            "upperBoundEvidence": "USDA SR Legacy2018 FDC172231 Spices, turmeric, ground; nutrient1005 totalCHO 67.14g/100g; retained 1.0g/4servings. No fibre/polyol subtraction. Nominal source-model ceiling only; not a clinical or lot maximum."
+          },
+          {
+            "name": "oliiviöljyä",
+            "grams": 27.0,
+            "fineliRecordId": "op141-fineli-536",
+            "giRecordId": null,
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes."
+          },
+          {
+            "name": "suolaa",
+            "grams": null,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Explicit pure salt",
+            "estimatedAvailableCarbohydratePerServingG": 0,
+            "negligibleAssumption": "Pure salt, no carbohydrate. Unknown salt mass remains null."
+          }
+        ],
+        "servings": 4,
+        "ownerApproved": false,
+        "publicationAuthorized": false,
+        "macrosRecalculated": false,
+        "methodChange": false
+      },
+      "versionSha256": "f6fdf25c97a834dcfeed5f2cd7a370fc5924b516f6de9e334860afba8fb74e32",
+      "ingredientEvidence": [
+        {
+          "index": 0,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "754",
+          "massG": 600,
+          "choPer100g": 0.0,
+          "aggregatePolyols": 0.0,
+          "fibre": 0.0,
+          "giSourceId": null,
+          "omitted": false
+        },
+        {
+          "index": 1,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "29208",
+          "massG": 250,
+          "choPer100g": 63.6,
+          "aggregatePolyols": 0.0,
+          "fibre": 3.5,
+          "giSourceId": "op141-couscous65",
+          "omitted": false
+        },
+        {
+          "index": 2,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "335",
+          "massG": 55,
+          "choPer100g": 4.8,
+          "aggregatePolyols": 0.0,
+          "fibre": 1.2,
+          "giSourceId": "op141-vegetable-imputation40",
+          "omitted": false
+        },
+        {
+          "index": 3,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "300",
+          "massG": 110,
+          "choPer100g": 5.56,
+          "aggregatePolyols": 0.0,
+          "fibre": 2.4,
+          "giSourceId": "op141-vegetable-imputation40",
+          "omitted": false
+        },
+        {
+          "index": 4,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "389",
+          "massG": 200,
+          "choPer100g": 2.5,
+          "aggregatePolyols": 0.0,
+          "fibre": 2.0,
+          "giSourceId": "op141-vegetable-imputation40",
+          "omitted": false
+        },
+        {
+          "index": 5,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "11089",
+          "massG": 400,
+          "choPer100g": 17.6,
+          "aggregatePolyols": 0.0,
+          "fibre": 5.0,
+          "giSourceId": "op141-op141-chickpea-edgell35",
+          "omitted": false
+        },
+        {
+          "index": 6,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "30315",
+          "massG": 1000,
+          "choPer100g": 0.427,
+          "aggregatePolyols": 0.0,
+          "fibre": 0.029,
+          "giSourceId": "op141-lowcho50-v2",
+          "omitted": false
+        },
+        {
+          "index": 7,
+          "kind": "USDA_TOTAL_CEILING",
+          "source": {
+            "key": "cumin",
+            "fdc_id": "170923",
+            "data_type": "sr_legacy_food",
+            "description": "Spices, cumin seed",
+            "food_category_id": "2",
+            "publication_date": "2019-04-01",
+            "nutrients": {
+              "1003": {
+                "id": "1565769",
+                "fdc_id": "170923",
+                "nutrient_id": "1003",
+                "amount": "17.81",
+                "data_points": "12",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1079": {
+                "id": "1565771",
+                "fdc_id": "170923",
+                "nutrient_id": "1079",
+                "amount": "10.5",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1004": {
+                "id": "1565785",
+                "fdc_id": "170923",
+                "nutrient_id": "1004",
+                "amount": "22.27",
+                "data_points": "13",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1005": {
+                "id": "1565786",
+                "fdc_id": "170923",
+                "nutrient_id": "1005",
+                "amount": "44.24",
+                "data_points": "0",
+                "derivation_id": "49",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "2000": {
+                "id": "1565823",
+                "fdc_id": "170923",
+                "nutrient_id": "2000",
+                "amount": "2.25",
+                "data_points": "1",
+                "derivation_id": "1",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              }
+            },
+            "portions": [
+              {
+                "id": "87544",
+                "fdc_id": "170923",
+                "seq_num": "1",
+                "amount": "1",
+                "measure_unit_id": "9999",
+                "portion_description": "",
+                "modifier": "tsp, whole",
+                "gram_weight": "2.1",
+                "data_points": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              {
+                "id": "87545",
+                "fdc_id": "170923",
+                "seq_num": "2",
+                "amount": "1",
+                "measure_unit_id": "9999",
+                "portion_description": "",
+                "modifier": "tbsp, whole",
+                "gram_weight": "6",
+                "data_points": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              }
+            ]
+          },
+          "massG": 2,
+          "availableUpperPerServingG": "0.2212",
+          "aggregatePolyols": null
+        },
+        {
+          "index": 8,
+          "kind": "USDA_TOTAL_CEILING",
+          "source": {
+            "key": "coriander_seed",
+            "fdc_id": "170922",
+            "data_type": "sr_legacy_food",
+            "description": "Spices, coriander seed",
+            "food_category_id": "2",
+            "publication_date": "2019-04-01",
+            "nutrients": {
+              "1004": {
+                "id": "1565726",
+                "fdc_id": "170922",
+                "nutrient_id": "1004",
+                "amount": "17.77",
+                "data_points": "12",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1005": {
+                "id": "1565727",
+                "fdc_id": "170922",
+                "nutrient_id": "1005",
+                "amount": "54.99",
+                "data_points": "0",
+                "derivation_id": "49",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1003": {
+                "id": "1565757",
+                "fdc_id": "170922",
+                "nutrient_id": "1003",
+                "amount": "12.37",
+                "data_points": "11",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1079": {
+                "id": "1565759",
+                "fdc_id": "170922",
+                "nutrient_id": "1079",
+                "amount": "41.9",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              }
+            },
+            "portions": [
+              {
+                "id": "87542",
+                "fdc_id": "170922",
+                "seq_num": "1",
+                "amount": "1",
+                "measure_unit_id": "9999",
+                "portion_description": "",
+                "modifier": "tsp",
+                "gram_weight": "1.8",
+                "data_points": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              {
+                "id": "87543",
+                "fdc_id": "170922",
+                "seq_num": "2",
+                "amount": "1",
+                "measure_unit_id": "9999",
+                "portion_description": "",
+                "modifier": "tbsp",
+                "gram_weight": "5",
+                "data_points": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              }
+            ]
+          },
+          "massG": 2,
+          "availableUpperPerServingG": "0.27495",
+          "aggregatePolyols": null
+        },
+        {
+          "index": 9,
+          "kind": "USDA_TOTAL_CEILING",
+          "source": {
+            "key": "turmeric",
+            "fdc_id": "172231",
+            "data_type": "sr_legacy_food",
+            "description": "Spices, turmeric, ground",
+            "food_category_id": "2",
+            "publication_date": "2019-04-01",
+            "nutrients": {
+              "2000": {
+                "id": "1678748",
+                "fdc_id": "172231",
+                "nutrient_id": "2000",
+                "amount": "3.21",
+                "data_points": "1",
+                "derivation_id": "1",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1004": {
+                "id": "1678777",
+                "fdc_id": "172231",
+                "nutrient_id": "1004",
+                "amount": "3.25",
+                "data_points": "1",
+                "derivation_id": "1",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1005": {
+                "id": "1678778",
+                "fdc_id": "172231",
+                "nutrient_id": "1005",
+                "amount": "67.14",
+                "data_points": "0",
+                "derivation_id": "49",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1003": {
+                "id": "1678797",
+                "fdc_id": "172231",
+                "nutrient_id": "1003",
+                "amount": "9.68",
+                "data_points": "1",
+                "derivation_id": "1",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1079": {
+                "id": "1678799",
+                "fdc_id": "172231",
+                "nutrient_id": "1079",
+                "amount": "22.7",
+                "data_points": "1",
+                "derivation_id": "1",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              }
+            },
+            "portions": [
+              {
+                "id": "90123",
+                "fdc_id": "172231",
+                "seq_num": "1",
+                "amount": "1",
+                "measure_unit_id": "9999",
+                "portion_description": "",
+                "modifier": "tsp",
+                "gram_weight": "3",
+                "data_points": "20",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              {
+                "id": "90124",
+                "fdc_id": "172231",
+                "seq_num": "2",
+                "amount": "1",
+                "measure_unit_id": "9999",
+                "portion_description": "",
+                "modifier": "tbsp",
+                "gram_weight": "9.4",
+                "data_points": "20",
+                "footnote": "",
+                "min_year_acquired": ""
+              }
+            ]
+          },
+          "massG": 1.0,
+          "availableUpperPerServingG": "0.16785",
+          "aggregatePolyols": null
+        },
+        {
+          "index": 10,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "536",
+          "massG": 27.0,
+          "choPer100g": 0.0,
+          "aggregatePolyols": 0.0,
+          "fibre": 0.0,
+          "giSourceId": null,
+          "omitted": false
+        }
+      ],
+      "expectedOmittedPerServingG": "0.66400",
+      "evidenceBundleSha256": "f54161db7c51fafde322271cd746fef1f55c65b5b2ea89505059b9b34ecef433"
+    }
+  ],
+  "holds": [
+    {
+      "recipeId": "bulgogi",
+      "status": "HOLD",
+      "newResearchQuestionAndOutcome": "Pear GI38 is a food-family mean; soy60g Fineli31 gives1.425g A/serving, beyond the individual omission. Need named soy product and a specific raw pear GI; do not reuse previous104.XX partial/invalid aggregate."
+    },
+    {
+      "recipeId": "bun-cha-hanoi",
+      "status": "HOLD",
+      "newResearchQuestionAndOutcome": "Fish sauce120g total lacks comprehensive available-CHO source independent of polyols. Fineli substitutions close garlic/herbs, but fish sauce is not removed. Named boiled rice noodle GI61 is promising, not yet whole recipe ready."
+    }
+  ],
+  "foods": [
+    {
+      "id": "op141-fineli-34190",
+      "name": "KASSLERPIHVI/-PAISTI, RAAKA",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/34190",
+      "retrievedAt": "2026-11-02",
+      "licence": "THL Fineli Release20 CC BY4.0",
+      "state": "RAW",
+      "basis": "per100g-edible",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Explicit source SUGOH",
+      "per100g": {
+        "carbohydrate": 0.0,
+        "fibre": 0.0,
+        "polyols": 0.0,
+        "protein": 17.931,
+        "fat": 14.955
+      },
+      "primaryReference": {
+        "source_id": "34190",
+        "name": "KASSLERPIHVI/-PAISTI, RAAKA",
+        "food_type": "FOOD",
+        "process": "RAW",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "PORK",
+        "food_class": "MSTEAK",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 0.0,
+          "fibre_g_per_100g": 0.0,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 17.931,
+          "fat_g_per_100g": 14.955
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "D",
+            "method_type": "AG",
+            "method_indicator": "MI1302"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "U",
+            "method_indicator": "MIR007"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "D",
+            "method_type": "AG",
+            "method_indicator": "MI0123"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "U",
+            "method_indicator": "MIR007"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "U",
+            "method_indicator": "MIR007"
+          }
+        },
+        "portion_mass_g": {}
+      },
+      "referenceLfSha256": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76"
+    },
+    {
+      "id": "op141-fineli-11045",
+      "name": "APPELSIINI, KUORITTU",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11045",
+      "retrievedAt": "2026-11-02",
+      "licence": "THL Fineli Release20 CC BY4.0",
+      "state": "RAW",
+      "basis": "per100g-edible",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Explicit source SUGOH",
+      "per100g": {
+        "carbohydrate": 8.9,
+        "fibre": 2.4,
+        "polyols": 0.0,
+        "protein": 0.56,
+        "fat": 0.14
+      },
+      "primaryReference": {
+        "source_id": "11045",
+        "name": "APPELSIINI, KUORITTU",
+        "food_type": "FOOD",
+        "process": "RAW",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "CITRUS",
+        "food_class": "FRUFRESH",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 8.9,
+          "fibre_g_per_100g": 2.4,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 0.56,
+          "fat_g_per_100g": 0.14
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "CG",
+            "method_indicator": "MIR002"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0181"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0123"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "IG",
+            "method_indicator": "MIR003"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0172"
+          }
+        },
+        "portion_mass_g": {
+          "KPL_S": 155.0,
+          "KPL_M": 215.0,
+          "KPL_L": 270.0
+        }
+      },
+      "referenceLfSha256": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76"
+    },
+    {
+      "id": "op141-fineli-11191",
+      "name": "OREGANO, KUIVATTU",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11191",
+      "retrievedAt": "2026-11-02",
+      "licence": "THL Fineli Release20 CC BY4.0",
+      "state": "DRIE",
+      "basis": "per100g-edible",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "polyolsSourceVerified": false,
+      "polyolsEvidence": "",
+      "per100g": {
+        "carbohydrate": 21.63,
+        "fibre": null,
+        "polyols": null,
+        "protein": 11.0,
+        "fat": 10.3
+      },
+      "primaryReference": {
+        "source_id": "11191",
+        "name": "OREGANO, KUIVATTU",
+        "food_type": "FOOD",
+        "process": "DRIE",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "HERB",
+        "food_class": "SPICES",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 21.63,
+          "fibre_g_per_100g": null,
+          "polyols_g_per_100g": null,
+          "protein_g_per_100g": 11.0,
+          "fat_g_per_100g": 10.3
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          }
+        },
+        "portion_mass_g": {
+          "RKL": 1.5,
+          "TL": 0.5
+        }
+      },
+      "referenceLfSha256": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76"
+    },
+    {
+      "id": "op141-fineli-393",
+      "name": "VALKOSIPULI",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/393",
+      "retrievedAt": "2026-11-02",
+      "licence": "THL Fineli Release20 CC BY4.0",
+      "state": "RAW",
+      "basis": "per100g-edible",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Explicit source SUGOH",
+      "per100g": {
+        "carbohydrate": 16.3,
+        "fibre": null,
+        "polyols": 0.0,
+        "protein": 7.9,
+        "fat": 0.6
+      },
+      "primaryReference": {
+        "source_id": "393",
+        "name": "VALKOSIPULI",
+        "food_type": "FOOD",
+        "process": "RAW",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "VEGONI",
+        "food_class": "VEGFRESH",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 16.3,
+          "fibre_g_per_100g": null,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 7.9,
+          "fat_g_per_100g": 0.6
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0181"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MIR006"
+          }
+        },
+        "portion_mass_g": {
+          "KPL_M": 3.5
+        }
+      },
+      "referenceLfSha256": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76"
+    },
+    {
+      "id": "op141-fineli-922",
+      "name": "VESI, VESIJOHTOVESI",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/922",
+      "retrievedAt": "2026-11-02",
+      "licence": "THL Fineli Release20 CC BY4.0",
+      "state": "X",
+      "basis": "per100g-edible",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Explicit source SUGOH",
+      "per100g": {
+        "carbohydrate": 0.0,
+        "fibre": 0.0,
+        "polyols": 0.0,
+        "protein": 0.0,
+        "fat": 0.0
+      },
+      "primaryReference": {
+        "source_id": "922",
+        "name": "VESI, VESIJOHTOVESI",
+        "food_type": "FOOD",
+        "process": "X",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "WATER",
+        "food_class": "DRWATER",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 0.0,
+          "fibre_g_per_100g": 0.0,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 0.0,
+          "fat_g_per_100g": 0.0
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "IG",
+            "method_indicator": "MIR003"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "IG",
+            "method_indicator": "MIR003"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "IG",
+            "method_indicator": "MIR003"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "U",
+            "method_indicator": "MIR003"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0172"
+          }
+        },
+        "portion_mass_g": {
+          "DL": 100.0,
+          "RKL": 15.0,
+          "TL": 5.0
+        }
+      },
+      "referenceLfSha256": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76"
+    },
+    {
+      "id": "op141-fineli-34233",
+      "name": "ROOMANSALAATTI, SIDESALAATTI",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/34233",
+      "retrievedAt": "2026-11-02",
+      "licence": "THL Fineli Release20 CC BY4.0",
+      "state": "RAW",
+      "basis": "per100g-edible",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Explicit source SUGOH",
+      "per100g": {
+        "carbohydrate": 2.591,
+        "fibre": null,
+        "polyols": 0.0,
+        "protein": 1.138,
+        "fat": 0.19
+      },
+      "primaryReference": {
+        "source_id": "34233",
+        "name": "ROOMANSALAATTI, SIDESALAATTI",
+        "food_type": "FOOD",
+        "process": "RAW",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "VEGLEAF",
+        "food_class": "VEGFRESH",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 2.591,
+          "fibre_g_per_100g": null,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 1.138,
+          "fat_g_per_100g": 0.19
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "D",
+            "method_type": "AG",
+            "method_indicator": "MI1302"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0181"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "D",
+            "method_type": "AG",
+            "method_indicator": "MI0123"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "U",
+            "method_indicator": "MIR007"
+          }
+        },
+        "portion_mass_g": {
+          "KPL_S": 40.0,
+          "KPL_M": 100.0,
+          "KPL_L": 150.0
+        }
+      },
+      "referenceLfSha256": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76"
+    },
+    {
+      "id": "op141-fineli-352",
+      "name": "TOMAATTI",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/352",
+      "retrievedAt": "2026-11-02",
+      "licence": "THL Fineli Release20 CC BY4.0",
+      "state": "RAW",
+      "basis": "per100g-edible",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Explicit source SUGOH",
+      "per100g": {
+        "carbohydrate": 3.45,
+        "fibre": 0.4,
+        "polyols": 0.0,
+        "protein": 0.55,
+        "fat": 0.3
+      },
+      "primaryReference": {
+        "source_id": "352",
+        "name": "TOMAATTI",
+        "food_type": "FOOD",
+        "process": "RAW",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "VEGFRU",
+        "food_class": "VEGFRESH",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 3.45,
+          "fibre_g_per_100g": 0.4,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 0.55,
+          "fat_g_per_100g": 0.3
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0181"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "D",
+            "method_type": "AG",
+            "method_indicator": "MI0123"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MIR006"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0172"
+          }
+        },
+        "portion_mass_g": {
+          "KPL_S": 75.0,
+          "KPL_M": 125.0,
+          "KPL_L": 170.0
+        }
+      },
+      "referenceLfSha256": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76"
+    },
+    {
+      "id": "op141-fineli-34234",
+      "name": "SIPULI, PUNASIPULI",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/34234",
+      "retrievedAt": "2026-11-02",
+      "licence": "THL Fineli Release20 CC BY4.0",
+      "state": "RAW",
+      "basis": "per100g-edible",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Explicit source SUGOH",
+      "per100g": {
+        "carbohydrate": 5.447,
+        "fibre": 1.2,
+        "polyols": 0.0,
+        "protein": 1.506,
+        "fat": 0.114
+      },
+      "primaryReference": {
+        "source_id": "34234",
+        "name": "SIPULI, PUNASIPULI",
+        "food_type": "FOOD",
+        "process": "RAW",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "VEGONI",
+        "food_class": "VEGFRESH",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 5.447,
+          "fibre_g_per_100g": 1.2,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 1.506,
+          "fat_g_per_100g": 0.114
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "D",
+            "method_type": "AG",
+            "method_indicator": "MI1302"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0181"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "D",
+            "method_type": "AG",
+            "method_indicator": "MI0123"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "I",
+            "method_indicator": "MIR006"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0172"
+          }
+        },
+        "portion_mass_g": {
+          "KPL_S": 30.0,
+          "KPL_M": 55.0,
+          "KPL_L": 200.0,
+          "DL": 90.0
+        }
+      },
+      "referenceLfSha256": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76"
+    },
+    {
+      "id": "op141-fineli-34238",
+      "name": "KORIANTERI, TUORE",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/34238",
+      "retrievedAt": "2026-11-02",
+      "licence": "THL Fineli Release20 CC BY4.0",
+      "state": "RAW",
+      "basis": "per100g-edible",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Explicit source SUGOH",
+      "per100g": {
+        "carbohydrate": 0.505,
+        "fibre": null,
+        "polyols": 0.0,
+        "protein": 2.444,
+        "fat": 0.403
+      },
+      "primaryReference": {
+        "source_id": "34238",
+        "name": "KORIANTERI, TUORE",
+        "food_type": "FOOD",
+        "process": "RAW",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "VEGLEAF",
+        "food_class": "VEGFRESH",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 0.505,
+          "fibre_g_per_100g": null,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 2.444,
+          "fat_g_per_100g": 0.403
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "D",
+            "method_type": "AG",
+            "method_indicator": "MI1302"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0181"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "D",
+            "method_type": "AG",
+            "method_indicator": "MI0123"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "U",
+            "method_indicator": "MIR007"
+          }
+        },
+        "portion_mass_g": {
+          "DL": 13.0
+        }
+      },
+      "referenceLfSha256": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76"
+    },
+    {
+      "id": "op141-fineli-11177",
+      "name": "MUSTAPIPPURI",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11177",
+      "retrievedAt": "2026-11-02",
+      "licence": "THL Fineli Release20 CC BY4.0",
+      "state": "DRIE",
+      "basis": "per100g-edible",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "polyolsSourceVerified": false,
+      "polyolsEvidence": "",
+      "per100g": {
+        "carbohydrate": 38.31,
+        "fibre": null,
+        "polyols": null,
+        "protein": 10.9,
+        "fat": 3.3
+      },
+      "primaryReference": {
+        "source_id": "11177",
+        "name": "MUSTAPIPPURI",
+        "food_type": "FOOD",
+        "process": "DRIE",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "FLAVSEED",
+        "food_class": "SPICES",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 38.31,
+          "fibre_g_per_100g": null,
+          "polyols_g_per_100g": null,
+          "protein_g_per_100g": 10.9,
+          "fat_g_per_100g": 3.3
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          }
+        },
+        "portion_mass_g": {
+          "RKL": 6.5,
+          "TL": 2.0
+        }
+      },
+      "referenceLfSha256": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76"
+    },
+    {
+      "id": "op141-fineli-11562",
+      "name": "JAUHELIHA, NAUDAN, RASVAA 17 %",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11562",
+      "retrievedAt": "2026-11-02",
+      "licence": "THL Fineli Release20 CC BY4.0",
+      "state": "RAW",
+      "basis": "per100g-edible",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Explicit source SUGOH",
+      "per100g": {
+        "carbohydrate": 0.0,
+        "fibre": 0.0,
+        "polyols": 0.0,
+        "protein": 19.065,
+        "fat": 16.949
+      },
+      "primaryReference": {
+        "source_id": "11562",
+        "name": "JAUHELIHA, NAUDAN, RASVAA 17 %",
+        "food_type": "FOOD",
+        "process": "RAW",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "BEEF",
+        "food_class": "MSTEAK",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 0.0,
+          "fibre_g_per_100g": 0.0,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 19.065,
+          "fat_g_per_100g": 16.949
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "D",
+            "method_type": "AG",
+            "method_indicator": "MI1302"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0181"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "D",
+            "method_type": "AG",
+            "method_indicator": "MI0123"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "U",
+            "method_indicator": "MIR007"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "U",
+            "method_indicator": "MIR007"
+          }
+        },
+        "portion_mass_g": {}
+      },
+      "referenceLfSha256": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76"
+    },
+    {
+      "id": "op141-fineli-34611",
+      "name": "JOGURTTI, MAUSTAMATON, KREIKKALAINEN, RASVAA 7 %, LAKTOOSITON",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/34611",
+      "retrievedAt": "2026-11-02",
+      "licence": "THL Fineli Release20 CC BY4.0",
+      "state": "IND",
+      "basis": "per100g-edible",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Explicit source SUGOH",
+      "per100g": {
+        "carbohydrate": 2.917,
+        "fibre": 0.0,
+        "polyols": 0.0,
+        "protein": 8.07,
+        "fat": 7.003
+      },
+      "primaryReference": {
+        "source_id": "34611",
+        "name": "JOGURTTI, MAUSTAMATON, KREIKKALAINEN, RASVAA 7 %, LAKTOOSITON",
+        "food_type": "FOOD",
+        "process": "IND",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "YOGHURHI",
+        "food_class": "YOGHURT",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 2.917,
+          "fibre_g_per_100g": 0.0,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 8.07,
+          "fat_g_per_100g": 7.003
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "R",
+            "method_indicator": "MI0002"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "R",
+            "method_indicator": "MI0002"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "R",
+            "method_indicator": "MI0002"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "R",
+            "method_indicator": "MI0002"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "R",
+            "method_indicator": "MI0002"
+          }
+        },
+        "portion_mass_g": {
+          "DL": 100.0,
+          "RKL": 15.0,
+          "TL": 5.0
+        }
+      },
+      "referenceLfSha256": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76"
+    },
+    {
+      "id": "op141-fineli-335",
+      "name": "SIPULI, KELTASIPULI",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/335",
+      "retrievedAt": "2026-11-02",
+      "licence": "THL Fineli Release20 CC BY4.0",
+      "state": "RAW",
+      "basis": "per100g-edible",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Explicit source SUGOH",
+      "per100g": {
+        "carbohydrate": 4.8,
+        "fibre": 1.2,
+        "polyols": 0.0,
+        "protein": 1.25,
+        "fat": 0.1
+      },
+      "primaryReference": {
+        "source_id": "335",
+        "name": "SIPULI, KELTASIPULI",
+        "food_type": "FOOD",
+        "process": "RAW",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "VEGONI",
+        "food_class": "VEGFRESH",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 4.8,
+          "fibre_g_per_100g": 1.2,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 1.25,
+          "fat_g_per_100g": 0.1
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0181"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "T",
+            "method_indicator": "MI0123"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MIR006"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0172"
+          }
+        },
+        "portion_mass_g": {
+          "KPL_S": 30.0,
+          "KPL_M": 55.0,
+          "KPL_L": 200.0,
+          "DL": 90.0
+        }
+      },
+      "referenceLfSha256": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76"
+    },
+    {
+      "id": "op141-fineli-11182",
+      "name": "PAPRIKAJAUHE",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11182",
+      "retrievedAt": "2026-11-02",
+      "licence": "THL Fineli Release20 CC BY4.0",
+      "state": "DRIE",
+      "basis": "per100g-edible",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "polyolsSourceVerified": false,
+      "polyolsEvidence": "",
+      "per100g": {
+        "carbohydrate": 18.34,
+        "fibre": null,
+        "polyols": null,
+        "protein": 14.8,
+        "fat": 13.0
+      },
+      "primaryReference": {
+        "source_id": "11182",
+        "name": "PAPRIKAJAUHE",
+        "food_type": "FOOD",
+        "process": "DRIE",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "FLAVSEED",
+        "food_class": "SPICES",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 18.34,
+          "fibre_g_per_100g": null,
+          "polyols_g_per_100g": null,
+          "protein_g_per_100g": 14.8,
+          "fat_g_per_100g": 13.0
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          }
+        },
+        "portion_mass_g": {
+          "RKL": 5.5,
+          "TL": 2.0
+        }
+      },
+      "referenceLfSha256": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76"
+    },
+    {
+      "id": "op141-fineli-1056",
+      "name": "VAALEA LEIPÄ, PITALEIPÄ",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/1056",
+      "retrievedAt": "2026-11-02",
+      "licence": "THL Fineli Release20 CC BY4.0",
+      "state": "BAK",
+      "basis": "per100g-edible",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Explicit source SUGOH",
+      "per100g": {
+        "carbohydrate": 46.08,
+        "fibre": 2.322,
+        "polyols": 0.0,
+        "protein": 7.49,
+        "fat": 0.979
+      },
+      "primaryReference": {
+        "source_id": "1056",
+        "name": "VAALEA LEIPÄ, PITALEIPÄ",
+        "food_type": "DISH",
+        "process": "BAK",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "DISH",
+        "food_class": "BRWHITE",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 46.08,
+          "fibre_g_per_100g": 2.322,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 7.49,
+          "fat_g_per_100g": 0.979
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "R",
+            "method_indicator": "MI0002"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "R",
+            "method_indicator": "MI0002"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "R",
+            "method_indicator": "MI0002"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "R",
+            "method_indicator": "MI0002"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "R",
+            "method_indicator": "MI0002"
+          }
+        },
+        "portion_mass_g": {
+          "KPL_S": 40.0,
+          "KPL_M": 55.0,
+          "KPL_L": 70.0
+        }
+      },
+      "referenceLfSha256": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76"
+    },
+    {
+      "id": "op141-fineli-320",
+      "name": "VALKOKAALI, KERÄKAALI",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/320",
+      "retrievedAt": "2026-11-02",
+      "licence": "THL Fineli Release20 CC BY4.0",
+      "state": "RAW",
+      "basis": "per100g-edible",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Explicit source SUGOH",
+      "per100g": {
+        "carbohydrate": 4.97,
+        "fibre": 2.0,
+        "polyols": 0.0,
+        "protein": 1.2,
+        "fat": 0.1
+      },
+      "primaryReference": {
+        "source_id": "320",
+        "name": "VALKOKAALI, KERÄKAALI",
+        "food_type": "FOOD",
+        "process": "RAW",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "CABBAGE",
+        "food_class": "VEGFRESH",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 4.97,
+          "fibre_g_per_100g": 2.0,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 1.2,
+          "fat_g_per_100g": 0.1
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "D",
+            "method_type": "AG",
+            "method_indicator": "MI1302"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0181"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "D",
+            "method_type": "S",
+            "method_indicator": "MI0123"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MIR006"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0172"
+          }
+        },
+        "portion_mass_g": {
+          "KPL_S": 800.0,
+          "KPL_M": 1200.0,
+          "KPL_L": 1500.0,
+          "DL": 40.0
+        }
+      },
+      "referenceLfSha256": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76"
+    },
+    {
+      "id": "op141-fineli-754",
+      "name": "BROILERISUIKALE",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/754",
+      "retrievedAt": "2026-11-02",
+      "licence": "THL Fineli Release20 CC BY4.0",
+      "state": "RAW",
+      "basis": "per100g-edible",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Explicit source SUGOH",
+      "per100g": {
+        "carbohydrate": 0.0,
+        "fibre": 0.0,
+        "polyols": 0.0,
+        "protein": 21.25,
+        "fat": 4.1
+      },
+      "primaryReference": {
+        "source_id": "754",
+        "name": "BROILERISUIKALE",
+        "food_type": "FOOD",
+        "process": "RAW",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "POULTRY",
+        "food_class": "POULTRY",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 0.0,
+          "fibre_g_per_100g": 0.0,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 21.25,
+          "fat_g_per_100g": 4.1
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "CG",
+            "method_indicator": "MIR003"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "IG",
+            "method_indicator": "MIR003"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0123"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "U",
+            "method_indicator": "MIR007"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "IG",
+            "method_indicator": "MIR003"
+          }
+        },
+        "portion_mass_g": {
+          "DL": 100.0
+        }
+      },
+      "referenceLfSha256": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76"
+    },
+    {
+      "id": "op141-fineli-29208",
+      "name": "KUSKUS",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/29208",
+      "retrievedAt": "2026-11-02",
+      "licence": "THL Fineli Release20 CC BY4.0",
+      "state": "RAW",
+      "basis": "per100g-edible",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Explicit source SUGOH",
+      "per100g": {
+        "carbohydrate": 63.6,
+        "fibre": 3.5,
+        "polyols": 0.0,
+        "protein": 11.5,
+        "fat": 1.1
+      },
+      "primaryReference": {
+        "source_id": "29208",
+        "name": "KUSKUS",
+        "food_type": "FOOD",
+        "process": "RAW",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "WHEAT",
+        "food_class": "PASTAADD",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 63.6,
+          "fibre_g_per_100g": 3.5,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 11.5,
+          "fat_g_per_100g": 1.1
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0181"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "I",
+            "method_indicator": "MI0123"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "U",
+            "method_indicator": "MIR007"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0172"
+          }
+        },
+        "portion_mass_g": {
+          "DL": 80.0,
+          "RKL": 12.0,
+          "TL": 4.0
+        }
+      },
+      "referenceLfSha256": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76"
+    },
+    {
+      "id": "op141-fineli-300",
+      "name": "PORKKANA",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/300",
+      "retrievedAt": "2026-11-02",
+      "licence": "THL Fineli Release20 CC BY4.0",
+      "state": "RAW",
+      "basis": "per100g-edible",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Explicit source SUGOH",
+      "per100g": {
+        "carbohydrate": 5.56,
+        "fibre": 2.4,
+        "polyols": 0.0,
+        "protein": 0.63,
+        "fat": 0.2
+      },
+      "primaryReference": {
+        "source_id": "300",
+        "name": "PORKKANA",
+        "food_type": "FOOD",
+        "process": "RAW",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "ROOT",
+        "food_class": "VEGFRESH",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 5.56,
+          "fibre_g_per_100g": 2.4,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 0.63,
+          "fat_g_per_100g": 0.2
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0181"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "T",
+            "method_indicator": "MI0123"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MIR006"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0172"
+          }
+        },
+        "portion_mass_g": {
+          "KPL_S": 35.0,
+          "KPL_M": 65.0,
+          "KPL_L": 100.0
+        }
+      },
+      "referenceLfSha256": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76"
+    },
+    {
+      "id": "op141-fineli-389",
+      "name": "KESÄKURPITSA, ZUCCHINI",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/389",
+      "retrievedAt": "2026-11-02",
+      "licence": "THL Fineli Release20 CC BY4.0",
+      "state": "RAW",
+      "basis": "per100g-edible",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Explicit source SUGOH",
+      "per100g": {
+        "carbohydrate": 2.5,
+        "fibre": 2.0,
+        "polyols": 0.0,
+        "protein": 0.65,
+        "fat": 0.4
+      },
+      "primaryReference": {
+        "source_id": "389",
+        "name": "KESÄKURPITSA, ZUCCHINI",
+        "food_type": "FOOD",
+        "process": "RAW",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "VEGFRU",
+        "food_class": "VEGFRESH",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 2.5,
+          "fibre_g_per_100g": 2.0,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 0.65,
+          "fat_g_per_100g": 0.4
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0181"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "T",
+            "method_indicator": "MI0123"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "IG",
+            "method_indicator": "MIR003"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0172"
+          }
+        },
+        "portion_mass_g": {
+          "KPL_S": 200.0,
+          "KPL_M": 350.0,
+          "KPL_L": 450.0
+        }
+      },
+      "referenceLfSha256": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76"
+    },
+    {
+      "id": "op141-fineli-11089",
+      "name": "KIKHERNE SUOLATTOMASSA VEDESSÄ",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11089",
+      "retrievedAt": "2026-11-02",
+      "licence": "THL Fineli Release20 CC BY4.0",
+      "state": "BOIL",
+      "basis": "per100g-edible",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Explicit source SUGOH",
+      "per100g": {
+        "carbohydrate": 17.6,
+        "fibre": 5.0,
+        "polyols": 0.0,
+        "protein": 8.44,
+        "fat": 2.5
+      },
+      "primaryReference": {
+        "source_id": "11089",
+        "name": "KIKHERNE SUOLATTOMASSA VEDESSÄ",
+        "food_type": "FOOD",
+        "process": "BOIL",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "PEABEAN",
+        "food_class": "LEGUMES",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 17.6,
+          "fibre_g_per_100g": 5.0,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 8.44,
+          "fat_g_per_100g": 2.5
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR001"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0181"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0123"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "IG",
+            "method_indicator": "MIR003"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0172"
+          }
+        },
+        "portion_mass_g": {
+          "DL": 60.0,
+          "RKL": 10.0
+        }
+      },
+      "referenceLfSha256": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76"
+    },
+    {
+      "id": "op141-fineli-30315",
+      "name": "KANALIEMI, LAIMENNETTU",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/30315",
+      "retrievedAt": "2026-11-02",
+      "licence": "THL Fineli Release20 CC BY4.0",
+      "state": "BOIL",
+      "basis": "per100g-edible",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Explicit source SUGOH",
+      "per100g": {
+        "carbohydrate": 0.427,
+        "fibre": 0.029,
+        "polyols": 0.0,
+        "protein": 0.27,
+        "fat": 0.792
+      },
+      "primaryReference": {
+        "source_id": "30315",
+        "name": "KANALIEMI, LAIMENNETTU",
+        "food_type": "DISH",
+        "process": "BOIL",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "DISH",
+        "food_class": "SAVSAUCE",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 0.427,
+          "fibre_g_per_100g": 0.029,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 0.27,
+          "fat_g_per_100g": 0.792
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "R",
+            "method_indicator": "MI0002"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "R",
+            "method_indicator": "MI0002"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "R",
+            "method_indicator": "MI0002"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "R",
+            "method_indicator": "MI0002"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "R",
+            "method_indicator": "MI0002"
+          }
+        },
+        "portion_mass_g": {
+          "DL": 100.0,
+          "RKL": 15.0,
+          "TL": 5.0
+        }
+      },
+      "referenceLfSha256": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76"
+    },
+    {
+      "id": "op141-fineli-536",
+      "name": "OLIIVIÖLJY",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/536",
+      "retrievedAt": "2026-11-02",
+      "licence": "THL Fineli Release20 CC BY4.0",
+      "state": "IND",
+      "basis": "per100g-edible",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Explicit source SUGOH",
+      "per100g": {
+        "carbohydrate": 0.0,
+        "fibre": 0.0,
+        "polyols": 0.0,
+        "protein": 0.0,
+        "fat": 100.0
+      },
+      "primaryReference": {
+        "source_id": "536",
+        "name": "OLIIVIÖLJY",
+        "food_type": "FOOD",
+        "process": "IND",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "OIL",
+        "food_class": "OIL",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 0.0,
+          "fibre_g_per_100g": 0.0,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 0.0,
+          "fat_g_per_100g": 100.0
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "IG",
+            "method_indicator": "MIR003"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0123"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "U",
+            "method_indicator": "MIR007"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0172"
+          }
+        },
+        "portion_mass_g": {
+          "DL": 90.0,
+          "RKL": 13.5,
+          "TL": 4.5
+        }
+      },
+      "referenceLfSha256": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76"
+    }
+  ],
+  "giRecords": [
+    {
+      "id": "op141-orange45-r4",
+      "gi": 45,
+      "foodKey": "orange",
+      "preparationKey": "op141-orange45-r4",
+      "food": "Raw peeled navel orange pieces",
+      "preparation": "Candidate-specific application; see full source card and weighed version",
+      "qualityTier": "SUPPLEMENTARY",
+      "referenceScale": "GLUCOSE_100",
+      "matchKind": "ANALOG",
+      "confidence": "LOW",
+      "evidenceKind": "HUMAN_GI",
+      "originalSourceCard": {
+        "id": "orange45-r4",
+        "gi": 45,
+        "scale": "GLUCOSE_100",
+        "family": "orange",
+        "food": "Raw peeled navel orange pieces",
+        "evidenceKind": "HUMAN_GI",
+        "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+        "reviewedRegistryRecord": {
+          "id": "orange-navel-2021-gi-45",
+          "gi": 45,
+          "foodKey": "orange",
+          "preparationKey": "raw-orange",
+          "food": "Navel orange, raw",
+          "preparation": "Raw navel orange, segments; Australia, tested 2020",
+          "qualityTier": "STRONG",
+          "referenceScale": "GLUCOSE_100",
+          "matchKind": "ANALOG",
+          "confidence": "LOW",
+          "source": {
+            "title": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+            "authors": "Atkinson FS, Brand-Miller JC, Foster-Powell K, Buyken AE, Goletzke J",
+            "url": "https://doi.org/10.1093/ajcn/nqab233",
+            "table": "Supplemental Table 1 item 1150: navel oranges, Australia, GI 45 ± 5; 10 healthy adults; 50 g available carbohydrate; glucose, 2 h; ISO-consistent standard method.",
+            "year": 2021,
+            "published": true,
+            "iso26642Confirmed": true,
+            "participants": 10,
+            "referenceFood": "Glucose, 2 h (GI = 100)",
+            "qualityEvidence": "Published food-specific navel-orange measurement listed in Supplemental Table 1 as ISO 26642:2010-consistent. Source quality is strong; the recipe uses a generic raw peeled orange with unknown cultivar, so the recipe mapping remains a low-confidence analogue."
+          },
+          "note": "Direct source for raw navel orange; use for generic raw orange only as a cultivar analogue and retain LOW confidence when cultivar is unknown. Not a measurement of a recipe or meal."
+        },
+        "limitations": "Raw navel-orange human point applied to cooked retained fruit in carnitas as explicit LOW preparation analogy. No cooked-fruit measurement.",
+        "evidenceHash": "996b1efc8f043872232277f18a1ff818f2fc566bb8d1bda1bf937c0c9365024e"
+      },
+      "source": {
+        "title": "Human comparator: Raw peeled navel orange pieces",
+        "url": "https://doi.org/10.1093/ajcn/nqab233",
+        "table": "Existing pinned source card",
+        "year": 2021,
+        "published": true,
+        "iso26642Confirmed": false,
+        "qualityEvidence": "Raw navel-orange human point applied to cooked retained fruit in carnitas as explicit LOW preparation analogy. No cooked-fruit measurement."
+      }
+    },
+    {
+      "id": "op141-vegetable-imputation40",
+      "gi": 40,
+      "foodKey": "low-carb-vegetable",
+      "preparationKey": "op141-vegetable-imputation40",
+      "food": "Published assignment for low-carbohydrate vegetables, not measured food GI",
+      "preparation": "Candidate-specific application; see full source card and weighed version",
+      "qualityTier": "SUPPLEMENTARY",
+      "referenceScale": "GLUCOSE_100",
+      "matchKind": "ANALOG",
+      "confidence": "LOW",
+      "evidenceKind": "PUBLISHED_IMPUTATION",
+      "originalSourceCard": {
+        "id": "vegetable-imputation40",
+        "gi": 40,
+        "scale": "GLUCOSE_100",
+        "family": "low-carb-vegetable",
+        "food": "Published assignment for low-carbohydrate vegetables, not measured food GI",
+        "evidenceKind": "PUBLISHED_IMPUTATION",
+        "sourceUrl": "https://doi.org/10.2337/dc08-1239",
+        "accessUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC2584181/fullTextXML",
+        "documentSha256": "b3738226fa546af99ac25e5e3fa106e86cd204445f9153ef5ee762cb25f3b25a",
+        "location": "Conclusions: assignment discussion",
+        "originalStudy": "Atkinson, Foster-Powell, Brand-Miller 2008",
+        "confidence": "LOW",
+        "limitations": "Coding estimate only. Application to named fresh herbs, sprouts and alliums is an explicit project interpretation. It does not establish a physiological maximum or a one-unit uncertainty bound. Not a default for seed spices, flour, sauces or stock.",
+        "newRecordInRun2": true,
+        "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc"
+      },
+      "source": {
+        "title": "PROJECT PI, not measured food GI: Published assignment for low-carbohydrate vegetables, not measured food GI",
+        "url": "https://doi.org/10.2337/dc08-1239",
+        "table": "Conclusions: assignment discussion",
+        "year": 2008,
+        "published": true,
+        "iso26642Confirmed": false,
+        "qualityEvidence": "Coding estimate only. Application to named fresh herbs, sprouts and alliums is an explicit project interpretation. It does not establish a physiological maximum or a one-unit uncertainty bound. Not a default for seed spices, flour, sauces or stock."
+      }
+    },
+    {
+      "id": "op141-dairy-imputation30",
+      "gi": 30,
+      "foodKey": "dairy-code",
+      "preparationKey": "op141-dairy-imputation30",
+      "food": "Unsweetened animal dairy coding assignment",
+      "preparation": "Candidate-specific application; see full source card and weighed version",
+      "qualityTier": "SUPPLEMENTARY",
+      "referenceScale": "GLUCOSE_100",
+      "matchKind": "ANALOG",
+      "confidence": "LOW",
+      "evidenceKind": "PUBLISHED_IMPUTATION",
+      "originalSourceCard": {
+        "id": "dairy-imputation30",
+        "gi": 30,
+        "scale": "GLUCOSE_100",
+        "family": "dairy-code",
+        "food": "Unsweetened animal dairy coding assignment",
+        "evidenceKind": "PUBLISHED_IMPUTATION",
+        "sourceUrl": "https://doi.org/10.2337/dc08-1239",
+        "location": "Conclusions, low-carbohydrate product assignment",
+        "confidence": "LOW",
+        "limitations": "Not tested cream, cheese or butter. Excludes plant drinks and sweetened dairy.",
+        "evidenceHash": "18dd13349258a887809f1dec2abce637ce648b7d2f829c690243734139912850"
+      },
+      "source": {
+        "title": "PROJECT PI, not measured food GI: Unsweetened animal dairy coding assignment",
+        "url": "https://doi.org/10.2337/dc08-1239",
+        "table": "Conclusions, low-carbohydrate product assignment",
+        "year": 2008,
+        "published": true,
+        "iso26642Confirmed": false,
+        "qualityEvidence": "Not tested cream, cheese or butter. Excludes plant drinks and sweetened dairy."
+      }
+    },
+    {
+      "id": "op141-pita-white68-r4",
+      "gi": 68,
+      "foodKey": "white-pita",
+      "preparationKey": "op141-pita-white68-r4",
+      "food": "White mini pita bread, UK",
+      "preparation": "Candidate-specific application; see full source card and weighed version",
+      "qualityTier": "SUPPLEMENTARY",
+      "referenceScale": "GLUCOSE_100",
+      "matchKind": "ANALOG",
+      "confidence": "LOW",
+      "evidenceKind": "HUMAN_GI",
+      "originalSourceCard": {
+        "id": "pita-white68-r4",
+        "gi": 68,
+        "scale": "GLUCOSE_100",
+        "family": "white-pita",
+        "food": "White mini pita bread, UK",
+        "evidenceKind": "HUMAN_GI",
+        "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+        "location": "Supplement1 row347 p25, 10 healthy adults",
+        "confidence": "LOW",
+        "accessUrl": "https://nutritotal.com.br/pro/wp-content/uploads/sites/3/2021/09/Tabela1_IG.pdf",
+        "documentSha256": "69deea1d1229c1d06f25bb8ff27b19e6003b63f39c6aec25cffb8bc99475122a",
+        "limitations": "Human evidence applied to named food/preparation, LOW analogue. Not measured meal GI. Source SEM is not a recipe interval. Generic composition remains a separate proxy.",
+        "evidenceHash": "58cd5ba8bcf9e1633991c2309063b1336dec5aab6cd624e42ebbc03c747c00b5"
+      },
+      "source": {
+        "title": "Human comparator: White mini pita bread, UK",
+        "url": "https://doi.org/10.1093/ajcn/nqab233",
+        "table": "Supplement1 row347 p25, 10 healthy adults",
+        "year": 2021,
+        "published": true,
+        "iso26642Confirmed": false,
+        "qualityEvidence": "Human evidence applied to named food/preparation, LOW analogue. Not measured meal GI. Source SEM is not a recipe interval. Generic composition remains a separate proxy."
+      }
+    },
+    {
+      "id": "op141-couscous65",
+      "gi": 65,
+      "foodKey": "couscous",
+      "preparationKey": "op141-couscous65",
+      "food": "San Remo couscous rehydrated hot water",
+      "preparation": "Candidate-specific application; see full source card and weighed version",
+      "qualityTier": "SUPPLEMENTARY",
+      "referenceScale": "GLUCOSE_100",
+      "matchKind": "ANALOG",
+      "confidence": "LOW",
+      "evidenceKind": "HUMAN_GI",
+      "originalSourceCard": {
+        "id": "couscous65",
+        "gi": 65,
+        "scale": "GLUCOSE_100",
+        "family": "couscous",
+        "food": "San Remo couscous rehydrated hot water",
+        "evidenceKind": "HUMAN_GI",
+        "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+        "location": "Table1 row560 p39",
+        "confidence": "LOW",
+        "accessUrl": "https://nutritotal.com.br/pro/wp-content/uploads/sites/3/2021/09/Tabela1_IG.pdf",
+        "documentSha256": "69deea1d1229c1d06f25bb8ff27b19e6003b63f39c6aec25cffb8bc99475122a",
+        "limitations": "Named published glucose-scale point; no additional scale conversion. Generic raw composition is a separate proxy, not the exact branded label. Alternative products/preparations, not confidence bounds.",
+        "evidenceHash": "b3ff179daac313c118913cc2861889805bbdb38bf2a7cf17c8a640baf7904056"
+      },
+      "source": {
+        "title": "Human comparator: San Remo couscous rehydrated hot water",
+        "url": "https://doi.org/10.1093/ajcn/nqab233",
+        "table": "Table1 row560 p39",
+        "year": 2021,
+        "published": true,
+        "iso26642Confirmed": false,
+        "qualityEvidence": "Named published glucose-scale point; no additional scale conversion. Generic raw composition is a separate proxy, not the exact branded label. Alternative products/preparations, not confidence bounds."
+      }
+    },
+    {
+      "id": "op141-op141-chickpea-edgell35",
+      "gi": 35,
+      "foodKey": "chickpea",
+      "preparationKey": "op141-op141-chickpea-edgell35",
+      "food": "Edgell canned chickpeas, drained, Australia2018",
+      "preparation": "Canned, drained; generic drained chickpeas reheated in stew are an explicit LOW preparation/composition application",
+      "qualityTier": "SUPPLEMENTARY",
+      "referenceScale": "GLUCOSE_100",
+      "matchKind": "ANALOG",
+      "confidence": "LOW",
+      "evidenceKind": "HUMAN_GI",
+      "originalSourceCard": {
+        "id": "op141-chickpea-edgell35",
+        "gi": 35,
+        "scale": "GLUCOSE_100",
+        "family": "chickpea",
+        "food": "Edgell canned chickpeas, drained, Australia2018",
+        "preparation": "Canned, drained; generic drained chickpeas reheated in stew are an explicit LOW preparation/composition application",
+        "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+        "location": "Supplemental Table1 p87 row1284; 12 healthy adults,25g availableCHO,glucose2h,GI35±3",
+        "evidenceKind": "HUMAN_GI",
+        "documentSha256": "e930c4a090697abd4f7331a64837b524cf4701513cbb9865a739f4f9fb131061",
+        "accessUrl": "https://nutritotal.com.br/pro/wp-content/uploads/sites/3/2021/09/Tabela1_IG.pdf",
+        "limitations": "Selected newer2018 larger-n named drained-canned study; older2003 same-brand GI38±3 row1285 retained in source audit, not averaged or used as biological bounds. No hummus/roasted-chicknut transfer. Current brand formulation and generic salt-free Fineli composition are distinct from historical test lot."
+      },
+      "source": {
+        "title": "Human comparator: Edgell canned chickpeas, drained, Australia2018",
+        "url": "https://doi.org/10.1093/ajcn/nqab233",
+        "table": "Supplemental Table1 p87 row1284; 12 healthy adults,25g availableCHO,glucose2h,GI35±3",
+        "year": 2021,
+        "published": true,
+        "iso26642Confirmed": false,
+        "qualityEvidence": "Selected newer2018 larger-n named drained-canned study; older2003 same-brand GI38±3 row1285 retained in source audit, not averaged or used as biological bounds. No hummus/roasted-chicknut transfer. Current brand formulation and generic salt-free Fineli composition are distinct from historical test lot."
+      }
+    },
+    {
+      "id": "op141-lowcho50-v2",
+      "gi": 50,
+      "foodKey": "lowcho-code",
+      "preparationKey": "op141-lowcho50-v2",
+      "food": "Named foods with <=5 g available CHO/100 g",
+      "preparation": "Candidate-specific application; see full source card and weighed version",
+      "qualityTier": "SUPPLEMENTARY",
+      "referenceScale": "GLUCOSE_100",
+      "matchKind": "ANALOG",
+      "confidence": "LOW",
+      "evidenceKind": "PUBLISHED_IMPUTATION",
+      "originalSourceCard": {
+        "id": "lowcho50-v2",
+        "gi": 50,
+        "scale": "GLUCOSE_100",
+        "family": "lowcho-code",
+        "food": "Named foods with <=5 g available CHO/100 g",
+        "evidenceKind": "PUBLISHED_IMPUTATION",
+        "sourceUrl": "https://doi.org/10.1016/j.jfca.2007.02.004",
+        "location": "Author presentation slide 12",
+        "confidence": "LOW",
+        "accessUrl": "https://pdfs.semanticscholar.org/eead/ef25b9a2d5c209deb31265082c85080758f4.pdf",
+        "documentSha256": "778292d5d11cfd377ea93f1927ba8205aa7aff0105d2345f458336bf8869d0f9",
+        "limitations": "Published low-carbohydrate default. The <=5 g/100 g operational cutoff and named bindings are explicit project interpretation, not a threshold validated by Schakel. Excludes ordinary fruit, flour, concentrated sauce and nuts above the cutoff.",
+        "evidenceHash": "694a1349448978673a86e5305d8c09dcf4b454722063eaafd4dbcfee0ac05889"
+      },
+      "source": {
+        "title": "PROJECT PI, not measured food GI: Named foods with <=5 g available CHO/100 g",
+        "url": "https://doi.org/10.1016/j.jfca.2007.02.004",
+        "table": "Author presentation slide 12",
+        "year": 2007,
+        "published": true,
+        "iso26642Confirmed": false,
+        "qualityEvidence": "Published low-carbohydrate default. The <=5 g/100 g operational cutoff and named bindings are explicit project interpretation, not a threshold validated by Schakel. Excludes ordinary fruit, flour, concentrated sauce and nuts above the cutoff."
+      }
+    }
+  ]
+}

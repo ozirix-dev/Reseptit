@@ -1,0 +1,4336 @@
+{
+  "batch": 1,
+  "recipeIds": [
+    "ratatouille",
+    "sitruuna-yrttikana-parsa",
+    "menemen",
+    "tomaatti-kananmuna-wokki",
+    "shakshuka"
+  ],
+  "cases": [
+    {
+      "scenarioId": "defined-weighed-hot-version",
+      "input": {
+        "recipeId": "ratatouille",
+        "servings": 4,
+        "ingredients": [
+          {
+            "name": "munakoisoa",
+            "grams": 300,
+            "fineliRecordId": "op141-fineli-362",
+            "giRecordId": "op141-vegetable-imputation40",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "low-carb-vegetable",
+            "preparationKey": "op141-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Fineli garlic and fresh basil replace AFCD; spices have known CHOAVL but no matching GI and use the existing small-portion omission. No bread/rice."
+          },
+          {
+            "name": "kesäkurpitsaa",
+            "grams": 400,
+            "fineliRecordId": "op141-fineli-389",
+            "giRecordId": "op141-vegetable-imputation40",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "low-carb-vegetable",
+            "preparationKey": "op141-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Fineli garlic and fresh basil replace AFCD; spices have known CHOAVL but no matching GI and use the existing small-portion omission. No bread/rice."
+          },
+          {
+            "name": "punaista paprikaa",
+            "grams": 120,
+            "fineliRecordId": "op141-fineli-386",
+            "giRecordId": "op141-vegetable-imputation40",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "low-carb-vegetable",
+            "preparationKey": "op141-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Fineli garlic and fresh basil replace AFCD; spices have known CHOAVL but no matching GI and use the existing small-portion omission. No bread/rice."
+          },
+          {
+            "name": "sipulia",
+            "grams": 55,
+            "fineliRecordId": "op141-fineli-335",
+            "giRecordId": "op141-vegetable-imputation40",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "low-carb-vegetable",
+            "preparationKey": "op141-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Fineli garlic and fresh basil replace AFCD; spices have known CHOAVL but no matching GI and use the existing small-portion omission. No bread/rice."
+          },
+          {
+            "name": "tuoretta kuorittua valkosipulia",
+            "grams": 9,
+            "fineliRecordId": "op141-fineli-393",
+            "giRecordId": "op141-vegetable-imputation40",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "low-carb-vegetable",
+            "preparationKey": "op141-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Fineli garlic and fresh basil replace AFCD; spices have known CHOAVL but no matching GI and use the existing small-portion omission. No bread/rice."
+          },
+          {
+            "name": "tomaattia",
+            "grams": 500,
+            "fineliRecordId": "op141-fineli-352",
+            "giRecordId": "op141-vegetable-imputation40",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "low-carb-vegetable",
+            "preparationKey": "op141-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Fineli garlic and fresh basil replace AFCD; spices have known CHOAVL but no matching GI and use the existing small-portion omission. No bread/rice."
+          },
+          {
+            "name": "oliiviöljyä",
+            "grams": 54,
+            "fineliRecordId": "op141-fineli-536",
+            "giRecordId": null,
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes."
+          },
+          {
+            "name": "jauhettua kuivattua timjamia",
+            "grams": 2,
+            "fineliRecordId": "op141-fineli-11194",
+            "giRecordId": null,
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "giMatchEvidence": "No matching GI; source-known Fineli CHOAVL 0.1347g/serving is counted in cumulative omission; not zero. CHOAVL already excludes polyols."
+          },
+          {
+            "name": "jauhettua mustapippuria",
+            "grams": 0.5,
+            "fineliRecordId": "op141-fineli-11177",
+            "giRecordId": null,
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "giMatchEvidence": "No matching GI; source-known Fineli CHOAVL 0.0478875g/serving is counted in cumulative omission; not zero. CHOAVL already excludes polyols."
+          },
+          {
+            "name": "tuoretta basilikaa",
+            "grams": 15,
+            "fineliRecordId": "op141-fineli-11134",
+            "giRecordId": "op141-lowcho50-r4",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "lowcho-code",
+            "preparationKey": "op141-lowcho50-r4",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Fineli garlic and fresh basil replace AFCD; spices have known CHOAVL but no matching GI and use the existing small-portion omission. No bread/rice."
+          },
+          {
+            "name": "suolaa",
+            "grams": null,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Explicit pure salt",
+            "estimatedAvailableCarbohydratePerServingG": 0,
+            "negligibleAssumption": "Pure salt, no carbohydrate. Unknown salt mass remains null."
+          }
+        ]
+      },
+      "modelInputSha256": "392404d1eaa87aa7b45d9e247cc6daddc9556a2f532ba860d475a627634f8c17",
+      "version": {
+        "recipeId": "ratatouille",
+        "scenarioId": "defined-weighed-hot-version",
+        "publishedPath": "reseptit/paaruoat/ratatouille.md",
+        "publishedSourceLfSha256": "d6eb5c2961ed0bb97327be45a337074ae5479c9f8b39491e5c87380f0313c637",
+        "publishedIngredients": [
+          {
+            "amount": 1,
+            "unit": "kpl",
+            "item": "munakoisoa",
+            "note": "kuutioina"
+          },
+          {
+            "amount": 2,
+            "unit": "kpl",
+            "item": "kesäkurpitsaa",
+            "note": "kuutioina"
+          },
+          {
+            "amount": 1,
+            "unit": "kpl",
+            "item": "punaista paprikaa",
+            "note": "paloina"
+          },
+          {
+            "amount": 1,
+            "unit": "kpl",
+            "item": "sipuli",
+            "note": "hienonnettuna"
+          },
+          {
+            "amount": 3,
+            "unit": "kpl",
+            "item": "valkosipulinkynttä",
+            "note": "silputtuna"
+          },
+          {
+            "amount": 500,
+            "unit": "g",
+            "item": "kypsiä tomaatteja",
+            "note": "kuutioina"
+          },
+          {
+            "amount": 4,
+            "unit": "rkl",
+            "item": "oliiviöljyä"
+          },
+          {
+            "amount": 1,
+            "unit": "tl",
+            "item": "kuivattua timjamia"
+          },
+          {
+            "amount": 1,
+            "unit": "tl",
+            "item": "suolaa"
+          },
+          {
+            "amount": 0.25,
+            "unit": "tl",
+            "item": "mustapippuria"
+          },
+          {
+            "amount": 15,
+            "unit": "g",
+            "item": "tuoretta basilikaa"
+          }
+        ],
+        "priorCommit": "b8ece7ee1e4b80fc26abeb9b94944514875188d7",
+        "priorPack": "gk80-release-8",
+        "preparationBase": [
+          "Pehmennä 300 g munakoisoa koko punnitussa 54 g oliiviöljymäärässä. Älä lisää muuta öljyä.",
+          "Lisää 55 g sipulia, 120 g paprikaa, 9 g valkosipulia, 400 g kesäkurpitsaa ja 500 g tomaattia. Hauduta kannen alla noin 30 min.",
+          "Lisää 2 g jauhettua kuivaa timjamia, 0,5 g mustapippuria ja 15 g basilikaa. Jaa kaikki kasvikset ja neste neljään annokseen. Ei leipä- tai riisilisuketta."
+        ],
+        "bindingVersionNotes": "Fineli garlic and fresh basil replace AFCD; spices have known CHOAVL but no matching GI and use the existing small-portion omission. No bread/rice.",
+        "weighedIngredients": [
+          {
+            "name": "munakoisoa",
+            "grams": 300,
+            "fineliRecordId": "op141-fineli-362",
+            "giRecordId": "op141-vegetable-imputation40",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "low-carb-vegetable",
+            "preparationKey": "op141-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Fineli garlic and fresh basil replace AFCD; spices have known CHOAVL but no matching GI and use the existing small-portion omission. No bread/rice."
+          },
+          {
+            "name": "kesäkurpitsaa",
+            "grams": 400,
+            "fineliRecordId": "op141-fineli-389",
+            "giRecordId": "op141-vegetable-imputation40",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "low-carb-vegetable",
+            "preparationKey": "op141-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Fineli garlic and fresh basil replace AFCD; spices have known CHOAVL but no matching GI and use the existing small-portion omission. No bread/rice."
+          },
+          {
+            "name": "punaista paprikaa",
+            "grams": 120,
+            "fineliRecordId": "op141-fineli-386",
+            "giRecordId": "op141-vegetable-imputation40",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "low-carb-vegetable",
+            "preparationKey": "op141-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Fineli garlic and fresh basil replace AFCD; spices have known CHOAVL but no matching GI and use the existing small-portion omission. No bread/rice."
+          },
+          {
+            "name": "sipulia",
+            "grams": 55,
+            "fineliRecordId": "op141-fineli-335",
+            "giRecordId": "op141-vegetable-imputation40",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "low-carb-vegetable",
+            "preparationKey": "op141-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Fineli garlic and fresh basil replace AFCD; spices have known CHOAVL but no matching GI and use the existing small-portion omission. No bread/rice."
+          },
+          {
+            "name": "tuoretta kuorittua valkosipulia",
+            "grams": 9,
+            "fineliRecordId": "op141-fineli-393",
+            "giRecordId": "op141-vegetable-imputation40",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "low-carb-vegetable",
+            "preparationKey": "op141-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Fineli garlic and fresh basil replace AFCD; spices have known CHOAVL but no matching GI and use the existing small-portion omission. No bread/rice."
+          },
+          {
+            "name": "tomaattia",
+            "grams": 500,
+            "fineliRecordId": "op141-fineli-352",
+            "giRecordId": "op141-vegetable-imputation40",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "low-carb-vegetable",
+            "preparationKey": "op141-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Fineli garlic and fresh basil replace AFCD; spices have known CHOAVL but no matching GI and use the existing small-portion omission. No bread/rice."
+          },
+          {
+            "name": "oliiviöljyä",
+            "grams": 54,
+            "fineliRecordId": "op141-fineli-536",
+            "giRecordId": null,
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes."
+          },
+          {
+            "name": "jauhettua kuivattua timjamia",
+            "grams": 2,
+            "fineliRecordId": "op141-fineli-11194",
+            "giRecordId": null,
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "giMatchEvidence": "No matching GI; source-known Fineli CHOAVL 0.1347g/serving is counted in cumulative omission; not zero. CHOAVL already excludes polyols."
+          },
+          {
+            "name": "jauhettua mustapippuria",
+            "grams": 0.5,
+            "fineliRecordId": "op141-fineli-11177",
+            "giRecordId": null,
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "giMatchEvidence": "No matching GI; source-known Fineli CHOAVL 0.0478875g/serving is counted in cumulative omission; not zero. CHOAVL already excludes polyols."
+          },
+          {
+            "name": "tuoretta basilikaa",
+            "grams": 15,
+            "fineliRecordId": "op141-fineli-11134",
+            "giRecordId": "op141-lowcho50-r4",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "lowcho-code",
+            "preparationKey": "op141-lowcho50-r4",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Fineli garlic and fresh basil replace AFCD; spices have known CHOAVL but no matching GI and use the existing small-portion omission. No bread/rice."
+          },
+          {
+            "name": "suolaa",
+            "grams": null,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Explicit pure salt",
+            "estimatedAvailableCarbohydratePerServingG": 0,
+            "negligibleAssumption": "Pure salt, no carbohydrate. Unknown salt mass remains null."
+          }
+        ],
+        "servings": 4,
+        "ownerApproved": false,
+        "publicationAuthorized": false,
+        "macrosRecalculated": false,
+        "methodChange": false
+      },
+      "versionSha256": "40176fc4a3affa4b249972517698ebf29a79d63dc862dff0d9f4bc634c27b8d3",
+      "ingredientEvidence": [
+        {
+          "index": 0,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "362",
+          "massG": 300,
+          "choPer100g": 3.1,
+          "aggregatePolyols": 0.0,
+          "fibre": 2.5,
+          "giSourceId": "op141-vegetable-imputation40",
+          "omitted": false
+        },
+        {
+          "index": 1,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "389",
+          "massG": 400,
+          "choPer100g": 2.5,
+          "aggregatePolyols": 0.0,
+          "fibre": 2.0,
+          "giSourceId": "op141-vegetable-imputation40",
+          "omitted": false
+        },
+        {
+          "index": 2,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "386",
+          "massG": 120,
+          "choPer100g": 4.5,
+          "aggregatePolyols": 0.0,
+          "fibre": 1.9,
+          "giSourceId": "op141-vegetable-imputation40",
+          "omitted": false
+        },
+        {
+          "index": 3,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "335",
+          "massG": 55,
+          "choPer100g": 4.8,
+          "aggregatePolyols": 0.0,
+          "fibre": 1.2,
+          "giSourceId": "op141-vegetable-imputation40",
+          "omitted": false
+        },
+        {
+          "index": 4,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "393",
+          "massG": 9,
+          "choPer100g": 16.3,
+          "aggregatePolyols": 0.0,
+          "fibre": null,
+          "giSourceId": "op141-vegetable-imputation40",
+          "omitted": false
+        },
+        {
+          "index": 5,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "352",
+          "massG": 500,
+          "choPer100g": 3.45,
+          "aggregatePolyols": 0.0,
+          "fibre": 0.4,
+          "giSourceId": "op141-vegetable-imputation40",
+          "omitted": false
+        },
+        {
+          "index": 6,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "536",
+          "massG": 54,
+          "choPer100g": 0.0,
+          "aggregatePolyols": 0.0,
+          "fibre": 0.0,
+          "giSourceId": null,
+          "omitted": false
+        },
+        {
+          "index": 7,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "11194",
+          "massG": 2,
+          "choPer100g": 26.94,
+          "aggregatePolyols": null,
+          "fibre": null,
+          "giSourceId": null,
+          "omitted": true
+        },
+        {
+          "index": 8,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "11177",
+          "massG": 0.5,
+          "choPer100g": 38.31,
+          "aggregatePolyols": null,
+          "fibre": null,
+          "giSourceId": null,
+          "omitted": true
+        },
+        {
+          "index": 9,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "11134",
+          "massG": 15,
+          "choPer100g": 1.06,
+          "aggregatePolyols": 0.0,
+          "fibre": null,
+          "giSourceId": "op141-lowcho50-r4",
+          "omitted": false
+        }
+      ],
+      "expectedOmittedPerServingG": "0.1825875",
+      "evidenceBundleSha256": "0a8209a0f4eae01906ea51622ada71d3bb720760a188af8db9066dd75997352b"
+    },
+    {
+      "scenarioId": "defined-weighed-hot-version",
+      "input": {
+        "recipeId": "sitruuna-yrttikana-parsa",
+        "servings": 4,
+        "ingredients": [
+          {
+            "name": "broilerin rintafileitä",
+            "grams": 600,
+            "fineliRecordId": "op141-fineli-11565",
+            "giRecordId": null,
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes."
+          },
+          {
+            "name": "vihreää parsaa",
+            "grams": 400,
+            "fineliRecordId": "op141-fineli-11689",
+            "giRecordId": "op141-vegetable-imputation40",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "low-carb-vegetable",
+            "preparationKey": "op141-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Garlic POWDER is weighed 3.1 g, preserving the published powder choice rather than the former fresh-garlic variant. Fineli raw cleaned asparagus; lemon edible flesh including juice 58 g. All pan juices retained."
+          },
+          {
+            "name": "sitruuna",
+            "grams": 58,
+            "fineliRecordId": "op141-fineli-11048",
+            "giRecordId": "op141-lowcho50-r4",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "lowcho-code",
+            "preparationKey": "op141-lowcho50-r4",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Garlic POWDER is weighed 3.1 g, preserving the published powder choice rather than the former fresh-garlic variant. Fineli raw cleaned asparagus; lemon edible flesh including juice 58 g. All pan juices retained."
+          },
+          {
+            "name": "oliiviöljyä",
+            "grams": 27.4,
+            "fineliRecordId": "op141-fineli-536",
+            "giRecordId": null,
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes."
+          },
+          {
+            "name": "voita",
+            "grams": 30,
+            "fineliRecordId": "op141-fineli-500",
+            "giRecordId": "op141-dairy-imputation30",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "dairy-code",
+            "preparationKey": "op141-dairy-imputation30",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Garlic POWDER is weighed 3.1 g, preserving the published powder choice rather than the former fresh-garlic variant. Fineli raw cleaned asparagus; lemon edible flesh including juice 58 g. All pan juices retained."
+          },
+          {
+            "name": "kuivattua jauhettua timjamia",
+            "grams": 2,
+            "fineliRecordId": "op141-fineli-11194",
+            "giRecordId": null,
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "giMatchEvidence": "No matching GI; source-known Fineli CHOAVL 0.1347g/serving is counted in cumulative omission; not zero. CHOAVL already excludes polyols."
+          },
+          {
+            "name": "valkosipulijauhetta, punnittuna3,1g",
+            "grams": 3.1,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Source-backed source-total ceiling under existing GK omission rule.",
+            "availableCarbohydrateUpperBoundPerServingG": 0.5636575,
+            "upperBoundEvidence": "USDA SR Legacy2018 FDC171325 Spices, garlic powder; nutrient1005 totalCHO 72.73g/100g; retained 3.1g/4servings. No fibre/polyol subtraction. Nominal source-model ceiling only; not a clinical or lot maximum."
+          },
+          {
+            "name": "jauhettua mustapippuria",
+            "grams": 0.5,
+            "fineliRecordId": "op141-fineli-11177",
+            "giRecordId": null,
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "giMatchEvidence": "No matching GI; source-known Fineli CHOAVL 0.0478875g/serving is counted in cumulative omission; not zero. CHOAVL already excludes polyols."
+          }
+        ]
+      },
+      "modelInputSha256": "65b985476efa9452b588fdd270f0ba1d0a9b7b54219b0598d34cea4f64f0440b",
+      "version": {
+        "recipeId": "sitruuna-yrttikana-parsa",
+        "scenarioId": "defined-weighed-hot-version",
+        "publishedPath": "reseptit/paaruoat/sitruuna-yrttikana-parsa.md",
+        "publishedSourceLfSha256": "e1e4e4e3fc261434816408ee1dfac1fcd085dc696f81a749b244c415782d1688",
+        "publishedIngredients": [
+          {
+            "amount": 600,
+            "unit": "g",
+            "item": "broilerin rintafileitä"
+          },
+          {
+            "amount": 400,
+            "unit": "g",
+            "item": "vihreää parsaa"
+          },
+          {
+            "amount": 1,
+            "unit": "kpl",
+            "item": "sitruuna"
+          },
+          {
+            "amount": 2,
+            "unit": "rkl",
+            "item": "oliiviöljyä"
+          },
+          {
+            "amount": 30,
+            "unit": "g",
+            "item": "voita"
+          },
+          {
+            "amount": 1,
+            "unit": "tl",
+            "item": "kuivattua timjamia"
+          },
+          {
+            "amount": 1,
+            "unit": "tl",
+            "item": "valkosipulijauhetta"
+          },
+          {
+            "amount": null,
+            "unit": "",
+            "item": "suolaa ja mustapippuria"
+          }
+        ],
+        "priorCommit": "b8ece7ee1e4b80fc26abeb9b94944514875188d7",
+        "priorPack": "gk80-release-8",
+        "preparationBase": [
+          "Sekoita kaikki punnittu öljy, voi, 3,1 g valkosipulijauhetta, 2 g jauhettua timjamia ja 0,5 g mustapippuria. Tässä versiossa käytetään julkaistun ohjeen mukaista jauhetta, ei aiemman ehdotuksen tuoretta valkosipulia.",
+          "Kypsennä broileri ja parsa kauttaaltaan koko rasvamäärässä. Käytä koko punnittu kuoreton sitruunan hedelmäliha ja mehu, ei poistettavia kuoria tai uuttamista.",
+          "Jaa kaikki ainekset ja pannuneste neljään annokseen."
+        ],
+        "bindingVersionNotes": "Garlic POWDER is weighed 3.1 g, preserving the published powder choice rather than the former fresh-garlic variant. Fineli raw cleaned asparagus; lemon edible flesh including juice 58 g. All pan juices retained.",
+        "weighedIngredients": [
+          {
+            "name": "broilerin rintafileitä",
+            "grams": 600,
+            "fineliRecordId": "op141-fineli-11565",
+            "giRecordId": null,
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes."
+          },
+          {
+            "name": "vihreää parsaa",
+            "grams": 400,
+            "fineliRecordId": "op141-fineli-11689",
+            "giRecordId": "op141-vegetable-imputation40",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "low-carb-vegetable",
+            "preparationKey": "op141-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Garlic POWDER is weighed 3.1 g, preserving the published powder choice rather than the former fresh-garlic variant. Fineli raw cleaned asparagus; lemon edible flesh including juice 58 g. All pan juices retained."
+          },
+          {
+            "name": "sitruuna",
+            "grams": 58,
+            "fineliRecordId": "op141-fineli-11048",
+            "giRecordId": "op141-lowcho50-r4",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "lowcho-code",
+            "preparationKey": "op141-lowcho50-r4",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Garlic POWDER is weighed 3.1 g, preserving the published powder choice rather than the former fresh-garlic variant. Fineli raw cleaned asparagus; lemon edible flesh including juice 58 g. All pan juices retained."
+          },
+          {
+            "name": "oliiviöljyä",
+            "grams": 27.4,
+            "fineliRecordId": "op141-fineli-536",
+            "giRecordId": null,
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes."
+          },
+          {
+            "name": "voita",
+            "grams": 30,
+            "fineliRecordId": "op141-fineli-500",
+            "giRecordId": "op141-dairy-imputation30",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "dairy-code",
+            "preparationKey": "op141-dairy-imputation30",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Garlic POWDER is weighed 3.1 g, preserving the published powder choice rather than the former fresh-garlic variant. Fineli raw cleaned asparagus; lemon edible flesh including juice 58 g. All pan juices retained."
+          },
+          {
+            "name": "kuivattua jauhettua timjamia",
+            "grams": 2,
+            "fineliRecordId": "op141-fineli-11194",
+            "giRecordId": null,
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "giMatchEvidence": "No matching GI; source-known Fineli CHOAVL 0.1347g/serving is counted in cumulative omission; not zero. CHOAVL already excludes polyols."
+          },
+          {
+            "name": "valkosipulijauhetta, punnittuna3,1g",
+            "grams": 3.1,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Source-backed source-total ceiling under existing GK omission rule.",
+            "availableCarbohydrateUpperBoundPerServingG": 0.5636575,
+            "upperBoundEvidence": "USDA SR Legacy2018 FDC171325 Spices, garlic powder; nutrient1005 totalCHO 72.73g/100g; retained 3.1g/4servings. No fibre/polyol subtraction. Nominal source-model ceiling only; not a clinical or lot maximum."
+          },
+          {
+            "name": "jauhettua mustapippuria",
+            "grams": 0.5,
+            "fineliRecordId": "op141-fineli-11177",
+            "giRecordId": null,
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "giMatchEvidence": "No matching GI; source-known Fineli CHOAVL 0.0478875g/serving is counted in cumulative omission; not zero. CHOAVL already excludes polyols."
+          }
+        ],
+        "servings": 4,
+        "ownerApproved": false,
+        "publicationAuthorized": false,
+        "macrosRecalculated": false,
+        "methodChange": false
+      },
+      "versionSha256": "a7881ac594a303bd40b98d70ff7339f6f9f466388213ac2f46af79c03badd0a2",
+      "ingredientEvidence": [
+        {
+          "index": 0,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "11565",
+          "massG": 600,
+          "choPer100g": 0.0,
+          "aggregatePolyols": 0.0,
+          "fibre": 0.0,
+          "giSourceId": null,
+          "omitted": false
+        },
+        {
+          "index": 1,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "11689",
+          "massG": 400,
+          "choPer100g": 2.0,
+          "aggregatePolyols": 0.0,
+          "fibre": 1.7,
+          "giSourceId": "op141-vegetable-imputation40",
+          "omitted": false
+        },
+        {
+          "index": 2,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "11048",
+          "massG": 58,
+          "choPer100g": 2.2,
+          "aggregatePolyols": 0.0,
+          "fibre": 2.4,
+          "giSourceId": "op141-lowcho50-r4",
+          "omitted": false
+        },
+        {
+          "index": 3,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "536",
+          "massG": 27.4,
+          "choPer100g": 0.0,
+          "aggregatePolyols": 0.0,
+          "fibre": 0.0,
+          "giSourceId": null,
+          "omitted": false
+        },
+        {
+          "index": 4,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "500",
+          "massG": 30,
+          "choPer100g": 0.8,
+          "aggregatePolyols": 0.0,
+          "fibre": 0.0,
+          "giSourceId": "op141-dairy-imputation30",
+          "omitted": false
+        },
+        {
+          "index": 5,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "11194",
+          "massG": 2,
+          "choPer100g": 26.94,
+          "aggregatePolyols": null,
+          "fibre": null,
+          "giSourceId": null,
+          "omitted": true
+        },
+        {
+          "index": 6,
+          "kind": "USDA_TOTAL_CEILING",
+          "source": {
+            "key": "garlic_powder",
+            "fdc_id": "171325",
+            "data_type": "sr_legacy_food",
+            "description": "Spices, garlic powder",
+            "food_category_id": "2",
+            "publication_date": "2019-04-01",
+            "nutrients": {
+              "1079": {
+                "id": "1600847",
+                "fdc_id": "171325",
+                "nutrient_id": "1079",
+                "amount": "9",
+                "data_points": "3",
+                "derivation_id": "1",
+                "min": "6.8",
+                "max": "10.3",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1003": {
+                "id": "1600855",
+                "fdc_id": "171325",
+                "nutrient_id": "1003",
+                "amount": "16.55",
+                "data_points": "3",
+                "derivation_id": "1",
+                "min": "14.69",
+                "max": "18.58",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "2000": {
+                "id": "1600930",
+                "fdc_id": "171325",
+                "nutrient_id": "2000",
+                "amount": "2.43",
+                "data_points": "1",
+                "derivation_id": "1",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1004": {
+                "id": "1600936",
+                "fdc_id": "171325",
+                "nutrient_id": "1004",
+                "amount": "0.73",
+                "data_points": "3",
+                "derivation_id": "1",
+                "min": "0.22",
+                "max": "1.66",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1005": {
+                "id": "1600937",
+                "fdc_id": "171325",
+                "nutrient_id": "1005",
+                "amount": "72.73",
+                "data_points": "0",
+                "derivation_id": "49",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              }
+            },
+            "portions": [
+              {
+                "id": "88439",
+                "fdc_id": "171325",
+                "seq_num": "1",
+                "amount": "1",
+                "measure_unit_id": "9999",
+                "portion_description": "",
+                "modifier": "tsp",
+                "gram_weight": "3.1",
+                "data_points": "50",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              {
+                "id": "88440",
+                "fdc_id": "171325",
+                "seq_num": "2",
+                "amount": "1",
+                "measure_unit_id": "9999",
+                "portion_description": "",
+                "modifier": "tbsp",
+                "gram_weight": "9.7",
+                "data_points": "20",
+                "footnote": "",
+                "min_year_acquired": ""
+              }
+            ]
+          },
+          "massG": 3.1,
+          "availableUpperPerServingG": "0.5636575",
+          "aggregatePolyols": null
+        },
+        {
+          "index": 7,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "11177",
+          "massG": 0.5,
+          "choPer100g": 38.31,
+          "aggregatePolyols": null,
+          "fibre": null,
+          "giSourceId": null,
+          "omitted": true
+        }
+      ],
+      "expectedOmittedPerServingG": "0.7462450",
+      "evidenceBundleSha256": "ad09cbf68b8333f4a57f42c10c91d9c286f503d24f686e0611ef06a9fae10517"
+    },
+    {
+      "scenarioId": "defined-weighed-hot-version",
+      "input": {
+        "recipeId": "menemen",
+        "servings": 3,
+        "ingredients": [
+          {
+            "name": "kuoretonta kananmunaa",
+            "grams": 220,
+            "fineliRecordId": "op141-fineli-858",
+            "giRecordId": "op141-lowcho50-r4",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "lowcho-code",
+            "preparationKey": "op141-lowcho50-r4",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Existing weighed proposal; all ingredients enumerated."
+          },
+          {
+            "name": "tomaattia",
+            "grams": 375,
+            "fineliRecordId": "op141-fineli-352",
+            "giRecordId": "op141-vegetable-imputation40",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "low-carb-vegetable",
+            "preparationKey": "op141-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Existing weighed proposal; all ingredients enumerated."
+          },
+          {
+            "name": "vihreää paprikaa",
+            "grams": 170,
+            "fineliRecordId": "op141-fineli-387",
+            "giRecordId": "op141-vegetable-imputation40",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "low-carb-vegetable",
+            "preparationKey": "op141-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Existing weighed proposal; all ingredients enumerated."
+          },
+          {
+            "name": "sipulia",
+            "grams": 55,
+            "fineliRecordId": "op141-fineli-335",
+            "giRecordId": "op141-vegetable-imputation40",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "low-carb-vegetable",
+            "preparationKey": "op141-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Existing weighed proposal; all ingredients enumerated."
+          },
+          {
+            "name": "oliiviöljyä",
+            "grams": 27,
+            "fineliRecordId": "op141-fineli-536",
+            "giRecordId": null,
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes."
+          },
+          {
+            "name": "paprikajauhetta",
+            "grams": 1,
+            "fineliRecordId": "op141-fineli-11182",
+            "giRecordId": null,
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "giMatchEvidence": "No matching GI; source-known Fineli CHOAVL 0.06113333333333333333333333333g/serving is counted in cumulative omission; not zero. CHOAVL already excludes polyols."
+          },
+          {
+            "name": "jauhettua mustapippuria",
+            "grams": 0.5,
+            "fineliRecordId": "op141-fineli-11177",
+            "giRecordId": null,
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "giMatchEvidence": "No matching GI; source-known Fineli CHOAVL 0.06385g/serving is counted in cumulative omission; not zero. CHOAVL already excludes polyols."
+          },
+          {
+            "name": "tuoretta persiljaa",
+            "grams": 10,
+            "fineliRecordId": "op141-fineli-333",
+            "giRecordId": "op141-vegetable-imputation40",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "low-carb-vegetable",
+            "preparationKey": "op141-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Existing weighed proposal; all ingredients enumerated."
+          },
+          {
+            "name": "suolaa",
+            "grams": null,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Explicit pure salt",
+            "estimatedAvailableCarbohydratePerServingG": 0,
+            "negligibleAssumption": "Pure salt, no carbohydrate. Unknown salt mass remains null."
+          }
+        ]
+      },
+      "modelInputSha256": "f8f5dd321389fbc3b5057f39ebcdcc5a9fbe884358835ff4c6ac7e8f91a3883c",
+      "version": {
+        "recipeId": "menemen",
+        "scenarioId": "defined-weighed-hot-version",
+        "publishedPath": "reseptit/paaruoat/menemen.md",
+        "publishedSourceLfSha256": "c3b72091f9b41c99cf63c2a396267e2cba82a7b8c569e6136ab8be11ac5623b9",
+        "publishedIngredients": [
+          {
+            "amount": 4,
+            "unit": "kpl",
+            "item": "kananmunaa"
+          },
+          {
+            "amount": 3,
+            "unit": "kpl",
+            "item": "kypsää tomaattia",
+            "note": "kuutioina"
+          },
+          {
+            "amount": 1,
+            "unit": "kpl",
+            "item": "vihreää paprikaa",
+            "note": "paloiteltuna"
+          },
+          {
+            "amount": 1,
+            "unit": "kpl",
+            "item": "sipuli",
+            "note": "hienonnettuna"
+          },
+          {
+            "amount": 2,
+            "unit": "rkl",
+            "item": "oliiviöljyä"
+          },
+          {
+            "amount": 0.5,
+            "unit": "tl",
+            "item": "paprikajauhetta"
+          },
+          {
+            "amount": 0.5,
+            "unit": "tl",
+            "item": "suolaa"
+          },
+          {
+            "amount": 0.25,
+            "unit": "tl",
+            "item": "mustapippuria"
+          },
+          {
+            "amount": 10,
+            "unit": "g",
+            "item": "tuoretta persiljaa",
+            "note": "silputtuna"
+          }
+        ],
+        "priorCommit": "b8ece7ee1e4b80fc26abeb9b94944514875188d7",
+        "priorPack": "gk80-release-8",
+        "preparationBase": [
+          "Kuullota kaikki punnittu sipuli ja vihreä paprika öljyssä. Lisää tomaatti ja paprikajauhe, hauduta pehmeäksi.",
+          "Lisää 220 g kuoretonta kananmunaa ja kypsennä varovasti sekoittaen. Lisää persilja ja 0,5 g mustapippuria, mausta suolalla.",
+          "Jaa koko pannullinen nesteineen kolmeen annokseen. Ei pois jätettävää sipulivaihtoehtoa tässä versiossa."
+        ],
+        "bindingVersionNotes": "",
+        "weighedIngredients": [
+          {
+            "name": "kuoretonta kananmunaa",
+            "grams": 220,
+            "fineliRecordId": "op141-fineli-858",
+            "giRecordId": "op141-lowcho50-r4",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "lowcho-code",
+            "preparationKey": "op141-lowcho50-r4",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Existing weighed proposal; all ingredients enumerated."
+          },
+          {
+            "name": "tomaattia",
+            "grams": 375,
+            "fineliRecordId": "op141-fineli-352",
+            "giRecordId": "op141-vegetable-imputation40",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "low-carb-vegetable",
+            "preparationKey": "op141-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Existing weighed proposal; all ingredients enumerated."
+          },
+          {
+            "name": "vihreää paprikaa",
+            "grams": 170,
+            "fineliRecordId": "op141-fineli-387",
+            "giRecordId": "op141-vegetable-imputation40",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "low-carb-vegetable",
+            "preparationKey": "op141-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Existing weighed proposal; all ingredients enumerated."
+          },
+          {
+            "name": "sipulia",
+            "grams": 55,
+            "fineliRecordId": "op141-fineli-335",
+            "giRecordId": "op141-vegetable-imputation40",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "low-carb-vegetable",
+            "preparationKey": "op141-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Existing weighed proposal; all ingredients enumerated."
+          },
+          {
+            "name": "oliiviöljyä",
+            "grams": 27,
+            "fineliRecordId": "op141-fineli-536",
+            "giRecordId": null,
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes."
+          },
+          {
+            "name": "paprikajauhetta",
+            "grams": 1,
+            "fineliRecordId": "op141-fineli-11182",
+            "giRecordId": null,
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "giMatchEvidence": "No matching GI; source-known Fineli CHOAVL 0.06113333333333333333333333333g/serving is counted in cumulative omission; not zero. CHOAVL already excludes polyols."
+          },
+          {
+            "name": "jauhettua mustapippuria",
+            "grams": 0.5,
+            "fineliRecordId": "op141-fineli-11177",
+            "giRecordId": null,
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "giMatchEvidence": "No matching GI; source-known Fineli CHOAVL 0.06385g/serving is counted in cumulative omission; not zero. CHOAVL already excludes polyols."
+          },
+          {
+            "name": "tuoretta persiljaa",
+            "grams": 10,
+            "fineliRecordId": "op141-fineli-333",
+            "giRecordId": "op141-vegetable-imputation40",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "low-carb-vegetable",
+            "preparationKey": "op141-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Existing weighed proposal; all ingredients enumerated."
+          },
+          {
+            "name": "suolaa",
+            "grams": null,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Explicit pure salt",
+            "estimatedAvailableCarbohydratePerServingG": 0,
+            "negligibleAssumption": "Pure salt, no carbohydrate. Unknown salt mass remains null."
+          }
+        ],
+        "servings": 3,
+        "ownerApproved": false,
+        "publicationAuthorized": false,
+        "macrosRecalculated": false,
+        "methodChange": false
+      },
+      "versionSha256": "e6abb284eba62d4fb3436366e2383288b67384b0802890618cffc2ff919f45d0",
+      "ingredientEvidence": [
+        {
+          "index": 0,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "858",
+          "massG": 220,
+          "choPer100g": 0.3,
+          "aggregatePolyols": 0.0,
+          "fibre": 0.0,
+          "giSourceId": "op141-lowcho50-r4",
+          "omitted": false
+        },
+        {
+          "index": 1,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "352",
+          "massG": 375,
+          "choPer100g": 3.45,
+          "aggregatePolyols": 0.0,
+          "fibre": 0.4,
+          "giSourceId": "op141-vegetable-imputation40",
+          "omitted": false
+        },
+        {
+          "index": 2,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "387",
+          "massG": 170,
+          "choPer100g": 2.5,
+          "aggregatePolyols": 0.0,
+          "fibre": 1.8,
+          "giSourceId": "op141-vegetable-imputation40",
+          "omitted": false
+        },
+        {
+          "index": 3,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "335",
+          "massG": 55,
+          "choPer100g": 4.8,
+          "aggregatePolyols": 0.0,
+          "fibre": 1.2,
+          "giSourceId": "op141-vegetable-imputation40",
+          "omitted": false
+        },
+        {
+          "index": 4,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "536",
+          "massG": 27,
+          "choPer100g": 0.0,
+          "aggregatePolyols": 0.0,
+          "fibre": 0.0,
+          "giSourceId": null,
+          "omitted": false
+        },
+        {
+          "index": 5,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "11182",
+          "massG": 1,
+          "choPer100g": 18.34,
+          "aggregatePolyols": null,
+          "fibre": null,
+          "giSourceId": null,
+          "omitted": true
+        },
+        {
+          "index": 6,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "11177",
+          "massG": 0.5,
+          "choPer100g": 38.31,
+          "aggregatePolyols": null,
+          "fibre": null,
+          "giSourceId": null,
+          "omitted": true
+        },
+        {
+          "index": 7,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "333",
+          "massG": 10,
+          "choPer100g": 1.1,
+          "aggregatePolyols": 0.0,
+          "fibre": 2.9,
+          "giSourceId": "op141-vegetable-imputation40",
+          "omitted": false
+        }
+      ],
+      "expectedOmittedPerServingG": "0.1249833333333333333333333333",
+      "evidenceBundleSha256": "87065019f1a763c59df17f230b8f782464f91127059ca81c104a58f343cd27b7"
+    },
+    {
+      "scenarioId": "hot-jasmine-rice",
+      "input": {
+        "recipeId": "tomaatti-kananmuna-wokki",
+        "servings": 3,
+        "ingredients": [
+          {
+            "name": "kuoretonta kananmunaa",
+            "grams": 220,
+            "fineliRecordId": "op141-fineli-858",
+            "giRecordId": "op141-lowcho50-r4",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "lowcho-code",
+            "preparationKey": "op141-lowcho50-r4",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Named hot jasmine and hot basmati alternatives; generic cooked rice composition remains an explicitly LOW composition proxy. Cooked rice is included. Rapeseed oil 27 g; soy sauce 15 g is omitted at 0.475 g A/serving, never assigned lowcho50 outside its scope."
+          },
+          {
+            "name": "kypsää tomaattia",
+            "grams": 500,
+            "fineliRecordId": "op141-fineli-352",
+            "giRecordId": "op141-vegetable-imputation40",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "low-carb-vegetable",
+            "preparationKey": "op141-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Named hot jasmine and hot basmati alternatives; generic cooked rice composition remains an explicitly LOW composition proxy. Cooked rice is included. Rapeseed oil 27 g; soy sauce 15 g is omitted at 0.475 g A/serving, never assigned lowcho50 outside its scope."
+          },
+          {
+            "name": "neutraalia öljyä",
+            "grams": 27.0,
+            "fineliRecordId": "op141-fineli-535",
+            "giRecordId": null,
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes."
+          },
+          {
+            "name": "sokeria",
+            "grams": 4,
+            "fineliRecordId": "op141-fineli-1",
+            "giRecordId": "op141-sucrose60",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "sucrose",
+            "preparationKey": "op141-sucrose60",
+            "giMatchEvidence": "Specific human comparator, explicit LOW preparation/food application. Named hot jasmine and hot basmati alternatives; generic cooked rice composition remains an explicitly LOW composition proxy. Cooked rice is included. Rapeseed oil 27 g; soy sauce 15 g is omitted at 0.475 g A/serving, never assigned lowcho50 outside its scope."
+          },
+          {
+            "name": "suolaa",
+            "grams": null,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Explicit pure salt",
+            "estimatedAvailableCarbohydratePerServingG": 0,
+            "negligibleAssumption": "Pure salt, no carbohydrate. Unknown salt mass remains null."
+          },
+          {
+            "name": "kaupallista soijakastiketta (AFCD F008065 -koostumusvertailu)",
+            "grams": 15,
+            "fineliRecordId": "op141-fineli-31",
+            "giRecordId": null,
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "giMatchEvidence": "No matching GI; source-known Fineli CHOAVL 0.475g/serving is counted in cumulative omission; not zero. CHOAVL already excludes polyols."
+          },
+          {
+            "name": "kevätsipulia",
+            "grams": 15,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Source-backed source-total ceiling under existing GK omission rule.",
+            "availableCarbohydrateUpperBoundPerServingG": 0.367,
+            "upperBoundEvidence": "USDA SR Legacy2018 FDC170005 Onions, spring or scallions (includes tops and bulb), raw; nutrient1005 totalCHO 7.34g/100g; retained 15g/3servings. No fibre/polyol subtraction. Nominal source-model ceiling only; not a clinical or lot maximum."
+          },
+          {
+            "name": "keitettyä riisiä",
+            "grams": 450,
+            "fineliRecordId": "op141-fineli-1370",
+            "giRecordId": "op141-rice-jasmine68",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "rice-grain",
+            "preparationKey": "op141-rice-jasmine68",
+            "giMatchEvidence": "Specific human comparator, explicit LOW preparation/food application. Named hot jasmine and hot basmati alternatives; generic cooked rice composition remains an explicitly LOW composition proxy. Cooked rice is included. Rapeseed oil 27 g; soy sauce 15 g is omitted at 0.475 g A/serving, never assigned lowcho50 outside its scope."
+          }
+        ]
+      },
+      "modelInputSha256": "7463711832d27cc8264094944a8da5408ea953698a9f1aa7b9b88fb144f9732d",
+      "version": {
+        "recipeId": "tomaatti-kananmuna-wokki",
+        "scenarioId": "hot-jasmine-rice",
+        "publishedPath": "reseptit/paaruoat/tomaatti-kananmuna-wokki.md",
+        "publishedSourceLfSha256": "b861fd33f519bc2f7e08760704a25abbbac2ff9dded37fb7614c3fa17e2c7148",
+        "publishedIngredients": [
+          {
+            "amount": 4,
+            "unit": "kpl",
+            "item": "kananmunaa"
+          },
+          {
+            "amount": 4,
+            "unit": "kpl",
+            "item": "kypsää tomaattia",
+            "note": "lohkoina"
+          },
+          {
+            "amount": 2,
+            "unit": "rkl",
+            "item": "neutraalia öljyä"
+          },
+          {
+            "amount": 1,
+            "unit": "tl",
+            "item": "sokeria"
+          },
+          {
+            "amount": 0.5,
+            "unit": "tl",
+            "item": "suolaa"
+          },
+          {
+            "amount": 1,
+            "unit": "rkl",
+            "item": "soijakastiketta"
+          },
+          {
+            "amount": 1,
+            "unit": "kpl",
+            "item": "kevätsipulia",
+            "note": "viipaleina"
+          },
+          {
+            "amount": 450,
+            "unit": "g",
+            "item": "keitettyä riisiä",
+            "note": "tarjoiluun"
+          }
+        ],
+        "priorCommit": "b8ece7ee1e4b80fc26abeb9b94944514875188d7",
+        "priorPack": "gk80-release-8",
+        "preparationBase": [
+          "Käytä 450 g kuumaa valkoista jasmiini- tai basmatiriisiä kypsänä punnittuna. Skenaariot pidetään erillisinä.",
+          "Kypsennä kaikki munat öljyssä. Lisää tomaatti, sokeri ja soijakastike. Hauduta kunnes munat ovat kypsiä.",
+          "Lisää kevätsipuli. Jaa koko pannullinen kastikkeineen sekä riisi kolmeen annokseen."
+        ],
+        "bindingVersionNotes": "Named hot jasmine and hot basmati alternatives; generic cooked rice composition remains an explicitly LOW composition proxy. Cooked rice is included. Rapeseed oil 27 g; soy sauce 15 g is omitted at 0.475 g A/serving, never assigned lowcho50 outside its scope.",
+        "weighedIngredients": [
+          {
+            "name": "kuoretonta kananmunaa",
+            "grams": 220,
+            "fineliRecordId": "op141-fineli-858",
+            "giRecordId": "op141-lowcho50-r4",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "lowcho-code",
+            "preparationKey": "op141-lowcho50-r4",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Named hot jasmine and hot basmati alternatives; generic cooked rice composition remains an explicitly LOW composition proxy. Cooked rice is included. Rapeseed oil 27 g; soy sauce 15 g is omitted at 0.475 g A/serving, never assigned lowcho50 outside its scope."
+          },
+          {
+            "name": "kypsää tomaattia",
+            "grams": 500,
+            "fineliRecordId": "op141-fineli-352",
+            "giRecordId": "op141-vegetable-imputation40",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "low-carb-vegetable",
+            "preparationKey": "op141-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Named hot jasmine and hot basmati alternatives; generic cooked rice composition remains an explicitly LOW composition proxy. Cooked rice is included. Rapeseed oil 27 g; soy sauce 15 g is omitted at 0.475 g A/serving, never assigned lowcho50 outside its scope."
+          },
+          {
+            "name": "neutraalia öljyä",
+            "grams": 27.0,
+            "fineliRecordId": "op141-fineli-535",
+            "giRecordId": null,
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes."
+          },
+          {
+            "name": "sokeria",
+            "grams": 4,
+            "fineliRecordId": "op141-fineli-1",
+            "giRecordId": "op141-sucrose60",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "sucrose",
+            "preparationKey": "op141-sucrose60",
+            "giMatchEvidence": "Specific human comparator, explicit LOW preparation/food application. Named hot jasmine and hot basmati alternatives; generic cooked rice composition remains an explicitly LOW composition proxy. Cooked rice is included. Rapeseed oil 27 g; soy sauce 15 g is omitted at 0.475 g A/serving, never assigned lowcho50 outside its scope."
+          },
+          {
+            "name": "suolaa",
+            "grams": null,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Explicit pure salt",
+            "estimatedAvailableCarbohydratePerServingG": 0,
+            "negligibleAssumption": "Pure salt, no carbohydrate. Unknown salt mass remains null."
+          },
+          {
+            "name": "kaupallista soijakastiketta (AFCD F008065 -koostumusvertailu)",
+            "grams": 15,
+            "fineliRecordId": "op141-fineli-31",
+            "giRecordId": null,
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "giMatchEvidence": "No matching GI; source-known Fineli CHOAVL 0.475g/serving is counted in cumulative omission; not zero. CHOAVL already excludes polyols."
+          },
+          {
+            "name": "kevätsipulia",
+            "grams": 15,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Source-backed source-total ceiling under existing GK omission rule.",
+            "availableCarbohydrateUpperBoundPerServingG": 0.367,
+            "upperBoundEvidence": "USDA SR Legacy2018 FDC170005 Onions, spring or scallions (includes tops and bulb), raw; nutrient1005 totalCHO 7.34g/100g; retained 15g/3servings. No fibre/polyol subtraction. Nominal source-model ceiling only; not a clinical or lot maximum."
+          },
+          {
+            "name": "keitettyä riisiä",
+            "grams": 450,
+            "fineliRecordId": "op141-fineli-1370",
+            "giRecordId": "op141-rice-jasmine68",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "rice-grain",
+            "preparationKey": "op141-rice-jasmine68",
+            "giMatchEvidence": "Specific human comparator, explicit LOW preparation/food application. Named hot jasmine and hot basmati alternatives; generic cooked rice composition remains an explicitly LOW composition proxy. Cooked rice is included. Rapeseed oil 27 g; soy sauce 15 g is omitted at 0.475 g A/serving, never assigned lowcho50 outside its scope."
+          }
+        ],
+        "servings": 3,
+        "ownerApproved": false,
+        "publicationAuthorized": false,
+        "macrosRecalculated": false,
+        "methodChange": false
+      },
+      "versionSha256": "4311603f27050acf282a2cf1405c402a213e2c1d1b131f162f56c683641101e2",
+      "ingredientEvidence": [
+        {
+          "index": 0,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "858",
+          "massG": 220,
+          "choPer100g": 0.3,
+          "aggregatePolyols": 0.0,
+          "fibre": 0.0,
+          "giSourceId": "op141-lowcho50-r4",
+          "omitted": false
+        },
+        {
+          "index": 1,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "352",
+          "massG": 500,
+          "choPer100g": 3.45,
+          "aggregatePolyols": 0.0,
+          "fibre": 0.4,
+          "giSourceId": "op141-vegetable-imputation40",
+          "omitted": false
+        },
+        {
+          "index": 2,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "535",
+          "massG": 27.0,
+          "choPer100g": 0.0,
+          "aggregatePolyols": 0.0,
+          "fibre": 0.0,
+          "giSourceId": null,
+          "omitted": false
+        },
+        {
+          "index": 3,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "1",
+          "massG": 4,
+          "choPer100g": 99.9,
+          "aggregatePolyols": 0.0,
+          "fibre": 0.0,
+          "giSourceId": "op141-sucrose60",
+          "omitted": false
+        },
+        {
+          "index": 5,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "31",
+          "massG": 15,
+          "choPer100g": 9.5,
+          "aggregatePolyols": 0.0,
+          "fibre": 0.0,
+          "giSourceId": null,
+          "omitted": true
+        },
+        {
+          "index": 6,
+          "kind": "USDA_TOTAL_CEILING",
+          "source": {
+            "key": "spring_onion",
+            "fdc_id": "170005",
+            "data_type": "sr_legacy_food",
+            "description": "Onions, spring or scallions (includes tops and bulb), raw",
+            "food_category_id": "11",
+            "publication_date": "2019-04-01",
+            "nutrients": {
+              "2000": {
+                "id": "1487060",
+                "fdc_id": "170005",
+                "nutrient_id": "2000",
+                "amount": "2.33",
+                "data_points": "0",
+                "derivation_id": "16",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1004": {
+                "id": "1487091",
+                "fdc_id": "170005",
+                "nutrient_id": "1004",
+                "amount": "0.19",
+                "data_points": "3",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1003": {
+                "id": "1487114",
+                "fdc_id": "170005",
+                "nutrient_id": "1003",
+                "amount": "1.83",
+                "data_points": "3",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1079": {
+                "id": "1487120",
+                "fdc_id": "170005",
+                "nutrient_id": "1079",
+                "amount": "2.6",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1005": {
+                "id": "1487141",
+                "fdc_id": "170005",
+                "nutrient_id": "1005",
+                "amount": "7.34",
+                "data_points": "0",
+                "derivation_id": "49",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              }
+            },
+            "portions": [
+              {
+                "id": "85878",
+                "fdc_id": "170005",
+                "seq_num": "1",
+                "amount": "1",
+                "measure_unit_id": "9999",
+                "portion_description": "",
+                "modifier": "cup, chopped",
+                "gram_weight": "100",
+                "data_points": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              {
+                "id": "85879",
+                "fdc_id": "170005",
+                "seq_num": "2",
+                "amount": "1",
+                "measure_unit_id": "9999",
+                "portion_description": "",
+                "modifier": "tbsp chopped",
+                "gram_weight": "6",
+                "data_points": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              {
+                "id": "85880",
+                "fdc_id": "170005",
+                "seq_num": "3",
+                "amount": "1",
+                "measure_unit_id": "9999",
+                "portion_description": "",
+                "modifier": "large",
+                "gram_weight": "25",
+                "data_points": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              {
+                "id": "85881",
+                "fdc_id": "170005",
+                "seq_num": "4",
+                "amount": "1",
+                "measure_unit_id": "9999",
+                "portion_description": "",
+                "modifier": "medium (4-1/8\" long)",
+                "gram_weight": "15",
+                "data_points": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              {
+                "id": "85882",
+                "fdc_id": "170005",
+                "seq_num": "5",
+                "amount": "1",
+                "measure_unit_id": "9999",
+                "portion_description": "",
+                "modifier": "small (3\" long)",
+                "gram_weight": "5",
+                "data_points": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              }
+            ]
+          },
+          "massG": 15,
+          "availableUpperPerServingG": "0.367",
+          "aggregatePolyols": null
+        },
+        {
+          "index": 7,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "1370",
+          "massG": 450,
+          "choPer100g": 20.618,
+          "aggregatePolyols": 0.0,
+          "fibre": 0.627,
+          "giSourceId": "op141-rice-jasmine68",
+          "omitted": false
+        }
+      ],
+      "expectedOmittedPerServingG": "0.842",
+      "evidenceBundleSha256": "8105d794f8c023b46f5fa8cd1f70f4fe6981a155be6133565912e1ce429e1f13"
+    },
+    {
+      "scenarioId": "hot-basmati-rice",
+      "input": {
+        "recipeId": "tomaatti-kananmuna-wokki",
+        "servings": 3,
+        "ingredients": [
+          {
+            "name": "kuoretonta kananmunaa",
+            "grams": 220,
+            "fineliRecordId": "op141-fineli-858",
+            "giRecordId": "op141-lowcho50-r4",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "lowcho-code",
+            "preparationKey": "op141-lowcho50-r4",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Named hot jasmine and hot basmati alternatives; generic cooked rice composition remains an explicitly LOW composition proxy. Cooked rice is included. Rapeseed oil 27 g; soy sauce 15 g is omitted at 0.475 g A/serving, never assigned lowcho50 outside its scope."
+          },
+          {
+            "name": "kypsää tomaattia",
+            "grams": 500,
+            "fineliRecordId": "op141-fineli-352",
+            "giRecordId": "op141-vegetable-imputation40",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "low-carb-vegetable",
+            "preparationKey": "op141-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Named hot jasmine and hot basmati alternatives; generic cooked rice composition remains an explicitly LOW composition proxy. Cooked rice is included. Rapeseed oil 27 g; soy sauce 15 g is omitted at 0.475 g A/serving, never assigned lowcho50 outside its scope."
+          },
+          {
+            "name": "neutraalia öljyä",
+            "grams": 27.0,
+            "fineliRecordId": "op141-fineli-535",
+            "giRecordId": null,
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes."
+          },
+          {
+            "name": "sokeria",
+            "grams": 4,
+            "fineliRecordId": "op141-fineli-1",
+            "giRecordId": "op141-sucrose60",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "sucrose",
+            "preparationKey": "op141-sucrose60",
+            "giMatchEvidence": "Specific human comparator, explicit LOW preparation/food application. Named hot jasmine and hot basmati alternatives; generic cooked rice composition remains an explicitly LOW composition proxy. Cooked rice is included. Rapeseed oil 27 g; soy sauce 15 g is omitted at 0.475 g A/serving, never assigned lowcho50 outside its scope."
+          },
+          {
+            "name": "suolaa",
+            "grams": null,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Explicit pure salt",
+            "estimatedAvailableCarbohydratePerServingG": 0,
+            "negligibleAssumption": "Pure salt, no carbohydrate. Unknown salt mass remains null."
+          },
+          {
+            "name": "kaupallista soijakastiketta (AFCD F008065 -koostumusvertailu)",
+            "grams": 15,
+            "fineliRecordId": "op141-fineli-31",
+            "giRecordId": null,
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "giMatchEvidence": "No matching GI; source-known Fineli CHOAVL 0.475g/serving is counted in cumulative omission; not zero. CHOAVL already excludes polyols."
+          },
+          {
+            "name": "kevätsipulia",
+            "grams": 15,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Source-backed source-total ceiling under existing GK omission rule.",
+            "availableCarbohydrateUpperBoundPerServingG": 0.367,
+            "upperBoundEvidence": "USDA SR Legacy2018 FDC170005 Onions, spring or scallions (includes tops and bulb), raw; nutrient1005 totalCHO 7.34g/100g; retained 15g/3servings. No fibre/polyol subtraction. Nominal source-model ceiling only; not a clinical or lot maximum."
+          },
+          {
+            "name": "keitettyä riisiä",
+            "grams": 450,
+            "fineliRecordId": "op141-fineli-1370",
+            "giRecordId": "op141-rice-basmati57",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "rice-grain",
+            "preparationKey": "op141-rice-basmati57",
+            "giMatchEvidence": "Specific human comparator, explicit LOW preparation/food application. Named hot jasmine and hot basmati alternatives; generic cooked rice composition remains an explicitly LOW composition proxy. Cooked rice is included. Rapeseed oil 27 g; soy sauce 15 g is omitted at 0.475 g A/serving, never assigned lowcho50 outside its scope."
+          }
+        ]
+      },
+      "modelInputSha256": "b241d8f3888466e36da328efdea91060d48c59784074976dca2e52ac06f36abc",
+      "version": {
+        "recipeId": "tomaatti-kananmuna-wokki",
+        "scenarioId": "hot-basmati-rice",
+        "publishedPath": "reseptit/paaruoat/tomaatti-kananmuna-wokki.md",
+        "publishedSourceLfSha256": "b861fd33f519bc2f7e08760704a25abbbac2ff9dded37fb7614c3fa17e2c7148",
+        "publishedIngredients": [
+          {
+            "amount": 4,
+            "unit": "kpl",
+            "item": "kananmunaa"
+          },
+          {
+            "amount": 4,
+            "unit": "kpl",
+            "item": "kypsää tomaattia",
+            "note": "lohkoina"
+          },
+          {
+            "amount": 2,
+            "unit": "rkl",
+            "item": "neutraalia öljyä"
+          },
+          {
+            "amount": 1,
+            "unit": "tl",
+            "item": "sokeria"
+          },
+          {
+            "amount": 0.5,
+            "unit": "tl",
+            "item": "suolaa"
+          },
+          {
+            "amount": 1,
+            "unit": "rkl",
+            "item": "soijakastiketta"
+          },
+          {
+            "amount": 1,
+            "unit": "kpl",
+            "item": "kevätsipulia",
+            "note": "viipaleina"
+          },
+          {
+            "amount": 450,
+            "unit": "g",
+            "item": "keitettyä riisiä",
+            "note": "tarjoiluun"
+          }
+        ],
+        "priorCommit": "b8ece7ee1e4b80fc26abeb9b94944514875188d7",
+        "priorPack": "gk80-release-8",
+        "preparationBase": [
+          "Käytä 450 g kuumaa valkoista jasmiini- tai basmatiriisiä kypsänä punnittuna. Skenaariot pidetään erillisinä.",
+          "Kypsennä kaikki munat öljyssä. Lisää tomaatti, sokeri ja soijakastike. Hauduta kunnes munat ovat kypsiä.",
+          "Lisää kevätsipuli. Jaa koko pannullinen kastikkeineen sekä riisi kolmeen annokseen."
+        ],
+        "bindingVersionNotes": "Named hot jasmine and hot basmati alternatives; generic cooked rice composition remains an explicitly LOW composition proxy. Cooked rice is included. Rapeseed oil 27 g; soy sauce 15 g is omitted at 0.475 g A/serving, never assigned lowcho50 outside its scope.",
+        "weighedIngredients": [
+          {
+            "name": "kuoretonta kananmunaa",
+            "grams": 220,
+            "fineliRecordId": "op141-fineli-858",
+            "giRecordId": "op141-lowcho50-r4",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "lowcho-code",
+            "preparationKey": "op141-lowcho50-r4",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Named hot jasmine and hot basmati alternatives; generic cooked rice composition remains an explicitly LOW composition proxy. Cooked rice is included. Rapeseed oil 27 g; soy sauce 15 g is omitted at 0.475 g A/serving, never assigned lowcho50 outside its scope."
+          },
+          {
+            "name": "kypsää tomaattia",
+            "grams": 500,
+            "fineliRecordId": "op141-fineli-352",
+            "giRecordId": "op141-vegetable-imputation40",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "low-carb-vegetable",
+            "preparationKey": "op141-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Named hot jasmine and hot basmati alternatives; generic cooked rice composition remains an explicitly LOW composition proxy. Cooked rice is included. Rapeseed oil 27 g; soy sauce 15 g is omitted at 0.475 g A/serving, never assigned lowcho50 outside its scope."
+          },
+          {
+            "name": "neutraalia öljyä",
+            "grams": 27.0,
+            "fineliRecordId": "op141-fineli-535",
+            "giRecordId": null,
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes."
+          },
+          {
+            "name": "sokeria",
+            "grams": 4,
+            "fineliRecordId": "op141-fineli-1",
+            "giRecordId": "op141-sucrose60",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "sucrose",
+            "preparationKey": "op141-sucrose60",
+            "giMatchEvidence": "Specific human comparator, explicit LOW preparation/food application. Named hot jasmine and hot basmati alternatives; generic cooked rice composition remains an explicitly LOW composition proxy. Cooked rice is included. Rapeseed oil 27 g; soy sauce 15 g is omitted at 0.475 g A/serving, never assigned lowcho50 outside its scope."
+          },
+          {
+            "name": "suolaa",
+            "grams": null,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Explicit pure salt",
+            "estimatedAvailableCarbohydratePerServingG": 0,
+            "negligibleAssumption": "Pure salt, no carbohydrate. Unknown salt mass remains null."
+          },
+          {
+            "name": "kaupallista soijakastiketta (AFCD F008065 -koostumusvertailu)",
+            "grams": 15,
+            "fineliRecordId": "op141-fineli-31",
+            "giRecordId": null,
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "giMatchEvidence": "No matching GI; source-known Fineli CHOAVL 0.475g/serving is counted in cumulative omission; not zero. CHOAVL already excludes polyols."
+          },
+          {
+            "name": "kevätsipulia",
+            "grams": 15,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Source-backed source-total ceiling under existing GK omission rule.",
+            "availableCarbohydrateUpperBoundPerServingG": 0.367,
+            "upperBoundEvidence": "USDA SR Legacy2018 FDC170005 Onions, spring or scallions (includes tops and bulb), raw; nutrient1005 totalCHO 7.34g/100g; retained 15g/3servings. No fibre/polyol subtraction. Nominal source-model ceiling only; not a clinical or lot maximum."
+          },
+          {
+            "name": "keitettyä riisiä",
+            "grams": 450,
+            "fineliRecordId": "op141-fineli-1370",
+            "giRecordId": "op141-rice-basmati57",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "rice-grain",
+            "preparationKey": "op141-rice-basmati57",
+            "giMatchEvidence": "Specific human comparator, explicit LOW preparation/food application. Named hot jasmine and hot basmati alternatives; generic cooked rice composition remains an explicitly LOW composition proxy. Cooked rice is included. Rapeseed oil 27 g; soy sauce 15 g is omitted at 0.475 g A/serving, never assigned lowcho50 outside its scope."
+          }
+        ],
+        "servings": 3,
+        "ownerApproved": false,
+        "publicationAuthorized": false,
+        "macrosRecalculated": false,
+        "methodChange": false
+      },
+      "versionSha256": "e6b4274915d3f5ef1862e5636779c55c3c94c9543a01c456d6477c540afe853d",
+      "ingredientEvidence": [
+        {
+          "index": 0,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "858",
+          "massG": 220,
+          "choPer100g": 0.3,
+          "aggregatePolyols": 0.0,
+          "fibre": 0.0,
+          "giSourceId": "op141-lowcho50-r4",
+          "omitted": false
+        },
+        {
+          "index": 1,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "352",
+          "massG": 500,
+          "choPer100g": 3.45,
+          "aggregatePolyols": 0.0,
+          "fibre": 0.4,
+          "giSourceId": "op141-vegetable-imputation40",
+          "omitted": false
+        },
+        {
+          "index": 2,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "535",
+          "massG": 27.0,
+          "choPer100g": 0.0,
+          "aggregatePolyols": 0.0,
+          "fibre": 0.0,
+          "giSourceId": null,
+          "omitted": false
+        },
+        {
+          "index": 3,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "1",
+          "massG": 4,
+          "choPer100g": 99.9,
+          "aggregatePolyols": 0.0,
+          "fibre": 0.0,
+          "giSourceId": "op141-sucrose60",
+          "omitted": false
+        },
+        {
+          "index": 5,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "31",
+          "massG": 15,
+          "choPer100g": 9.5,
+          "aggregatePolyols": 0.0,
+          "fibre": 0.0,
+          "giSourceId": null,
+          "omitted": true
+        },
+        {
+          "index": 6,
+          "kind": "USDA_TOTAL_CEILING",
+          "source": {
+            "key": "spring_onion",
+            "fdc_id": "170005",
+            "data_type": "sr_legacy_food",
+            "description": "Onions, spring or scallions (includes tops and bulb), raw",
+            "food_category_id": "11",
+            "publication_date": "2019-04-01",
+            "nutrients": {
+              "2000": {
+                "id": "1487060",
+                "fdc_id": "170005",
+                "nutrient_id": "2000",
+                "amount": "2.33",
+                "data_points": "0",
+                "derivation_id": "16",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1004": {
+                "id": "1487091",
+                "fdc_id": "170005",
+                "nutrient_id": "1004",
+                "amount": "0.19",
+                "data_points": "3",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1003": {
+                "id": "1487114",
+                "fdc_id": "170005",
+                "nutrient_id": "1003",
+                "amount": "1.83",
+                "data_points": "3",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1079": {
+                "id": "1487120",
+                "fdc_id": "170005",
+                "nutrient_id": "1079",
+                "amount": "2.6",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1005": {
+                "id": "1487141",
+                "fdc_id": "170005",
+                "nutrient_id": "1005",
+                "amount": "7.34",
+                "data_points": "0",
+                "derivation_id": "49",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              }
+            },
+            "portions": [
+              {
+                "id": "85878",
+                "fdc_id": "170005",
+                "seq_num": "1",
+                "amount": "1",
+                "measure_unit_id": "9999",
+                "portion_description": "",
+                "modifier": "cup, chopped",
+                "gram_weight": "100",
+                "data_points": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              {
+                "id": "85879",
+                "fdc_id": "170005",
+                "seq_num": "2",
+                "amount": "1",
+                "measure_unit_id": "9999",
+                "portion_description": "",
+                "modifier": "tbsp chopped",
+                "gram_weight": "6",
+                "data_points": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              {
+                "id": "85880",
+                "fdc_id": "170005",
+                "seq_num": "3",
+                "amount": "1",
+                "measure_unit_id": "9999",
+                "portion_description": "",
+                "modifier": "large",
+                "gram_weight": "25",
+                "data_points": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              {
+                "id": "85881",
+                "fdc_id": "170005",
+                "seq_num": "4",
+                "amount": "1",
+                "measure_unit_id": "9999",
+                "portion_description": "",
+                "modifier": "medium (4-1/8\" long)",
+                "gram_weight": "15",
+                "data_points": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              {
+                "id": "85882",
+                "fdc_id": "170005",
+                "seq_num": "5",
+                "amount": "1",
+                "measure_unit_id": "9999",
+                "portion_description": "",
+                "modifier": "small (3\" long)",
+                "gram_weight": "5",
+                "data_points": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              }
+            ]
+          },
+          "massG": 15,
+          "availableUpperPerServingG": "0.367",
+          "aggregatePolyols": null
+        },
+        {
+          "index": 7,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "1370",
+          "massG": 450,
+          "choPer100g": 20.618,
+          "aggregatePolyols": 0.0,
+          "fibre": 0.627,
+          "giSourceId": "op141-rice-basmati57",
+          "omitted": false
+        }
+      ],
+      "expectedOmittedPerServingG": "0.842",
+      "evidenceBundleSha256": "46f04e69d293802897fc5ca31bbf38f37554c8604dcdad8babe90fb80728dee8"
+    },
+    {
+      "scenarioId": "defined-weighed-hot-version",
+      "input": {
+        "recipeId": "shakshuka",
+        "servings": 2,
+        "ingredients": [
+          {
+            "name": "kuoretonta kananmunaa",
+            "grams": 220,
+            "fineliRecordId": "op141-fineli-858",
+            "giRecordId": "op141-lowcho50-r4",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "lowcho-code",
+            "preparationKey": "op141-lowcho50-r4",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Mild plain paprika version including the separately weighed 0.3 g paprika in place of undefined chilli. Cumin freshly ground whole seed. No bread."
+          },
+          {
+            "name": "punaista paprikaa",
+            "grams": 120,
+            "fineliRecordId": "op141-fineli-386",
+            "giRecordId": "op141-vegetable-imputation40",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "low-carb-vegetable",
+            "preparationKey": "op141-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Mild plain paprika version including the separately weighed 0.3 g paprika in place of undefined chilli. Cumin freshly ground whole seed. No bread."
+          },
+          {
+            "name": "sipulia",
+            "grams": 70,
+            "fineliRecordId": "op141-fineli-335",
+            "giRecordId": "op141-vegetable-imputation40",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "low-carb-vegetable",
+            "preparationKey": "op141-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Mild plain paprika version including the separately weighed 0.3 g paprika in place of undefined chilli. Cumin freshly ground whole seed. No bread."
+          },
+          {
+            "name": "tomaattimurskaa",
+            "grams": 200,
+            "fineliRecordId": "op141-fineli-398",
+            "giRecordId": "op141-vegetable-imputation40",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "low-carb-vegetable",
+            "preparationKey": "op141-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Mild plain paprika version including the separately weighed 0.3 g paprika in place of undefined chilli. Cumin freshly ground whole seed. No bread."
+          },
+          {
+            "name": "oliiviöljyä",
+            "grams": 13.5,
+            "fineliRecordId": "op141-fineli-536",
+            "giRecordId": null,
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes."
+          },
+          {
+            "name": "juustokuminaa",
+            "grams": 2,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Source-backed source-total ceiling under existing GK omission rule.",
+            "availableCarbohydrateUpperBoundPerServingG": 0.4424,
+            "upperBoundEvidence": "USDA SR Legacy2018 FDC170923 Spices, cumin seed; nutrient1005 totalCHO 44.24g/100g; retained 2g/2servings. No fibre/polyol subtraction. Nominal source-model ceiling only; not a clinical or lot maximum."
+          },
+          {
+            "name": "paprikajauhetta",
+            "grams": 1,
+            "fineliRecordId": "op141-fineli-11182",
+            "giRecordId": null,
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "giMatchEvidence": "No matching GI; source-known Fineli CHOAVL 0.0917g/serving is counted in cumulative omission; not zero. CHOAVL already excludes polyols."
+          },
+          {
+            "name": "jauhettua mustapippuria",
+            "grams": 0.5,
+            "fineliRecordId": "op141-fineli-11177",
+            "giRecordId": null,
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "giMatchEvidence": "No matching GI; source-known Fineli CHOAVL 0.095775g/serving is counted in cumulative omission; not zero. CHOAVL already excludes polyols."
+          },
+          {
+            "name": "jauhettua paprikaa chilin sijasta",
+            "grams": 0.3,
+            "fineliRecordId": "op141-fineli-11182",
+            "giRecordId": null,
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "giMatchEvidence": "No matching GI; source-known Fineli CHOAVL 0.02751g/serving is counted in cumulative omission; not zero. CHOAVL already excludes polyols."
+          },
+          {
+            "name": "tuoretta persiljaa",
+            "grams": 8,
+            "fineliRecordId": "op141-fineli-333",
+            "giRecordId": "op141-vegetable-imputation40",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "low-carb-vegetable",
+            "preparationKey": "op141-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Mild plain paprika version including the separately weighed 0.3 g paprika in place of undefined chilli. Cumin freshly ground whole seed. No bread."
+          },
+          {
+            "name": "suolaa",
+            "grams": null,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Explicit pure salt",
+            "estimatedAvailableCarbohydratePerServingG": 0,
+            "negligibleAssumption": "Pure salt, no carbohydrate. Unknown salt mass remains null."
+          }
+        ]
+      },
+      "modelInputSha256": "fd93f73e007593a49b5f704d54bc1aebafcf7df75702045efe33511180c508a2",
+      "version": {
+        "recipeId": "shakshuka",
+        "scenarioId": "defined-weighed-hot-version",
+        "publishedPath": "reseptit/aamupalat/shakshuka.md",
+        "publishedSourceLfSha256": "5019bfa878de6b3b11c639f2b06a469a9a07c06d12fc8bc3b075a7f1f5b1755c",
+        "publishedIngredients": [
+          {
+            "amount": 4,
+            "unit": "kpl",
+            "item": "kananmunaa"
+          },
+          {
+            "amount": 1,
+            "unit": "kpl",
+            "item": "punainen paprika"
+          },
+          {
+            "amount": 1,
+            "unit": "kpl",
+            "item": "pieni sipuli"
+          },
+          {
+            "amount": 200,
+            "unit": "g",
+            "item": "tomaattimurskaa"
+          },
+          {
+            "amount": 1,
+            "unit": "rkl",
+            "item": "oliiviöljyä"
+          },
+          {
+            "amount": 1,
+            "unit": "tl",
+            "item": "juustokuminaa"
+          },
+          {
+            "amount": 0.5,
+            "unit": "tl",
+            "item": "savupaprikaa"
+          },
+          {
+            "amount": null,
+            "unit": "",
+            "item": "suolaa, mustapippuria ja chilihiutaleita"
+          },
+          {
+            "amount": 2,
+            "unit": "rkl",
+            "item": "silputtua persiljaa"
+          }
+        ],
+        "priorCommit": "b8ece7ee1e4b80fc26abeb9b94944514875188d7",
+        "priorPack": "gk80-release-8",
+        "preparationBase": [
+          "Kuullota 70 g sipulia ja 120 g punaista paprikaa 13,5 g öljyssä. Lisää 200 g tomaattimurskaa, 2 g juustokuminaa ja yhteensä 1,3 g jauhettua paprikaa. Hauduta 10 min.",
+          "Tee kastikkeeseen syvennykset ja kypsennä 220 g kuoretonta munaa kannen alla. Lisää 8 g persiljaa ja 0,5 g mustapippuria.",
+          "Jaa koko pannu kahteen annokseen. Tämä mieto paprikaversio korvaa avoimen chilihiutaleannoksen."
+        ],
+        "bindingVersionNotes": "Mild plain paprika version including the separately weighed 0.3 g paprika in place of undefined chilli. Cumin freshly ground whole seed. No bread.",
+        "weighedIngredients": [
+          {
+            "name": "kuoretonta kananmunaa",
+            "grams": 220,
+            "fineliRecordId": "op141-fineli-858",
+            "giRecordId": "op141-lowcho50-r4",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "lowcho-code",
+            "preparationKey": "op141-lowcho50-r4",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Mild plain paprika version including the separately weighed 0.3 g paprika in place of undefined chilli. Cumin freshly ground whole seed. No bread."
+          },
+          {
+            "name": "punaista paprikaa",
+            "grams": 120,
+            "fineliRecordId": "op141-fineli-386",
+            "giRecordId": "op141-vegetable-imputation40",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "low-carb-vegetable",
+            "preparationKey": "op141-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Mild plain paprika version including the separately weighed 0.3 g paprika in place of undefined chilli. Cumin freshly ground whole seed. No bread."
+          },
+          {
+            "name": "sipulia",
+            "grams": 70,
+            "fineliRecordId": "op141-fineli-335",
+            "giRecordId": "op141-vegetable-imputation40",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "low-carb-vegetable",
+            "preparationKey": "op141-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Mild plain paprika version including the separately weighed 0.3 g paprika in place of undefined chilli. Cumin freshly ground whole seed. No bread."
+          },
+          {
+            "name": "tomaattimurskaa",
+            "grams": 200,
+            "fineliRecordId": "op141-fineli-398",
+            "giRecordId": "op141-vegetable-imputation40",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "low-carb-vegetable",
+            "preparationKey": "op141-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Mild plain paprika version including the separately weighed 0.3 g paprika in place of undefined chilli. Cumin freshly ground whole seed. No bread."
+          },
+          {
+            "name": "oliiviöljyä",
+            "grams": 13.5,
+            "fineliRecordId": "op141-fineli-536",
+            "giRecordId": null,
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes."
+          },
+          {
+            "name": "juustokuminaa",
+            "grams": 2,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Source-backed source-total ceiling under existing GK omission rule.",
+            "availableCarbohydrateUpperBoundPerServingG": 0.4424,
+            "upperBoundEvidence": "USDA SR Legacy2018 FDC170923 Spices, cumin seed; nutrient1005 totalCHO 44.24g/100g; retained 2g/2servings. No fibre/polyol subtraction. Nominal source-model ceiling only; not a clinical or lot maximum."
+          },
+          {
+            "name": "paprikajauhetta",
+            "grams": 1,
+            "fineliRecordId": "op141-fineli-11182",
+            "giRecordId": null,
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "giMatchEvidence": "No matching GI; source-known Fineli CHOAVL 0.0917g/serving is counted in cumulative omission; not zero. CHOAVL already excludes polyols."
+          },
+          {
+            "name": "jauhettua mustapippuria",
+            "grams": 0.5,
+            "fineliRecordId": "op141-fineli-11177",
+            "giRecordId": null,
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "giMatchEvidence": "No matching GI; source-known Fineli CHOAVL 0.095775g/serving is counted in cumulative omission; not zero. CHOAVL already excludes polyols."
+          },
+          {
+            "name": "jauhettua paprikaa chilin sijasta",
+            "grams": 0.3,
+            "fineliRecordId": "op141-fineli-11182",
+            "giRecordId": null,
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "giMatchEvidence": "No matching GI; source-known Fineli CHOAVL 0.02751g/serving is counted in cumulative omission; not zero. CHOAVL already excludes polyols."
+          },
+          {
+            "name": "tuoretta persiljaa",
+            "grams": 8,
+            "fineliRecordId": "op141-fineli-333",
+            "giRecordId": "op141-vegetable-imputation40",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "low-carb-vegetable",
+            "preparationKey": "op141-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Mild plain paprika version including the separately weighed 0.3 g paprika in place of undefined chilli. Cumin freshly ground whole seed. No bread."
+          },
+          {
+            "name": "suolaa",
+            "grams": null,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Explicit pure salt",
+            "estimatedAvailableCarbohydratePerServingG": 0,
+            "negligibleAssumption": "Pure salt, no carbohydrate. Unknown salt mass remains null."
+          }
+        ],
+        "servings": 2,
+        "ownerApproved": false,
+        "publicationAuthorized": false,
+        "macrosRecalculated": false,
+        "methodChange": false
+      },
+      "versionSha256": "43ec5fdc6334e48629a4d0a1309b5a454856a245dc034be3716525928bc921e9",
+      "ingredientEvidence": [
+        {
+          "index": 0,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "858",
+          "massG": 220,
+          "choPer100g": 0.3,
+          "aggregatePolyols": 0.0,
+          "fibre": 0.0,
+          "giSourceId": "op141-lowcho50-r4",
+          "omitted": false
+        },
+        {
+          "index": 1,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "386",
+          "massG": 120,
+          "choPer100g": 4.5,
+          "aggregatePolyols": 0.0,
+          "fibre": 1.9,
+          "giSourceId": "op141-vegetable-imputation40",
+          "omitted": false
+        },
+        {
+          "index": 2,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "335",
+          "massG": 70,
+          "choPer100g": 4.8,
+          "aggregatePolyols": 0.0,
+          "fibre": 1.2,
+          "giSourceId": "op141-vegetable-imputation40",
+          "omitted": false
+        },
+        {
+          "index": 3,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "398",
+          "massG": 200,
+          "choPer100g": 3.45,
+          "aggregatePolyols": 0.0,
+          "fibre": 0.4,
+          "giSourceId": "op141-vegetable-imputation40",
+          "omitted": false
+        },
+        {
+          "index": 4,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "536",
+          "massG": 13.5,
+          "choPer100g": 0.0,
+          "aggregatePolyols": 0.0,
+          "fibre": 0.0,
+          "giSourceId": null,
+          "omitted": false
+        },
+        {
+          "index": 5,
+          "kind": "USDA_TOTAL_CEILING",
+          "source": {
+            "key": "cumin",
+            "fdc_id": "170923",
+            "data_type": "sr_legacy_food",
+            "description": "Spices, cumin seed",
+            "food_category_id": "2",
+            "publication_date": "2019-04-01",
+            "nutrients": {
+              "1003": {
+                "id": "1565769",
+                "fdc_id": "170923",
+                "nutrient_id": "1003",
+                "amount": "17.81",
+                "data_points": "12",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1079": {
+                "id": "1565771",
+                "fdc_id": "170923",
+                "nutrient_id": "1079",
+                "amount": "10.5",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1004": {
+                "id": "1565785",
+                "fdc_id": "170923",
+                "nutrient_id": "1004",
+                "amount": "22.27",
+                "data_points": "13",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1005": {
+                "id": "1565786",
+                "fdc_id": "170923",
+                "nutrient_id": "1005",
+                "amount": "44.24",
+                "data_points": "0",
+                "derivation_id": "49",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "2000": {
+                "id": "1565823",
+                "fdc_id": "170923",
+                "nutrient_id": "2000",
+                "amount": "2.25",
+                "data_points": "1",
+                "derivation_id": "1",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              }
+            },
+            "portions": [
+              {
+                "id": "87544",
+                "fdc_id": "170923",
+                "seq_num": "1",
+                "amount": "1",
+                "measure_unit_id": "9999",
+                "portion_description": "",
+                "modifier": "tsp, whole",
+                "gram_weight": "2.1",
+                "data_points": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              {
+                "id": "87545",
+                "fdc_id": "170923",
+                "seq_num": "2",
+                "amount": "1",
+                "measure_unit_id": "9999",
+                "portion_description": "",
+                "modifier": "tbsp, whole",
+                "gram_weight": "6",
+                "data_points": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              }
+            ]
+          },
+          "massG": 2,
+          "availableUpperPerServingG": "0.4424",
+          "aggregatePolyols": null
+        },
+        {
+          "index": 6,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "11182",
+          "massG": 1,
+          "choPer100g": 18.34,
+          "aggregatePolyols": null,
+          "fibre": null,
+          "giSourceId": null,
+          "omitted": true
+        },
+        {
+          "index": 7,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "11177",
+          "massG": 0.5,
+          "choPer100g": 38.31,
+          "aggregatePolyols": null,
+          "fibre": null,
+          "giSourceId": null,
+          "omitted": true
+        },
+        {
+          "index": 8,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "11182",
+          "massG": 0.3,
+          "choPer100g": 18.34,
+          "aggregatePolyols": null,
+          "fibre": null,
+          "giSourceId": null,
+          "omitted": true
+        },
+        {
+          "index": 9,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "333",
+          "massG": 8,
+          "choPer100g": 1.1,
+          "aggregatePolyols": 0.0,
+          "fibre": 2.9,
+          "giSourceId": "op141-vegetable-imputation40",
+          "omitted": false
+        }
+      ],
+      "expectedOmittedPerServingG": "0.657385",
+      "evidenceBundleSha256": "27d1934a26d1839e8616bbad1ff6c8d97bbb06dff4428582ec3323462f3e7274"
+    }
+  ],
+  "holds": [],
+  "foods": [
+    {
+      "id": "op141-fineli-362",
+      "name": "MUNAKOISO",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/362",
+      "retrievedAt": "2026-11-02",
+      "licence": "THL Fineli Release20 CC BY4.0",
+      "state": "RAW",
+      "basis": "per100g-edible",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Explicit source SUGOH",
+      "per100g": {
+        "carbohydrate": 3.1,
+        "fibre": 2.5,
+        "polyols": 0.0,
+        "protein": 0.5,
+        "fat": 0.2
+      },
+      "primaryReference": {
+        "source_id": "362",
+        "name": "MUNAKOISO",
+        "food_type": "FOOD",
+        "process": "RAW",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "VEGFRU",
+        "food_class": "VEGFRESH",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 3.1,
+          "fibre_g_per_100g": 2.5,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 0.5,
+          "fat_g_per_100g": 0.2
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0181"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0123"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "U",
+            "method_indicator": "MIR007"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0172"
+          }
+        },
+        "portion_mass_g": {
+          "KPL_S": 200.0,
+          "KPL_M": 400.0,
+          "KPL_L": 500.0,
+          "DL": 30.0
+        }
+      },
+      "referenceLfSha256": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76"
+    },
+    {
+      "id": "op141-fineli-389",
+      "name": "KESÄKURPITSA, ZUCCHINI",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/389",
+      "retrievedAt": "2026-11-02",
+      "licence": "THL Fineli Release20 CC BY4.0",
+      "state": "RAW",
+      "basis": "per100g-edible",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Explicit source SUGOH",
+      "per100g": {
+        "carbohydrate": 2.5,
+        "fibre": 2.0,
+        "polyols": 0.0,
+        "protein": 0.65,
+        "fat": 0.4
+      },
+      "primaryReference": {
+        "source_id": "389",
+        "name": "KESÄKURPITSA, ZUCCHINI",
+        "food_type": "FOOD",
+        "process": "RAW",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "VEGFRU",
+        "food_class": "VEGFRESH",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 2.5,
+          "fibre_g_per_100g": 2.0,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 0.65,
+          "fat_g_per_100g": 0.4
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0181"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "T",
+            "method_indicator": "MI0123"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "IG",
+            "method_indicator": "MIR003"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0172"
+          }
+        },
+        "portion_mass_g": {
+          "KPL_S": 200.0,
+          "KPL_M": 350.0,
+          "KPL_L": 450.0
+        }
+      },
+      "referenceLfSha256": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76"
+    },
+    {
+      "id": "op141-fineli-386",
+      "name": "PAPRIKA, PUNAINEN",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/386",
+      "retrievedAt": "2026-11-02",
+      "licence": "THL Fineli Release20 CC BY4.0",
+      "state": "RAW",
+      "basis": "per100g-edible",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Explicit source SUGOH",
+      "per100g": {
+        "carbohydrate": 4.5,
+        "fibre": 1.9,
+        "polyols": 0.0,
+        "protein": 0.94,
+        "fat": 0.3
+      },
+      "primaryReference": {
+        "source_id": "386",
+        "name": "PAPRIKA, PUNAINEN",
+        "food_type": "FOOD",
+        "process": "RAW",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "VEGFRU",
+        "food_class": "VEGFRESH",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 4.5,
+          "fibre_g_per_100g": 1.9,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 0.94,
+          "fat_g_per_100g": 0.3
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0181"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0123"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MIR006"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0172"
+          }
+        },
+        "portion_mass_g": {
+          "KPL_S": 120.0,
+          "KPL_M": 170.0,
+          "KPL_L": 230.0
+        }
+      },
+      "referenceLfSha256": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76"
+    },
+    {
+      "id": "op141-fineli-335",
+      "name": "SIPULI, KELTASIPULI",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/335",
+      "retrievedAt": "2026-11-02",
+      "licence": "THL Fineli Release20 CC BY4.0",
+      "state": "RAW",
+      "basis": "per100g-edible",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Explicit source SUGOH",
+      "per100g": {
+        "carbohydrate": 4.8,
+        "fibre": 1.2,
+        "polyols": 0.0,
+        "protein": 1.25,
+        "fat": 0.1
+      },
+      "primaryReference": {
+        "source_id": "335",
+        "name": "SIPULI, KELTASIPULI",
+        "food_type": "FOOD",
+        "process": "RAW",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "VEGONI",
+        "food_class": "VEGFRESH",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 4.8,
+          "fibre_g_per_100g": 1.2,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 1.25,
+          "fat_g_per_100g": 0.1
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0181"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "T",
+            "method_indicator": "MI0123"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MIR006"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0172"
+          }
+        },
+        "portion_mass_g": {
+          "KPL_S": 30.0,
+          "KPL_M": 55.0,
+          "KPL_L": 200.0,
+          "DL": 90.0
+        }
+      },
+      "referenceLfSha256": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76"
+    },
+    {
+      "id": "op141-fineli-393",
+      "name": "VALKOSIPULI",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/393",
+      "retrievedAt": "2026-11-02",
+      "licence": "THL Fineli Release20 CC BY4.0",
+      "state": "RAW",
+      "basis": "per100g-edible",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Explicit source SUGOH",
+      "per100g": {
+        "carbohydrate": 16.3,
+        "fibre": null,
+        "polyols": 0.0,
+        "protein": 7.9,
+        "fat": 0.6
+      },
+      "primaryReference": {
+        "source_id": "393",
+        "name": "VALKOSIPULI",
+        "food_type": "FOOD",
+        "process": "RAW",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "VEGONI",
+        "food_class": "VEGFRESH",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 16.3,
+          "fibre_g_per_100g": null,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 7.9,
+          "fat_g_per_100g": 0.6
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0181"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MIR006"
+          }
+        },
+        "portion_mass_g": {
+          "KPL_M": 3.5
+        }
+      },
+      "referenceLfSha256": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76"
+    },
+    {
+      "id": "op141-fineli-352",
+      "name": "TOMAATTI",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/352",
+      "retrievedAt": "2026-11-02",
+      "licence": "THL Fineli Release20 CC BY4.0",
+      "state": "RAW",
+      "basis": "per100g-edible",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Explicit source SUGOH",
+      "per100g": {
+        "carbohydrate": 3.45,
+        "fibre": 0.4,
+        "polyols": 0.0,
+        "protein": 0.55,
+        "fat": 0.3
+      },
+      "primaryReference": {
+        "source_id": "352",
+        "name": "TOMAATTI",
+        "food_type": "FOOD",
+        "process": "RAW",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "VEGFRU",
+        "food_class": "VEGFRESH",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 3.45,
+          "fibre_g_per_100g": 0.4,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 0.55,
+          "fat_g_per_100g": 0.3
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0181"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "D",
+            "method_type": "AG",
+            "method_indicator": "MI0123"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MIR006"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0172"
+          }
+        },
+        "portion_mass_g": {
+          "KPL_S": 75.0,
+          "KPL_M": 125.0,
+          "KPL_L": 170.0
+        }
+      },
+      "referenceLfSha256": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76"
+    },
+    {
+      "id": "op141-fineli-536",
+      "name": "OLIIVIÖLJY",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/536",
+      "retrievedAt": "2026-11-02",
+      "licence": "THL Fineli Release20 CC BY4.0",
+      "state": "IND",
+      "basis": "per100g-edible",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Explicit source SUGOH",
+      "per100g": {
+        "carbohydrate": 0.0,
+        "fibre": 0.0,
+        "polyols": 0.0,
+        "protein": 0.0,
+        "fat": 100.0
+      },
+      "primaryReference": {
+        "source_id": "536",
+        "name": "OLIIVIÖLJY",
+        "food_type": "FOOD",
+        "process": "IND",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "OIL",
+        "food_class": "OIL",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 0.0,
+          "fibre_g_per_100g": 0.0,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 0.0,
+          "fat_g_per_100g": 100.0
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "IG",
+            "method_indicator": "MIR003"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0123"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "U",
+            "method_indicator": "MIR007"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0172"
+          }
+        },
+        "portion_mass_g": {
+          "DL": 90.0,
+          "RKL": 13.5,
+          "TL": 4.5
+        }
+      },
+      "referenceLfSha256": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76"
+    },
+    {
+      "id": "op141-fineli-11194",
+      "name": "TIMJAMI, KUIVATTU",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11194",
+      "retrievedAt": "2026-11-02",
+      "licence": "THL Fineli Release20 CC BY4.0",
+      "state": "DRIE",
+      "basis": "per100g-edible",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "polyolsSourceVerified": false,
+      "polyolsEvidence": "",
+      "per100g": {
+        "carbohydrate": 26.94,
+        "fibre": null,
+        "polyols": null,
+        "protein": 9.1,
+        "fat": 7.4
+      },
+      "primaryReference": {
+        "source_id": "11194",
+        "name": "TIMJAMI, KUIVATTU",
+        "food_type": "FOOD",
+        "process": "DRIE",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "HERB",
+        "food_class": "SPICES",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 26.94,
+          "fibre_g_per_100g": null,
+          "polyols_g_per_100g": null,
+          "protein_g_per_100g": 9.1,
+          "fat_g_per_100g": 7.4
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          }
+        },
+        "portion_mass_g": {
+          "RKL": 1.5,
+          "TL": 0.5
+        }
+      },
+      "referenceLfSha256": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76"
+    },
+    {
+      "id": "op141-fineli-11177",
+      "name": "MUSTAPIPPURI",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11177",
+      "retrievedAt": "2026-11-02",
+      "licence": "THL Fineli Release20 CC BY4.0",
+      "state": "DRIE",
+      "basis": "per100g-edible",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "polyolsSourceVerified": false,
+      "polyolsEvidence": "",
+      "per100g": {
+        "carbohydrate": 38.31,
+        "fibre": null,
+        "polyols": null,
+        "protein": 10.9,
+        "fat": 3.3
+      },
+      "primaryReference": {
+        "source_id": "11177",
+        "name": "MUSTAPIPPURI",
+        "food_type": "FOOD",
+        "process": "DRIE",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "FLAVSEED",
+        "food_class": "SPICES",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 38.31,
+          "fibre_g_per_100g": null,
+          "polyols_g_per_100g": null,
+          "protein_g_per_100g": 10.9,
+          "fat_g_per_100g": 3.3
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          }
+        },
+        "portion_mass_g": {
+          "RKL": 6.5,
+          "TL": 2.0
+        }
+      },
+      "referenceLfSha256": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76"
+    },
+    {
+      "id": "op141-fineli-11134",
+      "name": "BASILIKA, TUORE",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11134",
+      "retrievedAt": "2026-11-02",
+      "licence": "THL Fineli Release20 CC BY4.0",
+      "state": "RAW",
+      "basis": "per100g-edible",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Explicit source SUGOH",
+      "per100g": {
+        "carbohydrate": 1.06,
+        "fibre": null,
+        "polyols": 0.0,
+        "protein": 3.13,
+        "fat": 0.65
+      },
+      "primaryReference": {
+        "source_id": "11134",
+        "name": "BASILIKA, TUORE",
+        "food_type": "FOOD",
+        "process": "RAW",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "VEGLEAF",
+        "food_class": "VEGFRESH",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 1.06,
+          "fibre_g_per_100g": null,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 3.13,
+          "fat_g_per_100g": 0.65
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "CG",
+            "method_indicator": "MIR003"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0181"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "T",
+            "method_indicator": "MI0123"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "IG",
+            "method_indicator": "MIR003"
+          }
+        },
+        "portion_mass_g": {
+          "DL": 13.0,
+          "RKL": 2.0
+        }
+      },
+      "referenceLfSha256": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76"
+    },
+    {
+      "id": "op141-fineli-11565",
+      "name": "BROILERI, RINTAFILEE, NAHATON, SUIKALE, LEIKE",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11565",
+      "retrievedAt": "2026-11-02",
+      "licence": "THL Fineli Release20 CC BY4.0",
+      "state": "RAW",
+      "basis": "per100g-edible",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Explicit source SUGOH",
+      "per100g": {
+        "carbohydrate": 0.0,
+        "fibre": 0.0,
+        "polyols": 0.0,
+        "protein": 22.44,
+        "fat": 2.01
+      },
+      "primaryReference": {
+        "source_id": "11565",
+        "name": "BROILERI, RINTAFILEE, NAHATON, SUIKALE, LEIKE",
+        "food_type": "FOOD",
+        "process": "RAW",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "POULTRY",
+        "food_class": "POULTRY",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 0.0,
+          "fibre_g_per_100g": 0.0,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 22.44,
+          "fat_g_per_100g": 2.01
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "D",
+            "method_type": "AG",
+            "method_indicator": "MI1302"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "IG",
+            "method_indicator": "MIR003"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "D",
+            "method_type": "AG",
+            "method_indicator": "MI0123"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "U",
+            "method_indicator": "MIR007"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0172"
+          }
+        },
+        "portion_mass_g": {}
+      },
+      "referenceLfSha256": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76"
+    },
+    {
+      "id": "op141-fineli-11689",
+      "name": "PARSA, RAAKA, PUHDISTETTU",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11689",
+      "retrievedAt": "2026-11-02",
+      "licence": "THL Fineli Release20 CC BY4.0",
+      "state": "RAW",
+      "basis": "per100g-edible",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Explicit source SUGOH",
+      "per100g": {
+        "carbohydrate": 2.0,
+        "fibre": 1.7,
+        "polyols": 0.0,
+        "protein": 2.9,
+        "fat": 0.6
+      },
+      "primaryReference": {
+        "source_id": "11689",
+        "name": "PARSA, RAAKA, PUHDISTETTU",
+        "food_type": "FOOD",
+        "process": "RAW",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "VEGLEAF",
+        "food_class": "VEGFRESH",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 2.0,
+          "fibre_g_per_100g": 1.7,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 2.9,
+          "fat_g_per_100g": 0.6
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "IG",
+            "method_indicator": "MIR003"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0172"
+          }
+        },
+        "portion_mass_g": {
+          "KPL_S": 15.0,
+          "KPL_M": 35.0,
+          "KPL_L": 50.0,
+          "DL": 55.0
+        }
+      },
+      "referenceLfSha256": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76"
+    },
+    {
+      "id": "op141-fineli-11048",
+      "name": "SITRUUNA, KUORITTU",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11048",
+      "retrievedAt": "2026-11-02",
+      "licence": "THL Fineli Release20 CC BY4.0",
+      "state": "RAW",
+      "basis": "per100g-edible",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Explicit source SUGOH",
+      "per100g": {
+        "carbohydrate": 2.2,
+        "fibre": 2.4,
+        "polyols": 0.0,
+        "protein": 0.62,
+        "fat": 0.17
+      },
+      "primaryReference": {
+        "source_id": "11048",
+        "name": "SITRUUNA, KUORITTU",
+        "food_type": "FOOD",
+        "process": "RAW",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "CITRUS",
+        "food_class": "FRUFRESH",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 2.2,
+          "fibre_g_per_100g": 2.4,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 0.62,
+          "fat_g_per_100g": 0.17
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "CG",
+            "method_indicator": "MIR003"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0181"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "T",
+            "method_indicator": "MI0123"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "IG",
+            "method_indicator": "MIR003"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0172"
+          }
+        },
+        "portion_mass_g": {
+          "KPL_S": 60.0,
+          "KPL_M": 80.0,
+          "KPL_L": 100.0
+        }
+      },
+      "referenceLfSha256": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76"
+    },
+    {
+      "id": "op141-fineli-500",
+      "name": "VOI",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/500",
+      "retrievedAt": "2026-11-02",
+      "licence": "THL Fineli Release20 CC BY4.0",
+      "state": "IND",
+      "basis": "per100g-edible",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Explicit source SUGOH",
+      "per100g": {
+        "carbohydrate": 0.8,
+        "fibre": 0.0,
+        "polyols": 0.0,
+        "protein": 1.19,
+        "fat": 81.3
+      },
+      "primaryReference": {
+        "source_id": "500",
+        "name": "VOI",
+        "food_type": "FOOD",
+        "process": "IND",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "BUTTER",
+        "food_class": "BUTTER",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 0.8,
+          "fibre_g_per_100g": 0.0,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 1.19,
+          "fat_g_per_100g": 81.3
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0181"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0123"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "U",
+            "method_indicator": "MIR007"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0172"
+          }
+        },
+        "portion_mass_g": {
+          "DL": 95.0,
+          "RKL": 14.0,
+          "TL": 4.5
+        }
+      },
+      "referenceLfSha256": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76"
+    },
+    {
+      "id": "op141-fineli-858",
+      "name": "KANANMUNA, KUORETON",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/858",
+      "retrievedAt": "2026-11-02",
+      "licence": "THL Fineli Release20 CC BY4.0",
+      "state": "RAW",
+      "basis": "per100g-edible",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Explicit source SUGOH",
+      "per100g": {
+        "carbohydrate": 0.3,
+        "fibre": 0.0,
+        "polyols": 0.0,
+        "protein": 12.61,
+        "fat": 9.24
+      },
+      "primaryReference": {
+        "source_id": "858",
+        "name": "KANANMUNA, KUORETON",
+        "food_type": "FOOD",
+        "process": "RAW",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "EGG",
+        "food_class": "EGGS",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 0.3,
+          "fibre_g_per_100g": 0.0,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 12.61,
+          "fat_g_per_100g": 9.24
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "D",
+            "method_type": "AG",
+            "method_indicator": "MI1302"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "IG",
+            "method_indicator": "MIR003"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "D",
+            "method_type": "AG",
+            "method_indicator": "MI0123"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "U",
+            "method_indicator": "MIR007"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "U",
+            "method_indicator": "MIR007"
+          }
+        },
+        "portion_mass_g": {
+          "KPL_M": 55.0
+        }
+      },
+      "referenceLfSha256": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76"
+    },
+    {
+      "id": "op141-fineli-387",
+      "name": "PAPRIKA, VIHREÄ",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/387",
+      "retrievedAt": "2026-11-02",
+      "licence": "THL Fineli Release20 CC BY4.0",
+      "state": "RAW",
+      "basis": "per100g-edible",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Explicit source SUGOH",
+      "per100g": {
+        "carbohydrate": 2.5,
+        "fibre": 1.8,
+        "polyols": 0.0,
+        "protein": 0.94,
+        "fat": 0.3
+      },
+      "primaryReference": {
+        "source_id": "387",
+        "name": "PAPRIKA, VIHREÄ",
+        "food_type": "FOOD",
+        "process": "RAW",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "VEGFRU",
+        "food_class": "VEGFRESH",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 2.5,
+          "fibre_g_per_100g": 1.8,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 0.94,
+          "fat_g_per_100g": 0.3
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0181"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0123"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MIR006"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0172"
+          }
+        },
+        "portion_mass_g": {
+          "KPL_S": 120.0,
+          "KPL_M": 170.0,
+          "KPL_L": 230.0
+        }
+      },
+      "referenceLfSha256": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76"
+    },
+    {
+      "id": "op141-fineli-11182",
+      "name": "PAPRIKAJAUHE",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11182",
+      "retrievedAt": "2026-11-02",
+      "licence": "THL Fineli Release20 CC BY4.0",
+      "state": "DRIE",
+      "basis": "per100g-edible",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "polyolsSourceVerified": false,
+      "polyolsEvidence": "",
+      "per100g": {
+        "carbohydrate": 18.34,
+        "fibre": null,
+        "polyols": null,
+        "protein": 14.8,
+        "fat": 13.0
+      },
+      "primaryReference": {
+        "source_id": "11182",
+        "name": "PAPRIKAJAUHE",
+        "food_type": "FOOD",
+        "process": "DRIE",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "FLAVSEED",
+        "food_class": "SPICES",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 18.34,
+          "fibre_g_per_100g": null,
+          "polyols_g_per_100g": null,
+          "protein_g_per_100g": 14.8,
+          "fat_g_per_100g": 13.0
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          }
+        },
+        "portion_mass_g": {
+          "RKL": 5.5,
+          "TL": 2.0
+        }
+      },
+      "referenceLfSha256": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76"
+    },
+    {
+      "id": "op141-fineli-333",
+      "name": "PERSILJA",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/333",
+      "retrievedAt": "2026-11-02",
+      "licence": "THL Fineli Release20 CC BY4.0",
+      "state": "RAW",
+      "basis": "per100g-edible",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Explicit source SUGOH",
+      "per100g": {
+        "carbohydrate": 1.1,
+        "fibre": 2.9,
+        "polyols": 0.0,
+        "protein": 1.38,
+        "fat": 0.2
+      },
+      "primaryReference": {
+        "source_id": "333",
+        "name": "PERSILJA",
+        "food_type": "FOOD",
+        "process": "RAW",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "VEGLEAF",
+        "food_class": "VEGFRESH",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 1.1,
+          "fibre_g_per_100g": 2.9,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 1.38,
+          "fat_g_per_100g": 0.2
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0181"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "T",
+            "method_indicator": "MI0123"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MIR006"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0172"
+          }
+        },
+        "portion_mass_g": {
+          "RKL": 2.0
+        }
+      },
+      "referenceLfSha256": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76"
+    },
+    {
+      "id": "op141-fineli-535",
+      "name": "RYPSIÖLJY",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/535",
+      "retrievedAt": "2026-11-02",
+      "licence": "THL Fineli Release20 CC BY4.0",
+      "state": "IND",
+      "basis": "per100g-edible",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Explicit source SUGOH",
+      "per100g": {
+        "carbohydrate": 0.0,
+        "fibre": 0.0,
+        "polyols": 0.0,
+        "protein": 0.0,
+        "fat": 100.0
+      },
+      "primaryReference": {
+        "source_id": "535",
+        "name": "RYPSIÖLJY",
+        "food_type": "FOOD",
+        "process": "IND",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "OIL",
+        "food_class": "OIL",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 0.0,
+          "fibre_g_per_100g": 0.0,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 0.0,
+          "fat_g_per_100g": 100.0
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "CG",
+            "method_indicator": "MIR003"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "IG",
+            "method_indicator": "MIR003"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0123"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "U",
+            "method_indicator": "MIR007"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0172"
+          }
+        },
+        "portion_mass_g": {
+          "DL": 90.0,
+          "RKL": 13.5,
+          "TL": 4.5
+        }
+      },
+      "referenceLfSha256": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76"
+    },
+    {
+      "id": "op141-fineli-1",
+      "name": "SOKERI",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/1",
+      "retrievedAt": "2026-11-02",
+      "licence": "THL Fineli Release20 CC BY4.0",
+      "state": "IND",
+      "basis": "per100g-edible",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Explicit source SUGOH",
+      "per100g": {
+        "carbohydrate": 99.9,
+        "fibre": 0.0,
+        "polyols": 0.0,
+        "protein": 0.0,
+        "fat": 0.0
+      },
+      "primaryReference": {
+        "source_id": "1",
+        "name": "SOKERI",
+        "food_type": "FOOD",
+        "process": "IND",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "SUGARSYR",
+        "food_class": "SUGADD",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 99.9,
+          "fibre_g_per_100g": 0.0,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 0.0,
+          "fat_g_per_100g": 0.0
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0181"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "L",
+            "method_type": "P",
+            "method_indicator": "MIR003"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "U",
+            "method_indicator": "MIR007"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0172"
+          }
+        },
+        "portion_mass_g": {
+          "KPL_S": 2.0,
+          "KPL_M": 3.0,
+          "KPL_L": 4.0,
+          "DL": 85.0,
+          "RKL": 12.0,
+          "TL": 4.0
+        }
+      },
+      "referenceLfSha256": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76"
+    },
+    {
+      "id": "op141-fineli-31",
+      "name": "MAUSTEKASTIKE, SOIJAKASTIKE",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/31",
+      "retrievedAt": "2026-11-02",
+      "licence": "THL Fineli Release20 CC BY4.0",
+      "state": "IND",
+      "basis": "per100g-edible",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Explicit source SUGOH",
+      "per100g": {
+        "carbohydrate": 9.5,
+        "fibre": 0.0,
+        "polyols": 0.0,
+        "protein": 5.17,
+        "fat": 0.08
+      },
+      "primaryReference": {
+        "source_id": "31",
+        "name": "MAUSTEKASTIKE, SOIJAKASTIKE",
+        "food_type": "FOOD",
+        "process": "IND",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "FLAVSAUC",
+        "food_class": "SPISAUCE",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 9.5,
+          "fibre_g_per_100g": 0.0,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 5.17,
+          "fat_g_per_100g": 0.08
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0181"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0123"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "R",
+            "method_indicator": "MI0002"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0172"
+          }
+        },
+        "portion_mass_g": {
+          "DL": 120.0,
+          "RKL": 18.0,
+          "TL": 6.0
+        }
+      },
+      "referenceLfSha256": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76"
+    },
+    {
+      "id": "op141-fineli-1370",
+      "name": "RIISI, KEITETTY, SUOLATON",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/1370",
+      "retrievedAt": "2026-11-02",
+      "licence": "THL Fineli Release20 CC BY4.0",
+      "state": "BOIL",
+      "basis": "per100g-edible",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Explicit source SUGOH",
+      "per100g": {
+        "carbohydrate": 20.618,
+        "fibre": 0.627,
+        "polyols": 0.0,
+        "protein": 1.65,
+        "fat": 0.191
+      },
+      "primaryReference": {
+        "source_id": "1370",
+        "name": "RIISI, KEITETTY, SUOLATON",
+        "food_type": "DISH",
+        "process": "BOIL",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "DISH",
+        "food_class": "RICEADD",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 20.618,
+          "fibre_g_per_100g": 0.627,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 1.65,
+          "fat_g_per_100g": 0.191
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "R",
+            "method_indicator": "MI0002"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "R",
+            "method_indicator": "MI0002"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "R",
+            "method_indicator": "MI0002"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "R",
+            "method_indicator": "MI0002"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "R",
+            "method_indicator": "MI0002"
+          }
+        },
+        "portion_mass_g": {
+          "DL": 80.0,
+          "RKL": 12.0
+        }
+      },
+      "referenceLfSha256": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76"
+    },
+    {
+      "id": "op141-fineli-398",
+      "name": "TOMAATTIMURSKA",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/398",
+      "retrievedAt": "2026-11-02",
+      "licence": "THL Fineli Release20 CC BY4.0",
+      "state": "CANN",
+      "basis": "per100g-edible",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Explicit source SUGOH",
+      "per100g": {
+        "carbohydrate": 3.45,
+        "fibre": 0.4,
+        "polyols": 0.0,
+        "protein": 0.55,
+        "fat": 0.2
+      },
+      "primaryReference": {
+        "source_id": "398",
+        "name": "TOMAATTIMURSKA",
+        "food_type": "FOOD",
+        "process": "CANN",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "VEGCANN",
+        "food_class": "VEGCANN",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 3.45,
+          "fibre_g_per_100g": 0.4,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 0.55,
+          "fat_g_per_100g": 0.2
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "L",
+            "method_type": "P",
+            "method_indicator": "MIR003"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0181"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "T",
+            "method_indicator": "MI0123"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "IG",
+            "method_indicator": "MIR003"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0172"
+          }
+        },
+        "portion_mass_g": {
+          "DL": 100.0,
+          "RKL": 15.0
+        }
+      },
+      "referenceLfSha256": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76"
+    }
+  ],
+  "giRecords": [
+    {
+      "id": "op141-vegetable-imputation40",
+      "gi": 40,
+      "foodKey": "low-carb-vegetable",
+      "preparationKey": "op141-vegetable-imputation40",
+      "food": "Published assignment for low-carbohydrate vegetables, not measured food GI",
+      "preparation": "Candidate-specific application; see full source card and weighed version",
+      "qualityTier": "SUPPLEMENTARY",
+      "referenceScale": "GLUCOSE_100",
+      "matchKind": "ANALOG",
+      "confidence": "LOW",
+      "evidenceKind": "PUBLISHED_IMPUTATION",
+      "originalSourceCard": {
+        "id": "vegetable-imputation40",
+        "gi": 40,
+        "scale": "GLUCOSE_100",
+        "family": "low-carb-vegetable",
+        "food": "Published assignment for low-carbohydrate vegetables, not measured food GI",
+        "evidenceKind": "PUBLISHED_IMPUTATION",
+        "sourceUrl": "https://doi.org/10.2337/dc08-1239",
+        "accessUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC2584181/fullTextXML",
+        "documentSha256": "b3738226fa546af99ac25e5e3fa106e86cd204445f9153ef5ee762cb25f3b25a",
+        "location": "Conclusions: assignment discussion",
+        "originalStudy": "Atkinson, Foster-Powell, Brand-Miller 2008",
+        "confidence": "LOW",
+        "limitations": "Coding estimate only. Application to named fresh herbs, sprouts and alliums is an explicit project interpretation. It does not establish a physiological maximum or a one-unit uncertainty bound. Not a default for seed spices, flour, sauces or stock.",
+        "newRecordInRun2": true,
+        "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc"
+      },
+      "source": {
+        "title": "PROJECT PI, not measured food GI: Published assignment for low-carbohydrate vegetables, not measured food GI",
+        "url": "https://doi.org/10.2337/dc08-1239",
+        "table": "Conclusions: assignment discussion",
+        "year": 2008,
+        "published": true,
+        "iso26642Confirmed": false,
+        "qualityEvidence": "Coding estimate only. Application to named fresh herbs, sprouts and alliums is an explicit project interpretation. It does not establish a physiological maximum or a one-unit uncertainty bound. Not a default for seed spices, flour, sauces or stock."
+      }
+    },
+    {
+      "id": "op141-lowcho50-r4",
+      "gi": 50,
+      "foodKey": "lowcho-code",
+      "preparationKey": "op141-lowcho50-r4",
+      "food": "Named foods with <=5 g available CHO/100 g",
+      "preparation": "Candidate-specific application; see full source card and weighed version",
+      "qualityTier": "SUPPLEMENTARY",
+      "referenceScale": "GLUCOSE_100",
+      "matchKind": "ANALOG",
+      "confidence": "LOW",
+      "evidenceKind": "PUBLISHED_IMPUTATION",
+      "originalSourceCard": {
+        "id": "lowcho50-r4",
+        "gi": 50,
+        "scale": "GLUCOSE_100",
+        "family": "lowcho-code",
+        "food": "Named foods with <=5 g available CHO/100 g",
+        "evidenceKind": "PUBLISHED_IMPUTATION",
+        "sourceUrl": "https://doi.org/10.1016/j.jfca.2007.02.004",
+        "location": "Author presentation slide 12",
+        "confidence": "LOW",
+        "accessUrl": "https://pdfs.semanticscholar.org/eead/ef25b9a2d5c209deb31265082c85080758f4.pdf",
+        "documentSha256": "778292d5d11cfd377ea93f1927ba8205aa7aff0105d2345f458336bf8869d0f9",
+        "limitations": "Published low-carbohydrate default50, applied only to reviewed named compositions <=5 g available CHO/100g. This cutoff is a project rule, not a validated scientific threshold. Explicit AFCD commercial soy sauce and AFCD tahini plus complete Maille Dijon label are allowed, not all brands or pastes. No flour/sugar/honey/syrup or composition-unknown food.",
+        "allowedCompositionIds": [
+          "afcd-F000396-release-3-a1aa6eb1",
+          "afcd-F001301-release-3-578f337d",
+          "afcd-F002983-r4",
+          "afcd-F002991-release-3-aef4d973",
+          "afcd-F003337-release-3-358d7f7a",
+          "afcd-F004726-release-3-8b45863e",
+          "afcd-F004729-release-3-6915a221",
+          "afcd-F005198-release-3-d5346b07",
+          "afcd-F005946-release-3-13b128f1",
+          "afcd-F008004-r4",
+          "afcd-F008065-r4",
+          "afcd-F008936-release-3-145aa9dd",
+          "afcd-F009076-r4",
+          "fineli-11048-release-20-ef608526",
+          "fineli-11557-release-20-0e2f3532",
+          "fineli-29-release-20-efe46494",
+          "fineli-30315-release-20-36a6124d",
+          "fineli-30369-release-20-d894c260",
+          "fineli-7530-release-20-21f4037e",
+          "fineli-7600-release-20-f85560ba",
+          "fineli-779-release-20-66a2e282",
+          "fineli-8513-release-20-ae10a9b7",
+          "fineli-858-release-20-ae10a9b7",
+          "fineli-929-release-20-59dd350d",
+          "maille-label-proxy"
+        ],
+        "evidenceHash": "591d0a6e5b4f2244d7bc226cd4706dea84fcfb3db7bc59bf1c79b8b2205f6770"
+      },
+      "source": {
+        "title": "PROJECT PI, not measured food GI: Named foods with <=5 g available CHO/100 g",
+        "url": "https://doi.org/10.1016/j.jfca.2007.02.004",
+        "table": "Author presentation slide 12",
+        "year": 2007,
+        "published": true,
+        "iso26642Confirmed": false,
+        "qualityEvidence": "Published low-carbohydrate default50, applied only to reviewed named compositions <=5 g available CHO/100g. This cutoff is a project rule, not a validated scientific threshold. Explicit AFCD commercial soy sauce and AFCD tahini plus complete Maille Dijon label are allowed, not all brands or pastes. No flour/sugar/honey/syrup or composition-unknown food."
+      }
+    },
+    {
+      "id": "op141-dairy-imputation30",
+      "gi": 30,
+      "foodKey": "dairy-code",
+      "preparationKey": "op141-dairy-imputation30",
+      "food": "Unsweetened animal dairy coding assignment",
+      "preparation": "Candidate-specific application; see full source card and weighed version",
+      "qualityTier": "SUPPLEMENTARY",
+      "referenceScale": "GLUCOSE_100",
+      "matchKind": "ANALOG",
+      "confidence": "LOW",
+      "evidenceKind": "PUBLISHED_IMPUTATION",
+      "originalSourceCard": {
+        "id": "dairy-imputation30",
+        "gi": 30,
+        "scale": "GLUCOSE_100",
+        "family": "dairy-code",
+        "food": "Unsweetened animal dairy coding assignment",
+        "evidenceKind": "PUBLISHED_IMPUTATION",
+        "sourceUrl": "https://doi.org/10.2337/dc08-1239",
+        "location": "Conclusions, low-carbohydrate product assignment",
+        "confidence": "LOW",
+        "limitations": "Not tested cream, cheese or butter. Excludes plant drinks and sweetened dairy.",
+        "evidenceHash": "18dd13349258a887809f1dec2abce637ce648b7d2f829c690243734139912850"
+      },
+      "source": {
+        "title": "PROJECT PI, not measured food GI: Unsweetened animal dairy coding assignment",
+        "url": "https://doi.org/10.2337/dc08-1239",
+        "table": "Conclusions, low-carbohydrate product assignment",
+        "year": 2008,
+        "published": true,
+        "iso26642Confirmed": false,
+        "qualityEvidence": "Not tested cream, cheese or butter. Excludes plant drinks and sweetened dairy."
+      }
+    },
+    {
+      "id": "op141-sucrose60",
+      "gi": 60,
+      "foodKey": "sucrose",
+      "preparationKey": "op141-sucrose60",
+      "food": "LoGiCane sucrose",
+      "preparation": "sucrose solution",
+      "qualityTier": "SUPPLEMENTARY",
+      "referenceScale": "GLUCOSE_100",
+      "matchKind": "ANALOG",
+      "confidence": "LOW",
+      "evidenceKind": "HUMAN_GI",
+      "originalSourceCard": {
+        "id": "sucrose60",
+        "gi": 60,
+        "family": "sucrose",
+        "food": "LoGiCane sucrose",
+        "preparation": "sucrose solution",
+        "sourceUrl": "https://doi.org/10.1186/1475-2891-13-50",
+        "originalStudy": "Venn2014 PMID24885045 PMC4047427",
+        "location": "Table2 European cohort glucose-reference column",
+        "accessUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4047427/fullTextXML",
+        "documentSha256": "c4342f41f5c5478e1c9e9baaf257c480e885f8eb064ecf53fa053d0ab55585c8",
+        "scale": "GLUCOSE_100",
+        "referenceFood": "Glucose",
+        "participants": 31,
+        "statisticalUncertainty": {
+          "kind": "95%CI",
+          "usedAsRecipeRange": false
+        },
+        "limitations": "European cohort selected consistently, not pooled with Chinese cohort. Other cohort means and CIs are not food-preparation bounds. Brown sugar is only an applied sucrose-dominant analogy.",
+        "confidence": "LOW",
+        "allowedUse": "Named grain-rice or sucrose applications only",
+        "newRecord": true,
+        "evidenceHash": "544a951d71bed9d596342e2e5b0671f21a888f4fff78e909281877e5621fd783"
+      },
+      "source": {
+        "title": "Human comparator: LoGiCane sucrose",
+        "url": "https://doi.org/10.1186/1475-2891-13-50",
+        "table": "Table2 European cohort glucose-reference column",
+        "year": 2014,
+        "published": true,
+        "iso26642Confirmed": false,
+        "qualityEvidence": "European cohort selected consistently, not pooled with Chinese cohort. Other cohort means and CIs are not food-preparation bounds. Brown sugar is only an applied sucrose-dominant analogy."
+      }
+    },
+    {
+      "id": "op141-rice-jasmine68",
+      "gi": 68,
+      "foodKey": "rice-grain",
+      "preparationKey": "op141-rice-jasmine68",
+      "food": "jasmine rice",
+      "preparation": "cooked rice as specified in Venn2014; no cooled-rice claim",
+      "qualityTier": "SUPPLEMENTARY",
+      "referenceScale": "GLUCOSE_100",
+      "matchKind": "ANALOG",
+      "confidence": "LOW",
+      "evidenceKind": "HUMAN_GI",
+      "originalSourceCard": {
+        "id": "rice-jasmine68",
+        "gi": 68,
+        "family": "rice-grain",
+        "food": "jasmine rice",
+        "preparation": "cooked rice as specified in Venn2014; no cooled-rice claim",
+        "sourceUrl": "https://doi.org/10.1186/1475-2891-13-50",
+        "originalStudy": "Venn2014 PMID24885045 PMC4047427",
+        "location": "Table2 European cohort glucose-reference column",
+        "accessUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4047427/fullTextXML",
+        "documentSha256": "c4342f41f5c5478e1c9e9baaf257c480e885f8eb064ecf53fa053d0ab55585c8",
+        "scale": "GLUCOSE_100",
+        "referenceFood": "Glucose",
+        "participants": 31,
+        "statisticalUncertainty": {
+          "kind": "95%CI",
+          "usedAsRecipeRange": false
+        },
+        "limitations": "European cohort selected consistently, not pooled with Chinese cohort. Other cohort means and CIs are not food-preparation bounds. Brown sugar is only an applied sucrose-dominant analogy.",
+        "confidence": "LOW",
+        "allowedUse": "Named grain-rice or sucrose applications only",
+        "newRecord": true,
+        "evidenceHash": "3ecc3f0a5f8206b53edb3b53c56e2dd317df7bfcfe159254bd488b93a4f4c2b0"
+      },
+      "source": {
+        "title": "Human comparator: jasmine rice",
+        "url": "https://doi.org/10.1186/1475-2891-13-50",
+        "table": "Table2 European cohort glucose-reference column",
+        "year": 2014,
+        "published": true,
+        "iso26642Confirmed": false,
+        "qualityEvidence": "European cohort selected consistently, not pooled with Chinese cohort. Other cohort means and CIs are not food-preparation bounds. Brown sugar is only an applied sucrose-dominant analogy."
+      }
+    },
+    {
+      "id": "op141-rice-basmati57",
+      "gi": 57,
+      "foodKey": "rice-grain",
+      "preparationKey": "op141-rice-basmati57",
+      "food": "basmati rice",
+      "preparation": "cooked rice as specified in Venn2014; no cooled-rice claim",
+      "qualityTier": "SUPPLEMENTARY",
+      "referenceScale": "GLUCOSE_100",
+      "matchKind": "ANALOG",
+      "confidence": "LOW",
+      "evidenceKind": "HUMAN_GI",
+      "originalSourceCard": {
+        "id": "rice-basmati57",
+        "gi": 57,
+        "family": "rice-grain",
+        "food": "basmati rice",
+        "preparation": "cooked rice as specified in Venn2014; no cooled-rice claim",
+        "sourceUrl": "https://doi.org/10.1186/1475-2891-13-50",
+        "originalStudy": "Venn2014 PMID24885045 PMC4047427",
+        "location": "Table2 European cohort glucose-reference column",
+        "accessUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4047427/fullTextXML",
+        "documentSha256": "c4342f41f5c5478e1c9e9baaf257c480e885f8eb064ecf53fa053d0ab55585c8",
+        "scale": "GLUCOSE_100",
+        "referenceFood": "Glucose",
+        "participants": 31,
+        "statisticalUncertainty": {
+          "kind": "95%CI",
+          "usedAsRecipeRange": false
+        },
+        "limitations": "European cohort selected consistently, not pooled with Chinese cohort. Other cohort means and CIs are not food-preparation bounds. Brown sugar is only an applied sucrose-dominant analogy.",
+        "confidence": "LOW",
+        "allowedUse": "Named grain-rice or sucrose applications only",
+        "newRecord": true,
+        "evidenceHash": "a644c4fd5e3969e23f403a0ca732e108cfe9c9dd4157c96c76b1117ca773c57c"
+      },
+      "source": {
+        "title": "Human comparator: basmati rice",
+        "url": "https://doi.org/10.1186/1475-2891-13-50",
+        "table": "Table2 European cohort glucose-reference column",
+        "year": 2014,
+        "published": true,
+        "iso26642Confirmed": false,
+        "qualityEvidence": "European cohort selected consistently, not pooled with Chinese cohort. Other cohort means and CIs are not food-preparation bounds. Brown sugar is only an applied sucrose-dominant analogy."
+      }
+    }
+  ]
+}

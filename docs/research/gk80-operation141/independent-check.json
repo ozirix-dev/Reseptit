@@ -1,0 +1,182 @@
+{
+  "status": "PASS",
+  "recipesHandled": 30,
+  "numericRecipeProposals": 15,
+  "scenariosDecimalVerified": 17,
+  "sourceCeilingRowsVerified": 20,
+  "unknownPolyolProfilesPreservedAcrossBatches": 14,
+  "productionActivated": false,
+  "modelOrToleranceChanged": false,
+  "results": [
+    {
+      "recipeId": "ratatouille",
+      "scenarioId": "defined-weighed-hot-version",
+      "gkPerServingExactDecimal": "4.625575",
+      "gkPerServingRounded2dp": 4.63,
+      "omittedChoPerServingExactDecimal": "0.1825875",
+      "evidenceBundleSha256": "0a8209a0f4eae01906ea51622ada71d3bb720760a188af8db9066dd75997352b",
+      "inputSha256": "392404d1eaa87aa7b45d9e247cc6daddc9556a2f532ba860d475a627634f8c17",
+      "versionSha256": "40176fc4a3affa4b249972517698ebf29a79d63dc862dff0d9f4bc634c27b8d3"
+    },
+    {
+      "recipeId": "sitruuna-yrttikana-parsa",
+      "scenarioId": "defined-weighed-hot-version",
+      "gkPerServingExactDecimal": "0.9775",
+      "gkPerServingRounded2dp": 0.98,
+      "omittedChoPerServingExactDecimal": "0.7462450",
+      "evidenceBundleSha256": "ad09cbf68b8333f4a57f42c10c91d9c286f503d24f686e0611ef06a9fae10517",
+      "inputSha256": "65b985476efa9452b588fdd270f0ba1d0a9b7b54219b0598d34cea4f64f0440b",
+      "versionSha256": "a7881ac594a303bd40b98d70ff7339f6f9f466388213ac2f46af79c03badd0a2"
+    },
+    {
+      "recipeId": "menemen",
+      "scenarioId": "defined-weighed-hot-version",
+      "gkPerServingExactDecimal": "2.768333333333333333333333334",
+      "gkPerServingRounded2dp": 2.77,
+      "omittedChoPerServingExactDecimal": "0.1249833333333333333333333333",
+      "evidenceBundleSha256": "87065019f1a763c59df17f230b8f782464f91127059ca81c104a58f343cd27b7",
+      "inputSha256": "f8f5dd321389fbc3b5057f39ebcdcc5a9fbe884358835ff4c6ac7e8f91a3883c",
+      "versionSha256": "e6abb284eba62d4fb3436366e2383288b67384b0802890618cffc2ff919f45d0"
+    },
+    {
+      "recipeId": "tomaatti-kananmuna-wokki",
+      "scenarioId": "hot-jasmine-rice",
+      "gkPerServingExactDecimal": "24.23956",
+      "gkPerServingRounded2dp": 24.24,
+      "omittedChoPerServingExactDecimal": "0.842",
+      "evidenceBundleSha256": "8105d794f8c023b46f5fa8cd1f70f4fe6981a155be6133565912e1ce429e1f13",
+      "inputSha256": "7463711832d27cc8264094944a8da5408ea953698a9f1aa7b9b88fb144f9732d",
+      "versionSha256": "4311603f27050acf282a2cf1405c402a213e2c1d1b131f162f56c683641101e2"
+    },
+    {
+      "recipeId": "tomaatti-kananmuna-wokki",
+      "scenarioId": "hot-basmati-rice",
+      "gkPerServingExactDecimal": "20.83759",
+      "gkPerServingRounded2dp": 20.84,
+      "omittedChoPerServingExactDecimal": "0.842",
+      "evidenceBundleSha256": "46f04e69d293802897fc5ca31bbf38f37554c8604dcdad8babe90fb80728dee8",
+      "inputSha256": "b241d8f3888466e36da328efdea91060d48c59784074976dca2e52ac06f36abc",
+      "versionSha256": "e6b4274915d3f5ef1862e5636779c55c3c94c9543a01c456d6477c540afe853d"
+    },
+    {
+      "recipeId": "shakshuka",
+      "scenarioId": "defined-weighed-hot-version",
+      "gkPerServingExactDecimal": "3.3146",
+      "gkPerServingRounded2dp": 3.31,
+      "omittedChoPerServingExactDecimal": "0.657385",
+      "evidenceBundleSha256": "27d1934a26d1839e8616bbad1ff6c8d97bbb06dff4428582ec3323462f3e7274",
+      "inputSha256": "fd93f73e007593a49b5f704d54bc1aebafcf7df75702045efe33511180c508a2",
+      "versionSha256": "43ec5fdc6334e48629a4d0a1309b5a454856a245dc034be3716525928bc921e9"
+    },
+    {
+      "recipeId": "munatacot-huevos-rancheros",
+      "scenarioId": "exact-weighed-owner-review-version",
+      "gkPerServingExactDecimal": "1.7634850",
+      "gkPerServingRounded2dp": 1.76,
+      "omittedChoPerServingExactDecimal": "0.500375",
+      "evidenceBundleSha256": "324fffd48b3c7c7b3505d82f79539accb08aa3e4942898d62cdef58962555a74",
+      "inputSha256": "5a5f8b08ce0cc26a70195b12c4028925aaf8968e5b61353d109cb699ff743353",
+      "versionSha256": "4091653b21e291130b41be321a2839b529eae43cb81a1f9ed9c1f24ea088d23f"
+    },
+    {
+      "recipeId": "paprikainen-vhh-gulassi",
+      "scenarioId": "exact-weighed-owner-review-version",
+      "gkPerServingExactDecimal": "3.516050",
+      "gkPerServingRounded2dp": 3.52,
+      "omittedChoPerServingExactDecimal": "0.5711375",
+      "evidenceBundleSha256": "bec907a98778eba8d56c13ce8e455fcd6fd9bbd593c4f82ab6a73b7c2645d351",
+      "inputSha256": "c542037e427d5e7c027a4deb325a6737d6ba8ebed77778b3ba6f06652ab0f560",
+      "versionSha256": "362de3bc2f6f75aba4a777012eb732befa2528a4575482f6f690e90a04af403a"
+    },
+    {
+      "recipeId": "caponata",
+      "scenarioId": "defined-weighed-version",
+      "gkPerServingExactDecimal": "6.123750",
+      "gkPerServingRounded2dp": 6.12,
+      "omittedChoPerServingExactDecimal": "0.110025",
+      "evidenceBundleSha256": "f86996740188a1615cb70b991209daf6c95609f36ea5fa386a1a0589e5f41650",
+      "inputSha256": "88b5d12b6995175111a5ad389199f2b1d2f563d2c6a7939468567e563c508624",
+      "versionSha256": "397f7debe0a6d39896c3050158d99da763c07cf35dec6794901b9eca9197cc6e"
+    },
+    {
+      "recipeId": "pasta-alla-norma",
+      "scenarioId": "de-cecco-penne-comparator",
+      "gkPerServingExactDecimal": "30.0460",
+      "gkPerServingRounded2dp": 30.05,
+      "omittedChoPerServingExactDecimal": "0.4503875",
+      "evidenceBundleSha256": "30860ab2fd4c2f44bc78372b5856031ab59691b8a80f86f237589e4d39cecaba",
+      "inputSha256": "bdb0e131b7ee2059e53ed53ee7d645f322d097d55e29a96b375709f3adc322c5",
+      "versionSha256": "8e99155a06a98b804a253e3e73cd76781ac10f1be19f1406a89450ddb5c66fb8"
+    },
+    {
+      "recipeId": "pasta-alla-norma",
+      "scenarioId": "barilla-penne-comparator",
+      "gkPerServingExactDecimal": "31.7890",
+      "gkPerServingRounded2dp": 31.79,
+      "omittedChoPerServingExactDecimal": "0.4503875",
+      "evidenceBundleSha256": "466b173333d49ad2360fa8e88d920ea1d420b5e42eb978f70729eb14d6d02df0",
+      "inputSha256": "5356f46e1717ace754c43d686488d069ec7c47ee76430c5d81f621d7fb04b933",
+      "versionSha256": "331efee8176104ce7cdf7a41e07c96e173de8b33616ff6e4e3e4085c58fbe6aa"
+    },
+    {
+      "recipeId": "carnitas-salaattitacot",
+      "scenarioId": "defined-weighed-hot-version",
+      "gkPerServingExactDecimal": "2.128019",
+      "gkPerServingRounded2dp": 2.13,
+      "omittedChoPerServingExactDecimal": "1.2906625",
+      "evidenceBundleSha256": "ca6a8ba913b91adab276d2404ee47a3ab2a69c8665587ad9fe055ee467a1215b",
+      "inputSha256": "4d612b1d66b18f357fb1e64374bb1942f799a565c4dfc9a8b02d5df20d647409",
+      "versionSha256": "3cf1ed265a0bd7cc3a995b6a4ea3a8f82e43b215982aeb3d2b669a2853d8961e"
+    },
+    {
+      "recipeId": "doner-kebab",
+      "scenarioId": "defined-weighed-hot-version",
+      "gkPerServingExactDecimal": "18.808495",
+      "gkPerServingRounded2dp": 18.81,
+      "omittedChoPerServingExactDecimal": "0.4148625",
+      "evidenceBundleSha256": "0c94a148dd2b6facc468540b45506cbb2c13c8d6fe5c10401ba91c558f00d69d",
+      "inputSha256": "9fe1d100c8a6a272f7debbc4539827a5757ee6252ccf1f2fab5a5eb913b56df5",
+      "versionSha256": "22e1938f34ea92482c441fc587f8423fb6640013511c95d896e76c7276c53e1a"
+    },
+    {
+      "recipeId": "marokkolainen-couscous",
+      "scenarioId": "defined-weighed-version",
+      "gkPerServingExactDecimal": "33.90685",
+      "gkPerServingRounded2dp": 33.91,
+      "omittedChoPerServingExactDecimal": "0.66400",
+      "evidenceBundleSha256": "f54161db7c51fafde322271cd746fef1f55c65b5b2ea89505059b9b34ecef433",
+      "inputSha256": "890056038cd8bcf101c57bdec206ccd3d0101a8557dc1f171e1d4f9d72544099",
+      "versionSha256": "f6fdf25c97a834dcfeed5f2cd7a370fc5924b516f6de9e334860afba8fb74e32"
+    },
+    {
+      "recipeId": "janssoninkiusaus-juuriselleri",
+      "scenarioId": "defined-weighed-version",
+      "gkPerServingExactDecimal": "3.04675",
+      "gkPerServingRounded2dp": 3.05,
+      "omittedChoPerServingExactDecimal": "0.0478875",
+      "evidenceBundleSha256": "2f6e63c31ff798e07903253ce18c386c3ef1ab02c88277c3454025282db1e4b2",
+      "inputSha256": "6448fadbb97945473d18505a3a72ca48329cff4b54ade3f6090d4fb1b387094c",
+      "versionSha256": "b95a1643bc70e26cd0c3efbd3a497418988f798fd5960dda9980579d3cf04116"
+    },
+    {
+      "recipeId": "taytetyt-paprikat-vhh",
+      "scenarioId": "defined-weighed-hot-version",
+      "gkPerServingExactDecimal": "4.07850",
+      "gkPerServingRounded2dp": 4.08,
+      "omittedChoPerServingExactDecimal": "0.203925",
+      "evidenceBundleSha256": "0f1ae48addbea40ed82a24bb024529a4fb79f524c6467c63abf6603d3038834b",
+      "inputSha256": "91d11fd61f3d9ccae60e49231837d399abcfeb979807bd3eb1dd9bec406e3f86",
+      "versionSha256": "55448706aaff63373c6b96ed70bc9719281f2e125ab305b05ec86c8c844bf271"
+    },
+    {
+      "recipeId": "rogan-josh",
+      "scenarioId": "defined-weighed-version",
+      "gkPerServingExactDecimal": "1.1118",
+      "gkPerServingRounded2dp": 1.11,
+      "omittedChoPerServingExactDecimal": "1.8027000",
+      "evidenceBundleSha256": "feb0c4cfad06b1827a8b1f024f47594dee73b7863baf2cb176b343e7b11ff5d2",
+      "inputSha256": "5378c4a42bf964f38b2c736ccae49637b8a0a8f869e6d4c5f9310e8e5a6ff685",
+      "versionSha256": "71a35e8ed26cbfad012b005a7a65606ae81c0da0ca1e8ee857b7a68ccc1b7894"
+    }
+  ]
+}

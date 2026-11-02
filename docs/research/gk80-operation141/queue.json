@@ -1,0 +1,142 @@
+{
+  "main": "583fdb91aeb12114f909412b9165fc3b02a6515d",
+  "selection": "Prior23 source-HOLD numerics plus Kaya and six distinct hard cases. No new random screen. Source substitutions and existing omission ceilings are the new questions.",
+  "modelConfig": "Sol/high; active chat selector not exposed",
+  "targets": {
+    "deep": 30,
+    "numericProposals": 15,
+    "publicationReady": 10
+  },
+  "batches": [
+    {
+      "number": 1,
+      "recipeIds": [
+        "ratatouille",
+        "sitruuna-yrttikana-parsa",
+        "menemen",
+        "tomaatti-kananmuna-wokki",
+        "shakshuka"
+      ],
+      "status": "RESEARCH_COMPLETE_REVIEW_PENDING",
+      "numericRecipeIds": [
+        "menemen",
+        "ratatouille",
+        "shakshuka",
+        "sitruuna-yrttikana-parsa",
+        "tomaatti-kananmuna-wokki"
+      ],
+      "holdRecipeIds": []
+    },
+    {
+      "number": 2,
+      "recipeIds": [
+        "munatacot-huevos-rancheros",
+        "paprikainen-vhh-gulassi",
+        "jauheliha-makaronilaatikko",
+        "caponata",
+        "pasta-alla-norma"
+      ],
+      "status": "RESEARCH_COMPLETE_REVIEW_PENDING",
+      "numericRecipeIds": [
+        "caponata",
+        "munatacot-huevos-rancheros",
+        "paprikainen-vhh-gulassi",
+        "pasta-alla-norma"
+      ],
+      "holdRecipeIds": [
+        "jauheliha-makaronilaatikko"
+      ]
+    },
+    {
+      "number": 3,
+      "recipeIds": [
+        "bulgogi",
+        "bun-cha-hanoi",
+        "carnitas-salaattitacot",
+        "doner-kebab",
+        "marokkolainen-couscous"
+      ],
+      "status": "RESEARCH_COMPLETE_REVIEW_PENDING",
+      "numericRecipeIds": [
+        "carnitas-salaattitacot",
+        "doner-kebab",
+        "marokkolainen-couscous"
+      ],
+      "holdRecipeIds": [
+        "bulgogi",
+        "bun-cha-hanoi"
+      ]
+    },
+    {
+      "number": 4,
+      "recipeIds": [
+        "congee-riisipuuro",
+        "japanilainen-kabocha-puuro",
+        "rahka-marjakerroskulho",
+        "janssoninkiusaus-juuriselleri",
+        "taytetyt-paprikat-vhh"
+      ],
+      "status": "RESEARCH_COMPLETE_REVIEW_PENDING",
+      "numericRecipeIds": [
+        "janssoninkiusaus-juuriselleri",
+        "taytetyt-paprikat-vhh"
+      ],
+      "holdRecipeIds": [
+        "congee-riisipuuro",
+        "japanilainen-kabocha-puuro",
+        "rahka-marjakerroskulho"
+      ]
+    },
+    {
+      "number": 5,
+      "recipeIds": [
+        "rogan-josh",
+        "vietnamilainen-kahvijogurtti-banaanilla",
+        "valimerellinen-halloumi-tomaattileipa",
+        "malesialainen-kaya-paahtoleipa",
+        "punainen-kanacurry-vhh"
+      ],
+      "status": "RESEARCH_COMPLETE_REVIEW_PENDING",
+      "numericRecipeIds": [
+        "rogan-josh"
+      ],
+      "holdRecipeIds": [
+        "vietnamilainen-kahvijogurtti-banaanilla",
+        "valimerellinen-halloumi-tomaattileipa",
+        "malesialainen-kaya-paahtoleipa",
+        "punainen-kanacurry-vhh"
+      ]
+    },
+    {
+      "number": 6,
+      "recipeIds": [
+        "keto-suklaakeksit",
+        "keto-mutakakku",
+        "tangyuan",
+        "intialainen-masala-dosa",
+        "vada-pav"
+      ],
+      "status": "RESEARCH_COMPLETE_REVIEW_PENDING",
+      "numericRecipeIds": [],
+      "holdRecipeIds": [
+        "keto-suklaakeksit",
+        "keto-mutakakku",
+        "tangyuan",
+        "intialainen-masala-dosa",
+        "vada-pav"
+      ]
+    }
+  ],
+  "result": {
+    "deepRecipes": 30,
+    "superficiallyScreenedAdditional": 0,
+    "numericProposals": 15,
+    "sourceResolvedForOwnerReview": 10,
+    "conditionalMatchReview": 5,
+    "hold": 15,
+    "fullyPublicationReady": 0,
+    "productionBaseline": 133,
+    "hypotheticalCoverageIfAll15LaterIntegratedAndApproved": 148,
+    "denominator": 326
+  }
+}

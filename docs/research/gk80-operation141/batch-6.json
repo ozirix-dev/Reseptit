@@ -1,0 +1,40 @@
+{
+  "batch": 6,
+  "recipeIds": [
+    "keto-suklaakeksit",
+    "keto-mutakakku",
+    "tangyuan",
+    "intialainen-masala-dosa",
+    "vada-pav"
+  ],
+  "cases": [],
+  "holds": [
+    {
+      "recipeId": "keto-suklaakeksit",
+      "status": "HOLD",
+      "newResearchQuestionAndOutcome": "Almond flour180g and sugar-free chocolate60g are main ingredients with unverified comprehensive polyols and no valid almond-flour GI; finished almond biscuit/cake GI is not a flour GI. No GI49 bakery mean. Source-total bounds cannot omit these main portions. Keep macros withheld."
+    },
+    {
+      "recipeId": "keto-mutakakku",
+      "status": "HOLD",
+      "newResearchQuestionAndOutcome": "Almond flour60g and sugar-free chocolate150g remain main inputs; generic sugar-free does not identify erythritol versus maltitol. Cocoa10g/8 USDA total57.9 gives0.72375g/serving, potentially omittable, but this does not solve flour/chocolate. Keep macros withheld."
+    },
+    {
+      "recipeId": "tangyuan",
+      "status": "HOLD",
+      "newResearchQuestionAndOutcome": "Glutinous rice flour250g is boiled as filled balls, not whole rice or steamed noodles. Black sesame100g ground filling is substantial (USDA whole seed total23.45 ->5.8625g/serving, cannot omit, white hulled seed is not exact black seed). Need measured/accepted ingredient preparation GI or matched whole-product protocol."
+    },
+    {
+      "recipeId": "intialainen-masala-dosa",
+      "status": "HOLD",
+      "newResearchQuestionAndOutcome": "Published mustard seed150g/2 is not a trace spice; must not auto-correct to1.5g. Rice100g:urad100g,10min rest and unquantified sambar lack a source-matched fermented dosa protocol. Dosa-family measured GI cannot fix the quantity error or transfer to separated flour ingredients."
+    },
+    {
+      "recipeId": "vada-pav",
+      "status": "HOLD",
+      "newResearchQuestionAndOutcome": "Potato500g boiled then mashed and fried in besan coating is not boiled potato or steamed pulse GI. Bread4pcs lacks edible mass/product; instruction adds unspecified chutney.25g absorbed oil is only an existing model estimate, not measured. Need exact weighed composite version and corresponding GI, no family means."
+    }
+  ],
+  "foods": [],
+  "giRecords": []
+}

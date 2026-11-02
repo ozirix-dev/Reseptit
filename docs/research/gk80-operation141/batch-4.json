@@ -1,0 +1,2887 @@
+{
+  "batch": 4,
+  "recipeIds": [
+    "congee-riisipuuro",
+    "japanilainen-kabocha-puuro",
+    "rahka-marjakerroskulho",
+    "janssoninkiusaus-juuriselleri",
+    "taytetyt-paprikat-vhh"
+  ],
+  "cases": [
+    {
+      "scenarioId": "defined-weighed-version",
+      "input": {
+        "recipeId": "janssoninkiusaus-juuriselleri",
+        "servings": 4,
+        "ingredients": [
+          {
+            "name": "juuriselleriä",
+            "grams": 700,
+            "fineliRecordId": "op141-fineli-311",
+            "giRecordId": "op141-vegetable-imputation40",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "low-carb-vegetable",
+            "preparationKey": "op141-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Mediterranean European anchovy canned in oil, drained125g, as published. Not Swedish spiced sprat/Fineli829. Cream250g and milk100g are weighed versions of volume measures. All dish juices retained."
+          },
+          {
+            "name": "öljyyn säilöttyjä anjovisfileitä, valutettuna",
+            "grams": 125,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Source-backed source-total ceiling under existing GK omission rule.",
+            "estimatedAvailableCarbohydratePerServingG": 0,
+            "negligibleAssumption": "USDA SR Legacy2018 FDC174183 Fish, anchovy, european, canned in oil, drained solids; nutrient1005 totalCHO 0g/100g; retained 125g/4servings. No fibre/polyol subtraction. Nominal source-model ceiling only; not a clinical or lot maximum. Source total0 implies source-model availableCHO0; no aggregate polyol zero is fabricated."
+          },
+          {
+            "name": "sipuli",
+            "grams": 55,
+            "fineliRecordId": "op141-fineli-335",
+            "giRecordId": "op141-vegetable-imputation40",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "low-carb-vegetable",
+            "preparationKey": "op141-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Mediterranean European anchovy canned in oil, drained125g, as published. Not Swedish spiced sprat/Fineli829. Cream250g and milk100g are weighed versions of volume measures. All dish juices retained."
+          },
+          {
+            "name": "kuohukermaa, rasvaa 38 %",
+            "grams": 250,
+            "fineliRecordId": "op141-fineli-631",
+            "giRecordId": "op141-dairy-imputation30",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "dairy-code",
+            "preparationKey": "op141-dairy-imputation30",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Mediterranean European anchovy canned in oil, drained125g, as published. Not Swedish spiced sprat/Fineli829. Cream250g and milk100g are weighed versions of volume measures. All dish juices retained."
+          },
+          {
+            "name": "täysmaitoa, rasvaa 3,5 %",
+            "grams": 100,
+            "fineliRecordId": "op141-fineli-689",
+            "giRecordId": "op141-dairy-imputation30",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "dairy-code",
+            "preparationKey": "op141-dairy-imputation30",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Mediterranean European anchovy canned in oil, drained125g, as published. Not Swedish spiced sprat/Fineli829. Cream250g and milk100g are weighed versions of volume measures. All dish juices retained."
+          },
+          {
+            "name": "voita",
+            "grams": 28,
+            "fineliRecordId": "op141-fineli-500",
+            "giRecordId": "op141-dairy-imputation30",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "dairy-code",
+            "preparationKey": "op141-dairy-imputation30",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Mediterranean European anchovy canned in oil, drained125g, as published. Not Swedish spiced sprat/Fineli829. Cream250g and milk100g are weighed versions of volume measures. All dish juices retained."
+          },
+          {
+            "name": "jauhettua mustapippuria",
+            "grams": 0.5,
+            "fineliRecordId": "op141-fineli-11177",
+            "giRecordId": null,
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "giMatchEvidence": "No matching GI; source-known Fineli CHOAVL 0.0478875g/serving is counted in cumulative omission; not zero. CHOAVL already excludes polyols."
+          },
+          {
+            "name": "silputtua tilliä",
+            "grams": 8,
+            "fineliRecordId": "op141-fineli-369",
+            "giRecordId": "op141-vegetable-imputation40",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "low-carb-vegetable",
+            "preparationKey": "op141-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Mediterranean European anchovy canned in oil, drained125g, as published. Not Swedish spiced sprat/Fineli829. Cream250g and milk100g are weighed versions of volume measures. All dish juices retained."
+          },
+          {
+            "name": "suolaa",
+            "grams": null,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Explicit pure salt",
+            "estimatedAvailableCarbohydratePerServingG": 0,
+            "negligibleAssumption": "Pure salt, no carbohydrate. Unknown salt mass remains null."
+          }
+        ]
+      },
+      "modelInputSha256": "6448fadbb97945473d18505a3a72ca48329cff4b54ade3f6090d4fb1b387094c",
+      "version": {
+        "recipeId": "janssoninkiusaus-juuriselleri",
+        "scenarioId": "defined-weighed-version",
+        "publishedPath": "reseptit/paaruoat/janssoninkiusaus-juuriselleri.md",
+        "publishedSourceLfSha256": "df27d4740a241dae876d78efb121cdde952881b83e2079e78e46bbcc9fc99870",
+        "publishedIngredients": [
+          {
+            "amount": 700,
+            "unit": "g",
+            "item": "juuriselleriä"
+          },
+          {
+            "amount": 125,
+            "unit": "g",
+            "item": "öljyyn säilöttyjä anjovisfileitä, valutettuna"
+          },
+          {
+            "amount": 1,
+            "unit": "kpl",
+            "item": "sipuli"
+          },
+          {
+            "amount": 250,
+            "unit": "ml",
+            "item": "kuohukermaa"
+          },
+          {
+            "amount": 100,
+            "unit": "ml",
+            "item": "täysmaitoa"
+          },
+          {
+            "amount": 2,
+            "unit": "rkl",
+            "item": "voita"
+          },
+          {
+            "amount": null,
+            "unit": "",
+            "item": "mustapippuria"
+          },
+          {
+            "amount": 2,
+            "unit": "rkl",
+            "item": "silputtua tilliä"
+          }
+        ],
+        "priorCommit": "b8ece7ee1e4b80fc26abeb9b94944514875188d7",
+        "priorPack": "gk80-release-8",
+        "preparationBase": [
+          "Suikaloi 700 g kuorittua juuriselleriä ja 55 g sipulia. Voitele vuoka osalla punnitusta 28 g voita; käytä loput voi nokareina ruoan päällä.",
+          "Lado juuriselleri, sipuli ja 125 g valutettuja öljyyn säilöttyjä anjovisfileitä vuokaan. Lisää 250 g 38 % kuohukermaa, 100 g täysmaitoa ja 0,5 g mustapippuria.",
+          "Kypsennä 200 °C:ssa kunnes juuriselleri on pehmeää. Lisää 8 g tilliä ja jaa koko vuoka nesteineen neljään annokseen."
+        ],
+        "bindingVersionNotes": "Mediterranean European anchovy canned in oil, drained125g, as published. Not Swedish spiced sprat/Fineli829. Cream250g and milk100g are weighed versions of volume measures. All dish juices retained.",
+        "weighedIngredients": [
+          {
+            "name": "juuriselleriä",
+            "grams": 700,
+            "fineliRecordId": "op141-fineli-311",
+            "giRecordId": "op141-vegetable-imputation40",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "low-carb-vegetable",
+            "preparationKey": "op141-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Mediterranean European anchovy canned in oil, drained125g, as published. Not Swedish spiced sprat/Fineli829. Cream250g and milk100g are weighed versions of volume measures. All dish juices retained."
+          },
+          {
+            "name": "öljyyn säilöttyjä anjovisfileitä, valutettuna",
+            "grams": 125,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Source-backed source-total ceiling under existing GK omission rule.",
+            "estimatedAvailableCarbohydratePerServingG": 0,
+            "negligibleAssumption": "USDA SR Legacy2018 FDC174183 Fish, anchovy, european, canned in oil, drained solids; nutrient1005 totalCHO 0g/100g; retained 125g/4servings. No fibre/polyol subtraction. Nominal source-model ceiling only; not a clinical or lot maximum. Source total0 implies source-model availableCHO0; no aggregate polyol zero is fabricated."
+          },
+          {
+            "name": "sipuli",
+            "grams": 55,
+            "fineliRecordId": "op141-fineli-335",
+            "giRecordId": "op141-vegetable-imputation40",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "low-carb-vegetable",
+            "preparationKey": "op141-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Mediterranean European anchovy canned in oil, drained125g, as published. Not Swedish spiced sprat/Fineli829. Cream250g and milk100g are weighed versions of volume measures. All dish juices retained."
+          },
+          {
+            "name": "kuohukermaa, rasvaa 38 %",
+            "grams": 250,
+            "fineliRecordId": "op141-fineli-631",
+            "giRecordId": "op141-dairy-imputation30",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "dairy-code",
+            "preparationKey": "op141-dairy-imputation30",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Mediterranean European anchovy canned in oil, drained125g, as published. Not Swedish spiced sprat/Fineli829. Cream250g and milk100g are weighed versions of volume measures. All dish juices retained."
+          },
+          {
+            "name": "täysmaitoa, rasvaa 3,5 %",
+            "grams": 100,
+            "fineliRecordId": "op141-fineli-689",
+            "giRecordId": "op141-dairy-imputation30",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "dairy-code",
+            "preparationKey": "op141-dairy-imputation30",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Mediterranean European anchovy canned in oil, drained125g, as published. Not Swedish spiced sprat/Fineli829. Cream250g and milk100g are weighed versions of volume measures. All dish juices retained."
+          },
+          {
+            "name": "voita",
+            "grams": 28,
+            "fineliRecordId": "op141-fineli-500",
+            "giRecordId": "op141-dairy-imputation30",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "dairy-code",
+            "preparationKey": "op141-dairy-imputation30",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Mediterranean European anchovy canned in oil, drained125g, as published. Not Swedish spiced sprat/Fineli829. Cream250g and milk100g are weighed versions of volume measures. All dish juices retained."
+          },
+          {
+            "name": "jauhettua mustapippuria",
+            "grams": 0.5,
+            "fineliRecordId": "op141-fineli-11177",
+            "giRecordId": null,
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "giMatchEvidence": "No matching GI; source-known Fineli CHOAVL 0.0478875g/serving is counted in cumulative omission; not zero. CHOAVL already excludes polyols."
+          },
+          {
+            "name": "silputtua tilliä",
+            "grams": 8,
+            "fineliRecordId": "op141-fineli-369",
+            "giRecordId": "op141-vegetable-imputation40",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "low-carb-vegetable",
+            "preparationKey": "op141-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Mediterranean European anchovy canned in oil, drained125g, as published. Not Swedish spiced sprat/Fineli829. Cream250g and milk100g are weighed versions of volume measures. All dish juices retained."
+          },
+          {
+            "name": "suolaa",
+            "grams": null,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Explicit pure salt",
+            "estimatedAvailableCarbohydratePerServingG": 0,
+            "negligibleAssumption": "Pure salt, no carbohydrate. Unknown salt mass remains null."
+          }
+        ],
+        "servings": 4,
+        "ownerApproved": false,
+        "publicationAuthorized": false,
+        "macrosRecalculated": false,
+        "methodChange": false
+      },
+      "versionSha256": "b95a1643bc70e26cd0c3efbd3a497418988f798fd5960dda9980579d3cf04116",
+      "ingredientEvidence": [
+        {
+          "index": 0,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "311",
+          "massG": 700,
+          "choPer100g": 2.65,
+          "aggregatePolyols": 0.0,
+          "fibre": 3.1,
+          "giSourceId": "op141-vegetable-imputation40",
+          "omitted": false
+        },
+        {
+          "index": 1,
+          "kind": "USDA_TOTAL_REPORTED_ZERO",
+          "source": {
+            "key": "anchovy_oil_drained",
+            "fdc_id": "174183",
+            "description": "Fish, anchovy, european, canned in oil, drained solids",
+            "nutrients": {
+              "1186": {
+                "id": "1837714",
+                "fdc_id": "174183",
+                "nutrient_id": "1186",
+                "amount": "0",
+                "data_points": "0",
+                "derivation_id": "68",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1259": {
+                "id": "1837715",
+                "fdc_id": "174183",
+                "nutrient_id": "1259",
+                "amount": "0",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1260": {
+                "id": "1837716",
+                "fdc_id": "174183",
+                "nutrient_id": "1260",
+                "amount": "0",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1262": {
+                "id": "1837717",
+                "fdc_id": "174183",
+                "nutrient_id": "1262",
+                "amount": "0",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1261": {
+                "id": "1837718",
+                "fdc_id": "174183",
+                "nutrient_id": "1261",
+                "amount": "0",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1007": {
+                "id": "1837719",
+                "fdc_id": "174183",
+                "nutrient_id": "1007",
+                "amount": "11.1",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1120": {
+                "id": "1837720",
+                "fdc_id": "174183",
+                "nutrient_id": "1120",
+                "amount": "0",
+                "data_points": "0",
+                "derivation_id": "68",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1122": {
+                "id": "1837721",
+                "fdc_id": "174183",
+                "nutrient_id": "1122",
+                "amount": "0",
+                "data_points": "0",
+                "derivation_id": "68",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1127": {
+                "id": "1837722",
+                "fdc_id": "174183",
+                "nutrient_id": "1127",
+                "amount": "0",
+                "data_points": "0",
+                "derivation_id": "57",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1184": {
+                "id": "1837723",
+                "fdc_id": "174183",
+                "nutrient_id": "1184",
+                "amount": "0",
+                "data_points": "0",
+                "derivation_id": "57",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1185": {
+                "id": "1837724",
+                "fdc_id": "174183",
+                "nutrient_id": "1185",
+                "amount": "12.1",
+                "data_points": "0",
+                "derivation_id": "57",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1105": {
+                "id": "1837725",
+                "fdc_id": "174183",
+                "nutrient_id": "1105",
+                "amount": "12",
+                "data_points": "0",
+                "derivation_id": "57",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1107": {
+                "id": "1837726",
+                "fdc_id": "174183",
+                "nutrient_id": "1107",
+                "amount": "0",
+                "data_points": "0",
+                "derivation_id": "68",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1108": {
+                "id": "1837727",
+                "fdc_id": "174183",
+                "nutrient_id": "1108",
+                "amount": "0",
+                "data_points": "0",
+                "derivation_id": "68",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1123": {
+                "id": "1837728",
+                "fdc_id": "174183",
+                "nutrient_id": "1123",
+                "amount": "0",
+                "data_points": "0",
+                "derivation_id": "68",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1125": {
+                "id": "1837729",
+                "fdc_id": "174183",
+                "nutrient_id": "1125",
+                "amount": "0.02",
+                "data_points": "0",
+                "derivation_id": "57",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1126": {
+                "id": "1837730",
+                "fdc_id": "174183",
+                "nutrient_id": "1126",
+                "amount": "0.17",
+                "data_points": "0",
+                "derivation_id": "57",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1057": {
+                "id": "1837731",
+                "fdc_id": "174183",
+                "nutrient_id": "1057",
+                "amount": "0",
+                "data_points": "0",
+                "derivation_id": "68",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1058": {
+                "id": "1837732",
+                "fdc_id": "174183",
+                "nutrient_id": "1058",
+                "amount": "0",
+                "data_points": "0",
+                "derivation_id": "68",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "2000": {
+                "id": "1837733",
+                "fdc_id": "174183",
+                "nutrient_id": "2000",
+                "amount": "0",
+                "data_points": "0",
+                "derivation_id": "68",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1109": {
+                "id": "1837734",
+                "fdc_id": "174183",
+                "nutrient_id": "1109",
+                "amount": "3.33",
+                "data_points": "0",
+                "derivation_id": "57",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1104": {
+                "id": "1837735",
+                "fdc_id": "174183",
+                "nutrient_id": "1104",
+                "amount": "40",
+                "data_points": "0",
+                "derivation_id": "49",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1112": {
+                "id": "1837736",
+                "fdc_id": "174183",
+                "nutrient_id": "1112",
+                "amount": "1.7",
+                "data_points": "0",
+                "derivation_id": "67",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1114": {
+                "id": "1837737",
+                "fdc_id": "174183",
+                "nutrient_id": "1114",
+                "amount": "1.7",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1106": {
+                "id": "1837738",
+                "fdc_id": "174183",
+                "nutrient_id": "1106",
+                "amount": "12",
+                "data_points": "0",
+                "derivation_id": "49",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1187": {
+                "id": "1837739",
+                "fdc_id": "174183",
+                "nutrient_id": "1187",
+                "amount": "13",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1062": {
+                "id": "1837740",
+                "fdc_id": "174183",
+                "nutrient_id": "1062",
+                "amount": "879",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1110": {
+                "id": "1837741",
+                "fdc_id": "174183",
+                "nutrient_id": "1110",
+                "amount": "69",
+                "data_points": "0",
+                "derivation_id": "51",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1190": {
+                "id": "1837742",
+                "fdc_id": "174183",
+                "nutrient_id": "1190",
+                "amount": "13",
+                "data_points": "0",
+                "derivation_id": "49",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1180": {
+                "id": "1837743",
+                "fdc_id": "174183",
+                "nutrient_id": "1180",
+                "amount": "85",
+                "data_points": "0",
+                "derivation_id": "67",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1018": {
+                "id": "1837744",
+                "fdc_id": "174183",
+                "nutrient_id": "1018",
+                "amount": "0",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1167": {
+                "id": "1837745",
+                "fdc_id": "174183",
+                "nutrient_id": "1167",
+                "amount": "19.903",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1170": {
+                "id": "1837746",
+                "fdc_id": "174183",
+                "nutrient_id": "1170",
+                "amount": "0.909",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1175": {
+                "id": "1837747",
+                "fdc_id": "174183",
+                "nutrient_id": "1175",
+                "amount": "0.203",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1212": {
+                "id": "1837748",
+                "fdc_id": "174183",
+                "nutrient_id": "1212",
+                "amount": "1.331",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1213": {
+                "id": "1837749",
+                "fdc_id": "174183",
+                "nutrient_id": "1213",
+                "amount": "2.348",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1214": {
+                "id": "1837750",
+                "fdc_id": "174183",
+                "nutrient_id": "1214",
+                "amount": "2.653",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1216": {
+                "id": "1837751",
+                "fdc_id": "174183",
+                "nutrient_id": "1216",
+                "amount": "0.31",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1219": {
+                "id": "1837752",
+                "fdc_id": "174183",
+                "nutrient_id": "1219",
+                "amount": "1.488",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1220": {
+                "id": "1837753",
+                "fdc_id": "174183",
+                "nutrient_id": "1220",
+                "amount": "1.729",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1221": {
+                "id": "1837754",
+                "fdc_id": "174183",
+                "nutrient_id": "1221",
+                "amount": "0.85",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1223": {
+                "id": "1837755",
+                "fdc_id": "174183",
+                "nutrient_id": "1223",
+                "amount": "2.958",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1227": {
+                "id": "1837756",
+                "fdc_id": "174183",
+                "nutrient_id": "1227",
+                "amount": "1.179",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1087": {
+                "id": "1837757",
+                "fdc_id": "174183",
+                "nutrient_id": "1087",
+                "amount": "232",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1092": {
+                "id": "1837758",
+                "fdc_id": "174183",
+                "nutrient_id": "1092",
+                "amount": "544",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1095": {
+                "id": "1837759",
+                "fdc_id": "174183",
+                "nutrient_id": "1095",
+                "amount": "2.44",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1265": {
+                "id": "1837760",
+                "fdc_id": "174183",
+                "nutrient_id": "1265",
+                "amount": "1.326",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1266": {
+                "id": "1837761",
+                "fdc_id": "174183",
+                "nutrient_id": "1266",
+                "amount": "0.42",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1268": {
+                "id": "1837762",
+                "fdc_id": "174183",
+                "nutrient_id": "1268",
+                "amount": "2.942",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1269": {
+                "id": "1837763",
+                "fdc_id": "174183",
+                "nutrient_id": "1269",
+                "amount": "0.362",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1270": {
+                "id": "1837764",
+                "fdc_id": "174183",
+                "nutrient_id": "1270",
+                "amount": "0.017",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1271": {
+                "id": "1837765",
+                "fdc_id": "174183",
+                "nutrient_id": "1271",
+                "amount": "0.01",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1276": {
+                "id": "1837766",
+                "fdc_id": "174183",
+                "nutrient_id": "1276",
+                "amount": "0.078",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1277": {
+                "id": "1837767",
+                "fdc_id": "174183",
+                "nutrient_id": "1277",
+                "amount": "0.009",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1279": {
+                "id": "1837768",
+                "fdc_id": "174183",
+                "nutrient_id": "1279",
+                "amount": "0.163",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1292": {
+                "id": "1837769",
+                "fdc_id": "174183",
+                "nutrient_id": "1292",
+                "amount": "3.77",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1293": {
+                "id": "1837770",
+                "fdc_id": "174183",
+                "nutrient_id": "1293",
+                "amount": "2.562",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1004": {
+                "id": "1837771",
+                "fdc_id": "174183",
+                "nutrient_id": "1004",
+                "amount": "9.71",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1005": {
+                "id": "1837772",
+                "fdc_id": "174183",
+                "nutrient_id": "1005",
+                "amount": "0",
+                "data_points": "0",
+                "derivation_id": "68",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1008": {
+                "id": "1837773",
+                "fdc_id": "174183",
+                "nutrient_id": "1008",
+                "amount": "210",
+                "data_points": "0",
+                "derivation_id": "49",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1051": {
+                "id": "1837774",
+                "fdc_id": "174183",
+                "nutrient_id": "1051",
+                "amount": "50.3",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1263": {
+                "id": "1837775",
+                "fdc_id": "174183",
+                "nutrient_id": "1263",
+                "amount": "0.02",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1264": {
+                "id": "1837776",
+                "fdc_id": "174183",
+                "nutrient_id": "1264",
+                "amount": "0.428",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1272": {
+                "id": "1837777",
+                "fdc_id": "174183",
+                "nutrient_id": "1272",
+                "amount": "1.292",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1275": {
+                "id": "1837778",
+                "fdc_id": "174183",
+                "nutrient_id": "1275",
+                "amount": "0.59",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1278": {
+                "id": "1837779",
+                "fdc_id": "174183",
+                "nutrient_id": "1278",
+                "amount": "0.763",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1280": {
+                "id": "1837780",
+                "fdc_id": "174183",
+                "nutrient_id": "1280",
+                "amount": "0.041",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1253": {
+                "id": "1837781",
+                "fdc_id": "174183",
+                "nutrient_id": "1253",
+                "amount": "85",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1258": {
+                "id": "1837782",
+                "fdc_id": "174183",
+                "nutrient_id": "1258",
+                "amount": "2.203",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1079": {
+                "id": "1837783",
+                "fdc_id": "174183",
+                "nutrient_id": "1079",
+                "amount": "0",
+                "data_points": "0",
+                "derivation_id": "68",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1089": {
+                "id": "1837784",
+                "fdc_id": "174183",
+                "nutrient_id": "1089",
+                "amount": "4.63",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1090": {
+                "id": "1837785",
+                "fdc_id": "174183",
+                "nutrient_id": "1090",
+                "amount": "69",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1091": {
+                "id": "1837786",
+                "fdc_id": "174183",
+                "nutrient_id": "1091",
+                "amount": "252",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1093": {
+                "id": "1837787",
+                "fdc_id": "174183",
+                "nutrient_id": "1093",
+                "amount": "3668",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1098": {
+                "id": "1837788",
+                "fdc_id": "174183",
+                "nutrient_id": "1098",
+                "amount": "0.339",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1101": {
+                "id": "1837789",
+                "fdc_id": "174183",
+                "nutrient_id": "1101",
+                "amount": "0.1",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1210": {
+                "id": "1837790",
+                "fdc_id": "174183",
+                "nutrient_id": "1210",
+                "amount": "0.324",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1211": {
+                "id": "1837791",
+                "fdc_id": "174183",
+                "nutrient_id": "1211",
+                "amount": "1.266",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1215": {
+                "id": "1837792",
+                "fdc_id": "174183",
+                "nutrient_id": "1215",
+                "amount": "0.855",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1217": {
+                "id": "1837793",
+                "fdc_id": "174183",
+                "nutrient_id": "1217",
+                "amount": "1.128",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1218": {
+                "id": "1837794",
+                "fdc_id": "174183",
+                "nutrient_id": "1218",
+                "amount": "0.975",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1222": {
+                "id": "1837795",
+                "fdc_id": "174183",
+                "nutrient_id": "1222",
+                "amount": "1.747",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1224": {
+                "id": "1837796",
+                "fdc_id": "174183",
+                "nutrient_id": "1224",
+                "amount": "4.312",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1225": {
+                "id": "1837797",
+                "fdc_id": "174183",
+                "nutrient_id": "1225",
+                "amount": "1.387",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1226": {
+                "id": "1837798",
+                "fdc_id": "174183",
+                "nutrient_id": "1226",
+                "amount": "1.021",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1162": {
+                "id": "1837799",
+                "fdc_id": "174183",
+                "nutrient_id": "1162",
+                "amount": "0",
+                "data_points": "0",
+                "derivation_id": "68",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1165": {
+                "id": "1837800",
+                "fdc_id": "174183",
+                "nutrient_id": "1165",
+                "amount": "0.078",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1166": {
+                "id": "1837801",
+                "fdc_id": "174183",
+                "nutrient_id": "1166",
+                "amount": "0.363",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1177": {
+                "id": "1837802",
+                "fdc_id": "174183",
+                "nutrient_id": "1177",
+                "amount": "13",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1178": {
+                "id": "1837803",
+                "fdc_id": "174183",
+                "nutrient_id": "1178",
+                "amount": "0.88",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1003": {
+                "id": "1837804",
+                "fdc_id": "174183",
+                "nutrient_id": "1003",
+                "amount": "28.89",
+                "data_points": "0",
+                "derivation_id": "",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1242": {
+                "id": "1837805",
+                "fdc_id": "174183",
+                "nutrient_id": "1242",
+                "amount": "0",
+                "data_points": "0",
+                "derivation_id": "68",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1246": {
+                "id": "1837806",
+                "fdc_id": "174183",
+                "nutrient_id": "1246",
+                "amount": "0",
+                "data_points": "0",
+                "derivation_id": "68",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              },
+              "1103": {
+                "id": "1837807",
+                "fdc_id": "174183",
+                "nutrient_id": "1103",
+                "amount": "68.1",
+                "data_points": "0",
+                "derivation_id": "16",
+                "min": "",
+                "max": "",
+                "median": "",
+                "footnote": "",
+                "min_year_acquired": ""
+              }
+            },
+            "archiveSha256": "b80817294b8850530aaedf2e515c02593b1824f763a0ff356e5c2081643e6fd0",
+            "sourceUrl": "https://fdc.nal.usda.gov/food-details/174183/nutrients"
+          },
+          "massG": 125,
+          "availableUpperPerServingG": "0",
+          "aggregatePolyols": null
+        },
+        {
+          "index": 2,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "335",
+          "massG": 55,
+          "choPer100g": 4.8,
+          "aggregatePolyols": 0.0,
+          "fibre": 1.2,
+          "giSourceId": "op141-vegetable-imputation40",
+          "omitted": false
+        },
+        {
+          "index": 3,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "631",
+          "massG": 250,
+          "choPer100g": 2.9,
+          "aggregatePolyols": 0.0,
+          "fibre": 0.0,
+          "giSourceId": "op141-dairy-imputation30",
+          "omitted": false
+        },
+        {
+          "index": 4,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "689",
+          "massG": 100,
+          "choPer100g": 4.8,
+          "aggregatePolyols": 0.0,
+          "fibre": 0.0,
+          "giSourceId": "op141-dairy-imputation30",
+          "omitted": false
+        },
+        {
+          "index": 5,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "500",
+          "massG": 28,
+          "choPer100g": 0.8,
+          "aggregatePolyols": 0.0,
+          "fibre": 0.0,
+          "giSourceId": "op141-dairy-imputation30",
+          "omitted": false
+        },
+        {
+          "index": 6,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "11177",
+          "massG": 0.5,
+          "choPer100g": 38.31,
+          "aggregatePolyols": null,
+          "fibre": null,
+          "giSourceId": null,
+          "omitted": true
+        },
+        {
+          "index": 7,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "369",
+          "massG": 8,
+          "choPer100g": 0.9,
+          "aggregatePolyols": 0.0,
+          "fibre": 2.8,
+          "giSourceId": "op141-vegetable-imputation40",
+          "omitted": false
+        }
+      ],
+      "expectedOmittedPerServingG": "0.0478875",
+      "evidenceBundleSha256": "2f6e63c31ff798e07903253ce18c386c3ef1ab02c88277c3454025282db1e4b2"
+    },
+    {
+      "scenarioId": "defined-weighed-hot-version",
+      "input": {
+        "recipeId": "taytetyt-paprikat-vhh",
+        "servings": 4,
+        "ingredients": [
+          {
+            "name": "punaista paprikaa",
+            "grams": 640,
+            "fineliRecordId": "op141-fineli-386",
+            "giRecordId": "op141-vegetable-imputation40",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "low-carb-vegetable",
+            "preparationKey": "op141-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Named crushed-tomato variant:250g crushed tomato replaces original150g plus paste; no extra salad. Red edible peppers640g."
+          },
+          {
+            "name": "naudan jauhelihaa, rasvaa 17 %",
+            "grams": 500,
+            "fineliRecordId": "op141-fineli-11562",
+            "giRecordId": null,
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes."
+          },
+          {
+            "name": "sipulia",
+            "grams": 70,
+            "fineliRecordId": "op141-fineli-335",
+            "giRecordId": "op141-vegetable-imputation40",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "low-carb-vegetable",
+            "preparationKey": "op141-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Named crushed-tomato variant:250g crushed tomato replaces original150g plus paste; no extra salad. Red edible peppers640g."
+          },
+          {
+            "name": "tomaattimurskaa",
+            "grams": 150,
+            "fineliRecordId": "op141-fineli-398",
+            "giRecordId": "op141-vegetable-imputation40",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "low-carb-vegetable",
+            "preparationKey": "op141-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Named crushed-tomato variant:250g crushed tomato replaces original150g plus paste; no extra salad. Red edible peppers640g."
+          },
+          {
+            "name": "tomaattimurskaa pyreen sijasta",
+            "grams": 100,
+            "fineliRecordId": "op141-fineli-398",
+            "giRecordId": "op141-vegetable-imputation40",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "low-carb-vegetable",
+            "preparationKey": "op141-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Named crushed-tomato variant:250g crushed tomato replaces original150g plus paste; no extra salad. Red edible peppers640g."
+          },
+          {
+            "name": "kuivattua oreganoa",
+            "grams": 2,
+            "fineliRecordId": "op141-fineli-11191",
+            "giRecordId": null,
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "giMatchEvidence": "No matching GI; source-known Fineli CHOAVL 0.10815g/serving is counted in cumulative omission; not zero. CHOAVL already excludes polyols."
+          },
+          {
+            "name": "jauhettua mustapippuria",
+            "grams": 1,
+            "fineliRecordId": "op141-fineli-11177",
+            "giRecordId": null,
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "giMatchEvidence": "No matching GI; source-known Fineli CHOAVL 0.095775g/serving is counted in cumulative omission; not zero. CHOAVL already excludes polyols."
+          },
+          {
+            "name": "puolikovaa juustoraastetta, koostumusvertailussa rasvaa 25–35 %",
+            "grams": 150,
+            "fineliRecordId": "op141-fineli-655",
+            "giRecordId": null,
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes."
+          },
+          {
+            "name": "oliiviöljyä",
+            "grams": 13.5,
+            "fineliRecordId": "op141-fineli-536",
+            "giRecordId": null,
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes."
+          },
+          {
+            "name": "suolaa",
+            "grams": null,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Explicit pure salt",
+            "estimatedAvailableCarbohydratePerServingG": 0,
+            "negligibleAssumption": "Pure salt, no carbohydrate. Unknown salt mass remains null."
+          }
+        ]
+      },
+      "modelInputSha256": "91d11fd61f3d9ccae60e49231837d399abcfeb979807bd3eb1dd9bec406e3f86",
+      "version": {
+        "recipeId": "taytetyt-paprikat-vhh",
+        "scenarioId": "defined-weighed-hot-version",
+        "publishedPath": "reseptit/paaruoat/taytetyt-paprikat-vhh.md",
+        "publishedSourceLfSha256": "1135c86674c6b7faf8ef4d936c19fff9a729a588fc842270ac3a31e25d411eb5",
+        "publishedIngredients": [
+          {
+            "amount": 4,
+            "unit": "kpl",
+            "item": "isoa paprikaa"
+          },
+          {
+            "amount": 500,
+            "unit": "g",
+            "item": "naudan jauhelihaa"
+          },
+          {
+            "amount": 1,
+            "unit": "kpl",
+            "item": "pieni sipuli"
+          },
+          {
+            "amount": 150,
+            "unit": "g",
+            "item": "tomaattimurskaa"
+          },
+          {
+            "amount": 1,
+            "unit": "rkl",
+            "item": "tomaattipyreetä"
+          },
+          {
+            "amount": 1,
+            "unit": "tl",
+            "item": "kuivattua oreganoa"
+          },
+          {
+            "amount": 0.5,
+            "unit": "tl",
+            "item": "suolaa"
+          },
+          {
+            "amount": 0.5,
+            "unit": "tl",
+            "item": "mustapippuria"
+          },
+          {
+            "amount": 150,
+            "unit": "g",
+            "item": "juustoraastetta"
+          },
+          {
+            "amount": 1,
+            "unit": "rkl",
+            "item": "oliiviöljyä"
+          }
+        ],
+        "priorCommit": "b8ece7ee1e4b80fc26abeb9b94944514875188d7",
+        "priorPack": "gk80-release-8",
+        "preparationBase": [
+          "Tomaattimurskaversio:100 g lisämurskaa korvaa 16 g pyreetä, yhteensä 250 g murskaa. Ruskista liha ja sipuli 13,5 g öljyssä.",
+          "Lisää kaikki murska, oregano ja mustapippuri. Hauduta sakeaksi. Täytä 640 g syötävää punaista paprikaa koko täytteellä, lisää 150 g juustoa.",
+          "Kypsennä 200 °C:ssa kunnes liha on kypsää ja paprika pehmeää. Jaa koko vuoka nesteineen neljään annokseen, ei erillistä salaattia laskelmassa."
+        ],
+        "bindingVersionNotes": "Named crushed-tomato variant:250g crushed tomato replaces original150g plus paste; no extra salad. Red edible peppers640g.",
+        "weighedIngredients": [
+          {
+            "name": "punaista paprikaa",
+            "grams": 640,
+            "fineliRecordId": "op141-fineli-386",
+            "giRecordId": "op141-vegetable-imputation40",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "low-carb-vegetable",
+            "preparationKey": "op141-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Named crushed-tomato variant:250g crushed tomato replaces original150g plus paste; no extra salad. Red edible peppers640g."
+          },
+          {
+            "name": "naudan jauhelihaa, rasvaa 17 %",
+            "grams": 500,
+            "fineliRecordId": "op141-fineli-11562",
+            "giRecordId": null,
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes."
+          },
+          {
+            "name": "sipulia",
+            "grams": 70,
+            "fineliRecordId": "op141-fineli-335",
+            "giRecordId": "op141-vegetable-imputation40",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "low-carb-vegetable",
+            "preparationKey": "op141-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Named crushed-tomato variant:250g crushed tomato replaces original150g plus paste; no extra salad. Red edible peppers640g."
+          },
+          {
+            "name": "tomaattimurskaa",
+            "grams": 150,
+            "fineliRecordId": "op141-fineli-398",
+            "giRecordId": "op141-vegetable-imputation40",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "low-carb-vegetable",
+            "preparationKey": "op141-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Named crushed-tomato variant:250g crushed tomato replaces original150g plus paste; no extra salad. Red edible peppers640g."
+          },
+          {
+            "name": "tomaattimurskaa pyreen sijasta",
+            "grams": 100,
+            "fineliRecordId": "op141-fineli-398",
+            "giRecordId": "op141-vegetable-imputation40",
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "foodKey": "low-carb-vegetable",
+            "preparationKey": "op141-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI assignment, not measured GI. Named crushed-tomato variant:250g crushed tomato replaces original150g plus paste; no extra salad. Red edible peppers640g."
+          },
+          {
+            "name": "kuivattua oreganoa",
+            "grams": 2,
+            "fineliRecordId": "op141-fineli-11191",
+            "giRecordId": null,
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "giMatchEvidence": "No matching GI; source-known Fineli CHOAVL 0.10815g/serving is counted in cumulative omission; not zero. CHOAVL already excludes polyols."
+          },
+          {
+            "name": "jauhettua mustapippuria",
+            "grams": 1,
+            "fineliRecordId": "op141-fineli-11177",
+            "giRecordId": null,
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes.",
+            "giMatchEvidence": "No matching GI; source-known Fineli CHOAVL 0.095775g/serving is counted in cumulative omission; not zero. CHOAVL already excludes polyols."
+          },
+          {
+            "name": "puolikovaa juustoraastetta, koostumusvertailussa rasvaa 25–35 %",
+            "grams": 150,
+            "fineliRecordId": "op141-fineli-655",
+            "giRecordId": null,
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes."
+          },
+          {
+            "name": "oliiviöljyä",
+            "grams": 13.5,
+            "fineliRecordId": "op141-fineli-536",
+            "giRecordId": null,
+            "massEvidence": "Exact proposed weighed edible input; retention1, all specified solids/juices used. Preparation-specific composition proxy disclosed in version notes."
+          },
+          {
+            "name": "suolaa",
+            "grams": null,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Explicit pure salt",
+            "estimatedAvailableCarbohydratePerServingG": 0,
+            "negligibleAssumption": "Pure salt, no carbohydrate. Unknown salt mass remains null."
+          }
+        ],
+        "servings": 4,
+        "ownerApproved": false,
+        "publicationAuthorized": false,
+        "macrosRecalculated": false,
+        "methodChange": false
+      },
+      "versionSha256": "55448706aaff63373c6b96ed70bc9719281f2e125ab305b05ec86c8c844bf271",
+      "ingredientEvidence": [
+        {
+          "index": 0,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "386",
+          "massG": 640,
+          "choPer100g": 4.5,
+          "aggregatePolyols": 0.0,
+          "fibre": 1.9,
+          "giSourceId": "op141-vegetable-imputation40",
+          "omitted": false
+        },
+        {
+          "index": 1,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "11562",
+          "massG": 500,
+          "choPer100g": 0.0,
+          "aggregatePolyols": 0.0,
+          "fibre": 0.0,
+          "giSourceId": null,
+          "omitted": false
+        },
+        {
+          "index": 2,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "335",
+          "massG": 70,
+          "choPer100g": 4.8,
+          "aggregatePolyols": 0.0,
+          "fibre": 1.2,
+          "giSourceId": "op141-vegetable-imputation40",
+          "omitted": false
+        },
+        {
+          "index": 3,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "398",
+          "massG": 150,
+          "choPer100g": 3.45,
+          "aggregatePolyols": 0.0,
+          "fibre": 0.4,
+          "giSourceId": "op141-vegetable-imputation40",
+          "omitted": false
+        },
+        {
+          "index": 4,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "398",
+          "massG": 100,
+          "choPer100g": 3.45,
+          "aggregatePolyols": 0.0,
+          "fibre": 0.4,
+          "giSourceId": "op141-vegetable-imputation40",
+          "omitted": false
+        },
+        {
+          "index": 5,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "11191",
+          "massG": 2,
+          "choPer100g": 21.63,
+          "aggregatePolyols": null,
+          "fibre": null,
+          "giSourceId": null,
+          "omitted": true
+        },
+        {
+          "index": 6,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "11177",
+          "massG": 1,
+          "choPer100g": 38.31,
+          "aggregatePolyols": null,
+          "fibre": null,
+          "giSourceId": null,
+          "omitted": true
+        },
+        {
+          "index": 7,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "655",
+          "massG": 150,
+          "choPer100g": 0.0,
+          "aggregatePolyols": 0.0,
+          "fibre": 0.0,
+          "giSourceId": null,
+          "omitted": false
+        },
+        {
+          "index": 8,
+          "kind": "FINELI_CHOAVL_EXCLUDING_FIBRE_AND_POLYOLS",
+          "foodId": "536",
+          "massG": 13.5,
+          "choPer100g": 0.0,
+          "aggregatePolyols": 0.0,
+          "fibre": 0.0,
+          "giSourceId": null,
+          "omitted": false
+        }
+      ],
+      "expectedOmittedPerServingG": "0.203925",
+      "evidenceBundleSha256": "0f1ae48addbea40ed82a24bb024529a4fb79f524c6467c63abf6603d3038834b"
+    }
+  ],
+  "holds": [
+    {
+      "recipeId": "congee-riisipuuro",
+      "status": "HOLD",
+      "newResearchQuestionAndOutcome": "GI80 is a specific40-minute jasmine porridge; published60-minute congee is not the same preparation. Could prepare exact40-minute version, but current AFCD dry-rice A and sesame-oil/stock sources also need explicit identities. No automatic use of GI31 black-rice/coconut mixed porridge."
+    },
+    {
+      "recipeId": "japanilainen-kabocha-puuro",
+      "status": "HOLD",
+      "newResearchQuestionAndOutcome": "New full-table check resolves GI identity: row1799 is explicitly BOILED BUTTERNUT GI51±6,n10,not a generic pumpkin mean. Recipe says butternut rather than kabocha, so retain that name. Exact butternut available-CHO composition independent of AFCD polyol issue remains unclosed. Coconut200ml/2 using official Clearspring3.4g/100ml yields3.4g totalCHO/serving and fails omission; Fineli29014 CHOAVL is an alternative frozen composition proxy requiring an explicit bound version, not a density0.92 shortcut. Rice40min steaming vs published simmered porridge also needs reconciliation. No whole GK yet."
+    },
+    {
+      "recipeId": "rahka-marjakerroskulho",
+      "status": "HOLD",
+      "newResearchQuestionAndOutcome": "New source check found that GI53 row1092 is Canadian wild blueberry, not Finnish forest bilberry and not automatically cultivated highbush blueberry Fineli35596. Fineli35596 now supplies independent CHOAVL12.52, but does not establish species/preparation GI.50g/4 gives1.565g A/serving, beyond omission. Raw strawberries can use named GI40, but do not publish partial bowl."
+    }
+  ],
+  "foods": [
+    {
+      "id": "op141-fineli-311",
+      "name": "JUURISELLERI, MUKULASELLERI",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/311",
+      "retrievedAt": "2026-11-02",
+      "licence": "THL Fineli Release20 CC BY4.0",
+      "state": "RAW",
+      "basis": "per100g-edible",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Explicit source SUGOH",
+      "per100g": {
+        "carbohydrate": 2.65,
+        "fibre": 3.1,
+        "polyols": 0.0,
+        "protein": 1.3,
+        "fat": 0.1
+      },
+      "primaryReference": {
+        "source_id": "311",
+        "name": "JUURISELLERI, MUKULASELLERI",
+        "food_type": "FOOD",
+        "process": "RAW",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "ROOT",
+        "food_class": "VEGFRESH",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 2.65,
+          "fibre_g_per_100g": 3.1,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 1.3,
+          "fat_g_per_100g": 0.1
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "D",
+            "method_type": "AG",
+            "method_indicator": "MI1302"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0181"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "D",
+            "method_type": "S",
+            "method_indicator": "MI0123"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MIR006"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0172"
+          }
+        },
+        "portion_mass_g": {
+          "KPL_S": 200.0,
+          "KPL_M": 600.0,
+          "KPL_L": 800.0
+        }
+      },
+      "referenceLfSha256": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76"
+    },
+    {
+      "id": "op141-fineli-335",
+      "name": "SIPULI, KELTASIPULI",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/335",
+      "retrievedAt": "2026-11-02",
+      "licence": "THL Fineli Release20 CC BY4.0",
+      "state": "RAW",
+      "basis": "per100g-edible",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Explicit source SUGOH",
+      "per100g": {
+        "carbohydrate": 4.8,
+        "fibre": 1.2,
+        "polyols": 0.0,
+        "protein": 1.25,
+        "fat": 0.1
+      },
+      "primaryReference": {
+        "source_id": "335",
+        "name": "SIPULI, KELTASIPULI",
+        "food_type": "FOOD",
+        "process": "RAW",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "VEGONI",
+        "food_class": "VEGFRESH",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 4.8,
+          "fibre_g_per_100g": 1.2,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 1.25,
+          "fat_g_per_100g": 0.1
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0181"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "T",
+            "method_indicator": "MI0123"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MIR006"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0172"
+          }
+        },
+        "portion_mass_g": {
+          "KPL_S": 30.0,
+          "KPL_M": 55.0,
+          "KPL_L": 200.0,
+          "DL": 90.0
+        }
+      },
+      "referenceLfSha256": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76"
+    },
+    {
+      "id": "op141-fineli-631",
+      "name": "KERMA, KUOHUKERMA, RASVAA 38 %",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/631",
+      "retrievedAt": "2026-11-02",
+      "licence": "THL Fineli Release20 CC BY4.0",
+      "state": "IND",
+      "basis": "per100g-edible",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Explicit source SUGOH",
+      "per100g": {
+        "carbohydrate": 2.9,
+        "fibre": 0.0,
+        "polyols": 0.0,
+        "protein": 1.88,
+        "fat": 38.0
+      },
+      "primaryReference": {
+        "source_id": "631",
+        "name": "KERMA, KUOHUKERMA, RASVAA 38 %",
+        "food_type": "FOOD",
+        "process": "IND",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "CREAM",
+        "food_class": "CREAM",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 2.9,
+          "fibre_g_per_100g": 0.0,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 1.88,
+          "fat_g_per_100g": 38.0
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0181"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0123"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "U",
+            "method_indicator": "MIR007"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0172"
+          }
+        },
+        "portion_mass_g": {
+          "DL": 100.0,
+          "RKL": 15.0,
+          "TL": 5.0
+        }
+      },
+      "referenceLfSha256": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76"
+    },
+    {
+      "id": "op141-fineli-689",
+      "name": "MAITO, TÄYSMAITO, D-VITAMIINIA 1 UG",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/689",
+      "retrievedAt": "2026-11-02",
+      "licence": "THL Fineli Release20 CC BY4.0",
+      "state": "IND",
+      "basis": "per100g-edible",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Explicit source SUGOH",
+      "per100g": {
+        "carbohydrate": 4.8,
+        "fibre": 0.0,
+        "polyols": 0.0,
+        "protein": 3.0,
+        "fat": 3.5
+      },
+      "primaryReference": {
+        "source_id": "689",
+        "name": "MAITO, TÄYSMAITO, D-VITAMIINIA 1 UG",
+        "food_type": "FOOD",
+        "process": "IND",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "MILKHF",
+        "food_class": "MILKHF",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 4.8,
+          "fibre_g_per_100g": 0.0,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 3.0,
+          "fat_g_per_100g": 3.5
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "L",
+            "method_type": "P",
+            "method_indicator": "MIR003"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0181"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0123"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "U",
+            "method_indicator": "MIR006"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0172"
+          }
+        },
+        "portion_mass_g": {
+          "DL": 100.0,
+          "RKL": 15.0,
+          "TL": 5.0
+        }
+      },
+      "referenceLfSha256": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76"
+    },
+    {
+      "id": "op141-fineli-500",
+      "name": "VOI",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/500",
+      "retrievedAt": "2026-11-02",
+      "licence": "THL Fineli Release20 CC BY4.0",
+      "state": "IND",
+      "basis": "per100g-edible",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Explicit source SUGOH",
+      "per100g": {
+        "carbohydrate": 0.8,
+        "fibre": 0.0,
+        "polyols": 0.0,
+        "protein": 1.19,
+        "fat": 81.3
+      },
+      "primaryReference": {
+        "source_id": "500",
+        "name": "VOI",
+        "food_type": "FOOD",
+        "process": "IND",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "BUTTER",
+        "food_class": "BUTTER",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 0.8,
+          "fibre_g_per_100g": 0.0,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 1.19,
+          "fat_g_per_100g": 81.3
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0181"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0123"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "U",
+            "method_indicator": "MIR007"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0172"
+          }
+        },
+        "portion_mass_g": {
+          "DL": 95.0,
+          "RKL": 14.0,
+          "TL": 4.5
+        }
+      },
+      "referenceLfSha256": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76"
+    },
+    {
+      "id": "op141-fineli-11177",
+      "name": "MUSTAPIPPURI",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11177",
+      "retrievedAt": "2026-11-02",
+      "licence": "THL Fineli Release20 CC BY4.0",
+      "state": "DRIE",
+      "basis": "per100g-edible",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "polyolsSourceVerified": false,
+      "polyolsEvidence": "",
+      "per100g": {
+        "carbohydrate": 38.31,
+        "fibre": null,
+        "polyols": null,
+        "protein": 10.9,
+        "fat": 3.3
+      },
+      "primaryReference": {
+        "source_id": "11177",
+        "name": "MUSTAPIPPURI",
+        "food_type": "FOOD",
+        "process": "DRIE",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "FLAVSEED",
+        "food_class": "SPICES",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 38.31,
+          "fibre_g_per_100g": null,
+          "polyols_g_per_100g": null,
+          "protein_g_per_100g": 10.9,
+          "fat_g_per_100g": 3.3
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          }
+        },
+        "portion_mass_g": {
+          "RKL": 6.5,
+          "TL": 2.0
+        }
+      },
+      "referenceLfSha256": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76"
+    },
+    {
+      "id": "op141-fineli-369",
+      "name": "TILLI, TUORE",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/369",
+      "retrievedAt": "2026-11-02",
+      "licence": "THL Fineli Release20 CC BY4.0",
+      "state": "RAW",
+      "basis": "per100g-edible",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Explicit source SUGOH",
+      "per100g": {
+        "carbohydrate": 0.9,
+        "fibre": 2.8,
+        "polyols": 0.0,
+        "protein": 3.69,
+        "fat": 0.8
+      },
+      "primaryReference": {
+        "source_id": "369",
+        "name": "TILLI, TUORE",
+        "food_type": "FOOD",
+        "process": "RAW",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "VEGLEAF",
+        "food_class": "VEGFRESH",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 0.9,
+          "fibre_g_per_100g": 2.8,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 3.69,
+          "fat_g_per_100g": 0.8
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0181"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0123"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "IG",
+            "method_indicator": "MIR003"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0172"
+          }
+        },
+        "portion_mass_g": {
+          "RKL": 2.5
+        }
+      },
+      "referenceLfSha256": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76"
+    },
+    {
+      "id": "op141-fineli-386",
+      "name": "PAPRIKA, PUNAINEN",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/386",
+      "retrievedAt": "2026-11-02",
+      "licence": "THL Fineli Release20 CC BY4.0",
+      "state": "RAW",
+      "basis": "per100g-edible",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Explicit source SUGOH",
+      "per100g": {
+        "carbohydrate": 4.5,
+        "fibre": 1.9,
+        "polyols": 0.0,
+        "protein": 0.94,
+        "fat": 0.3
+      },
+      "primaryReference": {
+        "source_id": "386",
+        "name": "PAPRIKA, PUNAINEN",
+        "food_type": "FOOD",
+        "process": "RAW",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "VEGFRU",
+        "food_class": "VEGFRESH",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 4.5,
+          "fibre_g_per_100g": 1.9,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 0.94,
+          "fat_g_per_100g": 0.3
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0181"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0123"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MIR006"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0172"
+          }
+        },
+        "portion_mass_g": {
+          "KPL_S": 120.0,
+          "KPL_M": 170.0,
+          "KPL_L": 230.0
+        }
+      },
+      "referenceLfSha256": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76"
+    },
+    {
+      "id": "op141-fineli-11562",
+      "name": "JAUHELIHA, NAUDAN, RASVAA 17 %",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11562",
+      "retrievedAt": "2026-11-02",
+      "licence": "THL Fineli Release20 CC BY4.0",
+      "state": "RAW",
+      "basis": "per100g-edible",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Explicit source SUGOH",
+      "per100g": {
+        "carbohydrate": 0.0,
+        "fibre": 0.0,
+        "polyols": 0.0,
+        "protein": 19.065,
+        "fat": 16.949
+      },
+      "primaryReference": {
+        "source_id": "11562",
+        "name": "JAUHELIHA, NAUDAN, RASVAA 17 %",
+        "food_type": "FOOD",
+        "process": "RAW",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "BEEF",
+        "food_class": "MSTEAK",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 0.0,
+          "fibre_g_per_100g": 0.0,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 19.065,
+          "fat_g_per_100g": 16.949
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "D",
+            "method_type": "AG",
+            "method_indicator": "MI1302"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0181"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "D",
+            "method_type": "AG",
+            "method_indicator": "MI0123"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "U",
+            "method_indicator": "MIR007"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "U",
+            "method_indicator": "MIR007"
+          }
+        },
+        "portion_mass_g": {}
+      },
+      "referenceLfSha256": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76"
+    },
+    {
+      "id": "op141-fineli-398",
+      "name": "TOMAATTIMURSKA",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/398",
+      "retrievedAt": "2026-11-02",
+      "licence": "THL Fineli Release20 CC BY4.0",
+      "state": "CANN",
+      "basis": "per100g-edible",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Explicit source SUGOH",
+      "per100g": {
+        "carbohydrate": 3.45,
+        "fibre": 0.4,
+        "polyols": 0.0,
+        "protein": 0.55,
+        "fat": 0.2
+      },
+      "primaryReference": {
+        "source_id": "398",
+        "name": "TOMAATTIMURSKA",
+        "food_type": "FOOD",
+        "process": "CANN",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "VEGCANN",
+        "food_class": "VEGCANN",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 3.45,
+          "fibre_g_per_100g": 0.4,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 0.55,
+          "fat_g_per_100g": 0.2
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "L",
+            "method_type": "P",
+            "method_indicator": "MIR003"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0181"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "T",
+            "method_indicator": "MI0123"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "IG",
+            "method_indicator": "MIR003"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0172"
+          }
+        },
+        "portion_mass_g": {
+          "DL": 100.0,
+          "RKL": 15.0
+        }
+      },
+      "referenceLfSha256": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76"
+    },
+    {
+      "id": "op141-fineli-11191",
+      "name": "OREGANO, KUIVATTU",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11191",
+      "retrievedAt": "2026-11-02",
+      "licence": "THL Fineli Release20 CC BY4.0",
+      "state": "DRIE",
+      "basis": "per100g-edible",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "polyolsSourceVerified": false,
+      "polyolsEvidence": "",
+      "per100g": {
+        "carbohydrate": 21.63,
+        "fibre": null,
+        "polyols": null,
+        "protein": 11.0,
+        "fat": 10.3
+      },
+      "primaryReference": {
+        "source_id": "11191",
+        "name": "OREGANO, KUIVATTU",
+        "food_type": "FOOD",
+        "process": "DRIE",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "HERB",
+        "food_class": "SPICES",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 21.63,
+          "fibre_g_per_100g": null,
+          "polyols_g_per_100g": null,
+          "protein_g_per_100g": 11.0,
+          "fat_g_per_100g": 10.3
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          }
+        },
+        "portion_mass_g": {
+          "RKL": 1.5,
+          "TL": 0.5
+        }
+      },
+      "referenceLfSha256": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76"
+    },
+    {
+      "id": "op141-fineli-655",
+      "name": "JUUSTO, PUOLIKOVA JUUSTO, RASVAA 25-35 %, LAPPI/SMÅLAND/BILLINGE/RUSTHOLLI",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/655",
+      "retrievedAt": "2026-11-02",
+      "licence": "THL Fineli Release20 CC BY4.0",
+      "state": "IND",
+      "basis": "per100g-edible",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Explicit source SUGOH",
+      "per100g": {
+        "carbohydrate": 0.0,
+        "fibre": 0.0,
+        "polyols": 0.0,
+        "protein": 27.88,
+        "fat": 28.4
+      },
+      "primaryReference": {
+        "source_id": "655",
+        "name": "JUUSTO, PUOLIKOVA JUUSTO, RASVAA 25-35 %, LAPPI/SMÅLAND/BILLINGE/RUSTHOLLI",
+        "food_type": "FOOD",
+        "process": "IND",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "CHEECUHI",
+        "food_class": "CHEESCUR",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 0.0,
+          "fibre_g_per_100g": 0.0,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 27.88,
+          "fat_g_per_100g": 28.4
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "IG",
+            "method_indicator": "MIR003"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0123"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "U",
+            "method_indicator": "MIR007"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0172"
+          }
+        },
+        "portion_mass_g": {
+          "KPL_S": 4.0,
+          "KPL_M": 8.0,
+          "KPL_L": 12.0
+        }
+      },
+      "referenceLfSha256": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76"
+    },
+    {
+      "id": "op141-fineli-536",
+      "name": "OLIIVIÖLJY",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/536",
+      "retrievedAt": "2026-11-02",
+      "licence": "THL Fineli Release20 CC BY4.0",
+      "state": "IND",
+      "basis": "per100g-edible",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Explicit source SUGOH",
+      "per100g": {
+        "carbohydrate": 0.0,
+        "fibre": 0.0,
+        "polyols": 0.0,
+        "protein": 0.0,
+        "fat": 100.0
+      },
+      "primaryReference": {
+        "source_id": "536",
+        "name": "OLIIVIÖLJY",
+        "food_type": "FOOD",
+        "process": "IND",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "OIL",
+        "food_class": "OIL",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 0.0,
+          "fibre_g_per_100g": 0.0,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 0.0,
+          "fat_g_per_100g": 100.0
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "IG",
+            "method_indicator": "MIR003"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0123"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "U",
+            "method_indicator": "MIR007"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0172"
+          }
+        },
+        "portion_mass_g": {
+          "DL": 90.0,
+          "RKL": 13.5,
+          "TL": 4.5
+        }
+      },
+      "referenceLfSha256": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76"
+    }
+  ],
+  "giRecords": [
+    {
+      "id": "op141-vegetable-imputation40",
+      "gi": 40,
+      "foodKey": "low-carb-vegetable",
+      "preparationKey": "op141-vegetable-imputation40",
+      "food": "Published assignment for low-carbohydrate vegetables, not measured food GI",
+      "preparation": "Candidate-specific application; see full source card and weighed version",
+      "qualityTier": "SUPPLEMENTARY",
+      "referenceScale": "GLUCOSE_100",
+      "matchKind": "ANALOG",
+      "confidence": "LOW",
+      "evidenceKind": "PUBLISHED_IMPUTATION",
+      "originalSourceCard": {
+        "id": "vegetable-imputation40",
+        "gi": 40,
+        "scale": "GLUCOSE_100",
+        "family": "low-carb-vegetable",
+        "food": "Published assignment for low-carbohydrate vegetables, not measured food GI",
+        "evidenceKind": "PUBLISHED_IMPUTATION",
+        "sourceUrl": "https://doi.org/10.2337/dc08-1239",
+        "accessUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC2584181/fullTextXML",
+        "documentSha256": "b3738226fa546af99ac25e5e3fa106e86cd204445f9153ef5ee762cb25f3b25a",
+        "location": "Conclusions: assignment discussion",
+        "originalStudy": "Atkinson, Foster-Powell, Brand-Miller 2008",
+        "confidence": "LOW",
+        "limitations": "Coding estimate only. Application to named fresh herbs, sprouts and alliums is an explicit project interpretation. It does not establish a physiological maximum or a one-unit uncertainty bound. Not a default for seed spices, flour, sauces or stock.",
+        "newRecordInRun2": true,
+        "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc"
+      },
+      "source": {
+        "title": "PROJECT PI, not measured food GI: Published assignment for low-carbohydrate vegetables, not measured food GI",
+        "url": "https://doi.org/10.2337/dc08-1239",
+        "table": "Conclusions: assignment discussion",
+        "year": 2008,
+        "published": true,
+        "iso26642Confirmed": false,
+        "qualityEvidence": "Coding estimate only. Application to named fresh herbs, sprouts and alliums is an explicit project interpretation. It does not establish a physiological maximum or a one-unit uncertainty bound. Not a default for seed spices, flour, sauces or stock."
+      }
+    },
+    {
+      "id": "op141-dairy-imputation30",
+      "gi": 30,
+      "foodKey": "dairy-code",
+      "preparationKey": "op141-dairy-imputation30",
+      "food": "Unsweetened animal dairy coding assignment",
+      "preparation": "Candidate-specific application; see full source card and weighed version",
+      "qualityTier": "SUPPLEMENTARY",
+      "referenceScale": "GLUCOSE_100",
+      "matchKind": "ANALOG",
+      "confidence": "LOW",
+      "evidenceKind": "PUBLISHED_IMPUTATION",
+      "originalSourceCard": {
+        "id": "dairy-imputation30",
+        "gi": 30,
+        "scale": "GLUCOSE_100",
+        "family": "dairy-code",
+        "food": "Unsweetened animal dairy coding assignment",
+        "evidenceKind": "PUBLISHED_IMPUTATION",
+        "sourceUrl": "https://doi.org/10.2337/dc08-1239",
+        "location": "Conclusions, low-carbohydrate product assignment",
+        "confidence": "LOW",
+        "limitations": "Not tested cream, cheese or butter. Excludes plant drinks and sweetened dairy.",
+        "evidenceHash": "18dd13349258a887809f1dec2abce637ce648b7d2f829c690243734139912850"
+      },
+      "source": {
+        "title": "PROJECT PI, not measured food GI: Unsweetened animal dairy coding assignment",
+        "url": "https://doi.org/10.2337/dc08-1239",
+        "table": "Conclusions, low-carbohydrate product assignment",
+        "year": 2008,
+        "published": true,
+        "iso26642Confirmed": false,
+        "qualityEvidence": "Not tested cream, cheese or butter. Excludes plant drinks and sweetened dairy."
+      }
+    }
+  ]
+}
