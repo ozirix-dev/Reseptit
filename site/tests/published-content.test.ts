@@ -8,9 +8,11 @@ import { parseMarkdown } from "../src/content/markdown";
 
 // These historical batch expectations retain the exact main nutrition snapshots.
 // All current candidate macros in source, evidence and generated publication are
-// independently checked in gk80-release2.test.ts, including every intentional delta.
+// independently checked in gk80-release2.test.ts and gk80-combined.test.ts,
+// including all ten current Operation142 versions and explicit macro withholding.
 const recoveryHistorical=JSON.parse(await readFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-uunikanapasta-release/historical-metadata.json'),'utf8'));
-const historicalMacros={[recoveryHistorical.recipeId]:{nutrition:recoveryHistorical.nutrition},...JSON.parse(await readFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-release-7/historical-macros.json'),'utf8')).recipes,...JSON.parse(await readFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-release-6/historical-macros.json'),'utf8')).recipes,...JSON.parse(await readFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-release-review/historical-macros.json'),'utf8')).recipes,...JSON.parse(await readFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-release-5/historical-macros.json'),'utf8')).recipes};
+const op142Historical=JSON.parse(await readFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-operation142/historical-macros.json'),'utf8'));
+const historicalMacros={...op142Historical.recipes,[recoveryHistorical.recipeId]:{nutrition:recoveryHistorical.nutrition},...JSON.parse(await readFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-release-7/historical-macros.json'),'utf8')).recipes,...JSON.parse(await readFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-release-6/historical-macros.json'),'utf8')).recipes,...JSON.parse(await readFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-release-review/historical-macros.json'),'utf8')).recipes,...JSON.parse(await readFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-release-5/historical-macros.json'),'utf8')).recipes};
 const siteContent={...currentSiteContent,recipes:currentSiteContent.recipes.map(r=>({...r,nutrition:historicalMacros[r.recipeId]?.nutrition??r.nutrition}))};
 
 async function markdownFiles(dir: string): Promise<string[]> {
@@ -223,7 +225,7 @@ test("the 40 new recipes are unique, published in Finnish, and have their own im
     "chili-con-carne-kukkakaaliriisi", "kana-fajita-pelti", "kana-enchilada-kukkakaalivuoka", "tacokulho-nauta-avokado", "carnitas-salaattitacot",
     "miso-lohi-paksoi", "shoyu-kanakeitto-konjac", "kana-yakitori-kaalilla", "okonomiyaki-kaaliletut", "japanilainen-curry-tofulla",
   ];
-  const recipes = siteContent.recipes.filter(recipe => expectedIds.includes(recipe.recipeId));
+  const recipes = siteContent.recipes.filter(recipe => recipe.locale === "fi" && expectedIds.includes(recipe.recipeId));
   assert.equal(recipes.length, 40);
   assert.deepEqual(recipes.map(recipe => recipe.recipeId).sort(), [...expectedIds].sort());
   assert.equal(new Set(recipes.map(recipe => recipe.recipeId)).size, 40);

@@ -95,7 +95,8 @@ PI40/50/30 ovat projektin nimettyjä laskennallisia sovelluksia, eivät mitattuj
 - Julkisen aineiston kohdennettu tarkistus: **40/40 HTML-sivua PASS**, oikeat GK:t, PI/HUMAN-luokittelu sekä pidätysten puuttuminen myös JSON-LD:stä (`public-qa.json`). Ei selaimen interaktiotestiä.
 - Lopullinen build: **703 reittiä**, 695 reseptikielisivua, ravintoarvojen strict-auditointi ilman ristiriitoja, 143/326 GK-ehdokasta. Neljä paikallista buildia: ensimmäisen jälkeen korjattiin käännösmetadata, myöhemmin palautettiin jogurtin juoksettumisohje ja täsmennettiin sakkaroosilähteen selite. Viimeistä onnistunutta buildia ei toistettu muuttumattomana.
 - Historiallisten testien vanhat syötteet on säilytetty mainin muuttumattomina testifixtureina, ei päivitetty nykyisiä muutoksia vastaaviksi. Nykyiset kymmenen versiota ja kaikki 133 aiempaa numeerista tulosta testataan lisäksi oikeasta nykyisestä raportista.
-- GitHub: tarkoitus on yksi automaattinen koottu Draft-PR-CI. Commitin jälkeinen täsmällinen CI-tulos ja HEAD näkyvät PR:n Checks-välilehdessä ja ajon loppuraportissa; tätä dokumenttia ei päivitetä uudella commitilla pelkän CI-merkinnän vuoksi.
+- Yksikkötestit kokonaisuutena korjauksen jälkeen: **225/225 PASS**.
+- GitHubin ensimmäinen koottu PR-CI #41369546048 läpäisi buildin mutta epäonnistui kolmessa `published-content`-historiatestissä: vanha makronäyttöodotus ja FI-kokoelman kielirajauksen puute. Mainin alkuperäiset kymmenen makropakettia säilytettiin testifixturessa ja suomenkielinen kokoelma rajattiin FI:hin. Nykyisten versioiden erillistä tarkistusta ei ohitettu eikä resepti-/laskentasisältöä muutettu korjauksessa. Tämä todellinen testivirhe oikeuttaa toimeksiannon mukaisen toisen automaattisen PR-CI:n. Ei manuaalista Actions-uusinta-ajoa. Lopullinen täsmällisen HEADin tulos näkyy PR:n Checks-välilehdessä ja ajon loppuraportissa; uutta dokumentointicommittia ei tehdä pelkän CI-merkinnän vuoksi.
 
 ## Hyväksyttävä kokonaisuus
 
