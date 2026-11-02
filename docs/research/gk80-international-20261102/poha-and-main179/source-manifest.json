@@ -1,0 +1,21 @@
+{
+  "mainObserved": "96a25d8c9db6fb0a505a70a37a5b357b6a83593a",
+  "sourceLfSha256": {
+    "site/scripts/glycemic-load-model.ts": "10ce09e465886e4538fc0b2ad2a54ca0b050a9e3729b7417eb0a91f2b946b48c",
+    "site/scripts/nutrition-model.ts": "6667190a6604523fe083d6d766cfbbdb7c2ce75366194f3036ce711a8218a7ce",
+    "docs/nutrition/fineli-release-20-reference.json": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76",
+    "docs/nutrition/afcd-release-3-reference.json": "02edf1cc95191c05edf791656a5109c41bcf4d4a3e707be69ef5009bc640022e",
+    "docs/nutrition/glycemic-index-records.json": "fb465ac8f68ffc85e29eb9900f17df00b081fa0ddc3e25d253140aecb248acda",
+    "reseptit/aamupalat/indialainen-poha-maapahkinoilla.md": "70651af4a46cc2443fba33b56c5f83235bf2bd608ba3f450b1f8f8c49f2a7485",
+    "docs/nutrition/calculations/indialainen-poha-maapahkinoilla.json": "ea0a6f3540bf6a95e9f998b8fc1e0f06e37d43b912029437c138c9410b7186c8"
+  },
+  "sourceGitBlobSha256": {
+    "docs/nutrition/gk80-operation149/prepared-route-observations.json": "3bc2549c5c05fc42dbc8ba752452cb82aea4cc74b0fccef1e1a7dcc48cf1baf4",
+    "docs/nutrition/gk80-operation149/prepared-route-composition.json": "c127eaed1723e1314d98bc7a2f94e4c8de7a956e16302f84ce2541acb724d6b5",
+    "docs/nutrition/gk80-operation149/approved-six-owner-approval.json": "8cfa9756b1a88537349f42561c61f67a88b51242fafeafd143cb1b6e332dc925",
+    "docs/nutrition/gk80-next-seven/integration.json": "a16e68cb82dd2906bdf735296be5ee2dda3b85b6deb3354134eeaa7b595471ba"
+  },
+  "exactMainGitBlobAndLocalLfEquivalent": true,
+  "sourceReadingNote": "New main files are read with non-mutating git show; research worktree is not synced/rebased and does not overwrite main or other workers.",
+  "sourceFamilyApprovalDoesNotAuthorizeNewRecipe": true
+}

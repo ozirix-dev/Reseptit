@@ -1,0 +1,180 @@
+{
+  "recipeId": "indialainen-poha-maapahkinoilla",
+  "sourcePath": "reseptit/aamupalat/indialainen-poha-maapahkinoilla.md",
+  "sourceLfSha256": "70651af4a46cc2443fba33b56c5f83235bf2bd608ba3f450b1f8f8c49f2a7485",
+  "sourceIngredients": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "item": "riisihiutale"
+    },
+    {
+      "amount": 20,
+      "unit": "g",
+      "item": "maapähkinä"
+    },
+    {
+      "amount": 3,
+      "unit": "g",
+      "item": "curry-lehti"
+    },
+    {
+      "amount": 50,
+      "unit": "g",
+      "item": "herne"
+    },
+    {
+      "amount": 1,
+      "unit": "rkl",
+      "item": "neutraalia paistoöljyä"
+    },
+    {
+      "amount": 1,
+      "unit": "rkl",
+      "item": "tuoretta korianteria"
+    },
+    {
+      "amount": 1,
+      "unit": "rkl",
+      "item": "sitruunamehua"
+    },
+    {
+      "amount": null,
+      "unit": "",
+      "item": "suolaa maun mukaan"
+    }
+  ],
+  "servings": 2,
+  "originalIngredientCount": 8,
+  "calculationIngredientCount": 8,
+  "ingredients": [
+    {
+      "name": "riisihiutale",
+      "grams": 100,
+      "fineliRecordId": "fineli-182",
+      "giRecordId": "rice-category-mean-gi-67",
+      "massEvidence": "Current100g rice flakes; native182 combines rice flour/rice flakes. Explicitly choose rice flakes,rinsed/drained and briefly pan-cooked,not a measured isolated rice-flakeGI.",
+      "foodKey": "rice-category-mean",
+      "preparationKey": "category-mean",
+      "giMatchEvidence": "Retained existing published broad category mean,LOW. Not a measured GI of this preparation or meal. Starting native CHO retained; no quantified rinsing-loss deduction or fat/protein correction."
+    },
+    {
+      "name": "maapähkinä",
+      "grams": 20,
+      "fineliRecordId": "afcd-F006107",
+      "giRecordId": "nuts-category-mean-gi-22",
+      "massEvidence": "Current20g,not legacy100g. Explicit raw unsalted peanuts with skin as starting input,then sautéed in listed oil. NativeAFCD availableCHO8.9 without sugar alcohols.",
+      "foodKey": "peanut",
+      "preparationKey": "nuts-category-mean",
+      "giMatchEvidence": "Retained existing published broad category mean,LOW. Not a measured GI of this preparation or meal. Starting native CHO retained; no quantified rinsing-loss deduction or fat/protein correction."
+    },
+    {
+      "name": "curry-lehti",
+      "grams": 3,
+      "fineliRecordId": "IFCT-G010",
+      "giRecordId": null,
+      "massEvidence": "Current3g,not legacy150g. Version explicitly uses fresh edible Murraya koenigii leaves,not dried leaves or curry powder. Existing main IFCT-G010 Table6 source reused; no new GI needed under positive small-contribution rule."
+    },
+    {
+      "name": "herne",
+      "grams": 50,
+      "fineliRecordId": "fineli-370",
+      "giRecordId": "vegetables-category-mean-gi-66",
+      "massEvidence": "Current50g,not legacy150g. Reuse existing macro evidence fresh raw green-pea identity370 rather than old GK prototype frozen34229. Explicit fresh starting input,then sautéed.",
+      "foodKey": "vegetable",
+      "preparationKey": "vegetable-category",
+      "giMatchEvidence": "Retained existing published broad category mean,LOW. Not a measured GI of this preparation or meal. Starting native CHO retained; no quantified rinsing-loss deduction or fat/protein correction."
+    },
+    {
+      "name": "neutraalia paistoöljyä",
+      "grams": 13.5,
+      "fineliRecordId": "fineli-541",
+      "giRecordId": null,
+      "massEvidence": "Current1rkl pure neutral oil; native541 RKL13.5g,all retained."
+    },
+    {
+      "name": "tuoretta korianteria",
+      "grams": 3.75,
+      "fineliRecordId": "afcd-F003192",
+      "giRecordId": null,
+      "massEvidence": "Restore missing current1rkl fresh coriander row. Same existing macro composition AFCD F003192, but source-backed AUSNUT2023 measure47446 density.25g/ml ×15ml=3.75g replaces unsupported legacy3g/rkl."
+    },
+    {
+      "name": "sitruunamehua",
+      "grams": 15,
+      "fineliRecordId": "fineli-11557",
+      "giRecordId": null,
+      "massEvidence": "Restore missing current1rkl undiluted lemon juice. Native11557 RKL15g,not diluted437."
+    },
+    {
+      "name": "suolaa maun mukaan",
+      "grams": null,
+      "fineliRecordId": null,
+      "giRecordId": null,
+      "excludedReason": "Plain salt,source-documented zero CHO,not a spice blend.",
+      "estimatedAvailableCarbohydratePerServingG": 0,
+      "negligibleAssumption": "NativeFineli30 directavailableCHO0; unspecified salt mass does not establish sodium or macro totals."
+    }
+  ],
+  "researchStatus": "SOURCE_RESOLVED_CONDITIONAL_FRESH_LEAF_AND_POHA_PREPARATION_VERSION_PENDING_REVIEW",
+  "variant": "All8 current quantities retained. Raw unsalted peanuts,fresh curry leaves,fresh green peas. Follow explicit poha methodstep4: briefly rinse/drain rice flakes,sauté peanuts,peas,leaves,then flakes; finish with coriander and lemon. Generic patties/ground-batter steps1–3 are not silently treated as equivalent and are outside this explicit version.",
+  "limitations": [
+    "Preparation choice requires content review because generic steps1–3 conflict with named poha step4.",
+    "Fresh leaf source cannot be assigned to dried curry leaves.",
+    "Fineli182 is a combined rice-flour/flake composition proxy; riceGI67 and nutsGI22 are broad LOW proxies.",
+    "Nuts source n3 means three compiled observations,not evidence of a three-subject trial.",
+    "No adjustment for carbohydrate leaching in unquantified rinse; starting native carbohydrate retained."
+  ],
+  "expected": {
+    "unroundedGk": "28.327975",
+    "omittedChoG": "0.210525",
+    "decimalRows": [
+      {
+        "name": "riisihiutale",
+        "choPerServing": "39.65",
+        "giRecordId": "rice-category-mean-gi-67"
+      },
+      {
+        "name": "maapähkinä",
+        "choPerServing": "0.89",
+        "giRecordId": "nuts-category-mean-gi-22"
+      },
+      {
+        "name": "curry-lehti",
+        "choPerServing": "0.0549",
+        "giRecordId": null
+      },
+      {
+        "name": "herne",
+        "choPerServing": "2.37375",
+        "giRecordId": "vegetables-category-mean-gi-66"
+      },
+      {
+        "name": "neutraalia paistoöljyä",
+        "choPerServing": "0.00",
+        "giRecordId": null
+      },
+      {
+        "name": "tuoretta korianteria",
+        "choPerServing": "0.035625",
+        "giRecordId": null
+      },
+      {
+        "name": "sitruunamehua",
+        "choPerServing": "0.12",
+        "giRecordId": null
+      },
+      {
+        "name": "suolaa maun mukaan",
+        "choPerServing": "0",
+        "giRecordId": null
+      }
+    ]
+  },
+  "sourceApplicationApproved": false,
+  "contentVersionApproved": false,
+  "newPublishedValue": false,
+  "publicationApproved": false,
+  "macroPublicationAuthorized": false,
+  "policyChangeApplied": false
+}
