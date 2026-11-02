@@ -1,0 +1,271 @@
+{
+  "schemaVersion": 1,
+  "activation": false,
+  "ownerApproval": false,
+  "cases": [
+    {
+      "recipeId": "kaakao-kookos-chia",
+      "level": "A",
+      "servings": 4,
+      "paths": {
+        "fi": "reseptit/aamupalat/kaakao-kookos-chia.md"
+      },
+      "recipeSha256": {
+        "fi": "909dc73c356b1db0d393ddd5a22ebfafd76b557f5fa5068b60c624da4a72c700"
+      },
+      "candidateIngredients": [
+        {
+          "name": "chia-siemeniä",
+          "compositionId": "34847",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Original40g whole chia; native Fineli34847 available0.2. Not USDA total-minus-fibre or another chia product.",
+          "grams": 40
+        },
+        {
+          "name": "kookosjuomaa",
+          "compositionId": "koko-uk-unsweetened-cap",
+          "giId": null,
+          "carbohydrateUse": "UPPER_BOUND",
+          "note": "Original200ml retained as source-native ml. Koko0.4g labelCHO/100ml is only nominal upper; no density or GI.",
+          "millilitres": 200
+        },
+        {
+          "name": "kuohukermaa",
+          "compositionId": "631",
+          "giId": "dairy30",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Original100ml cream by its own Fineli631 DL100g; native2.9CHO/100g, unsweetened38% cream.",
+          "grams": 100
+        },
+        {
+          "name": "makeuttamatonta kaakaojauhetta",
+          "compositionId": "20",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Original1tbsp cocoa by its own Fineli20 RKL6g, native11CHO/100g.",
+          "grams": 6
+        },
+        {
+          "name": "vaniljauutetta",
+          "compositionId": "F009350",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "NEW WEIGHED CONTENT5g vanilla bean extract; not asserted originaltsp mass. Native12.6CHO/100g.",
+          "grams": 5
+        },
+        {
+          "name": "paahdettuja kookoshiutaleita",
+          "compositionId": "urtekram-roasted-cap",
+          "giId": null,
+          "carbohydrateUse": "UPPER_BOUND",
+          "note": "Original20g already-roasted topping retained as sold; exact Urtekram8.4g labelCHO/100g nominal upper; no unroasted-to-roasted conversion.",
+          "grams": 20
+        },
+        {
+          "name": "makeutusainetta maun mukaan",
+          "compositionId": "pure-erythritol",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "ZERO_CHO_SENTINEL_RETAIN_ORIGINAL_OPTIONAL_TO_TASTE; Foodin explicit100CHO minus100polyols; quantity not asserted0g.",
+          "grams": 0
+        }
+      ],
+      "preparationDecision": "Keep original40g whole chia seeds,200ml coconut drink,100ml unsweetened38% cream and20g AS-SOLD already-roasted coconut chips. Bind coconut drink to exact Koko UK chilled label and chips to exact Urtekram DK1003481; break chips smaller without discarding. Use Fineli631 ownDL100g for original cream100ml, Fineli20 ownRKL6g for original cocoa1tbsp, and separately weighed vanilla bean extract5g as NEW content decision, not originaltsp equivalence. Optional sweetener is specified Foodin100% erythritol to taste;0g is only zeroCHO computational sentinel, not removal or amount assertion. Refrigerate whole mixture at least4h; serve all four portions and full20g topping. No added sugar, no switch to full-fat coconut milk, no plantGI50 or traceGI50. All five positive unmatched ingredients separately count toward unchanged A omission thresholds.",
+      "requiredDecisions": [
+        "GK_ONLY_CONTRACT",
+        "EXACT_KOKO_UK_CHILLED_AND_URTEKRAM_DK_PRODUCT_VERSIONS",
+        "WEIGHED_VANILLA_EXTRACT5G_CONTENT_NOT_DENSITY",
+        "NAMED_FINELI_CHIA34847_AND_CREAM631_SOURCE_APPLICATION",
+        "GK_ONLY_MACRO_VERSION_AND_LANGUAGE_COMPATIBILITY"
+      ],
+      "macroAction": "PRESERVE_ALL_CURRENT_VALUES_AND_WITHHOLDINGS",
+      "approval": false,
+      "publicationAuthorized": false,
+      "confidence": "LOW",
+      "inputSha256": "dfcb1006838f327d6dc368dbdd647180f4be3305b82518e99f88b8d25f71f8b2"
+    },
+    {
+      "recipeId": "rahka-marjakerroskulho",
+      "level": "A",
+      "servings": 4,
+      "paths": {
+        "fi": "reseptit/aamupalat/rahka-marjakerroskulho.md"
+      },
+      "recipeSha256": {
+        "fi": "c571f8f509bde4da9159bfdb4e1449f856030c9c92bf8a8ba1e2376d9c33c058"
+      },
+      "candidateIngredients": [
+        {
+          "name": "maitorahka",
+          "grams": 250,
+          "compositionId": "622",
+          "giId": "dairy30",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Exact weighed edible input; full portion retained."
+        },
+        {
+          "name": "maustamaton turkkilainen jogurtti10%",
+          "grams": 100,
+          "compositionId": "32201",
+          "giId": "dairy30",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Exact weighed edible input; full portion retained."
+        },
+        {
+          "name": "tuore mansikka",
+          "grams": 100,
+          "compositionId": "447",
+          "giId": "strawberry40",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Exact weighed edible input; full portion retained."
+        },
+        {
+          "name": "tuore pohjoisamerikkalainen wild blueberry",
+          "grams": 50,
+          "compositionId": "F001290",
+          "giId": "blueberry53-recovery",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Australian raw-blueberry composition proxy for named Canadian wild-blueberry GI; not Finnish bilberry."
+        },
+        {
+          "name": "hasselpähkinä",
+          "grams": 20,
+          "compositionId": "375",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Exact weighed edible input; full portion retained."
+        },
+        {
+          "name": "punnittu sitruunankuoriraaste",
+          "grams": 2,
+          "compositionId": "physical",
+          "giId": null,
+          "carbohydrateUse": "UPPER_BOUND",
+          "note": "2g is an explicit weighed choice, not a source-verified teaspoon conversion. Total peel mass is only an availableCHO cap."
+        },
+        {
+          "name": "Foodin100%erytritoli",
+          "grams": 4,
+          "compositionId": "pure-erythritol",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Exact weighed edible input; full portion retained."
+        }
+      ],
+      "preparationDecision": "Original cold layered bowl. Use100g fresh strawberry,50g fresh Canadian wild blueberry,20g raw hazelnut and2g weighed lemon zest. Sweeten with4g pure erythritol. Preserve zest; do not swap it for juice. Raw fruit GI is named; source/variety differences remain LOW. Hazelnut and peel positive GI-lessCHO is explicitly omitted by unchanged A thresholds. No whole-meal or all-berry GI claim.",
+      "requiredDecisions": [
+        "GK_ONLY_CONTRACT",
+        "EXACT_NEW_VERSION_OWNER_APPROVAL",
+        "NEW_SOURCE_BINDINGS_REVIEW",
+        "BLUEBERRY_VARIETY_AND_COMPOSITION_ANALOGUE",
+        "WEIGHED_ZEST_2G_NOT_CONVERSION"
+      ],
+      "macroAction": "PRESERVE_ALL_CURRENT_VALUES_AND_WITHHOLDINGS",
+      "approval": false,
+      "confidence": "LOW",
+      "inputSha256": "092719e24df715f0149468125c91e24c08a5dffb29ba2d2f712bb779bd4bdc86"
+    }
+  ],
+  "originalIngredientsByRecipe": {
+    "kaakao-kookos-chia": [
+      {
+        "amount": 40,
+        "unit": "g",
+        "item": "chia-siemeniä"
+      },
+      {
+        "amount": 200,
+        "unit": "ml",
+        "item": "kookosjuomaa"
+      },
+      {
+        "amount": 100,
+        "unit": "ml",
+        "item": "kuohukermaa"
+      },
+      {
+        "amount": 1,
+        "unit": "rkl",
+        "item": "makeuttamatonta kaakaojauhetta"
+      },
+      {
+        "amount": 1,
+        "unit": "tl",
+        "item": "vaniljauutetta"
+      },
+      {
+        "amount": 20,
+        "unit": "g",
+        "item": "paahdettuja kookoshiutaleita"
+      },
+      {
+        "amount": null,
+        "unit": "",
+        "item": "makeutusainetta maun mukaan"
+      }
+    ],
+    "rahka-marjakerroskulho": [
+      {
+        "amount": 250,
+        "unit": "g",
+        "item": "maitorahkaa"
+      },
+      {
+        "amount": 100,
+        "unit": "g",
+        "item": "maustamatonta turkkilaista jogurttia"
+      },
+      {
+        "amount": 100,
+        "unit": "g",
+        "item": "mansikoita"
+      },
+      {
+        "amount": 50,
+        "unit": "g",
+        "item": "mustikoita"
+      },
+      {
+        "amount": 20,
+        "unit": "g",
+        "item": "hasselpähkinöitä"
+      },
+      {
+        "amount": 1,
+        "unit": "tl",
+        "item": "sitruunankuorta"
+      },
+      {
+        "amount": null,
+        "unit": "",
+        "item": "makeutusainetta maun mukaan"
+      }
+    ]
+  },
+  "originalIndexByCandidate": {
+    "kaakao-kookos-chia": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "rahka-marjakerroskulho": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+  },
+  "classification": {
+    "kaakao-kookos-chia": "NEW_A_ALTERNATIVE_FOR_EXISTING_B_RECIPE_ID",
+    "rahka-marjakerroskulho": "FINALIZED_EXISTING_A_PROPOSAL_UNCHANGED_INPUT_HASH"
+  },
+  "priorRahkaProposalCommit": "c559be5855b86e4b89b8f780df51a6298612ec6f"
+}

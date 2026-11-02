@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "repository": "ozirix-dev/Reseptit",
+  "role": "Codex2 / Codex Tutkimus",
+  "startingHead": "429f397472d6970006fd3c6c906b9da533c38c46",
+  "ownedBranch": "codex/afcd-polyol-03-gk80-handoff",
+  "activation": false,
+  "ownerApproval": false,
+  "publicationAuthorized": false,
+  "readyAuthorized": false,
+  "mergeAuthorized": false,
+  "deployAuthorized": false,
+  "inputSha256": {
+    "kaakao-kookos-chia": "dfcb1006838f327d6dc368dbdd647180f4be3305b82518e99f88b8d25f71f8b2",
+    "rahka-marjakerroskulho": "092719e24df715f0149468125c91e24c08a5dffb29ba2d2f712bb779bd4bdc86"
+  },
+  "filesLfSha256": {
+    "audit-cold-desserts.py": "ffd557b193890080a06d9c8f8133344f8da3056ca5632f05e82a380bc3385a13",
+    "cases.json": "ed18a0c97deffadeaedfabf5e34dfffc658feb167f84391f93ab3632e6646070",
+    "decimal-results.json": "ffb213cff144192a9dfa28c5aa5175d7e5bfed286d7de41b60226e9c153a4772",
+    "dependency-map.csv": "1d36f4c76303f9d2ec8d7a4b26ccf85c4a03859f0309c36ae52c0b3516496c58",
+    "engine-results.json": "ff0185bfc037124341c23df78a271d714ddd33d9cd74fd75da397750b1fb8d6a",
+    "evaluate-cold-desserts.mts": "97d5262c8b40123553a41bd799bc63af9e8359fd53b3ead35a207975f916f41f",
+    "method-impact.csv": "a6dd4172173c0d61f7543b2265b9cef828ec9f75a52d4574810169d7266af008",
+    "sources.json": "90c88c9bef3129926b9788a071ae0153f4ff7f02279f5078f66a2b8a7a8f07cc"
+  },
+  "reportLfSha256": "576f0aa6418aa45b12c209e1a1a37877eec565380d4e6eb47897b289e9543035",
+  "newArithmeticRecipeIds": 0,
+  "newCurrentAAlternativesForExistingBIds": 1,
+  "existingAProposalsFinalized": 1,
+  "newOwnerApproved": 0,
+  "newPublishedByThisTask": 0,
+  "publishedAtStart": 179,
+  "previousApprovedUnpublished": 2,
+  "conditionalOnlyAfterPreviouslyApprovedReleased": 181,
+  "conditionalOnlyAfterTheseTwoSeparatelyAcceptedIntegratedReleased": 183,
+  "externalCachePolicy": "Raw Koko/Urtekram HTML and existing Atkinson PDF remain outside Git. Exact binary seals and source-native ml/g fields in sources.json. Historical GI/source/case files pinned to exact Git commits; no branch synchronization.",
+  "reproduction": "evaluate-cold-desserts.mts ROOT DATA CACHE EXTERNAL_OUT then audit-cold-desserts.py with same arguments; installed tsx and Python; only external output."
+}

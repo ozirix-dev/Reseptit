@@ -1,0 +1,300 @@
+{
+  "schemaVersion": 1,
+  "activation": false,
+  "ownerApproval": false,
+  "sourceFilesLfSha256": {
+    "docs/nutrition/fineli-release-20-reference.json": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76",
+    "docs/nutrition/afcd-release-3-reference.json": "02edf1cc95191c05edf791656a5109c41bcf4d4a3e707be69ef5009bc640022e",
+    "docs/nutrition/glycemic-index-records.json": "fb465ac8f68ffc85e29eb9900f17df00b081fa0ddc3e25d253140aecb248acda",
+    "docs/nutrition/food-records.json": "2f8ff76b97848294c28195bb92c6d202e9754168ddb169d30ee5e8610d2c2b9b",
+    "site/scripts/glycemic-load-model.ts": "10ce09e465886e4538fc0b2ad2a54ca0b050a9e3729b7417eb0a91f2b946b48c"
+  },
+  "composition": [
+    {
+      "id": "34847",
+      "kind": "FINELI_CHOAVL",
+      "nativeId": "34847",
+      "availablePer100g": 0.2,
+      "name": "CHIANSIEMEN",
+      "nativeRowPythonJsonSha256": "f6483487d99d7669fe04274a00a51e2b37503b50b6ee4301f16dd0ef8cfc964c",
+      "portionMasses": {
+        "TL": 3.0,
+        "RKL": 10.0,
+        "DL": 65.0
+      }
+    },
+    {
+      "id": "631",
+      "kind": "FINELI_CHOAVL",
+      "nativeId": "631",
+      "availablePer100g": 2.9,
+      "name": "KERMA, KUOHUKERMA, RASVAA 38 %",
+      "nativeRowPythonJsonSha256": "1a7fe7f51935facae572516d4cfb35fa861155741b851fd00954953615de3b7b",
+      "portionMasses": {
+        "DL": 100.0,
+        "RKL": 15.0,
+        "TL": 5.0
+      }
+    },
+    {
+      "id": "20",
+      "kind": "FINELI_CHOAVL",
+      "nativeId": "20",
+      "availablePer100g": 11.0,
+      "name": "KAAKAOJAUHE, EI LISÄTTYÄ SOKERIA",
+      "nativeRowPythonJsonSha256": "8d04fe592b77286addcaf7f301e79648d176f25c56bbe53c43a11ee87e2fa38d",
+      "portionMasses": {
+        "DL": 40.0,
+        "RKL": 6.0,
+        "TL": 3.0
+      }
+    },
+    {
+      "id": "622",
+      "kind": "FINELI_CHOAVL",
+      "nativeId": "622",
+      "availablePer100g": 3.0,
+      "name": "RAHKA, MAITORAHKA, MAUSTAMATON, RASVAA <0,5 %",
+      "nativeRowPythonJsonSha256": "bebe168dc73ac320327268071c5c5edbdd8fd2888002d5edcd700ff75ff568f2",
+      "portionMasses": {
+        "DL": 100.0,
+        "RKL": 15.0,
+        "TL": 5.0
+      }
+    },
+    {
+      "id": "32201",
+      "kind": "FINELI_CHOAVL",
+      "nativeId": "32201",
+      "availablePer100g": 4.298,
+      "name": "JOGURTTI, TURKKILAINEN/KREIKKALAINEN, RASVAA 10 %",
+      "nativeRowPythonJsonSha256": "e3fd44f87f8138ede58aac007c1944620bcca67a41c37358b1c6d0f9377a66ed",
+      "portionMasses": {
+        "DL": 100.0,
+        "RKL": 15.0,
+        "TL": 5.0
+      }
+    },
+    {
+      "id": "447",
+      "kind": "FINELI_CHOAVL",
+      "nativeId": "447",
+      "availablePer100g": 7.656,
+      "name": "MANSIKKA",
+      "nativeRowPythonJsonSha256": "4a63c86c3c0b6c91bb20da1b22880b668b60d2547b79cf8d3a075658a0b48677",
+      "portionMasses": {
+        "DL": 50.0,
+        "RKL": 10.0
+      }
+    },
+    {
+      "id": "375",
+      "kind": "FINELI_CHOAVL",
+      "nativeId": "375",
+      "availablePer100g": 3.4,
+      "name": "PÄHKINÄ, HASSELPÄHKINÄ",
+      "nativeRowPythonJsonSha256": "ab7725af3427fa4c66957c346fe9880b99ef91ef0c430b965e946565c607786f",
+      "portionMasses": {
+        "KPL_M": 1.0,
+        "DL": 65.0,
+        "RKL": 10.0
+      }
+    },
+    {
+      "id": "F009350",
+      "kind": "AFCD_WITHOUT_SUGAR_ALCOHOLS",
+      "nativeId": "F009350",
+      "availablePer100g": 12.6,
+      "name": "Vanilla bean extract",
+      "nativeRowPythonJsonSha256": "1621252d93530d691592c39c5bb59f5ae6ce7373c15ce453ee21c44aeb32bd71",
+      "polyolsTotal": "UNKNOWN_NOT_FILLED"
+    },
+    {
+      "id": "F001290",
+      "kind": "AFCD_WITHOUT_SUGAR_ALCOHOLS",
+      "nativeId": "F001290",
+      "availablePer100g": 10.4,
+      "name": "Blueberry, raw",
+      "nativeRowPythonJsonSha256": "49c83a2a5721e5e71a6266d318a96b9d0e7936804913568932e29e7d1e01c884",
+      "polyolsTotal": "UNKNOWN_NOT_FILLED"
+    },
+    {
+      "id": "pure-erythritol",
+      "kind": "EXPLICIT_LABEL_C_MINUS_P",
+      "nativeId": "foodin-erythritol-200g-label-2026-10-24",
+      "availablePer100g": 0,
+      "name": "Foodin Erytritoli, Luomu 200 g",
+      "nativeRowPythonJsonSha256": "7e0a63b22c853205f20e449986fe6d7f050de2a6be6a190f978aba5899eb436b"
+    },
+    {
+      "id": "physical",
+      "kind": "PHYSICAL_MASS_UPPER",
+      "availablePer100g": null,
+      "name": "Whole edible mass only, not nutrient point"
+    },
+    {
+      "id": "koko-uk-unsweetened-cap",
+      "kind": "LABEL_UPPER_PER100ML",
+      "declaredCarbohydrate": 0.4,
+      "availablePoint": null,
+      "polyols": null,
+      "fibreSubtracted": false,
+      "observationId": "koko-uk-unsweetened",
+      "name": "Koko Unsweetened No Sugar Milk UK chilled"
+    },
+    {
+      "id": "urtekram-roasted-cap",
+      "kind": "LABEL_UPPER_PER100G",
+      "declaredCarbohydrate": 8.4,
+      "availablePoint": null,
+      "polyols": null,
+      "fibreSubtracted": false,
+      "observationId": "urtekram-roasted",
+      "name": "Urtekram DK roasted coconut chips100g item1003481"
+    }
+  ],
+  "giBindings": [
+    {
+      "id": "dairy30",
+      "kind": "EXISTING_PUBLISHED_CODING",
+      "nativeId": "op142-dairy-imputation30",
+      "values": [
+        30
+      ],
+      "nativeRowPythonJsonSha256": "d977dc0e145519ada95c1d0a3fd234e83847372c190d414b35350fec63747fbd",
+      "allowedCompositionIds": [
+        "631",
+        "622",
+        "32201"
+      ],
+      "limitation": "Existing unsweetened animal-dairy30 coding, not measured cream/quark/yogurtGI. Exact new recipe binding needs owner approval."
+    },
+    {
+      "id": "strawberry40",
+      "kind": "NAMED_HUMAN_GI",
+      "values": [
+        40
+      ],
+      "path": "docs/nutrition/gk80-operation149/source-observations.json",
+      "nativeId": "strawberry40",
+      "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+      "locator": "Supplement1 p79 item1174; raw fresh strawberries, Australia2001 n10, glucose2h; UO5 original unpublished",
+      "limitation": "Not a measured cake GI. No SEM-as-range. Cultivar/serving mixture LOW.",
+      "nativeRowSha256": "119347d38eca3052a961fe910acfeb9b9fbeebf5d019246953b2bb3591cf2377",
+      "allowedCompositionIds": [
+        "447"
+      ],
+      "observation": {
+        "id": "strawberry40",
+        "kind": "NAMED_HUMAN_GI",
+        "values": [
+          40
+        ],
+        "path": "docs/nutrition/gk80-operation149/source-observations.json",
+        "nativeId": "strawberry40",
+        "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+        "locator": "Supplement1 p79 item1174; raw fresh strawberries, Australia2001 n10, glucose2h; UO5 original unpublished",
+        "limitation": "Not a measured cake GI. No SEM-as-range. Cultivar/serving mixture LOW."
+      },
+      "newGiConstant": false,
+      "priorProposalOnlyDoesNotProveOwnerApproval": true
+    },
+    {
+      "id": "blueberry53-recovery",
+      "kind": "NAMED_HUMAN_GI",
+      "values": [
+        53
+      ],
+      "path": "docs/nutrition/gk80-operation149/recovery-observations.json",
+      "nativeId": "blueberry53-recovery",
+      "nativeRowSha256": "49180cb74ee8673397c6f0ed20725c299620c8cbdc6d320142c7519a667b4e86",
+      "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+      "locator": "Canadian wild blueberry;table1,page74,item1092",
+      "limitation": "Published table already reports glucose100. Do not multiply by0.7. Cultivar/composition analogy remains; SEM is not a recipe interval.",
+      "allowedCompositionIds": [
+        "F001290"
+      ],
+      "observation": {
+        "id": "blueberry53-recovery",
+        "gi": 53,
+        "table": 1,
+        "page": 74,
+        "item": 1092,
+        "food": "Canadian wild blueberry",
+        "healthyN": 10,
+        "sem": 7,
+        "referenceFood": "Bread2h",
+        "reportedScale": "GLUCOSE_100",
+        "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+        "pdfSha256": "e930c4a090697abd4f7331a64837b524cf4701513cbb9865a739f4f9fb131061",
+        "methodLimitation": "Published table already reports glucose100. Do not multiply by0.7. Cultivar/composition analogy remains; SEM is not a recipe interval."
+      },
+      "newGiConstant": false,
+      "priorProposalOnlyDoesNotProveOwnerApproval": true
+    }
+  ],
+  "products": [
+    {
+      "id": "koko-uk-unsweetened",
+      "url": "https://www.kokodairyfree.com/product/unsweetened-chilled-milk/",
+      "basis": "per100ml-as-sold",
+      "declaredCarbohydrate": 0.4,
+      "sugars": 0.2,
+      "fibre": 0.2,
+      "productIdentity": "UK Koko Unsweetened No Sugar Milk, chilled; water/coconut milk9%, no sugar added",
+      "rawFile": "koko.html",
+      "rawSha256": "19fefcb4bc11901eeb2d08a0358021bf6a9cd49dbb8e45992e3ba2b35aa575ca",
+      "availablePoint": null,
+      "polyols": null,
+      "fieldMeaning": "Nominal label carbohydrate upper in this source model; not analytical availableCHO point or lot-certified upper. No fibre subtraction, no GI assigned."
+    },
+    {
+      "id": "urtekram-roasted",
+      "url": "https://www.urtekram.dk/Foedevarer/toerredefrugter-og-mos/kokoschips/",
+      "basis": "per100g-as-sold-roasted",
+      "declaredCarbohydrate": 8.4,
+      "sugars": 6.6,
+      "fibre": 15,
+      "productIdentity": "DK1003481,100g, organic roasted coconut chips,100% coconut, no added sugar",
+      "rawFile": "urtekram.html",
+      "rawSha256": "782693bea2e06949944ffb06185fe293961d728c8002eeeb4d63fc91c16de359",
+      "availablePoint": null,
+      "polyols": null,
+      "fieldMeaning": "Nominal label carbohydrate upper in this source model; not analytical availableCHO point or lot-certified upper. No fibre subtraction, no GI assigned."
+    }
+  ],
+  "pinnedGitFiles": [
+    {
+      "commit": "92dc6dbe7b27e145d6938026c73b6823f2e2108f",
+      "path": "docs/nutrition/gk80-operation149/gi-sources.json",
+      "lfSha256": "1f7b9831179ca1dae27285bffa189a03a47e28018c946e60b438965abb9d880c"
+    },
+    {
+      "commit": "92dc6dbe7b27e145d6938026c73b6823f2e2108f",
+      "path": "docs/nutrition/gk80-operation149/source-observations.json",
+      "lfSha256": "2ff56eb6af7a41c478001b839b94430d8c082b2408f39f9e73cc6a46eb26c4e1"
+    },
+    {
+      "commit": "c559be5855b86e4b89b8f780df51a6298612ec6f",
+      "path": "docs/nutrition/gk80-operation149/recovery-gi.json",
+      "lfSha256": "0e67ea99b717f8bbb0a01ee6084ab5d0175854f906c6b5de188f85fafb89fd62"
+    },
+    {
+      "commit": "c559be5855b86e4b89b8f780df51a6298612ec6f",
+      "path": "docs/nutrition/gk80-operation149/recovery-observations.json",
+      "lfSha256": "e07781f8150a378a4646bceb1f9bc42ac0119afaba8bdd54563fc9de7400a896"
+    },
+    {
+      "commit": "c559be5855b86e4b89b8f780df51a6298612ec6f",
+      "path": "docs/nutrition/gk80-operation149/recovery-cases.json",
+      "lfSha256": "ff5446f6d0caec947f65145aa2abd935d7e48198361d46b7637be55d1c161376"
+    }
+  ],
+  "externalPdf": {
+    "rawFile": "atkinson2021-table1.pdf",
+    "rawSha256": "e930c4a090697abd4f7331a64837b524cf4701513cbb9865a739f4f9fb131061",
+    "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+    "note": "Existing reviewed source, not re-researched. Strawberry40 item1174 and Canadian wild blueberry53 item1092; table values already glucose100. SEM is not a recipe interval."
+  },
+  "nativeQuantityPolicy": "Keep product ml as ml. Never transfer a generic Fineli density orCHO to a manufacturer drink. Label caps are not nutrient points. Native source points are not lot-certified upper bounds."
+}

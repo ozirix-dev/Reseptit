@@ -1,0 +1,228 @@
+{
+  "activation": false,
+  "ownerApproval": false,
+  "results": [
+    {
+      "recipeId": "kaakao-kookos-chia",
+      "inputSha256": "dfcb1006838f327d6dc368dbdd647180f4be3305b82518e99f88b8d25f71f8b2",
+      "classification": "NEW_A_ALTERNATIVE_FOR_EXISTING_B_RECIPE_ID",
+      "currentAArithmeticPass": true,
+      "point": 0.22,
+      "unrounded": 0.2175,
+      "omittedCho": 0.9624999999999999,
+      "omittedUpper": 0.62,
+      "coveredCho": 0.725,
+      "omittedChoIsActualPoint": false,
+      "ownerApproved": false,
+      "publicationAuthorized": false,
+      "terms": [
+        {
+          "name": "chia-siemeniä",
+          "compositionId": "34847",
+          "quantity": 40,
+          "unit": "g",
+          "choMin": 0.02,
+          "choMax": 0.02,
+          "giId": null,
+          "isNominalUpper": false,
+          "isPhysicalUpper": false,
+          "gk": null
+        },
+        {
+          "name": "kookosjuomaa",
+          "compositionId": "koko-uk-unsweetened-cap",
+          "quantity": 200,
+          "unit": "ml",
+          "choMin": 0,
+          "choMax": 0.2,
+          "giId": null,
+          "isNominalUpper": true,
+          "isPhysicalUpper": false,
+          "gk": null
+        },
+        {
+          "name": "kuohukermaa",
+          "compositionId": "631",
+          "quantity": 100,
+          "unit": "g",
+          "choMin": 0.725,
+          "choMax": 0.725,
+          "giId": "dairy30",
+          "isNominalUpper": false,
+          "isPhysicalUpper": false,
+          "gk": 0.2175
+        },
+        {
+          "name": "makeuttamatonta kaakaojauhetta",
+          "compositionId": "20",
+          "quantity": 6,
+          "unit": "g",
+          "choMin": 0.165,
+          "choMax": 0.165,
+          "giId": null,
+          "isNominalUpper": false,
+          "isPhysicalUpper": false,
+          "gk": null
+        },
+        {
+          "name": "vaniljauutetta",
+          "compositionId": "F009350",
+          "quantity": 5,
+          "unit": "g",
+          "choMin": 0.1575,
+          "choMax": 0.1575,
+          "giId": null,
+          "isNominalUpper": false,
+          "isPhysicalUpper": false,
+          "gk": null
+        },
+        {
+          "name": "paahdettuja kookoshiutaleita",
+          "compositionId": "urtekram-roasted-cap",
+          "quantity": 20,
+          "unit": "g",
+          "choMin": 0,
+          "choMax": 0.42,
+          "giId": null,
+          "isNominalUpper": true,
+          "isPhysicalUpper": false,
+          "gk": null
+        },
+        {
+          "name": "makeutusainetta maun mukaan",
+          "compositionId": "pure-erythritol",
+          "quantity": 0,
+          "unit": "g",
+          "choMin": 0,
+          "choMax": 0,
+          "giId": null,
+          "isNominalUpper": false,
+          "isPhysicalUpper": false,
+          "gk": null
+        }
+      ],
+      "assumptionSensitivityOnly": {
+        "gi": [
+          0,
+          150
+        ],
+        "min": 0,
+        "max": 2.53125,
+        "isSourceBound": false,
+        "isBiologicalBound": false,
+        "isConfidenceInterval": false
+      }
+    },
+    {
+      "recipeId": "rahka-marjakerroskulho",
+      "inputSha256": "092719e24df715f0149468125c91e24c08a5dffb29ba2d2f712bb779bd4bdc86",
+      "classification": "FINALIZED_EXISTING_A_PROPOSAL_UNCHANGED_INPUT_HASH",
+      "currentAArithmeticPass": true,
+      "point": 2.34,
+      "unrounded": 2.3394500000000003,
+      "omittedCho": 0.67,
+      "omittedUpper": 0.5,
+      "coveredCho": 6.1635,
+      "omittedChoIsActualPoint": false,
+      "ownerApproved": false,
+      "publicationAuthorized": false,
+      "terms": [
+        {
+          "name": "maitorahka",
+          "compositionId": "622",
+          "quantity": 250,
+          "unit": "g",
+          "choMin": 1.875,
+          "choMax": 1.875,
+          "giId": "dairy30",
+          "isNominalUpper": false,
+          "isPhysicalUpper": false,
+          "gk": 0.5625
+        },
+        {
+          "name": "maustamaton turkkilainen jogurtti10%",
+          "compositionId": "32201",
+          "quantity": 100,
+          "unit": "g",
+          "choMin": 1.0745,
+          "choMax": 1.0745,
+          "giId": "dairy30",
+          "isNominalUpper": false,
+          "isPhysicalUpper": false,
+          "gk": 0.32234999999999997
+        },
+        {
+          "name": "tuore mansikka",
+          "compositionId": "447",
+          "quantity": 100,
+          "unit": "g",
+          "choMin": 1.9140000000000001,
+          "choMax": 1.9140000000000001,
+          "giId": "strawberry40",
+          "isNominalUpper": false,
+          "isPhysicalUpper": false,
+          "gk": 0.7656000000000001
+        },
+        {
+          "name": "tuore pohjoisamerikkalainen wild blueberry",
+          "compositionId": "F001290",
+          "quantity": 50,
+          "unit": "g",
+          "choMin": 1.3,
+          "choMax": 1.3,
+          "giId": "blueberry53-recovery",
+          "isNominalUpper": false,
+          "isPhysicalUpper": false,
+          "gk": 0.6890000000000001
+        },
+        {
+          "name": "hasselpähkinä",
+          "compositionId": "375",
+          "quantity": 20,
+          "unit": "g",
+          "choMin": 0.17,
+          "choMax": 0.17,
+          "giId": null,
+          "isNominalUpper": false,
+          "isPhysicalUpper": false,
+          "gk": null
+        },
+        {
+          "name": "punnittu sitruunankuoriraaste",
+          "compositionId": "physical",
+          "quantity": 2,
+          "unit": "g",
+          "choMin": 0,
+          "choMax": 0.5,
+          "giId": null,
+          "isNominalUpper": false,
+          "isPhysicalUpper": true,
+          "gk": null
+        },
+        {
+          "name": "Foodin100%erytritoli",
+          "compositionId": "pure-erythritol",
+          "quantity": 4,
+          "unit": "g",
+          "choMin": 0,
+          "choMax": 0,
+          "giId": null,
+          "isNominalUpper": false,
+          "isPhysicalUpper": false,
+          "gk": null
+        }
+      ],
+      "assumptionSensitivityOnly": {
+        "gi": [
+          0,
+          150
+        ],
+        "min": 1.4546000000000001,
+        "max": 6.88385,
+        "isSourceBound": false,
+        "isBiologicalBound": false,
+        "isConfidenceInterval": false
+      }
+    }
+  ]
+}

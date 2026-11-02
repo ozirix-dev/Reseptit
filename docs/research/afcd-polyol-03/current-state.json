@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "recordRole": "CURRENT_STATE_AFTER_SEPARATION",
-  "observedAtUtc": "2026-11-02T19:58:46.380522+00:00",
+  "observedAtUtc": "2026-11-02T20:12:43.689530+00:00",
   "repository": "ozirix-dev/Reseptit",
   "role": "Codex2 / Codex Tutkimus",
   "ownedWorktree": "D:\\Projects\\tmp\\reseptit-afcd-polyol-03-gk80-handoff",
@@ -81,7 +81,7 @@
     "conditionalAfterAll24Percent": 55.21,
     "conditionalAfterAll24GapTo261": 81,
     "conditionalAfterBothBatchesReleasedScope": "Historical PR183+locked-six subset178, now published as part of179. Use latestResearchPass and current production fields.",
-    "conditionalAfterAll23FieldsScope": "Historical approved set before rahkapiirakka approval; current total is24.",
+    "conditionalAfterAll23FieldsScope": "Historical approved set before rahkapiirakka and bulgogi approvals; current total25. See latestResearchPass for current totals.",
     "knownOtherSourceHolds": 1,
     "approvedIntegratedInPr185": 7,
     "conditionalAfterAll25ApprovedVersionsReleased": 181,
@@ -127,35 +127,28 @@
   "deployAuthorized": false,
   "publicationActivation": false,
   "latestResearchPass": {
-    "report": "retained-sauce-followup.md",
-    "package": "retained-sauce/",
-    "startingHead": "63e93c2131809c32dea8f01739390c299dd69956",
-    "newReviewableSourceBasedAArithmeticCandidates": 1,
-    "newBResearchModelsRequiringMethodApproval": 2,
-    "newOwnerApproved": 1,
+    "report": "cold-dessert-followup.md",
+    "package": "cold-dessert/",
+    "startingHead": "429f397472d6970006fd3c6c906b9da533c38c46",
+    "newArithmeticRecipeIds": 0,
+    "newCurrentAAlternativesForExistingBIds": 1,
+    "existingAProposalsFinalized": 1,
+    "reviewableExactAVersions": 2,
+    "newOwnerApproved": 0,
     "newPublicationQualifiedNumericResults": 0,
     "newPublishedResults": 0,
-    "profiles": {
-      "bulgogi": "EXISTING_A",
-      "jerk-kana": "NEW_B_MINOR_OMISSIONS",
-      "sate-ayam": "NEW_EXPERT_ESTIMATE_B_REFERENCE"
-    },
     "candidateInputs": {
-      "bulgogi": "5ae159afc878044788f07f23db47c2932168760d4f8020e5ec3d9b553f7e83c1",
-      "jerk-kana": "3ccf63cc452ab542e8a0e12b5298bbebbbb25965751a5cf0ecc14aaac43f4d6c",
-      "sate-ayam": "318845e20f82185754514f9eed937a668cac0271f55a7a02feda7d416dcf5fda"
+      "kaakao-kookos-chia": "dfcb1006838f327d6dc368dbdd647180f4be3305b82518e99f88b8d25f71f8b2",
+      "rahka-marjakerroskulho": "092719e24df715f0149468125c91e24c08a5dffb29ba2d2f712bb779bd4bdc86"
     },
     "approvedVersionsStill": 25,
     "approvedButUnpublishedStill": 2,
-    "publishedExternally": 179,
+    "publishedStill": 179,
     "conditionalAfterAlreadyApprovedReleased": 181,
-    "conditionalIncludingBulgogiSeparatelyAcceptedIntegratedReleased": 181,
-    "conditionalIncludingBothNewBMethodsAllSourcesContentAcceptedIntegratedReleased": 183,
+    "conditionalOnlyAfterTheseTwoSeparatelyAcceptedIntegratedReleased": 183,
+    "newGiConstants": 0,
     "minorBOmissionProfileActivated": false,
-    "expertEstimateSourceTypeActivated": false,
-    "activeRecipeOrEngineChanges": false,
-    "ownerApprovalReceipt": "bulgogi-approval.json",
-    "approvalOverlayScope": "Current total after bulgogi-only scoped user approval. Frozen reviewed report/manifest retain pre-approval totals24 and zero new approvals. Jerk and Sate remain unapproved research."
+    "activeRecipeOrEngineChanges": false
   },
   "approvedResearchHandoff": {
     "recipeId": "pad-see-ew-vhh-konjac",
@@ -288,5 +281,37 @@
     "futureIntegrationOwner": "Named Codex Julkaisu owner of a separately scoped future batch",
     "integrated": false,
     "published": false
+  },
+  "previousRetainedSauceResearchPass": {
+    "report": "retained-sauce-followup.md",
+    "package": "retained-sauce/",
+    "startingHead": "63e93c2131809c32dea8f01739390c299dd69956",
+    "newReviewableSourceBasedAArithmeticCandidates": 1,
+    "newBResearchModelsRequiringMethodApproval": 2,
+    "newOwnerApproved": 1,
+    "newPublicationQualifiedNumericResults": 0,
+    "newPublishedResults": 0,
+    "profiles": {
+      "bulgogi": "EXISTING_A",
+      "jerk-kana": "NEW_B_MINOR_OMISSIONS",
+      "sate-ayam": "NEW_EXPERT_ESTIMATE_B_REFERENCE"
+    },
+    "candidateInputs": {
+      "bulgogi": "5ae159afc878044788f07f23db47c2932168760d4f8020e5ec3d9b553f7e83c1",
+      "jerk-kana": "3ccf63cc452ab542e8a0e12b5298bbebbbb25965751a5cf0ecc14aaac43f4d6c",
+      "sate-ayam": "318845e20f82185754514f9eed937a668cac0271f55a7a02feda7d416dcf5fda"
+    },
+    "approvedVersionsStill": 25,
+    "approvedButUnpublishedStill": 2,
+    "publishedExternally": 179,
+    "conditionalAfterAlreadyApprovedReleased": 181,
+    "conditionalIncludingBulgogiSeparatelyAcceptedIntegratedReleased": 181,
+    "conditionalIncludingBothNewBMethodsAllSourcesContentAcceptedIntegratedReleased": 183,
+    "minorBOmissionProfileActivated": false,
+    "expertEstimateSourceTypeActivated": false,
+    "activeRecipeOrEngineChanges": false,
+    "ownerApprovalReceipt": "bulgogi-approval.json",
+    "approvalOverlayScope": "Current total after bulgogi-only scoped user approval. Frozen reviewed report/manifest retain pre-approval totals24 and zero new approvals. Jerk and Sate remain unapproved research.",
+    "recordRole": "FROZEN_RESEARCH_PASS_WITH_BULGOGI_ONLY_APPROVAL_OVERLAY"
   }
 }
