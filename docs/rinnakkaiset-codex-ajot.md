@@ -141,6 +141,14 @@ tehtävä. Muuten koordinointi, päällekkäinen tutkimus ja tokenikulutus voiva
 kasvaa enemmän kuin hyöty. Tämä ohje ei käynnistä uusia istuntoja tai
 aliagentteja automaattisesti.
 
+## Ohjeen käyttöönotto
+
+Projektitason sääntö tulee mainista aloitettaviin uusiin työpuihin, kun
+AGENTS.md-muutos on yhdistetty. Jo käynnissä oleva ajo lukee päivitetyn ohjeen
+ennen seuraavaa kirjoitusvaihetta; pelkkä ohjeen merge ei päivitä sen
+keskustelukontekstia tai erillistä työpuuta automaattisesti. Ohjeen tuonti
+olemassa olevaan haaraan tehdään sen nimetyn kirjoittavan vastuullisen kautta.
+
 ## Perusta ja mahdollinen automaatio
 
 Käytäntö perustuu
