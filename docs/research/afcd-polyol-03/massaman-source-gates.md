@@ -7,3 +7,9 @@ Jenkins ym. (1981), taulukko II, raportoi maapähkinälle GI 13 glukoosiasteikol
 Nauris on reseptissä kuorittu ja haudutettu. Lantulle julkaistu GI 72 koskee eri elintarviketta. Pelkkä vanhan estelistan kasvisryhmän keskiarvo ei ratkaise nauriin valmistussidosta. Massaman tarvitsee sekä maapähkinän että nauriin nimenomaisen lähdearvion. Panangin pähkinän poisjättö ei siirry Massamaniin, sillä tahnan ja pähkinän määrät ovat suuremmat. [GI-taulukon lantturivi](https://ajcn.nutrition.org/article/S0002-9165%25252823%25252905840-9/fulltext)
 
 Päätös: nykyinen A-poisjättöreitti tällä tahnalla tuottaa 0 uutta numeerista GK-ehdokasta. B-vertailun jatko on mahdollinen, jos molemmat valmistussidokset sekä kalakastikkeen ja limettimehun lähteet ratkaistaan samalla syötteellä.
+
+## Nauriin GI 85 ja koostumusvertailu
+
+Valkoisia kasviksia käsittelevän katsauksen taulukon 3 alaviite kertoo, että raa'an nauriin GI 30 ja kypsennetyn nauriin GI 85 kerättiin verkkolähteistä. Alaviitteen mukaan niille ei löytynyt vertaisarvioitua julkaisua tai GI-taulukkoriviä, eikä valmistustapaa voitu tunnistaa. Alkuperäistä ihmismittausta ei varmennettu. Kumpaakaan lukua ei oteta Massamanin GK-syötteeksi tai vaihteluvälin rajaksi. [Katsaus, taulukko 3 ja alaviite 2](https://pmc.ncbi.nlm.nih.gov/articles/PMC3650508/)
+
+Fineli 304:n nauris antaa 250 g:n raakapainosta 1,575 g saatavaa CHO:ta annosta kohti, joten naurista ei voi ohittaa A:n alle 1 g:n yksittäisrajalla. Fineli 303:n lanttu antaa samalla massalla 3,675 g, eli 2,1 g enemmän annosta kohti. Lantun ihmismittaus on mahdollinen tutkimuslähde erikseen määritellylle lanttuversiolle. Alkuperäisen nauriin lähdeportti pysyy avoinna, ja Massamanin muille ainesosille tarvitaan edelleen yhteinen laskenta. Uusia julkaisuun kelpaavia tuloksia 0.
