@@ -1,0 +1,9 @@
+# Massamanin tahna, maapähkinä ja nauris
+
+Valcom AU 210 g:n 8,8 g/100 g antaa alkuperäisellä 45 grammalla 0,99 g CHO/annos. Kookosmaito lisää 0,8 g, joten muille poisjätöille jää alle 0,21 g. Jo 40 g AFCD F006107:n paahtamatonta maapähkinää lisää 0,89 g/annos. Yhdistelmä 2,68 g ylittää yhteisrajan ennen kalakastiketta ja limettimehua. Jos maapähkinä jätetään pois GK-laskennasta, tahna saisi sisältää alle 2,75556 g/100 g jo ennen näitä muita ainesosia. Tämä on hankintaseulan raja. [Valcom AU 210 g](https://www.coles.com.au/product/valcom-massaman-curry-paste-210g-6823377)
+
+Jenkins ym. (1981), taulukko II, raportoi maapähkinälle GI 13 glukoosiasteikolla. Maapähkinärivillä on viisi koehenkilöä ja 25 g hiilihydraattiannos. Julkaisun ruokarivi ei määritä paahtoa, kuorta tai reseptin 10 minuutin kastikehaudutusta. AFCD:n paahtamattoman pähkinän koostumuspisteellä 0,89 × 0,13 = 0,1157 GK/annos on vertailulaskelma. Sitä ei lasketa hyväksytyksi lähdesidokseksi. Reis ym. (2011) vertaa maapähkinän käsittelyjä ja tukee valmistuseron tutkimista. [Jenkinsin alkuperäisartikkeli](https://www.naturaleater.com/Science-articles/145-AJCN-1981-Glycemic-index-Jenkins.pdf) · [Reisin koe](https://pubmed.ncbi.nlm.nih.gov/22470019/)
+
+Nauris on reseptissä kuorittu ja haudutettu. Lantulle julkaistu GI 72 koskee eri elintarviketta. Pelkkä vanhan estelistan kasvisryhmän keskiarvo ei ratkaise nauriin valmistussidosta. Massaman tarvitsee sekä maapähkinän että nauriin nimenomaisen lähdearvion. Panangin pähkinän poisjättö ei siirry Massamaniin, sillä tahnan ja pähkinän määrät ovat suuremmat. [GI-taulukon lantturivi](https://ajcn.nutrition.org/article/S0002-9165%25252823%25252905840-9/fulltext)
+
+Päätös: nykyinen A-poisjättöreitti tällä tahnalla tuottaa 0 uutta numeerista GK-ehdokasta. B-vertailun jatko on mahdollinen, jos molemmat valmistussidokset sekä kalakastikkeen ja limettimehun lähteet ratkaistaan samalla syötteellä.
