@@ -1,0 +1,73 @@
+{
+  "activation": false,
+  "ownerApproval": false,
+  "scenarioCount": 5,
+  "engineAgreementTolerance": "1e-10",
+  "sourceAndInputSealsPass": true,
+  "results": [
+    {
+      "recipeId": "paella-valenciana",
+      "inputSha256": "5e9c7deff4c545411210ed1c5979ff29c0c63e37c746f1cc9fcc192d11b9fa69",
+      "scenarioCount": 2,
+      "scenarios": [
+        {
+          "scenarioId": "FINELI156_SHORT_GRAIN",
+          "gk": "40.35360",
+          "omittedChoOrCap": "1.675",
+          "nominalLabelCap": "0.875",
+          "physicalMassCap": "0.80",
+          "maxOmittedOriginalGroup": "0.875"
+        },
+        {
+          "scenarioId": "AFCD_F007682_WHITE_DRY",
+          "gk": "39.52560",
+          "omittedChoOrCap": "1.675",
+          "nominalLabelCap": "0.875",
+          "physicalMassCap": "0.80",
+          "maxOmittedOriginalGroup": "0.875"
+        }
+      ],
+      "primaryRoundedPoint": "40.35"
+    },
+    {
+      "recipeId": "kana-tagine-sitruunalla",
+      "inputSha256": "1d9e7a0b626d42571ef29d35a0732982e21f9b94cff8472b9b52a8a824d42c7c",
+      "scenarioCount": 2,
+      "scenarios": [
+        {
+          "scenarioId": "FINELI29208_DRY_COUSCOUS",
+          "gk": "21.053150",
+          "omittedChoOrCap": "1.68725",
+          "nominalLabelCap": "0.9825",
+          "physicalMassCap": "0",
+          "maxOmittedOriginalGroup": "0.72"
+        },
+        {
+          "scenarioId": "AFCD_F003239_DRY_COUSCOUS",
+          "gk": "24.303150",
+          "omittedChoOrCap": "1.68725",
+          "nominalLabelCap": "0.9825",
+          "physicalMassCap": "0",
+          "maxOmittedOriginalGroup": "0.72"
+        }
+      ],
+      "primaryRoundedPoint": "21.05"
+    },
+    {
+      "recipeId": "hernekeitto-savupotkalla",
+      "inputSha256": "ed3041f5514e3668a93361f9f5c353d38530f9a88a7db07650d2fce46fb61990",
+      "scenarioCount": 1,
+      "scenarios": [
+        {
+          "scenarioId": "FINELI371_WHOLE_DRY_PEA",
+          "gk": "16.224025",
+          "omittedChoOrCap": "1.5628875",
+          "nominalLabelCap": "1.015",
+          "physicalMassCap": "0.50",
+          "maxOmittedOriginalGroup": "0.875"
+        }
+      ],
+      "primaryRoundedPoint": "16.22"
+    }
+  ]
+}

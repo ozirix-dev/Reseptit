@@ -1,0 +1,619 @@
+{
+  "activation": false,
+  "ownerApproval": false,
+  "results": [
+    {
+      "recipeId": "paella-valenciana",
+      "inputSha256": "5e9c7deff4c545411210ed1c5979ff29c0c63e37c746f1cc9fcc192d11b9fa69",
+      "currentAArithmeticPass": true,
+      "sourceAdmission": "EXACT_OWNER_REVIEW_REQUIRED",
+      "point": 40.35,
+      "omittedChoOrCap": 1.675,
+      "conditionalSourceScenarioEnvelope": {
+        "min": 39.5256,
+        "max": 40.3536,
+        "integerMin": 39,
+        "integerMax": 41,
+        "scope": "CALCULATED_PART_ONLY",
+        "isWholeMealBound": false
+      },
+      "ownerApproved": false,
+      "publicationAuthorized": false,
+      "scenarios": [
+        {
+          "scenarioId": "FINELI156_SHORT_GRAIN",
+          "unrounded": 40.3536,
+          "point": 40.35,
+          "omittedChoOrCap": 1.675,
+          "nominalLabelCap": 0.875,
+          "physicalMassCap": 0.8,
+          "nativePointOmitted": 0,
+          "maxOmittedOriginalGroup": 0.875,
+          "terms": [
+            {
+              "ingredientIndex": 0,
+              "compositionId": "F002806",
+              "choPerServing": 0,
+              "choSemantics": "NATIVE_POINT",
+              "giId": null,
+              "gk": null
+            },
+            {
+              "ingredientIndex": 1,
+              "compositionId": "156",
+              "choPerServing": 56.7,
+              "choSemantics": "NATIVE_POINT",
+              "giId": "arborio69",
+              "gk": 39.123000000000005
+            },
+            {
+              "ingredientIndex": 2,
+              "compositionId": "372",
+              "choPerServing": 1.7827499999999998,
+              "choSemantics": "NATIVE_POINT",
+              "giId": "veg40",
+              "gk": 0.7130999999999998
+            },
+            {
+              "ingredientIndex": 3,
+              "compositionId": "398",
+              "choPerServing": 1.29375,
+              "choSemantics": "NATIVE_POINT",
+              "giId": "veg40",
+              "gk": 0.5175
+            },
+            {
+              "ingredientIndex": 4,
+              "compositionId": "bong-kanafondi",
+              "choPerServing": 0.875,
+              "choSemantics": "NOMINAL_LABEL_CAP",
+              "giId": null,
+              "gk": null
+            },
+            {
+              "ingredientIndex": 5,
+              "compositionId": "922",
+              "choPerServing": 0,
+              "choSemantics": "NATIVE_POINT",
+              "giId": null,
+              "gk": null
+            },
+            {
+              "ingredientIndex": 6,
+              "compositionId": "whole-input-mass",
+              "choPerServing": 0.5,
+              "choSemantics": "PHYSICAL_CAP",
+              "giId": null,
+              "gk": null
+            },
+            {
+              "ingredientIndex": 7,
+              "compositionId": "whole-input-mass",
+              "choPerServing": 0.05,
+              "choSemantics": "PHYSICAL_CAP",
+              "giId": null,
+              "gk": null
+            },
+            {
+              "ingredientIndex": 8,
+              "compositionId": "536",
+              "choPerServing": 0,
+              "choSemantics": "NATIVE_POINT",
+              "giId": null,
+              "gk": null
+            },
+            {
+              "ingredientIndex": 9,
+              "compositionId": "30",
+              "choPerServing": 0,
+              "choSemantics": "NATIVE_POINT",
+              "giId": null,
+              "gk": null
+            },
+            {
+              "ingredientIndex": 10,
+              "compositionId": "whole-input-mass",
+              "choPerServing": 0.25,
+              "choSemantics": "PHYSICAL_CAP",
+              "giId": null,
+              "gk": null
+            }
+          ]
+        },
+        {
+          "scenarioId": "AFCD_F007682_WHITE_DRY",
+          "unrounded": 39.5256,
+          "point": 39.53,
+          "omittedChoOrCap": 1.675,
+          "nominalLabelCap": 0.875,
+          "physicalMassCap": 0.8,
+          "nativePointOmitted": 0,
+          "maxOmittedOriginalGroup": 0.875,
+          "terms": [
+            {
+              "ingredientIndex": 0,
+              "compositionId": "F002806",
+              "choPerServing": 0,
+              "choSemantics": "NATIVE_POINT",
+              "giId": null,
+              "gk": null
+            },
+            {
+              "ingredientIndex": 1,
+              "compositionId": "F007682",
+              "choPerServing": 55.5,
+              "choSemantics": "NATIVE_POINT",
+              "giId": "arborio69",
+              "gk": 38.295
+            },
+            {
+              "ingredientIndex": 2,
+              "compositionId": "372",
+              "choPerServing": 1.7827499999999998,
+              "choSemantics": "NATIVE_POINT",
+              "giId": "veg40",
+              "gk": 0.7130999999999998
+            },
+            {
+              "ingredientIndex": 3,
+              "compositionId": "398",
+              "choPerServing": 1.29375,
+              "choSemantics": "NATIVE_POINT",
+              "giId": "veg40",
+              "gk": 0.5175
+            },
+            {
+              "ingredientIndex": 4,
+              "compositionId": "bong-kanafondi",
+              "choPerServing": 0.875,
+              "choSemantics": "NOMINAL_LABEL_CAP",
+              "giId": null,
+              "gk": null
+            },
+            {
+              "ingredientIndex": 5,
+              "compositionId": "922",
+              "choPerServing": 0,
+              "choSemantics": "NATIVE_POINT",
+              "giId": null,
+              "gk": null
+            },
+            {
+              "ingredientIndex": 6,
+              "compositionId": "whole-input-mass",
+              "choPerServing": 0.5,
+              "choSemantics": "PHYSICAL_CAP",
+              "giId": null,
+              "gk": null
+            },
+            {
+              "ingredientIndex": 7,
+              "compositionId": "whole-input-mass",
+              "choPerServing": 0.05,
+              "choSemantics": "PHYSICAL_CAP",
+              "giId": null,
+              "gk": null
+            },
+            {
+              "ingredientIndex": 8,
+              "compositionId": "536",
+              "choPerServing": 0,
+              "choSemantics": "NATIVE_POINT",
+              "giId": null,
+              "gk": null
+            },
+            {
+              "ingredientIndex": 9,
+              "compositionId": "30",
+              "choPerServing": 0,
+              "choSemantics": "NATIVE_POINT",
+              "giId": null,
+              "gk": null
+            },
+            {
+              "ingredientIndex": 10,
+              "compositionId": "whole-input-mass",
+              "choPerServing": 0.25,
+              "choSemantics": "PHYSICAL_CAP",
+              "giId": null,
+              "gk": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "recipeId": "kana-tagine-sitruunalla",
+      "inputSha256": "1d9e7a0b626d42571ef29d35a0732982e21f9b94cff8472b9b52a8a824d42c7c",
+      "currentAArithmeticPass": true,
+      "sourceAdmission": "EXACT_OWNER_REVIEW_REQUIRED",
+      "point": 21.05,
+      "omittedChoOrCap": 1.68725,
+      "conditionalSourceScenarioEnvelope": {
+        "min": 21.053150000000002,
+        "max": 24.303150000000002,
+        "integerMin": 21,
+        "integerMax": 25,
+        "scope": "CALCULATED_PART_ONLY",
+        "isWholeMealBound": false
+      },
+      "ownerApproved": false,
+      "publicationAuthorized": false,
+      "scenarios": [
+        {
+          "scenarioId": "FINELI29208_DRY_COUSCOUS",
+          "unrounded": 21.053150000000002,
+          "point": 21.05,
+          "omittedChoOrCap": 1.68725,
+          "nominalLabelCap": 0.9824999999999999,
+          "physicalMassCap": 0,
+          "nativePointOmitted": 0.70475,
+          "maxOmittedOriginalGroup": 0.72,
+          "terms": [
+            {
+              "ingredientIndex": 0,
+              "compositionId": "F002809",
+              "choPerServing": 0,
+              "choSemantics": "NATIVE_POINT",
+              "giId": null,
+              "gk": null
+            },
+            {
+              "ingredientIndex": 1,
+              "compositionId": "335",
+              "choPerServing": 0.66,
+              "choSemantics": "NATIVE_POINT",
+              "giId": "veg40",
+              "gk": 0.264
+            },
+            {
+              "ingredientIndex": 2,
+              "compositionId": "393",
+              "choPerServing": 0.28525,
+              "choSemantics": "NATIVE_POINT",
+              "giId": "veg40",
+              "gk": 0.11410000000000001
+            },
+            {
+              "ingredientIndex": 3,
+              "compositionId": "F004210",
+              "choPerServing": 0.2875,
+              "choSemantics": "NATIVE_POINT",
+              "giId": null,
+              "gk": null
+            },
+            {
+              "ingredientIndex": 4,
+              "compositionId": "F009335",
+              "choPerServing": 0.33299999999999996,
+              "choSemantics": "NATIVE_POINT",
+              "giId": null,
+              "gk": null
+            },
+            {
+              "ingredientIndex": 5,
+              "compositionId": "F003327",
+              "choPerServing": 0.08425,
+              "choSemantics": "NATIVE_POINT",
+              "giId": null,
+              "gk": null
+            },
+            {
+              "ingredientIndex": 6,
+              "compositionId": "santamaria-lemon-paste",
+              "choPerServing": 0.72,
+              "choSemantics": "NOMINAL_LABEL_CAP",
+              "giId": null,
+              "gk": null
+            },
+            {
+              "ingredientIndex": 7,
+              "compositionId": "34972",
+              "choPerServing": 0,
+              "choSemantics": "NATIVE_POINT",
+              "giId": null,
+              "gk": null
+            },
+            {
+              "ingredientIndex": 8,
+              "compositionId": "bong-kanafondi",
+              "choPerServing": 0.2625,
+              "choSemantics": "NOMINAL_LABEL_CAP",
+              "giId": null,
+              "gk": null
+            },
+            {
+              "ingredientIndex": 9,
+              "compositionId": "922",
+              "choPerServing": 0,
+              "choSemantics": "NATIVE_POINT",
+              "giId": null,
+              "gk": null
+            },
+            {
+              "ingredientIndex": 10,
+              "compositionId": "536",
+              "choPerServing": 0,
+              "choSemantics": "NATIVE_POINT",
+              "giId": null,
+              "gk": null
+            },
+            {
+              "ingredientIndex": 11,
+              "compositionId": "34238",
+              "choPerServing": 0.012624999999999999,
+              "choSemantics": "NATIVE_POINT",
+              "giId": "veg40",
+              "gk": 0.00505
+            },
+            {
+              "ingredientIndex": 12,
+              "compositionId": "30",
+              "choPerServing": 0,
+              "choSemantics": "NATIVE_POINT",
+              "giId": null,
+              "gk": null
+            },
+            {
+              "ingredientIndex": 13,
+              "compositionId": "29208",
+              "choPerServing": 31.8,
+              "choSemantics": "NATIVE_POINT",
+              "giId": "couscous65",
+              "gk": 20.67
+            },
+            {
+              "ingredientIndex": 14,
+              "compositionId": "922",
+              "choPerServing": 0,
+              "choSemantics": "NATIVE_POINT",
+              "giId": null,
+              "gk": null
+            }
+          ]
+        },
+        {
+          "scenarioId": "AFCD_F003239_DRY_COUSCOUS",
+          "unrounded": 24.303150000000002,
+          "point": 24.3,
+          "omittedChoOrCap": 1.68725,
+          "nominalLabelCap": 0.9824999999999999,
+          "physicalMassCap": 0,
+          "nativePointOmitted": 0.70475,
+          "maxOmittedOriginalGroup": 0.72,
+          "terms": [
+            {
+              "ingredientIndex": 0,
+              "compositionId": "F002809",
+              "choPerServing": 0,
+              "choSemantics": "NATIVE_POINT",
+              "giId": null,
+              "gk": null
+            },
+            {
+              "ingredientIndex": 1,
+              "compositionId": "335",
+              "choPerServing": 0.66,
+              "choSemantics": "NATIVE_POINT",
+              "giId": "veg40",
+              "gk": 0.264
+            },
+            {
+              "ingredientIndex": 2,
+              "compositionId": "393",
+              "choPerServing": 0.28525,
+              "choSemantics": "NATIVE_POINT",
+              "giId": "veg40",
+              "gk": 0.11410000000000001
+            },
+            {
+              "ingredientIndex": 3,
+              "compositionId": "F004210",
+              "choPerServing": 0.2875,
+              "choSemantics": "NATIVE_POINT",
+              "giId": null,
+              "gk": null
+            },
+            {
+              "ingredientIndex": 4,
+              "compositionId": "F009335",
+              "choPerServing": 0.33299999999999996,
+              "choSemantics": "NATIVE_POINT",
+              "giId": null,
+              "gk": null
+            },
+            {
+              "ingredientIndex": 5,
+              "compositionId": "F003327",
+              "choPerServing": 0.08425,
+              "choSemantics": "NATIVE_POINT",
+              "giId": null,
+              "gk": null
+            },
+            {
+              "ingredientIndex": 6,
+              "compositionId": "santamaria-lemon-paste",
+              "choPerServing": 0.72,
+              "choSemantics": "NOMINAL_LABEL_CAP",
+              "giId": null,
+              "gk": null
+            },
+            {
+              "ingredientIndex": 7,
+              "compositionId": "34972",
+              "choPerServing": 0,
+              "choSemantics": "NATIVE_POINT",
+              "giId": null,
+              "gk": null
+            },
+            {
+              "ingredientIndex": 8,
+              "compositionId": "bong-kanafondi",
+              "choPerServing": 0.2625,
+              "choSemantics": "NOMINAL_LABEL_CAP",
+              "giId": null,
+              "gk": null
+            },
+            {
+              "ingredientIndex": 9,
+              "compositionId": "922",
+              "choPerServing": 0,
+              "choSemantics": "NATIVE_POINT",
+              "giId": null,
+              "gk": null
+            },
+            {
+              "ingredientIndex": 10,
+              "compositionId": "536",
+              "choPerServing": 0,
+              "choSemantics": "NATIVE_POINT",
+              "giId": null,
+              "gk": null
+            },
+            {
+              "ingredientIndex": 11,
+              "compositionId": "34238",
+              "choPerServing": 0.012624999999999999,
+              "choSemantics": "NATIVE_POINT",
+              "giId": "veg40",
+              "gk": 0.00505
+            },
+            {
+              "ingredientIndex": 12,
+              "compositionId": "30",
+              "choPerServing": 0,
+              "choSemantics": "NATIVE_POINT",
+              "giId": null,
+              "gk": null
+            },
+            {
+              "ingredientIndex": 13,
+              "compositionId": "F003239",
+              "choPerServing": 36.8,
+              "choSemantics": "NATIVE_POINT",
+              "giId": "couscous65",
+              "gk": 23.92
+            },
+            {
+              "ingredientIndex": 14,
+              "compositionId": "922",
+              "choPerServing": 0,
+              "choSemantics": "NATIVE_POINT",
+              "giId": null,
+              "gk": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "recipeId": "hernekeitto-savupotkalla",
+      "inputSha256": "ed3041f5514e3668a93361f9f5c353d38530f9a88a7db07650d2fce46fb61990",
+      "currentAArithmeticPass": true,
+      "sourceAdmission": "EXACT_OWNER_REVIEW_REQUIRED",
+      "point": 16.22,
+      "omittedChoOrCap": 1.5628875,
+      "conditionalSourceScenarioEnvelope": null,
+      "ownerApproved": false,
+      "publicationAuthorized": false,
+      "scenarios": [
+        {
+          "scenarioId": "FINELI371_WHOLE_DRY_PEA",
+          "unrounded": 16.224025,
+          "point": 16.22,
+          "omittedChoOrCap": 1.5628875,
+          "nominalLabelCap": 1.0150000000000001,
+          "physicalMassCap": 0.5,
+          "nativePointOmitted": 0.0478875,
+          "maxOmittedOriginalGroup": 0.875,
+          "terms": [
+            {
+              "ingredientIndex": 0,
+              "compositionId": "371",
+              "choPerServing": 33.9575,
+              "choSemantics": "NATIVE_POINT",
+              "giId": "marrowfat47",
+              "gk": 15.960025
+            },
+            {
+              "ingredientIndex": 1,
+              "compositionId": "kivikyla-savupotka",
+              "choPerServing": 0.875,
+              "choSemantics": "NOMINAL_LABEL_CAP",
+              "giId": null,
+              "gk": null
+            },
+            {
+              "ingredientIndex": 2,
+              "compositionId": "922",
+              "choPerServing": 0,
+              "choSemantics": "NATIVE_POINT",
+              "giId": null,
+              "gk": null
+            },
+            {
+              "ingredientIndex": 3,
+              "compositionId": "335",
+              "choPerServing": 0.66,
+              "choSemantics": "NATIVE_POINT",
+              "giId": "veg40",
+              "gk": 0.264
+            },
+            {
+              "ingredientIndex": 4,
+              "compositionId": "whole-input-mass",
+              "choPerServing": 0.25,
+              "choSemantics": "PHYSICAL_CAP",
+              "giId": null,
+              "gk": null
+            },
+            {
+              "ingredientIndex": 5,
+              "compositionId": "whole-input-mass",
+              "choPerServing": 0.25,
+              "choSemantics": "PHYSICAL_CAP",
+              "giId": null,
+              "gk": null
+            },
+            {
+              "ingredientIndex": 6,
+              "compositionId": "11177",
+              "choPerServing": 0.0478875,
+              "choSemantics": "NATIVE_POINT",
+              "giId": null,
+              "gk": null
+            },
+            {
+              "ingredientIndex": 7,
+              "compositionId": "30",
+              "choPerServing": 0,
+              "choSemantics": "NATIVE_POINT",
+              "giId": null,
+              "gk": null
+            },
+            {
+              "ingredientIndex": 8,
+              "compositionId": "maille-dijon-fr215",
+              "choPerServing": 0.14,
+              "choSemantics": "NOMINAL_LABEL_CAP",
+              "giId": null,
+              "gk": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "controls": [
+    {
+      "control": "MISSING_COUSCOUS_SIDE",
+      "status": "REJECTED",
+      "reason": "Complete original serving choice required"
+    },
+    {
+      "control": "LABEL_CAP_AS_NUTRIENT_POINT",
+      "status": "REJECTED",
+      "reason": "Cap cannot be point or coded GI"
+    }
+  ]
+}

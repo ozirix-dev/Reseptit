@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "repository": "ozirix-dev/Reseptit",
+  "observedAtUtc": "2026-11-02T21:42:54.844015+00:00",
+  "mainHead": "12cce31acaa1fcaf4516440b58a1f5c30390fdea",
+  "pr": 189,
+  "prUrl": "https://github.com/ozirix-dev/Reseptit/pull/189",
+  "reviewedHead": "82a3718788863b05b8289e9b17b9694542538e72",
+  "workflowRun": 41529541491,
+  "workflowUrl": "https://github.com/ozirix-dev/Reseptit/actions/runs/41529541491",
+  "buildConclusion": "SUCCESS",
+  "deployConclusion": "SUCCESS",
+  "publishedPage": "https://ozirix-dev.github.io/Reseptit/glykeeminen-kuorma/",
+  "publicResponseRawSha256": "59bbca9360c60b73fe106ae698d629f2748b2d38835cc80b282027072ff1e5ee",
+  "observedVisibleCounts": {
+    "numericAnyVersion": 183,
+    "denominator": 326,
+    "classA": 177,
+    "classB": 6
+  },
+  "numericOriginalInstructions": 156,
+  "approvedInputs": {
+    "rahkapiirakka-vhh": "4194712a2cecb7979c779f4479a1f0a92bf402e190c4ff66a2369667455acbd4",
+    "bulgogi": "5ae159afc878044788f07f23db47c2932168760d4f8020e5ec3d9b553f7e83c1",
+    "rahka-marjakerroskulho": "092719e24df715f0149468125c91e24c08a5dffb29ba2d2f712bb779bd4bdc86",
+    "kaakao-kookos-chia": "dfcb1006838f327d6dc368dbdd647180f4be3305b82518e99f88b8d25f71f8b2"
+  },
+  "incrementFromPr189": 4,
+  "publicationByThisResearchRun": 0,
+  "previousObservation": "production-observation-pr186.json",
+  "lineage": "docs/nutrition/gk80-next-four/approval-lineage.json and integration.json at observedMain; exact approved inputs and frozen receipts matched"
+}

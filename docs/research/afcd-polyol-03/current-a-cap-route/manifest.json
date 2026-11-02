@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "activation": false,
+  "ownerApproval": false,
+  "publicationAuthorized": false,
+  "startingHead": "65ee5f58a1a8e376c013c8cccd9ed6e8f7d73a96",
+  "observedMain": "12cce31acaa1fcaf4516440b58a1f5c30390fdea",
+  "productionObservation": "../production-observation-pr189.json",
+  "reportLfSha256": "17afad290cd84250e42fd42e20a4b053b5e9ddff4edb34b631c48c4166fb6e59",
+  "inputSha256": {
+    "paella-valenciana": "5e9c7deff4c545411210ed1c5979ff29c0c63e37c746f1cc9fcc192d11b9fa69",
+    "kana-tagine-sitruunalla": "1d9e7a0b626d42571ef29d35a0732982e21f9b94cff8472b9b52a8a824d42c7c",
+    "hernekeitto-savupotkalla": "ed3041f5514e3668a93361f9f5c353d38530f9a88a7db07650d2fce46fb61990"
+  },
+  "cases": 3,
+  "scenarioCount": 5,
+  "newArithmeticIds": 3,
+  "distinctCompleteReviewableVersions": 3,
+  "newOwnerApprovals": 0,
+  "newPublishedResults": 0,
+  "newGiConstants": 0,
+  "conditionalCoverageAfterFourApprovedPlusThreeNewReleased": 190,
+  "conditionalGapTo261": 71,
+  "filesLfSha256": {
+    "audit-current-a.py": "7cd8f3aa7397159364fc27ce1ead00c8d52b89b21be01f54cc21af044ad563cd",
+    "cases.json": "4d0864b469bb0cdf289143a393f7c8e956798611f1756c42c78a72b4eb75e8e5",
+    "decimal-results.json": "807975d43bc737327d19af8e64f10a2faa8aeb8a71f1e5704f6ae5eda2fd7379",
+    "engine-results.json": "f775b641e3d14ed4977c1d9aee97b06133f84377ba874c961a73d2d3633905fe",
+    "evaluate-current-a.mts": "4eabb03eafd1d7b5022aa3e8503f92fb377beaaf61c4e9284013aa7cb9aa99e0",
+    "method-impact.csv": "a42c0ab6ba802dd6173c96528fa46232272d396c2f886c13a18fdd43214f7176",
+    "recipe-dependencies.csv": "7b2e0df7d7097373021d59d5cbdf029e1857576ac11d8f3f782361db6c78ff88",
+    "sources.json": "62902dad2771dab9f24117011d8d42963a21c2a8de753dc5723e1456344117cd"
+  }
+}
