@@ -1,0 +1,19 @@
+# GK80 · moussakan mitatut valmisruokavastineet
+
+`kreikkalainen-moussaka` on Codex2:n tarkastettujen prioriteetti- ja päätösjonojen ulkopuolella. Resepti tekee kuusi annosta. Siinä on 500 g perunaa, 500 g naudanjauhelihaa, munakoisoa ja béchamel, jossa on 60 g vehnäjauhoa ja 6 dl maitoa. Koko vuoka paistetaan 190 °C:ssa noin 35 minuuttia.
+
+## Ihmistutkimukset
+
+**Lähin valmisruokavastine on Tesco Finest -lammasmoussaka.** Henry ym. ilmoittavat glukoosiasteikolla GI **35 ± 8 (SE)** kymmeneltä terveeltä osallistujalta. Alkuperäisen taulukon tuoterivillä hiilihydraattipitoisuus on 9,1 g/100 g ja testiannos 329,6 g eli noin 30 g hiilihydraattia. Menetelmätekstin yleiset annoskuvaukset ovat 25 tai 50 g, joten annosrivin ja yleisprotokollan välinen ero jää lähderajoitteeksi. Myöhemmän GI-taulukon annosesimerkki käyttää eri tarjoilupainoa. Säilytä laskennassa alkuperäisen artikkelin tuoterivin tiedot. [Henry ym., alkuperäisartikkeli](https://pubmed.ncbi.nlm.nih.gov/16351769/) · [Tekijän jakama kokoteksti, rivi 60](https://www.researchgate.net/publication/7417756_Glycaemic_index_and_glycaemic_load_values_of_commercially_available_products_in_the_UK)
+
+Tescon nykyinen 380 g versio sisältää perunaa, lammasta, munakoisoa ja maitopohjaista kastiketta. Sen koostumusta ei voitu yhdistää vuoden 2005 testierään. Nykyinen resepti käyttää naudanlihaa ja kotitekoista roux-pohjaista kastiketta, ja se tarjoillaan tuoreen paiston jälkeen. Tuotteen nykyinen ainesluettelo tukee ruokalajitason samankaltaisuutta. Tarkat testierän suhteet ja uudelleenlämmityksen vastaavuus jäävät auki. [Tescon nykyinen tuotetieto](https://www.tesco.com/shop/en-GB/products/317198666)
+
+Manios ym. mittasivat kaupallista kasvismoussakaa 24 tyypin 2 diabetesta sairastavalla osallistujalla. Taulukkoon 2021 kootussa tuloksessa sen GI on 35, annos 333 g ja hiilihydraattimäärä 50 g. Näytteet olivat laskimoseerumista, glukoosivertailua ei toistettu taulukon mukaan. Tämä on erillinen vertailupiste. Se ei validoi naudanliha- ja béchamelversiota eikä muodosta riippumatonta vahvistusta saman reseptin GI:lle. [Manios ym.](https://pubmed.ncbi.nlm.nih.gov/26919992/) · [Koosteen rivi 3966](https://ghwinstitute.com/wp-content/uploads/2022/10/supplementaltable2-2.pdf)
+
+## Laskettava lähdeskenaario
+
+Nykyisen reseptin julkaistu annoskoostumus on **32,22 g imeytyvää hh**. Jos nimetty lammasmoussaka hyväksyttäisiin kokonaisen valmistetun ruoan vertailuksi, lasku olisi **32,22 × 0,35 = 11,277 GK/annos**, karkeasti 10–15. Tämä on vertailupisteen pyöristys. SE:tä tai kahden kaupallisen tuotteen samaa GI-pistettä ei tulkita kotireseptin vaihteluväliksi.
+
+Perunat tuovat lähtökoostumuksella 12,9167 g hh/annos ja béchamelin vehnäjauho 7,3998 g. Jauhoa ei voi jättää pois. Kokonaisen moussakan GI:tä ei käytetä jauhon, perunan tai kastikkeen erillisenä GI:nä. Mahdollinen sovellus kohdistaisi GI:n kerran koko reseptin hiilihydraatteihin.
+
+**Vaikutus 0 heti ja yksi ehdollinen B-lähdeskenaario**. Ennen käyttöä vertaa testituotteen alkuperäisiä peruna–kastike–lihasuhteita ja kypsennystä. Ilman vastaavuuden hyväksyntää resepti pysyy HOLDissa. [Nykyinen koostumuslaskelma](https://github.com/ozirix-dev/Reseptit/blob/1276116d8bd4c84fc62ededebc8304a73c1cc9e1/docs/nutrition/calculations/kreikkalainen-moussaka.json)
