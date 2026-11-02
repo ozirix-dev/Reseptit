@@ -1,0 +1,12 @@
+import {mkdirSync,writeFileSync} from 'node:fs';
+import {fileURLToPath} from 'node:url';
+import path from 'node:path';
+import {ACTIVATION,loadPilot,evaluate,summarize,formatResult} from './gk149-model';
+if(process.argv.length>2)throw Error('Draft pilot has no activation or publication arguments');
+const root=fileURLToPath(new URL('../../',import.meta.url));
+const {cases,comps,gis}=loadPilot(root),results=cases.map(c=>evaluate(c,comps,gis));
+const output={activation:ACTIVATION,summary:summarize(results),results,preview:results.filter(r=>r.numericProposal).map(r=>({recipeId:r.recipeId,fi:formatResult(r,'fi'),en:formatResult(r,'en'),sv:formatResult(r,'sv'),th:formatResult(r,'th')}))};
+const folder=path.join(root,'tmp/nutrition/gk149');mkdirSync(folder,{recursive:true});
+writeFileSync(path.join(folder,'pilot.json'),JSON.stringify(output,null,2)+'\n');
+console.log(JSON.stringify(output.summary));
+for(const r of results)console.log(r.recipeId,r.numericProposal?JSON.stringify({level:r.level,point:r.point,range:r.scenarioRange,omittedCho:r.omittedCho}):r.blockers.join('; '));

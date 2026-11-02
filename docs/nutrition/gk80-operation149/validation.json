@@ -1,0 +1,18 @@
+{
+  "local": {
+    "pilot": "PASS;16 numeric,3 arithmetic HOLD",
+    "focusedTests": "PASS;11 GK149 tests;4 existing Op146 regressions also passed",
+    "decimal": "PASS;16 numeric,3 HOLD",
+    "typescript": "PASS",
+    "markdown": "PASS",
+    "activeSurface": "PASS;1402 protected files;all326 result fingerprints preserved"
+  },
+  "ci": "See exact Draft HEAD Checks; no manual Actions rerun requested",
+  "production": "156/326 unchanged",
+  "target": 30,
+  "actual": 16,
+  "targetMet": false,
+  "readyAuthorized": false,
+  "mergeAuthorized": false,
+  "deployAuthorized": false
+}

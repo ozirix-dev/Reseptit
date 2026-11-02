@@ -1,0 +1,93 @@
+{
+  "doi": "10.1093/ajcn/nqab233",
+  "table1": {
+    "url": "https://nutritotal.com.br/pro/wp-content/uploads/sites/3/2021/09/Tabela1_IG.pdf",
+    "sha256": "e930c4a090697abd4f7331a64837b524cf4701513cbb9865a739f4f9fb131061"
+  },
+  "table2": {
+    "url": "https://doi.org/10.1093/ajcn/nqab233",
+    "sha256": "af92f778e018a5b0779846cf756061370c674b386f7823d9917a505347a4ccba"
+  },
+  "records": [
+    {
+      "id": "strawberry40",
+      "kind": "NAMED_HUMAN_GI",
+      "values": [
+        40
+      ],
+      "path": "docs/nutrition/gk80-operation149/source-observations.json",
+      "nativeId": "strawberry40",
+      "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+      "locator": "Supplement1 p79 item1174; raw fresh strawberries, Australia2001 n10, glucose2h; UO5 original unpublished",
+      "limitation": "Not a measured cake GI. No SEM-as-range. Cultivar/serving mixture LOW."
+    },
+    {
+      "id": "bread54-77",
+      "kind": "NAMED_HUMAN_GI",
+      "values": [
+        54,
+        77
+      ],
+      "path": "docs/nutrition/gk80-operation149/source-observations.json",
+      "nativeId": "bread54-77",
+      "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+      "locator": "Supplement1 p16 items226 and225; sourdough wheat bread Australia2003 n10 GI54, Fine Breads Cob Australia2008 n10 GI77",
+      "limitation": "Two named comparator-food scenarios, not all-bread mean, physiological bounds or prediction interval. Flour/fermentation variation outside scenarios possible."
+    },
+    {
+      "id": "congee80",
+      "kind": "NAMED_HUMAN_GI",
+      "values": [
+        80
+      ],
+      "path": "docs/nutrition/gk80-operation149/source-observations.json",
+      "nativeId": "congee80",
+      "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+      "locator": "Supplement1 p46 item659; COFCO jasmine rice31.6g +250ml water steamed40min Thailand2016 n10 glucose2h UO18",
+      "limitation": "Source-backed reference point, not exact60min simmered recipe. Rice/water ratio and gelatinization differ; error not quantified."
+    },
+    {
+      "id": "mung42",
+      "kind": "NAMED_HUMAN_GI",
+      "values": [
+        42
+      ],
+      "path": "docs/nutrition/gk80-operation149/source-observations.json",
+      "nativeId": "mung42",
+      "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+      "locator": "Supplement2 p75 item3151; mung bean boiled in salted water, Pakistan2008 n7 glucose2h no repeated reference, 0/30/60/120min",
+      "limitation": "Khan2008; low-quality small human test. Soft porridge vs boiled bean is explicit new B preparation analogy; uncertainty not bounded by SEM4."
+    },
+    {
+      "id": "cashew22-27",
+      "kind": "NAMED_HUMAN_GI",
+      "values": [
+        22,
+        27
+      ],
+      "path": "docs/nutrition/gk80-operation149/source-observations.json",
+      "nativeId": "cashew22-27",
+      "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+      "locator": "Supplement1 item1431 salted Coles cashews GI22; Supplement2 items3238/3239 halves or roasted/salted GI27",
+      "limitation": "Named cashew comparators, not nut family mean. Target unsalted cooked garnish is a LOW food/preparation analogy; residual uncertainty outside envelope."
+    },
+    {
+      "id": "pasta47-49",
+      "kind": "NAMED_HUMAN_GI",
+      "values": [
+        47,
+        49
+      ],
+      "path": "docs/nutrition/gk80-operation149/source-observations.json",
+      "nativeId": "pasta47-49",
+      "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+      "locator": "Existing E-HOLD penne47 and release2 white-spaghetti food-specific49; referenced frozen records below",
+      "limitation": "Named durum-pasta reference model for drained hot macaroni baked in custard. Shape and extended oven heating are unmeasured;47–49 is only a comparator scenario envelope, not a plausible full GI bound.",
+      "comparators": [
+        "penne47",
+        "spaghetti49"
+      ]
+    }
+  ],
+  "note": "Only selected factual values/locators retained. Original PDFs reused; primary source not newly researched. Statistical SEMs never used as recipe bounds."
+}
