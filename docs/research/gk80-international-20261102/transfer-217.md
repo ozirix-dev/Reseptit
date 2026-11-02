@@ -2,7 +2,7 @@
 
 ## Julkaisuerät 3.11.2026
 
-[PR 193](https://github.com/ozirix-dev/Reseptit/pull/193), pää cd1a8ef212ae30ba3dc9587da61148a20ae350a7, kokoaa neljä hyväksyttyä laskelmaa. Paella, kanatagine, hernekeitto ja uunimakkara ovat tässä integraatioerässä. PR oli tarkistushetkellä avoin Draft ja [build](https://github.com/ozirix-dev/Reseptit/actions/runs/41535280436/job/125585434790) käynnissä. PR:n esikatselun 191/326 on ehdollinen. Main on edelleen 1276116d ja viimeksi julkisesta koosteesta varmennettu luku 187/326.
+[PR 193](https://github.com/ozirix-dev/Reseptit/pull/193), pää cd1a8ef212ae30ba3dc9587da61148a20ae350a7, kokoaa neljä hyväksyttyä laskelmaa. Paella, kanatagine, hernekeitto ja uunimakkara ovat tässä integraatioerässä. PR on avoin Draft. Saman pään [build ja kattavuustarkistus](https://github.com/ozirix-dev/Reseptit/actions/runs/41535280436/job/125585434790) läpäisivät. Tuoreessa julkisen koosteen tarkistuksessa kaikki neljä tunnistetta olivat yhä vailla numeerista arvoa. PR:n esikatselun 191/326 on ehdollinen. Main on edelleen 1276116d ja viimeksi julkisesta koosteesta varmennettu luku 187/326.
 
 Panang kuuluu Codex2:n luovutuskuitin c82b8dd mukaan eri, myöhempään julkaisuomistajan erään. Syötehashi ja reseptien lähdetiivisteet on jo tarkistettu. Neljän PR 193 -reseptin ja Panangin mahdollinen julkaisu nostaisi luvun 192/326:een ja jättäisi 69 arvoa tavoitteeseen. Nämä viisi ovat alla olevan 33 ehdokkaan joukossa. Älä lisää PR 193:a toistamiseen unionin päälle.
 
