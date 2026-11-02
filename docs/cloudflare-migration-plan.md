@@ -5,6 +5,10 @@ Repository: `ozirix-dev/Reseptit`. [Draft-PR #172](https://github.com/ozirix-dev
 Työhaara: `codex/cloudflare-images-plan-20261102`.
 Inventaarion main-SHA: `583fdb91aeb12114f909412b9165fc3b02a6515d`.
 
+**Yhteensovitus 2.11.2026:** tämä suunnitelma, [Nutrition Core #176](https://github.com/ozirix-dev/Reseptit/pull/176)
+ja [tuotesuunnitelma #178](https://github.com/ozirix-dev/Reseptit/pull/178) käyttävät luvun 9 yhteistä etenemisjärjestystä.
+Kyse on suunnitelmien tarkennuksesta; vaiheita tai lähdetietueita ei hyväksytä tällä muutoksella.
+
 Tämä suunnitelma korvaa aiemman päällekkäisen vaiheistuksen yhdellä kuuden vaiheen
 mallilla. Liitteiden luvut ovat päivättyjä havaintoja. Tulevan siirron aineisto
 nimetään erikseen hyväksytystä mainista, ei muiden istuntojen työpuista.
@@ -20,7 +24,7 @@ kuvahosti `https://kuvat.recipavo.com/` ja www ohjataan apexiin.
 | --- | --- | --- |
 | GitHub | Markdown-reseptit, ainesosat, annokset, koodi, katselmoidut hyväksyntämanifestit ja historia | Nykyisen repon mukainen; ei salaisuuksia tai rajoitettua raakadataa |
 | SQLite | Paikallinen tutkimus, ehdokkaat ja tuontien valmistelu | Ei itsenäinen tuotantomaster |
-| D1 | Hyväksytyt ravintoarvot, lähdetietueversiot, laskentasidokset ja kuvametatiedot | Ei suoraa selainyhteyttä |
+| D1 | Coren yhteinen hyväksytty lähdekoostumus; Recipavon erillisen vastuualueen laskentasidokset, reseptiprofiilit ja kuvametatiedot | Loogiset vastuut erotettu, ei suoraa selainyhteyttä |
 | Media-R2 | Hyväksytyt julkaisuoriginaalit ja optimoidut versiot | Kuvadomain avataan vasta vaiheessa 5 |
 | Erillinen yksityinen R2 | Masterit, sallitut lähdeaineistot, SQL-viennit ja palautuspaketit | Ei custom domainia eikä r2.dev-julkisuutta |
 | Workers Static Assets | HTML, reitti-JSON, JS/CSS ja julkiset metatiedot | Julkinen vaiheessa 5 |
@@ -42,53 +46,79 @@ SOURCE-01:n ja GK80:n työpuita ei muuteta.
 SOURCE-01 tarkoittaa tässä kansainvälisten ravintokoostumustietokantojen tutkimusta
 (NEVO, Thai FCD, MEXT, CoFID ja muut), ei erillistä GI-SOURCE-01-tutkimusta.
 
-Lukevassa tarkistuksessa 2.11.2026 tunnetun SOURCE-01-worktreen HEAD oli
-inventaarion main-SHA, seurattujen tiedostojen diffi tyhjä eikä työpuusta löytynyt
-SOURCE-01-loppuraporttia. Scratchissa `D:/Temp/source-01-20261102` oli baseline-,
-lähdehaku- ja pilotointiaineistoa. Pilotissa oli hyväksymättömiksi merkittyjä
-tutkimusehdokkaita. Tarkistetuista PR-hauista ei löytynyt erillistä hyväksyttyä
-ravintotietokantojen SOURCE-01-loppuraporttia. Tämä havainto ei ole kaikkien
-istuntojen tai hakemistojen täydellinen auditointi.
+Loppuraportti ja kenttäkartoitus ovat nyt olemassa [Draft-PR:ssä #174](https://github.com/ozirix-dev/Reseptit/pull/174),
+tarkastettu versio `19939d95d8c93d6e93d4619d9f2510d043d246dc`:
+[loppuraportti](https://github.com/ozirix-dev/Reseptit/blob/19939d95d8c93d6e93d4619d9f2510d043d246dc/docs/research/source-01/README.md) ja
+[kenttäkartoitus](https://github.com/ozirix-dev/Reseptit/blob/19939d95d8c93d6e93d4619d9f2510d043d246dc/docs/research/source-01/field-mapping.md).
+Aiempi havainto puuttuvasta loppuraportista on vanhentunut. **Omistajan hyväksyntä puuttuu edelleen.**
+Raportin hyväksyminen tutkimustuloksena ei hyväksy sen hakuehdokkaita tuotantolaskentaan.
 
-**SOURCE-01:n valmistuminen ja tulosten hyväksyntä on vaiheen 1 poistumisehto.**
-Lopullista SQLite/D1-skeemaa tai lähdekenttien normalisointia ei lukita ennen sitä.
-Tämä dokumentti määrittelee yhteiset invarianssit ja katselmoitavan käsitemallin,
-ei valmista SQL-migraatiota. Tutkimustiedostojen olemassaolo ei ole hyväksyntä
-tuotantolaskentaan. Keskeneräisiä ehdokkaita ei kopioida hyväksyttyyn D1-dataan.
+**Vaiheen 1 poistumisehto on nimetyn raportti-/kenttäkarttaversion, rajauksien ja yhteisen
+mallisopimuksen hyväksyntä yhdessä NC01–NC02:n kanssa.** Lähdekohtaiset HOLD/DEFERRED-rajat
+voidaan hyväksyä näkyvinä poissulkuina: kaikkia kansallisia tietokantoja tai mikroja ei tarvitse
+ratkaista ennen rajattua pilottia. Esimerkiksi NEVO:n logical-zero, Fridan polyolipuuttuvuudet,
+MEXT:n CHO-määritelmät ja Thai FCD:n lupa-/versiokysymykset eivät ratkea teknisellä tuonnilla.
 
-Vaiheessa 1 tarvitaan hyväksytty raporttiversio, lähdekohtaiset ravintotekijä-
-ja hiilihydraattimääritelmät, polyolien puuttuvuuden käsittely, käyttö-/säilytys-/
-julkaisuehdot sekä pilotin hyväksytyt ja hylätyt ainesosavastaavuudet.
-Hyötyarvio ei yksin osoita tuotekohtaista vastaavuutta tai käyttöoikeutta.
+Ennen paikallista toteutusta kirjataan lähdekohtaiset ravintotekijä- ja hiilihydraattimääritelmät,
+polyolien puuttuvuuden käsittely, käyttö-/säilytys-/julkaisuehdot, pilotin tietuekohtaiset
+vastaavuudet sekä lähde+versio+native-ID, arvotilat, muunnokset ja hyväksyntävastuut.
+Lopullinen SQLite/D1-sopimus lukitaan vasta tämän päätöksen jälkeen. SOURCE-01:n vanhan
+`c5393a1`-snapshotin 261/65/55-luvut eivät ole nykyisen mainin kattavuusauditointi;
+myöskään tämän suunnitelman `583fdb9`-kuvainventaario ei määrää tulevaa siirtoaineistoa.
+Yksi uusi hyväksytty main/SOURCE/GK-lähtösnapshot nimetään vaiheessa 4 ja inventoidaan silloin.
+
+Pilotilla on kaksi eri näyttöä: Frida/MEXT-enintään-8-tietueen tekninen kaikki-komponentit-tuonti
+sekä oikeasti laskettava toistuva aamupala hyväksytyillä ruoka-/reseptiprofiileilla.
+Ensimmäinen ei todista jälkimmäistä. Jo hyväksytty nykyinen lähde, esimerkiksi Fineli, voidaan
+valita käyttöoikeus- ja provenienssipäätöksellä; uuden lähteen lisäys Coreen vaatii rajatun
+NC04–NC06-kierroksen hyväksynnän. Puuttuva polyolitieto ei muutu nollaksi pilotin helpottamiseksi.
 
 ## 3. Datan omistajuus ja yksisuuntainen siirtymäsopimus
 
-Omistajuutta ei vaihdeta tällä dokumentaatiomuutoksella.
+Omistajuutta ei vaihdeta tällä dokumentaatiomuutoksella. Ensimmäinen D1-tuotantoratkaisu
+suunnitellaan jo yhteisen Core-rakenteen mukaiseksi pienellä hyväksytyllä aineistolla.
+Ensin ei rakenneta Recipavo-kohtaista lähdemasteria ja myöhemmin sen rinnalle toista Corea.
 
-| Tila | Ravintoarvojen määräävä lähde | SQLite/D1 |
+| Tieto | Omistaja ja siirtymä |
+| --- | --- |
+| Yhteinen lähdekoostumus, lähdeversiot, komponenttimääritelmät ja hyväksytyt normalisoinnit | Nutrition Core; D1 määräävä vasta vaiheen 4 erikseen hyväksytyn omistajuusportin jälkeen |
+| Reseptiteksti, ainesosat, annokset, valmistus ja reseptikohtainen lähdevalinta | Recipavo/Reseptit Git; eivät muutu Core-lähdehavainnoiksi |
+| Reseptin laskettu profiili, input-/source-/method-sidokset ja julkaisu | Recipavon hyväksytty laskentapaketti ja julkaisumanifesti; sovellusprofiilit erillään Core-koostumuksesta |
+| Käyttäjän ateriat, syömiset, tavoitteet ja tilit | Erillinen Diary, ei tämän siirron dataa tai Coreen tallennettavaa tietoa |
+
+| Tila | Määräävä laskenta- ja hyväksyntäpolku | SQLite/D1 |
 | --- | --- | --- |
-| Nykytila ja vaiheet 1–3 | Nykyinen Git-pohjainen laskenta ja hyväksyntä | SQLite valmistelee, stage-D1 todistaa yhteensopivuuden |
-| Vaihe 4 ennen omistajuusporttia | Gitin nimetty lähtöjulkaisu | Tuotanto-D1:een valmistellaan lukittu ehdokas |
-| Omistajan hyväksymän portin jälkeen | D1:n hyväksytyt tietue- ja laskentaversiot | SQLite on valmistelija; Gitin numerokopiot ovat vain vientiprojektioita |
+| Nykytila ja vaiheet 1–3 | Nykyinen Git-pohjainen laskenta ja hyväksyntä | SQLite valmistelee, stage-D1 todistaa sopimuksen |
+| Vaihe 4 ennen omistajuusporttia | Gitin nimetty lähtöjulkaisu | D1:een valmistellaan lukittu ehdokas erillisillä Core-/sovellusvastuilla |
+| Omistajan hyväksymän portin jälkeen | Core-D1 määrää yhteisen lähdekoostumuksen; Recipavo hyväksyy siitä lasketut reseptiprofiilit | Gitin numeeriset vientikopiot ovat nimettyjen hyväksyttyjen pakettien projektioita |
 
-Omistajuusportti on vaiheen 4 lopussa: hyväksytään lähtösnapshot, D1-vientivertailu
-ja cutover-commit. Sen jälkeen Gitin mahdolliset ravintoarvonumerot tuotetaan
-D1:stä ja merkitään projektioiksi; niiden käsinmuokkaus estetään tulevassa
-julkaisutarkistuksessa. Git säilyy reseptitekstin, ainesosien, annosten ja koodin
-masterina. Tuotanto-D1:tä muutetaan vain hyväksytyillä, versioiduilla tuontipaketeilla.
-SQLiteen ja D1:een ei synny kahta vapaasti muokattavaa tuotantomasteria.
+Vaiheen 4 portti hyväksyy lähtösnapshotin, Core-vientivertailun, Recipavon laskenta-/
+profiilipaketin ja cutover-commitin eriteltyinä. Reseptiprofiilien tallennus D1:n
+sovellusalueelle ja Git-projektioiden käyttöönotto nimetään tässä samassa sopimuksessa;
+niitä ei tulkita Corelle annetuksi resepti- tai käyttäjätietojen omistajuudeksi.
+Tuotanto-D1:n lähdearvot muuttuvat vain hyväksytyillä versioiduilla tuontipaketeilla.
+Gitin vientinumeroiden käsinmuokkaus estetään tulevassa julkaisutarkistuksessa.
+
+Looginen erottelu ei pakota useaa fyysistä kantaa tai uutta Core-repoa alkupilotissa.
+NC02:ssa ja ennen vaihetta 3 päätetään taulu-/nimiavaruus-, resurssi- ja oikeusrajat;
+yksi fyysinen kanta voi riittää, jos oikeudet ja erilliset viennit voidaan osoittaa.
+Samaa lähdehavaintoa ei saa ylläpitää kahtena muokattavana masterina. Julkisen sivuston
+julkaisulupa ja tulevan Diaryn lupa ovat omistajuusportista erillisiä.
 
 ```mermaid
 flowchart LR
   S[Sallitut lähdeaineistot ja SOURCE-01] --> L[SQLite: tutkimus ja ehdokkaat]
   L --> A[Katselmoitu hyväksyntä ja tuontipaketti]
-  A --> D[(D1: hyväksytyt versiot)]
-  D --> E[Julkaisuun sidottu vienti]
-  G[Git: reseptit ja ainesosahash] --> B[Staattinen build]
-  E --> B
+  A --> D[(Core-D1: yhteinen koostumus)]
+  D --> E[Hyväksytty Core-vienti]
+  E --> C[Recipavo: reseptilaskenta ja hyväksytty profiili]
+  G[Git: reseptit ja ainesosahash] --> C
+  G --> B[Staattinen build]
+  C --> B
   B --> W[Workers Static Assets]
   I[Kuvamanifesti ja oikeuspäätös] --> R[(R2: kuvat)]
   E --> P[(Yksityinen R2: varmistukset)]
+  C --> P
   P --> O[Salattu riippumaton kopio]
 ```
 
@@ -289,6 +319,14 @@ varmennetaan; ETag ei ole SHA-todiste. CORS avataan vain todettuun tarpeeseen.
 
 ## 7. Yksi varmistusprosessi ja selkeä palautus
 
+Tämä varmistusprosessi koskee Core-lähteitä, Recipavon julkista aineistoa, kuvia ja
+julkaisupaketteja. **Diary, käyttäjätilit ja käyttäjien ateriat eivät kuulu sen SQL-vienteihin,
+365/400 vrk:n paketteihin, pysyvään ennen-siirtoa-kopioon tai offsite-arkistoon.**
+Diarylle hyväksytään #178:n P2:ssa erillinen säilytys-/poistopolitiikka (enintään 30 vrk:n
+kiertävä varmistus on ehdotus), manifestit, vientityöt, pääsy- ja avainrajat sekä
+poistot uudelleen soveltava palautus. Yhteistä suodattamatonta tietokantadumppia ei käytetä.
+Sama ylläpitorutiini voidaan hyödyntää, mutta henkilötietojen retentiota ei peritä Corelta.
+
 ### 7.1 Viisi täydentävää suojaa
 
 | Suoja | Tarkoitus | Säilytys |
@@ -377,11 +415,12 @@ Tilin menetyksen RTO riippuu myös uuden tilin ja domainhallinnan saannista.
 | Resurssi | Suunniteltu nimi |
 | --- | --- |
 | Julkinen Worker ja stage | `recipavo-web`, `recipavo-web-stage` |
-| D1 | `reseptit-prod`, `reseptit-prod-stage` |
+| D1 | Aiemmat työnimet `reseptit-prod`, `reseptit-prod-stage`; yhteinen Core-/Recipavo-jako ja lopulliset nimet vahvistetaan ennen vaihetta 3 |
 | Media | `reseptit-media`, `reseptit-media-stage` |
 | Arkisto | `reseptit-private-archive`, `reseptit-private-archive-stage` |
 | Varmistus | Yksi pieni ajastettu D1-vienti; ei julkista hallinta-API:a |
 
+Nimet ovat ehdotuksia, eivät luontilupa tai erillisen reseptikohtaisen lähdemasterin vaatimus.
 Nimi ei todista identiteettiä: resurssi-ID, tili ja ympäristö varmistetaan.
 Nimiristiriita pysäyttää käyttöönoton. Vaiheen 4 media pysyy yksityisenä ilman
 custom domainia tai r2.dev:tä vaiheeseen 5 asti. Stage-siivous ei koske tuotantoa.
@@ -398,7 +437,11 @@ aluksi neljä objektia, tilapäiseen virheeseen enintään viisi retry-yritystä
 viiveellä. Oikeus-/sisältövirhe pysäyttää erän; loki mahdollistaa jatkamisen.
 
 Lisäkulutavoite on **enintään 5 USD/kk nykyisen Workers Paid -tilauksen päälle**,
-ennen veroja ja domain-/Proton-maksuja. Kiintiöt jaetaan muiden projektien kanssa.
+ennen veroja ja domain-/Proton-maksuja. Raja koskee koko Recipavon lisäkulua, ei jokaista
+PR:ää erikseen. Diaryn tunnistus, sähköposti, tallennus, varmistukset ja tukityö arvioidaan
+erikseen P2:ssa; niiden palvelujen aloitus tai rajan ylitys ei sisälly siirtolupaan.
+Tuotesuunnitelman 10–250 euron skenaariot eivät ole hyväksytty budjetti.
+Kiintiöt jaetaan muiden projektien kanssa.
 Nykyinen 3,35 GB:n R2-näkymä ei osoita koko jakson GB-month-kertymää tai vapaata
 projektikiintiötä. Hinnoittelu ja kapasiteetti tarkistetaan ennen vaiheita 3–5.
 
@@ -417,14 +460,37 @@ Omistaja hyväksyy nimetyn vaiheen ja tarkan aineisto-/Git-version. Päätös ja
 kirjataan tavalliseen PR:ään tai manifestiin. Seuraava vaihe ei käynnisty
 automaattisesti; tämän dokumentaation hyväksyminen ei aloita vaihetta 1.
 
+### 9.0 Yhteinen etenemisjärjestys: #172, #176 ja #178
+
+Vaihenumerot säilyvät: tämän dokumentin 1–6, Coren NC01–NC10 ja tuotteen P0–P8.
+Sama rajattu työ ja näyttö hyväksytään suunnitelmien yhteisessä portissa; kolmea päällekkäistä
+projektia tai kolmea erillistä datatuontia ei rakenneta. Päätöksessä luetellaan kaikki katetut
+vaiheet ja rajaukset. Suunnitelmien hyväksyntä tai merge ei ole toteutus- tai Actions-lupa.
+
+| Järjestys | Yhteen sovitettu työ | Vaadittu päätös tai näyttö |
+| --- | --- | --- |
+| 1 | Vaihe 1 + NC01–NC02; tuotteen P0-rajaus | SOURCE-01 #174 hyväksyntä rajauksineen, Core/Recipavo/Diary-omistajuus, kaksi pilottinäyttöä, suomenkielinen aikuisten MVP ja yhteinen kustannusraja |
+| 2, rinnakkain | Vaihe 2 + NC03–NC05 sekä erikseen P1 | Paikallinen SQLite/tuonti/vienti ja kuva-/oikeus-/URL-manifestit; P1 vain synteettinen aamupala-UX ilman tilejä tai pilveä |
+| 3 | Vaihe 3 + NC06, yksi koordinoitu stage-pilotti | Hyväksytty pieni erä, SQLite/D1-pariteetti, vähimmät oikeudet, kustannus ja riippumaton palautusnäyttö |
+| 4 | NC07-vienti + vaiheet 4–6 | Hyväksytty main/SOURCE/GK-snapshot, reseptiprofiilit, kuvien A/B/C ja URL:t, omistajuusportti sekä erillinen julkaisulupa |
+| 5 | P2–P5: yksityinen Diary ja rajattu käyttäjäpilotti | Tietosuoja, tunnistus, vienti/poisto/palautus ja palvelubudjetti ennen oikeita käyttäjätietoja; julkinen reseptipalvelu ennen laajaa Diary-avausta |
+| 6 | P6–P7, myöhemmin P8 | Käyttäjien paluu, tukikuorma ja yksikkötalous ennen maksullisuutta; kansainvälistyminen omana porttinaan |
+
+P1:n synteettinen UX ei odota koko Corea, kaikkia mikroja, julkista siirtoa tai 30 päivän
+jälkiseurantaa. P2:n tietosuojasuunnittelu ja luvallinen synteettinen valmistelu voidaan
+rajata erikseen; oikeita tietoja ei käsitellä ennen sen portteja. NC08:n Ravinto-vienti ja
+NC09:n mikropilotti ovat erikseen luvitettavia jatkoja, eivät ensimmäisen Diaryn yleisehtoja.
+
 ### 9.1 Vaihe 1 – SOURCE-01 ja tietomalli
 
 - **Lähtöehdot:** oikean repon erillinen työpuu ja SOURCE-01:n tila tiedossa.
-  Käsitemallia voidaan valmistella, mutta keskeneräinen tutkimus estää skeeman lukituksen.
+  Raportti #174 on saatavilla; sen hyväksymättömät tulokset eivät lukitse skeemaa.
 - **Tehtävät:** katselmoidaan SOURCE-01, lähdemääritelmät, ehdot, SQLite/D1-kentät,
-  versioavaimet, legacy-julkaisun käsittely ja hyväksyntäprosessi.
+  versioavaimet, legacy-julkaisun käsittely ja hyväksyntäprosessi yhdessä NC01–NC02:n kanssa.
+  Päätetään luvun 3 omistajuus, tekninen pilotti ja erillinen laskettava aamupalaskenaario.
 - **Hyväksymiskriteerit:** hyväksytty raporttiversio ja skeemaehdotus; nolla/puuttuva,
-  eri maiden tietueet, muunnokset ja reseptin versiosidos ratkaistu.
+  eri maiden tietueet, muunnokset ja reseptin versiosidos ratkaistu valitulle rajaukselle;
+  HOLD/DEFERRED-lista ja teknisen/sovelluspilotin erilliset hyväksymiskriteerit nimetty.
 - **Palautus:** ehdotus tarkennetaan tai hylätään, nykyinen Git-laskenta säilyy.
 - **Kustannus:** ei Cloudflare-resursseja tai uusia palvelumaksuja.
 - **Omistajan päätöspiste:** hyväksyy SOURCE-01:n tulokset ja yhteisen skeeman sekä
@@ -435,6 +501,7 @@ automaattisesti; tämän dokumentaation hyväksyminen ei aloita vaihetta 1.
 - **Lähtöehdot:** portti 1 hyväksytty ja lähdeaineistojen paikallinen käyttö sallittu.
 - **Tehtävät:** SQLite-tuonnit, hyväksyntä-/vientimanifestit, kuvien A/B/C-ryhmät,
   kuva-/variantti-/URL-kartta, osoitekonfiguraatio sekä Pages-siirtymä ja palautus.
+  Tämä on sama paikallinen työpaketti kuin NC03–NC05; synteettinen P1 etenee rinnalla omalla luvallaan.
 - **Hyväksymiskriteerit:** uusintatuonti no-op, ristiriita pysäyttää erän, puuttuvat ja
   julkaistut lähtöarvot säilyvät; legacy ei muutu approved-tiedoksi; vanhojen assetien
   säilytys ja kaikki reittikohteet määritelty. Ei massalatausta ilman hyötyä ja lupaa.
@@ -446,7 +513,8 @@ automaattisesti; tämän dokumentaation hyväksyminen ei aloita vaihetta 1.
 ### 9.3 Vaihe 3 – Cloudflare-pilotti
 
 - **Lähtöehdot:** portti 2 hyväksytty, tili/tunnukset varmennettu, pieni hyväksytty
-  otos ja erillinen stage-arkisto nimetty.
+  otos ja erillinen stage-arkisto nimetty. Core-/Recipavo-resurssijako, yhteinen
+  NC06-näyttöpaketti ja budjetti hyväksytty; erillistä päällekkäistä stagea ei oleteta.
 - **Tehtävät:** stage-D1, R2-testibucketit, Access-suojattu testijulkaisu,
   päiväviennin pilotti ja palautus. Otoksessa tavallinen, suurin ja jaettu kuva,
   vanha alias, yksityinen PNG-master, hyväksytty laskelma ja puuttuvia arvoja.
@@ -466,7 +534,8 @@ automaattisesti; tämän dokumentaation hyväksyminen ei aloita vaihetta 1.
 - **Tehtävät:** manifestituonti tuotanto-D1:een ja vielä yksityisiin tuotantobucketeihin,
   koko median read-back, D1-vienti, julkaisematon lopullinen build ja Proton-paketti.
 - **Hyväksymiskriteerit:** julkiseen mediaan aiotut A/B-hyväksytty, C-poikkeukset ratkaistu,
-  kaikki SHA:t, arvot, FK:t, reitit ja kielisidokset täsmäävät; nykyinen sivusto ei muutu.
+  kaikki SHA:t, arvot, FK:t, reitit ja kielisidokset täsmäävät; NC07:n hyväksytty
+  sovellusvientinäyttö olemassa; nykyinen sivusto ei muutu. C-kuvien takia reseptejä ei pudoteta hiljaa.
 - **Palautus:** prepared-ehdokas jää julkaisematta, Git määrää omistajuusporttiin asti;
   vanhoja objekteja tai reseptitietoja ei poisteta.
 - **Kustannus:** mitattu media+arkisto+D1+asset-retentio sekä tuonnin operaatiot;
@@ -561,13 +630,14 @@ riippuvuuksien valmistuttua.
 
 | Asia | Mihin mennessä | Ratkaisun näyttö |
 | --- | --- | --- |
-| SOURCE-01:n loppuraportti ja ehdot | Vaiheen 1 loppu | Hyväksytty versio, ravintotekijä- ja ainesosakartoitus |
+| SOURCE-01 #174:n hyväksyntä ja rajaukset | Vaiheen 1 / NC01 loppu | Raportti on olemassa; hyväksytty SHA, kenttäkartta ja HOLD/DEFERRED-lista |
+| Core-/Recipavo-/Diary-omistajuus ja pilotin kaksi näyttöä | Vaiheen 1 / NC02 loppu | Yhteinen koostumus, sovellusprofiilit ja käyttäjätiedot erillään; tekninen tuonti ja laskettava aamupala nimetty |
 | Lopullinen skeema ja legacy-käsittely | Vaiheen 1 loppu | Yhteinen malli ja nykyisten arvojen täsmällinen vertailuperusta |
 | Kuvien A/B/C-jäsenet ja poikkeukset | Pilotti vaiheessa 2, koko aineisto vaiheessa 4 | Ryhmä-/poikkeuspäätös ja SHA-manifesti |
 | Tunnukset, stage-identiteetit ja ylläpitäjä | Ennen vaihetta 3 | Todetut oikeudet ja eristys |
 | Proton-kohde ja riippumaton avainpalautus | Ennen vaihetta 3 | Nimetty kohde, vastaanottaja ja toimiva salaus/read-back/purku |
 | Main-input ja SOURCE-01/GK80:n julkaisuversiot | Ennen vaihetta 4 | Hyväksytty snapshot, ei keskeneräisiä työpuita |
-| D1:n masteriksi siirtyminen | Vaiheen 4 loppu | Vientivertailu, legacy-rajat ja Git-projektioiden cutover hyväksytty |
+| Core-lähdemasterin ja Recipavo-profiilipolun siirtymä | Vaiheen 4 loppu | Eritelty vientivertailu, legacy-rajat ja Git-projektioiden cutover hyväksytty |
 | Julkaisun ja Pages-siirtymä-/palautusajon lupa | Ennen vaihetta 5 | Omistajan täsmällinen valtuutus |
 | Lopullinen kustannus- ja asset-kapasiteetti | Ennen vaihetta 5 | Mitattu aineisto/retentio ja muu tilikäyttö; enintään 5 USD/kk lisää |
 
@@ -581,7 +651,8 @@ ilmoittama lähtötieto, ei odotusjakson vaatimus tai osoitus vanhojen URL:ien t
 Jatketaan PR #172:n omassa worktreessä
 `D:/Projects/tmp/reseptit-cloudflare-images-plan-20261102`.
 Repo-guard tarkistaa identiteetin ja tekee kirjoitukset, commitin ja pushin.
-Ei uutta PR:ää, main-synkronointia, muiden työpuiden muutoksia, Readya tai mergeä.
+Sama yhteensovitus päivittää omissa worktreeissään myös PR #176:n ja #178:n suunnitelmat.
+Ei uutta PR:ää, main-synkronointia, SOURCE-01-/GK80-työpuiden muutoksia, Readya tai mergeä.
 
 Sallitut tarkistukset: Markdown-rakenne, paikalliset dokumenttilinkit, sisäinen
 johdonmukaisuus ja `git diff --check`. Commitissa `[skip ci]`; nykyiset workflow-
