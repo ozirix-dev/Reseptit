@@ -1,0 +1,1657 @@
+{
+  "operation": 143,
+  "baseMain": "583fdb91aeb12114f909412b9165fc3b02a6515d",
+  "reviewedInitialHead": "3e19ce83bd2df206ae9b3bdc02d8889969d96548",
+  "ownerApproval": "NOT_GRANTED_BY_THIS_REVIEW",
+  "ready": false,
+  "productionCoverage": {
+    "numeric": 133,
+    "total": 326
+  },
+  "candidateCoverage": {
+    "numeric": 143,
+    "total": 326
+  },
+  "restoredMacroPackages": 4,
+  "remainingWithheldPackages": 4,
+  "completeMacroPackages": 6,
+  "eCasesAccepted": 0,
+  "decisions": [
+    {
+      "recipeId": "ratatouille",
+      "decision": "GO_FOR_OWNER_CONTENT_REVIEW",
+      "gk": 4.63,
+      "previouslyWithheld": true,
+      "macroAuditClass": "B",
+      "oldProductionMacros": {
+        "net": 16.4,
+        "total": 23.62,
+        "protein": 3.37,
+        "fat": 14.96
+      },
+      "newMacros": {
+        "carbs_net_per_serving_g": 11.55,
+        "carbs_total_per_serving_g": 16.77,
+        "protein_per_serving_g": 2.46,
+        "fat_per_serving_g": 14.57
+      },
+      "macroStatus": "ESTIMATE WITH EVIDENCE",
+      "remainingBlocker": null,
+      "omissionMacroCaps": {
+        "kcal": 1.69375,
+        "netCarbohydrate": 0.3996375,
+        "totalCarbohydrate": 0.3996375,
+        "protein": 0.0585375,
+        "fat": 0.041225000000000005
+      },
+      "macroRowsWithIssues": [],
+      "sourceLfSha256": "97d1c95c0f4c2ac7e4197814b39b78188579703663f3f86ac4c38dbc6c3dd41d",
+      "macroEvidenceSha256": "a8409ba193a79afab35c2ab738e324a278ca8d4baebc95f74d26999c0e720892",
+      "oldServings": 4,
+      "newServings": 4,
+      "oldIngredients": [
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "munakoisoa",
+          "note": "kuutioina"
+        },
+        {
+          "amount": 2,
+          "unit": "kpl",
+          "item": "kesäkurpitsaa",
+          "note": "kuutioina"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "punaista paprikaa",
+          "note": "paloina"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "sipuli",
+          "note": "hienonnettuna"
+        },
+        {
+          "amount": 3,
+          "unit": "kpl",
+          "item": "valkosipulinkynttä",
+          "note": "silputtuna"
+        },
+        {
+          "amount": 500,
+          "unit": "g",
+          "item": "kypsiä tomaatteja",
+          "note": "kuutioina"
+        },
+        {
+          "amount": 4,
+          "unit": "rkl",
+          "item": "oliiviöljyä"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "kuivattua timjamia"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "suolaa"
+        },
+        {
+          "amount": 0.25,
+          "unit": "tl",
+          "item": "mustapippuria"
+        },
+        {
+          "amount": 15,
+          "unit": "g",
+          "item": "tuoretta basilikaa"
+        }
+      ],
+      "newIngredients": [
+        {
+          "amount": 300,
+          "unit": "g",
+          "item": "munakoisoa"
+        },
+        {
+          "amount": 400,
+          "unit": "g",
+          "item": "kesäkurpitsaa"
+        },
+        {
+          "amount": 120,
+          "unit": "g",
+          "item": "punaista paprikaa"
+        },
+        {
+          "amount": 55,
+          "unit": "g",
+          "item": "sipulia"
+        },
+        {
+          "amount": 9,
+          "unit": "g",
+          "item": "tuoretta kuorittua valkosipulia"
+        },
+        {
+          "amount": 500,
+          "unit": "g",
+          "item": "tomaattia"
+        },
+        {
+          "amount": 54,
+          "unit": "g",
+          "item": "oliiviöljyä"
+        },
+        {
+          "amount": 2,
+          "unit": "g",
+          "item": "jauhettua kuivattua timjamia"
+        },
+        {
+          "amount": 0.5,
+          "unit": "g",
+          "item": "jauhettua mustapippuria"
+        },
+        {
+          "amount": 15,
+          "unit": "g",
+          "item": "tuoretta basilikaa"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "suolaa maun mukaan"
+        }
+      ]
+    },
+    {
+      "recipeId": "sitruuna-yrttikana-parsa",
+      "decision": "GO_FOR_OWNER_CONTENT_REVIEW",
+      "gk": 0.88,
+      "previouslyWithheld": true,
+      "macroAuditClass": "C",
+      "oldProductionMacros": {
+        "net": 1.78,
+        "total": 4.33,
+        "protein": 36.34,
+        "fat": 16.09
+      },
+      "newMacros": {
+        "carbs_net_per_serving_g": null,
+        "carbs_total_per_serving_g": null,
+        "protein_per_serving_g": null,
+        "fat_per_serving_g": null
+      },
+      "macroStatus": "INSUFFICIENT SOURCE DATA",
+      "remainingBlocker": "Known weighed thyme2g, garlic powder3.1g, pepper0.5g and zest2g still have unknown source polyols and/or complete macro composition. Conservative same-source total-CHO caps sum1.043295g/serving, exceeding the existing1g macro omission limit; no P0 or changed quantities.",
+      "omissionMacroCaps": {
+        "kcal": 0,
+        "netCarbohydrate": 0,
+        "totalCarbohydrate": 0,
+        "protein": 0,
+        "fat": 0
+      },
+      "macroRowsWithIssues": [
+        {
+          "item": "kuivattua jauhettua timjamia",
+          "issues": [
+            "Unknown nutrient fibre",
+            "Unknown nutrient polyols",
+            "Unknown nutrient netCarbohydrate"
+          ]
+        },
+        {
+          "item": "valkosipulijauhetta",
+          "issues": [
+            "Unknown nutrient carbohydrate",
+            "Unknown nutrient polyols",
+            "Unknown nutrient netCarbohydrate"
+          ]
+        },
+        {
+          "item": "jauhettua mustapippuria",
+          "issues": [
+            "Unknown nutrient fibre",
+            "Unknown nutrient polyols",
+            "Unknown nutrient netCarbohydrate"
+          ]
+        },
+        {
+          "item": "hienoksi raastettua sitruunan ulkokuorta",
+          "issues": [
+            "Unknown nutrient protein",
+            "Unknown nutrient fat",
+            "Unknown nutrient carbohydrate",
+            "Unknown nutrient fibre",
+            "Unknown nutrient polyols",
+            "Unknown nutrient netCarbohydrate"
+          ]
+        }
+      ],
+      "sourceLfSha256": "2b6dc5d0460e7f4554c436a834e0c96be360998765eb0d18b7a434b8410cec01",
+      "macroEvidenceSha256": "499c2476163976e259236edd2b63d9ba955434c083a0f0e3d413e604abdd9d45",
+      "oldServings": 4,
+      "newServings": 4,
+      "oldIngredients": [
+        {
+          "amount": 600,
+          "unit": "g",
+          "item": "broilerin rintafileitä"
+        },
+        {
+          "amount": 400,
+          "unit": "g",
+          "item": "vihreää parsaa"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "sitruuna"
+        },
+        {
+          "amount": 2,
+          "unit": "rkl",
+          "item": "oliiviöljyä"
+        },
+        {
+          "amount": 30,
+          "unit": "g",
+          "item": "voita"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "kuivattua timjamia"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "valkosipulijauhetta"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "suolaa ja mustapippuria"
+        }
+      ],
+      "newIngredients": [
+        {
+          "amount": 600,
+          "unit": "g",
+          "item": "broilerin rintafileitä"
+        },
+        {
+          "amount": 400,
+          "unit": "g",
+          "item": "vihreää parsaa"
+        },
+        {
+          "amount": 30,
+          "unit": "g",
+          "item": "sitruunamehua"
+        },
+        {
+          "amount": 27.4,
+          "unit": "g",
+          "item": "oliiviöljyä"
+        },
+        {
+          "amount": 30,
+          "unit": "g",
+          "item": "voita"
+        },
+        {
+          "amount": 2,
+          "unit": "g",
+          "item": "kuivattua jauhettua timjamia"
+        },
+        {
+          "amount": 3.1,
+          "unit": "g",
+          "item": "valkosipulijauhetta"
+        },
+        {
+          "amount": 0.5,
+          "unit": "g",
+          "item": "jauhettua mustapippuria"
+        },
+        {
+          "amount": 2,
+          "unit": "g",
+          "item": "hienoksi raastettua sitruunan ulkokuorta"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "suolaa"
+        }
+      ]
+    },
+    {
+      "recipeId": "menemen",
+      "decision": "GO_FOR_OWNER_CONTENT_REVIEW",
+      "gk": 2.77,
+      "previouslyWithheld": false,
+      "macroAuditClass": "PREVIOUSLY_COMPLETE",
+      "oldProductionMacros": {
+        "net": 8.06,
+        "total": 11.47,
+        "protein": 10.77,
+        "fat": 16.32
+      },
+      "newMacros": {
+        "carbs_net_per_serving_g": 6.87,
+        "carbs_total_per_serving_g": 8.7,
+        "protein_per_serving_g": 10.74,
+        "fat_per_serving_g": 16.35
+      },
+      "macroStatus": "ESTIMATE WITH EVIDENCE",
+      "remainingBlocker": null,
+      "omissionMacroCaps": {
+        "kcal": 4.5,
+        "netCarbohydrate": 0.5,
+        "totalCarbohydrate": 0.5,
+        "protein": 0.5,
+        "fat": 0.5
+      },
+      "macroRowsWithIssues": [],
+      "sourceLfSha256": "67939ab72079e12f98fddad6503629e375484f4c7b8437d72c03e29cd7409e56",
+      "macroEvidenceSha256": "554ec104091e3fdc3ac0869fed6d04c50e1ceb79a3d966b9e4f39a2bce85de4e",
+      "oldServings": 3,
+      "newServings": 3,
+      "oldIngredients": [
+        {
+          "amount": 4,
+          "unit": "kpl",
+          "item": "kananmunaa"
+        },
+        {
+          "amount": 3,
+          "unit": "kpl",
+          "item": "kypsää tomaattia",
+          "note": "kuutioina"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "vihreää paprikaa",
+          "note": "paloiteltuna"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "sipuli",
+          "note": "hienonnettuna"
+        },
+        {
+          "amount": 2,
+          "unit": "rkl",
+          "item": "oliiviöljyä"
+        },
+        {
+          "amount": 0.5,
+          "unit": "tl",
+          "item": "paprikajauhetta"
+        },
+        {
+          "amount": 0.5,
+          "unit": "tl",
+          "item": "suolaa"
+        },
+        {
+          "amount": 0.25,
+          "unit": "tl",
+          "item": "mustapippuria"
+        },
+        {
+          "amount": 10,
+          "unit": "g",
+          "item": "tuoretta persiljaa",
+          "note": "silputtuna"
+        }
+      ],
+      "newIngredients": [
+        {
+          "amount": 220,
+          "unit": "g",
+          "item": "kuoretonta kananmunaa"
+        },
+        {
+          "amount": 375,
+          "unit": "g",
+          "item": "tomaattia"
+        },
+        {
+          "amount": 170,
+          "unit": "g",
+          "item": "vihreää paprikaa"
+        },
+        {
+          "amount": 55,
+          "unit": "g",
+          "item": "sipulia"
+        },
+        {
+          "amount": 27,
+          "unit": "g",
+          "item": "oliiviöljyä"
+        },
+        {
+          "amount": 1,
+          "unit": "g",
+          "item": "paprikajauhetta"
+        },
+        {
+          "amount": 0.5,
+          "unit": "g",
+          "item": "jauhettua mustapippuria"
+        },
+        {
+          "amount": 10,
+          "unit": "g",
+          "item": "tuoretta persiljaa"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "suolaa maun mukaan"
+        }
+      ]
+    },
+    {
+      "recipeId": "shakshuka",
+      "decision": "GO_FOR_OWNER_CONTENT_REVIEW",
+      "gk": 3.31,
+      "previouslyWithheld": true,
+      "macroAuditClass": "B",
+      "oldProductionMacros": {
+        "net": 8.9,
+        "total": 12.4,
+        "protein": 15.6,
+        "fat": 17.5
+      },
+      "newMacros": {
+        "carbs_net_per_serving_g": 8.2,
+        "carbs_total_per_serving_g": 10.28,
+        "protein_per_serving_g": 15.48,
+        "fat_per_serving_g": 17.34
+      },
+      "macroStatus": "ESTIMATE WITH EVIDENCE",
+      "remainingBlocker": null,
+      "omissionMacroCaps": {
+        "kcal": 6.599500000000001,
+        "netCarbohydrate": 0.7522200000000001,
+        "totalCarbohydrate": 0.9572200000000001,
+        "protein": 0.29709,
+        "fat": 0.34175500000000003
+      },
+      "macroRowsWithIssues": [],
+      "sourceLfSha256": "4ff67a1a91b967bf9ce157883e0ed612a0949a536f8dcf6d0093c278e9402f5e",
+      "macroEvidenceSha256": "c4c9b760eb0167a88d623416370f0a73bf39069ccc6bb3747876b5455a9914b5",
+      "oldServings": 2,
+      "newServings": 2,
+      "oldIngredients": [
+        {
+          "amount": 4,
+          "unit": "kpl",
+          "item": "kananmunaa"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "punainen paprika"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "pieni sipuli"
+        },
+        {
+          "amount": 200,
+          "unit": "g",
+          "item": "tomaattimurskaa"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "oliiviöljyä"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "juustokuminaa"
+        },
+        {
+          "amount": 0.5,
+          "unit": "tl",
+          "item": "savupaprikaa"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "suolaa, mustapippuria ja chilihiutaleita"
+        },
+        {
+          "amount": 2,
+          "unit": "rkl",
+          "item": "silputtua persiljaa"
+        }
+      ],
+      "newIngredients": [
+        {
+          "amount": 220,
+          "unit": "g",
+          "item": "kuoretonta kananmunaa"
+        },
+        {
+          "amount": 120,
+          "unit": "g",
+          "item": "punaista paprikaa"
+        },
+        {
+          "amount": 70,
+          "unit": "g",
+          "item": "sipulia"
+        },
+        {
+          "amount": 200,
+          "unit": "g",
+          "item": "tomaattimurskaa"
+        },
+        {
+          "amount": 13.5,
+          "unit": "g",
+          "item": "oliiviöljyä"
+        },
+        {
+          "amount": 2,
+          "unit": "g",
+          "item": "juustokuminaa"
+        },
+        {
+          "amount": 1,
+          "unit": "g",
+          "item": "Santa Maria -savupaprikajauhetta"
+        },
+        {
+          "amount": 0.5,
+          "unit": "g",
+          "item": "jauhettua mustapippuria"
+        },
+        {
+          "amount": 0.3,
+          "unit": "g",
+          "item": "puhtaita kuivattuja chilihiutaleita"
+        },
+        {
+          "amount": 8,
+          "unit": "g",
+          "item": "tuoretta persiljaa"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "suolaa maun mukaan"
+        }
+      ]
+    },
+    {
+      "recipeId": "munatacot-huevos-rancheros",
+      "decision": "GO_FOR_OWNER_CONTENT_REVIEW",
+      "gk": 1.76,
+      "previouslyWithheld": true,
+      "macroAuditClass": "B",
+      "oldProductionMacros": {
+        "net": 4.2,
+        "total": 9.6,
+        "protein": 21.3,
+        "fat": 34.6
+      },
+      "newMacros": {
+        "carbs_net_per_serving_g": 4.23,
+        "carbs_total_per_serving_g": 6.99,
+        "protein_per_serving_g": 21.4,
+        "fat_per_serving_g": 34.56
+      },
+      "macroStatus": "ESTIMATE WITH EVIDENCE",
+      "remainingBlocker": null,
+      "omissionMacroCaps": {
+        "kcal": 5.992500000000001,
+        "netCarbohydrate": 0.5110750000000001,
+        "totalCarbohydrate": 0.9210750000000001,
+        "protein": 0.265025,
+        "fat": 0.2895
+      },
+      "macroRowsWithIssues": [],
+      "sourceLfSha256": "0e7131b5668a11eaa8c432bcb9ade569188fb526d2fc720146bf32257d321d1a",
+      "macroEvidenceSha256": "235d9844bca4a4128266ae3f906be5d8c43b6940ac9326e87ae132cd0f1272a8",
+      "oldServings": 2,
+      "newServings": 2,
+      "oldIngredients": [
+        {
+          "amount": 4,
+          "unit": "kpl",
+          "item": "kananmunaa"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "voita"
+        },
+        {
+          "amount": 150,
+          "unit": "g",
+          "item": "tomaattimurskaa"
+        },
+        {
+          "amount": 0.5,
+          "unit": "kpl",
+          "item": "pientä punasipulia"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "avokadoa"
+        },
+        {
+          "amount": 40,
+          "unit": "g",
+          "item": "cheddarjuustoa"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "savupaprikaa"
+        },
+        {
+          "amount": 0.5,
+          "unit": "tl",
+          "item": "juustokuminaa"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "suolaa ja mustapippuria"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "silputtua korianteria"
+        }
+      ],
+      "newIngredients": [
+        {
+          "amount": 220,
+          "unit": "g",
+          "item": "kananmunaa"
+        },
+        {
+          "amount": 14,
+          "unit": "g",
+          "item": "voita"
+        },
+        {
+          "amount": 150,
+          "unit": "g",
+          "item": "tomaattimurskaa"
+        },
+        {
+          "amount": 27.5,
+          "unit": "g",
+          "item": "pientä punasipulia"
+        },
+        {
+          "amount": 120,
+          "unit": "g",
+          "item": "avokadoa"
+        },
+        {
+          "amount": 40,
+          "unit": "g",
+          "item": "cheddarjuustoa"
+        },
+        {
+          "amount": 2,
+          "unit": "g",
+          "item": "Santa Maria -savupaprikajauhetta"
+        },
+        {
+          "amount": 1,
+          "unit": "g",
+          "item": "juustokuminaa"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "suolaa maun mukaan"
+        },
+        {
+          "amount": 0.5,
+          "unit": "g",
+          "item": "jauhettua mustapippuria"
+        },
+        {
+          "amount": 10,
+          "unit": "g",
+          "item": "tuoretta korianteria"
+        }
+      ]
+    },
+    {
+      "recipeId": "paprikainen-vhh-gulassi",
+      "decision": "GO_FOR_OWNER_CONTENT_REVIEW",
+      "gk": 3.52,
+      "previouslyWithheld": true,
+      "macroAuditClass": "C",
+      "oldProductionMacros": {
+        "net": 8.72,
+        "total": 11.29,
+        "protein": 40.59,
+        "fat": 24.04
+      },
+      "newMacros": {
+        "carbs_net_per_serving_g": null,
+        "carbs_total_per_serving_g": null,
+        "protein_per_serving_g": null,
+        "fat_per_serving_g": null
+      },
+      "macroStatus": "INSUFFICIENT SOURCE DATA",
+      "remainingBlocker": "Fineli630 smetana150g has no reported total polyols; Fineli11182 paprika9g also lacks polyols. Neither can be hidden as an insignificant whole-ingredient omission. Butter21g is now explicit, but does not resolve these source gaps.",
+      "omissionMacroCaps": {
+        "kcal": 0,
+        "netCarbohydrate": 0,
+        "totalCarbohydrate": 0,
+        "protein": 0,
+        "fat": 0
+      },
+      "macroRowsWithIssues": [
+        {
+          "item": "valkosipulinkynttä",
+          "issues": [
+            "Unknown nutrient fibre"
+          ]
+        },
+        {
+          "item": "paprikajauhetta",
+          "issues": [
+            "Unknown nutrient fibre",
+            "Unknown nutrient polyols",
+            "Unknown nutrient netCarbohydrate"
+          ]
+        },
+        {
+          "item": "juustokuminaa",
+          "issues": [
+            "Unknown nutrient carbohydrate",
+            "Unknown nutrient polyols",
+            "Unknown nutrient netCarbohydrate"
+          ]
+        },
+        {
+          "item": "mustapippuria",
+          "issues": [
+            "Unknown nutrient fibre",
+            "Unknown nutrient polyols",
+            "Unknown nutrient netCarbohydrate"
+          ]
+        },
+        {
+          "item": "smetanaa",
+          "issues": [
+            "Unknown nutrient polyols",
+            "Unknown nutrient netCarbohydrate"
+          ]
+        }
+      ],
+      "sourceLfSha256": "6ad3fcad16aeea7c58b2cf2f90f690be0e4d2248a5a5695a22cc1493d7a8b51e",
+      "macroEvidenceSha256": "ceb44a4abb457f30aee9a8c9051b13fadbc618ae7addc27a2420a43577ba2f2d",
+      "oldServings": 4,
+      "newServings": 4,
+      "oldIngredients": [
+        {
+          "amount": 700,
+          "unit": "g",
+          "item": "naudan paistia",
+          "note": "noin 3 cm:n kuutioina"
+        },
+        {
+          "amount": 150,
+          "unit": "g",
+          "item": "sipulia",
+          "note": "hienonnettuna"
+        },
+        {
+          "amount": 3,
+          "unit": "kpl",
+          "item": "valkosipulinkynttä",
+          "note": "murskattuna"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "punaista paprikaa",
+          "note": "kuutioituna"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "tomaatti",
+          "note": "kuutioituna"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "tomaattipyreetä"
+        },
+        {
+          "amount": 1.5,
+          "unit": "rkl",
+          "item": "paprikajauhetta",
+          "note": "mielellään savupaprikaa tai makeaa paprikajauhetta"
+        },
+        {
+          "amount": 1.5,
+          "unit": "rkl",
+          "item": "voita tai öljyä",
+          "note": "lihan ruskistamiseen"
+        },
+        {
+          "amount": 0.5,
+          "unit": "tl",
+          "item": "juustokuminaa"
+        },
+        {
+          "amount": 3,
+          "unit": "dl",
+          "item": "lihalientä"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "suolaa",
+          "note": "tai maun mukaan"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "mustapippuria",
+          "note": "maun mukaan"
+        },
+        {
+          "amount": 150,
+          "unit": "g",
+          "item": "smetanaa",
+          "note": "tarjoiluun"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "persiljaa",
+          "note": "hienonnettuna, halutessasi"
+        }
+      ],
+      "newIngredients": [
+        {
+          "amount": 700,
+          "unit": "g",
+          "item": "naudan paistia"
+        },
+        {
+          "amount": 150,
+          "unit": "g",
+          "item": "sipulia"
+        },
+        {
+          "amount": 9,
+          "unit": "g",
+          "item": "valkosipulinkynttä"
+        },
+        {
+          "amount": 160,
+          "unit": "g",
+          "item": "punaista paprikaa"
+        },
+        {
+          "amount": 120,
+          "unit": "g",
+          "item": "tomaatti"
+        },
+        {
+          "amount": 15,
+          "unit": "g",
+          "item": "tomaattipyreetä"
+        },
+        {
+          "amount": 9,
+          "unit": "g",
+          "item": "paprikajauhetta"
+        },
+        {
+          "amount": 21,
+          "unit": "g",
+          "item": "voita"
+        },
+        {
+          "amount": 1,
+          "unit": "g",
+          "item": "juustokuminaa"
+        },
+        {
+          "amount": 300,
+          "unit": "g",
+          "item": "lihalientä"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "suolaa"
+        },
+        {
+          "amount": 0.5,
+          "unit": "g",
+          "item": "mustapippuria"
+        },
+        {
+          "amount": 150,
+          "unit": "g",
+          "item": "smetanaa"
+        },
+        {
+          "amount": 10,
+          "unit": "g",
+          "item": "persiljaa"
+        }
+      ]
+    },
+    {
+      "recipeId": "caponata",
+      "decision": "GO_FOR_OWNER_CONTENT_REVIEW",
+      "gk": 6.12,
+      "previouslyWithheld": true,
+      "macroAuditClass": "B",
+      "oldProductionMacros": {
+        "net": 13.87,
+        "total": 20.66,
+        "protein": 2.35,
+        "fat": 11.74
+      },
+      "newMacros": {
+        "carbs_net_per_serving_g": 13.73,
+        "carbs_total_per_serving_g": 20.51,
+        "protein_per_serving_g": 2.28,
+        "fat_per_serving_g": 10.49
+      },
+      "macroStatus": "ESTIMATE WITH EVIDENCE",
+      "remainingBlocker": null,
+      "omissionMacroCaps": {
+        "kcal": 0.5175,
+        "netCarbohydrate": 0.11002499999999998,
+        "totalCarbohydrate": 0.11002499999999998,
+        "protein": 0.053099999999999994,
+        "fat": 0.01935
+      },
+      "macroRowsWithIssues": [],
+      "sourceLfSha256": "19c86301bea6c9b3ae9a512941857d7cb0c00c3cb9a78efa238d394c2fd593bb",
+      "macroEvidenceSha256": "b7f6769411877d0e8aca6b34b232de2fb2c97f87cb0d368d54da9ab24ddab09d",
+      "oldServings": 4,
+      "newServings": 4,
+      "oldIngredients": [
+        {
+          "amount": 2,
+          "unit": "kpl",
+          "item": "munakoisoa",
+          "note": "kuutioina"
+        },
+        {
+          "amount": 2,
+          "unit": "rkl",
+          "item": "oliiviöljyä"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "sipuli",
+          "note": "hienonnettuna"
+        },
+        {
+          "amount": 2,
+          "unit": "kpl",
+          "item": "sellerinvartta",
+          "note": "paloina"
+        },
+        {
+          "amount": 400,
+          "unit": "g",
+          "item": "tomaattimurskaa"
+        },
+        {
+          "amount": 80,
+          "unit": "g",
+          "item": "vihreitä oliiveja",
+          "note": "puolitettuina"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "kapriksia",
+          "note": "huuhdeltuna"
+        },
+        {
+          "amount": 2,
+          "unit": "rkl",
+          "item": "punaviinietikkaa"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "sokeria"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "suolaa"
+        },
+        {
+          "amount": 15,
+          "unit": "g",
+          "item": "tuoretta basilikaa"
+        }
+      ],
+      "newIngredients": [
+        {
+          "amount": 800,
+          "unit": "g",
+          "item": "munakoisoa"
+        },
+        {
+          "amount": 27,
+          "unit": "g",
+          "item": "oliiviöljyä"
+        },
+        {
+          "amount": 55,
+          "unit": "g",
+          "item": "sipuli"
+        },
+        {
+          "amount": 80,
+          "unit": "g",
+          "item": "sellerinvartta"
+        },
+        {
+          "amount": 400,
+          "unit": "g",
+          "item": "tomaattimurskaa"
+        },
+        {
+          "amount": 80,
+          "unit": "g",
+          "item": "suolaliemeen säilöttyjä kivettömiä vihreitä oliiveja, valutettuna"
+        },
+        {
+          "amount": 9,
+          "unit": "g",
+          "item": "kapriksia"
+        },
+        {
+          "amount": 30,
+          "unit": "g",
+          "item": "punaviinietikkaa"
+        },
+        {
+          "amount": 12.5,
+          "unit": "g",
+          "item": "sokeria"
+        },
+        {
+          "amount": 6.5,
+          "unit": "g",
+          "item": "suolaa"
+        },
+        {
+          "amount": 15,
+          "unit": "g",
+          "item": "tuoretta basilikaa"
+        }
+      ]
+    },
+    {
+      "recipeId": "janssoninkiusaus-juuriselleri",
+      "decision": "GO_FOR_OWNER_CONTENT_REVIEW",
+      "gk": 3.05,
+      "previouslyWithheld": true,
+      "macroAuditClass": "C",
+      "oldProductionMacros": {
+        "net": 8.38,
+        "total": 14.03,
+        "protein": 12.47,
+        "fat": 33.3
+      },
+      "newMacros": {
+        "carbs_net_per_serving_g": null,
+        "carbs_total_per_serving_g": null,
+        "protein_per_serving_g": null,
+        "fat_per_serving_g": null
+      },
+      "macroStatus": "INSUFFICIENT SOURCE DATA",
+      "remainingBlocker": "USDA174183125g drained oil-canned anchovy has totalCHO0 and fibre0 but no separately reported polyol value. Do not turn missing polyols into0 or replace the fish with sweetened Nordic ansjovis. Pepper also lacks complete source composition.",
+      "omissionMacroCaps": {
+        "kcal": 0,
+        "netCarbohydrate": 0,
+        "totalCarbohydrate": 0,
+        "protein": 0,
+        "fat": 0
+      },
+      "macroRowsWithIssues": [
+        {
+          "item": "öljyyn säilöttyjä anjovisfileitä, valutettuna",
+          "issues": [
+            "Unknown nutrient carbohydrate",
+            "Unknown nutrient polyols",
+            "Unknown nutrient netCarbohydrate"
+          ]
+        },
+        {
+          "item": "jauhettua mustapippuria",
+          "issues": [
+            "Unknown nutrient fibre",
+            "Unknown nutrient polyols",
+            "Unknown nutrient netCarbohydrate"
+          ]
+        }
+      ],
+      "sourceLfSha256": "277c4c9c65bec0fad4548e4df80b13b2ffb52efcc0c0eb8d9d44ba477d7a9943",
+      "macroEvidenceSha256": "b5c13beee264a8e984ae77201e28ce5f69a36221d65cb37bce61f06862a078c7",
+      "oldServings": 4,
+      "newServings": 4,
+      "oldIngredients": [
+        {
+          "amount": 700,
+          "unit": "g",
+          "item": "juuriselleriä"
+        },
+        {
+          "amount": 125,
+          "unit": "g",
+          "item": "öljyyn säilöttyjä anjovisfileitä, valutettuna"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "sipuli"
+        },
+        {
+          "amount": 250,
+          "unit": "ml",
+          "item": "kuohukermaa"
+        },
+        {
+          "amount": 100,
+          "unit": "ml",
+          "item": "täysmaitoa"
+        },
+        {
+          "amount": 2,
+          "unit": "rkl",
+          "item": "voita"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "mustapippuria"
+        },
+        {
+          "amount": 2,
+          "unit": "rkl",
+          "item": "silputtua tilliä"
+        }
+      ],
+      "newIngredients": [
+        {
+          "amount": 700,
+          "unit": "g",
+          "item": "juuriselleriä"
+        },
+        {
+          "amount": 125,
+          "unit": "g",
+          "item": "öljyyn säilöttyjä anjovisfileitä, valutettuna"
+        },
+        {
+          "amount": 55,
+          "unit": "g",
+          "item": "sipuli"
+        },
+        {
+          "amount": 250,
+          "unit": "g",
+          "item": "kuohukermaa, rasvaa 38 %"
+        },
+        {
+          "amount": 100,
+          "unit": "g",
+          "item": "täysmaitoa, rasvaa 3,5 %"
+        },
+        {
+          "amount": 28,
+          "unit": "g",
+          "item": "voita"
+        },
+        {
+          "amount": 0.5,
+          "unit": "g",
+          "item": "jauhettua mustapippuria"
+        },
+        {
+          "amount": 8,
+          "unit": "g",
+          "item": "silputtua tilliä"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "suolaa maun mukaan"
+        }
+      ]
+    },
+    {
+      "recipeId": "taytetyt-paprikat-vhh",
+      "decision": "GO_FOR_OWNER_CONTENT_REVIEW",
+      "gk": 3.73,
+      "previouslyWithheld": false,
+      "macroAuditClass": "PREVIOUSLY_COMPLETE",
+      "oldProductionMacros": {
+        "net": 12.29,
+        "total": 17.35,
+        "protein": 36.88,
+        "fat": 36.56
+      },
+      "newMacros": {
+        "carbs_net_per_serving_g": 9.65,
+        "carbs_total_per_serving_g": 13.09,
+        "protein_per_serving_g": 36.4,
+        "fat_per_serving_g": 35.8
+      },
+      "macroStatus": "ESTIMATE WITH EVIDENCE",
+      "remainingBlocker": null,
+      "omissionMacroCaps": {
+        "kcal": 6.75,
+        "netCarbohydrate": 0.75,
+        "totalCarbohydrate": 0.75,
+        "protein": 0.75,
+        "fat": 0.75
+      },
+      "macroRowsWithIssues": [],
+      "sourceLfSha256": "8accd7682ea33a37f3dc12451b76e42a99d07169740f6fcc57451da22f70ee8c",
+      "macroEvidenceSha256": "2422d3ae27726f2db0a522f536bb76a60a9cae8fb64478717d09188897d70a5b",
+      "oldServings": 4,
+      "newServings": 4,
+      "oldIngredients": [
+        {
+          "amount": 4,
+          "unit": "kpl",
+          "item": "isoa paprikaa"
+        },
+        {
+          "amount": 500,
+          "unit": "g",
+          "item": "naudan jauhelihaa"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "pieni sipuli"
+        },
+        {
+          "amount": 150,
+          "unit": "g",
+          "item": "tomaattimurskaa"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "tomaattipyreetä"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "kuivattua oreganoa"
+        },
+        {
+          "amount": 0.5,
+          "unit": "tl",
+          "item": "suolaa"
+        },
+        {
+          "amount": 0.5,
+          "unit": "tl",
+          "item": "mustapippuria"
+        },
+        {
+          "amount": 150,
+          "unit": "g",
+          "item": "juustoraastetta"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "oliiviöljyä"
+        }
+      ],
+      "newIngredients": [
+        {
+          "amount": 640,
+          "unit": "g",
+          "item": "punaista paprikaa"
+        },
+        {
+          "amount": 500,
+          "unit": "g",
+          "item": "naudan jauhelihaa, rasvaa 17 %"
+        },
+        {
+          "amount": 70,
+          "unit": "g",
+          "item": "sipulia"
+        },
+        {
+          "amount": 150,
+          "unit": "g",
+          "item": "tomaattimurskaa"
+        },
+        {
+          "amount": 16,
+          "unit": "g",
+          "item": "tomaattipyreetä"
+        },
+        {
+          "amount": 2,
+          "unit": "g",
+          "item": "kuivattua oreganoa"
+        },
+        {
+          "amount": 1,
+          "unit": "g",
+          "item": "jauhettua mustapippuria"
+        },
+        {
+          "amount": 150,
+          "unit": "g",
+          "item": "puolikovaa juustoraastetta, koostumusvertailussa rasvaa 25–35 %"
+        },
+        {
+          "amount": 13.5,
+          "unit": "g",
+          "item": "oliiviöljyä"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "suolaa maun mukaan"
+        }
+      ]
+    },
+    {
+      "recipeId": "rogan-josh",
+      "decision": "GO_FOR_OWNER_CONTENT_REVIEW",
+      "gk": 1.11,
+      "previouslyWithheld": true,
+      "macroAuditClass": "C",
+      "oldProductionMacros": {
+        "net": 4.39,
+        "total": 6.05,
+        "protein": 35.37,
+        "fat": 41.78
+      },
+      "newMacros": {
+        "carbs_net_per_serving_g": null,
+        "carbs_total_per_serving_g": null,
+        "protein_per_serving_g": null,
+        "fat_per_serving_g": null
+      },
+      "macroStatus": "INSUFFICIENT SOURCE DATA",
+      "remainingBlocker": "Cumin4g, coriander seed2g, paprika4g, chilli1g and ginger15g have unverified/missing source polyols; whole cinnamon2g and four cardamom pods1.6g are removed with unknown macro extraction. Bounded whole-ingredient omissions exceed the1g macro total-CHO limit; no invented retention fraction.",
+      "omissionMacroCaps": {
+        "kcal": 0,
+        "netCarbohydrate": 0,
+        "totalCarbohydrate": 0,
+        "protein": 0,
+        "fat": 0
+      },
+      "macroRowsWithIssues": [
+        {
+          "item": "tuoretta kuorittua valkosipulia",
+          "issues": [
+            "Unknown nutrient fibre"
+          ]
+        },
+        {
+          "item": "tuoretta inkivääriä",
+          "issues": [
+            "Unknown nutrient polyols",
+            "Unknown nutrient netCarbohydrate"
+          ]
+        },
+        {
+          "item": "jauhettua juustokuminaa",
+          "issues": [
+            "Unknown nutrient carbohydrate",
+            "Unknown nutrient polyols",
+            "Unknown nutrient netCarbohydrate"
+          ]
+        },
+        {
+          "item": "jauhettua korianterinsiementä",
+          "issues": [
+            "Unknown nutrient carbohydrate",
+            "Unknown nutrient polyols",
+            "Unknown nutrient netCarbohydrate"
+          ]
+        },
+        {
+          "item": "paprikajauhetta",
+          "issues": [
+            "Unknown nutrient fibre",
+            "Unknown nutrient polyols",
+            "Unknown nutrient netCarbohydrate"
+          ]
+        },
+        {
+          "item": "chilijauhetta",
+          "issues": [
+            "Unknown nutrient carbohydrate",
+            "Unknown nutrient polyols",
+            "Unknown nutrient netCarbohydrate"
+          ]
+        },
+        {
+          "item": "kanelitankoa",
+          "issues": [
+            "Unknown preparation retention/loss"
+          ]
+        },
+        {
+          "item": "kokonaisia kardemummakotia",
+          "issues": [
+            "Unknown preparation retention/loss"
+          ]
+        }
+      ],
+      "sourceLfSha256": "3f363cda0dba6f306ff87bd86cb23a4990f9f358b75ae502e9df4fc38f94f9eb",
+      "macroEvidenceSha256": "ea777da729af43fd3c13c4a6c03458e98482f4641f58a545bc44ba0d47304493",
+      "oldServings": 4,
+      "newServings": 4,
+      "oldIngredients": [
+        {
+          "amount": 800,
+          "unit": "g",
+          "item": "lampaan lapaa",
+          "note": "kuutioituna"
+        },
+        {
+          "amount": 2,
+          "unit": "rkl",
+          "item": "oliiviöljyä"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "sipuli",
+          "note": "hienonnettuna"
+        },
+        {
+          "amount": 200,
+          "unit": "g",
+          "item": "maustamatonta jogurttia"
+        },
+        {
+          "amount": 2,
+          "unit": "kpl",
+          "item": "valkosipulinkynttä",
+          "note": "murskattuna"
+        },
+        {
+          "amount": 15,
+          "unit": "g",
+          "item": "tuoretta inkivääriä",
+          "note": "raastettuna"
+        },
+        {
+          "amount": 2,
+          "unit": "tl",
+          "item": "jauhettua juustokuminaa"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "jauhettua korianteria"
+        },
+        {
+          "amount": 2,
+          "unit": "tl",
+          "item": "paprikajauhetta"
+        },
+        {
+          "amount": 0.5,
+          "unit": "tl",
+          "item": "chilijauhetta"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "kanelitanko"
+        },
+        {
+          "amount": 4,
+          "unit": "kpl",
+          "item": "kardemummakotaa"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "suolaa"
+        },
+        {
+          "amount": 4,
+          "unit": "dl",
+          "item": "vettä"
+        }
+      ],
+      "newIngredients": [
+        {
+          "amount": 800,
+          "unit": "g",
+          "item": "lampaan lapaa"
+        },
+        {
+          "amount": 27,
+          "unit": "g",
+          "item": "oliiviöljyä"
+        },
+        {
+          "amount": 55,
+          "unit": "g",
+          "item": "sipuli"
+        },
+        {
+          "amount": 200,
+          "unit": "g",
+          "item": "maustamatonta jogurttia, rasvaa 2,5 %"
+        },
+        {
+          "amount": 6,
+          "unit": "g",
+          "item": "tuoretta kuorittua valkosipulia"
+        },
+        {
+          "amount": 15,
+          "unit": "g",
+          "item": "tuoretta inkivääriä"
+        },
+        {
+          "amount": 4,
+          "unit": "g",
+          "item": "jauhettua juustokuminaa"
+        },
+        {
+          "amount": 2,
+          "unit": "g",
+          "item": "jauhettua korianterinsiementä"
+        },
+        {
+          "amount": 4,
+          "unit": "g",
+          "item": "paprikajauhetta"
+        },
+        {
+          "amount": 1,
+          "unit": "g",
+          "item": "chilijauhetta"
+        },
+        {
+          "amount": 2,
+          "unit": "g",
+          "item": "kanelitankoa"
+        },
+        {
+          "amount": 1.6,
+          "unit": "g",
+          "item": "kokonaisia kardemummakotia"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "suolaa maun mukaan"
+        },
+        {
+          "amount": 400,
+          "unit": "g",
+          "item": "vettä"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "independentDecimalGKPass": 10,
+    "independentCompleteMacroPass": 6,
+    "targetedRegisteredTestsPass": 3,
+    "changedContent": {
+      "localeFiles": 20,
+      "evidenceFiles": 8,
+      "pass": true
+    },
+    "publicHtmlAndJsonLdPass": 40,
+    "buildRoutes": 703,
+    "localBuildCount": 1,
+    "nutritionConflicts": 0,
+    "unchangedPreviousNumericResults": 133,
+    "unchangedFullResultObjects": 316,
+    "newRecipeBindingMismatches": 0
+  }
+}

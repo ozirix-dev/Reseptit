@@ -41,7 +41,7 @@ ingredients:
   item: crushed tomatoes
 - amount: 80
   unit: g
-  item: drained green or black olives
+  item: pitted green olives in brine, drained
 - amount: 9
   unit: g
   item: drained capers
@@ -60,10 +60,10 @@ ingredients:
 source_language: fi
 source_recipe: reseptit/alkuruoat/caponata.md
 translation_of: caponata
-carbs_net_per_serving_g: null
-carbs_total_per_serving_g: null
-protein_per_serving_g: null
-fat_per_serving_g: null
+carbs_net_per_serving_g: 13.73
+carbs_total_per_serving_g: 20.51
+protein_per_serving_g: 2.28
+fat_per_serving_g: 10.49
 ---
 
 # Sicilian caponata
@@ -71,9 +71,9 @@ fat_per_serving_g: null
 ## Instructions
 
 1. Dice 800 g aubergine, 55 g onion and 80 g celery. Soften them covered in all 27 g olive oil.
-2. Add 400 g crushed tomatoes, 80 g drained olives, 9 g drained capers, 30 g wine vinegar and 12.5 g sugar. Simmer until the vegetables are tender.
+2. Add 400 g crushed tomatoes, 80 g drained pitted green olives in brine, 9 g drained capers, 30 g wine vinegar and 12.5 g sugar. Simmer until the vegetables are tender.
 3. Add 15 g basil and 6.5 g salt. Divide the whole dish and all sauce into four portions; bread is outside this version.
 
 ## Notes
 
-Weigh the edible ingredients listed above. All listed food, sauce and cooking fat belong to the servings; separate side dishes are excluded. Nutrition values are temporarily withheld pending source verification.
+Weigh the edible ingredients listed above. All listed food, sauce and cooking fat belong to the servings; separate side dishes are excluded. Nutrition values are indicative ingredient-based estimates.

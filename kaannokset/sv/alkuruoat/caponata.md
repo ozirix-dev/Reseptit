@@ -41,7 +41,7 @@ ingredients:
   item: krossade tomater
 - amount: 80
   unit: g
-  item: avrunna gröna eller svarta oliver
+  item: urkärnade gröna oliver i saltlake, avrunna
 - amount: 9
   unit: g
   item: avrunnen kapris
@@ -60,10 +60,10 @@ ingredients:
 source_language: fi
 source_recipe: reseptit/alkuruoat/caponata.md
 translation_of: caponata
-carbs_net_per_serving_g: null
-carbs_total_per_serving_g: null
-protein_per_serving_g: null
-fat_per_serving_g: null
+carbs_net_per_serving_g: 13.73
+carbs_total_per_serving_g: 20.51
+protein_per_serving_g: 2.28
+fat_per_serving_g: 10.49
 ---
 
 # Siciliansk caponata
@@ -71,9 +71,9 @@ fat_per_serving_g: null
 ## Tillagning
 
 1. Tärna 800 g aubergine, 55 g lök och 80 g stjälkselleri. Mjukna under lock i hela mängden 27 g olivolja.
-2. Tillsätt 400 g krossade tomater, 80 g avrunna oliver, 9 g avrunnen kapris, 30 g vinäger och 12,5 g socker. Sjud tills grönsakerna är mjuka.
+2. Tillsätt 400 g krossade tomater, 80 g avrunna urkärnade gröna oliver i saltlake, 9 g avrunnen kapris, 30 g vinäger och 12,5 g socker. Sjud tills grönsakerna är mjuka.
 3. Tillsätt 15 g basilika och 6,5 g salt. Fördela hela rätten med all sås på fyra portioner; bröd ingår inte i denna version.
 
 ## Anteckningar
 
-Väg de ätliga ingredienserna ovan. All angiven mat, sås och stekfett ingår i portionerna; separata tillbehör ingår inte. Näringsvärden visas tills vidare inte i väntan på källkontroll.
+Väg de ätliga ingredienserna ovan. All angiven mat, sås och stekfett ingår i portionerna; separata tillbehör ingår inte. Näringsvärdena är ungefärliga ingrediensbaserade uppskattningar.

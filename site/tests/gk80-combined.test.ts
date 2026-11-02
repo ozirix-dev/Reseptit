@@ -26,5 +26,19 @@ test('all ten new versions bind current FI and30 translated files to new macro e
   const checked=verifyNutritionEvidence(source,evidence,translations);assert.deepEqual(checked.errors,[],entry.recipeId);assert.equal(checked.status,entry.macroStatus);
   if(checked.status==='ESTIMATE WITH EVIDENCE')complete++;else{withheld++;assert.equal(evidence.publicationStatus,'WITHHELD_SOURCE_INCOMPLETE');assert.ok(Object.values(checked.values).every(value=>value===null));}
  }
- assert.equal(complete,2);assert.equal(withheld,8);
+ assert.equal(complete,6);assert.equal(withheld,4);
+});
+
+test('Operation143 keeps pepper/coriander identities and same-food fibre supplements distinct',async()=>{
+ const {parseMarkdown}=await import('../src/content/markdown');
+ const tacos=parseMarkdown(readFileSync(new URL('reseptit/aamupalat/munatacot-huevos-rancheros.md',root),'utf8'))!.data as any;
+ const evidence=json('docs/nutrition/calculations/munatacot-huevos-rancheros.json');
+ assert.equal(tacos.ingredients[9].amount,0.5);assert.match(tacos.ingredients[9].item,/mustapippuri/);assert.equal(evidence.ingredients[9].record.primaryReference.source_id,'11177');
+ assert.equal(tacos.ingredients[10].amount,10);assert.match(tacos.ingredients[10].item,/korianteri/);assert.equal(evidence.ingredients[10].record.primaryReference.source_id,'34238');
+ assert.equal(json('docs/nutrition/calculations/caponata.json').ingredients[5].record.primaryReference.source_id,'34972');
+ const supplements=json('docs/nutrition/gk80-operation143/source-supplements.json').fineliFibre;
+ for(const id of ['ratatouille','munatacot-huevos-rancheros','caponata'])for(const ingredient of json('docs/nutrition/calculations/'+id+'.json').ingredients){
+  const r=ingredient.record,s=r?.supplementaryFibreSource;if(!s || !Object.hasOwn(s,"originalFrozenValue"))continue;
+  assert.equal(r.primaryReference.per100g.fibre_g_per_100g,null);assert.equal(r.per100g.fibre,supplements[r.primaryReference.source_id].fibre);assert.equal(r.per100g.polyols,r.primaryReference.per100g.polyols_g_per_100g);
+ }
 });

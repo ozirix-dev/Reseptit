@@ -44,10 +44,10 @@ ingredients:
 - amount: 10
   unit: g
   item: färsk koriander
-carbs_net_per_serving_g: null
-carbs_total_per_serving_g: null
-protein_per_serving_g: null
-fat_per_serving_g: null
+carbs_net_per_serving_g: 4.23
+carbs_total_per_serving_g: 6.99
+protein_per_serving_g: 21.4
+fat_per_serving_g: 34.56
 servings: 2
 time_total_min: 25
 difficulty: lätt
@@ -72,4 +72,4 @@ translation_of: munatacot-huevos-rancheros
 
 ## Anteckningar
 
-Väg de ätliga ingredienserna ovan. All angiven mat, sås och stekfett ingår i portionerna; separata tillbehör ingår inte. Näringsvärden visas tills vidare inte i väntan på källkontroll.
+Väg de ätliga ingredienserna ovan. All angiven mat, sås och stekfett ingår i portionerna; separata tillbehör ingår inte. Näringsvärdena är ungefärliga ingrediensbaserade uppskattningar.

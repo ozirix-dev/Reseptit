@@ -1,10 +1,10 @@
 {
   "recipeId": "munatacot-huevos-rancheros",
-  "sourceHash": "c9d66215fa06200cd6ced329ef3fe414b45738e50d47bf3035e8c30d4df38435",
+  "sourceHash": "e977652ae9645213abcc2db1f0ece627572e243a837c97438682545ae5843326",
   "calculatedAt": "2026-11-02",
   "batchId": "batch-142",
   "servings": 2,
-  "scope": "Operation142 exact weighed version; new independent evidence, not relabelled historical macros. No sides beyond listed ingredients.",
+  "scope": "Operation142 exact weighed version; new independent evidence, not relabelled historical macros. No sides beyond listed ingredients. Operation143: source audit, explicit same-food fibre supplements and individually sourced whole-ingredient omission caps; no changed macro tolerance.",
   "reviewerStatus": "AUTOMATED ONLY",
   "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
   "ingredients": [
@@ -489,7 +489,7 @@
           "carbohydrate": 13,
           "protein": 15,
           "fat": 17,
-          "fibre": null,
+          "fibre": 41,
           "polyols": null
         },
         "primarySource": {
@@ -508,6 +508,12 @@
           "fibre": null,
           "polyols": null,
           "use": "EU labelled carbohydrate is a nominal upper ceiling for available CHO only. Do not infer zero polyols or totalCHO including fibre."
+        },
+        "supplementaryFibreSource": {
+          "sourceUrl": "https://www.s-kaupat.fi/tuote/santa-maria-37g-paprika-smoked-savupaprikajauhe/7311311015243",
+          "gtin": "7311311015243",
+          "fibreGPer100g": 41,
+          "polyols": null
         }
       },
       "state": "specified ingredient, source incomplete",
@@ -515,7 +521,16 @@
       "edibleFraction": 1,
       "edibleEvidence": "Weighed edible input, no peel/bone conversion.",
       "retainedFraction": 1,
-      "retentionEvidence": "All listed food and sauce consumed; removed whole spices are explicitly unresolved below."
+      "retentionEvidence": "All listed food and sauce consumed; removed whole spices are explicitly unresolved below.",
+      "excludedReason": "Small exact weighed smoked-paprika portion, cap based on the named product label; polyols remain unknown.",
+      "omissionImpactUpperBoundPerServing": {
+        "netCarbohydrate": 0.13,
+        "totalCarbohydrate": 0.54,
+        "protein": 0.15,
+        "fat": 0.17,
+        "kcal": 3.49
+      },
+      "omissionImpactEvidence": "Exact Santa Maria GTIN7311311015243: EU carbohydrate13 includes unknown polyols; fibre41 is separately declared. TotalCHO cap13+41=54g/100g. NetCHO cap13g/100g. Source label also gives protein15, fat17 and349kcal/100g. No inferred P0; all omission caps accumulate."
     },
     {
       "item": "juustokuminaa",
@@ -647,10 +662,19 @@
       "edibleFraction": 1,
       "edibleEvidence": "Weighed edible input, no peel/bone conversion.",
       "retainedFraction": 1,
-      "retentionEvidence": "All listed food and sauce consumed; removed whole spices are explicitly unresolved below."
+      "retentionEvidence": "All listed food and sauce consumed; removed whole spices are explicitly unresolved below.",
+      "excludedReason": "Small exact weighed herb/spice portion; bounded whole-ingredient omission under the existing macro rule.",
+      "omissionImpactUpperBoundPerServing": {
+        "totalCarbohydrate": 0.2212,
+        "protein": 0.08904999999999999,
+        "fat": 0.11135,
+        "netCarbohydrate": 0.2212,
+        "kcal": 1.875
+      },
+      "omissionImpactEvidence": "USDA SR Legacy FDC170923 Spices, cumin seed: source totalCHO includes fibre and any unquantified polyols, used only as a cap for both carbohydrate outputs. Same named food/state; milling/chopping removes no fraction. Protein/fat and nominal food-energy caps from the same source. No P0; no ingredient mass changed."
     },
     {
-      "item": "suolaa ja mustapippuria",
+      "item": "suolaa maun mukaan",
       "amount": null,
       "unit": "",
       "record": {
@@ -688,7 +712,7 @@
       "omissionImpactEvidence": "Pure salt contains no macronutrients; salt amount is not fabricated."
     },
     {
-      "item": "silputtua korianteria",
+      "item": "jauhettua mustapippuria",
       "amount": 0.5,
       "unit": "g",
       "record": {
@@ -752,18 +776,27 @@
       "edibleFraction": 1,
       "edibleEvidence": "Weighed edible input, no peel/bone conversion.",
       "retainedFraction": 1,
-      "retentionEvidence": "All listed food and sauce consumed; removed whole spices are explicitly unresolved below."
+      "retentionEvidence": "All listed food and sauce consumed; removed whole spices are explicitly unresolved below.",
+      "excludedReason": "Small exact weighed herb/spice portion; bounded whole-ingredient omission under the existing macro rule.",
+      "omissionImpactUpperBoundPerServing": {
+        "totalCarbohydrate": 0.15987500000000002,
+        "protein": 0.025975,
+        "fat": 0.00815,
+        "netCarbohydrate": 0.15987500000000002,
+        "kcal": 0.6275000000000001
+      },
+      "omissionImpactEvidence": "USDA SR Legacy FDC170931 Spices, pepper, black: source totalCHO includes fibre and any unquantified polyols, used only as a cap for both carbohydrate outputs. Same named food/state; milling/chopping removes no fraction. Protein/fat and nominal food-energy caps from the same source. No P0; no ingredient mass changed."
     },
     {
       "item": "tuoretta korianteria",
       "amount": 10,
       "unit": "g",
       "record": {
-        "id": "op142-fineli-34238",
+        "id": "op143-fineli-34238-fibre-supplement",
         "name": "KORIANTERI, TUORE",
         "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/34238",
         "retrievedAt": "2026-11-02",
-        "licence": "THL Fineli Rel20 CC BY4.0",
+        "licence": "THL Fineli CC BY4.0; frozen Rel20 base plus separately attributed same-food current fibre supplement",
         "state": "RAW",
         "basis": "per100g-edible",
         "carbohydrateDefinition": "EU_AVAILABLE",
@@ -771,7 +804,7 @@
         "polyolsEvidence": "Frozen Fineli explicitly reported SUGOH; missing stays unknown",
         "per100g": {
           "carbohydrate": 0.505,
-          "fibre": null,
+          "fibre": 2.8,
           "polyols": 0,
           "protein": 2.444,
           "fat": 0.403
@@ -816,6 +849,18 @@
           "portion_mass_g": {
             "DL": 13
           }
+        },
+        "supplementaryFibreSource": {
+          "food": "Korianteri, tuore",
+          "fibre": 2.8,
+          "publication": "1322",
+          "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/34238",
+          "retrievedAt": "2026-11-02",
+          "field": "kuitu, kokonais-",
+          "basis": "g/100g edible",
+          "method": "food-composition table, displayed by THL on the same exact food ID",
+          "readMethod": "official Fineli HTML via web tool; direct API and local HTTP returned403; no API payload claimed",
+          "originalFrozenValue": null
         }
       },
       "state": "RAW",
@@ -825,7 +870,5 @@
       "retainedFraction": 1,
       "retentionEvidence": "All listed food and sauce consumed; removed whole spices are explicitly unresolved below."
     }
-  ],
-  "publicationStatus": "WITHHELD_SOURCE_INCOMPLETE",
-  "withholdingReason": "AvailableCHO supports the separate GK estimate, but fibre/polyols and/or whole-spice extraction do not support all four macros. All four public values withheld; no zero imputation."
+  ]
 }

@@ -44,10 +44,10 @@ ingredients:
 - amount: null
   unit: ''
   item: suolaa maun mukaan
-carbs_net_per_serving_g: null
-carbs_total_per_serving_g: null
-protein_per_serving_g: null
-fat_per_serving_g: null
+carbs_net_per_serving_g: 8.2
+carbs_total_per_serving_g: 10.28
+protein_per_serving_g: 15.48
+fat_per_serving_g: 17.34
 servings: 2
 time_total_min: 30
 difficulty: Helppo
@@ -79,4 +79,4 @@ translation_status:
 
 ## Muistiinpanot
 
-Punnitse yllä luetellut syötävät ainekset. Kaikki lueteltu ruoka, kastike ja paistorasva kuuluvat annoksiin; erillisiä lisukkeita ei ole laskettu. Ravintoarvot ovat toistaiseksi pois näkyvistä lähdetietojen tarkistuksen vuoksi.
+Punnitse yllä luetellut syötävät ainekset. Kaikki lueteltu ruoka, kastike ja paistorasva kuuluvat annoksiin; erillisiä lisukkeita ei ole laskettu. Ravintoarvot ovat suuntaa-antavia ainesosalaskelmia.

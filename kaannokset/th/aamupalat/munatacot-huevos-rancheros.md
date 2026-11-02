@@ -44,10 +44,10 @@ ingredients:
 - amount: 10
   unit: g
   item: ผักชีสด
-carbs_net_per_serving_g: null
-carbs_total_per_serving_g: null
-protein_per_serving_g: null
-fat_per_serving_g: null
+carbs_net_per_serving_g: 4.23
+carbs_total_per_serving_g: 6.99
+protein_per_serving_g: 21.4
+fat_per_serving_g: 34.56
 servings: 2
 time_total_min: 25
 difficulty: ง่าย
@@ -72,4 +72,4 @@ translation_of: munatacot-huevos-rancheros
 
 ## หมายเหตุ
 
-ชั่งส่วนที่รับประทานได้ตามรายการด้านบน แบ่งอาหาร ซอส และไขมันที่ใช้ปรุงทั้งหมดเป็นจำนวนที่กำหนด ไม่รวมเครื่องเคียงอื่น ข้อมูลโภชนาการยังไม่แสดงระหว่างตรวจสอบแหล่งข้อมูล
+ชั่งส่วนที่รับประทานได้ตามรายการด้านบน แบ่งอาหาร ซอส และไขมันที่ใช้ปรุงทั้งหมดเป็นจำนวนที่กำหนด ไม่รวมเครื่องเคียงอื่น ค่าโภชนาการเป็นค่าประมาณจากส่วนผสม

@@ -1,6 +1,6 @@
 {
   "recipeId": "paprikainen-vhh-gulassi",
-  "sourceHash": "3019294c3af0c5ce7ab16057f1bec13168536b1cc6f134aba49d777beaa40623",
+  "sourceHash": "4e81c2cb3f02386bee2bf0bc658902a38619251762042ac008d49f2ef5171074",
   "calculatedAt": "2026-11-02",
   "batchId": "batch-142",
   "servings": 4,
@@ -536,7 +536,7 @@
       "retentionEvidence": "All listed food and sauce consumed; removed whole spices are explicitly unresolved below."
     },
     {
-      "item": "voita tai öljyä",
+      "item": "voita",
       "amount": 21,
       "unit": "g",
       "record": {
@@ -1079,5 +1079,5 @@
     }
   ],
   "publicationStatus": "WITHHELD_SOURCE_INCOMPLETE",
-  "withholdingReason": "AvailableCHO supports the separate GK estimate, but fibre/polyols and/or whole-spice extraction do not support all four macros. All four public values withheld; no zero imputation."
+  "withholdingReason": "Fineli630 smetana150g has no reported total polyols; Fineli11182 paprika9g also lacks polyols. Neither can be hidden as an insignificant whole-ingredient omission. Butter21g is now explicit, but does not resolve these source gaps."
 }

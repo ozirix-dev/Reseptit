@@ -47,7 +47,7 @@ ingredients:
   item: ผงปาปริก้า
 - amount: 21.0
   unit: g
-  item: เนยหรือน้ำมัน
+  item: เนย
 - amount: 1.0
   unit: g
   item: ยี่หร่า

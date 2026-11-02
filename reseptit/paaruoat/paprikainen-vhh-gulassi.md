@@ -47,7 +47,7 @@ ingredients:
   item: paprikajauhetta
 - amount: 21.0
   unit: g
-  item: voita tai öljyä
+  item: voita
 - amount: 1.0
   unit: g
   item: juustokuminaa

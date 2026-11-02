@@ -15500,5 +15500,71 @@
         "TL": 5.0
       }
     }
+  },
+  {
+    "id": "op143-fineli-34972",
+    "name": "OLIIVI, KESKIARVO, KIVETÖN, SUOLALIEMESSÄ, VIHREÄ",
+    "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/34972",
+    "retrievedAt": "2026-11-02",
+    "licence": "THL Fineli Rel20 CC BY4.0",
+    "state": "CANN",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Explicit SUGOH0 in this exact brined-green-olive Fineli34972 source, corroborated by its current official page; not inherited from mixed oil olives.",
+    "per100g": {
+      "carbohydrate": 0.0,
+      "fibre": 3.3,
+      "polyols": 0.0,
+      "protein": 1.03,
+      "fat": 15.32
+    },
+    "primaryReference": {
+      "source_id": "34972",
+      "name": "OLIIVI, KESKIARVO, KIVETÖN, SUOLALIEMESSÄ, VIHREÄ",
+      "food_type": "FOOD",
+      "process": "CANN",
+      "edible_portion_percent": 100.0,
+      "ingredient_class": "FRUITOTH",
+      "food_class": "VEGCANN",
+      "per100g": {
+        "available_carbohydrate_g_per_100g": 0.0,
+        "fibre_g_per_100g": 3.3,
+        "polyols_g_per_100g": 0.0,
+        "protein_g_per_100g": 1.03,
+        "fat_g_per_100g": 15.32
+      },
+      "component_provenance": {
+        "fat_g_per_100g": {
+          "acquisition_type": "F",
+          "method_type": "E",
+          "method_indicator": "MI1302"
+        },
+        "available_carbohydrate_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MI0181"
+        },
+        "protein_g_per_100g": {
+          "acquisition_type": "F",
+          "method_type": "E",
+          "method_indicator": "MI0123"
+        },
+        "polyols_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "U",
+          "method_indicator": "MIR007"
+        },
+        "fibre_g_per_100g": {
+          "acquisition_type": "F",
+          "method_type": "E",
+          "method_indicator": "MI0172"
+        }
+      },
+      "portion_mass_g": {
+        "KPL_M": 4.0,
+        "DL": 30.0
+      }
+    }
   }
 ]

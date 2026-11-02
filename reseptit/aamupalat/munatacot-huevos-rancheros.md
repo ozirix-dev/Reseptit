@@ -37,17 +37,17 @@ ingredients:
   item: juustokuminaa
 - amount: null
   unit: ''
-  item: suolaa ja mustapippuria
+  item: suolaa maun mukaan
 - amount: 0.5
   unit: g
-  item: silputtua korianteria
+  item: jauhettua mustapippuria
 - amount: 10
   unit: g
   item: tuoretta korianteria
-carbs_net_per_serving_g: null
-carbs_total_per_serving_g: null
-protein_per_serving_g: null
-fat_per_serving_g: null
+carbs_net_per_serving_g: 4.23
+carbs_total_per_serving_g: 6.99
+protein_per_serving_g: 21.4
+fat_per_serving_g: 34.56
 servings: 2
 time_total_min: 25
 difficulty: Helppo
@@ -80,4 +80,4 @@ translation_status:
 
 ## Muistiinpanot
 
-Punnitse yllä luetellut syötävät ainekset. Kaikki lueteltu ruoka, kastike ja paistorasva kuuluvat annoksiin; erillisiä lisukkeita ei ole laskettu. Ravintoarvot ovat toistaiseksi pois näkyvistä lähdetietojen tarkistuksen vuoksi.
+Punnitse yllä luetellut syötävät ainekset. Kaikki lueteltu ruoka, kastike ja paistorasva kuuluvat annoksiin; erillisiä lisukkeita ei ole laskettu. Ravintoarvot ovat suuntaa-antavia ainesosalaskelmia.

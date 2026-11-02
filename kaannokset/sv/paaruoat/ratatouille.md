@@ -5,10 +5,10 @@ url_slug: ratatouille
 category: paaruoka
 language: sv
 status: published
-carbs_net_per_serving_g: null
-carbs_total_per_serving_g: null
-protein_per_serving_g: null
-fat_per_serving_g: null
+carbs_net_per_serving_g: 11.55
+carbs_total_per_serving_g: 16.77
+protein_per_serving_g: 2.46
+fat_per_serving_g: 14.57
 servings: 4
 time_total_min: 60
 main_ingredient:
@@ -76,4 +76,4 @@ translation_of: ratatouille
 
 ## Anteckningar
 
-Väg de ätliga ingredienserna ovan. All angiven mat, sås och stekfett ingår i portionerna; separata tillbehör ingår inte. Näringsvärden visas tills vidare inte i väntan på källkontroll.
+Väg de ätliga ingredienserna ovan. All angiven mat, sås och stekfett ingår i portionerna; separata tillbehör ingår inte. Näringsvärdena är ungefärliga ingrediensbaserade uppskattningar.

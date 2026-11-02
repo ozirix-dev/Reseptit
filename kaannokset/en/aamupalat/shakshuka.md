@@ -44,10 +44,10 @@ ingredients:
 - amount: null
   unit: ''
   item: salt to taste
-carbs_net_per_serving_g: null
-carbs_total_per_serving_g: null
-protein_per_serving_g: null
-fat_per_serving_g: null
+carbs_net_per_serving_g: 8.2
+carbs_total_per_serving_g: 10.28
+protein_per_serving_g: 15.48
+fat_per_serving_g: 17.34
 servings: 2
 time_total_min: 30
 difficulty: easy
@@ -72,4 +72,4 @@ translation_of: shakshuka
 
 ## Notes
 
-Weigh the edible ingredients listed above. All listed food, sauce and cooking fat belong to the servings; separate side dishes are excluded. Nutrition values are temporarily withheld pending source verification.
+Weigh the edible ingredients listed above. All listed food, sauce and cooking fat belong to the servings; separate side dishes are excluded. Nutrition values are indicative ingredient-based estimates.

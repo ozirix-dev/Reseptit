@@ -47,7 +47,7 @@ ingredients:
   item: paprikapulver
 - amount: 21.0
   unit: g
-  item: smör eller olja
+  item: smör
 - amount: 1.0
   unit: g
   item: spiskummin

@@ -44,10 +44,10 @@ ingredients:
 - amount: null
   unit: ''
   item: เกลือตามชอบ
-carbs_net_per_serving_g: null
-carbs_total_per_serving_g: null
-protein_per_serving_g: null
-fat_per_serving_g: null
+carbs_net_per_serving_g: 8.2
+carbs_total_per_serving_g: 10.28
+protein_per_serving_g: 15.48
+fat_per_serving_g: 17.34
 servings: 2
 time_total_min: 30
 difficulty: ง่าย
@@ -72,4 +72,4 @@ translation_of: shakshuka
 
 ## หมายเหตุ
 
-ชั่งส่วนที่รับประทานได้ตามรายการด้านบน แบ่งอาหาร ซอส และไขมันที่ใช้ปรุงทั้งหมดเป็นจำนวนที่กำหนด ไม่รวมเครื่องเคียงอื่น ข้อมูลโภชนาการยังไม่แสดงระหว่างตรวจสอบแหล่งข้อมูล
+ชั่งส่วนที่รับประทานได้ตามรายการด้านบน แบ่งอาหาร ซอส และไขมันที่ใช้ปรุงทั้งหมดเป็นจำนวนที่กำหนด ไม่รวมเครื่องเคียงอื่น ค่าโภชนาการเป็นค่าประมาณจากส่วนผสม

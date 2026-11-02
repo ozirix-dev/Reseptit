@@ -4,7 +4,7 @@
   "calculatedAt": "2026-11-02",
   "batchId": "batch-142",
   "servings": 2,
-  "scope": "Operation142 exact weighed version; new independent evidence, not relabelled historical macros. No sides beyond listed ingredients.",
+  "scope": "Operation142 exact weighed version; new independent evidence, not relabelled historical macros. No sides beyond listed ingredients. Operation143: source audit, explicit same-food fibre supplements and individually sourced whole-ingredient omission caps; no changed macro tolerance.",
   "reviewerStatus": "AUTOMATED ONLY",
   "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
   "ingredients": [
@@ -526,7 +526,16 @@
       "edibleFraction": 1,
       "edibleEvidence": "Weighed edible input, no peel/bone conversion.",
       "retainedFraction": 1,
-      "retentionEvidence": "All listed food and sauce consumed; removed whole spices are explicitly unresolved below."
+      "retentionEvidence": "All listed food and sauce consumed; removed whole spices are explicitly unresolved below.",
+      "excludedReason": "Small exact weighed herb/spice portion; bounded whole-ingredient omission under the existing macro rule.",
+      "omissionImpactUpperBoundPerServing": {
+        "totalCarbohydrate": 0.4424,
+        "protein": 0.17809999999999998,
+        "fat": 0.2227,
+        "netCarbohydrate": 0.4424,
+        "kcal": 3.75
+      },
+      "omissionImpactEvidence": "USDA SR Legacy FDC170923 Spices, cumin seed: source totalCHO includes fibre and any unquantified polyols, used only as a cap for both carbohydrate outputs. Same named food/state; milling/chopping removes no fraction. Protein/fat and nominal food-energy caps from the same source. No P0; no ingredient mass changed."
     },
     {
       "item": "Santa Maria -savupaprikajauhetta",
@@ -546,7 +555,7 @@
           "carbohydrate": 13,
           "protein": 15,
           "fat": 17,
-          "fibre": null,
+          "fibre": 41,
           "polyols": null
         },
         "primarySource": {
@@ -565,6 +574,12 @@
           "fibre": null,
           "polyols": null,
           "use": "EU labelled carbohydrate is a nominal upper ceiling for available CHO only. Do not infer zero polyols or totalCHO including fibre."
+        },
+        "supplementaryFibreSource": {
+          "sourceUrl": "https://www.s-kaupat.fi/tuote/santa-maria-37g-paprika-smoked-savupaprikajauhe/7311311015243",
+          "gtin": "7311311015243",
+          "fibreGPer100g": 41,
+          "polyols": null
         }
       },
       "state": "specified ingredient, source incomplete",
@@ -572,7 +587,16 @@
       "edibleFraction": 1,
       "edibleEvidence": "Weighed edible input, no peel/bone conversion.",
       "retainedFraction": 1,
-      "retentionEvidence": "All listed food and sauce consumed; removed whole spices are explicitly unresolved below."
+      "retentionEvidence": "All listed food and sauce consumed; removed whole spices are explicitly unresolved below.",
+      "excludedReason": "Small exact weighed smoked-paprika portion, cap based on the named product label; polyols remain unknown.",
+      "omissionImpactUpperBoundPerServing": {
+        "netCarbohydrate": 0.065,
+        "totalCarbohydrate": 0.27,
+        "protein": 0.075,
+        "fat": 0.085,
+        "kcal": 1.745
+      },
+      "omissionImpactEvidence": "Exact Santa Maria GTIN7311311015243: EU carbohydrate13 includes unknown polyols; fibre41 is separately declared. TotalCHO cap13+41=54g/100g. NetCHO cap13g/100g. Source label also gives protein15, fat17 and349kcal/100g. No inferred P0; all omission caps accumulate."
     },
     {
       "item": "jauhettua mustapippuria",
@@ -639,7 +663,16 @@
       "edibleFraction": 1,
       "edibleEvidence": "Weighed edible input, no peel/bone conversion.",
       "retainedFraction": 1,
-      "retentionEvidence": "All listed food and sauce consumed; removed whole spices are explicitly unresolved below."
+      "retentionEvidence": "All listed food and sauce consumed; removed whole spices are explicitly unresolved below.",
+      "excludedReason": "Small exact weighed herb/spice portion; bounded whole-ingredient omission under the existing macro rule.",
+      "omissionImpactUpperBoundPerServing": {
+        "totalCarbohydrate": 0.15987500000000002,
+        "protein": 0.025975,
+        "fat": 0.00815,
+        "netCarbohydrate": 0.15987500000000002,
+        "kcal": 0.6275000000000001
+      },
+      "omissionImpactEvidence": "USDA SR Legacy FDC170931 Spices, pepper, black: source totalCHO includes fibre and any unquantified polyols, used only as a cap for both carbohydrate outputs. Same named food/state; milling/chopping removes no fraction. Protein/fat and nominal food-energy caps from the same source. No P0; no ingredient mass changed."
     },
     {
       "item": "puhtaita kuivattuja chilihiutaleita",
@@ -668,7 +701,16 @@
       "edibleFraction": 1,
       "edibleEvidence": "Weighed edible input, no peel/bone conversion.",
       "retainedFraction": 1,
-      "retentionEvidence": "All listed food and sauce consumed; removed whole spices are explicitly unresolved below."
+      "retentionEvidence": "All listed food and sauce consumed; removed whole spices are explicitly unresolved below.",
+      "excludedReason": "Small exact weighed herb/spice portion; bounded whole-ingredient omission under the existing macro rule.",
+      "omissionImpactUpperBoundPerServing": {
+        "totalCarbohydrate": 0.084945,
+        "protein": 0.018015,
+        "fat": 0.025905,
+        "netCarbohydrate": 0.084945,
+        "kcal": 0.47700000000000004
+      },
+      "omissionImpactEvidence": "USDA SR Legacy FDC170932 Spices, pepper, red or cayenne: source totalCHO includes fibre and any unquantified polyols, used only as a cap for both carbohydrate outputs. Same named food/state; milling/chopping removes no fraction. Protein/fat and nominal food-energy caps from the same source. No P0; no ingredient mass changed."
     },
     {
       "item": "tuoretta persiljaa",
@@ -784,7 +826,5 @@
       },
       "omissionImpactEvidence": "Pure salt contains no macronutrients; salt amount is not fabricated."
     }
-  ],
-  "publicationStatus": "WITHHELD_SOURCE_INCOMPLETE",
-  "withholdingReason": "AvailableCHO supports the separate GK estimate, but fibre/polyols and/or whole-spice extraction do not support all four macros. All four public values withheld; no zero imputation."
+  ]
 }

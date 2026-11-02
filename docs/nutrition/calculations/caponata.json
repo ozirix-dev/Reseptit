@@ -1,10 +1,10 @@
 {
   "recipeId": "caponata",
-  "sourceHash": "56f5f799c0d9f8090e7b2c7015da293b7e927544a194b72e33aeb7703844e791",
+  "sourceHash": "2fa18ab2b047ce9c31b0f9c2cf87d605a536f53f6309fe2defa0f6a6ae1bb1ed",
   "calculatedAt": "2026-11-02",
   "batchId": "batch-142",
   "servings": 4,
-  "scope": "Operation142 exact weighed version; new independent evidence, not relabelled historical macros. No sides beyond listed ingredients.",
+  "scope": "Operation142 exact weighed version; new independent evidence, not relabelled historical macros. No sides beyond listed ingredients. Operation143: source audit, explicit same-food fibre supplements and individually sourced whole-ingredient omission caps; no changed macro tolerance.",
   "reviewerStatus": "AUTOMATED ONLY",
   "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
   "ingredients": [
@@ -401,30 +401,30 @@
       "retentionEvidence": "All listed food and sauce consumed; removed whole spices are explicitly unresolved below."
     },
     {
-      "item": "vihreitä oliiveja",
+      "item": "suolaliemeen säilöttyjä kivettömiä vihreitä oliiveja, valutettuna",
       "amount": 80,
       "unit": "g",
       "record": {
-        "id": "op142-fineli-28938",
-        "name": "OLIIVI, KESKIARVO, KIVETÖN, ÖLJYSSÄ, VIHREÄ/MUSTA",
-        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/28938",
+        "id": "op143-fineli-34972",
+        "name": "OLIIVI, KESKIARVO, KIVETÖN, SUOLALIEMESSÄ, VIHREÄ",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/34972",
         "retrievedAt": "2026-11-02",
         "licence": "THL Fineli Rel20 CC BY4.0",
         "state": "CANN",
         "basis": "per100g-edible",
         "carbohydrateDefinition": "EU_AVAILABLE",
-        "polyolsSourceVerified": false,
-        "polyolsEvidence": "",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Explicit SUGOH0 in this exact brined-green-olive Fineli34972 source, corroborated by its current official page; not inherited from mixed oil olives.",
         "per100g": {
           "carbohydrate": 0,
-          "fibre": 2.9,
-          "polyols": null,
-          "protein": 1.38,
-          "fat": 20
+          "fibre": 3.3,
+          "polyols": 0,
+          "protein": 1.03,
+          "fat": 15.32
         },
         "primaryReference": {
-          "source_id": "28938",
-          "name": "OLIIVI, KESKIARVO, KIVETÖN, ÖLJYSSÄ, VIHREÄ/MUSTA",
+          "source_id": "34972",
+          "name": "OLIIVI, KESKIARVO, KIVETÖN, SUOLALIEMESSÄ, VIHREÄ",
           "food_type": "FOOD",
           "process": "CANN",
           "edible_portion_percent": 100,
@@ -432,16 +432,16 @@
           "food_class": "VEGCANN",
           "per100g": {
             "available_carbohydrate_g_per_100g": 0,
-            "fibre_g_per_100g": 2.9,
-            "polyols_g_per_100g": null,
-            "protein_g_per_100g": 1.38,
-            "fat_g_per_100g": 20
+            "fibre_g_per_100g": 3.3,
+            "polyols_g_per_100g": 0,
+            "protein_g_per_100g": 1.03,
+            "fat_g_per_100g": 15.32
           },
           "component_provenance": {
             "fat_g_per_100g": {
-              "acquisition_type": "S",
-              "method_type": "CG",
-              "method_indicator": "MIR003"
+              "acquisition_type": "F",
+              "method_type": "E",
+              "method_indicator": "MI1302"
             },
             "available_carbohydrate_g_per_100g": {
               "acquisition_type": "S",
@@ -449,13 +449,18 @@
               "method_indicator": "MI0181"
             },
             "protein_g_per_100g": {
-              "acquisition_type": "S",
-              "method_type": "T",
+              "acquisition_type": "F",
+              "method_type": "E",
               "method_indicator": "MI0123"
             },
-            "fibre_g_per_100g": {
+            "polyols_g_per_100g": {
               "acquisition_type": "S",
-              "method_type": "S",
+              "method_type": "U",
+              "method_indicator": "MIR007"
+            },
+            "fibre_g_per_100g": {
+              "acquisition_type": "F",
+              "method_type": "E",
               "method_indicator": "MI0172"
             }
           },
@@ -466,7 +471,7 @@
         }
       },
       "state": "CANN",
-      "matchEvidence": "Exact edible weighed version, source food/state or disclosed proxy. Missing source values remain null.",
+      "matchEvidence": "Original recipe requires green olives. Explicit drained pitted green olives in brine, matching Fineli34972; replaces the mixed green/black oil-olive composition proxy, not the dish ingredient.",
       "edibleFraction": 1,
       "edibleEvidence": "Weighed edible input, no peel/bone conversion.",
       "retainedFraction": 1,
@@ -589,7 +594,16 @@
       "edibleFraction": 1,
       "edibleEvidence": "Weighed edible input, no peel/bone conversion.",
       "retainedFraction": 1,
-      "retentionEvidence": "All listed food and sauce consumed; removed whole spices are explicitly unresolved below."
+      "retentionEvidence": "All listed food and sauce consumed; removed whole spices are explicitly unresolved below.",
+      "excludedReason": "Small exact weighed herb/spice portion; bounded whole-ingredient omission under the existing macro rule.",
+      "omissionImpactUpperBoundPerServing": {
+        "totalCarbohydrate": 0.11002499999999998,
+        "protein": 0.053099999999999994,
+        "fat": 0.01935,
+        "netCarbohydrate": 0.11002499999999998,
+        "kcal": 0.5175
+      },
+      "omissionImpactEvidence": "USDA SR Legacy FDC172238 Capers, canned: source totalCHO includes fibre and any unquantified polyols, used only as a cap for both carbohydrate outputs. Same named food/state; milling/chopping removes no fraction. Protein/fat and nominal food-energy caps from the same source. No P0; no ingredient mass changed."
     },
     {
       "item": "punaviinietikkaa",
@@ -833,11 +847,11 @@
       "amount": 15,
       "unit": "g",
       "record": {
-        "id": "op142-fineli-11134",
+        "id": "op143-fineli-11134-fibre-supplement",
         "name": "BASILIKA, TUORE",
         "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11134",
         "retrievedAt": "2026-11-02",
-        "licence": "THL Fineli Rel20 CC BY4.0",
+        "licence": "THL Fineli CC BY4.0; frozen Rel20 base plus separately attributed same-food current fibre supplement",
         "state": "RAW",
         "basis": "per100g-edible",
         "carbohydrateDefinition": "EU_AVAILABLE",
@@ -845,7 +859,7 @@
         "polyolsEvidence": "Frozen Fineli explicitly reported SUGOH; missing stays unknown",
         "per100g": {
           "carbohydrate": 1.06,
-          "fibre": null,
+          "fibre": 1.6,
           "polyols": 0,
           "protein": 3.13,
           "fat": 0.65
@@ -891,6 +905,18 @@
             "DL": 13,
             "RKL": 2
           }
+        },
+        "supplementaryFibreSource": {
+          "food": "Basilika, tuore",
+          "fibre": 1.6,
+          "publication": "746",
+          "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11134",
+          "retrievedAt": "2026-11-02",
+          "field": "kuitu, kokonais-",
+          "basis": "g/100g edible",
+          "method": "food-composition table, displayed by THL on the same exact food ID",
+          "readMethod": "official Fineli HTML via web tool; direct API and local HTTP returned403; no API payload claimed",
+          "originalFrozenValue": null
         }
       },
       "state": "RAW",
@@ -900,7 +926,5 @@
       "retainedFraction": 1,
       "retentionEvidence": "All listed food and sauce consumed; removed whole spices are explicitly unresolved below."
     }
-  ],
-  "publicationStatus": "WITHHELD_SOURCE_INCOMPLETE",
-  "withholdingReason": "AvailableCHO supports the separate GK estimate, but fibre/polyols and/or whole-spice extraction do not support all four macros. All four public values withheld; no zero imputation."
+  ]
 }

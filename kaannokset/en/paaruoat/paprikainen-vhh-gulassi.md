@@ -47,7 +47,7 @@ ingredients:
   item: paprika powder
 - amount: 21.0
   unit: g
-  item: butter or oil
+  item: butter
 - amount: 1.0
   unit: g
   item: cumin

@@ -1,5 +1,7 @@
 # GK80 Operaatio 142 — kymmenen reseptin julkaisuintegraatio
 
+> Tämä on Operaatio142:n historiaraportti. Operaatio143 palautti neljä makropakettia ja täsmensi kolme sisältökohtaa samassa PR171:ssä. Nykyiset päätökset ja6/4-makrojako ovat [Operaatio143:n katselmoinnissa](../gk80-operation143/README.md); integration.json sisältää nykyiset versiohashit. Alla olevat2/8-tarkistustulokset kuvaavat Operaatio142:n valmistumishetkeä.
+
 Päiväys: 2.11.2026. Tila: **sisältökatselmointiin valmisteltu integraatio-Draft**.
 Ei omistajan sisältöhyväksyntää, Ready-siirtymää, mergeä tai deployta.
 

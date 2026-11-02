@@ -44,10 +44,10 @@ ingredients:
 - amount: 10
   unit: g
   item: fresh coriander
-carbs_net_per_serving_g: null
-carbs_total_per_serving_g: null
-protein_per_serving_g: null
-fat_per_serving_g: null
+carbs_net_per_serving_g: 4.23
+carbs_total_per_serving_g: 6.99
+protein_per_serving_g: 21.4
+fat_per_serving_g: 34.56
 servings: 2
 time_total_min: 25
 difficulty: easy
@@ -72,4 +72,4 @@ translation_of: munatacot-huevos-rancheros
 
 ## Notes
 
-Weigh the edible ingredients listed above. All listed food, sauce and cooking fat belong to the servings; separate side dishes are excluded. Nutrition values are temporarily withheld pending source verification.
+Weigh the edible ingredients listed above. All listed food, sauce and cooking fat belong to the servings; separate side dishes are excluded. Nutrition values are indicative ingredient-based estimates.

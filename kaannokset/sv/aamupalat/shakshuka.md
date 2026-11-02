@@ -44,10 +44,10 @@ ingredients:
 - amount: null
   unit: ''
   item: salt efter smak
-carbs_net_per_serving_g: null
-carbs_total_per_serving_g: null
-protein_per_serving_g: null
-fat_per_serving_g: null
+carbs_net_per_serving_g: 8.2
+carbs_total_per_serving_g: 10.28
+protein_per_serving_g: 15.48
+fat_per_serving_g: 17.34
 servings: 2
 time_total_min: 30
 difficulty: lätt
@@ -72,4 +72,4 @@ translation_of: shakshuka
 
 ## Anteckningar
 
-Väg de ätliga ingredienserna ovan. All angiven mat, sås och stekfett ingår i portionerna; separata tillbehör ingår inte. Näringsvärden visas tills vidare inte i väntan på källkontroll.
+Väg de ätliga ingredienserna ovan. All angiven mat, sås och stekfett ingår i portionerna; separata tillbehör ingår inte. Näringsvärdena är ungefärliga ingrediensbaserade uppskattningar.

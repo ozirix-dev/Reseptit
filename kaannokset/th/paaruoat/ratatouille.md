@@ -5,10 +5,10 @@ url_slug: ratatouille
 category: paaruoka
 language: th
 status: published
-carbs_net_per_serving_g: null
-carbs_total_per_serving_g: null
-protein_per_serving_g: null
-fat_per_serving_g: null
+carbs_net_per_serving_g: 11.55
+carbs_total_per_serving_g: 16.77
+protein_per_serving_g: 2.46
+fat_per_serving_g: 14.57
 servings: 4
 time_total_min: 60
 main_ingredient:
@@ -76,4 +76,4 @@ translation_of: ratatouille
 
 ## หมายเหตุ
 
-ชั่งส่วนที่รับประทานได้ตามรายการด้านบน แบ่งอาหาร ซอส และไขมันที่ใช้ปรุงทั้งหมดเป็นจำนวนที่กำหนด ไม่รวมเครื่องเคียงอื่น ข้อมูลโภชนาการยังไม่แสดงระหว่างตรวจสอบแหล่งข้อมูล
+ชั่งส่วนที่รับประทานได้ตามรายการด้านบน แบ่งอาหาร ซอส และไขมันที่ใช้ปรุงทั้งหมดเป็นจำนวนที่กำหนด ไม่รวมเครื่องเคียงอื่น ค่าโภชนาการเป็นค่าประมาณจากส่วนผสม

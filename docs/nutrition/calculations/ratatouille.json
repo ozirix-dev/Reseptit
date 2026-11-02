@@ -4,7 +4,7 @@
   "calculatedAt": "2026-11-02",
   "batchId": "batch-142",
   "servings": 4,
-  "scope": "Operation142 exact weighed version; new independent evidence, not relabelled historical macros. No sides beyond listed ingredients.",
+  "scope": "Operation142 exact weighed version; new independent evidence, not relabelled historical macros. No sides beyond listed ingredients. Operation143: source audit, explicit same-food fibre supplements and individually sourced whole-ingredient omission caps; no changed macro tolerance.",
   "reviewerStatus": "AUTOMATED ONLY",
   "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
   "ingredients": [
@@ -327,11 +327,11 @@
       "amount": 9,
       "unit": "g",
       "record": {
-        "id": "op142-fineli-393",
+        "id": "op143-fineli-393-fibre-supplement",
         "name": "VALKOSIPULI",
         "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/393",
         "retrievedAt": "2026-11-02",
-        "licence": "THL Fineli Rel20 CC BY4.0",
+        "licence": "THL Fineli CC BY4.0; frozen Rel20 base plus separately attributed same-food current fibre supplement",
         "state": "RAW",
         "basis": "per100g-edible",
         "carbohydrateDefinition": "EU_AVAILABLE",
@@ -339,7 +339,7 @@
         "polyolsEvidence": "Frozen Fineli explicitly reported SUGOH; missing stays unknown",
         "per100g": {
           "carbohydrate": 16.3,
-          "fibre": null,
+          "fibre": 2.1,
           "polyols": 0,
           "protein": 7.9,
           "fat": 0.6
@@ -384,6 +384,18 @@
           "portion_mass_g": {
             "KPL_M": 3.5
           }
+        },
+        "supplementaryFibreSource": {
+          "food": "Valkosipuli",
+          "fibre": 2.1,
+          "publication": "425",
+          "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/393",
+          "retrievedAt": "2026-11-02",
+          "field": "kuitu, kokonais-",
+          "basis": "g/100g edible",
+          "method": "food-composition table, displayed by THL on the same exact food ID",
+          "readMethod": "official Fineli HTML via web tool; direct API and local HTTP returned403; no API payload claimed",
+          "originalFrozenValue": null
         }
       },
       "state": "RAW",
@@ -614,7 +626,16 @@
       "edibleFraction": 1,
       "edibleEvidence": "Weighed edible input, no peel/bone conversion.",
       "retainedFraction": 1,
-      "retentionEvidence": "All listed food and sauce consumed; removed whole spices are explicitly unresolved below."
+      "retentionEvidence": "All listed food and sauce consumed; removed whole spices are explicitly unresolved below.",
+      "excludedReason": "Small exact weighed herb/spice portion; bounded whole-ingredient omission under the existing macro rule.",
+      "omissionImpactUpperBoundPerServing": {
+        "totalCarbohydrate": 0.3197,
+        "protein": 0.04555,
+        "fat": 0.03715,
+        "netCarbohydrate": 0.3197,
+        "kcal": 1.3800000000000001
+      },
+      "omissionImpactEvidence": "USDA SR Legacy FDC170938 Spices, thyme, dried: source totalCHO includes fibre and any unquantified polyols, used only as a cap for both carbohydrate outputs. Same named food/state; milling/chopping removes no fraction. Protein/fat and nominal food-energy caps from the same source. No P0; no ingredient mass changed."
     },
     {
       "item": "jauhettua mustapippuria",
@@ -681,18 +702,27 @@
       "edibleFraction": 1,
       "edibleEvidence": "Weighed edible input, no peel/bone conversion.",
       "retainedFraction": 1,
-      "retentionEvidence": "All listed food and sauce consumed; removed whole spices are explicitly unresolved below."
+      "retentionEvidence": "All listed food and sauce consumed; removed whole spices are explicitly unresolved below.",
+      "excludedReason": "Small exact weighed herb/spice portion; bounded whole-ingredient omission under the existing macro rule.",
+      "omissionImpactUpperBoundPerServing": {
+        "totalCarbohydrate": 0.07993750000000001,
+        "protein": 0.0129875,
+        "fat": 0.004075,
+        "netCarbohydrate": 0.07993750000000001,
+        "kcal": 0.31375000000000003
+      },
+      "omissionImpactEvidence": "USDA SR Legacy FDC170931 Spices, pepper, black: source totalCHO includes fibre and any unquantified polyols, used only as a cap for both carbohydrate outputs. Same named food/state; milling/chopping removes no fraction. Protein/fat and nominal food-energy caps from the same source. No P0; no ingredient mass changed."
     },
     {
       "item": "tuoretta basilikaa",
       "amount": 15,
       "unit": "g",
       "record": {
-        "id": "op142-fineli-11134",
+        "id": "op143-fineli-11134-fibre-supplement",
         "name": "BASILIKA, TUORE",
         "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11134",
         "retrievedAt": "2026-11-02",
-        "licence": "THL Fineli Rel20 CC BY4.0",
+        "licence": "THL Fineli CC BY4.0; frozen Rel20 base plus separately attributed same-food current fibre supplement",
         "state": "RAW",
         "basis": "per100g-edible",
         "carbohydrateDefinition": "EU_AVAILABLE",
@@ -700,7 +730,7 @@
         "polyolsEvidence": "Frozen Fineli explicitly reported SUGOH; missing stays unknown",
         "per100g": {
           "carbohydrate": 1.06,
-          "fibre": null,
+          "fibre": 1.6,
           "polyols": 0,
           "protein": 3.13,
           "fat": 0.65
@@ -746,6 +776,18 @@
             "DL": 13,
             "RKL": 2
           }
+        },
+        "supplementaryFibreSource": {
+          "food": "Basilika, tuore",
+          "fibre": 1.6,
+          "publication": "746",
+          "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11134",
+          "retrievedAt": "2026-11-02",
+          "field": "kuitu, kokonais-",
+          "basis": "g/100g edible",
+          "method": "food-composition table, displayed by THL on the same exact food ID",
+          "readMethod": "official Fineli HTML via web tool; direct API and local HTTP returned403; no API payload claimed",
+          "originalFrozenValue": null
         }
       },
       "state": "RAW",
@@ -793,7 +835,5 @@
       },
       "omissionImpactEvidence": "Pure salt contains no macronutrients; salt amount is not fabricated."
     }
-  ],
-  "publicationStatus": "WITHHELD_SOURCE_INCOMPLETE",
-  "withholdingReason": "AvailableCHO supports the separate GK estimate, but fibre/polyols and/or whole-spice extraction do not support all four macros. All four public values withheld; no zero imputation."
+  ]
 }
