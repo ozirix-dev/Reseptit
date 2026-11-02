@@ -90,5 +90,58 @@
     "manual Actions reruns",
     "production deployment"
   ],
-  "fullTypecheckLimitation": "Fresh worktree lacks ignored generated production modules. Targeted isolated typecheck passes."
+  "fullTypecheckLimitation": "Fresh worktree lacks ignored generated production modules. Targeted isolated typecheck passes.",
+  "closeout": {
+    "checkedAtUtc": "2026-11-02T20:45:58.304844+00:00",
+    "ownerSession": "Codex 3 / GK-SCENARIOS-01 viimeistely / 01a19dfb-dc25-7292-9a91-d58514144c51",
+    "activeModel": "gpt-6.1-sol",
+    "activeEffort": "high",
+    "pilotStatus": "COMPLETE",
+    "wholeRecipeRangeStatus": "NO_GO_HOLD",
+    "startingHead": "c05609b9defb4c939f46344918d89c50ad6b213a",
+    "verifiedMain": "96a25d8c9db6fb0a505a70a37a5b357b6a83593a",
+    "guardSyncPreflight": "CONFLICT_FREE",
+    "compatibilityExportTree": "6411fd8351cf718e60af9fd627011c6973b2427c",
+    "compatibilityOverlay": [
+      "site/previews/gk-scenarios.html"
+    ],
+    "branchSynchronized": false,
+    "compatibilityTests": {
+      "passed": 14,
+      "failed": 0
+    },
+    "targetedTypecheck": "PASS",
+    "preserveFilesLfSha256Valid": {
+      "docs/nutrition/gk80-operation149/cases.json": true,
+      "docs/nutrition/gk80-operation149/composition-sources.json": true,
+      "docs/nutrition/gk80-operation149/gi-sources.json": true,
+      "docs/nutrition/gk80-operation149/source-observations.json": true,
+      "docs/nutrition/gk80-operation149/golden.json": true,
+      "docs/nutrition/gk80-operation149/owner-approval.json": true,
+      "docs/nutrition/gk80-operation149/method-proposal.md": true,
+      "reseptit/jalkiruoat/keto-mutakakku.md": true,
+      "docs/nutrition/afcd-release-3-reference.json": true
+    },
+    "inputHashUnchanged": true,
+    "sourceAndProductSeals": "PASS via loadScenarioPilot / assessPilot",
+    "resultLfSha256": "3413d9b47c050aa65a53a816639587068a2d3e42004697cc7a61a9b4a639882f",
+    "decimalReconstructionReused": "Exact unchanged results JSON and arithmetic; original Decimal PASS retained",
+    "browser": {
+      "selectionChecks": 48,
+      "displayPrecision": "PASS",
+      "missingProduct": "PASS",
+      "unavailableSource": "PASS",
+      "invalidServings": "PASS",
+      "scaling": "PASS",
+      "inputImmutable": "PASS",
+      "seoIsolation": "PASS",
+      "horizontalOverflow": "NONE",
+      "fiScreenshotReviewed": true
+    },
+    "approvedPoint": 0.07,
+    "omittedChoGPerServing": 1.3774,
+    "productionRecipeAndMacrosChanged": false,
+    "finalHeadCi": "Normal PR CI must pass on final HEAD before Ready; exact SHA and run URL are recorded in PR description and final handoff.",
+    "followup": "One keto-mutakakku disclosure, two manufacturer-source product options, FI/EN/SV/TH; start only after merge and public-content approval."
+  }
 }

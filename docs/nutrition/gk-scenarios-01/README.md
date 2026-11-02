@@ -1,6 +1,6 @@
 # GK-SCENARIOS-01: keto-mutakakun eristetty tuotepilotti
 
-**CONDITIONAL GO tutkimuspilottiin; ei koko kakun perusteltua GK-väliä.**
+**Eristetty tutkimuspilotti COMPLETE; koko kakun GK-vaihteluväli NO-GO / HOLD.**
 Päiväys 2.11.2026, Europe/Helsinki. Tuotantoon ei lisätä tuloksia.
 
 ## Rajaus ja omistajuus
@@ -10,11 +10,11 @@ Päiväys 2.11.2026, Europe/Helsinki. Tuotantoon ei lisätä tuloksia.
 - Oma worktree: `D:/Projects/tmp/reseptit-gk-scenarios-chocolate-pilot`.
 - Oma haara: `codex/gk-scenarios-chocolate-pilot`.
 - Lähtö-main: **`92dc6dbe7b27e145d6938026c73b6823f2e2108f`**, etä-mainista tarkistettu ennen worktreen luontia.
-- Työn lopussa main oli `96a25d8c9db6fb0a505a70a37a5b357b6a83593a` (#185). Sen muutosvertailu luettiin: importoidun GK149-apurin muutos koskee Foodin-lähdevarmennusta, ei laskentakaavaa. Haaraa ei synkronoitu eikä tämän uuden mainin yhdistelmälle väitetä ajettua testiä.
-- Valtuus: yhden reseptin lähdetutkimus, eristetty toteutus, esikatselu ja Draft-PR. Ei Readyä, mergeä tai deployta. Lopullinen HEAD ilmoitetaan luovutuksessa ja näkyy PR:n headissa.
+- Viimeistelyssä nykyinen main `96a25d8c9db6fb0a505a70a37a5b357b6a83593a` (#185) varmennettiin uudelleen. GK149-apurin muutos koskee Foodin-lähdesidonnan varmennusta, ei laskentakaavaa. Guardin konfliktiton yhdistelmäpuu ja mainin apurit tarkistettiin erillisessä disposable-kopiossa; haaraa ei synkronoitu eikä muiden haarojen sisältöä muutettu. Tarkka varmennus alla.
+- Viimeistelyn kirjoitusvastuullinen: **Codex 3 / GK-SCENARIOS-01 viimeistely**, istunto `01a19dfb-dc25-7292-9a91-d58514144c51`. Käyttäjän jatkotehtävä jatkaa saman nimetyn roolin vastuuta. Lähtö-HEAD `c05609b9defb4c939f46344918d89c50ad6b213a`; etä-HEAD, Draft-tila ja puhdas työpuu tarkistettiin ennen kirjoituksia. Valtuus: rajatut pilotin UI-korjaukset, tekninen katselmointi, loppuraportti, PR-kuvauksen päivitys ja Ready-siirtymä porttien täytyttyä. Ei mergeä, deployta tai toista PR:ää. Lopullinen HEAD ja sen CI sidotaan PR-kuvaukseen ja luovutukseen.
 - Avoimet PR:t ja paikalliset haarat tarkistettiin: vastaavaa skenaariototeutusta ei ollut. #118, #182, muiden tutkimushaarat, kuusi lukittua A-versiota, pad see ew -aineisto, #183:n historialliset hashit ja ReportHub jäivät koskematta.
 - `repo_guard check/write/commit/push/pr` sitoo kaikki kirjoitukset tähän repoon. Omat riippuvuudet asennettiin vain tämän worktreen `site/node_modules`-hakemistoon.
-- Konfiguraation oletus on Sol / High. Aktiivista chat-mallia ei voitu vahvistaa käytettävissä olleesta istuntokontekstista; tämä ilmoitettiin ennen toteutusta. Mallia ei väitetä vaihdetuksi.
+- Viimeistelyn aktiivinen chat-malli varmennettiin oman istunnon `turn_context`-metatiedosta: `gpt-6.1-sol`, effort `high`; myös käyttäjän config-oletus on Sol / High. Alkuperäisen toteutusajon mallivarmennuksen puute on historiallinen huomio, ei nykyisen ajon tila.
 
 [PR #118:n suunnitelma](https://github.com/ozirix-dev/Reseptit/pull/118), luettu commitista `0346e0facbbd62105b424e5cb8fe0c18bcc51731`, antaa tuloslajit, lähde- ja oletusvaihtelun eron sekä erillisen version vaatimuksen. Käyttäjän nyt valtuuttama yhden reseptin tekninen pilotti on erillinen poikkeava rajaus. **30 reseptin P0-auditointia tai koko P0–P5-ohjelmaa ei ole tehty.**
 
@@ -121,4 +121,54 @@ Esikatselu: palvele ainoastaan `tmp/nutrition/gk-scenarios-01`-hakemistoa loopba
 | Käyttöliittymäpilotti | **GO eristettyyn katselmointiin** | Ei tuotantoon. Kielentarkistus ja lukijoiden ymmärrettävyystesti ennen julkaisuharkintaa. |
 | Laajentaminen muihin resepteihin | **CONDITIONAL GO** | Ensin keto-suklaakeksien erillinen lähde- ja valmistustarkistus; sen jälkeen rajatut polyoli-/tuotevaihtokohteet. Ei massalaskentaa tai kattavuuden automaattista korotusta. |
 
-Tämän Draftin jälkeen tarvitaan erillinen menetelmä-/sisältöpäätös ennen mitään tuotantokytkentää. Fyysisen pakkauksen tunnistus, Wawelin saatavuus, valmiin tuotteen GI:n vastaavuus, AFCD:n laskentaketjun täsmennys sekä neljän kielen toimituksellinen tarkistus ovat todelliset avoimet riskit.
+Ennen tuotantokytkentää tarvitaan erillinen julkaistavan esityksen sisältöpäätös. Fyysisen pakkauksen tunnistus, Wawelin saatavuus, valmiin tuotteen GI:n vastaavuus, AFCD:n laskentaketjun täsmennys sekä neljän kielen toimituksellinen tarkistus ovat todelliset avoimet riskit.
+
+
+## Viimeistely ja teknisen pilotin sulkeminen
+
+**COMPLETE koskee eristettyä tutkimusprototyyppiä.** Polyolimallin käyttö pysyy ehdollisena; koko reseptin numeerinen GK-vaihteluväli on edelleen **NO-GO / HOLD**. Uutta tutkimusajoa tai aiempien tutkimusaineistojen massapäivitystä ei tehty. AFCD F009837:n ristiriita ja Wawelin 404-HOLD jäävät samoiksi lähdehuomioiksi.
+
+Tarvittavat korjaukset rajautuivat esikatseluun ja sen olemassa olevaan selaintarkistukseen:
+
+- Kaikki näkyvät GK-osuudet pyöristetään: esimerkiksi `3,0200625` → *noin 3,0*, `1,9700625` → *noin 2,0*, positiivinen `0,0669375` → *alle 0,1*. Myös avattavan laskentarivitaulukon GK-soluissa käytetään samaa esitystä. Tarkat luvut pysyvät tutkimusdatassa.
+- Alkuteksti kertoo heti koko kakun arvon puuttuvan ja vertailun koskevan ehdollisia laskentaosuuksia. Näkyvä selite erottaa osasummien ääripäät koko kakun vaihteluvälistä. Polyolikertoimien siirto kakkuun säilyy tutkimusoletuksena. HOLD nimetään tietoiseksi näytön rajaukseksi.
+- Tulosalue tyhjennetään ennen tuotevalinnan käsittelyä. Puuttuva tai tuntematon tuote ei enää voi jättää edellisen tuotteen numeroa näkyviin. Lähdesidonnan epäonnistumisen UNAVAILABLE-tulos ei palauta vanhaa osasummaa. Lähteet pysyvät valitun tuotteen omissa sidonnoissa.
+
+Jo kunnossa olivat neljä erillistä skenaariota, lajikohtaiset polyolitermit, EU-hiilihydraatin kerran tehtävä vähennys, AFCD-without-kentän käyttö, syöte- ja lähdehashit, annosskaalaus sekä eristys tuotannosta. Laskentakoodia, lähdepakettia, alkuperäisreseptiä tai makroja ei muutettu. Hyväksytty laskettu osuus **0,07**, pois jätetty CHO **1,3774 g/annos**, hyväksytty input-hash sekä makrojen pidätys säilyvät.
+
+Nykyisen mainin yhteensopivuus varmennettiin näin:
+
+- Guardin `sync-main`-esitarkastus: ei konflikteja; lähtö-HEADin ja mainin yhdistelmäpuu `6411fd8351cf718e60af9fd627011c6973b2427c`.
+- Tämä Git-puu vietiin disposable-hakemistoon `D:/Temp/gk-scenarios-final-01a19dfb/compat-main`. Päivitetty esikatselu kopioitiin siihen. Mainin `gk149-model.ts` ja uusi `gk-foodin-binding.ts` olivat mukana oikeina tiedostoina, eivät mockeina. Yhteinen `node_modules` oli vain riippuvuuksien lukukohde; tulokset kirjoitettiin disposable-kopion omaan `tmp`-hakemistoon.
+- Samassa yhdistelmässä **14/14 kohdennettua testiä PASS** ja pilotin TypeScript-tarkistus PASS. Yhden reseptin CLI varmisti lähdesidonnat ja säilytettävien tiedostojen hashit. Tulos-JSONin LF-SHA256 vastaa alkuperäistä varmennusta täsmälleen (`3413d9b47c050aa65a53a816639587068a2d3e42004697cc7a61a9b4a639882f`), joten aiemman itsenäisen Decimal-rekonstruktion kattama laskentasisältö on sama; sitä ei ajettu uudelleen.
+- Päivitetyn esikatselun Brave/Playwright-tarkistus: **48/48** tuote/kieli/leveys-yhdistelmää PASS sekä uusi pyöristys-, puuttuva tuote- ja lähdevirheen näyttötarkistus PASS. Skaalaus, syötteen muuttumattomuus ja SEO-eristys PASS; ei sivuttaisylitystä. FI-näkymä tarkistettiin myös kuvasta.
+- Tuotantoreitit eivät importoi prototyypin toteutusta. PR lisää vain pilotin tiedostoja; viimeistely muuttaa esikatselua, sen tarkistusta ja näitä raporttitiedostoja. Historiallinen lähdeaineisto, muut PR:t ja haarat säilyvät.
+
+[verification.json](verification.json) erottaa alkuperäisen varmennuksen ja tämän viimeistelyn. Lopullisen commitin normaali PR-CI tarkistetaan ennen Ready-siirtymää; CI-linkki ja tarkka HEAD kirjataan PR-kuvaukseen ja loppuluovutukseen. Paikallista koko sivuston buildia, 326 reseptin massalaskentaa tai manuaalista Actions-uusintaa ei tehdä.
+
+## Seuraava erillinen tuotanto-PR: yksi avattava suklaaselitys
+
+**Aloitusehto:** #186 on yhdistetty ja käyttäjä on hyväksynyt julkaistavan esityksen sisältörajauksen. Tässä työssä ei aloiteta toista PR:ää. Seuraava työ on UI- ja julkaisutyö nykyisellä lähdepaketilla, ei uusi perustutkimuskampanja.
+
+Toteutetaan vain keto-mutakakun FI/EN/SV/TH-reseptisivulle yksi avattava kohta, FI-otsikkona **Miten käyttämäsi suklaa vaikuttaa GK-arvioon?** Se sijoitetaan nykyisen GK-only-version yhteyteen omaksi selityksekseen; nykyisen hyväksytyn version esitys säilyy. Natiivi `details`/`summary`, `recipe-panel` ja sivuston nykyiset lomake- ja lähdekomponenttien käytännöt riittävät. Uutta yleistä skenaariojärjestelmää ei tarvita.
+
+### Sisältö ja lähdeportti
+
+- Ensimmäiset kaksi valintaa: **Torras Dark chocolate, Art.557** (maltitoli; valmistajan ilmoitus CHO48 / polyolit45 g/100 g) ja **Torras Negro 60% Stevia, Art.40, EAN8410342007032** (erytritoli + stevioliglykosidit; CHO34 / polyolit29 g/100 g). Sidonnat otetaan tämän pilotin varmennetusta valmistajalähdepaketista tuote- ja lähdehasheineen. Etikettiarvoja ei esitetä yksittäisen pakkauserän mittauksena.
+- Maltitolituotteen sivun SKU556/Art.557-ristiriita merkitään sisältöpäätökseen. Jos täsmällistä tunnistusta tai julkisen numeron laskentaoletusta ei voida hyväksyä nykyisestä aineistosta, tuotevalinta näyttää perustellun selityksen ja lähdetiedot ilman ehdollista numeroa. Pakkauksen tunnistusta ei ratkaista arvaamalla eikä aloittamalla laajaa lähdehakua.
+- Wawel ja AFCD-kooste eivät kuulu julkisen valitsimen ensimmäiseen versioon. Wawel jää lähdesaatavuus-HOLDiin, AFCD ei ole ostettava yksilöity tuote.
+- Valitusta tuotteesta näkyvät nimi, makeutusaine, CHO ja polyolit g/100 g, hiilihydraatin määritelmä, valmistajalähde ja tarkistuspäivä, mahdollinen etikettiallokaatio-oletus sekä puuttuvat vaikutukset. Numeerinen osuus näytetään vain hyväksytyn tuotekohtaisen oletuksen yhteydessä: *ehdollinen laskettu osuus noin 3,0* tai *alle 0,1* / annos.
+- Näkyvä alkuselite: koko kakun GK:ta ei voida määrittää; kyse ei ole koko kakun mitatusta eikä luotettavasti rajatusta GK-arvosta. Muiden hiilihydraattien/GI:n puuttuvuus, muiden ainesosien kokonaispolyolit sekä polyolikertoimien siirto valmiiseen kakkuun kerrotaan valinnan yhteydessä. Min/max-väliä ei muodosteta.
+- Nykyinen **0,07** säilyy vain hyväksytyn version laskettuna osuutena ja nykyisessä julkisessa muodossaan *laskettu osuus alle 1*. Sitä ei nimetä koko kakun GK:ksi. Tuotevalinta ei muuta reseptin aineksia, annoksia tai makroja.
+
+### Tekninen rajaus ja hyväksyntä
+
+Arvioitu tiedostorajaus: `RecipePage.tsx`:n yksi vain `keto-mutakakku`-tunnisteeseen sidottu kytkentä, uusi `ChocolateGkDisclosure.tsx`, pieni kuratoitu `chocolate-gk-content.ts` (FI/EN/SV/TH-tekstit ja kahden tuotteen hyväksytty julkinen tietonäkymä), kohdennettu komponentti-/sisältötesti sekä julkaisutarkistuksen dokumentointi. Tiedostot sijaitsevat nykyisessä `site/src/features/recipes`-hakemistossa; lopullinen nimi sovitetaan silloiseen mainiin. CSS-muutos vain, jos nykyiset luokat eivät riitä.
+
+Julkinen tietonäkymä sisältää vain hyväksytyt näyttökentät ja tutkimuspakettiin sidotut tunnisteet/hashit; koko tutkimuslaskuria tai lähdekatalogia ei tuoda selainpakettiin. Puuttuva tai vanhentunut sidonta piilottaa numeron ja jättää selityksen. Annoskoon skaalaus pitää annoskohtaisen osuuden samana ja koskee tarvittaessa vain selitteen valmistuserän määriä. Ei kytkentää GK-suodattimeen, hakemistokortteihin, ravintoarvomakroihin, kattavuuslaskentaan tai JSON-LD/rakenteiseen ravintotietoon.
+
+Hyväksyntä vaatii kahden tuotteen erilliset lähdesidonnat, näppäimistöllä toimivan avauksen ja valinnan, oikein päivittyvän tuotteen ja lähteet, puuttuvan/vanhentuneen syötteen numerottoman tilan, rajatun annosskaalauksen sekä neljän kielen ja mobiilin tarkistuksen. Regressiotarkistus varmistaa alkuperäisen reseptin, 0,07:n lasketun osuuden, 1,3774 g:n poisjätön ja makrojen pidätyksen säilymisen sekä sen, ettei muille resepteille tai rakenteiseen tietoon tule skenaarioita. Ihmisen kielentarkistus ja julkaistavan selitteen sisältöhyväksyntä kuuluvat tähän seuraavaan julkaisuvaiheeseen.
+
+**Toteutusarvio:** 0,5–1 työpäivää komponenttiin, kuratoituun kahden tuotteen sisältöön ja kohdennettuun tekniseen varmennukseen. Lisäksi arviolta 0,5 työpäivää kieli-/sisältökatselmointiin ja julkaisun tarkistukseen; hyväksyntöjen odotusaika ei sisälly arvioon. Jos numeron lähdeportti ei täyty, selittävä numeroton toteutus pitää työn samassa rajauksessa. Uusi menetelmätutkimus tai uusien tuotteiden hankinta vaatii erillisen päätöksen.
+
+PR #186:n merge-hyväksyntää varten ei tarvita uusia tutkimustuloksia. Jäljelle jäävät lopullisen HEADin vihreä CI, mahdolliset katselmoinnin huomiot ja käyttäjän erillinen merge-päätös repo_guardin menettelyllä. Tuotantoversion sisältö- ja kieliportit eivät estä eristetyn pilotin sulkemista.
