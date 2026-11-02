@@ -1,0 +1,261 @@
+{
+  "sourceRef": {
+    "file": "sources.json",
+    "compositionId": "29014"
+  },
+  "notABrandMatchedPointForEveryRecipe": true,
+  "cases": [
+    {
+      "recipeId": "massaman-curry-kanalla-vhh",
+      "ingredientIndex": 1,
+      "compositionReferenceOnly": "29014",
+      "sourceUse": "NATIVE_REFERENCE_SCENARIO_NOT_BRAND_EQUIVALENCE",
+      "availableReferenceChoPerServing": "2.81",
+      "singleOmissionStrictlyBelow1": false,
+      "gate": "INGREDIENT_REFERENCE_OMISSION_FAIL"
+    },
+    {
+      "recipeId": "punainen-kanacurry-vhh",
+      "ingredientIndex": 1,
+      "compositionReferenceOnly": "29014",
+      "sourceUse": "NATIVE_REFERENCE_SCENARIO_NOT_BRAND_EQUIVALENCE",
+      "availableReferenceChoPerServing": "2.81",
+      "singleOmissionStrictlyBelow1": false,
+      "gate": "INGREDIENT_REFERENCE_OMISSION_FAIL"
+    },
+    {
+      "recipeId": "thai-vihrea-curry-kanalla-vhh",
+      "ingredientIndex": 1,
+      "compositionReferenceOnly": "29014",
+      "sourceUse": "NATIVE_REFERENCE_SCENARIO_NOT_BRAND_EQUIVALENCE",
+      "availableReferenceChoPerServing": "2.81",
+      "singleOmissionStrictlyBelow1": false,
+      "gate": "INGREDIENT_REFERENCE_OMISSION_FAIL"
+    },
+    {
+      "recipeId": "panang-curry-kanalla-vhh",
+      "ingredientIndex": 1,
+      "compositionReferenceOnly": "29014",
+      "sourceUse": "NATIVE_REFERENCE_SCENARIO_NOT_BRAND_EQUIVALENCE",
+      "availableReferenceChoPerServing": "2.81",
+      "singleOmissionStrictlyBelow1": false,
+      "gate": "INGREDIENT_REFERENCE_OMISSION_FAIL"
+    },
+    {
+      "recipeId": "keltainen-kanacurry-vhh",
+      "ingredientIndex": 1,
+      "compositionReferenceOnly": "29014",
+      "sourceUse": "NATIVE_REFERENCE_SCENARIO_NOT_BRAND_EQUIVALENCE",
+      "availableReferenceChoPerServing": "2.81",
+      "singleOmissionStrictlyBelow1": false,
+      "gate": "INGREDIENT_REFERENCE_OMISSION_FAIL"
+    },
+    {
+      "recipeId": "khao-soi-vhh-konjac",
+      "ingredientIndex": 1,
+      "compositionReferenceOnly": "29014",
+      "sourceUse": "NATIVE_REFERENCE_SCENARIO_NOT_BRAND_EQUIVALENCE",
+      "availableReferenceChoPerServing": "2.81",
+      "singleOmissionStrictlyBelow1": false,
+      "gate": "INGREDIENT_REFERENCE_OMISSION_FAIL"
+    },
+    {
+      "recipeId": "tom-kha-gai-vhh",
+      "ingredientIndex": 1,
+      "compositionReferenceOnly": "29014",
+      "sourceUse": "NATIVE_REFERENCE_SCENARIO_NOT_BRAND_EQUIVALENCE",
+      "availableReferenceChoPerServing": "2.81",
+      "singleOmissionStrictlyBelow1": false,
+      "gate": "INGREDIENT_REFERENCE_OMISSION_FAIL"
+    },
+    {
+      "recipeId": "indonesialainen-bubur-sumsum",
+      "ingredientIndex": 1,
+      "compositionReferenceOnly": "29014",
+      "sourceUse": "NATIVE_REFERENCE_SCENARIO_NOT_BRAND_EQUIVALENCE",
+      "availableReferenceChoPerServing": null,
+      "singleOmissionStrictlyBelow1": null,
+      "gate": "MASS_OR_VOLUME_BASIS_UNRESOLVED"
+    },
+    {
+      "recipeId": "indonesialainen-serabi-kookospannukakku",
+      "ingredientIndex": 2,
+      "compositionReferenceOnly": "29014",
+      "sourceUse": "NATIVE_REFERENCE_SCENARIO_NOT_BRAND_EQUIVALENCE",
+      "availableReferenceChoPerServing": null,
+      "singleOmissionStrictlyBelow1": null,
+      "gate": "MASS_OR_VOLUME_BASIS_UNRESOLVED"
+    },
+    {
+      "recipeId": "kerala-kalacurry",
+      "ingredientIndex": 1,
+      "compositionReferenceOnly": "29014",
+      "sourceUse": "NATIVE_REFERENCE_SCENARIO_NOT_BRAND_EQUIVALENCE",
+      "availableReferenceChoPerServing": null,
+      "singleOmissionStrictlyBelow1": null,
+      "gate": "MASS_OR_VOLUME_BASIS_UNRESOLVED"
+    },
+    {
+      "recipeId": "jerk-kana",
+      "ingredientIndex": 13,
+      "compositionReferenceOnly": "29014",
+      "sourceUse": "NATIVE_REFERENCE_SCENARIO_NOT_BRAND_EQUIVALENCE",
+      "availableReferenceChoPerServing": null,
+      "singleOmissionStrictlyBelow1": null,
+      "gate": "MASS_OR_VOLUME_BASIS_UNRESOLVED"
+    },
+    {
+      "recipeId": "rendang-padang",
+      "ingredientIndex": 1,
+      "compositionReferenceOnly": "29014",
+      "sourceUse": "NATIVE_REFERENCE_SCENARIO_NOT_BRAND_EQUIVALENCE",
+      "availableReferenceChoPerServing": null,
+      "singleOmissionStrictlyBelow1": null,
+      "gate": "MASS_OR_VOLUME_BASIS_UNRESOLVED"
+    },
+    {
+      "recipeId": "malesialainen-kookos-banaanikulho",
+      "ingredientIndex": 1,
+      "compositionReferenceOnly": "29014",
+      "sourceUse": "NATIVE_REFERENCE_SCENARIO_NOT_BRAND_EQUIVALENCE",
+      "availableReferenceChoPerServing": null,
+      "singleOmissionStrictlyBelow1": null,
+      "gate": "MASS_OR_VOLUME_BASIS_UNRESOLVED"
+    },
+    {
+      "recipeId": "nasi-lemak",
+      "ingredientIndex": 1,
+      "compositionReferenceOnly": "29014",
+      "sourceUse": "NATIVE_REFERENCE_SCENARIO_NOT_BRAND_EQUIVALENCE",
+      "availableReferenceChoPerServing": null,
+      "singleOmissionStrictlyBelow1": null,
+      "gate": "MASS_OR_VOLUME_BASIS_UNRESOLVED"
+    },
+    {
+      "recipeId": "malesialainen-roti-canai-dhalilla",
+      "ingredientIndex": 2,
+      "compositionReferenceOnly": "29014",
+      "sourceUse": "NATIVE_REFERENCE_SCENARIO_NOT_BRAND_EQUIVALENCE",
+      "availableReferenceChoPerServing": null,
+      "singleOmissionStrictlyBelow1": null,
+      "gate": "MASS_OR_VOLUME_BASIS_UNRESOLVED"
+    },
+    {
+      "recipeId": "vietnamilainen-banh-xeo-aamiaisletut",
+      "ingredientIndex": 1,
+      "compositionReferenceOnly": "29014",
+      "sourceUse": "NATIVE_REFERENCE_SCENARIO_NOT_BRAND_EQUIVALENCE",
+      "availableReferenceChoPerServing": null,
+      "singleOmissionStrictlyBelow1": null,
+      "gate": "MASS_OR_VOLUME_BASIS_UNRESOLVED"
+    },
+    {
+      "recipeId": "japanilainen-kabocha-puuro",
+      "ingredientIndex": 2,
+      "compositionReferenceOnly": "29014",
+      "sourceUse": "NATIVE_REFERENCE_SCENARIO_NOT_BRAND_EQUIVALENCE",
+      "availableReferenceChoPerServing": null,
+      "singleOmissionStrictlyBelow1": null,
+      "gate": "MASS_OR_VOLUME_BASIS_UNRESOLVED"
+    },
+    {
+      "recipeId": "malesialainen-kaya-paahtoleipa",
+      "ingredientIndex": 4,
+      "compositionReferenceOnly": "29014",
+      "sourceUse": "NATIVE_REFERENCE_SCENARIO_NOT_BRAND_EQUIVALENCE",
+      "availableReferenceChoPerServing": null,
+      "singleOmissionStrictlyBelow1": null,
+      "gate": "MASS_OR_VOLUME_BASIS_UNRESOLVED"
+    },
+    {
+      "recipeId": "malesialainen-kuih-seri-muka",
+      "ingredientIndex": 1,
+      "compositionReferenceOnly": "29014",
+      "sourceUse": "NATIVE_REFERENCE_SCENARIO_NOT_BRAND_EQUIVALENCE",
+      "availableReferenceChoPerServing": null,
+      "singleOmissionStrictlyBelow1": null,
+      "gate": "MASS_OR_VOLUME_BASIS_UNRESOLVED"
+    },
+    {
+      "recipeId": "malesialainen-laksa-lemak-aamiaiseksi",
+      "ingredientIndex": 1,
+      "compositionReferenceOnly": "29014",
+      "sourceUse": "NATIVE_REFERENCE_SCENARIO_NOT_BRAND_EQUIVALENCE",
+      "availableReferenceChoPerServing": null,
+      "singleOmissionStrictlyBelow1": null,
+      "gate": "MASS_OR_VOLUME_BASIS_UNRESOLVED"
+    },
+    {
+      "recipeId": "indonesialainen-lontong-sayur-aamiaiseksi",
+      "ingredientIndex": 1,
+      "compositionReferenceOnly": "29014",
+      "sourceUse": "NATIVE_REFERENCE_SCENARIO_NOT_BRAND_EQUIVALENCE",
+      "availableReferenceChoPerServing": null,
+      "singleOmissionStrictlyBelow1": null,
+      "gate": "MASS_OR_VOLUME_BASIS_UNRESOLVED"
+    },
+    {
+      "recipeId": "malesialainen-roti-jala-currykanalla",
+      "ingredientIndex": 3,
+      "compositionReferenceOnly": "29014",
+      "sourceUse": "NATIVE_REFERENCE_SCENARIO_NOT_BRAND_EQUIVALENCE",
+      "availableReferenceChoPerServing": null,
+      "singleOmissionStrictlyBelow1": null,
+      "gate": "MASS_OR_VOLUME_BASIS_UNRESOLVED"
+    },
+    {
+      "recipeId": "thai-roti-munalla-banaanilla",
+      "ingredientIndex": 3,
+      "compositionReferenceOnly": "29014",
+      "sourceUse": "NATIVE_REFERENCE_SCENARIO_NOT_BRAND_EQUIVALENCE",
+      "availableReferenceChoPerServing": null,
+      "singleOmissionStrictlyBelow1": null,
+      "gate": "MASS_OR_VOLUME_BASIS_UNRESOLVED"
+    },
+    {
+      "recipeId": "karibia-bammy-kassavaleipa",
+      "ingredientIndex": 1,
+      "compositionReferenceOnly": "29014",
+      "sourceUse": "NATIVE_REFERENCE_SCENARIO_NOT_BRAND_EQUIVALENCE",
+      "availableReferenceChoPerServing": null,
+      "singleOmissionStrictlyBelow1": null,
+      "gate": "MASS_OR_VOLUME_BASIS_UNRESOLVED"
+    },
+    {
+      "recipeId": "vietnamilainen-papaija-kookospuuro",
+      "ingredientIndex": 1,
+      "compositionReferenceOnly": "29014",
+      "sourceUse": "NATIVE_REFERENCE_SCENARIO_NOT_BRAND_EQUIVALENCE",
+      "availableReferenceChoPerServing": null,
+      "singleOmissionStrictlyBelow1": null,
+      "gate": "MASS_OR_VOLUME_BASIS_UNRESOLVED"
+    },
+    {
+      "recipeId": "thai-kananmunat-kookoscurryssa",
+      "ingredientIndex": 1,
+      "compositionReferenceOnly": "29014",
+      "sourceUse": "NATIVE_REFERENCE_SCENARIO_NOT_BRAND_EQUIVALENCE",
+      "availableReferenceChoPerServing": null,
+      "singleOmissionStrictlyBelow1": null,
+      "gate": "MASS_OR_VOLUME_BASIS_UNRESOLVED"
+    },
+    {
+      "recipeId": "kookos-lime-kanacurry",
+      "ingredientIndex": 1,
+      "compositionReferenceOnly": "29014",
+      "sourceUse": "NATIVE_REFERENCE_SCENARIO_NOT_BRAND_EQUIVALENCE",
+      "availableReferenceChoPerServing": null,
+      "singleOmissionStrictlyBelow1": null,
+      "gate": "MASS_OR_VOLUME_BASIS_UNRESOLVED"
+    },
+    {
+      "recipeId": "sate-ayam",
+      "ingredientIndex": 8,
+      "compositionReferenceOnly": "29014",
+      "sourceUse": "NATIVE_REFERENCE_SCENARIO_NOT_BRAND_EQUIVALENCE",
+      "availableReferenceChoPerServing": null,
+      "singleOmissionStrictlyBelow1": null,
+      "gate": "MASS_OR_VOLUME_BASIS_UNRESOLVED"
+    }
+  ]
+}

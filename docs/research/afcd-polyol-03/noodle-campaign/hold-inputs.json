@@ -1,0 +1,188 @@
+{
+  "activation": false,
+  "cases": [
+    {
+      "recipeId": "dan-dan-nuudelit",
+      "classification": "HOLD",
+      "recipePath": "reseptit/paaruoat/dan-dan-nuudelit.md",
+      "recipeSha256Lf": "81db676010a87a0a2b4a9dbd081ca672659fec2027fc82237b8bc606c3f34664",
+      "servings": 4,
+      "originalIngredients": [
+        {
+          "amount": 300,
+          "unit": "g",
+          "item": "vehnänuudeleita"
+        },
+        {
+          "amount": 300,
+          "unit": "g",
+          "item": "sian jauhelihaa"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "neutraalia öljyä"
+        },
+        {
+          "amount": 2,
+          "unit": "kpl",
+          "item": "valkosipulinkynttä",
+          "note": "silputtuna"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "soijakastiketta"
+        },
+        {
+          "amount": 2,
+          "unit": "rkl",
+          "item": "seesamitahnaa"
+        },
+        {
+          "amount": 2,
+          "unit": "rkl",
+          "item": "chiliöljyä"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "mustariisiviinietikkaa"
+        },
+        {
+          "amount": 1,
+          "unit": "dl",
+          "item": "nuudeleiden keitinvettä"
+        },
+        {
+          "amount": 2,
+          "unit": "rkl",
+          "item": "paahdettuja maapähkinöitä",
+          "note": "rouhittuna"
+        },
+        {
+          "amount": 2,
+          "unit": "kpl",
+          "item": "kevätsipulia",
+          "note": "viipaleina"
+        },
+        {
+          "amount": 100,
+          "unit": "g",
+          "item": "paksoita",
+          "note": "valinnainen"
+        }
+      ],
+      "holdReasons": [
+        "300g wheat noodle state unspecified; neither Fineli RAW nor GI trial proves dry mass.",
+        "100ml retained starchy cooking water: leaching and retained fraction unknown; no matching GI for returned fraction.",
+        "Tahini can use native AFCD1.0g/100g as a composition proxy; tablespoons, black rice vinegar, chilli oil, spring onion mass and brand still need an exact version."
+      ],
+      "sourceProgress": "MEXT dry01050 source65.0g/100g verified; original retained starch keeps this HOLD even if noodles specified.",
+      "numericGk": null,
+      "ownerApproval": false
+    },
+    {
+      "recipeId": "lanzhou-naudanliha-nuudelikeitto",
+      "classification": "HOLD",
+      "recipePath": "reseptit/paaruoat/lanzhou-naudanliha-nuudelikeitto.md",
+      "recipeSha256Lf": "07af0893f30f17b1316f5336826c6f5ade56c6d086a9a19612727a33d3ee71ea",
+      "servings": 4,
+      "originalIngredients": [
+        {
+          "amount": 700,
+          "unit": "g",
+          "item": "naudan etuselkää",
+          "note": "kuutioina"
+        },
+        {
+          "amount": 2,
+          "unit": "l",
+          "item": "vettä"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "sipuli",
+          "note": "puolitettuna"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "tuoretta inkivääriä",
+          "note": "noin 4 cm pala"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "kanelitanko"
+        },
+        {
+          "amount": 2,
+          "unit": "kpl",
+          "item": "tähtianista"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "suolaa"
+        },
+        {
+          "amount": 350,
+          "unit": "g",
+          "item": "vehnänuudeleita"
+        },
+        {
+          "amount": 2,
+          "unit": "kpl",
+          "item": "retikkaa",
+          "note": "ohuina viipaleina"
+        },
+        {
+          "amount": 2,
+          "unit": "kpl",
+          "item": "kevätsipulia",
+          "note": "viipaleina"
+        },
+        {
+          "amount": 15,
+          "unit": "g",
+          "item": "tuoretta korianteria",
+          "note": "silputtuna"
+        },
+        {
+          "amount": 2,
+          "unit": "rkl",
+          "item": "chiliöljyä",
+          "note": "tarjoiluun"
+        }
+      ],
+      "holdReasons": [
+        "350g wheat noodle state unspecified; choose/version with owner, never infer dry/cooked conversion.",
+        "Onion1piece, ginger4cm, cinnamon1stick, star anise2pieces, radishes2pieces, spring onions2pieces are not recipe-specific weighed masses.",
+        "Strained homemade stock has unknown extracted/retained CHO. Commercial stock is not its equivalent.",
+        "Chilli oil2tbsp requires exact product and unit basis; US rounded0 per5ml is not zero per100g."
+      ],
+      "sourceProgress": "No whole-recipe GK. Dry01050 and boiled01051 are independent food rows, not a measured yield pair.",
+      "numericGk": null,
+      "ownerApproval": false
+    }
+  ],
+  "massBalance": {
+    "recipeId": "dan-dan-nuudelit",
+    "initialAvailableCho": "A0",
+    "leachedCho": "L (unknown,0<=L<=A0)",
+    "fractionReturned": "r (unknown,0<=r<=1)",
+    "drainedNoodles": "A0-L",
+    "returnedWater": "r*L",
+    "servedTotal": "A0-(1-r)*L",
+    "waterVolumeMl": 100,
+    "doesNotEstablish": [
+      "L from100ml alone",
+      "r without total cooking-water basis and homogeneity",
+      "GI of leached starch",
+      "GI of final meal"
+    ],
+    "forbiddenDoubleCount": "A0 + r*L"
+  }
+}

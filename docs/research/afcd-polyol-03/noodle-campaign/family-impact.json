@@ -1,0 +1,225 @@
+{
+  "inventoryRows": 170,
+  "inventoryRawSha256": "7e6cdaf480a56150f6ca9ed6be2703d0277a0fd18c6b885d59400a0c68f03116",
+  "metadataScanIsNotFullRecipeRecalculation": true,
+  "distinctDependentRecipes": 42,
+  "families": [
+    {
+      "family": "COCONUT_MILK",
+      "dependentRecipes": 28,
+      "recipeIds": [
+        "indonesialainen-bubur-sumsum",
+        "indonesialainen-lontong-sayur-aamiaiseksi",
+        "indonesialainen-serabi-kookospannukakku",
+        "japanilainen-kabocha-puuro",
+        "jerk-kana",
+        "karibia-bammy-kassavaleipa",
+        "keltainen-kanacurry-vhh",
+        "kerala-kalacurry",
+        "khao-soi-vhh-konjac",
+        "kookos-lime-kanacurry",
+        "malesialainen-kaya-paahtoleipa",
+        "malesialainen-kookos-banaanikulho",
+        "malesialainen-kuih-seri-muka",
+        "malesialainen-laksa-lemak-aamiaiseksi",
+        "malesialainen-roti-canai-dhalilla",
+        "malesialainen-roti-jala-currykanalla",
+        "massaman-curry-kanalla-vhh",
+        "nasi-lemak",
+        "panang-curry-kanalla-vhh",
+        "punainen-kanacurry-vhh",
+        "rendang-padang",
+        "sate-ayam",
+        "thai-kananmunat-kookoscurryssa",
+        "thai-roti-munalla-banaanilla",
+        "thai-vihrea-curry-kanalla-vhh",
+        "tom-kha-gai-vhh",
+        "vietnamilainen-banh-xeo-aamiaisletut",
+        "vietnamilainen-papaija-kookospuuro"
+      ],
+      "alreadyApprovedVersionIds": [
+        "japanilainen-kabocha-puuro",
+        "malesialainen-kaya-paahtoleipa",
+        "malesialainen-laksa-lemak-aamiaiseksi"
+      ],
+      "unapprovedRecipeIds": [
+        "indonesialainen-bubur-sumsum",
+        "indonesialainen-lontong-sayur-aamiaiseksi",
+        "indonesialainen-serabi-kookospannukakku",
+        "jerk-kana",
+        "karibia-bammy-kassavaleipa",
+        "keltainen-kanacurry-vhh",
+        "kerala-kalacurry",
+        "khao-soi-vhh-konjac",
+        "kookos-lime-kanacurry",
+        "malesialainen-kookos-banaanikulho",
+        "malesialainen-kuih-seri-muka",
+        "malesialainen-roti-canai-dhalilla",
+        "malesialainen-roti-jala-currykanalla",
+        "massaman-curry-kanalla-vhh",
+        "nasi-lemak",
+        "panang-curry-kanalla-vhh",
+        "punainen-kanacurry-vhh",
+        "rendang-padang",
+        "sate-ayam",
+        "thai-kananmunat-kookoscurryssa",
+        "thai-roti-munalla-banaanilla",
+        "thai-vihrea-curry-kanalla-vhh",
+        "tom-kha-gai-vhh",
+        "vietnamilainen-banh-xeo-aamiaisletut",
+        "vietnamilainen-papaija-kookospuuro"
+      ],
+      "newCompleteArithmeticCandidates": [],
+      "actualNewPublicationQualified": 0,
+      "ingredientResolutionIsNotWholeRecipeResolution": true
+    },
+    {
+      "family": "CURRY_PASTE",
+      "dependentRecipes": 8,
+      "recipeIds": [
+        "keltainen-kanacurry-vhh",
+        "khao-soi-vhh-konjac",
+        "kookos-lime-kanacurry",
+        "massaman-curry-kanalla-vhh",
+        "panang-curry-kanalla-vhh",
+        "punainen-kanacurry-vhh",
+        "thai-kananmunat-kookoscurryssa",
+        "thai-vihrea-curry-kanalla-vhh"
+      ],
+      "alreadyApprovedVersionIds": [],
+      "unapprovedRecipeIds": [
+        "keltainen-kanacurry-vhh",
+        "khao-soi-vhh-konjac",
+        "kookos-lime-kanacurry",
+        "massaman-curry-kanalla-vhh",
+        "panang-curry-kanalla-vhh",
+        "punainen-kanacurry-vhh",
+        "thai-kananmunat-kookoscurryssa",
+        "thai-vihrea-curry-kanalla-vhh"
+      ],
+      "newCompleteArithmeticCandidates": [],
+      "actualNewPublicationQualified": 0,
+      "ingredientResolutionIsNotWholeRecipeResolution": true
+    },
+    {
+      "family": "DARK_SOY",
+      "dependentRecipes": 2,
+      "recipeIds": [
+        "pad-see-ew-vhh-konjac",
+        "roujiamo"
+      ],
+      "alreadyApprovedVersionIds": [],
+      "unapprovedRecipeIds": [
+        "pad-see-ew-vhh-konjac",
+        "roujiamo"
+      ],
+      "newCompleteArithmeticCandidates": [
+        "pad-see-ew-vhh-konjac"
+      ],
+      "actualNewPublicationQualified": 0,
+      "ingredientResolutionIsNotWholeRecipeResolution": true
+    },
+    {
+      "family": "NOODLES",
+      "dependentRecipes": 14,
+      "recipeIds": [
+        "bun-cha-hanoi",
+        "chow-mein",
+        "dan-dan-nuudelit",
+        "goi-cuon",
+        "japanilainen-soba-aamiaiskeitto",
+        "khao-soi-vhh-konjac",
+        "lanzhou-naudanliha-nuudelikeitto",
+        "malesialainen-laksa-lemak-aamiaiseksi",
+        "pad-kee-mao-vhh-konjac",
+        "pad-see-ew-vhh-konjac",
+        "pad-thai-vhh-konjac",
+        "pho-bo",
+        "sichuan-hot-pot",
+        "vietnamilainen-pho-ga-aamuksi"
+      ],
+      "alreadyApprovedVersionIds": [
+        "malesialainen-laksa-lemak-aamiaiseksi",
+        "pad-kee-mao-vhh-konjac",
+        "vietnamilainen-pho-ga-aamuksi"
+      ],
+      "unapprovedRecipeIds": [
+        "bun-cha-hanoi",
+        "chow-mein",
+        "dan-dan-nuudelit",
+        "goi-cuon",
+        "japanilainen-soba-aamiaiskeitto",
+        "khao-soi-vhh-konjac",
+        "lanzhou-naudanliha-nuudelikeitto",
+        "pad-see-ew-vhh-konjac",
+        "pad-thai-vhh-konjac",
+        "pho-bo",
+        "sichuan-hot-pot"
+      ],
+      "newCompleteArithmeticCandidates": [
+        "pad-see-ew-vhh-konjac"
+      ],
+      "actualNewPublicationQualified": 0,
+      "ingredientResolutionIsNotWholeRecipeResolution": true
+    },
+    {
+      "family": "STAR_ANISE_AND_BROTH",
+      "dependentRecipes": 6,
+      "recipeIds": [
+        "kiinalainen-teehaudutetut-munat",
+        "lanzhou-naudanliha-nuudelikeitto",
+        "pho-bo",
+        "roujiamo",
+        "sichuan-hot-pot",
+        "vietnamilainen-pho-ga-aamuksi"
+      ],
+      "alreadyApprovedVersionIds": [
+        "vietnamilainen-pho-ga-aamuksi"
+      ],
+      "unapprovedRecipeIds": [
+        "kiinalainen-teehaudutetut-munat",
+        "lanzhou-naudanliha-nuudelikeitto",
+        "pho-bo",
+        "roujiamo",
+        "sichuan-hot-pot"
+      ],
+      "newCompleteArithmeticCandidates": [],
+      "actualNewPublicationQualified": 0,
+      "ingredientResolutionIsNotWholeRecipeResolution": true
+    }
+  ],
+  "noodleTypes": {
+    "pad-thai-vhh-konjac": "KONJAC_READY",
+    "khao-soi-vhh-konjac": "KONJAC_READY",
+    "pad-kee-mao-vhh-konjac": "KONJAC_READY",
+    "pad-see-ew-vhh-konjac": "KONJAC_READY",
+    "bun-cha-hanoi": "RICE_DRY_VERMICELLI_RINSED",
+    "chow-mein": "WHEAT_EGG_BOILED_DRAINED_WOK",
+    "dan-dan-nuudelit": "WHEAT_STATE_UNRESOLVED_WATER_RETAINED",
+    "goi-cuon": "RICE_DRY_VERMICELLI_WITH_RICE_PAPER",
+    "pho-bo": "RICE_DRY_FLAT",
+    "lanzhou-naudanliha-nuudelikeitto": "WHEAT_STATE_UNRESOLVED_DRAINED",
+    "japanilainen-soba-aamiaiskeitto": "SOBA_BUCKWHEAT_FRACTION_AND_STATE_UNRESOLVED",
+    "malesialainen-laksa-lemak-aamiaiseksi": "RICE_STATE_VERSION_ALREADY_APPROVED",
+    "vietnamilainen-pho-ga-aamuksi": "RICE_STATE_VERSION_ALREADY_APPROVED",
+    "sichuan-hot-pot": "NOODLE_TYPE_AND_STATE_UNRESOLVED"
+  },
+  "remainingNoodleBlockers": {
+    "pad-thai-vhh-konjac": "TAMARIND30G_CURRENT_CAP_FAILS;PEANUT_PRODUCT_GI;MISSING_SPRING_ONION_IN_INGREDIENT_LIST",
+    "khao-soi-vhh-konjac": "COCONUT_MILK_GI;CURRY_PASTE_GI;PICKLED_MUSTARD_DRAINED_BASIS",
+    "pad-see-ew-vhh-konjac": "EXACT_YUTAKA_AND_DRAINED_KORO_BINDING_OWNER_REVIEW",
+    "bun-cha-hanoi": "COLD_RINSED_VERMICELLI_GI_TRANSFER;MARINADE_RETENTION;SUGAR_AND_FISH_SAUCE_ML",
+    "chow-mein": "EGG_NOODLE_WOK_GI;NOT_PLAIN_DRY_WHEAT;WEIGHED_CARROT_AND_SAUCES",
+    "dan-dan-nuudelit": "NOODLE_STATE;RETAINED_STARCH;SAUCE_PRODUCT_AND_MASS",
+    "goi-cuon": "VERMICELLI_GI;RICE_PAPER8PIECES;PEANUT_BUTTER120G;HOISIN",
+    "pho-bo": "FLAT_RICE_NOODLE_GI;STOCK_EXTRACTION_AND_AROMATIC_MASSES",
+    "lanzhou-naudanliha-nuudelikeitto": "NOODLE_STATE;AROMATIC_MASSES;STRAINED_STOCK_RETENTION;CHILLI_OIL",
+    "japanilainen-soba-aamiaiskeitto": "BUCKWHEAT_FRACTION_STATE;DASHI_BROTH_BASIS;SPINACH_MASS",
+    "sichuan-hot-pot": "NOODLE_TYPE_STATE;SAUCE_AND_STOCK_PRODUCT",
+    "malesialainen-laksa-lemak-aamiaiseksi": "EXISTING_APPROVED16_VERSION_ONLY",
+    "vietnamilainen-pho-ga-aamuksi": "EXISTING_APPROVED16_VERSION_ONLY",
+    "pad-kee-mao-vhh-konjac": "EXISTING_LOCKED_APPROVED6_VERSION_ONLY"
+  },
+  "distinctReadyForOwnerSourceReview": 1,
+  "publishedGain": 0
+}

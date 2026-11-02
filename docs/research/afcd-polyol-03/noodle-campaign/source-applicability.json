@@ -1,0 +1,101 @@
+{
+  "activation": false,
+  "completeRecipeModelApproved": false,
+  "wheatGiRef": "../followup/noodle-gi-observations.json",
+  "wheatGiDecisions": [
+    {
+      "id": "dried-wheat46",
+      "admission": "PROPOSED_NAMED_SOURCE_ANALOGY_ONLY",
+      "usablePreparation": "A separately approved, plainly identified dried-wheat noodle version; boiling method still underspecified in trial.",
+      "notEstablished": [
+        "universal wheat noodle GI",
+        "fresh/egg/fried/soba equivalence",
+        "retained DanDan cooking starch equivalence"
+      ],
+      "valueMustNotBeAveragedWith": "sanlian-dried-wheat62"
+    },
+    {
+      "id": "sanlian-dried-wheat62",
+      "admission": "PROPOSED_EXACT_PRODUCT_PREPARATION_OR_REVIEWED_ANALOGY_ONLY",
+      "usablePreparation": "Sanlian Food Shandong dried wheat noodles boiled5min and drained. Product identity in original recipes not established; UO18 unpublished original.",
+      "notEstablished": [
+        "native carbohydrate composition from32.9g test portion",
+        "wet/dry test weight",
+        "fresh noodle upper bound"
+      ]
+    }
+  ],
+  "nativeCompositionDecisions": [
+    {
+      "id": "FINELI120",
+      "nativeRef": {
+        "file": "sources.json",
+        "compositionId": "120"
+      },
+      "admission": "NATIVE_FIELD_FOUND_BUT_DRY_STATE_UNPROVED",
+      "correction": "Earlier report missed this native66.4g available record. RAW and the name do not explicitly say dried. Do not claim composition wholly unavailable."
+    },
+    {
+      "id": "MEXT01050",
+      "nativeRef": {
+        "file": "mext-noodles.json",
+        "nativeId": "01050"
+      },
+      "admission": "NEW_ROW_APPLICATION_APPROVAL_REQUIRED",
+      "meaning": "干し中華めん 乾, dried Chinese-style wheat noodle, DRY; native CHOAVL mass65.0, not CHOAVLM71.4 or difference64.5."
+    },
+    {
+      "id": "MEXT01051",
+      "nativeRef": {
+        "file": "mext-noodles.json",
+        "nativeId": "01051"
+      },
+      "admission": "BOILED_STATE_ONLY",
+      "meaning": "干し中華めん ゆで, boiled dried Chinese-style noodle; native mass25.4. Not an empirical yield pair with01050."
+    },
+    {
+      "id": "MEXT01047_01048",
+      "admission": "FRESH_NOODLE_CONTROLS_NOT_DRY_TRANSFERS",
+      "meaning": "Fresh47.6 and boiled25.2 are separate source foods."
+    },
+    {
+      "id": "MEXT01041",
+      "admission": "REJECT_ORDINARY_POINT",
+      "meaning": "Dried udon mass(69.9) is parenthesized estimated source value."
+    },
+    {
+      "id": "MEXT01056",
+      "admission": "EXCLUDE_DIFFERENT_FOOD",
+      "meaning": "Fried instant seasoned noodle57.3 is not plain dried Chinese wheat noodle."
+    }
+  ],
+  "nextFamilyGiExclusionControls": [
+    {
+      "source": "Atkinson2021 Supplement1 p11 item141",
+      "sourceRef": {
+        "file": "../followup/noodle-gi-observations.json",
+        "sourceId": "atkinson2021-s1"
+      },
+      "gi": 68,
+      "sem": 6,
+      "healthyN": 10,
+      "food": "Pure Harvest Coco Quench: organic coconut milk AND organic brown rice",
+      "decision": "EXCLUDE_STANDALONE_CULINARY_COCONUT_MILK; blend GI does not establish coconut ingredient GI."
+    },
+    {
+      "source": "PMID22849311",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/22849311/",
+      "gi": 31,
+      "decision": "EXISTING_MIXED_PORRIDGE_ONLY_EXCLUSION_REUSED; not a new standalone source or an approved coconut GI."
+    },
+    {
+      "source": "Atkinson2021 Supplement1 p101 item1483 / Yang2006 Table2",
+      "gi": 59,
+      "healthyN": 9,
+      "food": "Buckwheat noodles",
+      "decision": "EXCLUDE_AUTOMATIC_SOBA_TRANSFER; recipe buckwheat fraction, state and preparation unknown."
+    }
+  ],
+  "noodleComponentArithmetic": "Component-only scenarios in decimal-source-scenarios.csv are NOT whole-recipe B candidates, publication values, ranges or coverage gains.",
+  "noBMinorOmissionActivation": true
+}
