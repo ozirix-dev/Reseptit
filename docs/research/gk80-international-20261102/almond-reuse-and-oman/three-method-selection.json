@@ -1,0 +1,73 @@
+{
+  "latestUserInstruction": "Find,selectanduse3bestalternativeGI/GKmethods;coarserange5–10exampleissufficientforenduser. Researchauthorizationdoesnotauthorizepublication.",
+  "selected": [
+    {
+      "rank": 1,
+      "method": "Source-matched ingredient calculation using nativeavailableCHO and publishedhuman/preparationGI or existingreviewablecategoryanalogue",
+      "appliedTo": [
+        "vhh-omenapiirakka",
+        "vhh-raparperipiirakka"
+      ],
+      "output": "model-results.json",
+      "purpose": "Do not let a mismatched commercialflour record block a preciselydefined wholealmondversion.",
+      "limitations": "Wholealmond grinding retention and categoryGI are scopedreviewable assumptions;nominalsourcepointnot biologicalupper."
+    },
+    {
+      "rank": 2,
+      "method": "Human-measured wholepreparedfood analogue with allcomponentCHO countedonce,including physicalCHOintervals for smallknownmass unknowncompositions",
+      "appliedTo": [
+        "samosa"
+      ],
+      "output": "samosa-prepared-source-scenario.json",
+      "purpose": "Avoid assigning wholefoodGI to rawflour;use wholepreparedunit as wholepreparedunit.",
+      "limitations": "Unapprovedsource/preparationanalogue;fullsourceprotocolandratiosnotverified. Source-scenarioonly,notreadyforpublication."
+    },
+    {
+      "rank": 3,
+      "method": "Published foodgroup imputation scopedtonamedcompositionandpreparation,with comparisonagainst ingredientcategoryscenario",
+      "appliedTo": [
+        "vhh-omenapiirakka",
+        "vhh-raparperipiirakka"
+      ],
+      "output": "published-imputation-profiles.json",
+      "purpose": "Milk30 and vegetable40 are traceablepublishedcodingassignments,not inventedmeasuredGIs.",
+      "limitations": "Explicit newresearchapplications;no globaldefaults,nomissingzero,noalmond/flourGI70,noautomaticlabelapproval."
+    }
+  ],
+  "rejected": [
+    {
+      "method": "AI/LLM-only GI prediction",
+      "reason": "No independent source-backed mealvalue;2024nationaldatabase retainedonlypartofAIassignmentsaftermanualchecking."
+    },
+    {
+      "method": "In-vitroGI orresistantstarchregressionasmeasuredhumanGI",
+      "reason": "OmanTable2human60.4andlab69.2differ;laboratorypredictionsnotinterchangeable."
+    },
+    {
+      "method": "UniformGI0/70/100or150forallunknowningredients",
+      "reason": "Untracedpoint orassumedmaximum cannotbecomea measuredsource. NozeroassignmentforpositiveunknownCHO."
+    }
+  ],
+  "methodEvidence": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC1989668/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC2584181/",
+    "https://pubmed.ncbi.nlm.nih.gov/21831990/",
+    "https://doi.org/10.1016/j.ajcnut.2024.06.001"
+  ],
+  "displayPolicy": {
+    "ordinaryBandStep": 5,
+    "rounding": "flooroflow,ceilofhigh,outwardonly",
+    "lowValues": "alle5 may replace0–5 without implyingmissingGIzero",
+    "rangeType": "Named source/modelscenario unless full uncertainty is established;never claim95percentCI",
+    "widthNotForced": "If defensiblesourcesrequirewiderthan10,showwiderorHOLD;do notnarrowbyrequest.",
+    "semNotUsedAsRecipeRange": true,
+    "publicDisplayNotChanged": true
+  },
+  "newRecipeIdsFromImputationProfiles": 0,
+  "uniqueNewResearchIdsThisPass": [
+    "vhh-omenapiirakka",
+    "vhh-raparperipiirakka",
+    "samosa"
+  ],
+  "newPublicValues": 0
+}

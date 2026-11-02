@@ -1,0 +1,192 @@
+{
+  "recipeId": "samosa",
+  "method": 2,
+  "sourcePath": "reseptit/alkuruoat/samosa.md",
+  "sourceLfSha256": "46434c90d2a686eba39107cb9fb68ee4a1d3004ba24adade63de81db470a3140",
+  "servings": 4,
+  "ingredients": [
+    {
+      "sourceIngredient": {
+        "amount": 300,
+        "unit": "g",
+        "item": "vehnäjauhoja"
+      },
+      "grams": 300,
+      "nativeId": "110",
+      "carbohydrateSource": "FINELI_CHOAVL",
+      "availableChoBatchMinG": "221.994",
+      "availableChoBatchMaxG": "221.994",
+      "definition": "Native point retained;AFCD individualpolyolsUNKNOWN.",
+      "scope": "WHOLE_PREPARED_SAMOSA_ONCE"
+    },
+    {
+      "sourceIngredient": {
+        "amount": 60,
+        "unit": "ml",
+        "item": "öljyä",
+        "note": "taikinaan"
+      },
+      "grams": 54,
+      "nativeId": "541",
+      "carbohydrateSource": "FINELI_CHOAVL",
+      "availableChoBatchMinG": "0.0",
+      "availableChoBatchMaxG": "0.0",
+      "definition": "Native point retained;AFCD individualpolyolsUNKNOWN.",
+      "scope": "WHOLE_PREPARED_SAMOSA_ONCE"
+    },
+    {
+      "sourceIngredient": {
+        "amount": 1,
+        "unit": "tl",
+        "item": "suolaa"
+      },
+      "grams": 6.5,
+      "nativeId": "30",
+      "carbohydrateSource": "FINELI_CHOAVL",
+      "availableChoBatchMinG": "0.00",
+      "availableChoBatchMaxG": "0.00",
+      "definition": "Native point retained;AFCD individualpolyolsUNKNOWN.",
+      "scope": "WHOLE_PREPARED_SAMOSA_ONCE"
+    },
+    {
+      "sourceIngredient": {
+        "amount": 1.2,
+        "unit": "dl",
+        "item": "vettä",
+        "note": "taikinaan"
+      },
+      "grams": 120,
+      "nativeId": "922",
+      "carbohydrateSource": "FINELI_CHOAVL",
+      "availableChoBatchMinG": "0.0",
+      "availableChoBatchMaxG": "0.0",
+      "definition": "Native point retained;AFCD individualpolyolsUNKNOWN.",
+      "scope": "WHOLE_PREPARED_SAMOSA_ONCE"
+    },
+    {
+      "sourceIngredient": {
+        "amount": 400,
+        "unit": "g",
+        "item": "perunoita"
+      },
+      "grams": 400,
+      "nativeId": "205",
+      "carbohydrateSource": "FINELI_CHOAVL",
+      "availableChoBatchMinG": "62.0",
+      "availableChoBatchMaxG": "62.0",
+      "definition": "Native point retained;AFCD individualpolyolsUNKNOWN.",
+      "scope": "WHOLE_PREPARED_SAMOSA_ONCE"
+    },
+    {
+      "sourceIngredient": {
+        "amount": 100,
+        "unit": "g",
+        "item": "pakasteherneitä"
+      },
+      "grams": 100,
+      "nativeId": "34229",
+      "carbohydrateSource": "FINELI_CHOAVL",
+      "availableChoBatchMinG": "9.36",
+      "availableChoBatchMaxG": "9.36",
+      "definition": "Native point retained;AFCD individualpolyolsUNKNOWN.",
+      "scope": "WHOLE_PREPARED_SAMOSA_ONCE"
+    },
+    {
+      "sourceIngredient": {
+        "amount": 1,
+        "unit": "tl",
+        "item": "juustokuminan siemeniä"
+      },
+      "grams": 2,
+      "nativeId": "F003327",
+      "carbohydrateSource": "AFCD_WITHOUT_SUGAR_ALCOHOLS",
+      "availableChoBatchMinG": "0.674",
+      "availableChoBatchMaxG": "0.674",
+      "definition": "Native point retained;AFCD individualpolyolsUNKNOWN.",
+      "scope": "WHOLE_PREPARED_SAMOSA_ONCE"
+    },
+    {
+      "sourceIngredient": {
+        "amount": 0.5,
+        "unit": "tl",
+        "item": "garam masalaa"
+      },
+      "grams": 1,
+      "nativeId": null,
+      "carbohydrateSource": "PHYSICAL_CHO_MASS_INTERVAL",
+      "availableChoBatchMinG": "0",
+      "availableChoBatchMaxG": "1",
+      "definition": "UnknowngarammasalaCHO is bounded0..wholeweighed1g. Zero is only nonnegativityintervalendpoint,not an assignedcomposition orGI.",
+      "scope": "WHOLE_PREPARED_SAMOSA_ONCE"
+    },
+    {
+      "sourceIngredient": {
+        "amount": 0.5,
+        "unit": "tl",
+        "item": "chilijauhetta"
+      },
+      "grams": 1,
+      "nativeId": "F002893",
+      "carbohydrateSource": "AFCD_WITHOUT_SUGAR_ALCOHOLS",
+      "availableChoBatchMinG": "0.129",
+      "availableChoBatchMaxG": "0.129",
+      "definition": "Native point retained;AFCD individualpolyolsUNKNOWN.",
+      "scope": "WHOLE_PREPARED_SAMOSA_ONCE"
+    },
+    {
+      "sourceIngredient": {
+        "amount": 15,
+        "unit": "g",
+        "item": "tuoretta korianteria",
+        "note": "hienonnettuna"
+      },
+      "grams": 15,
+      "nativeId": "F003192",
+      "carbohydrateSource": "AFCD_WITHOUT_SUGAR_ALCOHOLS",
+      "availableChoBatchMinG": "0.285",
+      "availableChoBatchMaxG": "0.285",
+      "definition": "Native point retained;AFCD individualpolyolsUNKNOWN.",
+      "scope": "WHOLE_PREPARED_SAMOSA_ONCE"
+    },
+    {
+      "sourceIngredient": {
+        "amount": 50,
+        "unit": "g",
+        "item": "öljyä",
+        "note": "Arvioitu imeytyvä määrä koko erälle; friteeraukseen käytä noin 1 l ja valuta ylimääräinen öljy pois. Ylimäärä ei sisälly ravintoarvioon."
+      },
+      "grams": 50,
+      "nativeId": "541",
+      "carbohydrateSource": "FINELI_CHOAVL",
+      "availableChoBatchMinG": "0.0",
+      "availableChoBatchMaxG": "0.0",
+      "definition": "Native point retained;AFCD individualpolyolsUNKNOWN.",
+      "scope": "WHOLE_PREPARED_SAMOSA_ONCE"
+    }
+  ],
+  "component": "Wholedeepfriedpotatopeaswheatsamosa,all11rowsincludedonce",
+  "componentGi": 60.4,
+  "componentGiSource": "oman-human-source-card.json",
+  "gkScenarioMin": "44.460742",
+  "gkScenarioMax": "44.611742",
+  "displayProposal": "40–45",
+  "displayBounds": [
+    40,
+    45
+  ],
+  "displayMeaning": "OUTWARD_ROUNDED_NAMED_SOURCE_SCENARIO,not physiologicalorstatisticalrange",
+  "newWeighedVersion": "Cuminseeds2g,garammasala1g,chillipowder1g explicitlyweighed;not claimed conversionsof original1tl/0.5tl/0.5tl. Doughoil60ml*Fineli5410.9g/ml=54g;fryoil50g retainedasrecipe estimate,not measuredabsorption. Samepotato/pea/flour/water amountsand170C6–8minfry.",
+  "limits": [
+    "Omanmarketrecipe exactflour/filling/fat ratios notpublished;targetpreparation correspondence conditional.",
+    "Sourcehumanprotocol notrecovered from2020;2022paper Table2humanGI confirmed.",
+    "No rawflourGI assigned,noSEMrecipeinterval,noGI0for missingingredients,no doublecountedingredientGI.",
+    "Garammasalamassbound doesnot establishexactcomposition;recipeCHO field is an interval.",
+    "This is an unapprovedprepared-foodresearchscenario,not A-modelcalculation or a releasecandidate."
+  ],
+  "sourceApplicationApproved": false,
+  "contentVersionApproved": false,
+  "publicationApproved": false,
+  "newPublishedValue": false,
+  "wholePreparedUnitCount": 1,
+  "ingredientGiContributionsAlsoAdded": false
+}
