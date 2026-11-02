@@ -1,6 +1,28 @@
 # AFCD-POLYOL-03 / GK80: yhteinen menetelmä- ja lähderatkaisu
 
-## Kuuden version hyväksynnän jälkeinen nykytila
+## Nykytila erottelun jälkeen
+
+**PR183:n Ready-sisältö on16 hyväksyttyä GK-versiota, HEAD`d98d77f`. Kuusi muuta hyväksyttyä A-versiota ovat lukitussa erillisessä haarassa`codex/gk80-six-a-isolated`, HEAD`80f4360`.22 hyväksyttyä versiota ei tarkoita22 versiota PR183:ssa eikä22 julkaistua lisäystä.**
+
+| Näkymä | Numeerisia /326 | Ero tavoitteeseen261 |
+| --- | ---: | ---: |
+| Viimeksi varmennettu main/tuotanto |156 (47,85%) |105 |
+| Codex1:n PR183:n16 version julkaisuehdokas |172 (52,76%) |89 |
+| Molemmat erät joskus erikseen katselmoitu, integroitu ja julkaistu |178 (54,60%) |83 |
+
+Yhteisessä33 reseptin laskenta-aineistossa22 versiolla on menetelmä- tai sisältöhyväksyntä eri vaiheissa:16 integraatiossa ja6 erillään.11 reseptiltä puuttuu hyväksytty versio; niistä6 pysyy valmistetun ruoan lähde-HOLDissa.30 lähdekelpoisen julkaisuehdokkaan tavoitetta ei ole osoitettu. Uuden B-poisjättöprofiilin ja hernekeiton tutkimusmallin tila säilyy tutkimuksena.
+
+[Nykytilakirjaus](current-state.json) ja [33 reseptin nykyinen päätösmatriisi](current-decision-matrix.csv) ovat vaiheiden ensisijaiset yhteenvedot. Aiemmat`summary.json`,`joint-*`-tiedostot ja [integraatiokuitti](integration-receipt.json) ovat historiallisia tilannekuvia. Niiden alkuperäisiä hyväksyntä-, laskenta- tai hash-kenttiä ei muutettu; nykytilaksi tulkinta on merkitty vanhentuneeksi ja ohjattu tähän uuteen kirjaukseen.
+
+**Codex2:n kirjoitusrajaus:** vain`D:/Projects/tmp/reseptit-afcd-polyol-03-gk80-handoff` ja`codex/afcd-polyol-03-gk80-handoff`. PR183:n`codex/gk80-operation149-v2` kuuluu Codex1:lle. Kuuden version säilytyshaaraa ei muokata. Lähdetyö luovutetaan jatkossa omana versionlukittuna pakettinaan; ei Readyä, mergeä tai deployta.
+
+Uudet projektisäännöt löytyivät mainiin PR184:llä yhdistetyistä [AGENTS.md](../../../AGENTS.md)- ja [rinnakkaisajo-ohjeista](../../rinnakkaiset-codex-ajot.md), commit`061f817`. Ne tuotiin tähän omaan työpuuhun täsmälleen samansisältöisinä. Pelkkää repo_guardin PASSia ei käsitellä haaran kirjoituslukkona. PR182 jää erilliseksi Draftiksi ja sen koko lähdetiedoston hash-/regressioriippuvuus on edelleen avoin.
+
+## Historiallisten kirjausten lukuohje
+
+Alla säilytetään aiemmat tapahtuma- ja tutkimustilannekuvat. Ilmaisut ”nyt”, ”nykyinen” ja ”Draft” kuvaavat kyseisen kirjaushetken tilaa. Väliaikainen22-version integraatio palautettiin myöhemmin16-version sisältöön; vanhoja kuitteja ei käytetä nykytilan osoituksena.
+
+## Historiallinen tilannekuva: tilapäinen22-version integraatio
 
 **Kuusi A-versiota on nyt omistajan nimenomaisella hyväksynnällä integroitu samaan julkaisemattomaan PR183:een, HEAD`80f4360435b978d1cfa81088df1414430a88c222`. Hyväksyttyjä versioita on22 ja Draftin ehdokaskattavuus178/326=54,60%; tuotanto156/326.80% rajaan261 puuttuu tästä ehdokastilasta83.** [Integraatiokuitti](integration-receipt.json) sitoo päätöksen kuuteen tarkkaan syötteeseen ja erilliseen hyväksyntäkirjaukseen. [Ajantasainen pääraportti](https://github.com/ozirix-dev/Reseptit/blob/80f4360435b978d1cfa81088df1414430a88c222/docs/nutrition/gk80-operation149/README.md) on integraatiohaarassa.
 

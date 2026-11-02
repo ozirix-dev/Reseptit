@@ -39,5 +39,8 @@
   "sourceHoldCount": 6,
   "nonHoldArithmeticProposals": 27,
   "pendingOutsideKnownSourceHolds": 11,
-  "shortfallTo30EvenIfAllNonHoldQualify": 3
+  "shortfallTo30EvenIfAllNonHoldQualify": 3,
+  "recordStatus": "HISTORICAL_SNAPSHOT_SUPERSEDED_AS_CURRENT_STATE",
+  "currentStateRef": "current-state.json",
+  "currentDecisionMatrixRef": "current-decision-matrix.csv"
 }

@@ -90,5 +90,8 @@
   "newDistinctBeyondFrozenUpstream17": 5,
   "countScope": "LOCAL_BASE16_PLUS_SUPPLEMENT; full cross-branch count in joint-proposal-summary.json",
   "crossBranchDistinctArithmeticProposals": 33,
-  "crossBranchSourceQualified30Proven": false
+  "crossBranchSourceQualified30Proven": false,
+  "recordStatus": "HISTORICAL_SNAPSHOT_SUPERSEDED_AS_CURRENT_STATE",
+  "currentStateRef": "current-state.json",
+  "currentDecisionMatrixRef": "current-decision-matrix.csv"
 }

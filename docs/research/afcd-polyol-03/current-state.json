@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "recordRole": "CURRENT_STATE_AFTER_SEPARATION",
+  "observedAtUtc": "2026-11-02T16:58:10.227081+00:00",
+  "repository": "ozirix-dev/Reseptit",
+  "role": "Codex2 / Codex Tutkimus",
+  "ownedWorktree": "D:\\Projects\\tmp\\reseptit-afcd-polyol-03-gk80-handoff",
+  "ownedBranch": "codex/afcd-polyol-03-gk80-handoff",
+  "correctionBaseHead": "ac93cbdefe0c7d02ee1c39740c31b1446f24ba6f",
+  "mainHeadObserved": "061f8170a7bc31244ce787c13e80d3d757f0c859",
+  "rulesMainCommit": "061f8170a7bc31244ce787c13e80d3d757f0c859",
+  "ruleFiles": [
+    "AGENTS.md",
+    "docs/rinnakkaiset-codex-ajot.md"
+  ],
+  "pr183": {
+    "url": "https://github.com/ozirix-dev/Reseptit/pull/183",
+    "owner": "Codex1 / Codex Julkaisu",
+    "writeAuthorizedForCodex2": false,
+    "head": "d98d77f56c244833320705b32e789ea72e30e58f",
+    "state": "READY_UNMERGED",
+    "integratedApprovedVersions": 16,
+    "candidateNumericRecipes": 172,
+    "candidatePercent": 52.76,
+    "gapTo261": 89,
+    "ciRun": 41479093739,
+    "ciConclusion": "SUCCESS",
+    "deployConclusion": "SKIPPED"
+  },
+  "preservedSix": {
+    "branch": "codex/gk80-six-a-isolated",
+    "head": "80f4360435b978d1cfa81088df1414430a88c222",
+    "state": "LOCKED_SEPARATE_FOLLOWUP",
+    "methodAndContentApprovedVersions": 6,
+    "currentPr183Integration": false,
+    "sourceSealsVerified": 20,
+    "writeAuthorizedForCodex2": false,
+    "approvalReference": "integration-receipt.json#/approvedAdditionalInputs",
+    "requiresSeparateFollowupReviewAndRelease": true
+  },
+  "counts": {
+    "denominator": 326,
+    "lastVerifiedProductionNumeric": 156,
+    "productionGapTo261": 105,
+    "productionPercent": 47.85,
+    "distinctArithmeticProposalRecipes": 33,
+    "methodOrContentApprovedVersionsAcrossSeparateBatches": 22,
+    "approvedIntegratedInPr183": 16,
+    "approvedParkedSeparately": 6,
+    "distinctRecipesWithoutApprovedVersion": 11,
+    "knownPreparedFoodSourceHolds": 6,
+    "otherPendingRecipes": 5,
+    "conditionalAfterBothBatchesReleased": 178,
+    "conditionalPercent": 54.6,
+    "conditionalGapTo261": 83,
+    "target80Numeric": 261,
+    "newSourceQualifiedNumericResultsInThisCorrection": 0,
+    "newPublishedResults": 0
+  },
+  "historicalEvent": {
+    "temporaryIntegrationHead": "80f4360435b978d1cfa81088df1414430a88c222",
+    "reversalHead": "d98d77f56c244833320705b32e789ea72e30e58f",
+    "restoredTreeEqualsReviewedHead": "c559be5855b86e4b89b8f780df51a6298612ec6f",
+    "receipt": "integration-receipt.json"
+  },
+  "historicalArtifacts": [
+    "summary.json",
+    "joint-proposal-summary.json",
+    "joint-proposal-index.csv",
+    "joint-method-impact.csv",
+    "upstream-provenance.json",
+    "source-extensions/method.json",
+    "minor-omission-summary.json",
+    "six-a-review-packet.json",
+    "six-a-review.md"
+  ],
+  "historicalArtifactPolicy": "Original facts, approvals, input hashes and calculations remain unchanged. Current fields on frozen artifacts are historical; use this record and current-decision-matrix.csv for live-stage classification.",
+  "researchOnly": {
+    "minorBOmissionProfile": "UNAPPROVED_NOT_ACTIVATED",
+    "peaSoup": "RESEARCH_MODEL_NOT_PUBLICATION_READY",
+    "peaSoupOmittedChoPerServing": 1.9868875,
+    "peaSoupCountedIn33": false,
+    "sixPreparedGiAnalogies": "SOURCE_HOLD_NO_NEW_EQUIVALENCE_EVIDENCE"
+  },
+  "pr182": {
+    "head": "924a827b515f4d4e27d70389837e22f904d38c1f",
+    "state": "SEPARATE_DRAFT_UNMERGED",
+    "changedByCodex2": false,
+    "dependency": "food-records.json whole-file seal and original-result baseline require separate resolution if182 is merged"
+  },
+  "readyAuthorized": false,
+  "mergeAuthorized": false,
+  "deployAuthorized": false,
+  "publicationActivation": false
+}
