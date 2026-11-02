@@ -147,8 +147,8 @@ test("GK values link to centralized recipe details on every published translatio
   const releaseManifest=JSON.parse(await readFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-q09/manifest.json'),'utf8'));
   const releaseIds=new Set<string>(releaseManifest.recipeIds);
   assert.deepEqual(publicAuditResults.filter(result=>result.status==='CALCULATED'&&releaseIds.has(result.recipeId)).map(result=>result.recipeId).sort(),[...releaseIds].sort());
-  assert.equal(publicAuditResults.filter(result=>result.status==='CALCULATED'&&!releaseIds.has(result.recipeId)).length,125,'133 current estimates outside the eight Q09 entries');
-  assert.equal(publicAuditResults.filter(result=>result.status==='CALCULATED').length,133,'two scoped C estimates added to131 published numeric results');
+  assert.equal(publicAuditResults.filter(result=>result.status==='CALCULATED'&&!releaseIds.has(result.recipeId)).length,135,'143 current estimates outside the eight Q09 entries');
+  assert.equal(publicAuditResults.filter(result=>result.status==='CALCULATED').length,143,'ten operation142 estimates added to133 published numeric results');
   const paella = glycemicLoadPilotResults.find((entry) => entry.recipeId === "paella-valenciana");
   assert.equal(paella?.status, "INSUFFICIENT SOURCE DATA", "Paella remains blocked without a suitable chicken-stock GI source");
   assert.equal(paella?.glycemicLoadPerServing, null);

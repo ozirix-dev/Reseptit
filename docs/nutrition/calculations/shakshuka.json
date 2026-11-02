@@ -1,0 +1,790 @@
+{
+  "recipeId": "shakshuka",
+  "sourceHash": "33f1f502631e3658c0443f42923156dedb2f4b5eeefb2ee782266937c9475da9",
+  "calculatedAt": "2026-11-02",
+  "batchId": "batch-142",
+  "servings": 2,
+  "scope": "Operation142 exact weighed version; new independent evidence, not relabelled historical macros. No sides beyond listed ingredients.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "item": "kuoretonta kananmunaa",
+      "amount": 220,
+      "unit": "g",
+      "record": {
+        "id": "op142-fineli-858",
+        "name": "KANANMUNA, KUORETON",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/858",
+        "retrievedAt": "2026-11-02",
+        "licence": "THL Fineli Rel20 CC BY4.0",
+        "state": "RAW",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Frozen Fineli explicitly reported SUGOH; missing stays unknown",
+        "per100g": {
+          "carbohydrate": 0.3,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 12.61,
+          "fat": 9.24
+        },
+        "primaryReference": {
+          "source_id": "858",
+          "name": "KANANMUNA, KUORETON",
+          "food_type": "FOOD",
+          "process": "RAW",
+          "edible_portion_percent": 100,
+          "ingredient_class": "EGG",
+          "food_class": "EGGS",
+          "per100g": {
+            "available_carbohydrate_g_per_100g": 0.3,
+            "fibre_g_per_100g": 0,
+            "polyols_g_per_100g": 0,
+            "protein_g_per_100g": 12.61,
+            "fat_g_per_100g": 9.24
+          },
+          "component_provenance": {
+            "fat_g_per_100g": {
+              "acquisition_type": "D",
+              "method_type": "AG",
+              "method_indicator": "MI1302"
+            },
+            "available_carbohydrate_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "IG",
+              "method_indicator": "MIR003"
+            },
+            "protein_g_per_100g": {
+              "acquisition_type": "D",
+              "method_type": "AG",
+              "method_indicator": "MI0123"
+            },
+            "polyols_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "U",
+              "method_indicator": "MIR007"
+            },
+            "fibre_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "U",
+              "method_indicator": "MIR007"
+            }
+          },
+          "portion_mass_g": {
+            "KPL_M": 55
+          }
+        }
+      },
+      "state": "RAW",
+      "matchEvidence": "Exact edible weighed version, source food/state or disclosed proxy. Missing source values remain null.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible input, no peel/bone conversion.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All listed food and sauce consumed; removed whole spices are explicitly unresolved below."
+    },
+    {
+      "item": "punaista paprikaa",
+      "amount": 120,
+      "unit": "g",
+      "record": {
+        "id": "op142-fineli-386",
+        "name": "PAPRIKA, PUNAINEN",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/386",
+        "retrievedAt": "2026-11-02",
+        "licence": "THL Fineli Rel20 CC BY4.0",
+        "state": "RAW",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Frozen Fineli explicitly reported SUGOH; missing stays unknown",
+        "per100g": {
+          "carbohydrate": 4.5,
+          "fibre": 1.9,
+          "polyols": 0,
+          "protein": 0.94,
+          "fat": 0.3
+        },
+        "primaryReference": {
+          "source_id": "386",
+          "name": "PAPRIKA, PUNAINEN",
+          "food_type": "FOOD",
+          "process": "RAW",
+          "edible_portion_percent": 100,
+          "ingredient_class": "VEGFRU",
+          "food_class": "VEGFRESH",
+          "per100g": {
+            "available_carbohydrate_g_per_100g": 4.5,
+            "fibre_g_per_100g": 1.9,
+            "polyols_g_per_100g": 0,
+            "protein_g_per_100g": 0.94,
+            "fat_g_per_100g": 0.3
+          },
+          "component_provenance": {
+            "fat_g_per_100g": {
+              "acquisition_type": "F",
+              "method_type": "E",
+              "method_indicator": "MIR003"
+            },
+            "available_carbohydrate_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MI0181"
+            },
+            "protein_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MI0123"
+            },
+            "polyols_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MIR006"
+            },
+            "fibre_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MI0172"
+            }
+          },
+          "portion_mass_g": {
+            "KPL_S": 120,
+            "KPL_M": 170,
+            "KPL_L": 230
+          }
+        }
+      },
+      "state": "RAW",
+      "matchEvidence": "Exact edible weighed version, source food/state or disclosed proxy. Missing source values remain null.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible input, no peel/bone conversion.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All listed food and sauce consumed; removed whole spices are explicitly unresolved below."
+    },
+    {
+      "item": "sipulia",
+      "amount": 70,
+      "unit": "g",
+      "record": {
+        "id": "op142-fineli-335",
+        "name": "SIPULI, KELTASIPULI",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/335",
+        "retrievedAt": "2026-11-02",
+        "licence": "THL Fineli Rel20 CC BY4.0",
+        "state": "RAW",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Frozen Fineli explicitly reported SUGOH; missing stays unknown",
+        "per100g": {
+          "carbohydrate": 4.8,
+          "fibre": 1.2,
+          "polyols": 0,
+          "protein": 1.25,
+          "fat": 0.1
+        },
+        "primaryReference": {
+          "source_id": "335",
+          "name": "SIPULI, KELTASIPULI",
+          "food_type": "FOOD",
+          "process": "RAW",
+          "edible_portion_percent": 100,
+          "ingredient_class": "VEGONI",
+          "food_class": "VEGFRESH",
+          "per100g": {
+            "available_carbohydrate_g_per_100g": 4.8,
+            "fibre_g_per_100g": 1.2,
+            "polyols_g_per_100g": 0,
+            "protein_g_per_100g": 1.25,
+            "fat_g_per_100g": 0.1
+          },
+          "component_provenance": {
+            "fat_g_per_100g": {
+              "acquisition_type": "F",
+              "method_type": "E",
+              "method_indicator": "MIR003"
+            },
+            "available_carbohydrate_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MI0181"
+            },
+            "protein_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "T",
+              "method_indicator": "MI0123"
+            },
+            "polyols_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MIR006"
+            },
+            "fibre_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MI0172"
+            }
+          },
+          "portion_mass_g": {
+            "KPL_S": 30,
+            "KPL_M": 55,
+            "KPL_L": 200,
+            "DL": 90
+          }
+        }
+      },
+      "state": "RAW",
+      "matchEvidence": "Exact edible weighed version, source food/state or disclosed proxy. Missing source values remain null.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible input, no peel/bone conversion.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All listed food and sauce consumed; removed whole spices are explicitly unresolved below."
+    },
+    {
+      "item": "tomaattimurskaa",
+      "amount": 200,
+      "unit": "g",
+      "record": {
+        "id": "op142-fineli-398",
+        "name": "TOMAATTIMURSKA",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/398",
+        "retrievedAt": "2026-11-02",
+        "licence": "THL Fineli Rel20 CC BY4.0",
+        "state": "CANN",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Frozen Fineli explicitly reported SUGOH; missing stays unknown",
+        "per100g": {
+          "carbohydrate": 3.45,
+          "fibre": 0.4,
+          "polyols": 0,
+          "protein": 0.55,
+          "fat": 0.2
+        },
+        "primaryReference": {
+          "source_id": "398",
+          "name": "TOMAATTIMURSKA",
+          "food_type": "FOOD",
+          "process": "CANN",
+          "edible_portion_percent": 100,
+          "ingredient_class": "VEGCANN",
+          "food_class": "VEGCANN",
+          "per100g": {
+            "available_carbohydrate_g_per_100g": 3.45,
+            "fibre_g_per_100g": 0.4,
+            "polyols_g_per_100g": 0,
+            "protein_g_per_100g": 0.55,
+            "fat_g_per_100g": 0.2
+          },
+          "component_provenance": {
+            "fat_g_per_100g": {
+              "acquisition_type": "L",
+              "method_type": "P",
+              "method_indicator": "MIR003"
+            },
+            "available_carbohydrate_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MI0181"
+            },
+            "protein_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "T",
+              "method_indicator": "MI0123"
+            },
+            "polyols_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "IG",
+              "method_indicator": "MIR003"
+            },
+            "fibre_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MI0172"
+            }
+          },
+          "portion_mass_g": {
+            "DL": 100,
+            "RKL": 15
+          }
+        }
+      },
+      "state": "CANN",
+      "matchEvidence": "Exact edible weighed version, source food/state or disclosed proxy. Missing source values remain null.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible input, no peel/bone conversion.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All listed food and sauce consumed; removed whole spices are explicitly unresolved below."
+    },
+    {
+      "item": "oliiviöljyä",
+      "amount": 13.5,
+      "unit": "g",
+      "record": {
+        "id": "op142-fineli-536",
+        "name": "OLIIVIÖLJY",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/536",
+        "retrievedAt": "2026-11-02",
+        "licence": "THL Fineli Rel20 CC BY4.0",
+        "state": "IND",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Frozen Fineli explicitly reported SUGOH; missing stays unknown",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 100
+        },
+        "primaryReference": {
+          "source_id": "536",
+          "name": "OLIIVIÖLJY",
+          "food_type": "FOOD",
+          "process": "IND",
+          "edible_portion_percent": 100,
+          "ingredient_class": "OIL",
+          "food_class": "OIL",
+          "per100g": {
+            "available_carbohydrate_g_per_100g": 0,
+            "fibre_g_per_100g": 0,
+            "polyols_g_per_100g": 0,
+            "protein_g_per_100g": 0,
+            "fat_g_per_100g": 100
+          },
+          "component_provenance": {
+            "fat_g_per_100g": {
+              "acquisition_type": "F",
+              "method_type": "E",
+              "method_indicator": "MIR003"
+            },
+            "available_carbohydrate_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "IG",
+              "method_indicator": "MIR003"
+            },
+            "protein_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MI0123"
+            },
+            "polyols_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "U",
+              "method_indicator": "MIR007"
+            },
+            "fibre_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MI0172"
+            }
+          },
+          "portion_mass_g": {
+            "DL": 90,
+            "RKL": 13.5,
+            "TL": 4.5
+          }
+        }
+      },
+      "state": "IND",
+      "matchEvidence": "Exact edible weighed version, source food/state or disclosed proxy. Missing source values remain null.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible input, no peel/bone conversion.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All listed food and sauce consumed; removed whole spices are explicitly unresolved below."
+    },
+    {
+      "item": "juustokuminaa",
+      "amount": 2,
+      "unit": "g",
+      "record": {
+        "id": "op142-unresolved-shakshuka-5",
+        "name": "juustokuminaa",
+        "sourceUrl": "https://fdc.nal.usda.gov/food-details/170923/nutrients",
+        "retrievedAt": "2026-11-02",
+        "licence": "USDA public-domain data or explicitly unresolved source; see Operation142 dossier",
+        "state": "specified ingredient, source incomplete",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "UNKNOWN",
+        "polyolsSourceVerified": false,
+        "per100g": {
+          "carbohydrate": 44.24,
+          "polyols": null,
+          "fibre": 10.5,
+          "protein": 17.81,
+          "fat": 22.27
+        },
+        "primarySource": {
+          "key": "cumin",
+          "fdc_id": "170923",
+          "data_type": "sr_legacy_food",
+          "description": "Spices, cumin seed",
+          "food_category_id": "2",
+          "publication_date": "2019-04-01",
+          "nutrients": {
+            "1003": {
+              "id": "1565769",
+              "fdc_id": "170923",
+              "nutrient_id": "1003",
+              "amount": "17.81",
+              "data_points": "12",
+              "derivation_id": "",
+              "min": "",
+              "max": "",
+              "median": "",
+              "footnote": "",
+              "min_year_acquired": ""
+            },
+            "1004": {
+              "id": "1565785",
+              "fdc_id": "170923",
+              "nutrient_id": "1004",
+              "amount": "22.27",
+              "data_points": "13",
+              "derivation_id": "",
+              "min": "",
+              "max": "",
+              "median": "",
+              "footnote": "",
+              "min_year_acquired": ""
+            },
+            "1005": {
+              "id": "1565786",
+              "fdc_id": "170923",
+              "nutrient_id": "1005",
+              "amount": "44.24",
+              "data_points": "0",
+              "derivation_id": "49",
+              "min": "",
+              "max": "",
+              "median": "",
+              "footnote": "",
+              "min_year_acquired": ""
+            },
+            "1079": {
+              "id": "1565771",
+              "fdc_id": "170923",
+              "nutrient_id": "1079",
+              "amount": "10.5",
+              "data_points": "0",
+              "derivation_id": "",
+              "min": "",
+              "max": "",
+              "median": "",
+              "footnote": "",
+              "min_year_acquired": ""
+            },
+            "2000": {
+              "id": "1565823",
+              "fdc_id": "170923",
+              "nutrient_id": "2000",
+              "amount": "2.25",
+              "data_points": "1",
+              "derivation_id": "1",
+              "min": "",
+              "max": "",
+              "median": "",
+              "footnote": "",
+              "min_year_acquired": ""
+            }
+          },
+          "portions": [
+            {
+              "id": "87544",
+              "fdc_id": "170923",
+              "seq_num": "1",
+              "amount": "1",
+              "measure_unit_id": "9999",
+              "portion_description": "",
+              "modifier": "tsp, whole",
+              "gram_weight": "2.1",
+              "data_points": "",
+              "footnote": "",
+              "min_year_acquired": ""
+            },
+            {
+              "id": "87545",
+              "fdc_id": "170923",
+              "seq_num": "2",
+              "amount": "1",
+              "measure_unit_id": "9999",
+              "portion_description": "",
+              "modifier": "tbsp, whole",
+              "gram_weight": "6",
+              "data_points": "",
+              "footnote": "",
+              "min_year_acquired": ""
+            }
+          ]
+        }
+      },
+      "state": "specified ingredient, source incomplete",
+      "matchEvidence": "Exact edible weighed version, source food/state or disclosed proxy. Missing source values remain null.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible input, no peel/bone conversion.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All listed food and sauce consumed; removed whole spices are explicitly unresolved below."
+    },
+    {
+      "item": "Santa Maria -savupaprikajauhetta",
+      "amount": 1,
+      "unit": "g",
+      "record": {
+        "id": "op142-unresolved-shakshuka-6",
+        "name": "Santa Maria -savupaprikajauhetta",
+        "sourceUrl": "https://www.minimani.fi/santa-maria-paprika-savustettu-37-g.html",
+        "retrievedAt": "2026-11-02",
+        "licence": "USDA public-domain data or explicitly unresolved source; see Operation142 dossier",
+        "state": "specified ingredient, source incomplete",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_TOTAL_INCLUDING_POLYOLS",
+        "polyolsSourceVerified": false,
+        "per100g": {
+          "carbohydrate": 13,
+          "protein": 15,
+          "fat": 17,
+          "fibre": null,
+          "polyols": null
+        },
+        "primarySource": {
+          "id": "santa-maria-smoked-paprika-7311311015243",
+          "name": "Santa Maria smoked paprika37g",
+          "gtin": "7311311015243",
+          "sourceUrl": "https://www.minimani.fi/santa-maria-paprika-savustettu-37-g.html",
+          "retrievedAt": "2026-11-02",
+          "declaredPer100g": {
+            "carbohydrateIncludingPolyols": 13,
+            "protein": 15,
+            "fat": 17,
+            "kcal": 349
+          },
+          "ingredients": "smoked paprika",
+          "fibre": null,
+          "polyols": null,
+          "use": "EU labelled carbohydrate is a nominal upper ceiling for available CHO only. Do not infer zero polyols or totalCHO including fibre."
+        }
+      },
+      "state": "specified ingredient, source incomplete",
+      "matchEvidence": "Exact edible weighed version, source food/state or disclosed proxy. Missing source values remain null.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible input, no peel/bone conversion.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All listed food and sauce consumed; removed whole spices are explicitly unresolved below."
+    },
+    {
+      "item": "jauhettua mustapippuria",
+      "amount": 0.5,
+      "unit": "g",
+      "record": {
+        "id": "op142-fineli-11177",
+        "name": "MUSTAPIPPURI",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11177",
+        "retrievedAt": "2026-11-02",
+        "licence": "THL Fineli Rel20 CC BY4.0",
+        "state": "DRIE",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": false,
+        "polyolsEvidence": "",
+        "per100g": {
+          "carbohydrate": 38.31,
+          "fibre": null,
+          "polyols": null,
+          "protein": 10.9,
+          "fat": 3.3
+        },
+        "primaryReference": {
+          "source_id": "11177",
+          "name": "MUSTAPIPPURI",
+          "food_type": "FOOD",
+          "process": "DRIE",
+          "edible_portion_percent": 100,
+          "ingredient_class": "FLAVSEED",
+          "food_class": "SPICES",
+          "per100g": {
+            "available_carbohydrate_g_per_100g": 38.31,
+            "fibre_g_per_100g": null,
+            "polyols_g_per_100g": null,
+            "protein_g_per_100g": 10.9,
+            "fat_g_per_100g": 3.3
+          },
+          "component_provenance": {
+            "fat_g_per_100g": {
+              "acquisition_type": "F",
+              "method_type": "E",
+              "method_indicator": "MIR003"
+            },
+            "available_carbohydrate_g_per_100g": {
+              "acquisition_type": "F",
+              "method_type": "E",
+              "method_indicator": "MIR003"
+            },
+            "protein_g_per_100g": {
+              "acquisition_type": "F",
+              "method_type": "E",
+              "method_indicator": "MIR003"
+            }
+          },
+          "portion_mass_g": {
+            "RKL": 6.5,
+            "TL": 2
+          }
+        }
+      },
+      "state": "DRIE",
+      "matchEvidence": "Exact edible weighed version, source food/state or disclosed proxy. Missing source values remain null.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible input, no peel/bone conversion.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All listed food and sauce consumed; removed whole spices are explicitly unresolved below."
+    },
+    {
+      "item": "puhtaita kuivattuja chilihiutaleita",
+      "amount": 0.3,
+      "unit": "g",
+      "record": {
+        "id": "op142-unresolved-shakshuka-8",
+        "name": "puhtaita kuivattuja chilihiutaleita",
+        "sourceUrl": "https://github.com/ozirix-dev/Reseptit/pull/170",
+        "retrievedAt": "2026-11-02",
+        "licence": "USDA public-domain data or explicitly unresolved source; see Operation142 dossier",
+        "state": "specified ingredient, source incomplete",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "UNKNOWN",
+        "polyolsSourceVerified": false,
+        "per100g": {
+          "carbohydrate": null,
+          "polyols": null,
+          "fibre": null,
+          "protein": null,
+          "fat": null
+        }
+      },
+      "state": "specified ingredient, source incomplete",
+      "matchEvidence": "Exact edible weighed version, source food/state or disclosed proxy. Missing source values remain null.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible input, no peel/bone conversion.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All listed food and sauce consumed; removed whole spices are explicitly unresolved below."
+    },
+    {
+      "item": "tuoretta persiljaa",
+      "amount": 8,
+      "unit": "g",
+      "record": {
+        "id": "op142-fineli-333",
+        "name": "PERSILJA",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/333",
+        "retrievedAt": "2026-11-02",
+        "licence": "THL Fineli Rel20 CC BY4.0",
+        "state": "RAW",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Frozen Fineli explicitly reported SUGOH; missing stays unknown",
+        "per100g": {
+          "carbohydrate": 1.1,
+          "fibre": 2.9,
+          "polyols": 0,
+          "protein": 1.38,
+          "fat": 0.2
+        },
+        "primaryReference": {
+          "source_id": "333",
+          "name": "PERSILJA",
+          "food_type": "FOOD",
+          "process": "RAW",
+          "edible_portion_percent": 100,
+          "ingredient_class": "VEGLEAF",
+          "food_class": "VEGFRESH",
+          "per100g": {
+            "available_carbohydrate_g_per_100g": 1.1,
+            "fibre_g_per_100g": 2.9,
+            "polyols_g_per_100g": 0,
+            "protein_g_per_100g": 1.38,
+            "fat_g_per_100g": 0.2
+          },
+          "component_provenance": {
+            "fat_g_per_100g": {
+              "acquisition_type": "F",
+              "method_type": "E",
+              "method_indicator": "MIR003"
+            },
+            "available_carbohydrate_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MI0181"
+            },
+            "protein_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "T",
+              "method_indicator": "MI0123"
+            },
+            "polyols_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MIR006"
+            },
+            "fibre_g_per_100g": {
+              "acquisition_type": "S",
+              "method_type": "S",
+              "method_indicator": "MI0172"
+            }
+          },
+          "portion_mass_g": {
+            "RKL": 2
+          }
+        }
+      },
+      "state": "RAW",
+      "matchEvidence": "Exact edible weighed version, source food/state or disclosed proxy. Missing source values remain null.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible input, no peel/bone conversion.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All listed food and sauce consumed; removed whole spices are explicitly unresolved below."
+    },
+    {
+      "item": "suolaa maun mukaan",
+      "amount": null,
+      "unit": "",
+      "record": {
+        "id": "op142-unresolved-shakshuka-10",
+        "name": "suolaa maun mukaan",
+        "sourceUrl": "https://github.com/ozirix-dev/Reseptit/pull/170",
+        "retrievedAt": "2026-11-02",
+        "licence": "USDA public-domain data or explicitly unresolved source; see Operation142 dossier",
+        "state": "specified ingredient, source incomplete",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "UNKNOWN",
+        "polyolsSourceVerified": false,
+        "per100g": {
+          "carbohydrate": null,
+          "polyols": null,
+          "fibre": null,
+          "protein": null,
+          "fat": null
+        }
+      },
+      "state": "specified ingredient, source incomplete",
+      "matchEvidence": "Exact edible weighed version, source food/state or disclosed proxy. Missing source values remain null.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible input, no peel/bone conversion.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All listed food and sauce consumed; removed whole spices are explicitly unresolved below.",
+      "excludedReason": "Pure salt; no macro contribution",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 0,
+        "netCarbohydrate": 0,
+        "totalCarbohydrate": 0,
+        "protein": 0,
+        "fat": 0
+      },
+      "omissionImpactEvidence": "Pure salt contains no macronutrients; salt amount is not fabricated."
+    }
+  ],
+  "publicationStatus": "WITHHELD_SOURCE_INCOMPLETE",
+  "withholdingReason": "AvailableCHO supports the separate GK estimate, but fibre/polyols and/or whole-spice extraction do not support all four macros. All four public values withheld; no zero imputation."
+}

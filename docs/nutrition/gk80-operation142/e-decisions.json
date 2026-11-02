@@ -1,0 +1,36 @@
+{
+  "researchPr": 170,
+  "status": "FIVE_CASES_REVIEWED_NO_AUTOMATIC_ACTIVATION",
+  "decisions": [
+    {
+      "recipeId": "tomaatti-kananmuna-wokki",
+      "decision": "HOLD",
+      "reason": "Source GI68/57 refers to named cooked rice in Venn2014, not a universal rice value.450g cooked rice is not bound to the preparation/yield of generic Fineli1370 A20.618. Fineli30346 long-grain cooked gives23.561, demonstrating composition/yield sensitivity, not an authorised uncertainty interval. Do not replace450g cooked rice with a guessed dry mass.",
+      "requiredEvidenceOrDecision": "A named prepared-rice composition/yield or an explicitly reviewed weighed dry-rice version, then its matched hot-rice GI."
+    },
+    {
+      "recipeId": "pasta-alla-norma",
+      "decision": "HOLD",
+      "reason": "The specific penne GI47/50 measurements are valid human source leads; they are not a pasta-family mean. PR170 changes ricotta salata to Parmesan and uses dry generic composition for a cooked product. The supplement does not identify current DeCecco product number or cooking duration; official current No140 permits9/11min but does not establish the historical measurement protocol. Do not quietly replace the cheese or claim exact product/preparation correspondence.",
+      "requiredEvidenceOrDecision": "Retain ricotta salata or originally allowed pecorino with an exact source; resolve or explicitly owner-review the named penne preparation and dry-composition proxy before a publication binding."
+    },
+    {
+      "recipeId": "carnitas-salaattitacot",
+      "decision": "HOLD",
+      "reason": "Raw navel-orange GI45 does not measure fruit simmered2.5hours with the meat.130g orange A8.9 gives2.8925g availableCHO/serving, above the individual omission threshold. The source gives no justified cooked-orange replacement or response bound.",
+      "requiredEvidenceOrDecision": "A source-supported cooked-fruit application; do not remove the fruit or use raw-orange GI as an automatic dish value."
+    },
+    {
+      "recipeId": "doner-kebab",
+      "decision": "HOLD",
+      "reason": "Supplement row347 GI68 is white mini pita UK2005; current generic pita and warming instructions are not identified as that product/protocol.220g pita A46.08 gives25.344g availableCHO/serving and is a dominant contribution. PR170 additionally replaces unspecified coleslaw with plain cabbage.",
+      "requiredEvidenceOrDecision": "A specific bread/preparation match and an explicit cabbage/salad content decision. No lowCHO assignment, omission or universal pita GI."
+    },
+    {
+      "recipeId": "marokkolainen-couscous",
+      "decision": "HOLD",
+      "reason": "SanRemo hot-water couscous GI65 and Edgell drained-canned chickpea GI35 are specific source results. Current Fineli proxies, reheating chickpeas in stew, whole-stock retention and the proposed replacement of thigh with breast-type chicken strips are separate assumptions. Product pages corroborate identity, not the historical test lot or the changed recipe.",
+      "requiredEvidenceOrDecision": "A fully specified version retaining the original thigh option where appropriate, explicit stock and product/preparation correspondence, then content/proxy review. No chickpea-family mean28."
+    }
+  ]
+}

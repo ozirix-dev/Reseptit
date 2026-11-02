@@ -1,3 +1,4 @@
+import {classifyGk80Source} from "./gk80-source-classification";
 import {applyScopedPolyolC} from './gk80-polyol-c';
 import {applyRecovery} from './gk80-uunikanapasta';
 import {withdrawQ09Tea} from './gk80-q09-withdrawal';
@@ -13,7 +14,7 @@ import {
   type GlycemicIndexRecord,
   type GlycemicLoadRecipeInput,
 } from "./glycemic-load-model";
-import { glycemicLoadEvidenceHash, glycemicLoadInputHash, recipeBindingHash, recipeBindingMatches } from "./glycemic-load-recipe-binding";
+import { glycemicLoadEvidenceHash, glycemicLoadInputHash, recipeBindingHash, recipeBindingMatches, exactRecipeTextBindingMatches } from "./glycemic-load-recipe-binding";
 import { siteContent } from "../src/generated/content.generated";
 import { parseMarkdown } from "../src/content/markdown";
 import { completePublishedRecipeInputs, type PublishedRecipeInputSource } from "./glycemic-load-pilot-input";
@@ -69,6 +70,7 @@ const publishedSourceRows = [...publishedRecipeSources.values()].map((source) =>
 const expectedRecipeIds = [...publishedRecipeSources.keys()].sort((left, right) => left.localeCompare(right));
 const recipeBindings = JSON.parse(await readFile(path.join(root, "docs/nutrition/glycemic-load-recipe-bindings.json"), "utf8")) as {
   baselineCommit: string;
+  exactRecipeText?: Record<string, { sourceSha256: string; locales: Record<string, {path: string; sha256: string}> }>;
   recipes: Record<string, string | null>;
   calculationInputs: Record<string, string | null>;
   calculationEvidence?: Record<string, string | null>;
@@ -104,12 +106,27 @@ const sourceHashes = Object.fromEntries(expectedRecipeIds.map((recipeId) => {
   return [recipeId, recipeBindingHash(source.markdown, recipeAliases.aliases)];
 }));
 
+// Only explicitly bound new versions require whole preparation/translation text.
+const exactTextMismatches = new Set<string>();
+for (const [recipeId, binding] of Object.entries(recipeBindings.exactRecipeText ?? {})) {
+  const source = publishedRecipeSources.get(recipeId);
+  if (!source || !exactRecipeTextBindingMatches(binding.sourceSha256, source.markdown)) exactTextMismatches.add(recipeId);
+  for (const locale of ["en", "sv", "th"]) {
+    const item = binding.locales?.[locale];
+    if (!item || !item.path.startsWith(`kaannokset/${locale}/`) || item.path.includes("..") || path.isAbsolute(item.path)) {
+      exactTextMismatches.add(recipeId); continue;
+    }
+    const text = await readFile(path.join(root, item.path), "utf8").catch((error:NodeJS.ErrnoException) => { if(error.code==="ENOENT")return null;throw error; });
+    if (text === null || !exactRecipeTextBindingMatches(item.sha256, text)) exactTextMismatches.add(recipeId);
+  }
+}
+
 const rawResults = inputs.map((recipe) => calculateGlycemicLoad(recipe, foodRecords, giRecords));
 const calculationInputHashes = Object.fromEntries(inputs.map((recipe) => [recipe.recipeId, glycemicLoadInputHash(recipe)]));
 const calculationEvidenceHashes = Object.fromEntries(inputs.map((recipe) => [recipe.recipeId, glycemicLoadEvidenceHash(recipe, foodRecords, giRecords)]));
 const legacyResults = rawResults.map((result) => {
   const boundHash = recipeBindings.recipes[result.recipeId];
-  const recipeChanged = !recipeBindingMatches(boundHash, sourceHashes[result.recipeId]);
+  const recipeChanged = !recipeBindingMatches(boundHash, sourceHashes[result.recipeId]) || exactTextMismatches.has(result.recipeId);
   const inputChanged = !recipeBindingMatches(recipeBindings.calculationInputs[result.recipeId], calculationInputHashes[result.recipeId]);
   const evidenceChanged = !recipeBindingMatches(recipeBindings.calculationEvidence?.[result.recipeId], calculationEvidenceHashes[result.recipeId]);
   if (recipeChanged || inputChanged || evidenceChanged) {
@@ -127,7 +144,9 @@ const legacyResults = rawResults.map((result) => {
       ],
     };
   }
-  return result;
+  const usesImputation = result.ingredients.some((ingredient) =>
+    giRecords.find((record) => record.id === ingredient.giRecordId)?.evidenceKind === "PUBLISHED_IMPUTATION");
+  return usesImputation ? {...result, assessmentType: "PUBLISHED_IMPUTATION" as const, modelScenario: "POINT_SCENARIO" as const} : result;
 });
 const results = await applyScopedPolyolC(root, await applyRecovery(root, await withdrawQ09Tea(root, await applyGk80Release(root, legacyResults))));
 const report = {
@@ -142,7 +161,7 @@ const report = {
   recipeBindingBaseline: recipeBindings.baselineCommit,
   autoIncludedRecipeIds,
   calculationInputs: inputs,
-  recipeBindingMismatches: expectedRecipeIds.filter((recipeId) => !recipeBindingMatches(recipeBindings.recipes[recipeId], sourceHashes[recipeId])),
+  recipeBindingMismatches: expectedRecipeIds.filter((recipeId) => !recipeBindingMatches(recipeBindings.recipes[recipeId], sourceHashes[recipeId]) || exactTextMismatches.has(recipeId)),
   calculationInputMismatches: expectedRecipeIds.filter((recipeId) => !recipeBindingMatches(recipeBindings.calculationInputs[recipeId], calculationInputHashes[recipeId])),
   calculationEvidenceMismatches: expectedRecipeIds.filter((recipeId) => !recipeBindingMatches(recipeBindings.calculationEvidence?.[recipeId], calculationEvidenceHashes[recipeId])),
   previousPublicBaseline: { sourceCommit: "b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5", calculated: 190, insufficientSourceData: 135, zeroTotals: 21, changedRecipeInputsAmongCalculated: 21 },
@@ -182,7 +201,7 @@ const publicResults = results.flatMap((result) => {
       .map((record) => ({
         title: record.source.title,
         url: record.source.url,
-        matchKind: record.matchKind ?? "EXACT",
+        ...(record.evidenceKind ? classifyGk80Source(record.evidenceKind, (record.matchKind ?? "EXACT") === "EXACT" ? "DIRECT" : "APPLIED") : {matchKind: record.matchKind ?? "EXACT"}),
         confidence: record.confidence ?? (record.qualityTier === "STRONG" ? "HIGH" : "LOW"),
         note: record.note ?? record.source.qualityEvidence,
       }))

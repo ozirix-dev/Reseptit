@@ -7,73 +7,76 @@ language: fi
 status: published
 diet_class: vhh_tiukka
 main_ingredient:
-  - kananmuna
+- kananmuna
 cooking_method:
-  - paistaminen
+- liesi
 ingredients:
-  - amount: 4
-    unit: kpl
-    item: kananmunaa
-  - amount: 1
-    unit: kpl
-    item: punainen paprika
-  - amount: 1
-    unit: kpl
-    item: pieni sipuli
-  - amount: 200
-    unit: g
-    item: tomaattimurskaa
-  - amount: 1
-    unit: rkl
-    item: oliiviöljyä
-  - amount: 1
-    unit: tl
-    item: juustokuminaa
-  - amount: 0.5
-    unit: tl
-    item: savupaprikaa
-  - amount: null
-    unit: ""
-    item: suolaa, mustapippuria ja chilihiutaleita
-  - amount: 2
-    unit: rkl
-    item: silputtua persiljaa
-carbs_net_per_serving_g: 8.9
-carbs_total_per_serving_g: 12.4
-protein_per_serving_g: 15.6
-fat_per_serving_g: 17.5
+- amount: 220
+  unit: g
+  item: kuoretonta kananmunaa
+- amount: 120
+  unit: g
+  item: punaista paprikaa
+- amount: 70
+  unit: g
+  item: sipulia
+- amount: 200
+  unit: g
+  item: tomaattimurskaa
+- amount: 13.5
+  unit: g
+  item: oliiviöljyä
+- amount: 2
+  unit: g
+  item: juustokuminaa
+- amount: 1
+  unit: g
+  item: Santa Maria -savupaprikajauhetta
+- amount: 0.5
+  unit: g
+  item: jauhettua mustapippuria
+- amount: 0.3
+  unit: g
+  item: puhtaita kuivattuja chilihiutaleita
+- amount: 8
+  unit: g
+  item: tuoretta persiljaa
+- amount: null
+  unit: ''
+  item: suolaa maun mukaan
+carbs_net_per_serving_g: null
+carbs_total_per_serving_g: null
+protein_per_serving_g: null
+fat_per_serving_g: null
 servings: 2
 time_total_min: 30
 difficulty: Helppo
 tags:
-  - aamupala
-  - kananmuna
-  - munaruoka
+- aamupala
+- kananmuna
+- munaruoka
 image:
   src: aamupalat/shakshuka.webp
   alt: Munat kypsyvät tomaatti-paprikakastikkeessa pannulla
   width: 1536
   height: 1024
+translation_languages:
+- en
+- sv
+- th
+translation_status:
+  en: published
+  sv: published
+  th: published
 ---
 
 # Shakshuka
 
-## Kuvaus
-
-Shakshukassa kananmunat kypsyvät mausteisessa tomaatti-paprikapannussa. Ruoka tarjoillaan sellaisenaan ilman leipää.
-
-## Ainekset
-
-Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
-
 ## Valmistus
 
-1. Kuullota hienonnettu sipuli öljyssä pannulla. Lisää kuutioitu paprika ja kypsennä pehmeäksi.
-2. Sekoita joukkoon juustokumina, savupaprika ja tomaattimurska. Mausta ja hauduta noin 10 minuuttia, kunnes kastike sakenee.
-3. Tee kastikkeeseen neljä syvennystä ja riko munat niihin.
-4. Peitä pannu ja kypsennä miedolla lämmöllä 5–8 minuuttia, kunnes valkuaiset ovat hyytyneet.
-5. Viimeistele persiljalla ja tarjoa pannusta.
+1. Kuullota 70 g sipulia ja 120 g punaista paprikaa 13,5 g oliiviöljyä. Lisää 200 g tomaattimurskaa, 2 g juustokuminaa, 1 g Santa Maria -savupaprikaa ja 0,3 g puhtaita chilihiutaleita. Hauduta 10 min.
+2. Tee kastikkeeseen syvennykset ja kypsennä 220 g kuoretonta kananmunaa kannen alla. Lisää 8 g persiljaa, 0,5 g mustapippuria ja suola. Jaa koko ruoka kastikkeineen kahteen annokseen.
 
 ## Muistiinpanot
 
-Tomaatti sisältää hiilihydraatteja, joten tämä on VHH-versio eikä tiukka keto-ohje. Säädä chilin määrä oman maun mukaan.
+Punnitse yllä luetellut syötävät ainekset. Kaikki lueteltu ruoka, kastike ja paistorasva kuuluvat annoksiin; erillisiä lisukkeita ei ole laskettu. Ravintoarvot ovat toistaiseksi pois näkyvistä lähdetietojen tarkistuksen vuoksi.

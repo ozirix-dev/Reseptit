@@ -30,6 +30,9 @@ export interface IngredientInput {
 export interface Calculation {
   recipeId: string; sourceHash: string; calculatedAt: string; servings: number; batchId?: string;
   scope: string; reviewerStatus: "AUTOMATED ONLY"; ingredients: IngredientInput[];
+  /** Explicit suppression of all four public macros while source data remain incomplete. */
+  publicationStatus?: "WITHHELD_SOURCE_INCOMPLETE";
+  withholdingReason?: string;
   // Available carbohydrate is normalized to the same basis before aggregation.
   carbohydrateOutput: "AVAILABLE_EXCLUDING_FIBRE";
 }

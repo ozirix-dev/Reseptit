@@ -7,104 +7,83 @@ language: en
 diet_class: vhh_valjempi
 servings: 4
 main_ingredient:
-  - naudanliha
-  - paprika
+- naudanliha
+- paprika
 cooking_method:
-  - uuni
+- uuni
 difficulty: easy
 tags:
-  - low carb
-  - goulash
-  - beef
-  - paprika
-  - casserole dish
+- low carb
+- goulash
+- beef
+- paprika
+- casserole dish
 image:
   src: paaruoat/paprikainen-gulassi.webp
   alt: Peppery beef stew with sour cream and fresh parsley
   width: 1280
   height: 853
 ingredients:
-  - amount: 700
-    unit: g
-    item: raw beef roasting joint, cubed
-    note: about 3 cm cubes
-  - amount: 150
-    unit: g
-    item: onions
-    note: "finely chopped"
-  - amount: 3
-    unit: ""
-    item: garlic clove
-    note: crushed
-  - amount: 1
-    unit: ""
-    item: red pepper
-    note: "diced"
-  - amount: 1
-    unit: ""
-    item: tomato
-    note: "diced"
-  - amount: 1
-    unit: tbsp
-    item: tomato puree
-  - amount: 1.5
-    unit: tbsp
-    item: paprika powder
-    note: preferably smoked paprika or sweet paprika powder
-  - amount: 1.5
-    unit: tbsp
-    item: butter or oil
-    note: for browning meat
-  - amount: 0.5
-    unit: tsp
-    item: cumin
-  - amount: 3
-    unit: dl
-    item: meat broth
-  - amount: 1
-    unit: tsp
-    item: salt
-    note: or to taste
-  - amount: null
-    unit: ""
-    item: black pepper
-    note: to taste
-  - amount: 150
-    unit: g
-    item: "smetana (thick sour cream)"
-    note: to serve
-  - amount: null
-    unit: ""
-    item: parsley
-    note: shredded, if desired
+- amount: 700.0
+  unit: g
+  item: raw beef roasting joint, cubed
+- amount: 150.0
+  unit: g
+  item: onions
+- amount: 9.0
+  unit: g
+  item: garlic clove
+- amount: 160.0
+  unit: g
+  item: red pepper
+- amount: 120.0
+  unit: g
+  item: tomato
+- amount: 15.0
+  unit: g
+  item: tomato puree
+- amount: 9.0
+  unit: g
+  item: paprika powder
+- amount: 21.0
+  unit: g
+  item: butter or oil
+- amount: 1.0
+  unit: g
+  item: cumin
+- amount: 300.0
+  unit: g
+  item: meat broth
+- amount: null
+  unit: ''
+  item: salt
+- amount: 0.5
+  unit: g
+  item: black pepper
+- amount: 150.0
+  unit: g
+  item: smetana (thick sour cream)
+- amount: 10
+  unit: g
+  item: parsley
 status: published
 source_language: fi
 source_recipe: reseptit/paaruoat/paprikainen-vhh-gulassi.md
 translation_of: paprikainen-vhh-gulassi
-carbs_net_per_serving_g: 8.72
-carbs_total_per_serving_g: 11.29
-protein_per_serving_g: 40.59
-fat_per_serving_g: 24.04
-
+carbs_net_per_serving_g: null
+carbs_total_per_serving_g: null
+protein_per_serving_g: null
+fat_per_serving_g: null
 ---
 
 # Paprika Beef Goulash
 
-The long-simmered beef stew gets its flavor from paprika, garlic and soft sour cream.
+## Instructions
 
-## Description
-
-In this goulash, plenty of beef and paprika are stewed without flour. Serve with sour cream and choose, for example, mashed cauliflower or cabbage salad as a side dish.
-
-## Preparation
-
-1. Heat the oven to 160 degrees. Take the meat to room temperature for a while and dry the pieces with paper towels.
-2. Brown the pieces of meat in a pan in small batches of butter or oil. Move aside. Add the onion to the pot and saute until soft. Mix in the garlic and paprika powder.
-3. Add the tomato purée, bell pepper, tomato and cumin. Return the meat to the pot, pour in the beef stock and season with salt and black pepper.
-4. Cover with a lid and simmer in the oven for about 1 hour 45 minutes until the meat is tender. Check the amount of liquid from time to time and add a splash of water if necessary.
-5. Taste and adjust the spices. Serve with sour cream and a low-carb side dish of your choice.
+1. Dice 700 g beef roasting joint, 150 g onion, 9 g garlic, 160 g red pepper and 120 g tomato. Brown the beef and onion in all 21 g butter.
+2. Add the vegetables, 15 g tomato paste, 9 g sweet paprika, 1 g cumin and 300 g ready-to-use beef stock. Simmer covered for 1.5 hours until the beef is tender.
+3. Add 0.5 g black pepper and 10 g parsley. Serve all stew, sauce and fat with 150 g approximately 40%-fat smetana in four portions. Separate sides are excluded.
 
 ## Notes
 
-- The stew is suitable to be served with mashed cauliflower, roasted cabbage or a green salad.
-- The recipe does not contain potatoes or flour. The low-carb classification is wider than in the other two recipes; check the packaging labels of the ingredients and the portion size according to your own diet.
+Weigh the edible ingredients listed above. All listed food, sauce and cooking fat belong to the servings; separate side dishes are excluded. Nutrition values are temporarily withheld pending source verification.

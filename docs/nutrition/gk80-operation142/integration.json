@@ -1,0 +1,2655 @@
+{
+  "schemaVersion": 1,
+  "researchPr": 170,
+  "researchHead": "87c603bfe5ded3b1fe6af1abdaa5b0442ebc5051",
+  "baseMain": "583fdb91aeb12114f909412b9165fc3b02a6515d",
+  "recipes": [
+    {
+      "priorResearchCommit": "87c603bfe5ded3b1fe6af1abdaa5b0442ebc5051",
+      "priorEvidenceBundleSha256": "0a8209a0f4eae01906ea51622ada71d3bb720760a188af8db9066dd75997352b",
+      "originalPublishedPath": "reseptit/paaruoat/ratatouille.md",
+      "originalPublishedSourceLfSha256": "d6eb5c2961ed0bb97327be45a337074ae5479c9f8b39491e5c87380f0313c637",
+      "newInput": {
+        "recipeId": "ratatouille",
+        "servings": 4,
+        "ingredients": [
+          {
+            "name": "munakoisoa",
+            "grams": 300,
+            "fineliRecordId": "op142-fineli-362",
+            "giRecordId": "op142-vegetable-imputation40",
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+            "foodKey": "op142-low-carb-vegetable",
+            "preparationKey": "op142-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI40 for this named chopped nonstarchy vegetable, allium or fresh herb. Explicit current preparation application, not measured ingredient GI or a food-family mean."
+          },
+          {
+            "name": "kesäkurpitsaa",
+            "grams": 400,
+            "fineliRecordId": "op142-fineli-389",
+            "giRecordId": "op142-vegetable-imputation40",
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+            "foodKey": "op142-low-carb-vegetable",
+            "preparationKey": "op142-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI40 for this named chopped nonstarchy vegetable, allium or fresh herb. Explicit current preparation application, not measured ingredient GI or a food-family mean."
+          },
+          {
+            "name": "punaista paprikaa",
+            "grams": 120,
+            "fineliRecordId": "op142-fineli-386",
+            "giRecordId": "op142-vegetable-imputation40",
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+            "foodKey": "op142-low-carb-vegetable",
+            "preparationKey": "op142-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI40 for this named chopped nonstarchy vegetable, allium or fresh herb. Explicit current preparation application, not measured ingredient GI or a food-family mean."
+          },
+          {
+            "name": "sipulia",
+            "grams": 55,
+            "fineliRecordId": "op142-fineli-335",
+            "giRecordId": "op142-vegetable-imputation40",
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+            "foodKey": "op142-low-carb-vegetable",
+            "preparationKey": "op142-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI40 for this named chopped nonstarchy vegetable, allium or fresh herb. Explicit current preparation application, not measured ingredient GI or a food-family mean."
+          },
+          {
+            "name": "tuoretta kuorittua valkosipulia",
+            "grams": 9,
+            "fineliRecordId": "op142-fineli-393",
+            "giRecordId": "op142-vegetable-imputation40",
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+            "foodKey": "op142-low-carb-vegetable",
+            "preparationKey": "op142-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI40 for this named chopped nonstarchy vegetable, allium or fresh herb. Explicit current preparation application, not measured ingredient GI or a food-family mean."
+          },
+          {
+            "name": "tomaattia",
+            "grams": 500,
+            "fineliRecordId": "op142-fineli-352",
+            "giRecordId": "op142-vegetable-imputation40",
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+            "foodKey": "op142-low-carb-vegetable",
+            "preparationKey": "op142-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI40 for this named chopped nonstarchy vegetable, allium or fresh herb. Explicit current preparation application, not measured ingredient GI or a food-family mean."
+          },
+          {
+            "name": "oliiviöljyä",
+            "grams": 54,
+            "fineliRecordId": "op142-fineli-536",
+            "giRecordId": null,
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion."
+          },
+          {
+            "name": "jauhettua kuivattua timjamia",
+            "grams": 2,
+            "fineliRecordId": "op142-fineli-11194",
+            "giRecordId": null,
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+            "giMatchEvidence": "No matching GI; source-known Fineli CHOAVL 0.1347g/serving is counted in cumulative omission; not zero. CHOAVL already excludes polyols."
+          },
+          {
+            "name": "jauhettua mustapippuria",
+            "grams": 0.5,
+            "fineliRecordId": "op142-fineli-11177",
+            "giRecordId": null,
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+            "giMatchEvidence": "No matching GI; source-known Fineli CHOAVL 0.0478875g/serving is counted in cumulative omission; not zero. CHOAVL already excludes polyols."
+          },
+          {
+            "name": "tuoretta basilikaa",
+            "grams": 15,
+            "fineliRecordId": "op142-fineli-11134",
+            "giRecordId": "op142-lowcho50-r4",
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+            "foodKey": "op142-lowcho-code",
+            "preparationKey": "op142-lowcho50-r4",
+            "giMatchEvidence": "Existing project PI50 for this named Fineli profile A1.06g/100g <=5. Not measured food GI or a validated scientific threshold. Exact current juice/egg/herb/stock version and source are bound; no former recipe substitution is inherited."
+          },
+          {
+            "name": "suolaa",
+            "grams": null,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Explicit pure salt",
+            "estimatedAvailableCarbohydratePerServingG": 0,
+            "negligibleAssumption": "Pure salt, no carbohydrate. Unknown salt mass remains null.",
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion."
+          }
+        ]
+      },
+      "culinaryDecision": "Preserve core dish; clarify edible weights and named versions. No owner approval inferred.",
+      "ownerContentApproval": "PENDING_DRAFT_REVIEW",
+      "recipeId": "ratatouille",
+      "sourceLfSha256": "c78885a6141a3db694d57d074f68e3e848b42330192c0f7cbdaa78ea51c639d6",
+      "macroEvidenceSha256": "c4baa7c6c0a0a35d36e5ab3591f72bde8cbeacfd89e5fe15f7fabb243920946e",
+      "macroStatus": "INSUFFICIENT SOURCE DATA",
+      "macroValues": {
+        "carbs_net_per_serving_g": null,
+        "carbs_total_per_serving_g": null,
+        "protein_per_serving_g": null,
+        "fat_per_serving_g": null
+      },
+      "gk": 4.63,
+      "omittedChoPerServingG": 0.1825875,
+      "localeLfSha256": {
+        "en": "e0d99165a3cdd168a368fed847b666a44d4a82c40ea01e3f039fa8224e391490",
+        "sv": "c1972f2cb1100c0e44e74e406b739156709147573814e1b1046177d3aeb00284",
+        "th": "4648570dbe7644197e50445ac28351d9e277a817a83fdf39e641f4117ca37d04"
+      }
+    },
+    {
+      "priorResearchCommit": "87c603bfe5ded3b1fe6af1abdaa5b0442ebc5051",
+      "priorEvidenceBundleSha256": "ad09cbf68b8333f4a57f42c10c91d9c286f503d24f686e0611ef06a9fae10517",
+      "originalPublishedPath": "reseptit/paaruoat/sitruuna-yrttikana-parsa.md",
+      "originalPublishedSourceLfSha256": "e1e4e4e3fc261434816408ee1dfac1fcd085dc696f81a749b244c415782d1688",
+      "newInput": {
+        "recipeId": "sitruuna-yrttikana-parsa",
+        "servings": 4,
+        "ingredients": [
+          {
+            "name": "broilerin rintafileitä",
+            "grams": 600,
+            "fineliRecordId": "op142-fineli-11565",
+            "giRecordId": null,
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion."
+          },
+          {
+            "name": "vihreää parsaa",
+            "grams": 400,
+            "fineliRecordId": "op142-fineli-11689",
+            "giRecordId": "op142-vegetable-imputation40",
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+            "foodKey": "op142-low-carb-vegetable",
+            "preparationKey": "op142-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI40 for this named chopped nonstarchy vegetable, allium or fresh herb. Explicit current preparation application, not measured ingredient GI or a food-family mean."
+          },
+          {
+            "name": "sitruunamehua",
+            "grams": 30,
+            "fineliRecordId": "op142-fineli-11557",
+            "giRecordId": "op142-lowcho50-r4",
+            "foodKey": "op142-lowcho-code",
+            "preparationKey": "op142-lowcho50-r4",
+            "massEvidence": "30g fresh undiluted juice, weighed; not58g whole lemon or1ml=1g conversion.",
+            "giMatchEvidence": "Existing project PI50 for this named Fineli profile A1.6g/100g <=5. Not measured food GI or a validated scientific threshold. Exact current juice/egg/herb/stock version and source are bound; no former recipe substitution is inherited."
+          },
+          {
+            "name": "oliiviöljyä",
+            "grams": 27.4,
+            "fineliRecordId": "op142-fineli-536",
+            "giRecordId": null,
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion."
+          },
+          {
+            "name": "voita",
+            "grams": 30,
+            "fineliRecordId": "op142-fineli-500",
+            "giRecordId": "op142-dairy-imputation30",
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+            "foodKey": "op142-dairy-code",
+            "preparationKey": "op142-dairy-imputation30",
+            "giMatchEvidence": "Existing project PI30 for this named unsweetened animal-dairy profile. Not measured cream, butter, cheese or prepared-meal GI. Exact current weighed version."
+          },
+          {
+            "name": "kuivattua jauhettua timjamia",
+            "grams": 2,
+            "fineliRecordId": "op142-fineli-11194",
+            "giRecordId": null,
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+            "giMatchEvidence": "No matching GI; source-known Fineli CHOAVL 0.1347g/serving is counted in cumulative omission; not zero. CHOAVL already excludes polyols."
+          },
+          {
+            "name": "valkosipulijauhetta, punnittuna3,1g",
+            "grams": 3.1,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Source-backed source-total ceiling under existing GK omission rule.",
+            "availableCarbohydrateUpperBoundPerServingG": 0.5636575,
+            "upperBoundEvidence": "USDA SR Legacy2018 FDC171325 Spices, garlic powder; nutrient1005 totalCHO 72.73g/100g; retained 3.1g/4servings. No fibre/polyol subtraction. Nominal source-model ceiling only; not a clinical or lot maximum.",
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion."
+          },
+          {
+            "name": "jauhettua mustapippuria",
+            "grams": 0.5,
+            "fineliRecordId": "op142-fineli-11177",
+            "giRecordId": null,
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+            "giMatchEvidence": "No matching GI; source-known Fineli CHOAVL 0.0478875g/serving is counted in cumulative omission; not zero. CHOAVL already excludes polyols."
+          },
+          {
+            "name": "hienoksi raastettua sitruunan ulkokuorta",
+            "grams": 2,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Existing source-backed small-portion GK omission; not actual A0.",
+            "availableCarbohydrateUpperBoundPerServingG": 0.08,
+            "upperBoundEvidence": "USDA167749 raw lemon peel totalCHO16g/100g;2g weighed zest, all consumed. Nominal source-model ceiling, no P0 inference."
+          },
+          {
+            "name": "suolaa",
+            "grams": null,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Pure salt",
+            "estimatedAvailableCarbohydratePerServingG": 0,
+            "negligibleAssumption": "Pure salt has no carbohydrate; mass remains unspecified."
+          }
+        ]
+      },
+      "culinaryDecision": "Preserve core dish; clarify edible weights and named versions. No owner approval inferred.",
+      "ownerContentApproval": "PENDING_DRAFT_REVIEW",
+      "previousMacroEvidenceRawSha256": "4f374f89209a91684b9b56830cd4c6a2cffc0f16b3e82218238465630c354259",
+      "recipeId": "sitruuna-yrttikana-parsa",
+      "sourceLfSha256": "2b6dc5d0460e7f4554c436a834e0c96be360998765eb0d18b7a434b8410cec01",
+      "macroEvidenceSha256": "3a75307bb9f7aaa34fdb0f366465e879d10f7400ce63ac1542447ab642ba80ce",
+      "macroStatus": "INSUFFICIENT SOURCE DATA",
+      "macroValues": {
+        "carbs_net_per_serving_g": null,
+        "carbs_total_per_serving_g": null,
+        "protein_per_serving_g": null,
+        "fat_per_serving_g": null
+      },
+      "gk": 0.88,
+      "omittedChoPerServingG": 0.826245,
+      "localeLfSha256": {
+        "en": "1c2bfd42e4a03d03a286b763ad4c257ef599f30871f9673dd704c88a77f12c73",
+        "sv": "581101c129a750522c13e735346f17844ad684c7ad63af1fb16e2bbfa4643433",
+        "th": "9b70ef6ed276200a5679fbd78ef65dee03d9c3ffd5329bcbb6c1da9e6f6be643"
+      }
+    },
+    {
+      "priorResearchCommit": "87c603bfe5ded3b1fe6af1abdaa5b0442ebc5051",
+      "priorEvidenceBundleSha256": "87065019f1a763c59df17f230b8f782464f91127059ca81c104a58f343cd27b7",
+      "originalPublishedPath": "reseptit/paaruoat/menemen.md",
+      "originalPublishedSourceLfSha256": "c3b72091f9b41c99cf63c2a396267e2cba82a7b8c569e6136ab8be11ac5623b9",
+      "newInput": {
+        "recipeId": "menemen",
+        "servings": 3,
+        "ingredients": [
+          {
+            "name": "kuoretonta kananmunaa",
+            "grams": 220,
+            "fineliRecordId": "op142-fineli-858",
+            "giRecordId": "op142-lowcho50-r4",
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+            "foodKey": "op142-lowcho-code",
+            "preparationKey": "op142-lowcho50-r4",
+            "giMatchEvidence": "Existing project PI50 for this named Fineli profile A0.3g/100g <=5. Not measured food GI or a validated scientific threshold. Exact current juice/egg/herb/stock version and source are bound; no former recipe substitution is inherited."
+          },
+          {
+            "name": "tomaattia",
+            "grams": 375,
+            "fineliRecordId": "op142-fineli-352",
+            "giRecordId": "op142-vegetable-imputation40",
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+            "foodKey": "op142-low-carb-vegetable",
+            "preparationKey": "op142-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI40 for this named chopped nonstarchy vegetable, allium or fresh herb. Explicit current preparation application, not measured ingredient GI or a food-family mean."
+          },
+          {
+            "name": "vihreää paprikaa",
+            "grams": 170,
+            "fineliRecordId": "op142-fineli-387",
+            "giRecordId": "op142-vegetable-imputation40",
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+            "foodKey": "op142-low-carb-vegetable",
+            "preparationKey": "op142-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI40 for this named chopped nonstarchy vegetable, allium or fresh herb. Explicit current preparation application, not measured ingredient GI or a food-family mean."
+          },
+          {
+            "name": "sipulia",
+            "grams": 55,
+            "fineliRecordId": "op142-fineli-335",
+            "giRecordId": "op142-vegetable-imputation40",
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+            "foodKey": "op142-low-carb-vegetable",
+            "preparationKey": "op142-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI40 for this named chopped nonstarchy vegetable, allium or fresh herb. Explicit current preparation application, not measured ingredient GI or a food-family mean."
+          },
+          {
+            "name": "oliiviöljyä",
+            "grams": 27,
+            "fineliRecordId": "op142-fineli-536",
+            "giRecordId": null,
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion."
+          },
+          {
+            "name": "paprikajauhetta",
+            "grams": 1,
+            "fineliRecordId": "op142-fineli-11182",
+            "giRecordId": null,
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+            "giMatchEvidence": "No matching GI; source-known Fineli CHOAVL 0.06113333333333333333333333333g/serving is counted in cumulative omission; not zero. CHOAVL already excludes polyols."
+          },
+          {
+            "name": "jauhettua mustapippuria",
+            "grams": 0.5,
+            "fineliRecordId": "op142-fineli-11177",
+            "giRecordId": null,
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+            "giMatchEvidence": "No matching GI; source-known Fineli CHOAVL 0.06385g/serving is counted in cumulative omission; not zero. CHOAVL already excludes polyols."
+          },
+          {
+            "name": "tuoretta persiljaa",
+            "grams": 10,
+            "fineliRecordId": "op142-fineli-333",
+            "giRecordId": "op142-vegetable-imputation40",
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+            "foodKey": "op142-low-carb-vegetable",
+            "preparationKey": "op142-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI40 for this named chopped nonstarchy vegetable, allium or fresh herb. Explicit current preparation application, not measured ingredient GI or a food-family mean."
+          },
+          {
+            "name": "suolaa",
+            "grams": null,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Explicit pure salt",
+            "estimatedAvailableCarbohydratePerServingG": 0,
+            "negligibleAssumption": "Pure salt, no carbohydrate. Unknown salt mass remains null.",
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion."
+          }
+        ]
+      },
+      "culinaryDecision": "Preserve core dish; clarify edible weights and named versions. No owner approval inferred.",
+      "ownerContentApproval": "PENDING_DRAFT_REVIEW",
+      "recipeId": "menemen",
+      "sourceLfSha256": "67939ab72079e12f98fddad6503629e375484f4c7b8437d72c03e29cd7409e56",
+      "macroEvidenceSha256": "554ec104091e3fdc3ac0869fed6d04c50e1ceb79a3d966b9e4f39a2bce85de4e",
+      "macroStatus": "ESTIMATE WITH EVIDENCE",
+      "macroValues": {
+        "carbs_net_per_serving_g": 6.87,
+        "carbs_total_per_serving_g": 8.7,
+        "protein_per_serving_g": 10.74,
+        "fat_per_serving_g": 16.35
+      },
+      "gk": 2.77,
+      "omittedChoPerServingG": 0.12498333333333334,
+      "localeLfSha256": {
+        "en": "39988b3488342d5d53d723ef4338fcda455b015d256b855312fa73e6d41f832a",
+        "sv": "72bde73ddd127bb0327793b3203f7bd83c54142c51cf93898bc9e8194b12a02e",
+        "th": "61b7632b91c1684f9c32d5d3e20c65c19ea4b39737629f6b55b395d8d325add1"
+      }
+    },
+    {
+      "priorResearchCommit": "87c603bfe5ded3b1fe6af1abdaa5b0442ebc5051",
+      "priorEvidenceBundleSha256": "27d1934a26d1839e8616bbad1ff6c8d97bbb06dff4428582ec3323462f3e7274",
+      "originalPublishedPath": "reseptit/aamupalat/shakshuka.md",
+      "originalPublishedSourceLfSha256": "5019bfa878de6b3b11c639f2b06a469a9a07c06d12fc8bc3b075a7f1f5b1755c",
+      "newInput": {
+        "recipeId": "shakshuka",
+        "servings": 2,
+        "ingredients": [
+          {
+            "name": "kuoretonta kananmunaa",
+            "grams": 220,
+            "fineliRecordId": "op142-fineli-858",
+            "giRecordId": "op142-lowcho50-r4",
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+            "foodKey": "op142-lowcho-code",
+            "preparationKey": "op142-lowcho50-r4",
+            "giMatchEvidence": "Existing project PI50 for this named Fineli profile A0.3g/100g <=5. Not measured food GI or a validated scientific threshold. Exact current juice/egg/herb/stock version and source are bound; no former recipe substitution is inherited."
+          },
+          {
+            "name": "punaista paprikaa",
+            "grams": 120,
+            "fineliRecordId": "op142-fineli-386",
+            "giRecordId": "op142-vegetable-imputation40",
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+            "foodKey": "op142-low-carb-vegetable",
+            "preparationKey": "op142-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI40 for this named chopped nonstarchy vegetable, allium or fresh herb. Explicit current preparation application, not measured ingredient GI or a food-family mean."
+          },
+          {
+            "name": "sipulia",
+            "grams": 70,
+            "fineliRecordId": "op142-fineli-335",
+            "giRecordId": "op142-vegetable-imputation40",
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+            "foodKey": "op142-low-carb-vegetable",
+            "preparationKey": "op142-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI40 for this named chopped nonstarchy vegetable, allium or fresh herb. Explicit current preparation application, not measured ingredient GI or a food-family mean."
+          },
+          {
+            "name": "tomaattimurskaa",
+            "grams": 200,
+            "fineliRecordId": "op142-fineli-398",
+            "giRecordId": "op142-vegetable-imputation40",
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+            "foodKey": "op142-low-carb-vegetable",
+            "preparationKey": "op142-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI40 for this named chopped nonstarchy vegetable, allium or fresh herb. Explicit current preparation application, not measured ingredient GI or a food-family mean."
+          },
+          {
+            "name": "oliiviöljyä",
+            "grams": 13.5,
+            "fineliRecordId": "op142-fineli-536",
+            "giRecordId": null,
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion."
+          },
+          {
+            "name": "juustokuminaa",
+            "grams": 2,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Source-backed source-total ceiling under existing GK omission rule.",
+            "availableCarbohydrateUpperBoundPerServingG": 0.4424,
+            "upperBoundEvidence": "USDA SR Legacy2018 FDC170923 Spices, cumin seed; nutrient1005 totalCHO 44.24g/100g; retained 2g/2servings. No fibre/polyol subtraction. Nominal source-model ceiling only; not a clinical or lot maximum.",
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion."
+          },
+          {
+            "name": "Santa Maria -savupaprikajauhetta",
+            "grams": 1,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Existing source-backed small-portion GK omission; not actual A0.",
+            "availableCarbohydrateUpperBoundPerServingG": 0.065,
+            "upperBoundEvidence": "Santa Maria smoked paprika GTIN7311311015243, retailer label13g EU carbohydrate/100g including polyols; no fibre subtraction or assumed P0. Source: https://www.minimani.fi/santa-maria-paprika-savustettu-37-g.html"
+          },
+          {
+            "name": "jauhettua mustapippuria",
+            "grams": 0.5,
+            "fineliRecordId": "op142-fineli-11177",
+            "giRecordId": null,
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+            "giMatchEvidence": "No matching GI; source-known Fineli CHOAVL 0.095775g/serving is counted in cumulative omission; not zero. CHOAVL already excludes polyols."
+          },
+          {
+            "name": "puhtaita kuivattuja chilihiutaleita",
+            "grams": 0.3,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Existing source-backed small-portion GK omission; not actual A0.",
+            "availableCarbohydrateUpperBoundPerServingG": 0.15,
+            "upperBoundEvidence": "Exact weighed0.3g pure dried chilli flakes: available carbohydrate cannot exceed the entire edible input mass. All flakes eaten. Physical mass ceiling, not an actual nutrient estimate or a GI100 assumption."
+          },
+          {
+            "name": "tuoretta persiljaa",
+            "grams": 8,
+            "fineliRecordId": "op142-fineli-333",
+            "giRecordId": "op142-vegetable-imputation40",
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+            "foodKey": "op142-low-carb-vegetable",
+            "preparationKey": "op142-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI40 for this named chopped nonstarchy vegetable, allium or fresh herb. Explicit current preparation application, not measured ingredient GI or a food-family mean."
+          },
+          {
+            "name": "suolaa",
+            "grams": null,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Explicit pure salt",
+            "estimatedAvailableCarbohydratePerServingG": 0,
+            "negligibleAssumption": "Pure salt, no carbohydrate. Unknown salt mass remains null.",
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion."
+          }
+        ]
+      },
+      "culinaryDecision": "Preserve core dish; clarify edible weights and named versions. No owner approval inferred.",
+      "ownerContentApproval": "PENDING_DRAFT_REVIEW",
+      "recipeId": "shakshuka",
+      "sourceLfSha256": "3bfa2b35018e600f4afbd379083000e8434917e6dd470743966638310cd2bfe5",
+      "macroEvidenceSha256": "095f7775fd6eb0f85e1d1c0ebe2ec90446b060a721939c910979faafd956e354",
+      "macroStatus": "INSUFFICIENT SOURCE DATA",
+      "macroValues": {
+        "carbs_net_per_serving_g": null,
+        "carbs_total_per_serving_g": null,
+        "protein_per_serving_g": null,
+        "fat_per_serving_g": null
+      },
+      "gk": 3.31,
+      "omittedChoPerServingG": 0.753175,
+      "localeLfSha256": {
+        "en": "dfc43f2e5dd3e34448c326af13c047828a30887dbd4c0d2298cf4de0516ac45d",
+        "sv": "8b1712486c32e64a901bfc6d2f5cedca86e03ad63ea3cab1df7ce1675c47ab80",
+        "th": "fb8237bbebb464d975b1795e759240c5caee3c7cdf49637aa16f34a3cf4a4b5b"
+      }
+    },
+    {
+      "priorResearchCommit": "87c603bfe5ded3b1fe6af1abdaa5b0442ebc5051",
+      "priorEvidenceBundleSha256": "324fffd48b3c7c7b3505d82f79539accb08aa3e4942898d62cdef58962555a74",
+      "originalPublishedPath": "reseptit/aamupalat/munatacot-huevos-rancheros.md",
+      "originalPublishedSourceLfSha256": "079fec7114ae9e414a85de9e2781ebc89d43e809169d90926667fd1168c3c40f",
+      "newInput": {
+        "recipeId": "munatacot-huevos-rancheros",
+        "servings": 2,
+        "ingredients": [
+          {
+            "name": "kuoretonta kananmunaa",
+            "grams": 220,
+            "fineliRecordId": "op142-fineli-858",
+            "giRecordId": "op142-lowcho50-r6-r11",
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+            "foodKey": "op142-lowcho-code",
+            "preparationKey": "op142-lowcho50-r6-r11",
+            "giMatchEvidence": "Existing project PI50 for this named Fineli profile A0.3g/100g <=5. Not measured food GI or a validated scientific threshold. Exact current juice/egg/herb/stock version and source are bound; no former recipe substitution is inherited."
+          },
+          {
+            "name": "voita",
+            "grams": 14,
+            "fineliRecordId": "op142-fineli-500",
+            "giRecordId": "op142-dairy-imputation30-r11",
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+            "foodKey": "op142-dairy-code",
+            "preparationKey": "op142-dairy-imputation30-r11",
+            "giMatchEvidence": "Existing project PI30 for this named unsweetened animal-dairy profile. Not measured cream, butter, cheese or prepared-meal GI. Exact current weighed version."
+          },
+          {
+            "name": "tomaattimurskaa",
+            "grams": 150,
+            "fineliRecordId": "op142-fineli-398",
+            "giRecordId": "op142-vegetable-imputation40-r11",
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+            "foodKey": "op142-low-carb-vegetable",
+            "preparationKey": "op142-vegetable-imputation40-r11",
+            "giMatchEvidence": "Existing project PI40 for this named chopped nonstarchy vegetable, allium or fresh herb. Explicit current preparation application, not measured ingredient GI or a food-family mean."
+          },
+          {
+            "name": "punasipulia",
+            "grams": 27.5,
+            "fineliRecordId": "op142-fineli-34234",
+            "giRecordId": "op142-vegetable-imputation40-r11",
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+            "foodKey": "op142-low-carb-vegetable",
+            "preparationKey": "op142-vegetable-imputation40-r11",
+            "giMatchEvidence": "Existing project PI40 for this named chopped nonstarchy vegetable, allium or fresh herb. Explicit current preparation application, not measured ingredient GI or a food-family mean."
+          },
+          {
+            "name": "kuorittua ja kivetöntä avokadoa",
+            "grams": 120,
+            "fineliRecordId": "op142-fineli-11057",
+            "giRecordId": "op142-lowcho50-r6-r11",
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+            "foodKey": "op142-lowcho-code",
+            "preparationKey": "op142-lowcho50-r6-r11",
+            "giMatchEvidence": "Existing project PI50 for this named Fineli profile A0.77g/100g <=5. Not measured food GI or a validated scientific threshold. Exact current juice/egg/herb/stock version and source are bound; no former recipe substitution is inherited."
+          },
+          {
+            "name": "cheddarjuustoa",
+            "grams": 40,
+            "fineliRecordId": "op142-fineli-698",
+            "giRecordId": "op142-dairy-imputation30-r11",
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+            "foodKey": "op142-dairy-code",
+            "preparationKey": "op142-dairy-imputation30-r11",
+            "giMatchEvidence": "Existing project PI30 for this named unsweetened animal-dairy profile. Not measured cream, butter, cheese or prepared-meal GI. Exact current weighed version."
+          },
+          {
+            "name": "Santa Maria -savupaprikajauhetta",
+            "grams": 2,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Existing source-backed small-portion GK omission; not actual A0.",
+            "availableCarbohydrateUpperBoundPerServingG": 0.13,
+            "upperBoundEvidence": "Santa Maria smoked paprika GTIN7311311015243, retailer label13g EU carbohydrate/100g including polyols; no fibre subtraction or assumed P0. Source: https://www.minimani.fi/santa-maria-paprika-savustettu-37-g.html"
+          },
+          {
+            "name": "jauhettua juustokuminaa",
+            "grams": 1,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Source-backed source-total ceiling under existing GK omission rule.",
+            "availableCarbohydrateUpperBoundPerServingG": 0.2212,
+            "upperBoundEvidence": "USDA SR Legacy2018 FDC170923 Spices, cumin seed; nutrient1005 totalCHO 44.24g/100g; retained 1g/2servings. No fibre/polyol subtraction. Nominal source-model ceiling only; not a clinical or lot maximum.",
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion."
+          },
+          {
+            "name": "suolaa maun mukaan",
+            "grams": null,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Explicit pure salt",
+            "estimatedAvailableCarbohydratePerServingG": 0,
+            "negligibleAssumption": "Pure salt, no carbohydrate. Unknown salt mass remains null.",
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion."
+          },
+          {
+            "name": "jauhettua mustapippuria",
+            "grams": 0.5,
+            "fineliRecordId": "op142-fineli-11177",
+            "giRecordId": null,
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+            "giMatchEvidence": "No matching GI; source-known Fineli CHOAVL 0.095775g/serving is counted in cumulative omission; not zero. CHOAVL already excludes polyols."
+          },
+          {
+            "name": "tuoretta korianteria",
+            "grams": 10,
+            "fineliRecordId": "op142-fineli-34238",
+            "giRecordId": "op142-vegetable-imputation40-r11",
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+            "foodKey": "op142-low-carb-vegetable",
+            "preparationKey": "op142-vegetable-imputation40-r11",
+            "giMatchEvidence": "Existing project PI40 for this named chopped nonstarchy vegetable, allium or fresh herb. Explicit current preparation application, not measured ingredient GI or a food-family mean."
+          }
+        ]
+      },
+      "culinaryDecision": "Preserve core dish; clarify edible weights and named versions. No owner approval inferred.",
+      "ownerContentApproval": "PENDING_DRAFT_REVIEW",
+      "recipeId": "munatacot-huevos-rancheros",
+      "sourceLfSha256": "153f1a6aa6715555a6ff77d5452a71c93a7e20b65f73e75503d59d02600d85ae",
+      "macroEvidenceSha256": "e12c8b1a5367d08df81e79e15d5a6ba58fe15004cb90725c1119e97a0e32c206",
+      "macroStatus": "INSUFFICIENT SOURCE DATA",
+      "macroValues": {
+        "carbs_net_per_serving_g": null,
+        "carbs_total_per_serving_g": null,
+        "protein_per_serving_g": null,
+        "fat_per_serving_g": null
+      },
+      "gk": 1.76,
+      "omittedChoPerServingG": 0.446975,
+      "localeLfSha256": {
+        "en": "5f398d2a2c77d46646fbfc5f5ad2613c80be73917dde989d69e6a35db83b9366",
+        "sv": "674ce7782c3b47e0efafb4e4eede3114a0bb157462a55b44563e686637a52534",
+        "th": "7dc8e0a2030d0b46c8d23c08be049510c9c7e34408fa36b28e4074fd1681f373"
+      }
+    },
+    {
+      "priorResearchCommit": "87c603bfe5ded3b1fe6af1abdaa5b0442ebc5051",
+      "priorEvidenceBundleSha256": "bec907a98778eba8d56c13ce8e455fcd6fd9bbd593c4f82ab6a73b7c2645d351",
+      "originalPublishedPath": "reseptit/paaruoat/paprikainen-vhh-gulassi.md",
+      "originalPublishedSourceLfSha256": "0c9af581ee1838efba58eb62b2ef8ac3d5b84e792bc4668c5fe27b02c4b50c6c",
+      "newInput": {
+        "recipeId": "paprikainen-vhh-gulassi",
+        "servings": 4,
+        "ingredients": [
+          {
+            "name": "naudan paistia",
+            "grams": 700,
+            "fineliRecordId": "op142-fineli-718",
+            "giRecordId": null,
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion."
+          },
+          {
+            "name": "sipulia",
+            "grams": 150,
+            "fineliRecordId": "op142-fineli-335",
+            "giRecordId": "op142-vegetable-imputation40-r11",
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+            "foodKey": "op142-low-carb-vegetable",
+            "preparationKey": "op142-vegetable-imputation40-r11",
+            "giMatchEvidence": "Existing project PI40 for this named chopped nonstarchy vegetable, allium or fresh herb. Explicit current preparation application, not measured ingredient GI or a food-family mean."
+          },
+          {
+            "name": "valkosipulinkynttä",
+            "grams": 9,
+            "fineliRecordId": "op142-fineli-393",
+            "giRecordId": "op142-vegetable-imputation40-r11",
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+            "foodKey": "op142-low-carb-vegetable",
+            "preparationKey": "op142-vegetable-imputation40-r11",
+            "giMatchEvidence": "Existing project PI40 for this named chopped nonstarchy vegetable, allium or fresh herb. Explicit current preparation application, not measured ingredient GI or a food-family mean."
+          },
+          {
+            "name": "punaista paprikaa",
+            "grams": 160,
+            "fineliRecordId": "op142-fineli-386",
+            "giRecordId": "op142-vegetable-imputation40-r11",
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+            "foodKey": "op142-low-carb-vegetable",
+            "preparationKey": "op142-vegetable-imputation40-r11",
+            "giMatchEvidence": "Existing project PI40 for this named chopped nonstarchy vegetable, allium or fresh herb. Explicit current preparation application, not measured ingredient GI or a food-family mean."
+          },
+          {
+            "name": "tomaatti",
+            "grams": 120,
+            "fineliRecordId": "op142-fineli-352",
+            "giRecordId": "op142-vegetable-imputation40-r11",
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+            "foodKey": "op142-low-carb-vegetable",
+            "preparationKey": "op142-vegetable-imputation40-r11",
+            "giMatchEvidence": "Existing project PI40 for this named chopped nonstarchy vegetable, allium or fresh herb. Explicit current preparation application, not measured ingredient GI or a food-family mean."
+          },
+          {
+            "name": "tomaattipyreetä",
+            "grams": 15,
+            "fineliRecordId": "op142-fineli-354",
+            "giRecordId": "op142-vegetable-imputation40-r11",
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+            "foodKey": "op142-low-carb-vegetable",
+            "preparationKey": "op142-vegetable-imputation40-r11",
+            "giMatchEvidence": "Existing project PI40 for this named chopped nonstarchy vegetable, allium or fresh herb. Explicit current preparation application, not measured ingredient GI or a food-family mean."
+          },
+          {
+            "name": "paprikajauhetta",
+            "grams": 9,
+            "fineliRecordId": "op142-fineli-11182",
+            "giRecordId": null,
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+            "giMatchEvidence": "No matching GI; source-known Fineli CHOAVL 0.41265g/serving is counted in cumulative omission; not zero. CHOAVL already excludes polyols."
+          },
+          {
+            "name": "voita",
+            "grams": 21,
+            "fineliRecordId": "op142-fineli-500",
+            "giRecordId": "op142-dairy-imputation30-r11",
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+            "foodKey": "op142-dairy-code",
+            "preparationKey": "op142-dairy-imputation30-r11",
+            "giMatchEvidence": "Existing project PI30 for this named unsweetened animal-dairy profile. Not measured cream, butter, cheese or prepared-meal GI. Exact current weighed version."
+          },
+          {
+            "name": "juustokuminaa",
+            "grams": 1,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Source-backed source-total ceiling under existing GK omission rule.",
+            "availableCarbohydrateUpperBoundPerServingG": 0.1106,
+            "upperBoundEvidence": "USDA SR Legacy2018 FDC170923 Spices, cumin seed; nutrient1005 totalCHO 44.24g/100g; retained 1.0g/4servings. No fibre/polyol subtraction. Nominal source-model ceiling only; not a clinical or lot maximum.",
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion."
+          },
+          {
+            "name": "lihalientä",
+            "grams": 300,
+            "fineliRecordId": "op142-fineli-29",
+            "giRecordId": "op142-lowcho50-r6-r11",
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+            "foodKey": "op142-lowcho-code",
+            "preparationKey": "op142-lowcho50-r6-r11",
+            "giMatchEvidence": "Existing project PI50 for this named Fineli profile A3.0g/100g <=5. Not measured food GI or a validated scientific threshold. Exact current juice/egg/herb/stock version and source are bound; no former recipe substitution is inherited."
+          },
+          {
+            "name": "suolaa maun mukaan",
+            "grams": null,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Explicit pure salt",
+            "estimatedAvailableCarbohydratePerServingG": 0,
+            "negligibleAssumption": "Pure salt, no carbohydrate. Unknown salt mass remains null.",
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion."
+          },
+          {
+            "name": "mustapippuria",
+            "grams": 0.5,
+            "fineliRecordId": "op142-fineli-11177",
+            "giRecordId": null,
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+            "giMatchEvidence": "No matching GI; source-known Fineli CHOAVL 0.0478875g/serving is counted in cumulative omission; not zero. CHOAVL already excludes polyols."
+          },
+          {
+            "name": "smetanaa",
+            "grams": 150,
+            "fineliRecordId": "op142-fineli-630",
+            "giRecordId": "op142-dairy-imputation30-r11",
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+            "foodKey": "op142-dairy-code",
+            "preparationKey": "op142-dairy-imputation30-r11",
+            "giMatchEvidence": "Existing project PI30 for this named unsweetened animal-dairy profile. Not measured cream, butter, cheese or prepared-meal GI. Exact current weighed version."
+          },
+          {
+            "name": "persiljaa",
+            "grams": 10,
+            "fineliRecordId": "op142-fineli-333",
+            "giRecordId": "op142-vegetable-imputation40-r11",
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+            "foodKey": "op142-low-carb-vegetable",
+            "preparationKey": "op142-vegetable-imputation40-r11",
+            "giMatchEvidence": "Existing project PI40 for this named chopped nonstarchy vegetable, allium or fresh herb. Explicit current preparation application, not measured ingredient GI or a food-family mean."
+          }
+        ]
+      },
+      "culinaryDecision": "Preserve core dish; clarify edible weights and named versions. No owner approval inferred.",
+      "ownerContentApproval": "PENDING_DRAFT_REVIEW",
+      "previousMacroEvidenceRawSha256": "90fa213ad6d4252214c3380bf2d7140159ff439711df9afd4666f827caa523d6",
+      "recipeId": "paprikainen-vhh-gulassi",
+      "sourceLfSha256": "2212c9040c1f363c2fa0f7e074f6027bf66843b329efb9276de6605ae86b4916",
+      "macroEvidenceSha256": "e1c794ae7682e0dafe94a6d52553f8392df4db9e2a550450d6a7f740e3802560",
+      "macroStatus": "INSUFFICIENT SOURCE DATA",
+      "macroValues": {
+        "carbs_net_per_serving_g": null,
+        "carbs_total_per_serving_g": null,
+        "protein_per_serving_g": null,
+        "fat_per_serving_g": null
+      },
+      "gk": 3.52,
+      "omittedChoPerServingG": 0.5711375,
+      "localeLfSha256": {
+        "en": "622de65d15b826acc6402e76d6cc8bdf5cfc9269bd5d186b28c84c1d0509941f",
+        "sv": "dd770530a05a79cff7137457bfb7a4200b9d4580beb13c9ad270348f8171847c",
+        "th": "3f2d4c98789f9b5c77b7e9cb388dcfd6380c1baa8279d269a2da1297aca717eb"
+      }
+    },
+    {
+      "priorResearchCommit": "87c603bfe5ded3b1fe6af1abdaa5b0442ebc5051",
+      "priorEvidenceBundleSha256": "f86996740188a1615cb70b991209daf6c95609f36ea5fa386a1a0589e5f41650",
+      "originalPublishedPath": "reseptit/alkuruoat/caponata.md",
+      "originalPublishedSourceLfSha256": "3e9e33e0ab6607e44603534b5fbb7e81f2d0117ca190b7699bd01d11472471d0",
+      "newInput": {
+        "recipeId": "caponata",
+        "servings": 4,
+        "ingredients": [
+          {
+            "name": "munakoisoa",
+            "grams": 800,
+            "fineliRecordId": "op142-fineli-362",
+            "giRecordId": "op142-vegetable-imputation40",
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+            "foodKey": "op142-low-carb-vegetable",
+            "preparationKey": "op142-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI40 for this named chopped nonstarchy vegetable, allium or fresh herb. Explicit current preparation application, not measured ingredient GI or a food-family mean."
+          },
+          {
+            "name": "oliiviöljyä",
+            "grams": 27,
+            "fineliRecordId": "op142-fineli-536",
+            "giRecordId": null,
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion."
+          },
+          {
+            "name": "sipuli",
+            "grams": 55,
+            "fineliRecordId": "op142-fineli-335",
+            "giRecordId": "op142-vegetable-imputation40",
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+            "foodKey": "op142-low-carb-vegetable",
+            "preparationKey": "op142-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI40 for this named chopped nonstarchy vegetable, allium or fresh herb. Explicit current preparation application, not measured ingredient GI or a food-family mean."
+          },
+          {
+            "name": "sellerinvartta",
+            "grams": 80,
+            "fineliRecordId": "op142-fineli-339",
+            "giRecordId": "op142-vegetable-imputation40",
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+            "foodKey": "op142-low-carb-vegetable",
+            "preparationKey": "op142-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI40 for this named chopped nonstarchy vegetable, allium or fresh herb. Explicit current preparation application, not measured ingredient GI or a food-family mean."
+          },
+          {
+            "name": "tomaattimurskaa",
+            "grams": 400,
+            "fineliRecordId": "op142-fineli-398",
+            "giRecordId": "op142-vegetable-imputation40",
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+            "foodKey": "op142-low-carb-vegetable",
+            "preparationKey": "op142-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI40 for this named chopped nonstarchy vegetable, allium or fresh herb. Explicit current preparation application, not measured ingredient GI or a food-family mean."
+          },
+          {
+            "name": "vihreitä oliiveja",
+            "grams": 80,
+            "fineliRecordId": "op142-fineli-28938",
+            "giRecordId": null,
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion."
+          },
+          {
+            "name": "kapriksia",
+            "grams": 9,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Source-backed source-total ceiling under existing GK omission rule.",
+            "availableCarbohydrateUpperBoundPerServingG": 0.110025,
+            "upperBoundEvidence": "USDA SR Legacy2018 FDC172238 Capers, canned; nutrient1005 totalCHO 4.89g/100g; retained 9g/4servings. No fibre/polyol subtraction. Nominal source-model ceiling only; not a clinical or lot maximum.",
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion."
+          },
+          {
+            "name": "punaviinietikkaa",
+            "grams": 30,
+            "fineliRecordId": "op142-fineli-929",
+            "giRecordId": "op142-lowcho50-v2",
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+            "foodKey": "op142-lowcho-code",
+            "preparationKey": "op142-lowcho50-v2",
+            "giMatchEvidence": "Existing project PI50 for this named Fineli profile A0.5g/100g <=5. Not measured food GI or a validated scientific threshold. Exact current juice/egg/herb/stock version and source are bound; no former recipe substitution is inherited."
+          },
+          {
+            "name": "sokeria",
+            "grams": 12.5,
+            "fineliRecordId": "op142-fineli-1",
+            "giRecordId": "op142-sucrose60",
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+            "foodKey": "op142-sucrose",
+            "preparationKey": "op142-sucrose60",
+            "giMatchEvidence": "Named LoGiCane sucrose human GI60, European cohort Venn2014; explicit ordinary-sucrose ingredient analogue in cooked caponata, not a measured meal or uncertainty interval."
+          },
+          {
+            "name": "suolaa",
+            "grams": 6.5,
+            "fineliRecordId": "op142-fineli-30",
+            "giRecordId": null,
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion."
+          },
+          {
+            "name": "tuoretta basilikaa",
+            "grams": 15,
+            "fineliRecordId": "op142-fineli-11134",
+            "giRecordId": "op142-lowcho50-v2",
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+            "foodKey": "op142-lowcho-code",
+            "preparationKey": "op142-lowcho50-v2",
+            "giMatchEvidence": "Existing project PI50 for this named Fineli profile A1.06g/100g <=5. Not measured food GI or a validated scientific threshold. Exact current juice/egg/herb/stock version and source are bound; no former recipe substitution is inherited."
+          }
+        ]
+      },
+      "culinaryDecision": "Preserve core dish; clarify edible weights and named versions. No owner approval inferred.",
+      "ownerContentApproval": "PENDING_DRAFT_REVIEW",
+      "previousMacroEvidenceRawSha256": "66ddbdc116b3fc864cb3f2dbfbd8611e924d0e4c56189ac63c0c9c48706285bd",
+      "recipeId": "caponata",
+      "sourceLfSha256": "5cc5ab9dd373ffd979973441ec2cdf1d64d57a87a783f0140eabdb4694c3dfda",
+      "macroEvidenceSha256": "c96f69063cf0182090f8ed4b71ea623fce3172386a093bd9d160fdc3fc6d5028",
+      "macroStatus": "INSUFFICIENT SOURCE DATA",
+      "macroValues": {
+        "carbs_net_per_serving_g": null,
+        "carbs_total_per_serving_g": null,
+        "protein_per_serving_g": null,
+        "fat_per_serving_g": null
+      },
+      "gk": 6.12,
+      "omittedChoPerServingG": 0.110025,
+      "localeLfSha256": {
+        "en": "4b53686acfd6db4af33181952d9f434114269678acfd5006f5480ebe83b62de7",
+        "sv": "2cf9d9e8914f3ab3b9a8c27de1a85b5aaa417a5106442bc9d8d9722825b80d42",
+        "th": "a5484c017fa540ed7a448822815cea9f51193defb3352db95b8ff58ac7005f14"
+      }
+    },
+    {
+      "priorResearchCommit": "87c603bfe5ded3b1fe6af1abdaa5b0442ebc5051",
+      "priorEvidenceBundleSha256": "2f6e63c31ff798e07903253ce18c386c3ef1ab02c88277c3454025282db1e4b2",
+      "originalPublishedPath": "reseptit/paaruoat/janssoninkiusaus-juuriselleri.md",
+      "originalPublishedSourceLfSha256": "df27d4740a241dae876d78efb121cdde952881b83e2079e78e46bbcc9fc99870",
+      "newInput": {
+        "recipeId": "janssoninkiusaus-juuriselleri",
+        "servings": 4,
+        "ingredients": [
+          {
+            "name": "juuriselleriä",
+            "grams": 700,
+            "fineliRecordId": "op142-fineli-311",
+            "giRecordId": "op142-vegetable-imputation40",
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+            "foodKey": "op142-low-carb-vegetable",
+            "preparationKey": "op142-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI40 for this named chopped nonstarchy vegetable, allium or fresh herb. Explicit current preparation application, not measured ingredient GI or a food-family mean."
+          },
+          {
+            "name": "öljyyn säilöttyjä anjovisfileitä, valutettuna",
+            "grams": 125,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Source-backed source-total ceiling under existing GK omission rule.",
+            "estimatedAvailableCarbohydratePerServingG": 0,
+            "negligibleAssumption": "USDA SR Legacy2018 FDC174183 Fish, anchovy, european, canned in oil, drained solids; nutrient1005 totalCHO 0g/100g; retained 125g/4servings. No fibre/polyol subtraction. Nominal source-model ceiling only; not a clinical or lot maximum. Source total0 implies source-model availableCHO0; no aggregate polyol zero is fabricated.",
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion."
+          },
+          {
+            "name": "sipuli",
+            "grams": 55,
+            "fineliRecordId": "op142-fineli-335",
+            "giRecordId": "op142-vegetable-imputation40",
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+            "foodKey": "op142-low-carb-vegetable",
+            "preparationKey": "op142-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI40 for this named chopped nonstarchy vegetable, allium or fresh herb. Explicit current preparation application, not measured ingredient GI or a food-family mean."
+          },
+          {
+            "name": "kuohukermaa, rasvaa 38 %",
+            "grams": 250,
+            "fineliRecordId": "op142-fineli-631",
+            "giRecordId": "op142-dairy-imputation30",
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+            "foodKey": "op142-dairy-code",
+            "preparationKey": "op142-dairy-imputation30",
+            "giMatchEvidence": "Existing project PI30 for this named unsweetened animal-dairy profile. Not measured cream, butter, cheese or prepared-meal GI. Exact current weighed version."
+          },
+          {
+            "name": "täysmaitoa, rasvaa 3,5 %",
+            "grams": 100,
+            "fineliRecordId": "op142-fineli-689",
+            "giRecordId": "op142-dairy-imputation30",
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+            "foodKey": "op142-dairy-code",
+            "preparationKey": "op142-dairy-imputation30",
+            "giMatchEvidence": "Existing project PI30 for this named unsweetened animal-dairy profile. Not measured cream, butter, cheese or prepared-meal GI. Exact current weighed version."
+          },
+          {
+            "name": "voita",
+            "grams": 28,
+            "fineliRecordId": "op142-fineli-500",
+            "giRecordId": "op142-dairy-imputation30",
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+            "foodKey": "op142-dairy-code",
+            "preparationKey": "op142-dairy-imputation30",
+            "giMatchEvidence": "Existing project PI30 for this named unsweetened animal-dairy profile. Not measured cream, butter, cheese or prepared-meal GI. Exact current weighed version."
+          },
+          {
+            "name": "jauhettua mustapippuria",
+            "grams": 0.5,
+            "fineliRecordId": "op142-fineli-11177",
+            "giRecordId": null,
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+            "giMatchEvidence": "No matching GI; source-known Fineli CHOAVL 0.0478875g/serving is counted in cumulative omission; not zero. CHOAVL already excludes polyols."
+          },
+          {
+            "name": "silputtua tilliä",
+            "grams": 8,
+            "fineliRecordId": "op142-fineli-369",
+            "giRecordId": "op142-vegetable-imputation40",
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+            "foodKey": "op142-low-carb-vegetable",
+            "preparationKey": "op142-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI40 for this named chopped nonstarchy vegetable, allium or fresh herb. Explicit current preparation application, not measured ingredient GI or a food-family mean."
+          },
+          {
+            "name": "suolaa",
+            "grams": null,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Explicit pure salt",
+            "estimatedAvailableCarbohydratePerServingG": 0,
+            "negligibleAssumption": "Pure salt, no carbohydrate. Unknown salt mass remains null.",
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion."
+          }
+        ]
+      },
+      "culinaryDecision": "Preserve core dish; clarify edible weights and named versions. No owner approval inferred.",
+      "ownerContentApproval": "PENDING_DRAFT_REVIEW",
+      "previousMacroEvidenceRawSha256": "a4ffd0974f39fa8623203ab7f16069ceb2b2b3e5d7c3143641f29f6fb60e9d0f",
+      "recipeId": "janssoninkiusaus-juuriselleri",
+      "sourceLfSha256": "277c4c9c65bec0fad4548e4df80b13b2ffb52efcc0c0eb8d9d44ba477d7a9943",
+      "macroEvidenceSha256": "66909ae96eb5c58be6f2327453611bc8873392b19992e25d848ad4843717c6f7",
+      "macroStatus": "INSUFFICIENT SOURCE DATA",
+      "macroValues": {
+        "carbs_net_per_serving_g": null,
+        "carbs_total_per_serving_g": null,
+        "protein_per_serving_g": null,
+        "fat_per_serving_g": null
+      },
+      "gk": 3.05,
+      "omittedChoPerServingG": 0.0478875,
+      "localeLfSha256": {
+        "en": "41177b4288899e04dc50d953c5dfdb45bd4b6576d688a87aac6cd64c2c2ffac6",
+        "sv": "0d1280214a6210e0f2127912fb398d53766c9805e438aca0c3ed73c73f9e9380",
+        "th": "b3a9a741c6c171d2add9c6ff2ebdfe89224afb1d87c007f16e12c8764747dee5"
+      }
+    },
+    {
+      "priorResearchCommit": "87c603bfe5ded3b1fe6af1abdaa5b0442ebc5051",
+      "priorEvidenceBundleSha256": "0f1ae48addbea40ed82a24bb024529a4fb79f524c6467c63abf6603d3038834b",
+      "originalPublishedPath": "reseptit/paaruoat/taytetyt-paprikat-vhh.md",
+      "originalPublishedSourceLfSha256": "1135c86674c6b7faf8ef4d936c19fff9a729a588fc842270ac3a31e25d411eb5",
+      "newInput": {
+        "recipeId": "taytetyt-paprikat-vhh",
+        "servings": 4,
+        "ingredients": [
+          {
+            "name": "punaista paprikaa",
+            "grams": 640,
+            "fineliRecordId": "op142-fineli-386",
+            "giRecordId": "op142-vegetable-imputation40",
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+            "foodKey": "op142-low-carb-vegetable",
+            "preparationKey": "op142-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI40 for this named chopped nonstarchy vegetable, allium or fresh herb. Explicit current preparation application, not measured ingredient GI or a food-family mean."
+          },
+          {
+            "name": "naudan jauhelihaa, rasvaa 17 %",
+            "grams": 500,
+            "fineliRecordId": "op142-fineli-11562",
+            "giRecordId": null,
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion."
+          },
+          {
+            "name": "sipulia",
+            "grams": 70,
+            "fineliRecordId": "op142-fineli-335",
+            "giRecordId": "op142-vegetable-imputation40",
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+            "foodKey": "op142-low-carb-vegetable",
+            "preparationKey": "op142-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI40 for this named chopped nonstarchy vegetable, allium or fresh herb. Explicit current preparation application, not measured ingredient GI or a food-family mean."
+          },
+          {
+            "name": "tomaattimurskaa",
+            "grams": 150,
+            "fineliRecordId": "op142-fineli-398",
+            "giRecordId": "op142-vegetable-imputation40",
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+            "foodKey": "op142-low-carb-vegetable",
+            "preparationKey": "op142-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI40 for this named chopped nonstarchy vegetable, allium or fresh herb. Explicit current preparation application, not measured ingredient GI or a food-family mean."
+          },
+          {
+            "name": "tomaattipyreetä",
+            "grams": 16,
+            "fineliRecordId": "op142-fineli-354",
+            "giRecordId": null,
+            "massEvidence": "16g weighed tomato paste; preserve published paste rather than substituting100g extra crushed tomato.",
+            "giMatchEvidence": "Fineli354 A7.95;16g/4 gives0.318g availableCHO, eligible only under existing individual<1g and cumulative<2g omission."
+          },
+          {
+            "name": "kuivattua oreganoa",
+            "grams": 2,
+            "fineliRecordId": "op142-fineli-11191",
+            "giRecordId": null,
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+            "giMatchEvidence": "No matching GI; source-known Fineli CHOAVL 0.10815g/serving is counted in cumulative omission; not zero. CHOAVL already excludes polyols."
+          },
+          {
+            "name": "jauhettua mustapippuria",
+            "grams": 1,
+            "fineliRecordId": "op142-fineli-11177",
+            "giRecordId": null,
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+            "giMatchEvidence": "No matching GI; source-known Fineli CHOAVL 0.095775g/serving is counted in cumulative omission; not zero. CHOAVL already excludes polyols."
+          },
+          {
+            "name": "puolikovaa juustoraastetta, koostumusvertailussa rasvaa 25–35 %",
+            "grams": 150,
+            "fineliRecordId": "op142-fineli-655",
+            "giRecordId": null,
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion."
+          },
+          {
+            "name": "oliiviöljyä",
+            "grams": 13.5,
+            "fineliRecordId": "op142-fineli-536",
+            "giRecordId": null,
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion."
+          },
+          {
+            "name": "suolaa",
+            "grams": null,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Explicit pure salt",
+            "estimatedAvailableCarbohydratePerServingG": 0,
+            "negligibleAssumption": "Pure salt, no carbohydrate. Unknown salt mass remains null.",
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion."
+          }
+        ]
+      },
+      "culinaryDecision": "Preserve core dish; clarify edible weights and named versions. No owner approval inferred.",
+      "ownerContentApproval": "PENDING_DRAFT_REVIEW",
+      "recipeId": "taytetyt-paprikat-vhh",
+      "sourceLfSha256": "8accd7682ea33a37f3dc12451b76e42a99d07169740f6fcc57451da22f70ee8c",
+      "macroEvidenceSha256": "2422d3ae27726f2db0a522f536bb76a60a9cae8fb64478717d09188897d70a5b",
+      "macroStatus": "ESTIMATE WITH EVIDENCE",
+      "macroValues": {
+        "carbs_net_per_serving_g": 9.65,
+        "carbs_total_per_serving_g": 13.09,
+        "protein_per_serving_g": 36.4,
+        "fat_per_serving_g": 35.8
+      },
+      "gk": 3.73,
+      "omittedChoPerServingG": 0.521925,
+      "localeLfSha256": {
+        "en": "02f797339d8c49739a96fd482a23d6a3e6fde6e61a0fa7835a106d1677c0d4fe",
+        "sv": "dd98edea4d64678b27a75db0dccb95ba9b090c550dbf68124b4401905b2f8940",
+        "th": "943a8f8855e571e96a516e0be0571f962da125c09c73a9397f148116dfde6712"
+      }
+    },
+    {
+      "priorResearchCommit": "87c603bfe5ded3b1fe6af1abdaa5b0442ebc5051",
+      "priorEvidenceBundleSha256": "feb0c4cfad06b1827a8b1f024f47594dee73b7863baf2cb176b343e7b11ff5d2",
+      "originalPublishedPath": "reseptit/paaruoat/rogan-josh.md",
+      "originalPublishedSourceLfSha256": "a9d91f6ea97769d93f5fb1e5bded03bcf5fe7393e613830c520572bef2b5ff4b",
+      "newInput": {
+        "recipeId": "rogan-josh",
+        "servings": 4,
+        "ingredients": [
+          {
+            "name": "lampaan lapaa",
+            "grams": 800,
+            "fineliRecordId": "op142-fineli-731",
+            "giRecordId": null,
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion."
+          },
+          {
+            "name": "oliiviöljyä",
+            "grams": 27,
+            "fineliRecordId": "op142-fineli-536",
+            "giRecordId": null,
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion."
+          },
+          {
+            "name": "sipuli",
+            "grams": 55,
+            "fineliRecordId": "op142-fineli-335",
+            "giRecordId": "op142-vegetable-imputation40",
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+            "foodKey": "op142-low-carb-vegetable",
+            "preparationKey": "op142-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI40 for this named chopped nonstarchy vegetable, allium or fresh herb. Explicit current preparation application, not measured ingredient GI or a food-family mean."
+          },
+          {
+            "name": "maustamatonta jogurttia, rasvaa 2,5 %",
+            "grams": 200,
+            "fineliRecordId": "op142-fineli-619",
+            "giRecordId": "op142-dairy-imputation30",
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+            "foodKey": "op142-dairy-code",
+            "preparationKey": "op142-dairy-imputation30",
+            "giMatchEvidence": "Existing project PI30 for this named unsweetened animal-dairy profile. Not measured cream, butter, cheese or prepared-meal GI. Exact current weighed version."
+          },
+          {
+            "name": "tuoretta kuorittua valkosipulia",
+            "grams": 6,
+            "fineliRecordId": "op142-fineli-393",
+            "giRecordId": "op142-vegetable-imputation40",
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+            "foodKey": "op142-low-carb-vegetable",
+            "preparationKey": "op142-vegetable-imputation40",
+            "giMatchEvidence": "Existing project PI40 for this named chopped nonstarchy vegetable, allium or fresh herb. Explicit current preparation application, not measured ingredient GI or a food-family mean."
+          },
+          {
+            "name": "tuoretta inkivääriä",
+            "grams": 15,
+            "fineliRecordId": "op142-fineli-33023",
+            "giRecordId": null,
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+            "giMatchEvidence": "No matching GI; source-known Fineli CHOAVL 0.591375g/serving is counted in cumulative omission; not zero. CHOAVL already excludes polyols."
+          },
+          {
+            "name": "jauhettua juustokuminaa",
+            "grams": 4,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Existing source-backed small-portion GK omission; not actual A0.",
+            "availableCarbohydrateUpperBoundPerServingG": 0.3374,
+            "upperBoundEvidence": "USDA170923: same-source totalCHO minus reported fibre is an upper ceiling containing unknown polyols, not an actual availableCHO point. Whole seed ground without separated fraction."
+          },
+          {
+            "name": "jauhettua korianterinsiementä",
+            "grams": 2,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Existing source-backed small-portion GK omission; not actual A0.",
+            "availableCarbohydrateUpperBoundPerServingG": 0.06545,
+            "upperBoundEvidence": "USDA170922: same-source totalCHO minus reported fibre is an upper ceiling containing unknown polyols, not an actual availableCHO point. Whole seed ground without separated fraction."
+          },
+          {
+            "name": "paprikajauhetta",
+            "grams": 4,
+            "fineliRecordId": "op142-fineli-11182",
+            "giRecordId": null,
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+            "giMatchEvidence": "No matching GI; source-known Fineli CHOAVL 0.1834g/serving is counted in cumulative omission; not zero. CHOAVL already excludes polyols."
+          },
+          {
+            "name": "chilijauhetta",
+            "grams": 1,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Existing source-backed small-portion GK omission; not actual A0.",
+            "availableCarbohydrateUpperBoundPerServingG": 0.25,
+            "upperBoundEvidence": "Entire weighed1g edible dry chilli powder is a physical ceiling for available carbohydrate; no inferred composition, GI or polyol zero."
+          },
+          {
+            "name": "kanelitankoa",
+            "grams": 2,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Existing source-backed small-portion GK omission; not actual A0.",
+            "availableCarbohydrateUpperBoundPerServingG": 0.13745,
+            "upperBoundEvidence": "USDA171320 ground cinnamon bark C80.59−F53.1=27.49g/100g is a source-model ceiling for the same bark, not an actual A point. Whole2g stick simmered then removed; counting all potentially availableCHO in initial bark conservatively bounds unmeasured extraction."
+          },
+          {
+            "name": "kokonaisia kardemummakotia",
+            "grams": 1.6,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Existing source-backed small-portion GK omission; not actual A0.",
+            "availableCarbohydrateUpperBoundPerServingG": 0.4,
+            "upperBoundEvidence": "Four whole cardamom pods weighed together1.6g, removed after simmering. AvailableCHO entering sauce cannot exceed their entire initial mass. No seed-to-hull composition transfer, P0 or measured extraction fraction."
+          },
+          {
+            "name": "suolaa",
+            "grams": null,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Explicit pure salt",
+            "estimatedAvailableCarbohydratePerServingG": 0,
+            "negligibleAssumption": "Pure salt, no carbohydrate. Unknown salt mass remains null.",
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion."
+          },
+          {
+            "name": "vettä",
+            "grams": 400,
+            "fineliRecordId": "op142-fineli-922",
+            "giRecordId": null,
+            "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion."
+          }
+        ]
+      },
+      "culinaryDecision": "Preserve core dish; clarify edible weights and named versions. No owner approval inferred.",
+      "ownerContentApproval": "PENDING_DRAFT_REVIEW",
+      "previousMacroEvidenceRawSha256": "40475ca9fb12203bbc90302423ec93e9459fd8a714273226a26203b0c8cdf02c",
+      "recipeId": "rogan-josh",
+      "sourceLfSha256": "3f363cda0dba6f306ff87bd86cb23a4990f9f358b75ae502e9df4fc38f94f9eb",
+      "macroEvidenceSha256": "f56d5e155541e225ac0de557b3efccadda168f1718581b88189c4407f690abfa",
+      "macroStatus": "INSUFFICIENT SOURCE DATA",
+      "macroValues": {
+        "carbs_net_per_serving_g": null,
+        "carbs_total_per_serving_g": null,
+        "protein_per_serving_g": null,
+        "fat_per_serving_g": null
+      },
+      "gk": 1.11,
+      "omittedChoPerServingG": 1.9650750000000001,
+      "localeLfSha256": {
+        "en": "205b1bfc8ee7d250e93332b0ce59a91aae88cc38abad66f90b590810b1f4b34e",
+        "sv": "bc5c8b9932390e591db1c9a270fc027fe21e03b8b5e06138284d7d25a03bdaa6",
+        "th": "2ae45557d96a16c4dda19f732ec0396dcf37fd577a1896b85f0d3954b320802e"
+      }
+    }
+  ],
+  "newGiRecords": [
+    "op142-vegetable-imputation40",
+    "op142-lowcho50-r4",
+    "op142-dairy-imputation30",
+    "op142-lowcho50-r6-r11",
+    "op142-dairy-imputation30-r11",
+    "op142-vegetable-imputation40-r11",
+    "op142-lowcho50-v2",
+    "op142-sucrose60"
+  ],
+  "newFoodRecords": [
+    "op142-fineli-362",
+    "op142-fineli-389",
+    "op142-fineli-386",
+    "op142-fineli-335",
+    "op142-fineli-393",
+    "op142-fineli-352",
+    "op142-fineli-536",
+    "op142-fineli-11194",
+    "op142-fineli-11177",
+    "op142-fineli-11134",
+    "op142-fineli-11565",
+    "op142-fineli-11689",
+    "op142-fineli-11557",
+    "op142-fineli-500",
+    "op142-fineli-858",
+    "op142-fineli-387",
+    "op142-fineli-11182",
+    "op142-fineli-333",
+    "op142-fineli-398",
+    "op142-fineli-34234",
+    "op142-fineli-11057",
+    "op142-fineli-698",
+    "op142-fineli-34238",
+    "op142-fineli-718",
+    "op142-fineli-354",
+    "op142-fineli-29",
+    "op142-fineli-630",
+    "op142-fineli-339",
+    "op142-fineli-28938",
+    "op142-fineli-929",
+    "op142-fineli-1",
+    "op142-fineli-30",
+    "op142-fineli-311",
+    "op142-fineli-631",
+    "op142-fineli-689",
+    "op142-fineli-369",
+    "op142-fineli-11562",
+    "op142-fineli-11191",
+    "op142-fineli-655",
+    "op142-fineli-731",
+    "op142-fineli-619",
+    "op142-fineli-33023",
+    "op142-fineli-922"
+  ],
+  "smokedPaprikaLabel": {
+    "id": "santa-maria-smoked-paprika-7311311015243",
+    "name": "Santa Maria smoked paprika37g",
+    "gtin": "7311311015243",
+    "sourceUrl": "https://www.minimani.fi/santa-maria-paprika-savustettu-37-g.html",
+    "retrievedAt": "2026-11-02",
+    "declaredPer100g": {
+      "carbohydrateIncludingPolyols": 13,
+      "protein": 15,
+      "fat": 17,
+      "kcal": 349
+    },
+    "ingredients": "smoked paprika",
+    "fibre": null,
+    "polyols": null,
+    "use": "EU labelled carbohydrate is a nominal upper ceiling for available CHO only. Do not infer zero polyols or totalCHO including fibre."
+  },
+  "extraUsdaSources": [
+    {
+      "key": "lemon_peel",
+      "fdc_id": "167749",
+      "description": "Lemon peel, raw",
+      "nutrients": {
+        "1003": {
+          "id": "1302289",
+          "fdc_id": "167749",
+          "nutrient_id": "1003",
+          "amount": "1.5",
+          "data_points": "0",
+          "derivation_id": "",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "1004": {
+          "id": "1302304",
+          "fdc_id": "167749",
+          "nutrient_id": "1004",
+          "amount": "0.3",
+          "data_points": "0",
+          "derivation_id": "",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "1005": {
+          "id": "1302305",
+          "fdc_id": "167749",
+          "nutrient_id": "1005",
+          "amount": "16",
+          "data_points": "0",
+          "derivation_id": "49",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "1007": {
+          "id": "1302290",
+          "fdc_id": "167749",
+          "nutrient_id": "1007",
+          "amount": "0.6",
+          "data_points": "0",
+          "derivation_id": "",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "1008": {
+          "id": "1302270",
+          "fdc_id": "167749",
+          "nutrient_id": "1008",
+          "amount": "47",
+          "data_points": "0",
+          "derivation_id": "",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "1018": {
+          "id": "1302268",
+          "fdc_id": "167749",
+          "nutrient_id": "1018",
+          "amount": "0",
+          "data_points": "0",
+          "derivation_id": "",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "1051": {
+          "id": "1302298",
+          "fdc_id": "167749",
+          "nutrient_id": "1051",
+          "amount": "81.6",
+          "data_points": "0",
+          "derivation_id": "",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "1057": {
+          "id": "1302251",
+          "fdc_id": "167749",
+          "nutrient_id": "1057",
+          "amount": "0",
+          "data_points": "0",
+          "derivation_id": "68",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "1058": {
+          "id": "1302252",
+          "fdc_id": "167749",
+          "nutrient_id": "1058",
+          "amount": "0",
+          "data_points": "0",
+          "derivation_id": "68",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "1062": {
+          "id": "1302263",
+          "fdc_id": "167749",
+          "nutrient_id": "1062",
+          "amount": "197",
+          "data_points": "0",
+          "derivation_id": "",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "1079": {
+          "id": "1302284",
+          "fdc_id": "167749",
+          "nutrient_id": "1079",
+          "amount": "10.6",
+          "data_points": "0",
+          "derivation_id": "",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "1087": {
+          "id": "1302299",
+          "fdc_id": "167749",
+          "nutrient_id": "1087",
+          "amount": "134",
+          "data_points": "0",
+          "derivation_id": "",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "1089": {
+          "id": "1302285",
+          "fdc_id": "167749",
+          "nutrient_id": "1089",
+          "amount": "0.8",
+          "data_points": "0",
+          "derivation_id": "",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "1090": {
+          "id": "1302286",
+          "fdc_id": "167749",
+          "nutrient_id": "1090",
+          "amount": "15",
+          "data_points": "0",
+          "derivation_id": "",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "1091": {
+          "id": "1302287",
+          "fdc_id": "167749",
+          "nutrient_id": "1091",
+          "amount": "12",
+          "data_points": "0",
+          "derivation_id": "",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "1092": {
+          "id": "1302300",
+          "fdc_id": "167749",
+          "nutrient_id": "1092",
+          "amount": "160",
+          "data_points": "0",
+          "derivation_id": "",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "1093": {
+          "id": "1302288",
+          "fdc_id": "167749",
+          "nutrient_id": "1093",
+          "amount": "6",
+          "data_points": "0",
+          "derivation_id": "",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "1095": {
+          "id": "1302271",
+          "fdc_id": "167749",
+          "nutrient_id": "1095",
+          "amount": "0.25",
+          "data_points": "0",
+          "derivation_id": "",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "1098": {
+          "id": "1302267",
+          "fdc_id": "167749",
+          "nutrient_id": "1098",
+          "amount": "0.092",
+          "data_points": "0",
+          "derivation_id": "",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "1103": {
+          "id": "1302309",
+          "fdc_id": "167749",
+          "nutrient_id": "1103",
+          "amount": "0.7",
+          "data_points": "0",
+          "derivation_id": "16",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "1104": {
+          "id": "1302283",
+          "fdc_id": "167749",
+          "nutrient_id": "1104",
+          "amount": "50",
+          "data_points": "0",
+          "derivation_id": "",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "1105": {
+          "id": "1302272",
+          "fdc_id": "167749",
+          "nutrient_id": "1105",
+          "amount": "0",
+          "data_points": "0",
+          "derivation_id": "68",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "1106": {
+          "id": "1302265",
+          "fdc_id": "167749",
+          "nutrient_id": "1106",
+          "amount": "3",
+          "data_points": "0",
+          "derivation_id": "",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "1107": {
+          "id": "1302259",
+          "fdc_id": "167749",
+          "nutrient_id": "1107",
+          "amount": "7",
+          "data_points": "0",
+          "derivation_id": "22",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "1108": {
+          "id": "1302260",
+          "fdc_id": "167749",
+          "nutrient_id": "1108",
+          "amount": "1",
+          "data_points": "0",
+          "derivation_id": "22",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "1109": {
+          "id": "1302254",
+          "fdc_id": "167749",
+          "nutrient_id": "1109",
+          "amount": "0.25",
+          "data_points": "0",
+          "derivation_id": "16",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "1110": {
+          "id": "1302266",
+          "fdc_id": "167749",
+          "nutrient_id": "1110",
+          "amount": "0",
+          "data_points": "0",
+          "derivation_id": "68",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "1114": {
+          "id": "1302308",
+          "fdc_id": "167749",
+          "nutrient_id": "1114",
+          "amount": "0",
+          "data_points": "0",
+          "derivation_id": "68",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "1120": {
+          "id": "1302256",
+          "fdc_id": "167749",
+          "nutrient_id": "1120",
+          "amount": "45",
+          "data_points": "0",
+          "derivation_id": "22",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "1122": {
+          "id": "1302257",
+          "fdc_id": "167749",
+          "nutrient_id": "1122",
+          "amount": "0",
+          "data_points": "0",
+          "derivation_id": "16",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "1123": {
+          "id": "1302255",
+          "fdc_id": "167749",
+          "nutrient_id": "1123",
+          "amount": "18",
+          "data_points": "0",
+          "derivation_id": "16",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "1162": {
+          "id": "1302279",
+          "fdc_id": "167749",
+          "nutrient_id": "1162",
+          "amount": "129",
+          "data_points": "0",
+          "derivation_id": "",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "1165": {
+          "id": "1302280",
+          "fdc_id": "167749",
+          "nutrient_id": "1165",
+          "amount": "0.06",
+          "data_points": "0",
+          "derivation_id": "",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "1166": {
+          "id": "1302281",
+          "fdc_id": "167749",
+          "nutrient_id": "1166",
+          "amount": "0.08",
+          "data_points": "0",
+          "derivation_id": "",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "1167": {
+          "id": "1302301",
+          "fdc_id": "167749",
+          "nutrient_id": "1167",
+          "amount": "0.4",
+          "data_points": "0",
+          "derivation_id": "",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "1170": {
+          "id": "1302302",
+          "fdc_id": "167749",
+          "nutrient_id": "1170",
+          "amount": "0.319",
+          "data_points": "0",
+          "derivation_id": "",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "1175": {
+          "id": "1302303",
+          "fdc_id": "167749",
+          "nutrient_id": "1175",
+          "amount": "0.172",
+          "data_points": "0",
+          "derivation_id": "",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "1177": {
+          "id": "1302269",
+          "fdc_id": "167749",
+          "nutrient_id": "1177",
+          "amount": "13",
+          "data_points": "0",
+          "derivation_id": "",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "1178": {
+          "id": "1302278",
+          "fdc_id": "167749",
+          "nutrient_id": "1178",
+          "amount": "0",
+          "data_points": "0",
+          "derivation_id": "68",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "1180": {
+          "id": "1302262",
+          "fdc_id": "167749",
+          "nutrient_id": "1180",
+          "amount": "8.5",
+          "data_points": "0",
+          "derivation_id": "16",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "1185": {
+          "id": "1302258",
+          "fdc_id": "167749",
+          "nutrient_id": "1185",
+          "amount": "0",
+          "data_points": "0",
+          "derivation_id": "16",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "1186": {
+          "id": "1302238",
+          "fdc_id": "167749",
+          "nutrient_id": "1186",
+          "amount": "0",
+          "data_points": "0",
+          "derivation_id": "68",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "1187": {
+          "id": "1302264",
+          "fdc_id": "167749",
+          "nutrient_id": "1187",
+          "amount": "13",
+          "data_points": "0",
+          "derivation_id": "",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "1190": {
+          "id": "1302261",
+          "fdc_id": "167749",
+          "nutrient_id": "1190",
+          "amount": "13",
+          "data_points": "0",
+          "derivation_id": "49",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "1242": {
+          "id": "1302307",
+          "fdc_id": "167749",
+          "nutrient_id": "1242",
+          "amount": "0",
+          "data_points": "0",
+          "derivation_id": "68",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "1246": {
+          "id": "1302306",
+          "fdc_id": "167749",
+          "nutrient_id": "1246",
+          "amount": "0",
+          "data_points": "0",
+          "derivation_id": "68",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "1253": {
+          "id": "1302275",
+          "fdc_id": "167749",
+          "nutrient_id": "1253",
+          "amount": "0",
+          "data_points": "0",
+          "derivation_id": "68",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "1257": {
+          "id": "1302273",
+          "fdc_id": "167749",
+          "nutrient_id": "1257",
+          "amount": "0",
+          "data_points": "0",
+          "derivation_id": "68",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "1258": {
+          "id": "1302274",
+          "fdc_id": "167749",
+          "nutrient_id": "1258",
+          "amount": "0.039",
+          "data_points": "0",
+          "derivation_id": "",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "1259": {
+          "id": "1302248",
+          "fdc_id": "167749",
+          "nutrient_id": "1259",
+          "amount": "0",
+          "data_points": "0",
+          "derivation_id": "",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "1260": {
+          "id": "1302249",
+          "fdc_id": "167749",
+          "nutrient_id": "1260",
+          "amount": "0",
+          "data_points": "0",
+          "derivation_id": "",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "1261": {
+          "id": "1302239",
+          "fdc_id": "167749",
+          "nutrient_id": "1261",
+          "amount": "0",
+          "data_points": "0",
+          "derivation_id": "",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "1262": {
+          "id": "1302250",
+          "fdc_id": "167749",
+          "nutrient_id": "1262",
+          "amount": "0",
+          "data_points": "0",
+          "derivation_id": "",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "1263": {
+          "id": "1302240",
+          "fdc_id": "167749",
+          "nutrient_id": "1263",
+          "amount": "0",
+          "data_points": "0",
+          "derivation_id": "",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "1264": {
+          "id": "1302277",
+          "fdc_id": "167749",
+          "nutrient_id": "1264",
+          "amount": "0.001",
+          "data_points": "0",
+          "derivation_id": "",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "1265": {
+          "id": "1302293",
+          "fdc_id": "167749",
+          "nutrient_id": "1265",
+          "amount": "0.035",
+          "data_points": "0",
+          "derivation_id": "",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "1266": {
+          "id": "1302294",
+          "fdc_id": "167749",
+          "nutrient_id": "1266",
+          "amount": "0.002",
+          "data_points": "0",
+          "derivation_id": "",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "1268": {
+          "id": "1302295",
+          "fdc_id": "167749",
+          "nutrient_id": "1268",
+          "amount": "0.01",
+          "data_points": "0",
+          "derivation_id": "",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "1269": {
+          "id": "1302296",
+          "fdc_id": "167749",
+          "nutrient_id": "1269",
+          "amount": "0.063",
+          "data_points": "0",
+          "derivation_id": "",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "1270": {
+          "id": "1302297",
+          "fdc_id": "167749",
+          "nutrient_id": "1270",
+          "amount": "0.026",
+          "data_points": "0",
+          "derivation_id": "",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "1271": {
+          "id": "1302244",
+          "fdc_id": "167749",
+          "nutrient_id": "1271",
+          "amount": "0",
+          "data_points": "0",
+          "derivation_id": "",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "1272": {
+          "id": "1302241",
+          "fdc_id": "167749",
+          "nutrient_id": "1272",
+          "amount": "0",
+          "data_points": "0",
+          "derivation_id": "",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "1275": {
+          "id": "1302276",
+          "fdc_id": "167749",
+          "nutrient_id": "1275",
+          "amount": "0.001",
+          "data_points": "0",
+          "derivation_id": "",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "1276": {
+          "id": "1302245",
+          "fdc_id": "167749",
+          "nutrient_id": "1276",
+          "amount": "0",
+          "data_points": "0",
+          "derivation_id": "",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "1277": {
+          "id": "1302246",
+          "fdc_id": "167749",
+          "nutrient_id": "1277",
+          "amount": "0",
+          "data_points": "0",
+          "derivation_id": "",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "1278": {
+          "id": "1302242",
+          "fdc_id": "167749",
+          "nutrient_id": "1278",
+          "amount": "0",
+          "data_points": "0",
+          "derivation_id": "",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "1279": {
+          "id": "1302247",
+          "fdc_id": "167749",
+          "nutrient_id": "1279",
+          "amount": "0",
+          "data_points": "0",
+          "derivation_id": "",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "1280": {
+          "id": "1302243",
+          "fdc_id": "167749",
+          "nutrient_id": "1280",
+          "amount": "0",
+          "data_points": "0",
+          "derivation_id": "",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "1283": {
+          "id": "1302282",
+          "fdc_id": "167749",
+          "nutrient_id": "1283",
+          "amount": "35",
+          "data_points": "0",
+          "derivation_id": "",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "1292": {
+          "id": "1302291",
+          "fdc_id": "167749",
+          "nutrient_id": "1292",
+          "amount": "0.011",
+          "data_points": "0",
+          "derivation_id": "",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "1293": {
+          "id": "1302292",
+          "fdc_id": "167749",
+          "nutrient_id": "1293",
+          "amount": "0.089",
+          "data_points": "0",
+          "derivation_id": "",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "2000": {
+          "id": "1302253",
+          "fdc_id": "167749",
+          "nutrient_id": "2000",
+          "amount": "4.17",
+          "data_points": "0",
+          "derivation_id": "16",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        }
+      },
+      "archiveSha256": "b80817294b8850530aaedf2e515c02593b1824f763a0ff356e5c2081643e6fd0",
+      "sourceUrl": "https://fdc.nal.usda.gov/food-details/167749/nutrients"
+    },
+    {
+      "key": "cumin",
+      "fdc_id": "170923",
+      "data_type": "sr_legacy_food",
+      "description": "Spices, cumin seed",
+      "food_category_id": "2",
+      "publication_date": "2019-04-01",
+      "nutrients": {
+        "1003": {
+          "id": "1565769",
+          "fdc_id": "170923",
+          "nutrient_id": "1003",
+          "amount": "17.81",
+          "data_points": "12",
+          "derivation_id": "",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "1004": {
+          "id": "1565785",
+          "fdc_id": "170923",
+          "nutrient_id": "1004",
+          "amount": "22.27",
+          "data_points": "13",
+          "derivation_id": "",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "1005": {
+          "id": "1565786",
+          "fdc_id": "170923",
+          "nutrient_id": "1005",
+          "amount": "44.24",
+          "data_points": "0",
+          "derivation_id": "49",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "1079": {
+          "id": "1565771",
+          "fdc_id": "170923",
+          "nutrient_id": "1079",
+          "amount": "10.5",
+          "data_points": "0",
+          "derivation_id": "",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "2000": {
+          "id": "1565823",
+          "fdc_id": "170923",
+          "nutrient_id": "2000",
+          "amount": "2.25",
+          "data_points": "1",
+          "derivation_id": "1",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        }
+      },
+      "portions": [
+        {
+          "id": "87544",
+          "fdc_id": "170923",
+          "seq_num": "1",
+          "amount": "1",
+          "measure_unit_id": "9999",
+          "portion_description": "",
+          "modifier": "tsp, whole",
+          "gram_weight": "2.1",
+          "data_points": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        {
+          "id": "87545",
+          "fdc_id": "170923",
+          "seq_num": "2",
+          "amount": "1",
+          "measure_unit_id": "9999",
+          "portion_description": "",
+          "modifier": "tbsp, whole",
+          "gram_weight": "6",
+          "data_points": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        }
+      ]
+    },
+    {
+      "key": "coriander_seed",
+      "fdc_id": "170922",
+      "data_type": "sr_legacy_food",
+      "description": "Spices, coriander seed",
+      "food_category_id": "2",
+      "publication_date": "2019-04-01",
+      "nutrients": {
+        "1003": {
+          "id": "1565757",
+          "fdc_id": "170922",
+          "nutrient_id": "1003",
+          "amount": "12.37",
+          "data_points": "11",
+          "derivation_id": "",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "1004": {
+          "id": "1565726",
+          "fdc_id": "170922",
+          "nutrient_id": "1004",
+          "amount": "17.77",
+          "data_points": "12",
+          "derivation_id": "",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "1005": {
+          "id": "1565727",
+          "fdc_id": "170922",
+          "nutrient_id": "1005",
+          "amount": "54.99",
+          "data_points": "0",
+          "derivation_id": "49",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "1079": {
+          "id": "1565759",
+          "fdc_id": "170922",
+          "nutrient_id": "1079",
+          "amount": "41.9",
+          "data_points": "0",
+          "derivation_id": "",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        }
+      },
+      "portions": [
+        {
+          "id": "87542",
+          "fdc_id": "170922",
+          "seq_num": "1",
+          "amount": "1",
+          "measure_unit_id": "9999",
+          "portion_description": "",
+          "modifier": "tsp",
+          "gram_weight": "1.8",
+          "data_points": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        {
+          "id": "87543",
+          "fdc_id": "170922",
+          "seq_num": "2",
+          "amount": "1",
+          "measure_unit_id": "9999",
+          "portion_description": "",
+          "modifier": "tbsp",
+          "gram_weight": "5",
+          "data_points": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        }
+      ]
+    },
+    {
+      "key": "cinnamon",
+      "fdc_id": "171320",
+      "data_type": "sr_legacy_food",
+      "description": "Spices, cinnamon, ground",
+      "food_category_id": "2",
+      "publication_date": "2019-04-01",
+      "nutrients": {
+        "1003": {
+          "id": "1600463",
+          "fdc_id": "171320",
+          "nutrient_id": "1003",
+          "amount": "3.99",
+          "data_points": "5",
+          "derivation_id": "1",
+          "min": "3.21",
+          "max": "4.5",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "1004": {
+          "id": "1600508",
+          "fdc_id": "171320",
+          "nutrient_id": "1004",
+          "amount": "1.24",
+          "data_points": "6",
+          "derivation_id": "43",
+          "min": "0.33",
+          "max": "1.92",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "1005": {
+          "id": "1600509",
+          "fdc_id": "171320",
+          "nutrient_id": "1005",
+          "amount": "80.59",
+          "data_points": "0",
+          "derivation_id": "49",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "1079": {
+          "id": "1600457",
+          "fdc_id": "171320",
+          "nutrient_id": "1079",
+          "amount": "53.1",
+          "data_points": "9",
+          "derivation_id": "1",
+          "min": "48.7",
+          "max": "57",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        "2000": {
+          "id": "1600433",
+          "fdc_id": "171320",
+          "nutrient_id": "2000",
+          "amount": "2.17",
+          "data_points": "1",
+          "derivation_id": "1",
+          "min": "",
+          "max": "",
+          "median": "",
+          "footnote": "",
+          "min_year_acquired": ""
+        }
+      },
+      "portions": [
+        {
+          "id": "88429",
+          "fdc_id": "171320",
+          "seq_num": "1",
+          "amount": "1",
+          "measure_unit_id": "9999",
+          "portion_description": "",
+          "modifier": "tsp",
+          "gram_weight": "2.6",
+          "data_points": "13",
+          "footnote": "",
+          "min_year_acquired": ""
+        },
+        {
+          "id": "88430",
+          "fdc_id": "171320",
+          "seq_num": "2",
+          "amount": "1",
+          "measure_unit_id": "9999",
+          "portion_description": "",
+          "modifier": "tbsp",
+          "gram_weight": "7.8",
+          "data_points": "12",
+          "footnote": "",
+          "min_year_acquired": ""
+        }
+      ]
+    }
+  ],
+  "ownerApproval": "PENDING_REVIEW",
+  "ready": false,
+  "mergeAuthorized": false,
+  "deployAuthorized": false
+}

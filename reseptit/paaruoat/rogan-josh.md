@@ -6,99 +6,88 @@ category: paaruoka
 language: fi
 status: published
 servings: 4
-time_total_min: 120
+time_total_min: 150
 main_ingredient:
-  - lammas
-  - jogurtti
+- lammas
+- jogurtti
 cooking_method:
-  - liesi
+- liesi
 difficulty: keskitaso
 tags:
-  - intialainen
-  - Kashmir
-  - lammas
-  - curry
+- intialainen
+- Kashmir
+- lammas
+- curry
 image:
   src: paaruoat/rogan-josh.webp
   alt: Rogan josh -lammascurry syvänpunaisessa maustekastikkeessa
   width: 1280
   height: 853
 ingredients:
-  - amount: 800
-    unit: g
-    item: lampaan lapaa
-    note: kuutioituna
-  - amount: 2
-    unit: rkl
-    item: oliiviöljyä
-  - amount: 1
-    unit: kpl
-    item: sipuli
-    note: hienonnettuna
-  - amount: 200
-    unit: g
-    item: maustamatonta jogurttia
-  - amount: 2
-    unit: kpl
-    item: valkosipulinkynttä
-    note: murskattuna
-  - amount: 15
-    unit: g
-    item: tuoretta inkivääriä
-    note: raastettuna
-  - amount: 2
-    unit: tl
-    item: jauhettua juustokuminaa
-  - amount: 1
-    unit: tl
-    item: jauhettua korianteria
-  - amount: 2
-    unit: tl
-    item: paprikajauhetta
-  - amount: 0.5
-    unit: tl
-    item: chilijauhetta
-  - amount: 1
-    unit: kpl
-    item: kanelitanko
-  - amount: 4
-    unit: kpl
-    item: kardemummakotaa
-  - amount: 1
-    unit: tl
-    item: suolaa
-  - amount: 4
-    unit: dl
-    item: vettä
+- amount: 800
+  unit: g
+  item: lampaan lapaa
+- amount: 27.0
+  unit: g
+  item: oliiviöljyä
+- amount: 55
+  unit: g
+  item: sipuli
+- amount: 200
+  unit: g
+  item: maustamatonta jogurttia, rasvaa 2,5 %
+- amount: 6
+  unit: g
+  item: tuoretta kuorittua valkosipulia
+- amount: 15
+  unit: g
+  item: tuoretta inkivääriä
+- amount: 4
+  unit: g
+  item: jauhettua juustokuminaa
+- amount: 2
+  unit: g
+  item: jauhettua korianterinsiementä
+- amount: 4
+  unit: g
+  item: paprikajauhetta
+- amount: 1
+  unit: g
+  item: chilijauhetta
+- amount: 2
+  unit: g
+  item: kanelitankoa
+- amount: 1.6
+  unit: g
+  item: kokonaisia kardemummakotia
+- amount: null
+  unit: ''
+  item: suolaa maun mukaan
+- amount: 400
+  unit: g
+  item: vettä
 translation_languages:
-  - en
-  - sv
-  - th
-translation_status: {en: published, sv: published, th: published}
-carbs_net_per_serving_g: 4.39
-carbs_total_per_serving_g: 6.05
-protein_per_serving_g: 35.37
-fat_per_serving_g: 41.78
-
+- en
+- sv
+- th
+translation_status:
+  en: published
+  sv: published
+  th: published
+carbs_net_per_serving_g: null
+carbs_total_per_serving_g: null
+protein_per_serving_g: null
+fat_per_serving_g: null
 ---
 
 # Kashmirilainen rogan josh
 
-Kashmirilainen rogan josh on pitkään haudutettua lammasta aromaattisessa, jogurtilla pehmennetyssä kastikkeessa.
-
-## Kuvaus
-
-Kashmirilainen rogan josh on pitkään haudutettua lammasta aromaattisessa, jogurtilla pehmennetyssä kastikkeessa.
-
 ## Valmistus
 
-1. Ruskista lampaanpalat öljyssä erissä ja nosta sivuun.
-2. Kuullota sipuli samassa padassa. Lisää valkosipuli, inkivääri, kaneli ja kardemumma.
-3. Sekoita juustokumina, korianteri, paprikajauhe ja chili jogurtin kanssa. Lisää seos kattilaan miedolla lämmöllä sekoittaen.
-4. Palauta liha pataan. Lisää suola ja vesi. Kuumenna kiehuvaksi.
-5. Peitä kannella ja hauduta hyvin miedolla lämmöllä noin 1,5 tuntia, kunnes lammas on mureaa. Sekoita välillä.
-6. Poista kanelitanko ja kardemummat. Tarjoa riisin tai leivän kanssa.
+1. Paloittele 800 g lampaan lapaa, 55 g sipulia, 6 g valkosipulia ja 15 g inkivääriä. Ruskista liha ja sipuli kaikessa 27 g oliiviöljyä.
+2. Lisää valkosipuli, inkivääri, 4 g jauhettua juustokuminaa, 2 g jauhettua korianterinsiementä, 4 g paprikajauhetta, 1 g chilijauhetta, 2 g kokonainen kanelitanko sekä neljä kokonaisena yhteensä 1,6 g painavaa kardemummakotaa. Laske lämpöä, jotta jogurtti ei juoksetu. Lisää vähitellen 200 g maustamatonta 2,5-prosenttista jogurttia ja 400 g vettä.
+3. Hauduta kannen alla 1,5 tuntia, kunnes liha on mureaa. Poista kanelitanko ja kardemummakodat ennen tarjoilua. Suolaa ja jaa kaikki liha, kastike ja rasva neljään annokseen. Ei riisiä tai leipää.
 
 ## Muistiinpanot
 
-- Lisää jogurtti lämpimään pataan vähitellen ja sekoita, jotta se ei juoksetu.
+Punnitse yllä luetellut syötävät ainekset. Kaikki lueteltu ruoka, kastike ja paistorasva kuuluvat annoksiin; erillisiä lisukkeita ei ole laskettu. Ravintoarvot ovat toistaiseksi pois näkyvistä lähdetietojen tarkistuksen vuoksi.

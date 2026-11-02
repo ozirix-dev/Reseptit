@@ -27,6 +27,7 @@ export interface GlycemicIndexRecord {
   note?: string;
   matchKind?: "EXACT" | "ANALOG" | "CATEGORY_MEAN";
   confidence?: "HIGH" | "MEDIUM" | "LOW";
+  evidenceKind?: "HUMAN_GI" | "PUBLISHED_IMPUTATION";
 }
 
 export interface GlycemicLoadIngredientInput {

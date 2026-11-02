@@ -5,68 +5,62 @@ url_slug: ratatouille
 category: paaruoka
 language: sv
 status: published
-carbs_net_per_serving_g: 16.40
-carbs_total_per_serving_g: 23.62
-protein_per_serving_g: 3.37
-fat_per_serving_g: 14.96
+carbs_net_per_serving_g: null
+carbs_total_per_serving_g: null
+protein_per_serving_g: null
+fat_per_serving_g: null
 servings: 4
 time_total_min: 60
 main_ingredient:
-  - kesakurpitsa
-  - munakoiso
+- kesakurpitsa
+- munakoiso
 cooking_method:
-  - liesi
+- liesi
 difficulty: lätt
 tags:
-  - "medelhavsmat"
-  - "franska"
-  - "zucchini"
-  - "aubergine"
+- medelhavsmat
+- franska
+- zucchini
+- aubergine
 image:
   src: paaruoat/ratatouille.webp
   alt: Provensalsk ratatouille från zucchini, aubergine, paprika och tomat
   width: 1279
   height: 853
 ingredients:
-  - amount: 1
-    unit: st
-    item: aubergine
-    note: "tärnad"
-  - amount: 2
-    unit: st
-    item: zucchini
-    note: "tärnad"
-  - amount: 1
-    unit: st
-    item: röd paprika
-    note: i bitar
-  - amount: 1
-    unit: st
-    item: lök
-    note: "finhackad"
-  - amount: 3
-    unit: st
-    item: en vitlöksklyfta
-    note: strimlad
-  - amount: 500
-    unit: g
-    item: mogna tomater
-    note: "tärnad"
-  - amount: 4
-    unit: msk
-    item: olivolja
-  - amount: 1
-    unit: tsk
-    item: torkad timjan
-  - amount: 1
-    unit: tsk
-    item: salt
-  - amount: 0.25
-    unit: tsk
-    item: svartpeppar
-  - amount: 15
-    unit: g
-    item: färsk basilika
+- amount: 300
+  unit: g
+  item: aubergine
+- amount: 400
+  unit: g
+  item: zucchini
+- amount: 120
+  unit: g
+  item: röd paprika
+- amount: 55
+  unit: g
+  item: skalad gul lök
+- amount: 9
+  unit: g
+  item: skalad färsk vitlök
+- amount: 500
+  unit: g
+  item: tomat
+- amount: 54
+  unit: g
+  item: olivolja
+- amount: 2
+  unit: g
+  item: torkad malen timjan
+- amount: 0.5
+  unit: g
+  item: malen svartpeppar
+- amount: 15
+  unit: g
+  item: färsk basilika
+- amount: null
+  unit: ''
+  item: salt efter smak
 source_language: fi
 source_recipe: reseptit/paaruoat/ratatouille.md
 translation_of: ratatouille
@@ -74,20 +68,12 @@ translation_of: ratatouille
 
 # Provensalsk ratatouille
 
-Ratatouille är en långsamt stuvad grönsaksrätt där zucchini, aubergine, paprika och tomat kryddas med örter och olivolja.
-
-## Beskrivning
-
-Ratatouille är en långsamt stuvad grönsaksrätt där zucchini, aubergine, paprika och tomat kryddas med örter och olivolja.
-
 ## Tillagning
 
-1. Stek auberginen i en panna i olivolja i två omgångar tills den är mjuk. Avsätta.
-2. Tillsätt olja i pannan om det behövs. Fräs löken och paprikan i 5 minuter, tillsätt vitlöken.
-3. Tillsätt zucchini, tomater, timjan, salt och peppar. Täck över och låt sjuda på låg värme i 20 minuter.
-4. Rör tillbaka auberginen i pannan och låt puttra ytterligare 10-15 minuter tills grönsakerna är mjuka men behåller formen.
-5. Avsluta med basilika. Servera för sig eller som tillbehör.
+1. Mjukna 300 g aubergine i hela mängden 54 g olivolja. Tillsätt ingen extra olja.
+2. Tillsätt 55 g lök, 120 g röd paprika, 9 g vitlök, 400 g zucchini och 500 g tomat. Sjud under lock i cirka 30 min.
+3. Tillsätt 2 g torkad malen timjan, 0,5 g svartpeppar och 15 g basilika. Fördela alla grönsaker och all vätska på fyra portioner; bröd och ris ingår inte.
 
 ## Anteckningar
 
-– Undvik överkokning så att grönsakerna inte blir till puré.
+Väg de ätliga ingredienserna ovan. All angiven mat, sås och stekfett ingår i portionerna; separata tillbehör ingår inte. Näringsvärden visas tills vidare inte i väntan på källkontroll.

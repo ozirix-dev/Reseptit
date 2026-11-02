@@ -65,9 +65,10 @@ test('recovery full recipe text drift fails closed and release collisions cannot
 });
 test('recovery historical main131 regression changes exactly one object and retains all130 numeric values',()=>{
  const actual=json('tmp/nutrition/glycemic-load-pilot.json'),base=json('docs/nutrition/gk80-uunikanapasta-release/main-baseline.json');
+ const pre142=json('docs/nutrition/gk80-operation142/historical-main.json');actual.results=actual.results.map((r:any)=>pre142.selectedResults.find((x:any)=>x.recipeId===r.recipeId)??r);
  // Restore only the two later C additions for this explicitly historical view.
  const scoped=json('docs/nutrition/gk80-scoped-c-release/main-baseline.json').selectedResults;actual.results=actual.results.map((r:any)=>scoped.find((x:any)=>x.recipeId===r.recipeId)??r);
- assert.equal(actual.summary.calculated,133);assert.equal(actual.summary.insufficientSourceData,193);
+ assert.equal(actual.summary.calculated,143);assert.equal(actual.summary.insufficientSourceData,183);
  actual.summary={...actual.summary,calculated:131,insufficientSourceData:195};
  assert.equal(actual.results.length,326);assert.equal(actual.summary.calculated,131);assert.equal(actual.summary.insufficientSourceData,195);
  let changed=0,preservedNumeric=0;

@@ -23,6 +23,10 @@ async function readFile(filename: Parameters<typeof actualReadFile>[0], encoding
  const pre6Text=JSON.parse(await actualReadFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-release-6/historical-source-text.json'),'utf8'));if(Object.hasOwn(pre6Text,relative))return pre6Text[relative];
  const nextOriginal=JSON.parse(await actualReadFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-release-5/historical-source-text.json'),'utf8'));if(Object.hasOwn(nextOriginal,relative))return nextOriginal[relative];
  const original=JSON.parse(await actualReadFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-release-review/historical-source-text.json'),'utf8'));if(Object.hasOwn(original,relative))return original[relative];
+ const op142=JSON.parse(await actualReadFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-operation142/historical-main.json'),'utf8'));
+ const op142Text=JSON.parse(await actualReadFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-operation142/historical-source-text.json'),'utf8'));if(Object.hasOwn(op142Text,relative))return op142Text[relative];
+ if(relative==='docs/nutrition/glycemic-load-recipe-bindings.json'){const value=JSON.parse(text);for(const key of ['recipes','calculationInputs','calculationEvidence'])value[key]={...value[key],...op142.originalBindings[key]};return JSON.stringify(value);}
+ if(relative==='docs/nutrition/glycemic-load-pilot-input.json'){const value=JSON.parse(text),ids=new Set(op142.recipeIds);return JSON.stringify({...value,recipes:value.recipes.filter((r:any)=>!ids.has(r.recipeId)).concat(op142.selectedInputs)});}
  if(relative==='tmp/nutrition/audit.json'){const v=JSON.parse(text),old=JSON.parse(await actualReadFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-release-7/main-baseline.json'),'utf8')).selectedNutritionInventory;return JSON.stringify({...v,inventory:v.inventory.map((r:any)=>old.find((x:any)=>x.recipe_id===r.recipe_id)??r)});}
  if(relative==='tmp/nutrition/glycemic-load-pilot.json')return JSON.stringify(await historicalSourceReviewView(relative,JSON.parse(text)));
  const match=relative.match(/^docs\/nutrition\/calculations\/(.+)\.json$/);
@@ -35,6 +39,13 @@ async function readFile(filename: Parameters<typeof actualReadFile>[0], encoding
 const gk80HistoricalPromise:Promise<any>=readFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-release-review/historical.json'),'utf8').then(JSON.parse);
 async function historicalSourceReviewView(name:string,value:any):Promise<any>{
   if(name!=='tmp/nutrition/glycemic-load-pilot.json')return value;
+  // Pre142 replay is limited to these ten newly integrated recipes. The actual
+  // current report and all133 original numeric hashes are checked separately.
+  const op142=JSON.parse(await actualReadFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-operation142/historical-main.json'),'utf8'));const op142Ids=new Set(op142.recipeIds);
+  value={...value,results:value.results.map((r:any)=>op142.selectedResults.find((x:any)=>x.recipeId===r.recipeId)??r),calculationInputs:value.calculationInputs.map((r:any)=>op142.selectedCalculationInputs.find((x:any)=>x.recipeId===r.recipeId)??r)};
+  for(const key of ['sourceHashes','calculationInputHashes','calculationEvidenceHashes'])value[key]={...value[key],...op142[key]};
+  for(const key of ['recipeBindingMismatches','calculationInputMismatches','calculationEvidenceMismatches'])value[key]=[...value[key].filter((id:string)=>!op142Ids.has(id)),...op142[key]].sort();
+  value={...value,summary:{recipes:value.results.length,calculated:value.results.filter((r:any)=>r.status==='CALCULATED').length,insufficientSourceData:value.results.filter((r:any)=>r.status!=='CALCULATED').length}};
   const scoped=JSON.parse(await actualReadFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-scoped-c-release/main-baseline.json'),'utf8'));value={...value,results:value.results.map((r:any)=>scoped.selectedResults.find((x:any)=>x.recipeId===r.recipeId)??r),sourceHashes:{...value.sourceHashes,...scoped.sourceHashes}};for(const key of ['recipeBindingMismatches','calculationInputMismatches','calculationEvidenceMismatches'])value[key]=[...value[key].filter((id:string)=>!Object.hasOwn(scoped.sourceHashes,id)),...scoped[key]].sort();
   // This function is explicitly a historical source-review view. Restore only
   // the new recovery case from its immutable pre-integration main snapshot;
@@ -2452,4 +2463,25 @@ test("GK 2.1 R1B audits all three recipe inputs without publishing unsupported G
   assert.equal(pilot.recipeBindingMismatches.length, 38);
   assert.deepEqual(pilot.calculationInputMismatches, []);
   assert.deepEqual(pilot.calculationEvidenceMismatches, []);
+});
+
+test("evidence-kind changes invalidate the new source binding without changing historical unclassified hashes",()=>{
+ const base: GlycemicIndexRecord={id:"kind-proof",gi:40,foodKey:"vegetable",preparationKey:"cooked",food:"Named vegetable",preparation:"Cooked",qualityTier:"SUPPLEMENTARY",referenceScale:"GLUCOSE_100",matchKind:"ANALOG",source:{title:"Published assignment",url:"https://example.org/primary",table:"Fixture",year:2008,published:true,iso26642Confirmed:false,qualityEvidence:"Synthetic classification fixture"}};
+ const input:GlycemicLoadRecipeInput={recipeId:"kind-proof",servings:1,ingredients:[{name:"vegetable",grams:100,fineliRecordId:null,giRecordId:base.id,foodKey:base.foodKey,preparationKey:base.preparationKey,giMatchEvidence:"Explicit fixture"}]};
+ const old=glycemicLoadEvidenceHash(input,[],[base]);
+ const policy=glycemicLoadEvidenceHash(input,[],[{...base,evidenceKind:"PUBLISHED_IMPUTATION"}]);
+ const human=glycemicLoadEvidenceHash(input,[],[{...base,evidenceKind:"HUMAN_GI"}]);
+ assert.notEqual(old,policy);assert.notEqual(policy,human);assert.equal(old,glycemicLoadEvidenceHash(input,[],[base]));
+});
+
+test("exact reviewed text rejects changed preparation even when structural recipe binding is identical",async()=>{
+ const {exactRecipeTextBindingMatches}=await import('../scripts/glycemic-load-recipe-binding');
+ const {createHash}=await import('node:crypto');
+ const original='---\nrecipe_id: exact-text\nservings: 2\ningredients:\n  - item: salt\n    amount: 1\n    unit: g\n---\nSimmer; retain all sauce.\n';
+ const changed=original.replace('retain all sauce','discard the sauce');
+ assert.equal(recipeBindingHash(original),recipeBindingHash(changed));
+ const hash=createHash('sha256').update(original).digest('hex');
+ assert.equal(exactRecipeTextBindingMatches(hash,original.replaceAll('\n','\r\n')),true);
+ assert.equal(exactRecipeTextBindingMatches(hash,changed),false);
+ assert.equal(exactRecipeTextBindingMatches(undefined,original),false);
 });

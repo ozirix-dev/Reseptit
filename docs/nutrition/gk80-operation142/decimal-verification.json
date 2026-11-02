@@ -1,0 +1,674 @@
+{
+  "method": "Independent Python Decimal arithmetic; no TypeScript calculation or result rows used. Source inputs and explicit caps recalculated. Source-model ceilings do not establish clinical bounds.",
+  "gkChecks": [
+    {
+      "recipeId": "ratatouille",
+      "unroundedGK": "4.625575",
+      "roundedGK": "4.63",
+      "omittedOrCeilingG": "0.1825875",
+      "rows": [
+        {
+          "ingredient": "munakoisoa",
+          "GK": "0.930",
+          "omittedOrCeilingG": "0"
+        },
+        {
+          "ingredient": "kesäkurpitsaa",
+          "GK": "1.0",
+          "omittedOrCeilingG": "0"
+        },
+        {
+          "ingredient": "punaista paprikaa",
+          "GK": "0.54",
+          "omittedOrCeilingG": "0"
+        },
+        {
+          "ingredient": "sipulia",
+          "GK": "0.264",
+          "omittedOrCeilingG": "0"
+        },
+        {
+          "ingredient": "tuoretta kuorittua valkosipulia",
+          "GK": "0.14670",
+          "omittedOrCeilingG": "0"
+        },
+        {
+          "ingredient": "tomaattia",
+          "GK": "1.7250",
+          "omittedOrCeilingG": "0"
+        },
+        {
+          "ingredient": "oliiviöljyä",
+          "GK": "0",
+          "omittedOrCeilingG": "0"
+        },
+        {
+          "ingredient": "jauhettua kuivattua timjamia",
+          "GK": "0",
+          "omittedOrCeilingG": "0.1347"
+        },
+        {
+          "ingredient": "jauhettua mustapippuria",
+          "GK": "0",
+          "omittedOrCeilingG": "0.0478875"
+        },
+        {
+          "ingredient": "tuoretta basilikaa",
+          "GK": "0.019875",
+          "omittedOrCeilingG": "0"
+        },
+        {
+          "ingredient": "suolaa",
+          "GK": "0",
+          "omittedOrCeilingG": "0"
+        }
+      ],
+      "pass": true
+    },
+    {
+      "recipeId": "sitruuna-yrttikana-parsa",
+      "unroundedGK": "0.878",
+      "roundedGK": "0.88",
+      "omittedOrCeilingG": "0.8262450",
+      "rows": [
+        {
+          "ingredient": "broilerin rintafileitä",
+          "GK": "0",
+          "omittedOrCeilingG": "0"
+        },
+        {
+          "ingredient": "vihreää parsaa",
+          "GK": "0.8",
+          "omittedOrCeilingG": "0"
+        },
+        {
+          "ingredient": "sitruunamehua",
+          "GK": "0.06",
+          "omittedOrCeilingG": "0"
+        },
+        {
+          "ingredient": "oliiviöljyä",
+          "GK": "0",
+          "omittedOrCeilingG": "0"
+        },
+        {
+          "ingredient": "voita",
+          "GK": "0.018",
+          "omittedOrCeilingG": "0"
+        },
+        {
+          "ingredient": "kuivattua jauhettua timjamia",
+          "GK": "0",
+          "omittedOrCeilingG": "0.1347"
+        },
+        {
+          "ingredient": "valkosipulijauhetta, punnittuna3,1g",
+          "GK": "0",
+          "omittedOrCeilingG": "0.5636575"
+        },
+        {
+          "ingredient": "jauhettua mustapippuria",
+          "GK": "0",
+          "omittedOrCeilingG": "0.0478875"
+        },
+        {
+          "ingredient": "hienoksi raastettua sitruunan ulkokuorta",
+          "GK": "0",
+          "omittedOrCeilingG": "0.08"
+        },
+        {
+          "ingredient": "suolaa",
+          "GK": "0",
+          "omittedOrCeilingG": "0"
+        }
+      ],
+      "pass": true
+    },
+    {
+      "recipeId": "menemen",
+      "unroundedGK": "2.768333333333333333333333334",
+      "roundedGK": "2.77",
+      "omittedOrCeilingG": "0.1249833333333333333333333333",
+      "rows": [
+        {
+          "ingredient": "kuoretonta kananmunaa",
+          "GK": "0.11",
+          "omittedOrCeilingG": "0"
+        },
+        {
+          "ingredient": "tomaattia",
+          "GK": "1.7250",
+          "omittedOrCeilingG": "0"
+        },
+        {
+          "ingredient": "vihreää paprikaa",
+          "GK": "0.5666666666666666666666666668",
+          "omittedOrCeilingG": "0"
+        },
+        {
+          "ingredient": "sipulia",
+          "GK": "0.352",
+          "omittedOrCeilingG": "0"
+        },
+        {
+          "ingredient": "oliiviöljyä",
+          "GK": "0",
+          "omittedOrCeilingG": "0"
+        },
+        {
+          "ingredient": "paprikajauhetta",
+          "GK": "0",
+          "omittedOrCeilingG": "0.06113333333333333333333333333"
+        },
+        {
+          "ingredient": "jauhettua mustapippuria",
+          "GK": "0",
+          "omittedOrCeilingG": "0.06385"
+        },
+        {
+          "ingredient": "tuoretta persiljaa",
+          "GK": "0.01466666666666666666666666667",
+          "omittedOrCeilingG": "0"
+        },
+        {
+          "ingredient": "suolaa",
+          "GK": "0",
+          "omittedOrCeilingG": "0"
+        }
+      ],
+      "pass": true
+    },
+    {
+      "recipeId": "shakshuka",
+      "unroundedGK": "3.3146",
+      "roundedGK": "3.31",
+      "omittedOrCeilingG": "0.753175",
+      "rows": [
+        {
+          "ingredient": "kuoretonta kananmunaa",
+          "GK": "0.165",
+          "omittedOrCeilingG": "0"
+        },
+        {
+          "ingredient": "punaista paprikaa",
+          "GK": "1.08",
+          "omittedOrCeilingG": "0"
+        },
+        {
+          "ingredient": "sipulia",
+          "GK": "0.672",
+          "omittedOrCeilingG": "0"
+        },
+        {
+          "ingredient": "tomaattimurskaa",
+          "GK": "1.38",
+          "omittedOrCeilingG": "0"
+        },
+        {
+          "ingredient": "oliiviöljyä",
+          "GK": "0",
+          "omittedOrCeilingG": "0"
+        },
+        {
+          "ingredient": "juustokuminaa",
+          "GK": "0",
+          "omittedOrCeilingG": "0.4424"
+        },
+        {
+          "ingredient": "Santa Maria -savupaprikajauhetta",
+          "GK": "0",
+          "omittedOrCeilingG": "0.065"
+        },
+        {
+          "ingredient": "jauhettua mustapippuria",
+          "GK": "0",
+          "omittedOrCeilingG": "0.095775"
+        },
+        {
+          "ingredient": "puhtaita kuivattuja chilihiutaleita",
+          "GK": "0",
+          "omittedOrCeilingG": "0.15"
+        },
+        {
+          "ingredient": "tuoretta persiljaa",
+          "GK": "0.0176",
+          "omittedOrCeilingG": "0"
+        },
+        {
+          "ingredient": "suolaa",
+          "GK": "0",
+          "omittedOrCeilingG": "0"
+        }
+      ],
+      "pass": true
+    },
+    {
+      "recipeId": "munatacot-huevos-rancheros",
+      "unroundedGK": "1.7634850",
+      "roundedGK": "1.76",
+      "omittedOrCeilingG": "0.446975",
+      "rows": [
+        {
+          "ingredient": "kuoretonta kananmunaa",
+          "GK": "0.165",
+          "omittedOrCeilingG": "0"
+        },
+        {
+          "ingredient": "voita",
+          "GK": "0.0168",
+          "omittedOrCeilingG": "0"
+        },
+        {
+          "ingredient": "tomaattimurskaa",
+          "GK": "1.0350",
+          "omittedOrCeilingG": "0"
+        },
+        {
+          "ingredient": "punasipulia",
+          "GK": "0.2995850",
+          "omittedOrCeilingG": "0"
+        },
+        {
+          "ingredient": "kuorittua ja kivetöntä avokadoa",
+          "GK": "0.231",
+          "omittedOrCeilingG": "0"
+        },
+        {
+          "ingredient": "cheddarjuustoa",
+          "GK": "0.006",
+          "omittedOrCeilingG": "0"
+        },
+        {
+          "ingredient": "Santa Maria -savupaprikajauhetta",
+          "GK": "0",
+          "omittedOrCeilingG": "0.13"
+        },
+        {
+          "ingredient": "jauhettua juustokuminaa",
+          "GK": "0",
+          "omittedOrCeilingG": "0.2212"
+        },
+        {
+          "ingredient": "suolaa maun mukaan",
+          "GK": "0",
+          "omittedOrCeilingG": "0"
+        },
+        {
+          "ingredient": "jauhettua mustapippuria",
+          "GK": "0",
+          "omittedOrCeilingG": "0.095775"
+        },
+        {
+          "ingredient": "tuoretta korianteria",
+          "GK": "0.01010",
+          "omittedOrCeilingG": "0"
+        }
+      ],
+      "pass": true
+    },
+    {
+      "recipeId": "paprikainen-vhh-gulassi",
+      "unroundedGK": "3.516050",
+      "roundedGK": "3.52",
+      "omittedOrCeilingG": "0.5711375",
+      "rows": [
+        {
+          "ingredient": "naudan paistia",
+          "GK": "0",
+          "omittedOrCeilingG": "0"
+        },
+        {
+          "ingredient": "sipulia",
+          "GK": "0.72",
+          "omittedOrCeilingG": "0"
+        },
+        {
+          "ingredient": "valkosipulinkynttä",
+          "GK": "0.14670",
+          "omittedOrCeilingG": "0"
+        },
+        {
+          "ingredient": "punaista paprikaa",
+          "GK": "0.72",
+          "omittedOrCeilingG": "0"
+        },
+        {
+          "ingredient": "tomaatti",
+          "GK": "0.414",
+          "omittedOrCeilingG": "0"
+        },
+        {
+          "ingredient": "tomaattipyreetä",
+          "GK": "0.119250",
+          "omittedOrCeilingG": "0"
+        },
+        {
+          "ingredient": "paprikajauhetta",
+          "GK": "0",
+          "omittedOrCeilingG": "0.41265"
+        },
+        {
+          "ingredient": "voita",
+          "GK": "0.0126",
+          "omittedOrCeilingG": "0"
+        },
+        {
+          "ingredient": "juustokuminaa",
+          "GK": "0",
+          "omittedOrCeilingG": "0.1106"
+        },
+        {
+          "ingredient": "lihalientä",
+          "GK": "1.125",
+          "omittedOrCeilingG": "0"
+        },
+        {
+          "ingredient": "suolaa maun mukaan",
+          "GK": "0",
+          "omittedOrCeilingG": "0"
+        },
+        {
+          "ingredient": "mustapippuria",
+          "GK": "0",
+          "omittedOrCeilingG": "0.0478875"
+        },
+        {
+          "ingredient": "smetanaa",
+          "GK": "0.2475",
+          "omittedOrCeilingG": "0"
+        },
+        {
+          "ingredient": "persiljaa",
+          "GK": "0.0110",
+          "omittedOrCeilingG": "0"
+        }
+      ],
+      "pass": true
+    },
+    {
+      "recipeId": "caponata",
+      "unroundedGK": "6.123750",
+      "roundedGK": "6.12",
+      "omittedOrCeilingG": "0.110025",
+      "rows": [
+        {
+          "ingredient": "munakoisoa",
+          "GK": "2.48",
+          "omittedOrCeilingG": "0"
+        },
+        {
+          "ingredient": "oliiviöljyä",
+          "GK": "0",
+          "omittedOrCeilingG": "0"
+        },
+        {
+          "ingredient": "sipuli",
+          "GK": "0.264",
+          "omittedOrCeilingG": "0"
+        },
+        {
+          "ingredient": "sellerinvartta",
+          "GK": "0.088",
+          "omittedOrCeilingG": "0"
+        },
+        {
+          "ingredient": "tomaattimurskaa",
+          "GK": "1.38",
+          "omittedOrCeilingG": "0"
+        },
+        {
+          "ingredient": "vihreitä oliiveja",
+          "GK": "0",
+          "omittedOrCeilingG": "0"
+        },
+        {
+          "ingredient": "kapriksia",
+          "GK": "0",
+          "omittedOrCeilingG": "0.110025"
+        },
+        {
+          "ingredient": "punaviinietikkaa",
+          "GK": "0.01875",
+          "omittedOrCeilingG": "0"
+        },
+        {
+          "ingredient": "sokeria",
+          "GK": "1.873125",
+          "omittedOrCeilingG": "0"
+        },
+        {
+          "ingredient": "suolaa",
+          "GK": "0",
+          "omittedOrCeilingG": "0"
+        },
+        {
+          "ingredient": "tuoretta basilikaa",
+          "GK": "0.019875",
+          "omittedOrCeilingG": "0"
+        }
+      ],
+      "pass": true
+    },
+    {
+      "recipeId": "janssoninkiusaus-juuriselleri",
+      "unroundedGK": "3.04675",
+      "roundedGK": "3.05",
+      "omittedOrCeilingG": "0.0478875",
+      "rows": [
+        {
+          "ingredient": "juuriselleriä",
+          "GK": "1.8550",
+          "omittedOrCeilingG": "0"
+        },
+        {
+          "ingredient": "öljyyn säilöttyjä anjovisfileitä, valutettuna",
+          "GK": "0",
+          "omittedOrCeilingG": "0"
+        },
+        {
+          "ingredient": "sipuli",
+          "GK": "0.264",
+          "omittedOrCeilingG": "0"
+        },
+        {
+          "ingredient": "kuohukermaa, rasvaa 38 %",
+          "GK": "0.54375",
+          "omittedOrCeilingG": "0"
+        },
+        {
+          "ingredient": "täysmaitoa, rasvaa 3,5 %",
+          "GK": "0.36",
+          "omittedOrCeilingG": "0"
+        },
+        {
+          "ingredient": "voita",
+          "GK": "0.0168",
+          "omittedOrCeilingG": "0"
+        },
+        {
+          "ingredient": "jauhettua mustapippuria",
+          "GK": "0",
+          "omittedOrCeilingG": "0.0478875"
+        },
+        {
+          "ingredient": "silputtua tilliä",
+          "GK": "0.0072",
+          "omittedOrCeilingG": "0"
+        },
+        {
+          "ingredient": "suolaa",
+          "GK": "0",
+          "omittedOrCeilingG": "0"
+        }
+      ],
+      "pass": true
+    },
+    {
+      "recipeId": "taytetyt-paprikat-vhh",
+      "unroundedGK": "3.73350",
+      "roundedGK": "3.73",
+      "omittedOrCeilingG": "0.521925",
+      "rows": [
+        {
+          "ingredient": "punaista paprikaa",
+          "GK": "2.88",
+          "omittedOrCeilingG": "0"
+        },
+        {
+          "ingredient": "naudan jauhelihaa, rasvaa 17 %",
+          "GK": "0",
+          "omittedOrCeilingG": "0"
+        },
+        {
+          "ingredient": "sipulia",
+          "GK": "0.336",
+          "omittedOrCeilingG": "0"
+        },
+        {
+          "ingredient": "tomaattimurskaa",
+          "GK": "0.51750",
+          "omittedOrCeilingG": "0"
+        },
+        {
+          "ingredient": "tomaattipyreetä",
+          "GK": "0",
+          "omittedOrCeilingG": "0.318"
+        },
+        {
+          "ingredient": "kuivattua oreganoa",
+          "GK": "0",
+          "omittedOrCeilingG": "0.10815"
+        },
+        {
+          "ingredient": "jauhettua mustapippuria",
+          "GK": "0",
+          "omittedOrCeilingG": "0.095775"
+        },
+        {
+          "ingredient": "puolikovaa juustoraastetta, koostumusvertailussa rasvaa 25–35 %",
+          "GK": "0",
+          "omittedOrCeilingG": "0"
+        },
+        {
+          "ingredient": "oliiviöljyä",
+          "GK": "0",
+          "omittedOrCeilingG": "0"
+        },
+        {
+          "ingredient": "suolaa",
+          "GK": "0",
+          "omittedOrCeilingG": "0"
+        }
+      ],
+      "pass": true
+    },
+    {
+      "recipeId": "rogan-josh",
+      "unroundedGK": "1.1118",
+      "roundedGK": "1.11",
+      "omittedOrCeilingG": "1.965075",
+      "rows": [
+        {
+          "ingredient": "lampaan lapaa",
+          "GK": "0",
+          "omittedOrCeilingG": "0"
+        },
+        {
+          "ingredient": "oliiviöljyä",
+          "GK": "0",
+          "omittedOrCeilingG": "0"
+        },
+        {
+          "ingredient": "sipuli",
+          "GK": "0.264",
+          "omittedOrCeilingG": "0"
+        },
+        {
+          "ingredient": "maustamatonta jogurttia, rasvaa 2,5 %",
+          "GK": "0.75",
+          "omittedOrCeilingG": "0"
+        },
+        {
+          "ingredient": "tuoretta kuorittua valkosipulia",
+          "GK": "0.0978",
+          "omittedOrCeilingG": "0"
+        },
+        {
+          "ingredient": "tuoretta inkivääriä",
+          "GK": "0",
+          "omittedOrCeilingG": "0.591375"
+        },
+        {
+          "ingredient": "jauhettua juustokuminaa",
+          "GK": "0",
+          "omittedOrCeilingG": "0.3374"
+        },
+        {
+          "ingredient": "jauhettua korianterinsiementä",
+          "GK": "0",
+          "omittedOrCeilingG": "0.06545"
+        },
+        {
+          "ingredient": "paprikajauhetta",
+          "GK": "0",
+          "omittedOrCeilingG": "0.1834"
+        },
+        {
+          "ingredient": "chilijauhetta",
+          "GK": "0",
+          "omittedOrCeilingG": "0.25"
+        },
+        {
+          "ingredient": "kanelitankoa",
+          "GK": "0",
+          "omittedOrCeilingG": "0.13745"
+        },
+        {
+          "ingredient": "kokonaisia kardemummakotia",
+          "GK": "0",
+          "omittedOrCeilingG": "0.4"
+        },
+        {
+          "ingredient": "suolaa",
+          "GK": "0",
+          "omittedOrCeilingG": "0"
+        },
+        {
+          "ingredient": "vettä",
+          "GK": "0",
+          "omittedOrCeilingG": "0"
+        }
+      ],
+      "pass": true
+    }
+  ],
+  "macroChecks": [
+    {
+      "recipeId": "menemen",
+      "values": {
+        "carbs_net_per_serving_g": "6.87",
+        "carbs_total_per_serving_g": "8.70",
+        "protein_per_serving_g": "10.74",
+        "fat_per_serving_g": "16.35"
+      },
+      "omittedMassCeilingG": "0.5000000000000000000000000000",
+      "energyCeilingKcal": "4.500000000000000000000000000",
+      "pass": true
+    },
+    {
+      "recipeId": "taytetyt-paprikat-vhh",
+      "values": {
+        "carbs_net_per_serving_g": "9.65",
+        "carbs_total_per_serving_g": "13.09",
+        "protein_per_serving_g": "36.40",
+        "fat_per_serving_g": "35.80"
+      },
+      "omittedMassCeilingG": "0.75",
+      "energyCeilingKcal": "6.75",
+      "pass": true
+    }
+  ],
+  "gkPass": 10,
+  "completeMacroPass": 2,
+  "withheldPackages": 8
+}

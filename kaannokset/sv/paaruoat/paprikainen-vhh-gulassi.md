@@ -7,104 +7,83 @@ language: sv
 diet_class: vhh_valjempi
 servings: 4
 main_ingredient:
-  - naudanliha
-  - paprika
+- naudanliha
+- paprika
 cooking_method:
-  - uuni
+- uuni
 difficulty: lätt
 tags:
-  - lågkolhydrat
-  - gulasch
-  - nötkött
-  - paprika
-  - gryta
+- lågkolhydrat
+- gulasch
+- nötkött
+- paprika
+- gryta
 image:
   src: paaruoat/paprikainen-gulassi.webp
   alt: Pepprig oxgryta med smetana och färsk persilja
   width: 1280
   height: 853
 ingredients:
-  - amount: 700
-    unit: g
-    item: nötstek i grytbitar (rå)
-    note: ca 3 cm kuber
-  - amount: 150
-    unit: g
-    item: lök
-    note: "finhackad"
-  - amount: 3
-    unit: st
-    item: vitlöksklyfta
-    note: krossad
-  - amount: 1
-    unit: st
-    item: röd paprika
-    note: "tärnad"
-  - amount: 1
-    unit: st
-    item: tomat
-    note: "tärnad"
-  - amount: 1
-    unit: msk
-    item: tomatpuré
-  - amount: 1.5
-    unit: msk
-    item: paprikapulver
-    note: gärna rökt paprika eller sött paprikapulver
-  - amount: 1.5
-    unit: msk
-    item: smör eller olja
-    note: för att bryna kött
-  - amount: 0.5
-    unit: tsk
-    item: spiskummin
-  - amount: 3
-    unit: dl
-    item: köttbuljong
-  - amount: 1
-    unit: tsk
-    item: salt
-    note: eller efter smak
-  - amount: null
-    unit: ""
-    item: svartpeppar
-    note: efter smak
-  - amount: 150
-    unit: g
-    item: "smetana"
-    note: att servera
-  - amount: null
-    unit: ""
-    item: persilja
-    note: strimlad, om så önskas
+- amount: 700.0
+  unit: g
+  item: nötstek i grytbitar (rå)
+- amount: 150.0
+  unit: g
+  item: lök
+- amount: 9.0
+  unit: g
+  item: vitlöksklyfta
+- amount: 160.0
+  unit: g
+  item: röd paprika
+- amount: 120.0
+  unit: g
+  item: tomat
+- amount: 15.0
+  unit: g
+  item: tomatpuré
+- amount: 9.0
+  unit: g
+  item: paprikapulver
+- amount: 21.0
+  unit: g
+  item: smör eller olja
+- amount: 1.0
+  unit: g
+  item: spiskummin
+- amount: 300.0
+  unit: g
+  item: köttbuljong
+- amount: null
+  unit: ''
+  item: salt
+- amount: 0.5
+  unit: g
+  item: svartpeppar
+- amount: 150.0
+  unit: g
+  item: smetana
+- amount: 10
+  unit: g
+  item: persilja
 status: published
 source_language: fi
 source_recipe: reseptit/paaruoat/paprikainen-vhh-gulassi.md
 translation_of: paprikainen-vhh-gulassi
-carbs_net_per_serving_g: 8.72
-carbs_total_per_serving_g: 11.29
-protein_per_serving_g: 40.59
-fat_per_serving_g: 24.04
-
+carbs_net_per_serving_g: null
+carbs_total_per_serving_g: null
+protein_per_serving_g: null
+fat_per_serving_g: null
 ---
 
 # Paprikagryta med nötkött
 
-Den långkokta nötgrytan får sin smak från paprika, vitlök och mjuk smetana.
+## Tillagning
 
-## Beskrivning
-
-I denna gulasch stuvas rikligt med nötkött och paprika utan mjöl. Servera med smetana och välj till exempel mosad blomkål eller kålsallad som tillbehör.
-
-## Gör så här
-
-1. Värm ugnen till 160 grader. Ta köttet till rumstemperatur en stund och torka av bitarna med hushållspapper.
-2. Bryn köttbitarna i en panna i små omgångar smör eller olja. Flytta åt sidan. Tillsätt löken i grytan och fräs tills den är mjuk. Blanda i vitlök och paprikapulver.
-3. Tillsätt tomatpuré, paprika, tomat och spiskummin. Lägg tillbaka köttet i grytan, häll på köttbuljongen och krydda med salt och svartpeppar.
-4. Täck med lock och låt sjuda i ugnen i ca 1 timme 45 minuter tills köttet är mört. Kontrollera mängden vätska då och då och tillsätt en skvätt vatten om det behövs.
-5. Smaka av och justera kryddorna. Servera med smetana och valfritt lågkolhydrattillbehör.
+1. Skär 700 g nötstek, 150 g lök, 9 g vitlök, 160 g röd paprika och 120 g tomat. Bryn kött och lök i hela 21 g smör.
+2. Tillsätt grönsakerna, 15 g tomatpuré, 9 g sött paprikapulver, 1 g spiskummin och 300 g färdig köttbuljong. Sjud under lock i 1,5 timmar tills köttet är mört.
+3. Tillsätt 0,5 g svartpeppar och 10 g persilja. Servera hela grytan med sås och fett samt 150 g smetana med cirka 40% fett i fyra portioner. Separata tillbehör ingår inte.
 
 ## Anteckningar
 
-– Grytan passar att servera med mosad blomkål, rostad vitkål eller en grönsallad.
-– Receptet innehåller inte potatis eller mjöl. lågkolhydrat-klassificeringen är bredare än i de andra två recepten; kontrollera ingrediensernas förpackningsetiketter och portionsstorleken enligt din egen kost.
+Väg de ätliga ingredienserna ovan. All angiven mat, sås och stekfett ingår i portionerna; separata tillbehör ingår inte. Näringsvärden visas tills vidare inte i väntan på källkontroll.
