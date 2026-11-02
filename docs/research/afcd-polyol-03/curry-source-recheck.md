@@ -18,3 +18,11 @@ Tämä jatko käyttää aiemman [kookosmaitoreitin](coconut-product-route.md) ne
 Toisto: kookosmaidon 0,8 ja basilikan 0,053 g/annos lisätään lehden osuuteen. Tahnan ja kastikkeen massapohjaiset pitoisuudet kerrotaan kumpikin luvulla 30 / 100 / 4. Lasketun osuuden kasvissidokset ovat aiemmassa paketissa.
 
 **Päätös: lähde-HOLD.** Tahnan markkinaversio, kastikkeen massaperuste ja lehden soveltuva koostumusnäyttö on sidottava samaan syötteeseen. Tarkistus osoittaa, että lehdelle on Thai FCD:n rinnalla toinen laskentakelpoisen marginaalin tuottava tutkimusreitti. Yhtään uutta lähdekelpoista GK-arvoa ei vielä synny.
+
+## Squid 725 ml:n massaperusteinen vaihtoehto
+
+Oriental Merchantin 4.2.2021 päivätyssä IFSS-tuotetietolehdessä Squid-lasipullon EAN on 8850620888203. Yksittäispakkauksen tilavuus on 725 ml ja nettopaino 885 g. Tuotteen ilmoitus on 3,4 g CHO/100 ml. Näistä saadaan nimellisesti 2,78531 g/100 g ja reseptin 30 grammasta 0,20890 g/annos. Lasku käyttää saman yksittäispakkauksen nettotietoja. [Oriental Merchantin tuotetietolehti](https://www.mocofoodservices.com.au/globalassets/moco---catalog-image/37419-ifss---squid-brand-fish-sauce-725ml.pdf)
+
+Kun tahnan 6,4 g/100 g ja lehden Thai FCD -skenaario yhdistetään tähän kastikkeeseen, poisjättö on 1,65045 g/annos. Kuivaustutkimuksen lehtiskenaariossa vastaava summa on 1,85590 g. Molemmat alittavat nykyiset A-rajat. Resepti määrää 30 g Squid Brand -kalakastiketta, joten 725 ml:n pakkaus sopii alkuperäiseen ainesosakuvaukseen. Tieto koskee vuoden 2021 AU-etikettiversiota. Pakkausmerkinnän vastaavuus on tarkistettava ennen hyväksyntää. 700 ml:n PET-pullon ilmoituspohja jää avoimeksi.
+
+Tuotetietolehti luettiin verkkotyökalulla. Suora lataus palautti HTTP 403:n, joten tälle havainnolle ei ole tiedostohashia. Tahnan ja lehden aiemmat lähdeportit koskevat myös tätä skenaariota.
