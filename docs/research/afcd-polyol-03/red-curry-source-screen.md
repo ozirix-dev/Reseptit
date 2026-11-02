@@ -13,3 +13,9 @@ Nykyinen ohje tarjoilee 60 g limelohkoja. Tästä ei johdeta puristettavan mehun
 Kaikissa riveissä perusvaraus on kookosmaito 0,8 + Valcom Red -tahna 0,285 + bambunversot 0,65 + basilika 0,053 = 1,788 g/annos. Kastikkeen varaukset ovat 0,0975 tai 0,01875. Limen osuudet ovat 0,18 tai 0,09. Jos kevyemmin siirrettävä 60 g:n syötävän limen ja Red Boatin vaihtoehto valitaan, yhteisrajan marginaali on 0,01325 g. Pienempi 30 g:n versio jättäisi 0,10325 g. Luvut ovat ehdollisia lähdepisteitä. Tuotekannan vaihtelua ei ole rajattu.
 
 Seuraava lähdeportti on selvittää, löytyykö tietylle valutetulle bambusäilykkeelle riittävän pieni per 100 g tuotetieto. Rinnalla tarkistetaan kasvisten GI-sidos ja ajetaan koko syöte laskentamoottorilla. Tästä seulasta ei vielä synny julkaistavaa GK-arvoa.
+
+## Pakkauskohtainen vaihtoehto
+
+Tesco ilmoittaa Kingfisher Bamboo Shoots in Water 225 g / 120 g valutettuna -säilykkeelle 0,7 g CHO/100 g valutettua tuotetta. Kahdesta tölkistä punnittu 200 g antaisi 0,35 g/annos. Kingfisherin omalla tuotesivulla samat ravintoarvot on otsikoitu per 100 ml valutettuna, joten ensisijainen pakkausmerkintä on tarkistettava ennen sidontaa. [Tesco](https://www.tesco.com/shop/en-GB/products/265819146) · [Kingfisher](https://kingfisherfoods.co.uk/product-specifications/)
+
+Jos pakkaus vahvistaa massapohjan, 60 g kuorittua limeä ja alkuperäiset 15 g Squid 300 ml -kastiketta antavat yhteensä 1,7655 g/annos, eli marginaali kasvaa 0,2345 grammaan. Tämä säilyttää alkuperäisen kastikemäärän. Muutoksen kohteena on limen syötävän osuuden määrittely ja täsmällinen säilyke. Aritmeettinen skenaario odottaa pakkausmerkintää ja koko reseptin moottoritoistoa.
