@@ -36,4 +36,31 @@ for r in methods:r['dependentRecipeCount']=len(r['dependentRecipes'].split(';'))
 writecsv('method-impact.csv',methods)
 summary=load(out/'summary.json');summary.update({'sharedA':10,'sharedB':6,'newSupplementB':0,'newAssumptionResearchCases':4,'uniqueJointNumericCandidates':16,'jointCoverage':'172/326','jointCoveragePercent':52.76,'target30Shortfall':14,'remainingAfterJointCandidatesTo80':89,'priorityModelCandidates':39,'priorityProductPreparationCandidates':38,'priorityUnresolvedAfterKnownB':71,'newApprovedPublishedNumeric':0,'ownerClarification':'GK-only further preparation and B research authorized; no new GI assumptions or publication authorized','assumptionScenariosExcludedFromCandidateAndCoverageCounts':True})
 (out/'summary.json').write_text(json.dumps(summary,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-print(json.dumps({'finalizedCandidates':16,'A':10,'B':6,'priority77':77,'priorityUnresolved':71,'additionalApprovedNumeric':0,'parkedAssumptions':4,'methodGroups':len(methods)}))
+base_summary={'finalizedCandidates':16,'A':10,'B':6,'priority77':77,'priorityUnresolved':71,'additionalApprovedNumeric':0,'parkedAssumptions':4,'methodGroups':len(methods)}
+
+if len(sys.argv)>5:
+ source_dir,source_results=map(pathlib.Path,sys.argv[4:6])
+ additions=[json.loads(line) for line in (source_dir/'cases.jsonl').read_text(encoding='utf-8').splitlines()]
+ source_eval=load(source_results/'source-first-results.json')
+ expected={r['recipeId']:r for r in source_eval['results']}
+ assert len(additions)==2 and len({c['recipeId'] for c in additions})==2
+ assert not {c['recipeId'] for c in additions}&{r['recipeId'] for r in rows}
+ assert all(c['recipeId'] in {r['recipeId'] for r in priority} for c in additions)
+ assert all(expected[c['recipeId']]['numericProposal'] and expected[c['recipeId']]['publicationAuthorized'] is False for c in additions)
+ extra_ids={c['recipeId'] for c in additions}
+ for r in priority:
+  r['sourceExtensionNumeric']=r['recipeId'] in extra_ids
+  r['jointPreparedNumeric']=bool(r['currentPilotNumeric'] or r['sourceExtensionNumeric'])
+ writecsv('priority77.csv',priority)
+ for m in methods:
+  ids=set(m['dependentRecipes'].split(';'))
+  selected=ids&extra_ids
+  m['actualPreparedNumeric']+=len(selected)
+  m['additionalBeyond16']+=len(selected)
+  if selected:m['remainingConditions']+='; only '+','.join(sorted(selected))+' verified; other dependent recipes remain unresolved'
+  if m['methodId']=='PULSE_PREPARATION_GROUP':m['risk']+='; cashew22-27 scenario spread does not bound mung/rice porridge uncertainty'
+ writecsv('method-impact.csv',methods)
+ summary.update({'sharedA':10,'sharedB':6,'newSupplementA':1,'newSupplementB':1,'uniqueJointNumericCandidates':18,'preparedA':11,'preparedB':7,'jointCoverage':'174/326','jointCoveragePercent':53.37,'target30Shortfall':12,'remainingAfterJointCandidatesTo80':87,'priorityUnresolvedAfterKnownB':71,'priorityUnresolvedAfterAllPrepared':69,'upstreamMethodAndContentApproved':16,'upstreamAdditionalUnapprovedCandidate':1,'newDistinctBeyondCurrentUpstream17':1,'extensionMethodAndVersionApprovalsRequired':2,'newApprovedPublishedNumeric':0,'upstreamHead':'54615726324d855bbfe0d72c3fc3ba58ceced9d4','ownerClarification':'Original16 have exact approval recorded upstream; extensions unapproved, no release approval'})
+ (out/'summary.json').write_text(json.dumps(summary,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+ base_summary.update({'finalizedCandidates':18,'A':11,'B':7,'priorityUnresolved':69,'currentUpstreamMethodContentApproved':16,'newDistinctBeyondCurrentUpstream17':1})
+print(json.dumps(base_summary))

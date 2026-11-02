@@ -2,76 +2,77 @@
 
 ## Päätös ja todellinen kattavuus
 
-Valittu toteutusreitti on nykyisen GK-only-putken täydentäminen yhteisillä lähde-, määrä- ja valmistussidoksilla. Julkaisupolku on yksi: [Operaatio 149 V2, Draft PR #183](https://github.com/ozirix-dev/Reseptit/pull/183). Tässä haarassa on siihen yhdistettävä aineisto ja eristetyt työkalut; kilpailevaa GK-julkaisu-PR:ää ei avata.
+Paras etenemisreitti on nykyisen GK-only-laskennan lähde-, määrä- ja valmistussidosten täydentäminen. Käytä A-aritmetiikkaa aina kun nykyiset ehdot täyttyvät; varaa B erikseen arvioitaville nimetyille analogioille. Yksi julkaisupolku on [Operaatio 149 V2, Draft PR #183](https://github.com/ozirix-dev/Reseptit/pull/183). Tämä haara toimittaa siihen konfliktittoman aineiston ja eristetyt laskentatyökalut.
 
-**Viimeistelty yhteinen erä: 10 nykyisen A-aritmetiikan tulosta + 6 hyväksyntää odottavaa B-ehdotusta = 16 numeerista ehdokasta. C-luokkia 0.** Kaikki 16 tarvitsevat täsmällisten reseptiversioiden ja julkaisusopimuksen hyväksynnän. A- ja B-valtuudet ovat erillisiä. Käyttäjän lupa GK-only-jatkovalmisteluun ei hyväksy uusia GI-oletuksia tai julkaisemista.
+**Yhteensä 18 uniikkia numeerista ehdokasta: 11 A + 7 B, C-luokkia 0.** Alkuperäiset 16 ovat #183:n menetelmä- ja sisältöhyväksytyssä integraatiossa; julkaisuvaltuutta ei ole. Kahvijogurtti on jo saman PR:n erillisessä A-ehdotuksessa. Tässä varmennettiin sen A-laskenta ja lisättiin uusi ven pongal -B-ehdotus. Kahvijogurttia tai vaihtoehtoista B-laskelmaa ei lasketa toista kertaa.
 
 | Tila | Numeerinen kattavuus |
 | --- | ---: |
-| Nykyinen main / tuotannon lähtötila | 156/326 = 47,85 % |
-| Kymmenen A-version myöhempi hyväksyntä ja julkaisu | 166/326 = 50,92 % |
-| Lisäksi kuuden B-version hyväksyntä ja julkaisu | 172/326 = 52,76 % |
+| Main / tuotannon lähtötila | 156/326 = 47,85 % |
+| #183:n 16 erillisen version myöhempi julkaisu | 172/326 = 52,76 % |
+| Lisäksi kahvijogurtin ja pongalin hyväksyntä ja julkaisu | 174/326 = 53,37 % |
 | Vähintään 30 uuden ehdokkaan tavoite | 186/326 = 57,06 % |
 | Lopullinen vähintään 80 %:n tavoite | 261/326 = 80,06 % |
 
-**30:n tavoite ei vielä täyty: 14 perusteltua lisäehdokasta puuttuu.** Neljää mantelijauhon GI50-mallilla laskettua tutkimusskenaariota ei lasketa ehdokkaisiin tai kattavuuteen. Tällä ajolla hyväksyttyjä tai julkaistuja uusia lukuja on 0. Nykyisestä lähtötilasta 80 %:iin tarvitaan 105 uutta julkaisua; 16 ehdokkaan mahdollisen julkaisun jälkeen puuttuisi 89.
+**30:n tavoitteesta puuttuu 12 perusteltua numeroa.** Tällä ajolla julkaistuja uusia arvoja on 0. Nykyisestä lähtötilasta tarvitaan 105 uutta julkaisua; kaikkien 18 ehdokkaan mahdollisen julkaisun jälkeen puuttuisi 87. Neljä aiempaa mantelijauhon GI50-tutkimusskenaariota eivät kuulu näihin lukuihin.
 
-## 16 ehdokkaan viimeistely
+## Alkuperäisten 16:n viimeistely ja hyväksynnän raja
 
-[16-decision-matrix.csv](16-decision-matrix.csv) erottaa A/B-tason, pisteet ja välit, pois jätetyn hiilihydraatin, nimetyt GI-havainnot, nykyiset koodaukset, uudet toimitukselliset koodaukset, herkkyyskokeet ja hyväksynnät. Täydellisiä tulosobjekteja tai lähdehavaintoja ei kopioida reseptikohtaisesti.
+[16-decision-matrix.csv](16-decision-matrix.csv) sisältää alkuperäiset 10 A- ja 6 B-tapausta: pisteet/välit, pois jätetyn hiilihydraatin, lähdehavainnot, nykyiset ja uudet koodaukset, herkkyyskokeet sekä täsmällisten versioiden hashit. Kaikki 19 alkuperäistä laskentatapausta säilyvät samoina: 16 numeroa ja kolme A-pidätystä.
 
-| Nykyisen A-menetelmän ehdokkaat | GK/annos |
-| --- | ---: |
-| Keto-mutakakku | 0,07 |
-| Keto-suklaakeksit | 0,03 |
-| VHH-juustokakku | 0,63 |
-| Palak paneer | 1,79 |
-| Paneer tikka | 3,07 |
-| Kana-parmesaanipannu | 1,06 |
-| Kermainen kanasienipannu | 0,74 |
-| VHH-pyttipannu | 2,60 |
-| VHH-mansikkakakku | 1,11 |
-| Pho ga -aamiaiskeitto | 24,96 |
+A-tulokset ovat keto-mutakakku 0,07; suklaakeksit 0,03; VHH-juustokakku 0,63; palak paneer 1,79; paneer tikka 3,07; kana-parmesaanipannu 1,06; kanasienipannu 0,74; VHH-pyttipannu 2,60; mansikkakakku 1,11; pho ga 24,96. Pieni laskentaluku ei osoita lähes olematonta mitattua vastetta: positiivinen A-poisjättö ja sen oletusherkkyys säilyvät näkyvissä.
 
-B-ehdokkaat ovat congee 31,09; halloumi-tomaattileipä noin 12,84–17,77; makaronilaatikko noin 16,91–17,76; kurpitsapuuro 35,42; laksa 27,55; kaya-paahtoleipä noin 18,37–23,31. Kolme on piste- ja kolme lähdeskenaarioväliehdotuksia. Mikään väli ei ole fysiologinen virheraja tai luottamusväli.
+B-tulokset ovat congee 31,09; halloumileipä 12,84–17,77; makaronilaatikko 16,91–17,76; kurpitsapuuro 35,42; laksa 27,55; kaya-paahtoleipä 18,37–23,31. Kaksi ensimmäistä perustuu nimettyihin valmistusanalogioihin; neljä muuta sisältää lisäksi rajattua kasvi-/pienainesosan GI50-koodausta. Välit ovat ehdollisia lähdeskenaarioita, eivät fysiologisia virherajoja tai luottamusvälejä.
 
-Congee ja halloumileipä tarvitsevat nimettyjen valmistusanalogioiden hyväksynnän. Muut neljä B-tapausta tarvitsevat lisäksi nimetyn kasvi-/pienainesosan GI50-koodauksen hyväksynnän. Pelkkä numeerinen laskentatulos ei hyväksy analogiaa. Pisteet ja vaihteluvälit eivät peitä erillistä GI0–150-oletusherkkyyttä.
+#183:n HEAD `54615726324d855bbfe0d72c3fc3ba58ceced9d4` sisältää erillisen `owner-approval.json`-kirjauksen alkuperäisen commitin `7127c001` täsmällisille 16 syötteelle. Hyväksyntä kattaa niiden menetelmän, versiot ja integraation, myös laksan 2 g curryjauhetarkennuksen. Se ei hyväksy uusia kahvijogurtti-/pongal-syötteitä eikä Readyä, mergeä tai deployta. Jäädytetyn matriisin `publicationAuthorized=false` pysyy oikeana. Muuttuneelle versiolle ei peritä alkuperäisen reseptin makropakettia.
 
-Kaikkien 16:n alkuperäiset reseptiversiot ja ehdotetut punnitut versiot tarkistettiin rinnakkain. Kokonaiset hiilihydraattipitoiset ainesosat säilyvät. Laksa sisältää erikseen hyväksyttävän 2 g curryjauhetäydennyksen, koska nykyinen valmistusohje mainitsee curryn mutta ainesosaluettelo ei määrää. Luovutusaineisto ei hyväksy sitä nykyiseksi reseptiksi. Lusikkamäärien korvaaminen punnituilla vanilja-, mauste- ja leivinjauhemäärillä on sisältöpäätös. Vanhoja makroja ei saa periä muuttuneelle versiolle.
+## Kaksi varmennettua lisäsyötettä
 
-## AFCD:n välitön vaikutus
+[source-extensions/cases.jsonl](source-extensions/cases.jsonl) sisältää vain kaksi täsmällistä syötettä. Yhteiset havainnot ja lähdesidokset ovat erillisissä pienissä tiedostoissa. [source-first-candidates.csv](source-extensions/source-first-candidates.csv) antaa tulokset ja versiohashit.
 
-Nykyisistä 170 GK-puutteisesta reseptistä 88 käyttää AFCD:tä: **68 natiivitietuetta ja 91 paikallista arvoversiota**. Niistä 90 vastaa lähteen without sugar alcohols -kenttää. Yksi vadelmakopio riippuu yhä avoimesta [PR #182:sta](https://github.com/ozirix-dev/Reseptit/pull/182); sen korjausta ei kopioitu tähän haaraan. Saman paikallisen tunnisteen kaksi jo oikeaa makrokopiota erotetaan väärästä GK-kopiosta.
+| Resepti | Valittu reitti | GK/annos | Päätettävää ennen integraatiota |
+| --- | --- | ---: | --- |
+| Vietnamilainen kahvijogurtti banaanilla | A, nykyinen aritmetiikka | ≈ 10,92 | Fineli620:n makeuttamaton jogurtti3,9 %, kuorittu raaka tavallinen banaani125 g, kondensoitu makeutettu lehmänmaito30 g, täsmälliset lähdesidokset ja versio |
+| Intialainen ven pongal | B, valmistusanalogiat | noin 44 | Kokonainen kuiva vihreä mung150 g, kuiva valkoinen riisi100 g, kaikki keitinliemi nautitaan; nimetyt puuro-/cashew-analogiat, pieni pippuriosuus, punnittu ghee ja sisältöversion korjaus |
 
-Kokonaispolyolin muuttaminen tuntemattomaksi ei muuta yhdenkään 170 puuttuvan tapauksen nykyistä raakalaskentaa. **Pelkkä AFCD-polyolien yleinen uudelleentulkinta avaa siis 0 uutta numeroa.** Uusia A-ehdokkaita tästä erillisestä AFCD-ajosta on 0; yhteisen erän kymmenen A-tapausta kuuluvat #183:een. Erillisiä GI50-mallin tutkimusskenaarioita on neljä, mutta kelpuutettuja uusia B-ehdokkaita niistä on 0.
+Kahvijogurtin riippumaton Decimal-tulos on 10,918125. Kahvin 0,3 g saatavaa hiilihydraattia/annos jätetään pois muuttumattomilla A-rajoilla; sitä ei oleteta nollavaikutteiseksi. Finelin oma annospaino sitoo alkuperäisen banaanin kappalemäärän125 grammaan. [Atkinsonin ym. 2021 taulukon](https://nutritotal.com.br/pro/wp-content/uploads/sites/3/2021/09/Tabela1_IG.pdf) sivu63, kohta936 sisältää nimetyn makeutetun kondensoidun maidon GI61-havainnon ja sivu73, kohta1088 raa'an banaanin GI47-havainnon. Jogurtin30 on nykyisen projektikoodauksen erikseen katselmoitava sovellus. A-laskentareitin valinta välttää kahville uuden GI50-sidoksen ja tarpeettoman B-riippuvuuden. Se vastaa #183:n jo lisäämää A-ehdotusta; kyseessä on yksi resepti.
 
-Yhteinen eristetty lähdeprofiili [gk-only-source.ts](gk-only-source.ts) käyttää varmennettua lähdeversiota, natiivi-ID:tä ja without-kenttää. Se säilyttää kokonaispolyolin tuntemattomana eikä vaadi proteiinia tai rasvaa. Se ei hyväksy GI:tä, makroja tai julkaisemista. Virheellinen paikallinen kenttävalinta pysäyttää sovituksen. Lähdemääritelmiä ei tutkittu uudelleen; pohjana on [PR #181](https://github.com/ozirix-dev/Reseptit/pull/181).
+Pongalin laskentaskenaariot ovat 43,49385–43,60835. Tämä ero tulee cashew-vertailuista22/27, **ei rajaa mungin tai riisin valmistuksen kokonaisepävarmuutta**. Siksi esitysehdotus on karkea noin44 ja selvä LOW-varaus, ei näennäisen tarkka virheväli. Keitetyn mungin GI42-havainto on laadultaan heikko (n7, ei toistettua vertailuruokaa); pehmeä sekaruokapuuro on hyväksyttävä erillisenä analogiana. Pippurin olemassa oleva ehdotettu trace50-sovellus vaatii tämän version hyväksynnän. Raakapapujen koko lähdehiilihydraatti sisältyy laskentaan; alkuperäistä150 g määrää ei korvata keitetyn ruoan100 g pitoisuudella. Cashewpähkinöitä on nykyisen reseptin20 g. Yleinen lihantäyttöohjeen tekstijäänne pitää korjata hyväksyttävässä sisältöversiossa. Uutta merkittävän ruoka-aineen GI50-oletusta ei lisätä.
 
-## Yhteiset esteet ja menetelmien todellinen tuotto
+## Yhteisten ratkaisujen mitattu tuotto
 
-[priority77.csv](priority77.csv) on nykyisen yhteisen työjonon 39 mallinnus- ja 38 tuote-/valmistustapausta. Se ei ole uusi rinnakkainen 70 reseptin tutkimus. Mallinnusryhmä sisältää kuusi jo löytynyttä B-ehdotusta, joten ratkaisemattomia prioriteettitapauksia on **33 + 38 = 71**.
+[priority77.csv](priority77.csv) käyttää aiempaa 39 mallinnus- ja 38 tuote-/valmistustapauksen yhteistä joukkoa. Kuusi alkuperäistä B-tapausta ja kaksi lisäsyötettä ovat jo tässä77:ssä: ratkaisemattomia jää **69**. Uutta rinnakkaista70 reseptin tutkimusta ei aloitettu.
 
-[method-impact.csv](method-impact.csv) sisältää reseptiriippuvuudet ja erottaa valmistellut numerot, julkaistut lisäykset ja tutkimusaritmetiikan. Nykyinen GK-only-sopimus palvelee kymmentä A-versiota; nimetyt B-analogiat kahta ja uudet B-koodaukset neljää muuta. Kaikkien julkaistu lisätuotto on vielä 0.
+[method-impact.csv](method-impact.csv) erottaa riippuvuudet, valmistellut numerot ja julkaistun lisäyksen. Rivejä ei saa tulkita automaattisiksi julkaisuluviksi.
 
-- Currytahnan koostumus-/GI-ryhmässä on kuusi reseptiä ja lisäksi yksi määrittelemättömän currytahnan tapaus. **Kookosmaidon plant50-hyväksyntä yksin avaisi näistä 0**, koska tahnan riippumaton hiilihydraatti/GI tai tuote jää ratkaisematta.
-- Hernekeiton, mungpapupuuron ja härkäpapusoseen yhteinen valmistusryhmä sisältää kolme tapausta. Keitetyn palkokasvin lähde ei yksin ratkaise kuivauksen, halkaisun, kuorinnan ja soseutuksen eroja. Valmiita uusia kokonaisnumeroita tästä päätöksestä on vielä 0.
-- Kahden kylmän marjaruoan ryhmä tarvitsee marjalajille sopivan GI-analogian sekä juoman/makeuttajan täsmälliset tuotteet. Mansikan GI40 ei automaattisesti kelpaa vadelmalle tai mustikalle.
-- Tuote-/massaversion vahvistaminen 38 tapauksessa ei tarkoita 38 uutta numeroa: myös jäljelle jäävä GI-, valmistus- ja nautittu osuus tarkistetaan.
+| Yhteinen ratkaisu | Riippuvia reseptejä | Varmennettuja numeerisia ehdokkaita |
+| --- | ---: | ---: |
+| Nykyinen GK-only A alkuperäisessä erässä | 10 | 10 |
+| Nimetyt B-valmistusanalogiat alkuperäisessä erässä | 2 | 2 |
+| Analogiat ja rajattu uusi B-koodaus alkuperäisessä erässä | 4 | 4 |
+| Palkokasvien valmistusryhmä | 3 | 1: pongal; hernekeitto ja bissara jäävät avoimiksi |
+| Täsmälliset tuote-/määräversiot | 38 | 1: kahvijogurtti; 37 muuta eivät avaudu tällä ratkaisulla |
+| Currytahnan yhteinen lähde/GI | 7 | 0; kookosmaidon plant50 yksin ei ratkaise tahnaa |
+| Kahden marjaruoan laji/GI ja tuotteet | 2 | 0 |
 
-Kaikkien 170 tapauksen [blockers.csv](blockers.csv) ja yhteiset [source-groups.jsonl](source-groups.jsonl) säilyvät taustakarttana. Ensisijaiset luokat ovat A26, B4, C41, D16, E2, F1 ja G80; G tarkoittaa useita riippumattomia esteluokkia. Luokitus on nykyisen laskentasyötteen työjono, ei väite, että lähdetutkimus olisi kaikkialla loppuun tehty. Tee-munien raakalaskennan nollaa ei palauteta lähdeportin ohi.
+Säilötyn sitruunan tuotereitti tarkistettiin kerran: [valmistajasivu](https://belazu.com/shop-all/preserved-beldi-lemons/) ilmoittaa pitoisuuden100 ml:lle, mutta resepti käyttää yhden sitruunan kuorta. Grammamäärää, valutettua kuorta ja tuotteen tilavuutta ei rinnasteta ilman näyttöä. Lisäksi taginen ohje mainitsee määrättömän couscous-/leipälisäkkeen. Tuotteen löytyminen ei siis yksin tuota numeroa.
 
-## Mantelijauhomallin rajaus
+Kokonaisen valmistetun ruoan GI-havaintoja arvioitiin vaihtoehtoiseksi yhteisratkaisuksi. Se edellyttäisi erillistä koko ryhmän hiilihydraattiosuutta, ei ruokalajin GI:n sijoittamista yhden raaka-aineen GI:ksi. Nykyisten idli/dosa-versioiden150 g sinapinsiementä ja puuttuva fermentointi eivät vastaa nimettyjä valmistettuja vertailuruokia. Niitä ei muuteta lusikalliseksi tai fermentoiduksi pelkän numerotavoitteen vuoksi. Tämän reitin todistettu lisätuotto on nyt0.
 
-[assumption-research/method.json](assumption-research/method.json) ja neljä täsmällistä skenaarioversiota säilytetään erillään. AFCD:n 5,4 ja Finelin 6,6 g/100 g kuvaavat kahta nimettyä koostumushavaintoa. GI50 on toimituksellinen mallioletus: [Schakelin ym. tekijäesityksen](https://pdfs.semanticscholar.org/eead/ef25b9a2d5c209deb31265082c85080758f4.pdf) sivu 12 kuvaa vähähiilihydraattisten ruokien tietokantaoletuksen, ei mantelijauhon GI-mittausta. Esitys ei osoita tämän projektin rajan laajennuksen tai reseptikohtaisen virherajan pätevyyttä.
+## AFCD ja rajatut tutkimusskenaariot
 
-Koostumusskenaarioiden väli ei rajaa tuntematonta GI:tä tai jauhatuksen/paistamisen vaikutusta. Nykyinen A-menetelmä pitää rahkapiirakan ja kaksi 200 g mantelijauhoa käyttävää versiota pidossa; poisjättörajaa ei muuteta. Neljän skenaarion aritmetiikka ei yksin täytä hyväksyttyä numeerista julkaisusopimusta.
+AFCD:n68 natiivitietuetta ja91 paikallista versiota liittyvät88 nykyiseen GK-puutteiseen reseptiin. Niistä90 paikallista arvoa vastaa natiivia without-kenttää; yksi vadelmakopio riippuu edelleen avoimesta [PR #182:sta](https://github.com/ozirix-dev/Reseptit/pull/182). Sen korjausta ei kopioitu tähän haaraan.
 
-## Toistettavuus, säilyminen ja seuraava toteutus
+Kokonaispolyolin muuttaminen tuntemattomaksi muutti170 puuttuvan tapauksen raakalaskentaa0 kertaa. **Pelkkä polyolitulkinta avaa0 uutta numeroa.** Eristetty [gk-only-source.ts](gk-only-source.ts) käyttää natiivia saatavaa hiilihydraattia ja pitää kokonaispolyolin tuntemattomana. Proteiinia/rasvaa ei vaadita GK:lle eikä hyväksytä tämän perusteella. Määritelmiä ei tutkittu uudelleen. Lähdeaineistot: THL Fineli Rel20 (CC BY4.0) ja FSANZ AFCD Release3 (CC BY-SA3.0 Australia); natiivihavainnot sidotaan lähteeseen ja versioon.
 
-Vertailupohja on main `4a804757`. Yhteinen aineisto on sidottu #183:n commitin `7127c0014edd525ac2ced97cf36b3eb511032ae2` yhdeksään tiedostoon; [upstream-provenance.json](upstream-provenance.json) vahvistaa niiden vastaavuuden. Lähteet: THL Fineli Rel20, CC BY 4.0; FSANZ AFCD Release 3, CC BY-SA 3.0 Australia. Tässä tehty tulkinta erottaa GK:n saatavan hiilihydraatin muista ravintotekijöistä.
+Mantelijauhon neljä aiempaa GI50-skenaariota säilyvät `assumption-research/`-hakemistossa tutkimuksena:0 kattavuuteen kelpuutettua numeroa. [Schakelin tekijäesityksen](https://pdfs.semanticscholar.org/eead/ef25b9a2d5c209deb31265082c85080758f4.pdf) vähähiilihydraattisen ruoan tietokantaoletus ei ole mantelijauhon GI-mittaus. Koostumushavainnot5,4/6,6 eivät rajaa GI:n tai paistamisen epävarmuutta. Tähän reittiin ei käytetty lisätutkimusaikaa.
 
-Tarpeelliset paikalliset tarkistukset tehtiin: 16 numeerisen tapauksen ja kolmen A-pidätyksen laskenta, riippumaton Decimal, lähdekenttä-/versio-/reseptihashit sekä 90 oikean ja yhden ehdollisen AFCD-kopion erotus. Lisäksi jo tehty neljän tutkimusskenaarion kahdeksan päätepisteen Decimal-tarkistus säilyy erillään. Ei koko sivuston buildia, uutta testisviittiä tai Actions-uusintaa.
+## Seuraava pieni toteutuserä ja toistettavuus
 
-Työkalut lukevat varmennettua Reseptit-repoa ja kirjoittavat vain erikseen annettuun Gitin ulkopuoliseen scratch-hakemistoon: `capture-shared149.mts`, `build.mts` ja `finalize-priority.py`. Lähde- ja Decimal-tarkistimet ovat lukevia. Yhteisen aineiston täydellisiä tulosobjekteja ei tallenneta tähän haaraan.
+**Seuraava todellinen kattavuushyppy on #183:n erillisten16 version julkaiseminen:156 →172**, kun sille annetaan erillinen julkaisuvaltuus. Kahden lisäversion hyväksyntä ja myöhempi integraatio voisi nostaa luvun174:ään. Uusia julkaisemis-/GI-oletuslupia ei päätellä jatkovalmisteluluvasta.
 
-**Seuraava todellinen hyppy on 156 → 166 → 172**, jos vastaavat tarkat A- ja B-versiot sekä julkaisusopimukset hyväksytään ja integroidaan. Sen rinnalla jatkovalmistelu kohdistuu nykyisen 71 ratkaisemattoman prioriteettitapauksen yhteisiin lähde-/valmistusratkaisuihin. Mantelijauhon GI50-kokeita ei jatketa niiden kustannuksella. Ei uusia päällekkäisiä PR:iä, mergeä, Ready-siirtymää tai deployta.
+[next-decisions.csv](next-decisions.csv) rajaa seuraavat12 nykyisen joukon tutkimuskohdetta: currytahnat7, kaksi marjaruokaa, kaksi jäljellä olevaa palkokasvivalmistusta ja tagine1. Ne ovat **12 kohdetta, eivät12 valmista numeroa**. Kunkin ryhmän tarvittavat yhteiset päätökset ja todistettu lisätuotto0 erotetaan. Tahnoille tarvitaan itsenäinen saatavan hiilihydraatin tieto sekä perusteltu GI-/ainesosamalli; marjoille lajikohtainen analogia ja tarkat juoma-/makeuttajatuotteet; palkokasveille kuivauksen/kuorinnan/soseutuksen sovitus; taginelle tuotteen laskentaperusta, kuorimäärä ja lisäkeversio. Näitä ei korvata GI0–150-herkkyyskokeilla. 30:n tavoite ja lopullinen80 % pysyvät kesken.
+
+Tarkistukset: kahden lisäsyötteen natiivilähteet, resepti-/GI-/syötehashit ja riippumaton Decimal; kaikki alkuperäiset19 tulosta ennallaan; yksilöinti estää kahvijogurtin kaksoislaskennan. Aiemmat90/1 AFCD-kopion ja170 polyolivastakokeen tarkistukset säilyvät. Ei uusia koko sivuston testejä, buildia tai manuaalisia Actions-ajoja.
+
+Työkalut `capture-shared149.mts`, `evaluate-source-extensions.mts`, `finalize-priority.py` ja `verify_decimal.py` lukevat lähteitä ja käyttävät vain Gitin ulkopuolista tuloshakemistoa. Lisälaskenta: `evaluate-source-extensions.mts ROOT SHARED_SNAPSHOT SOURCE_EXTENSIONS EXTERNAL_OUT`. Decimal: `verify_decimal.py SHARED_SNAPSHOT ASSUMPTION_DATA ASSUMPTION_RESULTS SOURCE_EXTENSIONS EXTERNAL_OUT`. Finalisoinnin valinnaiset viimeiset argumentit ovat `SOURCE_EXTENSIONS EXTERNAL_OUT`. Snapshot sisältää yhdeksän alkuperäistä tiedostoa; [upstream-provenance.json](upstream-provenance.json) sitoo jäädytetyn laskennan ja nykyisen #183-integraation. Ei uusia päällekkäisiä PR:iä, aktiivisia resepti-/makromuutoksia, mergeä tai deployta.

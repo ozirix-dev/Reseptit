@@ -1,0 +1,29 @@
+{
+  "id": "SOURCE_FIRST_GK_EXTENSIONS-v2",
+  "activation": false,
+  "ownerApproval": false,
+  "readyAuthorized": false,
+  "mergeAuthorized": false,
+  "deployAuthorized": false,
+  "reusesProfile": "GK149_V2_GK_ONLY",
+  "basePr": 183,
+  "baseHead": "7127c0014edd525ac2ced97cf36b3eb511032ae2",
+  "sourceOnlyCoreRulesChanged": false,
+  "newMainFoodGi50Default": false,
+  "existingTrace50StillRequiresApproval": true,
+  "newCases": [
+    {
+      "recipeId": "vietnamilainen-kahvijogurtti-banaanilla",
+      "inputSha256": "75b3125da4abf6072188d26656629bfacd4d04d83fe169109c3837da1aadc60a"
+    },
+    {
+      "recipeId": "intialainen-ven-pongal",
+      "inputSha256": "af1bcffe2111700c2bd3f91b9f3b7d72f493db1e18e896afd887be19188bf344"
+    }
+  ],
+  "notes": "Two verified extension inputs: preferred A coffee proposal already present in PR183, plus new B whole-mung pongal. One recipe counted once. Original16 method/content approved in separate pinned upstream record; extension inputs remain unapproved and unpublished.",
+  "preferredCoffee": "A10.918125 agrees with PR183 additional-proposal; coffee0.3gCHO omitted by unchanged A. B source-comparator alternative excluded from unique count.",
+  "upstreamCurrentHead": "54615726324d855bbfe0d72c3fc3ba58ceced9d4",
+  "upstreamAlreadyContainsCoffeeProposal": true,
+  "newDistinctBeyondUpstream17": 1
+}

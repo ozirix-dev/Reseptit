@@ -1,5 +1,5 @@
 """Read-only independent Decimal check of the shared pilot and the AFCD supplement.
-Usage: python verify_decimal.py SHARED_SNAPSHOT SUPPLEMENT_DIR SUPPLEMENT_RESULTS
+Usage: python verify_decimal.py SHARED_SNAPSHOT SUPPLEMENT_DIR SUPPLEMENT_RESULTS [SOURCE_EXTENSIONS SOURCE_RESULTS]
 No production imports or writes. Does not confer source/method approval.
 """
 import csv
@@ -74,4 +74,28 @@ for case in cases:
         assert abs(lo-d(expected_row['exactGk']))<Decimal('1e-10')
         checks.append({'recipeId':case['recipeId'],'source':source,'exactGk':str(lo)})
 assert len(numeric)==base_numeric+4 and len(checks)==8
-print(json.dumps({'status':'PASS','sharedCasesChecked':len(pack['cases']),'sharedNumeric':base_numeric,'newBScenariosChecked':8,'eligiblePilotCandidates':base_numeric,'assumptionResearchCases':len(cases),'assumptionCasesCountedTowardCoverage':False,'publicationAuthorized':False,'endpoints':checks},ensure_ascii=False,indent=2))
+source_first_count=0
+if len(sys.argv)>5:
+    source_dir, source_results = map(Path,sys.argv[4:6])
+    source_comps={r['id']:r for r in base_comps}
+    source_comps.update({r['id']:r for r in read(source_dir,'composition-sources.json')['records']})
+    source_gis={r['id']:r for r in base_gis}
+    source_gis.update({r['id']:r for r in read(source_dir,'gi-sources.json')['records']})
+    expected_new={r['recipeId']:r for r in read(source_results,'source-first-results.json')['results']}
+    for line in (source_dir/'cases.jsonl').read_text(encoding='utf-8').splitlines():
+        case=json.loads(line)
+        assert case['recipeId'] not in numeric
+        lo,hi,omitted,ok=calculate(case,source_comps,source_gis)
+        assert ok
+        result=expected_new[case['recipeId']]
+        if case['level']=='A':
+            assert omitted==d('0.3') and rounded(lo)==d(result['point'])
+        else:
+            assert omitted==0
+            expected_range=result['scenarioRange']
+            assert abs(lo-d(expected_range['min']))<Decimal('1e-10')
+            assert abs(hi-d(expected_range['max']))<Decimal('1e-10')
+        source_first_count+=1
+        checks.append({'recipeId':case['recipeId'],'source':'NAMED_FOOD_OBSERVATIONS','exactMin':str(lo),'exactMax':str(hi)})
+    assert source_first_count==2
+print(json.dumps({'status':'PASS','sharedCasesChecked':len(pack['cases']),'sharedNumeric':base_numeric,'verifiedSourceExtensionInputs':source_first_count,'eligiblePreparedProposals':base_numeric+source_first_count,'assumptionResearchCases':len(cases),'assumptionCasesCountedTowardCoverage':False,'publicationAuthorized':False,'endpoints':checks},ensure_ascii=False,indent=2))

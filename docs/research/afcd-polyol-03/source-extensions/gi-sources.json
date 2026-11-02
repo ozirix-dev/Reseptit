@@ -1,0 +1,123 @@
+{
+  "records": [
+    {
+      "id": "condensed-milk61",
+      "kind": "NAMED_HUMAN_GI",
+      "values": [
+        61
+      ],
+      "path": "docs/research/afcd-polyol-03/source-extensions/source-observations.json",
+      "nativeId": "condensed-milk61",
+      "nativeRowSha256": "fd098d27a641eea47021b50b463e7d33b29c48f7f7c33bb3b9f79de57990da28",
+      "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+      "locator": "Supplement1 printed page63 item936",
+      "limitation": "Specific tested sweetened condensed milk, not evaporated milk or plant condensed products. AFCD regular sweetened cow-milk composition is a regional proxy, not the exact tested formulation; final coffee/yogurt mixture not measured.",
+      "allowedCompositionIds": [
+        "F005582"
+      ]
+    },
+    {
+      "id": "raw-banana47-57",
+      "kind": "NAMED_HUMAN_GI",
+      "values": [
+        47,
+        57
+      ],
+      "path": "docs/research/afcd-polyol-03/source-extensions/source-observations.json",
+      "nativeId": "raw-banana47-57",
+      "nativeRowSha256": "73119e8c21270fda8629fcd4e68afdc1c078492f6988bf352b867160b76babb8",
+      "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+      "locator": "Supplement1 printed page73 items1088 and1091",
+      "limitation": "Two actual named food observations, not SEM/CI endpoints, category means or physiological bounds. Original assay data are labelled UO5 in the published table. Cultivar/ripeness and mixture uncertainty may extend outside these scenarios. Excludes cooked banana and plantain.",
+      "allowedCompositionIds": [
+        "11049"
+      ]
+    },
+    {
+      "id": "mung42",
+      "kind": "NAMED_HUMAN_GI",
+      "values": [
+        42
+      ],
+      "path": "docs/nutrition/gk80-operation149/source-observations.json",
+      "nativeId": "mung42",
+      "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+      "locator": "Supplement2 p75 item3151; mung bean boiled in salted water, Pakistan2008 n7 glucose2h no repeated reference, 0/30/60/120min",
+      "limitation": "Khan2008; low-quality small human test. Soft porridge vs boiled bean is explicit new B preparation analogy; uncertainty not bounded by SEM4.",
+      "nativeRowSha256": "7d19a01361bbe36bb94e307b2a29ba606975a65d69264d3cfbb1fc7c2ea6b578",
+      "allowedCompositionIds": [
+        "F000446"
+      ]
+    },
+    {
+      "id": "cashew22-27",
+      "kind": "NAMED_HUMAN_GI",
+      "values": [
+        22,
+        27
+      ],
+      "path": "docs/nutrition/gk80-operation149/source-observations.json",
+      "nativeId": "cashew22-27",
+      "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+      "locator": "Supplement1 item1431 salted Coles cashews GI22; Supplement2 items3238/3239 halves or roasted/salted GI27",
+      "limitation": "Named cashew comparators, not nut family mean. Target unsalted cooked garnish is a LOW food/preparation analogy; residual uncertainty outside envelope.",
+      "nativeRowSha256": "2ed2f96b51c67292a7b82cca8a07d7018f73f9c73a01080f93eb6ef5108e4ec4",
+      "allowedCompositionIds": [
+        "F006088"
+      ]
+    },
+    {
+      "id": "dairy30",
+      "kind": "EXISTING_PUBLISHED_CODING",
+      "values": [
+        30
+      ],
+      "path": "docs/nutrition/glycemic-index-records.json",
+      "nativeId": "op142-dairy-imputation30",
+      "nativeRowSha256": "d977dc0e145519ada95c1d0a3fd234e83847372c190d414b35350fec63747fbd",
+      "sourceUrl": "https://doi.org/10.2337/dc08-1239",
+      "locator": "Conclusions, low-carbohydrate product assignment",
+      "limitation": "Project published-imputation assignment, not measured ingredient or meal GI. Not tested cream, cheese or butter. Excludes plant drinks and sweetened dairy. Named Fineli620 unsweetened Bulgarian yogurt application needs explicit review; no approval inferred from the other16 versions.",
+      "allowedCompositionIds": [
+        "11571",
+        "29065",
+        "29239",
+        "33465",
+        "500",
+        "619",
+        "622",
+        "630",
+        "631",
+        "642",
+        "649",
+        "650",
+        "655",
+        "684",
+        "parmesan",
+        "620"
+      ]
+    },
+    {
+      "id": "raw-banana47",
+      "kind": "NAMED_HUMAN_GI",
+      "values": [
+        47
+      ],
+      "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+      "tablePdf": "https://nutritotal.com.br/pro/wp-content/uploads/sites/3/2021/09/Tabela1_IG.pdf",
+      "tablePdfSha256": "e930c4a090697abd4f7331a64837b524cf4701513cbb9865a739f4f9fb131061",
+      "locator": "Supplement1 printed page73 item1088",
+      "food": "Raw banana, Australia2008",
+      "healthyParticipants": 10,
+      "reference": "Glucose2h",
+      "referenceNumber": "UO5",
+      "limitation": "Specific raw ordinary banana analogy. No overripe/cooked banana or plantain scope; cultivar/ripeness and mixed-meal effects remain unknown.",
+      "path": "docs/research/afcd-polyol-03/source-extensions/source-observations.json",
+      "nativeId": "raw-banana47",
+      "nativeRowSha256": "299a0bff9c4cdd4d24c0c56d9db8f192267ffe8cba6672348d3a8d1303db2c7b",
+      "allowedCompositionIds": [
+        "11049"
+      ]
+    }
+  ]
+}
