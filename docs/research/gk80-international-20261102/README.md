@@ -1,7 +1,8 @@
 # GK80: kansainväliset GI-lähteet, Codex1
 
-> **Ajantasainen luovutus:** [sausage-named-version/CURRENT.md](sausage-named-version/CURRENT.md). Kolme valittua GI/GK-reittiä on sovellettu. Nyt13 täydellistä A-tutkimusversiota ja4 valmistetun ruoan B-lähdeskenaariota:17 eri ehdollista ID:tä. Uusi Tammelan lenkin täsmäversio GK0,4356 eli alle5. Kaikilta uusilta versioilta puuttuu lähde-/sisältöhyväksyntä; uusia julkaistuja arvoja0. Julkaistuna179/326, tavoitteeseen puuttuu82. Omien17:n ja erillisen hyväksytyn rahkapiirakan myöhempi julkaisu voisi tuottaa197/326, ei nykyinen tai valmis erä.
+> **Ajantasainen luovutus:** [steamed-buns-source-control/CURRENT.md](steamed-buns-source-control/CURRENT.md). Uusi banh bao -täsmäversion valmistetun leipäkomponentin lähdeskenaario GK25–35. Haini2022:n kontrolli69,18 jäi raportointiristiriitojen vuoksi SOURCE_HOLDiin eikä sitä käytetty. Omia ehdollisia versioita18 eri ID:lle:13 A-tutkimusversiota ja5 B-lähdeskenaariota. Uusia hyväksyntöjä tai julkaisuja0. Julkaistuna179/326, tavoitteen261 saavuttamiseen puuttuu82.
 
+Edellinen17 ehdokkaan yhteiskoonti: [sausage-named-version/CURRENT.md](sausage-named-version/CURRENT.md).
 Aiempi valmistettujen pannuleipien lähdeskenaariopaketti: [paratha-component-routes/CURRENT.md](paratha-component-routes/CURRENT.md).
 Aiemmat jatkopaketit (historialliset tilannekuvat): [kolme valittua reittiä, mantelipiirakat ja samosa](almond-reuse-and-oman/CURRENT.md), [pav bhajin mausteet sekä miso- ja tärkkelysrajat](spices-and-native-miso/CURRENT.md), [poha ja julkaistu179](poha-and-main179/CURRENT.md), [pannulettulähde ja kanan grammaspesifikaatio](pancake-source-and-fixed-input/CURRENT.md), [falafel ja kastikkeet](sauces-and-legumes/CURRENT.md), [liemi ja nykyreseptisidonnat](stock-and-current-bindings/CURRENT.md), [granola ja pellavapuuro](followup/CURRENT.md), [pistaasijogurtti ja Codex2:n marjalähdetuki](breakfast-versions/CURRENT.md).
 

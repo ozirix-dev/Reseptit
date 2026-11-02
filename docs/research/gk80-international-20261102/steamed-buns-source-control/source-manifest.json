@@ -1,0 +1,31 @@
+{
+  "repository": "ozirix-dev/Reseptit",
+  "branch": "codex/gk80-international-sources-20261102",
+  "mainObserved": "554f8a414782497da89640c8e45be1ccf1580a95",
+  "referenceMain": "96a25d8c9db6fb0a505a70a37a5b357b6a83593a",
+  "observedAtUtc": "2026-11-02T21:17:21.731294+00:00",
+  "productionPageSha256": "a7407a16e2c12c5674c1164e6e5aca3e2a2dd1d5fc13c6905fe579b4f90b9f40",
+  "productionContentIdenticalTo179NumericSnapshot": true,
+  "sourceLfSha256": {
+    "reseptit/aamupalat/vietnamilainen-banh-bao-kananmunalla.md": "f4613348486bde0f2a85018d632d0069bd461e9d5b8513e558b58bd768f1f06f",
+    "docs/nutrition/fineli-release-20-reference.json": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76",
+    "docs/nutrition/afcd-release-3-reference.json": "02edf1cc95191c05edf791656a5109c41bcf4d4a3e707be69ef5009bc640022e",
+    "docs/nutrition/glycemic-index-records.json": "fb465ac8f68ffc85e29eb9900f17df00b081fa0ddc3e25d253140aecb248acda",
+    "docs/research/gk80-international-20261102/sausage-named-version/impact-and-coordination.json": "39afe9cd3cc043febbcb56b27c0dadd59757e25438a5a40b2adb678577c7ca52",
+    "docs/research/gk80-international-20261102/poha-and-main179/production-revalidation.json": "2e68751e240890c0e993e905a0e49d6f8431e91ad63f1604c84b0fd857c36d12"
+  },
+  "primaryXmlSha256": {
+    "haini2022.xml": "64d9b13199f6fd57b6a0c41e8c4cfacfe0d73c84f18cec298c38ad3a7df5922f",
+    "lan2013.xml": "115aef18cb10e93b1ce8ff6473c2033662f9309d04a46684c9484eee1d258940"
+  },
+  "atkinsonSupplement1Sha256": "e930c4a090697abd4f7331a64837b524cf4701513cbb9865a739f4f9fb131061",
+  "visualCheck": "Supplement1PDFpage22row313; GI68 SEM5,n10; image stays scratch",
+  "primaryFullXmlStaysScratch": true,
+  "modelPreflight": {
+    "configuredModel": "gpt-6.1-sol",
+    "configuredReasoning": "high",
+    "activeSelectionIndependentlyExposed": false,
+    "modelSwitched": false
+  },
+  "pr187ReadOnlyObservation": "Contains4approvedAversions elsewhere; none ofour18 included; no assumed publication. CaCao200ml needsunitadapter."
+}
