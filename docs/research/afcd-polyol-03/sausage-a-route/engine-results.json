@@ -1,0 +1,96 @@
+{
+  "activation": false,
+  "ownerApproval": false,
+  "results": [
+    {
+      "recipeId": "uunimakkara-sipulipedilla",
+      "inputSha256": "726315e676d5a36776e2cab4b9e75e3478e5b0c900e1230d4fbb183bb7650ae3",
+      "currentAArithmeticPass": true,
+      "sourceAdmission": "EXACT_OWNER_REVIEW_REQUIRED",
+      "point": 0.26,
+      "omittedChoOrCap": 1.4763875000000002,
+      "conditionalSourceScenarioEnvelope": null,
+      "ownerApproved": false,
+      "publicationAuthorized": false,
+      "scenarios": [
+        {
+          "scenarioId": "NAMED_PRODUCT_CAPS",
+          "unrounded": 0.264,
+          "point": 0.26,
+          "omittedChoOrCap": 1.4763875000000002,
+          "nominalLabelCap": 0.53,
+          "physicalMassCap": 0,
+          "nativePointOmitted": 0.9463875,
+          "maxOmittedOriginalGroup": 0.75,
+          "terms": [
+            {
+              "ingredientIndex": 0,
+              "compositionId": "makutila-maalaislenkki",
+              "choPerServing": 0.25,
+              "choSemantics": "NOMINAL_LABEL_CAP",
+              "giId": null,
+              "gk": null
+            },
+            {
+              "ingredientIndex": 1,
+              "compositionId": "698",
+              "choPerServing": 0.025,
+              "choSemantics": "NATIVE_POINT",
+              "giId": null,
+              "gk": null
+            },
+            {
+              "ingredientIndex": 2,
+              "compositionId": "335",
+              "choPerServing": 0.66,
+              "choSemantics": "NATIVE_POINT",
+              "giId": "veg40",
+              "gk": 0.264
+            },
+            {
+              "ingredientIndex": 3,
+              "compositionId": "maille-dijon-fr215",
+              "choPerServing": 0.28,
+              "choSemantics": "NOMINAL_LABEL_CAP",
+              "giId": null,
+              "gk": null
+            },
+            {
+              "ingredientIndex": 4,
+              "compositionId": "628",
+              "choPerServing": 0.75,
+              "choSemantics": "NATIVE_POINT",
+              "giId": null,
+              "gk": null
+            },
+            {
+              "ingredientIndex": 5,
+              "compositionId": "500",
+              "choPerServing": 0.028000000000000004,
+              "choSemantics": "NATIVE_POINT",
+              "giId": null,
+              "gk": null
+            },
+            {
+              "ingredientIndex": 6,
+              "compositionId": "F006316",
+              "choPerServing": 0.0955,
+              "choSemantics": "NATIVE_POINT",
+              "giId": null,
+              "gk": null
+            },
+            {
+              "ingredientIndex": 7,
+              "compositionId": "11177",
+              "choPerServing": 0.0478875,
+              "choSemantics": "NATIVE_POINT",
+              "giId": null,
+              "gk": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "controls": []
+}
