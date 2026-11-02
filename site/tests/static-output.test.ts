@@ -1,3 +1,5 @@
+import {gkOnlyVariants} from '../src/generated/gk-only-variants.generated';
+import {gkOnlyUi,gkOnlyValue} from '../src/features/recipes/GkOnlyVariantPanel';
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import path from "node:path";
@@ -177,7 +179,10 @@ test("GK values link to centralized recipe details on every published translatio
         assert.ok(html.includes(displayed), `${result.recipeId}/${recipe.locale}: displayed GL value`);
         assert.ok(result.sourceReferences.length > 0, `${result.recipeId}: calculated result has source references`);
       } else {
-        assert.ok(!html.includes(recipeUi[recipe.locale].glycemicLoad), `${result.recipeId}/${recipe.locale}: incomplete GK stays hidden`);
+        if(gkOnlyVariants.some(v=>v.recipeId===result.recipeId)){
+          assert.ok(html.includes('data-macro-scope="NO_MACRO_PACKAGE_FOR_THIS_VERSION"'),`${result.recipeId}/${recipe.locale}: separately approved GK-only version is explicit`);
+          assert.ok(!html.includes('class="recipe-glycemic-load"'),`${result.recipeId}/${recipe.locale}: original incomplete GK is not relabeled as complete`);
+        }else assert.ok(!html.includes(recipeUi[recipe.locale].glycemicLoad), `${result.recipeId}/${recipe.locale}: incomplete GK stays hidden`);
       }
     }
   }
@@ -475,4 +480,22 @@ test('modeled captions disclose omissions in every locale and retain omission-fr
     assert.ok(omitted>=10,locale+': all ten new omission cases covered');assert.ok(complete>0,locale+': real omission-free control covered');
     const method=await readFile(path.join(dist,expected.path,'index.html'),'utf8');assert.ok(method.includes(expected.method),locale);assert.ok(!method.includes(expected.oldMethod),locale+': central method is consistent');
   }
+});
+
+test('approved GK-only versions are explicit on every existing locale page and coverage counts172 distinct recipes',async()=>{
+ let pages=0;
+ for(const variant of gkOnlyVariants){
+  for(const recipe of siteContent.recipes.filter(r=>r.recipeId===variant.recipeId)){
+   const html=await readFile(path.join(dist,recipe.routePath.slice(1),'index.html'),'utf8'),t=gkOnlyUi[recipe.locale];
+   assert.ok(html.includes(`data-gk-version="${variant.versionId}"`),recipe.routePath);
+   assert.ok(html.includes(t.scope));assert.ok(html.includes(t.low));assert.ok(html.includes(gkOnlyValue(variant,recipe.locale)));
+   assert.ok(!html.includes('class="recipe-glycemic-load"'),'original unsupported version is not relabeled');
+   if(variant.scenarioRange)assert.ok(html.includes(t.range));if(variant.sensitivity)assert.ok(html.includes(t.sensitivityNote));pages++;
+  }
+ }
+ assert.ok(pages>=16);
+ for(const p of ['glykeeminen-kuorma','en/glycemic-load','sv/glykemisk-belastning','th/glycemic-load']){
+  const html=await readFile(path.join(dist,p,'index.html'),'utf8');assert.ok(html.includes('<strong>172</strong>'));assert.ok(html.includes('<strong>154</strong>'));assert.ok(html.includes('data-gk-coverage="version-aware"'));
+  for(const v of gkOnlyVariants)assert.ok(html.includes(`data-gk-version="${v.versionId}"`));
+ }
 });

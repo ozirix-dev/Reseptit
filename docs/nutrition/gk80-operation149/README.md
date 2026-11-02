@@ -1,12 +1,14 @@
-# Operaatio 149 V2: katselmointikoonti
+# Operaatio 149 V2: hyväksyttyjen GK-versioiden integraatio
 
-**Draft-pilotti. Ei tuotantoaktivointia eikä julkaisuhyväksyntää.**
+**PR #183 on Draft. Menetelmä ja 16 täsmällistä versiota on hyväksytty integraation pohjaksi. Ei Ready-, merge- tai deploy-valtuutusta.**
 
-Tarkistettu lähtö 156/326 (47,85%). Valittu 70/170 HOLD-reseptiä;19 vietiin aritmetiikkaporttiin,51 pysähtyi ensin nimettyyn lähde-/valmistus-/tuoteporttiin. Tulos **10 A + 6 B = 16 numeerista ehdotusta**,0 C. 70:n erässä 54 HOLD. **30:n tavoite EI täyttynyt: puuttuu 14.** Kaikista 170 nykyisestä HOLDista 154 jää ilman uutta numeroa.
+## Nykytila
 
-A tarkoittaa nykyisen moottorin mukaisesti toimivaa GK-only-laskentaa, ei jo julkaistua uutta reseptiä. B tarvitsee uuden menetelmän ja täsmällisten analogioiden hyväksynnän. Kaikki 16 tarvitsevat myös täsmällisen version hyväksynnän ja julkaisuintegraation; nyt julkaisuvalmiita/aktivoituja 0.
+Tuotannosta varmennettu lähtötila on 156/326 (47,85 %). Tämän Draftin sivustototeutuksen ehdokaskattavuus on **172/326 (52,76 %)**: 156 alkuperäistä numeerista tulosta ja 16 uutta, erikseen nimettyä GK-versiota (10 A + 6 B). Kukin resepti lasketaan kerran. Kaikkien 326 alkuperäisen version laskentatulokset ja resepti-, käännös- ja makroaineistot säilyvät ennallaan. Alkuperäisversioiden 170 keskeneräistä tulosta eivät muutu hyväksytyiksi uuden version perusteella.
 
-## Numeerinen erä
+Omistajan nimenomainen Kyllä ja täsmällinen 16 syötteen rajaus on kirjattu `owner-approval.json`:iin. Hyväksynnän lähde- ja menetelmäviite on HEAD `7127c0014edd525ac2ced97cf36b3eb511032ae2`. Kuusi hyväksyttyä lähde-/syötetiedostoa säilytetään muuttumattomina ja validoidaan sisällön hasheilla. `cases.json`:n suljettu pilottiprofiili ja `method-proposal.md`:n ennen hyväksyntää kirjoitettu otsikko ovat tämän jäädytetyn viiteaineiston historiallinen tila; nykyinen päätös ja valtuutus ovat erillisessä hyväksyntäkirjauksessa.
+
+## Integroitu erä
 
 | Resepti | Taso | GK/annos tai ehdollinen lähdeskenaario | Pois jätetty CHO g/annos (A) |
 | --- | --- | --- | --- |
@@ -27,128 +29,39 @@ A tarkoittaa nykyisen moottorin mukaisesti toimivaa GK-only-laskentaa, ei jo jul
 | malesialainen-laksa-lemak-aamiaiseksi | B | 27.55 | 0.000 |
 | malesialainen-kaya-paahtoleipa | B | 18.37–23.31 | 0.000 |
 
-A:n pienet luvut, etenkin suklaakakku/keksit, jättävät nykyisen menetelmän mukaisesti positiivista GI:töntä CHO:ta pois. Ne eivät ole ruoan mitattuja lähesnollavasteita. Pilotin tulos ja esikatselu näyttävät poisjätön sekä erillisen oletusherkkyyden.
 
-B:n leipäväli perustuu kahteen nimettyyn hapanjuurivehnäleipään. Se ei kata kaikkia fermentaatioita. Makaronilaatikon väli on nimetty penne/spagetti-vertailu ja valkosipulijauheen fysikaalinenCHO-katto ehdolla mauste 50; se ei ole koko laatikon fysiologinen vaihteluväli. Congeen 80 on valmistusanalogia. Kurpitsapuuron kookos 50 ja seesamengarnish 50 ovat erikseen hyväksyttäviä B-koodauksia; niiden GI-epävarmuus ei ole lähteellä rajattu. GI 0–150 jää vain oletusherkkyydeksi.
+Taulukon arvot ovat laskentatuloksia; käyttöliittymä merkitsee pisteet likiarvoiksi ja pyöristää skenaariovälien rajat ulospäin. A:n positiivista poisjättöä ei oleteta vaikutuksettomaksi. Poisjättöjen ylärajat pyöristetään käyttöliittymässä ylöspäin, myös pienissä jälkiruokien arvioissa. B:n lähdeskenaario, projektin koodaus ja GI 0–150 -oletusherkkyys erotetaan; viimeinen ei ole biologinen yläraja tai luottamusväli.
 
-## Menetelmäpäätökset ja 30:n este
+`gk149-integration.ts` hyväksyy vain täsmälliset 16 hyväksyttyä syötettä. Se muodostaa laskenta-ajossa erillisen GK-versiorekisterin. Reseptisivuilla ja menetelmäsivuilla näkyvät version omat määrät, valmistustarkennukset, LOW-luottamus, lähteet ja makrojen erillisyys FI/EN/SV/TH-kielillä. Versio ei peri alkuperäisen ohjeen ravintoarvoja. Alkuperäistä reseptiä ei korvata hiljaisesti.
 
-1. Hyväksyttävä uusi GK-only-sopimus: riippumaton Fineli CHOAVL/AFCDwithoutSA voi tukea GK:ta muuttamatta makrojen polyolipuutteita.
-2. Hyväksyttävä täsmälliset punnitut versiot, tuote-/valmistusproxyjen LOW-luottamus ja B-analogiat. Valkosipuli-/smetana-/Dijon-vakioinnit eivät peri vanhojen makropakettien hyväksyntää.
-3. B-koodaus 50 vain nimetylle vähähiilihydraattiselle makeuttamattomalle kookosemulsiolle ja rajatulle mauste-/siemenkoristeelle. Ei yleistä puuttuvan GI:n täyttöarvoa.
-4. Nämä päätökset mahdollistavat 16 ehdotuksen jatkamisen, **eivät 30:tä**. Ainakin 14 muuta vaatii nimettyä lähde-/vastaavuusnäyttöä; tavoite ei ratkea esitysmuodon tai 0–150-herkkyyden hyväksymisellä.
-5. Suurimmat toistuvat esteet: mantelijauhon merkittävä GI-osuus, curry-/fermentoitujen tahnojen riippumatonCHO+GI, taikina-/jauho-/hiutalevalmistuksen vastaavuus ja poistettujen aromaattien uutettuCHO. Niitä ei saa korvata ruokaperhekeskiarvolla tai keksityllä polyolinollalla.
+Annosmäärän säätö skaalaa saman version ainesluettelon ja valmistustekstin määrät yhteisestä syötteestä. GK/annos, lähteiden GI:t ja valmistusajat eivät muutu annosmäärän mukana. Suolan kaltaiset nollahiilihydraattiset alkuperäisen ohjeen määrät merkitään erikseen. Kayan hillo- ja lisäkemunat erotellaan.
 
-## Kaikkien 170 seulonta
+## Paras etenemistapa kohti 80 prosenttia
 
-Seulonta on työjono, ei automaattinen lähdehyväksyntä. Luokassa 2 on myös vielä ratkaisemattomia mallimahdollisuuksia. Luokkaa 4 ei päätelty keinotekoisesta GI-ylärajasta. `hold-screen.csv` sisältää jokaisen nykyisen HOLD-ID:n, lähdehashin, luokan ja syykoodin.
+| Tapa | Tästä erästä avautuva hyöty | Päätös |
+| --- | --- | --- |
+| Nykyinen A-laskenta ja täsmällinen GK-versio | 10 reseptiä | Käytetään aina kun lähde- ja poisjättösäännöt täyttyvät |
+| Hyväksytty GK-only-sopimus ja rajatut B-analogiat | Lisäksi 6 reseptiä | Toteutettu erillisenä versiokerroksena |
+| Täyden makropaketin odottaminen kaikille | Ei lisähyötyä näille GK-only-tapauksille | Makrojen puute ei yksin pysäytä GK:ta, eikä makroja keksitä |
+| Yleinen ruokalajikeskiarvo tai mielivaltainen GI puuttuville aineksille | Ei hyväksyttävää numeerista näyttöä | Ei käytetä kattavuuden kasvattamiseen |
+| Yhteinen lähde ratkaistaan useille täsmällisille valmistusversioille | Suurin tunnistettu jatkotyön kohdejoukko | Valittu seuraavaksi työjärjestykseksi; ei etukäteen luvattua numerotuottoa |
 
-| Luokka | Määrä |
-| --- | --- |
-| 1. Nykyinen menetelmä, pilotissa tarkistettu | 10 |
-| 2. Mallinnuksen/lähdevälin ehdokas | 39 |
-| 3. Tuote-/massa-/valmistusmäärittely tarpeen | 38 |
-| 4. Vain perusteltu luokka | 0 |
-| 5. Lähde-/menetelmäeste ratkaisematta | 83 |
+80 % edellyttää vähintään **261/326**. Tuotannosta puuttuu 105; integroidun Draftin jälkeenkin puuttuisi 89. Jäljellä olevista 154 reseptistä 47:n ensisijainen este on tärkkelyksen valmistus, 26:n nimetyn ruoan valmistusvastaavuus ja 22:n tuote-/massatiedot. Nämä ovat 95 erillistä reseptiä, eivät 95 valmista GK-tulosta. `shared-blocker-queue.json` sisältää kaikki 154 ilman päällekkäisiä reseptejä.
 
-## Valittujen 70 päätökset
+Seuraava työjärjestys on: tarkka valmistus- ja tuoterajaus, natiivi saatava hiilihydraatti, nimetty ihmisillä mitattu vertailuruoka tai hyväksyttävä rajattu koodaus, itsenäinen laskenta, versio-/käännössovitus ja koko erän sisältökatselmointi. Raakajauhon GI:tä ei päätellä suoraan leivän tai pannukakun GI:stä. Merkittävä reseptin luonteen muutos tuodaan omistajalle.
 
-| Resepti | Päätös / ensisijainen este |
-| --- | --- |
-| keto-mutakakku | NUMERIC_A |
-| keto-suklaakeksit | NUMERIC_A |
-| vhh-juustokakku | NUMERIC_A |
-| rahkapiirakka-vhh | ALMOND_MEAL_GI |
-| vhh-lihapiirakka | ALMOND_MEAL_GI |
-| keto-korvapuustit | ALMOND_MEAL_GI |
-| vhh-runebergintortut | ALMOND_MEAL_GI |
-| kana-parmesaanipannu-parsakaali | NUMERIC_A |
-| kermainen-kanasienipannu | NUMERIC_A |
-| palak-paneer | NUMERIC_A |
-| paneer-tikka | NUMERIC_A |
-| kana-tagine-sitruunalla | PRESERVED_LEMON |
-| paistettu-maksa-pekonilla | LIVER_GI |
-| pad-kee-mao-vhh-konjac | SAUCE_GI_COMPOSITION |
-| pad-see-ew-vhh-konjac | SAUCE_GI_COMPOSITION |
-| vhh-mansikkakakku | NUMERIC_A |
-| vhh-mustikkapiirakka | ALMOND_MEAL_GI |
-| siemengranola-jogurtilla | SEED_AND_RASPBERRY_GI |
-| hunaja-sinappikana-kaalilla | HONEY_DIJON_GI |
-| miso-lohi-paksoi | MISO_GI |
-| vhh-pyttipannu | NUMERIC_A |
-| uunimakkara-sipulipedilla | RING_SAUSAGE_GI |
-| lindstrominpihvit-kaalilla | PICKLED_BEET_AND_POTATO |
-| silakkapihvit-tilli-kermakastike | RYE_FLOUR_COATING |
-| kaakao-kookos-chia | COCONUT_FLAKES_GI |
-| marjainen-chiavanukas | BERRY_GI |
-| rahka-marjakerroskulho | BERRY_GI |
-| lahi-ita-pistaasijogurtti | POMEGRANATE_FORM |
-| vietnamilainen-kahvijogurtti-banaanilla | CONDENSED_MILK |
-| vhh-omenapiirakka | ALMOND_MEAL_GI |
-| vhh-raparperipiirakka | ALMOND_MEAL_GI |
-| hernekeitto-savupotkalla | PEA_SOUP_PREPARATION |
-| congee-riisipuuro | NUMERIC_B |
-| paella-valenciana | PAELLA_RICE_PREPARATION |
-| hyderabadi-kanabiryani | BIRYANI_RICE_AND_SPICES |
-| intialainen-ven-pongal | MUNG_PORRIDGE_MODEL |
-| korealainen-kongjuk-soijapapu-riisipuuro | BLENDED_SOY_RICE |
-| indialainen-poha-maapahkinoilla | FLAKED_RICE |
-| pohjoisafrikkalainen-bissara | BROAD_BEAN_PUREE |
-| falafel | PULSE_FLOUR_OR_GROUND_PREPARATION |
-| intialainen-besan-chilla | PULSE_FLOUR_OR_GROUND_PREPARATION |
-| valimerellinen-farinata-aamupalaksi | PULSE_FLOUR_OR_GROUND_PREPARATION |
-| valimerellinen-halloumi-tomaattileipa | NUMERIC_B |
-| pohjoisafrikkalainen-taatelipuuro-appelsiinilla | SEMOLINA_PREPARATION |
-| intialainen-mannasuurimoupma | SEMOLINA_PREPARATION |
-| chow-mein | EGG_NOODLE_REFRY |
-| jauheliha-makaronilaatikko | NUMERIC_B |
-| bulgogi | PEAR_MARINADE |
-| bun-cha-hanoi | MEAT_MARINADE_RETENTION |
-| char-siu | HOISIN_GLAZE |
-| vietnamilainen-pho-ga-aamuksi | NUMERIC_A |
-| mapo-tofu | DOUBANJIANG_AND_RICE_MASS |
-| bibimbap | GOCHUJANG |
-| goi-cuon | PEANUT_BUTTER_HOISIN |
-| kung-pao-kana | STARCH_SAUCE_PREPARATION |
-| malesialainen-laksa-lemak-aamiaiseksi | NUMERIC_B |
-| malesialainen-kaya-paahtoleipa | NUMERIC_B |
-| bouillabaisse | BREAD_POTATO_AND_MASS |
-| pav-bhaji | BUN_AND_POTATO_PREPARATION |
-| chettinad-kana | CURRY_LEAF_COMPOSITION |
-| kookos-lime-kanacurry | UNSPECIFIED_CURRY_PASTE |
-| rendang-padang | LEMONGRASS_RETAINED_CHO |
-| punainen-kanacurry-vhh | CURRY_PASTE_AVAILABLE_CHO_AND_GI |
-| thai-vihrea-curry-kanalla-vhh | CURRY_PASTE_AVAILABLE_CHO_AND_GI |
-| panang-curry-kanalla-vhh | CURRY_PASTE_AVAILABLE_CHO_AND_GI |
-| keltainen-kanacurry-vhh | CURRY_PASTE_AVAILABLE_CHO_AND_GI |
-| khao-soi-vhh-konjac | CURRY_PASTE_AVAILABLE_CHO_AND_GI |
-| massaman-curry-kanalla-vhh | CURRY_PASTE_AVAILABLE_CHO_AND_GI |
-| tom-kha-gai-vhh | LEMONGRASS_EXTRACTION |
-| japanilainen-kabocha-puuro | NUMERIC_B |
+Lähteiden uudelleenkäytön ensimmäinen uusi tulos on `additional-proposal.json`: kahvijogurtti **GK ≈ 10,92/annos**, LOW, erillinen hyväksymätön ehdotus. Kondensoidulle maidolle löytyi nimetty Table1/936-havainto (GI61), banaanille Table1/1088 (GI47); makeutettua maitoa ei mallinneta makeuttamattoman maitotuotteen koodilla30. Jogurtin30 on erikseen arvioitava nykyisen koodauksen sovellus. Kahvin0,3g/annos on dokumentoitu A-poisjättö. Uusi ehdotus ei ole sivustoimportissa eikä mukana172:ssa. PDF-sivujen63 ja73 rivikohdistus tarkistettiin kuvasta; SEM ei muodosta reseptin vaihteluväliä.
 
-Täsmällinen perustelu ja seuraava toimenpide ovat `recipe-decisions.json`:ssa. `next30.json` kokoaa seuraavat 30 kohdetta esteineen; se ei lupaa 30 hyväksyttävää numeroa.
+Kikherneletun ihmisillä mitattu Cheela-havainto on jatkoselvityksen kohde, ei vielä uusi hyväksytty numero. Lajit, fermentointi ja valmistus pitää sovittaa. Alkuperäisen30 ehdotuksen tavoite on edelleen kesken: hyväksytyssä integraatiossa16; erillinen uusi ehdotus1, joten yhteensä17 ehdotusta ja13 puuttuu. Uusi ehdotus tarvitsee oman hyväksynnän.
 
-## Kattavuus ja 80 %
+## Tarkistusnäyttö ja rajaukset
 
-- Tuotanto säilyy 156/326 (47,85%).
-- Jos kaikki 16 ehdotusta myöhemmin hyväksytään ja integroidaan:172/326 (52,76%).
-- 80 % edellyttää vähintään 261/326; tuotannosta puuttuu 105 ja tämän ehdollisen erän jälkeenkin 89.
-- B-koodauksista riippumaton joukko on 10 A +2 B (congee/leipä), ehdokas 168/326; uudet koodaukset avaavat tämän pilotin neljä muuta B:tä.
+- Kohdennetut hyväksyntä-, lähde-, Decimal-, 326 tuloksen regressio-, kieli- ja versiokattavuustarkistukset läpäisivät.
+- Koko julkaisu-build läpäisi721 reittiä. Todellisen annosskaalauskorjauksen jälkeen Vite + esirenderöinti toistettiin; turhaa ravintoarvolaskennan kokonaisajoa ei toistettu.
+- Brave:31 olemassa olevaa resepti-/kielisivua ja4 menetelmäsivua; näppäimistön details-ohjaus, annosskaalaus ja320/390/1280px reflow läpäisivät;0 JavaScript-virhettä.
+- Ulkoasu käyttää olemassa olevia paneeleita, värejä ja typografiaa. Ossin kahdeksaa perustamuistiota käytettiin hierarkian, luettavuuden, komponenttien, saavutettavuuden ja tokenien taustana. Ei uusia kuvia, fontteja tai irrallista tyylijärjestelmää.
+- Käännökset ovat automaattisesti laadittuja ja rakenteellisesti tarkistettuja; ihmisellä tehtyä kielikatselmointia ei väitetä.
+- Täsmällisen lopullisen HEADin normaali PR-CI tarkistetaan GitHub Checksistä. Ei manuaalista Actions-uusinta-ajoa.
+- Ei uusia makropidätyksiä, alkuperäisten pidätysten purkua, Readyä, mergeä, deployta, muiden PR:ien muutoksia tai ReportHub-muutoksia.
 
-## Toteutus ja katselmointirajat
-
-Pilotti on `site/scripts/gk149-model.ts` + `gk149-pilot.ts`. Se ei ole sivuston tuotantoimportissa tai julkaisurekisterissä. Komento ei hyväksy aktivointiparametreja ja kirjoittaa vain omaan `tmp/nutrition/gk149/`-hakemistoonsa. `cases.json` sisältää kaikki 19 aritmetiikkayritystä mukaan lukien muuttumattomien A-rajojen estämät kolme mantelijauhoreseptiä.
-
-Jokainen ehdotettu syöte, nykyinen olemassa oleva kieliversio ja käytetty natiivikenttä sidotaan hasheihin. Kaikille jälkiruoille ei ole nykyistä EN/SV/TH-tiedostoa; pilotti ei luo näille kuvitteellisia hyväksyntähasheja. Varsinainen resepti-/käännös-/makroversion integraatio tehdään vasta täsmällisten sisältöpäätösten jälkeen. FI/EN/SV/TH-esitysmuoto on pilotoitu, ei julkaistu UI.
-
-Muuttuneet tiedostot rajoittuvat tämän operaation aineistoon, kahteen pilottiskriptiin, testiin sekä testirekisteröintiin. Ei uusia makropidätyksiä, uusia hyväksyttyjä tuotantotuloksia, Readyä, mergeä, deployta tai ReportHub-muutoksia.
-
-Tarkistusnäyttö päivitetään `validation.json`:iin. Yksi normaali Draft-PR-CI; ei manuaalista uudelleenajoa ilman todellista virhettä.
-
-## Tausta ja erän erityispäätökset
-
-[PR174 SOURCE01](https://github.com/ozirix-dev/Reseptit/pull/174), [PR176 NutritionCore](https://github.com/ozirix-dev/Reseptit/pull/176) ja [PR180 Operaatio 147](https://github.com/ozirix-dev/Reseptit/pull/180) ovat taustaa, eivät hyväksyttyjä tuotantosopimuksia. Niitä tai muita PR:iä ei muutettu.
-
-70:n valinta käyttää yhteisiä koostumuksia ja nimettyjä lähteitä. Laksan 2 g curryjauhe täydentää nykyisen curryliemi-ohjeen puuttuvan rakenteisen määrän ja vaatii erillisen sisältöpäätöksen. Kaya-hillon koko muna/kookos/sokerierä sisältyy kahteen annokseen; mitään sokeria ei poisteta. Leipä punnitaan ennen paahtamista; paahtamisen GI-vaikutus jää B-analogian epävarmuudeksi.
-
-Pilotti: `cd site` ja `npm run pilot:gk149`. Tulos ja neljän kielen esikatselumerkinnät syntyvät tiedostoon `tmp/nutrition/gk149/pilot.json`. Komennolla ei voi aktivoida tuotantosopimusta.
+`validation.json` erottaa paikallisen näytön ja CI:n. Tuotantokattavuus pysyy156/326, kunnes erikseen hyväksytty julkaisu on oikeasti varmennettu tuotannosta. Tämä erä on tekninen Draft-integraatio, ei julkaisupäätös.

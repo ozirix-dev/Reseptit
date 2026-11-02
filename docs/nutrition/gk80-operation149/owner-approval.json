@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "decision": "OWNER_METHOD_AND_CONTENT_APPROVED_AWAITING_SEPARATE_RELEASE_AUTHORIZATION",
+  "approvedReferenceHead": "7127c0014edd525ac2ced97cf36b3eb511032ae2",
+  "origin": "Explicit Kyllä response in this Codex chat to the scoped PR183 GK-only/method/16-version question",
+  "question": "Hyväksytkö PR #183:n menetelmäehdotuksen (GK-only-sopimus ja kuusi B-malliehdotusta) sekä sen 16 täsmällistä reseptiversiota jatkointegraation pohjaksi? Erä sisältää myös laksan puuttuvan currymäärän määrittelyn 2 grammaksi. Tämä ei valtuuta Readyä, mergeä eikä deployta.",
+  "answer": "Kyllä",
+  "methodAndContentApproved": true,
+  "approvedFilesLfSha256": {
+    "cases.json": "98c161b906725b90c3ed01fa8f7e2a456872f8d0bc551ccd6de5a6d9a79cf00c",
+    "composition-sources.json": "01bfd164993f6d9351d6139b263203871aa2974675b8be94e32cf2030629a3a4",
+    "gi-sources.json": "1f7b9831179ca1dae27285bffa189a03a47e28018c946e60b438965abb9d880c",
+    "source-observations.json": "2ff56eb6af7a41c478001b839b94430d8c082b2408f39f9e73cc6a46eb26c4e1",
+    "golden.json": "3b8ac59fc38f585cac817c5d5cb65eb7e96abedad1e0b84429bfe779b65299d8",
+    "method-proposal.md": "2b69175e12ad0aa437c8149624069f2caf2274054e420131bd43d3b261bd938a"
+  },
+  "approvedInputs": {
+    "keto-mutakakku": "b373e5621c6c939eaec2af8c9c11cd687f0a4b0f179159b5d143d2d4141e6af3",
+    "keto-suklaakeksit": "0770b52ebf84d8eb525027bac548b74827bbdc4e0ff46ae4dcd81af0ab6fc36f",
+    "vhh-juustokakku": "5b64980bf1d275c8369dcad192e477b6e604ad373f97df0fe970bd5d0f79ab73",
+    "palak-paneer": "550b8431881278672b6782e3d592ce34b49d38afb11bc1002822d42c4b7b0784",
+    "paneer-tikka": "dea9ab0c86285366cba8571a2d0eb14feb0d54c8ff2bf12fec28f7c786674944",
+    "kana-parmesaanipannu-parsakaali": "2c84c860a6fcd3efaa3a82010da5ec9b926c05b26ad49d24235123e00a380eb7",
+    "kermainen-kanasienipannu": "ec40897d09ffa334435618b50d4debf1ded8151917bec31b0777b37de5e1c27c",
+    "vhh-pyttipannu": "8faf4e3e441dfd2c014b7c54b9a32c4fd8e718bd1e7616f0d80f38ba99ea4a64",
+    "vhh-mansikkakakku": "ad411c771039328e0d0807b34303179e074767adbd750746d61a7da1ae060df0",
+    "vietnamilainen-pho-ga-aamuksi": "d86363469e31f4bb5a69a947116795a0be97b4df6b7bf14002ae81ce919bc5e7",
+    "congee-riisipuuro": "319b5cf68d5687f9b926ed51677881bb03f32fc460f5c046b4ff7658c0302811",
+    "valimerellinen-halloumi-tomaattileipa": "4beb505ecb977e282f23d82923755e13af70d0387b8270ea7e215207be248547",
+    "jauheliha-makaronilaatikko": "187c6663c8f170bcc5717b6ea3326571f0f635312513656385b88a59ce46ee9d",
+    "japanilainen-kabocha-puuro": "21d63fbd8ffc34eac80f1a6fac3b4420eb331649088ae2e66babdb5d22cafbe4",
+    "malesialainen-laksa-lemak-aamiaiseksi": "0670b3b3f5b45e9adc0838b19695fb7ea8a0673f09f7f78625a58a3c2d07c9a7",
+    "malesialainen-kaya-paahtoleipa": "7bd9afa3bc3b47c305347d30d120db5ebbf0dbb5cfa41d58bdf83cb8ce30d939"
+  },
+  "scope": "GK-only versions only; parent recipe macros/evidence/withholdings stay bound to their original versions. No inheritance to GK-only versions.",
+  "integrationAuthorized": true,
+  "readyAuthorized": false,
+  "mergeAuthorized": false,
+  "deployAuthorized": false,
+  "recordedAtUtc": "2026-11-02T12:09:52.881312+00:00"
+}

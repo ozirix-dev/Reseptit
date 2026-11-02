@@ -1,5 +1,5 @@
 import test from 'node:test';import assert from 'node:assert/strict';
-import {readFileSync} from 'node:fs';import {execFileSync} from 'node:child_process';import {createHash} from 'node:crypto';import {fileURLToPath} from 'node:url';import path from 'node:path';
+import {readFileSync} from 'node:fs';import {execFileSync} from 'node:child_process';import {fileURLToPath} from 'node:url';import path from 'node:path';
 import {ACTIVATION,loadPilot,evaluate,summarize,formatResult,digest,verifyCase,verifyComposition,type Case,type Result} from '../scripts/gk149-model';
 import {MAX_UNMATCHED_GI_INGREDIENT_CARBOHYDRATE_G,CUMULATIVE_OMITTED_CARBOHYDRATE_TOLERANCE_G} from '../scripts/glycemic-load-model';
 const root=fileURLToPath(new URL('../../',import.meta.url)),folder='docs/nutrition/gk80-operation149/';
@@ -52,11 +52,13 @@ test('presentation keeps A/B/class/missing separate in four locales and never ro
  for(const l of ['fi','en','sv','th'] as const){assert.ok(formatResult(a,l).text);assert.ok(formatResult(b,l).text.includes('–'));assert.ok(formatResult(a,l).uncertainty.includes('GI-less'));}
  assert.match(formatResult(a,'fi').text,/0,03/);assert.match(formatResult(results.at(-1)!,'fi').text,/puuttuu/);
 });
-test('entire active source surface and all156 production results are preserved',()=>{
- const base=json(folder+'baseline.json');const paths=execFileSync('git',['ls-files','-z'],{cwd:root,encoding:'utf8'}).split('\0').filter(p=>p&&base.scopePrefixes.some((x:string)=>p.startsWith(x))&&!base.exclude.some((x:string)=>p.includes(x))).sort();
- const items=paths.map(p=>{const b=readFileSync(path.join(root,p));let normalized=b;try{new TextDecoder('utf-8',{fatal:true}).decode(b);normalized=Buffer.from(b.toString('utf8').replaceAll('\r\n','\n'));}catch{}return [p,createHash('sha256').update(normalized).digest('hex')];});assert.equal(items.length,base.protectedFileCount);assert.equal(digest(items),base.protectedSurfaceSha256);
+test('parent recipe/macro sources and all326 original-version results stay unchanged after GK-only approval',()=>{
+ const base=json(folder+'baseline.json');
+ // The owner has now authorized the explicit integration adapter/UI. Parent
+ // recipes, translations and nutrition sources remain immutable and distinct.
+ const changed=execFileSync('git',['diff','--name-only',base.main,'--','reseptit','kaannokset','docs/nutrition'],{cwd:root,encoding:'utf8'}).trim().split(/\r?\n/).filter(Boolean).filter(p=>!p.startsWith(folder));assert.deepEqual(changed,[]);
  const report=json('tmp/nutrition/glycemic-load-pilot.json');assert.equal(report.summary.calculated,156);assert.equal(report.results.length,326);for(const r of report.results)assert.equal(digest(r),base.baselineResultHashes[r.recipeId],r.recipeId);
- assert.ok(!readFileSync(path.join(root,'site/scripts/glycemic-load-pilot.ts'),'utf8').includes('gk149'));assert.ok(!readFileSync(path.join(root,'site/scripts/gk80-release.ts'),'utf8').includes('gk149'));assert.equal(base.numericIds.length,156);
+ assert.ok(readFileSync(path.join(root,'site/scripts/glycemic-load-pilot.ts'),'utf8').includes('buildGkOnlyVariants'));assert.ok(!readFileSync(path.join(root,'site/scripts/gk80-release.ts'),'utf8').includes('gk149'));assert.equal(base.numericIds.length,156);
 });
 test('independent Python Decimal verifies actual16 and rejects the three blocked attempts',()=>{
  const p=JSON.parse(execFileSync(process.platform==='win32'?'python':'python3',['-I',path.join(root,folder+'verify_decimal.py')],{encoding:'utf8'}));assert.equal(p.status,'PASS');assert.equal(p.checked,16);assert.equal(p.held,3);assert.equal(p.writes,0);

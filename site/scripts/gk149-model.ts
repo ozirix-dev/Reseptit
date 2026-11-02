@@ -1,4 +1,4 @@
-/** Draft-only GK-only contract. Not imported by any public content/release path. */
+/** Closed pilot arithmetic. Public integration requires the separate exact owner-approved GK-only version contract. */
 import {createHash} from 'node:crypto';
 import {readFileSync} from 'node:fs';
 import path from 'node:path';

@@ -1,17 +1,24 @@
 {
   "local": {
-    "pilot": "PASS;16 numeric,3 arithmetic HOLD",
-    "focusedTests": "PASS;11 GK149 tests;4 existing Op146 regressions also passed",
-    "decimal": "PASS;16 numeric,3 HOLD",
+    "approvedIntegration": "PASS;16 exact versions,10A+6B",
+    "decimal": "PASS;16 frozen proposals,3 HOLD; separate pending proposal10.918125 independently replayed",
     "typescript": "PASS",
-    "markdown": "PASS",
-    "activeSurface": "PASS;1402 protected files;all326 result fingerprints preserved"
+    "build": "PASS;721 routes; targeted UI rebuild after real serving-display correction",
+    "browser": "PASS;31 recipe-locale pages,4 method pages;keyboard,servings,320/390/1280px;0 JS errors",
+    "originals": "PASS;all326 original result fingerprints and parent recipe/macro sources preserved",
+    "focusedAndStaticTests": "PASS;39 tests,0 failures;exact final source/UI including independent queue replay",
+    "markdown": "PASS;904 files;git diff --check PASS"
   },
-  "ci": "See exact Draft HEAD Checks; no manual Actions rerun requested",
+  "ci": "Read exact pushed HEAD Checks; previous pilot CI41439186585 does not validate the new integration",
   "production": "156/326 unchanged",
-  "target": 30,
-  "actual": 16,
+  "candidate": "172/326 for at least one exact version, including16 approved GK-only versions",
+  "pendingAdditionalProposal": 1,
+  "pendingCountedInCoverage": false,
+  "targetProposals": 30,
+  "actualProposals": 17,
   "targetMet": false,
+  "targetCoverage": 261,
+  "gapAfterCandidate": 89,
   "readyAuthorized": false,
   "mergeAuthorized": false,
   "deployAuthorized": false

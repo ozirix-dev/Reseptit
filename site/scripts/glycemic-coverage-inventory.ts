@@ -9,6 +9,7 @@ import { assertCoverageConsistency, buildBaselineSnapshot, buildCurrentCoverageI
 
 type JsonRecord = Record<string, unknown>;
 type PilotReport = JsonRecord & {
+  versionCoverage?: import("../src/features/recipes/gk-only-types").GkVersionCoverage;
   results: CoverageResult[];
   summary: { recipes: number; calculated: number; insufficientSourceData: number };
   sourceHashes: Record<string, string>;
@@ -457,6 +458,8 @@ const inventory = buildCurrentCoverageInventory({
 });
 
 const summary = inventory.currentSummary;
+// Parent-version inventory remains intact; independent GK-only versions have their own coverage.
+const versionCoverage = pilot.versionCoverage;
 const newlyAddedRecipeIds = inventory.recipes.filter((row) => row.newlyAdded).map((row) => row.recipeId);
 const structural = inventory.structuralBindingAnalysis;
 const reportLines = [
@@ -503,7 +506,8 @@ const reportLines = [
     return `| ${row.recipeId} | ${row.otherBlockingCategoriesAtReviewStart.join(", ") || "none"} | ${row.batch2AOutcome} | ${row.currentStatus} | ${inputIngredients.replaceAll("|", "\\|")} |`;
   }),
   "",
-  "## Nykyiset keskeneräiset reseptit",
+  ...(versionCoverage ? ["## GK-only-versiot", "", `Numeerinen GK vähintään yhdelle täsmälliselle versiolle: ${versionCoverage.numericRecipes}/${versionCoverage.total}; alkuperäisversioiden tuloksia ${versionCoverage.originalNumeric}, uutta A:ta ${versionCoverage.additionalA}, B:tä ${versionCoverage.additionalB}, pelkkiä luokkia ${versionCoverage.classOnly}. Kukin resepti lasketaan kerran. Alkuperäisversioiden ja makrojen inventaario säilyy erillisenä.`, ""] : []),
+  "## Nykyiset keskeneräiset alkuperäisversiot",
   "",
   "JSON-inventaario sisältää jokaiselle nykyiselle reseptille reseptin, GK-syötteen ja lähdetietueiden fingerprintit, ravintoarvotilan, kaikki estot, puuttuvat ruoka-/GI-tietueet, massa-/valmistustilaongelmat sekä seuraavan työvaiheen. Tämä taulukko listaa keskeneräiset ensisijaisen esteen mukaan.",
   "",
@@ -518,6 +522,6 @@ const reportLines = [
   "- Eräkohtainen vertailusnapshot käyttää sille nimettyä 325 reseptin lähtötilaa; historiallisia erä 1:n ja erän 2A tiedostoja ei korvata.",
   "",
 ];
-await writeFile(currentOutputPath, `${JSON.stringify(inventory, null, 2)}\n`, "utf8");
+await writeFile(currentOutputPath, `${JSON.stringify({...inventory,versionCoverage}, null, 2)}\n`, "utf8");
 await writeFile(markdownOutputPath, `${reportLines.join("\n").trimEnd()}\n`, "utf8");
 console.log(JSON.stringify({ sourceCommit, ...summary, historicalStructuralBindingCount: structural.rows.length, withOtherBlockersAtReviewStart: structural.withOtherBlockersAtReviewStart, potentiallyResolvableByBindingOnlyAtReviewStart: structural.potentiallyResolvableByBindingOnlyAtReviewStart, output: currentOutputPath, markdown: markdownOutputPath }, null, 2));

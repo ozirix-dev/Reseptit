@@ -1,0 +1,467 @@
+{
+  "notAnApproval": true,
+  "notGuaranteedYield": true,
+  "baselineNumeric": 156,
+  "approvedIntegratedDraft": 16,
+  "candidateNumeric": 172,
+  "targetNumeric": 261,
+  "gapAfterDraft": 89,
+  "remainingDistinctRecipes": 154,
+  "groups": [
+    {
+      "blocker": "STARCH_PROCESSING_GI_UNRESOLVED",
+      "recipes": [
+        "aloo-paratha",
+        "baozi",
+        "chole-bhature",
+        "dim-sum",
+        "gulab-jamun",
+        "indonesialainen-bakwan-maissifritter",
+        "indonesialainen-bubur-sumsum",
+        "indonesialainen-pisang-goreng-aamiaiseksi",
+        "indonesialainen-serabi-kookospannukakku",
+        "intialainen-aloo-paratha",
+        "intialainen-pinaatti-paneer-chilla",
+        "intialainen-rava-uttapam",
+        "kanaviillokki-kukkakaalilla",
+        "karibia-johnny-cake",
+        "karibia-saltfish-fritterit",
+        "keto-kauralesesampylat",
+        "kiinalainen-bao-munalla",
+        "kiinalainen-jianbing-munaletty",
+        "kiinalainen-katkarapu-wontonkeitto",
+        "kiinalainen-kevatsipulipannukakku",
+        "kimchi-jjigae",
+        "korealainen-kimchi-jeon-aamiaiseksi",
+        "kreikkalainen-moussaka",
+        "lahi-ita-manakish-zaatarilla",
+        "malesialainen-apam-balik",
+        "malesialainen-roti-canai-dhalilla",
+        "malesialainen-roti-jala-currykanalla",
+        "meheva-suklaakakku",
+        "okonomiyaki-kaaliletut",
+        "pani-puri",
+        "pellava-puuro-pahkinoilla",
+        "pizza-margherita",
+        "pohjoisafrikkalainen-baghrir",
+        "pohjoisafrikkalainen-harcha-juustolla",
+        "pohjoisafrikkalainen-msemen-hunajalla",
+        "roujiamo",
+        "samosa",
+        "spanakopita",
+        "tangyuan",
+        "thai-maissifritterit",
+        "thai-roti-munalla-banaanilla",
+        "tunisialainen-brik",
+        "vada-pav",
+        "valimerellinen-appelsiini-aamiaiskakku",
+        "vietnamilainen-banh-bao-kananmunalla",
+        "vietnamilainen-banh-cuon-sienilla",
+        "vietnamilainen-banh-xeo-aamiaisletut"
+      ],
+      "count": 47,
+      "meaning": "Shared investigation opportunity; source applicability must be checked for each exact preparation."
+    },
+    {
+      "blocker": "NAMED_FOOD_PREPARATION_MODEL_REVIEW_NEEDED",
+      "recipes": [
+        "dan-dan-nuudelit",
+        "hapanimela-porsas",
+        "indonesialainen-lontong-sayur-aamiaiseksi",
+        "indonesialainen-nasi-goreng-aamiaisriisi",
+        "indonesialainen-tempeh-munakulho",
+        "intialainen-idli-kookoschutneylla",
+        "intialainen-masala-dosa",
+        "japanilainen-dashimaki-tamago-aamiaislautasella",
+        "japanilainen-natto-riisikulho",
+        "japanilainen-okayu-umeboshipluumulla",
+        "japanilainen-yaki-onigiri-misolla",
+        "jerk-kana",
+        "korealainen-bataatti-riisikulho",
+        "korealainen-bindaetteok-aamiaiseksi",
+        "korealainen-tofu-kimchi-aamiaiskulho",
+        "malesialainen-kuih-seri-muka",
+        "meksikolainen-huevos-divorciados",
+        "meksikolainen-paputostada-aamupalaksi",
+        "nasi-lemak",
+        "pad-thai-vhh-konjac",
+        "pekingin-ankka",
+        "pho-bo",
+        "sate-ayam",
+        "thai-kananmunat-kookoscurryssa",
+        "tunisialainen-ojja",
+        "vietnamilainen-xoi-maapahkinalla"
+      ],
+      "count": 26,
+      "meaning": "Shared investigation opportunity; source applicability must be checked for each exact preparation."
+    },
+    {
+      "blocker": "PRODUCT_MASS_COMPOSITION_REVIEW_NEEDED",
+      "recipes": [
+        "carnitas-salaattitacot",
+        "japanilainen-curry-tofulla",
+        "japanilainen-hojicha-jogurtti-persimonilla",
+        "japanilainen-miso-tofu-paksoi",
+        "japanilainen-soba-aamiaiskeitto",
+        "karibia-ackee-ja-suolakala",
+        "karibia-bammy-kassavaleipa",
+        "karibia-plantain-aamiaislautanen",
+        "kerala-kalacurry",
+        "ketopizza-pofiber-pohjalla",
+        "kiinalainen-teehaudutetut-munat",
+        "korealainen-mandu-keitto-aamiaiseksi",
+        "lahi-ita-labneh-kulho-zaatarilla",
+        "lanzhou-naudanliha-nuudelikeitto",
+        "maksalaatikko-kukkakaalilla",
+        "mala-xiang-guo",
+        "malesialainen-kookos-banaanikulho",
+        "meksikolainen-chilaquiles-verdes",
+        "munakoiso-kesakurpitsalasagne",
+        "sichuan-hot-pot",
+        "tom-yum-goong-vhh",
+        "vietnamilainen-papaija-kookospuuro"
+      ],
+      "count": 22,
+      "meaning": "Shared investigation opportunity; source applicability must be checked for each exact preparation."
+    },
+    {
+      "blocker": "ALMOND_MEAL_GI",
+      "recipes": [
+        "keto-korvapuustit",
+        "rahkapiirakka-vhh",
+        "vhh-lihapiirakka",
+        "vhh-mustikkapiirakka",
+        "vhh-omenapiirakka",
+        "vhh-raparperipiirakka",
+        "vhh-runebergintortut"
+      ],
+      "count": 7,
+      "meaning": "Shared investigation opportunity; source applicability must be checked for each exact preparation."
+    },
+    {
+      "blocker": "CURRY_PASTE_AVAILABLE_CHO_AND_GI",
+      "recipes": [
+        "keltainen-kanacurry-vhh",
+        "khao-soi-vhh-konjac",
+        "massaman-curry-kanalla-vhh",
+        "panang-curry-kanalla-vhh",
+        "punainen-kanacurry-vhh",
+        "thai-vihrea-curry-kanalla-vhh"
+      ],
+      "count": 6,
+      "meaning": "Shared investigation opportunity; source applicability must be checked for each exact preparation."
+    },
+    {
+      "blocker": "PULSE_FLOUR_OR_GROUND_PREPARATION",
+      "recipes": [
+        "falafel",
+        "intialainen-besan-chilla",
+        "valimerellinen-farinata-aamupalaksi"
+      ],
+      "count": 3,
+      "meaning": "Shared investigation opportunity; source applicability must be checked for each exact preparation."
+    },
+    {
+      "blocker": "UNFIXED_INGREDIENT_OR_QUANTITY",
+      "recipes": [
+        "dal-makhani",
+        "idli-sambar",
+        "masala-dosa"
+      ],
+      "count": 3,
+      "meaning": "Shared investigation opportunity; source applicability must be checked for each exact preparation."
+    },
+    {
+      "blocker": "BERRY_GI",
+      "recipes": [
+        "marjainen-chiavanukas",
+        "rahka-marjakerroskulho"
+      ],
+      "count": 2,
+      "meaning": "Shared investigation opportunity; source applicability must be checked for each exact preparation."
+    },
+    {
+      "blocker": "SAUCE_GI_COMPOSITION",
+      "recipes": [
+        "pad-kee-mao-vhh-konjac",
+        "pad-see-ew-vhh-konjac"
+      ],
+      "count": 2,
+      "meaning": "Shared investigation opportunity; source applicability must be checked for each exact preparation."
+    },
+    {
+      "blocker": "SEMOLINA_PREPARATION",
+      "recipes": [
+        "intialainen-mannasuurimoupma",
+        "pohjoisafrikkalainen-taatelipuuro-appelsiinilla"
+      ],
+      "count": 2,
+      "meaning": "Shared investigation opportunity; source applicability must be checked for each exact preparation."
+    },
+    {
+      "blocker": "WHEAT_DOUGH_PREPARATION",
+      "recipes": [
+        "jiaozi",
+        "xiaolongbao"
+      ],
+      "count": 2,
+      "meaning": "Shared investigation opportunity; source applicability must be checked for each exact preparation."
+    },
+    {
+      "blocker": "BIRYANI_RICE_AND_SPICES",
+      "recipes": [
+        "hyderabadi-kanabiryani"
+      ],
+      "count": 1,
+      "meaning": "Shared investigation opportunity; source applicability must be checked for each exact preparation."
+    },
+    {
+      "blocker": "BLENDED_SOY_RICE",
+      "recipes": [
+        "korealainen-kongjuk-soijapapu-riisipuuro"
+      ],
+      "count": 1,
+      "meaning": "Shared investigation opportunity; source applicability must be checked for each exact preparation."
+    },
+    {
+      "blocker": "BREAD_POTATO_AND_MASS",
+      "recipes": [
+        "bouillabaisse"
+      ],
+      "count": 1,
+      "meaning": "Shared investigation opportunity; source applicability must be checked for each exact preparation."
+    },
+    {
+      "blocker": "BROAD_BEAN_PUREE",
+      "recipes": [
+        "pohjoisafrikkalainen-bissara"
+      ],
+      "count": 1,
+      "meaning": "Shared investigation opportunity; source applicability must be checked for each exact preparation."
+    },
+    {
+      "blocker": "BUN_AND_POTATO_PREPARATION",
+      "recipes": [
+        "pav-bhaji"
+      ],
+      "count": 1,
+      "meaning": "Shared investigation opportunity; source applicability must be checked for each exact preparation."
+    },
+    {
+      "blocker": "COCONUT_FLAKES_GI",
+      "recipes": [
+        "kaakao-kookos-chia"
+      ],
+      "count": 1,
+      "meaning": "Shared investigation opportunity; source applicability must be checked for each exact preparation."
+    },
+    {
+      "blocker": "CONDENSED_MILK",
+      "recipes": [
+        "vietnamilainen-kahvijogurtti-banaanilla"
+      ],
+      "count": 1,
+      "meaning": "Shared investigation opportunity; source applicability must be checked for each exact preparation."
+    },
+    {
+      "blocker": "CURRY_LEAF_COMPOSITION",
+      "recipes": [
+        "chettinad-kana"
+      ],
+      "count": 1,
+      "meaning": "Shared investigation opportunity; source applicability must be checked for each exact preparation."
+    },
+    {
+      "blocker": "DOUBANJIANG_AND_RICE_MASS",
+      "recipes": [
+        "mapo-tofu"
+      ],
+      "count": 1,
+      "meaning": "Shared investigation opportunity; source applicability must be checked for each exact preparation."
+    },
+    {
+      "blocker": "EGG_NOODLE_REFRY",
+      "recipes": [
+        "chow-mein"
+      ],
+      "count": 1,
+      "meaning": "Shared investigation opportunity; source applicability must be checked for each exact preparation."
+    },
+    {
+      "blocker": "FLAKED_RICE",
+      "recipes": [
+        "indialainen-poha-maapahkinoilla"
+      ],
+      "count": 1,
+      "meaning": "Shared investigation opportunity; source applicability must be checked for each exact preparation."
+    },
+    {
+      "blocker": "GOCHUJANG",
+      "recipes": [
+        "bibimbap"
+      ],
+      "count": 1,
+      "meaning": "Shared investigation opportunity; source applicability must be checked for each exact preparation."
+    },
+    {
+      "blocker": "HOISIN_GLAZE",
+      "recipes": [
+        "char-siu"
+      ],
+      "count": 1,
+      "meaning": "Shared investigation opportunity; source applicability must be checked for each exact preparation."
+    },
+    {
+      "blocker": "HONEY_DIJON_GI",
+      "recipes": [
+        "hunaja-sinappikana-kaalilla"
+      ],
+      "count": 1,
+      "meaning": "Shared investigation opportunity; source applicability must be checked for each exact preparation."
+    },
+    {
+      "blocker": "LEMONGRASS_EXTRACTION",
+      "recipes": [
+        "tom-kha-gai-vhh"
+      ],
+      "count": 1,
+      "meaning": "Shared investigation opportunity; source applicability must be checked for each exact preparation."
+    },
+    {
+      "blocker": "LEMONGRASS_RETAINED_CHO",
+      "recipes": [
+        "rendang-padang"
+      ],
+      "count": 1,
+      "meaning": "Shared investigation opportunity; source applicability must be checked for each exact preparation."
+    },
+    {
+      "blocker": "LIVER_GI",
+      "recipes": [
+        "paistettu-maksa-pekonilla"
+      ],
+      "count": 1,
+      "meaning": "Shared investigation opportunity; source applicability must be checked for each exact preparation."
+    },
+    {
+      "blocker": "MEAT_MARINADE_RETENTION",
+      "recipes": [
+        "bun-cha-hanoi"
+      ],
+      "count": 1,
+      "meaning": "Shared investigation opportunity; source applicability must be checked for each exact preparation."
+    },
+    {
+      "blocker": "MISO_GI",
+      "recipes": [
+        "miso-lohi-paksoi"
+      ],
+      "count": 1,
+      "meaning": "Shared investigation opportunity; source applicability must be checked for each exact preparation."
+    },
+    {
+      "blocker": "MUNG_PORRIDGE_MODEL",
+      "recipes": [
+        "intialainen-ven-pongal"
+      ],
+      "count": 1,
+      "meaning": "Shared investigation opportunity; source applicability must be checked for each exact preparation."
+    },
+    {
+      "blocker": "PAELLA_RICE_PREPARATION",
+      "recipes": [
+        "paella-valenciana"
+      ],
+      "count": 1,
+      "meaning": "Shared investigation opportunity; source applicability must be checked for each exact preparation."
+    },
+    {
+      "blocker": "PEANUT_BUTTER_HOISIN",
+      "recipes": [
+        "goi-cuon"
+      ],
+      "count": 1,
+      "meaning": "Shared investigation opportunity; source applicability must be checked for each exact preparation."
+    },
+    {
+      "blocker": "PEAR_MARINADE",
+      "recipes": [
+        "bulgogi"
+      ],
+      "count": 1,
+      "meaning": "Shared investigation opportunity; source applicability must be checked for each exact preparation."
+    },
+    {
+      "blocker": "PEA_SOUP_PREPARATION",
+      "recipes": [
+        "hernekeitto-savupotkalla"
+      ],
+      "count": 1,
+      "meaning": "Shared investigation opportunity; source applicability must be checked for each exact preparation."
+    },
+    {
+      "blocker": "PICKLED_BEET_AND_POTATO",
+      "recipes": [
+        "lindstrominpihvit-kaalilla"
+      ],
+      "count": 1,
+      "meaning": "Shared investigation opportunity; source applicability must be checked for each exact preparation."
+    },
+    {
+      "blocker": "POMEGRANATE_FORM",
+      "recipes": [
+        "lahi-ita-pistaasijogurtti"
+      ],
+      "count": 1,
+      "meaning": "Shared investigation opportunity; source applicability must be checked for each exact preparation."
+    },
+    {
+      "blocker": "PRESERVED_LEMON",
+      "recipes": [
+        "kana-tagine-sitruunalla"
+      ],
+      "count": 1,
+      "meaning": "Shared investigation opportunity; source applicability must be checked for each exact preparation."
+    },
+    {
+      "blocker": "RING_SAUSAGE_GI",
+      "recipes": [
+        "uunimakkara-sipulipedilla"
+      ],
+      "count": 1,
+      "meaning": "Shared investigation opportunity; source applicability must be checked for each exact preparation."
+    },
+    {
+      "blocker": "RYE_FLOUR_COATING",
+      "recipes": [
+        "silakkapihvit-tilli-kermakastike"
+      ],
+      "count": 1,
+      "meaning": "Shared investigation opportunity; source applicability must be checked for each exact preparation."
+    },
+    {
+      "blocker": "SEED_AND_RASPBERRY_GI",
+      "recipes": [
+        "siemengranola-jogurtilla"
+      ],
+      "count": 1,
+      "meaning": "Shared investigation opportunity; source applicability must be checked for each exact preparation."
+    },
+    {
+      "blocker": "STARCH_SAUCE_PREPARATION",
+      "recipes": [
+        "kung-pao-kana"
+      ],
+      "count": 1,
+      "meaning": "Shared investigation opportunity; source applicability must be checked for each exact preparation."
+    },
+    {
+      "blocker": "UNSPECIFIED_CURRY_PASTE",
+      "recipes": [
+        "kookos-lime-kanacurry"
+      ],
+      "count": 1,
+      "meaning": "Shared investigation opportunity; source applicability must be checked for each exact preparation."
+    }
+  ]
+}
