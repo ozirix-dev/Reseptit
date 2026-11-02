@@ -26,3 +26,9 @@ Oriental Merchantin 4.2.2021 päivätyssä IFSS-tuotetietolehdessä Squid-lasipu
 Kun tahnan 6,4 g/100 g ja lehden Thai FCD -skenaario yhdistetään tähän kastikkeeseen, poisjättö on 1,65045 g/annos. Kuivaustutkimuksen lehtiskenaariossa vastaava summa on 1,85590 g. Molemmat alittavat nykyiset A-rajat. Resepti määrää 30 g Squid Brand -kalakastiketta, joten 725 ml:n pakkaus sopii alkuperäiseen ainesosakuvaukseen. Tieto koskee vuoden 2021 AU-etikettiversiota. Pakkausmerkinnän vastaavuus on tarkistettava ennen hyväksyntää. 700 ml:n PET-pullon ilmoituspohja jää avoimeksi.
 
 Tuotetietolehti luettiin verkkotyökalulla. Suora lataus palautti HTTP 403:n, joten tälle havainnolle ei ole tiedostohashia. Tahnan ja lehden aiemmat lähdeportit koskevat myös tätä skenaariota.
+
+## AU 50 g:n pakkaus ja hyväksyntäraja
+
+Colesin 50 g:n Mae Ploy -tuote 5253568 ilmoittaa edelleen 6,4 g/100 g. Alkuperäisen reseptin 30 g voidaan punnita tästä pakkauksesta. Tieto tukee 6,4:n käyttöä erilliselle AU 50 g:n tuotteelle. 400 g:n tuotteen nykyinen etiketti jää varmistettavaksi. Yhdysvaltalainen H.C. Foods ilmoittaa 400 g:n tuotteelle samalla UPC:llä 044738102353 pyöristetyt 2 g kokonais-CHO:ta ja 1 g kuitua per 10 g. Kenttien ja pyöristyksen ero estää käyttämästä niiden erotusta saatavan CHO:n tarkkana arvona. [Coles](https://www.coles.com.au/product/mae-ploy-green-curry-paste-50g-5253568), [H.C. Foods](https://www.hcfoods.net/product/mae-ploy-green-curry-paste-24pj-x-14oz-400g/)
+
+Squid 725 ml -skenaariossa tahnan massapohjaisen pitoisuuden on oltava alle 11,06069 g/100 g Thai FCD -lehtilähteellä ja alle 8,32136 g/100 g kuivaustutkimuksen lehtiskenaariossa. Jos varataan lehden koko massa, tahnan vaatimus kiristyy alle 5,84136 grammaan per 100 g. Raja saadaan vähentämällä muille ainesosille varattu CHO 2 grammasta ja jakamalla erotus tahnan annosmassalla 7,5 g. Rajojen tiukkuus koskee pyöristämätöntä arvoa. Tuotevalinta yksin ei siis ratkaise lehtilähteen hyväksyntää.
