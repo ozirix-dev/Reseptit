@@ -1,0 +1,579 @@
+{
+  "cases": [
+    {
+      "recipeId": "aloo-paratha",
+      "sourcePath": "reseptit/paaruoat/aloo-paratha.md",
+      "sourceIngredients": [
+        {
+          "amount": 300,
+          "unit": "g",
+          "item": "vehnäjauhoja"
+        },
+        {
+          "amount": 1.8,
+          "unit": "dl",
+          "item": "vettä",
+          "note": "taikinaan"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "suolaa"
+        },
+        {
+          "amount": 400,
+          "unit": "g",
+          "item": "perunoita"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "juustokuminan siemeniä"
+        },
+        {
+          "amount": 0.5,
+          "unit": "tl",
+          "item": "chilijauhetta"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "garam masalaa"
+        },
+        {
+          "amount": 15,
+          "unit": "g",
+          "item": "tuoretta korianteria",
+          "note": "hienonnettuna"
+        },
+        {
+          "amount": 30,
+          "unit": "g",
+          "item": "gheetä tai voita",
+          "note": "Yhteensä koko erään."
+        }
+      ],
+      "servings": 4,
+      "ingredients": [
+        {
+          "name": "vehnäjauhoja",
+          "originalIndex": 0,
+          "sourceIngredient": {
+            "amount": 300,
+            "unit": "g",
+            "item": "vehnäjauhoja"
+          },
+          "grams": 300,
+          "foodId": "fineli-110",
+          "choBatchMinG": "221.994",
+          "choBatchMaxG": "221.994"
+        },
+        {
+          "name": "vettä",
+          "originalIndex": 1,
+          "sourceIngredient": {
+            "amount": 1.8,
+            "unit": "dl",
+            "item": "vettä",
+            "note": "taikinaan"
+          },
+          "grams": 180,
+          "foodId": "fineli-922",
+          "choBatchMinG": "0.0",
+          "choBatchMaxG": "0.0"
+        },
+        {
+          "name": "suolaa",
+          "originalIndex": 2,
+          "sourceIngredient": {
+            "amount": 1,
+            "unit": "tl",
+            "item": "suolaa"
+          },
+          "grams": 6.5,
+          "foodId": "fineli-30",
+          "choBatchMinG": "0.00",
+          "choBatchMaxG": "0.00"
+        },
+        {
+          "name": "perunoita",
+          "originalIndex": 3,
+          "sourceIngredient": {
+            "amount": 400,
+            "unit": "g",
+            "item": "perunoita"
+          },
+          "grams": 400,
+          "foodId": "fineli-205",
+          "choBatchMinG": "62.0",
+          "choBatchMaxG": "62.0"
+        },
+        {
+          "name": "jauhettua juustokuminaa, punnittu versio",
+          "originalIndex": 4,
+          "sourceIngredient": {
+            "amount": 1,
+            "unit": "tl",
+            "item": "juustokuminan siemeniä"
+          },
+          "grams": 2.65,
+          "foodId": "afcd-F003327",
+          "choBatchMinG": "0.89305",
+          "choBatchMaxG": "0.89305"
+        },
+        {
+          "name": "chilijauhetta",
+          "originalIndex": 5,
+          "sourceIngredient": {
+            "amount": 0.5,
+            "unit": "tl",
+            "item": "chilijauhetta"
+          },
+          "grams": 1,
+          "foodId": "afcd-F002893",
+          "choBatchMinG": "0.129",
+          "choBatchMaxG": "0.129"
+        },
+        {
+          "name": "garam masalaa",
+          "originalIndex": 6,
+          "sourceIngredient": {
+            "amount": 1,
+            "unit": "tl",
+            "item": "garam masalaa"
+          },
+          "grams": 2,
+          "foodId": null,
+          "choBatchMinG": "0",
+          "choBatchMaxG": "2",
+          "physicalChoMassBound": true,
+          "unknownIsNotPointZero": true
+        },
+        {
+          "name": "tuoretta korianteria",
+          "originalIndex": 7,
+          "sourceIngredient": {
+            "amount": 15,
+            "unit": "g",
+            "item": "tuoretta korianteria",
+            "note": "hienonnettuna"
+          },
+          "grams": 15,
+          "foodId": "afcd-F003192",
+          "choBatchMinG": "0.285",
+          "choBatchMaxG": "0.285"
+        },
+        {
+          "name": "gheetä tai voita",
+          "originalIndex": 8,
+          "sourceIngredient": {
+            "amount": 30,
+            "unit": "g",
+            "item": "gheetä tai voita",
+            "note": "Yhteensä koko erään."
+          },
+          "grams": 30,
+          "foodId": "afcd-F004205",
+          "choBatchMinG": "0",
+          "choBatchMaxG": "0"
+        },
+        {
+          "name": "maustamatontajogurttiatarjoiluun",
+          "originalIndex": null,
+          "sourceIngredient": null,
+          "grams": 200,
+          "foodId": "fineli-619",
+          "choBatchMinG": "10.0",
+          "choBatchMaxG": "10.0",
+          "explicitNewServingRow": true
+        }
+      ],
+      "preparedUnits": [
+        {
+          "foodClass": "POTATO_STUFFED_PANBREAD",
+          "ingredientIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "sourceIds": [
+            "potato-paratha-control78.8"
+          ]
+        }
+      ],
+      "separateIngredients": [
+        {
+          "ingredientIndex": 9,
+          "giId": "dairy-category-mean-gi-35"
+        }
+      ],
+      "sourceApplicationApproved": false,
+      "contentVersionApproved": false,
+      "publicationApproved": false,
+      "newPublishedValue": false,
+      "sourceScenarioNotPhysiologicalInterval": true,
+      "extraGarnishes": "Onlyexplicitlylistednewyogurtincluded;otherunquantifiedservingsuggestionsnotclaimedaspartofthisversion.",
+      "versionChanges": [
+        "Whole cumin spoon replaced by weighed2.65g groundcumin in this explicit new version.",
+        "Ghee30g selected;potatoes400g are peeled starting mass;chilli1g,garammasala2g weighed.",
+        "Add200g plainyogurt to the4servingplate."
+      ]
+    },
+    {
+      "recipeId": "intialainen-aloo-paratha",
+      "sourcePath": "reseptit/aamupalat/intialainen-aloo-paratha.md",
+      "sourceIngredients": [
+        {
+          "amount": 100,
+          "unit": "g",
+          "item": "vehnäjauho"
+        },
+        {
+          "amount": 60,
+          "unit": "ml",
+          "item": "vettä"
+        },
+        {
+          "amount": 150,
+          "unit": "g",
+          "item": "kuorittua perunaa"
+        },
+        {
+          "amount": 6,
+          "unit": "g",
+          "item": "tuoretta korianteria"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "juustokumina"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "neutraalia paistoöljyä"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "suolaa maun mukaan"
+        }
+      ],
+      "servings": 2,
+      "ingredients": [
+        {
+          "name": "vehnäjauho",
+          "originalIndex": 0,
+          "sourceIngredient": {
+            "amount": 100,
+            "unit": "g",
+            "item": "vehnäjauho"
+          },
+          "grams": 100,
+          "foodId": "fineli-110",
+          "choBatchMinG": "73.998",
+          "choBatchMaxG": "73.998"
+        },
+        {
+          "name": "vettä",
+          "originalIndex": 1,
+          "sourceIngredient": {
+            "amount": 60,
+            "unit": "ml",
+            "item": "vettä"
+          },
+          "grams": 60,
+          "foodId": "fineli-922",
+          "choBatchMinG": "0.0",
+          "choBatchMaxG": "0.0"
+        },
+        {
+          "name": "kuorittua perunaa",
+          "originalIndex": 2,
+          "sourceIngredient": {
+            "amount": 150,
+            "unit": "g",
+            "item": "kuorittua perunaa"
+          },
+          "grams": 150,
+          "foodId": "fineli-205",
+          "choBatchMinG": "23.25",
+          "choBatchMaxG": "23.25"
+        },
+        {
+          "name": "tuoretta korianteria",
+          "originalIndex": 3,
+          "sourceIngredient": {
+            "amount": 6,
+            "unit": "g",
+            "item": "tuoretta korianteria"
+          },
+          "grams": 6,
+          "foodId": "afcd-F003192",
+          "choBatchMinG": "0.114",
+          "choBatchMaxG": "0.114"
+        },
+        {
+          "name": "juustokumina",
+          "originalIndex": 4,
+          "sourceIngredient": {
+            "amount": 1,
+            "unit": "tl",
+            "item": "juustokumina"
+          },
+          "grams": 2.65,
+          "foodId": "afcd-F003327",
+          "choBatchMinG": "0.89305",
+          "choBatchMaxG": "0.89305"
+        },
+        {
+          "name": "neutraalia paistoöljyä",
+          "originalIndex": 5,
+          "sourceIngredient": {
+            "amount": 1,
+            "unit": "rkl",
+            "item": "neutraalia paistoöljyä"
+          },
+          "grams": 13.5,
+          "foodId": "fineli-541",
+          "choBatchMinG": "0.00",
+          "choBatchMaxG": "0.00"
+        },
+        {
+          "name": "suolaa maun mukaan",
+          "originalIndex": 6,
+          "sourceIngredient": {
+            "amount": null,
+            "unit": "",
+            "item": "suolaa maun mukaan"
+          },
+          "grams": 0,
+          "foodId": null,
+          "choBatchMinG": "0",
+          "choBatchMaxG": "0",
+          "sourceZeroEvidence": "OriginalunknownquantityplainNaCl,Fineli30known0CHO;modelmasssentinel0,notactualsaltdose."
+        },
+        {
+          "name": "maustamatontajogurttiatarjoiluun",
+          "originalIndex": null,
+          "sourceIngredient": null,
+          "grams": 100,
+          "foodId": "fineli-619",
+          "choBatchMinG": "5.0",
+          "choBatchMaxG": "5.0",
+          "explicitNewServingRow": true
+        }
+      ],
+      "preparedUnits": [
+        {
+          "foodClass": "POTATO_STUFFED_PANBREAD",
+          "ingredientIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "sourceIds": [
+            "potato-paratha-control78.8"
+          ]
+        }
+      ],
+      "separateIngredients": [
+        {
+          "ingredientIndex": 7,
+          "giId": "dairy-category-mean-gi-35"
+        }
+      ],
+      "sourceApplicationApproved": false,
+      "contentVersionApproved": false,
+      "publicationApproved": false,
+      "newPublishedValue": false,
+      "sourceScenarioNotPhysiologicalInterval": true,
+      "extraGarnishes": "Onlyexplicitlylistednewyogurtincluded;otherunquantifiedservingsuggestionsnotclaimedaspartofthisversion.",
+      "versionChanges": [
+        "Specify boiled/mashedpotato stuffing and groundcumin2.65g.",
+        "Add100g plainyogurt to the2servingplate."
+      ]
+    },
+    {
+      "recipeId": "kiinalainen-kevatsipulipannukakku",
+      "sourcePath": "reseptit/aamupalat/kiinalainen-kevatsipulipannukakku.md",
+      "sourceIngredients": [
+        {
+          "amount": 100,
+          "unit": "g",
+          "item": "vehnäjauho"
+        },
+        {
+          "amount": 60,
+          "unit": "ml",
+          "item": "vettä"
+        },
+        {
+          "amount": 2,
+          "unit": "rkl",
+          "item": "kevätsipuli"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "seesamiöljy"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "soijakastike"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "neutraalia paistoöljyä"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "suolaa maun mukaan"
+        }
+      ],
+      "servings": 2,
+      "ingredients": [
+        {
+          "name": "vehnäjauho",
+          "originalIndex": 0,
+          "sourceIngredient": {
+            "amount": 100,
+            "unit": "g",
+            "item": "vehnäjauho"
+          },
+          "grams": 100,
+          "foodId": "fineli-110",
+          "choBatchMinG": "73.998",
+          "choBatchMaxG": "73.998"
+        },
+        {
+          "name": "vettä",
+          "originalIndex": 1,
+          "sourceIngredient": {
+            "amount": 60,
+            "unit": "ml",
+            "item": "vettä"
+          },
+          "grams": 60,
+          "foodId": "fineli-922",
+          "choBatchMinG": "0.0",
+          "choBatchMaxG": "0.0"
+        },
+        {
+          "name": "kevätsipuli",
+          "originalIndex": 2,
+          "sourceIngredient": {
+            "amount": 2,
+            "unit": "rkl",
+            "item": "kevätsipuli"
+          },
+          "grams": 12.6,
+          "foodId": "afcd-F006250",
+          "choBatchMinG": "0.5796",
+          "choBatchMaxG": "0.5796"
+        },
+        {
+          "name": "seesamiöljy",
+          "originalIndex": 3,
+          "sourceIngredient": {
+            "amount": 1,
+            "unit": "rkl",
+            "item": "seesamiöljy"
+          },
+          "grams": 13.8,
+          "foodId": "afcd-F006187",
+          "choBatchMinG": "0.0",
+          "choBatchMaxG": "0.0"
+        },
+        {
+          "name": "soijakastike",
+          "originalIndex": 4,
+          "sourceIngredient": {
+            "amount": 1,
+            "unit": "rkl",
+            "item": "soijakastike"
+          },
+          "grams": 15.75,
+          "foodId": "afcd-F008065",
+          "choBatchMinG": "0.504",
+          "choBatchMaxG": "0.504"
+        },
+        {
+          "name": "neutraalia paistoöljyä",
+          "originalIndex": 5,
+          "sourceIngredient": {
+            "amount": 1,
+            "unit": "rkl",
+            "item": "neutraalia paistoöljyä"
+          },
+          "grams": 13.5,
+          "foodId": "fineli-541",
+          "choBatchMinG": "0.00",
+          "choBatchMaxG": "0.00"
+        },
+        {
+          "name": "suolaa maun mukaan",
+          "originalIndex": 6,
+          "sourceIngredient": {
+            "amount": null,
+            "unit": "",
+            "item": "suolaa maun mukaan"
+          },
+          "grams": 0,
+          "foodId": null,
+          "choBatchMinG": "0",
+          "choBatchMaxG": "0",
+          "sourceZeroEvidence": "OriginalunknownquantityplainNaCl,Fineli30known0CHO;modelmasssentinel0,notactualsaltdose."
+        }
+      ],
+      "preparedUnits": [
+        {
+          "foodClass": "UNFILLED_LAYERED_OIL_PANBREAD",
+          "ingredientIndices": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            6
+          ],
+          "sourceIds": [
+            "omani-unfilled-paratha31.8",
+            "kawan-frozen-paratha53"
+          ]
+        }
+      ],
+      "separateIngredients": [
+        {
+          "ingredientIndex": 4,
+          "giId": "op142-lowcho50-r4"
+        }
+      ],
+      "sourceApplicationApproved": false,
+      "contentVersionApproved": false,
+      "publicationApproved": false,
+      "newPublishedValue": false,
+      "sourceScenarioNotPhysiologicalInterval": true,
+      "extraGarnishes": "Onlyexplicitlylistednewyogurtincluded;otherunquantifiedservingsuggestionsnotclaimedaspartofthisversion.",
+      "versionChanges": [
+        "Use source-specific native household measures;all7 originalrows retained.",
+        "Layeredkneadedbread scope;soysauce treated separately,not within the measuredplainbreadunit."
+      ]
+    }
+  ],
+  "sesameOilNote": "Scallionbreadrow3 retains1rkl pure sesameoil,13.8g from AUSNUT F006187 density.92g/ml. Native AFCD sesameoil0CHO,individualpolyolsunknown;not a macro package.",
+  "noGlobalMethodChange": true
+}
