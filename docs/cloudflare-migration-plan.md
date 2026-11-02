@@ -20,8 +20,11 @@ Tämä dokumentti on ehdotus sen Cloudflare-seuraajaksi. Nykyinen julkaisu jatku
 | R2 `reseptit-private-archive` | Alkuperäismasterit, käyttämättömät kuvat, lähdeaineistot, D1-viennit ja palautusmanifestit | Yksityinen, ei kuvadomainia eikä `r2.dev`-julkisuutta |
 | Riippumaton kopio | Salattu palautuspaketti ja lähdekuvat Proton-varmistukseen | Yksityinen; avaimet K:-holvissa |
 
-Bucket-nimet ovat ehdotuksia. Domainin omistusta, Cloudflare-tiliä, nykyistä tilausta,
-kiintiöiden vapaata osuutta tai DNS:ää ei ole tässä työssä tarkistettu tai muutettu.
+Sivuston tavoitedomain on käyttäjän ilmoittama `recipavo.com`, ja kuvahostiksi
+ehdotetaan `kuvat.recipavo.com`. Lopullinen julkinen sivusto sijoittuu domainin
+juureen `https://recipavo.com/`. Bucket-nimet ovat ehdotuksia. Cloudflare-zonen
+asetuksia, domainin teknistä hallintaa, nykyistä tilausta, kiintiöiden vapaata
+osuutta tai DNS:ää ei ole tässä työssä varmennettu tai muutettu.
 
 ```mermaid
 flowchart LR
@@ -213,8 +216,9 @@ release-id:hen. Hallinta ei saa avata julkista SQL- tai kirjoitusrajapintaa.
 
 ## 6. URL-yhteensopivuus, oma domain ja välimuisti
 
-Ehdotettu kuvahost on `kuvat.<sivuston-oma-domain>`; täsmällinen domain valitaan
-ennen käyttöönottoa. Se liitetään R2:n Custom Domains -toiminnolla omassa
+Ehdotettu kuvahost on `kuvat.recipavo.com`. Sivusto on `recipavo.com`;
+`www.recipavo.com` ohjataan myöhemmin yhteen hyväksyttyyn pääosoitteeseen.
+Kuvahost liitetään R2:n Custom Domains -toiminnolla omassa
 Cloudflare-tilissä hallittuun zoneen. `r2.dev` ei ole tuotanto-CDN eikä sen eteen
 tehdä omaa CNAME-kiertoa. Julkinen oma domain mahdollistaa CDN-välimuistin;
 yksityisellä arkistobucketilla ei ole mitään julkista osoitetta.
@@ -232,7 +236,12 @@ D1:n hyväksyttyä resepti–asset-sidosta. Vite-base `/Reseptit/` ja nykyinen
 kovakoodattu `baseUrl` tiedostossa `site/scripts/build-content.ts` on myöhemmin
 parametrisoitava sivuhostille ja kuvahostille. Pelkkä DNS-siirto ei korjaa HTML:n,
 canonicalien, hreflangien, preloadien tai JSON-LD:n vanhoja absoluuttisia osoitteita.
-Ensimmäinen pilotointi säilyttää sivupolut `/Reseptit/`-alkuisina.
+Ensimmäinen julkaisematon pilotointi voi säilyttää sivupolut `/Reseptit/`-alkuisina.
+Lopullisessa `recipavo.com`-julkaisussa Viten base ja canonical-pohja ovat `/`.
+Vanhan ja uuden reittijoukon tarkka kartta laaditaan ennen kytkentää, esimerkiksi
+`/Reseptit/pad-thai-vhh-konjac/` -> `https://recipavo.com/pad-thai-vhh-konjac/`.
+Uuden hostin vanhat `/Reseptit/`-polut ohjataan tämän kartan mukaan;
+kuvapolut käsitellään ennen yleistä sivupolkuohjausta.
 
 Cache-sopimus: hash-nimetyille kuville `Cache-Control: public, max-age=31536000,
 immutable`; muuttuville alias- ja manifestiosoittimille lyhyt TTL, esimerkiksi
@@ -421,7 +430,8 @@ Ensimmäinen toteutuserä on julkaisematon pilotti: pieni kuvaotos,
 muutama jo hyväksytty ravintoarvolaskelma, molempien bucketien käyttöoikeudet,
 yksi D1-vienti ja palautus. Vasta sen jälkeen valmistellaan koko mainin tuonti.
 Kuvien oikeudet, jaetun pho/shoyu-kuvan vastaavuus, PNG-masterin yhteys,
-sivusto- ja kuvadomain sekä säilytyksen kustannusraja ratkaistaan ennen julkista kytkentää.
+recipavo.com- ja kuvadomainin tekninen kytkentä sekä säilytyksen kustannusraja
+ratkaistaan ennen julkista kytkentää.
 Historialliset lisenssiltään rajoitetut ravintolähteet pysyvät erillään
 julkisesta manifestista ja API:sta.
 
@@ -436,6 +446,66 @@ Tässä suunnittelutyössä tehtiin vain tiedostoinventaario, SHA-256-vertailu,
 metatietojen ja viittausten tarkistus sekä dokumentaation tarkistus.
 Ei kuvien siirtoa tai poistamista, ei varianttien generointia, sivustobuildia,
 Cloudflare-resurssia, GitHub Actions -ajoa, mergeä tai deployta.
+
+## 12. Nykyisen GitHub-version tehtävä ja GSC:n lähtötilanne
+
+Käyttäjän täydennys 2.11.2026: **GSC:ssä ei ole dataa**. Tämä on käyttäjän
+ilmoittama lähtötieto; GSC-tiliä ei auditoitu tässä työssä. Siirron ehtona ei ole
+28 päivän GSC-vertailujakso eikä raportin odottaminen. Datan puuttuminen ei
+yksin todista, ettei vanhoja osoitteita olisi indeksoitu tai jaettu.
+
+GitHubista luetut tiedot 2.11.2026: repo on julkinen, oletushaara on `main`,
+Pages käyttää workflow-julkaisua ja sen ilmoitettu osoite on
+`https://ozirix-dev.github.io/Reseptit/`. Pagesin custom domain on asettamatta.
+Viimeisin Pages-deployment-tietue (`7479319566`, 1.11.2026 klo 23.24 Suomen aikaa)
+viittaa SHA:han `583fdb91aeb12114f909412b9165fc3b02a6515d`. Pelkkä deployment-tietue
+ei ole kaikkien tuotantosivujen tai -kuvien toimivuustodiste.
+
+| Kohde | Nyt, muiden ajojen jatkuessa | Hallitun Cloudflare-siirron jälkeen |
+| --- | --- | --- |
+| GitHub-repo ja historia | Säilyvät nykyisen kehityksen lähteenä; ei arkistointia tai siivousta | Säilyvät koodin, Markdown-reseptien, katselmointien ja julkaisuversioiden lähteenä |
+| GitHubin nykyiset kuvat | Säilyvät kokonaisina; ei Git-poistoja tai historian uudelleenkirjoitusta | Säilyvät ainakin siirtymän ja todistetun palautuksen ajan; Git-kuvakopioiden mahdollinen myöhempi vähentäminen on oma päätös |
+| GitHub Pages -sivusto | Jatkaa nykyisellä julkaisulla; tämän PR:n yhteydessä ei muuteta Pages-asetuksia tai deploy-workflowta | Viimeinen toimiva julkaisu jäädytetään palautuspaketiksi; yksi erillinen siirtymäjulkaisu voi säilyttää vanhat kuvaosoitteet ja ohjata reseptit recipavo.comiin |
+| `recipavo.com` | Vain suunnitelman kohde; ei resurssi-, DNS- tai liikennemuutoksia | Ainoa jatkuvasti ylläpidettävä julkinen reseptisivusto |
+| Actions | Tämän dokumentaatio-PR:n commitit sisältävät `[skip ci]`; ei manuaalisia workflow-ajoja | Erillisen hyväksytyn käyttöönoton yhteydessä yksi julkaisuputki; vanha Pages-autodeploy poistuu käytöstä vasta sovitussa siirtymäjulkaisussa |
+
+Suositus on säilyttää GitHub-repo ja erottaa se GitHub Pages -hostingista.
+Repositorion poistaminen tai arkistoiminen katkaisisi käynnissä olevan resepti- ja
+laskentatyön työnkulun. Kokonaisen toisen sisältösivuston jatkuva ylläpito
+Cloudflaren rinnalla toisi kaksi julkaistavaa versiota ilman osoitettua hyötyä.
+
+Ennen mitään Pages-muutosta otetaan talteen täsmällinen julkaisu-SHA, staattinen
+julkaisupaketti, vanhojen HTML/JSON/kuva-URL:ien manifesti ja palautusohje.
+Palautuspaketille ehdotetaan vähintään 30 päivän käyttöönottoikkunaa;
+varmistusten muu säilytys noudattaa luvun 9 politiikkaa. GitHubin workflow-artifactin
+vaihtuvaan säilytysaikaan ei perusteta ainoaa palautuskopiota.
+
+GitHub Pages ei tarjoa tämän sovelluksen hallittavaa HTTP-palvelinta, jolla
+vanhalle `github.io`-hostille voisi asentaa Cloudflare Worker -redirectin.
+Siirtymäjulkaisun sivukohtainen HTML-ohjaus ja näkyvä linkki sekä canonical
+uuteen vastaavaan reseptiin ovat mahdollinen myöhemmin toteutettava ratkaisu;
+sitä ei kuvata aitona HTTP 301:nä. Vanhojen kuvatavujen säilytys pitää aiemmat
+kuvaosoitteet käyttökelpoisina. Pelkkä README-linkin lisääminen ei ohjaa
+reseptisivuille saapuvaa käyttäjää.
+
+`recipavo.com`-domainia ei aseteta tämän suunnitelman sivuvaikutuksena GitHub
+Pagesin custom domainiksi: tarkoitus on palvella sitä Cloudflare Workersista.
+GitHub Pagesin domain-asetus on oma hosting-valintansa, johon liittyy myös DNS.
+[GitHubin domain-ohje](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site).
+
+GSC:n käyttöönotto kohdistetaan myöhemmin uuteen domainiin: omistajuusvahvistus,
+uusi sitemap ja pieni URL-tarkistusotos. Seuranta alkaa uudesta lähtötilanteesta;
+yksittäinen vahvistus ei tarkoita indeksoinnin onnistumista. Vanhojen kuvien
+pitkän aikavälin säilytystä arvioidaan myöhemmin oikean käytön ja linkkien perusteella,
+eikä niitä poisteta automaattisesti GSC:n tyhjyyden vuoksi.
+
+Draft-PR ei ole käyttöönoton aloituslupa. Käynnissä olevien muiden sessioiden
+työn valmistuminen ja hyväksytty main-snapshot tarkistetaan ennen tulevaa
+siirtoa. CI:n ohitus koskee vain näitä dokumentaatiocommitteja: GitHubin mukaan
+`[skip ci]` estää `push`/`pull_request`-käynnistimet, mutta ei esimerkiksi
+`pull_request_target`-käynnistintä. Nykyisessä mainissa on vain `pages.yml`,
+jonka käynnistimet ovat `push`, `pull_request` ja `workflow_dispatch`.
+[GitHubin CI-ohitusohje](https://docs.github.com/en/actions/how-tos/manage-workflow-runs/skip-workflow-runs).
 
 ### Inventaarion toistaminen
 
