@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "repository": "ozirix-dev/Reseptit",
+  "role": "Codex2 / Codex Tutkimus",
+  "ownedBranch": "codex/afcd-polyol-03-gk80-handoff",
+  "ownedWorktree": "D:\\Projects\\tmp\\reseptit-afcd-polyol-03-gk80-handoff",
+  "startingHead": "9bb90548ee0cb7d820c0a1d4f57b9d5082b8da24",
+  "activation": false,
+  "ownerApproval": false,
+  "readyAuthorized": false,
+  "mergeAuthorized": false,
+  "deployAuthorized": false,
+  "caseInputSha256": "4194712a2cecb7979c779f4479a1f0a92bf402e190c4ff66a2369667455acbd4",
+  "filesLfSha256": {
+    "audit-native-points.py": "d15da8b031906c08bb5f8a42bda3fc0500754c9fd68113d2e248317fec46ad2e",
+    "cases.json": "c41da473aed69d6f90008948c9125f1a1b32876bb5dd112bbf5dcbd760fbab97",
+    "decimal-results.json": "af25d2568959b06297bc2308c8ba16832d7707fa9a8addf4813e0368281c883c",
+    "engine-results.json": "2cf626a65b1e8e674a21465692146f613cff0d908dae411b3ebff435db915f2f",
+    "evaluate-native-points.mts": "6c148d244bfbae8712d46a8561e0d76a40d47b537fd13bac1d2c5053939bbbc6",
+    "extract-native-records.py": "d0a75305597b30f192c053c0a3f34a6735c79ca2d010170dfc68d05568c1a285",
+    "family-gate-results.csv": "22c436951e2f659be517f3e8c015eb131e8414dd939c740c135b7cb4cf7a77fd",
+    "family-gates.json": "8e60563d0876ccc22f95ed0faae70f5bfc22dae7279c40f18c8f68a6d9f4b665",
+    "mext-native-observations.json": "f81de11b4b260c8851beacdcf059d7fc180a4bf5fea428e2a63b250c69012f37",
+    "sources.json": "f0bc2290b3d77bba2904ffeda7d05542694a3d21829fb9c3dec0986765497a1f"
+  },
+  "sourceFamilyImpact": "One new complete A arithmetic input among four unchanged-quantity almond-family gates; no implied four-result coverage. Three controls still exceed1g individually. Source admission and content review pending.",
+  "reproduction": "Use installed tsx for evaluate-native-points.mts ROOT DATA_DIR EXTERNAL_OUT, then Python audit-native-points.py with same arguments. extract-native-records.py uses openpyxl and the original hash-pinned main/carbohydrate2026-03-27 workbooks. Output outside Git only.",
+  "finalHeadLocator": "Commit containing this manifest; exact final SHA supplied in handoff.",
+  "rawSourceWorkbookHashesPreserved": true,
+  "mainReleaseObservedDuringResearch": {
+    "head": "92dc6dbe7b27e145d6938026c73b6823f2e2108f",
+    "workflowRun": 41504708914,
+    "publishedNumericAnyVersion": 172,
+    "evidenceRef": "../production-observation.json",
+    "releasedByThisResearchRun": false
+  }
+}

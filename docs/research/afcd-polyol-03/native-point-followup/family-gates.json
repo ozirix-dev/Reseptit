@@ -1,0 +1,46 @@
+{
+  "activation": false,
+  "cases": [
+    {
+      "recipeId": "rahkapiirakka-vhh",
+      "almondGrams": 150,
+      "servings": 8,
+      "sourcePath": "reseptit/jalkiruoat/rahkapiirakka-vhh.md",
+      "sourceSha256Lf": "e902035d36263b4ad41d337d5fed8283d76e8fffcbfc87c28d53076c075dfdab",
+      "sourceApplication": "NEW_WHOLE_DRY_ALMOND_GRINDING_VERSION_ONLY",
+      "nativeMextId": "05001",
+      "wholeRecipeCandidatePrepared": true
+    },
+    {
+      "recipeId": "vhh-runebergintortut",
+      "almondGrams": 120,
+      "servings": 6,
+      "sourcePath": "reseptit/leivonnaiset/vhh-runebergintortut.md",
+      "sourceSha256Lf": "e579594baf3d71bd324b1051ab7df2ab2da81c17412ad1ea3d75637d4e5f1cc3",
+      "sourceApplication": "NEW_WHOLE_DRY_ALMOND_GRINDING_VERSION_ONLY",
+      "nativeMextId": "05001",
+      "wholeRecipeCandidatePrepared": false
+    },
+    {
+      "recipeId": "vhh-lihapiirakka",
+      "almondGrams": 200,
+      "servings": 8,
+      "sourcePath": "reseptit/leivonnaiset/vhh-lihapiirakka.md",
+      "sourceSha256Lf": "8b5071d4c6b08847a0855b630b34ee55471ed00cf6f61b9687e25f56f3ec96a9",
+      "sourceApplication": "NEW_WHOLE_DRY_ALMOND_GRINDING_VERSION_ONLY",
+      "nativeMextId": "05001",
+      "wholeRecipeCandidatePrepared": false
+    },
+    {
+      "recipeId": "keto-korvapuustit",
+      "almondGrams": 200,
+      "servings": 8,
+      "sourcePath": "reseptit/leivonnaiset/keto-korvapuustit.md",
+      "sourceSha256Lf": "84f4ef23369a64393f922fd5df3f22079ca56ddcd8e5963d2d5484542252ba24",
+      "sourceApplication": "NEW_WHOLE_DRY_ALMOND_GRINDING_VERSION_ONLY",
+      "nativeMextId": "05001",
+      "wholeRecipeCandidatePrepared": false
+    }
+  ],
+  "policy": "Exact original quantities and servings. A single-ingredient pass is not a whole-recipe result. Other three recipes fail even this new source point; no amount or serving change."
+}

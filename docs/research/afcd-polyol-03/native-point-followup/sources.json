@@ -1,0 +1,144 @@
+{
+  "activation": false,
+  "ownerApproval": false,
+  "sourceFilesLfSha256": {
+    "docs/nutrition/fineli-release-20-reference.json": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76",
+    "docs/nutrition/afcd-release-3-reference.json": "02edf1cc95191c05edf791656a5109c41bcf4d4a3e707be69ef5009bc640022e",
+    "docs/nutrition/glycemic-index-records.json": "fb465ac8f68ffc85e29eb9900f17df00b081fa0ddc3e25d253140aecb248acda",
+    "docs/nutrition/food-records.json": "2f8ff76b97848294c28195bb92c6d202e9754168ddb169d30ee5e8610d2c2b9b",
+    "site/scripts/glycemic-load-model.ts": "10ce09e465886e4538fc0b2ad2a54ca0b050a9e3729b7417eb0a91f2b946b48c",
+    "site/scripts/nutrition-model.ts": "6667190a6604523fe083d6d766cfbbdb7c2ce75366194f3036ce711a8218a7ce",
+    "docs/research/afcd-polyol-03/mext-available-source.ts": "6dcda86604384b8eb60892bed608f687b015b38d688430ff30819b3042f727e7"
+  },
+  "composition": [
+    {
+      "id": "500",
+      "kind": "FINELI_NATIVE",
+      "path": "docs/nutrition/fineli-release-20-reference.json",
+      "nativeId": "500",
+      "nativeField": "per100g.available_carbohydrate_g_per_100g",
+      "availablePer100g": 0.8,
+      "name": "VOI",
+      "portionMasses": {
+        "DL": 95.0,
+        "RKL": 14.0,
+        "TL": 4.5
+      },
+      "polyolsTotal": null
+    },
+    {
+      "id": "858",
+      "kind": "FINELI_NATIVE",
+      "path": "docs/nutrition/fineli-release-20-reference.json",
+      "nativeId": "858",
+      "nativeField": "per100g.available_carbohydrate_g_per_100g",
+      "availablePer100g": 0.3,
+      "name": "KANANMUNA, KUORETON",
+      "portionMasses": {
+        "KPL_M": 55.0
+      },
+      "polyolsTotal": null
+    },
+    {
+      "id": "622",
+      "kind": "FINELI_NATIVE",
+      "path": "docs/nutrition/fineli-release-20-reference.json",
+      "nativeId": "622",
+      "nativeField": "per100g.available_carbohydrate_g_per_100g",
+      "availablePer100g": 3.0,
+      "name": "RAHKA, MAITORAHKA, MAUSTAMATON, RASVAA <0,5 %",
+      "portionMasses": {
+        "DL": 100.0,
+        "RKL": 15.0,
+        "TL": 5.0
+      },
+      "polyolsTotal": null
+    },
+    {
+      "id": "631",
+      "kind": "FINELI_NATIVE",
+      "path": "docs/nutrition/fineli-release-20-reference.json",
+      "nativeId": "631",
+      "nativeField": "per100g.available_carbohydrate_g_per_100g",
+      "availablePer100g": 2.9,
+      "name": "KERMA, KUOHUKERMA, RASVAA 38 %",
+      "portionMasses": {
+        "DL": 100.0,
+        "RKL": 15.0,
+        "TL": 5.0
+      },
+      "polyolsTotal": null
+    },
+    {
+      "id": "385",
+      "kind": "FINELI_NATIVE",
+      "path": "docs/nutrition/fineli-release-20-reference.json",
+      "nativeId": "385",
+      "nativeField": "per100g.available_carbohydrate_g_per_100g",
+      "availablePer100g": 0.9,
+      "name": "SEESAMINSIEMEN, KUORINEEN",
+      "portionMasses": {
+        "DL": 60.0,
+        "RKL": 8.5,
+        "TL": 3.0
+      },
+      "polyolsTotal": null
+    },
+    {
+      "id": "F006077",
+      "kind": "AFCD_NATIVE_COMPARATOR",
+      "path": "docs/nutrition/afcd-release-3-reference.json",
+      "nativeId": "F006077",
+      "nativeField": "available_carbohydrate_without_sugar_alcohols_g_per_100g",
+      "availablePer100g": 5.4,
+      "name": "Nut, almond meal",
+      "polyolsTotal": null
+    },
+    {
+      "id": "MEXT05001",
+      "kind": "MEXT_NATIVE_MASS",
+      "nativeId": "05001",
+      "nativeField": "CHOAVL",
+      "availablePer100g": 5.2,
+      "polyolsTotal": null,
+      "application": "Only dried unroasted edible whole almonds05001,150g weighed BEFORE grinding, all resulting meal retained. No blanching, roasting, defatting, sieving/discarding, or use for arbitrary branded flour. Native regional point, not a lot-certified upper."
+    },
+    {
+      "id": "vanilla-physical-cap",
+      "kind": "PHYSICAL_MASS_CAP",
+      "availableUpperPer100g": 100,
+      "application": "New exact version uses5g vanilla extract; this physical cap covers ALL of its mass. Not a claim1tsp=5g, no density conversion or zero assumption."
+    },
+    {
+      "id": "foodin-erythritol",
+      "kind": "EXPLICIT_LABEL_DIFFERENCE",
+      "path": "docs/nutrition/food-records.json",
+      "nativeId": "foodin-erythritol-200g-label-2026-10-24",
+      "availablePer100g": 0,
+      "polyolsTotal": 100,
+      "application": "Only explicit label100CHO minus100polyols. Original2tbsp retained;0g in calculation is zero-CHO sentinel, not removal or a mass conversion."
+    }
+  ],
+  "giBindings": [
+    {
+      "id": "dairy30",
+      "path": "docs/nutrition/glycemic-index-records.json",
+      "nativeId": "op142-dairy-imputation30",
+      "value": 30,
+      "allowedCompositionIds": [
+        "622",
+        "631"
+      ],
+      "kind": "EXISTING_PUBLISHED_IMPUTATION",
+      "note": "Current existing dairy coding for these exact native IDs; neither a measured meal GI nor new GI constant."
+    }
+  ],
+  "mextFile": "mext-native-observations.json",
+  "mextPolicy": "Use author-published CHOAVL mass sum paired in both books. No unknown component,trace, missing total, parenthesized estimate or polyols amount is coerced to zero. New food-row/application admission remains pending.",
+  "newApplicationConstraints": [
+    "No transfer from flavored fried05002 or estimated roasted05040 to raw flour",
+    "Published source point5.2 is not an upper guarantee for all almond lots",
+    "Do not mix monop-equivalent5.5 or difference11.5 with mass5.2",
+    "Milling conservation is a physical preparation assumption for whole input retained, not a GI transfer"
+  ]
+}

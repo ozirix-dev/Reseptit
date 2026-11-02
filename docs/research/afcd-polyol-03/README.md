@@ -1,23 +1,29 @@
 # AFCD-POLYOL-03 / GK80: yhteinen menetelmä- ja lähderatkaisu
 
-## Nykytila erottelun jälkeen
+## Nykytila: PR183 julkaistu
 
-**PR183:n Ready-sisältö on16 hyväksyttyä GK-versiota, HEAD`d98d77f`. Kuusi muuta hyväksyttyä A-versiota ovat lukitussa erillisessä haarassa`codex/gk80-six-a-isolated`, HEAD`80f4360`.Lisäksi pad see ewin yksi tarkka A-versio on hyväksytty erillisessä tutkimusluovutuksessa.23 hyväksyttyä versiota ei tarkoita23 versiota PR183:ssa eikä23 julkaistua lisäystä.**
+**PR183:n16 hyväksyttyä GK-versiota on yhdistetty mainiin ja julkaistu, merge-HEAD`92dc6db`. Build ja deploy41504708914 läpäisivät. Julkaistu GK-sivu näyttää172/326 reseptiä, joilla on numeerinen GK vähintään yhdessä versiossa: A166 ja B6. Alkuperäisten ohjeiden numeerinen kattavuus säilyy156/326:ssa.** [Julkaisuhavainto](production-observation.json) sitoo nämä luvut tarkkaan HEADiin, deployhin ja julkaistun sivun sisältöhashiin. Tämä Codex2-tutkimusajo ei suorittanut julkaisua.
 
 | Näkymä | Numeerisia /326 | Ero tavoitteeseen261 |
 | --- | ---: | ---: |
-| Viimeksi varmennettu main/tuotanto |156 (47,85%) |105 |
-| Codex1:n PR183:n16 version julkaisuehdokas |172 (52,76%) |89 |
-| Molemmat aiemmat erät joskus erikseen katselmoitu, integroitu ja julkaistu |178 (54,60%) |83 |
-| Lisäksi hyväksytty pad see ew myöhemmin erikseen integroituna ja julkaistuna |179 (54,91%) |82 |
+| Varmennettu julkaistu kattavuus, vähintään yksi versio |172 (52,76%) |89 |
+| Lisäksi kuusi lukittua hyväksyttyä versiota myöhemmin julkaistuna |178 (54,60%) |83 |
+| Lisäksi hyväksytty pad see ew myöhemmin julkaistuna |179 (54,91%) |82 |
+| Lisäksi rahkapiirakan uusi versio erikseen hyväksyttynä ja julkaistuna |180 (55,21%), ehdollinen |81 |
 
-Yhteisessä34 reseptin laskenta-aineistossa23 versiolla on menetelmä- tai sisältöhyväksyntä eri vaiheissa:16 integraatiossa,6 lukitussa erässä ja1 tutkimusluovutuksessa.11 reseptiltä puuttuu hyväksytty versio; niistä6 pysyy valmistetun ruoan lähde-HOLDissa.30 lähdekelpoisen julkaisuehdokkaan tavoitetta ei ole osoitettu. Uuden B-poisjättöprofiilin ja hernekeiton tutkimusmallin tila säilyy tutkimuksena.
+Yhteisessä35 reseptin laskenta-aineistossa23 versiolla on menetelmä- tai sisältöhyväksyntä:16 julkaistu,6 lukitussa erässä ja1 tutkimusluovutuksessa. Hyväksyttyjä mutta julkaisemattomia on7.12 reseptiltä puuttuu hyväksytty versio; niistä6 pysyy valmistetun ruoan lähde-HOLDissa.30 lähdekelpoisen julkaisuehdokkaan tavoitetta ei ole osoitettu. Uusi B-poisjättöprofiili ja hernekeiton tutkimusmalli säilyvät tutkimuksena.
 
-[Nykytilakirjaus](current-state.json) ja [nykyinen päätösmatriisi:34 aritmeettista ehdotusta ja35 muuta HOLD-riippuvuutta](current-decision-matrix.csv) ovat vaiheiden ensisijaiset yhteenvedot. Aiemmat`summary.json`,`joint-*`-tiedostot ja [integraatiokuitti](integration-receipt.json) ovat historiallisia tilannekuvia. Niiden alkuperäisiä hyväksyntä-, laskenta- tai hash-kenttiä ei muutettu; nykytilaksi tulkinta on merkitty vanhentuneeksi ja ohjattu tähän uuteen kirjaukseen.
+[Nykytilakirjaus](current-state.json) ja [nykyinen päätösmatriisi:35 aritmeettista ehdotusta ja35 muuta HOLD-riippuvuutta](current-decision-matrix.csv) ovat vaiheiden ensisijaiset yhteenvedot. Aiemmat`summary.json`,`joint-*`-tiedostot ja [integraatiokuitti](integration-receipt.json) ovat historiallisia tilannekuvia. Niiden alkuperäisiä hyväksyntä-, laskenta- tai hash-kenttiä ei muutettu; nykytilaksi tulkinta on merkitty vanhentuneeksi ja ohjattu tähän uuteen kirjaukseen.
 
 **Codex2:n kirjoitusrajaus:** vain`D:/Projects/tmp/reseptit-afcd-polyol-03-gk80-handoff` ja`codex/afcd-polyol-03-gk80-handoff`. PR183:n`codex/gk80-operation149-v2` kuuluu Codex1:lle. Kuuden version säilytyshaaraa ei muokata. Lähdetyö luovutetaan jatkossa omana versionlukittuna pakettinaan; ei Readyä, mergeä tai deployta.
 
 Uudet projektisäännöt löytyivät mainiin PR184:llä yhdistetyistä [AGENTS.md](../../../AGENTS.md)- ja [rinnakkaisajo-ohjeista](../../rinnakkaiset-codex-ajot.md), commit`061f817`. Ne tuotiin tähän omaan työpuuhun täsmälleen samansisältöisinä. Pelkkää repo_guardin PASSia ei käsitellä haaran kirjoituslukkona. PR182 jää erilliseksi Draftiksi ja sen koko lähdetiedoston hash-/regressioriippuvuus on edelleen avoin.
+
+## Uusin natiivilähteen jatkotulos
+
+[Rahkapiirakan tarkka uusi valmistusversio](native-point-followup.md) käyttää MEXT05001:n kuivan paahtamattoman mantelin natiivia CHOAVL-massasummaa5,2g/100g sekä koko150g:n jauhamista ja käyttöä. Kahdeksan annosta ja alkuperäiset grammamäärät säilyvät. Vaniljauute täsmennetään erillisen version punnituksi5g:ksi; tämä ei ole väite alkuperäisen teelusikan massasta. Nykyisen A-menetelmän laskettu GK-osa on0,45 ja positiiviset poisjätöt1,736875g CHO/annos. Mantelin oma poisjättö0,975g on vain0,025g alle yksittäisen1g-rajan: lähde- ja sisältösovellus edellyttää omistajan erillistä katselmointia. Ei mantelijauhon GI50:tä, paistettujen manteleiden siirtoa tai B-poisjättöprofiilin aktivointia.
+
+Sama uusi natiivipiste ei avaa kolmea muuta seulottua mantelileivonnaista niiden nykyisillä määrillä. Uusi aritmeettinen koonti on35 uniikkia reseptiä; hyväksyttyjä edelleen23 ja tuotannossa172/326. Tämän yhdenkin version myöhempi erillinen hyväksyntä ja julkaisu veisi aiempien23:n jälkeen ehdolliseen180/326:een (55,21%);261:een puuttuisi81. [Luovutuspaketti](native-point-followup/manifest.json) sisältää lähderivit, syötteen, vertailut ja riippumattoman Decimal-tarkistuksen.
 
 ## Laajan nuudelijatkoajon nykyinen tulos
 
@@ -25,7 +31,7 @@ Uudet projektisäännöt löytyivät mainiin PR184:llä yhdistetyistä [AGENTS.m
 
 MEXT01050:n natiivi saatava massasumma65,0g/100g löytyi kuivaan vehnänuudeliin ja01051:n25,4 keitettyyn muotoon. Fineli120:n66,4 oli aiemmin jäänyt löytämättä, mutta RAW ei yksin varmista kuivapainoa. Dan Danin keitinvesi ja Lanzhoun siivilöity liemi sekä punnitsemattomat aromit pitävät ne HOLDissa. GI46 ja62 ovat erillisiä havaintoja; ne eivät ole hyväksytty vaihteluväli. Kookosmaidon28 riippuvuutta,25 ilman hyväksyttyä versiota, muodostavat suurimman yhteisen jatkoryhmän; osoitettu kokonainen lisätuotto tästä perheestä on0.
 
-[Aiempi rajattu lähdemuistio](followup-source-report.md) säilyy edellisen ajon historiallisena tuloksena, ei uusimman ajon tuottona. Aiemmat hyväksynnät, lähdehashit ja suojatut julkaisu-/säilytyshaarat pysyvät ennallaan. Tuotanto on edelleen156/326. Vasta kaikkien23 hyväksytyn version sovittujen integraatio- ja julkaisuporttien jälkeen ehdollinen kattavuus olisi179/326 (54,91%);261:een puuttuisi82.
+[Aiempi rajattu lähdemuistio](followup-source-report.md) säilyy edellisen ajon historiallisena tuloksena, ei uusimman ajon tuottona. Aiemmat hyväksynnät, lähdehashit ja suojatut julkaisu-/säilytyshaarat pysyvät ennallaan. Tämän nuudelitutkimuksen alkuperäinen156/326 oli julkaisua edeltävä tilannekuva. Nykyinen julkaistu kattavuus on172/326. Kaikkien23 hyväksytyn version sovittujen integraatio- ja julkaisuporttien jälkeen ehdollinen kattavuus olisi179/326 (54,91%);261:een puuttuisi82.
 
 ## Historiallisten kirjausten lukuohje
 
