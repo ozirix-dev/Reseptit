@@ -126,5 +126,24 @@
   "readyAuthorized": false,
   "mergeAuthorized": false,
   "deployAuthorized": false,
-  "ci": "One normal PR run will follow guarded push. Exact pushed-head completion is reported in GitHub checks/final response; no manual rerun."
+  "ci": "Normal content-correction PR run41387500566 at04f73eac6b1206fdbda21909f47e5fe65c4b56bd, followed by a documentation-only correction of the public display description. No manual CI rerun. Final exact pushed-head completion reported in GitHub checks/final response.",
+  "verifiedPublicDisplay": [
+    {
+      "locale": "th",
+      "verifiedDisplayedRoundedGk": 38
+    },
+    {
+      "locale": "sv",
+      "verifiedDisplayedRoundedGk": 38
+    },
+    {
+      "locale": "fi",
+      "verifiedDisplayedRoundedGk": 38
+    },
+    {
+      "locale": "en",
+      "verifiedDisplayedRoundedGk": 38
+    }
+  ],
+  "documentationCorrection": "Corrected draft report’s unsupported one-significant-digit/about40 assertion to actual generated HTML about38. Calculation remains37.49535, review37.50. No publication data or code changed."
 }

@@ -82,8 +82,8 @@ ilmoitettuina koostumusproxyinä. Aiemmat hylätyt valmistusanalogiat säilyvät
 Omistajan hyväksyttäväksi tuodaan yhtenä kokonaisuutena tämä tarkka versio,
 rajatut LOW-sovellukset, nykyetiketin käyttö ja neljän makron pidätys.
 Täydellisen makropaketin GO edellyttäisi vielä tuotekohtaista polyolitietoa;
-hyväksyntä ei yksin korvaa sitä. Julkinen GK käyttää nykyistä yhden
-merkitsevän numeron tarkkuutta (tässä noin 40), ei katselmointitaulukon kahta desimaalia.
+hyväksyntä ei yksin korvaa sitä. Neljän kielisivun HTML:stä varmennettu
+julkinen näyttö on tässä noin 38, ei katselmointitaulukon kahden desimaalin 37,50.
 
 ## F. Carnitasin muuttumaton HOLD
 
