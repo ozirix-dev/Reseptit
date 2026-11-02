@@ -1,0 +1,1272 @@
+{
+  "schemaVersion": 1,
+  "checkedAtUtc": "2026-11-02T20:24:55.706317+00:00",
+  "repository": "ozirix-dev/Reseptit",
+  "main": "96a25d8c9db6fb0a505a70a37a5b357b6a83593a",
+  "research": "2a626c560873c0d414508522e1a1173f244f9d1c",
+  "status": "PASS_FOR_DOCUMENTATION_REVIEW_SCOPE",
+  "modelPreflight": {
+    "activeModel": "gpt-6.1-sol",
+    "activeEffort": "high",
+    "evidence": "Current session turn_context metadata; configured model/effort checked separately. No model switch claimed."
+  },
+  "scope": {
+    "historicalRequestSet": 15,
+    "currentlyUnapprovedInThatSet": 12,
+    "alreadyApprovedUnpublished": 4,
+    "newReadyA": 0,
+    "newReadyB": 2,
+    "conditional": 3,
+    "sourceHold": 7,
+    "publishedByReview": 0,
+    "newOwnerApprovals": 0,
+    "openPrsBeforeOwnDraft": 43,
+    "newReadyAMeaning": "No new unapproved A remains: both cold-dessert A versions were explicitly approved externally during this review."
+  },
+  "checks": {
+    "inputSha256": 18,
+    "distinctRecipeIds": 16,
+    "deduplicatedSourceRecords": 150,
+    "recipeLocaleLfHashes": 33,
+    "sourceChecks": 129,
+    "nativeMext05001WorkbookCells": [
+      "P435=5.2",
+      "O359=5.2"
+    ],
+    "ownerDecisionCells": "EMPTY",
+    "reviewedDataStillInactive": true,
+    "runtimeOrRecipeEdits": 0,
+    "full326RecipeRecalculation": false,
+    "siteBuildRun": false,
+    "newTestFrameworkInstalled": false,
+    "manualActionsDispatch": false,
+    "existingApprovalReceiptFiles": 3,
+    "existingApprovedUnpublishedVersions": 4,
+    "decimalCasesIncludingAlternatives": 18,
+    "newColdDessertDecimalCases": 1,
+    "ownerDecisionRows": 2,
+    "reviewPackageVerifier": "verify-package.py (read-only; existing Python+Node; no framework)"
+  },
+  "recipeHashChecks": [
+    {
+      "kind": "ORIGINAL_RECIPE_LF_HASH",
+      "recipeId": "bulgogi",
+      "locale": "fi",
+      "path": "reseptit/paaruoat/bulgogi.md",
+      "sha256": "c84490ec24ce44ad3f0930dbb242db9017a01431f2d910e0723af526fffc8cc8",
+      "status": "PASS"
+    },
+    {
+      "kind": "ORIGINAL_RECIPE_LF_HASH",
+      "recipeId": "intialainen-besan-chilla",
+      "locale": "fi",
+      "path": "reseptit/aamupalat/intialainen-besan-chilla.md",
+      "sha256": "287c9e88b59c37d1ce84bb0c9021b5bc328a285dfba85a8cbba5f8d45e887010",
+      "status": "PASS"
+    },
+    {
+      "kind": "ORIGINAL_RECIPE_LF_HASH",
+      "recipeId": "intialainen-pinaatti-paneer-chilla",
+      "locale": "fi",
+      "path": "reseptit/aamupalat/intialainen-pinaatti-paneer-chilla.md",
+      "sha256": "98e47d0383a3b5ce559858d69fad27f7e3b25d02a6182b91bec803ccbc0e8145",
+      "status": "PASS"
+    },
+    {
+      "kind": "ORIGINAL_RECIPE_LF_HASH",
+      "recipeId": "intialainen-ven-pongal",
+      "locale": "fi",
+      "path": "reseptit/aamupalat/intialainen-ven-pongal.md",
+      "sha256": "7ab0b5f0350e1e9631afbe1a3cad9d99b9e6788ec1ecbf83fd1e400a5e242763",
+      "status": "PASS"
+    },
+    {
+      "kind": "ORIGINAL_RECIPE_LF_HASH",
+      "recipeId": "kaakao-kookos-chia",
+      "locale": "fi",
+      "path": "reseptit/aamupalat/kaakao-kookos-chia.md",
+      "sha256": "909dc73c356b1db0d393ddd5a22ebfafd76b557f5fa5068b60c624da4a72c700",
+      "status": "PASS"
+    },
+    {
+      "kind": "ORIGINAL_RECIPE_LF_HASH",
+      "recipeId": "rahka-marjakerroskulho",
+      "locale": "fi",
+      "path": "reseptit/aamupalat/rahka-marjakerroskulho.md",
+      "sha256": "c571f8f509bde4da9159bfdb4e1449f856030c9c92bf8a8ba1e2376d9c33c058",
+      "status": "PASS"
+    },
+    {
+      "kind": "ORIGINAL_RECIPE_LF_HASH",
+      "recipeId": "jerk-kana",
+      "locale": "fi",
+      "path": "reseptit/paaruoat/jerk-kana.md",
+      "sha256": "9a5501f0f5a7e397f211ed3fc6017975122aa8ce7b3e3c9bbb741096157acafc",
+      "status": "PASS"
+    },
+    {
+      "kind": "ORIGINAL_RECIPE_LF_HASH",
+      "recipeId": "sate-ayam",
+      "locale": "fi",
+      "path": "reseptit/paaruoat/sate-ayam.md",
+      "sha256": "3ed0776b1f7a4358f11648e9311faef5018a28b758e0826c72a0f62d26dda93b",
+      "status": "PASS"
+    },
+    {
+      "kind": "ORIGINAL_RECIPE_LF_HASH",
+      "recipeId": "thai-vihrea-curry-kanalla-vhh",
+      "locale": "fi",
+      "path": "reseptit/paaruoat/thai-vihrea-curry-kanalla-vhh.md",
+      "sha256": "a4d7a2d111907b2ef34721eeb81bfd32999e112d894a3c39dcfd6b8230899173",
+      "status": "PASS"
+    },
+    {
+      "kind": "ORIGINAL_RECIPE_LF_HASH",
+      "recipeId": "thai-vihrea-curry-kanalla-vhh",
+      "locale": "en",
+      "path": "kaannokset/en/paaruoat/thai-vihrea-curry-kanalla-vhh.md",
+      "sha256": "237dff5821a28992a213dc57a1f56e62f06fb316b9c8f4aa478f9fbbfb33b81e",
+      "status": "PASS"
+    },
+    {
+      "kind": "ORIGINAL_RECIPE_LF_HASH",
+      "recipeId": "thai-vihrea-curry-kanalla-vhh",
+      "locale": "sv",
+      "path": "kaannokset/sv/paaruoat/thai-vihrea-curry-kanalla-vhh.md",
+      "sha256": "9593235cf7ea1b2381f3fc6f4e83674c493f8ff535955ba826ce53d7f297a220",
+      "status": "PASS"
+    },
+    {
+      "kind": "ORIGINAL_RECIPE_LF_HASH",
+      "recipeId": "thai-vihrea-curry-kanalla-vhh",
+      "locale": "th",
+      "path": "kaannokset/th/paaruoat/thai-vihrea-curry-kanalla-vhh.md",
+      "sha256": "4be67cf146b78a1ad42a5f897cc830d5c87efcdf4233b7b34a3dbb396dd53d75",
+      "status": "PASS"
+    },
+    {
+      "kind": "ORIGINAL_RECIPE_LF_HASH",
+      "recipeId": "baozi",
+      "locale": "fi",
+      "path": "reseptit/paaruoat/baozi.md",
+      "sha256": "af8efd8db3bbfc7a57f4e75fe537f88b03e9dfe4227ae586905a6c046b60f208",
+      "status": "PASS"
+    },
+    {
+      "kind": "ORIGINAL_RECIPE_LF_HASH",
+      "recipeId": "baozi",
+      "locale": "en",
+      "path": "kaannokset/en/paaruoat/baozi.md",
+      "sha256": "0459e4a627375936ea670d3091dff3bc6e522e5e385fca545400ec0ef597a010",
+      "status": "PASS"
+    },
+    {
+      "kind": "ORIGINAL_RECIPE_LF_HASH",
+      "recipeId": "baozi",
+      "locale": "sv",
+      "path": "kaannokset/sv/paaruoat/baozi.md",
+      "sha256": "59a1c01ca4ddd7a26d2212c7aecb98ffa8430c5a85ed1d9ee1b5e46e4b5e7f4d",
+      "status": "PASS"
+    },
+    {
+      "kind": "ORIGINAL_RECIPE_LF_HASH",
+      "recipeId": "baozi",
+      "locale": "th",
+      "path": "kaannokset/th/paaruoat/baozi.md",
+      "sha256": "f4a770ee1b2a94ead179e477ae731fa143ab923a6094934483f381f8a2b01d60",
+      "status": "PASS"
+    },
+    {
+      "kind": "ORIGINAL_RECIPE_LF_HASH",
+      "recipeId": "hyderabadi-kanabiryani",
+      "locale": "fi",
+      "path": "reseptit/paaruoat/hyderabadi-kanabiryani.md",
+      "sha256": "c3434af8d2dbd5b016f9afd18839fa778fb2a13d79c2cf0b9e4c2070d43367d9",
+      "status": "PASS"
+    },
+    {
+      "kind": "ORIGINAL_RECIPE_LF_HASH",
+      "recipeId": "hyderabadi-kanabiryani",
+      "locale": "en",
+      "path": "kaannokset/en/paaruoat/hyderabadi-kanabiryani.md",
+      "sha256": "5eac67243b1a25cc818d4b80b25b13679dba84da35c71429e5a931fda188f916",
+      "status": "PASS"
+    },
+    {
+      "kind": "ORIGINAL_RECIPE_LF_HASH",
+      "recipeId": "hyderabadi-kanabiryani",
+      "locale": "sv",
+      "path": "kaannokset/sv/paaruoat/hyderabadi-kanabiryani.md",
+      "sha256": "ad52d50e352ab27702657c66f1912b6d5bc2325b1321711668046925f19631b6",
+      "status": "PASS"
+    },
+    {
+      "kind": "ORIGINAL_RECIPE_LF_HASH",
+      "recipeId": "hyderabadi-kanabiryani",
+      "locale": "th",
+      "path": "kaannokset/th/paaruoat/hyderabadi-kanabiryani.md",
+      "sha256": "161156fe332257d08cf9b8a1636b760461a1a063ad7628028f723fcf9e296353",
+      "status": "PASS"
+    },
+    {
+      "kind": "ORIGINAL_RECIPE_LF_HASH",
+      "recipeId": "intialainen-mannasuurimoupma",
+      "locale": "fi",
+      "path": "reseptit/aamupalat/intialainen-mannasuurimoupma.md",
+      "sha256": "edc2d2353036c6e400361951048a4be69d4943d9ad78a40058de0458015fd562",
+      "status": "PASS"
+    },
+    {
+      "kind": "ORIGINAL_RECIPE_LF_HASH",
+      "recipeId": "malesialainen-roti-jala-currykanalla",
+      "locale": "fi",
+      "path": "reseptit/aamupalat/malesialainen-roti-jala-currykanalla.md",
+      "sha256": "47a941e68c3b47e9b62d534ce5f21dd04c76b7db37426df7fe659e580474d576",
+      "status": "PASS"
+    },
+    {
+      "kind": "ORIGINAL_RECIPE_LF_HASH",
+      "recipeId": "pizza-margherita",
+      "locale": "fi",
+      "path": "reseptit/paaruoat/pizza-margherita.md",
+      "sha256": "f15a74532945386942f8c5b39f7ffacdbed4c0cfaea33c1ad141949f7d55b9d2",
+      "status": "PASS"
+    },
+    {
+      "kind": "ORIGINAL_RECIPE_LF_HASH",
+      "recipeId": "pizza-margherita",
+      "locale": "en",
+      "path": "kaannokset/en/paaruoat/pizza-margherita.md",
+      "sha256": "db57c183eb329a1bbdd0ff75c81515ff73533b94b121f45045ae8dc65aa3cf7c",
+      "status": "PASS"
+    },
+    {
+      "kind": "ORIGINAL_RECIPE_LF_HASH",
+      "recipeId": "pizza-margherita",
+      "locale": "sv",
+      "path": "kaannokset/sv/paaruoat/pizza-margherita.md",
+      "sha256": "c632dda7abab56e5508bcb747f68a510430ef5833055ea5f3c32980fbce64be9",
+      "status": "PASS"
+    },
+    {
+      "kind": "ORIGINAL_RECIPE_LF_HASH",
+      "recipeId": "pizza-margherita",
+      "locale": "th",
+      "path": "kaannokset/th/paaruoat/pizza-margherita.md",
+      "sha256": "2fcc427db6c1965eea6b69ba0e6e93ff5fa5afef0d03d640f0a4472eb7b98004",
+      "status": "PASS"
+    },
+    {
+      "kind": "ORIGINAL_RECIPE_LF_HASH",
+      "recipeId": "pohjoisafrikkalainen-taatelipuuro-appelsiinilla",
+      "locale": "fi",
+      "path": "reseptit/aamupalat/pohjoisafrikkalainen-taatelipuuro-appelsiinilla.md",
+      "sha256": "bc0b56fcd0d24b4a227a0ff9343d86a8c4105760c6faf1735a0f8d044a68cfaf",
+      "status": "PASS"
+    },
+    {
+      "kind": "ORIGINAL_RECIPE_LF_HASH",
+      "recipeId": "rahkapiirakka-vhh",
+      "locale": "fi",
+      "path": "reseptit/jalkiruoat/rahkapiirakka-vhh.md",
+      "sha256": "e902035d36263b4ad41d337d5fed8283d76e8fffcbfc87c28d53076c075dfdab",
+      "status": "PASS"
+    },
+    {
+      "kind": "ORIGINAL_RECIPE_LF_HASH",
+      "recipeId": "rahkapiirakka-vhh",
+      "locale": "en",
+      "path": "kaannokset/en/jalkiruoat/rahkapiirakka-vhh.md",
+      "sha256": "0d59fbd2686f79313ee9bc6a24f05462697624d6ad140f5aaa1e8771ddca2da5",
+      "status": "PASS"
+    },
+    {
+      "kind": "ORIGINAL_RECIPE_LF_HASH",
+      "recipeId": "rahkapiirakka-vhh",
+      "locale": "sv",
+      "path": "kaannokset/sv/jalkiruoat/rahkapiirakka-vhh.md",
+      "sha256": "40c0ef53558fc13087049e20f7edab483dcd4f4fcc2ff0bbf5296aead6a71d17",
+      "status": "PASS"
+    },
+    {
+      "kind": "ORIGINAL_RECIPE_LF_HASH",
+      "recipeId": "rahkapiirakka-vhh",
+      "locale": "th",
+      "path": "kaannokset/th/jalkiruoat/rahkapiirakka-vhh.md",
+      "sha256": "edf8149c704e36acc46074d99cc0bb43195e8a28f5dbd1f327081d753ac46645",
+      "status": "PASS"
+    },
+    {
+      "kind": "ORIGINAL_RECIPE_LF_HASH",
+      "recipeId": "rahka-marjakerroskulho",
+      "locale": "fi",
+      "path": "reseptit/aamupalat/rahka-marjakerroskulho.md",
+      "sha256": "c571f8f509bde4da9159bfdb4e1449f856030c9c92bf8a8ba1e2376d9c33c058",
+      "status": "PASS"
+    },
+    {
+      "kind": "ORIGINAL_RECIPE_LF_HASH",
+      "recipeId": "kaakao-kookos-chia",
+      "locale": "fi",
+      "path": "reseptit/aamupalat/kaakao-kookos-chia.md",
+      "sha256": "909dc73c356b1db0d393ddd5a22ebfafd76b557f5fa5068b60c624da4a72c700",
+      "status": "PASS",
+      "scope": "New current-A input; same original recipe as historical B input"
+    }
+  ],
+  "sourceChecks": [
+    {
+      "id": "F006187",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/afcd-release-3-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "F006250",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/afcd-release-3-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "F007682",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/afcd-release-3-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "F008065",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/afcd-release-3-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "F008969",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/afcd-release-3-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "F11062",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/fineli-release-20-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "F11177",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/fineli-release-20-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "F335",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/fineli-release-20-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "F385",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/fineli-release-20-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "F393",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/fineli-release-20-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "F722",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/fineli-release-20-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "pear38",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/glycemic-index-records.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "rice68",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/glycemic-index-records.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "soyLime50",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/glycemic-index-records.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "sucrose60",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/glycemic-index-records.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "veg40",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/glycemic-index-records.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "30",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/fineli-release-20-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "335",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/fineli-release-20-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "352",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/fineli-release-20-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "541",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/fineli-release-20-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "922",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/fineli-release-20-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "F002881",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/afcd-release-3-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "F003192",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/afcd-release-3-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "veg40",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/glycemic-index-records.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "whole-cheela42-recovery",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/gk80-operation149/recovery-observations.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "33456",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/fineli-release-20-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "650",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/fineli-release-20-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "F003327",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/afcd-release-3-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "dairy30",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/glycemic-index-records.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "trace50",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/glycemic-index-records.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "11177",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/fineli-release-20-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "F000446",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/afcd-release-3-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "F004205",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/afcd-release-3-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "F006088",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/afcd-release-3-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "F007682",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/afcd-release-3-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "cashew22-27",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/gk80-operation149/source-observations.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "congee80",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/gk80-operation149/source-observations.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "mung42",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/gk80-operation149/source-observations.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "trace50",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/glycemic-index-records.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "20",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/fineli-release-20-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "29014",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/fineli-release-20-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "F002987",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/afcd-release-3-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "F008209",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/afcd-release-3-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "F009350",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/afcd-release-3-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "low50",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/glycemic-index-records.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "plant50",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/glycemic-index-records.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "trace50",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/glycemic-index-records.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "32201",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/fineli-release-20-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "375",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/fineli-release-20-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "447",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/fineli-release-20-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "622",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/fineli-release-20-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "F001290",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/afcd-release-3-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "blueberry53-recovery",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/gk80-operation149/recovery-observations.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "strawberry40",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/gk80-operation149/source-observations.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "F000448",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/afcd-release-3-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "F002806",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/afcd-release-3-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "F002901",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/afcd-release-3-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "F004210",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/afcd-release-3-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "F004729",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/afcd-release-3-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "F11194",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/fineli-release-20-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "F29014",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/fineli-release-20-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "F31",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/fineli-release-20-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "F541",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/fineli-release-20-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "F922",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/fineli-release-20-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "plant50",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/glycemic-index-records.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "F003190",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/afcd-release-3-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "F005199",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/afcd-release-3-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "F006579",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/afcd-release-3-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "F009335",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/afcd-release-3-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "trace50",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/glycemic-index-records.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "1",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/fineli-release-20-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "110",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/fineli-release-20-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "27",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/fineli-release-20-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "33023",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/fineli-release-20-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "359",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/fineli-release-20-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "F006187",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/afcd-release-3-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "F006250",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/afcd-release-3-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "F007057",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/afcd-release-3-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "F008065",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/afcd-release-3-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "F009606",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/afcd-release-3-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "30346",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/fineli-release-20-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "30792",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/fineli-release-20-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "619",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/fineli-release-20-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "684",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/fineli-release-20-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "F003190",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/afcd-release-3-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "F004205",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/afcd-release-3-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "F005700",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/afcd-release-3-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "F007661",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/afcd-release-3-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "F009335",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/afcd-release-3-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "112",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/fineli-release-20-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "300",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/fineli-release-20-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "F006538",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/afcd-release-3-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "IFCT-G010",
+      "kind": "NON_ROW_SOURCE",
+      "path": "docs/nutrition/gk80-operation149/prepared-route-observations.json",
+      "note": "Original sealed source definition; no native row asserted."
+    },
+    {
+      "id": "858",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/fineli-release-20-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "F003337",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/afcd-release-3-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "11134",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/fineli-release-20-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "29239",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/fineli-release-20-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "398",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/fineli-release-20-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "veg40",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/glycemic-index-records.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "11045",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/fineli-release-20-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "F002963",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/afcd-release-3-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "F003496",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/afcd-release-3-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "date-deglet42",
+      "kind": "NON_ROW_SOURCE",
+      "path": "docs/nutrition/gk80-operation149/prepared-route-observations.json",
+      "note": "Original sealed source definition; no native row asserted."
+    },
+    {
+      "id": "orange-navel45",
+      "kind": "NON_ROW_SOURCE",
+      "path": "docs/nutrition/gk80-operation149/prepared-route-observations.json",
+      "note": "Original sealed source definition; no native row asserted."
+    },
+    {
+      "id": "500",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/fineli-release-20-reference.json",
+      "rowHashVerified": false,
+      "status": "PASS"
+    },
+    {
+      "id": "622",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/fineli-release-20-reference.json",
+      "rowHashVerified": false,
+      "status": "PASS"
+    },
+    {
+      "id": "631",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/fineli-release-20-reference.json",
+      "rowHashVerified": false,
+      "status": "PASS"
+    },
+    {
+      "id": "858",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/fineli-release-20-reference.json",
+      "rowHashVerified": false,
+      "status": "PASS"
+    },
+    {
+      "id": "foodin-erythritol",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/food-records.json",
+      "rowHashVerified": false,
+      "status": "PASS"
+    },
+    {
+      "id": "dairy30",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/glycemic-index-records.json",
+      "rowHashVerified": false,
+      "status": "PASS"
+    },
+    {
+      "id": "32201",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/fineli-release-20-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "375",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/fineli-release-20-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "442",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/fineli-release-20-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "F005172",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/afcd-release-3-reference.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "dairy30",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/glycemic-index-records.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "low50",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/nutrition/glycemic-index-records.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "id": "wild-blueberry53",
+      "kind": "NATIVE_ROW_AND_FIELD",
+      "path": "docs/research/afcd-polyol-03/source-extensions/source-observations.json",
+      "rowHashVerified": true,
+      "status": "PASS"
+    },
+    {
+      "kind": "RAW_PDF_SHA256",
+      "sha256": "4b90cf8309e1246a5cd4ee30d12b50278facd3e75de791745bb51e519a20bc39",
+      "status": "PASS"
+    },
+    {
+      "kind": "RAW_PDF_SHA256",
+      "sha256": "e930c4a090697abd4f7331a64837b524cf4701513cbb9865a739f4f9fb131061",
+      "status": "PASS"
+    },
+    {
+      "kind": "MEXT05001_RAW_WORKBOOK_AND_CELL",
+      "sha256": "0d5a77077dd6cd91cbc2e6e317b8b218a38728c409eed452f1c10635a0d3099c",
+      "cell": "P435",
+      "value": 5.2,
+      "status": "PASS"
+    },
+    {
+      "kind": "MEXT05001_RAW_WORKBOOK_AND_CELL",
+      "sha256": "099bdadb4a980df503e7a3dd057e49a69b68315b67012a3358b9a6d06984e137",
+      "cell": "O359",
+      "value": 5.2,
+      "status": "PASS"
+    },
+    {
+      "kind": "COLD_DESSERT_NATIVE_ROW_HASH",
+      "nativeId": "20",
+      "status": "PASS"
+    },
+    {
+      "kind": "COLD_DESSERT_NATIVE_ROW_HASH",
+      "nativeId": "34847",
+      "status": "PASS"
+    },
+    {
+      "kind": "COLD_DESSERT_NATIVE_ROW_HASH",
+      "nativeId": "631",
+      "status": "PASS"
+    },
+    {
+      "kind": "COLD_DESSERT_NATIVE_ROW_HASH",
+      "nativeId": "F009350",
+      "status": "PASS"
+    },
+    {
+      "kind": "COLD_DESSERT_NATIVE_ROW_HASH",
+      "nativeId": "foodin-erythritol-200g-label-2026-10-24",
+      "status": "PASS"
+    },
+    {
+      "kind": "COLD_DESSERT_NATIVE_ROW_HASH",
+      "nativeId": "op142-dairy-imputation30",
+      "status": "PASS"
+    },
+    {
+      "kind": "COLD_DESSERT_MANUFACTURER_RAW_SHA256",
+      "url": "https://www.kokodairyfree.com/product/unsweetened-chilled-milk/",
+      "sha256": "19fefcb4bc11901eeb2d08a0358021bf6a9cd49dbb8e45992e3ba2b35aa575ca",
+      "status": "PASS"
+    },
+    {
+      "kind": "COLD_DESSERT_MANUFACTURER_RAW_SHA256",
+      "url": "https://www.urtekram.dk/Foedevarer/toerredefrugter-og-mos/kokoschips/",
+      "sha256": "782693bea2e06949944ffb06185fe293961d728c8002eeeb4d63fc91c16de359",
+      "status": "PASS"
+    }
+  ],
+  "webChecks": [
+    {
+      "url": "https://glycemicindex.com/2026/11/nut-butter-spreading-the-love/",
+      "result": "Reopened2Nov2026; GI18 explicitly estimated; no standalone human GI observation supplied.",
+      "rawHtmlSha256": null,
+      "retrieval": "web reader; selected facts only"
+    },
+    {
+      "url": "https://www.squidbrand.com/",
+      "result": "Web reader could not open; no new primary700ml mass-basis label obtained.",
+      "rawHtmlSha256": null
+    },
+    {
+      "url": "https://apjcn.nhri.org.tw/server/APJCN/3/4/151.pdf",
+      "result": "Web reader failed; existing hash-matching original PDF inspected as page images151–152.",
+      "rawPdfSha256": "4b90cf8309e1246a5cd4ee30d12b50278facd3e75de791745bb51e519a20bc39"
+    }
+  ],
+  "limits": [
+    "Arithmetic and hash PASS do not prove scientific GI equivalence.",
+    "325 public recipe cards were parsed; headline denominator326 and all179numeric156original23variant counts were cross-checked against pinned release evidence. No326-recipe completeness audit was performed.",
+    "Four approved recipes require actual new GK-only adapters and public localized copy in a separate integration PR.",
+    "Source_HOLD and conditional models are not in a publication-ready batch.",
+    "GitHub metadata is a timed observation; UNKNOWN mergeability is not a clean result.",
+    "Cold-dessert Koko200ml requires a source-native unit adapter: current public ingredients schema only has grams. New A approval is valid but technical release readiness is not claimed."
+  ],
+  "startingResearch": "429f397472d6970006fd3c6c906b9da533c38c46",
+  "latestOverlayChecks": [
+    {
+      "kind": "COLD_DESSERT_NATIVE_ROW_HASH",
+      "nativeId": "20",
+      "status": "PASS"
+    },
+    {
+      "kind": "COLD_DESSERT_NATIVE_ROW_HASH",
+      "nativeId": "34847",
+      "status": "PASS"
+    },
+    {
+      "kind": "COLD_DESSERT_NATIVE_ROW_HASH",
+      "nativeId": "631",
+      "status": "PASS"
+    },
+    {
+      "kind": "COLD_DESSERT_NATIVE_ROW_HASH",
+      "nativeId": "F009350",
+      "status": "PASS"
+    },
+    {
+      "kind": "COLD_DESSERT_NATIVE_ROW_HASH",
+      "nativeId": "foodin-erythritol-200g-label-2026-10-24",
+      "status": "PASS"
+    },
+    {
+      "kind": "COLD_DESSERT_NATIVE_ROW_HASH",
+      "nativeId": "op142-dairy-imputation30",
+      "status": "PASS"
+    },
+    {
+      "kind": "COLD_DESSERT_MANUFACTURER_RAW_SHA256",
+      "url": "https://www.kokodairyfree.com/product/unsweetened-chilled-milk/",
+      "sha256": "19fefcb4bc11901eeb2d08a0358021bf6a9cd49dbb8e45992e3ba2b35aa575ca",
+      "status": "PASS"
+    },
+    {
+      "kind": "COLD_DESSERT_MANUFACTURER_RAW_SHA256",
+      "url": "https://www.urtekram.dk/Foedevarer/toerredefrugter-og-mos/kokoschips/",
+      "sha256": "782693bea2e06949944ffb06185fe293961d728c8002eeeb4d63fc91c16de359",
+      "status": "PASS"
+    }
+  ]
+}

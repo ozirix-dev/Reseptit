@@ -1,0 +1,3131 @@
+{
+  "schemaVersion": 1,
+  "repository": "ozirix-dev/Reseptit",
+  "main": "96a25d8c9db6fb0a505a70a37a5b357b6a83593a",
+  "research": "2a626c560873c0d414508522e1a1173f244f9d1c",
+  "activation": false,
+  "ownerApprovalRecordedByThisReview": false,
+  "entries": [
+    {
+      "recipeId": "bulgogi",
+      "originalRequestSet15": true,
+      "alternativeNotExtraCoverage": false,
+      "sourceContext": "retained",
+      "sourceCommit": "429f397472d6970006fd3c6c906b9da533c38c46",
+      "sourceCasePath": "docs/research/afcd-polyol-03/retained-sauce/cases.json",
+      "sourceCaseUrl": "https://github.com/ozirix-dev/Reseptit/blob/429f397472d6970006fd3c6c906b9da533c38c46/docs/research/afcd-polyol-03/retained-sauce/cases.json",
+      "inputSha256": "5ae159afc878044788f07f23db47c2932168760d4f8020e5ec3d9b553f7e83c1",
+      "sourceRecordSha256": {
+        "composition:F006187": "50e1835e956f7ae630f0c33e7b02c26c42b8010b6dbac2c0660d47661f909f8a",
+        "composition:F006250": "c88a8c239d89990f2a6ecf41d89a1c2f91a4f0858b3735179c7c1f5a4853c642",
+        "composition:F007682": "4320e4b981004a8c5d961e12ea3113557b0e39d106d4b180257b76b93f6c80f2",
+        "composition:F008065": "d01f40a159fb3d1ef231c47a783cac72793c2ffb28c2b5f20f5cda1435467e41",
+        "composition:F008969": "56fa0e77ab7ff031ee63e41c3e4f81aa0cd37e9f97cb15e75097bcd1794acb0f",
+        "composition:F11062": "00eee5c76bebc90a568775f5812786fee9be0909d9f01c653ca5f2666e18bb7f",
+        "composition:F11177": "a3a6bc49236ab387366429f006bbd3a09194dedb3a5225bfc7a6af7d455e39f6",
+        "composition:F335": "02509220bcc82a08e688e2e10eb52e243a234bb77a648bab57fee0f07e43792a",
+        "composition:F385": "051f7c9bfd6ef1bf43ca397d5d69e7d2c5b0a1e47dbaf3d74e896dfc337e21f0",
+        "composition:F393": "9d91d5f0bb7d09a0256a4cc7bd5c34873e2b2cc6d792c05bab3d8ade649637b4",
+        "composition:F722": "bfd41d6394c73a0fe2b1a8d2a6ebc97b993ea587b2482d95ac0993f6d510394d",
+        "gi:pear38": "cd66b893fa970fd10eda6d25d36699029441166160d4e263e47e567b6af94c31",
+        "gi:rice68": "9523e68c9e683a93e7ee070e606f24e61d20b2392090e2df242462b3ba47d209",
+        "gi:soyLime50": "79da41e72746736b6c7024068e74d277c362e9ad01d7ac9713fd1adc21a5e260",
+        "gi:sucrose60": "60bb1aff7c1390f39950fbbc4ed57a6adfb591ab56656e981fb371472fe84e80",
+        "gi:veg40": "b74ff20be835d28f2875b6305bc63b2f43f4e822ae99c0599dbe77c9940eeb45"
+      },
+      "sealedProposal": {
+        "recipeId": "bulgogi",
+        "level": "A",
+        "profile": "EXISTING_A",
+        "servings": 4,
+        "paths": {
+          "fi": "reseptit/paaruoat/bulgogi.md"
+        },
+        "recipeSha256": {
+          "fi": "c84490ec24ce44ad3f0930dbb242db9017a01431f2d910e0723af526fffc8cc8"
+        },
+        "originalIngredients": [
+          {
+            "amount": 600,
+            "unit": "g",
+            "item": "naudan ulkofileetä",
+            "note": "ohuina viipaleina"
+          },
+          {
+            "amount": 300,
+            "unit": "g",
+            "item": "jasmiiniriisiä",
+            "note": "kuivapaino"
+          },
+          {
+            "amount": 60,
+            "unit": "ml",
+            "item": "soijakastiketta"
+          },
+          {
+            "amount": 1,
+            "unit": "rkl",
+            "item": "fariinisokeria"
+          },
+          {
+            "amount": 1,
+            "unit": "rkl",
+            "item": "seesamiöljyä"
+          },
+          {
+            "amount": 3,
+            "unit": "kpl",
+            "item": "valkosipulinkynttä",
+            "note": "hienonnettuna"
+          },
+          {
+            "amount": 100,
+            "unit": "g",
+            "item": "päärynää",
+            "note": "hienoksi raastettuna"
+          },
+          {
+            "amount": 0.5,
+            "unit": "kpl",
+            "item": "keltasipulia",
+            "note": "ohuina viipaleina"
+          },
+          {
+            "amount": 2,
+            "unit": "kpl",
+            "item": "kevätsipulia",
+            "note": "viipaloituna"
+          },
+          {
+            "amount": 1,
+            "unit": "rkl",
+            "item": "seesaminsiemeniä"
+          },
+          {
+            "amount": 0.25,
+            "unit": "tl",
+            "item": "mustapippuria"
+          }
+        ],
+        "candidateIngredients": [
+          {
+            "name": "naudan ulkofileetä",
+            "grams": 600,
+            "compositionId": "F722",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "originalIndex": 0,
+            "note": "Original600g raw beef sirloin, native Fineli722."
+          },
+          {
+            "name": "jasmiiniriisiä",
+            "grams": 300,
+            "compositionId": "F007682",
+            "giId": "rice68",
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "originalIndex": 1,
+            "note": "Original300g dry jasmine rice; native dry white rice composition proxy and existing named European-cohort jasmine68. Hot cooked by absorption; all rice served, not porridge or cooled-rice claim."
+          },
+          {
+            "name": "soijakastiketta",
+            "grams": 72,
+            "compositionId": "F008065",
+            "giId": "soyLime50",
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "originalIndex": 2,
+            "note": "NEW WEIGHED CONTENT72g ordinary unsweetened commercial soy replaces original60ml; not proof60ml=72g or Fineli31 density transferable toAFCD. No kecap, dark/sweet soy or glaze concentrate."
+          },
+          {
+            "name": "fariinisokeria",
+            "grams": 14,
+            "compositionId": "F008969",
+            "giId": "sucrose60",
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "originalIndex": 3,
+            "note": "NEW WEIGHED CONTENT14g brown sugar replaces unspecified-mass1tbsp; not a volume-equivalence claim. Existing sucrose-dominant analogy, not measured brown-sugar GI."
+          },
+          {
+            "name": "seesamiöljyä",
+            "grams": 0,
+            "compositionId": "F006187",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "originalIndex": 4,
+            "note": "ZERO_CHO_SENTINEL_RETAIN_ORIGINAL_1_TBSP_SESAME_OIL"
+          },
+          {
+            "name": "valkosipulinkynttä",
+            "grams": 10.5,
+            "compositionId": "F393",
+            "giId": "veg40",
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "originalIndex": 5,
+            "note": "Original3 cloves by native Fineli393 KPL_M3.5g; named source measure."
+          },
+          {
+            "name": "päärynää",
+            "grams": 100,
+            "compositionId": "F11062",
+            "giId": "pear38",
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "originalIndex": 6,
+            "note": "Original100g peeled ordinary pear; existing GI record already names grated briefly heated bulgogi marinade analogy."
+          },
+          {
+            "name": "keltasipulia",
+            "grams": 27.5,
+            "compositionId": "F335",
+            "giId": "veg40",
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "originalIndex": 7,
+            "note": "Original half onion via native Fineli335 KPL_M55g; source reference measure."
+          },
+          {
+            "name": "kevätsipulia",
+            "grams": 40,
+            "compositionId": "F006250",
+            "giId": "veg40",
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "originalIndex": 8,
+            "note": "NEW WEIGHED CONTENT40g edible spring onions defines original2pieces, not an unsourced piece-weight conversion."
+          },
+          {
+            "name": "seesaminsiemeniä",
+            "grams": 8.5,
+            "compositionId": "F385",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "originalIndex": 9,
+            "note": "Original1tbsp via same food Fineli385 RKL8.5g. PositiveGI omission, notGI0."
+          },
+          {
+            "name": "mustapippuria",
+            "grams": 0.5,
+            "compositionId": "F11177",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "originalIndex": 10,
+            "note": "Original0.25tsp via same food Fineli11177 TL2g. PositiveGI omission, notGI0."
+          }
+        ],
+        "preparationDecision": "Preserve all original gram amounts, four portions, jasmine dry300g and100g peeled ordinary pear. New weighed content72g ordinary soy,14g brown sugar and40g edible spring onions; no claim of original volume/piece mass equivalence. Fry beef quickly in batches as original; retain all marinade/onion, heat remaining marinade briefly and thoroughly, return all cooked marinade and pan juices over beef and rice. No sauce/solids discarded and no invented retained fraction. Pear38 already explicitly supports grated briefly heated bulgogi marinade as LOW analogy. No rice category mean67 or legume mean34. Sesame and black pepper use unchanged current A omissions.",
+        "requiredDecisions": [
+          "GK_ONLY_CONTRACT",
+          "EXACT_SOURCE_CONTENT_REVIEW",
+          "GK_ONLY_MACRO_VERSION_COMPATIBILITY",
+          "WEIGHED_SOY72G_SUGAR14G_SPRING_ONION40G",
+          "FULL_COOKED_MARINADE_AND_PAN_JUICES_SERVED"
+        ],
+        "macroAction": "PRESERVE_ALL_CURRENT_VALUES_AND_WITHHOLDINGS",
+        "approval": false,
+        "publicationAuthorized": false,
+        "confidence": "LOW",
+        "inputSha256": "5ae159afc878044788f07f23db47c2932168760d4f8020e5ec3d9b553f7e83c1"
+      },
+      "independentDecimal": {
+        "minExact": "41.307950",
+        "maxExact": "41.307950",
+        "pointRounded": "41.31",
+        "omittedChoPerServing": "0.0670125",
+        "traceCodedChoPerServing": "0",
+        "scientificSourceQualificationProvenByArithmetic": false
+      }
+    },
+    {
+      "recipeId": "intialainen-besan-chilla",
+      "originalRequestSet15": true,
+      "alternativeNotExtraCoverage": false,
+      "sourceContext": "recovery",
+      "sourceCommit": "96a25d8c9db6fb0a505a70a37a5b357b6a83593a",
+      "sourceCasePath": "docs/nutrition/gk80-operation149/recovery-cases.json",
+      "sourceCaseUrl": "https://github.com/ozirix-dev/Reseptit/blob/96a25d8c9db6fb0a505a70a37a5b357b6a83593a/docs/nutrition/gk80-operation149/recovery-cases.json",
+      "inputSha256": "afc7beb15b482d6b53c84e7d4c58bee88c007a4232a6984918b0320e6f9ed213",
+      "sourceRecordSha256": {
+        "composition:30": "098824f9f23225c5f282181f6a20a0bb6cbd14f4e63de76596349821a434c953",
+        "composition:335": "d6429a866b17bc6e54960318dcce29c1f27988d18aa765c2afbee1f3825c5035",
+        "composition:352": "31cee569a4796b6d67e27c4903d95655cb70809d51ce3e1ba2fa58f4b8493e0f",
+        "composition:541": "de8683e57e05578da02b7bb3e8583366ed4816136ae69fe3f81301de7b72198e",
+        "composition:922": "76f117602bb8953868d3ece9cacc4df3b01db020c7a1fd9e20b0f0f65208b852",
+        "composition:F002881": "fefda4d65d9588d80abaaa0b0b8741e21f551171e7b03d5f475089ef195f3330",
+        "composition:F003192": "2109c13ba48d8cc32dbb032e53e2f8458ca197beb2c7ff18658f6e07f11c45ef",
+        "gi:veg40": "8ca7df09f0f7924a0ff3e31146a75cf2fde094108c16383be35ef365efdbe018",
+        "gi:whole-cheela42-recovery": "eeafa4e4557dd2a03bbd13f4182c5672bebe4e292acc26438622031f933073e1"
+      },
+      "sealedProposal": {
+        "recipeId": "intialainen-besan-chilla",
+        "level": "B",
+        "servings": 2,
+        "paths": {
+          "fi": "reseptit/aamupalat/intialainen-besan-chilla.md"
+        },
+        "recipeSha256": {
+          "fi": "287c9e88b59c37d1ce84bb0c9021b5bc328a285dfba85a8cbba5f8d45e887010"
+        },
+        "candidateIngredients": [
+          {
+            "name": "kokonaisesta kikherneestä jauhettu jauho",
+            "grams": 100,
+            "compositionId": "F002881",
+            "giId": "whole-cheela42-recovery",
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Whole dried Cicer arietinum, ground without removing hull; no dehulled commercial besan. Native whole dry chickpea composition. GI42 applies to resulting unfermented thin pancake component, not raw flour."
+          },
+          {
+            "name": "vesi taikinaan",
+            "grams": 222.2,
+            "compositionId": "922",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Exact weighed edible input; full portion retained."
+          },
+          {
+            "name": "paistorasva",
+            "grams": 16.7,
+            "compositionId": "541",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Exact weighed edible input; full portion retained."
+          },
+          {
+            "name": "tomaatti chutneyyn",
+            "grams": 100,
+            "compositionId": "352",
+            "giId": "veg40",
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Exact weighed edible input; full portion retained."
+          },
+          {
+            "name": "sipuli chutneyyn",
+            "grams": 70,
+            "compositionId": "335",
+            "giId": "veg40",
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Exact weighed edible input; full portion retained."
+          },
+          {
+            "name": "tuore korianteri",
+            "grams": 6,
+            "compositionId": "F003192",
+            "giId": "veg40",
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Exact weighed edible input; full portion retained."
+          },
+          {
+            "name": "suola",
+            "grams": 0,
+            "compositionId": "30",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Exact weighed edible input; full portion retained."
+          }
+        ],
+        "preparationDecision": "New explicitly proposed whole-chickpea version, not generic commercial besan. Grind whole unhulled Cicer arietinum; no soaking, fermentation or dehulling. Per100g flour use222.2g water and16.7g oil (Batra90:200:15 ratio, rounded to weighable0.1g). Rest10min; pan-cook thin pancakes, not oven farinata. Prepare tomato-onion chutney from the listed100g tomato and70g onion; consume all of it, with6g fresh coriander; no unlisted sugar/oil. B ingredient-additivity model applies named prepared-component42 plus existing vegetable coding40. Four-sample older study,54.8g calculated testCHO versus50g glucose and native Australian composition are material limitations. No whole-recipe measured GI claim.",
+        "requiredDecisions": [
+          "GK_ONLY_CONTRACT",
+          "EXACT_NEW_VERSION_OWNER_APPROVAL",
+          "NEW_SOURCE_BINDINGS_REVIEW",
+          "WHOLE_UNHULLED_FLOUR_VERSION_OWNER_CONTENT_DECISION",
+          "MATCH_PREPARED_CHEELA_NOT_RAW_FLOUR"
+        ],
+        "macroAction": "PRESERVE_ALL_CURRENT_VALUES_AND_WITHHOLDINGS",
+        "approval": false,
+        "confidence": "LOW",
+        "inputSha256": "afc7beb15b482d6b53c84e7d4c58bee88c007a4232a6984918b0320e6f9ed213"
+      },
+      "independentDecimal": {
+        "minExact": "9.4698",
+        "maxExact": "9.4698",
+        "pointRounded": "9.47",
+        "omittedChoPerServing": "0",
+        "traceCodedChoPerServing": "0",
+        "scientificSourceQualificationProvenByArithmetic": false
+      }
+    },
+    {
+      "recipeId": "intialainen-pinaatti-paneer-chilla",
+      "originalRequestSet15": true,
+      "alternativeNotExtraCoverage": false,
+      "sourceContext": "recovery",
+      "sourceCommit": "96a25d8c9db6fb0a505a70a37a5b357b6a83593a",
+      "sourceCasePath": "docs/nutrition/gk80-operation149/recovery-cases.json",
+      "sourceCaseUrl": "https://github.com/ozirix-dev/Reseptit/blob/96a25d8c9db6fb0a505a70a37a5b357b6a83593a/docs/nutrition/gk80-operation149/recovery-cases.json",
+      "inputSha256": "6c0b1890e16a526a75f5e8ef7b2729de3f7ef370c17b197dacb3990ece6f0710",
+      "sourceRecordSha256": {
+        "composition:30": "098824f9f23225c5f282181f6a20a0bb6cbd14f4e63de76596349821a434c953",
+        "composition:33456": "56f8484904e1ffb9a11bbbc81551be176d5ae205d191f2ac70b204baeee5c8bf",
+        "composition:541": "de8683e57e05578da02b7bb3e8583366ed4816136ae69fe3f81301de7b72198e",
+        "composition:650": "e3dd7b87cef0ae3da6d8645beb5f96bff619d3d523cb88d737e5fd1b1c1d03b9",
+        "composition:922": "76f117602bb8953868d3ece9cacc4df3b01db020c7a1fd9e20b0f0f65208b852",
+        "composition:F002881": "fefda4d65d9588d80abaaa0b0b8741e21f551171e7b03d5f475089ef195f3330",
+        "composition:F003327": "1689ffae7fc4d22ae0658a8401ccd291861f7afd64331dacb58780b288e13aee",
+        "gi:dairy30": "126116090c4f3c9b13d383802f71a733859b5ceb4c25102a4419800befa3aafe",
+        "gi:trace50": "b09e8076c559fd237a6bac5111787f411e4d3987da22dc4ad5eb1ae9e27a2eec",
+        "gi:veg40": "8ca7df09f0f7924a0ff3e31146a75cf2fde094108c16383be35ef365efdbe018",
+        "gi:whole-cheela42-recovery": "eeafa4e4557dd2a03bbd13f4182c5672bebe4e292acc26438622031f933073e1"
+      },
+      "sealedProposal": {
+        "recipeId": "intialainen-pinaatti-paneer-chilla",
+        "level": "B",
+        "servings": 2,
+        "paths": {
+          "fi": "reseptit/aamupalat/intialainen-pinaatti-paneer-chilla.md"
+        },
+        "recipeSha256": {
+          "fi": "98e47d0383a3b5ce559858d69fad27f7e3b25d02a6182b91bec803ccbc0e8145"
+        },
+        "candidateIngredients": [
+          {
+            "name": "kokonaisesta kikherneestä jauhettu jauho",
+            "grams": 100,
+            "compositionId": "F002881",
+            "giId": "whole-cheela42-recovery",
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Whole dried Cicer arietinum, ground without removing hull; no dehulled commercial besan. Native whole dry chickpea composition. GI42 applies to resulting unfermented thin pancake component, not raw flour."
+          },
+          {
+            "name": "vesi taikinaan",
+            "grams": 222.2,
+            "compositionId": "922",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Exact weighed edible input; full portion retained."
+          },
+          {
+            "name": "paistorasva",
+            "grams": 16.7,
+            "compositionId": "541",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Exact weighed edible input; full portion retained."
+          },
+          {
+            "name": "tuore pinaatti",
+            "grams": 50,
+            "compositionId": "33456",
+            "giId": "veg40",
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Exact weighed edible input; full portion retained."
+          },
+          {
+            "name": "paneer",
+            "grams": 100,
+            "compositionId": "650",
+            "giId": "dairy30",
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Exact weighed edible input; full portion retained."
+          },
+          {
+            "name": "juustokumina",
+            "grams": 2,
+            "compositionId": "F003327",
+            "giId": "trace50",
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Exact weighed edible input; full portion retained."
+          },
+          {
+            "name": "suola",
+            "grams": 0,
+            "compositionId": "30",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Exact weighed edible input; full portion retained."
+          }
+        ],
+        "preparationDecision": "New whole-chickpea version using the same unfermented thin-pancake90:200:15 reference ratio, scaled100g whole unhulled chickpea flour,222.2g water,16.7g oil. Use50g weighed spinach,100g paneer and2g weighed cumin. Paneer/spinach are a separate filling; this is a LOW B ingredient-sum analogy, not a measurement of the filled pancake. EXPLICIT SERVING SCOPE: no unlisted coriander chutney or lemon wedge in this version/GK; original serving suggestions are outside this version and require their own quantities if added. The whole-flour change and serving exclusion both need owner content approval. No change to published recipe.",
+        "requiredDecisions": [
+          "GK_ONLY_CONTRACT",
+          "EXACT_NEW_VERSION_OWNER_APPROVAL",
+          "NEW_SOURCE_BINDINGS_REVIEW",
+          "WHOLE_UNHULLED_FLOUR_VERSION_OWNER_CONTENT_DECISION",
+          "EXCLUDE_UNQUANTIFIED_CHUTNEY_AND_LEMON_OWNER_DECISION"
+        ],
+        "macroAction": "PRESERVE_ALL_CURRENT_VALUES_AND_WITHHOLDINGS",
+        "approval": false,
+        "confidence": "LOW",
+        "inputSha256": "6c0b1890e16a526a75f5e8ef7b2729de3f7ef370c17b197dacb3990ece6f0710"
+      },
+      "independentDecimal": {
+        "minExact": "8.9235",
+        "maxExact": "8.9235",
+        "pointRounded": "8.92",
+        "omittedChoPerServing": "0",
+        "traceCodedChoPerServing": "0.337",
+        "scientificSourceQualificationProvenByArithmetic": false
+      }
+    },
+    {
+      "recipeId": "intialainen-ven-pongal",
+      "originalRequestSet15": true,
+      "alternativeNotExtraCoverage": false,
+      "sourceContext": "extension",
+      "sourceCommit": "429f397472d6970006fd3c6c906b9da533c38c46",
+      "sourceCasePath": "docs/research/afcd-polyol-03/source-extensions/cases.jsonl",
+      "sourceCaseUrl": "https://github.com/ozirix-dev/Reseptit/blob/429f397472d6970006fd3c6c906b9da533c38c46/docs/research/afcd-polyol-03/source-extensions/cases.jsonl",
+      "inputSha256": "af1bcffe2111700c2bd3f91b9f3b7d72f493db1e18e896afd887be19188bf344",
+      "sourceRecordSha256": {
+        "composition:11177": "84edbe66cc16f5db7a118c0a67c683e3537d25688c2a8c96cf6eae211581ecc8",
+        "composition:30": "098824f9f23225c5f282181f6a20a0bb6cbd14f4e63de76596349821a434c953",
+        "composition:922": "76f117602bb8953868d3ece9cacc4df3b01db020c7a1fd9e20b0f0f65208b852",
+        "composition:F000446": "afdf050b5c425495484350a5685ace61884b1ace4393ca6ebe0d97ad2237b0d2",
+        "composition:F004205": "555d8143577570632ff95a9386ec6b06f7bbb8d285283018a5485b1988068d5a",
+        "composition:F006088": "360d0ea5889363f40a73764232468aa0f03b9c86c55b4c4542c09fd2288b26f1",
+        "composition:F007682": "ceb5ba12ea4dc89a73fdbe1f7be76772b4ad72f823109f98ef3c202fcf742278",
+        "gi:cashew22-27": "4555191e3e7050631fd6481025004e3127609b196b3d420f018edc4eaa592a37",
+        "gi:congee80": "2ef3209461b119f64b4362a79d10b835f809aa54df5fae5fc8dc24e7fc526578",
+        "gi:mung42": "476d21b28690c56f4f9877a35bd7439052030a5c7706f4f02373c1ce9a00c9e0",
+        "gi:trace50": "db04813d526230e997434b2029876fbe301dedd40d0062e4240ad7e4153b966d"
+      },
+      "sealedProposal": {
+        "recipeId": "intialainen-ven-pongal",
+        "level": "B",
+        "servings": 2,
+        "paths": {
+          "fi": "reseptit/aamupalat/intialainen-ven-pongal.md"
+        },
+        "recipeSha256": {
+          "fi": "7ab0b5f0350e1e9631afbe1a3cad9d99b9e6788ec1ecbf83fd1e400a5e242763"
+        },
+        "candidateIngredients": [
+          {
+            "name": "dry white jasmine rice",
+            "grams": 100,
+            "compositionId": "F007682",
+            "giId": "congee80",
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Original100g rice. Explicit dry white-rice version; source rice-porridge analogy, not tested mixed pongal."
+          },
+          {
+            "name": "whole green mung beans, dry",
+            "grams": 150,
+            "compositionId": "F000446",
+            "giId": "mung42",
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Original150g preserved. Explicit whole dried green mung, not cooked-weight substitution or dehulled split dal. Entire source raw availableCHO retained; no guessed loss correction."
+          },
+          {
+            "name": "raw unsalted cashews before ghee toasting",
+            "grams": 20,
+            "compositionId": "F006088",
+            "giId": "cashew22-27",
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Current original20g, not stale100g input. Cashew observations are salted/roasted/halves; target unsalted warmed garnish is LOW analogy."
+          },
+          {
+            "name": "ground black pepper",
+            "grams": 2,
+            "compositionId": "11177",
+            "giId": "trace50",
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Original1tsp uses Fineli11177 native TL2g. Existing proposed B trace50, NOT a measured pepper GI; requires the same explicit method approval as existing pilot."
+          },
+          {
+            "name": "water",
+            "grams": 700,
+            "compositionId": "922",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Original700ml water, existing source-specific water conversion1g/ml."
+          },
+          {
+            "name": "ghee",
+            "grams": 14,
+            "compositionId": "F004205",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Proposed explicitly weighed14g ghee instead of an asserted tablespoon density; availableCHO source0, no protein/fat or polyol claim."
+          },
+          {
+            "name": "pure table salt",
+            "grams": 0,
+            "compositionId": "30",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Computational source-CHO0 marker only; original salt-to-taste remains, amount not asserted0g."
+          }
+        ],
+        "preparationDecision": "Define a whole-green-mung/dry-white-rice weighed version of the existing pongal ingredient list; cook rice and whole beans fully soft together and serve all cooking liquid, warming the original20g cashews in ghee. Current generic meat/filling boilerplate is not an ingredient and must be cleaned in a separately accepted content version. Mung boiledGI42 is low-quality n7/no repeated-reference data, not a measured soft mixed-porridge GI. Rice source80 is an already-proposed porridge analogy; cashew22/27 scenarios do not cover unknown mung/rice processing error. No A tolerance relaxed and no new main-food GI50 default.",
+        "requiredDecisions": [
+          "GK_ONLY_CONTRACT",
+          "WHOLE_MUNG_DRY_IDENTITY_AND_FULL_COOKING_VERSION",
+          "NAMED_PORRIDGE_AND_CASHEW_ANALOGIES",
+          "EXISTING_PROPOSED_TRACE50_CONTRACT",
+          "EXACT_WEIGHED_GHEE_VERSION",
+          "MACRO_VERSION_COMPATIBILITY"
+        ],
+        "macroAction": "PRESERVE_ALL_CURRENT_VALUES_AND_WITHHOLDINGS",
+        "approval": false,
+        "confidence": "LOW",
+        "inputSha256": "af1bcffe2111700c2bd3f91b9f3b7d72f493db1e18e896afd887be19188bf344"
+      },
+      "independentDecimal": {
+        "minExact": "43.49385",
+        "maxExact": "43.60835",
+        "pointRounded": null,
+        "omittedChoPerServing": "0",
+        "traceCodedChoPerServing": "0.3831",
+        "scientificSourceQualificationProvenByArithmetic": false
+      }
+    },
+    {
+      "recipeId": "kaakao-kookos-chia",
+      "originalRequestSet15": true,
+      "alternativeNotExtraCoverage": true,
+      "sourceContext": "prepared",
+      "sourceCommit": "96a25d8c9db6fb0a505a70a37a5b357b6a83593a",
+      "sourceCasePath": "docs/nutrition/gk80-operation149/prepared-route-cases.json",
+      "sourceCaseUrl": "https://github.com/ozirix-dev/Reseptit/blob/96a25d8c9db6fb0a505a70a37a5b357b6a83593a/docs/nutrition/gk80-operation149/prepared-route-cases.json",
+      "inputSha256": "20febc748b6f5c90dc4ba1c45b30cdf23066415cba6864b993c9ba2f9bed78d8",
+      "sourceRecordSha256": {
+        "composition:20": "f93442f15e285d05a7cb343190bdf3cbfd5e0bd1469cee68b8954bd94b6f5107",
+        "composition:29014": "f3ca788967ae6706c7e58903a2783c862d9cf872f1a23a4fa127d0061c4b98b9",
+        "composition:F002987": "f2c9aaee3b37da2e78ebd90980335fbcb96c26d8469f32d8bd1a2464f8309d34",
+        "composition:F008209": "a2d88d21ae9a9f9f5000a7d57a902636327fcc4eb53f047f400a3a889a38f88a",
+        "composition:F009350": "623b7eb8c2cdbb80c9de145c8fc11eed068072b3a61bf1064458861647f26584",
+        "composition:pure-erythritol": "da270e61446dcecb03de30e10a062761cb2109eb21c7307e1ecb0eb7d789b8c7",
+        "gi:low50": "d330df9f387a1b493b5acd8c0b2d2c1434fcb3faf16ef0046978a08e7454ef25",
+        "gi:plant50": "960c8f67f653255841bcdd313c92f2d6d6a999cc54e61e9b48a47f15db0797b4",
+        "gi:trace50": "3406a279648b3ddd556c4572ad7ccdf8c800e331c3c1857293f2b9d2339d880b"
+      },
+      "sealedProposal": {
+        "recipeId": "kaakao-kookos-chia",
+        "level": "B",
+        "applicationMode": "INGREDIENT_SUM",
+        "servings": 4,
+        "paths": {
+          "fi": "reseptit/aamupalat/kaakao-kookos-chia.md"
+        },
+        "recipeSha256": {
+          "fi": "909dc73c356b1db0d393ddd5a22ebfafd76b557f5fa5068b60c624da4a72c700"
+        },
+        "candidateIngredients": [
+          {
+            "name": "chia",
+            "grams": 40,
+            "compositionId": "F008209",
+            "giId": "low50",
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Explicit weighed edible recipe input; no source-verified volume conversion claimed."
+          },
+          {
+            "name": "makeuttamaton kookosmaito",
+            "grams": 300,
+            "compositionId": "29014",
+            "giId": "plant50",
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Explicit weighed edible recipe input; no source-verified volume conversion claimed."
+          },
+          {
+            "name": "kaakaojauhe",
+            "grams": 10,
+            "compositionId": "20",
+            "giId": "trace50",
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Explicit weighed edible recipe input; no source-verified volume conversion claimed."
+          },
+          {
+            "name": "vaniljauute",
+            "grams": 4.2,
+            "compositionId": "F009350",
+            "giId": "trace50",
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Explicit weighed edible recipe input; no source-verified volume conversion claimed."
+          },
+          {
+            "name": "kuiva paahdettu kookoshiutale",
+            "grams": 20,
+            "compositionId": "F002987",
+            "giId": "trace50",
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Desiccated unsweetened coconut composition is a dry-toasted garnish proxy; added oil/sugar excluded."
+          },
+          {
+            "name": "Foodin100%erytritoli",
+            "grams": 4,
+            "compositionId": "pure-erythritol",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Explicit weighed edible recipe input; no source-verified volume conversion claimed."
+          }
+        ],
+        "preparationDecision": "Use the original note explicitly allowing coconut beverage+cream to be replaced by unsweetened coconut milk: weigh300g coconut milk,40g chia,10g cocoa,4.2g vanilla and20g dry-toasted coconut garnish. No new removal of carbohydrate. Plant50 and small culinary aroma/seed-garnish50 are proposed coding,not measured GI. TraceCHO is0.7723g/serving; each<=0.5 and total<=1. This entire estimate is coding-dependent and its GI uncertainty is not source-bounded.",
+        "preparedNodes": [],
+        "requiredDecisions": [
+          "GK_ONLY_CONTRACT",
+          "EXACT_NEW_VERSION_OWNER_APPROVAL",
+          "SOURCE_APPLICATION_REVIEW",
+          "EXISTING_OPTIONAL_COCONUT_MILK_VERSION",
+          "NEW_SMALL_AROMA_BINDINGS"
+        ],
+        "macroAction": "PRESERVE_ALL_CURRENT_VALUES_AND_WITHHOLDINGS",
+        "approval": false,
+        "confidence": "LOW",
+        "inputSha256": "20febc748b6f5c90dc4ba1c45b30cdf23066415cba6864b993c9ba2f9bed78d8",
+        "sourceBindingSha256": {
+          "comp:20": "f93442f15e285d05a7cb343190bdf3cbfd5e0bd1469cee68b8954bd94b6f5107",
+          "comp:29014": "f3ca788967ae6706c7e58903a2783c862d9cf872f1a23a4fa127d0061c4b98b9",
+          "comp:F002987": "f2c9aaee3b37da2e78ebd90980335fbcb96c26d8469f32d8bd1a2464f8309d34",
+          "comp:F008209": "a2d88d21ae9a9f9f5000a7d57a902636327fcc4eb53f047f400a3a889a38f88a",
+          "comp:F009350": "623b7eb8c2cdbb80c9de145c8fc11eed068072b3a61bf1064458861647f26584",
+          "comp:pure-erythritol": "da270e61446dcecb03de30e10a062761cb2109eb21c7307e1ecb0eb7d789b8c7",
+          "gi:low50": "d330df9f387a1b493b5acd8c0b2d2c1434fcb3faf16ef0046978a08e7454ef25",
+          "gi:plant50": "960c8f67f653255841bcdd313c92f2d6d6a999cc54e61e9b48a47f15db0797b4",
+          "gi:trace50": "3406a279648b3ddd556c4572ad7ccdf8c800e331c3c1857293f2b9d2339d880b"
+        }
+      },
+      "independentDecimal": {
+        "minExact": "1.59490",
+        "maxExact": "1.59490",
+        "pointRounded": "1.59",
+        "omittedChoPerServing": "0",
+        "traceCodedChoPerServing": "0.77230",
+        "scientificSourceQualificationProvenByArithmetic": false
+      },
+      "historicalUnselectedAlternativeReason": "New exact current-A version owner-approved in latest research; prior B1.59 is not selected or approved."
+    },
+    {
+      "recipeId": "rahka-marjakerroskulho",
+      "originalRequestSet15": true,
+      "alternativeNotExtraCoverage": false,
+      "sourceContext": "recovery",
+      "sourceCommit": "96a25d8c9db6fb0a505a70a37a5b357b6a83593a",
+      "sourceCasePath": "docs/nutrition/gk80-operation149/recovery-cases.json",
+      "sourceCaseUrl": "https://github.com/ozirix-dev/Reseptit/blob/96a25d8c9db6fb0a505a70a37a5b357b6a83593a/docs/nutrition/gk80-operation149/recovery-cases.json",
+      "inputSha256": "092719e24df715f0149468125c91e24c08a5dffb29ba2d2f712bb779bd4bdc86",
+      "sourceRecordSha256": {
+        "composition:32201": "30f03634150bb4b0f9366e1843f44efc0aa5de42e9240baa8a3c234eec5f0578",
+        "composition:375": "1f303e13d735b9be2b10bc071a1cac3c68ecb596713ddcea3b13f11857a13e2e",
+        "composition:447": "4ed59a715eef6ff5085e2efa76bc6284e2144df4146a4d99c984fce67ce9d929",
+        "composition:622": "3b2cd9acac1beb868e9b9804bfd251c7de998c74cbe23f4b6d0482eb135775ab",
+        "composition:F001290": "4e08b7cd0dfc93d2340e66003314b1948f83d1ff868e86d91674ba1ab346dbad",
+        "composition:physical": "b0cea78a3f0e053223f415e0ad2f66c1be2e7ec07dc024f191eb581d82747e1f",
+        "composition:pure-erythritol": "da270e61446dcecb03de30e10a062761cb2109eb21c7307e1ecb0eb7d789b8c7",
+        "gi:blueberry53-recovery": "5c76ced3eec18e7aff0a9bd2cfd0d32ff29626576266b51f9405fe9c31774021",
+        "gi:dairy30": "126116090c4f3c9b13d383802f71a733859b5ceb4c25102a4419800befa3aafe",
+        "gi:strawberry40": "d13891a1470105771c516e368d417bbfc977f6922e5a6194af3a7939502d4428"
+      },
+      "sealedProposal": {
+        "recipeId": "rahka-marjakerroskulho",
+        "level": "A",
+        "servings": 4,
+        "paths": {
+          "fi": "reseptit/aamupalat/rahka-marjakerroskulho.md"
+        },
+        "recipeSha256": {
+          "fi": "c571f8f509bde4da9159bfdb4e1449f856030c9c92bf8a8ba1e2376d9c33c058"
+        },
+        "candidateIngredients": [
+          {
+            "name": "maitorahka",
+            "grams": 250,
+            "compositionId": "622",
+            "giId": "dairy30",
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Exact weighed edible input; full portion retained."
+          },
+          {
+            "name": "maustamaton turkkilainen jogurtti10%",
+            "grams": 100,
+            "compositionId": "32201",
+            "giId": "dairy30",
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Exact weighed edible input; full portion retained."
+          },
+          {
+            "name": "tuore mansikka",
+            "grams": 100,
+            "compositionId": "447",
+            "giId": "strawberry40",
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Exact weighed edible input; full portion retained."
+          },
+          {
+            "name": "tuore pohjoisamerikkalainen wild blueberry",
+            "grams": 50,
+            "compositionId": "F001290",
+            "giId": "blueberry53-recovery",
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Australian raw-blueberry composition proxy for named Canadian wild-blueberry GI; not Finnish bilberry."
+          },
+          {
+            "name": "hasselpähkinä",
+            "grams": 20,
+            "compositionId": "375",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Exact weighed edible input; full portion retained."
+          },
+          {
+            "name": "punnittu sitruunankuoriraaste",
+            "grams": 2,
+            "compositionId": "physical",
+            "giId": null,
+            "carbohydrateUse": "UPPER_BOUND",
+            "note": "2g is an explicit weighed choice, not a source-verified teaspoon conversion. Total peel mass is only an availableCHO cap."
+          },
+          {
+            "name": "Foodin100%erytritoli",
+            "grams": 4,
+            "compositionId": "pure-erythritol",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Exact weighed edible input; full portion retained."
+          }
+        ],
+        "preparationDecision": "Original cold layered bowl. Use100g fresh strawberry,50g fresh Canadian wild blueberry,20g raw hazelnut and2g weighed lemon zest. Sweeten with4g pure erythritol. Preserve zest; do not swap it for juice. Raw fruit GI is named; source/variety differences remain LOW. Hazelnut and peel positive GI-lessCHO is explicitly omitted by unchanged A thresholds. No whole-meal or all-berry GI claim.",
+        "requiredDecisions": [
+          "GK_ONLY_CONTRACT",
+          "EXACT_NEW_VERSION_OWNER_APPROVAL",
+          "NEW_SOURCE_BINDINGS_REVIEW",
+          "BLUEBERRY_VARIETY_AND_COMPOSITION_ANALOGUE",
+          "WEIGHED_ZEST_2G_NOT_CONVERSION"
+        ],
+        "macroAction": "PRESERVE_ALL_CURRENT_VALUES_AND_WITHHOLDINGS",
+        "approval": false,
+        "confidence": "LOW",
+        "inputSha256": "092719e24df715f0149468125c91e24c08a5dffb29ba2d2f712bb779bd4bdc86"
+      },
+      "independentDecimal": {
+        "minExact": "2.33945",
+        "maxExact": "2.33945",
+        "pointRounded": "2.34",
+        "omittedChoPerServing": "0.670",
+        "traceCodedChoPerServing": "0",
+        "scientificSourceQualificationProvenByArithmetic": false
+      }
+    },
+    {
+      "recipeId": "jerk-kana",
+      "originalRequestSet15": true,
+      "alternativeNotExtraCoverage": false,
+      "sourceContext": "retained",
+      "sourceCommit": "429f397472d6970006fd3c6c906b9da533c38c46",
+      "sourceCasePath": "docs/research/afcd-polyol-03/retained-sauce/cases.json",
+      "sourceCaseUrl": "https://github.com/ozirix-dev/Reseptit/blob/429f397472d6970006fd3c6c906b9da533c38c46/docs/research/afcd-polyol-03/retained-sauce/cases.json",
+      "inputSha256": "3ccf63cc452ab542e8a0e12b5298bbebbbb25965751a5cf0ecc14aaac43f4d6c",
+      "sourceRecordSha256": {
+        "composition:F000448": "2a3c996810bd877d68883fb9187b71779eec7b0b11f0a0d6e7d41ebbe5d143a5",
+        "composition:F002806": "3749fd814b7181cb5e369024ebb2d041d067e0964d96442038031f95f5d94482",
+        "composition:F002901": "25c634ef687eb34de41caea645bea6cbcad7c58ff5fc0940de80b10340f657b9",
+        "composition:F004210": "1b8896205ebddb6e5f283eabbe9af199e85e20dc45526bc5356a769f53a3accc",
+        "composition:F004729": "fdfdf739c3ae500f5c1fdc93f84925516da815e84ea15ed27fc4b3fc4cb2e71d",
+        "composition:F006250": "c88a8c239d89990f2a6ecf41d89a1c2f91a4f0858b3735179c7c1f5a4853c642",
+        "composition:F007682": "4320e4b981004a8c5d961e12ea3113557b0e39d106d4b180257b76b93f6c80f2",
+        "composition:F008969": "56fa0e77ab7ff031ee63e41c3e4f81aa0cd37e9f97cb15e75097bcd1794acb0f",
+        "composition:F11194": "2bc90ffb8c79814c3829f96134d0452f4a373c39deddf1b2ca76b9d67dca7246",
+        "composition:F29014": "6187035e85adf3bbfc63f0a30d542a6d2f767ffc4dfa097ab6d2329e7d2719d5",
+        "composition:F31": "8d1a0221fb3d66e908cf7dd6aa32146c883e50b6f2e4994d271e123c93dd7c12",
+        "composition:F393": "9d91d5f0bb7d09a0256a4cc7bd5c34873e2b2cc6d792c05bab3d8ade649637b4",
+        "composition:F541": "11288c83ce2ba70c9cdc38cea52bcab983055d20a7563c831a03792d20bceae3",
+        "composition:F922": "7adfb38b03732cd1ed56ddf93571a5db90d26e2fe36e0bbdbaa7ee7b06f9a08a",
+        "composition:SALLINEN_ALLSPICE_CAP": "65f744d89260b1af8548e7d7b2a4f09e6a6c46942dc7457e4cfc411a99e45c0a",
+        "gi:kidney36": "d07a6b9bc9cfde8a3dbc14eaedcacfc98274ebc6840b5b6d312ad6bec2dc18f1",
+        "gi:plant50": "8d0b0c57e0f9077a0c67425299be794869e1fee485ef656109b607b0e55a39d2",
+        "gi:rice68": "9523e68c9e683a93e7ee070e606f24e61d20b2392090e2df242462b3ba47d209",
+        "gi:soyLime50": "79da41e72746736b6c7024068e74d277c362e9ad01d7ac9713fd1adc21a5e260",
+        "gi:sucrose60": "60bb1aff7c1390f39950fbbc4ed57a6adfb591ab56656e981fb371472fe84e80",
+        "gi:veg40": "b74ff20be835d28f2875b6305bc63b2f43f4e822ae99c0599dbe77c9940eeb45"
+      },
+      "sealedProposal": {
+        "recipeId": "jerk-kana",
+        "level": "B",
+        "profile": "NEW_B_MINOR_OMISSIONS",
+        "servings": 4,
+        "paths": {
+          "fi": "reseptit/paaruoat/jerk-kana.md"
+        },
+        "recipeSha256": {
+          "fi": "9a5501f0f5a7e397f211ed3fc6017975122aa8ce7b3e3c9bbb741096157acafc"
+        },
+        "originalIngredients": [
+          {
+            "amount": 1000,
+            "unit": "g",
+            "item": "nahatonta ja luutonta broilerin reisilihaa"
+          },
+          {
+            "amount": 4,
+            "unit": "kpl",
+            "item": "kevätsipulia",
+            "note": "hienonnettuna"
+          },
+          {
+            "amount": 3,
+            "unit": "kpl",
+            "item": "valkosipulinkynttä"
+          },
+          {
+            "amount": 1,
+            "unit": "kpl",
+            "item": "habanero-chiliä",
+            "note": "siemenet poistettuna miedompaan versioon"
+          },
+          {
+            "amount": 2,
+            "unit": "rkl",
+            "item": "limettimehua"
+          },
+          {
+            "amount": 2,
+            "unit": "rkl",
+            "item": "soijakastiketta"
+          },
+          {
+            "amount": 2,
+            "unit": "tl",
+            "item": "maustepippuria"
+          },
+          {
+            "amount": 1,
+            "unit": "tl",
+            "item": "kuivattua timjamia"
+          },
+          {
+            "amount": 1,
+            "unit": "tl",
+            "item": "jauhettua inkivääriä"
+          },
+          {
+            "amount": 1,
+            "unit": "rkl",
+            "item": "fariinisokeria"
+          },
+          {
+            "amount": 2,
+            "unit": "rkl",
+            "item": "öljyä"
+          },
+          {
+            "amount": 300,
+            "unit": "g",
+            "item": "riisiä",
+            "note": "lisäkkeeksi"
+          },
+          {
+            "amount": 240,
+            "unit": "g",
+            "item": "valutettuja punaisia kidneypapuja",
+            "note": "lisäkkeeksi"
+          },
+          {
+            "amount": 150,
+            "unit": "ml",
+            "item": "kookosmaitoa",
+            "note": "riisiä ja papuja varten"
+          },
+          {
+            "amount": 300,
+            "unit": "ml",
+            "item": "vettä",
+            "note": "riisiä ja papuja varten"
+          }
+        ],
+        "candidateIngredients": [
+          {
+            "name": "nahatonta ja luutonta broilerin reisilihaa",
+            "grams": 1000,
+            "compositionId": "F002806",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "originalIndex": 0,
+            "note": "Original1000g boneless skinless chicken thigh."
+          },
+          {
+            "name": "kevätsipulia",
+            "grams": 80,
+            "compositionId": "F006250",
+            "giId": "veg40",
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "originalIndex": 1,
+            "note": "NEW WEIGHED CONTENT80g edible spring onion defines original4pieces; not a piece-mass claim."
+          },
+          {
+            "name": "valkosipulinkynttä",
+            "grams": 10.5,
+            "compositionId": "F393",
+            "giId": "veg40",
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "originalIndex": 2,
+            "note": "Original3 cloves; native Fineli393 KPL_M3.5g."
+          },
+          {
+            "name": "habanero-chiliä",
+            "grams": 10,
+            "compositionId": "F002901",
+            "giId": "veg40",
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "originalIndex": 3,
+            "note": "NEW WEIGHED CONTENT10g edible raw habanero, original one-fruit version. AFCD raw red chilli4.8 is disclosed composition/cultivar proxy; no source-derived universal fruit weight."
+          },
+          {
+            "name": "limettimehua",
+            "grams": 30,
+            "compositionId": "F004729",
+            "giId": "soyLime50",
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "originalIndex": 4,
+            "note": "NEW WEIGHED CONTENT30g lime juice replaces original2tbsp; not a volume equivalence."
+          },
+          {
+            "name": "soijakastiketta",
+            "grams": 36,
+            "compositionId": "F31",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "originalIndex": 5,
+            "note": "Original2tbsp ordinary soy using ITS OWN Fineli31 RKL18g and nativeCHO9.5; no borrowed density or AFCD3.2 point. PositiveGI omitted only in unapproved new B minor profile."
+          },
+          {
+            "name": "maustepippuria",
+            "grams": 4,
+            "compositionId": "SALLINEN_ALLSPICE_CAP",
+            "giId": null,
+            "carbohydrateUse": "UPPER_BOUND",
+            "originalIndex": 6,
+            "note": "NEW WEIGHED CONTENT4g Sallinen ground allspice replaces original2tsp, not a density/equivalence claim. Label51 nominal upper, no fibre subtraction, no assumed polyols0."
+          },
+          {
+            "name": "kuivattua timjamia",
+            "grams": 0.5,
+            "compositionId": "F11194",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "originalIndex": 7,
+            "note": "Original1tsp thyme by same native Fineli11194 TL0.5g."
+          },
+          {
+            "name": "jauhettua inkivääriä",
+            "grams": 2,
+            "compositionId": "F004210",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "originalIndex": 8,
+            "note": "NEW WEIGHED CONTENT2g ground ginger replaces original1tsp; no mass equivalence claimed."
+          },
+          {
+            "name": "fariinisokeria",
+            "grams": 14,
+            "compositionId": "F008969",
+            "giId": "sucrose60",
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "originalIndex": 9,
+            "note": "NEW WEIGHED CONTENT14g brown sugar replaces original1tbsp, existing named sucrose-dominant analogy."
+          },
+          {
+            "name": "öljyä",
+            "grams": 0,
+            "compositionId": "F541",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "originalIndex": 10,
+            "note": "ZERO_CHO_SENTINEL_RETAIN_ORIGINAL_2_TBSP_OIL"
+          },
+          {
+            "name": "riisiä",
+            "grams": 300,
+            "compositionId": "F007682",
+            "giId": "rice68",
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "originalIndex": 11,
+            "note": "Original300g dry rice specified jasmine; source68 was plain cooked rice, target coconut/bean absorption rice is explicit B preparation analogy."
+          },
+          {
+            "name": "valutettuja punaisia kidneypapuja",
+            "grams": 240,
+            "compositionId": "F000448",
+            "giId": "kidney36",
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "originalIndex": 12,
+            "note": "Original240g canned ordinary red kidney beans weighed after draining; nativeAFCD14 and named Edgell canned/drained36. Not dry-boiled or dark-red43."
+          },
+          {
+            "name": "kookosmaitoa",
+            "grams": 150,
+            "compositionId": "F29014",
+            "giId": "plant50",
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "originalIndex": 13,
+            "note": "Original150ml generic unsweetened coconut milk represented by ITS OWN Fineli29014 DL100g and nativeCHO2.81. Food-reference household measure, not brand density; same named B plant50 family, new exact application pending."
+          },
+          {
+            "name": "vettä",
+            "grams": 0,
+            "compositionId": "F922",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "originalIndex": 14,
+            "note": "ZERO_CHO_SENTINEL_RETAIN_ORIGINAL_300_ML_WATER"
+          }
+        ],
+        "preparationDecision": "Preserve all original gram amounts, four portions, original150ml unbranded unsweetened coconut milk and300ml water. New weighed versions80g edible spring onions,10g edible habanero,30g lime juice,4g named allspice,2g ground ginger and14g brown sugar; do not claim former spoons/pieces weigh these masses. Put entire marinade into chicken baking dish, keep original200C45–55min oven preparation, serve all cooked marinade and pan juices with all rice/beans; no hypothetical absorption or drain fraction. Specify ordinary canned/drained red kidney beans and hot jasmine absorption rice with coconut and beans. No claimed measured mixed-meal GI. Four unresolved positive minor original ingredients are omitted only in an UNAPPROVED new B profile, neverGI0.",
+        "requiredDecisions": [
+          "GK_ONLY_CONTRACT",
+          "EXACT_SOURCE_CONTENT_REVIEW",
+          "GK_ONLY_MACRO_VERSION_COMPATIBILITY",
+          "NEW_B_MINOR_OMISSIONS_METHOD",
+          "NAMED_KIDNEY36_AND_REHEATED_COCONUT_BEAN_RICE_ANALOGY",
+          "NAMED_PLANT50_NEW_APPLICATION",
+          "EXACT_NEW_WEIGHED_CONTENT_AND_FULL_PAN_JUICES"
+        ],
+        "macroAction": "PRESERVE_ALL_CURRENT_VALUES_AND_WITHHOLDINGS",
+        "approval": false,
+        "publicationAuthorized": false,
+        "confidence": "LOW",
+        "originalIngredientGroups": {
+          "nahatonta ja luutonta broilerin reisilihaa": "0",
+          "kevätsipulia": "1",
+          "valkosipulinkynttä": "2",
+          "habanero-chiliä": "3",
+          "limettimehua": "4",
+          "soijakastiketta": "5",
+          "maustepippuria": "6",
+          "kuivattua timjamia": "7",
+          "jauhettua inkivääriä": "8",
+          "fariinisokeria": "9",
+          "öljyä": "10",
+          "riisiä": "11",
+          "valutettuja punaisia kidneypapuja": "12",
+          "kookosmaitoa": "13",
+          "vettä": "14"
+        },
+        "omitOriginalIngredientGroups": [
+          "5",
+          "6",
+          "7",
+          "8"
+        ],
+        "inputSha256": "3ccf63cc452ab542e8a0e12b5298bbebbbb25965751a5cf0ecc14aaac43f4d6c"
+      },
+      "independentDecimal": {
+        "minExact": "43.955825",
+        "maxExact": "43.955825",
+        "pointRounded": "43.96",
+        "omittedChoPerServing": "1.6861750",
+        "traceCodedChoPerServing": "0",
+        "scientificSourceQualificationProvenByArithmetic": false
+      }
+    },
+    {
+      "recipeId": "sate-ayam",
+      "originalRequestSet15": true,
+      "alternativeNotExtraCoverage": false,
+      "sourceContext": "retained",
+      "sourceCommit": "429f397472d6970006fd3c6c906b9da533c38c46",
+      "sourceCasePath": "docs/research/afcd-polyol-03/retained-sauce/cases.json",
+      "sourceCaseUrl": "https://github.com/ozirix-dev/Reseptit/blob/429f397472d6970006fd3c6c906b9da533c38c46/docs/research/afcd-polyol-03/retained-sauce/cases.json",
+      "inputSha256": "318845e20f82185754514f9eed937a668cac0271f55a7a02feda7d416dcf5fda",
+      "sourceRecordSha256": {
+        "composition:F002806": "3749fd814b7181cb5e369024ebb2d041d067e0964d96442038031f95f5d94482",
+        "composition:F003190": "5a3bbe42cab5a566b3d03b77333f7309f0d0ec9f74f568aca1952718ab8a6df7",
+        "composition:F004729": "fdfdf739c3ae500f5c1fdc93f84925516da815e84ea15ed27fc4b3fc4cb2e71d",
+        "composition:F005199": "95381d77a0fdcb216707a48e421acd79ba4f551f506c3846c8542aacb95cd087",
+        "composition:F006579": "7172c4b0e376a9b5d85ea1470ecc0ba322e291d8d4de156ba83cb825f76f85f0",
+        "composition:F008065": "d01f40a159fb3d1ef231c47a783cac72793c2ffb28c2b5f20f5cda1435467e41",
+        "composition:F008969": "56fa0e77ab7ff031ee63e41c3e4f81aa0cd37e9f97cb15e75097bcd1794acb0f",
+        "composition:F009335": "71ecd8d7b5e387175a94f8ddae80492c68c411fdb7ea9a0d6a577f7a25547546",
+        "composition:F29014": "6187035e85adf3bbfc63f0a30d542a6d2f767ffc4dfa097ab6d2329e7d2719d5",
+        "composition:F393": "9d91d5f0bb7d09a0256a4cc7bd5c34873e2b2cc6d792c05bab3d8ade649637b4",
+        "gi:peanutExpert18": "2f1978e9da4b5824fc56cd9c4a77a1cf93b536c1a98dcb6671dd3ee72a52b498",
+        "gi:plant50": "8d0b0c57e0f9077a0c67425299be794869e1fee485ef656109b607b0e55a39d2",
+        "gi:soyLime50": "79da41e72746736b6c7024068e74d277c362e9ad01d7ac9713fd1adc21a5e260",
+        "gi:sucrose60": "60bb1aff7c1390f39950fbbc4ed57a6adfb591ab56656e981fb371472fe84e80",
+        "gi:trace50": "fb493624fff738568f2bd410411042c8229761d22c8a8f33bf5b0377dcb388a8",
+        "gi:veg40": "b74ff20be835d28f2875b6305bc63b2f43f4e822ae99c0599dbe77c9940eeb45"
+      },
+      "sealedProposal": {
+        "recipeId": "sate-ayam",
+        "level": "B",
+        "profile": "NEW_EXPERT_ESTIMATE_B_REFERENCE",
+        "servings": 4,
+        "paths": {
+          "fi": "reseptit/paaruoat/sate-ayam.md"
+        },
+        "recipeSha256": {
+          "fi": "3ed0776b1f7a4358f11648e9311faef5018a28b758e0826c72a0f62d26dda93b"
+        },
+        "originalIngredients": [
+          {
+            "amount": 700,
+            "unit": "g",
+            "item": "broilerin reisilihaa",
+            "note": "kuutioina"
+          },
+          {
+            "amount": 32,
+            "unit": "g",
+            "item": "soijakastiketta",
+            "note": "makeaa marinadia varten"
+          },
+          {
+            "amount": 18,
+            "unit": "g",
+            "item": "fariinisokeria",
+            "note": "makeaa marinadia varten"
+          },
+          {
+            "amount": 2,
+            "unit": "rkl",
+            "item": "limettimehua",
+            "note": "marinadiin"
+          },
+          {
+            "amount": 2,
+            "unit": "kpl",
+            "item": "valkosipulinkynttä",
+            "note": "hienonnettuna"
+          },
+          {
+            "amount": 1,
+            "unit": "tl",
+            "item": "jauhettua korianteria"
+          },
+          {
+            "amount": 0.5,
+            "unit": "tl",
+            "item": "kurkumaa"
+          },
+          {
+            "amount": 150,
+            "unit": "g",
+            "item": "maapähkinävoita",
+            "note": "kastikkeeseen"
+          },
+          {
+            "amount": 200,
+            "unit": "ml",
+            "item": "kookosmaitoa",
+            "note": "kastikkeeseen"
+          },
+          {
+            "amount": 16,
+            "unit": "g",
+            "item": "soijakastiketta",
+            "note": "kastikkeeseen"
+          },
+          {
+            "amount": 9,
+            "unit": "g",
+            "item": "fariinisokeria",
+            "note": "kastikkeeseen"
+          },
+          {
+            "amount": 1,
+            "unit": "kpl",
+            "item": "limetti",
+            "note": "lohkoina tarjoiluun"
+          }
+        ],
+        "candidateIngredients": [
+          {
+            "name": "broilerin reisilihaa",
+            "grams": 700,
+            "compositionId": "F002806",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "originalIndex": 0,
+            "note": "Original700g chicken thigh meat."
+          },
+          {
+            "name": "soijakastiketta",
+            "grams": 32,
+            "compositionId": "F008065",
+            "giId": "soyLime50",
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "originalIndex": 1,
+            "note": "Original32g ordinary commercial soy; actual CURRENT recipe, not stale kecap input."
+          },
+          {
+            "name": "fariinisokeria",
+            "grams": 18,
+            "compositionId": "F008969",
+            "giId": "sucrose60",
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "originalIndex": 2,
+            "note": "Original18g brown sugar retained."
+          },
+          {
+            "name": "limettimehua",
+            "grams": 30,
+            "compositionId": "F004729",
+            "giId": "soyLime50",
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "originalIndex": 3,
+            "note": "NEW WEIGHED CONTENT30g lime juice replaces original2tbsp; not density proof."
+          },
+          {
+            "name": "valkosipulinkynttä",
+            "grams": 7,
+            "compositionId": "F393",
+            "giId": "veg40",
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "originalIndex": 4,
+            "note": "Original2cloves by native Fineli393 KPL_M3.5g."
+          },
+          {
+            "name": "jauhettua korianteria",
+            "grams": 2,
+            "compositionId": "F003190",
+            "giId": "trace50",
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "originalIndex": 5,
+            "note": "NEW WEIGHED CONTENT2g ground coriander seed replaces original1tsp; explicit new small-seed source application."
+          },
+          {
+            "name": "kurkumaa",
+            "grams": 1,
+            "compositionId": "F009335",
+            "giId": "trace50",
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "originalIndex": 6,
+            "note": "NEW WEIGHED CONTENT1g ground turmeric replaces original0.5tsp; explicit new small-spice source application."
+          },
+          {
+            "name": "maapähkinävoita",
+            "grams": 150,
+            "compositionId": "F006579",
+            "giId": "peanutExpert18",
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "originalIndex": 7,
+            "note": "Original150g peanut butter specified no-added-sugar/salt type, nativeAFCD9.4. Sydney author reference18 is explicitly ESTIMATED, not measured; new B source-type approval required."
+          },
+          {
+            "name": "kookosmaitoa",
+            "grams": 200,
+            "compositionId": "F29014",
+            "giId": "plant50",
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "originalIndex": 8,
+            "note": "Original200ml generic unsweetened coconut milk via ITS OWN Fineli29014 DL100g and nativeCHO2.81; new exact B plant50 application pending."
+          },
+          {
+            "name": "soijakastiketta",
+            "grams": 16,
+            "compositionId": "F008065",
+            "giId": "soyLime50",
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "originalIndex": 9,
+            "note": "Original16g soy in peanut sauce; same source as marinade32g, total48g; not separately omitted."
+          },
+          {
+            "name": "fariinisokeria",
+            "grams": 9,
+            "compositionId": "F008969",
+            "giId": "sucrose60",
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "originalIndex": 10,
+            "note": "Original9g brown sugar in sauce; total27g retained."
+          },
+          {
+            "name": "limetti",
+            "grams": 50,
+            "compositionId": "F005199",
+            "giId": "trace50",
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "originalIndex": 11,
+            "note": "NEW WEIGHED CONTENT50g edible peeled ordinary lime serving wedges defines original1fruit; all edible lime included. New named aromatic-garnish trace application, not blanket fruit GI50."
+          }
+        ],
+        "preparationDecision": "Preserve original700g chicken,32+16g ordinary soy,18+9g brown sugar,150g peanut butter, four portions and original200ml coconut milk. Specify no-added-sugar/salt peanut butter,30g weighed lime juice,2g coriander,1g turmeric and50g edible peeled lime as separate content decisions, not spoon/piece equivalence. Choose original permitted PAN-cooked version, not open grill: cook all marinade with chicken and combine ALL cooked pan contents with complete peanut-coconut sauce. Serve all edible lime. Expert-reference18 is an editorial estimate not human-measured, and applying it to warm sauce is unvalidated; new method/source-type/content review required. No peanut14/40, nut category22 or dairy35 substitution.",
+        "requiredDecisions": [
+          "GK_ONLY_CONTRACT",
+          "EXACT_SOURCE_CONTENT_REVIEW",
+          "GK_ONLY_MACRO_VERSION_COMPATIBILITY",
+          "NEW_B_EXPERT_ESTIMATE_SOURCE_TYPE_NOT_HUMAN_GI",
+          "NAMED_PEANUT_EXPERT18_AND_NO_ADDED_SUGAR_SALT_TYPE",
+          "NAMED_PLANT50_AND_TRACE50_NEW_APPLICATIONS",
+          "EXACT_NEW_WEIGHED_CONTENT_AND_FULL_PAN_MARINADE"
+        ],
+        "macroAction": "PRESERVE_ALL_CURRENT_VALUES_AND_WITHHOLDINGS",
+        "approval": false,
+        "publicationAuthorized": false,
+        "confidence": "LOW",
+        "inputSha256": "318845e20f82185754514f9eed937a668cac0271f55a7a02feda7d416dcf5fda"
+      },
+      "independentDecimal": {
+        "minExact": "5.76000",
+        "maxExact": "5.76000",
+        "pointRounded": "5.76",
+        "omittedChoPerServing": "0",
+        "traceCodedChoPerServing": "0.30300",
+        "scientificSourceQualificationProvenByArithmetic": false
+      }
+    },
+    {
+      "recipeId": "thai-vihrea-curry-kanalla-vhh",
+      "originalRequestSet15": true,
+      "alternativeNotExtraCoverage": false,
+      "sourceContext": "coconut",
+      "sourceCommit": "429f397472d6970006fd3c6c906b9da533c38c46",
+      "sourceCasePath": "docs/research/afcd-polyol-03/coconut-product-route/cases.json",
+      "sourceCaseUrl": "https://github.com/ozirix-dev/Reseptit/blob/429f397472d6970006fd3c6c906b9da533c38c46/docs/research/afcd-polyol-03/coconut-product-route/cases.json",
+      "inputSha256": "3c89be7139f76a9e5758fd97ef1ca1db748d4e155bd525a00ca0f869ec39452d",
+      "sourceRecordSha256": {
+        "composition:A002806": "6e0509b8624cec215906d0f7aff427aef28ba143a0849e75fded0a1a04cdc8e8",
+        "composition:F11134": "d458266379df69cc34bc33417df369641f781c6e37aae7b120a117c2fe0cdde6",
+        "composition:F322": "f2bb9ccf1cae98278926cb73c13efea5ca06bfa8d36bc10028dd78c5e6de0e0d",
+        "composition:F362": "cd77f512ea82b3169a33b1b7d2b4db6336e6a832a3a858f4a7f2d1af3e05add2",
+        "composition:F389": "d2364a1253ca2a295e136745e45b26d4ecca098dea7ec9f412f3fd8ed5cfbe16",
+        "composition:F541": "ed357b1f29fdc0a32ccafe02959ddcf492072c59e476d05ee0bf2d197094d84b",
+        "composition:FOODIN_ERYTHRITOL": "03c63fe486b6be3940f2ab8f0b2a4b98139ecfa9a3bd4ff4030cb2aaf80191f9",
+        "composition:FTO_1L_08_G": "32b85b5828ce269031c719081a7f69bdab49fa98bca3dc7aa58d8d2e854e03df",
+        "composition:MAE_GREEN_AU64_G": "b0f347c759f04da781be6faaf630a128fb5d1d8f71dead8ffef8cf4d76de1b43",
+        "composition:SQUID700_SUPPLIER3_G": "1fe991a4b8595cb61ce67e94944813a238a1eac133d0d143985131bb27ee2680",
+        "composition:THAI_KAFFIR_N35_TOTAL": "62f358ce3e113d1801ae3c7238b0b539c2352eb7eed842344ce871b33e7e3660",
+        "gi:op142-vegetable-imputation40": "d7d7a7d6af138e8770ee658cb5338a09a63b84a2d6561c575e861c0ca48c6bbd"
+      },
+      "sealedProposal": {
+        "recipeId": "thai-vihrea-curry-kanalla-vhh",
+        "classification": "CONDITIONAL_A_ARITHMETIC_SOURCE_HOLD",
+        "arithmeticProfile": "EXISTING_A",
+        "servings": 4,
+        "paths": {
+          "fi": "reseptit/paaruoat/thai-vihrea-curry-kanalla-vhh.md",
+          "en": "kaannokset/en/paaruoat/thai-vihrea-curry-kanalla-vhh.md",
+          "sv": "kaannokset/sv/paaruoat/thai-vihrea-curry-kanalla-vhh.md",
+          "th": "kaannokset/th/paaruoat/thai-vihrea-curry-kanalla-vhh.md"
+        },
+        "recipeSha256Lf": {
+          "fi": "a4d7a2d111907b2ef34721eeb81bfd32999e112d894a3c39dcfd6b8230899173",
+          "en": "237dff5821a28992a213dc57a1f56e62f06fb316b9c8f4aa478f9fbbfb33b81e",
+          "sv": "9593235cf7ea1b2381f3fc6f4e83674c493f8ff535955ba826ce53d7f297a220",
+          "th": "4be67cf146b78a1ad42a5f897cc830d5c87efcdf4233b7b34a3dbb396dd53d75"
+        },
+        "originalIngredients": [
+          {
+            "amount": 600,
+            "unit": "g",
+            "item": "nahatonta broilerin reisilihaa"
+          },
+          {
+            "amount": 400,
+            "unit": "g",
+            "item": "täysrasvaista kookosmaitoa"
+          },
+          {
+            "amount": 30,
+            "unit": "g",
+            "item": "Mae Ploy vihreää currytahnaa"
+          },
+          {
+            "amount": 200,
+            "unit": "g",
+            "item": "kesäkurpitsaa",
+            "note": "lohkottuna"
+          },
+          {
+            "amount": 150,
+            "unit": "g",
+            "item": "munakoisoa",
+            "note": "lohkottuna"
+          },
+          {
+            "amount": 600,
+            "unit": "g",
+            "item": "kukkakaaliriisiä",
+            "note": "lisukkeeksi"
+          },
+          {
+            "amount": 30,
+            "unit": "g",
+            "item": "Squid Brand -kalakastiketta"
+          },
+          {
+            "amount": 4,
+            "unit": "g",
+            "item": "Foodin-erytritolia"
+          },
+          {
+            "amount": 2,
+            "unit": "g",
+            "item": "kaffirlimetinlehteä"
+          },
+          {
+            "amount": 20,
+            "unit": "g",
+            "item": "thaibasilikaa"
+          },
+          {
+            "amount": 13.5,
+            "unit": "g",
+            "item": "neutraalia öljyä"
+          }
+        ],
+        "ingredients": [
+          {
+            "originalIndex": 0,
+            "name": "nahatonta broilerin reisilihaa",
+            "grams": 600,
+            "sourceId": "A002806",
+            "giId": null
+          },
+          {
+            "originalIndex": 1,
+            "name": "täysrasvaista kookosmaitoa",
+            "grams": 400,
+            "sourceId": "FTO_1L_08_G",
+            "giId": null
+          },
+          {
+            "originalIndex": 2,
+            "name": "Mae Ploy vihreää currytahnaa",
+            "grams": 30,
+            "sourceId": "MAE_GREEN_AU64_G",
+            "giId": null
+          },
+          {
+            "originalIndex": 3,
+            "name": "kesäkurpitsaa",
+            "grams": 200,
+            "sourceId": "F389",
+            "giId": "op142-vegetable-imputation40"
+          },
+          {
+            "originalIndex": 4,
+            "name": "munakoisoa",
+            "grams": 150,
+            "sourceId": "F362",
+            "giId": "op142-vegetable-imputation40"
+          },
+          {
+            "originalIndex": 5,
+            "name": "kukkakaaliriisiä",
+            "grams": 600,
+            "sourceId": "F322",
+            "giId": "op142-vegetable-imputation40"
+          },
+          {
+            "originalIndex": 6,
+            "name": "Squid Brand -kalakastiketta",
+            "grams": 30,
+            "sourceId": "SQUID700_SUPPLIER3_G",
+            "giId": null
+          },
+          {
+            "originalIndex": 7,
+            "name": "Foodin-erytritolia",
+            "grams": 4,
+            "sourceId": "FOODIN_ERYTHRITOL",
+            "giId": null
+          },
+          {
+            "originalIndex": 8,
+            "name": "kaffirlimetinlehteä",
+            "grams": 2,
+            "sourceId": "THAI_KAFFIR_N35_TOTAL",
+            "giId": null
+          },
+          {
+            "originalIndex": 9,
+            "name": "thaibasilikaa",
+            "grams": 20,
+            "sourceId": "F11134",
+            "giId": null
+          },
+          {
+            "originalIndex": 10,
+            "name": "neutraalia öljyä",
+            "grams": 13.5,
+            "sourceId": "F541",
+            "giId": null
+          }
+        ],
+        "preparationDecision": "Keep all original eleven ingredients, gram amounts, four servings and simmering sequence. Specify400g well-mixed Fairtrade Original organic1L coconut milk product;30g Mae Ploy green exactAU400g published-label version;30g Squid exact700ml supplier reference pending primary-label mass basis. Kaffir2g fresh whole leaf; retain full-source upper accounting whether solids remain or are removed. No ml/g conversion; no replacement with rice milk or lighter coconut product. All finished sauce/vegetables included.",
+        "requiredDecisions": [
+          "EXACT_PRODUCT_SOURCE_AND_CONTENT_OWNER_REVIEW",
+          "GREEN_CURRY_AU64_VS_UK173_SAME_UPC_LABEL_VERSION",
+          "SQUID700_PRIMARY_LABEL_AND_G_VS_ML_UNIT_RESOLUTION",
+          "THAI_N35_TOTAL_CAP_ADMISSION_WITH_AVAILABLE_UNKNOWN",
+          "GK_ONLY_MACRO_VERSION_COMPATIBILITY"
+        ],
+        "ownerApproval": false,
+        "sourceQualified": false,
+        "publicationAuthorized": false,
+        "macroAction": "PRESERVE_ALL_CURRENT_VALUES_AND_WITHHOLDINGS",
+        "noNewGiConstants": true,
+        "minorBOmissionProfileActivated": false,
+        "inputSha256": "3c89be7139f76a9e5758fd97ef1ca1db748d4e155bd525a00ca0f869ec39452d"
+      },
+      "independentDecimal": {
+        "minExact": "2.3750",
+        "maxExact": "2.3750",
+        "pointRounded": "2.38",
+        "omittedChoPerServing": "1.66655",
+        "traceCodedChoPerServing": "0",
+        "scientificSourceQualificationProvenByArithmetic": false
+      }
+    },
+    {
+      "recipeId": "baozi",
+      "originalRequestSet15": true,
+      "alternativeNotExtraCoverage": false,
+      "sourceContext": "prepared",
+      "sourceCommit": "96a25d8c9db6fb0a505a70a37a5b357b6a83593a",
+      "sourceCasePath": "docs/nutrition/gk80-operation149/prepared-route-cases.json",
+      "sourceCaseUrl": "https://github.com/ozirix-dev/Reseptit/blob/96a25d8c9db6fb0a505a70a37a5b357b6a83593a/docs/nutrition/gk80-operation149/prepared-route-cases.json",
+      "inputSha256": "b5e23f709167bda9c1a3dc391fdb954dbef8a319fa9248524d1e6f0ebe2c3b1c",
+      "sourceRecordSha256": {
+        "composition:1": "5d48ee943ab0dd529577fb42408d7a710848e658650724973c818b1b99e5a44b",
+        "composition:110": "c407b736e634551df120bb4c0a64388ccf13d22c57af736628f05826b00d2424",
+        "composition:27": "c1b73a1beff3bbc3cae43a5ac29cda8284c713ae7405a8312087332f4810b7bc",
+        "composition:33023": "09a17fb7ae975b47c7f1437f3a6f8bbd1ba41770201cb5cca492c5ccbfff83ad",
+        "composition:359": "67097c995474b27d2dd5d37e46e945f0364098a1dd6d55b43c7a0b22c864116e",
+        "composition:922": "76f117602bb8953868d3ece9cacc4df3b01db020c7a1fd9e20b0f0f65208b852",
+        "composition:F006187": "666ece4eb7938d9bc0e37419ba88c2d3d2b665b51bd231547751615b5518b867",
+        "composition:F006250": "648bd797a5335e2130c45ea51b44194e69990bdaabd7af71a1c278bb607cb528",
+        "composition:F007057": "2e5888b9e2846c27e9b7a8eab891491740b64b98427479b5adf4914928dfad91",
+        "composition:F008065": "9889d41f19f9077e439e7a4dfdd8998ce08fe55e3e3045e8ae0afda029279704",
+        "composition:F009606": "45c7fda1228b0b4d33f230ed300859dc7c39f9f47eb7780879a5c28725284593",
+        "prepared:baozi-whole39": "86cfe87580e9fe7ca22e3aeb0b2b77fb66a7360a3b329fb47ad0bc6a0fa8f78a"
+      },
+      "sealedProposal": {
+        "recipeId": "baozi",
+        "level": "B",
+        "applicationMode": "PREPARED_UNITS",
+        "servings": 4,
+        "paths": {
+          "fi": "reseptit/paaruoat/baozi.md",
+          "en": "kaannokset/en/paaruoat/baozi.md",
+          "sv": "kaannokset/sv/paaruoat/baozi.md",
+          "th": "kaannokset/th/paaruoat/baozi.md"
+        },
+        "recipeSha256": {
+          "fi": "af8efd8db3bbfc7a57f4e75fe537f88b03e9dfe4227ae586905a6c046b60f208",
+          "en": "0459e4a627375936ea670d3091dff3bc6e522e5e385fca545400ec0ef597a010",
+          "sv": "59a1c01ca4ddd7a26d2212c7aecb98ffa8430c5a85ed1d9ee1b5e46e4b5e7f4d",
+          "th": "f4a770ee1b2a94ead179e477ae731fa143ab923a6094934483f381f8a2b01d60"
+        },
+        "candidateIngredients": [
+          {
+            "name": "vehnäjauho",
+            "grams": 400,
+            "compositionId": "110",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Explicit weighed edible recipe input; no source-verified volume conversion claimed."
+          },
+          {
+            "name": "vesi",
+            "grams": 250,
+            "compositionId": "922",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Explicit weighed edible recipe input; no source-verified volume conversion claimed."
+          },
+          {
+            "name": "kuivahiiva",
+            "grams": 7,
+            "compositionId": "F009606",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Explicit weighed edible recipe input; no source-verified volume conversion claimed."
+          },
+          {
+            "name": "sokeri",
+            "grams": 13.5,
+            "compositionId": "1",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Explicit weighed edible recipe input; no source-verified volume conversion claimed."
+          },
+          {
+            "name": "sian jauheliha",
+            "grams": 300,
+            "compositionId": "F007057",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Explicit weighed edible recipe input; no source-verified volume conversion claimed."
+          },
+          {
+            "name": "kiinankaali",
+            "grams": 150,
+            "compositionId": "359",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Explicit weighed edible recipe input; no source-verified volume conversion claimed."
+          },
+          {
+            "name": "kevätsipuli",
+            "grams": 24,
+            "compositionId": "F006250",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Explicit weighed edible recipe input; no source-verified volume conversion claimed."
+          },
+          {
+            "name": "tavallinen soijakastike",
+            "grams": 30,
+            "compositionId": "F008065",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Explicit weighed edible recipe input; no source-verified volume conversion claimed."
+          },
+          {
+            "name": "seesamiöljy",
+            "grams": 4.5,
+            "compositionId": "F006187",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Explicit weighed edible recipe input; no source-verified volume conversion claimed."
+          },
+          {
+            "name": "inkivääri",
+            "grams": 15,
+            "compositionId": "33023",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Explicit weighed edible recipe input; no source-verified volume conversion claimed."
+          },
+          {
+            "name": "maissitärkkelys",
+            "grams": 8,
+            "compositionId": "27",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Explicit weighed edible recipe input; no source-verified volume conversion claimed."
+          }
+        ],
+        "preparationDecision": "Preserve leavened steamed pork/cabbage buns:400g flour,300g pork,150g cabbage,7g yeast;12 buns across4 servings. Weigh sugar13.5g,soy30g,sesame oil4.5g,ginger15g,starch8g and scallion24g. Proposed juicy filling retains cabbage liquid instead of squeezing/discarding it. Input-based carbohydrate is a nominal recipe calculation; fermentation/cooking losses have not been measured. Whole steamed stuffed-bun39 is not assigned to raw flour or pork.",
+        "preparedNodes": [
+          {
+            "id": "whole-bao",
+            "ingredientIndexes": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10
+            ],
+            "sourceId": "baozi-whole39",
+            "foodClass": "STEAMED_WHEAT_MEAT_BUN",
+            "unitScope": "PREPARED_RECIPE",
+            "matchingRationale": "Same leavened wheat,meat/allium-filled steamed food;source reports steamed stuffed meat bun.",
+            "documentedDifferences": [
+              "Cabbage/seasoning ratios and source formulation unavailable.",
+              "Cabbage liquid retained in proposed version;fermentation loss not quantified."
+            ]
+          }
+        ],
+        "requiredDecisions": [
+          "GK_ONLY_CONTRACT",
+          "EXACT_NEW_VERSION_OWNER_APPROVAL",
+          "SOURCE_APPLICATION_REVIEW",
+          "WHOLE_PREPARED_FOOD_METHOD_APPROVAL",
+          "RETAIN_CABBAGE_LIQUID_CONTENT_DECISION"
+        ],
+        "macroAction": "PRESERVE_ALL_CURRENT_VALUES_AND_WITHHOLDINGS",
+        "approval": false,
+        "confidence": "LOW",
+        "inputSha256": "b5e23f709167bda9c1a3dc391fdb954dbef8a319fa9248524d1e6f0ebe2c3b1c",
+        "sourceBindingSha256": {
+          "comp:1": "5d48ee943ab0dd529577fb42408d7a710848e658650724973c818b1b99e5a44b",
+          "comp:110": "c407b736e634551df120bb4c0a64388ccf13d22c57af736628f05826b00d2424",
+          "comp:27": "c1b73a1beff3bbc3cae43a5ac29cda8284c713ae7405a8312087332f4810b7bc",
+          "comp:33023": "09a17fb7ae975b47c7f1437f3a6f8bbd1ba41770201cb5cca492c5ccbfff83ad",
+          "comp:359": "67097c995474b27d2dd5d37e46e945f0364098a1dd6d55b43c7a0b22c864116e",
+          "comp:922": "76f117602bb8953868d3ece9cacc4df3b01db020c7a1fd9e20b0f0f65208b852",
+          "comp:F006187": "666ece4eb7938d9bc0e37419ba88c2d3d2b665b51bd231547751615b5518b867",
+          "comp:F006250": "648bd797a5335e2130c45ea51b44194e69990bdaabd7af71a1c278bb607cb528",
+          "comp:F007057": "2e5888b9e2846c27e9b7a8eab891491740b64b98427479b5adf4914928dfad91",
+          "comp:F008065": "9889d41f19f9077e439e7a4dfdd8998ce08fe55e3e3045e8ae0afda029279704",
+          "comp:F009606": "45c7fda1228b0b4d33f230ed300859dc7c39f9f47eb7780879a5c28725284593",
+          "prepared:baozi-whole39": "86cfe87580e9fe7ca22e3aeb0b2b77fb66a7360a3b329fb47ad0bc6a0fa8f78a"
+        }
+      },
+      "independentDecimal": {
+        "minExact": "31.555290",
+        "maxExact": "31.555290",
+        "pointRounded": "31.56",
+        "omittedChoPerServing": "0",
+        "traceCodedChoPerServing": "0",
+        "scientificSourceQualificationProvenByArithmetic": false
+      }
+    },
+    {
+      "recipeId": "hyderabadi-kanabiryani",
+      "originalRequestSet15": true,
+      "alternativeNotExtraCoverage": false,
+      "sourceContext": "prepared",
+      "sourceCommit": "96a25d8c9db6fb0a505a70a37a5b357b6a83593a",
+      "sourceCasePath": "docs/nutrition/gk80-operation149/prepared-route-cases.json",
+      "sourceCaseUrl": "https://github.com/ozirix-dev/Reseptit/blob/96a25d8c9db6fb0a505a70a37a5b357b6a83593a/docs/nutrition/gk80-operation149/prepared-route-cases.json",
+      "inputSha256": "c4edb623fd0e8a0f827445572919bfa90aa179ba8f0f15b5a84b7e8f8d9bc71a",
+      "sourceRecordSha256": {
+        "composition:30": "098824f9f23225c5f282181f6a20a0bb6cbd14f4e63de76596349821a434c953",
+        "composition:30346": "0665f119e7e05521ccb81f12812df7fda1404bbbe2167a64699677f3956e8feb",
+        "composition:30792": "32267b0625fba35be52297b6bcf7949358b80b1e827a03f57c3e2e27b0020311",
+        "composition:335": "d6429a866b17bc6e54960318dcce29c1f27988d18aa765c2afbee1f3825c5035",
+        "composition:541": "de8683e57e05578da02b7bb3e8583366ed4816136ae69fe3f81301de7b72198e",
+        "composition:619": "f0c68d8725a2e75599c60f366ee6853da8d39472fea86e8f1d70bdebdccdba0d",
+        "composition:684": "eab04badb12ad26128ba6b7498673dc73308c5f190cf5581817b95626cc1bbf4",
+        "composition:F003190": "36e932b9af7d13a8c04dd7b237eed327bf46f83db6a5296ac0e7df3f76ee8949",
+        "composition:F003192": "2109c13ba48d8cc32dbb032e53e2f8458ca197beb2c7ff18658f6e07f11c45ef",
+        "composition:F003327": "1689ffae7fc4d22ae0658a8401ccd291861f7afd64331dacb58780b288e13aee",
+        "composition:F004205": "50bd2c55080561c25611816cd7cedd4df2592f13dbabb26c839c8ea6fb7aa65d",
+        "composition:F005700": "d3ff957a10e21c1d7f1e07efb8868573b84d1bcef9e770773990f637c727a31b",
+        "composition:F007661": "d3228db369a2e5ccdeee0a508bc6023adaaa8cfc15e12e559e3037368d02185a",
+        "composition:F009335": "08f63a44c7d4a15143f31a9961747e13a342a18a829856787f1685a77a2fdef2",
+        "composition:physical": "b0cea78a3f0e053223f415e0ad2f66c1be2e7ec07dc024f191eb581d82747e1f",
+        "prepared:biryani-whole52": "47094d4559c2be7d57b51f1829aa62f3015547e01c39983ef33c11339d5fc1dc"
+      },
+      "sealedProposal": {
+        "recipeId": "hyderabadi-kanabiryani",
+        "level": "B",
+        "applicationMode": "PREPARED_UNITS",
+        "servings": 4,
+        "paths": {
+          "fi": "reseptit/paaruoat/hyderabadi-kanabiryani.md",
+          "en": "kaannokset/en/paaruoat/hyderabadi-kanabiryani.md",
+          "sv": "kaannokset/sv/paaruoat/hyderabadi-kanabiryani.md",
+          "th": "kaannokset/th/paaruoat/hyderabadi-kanabiryani.md"
+        },
+        "recipeSha256": {
+          "fi": "c3434af8d2dbd5b016f9afd18839fa778fb2a13d79c2cf0b9e4c2070d43367d9",
+          "en": "5eac67243b1a25cc818d4b80b25b13679dba84da35c71429e5a931fda188f916",
+          "sv": "ad52d50e352ab27702657c66f1912b6d5bc2325b1321711668046925f19631b6",
+          "th": "161156fe332257d08cf9b8a1636b760461a1a063ad7628028f723fcf9e296353"
+        },
+        "candidateIngredients": [
+          {
+            "name": "kypsä basmatiriisi",
+            "grams": 900,
+            "compositionId": "30346",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Explicit new cooked-edible weighed version;900g is NOT a yield conversion from300g dry. Fineli cooked long-grain composition and AFCD general cooked-white-rice are named alternative composition scenarios,not additive inputs.",
+            "carbohydrateScenarioCompositionIds": [
+              "F007661"
+            ],
+            "massBasis": "COOKED_EDIBLE_WEIGHED",
+            "accountingKey": "RICE_MAIN_BATCH"
+          },
+          {
+            "name": "broilerin reisiliha",
+            "grams": 600,
+            "compositionId": "30792",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Explicit weighed edible recipe input; no source-verified volume conversion claimed."
+          },
+          {
+            "name": "maustamaton jogurtti2.5%",
+            "grams": 200,
+            "compositionId": "619",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Explicit weighed edible recipe input; no source-verified volume conversion claimed."
+          },
+          {
+            "name": "sipuli",
+            "grams": 200,
+            "compositionId": "335",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Explicit weighed edible recipe input; no source-verified volume conversion claimed."
+          },
+          {
+            "name": "öljy",
+            "grams": 27,
+            "compositionId": "541",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Explicit weighed edible recipe input; no source-verified volume conversion claimed."
+          },
+          {
+            "name": "ghee",
+            "grams": 30,
+            "compositionId": "F004205",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Explicit weighed edible recipe input; no source-verified volume conversion claimed."
+          },
+          {
+            "name": "garam masala",
+            "grams": 4,
+            "compositionId": "physical",
+            "giId": null,
+            "carbohydrateUse": "UPPER_BOUND",
+            "note": "4g weighed blend;unknown availableCHO is bounded0..4g,not assigned an ingredient GI."
+          },
+          {
+            "name": "juustokumina",
+            "grams": 2,
+            "compositionId": "F003327",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Explicit weighed edible recipe input; no source-verified volume conversion claimed."
+          },
+          {
+            "name": "korianterinsiemen",
+            "grams": 2,
+            "compositionId": "F003190",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Explicit weighed edible recipe input; no source-verified volume conversion claimed."
+          },
+          {
+            "name": "kurkuma",
+            "grams": 1.5,
+            "compositionId": "F009335",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Explicit weighed edible recipe input; no source-verified volume conversion claimed."
+          },
+          {
+            "name": "kanelitanko",
+            "grams": 3,
+            "compositionId": "physical",
+            "giId": null,
+            "carbohydrateUse": "UPPER_BOUND",
+            "note": "Whole bark may be removed.0..3g availableCHO cap;no retained/extracted fraction invented."
+          },
+          {
+            "name": "kardemummakodat",
+            "grams": 2,
+            "compositionId": "physical",
+            "giId": null,
+            "carbohydrateUse": "UPPER_BOUND",
+            "note": "Weigh four pods as2g;0..2gCHO cap covers unknown consumed/extracted share,not a conversion claim."
+          },
+          {
+            "name": "sahrami",
+            "grams": 1,
+            "compositionId": "physical",
+            "giId": null,
+            "carbohydrateUse": "UPPER_BOUND",
+            "note": "1g original quantity;0..1gCHO physical cap."
+          },
+          {
+            "name": "sahramin maito",
+            "grams": 30,
+            "compositionId": "684",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Explicit weighed edible recipe input; no source-verified volume conversion claimed."
+          },
+          {
+            "name": "tuore korianteri",
+            "grams": 20,
+            "compositionId": "F003192",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Explicit weighed edible recipe input; no source-verified volume conversion claimed."
+          },
+          {
+            "name": "minttu",
+            "grams": 10,
+            "compositionId": "F005700",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Explicit weighed edible recipe input; no source-verified volume conversion claimed."
+          },
+          {
+            "name": "suola",
+            "grams": 6,
+            "compositionId": "30",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Explicit weighed edible recipe input; no source-verified volume conversion claimed."
+          }
+        ],
+        "preparationDecision": "New explicitly cooked-weight/reheated version: use900g already fully cooked basmati,600g chicken and the listed yogurt/onion/spices; original300g dry rice is metadata only,not a carbohydrate input. Finish chicken safely,assemble rice and spices. For the next-day warmed comparison, cool promptly in shallow portions to<=6C within4h,keep refrigerated,reheat once throughout>70C before serving; follow the linked Finnish Food Authority guidance. Actual original rice yield is unknown. Whole-biryani52 is a named UAE food comparison,not rice GI; restaurant formulation and layered yogurt method differ,so GI analogical error is unquantified.",
+        "preparedNodes": [
+          {
+            "id": "whole-biryani",
+            "ingredientIndexes": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16
+            ],
+            "sourceId": "biryani-whole52",
+            "foodClass": "BASMATI_CHICKEN_BIRYANI_REHEATED",
+            "unitScope": "PREPARED_RECIPE",
+            "matchingRationale": "Same basmati/chicken/spiced mixed-rice food and reheated serving form. Whole meal GI is applied once to whole dose C;all ingredient C included.",
+            "documentedDifferences": [
+              "Source boiled chicken/rice vs layered yogurt method; source recipe ratios unknown.",
+              "900g cooked rice is a separate new version;no verification of300g dry→900g cooked.",
+              "Fineli23.561 and AFCD34.7g cooked-rice availableCHO/100g are named composition scenarios;not an empirical hydration bound."
+            ]
+          }
+        ],
+        "requiredDecisions": [
+          "GK_ONLY_CONTRACT",
+          "EXACT_NEW_VERSION_OWNER_APPROVAL",
+          "SOURCE_APPLICATION_REVIEW",
+          "COOKED_900G_VERSION_NOT_ORIGINAL_DRY_RECIPE",
+          "REHEATED_PREPARATION_CONTENT_DECISION",
+          "WHOLE_PREPARED_FOOD_METHOD_APPROVAL"
+        ],
+        "macroAction": "PRESERVE_ALL_CURRENT_VALUES_AND_WITHHOLDINGS",
+        "approval": false,
+        "confidence": "LOW",
+        "riceMassDecision": {
+          "originalDryGrams": 300,
+          "targetCookedGrams": 900,
+          "isYieldConversion": false,
+          "sourceTestMassGrams": 253.9,
+          "sourceTestChoGrams": 50,
+          "sourceTestPortionIsNotRecipeServing": true
+        },
+        "foodSafetySources": [
+          "https://www.ruokavirasto.fi/elintarvikkeet/elintarvikeala/hygieeninen-toiminta/tuotanto--ja-kasittelyhygienia/jaahdyttaminen/",
+          "https://www.ruokavirasto.fi/elintarvikkeet/elintarvikeala/hygieeninen-toiminta/tuotanto--ja-kasittelyhygienia/uudelleen-kuumentaminen/"
+        ],
+        "inputSha256": "c4edb623fd0e8a0f827445572919bfa90aa179ba8f0f15b5a84b7e8f8d9bc71a",
+        "sourceBindingSha256": {
+          "comp:30": "098824f9f23225c5f282181f6a20a0bb6cbd14f4e63de76596349821a434c953",
+          "comp:30346": "0665f119e7e05521ccb81f12812df7fda1404bbbe2167a64699677f3956e8feb",
+          "comp:30792": "32267b0625fba35be52297b6bcf7949358b80b1e827a03f57c3e2e27b0020311",
+          "comp:335": "d6429a866b17bc6e54960318dcce29c1f27988d18aa765c2afbee1f3825c5035",
+          "comp:541": "de8683e57e05578da02b7bb3e8583366ed4816136ae69fe3f81301de7b72198e",
+          "comp:619": "f0c68d8725a2e75599c60f366ee6853da8d39472fea86e8f1d70bdebdccdba0d",
+          "comp:684": "eab04badb12ad26128ba6b7498673dc73308c5f190cf5581817b95626cc1bbf4",
+          "comp:F003190": "36e932b9af7d13a8c04dd7b237eed327bf46f83db6a5296ac0e7df3f76ee8949",
+          "comp:F003192": "2109c13ba48d8cc32dbb032e53e2f8458ca197beb2c7ff18658f6e07f11c45ef",
+          "comp:F003327": "1689ffae7fc4d22ae0658a8401ccd291861f7afd64331dacb58780b288e13aee",
+          "comp:F004205": "50bd2c55080561c25611816cd7cedd4df2592f13dbabb26c839c8ea6fb7aa65d",
+          "comp:F005700": "d3ff957a10e21c1d7f1e07efb8868573b84d1bcef9e770773990f637c727a31b",
+          "comp:F007661": "d3228db369a2e5ccdeee0a508bc6023adaaa8cfc15e12e559e3037368d02185a",
+          "comp:F009335": "08f63a44c7d4a15143f31a9961747e13a342a18a829856787f1685a77a2fdef2",
+          "comp:physical": "b0cea78a3f0e053223f415e0ad2f66c1be2e7ec07dc024f191eb581d82747e1f",
+          "prepared:biryani-whole52": "47094d4559c2be7d57b51f1829aa62f3015547e01c39983ef33c11339d5fc1dc"
+        }
+      },
+      "independentDecimal": {
+        "minExact": "30.604210",
+        "maxExact": "44.936840",
+        "pointRounded": null,
+        "omittedChoPerServing": "0",
+        "traceCodedChoPerServing": "0",
+        "scientificSourceQualificationProvenByArithmetic": false
+      }
+    },
+    {
+      "recipeId": "intialainen-mannasuurimoupma",
+      "originalRequestSet15": true,
+      "alternativeNotExtraCoverage": false,
+      "sourceContext": "prepared",
+      "sourceCommit": "96a25d8c9db6fb0a505a70a37a5b357b6a83593a",
+      "sourceCasePath": "docs/nutrition/gk80-operation149/prepared-route-cases.json",
+      "sourceCaseUrl": "https://github.com/ozirix-dev/Reseptit/blob/96a25d8c9db6fb0a505a70a37a5b357b6a83593a/docs/nutrition/gk80-operation149/prepared-route-cases.json",
+      "inputSha256": "e8d9bad7423c5dc339439e239db95f4229bf3a4c1bab2c1ea7872715ad2d9892",
+      "sourceRecordSha256": {
+        "composition:112": "5c0516d45e7a584d48f4747168880588c2f4970939730e06d7493dcec3c62ca4",
+        "composition:30": "098824f9f23225c5f282181f6a20a0bb6cbd14f4e63de76596349821a434c953",
+        "composition:300": "0bfd87453935f06194148a1f26a8fe25e708c3dad261101cf77b80c83cc139c3",
+        "composition:922": "76f117602bb8953868d3ece9cacc4df3b01db020c7a1fd9e20b0f0f65208b852",
+        "composition:F006538": "ed67a4a9d86e236d7ef9a7c99ffd43904fafd9026543361b837f1637fb140dc9",
+        "composition:IFCT-G010": "9013ca9a31c1a17558e77f372ab10c582d59cd9a206425a0a187d691773cd755",
+        "prepared:upma-whole71": "796dda0b60eb552acfacfbd9613bd70e104656ae59508049b35b64f9120d9ad2"
+      },
+      "sealedProposal": {
+        "recipeId": "intialainen-mannasuurimoupma",
+        "level": "B",
+        "applicationMode": "PREPARED_UNITS",
+        "servings": 2,
+        "paths": {
+          "fi": "reseptit/aamupalat/intialainen-mannasuurimoupma.md"
+        },
+        "recipeSha256": {
+          "fi": "edc2d2353036c6e400361951048a4be69d4943d9ad78a40058de0458015fd562"
+        },
+        "candidateIngredients": [
+          {
+            "name": "mannasuurimo",
+            "grams": 100,
+            "compositionId": "112",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Explicit weighed edible recipe input; no source-verified volume conversion claimed."
+          },
+          {
+            "name": "kypsä valutettu vihreä herne",
+            "grams": 150,
+            "compositionId": "F006538",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Explicit weighed edible recipe input; no source-verified volume conversion claimed."
+          },
+          {
+            "name": "porkkana",
+            "grams": 80,
+            "compositionId": "300",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Explicit weighed edible recipe input; no source-verified volume conversion claimed."
+          },
+          {
+            "name": "tuore currylehti",
+            "grams": 5,
+            "compositionId": "IFCT-G010",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Explicit weighed edible recipe input; no source-verified volume conversion claimed."
+          },
+          {
+            "name": "vesi",
+            "grams": 300,
+            "compositionId": "922",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Explicit weighed edible recipe input; no source-verified volume conversion claimed."
+          },
+          {
+            "name": "suola",
+            "grams": 0,
+            "compositionId": "30",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Explicit weighed edible recipe input; no source-verified volume conversion claimed."
+          }
+        ],
+        "preparationDecision": "Use100g semolina,150g cooked drained peas,80g weighed carrot,5g fresh curry leaves and300g water. Keep the original oil-free vegetable version. No unlisted coconut chutney/yogurt included. Reference71 is the whole cooked semolina-upma food,not a GI for raw semolina. Source premix contains oil/dal/chilli,whereas target contains more peas/carrot and no oil. Grain and boiling form match;composition differences and GI analogy error are substantial and unquantified.",
+        "preparedNodes": [
+          {
+            "id": "whole-upma",
+            "ingredientIndexes": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "sourceId": "upma-whole71",
+            "foodClass": "COOKED_SEMOLINA_UPMA",
+            "unitScope": "PREPARED_RECIPE",
+            "matchingRationale": "Source explicitly identifies semolina and boiled water preparation;target is the same prepared food family with documented matrix differences.",
+            "documentedDifferences": [
+              "Oil/dal/chilli premix vs oil-free pea/carrot/curry-leaf version.",
+              "Source75.2g premix/235g water are a reference preparation,not target serving or yield."
+            ]
+          }
+        ],
+        "requiredDecisions": [
+          "GK_ONLY_CONTRACT",
+          "EXACT_NEW_VERSION_OWNER_APPROVAL",
+          "SOURCE_APPLICATION_REVIEW",
+          "WHOLE_PREPARED_FOOD_METHOD_APPROVAL",
+          "OIL_FREE_VEGETABLE_TO_PREMIX_COMPARISON",
+          "EXCLUDE_UNQUANTIFIED_CHUTNEY_OR_YOGURT"
+        ],
+        "macroAction": "PRESERVE_ALL_CURRENT_VALUES_AND_WITHHOLDINGS",
+        "approval": false,
+        "confidence": "LOW",
+        "inputSha256": "e8d9bad7423c5dc339439e239db95f4229bf3a4c1bab2c1ea7872715ad2d9892",
+        "sourceBindingSha256": {
+          "comp:112": "5c0516d45e7a584d48f4747168880588c2f4970939730e06d7493dcec3c62ca4",
+          "comp:30": "098824f9f23225c5f282181f6a20a0bb6cbd14f4e63de76596349821a434c953",
+          "comp:300": "0bfd87453935f06194148a1f26a8fe25e708c3dad261101cf77b80c83cc139c3",
+          "comp:922": "76f117602bb8953868d3ece9cacc4df3b01db020c7a1fd9e20b0f0f65208b852",
+          "comp:F006538": "ed67a4a9d86e236d7ef9a7c99ffd43904fafd9026543361b837f1637fb140dc9",
+          "comp:IFCT-G010": "9013ca9a31c1a17558e77f372ab10c582d59cd9a206425a0a187d691773cd755",
+          "prepared:upma-whole71": "796dda0b60eb552acfacfbd9613bd70e104656ae59508049b35b64f9120d9ad2"
+        }
+      },
+      "independentDecimal": {
+        "minExact": "27.630005",
+        "maxExact": "27.630005",
+        "pointRounded": "27.63",
+        "omittedChoPerServing": "0",
+        "traceCodedChoPerServing": "0",
+        "scientificSourceQualificationProvenByArithmetic": false
+      }
+    },
+    {
+      "recipeId": "malesialainen-roti-jala-currykanalla",
+      "originalRequestSet15": true,
+      "alternativeNotExtraCoverage": false,
+      "sourceContext": "prepared",
+      "sourceCommit": "96a25d8c9db6fb0a505a70a37a5b357b6a83593a",
+      "sourceCasePath": "docs/nutrition/gk80-operation149/prepared-route-cases.json",
+      "sourceCaseUrl": "https://github.com/ozirix-dev/Reseptit/blob/96a25d8c9db6fb0a505a70a37a5b357b6a83593a/docs/nutrition/gk80-operation149/prepared-route-cases.json",
+      "inputSha256": "c01b8c61fa679a79c9e5f05274ae44bef799a0ce35df66923e05b5fbad60376c",
+      "sourceRecordSha256": {
+        "composition:110": "c407b736e634551df120bb4c0a64388ccf13d22c57af736628f05826b00d2424",
+        "composition:29014": "f3ca788967ae6706c7e58903a2783c862d9cf872f1a23a4fa127d0061c4b98b9",
+        "composition:30": "098824f9f23225c5f282181f6a20a0bb6cbd14f4e63de76596349821a434c953",
+        "composition:30792": "32267b0625fba35be52297b6bcf7949358b80b1e827a03f57c3e2e27b0020311",
+        "composition:541": "de8683e57e05578da02b7bb3e8583366ed4816136ae69fe3f81301de7b72198e",
+        "composition:858": "eeae9769525aa7875dd32c2c9b4171987bd8cd8d4cd119881638cfa92c4333aa",
+        "composition:922": "76f117602bb8953868d3ece9cacc4df3b01db020c7a1fd9e20b0f0f65208b852",
+        "composition:F003337": "3fb58e5382b79639a73834e7a6f0ddef6fdd7301abd9d63a0b7e451ba5040e61",
+        "gi:low50": "d330df9f387a1b493b5acd8c0b2d2c1434fcb3faf16ef0046978a08e7454ef25",
+        "gi:plant50": "960c8f67f653255841bcdd313c92f2d6d6a999cc54e61e9b48a47f15db0797b4",
+        "prepared:roti-jala-component49": "d672360aa0e1c437232b13d9416a7e1dcf234691db775efb81405c481a9be766"
+      },
+      "sealedProposal": {
+        "recipeId": "malesialainen-roti-jala-currykanalla",
+        "level": "B",
+        "applicationMode": "PREPARED_UNITS",
+        "servings": 2,
+        "paths": {
+          "fi": "reseptit/aamupalat/malesialainen-roti-jala-currykanalla.md"
+        },
+        "recipeSha256": {
+          "fi": "47a941e68c3b47e9b62d534ce5f21dd04c76b7db37426df7fe659e580474d576"
+        },
+        "candidateIngredients": [
+          {
+            "name": "vehnäjauho",
+            "grams": 100,
+            "compositionId": "110",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Explicit weighed edible recipe input; no source-verified volume conversion claimed."
+          },
+          {
+            "name": "kuoreton kananmuna",
+            "grams": 110,
+            "compositionId": "858",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Explicit weighed edible recipe input; no source-verified volume conversion claimed."
+          },
+          {
+            "name": "kookosmaito taikinaan",
+            "grams": 100,
+            "compositionId": "29014",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Explicit weighed edible recipe input; no source-verified volume conversion claimed."
+          },
+          {
+            "name": "vesi taikinaan",
+            "grams": 100,
+            "compositionId": "922",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Explicit weighed edible recipe input; no source-verified volume conversion claimed."
+          },
+          {
+            "name": "paistoöljy",
+            "grams": 13.5,
+            "compositionId": "541",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Explicit weighed edible recipe input; no source-verified volume conversion claimed."
+          },
+          {
+            "name": "broilerin reisiliha",
+            "grams": 150,
+            "compositionId": "30792",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Explicit weighed edible recipe input; no source-verified volume conversion claimed."
+          },
+          {
+            "name": "kookosmaito curryyn",
+            "grams": 100,
+            "compositionId": "29014",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Explicit weighed edible recipe input; no source-verified volume conversion claimed."
+          },
+          {
+            "name": "curryjauhe",
+            "grams": 2,
+            "compositionId": "F003337",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Explicit weighed edible recipe input; no source-verified volume conversion claimed."
+          },
+          {
+            "name": "suola",
+            "grams": 0,
+            "compositionId": "30",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Explicit weighed edible recipe input; no source-verified volume conversion claimed."
+          }
+        ],
+        "preparationDecision": "Specify the existing curry-chicken serving:split the original200g coconut milk100g to batter and100g to chicken. Add2g weighed curry powder to the chicken and100g water to make a flowing lacy batter;other original flour/egg/chicken/oil amounts retained. Cook chicken through in coconut curry and serve with thin lacy pancakes. Only pancake component uses plain-lacy49. Side coconut uses plant50 and curry powder its existing lowCHO50. Do not use the study mixed meal81 or claim plateGI49. Source exact batter ratios unreported;T2 cohort and3h protocol are material limitations.",
+        "preparedNodes": [
+          {
+            "id": "lacy-pancake",
+            "ingredientIndexes": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "sourceId": "roti-jala-component49",
+            "foodClass": "PAN_COOKED_WHEAT_LACY_PANCAKE",
+            "unitScope": "PREPARED_COMPONENT",
+            "matchingRationale": "Named same thin wheat lacy pancake preparation;source and target are cooked batter,not dry wheat flour.",
+            "documentedDifferences": [
+              "Exact source batter/egg/coconut ratios unavailable."
+            ]
+          },
+          {
+            "id": "zero",
+            "ingredientIndexes": [
+              5,
+              8
+            ],
+            "sourceId": null,
+            "foodClass": "NATIVE_ZERO_CHO",
+            "unitScope": "INGREDIENT_REFERENCE",
+            "matchingRationale": "Native nominal0CHO.",
+            "documentedDifferences": []
+          },
+          {
+            "id": "side-coconut",
+            "ingredientIndexes": [
+              6
+            ],
+            "sourceId": "plant50",
+            "foodClass": "NAMED_INGREDIENT",
+            "unitScope": "INGREDIENT_REFERENCE",
+            "matchingRationale": "Approved-type B unsweetened coconut model coding,not measured coconut GI.",
+            "documentedDifferences": []
+          },
+          {
+            "id": "side-curry",
+            "ingredientIndexes": [
+              7
+            ],
+            "sourceId": "low50",
+            "foodClass": "NAMED_INGREDIENT",
+            "unitScope": "INGREDIENT_REFERENCE",
+            "matchingRationale": "Named native curry powder2.8g availableCHO/100g;existing published lowCHO coding.",
+            "documentedDifferences": []
+          }
+        ],
+        "requiredDecisions": [
+          "GK_ONLY_CONTRACT",
+          "EXACT_NEW_VERSION_OWNER_APPROVAL",
+          "SOURCE_APPLICATION_REVIEW",
+          "WHOLE_PREPARED_COMPONENT_METHOD_APPROVAL",
+          "CURRY_2G_AND_COCONUT_ALLOCATION_CONTENT_DECISION"
+        ],
+        "macroAction": "PRESERVE_ALL_CURRENT_VALUES_AND_WITHHOLDINGS",
+        "approval": false,
+        "confidence": "LOW",
+        "inputSha256": "c01b8c61fa679a79c9e5f05274ae44bef799a0ce35df66923e05b5fbad60376c",
+        "sourceBindingSha256": {
+          "comp:110": "c407b736e634551df120bb4c0a64388ccf13d22c57af736628f05826b00d2424",
+          "comp:29014": "f3ca788967ae6706c7e58903a2783c862d9cf872f1a23a4fa127d0061c4b98b9",
+          "comp:30": "098824f9f23225c5f282181f6a20a0bb6cbd14f4e63de76596349821a434c953",
+          "comp:30792": "32267b0625fba35be52297b6bcf7949358b80b1e827a03f57c3e2e27b0020311",
+          "comp:541": "de8683e57e05578da02b7bb3e8583366ed4816136ae69fe3f81301de7b72198e",
+          "comp:858": "eeae9769525aa7875dd32c2c9b4171987bd8cd8d4cd119881638cfa92c4333aa",
+          "comp:922": "76f117602bb8953868d3ece9cacc4df3b01db020c7a1fd9e20b0f0f65208b852",
+          "comp:F003337": "3fb58e5382b79639a73834e7a6f0ddef6fdd7301abd9d63a0b7e451ba5040e61",
+          "gi:low50": "d330df9f387a1b493b5acd8c0b2d2c1434fcb3faf16ef0046978a08e7454ef25",
+          "gi:plant50": "960c8f67f653255841bcdd313c92f2d6d6a999cc54e61e9b48a47f15db0797b4",
+          "prepared:roti-jala-component49": "d672360aa0e1c437232b13d9416a7e1dcf234691db775efb81405c481a9be766"
+        }
+      },
+      "independentDecimal": {
+        "minExact": "19.61531",
+        "maxExact": "19.61531",
+        "pointRounded": "19.62",
+        "omittedChoPerServing": "0",
+        "traceCodedChoPerServing": "0",
+        "scientificSourceQualificationProvenByArithmetic": false
+      }
+    },
+    {
+      "recipeId": "pizza-margherita",
+      "originalRequestSet15": true,
+      "alternativeNotExtraCoverage": false,
+      "sourceContext": "prepared",
+      "sourceCommit": "96a25d8c9db6fb0a505a70a37a5b357b6a83593a",
+      "sourceCasePath": "docs/nutrition/gk80-operation149/prepared-route-cases.json",
+      "sourceCaseUrl": "https://github.com/ozirix-dev/Reseptit/blob/96a25d8c9db6fb0a505a70a37a5b357b6a83593a/docs/nutrition/gk80-operation149/prepared-route-cases.json",
+      "inputSha256": "63ba95ac40191e5c9ac65ab63d04de1b72b79cef6fb48ac0722cd3353c5d7605",
+      "sourceRecordSha256": {
+        "composition:110": "c407b736e634551df120bb4c0a64388ccf13d22c57af736628f05826b00d2424",
+        "composition:11134": "a1fd1f9dec25b6ddc9a0aea69a40d1e7993507afca275f1bad8a4b530646a0e9",
+        "composition:29239": "046f9e8f9af262d11952177934685e7108fdfc52a2378a9a0c60541c45865bdb",
+        "composition:30": "098824f9f23225c5f282181f6a20a0bb6cbd14f4e63de76596349821a434c953",
+        "composition:398": "59c5f908a9f2ac8b0f2d05b24f9428a3f71850cfd61e4fbc59759819acda6f36",
+        "composition:541": "de8683e57e05578da02b7bb3e8583366ed4816136ae69fe3f81301de7b72198e",
+        "composition:922": "76f117602bb8953868d3ece9cacc4df3b01db020c7a1fd9e20b0f0f65208b852",
+        "composition:F009606": "45c7fda1228b0b4d33f230ed300859dc7c39f9f47eb7780879a5c28725284593",
+        "gi:veg40": "8ea3c4a791d07f3a7f1bb0115e8dc90e7b39db77944cd59be4a66ca95f5de9e2",
+        "prepared:pizza-base52": "27a175414e4fc9161d59664411796e8a0dbb61fd7fe16ad49281482549ec1f16"
+      },
+      "sealedProposal": {
+        "recipeId": "pizza-margherita",
+        "level": "B",
+        "applicationMode": "PREPARED_UNITS",
+        "servings": 2,
+        "paths": {
+          "fi": "reseptit/paaruoat/pizza-margherita.md",
+          "en": "kaannokset/en/paaruoat/pizza-margherita.md",
+          "sv": "kaannokset/sv/paaruoat/pizza-margherita.md",
+          "th": "kaannokset/th/paaruoat/pizza-margherita.md"
+        },
+        "recipeSha256": {
+          "fi": "f15a74532945386942f8c5b39f7ffacdbed4c0cfaea33c1ad141949f7d55b9d2",
+          "en": "db57c183eb329a1bbdd0ff75c81515ff73533b94b121f45045ae8dc65aa3cf7c",
+          "sv": "c632dda7abab56e5508bcb747f68a510430ef5833055ea5f3c32980fbce64be9",
+          "th": "2fcc427db6c1965eea6b69ba0e6e93ff5fa5afef0d03d640f0a4472eb7b98004"
+        },
+        "candidateIngredients": [
+          {
+            "name": "vehnäjauho",
+            "grams": 300,
+            "compositionId": "110",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Explicit weighed edible recipe input; no source-verified volume conversion claimed."
+          },
+          {
+            "name": "vesi",
+            "grams": 200,
+            "compositionId": "922",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Explicit weighed edible recipe input; no source-verified volume conversion claimed."
+          },
+          {
+            "name": "kuivahiiva",
+            "grams": 3,
+            "compositionId": "F009606",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Explicit weighed edible recipe input; no source-verified volume conversion claimed."
+          },
+          {
+            "name": "suola",
+            "grams": 6,
+            "compositionId": "30",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Explicit weighed edible recipe input; no source-verified volume conversion claimed."
+          },
+          {
+            "name": "tomaattimurska",
+            "grams": 200,
+            "compositionId": "398",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Explicit weighed edible recipe input; no source-verified volume conversion claimed."
+          },
+          {
+            "name": "mozzarella",
+            "grams": 200,
+            "compositionId": "29239",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Explicit weighed edible recipe input; no source-verified volume conversion claimed."
+          },
+          {
+            "name": "basilika",
+            "grams": 4,
+            "compositionId": "11134",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Explicit weighed edible recipe input; no source-verified volume conversion claimed."
+          },
+          {
+            "name": "oliiviöljy",
+            "grams": 13.5,
+            "compositionId": "541",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Explicit weighed edible recipe input; no source-verified volume conversion claimed."
+          }
+        ],
+        "preparationDecision": "Preserve300g flour/two pizzas,proof1h,250C or hotter7–10min;weigh basil4g and olive oil13.5g. The source52 belongs only to the prepared baked pizza base,not raw flour. Tomato topping uses existing vegetable40;mozzarella has native nominal0CHO. Commercial Boboli formulation and home dough/time/temperature differ materially;this is a named B component model,not measured Margherita GI.",
+        "preparedNodes": [
+          {
+            "id": "pizza-base",
+            "ingredientIndexes": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "sourceId": "pizza-base52",
+            "foodClass": "BAKED_WHEAT_PIZZA_BASE",
+            "unitScope": "PREPARED_COMPONENT",
+            "matchingRationale": "Both are baked wheat pizza bases;target component includes flour,yeast,water and salt,never raw flour alone.",
+            "documentedDifferences": [
+              "Source commercial base220C9min vs home fermentation/formulation250C7–10min."
+            ]
+          },
+          {
+            "id": "tomato",
+            "ingredientIndexes": [
+              4
+            ],
+            "sourceId": "veg40",
+            "foodClass": "NAMED_INGREDIENT",
+            "unitScope": "INGREDIENT_REFERENCE",
+            "matchingRationale": "Existing non-starchy tomato coding,not measured GI.",
+            "documentedDifferences": []
+          },
+          {
+            "id": "native-zero",
+            "ingredientIndexes": [
+              5,
+              7
+            ],
+            "sourceId": null,
+            "foodClass": "NATIVE_ZERO_CHO",
+            "unitScope": "INGREDIENT_REFERENCE",
+            "matchingRationale": "These independently verified native food fields report nominal0 availableCHO.",
+            "documentedDifferences": []
+          },
+          {
+            "id": "basil",
+            "ingredientIndexes": [
+              6
+            ],
+            "sourceId": "veg40",
+            "foodClass": "NAMED_INGREDIENT",
+            "unitScope": "INGREDIENT_REFERENCE",
+            "matchingRationale": "Existing herb vegetable40 coding.",
+            "documentedDifferences": []
+          }
+        ],
+        "requiredDecisions": [
+          "GK_ONLY_CONTRACT",
+          "EXACT_NEW_VERSION_OWNER_APPROVAL",
+          "SOURCE_APPLICATION_REVIEW",
+          "WHOLE_PREPARED_COMPONENT_METHOD_APPROVAL",
+          "COMMERCIAL_TO_HOME_PIZZA_BASE_ANALOGUE"
+        ],
+        "macroAction": "PRESERVE_ALL_CURRENT_VALUES_AND_WITHHOLDINGS",
+        "approval": false,
+        "confidence": "LOW",
+        "inputSha256": "63ba95ac40191e5c9ac65ab63d04de1b72b79cef6fb48ac0722cd3353c5d7605",
+        "sourceBindingSha256": {
+          "comp:110": "c407b736e634551df120bb4c0a64388ccf13d22c57af736628f05826b00d2424",
+          "comp:11134": "a1fd1f9dec25b6ddc9a0aea69a40d1e7993507afca275f1bad8a4b530646a0e9",
+          "comp:29239": "046f9e8f9af262d11952177934685e7108fdfc52a2378a9a0c60541c45865bdb",
+          "comp:30": "098824f9f23225c5f282181f6a20a0bb6cbd14f4e63de76596349821a434c953",
+          "comp:398": "59c5f908a9f2ac8b0f2d05b24f9428a3f71850cfd61e4fbc59759819acda6f36",
+          "comp:541": "de8683e57e05578da02b7bb3e8583366ed4816136ae69fe3f81301de7b72198e",
+          "comp:922": "76f117602bb8953868d3ece9cacc4df3b01db020c7a1fd9e20b0f0f65208b852",
+          "comp:F009606": "45c7fda1228b0b4d33f230ed300859dc7c39f9f47eb7780879a5c28725284593",
+          "gi:veg40": "8ea3c4a791d07f3a7f1bb0115e8dc90e7b39db77944cd59be4a66ca95f5de9e2",
+          "prepared:pizza-base52": "27a175414e4fc9161d59664411796e8a0dbb61fd7fe16ad49281482549ec1f16"
+        }
+      },
+      "independentDecimal": {
+        "minExact": "59.15606",
+        "maxExact": "59.15606",
+        "pointRounded": "59.16",
+        "omittedChoPerServing": "0",
+        "traceCodedChoPerServing": "0",
+        "scientificSourceQualificationProvenByArithmetic": false
+      }
+    },
+    {
+      "recipeId": "pohjoisafrikkalainen-taatelipuuro-appelsiinilla",
+      "originalRequestSet15": true,
+      "alternativeNotExtraCoverage": false,
+      "sourceContext": "prepared",
+      "sourceCommit": "96a25d8c9db6fb0a505a70a37a5b357b6a83593a",
+      "sourceCasePath": "docs/nutrition/gk80-operation149/prepared-route-cases.json",
+      "sourceCaseUrl": "https://github.com/ozirix-dev/Reseptit/blob/96a25d8c9db6fb0a505a70a37a5b357b6a83593a/docs/nutrition/gk80-operation149/prepared-route-cases.json",
+      "inputSha256": "68b056b6e386b45124ed30cc23f2f5ef091541926dce4dd7d805e8ae46924a53",
+      "sourceRecordSha256": {
+        "composition:11045": "f757521dede83ae16839b44fcd422b0892edd42c5d328cc6a3e0fe5fdd35a08b",
+        "composition:112": "5c0516d45e7a584d48f4747168880588c2f4970939730e06d7493dcec3c62ca4",
+        "composition:30": "098824f9f23225c5f282181f6a20a0bb6cbd14f4e63de76596349821a434c953",
+        "composition:541": "de8683e57e05578da02b7bb3e8583366ed4816136ae69fe3f81301de7b72198e",
+        "composition:922": "76f117602bb8953868d3ece9cacc4df3b01db020c7a1fd9e20b0f0f65208b852",
+        "composition:F002963": "8bc02655c14a46cc895bcb338cae7e094977043dcfb04c6935bcbf2db5bdee84",
+        "composition:F003496": "d428f5818d5dd24b5ffd75dd81873a73696d43a38f79a38a6f3dd5a5acddb764",
+        "gi:date-deglet42": "4a9d3d8d57a788714dec68b733e09f5058a03388a6f7e46ffece15fe368500e2",
+        "gi:orange-navel45": "5c0fd4f5f66c5adba796ddd1595479123abf5b6f12b783af6d620b32ee543f3a",
+        "gi:trace50": "3406a279648b3ddd556c4572ad7ccdf8c800e331c3c1857293f2b9d2339d880b",
+        "prepared:semolina-steamed55": "8d0c28b1866f774d1c8da31c73783bcf744ba9f0f249b380457dd0c5c8881a72"
+      },
+      "sealedProposal": {
+        "recipeId": "pohjoisafrikkalainen-taatelipuuro-appelsiinilla",
+        "level": "B",
+        "applicationMode": "PREPARED_UNITS",
+        "servings": 2,
+        "paths": {
+          "fi": "reseptit/aamupalat/pohjoisafrikkalainen-taatelipuuro-appelsiinilla.md"
+        },
+        "recipeSha256": {
+          "fi": "bc0b56fcd0d24b4a227a0ff9343d86a8c4105760c6faf1735a0f8d044a68cfaf"
+        },
+        "candidateIngredients": [
+          {
+            "name": "mannasuurimo",
+            "grams": 100,
+            "compositionId": "112",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Explicit weighed edible recipe input; no source-verified volume conversion claimed."
+          },
+          {
+            "name": "vesi",
+            "grams": 300,
+            "compositionId": "922",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Explicit weighed edible recipe input; no source-verified volume conversion claimed."
+          },
+          {
+            "name": "rypsiöljy",
+            "grams": 6.4,
+            "compositionId": "541",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Explicit weighed edible recipe input; no source-verified volume conversion claimed."
+          },
+          {
+            "name": "kuivattu DegletNoor-taateli",
+            "grams": 10,
+            "compositionId": "F003496",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Explicit weighed edible recipe input; no source-verified volume conversion claimed."
+          },
+          {
+            "name": "kuorittu raaka navel-appelsiini",
+            "grams": 130,
+            "compositionId": "11045",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Explicit weighed edible recipe input; no source-verified volume conversion claimed."
+          },
+          {
+            "name": "kaneli",
+            "grams": 2,
+            "compositionId": "F002963",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Explicit weighed edible recipe input; no source-verified volume conversion claimed."
+          },
+          {
+            "name": "suola",
+            "grams": 0,
+            "compositionId": "30",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Explicit weighed edible recipe input; no source-verified volume conversion claimed."
+          }
+        ],
+        "preparationDecision": "New explicitly oil-containing version:add6.4g rapeseed oil to100g semolina/300g water,gelatinize as porridge. Oil dose is chosen near the source5g oil/50g testCHO ratio using target63.6g native componentCHO;it is NOT scaled from the source67g test-food mass as if that were dry flour. Source groundnut oil differs from proposed rapeseed oil. Add10g chopped dried DegletNoor and130g raw orange as unheated garnish;weigh cinnamon2g. All fruit remains. Oil addition and serving details need owner content approval;original oil-free recipe unchanged.",
+        "preparedNodes": [
+          {
+            "id": "gelatinized-porridge",
+            "ingredientIndexes": [
+              0,
+              1,
+              2
+            ],
+            "sourceId": "semolina-steamed55",
+            "foodClass": "GELATINISED_WHEAT_SEMOLINA_WITH_OIL",
+            "unitScope": "PREPARED_COMPONENT",
+            "matchingRationale": "Cooked gelatinized wheat-semolina/oil component comparison;source steaming versus target water-boiled porridge is an unquantified difference. Known fat/testCHO ratio used,not source food mass yield.",
+            "documentedDifferences": [
+              "Source steamed vs target water-boiled porridge;rapeseed vs groundnut oil;olderT2,n6,sparse samples,unquantified protocol differences."
+            ]
+          },
+          {
+            "id": "date",
+            "ingredientIndexes": [
+              3
+            ],
+            "sourceId": "date-deglet42",
+            "foodClass": "NAMED_INGREDIENT",
+            "unitScope": "INGREDIENT_REFERENCE",
+            "matchingRationale": "Named date-cultivar source;Australian dry-date composition proxy disclosed.",
+            "documentedDifferences": []
+          },
+          {
+            "id": "orange",
+            "ingredientIndexes": [
+              4
+            ],
+            "sourceId": "orange-navel45",
+            "foodClass": "NAMED_INGREDIENT",
+            "unitScope": "INGREDIENT_REFERENCE",
+            "matchingRationale": "Raw edible orange source;fruit served unheated.",
+            "documentedDifferences": []
+          },
+          {
+            "id": "cinnamon",
+            "ingredientIndexes": [
+              5
+            ],
+            "sourceId": "trace50",
+            "foodClass": "NAMED_INGREDIENT",
+            "unitScope": "INGREDIENT_REFERENCE",
+            "matchingRationale": "Small named culinary spice0.275gCHO/serving.",
+            "documentedDifferences": []
+          },
+          {
+            "id": "zero",
+            "ingredientIndexes": [
+              6
+            ],
+            "sourceId": null,
+            "foodClass": "NATIVE_ZERO_CHO",
+            "unitScope": "INGREDIENT_REFERENCE",
+            "matchingRationale": "Native salt0CHO.",
+            "documentedDifferences": []
+          }
+        ],
+        "requiredDecisions": [
+          "GK_ONLY_CONTRACT",
+          "EXACT_NEW_VERSION_OWNER_APPROVAL",
+          "SOURCE_APPLICATION_REVIEW",
+          "WHOLE_PREPARED_COMPONENT_METHOD_APPROVAL",
+          "ADD_6_4G_OIL_CONTENT_DECISION"
+        ],
+        "macroAction": "PRESERVE_ALL_CURRENT_VALUES_AND_WITHHOLDINGS",
+        "approval": false,
+        "confidence": "LOW",
+        "inputSha256": "68b056b6e386b45124ed30cc23f2f5ef091541926dce4dd7d805e8ae46924a53",
+        "sourceBindingSha256": {
+          "comp:11045": "f757521dede83ae16839b44fcd422b0892edd42c5d328cc6a3e0fe5fdd35a08b",
+          "comp:112": "5c0516d45e7a584d48f4747168880588c2f4970939730e06d7493dcec3c62ca4",
+          "comp:30": "098824f9f23225c5f282181f6a20a0bb6cbd14f4e63de76596349821a434c953",
+          "comp:541": "de8683e57e05578da02b7bb3e8583366ed4816136ae69fe3f81301de7b72198e",
+          "comp:922": "76f117602bb8953868d3ece9cacc4df3b01db020c7a1fd9e20b0f0f65208b852",
+          "comp:F002963": "8bc02655c14a46cc895bcb338cae7e094977043dcfb04c6935bcbf2db5bdee84",
+          "comp:F003496": "d428f5818d5dd24b5ffd75dd81873a73696d43a38f79a38a6f3dd5a5acddb764",
+          "gi:date-deglet42": "4a9d3d8d57a788714dec68b733e09f5058a03388a6f7e46ffece15fe368500e2",
+          "gi:orange-navel45": "5c0fd4f5f66c5adba796ddd1595479123abf5b6f12b783af6d620b32ee543f3a",
+          "gi:trace50": "3406a279648b3ddd556c4572ad7ccdf8c800e331c3c1857293f2b9d2339d880b",
+          "prepared:semolina-steamed55": "8d0c28b1866f774d1c8da31c73783bcf744ba9f0f249b380457dd0c5c8881a72"
+        }
+      },
+      "independentDecimal": {
+        "minExact": "21.64195",
+        "maxExact": "21.64195",
+        "pointRounded": "21.64",
+        "omittedChoPerServing": "0",
+        "traceCodedChoPerServing": "0",
+        "scientificSourceQualificationProvenByArithmetic": false
+      }
+    },
+    {
+      "recipeId": "rahkapiirakka-vhh",
+      "originalRequestSet15": false,
+      "alternativeNotExtraCoverage": false,
+      "sourceContext": "native",
+      "sourceCommit": "429f397472d6970006fd3c6c906b9da533c38c46",
+      "sourceCasePath": "docs/research/afcd-polyol-03/native-point-followup/cases.json",
+      "sourceCaseUrl": "https://github.com/ozirix-dev/Reseptit/blob/429f397472d6970006fd3c6c906b9da533c38c46/docs/research/afcd-polyol-03/native-point-followup/cases.json",
+      "inputSha256": "4194712a2cecb7979c779f4479a1f0a92bf402e190c4ff66a2369667455acbd4",
+      "sourceRecordSha256": {
+        "composition:500": "c8867c2f62046586fb1d87a24ca1f3c7628e6be429bd4a04cdd484aba239e7d8",
+        "composition:622": "0ee47083812b704f4481647344d2ba5482f7aafc1985ca221c7204579957abfc",
+        "composition:631": "497536047c97c0711282edee4baf60bf92980ccbaf98477b248e0cda76974e91",
+        "composition:858": "d02a1d8b721b70bbc543c869651ceac5f04ef29cdaaa1bf5690de1ca048a6e7b",
+        "composition:MEXT05001": "dacac0effa40e38dc70303db55b8c5cd5881ed8f8d4d601f102196193dd07c52",
+        "composition:foodin-erythritol": "c3a85a1005cd28963291053bd2594007c2f4d4813b697ef5fc67fb4be8883ce2",
+        "composition:vanilla-physical-cap": "89691f5b790fe50ee21bf38026545428d3ba9092c749fcdaef321bf8c8293c04",
+        "gi:dairy30": "53d291653e9d13a074b13a60f868ec8f781b35dce83981ed2e72727e6f997190"
+      },
+      "sealedProposal": {
+        "recipeId": "rahkapiirakka-vhh",
+        "level": "A",
+        "arithmeticProfile": "EXISTING_A",
+        "servings": 8,
+        "paths": {
+          "fi": "reseptit/jalkiruoat/rahkapiirakka-vhh.md",
+          "en": "kaannokset/en/jalkiruoat/rahkapiirakka-vhh.md",
+          "sv": "kaannokset/sv/jalkiruoat/rahkapiirakka-vhh.md",
+          "th": "kaannokset/th/jalkiruoat/rahkapiirakka-vhh.md"
+        },
+        "recipeSha256Lf": {
+          "fi": "e902035d36263b4ad41d337d5fed8283d76e8fffcbfc87c28d53076c075dfdab",
+          "en": "0d59fbd2686f79313ee9bc6a24f05462697624d6ad140f5aaa1e8771ddca2da5",
+          "sv": "40c0ef53558fc13087049e20f7edab483dcd4f4fcc2ff0bbf5296aead6a71d17",
+          "th": "edf8149c704e36acc46074d99cc0bb43195e8a28f5dbd1f327081d753ac46645"
+        },
+        "originalIngredients": [
+          {
+            "amount": 150,
+            "unit": "g",
+            "item": "mantelijauhoa"
+          },
+          {
+            "amount": 75,
+            "unit": "g",
+            "item": "voita"
+          },
+          {
+            "amount": 1,
+            "unit": "kpl",
+            "item": "kananmuna"
+          },
+          {
+            "amount": 300,
+            "unit": "g",
+            "item": "maitorahkaa"
+          },
+          {
+            "amount": 2,
+            "unit": "kpl",
+            "item": "kananmunaa"
+          },
+          {
+            "amount": 1,
+            "unit": "dl",
+            "item": "kuohukermaa"
+          },
+          {
+            "amount": 2,
+            "unit": "rkl",
+            "item": "erytritolia"
+          },
+          {
+            "amount": 1,
+            "unit": "tl",
+            "item": "vaniljauutetta"
+          }
+        ],
+        "candidateIngredients": [
+          {
+            "name": "kuivat paahtamattomat mantelit; koko150g jauhetaan ja käytetään",
+            "grams": 150,
+            "compositionId": "MEXT05001",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "originalIndices": [
+              0
+            ],
+            "note": "Exact new preparation identity for original150g full-fat almond flour.150g edible dried almonds05001 weighed before grinding; all meal retained. Not a native branded-flour value."
+          },
+          {
+            "name": "voi",
+            "grams": 75,
+            "compositionId": "500",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "originalIndices": [
+              1
+            ],
+            "note": "Original75g retained."
+          },
+          {
+            "name": "kananmunat yhteensä1+2kpl",
+            "grams": 165,
+            "compositionId": "858",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "originalIndices": [
+              2,
+              4
+            ],
+            "note": "Three medium eggs by native Fineli858 KPL_M55g; no universal piece conversion. Combined for omission accounting."
+          },
+          {
+            "name": "maitorahka maustamaton alle0.5% rasvaa",
+            "grams": 300,
+            "compositionId": "622",
+            "giId": "dairy30",
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "originalIndices": [
+              3
+            ],
+            "note": "Original300g retained; existing exact native dairy binding."
+          },
+          {
+            "name": "kuohukerma38%",
+            "grams": 100,
+            "compositionId": "631",
+            "giId": "dairy30",
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "originalIndices": [
+              5
+            ],
+            "note": "Original1dl, native Fineli631 DL100g. Specific source portion measure, not universal liquid density."
+          },
+          {
+            "name": "Foodin100%erytritoli, alkuperäinen2rkl säilyy",
+            "grams": 0,
+            "compositionId": "foodin-erythritol",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "originalIndices": [
+              6
+            ],
+            "note": "ZERO_CHO_SENTINEL_RETAIN_ORIGINAL_2_TBSP. Mass0 in this GK calculation does not remove sweetener or assert tablespoons mass."
+          },
+          {
+            "name": "vaniljauute, erillisen version punnittu5g",
+            "grams": 5,
+            "compositionId": "vanilla-physical-cap",
+            "giId": null,
+            "carbohydrateUse": "UPPER_BOUND",
+            "originalIndices": [
+              7
+            ],
+            "note": "New weighed content decision5g replaces unspecified-mass1tsp. No claim of density/equivalence. Full5g mass cap is conservative and does not reduce the old2g unverified estimate."
+          }
+        ],
+        "preparationDecision": "Preserve eight portions, every originally specified gram amount and175C35min baking. Original teaspoon of vanilla is made a separate explicit weighed-content decision, not claimed equivalent. Specify150g dried unroasted whole edible almonds05001, finely grind without ingredient removal, keep every part in dough. This is a new physically specified full-fat ingredient version, not proof that original arbitrary almond flour had5.2gCHO. Specify5g weighed vanilla extract as a content decision; do not infer tsp density. Original2tbsp erythritol retained. Do not use almond GI50 or whole-nut GI proxy for baked flour.",
+        "requiredDecisions": [
+          "EXACT_SOURCE_AND_CONTENT_OWNER_REVIEW",
+          "MEXT05001_NEW_ROW_AND_WHOLE_INPUT_GRINDING_APPLICATION",
+          "NATIVE_POINT_NOT_LOT_UPPER_AND_0.025G_THRESHOLD_MARGIN",
+          "WEIGHED_VANILLA5G_NEW_VERSION",
+          "GK_ONLY_CONTRACT_AND_MACRO_VERSION_COMPATIBILITY"
+        ],
+        "approval": false,
+        "publicationAuthorized": false,
+        "macroAction": "PRESERVE_ALL_CURRENT_VALUES_AND_WITHHOLDINGS",
+        "confidence": "LOW",
+        "inputSha256": "4194712a2cecb7979c779f4479a1f0a92bf402e190c4ff66a2369667455acbd4"
+      },
+      "independentDecimal": {
+        "minExact": "0.44625",
+        "maxExact": "0.44625",
+        "pointRounded": "0.45",
+        "omittedChoPerServing": "1.736875",
+        "traceCodedChoPerServing": "0",
+        "scientificSourceQualificationProvenByArithmetic": false
+      }
+    },
+    {
+      "recipeId": "rahka-marjakerroskulho",
+      "originalRequestSet15": true,
+      "alternativeNotExtraCoverage": true,
+      "sourceContext": "extension",
+      "sourceCommit": "429f397472d6970006fd3c6c906b9da533c38c46",
+      "sourceCasePath": "docs/research/afcd-polyol-03/source-extensions/cases.jsonl",
+      "sourceCaseUrl": "https://github.com/ozirix-dev/Reseptit/blob/429f397472d6970006fd3c6c906b9da533c38c46/docs/research/afcd-polyol-03/source-extensions/cases.jsonl",
+      "inputSha256": "309fdb4e31b5c59ed01f25d96f8d1aa865ef154a12d7391cc5e9fe0e89c8ab18",
+      "sourceRecordSha256": {
+        "composition:32201": "b3d8d462364ecc2f78aa92a1824fc478363c9ade177542c684464302c4cc6d99",
+        "composition:375": "6d47a6343bec8414f9c6844a54b4c7c29f427f9ad464ebf75b58c46872ce1499",
+        "composition:442": "4b9bc1b2e220e78a706464f5b242cbcf3a9f4d50d2abb3ec0a02273d2697794e",
+        "composition:447": "4ed59a715eef6ff5085e2efa76bc6284e2144df4146a4d99c984fce67ce9d929",
+        "composition:622": "3b2cd9acac1beb868e9b9804bfd251c7de998c74cbe23f4b6d0482eb135775ab",
+        "composition:F005172": "4e0f62b8c935477e24f175dd086be3b96739d35d5667aa06082bfd1231a56063",
+        "composition:pure-erythritol": "da270e61446dcecb03de30e10a062761cb2109eb21c7307e1ecb0eb7d789b8c7",
+        "gi:dairy30": "a13f7e9cb68bf8bc1d441fd606cc8d7fd866db68d0bd9b16c4f7bb3e54620131",
+        "gi:low50": "89596013542fbfd83467a18a4f20ce9fcbe89c4e7b8fc7334451a446634e7016",
+        "gi:strawberry40": "d13891a1470105771c516e368d417bbfc977f6922e5a6194af3a7939502d4428",
+        "gi:wild-blueberry53": "f888e5ba46b02cfda385c81452a9aacebebf649d70a18021ce003593a6fa40bc"
+      },
+      "sealedProposal": {
+        "recipeId": "rahka-marjakerroskulho",
+        "level": "B",
+        "servings": 4,
+        "candidateIngredients": [
+          {
+            "name": "plain skimmed quark",
+            "grams": 250,
+            "compositionId": "622",
+            "giId": "dairy30",
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Original250g plain quark retained, Fineli622."
+          },
+          {
+            "name": "plain unsweetened Turkish/Greek-style yogurt10%",
+            "grams": 100,
+            "compositionId": "32201",
+            "giId": "dairy30",
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Original100g Turkish yogurt retained as named unsweetened Fineli32201 version; new explicit current-dairy30 binding."
+          },
+          {
+            "name": "raw strawberries",
+            "grams": 100,
+            "compositionId": "447",
+            "giId": "strawberry40",
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Original100g raw berries retained, existing named raw-strawberry40."
+          },
+          {
+            "name": "raw European bilberries, Vaccinium myrtillus",
+            "grams": 50,
+            "compositionId": "442",
+            "giId": "wild-blueberry53",
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Original50g Finnish forest bilberries retained; do not substitute Canadian blueberries silently. Native Fineli442 composition, Canadian wild-blueberry53 is a new explicit interspecies B analogy, not measured Finnish bilberry GI. Its uncertainty is not quantified by SEM7."
+          },
+          {
+            "name": "raw whole hazelnuts",
+            "grams": 20,
+            "compositionId": "375",
+            "giId": "low50",
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Original20g retained; Fineli375 available3.4g/100g fits unchanged low-food project cutoff<=5, but named hazelnut50 binding needs explicit review and is not measured GI. No flour or almond scope."
+          },
+          {
+            "name": "raw lemon zest",
+            "grams": 2,
+            "compositionId": "F005172",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Original1tsp requires separately approved weighed2g version; not asserted density. Native AFCD raw lemon-peel availableCHO0, polyols remain unknown."
+          },
+          {
+            "name": "optional Foodin100% erythritol to taste",
+            "grams": 0,
+            "compositionId": "pure-erythritol",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Original optional sweetener is explicitly specified as independently verified pure erythritol with availableCHO0; marker mass0 is computational only, original to-taste amount is retained and not claimed0g."
+          }
+        ],
+        "preparationDecision": "Keep original250g quark,100g Turkish plain yogurt,100g strawberries,50g European forest bilberries and20g raw hazelnuts. Exact2g weighed lemon-zest and optional pure Foodin erythritol product versions require review; no berry quantity reduced. Every positive carbohydrate is included in B. Canadian wild-blueberry GI53 is a new LOW interspecies analogy for European bilberry, never an exact match or a source-bounded interval. Raw-hazelnut50 is an explicit application of existing <=5gCHO/100g project coding, not measurement. Original16 approval does not authorize either new named binding.",
+        "requiredDecisions": [
+          "GK_ONLY_CONTRACT",
+          "B_INTERSPECIES_CANADIAN_WILD_BLUEBERRY53_TO_EUROPEAN_BILBERRY",
+          "EXPLICIT_EXISTING_LOW50_NAMED_RAW_HAZELNUT375_BINDING",
+          "EXACT_DAIRY32201_LEMON_ZEST2G_AND_OPTIONAL_PURE_ERYTHRITOL_VERSION",
+          "MACRO_VERSION_COMPATIBILITY"
+        ],
+        "paths": {
+          "fi": "reseptit/aamupalat/rahka-marjakerroskulho.md"
+        },
+        "recipeSha256": {
+          "fi": "c571f8f509bde4da9159bfdb4e1449f856030c9c92bf8a8ba1e2376d9c33c058"
+        },
+        "macroAction": "PRESERVE_ALL_CURRENT_VALUES_AND_WITHHOLDINGS",
+        "approval": false,
+        "confidence": "LOW",
+        "inputSha256": "309fdb4e31b5c59ed01f25d96f8d1aa865ef154a12d7391cc5e9fe0e89c8ab18"
+      },
+      "independentDecimal": {
+        "minExact": "2.4100075",
+        "maxExact": "2.4100075",
+        "pointRounded": "2.41",
+        "omittedChoPerServing": "0",
+        "traceCodedChoPerServing": "0",
+        "scientificSourceQualificationProvenByArithmetic": false
+      }
+    },
+    {
+      "recipeId": "kaakao-kookos-chia",
+      "originalRequestSet15": true,
+      "alternativeNotExtraCoverage": false,
+      "sourceContext": "coldDessert",
+      "sourceCommit": "2a626c560873c0d414508522e1a1173f244f9d1c",
+      "sourceCasePath": "docs/research/afcd-polyol-03/cold-dessert/cases.json",
+      "sourceCaseUrl": "https://github.com/ozirix-dev/Reseptit/blob/2a626c560873c0d414508522e1a1173f244f9d1c/docs/research/afcd-polyol-03/cold-dessert/cases.json",
+      "inputSha256": "dfcb1006838f327d6dc368dbdd647180f4be3305b82518e99f88b8d25f71f8b2",
+      "sourceRecordSha256": {
+        "composition:20": "967832f688ccbecb1bade905f996b8ae0022e4d9650acafe1963a91411b535cc",
+        "composition:34847": "e642a0641b915d9036c83af3c698a0bc2175ff0c050fab94cf58219da284d6b4",
+        "composition:631": "831314e58a6fb128a55da79d71872654cd74592a50d47079cfd19b1498337303",
+        "composition:F009350": "9821591628f052ceb2d34f746e689118d26fdb67024008f0034d093f2f8ea133",
+        "composition:koko-uk-unsweetened-cap": "808f9aa4c1be5ae509d5959f8e9e82329c1544bae4b5fcfdae7b657a1bda5742",
+        "composition:pure-erythritol": "c4a232c0ac0add72a0f8a7923ca5e59898629478270045f21ae63ebb396fa906",
+        "composition:urtekram-roasted-cap": "25deee35c195c62ad4f3b49dad9c85821009011d27b33ddb5df444e2c36878d5",
+        "gi:dairy30": "9332c119653a5ad1a4c29cdb1ae362ba056ab49d887061681498b25ada6dd91c"
+      },
+      "sealedProposal": {
+        "recipeId": "kaakao-kookos-chia",
+        "level": "A",
+        "servings": 4,
+        "paths": {
+          "fi": "reseptit/aamupalat/kaakao-kookos-chia.md"
+        },
+        "recipeSha256": {
+          "fi": "909dc73c356b1db0d393ddd5a22ebfafd76b557f5fa5068b60c624da4a72c700"
+        },
+        "candidateIngredients": [
+          {
+            "name": "chia-siemeniä",
+            "compositionId": "34847",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Original40g whole chia; native Fineli34847 available0.2. Not USDA total-minus-fibre or another chia product.",
+            "grams": 40
+          },
+          {
+            "name": "kookosjuomaa",
+            "compositionId": "koko-uk-unsweetened-cap",
+            "giId": null,
+            "carbohydrateUse": "UPPER_BOUND",
+            "note": "Original200ml retained as source-native ml. Koko0.4g labelCHO/100ml is only nominal upper; no density or GI.",
+            "millilitres": 200
+          },
+          {
+            "name": "kuohukermaa",
+            "compositionId": "631",
+            "giId": "dairy30",
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Original100ml cream by its own Fineli631 DL100g; native2.9CHO/100g, unsweetened38% cream.",
+            "grams": 100
+          },
+          {
+            "name": "makeuttamatonta kaakaojauhetta",
+            "compositionId": "20",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "Original1tbsp cocoa by its own Fineli20 RKL6g, native11CHO/100g.",
+            "grams": 6
+          },
+          {
+            "name": "vaniljauutetta",
+            "compositionId": "F009350",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "NEW WEIGHED CONTENT5g vanilla bean extract; not asserted originaltsp mass. Native12.6CHO/100g.",
+            "grams": 5
+          },
+          {
+            "name": "paahdettuja kookoshiutaleita",
+            "compositionId": "urtekram-roasted-cap",
+            "giId": null,
+            "carbohydrateUse": "UPPER_BOUND",
+            "note": "Original20g already-roasted topping retained as sold; exact Urtekram8.4g labelCHO/100g nominal upper; no unroasted-to-roasted conversion.",
+            "grams": 20
+          },
+          {
+            "name": "makeutusainetta maun mukaan",
+            "compositionId": "pure-erythritol",
+            "giId": null,
+            "carbohydrateUse": "AVAILABLE_POINT",
+            "note": "ZERO_CHO_SENTINEL_RETAIN_ORIGINAL_OPTIONAL_TO_TASTE; Foodin explicit100CHO minus100polyols; quantity not asserted0g.",
+            "grams": 0
+          }
+        ],
+        "preparationDecision": "Keep original40g whole chia seeds,200ml coconut drink,100ml unsweetened38% cream and20g AS-SOLD already-roasted coconut chips. Bind coconut drink to exact Koko UK chilled label and chips to exact Urtekram DK1003481; break chips smaller without discarding. Use Fineli631 ownDL100g for original cream100ml, Fineli20 ownRKL6g for original cocoa1tbsp, and separately weighed vanilla bean extract5g as NEW content decision, not originaltsp equivalence. Optional sweetener is specified Foodin100% erythritol to taste;0g is only zeroCHO computational sentinel, not removal or amount assertion. Refrigerate whole mixture at least4h; serve all four portions and full20g topping. No added sugar, no switch to full-fat coconut milk, no plantGI50 or traceGI50. All five positive unmatched ingredients separately count toward unchanged A omission thresholds.",
+        "requiredDecisions": [
+          "GK_ONLY_CONTRACT",
+          "EXACT_KOKO_UK_CHILLED_AND_URTEKRAM_DK_PRODUCT_VERSIONS",
+          "WEIGHED_VANILLA_EXTRACT5G_CONTENT_NOT_DENSITY",
+          "NAMED_FINELI_CHIA34847_AND_CREAM631_SOURCE_APPLICATION",
+          "GK_ONLY_MACRO_VERSION_AND_LANGUAGE_COMPATIBILITY"
+        ],
+        "macroAction": "PRESERVE_ALL_CURRENT_VALUES_AND_WITHHOLDINGS",
+        "approval": false,
+        "publicationAuthorized": false,
+        "confidence": "LOW",
+        "inputSha256": "dfcb1006838f327d6dc368dbdd647180f4be3305b82518e99f88b8d25f71f8b2"
+      },
+      "independentDecimal": {
+        "minExact": "0.2175",
+        "maxExact": "0.2175",
+        "pointRounded": "0.22",
+        "omittedChoPerServing": "0.9625",
+        "traceCodedChoPerServing": "0",
+        "scientificSourceQualificationProvenByArithmetic": false
+      }
+    }
+  ],
+  "startingResearch": "429f397472d6970006fd3c6c906b9da533c38c46",
+  "latestApprovalOverlayAppliedAtUtc": "2026-11-02T20:22:57.718686+00:00"
+}

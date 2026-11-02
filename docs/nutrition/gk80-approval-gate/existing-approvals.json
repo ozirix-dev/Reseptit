@@ -1,0 +1,247 @@
+{
+  "newApprovals": 0,
+  "receipts": [
+    {
+      "sourceCommit": "429f397472d6970006fd3c6c906b9da533c38c46",
+      "path": "docs/research/afcd-polyol-03/bulgogi-approval.json",
+      "receiptLfSha256": "8c240b1e89d15e1ef18a6035ef1a48bab1d9a46378e728eea7bb5cf991ebac71",
+      "originalReceipt": {
+        "schemaVersion": 1,
+        "id": "GK80_BULGOGI_RETAINED_MARINADE_A_APPROVAL_2026_11_02",
+        "repository": "ozirix-dev/Reseptit",
+        "recipeId": "bulgogi",
+        "approvedCaseInputSha256": "5ae159afc878044788f07f23db47c2932168760d4f8020e5ec3d9b553f7e83c1",
+        "reviewedContentCommit": "20e77b57346cf97a4f2aa510ecdbfb8ea5ffe1f3",
+        "reviewedCasePath": "docs/research/afcd-polyol-03/retained-sauce/cases.json",
+        "reviewedReportPath": "docs/research/afcd-polyol-03/retained-sauce-followup.md",
+        "reviewedReportLfSha256": "6d7f4a758348ed04a62db2b2cd20a70531c1e944be6b7ecbb4735138d2298a30",
+        "reviewedPacketFilesLfSha256": {
+          "audit-retained-sauce.py": "aa47578b3269f3efcf10e717cd66bed5bfa0ebfdb47deab960d9ff1d8b202b6d",
+          "cases.json": "758317c1a4446d48ad637cbd14c9c16649174e83452bce9e2898286041734c7a",
+          "decimal-results.json": "7381016699f91cc9a1ad0c67b5f88f8b4c3342a370a75fc39a04d19a8e62ee8b",
+          "dependency-map.csv": "a9f99b0b2412a3840aea2d18a916db0761635035435b21baacfde0f795a49fee",
+          "engine-results.json": "c90438172c543fcb832fd27285110f9eda7c9ee2b4bfbd56c9f27f86ee997191",
+          "evaluate-retained-sauce.mts": "53ff88c15166049d5b0bda6cdae122607b1bccd8ff97eec3c79f6ca733e48957",
+          "method-impact.csv": "a82fc012d4ed4ad8b620eaf134d8d076051214b90bbac45b4e361a47dfa1c136",
+          "sources.json": "5b67a28b536777a8707e30eec1dc368361acb75fa123536c77ea945c07c9c322",
+          "manifest.json": "d0147ef8338dba8681a64a103fbb6e7da64095cbfa435719dc2f9089eeedaeb4"
+        },
+        "recordedAtUtc": "2026-11-02T19:58:46.380522+00:00",
+        "decisionSource": "Explicit user answer in this chat to scoped async question call_24071c26ff1f4cc2974baeaa970d3d6a",
+        "userAnswer": "Kyllä, hyväksyn tarkan bulgogipaketin myöhempään integraatioon",
+        "sourceAndContentApproved": true,
+        "currentAArithmeticAccepted": true,
+        "acceptedSourceAndContentBindings": [
+          "Four original servings; all original gram amounts retained, including beef600g, dry jasmine rice300g and peeled ordinary pear100g",
+          "Separate weighed version: ordinary soy72g, brown sugar14g, edible spring onions40g; no claim of original ml/spoon/piece equivalence",
+          "Fineli household measures accompany their own native source foods only",
+          "Original sesame oil1tbsp retained; zeroCHO calculation sentinel does not remove ingredient",
+          "Quick batch-fried beef; all remaining marinade cooked thoroughly and briefly; all cooked marinade and pan juices served with beef/rice",
+          "Existing named rice68/sucrose60, pear38 briefly heated bulgogi analogy, named soy50 and vegetable40; no newGI constants",
+          "Current A positive omissions for sesame and black pepper; no B minor or expert-estimate profile"
+        ],
+        "acceptedLimitations": {
+          "confidence": "LOW",
+          "calculatedPartNotMeasuredWholeMealGk": true,
+          "pearCookingAnalogyNotHumanMeasuredMeal": true,
+          "sourceMeansNotSourceBoundedRecipeIntervals": true
+        },
+        "calculatedGkPart": 41.31,
+        "unroundedCalculatedGkPart": 41.30795,
+        "omittedChoPerServing": 0.0670125,
+        "requiresIntegrationChecks": [
+          "GK_ONLY_CONTRACT_AND_MACRO_VERSION_COMPATIBILITY",
+          "SOURCE_AND_RECIPE_HASHES_STILL_MATCH",
+          "LOCAL_PACKAGE_HAS_FI_ONLY: OWNER_CHECKS_REQUIRED_LOCALE_AND_PUBLIC_COPY",
+          "PLANNED_FUTURE_BATCH_THROUGH_PUBLICATION_OWNER"
+        ],
+        "integrationAuthorizedForOwnerInLaterBatch": true,
+        "integrationOwner": "Named Codex Julkaisu owner of a separately scoped future batch",
+        "codex2ReleaseBranchWriteAuthorized": false,
+        "integratedAnywhere": false,
+        "published": false,
+        "publicationAuthorized": false,
+        "readyAuthorized": false,
+        "mergeAuthorized": false,
+        "deployAuthorized": false,
+        "jerkMinorBModelApproved": false,
+        "sateExpertEstimateModelApproved": false,
+        "minorBOmissionProfileAuthorized": false,
+        "expertEstimateSourceTypeAuthorized": false,
+        "frozenResearchSnapshotPolicy": "Reviewed20e77b5 report and three-case packet retain pre-approval fields. This receipt approves only the exact bulgogi source/content case, not the two adjacent B research models or release activation."
+      },
+      "approvalCreatedByThisReview": false
+    },
+    {
+      "sourceCommit": "429f397472d6970006fd3c6c906b9da533c38c46",
+      "path": "docs/research/afcd-polyol-03/rahkapiirakka-approval.json",
+      "receiptLfSha256": "fe5d8aef5eff8314cc725059dbb59bcd9faf7adfe820ba1d392f14de3f881ef0",
+      "originalReceipt": {
+        "schemaVersion": 1,
+        "id": "GK80_RAHKAPIIRAKKA_NATIVE_POINT_A_APPROVAL_2026_11_02",
+        "repository": "ozirix-dev/Reseptit",
+        "recipeId": "rahkapiirakka-vhh",
+        "approvedCaseInputSha256": "4194712a2cecb7979c779f4479a1f0a92bf402e190c4ff66a2369667455acbd4",
+        "reviewedContentCommit": "991f94ea6ba5aeae2d07fc45fdc5a574de07acde",
+        "reviewedCasePath": "docs/research/afcd-polyol-03/native-point-followup/cases.json",
+        "reviewedReportPath": "docs/research/afcd-polyol-03/native-point-followup.md",
+        "reviewedReportLfSha256": "979166b3dbdb8155bbf8c02c8020a9a6bf9bbf918efc5bae00af0d031354f53f",
+        "reviewedPacketFilesLfSha256": {
+          "audit-native-points.py": "d15da8b031906c08bb5f8a42bda3fc0500754c9fd68113d2e248317fec46ad2e",
+          "cases.json": "c41da473aed69d6f90008948c9125f1a1b32876bb5dd112bbf5dcbd760fbab97",
+          "decimal-results.json": "af25d2568959b06297bc2308c8ba16832d7707fa9a8addf4813e0368281c883c",
+          "engine-results.json": "2cf626a65b1e8e674a21465692146f613cff0d908dae411b3ebff435db915f2f",
+          "evaluate-native-points.mts": "6c148d244bfbae8712d46a8561e0d76a40d47b537fd13bac1d2c5053939bbbc6",
+          "extract-native-records.py": "d0a75305597b30f192c053c0a3f34a6735c79ca2d010170dfc68d05568c1a285",
+          "family-gate-results.csv": "22c436951e2f659be517f3e8c015eb131e8414dd939c740c135b7cb4cf7a77fd",
+          "family-gates.json": "8e60563d0876ccc22f95ed0faae70f5bfc22dae7279c40f18c8f68a6d9f4b665",
+          "manifest.json": "9de4ce2256613f8887551286904f108b5334d83dda336579d4b3ead7f6009d85",
+          "mext-native-observations.json": "f81de11b4b260c8851beacdcf059d7fc180a4bf5fea428e2a63b250c69012f37",
+          "sources.json": "f0bc2290b3d77bba2904ffeda7d05542694a3d21829fb9c3dec0986765497a1f"
+        },
+        "recordedAtUtc": "2026-11-02T19:07:34.383801+00:00",
+        "decisionSource": "Explicit user answer in this chat to scoped async question call_e3384ed490f54e2b9d54addccb8f10a5",
+        "userAnswer": "Kyllä, hyväksyn tarkan paketin myöhempään integraatioon",
+        "sourceAndContentApproved": true,
+        "currentAArithmeticAccepted": true,
+        "acceptedSourceAndContentBindings": [
+          "MEXT05001 native CHOAVL mass5.2g/100g; dried unroasted edible whole almonds",
+          "150g weighed before grinding; all meal retained; no blanching, defatting or sieving/discard",
+          "Eight original servings and every originally specified gram amount retained",
+          "Vanilla extract explicitly weighed5g in new version; not claimed equivalent to original1tsp",
+          "Original2tbsp Foodin pure erythritol retained; calculation zero-mass sentinel does not remove ingredient"
+        ],
+        "acceptedLimitations": {
+          "nativePointNotLotCertifiedUpper": true,
+          "almondChoPerServing": 0.975,
+          "strictSingleIngredientLimit": 1,
+          "almondMarginToLimit": 0.025,
+          "notGeneralizedToArbitraryCommercialAlmondFlour": true,
+          "calculatedPartNotMeasuredWholeMealGk": true
+        },
+        "calculatedGkPart": 0.45,
+        "unroundedCalculatedGkPart": 0.44625,
+        "omittedChoPerServing": 1.736875,
+        "requiresIntegrationChecks": [
+          "GK_ONLY_CONTRACT_AND_MACRO_VERSION_COMPATIBILITY",
+          "SOURCE_AND_RECIPE_HASHES_STILL_MATCH",
+          "PLANNED_FUTURE_BATCH_THROUGH_CODEX_JULKAISU"
+        ],
+        "integrationAuthorizedForOwnerInLaterBatch": true,
+        "integrationOwner": "Codex1 / Codex Julkaisu",
+        "codex2ReleaseBranchWriteAuthorized": false,
+        "integratedAnywhere": false,
+        "published": false,
+        "readyAuthorized": false,
+        "mergeAuthorized": false,
+        "deployAuthorized": false,
+        "newAlmondGiAuthorized": false,
+        "minorBOmissionProfileAuthorized": false,
+        "frozenResearchSnapshotPolicy": "Reviewed991f94e packet and report retain their pre-approval fields and text. This separate receipt overlays the current scoped source/content approval; it grants no activation or publication."
+      },
+      "approvalCreatedByThisReview": false
+    },
+    {
+      "sourceCommit": "2a626c560873c0d414508522e1a1173f244f9d1c",
+      "path": "docs/research/afcd-polyol-03/cold-dessert-approval.json",
+      "receiptLfSha256": "cfc4d980fdb9d1b160fe71b73e9fe2dad2fc55a5d2eba14740af8490f44b09ad",
+      "originalReceipt": {
+        "schemaVersion": 1,
+        "id": "GK80_COLD_DESSERT_TWO_EXACT_A_VERSIONS_APPROVAL_2026_11_02",
+        "repository": "ozirix-dev/Reseptit",
+        "approvedInputs": {
+          "kaakao-kookos-chia": "dfcb1006838f327d6dc368dbdd647180f4be3305b82518e99f88b8d25f71f8b2",
+          "rahka-marjakerroskulho": "092719e24df715f0149468125c91e24c08a5dffb29ba2d2f712bb779bd4bdc86"
+        },
+        "reviewedContentCommit": "7272e71ecc33cae6d6183320e6b24331c6e0fdb4",
+        "reviewedCasePath": "docs/research/afcd-polyol-03/cold-dessert/cases.json",
+        "reviewedReportPath": "docs/research/afcd-polyol-03/cold-dessert-followup.md",
+        "reviewedReportLfSha256": "576f0aa6418aa45b12c209e1a1a37877eec565380d4e6eb47897b289e9543035",
+        "reviewedPacketFilesLfSha256": {
+          "audit-cold-desserts.py": "ffd557b193890080a06d9c8f8133344f8da3056ca5632f05e82a380bc3385a13",
+          "cases.json": "ed18a0c97deffadeaedfabf5e34dfffc658feb167f84391f93ab3632e6646070",
+          "decimal-results.json": "ffb213cff144192a9dfa28c5aa5175d7e5bfed286d7de41b60226e9c153a4772",
+          "dependency-map.csv": "1d36f4c76303f9d2ec8d7a4b26ccf85c4a03859f0309c36ae52c0b3516496c58",
+          "engine-results.json": "ff0185bfc037124341c23df78a271d714ddd33d9cd74fd75da397750b1fb8d6a",
+          "evaluate-cold-desserts.mts": "97d5262c8b40123553a41bd799bc63af9e8359fd53b3ead35a207975f916f41f",
+          "method-impact.csv": "a6dd4172173c0d61f7543b2265b9cef828ec9f75a52d4574810169d7266af008",
+          "sources.json": "90c88c9bef3129926b9788a071ae0153f4ff7f02279f5078f66a2b8a7a8f07cc",
+          "manifest.json": "a04a36d6a034feb40c17373c019868f3cacd19ab1624753adaa68b6f5f64460f"
+        },
+        "recordedAtUtc": "2026-11-02T20:17:22.338252+00:00",
+        "decisionSource": "Explicit user answer in this chat to scoped async question call_1a71acbf5bd74ff3b8351f23c773a462",
+        "userAnswer": "Kyllä, hyväksyn molemmat tarkat A-versiot myöhempään integraatioon",
+        "sourceAndContentApproved": true,
+        "currentAArithmeticAccepted": true,
+        "acceptedVersions": [
+          {
+            "recipeId": "kaakao-kookos-chia",
+            "inputSha256": "dfcb1006838f327d6dc368dbdd647180f4be3305b82518e99f88b8d25f71f8b2",
+            "servings": 4,
+            "calculatedGkPart": 0.22,
+            "unroundedCalculatedGkPart": 0.2175,
+            "omittedChoPerServing": 0.9625,
+            "nominalLabelUpperIncludedInOmissions": 0.62,
+            "coveredChoPerServing": 0.725,
+            "bindings": [
+              "Original40g whole chia, Fineli34847 nativeCHO0.2g/100g",
+              "Original200ml exact UK Koko Unsweetened No Sugar Milk CHILLED version, own manufacturer0.4gCHO/100ml nominal upper; no density transfer or plantGI50",
+              "Original100ml unsweetened38% cream by Fineli631 ownDL100g,2.9CHO/100g, existing animal-dairy30 coding",
+              "Original cocoa1tbsp by Fineli20 ownRKL6g and native11CHO/100g",
+              "New separately weighed5g vanilla bean extract, AFCD F009350 native12.6CHO/100g; not asserted teaspoon equivalence",
+              "Original20g AS-SOLD already-roasted Urtekram DK1003481 coconut chips,8.4CHO/100g nominal upper; break smaller without discarding, no raw-to-roasted transfer",
+              "Optional sweetener explicitly Foodin100% pure erythritol to taste; zeroCHO calculation sentinel does not remove ingredient or assert quantity0g"
+            ],
+            "limitations": [
+              "0.22 is only matched cream-row calculated part, not measured whole-dessert response",
+              "Positive omission amount0.9625g exceeds covered carbohydrate0.725g; unmatched response not demonstrated zero",
+              "Manufacturer values are nominal source-model upper bounds, not lot-certified analytical maxima; no fibre subtraction or inferred polyols0",
+              "Native chia point does not guarantee every batch; dairy30 is existing editorial coding, not measured creamGI",
+              "GI0–150 sensitivity is not a biological bound, source interval or public GK range"
+            ]
+          },
+          {
+            "recipeId": "rahka-marjakerroskulho",
+            "inputSha256": "092719e24df715f0149468125c91e24c08a5dffb29ba2d2f712bb779bd4bdc86",
+            "servings": 4,
+            "calculatedGkPart": 2.34,
+            "unroundedCalculatedGkPart": 2.33945,
+            "omittedChoPerServing": 0.67,
+            "bindings": [
+              "Original250g plain skimmed quark,100g unsweetened Turkish/Greek-style yogurt10%,100g raw fresh strawberries,50g raw fresh Canadian wild blueberries and20g raw hazelnuts",
+              "Separately weighed2g lemon zest and4g Foodin pure erythritol; no zest-to-juice substitution",
+              "Existing dairy30 for two named unsweetened animal dairy sources; prior raw strawberry40 and Canadian wild-blueberry53 observations",
+              "AFCD F001290 generic Australian raw blueberry10.4gCHO/100g is explicit LOW composition proxy for Canadian wild blueberry",
+              "Hazelnut native available0.17g/serving and whole-zest physical mass cap0.5g omitted by unchanged A rules; no new hazelnutGI50"
+            ],
+            "limitations": [
+              "Exact Canadian wild-blueberry content only; no approval transfer to European bilberry or the pending interspecies B version",
+              "Generic Australian composition is not Canadian product/lot measurement; confidenceLOW",
+              "Table53 already glucose100 despite bread reference; no second0.7 conversion, SEM is not recipe interval",
+              "Existing prior input092719e remains unchanged; finalization does not create a new arithmetic recipe ID"
+            ]
+          }
+        ],
+        "requiresIntegrationChecks": [
+          "GK_ONLY_CONTRACT_AND_MACRO_VERSION_COMPATIBILITY",
+          "SOURCE_AND_RECIPE_HASHES_STILL_MATCH",
+          "LOCAL_PACKAGE_HAS_FI_ONLY: OWNER_CHECKS_REQUIRED_LOCALES_AND_PUBLIC_COPY",
+          "PLANNED_FUTURE_BATCH_THROUGH_NAMED_PUBLICATION_OWNER"
+        ],
+        "integrationAuthorizedForOwnerInLaterBatch": true,
+        "integrationOwner": "Named Codex Julkaisu owner of a separately scoped future batch",
+        "codex2ReleaseBranchWriteAuthorized": false,
+        "integratedAnywhere": false,
+        "published": false,
+        "publicationAuthorized": false,
+        "readyAuthorized": false,
+        "mergeAuthorized": false,
+        "deployAuthorized": false,
+        "minorBOmissionProfileAuthorized": false,
+        "expertEstimateSourceTypeAuthorized": false,
+        "frozenResearchSnapshotPolicy": "Reviewed7272e71 report, manifest, source catalog and two-case inputs retain their pre-approval fields and original hashes. This separate receipt overlays only the exact two source/content approvals; no activation or publication."
+      },
+      "approvalCreatedByThisReview": false
+    }
+  ]
+}
