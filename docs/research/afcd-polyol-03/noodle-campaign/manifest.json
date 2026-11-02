@@ -36,5 +36,23 @@
   "sourceWorkbookCache": "D:/Temp/afcd-polyol-03/mext-source",
   "originalInventoryRawSha256": "7e6cdaf480a56150f6ca9ed6be2703d0277a0fd18c6b885d59400a0c68f03116",
   "reproduction": "Run evaluate-campaign.mts ROOT DATA_DIR EXTERNAL_OUT with installed tsx, then audit-campaign.py using same EXTERNAL_OUT. Optional inventory rebuild uses pinned baseline matrix at c850f47. Both refuse Git output directories. extract-noodles.py independently rereads hash-pinned original MEXT books with openpyxl.",
-  "finalHeadLocator": "The commit containing this manifest; exact final SHA supplied in handoff message, not a self-referential hash."
+  "finalHeadLocator": "The commit containing this manifest; exact final SHA supplied in handoff message, not a self-referential hash.",
+  "filesLfSha256": {
+    "audit-campaign.py": "3f9483aa2b5be70f10979d360bd65b36cfdeaed6b2fe743129171005328e871f",
+    "cases.json": "c3d3431ffb8a9eebd429214d63aad8121d0f74a32eb1cf75c050d2e44e8e2cc7",
+    "coconut-gates.json": "b5742087d83d40c4e4f760a814150663dbcd05d4d6d54e9e7875c2c6c4b3eb5f",
+    "decimal-results.json": "a35966c35a2b4148784c0b3dc9fe69f79f135dde30ce7d34ccacef8fed3bd123",
+    "decimal-source-scenarios.csv": "256f1b0b5ce32d12bc623dd16363f8a00aaad2640817475d648f7406ba895de5",
+    "dependency-map.csv": "1dc93e97a347ee4d9fdcf45e6a26f0ff620c00995e8fabca2cb618b17ba104ed",
+    "engine-results.json": "f0f0c5d950d9ac56bae1f23cad22a153ad2950d3f34c976c9fe60d6ccba2d0a3",
+    "evaluate-campaign.mts": "911e71dfbbf7322d0660ea8fe978b86a3115e2a09a0a01955d5f0bc9d77c48f3",
+    "extract-noodles.py": "6448a3829e16b0e768175c0867fba20edc54485e75644d50dd59201493bbf287",
+    "family-impact.json": "2f78b64cc4ced09de96a924a40cf0ce1da0705bff5285ae516435d3c9dac5877",
+    "hold-inputs.json": "a08cc7e6e8c7e2adaefe2da3bfb4741204b9026f10bce34b831b93001acd141c",
+    "mext-noodles.json": "e22209a71622aff6f7a1537200f98fcfdcbb770aa58e1affa6b5e8798f3a9246",
+    "source-applicability.json": "a868595c90640378ac624287ba0c5bf5821f18f8efda92bfdec20d737d71eb2b",
+    "sources.json": "8359fdd27a16955f541b0ab0de60182400833eeb081521df9af30e9c2b2b8185",
+    "summary.json": "7c5461e3db4245c32c7f6ee12a78fdc52f5a824b8a0ef005cd7de3340004691a"
+  },
+  "checkoutHashPolicy": "Use filesLfSha256 when reviewing a Git checkout: Git may convert text CRLF/LF. filesRawSha256 records the original handoff-worktree bytes only. Manufacturer/workbook document hashes retain their original binary-byte meaning."
 }
