@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "recordRole": "CURRENT_STATE_AFTER_SEPARATION",
-  "observedAtUtc": "2026-11-02T20:12:43.689530+00:00",
+  "observedAtUtc": "2026-11-02T20:17:22.338252+00:00",
   "repository": "ozirix-dev/Reseptit",
   "role": "Codex2 / Codex Tutkimus",
   "ownedWorktree": "D:\\Projects\\tmp\\reseptit-afcd-polyol-03-gk80-handoff",
@@ -53,12 +53,12 @@
     "productionGapTo261": 82,
     "productionPercent": 54.91,
     "distinctArithmeticProposalRecipes": 39,
-    "methodOrContentApprovedVersionsAcrossSeparateBatches": 25,
+    "methodOrContentApprovedVersionsAcrossSeparateBatches": 27,
     "approvedIntegratedInPr183": 16,
-    "approvedParkedSeparately": 2,
-    "distinctRecipesWithoutApprovedVersion": 14,
+    "approvedParkedSeparately": 4,
+    "distinctRecipesWithoutApprovedVersion": 12,
     "knownPreparedFoodSourceHolds": 6,
-    "otherPendingRecipes": 8,
+    "otherPendingRecipes": 6,
     "conditionalAfterBothBatchesReleased": 178,
     "conditionalPercent": 54.6,
     "conditionalGapTo261": 83,
@@ -69,25 +69,29 @@
     "arithmeticCountScope": "39 distinct arithmetic recipe IDs, including1 new current-A owner-review proposal and2 unapproved B research models in this pass. Other32 are HOLD dependencies without complete inputs. Arithmetic does not prove source qualification or approved coverage.",
     "legacyCorrectionFieldsNote": "Fields mentioning ThisCorrection describe the prior correction pass. Latest pass and subsequent approval are in latestResearchPass; current published coverage and current approval counts are the explicit live fields.",
     "approvedLockedSix": 0,
-    "approvedResearchHandoff": 2,
+    "approvedResearchHandoff": 4,
     "conditionalAfterAll23ApprovedVersionsReleased": 179,
     "conditionalAfterAll23Percent": 54.91,
     "conditionalAfterAll23GapTo261": 82,
     "originalInstructionsNumeric": 156,
     "originalInstructionsMissing": 170,
-    "approvedButUnpublishedVersions": 2,
+    "approvedButUnpublishedVersions": 4,
     "approvedInPublishedMain": 23,
     "conditionalAfterAll24ApprovedVersionsReleased": 180,
     "conditionalAfterAll24Percent": 55.21,
     "conditionalAfterAll24GapTo261": 81,
     "conditionalAfterBothBatchesReleasedScope": "Historical PR183+locked-six subset178, now published as part of179. Use latestResearchPass and current production fields.",
-    "conditionalAfterAll23FieldsScope": "Historical approved set before rahkapiirakka and bulgogi approvals; current total25. See latestResearchPass for current totals.",
+    "conditionalAfterAll23FieldsScope": "Historical approved subset23; use methodOrContentApprovedVersionsAcrossSeparateBatches for current approval count.",
     "knownOtherSourceHolds": 1,
     "approvedIntegratedInPr185": 7,
     "conditionalAfterAll25ApprovedVersionsReleased": 181,
     "conditionalAfterAll25Percent": 55.52,
     "conditionalAfterAll25GapTo261": 80,
-    "conditionalAfterAll24FieldsScope": "Historical approved set before bulgogi approval; current total25 and conditional released total181."
+    "conditionalAfterAll24FieldsScope": "Historical approved subset24 before bulgogi; use current approval and latestResearchPass fields.",
+    "conditionalAfterAll27ApprovedVersionsReleased": 183,
+    "conditionalAfterAll27Percent": 56.13,
+    "conditionalAfterAll27GapTo261": 78,
+    "conditionalAfterAll25FieldsScope": "Historical approved subset25 before cold-dessert approvals; use current approval and latestResearchPass fields."
   },
   "historicalEvent": {
     "temporaryIntegrationHead": "80f4360435b978d1cfa81088df1414430a88c222",
@@ -134,21 +138,23 @@
     "newCurrentAAlternativesForExistingBIds": 1,
     "existingAProposalsFinalized": 1,
     "reviewableExactAVersions": 2,
-    "newOwnerApproved": 0,
+    "newOwnerApproved": 2,
     "newPublicationQualifiedNumericResults": 0,
     "newPublishedResults": 0,
     "candidateInputs": {
       "kaakao-kookos-chia": "dfcb1006838f327d6dc368dbdd647180f4be3305b82518e99f88b8d25f71f8b2",
       "rahka-marjakerroskulho": "092719e24df715f0149468125c91e24c08a5dffb29ba2d2f712bb779bd4bdc86"
     },
-    "approvedVersionsStill": 25,
-    "approvedButUnpublishedStill": 2,
+    "approvedVersionsStill": 27,
+    "approvedButUnpublishedStill": 4,
     "publishedStill": 179,
-    "conditionalAfterAlreadyApprovedReleased": 181,
+    "conditionalAfterAlreadyApprovedReleased": 183,
     "conditionalOnlyAfterTheseTwoSeparatelyAcceptedIntegratedReleased": 183,
     "newGiConstants": 0,
     "minorBOmissionProfileActivated": false,
-    "activeRecipeOrEngineChanges": false
+    "activeRecipeOrEngineChanges": false,
+    "ownerApprovalReceipt": "cold-dessert-approval.json",
+    "approvalOverlayScope": "Scoped user approval covers exactly two current-A versions. Reviewed7272e71 report and manifest retain pre-approval totals25/zero new approvals. No B profile or species-general source approval."
   },
   "approvedResearchHandoff": {
     "recipeId": "pad-see-ew-vhh-konjac",
@@ -313,5 +319,21 @@
     "ownerApprovalReceipt": "bulgogi-approval.json",
     "approvalOverlayScope": "Current total after bulgogi-only scoped user approval. Frozen reviewed report/manifest retain pre-approval totals24 and zero new approvals. Jerk and Sate remain unapproved research.",
     "recordRole": "FROZEN_RESEARCH_PASS_WITH_BULGOGI_ONLY_APPROVAL_OVERLAY"
+  },
+  "approvedColdDessertHandoff": {
+    "recipeIds": [
+      "kaakao-kookos-chia",
+      "rahka-marjakerroskulho"
+    ],
+    "approvedInputs": {
+      "kaakao-kookos-chia": "dfcb1006838f327d6dc368dbdd647180f4be3305b82518e99f88b8d25f71f8b2",
+      "rahka-marjakerroskulho": "092719e24df715f0149468125c91e24c08a5dffb29ba2d2f712bb779bd4bdc86"
+    },
+    "reviewedContentHead": "7272e71ecc33cae6d6183320e6b24331c6e0fdb4",
+    "sourceAndContentApproved": true,
+    "receipt": "cold-dessert-approval.json",
+    "futureIntegrationOwner": "Named Codex Julkaisu owner of a separately scoped future batch",
+    "integrated": false,
+    "published": false
   }
 }

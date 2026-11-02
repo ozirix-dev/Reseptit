@@ -1,12 +1,12 @@
 # AFCD-POLYOL-03 / GK80: yhteinen menetelmä- ja lähderatkaisu
 
-## Nykytila:179/326 julkaistu, kaksi hyväksyttyä integraatiota odottaa
+## Nykytila:179/326 julkaistu, neljä hyväksyttyä integraatiota odottaa
 
 **Varmennettu julkaistu kattavuus on179/326 (54,91%): A173 ja B6. Tavoitteeseen261 puuttuu82.** [PR185:n julkaisuhavainto](production-observation-pr185.json) sitoo luvun mainiin`96a25d8`, onnistuneeseen build/deploy41512160461 ja julkisen sivun hashin. Tämä Codex2-ajo ei julkaise muutoksia. Alkuperäisten ohjeiden kattavuus säilyy156/326:ssa.
 
-25 hyväksytystä versiosta23 on julkaistu. [Rahkapiirakka](rahkapiirakka-approval.json) ja [bulgogi](bulgogi-approval.json) odottavat integraation omistajaa; niiden myöhempi julkaisu veisi181/326:een (55,52%), tavoitevaje80. Uusi [kylmien jälkiruokien päätöspaketti](cold-dessert-followup.md) valmistelee kaakao-kookos-chian uuden A-vaihtoehdon0,22 ja viimeistelee aiemman rahka-marjakulhon A-version2,34 muuttamatta sen syötehashia. Molempien tarkkojen lähde-/sisältöversioiden erillinen hyväksyntä, integraatio ja julkaisu aiempien lisäksi veisi183/326:een (56,13%), tavoitevaje78. Tämä ei ole nykyinen hyväksyntä- tai kattavuusluku.
+27 hyväksytystä versiosta23 on julkaistu. [Rahkapiirakka](rahkapiirakka-approval.json) ja [bulgogi](bulgogi-approval.json) odottavat integraation omistajaa; niiden myöhempi julkaisu veisi181/326:een (55,52%), tavoitevaje80. Uusi [kylmien jälkiruokien päätöspaketti](cold-dessert-followup.md) sisältää nyt hyväksytyt kaakao-kookos-chian A-vaihtoehdon0,22 ja aiemman rahka-marjakulhon A-version2,34 muuttamatta jälkimmäisen syötehashia: [sinetöity kahden version hyväksyntä](cold-dessert-approval.json). Katselmoitu7272e71-raportti ja paketti säilyvät hyväksyntää edeltävinä tilannekuvina; kuitti määrittää nykyisen rajatun hyväksynnän. Kaikkien neljän hyväksytyn mutta julkaisemattoman version integraatio ja julkaisu veisi183/326:een (56,13%), tavoitevaje78. Nykyinen julkaistu kattavuus pysyy179:ssä.
 
-[Nykytilakirjaus](current-state.json) ja [päätösmatriisi](current-decision-matrix.csv) sisältävät39 aritmeettista ehdotusta sekä32 muuta HOLD-riippuvuutta, yhteensä71 reseptiä.14 aritmeettiselta reseptiltä puuttuu hyväksytty versio. Molemmat uudet katselmointiversiot käyttävät nykyistä A-aritmetiikkaa; rahka-marjakulhon tarkka sisältö nimeää kanadalaisen wild blueberryn, eikä hyväksyntä siirtyisi suomalaiseen metsämustikkaan. Kaakao-kookos-chian0,22 on vain kermarivin laskettu osa; positiiviset poisjätöt0,9625g/annos sisältävät0,62g nimellisiä tuotetietoylärajoja. [Sinetöity paketti](cold-dessert/manifest.json) erottaa lähteet, yksiköt ja toistettavat laskelmat.30 lähdekelpoista hyväksyttyä ehdokasta ei ole osoitettu; näiden kahden hyväksyntä nostaisi hyväksyttyjen kokonaismäärän27:ään.
+[Nykytilakirjaus](current-state.json) ja [päätösmatriisi](current-decision-matrix.csv) sisältävät39 aritmeettista ehdotusta sekä32 muuta HOLD-riippuvuutta, yhteensä71 reseptiä.12 aritmeettiselta reseptiltä puuttuu hyväksytty versio. Molemmat uudet katselmointiversiot käyttävät nykyistä A-aritmetiikkaa; rahka-marjakulhon tarkka sisältö nimeää kanadalaisen wild blueberryn, eikä hyväksyntä siirtyisi suomalaiseen metsämustikkaan. Kaakao-kookos-chian0,22 on vain kermarivin laskettu osa; positiiviset poisjätöt0,9625g/annos sisältävät0,62g nimellisiä tuotetietoylärajoja. [Sinetöity paketti](cold-dessert/manifest.json) erottaa lähteet, yksiköt ja toistettavat laskelmat.30 hyväksytyn lähde-/sisältöversion erää ei vielä ole osoitettu: nykyinen hyväksyttyjen kokonaismäärä27 jää tavoitteesta kolmella.
 
 [Edellisen marinadierän](retained-sauce-followup.md) bulgogi41,31 on hyväksytty, jerk43,96 ja sate ayam5,76 jäävät erillisiä menetelmäpäätöksiä odottaviksi tutkimusmalleiksi. GI18 on asiantuntijaestimaatti, ei mitattu maapähkinävoin GI. B-poisjättöprofiili ja uusi estimaattilähdetyyppi pysyvät suljettuina.
 
@@ -14,7 +14,7 @@
 
 ## Aiemmat tilannekuvat
 
-Alla olevien raporttien aikamuodot ja määrät kuvaavat niiden omaa ajankohtaa. Nykyinen julkaistu luku on179 ja julkaisemattomia hyväksyttyjä2; vanhat172/8-luvut eivät ole nykytila. Alkuperäiset raportit, syötteet ja hyväksyntäkuitit säilyvät muuttumattomina.
+Alla olevien raporttien aikamuodot ja määrät kuvaavat niiden omaa ajankohtaa. Nykyinen julkaistu luku on179 ja julkaisemattomia hyväksyttyjä4; vanhat172/8-luvut eivät ole nykytila. Alkuperäiset raportit, syötteet ja hyväksyntäkuitit säilyvät muuttumattomina.
 
 ## Uusin yhteisen lähde-esteen jatko
 
