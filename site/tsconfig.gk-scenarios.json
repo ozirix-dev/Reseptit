@@ -1,0 +1,5 @@
+{
+ "extends":"./tsconfig.json",
+ "compilerOptions":{"types":["node"]},
+ "include":["scripts/gk-scenario-model.ts","scripts/gk-scenario-pilot.ts","scripts/gk-scenario-dependencies.ts","tests/gk-scenarios.test.ts","src/features/recipes/gk-scenario-types.ts"]
+}

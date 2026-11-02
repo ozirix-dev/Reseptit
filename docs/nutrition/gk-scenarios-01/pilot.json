@@ -1,0 +1,438 @@
+{
+  "schemaVersion": "GK_SCENARIOS_01_V1",
+  "methodVersion": "COMPONENT_RESEARCH_V1",
+  "owner": "Codex 3 / GK Scenario Developer",
+  "baselineMain": "92dc6dbe7b27e145d6938026c73b6823f2e2108f",
+  "recipeId": "keto-mutakakku",
+  "recipeVersion": "gk149-b373e5621c6c",
+  "approvedInputHash": "b373e5621c6c939eaec2af8c9c11cd687f0a4b0f179159b5d143d2d4141e6af3",
+  "servings": 8,
+  "chocolateGrams": "150",
+  "separateErythritolGrams": "80",
+  "separateErythritolResponseId": "livesey-erythritol",
+  "separateErythritolCompositionId": "pure-erythritol",
+  "publicationAuthorized": false,
+  "wholeRecipeEvidenceAvailable": false,
+  "preserveFilesLfSha256": {
+    "docs/nutrition/gk80-operation149/cases.json": "98c161b906725b90c3ed01fa8f7e2a456872f8d0bc551ccd6de5a6d9a79cf00c",
+    "docs/nutrition/gk80-operation149/composition-sources.json": "01bfd164993f6d9351d6139b263203871aa2974675b8be94e32cf2030629a3a4",
+    "docs/nutrition/gk80-operation149/gi-sources.json": "1f7b9831179ca1dae27285bffa189a03a47e28018c946e60b438965abb9d880c",
+    "docs/nutrition/gk80-operation149/source-observations.json": "2ff56eb6af7a41c478001b839b94430d8c082b2408f39f9e73cc6a46eb26c4e1",
+    "docs/nutrition/gk80-operation149/golden.json": "3b8ac59fc38f585cac817c5d5cb65eb7e96abedad1e0b84429bfe779b65299d8",
+    "docs/nutrition/gk80-operation149/owner-approval.json": "041073b27f415c0fa6e53974928666abd73d48f51d36ac09e4420dc1e67860ea",
+    "docs/nutrition/gk80-operation149/method-proposal.md": "2b69175e12ad0aa437c8149624069f2caf2274054e420131bd43d3b261bd938a",
+    "reseptit/jalkiruoat/keto-mutakakku.md": "11295775a58c43785b65f67d7b717d8f17163f20ac4196337112abd048740c43",
+    "docs/nutrition/afcd-release-3-reference.json": "02edf1cc95191c05edf791656a5109c41bcf4d4a3e707be69ef5009bc640022e"
+  },
+  "sources": [
+    {
+      "id": "torras-maltitol",
+      "url": "https://chocolatestorras.com/en/dark-chocolate/",
+      "title": "Torras Dark chocolate, Art. 557, 30 g",
+      "locator": "Description / ingredients and nutrition per 100 g",
+      "retrievedAt": "2026-11-02T19:42:22.117451+00:00",
+      "rawSha256": "c52d2c9dbc0e01cbd2bdc89759746c0739cbab92533f000d0aca6c598b05d2bf",
+      "access": "DIRECT_PUBLISHER_BYTES",
+      "licence": "Selected factual observations only; manufacturer page copyright retained; no label artwork copied.",
+      "observation": {
+        "basis": "per100g",
+        "carbohydrate": "48",
+        "polyols": "45",
+        "polyolIngredients": [
+          "maltitol"
+        ],
+        "definition": "EU_LABEL_CARBOHYDRATE_INCLUDES_POLYOLS_EXCLUDES_FIBRE"
+      },
+      "evidenceHash": "441c3e01cf515b58dfa6045ef6079a09783c557f4180cab5b7e799d4981a977b"
+    },
+    {
+      "id": "torras-stevia",
+      "url": "https://chocolatestorras.com/stevia-negro/",
+      "title": "Torras Chocolate Negro 60% Stevia 100g, Art.40, EAN 8410342007032",
+      "locator": "Description / ingredients and nutrition per 100 g",
+      "retrievedAt": "2026-11-02T19:42:24.861307+00:00",
+      "rawSha256": "180dc0389eb9d337748d804849a53b1b55f86f7cac135d615f83ccdeb7ba9da0",
+      "access": "DIRECT_PUBLISHER_BYTES",
+      "licence": "Selected factual observations only; manufacturer page copyright retained; no label artwork copied.",
+      "observation": {
+        "basis": "per100g",
+        "carbohydrate": "34",
+        "polyols": "29",
+        "polyolIngredients": [
+          "erythritol",
+          "steviol glycosides"
+        ],
+        "definition": "EU_LABEL_CARBOHYDRATE_INCLUDES_POLYOLS_EXCLUDES_FIBRE",
+        "sugars": "<0.5"
+      },
+      "evidenceHash": "491310ce51073835deaecdf4058e68e196762de56274f92cee2a1a22311897e4"
+    },
+    {
+      "id": "wawel-maltitol",
+      "url": "https://www.wawel.com.pl/karta-produktu?id=5900102013067&lang=en_UK",
+      "title": "Wawel No Added Sugar Dark Chocolate 70%, 100 g, EAN 5900102013067",
+      "locator": "Product card / ingredients and nutrition per 100 g",
+      "retrievedAt": "2026-11-02T19:42:25.631937+00:00",
+      "rawSha256": null,
+      "access": "PUBLISHER_TEXT_VIA_WEB_INDEX; DIRECT_FETCH_404",
+      "licence": "Selected factual observations only; manufacturer page copyright retained; no label artwork copied.",
+      "observation": {
+        "basis": "per100g",
+        "carbohydrate": "34",
+        "polyols": "29",
+        "polyolIngredients": [
+          "maltitol"
+        ],
+        "definition": "EU_LABEL_CARBOHYDRATE_INCLUDES_POLYOLS_EXCLUDES_FIBRE",
+        "sugars": "0.8",
+        "starch": "0.7"
+      },
+      "evidenceHash": "a47bfe000dbb8c20f0f420ffd7186e2d180f9edf109030033d67f60e03dd519d"
+    },
+    {
+      "id": "afcd-f009837",
+      "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F009837",
+      "title": "FSANZ AFCD Release 3, F009837",
+      "locator": "Profiles: All solids & liquids per 100 g!AB1307:AN1307; Food details!E1307:F1307; Nutrient details Proximates!G38:H39",
+      "retrievedAt": "2026-11-02T19:42:25.632116+00:00",
+      "rawSha256": null,
+      "licence": "© FSANZ, AFCD Release 3. Selected observations, CC BY-SA 3.0 Australia / FSANZ Data User Licence Agreement. Australian data; composition varies; provided as-is. Changes: selected fields and annotations; not endorsed by FSANZ.",
+      "workbooks": [
+        {
+          "url": "https://www.foodstandards.gov.au/sites/default/files/2025-12/AFCD%20Release%203%20-%20Nutrient%20profiles.xlsx",
+          "sha256": "14cb3e73dbf58987b440e6299624c0fefd7a4e61591fc1f753995d9534e0efc9"
+        },
+        {
+          "url": "https://www.foodstandards.gov.au/sites/default/files/2025-12/AFCD%20Release%203%20-%20Food%20Details.xlsx",
+          "sha256": "69aa096c45cb0699db60a9c544442312e9ff09af587b99c42dc78bc26f689629"
+        },
+        {
+          "url": "https://www.foodstandards.gov.au/sites/default/files/2025-12/AFCD%20Release%203%20-%20Nutrient%20details.xlsx",
+          "sha256": "7c455129a90e65d29840ecd188fa223cca8bdf0729b21efebc286884d69fafaa"
+        }
+      ],
+      "observation": {
+        "basis": "per100g",
+        "without": "4.1",
+        "with": "32.1",
+        "species": {
+          "maltitol": "28",
+          "xylitol": "3.6",
+          "erythritol": "3.8",
+          "sorbitol": null,
+          "mannitol": null,
+          "glycerol": null
+        },
+        "aggregatePolyols": null,
+        "sampling": "Composite of 8 samples: 3 Lindt, 2 Coles, 2 Well Naturally, 1 Little Zebra; five Australian states, 2020.",
+        "genericWithEquationAdds": [
+          "sorbitol",
+          "mannitol",
+          "glycerol"
+        ],
+        "pairDifferenceMeaning": "DERIVED_PAIRED_CARBOHYDRATE_DIFFERENCE_NOT_TOTAL_POLYOLS"
+      },
+      "evidenceHash": "22d2357607a5e2baa44eff8b9cf8c879ddff6290b5859a5c1bd8ae45802ccdac"
+    },
+    {
+      "id": "livesey-2003",
+      "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/51B0744C8573925A7A74FF2AD87429F9/S0954422403000131a.pdf/div-class-title-health-potential-of-polyols-as-sugar-replacers-with-emphasis-on-low-glycaemic-properties-div.pdf",
+      "title": "Health potential of polyols as sugar replacers, with emphasis on low glycaemic properties",
+      "locator": "Table 5, p173; Table 4, pp170–171; Table 8, p176",
+      "retrievedAt": "2026-11-02T19:42:26.509182+00:00",
+      "rawSha256": "f2572581330d10e34ea33a507e3ac982fc7673b3d838f5ad9570bd7c6aa7ea9a",
+      "access": "DIRECT_PUBLISHER_BYTES",
+      "licence": "Bibliographic metadata and selected numerical facts only; no full tables reproduced.",
+      "doi": "10.1079/NRR200371",
+      "year": 2003,
+      "observation": {
+        "scale": "GLUCOSE_100",
+        "form": "Polyols in water/tea; various doses, generally 10–50 g in pooled means",
+        "population": "Normal and diabetic study groups; n below counts studies, not participants",
+        "maltitol": {
+          "gi": "35",
+          "sd": "9",
+          "studies": 9
+        },
+        "xylitol": {
+          "gi": "13",
+          "sd": "4",
+          "studies": 6
+        },
+        "erythritol": {
+          "gi": "0",
+          "sd": "17",
+          "studies": 4
+        },
+        "chocolateComparators": {
+          "maltitolGI": "30",
+          "erythritolGI": "2",
+          "use": "REFERENCE_ONLY_NO_MATCH_TO_CURRENT_PRODUCTS"
+        },
+        "limitations": "Between-study SD is not a bound. Syrup coefficients differ. No confidence interval for cake; no exact zero-response guarantee."
+      },
+      "evidenceHash": "787455ff8100559c33b1437f341c1b1e90156d38606a0a2d88a08f35fa7def33"
+    },
+    {
+      "id": "pelletier-1994",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/8001718/",
+      "title": "Glycaemic and insulinaemic responses in healthy volunteers upon ingestion of maltitol and hydrogenated glucose syrups",
+      "locator": "PubMed abstract",
+      "retrievedAt": "2026-11-02T19:42:26.932769+00:00",
+      "rawSha256": "b16c6c587ec813ae68810ac5e2a666db827a716e8441810f402dbc1d78f4ff61",
+      "access": "DIRECT_PUBLISHER_BYTES",
+      "licence": "Bibliographic metadata and paraphrased abstract findings only.",
+      "year": 1994,
+      "observation": {
+        "form": "Maltitol solutions and maltitol chocolate",
+        "dose": "Not exposed in accessible abstract; do not invent",
+        "population": "Healthy volunteers; exact n not in abstract",
+        "scale": "Glucose reference",
+        "response": "Lower glycaemic response; chocolate insulin response remains high",
+        "gi": null,
+        "uncertainty": null,
+        "use": "QUALITATIVE_SUPPORT_ONLY"
+      },
+      "evidenceHash": "9f68b5c7f1ddbdc56492c7d1fd925ac7428a9a36ca8b967b33659613e31b7957"
+    },
+    {
+      "id": "wolnerhanssen-2016",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27117004/",
+      "title": "Gut hormone secretion, gastric emptying, and glycemic responses to erythritol and xylitol in lean and obese subjects",
+      "locator": "PubMed abstract",
+      "retrievedAt": "2026-11-02T19:42:27.320485+00:00",
+      "rawSha256": "9d1b3210c2f9369245a6056a5eb1faac26473ce41ed0303803f98b3fe9b4cc16",
+      "access": "DIRECT_PUBLISHER_BYTES",
+      "licence": "Bibliographic metadata and paraphrased abstract findings only.",
+      "year": 2016,
+      "observation": {
+        "doi": "10.1152/ajpendo.00037.2016",
+        "form": "Nasogastric solutions in 300 mL water",
+        "dose": "Xylitol 50 g; erythritol 75 g; glucose 75 g; water placebo",
+        "population": "10 lean and 10 obese volunteers",
+        "scale": "Unequal equisweet loads, not a directly usable standardized GI",
+        "response": "No insulin release effect for erythritol, small for xylitol; slower gastric emptying",
+        "gi": null,
+        "uncertainty": null,
+        "use": "QUALITATIVE_SUPPORT_ONLY"
+      },
+      "evidenceHash": "3ad6dafca0fc46140599b0614cab35783cf288b9b2b4f02ea2d5a1069d0ae142"
+    },
+    {
+      "id": "noda-1994",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/8039489/",
+      "title": "Serum glucose and insulin levels and erythritol balance after oral administration of erythritol in healthy subjects",
+      "locator": "PubMed abstract",
+      "retrievedAt": "2026-11-02T19:42:27.681314+00:00",
+      "rawSha256": "dd9d97aa97037629791c3debad34a95ab9024e1bdd5498640c178d30d7a7a88f",
+      "access": "DIRECT_PUBLISHER_BYTES",
+      "licence": "Bibliographic metadata and paraphrased abstract findings only.",
+      "year": 1994,
+      "observation": {
+        "form": "Oral erythritol versus equal glucose dose",
+        "dose": "0.3 g/kg body weight",
+        "population": "Healthy subjects; numerical coefficient not extracted",
+        "scale": "Glucose control",
+        "response": "Original human study of glucose/insulin response and excretion",
+        "gi": null,
+        "uncertainty": null,
+        "use": "QUALITATIVE_SUPPORT_ONLY"
+      },
+      "evidenceHash": "7373838652130b33f92b152d51bd1bf83753f14dc95d70e82c0c44f29e9c399f"
+    }
+  ],
+  "responses": [
+    {
+      "id": "livesey-maltitol",
+      "sourceId": "livesey-2003",
+      "sourceHash": "787455ff8100559c33b1437f341c1b1e90156d38606a0a2d88a08f35fa7def33",
+      "species": "maltitol",
+      "gi": "35",
+      "scale": "GLUCOSE_100",
+      "massBasis": "FULL_REPORTED_POLYOL_MASS",
+      "use": "CONDITIONAL_RESEARCH_ONLY",
+      "form": "ISOLATED_POLYOL",
+      "uncertainty": {
+        "kind": "BETWEEN_STUDY_SD",
+        "value": "9",
+        "nStudies": 9
+      },
+      "applicability": "Unmeasured transfer from isolated-polyol evidence to the named chocolate in baked cake. No absorption correction applied.",
+      "evidenceHash": "090efda169101319b66dcb3d9aedf8e518ef88ec7334572d648ed1f990918933"
+    },
+    {
+      "id": "livesey-xylitol",
+      "sourceId": "livesey-2003",
+      "sourceHash": "787455ff8100559c33b1437f341c1b1e90156d38606a0a2d88a08f35fa7def33",
+      "species": "xylitol",
+      "gi": "13",
+      "scale": "GLUCOSE_100",
+      "massBasis": "FULL_REPORTED_POLYOL_MASS",
+      "use": "CONDITIONAL_RESEARCH_ONLY",
+      "form": "ISOLATED_POLYOL",
+      "uncertainty": {
+        "kind": "BETWEEN_STUDY_SD",
+        "value": "4",
+        "nStudies": 6
+      },
+      "applicability": "Unmeasured transfer from isolated-polyol evidence to the named chocolate in baked cake. No absorption correction applied.",
+      "evidenceHash": "cda962f095890e2606d371a5a62c877409da2643b3fc489f0e1ef5f8444601a2"
+    },
+    {
+      "id": "livesey-erythritol",
+      "sourceId": "livesey-2003",
+      "sourceHash": "787455ff8100559c33b1437f341c1b1e90156d38606a0a2d88a08f35fa7def33",
+      "species": "erythritol",
+      "gi": "0",
+      "scale": "GLUCOSE_100",
+      "massBasis": "FULL_REPORTED_POLYOL_MASS",
+      "use": "CONDITIONAL_RESEARCH_ONLY",
+      "form": "ISOLATED_POLYOL",
+      "uncertainty": {
+        "kind": "BETWEEN_STUDY_SD",
+        "value": "17",
+        "nStudies": 4
+      },
+      "applicability": "Unmeasured transfer from isolated-polyol evidence to the named chocolate in baked cake. No absorption correction applied.",
+      "evidenceHash": "c3b1457067b51f1848c12edb2c9aeb982213605ce1bb73a88bca9321eec43378"
+    }
+  ],
+  "products": [
+    {
+      "id": "torras-maltitol",
+      "manufacturer": "Chocolates Torras",
+      "name": "Torras Dark chocolate, Art. 557, 30 g",
+      "kind": "NAMED_PRODUCT",
+      "sourceId": "torras-maltitol",
+      "sourceHash": "441c3e01cf515b58dfa6045ef6079a09783c557f4180cab5b7e799d4981a977b",
+      "basis": "per100g",
+      "carbohydrateDefinition": "EU_LABEL_INCLUDING_POLYOLS",
+      "raw": {
+        "labelCarbohydrate": "48",
+        "withoutSugarAlcohols": null,
+        "withSugarAlcohols": null,
+        "polyols": "45"
+      },
+      "species": {
+        "maltitol": "45"
+      },
+      "speciesSemantics": "SOLE_LISTED_POLYOL_ALLOCATION",
+      "aggregateComplete": true,
+      "sweeteners": [
+        "maltitol"
+      ],
+      "note": "Maltitol is the sole listed polyol. Allocating the declared polyols to maltitol is an explicit label-composition assumption. Page SKU 556 and description Art.557 differ: verify physical package before use.",
+      "preparationMatch": "UNMEASURED_BAKED_CAKE",
+      "ordinaryGiId": null,
+      "responseBindings": {
+        "maltitol": "livesey-maltitol"
+      },
+      "evidenceHash": "89d8a30733c9f7d33a2e2abd9c001ae72bdb5f0d68c21cf87df41e862c6435ae"
+    },
+    {
+      "id": "torras-stevia",
+      "manufacturer": "Chocolates Torras",
+      "name": "Torras Chocolate Negro 60% Stevia 100g, Art.40, EAN 8410342007032",
+      "kind": "NAMED_PRODUCT",
+      "sourceId": "torras-stevia",
+      "sourceHash": "491310ce51073835deaecdf4058e68e196762de56274f92cee2a1a22311897e4",
+      "basis": "per100g",
+      "carbohydrateDefinition": "EU_LABEL_INCLUDING_POLYOLS",
+      "raw": {
+        "labelCarbohydrate": "34",
+        "withoutSugarAlcohols": null,
+        "withSugarAlcohols": null,
+        "polyols": "29"
+      },
+      "species": {
+        "erythritol": "29"
+      },
+      "speciesSemantics": "SOLE_LISTED_POLYOL_ALLOCATION",
+      "aggregateComplete": true,
+      "sweeteners": [
+        "erythritol",
+        "steviol glycosides"
+      ],
+      "note": "Erythritol is the sole listed polyol. Stevia does not make the remaining carbohydrate zero. Physical package/batch not verified.",
+      "preparationMatch": "UNMEASURED_BAKED_CAKE",
+      "ordinaryGiId": null,
+      "responseBindings": {
+        "erythritol": "livesey-erythritol"
+      },
+      "evidenceHash": "3a7f549387dc7168117fd340cbe260453d7bc0d46d05485f3faee92812cef168"
+    },
+    {
+      "id": "wawel-maltitol",
+      "manufacturer": "Wawel",
+      "name": "Wawel No Added Sugar Dark Chocolate 70%, 100 g, EAN 5900102013067",
+      "kind": "NAMED_PRODUCT",
+      "sourceId": "wawel-maltitol",
+      "sourceHash": "a47bfe000dbb8c20f0f420ffd7186e2d180f9edf109030033d67f60e03dd519d",
+      "basis": "per100g",
+      "carbohydrateDefinition": "EU_LABEL_INCLUDING_POLYOLS",
+      "raw": {
+        "labelCarbohydrate": "34",
+        "withoutSugarAlcohols": null,
+        "withSugarAlcohols": null,
+        "polyols": "29"
+      },
+      "species": {
+        "maltitol": "29"
+      },
+      "speciesSemantics": "SOLE_LISTED_POLYOL_ALLOCATION",
+      "aggregateComplete": true,
+      "sweeteners": [
+        "maltitol"
+      ],
+      "note": "Maltitol is the sole listed polyol. Declared carbohydrate minus polyols is 5 g; sugars 0.8 + starch 0.7 do not explain all of it. Retain residual, do not replace it by 1.5 g.",
+      "preparationMatch": "UNMEASURED_BAKED_CAKE",
+      "ordinaryGiId": null,
+      "responseBindings": {
+        "maltitol": "livesey-maltitol"
+      },
+      "evidenceHash": "394107ae1d1eda2a4e95278396bd5fe07901f41f6c983b3bda4b5c94d10942d7"
+    },
+    {
+      "id": "afcd-f009837",
+      "manufacturer": "FSANZ reference composite; not a purchasable product",
+      "name": "F009837 Chocolate, dark, no added sugar",
+      "kind": "REFERENCE_COMPOSITE",
+      "sourceId": "afcd-f009837",
+      "sourceHash": "22d2357607a5e2baa44eff8b9cf8c879ddff6290b5859a5c1bd8ae45802ccdac",
+      "basis": "per100g",
+      "carbohydrateDefinition": "AFCD_WITHOUT_SUGAR_ALCOHOLS",
+      "raw": {
+        "labelCarbohydrate": null,
+        "withoutSugarAlcohols": "4.1",
+        "withSugarAlcohols": "32.1",
+        "polyols": null
+      },
+      "species": {
+        "maltitol": "28",
+        "xylitol": "3.6",
+        "erythritol": "3.8",
+        "sorbitol": null,
+        "mannitol": null,
+        "glycerol": null
+      },
+      "speciesSemantics": "REPORTED_PARTIAL_SPECIES",
+      "aggregateComplete": false,
+      "sweeteners": [
+        "maltitol",
+        "xylitol",
+        "erythritol"
+      ],
+      "note": "Generic with-equation does not explain this row. 32.1-4.1=28 is not total polyols; named species partial sum 35.4 is not an aggregate. No single present-day product or complete polyol panel.",
+      "preparationMatch": "COMPOSITE_AND_BAKING_UNMATCHED",
+      "ordinaryGiId": null,
+      "responseBindings": {
+        "maltitol": "livesey-maltitol",
+        "xylitol": "livesey-xylitol",
+        "erythritol": "livesey-erythritol"
+      },
+      "evidenceHash": "c3298ff8dde5cc85b4f1cf257f5be73cde76ff00308dfde94b118f5bf4d8e7e6"
+    }
+  ],
+  "baseContextHash": "87937c8ef3ff5a11ac4f5b9257e9d04da9922b3a6c77fd020936117bc5de4c65",
+  "inputHash": "22b4261fb9a53e49628a63b05106f80abc1bd91ac6e348cd3e67777ed7291b16"
+}

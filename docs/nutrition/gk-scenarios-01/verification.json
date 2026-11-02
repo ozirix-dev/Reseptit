@@ -1,0 +1,147 @@
+{
+  "checkedAtUtc": "2026-11-02T19:59:56.616455+00:00",
+  "baselineMain": "92dc6dbe7b27e145d6938026c73b6823f2e2108f",
+  "mainObservedAfterWork": "96a25d8c9db6fb0a505a70a37a5b357b6a83593a",
+  "inputHash": "22b4261fb9a53e49628a63b05106f80abc1bd91ac6e348cd3e67777ed7291b16",
+  "baseContextHash": "87937c8ef3ff5a11ac4f5b9257e9d04da9922b3a6c77fd020936117bc5de4c65",
+  "tests": {
+    "command": "npx tsx --test tests/gk-scenarios.test.ts",
+    "passed": 14,
+    "failed": 0
+  },
+  "targetedTypecheck": "npx tsc -p tsconfig.gk-scenarios.json --noEmit: PASS",
+  "decimal": "python scripts/gk-scenario-decimal.py: PASS; all term masses and contributions independently reconstructed",
+  "browser": {
+    "engine": "Brave via Playwright CLI",
+    "products": 4,
+    "languages": [
+      "fi",
+      "en",
+      "sv",
+      "th"
+    ],
+    "widths": [
+      1280,
+      768,
+      375
+    ],
+    "selectionChecks": 48,
+    "scaling": "PASS",
+    "inputImmutable": "PASS",
+    "seo": "PASS",
+    "invalidServings": "PASS",
+    "horizontalOverflow": "NONE"
+  },
+  "baselineFilesUnchanged": {
+    "docs/nutrition/gk80-operation149/cases.json": true,
+    "docs/nutrition/gk80-operation149/composition-sources.json": true,
+    "docs/nutrition/gk80-operation149/gi-sources.json": true,
+    "docs/nutrition/gk80-operation149/source-observations.json": true,
+    "docs/nutrition/gk80-operation149/golden.json": true,
+    "docs/nutrition/gk80-operation149/owner-approval.json": true,
+    "docs/nutrition/gk80-operation149/method-proposal.md": true,
+    "reseptit/jalkiruoat/keto-mutakakku.md": true,
+    "docs/nutrition/afcd-release-3-reference.json": true
+  },
+  "resultLfSha256": "3413d9b47c050aa65a53a816639587068a2d3e42004697cc7a61a9b4a639882f",
+  "sourceObservationHashes": {
+    "torras-maltitol": "441c3e01cf515b58dfa6045ef6079a09783c557f4180cab5b7e799d4981a977b",
+    "torras-stevia": "491310ce51073835deaecdf4058e68e196762de56274f92cee2a1a22311897e4",
+    "wawel-maltitol": "a47bfe000dbb8c20f0f420ffd7186e2d180f9edf109030033d67f60e03dd519d",
+    "afcd-f009837": "22d2357607a5e2baa44eff8b9cf8c879ddff6290b5859a5c1bd8ae45802ccdac",
+    "livesey-2003": "787455ff8100559c33b1437f341c1b1e90156d38606a0a2d88a08f35fa7def33",
+    "pelletier-1994": "9f68b5c7f1ddbdc56492c7d1fd925ac7428a9a36ca8b967b33659613e31b7957",
+    "wolnerhanssen-2016": "3ad6dafca0fc46140599b0614cab35783cf288b9b2b4f02ea2d5a1069d0ae142",
+    "noda-1994": "7373838652130b33f92b152d51bd1bf83753f14dc95d70e82c0c44f29e9c399f"
+  },
+  "results": [
+    {
+      "scenarioId": "torras-maltitol",
+      "conditionalSubtotal": 3.0200625,
+      "wholeRecipe": "UNAVAILABLE",
+      "unresolvedOrdinaryChoG": 1.17115
+    },
+    {
+      "scenarioId": "torras-stevia",
+      "conditionalSubtotal": 0.0669375,
+      "wholeRecipe": "UNAVAILABLE",
+      "unresolvedOrdinaryChoG": 1.54615
+    },
+    {
+      "scenarioId": "wawel-maltitol",
+      "conditionalSubtotal": 1.9700625,
+      "wholeRecipe": "UNAVAILABLE",
+      "unresolvedOrdinaryChoG": 1.54615
+    },
+    {
+      "scenarioId": "afcd-f009837",
+      "conditionalSubtotal": 1.9921875,
+      "wholeRecipe": "UNAVAILABLE",
+      "unresolvedOrdinaryChoG": 1.3774
+    }
+  ],
+  "newWholeRecipeNumericalCandidates": 0,
+  "sourceEligibleWholeRecipeCandidates": 0,
+  "publishedResults": 0,
+  "coverageDelta": 0,
+  "notRun": [
+    "326-recipe recalculation",
+    "721-page production build",
+    "manual Actions reruns",
+    "production deployment"
+  ],
+  "fullTypecheckLimitation": "Fresh worktree lacks ignored generated production modules. Targeted isolated typecheck passes.",
+  "closeout": {
+    "checkedAtUtc": "2026-11-02T20:45:58.304844+00:00",
+    "ownerSession": "Codex 3 / GK-SCENARIOS-01 viimeistely / 01a19dfb-dc25-7292-9a91-d58514144c51",
+    "activeModel": "gpt-6.1-sol",
+    "activeEffort": "high",
+    "pilotStatus": "COMPLETE",
+    "wholeRecipeRangeStatus": "NO_GO_HOLD",
+    "startingHead": "c05609b9defb4c939f46344918d89c50ad6b213a",
+    "verifiedMain": "96a25d8c9db6fb0a505a70a37a5b357b6a83593a",
+    "guardSyncPreflight": "CONFLICT_FREE",
+    "compatibilityExportTree": "6411fd8351cf718e60af9fd627011c6973b2427c",
+    "compatibilityOverlay": [
+      "site/previews/gk-scenarios.html"
+    ],
+    "branchSynchronized": false,
+    "compatibilityTests": {
+      "passed": 14,
+      "failed": 0
+    },
+    "targetedTypecheck": "PASS",
+    "preserveFilesLfSha256Valid": {
+      "docs/nutrition/gk80-operation149/cases.json": true,
+      "docs/nutrition/gk80-operation149/composition-sources.json": true,
+      "docs/nutrition/gk80-operation149/gi-sources.json": true,
+      "docs/nutrition/gk80-operation149/source-observations.json": true,
+      "docs/nutrition/gk80-operation149/golden.json": true,
+      "docs/nutrition/gk80-operation149/owner-approval.json": true,
+      "docs/nutrition/gk80-operation149/method-proposal.md": true,
+      "reseptit/jalkiruoat/keto-mutakakku.md": true,
+      "docs/nutrition/afcd-release-3-reference.json": true
+    },
+    "inputHashUnchanged": true,
+    "sourceAndProductSeals": "PASS via loadScenarioPilot / assessPilot",
+    "resultLfSha256": "3413d9b47c050aa65a53a816639587068a2d3e42004697cc7a61a9b4a639882f",
+    "decimalReconstructionReused": "Exact unchanged results JSON and arithmetic; original Decimal PASS retained",
+    "browser": {
+      "selectionChecks": 48,
+      "displayPrecision": "PASS",
+      "missingProduct": "PASS",
+      "unavailableSource": "PASS",
+      "invalidServings": "PASS",
+      "scaling": "PASS",
+      "inputImmutable": "PASS",
+      "seoIsolation": "PASS",
+      "horizontalOverflow": "NONE",
+      "fiScreenshotReviewed": true
+    },
+    "approvedPoint": 0.07,
+    "omittedChoGPerServing": 1.3774,
+    "productionRecipeAndMacrosChanged": false,
+    "finalHeadCi": "Normal PR CI must pass on final HEAD before Ready; exact SHA and run URL are recorded in PR description and final handoff.",
+    "followup": "One keto-mutakakku disclosure, two manufacturer-source product options, FI/EN/SV/TH; start only after merge and public-content approval."
+  }
+}
