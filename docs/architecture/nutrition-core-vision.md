@@ -1,6 +1,6 @@
 # Nutrition Core – yhteinen ravintoainetietovaranto
 
-**Arkkitehtuuriehdotus v1, 2.11.2026. Ei toteutus- tai siirtolupaa.**
+**Arkkitehtuuriehdotus v2, yhteensovitus 2.11.2026. Ei toteutus- tai siirtolupaa.**
 
 Suositus: rakennetaan sovelluksista riippumaton, lähdeversioihin sidottu ravintokoostumuksen tietovaranto ja julkaistaan siitä käyttötapakohtaiset, muuttumattomat tietopaketit. Paikallinen SQLite valmistelee ja validoi aineiston; D1 on myöhemmin hyväksyttyjen yhteisten lähdetietojen keskitetty varasto. R2 säilyttää oikeuksien sallimat alkuperäisaineistot, suuret evidenssit, viennit ja varmistukset. Recipavo ja Ravinto valitsevat oman hyväksytyn pakettiversionsa. Kumpikaan sovellus ei kirjoita yhteisiä lähdearvoja eikä tarvitse toisen sovelluksen Git-repoa tai käynnissä olevaa palvelua toimiakseen.
 
@@ -8,15 +8,17 @@ Tietomalli on ravintotekijöiden suhteen avoin: uuden komponentin lisääminen t
 
 Tämän dokumentin hyväksyminen hyväksyy suunnan ja nimetyt rajaukset. Jokainen toteutusvaihe hyväksytään erikseen täsmälliselle versiolle. Tässä PR:ssä ei ole SQL-migraatiota, importer-koodia, tietokantaa, resurssimääritystä, uutta API:a tai henkilökohtaisia tietoja käsittelevää palvelua.
 
+**Yhteinen eteneminen:** [Cloudflare #172](https://github.com/ozirix-dev/Reseptit/pull/172), tämä [Core #176](https://github.com/ozirix-dev/Reseptit/pull/176) ja [tuotesuunnitelma #178](https://github.com/ozirix-dev/Reseptit/pull/178) sovitetaan luvussa 9 samaan rajattuun pilottiin. SOURCE-01 #174:n hyväksyntä on edelleen avoin. Yhteensovitus ei ole vaiheiden toteutuslupa.
+
 ## 1. Päätösten tila ja tutkimuspohja
 
 | Luokka | Mitä voidaan käyttää lähtökohtana |
 |---|---|
 | Käyttäjän asettamat vaatimukset | Yhteinen varanto usealle itsenäiselle projektille; kaikki ravintotekijät; SQLite/D1/R2/Git-roolit; versioidut viennit; ei henkilötietoja; nykyiset makro- ja GK-menetelmät säilyvät; Workers Paid on olemassa; tavoite enintään 5 USD/kk lisäkuluja koko Recipavolle. |
-| Tarkistetut nykyiset tosiasiat | Reseptit main `adda64fda9bf63e69e190b6d888698587a250a2a`; erillinen tutkimusworktree. SOURCE-01 [Draft-PR #174](https://github.com/ozirix-dev/Reseptit/pull/174) HEAD `19939d95d8c93d6e93d4619d9f2510d043d246dc` on avoin Draft, ei hyväksyntä. Cloudflare [Draft-PR #172](https://github.com/ozirix-dev/Reseptit/pull/172) HEAD `1a3ba27d8b7f738d22e8a6b899bb3b0081560507` on erillinen siirtosuunnitelma. |
+| Yhteensovitusta edeltäneet tarkistetut snapshotit | Reseptit main `adda64fda9bf63e69e190b6d888698587a250a2a`; erillinen tutkimusworktree. SOURCE-01 [Draft-PR #174](https://github.com/ozirix-dev/Reseptit/pull/174) HEAD `19939d95d8c93d6e93d4619d9f2510d043d246dc` on avoin Draft, ei hyväksyntä. Cloudflare [Draft-PR #172](https://github.com/ozirix-dev/Reseptit/pull/172) tarkastettiin ennen yhteensovitusta HEADissa `1a3ba27d8b7f738d22e8a6b899bb3b0081560507`. Päivitettyjen kolmen suunnitelman yhteinen järjestys on luvussa 9; historiallinen SHA ei ole niiden uusi HEAD. |
 | Tarkistetut sovellusrajat | Reseptien neljän arvon laskenta on toimituksellinen Git-pohjainen työkalu; GK:lla on omat GI-tietueet, valmistus- ja vastaavuusrajat. Ravinto on Jekyll-artikkelisivusto FI/EN/TH-kielillä, nykyisin Markdown-taulukot. |
 | Tässä ehdotetut tekniset valinnat | Alla kuvattu havaintomalli, yhteinen käsitteistö, erilliset sovellusprofiilit, yksi julkaisuvastuullinen, pakettisopimukset ja vaiheportit. Nimet ja fyysinen skeema eivät ole lukittuja. |
-| Avoimet riippuvuudet | SOURCE-01:n ja kenttäkartan omistajahyväksyntä; lähdekohtaiset oikeudet ja polyolirajaukset; sovellusten vaatimat komponentit; tilin todellinen kiintiökulutus; resurssien omistajuus suhteessa PR #172:een; julkaisijan ja palautuksen vastuuhenkilöt. |
+| Avoimet riippuvuudet | SOURCE-01:n ja kenttäkartan omistajahyväksyntä; lähdekohtaiset oikeudet ja polyolirajaukset; sovellusten vaatimat komponentit; tilin todellinen kiintiökulutus; luvussa 9 ehdotetun Core-/sovellusomistajuuden hyväksyntä ja fyysiset resurssirajat; julkaisijan ja palautuksen vastuuhenkilöt. |
 | Myöhemmät mahdollisuudet | Oma Core-repo, julkinen rajattu haku-API, laajempi aineisto, shardit, yksityinen ruokapäiväkirjapalvelu erillisenä projektina. Yksikään näistä ei sisälly tämän PR:n toteutukseen. |
 
 SOURCE-01:n [loppuraportti](https://github.com/ozirix-dev/Reseptit/blob/19939d95d8c93d6e93d4619d9f2510d043d246dc/docs/research/source-01/README.md) ja [kenttäkartoitus](https://github.com/ozirix-dev/Reseptit/blob/19939d95d8c93d6e93d4619d9f2510d043d246dc/docs/research/source-01/field-mapping.md) ovat pohja, jota laajennetaan kaikkien ravintotekijöiden varantoon. Niiden 261/65/55-kattavuusluvut koskevat vanhempaa mainia `c5393a1`, eivät tämän dokumentin uudeksi auditoimaa nykytilaa. Mainiin on sen jälkeen yhdistetty PR #173:n muutoksia. Tässä ei ajeta uutta ravintoarvoinventaariota eikä muuteta SOURCE-01:n tuloksia.
@@ -32,11 +34,11 @@ Ravinto tarkistettiin lukevasti HEADissa `b4f618416d64198b40b4443169d1a3f77a0acf
 | Alkuperäinen kansallinen elintarvikehavainto | Lähteen julkaisu; sallittu muuttumaton arkistokopio ja manifesti | Lukea oikeuksiensa sallimaa julkaistua versiota, ei korjata lähdearvoa paikallisesti yhteiseksi totuudeksi |
 | Lähdemääritelmät, hyväksytyt normalisoinnit ja oikeuspäätökset | Nutrition Core -ylläpito ja hyväksyntämanifesti | Ehdottaa muutosta Corelle; hyväksytty revisio yhteisestä prosessista |
 | Core-skeema, adapterit ja geneeriset laskentasäännöt | Core-koodin versioitu Git-kokonaisuus | Käyttää nimettyä versiota; ei ylläpitää saman yhteisen tietueen toista muokattavaa masteria |
-| Reseptin sisältö, raaka-ainemäärät, valmistus ja käyttövastaavuudet | Reseptit/Recipavo Git; myöhempi master-vaihto vain erillisellä päätöksellä | Valita täsmällinen Core-tietuerevisio omaan reseptiin |
-| Reseptin laskettu profiili ja sen julkaisu | Recipavon hyväksytty laskentapaketti ja julkaisumanifesti | Julkaista muuttumaton tulos, ei kirjoittaa tulosta takaisin lähteen raaka-arvoksi |
+| Reseptin sisältö, raaka-ainemäärät, valmistus ja käyttövastaavuudet | Reseptit/Recipavo Git; lähdekoostumuksen D1-siirto ei vaihda reseptisisällön masteria | Valita täsmällinen Core-tietuerevisio omaan reseptiin |
+| Reseptin laskettu profiili ja sen julkaisu | Recipavon hyväksytty laskentapaketti ja julkaisumanifesti; D1-sovellusalueen tallennus ja Git-projektiot vasta eritellyllä cutover-päätöksellä | Julkaista muuttumaton tulos, ei kirjoittaa tulosta takaisin lähteen raaka-arvoksi |
 | Ravinnon artikkeli, vertailuasetelma ja lähdevalinnat | Ravinto Git | Rakentaa taulukko hyväksytystä vientipaketista, säilyttää editoriaalinen vastuu |
 | GI-mittaukset, GK-sovellus ja tulkinta | Nykyinen erillinen GK-menetelmä / nimetty versio | Viitata koostumusrevisioon; koostumustietokanta ei korvaa GI-näyttöä |
-| Käyttäjätili, ateria, aika, annos, terveystieto | Mahdollinen myöhempi käyttäjäpalvelu, täysin Coren ulkopuolella | Tallentaa sallittu profiilisnapshot omaan järjestelmään; ei kirjoittaa sitä Coreen |
+| Käyttäjätili, ateria, aika, annos, terveystieto | Tuotesuunnitelman #178 erillinen Diary, täysin Coren ulkopuolella | Tallentaa sallittu profiilisnapshot omaan järjestelmään; ei kirjoittaa sitä Coreen |
 
 Eri domaineilla voi olla eri master: yhteinen lähdekoostumus ja Recipavon reseptit eivät ole sama aineisto. Saman lähdehavainnon rinnakkaiset muokattavat masterit kielletään. Kuluttajien varmennetut, muuttumattomat pakettikopiot sallitaan toimintavarmuuden vuoksi; nämä eivät ole itsenäisesti päivitettäviä lähderekistereitä.
 
@@ -354,20 +356,28 @@ Historiallisen releasen mahdollinen siirto pois aktiivisesta D1-joukosta on näk
 
 Jos kaikki aktiiviset hyväksytyt lähteet eivät mahdu yhteen kantaan, vaihtoehto on loogisen Coren alla lähde-/release-ryhmittelyllä jaetut D1-kannat ja pieni katalogi. Globaalit ID:t ja pakettisopimus pysyvät. Ristikkäisiä shard-FK:ita tai yhtä cross-database-transaktiota ei oleteta: offline-julkaisija validoi ja yhdistää nimetyt paketit. Tämä on NC10:n erillinen kapasiteetti-/budjettipäätös, ei ensimmäisen pilotin infrastruktuuri. Jos kustannus tai kyselytyö ei sovi D1:een, vertaillaan erikseen muuta tallennusratkaisua ennen laajennusta; kuluttajan pakettisopimus ei riipu siitä.
 
-## 9. Suhde Cloudflare-siirtosuunnitelmaan
+## 9. Yhteinen eteneminen Cloudflare- ja tuotesuunnitelman kanssa
 
-[PR #172:n](https://github.com/ozirix-dev/Reseptit/pull/172) kuusi siirtovaihetta ja tämän dokumentin kymmenen Nutrition Core -vaihetta ovat **eri porttiketjut**. Tässä käytetään tunnisteita NC01–NC10. Yhden suunnitelman hyväksyntä ei automaattisesti hyväksy toisen vaihetta.
+[PR #172](https://github.com/ozirix-dev/Reseptit/pull/172) käyttää vaiheita 1–6, tämä suunnitelma NC01–NC10 ja [PR #178](https://github.com/ozirix-dev/Reseptit/pull/178) vaiheita P0–P8. Ne kuvaavat saman työn eri vastuita. Samalle rajatulle työlle tehdään yksi koordinoitu näyttöpaketti ja päätös, jossa nimetyt vaiheet ja niiden rajaukset luetellaan. Kukin toteutusaloitus vaatii luvan; yhden suunnitelman tallennus tai merge ei anna sitä.
 
-PR #172:ssa on ehdotetut `reseptit-prod`/stage-D1-nimet ja Git→D1-masterin vaihdon erillinen myöhempi päätös. Tämä visio ei nimeä niitä uudelleen, luo rinnakkaista masteria tai pidennä nykyisen sivuston siirtoa kaikkien mikroravinteiden valmistumiseen asti.
+**Yhteensovitettu suositus on yhteinen Core-rakenne jo ensimmäiseen D1-tuotantoratkaisuun, pienellä hyväksytyllä aineistolla.** Ensin ei rakenneta `reseptit-prod`-lähdemasteria ja sen rinnalle myöhemmin toista `nutrition-core`-masteria. Core omistaa yhteisen lähdekoostumuksen; Recipavo reseptikohtaiset lähdevalinnat, laskentaprofiilit ja julkaisut; erillinen Diary käyttäjän merkinnät. Nykyinen Git-laskenta määrää siihen asti, että #172:n vaiheen 4 omistajuusportti on erikseen hyväksytty.
 
-Ennen NC06:ta ja ennen minkään tuotannon omistajuusvaihdon hyväksymistä tarvitaan erillinen yhteensovituspäätös:
+Tämä on omistajan hyväksyttävä suunnitelmarajaus, ei jo tehty masterin vaihto. NC02 päättää loogiset taulu-/nimiavaruusrajat, tallennuksen ja käyttöoikeudet; resurssit ja lopulliset nimet vahvistetaan ennen NC06:ta / #172:n vaihetta 3. Yksi fyysinen kanta voi riittää eriytetyille Core-/Recipavo-alueille, jos oikeudet ja erilliset viennit voidaan osoittaa. Useaa kantaa tai uutta Core-repoa ei vaadita alkupilotissa. Diary ei sisälly tähän kantaan tai vientiin. Tämän suunnan muuttaminen vaatii näkyvän uuden päätöksen, ei rinnakkaista kirjoitettavaa lähdemasteria.
 
-| Vaihtoehto | Milloin sopii / ehto |
-|---|---|
-| Nykyinen siirtosuunnitelma ensin rajattuna, Core myöhemmin | Recipavo saa ensin nykyisen hyväksytyn snapshotin. Tuleva yhteisen lähdekoostumuksen eriytys tehdään omana migraationaan, samoilla immutable-ID:illä ja vertailulla. Core ei silloin muutu tuotantolähdemasteriksi kesken pilotin. |
-| Yhteinen Core-lähdevaranto ennen ensimmäistä D1-tuotantosiirtoa | Jos NC01–NC06 ovat erikseen hyväksyttyjä ja rajattu pilotti riittää. PR #172:n resurssi-/omistajuuskohtaan tehdään myöhemmin oma hyväksytty muutos: yhteinen koostumus erilleen Recipavon sovellusprofiileista. Ei kahta hyväksyttävää write-masteria samoille havainnoille. |
+| Järjestys | Yhteinen työ | Poistumisnäyttö / päätös |
+|---|---|---|
+| 1 | #172 vaihe 1 + NC01–NC02, tuotteen P0-rajaus | SOURCE-01 #174:n raportti/kenttäkartta hyväksytty HOLD/DEFERRED-rajauksin; omistajuus, sopimus, kaksi pilottinäyttöä, MVP ja yhteinen kustannusraja nimetty |
+| 2, rinnakkain | NC03–NC05 + #172 vaihe 2; P1 omalla rajatulla luvalla | Paikallinen toistettava tuonti/vienti, kuvat/oikeudet/URL:t; P1 synteettinen aamupala-UX ilman tilejä, pilveä tai oikeita aterioita |
+| 3 | NC06 + #172 vaihe 3 | Sama koordinoitu stage-erä, SQLite/D1-pariteetti, vähimmät oikeudet, mitattu kustannus ja palautus myös riippumattomasta kopiosta |
+| 4 | NC07 + #172 vaiheet 4–6 | Hyväksytty sovellusvienti, jäädytetty main/SOURCE/GK-snapshot, uusittu inventaario ja kuvien A/B/C-ratkaisut; erillinen omistajuus- ja julkaisulupa |
+| 5 | #178 P2–P5 | Yksityisen Diaryn tietosuoja/tunnistus/vienti/poisto/palautus ja palvelubudjetti ennen oikeita käyttäjätietoja; julkinen reseptipalvelu ennen laajaa Diary-avausta |
+| 6 | #178 P6–P7, myöhemmin P8 | Käyttäjien paluu, tukikuorma ja yksikkötalous ennen maksullisuutta ja markkinalaajennusta |
 
-Arkkitehtuurisuositus on erottaa yhteinen koostumus sovellusprofiileista, mutta ajoitusta ei lukita tällä PR:llä. Vaihtoehto valitaan main/SOURCE/GK-versioihin sidotulla omistajan päätöksellä. Kuvien R2, media-domain, vanhat URL:t, CDN ja tuotantokytkentä pysyvät PR #172:n vastuulla. Nutrition Core ei tarvitse julkista domainmuutosta, maksullista kuvamuunnospalvelua tai tuotantoliikennettä pilotin onnistumiseen.
+P1 ei odota täydellistä Corea, kaikkia mikroja, julkista siirtoa tai 30 päivän jälkiseurantaa. P2:n suunnittelua ja erikseen luvallista synteettistä valmistelua voidaan tehdä rinnalla; oikea henkilötietokäsittely odottaa sen hyväksyntöjä. NC08:n Ravinto-vienti ja NC09:n mikropilotti voivat edetä erillisinä hyväksyttyinä jatkoina, eivätkä ne ole ensimmäisen Diaryn yleisehtoja.
+
+**Pilotin kaksi näyttöä erotetaan.** NC04–NC05:n Frida 4 + MEXT 4 on tekninen kaikki-komponentit-/semantiikka-/idempotenssinäyttö, ei todiste käyttökelpoisesta aamupalasta. NC07:n sovellusnäyttö tarvitsee hyväksytyt ruoka-/reseptiprofiilit todelliseen toistuvaan aamupalaskenaarioon: määrät, raaka/kypsä- ja syötäväosaperusta, valmistus, polyolit ja nykyisen neljän arvon julkaisu-/pidätyssäännöt. Valitaan tähän pieni käyttökelpoinen aineisto jo NC01–NC02:ssa. Nykyisten sallittujen lähteiden käyttö on mahdollista, mutta uusi Fineli-/muu lähdetuonti Coreen vaatii rajatun NC04–NC06-kierroksen oman hyväksynnän. Suuri lähdepaketti ei korvaa tätä näyttöä.
+
+Vaiheessa 4 nimetään yksi hyväksytty main/SOURCE/GK-lähtösnapshot ja uusitaan siitä #172:n kuva-/arvoinventaariot. Aiemmat `583fdb9`, `c5393a1` ja `adda64f` ovat päivättyjä lähtöhavaintoja, eivät sama hyväksytty tuleva siirtoerä. Kuvien R2, kuvadomain, vanhat URL:t ja CDN kuuluvat #172:een. Julkisen liikenteen siirto, DNS/Pages ja myöhemmin välttämättömät Actions-julkaisu-/palautusajot vaativat erillisen nimenomaisen luvan. Nyt mitään niistä ei aloiteta.
 
 ## 10. Käyttöoikeudet, varmistus ja palautus
 
@@ -380,6 +390,8 @@ Stage ja tuotanto erotetaan resurssi-ID:illä ja bindingeillä. Lähdearkiston, 
 Lokeihin vain tarpeellinen erä-/release-/virhemetadata, ei rajoitettuja raw-arvoja, salaisuuksia tai käyttäjätietoja. Rajattu auditointihistoria ja tarkistajien toimija-ID:t ovat ylläpitometatietoa, eivät käyttäjien ravitsemushistoriaa. Julkaisussa tarkistetaan lisenssifiltterin lisäksi ettei tiedostoissa ole yksityisiä R2-URL:eja, signed-linkkejä tai tunnuksia.
 
 ### 10.2 Varmistusmalli
+
+Tämän luvun 365/400 vrk:n ja pysyvästi suojattavat lähde-/media-/julkaisukopiot **eivät sisällä Diarya, käyttäjätilejä tai käyttäjien aterioita**. Niitä ei sisällytetä Core-SQL:ään, julkiseen Git-/static-vientiin tai suodattamattomaan yhteiseen offsite-pakettiin. #178 P2 hyväksyy Diarylle erilliset vientityöt, manifestit, pääsy-/avainrajat, säilytyksen ja poistot uudelleen soveltavan palautuksen; enintään 30 vrk:n kiertävä Diary-varmistus on arvioitava ehdotus. Prosessin periaatteita voidaan käyttää uudelleen, mutta Core-retentiota ei peritä henkilötiedoille.
 
 Hyödynnetään PR #172:n varmistusperiaatetta: yksi yksinkertainen ylläpidetty vientiprosessi, ei uutta rinnakkaista varmistuskehikkoa. Myöhemmässä resurssipäätöksessä sen piiriin nimetään Core-kannat ja katalogi erillisinä riippuvuuksina. Ehdotettu paketti sisältää SQL-viennin, skeema-/data-/menetelmä-/rights-versiot, hyväksyntämanifestit, lähde-/evidenssiblobien hashit ja palautukseen tarvittavat R2-objektit. Suuret muuttumattomat blobit voidaan kopioida kerran ja viitata manifesteista; täydet SQL-viennit eivät edellytä uuden delta-SQL-järjestelmän rakentamista.
 
@@ -469,16 +481,16 @@ Työmäärät ovat suunnitteluarvioita kehittäjätyöpäivinä (tp, noin 6 h); 
 | NC03 Paikallinen SQLite | NC02 | Pieni toistettava paikallinen malli |
 | NC04 Kaksi lähdetietokantaa | NC03 + käyttöluvat | Rajattu kaikki-komponentit-tuonti |
 | NC05 Ravintotekijät ja vastaavuudet | NC04 | Hyväksytyt mappingit, tietueet ja HOLD-lista |
-| NC06 Eristetty D1-pilotti | NC05 + budjetti/PR #172-yhteensovitus | SQLite/D1-pariteetti ja palautus |
+| NC06 Eristetty D1-pilotti | NC05 + budjetti ja #172 vaihe 3, sama rajattu stage-työ | SQLite/D1-pariteetti ja palautus |
 | NC07 Recipavon ensimmäinen vienti | NC06 + nykyisten laskentapakettien hyväksyntä | Lukittu, yhteensopiva ravintoprofiilipaketti |
 | NC08 Ravinnon tietovientipilotti | NC07 + Ravinnon oma työ-/repo-valtuutus | Riippumaton artikkelitaulukon kulutus |
-| NC09 Mikroravinteiden laskenta | NC05, NC07 ja NC08 | Pieni ravintotekijäkohtainen laskentapilotti |
+| NC09 Mikroravinteiden laskenta | NC05, NC07 + menetelmä-/kuluttajasopimuksen näyttö | Pieni ravintotekijäkohtainen laskentapilotti; NC08 ei pakollinen edeltäjä |
 | NC10 Jatkokehitys | Valmiiden pilotointien arvio | Omistettu ylläpito ja hyväksytty laajennusraja |
 
 ### NC01 – SOURCE-01:n hyväksyntä ja lähdekattavuus
 
 - **Riippuvuudet:** Draft-PR #174 ja kenttäkartoitus katselmoitu täsmällisessä SHA:ssa; PR #172:n vaiheen 1 riippuvuus tunnistettu.
-- **Pienin kokonaisuus:** lähdematriisi, tarvittavat makro-/mikrokomponenttiryhmät ja ensimmäisen pilotin rajaus. Suositus tekniseen kaikki-komponentit-pilottiin Frida 5.5+MEXT, yhteensä enintään 8 ruokaa. NEVO:n laaja hakuhyöty säilyy SOURCE-01:n prioriteettina mutta logical-zero-/oikeusportti estää automaattisen käyttökelpoisuusväitteen.
+- **Pienin kokonaisuus:** lähdematriisi, tarvittavat makro-/mikrokomponenttiryhmät ja ensimmäisen teknisen sekä erikseen laskettavan aamupalapilotin rajaus. Suositus tekniseen kaikki-komponentit-pilottiin Frida 5.5+MEXT, yhteensä enintään 8 ruokaa. NEVO:n laaja hakuhyöty säilyy SOURCE-01:n prioriteettina mutta logical-zero-/oikeusportti estää automaattisen käyttökelpoisuusväitteen.
 - **Hyväksymiskriteerit:** SOURCE-01:n tulos- ja versiorajaus, lähdekohtaiset ehdot ja HOLD/DEFERRED-kohdat nimenomaisesti päätetty; ei yhtään hakuehdokasta hyväksytty ilman tietue-/käyttötarkistusta.
 - **Työ/kustannus:**0.5–1.5 tp, ei Cloudflare-palvelukuluja. Lähdelupien mahdollinen maksu selvitetään ennen laajennusta.
 - **Todellinen riski:** raportin Draft tai suuri lähdekoko tulkitaan käyttöluvaksi. Ei valmiiksi luvattua ratkaistavien reseptien lukua.
@@ -489,7 +501,7 @@ Työmäärät ovat suunnitteluarvioita kehittäjätyöpäivinä (tp, noin 6 h); 
 
 - **Riippuvuudet:** NC01; Recipavon ja Ravinnon vaaditut vertailut ja komponentit.
 - **Pienin kokonaisuus:** havaintopohjainen skeemasopimus, vähintään A/folaatin/rasvahapon määritelmäesimerkit, oikeusmatriisi, release/input/profile-hashit ja kuluttajasopimus. Omistajuus ja Core-koodin sijainti päätetään.
-- **Hyväksymiskriteerit:** uusi komponentti ei vaadi uutta SQL-saraketta; massayksikkö/biologinen ekvivalentti/valmistus/missing/zero erottuvat; source-native-ID ja kaikki alkuarvot palautuvat; projektien write-vastuut ovat yksiselitteiset; PR #172-yhteensovitusvaihtoehto kirjattu.
+- **Hyväksymiskriteerit:** uusi komponentti ei vaadi uutta SQL-saraketta; massayksikkö/biologinen ekvivalentti/valmistus/missing/zero erottuvat; source-native-ID ja kaikki alkuarvot palautuvat; projektien write-vastuut ovat yksiselitteiset; luvun 9 yhteinen Core-rakenne, sovellusprofiilit ja Diary-raja sekä #172:n kanssa sama vaiheistus kirjattu.
 - **Työ/kustannus:**2–4 tp, ei Cloudflare-palvelukuluja; ei vielä uutta repoa ellei siitä ole erillistä päätöstä.
 - **Todellinen riski:** liian laaja geneerisyys tai nykyisten Fineli-enumien pakottaminen kaikille aineille; reseptiprofiilien ja lähdekoostumuksen master sekoittuu.
 - **Palautus:** skeemaehdotus tarkennetaan ennen ensimmäistä kantaa; nykyinen data koskematon.
@@ -527,8 +539,8 @@ Työmäärät ovat suunnitteluarvioita kehittäjätyöpäivinä (tp, noin 6 h); 
 
 ### NC06 – Eristetty Cloudflare D1 -pilotti
 
-- **Riippuvuudet:** NC05, erillinen resurssi-/oikeuslupa, tilin laskutus/kiintiöt ja koko Recipavon enintään 5 USD -ennuste tai hyväksytty poikkeama; PR #172-yhteensovituspäätös. Offsite-kohde ja avaimen vastuuhenkilö nimetty.
-- **Pienin kokonaisuus:** myöhemmin luvalla luotava rajattu stage-D1 ja välttämättömät yksityiset stage-R2-paketit; vain hyväksytty NC05-osajoukko. Valvottu tuonti/vienti/palautus, ei julkisia domain- tai tuotantobinding-muutoksia.
+- **Riippuvuudet:** NC05, erillinen resurssi-/oikeuslupa, tilin laskutus/kiintiöt ja koko Recipavon enintään 5 USD -ennuste tai hyväksytty poikkeama; PR #172:n vaiheen 3 kanssa sama hyväksytty stage-työpaketti. Offsite-kohde ja avaimen vastuuhenkilö nimetty.
+- **Pienin kokonaisuus:** myöhemmin luvalla luotava rajattu stage-D1 ja välttämättömät yksityiset stage-R2-paketit; vain hyväksytty NC05-osajoukko. Sama infrastruktuuripilotti kuin #172 vaihe 3, ei toinen rinnakkainen järjestelmä. Valvottu tuonti/vienti/palautus, ei julkisia domain- tai tuotantobinding-muutoksia.
 - **Hyväksymiskriteerit:** SQLite/D1:n samat rivit, avaimet, arvotilat ja hashit; keskeytetty paketti ei aktivoidu; mitatut kysely-/rivi-/tavuluvut ja toistotuonti; SQL-palautus erilliseen testikantaan ja riippumattoman salatun kopion avaus. Pääsyrajat osoitettu.
 - **Työ/kustannus:**1–2 tp; palvelukäyttö etukäteen hinnoiteltu luvun 11 mukaan, ei nollakuluoletusta. Pieni aineisto ei poista R2:n pyöristysvaikutusta.
 - **Todellinen riski:** sama nimi väärällä tilillä, tuotantotunnuksen/bindingin käyttö, oikeuksien vuoto, ylittyvä kustannus, paikallisen transaktion väärä siirtäminen D1:een.
@@ -538,8 +550,8 @@ Työmäärät ovat suunnitteluarvioita kehittäjätyöpäivinä (tp, noin 6 h); 
 ### NC07 – Recipavon ensimmäinen hyväksytty tietovienti
 
 - **Riippuvuudet:** NC06 ja nykyisen menetelmän mukaisesti hyväksytty pieni resepti-/laskentajoukko. Jos uudet lähteet eivät ratkaise polyolirajoja, ei väitetä niiden tuottaneen valmista reseptiä; ensimmäinen sovellusvientipilotti voidaan rajata jo hyväksyttyihin, oikeuksiltaan sallittuihin nykyisiin profiileihin erillisellä import-/provenienssipäätöksellä. Jos tämä lisää Finelin tai muun kolmannen lähteen Core-aineistoon, sille tehdään rajattu NC04–NC06-kierros omistajan hyväksynnällä; kahden lähteen pilotin laajuus ei kasva hiljaisesti.
-- **Pienin kokonaisuus:** versionoitu sallittu 1–3 reseptin ruokaprofiili-/laskentapaketti ja Recipavon erillinen yhteensopivuusadapterin pilotti. Ei kaikkien 326 reseptin migraatiota, uutta GK-menetelmää tai mikrolaskentaa.
-- **Hyväksymiskriteerit:** nykyiset neljä arvoa, puuttuvuudet/withheld-tilat, pyöristykset ja GK-sidokset säilyvät täsmällisessä snapshotissa; input+source+method-hashit; kuluttaja toimii lukitulla paketilla ilman D1-kyselyä ja Reseptit-repon latest-riippuvuutta. Sopimaton paketti ei päivity sivustoon.
+- **Pienin kokonaisuus:** versionoitu sallittu 1–3 reseptin sekä valitun toistuvan aamupalan tarvitsemien ruokien profiili-/laskentapaketti ja Recipavon erillinen yhteensopivuusadapterin pilotti. Ei kaikkien 326 reseptin migraatiota, uutta GK-menetelmää tai mikrolaskentaa.
+- **Hyväksymiskriteerit:** nykyiset neljä arvoa, puuttuvuudet/withheld-tilat, pyöristykset ja GK-sidokset säilyvät täsmällisessä snapshotissa; input+source+method-hashit; kuluttaja toimii lukitulla paketilla ilman D1-kyselyä ja Reseptit-repon latest-riippuvuutta. Sopimaton paketti ei päivity sivustoon. Eritelty aamupalan annos-/määrämuutos tuottaa hyväksytyillä ruoka-/reseptiprofiileilla odotetun tuloksen; pelkkä Frida/MEXT-tuonti ei täytä tätä porttia. Tässä ei vielä tallenneta oikeaa käyttäjäateriaa.
 - **Työ/kustannus:**1–3 tp, vienti-/asset-kustannus luvun 11 kokonaisrajan sisällä. Tulevan koodimuutoksen tarpeelliset vaikutusalueen tarkistukset omassa toteutus-PR:ssä.
 - **Todellinen riski:** legacy 220 arvon kaltaiset vanhan tutkimussnapshotin näyttöaukot hyväksytään siirrossa automaattisesti, tai uusi paketti ohittaa nykyiset pidätykset. Vallitseva tilanne tarkistettava uudelle mainille.
 - **Palautus:** edellinen lukittu paketti ja vastaava julkaisu; nykyinen Git-menetelmä säilyy, jos master-vaihtoa ei erikseen hyväksytty.
@@ -557,7 +569,7 @@ Työmäärät ovat suunnitteluarvioita kehittäjätyöpäivinä (tp, noin 6 h); 
 
 ### NC09 – Mikroravinteiden laskentapilotti
 
-- **Riippuvuudet:** NC05, NC07, NC08; valituille ruoka-/valmistustiloille oikeudet, retentio-/saantonäyttö ja menetelmän tarkistaja.
+- **Riippuvuudet:** NC05 ja NC07 sekä nimetty kuluttajasopimuksen validointi; NC08 voi tarjota lisänäyttöä, mutta Ravinnon valmistuminen ei ole pakollinen edeltäjä. Valituille ruoka-/valmistustiloille oikeudet, retentio-/saantonäyttö ja menetelmän tarkistaja.
 - **Pienin kokonaisuus:**1–2 reseptin uusi menetelmäversio,3–5 harkittua mikrokomponenttia (esim. C, Ca, Fe, folaattimuoto ja B12). Valitaan yksi tarkoituksella puutteellinen komponentti ja yksi valmistusmuunnos. Ei kaikkien mikrojen esittämistä valmiina.
 - **Hyväksymiskriteerit:** komponenttikohtainen status ja massa-/ravintomääräkattavuuden ero, ei puuttuvan B12:n takia hylättyä muuten laskettavaa proteiinia, ei PARTIAL-summaa aterian täytenä sisältönä; raaka/kypsä/yield/retention/öljy erotettu; nykyisen makro/GK-julkaisun yhteensopivuus säilyy omana porttinaan.
 - **Työ/kustannus:**2–5 tp, lähde-/retentioaineiston selvitys voi olla suurempi osa kuin koodi. Ei maksullista aineistoa tai lisäpalvelua ilman erillistä päätöstä; palveluennuste luvun 11 rajaan.
@@ -592,12 +604,12 @@ Työmäärät ovat suunnitteluarvioita kehittäjätyöpäivinä (tp, noin 6 h); 
 Ennen toteutuksen aloittamista ratkaistaan ja kirjataan:
 
 1. SOURCE-01:n hyväksytty raportti-/kenttäkarttaversio ja lähdekohtaiset HOLD/DEFERRED-rajat; ei pelkkä Draftin olemassaolo.
-2. Tämän vision NC02-skeemasopimuksen laajuus: kaikki alkuperäiset komponentit säilytetään, mutta vain määritellyt hyväksytyt tulkinnat pääsevät laskenta-/vientikäyttöön.
-3. Ensimmäisen kahden lähteen ja enintään 8 ruoan tarkka valinta sekä oikeudet. Frida+MEXT on ehdotus tekniseen pilottiin, ei SOURCE-01-prioriteettien tai NEVO:n tutkimustarpeen kumoaminen.
+2. NC02:ssa yhteinen Core-rakenne jo ensimmäiseen D1-ratkaisuun, Recipavon omistamat reseptiprofiilit ja erillinen Diary; nykyinen Git määrää laskentaa #172:n erilliseen omistajuusporttiin asti. Kaikki alkuperäiset komponentit säilytetään, vain hyväksytyt tulkinnat pääsevät laskentaan/vientiin.
+3. Teknisen kahden lähteen/enintään 8 ruoan pilotin valinta ja oikeudet sekä erikseen laskettavan aamupalan pienet ruoka-/reseptiprofiilit. Frida+MEXT ei takaa sovellusnäyttöä eikä kumoa NEVO:n tutkimustarvetta; mahdollinen lisälähde käy rajatun NC04–NC06-hyväksynnän.
 4. Core-/sovellusmasterien omistajat, hyväksyntäroolit, pilotin koodisijainti sekä myöhemmän erillisen repon arviointiajankohta.
-5. Ennen NC06:ta PR #172:n D1-/resurssipäätöksen yhteensovitus, todelliset tilikiintiöt/kustannusjako ja palautuksen riippumaton kohde/avaimet.
+5. Ennen yhteistä NC06/#172 vaihe 3 -pilottia resurssi-/oikeusrajat, todelliset tilikiintiöt, koko Recipavon enintään 5 USD/kk lisäkulut ja palautuksen riippumaton kohde/avaimet. #178:n Diaryn tunnistus-/sähköposti-/varmistus- ja tukikulut arvioidaan erikseen P2:ssa; tuotteen kasvuskenaariot eivät muuta budjettia.
 6. Jokaisen vaiheen erillinen lupa, tarkka input/main-/source-/method-versio, hyväksymisnäyttö ja palautus. Tämän dokumentin mahdollinen merge ei käynnistä vaihetta.
 
 Suunnittelutyössä luettiin lähde- ja kenttäkartoitus, nykyisen laskennan/GK:n rajat, Ravinnon rajattu rakenne sekä ensisijaiset Cloudflare/FAO/NIH/SQLite-ohjeet. Hinnoittelu ja alustarajat tarkistettiin 2.11.2026; käyttöönoton ajankohtana ne tarkistetaan uudelleen. Alustarajat ja kustannustariffit perustuvat yllä linkitettyihin virallisiin ohjeisiin.
 
-Dokumentaation tarkistukset: linkkien/rakenneotsikoiden tarkistus, havainnollistavan JSON:n jäsennys, kustannuslaskelmien uudelleenlaskenta, muutoksen rajaus yhteen dokumenttiin ja Gitin whitespace-tarkistus. Ei tietokannan/taulujen luontia, importer-/API-toteutusta, lähdeaineistojen tuontia, ravintoarvojen päivitystä, sivustobuildia, testisviittiä, Actions-dispatchia tai tuotantotoimea. PR #172, SOURCE-01 ja GK80 sekä Ravinto-repo säilyvät muuttamattomina tämän työn toimesta. Tallennus omaan haaraan erillisenä Draft-PR:nä, commitissa `[skip ci]`.
+Yhteensovituksen tarkistukset: dokumenttirakenne ja linkkiviitteet, kolmen suunnitelman vastuu-/vaihe-/budjettirajojen johdonmukaisuus, muutoksen dokumentaatiorajaus ja Gitin whitespace-tarkistus. Aiemmat JSON-esimerkit ja kustannuslaskelmien luvut säilyvät ennallaan. Ei tietokannan/taulujen luontia, importer-/API-toteutusta, lähdeaineistojen tuontia, ravintoarvojen päivitystä, sivustobuildia, testisviittiä, Actions-dispatchia tai tuotantotoimea. Yhteensovitus päivittää vain tämän dokumentin PR #176:n omassa worktreessä sekä #172:n ja #178:n suunnitelmat niiden omissa worktreeissä. SOURCE-01:n ja GK80:n työpuut sekä Ravinto-repo säilyvät muuttamattomina. Ei uutta PR:ää, main-synkronointia, Readya tai mergeä; commitissa `[skip ci]`.
