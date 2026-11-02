@@ -5,92 +5,80 @@ url_slug: ratatouille
 category: paaruoka
 language: fi
 status: published
-carbs_net_per_serving_g: 16.40
-carbs_total_per_serving_g: 23.62
-protein_per_serving_g: 3.37
-fat_per_serving_g: 14.96
+carbs_net_per_serving_g: 11.55
+carbs_total_per_serving_g: 16.77
+protein_per_serving_g: 2.46
+fat_per_serving_g: 14.57
 servings: 4
 time_total_min: 60
 main_ingredient:
-  - kesakurpitsa
-  - munakoiso
+- kesakurpitsa
+- munakoiso
 cooking_method:
-  - liesi
+- liesi
 difficulty: helppo
 tags:
-  - valimerellinen
-  - ranskalainen
-  - kesakurpitsa
-  - munakoiso
+- valimerellinen
+- ranskalainen
+- kesakurpitsa
+- munakoiso
 image:
   src: paaruoat/ratatouille.webp
-  alt: Provencelainen ratatouille kesäkurpitsasta, munakoisosta, paprikasta ja
-    tomaatista
+  alt: Provencelainen ratatouille kesäkurpitsasta, munakoisosta, paprikasta ja tomaatista
   width: 1279
   height: 853
 ingredients:
-  - amount: 1
-    unit: kpl
-    item: munakoisoa
-    note: kuutioina
-  - amount: 2
-    unit: kpl
-    item: kesäkurpitsaa
-    note: kuutioina
-  - amount: 1
-    unit: kpl
-    item: punaista paprikaa
-    note: paloina
-  - amount: 1
-    unit: kpl
-    item: sipuli
-    note: hienonnettuna
-  - amount: 3
-    unit: kpl
-    item: valkosipulinkynttä
-    note: silputtuna
-  - amount: 500
-    unit: g
-    item: kypsiä tomaatteja
-    note: kuutioina
-  - amount: 4
-    unit: rkl
-    item: oliiviöljyä
-  - amount: 1
-    unit: tl
-    item: kuivattua timjamia
-  - amount: 1
-    unit: tl
-    item: suolaa
-  - amount: 0.25
-    unit: tl
-    item: mustapippuria
-  - amount: 15
-    unit: g
-    item: tuoretta basilikaa
+- amount: 300
+  unit: g
+  item: munakoisoa
+- amount: 400
+  unit: g
+  item: kesäkurpitsaa
+- amount: 120
+  unit: g
+  item: punaista paprikaa
+- amount: 55
+  unit: g
+  item: sipulia
+- amount: 9
+  unit: g
+  item: tuoretta kuorittua valkosipulia
+- amount: 500
+  unit: g
+  item: tomaattia
+- amount: 54
+  unit: g
+  item: oliiviöljyä
+- amount: 2
+  unit: g
+  item: jauhettua kuivattua timjamia
+- amount: 0.5
+  unit: g
+  item: jauhettua mustapippuria
+- amount: 15
+  unit: g
+  item: tuoretta basilikaa
+- amount: null
+  unit: ''
+  item: suolaa maun mukaan
 translation_languages:
-  - en
-  - sv
-  - th
-translation_status: {en: published, sv: published, th: published}
+- en
+- sv
+- th
+translation_status:
+  en: published
+  sv: published
+  th: published
 ---
 
 # Provencelainen ratatouille
 
-Ratatouille on hitaasti haudutettu kasvisruoka, jossa kesäkurpitsa, munakoiso, paprika ja tomaatti maustuvat yrteillä ja oliiviöljyllä.
-
-## Kuvaus
-
-Ratatouille on hitaasti haudutettu kasvisruoka, jossa kesäkurpitsa, munakoiso, paprika ja tomaatti maustuvat yrteillä ja oliiviöljyllä.
-
 ## Valmistus
 
-1. Paista munakoiso pannulla kahdessa erässä oliiviöljyssä pehmeäksi. Nosta sivuun.
-2. Lisää pannulle tarvittaessa öljyä. Kuullota sipuli ja paprika 5 minuuttia, lisää valkosipuli.
-3. Lisää kesäkurpitsa, tomaatit, timjami, suola ja pippuri. Peitä ja hauduta miedolla lämmöllä 20 minuuttia.
-4. Sekoita munakoiso takaisin pannulle ja hauduta vielä 10–15 minuuttia, kunnes kasvikset ovat pehmeitä mutta säilyttävät muotonsa.
-5. Viimeistele basilikalla. Tarjoa sellaisenaan tai lisäkkeenä.
+1. Pehmennä 300 g munakoisoa koko punnitussa 54 g oliiviöljymäärässä. Älä lisää muuta öljyä.
+2. Lisää 55 g sipulia, 120 g paprikaa, 9 g valkosipulia, 400 g kesäkurpitsaa ja 500 g tomaattia. Hauduta kannen alla noin 30 min.
+3. Lisää 2 g jauhettua kuivaa timjamia, 0,5 g mustapippuria ja 15 g basilikaa. Jaa kaikki kasvikset ja neste neljään annokseen. Ei leipä- tai riisilisuketta.
 
 ## Muistiinpanot
 
-- Vältä ylikypsentämistä, jotta kasviksista ei tule sosetta.
+Punnitse yllä luetellut syötävät ainekset. Kaikki lueteltu ruoka, kastike ja paistorasva kuuluvat annoksiin; erillisiä lisukkeita ei ole laskettu. Ravintoarvot ovat suuntaa-antavia ainesosalaskelmia.

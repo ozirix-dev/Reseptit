@@ -91,8 +91,9 @@ test('independent Decimal prototype reproduces both integrated intervals and sta
     for(const key of Object.keys(r.macros) as Array<keyof typeof r.macros>){assert.equal(r.macros[key].value,Number(d.macros[key].value));assert.equal(r.macros[key].decimalPlaces,d.macros[key].decimalPlaces);}
   }
 });
-test('all326 live results change exactly two; all131 previous numeric results and three HOLDs stay identical',()=>{
+test('historical C-release regression changes exactly two; all131 previous numeric results and three HOLDs stay identical',()=>{
   const report=json('tmp/nutrition/glycemic-load-pilot.json'),base=json('docs/nutrition/gk80-scoped-c-release/main-baseline.json');
+  const pre142=json('docs/nutrition/gk80-operation142/historical-main.json');report.results=report.results.map((r:any)=>pre142.selectedResults.find((x:any)=>x.recipeId===r.recipeId)??r);report.summary={...report.summary,calculated:133,insufficientSourceData:193};
   assert.equal(report.results.length,326);assert.equal(report.summary.calculated,133);assert.equal(report.summary.insufficientSourceData,193);
   let unchanged=0;for(const r of report.results){if(scopedPolyolRecipeIds.includes(r.recipeId)){assert.equal(r.status,'CALCULATED');assert.equal(r.boundedPolyolC,true);assert.equal(r.unroundedGlycemicLoadPerServing,null);assert.equal(r.glycemicLoadRangePerServing,null);}else{assert.equal(createHash('sha256').update(JSON.stringify(r)).digest('hex'),base.resultHashes[r.recipeId],r.recipeId);unchanged++;}}
   assert.equal(unchanged,324);

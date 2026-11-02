@@ -6,39 +6,45 @@ category: paaruoka
 language: fi
 status: published
 main_ingredient:
-  - broileri
-  - parsa
+- broileri
+- parsa
 cooking_method:
-  - kypsentäminen
+- liesi
 tags:
-  - kana
-  - parsa
-  - uuniruoka
+- kana
+- parsa
+- uuniruoka
 ingredients:
-  - amount: 600
-    unit: g
-    item: broilerin rintafileitä
-  - amount: 400
-    unit: g
-    item: vihreää parsaa
-  - amount: 1
-    unit: kpl
-    item: sitruuna
-  - amount: 2
-    unit: rkl
-    item: oliiviöljyä
-  - amount: 30
-    unit: g
-    item: voita
-  - amount: 1
-    unit: tl
-    item: kuivattua timjamia
-  - amount: 1
-    unit: tl
-    item: valkosipulijauhetta
-  - amount: null
-    unit: ""
-    item: suolaa ja mustapippuria
+- amount: 600
+  unit: g
+  item: broilerin rintafileitä
+- amount: 400
+  unit: g
+  item: vihreää parsaa
+- amount: 30
+  unit: g
+  item: sitruunamehua
+- amount: 27.4
+  unit: g
+  item: oliiviöljyä
+- amount: 30
+  unit: g
+  item: voita
+- amount: 2
+  unit: g
+  item: kuivattua jauhettua timjamia
+- amount: 3.1
+  unit: g
+  item: valkosipulijauhetta
+- amount: 0.5
+  unit: g
+  item: jauhettua mustapippuria
+- amount: 2
+  unit: g
+  item: hienoksi raastettua sitruunan ulkokuorta
+- amount: null
+  unit: ''
+  item: suolaa
 servings: 4
 time_total_min: 40
 difficulty: Helppo
@@ -47,29 +53,28 @@ image:
   alt: Sitruuna-yrttikana ja paahdettu parsa tarjoiltuna
   width: 1536
   height: 1024
-carbs_net_per_serving_g: 1.78
-carbs_total_per_serving_g: 4.33
-protein_per_serving_g: 36.34
-fat_per_serving_g: 16.09
-
+carbs_net_per_serving_g: null
+carbs_total_per_serving_g: null
+protein_per_serving_g: null
+fat_per_serving_g: null
+translation_languages:
+- en
+- sv
+- th
+translation_status:
+  en: published
+  sv: published
+  th: published
 ---
+
 # Sitruuna-yrttikana ja paahdettu parsa
-
-## Kuvaus
-
-Sitruunainen yrttikana kypsyy samalla pellillä parsan kanssa, jolloin valmistus ja siivous ovat vaivattomia.
-
-## Ainekset
-
-Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 
 ## Valmistus
 
-1. Kuumenna uuni 210 asteeseen. Aseta broileri ja parsa leivinpaperilla peitetylle pellille.
-2. Sekoita öljy, sitruunankuori ja -mehu, timjami, valkosipuli, suola ja pippuri. Valele broileri ja parsa.
-3. Lisää broilerin päälle voinokareet ja paahda 20–25 minuuttia. Käännä parsa kerran.
-4. Varmista, että broileri on kypsää, ja anna levätä 5 minuuttia.
+1. Kuumenna uuni 210 °C:seen. Aseta 600 g broilerin rintafileitä ja 400 g siistittyä parsaa vuokaan.
+2. Sekoita 27,4 g oliiviöljyä, 30 g sitruunamehua, 2 g hienoa sitruunan ulkokuoriraastetta, 2 g kuivaa timjamia, 3,1 g valkosipulijauhetta ja 0,5 g mustapippuria. Valele kana ja parsa, lisää 30 g voita nokareina ja suola.
+3. Paahda 20–25 min, kunnes broileri on kauttaaltaan kypsää. Anna levätä 5 min. Jaa kaikki kana, parsa, rasva ja vuokaneste neljään annokseen.
 
 ## Muistiinpanot
 
-Paksut fileet voivat tarvita hieman pidemmän kypsennysajan. Tarkista sisälämpötila.
+Punnitse yllä luetellut syötävät ainekset. Kaikki lueteltu ruoka, kastike ja paistorasva kuuluvat annoksiin; erillisiä lisukkeita ei ole laskettu. Ravintoarvot ovat toistaiseksi pois näkyvistä lähdetietojen tarkistuksen vuoksi.

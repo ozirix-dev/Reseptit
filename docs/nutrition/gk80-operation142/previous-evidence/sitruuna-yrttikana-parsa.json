@@ -1,0 +1,266 @@
+{
+  "recipeId": "sitruuna-yrttikana-parsa",
+  "sourceHash": "b06991a0a88f5d9d93eeb3da9aae6583ce02e97c87349784a0df7b386a335073",
+  "calculatedAt": "2026-10-24",
+  "batchId": "batch-12",
+  "servings": 4,
+  "scope": "Complete recipe divided by listed servings. Product choices and minor omission bounds are explicit in ingredient mappings. Added fats are counted as fully retained; no cooking-liquid or fat loss is assumed. These are practical estimates, not laboratory analyses.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "item": "broilerin rintafileitä",
+      "amount": 600,
+      "unit": "g",
+      "state": "raw skinless chicken breast",
+      "matchEvidence": "Raw skinless breast fillet; Fineli Release 20 record 11565.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-11565-release-20",
+        "name": "BROILERI, RINTAFILEE, NAHATON, SUIKALE, LEIKE",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/11565",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "raw skinless chicken breast",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 22.44,
+          "fat": 2.01
+        }
+      }
+    },
+    {
+      "item": "vihreää parsaa",
+      "amount": 400,
+      "unit": "g",
+      "state": "raw green asparagus",
+      "matchEvidence": "Raw green asparagus; AFCD record F000155.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "afcd-F000155-release-3",
+        "name": "Asparagus, green, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "raw green asparagus",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 1.4,
+          "fibre": 2.2,
+          "polyols": 0,
+          "protein": 2.5,
+          "fat": 0.1
+        }
+      }
+    },
+    {
+      "item": "sitruuna",
+      "amount": 1,
+      "unit": "kpl",
+      "state": "peeled raw lemon",
+      "matchEvidence": "Peeled raw lemon; Fineli record 11048.",
+      "gramsPerUnit": 58,
+      "conversionEvidence": "Edible portion set to 58 g per medium peeled lemon; Fineli peeled lemon record 11048.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-11048-release-20",
+        "name": "SITRUUNA, KUORITTU",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/11048",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "peeled raw lemon",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 2.2,
+          "FIBT": 2.4,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 2.2,
+          "fibre": 2.4,
+          "polyols": 0,
+          "protein": 0.62,
+          "fat": 0.17
+        }
+      }
+    },
+    {
+      "item": "oliiviöljyä",
+      "amount": 2,
+      "unit": "rkl",
+      "state": "olive oil",
+      "matchEvidence": "Olive oil; Fineli record 536.",
+      "gramsPerUnit": 13.7,
+      "conversionEvidence": "Ingredient-specific household measure conversion: 13.7 g per rkl; recipe quantity converted to edible mass.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-536-release-20",
+        "name": "OLIIVIÖLJY",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/536",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "olive oil",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 100
+        }
+      }
+    },
+    {
+      "item": "voita",
+      "amount": 30,
+      "unit": "g",
+      "state": "butter",
+      "matchEvidence": "Butter; Fineli record 500.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "record": {
+        "id": "fineli-500-release-20",
+        "name": "VOI",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/500",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "butter",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0.8,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0.8,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 1.19,
+          "fat": 81.3
+        }
+      }
+    },
+    {
+      "item": "kuivattua timjamia",
+      "amount": 1,
+      "unit": "tl",
+      "state": "documented low-impact seasoning or nutrient-free item",
+      "matchEvidence": "Explicit omission, bounded under project omission tolerance.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "excludedReason": "Small measured amount of dried thyme omitted because Fineli macro fields are incomplete.",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 0.5,
+        "netCarbohydrate": 0.1,
+        "totalCarbohydrate": 0.2,
+        "protein": 0.03,
+        "fat": 0.02
+      },
+      "omissionImpactEvidence": "Per-serving upper bound covers the recipe teaspoon divided across servings and stays within project tolerance."
+    },
+    {
+      "item": "valkosipulijauhetta",
+      "amount": 1,
+      "unit": "tl",
+      "state": "documented low-impact seasoning or nutrient-free item",
+      "matchEvidence": "Explicit omission, bounded under project omission tolerance.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "excludedReason": "Excluded low-impact valkosipulijauhetta; exact nutrient impact is bounded per serving.",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 1,
+        "netCarbohydrate": 0.2,
+        "totalCarbohydrate": 0.3,
+        "protein": 0.1,
+        "fat": 0.1
+      },
+      "omissionImpactEvidence": "Low-dose seasoning or garnish omitted; per-serving upper bound is conservatively budgeted below the project limits."
+    },
+    {
+      "item": "suolaa ja mustapippuria",
+      "amount": null,
+      "unit": "",
+      "state": "documented low-impact seasoning or nutrient-free item",
+      "matchEvidence": "Explicit omission, bounded under project omission tolerance.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient basis is the documented edible amount",
+      "retainedFraction": 1,
+      "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
+      "excludedReason": "Omitted suolaa ja mustapippuria; the per-serving nutrient upper bound is recorded.",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 0,
+        "netCarbohydrate": 0,
+        "totalCarbohydrate": 0,
+        "protein": 0,
+        "fat": 0
+      },
+      "omissionImpactEvidence": "Salt contributes none of the four displayed macronutrients."
+    }
+  ]
+}

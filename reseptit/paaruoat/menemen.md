@@ -5,10 +5,10 @@ url_slug: menemen
 category: paaruoka
 language: fi
 status: published
-carbs_net_per_serving_g: 8.06
-carbs_total_per_serving_g: 11.47
-protein_per_serving_g: 10.77
-fat_per_serving_g: 16.32
+carbs_net_per_serving_g: 6.87
+carbs_total_per_serving_g: 8.7
+protein_per_serving_g: 10.74
+fat_per_serving_g: 16.35
 servings: 3
 time_total_min: 25
 main_ingredient:
@@ -28,59 +28,50 @@ image:
   width: 1279
   height: 853
 ingredients:
-  - amount: 4
-    unit: kpl
-    item: kananmunaa
-  - amount: 3
-    unit: kpl
-    item: kypsää tomaattia
-    note: kuutioina
-  - amount: 1
-    unit: kpl
+  - amount: 220
+    unit: g
+    item: kuoretonta kananmunaa
+  - amount: 375
+    unit: g
+    item: tomaattia
+  - amount: 170
+    unit: g
     item: vihreää paprikaa
-    note: paloiteltuna
-  - amount: 1
-    unit: kpl
-    item: sipuli
-    note: hienonnettuna
-  - amount: 2
-    unit: rkl
+  - amount: 55
+    unit: g
+    item: sipulia
+  - amount: 27
+    unit: g
     item: oliiviöljyä
-  - amount: 0.5
-    unit: tl
+  - amount: 1
+    unit: g
     item: paprikajauhetta
   - amount: 0.5
-    unit: tl
-    item: suolaa
-  - amount: 0.25
-    unit: tl
-    item: mustapippuria
+    unit: g
+    item: jauhettua mustapippuria
   - amount: 10
     unit: g
     item: tuoretta persiljaa
-    note: silputtuna
+  - amount: null
+    unit: ""
+    item: suolaa maun mukaan
 translation_languages:
   - en
   - sv
   - th
-translation_status: {en: published, sv: published, th: published}
+translation_status:
+  en: published
+  sv: published
+  th: published
 ---
-
 # Turkkilainen menemen tomaateilla ja paprikalla
-
-Menemenissä kananmunat kypsyvät pehmeästi tomaatti- ja paprikaseoksessa. Tarjoa tuoreen leivän kanssa.
-
-## Kuvaus
-
-Menemenissä kananmunat kypsyvät pehmeästi tomaatti- ja paprikaseoksessa. Tarjoa tuoreen leivän kanssa.
 
 ## Valmistus
 
-1. Kuumenna oliiviöljy pannulla. Kuullota sipuli ja paprika pehmeiksi noin 6 minuuttia.
-2. Lisää tomaatit ja paprikajauhe. Hauduta, kunnes tomaatit ovat hajonneet ja neste hieman haihtunut.
-3. Riko kananmunat pannulle. Sekoita varovasti, kunnes valkuaiset ovat juuri hyytyneet mutta seos on vielä pehmeä.
-4. Mausta suolalla ja pippurilla. Viimeistele persiljalla ja tarjoa heti.
+1. Kuullota kaikki punnittu sipuli ja vihreä paprika öljyssä. Lisää tomaatti ja paprikajauhe, hauduta pehmeäksi.
+2. Lisää 220 g kuoretonta kananmunaa ja kypsennä varovasti sekoittaen. Lisää persilja ja 0,5 g mustapippuria, mausta suolalla.
+3. Jaa koko pannullinen nesteineen kolmeen annokseen. Ei pois jätettävää sipulivaihtoehtoa tässä versiossa.
 
 ## Muistiinpanot
 
-- Joissain versioissa sipulia ei käytetä; voit jättää sen pois.
+Punnitse yllä luetellut syötävät ainekset. Kaikki lueteltu ruoka, kastike ja paistorasva kuuluvat annoksiin; erillisiä lisukkeita ei ole laskettu. Ravintoarvot ovat suuntaa-antavia ainesosalaskelmia.

@@ -159,6 +159,7 @@ export function glycemicLoadEvidenceHash(
         id: record.id,
         gi: record.gi,
         ...(record.calculationUse ? { calculationUse: record.calculationUse } : {}),
+        ...(record.evidenceKind ? { evidenceKind: record.evidenceKind } : {}),
         foodKey: normalizeText(record.foodKey),
         preparationKey: normalizeText(record.preparationKey),
         qualityTier: record.qualityTier,
@@ -176,4 +177,10 @@ export function glycemicLoadEvidenceHash(
       } : { id, missing: true };
     }),
   })).digest("hex");
+}
+
+/** Exact reviewed preparation and locale text, distinct from structural input hash. */
+export function exactRecipeTextBindingMatches(expected: string | null | undefined, markdown: string): boolean {
+  const current = createHash("sha256").update(markdown.replaceAll("\r\n", "\n")).digest("hex");
+  return recipeBindingMatches(expected, current);
 }

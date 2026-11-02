@@ -12717,5 +12717,2854 @@
       "protein": 2,
       "fat": 0.2
     }
+  },
+  {
+    "id": "op142-fineli-362",
+    "name": "MUNAKOISO",
+    "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/362",
+    "retrievedAt": "2026-11-02",
+    "licence": "THL Fineli Rel20 CC BY4.0",
+    "state": "RAW",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Frozen Fineli explicitly reported SUGOH; missing stays unknown",
+    "per100g": {
+      "carbohydrate": 3.1,
+      "fibre": 2.5,
+      "polyols": 0.0,
+      "protein": 0.5,
+      "fat": 0.2
+    },
+    "primaryReference": {
+      "source_id": "362",
+      "name": "MUNAKOISO",
+      "food_type": "FOOD",
+      "process": "RAW",
+      "edible_portion_percent": 100.0,
+      "ingredient_class": "VEGFRU",
+      "food_class": "VEGFRESH",
+      "per100g": {
+        "available_carbohydrate_g_per_100g": 3.1,
+        "fibre_g_per_100g": 2.5,
+        "polyols_g_per_100g": 0.0,
+        "protein_g_per_100g": 0.5,
+        "fat_g_per_100g": 0.2
+      },
+      "component_provenance": {
+        "fat_g_per_100g": {
+          "acquisition_type": "F",
+          "method_type": "E",
+          "method_indicator": "MIR003"
+        },
+        "available_carbohydrate_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MI0181"
+        },
+        "protein_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MI0123"
+        },
+        "polyols_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "U",
+          "method_indicator": "MIR007"
+        },
+        "fibre_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MI0172"
+        }
+      },
+      "portion_mass_g": {
+        "KPL_S": 200.0,
+        "KPL_M": 400.0,
+        "KPL_L": 500.0,
+        "DL": 30.0
+      }
+    }
+  },
+  {
+    "id": "op142-fineli-389",
+    "name": "KESÄKURPITSA, ZUCCHINI",
+    "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/389",
+    "retrievedAt": "2026-11-02",
+    "licence": "THL Fineli Rel20 CC BY4.0",
+    "state": "RAW",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Frozen Fineli explicitly reported SUGOH; missing stays unknown",
+    "per100g": {
+      "carbohydrate": 2.5,
+      "fibre": 2.0,
+      "polyols": 0.0,
+      "protein": 0.65,
+      "fat": 0.4
+    },
+    "primaryReference": {
+      "source_id": "389",
+      "name": "KESÄKURPITSA, ZUCCHINI",
+      "food_type": "FOOD",
+      "process": "RAW",
+      "edible_portion_percent": 100.0,
+      "ingredient_class": "VEGFRU",
+      "food_class": "VEGFRESH",
+      "per100g": {
+        "available_carbohydrate_g_per_100g": 2.5,
+        "fibre_g_per_100g": 2.0,
+        "polyols_g_per_100g": 0.0,
+        "protein_g_per_100g": 0.65,
+        "fat_g_per_100g": 0.4
+      },
+      "component_provenance": {
+        "fat_g_per_100g": {
+          "acquisition_type": "F",
+          "method_type": "E",
+          "method_indicator": "MIR003"
+        },
+        "available_carbohydrate_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MI0181"
+        },
+        "protein_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "T",
+          "method_indicator": "MI0123"
+        },
+        "polyols_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "IG",
+          "method_indicator": "MIR003"
+        },
+        "fibre_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MI0172"
+        }
+      },
+      "portion_mass_g": {
+        "KPL_S": 200.0,
+        "KPL_M": 350.0,
+        "KPL_L": 450.0
+      }
+    }
+  },
+  {
+    "id": "op142-fineli-386",
+    "name": "PAPRIKA, PUNAINEN",
+    "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/386",
+    "retrievedAt": "2026-11-02",
+    "licence": "THL Fineli Rel20 CC BY4.0",
+    "state": "RAW",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Frozen Fineli explicitly reported SUGOH; missing stays unknown",
+    "per100g": {
+      "carbohydrate": 4.5,
+      "fibre": 1.9,
+      "polyols": 0.0,
+      "protein": 0.94,
+      "fat": 0.3
+    },
+    "primaryReference": {
+      "source_id": "386",
+      "name": "PAPRIKA, PUNAINEN",
+      "food_type": "FOOD",
+      "process": "RAW",
+      "edible_portion_percent": 100.0,
+      "ingredient_class": "VEGFRU",
+      "food_class": "VEGFRESH",
+      "per100g": {
+        "available_carbohydrate_g_per_100g": 4.5,
+        "fibre_g_per_100g": 1.9,
+        "polyols_g_per_100g": 0.0,
+        "protein_g_per_100g": 0.94,
+        "fat_g_per_100g": 0.3
+      },
+      "component_provenance": {
+        "fat_g_per_100g": {
+          "acquisition_type": "F",
+          "method_type": "E",
+          "method_indicator": "MIR003"
+        },
+        "available_carbohydrate_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MI0181"
+        },
+        "protein_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MI0123"
+        },
+        "polyols_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MIR006"
+        },
+        "fibre_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MI0172"
+        }
+      },
+      "portion_mass_g": {
+        "KPL_S": 120.0,
+        "KPL_M": 170.0,
+        "KPL_L": 230.0
+      }
+    }
+  },
+  {
+    "id": "op142-fineli-335",
+    "name": "SIPULI, KELTASIPULI",
+    "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/335",
+    "retrievedAt": "2026-11-02",
+    "licence": "THL Fineli Rel20 CC BY4.0",
+    "state": "RAW",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Frozen Fineli explicitly reported SUGOH; missing stays unknown",
+    "per100g": {
+      "carbohydrate": 4.8,
+      "fibre": 1.2,
+      "polyols": 0.0,
+      "protein": 1.25,
+      "fat": 0.1
+    },
+    "primaryReference": {
+      "source_id": "335",
+      "name": "SIPULI, KELTASIPULI",
+      "food_type": "FOOD",
+      "process": "RAW",
+      "edible_portion_percent": 100.0,
+      "ingredient_class": "VEGONI",
+      "food_class": "VEGFRESH",
+      "per100g": {
+        "available_carbohydrate_g_per_100g": 4.8,
+        "fibre_g_per_100g": 1.2,
+        "polyols_g_per_100g": 0.0,
+        "protein_g_per_100g": 1.25,
+        "fat_g_per_100g": 0.1
+      },
+      "component_provenance": {
+        "fat_g_per_100g": {
+          "acquisition_type": "F",
+          "method_type": "E",
+          "method_indicator": "MIR003"
+        },
+        "available_carbohydrate_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MI0181"
+        },
+        "protein_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "T",
+          "method_indicator": "MI0123"
+        },
+        "polyols_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MIR006"
+        },
+        "fibre_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MI0172"
+        }
+      },
+      "portion_mass_g": {
+        "KPL_S": 30.0,
+        "KPL_M": 55.0,
+        "KPL_L": 200.0,
+        "DL": 90.0
+      }
+    }
+  },
+  {
+    "id": "op142-fineli-393",
+    "name": "VALKOSIPULI",
+    "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/393",
+    "retrievedAt": "2026-11-02",
+    "licence": "THL Fineli Rel20 CC BY4.0",
+    "state": "RAW",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Frozen Fineli explicitly reported SUGOH; missing stays unknown",
+    "per100g": {
+      "carbohydrate": 16.3,
+      "fibre": null,
+      "polyols": 0.0,
+      "protein": 7.9,
+      "fat": 0.6
+    },
+    "primaryReference": {
+      "source_id": "393",
+      "name": "VALKOSIPULI",
+      "food_type": "FOOD",
+      "process": "RAW",
+      "edible_portion_percent": 100.0,
+      "ingredient_class": "VEGONI",
+      "food_class": "VEGFRESH",
+      "per100g": {
+        "available_carbohydrate_g_per_100g": 16.3,
+        "fibre_g_per_100g": null,
+        "polyols_g_per_100g": 0.0,
+        "protein_g_per_100g": 7.9,
+        "fat_g_per_100g": 0.6
+      },
+      "component_provenance": {
+        "fat_g_per_100g": {
+          "acquisition_type": "F",
+          "method_type": "E",
+          "method_indicator": "MIR003"
+        },
+        "available_carbohydrate_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MI0181"
+        },
+        "protein_g_per_100g": {
+          "acquisition_type": "F",
+          "method_type": "E",
+          "method_indicator": "MIR003"
+        },
+        "polyols_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MIR006"
+        }
+      },
+      "portion_mass_g": {
+        "KPL_M": 3.5
+      }
+    }
+  },
+  {
+    "id": "op142-fineli-352",
+    "name": "TOMAATTI",
+    "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/352",
+    "retrievedAt": "2026-11-02",
+    "licence": "THL Fineli Rel20 CC BY4.0",
+    "state": "RAW",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Frozen Fineli explicitly reported SUGOH; missing stays unknown",
+    "per100g": {
+      "carbohydrate": 3.45,
+      "fibre": 0.4,
+      "polyols": 0.0,
+      "protein": 0.55,
+      "fat": 0.3
+    },
+    "primaryReference": {
+      "source_id": "352",
+      "name": "TOMAATTI",
+      "food_type": "FOOD",
+      "process": "RAW",
+      "edible_portion_percent": 100.0,
+      "ingredient_class": "VEGFRU",
+      "food_class": "VEGFRESH",
+      "per100g": {
+        "available_carbohydrate_g_per_100g": 3.45,
+        "fibre_g_per_100g": 0.4,
+        "polyols_g_per_100g": 0.0,
+        "protein_g_per_100g": 0.55,
+        "fat_g_per_100g": 0.3
+      },
+      "component_provenance": {
+        "fat_g_per_100g": {
+          "acquisition_type": "F",
+          "method_type": "E",
+          "method_indicator": "MIR003"
+        },
+        "available_carbohydrate_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MI0181"
+        },
+        "protein_g_per_100g": {
+          "acquisition_type": "D",
+          "method_type": "AG",
+          "method_indicator": "MI0123"
+        },
+        "polyols_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MIR006"
+        },
+        "fibre_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MI0172"
+        }
+      },
+      "portion_mass_g": {
+        "KPL_S": 75.0,
+        "KPL_M": 125.0,
+        "KPL_L": 170.0
+      }
+    }
+  },
+  {
+    "id": "op142-fineli-536",
+    "name": "OLIIVIÖLJY",
+    "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/536",
+    "retrievedAt": "2026-11-02",
+    "licence": "THL Fineli Rel20 CC BY4.0",
+    "state": "IND",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Frozen Fineli explicitly reported SUGOH; missing stays unknown",
+    "per100g": {
+      "carbohydrate": 0.0,
+      "fibre": 0.0,
+      "polyols": 0.0,
+      "protein": 0.0,
+      "fat": 100.0
+    },
+    "primaryReference": {
+      "source_id": "536",
+      "name": "OLIIVIÖLJY",
+      "food_type": "FOOD",
+      "process": "IND",
+      "edible_portion_percent": 100.0,
+      "ingredient_class": "OIL",
+      "food_class": "OIL",
+      "per100g": {
+        "available_carbohydrate_g_per_100g": 0.0,
+        "fibre_g_per_100g": 0.0,
+        "polyols_g_per_100g": 0.0,
+        "protein_g_per_100g": 0.0,
+        "fat_g_per_100g": 100.0
+      },
+      "component_provenance": {
+        "fat_g_per_100g": {
+          "acquisition_type": "F",
+          "method_type": "E",
+          "method_indicator": "MIR003"
+        },
+        "available_carbohydrate_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "IG",
+          "method_indicator": "MIR003"
+        },
+        "protein_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MI0123"
+        },
+        "polyols_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "U",
+          "method_indicator": "MIR007"
+        },
+        "fibre_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MI0172"
+        }
+      },
+      "portion_mass_g": {
+        "DL": 90.0,
+        "RKL": 13.5,
+        "TL": 4.5
+      }
+    }
+  },
+  {
+    "id": "op142-fineli-11194",
+    "name": "TIMJAMI, KUIVATTU",
+    "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11194",
+    "retrievedAt": "2026-11-02",
+    "licence": "THL Fineli Rel20 CC BY4.0",
+    "state": "DRIE",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": false,
+    "polyolsEvidence": "",
+    "per100g": {
+      "carbohydrate": 26.94,
+      "fibre": null,
+      "polyols": null,
+      "protein": 9.1,
+      "fat": 7.4
+    },
+    "primaryReference": {
+      "source_id": "11194",
+      "name": "TIMJAMI, KUIVATTU",
+      "food_type": "FOOD",
+      "process": "DRIE",
+      "edible_portion_percent": 100.0,
+      "ingredient_class": "HERB",
+      "food_class": "SPICES",
+      "per100g": {
+        "available_carbohydrate_g_per_100g": 26.94,
+        "fibre_g_per_100g": null,
+        "polyols_g_per_100g": null,
+        "protein_g_per_100g": 9.1,
+        "fat_g_per_100g": 7.4
+      },
+      "component_provenance": {
+        "fat_g_per_100g": {
+          "acquisition_type": "F",
+          "method_type": "E",
+          "method_indicator": "MIR003"
+        },
+        "available_carbohydrate_g_per_100g": {
+          "acquisition_type": "F",
+          "method_type": "E",
+          "method_indicator": "MIR003"
+        },
+        "protein_g_per_100g": {
+          "acquisition_type": "F",
+          "method_type": "E",
+          "method_indicator": "MIR003"
+        }
+      },
+      "portion_mass_g": {
+        "RKL": 1.5,
+        "TL": 0.5
+      }
+    }
+  },
+  {
+    "id": "op142-fineli-11177",
+    "name": "MUSTAPIPPURI",
+    "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11177",
+    "retrievedAt": "2026-11-02",
+    "licence": "THL Fineli Rel20 CC BY4.0",
+    "state": "DRIE",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": false,
+    "polyolsEvidence": "",
+    "per100g": {
+      "carbohydrate": 38.31,
+      "fibre": null,
+      "polyols": null,
+      "protein": 10.9,
+      "fat": 3.3
+    },
+    "primaryReference": {
+      "source_id": "11177",
+      "name": "MUSTAPIPPURI",
+      "food_type": "FOOD",
+      "process": "DRIE",
+      "edible_portion_percent": 100.0,
+      "ingredient_class": "FLAVSEED",
+      "food_class": "SPICES",
+      "per100g": {
+        "available_carbohydrate_g_per_100g": 38.31,
+        "fibre_g_per_100g": null,
+        "polyols_g_per_100g": null,
+        "protein_g_per_100g": 10.9,
+        "fat_g_per_100g": 3.3
+      },
+      "component_provenance": {
+        "fat_g_per_100g": {
+          "acquisition_type": "F",
+          "method_type": "E",
+          "method_indicator": "MIR003"
+        },
+        "available_carbohydrate_g_per_100g": {
+          "acquisition_type": "F",
+          "method_type": "E",
+          "method_indicator": "MIR003"
+        },
+        "protein_g_per_100g": {
+          "acquisition_type": "F",
+          "method_type": "E",
+          "method_indicator": "MIR003"
+        }
+      },
+      "portion_mass_g": {
+        "RKL": 6.5,
+        "TL": 2.0
+      }
+    }
+  },
+  {
+    "id": "op142-fineli-11134",
+    "name": "BASILIKA, TUORE",
+    "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11134",
+    "retrievedAt": "2026-11-02",
+    "licence": "THL Fineli Rel20 CC BY4.0",
+    "state": "RAW",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Frozen Fineli explicitly reported SUGOH; missing stays unknown",
+    "per100g": {
+      "carbohydrate": 1.06,
+      "fibre": null,
+      "polyols": 0.0,
+      "protein": 3.13,
+      "fat": 0.65
+    },
+    "primaryReference": {
+      "source_id": "11134",
+      "name": "BASILIKA, TUORE",
+      "food_type": "FOOD",
+      "process": "RAW",
+      "edible_portion_percent": 100.0,
+      "ingredient_class": "VEGLEAF",
+      "food_class": "VEGFRESH",
+      "per100g": {
+        "available_carbohydrate_g_per_100g": 1.06,
+        "fibre_g_per_100g": null,
+        "polyols_g_per_100g": 0.0,
+        "protein_g_per_100g": 3.13,
+        "fat_g_per_100g": 0.65
+      },
+      "component_provenance": {
+        "fat_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "CG",
+          "method_indicator": "MIR003"
+        },
+        "available_carbohydrate_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MI0181"
+        },
+        "protein_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "T",
+          "method_indicator": "MI0123"
+        },
+        "polyols_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "IG",
+          "method_indicator": "MIR003"
+        }
+      },
+      "portion_mass_g": {
+        "DL": 13.0,
+        "RKL": 2.0
+      }
+    }
+  },
+  {
+    "id": "op142-fineli-11565",
+    "name": "BROILERI, RINTAFILEE, NAHATON, SUIKALE, LEIKE",
+    "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11565",
+    "retrievedAt": "2026-11-02",
+    "licence": "THL Fineli Rel20 CC BY4.0",
+    "state": "RAW",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Frozen Fineli explicitly reported SUGOH; missing stays unknown",
+    "per100g": {
+      "carbohydrate": 0.0,
+      "fibre": 0.0,
+      "polyols": 0.0,
+      "protein": 22.44,
+      "fat": 2.01
+    },
+    "primaryReference": {
+      "source_id": "11565",
+      "name": "BROILERI, RINTAFILEE, NAHATON, SUIKALE, LEIKE",
+      "food_type": "FOOD",
+      "process": "RAW",
+      "edible_portion_percent": 100.0,
+      "ingredient_class": "POULTRY",
+      "food_class": "POULTRY",
+      "per100g": {
+        "available_carbohydrate_g_per_100g": 0.0,
+        "fibre_g_per_100g": 0.0,
+        "polyols_g_per_100g": 0.0,
+        "protein_g_per_100g": 22.44,
+        "fat_g_per_100g": 2.01
+      },
+      "component_provenance": {
+        "fat_g_per_100g": {
+          "acquisition_type": "D",
+          "method_type": "AG",
+          "method_indicator": "MI1302"
+        },
+        "available_carbohydrate_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "IG",
+          "method_indicator": "MIR003"
+        },
+        "protein_g_per_100g": {
+          "acquisition_type": "D",
+          "method_type": "AG",
+          "method_indicator": "MI0123"
+        },
+        "polyols_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "U",
+          "method_indicator": "MIR007"
+        },
+        "fibre_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MI0172"
+        }
+      },
+      "portion_mass_g": {}
+    }
+  },
+  {
+    "id": "op142-fineli-11689",
+    "name": "PARSA, RAAKA, PUHDISTETTU",
+    "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11689",
+    "retrievedAt": "2026-11-02",
+    "licence": "THL Fineli Rel20 CC BY4.0",
+    "state": "RAW",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Frozen Fineli explicitly reported SUGOH; missing stays unknown",
+    "per100g": {
+      "carbohydrate": 2.0,
+      "fibre": 1.7,
+      "polyols": 0.0,
+      "protein": 2.9,
+      "fat": 0.6
+    },
+    "primaryReference": {
+      "source_id": "11689",
+      "name": "PARSA, RAAKA, PUHDISTETTU",
+      "food_type": "FOOD",
+      "process": "RAW",
+      "edible_portion_percent": 100.0,
+      "ingredient_class": "VEGLEAF",
+      "food_class": "VEGFRESH",
+      "per100g": {
+        "available_carbohydrate_g_per_100g": 2.0,
+        "fibre_g_per_100g": 1.7,
+        "polyols_g_per_100g": 0.0,
+        "protein_g_per_100g": 2.9,
+        "fat_g_per_100g": 0.6
+      },
+      "component_provenance": {
+        "fat_g_per_100g": {
+          "acquisition_type": "F",
+          "method_type": "E",
+          "method_indicator": "MIR003"
+        },
+        "available_carbohydrate_g_per_100g": {
+          "acquisition_type": "F",
+          "method_type": "E",
+          "method_indicator": "MIR003"
+        },
+        "protein_g_per_100g": {
+          "acquisition_type": "F",
+          "method_type": "E",
+          "method_indicator": "MIR003"
+        },
+        "polyols_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "IG",
+          "method_indicator": "MIR003"
+        },
+        "fibre_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MI0172"
+        }
+      },
+      "portion_mass_g": {
+        "KPL_S": 15.0,
+        "KPL_M": 35.0,
+        "KPL_L": 50.0,
+        "DL": 55.0
+      }
+    }
+  },
+  {
+    "id": "op142-fineli-11557",
+    "name": "TÄYSMEHU, SITRUUNATÄYSMEHU, LAIMENTAMATON",
+    "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11557",
+    "retrievedAt": "2026-11-02",
+    "licence": "THL Fineli Rel20 CC BY4.0",
+    "state": "MASH",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Frozen Fineli explicitly reported SUGOH; missing stays unknown",
+    "per100g": {
+      "carbohydrate": 1.6,
+      "fibre": 0.1,
+      "polyols": 0.0,
+      "protein": 0.31,
+      "fat": 0.0
+    },
+    "primaryReference": {
+      "source_id": "11557",
+      "name": "TÄYSMEHU, SITRUUNATÄYSMEHU, LAIMENTAMATON",
+      "food_type": "FOOD",
+      "process": "MASH",
+      "edible_portion_percent": 100.0,
+      "ingredient_class": "JUICE",
+      "food_class": "FRUBJUIC",
+      "per100g": {
+        "available_carbohydrate_g_per_100g": 1.6,
+        "fibre_g_per_100g": 0.1,
+        "polyols_g_per_100g": 0.0,
+        "protein_g_per_100g": 0.31,
+        "fat_g_per_100g": 0.0
+      },
+      "component_provenance": {
+        "fat_g_per_100g": {
+          "acquisition_type": "F",
+          "method_type": "E",
+          "method_indicator": "MIR003"
+        },
+        "available_carbohydrate_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MI0181"
+        },
+        "protein_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MI0123"
+        },
+        "polyols_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "IG",
+          "method_indicator": "MIR003"
+        },
+        "fibre_g_per_100g": {
+          "acquisition_type": "F",
+          "method_type": "E",
+          "method_indicator": "MIR003"
+        }
+      },
+      "portion_mass_g": {
+        "DL": 100.0,
+        "RKL": 15.0,
+        "TL": 5.0
+      }
+    }
+  },
+  {
+    "id": "op142-fineli-500",
+    "name": "VOI",
+    "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/500",
+    "retrievedAt": "2026-11-02",
+    "licence": "THL Fineli Rel20 CC BY4.0",
+    "state": "IND",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Frozen Fineli explicitly reported SUGOH; missing stays unknown",
+    "per100g": {
+      "carbohydrate": 0.8,
+      "fibre": 0.0,
+      "polyols": 0.0,
+      "protein": 1.19,
+      "fat": 81.3
+    },
+    "primaryReference": {
+      "source_id": "500",
+      "name": "VOI",
+      "food_type": "FOOD",
+      "process": "IND",
+      "edible_portion_percent": 100.0,
+      "ingredient_class": "BUTTER",
+      "food_class": "BUTTER",
+      "per100g": {
+        "available_carbohydrate_g_per_100g": 0.8,
+        "fibre_g_per_100g": 0.0,
+        "polyols_g_per_100g": 0.0,
+        "protein_g_per_100g": 1.19,
+        "fat_g_per_100g": 81.3
+      },
+      "component_provenance": {
+        "fat_g_per_100g": {
+          "acquisition_type": "F",
+          "method_type": "E",
+          "method_indicator": "MIR003"
+        },
+        "available_carbohydrate_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MI0181"
+        },
+        "protein_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MI0123"
+        },
+        "polyols_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "U",
+          "method_indicator": "MIR007"
+        },
+        "fibre_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MI0172"
+        }
+      },
+      "portion_mass_g": {
+        "DL": 95.0,
+        "RKL": 14.0,
+        "TL": 4.5
+      }
+    }
+  },
+  {
+    "id": "op142-fineli-858",
+    "name": "KANANMUNA, KUORETON",
+    "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/858",
+    "retrievedAt": "2026-11-02",
+    "licence": "THL Fineli Rel20 CC BY4.0",
+    "state": "RAW",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Frozen Fineli explicitly reported SUGOH; missing stays unknown",
+    "per100g": {
+      "carbohydrate": 0.3,
+      "fibre": 0.0,
+      "polyols": 0.0,
+      "protein": 12.61,
+      "fat": 9.24
+    },
+    "primaryReference": {
+      "source_id": "858",
+      "name": "KANANMUNA, KUORETON",
+      "food_type": "FOOD",
+      "process": "RAW",
+      "edible_portion_percent": 100.0,
+      "ingredient_class": "EGG",
+      "food_class": "EGGS",
+      "per100g": {
+        "available_carbohydrate_g_per_100g": 0.3,
+        "fibre_g_per_100g": 0.0,
+        "polyols_g_per_100g": 0.0,
+        "protein_g_per_100g": 12.61,
+        "fat_g_per_100g": 9.24
+      },
+      "component_provenance": {
+        "fat_g_per_100g": {
+          "acquisition_type": "D",
+          "method_type": "AG",
+          "method_indicator": "MI1302"
+        },
+        "available_carbohydrate_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "IG",
+          "method_indicator": "MIR003"
+        },
+        "protein_g_per_100g": {
+          "acquisition_type": "D",
+          "method_type": "AG",
+          "method_indicator": "MI0123"
+        },
+        "polyols_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "U",
+          "method_indicator": "MIR007"
+        },
+        "fibre_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "U",
+          "method_indicator": "MIR007"
+        }
+      },
+      "portion_mass_g": {
+        "KPL_M": 55.0
+      }
+    }
+  },
+  {
+    "id": "op142-fineli-387",
+    "name": "PAPRIKA, VIHREÄ",
+    "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/387",
+    "retrievedAt": "2026-11-02",
+    "licence": "THL Fineli Rel20 CC BY4.0",
+    "state": "RAW",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Frozen Fineli explicitly reported SUGOH; missing stays unknown",
+    "per100g": {
+      "carbohydrate": 2.5,
+      "fibre": 1.8,
+      "polyols": 0.0,
+      "protein": 0.94,
+      "fat": 0.3
+    },
+    "primaryReference": {
+      "source_id": "387",
+      "name": "PAPRIKA, VIHREÄ",
+      "food_type": "FOOD",
+      "process": "RAW",
+      "edible_portion_percent": 100.0,
+      "ingredient_class": "VEGFRU",
+      "food_class": "VEGFRESH",
+      "per100g": {
+        "available_carbohydrate_g_per_100g": 2.5,
+        "fibre_g_per_100g": 1.8,
+        "polyols_g_per_100g": 0.0,
+        "protein_g_per_100g": 0.94,
+        "fat_g_per_100g": 0.3
+      },
+      "component_provenance": {
+        "fat_g_per_100g": {
+          "acquisition_type": "F",
+          "method_type": "E",
+          "method_indicator": "MIR003"
+        },
+        "available_carbohydrate_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MI0181"
+        },
+        "protein_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MI0123"
+        },
+        "polyols_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MIR006"
+        },
+        "fibre_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MI0172"
+        }
+      },
+      "portion_mass_g": {
+        "KPL_S": 120.0,
+        "KPL_M": 170.0,
+        "KPL_L": 230.0
+      }
+    }
+  },
+  {
+    "id": "op142-fineli-11182",
+    "name": "PAPRIKAJAUHE",
+    "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11182",
+    "retrievedAt": "2026-11-02",
+    "licence": "THL Fineli Rel20 CC BY4.0",
+    "state": "DRIE",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": false,
+    "polyolsEvidence": "",
+    "per100g": {
+      "carbohydrate": 18.34,
+      "fibre": null,
+      "polyols": null,
+      "protein": 14.8,
+      "fat": 13.0
+    },
+    "primaryReference": {
+      "source_id": "11182",
+      "name": "PAPRIKAJAUHE",
+      "food_type": "FOOD",
+      "process": "DRIE",
+      "edible_portion_percent": 100.0,
+      "ingredient_class": "FLAVSEED",
+      "food_class": "SPICES",
+      "per100g": {
+        "available_carbohydrate_g_per_100g": 18.34,
+        "fibre_g_per_100g": null,
+        "polyols_g_per_100g": null,
+        "protein_g_per_100g": 14.8,
+        "fat_g_per_100g": 13.0
+      },
+      "component_provenance": {
+        "fat_g_per_100g": {
+          "acquisition_type": "F",
+          "method_type": "E",
+          "method_indicator": "MIR003"
+        },
+        "available_carbohydrate_g_per_100g": {
+          "acquisition_type": "F",
+          "method_type": "E",
+          "method_indicator": "MIR003"
+        },
+        "protein_g_per_100g": {
+          "acquisition_type": "F",
+          "method_type": "E",
+          "method_indicator": "MIR003"
+        }
+      },
+      "portion_mass_g": {
+        "RKL": 5.5,
+        "TL": 2.0
+      }
+    }
+  },
+  {
+    "id": "op142-fineli-333",
+    "name": "PERSILJA",
+    "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/333",
+    "retrievedAt": "2026-11-02",
+    "licence": "THL Fineli Rel20 CC BY4.0",
+    "state": "RAW",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Frozen Fineli explicitly reported SUGOH; missing stays unknown",
+    "per100g": {
+      "carbohydrate": 1.1,
+      "fibre": 2.9,
+      "polyols": 0.0,
+      "protein": 1.38,
+      "fat": 0.2
+    },
+    "primaryReference": {
+      "source_id": "333",
+      "name": "PERSILJA",
+      "food_type": "FOOD",
+      "process": "RAW",
+      "edible_portion_percent": 100.0,
+      "ingredient_class": "VEGLEAF",
+      "food_class": "VEGFRESH",
+      "per100g": {
+        "available_carbohydrate_g_per_100g": 1.1,
+        "fibre_g_per_100g": 2.9,
+        "polyols_g_per_100g": 0.0,
+        "protein_g_per_100g": 1.38,
+        "fat_g_per_100g": 0.2
+      },
+      "component_provenance": {
+        "fat_g_per_100g": {
+          "acquisition_type": "F",
+          "method_type": "E",
+          "method_indicator": "MIR003"
+        },
+        "available_carbohydrate_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MI0181"
+        },
+        "protein_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "T",
+          "method_indicator": "MI0123"
+        },
+        "polyols_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MIR006"
+        },
+        "fibre_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MI0172"
+        }
+      },
+      "portion_mass_g": {
+        "RKL": 2.0
+      }
+    }
+  },
+  {
+    "id": "op142-fineli-398",
+    "name": "TOMAATTIMURSKA",
+    "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/398",
+    "retrievedAt": "2026-11-02",
+    "licence": "THL Fineli Rel20 CC BY4.0",
+    "state": "CANN",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Frozen Fineli explicitly reported SUGOH; missing stays unknown",
+    "per100g": {
+      "carbohydrate": 3.45,
+      "fibre": 0.4,
+      "polyols": 0.0,
+      "protein": 0.55,
+      "fat": 0.2
+    },
+    "primaryReference": {
+      "source_id": "398",
+      "name": "TOMAATTIMURSKA",
+      "food_type": "FOOD",
+      "process": "CANN",
+      "edible_portion_percent": 100.0,
+      "ingredient_class": "VEGCANN",
+      "food_class": "VEGCANN",
+      "per100g": {
+        "available_carbohydrate_g_per_100g": 3.45,
+        "fibre_g_per_100g": 0.4,
+        "polyols_g_per_100g": 0.0,
+        "protein_g_per_100g": 0.55,
+        "fat_g_per_100g": 0.2
+      },
+      "component_provenance": {
+        "fat_g_per_100g": {
+          "acquisition_type": "L",
+          "method_type": "P",
+          "method_indicator": "MIR003"
+        },
+        "available_carbohydrate_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MI0181"
+        },
+        "protein_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "T",
+          "method_indicator": "MI0123"
+        },
+        "polyols_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "IG",
+          "method_indicator": "MIR003"
+        },
+        "fibre_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MI0172"
+        }
+      },
+      "portion_mass_g": {
+        "DL": 100.0,
+        "RKL": 15.0
+      }
+    }
+  },
+  {
+    "id": "op142-fineli-34234",
+    "name": "SIPULI, PUNASIPULI",
+    "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/34234",
+    "retrievedAt": "2026-11-02",
+    "licence": "THL Fineli Rel20 CC BY4.0",
+    "state": "RAW",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Frozen Fineli explicitly reported SUGOH; missing stays unknown",
+    "per100g": {
+      "carbohydrate": 5.447,
+      "fibre": 1.2,
+      "polyols": 0.0,
+      "protein": 1.506,
+      "fat": 0.114
+    },
+    "primaryReference": {
+      "source_id": "34234",
+      "name": "SIPULI, PUNASIPULI",
+      "food_type": "FOOD",
+      "process": "RAW",
+      "edible_portion_percent": 100.0,
+      "ingredient_class": "VEGONI",
+      "food_class": "VEGFRESH",
+      "per100g": {
+        "available_carbohydrate_g_per_100g": 5.447,
+        "fibre_g_per_100g": 1.2,
+        "polyols_g_per_100g": 0.0,
+        "protein_g_per_100g": 1.506,
+        "fat_g_per_100g": 0.114
+      },
+      "component_provenance": {
+        "fat_g_per_100g": {
+          "acquisition_type": "D",
+          "method_type": "AG",
+          "method_indicator": "MI1302"
+        },
+        "available_carbohydrate_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MI0181"
+        },
+        "protein_g_per_100g": {
+          "acquisition_type": "D",
+          "method_type": "AG",
+          "method_indicator": "MI0123"
+        },
+        "polyols_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "I",
+          "method_indicator": "MIR006"
+        },
+        "fibre_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MI0172"
+        }
+      },
+      "portion_mass_g": {
+        "KPL_S": 30.0,
+        "KPL_M": 55.0,
+        "KPL_L": 200.0,
+        "DL": 90.0
+      }
+    }
+  },
+  {
+    "id": "op142-fineli-11057",
+    "name": "AVOKADO, KUORITTU, KIVETÖN",
+    "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11057",
+    "retrievedAt": "2026-11-02",
+    "licence": "THL Fineli Rel20 CC BY4.0",
+    "state": "RAW",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Frozen Fineli explicitly reported SUGOH; missing stays unknown",
+    "per100g": {
+      "carbohydrate": 0.77,
+      "fibre": 3.6,
+      "polyols": 0.0,
+      "protein": 2.63,
+      "fat": 19.4
+    },
+    "primaryReference": {
+      "source_id": "11057",
+      "name": "AVOKADO, KUORITTU, KIVETÖN",
+      "food_type": "FOOD",
+      "process": "RAW",
+      "edible_portion_percent": 100.0,
+      "ingredient_class": "FRUITOTH",
+      "food_class": "FRUFRESH",
+      "per100g": {
+        "available_carbohydrate_g_per_100g": 0.77,
+        "fibre_g_per_100g": 3.6,
+        "polyols_g_per_100g": 0.0,
+        "protein_g_per_100g": 2.63,
+        "fat_g_per_100g": 19.4
+      },
+      "component_provenance": {
+        "fat_g_per_100g": {
+          "acquisition_type": "F",
+          "method_type": "E",
+          "method_indicator": "MIR003"
+        },
+        "available_carbohydrate_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MI0181"
+        },
+        "protein_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MI0123"
+        },
+        "polyols_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "IG",
+          "method_indicator": "MIR003"
+        },
+        "fibre_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MI0172"
+        }
+      },
+      "portion_mass_g": {
+        "KPL_S": 100.0,
+        "KPL_M": 120.0
+      }
+    }
+  },
+  {
+    "id": "op142-fineli-698",
+    "name": "JUUSTO, CHEDDAR, RASVAA 34 %",
+    "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/698",
+    "retrievedAt": "2026-11-02",
+    "licence": "THL Fineli Rel20 CC BY4.0",
+    "state": "IND",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Frozen Fineli explicitly reported SUGOH; missing stays unknown",
+    "per100g": {
+      "carbohydrate": 0.1,
+      "fibre": 0.0,
+      "polyols": 0.0,
+      "protein": 25.63,
+      "fat": 34.4
+    },
+    "primaryReference": {
+      "source_id": "698",
+      "name": "JUUSTO, CHEDDAR, RASVAA 34 %",
+      "food_type": "FOOD",
+      "process": "IND",
+      "edible_portion_percent": 100.0,
+      "ingredient_class": "CHEECUHI",
+      "food_class": "CHEESCUR",
+      "per100g": {
+        "available_carbohydrate_g_per_100g": 0.1,
+        "fibre_g_per_100g": 0.0,
+        "polyols_g_per_100g": 0.0,
+        "protein_g_per_100g": 25.63,
+        "fat_g_per_100g": 34.4
+      },
+      "component_provenance": {
+        "fat_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "CG",
+          "method_indicator": "MIR003"
+        },
+        "available_carbohydrate_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MI0181"
+        },
+        "protein_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MI0123"
+        },
+        "polyols_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "U",
+          "method_indicator": "MIR007"
+        },
+        "fibre_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "U",
+          "method_indicator": "MIR003"
+        }
+      },
+      "portion_mass_g": {
+        "KPL_M": 20.0
+      }
+    }
+  },
+  {
+    "id": "op142-fineli-34238",
+    "name": "KORIANTERI, TUORE",
+    "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/34238",
+    "retrievedAt": "2026-11-02",
+    "licence": "THL Fineli Rel20 CC BY4.0",
+    "state": "RAW",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Frozen Fineli explicitly reported SUGOH; missing stays unknown",
+    "per100g": {
+      "carbohydrate": 0.505,
+      "fibre": null,
+      "polyols": 0.0,
+      "protein": 2.444,
+      "fat": 0.403
+    },
+    "primaryReference": {
+      "source_id": "34238",
+      "name": "KORIANTERI, TUORE",
+      "food_type": "FOOD",
+      "process": "RAW",
+      "edible_portion_percent": 100.0,
+      "ingredient_class": "VEGLEAF",
+      "food_class": "VEGFRESH",
+      "per100g": {
+        "available_carbohydrate_g_per_100g": 0.505,
+        "fibre_g_per_100g": null,
+        "polyols_g_per_100g": 0.0,
+        "protein_g_per_100g": 2.444,
+        "fat_g_per_100g": 0.403
+      },
+      "component_provenance": {
+        "fat_g_per_100g": {
+          "acquisition_type": "D",
+          "method_type": "AG",
+          "method_indicator": "MI1302"
+        },
+        "available_carbohydrate_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MI0181"
+        },
+        "protein_g_per_100g": {
+          "acquisition_type": "D",
+          "method_type": "AG",
+          "method_indicator": "MI0123"
+        },
+        "polyols_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "U",
+          "method_indicator": "MIR007"
+        }
+      },
+      "portion_mass_g": {
+        "DL": 13.0
+      }
+    }
+  },
+  {
+    "id": "op142-fineli-718",
+    "name": "NAUDANPAISTI",
+    "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/718",
+    "retrievedAt": "2026-11-02",
+    "licence": "THL Fineli Rel20 CC BY4.0",
+    "state": "RAW",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Frozen Fineli explicitly reported SUGOH; missing stays unknown",
+    "per100g": {
+      "carbohydrate": 0.0,
+      "fibre": 0.0,
+      "polyols": 0.0,
+      "protein": 21.65,
+      "fat": 2.88
+    },
+    "primaryReference": {
+      "source_id": "718",
+      "name": "NAUDANPAISTI",
+      "food_type": "FOOD",
+      "process": "RAW",
+      "edible_portion_percent": 100.0,
+      "ingredient_class": "BEEF",
+      "food_class": "MSTEAK",
+      "per100g": {
+        "available_carbohydrate_g_per_100g": 0.0,
+        "fibre_g_per_100g": 0.0,
+        "polyols_g_per_100g": 0.0,
+        "protein_g_per_100g": 21.65,
+        "fat_g_per_100g": 2.88
+      },
+      "component_provenance": {
+        "fat_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "CG",
+          "method_indicator": "MIR002"
+        },
+        "available_carbohydrate_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "IG",
+          "method_indicator": "MIR003"
+        },
+        "protein_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "CG",
+          "method_indicator": "MIR003"
+        },
+        "polyols_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "U",
+          "method_indicator": "MIR007"
+        },
+        "fibre_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "IG",
+          "method_indicator": "MIR003"
+        }
+      },
+      "portion_mass_g": {
+        "KPL_S": 200.0,
+        "KPL_L": 300.0,
+        "KPL_M": 250.0
+      }
+    }
+  },
+  {
+    "id": "op142-fineli-354",
+    "name": "TOMAATTISOSE, TOMAATTIPYREE",
+    "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/354",
+    "retrievedAt": "2026-11-02",
+    "licence": "THL Fineli Rel20 CC BY4.0",
+    "state": "CANN",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Frozen Fineli explicitly reported SUGOH; missing stays unknown",
+    "per100g": {
+      "carbohydrate": 7.95,
+      "fibre": 1.0,
+      "polyols": 0.0,
+      "protein": 4.5,
+      "fat": 0.452
+    },
+    "primaryReference": {
+      "source_id": "354",
+      "name": "TOMAATTISOSE, TOMAATTIPYREE",
+      "food_type": "FOOD",
+      "process": "CANN",
+      "edible_portion_percent": 100.0,
+      "ingredient_class": "VEGCANN",
+      "food_class": "SPISAUCE",
+      "per100g": {
+        "available_carbohydrate_g_per_100g": 7.95,
+        "fibre_g_per_100g": 1.0,
+        "polyols_g_per_100g": 0.0,
+        "protein_g_per_100g": 4.5,
+        "fat_g_per_100g": 0.452
+      },
+      "component_provenance": {
+        "fat_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "R",
+          "method_indicator": "MI0002"
+        },
+        "available_carbohydrate_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MI0181"
+        },
+        "protein_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "CG",
+          "method_indicator": "MI0123"
+        },
+        "polyols_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "U",
+          "method_indicator": "MIR007"
+        },
+        "fibre_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MI0172"
+        }
+      },
+      "portion_mass_g": {
+        "DL": 90.0
+      }
+    }
+  },
+  {
+    "id": "op142-fineli-29",
+    "name": "LIHALIEMI, LAIMENNETTU",
+    "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/29",
+    "retrievedAt": "2026-11-02",
+    "licence": "THL Fineli Rel20 CC BY4.0",
+    "state": "BOIL",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Frozen Fineli explicitly reported SUGOH; missing stays unknown",
+    "per100g": {
+      "carbohydrate": 3.0,
+      "fibre": 0.017,
+      "polyols": 0.0,
+      "protein": 0.34,
+      "fat": 0.6
+    },
+    "primaryReference": {
+      "source_id": "29",
+      "name": "LIHALIEMI, LAIMENNETTU",
+      "food_type": "DISH",
+      "process": "BOIL",
+      "edible_portion_percent": 100.0,
+      "ingredient_class": "DISH",
+      "food_class": "SAVSAUCE",
+      "per100g": {
+        "available_carbohydrate_g_per_100g": 3.0,
+        "fibre_g_per_100g": 0.017,
+        "polyols_g_per_100g": 0.0,
+        "protein_g_per_100g": 0.34,
+        "fat_g_per_100g": 0.6
+      },
+      "component_provenance": {
+        "fat_g_per_100g": {
+          "acquisition_type": "F",
+          "method_type": "E",
+          "method_indicator": "MIR003"
+        },
+        "available_carbohydrate_g_per_100g": {
+          "acquisition_type": "F",
+          "method_type": "E",
+          "method_indicator": "MIR003"
+        },
+        "protein_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "CG",
+          "method_indicator": "MIR003"
+        },
+        "polyols_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "R",
+          "method_indicator": "MI0002"
+        },
+        "fibre_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "R",
+          "method_indicator": "MI0002"
+        }
+      },
+      "portion_mass_g": {
+        "DL": 100.0,
+        "RKL": 15.0,
+        "TL": 5.0
+      }
+    }
+  },
+  {
+    "id": "op142-fineli-630",
+    "name": "SMETANA, RASVAA N. 40 %",
+    "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/630",
+    "retrievedAt": "2026-11-02",
+    "licence": "THL Fineli Rel20 CC BY4.0",
+    "state": "IND",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": false,
+    "polyolsEvidence": "",
+    "per100g": {
+      "carbohydrate": 2.2,
+      "fibre": 0.0,
+      "polyols": null,
+      "protein": 2.13,
+      "fat": 42.0
+    },
+    "primaryReference": {
+      "source_id": "630",
+      "name": "SMETANA, RASVAA N. 40 %",
+      "food_type": "FOOD",
+      "process": "IND",
+      "edible_portion_percent": 100.0,
+      "ingredient_class": "SOUCREAM",
+      "food_class": "SOUCREAM",
+      "per100g": {
+        "available_carbohydrate_g_per_100g": 2.2,
+        "fibre_g_per_100g": 0.0,
+        "polyols_g_per_100g": null,
+        "protein_g_per_100g": 2.13,
+        "fat_g_per_100g": 42.0
+      },
+      "component_provenance": {
+        "fat_g_per_100g": {
+          "acquisition_type": "L",
+          "method_type": "P",
+          "method_indicator": "MIR003"
+        },
+        "available_carbohydrate_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MI0181"
+        },
+        "protein_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MI0123"
+        },
+        "fibre_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MI0172"
+        }
+      },
+      "portion_mass_g": {
+        "DL": 100.0,
+        "RKL": 15.0,
+        "TL": 5.0
+      }
+    }
+  },
+  {
+    "id": "op142-fineli-339",
+    "name": "LEHTISELLERI, VARSISELLERI",
+    "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/339",
+    "retrievedAt": "2026-11-02",
+    "licence": "THL Fineli Rel20 CC BY4.0",
+    "state": "RAW",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Frozen Fineli explicitly reported SUGOH; missing stays unknown",
+    "per100g": {
+      "carbohydrate": 1.1,
+      "fibre": 2.5,
+      "polyols": 0.0,
+      "protein": 1.12,
+      "fat": 0.2
+    },
+    "primaryReference": {
+      "source_id": "339",
+      "name": "LEHTISELLERI, VARSISELLERI",
+      "food_type": "FOOD",
+      "process": "RAW",
+      "edible_portion_percent": 100.0,
+      "ingredient_class": "VEGLEAF",
+      "food_class": "VEGFRESH",
+      "per100g": {
+        "available_carbohydrate_g_per_100g": 1.1,
+        "fibre_g_per_100g": 2.5,
+        "polyols_g_per_100g": 0.0,
+        "protein_g_per_100g": 1.12,
+        "fat_g_per_100g": 0.2
+      },
+      "component_provenance": {
+        "fat_g_per_100g": {
+          "acquisition_type": "F",
+          "method_type": "E",
+          "method_indicator": "MIR003"
+        },
+        "available_carbohydrate_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MI0181"
+        },
+        "protein_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MI0123"
+        },
+        "polyols_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MIR006"
+        },
+        "fibre_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MI0172"
+        }
+      },
+      "portion_mass_g": {
+        "KPL_S": 335.0,
+        "KPL_M": 380.0,
+        "KPL_L": 530.0,
+        "DL": 50.0
+      }
+    }
+  },
+  {
+    "id": "op142-fineli-28938",
+    "name": "OLIIVI, KESKIARVO, KIVETÖN, ÖLJYSSÄ, VIHREÄ/MUSTA",
+    "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/28938",
+    "retrievedAt": "2026-11-02",
+    "licence": "THL Fineli Rel20 CC BY4.0",
+    "state": "CANN",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": false,
+    "polyolsEvidence": "",
+    "per100g": {
+      "carbohydrate": 0.0,
+      "fibre": 2.9,
+      "polyols": null,
+      "protein": 1.38,
+      "fat": 20.0
+    },
+    "primaryReference": {
+      "source_id": "28938",
+      "name": "OLIIVI, KESKIARVO, KIVETÖN, ÖLJYSSÄ, VIHREÄ/MUSTA",
+      "food_type": "FOOD",
+      "process": "CANN",
+      "edible_portion_percent": 100.0,
+      "ingredient_class": "FRUITOTH",
+      "food_class": "VEGCANN",
+      "per100g": {
+        "available_carbohydrate_g_per_100g": 0.0,
+        "fibre_g_per_100g": 2.9,
+        "polyols_g_per_100g": null,
+        "protein_g_per_100g": 1.38,
+        "fat_g_per_100g": 20.0
+      },
+      "component_provenance": {
+        "fat_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "CG",
+          "method_indicator": "MIR003"
+        },
+        "available_carbohydrate_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MI0181"
+        },
+        "protein_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "T",
+          "method_indicator": "MI0123"
+        },
+        "fibre_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MI0172"
+        }
+      },
+      "portion_mass_g": {
+        "KPL_M": 4.0,
+        "DL": 30.0
+      }
+    }
+  },
+  {
+    "id": "op142-fineli-929",
+    "name": "VIINIETIKKA",
+    "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/929",
+    "retrievedAt": "2026-11-02",
+    "licence": "THL Fineli Rel20 CC BY4.0",
+    "state": "IND",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Frozen Fineli explicitly reported SUGOH; missing stays unknown",
+    "per100g": {
+      "carbohydrate": 0.5,
+      "fibre": 0.0,
+      "polyols": 0.0,
+      "protein": 0.0,
+      "fat": 0.0
+    },
+    "primaryReference": {
+      "source_id": "929",
+      "name": "VIINIETIKKA",
+      "food_type": "FOOD",
+      "process": "IND",
+      "edible_portion_percent": 100.0,
+      "ingredient_class": "FLAVSAUC",
+      "food_class": "SPISAUCE",
+      "per100g": {
+        "available_carbohydrate_g_per_100g": 0.5,
+        "fibre_g_per_100g": 0.0,
+        "polyols_g_per_100g": 0.0,
+        "protein_g_per_100g": 0.0,
+        "fat_g_per_100g": 0.0
+      },
+      "component_provenance": {
+        "fat_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "U",
+          "method_indicator": "MIR007"
+        },
+        "available_carbohydrate_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MI0181"
+        },
+        "protein_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "IG",
+          "method_indicator": "MIR003"
+        },
+        "polyols_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "U",
+          "method_indicator": "MIR003"
+        },
+        "fibre_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MI0172"
+        }
+      },
+      "portion_mass_g": {
+        "DL": 100.0,
+        "RKL": 15.0,
+        "TL": 5.0
+      }
+    }
+  },
+  {
+    "id": "op142-fineli-1",
+    "name": "SOKERI",
+    "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/1",
+    "retrievedAt": "2026-11-02",
+    "licence": "THL Fineli Rel20 CC BY4.0",
+    "state": "IND",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Frozen Fineli explicitly reported SUGOH; missing stays unknown",
+    "per100g": {
+      "carbohydrate": 99.9,
+      "fibre": 0.0,
+      "polyols": 0.0,
+      "protein": 0.0,
+      "fat": 0.0
+    },
+    "primaryReference": {
+      "source_id": "1",
+      "name": "SOKERI",
+      "food_type": "FOOD",
+      "process": "IND",
+      "edible_portion_percent": 100.0,
+      "ingredient_class": "SUGARSYR",
+      "food_class": "SUGADD",
+      "per100g": {
+        "available_carbohydrate_g_per_100g": 99.9,
+        "fibre_g_per_100g": 0.0,
+        "polyols_g_per_100g": 0.0,
+        "protein_g_per_100g": 0.0,
+        "fat_g_per_100g": 0.0
+      },
+      "component_provenance": {
+        "fat_g_per_100g": {
+          "acquisition_type": "F",
+          "method_type": "E",
+          "method_indicator": "MIR003"
+        },
+        "available_carbohydrate_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MI0181"
+        },
+        "protein_g_per_100g": {
+          "acquisition_type": "L",
+          "method_type": "P",
+          "method_indicator": "MIR003"
+        },
+        "polyols_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "U",
+          "method_indicator": "MIR007"
+        },
+        "fibre_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MI0172"
+        }
+      },
+      "portion_mass_g": {
+        "KPL_S": 2.0,
+        "KPL_M": 3.0,
+        "KPL_L": 4.0,
+        "DL": 85.0,
+        "RKL": 12.0,
+        "TL": 4.0
+      }
+    }
+  },
+  {
+    "id": "op142-fineli-30",
+    "name": "RUOKASUOLA, JODIOITU",
+    "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/30",
+    "retrievedAt": "2026-11-02",
+    "licence": "THL Fineli Rel20 CC BY4.0",
+    "state": "IND",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Frozen Fineli explicitly reported SUGOH; missing stays unknown",
+    "per100g": {
+      "carbohydrate": 0.0,
+      "fibre": 0.0,
+      "polyols": 0.0,
+      "protein": 0.63,
+      "fat": 0.0
+    },
+    "primaryReference": {
+      "source_id": "30",
+      "name": "RUOKASUOLA, JODIOITU",
+      "food_type": "FOOD",
+      "process": "IND",
+      "edible_portion_percent": 100.0,
+      "ingredient_class": "SALT",
+      "food_class": "SPICES",
+      "per100g": {
+        "available_carbohydrate_g_per_100g": 0.0,
+        "fibre_g_per_100g": 0.0,
+        "polyols_g_per_100g": 0.0,
+        "protein_g_per_100g": 0.63,
+        "fat_g_per_100g": 0.0
+      },
+      "component_provenance": {
+        "fat_g_per_100g": {
+          "acquisition_type": "F",
+          "method_type": "E",
+          "method_indicator": "MIR003"
+        },
+        "available_carbohydrate_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MI0181"
+        },
+        "protein_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MI0123"
+        },
+        "polyols_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "U",
+          "method_indicator": "MIR003"
+        },
+        "fibre_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MI0172"
+        }
+      },
+      "portion_mass_g": {
+        "DL": 125.0,
+        "RKL": 20.0,
+        "TL": 6.5
+      }
+    }
+  },
+  {
+    "id": "op142-fineli-311",
+    "name": "JUURISELLERI, MUKULASELLERI",
+    "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/311",
+    "retrievedAt": "2026-11-02",
+    "licence": "THL Fineli Rel20 CC BY4.0",
+    "state": "RAW",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Frozen Fineli explicitly reported SUGOH; missing stays unknown",
+    "per100g": {
+      "carbohydrate": 2.65,
+      "fibre": 3.1,
+      "polyols": 0.0,
+      "protein": 1.3,
+      "fat": 0.1
+    },
+    "primaryReference": {
+      "source_id": "311",
+      "name": "JUURISELLERI, MUKULASELLERI",
+      "food_type": "FOOD",
+      "process": "RAW",
+      "edible_portion_percent": 100.0,
+      "ingredient_class": "ROOT",
+      "food_class": "VEGFRESH",
+      "per100g": {
+        "available_carbohydrate_g_per_100g": 2.65,
+        "fibre_g_per_100g": 3.1,
+        "polyols_g_per_100g": 0.0,
+        "protein_g_per_100g": 1.3,
+        "fat_g_per_100g": 0.1
+      },
+      "component_provenance": {
+        "fat_g_per_100g": {
+          "acquisition_type": "D",
+          "method_type": "AG",
+          "method_indicator": "MI1302"
+        },
+        "available_carbohydrate_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MI0181"
+        },
+        "protein_g_per_100g": {
+          "acquisition_type": "D",
+          "method_type": "S",
+          "method_indicator": "MI0123"
+        },
+        "polyols_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MIR006"
+        },
+        "fibre_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MI0172"
+        }
+      },
+      "portion_mass_g": {
+        "KPL_S": 200.0,
+        "KPL_M": 600.0,
+        "KPL_L": 800.0
+      }
+    }
+  },
+  {
+    "id": "op142-fineli-631",
+    "name": "KERMA, KUOHUKERMA, RASVAA 38 %",
+    "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/631",
+    "retrievedAt": "2026-11-02",
+    "licence": "THL Fineli Rel20 CC BY4.0",
+    "state": "IND",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Frozen Fineli explicitly reported SUGOH; missing stays unknown",
+    "per100g": {
+      "carbohydrate": 2.9,
+      "fibre": 0.0,
+      "polyols": 0.0,
+      "protein": 1.88,
+      "fat": 38.0
+    },
+    "primaryReference": {
+      "source_id": "631",
+      "name": "KERMA, KUOHUKERMA, RASVAA 38 %",
+      "food_type": "FOOD",
+      "process": "IND",
+      "edible_portion_percent": 100.0,
+      "ingredient_class": "CREAM",
+      "food_class": "CREAM",
+      "per100g": {
+        "available_carbohydrate_g_per_100g": 2.9,
+        "fibre_g_per_100g": 0.0,
+        "polyols_g_per_100g": 0.0,
+        "protein_g_per_100g": 1.88,
+        "fat_g_per_100g": 38.0
+      },
+      "component_provenance": {
+        "fat_g_per_100g": {
+          "acquisition_type": "F",
+          "method_type": "E",
+          "method_indicator": "MIR003"
+        },
+        "available_carbohydrate_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MI0181"
+        },
+        "protein_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MI0123"
+        },
+        "polyols_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "U",
+          "method_indicator": "MIR007"
+        },
+        "fibre_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MI0172"
+        }
+      },
+      "portion_mass_g": {
+        "DL": 100.0,
+        "RKL": 15.0,
+        "TL": 5.0
+      }
+    }
+  },
+  {
+    "id": "op142-fineli-689",
+    "name": "MAITO, TÄYSMAITO, D-VITAMIINIA 1 UG",
+    "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/689",
+    "retrievedAt": "2026-11-02",
+    "licence": "THL Fineli Rel20 CC BY4.0",
+    "state": "IND",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Frozen Fineli explicitly reported SUGOH; missing stays unknown",
+    "per100g": {
+      "carbohydrate": 4.8,
+      "fibre": 0.0,
+      "polyols": 0.0,
+      "protein": 3.0,
+      "fat": 3.5
+    },
+    "primaryReference": {
+      "source_id": "689",
+      "name": "MAITO, TÄYSMAITO, D-VITAMIINIA 1 UG",
+      "food_type": "FOOD",
+      "process": "IND",
+      "edible_portion_percent": 100.0,
+      "ingredient_class": "MILKHF",
+      "food_class": "MILKHF",
+      "per100g": {
+        "available_carbohydrate_g_per_100g": 4.8,
+        "fibre_g_per_100g": 0.0,
+        "polyols_g_per_100g": 0.0,
+        "protein_g_per_100g": 3.0,
+        "fat_g_per_100g": 3.5
+      },
+      "component_provenance": {
+        "fat_g_per_100g": {
+          "acquisition_type": "L",
+          "method_type": "P",
+          "method_indicator": "MIR003"
+        },
+        "available_carbohydrate_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MI0181"
+        },
+        "protein_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MI0123"
+        },
+        "polyols_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "U",
+          "method_indicator": "MIR006"
+        },
+        "fibre_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MI0172"
+        }
+      },
+      "portion_mass_g": {
+        "DL": 100.0,
+        "RKL": 15.0,
+        "TL": 5.0
+      }
+    }
+  },
+  {
+    "id": "op142-fineli-369",
+    "name": "TILLI, TUORE",
+    "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/369",
+    "retrievedAt": "2026-11-02",
+    "licence": "THL Fineli Rel20 CC BY4.0",
+    "state": "RAW",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Frozen Fineli explicitly reported SUGOH; missing stays unknown",
+    "per100g": {
+      "carbohydrate": 0.9,
+      "fibre": 2.8,
+      "polyols": 0.0,
+      "protein": 3.69,
+      "fat": 0.8
+    },
+    "primaryReference": {
+      "source_id": "369",
+      "name": "TILLI, TUORE",
+      "food_type": "FOOD",
+      "process": "RAW",
+      "edible_portion_percent": 100.0,
+      "ingredient_class": "VEGLEAF",
+      "food_class": "VEGFRESH",
+      "per100g": {
+        "available_carbohydrate_g_per_100g": 0.9,
+        "fibre_g_per_100g": 2.8,
+        "polyols_g_per_100g": 0.0,
+        "protein_g_per_100g": 3.69,
+        "fat_g_per_100g": 0.8
+      },
+      "component_provenance": {
+        "fat_g_per_100g": {
+          "acquisition_type": "F",
+          "method_type": "E",
+          "method_indicator": "MIR003"
+        },
+        "available_carbohydrate_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MI0181"
+        },
+        "protein_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MI0123"
+        },
+        "polyols_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "IG",
+          "method_indicator": "MIR003"
+        },
+        "fibre_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MI0172"
+        }
+      },
+      "portion_mass_g": {
+        "RKL": 2.5
+      }
+    }
+  },
+  {
+    "id": "op142-fineli-11562",
+    "name": "JAUHELIHA, NAUDAN, RASVAA 17 %",
+    "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11562",
+    "retrievedAt": "2026-11-02",
+    "licence": "THL Fineli Rel20 CC BY4.0",
+    "state": "RAW",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Frozen Fineli explicitly reported SUGOH; missing stays unknown",
+    "per100g": {
+      "carbohydrate": 0.0,
+      "fibre": 0.0,
+      "polyols": 0.0,
+      "protein": 19.065,
+      "fat": 16.949
+    },
+    "primaryReference": {
+      "source_id": "11562",
+      "name": "JAUHELIHA, NAUDAN, RASVAA 17 %",
+      "food_type": "FOOD",
+      "process": "RAW",
+      "edible_portion_percent": 100.0,
+      "ingredient_class": "BEEF",
+      "food_class": "MSTEAK",
+      "per100g": {
+        "available_carbohydrate_g_per_100g": 0.0,
+        "fibre_g_per_100g": 0.0,
+        "polyols_g_per_100g": 0.0,
+        "protein_g_per_100g": 19.065,
+        "fat_g_per_100g": 16.949
+      },
+      "component_provenance": {
+        "fat_g_per_100g": {
+          "acquisition_type": "D",
+          "method_type": "AG",
+          "method_indicator": "MI1302"
+        },
+        "available_carbohydrate_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MI0181"
+        },
+        "protein_g_per_100g": {
+          "acquisition_type": "D",
+          "method_type": "AG",
+          "method_indicator": "MI0123"
+        },
+        "polyols_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "U",
+          "method_indicator": "MIR007"
+        },
+        "fibre_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "U",
+          "method_indicator": "MIR007"
+        }
+      },
+      "portion_mass_g": {}
+    }
+  },
+  {
+    "id": "op142-fineli-11191",
+    "name": "OREGANO, KUIVATTU",
+    "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11191",
+    "retrievedAt": "2026-11-02",
+    "licence": "THL Fineli Rel20 CC BY4.0",
+    "state": "DRIE",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": false,
+    "polyolsEvidence": "",
+    "per100g": {
+      "carbohydrate": 21.63,
+      "fibre": null,
+      "polyols": null,
+      "protein": 11.0,
+      "fat": 10.3
+    },
+    "primaryReference": {
+      "source_id": "11191",
+      "name": "OREGANO, KUIVATTU",
+      "food_type": "FOOD",
+      "process": "DRIE",
+      "edible_portion_percent": 100.0,
+      "ingredient_class": "HERB",
+      "food_class": "SPICES",
+      "per100g": {
+        "available_carbohydrate_g_per_100g": 21.63,
+        "fibre_g_per_100g": null,
+        "polyols_g_per_100g": null,
+        "protein_g_per_100g": 11.0,
+        "fat_g_per_100g": 10.3
+      },
+      "component_provenance": {
+        "fat_g_per_100g": {
+          "acquisition_type": "F",
+          "method_type": "E",
+          "method_indicator": "MIR003"
+        },
+        "available_carbohydrate_g_per_100g": {
+          "acquisition_type": "F",
+          "method_type": "E",
+          "method_indicator": "MIR003"
+        },
+        "protein_g_per_100g": {
+          "acquisition_type": "F",
+          "method_type": "E",
+          "method_indicator": "MIR003"
+        }
+      },
+      "portion_mass_g": {
+        "RKL": 1.5,
+        "TL": 0.5
+      }
+    }
+  },
+  {
+    "id": "op142-fineli-655",
+    "name": "JUUSTO, PUOLIKOVA JUUSTO, RASVAA 25-35 %, LAPPI/SMÅLAND/BILLINGE/RUSTHOLLI",
+    "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/655",
+    "retrievedAt": "2026-11-02",
+    "licence": "THL Fineli Rel20 CC BY4.0",
+    "state": "IND",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Frozen Fineli explicitly reported SUGOH; missing stays unknown",
+    "per100g": {
+      "carbohydrate": 0.0,
+      "fibre": 0.0,
+      "polyols": 0.0,
+      "protein": 27.88,
+      "fat": 28.4
+    },
+    "primaryReference": {
+      "source_id": "655",
+      "name": "JUUSTO, PUOLIKOVA JUUSTO, RASVAA 25-35 %, LAPPI/SMÅLAND/BILLINGE/RUSTHOLLI",
+      "food_type": "FOOD",
+      "process": "IND",
+      "edible_portion_percent": 100.0,
+      "ingredient_class": "CHEECUHI",
+      "food_class": "CHEESCUR",
+      "per100g": {
+        "available_carbohydrate_g_per_100g": 0.0,
+        "fibre_g_per_100g": 0.0,
+        "polyols_g_per_100g": 0.0,
+        "protein_g_per_100g": 27.88,
+        "fat_g_per_100g": 28.4
+      },
+      "component_provenance": {
+        "fat_g_per_100g": {
+          "acquisition_type": "F",
+          "method_type": "E",
+          "method_indicator": "MIR003"
+        },
+        "available_carbohydrate_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "IG",
+          "method_indicator": "MIR003"
+        },
+        "protein_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MI0123"
+        },
+        "polyols_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "U",
+          "method_indicator": "MIR007"
+        },
+        "fibre_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MI0172"
+        }
+      },
+      "portion_mass_g": {
+        "KPL_S": 4.0,
+        "KPL_M": 8.0,
+        "KPL_L": 12.0
+      }
+    }
+  },
+  {
+    "id": "op142-fineli-731",
+    "name": "LAMPAANLIHA, RASVAINEN",
+    "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/731",
+    "retrievedAt": "2026-11-02",
+    "licence": "THL Fineli Rel20 CC BY4.0",
+    "state": "RAW",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Frozen Fineli explicitly reported SUGOH; missing stays unknown",
+    "per100g": {
+      "carbohydrate": 0.0,
+      "fibre": 0.0,
+      "polyols": 0.0,
+      "protein": 16.25,
+      "fat": 19.0
+    },
+    "primaryReference": {
+      "source_id": "731",
+      "name": "LAMPAANLIHA, RASVAINEN",
+      "food_type": "FOOD",
+      "process": "RAW",
+      "edible_portion_percent": 100.0,
+      "ingredient_class": "LAMM",
+      "food_class": "MSTEAK",
+      "per100g": {
+        "available_carbohydrate_g_per_100g": 0.0,
+        "fibre_g_per_100g": 0.0,
+        "polyols_g_per_100g": 0.0,
+        "protein_g_per_100g": 16.25,
+        "fat_g_per_100g": 19.0
+      },
+      "component_provenance": {
+        "fat_g_per_100g": {
+          "acquisition_type": "F",
+          "method_type": "E",
+          "method_indicator": "MIR003"
+        },
+        "available_carbohydrate_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "IG",
+          "method_indicator": "MIR003"
+        },
+        "protein_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MI0123"
+        },
+        "polyols_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "U",
+          "method_indicator": "MIR003"
+        },
+        "fibre_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "IG",
+          "method_indicator": "MIR003"
+        }
+      },
+      "portion_mass_g": {}
+    }
+  },
+  {
+    "id": "op142-fineli-619",
+    "name": "JOGURTTI, MAUSTAMATON, RASVAA 2,5 %, VL",
+    "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/619",
+    "retrievedAt": "2026-11-02",
+    "licence": "THL Fineli Rel20 CC BY4.0",
+    "state": "IND",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Frozen Fineli explicitly reported SUGOH; missing stays unknown",
+    "per100g": {
+      "carbohydrate": 5.0,
+      "fibre": 0.0,
+      "polyols": 0.0,
+      "protein": 3.19,
+      "fat": 2.5
+    },
+    "primaryReference": {
+      "source_id": "619",
+      "name": "JOGURTTI, MAUSTAMATON, RASVAA 2,5 %, VL",
+      "food_type": "FOOD",
+      "process": "IND",
+      "edible_portion_percent": 100.0,
+      "ingredient_class": "YOGHURHI",
+      "food_class": "YOGHURT",
+      "per100g": {
+        "available_carbohydrate_g_per_100g": 5.0,
+        "fibre_g_per_100g": 0.0,
+        "polyols_g_per_100g": 0.0,
+        "protein_g_per_100g": 3.19,
+        "fat_g_per_100g": 2.5
+      },
+      "component_provenance": {
+        "fat_g_per_100g": {
+          "acquisition_type": "F",
+          "method_type": "E",
+          "method_indicator": "MIR003"
+        },
+        "available_carbohydrate_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MI0181"
+        },
+        "protein_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MI0123"
+        },
+        "polyols_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "U",
+          "method_indicator": "MIR003"
+        },
+        "fibre_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MI0172"
+        }
+      },
+      "portion_mass_g": {
+        "DL": 100.0,
+        "RKL": 15.0,
+        "TL": 5.0
+      }
+    }
+  },
+  {
+    "id": "op142-fineli-33023",
+    "name": "INKIVÄÄRI, JUURAKKO, RAAKA",
+    "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/33023",
+    "retrievedAt": "2026-11-02",
+    "licence": "THL Fineli Rel20 CC BY4.0",
+    "state": "RAW",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": false,
+    "polyolsEvidence": "",
+    "per100g": {
+      "carbohydrate": 15.77,
+      "fibre": 2.0,
+      "polyols": null,
+      "protein": 1.82,
+      "fat": 0.75
+    },
+    "primaryReference": {
+      "source_id": "33023",
+      "name": "INKIVÄÄRI, JUURAKKO, RAAKA",
+      "food_type": "FOOD",
+      "process": "RAW",
+      "edible_portion_percent": 100.0,
+      "ingredient_class": "ROOT",
+      "food_class": "VEGFRESH",
+      "per100g": {
+        "available_carbohydrate_g_per_100g": 15.77,
+        "fibre_g_per_100g": 2.0,
+        "polyols_g_per_100g": null,
+        "protein_g_per_100g": 1.82,
+        "fat_g_per_100g": 0.75
+      },
+      "component_provenance": {
+        "fat_g_per_100g": {
+          "acquisition_type": "F",
+          "method_type": "E",
+          "method_indicator": "MIR003"
+        },
+        "available_carbohydrate_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "IG",
+          "method_indicator": "MIR007"
+        },
+        "protein_g_per_100g": {
+          "acquisition_type": "F",
+          "method_type": "E",
+          "method_indicator": "MIR003"
+        },
+        "fibre_g_per_100g": {
+          "acquisition_type": "F",
+          "method_type": "E",
+          "method_indicator": "MI0172"
+        }
+      },
+      "portion_mass_g": {
+        "KPL_M": 180.0
+      }
+    }
+  },
+  {
+    "id": "op142-fineli-922",
+    "name": "VESI, VESIJOHTOVESI",
+    "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/922",
+    "retrievedAt": "2026-11-02",
+    "licence": "THL Fineli Rel20 CC BY4.0",
+    "state": "X",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Frozen Fineli explicitly reported SUGOH; missing stays unknown",
+    "per100g": {
+      "carbohydrate": 0.0,
+      "fibre": 0.0,
+      "polyols": 0.0,
+      "protein": 0.0,
+      "fat": 0.0
+    },
+    "primaryReference": {
+      "source_id": "922",
+      "name": "VESI, VESIJOHTOVESI",
+      "food_type": "FOOD",
+      "process": "X",
+      "edible_portion_percent": 100.0,
+      "ingredient_class": "WATER",
+      "food_class": "DRWATER",
+      "per100g": {
+        "available_carbohydrate_g_per_100g": 0.0,
+        "fibre_g_per_100g": 0.0,
+        "polyols_g_per_100g": 0.0,
+        "protein_g_per_100g": 0.0,
+        "fat_g_per_100g": 0.0
+      },
+      "component_provenance": {
+        "fat_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "IG",
+          "method_indicator": "MIR003"
+        },
+        "available_carbohydrate_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "IG",
+          "method_indicator": "MIR003"
+        },
+        "protein_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "IG",
+          "method_indicator": "MIR003"
+        },
+        "polyols_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "U",
+          "method_indicator": "MIR003"
+        },
+        "fibre_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MI0172"
+        }
+      },
+      "portion_mass_g": {
+        "DL": 100.0,
+        "RKL": 15.0,
+        "TL": 5.0
+      }
+    }
+  },
+  {
+    "id": "op143-fineli-34972",
+    "name": "OLIIVI, KESKIARVO, KIVETÖN, SUOLALIEMESSÄ, VIHREÄ",
+    "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/34972",
+    "retrievedAt": "2026-11-02",
+    "licence": "THL Fineli Rel20 CC BY4.0",
+    "state": "CANN",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Explicit SUGOH0 in this exact brined-green-olive Fineli34972 source, corroborated by its current official page; not inherited from mixed oil olives.",
+    "per100g": {
+      "carbohydrate": 0.0,
+      "fibre": 3.3,
+      "polyols": 0.0,
+      "protein": 1.03,
+      "fat": 15.32
+    },
+    "primaryReference": {
+      "source_id": "34972",
+      "name": "OLIIVI, KESKIARVO, KIVETÖN, SUOLALIEMESSÄ, VIHREÄ",
+      "food_type": "FOOD",
+      "process": "CANN",
+      "edible_portion_percent": 100.0,
+      "ingredient_class": "FRUITOTH",
+      "food_class": "VEGCANN",
+      "per100g": {
+        "available_carbohydrate_g_per_100g": 0.0,
+        "fibre_g_per_100g": 3.3,
+        "polyols_g_per_100g": 0.0,
+        "protein_g_per_100g": 1.03,
+        "fat_g_per_100g": 15.32
+      },
+      "component_provenance": {
+        "fat_g_per_100g": {
+          "acquisition_type": "F",
+          "method_type": "E",
+          "method_indicator": "MI1302"
+        },
+        "available_carbohydrate_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MI0181"
+        },
+        "protein_g_per_100g": {
+          "acquisition_type": "F",
+          "method_type": "E",
+          "method_indicator": "MI0123"
+        },
+        "polyols_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "U",
+          "method_indicator": "MIR007"
+        },
+        "fibre_g_per_100g": {
+          "acquisition_type": "F",
+          "method_type": "E",
+          "method_indicator": "MI0172"
+        }
+      },
+      "portion_mass_g": {
+        "KPL_M": 4.0,
+        "DL": 30.0
+      }
+    }
   }
 ]

@@ -147,8 +147,8 @@ test("GK values link to centralized recipe details on every published translatio
   const releaseManifest=JSON.parse(await readFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-q09/manifest.json'),'utf8'));
   const releaseIds=new Set<string>(releaseManifest.recipeIds);
   assert.deepEqual(publicAuditResults.filter(result=>result.status==='CALCULATED'&&releaseIds.has(result.recipeId)).map(result=>result.recipeId).sort(),[...releaseIds].sort());
-  assert.equal(publicAuditResults.filter(result=>result.status==='CALCULATED'&&!releaseIds.has(result.recipeId)).length,125,'133 current estimates outside the eight Q09 entries');
-  assert.equal(publicAuditResults.filter(result=>result.status==='CALCULATED').length,133,'two scoped C estimates added to131 published numeric results');
+  assert.equal(publicAuditResults.filter(result=>result.status==='CALCULATED'&&!releaseIds.has(result.recipeId)).length,135,'143 current estimates outside the eight Q09 entries');
+  assert.equal(publicAuditResults.filter(result=>result.status==='CALCULATED').length,143,'ten operation142 estimates added to133 published numeric results');
   const paella = glycemicLoadPilotResults.find((entry) => entry.recipeId === "paella-valenciana");
   assert.equal(paella?.status, "INSUFFICIENT SOURCE DATA", "Paella remains blocked without a suitable chicken-stock GI source");
   assert.equal(paella?.glycemicLoadPerServing, null);
@@ -451,5 +451,26 @@ test('all twelve candidate recipe pages show the modeled label and carbohydrate 
   for(const id of manifest.recipeIds){const r=siteContent.recipes.find(r=>r.recipeId===id&&r.locale==='fi')!;
     const html=await readFile(path.join(dist,r.routePath.slice(1),'index.html'),'utf8');
     assert.match(html,/Mallinnettu/);assert.match(html,/hiilihydraatit/i);assert.match(html,/Luottamus|luottamus/);
+  }
+});
+
+test('modeled captions disclose omissions in every locale and retain omission-free controls',async()=>{
+  const copy={
+    fi:{omitted:'Dokumentoituja pieniä osuuksia on jätetty pois',none:'Ei pieniä pois jätettyjä osuuksia',method:'Mahdolliset pienet poisrajaukset',path:'glykeeminen-kuorma',oldMethod:'Tässä polussa kaikki imeytyvät hiilihydraatit lasketaan mukaan eikä pieniä osuuksia jätetä pois.'},
+    en:{omitted:'Documented small portions are omitted',none:'no small portions omitted',method:'Any small portions omitted',path:'en/glycemic-load',oldMethod:'This path includes all available carbohydrate and omits no small portions.'},
+    sv:{omitted:'Dokumenterade små mängder har utelämnats',none:'utan utelämnade små mängder',method:'Eventuella utelämnade små mängder',path:'sv/glykemisk-belastning',oldMethod:'Här räknas alla tillgängliga kolhydrater med utan utelämnade små mängder.'},
+    th:{omitted:'การคำนวณนี้ไม่รวมส่วนผสมปริมาณเล็กน้อย',none:'โดยไม่ตัดส่วนเล็กน้อยออก',method:'หากมีส่วนผสมปริมาณเล็กน้อยที่ไม่รวมในการคำนวณ',path:'th/glycemic-load',oldMethod:'แนวทางนี้รวมคาร์โบไฮเดรตที่ใช้ได้ทั้งหมดโดยไม่ตัดส่วนเล็กน้อยออก'},
+  };
+  for(const locale of ['fi','en','sv','th'] as const){
+    let omitted=0,complete=0;const expected=copy[locale];
+    for(const result of glycemicLoadPilotResults.filter(r=>r.status==='CALCULATED'&&r.assessmentType&&!r.closedRecoveryC&&!r.boundedPolyolC)){
+      const recipe=siteContent.recipes.find(r=>r.recipeId===result.recipeId&&r.locale===locale);if(!recipe)continue;
+      const html=await readFile(path.join(dist,recipe.routePath.slice(1),'index.html'),'utf8');
+      const caption=html.match(/class="recipe-glycemic-load__caption">([\s\S]*?)<\/p>/)![1].replace(/<[^>]+>/g,'');
+      if(result.omittedAvailableCarbohydratePerServingG>0){omitted++;assert.ok(caption.includes(expected.omitted),recipe.recipeId+'/'+locale);assert.ok(!caption.includes(expected.none),recipe.recipeId+'/'+locale+': no contradictory completeness claim');}
+      else{complete++;assert.ok(caption.includes(expected.none),recipe.recipeId+'/'+locale+': omission-free disclosure retained');assert.ok(!caption.includes(expected.omitted));}
+    }
+    assert.ok(omitted>=10,locale+': all ten new omission cases covered');assert.ok(complete>0,locale+': real omission-free control covered');
+    const method=await readFile(path.join(dist,expected.path,'index.html'),'utf8');assert.ok(method.includes(expected.method),locale);assert.ok(!method.includes(expected.oldMethod),locale+': central method is consistent');
   }
 });

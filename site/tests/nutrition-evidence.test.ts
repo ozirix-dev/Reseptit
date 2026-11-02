@@ -131,3 +131,40 @@ test("unlisted recipes do not acquire an evidence-withdrawal exception", () => {
   const cleared = { ...recipe, carbs_net_per_serving_g: null, carbs_total_per_serving_g: null, protein_per_serving_g: null, fat_per_serving_g: null };
   assert.ok(verifyNutritionEvidence(cleared, evidence()).errors.length > 0);
 });
+
+function incompleteWithholdingFixture() {
+  const e = evidence();
+  e.publicationStatus = "WITHHELD_SOURCE_INCOMPLETE";
+  e.withholdingReason = "Source aggregate polyols remain unknown; withhold all macros.";
+  e.ingredients[0]!.record = structuredClone(food);
+  e.ingredients[0]!.record!.per100g.polyols = null;
+  e.ingredients[0]!.record!.polyolsSourceVerified = false;
+  return {source: {...recipe, carbs_net_per_serving_g:null, carbs_total_per_serving_g:null, protein_per_serving_g:null, fat_per_serving_g:null}, e};
+}
+
+test("explicit incomplete-source evidence can withhold all macros without publishing partial results", () => {
+  const {source,e} = incompleteWithholdingFixture();
+  const result = verifyNutritionEvidence(source,e);
+  assert.equal(result.status,"INSUFFICIENT SOURCE DATA");
+  assert.deepEqual(result.errors,[]);
+  assert.equal(e.ingredients[0]!.record!.per100g.polyols,null);
+  assert.equal(result.calculated!.status,"INSUFFICIENT SOURCE DATA");
+  assert.ok(Object.values(result.values).every(value=>value===null));
+});
+
+test("incomplete-source declaration cannot accept stale inputs, translated values or partial publication", () => {
+  const {source,e}=incompleteWithholdingFixture();
+  assert.equal(verifyNutritionEvidence({...source,servings:3},e).status,"CONFLICT REQUIRES REVIEW");
+  assert.equal(verifyNutritionEvidence({...source,protein_per_serving_g:12},e).status,"CONFLICT REQUIRES REVIEW");
+  const changed=structuredClone(source);changed.ingredients[0]!.amount=201;
+  assert.equal(verifyNutritionEvidence(changed,e).status,"CONFLICT REQUIRES REVIEW");
+  assert.equal(verifyNutritionEvidence(source,e,[{path:"translation.md",data:{...source,fat_per_serving_g:6}}]).status,"CONFLICT REQUIRES REVIEW");
+  e.withholdingReason="";
+  assert.equal(verifyNutritionEvidence(source,e).status,"CONFLICT REQUIRES REVIEW");
+});
+
+test("complete calculations cannot masquerade as incomplete-source withholding",()=>{
+  const e=evidence();e.publicationStatus="WITHHELD_SOURCE_INCOMPLETE";e.withholdingReason="Claimed incomplete";
+  const {source}=incompleteWithholdingFixture();
+  assert.equal(verifyNutritionEvidence(source,e).status,"CONFLICT REQUIRES REVIEW");
+});

@@ -1,0 +1,191 @@
+{
+  "method": "Independent Python Decimal arithmetic on staged source inputs, not TypeScript result rows. All source omissions retain unknowns. No tolerances changed.",
+  "gkChecks": [
+    {
+      "recipeId": "ratatouille",
+      "unroundedGK": "4.625575",
+      "roundedGK": "4.63",
+      "omittedOrCapG": "0.1825875",
+      "pass": true
+    },
+    {
+      "recipeId": "sitruuna-yrttikana-parsa",
+      "unroundedGK": "0.878",
+      "roundedGK": "0.88",
+      "omittedOrCapG": "0.8262450",
+      "pass": true
+    },
+    {
+      "recipeId": "menemen",
+      "unroundedGK": "2.768333333333333333333333334",
+      "roundedGK": "2.77",
+      "omittedOrCapG": "0.1249833333333333333333333333",
+      "pass": true
+    },
+    {
+      "recipeId": "shakshuka",
+      "unroundedGK": "3.3146",
+      "roundedGK": "3.31",
+      "omittedOrCapG": "0.753175",
+      "pass": true
+    },
+    {
+      "recipeId": "munatacot-huevos-rancheros",
+      "unroundedGK": "1.7634850",
+      "roundedGK": "1.76",
+      "omittedOrCapG": "0.446975",
+      "pass": true
+    },
+    {
+      "recipeId": "paprikainen-vhh-gulassi",
+      "unroundedGK": "3.516050",
+      "roundedGK": "3.52",
+      "omittedOrCapG": "0.5711375",
+      "pass": true
+    },
+    {
+      "recipeId": "caponata",
+      "unroundedGK": "6.123750",
+      "roundedGK": "6.12",
+      "omittedOrCapG": "0.110025",
+      "pass": true
+    },
+    {
+      "recipeId": "janssoninkiusaus-juuriselleri",
+      "unroundedGK": "3.04675",
+      "roundedGK": "3.05",
+      "omittedOrCapG": "0.0478875",
+      "pass": true
+    },
+    {
+      "recipeId": "taytetyt-paprikat-vhh",
+      "unroundedGK": "3.73350",
+      "roundedGK": "3.73",
+      "omittedOrCapG": "0.521925",
+      "pass": true
+    },
+    {
+      "recipeId": "rogan-josh",
+      "unroundedGK": "1.1118",
+      "roundedGK": "1.11",
+      "omittedOrCapG": "1.965075",
+      "pass": true
+    }
+  ],
+  "completeMacroChecks": [
+    {
+      "recipeId": "ratatouille",
+      "values": {
+        "carbs_net_per_serving_g": "11.55",
+        "carbs_total_per_serving_g": "16.77",
+        "protein_per_serving_g": "2.46",
+        "fat_per_serving_g": "14.57"
+      },
+      "omissionCaps": {
+        "kcal": "1.69375000000000013",
+        "netCarbohydrate": "0.39963750000000001",
+        "totalCarbohydrate": "0.39963750000000001",
+        "protein": "0.0585375",
+        "fat": "0.041225"
+      },
+      "pass": true
+    },
+    {
+      "recipeId": "menemen",
+      "values": {
+        "carbs_net_per_serving_g": "6.87",
+        "carbs_total_per_serving_g": "8.70",
+        "protein_per_serving_g": "10.74",
+        "fat_per_serving_g": "16.35"
+      },
+      "omissionCaps": {
+        "kcal": "4.5",
+        "netCarbohydrate": "0.49999999999999996",
+        "totalCarbohydrate": "0.49999999999999996",
+        "protein": "0.49999999999999996",
+        "fat": "0.49999999999999996"
+      },
+      "pass": true
+    },
+    {
+      "recipeId": "shakshuka",
+      "values": {
+        "carbs_net_per_serving_g": "8.20",
+        "carbs_total_per_serving_g": "10.28",
+        "protein_per_serving_g": "15.48",
+        "fat_per_serving_g": "17.34"
+      },
+      "omissionCaps": {
+        "kcal": "6.59950000000000014",
+        "netCarbohydrate": "0.75222000000000002",
+        "totalCarbohydrate": "0.95722000000000002",
+        "protein": "0.29708999999999998",
+        "fat": "0.341755"
+      },
+      "pass": true
+    },
+    {
+      "recipeId": "munatacot-huevos-rancheros",
+      "values": {
+        "carbs_net_per_serving_g": "4.23",
+        "carbs_total_per_serving_g": "6.99",
+        "protein_per_serving_g": "21.40",
+        "fat_per_serving_g": "34.56"
+      },
+      "omissionCaps": {
+        "kcal": "5.9925000000000001",
+        "netCarbohydrate": "0.51107500000000002",
+        "totalCarbohydrate": "0.92107500000000002",
+        "protein": "0.26502499999999999",
+        "fat": "0.28950"
+      },
+      "pass": true
+    },
+    {
+      "recipeId": "caponata",
+      "values": {
+        "carbs_net_per_serving_g": "13.73",
+        "carbs_total_per_serving_g": "20.51",
+        "protein_per_serving_g": "2.28",
+        "fat_per_serving_g": "10.49"
+      },
+      "omissionCaps": {
+        "kcal": "0.5175",
+        "netCarbohydrate": "0.11002499999999998",
+        "totalCarbohydrate": "0.11002499999999998",
+        "protein": "0.053099999999999994",
+        "fat": "0.01935"
+      },
+      "pass": true
+    },
+    {
+      "recipeId": "taytetyt-paprikat-vhh",
+      "values": {
+        "carbs_net_per_serving_g": "9.65",
+        "carbs_total_per_serving_g": "13.09",
+        "protein_per_serving_g": "36.40",
+        "fat_per_serving_g": "35.80"
+      },
+      "omissionCaps": {
+        "kcal": "6.75",
+        "netCarbohydrate": "0.75",
+        "totalCarbohydrate": "0.75",
+        "protein": "0.75",
+        "fat": "0.75"
+      },
+      "pass": true
+    }
+  ],
+  "remainingWithheldPackages": 4,
+  "roganJosh": {
+    "nominalOmittedOrCapG": "1.965075",
+    "sourceDecimalRoundingStressG": "1.9664125",
+    "notBiologicalOrKitchenWeighingInterval": true,
+    "wholeCinnamonG": 2,
+    "wholeCardamomPods": 4,
+    "wholeCardamomMassG": "1.6",
+    "servings": 4,
+    "GKDecision": "ACCEPT_FOR_EXACT_WEIGHED_VERSION",
+    "macroDecision": "WITHHELD"
+  }
+}

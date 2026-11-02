@@ -12,10 +12,10 @@ main_ingredient:
   - juusto
 cooking_method:
   - uuni
-carbs_net_per_serving_g: 12.29
-carbs_total_per_serving_g: 17.35
-protein_per_serving_g: 36.88
-fat_per_serving_g: 36.56
+carbs_net_per_serving_g: 9.65
+carbs_total_per_serving_g: 13.09
+protein_per_serving_g: 36.4
+fat_per_serving_g: 35.8
 servings: 4
 time_total_min: 50
 difficulty: lätt
@@ -30,58 +30,48 @@ image:
   width: 1280
   height: 853
 ingredients:
-  - amount: 4
-    unit: st
-    item: stor paprika
+  - amount: 640
+    unit: g
+    item: röd paprika
   - amount: 500
     unit: g
-    item: nötfärs
-  - amount: 1
-    unit: st
-    item: liten lök
+    item: nötfärs, 17 % fett
+  - amount: 70
+    unit: g
+    item: skalad gul lök
   - amount: 150
     unit: g
     item: krossade tomater
-  - amount: 1
-    unit: msk
+  - amount: 16
+    unit: g
     item: tomatpuré
-  - amount: 1
-    unit: tsk
+  - amount: 2
+    unit: g
     item: torkad oregano
-  - amount: 0.5
-    unit: tsk
-    item: salt
-  - amount: 0.5
-    unit: tsk
-    item: svartpeppar
+  - amount: 1
+    unit: g
+    item: malen svartpeppar
   - amount: 150
     unit: g
-    item: riven ost
-  - amount: 1
-    unit: msk
+    item: riven halvhård ost
+  - amount: 13.5
+    unit: g
     item: olivolja
+  - amount: null
+    unit: ""
+    item: salt efter smak
 source_language: fi
 source_recipe: reseptit/paaruoat/taytetyt-paprikat-vhh.md
 translation_of: taytetyt-paprikat-vhh
 ---
-
 # lågkolhydrat-fyllda paprikor med köttfärs och ost
 
-Saftig fylld paprika får en köttfärs-tomatfyllning och en ostfrosting. Riset lämnas ute och fyllningen hålls enkel.
+## Tillagning
 
-## Beskrivning
-
-Stekt köttfärs, oregano och tomat utgör fyllningen, som tillagas inne i paprikan i ugnen. Servera med en sallad.
-
-## Gör så här
-
-1. Värm ugnen till 200 grader. Halvera paprikan på längden och ta bort frön och stjälk. Lägg halvorna i ugnsformen med skärytan uppåt.
-2. Hacka löken. Hetta upp oljan i en panna och bryn köttfärsen. Tillsätt löken och fräs tills den är mjuk.
-3. Blanda i krossade tomater, tomatpuré, oregano, salt och peppar. Sjud i 5 minuter så att fyllningen tjocknar lite.
-4. Dela fyllningen mellan paprikorna och strö riven ost ovanpå.
-5. Grädda i ca 25–30 minuter tills paprikan mjuknat och osten tar färg. Servera med en grönsallad.
+1. Värm ugnen till 200 °C. Halvera och ansa 640 g ätbar röd paprika.
+2. Bryn 500 g nötfärs med 17% fett och 70 g lök i hela 13,5 g olivolja. Tillsätt 150 g krossade tomater, 16 g tomatpuré, 2 g torkad oregano, 1 g svartpeppar och salt. Sjud i 5 min.
+3. Fyll paprikorna med hela fyllningen och strö över 150 g riven halvhård ost. Grädda i 25–30 min tills paprika är mjuk och köttet genomstekt. Dela allt i fyra portioner; separat sallad ingår inte.
 
 ## Anteckningar
 
-– Mängden kolhydrater i paprika är medelhög, så det här är ett livsmedel som lämpar sig för en bredare lågkolhydrat-kost.
-– Om fyllningen ser vattnig ut, koka den i pannan ytterligare några minuter innan du fyller på.
+Väg de ätliga ingredienserna ovan. All angiven mat, sås och stekfett ingår i portionerna; separata tillbehör ingår inte. Näringsvärdena är ungefärliga ingrediensbaserade uppskattningar.

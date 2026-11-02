@@ -12,10 +12,10 @@ main_ingredient:
   - juusto
 cooking_method:
   - uuni
-carbs_net_per_serving_g: 12.29
-carbs_total_per_serving_g: 17.35
-protein_per_serving_g: 36.88
-fat_per_serving_g: 36.56
+carbs_net_per_serving_g: 9.65
+carbs_total_per_serving_g: 13.09
+protein_per_serving_g: 36.4
+fat_per_serving_g: 35.8
 servings: 4
 time_total_min: 50
 difficulty: easy
@@ -30,58 +30,48 @@ image:
   width: 1280
   height: 853
 ingredients:
-  - amount: 4
-    unit: ""
-    item: large bell pepper
+  - amount: 640
+    unit: g
+    item: red pepper
   - amount: 500
     unit: g
-    item: ground beef
-  - amount: 1
-    unit: ""
-    item: small onion
+    item: beef mince, 17% fat
+  - amount: 70
+    unit: g
+    item: peeled onion
   - amount: 150
     unit: g
     item: crushed tomatoes
-  - amount: 1
-    unit: tbsp
-    item: tomato puree
-  - amount: 1
-    unit: tsp
+  - amount: 16
+    unit: g
+    item: tomato paste
+  - amount: 2
+    unit: g
     item: dried oregano
-  - amount: 0.5
-    unit: tsp
-    item: salt
-  - amount: 0.5
-    unit: tsp
-    item: black pepper
+  - amount: 1
+    unit: g
+    item: ground black pepper
   - amount: 150
     unit: g
-    item: grated cheese
-  - amount: 1
-    unit: tbsp
+    item: grated semi-hard cheese
+  - amount: 13.5
+    unit: g
     item: olive oil
+  - amount: null
+    unit: ""
+    item: salt to taste
 source_language: fi
 source_recipe: reseptit/paaruoat/taytetyt-paprikat-vhh.md
 translation_of: taytetyt-paprikat-vhh
 ---
-
 # Low-Carb Stuffed Peppers with Beef and Cheese
 
-Juicy stuffed peppers get a minced meat-tomato filling and a cheese frosting. The rice is left out and the filling is kept simple.
+## Instructions
 
-## Description
-
-Fried minced meat, oregano and tomato make up the filling, which cooks inside the paprika in the oven. Serve with a salad.
-
-## Preparation
-
-1. Heat the oven to 200 degrees. Halve the peppers lengthwise and remove the seeds and stem. Place the halves in the baking dish with the cutting surface facing up.
-2. Chop the onion. Heat the oil in a pan and brown the minced meat. Add the onion and fry until soft.
-3. Mix in crushed tomatoes, tomato puree, oregano, salt and pepper. Simmer for 5 minutes so that the filling thickens a little.
-4. Divide the filling between the peppers and sprinkle grated cheese on top.
-5. Bake for about 25–30 minutes until the peppers soften and the cheese takes on color. Serve with a green salad.
+1. Heat the oven to 200 °C. Halve and trim 640 g edible red peppers.
+2. Brown 500 g 17%-fat beef mince and 70 g onion in all 13.5 g olive oil. Add 150 g crushed tomatoes, 16 g tomato paste, 2 g dried oregano, 1 g black pepper and salt. Simmer for 5 min.
+3. Fill the peppers with all filling and top with 150 g semi-hard grated cheese. Bake for 25–30 min until the pepper is soft and the meat cooked through. Divide everything into four portions; separate salad is excluded.
 
 ## Notes
 
-- The amount of carbohydrates in peppers is medium, so this is a food suitable for a wider low-carb diet.
-- If the filling looks watery, cook it in the pan for a few more minutes before filling.
+Weigh the edible ingredients listed above. All listed food, sauce and cooking fat belong to the servings; separate side dishes are excluded. Nutrition values are indicative ingredient-based estimates.

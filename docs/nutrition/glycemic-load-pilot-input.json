@@ -175,63 +175,111 @@
       "servings": 2,
       "ingredients": [
         {
-          "name": "kananmuna",
+          "name": "kuoretonta kananmunaa",
           "grams": 220,
-          "fineliRecordId": "fineli-858-2026-10-24",
-          "giRecordId": null,
-          "massEvidence": "4 kpl × Fineli-annosmitta 55 g/kpl",
-          "giMatchEvidence": "No exact published GI value is recorded for egg; its nonzero Fineli CHO is retained."
+          "fineliRecordId": "op142-fineli-858",
+          "giRecordId": "op142-lowcho50-r6-r11",
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+          "foodKey": "op142-lowcho-code",
+          "preparationKey": "op142-lowcho50-r6-r11",
+          "giMatchEvidence": "Existing project PI50 for this named Fineli profile A0.3g/100g <=5. Not measured food GI or a validated scientific threshold. Exact current juice/egg/herb/stock version and source are bound; no former recipe substitution is inherited."
         },
         {
-          "name": "voi",
+          "name": "voita",
           "grams": 14,
-          "fineliRecordId": "fineli-500-2026-10-24",
-          "giRecordId": null,
-          "massEvidence": "1 rkl × documented 14 g/rkl"
+          "fineliRecordId": "op142-fineli-500",
+          "giRecordId": "op142-dairy-imputation30-r11",
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+          "foodKey": "op142-dairy-code",
+          "preparationKey": "op142-dairy-imputation30-r11",
+          "giMatchEvidence": "Existing project PI30 for this named unsweetened animal-dairy profile. Not measured cream, butter, cheese or prepared-meal GI. Exact current weighed version."
         },
         {
-          "name": "tomaattimurska",
+          "name": "tomaattimurskaa",
           "grams": 150,
-          "fineliRecordId": "fineli-352-2026-10-24",
-          "giRecordId": "tomato-raw-cooked-sauce-analogue-gi-22",
-          "foodKey": "tomato",
-          "preparationKey": "crushed-cooked-in-sauce",
-          "massEvidence": "Recipe-listed mass; batch-1 estimate uses fresh tomato as an explicit proxy for tomato crush",
-          "giMatchEvidence": "Whole raw tomato GI 22 used as an explicitly labelled proxy for crushed, cooked tomato."
+          "fineliRecordId": "op142-fineli-398",
+          "giRecordId": "op142-vegetable-imputation40-r11",
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+          "foodKey": "op142-low-carb-vegetable",
+          "preparationKey": "op142-vegetable-imputation40-r11",
+          "giMatchEvidence": "Existing project PI40 for this named chopped nonstarchy vegetable, allium or fresh herb. Explicit current preparation application, not measured ingredient GI or a food-family mean."
         },
         {
-          "name": "punasipuli",
+          "name": "punasipulia",
           "grams": 27.5,
-          "fineliRecordId": "fineli-34234-2026-10-24",
-          "giRecordId": null,
-          "massEvidence": "0.5 small onion; documented 55 g per onion, half = 27.5 g",
-          "giMatchEvidence": "No exact published GI value is recorded for red onion."
+          "fineliRecordId": "op142-fineli-34234",
+          "giRecordId": "op142-vegetable-imputation40-r11",
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+          "foodKey": "op142-low-carb-vegetable",
+          "preparationKey": "op142-vegetable-imputation40-r11",
+          "giMatchEvidence": "Existing project PI40 for this named chopped nonstarchy vegetable, allium or fresh herb. Explicit current preparation application, not measured ingredient GI or a food-family mean."
         },
         {
-          "name": "avokado",
+          "name": "kuorittua ja kivetöntä avokadoa",
           "grams": 120,
-          "fineliRecordId": "fineli-11057-2026-10-24",
-          "giRecordId": null,
-          "massEvidence": "1 medium avocado × documented 120 g edible weight",
-          "giMatchEvidence": "No exact published GI value is recorded for avocado."
+          "fineliRecordId": "op142-fineli-11057",
+          "giRecordId": "op142-lowcho50-r6-r11",
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+          "foodKey": "op142-lowcho-code",
+          "preparationKey": "op142-lowcho50-r6-r11",
+          "giMatchEvidence": "Existing project PI50 for this named Fineli profile A0.77g/100g <=5. Not measured food GI or a validated scientific threshold. Exact current juice/egg/herb/stock version and source are bound; no former recipe substitution is inherited."
         },
         {
-          "name": "cheddarjuusto",
+          "name": "cheddarjuustoa",
           "grams": 40,
-          "fineliRecordId": "fineli-698-2026-10-24",
-          "giRecordId": null,
-          "massEvidence": "Recipe-listed mass",
-          "giMatchEvidence": "No exact published GI value is recorded for this cheddar product."
+          "fineliRecordId": "op142-fineli-698",
+          "giRecordId": "op142-dairy-imputation30-r11",
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+          "foodKey": "op142-dairy-code",
+          "preparationKey": "op142-dairy-imputation30-r11",
+          "giMatchEvidence": "Existing project PI30 for this named unsweetened animal-dairy profile. Not measured cream, butter, cheese or prepared-meal GI. Exact current weighed version."
         },
         {
-          "name": "savupaprika, juustokumina, korianteri, suola ja pippuri",
-          "grams": 1.5,
+          "name": "Santa Maria -savupaprikajauhetta",
+          "grams": 2,
           "fineliRecordId": null,
           "giRecordId": null,
-          "excludedReason": "Estimated culinary amount; not weighed and excluded under the pilot <1 g/serving policy.",
-          "massEvidence": "Standard pilot assumption: 1.5 g combined seasoning per batch; not weighed.",
-          "estimatedAvailableCarbohydratePerServingG": 0.3,
-          "negligibleAssumption": "standard assumed 1.5 g batch amount; estimated available carbohydrate 0.6 g for the whole batch (0.300 g/serving), below the 1 g cutoff"
+          "excludedReason": "Existing source-backed small-portion GK omission; not actual A0.",
+          "availableCarbohydrateUpperBoundPerServingG": 0.13,
+          "upperBoundEvidence": "Santa Maria smoked paprika GTIN7311311015243, retailer label13g EU carbohydrate/100g including polyols; no fibre subtraction or assumed P0. Source: https://www.minimani.fi/santa-maria-paprika-savustettu-37-g.html"
+        },
+        {
+          "name": "jauhettua juustokuminaa",
+          "grams": 1,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "Source-backed source-total ceiling under existing GK omission rule.",
+          "availableCarbohydrateUpperBoundPerServingG": 0.2212,
+          "upperBoundEvidence": "USDA SR Legacy2018 FDC170923 Spices, cumin seed; nutrient1005 totalCHO 44.24g/100g; retained 1g/2servings. No fibre/polyol subtraction. Nominal source-model ceiling only; not a clinical or lot maximum.",
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion."
+        },
+        {
+          "name": "suolaa maun mukaan",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "Explicit pure salt",
+          "estimatedAvailableCarbohydratePerServingG": 0,
+          "negligibleAssumption": "Pure salt, no carbohydrate. Unknown salt mass remains null.",
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion."
+        },
+        {
+          "name": "jauhettua mustapippuria",
+          "grams": 0.5,
+          "fineliRecordId": "op142-fineli-11177",
+          "giRecordId": null,
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+          "giMatchEvidence": "No matching GI; source-known Fineli CHOAVL 0.095775g/serving is counted in cumulative omission; not zero. CHOAVL already excludes polyols."
+        },
+        {
+          "name": "tuoretta korianteria",
+          "grams": 10,
+          "fineliRecordId": "op142-fineli-34238",
+          "giRecordId": "op142-vegetable-imputation40-r11",
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+          "foodKey": "op142-low-carb-vegetable",
+          "preparationKey": "op142-vegetable-imputation40-r11",
+          "giMatchEvidence": "Existing project PI40 for this named chopped nonstarchy vegetable, allium or fresh herb. Explicit current preparation application, not measured ingredient GI or a food-family mean."
         }
       ]
     },
@@ -290,62 +338,107 @@
       "servings": 2,
       "ingredients": [
         {
-          "name": "kananmuna",
+          "name": "kuoretonta kananmunaa",
           "grams": 220,
-          "fineliRecordId": "fineli-858-2026-10-24",
-          "giRecordId": null,
-          "massEvidence": "4 kpl × Fineli-annosmitta 55 g/kpl",
-          "giMatchEvidence": "No exact published GI value is recorded for egg; its nonzero Fineli CHO is retained."
+          "fineliRecordId": "op142-fineli-858",
+          "giRecordId": "op142-lowcho50-r4",
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+          "foodKey": "op142-lowcho-code",
+          "preparationKey": "op142-lowcho50-r4",
+          "giMatchEvidence": "Existing project PI50 for this named Fineli profile A0.3g/100g <=5. Not measured food GI or a validated scientific threshold. Exact current juice/egg/herb/stock version and source are bound; no former recipe substitution is inherited."
         },
         {
-          "name": "punainen paprika",
-          "grams": 170,
-          "fineliRecordId": "fineli-386-2026-10-24",
-          "giRecordId": null,
-          "massEvidence": "1 kpl × documented Fineli mass 170 g/kpl AJO 1.6B: starting edible raw ingredient, not cooked output weight; Fineli #386/#387 basis is 100% edible. No invented seed/stalk or cooking-loss multiplier.",
-          "giMatchEvidence": "AJO 1.6B: generic Pepper GI 40 is reference-only. Species, colour, preparation and original human measurement are unverified; DOI 10.3390/nu12102989 Table 1 cannot support this ingredient. Missing GI is not zero.",
-          "foodKey": "red-pepper",
-          "preparationKey": "recipe-specific-preparation-no-approved-pepper-gi"
+          "name": "punaista paprikaa",
+          "grams": 120,
+          "fineliRecordId": "op142-fineli-386",
+          "giRecordId": "op142-vegetable-imputation40",
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+          "foodKey": "op142-low-carb-vegetable",
+          "preparationKey": "op142-vegetable-imputation40",
+          "giMatchEvidence": "Existing project PI40 for this named chopped nonstarchy vegetable, allium or fresh herb. Explicit current preparation application, not measured ingredient GI or a food-family mean."
         },
         {
-          "name": "keltasipuli",
-          "grams": 30,
-          "fineliRecordId": "fineli-335-2026-10-24",
-          "giRecordId": null,
-          "massEvidence": "Original recipe: one small onion; Fineli Release 20 #335 KPL_S = 30 g (previous 55 g was medium).",
-          "giMatchEvidence": "AJO 1.5: onion GI 15 withdrawn; DOI 10.3390/nu12102989 Table 1 and DOI 10.3945/an.112.003509 Table 3 do not establish a preparation-matched primary human GI. Missing GI is not zero.",
-          "foodKey": "onion",
-          "preparationKey": "recipe-specific-preparation-no-approved-gi",
-          "recipeQuantity": {
-            "amount": 1,
-            "unit": "kpl",
-            "massGrams": null
-          }
+          "name": "sipulia",
+          "grams": 70,
+          "fineliRecordId": "op142-fineli-335",
+          "giRecordId": "op142-vegetable-imputation40",
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+          "foodKey": "op142-low-carb-vegetable",
+          "preparationKey": "op142-vegetable-imputation40",
+          "giMatchEvidence": "Existing project PI40 for this named chopped nonstarchy vegetable, allium or fresh herb. Explicit current preparation application, not measured ingredient GI or a food-family mean."
         },
         {
-          "name": "tomaattimurska",
+          "name": "tomaattimurskaa",
           "grams": 200,
-          "fineliRecordId": "fineli-352-2026-10-24",
-          "giRecordId": "tomato-raw-cooked-sauce-analogue-gi-22",
-          "foodKey": "tomato",
-          "preparationKey": "crushed-cooked-in-sauce",
-          "massEvidence": "Recipe-listed mass; batch-1 estimate uses fresh tomato as an explicit proxy for tomato crush",
-          "giMatchEvidence": "Whole raw tomato GI 22 used as an explicitly labelled proxy for crushed, cooked tomato."
+          "fineliRecordId": "op142-fineli-398",
+          "giRecordId": "op142-vegetable-imputation40",
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+          "foodKey": "op142-low-carb-vegetable",
+          "preparationKey": "op142-vegetable-imputation40",
+          "giMatchEvidence": "Existing project PI40 for this named chopped nonstarchy vegetable, allium or fresh herb. Explicit current preparation application, not measured ingredient GI or a food-family mean."
         },
         {
-          "name": "oliiviöljy",
+          "name": "oliiviöljyä",
           "grams": 13.5,
-          "fineliRecordId": "fineli-536-2026-10-24",
+          "fineliRecordId": "op142-fineli-536",
           "giRecordId": null,
-          "massEvidence": "1 rkl × documented 13.5 g/rkl"
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion."
         },
         {
-          "name": "juustokumina, savupaprika, suola, pippuri, chili ja persilja",
-          "grams": 1.5,
+          "name": "juustokuminaa",
+          "grams": 2,
           "fineliRecordId": null,
           "giRecordId": null,
-          "excludedReason": "AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
-          "massEvidence": "Standard pilot assumption: 1.5 g combined seasoning per batch; not weighed."
+          "excludedReason": "Source-backed source-total ceiling under existing GK omission rule.",
+          "availableCarbohydrateUpperBoundPerServingG": 0.4424,
+          "upperBoundEvidence": "USDA SR Legacy2018 FDC170923 Spices, cumin seed; nutrient1005 totalCHO 44.24g/100g; retained 2g/2servings. No fibre/polyol subtraction. Nominal source-model ceiling only; not a clinical or lot maximum.",
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion."
+        },
+        {
+          "name": "Santa Maria -savupaprikajauhetta",
+          "grams": 1,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "Existing source-backed small-portion GK omission; not actual A0.",
+          "availableCarbohydrateUpperBoundPerServingG": 0.065,
+          "upperBoundEvidence": "Santa Maria smoked paprika GTIN7311311015243, retailer label13g EU carbohydrate/100g including polyols; no fibre subtraction or assumed P0. Source: https://www.minimani.fi/santa-maria-paprika-savustettu-37-g.html"
+        },
+        {
+          "name": "jauhettua mustapippuria",
+          "grams": 0.5,
+          "fineliRecordId": "op142-fineli-11177",
+          "giRecordId": null,
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+          "giMatchEvidence": "No matching GI; source-known Fineli CHOAVL 0.095775g/serving is counted in cumulative omission; not zero. CHOAVL already excludes polyols."
+        },
+        {
+          "name": "puhtaita kuivattuja chilihiutaleita",
+          "grams": 0.3,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "Existing source-backed small-portion GK omission; not actual A0.",
+          "availableCarbohydrateUpperBoundPerServingG": 0.15,
+          "upperBoundEvidence": "Exact weighed0.3g pure dried chilli flakes: available carbohydrate cannot exceed the entire edible input mass. All flakes eaten. Physical mass ceiling, not an actual nutrient estimate or a GI100 assumption."
+        },
+        {
+          "name": "tuoretta persiljaa",
+          "grams": 8,
+          "fineliRecordId": "op142-fineli-333",
+          "giRecordId": "op142-vegetable-imputation40",
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+          "foodKey": "op142-low-carb-vegetable",
+          "preparationKey": "op142-vegetable-imputation40",
+          "giMatchEvidence": "Existing project PI40 for this named chopped nonstarchy vegetable, allium or fresh herb. Explicit current preparation application, not measured ingredient GI or a food-family mean."
+        },
+        {
+          "name": "suolaa",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "Explicit pure salt",
+          "estimatedAvailableCarbohydratePerServingG": 0,
+          "negligibleAssumption": "Pure salt, no carbohydrate. Unknown salt mass remains null.",
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion."
         }
       ]
     },
@@ -739,101 +832,106 @@
       "ingredients": [
         {
           "name": "munakoisoa",
-          "grams": 400,
-          "fineliRecordId": "fineli-362-2026-10-24",
-          "giRecordId": "vegetables-category-mean-gi-66",
-          "foodKey": "vegetable",
-          "preparationKey": "vegetable-category",
-          "giMatchEvidence": "Published GI source; category and preparation limitations are documented in the GI record.",
-          "massEvidence": "Fineli Rel20 KPL_M 400 g, reseptissä 1 kpl."
+          "grams": 300,
+          "fineliRecordId": "op142-fineli-362",
+          "giRecordId": "op142-vegetable-imputation40",
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+          "foodKey": "op142-low-carb-vegetable",
+          "preparationKey": "op142-vegetable-imputation40",
+          "giMatchEvidence": "Existing project PI40 for this named chopped nonstarchy vegetable, allium or fresh herb. Explicit current preparation application, not measured ingredient GI or a food-family mean."
         },
         {
           "name": "kesäkurpitsaa",
-          "grams": 700,
-          "fineliRecordId": "fineli-389-2026-10-24",
-          "giRecordId": "vegetables-category-mean-gi-66",
-          "foodKey": "vegetable",
-          "preparationKey": "vegetable-category",
-          "giMatchEvidence": "Published GI source; category and preparation limitations are documented in the GI record.",
-          "massEvidence": "Fineli Rel20 KPL_M 350 g, reseptissä 2 kpl."
+          "grams": 400,
+          "fineliRecordId": "op142-fineli-389",
+          "giRecordId": "op142-vegetable-imputation40",
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+          "foodKey": "op142-low-carb-vegetable",
+          "preparationKey": "op142-vegetable-imputation40",
+          "giMatchEvidence": "Existing project PI40 for this named chopped nonstarchy vegetable, allium or fresh herb. Explicit current preparation application, not measured ingredient GI or a food-family mean."
         },
         {
           "name": "punaista paprikaa",
-          "grams": 170,
-          "fineliRecordId": "fineli-386-2026-10-24",
-          "giRecordId": null,
-          "foodKey": "red-pepper",
-          "preparationKey": "recipe-specific-preparation-no-approved-pepper-gi",
-          "giMatchEvidence": "AJO 1.6B: generic Pepper GI 40 is reference-only. Species, colour, preparation and original human measurement are unverified; DOI 10.3390/nu12102989 Table 1 cannot support this ingredient. Missing GI is not zero.",
-          "massEvidence": "Fineli Rel20 KPL_M 170 g, reseptissä 1 kpl. AJO 1.6B: starting edible raw ingredient, not cooked output weight; Fineli #386/#387 basis is 100% edible. No invented seed/stalk or cooking-loss multiplier."
+          "grams": 120,
+          "fineliRecordId": "op142-fineli-386",
+          "giRecordId": "op142-vegetable-imputation40",
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+          "foodKey": "op142-low-carb-vegetable",
+          "preparationKey": "op142-vegetable-imputation40",
+          "giMatchEvidence": "Existing project PI40 for this named chopped nonstarchy vegetable, allium or fresh herb. Explicit current preparation application, not measured ingredient GI or a food-family mean."
         },
         {
-          "name": "sipuli",
+          "name": "sipulia",
           "grams": 55,
-          "fineliRecordId": "fineli-335-2026-10-24",
-          "giRecordId": null,
-          "giMatchEvidence": "No GI required if Fineli available carbohydrate is below 1 g per serving.",
-          "massEvidence": "Fineli Rel20 KPL_M 55 g, reseptissä 1 kpl."
+          "fineliRecordId": "op142-fineli-335",
+          "giRecordId": "op142-vegetable-imputation40",
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+          "foodKey": "op142-low-carb-vegetable",
+          "preparationKey": "op142-vegetable-imputation40",
+          "giMatchEvidence": "Existing project PI40 for this named chopped nonstarchy vegetable, allium or fresh herb. Explicit current preparation application, not measured ingredient GI or a food-family mean."
         },
         {
-          "name": "valkosipulinkynttä",
-          "grams": 10.5,
-          "fineliRecordId": "fineli-393-2026-10-24",
-          "giRecordId": null,
-          "giMatchEvidence": "No GI required if Fineli available carbohydrate is below 1 g per serving.",
-          "massEvidence": "Fineli Rel20 KPL_M 3.5 g, reseptissä 3 kpl."
+          "name": "tuoretta kuorittua valkosipulia",
+          "grams": 9,
+          "fineliRecordId": "op142-fineli-393",
+          "giRecordId": "op142-vegetable-imputation40",
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+          "foodKey": "op142-low-carb-vegetable",
+          "preparationKey": "op142-vegetable-imputation40",
+          "giMatchEvidence": "Existing project PI40 for this named chopped nonstarchy vegetable, allium or fresh herb. Explicit current preparation application, not measured ingredient GI or a food-family mean."
         },
         {
-          "name": "kypsiä tomaatteja",
+          "name": "tomaattia",
           "grams": 500,
-          "fineliRecordId": "fineli-352-2026-10-24",
-          "giRecordId": "tomato-raw-cooked-sauce-analogue-gi-22",
-          "foodKey": "tomato",
-          "preparationKey": "cooked-in-sauce",
-          "giMatchEvidence": "Published GI source; category and preparation limitations are documented in the GI record.",
-          "massEvidence": "Reseptin punnittu 500 g."
+          "fineliRecordId": "op142-fineli-352",
+          "giRecordId": "op142-vegetable-imputation40",
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+          "foodKey": "op142-low-carb-vegetable",
+          "preparationKey": "op142-vegetable-imputation40",
+          "giMatchEvidence": "Existing project PI40 for this named chopped nonstarchy vegetable, allium or fresh herb. Explicit current preparation application, not measured ingredient GI or a food-family mean."
         },
         {
           "name": "oliiviöljyä",
           "grams": 54,
-          "fineliRecordId": "fineli-536-2026-10-24",
+          "fineliRecordId": "op142-fineli-536",
           "giRecordId": null,
-          "giMatchEvidence": "No GI required if Fineli available carbohydrate is below 1 g per serving.",
-          "massEvidence": "Fineli Rel20 RKL 13.5 g, reseptissä 4 rkl."
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion."
         },
         {
-          "name": "kuivattua timjamia",
+          "name": "jauhettua kuivattua timjamia",
+          "grams": 2,
+          "fineliRecordId": "op142-fineli-11194",
+          "giRecordId": null,
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+          "giMatchEvidence": "No matching GI; source-known Fineli CHOAVL 0.1347g/serving is counted in cumulative omission; not zero. CHOAVL already excludes polyols."
+        },
+        {
+          "name": "jauhettua mustapippuria",
           "grams": 0.5,
-          "fineliRecordId": "fineli-11194-2026-10-24",
+          "fineliRecordId": "op142-fineli-11177",
           "giRecordId": null,
-          "giMatchEvidence": "No GI required if Fineli available carbohydrate is below 1 g per serving.",
-          "massEvidence": "Fineli Rel20 TL 0.5 g, reseptissä 1 tl."
-        },
-        {
-          "name": "suolaa",
-          "grams": 6.5,
-          "fineliRecordId": "fineli-30-2026-10-24",
-          "giRecordId": null,
-          "giMatchEvidence": "No GI required if Fineli available carbohydrate is below 1 g per serving.",
-          "massEvidence": "Fineli Rel20 TL 6.5 g, reseptissä 1 tl."
-        },
-        {
-          "name": "mustapippuria",
-          "grams": 0.5,
-          "fineliRecordId": "fineli-11177-2026-10-24",
-          "giRecordId": null,
-          "giMatchEvidence": "No GI required if Fineli available carbohydrate is below 1 g per serving.",
-          "massEvidence": "Fineli Rel20 TL 2 g, reseptissä 0.25 tl."
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+          "giMatchEvidence": "No matching GI; source-known Fineli CHOAVL 0.0478875g/serving is counted in cumulative omission; not zero. CHOAVL already excludes polyols."
         },
         {
           "name": "tuoretta basilikaa",
+          "grams": 15,
+          "fineliRecordId": "op142-fineli-11134",
+          "giRecordId": "op142-lowcho50-r4",
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+          "foodKey": "op142-lowcho-code",
+          "preparationKey": "op142-lowcho50-r4",
+          "giMatchEvidence": "Existing project PI50 for this named Fineli profile A1.06g/100g <=5. Not measured food GI or a validated scientific threshold. Exact current juice/egg/herb/stock version and source are bound; no former recipe substitution is inherited."
+        },
+        {
+          "name": "suolaa",
           "grams": null,
           "fineliRecordId": null,
           "giRecordId": null,
-          "excludedReason": "Trace seasoning or unspecified salt has no matching Fineli measure; conservative standard assumption is used only below 1 g available carbohydrate per serving.",
-          "estimatedAvailableCarbohydratePerServingG": 0.2,
-          "negligibleAssumption": "Conservative estimate 0.2 g available carbohydrate per serving; omitted below 1 g.",
-          "massEvidence": "No exact Fineli Rel20 unit mass; trace estimate only."
+          "excludedReason": "Explicit pure salt",
+          "estimatedAvailableCarbohydratePerServingG": 0,
+          "negligibleAssumption": "Pure salt, no carbohydrate. Unknown salt mass remains null.",
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion."
         }
       ]
     },
@@ -999,89 +1097,89 @@
       "servings": 4,
       "ingredients": [
         {
-          "name": "isoa paprikaa",
-          "grams": 920,
-          "fineliRecordId": null,
-          "giRecordId": null,
-          "foodKey": "bell-pepper-colour-unspecified",
-          "preparationKey": "recipe-specific-preparation-no-approved-pepper-gi",
-          "giMatchEvidence": "AJO 1.6B: generic Pepper GI 40 is reference-only. Species, colour, preparation and original human measurement are unverified; DOI 10.3390/nu12102989 Table 1 cannot support this ingredient. Missing GI is not zero. AJO 1.6B: recipe does not identify pepper colour; red composition must not be inferred from the photograph. Product-specific carbohydrate composition is unresolved.",
-          "massEvidence": "Fineli Rel20 KPL_L 230 g, reseptissä 4 kpl. AJO 1.6B: starting edible raw ingredient, not cooked output weight; Fineli #386/#387 basis is 100% edible. No invented seed/stalk or cooking-loss multiplier.",
-          "compositionEvidence": "AJO 1.6B: recipe does not identify pepper colour; red composition must not be inferred from the photograph. Product-specific carbohydrate composition is unresolved."
+          "name": "punaista paprikaa",
+          "grams": 640,
+          "fineliRecordId": "op142-fineli-386",
+          "giRecordId": "op142-vegetable-imputation40",
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+          "foodKey": "op142-low-carb-vegetable",
+          "preparationKey": "op142-vegetable-imputation40",
+          "giMatchEvidence": "Existing project PI40 for this named chopped nonstarchy vegetable, allium or fresh herb. Explicit current preparation application, not measured ingredient GI or a food-family mean."
         },
         {
-          "name": "naudan jauhelihaa",
+          "name": "naudan jauhelihaa, rasvaa 17 %",
           "grams": 500,
-          "fineliRecordId": "fineli-11562-2026-10-24",
+          "fineliRecordId": "op142-fineli-11562",
           "giRecordId": null,
-          "giMatchEvidence": "No GI required if Fineli available carbohydrate is below 1 g per serving.",
-          "massEvidence": "Reseptin punnittu 500 g."
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion."
         },
         {
-          "name": "pieni sipuli",
-          "grams": 30,
-          "fineliRecordId": "fineli-335-2026-10-24",
-          "giRecordId": null,
-          "giMatchEvidence": "No GI required if Fineli available carbohydrate is below 1 g per serving.",
-          "massEvidence": "Fineli Rel20 KPL_S 30 g, reseptissä 1 kpl."
+          "name": "sipulia",
+          "grams": 70,
+          "fineliRecordId": "op142-fineli-335",
+          "giRecordId": "op142-vegetable-imputation40",
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+          "foodKey": "op142-low-carb-vegetable",
+          "preparationKey": "op142-vegetable-imputation40",
+          "giMatchEvidence": "Existing project PI40 for this named chopped nonstarchy vegetable, allium or fresh herb. Explicit current preparation application, not measured ingredient GI or a food-family mean."
         },
         {
           "name": "tomaattimurskaa",
           "grams": 150,
-          "fineliRecordId": "fineli-398-2026-10-24",
-          "giRecordId": "tomato-raw-cooked-sauce-analogue-gi-22",
-          "foodKey": "tomato",
-          "preparationKey": "cooked-in-sauce",
-          "giMatchEvidence": "Published GI source; category and preparation limitations are documented in the GI record.",
-          "massEvidence": "Reseptin punnittu 150 g."
+          "fineliRecordId": "op142-fineli-398",
+          "giRecordId": "op142-vegetable-imputation40",
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+          "foodKey": "op142-low-carb-vegetable",
+          "preparationKey": "op142-vegetable-imputation40",
+          "giMatchEvidence": "Existing project PI40 for this named chopped nonstarchy vegetable, allium or fresh herb. Explicit current preparation application, not measured ingredient GI or a food-family mean."
         },
         {
           "name": "tomaattipyreetä",
-          "grams": 13.5,
-          "fineliRecordId": "fineli-354-2026-10-24",
+          "grams": 16,
+          "fineliRecordId": "op142-fineli-354",
           "giRecordId": null,
-          "giMatchEvidence": "No GI required if Fineli available carbohydrate is below 1 g per serving.",
-          "massEvidence": "Fineli Rel20 dl-massa 90 g/dl suhteutettu 15 ml mittaan 13.5 g, reseptissä 1 rkl."
+          "massEvidence": "16g weighed tomato paste; preserve published paste rather than substituting100g extra crushed tomato.",
+          "giMatchEvidence": "Fineli354 A7.95;16g/4 gives0.318g availableCHO, eligible only under existing individual<1g and cumulative<2g omission."
         },
         {
           "name": "kuivattua oreganoa",
-          "grams": 0.5,
-          "fineliRecordId": "fineli-11191-2026-10-24",
+          "grams": 2,
+          "fineliRecordId": "op142-fineli-11191",
           "giRecordId": null,
-          "giMatchEvidence": "No GI required if Fineli available carbohydrate is below 1 g per serving.",
-          "massEvidence": "Fineli Rel20 TL 0.5 g, reseptissä 1 tl."
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+          "giMatchEvidence": "No matching GI; source-known Fineli CHOAVL 0.10815g/serving is counted in cumulative omission; not zero. CHOAVL already excludes polyols."
         },
         {
-          "name": "suolaa",
-          "grams": 3.25,
-          "fineliRecordId": "fineli-30-2026-10-24",
-          "giRecordId": null,
-          "giMatchEvidence": "No GI required if Fineli available carbohydrate is below 1 g per serving.",
-          "massEvidence": "Fineli Rel20 TL 6.5 g, reseptissä 0.5 tl."
-        },
-        {
-          "name": "mustapippuria",
+          "name": "jauhettua mustapippuria",
           "grams": 1,
-          "fineliRecordId": "fineli-11177-2026-10-24",
+          "fineliRecordId": "op142-fineli-11177",
           "giRecordId": null,
-          "giMatchEvidence": "No GI required if Fineli available carbohydrate is below 1 g per serving.",
-          "massEvidence": "Fineli Rel20 TL 2 g, reseptissä 0.5 tl."
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+          "giMatchEvidence": "No matching GI; source-known Fineli CHOAVL 0.095775g/serving is counted in cumulative omission; not zero. CHOAVL already excludes polyols."
         },
         {
-          "name": "juustoraastetta",
+          "name": "puolikovaa juustoraastetta, koostumusvertailussa rasvaa 25–35 %",
           "grams": 150,
-          "fineliRecordId": "fineli-642-2026-10-24",
+          "fineliRecordId": "op142-fineli-655",
           "giRecordId": null,
-          "giMatchEvidence": "No GI required if Fineli available carbohydrate is below 1 g per serving.",
-          "massEvidence": "Reseptin punnittu 150 g."
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion."
         },
         {
           "name": "oliiviöljyä",
           "grams": 13.5,
-          "fineliRecordId": "fineli-536-2026-10-24",
+          "fineliRecordId": "op142-fineli-536",
           "giRecordId": null,
-          "giMatchEvidence": "No GI required if Fineli available carbohydrate is below 1 g per serving.",
-          "massEvidence": "Fineli Rel20 RKL 13.5 g, reseptissä 1 rkl."
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion."
+        },
+        {
+          "name": "suolaa",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "Explicit pure salt",
+          "estimatedAvailableCarbohydratePerServingG": 0,
+          "negligibleAssumption": "Pure salt, no carbohydrate. Unknown salt mass remains null.",
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion."
         }
       ]
     },
@@ -1966,20 +2064,87 @@
       "servings": 3,
       "ingredients": [
         {
-          "name": "kypsää tomaattia",
+          "name": "kuoretonta kananmunaa",
+          "grams": 220,
+          "fineliRecordId": "op142-fineli-858",
+          "giRecordId": "op142-lowcho50-r4",
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+          "foodKey": "op142-lowcho-code",
+          "preparationKey": "op142-lowcho50-r4",
+          "giMatchEvidence": "Existing project PI50 for this named Fineli profile A0.3g/100g <=5. Not measured food GI or a validated scientific threshold. Exact current juice/egg/herb/stock version and source are bound; no former recipe substitution is inherited."
+        },
+        {
+          "name": "tomaattia",
           "grams": 375,
-          "fineliRecordId": "fineli-352-2026-10-24",
-          "giRecordId": "tomato-raw-cooked-sauce-analogue-gi-22",
-          "massEvidence": "Fineli #352 medium tomatoes at 125 g each, 3 tomatoes = 375 g; raw GI used as cooked-tomato analogue.",
-          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: tomato-raw-cooked-sauce-analogue-gi-22. Fineli #352 medium tomatoes at 125 g each, 3 tomatoes = 375 g; raw GI used as cooked-tomato analogue."
+          "fineliRecordId": "op142-fineli-352",
+          "giRecordId": "op142-vegetable-imputation40",
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+          "foodKey": "op142-low-carb-vegetable",
+          "preparationKey": "op142-vegetable-imputation40",
+          "giMatchEvidence": "Existing project PI40 for this named chopped nonstarchy vegetable, allium or fresh herb. Explicit current preparation application, not measured ingredient GI or a food-family mean."
         },
         {
           "name": "vihreää paprikaa",
           "grams": 170,
-          "fineliRecordId": "fineli-387-2026-10-24",
-          "giRecordId": "vegetables-category-mean-gi-66",
-          "massEvidence": "Fineli #387 medium green pepper measure = 170 g.",
-          "giMatchEvidence": "2021 International Tables category mean or named GI analogue: vegetables-category-mean-gi-66. Fineli #387 medium green pepper measure = 170 g."
+          "fineliRecordId": "op142-fineli-387",
+          "giRecordId": "op142-vegetable-imputation40",
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+          "foodKey": "op142-low-carb-vegetable",
+          "preparationKey": "op142-vegetable-imputation40",
+          "giMatchEvidence": "Existing project PI40 for this named chopped nonstarchy vegetable, allium or fresh herb. Explicit current preparation application, not measured ingredient GI or a food-family mean."
+        },
+        {
+          "name": "sipulia",
+          "grams": 55,
+          "fineliRecordId": "op142-fineli-335",
+          "giRecordId": "op142-vegetable-imputation40",
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+          "foodKey": "op142-low-carb-vegetable",
+          "preparationKey": "op142-vegetable-imputation40",
+          "giMatchEvidence": "Existing project PI40 for this named chopped nonstarchy vegetable, allium or fresh herb. Explicit current preparation application, not measured ingredient GI or a food-family mean."
+        },
+        {
+          "name": "oliiviöljyä",
+          "grams": 27,
+          "fineliRecordId": "op142-fineli-536",
+          "giRecordId": null,
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion."
+        },
+        {
+          "name": "paprikajauhetta",
+          "grams": 1,
+          "fineliRecordId": "op142-fineli-11182",
+          "giRecordId": null,
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+          "giMatchEvidence": "No matching GI; source-known Fineli CHOAVL 0.06113333333333333333333333333g/serving is counted in cumulative omission; not zero. CHOAVL already excludes polyols."
+        },
+        {
+          "name": "jauhettua mustapippuria",
+          "grams": 0.5,
+          "fineliRecordId": "op142-fineli-11177",
+          "giRecordId": null,
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+          "giMatchEvidence": "No matching GI; source-known Fineli CHOAVL 0.06385g/serving is counted in cumulative omission; not zero. CHOAVL already excludes polyols."
+        },
+        {
+          "name": "tuoretta persiljaa",
+          "grams": 10,
+          "fineliRecordId": "op142-fineli-333",
+          "giRecordId": "op142-vegetable-imputation40",
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+          "foodKey": "op142-low-carb-vegetable",
+          "preparationKey": "op142-vegetable-imputation40",
+          "giMatchEvidence": "Existing project PI40 for this named chopped nonstarchy vegetable, allium or fresh herb. Explicit current preparation application, not measured ingredient GI or a food-family mean."
+        },
+        {
+          "name": "suolaa",
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "Explicit pure salt",
+          "estimatedAvailableCarbohydratePerServingG": 0,
+          "negligibleAssumption": "Pure salt, no carbohydrate. Unknown salt mass remains null.",
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion."
         }
       ]
     },
@@ -2463,103 +2628,103 @@
         {
           "name": "munakoisoa",
           "grams": 800,
-          "fineliRecordId": "fineli-362-2026-10-24",
-          "giRecordId": "vegetables-category-mean-gi-66",
-          "massEvidence": "Per-unit mass estimate for munakoisoa; edible-state basis documented.",
-          "giMatchEvidence": "Published GI analogue/category record vegetables-category-mean-gi-66; source and limitations are listed centrally.",
-          "foodKey": "vegetable",
-          "preparationKey": "vegetable-category"
+          "fineliRecordId": "op142-fineli-362",
+          "giRecordId": "op142-vegetable-imputation40",
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+          "foodKey": "op142-low-carb-vegetable",
+          "preparationKey": "op142-vegetable-imputation40",
+          "giMatchEvidence": "Existing project PI40 for this named chopped nonstarchy vegetable, allium or fresh herb. Explicit current preparation application, not measured ingredient GI or a food-family mean."
         },
         {
           "name": "oliiviöljyä",
           "grams": 27,
-          "fineliRecordId": "fineli-536-2026-10-24",
+          "fineliRecordId": "op142-fineli-536",
           "giRecordId": null,
-          "massEvidence": "Ingredient-specific tablespoon mass estimate for oliiviöljyä."
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion."
         },
         {
           "name": "sipuli",
           "grams": 55,
-          "fineliRecordId": "fineli-335-2026-10-24",
-          "giRecordId": null,
-          "massEvidence": "Per-unit mass estimate for sipuli; edible-state basis documented. AJO 1.5: checked against original recipe and Fineli Release 20 #335 (4.8 g available carbohydrate/100 g; KPL_M 55 g, KPL_S 30 g); starting edible onion mass, no cooking-loss deduction.",
-          "giMatchEvidence": "AJO 1.5: onion GI 15 withdrawn; DOI 10.3390/nu12102989 Table 1 and DOI 10.3945/an.112.003509 Table 3 do not establish a preparation-matched primary human GI. Missing GI is not zero.",
-          "foodKey": "onion",
-          "preparationKey": "recipe-specific-preparation-no-approved-gi",
-          "recipeQuantity": {
-            "amount": 1,
-            "unit": "kpl",
-            "massGrams": null
-          }
+          "fineliRecordId": "op142-fineli-335",
+          "giRecordId": "op142-vegetable-imputation40",
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+          "foodKey": "op142-low-carb-vegetable",
+          "preparationKey": "op142-vegetable-imputation40",
+          "giMatchEvidence": "Existing project PI40 for this named chopped nonstarchy vegetable, allium or fresh herb. Explicit current preparation application, not measured ingredient GI or a food-family mean."
         },
         {
           "name": "sellerinvartta",
           "grams": 80,
-          "fineliRecordId": "afcd-F002390-2026-10-24",
-          "giRecordId": "vegetables-category-mean-gi-66",
-          "massEvidence": "Per-unit mass estimate for sellerinvartta; edible-state basis documented.",
-          "giMatchEvidence": "Published GI analogue/category record vegetables-category-mean-gi-66; source and limitations are listed centrally.",
-          "foodKey": "vegetable",
-          "preparationKey": "vegetable-category"
+          "fineliRecordId": "op142-fineli-339",
+          "giRecordId": "op142-vegetable-imputation40",
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+          "foodKey": "op142-low-carb-vegetable",
+          "preparationKey": "op142-vegetable-imputation40",
+          "giMatchEvidence": "Existing project PI40 for this named chopped nonstarchy vegetable, allium or fresh herb. Explicit current preparation application, not measured ingredient GI or a food-family mean."
         },
         {
           "name": "tomaattimurskaa",
           "grams": 400,
-          "fineliRecordId": "fineli-398-2026-10-24",
-          "giRecordId": null,
-          "massEvidence": "Ingredient mapped to fineli-release-20 record 398; source state: canned crushed tomato.",
-          "giMatchEvidence": "Canned crushed tomato has no preparation-matched GI source. The whole raw tomato GI analogue is removed; raw whole tomato is not cooked crushed tomato."
+          "fineliRecordId": "op142-fineli-398",
+          "giRecordId": "op142-vegetable-imputation40",
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+          "foodKey": "op142-low-carb-vegetable",
+          "preparationKey": "op142-vegetable-imputation40",
+          "giMatchEvidence": "Existing project PI40 for this named chopped nonstarchy vegetable, allium or fresh herb. Explicit current preparation application, not measured ingredient GI or a food-family mean."
         },
         {
-          "name": "vihreitä oliiveja",
+          "name": "suolaliemeen säilöttyjä kivettömiä vihreitä oliiveja, valutettuna",
           "grams": 80,
-          "fineliRecordId": "afcd-F006198-2026-10-24",
-          "giRecordId": "vegetables-category-mean-gi-66",
-          "massEvidence": "Ingredient mapped to afcd-release-3 record F006198; source state: drained olives.",
-          "giMatchEvidence": "Published GI analogue/category record vegetables-category-mean-gi-66; source and limitations are listed centrally.",
-          "foodKey": "vegetable",
-          "preparationKey": "vegetable-category"
+          "fineliRecordId": "op143-fineli-34972",
+          "giRecordId": null,
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion."
         },
         {
           "name": "kapriksia",
-          "grams": 8.6,
-          "fineliRecordId": "afcd-F002220-2026-10-24",
-          "massEvidence": "USDA FDC SR Legacy #172238, canned drained capers: 1 tbsp = 8.6 g.",
-          "excludedReason": "No matched GI source; omitted only under the existing sub-1 g ingredient and under-2 g cumulative editorial tolerance.",
-          "availableCarbohydrateUpperBoundPerServingG": 0.10535,
-          "upperBoundEvidence": "AFCD Release 3 F002220, drained capers: 1.7 g available carbohydrate + 3.2 g fibre per 100 g. Conservative total-carbohydrate bound: 8.6 g batch × 4.9 g/100 g ÷ 4 servings = 0.10535 g/serving.",
-          "giRecordId": null
+          "grams": 9,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "Source-backed source-total ceiling under existing GK omission rule.",
+          "availableCarbohydrateUpperBoundPerServingG": 0.110025,
+          "upperBoundEvidence": "USDA SR Legacy2018 FDC172238 Capers, canned; nutrient1005 totalCHO 4.89g/100g; retained 9g/4servings. No fibre/polyol subtraction. Nominal source-model ceiling only; not a clinical or lot maximum.",
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion."
         },
         {
           "name": "punaviinietikkaa",
           "grams": 30,
-          "fineliRecordId": "fineli-929-2026-10-24",
-          "giRecordId": null,
-          "massEvidence": "Ingredient-specific tablespoon mass estimate for punaviinietikkaa."
+          "fineliRecordId": "op142-fineli-929",
+          "giRecordId": "op142-lowcho50-v2",
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+          "foodKey": "op142-lowcho-code",
+          "preparationKey": "op142-lowcho50-v2",
+          "giMatchEvidence": "Existing project PI50 for this named Fineli profile A0.5g/100g <=5. Not measured food GI or a validated scientific threshold. Exact current juice/egg/herb/stock version and source are bound; no former recipe substitution is inherited."
         },
         {
           "name": "sokeria",
           "grams": 12.5,
-          "fineliRecordId": "fineli-1-2026-10-24",
-          "giRecordId": "sugar-syrups-category-mean-gi-58",
-          "massEvidence": "Ingredient-specific tablespoon mass estimate for sokeria.",
-          "giMatchEvidence": "Published GI analogue/category record sugar-syrups-category-mean-gi-58; source and limitations are listed centrally.",
-          "foodKey": "sugar-syrups-category-mean",
-          "preparationKey": "category-mean"
+          "fineliRecordId": "op142-fineli-1",
+          "giRecordId": "op142-sucrose60",
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+          "foodKey": "op142-sucrose",
+          "preparationKey": "op142-sucrose60",
+          "giMatchEvidence": "Named LoGiCane sucrose human GI60, European cohort Venn2014; explicit ordinary-sucrose ingredient analogue in cooked caponata, not a measured meal or uncertainty interval."
         },
         {
           "name": "suolaa",
           "grams": 6.5,
-          "fineliRecordId": "fineli-30-2026-10-24",
+          "fineliRecordId": "op142-fineli-30",
           "giRecordId": null,
-          "massEvidence": "Ingredient-specific teaspoon mass estimate for suolaa."
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion."
         },
         {
           "name": "tuoretta basilikaa",
           "grams": 15,
-          "fineliRecordId": "fineli-11134-2026-10-24",
-          "giRecordId": null,
-          "massEvidence": "Recipe-listed 15 g. Fineli #11134 available carbohydrate is 1.06 g/100 g; 0.040 g/serving, below the 1 g cutoff."
+          "fineliRecordId": "op142-fineli-11134",
+          "giRecordId": "op142-lowcho50-v2",
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+          "foodKey": "op142-lowcho-code",
+          "preparationKey": "op142-lowcho50-v2",
+          "giMatchEvidence": "Existing project PI50 for this named Fineli profile A1.06g/100g <=5. Not measured food GI or a validated scientific threshold. Exact current juice/egg/herb/stock version and source are bound; no former recipe substitution is inherited."
         }
       ]
     },
@@ -11169,134 +11334,135 @@
         {
           "name": "naudan paistia",
           "grams": 700,
-          "fineliRecordId": "fineli-718-release-20",
+          "fineliRecordId": "op142-fineli-718",
           "giRecordId": null,
-          "massEvidence": "Raw beef roast; Fineli record 718. The recipe does not identify a narrower roast cut.",
-          "excludedReason": "Ingredient contribution is below 1 g available carbohydrate per serving under the documented pilot threshold.",
-          "estimatedAvailableCarbohydratePerServingG": 0,
-          "negligibleAssumption": "Calculated from the linked food record and documented recipe quantity."
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion."
         },
         {
           "name": "sipulia",
           "grams": 150,
-          "fineliRecordId": "fineli-335-release-20",
-          "giRecordId": "vegetables-category-mean-gi-66",
-          "massEvidence": "Raw yellow onion; Fineli record 335.",
-          "giMatchEvidence": "Supplementary category mean/analogue from International Tables 2021, not a direct food and preparation match; low-confidence ingredient estimate."
+          "fineliRecordId": "op142-fineli-335",
+          "giRecordId": "op142-vegetable-imputation40-r11",
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+          "foodKey": "op142-low-carb-vegetable",
+          "preparationKey": "op142-vegetable-imputation40-r11",
+          "giMatchEvidence": "Existing project PI40 for this named chopped nonstarchy vegetable, allium or fresh herb. Explicit current preparation application, not measured ingredient GI or a food-family mean."
         },
         {
           "name": "valkosipulinkynttä",
           "grams": 9,
-          "fineliRecordId": "afcd-F004193-release-3",
-          "giRecordId": null,
-          "massEvidence": "Garlic clove set to 3 g edible mass per clove.",
-          "excludedReason": "Ingredient contribution is below 1 g available carbohydrate per serving under the documented pilot threshold.",
-          "estimatedAvailableCarbohydratePerServingG": 0.22949999999999998,
-          "negligibleAssumption": "Calculated from the linked food record and documented recipe quantity."
+          "fineliRecordId": "op142-fineli-393",
+          "giRecordId": "op142-vegetable-imputation40-r11",
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+          "foodKey": "op142-low-carb-vegetable",
+          "preparationKey": "op142-vegetable-imputation40-r11",
+          "giMatchEvidence": "Existing project PI40 for this named chopped nonstarchy vegetable, allium or fresh herb. Explicit current preparation application, not measured ingredient GI or a food-family mean."
         },
         {
           "name": "punaista paprikaa",
           "grams": 160,
-          "fineliRecordId": "fineli-386-release-20",
-          "giRecordId": "vegetables-category-mean-gi-66",
-          "massEvidence": "Ingredient-specific household measure conversion: 160 g per kpl; recipe quantity converted to edible mass.",
-          "giMatchEvidence": "Supplementary category mean/analogue from International Tables 2021, not a direct food and preparation match; low-confidence ingredient estimate."
+          "fineliRecordId": "op142-fineli-386",
+          "giRecordId": "op142-vegetable-imputation40-r11",
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+          "foodKey": "op142-low-carb-vegetable",
+          "preparationKey": "op142-vegetable-imputation40-r11",
+          "giMatchEvidence": "Existing project PI40 for this named chopped nonstarchy vegetable, allium or fresh herb. Explicit current preparation application, not measured ingredient GI or a food-family mean."
         },
         {
           "name": "tomaatti",
           "grams": 120,
-          "fineliRecordId": "fineli-352-release-20",
-          "giRecordId": "tomato-raw-cooked-sauce-analogue-gi-22",
-          "massEvidence": "Ingredient-specific household measure conversion: 120 g per kpl; recipe quantity converted to edible mass.",
-          "giMatchEvidence": "Supplementary category mean/analogue from International Tables 2021, not a direct food and preparation match; low-confidence ingredient estimate."
+          "fineliRecordId": "op142-fineli-352",
+          "giRecordId": "op142-vegetable-imputation40-r11",
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+          "foodKey": "op142-low-carb-vegetable",
+          "preparationKey": "op142-vegetable-imputation40-r11",
+          "giMatchEvidence": "Existing project PI40 for this named chopped nonstarchy vegetable, allium or fresh herb. Explicit current preparation application, not measured ingredient GI or a food-family mean."
         },
         {
           "name": "tomaattipyreetä",
           "grams": 15,
-          "fineliRecordId": "fineli-354-release-20",
-          "giRecordId": null,
-          "massEvidence": "Ingredient-specific household measure conversion: 15 g per rkl; recipe quantity converted to edible mass.",
-          "excludedReason": "Ingredient contribution is below 1 g available carbohydrate per serving under the documented pilot threshold.",
-          "estimatedAvailableCarbohydratePerServingG": 0.298125,
-          "negligibleAssumption": "Calculated from the linked food record and documented recipe quantity."
+          "fineliRecordId": "op142-fineli-354",
+          "giRecordId": "op142-vegetable-imputation40-r11",
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+          "foodKey": "op142-low-carb-vegetable",
+          "preparationKey": "op142-vegetable-imputation40-r11",
+          "giMatchEvidence": "Existing project PI40 for this named chopped nonstarchy vegetable, allium or fresh herb. Explicit current preparation application, not measured ingredient GI or a food-family mean."
         },
         {
           "name": "paprikajauhetta",
           "grams": 9,
-          "fineliRecordId": "afcd-F006316-release-3",
+          "fineliRecordId": "op142-fineli-11182",
           "giRecordId": null,
-          "massEvidence": "Ingredient-specific household measure conversion: 6 g per rkl; recipe quantity converted to edible mass.",
-          "excludedReason": "Ingredient contribution is below 1 g available carbohydrate per serving under the documented pilot threshold.",
-          "estimatedAvailableCarbohydratePerServingG": 0.42975,
-          "negligibleAssumption": "Calculated from the linked food record and documented recipe quantity."
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+          "giMatchEvidence": "No matching GI; source-known Fineli CHOAVL 0.41265g/serving is counted in cumulative omission; not zero. CHOAVL already excludes polyols."
         },
         {
-          "name": "voita tai öljyä",
+          "name": "voita",
           "grams": 21,
-          "fineliRecordId": "fineli-500-release-20",
-          "giRecordId": null,
-          "massEvidence": "Recipe alternative resolved to butter; 14 g per tablespoon standard kitchen measure.",
-          "excludedReason": "Ingredient contribution is below 1 g available carbohydrate per serving under the documented pilot threshold.",
-          "estimatedAvailableCarbohydratePerServingG": 0.042,
-          "negligibleAssumption": "Calculated from the linked food record and documented recipe quantity."
+          "fineliRecordId": "op142-fineli-500",
+          "giRecordId": "op142-dairy-imputation30-r11",
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+          "foodKey": "op142-dairy-code",
+          "preparationKey": "op142-dairy-imputation30-r11",
+          "giMatchEvidence": "Existing project PI30 for this named unsweetened animal-dairy profile. Not measured cream, butter, cheese or prepared-meal GI. Exact current weighed version."
         },
         {
           "name": "juustokuminaa",
           "grams": 1,
-          "fineliRecordId": "afcd-F003327-release-3",
+          "fineliRecordId": null,
           "giRecordId": null,
-          "massEvidence": "Ingredient-specific household measure conversion: 2 g per tl; recipe quantity converted to edible mass.",
-          "excludedReason": "Ingredient contribution is below 1 g available carbohydrate per serving under the documented pilot threshold.",
-          "estimatedAvailableCarbohydratePerServingG": 0.08425,
-          "negligibleAssumption": "Calculated from the linked food record and documented recipe quantity."
+          "excludedReason": "Source-backed source-total ceiling under existing GK omission rule.",
+          "availableCarbohydrateUpperBoundPerServingG": 0.1106,
+          "upperBoundEvidence": "USDA SR Legacy2018 FDC170923 Spices, cumin seed; nutrient1005 totalCHO 44.24g/100g; retained 1.0g/4servings. No fibre/polyol subtraction. Nominal source-model ceiling only; not a clinical or lot maximum.",
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion."
         },
         {
           "name": "lihalientä",
           "grams": 300,
-          "fineliRecordId": "fineli-29-release-20",
-          "giRecordId": "soups-category-mean-gi-49",
-          "massEvidence": "Ingredient-specific household measure conversion: 100 g per dl; recipe quantity converted to edible mass.",
-          "giMatchEvidence": "Broad soups category mean from International Tables 2021 used as a low-confidence analogue for diluted beef stock retained in the finished soup/sauce; not a stock-specific test."
+          "fineliRecordId": "op142-fineli-29",
+          "giRecordId": "op142-lowcho50-r6-r11",
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+          "foodKey": "op142-lowcho-code",
+          "preparationKey": "op142-lowcho50-r6-r11",
+          "giMatchEvidence": "Existing project PI50 for this named Fineli profile A3.0g/100g <=5. Not measured food GI or a validated scientific threshold. Exact current juice/egg/herb/stock version and source are bound; no former recipe substitution is inherited."
         },
         {
-          "name": "suolaa",
+          "name": "suolaa maun mukaan",
           "grams": null,
           "fineliRecordId": null,
           "giRecordId": null,
-          "massEvidence": "Explicit omission, bounded under project omission tolerance.",
-          "excludedReason": "Small culinary seasoning or water; omitted only under the pilot below-1 g available-carbohydrate-per-serving rule.",
-          "estimatedAvailableCarbohydratePerServingG": 0.25,
-          "negligibleAssumption": "Conservative culinary-use estimate; unweighed garnish quantities are bounded below 1 g available carbohydrate per serving and shown as an assumption, not a measured amount."
+          "excludedReason": "Explicit pure salt",
+          "estimatedAvailableCarbohydratePerServingG": 0,
+          "negligibleAssumption": "Pure salt, no carbohydrate. Unknown salt mass remains null.",
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion."
         },
         {
           "name": "mustapippuria",
-          "grams": null,
-          "fineliRecordId": null,
+          "grams": 0.5,
+          "fineliRecordId": "op142-fineli-11177",
           "giRecordId": null,
-          "massEvidence": "Explicit omission, bounded under project omission tolerance.",
-          "excludedReason": "Small culinary seasoning or water; omitted only under the pilot below-1 g available-carbohydrate-per-serving rule.",
-          "estimatedAvailableCarbohydratePerServingG": 0.25,
-          "negligibleAssumption": "Conservative culinary-use estimate; unweighed garnish quantities are bounded below 1 g available carbohydrate per serving and shown as an assumption, not a measured amount."
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+          "giMatchEvidence": "No matching GI; source-known Fineli CHOAVL 0.0478875g/serving is counted in cumulative omission; not zero. CHOAVL already excludes polyols."
         },
         {
           "name": "smetanaa",
           "grams": 150,
-          "fineliRecordId": "afcd-F003269-release-3",
-          "giRecordId": null,
-          "massEvidence": "Smetana represented by analysed AFCD full-fat sour cream record F003269 (36.3% fat), the closest paired-carbohydrate record; no product brand is specified.",
-          "excludedReason": "Ingredient contribution is below 1 g available carbohydrate per serving under the documented pilot threshold.",
-          "estimatedAvailableCarbohydratePerServingG": 0.75,
-          "negligibleAssumption": "Calculated from the linked food record and documented recipe quantity."
+          "fineliRecordId": "op142-fineli-630",
+          "giRecordId": "op142-dairy-imputation30-r11",
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+          "foodKey": "op142-dairy-code",
+          "preparationKey": "op142-dairy-imputation30-r11",
+          "giMatchEvidence": "Existing project PI30 for this named unsweetened animal-dairy profile. Not measured cream, butter, cheese or prepared-meal GI. Exact current weighed version."
         },
         {
           "name": "persiljaa",
-          "grams": null,
-          "fineliRecordId": null,
-          "giRecordId": null,
-          "massEvidence": "Explicit omission, bounded under project omission tolerance.",
-          "excludedReason": "Small culinary seasoning or water; omitted only under the pilot below-1 g available-carbohydrate-per-serving rule.",
-          "estimatedAvailableCarbohydratePerServingG": 0.25,
-          "negligibleAssumption": "Conservative culinary-use estimate; unweighed garnish quantities are bounded below 1 g available carbohydrate per serving and shown as an assumption, not a measured amount."
+          "grams": 10,
+          "fineliRecordId": "op142-fineli-333",
+          "giRecordId": "op142-vegetable-imputation40-r11",
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+          "foodKey": "op142-low-carb-vegetable",
+          "preparationKey": "op142-vegetable-imputation40-r11",
+          "giMatchEvidence": "Existing project PI40 for this named chopped nonstarchy vegetable, allium or fresh herb. Explicit current preparation application, not measured ingredient GI or a food-family mean."
         }
       ]
     },
@@ -12267,80 +12433,90 @@
         {
           "name": "broilerin rintafileitä",
           "grams": 600,
-          "fineliRecordId": "fineli-11565-release-20",
+          "fineliRecordId": "op142-fineli-11565",
           "giRecordId": null,
-          "massEvidence": "Raw skinless breast fillet; Fineli Release 20 record 11565.",
-          "excludedReason": "Ingredient contribution is below 1 g available carbohydrate per serving under the documented pilot threshold.",
-          "estimatedAvailableCarbohydratePerServingG": 0,
-          "negligibleAssumption": "Calculated from the linked food record and documented recipe quantity."
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion."
         },
         {
           "name": "vihreää parsaa",
           "grams": 400,
-          "fineliRecordId": "afcd-F000155-release-3",
-          "giRecordId": "vegetables-category-mean-gi-66",
-          "massEvidence": "Raw green asparagus; AFCD record F000155.",
-          "giMatchEvidence": "Supplementary category mean/analogue from International Tables 2021, not a direct food and preparation match; low-confidence ingredient estimate."
+          "fineliRecordId": "op142-fineli-11689",
+          "giRecordId": "op142-vegetable-imputation40",
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+          "foodKey": "op142-low-carb-vegetable",
+          "preparationKey": "op142-vegetable-imputation40",
+          "giMatchEvidence": "Existing project PI40 for this named chopped nonstarchy vegetable, allium or fresh herb. Explicit current preparation application, not measured ingredient GI or a food-family mean."
         },
         {
-          "name": "sitruuna",
-          "grams": 58,
-          "fineliRecordId": "fineli-11048-release-20",
-          "giRecordId": null,
-          "massEvidence": "Edible portion set to 58 g per medium peeled lemon; Fineli peeled lemon record 11048.",
-          "excludedReason": "Ingredient contribution is below 1 g available carbohydrate per serving under the documented pilot threshold.",
-          "estimatedAvailableCarbohydratePerServingG": 0.319,
-          "negligibleAssumption": "Calculated from the linked food record and documented recipe quantity."
+          "name": "sitruunamehua",
+          "grams": 30,
+          "fineliRecordId": "op142-fineli-11557",
+          "giRecordId": "op142-lowcho50-r4",
+          "foodKey": "op142-lowcho-code",
+          "preparationKey": "op142-lowcho50-r4",
+          "massEvidence": "30g fresh undiluted juice, weighed; not58g whole lemon or1ml=1g conversion.",
+          "giMatchEvidence": "Existing project PI50 for this named Fineli profile A1.6g/100g <=5. Not measured food GI or a validated scientific threshold. Exact current juice/egg/herb/stock version and source are bound; no former recipe substitution is inherited."
         },
         {
           "name": "oliiviöljyä",
           "grams": 27.4,
-          "fineliRecordId": "fineli-536-release-20",
+          "fineliRecordId": "op142-fineli-536",
           "giRecordId": null,
-          "massEvidence": "Ingredient-specific household measure conversion: 13.7 g per rkl; recipe quantity converted to edible mass.",
-          "excludedReason": "Ingredient contribution is below 1 g available carbohydrate per serving under the documented pilot threshold.",
-          "estimatedAvailableCarbohydratePerServingG": 0,
-          "negligibleAssumption": "Calculated from the linked food record and documented recipe quantity."
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion."
         },
         {
           "name": "voita",
           "grams": 30,
-          "fineliRecordId": "fineli-500-release-20",
-          "giRecordId": null,
-          "massEvidence": "Butter; Fineli record 500.",
-          "excludedReason": "Ingredient contribution is below 1 g available carbohydrate per serving under the documented pilot threshold.",
-          "estimatedAvailableCarbohydratePerServingG": 0.06,
-          "negligibleAssumption": "Calculated from the linked food record and documented recipe quantity."
+          "fineliRecordId": "op142-fineli-500",
+          "giRecordId": "op142-dairy-imputation30",
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+          "foodKey": "op142-dairy-code",
+          "preparationKey": "op142-dairy-imputation30",
+          "giMatchEvidence": "Existing project PI30 for this named unsweetened animal-dairy profile. Not measured cream, butter, cheese or prepared-meal GI. Exact current weighed version."
         },
         {
-          "name": "kuivattua timjamia",
+          "name": "kuivattua jauhettua timjamia",
+          "grams": 2,
+          "fineliRecordId": "op142-fineli-11194",
+          "giRecordId": null,
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+          "giMatchEvidence": "No matching GI; source-known Fineli CHOAVL 0.1347g/serving is counted in cumulative omission; not zero. CHOAVL already excludes polyols."
+        },
+        {
+          "name": "valkosipulijauhetta, punnittuna3,1g",
+          "grams": 3.1,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "Source-backed source-total ceiling under existing GK omission rule.",
+          "availableCarbohydrateUpperBoundPerServingG": 0.5636575,
+          "upperBoundEvidence": "USDA SR Legacy2018 FDC171325 Spices, garlic powder; nutrient1005 totalCHO 72.73g/100g; retained 3.1g/4servings. No fibre/polyol subtraction. Nominal source-model ceiling only; not a clinical or lot maximum.",
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion."
+        },
+        {
+          "name": "jauhettua mustapippuria",
+          "grams": 0.5,
+          "fineliRecordId": "op142-fineli-11177",
+          "giRecordId": null,
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+          "giMatchEvidence": "No matching GI; source-known Fineli CHOAVL 0.0478875g/serving is counted in cumulative omission; not zero. CHOAVL already excludes polyols."
+        },
+        {
+          "name": "hienoksi raastettua sitruunan ulkokuorta",
+          "grams": 2,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "Existing source-backed small-portion GK omission; not actual A0.",
+          "availableCarbohydrateUpperBoundPerServingG": 0.08,
+          "upperBoundEvidence": "USDA167749 raw lemon peel totalCHO16g/100g;2g weighed zest, all consumed. Nominal source-model ceiling, no P0 inference."
+        },
+        {
+          "name": "suolaa",
           "grams": null,
           "fineliRecordId": null,
           "giRecordId": null,
-          "massEvidence": "Explicit omission, bounded under project omission tolerance.",
-          "excludedReason": "Small culinary seasoning or water; omitted only under the pilot below-1 g available-carbohydrate-per-serving rule.",
-          "estimatedAvailableCarbohydratePerServingG": 0.25,
-          "negligibleAssumption": "Conservative culinary-use estimate; unweighed garnish quantities are bounded below 1 g available carbohydrate per serving and shown as an assumption, not a measured amount."
-        },
-        {
-          "name": "valkosipulijauhetta",
-          "grams": null,
-          "fineliRecordId": null,
-          "giRecordId": null,
-          "massEvidence": "Explicit omission, bounded under project omission tolerance.",
-          "excludedReason": "Small culinary seasoning or water; omitted only under the pilot below-1 g available-carbohydrate-per-serving rule.",
-          "estimatedAvailableCarbohydratePerServingG": 0.25,
-          "negligibleAssumption": "Conservative culinary-use estimate; unweighed garnish quantities are bounded below 1 g available carbohydrate per serving and shown as an assumption, not a measured amount."
-        },
-        {
-          "name": "suolaa ja mustapippuria",
-          "grams": null,
-          "fineliRecordId": null,
-          "giRecordId": null,
-          "massEvidence": "Explicit omission, bounded under project omission tolerance.",
-          "excludedReason": "Small culinary seasoning or water; omitted only under the pilot below-1 g available-carbohydrate-per-serving rule.",
-          "estimatedAvailableCarbohydratePerServingG": 0.25,
-          "negligibleAssumption": "Conservative culinary-use estimate; unweighed garnish quantities are bounded below 1 g available carbohydrate per serving and shown as an assumption, not a measured amount."
+          "excludedReason": "Pure salt",
+          "estimatedAvailableCarbohydratePerServingG": 0,
+          "negligibleAssumption": "Pure salt has no carbohydrate; mass remains unspecified."
         }
       ]
     },
@@ -20950,78 +21126,90 @@
         {
           "name": "juuriselleriä",
           "grams": 700,
-          "fineliRecordId": "afcd-F002384-release-3",
-          "giRecordId": "vegetables-category-mean-gi-66",
-          "massEvidence": "Recipe-listed 700 g, mapped to Celeriac, peeled, raw (raw peeled celeriac).",
-          "foodKey": "vegetable",
-          "preparationKey": "vegetable-category",
-          "giMatchEvidence": "Vegetables other than potatoes, category mean: Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.; category/analogue estimate, low confidence."
+          "fineliRecordId": "op142-fineli-311",
+          "giRecordId": "op142-vegetable-imputation40",
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+          "foodKey": "op142-low-carb-vegetable",
+          "preparationKey": "op142-vegetable-imputation40",
+          "giMatchEvidence": "Existing project PI40 for this named chopped nonstarchy vegetable, allium or fresh herb. Explicit current preparation application, not measured ingredient GI or a food-family mean."
         },
         {
-          "name": "anjovisfileitä mausteliemessä",
+          "name": "öljyyn säilöttyjä anjovisfileitä, valutettuna",
           "grams": 125,
           "fineliRecordId": null,
           "giRecordId": null,
-          "excludedReason": "No source-matched composition and preparation was resolved for “anjovisfileitä mausteliemessä”; it is not treated as zero.",
-          "massEvidence": "Recipe-listed 125 g anjovisfileitä mausteliemessä."
+          "excludedReason": "Source-backed source-total ceiling under existing GK omission rule.",
+          "estimatedAvailableCarbohydratePerServingG": 0,
+          "negligibleAssumption": "USDA SR Legacy2018 FDC174183 Fish, anchovy, european, canned in oil, drained solids; nutrient1005 totalCHO 0g/100g; retained 125g/4servings. No fibre/polyol subtraction. Nominal source-model ceiling only; not a clinical or lot maximum. Source total0 implies source-model availableCHO0; no aggregate polyol zero is fabricated.",
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion."
         },
         {
           "name": "sipuli",
           "grams": 55,
-          "fineliRecordId": "fineli-335-release-20",
-          "giRecordId": null,
-          "massEvidence": "Recipe-listed 55 g, mapped to SIPULI, KELTASIPULI (raw yellow onion). AJO 1.5: checked against original recipe and Fineli Release 20 #335 (4.8 g available carbohydrate/100 g; KPL_M 55 g, KPL_S 30 g); starting edible onion mass, no cooking-loss deduction.",
-          "foodKey": "onion",
-          "preparationKey": "recipe-specific-preparation-no-approved-gi",
-          "giMatchEvidence": "AJO 1.5: onion GI 15 withdrawn; DOI 10.3390/nu12102989 Table 1 and DOI 10.3945/an.112.003509 Table 3 do not establish a preparation-matched primary human GI. Missing GI is not zero.",
-          "recipeQuantity": {
-            "amount": 1,
-            "unit": "kpl",
-            "massGrams": null
-          }
+          "fineliRecordId": "op142-fineli-335",
+          "giRecordId": "op142-vegetable-imputation40",
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+          "foodKey": "op142-low-carb-vegetable",
+          "preparationKey": "op142-vegetable-imputation40",
+          "giMatchEvidence": "Existing project PI40 for this named chopped nonstarchy vegetable, allium or fresh herb. Explicit current preparation application, not measured ingredient GI or a food-family mean."
         },
         {
-          "name": "kuohukermaa",
+          "name": "kuohukermaa, rasvaa 38 %",
           "grams": 250,
-          "fineliRecordId": "fineli-631-release-20",
-          "giRecordId": "dairy-category-mean-gi-35",
-          "massEvidence": "Recipe-listed 250 g, mapped to KERMA, KUOHUKERMA, RASVAA 38 % (whipping cream, 38% fat).",
-          "foodKey": "dairy",
-          "preparationKey": "unflavoured-dairy",
-          "giMatchEvidence": "Dairy products, category mean: Category mean, not a measured GI for the recipe's cream cheese.; category/analogue estimate, low confidence."
+          "fineliRecordId": "op142-fineli-631",
+          "giRecordId": "op142-dairy-imputation30",
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+          "foodKey": "op142-dairy-code",
+          "preparationKey": "op142-dairy-imputation30",
+          "giMatchEvidence": "Existing project PI30 for this named unsweetened animal-dairy profile. Not measured cream, butter, cheese or prepared-meal GI. Exact current weighed version."
         },
         {
-          "name": "täysmaitoa",
+          "name": "täysmaitoa, rasvaa 3,5 %",
           "grams": 100,
-          "fineliRecordId": "fineli-684-release-20",
-          "giRecordId": "dairy-category-mean-gi-35",
-          "massEvidence": "Recipe-listed 100 g, mapped to MAITO, KEVYTMAITO, D-VITAMIINIA 1 UG (plain milk).",
-          "foodKey": "dairy",
-          "preparationKey": "unflavoured-dairy",
-          "giMatchEvidence": "Dairy products, category mean: Category mean, not a measured GI for the recipe's cream cheese.; category/analogue estimate, low confidence."
+          "fineliRecordId": "op142-fineli-689",
+          "giRecordId": "op142-dairy-imputation30",
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+          "foodKey": "op142-dairy-code",
+          "preparationKey": "op142-dairy-imputation30",
+          "giMatchEvidence": "Existing project PI30 for this named unsweetened animal-dairy profile. Not measured cream, butter, cheese or prepared-meal GI. Exact current weighed version."
         },
         {
           "name": "voita",
           "grams": 28,
-          "fineliRecordId": "fineli-576-release-20",
-          "giRecordId": null,
-          "massEvidence": "Recipe-listed 28 g, mapped to VOI, SUOLATON (unsalted butter)."
+          "fineliRecordId": "op142-fineli-500",
+          "giRecordId": "op142-dairy-imputation30",
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+          "foodKey": "op142-dairy-code",
+          "preparationKey": "op142-dairy-imputation30",
+          "giMatchEvidence": "Existing project PI30 for this named unsweetened animal-dairy profile. Not measured cream, butter, cheese or prepared-meal GI. Exact current weighed version."
         },
         {
-          "name": "mustapippuria",
-          "grams": null,
-          "fineliRecordId": null,
+          "name": "jauhettua mustapippuria",
+          "grams": 0.5,
+          "fineliRecordId": "op142-fineli-11177",
           "giRecordId": null,
-          "excludedReason": "AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
-          "massEvidence": "Recipe-listed small seasoning/herb amount; bounded estimate, not a weighed amount."
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+          "giMatchEvidence": "No matching GI; source-known Fineli CHOAVL 0.0478875g/serving is counted in cumulative omission; not zero. CHOAVL already excludes polyols."
         },
         {
           "name": "silputtua tilliä",
+          "grams": 8,
+          "fineliRecordId": "op142-fineli-369",
+          "giRecordId": "op142-vegetable-imputation40",
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+          "foodKey": "op142-low-carb-vegetable",
+          "preparationKey": "op142-vegetable-imputation40",
+          "giMatchEvidence": "Existing project PI40 for this named chopped nonstarchy vegetable, allium or fresh herb. Explicit current preparation application, not measured ingredient GI or a food-family mean."
+        },
+        {
+          "name": "suolaa",
           "grams": null,
           "fineliRecordId": null,
           "giRecordId": null,
-          "excludedReason": "AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
-          "massEvidence": "Recipe-listed small seasoning/herb amount; bounded estimate, not a weighed amount."
+          "excludedReason": "Explicit pure salt",
+          "estimatedAvailableCarbohydratePerServingG": 0,
+          "negligibleAssumption": "Pure salt, no carbohydrate. Unknown salt mass remains null.",
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion."
         }
       ]
     },
@@ -22241,126 +22429,124 @@
         {
           "name": "lampaan lapaa",
           "grams": 800,
-          "fineliRecordId": "afcd-F005074-release-3",
+          "fineliRecordId": "op142-fineli-731",
           "giRecordId": null,
-          "massEvidence": "Recipe-listed 800 g, mapped to Lamb, roasting piece, shoulder, lean, raw (raw lamb roasting-piece shoulder, lean; closest AFCD cut match, 0 g available carbohydrate)."
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion."
         },
         {
-          "name": "öljyä tai gheetä",
-          "grams": null,
-          "fineliRecordId": null,
+          "name": "oliiviöljyä",
+          "grams": 27,
+          "fineliRecordId": "op142-fineli-536",
           "giRecordId": null,
-          "excludedReason": "Pure edible oil contributes no available carbohydrate.",
-          "estimatedAvailableCarbohydratePerServingG": 0,
-          "negligibleAssumption": "Pure edible oil has zero available carbohydrate.",
-          "massEvidence": "Recipe-listed pure cooking oil; mass is immaterial to available carbohydrate."
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion."
         },
         {
           "name": "sipuli",
           "grams": 55,
-          "fineliRecordId": "fineli-335-release-20",
-          "giRecordId": null,
-          "massEvidence": "Recipe-listed 55 g, mapped to SIPULI, KELTASIPULI (raw yellow onion). AJO 1.5: checked against original recipe and Fineli Release 20 #335 (4.8 g available carbohydrate/100 g; KPL_M 55 g, KPL_S 30 g); starting edible onion mass, no cooking-loss deduction.",
-          "foodKey": "onion",
-          "preparationKey": "recipe-specific-preparation-no-approved-gi",
-          "giMatchEvidence": "AJO 1.5: onion GI 15 withdrawn; DOI 10.3390/nu12102989 Table 1 and DOI 10.3945/an.112.003509 Table 3 do not establish a preparation-matched primary human GI. Missing GI is not zero.",
-          "recipeQuantity": {
-            "amount": 1,
-            "unit": "kpl",
-            "massGrams": null
-          }
+          "fineliRecordId": "op142-fineli-335",
+          "giRecordId": "op142-vegetable-imputation40",
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+          "foodKey": "op142-low-carb-vegetable",
+          "preparationKey": "op142-vegetable-imputation40",
+          "giMatchEvidence": "Existing project PI40 for this named chopped nonstarchy vegetable, allium or fresh herb. Explicit current preparation application, not measured ingredient GI or a food-family mean."
         },
         {
-          "name": "maustamatonta jogurttia",
+          "name": "maustamatonta jogurttia, rasvaa 2,5 %",
           "grams": 200,
-          "fineliRecordId": "fineli-619-release-20",
-          "giRecordId": "dairy-category-mean-gi-35",
-          "massEvidence": "Recipe-listed 200 g, mapped to JOGURTTI, MAUSTAMATON, RASVAA 2,5 %, VL (plain yogurt).",
-          "foodKey": "dairy",
-          "preparationKey": "unflavoured-dairy",
-          "giMatchEvidence": "Dairy products, category mean: Category mean, not a measured GI for the recipe's cream cheese.; category/analogue estimate, low confidence."
+          "fineliRecordId": "op142-fineli-619",
+          "giRecordId": "op142-dairy-imputation30",
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+          "foodKey": "op142-dairy-code",
+          "preparationKey": "op142-dairy-imputation30",
+          "giMatchEvidence": "Existing project PI30 for this named unsweetened animal-dairy profile. Not measured cream, butter, cheese or prepared-meal GI. Exact current weighed version."
         },
         {
-          "name": "valkosipulinkynttä",
-          "grams": 7,
-          "fineliRecordId": "fineli-393-release-20",
-          "giRecordId": null,
-          "massEvidence": "Recipe-listed 7 g, mapped to VALKOSIPULI (raw garlic)."
+          "name": "tuoretta kuorittua valkosipulia",
+          "grams": 6,
+          "fineliRecordId": "op142-fineli-393",
+          "giRecordId": "op142-vegetable-imputation40",
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+          "foodKey": "op142-low-carb-vegetable",
+          "preparationKey": "op142-vegetable-imputation40",
+          "giMatchEvidence": "Existing project PI40 for this named chopped nonstarchy vegetable, allium or fresh herb. Explicit current preparation application, not measured ingredient GI or a food-family mean."
         },
         {
           "name": "tuoretta inkivääriä",
           "grams": 15,
-          "fineliRecordId": "fineli-33023-release-20",
+          "fineliRecordId": "op142-fineli-33023",
           "giRecordId": null,
-          "massEvidence": "Recipe-listed 15 g, mapped to INKIVÄÄRI, JUURAKKO, RAAKA (fresh raw ginger rhizome)."
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+          "giMatchEvidence": "No matching GI; source-known Fineli CHOAVL 0.591375g/serving is counted in cumulative omission; not zero. CHOAVL already excludes polyols."
         },
         {
           "name": "jauhettua juustokuminaa",
-          "grams": null,
+          "grams": 4,
           "fineliRecordId": null,
           "giRecordId": null,
-          "excludedReason": "AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
-          "massEvidence": "Recipe-listed small seasoning/herb amount; bounded estimate, not a weighed amount."
+          "excludedReason": "Existing source-backed small-portion GK omission; not actual A0.",
+          "availableCarbohydrateUpperBoundPerServingG": 0.3374,
+          "upperBoundEvidence": "USDA170923: same-source totalCHO minus reported fibre is an upper ceiling containing unknown polyols, not an actual availableCHO point. Whole seed ground without separated fraction."
         },
         {
-          "name": "jauhettua korianteria",
-          "grams": null,
+          "name": "jauhettua korianterinsiementä",
+          "grams": 2,
           "fineliRecordId": null,
           "giRecordId": null,
-          "excludedReason": "AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
-          "massEvidence": "Recipe-listed small seasoning/herb amount; bounded estimate, not a weighed amount."
+          "excludedReason": "Existing source-backed small-portion GK omission; not actual A0.",
+          "availableCarbohydrateUpperBoundPerServingG": 0.06545,
+          "upperBoundEvidence": "USDA170922: same-source totalCHO minus reported fibre is an upper ceiling containing unknown polyols, not an actual availableCHO point. Whole seed ground without separated fraction."
         },
         {
           "name": "paprikajauhetta",
-          "grams": null,
-          "fineliRecordId": null,
+          "grams": 4,
+          "fineliRecordId": "op142-fineli-11182",
           "giRecordId": null,
-          "excludedReason": "AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
-          "massEvidence": "Recipe-listed small seasoning/herb amount; bounded estimate, not a weighed amount."
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion.",
+          "giMatchEvidence": "No matching GI; source-known Fineli CHOAVL 0.1834g/serving is counted in cumulative omission; not zero. CHOAVL already excludes polyols."
         },
         {
           "name": "chilijauhetta",
-          "grams": null,
+          "grams": 1,
           "fineliRecordId": null,
           "giRecordId": null,
-          "excludedReason": "AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
-          "massEvidence": "Recipe-listed small seasoning/herb amount; bounded estimate, not a weighed amount."
+          "excludedReason": "Existing source-backed small-portion GK omission; not actual A0.",
+          "availableCarbohydrateUpperBoundPerServingG": 0.25,
+          "upperBoundEvidence": "Entire weighed1g edible dry chilli powder is a physical ceiling for available carbohydrate; no inferred composition, GI or polyol zero."
         },
         {
-          "name": "kanelitanko",
-          "grams": null,
+          "name": "kanelitankoa",
+          "grams": 2,
           "fineliRecordId": null,
           "giRecordId": null,
-          "excludedReason": "AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
-          "massEvidence": "Recipe-listed small seasoning/herb amount; bounded estimate, not a weighed amount."
+          "excludedReason": "Existing source-backed small-portion GK omission; not actual A0.",
+          "availableCarbohydrateUpperBoundPerServingG": 0.13745,
+          "upperBoundEvidence": "USDA171320 ground cinnamon bark C80.59−F53.1=27.49g/100g is a source-model ceiling for the same bark, not an actual A point. Whole2g stick simmered then removed; counting all potentially availableCHO in initial bark conservatively bounds unmeasured extraction."
         },
         {
-          "name": "kardemummakotaa",
-          "grams": null,
+          "name": "kokonaisia kardemummakotia",
+          "grams": 1.6,
           "fineliRecordId": null,
           "giRecordId": null,
-          "excludedReason": "AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
-          "massEvidence": "Recipe-listed small seasoning/herb amount; bounded estimate, not a weighed amount."
+          "excludedReason": "Existing source-backed small-portion GK omission; not actual A0.",
+          "availableCarbohydrateUpperBoundPerServingG": 0.4,
+          "upperBoundEvidence": "Four whole cardamom pods weighed together1.6g, removed after simmering. AvailableCHO entering sauce cannot exceed their entire initial mass. No seed-to-hull composition transfer, P0 or measured extraction fraction."
         },
         {
           "name": "suolaa",
           "grams": null,
           "fineliRecordId": null,
           "giRecordId": null,
-          "excludedReason": "Plain salt contributes no available carbohydrate.",
+          "excludedReason": "Explicit pure salt",
           "estimatedAvailableCarbohydratePerServingG": 0,
-          "negligibleAssumption": "Plain salt has zero available carbohydrate.",
-          "massEvidence": "Recipe-listed salt; not weighed."
+          "negligibleAssumption": "Pure salt, no carbohydrate. Unknown salt mass remains null.",
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion."
         },
         {
           "name": "vettä",
-          "grams": null,
-          "fineliRecordId": null,
+          "grams": 400,
+          "fineliRecordId": "op142-fineli-922",
           "giRecordId": null,
-          "excludedReason": "Plain water contributes 0 g available carbohydrate.",
-          "estimatedAvailableCarbohydratePerServingG": 0,
-          "negligibleAssumption": "Plain water has zero available carbohydrate regardless of volume.",
-          "massEvidence": "Recipe-listed plain water."
+          "massEvidence": "Exact edible input of this weighed recipe version. See preparation for juices, removed whole spices and source form; no generic density conversion."
         }
       ]
     },

@@ -83,6 +83,14 @@ export function verifyNutritionEvidence(
   let calculated: ReturnType<typeof calculate> | ReturnType<typeof calculateRecovery> | ReturnType<typeof calculateScopedPolyolC> | null = null;
   try {
     calculated = isRecoveryEvidence(evidence) ? calculateRecovery(evidence) : isScopedPolyolEvidence(evidence) ? calculateScopedPolyolC(evidence) : calculate(evidence);
+    if (evidence.publicationStatus === "WITHHELD_SOURCE_INCOMPLETE") {
+      if (!evidence.withholdingReason?.trim()) errors.push("Incomplete-source withholding requires a reason");
+      if (hasValues) errors.push("Incomplete-source withholding must suppress all four nutrition values");
+      if (calculated.status !== "INSUFFICIENT SOURCE DATA") errors.push("Incomplete-source withholding requires an actually incomplete calculation");
+      // Recipe/source/yield/row/translation checks above still apply. This branch
+      // never publishes partial macros or repairs an unknown nutrient with zero.
+      return { status: errors.length ? "CONFLICT REQUIRES REVIEW" : "INSUFFICIENT SOURCE DATA", errors, calculated, values };
+    }
     if (calculated.status !== "ESTIMATE WITH EVIDENCE") errors.push(`calculation status is ${calculated.status}`);
     const calculatedValues = {
       carbs_net_per_serving_g: calculated.perServing.netCarbohydrate,

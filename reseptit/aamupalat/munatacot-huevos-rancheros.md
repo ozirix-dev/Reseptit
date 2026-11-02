@@ -7,75 +7,77 @@ language: fi
 status: published
 diet_class: vhh_tiukka
 main_ingredient:
-  - kananmuna
+- kananmuna
 cooking_method:
-  - paistaminen
+- paistaminen
 ingredients:
-  - amount: 4
-    unit: kpl
-    item: kananmunaa
-  - amount: 1
-    unit: rkl
-    item: voita
-  - amount: 150
-    unit: g
-    item: tomaattimurskaa
-  - amount: 0.5
-    unit: kpl
-    item: pientä punasipulia
-  - amount: 1
-    unit: kpl
-    item: avokadoa
-  - amount: 40
-    unit: g
-    item: cheddarjuustoa
-  - amount: 1
-    unit: tl
-    item: savupaprikaa
-  - amount: 0.5
-    unit: tl
-    item: juustokuminaa
-  - amount: null
-    unit: ""
-    item: suolaa ja mustapippuria
-  - amount: 1
-    unit: rkl
-    item: silputtua korianteria
-carbs_net_per_serving_g: 4.2
-carbs_total_per_serving_g: 9.6
-protein_per_serving_g: 21.3
-fat_per_serving_g: 34.6
+- amount: 220
+  unit: g
+  item: kananmunaa
+- amount: 14
+  unit: g
+  item: voita
+- amount: 150
+  unit: g
+  item: tomaattimurskaa
+- amount: 27.5
+  unit: g
+  item: pientä punasipulia
+- amount: 120
+  unit: g
+  item: avokadoa
+- amount: 40
+  unit: g
+  item: cheddarjuustoa
+- amount: 2
+  unit: g
+  item: Santa Maria -savupaprikajauhetta
+- amount: 1
+  unit: g
+  item: juustokuminaa
+- amount: null
+  unit: ''
+  item: suolaa maun mukaan
+- amount: 0.5
+  unit: g
+  item: jauhettua mustapippuria
+- amount: 10
+  unit: g
+  item: tuoretta korianteria
+carbs_net_per_serving_g: 4.23
+carbs_total_per_serving_g: 6.99
+protein_per_serving_g: 21.4
+fat_per_serving_g: 34.56
 servings: 2
 time_total_min: 25
 difficulty: Helppo
 tags:
-  - aamupala
-  - kananmuna
-  - munaruoka
+- aamupala
+- kananmuna
+- munaruoka
 image:
   src: aamupalat/munatacot-huevos-rancheros.webp
   alt: Munakkaasta tehdyt tacot avokadolla ja salsalla
   width: 1536
   height: 1024
+translation_languages:
+- en
+- sv
+- th
+translation_status:
+  en: published
+  sv: published
+  th: published
 ---
 
 # Munatacot eli huevos rancheros
 
-## Kuvaus
-
-Tässä aamupalaversiossa tortillan tilalla on ohut munakas. Täytteeksi tulee mausteista tomaattia, avokadoa ja juustoa.
-
-## Ainekset
-
-Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
-
 ## Valmistus
 
-1. Kuullota hienonnettu sipuli pannulla voissa. Lisää tomaattimurska, savupaprika, juustokumina ja suola. Hauduta 8 minuuttia.
-2. Vatkaa kaksi kananmunaa kerrallaan ja paista niistä pannulla kaksi ohutta munakasta. Nosta lautasille.
-3. Lusikoi tomaattiseosta munakkaiden keskelle. Lisää viipaloitu avokado ja juustoraaste.
-4. Taita munakkaat tacoiksi ja viimeistele pippurilla sekä korianterilla.
+1. Kuullota 27,5 g punasipulia puolessa 14 g voita. Lisää 150 g tomaattimurskaa, 2 g Santa Maria -savupaprikaa ja 1 g juustokuminaa. Hauduta 8 min.
+2. Vatkaa 220 g kuoretonta kananmunaa ja paista kaksi ohutta, kauttaaltaan kypsää munakasta lopussa voissa.
+3. Täytä munakkaat koko tomaattiseoksella, 120 g kuorittua kivetöntä avokadoa ja 40 g cheddaria. Viimeistele 10 g korianteria, 0,5 g mustapippuria ja suolaa. Tarjoa kaksi annosta ilman tortilloja.
 
 ## Muistiinpanot
 
-Tämä on tortillaton kotiversio huevos rancheros -aamupalasta; tomaatin määrä pitää hiilihydraatit maltillisina.
+Punnitse yllä luetellut syötävät ainekset. Kaikki lueteltu ruoka, kastike ja paistorasva kuuluvat annoksiin; erillisiä lisukkeita ei ole laskettu. Ravintoarvot ovat suuntaa-antavia ainesosalaskelmia.

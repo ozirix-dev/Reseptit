@@ -1,0 +1,59 @@
+{
+  "fineliFibre": {
+    "393": {
+      "food": "Valkosipuli",
+      "fibre": 2.1,
+      "publication": "425",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/393",
+      "retrievedAt": "2026-11-02",
+      "field": "kuitu, kokonais-",
+      "basis": "g/100g edible",
+      "method": "food-composition table, displayed by THL on the same exact food ID",
+      "readMethod": "official Fineli HTML via web tool; direct API and local HTTP returned403; no API payload claimed"
+    },
+    "11134": {
+      "food": "Basilika, tuore",
+      "fibre": 1.6,
+      "publication": "746",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11134",
+      "retrievedAt": "2026-11-02",
+      "field": "kuitu, kokonais-",
+      "basis": "g/100g edible",
+      "method": "food-composition table, displayed by THL on the same exact food ID",
+      "readMethod": "official Fineli HTML via web tool; direct API and local HTTP returned403; no API payload claimed"
+    },
+    "34238": {
+      "food": "Korianteri, tuore",
+      "fibre": 2.8,
+      "publication": "1322",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/34238",
+      "retrievedAt": "2026-11-02",
+      "field": "kuitu, kokonais-",
+      "basis": "g/100g edible",
+      "method": "food-composition table, displayed by THL on the same exact food ID",
+      "readMethod": "official Fineli HTML via web tool; direct API and local HTTP returned403; no API payload claimed"
+    }
+  },
+  "smokedPaprika": {
+    "gtin": "7311311015243",
+    "sourceUrl": "https://www.s-kaupat.fi/tuote/santa-maria-37g-paprika-smoked-savupaprikajauhe/7311311015243",
+    "retrievedAt": "2026-11-02",
+    "per100g": {
+      "euCarbohydrateIncludingPolyols": 13,
+      "fibre": 41,
+      "protein": 15,
+      "fat": 17,
+      "kcal": 349
+    },
+    "polyols": null,
+    "use": "Exact product-label source-total cap for omitted small portion; no inferred P0"
+  },
+  "unchangedUnknowns": [
+    "Fineli11194 polyols",
+    "Fineli11177 polyols",
+    "Fineli11182 polyols",
+    "Fineli630 polyols",
+    "Fineli33023 polyols",
+    "USDA oil-canned anchovy polyols"
+  ]
+}
