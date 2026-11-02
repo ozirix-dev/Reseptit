@@ -1,0 +1,32 @@
+{
+  "baselineNumeric": 156,
+  "denominator": 326,
+  "target": 261,
+  "newDirectIngredientGiWholeRecipeUnlocks": 0,
+  "newImmediatelySourceEligibleNumericRecipes": 0,
+  "conditionalSmallImputationRecipes": [
+    "siemengranola-jogurtilla"
+  ],
+  "conditionalPreparedFoodMethodResearch": [
+    "aloo-paratha",
+    "intialainen-aloo-paratha"
+  ],
+  "preparedFoodMethodRecipesCountedAsCalculable": 0,
+  "codex2SourceSupportOnly": [
+    "vietnamilainen-kahvijogurtti-banaanilla"
+  ],
+  "codex2SourceSupportCountedAsOwnUnlock": 0,
+  "newPublishedNumericRecipes": 0,
+  "remainingPublishedGap": 105,
+  "ifGranolaSeparatelyAcceptedAndPublished": {
+    "numeric": 157,
+    "gap": 104
+  },
+  "existingIndependentPipeline": {
+    "pr183Candidate": 172,
+    "sixFurtherApprovedVersionsNotInPr183": 6,
+    "combinedPotential": 178,
+    "gapAfterCombinedPotential": 83,
+    "thisIsNotPublishedCoverage": true
+  }
+}

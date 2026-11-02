@@ -1,0 +1,143 @@
+{
+  "checkedOn": "2026-11-02",
+  "studyQualityAndRecipeMatchAreSeparate": true,
+  "records": [
+    {
+      "id": "dona2013-human-pancake61",
+      "food": "Cooked wheat flour-and-water pancake",
+      "gi": 61,
+      "uncertainty": {
+        "type": "SEM",
+        "value": 7
+      },
+      "scale": "GLUCOSE_100",
+      "doi": "10.1017/S0007114512004096",
+      "primaryUrl": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/S0007114512004096",
+      "location": "Methods p1935; Figure1 p1936; result p1937",
+      "method": "HUMAN_GI, separate from the NMR in vitro arm; n10,50g digestible CHO,3 glucose reference visits,120min.",
+      "quality": "Published human evidence; SUPPLEMENTARY_PENDING_SOURCE_REVIEW, no new ISO certification.",
+      "limitation": "Original Methods/Figure1 say whole-wheat pancake; Sydney lists plain flour. Exact flour, batter ratio and frying protocol need clarification. Water-bath laboratory conditions are not the human pancake cooking instructions.",
+      "potentialRecipeIds": [
+        "aloo-paratha",
+        "intialainen-aloo-paratha",
+        "kiinalainen-kevatsipulipannukakku",
+        "kiinalainen-jianbing-munaletty",
+        "thai-roti-munalla-banaanilla",
+        "karibia-johnny-cake"
+      ],
+      "admission": "CONDITIONAL_PREPARATION_NOT_MATCHED",
+      "immediateWholeRecipeUnlocks": 0,
+      "pdfSha256": "53db4ca71bdf06737cd1995d2e923d0656d3f27937b6a408e0ee72b732cb08e7",
+      "newAgainstSearchedRepoFiles": true
+    },
+    {
+      "id": "thakurdesai2024-potato-paratha-control",
+      "food": "Pan-cooked wheat bread with mashed potato stuffing, control without Fenuflakes",
+      "gi": 78.8,
+      "uncertainty": {
+        "type": "SEM",
+        "value": 3.6
+      },
+      "scale": "GLUCOSE_100",
+      "doi": "10.12944/CRNFSJ.12.1.05",
+      "primaryUrl": "https://www.foodandnutritionjournal.org/volume12number1/glycemic-index-lowering-effects-of-defatted-fenugreek-seed-flakes-fenuflakestm-on-some-indian-food-preparations-a-randomized-controlled-clinical-study/",
+      "location": "Tables1,3,4; Trial Design and Study Procedure",
+      "method": "Published randomized crossover, n15,50g available CHO,3 glucose visits,120min; authors report ISO26642.",
+      "quality": "Human control-food evidence, SUPPLEMENTARY pending protocol/source admission; industry-affiliated authors.",
+      "limitation": "Whole stuffed food, not flour GI. Exact flour and ingredient ratios not supplied. Published recipe inputs also need complete reconstruction. No transfer of the Fenuflakes treatment result.",
+      "potentialRecipeIds": [
+        "aloo-paratha",
+        "intialainen-aloo-paratha"
+      ],
+      "admission": "CONDITIONAL_PREPARED_COMPONENT_METHOD",
+      "immediateWholeRecipeUnlocks": 0,
+      "newAgainstSearchedRepoFiles": true
+    },
+    {
+      "id": "thakurdesai2024-semolina-upma-control",
+      "food": "Roasted semolina upma with legumes, onion and seasoning; control",
+      "gi": 76.3,
+      "uncertainty": {
+        "type": "SEM",
+        "value": 4.7
+      },
+      "scale": "GLUCOSE_100",
+      "doi": "10.12944/CRNFSJ.12.1.05",
+      "primaryUrl": "https://doi.org/10.12944/CRNFSJ.12.1.05",
+      "location": "Tables1 and4",
+      "quality": "Same study as potato-paratha card, not an independent experiment/publication.",
+      "limitation": "Pre-roasting and mixed recipe differ from main recipe; not semolina GI for harcha, baghrir or msemen.",
+      "potentialRecipeIds": [
+        "intialainen-mannasuurimoupma"
+      ],
+      "admission": "CODEX2_EXISTING_CASE_SOURCE_SUPPORT_ONLY",
+      "immediateWholeRecipeUnlocks": 0
+    },
+    {
+      "id": "shobana2022-whole-wheat-dosa",
+      "food": "Whole-wheat dosa with seasoning",
+      "gi": 61.8,
+      "uncertainty": {
+        "type": "SEM",
+        "value": 5.7
+      },
+      "scale": "GLUCOSE_100",
+      "doi": "10.4103/ijmr.IJMR_1935_19",
+      "primaryUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9552392/",
+      "location": "TablesI andIII; Material and Methods",
+      "method": "Published human GI, n14 after exclusion,50g available CHO,3 reference tests,120min.",
+      "quality": "Published, protocol cites ISO; source eligibility not newly certified here.",
+      "limitation": "Wholemeal thin crepe, not refined-flour leavened bun, laminated dough, semolina pancake or chickpea flour.",
+      "potentialRecipeIds": [
+        "kiinalainen-jianbing-munaletty"
+      ],
+      "admission": "PREPARATION_AND_FLOUR_MISMATCH_HOLD",
+      "immediateWholeRecipeUnlocks": 0,
+      "newAgainstSearchedRepoFiles": true
+    },
+    {
+      "id": "chan2001-condensed-milk61",
+      "food": "Full-cream sweetened condensed milk, unheated",
+      "gi": 61,
+      "uncertainty": {
+        "type": "SEM",
+        "value": 6
+      },
+      "scale": "GLUCOSE_100",
+      "doi": "10.1038/sj.ejcn.1601265",
+      "primaryUrl": "https://doi.org/10.1038/sj.ejcn.1601265",
+      "accessUrl": "https://www.naturaleater.com/science-articles/GI-Vietnamese.pdf",
+      "location": "Table2,p1081/PDF6; methods pp1077-1078",
+      "method": "n11 after outlier exclusion,12 recruited;50g CHO,2 reference visits,120min.",
+      "quality": "Published human evidence, supplementary; no ISO2010 claim. Table visually checked.",
+      "limitation": "No heating/caramelization analogy. Brand/composition match still separate; AFCD F005582 native availableCHO55 is composition only.",
+      "potentialRecipeIds": [
+        "vietnamilainen-kahvijogurtti-banaanilla"
+      ],
+      "admission": "IMMEDIATELY_USABLE_SOURCE_EVIDENCE_TO_CODEX2_NOT_OWN_RECIPE_UNLOCK",
+      "immediateWholeRecipeUnlocks": 0,
+      "pdfSha256": "f2ae2267dd475eef94301ecc56116b13ff3b503453081a32d0a4194e8717679e"
+    },
+    {
+      "id": "khaliq2026-regional-prepared-foods",
+      "food": "Potato paratha; vegetable samosa",
+      "discoveryGiValues": {
+        "potatoParatha": 84,
+        "vegetableSamosa": 79
+      },
+      "scale": "GLUCOSE_100",
+      "doi": "10.1080/27697061.2025.2523600",
+      "primaryUrl": "https://pubmed.ncbi.nlm.nih.gov/40586370/",
+      "discoveryUrl": "https://glycemicindex.com/gi-search/",
+      "quality": "Primary abstract verified; numerical rows in Sydney only, full original methods/table not accessed.",
+      "limitation": "Already a documented search in bakery review; no repeat promotion. No ingredient GI or new recipe count.",
+      "potentialRecipeIds": [
+        "aloo-paratha",
+        "intialainen-aloo-paratha",
+        "samosa"
+      ],
+      "admission": "REUSE_PRIOR_HOLD_FULLTEXT_NOT_VERIFIED",
+      "immediateWholeRecipeUnlocks": 0
+    }
+  ]
+}
