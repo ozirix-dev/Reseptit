@@ -1,0 +1,107 @@
+{
+  "activation": false,
+  "sources": [
+    {
+      "id": "hatcho7.3",
+      "product": "Clearspring Organic Japanese Hatcho Miso Paste Unpasteurised300g",
+      "kind": "DECLARED_SOURCE_MODEL_UPPER",
+      "sourceUrl": "https://www.clearspring.co.uk/products/organic-japanese-hatcho-miso-paste-unpasteurised",
+      "documentSha256": "6ccf0c507f21c754873e6c4976240d2c24ce1f39686dfbb5a6148ae4da35b109",
+      "retrievedDate": "2026-11-02",
+      "basisAmount": 100,
+      "basisUnit": "g",
+      "carbohydratePer100g": "7.3",
+      "polyolsState": "UNKNOWN_NOT_INFERRED_ZERO",
+      "recipeBasisResolved": true,
+      "scope": "Feasibility comparison only; no product/source-family admission or lot-variability bound."
+    },
+    {
+      "id": "kimchi2.3",
+      "product": "Euro-East Kimchi3000g,article4303000,EAN6430044381317",
+      "kind": "DECLARED_SOURCE_MODEL_UPPER",
+      "sourceUrl": "https://euro-east.fi/tuotteet/horeca-2/kiinankaalisalaatti-kimchi-3000-g/",
+      "documentSha256": "d1ff4b210f9d9473e88aaba7adf392ad1b85101859a3747e70f1aa3676754c8e",
+      "retrievedDate": "2026-11-02",
+      "basisAmount": 100,
+      "basisUnit": "g",
+      "carbohydratePer100g": "2.3",
+      "polyolsState": "UNKNOWN_NOT_INFERRED_ZERO",
+      "recipeBasisResolved": false,
+      "scope": "Feasibility comparison only; no product/source-family admission or lot-variability bound.",
+      "basisLimitation": "Net3000g,drained1750g; nutrition per100g does not explicitly bind its drain state.1.725g is only a declared-basis scenario, not an admitted recipe upper."
+    },
+    {
+      "id": "tamarind16",
+      "product": "Blue Dragon Tamarind Paste",
+      "kind": "DECLARED_SOURCE_MODEL_UPPER",
+      "sourceUrl": "https://www.bluedragon.co.uk/products/tamarind-paste",
+      "documentSha256": "2ad1eece08f173715780da9cc751de55b644ab6ffa45386eca11c5248bbbc90e",
+      "retrievedDate": "2026-11-02",
+      "basisAmount": 100,
+      "basisUnit": "g",
+      "carbohydratePer100g": "16.0",
+      "polyolsState": "UNKNOWN_NOT_INFERRED_ZERO",
+      "recipeBasisResolved": true,
+      "scope": "Feasibility comparison only; no product/source-family admission or lot-variability bound."
+    },
+    {
+      "id": "afcd-pure-tamarind57.4",
+      "product": "Tamarind, paste, pure",
+      "kind": "NATIVE_AVAILABLE_POINT",
+      "carbohydratePer100g": "57.4",
+      "nativePath": "docs/nutrition/afcd-release-3-reference.json",
+      "nativeId": "F009081",
+      "nativeField": "available_carbohydrate_without_sugar_alcohols_g_per_100g",
+      "nativeFileSha256": "cfb83649b52a1f599b918c6da01721603d7794f4241aa165ffde5a58b37f2afa",
+      "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd",
+      "scope": "Pure paste native availableCHO point, not the Blue Dragon diluted/sweetened product or a range endpoint. No polyol total inferred."
+    }
+  ],
+  "cases": [
+    {
+      "recipeId": "japanilainen-miso-tofu-paksoi",
+      "recipePath": "reseptit/aamupalat/japanilainen-miso-tofu-paksoi.md",
+      "recipeLfSha256": "43e0b80f7058c844e6802ab5f4b061d7851f0626c97ee608d6eba5fbf2054279",
+      "ingredient": "miso",
+      "grams": "150",
+      "servings": 2,
+      "sourceId": "hatcho7.3"
+    },
+    {
+      "recipeId": "japanilainen-yaki-onigiri-misolla",
+      "recipePath": "reseptit/aamupalat/japanilainen-yaki-onigiri-misolla.md",
+      "recipeLfSha256": "ecce61fa96e4bad04ddaaa871233e66bb2d1ff92e8b0e97baec90a265f6f4320",
+      "ingredient": "miso",
+      "grams": "150",
+      "servings": 2,
+      "sourceId": "hatcho7.3"
+    },
+    {
+      "recipeId": "korealainen-tofu-kimchi-aamiaiskulho",
+      "recipePath": "reseptit/aamupalat/korealainen-tofu-kimchi-aamiaiskulho.md",
+      "recipeLfSha256": "7650f5a800cd4b61077a089ffda402d7e67e7ce0f1a57653cc913204583e4fc7",
+      "ingredient": "kimchi",
+      "grams": "150",
+      "servings": 2,
+      "sourceId": "kimchi2.3"
+    },
+    {
+      "recipeId": "pad-thai-vhh-konjac",
+      "recipePath": "reseptit/paaruoat/pad-thai-vhh-konjac.md",
+      "recipeLfSha256": "c2e8418eddf16e77857f1525510d8506ec58d0462e5d3112f542343c6f1a1a39",
+      "ingredient": "tamarinditahnaa",
+      "grams": "30",
+      "servings": 4,
+      "sourceId": "tamarind16"
+    },
+    {
+      "recipeId": "pad-thai-vhh-konjac",
+      "recipePath": "reseptit/paaruoat/pad-thai-vhh-konjac.md",
+      "recipeLfSha256": "c2e8418eddf16e77857f1525510d8506ec58d0462e5d3112f542343c6f1a1a39",
+      "ingredient": "tamarinditahnaa",
+      "grams": "30",
+      "servings": 4,
+      "sourceId": "afcd-pure-tamarind57.4"
+    }
+  ]
+}

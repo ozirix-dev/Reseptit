@@ -1,0 +1,78 @@
+{
+  "activation": false,
+  "sourceEquivalenceCertified": false,
+  "sources": [
+    {
+      "id": "yang2006",
+      "url": "https://doi.org/10.3748/wjg.v12.i21.3430",
+      "publicPdfUrl": "https://f6publishing.blob.core.windows.net/c8215444-a77f-4d63-934b-934c1e40f1cf/WJG-12-3430.pdf",
+      "documentSha256": "6ee8060ef4e6ba5efcd315cb3c7c23ebb584c249e7575e2ca8f0dacfd111a4eb",
+      "locator": "Table2 printed3432; methods3431",
+      "sourceCarbohydrateMethod": "Test doses computed from Chinese composition tables; no native recipe composition is inherited from it.",
+      "preparationLimitation": "Traditional preparation; exact dried-noodle cooking time/brand and ratios not specified."
+    },
+    {
+      "id": "atkinson2021-s1",
+      "url": "https://doi.org/10.1093/ajcn/nqab233",
+      "publicPdfUrl": "https://nutritotal.com.br/pro/wp-content/uploads/sites/3/2021/09/Tabela1_IG.pdf",
+      "documentSha256": "e930c4a090697abd4f7331a64837b524cf4701513cbb9865a739f4f9fb131061",
+      "locator": "Supplement1 p102 items1509/1510; footnotes p139 numbers3/18",
+      "testPortionCaveat": "Footnote3: test portion may be dry or wet.32.9g is not a recipe serving/yield or a way to infer native availableCHO."
+    }
+  ],
+  "observations": [
+    {
+      "id": "dried-wheat46",
+      "primarySource": "yang2006",
+      "linkedTableObservation": "atkinson2021-s1/1509",
+      "food": "Dried wheat noodle,traditionally prepared",
+      "giGlucose100": 46,
+      "healthyParticipants": 10,
+      "publishedSd": 5.8,
+      "linkedTableSem": 2,
+      "independentObservations": 1,
+      "uncertaintyNotRecipeRange": true,
+      "protocol": "50gCHO;glucose reference;venous samples0,15,30,45,60,90,120min;repeat tests stated",
+      "sameTrialInLaterTablesIsNotReplication": true
+    },
+    {
+      "id": "sanlian-dried-wheat62",
+      "primarySource": "atkinson2021-s1",
+      "locator": "p102 item1510",
+      "food": "Sanlian Food Shandong dried wheat noodle,boiled5min,drained",
+      "giGlucose100": 62,
+      "healthyParticipants": 10,
+      "publishedSem": 8,
+      "testAvailableChoG": 25,
+      "testPortionAsReportedG": 32.9,
+      "testPortionWetDryBasis": "UNRESOLVED",
+      "studyYear": 2016,
+      "sourceType": "UO18_UNPUBLISHED_ORIGINAL_OBSERVATION_REPORTED_IN_PUBLISHED_TABLE",
+      "originalFullProtocolPublic": false,
+      "uncertaintyNotRecipeRange": true
+    },
+    {
+      "id": "fresh-wheat81.6-contrast-only",
+      "primarySource": "yang2006",
+      "food": "Fresh wheat noodle,traditionally prepared",
+      "giGlucose100": 81.6,
+      "healthyParticipants": 8,
+      "publishedSd": 19.1,
+      "use": "CONTRAST_ONLY_NOT_A_DRY_NOODLE_ENDPOINT"
+    }
+  ],
+  "decisions": {
+    "newRecipeGkNumbers": 0,
+    "newGi50Defaults": 0,
+    "newFoodFamilyMeans": 0,
+    "combinedGi46To62IsCertifiedRange": false,
+    "fresh81Point6IsDryUpperBound": false,
+    "recipeCarbohydrateCompositionVerified": false
+  },
+  "reuseAudit": {
+    "yangPaperAlreadyReferencedInRepo": true,
+    "driedNoodle46AndSanlian62NotInstalledInCurrentGiRecords": true,
+    "activeGiRegistryChanged": false,
+    "numericRecipesUnlocked": 0
+  }
+}

@@ -18,6 +18,10 @@ Yhteisessä33 reseptin laskenta-aineistossa22 versiolla on menetelmä- tai sisä
 
 Uudet projektisäännöt löytyivät mainiin PR184:llä yhdistetyistä [AGENTS.md](../../../AGENTS.md)- ja [rinnakkaisajo-ohjeista](../../rinnakkaiset-codex-ajot.md), commit`061f817`. Ne tuotiin tähän omaan työpuuhun täsmälleen samansisältöisinä. Pelkkää repo_guardin PASSia ei käsitellä haaran kirjoituslukkona. PR182 jää erilliseksi Draftiksi ja sen koko lähdetiedoston hash-/regressioriippuvuus on edelleen avoin.
 
+## Rajatun jatkotutkimuksen tulos
+
+[Uusi lähde- ja menetelmämuistio](followup-source-report.md) tutkii neljän nykyisen reseptin tuoteperusteisia poisjättörajoja sekä yhteistä vehnänuudelireittiä kahdelle muulle reseptille. Uusia lähdekelpoisia kokonaisia numeerisia GK-tuloksia syntyi0. Tuotetietojen ylärajat eivät ratkaise mison, kimchin tai tamarinditahnan koko reseptiriippuvuutta alkuperäisillä määrillä. Varmennetut nuudelien ihmis-GI-havainnot46 ja62 ovat erillisiä ruokahavaintoja, eivät hyväksytty yleinen vaihteluväli. Niitä ei asennettu GI-rekisteriin. Seuraava itsenäinen erä on DanDanin ja Lanzhoun yksi yhteinen kuivan nuudelin valmistus-/koostumuspaketti sekä sen erilliset kastike- ja liemiesteet.33:n yhteinen laskentaehdotusmäärä ja tuotantokattavuus eivät muutu.
+
 ## Historiallisten kirjausten lukuohje
 
 Alla säilytetään aiemmat tapahtuma- ja tutkimustilannekuvat. Ilmaisut ”nyt”, ”nykyinen” ja ”Draft” kuvaavat kyseisen kirjaushetken tilaa. Väliaikainen22-version integraatio palautettiin myöhemmin16-version sisältöön; vanhoja kuitteja ei käytetä nykytilan osoituksena.
