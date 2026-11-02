@@ -193,4 +193,3 @@ export function buildApprovedBVariants(root: string): GkOnlyVariant[] {
   requireBinding(variants.length === 4 && new Set(variants.map(row => row.recipeId)).size === 4, 'expected four distinct recipes');
   return variants;
 }
-
