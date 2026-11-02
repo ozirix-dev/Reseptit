@@ -19,3 +19,11 @@ Suorempi mankoushe-tutkimus vertasi valkoista vehnätaikinaa ja esikäsiteltyä 
 
 **Päätös.** Yksi täsmällinen B-lähdepolku jatkoon. Ensin selvitetään artikkelin viittaamat testileivän koostumus- ja annostiedot ja verrataan niitä nykyiseen uuniversioon. Pannulla paistettujen reseptien yhteinen jatko on mitattujen valmistemuotojen haku. Tässä seulassa uusia julkaisuun kelpaavia tuloksia on nolla. Fatayerin GI ei ole geneerinen vehnäjauhon GI.
 
+## Annostusperusteen tarkistus
+
+GI-artikkelin rajoitusosio (s. 518) täsmentää, että 50 g:n testiannos määritettiin kokonaishiilihydraatista. Testiannoksen käytettävissä olevan hiilihydraatin määrää ja valmiin annoksen massaa ei saatu varmennettua. Mitatun 79,6:n kertominen nykyreseptin käytettävissä olevalla hiilihydraatilla olisi kahden eri annostusperusteen yhdistelmä. Pelkkä kuitueron tai annoskoon laskennallinen korjaus ei ennusta uutta iAUC-suhdetta. [GI-artikkeli](https://www.researchgate.net/publication/41415935_Glycemic_index_of_selected_carbohydrate-based_foods_consumed_in_Qatar)
+
+Koostumusviitteistä Hassan ym. (1991) koskee kuwaitilaisia pikaruokia ja ilmoittaa hiilihydraatin erotusmenetelmällä. Saatavilla olleesta aineistosta ei löytynyt varmennettua vastaavuutta Qatarin GI-kokeen za’atar-fatayer-näytteeseen. Toinen viite on Musaigerin Persianlahden koostumustaulukko (2006). Siitä ei varmennettu kyseisen testileivän reseptiä tai käytettävissä olevan hiilihydraatin annosta. [Kuwaitin koostumustutkimus](https://doi.org/10.1080/03670244.1991.9991187)
+
+Tulos jää lähde-HOLDiin. Valmistuksen vastaavuuden lisäksi jatkokelpoisessa GI-vertailussa on pystyttävä tunnistamaan käytettävissä olevan hiilihydraatin annostus tai arvioimaan nimenomaisesti poikkeavan tutkimusprotokollan soveltuvuus. Uusia numeerisia ehdokkaita tästä lähteestä 0.
+
