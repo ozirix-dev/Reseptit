@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "recordRole": "CURRENT_STATE_AFTER_SEPARATION",
-  "observedAtUtc": "2026-11-02T19:01:05.786595+00:00",
+  "observedAtUtc": "2026-11-02T19:07:34.383801+00:00",
   "repository": "ozirix-dev/Reseptit",
   "role": "Codex2 / Codex Tutkimus",
   "ownedWorktree": "D:\\Projects\\tmp\\reseptit-afcd-polyol-03-gk80-handoff",
@@ -32,7 +32,8 @@
     "publicationEvidence": "production-observation.json",
     "mainDeploymentRun": 41504708914,
     "mainDeploymentHead": "92dc6dbe7b27e145d6938026c73b6823f2e2108f",
-    "mainDeployConclusion": "SUCCESS"
+    "mainDeployConclusion": "SUCCESS",
+    "ciRunScope": "Pre-merge PR-head CI at d98d77f; its deploy was SKIPPED. Main release deployment41504708914 at92dc6db was SUCCESS."
   },
   "preservedSix": {
     "branch": "codex/gk80-six-a-isolated",
@@ -51,12 +52,12 @@
     "productionGapTo261": 89,
     "productionPercent": 52.76,
     "distinctArithmeticProposalRecipes": 35,
-    "methodOrContentApprovedVersionsAcrossSeparateBatches": 23,
+    "methodOrContentApprovedVersionsAcrossSeparateBatches": 24,
     "approvedIntegratedInPr183": 16,
-    "approvedParkedSeparately": 7,
-    "distinctRecipesWithoutApprovedVersion": 12,
+    "approvedParkedSeparately": 8,
+    "distinctRecipesWithoutApprovedVersion": 11,
     "knownPreparedFoodSourceHolds": 6,
-    "otherPendingRecipes": 6,
+    "otherPendingRecipes": 5,
     "conditionalAfterBothBatchesReleased": 178,
     "conditionalPercent": 54.6,
     "conditionalGapTo261": 83,
@@ -65,16 +66,21 @@
     "newPublishedResults": 0,
     "decisionMatrixRowsIncludingNewHolds": 70,
     "arithmeticCountScope": "35 arithmetic proposal recipe IDs: prior34 plus one new exact native-point preparation version. Other35 matrix rows are HOLD dependencies, not arithmetic candidates.",
-    "legacyCorrectionFieldsNote": "Fields mentioning ThisCorrection refer to the prior correction pass. Latest campaign counts are in latestResearchPass; production and owner approvals did not change.",
+    "legacyCorrectionFieldsNote": "Fields mentioning ThisCorrection describe the prior correction pass. Latest pass and subsequent approval are in latestResearchPass; current published coverage and current approval counts are the explicit live fields.",
     "approvedLockedSix": 6,
-    "approvedResearchHandoff": 1,
+    "approvedResearchHandoff": 2,
     "conditionalAfterAll23ApprovedVersionsReleased": 179,
     "conditionalAfterAll23Percent": 54.91,
     "conditionalAfterAll23GapTo261": 82,
     "originalInstructionsNumeric": 156,
     "originalInstructionsMissing": 170,
-    "approvedButUnpublishedVersions": 7,
-    "approvedInPublishedMain": 16
+    "approvedButUnpublishedVersions": 8,
+    "approvedInPublishedMain": 16,
+    "conditionalAfterAll24ApprovedVersionsReleased": 180,
+    "conditionalAfterAll24Percent": 55.21,
+    "conditionalAfterAll24GapTo261": 81,
+    "conditionalAfterBothBatchesReleasedScope": "Legacy sixteen PR183 versions plus locked six only; excludes the two separately approved research handoffs. Use conditionalAfterAll24ApprovedVersionsReleased for all current approvals.",
+    "conditionalAfterAll23FieldsScope": "Historical approved set before rahkapiirakka approval; current total is24."
   },
   "historicalEvent": {
     "temporaryIntegrationHead": "80f4360435b978d1cfa81088df1414430a88c222",
@@ -120,7 +126,7 @@
     "sourceFamilyRecipesScreened": 4,
     "newReviewableSourceBasedAArithmeticCandidates": 1,
     "newBWholeRecipeScenarios": 0,
-    "newOwnerApproved": 0,
+    "newOwnerApproved": 1,
     "newPublicationQualifiedNumericResults": 0,
     "newPublishedResults": 0,
     "candidateRecipeId": "rahkapiirakka-vhh",
@@ -131,7 +137,7 @@
     "almondChoPerServing": 0.975,
     "almondSingleIngredientMarginTo1g": 0.025,
     "remainingThreeSingleIngredientFails": 3,
-    "currentApprovedVersionsRemain": 23,
+    "currentApprovedVersionsRemain": 24,
     "conditionalOnlyAfter23ApprovedVersionsReleasedAndThisNewVersionSeparatelyAcceptedIntegratedReleased": 180,
     "conditionalPercent": 55.21,
     "conditionalGapTo261": 81,
@@ -142,7 +148,10 @@
     "verifiedProductionAfterExternalPr183Release": 172,
     "publishedInExternalPr183Release": 16,
     "publicationObservedInThisPass": true,
-    "publicationEvidence": "production-observation.json"
+    "publicationEvidence": "production-observation.json",
+    "ownerApprovalReceipt": "rahkapiirakka-approval.json",
+    "currentApprovedVersionsFieldMeaning": "Current total after scoped user approval; prior total23 remains in the frozen reviewed report.",
+    "conditionalOnlyAfter24ApprovedVersionsIntegratedReleased": 180
   },
   "approvedResearchHandoff": {
     "recipeId": "pad-see-ew-vhh-konjac",
@@ -181,5 +190,15 @@
     "potentialGapTo261": 82,
     "nextHighDependencySourceFamily": "COCONUT_MILK:28 dependencies,25 without approved version; eight also depend on curry paste. Not a25-result promise.",
     "recordRole": "FROZEN_RESEARCH_PASS_40cd180_BEFORE_NEW_OWNER_APPROVAL; current approval is overlaid separately"
+  },
+  "approvedNativePointHandoff": {
+    "recipeId": "rahkapiirakka-vhh",
+    "inputSha256": "4194712a2cecb7979c779f4479a1f0a92bf402e190c4ff66a2369667455acbd4",
+    "reviewedContentHead": "991f94ea6ba5aeae2d07fc45fdc5a574de07acde",
+    "sourceAndContentApproved": true,
+    "receipt": "rahkapiirakka-approval.json",
+    "futureIntegrationOwner": "Codex1 / Codex Julkaisu",
+    "integrated": false,
+    "published": false
   }
 }
