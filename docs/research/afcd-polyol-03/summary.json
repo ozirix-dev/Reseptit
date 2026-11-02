@@ -1,0 +1,79 @@
+{
+  "baselineCommit": "4a804757d5f9732938928dcba8f79ea0674ad98c",
+  "baselineCount": 326,
+  "baselineNumeric": 156,
+  "missingCount": 170,
+  "primaryCounts": {
+    "A": 26,
+    "B": 4,
+    "C": 41,
+    "D": 16,
+    "E": 2,
+    "F": 1,
+    "G": 80
+  },
+  "classCounts": {
+    "A": 86,
+    "B": 28,
+    "C": 94,
+    "D": 69,
+    "E": 2,
+    "F": 30
+  },
+  "groupCount": 308,
+  "afcdHeldRecipeCount": 88,
+  "afcdNativeSourceCount": 68,
+  "afcdLocalVersionCount": 91,
+  "afcdPolyolUnknownCounterfactualChangedRecipes": 0,
+  "afcdDirectCurrentUnlocks": 0,
+  "currentRawOnlyCalculatedHeld": [
+    "kiinalainen-teehaudutetut-munat"
+  ],
+  "sharedA": 10,
+  "sharedB": 6,
+  "newSupplementB": 0,
+  "newAssumptionResearchCases": 4,
+  "uniqueJointNumericCandidates": 16,
+  "classCOnly": 0,
+  "sharedShortlistCount": 70,
+  "jointCoverage": "172/326",
+  "jointCoveragePercent": 52.76,
+  "target30Shortfall": 14,
+  "final80PercentTarget": 261,
+  "remainingAfterJointCandidatesTo80": 89,
+  "operation149IntegrationOnly": true,
+  "competingPublicationPr": false,
+  "pr182": "OPEN_DRAFT_CONDITIONAL_NOT_APPLIED",
+  "productionActivation": false,
+  "parkedResearchModel": "UNAPPROVED_EDITORIAL_GI50; NOT_COUNTED_TOWARD_COVERAGE",
+  "inputHashes": {
+    "docs/nutrition/food-records.json": "2f8ff76b97848294c28195bb92c6d202e9754168ddb169d30ee5e8610d2c2b9b",
+    "docs/nutrition/afcd-release-3-reference.json": "02edf1cc95191c05edf791656a5109c41bcf4d4a3e707be69ef5009bc640022e",
+    "docs/nutrition/glycemic-index-records.json": "fb465ac8f68ffc85e29eb9900f17df00b081fa0ddc3e25d253140aecb248acda",
+    "docs/nutrition/glycemic-load-pilot-input.json": "fd6f066050ac8b11ef651bacc8af86ba395116586c354f436846b5372dde152b",
+    "docs/nutrition/gk80-operation146/research-prototypes.json": "472fb941a2a76e253ea1bcb16b427f83c774e43a958378f6f86481082e745ffa",
+    "site/scripts/glycemic-load-model.ts": "10ce09e465886e4538fc0b2ad2a54ca0b050a9e3729b7417eb0a91f2b946b48c",
+    "site/scripts/nutrition-model.ts": "6667190a6604523fe083d6d766cfbbdb7c2ce75366194f3036ce711a8218a7ce"
+  },
+  "operation149Snapshot": {
+    "capturedAt": "2026-11-02T12:20:12.636Z",
+    "stageOnly": true,
+    "files": {
+      "docs/nutrition/gk80-operation149/cases.json": "e1158592c8ca86f67e7774831c4fae4e8c0dcbd62fbdec0cf26208f50ba46c6c",
+      "docs/nutrition/gk80-operation149/composition-sources.json": "36cc8bfda519298b60737e454893213c6f46191b4550b89d744af1508556ae15",
+      "docs/nutrition/gk80-operation149/gi-sources.json": "68df85259392fa167e9c30cbf313033c24a98935451b3178d3c021cf65cddc23",
+      "docs/nutrition/gk80-operation149/source-observations.json": "e3f1706eb3902745230d655ceb638a679b9acd9ee323857577fb9851bbff8d1d",
+      "docs/nutrition/gk80-operation149/method-proposal.md": "23e84a5411add63a6c294a05e3566a2f944a41a82729d7eb022900e4420c3a94",
+      "site/scripts/gk149-model.ts": "eeec6ea552603e5687d32aebeb059f8ac663332c4fbaf56131d3aa77dcee8e86",
+      "docs/nutrition/gk80-operation149/hold-screen.csv": "787090d4fd879f17206cd1c7b6c982e9978a521e3d12561cd7106b966d614e85",
+      "docs/nutrition/gk80-operation149/recipe-decisions.json": "bdc494d08b134e300c3233ad1c713fb78b1c03ff6c3d2ea0ed0a77124b6805a4",
+      "docs/nutrition/gk80-operation149/next30.json": "9c5b0ea8b49babe06bd6da06c6ab80daef23184bac3cb22469bfaf5956bc1934"
+    }
+  },
+  "priorityModelCandidates": 39,
+  "priorityProductPreparationCandidates": 38,
+  "priorityUnresolvedAfterKnownB": 71,
+  "newApprovedPublishedNumeric": 0,
+  "ownerClarification": "GK-only further preparation and B research authorized; no new GI assumptions or publication authorized",
+  "assumptionScenariosExcludedFromCandidateAndCoverageCounts": true
+}

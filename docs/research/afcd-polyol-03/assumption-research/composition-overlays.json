@@ -1,0 +1,40 @@
+{
+  "records": [
+    {
+      "id": "379",
+      "kind": "FINELI_CHOAVL",
+      "path": "docs/nutrition/fineli-release-20-reference.json",
+      "nativeId": "379",
+      "nativeField": "per100g.available_carbohydrate_g_per_100g",
+      "nativeRowSha256": "0f03eb4d49f0f2c0be28d7cec645881a0377add8de588a79eac165b943178e6a",
+      "availablePer100g": 6.6,
+      "name": "MANTELI",
+      "polyols": "UNKNOWN_OR_UNUSED; no zero inferred",
+      "url": "https://fineli.fi/fineli/fi/elintarvikkeet/379"
+    },
+    {
+      "id": "F002258",
+      "kind": "AFCD_WITHOUT_SUGAR_ALCOHOLS",
+      "path": "docs/nutrition/afcd-release-3-reference.json",
+      "nativeId": "F002258",
+      "nativeField": "available_carbohydrate_without_sugar_alcohols_g_per_100g",
+      "nativeRowSha256": "995230ccde045687262690ca2f3fba37a0ed7cbd3aed35c9b8a7027d8acbb35d",
+      "availablePer100g": 34.4,
+      "name": "Cardamom seed, dried, ground",
+      "polyols": "UNKNOWN_OR_UNUSED; no zero inferred",
+      "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd"
+    },
+    {
+      "id": "F007619",
+      "kind": "AFCD_WITHOUT_SUGAR_ALCOHOLS",
+      "path": "docs/nutrition/afcd-release-3-reference.json",
+      "nativeId": "F007619",
+      "nativeField": "available_carbohydrate_without_sugar_alcohols_g_per_100g",
+      "nativeRowSha256": "227a0a530873b6602327359d47b3f93f9352c0d86435acbf759b3dafad70999c",
+      "availablePer100g": 6.9,
+      "name": "Raspberry, raw",
+      "polyols": "UNKNOWN_OR_UNUSED; no zero inferred",
+      "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd"
+    }
+  ]
+}

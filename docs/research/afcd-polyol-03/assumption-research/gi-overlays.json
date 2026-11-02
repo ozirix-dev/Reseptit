@@ -1,0 +1,45 @@
+{
+  "records": [
+    {
+      "id": "almond50-b",
+      "kind": "PROPOSED_B_CODING",
+      "values": [
+        50
+      ],
+      "path": "docs/nutrition/glycemic-index-records.json",
+      "nativeId": "op142-lowcho50-v2",
+      "nativeRowSha256": "2bdac980b38c841b2f0d0d5783b30b6fe581ef0ab3136aa65c312df3f8c0b460",
+      "sourceUrl": "https://doi.org/10.1016/j.jfca.2007.02.004",
+      "locator": "PROPOSED EXTENSION: Schakel low-carbohydrate default50, restricted to full-fat100% almond meal / dry-ground whole almonds; extends the project5g cutoff only in a separate B contract",
+      "limitation": "This is a proposed estimation model, not measured almond-meal GI. Neither50 nor the composition-scenario interval bounds physiological GI. Milling/baking GI error remains unquantified. Separate explicit owner method/source-analogy approval required.",
+      "allowedCompositionIds": [
+        "F006077",
+        "379"
+      ]
+    },
+    {
+      "id": "trace50",
+      "kind": "PROPOSED_B_CODING",
+      "values": [
+        50
+      ],
+      "sourceUrl": "https://doi.org/10.1016/j.jfca.2007.02.004",
+      "path": "docs/nutrition/glycemic-index-records.json",
+      "nativeId": "op142-lowcho50-v2",
+      "nativeRowSha256": "2bdac980b38c841b2f0d0d5783b30b6fe581ef0ab3136aa65c312df3f8c0b460",
+      "locator": "Published low-carbohydrate default50; project application EXTENSION only. Named culinary trace spice/seed garnish <=0.5g CHO each and <=1g aggregate per serving; PROPOSED named flavour extracts, cardamom, leavening and <=0.5g-CHO raw raspberry garnish only",
+      "limitation": "New editorial coding reference, GI uncertainty not source-bounded. Requires explicit owner method approval. GI0–150 sensitivity is separate, not a source interval. This additional named-binding scope is unapproved and must be accepted separately; no general fruit-GI assignment.",
+      "allowedCompositionIds": [
+        "11177",
+        "385",
+        "F006316",
+        "physical",
+        "F009350",
+        "F002963",
+        "F002258",
+        "F000247",
+        "F007619"
+      ]
+    }
+  ]
+}
