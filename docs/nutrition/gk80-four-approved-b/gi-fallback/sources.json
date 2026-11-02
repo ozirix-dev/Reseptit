@@ -1,0 +1,570 @@
+{
+  "schemaVersion": 1,
+  "activation": false,
+  "ownerApproval": false,
+  "sourceFilesLfSha256": {
+    "docs/nutrition/fineli-release-20-reference.json": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76",
+    "docs/nutrition/afcd-release-3-reference.json": "02edf1cc95191c05edf791656a5109c41bcf4d4a3e707be69ef5009bc640022e",
+    "docs/nutrition/glycemic-index-records.json": "fb465ac8f68ffc85e29eb9900f17df00b081fa0ddc3e25d253140aecb248acda",
+    "site/scripts/glycemic-load-model.ts": "10ce09e465886e4538fc0b2ad2a54ca0b050a9e3729b7417eb0a91f2b946b48c"
+  },
+  "composition": [
+    {
+      "id": "922",
+      "kind": "FINELI_CHOAVL",
+      "nativeId": "922",
+      "availablePer100g": 0.0,
+      "name": "VESI, VESIJOHTOVESI",
+      "nativeRowPythonJsonSha256": "41972b8a17ac88e177afef853eea1ea77952f50a1f65f36ad4bf2ab36d31a22f",
+      "process": "X",
+      "portionMasses": {
+        "DL": 100.0,
+        "RKL": 15.0,
+        "TL": 5.0
+      }
+    },
+    {
+      "id": "541",
+      "kind": "FINELI_CHOAVL",
+      "nativeId": "541",
+      "availablePer100g": 0.0,
+      "name": "RUOKAÖLJY KESKIARVO, 87 % RYPSI- 8 % AURINGONKUKKA- JA 5% OLIIVIÖLJY",
+      "nativeRowPythonJsonSha256": "778e197050af0f4599175e44e94a1b6992de9174eb1853a5acd171c49ddaf25e",
+      "process": "IND",
+      "portionMasses": {
+        "DL": 90.0,
+        "RKL": 13.5,
+        "TL": 4.5
+      }
+    },
+    {
+      "id": "352",
+      "kind": "FINELI_CHOAVL",
+      "nativeId": "352",
+      "availablePer100g": 3.45,
+      "name": "TOMAATTI",
+      "nativeRowPythonJsonSha256": "5aa96014c83fbca157692be4e7764e3807ae5fe7f354e7978b9c8a65f9c3d307",
+      "process": "RAW",
+      "portionMasses": {
+        "KPL_S": 75.0,
+        "KPL_M": 125.0,
+        "KPL_L": 170.0
+      }
+    },
+    {
+      "id": "335",
+      "kind": "FINELI_CHOAVL",
+      "nativeId": "335",
+      "availablePer100g": 4.8,
+      "name": "SIPULI, KELTASIPULI",
+      "nativeRowPythonJsonSha256": "fc933b2defc31567f227521b9fd0aefd02380bae2533d0350afb71d847149959",
+      "process": "RAW",
+      "portionMasses": {
+        "KPL_S": 30.0,
+        "KPL_M": 55.0,
+        "KPL_L": 200.0,
+        "DL": 90.0
+      }
+    },
+    {
+      "id": "33456",
+      "kind": "FINELI_CHOAVL",
+      "nativeId": "33456",
+      "availablePer100g": 0.25,
+      "name": "PINAATTI",
+      "nativeRowPythonJsonSha256": "e44df5a9ce36177c7744676bd35a3f9ff2849ac7878b01624deea41f7aa75869",
+      "process": "RAW",
+      "portionMasses": {
+        "KPL_M": 2.0,
+        "DL": 50.0
+      }
+    },
+    {
+      "id": "650",
+      "kind": "FINELI_CHOAVL",
+      "nativeId": "650",
+      "availablePer100g": 4.3,
+      "name": "TUOREJUUSTO, KOTIJUUSTO, RASVAA 9-14 %, MAALAISJUUSTO",
+      "nativeRowPythonJsonSha256": "e88d7ce271dcc9c80b3e5d2bc85c02f8c625b9ecfb17db429a75f525ba3ebc19",
+      "process": "IND",
+      "portionMasses": {}
+    },
+    {
+      "id": "30",
+      "kind": "FINELI_CHOAVL",
+      "nativeId": "30",
+      "availablePer100g": 0.0,
+      "name": "RUOKASUOLA, JODIOITU",
+      "nativeRowPythonJsonSha256": "205f135e85c7f4b0490893082e770f693242c191518a163d48d427d6b61a0b2e",
+      "process": "IND",
+      "portionMasses": {
+        "DL": 125.0,
+        "RKL": 20.0,
+        "TL": 6.5
+      }
+    },
+    {
+      "id": "11048",
+      "kind": "FINELI_CHOAVL",
+      "nativeId": "11048",
+      "availablePer100g": 2.2,
+      "name": "SITRUUNA, KUORITTU",
+      "nativeRowPythonJsonSha256": "3705830693d86dd6b664c686859a73558b7df2a680083064ba8c04c4651017e1",
+      "process": "RAW",
+      "portionMasses": {
+        "KPL_S": 60.0,
+        "KPL_M": 80.0,
+        "KPL_L": 100.0
+      }
+    },
+    {
+      "id": "11557",
+      "kind": "FINELI_CHOAVL",
+      "nativeId": "11557",
+      "availablePer100g": 1.6,
+      "name": "TÄYSMEHU, SITRUUNATÄYSMEHU, LAIMENTAMATON",
+      "nativeRowPythonJsonSha256": "c9a286b0c99b8ed9b1ae66cbabb6978d9c8657030b2fd18bc768e3ed954c3236",
+      "process": "MASH",
+      "portionMasses": {
+        "DL": 100.0,
+        "RKL": 15.0,
+        "TL": 5.0
+      }
+    },
+    {
+      "id": "31218",
+      "kind": "FINELI_CHOAVL",
+      "nativeId": "31218",
+      "availablePer100g": 46.4,
+      "name": "KIKHERNE, KUIVATTU",
+      "nativeRowPythonJsonSha256": "38950b52e2d340b735f2a673656b5d12c63298be5aa5300fc4dfad32d11a8684",
+      "process": "DRIE",
+      "portionMasses": {}
+    },
+    {
+      "id": "112",
+      "kind": "FINELI_CHOAVL",
+      "nativeId": "112",
+      "availablePer100g": 63.6,
+      "name": "MANNASUURIMO",
+      "nativeRowPythonJsonSha256": "be990ad4ca042b41ca801256be88dda66a3a24f2ea8b6f7fdd005fed9d793533",
+      "process": "RAW",
+      "portionMasses": {
+        "DL": 100.0,
+        "RKL": 15.0
+      }
+    },
+    {
+      "id": "34229",
+      "kind": "FINELI_CHOAVL",
+      "nativeId": "34229",
+      "availablePer100g": 9.36,
+      "name": "HERNE, VIHREÄ, PAKASTE",
+      "nativeRowPythonJsonSha256": "67f9112512209b5c0d00c63dd0415b081e1b94eaa43f49935260aed7d69a94c9",
+      "process": "FROZ",
+      "portionMasses": {
+        "DL": 60.0
+      }
+    },
+    {
+      "id": "300",
+      "kind": "FINELI_CHOAVL",
+      "nativeId": "300",
+      "availablePer100g": 5.56,
+      "name": "PORKKANA",
+      "nativeRowPythonJsonSha256": "314121b051eeff132c0e46f7b469301f9972af153101c20e71d5188cfa4c3735",
+      "process": "RAW",
+      "portionMasses": {
+        "KPL_S": 35.0,
+        "KPL_M": 65.0,
+        "KPL_L": 100.0
+      }
+    },
+    {
+      "id": "620",
+      "kind": "FINELI_CHOAVL",
+      "nativeId": "620",
+      "availablePer100g": 3.4,
+      "name": "JOGURTTI, MAUSTAMATON, BULGARIAN, RASVAA 3,9%",
+      "nativeRowPythonJsonSha256": "3dd5039a2101173578a667173af447b93a5cc52e350792fe9c8b8701dd59b57b",
+      "process": "IND",
+      "portionMasses": {
+        "DL": 100.0,
+        "RKL": 15.0,
+        "TL": 5.0
+      }
+    },
+    {
+      "id": "F002881",
+      "kind": "AFCD_WITHOUT_SUGAR_ALCOHOLS",
+      "nativeId": "F002881",
+      "availablePer100g": 38.5,
+      "name": "Chickpea, dried",
+      "nativeRowPythonJsonSha256": "5bfccfac7620ce4f3a8180d07aae5263225d544a37a59e8ecd5dfacfdc57dccc",
+      "polyolsTotal": "UNKNOWN_NOT_FILLED"
+    },
+    {
+      "id": "F003192",
+      "kind": "AFCD_WITHOUT_SUGAR_ALCOHOLS",
+      "nativeId": "F003192",
+      "availablePer100g": 1.9,
+      "name": "Coriander, fresh, raw",
+      "nativeRowPythonJsonSha256": "58bac6a82aea164a6ae38b7ebbb7e541a22b8a5d576621d6cdbab6080d98b004",
+      "polyolsTotal": "UNKNOWN_NOT_FILLED"
+    },
+    {
+      "id": "F003327",
+      "kind": "AFCD_WITHOUT_SUGAR_ALCOHOLS",
+      "nativeId": "F003327",
+      "availablePer100g": 33.7,
+      "name": "Cumin (cummin) seed, dried, ground",
+      "nativeRowPythonJsonSha256": "2af180ea11a2306732119d617be1964d9a7d4d52a64f825f11a684fea754e54b",
+      "polyolsTotal": "UNKNOWN_NOT_FILLED"
+    },
+    {
+      "id": "F008222",
+      "kind": "AFCD_WITHOUT_SUGAR_ALCOHOLS",
+      "nativeId": "F008222",
+      "availablePer100g": 61.6,
+      "name": "Semolina, uncooked",
+      "nativeRowPythonJsonSha256": "0ef18b16951cc8b4434c8dd9557553fd1a064a288076adce3dd04d8fd661a5fb",
+      "polyolsTotal": "UNKNOWN_NOT_FILLED"
+    },
+    {
+      "id": "IFCT-G010",
+      "kind": "IFCT_ANALYTICAL_AVAILABLE_CHO",
+      "path": "docs/nutrition/gk80-operation149/prepared-route-observations.json",
+      "nativeId": "G010",
+      "nativeField": "Table6.TotalAvailableCHO",
+      "nativeRowSha256": "b3a307aa2eb847ac37c1708a09332e8a1281079c6b5617276f8ec80dbe9f15a5",
+      "availablePer100g": 3.66,
+      "name": "IFCT2017 fresh curry leaves;Table6 analytical availableCHO",
+      "polyols": "UNKNOWN; not inferred from Table1 by-difference value",
+      "nativeObservation": {
+        "id": "IFCT-G010",
+        "foodCode": "G010",
+        "food": "Curry leaves (Murraya koenigii)",
+        "foodState": "RAW_FRESH_EDIBLE_LEAVES",
+        "nativeTable": 6,
+        "nativeColumn": "Total Available CHO",
+        "availablePer100g": 3.66,
+        "starchPer100g": 3.08,
+        "totalFreeSugarsPer100g": 0.6,
+        "byDifferenceTable1Value": 4.51,
+        "sourceUrl": "https://www.nin.res.in/ebooks/IFCT2017_16122024.pdf",
+        "pdfSha256": "e87629581a58faca286f4886504bc75f33d6d3771a50fb4e40e2afee2b2b32dd",
+        "definitionPdfPage": 27,
+        "observationPdfPage": 221,
+        "printedPage": 183,
+        "definition": "Available carbohydrate is the analytical total of free monosaccharides/disaccharides and starch; distinct from Table1 CHOAVLDF by difference.",
+        "transcriptionNote": "Use published native TotalAvailableCHO3.66. The printed starch+free-sugar means sum3.68; the cause of this0.02 publication difference is not established. Do not silently recompute or replace the published total.",
+        "polyols": "UNKNOWN; not included in the defined free-sugars+starch field; no P0 inferred",
+        "verified": "Source definition and aligned row inspected as rendered PDF images2026-11-02"
+      },
+      "priorNamedFamilyApproval": "Chettinad exact source/content package; not automatic approval of this new recipe application"
+    }
+  ],
+  "giBindings": [
+    {
+      "id": "dairy30",
+      "kind": "EXISTING_PUBLISHED_CODING",
+      "nativeId": "op142-dairy-imputation30",
+      "values": [
+        30
+      ],
+      "allowedCompositionIds": [
+        "650",
+        "620"
+      ],
+      "nativeRowPythonJsonSha256": "d977dc0e145519ada95c1d0a3fd234e83847372c190d414b35350fec63747fbd",
+      "limitation": "Project published-imputation assignment, not measured ingredient or meal GI. Not tested cream, cheese or butter. Excludes plant drinks and sweetened dairy."
+    },
+    {
+      "id": "veg40",
+      "kind": "EXISTING_PUBLISHED_CODING",
+      "nativeId": "op142-vegetable-imputation40",
+      "values": [
+        40
+      ],
+      "allowedCompositionIds": [
+        "352",
+        "335",
+        "33456",
+        "F003192",
+        "IFCT-G010"
+      ],
+      "nativeRowPythonJsonSha256": "529f04e0c0580f4492df49521fb05cede453c7424eb46bdd985457efea57d727",
+      "limitation": "Project published-imputation assignment, not measured ingredient or meal GI. Coding estimate only. Application to named fresh herbs, sprouts and alliums is an explicit project interpretation. It does not establish a physiological maximum or a one-unit uncertainty bound. Not a default for seed spices, flour, sauces or stock."
+    },
+    {
+      "id": "lemon50",
+      "kind": "EXISTING_PUBLISHED_CODING",
+      "nativeId": "op142-lowcho50-r4",
+      "values": [
+        50
+      ],
+      "allowedCompositionIds": [
+        "11048",
+        "11557"
+      ],
+      "nativeRowPythonJsonSha256": "929238fdd0f046e5fb6acfd84d5d8ae942e97c0bf7c21f9576903f28cb7b8004",
+      "limitation": "Project published-imputation assignment, not measured ingredient or meal GI. Published low-carbohydrate default50, applied only to reviewed named compositions <=5 g available CHO/100g. This cutoff is a project rule, not a validated scientific threshold. Explicit AFCD commercial soy sauce and AFCD tahini plus complete Maille Dijon label are allowed, not all brands or pastes. No flour/sugar/honey/syrup or composition-unknown food."
+    },
+    {
+      "id": "trace50",
+      "kind": "PROPOSED_B_CODING",
+      "values": [
+        50
+      ],
+      "sourceUrl": "https://doi.org/10.1016/j.jfca.2007.02.004",
+      "path": "docs/nutrition/glycemic-index-records.json",
+      "nativeId": "op142-lowcho50-v2",
+      "nativeRowSha256": "2bdac980b38c841b2f0d0d5783b30b6fe581ef0ab3136aa65c312df3f8c0b460",
+      "locator": "Published low-carbohydrate default50; project application EXTENSION only. Named culinary trace spice/seed garnish <=0.5g CHO each and <=1g aggregate per serving",
+      "limitation": "Existing B trace50 scope, new named ground-cumin application. At most0.5gCHO per ingredient and1g aggregate; editorial reference, not measured cuminGI or source-bounded uncertainty.",
+      "allowedCompositionIds": [
+        "F003327"
+      ]
+    },
+    {
+      "id": "whole-cheela42-recovery",
+      "kind": "NAMED_HUMAN_GI",
+      "values": [
+        42
+      ],
+      "path": "docs/nutrition/gk80-operation149/recovery-observations.json",
+      "nativeId": "whole-cheela42-recovery",
+      "nativeRowSha256": "a41bafd4b35785bb0a18db23d388800b9edfb0bf11565c70bcbbfd9147f4b045",
+      "sourceUrl": "https://apjcn.nhri.org.tw/server/APJCN/3/4/151.pdf",
+      "locator": "Unfermented whole Cicer arietinum pancake;table3,page152",
+      "limitation": "Older Table2-quality source. Four sample times, single glucose reference, female18–23 cohort. Calculated testCHO54.8g differs from50g reference. Use as LOW prepared-component model reference, not raw flour GI. No application to dehulled besan, mung, farinata or falafel. Both native dry-whole-chickpea composition sources are generic regional proxies, not composition measured in this trial.",
+      "allowedCompositionIds": [
+        "F002881",
+        "31218"
+      ],
+      "observation": {
+        "id": "whole-cheela42-recovery",
+        "gi": 42,
+        "table": 3,
+        "page": 152,
+        "food": "Unfermented whole Cicer arietinum pancake",
+        "healthyN": 15,
+        "sem": 0.6,
+        "referenceFood": "Glucose50g",
+        "reportedScale": "GLUCOSE_100",
+        "sourceUrl": "https://apjcn.nhri.org.tw/server/APJCN/3/4/151.pdf",
+        "pdfSha256": "4b90cf8309e1246a5cd4ee30d12b50278facd3e75de791745bb51e519a20bc39",
+        "recipe": {
+          "wholeDryLegumeFlourG": 90,
+          "waterMl": 200,
+          "fatG": 15,
+          "pancakes": 3,
+          "fermented": false
+        },
+        "methodLimitation": "Older Table2-quality source. Four sample times, single glucose reference, female18–23 cohort. Calculated testCHO54.8g differs from50g reference. Use as LOW prepared-component model reference, not raw flour GI. No application to dehulled besan, mung, farinata or falafel."
+      },
+      "equicarbohydrateDoseConfirmed": false,
+      "reportedTestChoG": 54.8,
+      "referenceChoG": 50
+    },
+    {
+      "id": "upittu69",
+      "kind": "NAMED_PREPARED_HUMAN_GI",
+      "values": [
+        69
+      ],
+      "allowedCompositionIds": [
+        "112",
+        "F008222",
+        "335"
+      ],
+      "sourceUrl": "https://doi.org/10.1017/S0007114505000611",
+      "locator": "Urooj/Puttaraj2000 Table1 p484 and Table5 p486, healthy11, glucose50g2h, GI69 SD13",
+      "observationId": "urooj-upittu69",
+      "limitation": "Prepared roasted semolina/onion/oil unit only, not raw semolina or entire vegetable/yogurt recipe. Source single glucose visit and0/30/60/120min, old study; matrix/preparation analogy LOW. SD13 and diabetic67 are not recipe interval endpoints."
+    },
+    {
+      "id": "frozen-pea42",
+      "kind": "NAMED_HUMAN_GI",
+      "values": [
+        42
+      ],
+      "allowedCompositionIds": [
+        "34229"
+      ],
+      "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+      "locator": "Supplement1 PDFp120 item1798 McCain Australia frozen peas heated microwave,2020,healthy10,glucose25g2h,SEM4,UO5",
+      "observationId": "pea42",
+      "limitation": "Named frozen heated pea comparator; original unpublished observation in systematic table. Native Fineli frozen composition is regional proxy; no dried-pea, mixed-meal or all-legume transfer. Not the category mean36."
+    },
+    {
+      "id": "boiled-carrot32",
+      "kind": "NAMED_HUMAN_GI",
+      "values": [
+        32
+      ],
+      "allowedCompositionIds": [
+        "300"
+      ],
+      "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+      "locator": "Supplement1 PDFp121 item1804 unpeeled boiled carrot,Australia2020,healthy10,glucose25g2h,SEM4,UO5",
+      "observationId": "carrot32",
+      "limitation": "Cooked unpeeled carrot comparator; input uses native raw edible carrot composition and all cooking liquid retained. Generic regional composition/preparation LOW analogy. Not carrot category mean or SD/SEM interval."
+    }
+  ],
+  "pinnedGitFiles": [
+    {
+      "commit": "c559be5855b86e4b89b8f780df51a6298612ec6f",
+      "path": "docs/nutrition/gk80-operation149/recovery-cases.json",
+      "lfSha256": "ff5446f6d0caec947f65145aa2abd935d7e48198361d46b7637be55d1c161376"
+    },
+    {
+      "commit": "c559be5855b86e4b89b8f780df51a6298612ec6f",
+      "path": "docs/nutrition/gk80-operation149/recovery-gi.json",
+      "lfSha256": "0e67ea99b717f8bbb0a01ee6084ab5d0175854f906c6b5de188f85fafb89fd62"
+    },
+    {
+      "commit": "c559be5855b86e4b89b8f780df51a6298612ec6f",
+      "path": "docs/nutrition/gk80-operation149/recovery-observations.json",
+      "lfSha256": "e07781f8150a378a4646bceb1f9bc42ac0119afaba8bdd54563fc9de7400a896"
+    },
+    {
+      "commit": "92dc6dbe7b27e145d6938026c73b6823f2e2108f",
+      "path": "docs/nutrition/gk80-operation149/gi-sources.json",
+      "lfSha256": "1f7b9831179ca1dae27285bffa189a03a47e28018c946e60b438965abb9d880c"
+    },
+    {
+      "commit": "92dc6dbe7b27e145d6938026c73b6823f2e2108f",
+      "path": "docs/nutrition/gk80-operation149/prepared-route-observations.json",
+      "lfSha256": "3bc2549c5c05fc42dbc8ba752452cb82aea4cc74b0fccef1e1a7dcc48cf1baf4"
+    },
+    {
+      "commit": "92dc6dbe7b27e145d6938026c73b6823f2e2108f",
+      "path": "docs/nutrition/gk80-operation149/prepared-route-composition.json",
+      "lfSha256": "c127eaed1723e1314d98bc7a2f94e4c8de7a956e16302f84ce2541acb724d6b5"
+    }
+  ],
+  "externalSources": [
+    {
+      "id": "batra42-primary",
+      "rawFile": "batra1994.pdf",
+      "url": "https://apjcn.nhri.org.tw/server/APJCN/3/4/151.pdf",
+      "rawSha256": "4b90cf8309e1246a5cd4ee30d12b50278facd3e75de791745bb51e519a20bc39",
+      "selectedFacts": {
+        "pages": [
+          151,
+          152
+        ],
+        "wholeCicerUnfermentedGi": 42,
+        "healthyN": 15,
+        "testReportedChoG": 54.8,
+        "referenceChoG": 50,
+        "flourG": 90,
+        "waterMl": 200,
+        "fatG": 15,
+        "fermentedAlternativeGi": 45
+      },
+      "access": "Previously retained primary PDF, pages1/2 visually inspected this pass; GI-index hit is same study, not independent replication."
+    },
+    {
+      "id": "urooj-upittu69",
+      "rawFile": "urooj2000.pdf",
+      "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/D2463C77BBE955322ED8A46D1DA34870/S0007114500000611a.pdf/glycaemic_responses_to_cerealbased_indian_food_preparations_in_patients_with_noninsulindependent_diabetes_mellitus_and_normal_subjects.pdf",
+      "rawSha256": "19dffea76c0bf00aff28c1192c822b67f327b9556e29fa7c85c2aa03a3ba6590",
+      "selectedFacts": {
+        "table1PrintedPage": 484,
+        "table5PrintedPage": 486,
+        "giHealthy": 69,
+        "healthyN": 11,
+        "giHealthySD": 13,
+        "giDiabetic": 67,
+        "diabeticN": 12,
+        "semolinaG": 65,
+        "onionG": 20,
+        "oilG": 8,
+        "waterMl": 125,
+        "roastMin": 2,
+        "referenceChoG": 50,
+        "testChoG": 50,
+        "cookedTestMassG": 180,
+        "samplingMinutes": [
+          0,
+          30,
+          60,
+          120
+        ]
+      },
+      "access": "Publisher PDF downloaded and visually checked;2000 publication, not online-migration year."
+    },
+    {
+      "id": "atkinson2021-selected",
+      "rawFile": "atkinson2021-table1.pdf",
+      "url": "https://doi.org/10.1093/ajcn/nqab233",
+      "rawSha256": "e930c4a090697abd4f7331a64837b524cf4701513cbb9865a739f4f9fb131061",
+      "selectedFacts": {
+        "pea42": {
+          "pdfPage1Based": 120,
+          "item": 1798,
+          "gi": 42,
+          "healthyN": 10,
+          "testChoG": 25,
+          "originalObservation": "UO5,2020,unpublished"
+        },
+        "carrot32": {
+          "pdfPage1Based": 121,
+          "item": 1804,
+          "gi": 32,
+          "healthyN": 10,
+          "testChoG": 25,
+          "originalObservation": "UO5,2020,unpublished"
+        }
+      },
+      "access": "Selected rows visually checked; source SEM not used as a recipe interval."
+    },
+    {
+      "id": "sydney-gi-index",
+      "url": "https://glycemicindex.com/gi-search/",
+      "rawSha256": null,
+      "access": "Official public index read with web tool2026-11-02; binary HTTP403. Only selected facts sealed, no fabricated HTML hash. Database and underlying study are deduplicated.",
+      "selectedFacts": [
+        {
+          "food": "Cheela Bengal gram unfermented",
+          "gi": 42,
+          "source": "Batra1994",
+          "acceptedRole": "LOOKUP_TO_PRIMARY"
+        },
+        {
+          "food": "Cheela Bengal gram fermented",
+          "gi": 45,
+          "source": "Batra1994",
+          "acceptedRole": "EXCLUDED_DIFFERENT_PREPARATION"
+        },
+        {
+          "food": "Upittu roasted semolina onion cooked water healthy",
+          "gi": 69,
+          "source": "Urooj2000",
+          "acceptedRole": "LOOKUP_TO_PRIMARY"
+        },
+        {
+          "food": "Upittu diabetic group",
+          "gi": 67,
+          "source": "Urooj2000",
+          "acceptedRole": "EXCLUDED_POPULATION_ENDPOINT"
+        },
+        {
+          "food": "Instant soba reheated served soup",
+          "gi": 46,
+          "source": "Sugiyama2003",
+          "acceptedRole": "HOLD_TARGET_DRY_COOKED_BASIS_UNRESOLVED"
+        },
+        {
+          "food": "POM pomegranate juice",
+          "gi": 53,
+          "source": "SydneyUO2009",
+          "acceptedRole": "REJECT_FOR_WHOLE_ARILS"
+        }
+      ]
+    }
+  ],
+  "policy": "Three research routes, not permission to publish. Source-scenario envelope uses only comparable native availableCHO points; not totalCHO, cohort/SEM endpoints, category means, in-vitroGI or arbitrary0–150 sensitivity. All positive B contributions covered. No inferred polyol0 or GI0."
+}

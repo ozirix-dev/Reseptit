@@ -7,6 +7,8 @@ export interface GkOnlyVariant {
  omittedCho:number;confidence:'LOW';macroScope:'NO_MACRO_PACKAGE_FOR_THIS_VERSION';
  /** Absent means the original gram-only contract; sealed inputs are never rewritten. */
  quantityContract?:'GK_ONLY_NATIVE_UNITS_V1';
+ rangeDisplay?:'OUTWARD_INTEGER';
+ standalonePreparation?:true;
  ingredients:Array<{name:LocalizedText;grams:number|null;quantity?:{amount:number;unit:'ml'|'tbsp'}}> ;
  limitation?:LocalizedText;
  preparation:LocalizedText;codingKinds:Array<'PLANT50'|'TRACE50'>;

@@ -21,18 +21,42 @@ const four=buildApprovedFourVariants(root),loaded=loadApprovedFour(root),manifes
 const old=[...buildGkOnlyVariants(root),...buildApprovedSevenVariants(root)];
 const render=(v:GkOnlyVariant,locale:'fi'|'en'|'sv'|'th',servings=v.servings)=>renderToStaticMarkup(h(MemoryRouter,null,h(GkOnlyVariantPanel,{variant:v,locale,servings})));
 
-test('exact four A inputs extend23 unchanged GK-only versions to183 distinct numeric recipes',()=>{
+test('the four A inputs and legacy variants remain intact as four approved B versions enter coverage',()=>{
  assert.equal(four.length,4);assert.deepEqual(Object.fromEntries(four.map(v=>[v.recipeId,v.inputSha256])),NEXT_FOUR_INPUTS);
  assert.ok(four.every(v=>v.level==='A'&&v.confidence==='LOW'&&v.codingKinds.length===0));
- assert.deepEqual(gkOnlyVariants,[...old,...four]);
+ assert.deepEqual(gkOnlyVariants.slice(0,27),[...old,...four]);
  for(const previous of baseline.legacyVariants){const v=old.find(v=>v.recipeId===previous.recipeId)!;assert.equal(digest(v),previous.variantSha256,previous.recipeId);}
  const report=read('tmp/nutrition/glycemic-load-pilot.json');
  assert.deepEqual(report.gkOnlyVariants,gkOnlyVariants);assert.deepEqual(report.versionCoverage,gkVersionCoverage);
- assert.equal(gkVersionCoverage.numericRecipes,183);assert.equal(gkVersionCoverage.originalNumeric,156);assert.equal(gkVersionCoverage.additionalA,21);assert.equal(gkVersionCoverage.additionalB,6);assert.equal(gkVersionCoverage.total,326);assert.equal(gkVersionCoverage.missing,143);
- assert.deepEqual(report.coverageViews,{originalRecipe:{total:326,numeric:156,missing:170},atLeastOneExactVersion:{total:326,numeric:183,missing:143,additionalApprovedVersions:27}});
+ assert.equal(gkVersionCoverage.numericRecipes,187);assert.equal(gkVersionCoverage.originalNumeric,156);assert.equal(gkVersionCoverage.additionalA,21);assert.equal(gkVersionCoverage.additionalB,10);assert.equal(gkVersionCoverage.total,326);assert.equal(gkVersionCoverage.missing,139);
+ assert.deepEqual(report.coverageViews,{originalRecipe:{total:326,numeric:156,missing:170},atLeastOneExactVersion:{total:326,numeric:187,missing:139,additionalApprovedVersions:31}});
  assert.throws(()=>countGkVersions(report.results,[...gkOnlyVariants,four[0]]),/distinct/);
- for(const id of ['intialainen-besan-chilla','intialainen-pinaatti-paneer-chilla','jerk-kana','sate-ayam'])assert.ok(!gkOnlyVariants.some(v=>v.recipeId===id));
+ for(const id of ['jerk-kana','sate-ayam'])assert.ok(!gkOnlyVariants.some(v=>v.recipeId===id));
 });
+test('only the approved B inputs appear with outward-rounded source ranges',()=>{
+ const expected = {
+  'intialainen-besan-chilla': ['5c0942255538ff47e866006ff3fb40d44bd25abe5c30496c69cdcee8adccd01a','9–12'],
+  'intialainen-pinaatti-paneer-chilla': ['cdfff763f373d92f5142ac772b52068a2e453ebd56bcff5c29b507422c6a8d16','9–11'],
+  'intialainen-mannasuurimoupma': ['365f6eaff17867ea8fc415dd57af8d2ef91176e2c80239dfbc0d69ac2dc2d1cc','26–27'],
+  'intialainen-ven-pongal': ['88400041451f8120facd3394a151f79639d901cc4c8359f36859fe9251bc1345','40–46'],
+ };
+ const added = gkOnlyVariants.slice(27);
+ assert.deepEqual(added.map(v=>v.recipeId).sort(),Object.keys(expected).sort());
+ for (const v of added) {
+  const [input,range] = expected[v.recipeId as keyof typeof expected];
+  assert.equal(v.inputSha256,input);
+  assert.equal(v.level,'B');
+  assert.equal(v.omittedCho,0);
+  assert.equal(v.macroScope,'NO_MACRO_PACKAGE_FOR_THIS_VERSION');
+  for (const locale of ['fi','en','sv','th'] as const) {
+   assert.equal(gkOnlyValue(v,locale),range);
+   assert.ok(render(v,locale).includes(v.limitation![locale]));
+  }
+ }
+ const pongal = added.find(v=>v.recipeId==='intialainen-ven-pongal')!;
+ assert.deepEqual(gkOnlyQuantity(pongal,4,4),{amount:1400,unit:'ml'});
+});
+
 test('all326 parent GK objects,23 old variants, macro sources and recipe trees remain on the main baseline',()=>{
  const report=read('tmp/nutrition/glycemic-load-pilot.json');assert.equal(report.results.length,326);
  assert.deepEqual(Object.fromEntries(report.results.map((r:any)=>[r.recipeId,digest(r)])),baseline.originalResultHashes);
