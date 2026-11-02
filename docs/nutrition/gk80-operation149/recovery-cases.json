@@ -1,0 +1,445 @@
+{
+  "schemaVersion": 1,
+  "activation": false,
+  "ownerApproval": false,
+  "readyAuthorized": false,
+  "mergeAuthorized": false,
+  "deployAuthorized": false,
+  "cases": [
+    {
+      "recipeId": "rahka-marjakerroskulho",
+      "level": "A",
+      "servings": 4,
+      "paths": {
+        "fi": "reseptit/aamupalat/rahka-marjakerroskulho.md"
+      },
+      "recipeSha256": {
+        "fi": "c571f8f509bde4da9159bfdb4e1449f856030c9c92bf8a8ba1e2376d9c33c058"
+      },
+      "candidateIngredients": [
+        {
+          "name": "maitorahka",
+          "grams": 250,
+          "compositionId": "622",
+          "giId": "dairy30",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Exact weighed edible input; full portion retained."
+        },
+        {
+          "name": "maustamaton turkkilainen jogurtti10%",
+          "grams": 100,
+          "compositionId": "32201",
+          "giId": "dairy30",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Exact weighed edible input; full portion retained."
+        },
+        {
+          "name": "tuore mansikka",
+          "grams": 100,
+          "compositionId": "447",
+          "giId": "strawberry40",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Exact weighed edible input; full portion retained."
+        },
+        {
+          "name": "tuore pohjoisamerikkalainen wild blueberry",
+          "grams": 50,
+          "compositionId": "F001290",
+          "giId": "blueberry53-recovery",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Australian raw-blueberry composition proxy for named Canadian wild-blueberry GI; not Finnish bilberry."
+        },
+        {
+          "name": "hasselpähkinä",
+          "grams": 20,
+          "compositionId": "375",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Exact weighed edible input; full portion retained."
+        },
+        {
+          "name": "punnittu sitruunankuoriraaste",
+          "grams": 2,
+          "compositionId": "physical",
+          "giId": null,
+          "carbohydrateUse": "UPPER_BOUND",
+          "note": "2g is an explicit weighed choice, not a source-verified teaspoon conversion. Total peel mass is only an availableCHO cap."
+        },
+        {
+          "name": "Foodin100%erytritoli",
+          "grams": 4,
+          "compositionId": "pure-erythritol",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Exact weighed edible input; full portion retained."
+        }
+      ],
+      "preparationDecision": "Original cold layered bowl. Use100g fresh strawberry,50g fresh Canadian wild blueberry,20g raw hazelnut and2g weighed lemon zest. Sweeten with4g pure erythritol. Preserve zest; do not swap it for juice. Raw fruit GI is named; source/variety differences remain LOW. Hazelnut and peel positive GI-lessCHO is explicitly omitted by unchanged A thresholds. No whole-meal or all-berry GI claim.",
+      "requiredDecisions": [
+        "GK_ONLY_CONTRACT",
+        "EXACT_NEW_VERSION_OWNER_APPROVAL",
+        "NEW_SOURCE_BINDINGS_REVIEW",
+        "BLUEBERRY_VARIETY_AND_COMPOSITION_ANALOGUE",
+        "WEIGHED_ZEST_2G_NOT_CONVERSION"
+      ],
+      "macroAction": "PRESERVE_ALL_CURRENT_VALUES_AND_WITHHOLDINGS",
+      "approval": false,
+      "confidence": "LOW",
+      "inputSha256": "092719e24df715f0149468125c91e24c08a5dffb29ba2d2f712bb779bd4bdc86"
+    },
+    {
+      "recipeId": "japanilainen-hojicha-jogurtti-persimonilla",
+      "level": "B",
+      "servings": 2,
+      "paths": {
+        "fi": "reseptit/aamupalat/japanilainen-hojicha-jogurtti-persimonilla.md"
+      },
+      "recipeSha256": {
+        "fi": "cae50573ff18898460b95e9c674d0bc39514c7cbaaaa502d4008171b14261cfe"
+      },
+      "candidateIngredients": [
+        {
+          "name": "maustamaton jogurtti3.9%",
+          "grams": 200,
+          "compositionId": "620",
+          "giId": "dairy30",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Exact weighed edible input; full portion retained."
+        },
+        {
+          "name": "kuorittu tuore persimon",
+          "grams": 150,
+          "compositionId": "F006628",
+          "giId": "persimmon61-recovery",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Exact weighed edible input; full portion retained."
+        },
+        {
+          "name": "valmis siivilöity hojicha-hauduke",
+          "grams": 40,
+          "compositionId": "F009117",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Use exactly40g liquid infusion prepared from2g hojicha and50g water; strain/remove leaves, cool. Native unsweetened green-tea infusion is a composition analogue for roasted-green-tea infusion; zero is native nominal availableCHO, not inferred total polyols."
+        },
+        {
+          "name": "suolaamattomat seesaminsiemenet",
+          "grams": 5,
+          "compositionId": "F008214",
+          "giId": "trace50",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Exact weighed edible input; full portion retained."
+        },
+        {
+          "name": "suola",
+          "grams": 0,
+          "compositionId": "30",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Exact weighed edible input; full portion retained."
+        }
+      ],
+      "preparationDecision": "Choose the already-listed brewed-tea branch, never the powdered-leaf branch. Brew2g roasted green tea in50g water, strain, cool and weigh40g liquid into200g plain yogurt. Add150g peeled persimmon and5g sesame. No arbitrary extraction fraction: the final infusion is weighed and its native green-tea composition proxy is explicit. Raw persimmon61 and source-subject limitations disclosed. B trace50 only for sesame0.155gCHO/serving. No clinically measured bowl GI.",
+      "requiredDecisions": [
+        "GK_ONLY_CONTRACT",
+        "EXACT_NEW_VERSION_OWNER_APPROVAL",
+        "NEW_SOURCE_BINDINGS_REVIEW",
+        "ROASTED_GREEN_TEA_INFUSION_COMPOSITION_PROXY",
+        "NO_USE_FOR_GROUND_LEAVES"
+      ],
+      "macroAction": "PRESERVE_ALL_CURRENT_VALUES_AND_WITHHOLDINGS",
+      "approval": false,
+      "confidence": "LOW",
+      "inputSha256": "c270484fbb4a94ab0b8709bbc76e01f812928e3939bfd9a6cd8704a9f770ba08"
+    },
+    {
+      "recipeId": "pad-kee-mao-vhh-konjac",
+      "level": "A",
+      "servings": 4,
+      "paths": {
+        "fi": "reseptit/paaruoat/pad-kee-mao-vhh-konjac.md",
+        "en": "kaannokset/en/paaruoat/pad-kee-mao-vhh-konjac.md",
+        "sv": "kaannokset/sv/paaruoat/pad-kee-mao-vhh-konjac.md",
+        "th": "kaannokset/th/paaruoat/pad-kee-mao-vhh-konjac.md"
+      },
+      "recipeSha256": {
+        "fi": "85931d9ea0a5d4d8910ce51bed38af5ac52b8803414114118fde62de007827be",
+        "en": "03de286298ce3cff11520b4577561742869b81a5eb64ed16e5e2da772cf353d0",
+        "sv": "d88496ec13d82331f562693ada4517c75e68536331e73579a78cb2d0a036901d",
+        "th": "88960e1b46da3839a23db38fa1fd7ff2cee8749ed1edbc004335a14e10d2150b"
+      },
+      "candidateIngredients": [
+        {
+          "name": "KoRo konjac-fettuccine vedessä, valutettu",
+          "grams": 600,
+          "compositionId": "koro-ready-ceiling",
+          "giId": null,
+          "carbohydrateUse": "UPPER_BOUND",
+          "note": "Exact ready-in-water product on manufacturer URL.600g weighed after draining. Use nominal manufacturer<0.1g totalCHO/100g as conservative0.1 ceiling, not zero or a dry-noodle value."
+        },
+        {
+          "name": "nahaton broilerin reisiliha",
+          "grams": 500,
+          "compositionId": "30792",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Exact weighed edible input; full portion retained."
+        },
+        {
+          "name": "tuore vihreä papu",
+          "grams": 150,
+          "compositionId": "372",
+          "giId": "veg40",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Exact weighed edible input; full portion retained."
+        },
+        {
+          "name": "punainen paprika",
+          "grams": 120,
+          "compositionId": "386",
+          "giId": "veg40",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Exact weighed edible input; full portion retained."
+        },
+        {
+          "name": "thaibasilika",
+          "grams": 30,
+          "compositionId": "11134",
+          "giId": "veg40",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Fresh basil composition proxy for Thai basil; weigh edible leaves."
+        },
+        {
+          "name": "valkosipuli",
+          "grams": 10.5,
+          "compositionId": "393",
+          "giId": "veg40",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Exact weighed edible input; full portion retained."
+        },
+        {
+          "name": "punainen chili",
+          "grams": 24,
+          "compositionId": "F002901",
+          "giId": "veg40",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Exact weighed edible input; full portion retained."
+        },
+        {
+          "name": "Squid Brand-kalakastike",
+          "grams": 30,
+          "compositionId": "F008004",
+          "giId": "low50",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Native commercial fish-sauce availableCHO4.4g/100g is an explicit Australian composition proxy for named Squid product, not a new brand label or inferred P0."
+        },
+        {
+          "name": "tavallinen soijakastike, ei tumma makea kastike",
+          "grams": 15,
+          "compositionId": "F008065",
+          "giId": "low50",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Exact weighed edible input; full portion retained."
+        },
+        {
+          "name": "kaupallinen osterikastike",
+          "grams": 15,
+          "compositionId": "F008026",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Exact weighed edible input; full portion retained."
+        },
+        {
+          "name": "Foodin100%erytritoli",
+          "grams": 4,
+          "compositionId": "pure-erythritol",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Exact weighed edible input; full portion retained."
+        },
+        {
+          "name": "neutraali öljy",
+          "grams": 27,
+          "compositionId": "541",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Exact weighed edible input; full portion retained."
+        }
+      ],
+      "preparationDecision": "Preserve original bean precooking5–7min, drained noodles dry-fried3–4min and wok method. Keep all sauce. Recipe quantities stay fixed; identify ready-in-water KoRo fettuccine, never dried konjac. Nominal noodle carbohydrate ceiling0.15g/serving and oyster sauceCHO0.7875g/serving are positive unknown-GI omissions; neither is zero. New named herb/bean/fish-sauce imputation bindings need owner review.",
+      "requiredDecisions": [
+        "GK_ONLY_CONTRACT",
+        "EXACT_NEW_VERSION_OWNER_APPROVAL",
+        "NEW_SOURCE_BINDINGS_REVIEW",
+        "KORO_NOMINAL_MANUFACTURER_CEILING_NOT_ANALYTIC_LOT_BOUND",
+        "FISH_SAUCE_COMPOSITION_PROXY"
+      ],
+      "macroAction": "PRESERVE_ALL_CURRENT_VALUES_AND_WITHHOLDINGS",
+      "approval": false,
+      "confidence": "LOW",
+      "inputSha256": "0c692cf887c1a70c12d537c3685a25284f004653e752f7e3995197129a50370e"
+    },
+    {
+      "recipeId": "intialainen-besan-chilla",
+      "level": "B",
+      "servings": 2,
+      "paths": {
+        "fi": "reseptit/aamupalat/intialainen-besan-chilla.md"
+      },
+      "recipeSha256": {
+        "fi": "287c9e88b59c37d1ce84bb0c9021b5bc328a285dfba85a8cbba5f8d45e887010"
+      },
+      "candidateIngredients": [
+        {
+          "name": "kokonaisesta kikherneestä jauhettu jauho",
+          "grams": 100,
+          "compositionId": "F002881",
+          "giId": "whole-cheela42-recovery",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Whole dried Cicer arietinum, ground without removing hull; no dehulled commercial besan. Native whole dry chickpea composition. GI42 applies to resulting unfermented thin pancake component, not raw flour."
+        },
+        {
+          "name": "vesi taikinaan",
+          "grams": 222.2,
+          "compositionId": "922",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Exact weighed edible input; full portion retained."
+        },
+        {
+          "name": "paistorasva",
+          "grams": 16.7,
+          "compositionId": "541",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Exact weighed edible input; full portion retained."
+        },
+        {
+          "name": "tomaatti chutneyyn",
+          "grams": 100,
+          "compositionId": "352",
+          "giId": "veg40",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Exact weighed edible input; full portion retained."
+        },
+        {
+          "name": "sipuli chutneyyn",
+          "grams": 70,
+          "compositionId": "335",
+          "giId": "veg40",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Exact weighed edible input; full portion retained."
+        },
+        {
+          "name": "tuore korianteri",
+          "grams": 6,
+          "compositionId": "F003192",
+          "giId": "veg40",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Exact weighed edible input; full portion retained."
+        },
+        {
+          "name": "suola",
+          "grams": 0,
+          "compositionId": "30",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Exact weighed edible input; full portion retained."
+        }
+      ],
+      "preparationDecision": "New explicitly proposed whole-chickpea version, not generic commercial besan. Grind whole unhulled Cicer arietinum; no soaking, fermentation or dehulling. Per100g flour use222.2g water and16.7g oil (Batra90:200:15 ratio, rounded to weighable0.1g). Rest10min; pan-cook thin pancakes, not oven farinata. Prepare tomato-onion chutney from the listed100g tomato and70g onion; consume all of it, with6g fresh coriander; no unlisted sugar/oil. B ingredient-additivity model applies named prepared-component42 plus existing vegetable coding40. Four-sample older study,54.8g calculated testCHO versus50g glucose and native Australian composition are material limitations. No whole-recipe measured GI claim.",
+      "requiredDecisions": [
+        "GK_ONLY_CONTRACT",
+        "EXACT_NEW_VERSION_OWNER_APPROVAL",
+        "NEW_SOURCE_BINDINGS_REVIEW",
+        "WHOLE_UNHULLED_FLOUR_VERSION_OWNER_CONTENT_DECISION",
+        "MATCH_PREPARED_CHEELA_NOT_RAW_FLOUR"
+      ],
+      "macroAction": "PRESERVE_ALL_CURRENT_VALUES_AND_WITHHOLDINGS",
+      "approval": false,
+      "confidence": "LOW",
+      "inputSha256": "afc7beb15b482d6b53c84e7d4c58bee88c007a4232a6984918b0320e6f9ed213"
+    },
+    {
+      "recipeId": "intialainen-pinaatti-paneer-chilla",
+      "level": "B",
+      "servings": 2,
+      "paths": {
+        "fi": "reseptit/aamupalat/intialainen-pinaatti-paneer-chilla.md"
+      },
+      "recipeSha256": {
+        "fi": "98e47d0383a3b5ce559858d69fad27f7e3b25d02a6182b91bec803ccbc0e8145"
+      },
+      "candidateIngredients": [
+        {
+          "name": "kokonaisesta kikherneestä jauhettu jauho",
+          "grams": 100,
+          "compositionId": "F002881",
+          "giId": "whole-cheela42-recovery",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Whole dried Cicer arietinum, ground without removing hull; no dehulled commercial besan. Native whole dry chickpea composition. GI42 applies to resulting unfermented thin pancake component, not raw flour."
+        },
+        {
+          "name": "vesi taikinaan",
+          "grams": 222.2,
+          "compositionId": "922",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Exact weighed edible input; full portion retained."
+        },
+        {
+          "name": "paistorasva",
+          "grams": 16.7,
+          "compositionId": "541",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Exact weighed edible input; full portion retained."
+        },
+        {
+          "name": "tuore pinaatti",
+          "grams": 50,
+          "compositionId": "33456",
+          "giId": "veg40",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Exact weighed edible input; full portion retained."
+        },
+        {
+          "name": "paneer",
+          "grams": 100,
+          "compositionId": "650",
+          "giId": "dairy30",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Exact weighed edible input; full portion retained."
+        },
+        {
+          "name": "juustokumina",
+          "grams": 2,
+          "compositionId": "F003327",
+          "giId": "trace50",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Exact weighed edible input; full portion retained."
+        },
+        {
+          "name": "suola",
+          "grams": 0,
+          "compositionId": "30",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Exact weighed edible input; full portion retained."
+        }
+      ],
+      "preparationDecision": "New whole-chickpea version using the same unfermented thin-pancake90:200:15 reference ratio, scaled100g whole unhulled chickpea flour,222.2g water,16.7g oil. Use50g weighed spinach,100g paneer and2g weighed cumin. Paneer/spinach are a separate filling; this is a LOW B ingredient-sum analogy, not a measurement of the filled pancake. EXPLICIT SERVING SCOPE: no unlisted coriander chutney or lemon wedge in this version/GK; original serving suggestions are outside this version and require their own quantities if added. The whole-flour change and serving exclusion both need owner content approval. No change to published recipe.",
+      "requiredDecisions": [
+        "GK_ONLY_CONTRACT",
+        "EXACT_NEW_VERSION_OWNER_APPROVAL",
+        "NEW_SOURCE_BINDINGS_REVIEW",
+        "WHOLE_UNHULLED_FLOUR_VERSION_OWNER_CONTENT_DECISION",
+        "EXCLUDE_UNQUANTIFIED_CHUTNEY_AND_LEMON_OWNER_DECISION"
+      ],
+      "macroAction": "PRESERVE_ALL_CURRENT_VALUES_AND_WITHHOLDINGS",
+      "approval": false,
+      "confidence": "LOW",
+      "inputSha256": "6c0b1890e16a526a75f5e8ef7b2729de3f7ef370c17b197dacb3990ece6f0710"
+    }
+  ]
+}

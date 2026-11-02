@@ -1,0 +1,25 @@
+{
+  "notAnApproval": true,
+  "additionalCases": 5,
+  "publicationIntegration": 0,
+  "held": [
+    {
+      "recipeId": "pad-see-ew-vhh-konjac",
+      "reason": "Dark soy cannot inherit commercial light-soy3.2 composition. LKK Premium Dark manufacturer declares31gCHO/100g;15g/4 gives1.1625g nominal totalCHO before labelling variation, and native availableCHO/polyols and GI remain unresolved. Do not call it low50 or omit it automatically.",
+      "source": "https://shopuk.lkk.com/products/premium-dark-soy-sauce-150ml"
+    },
+    {
+      "recipeId": "hunaja-sinappikana-kaalilla",
+      "reason": "Named honey GI source exists, but cooked glaze applicability and Dijon/garlic-powder positive GI-lessCHO need a compatible approved A/B handling. No new numeric proposal in this sub-batch."
+    },
+    {
+      "recipeId": "valimerellinen-farinata-aamupalaksi",
+      "reason": "Cheela pan-cooking/whole-flour study does not establish oven-farinata/commercial-besan equivalence."
+    }
+  ],
+  "sourcesReused": [
+    "frozen PR183 native source catalog and existing coding records",
+    "AJO10–13 reference facts; no inherited historical polyol0 or macro approvals"
+  ],
+  "separateEarlierProposal": "additional-proposal.json"
+}

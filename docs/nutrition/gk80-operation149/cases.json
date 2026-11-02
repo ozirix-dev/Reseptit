@@ -1,0 +1,1859 @@
+{
+  "schemaVersion": 1,
+  "profile": "GK149_V2_GK_ONLY",
+  "activation": false,
+  "ownerApproval": false,
+  "readyAuthorized": false,
+  "mergeAuthorized": false,
+  "deployAuthorized": false,
+  "baselineMain": "4a804757d5f9732938928dcba8f79ea0674ad98c",
+  "selectedRecipeIds": [
+    "keto-mutakakku",
+    "keto-suklaakeksit",
+    "vhh-juustokakku",
+    "rahkapiirakka-vhh",
+    "vhh-lihapiirakka",
+    "keto-korvapuustit",
+    "vhh-runebergintortut",
+    "kana-parmesaanipannu-parsakaali",
+    "kermainen-kanasienipannu",
+    "palak-paneer",
+    "paneer-tikka",
+    "kana-tagine-sitruunalla",
+    "paistettu-maksa-pekonilla",
+    "pad-kee-mao-vhh-konjac",
+    "pad-see-ew-vhh-konjac",
+    "vhh-mansikkakakku",
+    "vhh-mustikkapiirakka",
+    "siemengranola-jogurtilla",
+    "hunaja-sinappikana-kaalilla",
+    "miso-lohi-paksoi",
+    "vhh-pyttipannu",
+    "uunimakkara-sipulipedilla",
+    "lindstrominpihvit-kaalilla",
+    "silakkapihvit-tilli-kermakastike",
+    "kaakao-kookos-chia",
+    "marjainen-chiavanukas",
+    "rahka-marjakerroskulho",
+    "lahi-ita-pistaasijogurtti",
+    "vietnamilainen-kahvijogurtti-banaanilla",
+    "vhh-omenapiirakka",
+    "vhh-raparperipiirakka",
+    "hernekeitto-savupotkalla",
+    "congee-riisipuuro",
+    "paella-valenciana",
+    "hyderabadi-kanabiryani",
+    "intialainen-ven-pongal",
+    "korealainen-kongjuk-soijapapu-riisipuuro",
+    "indialainen-poha-maapahkinoilla",
+    "pohjoisafrikkalainen-bissara",
+    "falafel",
+    "intialainen-besan-chilla",
+    "valimerellinen-farinata-aamupalaksi",
+    "valimerellinen-halloumi-tomaattileipa",
+    "pohjoisafrikkalainen-taatelipuuro-appelsiinilla",
+    "intialainen-mannasuurimoupma",
+    "chow-mein",
+    "jauheliha-makaronilaatikko",
+    "bulgogi",
+    "bun-cha-hanoi",
+    "char-siu",
+    "vietnamilainen-pho-ga-aamuksi",
+    "mapo-tofu",
+    "bibimbap",
+    "goi-cuon",
+    "kung-pao-kana",
+    "malesialainen-laksa-lemak-aamiaiseksi",
+    "malesialainen-kaya-paahtoleipa",
+    "bouillabaisse",
+    "pav-bhaji",
+    "chettinad-kana",
+    "kookos-lime-kanacurry",
+    "rendang-padang",
+    "punainen-kanacurry-vhh",
+    "thai-vihrea-curry-kanalla-vhh",
+    "panang-curry-kanalla-vhh",
+    "keltainen-kanacurry-vhh",
+    "khao-soi-vhh-konjac",
+    "massaman-curry-kanalla-vhh",
+    "tom-kha-gai-vhh",
+    "japanilainen-kabocha-puuro"
+  ],
+  "cases": [
+    {
+      "recipeId": "keto-mutakakku",
+      "level": "A",
+      "servings": 8,
+      "paths": {
+        "fi": "reseptit/jalkiruoat/keto-mutakakku.md"
+      },
+      "recipeSha256": {
+        "fi": "11295775a58c43785b65f67d7b717d8f17163f20ac4196337112abd048740c43"
+      },
+      "candidateIngredients": [
+        {
+          "name": "no added sugar dark chocolate",
+          "grams": 150,
+          "compositionId": "F009837",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "voi",
+          "grams": 120,
+          "compositionId": "500",
+          "giId": "dairy30",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "kuoreton muna",
+          "grams": 165,
+          "compositionId": "858",
+          "giId": "low50",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "Foodin100%erytritoli",
+          "grams": 80,
+          "compositionId": "pure-erythritol",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Explicit product: declared total100g minus declared polyols100g once; not an unknown P0."
+        },
+        {
+          "name": "full-fat almond meal",
+          "grams": 60,
+          "compositionId": "F006077",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "kaakao",
+          "grams": 10,
+          "compositionId": "20",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "vaniljauute",
+          "grams": 4.2,
+          "compositionId": "F009350",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "suola",
+          "grams": 0,
+          "compositionId": "30",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Literal pure salt/water only; not mixed seasonings. For zeroCHO ingredients only,0g is a calculation sentinel: RETAIN the original recipe amount or original q.s. instruction; it does not mean remove the ingredient.",
+          "massRole": "ZERO_CHO_SENTINEL_RETAIN_ORIGINAL_AMOUNT"
+        }
+      ],
+      "preparationDecision": "Original175C12–16min. AFCD no-added-sugar chocolate and full-fat almond-meal composition proxies; no restoration of withheld macros. Define2tbsp cocoa10g and1tsp vanilla4.2g as weighed inputs, not source-verified volume conversions.",
+      "requiredDecisions": [
+        "EXACT_WEIGHED_VERSION",
+        "GK_ONLY_CONTRACT"
+      ],
+      "macroAction": "PRESERVE_ALL_CURRENT_VALUES_AND_WITHHOLDINGS",
+      "approval": false,
+      "confidence": "LOW",
+      "inputSha256": "b373e5621c6c939eaec2af8c9c11cd687f0a4b0f179159b5d143d2d4141e6af3"
+    },
+    {
+      "recipeId": "keto-suklaakeksit",
+      "level": "A",
+      "servings": 10,
+      "paths": {
+        "fi": "reseptit/jalkiruoat/keto-suklaakeksit.md"
+      },
+      "recipeSha256": {
+        "fi": "3890f2c40c40685cfde284dcd0e8346c020b46de45dc5387c6d4c490a261c859"
+      },
+      "candidateIngredients": [
+        {
+          "name": "voi",
+          "grams": 100,
+          "compositionId": "500",
+          "giId": "dairy30",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "Foodin100%erytritoli",
+          "grams": 70,
+          "compositionId": "pure-erythritol",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Explicit product: declared total100g minus declared polyols100g once; not an unknown P0."
+        },
+        {
+          "name": "muna",
+          "grams": 55,
+          "compositionId": "858",
+          "giId": "low50",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "full-fat almond meal",
+          "grams": 180,
+          "compositionId": "F006077",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "leivinjauhe",
+          "grams": 2,
+          "compositionId": "F000247",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "no added sugar dark chocolate",
+          "grams": 60,
+          "compositionId": "F009837",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "vaniljauute",
+          "grams": 4.2,
+          "compositionId": "F009350",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "suola",
+          "grams": 0,
+          "compositionId": "30",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Literal pure salt/water only; not mixed seasonings. For zeroCHO ingredients only,0g is a calculation sentinel: RETAIN the original recipe amount or original q.s. instruction; it does not mean remove the ingredient.",
+          "massRole": "ZERO_CHO_SENTINEL_RETAIN_ORIGINAL_AMOUNT"
+        }
+      ],
+      "preparationDecision": "Original175C10–12min; same almond/chocolate choice as mutakakku. Define0.5tsp baking powder2g and vanilla4.2g. Current macro withholding retained.",
+      "requiredDecisions": [
+        "EXACT_WEIGHED_VERSION",
+        "GK_ONLY_CONTRACT"
+      ],
+      "macroAction": "PRESERVE_ALL_CURRENT_VALUES_AND_WITHHOLDINGS",
+      "approval": false,
+      "confidence": "LOW",
+      "inputSha256": "0770b52ebf84d8eb525027bac548b74827bbdc4e0ff46ae4dcd81af0ab6fc36f"
+    },
+    {
+      "recipeId": "vhh-juustokakku",
+      "level": "A",
+      "servings": 10,
+      "paths": {
+        "fi": "reseptit/jalkiruoat/vhh-juustokakku.md"
+      },
+      "recipeSha256": {
+        "fi": "3bcb2bc49ab09f25eaebbe24ab59fe948ba1f86619708b71261adb01b1dddcda"
+      },
+      "candidateIngredients": [
+        {
+          "name": "full-fat almond meal",
+          "grams": 120,
+          "compositionId": "F006077",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "voi",
+          "grams": 50,
+          "compositionId": "500",
+          "giId": "dairy30",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "tuorejuusto11%",
+          "grams": 400,
+          "compositionId": "11571",
+          "giId": "dairy30",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "smetana40%",
+          "grams": 150,
+          "compositionId": "630",
+          "giId": "dairy30",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "muna",
+          "grams": 165,
+          "compositionId": "858",
+          "giId": "low50",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "Foodin100%erytritoli",
+          "grams": 80,
+          "compositionId": "pure-erythritol",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Explicit product: declared total100g minus declared polyols100g once; not an unknown P0."
+        },
+        {
+          "name": "vaniljauute",
+          "grams": 4.2,
+          "compositionId": "F009350",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "sitruunamehu",
+          "grams": 15,
+          "compositionId": "11557",
+          "giId": "low50",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        }
+      ],
+      "preparationDecision": "Original preparation; fresh GK-only specification. Smetana630 replaces incorrect creme-fraiche proxy in this pilot only; original macros unchanged. Almond meal AFCD5.4 consistently, never source-switched to cross omission thresholds.",
+      "requiredDecisions": [
+        "EXACT_WEIGHED_VERSION",
+        "GK_ONLY_CONTRACT"
+      ],
+      "macroAction": "PRESERVE_ALL_CURRENT_VALUES_AND_WITHHOLDINGS",
+      "approval": false,
+      "confidence": "LOW",
+      "inputSha256": "5b64980bf1d275c8369dcad192e477b6e604ad373f97df0fe970bd5d0f79ab73"
+    },
+    {
+      "recipeId": "palak-paneer",
+      "level": "A",
+      "servings": 4,
+      "paths": {
+        "fi": "reseptit/paaruoat/palak-paneer.md",
+        "en": "kaannokset/en/paaruoat/palak-paneer.md",
+        "sv": "kaannokset/sv/paaruoat/palak-paneer.md",
+        "th": "kaannokset/th/paaruoat/palak-paneer.md"
+      },
+      "recipeSha256": {
+        "fi": "a87a53457ea3df1d51b2d0ed933e997ad873fecee7ecd4331d82621eee71dfd9",
+        "en": "6e5542322a3c2073f68755cc0bdfc7e294ab6d1f8150a6d6344970bf92083242",
+        "sv": "eaae21d80782a7c492d532e0608027b236a42e1bd3e683bef1c91d4d242437eb",
+        "th": "aa505d24507d9e65aa0372a31e94124fa7dcff2db664ae3656ba389c31638d4d"
+      },
+      "candidateIngredients": [
+        {
+          "name": "pinaatti",
+          "grams": 500,
+          "compositionId": "33456",
+          "giId": "veg40",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "paneer; kotijuusto composition proxy",
+          "grams": 250,
+          "compositionId": "650",
+          "giId": "dairy30",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "sipuli",
+          "grams": 55,
+          "compositionId": "335",
+          "giId": "veg40",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "valkosipuli",
+          "grams": 7,
+          "compositionId": "393",
+          "giId": "veg40",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "tuore inkivääri",
+          "grams": 15,
+          "compositionId": "33023",
+          "giId": "veg40",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "öljy",
+          "grams": 27,
+          "compositionId": "541",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "jauhettu juustokumina",
+          "grams": 2,
+          "compositionId": "physical",
+          "giId": null,
+          "carbohydrateUse": "UPPER_BOUND",
+          "note": "Proposed weighed1tsp equivalent Physical mass ceiling only; neither exact available CHO nor polyol zero."
+        },
+        {
+          "name": "kurkuma",
+          "grams": 1,
+          "compositionId": "physical",
+          "giId": null,
+          "carbohydrateUse": "UPPER_BOUND",
+          "note": "Proposed weighed0.5tsp equivalent Physical mass ceiling only; neither exact available CHO nor polyol zero."
+        },
+        {
+          "name": "garam masala",
+          "grams": 2,
+          "compositionId": "physical",
+          "giId": null,
+          "carbohydrateUse": "UPPER_BOUND",
+          "note": "Proposed weighed1tsp equivalent Physical mass ceiling only; neither exact available CHO nor polyol zero."
+        },
+        {
+          "name": "kuohukerma38%",
+          "grams": 100,
+          "compositionId": "631",
+          "giId": "dairy30",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "suola",
+          "grams": 0,
+          "compositionId": "30",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Literal pure salt/water only; not mixed seasonings. For zeroCHO ingredients only,0g is a calculation sentinel: RETAIN the original recipe amount or original q.s. instruction; it does not mean remove the ingredient.",
+          "massRole": "ZERO_CHO_SENTINEL_RETAIN_ORIGINAL_AMOUNT"
+        },
+        {
+          "name": "sitruunamehu",
+          "grams": 15,
+          "compositionId": "11557",
+          "giId": "low50",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "vesi",
+          "grams": 50,
+          "compositionId": "922",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Literal pure salt/water only; not mixed seasonings. For zeroCHO ingredients only,0g is a calculation sentinel: RETAIN the original recipe amount or original q.s. instruction; it does not mean remove the ingredient."
+        }
+      ],
+      "preparationDecision": "Original blanch/drain spinach and simmer. Raw edible input proxy counts all source CHO conservatively; no guessed leaching factor. Paneer is unsweetened fresh animal dairy; kotijuusto is an explicit composition proxy, not identical product.",
+      "requiredDecisions": [
+        "EXACT_WEIGHED_VERSION",
+        "GK_ONLY_CONTRACT"
+      ],
+      "macroAction": "PRESERVE_ALL_CURRENT_VALUES_AND_WITHHOLDINGS",
+      "approval": false,
+      "confidence": "LOW",
+      "inputSha256": "550b8431881278672b6782e3d592ce34b49d38afb11bc1002822d42c4b7b0784"
+    },
+    {
+      "recipeId": "paneer-tikka",
+      "level": "A",
+      "servings": 4,
+      "paths": {
+        "fi": "reseptit/alkuruoat/paneer-tikka.md",
+        "en": "kaannokset/en/alkuruoat/paneer-tikka.md",
+        "sv": "kaannokset/sv/alkuruoat/paneer-tikka.md",
+        "th": "kaannokset/th/alkuruoat/paneer-tikka.md"
+      },
+      "recipeSha256": {
+        "fi": "146542a69bf1c0cfe8ed0f2cd8986600f8b7ccc5eaecdf07fab26b44e4f7d7a4",
+        "en": "35bef0830fd8d54dd1b9163467f8abc8d58057210f727e670b6804dd49ead340",
+        "sv": "4425d4d885913ccef6b838a4642b4ca89ebbf4fb56f89442a2058e18bfcfbf79",
+        "th": "99cccc0fda18d5868b30d4722dc8765b784f77d13f88bc75c19f6b65419c75bf"
+      },
+      "candidateIngredients": [
+        {
+          "name": "paneer; kotijuusto proxy",
+          "grams": 400,
+          "compositionId": "650",
+          "giId": "dairy30",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "punainen paprika",
+          "grams": 170,
+          "compositionId": "386",
+          "giId": "veg40",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "vihreä paprika",
+          "grams": 170,
+          "compositionId": "387",
+          "giId": "veg40",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "jogurtti",
+          "grams": 150,
+          "compositionId": "619",
+          "giId": "dairy30",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "sitruunamehu",
+          "grams": 15,
+          "compositionId": "11557",
+          "giId": "low50",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "garam masala",
+          "grams": 2,
+          "compositionId": "physical",
+          "giId": null,
+          "carbohydrateUse": "UPPER_BOUND",
+          "note": "Weighed candidate Physical mass ceiling only; neither exact available CHO nor polyol zero."
+        },
+        {
+          "name": "paprikajauhe",
+          "grams": 2,
+          "compositionId": "physical",
+          "giId": null,
+          "carbohydrateUse": "UPPER_BOUND",
+          "note": "Weighed candidate Physical mass ceiling only; neither exact available CHO nor polyol zero."
+        },
+        {
+          "name": "kurkuma",
+          "grams": 1,
+          "compositionId": "physical",
+          "giId": null,
+          "carbohydrateUse": "UPPER_BOUND",
+          "note": "Weighed candidate Physical mass ceiling only; neither exact available CHO nor polyol zero."
+        },
+        {
+          "name": "suola",
+          "grams": 0,
+          "compositionId": "30",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Literal pure salt/water only; not mixed seasonings. For zeroCHO ingredients only,0g is a calculation sentinel: RETAIN the original recipe amount or original q.s. instruction; it does not mean remove the ingredient.",
+          "massRole": "ZERO_CHO_SENTINEL_RETAIN_ORIGINAL_AMOUNT"
+        },
+        {
+          "name": "öljy",
+          "grams": 13.5,
+          "compositionId": "541",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        }
+      ],
+      "preparationDecision": "Specify oven230C10–14min on a tray and consume all marinade; no invented retained fraction. Peppers170g each edible. Optional mint chutney or extra lemon is outside this exact listed serving; must be identified on public card if later approved.",
+      "requiredDecisions": [
+        "EXACT_WEIGHED_VERSION",
+        "GK_ONLY_CONTRACT"
+      ],
+      "macroAction": "PRESERVE_ALL_CURRENT_VALUES_AND_WITHHOLDINGS",
+      "approval": false,
+      "confidence": "LOW",
+      "inputSha256": "dea9ab0c86285366cba8571a2d0eb14feb0d54c8ff2bf12fec28f7c786674944"
+    },
+    {
+      "recipeId": "kana-parmesaanipannu-parsakaali",
+      "level": "A",
+      "servings": 4,
+      "paths": {
+        "fi": "reseptit/paaruoat/kana-parmesaanipannu-parsakaali.md"
+      },
+      "recipeSha256": {
+        "fi": "e1d5cf315e47cd08c585cbb9b7b75b04fffbe159d4ae36d3be99526b844b0baa"
+      },
+      "candidateIngredients": [
+        {
+          "name": "rintafilee",
+          "grams": 500,
+          "compositionId": "11565",
+          "giId": "low50",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "parsakaali",
+          "grams": 300,
+          "compositionId": "324",
+          "giId": "veg40",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "kuohukerma38%",
+          "grams": 200,
+          "compositionId": "631",
+          "giId": "dairy30",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "parmesan",
+          "grams": 60,
+          "compositionId": "parmesan",
+          "giId": "dairy30",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "laimennettu kanaliemi",
+          "grams": 150,
+          "compositionId": "30315",
+          "giId": "low50",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "voi",
+          "grams": 14,
+          "compositionId": "500",
+          "giId": "dairy30",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "valkosipuli",
+          "grams": 2.8,
+          "compositionId": "393",
+          "giId": "veg40",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "suola",
+          "grams": 0,
+          "compositionId": "30",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Literal pure salt/water only; not mixed seasonings. For zeroCHO ingredients only,0g is a calculation sentinel: RETAIN the original recipe amount or original q.s. instruction; it does not mean remove the ingredient.",
+          "massRole": "ZERO_CHO_SENTINEL_RETAIN_ORIGINAL_AMOUNT"
+        },
+        {
+          "name": "mustapippuri",
+          "grams": 0.5,
+          "compositionId": "11177",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        }
+      ],
+      "preparationDecision": "Op146 weighed variant retained, including actual garlic-powder→fresh-garlic substitution decision. New GK-only evidence only; no old macro hash is attached. Broth retained in full.",
+      "requiredDecisions": [
+        "EXACT_WEIGHED_VERSION",
+        "GK_ONLY_CONTRACT",
+        "OP146_FRESH_GARLIC_VARIANT"
+      ],
+      "macroAction": "PRESERVE_ALL_CURRENT_VALUES_AND_WITHHOLDINGS",
+      "approval": false,
+      "confidence": "LOW",
+      "inputSha256": "2c84c860a6fcd3efaa3a82010da5ec9b926c05b26ad49d24235123e00a380eb7"
+    },
+    {
+      "recipeId": "kermainen-kanasienipannu",
+      "level": "A",
+      "servings": 4,
+      "paths": {
+        "fi": "reseptit/paaruoat/kermainen-kanasienipannu.md"
+      },
+      "recipeSha256": {
+        "fi": "f6b6f171feae82846d66325e1ff90866a78f158a9b6d5b36d51b30d7803ba7bf"
+      },
+      "candidateIngredients": [
+        {
+          "name": "paistileike",
+          "grams": 500,
+          "compositionId": "30792",
+          "giId": "low50",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "herkkusieni",
+          "grams": 250,
+          "compositionId": "345",
+          "giId": "low50",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "salottisipuli; onion proxy",
+          "grams": 25,
+          "compositionId": "335",
+          "giId": "veg40",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "kuohukerma38%",
+          "grams": 200,
+          "compositionId": "631",
+          "giId": "dairy30",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "laimennettu kanaliemi",
+          "grams": 150,
+          "compositionId": "30315",
+          "giId": "low50",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "French’s Dijon US32oz",
+          "grams": 15,
+          "compositionId": "dijon-cap",
+          "giId": null,
+          "carbohydrateUse": "UPPER_BOUND",
+          "note": "Rounded total carbohydrate ceiling used only for A omission; no zero assumed."
+        },
+        {
+          "name": "voi",
+          "grams": 14,
+          "compositionId": "500",
+          "giId": "dairy30",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "tuore timjami",
+          "grams": 3,
+          "compositionId": "physical",
+          "giId": null,
+          "carbohydrateUse": "UPPER_BOUND",
+          "note": "Whole weighed amount bounds retained CHO Physical mass ceiling only; neither exact available CHO nor polyol zero."
+        },
+        {
+          "name": "suola",
+          "grams": 0,
+          "compositionId": "30",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Literal pure salt/water only; not mixed seasonings. For zeroCHO ingredients only,0g is a calculation sentinel: RETAIN the original recipe amount or original q.s. instruction; it does not mean remove the ingredient.",
+          "massRole": "ZERO_CHO_SENTINEL_RETAIN_ORIGINAL_AMOUNT"
+        },
+        {
+          "name": "mustapippuri",
+          "grams": 0.5,
+          "compositionId": "11177",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        }
+      ],
+      "preparationDecision": "Op146 weighed25g shallot/3g thyme/French’s Dijon variant. All broth/sauce retained. Original macro values remain unchanged and are not evidence for this variant.",
+      "requiredDecisions": [
+        "EXACT_WEIGHED_VERSION",
+        "GK_ONLY_CONTRACT"
+      ],
+      "macroAction": "PRESERVE_ALL_CURRENT_VALUES_AND_WITHHOLDINGS",
+      "approval": false,
+      "confidence": "LOW",
+      "inputSha256": "ec40897d09ffa334435618b50d4debf1ded8151917bec31b0777b37de5e1c27c"
+    },
+    {
+      "recipeId": "vhh-pyttipannu",
+      "level": "A",
+      "servings": 4,
+      "paths": {
+        "fi": "reseptit/paaruoat/pyttipannu-vhh.md",
+        "en": "kaannokset/en/paaruoat/pyttipannu-vhh.md",
+        "sv": "kaannokset/sv/paaruoat/pyttipannu-vhh.md",
+        "th": "kaannokset/th/paaruoat/pyttipannu-vhh.md"
+      },
+      "recipeSha256": {
+        "fi": "26af9ddeded6d62ac3822aefece70d29d5e4df0e8d33468966a9e1bc16b34df5",
+        "en": "fbcdce364dbf0d9f9519cd968ae8dba5b592337b59a4dea550490a3e0c702afe",
+        "sv": "d0c25613ee5a145c08678cf9264f87bed75db2196b3f6bcc7ea7f84204dc9a04",
+        "th": "5247e65949b16af97d4ae33b13ce1145d1a2b3cdad48a878a01e90723464cca7"
+      },
+      "candidateIngredients": [
+        {
+          "name": "low-CHO sausage; boiled frankfurter proxy",
+          "grams": 300,
+          "compositionId": "7600",
+          "giId": "low50",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "kesäkurpitsa",
+          "grams": 250,
+          "compositionId": "389",
+          "giId": "veg40",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "lanttu",
+          "grams": 200,
+          "compositionId": "303",
+          "giId": "veg40",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "sipuli",
+          "grams": 55,
+          "compositionId": "335",
+          "giId": "veg40",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "voi",
+          "grams": 28,
+          "compositionId": "500",
+          "giId": "dairy30",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "kuoreton muna",
+          "grams": 220,
+          "compositionId": "858",
+          "giId": "low50",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "suola",
+          "grams": 0,
+          "compositionId": "30",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Literal pure salt/water only; not mixed seasonings. For zeroCHO ingredients only,0g is a calculation sentinel: RETAIN the original recipe amount or original q.s. instruction; it does not mean remove the ingredient.",
+          "massRole": "ZERO_CHO_SENTINEL_RETAIN_ORIGINAL_AMOUNT"
+        },
+        {
+          "name": "mustapippuri",
+          "grams": 1,
+          "compositionId": "11177",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "ruohosipuli",
+          "grams": 3,
+          "compositionId": "physical",
+          "giId": null,
+          "carbohydrateUse": "UPPER_BOUND",
+          "note": "Explicit weighed garnish Physical mass ceiling only; neither exact available CHO nor polyol zero."
+        }
+      ],
+      "preparationDecision": "Retain rutabaga/parboil/panfry; do not replace with celery. Specify sausage consistent with low-CHO frankfurter composition proxy1.162g available CHO/100g, not ring sausage7607. Proposed weighed recipe version needs owner acceptance.",
+      "requiredDecisions": [
+        "EXACT_WEIGHED_VERSION",
+        "GK_ONLY_CONTRACT"
+      ],
+      "macroAction": "PRESERVE_ALL_CURRENT_VALUES_AND_WITHHOLDINGS",
+      "approval": false,
+      "confidence": "LOW",
+      "inputSha256": "8faf4e3e441dfd2c014b7c54b9a32c4fd8e718bd1e7616f0d80f38ba99ea4a64"
+    },
+    {
+      "recipeId": "vhh-mansikkakakku",
+      "level": "A",
+      "servings": 10,
+      "paths": {
+        "fi": "reseptit/jalkiruoat/vhh-mansikkakakku.md"
+      },
+      "recipeSha256": {
+        "fi": "b0273164864447b2d117cbf22d4125d9f7281d7f7dbc0d57c7f2286cc62958fe"
+      },
+      "candidateIngredients": [
+        {
+          "name": "muna",
+          "grams": 220,
+          "compositionId": "858",
+          "giId": "low50",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "Foodin100%erytritoli",
+          "grams": 100,
+          "compositionId": "pure-erythritol",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Explicit product: declared total100g minus declared polyols100g once; not an unknown P0."
+        },
+        {
+          "name": "full-fat almond meal",
+          "grams": 120,
+          "compositionId": "F006077",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "leivinjauhe",
+          "grams": 4,
+          "compositionId": "F000247",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "kuohukerma38%",
+          "grams": 200,
+          "compositionId": "631",
+          "giId": "dairy30",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "rahka",
+          "grams": 150,
+          "compositionId": "622",
+          "giId": "dairy30",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "tuore mansikka",
+          "grams": 250,
+          "compositionId": "447",
+          "giId": "strawberry40",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "vaniljauute",
+          "grams": 4.2,
+          "compositionId": "F009350",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        }
+      ],
+      "preparationDecision": "Bake base175C22–26min; strawberries remain RAW in cooled filling, matching named human food. Almond meal is not assigned the nut-family GI. Vanilla4.2g and baking powder4g are explicit weighed definitions.",
+      "requiredDecisions": [
+        "EXACT_WEIGHED_VERSION",
+        "GK_ONLY_CONTRACT"
+      ],
+      "macroAction": "PRESERVE_ALL_CURRENT_VALUES_AND_WITHHOLDINGS",
+      "approval": false,
+      "confidence": "LOW",
+      "inputSha256": "ad411c771039328e0d0807b34303179e074767adbd750746d61a7da1ae060df0"
+    },
+    {
+      "recipeId": "vietnamilainen-pho-ga-aamuksi",
+      "level": "A",
+      "servings": 2,
+      "paths": {
+        "fi": "reseptit/aamupalat/vietnamilainen-pho-ga-aamuksi.md"
+      },
+      "recipeSha256": {
+        "fi": "350f8195cfdb010ed6e8180211d7c237078ce8493ef03d6efb786989189ad9e0"
+      },
+      "candidateIngredients": [
+        {
+          "name": "dry rice noodles",
+          "grams": 100,
+          "compositionId": "29055",
+          "giId": "noodle61",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "nahaton rintafilee",
+          "grams": 150,
+          "compositionId": "11565",
+          "giId": "low50",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "tuore inkivääri",
+          "grams": 2,
+          "compositionId": "33023",
+          "giId": "veg40",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "tähtianis",
+          "grams": 1,
+          "compositionId": "physical",
+          "giId": null,
+          "carbohydrateUse": "UPPER_BOUND",
+          "note": "Current listed1g whole spice; full amount CHO ceiling even if removed Physical mass ceiling only; neither exact available CHO nor polyol zero."
+        },
+        {
+          "name": "vesi",
+          "grams": 700,
+          "compositionId": "922",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Literal pure salt/water only; not mixed seasonings. For zeroCHO ingredients only,0g is a calculation sentinel: RETAIN the original recipe amount or original q.s. instruction; it does not mean remove the ingredient."
+        },
+        {
+          "name": "suola",
+          "grams": 0,
+          "compositionId": "30",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Literal pure salt/water only; not mixed seasonings. For zeroCHO ingredients only,0g is a calculation sentinel: RETAIN the original recipe amount or original q.s. instruction; it does not mean remove the ingredient.",
+          "massRole": "ZERO_CHO_SENTINEL_RETAIN_ORIGINAL_AMOUNT"
+        }
+      ],
+      "preparationDecision": "Keep current water-only recipe and breast meat, not stale broth/thigh mappings. Boil commercial dried rice noodles, serve hot. Entire1g anise is bounded; no guessed extraction or zero.",
+      "requiredDecisions": [
+        "EXACT_WEIGHED_VERSION",
+        "GK_ONLY_CONTRACT"
+      ],
+      "macroAction": "PRESERVE_ALL_CURRENT_VALUES_AND_WITHHOLDINGS",
+      "approval": false,
+      "confidence": "LOW",
+      "inputSha256": "d86363469e31f4bb5a69a947116795a0be97b4df6b7bf14002ae81ce919bc5e7"
+    },
+    {
+      "recipeId": "congee-riisipuuro",
+      "level": "B",
+      "servings": 4,
+      "paths": {
+        "fi": "reseptit/paaruoat/congee-riisipuuro.md",
+        "en": "kaannokset/en/paaruoat/congee-riisipuuro.md",
+        "sv": "kaannokset/sv/paaruoat/congee-riisipuuro.md",
+        "th": "kaannokset/th/paaruoat/congee-riisipuuro.md"
+      },
+      "recipeSha256": {
+        "fi": "1041166cfeaedda86d91d80ab89cd9ebd39b9abdeff0f8164fc5720389212fca",
+        "en": "46ada6867c640c12f20015c5872c515cc41bd5c7e8bc35b1a659d129062ae596",
+        "sv": "c9a439e4cdc4929171b0dea71e1c31e8ecc0a81ac9015358344a47dd776b782f",
+        "th": "0bacf8b258e8407b0d5b470158701515c9f927319271788080b9535f24d35e8c"
+      },
+      "candidateIngredients": [
+        {
+          "name": "kuiva jasmiiniriisi",
+          "grams": 200,
+          "compositionId": "F007682",
+          "giId": "congee80",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "laimennettu kanaliemi",
+          "grams": 2000,
+          "compositionId": "30315",
+          "giId": "low50",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "suola",
+          "grams": 0,
+          "compositionId": "30",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Literal pure salt/water only; not mixed seasonings. For zeroCHO ingredients only,0g is a calculation sentinel: RETAIN the original recipe amount or original q.s. instruction; it does not mean remove the ingredient.",
+          "massRole": "ZERO_CHO_SENTINEL_RETAIN_ORIGINAL_AMOUNT"
+        },
+        {
+          "name": "tuore inkivääri",
+          "grams": 6,
+          "compositionId": "33023",
+          "giId": "veg40",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "kevätsipuli",
+          "grams": 30,
+          "compositionId": "F006250",
+          "giId": "veg40",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "soijakastike commercial; AFCD proxy",
+          "grams": 36,
+          "compositionId": "F008065",
+          "giId": "low50",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "seesamiöljy",
+          "grams": 4.5,
+          "compositionId": "F006187",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "keitetty muna",
+          "grams": 110,
+          "compositionId": "8513",
+          "giId": "low50",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        }
+      ],
+      "preparationDecision": "Define spring onion30g and ginger6g weighed, soy sauce36g. Current60min simmered200g/2l porridge compared with named steamed40min31.6g/250ml jasmine porridge. Same hydrated rice-porridge form; different water/time may alter gelatinization. GI80 is reference analogy, not established final-recipe GI or bounded error.",
+      "requiredDecisions": [
+        "EXACT_WEIGHED_VERSION",
+        "GK_ONLY_CONTRACT",
+        "B_PREPARATION_ANALOGY"
+      ],
+      "macroAction": "PRESERVE_ALL_CURRENT_VALUES_AND_WITHHOLDINGS",
+      "approval": false,
+      "confidence": "LOW",
+      "inputSha256": "319b5cf68d5687f9b926ed51677881bb03f32fc460f5c046b4ff7658c0302811"
+    },
+    {
+      "recipeId": "valimerellinen-halloumi-tomaattileipa",
+      "level": "B",
+      "servings": 2,
+      "paths": {
+        "fi": "reseptit/aamupalat/valimerellinen-halloumi-tomaattileipa.md"
+      },
+      "recipeSha256": {
+        "fi": "53ff3eaf7cc57e6b4d4a2c7d2caf51a51dff926f99532fa069e598fb558a9e67"
+      },
+      "candidateIngredients": [
+        {
+          "name": "halloumi",
+          "grams": 150,
+          "compositionId": "33465",
+          "giId": "dairy30",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "tomaatti",
+          "grams": 100,
+          "compositionId": "352",
+          "giId": "veg40",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "vihreä oliivi",
+          "grams": 25,
+          "compositionId": "34972",
+          "giId": "low50",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "white wheat sourdough",
+          "grams": 100,
+          "compositionId": "F001537",
+          "giId": "bread54-77",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "öljy",
+          "grams": 13.5,
+          "compositionId": "541",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "suola",
+          "grams": 0,
+          "compositionId": "30",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Literal pure salt/water only; not mixed seasonings. For zeroCHO ingredients only,0g is a calculation sentinel: RETAIN the original recipe amount or original q.s. instruction; it does not mean remove the ingredient.",
+          "massRole": "ZERO_CHO_SENTINEL_RETAIN_ORIGINAL_AMOUNT"
+        }
+      ],
+      "preparationDecision": "Specify white wheat sourdough bread100g weighed BEFORE toasting, not rye/seed bread. AFCD white wheat sourdough as-sold composition proxy, all bread consumed. Two named sourdough wheat breads54/77 form comparator scenarios; target toasting, fermentation and composition uncertainty are not covered by those endpoints.",
+      "requiredDecisions": [
+        "EXACT_WEIGHED_VERSION",
+        "GK_ONLY_CONTRACT",
+        "B_NAMED_COMPARATOR_SCENARIOS",
+        "B_TOASTING_ANALOGY"
+      ],
+      "macroAction": "PRESERVE_ALL_CURRENT_VALUES_AND_WITHHOLDINGS",
+      "approval": false,
+      "confidence": "LOW",
+      "inputSha256": "4beb505ecb977e282f23d82923755e13af70d0387b8270ea7e215207be248547"
+    },
+    {
+      "recipeId": "jauheliha-makaronilaatikko",
+      "level": "B",
+      "servings": 8,
+      "paths": {
+        "fi": "reseptit/paaruoat/jauheliha-makaronilaatikko.md",
+        "en": "kaannokset/en/paaruoat/jauheliha-makaronilaatikko.md",
+        "sv": "kaannokset/sv/paaruoat/jauheliha-makaronilaatikko.md",
+        "th": "kaannokset/th/paaruoat/jauheliha-makaronilaatikko.md"
+      },
+      "recipeSha256": {
+        "fi": "29d29a7faeff8029b9700b1d21f3e14bde10bedae2988112987437eee4e98eba",
+        "en": "d8fc6f54f046ba93fec9db4f7708e5e3706047caa2ff5855e470b32fbbe0eef2",
+        "sv": "b27d56f56715d6f32931edd09504227000be6e8fd6ca812643780142359cff73",
+        "th": "51cf5332c5dfb29663707577375aeccba637e706eb4d6e9de4376de0ac1e00aa"
+      },
+      "candidateIngredients": [
+        {
+          "name": "dry durum macaroni",
+          "grams": 400,
+          "compositionId": "117",
+          "giId": "pasta47-49",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "jauheliha7%; beef composition proxy",
+          "grams": 600,
+          "compositionId": "11562",
+          "giId": "low50",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "sipuli",
+          "grams": 70,
+          "compositionId": "335",
+          "giId": "veg40",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "öljy",
+          "grams": 13.5,
+          "compositionId": "541",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "raejuusto",
+          "grams": 500,
+          "compositionId": "649",
+          "giId": "dairy30",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "muna",
+          "grams": 330,
+          "compositionId": "858",
+          "giId": "low50",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "kevytmaito",
+          "grams": 200,
+          "compositionId": "684",
+          "giId": "dairy30",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "ruokakerma15%",
+          "grams": 200,
+          "compositionId": "29065",
+          "giId": "dairy30",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "emmental",
+          "grams": 300,
+          "compositionId": "642",
+          "giId": "dairy30",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "valkosipulijauhe",
+          "grams": 3,
+          "compositionId": "physical",
+          "giId": "trace50",
+          "carbohydrateUse": "UPPER_BOUND",
+          "note": "Source-independent full3g mass bound Physical mass ceiling only; neither exact available CHO nor polyol zero."
+        },
+        {
+          "name": "mustapippuri",
+          "grams": 1,
+          "compositionId": "11177",
+          "giId": "trace50",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "paprikajauhe",
+          "grams": 2,
+          "compositionId": "F006316",
+          "giId": "trace50",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "suola",
+          "grams": 0,
+          "compositionId": "30",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Literal pure salt/water only; not mixed seasonings. For zeroCHO ingredients only,0g is a calculation sentinel: RETAIN the original recipe amount or original q.s. instruction; it does not mean remove the ingredient.",
+          "massRole": "ZERO_CHO_SENTINEL_RETAIN_ORIGINAL_AMOUNT"
+        }
+      ],
+      "preparationDecision": "Drain hot durum macaroni before baking in egg/dairy. Named penne/spaghetti comparators preserve extruded durum matrix but differ in shape and oven hydration; no source quantifies final casserole GI. LOW reference model47–49 only, not full uncertainty bounds. Ground spices included, not omitted; garlic powder availableCHO0–3g is physical mass bound, never an exact3gCHO claim.",
+      "requiredDecisions": [
+        "EXACT_WEIGHED_VERSION",
+        "GK_ONLY_CONTRACT",
+        "B_OVEN_PASTA_ANALOGY",
+        "B_TRACE_CODING50"
+      ],
+      "macroAction": "PRESERVE_ALL_CURRENT_VALUES_AND_WITHHOLDINGS",
+      "approval": false,
+      "confidence": "LOW",
+      "inputSha256": "187c6663c8f170bcc5717b6ea3326571f0f635312513656385b88a59ce46ee9d"
+    },
+    {
+      "recipeId": "japanilainen-kabocha-puuro",
+      "level": "B",
+      "servings": 2,
+      "paths": {
+        "fi": "reseptit/aamupalat/japanilainen-kabocha-puuro.md"
+      },
+      "recipeSha256": {
+        "fi": "9adaae1694bb45b1664113eab4a30e8aeba99e55848d163594c5af9c2f1ed418"
+      },
+      "candidateIngredients": [
+        {
+          "name": "peeled butternut squash raw input",
+          "grams": 250,
+          "compositionId": "F007535",
+          "giId": "pumpkin51",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "dry jasmine rice",
+          "grams": 100,
+          "compositionId": "F007682",
+          "giId": "congee80",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "unsweetened coconut milk",
+          "grams": 200,
+          "compositionId": "29014",
+          "giId": "plant50",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "black sesame seed garnish",
+          "grams": 5,
+          "compositionId": "385",
+          "giId": "trace50",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "vesi",
+          "grams": 700,
+          "compositionId": "922",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Literal pure salt/water only; not mixed seasonings. For zeroCHO ingredients only,0g is a calculation sentinel: RETAIN the original recipe amount or original q.s. instruction; it does not mean remove the ingredient."
+        },
+        {
+          "name": "suola",
+          "grams": 0,
+          "compositionId": "30",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Literal pure salt/water only; not mixed seasonings. For zeroCHO ingredients only,0g is a calculation sentinel: RETAIN the original recipe amount or original q.s. instruction; it does not mean remove the ingredient.",
+          "massRole": "ZERO_CHO_SENTINEL_RETAIN_ORIGINAL_AMOUNT"
+        }
+      ],
+      "preparationDecision": "Current already-standardized peeled butternut version, not kabocha interchangeability. Specify jasmine rice; simmer into hot porridge, pumpkin cooked. Human boiled-butternut source and named jasmine porridge analogy; new coconut coding50 is not coconut measuredGI31.5g sesame included.",
+      "requiredDecisions": [
+        "EXACT_WEIGHED_VERSION",
+        "GK_ONLY_CONTRACT",
+        "B_PREPARATION_ANALOGY",
+        "B_PLANT_CODING50",
+        "B_TRACE_CODING50"
+      ],
+      "macroAction": "PRESERVE_ALL_CURRENT_VALUES_AND_WITHHOLDINGS",
+      "approval": false,
+      "confidence": "LOW",
+      "inputSha256": "21d63fbd8ffc34eac80f1a6fac3b4420eb331649088ae2e66babdb5d22cafbe4"
+    },
+    {
+      "recipeId": "malesialainen-laksa-lemak-aamiaiseksi",
+      "level": "B",
+      "servings": 2,
+      "paths": {
+        "fi": "reseptit/aamupalat/malesialainen-laksa-lemak-aamiaiseksi.md"
+      },
+      "recipeSha256": {
+        "fi": "9f5463c5eba3224d89ca5a7af7adece0bb8359d222edab33d126cea6da537d4e"
+      },
+      "candidateIngredients": [
+        {
+          "name": "dry rice noodles",
+          "grams": 100,
+          "compositionId": "29055",
+          "giId": "noodle61",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "unsweetened coconut milk",
+          "grams": 200,
+          "compositionId": "29014",
+          "giId": "plant50",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "firm tofu",
+          "grams": 100,
+          "compositionId": "F009176",
+          "giId": "low50",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "raw mung sprouts; bean-sprout composition proxy",
+          "grams": 150,
+          "compositionId": "F008806",
+          "giId": "veg40",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "diluted chicken stock",
+          "grams": 700,
+          "compositionId": "30315",
+          "giId": "low50",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "curry powder",
+          "grams": 2,
+          "compositionId": "F003337",
+          "giId": "low50",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "suola",
+          "grams": 0,
+          "compositionId": "30",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Literal pure salt/water only; not mixed seasonings. For zeroCHO ingredients only,0g is a calculation sentinel: RETAIN the original recipe amount or original q.s. instruction; it does not mean remove the ingredient.",
+          "massRole": "ZERO_CHO_SENTINEL_RETAIN_ORIGINAL_AMOUNT"
+        }
+      ],
+      "preparationDecision": "Current mild coconut-curry noodle broth has no curry amount in structured ingredients. PROPOSE2g curry powder as a separately approved completion of that existing curry instruction, not an inherited exact recipe. Choose original permitted chicken-broth alternative; noodles boiled hot, all broth retained; safely heat sprouts through. No curry-paste source is substituted. Requires owner acceptance of added weighed spice and new macro/version compatibility.",
+      "requiredDecisions": [
+        "EXACT_WEIGHED_VERSION",
+        "GK_ONLY_CONTRACT",
+        "ADD_MISSING_CURRY_2G",
+        "B_PLANT_CODING50"
+      ],
+      "macroAction": "PRESERVE_ALL_CURRENT_VALUES_AND_WITHHOLDINGS",
+      "approval": false,
+      "confidence": "LOW",
+      "inputSha256": "0670b3b3f5b45e9adc0838b19695fb7ea8a0673f09f7f78625a58a3c2d07c9a7"
+    },
+    {
+      "recipeId": "malesialainen-kaya-paahtoleipa",
+      "level": "B",
+      "servings": 2,
+      "paths": {
+        "fi": "reseptit/aamupalat/malesialainen-kaya-paahtoleipa.md"
+      },
+      "recipeSha256": {
+        "fi": "9ed7ae702fd399d11e8487c838343828207c2c6c064ba1b221514efe515f12bf"
+      },
+      "candidateIngredients": [
+        {
+          "name": "white wheat sourdough before toasting",
+          "grams": 100,
+          "compositionId": "F001537",
+          "giId": "bread54-77",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "egg for kaya",
+          "grams": 55,
+          "compositionId": "858",
+          "giId": "low50",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "voi",
+          "grams": 10,
+          "compositionId": "500",
+          "giId": "dairy30",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "oil",
+          "grams": 13.5,
+          "compositionId": "541",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "unsweetened coconut milk",
+          "grams": 100,
+          "compositionId": "29014",
+          "giId": "plant50",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "egg to serve",
+          "grams": 55,
+          "compositionId": "858",
+          "giId": "low50",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "sucrose",
+          "grams": 20,
+          "compositionId": "1",
+          "giId": "sucrose60",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "suola",
+          "grams": 0,
+          "compositionId": "30",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Literal pure salt/water only; not mixed seasonings. For zeroCHO ingredients only,0g is a calculation sentinel: RETAIN the original recipe amount or original q.s. instruction; it does not mean remove the ingredient.",
+          "massRole": "ZERO_CHO_SENTINEL_RETAIN_ORIGINAL_AMOUNT"
+        }
+      ],
+      "preparationDecision": "Current homemade egg/coconut/sucrose kaya version, not commercial kaya. Consume entire listed kaya batch over two portions;100g bread weighed BEFORE toasting. No retention guessed. Cook kaya egg mixture safely; bread54/77 comparator foods were different loaves, not an established toasted-bread GI bound. All sugar is included, none removed to lower GK.",
+      "requiredDecisions": [
+        "EXACT_WEIGHED_VERSION",
+        "GK_ONLY_CONTRACT",
+        "B_TOASTING_ANALOGY",
+        "B_PLANT_CODING50",
+        "WHOLE_KAYA_BATCH_CONSUMED"
+      ],
+      "macroAction": "PRESERVE_ALL_CURRENT_VALUES_AND_WITHHOLDINGS",
+      "approval": false,
+      "confidence": "LOW",
+      "inputSha256": "7bd9afa3bc3b47c305347d30d120db5ebbf0dbb5cfa41d58bdf83cb8ce30d939"
+    },
+    {
+      "recipeId": "rahkapiirakka-vhh",
+      "level": "A",
+      "servings": 8,
+      "paths": {
+        "fi": "reseptit/jalkiruoat/rahkapiirakka-vhh.md",
+        "en": "kaannokset/en/jalkiruoat/rahkapiirakka-vhh.md",
+        "sv": "kaannokset/sv/jalkiruoat/rahkapiirakka-vhh.md",
+        "th": "kaannokset/th/jalkiruoat/rahkapiirakka-vhh.md"
+      },
+      "recipeSha256": {
+        "fi": "e902035d36263b4ad41d337d5fed8283d76e8fffcbfc87c28d53076c075dfdab",
+        "en": "0d59fbd2686f79313ee9bc6a24f05462697624d6ad140f5aaa1e8771ddca2da5",
+        "sv": "40c0ef53558fc13087049e20f7edab483dcd4f4fcc2ff0bbf5296aead6a71d17",
+        "th": "edf8149c704e36acc46074d99cc0bb43195e8a28f5dbd1f327081d753ac46645"
+      },
+      "candidateIngredients": [
+        {
+          "name": "almond meal",
+          "grams": 150,
+          "compositionId": "F006077",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "voi",
+          "grams": 75,
+          "compositionId": "500",
+          "giId": "dairy30",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "muna",
+          "grams": 55,
+          "compositionId": "858",
+          "giId": "low50",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "rahka",
+          "grams": 300,
+          "compositionId": "622",
+          "giId": "dairy30",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "muna",
+          "grams": 110,
+          "compositionId": "858",
+          "giId": "low50",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "kerma",
+          "grams": 100,
+          "compositionId": "631",
+          "giId": "dairy30",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "Foodin100%erytritoli",
+          "grams": 24,
+          "compositionId": "pure-erythritol",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Explicit product: declared total100g minus declared polyols100g once; not an unknown P0."
+        },
+        {
+          "name": "vanilja",
+          "grams": 4.2,
+          "compositionId": "F009350",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        }
+      ],
+      "preparationDecision": "AFCD full-fat almond meal5.4g available CHO/100g, same source as all other pilot almond cases. Omission threshold not relaxed. No old macro evidence inherited.",
+      "requiredDecisions": [
+        "EXACT_WEIGHED_VERSION",
+        "GK_ONLY_CONTRACT"
+      ],
+      "macroAction": "PRESERVE_ALL_CURRENT_VALUES_AND_WITHHOLDINGS",
+      "approval": false,
+      "confidence": "LOW",
+      "inputSha256": "666565f98bd77f8b928ff9fa2211ee02defcb3177b0f8793d2e36dc8863fbe2f"
+    },
+    {
+      "recipeId": "vhh-lihapiirakka",
+      "level": "A",
+      "servings": 8,
+      "paths": {
+        "fi": "reseptit/leivonnaiset/vhh-lihapiirakka.md",
+        "en": "kaannokset/en/leivonnaiset/vhh-lihapiirakka.md",
+        "sv": "kaannokset/sv/leivonnaiset/vhh-lihapiirakka.md",
+        "th": "kaannokset/th/leivonnaiset/vhh-lihapiirakka.md"
+      },
+      "recipeSha256": {
+        "fi": "8b5071d4c6b08847a0855b630b34ee55471ed00cf6f61b9687e25f56f3ec96a9",
+        "en": "3f84792d315d1c776d1950315ab31f95e8ca758d301941b4c26572aeb455f382",
+        "sv": "a35548f0de989043e0fb4343604b1f5a204e623bc196c1c4fcf6961ece6c9d83",
+        "th": "af630b9bbadaba263f72f990588cd0fcfaa4a6a87096040920f18136e9284952"
+      },
+      "candidateIngredients": [
+        {
+          "name": "almond meal",
+          "grams": 200,
+          "compositionId": "F006077",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "juusto",
+          "grams": 150,
+          "compositionId": "655",
+          "giId": "dairy30",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "tuorejuusto",
+          "grams": 100,
+          "compositionId": "11571",
+          "giId": "dairy30",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "muna",
+          "grams": 110,
+          "compositionId": "858",
+          "giId": "low50",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "jauheliha",
+          "grams": 300,
+          "compositionId": "11562",
+          "giId": "low50",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "sipuli",
+          "grams": 55,
+          "compositionId": "335",
+          "giId": "veg40",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "suola",
+          "grams": 0,
+          "compositionId": "30",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Literal pure salt/water only; not mixed seasonings. For zeroCHO ingredients only,0g is a calculation sentinel: RETAIN the original recipe amount or original q.s. instruction; it does not mean remove the ingredient.",
+          "massRole": "ZERO_CHO_SENTINEL_RETAIN_ORIGINAL_AMOUNT"
+        },
+        {
+          "name": "pippuri",
+          "grams": 1,
+          "compositionId": "11177",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        }
+      ],
+      "preparationDecision": "AFCD full-fat almond meal5.4g available CHO/100g, same source as all other pilot almond cases. Omission threshold not relaxed. No old macro evidence inherited.",
+      "requiredDecisions": [
+        "EXACT_WEIGHED_VERSION",
+        "GK_ONLY_CONTRACT"
+      ],
+      "macroAction": "PRESERVE_ALL_CURRENT_VALUES_AND_WITHHOLDINGS",
+      "approval": false,
+      "confidence": "LOW",
+      "inputSha256": "369477bbfd9f951a96986f0ce30b3c1f0bd0299de8b7e14ec3448c35d72f544a"
+    },
+    {
+      "recipeId": "keto-korvapuustit",
+      "level": "A",
+      "servings": 8,
+      "paths": {
+        "fi": "reseptit/leivonnaiset/keto-korvapuustit.md",
+        "en": "kaannokset/en/leivonnaiset/keto-korvapuustit.md",
+        "sv": "kaannokset/sv/leivonnaiset/keto-korvapuustit.md",
+        "th": "kaannokset/th/leivonnaiset/keto-korvapuustit.md"
+      },
+      "recipeSha256": {
+        "fi": "84f4ef23369a64393f922fd5df3f22079ca56ddcd8e5963d2d5484542252ba24",
+        "en": "50303e30972f3cdcab3e2bc1a5a7e97157d9aed14c984f660c5d7855a645ec91",
+        "sv": "b4b9a5d514aa41a250ccd66c540da8e501f980050d08dadc55371a6ea0146bf4",
+        "th": "2c60da0b9d4e5064d55cc6162c920f8b829a948cf31b2b7321973ad7fef6d1dc"
+      },
+      "candidateIngredients": [
+        {
+          "name": "almond meal",
+          "grams": 200,
+          "compositionId": "F006077",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "mozzarella",
+          "grams": 150,
+          "compositionId": "29239",
+          "giId": "dairy30",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "tuorejuusto",
+          "grams": 100,
+          "compositionId": "11571",
+          "giId": "dairy30",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "muna",
+          "grams": 55,
+          "compositionId": "858",
+          "giId": "low50",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "Foodin100%erytritoli",
+          "grams": 24,
+          "compositionId": "pure-erythritol",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Explicit product: declared total100g minus declared polyols100g once; not an unknown P0."
+        },
+        {
+          "name": "kaneli",
+          "grams": 2.6,
+          "compositionId": "F002963",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        },
+        {
+          "name": "voi",
+          "grams": 30,
+          "compositionId": "500",
+          "giId": "dairy30",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weighed candidate input; all listed amount consumed. No universal volume density; regional food-specific composition proxy."
+        }
+      ],
+      "preparationDecision": "AFCD full-fat almond meal5.4g available CHO/100g, same source as all other pilot almond cases. Omission threshold not relaxed. No old macro evidence inherited.",
+      "requiredDecisions": [
+        "EXACT_WEIGHED_VERSION",
+        "GK_ONLY_CONTRACT"
+      ],
+      "macroAction": "PRESERVE_ALL_CURRENT_VALUES_AND_WITHHOLDINGS",
+      "approval": false,
+      "confidence": "LOW",
+      "inputSha256": "f793b85cbdbef2459c380db606d68c99e0afd0d1e58a7b1df814c96dad984d94"
+    }
+  ]
+}

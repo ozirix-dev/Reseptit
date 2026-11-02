@@ -1,3 +1,5 @@
+import {gkOnlyVariants,gkVersionCoverage} from '@/generated/gk-only-variants.generated';
+import {GkOnlyVariantPanel,gkOnlyUi,gkScopeUi} from '../recipes/GkOnlyVariantPanel';
 import {scopedPolyolDisclosure} from '../recipes/scoped-polyol-disclosure';
 import {recoveryDisclosure} from '../recipes/recovery-disclosure';
 import {formatGlycemicLoadNumber} from '../recipes/gk80-format';
@@ -53,7 +55,7 @@ const sources = [
 export function GlycemicLoadPilotPage() {
   const locale = recipeLocaleFromPath(useLocation().pathname);
   const text = copy[locale];
-  const calculated = glycemicLoadPilotResults.filter((result) => result.status === "CALCULATED");
+
   const numberLocale = { fi: "fi-FI", en: "en-GB", sv: "sv-SE", th: "th-TH" }[locale];
   const number = new Intl.NumberFormat(numberLocale, { maximumSignificantDigits: 1, minimumSignificantDigits: 1 });
   const modelled = { fi: "Mallinnettu", en: "Modeled", sv: "Modellerad", th: "ค่าประมาณจากแบบจำลอง" }[locale];
@@ -66,9 +68,10 @@ export function GlycemicLoadPilotPage() {
       <header className="page-intro glycemic-pilot__intro"><p className="eyebrow">{text.eyebrow}</p><h1>{text.title}</h1><p className="page-intro__description">{text.intro}</p></header>
       <div className="glycemic-pilot__summary" aria-label={text.summary}>
         <article><strong>{glycemicLoadPilotReviewedRecipeCount}</strong><span>{text.total}</span></article>
-        <article><strong>{calculated.length}</strong><span>{text.done}</span></article>
-        <article><strong>{glycemicLoadPilotReviewedRecipeCount - calculated.length}</strong><span>{text.pending}</span></article>
+        <article data-gk-coverage="original"><strong>{gkVersionCoverage.originalNumeric}</strong><span>{gkScopeUi[locale].originalCoverage}</span></article>
+        <article><strong>{gkVersionCoverage.total-gkVersionCoverage.originalNumeric}</strong><span>{gkScopeUi[locale].originalMissing}</span></article>
       </div>
+      <section className="glycemic-pilot__method" id="gk-only-method"><h2>{gkOnlyUi[locale].title}</h2><p>{gkOnlyUi[locale].methodText}</p><ul data-gk-coverage="version-aware"><li><strong>{gkVersionCoverage.numericRecipes}</strong> / {gkVersionCoverage.total} — {gkOnlyUi[locale].coverage}</li><li>A: {gkVersionCoverage.originalNumeric+gkVersionCoverage.additionalA} — {gkOnlyUi[locale].aCount}</li><li>B: {gkVersionCoverage.additionalB} — {gkOnlyUi[locale].bCount}</li><li>C: {gkVersionCoverage.classOnly} — {gkOnlyUi[locale].cCount}</li><li><strong>{gkVersionCoverage.missing}</strong> — {gkScopeUi[locale].versionMissing}</li></ul></section>
       <section className="glycemic-pilot__method" aria-labelledby="glycemic-pilot-method">
         <h2 id="glycemic-pilot-method">{text.method}</h2><p><strong>{text.formula}</strong></p><p>{text.fineli}</p><p>{text.gi}</p><p>{text.interpretation}</p><p data-method="gk80-modelled">{modelledMethod[locale]}</p>
         <h3>{text.sources}</h3><ul className="glycemic-pilot__sources">{sources.map(([title, url]) => <li key={url}><a href={url} rel="noopener noreferrer">{title}</a></li>)}</ul>
@@ -78,6 +81,8 @@ export function GlycemicLoadPilotPage() {
         <ol>{glycemicLoadPilotResults.map((result) => {
           const localized = result.localeRoutes[locale] ?? result.localeRoutes.fi;
           const confidence = result.confidence === "HIGH" ? text.high : result.confidence === "MEDIUM" ? text.medium : text.low;
+          const variant=gkOnlyVariants.find(v=>v.recipeId===result.recipeId);
+          if(variant)return <li key={result.recipeId} id={result.recipeId} className="glycemic-pilot__recipe"><h3><Link to={localized?.routePath??result.routePath}>{localized?.title??result.title}</Link></h3><GkOnlyVariantPanel variant={variant} locale={locale} compact /></li>;
           return <li key={result.recipeId} id={result.recipeId} className="glycemic-pilot__recipe">
             <h3><Link to={localized?.routePath ?? result.routePath}>{localized?.title ?? result.title}</Link></h3>
             {result.status === "CALCULATED" ? <><p><strong>{text.value}: {result.recipeId === "massaman-curry-kanalla-vhh" ? `${text.about} 5–6 ${text.perServing}` : formatValue(result)}</strong> · {text.confidence}: {confidence}</p>{result.omittedAvailableCarbohydratePerServingG > 0 ? <p>{omissionCopy[locale](number.format(result.omittedAvailableCarbohydratePerServingG))}</p> : null}

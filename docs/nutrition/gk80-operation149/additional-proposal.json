@@ -1,0 +1,108 @@
+{
+  "status": "NUMERIC_PROPOSAL_AWAITING_OWNER_AND_RELEASE_REVIEW",
+  "publicActivation": false,
+  "includedIn172": false,
+  "recipeId": "vietnamilainen-kahvijogurtti-banaanilla",
+  "recipeLfSha256": "73b5dbb717f3833c8354f1fcdfa0fdd86ca78a342d50625881133e44b3aba0e3",
+  "servings": 2,
+  "level": "A_PROPOSED",
+  "confidence": "LOW",
+  "pointExact": "10.918125",
+  "displayApprox": "10.92",
+  "omittedAvailableChoPerServing": "0.3",
+  "macroScope": "NO_MACRO_PACKAGE_FOR_THIS_VERSION",
+  "ingredients": [
+    {
+      "sourceId": "620",
+      "source": "Fineli",
+      "nativeRowSha256": "906621326c5465e2170cf98b5c86230ab5b36dfd6d86f3de4a4f329d3ac0334a",
+      "gramsForTwoServings": 100,
+      "availablePer100g": 3.4,
+      "availablePerServing": "1.7",
+      "gi": 30,
+      "contributionPerServing": "0.51",
+      "nativeField": "per100g.available_carbohydrate_g_per_100g",
+      "polyols": "UNKNOWN_OR_UNUSED; never inferred from equal AFCD fields"
+    },
+    {
+      "sourceId": "930",
+      "source": "Fineli",
+      "nativeRowSha256": "f2cbbe78b25c378f25700c3b4aea47d32b03549b53744c1417c9f78ee6e66df1",
+      "gramsForTwoServings": 200,
+      "availablePer100g": 0.3,
+      "availablePerServing": "0.3",
+      "gi": null,
+      "contributionPerServing": null,
+      "nativeField": "per100g.available_carbohydrate_g_per_100g",
+      "polyols": "UNKNOWN_OR_UNUSED; never inferred from equal AFCD fields"
+    },
+    {
+      "sourceId": "11049",
+      "source": "Fineli",
+      "nativeRowSha256": "fb394eafe246cf8681652836fa9441353451e9fdb1291d5c1d457580bf89c942",
+      "gramsForTwoServings": 125,
+      "availablePer100g": 18.3,
+      "availablePerServing": "11.4375",
+      "gi": 47,
+      "contributionPerServing": "5.375625",
+      "nativeField": "per100g.available_carbohydrate_g_per_100g",
+      "polyols": "UNKNOWN_OR_UNUSED; never inferred from equal AFCD fields"
+    },
+    {
+      "sourceId": "F005582",
+      "source": "AFCD",
+      "nativeRowSha256": "0a92451e2256b6b9da83a3201972ca933f84e3a9f116b09d52b3272ac079602a",
+      "gramsForTwoServings": 30,
+      "availablePer100g": 55,
+      "availablePerServing": "8.25",
+      "gi": 61,
+      "contributionPerServing": "5.0325",
+      "nativeField": "available_carbohydrate_without_sugar_alcohols_g_per_100g",
+      "polyols": "UNKNOWN_OR_UNUSED; never inferred from equal AFCD fields"
+    }
+  ],
+  "exactVersion": "100g plain unsweetened Bulgarian-style yogurt3.9%; 200ml brewed filter coffee, Fineli100g/dl;125g edible raw ordinary banana, not overripe;30g regular sweetened condensed cow milk. Entire mixture consumed in two servings. No recipe ingredient removed.",
+  "giEvidence": [
+    {
+      "ingredient": "sweetened condensed milk",
+      "table": 1,
+      "page": 63,
+      "item": 936,
+      "gi": 61,
+      "sem": 6,
+      "healthySubjects": 11,
+      "reference": "glucose2h",
+      "source": "Nestle Australia2000, ref74; Australian product analogue, not measured generic condensed milk."
+    },
+    {
+      "ingredient": "raw banana",
+      "table": 1,
+      "page": 73,
+      "item": 1088,
+      "gi": 47,
+      "sem": 5,
+      "healthySubjects": 10,
+      "reference": "glucose2h",
+      "source": "Australia2008, UO5; ordinary raw banana analogue, cultivar/ripeness and origin uncertainty remain."
+    },
+    {
+      "ingredient": "plain yogurt",
+      "record": "op142-dairy-imputation30",
+      "gi": 30,
+      "source": "Existing project low-carbohydrate dairy assignment; application to unsweetened Fineli620 is a proposed explicit binding, not a measured yogurt GI."
+    }
+  ],
+  "giSourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+  "reviewedSourcePdfSha256": "e930c4a090697abd4f7331a64837b524cf4701513cbb9865a739f4f9fb131061",
+  "sourceVerification": "Table1 pages63 and73 rendered and visually checked; selected factual rows transcribed. No GI category mean, no SEM used as recipe interval.",
+  "remainingReview": [
+    "Owner approval for this exact weighed version and the explicit Fineli620 dairy30 binding",
+    "Four-language publication copy and normal integration checks before activation"
+  ],
+  "limitations": [
+    "Ingredient sum is not measured mixed-meal response.",
+    "Coffee availableCHO0.3g/serving is omitted by existing A thresholds; its effect is not assumed zero.",
+    "No AFCD total-polyol claim or parent macro inheritance.",
+    "Neither cultivar nor brand variability is represented by a biological interval."
+  ]
+}

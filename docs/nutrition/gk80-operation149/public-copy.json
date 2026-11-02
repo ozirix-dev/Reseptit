@@ -1,0 +1,532 @@
+{
+  "schemaVersion": 1,
+  "translationReview": "AUTOMATED_TRANSLATION_DRAFT_REQUIRES_RELEASE_REVIEW",
+  "ingredientNames": {
+    "pure-erythritol": {
+      "fi": "Foodin-erytritolia (100 %)",
+      "en": "Foodin erythritol (100%)",
+      "sv": "Foodin erytritol (100 %)",
+      "th": "อิริทริทอล Foodin บริสุทธิ์ 100%"
+    },
+    "parmesan": {
+      "fi": "parmesaania",
+      "en": "Parmesan",
+      "sv": "parmesan",
+      "th": "พาร์เมซาน"
+    },
+    "dijon-cap": {
+      "fi": "French’s Dijon US 32 oz -sinappia",
+      "en": "French’s Dijon US 32 oz mustard",
+      "sv": "French’s Dijon US 32 oz-senap",
+      "th": "มัสตาร์ด French’s Dijon US 32 oz"
+    },
+    "F009837": {
+      "fi": "tummaa suklaata, ei lisättyä sokeria",
+      "en": "dark chocolate, no added sugar",
+      "sv": "mörk choklad utan tillsatt socker",
+      "th": "ดาร์กช็อกโกแลตไม่เติมน้ำตาล"
+    },
+    "500": {
+      "fi": "voita",
+      "en": "butter",
+      "sv": "smör",
+      "th": "เนย"
+    },
+    "858": {
+      "fi": "kuoretonta kananmunaa",
+      "en": "egg without shell",
+      "sv": "ägg utan skal",
+      "th": "ไข่ไม่รวมเปลือก"
+    },
+    "F006077": {
+      "fi": "täysrasvaista mantelijauhoa, ei rasvattomaksi puristettua",
+      "en": "full-fat almond meal, not defatted flour",
+      "sv": "fullfett mandelmjöl, inte avfettat",
+      "th": "อัลมอนด์บดแบบมีไขมัน ไม่ใช่แป้งสกัดไขมัน"
+    },
+    "20": {
+      "fi": "makeuttamatonta kaakaojauhetta",
+      "en": "unsweetened cocoa powder",
+      "sv": "osötat kakaopulver",
+      "th": "ผงโกโก้ไม่หวาน"
+    },
+    "F009350": {
+      "fi": "vaniljauutetta",
+      "en": "vanilla extract",
+      "sv": "vaniljextrakt",
+      "th": "วานิลลาสกัด"
+    },
+    "922": {
+      "fi": "vettä",
+      "en": "water",
+      "sv": "vatten",
+      "th": "น้ำ"
+    },
+    "30": {
+      "fi": "suolaa",
+      "en": "salt",
+      "sv": "salt",
+      "th": "เกลือ"
+    },
+    "F000247": {
+      "fi": "leivinjauhetta",
+      "en": "baking powder",
+      "sv": "bakpulver",
+      "th": "ผงฟู"
+    },
+    "11571": {
+      "fi": "maustamatonta tuorejuustoa, rasvaa 11 %",
+      "en": "plain cream cheese, 11% fat",
+      "sv": "naturell färskost, 11 % fett",
+      "th": "ครีมชีสรสธรรมชาติ ไขมัน 11%"
+    },
+    "630": {
+      "fi": "smetanaa, rasvaa noin 40 %",
+      "en": "smetana, about 40% fat",
+      "sv": "smetana, cirka 40 % fett",
+      "th": "สเมตานา ไขมันประมาณ 40%"
+    },
+    "11557": {
+      "fi": "sitruunamehua",
+      "en": "lemon juice",
+      "sv": "citronsaft",
+      "th": "น้ำเลมอน"
+    },
+    "33456": {
+      "fi": "tuoretta pinaattia",
+      "en": "fresh spinach",
+      "sv": "färsk spenat",
+      "th": "ผักโขมสด"
+    },
+    "650": {
+      "fi": "makeuttamatonta paneer-juustoa",
+      "en": "unsweetened paneer cheese",
+      "sv": "osötad paneerost",
+      "th": "ชีสพานีร์ไม่หวาน"
+    },
+    "335": {
+      "fi": "kuorittua sipulia",
+      "en": "peeled onion",
+      "sv": "skalad lök",
+      "th": "หัวหอมปอกเปลือก"
+    },
+    "393": {
+      "fi": "tuoretta valkosipulia",
+      "en": "fresh garlic",
+      "sv": "färsk vitlök",
+      "th": "กระเทียมสด"
+    },
+    "33023": {
+      "fi": "tuoretta inkivääriä",
+      "en": "fresh ginger",
+      "sv": "färsk ingefära",
+      "th": "ขิงสด"
+    },
+    "541": {
+      "fi": "neutraalia ruokaöljyä",
+      "en": "neutral cooking oil",
+      "sv": "neutral matolja",
+      "th": "น้ำมันพืชรสเป็นกลาง"
+    },
+    "631": {
+      "fi": "kuohukermaa, rasvaa 38 %",
+      "en": "cream, 38% fat",
+      "sv": "grädde, 38 % fett",
+      "th": "ครีม ไขมัน 38%"
+    },
+    "386": {
+      "fi": "punaista paprikaa",
+      "en": "red sweet pepper",
+      "sv": "röd paprika",
+      "th": "พริกหวานแดง"
+    },
+    "387": {
+      "fi": "vihreää paprikaa",
+      "en": "green sweet pepper",
+      "sv": "grön paprika",
+      "th": "พริกหวานเขียว"
+    },
+    "619": {
+      "fi": "maustamatonta jogurttia",
+      "en": "plain yoghurt",
+      "sv": "naturell yoghurt",
+      "th": "โยเกิร์ตรสธรรมชาติ"
+    },
+    "11565": {
+      "fi": "nahatonta broilerin rintafileetä",
+      "en": "skinless chicken breast",
+      "sv": "skinnfri kycklingfilé",
+      "th": "อกไก่ไม่ติดหนัง"
+    },
+    "324": {
+      "fi": "parsakaalia",
+      "en": "broccoli",
+      "sv": "broccoli",
+      "th": "บรอกโคลี"
+    },
+    "30315": {
+      "fi": "käyttövalmista laimennettua kanalientä",
+      "en": "ready-to-use diluted chicken stock",
+      "sv": "färdig utspädd kycklingbuljong",
+      "th": "น้ำสต๊อกไก่เจือจางพร้อมใช้"
+    },
+    "11177": {
+      "fi": "jauhettua mustapippuria",
+      "en": "ground black pepper",
+      "sv": "malen svartpeppar",
+      "th": "พริกไทยดำป่น"
+    },
+    "30792": {
+      "fi": "nahatonta broilerin reisilihaa",
+      "en": "skinless chicken thigh",
+      "sv": "skinnfritt kycklinglårkött",
+      "th": "เนื้อสะโพกไก่ไม่ติดหนัง"
+    },
+    "345": {
+      "fi": "tuoreita herkkusieniä",
+      "en": "fresh button mushrooms",
+      "sv": "färska champinjoner",
+      "th": "เห็ดแชมปิญองสด"
+    },
+    "7600": {
+      "fi": "vähähiilihydraattista nakkia, keitettynä punnittu",
+      "en": "low-carbohydrate frankfurter, weighed after boiling",
+      "sv": "kolhydratfattig varmkorv, vägd efter kokning",
+      "th": "ไส้กรอกแฟรงก์เฟิร์ตคาร์โบไฮเดรตต่ำ ชั่งหลังต้ม"
+    },
+    "389": {
+      "fi": "kesäkurpitsaa",
+      "en": "courgette",
+      "sv": "zucchini",
+      "th": "ซูกินี"
+    },
+    "303": {
+      "fi": "lanttua",
+      "en": "swede",
+      "sv": "kålrot",
+      "th": "รูตาบากา"
+    },
+    "622": {
+      "fi": "maustamatonta maitorahkaa",
+      "en": "plain quark",
+      "sv": "naturell kvarg",
+      "th": "ควาร์กรสธรรมชาติ"
+    },
+    "447": {
+      "fi": "tuoreita raakoja mansikoita",
+      "en": "fresh raw strawberries",
+      "sv": "färska råa jordgubbar",
+      "th": "สตรอว์เบอร์รีสดไม่ผ่านความร้อน"
+    },
+    "29055": {
+      "fi": "kuivia riisinuudeleita",
+      "en": "dried rice noodles",
+      "sv": "torra risnudlar",
+      "th": "เส้นก๋วยเตี๋ยวแห้ง"
+    },
+    "F007682": {
+      "fi": "kuivaa jasmiiniriisiä",
+      "en": "dry jasmine rice",
+      "sv": "torrt jasminris",
+      "th": "ข้าวหอมมะลิดิบ"
+    },
+    "F006250": {
+      "fi": "kevätsipulia",
+      "en": "spring onion",
+      "sv": "salladslök",
+      "th": "ต้นหอม"
+    },
+    "F008065": {
+      "fi": "kaupallista soijakastiketta",
+      "en": "commercial soy sauce",
+      "sv": "kommersiell sojasås",
+      "th": "ซีอิ๊ว"
+    },
+    "F006187": {
+      "fi": "seesamiöljyä",
+      "en": "sesame oil",
+      "sv": "sesamolja",
+      "th": "น้ำมันงา"
+    },
+    "8513": {
+      "fi": "keitettyä kuoretonta kananmunaa",
+      "en": "boiled shelled egg",
+      "sv": "kokt skalat ägg",
+      "th": "ไข่ต้มปอกเปลือก"
+    },
+    "33465": {
+      "fi": "halloumia",
+      "en": "halloumi",
+      "sv": "halloumi",
+      "th": "ฮัลลูมี"
+    },
+    "352": {
+      "fi": "tomaattia",
+      "en": "tomato",
+      "sv": "tomat",
+      "th": "มะเขือเทศ"
+    },
+    "34972": {
+      "fi": "vihreitä kivettömiä oliiveja",
+      "en": "pitted green olives",
+      "sv": "urkärnade gröna oliver",
+      "th": "มะกอกเขียวเอาเมล็ดออก"
+    },
+    "F001537": {
+      "fi": "vaaleaa vehnähapanjuurileipää, ennen paahtamista punnittu",
+      "en": "white wheat sourdough bread, weighed before toasting",
+      "sv": "ljust vetesurdegsbröd, vägt före rostning",
+      "th": "ขนมปังซาวร์โดว์ข้าวสาลีขาว ชั่งก่อนปิ้ง"
+    },
+    "117": {
+      "fi": "kuivaa durumvehnämakaronia",
+      "en": "dry durum-wheat macaroni",
+      "sv": "torra durumvetemakaroner",
+      "th": "มะกะโรนีดูรัมแห้ง"
+    },
+    "11562": {
+      "fi": "naudan jauhelihaa, rasvaa 7 %",
+      "en": "minced beef, 7% fat",
+      "sv": "nötfärs, 7 % fett",
+      "th": "เนื้อบด ไขมัน 7%"
+    },
+    "649": {
+      "fi": "raejuustoa, rasvaa 2–5 %",
+      "en": "cottage cheese, 2–5% fat",
+      "sv": "keso, 2–5 % fett",
+      "th": "คอตเทจชีส ไขมัน 2–5%"
+    },
+    "684": {
+      "fi": "kevytmaitoa, rasvaa 1,5 %",
+      "en": "milk, 1.5% fat",
+      "sv": "mjölk, 1,5 % fett",
+      "th": "นม ไขมัน 1.5%"
+    },
+    "29065": {
+      "fi": "ruokakermaa, rasvaa 15 %",
+      "en": "cooking cream, 15% fat",
+      "sv": "matlagningsgrädde, 15 % fett",
+      "th": "ครีมปรุงอาหาร ไขมัน 15%"
+    },
+    "642": {
+      "fi": "emmentaljuustoraastetta",
+      "en": "grated Emmental",
+      "sv": "riven emmentaler",
+      "th": "ชีสเอ็มเมนทัลขูด"
+    },
+    "F006316": {
+      "fi": "paprikajauhetta",
+      "en": "paprika powder",
+      "sv": "paprikapulver",
+      "th": "ผงปาปริกา"
+    },
+    "F007535": {
+      "fi": "kuorittua myskikurpitsaa",
+      "en": "peeled butternut squash",
+      "sv": "skalad butternutpumpa",
+      "th": "ฟักบัตเตอร์นัตปอกเปลือก"
+    },
+    "29014": {
+      "fi": "makeuttamatonta kookosmaitoa",
+      "en": "unsweetened coconut milk",
+      "sv": "osötad kokosmjölk",
+      "th": "กะทิไม่เติมน้ำตาล"
+    },
+    "385": {
+      "fi": "mustia seesaminsiemeniä",
+      "en": "black sesame seeds",
+      "sv": "svarta sesamfrön",
+      "th": "งาดำ"
+    },
+    "F009176": {
+      "fi": "kiinteää tofua",
+      "en": "firm tofu",
+      "sv": "fast tofu",
+      "th": "เต้าหู้แข็ง"
+    },
+    "F008806": {
+      "fi": "tuoreita mungpavun ituja",
+      "en": "fresh mung bean sprouts",
+      "sv": "färska mungbönsgroddar",
+      "th": "ถั่วงอกสด"
+    },
+    "F003337": {
+      "fi": "curryjauhetta",
+      "en": "curry powder",
+      "sv": "currypulver",
+      "th": "ผงกะหรี่"
+    },
+    "1": {
+      "fi": "sokeria (sakkaroosia)",
+      "en": "sugar (sucrose)",
+      "sv": "socker (sackaros)",
+      "th": "น้ำตาลทราย (ซูโครส)"
+    }
+  },
+  "specialNames": {
+    "jauhettu juustokumina": {
+      "fi": "jauhettua juustokuminaa",
+      "en": "ground cumin",
+      "sv": "malen spiskummin",
+      "th": "ยี่หร่าป่น"
+    },
+    "kurkuma": {
+      "fi": "kurkumajauhetta",
+      "en": "turmeric powder",
+      "sv": "gurkmeja",
+      "th": "ขมิ้นผง"
+    },
+    "garam masala": {
+      "fi": "garam masalaa",
+      "en": "garam masala",
+      "sv": "garam masala",
+      "th": "การัมมาซาลา"
+    },
+    "paprikajauhe": {
+      "fi": "paprikajauhetta",
+      "en": "paprika powder",
+      "sv": "paprikapulver",
+      "th": "ผงปาปริกา"
+    },
+    "tuore timjami": {
+      "fi": "tuoretta timjamia",
+      "en": "fresh thyme",
+      "sv": "färsk timjan",
+      "th": "ไทม์สด"
+    },
+    "ruohosipuli": {
+      "fi": "tuoretta ruohosipulia",
+      "en": "fresh chives",
+      "sv": "färsk gräslök",
+      "th": "กุยช่ายฝรั่งสด"
+    },
+    "tähtianis": {
+      "fi": "tähtianista",
+      "en": "star anise",
+      "sv": "stjärnanis",
+      "th": "โป๊ยกั๊ก"
+    },
+    "valkosipulijauhe": {
+      "fi": "valkosipulijauhetta",
+      "en": "garlic powder",
+      "sv": "vitlökspulver",
+      "th": "กระเทียมผง"
+    },
+    "salottisipuli; onion proxy": {
+      "fi": "kuorittua salottisipulia",
+      "en": "peeled shallot",
+      "sv": "skalad schalottenlök",
+      "th": "หอมแดงปอกเปลือก"
+    },
+    "egg for kaya": {
+      "fi": "kananmunaa kaya-hilloon",
+      "en": "egg for the kaya",
+      "sv": "ägg till kaya",
+      "th": "ไข่สำหรับคายา"
+    },
+    "egg to serve": {
+      "fi": "lisukkeeksi tarjottavaa kananmunaa",
+      "en": "egg to serve alongside",
+      "sv": "ägg att servera till",
+      "th": "ไข่สำหรับเสิร์ฟคู่กัน"
+    }
+  },
+  "preparation": {
+    "keto-mutakakku": {
+      "fi": "Paista alkuperäisen ohjeen mukaan 175 °C:ssa 12–16 minuuttia. Käytä täysrasvaista mantelijauhoa ja tummaa suklaata, johon ei ole lisätty sokeria. Kaakao punnitaan {{amount:5}} grammaksi ja vaniljauute {{amount:6}} grammaksi.",
+      "en": "Bake as in the original recipe at 175°C for 12–16 min. Use full-fat almond meal and no-added-sugar dark chocolate. Weigh cocoa {{amount:5}} g and vanilla extract {{amount:6}} g.",
+      "sv": "Grädda enligt grundreceptet i 175°C i 12–16 min. Använd fullfett mandelmjöl och mörk choklad utan tillsatt socker. Väg kakao {{amount:5}} g och vaniljextrakt {{amount:6}} g.",
+      "th": "อบตามสูตรเดิมที่175°C นาน12–16นาที ใช้อัลมอนด์บดแบบมีไขมันและดาร์กช็อกโกแลตไม่เติมน้ำตาล ชั่งโกโก้{{amount:5}}กรัมและวานิลลาสกัด{{amount:6}}กรัม"
+    },
+    "keto-suklaakeksit": {
+      "fi": "Paista 175 °C:ssa 10–12 minuuttia. Käytä täysrasvaista mantelijauhoa ja suklaata, johon ei ole lisätty sokeria. Punnitse leivinjauhe {{amount:4}} grammaksi ja vaniljauute {{amount:6}} grammaksi.",
+      "en": "Bake at 175°C for 10–12 min. Use full-fat almond meal and no-added-sugar chocolate. Weigh baking powder {{amount:4}} g and vanilla extract {{amount:6}} g.",
+      "sv": "Grädda i 175°C i 10–12 min. Använd fullfett mandelmjöl och choklad utan tillsatt socker. Väg bakpulver {{amount:4}} g och vaniljextrakt {{amount:6}} g.",
+      "th": "อบที่175°C นาน10–12นาที ใช้อัลมอนด์บดแบบมีไขมันและช็อกโกแลตไม่เติมน้ำตาล ชั่งผงฟู{{amount:4}}กรัมและวานิลลาสกัด{{amount:6}}กรัม"
+    },
+    "vhh-juustokakku": {
+      "fi": "Valmista alkuperäisen ohjeen mukaan näillä punnituilla määrillä. Tuorejuuston rasvapitoisuus on 11 % ja smetanan noin 40 %; smetana ei ole ranskankermaa. Mantelijauho on täysrasvaista.",
+      "en": "Follow the original method with these weighed amounts. Cream cheese is 11%fat and smetana about 40%; smetana is not crème fraîche. Use full-fat almond meal.",
+      "sv": "Följ grundreceptet med dessa vägda mängder. Färskosten har 11%fett och smetanan cirka 40%; smetana är inte crème fraîche. Använd fullfett mandelmjöl.",
+      "th": "ทำตามวิธีเดิมโดยใช้ปริมาณที่ชั่งนี้ ครีมชีสมีไขมัน11%และสเมตานาประมาณ40% ไม่ใช้เครมแฟรชแทนสเมตานา ใช้อัลมอนด์บดแบบมีไขมัน"
+    },
+    "palak-paneer": {
+      "fi": "Ryöppää ja valuta pinaatti ja jatka alkuperäisen ohjeen mukaan. Punnitse mausteet erikseen. Arvioon sisältyy koko lueteltu ainesmäärä; pinaatin valutusvähennystä ei ole oletettu.",
+      "en": "Blanch and drain spinach, then follow the original method. Weigh spices individually. All listed inputs are included; no assumed carbohydrate-leaching deduction.",
+      "sv": "Förväll och låt spenaten rinna av och följ sedan grundreceptet. Väg kryddorna separat. Alla angivna mängder ingår utan antaget kolhydratbortfall.",
+      "th": "ลวกและสะเด็ดน้ำผักโขม แล้วทำตามวิธีเดิม ชั่งเครื่องเทศแยกกัน รวมวัตถุดิบทั้งหมดในการคำนวณโดยไม่สมมติการสูญเสียคาร์โบไฮเดรตจากการสะเด็ดน้ำ"
+    },
+    "paneer-tikka": {
+      "fi": "Paista vartaat uunipellillä 230 °C:ssa 10–14 minuuttia ja käytä koko marinadi. Paprikat punnitaan syötävinä osina, {{amount:1}} g kumpikin. Erillinen chutney tai ylimääräinen sitruuna ei kuulu tämän version arvioon.",
+      "en": "Cook skewers on an oven tray at 230°C for 10–14 min and consume all marinade. Weigh each pepper {{amount:1}} g edible. Separate chutney or extra lemon is outside this version.",
+      "sv": "Tillaga spetten på ugnsplåt i 230°C i 10–14 min och använd hela marinaden. Väg varje paprika {{amount:1}} g ätlig del. Separat chutney eller extra citron ingår inte.",
+      "th": "อบไม้เสียบบนถาดที่230°C นาน10–14นาที ใช้น้ำหมักทั้งหมด พริกหวานแต่ละลูกชั่งส่วนที่กินได้{{amount:1}}กรัม ไม่รวมชัตนีย์หรือเลมอนเพิ่มเติม"
+    },
+    "kana-parmesaanipannu-parsakaali": {
+      "fi": "Käytä tuoretta valkosipulia {{amount:6}} g valkosipulijauheen sijaan. Kanaliemi on laimennettua käyttövalmista lientä, ja kaikki liemi ja kastike käytetään. Kerma on 38-prosenttista.",
+      "en": "Use fresh garlic {{amount:6}} g instead of garlic powder. Chicken stock is diluted and ready to use; retain all stock and sauce. Cream is 38%fat.",
+      "sv": "Använd färsk vitlök {{amount:6}} g i stället för vitlökspulver. Buljongen är färdig och utspädd; all buljong och sås ingår. Grädden har 38%fett.",
+      "th": "ใช้กระเทียมสด{{amount:6}}กรัมแทนผงกระเทียม ใช้น้ำสต๊อกไก่เจือจางพร้อมใช้และกินน้ำสต๊อกกับซอสทั้งหมด ครีมมีไขมัน38%"
+    },
+    "kermainen-kanasienipannu": {
+      "fi": "Käytä {{amount:2}} g kuorittua salottisipulia, {{amount:7}} g tuoretta timjamia ja {{amount:5}} g nimettyä French’s Dijon -sinappia. Kaikki laimennettu liemi ja kastike käytetään.",
+      "en": "Use peeled shallot {{amount:2}} g, fresh thyme {{amount:7}} g and the specified French’s Dijon mustard {{amount:5}} g. Retain all diluted stock and sauce.",
+      "sv": "Använd {{amount:2}} g skalad schalottenlök,{{amount:7}} g färsk timjan och {{amount:5}} g angiven French’s Dijon-senap. All utspädd buljong och sås ingår.",
+      "th": "ใช้หอมแดงปอกเปลือก{{amount:2}}กรัม ไทม์สด{{amount:7}}กรัม และมัสตาร์ด French’s Dijon ที่ระบุ{{amount:5}}กรัม รวมสต๊อกเจือจางและซอสทั้งหมด"
+    },
+    "vhh-pyttipannu": {
+      "fi": "Säilytä lanttu alkuperäisen ohjeen mukaan. Nakkimäärä {{amount:0}} g punnitaan keitettynä ennen pannulle lisäämistä. Arvio ei koske runsaammin hiilihydraattia sisältävää lenkkimakkaraa. Punnitse ruohosipuli {{amount:8}} grammaksi.",
+      "en": "Keep swede as in the original recipe. Weigh frankfurters {{amount:0}} g after boiling, before pan-frying. This estimate does not apply to higher-carbohydrate ring sausage. Weigh chives {{amount:8}} g.",
+      "sv": "Behåll kålroten enligt grundreceptet. Väg varmkorven {{amount:0}} g efter kokning, före stekning. Uppskattningen gäller inte mer kolhydratrik ringkorv. Väg gräslök {{amount:8}} g.",
+      "th": "ใช้รูตาบากาตามสูตรเดิม ชั่งไส้กรอกหลังต้ม{{amount:0}}กรัมก่อนนำลงกระทะ ค่านี้ไม่ใช้กับไส้กรอกชนิดที่มีคาร์โบไฮเดรตสูงกว่า ชั่งกุยช่ายฝรั่ง{{amount:8}}กรัม"
+    },
+    "vhh-mansikkakakku": {
+      "fi": "Paista pohja 175 °C:ssa 22–26 minuuttia ja jäähdytä. Mansikat lisätään raakoina jäähtyneeseen täytteeseen. Mantelijauho on täysrasvaista; vaniljauute {{amount:7}} g ja leivinjauhe {{amount:3}} g.",
+      "en": "Bake the base at 175°C for 22–26 min and cool. Add strawberries raw to the cooled filling. Use full-fat almond meal, vanilla extract {{amount:7}} g and baking powder {{amount:3}} g.",
+      "sv": "Grädda bottnen i 175°C i 22–26 min och låt svalna. Lägg råa jordgubbar i den avsvalnade fyllningen. Använd fullfett mandelmjöl, vaniljextrakt {{amount:7}} g och bakpulver {{amount:3}} g.",
+      "th": "อบฐานเค้กที่175°C นาน22–26นาทีแล้วพักให้เย็น ใส่สตรอว์เบอร์รีสดในไส้ที่เย็นแล้ว ใช้อัลมอนด์บดแบบมีไขมัน วานิลลาสกัด{{amount:7}}กรัม และผงฟู{{amount:3}}กรัม"
+    },
+    "vietnamilainen-pho-ga-aamuksi": {
+      "fi": "Käytä vettä ja nahatonta broilerin rintafileetä. Keitä kuivat riisinuudelit ja tarjoa kuumana. Tähtianis punnitaan {{amount:3}} grammaksi; laskelma ei oleta poistamisen tai uuttumisen prosenttiosuutta.",
+      "en": "Use water and skinless chicken breast. Boil dried rice noodles and serve hot. Weigh star anise {{amount:3}} g; no extraction or removal percentage is assumed.",
+      "sv": "Använd vatten och skinnfri kycklingfilé. Koka torra risnudlar och servera varmt. Väg stjärnanis {{amount:3}} g; ingen extraktions- eller borttagningsandel antas.",
+      "th": "ใช้น้ำและอกไก่ไม่ติดหนัง ต้มเส้นก๋วยเตี๋ยวแห้งและเสิร์ฟร้อน ชั่งโป๊ยกั๊ก{{amount:3}}กรัม ไม่สมมติสัดส่วนที่สกัดหรือถูกนำออก"
+    },
+    "congee-riisipuuro": {
+      "fi": "Hauduta jasmiiniriisiä alkuperäisen ohjeen mukaan noin 60 minuuttia. Liemi on laimennettua käyttövalmista kanalientä. Punnitse kevätsipuli {{amount:4}} g, inkivääri {{amount:3}} g ja soijakastike {{amount:5}} g. GI-vertailupuuro kypsennettiin eri vesi–riisisuhteella 40 minuuttia höyryssä.",
+      "en": "Simmer jasmine rice about 60 min as in the original method, using diluted ready-to-use chicken stock. Weigh spring onion {{amount:4}} g, ginger {{amount:3}} g and soy sauce {{amount:5}} g. The reference porridge was steamed 40 min at a different water-to-rice ratio.",
+      "sv": "Sjud jasminriset cirka 60 min enligt grundreceptet med färdig utspädd kycklingbuljong. Väg salladslök {{amount:4}} g, ingefära {{amount:3}} g och sojasås {{amount:5}} g. Referensgröten ångkokades 40 min med annat vatten–risförhållande.",
+      "th": "ต้มข้าวหอมมะลิด้วยไฟอ่อนประมาณ60นาทีตามวิธีเดิม ใช้น้ำสต๊อกไก่เจือจางพร้อมใช้ ชั่งต้นหอม{{amount:4}}กรัม ขิง{{amount:3}}กรัม และซีอิ๊ว{{amount:5}}กรัม โจ๊กที่ใช้เทียบเคียงนึ่ง40นาทีและใช้อัตราส่วนน้ำต่อข้าวต่างกัน"
+    },
+    "valimerellinen-halloumi-tomaattileipa": {
+      "fi": "Käytä vaaleaa vehnähapanjuurileipää ja punnitse {{amount:3}} g ennen paahtamista. Noudata alkuperäistä halloumin paistoa ja leivän täyttöä. Vertailuleipien 54–77 on kahden nimetyn leivän GI-skenaario, ei tämän paahdetun leivän varma vaihteluväli.",
+      "en": "Use white wheat sourdough and weigh {{amount:3}} g before toasting. Follow the original halloumi and topping method. GI 54–77 represents two named loaves, not a known bound for this toasted bread.",
+      "sv": "Använd ljust vetesurdegsbröd och väg {{amount:3}} g före rostning. Följ grundreceptets tillagning av halloumi och pålägg. GI 54–77 avser två namngivna bröd, inte säkra gränser för det rostade brödet.",
+      "th": "ใช้ขนมปังซาวร์โดว์ข้าวสาลีขาว ชั่ง{{amount:3}}กรัมก่อนปิ้ง ปรุงฮัลลูมีและจัดหน้าตามสูตรเดิม GI 54–77 มาจากขนมปังที่ระบุสองชนิด ไม่ใช่ขอบเขตที่ยืนยันสำหรับขนมปังปิ้งนี้"
+    },
+    "jauheliha-makaronilaatikko": {
+      "fi": "Keitä ja valuta durumvehnämakaroni ennen uuniin laittamista. Valmista alkuperäisen ohjeen mukaan 180 °C:ssa 40–50 minuuttia. Penne/spagetti-vertailu ei mittaa laatikon GI:tä. Valkosipulijauheen 0–{{amount:9}} g CHO on koko maustemassan yläraja, ei oletettu ravintoarvo.",
+      "en": "Boil and drain durum macaroni before baking at 180°C for 40–50 min as in the original method. Penne/spaghetti comparisons do not measure casserole GI. Garlic-powder carbohydrate 0–{{amount:9}} g is the full-mass ceiling, not an assumed nutrient value.",
+      "sv": "Koka och låt durumvetemakaronerna rinna av före gräddning i 180°C i 40–50 min enligt grundreceptet. Penne/spagetti mäter inte gratängens GI. Vitlökspulvrets 0–{{amount:9}} g kolhydrater är en gräns från hela massan, inte ett antaget näringsvärde.",
+      "th": "ต้มและสะเด็ดน้ำมะกะโรนีดูรัมก่อนอบที่180°C นาน40–50นาทีตามสูตรเดิม ค่าเพนเน/สปาเกตตีไม่ใช่ค่า GI ที่วัดจากอาหารอบนี้ คาร์โบไฮเดรตจากผงกระเทียม0–{{amount:9}}กรัมเป็นขีดจำกัดจากมวลทั้งหมด ไม่ใช่ค่าสารอาหารที่สมมติขึ้น"
+    },
+    "japanilainen-kabocha-puuro": {
+      "fi": "Tämä on kuoritun myskikurpitsan versio, ei kaikkien kabocha-lajikkeiden arvio. Käytä jasmiiniriisiä ja hauduta riisi ja kurpitsa puuroksi. Lisää makeuttamaton kookosmaito ja tarjoa {{amount:3}} g mustien seesaminsiementen kanssa.",
+      "en": "This version uses peeled butternut squash, not every kabocha cultivar. Use jasmine rice and simmer rice and squash into porridge. Add unsweetened coconut milk and serve with black sesame {{amount:3}} g.",
+      "sv": "Denna version använder skalad butternutpumpa, inte alla kabochasorter. Använd jasminris och sjud ris och pumpa till gröt. Tillsätt osötad kokosmjölk och servera med {{amount:3}} g svarta sesamfrön.",
+      "th": "สูตรนี้ใช้บัตเตอร์นัตปอกเปลือก ไม่ใช่ค่าของฟักคาโบฉะทุกสายพันธุ์ ใช้ข้าวหอมมะลิ ต้มข้าวกับฟักให้เป็นโจ๊ก เติมกะทิไม่หวานและเสิร์ฟกับงาดำ{{amount:3}}กรัม"
+    },
+    "malesialainen-laksa-lemak-aamiaiseksi": {
+      "fi": "Tämän version mieto curryliemi sisältää {{amount:5}} g curryjauhetta. Käytä alkuperäisen vaihtoehdon mukaista laimennettua kanalientä ja makeuttamatonta kookosmaitoa. Keitä kuivat nuudelit ja kuumenna idut kunnolla. Kaikki liemi käytetään.",
+      "en": "The mild curry broth in this version contains curry powder {{amount:5}} g. Choose the original chicken-stock option, diluted and ready to use, with unsweetened coconut milk. Boil dried noodles and heat sprouts thoroughly. Retain all broth.",
+      "sv": "Den milda currybuljongen i denna version innehåller {{amount:5}} g currypulver. Välj grundreceptets kycklingbuljong, färdig och utspädd, med osötad kokosmjölk. Koka torra nudlar och genomhetta groddarna. All buljong ingår.",
+      "th": "น้ำแกงอ่อนของสูตรนี้มีผงกะหรี่{{amount:5}}กรัม เลือกน้ำสต๊อกไก่เจือจางพร้อมใช้ตามตัวเลือกเดิมและกะทิไม่เติมน้ำตาล ต้มเส้นแห้งและทำถั่วงอกให้สุกทั่ว กินน้ำแกงทั้งหมด"
+    },
+    "malesialainen-kaya-paahtoleipa": {
+      "fi": "Valmista kaya-hillo määrästä {{amount:1}} g kananmunaa, {{amount:4}} g kookosmaitoa ja {{amount:6}} g sokeria. Kypsennä munaseos huolellisesti. Koko hilloerä jaetaan {{servings}} annokseen; lisäksi tarjotaan {{amount:5}} g kananmunaa. Punnitse leipä {{amount:0}} grammaksi ennen paahtamista.",
+      "en": "Make kaya with egg {{amount:1}} g, coconut milk {{amount:4}} g and sugar {{amount:6}} g. Cook the egg mixture thoroughly. Divide the entire kaya batch into {{servings}} servings; serve a further {{amount:5}} g egg alongside. Weigh bread {{amount:0}} g before toasting.",
+      "sv": "Gör kaya av {{amount:1}} g ägg, {{amount:4}} g kokosmjölk och {{amount:6}} g socker. Tillaga äggblandningen ordentligt. Fördela hela kayasatsen på {{servings}} portioner och servera ytterligare {{amount:5}} g ägg till. Väg brödet {{amount:0}} g före rostning.",
+      "th": "ทำคายาจากไข่ {{amount:1}} กรัม กะทิ {{amount:4}} กรัม และน้ำตาล {{amount:6}} กรัม ทำส่วนผสมไข่ให้สุกทั่ว แบ่งคายาทั้งหมดเป็น {{servings}} ที่ และเสิร์ฟไข่อีก {{amount:5}} กรัมคู่กัน ชั่งขนมปัง {{amount:0}} กรัมก่อนปิ้ง"
+    }
+  }
+}

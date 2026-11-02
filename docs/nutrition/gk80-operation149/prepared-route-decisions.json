@@ -1,0 +1,21 @@
+{
+  "notAnApproval": true,
+  "selectedForArithmetic": 8,
+  "held": [
+    {
+      "recipeId": "jiaozi",
+      "reason": "Measured meat/shallot dumpling28 exists,but exact source cooking method and filling/dough ratios are not specified. Do not silently treat it as a verified boiled-jiaozi match."
+    },
+    {
+      "recipeId": "hyderabadi-kanabiryani-original-dry-version",
+      "reason": "Original300g dry→900g cooked yield is not verified. The new900g version is a distinct proposed cooked-weight dose;the original is not automatically covered."
+    },
+    {
+      "recipeId": "paella-valenciana",
+      "reason": "Biryani52 is not a generic rice-dish GI and cannot cover paella."
+    }
+  ],
+  "publicationIntegrationOfTheseCases": 0,
+  "originalApprovedVersions": 16,
+  "explicitOwnerDecisionRequired": true
+}

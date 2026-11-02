@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 1,
+  "status": "AWAITING_BATCH_CONTENT_METHOD_AND_SOURCE_APPLICATION_REVIEW",
+  "ownerApproved": false,
+  "publicActivation": false,
+  "readyAuthorized": false,
+  "mergeAuthorized": false,
+  "deployAuthorized": false,
+  "approvedSeparateVersions": 16,
+  "pendingVersions": 14,
+  "totalArithmeticProposals": 30,
+  "integratedCandidateCoverage": 172,
+  "productionBaselineCoverage": 156,
+  "denominator": 326,
+  "targetNumericalCoverage": 261,
+  "hypotheticalAfterAllPendingIntegrated": 186,
+  "notASourceEquivalenceCertification": true,
+  "reviewedInputs": [
+    {
+      "recipeId": "vietnamilainen-kahvijogurtti-banaanilla",
+      "kind": "PREVIOUS_INGREDIENT_PROPOSAL",
+      "inputSha256": "eeaa2cb0f21422ba5a7be8e48d7ddbed2798b02dbf7e4402afa4fa9c8a76c6f9",
+      "caseFile": "additional-proposal.json",
+      "approval": false
+    },
+    {
+      "recipeId": "rahka-marjakerroskulho",
+      "kind": "SOURCE_RECOVERY",
+      "inputSha256": "092719e24df715f0149468125c91e24c08a5dffb29ba2d2f712bb779bd4bdc86",
+      "caseFile": "recovery-cases.json",
+      "approval": false
+    },
+    {
+      "recipeId": "japanilainen-hojicha-jogurtti-persimonilla",
+      "kind": "SOURCE_RECOVERY",
+      "inputSha256": "c270484fbb4a94ab0b8709bbc76e01f812928e3939bfd9a6cd8704a9f770ba08",
+      "caseFile": "recovery-cases.json",
+      "approval": false
+    },
+    {
+      "recipeId": "pad-kee-mao-vhh-konjac",
+      "kind": "SOURCE_RECOVERY",
+      "inputSha256": "0c692cf887c1a70c12d537c3685a25284f004653e752f7e3995197129a50370e",
+      "caseFile": "recovery-cases.json",
+      "approval": false
+    },
+    {
+      "recipeId": "intialainen-besan-chilla",
+      "kind": "SOURCE_RECOVERY",
+      "inputSha256": "afc7beb15b482d6b53c84e7d4c58bee88c007a4232a6984918b0320e6f9ed213",
+      "caseFile": "recovery-cases.json",
+      "approval": false
+    },
+    {
+      "recipeId": "intialainen-pinaatti-paneer-chilla",
+      "kind": "SOURCE_RECOVERY",
+      "inputSha256": "6c0b1890e16a526a75f5e8ef7b2729de3f7ef370c17b197dacb3990ece6f0710",
+      "caseFile": "recovery-cases.json",
+      "approval": false
+    },
+    {
+      "recipeId": "chettinad-kana",
+      "kind": "PREPARED_ROUTE_PILOT",
+      "inputSha256": "ba7aeeede3d2222a38cf82d7ff2f571c64933269f439b52e4b9e7a4b64aec85e",
+      "caseFile": "prepared-route-cases.json",
+      "approval": false
+    },
+    {
+      "recipeId": "kaakao-kookos-chia",
+      "kind": "PREPARED_ROUTE_PILOT",
+      "inputSha256": "20febc748b6f5c90dc4ba1c45b30cdf23066415cba6864b993c9ba2f9bed78d8",
+      "caseFile": "prepared-route-cases.json",
+      "approval": false
+    },
+    {
+      "recipeId": "hyderabadi-kanabiryani",
+      "kind": "PREPARED_ROUTE_PILOT",
+      "inputSha256": "c4edb623fd0e8a0f827445572919bfa90aa179ba8f0f15b5a84b7e8f8d9bc71a",
+      "caseFile": "prepared-route-cases.json",
+      "approval": false
+    },
+    {
+      "recipeId": "baozi",
+      "kind": "PREPARED_ROUTE_PILOT",
+      "inputSha256": "b5e23f709167bda9c1a3dc391fdb954dbef8a319fa9248524d1e6f0ebe2c3b1c",
+      "caseFile": "prepared-route-cases.json",
+      "approval": false
+    },
+    {
+      "recipeId": "pizza-margherita",
+      "kind": "PREPARED_ROUTE_PILOT",
+      "inputSha256": "63ba95ac40191e5c9ac65ab63d04de1b72b79cef6fb48ac0722cd3353c5d7605",
+      "caseFile": "prepared-route-cases.json",
+      "approval": false
+    },
+    {
+      "recipeId": "malesialainen-roti-jala-currykanalla",
+      "kind": "PREPARED_ROUTE_PILOT",
+      "inputSha256": "c01b8c61fa679a79c9e5f05274ae44bef799a0ce35df66923e05b5fbad60376c",
+      "caseFile": "prepared-route-cases.json",
+      "approval": false
+    },
+    {
+      "recipeId": "intialainen-mannasuurimoupma",
+      "kind": "PREPARED_ROUTE_PILOT",
+      "inputSha256": "e8d9bad7423c5dc339439e239db95f4229bf3a4c1bab2c1ea7872715ad2d9892",
+      "caseFile": "prepared-route-cases.json",
+      "approval": false
+    },
+    {
+      "recipeId": "pohjoisafrikkalainen-taatelipuuro-appelsiinilla",
+      "kind": "PREPARED_ROUTE_PILOT",
+      "inputSha256": "68b056b6e386b45124ed30cc23f2f5ef091541926dce4dd7d805e8ae46924a53",
+      "caseFile": "prepared-route-cases.json",
+      "approval": false
+    }
+  ],
+  "sealedFilesLfSha256": {
+    "docs/nutrition/gk80-operation149/additional-proposal.json": "21d0abd3e771d06a1f285a33862355a205f7153bf7ab52d98b2e41d3afe9a538",
+    "docs/nutrition/gk80-operation149/recovery-cases.json": "ff5446f6d0caec947f65145aa2abd935d7e48198361d46b7637be55d1c161376",
+    "docs/nutrition/gk80-operation149/recovery-composition.json": "7091d9f4764242b155d90291ced663d8ccdb5b4dc140847d7a0c3e168c528d8c",
+    "docs/nutrition/gk80-operation149/recovery-gi.json": "0e67ea99b717f8bbb0a01ee6084ab5d0175854f906c6b5de188f85fafb89fd62",
+    "docs/nutrition/gk80-operation149/recovery-observations.json": "e07781f8150a378a4646bceb1f9bc42ac0119afaba8bdd54563fc9de7400a896",
+    "docs/nutrition/gk80-operation149/recovery-golden.json": "278c3bce7d8db9dae7b7d72d27c2a0988e6d220bf1fa0caee01f7fec94975276",
+    "docs/nutrition/gk80-operation149/prepared-route-cases.json": "0d7c814d9f47a1f04143815ae1d39d794c53860ef95616a1e97bfa4793763c8a",
+    "docs/nutrition/gk80-operation149/prepared-route-composition.json": "c127eaed1723e1314d98bc7a2f94e4c8de7a956e16302f84ce2541acb724d6b5",
+    "docs/nutrition/gk80-operation149/prepared-route-gi.json": "4b58df614e2334b0cdae00a8fcb88580a4ec43091db4e368990b761fdf533f7f",
+    "docs/nutrition/gk80-operation149/prepared-route-observations.json": "3bc2549c5c05fc42dbc8ba752452cb82aea4cc74b0fccef1e1a7dcc48cf1baf4",
+    "docs/nutrition/gk80-operation149/prepared-route-decisions.json": "e14df1449f9569e74052ea779e81ef783e7ff29ef787413d9a64a84034ac69b1",
+    "docs/nutrition/gk80-operation149/composition-sources.json": "01bfd164993f6d9351d6139b263203871aa2974675b8be94e32cf2030629a3a4",
+    "docs/nutrition/gk80-operation149/gi-sources.json": "1f7b9831179ca1dae27285bffa189a03a47e28018c946e60b438965abb9d880c",
+    "docs/nutrition/gk80-operation149/source-observations.json": "2ff56eb6af7a41c478001b839b94430d8c082b2408f39f9e73cc6a46eb26c4e1",
+    "docs/nutrition/gk80-operation149/owner-approval.json": "041073b27f415c0fa6e53974928666abd73d48f51d36ac09e4420dc1e67860ea",
+    "docs/nutrition/gk80-operation149/verify_prepared_route.py": "cee44b2c81f91bee210c96b5fc09418f3693946d1732dd697a9738c20104a54b",
+    "site/scripts/gk149-model.ts": "3349e4bcbf970229b2c760336f4c08930e3718e696d691fa04cf22a24e891ace",
+    "site/scripts/gk149-recovery.ts": "ae865f250d05f8f53f775fb7145e05b11c103f39c9ded6e0a5c6b0308edfbd8b",
+    "site/scripts/gk149-prepared-route.ts": "c08c8fd68c9f3f132af00358352c501c27658bb26ea9e55a60102b8d2e4e9f4a"
+  }
+}

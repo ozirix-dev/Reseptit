@@ -1,0 +1,300 @@
+{
+  "schemaVersion": 1,
+  "records": [
+    {
+      "id": "veg40",
+      "kind": "EXISTING_PUBLISHED_CODING",
+      "values": [
+        40
+      ],
+      "path": "docs/nutrition/glycemic-index-records.json",
+      "nativeId": "op142-vegetable-imputation40",
+      "nativeRowSha256": "529f04e0c0580f4492df49521fb05cede453c7424eb46bdd985457efea57d727",
+      "sourceUrl": "https://doi.org/10.2337/dc08-1239",
+      "locator": "Conclusions: assignment discussion",
+      "limitation": "Project published-imputation assignment, not measured ingredient or meal GI. Coding estimate only. Application to named fresh herbs, sprouts and alliums is an explicit project interpretation. It does not establish a physiological maximum or a one-unit uncertainty bound. Not a default for seed spices, flour, sauces or stock.",
+      "allowedCompositionIds": [
+        "303",
+        "324",
+        "33023",
+        "33456",
+        "335",
+        "352",
+        "386",
+        "387",
+        "389",
+        "393",
+        "F006250",
+        "F008806"
+      ]
+    },
+    {
+      "id": "dairy30",
+      "kind": "EXISTING_PUBLISHED_CODING",
+      "values": [
+        30
+      ],
+      "path": "docs/nutrition/glycemic-index-records.json",
+      "nativeId": "op142-dairy-imputation30",
+      "nativeRowSha256": "d977dc0e145519ada95c1d0a3fd234e83847372c190d414b35350fec63747fbd",
+      "sourceUrl": "https://doi.org/10.2337/dc08-1239",
+      "locator": "Conclusions, low-carbohydrate product assignment",
+      "limitation": "Project published-imputation assignment, not measured ingredient or meal GI. Not tested cream, cheese or butter. Excludes plant drinks and sweetened dairy.",
+      "allowedCompositionIds": [
+        "11571",
+        "29065",
+        "29239",
+        "33465",
+        "500",
+        "619",
+        "622",
+        "630",
+        "631",
+        "642",
+        "649",
+        "650",
+        "655",
+        "684",
+        "parmesan"
+      ]
+    },
+    {
+      "id": "low50",
+      "kind": "EXISTING_PUBLISHED_CODING",
+      "values": [
+        50
+      ],
+      "path": "docs/nutrition/glycemic-index-records.json",
+      "nativeId": "op142-lowcho50-v2",
+      "nativeRowSha256": "2bdac980b38c841b2f0d0d5783b30b6fe581ef0ab3136aa65c312df3f8c0b460",
+      "sourceUrl": "https://doi.org/10.1016/j.jfca.2007.02.004",
+      "locator": "Author presentation slide 12",
+      "limitation": "Project published-imputation assignment, not measured ingredient or meal GI. Published low-carbohydrate default. The <=5 g/100 g operational cutoff and named bindings are explicit project interpretation, not a threshold validated by Schakel. Excludes ordinary fruit, flour, concentrated sauce and nuts above the cutoff.",
+      "allowedCompositionIds": [
+        "11557",
+        "11562",
+        "11565",
+        "30315",
+        "30792",
+        "345",
+        "34972",
+        "7600",
+        "8513",
+        "858",
+        "F003337",
+        "F008065",
+        "F009176"
+      ]
+    },
+    {
+      "id": "noodle61",
+      "kind": "NAMED_HUMAN_GI",
+      "values": [
+        61
+      ],
+      "path": "docs/nutrition/glycemic-index-records.json",
+      "nativeId": "rice-noodles-dried-boiled-chan-2001-gi-61",
+      "nativeRowSha256": "c463e93bf80424a569d053ff0f67bd7150010133c7d085d0dd8f655173eef788",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/11781674/",
+      "locator": "Published study; rice-noodle values reported in the University of Sydney GI Search database; Thai World dried rice noodles boiled, GI 61",
+      "limitation": "Brand and noodle match is close; actual recipe broth/cooking can alter the response. Low confidence.",
+      "allowedCompositionIds": [
+        "29055"
+      ]
+    },
+    {
+      "id": "sucrose60",
+      "kind": "NAMED_HUMAN_GI",
+      "values": [
+        60
+      ],
+      "path": "docs/nutrition/glycemic-index-records.json",
+      "nativeId": "op142-sucrose60",
+      "nativeRowSha256": "2b896b8ac2ded537f2eb741b37b3ea4327cd23d8a7b828a8a4f2f16027fde580",
+      "sourceUrl": "https://doi.org/10.1186/1475-2891-13-50",
+      "locator": "Table2 European cohort glucose-reference column",
+      "limitation": "Human-measured sucrose comparator applied as an explicitly LOW-confidence sucrose-dominant sugar analogy; not a measured whole-recipe GI. European cohort selected consistently, not pooled with Chinese cohort. Other cohort means and CIs are not food-preparation bounds. Brown sugar is only an applied sucrose-dominant analogy.",
+      "allowedCompositionIds": [
+        "1"
+      ]
+    },
+    {
+      "id": "strawberry40",
+      "kind": "NAMED_HUMAN_GI",
+      "values": [
+        40
+      ],
+      "path": "docs/nutrition/gk80-operation149/source-observations.json",
+      "nativeId": "strawberry40",
+      "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+      "locator": "Supplement1 p79 item1174; raw fresh strawberries, Australia2001 n10, glucose2h; UO5 original unpublished",
+      "limitation": "Not a measured cake GI. No SEM-as-range. Cultivar/serving mixture LOW.",
+      "nativeRowSha256": "119347d38eca3052a961fe910acfeb9b9fbeebf5d019246953b2bb3591cf2377",
+      "allowedCompositionIds": [
+        "447"
+      ]
+    },
+    {
+      "id": "bread54-77",
+      "kind": "NAMED_HUMAN_GI",
+      "values": [
+        54,
+        77
+      ],
+      "path": "docs/nutrition/gk80-operation149/source-observations.json",
+      "nativeId": "bread54-77",
+      "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+      "locator": "Supplement1 p16 items226 and225; sourdough wheat bread Australia2003 n10 GI54, Fine Breads Cob Australia2008 n10 GI77",
+      "limitation": "Two named comparator-food scenarios, not all-bread mean, physiological bounds or prediction interval. Flour/fermentation variation outside scenarios possible.",
+      "nativeRowSha256": "43fa6d35410d1bddbbc2061018d499eb1a0a36f6007ea969a575943b26bc7cde",
+      "allowedCompositionIds": [
+        "F001537"
+      ]
+    },
+    {
+      "id": "congee80",
+      "kind": "NAMED_HUMAN_GI",
+      "values": [
+        80
+      ],
+      "path": "docs/nutrition/gk80-operation149/source-observations.json",
+      "nativeId": "congee80",
+      "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+      "locator": "Supplement1 p46 item659; COFCO jasmine rice31.6g +250ml water steamed40min Thailand2016 n10 glucose2h UO18",
+      "limitation": "Source-backed reference point, not exact60min simmered recipe. Rice/water ratio and gelatinization differ; error not quantified.",
+      "nativeRowSha256": "c97653a48d11bb73e6db3a41aa2c87d243f4c01913d768330a4801a3e829814f",
+      "allowedCompositionIds": [
+        "F007682"
+      ]
+    },
+    {
+      "id": "mung42",
+      "kind": "NAMED_HUMAN_GI",
+      "values": [
+        42
+      ],
+      "path": "docs/nutrition/gk80-operation149/source-observations.json",
+      "nativeId": "mung42",
+      "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+      "locator": "Supplement2 p75 item3151; mung bean boiled in salted water, Pakistan2008 n7 glucose2h no repeated reference, 0/30/60/120min",
+      "limitation": "Khan2008; low-quality small human test. Soft porridge vs boiled bean is explicit new B preparation analogy; uncertainty not bounded by SEM4.",
+      "nativeRowSha256": "7d19a01361bbe36bb94e307b2a29ba606975a65d69264d3cfbb1fc7c2ea6b578",
+      "allowedCompositionIds": []
+    },
+    {
+      "id": "cashew22-27",
+      "kind": "NAMED_HUMAN_GI",
+      "values": [
+        22,
+        27
+      ],
+      "path": "docs/nutrition/gk80-operation149/source-observations.json",
+      "nativeId": "cashew22-27",
+      "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+      "locator": "Supplement1 item1431 salted Coles cashews GI22; Supplement2 items3238/3239 halves or roasted/salted GI27",
+      "limitation": "Named cashew comparators, not nut family mean. Target unsalted cooked garnish is a LOW food/preparation analogy; residual uncertainty outside envelope.",
+      "nativeRowSha256": "2ed2f96b51c67292a7b82cca8a07d7018f73f9c73a01080f93eb6ef5108e4ec4",
+      "allowedCompositionIds": []
+    },
+    {
+      "id": "pasta47-49",
+      "kind": "NAMED_HUMAN_GI",
+      "values": [
+        47,
+        49
+      ],
+      "path": "docs/nutrition/gk80-operation149/source-observations.json",
+      "nativeId": "pasta47-49",
+      "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+      "locator": "Existing E-HOLD penne47 and release2 white-spaghetti food-specific49; referenced frozen records below",
+      "limitation": "Named durum-pasta reference model for drained hot macaroni baked in custard. Shape and extended oven heating are unmeasured;47–49 is only a comparator scenario envelope, not a plausible full GI bound.",
+      "comparators": [
+        "penne47",
+        "spaghetti49"
+      ],
+      "nativeRowSha256": "5b3ce7c490019675686236e4ad21e6e31540268f888793a8b847f974edc31839",
+      "allowedCompositionIds": [
+        "117"
+      ]
+    },
+    {
+      "id": "spaghetti49",
+      "kind": "NAMED_HUMAN_GI",
+      "values": [
+        49
+      ],
+      "path": "docs/nutrition/gk80-release-7/sources.json",
+      "nativeId": "pasta-mean49",
+      "nativeRowSha256": "b0e7f728804889c13c2d43b0313da8c0627466988f2e47fe8ead0f1103faf7c9",
+      "sourceUrl": "https://doi.org/10.2337/dc08-1239",
+      "locator": "Table 1 food-specific means; not SEM as range",
+      "limitation": "Applied food/preparation analogue; generic composition separately sourced. Not a broad all-legume or all-grain mean.",
+      "allowedCompositionIds": []
+    },
+    {
+      "id": "pumpkin51",
+      "kind": "NAMED_HUMAN_GI",
+      "values": [
+        51
+      ],
+      "path": "docs/nutrition/gk80-release-3/sources.json",
+      "nativeId": "pumpkin51",
+      "nativeRowSha256": "bd3cbbd370668337d27090575f4bd4c5a0026d9c91311ea85c4226ed427a346b",
+      "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+      "locator": "Supplement1 row1799 p120",
+      "limitation": "Human evidence applied to named food/preparation, LOW analogue. Not measured meal GI. Source SEM is not a recipe interval. Generic composition remains a separate proxy.",
+      "allowedCompositionIds": [
+        "F007535"
+      ]
+    },
+    {
+      "id": "penne47",
+      "kind": "NAMED_HUMAN_GI",
+      "values": [
+        47
+      ],
+      "path": "docs/nutrition/glycemic-index-records.json",
+      "nativeId": "ehold-penne47",
+      "nativeRowSha256": "fa9a8e993d8f08240f5dcf7d2cb84fc48d3002bf7afea4e8c4389e23a745e5e4",
+      "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+      "locator": "Table1 row1455 p99",
+      "limitation": "Named published glucose-scale point; no additional scale conversion. Generic raw composition is a separate proxy, not the exact branded label. Alternative products/preparations, not confidence bounds.",
+      "allowedCompositionIds": []
+    },
+    {
+      "id": "plant50",
+      "kind": "PROPOSED_B_CODING",
+      "values": [
+        50
+      ],
+      "sourceUrl": "https://doi.org/10.1016/j.jfca.2007.02.004",
+      "path": "docs/nutrition/glycemic-index-records.json",
+      "nativeId": "op142-lowcho50-v2",
+      "nativeRowSha256": "2bdac980b38c841b2f0d0d5783b30b6fe581ef0ab3136aa65c312df3f8c0b460",
+      "locator": "Published low-carbohydrate default50; project application EXTENSION only. Named unsweetened coconut milk/emulsion with independently sourced available CHO<=5g/100g only",
+      "limitation": "New editorial coding reference, GI uncertainty not source-bounded. Requires explicit owner method approval. GI0–150 sensitivity is separate, not a source interval.",
+      "allowedCompositionIds": [
+        "29014"
+      ]
+    },
+    {
+      "id": "trace50",
+      "kind": "PROPOSED_B_CODING",
+      "values": [
+        50
+      ],
+      "sourceUrl": "https://doi.org/10.1016/j.jfca.2007.02.004",
+      "path": "docs/nutrition/glycemic-index-records.json",
+      "nativeId": "op142-lowcho50-v2",
+      "nativeRowSha256": "2bdac980b38c841b2f0d0d5783b30b6fe581ef0ab3136aa65c312df3f8c0b460",
+      "locator": "Published low-carbohydrate default50; project application EXTENSION only. Named culinary trace spice/seed garnish <=0.5g CHO each and <=1g aggregate per serving",
+      "limitation": "New editorial coding reference, GI uncertainty not source-bounded. Requires explicit owner method approval. GI0–150 sensitivity is separate, not a source interval.",
+      "allowedCompositionIds": [
+        "11177",
+        "385",
+        "F006316",
+        "physical"
+      ]
+    }
+  ]
+}

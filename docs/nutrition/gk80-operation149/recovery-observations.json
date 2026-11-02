@@ -1,0 +1,69 @@
+{
+  "records": [
+    {
+      "id": "blueberry53-recovery",
+      "gi": 53,
+      "table": 1,
+      "page": 74,
+      "item": 1092,
+      "food": "Canadian wild blueberry",
+      "healthyN": 10,
+      "sem": 7,
+      "referenceFood": "Bread2h",
+      "reportedScale": "GLUCOSE_100",
+      "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+      "pdfSha256": "e930c4a090697abd4f7331a64837b524cf4701513cbb9865a739f4f9fb131061",
+      "methodLimitation": "Published table already reports glucose100. Do not multiply by0.7. Cultivar/composition analogy remains; SEM is not a recipe interval."
+    },
+    {
+      "id": "persimmon61-recovery",
+      "gi": 61,
+      "table": 1,
+      "page": 78,
+      "item": 1163,
+      "food": "Diospyros kaki",
+      "healthyN": "at least9",
+      "sem": 8,
+      "referenceFood": "Bread2h",
+      "reportedScale": "GLUCOSE_100",
+      "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+      "pdfSha256": "e930c4a090697abd4f7331a64837b524cf4701513cbb9865a739f4f9fb131061",
+      "methodLimitation": "Published table already reports glucose100. Italian cultivar/peeled Australian composition is an explicit B analogy; no second bread conversion."
+    },
+    {
+      "id": "whole-cheela42-recovery",
+      "gi": 42,
+      "table": 3,
+      "page": 152,
+      "food": "Unfermented whole Cicer arietinum pancake",
+      "healthyN": 15,
+      "sem": 0.6,
+      "referenceFood": "Glucose50g",
+      "reportedScale": "GLUCOSE_100",
+      "sourceUrl": "https://apjcn.nhri.org.tw/server/APJCN/3/4/151.pdf",
+      "pdfSha256": "4b90cf8309e1246a5cd4ee30d12b50278facd3e75de791745bb51e519a20bc39",
+      "recipe": {
+        "wholeDryLegumeFlourG": 90,
+        "waterMl": 200,
+        "fatG": 15,
+        "pancakes": 3,
+        "fermented": false
+      },
+      "methodLimitation": "Older Table2-quality source. Four sample times, single glucose reference, female18–23 cohort. Calculated testCHO54.8g differs from50g reference. Use as LOW prepared-component model reference, not raw flour GI. No application to dehulled besan, mung, farinata or falafel."
+    },
+    {
+      "id": "koro-ready-fettuccine-ceiling",
+      "productUrl": "https://www.koro.com/fi/luomu-konjac-fettuccine-vedessae-1-kg",
+      "product": "KoRo organic konjac fettuccine in water, drained1kg",
+      "state": "READY_IN_WATER_DRAINED",
+      "manufacturerDeclaredTotalChoCeilingPer100g": 0.1,
+      "relation": "STRICT_LESS_THAN",
+      "declaredTableChoPer100g": 0,
+      "accessedAt": "2026-11-02",
+      "access": "Public manufacturer page read through web tool; selected factual data recorded, no claim of a retained raw HTML download.",
+      "scope": "Manufacturer nominal product declaration, not a laboratory-certified ceiling for every lot. AvailableCHO cannot exceed declared totalCHO; do not infer polyols0 or subtract fibre. No application to dried konjac noodles12g/100g.",
+      "sourceLocation": "Product description after heading Osta nyt and before Konjac composition section; less0.1g/100g. Drained/net weight1kg is explicit."
+    }
+  ],
+  "review": "Table1 pages74,78,79 and Batra151–152 visually checked2026-11-02; KoRo product page read. Selected facts only."
+}
