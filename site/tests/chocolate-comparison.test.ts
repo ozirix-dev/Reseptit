@@ -34,16 +34,25 @@ test("two named Torras products retain their own verified manufacturer source bi
   assert.deepEqual(pilot.sources.find((s: { id: string }) => s.id === "torras-stevia").observation.polyolIngredients, ["erythritol", "steviol glycosides"]);
 });
 
-test("disclosure is confined to the Finnish mud cake and is collapsed in server HTML", () => {
-  assert.match(render(), /^<details class="recipe-panel chocolate-comparison"/);
-  assert.doesNotMatch(render(), /<details[^>]*\sopen(?:=|\s|>)/);
-  assert.equal((render().match(/data-chocolate-product=/g) ?? []).length, 2);
-  for (const locale of ["en", "sv", "th"] as const) assert.equal(render("keto-mutakakku", locale), "");
-  for (const id of ["keto-suklaakeksit", "vhh-juustokakku", "", "unknown"]) assert.equal(render(id), "");
+test("disclosure is confined to the two Finnish recipes and is collapsed in server HTML", () => {
+  for (const recipeId of ["keto-mutakakku", "keto-suklaakeksit"]) {
+    const html = render(recipeId);
+    assert.match(html, /^<details class="recipe-panel chocolate-comparison"/);
+    assert.doesNotMatch(html, /<details[^>]*\sopen(?:=|\s|>)/);
+    assert.equal((html.match(/data-chocolate-product=/g) ?? []).length, 2);
+    for (const locale of ["en", "sv", "th"] as const) assert.equal(render(recipeId, locale), "");
+  }
+  for (const id of ["vhh-juustokakku", "", "unknown"]) assert.equal(render(id), "");
 });
 
 test("public comparison explains sweeteners and missing whole-cake evidence without numerical GL or nutrition fields", () => {
-  const html = render();
+  const cake = render();
+  const cookies = render("keto-suklaakeksit");
+  assert.match(cake, /ei voida määrittää koko kakun GK:ta/);
+  assert.match(cookies, /ei voida määrittää valmiiden keksien GK:ta/);
+  assert.match(cookies, /Suklaa käännellään taikinaan paloina/);
+  assert.doesNotMatch(cookies, /kakun/);
+  const html = cake + cookies;
   assert.ok(html.includes("Miten käyttämäsi suklaa vaikuttaa GK-arvioon?"));
   assert.ok(html.includes("Makeutusaineet: Maltitoli"));
   assert.ok(html.includes("Makeutusaineet: Erytritoli ja stevioliglykosidit"));
@@ -51,7 +60,7 @@ test("public comparison explains sweeteners and missing whole-cake evidence with
   assert.ok(html.includes("ei voida määrittää koko kakun GK:ta tai tuotteiden välistä GK-eroa"));
   assert.ok(html.includes("erikseen lisättävä erytritoli"));
   assert.ok(html.includes("laskettu osuus koskee vain siinä kuvattua laskentaversiota"));
-  assert.doesNotMatch(html, /0[,.]07|3[,.]0|1[,.]97|35,4|48 g|29 g|GK\s*[≈=]|g\/annos|glykemi.*matala/i);
+  assert.doesNotMatch(html, /0[,.]0[37]|3[,.]0|1[,.]97|35,4|48 g|29 g|GK\s*[≈=]|g\/annos|glykemi.*matala/i);
   assert.doesNotMatch(html, /<script|itemprop|itemscope|application\/ld\+json|data-gk-level|data-nutrition|<select|<input/);
   assert.doesNotMatch(html, /Wawel|AFCD|F009837/);
   for (const product of chocolateComparisonProducts) assert.ok(html.includes(`href="${product.sourceUrl}"`));

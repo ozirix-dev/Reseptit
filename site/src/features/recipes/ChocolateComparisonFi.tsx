@@ -25,12 +25,15 @@ export const chocolateComparisonProducts = [
 ] as const;
 
 export function ChocolateComparisonFi({ recipeId, locale }: Pick<RecipeEntry, "recipeId" | "locale">) {
-  if (recipeId !== "keto-mutakakku" || locale !== "fi") return null;
+  const isCookie = recipeId === "keto-suklaakeksit";
+  if (locale !== "fi" || (!isCookie && recipeId !== "keto-mutakakku")) return null;
+
+  const recipeScope = isCookie ? "valmiiden keksien" : "koko kakun";
 
   return <details className="recipe-panel chocolate-comparison" data-chocolate-comparison="fi">
     <summary><h2>Miten käyttämäsi suklaa vaikuttaa GK-arvioon?</h2></summary>
     <div className="chocolate-comparison__body">
-      <p>Sokeriton suklaa voidaan makeuttaa eri aineilla. Pelkkä sokeriton-merkintä ei kerro koko kakun glykeemistä kuormaa (GK).</p>
+      <p>Sokeriton suklaa voidaan makeuttaa eri aineilla. Pelkkä sokeriton-merkintä ei kerro {recipeScope} glykeemistä kuormaa (GK).</p>
       {chocolateComparisonProducts.map(product => <article className="chocolate-comparison__product" key={product.id} data-chocolate-product={product.id}>
         <h3>{product.name}</h3>
         <p><strong>Makeutusaineet: {product.sweeteners}.</strong></p>
@@ -38,7 +41,9 @@ export function ChocolateComparisonFi({ recipeId, locale }: Pick<RecipeEntry, "r
         <p className="recipe-disclosure">{product.note}</p>
         <p><a href={product.sourceUrl} rel="noopener noreferrer">Valmistajan tuotetiedot: {product.name}</a></p>
       </article>)}
-      <p>Näistä tuotetiedoista ei voida määrittää koko kakun GK:ta tai tuotteiden välistä GK-eroa. Myöskään reseptiin erikseen lisättävä erytritoli ei kerro suklaan makeutuksesta.</p>
+      <p>Näistä tuotetiedoista ei voida määrittää {recipeScope} GK:ta tai tuotteiden välistä GK-eroa. {isCookie
+        ? "Suklaa käännellään taikinaan paloina. Taikinaan erikseen lisättävä erytritoli ei kerro suklaapalojen makeutuksesta."
+        : "Myöskään reseptiin erikseen lisättävä erytritoli ei kerro suklaan makeutuksesta."}</p>
       <p>Edellä näkyvä laskettu osuus koskee vain siinä kuvattua laskentaversiota. Vertailu ei ole henkilökohtaisen verensokerivasteen mittaus.</p>
       <p className="recipe-disclosure">Lähdeaineisto: valmistajan tuotetiedot, tarkistettu <time dateTime="2026-11-02">2.11.2026</time>. Tarkista ajantasaiset ainesosat pakkauksesta.</p>
     </div>
