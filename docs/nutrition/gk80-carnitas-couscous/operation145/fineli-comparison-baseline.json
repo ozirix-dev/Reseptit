@@ -1,0 +1,82 @@
+{
+  "head": "c844ba4220eac979604b32bf79626e8f8fdd3c47",
+  "purpose": "Superseded A comparison only, not current publication evidence.",
+  "foodRecord": {
+    "id": "cc-hold-fineli-29208",
+    "name": "KUSKUS",
+    "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/29208",
+    "retrievedAt": "2026-11-02",
+    "licence": "THL Fineli Rel20 CC BY4.0",
+    "state": "RAW",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Explicit frozen Fineli SUGOH; unknown values remain unknown.",
+    "per100g": {
+      "carbohydrate": 63.6,
+      "fibre": 3.5,
+      "polyols": 0.0,
+      "protein": 11.5,
+      "fat": 1.1
+    },
+    "primaryReference": {
+      "source_id": "29208",
+      "name": "KUSKUS",
+      "food_type": "FOOD",
+      "process": "RAW",
+      "edible_portion_percent": 100.0,
+      "ingredient_class": "WHEAT",
+      "food_class": "PASTAADD",
+      "per100g": {
+        "available_carbohydrate_g_per_100g": 63.6,
+        "fibre_g_per_100g": 3.5,
+        "polyols_g_per_100g": 0.0,
+        "protein_g_per_100g": 11.5,
+        "fat_g_per_100g": 1.1
+      },
+      "component_provenance": {
+        "fat_g_per_100g": {
+          "acquisition_type": "F",
+          "method_type": "E",
+          "method_indicator": "MIR003"
+        },
+        "available_carbohydrate_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MI0181"
+        },
+        "protein_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "I",
+          "method_indicator": "MI0123"
+        },
+        "polyols_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "U",
+          "method_indicator": "MIR007"
+        },
+        "fibre_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MI0172"
+        }
+      },
+      "portion_mass_g": {
+        "DL": 80.0,
+        "RKL": 12.0,
+        "TL": 4.0
+      }
+    }
+  },
+  "recipeId": "marokkolainen-couscous",
+  "sourceLfSha256": "fab6a8c2a9ed8d39e4c3238ee25edd019397511ac9424188a3e4edd8a8f02886",
+  "macroEvidenceSha256": "db564350202661ad6ea4b8e7d53858bcd43a9e3dc602c86fd0e5ddfb3aa4cc1f",
+  "macroValues": {
+    "carbs_net_per_serving_g": 61.86,
+    "carbs_total_per_serving_g": 70.94,
+    "protein_per_serving_g": 46.45,
+    "fat_per_serving_g": 17.32
+  },
+  "macroEvidenceAtHead": "docs/nutrition/calculations/marokkolainen-couscous.json",
+  "originalGk": 34.08
+}

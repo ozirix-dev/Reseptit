@@ -66,14 +66,14 @@ ingredients:
 source_language: fi
 source_recipe: reseptit/paaruoat/marokkolainen-couscous.md
 translation_of: marokkolainen-couscous
-carbs_net_per_serving_g: 61.86
-carbs_total_per_serving_g: 70.94
-protein_per_serving_g: 46.45
-fat_per_serving_g: 17.32
+carbs_net_per_serving_g: null
+carbs_total_per_serving_g: null
+protein_per_serving_g: null
+fat_per_serving_g: null
 ---
 # Couscous โมร็อกโกกับไก่และผัก
 
-สูตรนี้ใช้เนื้อสะโพกไก่และถั่วลูกไก่ทั้งเมล็ดที่เพิ่งต้มสุก ต้มถั่วแยกต่างหากแล้วใส่ตอนท้ายขณะยังร้อน ไม่ต้มในสตูว์ซ้ำอีก 15 นาที แบ่งน้ำสต๊อกที่ระบุทั้งหมดรวมในแต่ละที่ ค่า GI อ้างอิงของ San Remo ใช้ร่วมกับข้อมูลองค์ประกอบอาหารเปรียบเทียบจาก Fineli เป็นค่าประมาณความเชื่อมั่น LOW
+สูตรนี้ใช้เนื้อสะโพกไก่และถั่วลูกไก่ทั้งเมล็ดที่เพิ่งต้มสุก ต้มถั่วแยกต่างหากแล้วใส่ตอนท้ายขณะยังร้อน ไม่ต้มในสตูว์ซ้ำอีก 15 นาที แบ่งน้ำสต๊อกที่ระบุทั้งหมดรวมในแต่ละที่ ค่าประมาณภาระน้ำตาลใช้ค่าคาร์โบไฮเดรตของ San Remo CousCous แบบแห้งจากผู้ผลิตและค่า GI เปรียบเทียบที่ใช้ในขอบเขตจำกัด ความเชื่อมั่น LOW ยังไม่แสดงข้อมูลโภชนาการเพราะผู้ผลิตไม่ได้ระบุปริมาณโพลีออลของผลิตภัณฑ์
 
 ## วิธีทำ
 

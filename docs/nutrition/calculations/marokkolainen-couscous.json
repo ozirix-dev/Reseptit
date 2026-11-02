@@ -4,7 +4,7 @@
   "calculatedAt": "2026-11-02",
   "batchId": "batch-144",
   "servings": 4,
-  "scope": "New exact thigh-fillet and freshly boiled whole-chickpea version, complete stock retention. Separate Fineli composition proxies, no old AFCD package relabelled. Owner approval pending.",
+  "scope": "Operation145 exact unchanged thigh-fillet/hot-boiled-chickpea version. Named dry San Remo label replaces Fineli29208 composition proxy. All four macros withheld due to missing product polyols; GK independently uses label available carbohydrate. Owner approval pending.",
   "reviewerStatus": "AUTOMATED ONLY",
   "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
   "ingredients": [
@@ -87,76 +87,56 @@
       "amount": 250,
       "unit": "g",
       "state": "RAW",
-      "matchEvidence": "New exact weighed edible version. Full batch retained; no guessed density/yield or cooking-loss credit. Named ordinary fine durum couscous hydrated with boiling water5min and served hot; not pearl couscous, cooled or toasted version. Fineli29208 dry composition is a separate LOW proxy, not the branded label. No test-portion wet/dry yield inference.",
+      "matchEvidence": "New exact weighed edible version. Full batch retained; no guessed density/yield or cooking-loss credit. Named ordinary fine durum couscous hydrated with boiling water5min and served hot; not pearl couscous, cooled or toasted version. Current named-product label provides72g available carbohydrate/100g DRY under AU/NZ Standard1.1.2 and Schedule11; fibre is not subtracted again. Polyols remain unknown, preventing the complete macro package. Historical2006 GI65 remains a LOW analogue, not lot identity. No test-portion wet/dry yield inference.",
       "edibleFraction": 1,
       "edibleEvidence": "Weighed edible input.",
       "retainedFraction": 1,
       "retentionEvidence": "All edible inputs and remaining broth retained; chickpeas weighed after separate boiling/draining, no invented dry yield or reheating factor.",
       "record": {
-        "id": "cc-hold-fineli-29208",
-        "name": "KUSKUS",
-        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/29208",
+        "id": "cc-hold-sanremo-couscous-label",
+        "name": "San Remo CousCous, ordinary dry durum semolina",
+        "sourceUrl": "https://sanremo.com.au/products/couscous/",
         "retrievedAt": "2026-11-02",
-        "licence": "THL Fineli Rel20 CC BY4.0",
+        "licence": "Manufacturer nutrition facts, attributed; no permission to redistribute page artwork claimed.",
         "state": "RAW",
-        "basis": "per100g-edible",
+        "basis": "per100g-as-sold",
         "carbohydrateDefinition": "EU_AVAILABLE",
-        "polyolsSourceVerified": true,
-        "polyolsEvidence": "Explicit frozen Fineli SUGOH; unknown values remain unknown.",
+        "polyolsSourceVerified": false,
+        "polyolsEvidence": "Not reported by manufacturer. Remains null; neither ingredients nor label rules establish a measured zero.",
         "per100g": {
-          "carbohydrate": 63.6,
-          "fibre": 3.5,
-          "polyols": 0,
-          "protein": 11.5,
-          "fat": 1.1
+          "carbohydrate": 72,
+          "fibre": 3,
+          "polyols": null,
+          "protein": 12.5,
+          "fat": 2
+        },
+        "definitionEvidence": {
+          "reportedJurisdiction": "AU/NZ",
+          "normalization": "EU_AVAILABLE is the existing model semantic for available carbohydrate excluding fibre/polyols, not an assertion of EU label jurisdiction. No fibre or polyol subtraction from the already available 72.",
+          "definitionSource": "https://www.legislation.gov.au/F2015L00385/2025-06-18/2025-06-18/text/original/epub/OEBPS/document_1/document_1.html",
+          "calculationSource": "https://www.legislation.gov.au/F2015L00481/2024-10-29/2024-10-29/text/original/epub/OEBPS/document_1/document_1.html",
+          "locations": [
+            "Standard 1.1.2 section 1.1.2-2(3), carbohydrate definition",
+            "Schedule11 S11-3(1)-(2), including (2)(d),(2)(h); S11-2(3) lists polyols"
+          ],
+          "manufacturerAnalyticalMethod": "Not disclosed; statutory definition supports meaning, not laboratory method or lot identity."
         },
         "primaryReference": {
-          "source_id": "29208",
-          "name": "KUSKUS",
-          "food_type": "FOOD",
-          "process": "RAW",
-          "edible_portion_percent": 100,
-          "ingredient_class": "WHEAT",
-          "food_class": "PASTAADD",
-          "per100g": {
-            "available_carbohydrate_g_per_100g": 63.6,
-            "fibre_g_per_100g": 3.5,
-            "polyols_g_per_100g": 0,
-            "protein_g_per_100g": 11.5,
-            "fat_g_per_100g": 1.1
+          "product": "San Remo CousCous, 500g/1kg ordinary couscous, 100% durum wheat semolina",
+          "state": "Dry, as sold; not rehydrated per100g",
+          "labelPer100g": {
+            "energyKj": 1530,
+            "proteinG": 12.5,
+            "fatG": 2,
+            "carbohydrateG": 72,
+            "sugarsG": 2.5,
+            "fibreG": 3,
+            "sodiumMg": 30
           },
-          "component_provenance": {
-            "fat_g_per_100g": {
-              "acquisition_type": "F",
-              "method_type": "E",
-              "method_indicator": "MIR003"
-            },
-            "available_carbohydrate_g_per_100g": {
-              "acquisition_type": "S",
-              "method_type": "S",
-              "method_indicator": "MI0181"
-            },
-            "protein_g_per_100g": {
-              "acquisition_type": "S",
-              "method_type": "I",
-              "method_indicator": "MI0123"
-            },
-            "polyols_g_per_100g": {
-              "acquisition_type": "S",
-              "method_type": "U",
-              "method_indicator": "MIR007"
-            },
-            "fibre_g_per_100g": {
-              "acquisition_type": "S",
-              "method_type": "S",
-              "method_indicator": "MI0172"
-            }
-          },
-          "portion_mass_g": {
-            "DL": 80,
-            "RKL": 12,
-            "TL": 4
-          }
+          "polyolsReported": false,
+          "retrievalMethod": "Official manufacturer page and official legislation read through web tool. Direct local HTTP returned403; no raw HTML download/hash claimed.",
+          "preparation": "100g dry +150ml boiling water, cover5min; optional butter/oil excluded from this recipe.",
+          "limits": "Current label is not a composition analysis of the2006 GI test lot. Named historical GI65 remains supplementary LOW analogue."
         }
       }
     },
@@ -728,5 +708,7 @@
       },
       "omissionImpactEvidence": "Pure salt/water only, not broth or seasoning. Water volume need not be converted into nutrient mass."
     }
-  ]
+  ],
+  "publicationStatus": "WITHHELD_SOURCE_INCOMPLETE",
+  "withholdingReason": "San Remo dry product label defines available carbohydrate72g/100g, fibre3, protein12.5, fat2, but does not quantify polyols. Existing strict model therefore cannot verify net/total carbohydrate or a complete four-macro package. Do not import Fineli polyols0 or publish partial macros. All four outputs withheld; GK uses separately supported available carbohydrate."
 }

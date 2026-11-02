@@ -17312,5 +17312,52 @@
         "TL": 4.5
       }
     }
+  },
+  {
+    "id": "cc-hold-sanremo-couscous-label",
+    "name": "San Remo CousCous, ordinary dry durum semolina",
+    "sourceUrl": "https://sanremo.com.au/products/couscous/",
+    "retrievedAt": "2026-11-02",
+    "licence": "Manufacturer nutrition facts, attributed; no permission to redistribute page artwork claimed.",
+    "state": "RAW",
+    "basis": "per100g-as-sold",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": false,
+    "polyolsEvidence": "Not reported by manufacturer. Remains null; neither ingredients nor label rules establish a measured zero.",
+    "per100g": {
+      "carbohydrate": 72,
+      "fibre": 3,
+      "polyols": null,
+      "protein": 12.5,
+      "fat": 2
+    },
+    "definitionEvidence": {
+      "reportedJurisdiction": "AU/NZ",
+      "normalization": "EU_AVAILABLE is the existing model semantic for available carbohydrate excluding fibre/polyols, not an assertion of EU label jurisdiction. No fibre or polyol subtraction from the already available 72.",
+      "definitionSource": "https://www.legislation.gov.au/F2015L00385/2025-06-18/2025-06-18/text/original/epub/OEBPS/document_1/document_1.html",
+      "calculationSource": "https://www.legislation.gov.au/F2015L00481/2024-10-29/2024-10-29/text/original/epub/OEBPS/document_1/document_1.html",
+      "locations": [
+        "Standard 1.1.2 section 1.1.2-2(3), carbohydrate definition",
+        "Schedule11 S11-3(1)-(2), including (2)(d),(2)(h); S11-2(3) lists polyols"
+      ],
+      "manufacturerAnalyticalMethod": "Not disclosed; statutory definition supports meaning, not laboratory method or lot identity."
+    },
+    "primaryReference": {
+      "product": "San Remo CousCous, 500g/1kg ordinary couscous, 100% durum wheat semolina",
+      "state": "Dry, as sold; not rehydrated per100g",
+      "labelPer100g": {
+        "energyKj": 1530,
+        "proteinG": 12.5,
+        "fatG": 2,
+        "carbohydrateG": 72,
+        "sugarsG": 2.5,
+        "fibreG": 3,
+        "sodiumMg": 30
+      },
+      "polyolsReported": false,
+      "retrievalMethod": "Official manufacturer page and official legislation read through web tool. Direct local HTTP returned403; no raw HTML download/hash claimed.",
+      "preparation": "100g dry +150ml boiling water, cover5min; optional butter/oil excluded from this recipe.",
+      "limits": "Current label is not a composition analysis of the2006 GI test lot. Named historical GI65 remains supplementary LOW analogue."
+    }
   }
 ]

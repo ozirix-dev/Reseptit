@@ -1,116 +1,132 @@
-# GK80 – carnitasin ja marokkolaisen couscousin HOLD-jatko
+# GK80 – Operaatio 145: PR #175:n lähdekorjaus
+
+**Päätös: CONDITIONAL GO.** Marokkolaisen couscousin korjattu
+GK-ehdokas on **37,50/annos, LOW**. Kaikki neljä julkista makroarvoa
+pidätetään puuttuvan tuotekohtaisen polyolitiedon vuoksi.
+Omistajan täsmällinen sisältö- ja menetelmähyväksyntä on edelleen PENDING.
+PR #175 säilyy Draftina. Readyä, mergeä ja deployta ei ole valtuutettu.
 
 Main-pohja: `adda64fda9bf63e69e190b6d888698587a250a2a`.
-Julkaistu lähtötila on 146/326 (44,79 %). Tämä Draft integroi yhden uuden
-couscous-version: ehdokaskattavuus 147/326 (45,09 %). Carnitas säilyy HOLDissa.
-Omistajan hyväksyntä on PENDING. Ready, merge ja deploy eivät ole valtuutettuja.
-ReportHubia tai aiempia tutkimus-PR:iä ei muuteta.
+Tuotanto: **146/326 (44,79 %)**. Tämä Draft: **147/326 (45,09 %)**.
+Ehdokaskattavuus ei ole tuotantokattavuus. Carnitas säilyy HOLDissa.
+Muut PR:t, ReportHub ja rinnakkaiset suunnitteluprojektit ovat erillään.
 
-## Koko kahden reseptin tulos
+## A–D. Koostumusratkaisu ja laskennan vaikutus
 
-| Resepti | Päätös | GK/annos |
-| --- | --- | ---: |
-| Marokkolainen couscous | Täsmällinen paistileike-/keitetty kikherne -ehdokas | 34,08 |
-| Carnitas-salaattitacot | HOLD säilyy; julkaistuun reseptiin ei muutoksia | – |
+[Valmistajan kuivan tuotteen etiketti](https://sanremo.com.au/products/couscous/)
+antaa /100 g: hiilihydraatti 72 g, kuitu 3 g, proteiini 12,5 g ja rasva 2 g.
+Polyoleja ei ilmoiteta. [AU/NZ-määritelmä](https://www.legislation.gov.au/F2015L00385/2025-06-18/2025-06-18/text/original/epub/OEBPS/document_1/document_1.html)
+ja [Schedule 11 S11—3](https://www.legislation.gov.au/F2015L00481/2024-10-29/2024-10-29/text/original/epub/OEBPS/document_1/document_1.html)
+tukevat luvun käsittelyä saatavana hiilihydraattina: kuitua tai polyoleja
+ei vähennetä siitä uudelleen. Tämä ei osoita tuotteen polyolimäärää nollaksi
+eikä selvitä valmistajan tarkkaa analyysimenetelmää.
+Sisäisen `EU_AVAILABLE`-kentän käyttö on määritelmän normalisointi,
+ei väite Australian etiketistä EU-etikettinä. EU:n etikettimääritelmässä
+hiilihydraatti sisältää polyoleja ([1169/2011, liite I kohta 7](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX%3A32011R1169)).
 
-Couscousin tulos on LOW-luottamuksen ainesosamalli. Se ei ole valmisaterian
-mitattu GI tai henkilökohtainen glukoosivaste. Julkinen näyttö käyttää nykyistä
-yhden merkitsevän numeron tarkkuutta. Mitään menetelmää, poisrajausrajaa,
-polyolivaatimusta tai aiempaa hyväksyntää ei muuteta.
+Fineli 29208:n 63,6 g on geneerisen kuivan kuskusin oma koostumustieto.
+Se ei ole nimetyn San Remo -tuotteen parempi koostumuslähde, kun valmistajan
+oma etiketti on saatavilla. Eroa ei selitetä kuituna tai kypsän tuotteen vetenä.
+Fineli säilyy vain vertailu-/historiatietona, ei tämän tuotteen aktiivisena syötteenä.
+Rajattu saman tuotteen tarkemman teknisen/polyolitietueen haku ei tuottanut
+parempaa ensisijaista lähdettä. Kolmatta yleistä tietokantaproxyä ei oteta käyttöön.
 
-## Couscousin ratkaisu ja hyväksyttävä tarkka versio
+Samalla 250 g:n kuivamäärällä ja neljällä annoksella:
 
-- Valitaan alkuperäisessä reseptissä sallittu paistileike: 600 g nahatonta,
-  luutonta syötävää raakaa reisilihaa. Rintalihasuikaleita ei käytetä.
-- Kikherneet ovat 400 g erikseen suolavedessä juuri keitettyjä kokonaisia
-  kikherneitä, punnittuina keittämisen ja valuttamisen jälkeen. Ne lisätään
-  valmiiseen kuumaan pataan pois lämmöltä ja tarjoillaan heti. Tämä ei ole
-  vanhan säilykkeen 15 minuutin uudelleenkeittämisen hyväksyntä. Ruoan
-  perusluonne säilyy kuumana kana-kasvis-kikherne-couscousina; kylmää
-  kikhernelisuketta tai hummusta ei vaihdeta mukaan.
-- [Khan, Tabassum ja Khan (2008)](https://doi.org/10.3923/pjn.2008.104.108)
-  antaa yksilöllisten iAUC-suhteiden keskiarvona GI:n 36. Vertailuruoka on
-  glukoosi, joten uutta skaalausta ei tehdä. Tutkimuksessa oli seitsemän
-  tervettä miestä, yksi vertailukerta ja neljä näyteajankohtaa.
-  Tarkka lajike, keittoaika ja tarjoilulämpötila puuttuvat. Tämä on rajattu
-  SUPPLEMENTARY/ANALOG/LOW-sovellus; ISO-yhdenmukaisuutta ei väitetä.
-- 250 g kuivaa tavallista San Remo CousCous -durumcouscousia turvotetaan
-  375 ml:ssa kiehuvaa vettä viisi minuuttia. Helmicouscous, paahtaminen,
-  jäähdyttäminen, ylimääräinen voi tai öljy eivät kuulu versioon.
-  Nimetty San Remo GI 65 on vuoden 2021 taulukon 1 rivillä 560.
-- Käyttövalmis kanaliemi määritellään uudessa versiossa punnittuna 1000 g:n
-  syötteenä. Tämä ei väitä yhden litran ja kilogramman tarkkaa vastaavuutta.
-  Kaikki kana, kasvikset ja jäljelle jäävä liemi jaetaan neljään syvään
-  annokseen. Haihtuvasta vedestä ei tehdä ravintoainehävikkiä eikä
-  tarjoilematonta liemiosuutta jätetä arvaukseksi. Couscousin turvotusvesi
-  on tästä erillinen. Tämä koko liemiosuuden tarjoilu on näkyvä versiopäätös.
-- Kokonaisaika on suuntaa-antavasti 150 minuuttia eikä sisällä mahdollista
-  pakkauksen edellyttämää esiliotusta. Kikherneiden keitto ajoitetaan niin,
-  ettei niitä tarvitse jäähdyttää ja kuumentaa uudelleen.
+| Vertailu / annos | A: Fineli, hylätty julkaisuvalinta | B: valmistajan etiketti |
+| --- | ---: | ---: |
+| Saatavan hiilihydraatin ainesosasumma | 61,8565 g | 67,1065 g |
+| GK tarkkana laskentatuloksena | 34,08285 | 37,49535 |
+| GK kahden desimaalin katselmointiarvona | 34,08 | **37,50** |
+| Proteiinin ainesosasumma | 46,447625 g | 47,072625 g |
+| Rasvan ainesosasumma | 17,31625 g | 17,87875 g |
+| Julkinen neljän makron paketti | vanha vertailu 61,86 / 70,94 / 46,45 / 17,32 g | **kaikki neljä pidätetty** |
 
-Omistajalta odotetaan yhtenä kokonaisuutena tämän valmistusjärjestyksen,
-liemiosuuden, rajatun GI-sovelluksen ja erillisten koostumusproxyjen hyväksyntää.
+Erotus: `(72−63,6)×250/100/4 = 5,25 g` saatavaa hiilihydraattia/annos;
+GK-muutos `5,25×65/100 = 3,4125`. Lähdevertailu ei ole biologinen vaihteluväli.
+Pienten mausteiden erillinen GK-poisrajauskatto säilyy 0,664 g:ssa/annos;
+sitä ei väitetä todelliseksi puuttuvaksi hiilihydraattimääräksi.
 
-## Koostumus ja uudet ravintoarvot
+B:n tunnetut ainesosasummat ovat diagnostisia, eivät osittain julkaistavia
+makroarvoja. Sivuston kokonais-CHO olisi symbolisesti `75,879 + 0,625×P`
+g/annos, missä P on kuivan San Remon tuntematon polyolimäärä g/100 g.
+Nykyinen makromalli vaatii varmennetun polyolitiedon myös neton todentamiseen.
+Siksi netto, kokonais-CHO, proteiini ja rasva ovat FI/EN/SV/TH:ssa kaikki `null`.
+Tämä käyttää olemassa olevaa `WITHHELD_SOURCE_INCOMPLETE`-menettelyä.
+Vanhaa Finelin nollaa tai AFCD-makroevidenssiä ei siirretä uudelle lähteelle.
 
-| Ravintoarvo / annos | Uusi laskelma |
-| --- | ---: |
-| Imeytyvä hiilihydraatti | 61,86 g |
-| Kokonaishiilihydraatti sivuston määritelmällä | 70,94 g |
-| Proteiini | 46,45 g |
-| Rasva | 17,32 g |
+## E. Hyväksyttävä täsmällinen versio
 
-Kaikki neljä arvoa lasketaan uudelleen, eikä vanhaa AFCD-pakettia nimetä
-uuden version evidenssiksi. Fineli 30792 vastaa reisilihaa ja 11089 kypsiä
-kikherneitä. Kuskusin Fineli 29208 sekä laimennetun kanaliemen 30315
-koostumukset ovat erillisiä ilmoitettuja LOW-proxyja.
+Operaatio 145 muuttaa lähdevalinnan, makrojen pidätyksen ja lähdeselitteet.
+Ainesosamäärät, valmistusohjeet ja annosmäärä säilyvät PR:n edellisestä HEADista:
 
-San Remon nykyinen etiketti ilmoittaa 72 g hiilihydraattia / 100 g kuivaa
-tuotetta, Fineli-proxy 63,6 g imeytyvää hiilihydraattia. Ero on olennainen
-rajoitus: etiketti ei ole Fineliä vastaava mittaus eikä siitä päätellä
-tuotekohtaista polyolinollaa. Proxyvalinta tuodaan erikseen näkyviin
-sisältöhyväksyntään. Valmistajapakkauksen ohje vahvistaa valmistustavan,
-mutta ei historiallista testierää tai Fineli-koostumuksen identtisyyttä.
+- 600 g nahatonta luutonta paistileikettä; ei rintalihavaihtoa.
+- 400 g juuri suolavedessä keitettyjä kokonaisia kikherneitä, punnittuina
+  valuttamisen jälkeen ja lisättyinä pois lämmöltä valmiiseen kuumaan pataan.
+  Ei säilykkeen 15 minuutin uudelleenkeiton GI-siirtoa.
+- 250 g kuivaa tavallista San Remo CousCousia ja 375 ml kiehuvaa vettä,
+  viisi minuuttia peitettynä. Ei helmiversiota, paahtamista tai jäähdytystä.
+- 1000 g käyttövalmista kanalientä punnittuna, kaikki jäljelle jäävä liemi
+  tarjoillaan neljässä annoksessa. Ei litran tiheysoletusta tai hävikkihyvitystä.
+- Kokonaisaika noin 150 minuuttia; mahdollinen esiliotus erikseen.
 
-Pienten mausteosuuksien USDA-pohjaiset kokonaishiilihydraattirajat lasketaan
-poisrajauksiksi. GK:n kumulatiivinen hiilihydraattiraja on 0,664 g/annos;
-samaa arvoa ei väitetä todelliseksi imeytyväksi määräksi. Makrojen
-energia-, proteiini-, rasva- ja molemmat hiilihydraattirajat tarkistetaan
-erikseen nykyisillä toleransseilla. Tuntemattomia polyoleja ei täytetä nollilla.
+Historiallinen San Remo GI 65 (2006, n=9) ei mittaa nykyistä tuote-erää.
+[Khan ym. 2008:n](https://doi.org/10.3923/pjn.2008.104.108) keitettyjen
+kikherneiden GI 36 on edelleen SUPPLEMENTARY/ANALOG/LOW: n=7 terveet miehet,
+yksi glukoosivertailu ja neljä näyteaikaa; lajike, keittoaika ja tarjoilulämpötila
+puuttuvat. Ei ISO-varmennusta, yleistä ruokalajiarvoa tai SEM-epävarmuusväliä.
+Kypsien kikherneiden Fineli 11089 ja kanaliemen Fineli 30315 säilyvät erillisinä
+ilmoitettuina koostumusproxyinä. Aiemmat hylätyt valmistusanalogiat säilyvät
+[lähdekatselmoinnissa](source-review.json).
 
-## Hylätyt oikopolut ja carnitasin todellinen este
+Omistajan hyväksyttäväksi tuodaan yhtenä kokonaisuutena tämä tarkka versio,
+rajatut LOW-sovellukset, nykyetiketin käyttö ja neljän makron pidätys.
+Täydellisen makropaketin GO edellyttäisi vielä tuotekohtaista polyolitietoa;
+hyväksyntä ei yksin korvaa sitä. Julkinen GK käyttää nykyistä yhden
+merkitsevän numeron tarkkuutta (tässä noin 40), ei katselmointitaulukon kahta desimaalia.
 
-Kuumennettujen säilykekikherneiden GI 51:n lähdekokeessa molempiin
-vertailuruokiin lisättiin voita. Lisäksi kyse oli nimetystä chilituotteesta.
-Sitä ei aktivoida tavallisen kikherneen GI:ksi. Toisen tutkimuksen
-18 g:n hiilihydraattipreloadista ei keksitä omaa GI-lukua. Myöskään
-keitettyjen, yön yli jäähdytettyjen ja mikrokuumennettujen kikherneiden
-toisen tutkimuksen hyvin matalaa tulosta ei siirretä tähän tuoreeseen versioon.
+## F. Carnitasin muuttumaton HOLD
 
-Carnitas sisältää appelsiinimehun lisäksi hedelmäpalat ja 2,5 tunnin
-haudutuksen. Raaka-appelsiinin GI 45, erillinen appelsiinimehu tai
-säilykemandariinin GI 47 eivät osoita tämän valmistusversion GI:tä.
-130 g appelsiinia lähteen A=8,9 g/100 g mukaan antaa 2,8925 g/annos:
-sitä ei voi jättää pois nykyisellä yksittäisen osuuden säännöllä.
-Tutkimusversion kokonainen limetin hedelmäliha ei myöskään vastaa alkuperäisen
-ohjeen limettimehua. Hedelmän määrää ei pienennetä, sitä ei poisteta eikä
-retentiota, GI-kattoa tai uutta sokerikomponenttimallia keksitä.
+Carnitasin appelsiinimehun ja hedelmäpalojen 2,5 tunnin haudutuksen GI-vastaavuutta
+ei ole osoitettu. Raaka-appelsiinia, mehua tai säilykemandariinia ei siirretä
+automaattisesti tähän valmistukseen. Appelsiiniosuus ylittää nykyisen
+yksittäisen poisrajausrajan. Reseptiä, määrää, makropakettia tai käännöksiä
+ei muuteta. Uutta appelsiinitutkimusta ei käynnistetä.
 
-Carnitas tarvitsee valmistusvastaavan lähdesovelluksen tai erikseen hyväksytyn
-menetelmäarvioinnin. Nykyinen resepti, makropaketti, GK-HOLD ja kieliversiot
-säilyvät muuttumattomina.
+## G–I. Jäljitettävyys ja varmennus
 
-## Jäljitettävyys ja varmennus
+- [Nykyinen integraatio, hashit ja makrotila](integration.json),
+  [päätökset](decisions.json), [kohdennettu laskenta](targeted-results.json).
+- [Operaatio 145:n lähdemääritelmä](operation145/source-definition.json),
+  [Decimal-herkkyysvertailu](operation145/sensitivity.json) ja
+  [nykyisen korjauksen varmennus](operation145/validation.json).
+- [Riippumaton Decimal-varmennin](verify_decimal.py) tarkistaa GK:n,
+  poisrajaukset ja todellisen puuttuvan polyolitiedon sekä makrojen pidätyksen.
+- [Mainin vertailutila](main146-baseline.json) suojaa 146 aiempaa numeerista
+  tulosta ja muiden 325 reseptin täydelliset GK-tulosobjektit.
+- [Vanha Fineli-vertailu](operation145/fineli-comparison-baseline.json) ja
+  alkuperäinen `validation.json` ovat historiallisia. Niiden 34,08 ja täydet
+  makrot eivät kuvaa tämän korjauksen julkaisutietoja.
+- Alkuperäinen PR-kuvaus säilyy historiatietona; tämän tiedoston nykyversio
+  ja uusi korjauscommitti korvaavat sen vanhan GK-/makroyhteenvedon.
+  Repo_guard ei tarjoa PR-kuvauksen muokkausta eikä suoria GitHub-muutoksia käytetä.
 
-- [Kahden tapauksen päätökset](decisions.json) ja
-  [hyväksytyt sekä hylätyt lähdesovellukset](source-review.json).
-- [Integraatio, uudet syötteet ja versiohashit](integration.json).
-- [Mainin 146 tuloksen vertailu](main146-baseline.json) suojaa kaikkien
-  muiden 325 reseptin täydelliset GK-tulosobjektit ja aiemmat numeeriset arvot.
-- [Kohdennettu laskenta](targeted-results.json) sekä
-  [riippumaton Decimal-varmennin](verify_decimal.py).
-- FI/EN/SV/TH sisältö sekä uudet makro- ja GK-evidenssit sidotaan samaan
-  täsmälliseen versioon. Vanhat lähde- ja tulosvertailut säilyvät
-  historiallisina; erillinen nykytilan testi tarkistaa 147/326-ehdokkaan.
+## J. Seuraava rajattu työjono
 
-Ei Readyä, mergeä, deployta, ReportHub-muutoksia tai uutta laajaa tutkimusajoa.
+[Yhdeksän nykyisen HOLD-reseptin priorisoitu työjono](operation145/next-queue.json)
+perustuu vain aiempiin tutkimuspaketteihin ja nykyisiin esteisiin:
+
+1. Jauhelihapihvit VHH-kermakastikkeella: Dijon-/liemituotteen koostumus ja sidonta.
+2. Ropa vieja: laakerin koostumusraja sekä tomaatti-/liemivastaavuus.
+3. Kana-parmesaanipannu parsakaalilla: pippuri ja nimetty liemituote.
+4. Kermainen kanasienipannu: liemi/Dijon sekä pippuri/timjami.
+5. Siskonmakkarakeitto juureksilla: mausteet, liemi ja valmistusvastaavuudet.
+6. Palak paneer: paneerin polyolit sekä mausteseoksen tarkka koostumus/määrä.
+7. Nakkikeitto kukkakaalilla: laakeri ja nakki-/liemilähde, kumulatiivinen poisrajaus.
+8. Jerk-kana: kevätsipulin syötävä massa ja nykyversion syötekartoitus.
+9. Pav bhaji: nimetyn mausteseoksen koostumus ja korianterin määrä.
+
+SOURCE-01 voi auttaa vain, jos tuleva aineisto todella kattaa täsmällisen
+tuotteen, tilan, hiilihydraattimääritelmän ja eksplisiittiset komponentti-/polyolitiedot.
+Se ei itsessään korvaa puuttuvaa GI-tutkimusta, valmistusnäyttöä tai reseptimassaa.
+Rinnakkaisten suunnittelujen sisältöön ei ole koskettu. Seuraavaa erää ei aloiteta.

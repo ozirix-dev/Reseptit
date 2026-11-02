@@ -1,0 +1,36 @@
+{
+  "decision": "CONDITIONAL GO",
+  "reviewedAt": "2026-11-02",
+  "sources": [
+    {
+      "url": "https://sanremo.com.au/products/couscous/",
+      "location": "Nutrition Information and Cooking Instructions",
+      "facts": "Dry label C72,fibre3,protein12.5,fat2; polyols not reported."
+    },
+    {
+      "url": "https://www.legislation.gov.au/F2015L00385/2025-06-18/2025-06-18/text/original/epub/OEBPS/document_1/document_1.html",
+      "location": "1.1.2-2(3)",
+      "interpretation": "Carbohydrate means available carbohydrate or available carbohydrate by difference."
+    },
+    {
+      "url": "https://www.legislation.gov.au/F2015L00481/2024-10-29/2024-10-29/text/original/epub/OEBPS/document_1/document_1.html",
+      "location": "S11-3(1),(2)(d),(2)(h); S11-2(3)",
+      "interpretation": "Sum uses available sugars/starch and specified available oligomers; difference subtracts dietary fibre and listed substances including polyols. Fibre is outside the available72. Legal exclusion is not measured polyol quantity or exact manufacturer analytical method."
+    },
+    {
+      "url": "https://www.legislation.gov.au/F2015L00395/2026-04-30/2026-04-30/text/original/epub/OEBPS/document_1/document_1.html",
+      "location": "1.2.8-6(9)",
+      "interpretation": "Individual declarations of listed components use conditions/5g threshold; no declaration does not prove absent polyols."
+    },
+    {
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX%3A32011R1169",
+      "location": "AnnexI point7",
+      "interpretation": "EU labelled carbohydrate includes polyols; distinguish EU label definition from the existing internal EU_AVAILABLE normalized field."
+    }
+  ],
+  "euComparison": "AU available label maps to existing EU_AVAILABLE semantic. Unlike EU carbohydrate labels that may include polyols, this normalization requires no second subtraction. No jurisdiction enum or calculation method changed.",
+  "fineliAssessment": "Fineli29208 is generic dry couscous, independently valid Fineli record, but not the better matching composition for a named product with its own label.63.6 vs72 is a material source-composition difference; not explained by adding/subtracting fibre3 or water. Retain Fineli only in sensitivity/history, not active product binding.",
+  "access": "Primary HTML read using web tool. Direct local HTTP403, no downloaded raw-page fingerprint asserted. Source facts and definition interpretation pinned in repository source/evidence hashes.",
+  "requiredOwnerDecision": "Approve exact LOW historicalGI/current-product application and unchanged hot chickpea/thigh/full-broth version, with all4 macros withheld. No approval inherited.",
+  "source01": "No SOURCE-01 worktree or unpublished specification accessed. Future data help is conditional on actual exact-product/state/definition/polyol/method coverage; cannot manufacture a missing humanGI or recipe mass."
+}

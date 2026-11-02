@@ -66,14 +66,14 @@ ingredients:
 source_language: fi
 source_recipe: reseptit/paaruoat/marokkolainen-couscous.md
 translation_of: marokkolainen-couscous
-carbs_net_per_serving_g: 61.86
-carbs_total_per_serving_g: 70.94
-protein_per_serving_g: 46.45
-fat_per_serving_g: 17.32
+carbs_net_per_serving_g: null
+carbs_total_per_serving_g: null
+protein_per_serving_g: null
+fat_per_serving_g: null
 ---
 # Marockansk couscous med kyckling och grönsaker
 
-Denna lårfiléversion använder nykokta hela kikärter. Koka dem separat och vänd ner dem varma på slutet; koka dem inte ytterligare 15 minuter i grytan. All angiven buljong ingår i portionerna. Den angivna GI-källan för San Remo används med en separat Fineli-jämförelse för sammansättningen; resultatet har LOW-tillförlitlighet.
+Denna lårfiléversion använder nykokta hela kikärter. Koka dem separat och vänd ner dem varma på slutet; koka dem inte ytterligare 15 minuter i grytan. All angiven buljong ingår i portionerna. Uppskattningen av glykemisk belastning använder tillverkarens kolhydratvärde för torr San Remo CousCous och en avgränsad GI-jämförelse; tillförlitligheten är LOW. Näringsvärden visas tills vidare inte eftersom tillverkaren inte anger produktens polyolhalt.
 
 ## Tillagning
 

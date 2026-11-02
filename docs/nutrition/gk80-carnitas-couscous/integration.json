@@ -21,12 +21,12 @@
           {
             "name": "San Remo CousCous -durumcouscousia, kuivana",
             "grams": 250,
-            "fineliRecordId": "cc-hold-fineli-29208",
+            "fineliRecordId": "cc-hold-sanremo-couscous-label",
             "giRecordId": "cc-hold-couscous65",
-            "massEvidence": "New exact weighed edible version. Full batch retained; no guessed density/yield or cooking-loss credit. Named ordinary fine durum couscous hydrated with boiling water5min and served hot; not pearl couscous, cooled or toasted version. Fineli29208 dry composition is a separate LOW proxy, not the branded label. No test-portion wet/dry yield inference.",
+            "massEvidence": "New exact weighed edible version. Full batch retained; no guessed density/yield or cooking-loss credit. Named ordinary fine durum couscous hydrated with boiling water5min and served hot; not pearl couscous, cooled or toasted version. Current named-product label provides72g available carbohydrate/100g DRY under AU/NZ Standard1.1.2 and Schedule11; fibre is not subtracted again. Polyols remain unknown, preventing the complete macro package. Historical2006 GI65 remains a LOW analogue, not lot identity. No test-portion wet/dry yield inference.",
             "foodKey": "cc-hold-couscous",
             "preparationKey": "cc-hold-couscous65",
-            "giMatchEvidence": "Named human GI used only as LOW food/preparation analogue. Named ordinary fine durum couscous hydrated with boiling water5min and served hot; not pearl couscous, cooled or toasted version. Fineli29208 dry composition is a separate LOW proxy, not the branded label. No test-portion wet/dry yield inference."
+            "giMatchEvidence": "Named human GI used only as LOW food/preparation analogue. Named ordinary fine durum couscous hydrated with boiling water5min and served hot; not pearl couscous, cooled or toasted version. Current named-product label provides72g available carbohydrate/100g DRY under AU/NZ Standard1.1.2 and Schedule11; fibre is not subtracted again. Polyols remain unknown, preventing the complete macro package. Historical2006 GI65 remains a LOW analogue, not lot identity. No test-portion wet/dry yield inference."
           },
           {
             "name": "kuorittua sipulia",
@@ -132,22 +132,22 @@
           }
         ]
       },
-      "ownerApproval": "PENDING_EXACT_VERSION_AND_PROXY_REVIEW",
-      "sourceLfSha256": "fab6a8c2a9ed8d39e4c3238ee25edd019397511ac9424188a3e4edd8a8f02886",
-      "macroEvidenceSha256": "db564350202661ad6ea4b8e7d53858bcd43a9e3dc602c86fd0e5ddfb3aa4cc1f",
-      "macroStatus": "ESTIMATE WITH EVIDENCE",
+      "ownerApproval": "PENDING_EXACT_VERSION_LOW_APPLICATION_AND_FOUR_MACRO_WITHHOLDING_REVIEW",
+      "sourceLfSha256": "1c75cbd6836e70046f893c74d245babe14ae8527f30e578681cb0ff028a1ba2c",
+      "macroEvidenceSha256": "13c354cd22007a435db10131603d64de98c9fbe60fbc323f09e339cf23d2cb06",
+      "macroStatus": "INSUFFICIENT SOURCE DATA",
       "macroValues": {
-        "carbs_net_per_serving_g": 61.86,
-        "carbs_total_per_serving_g": 70.94,
-        "protein_per_serving_g": 46.45,
-        "fat_per_serving_g": 17.32
+        "carbs_net_per_serving_g": null,
+        "carbs_total_per_serving_g": null,
+        "protein_per_serving_g": null,
+        "fat_per_serving_g": null
       },
-      "gk": 34.08,
+      "gk": 37.5,
       "omittedChoPerServingG": 0.664,
       "localeLfSha256": {
-        "en": "6498f74d229d7fbf4358243076077ea4e59afc1208196954f4d60d0fe35238b1",
-        "sv": "3ec36159816265a8d3a8e7362f21ce7caf6e1866cb6676f53aa116fa9a705baf",
-        "th": "0ab1532e55f0c10c0cfff0a102545b7a5112b241fda066468d5c6d2ec770648c"
+        "en": "7ca4e6c209642ca792c707c3b6ea2ab0699245645fbd38f26b45473665b469b2",
+        "sv": "f0fb1420dab6813601617b132696fd479e7b32dfed700592f8e7e134c6d0f7d7",
+        "th": "0ba1ae6c79a0e7fca355b956a710474ac322595cf296dcfa5b7d3ad894c780b7"
       }
     }
   ],
@@ -159,7 +159,8 @@
     "cc-hold-fineli-389",
     "cc-hold-fineli-11089",
     "cc-hold-fineli-30315",
-    "cc-hold-fineli-536"
+    "cc-hold-fineli-536",
+    "cc-hold-sanremo-couscous-label"
   ],
   "newGiRecords": [
     "cc-hold-couscous65",
@@ -170,5 +171,6 @@
   "ownerApproval": "PENDING_DRAFT_REVIEW",
   "readyAuthorized": false,
   "mergeAuthorized": false,
-  "deployAuthorized": false
+  "deployAuthorized": false,
+  "operation145Decision": "CONDITIONAL GO"
 }

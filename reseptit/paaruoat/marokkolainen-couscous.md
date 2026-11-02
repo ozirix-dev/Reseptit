@@ -71,14 +71,14 @@ translation_status:
   en: published
   sv: published
   th: published
-carbs_net_per_serving_g: 61.86
-carbs_total_per_serving_g: 70.94
-protein_per_serving_g: 46.45
-fat_per_serving_g: 17.32
+carbs_net_per_serving_g: null
+carbs_total_per_serving_g: null
+protein_per_serving_g: null
+fat_per_serving_g: null
 ---
 # Marokkolainen couscous kanalla ja kasviksilla
 
-Tämä on paistileikeversio juuri keitetyillä kokonaisilla kikherneillä. Kikherneet keitetään erikseen ja lisätään lopuksi kuumina; niitä ei keitetä toista kertaa padassa 15 minuuttia. Kaikki lueteltu liemi käytetään annoksiin. San Remon nimettyyn GI-lähteeseen sovelletaan erillistä Fineli-koostumusvertailua; tulos on LOW-arvio.
+Tämä on paistileikeversio juuri keitetyillä kokonaisilla kikherneillä. Kikherneet keitetään erikseen ja lisätään lopuksi kuumina; niitä ei keitetä toista kertaa padassa 15 minuuttia. Kaikki lueteltu liemi käytetään annoksiin. GK-arvio käyttää kuivan San Remo CousCous -tuotteen valmistajan hiilihydraattitietoa ja rajattua GI-vertailua; tulos on LOW-arvio. Ravintoarvot ovat toistaiseksi pois näkyvistä, koska valmistaja ei ilmoita tuotteen polyolimäärää.
 
 ## Valmistus
 

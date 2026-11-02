@@ -33,6 +33,10 @@ for e in pack['recipes']:
     for k in totals:totals[k]+=dec(row['amount'])*dec(rec['per100g'][k])/100/serv
   for k,v in caps.items():assert v<= (10 if k=='kcal' else 1)
   actual=e['macroValues'];assert rounded(totals['carbohydrate'])==actual['carbs_net_per_serving_g'];assert rounded(totals['carbohydrate']+totals['fibre']+totals['polyols'])==actual['carbs_total_per_serving_g'];assert rounded(totals['protein'])==actual['protein_per_serving_g'];assert rounded(totals['fat'])==actual['fat_per_serving_g']
- else:assert macros['ingredients'][6]['record']['per100g']['polyols'] is None
+ else:
+  assert macros['publicationStatus']=='WITHHELD_SOURCE_INCOMPLETE'
+  assert macros['ingredients'][1]['record']['per100g']['polyols'] is None
+  assert macros['ingredients'][1]['record']['polyolsSourceVerified'] is False
+  assert all(v is None for v in e['macroValues'].values())
  out.append({'recipeId':e['recipeId'],'gkExact':str(gk),'omittedExact':str(omitted)})
 print(json.dumps({'status':'PASS','checked':len(out),'recipes':out}))

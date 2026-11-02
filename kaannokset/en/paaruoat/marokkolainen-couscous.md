@@ -66,14 +66,14 @@ ingredients:
 source_language: fi
 source_recipe: reseptit/paaruoat/marokkolainen-couscous.md
 translation_of: marokkolainen-couscous
-carbs_net_per_serving_g: 61.86
-carbs_total_per_serving_g: 70.94
-protein_per_serving_g: 46.45
-fat_per_serving_g: 17.32
+carbs_net_per_serving_g: null
+carbs_total_per_serving_g: null
+protein_per_serving_g: null
+fat_per_serving_g: null
 ---
 # Moroccan couscous with chicken and vegetables
 
-This thigh-fillet version uses freshly boiled whole chickpeas. Boil them separately and fold them in hot at the end; do not cook them again in the stew for 15 minutes. Serve all listed stock in the portions. The named San Remo GI comparator uses a separate Fineli composition proxy; the result is a LOW-confidence estimate.
+This thigh-fillet version uses freshly boiled whole chickpeas. Boil them separately and fold them in hot at the end; do not cook them again in the stew for 15 minutes. Serve all listed stock in the portions. The glycaemic-load estimate uses the manufacturer’s carbohydrate value for dry San Remo CousCous and a limited GI comparator; confidence is LOW. Nutrition values are temporarily withheld because the manufacturer does not report the product’s polyol content.
 
 ## Instructions
 

@@ -2,18 +2,18 @@
   "checked": [
     {
       "recipeId": "marokkolainen-couscous",
-      "macroStatus": "ESTIMATE WITH EVIDENCE",
+      "macroStatus": "INSUFFICIENT SOURCE DATA",
       "macros": {
-        "carbs_net_per_serving_g": 61.86,
-        "carbs_total_per_serving_g": 70.94,
-        "protein_per_serving_g": 46.45,
-        "fat_per_serving_g": 17.32
+        "carbs_net_per_serving_g": null,
+        "carbs_total_per_serving_g": null,
+        "protein_per_serving_g": null,
+        "fat_per_serving_g": null
       },
-      "gk": 34.08,
+      "gk": 37.5,
       "omittedCho": 0.664
     }
   ],
   "all1Calculated": true,
-  "completeMacroPackages": 1,
-  "withheldMacroPackages": 0
+  "completeMacroPackages": 0,
+  "withheldMacroPackages": 1
 }

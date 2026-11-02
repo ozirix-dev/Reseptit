@@ -1,0 +1,64 @@
+{
+  "sameRecipeAmounts": true,
+  "servings": 4,
+  "dryCouscousG": 250,
+  "formula": "GK=sum(grams*availableCHO_per100g/100*GI/100)/4; product source difference is not a biological uncertainty interval.",
+  "A": {
+    "source": "Fineli29208, superseded generic proxy",
+    "per100g": {
+      "carbohydrate": 63.6,
+      "fibre": 3.5,
+      "polyols": 0.0,
+      "protein": 11.5,
+      "fat": 1.1
+    },
+    "gkExact": "34.08285",
+    "gkRounded": "34.08",
+    "modelPerServing": {
+      "carbohydrate": "61.8565",
+      "fibre": "9.0850",
+      "polyols": "0",
+      "protein": "46.447625",
+      "fat": "17.31625"
+    },
+    "publicFourMacrosHistoricalOnly": {
+      "carbs_net_per_serving_g": 61.86,
+      "carbs_total_per_serving_g": 70.94,
+      "protein_per_serving_g": 46.45,
+      "fat_per_serving_g": 17.32
+    }
+  },
+  "B": {
+    "source": "cc-hold-sanremo-couscous-label",
+    "per100g": {
+      "carbohydrate": 72,
+      "fibre": 3,
+      "polyols": null,
+      "protein": 12.5,
+      "fat": 2
+    },
+    "gkExact": "37.49535",
+    "gkRounded": "37.50",
+    "knownIngredientModelPerServing": {
+      "carbohydrate": "67.1065",
+      "fibre": "8.7725",
+      "polyols": null,
+      "protein": "47.072625",
+      "fat": "17.87875"
+    },
+    "siteTotalCarbohydratePerServing": "75.879 +0.625*P, where P is unknown product polyols g/100g. Symbolic only, not a publishable point.",
+    "publicFourMacros": null,
+    "publicationStatus": "WITHHELD_SOURCE_INCOMPLETE",
+    "limits": "Known available carbohydrate, protein and fat subtotals are diagnostic only; all4 public macros null under unchanged atomic model. Small-spice omission bounds remain separate."
+  },
+  "difference": {
+    "productAvailableChoGPer100g": "8.4",
+    "wholeRecipeAvailableChoG": "21",
+    "perServingAvailableChoG": "5.25",
+    "gkPerServing": "3.41250"
+  },
+  "C": {
+    "decision": "NOT_AVAILABLE",
+    "reason": "Bounded exact-product searches for technical specification/polyols/sorbitol found no more detailed primary named-product composition. Retailer repeats/older labels and unrelated generic tables do not establish this product’s missing polyols; no substitute adopted."
+  }
+}
