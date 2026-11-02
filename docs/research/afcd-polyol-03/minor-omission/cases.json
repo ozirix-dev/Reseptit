@@ -1,0 +1,123 @@
+{
+  "profile": "GK_B_NAMED_SOURCES_WITH_A_MINOR_OMISSIONS_V1",
+  "activation": false,
+  "ownerApproval": false,
+  "publicationAuthorized": false,
+  "cases": [
+    {
+      "recipeId": "hernekeitto-savupotkalla",
+      "level": "B",
+      "servings": 4,
+      "paths": {
+        "fi": "reseptit/paaruoat/hernekeitto-savupotkalla.md"
+      },
+      "recipeSha256": {
+        "fi": "5ecde580ab6f4707451004339aecf82bb956d9a32bfed7851e6fd9c862d2bd6d"
+      },
+      "candidateIngredients": [
+        {
+          "name": "kuivattu vihreä herne",
+          "grams": 500,
+          "compositionId": "371",
+          "giId": "boiled-marrowfat-peas47",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Full original500g DRY peas, native Fineli371 CHO27.166g100. No cooked composition/dry-mass substitution or soaking-loss deduction."
+        },
+        {
+          "name": "Kivikylän savupotka luineen",
+          "grams": 700,
+          "compositionId": "kivikyla-savupotka-upper",
+          "giId": null,
+          "carbohydrateUse": "UPPER_BOUND",
+          "note": "Retain original700g gross bone-in input. Edible mass <=700g; manufacturer nominalCHO0.5g100 yields0.875g/serving source-model cap. All broth retained; not zero, no loin proxy or edible-yield claim."
+        },
+        {
+          "name": "vesi",
+          "grams": 2000,
+          "compositionId": "922",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Exact weighed content-version input; not an asserted spoon/piece conversion."
+        },
+        {
+          "name": "punnittu sipuli",
+          "grams": 55,
+          "compositionId": "335",
+          "giId": "veg40",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Exact weighed content-version input; not an asserted spoon/piece conversion."
+        },
+        {
+          "name": "kaksi laakerinlehteä yhteensä",
+          "grams": 1,
+          "compositionId": "physical",
+          "giId": null,
+          "carbohydrateUse": "UPPER_BOUND",
+          "note": "Exact weighed content-version input; not an asserted spoon/piece conversion."
+        },
+        {
+          "name": "kuivattu meirami",
+          "grams": 1,
+          "compositionId": "physical",
+          "giId": null,
+          "carbohydrateUse": "UPPER_BOUND",
+          "note": "Exact weighed content-version input; not an asserted spoon/piece conversion."
+        },
+        {
+          "name": "mustapippuri",
+          "grams": 0.5,
+          "compositionId": "11177",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Exact weighed content-version input; not an asserted spoon/piece conversion."
+        },
+        {
+          "name": "suola",
+          "grams": 6,
+          "compositionId": "30",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Exact weighed content-version input; not an asserted spoon/piece conversion."
+        },
+        {
+          "name": "sinappi tarjoiluun",
+          "grams": 16,
+          "compositionId": "28",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Exact weighed content-version input; not an asserted spoon/piece conversion."
+        }
+      ],
+      "originalIngredientGroups": {
+        "kuivattu vihreä herne": "kuivattu vihreä herne",
+        "Kivikylän savupotka luineen": "Kivikylän savupotka luineen",
+        "vesi": "vesi",
+        "punnittu sipuli": "punnittu sipuli",
+        "kaksi laakerinlehteä yhteensä": "kaksi laakerinlehteä yhteensä",
+        "kuivattu meirami": "kuivattu meirami",
+        "mustapippuri": "suola ja mustapippuri",
+        "suola": "suola ja mustapippuri",
+        "sinappi tarjoiluun": "sinappi tarjoiluun"
+      },
+      "omitOriginalIngredientGroups": [
+        "Kivikylän savupotka luineen",
+        "kaksi laakerinlehteä yhteensä",
+        "kuivattu meirami",
+        "suola ja mustapippuri",
+        "sinappi tarjoiluun"
+      ],
+      "preparationDecision": "Keep original500g dry peas,700g smoked shank,2L water,4servings,overnight soak and1.5–2h soft soup; all broth and meat retained. Exact Kivikylä product; onion55g,two bay leaves together1g,marjoram1g,pepper0.5g,salt6g,mustard16g are weighed NEW content version, not inferred conversions. Do not tune these quantities to pass; changes require reevaluation. No category-mean34 or mustard58. Conditional B boiled-marrowfat47 analogy requires source/preparation review. Near-threshold label-model omission is not a robust biological bound.",
+      "requiredDecisions": [
+        "GK_B_MINOR_OMISSION_PROFILE_APPROVAL",
+        "BOILED_MARROWFAT_TO_LONG_COOKED_GREEN_PEA_SOUP_ANALOGY",
+        "KIVIKYLA_NOMINAL_LABEL_CAP_NOT_LOT_BOUND",
+        "EXACT_WEIGHED_CONTENT_VERSION",
+        "GK_ONLY_CONTRACT"
+      ],
+      "macroAction": "PRESERVE_ALL_CURRENT_VALUES_AND_WITHHOLDINGS",
+      "approval": false,
+      "confidence": "LOW",
+      "inputSha256": "9f9f667969d072e0a6bcba903ef54f6732f9163d9788860b8de0ac72732d5cee"
+    }
+  ]
+}

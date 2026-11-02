@@ -1,0 +1,99 @@
+{
+  "records": [
+    {
+      "id": "371",
+      "kind": "FINELI_CHOAVL",
+      "path": "docs/nutrition/fineli-release-20-reference.json",
+      "nativeId": "371",
+      "nativeField": "per100g.available_carbohydrate_g_per_100g",
+      "nativeRowSha256": "65de807e379d957ca3483df8223a87e3baddadb90c233b1352be700e1f31a3bf",
+      "availablePer100g": 27.166,
+      "name": "HERNE, VIHREÄ, KUIVATTU",
+      "polyols": "NOT_INFERRED_OR_USED",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/371"
+    },
+    {
+      "id": "28",
+      "kind": "FINELI_CHOAVL",
+      "path": "docs/nutrition/fineli-release-20-reference.json",
+      "nativeId": "28",
+      "nativeField": "per100g.available_carbohydrate_g_per_100g",
+      "nativeRowSha256": "16aff4ec90cb27a5173d76566ead1ca31798a0105a3fc03c6f060ecf1742b59a",
+      "availablePer100g": 14.1,
+      "name": "SINAPPI",
+      "polyols": "NOT_INFERRED_OR_USED",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/28"
+    },
+    {
+      "id": "335",
+      "kind": "FINELI_CHOAVL",
+      "path": "docs/nutrition/fineli-release-20-reference.json",
+      "nativeId": "335",
+      "nativeField": "per100g.available_carbohydrate_g_per_100g",
+      "nativeRowSha256": "4be43d07de2a5f96f30e211cb3804ed420b9044b298fdc01f88e3efe931f3d13",
+      "availablePer100g": 4.8,
+      "name": "SIPULI, KELTASIPULI",
+      "polyols": "NOT_INFERRED_OR_USED",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/335"
+    },
+    {
+      "id": "11177",
+      "kind": "FINELI_CHOAVL",
+      "path": "docs/nutrition/fineli-release-20-reference.json",
+      "nativeId": "11177",
+      "nativeField": "per100g.available_carbohydrate_g_per_100g",
+      "nativeRowSha256": "b98e7d742b2c726253b7674bd36fcae8a0f5aaaade1ff0150030f24d06ce22e7",
+      "availablePer100g": 38.31,
+      "name": "MUSTAPIPPURI",
+      "polyols": "NOT_INFERRED_OR_USED",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11177"
+    },
+    {
+      "id": "922",
+      "kind": "FINELI_CHOAVL",
+      "path": "docs/nutrition/fineli-release-20-reference.json",
+      "nativeId": "922",
+      "nativeField": "per100g.available_carbohydrate_g_per_100g",
+      "nativeRowSha256": "fff48d11160ab5eb5c9e16c423f9d4074c3700451cf2f708c0f70a4af5112377",
+      "availablePer100g": 0.0,
+      "name": "VESI, VESIJOHTOVESI",
+      "polyols": "NOT_INFERRED_OR_USED",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/922"
+    },
+    {
+      "id": "30",
+      "kind": "FINELI_CHOAVL",
+      "path": "docs/nutrition/fineli-release-20-reference.json",
+      "nativeId": "30",
+      "nativeField": "per100g.available_carbohydrate_g_per_100g",
+      "nativeRowSha256": "34aa21fc70a1ff3dff0328d7db538504cd4cf57e58243c211ccb0532815c8328",
+      "availablePer100g": 0.0,
+      "name": "RUOKASUOLA, JODIOITU",
+      "polyols": "NOT_INFERRED_OR_USED",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/30"
+    },
+    {
+      "id": "physical",
+      "kind": "PHYSICAL_MASS_CAP",
+      "path": "docs/nutrition/gk80-operation149/method-proposal.md",
+      "fileSha256": "2b69175e12ad0aa437c8149624069f2caf2274054e420131bd43d3b261bd938a",
+      "nativeField": "available CHO cannot exceed total weighed edible ingredient mass",
+      "availablePer100g": 100,
+      "name": "Total ingredient mass, an upper bound only",
+      "url": "https://doi.org/10.2337/dc08-1239",
+      "polyols": "UNKNOWN_OR_UNUSED; no P0 inferred"
+    },
+    {
+      "id": "kivikyla-savupotka-upper",
+      "kind": "LABEL_CARBOHYDRATE_UPPER",
+      "path": "docs/research/afcd-polyol-03/minor-omission/product-observations.json",
+      "nativeId": "kivikyla-savupotka-2363013000008",
+      "nativeField": "carbohydrate",
+      "nativeRowSha256": "e4e0234b300820943a52c5973acc9878051bd1070ecaefbcbe0e880c5d18496a",
+      "availablePer100g": 0.5,
+      "name": "Kivikylän savupotka EAN2363013000008",
+      "polyols": "UNKNOWN; no P0",
+      "sourceUrl": "https://www.kivikylan.fi/tuotteet/palvilihat/savupotka/"
+    }
+  ]
+}

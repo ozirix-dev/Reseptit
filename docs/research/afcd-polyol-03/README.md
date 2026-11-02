@@ -8,7 +8,7 @@ Uusia GI-vakioita tai yleistä aterian vasteen alennuskerrointa ei lisätty. Kai
 
 ## Yhteiset luvut ilman kaksoislaskentaa
 
-[joint-proposal-index.csv](joint-proposal-index.csv) yhdistää #183:n commitin `e0e761a14630d287be81eb61593b8e086e5b06a8` 30 ehdotusta tämän luovutuksen 22 ehdotukseen. Yhteisiä reseptitunnuksia on 19: alkuperäiset 16 sekä kahvijogurtti, rahkakulho ja hojicha-kulho. **Yhteensä on 33 uniikkia laskennallista ehdokasta.** Niistä16 on menetelmä- ja sisältöhyväksyttyjä, 17 odottaa lähdesovellus-, menetelmä- tai sisältökatselmointia.
+[joint-proposal-index.csv](joint-proposal-index.csv) yhdistää #183:n commitin `c559be5855b86e4b89b8f780df51a6298612ec6f` 30 ehdotusta tämän luovutuksen 22 ehdotukseen. Yhteisiä reseptitunnuksia on 19: alkuperäiset 16 sekä kahvijogurtti, rahkakulho ja hojicha-kulho. **Yhteensä on 33 uniikkia laskennallista ehdokasta.** Niistä16 on menetelmä- ja sisältöhyväksyttyjä.17 muuta jakautuvat kuuteen tunnettuun lähde-HOLDiin ja11 muuhun avoimeen katselmointiin. Vaikka kaikki tunnetun HOLD-ryhmän ulkopuoliset27 ehdotusta osoittautuisivat kelvollisiksi,30:n erästä puuttuisi kolme.
 
 **30:n raja ylittyy laskennallisten ehdotusten määrässä. Tämä laskenta ei vielä todista30 lähdekelpoista julkaisuvalmista arvoa.** Omistajan hyväksyntä ei korvaa puuttuvaa lähde- tai valmistusvastaavuutta. Vain hyväksytyn julkaisusopimuksen täyttävät ja oikeasti julkaistut arvot kasvattavat todellista kattavuutta.
 
@@ -31,7 +31,7 @@ Uusia GI-vakioita tai yleistä aterian vasteen alennuskerrointa ei lisätty. Kai
 | Uusi kansallinen MEXT-lähdeperhe, natiivi saatavan hiilihydraatin massa |1 uusi A-aritmetiikan ehdotus kolmesta riippuvasta reseptistä | Toteutettu tässä. Lähdeperheen hyväksyntä tarvitaan; natolle ei aseteta GI:tä. |
 | GI-sertifioitu riisi yksin |0 tarkastelluista8 reseptistä | Muut riippumattomat lähde-/tuote-esteet säilyvät. Low-GI-sertifikaatti ei ole täsmällinen GI55-mittaus. |
 
-Suurin uusi yhteismenetelmä on valmistettujen kokonaisuuksien lähdesidonta. Se palvelee biryania, baozia, pizzaa, roti jalaa, upmaa ja mannapohjaista taatelipuuroa. Jokainen ainesosa kuuluu tasan yhteen laskentayksikköön. Koko aterian GI edellyttää koko määritellyn aterian hiilihydraattimäärää; pohjan tai verkkolettukomponentin GI ei kata kastiketta tai koko lautasta. Tutkimuksen testiannos ei määrää reseptin annosta. Biryani ei siirry paellaan, Cheela farinataan tai riisi–natto-aterian GI pelkkään nattoon.
+Valmistettujen kokonaisuuksien lähdesidonta tuotti eniten laskennallisia kokeita, mutta #183:n viimeisin lähdevastaavuusmatriisi pitää kaikki kuusi lähde-HOLDissa. Niiden GI-siirtoa ei voi ottaa julkaisuun ilman parempaa koostumus-/valmistusnäyttöä. Suositeltu seuraava integraatio on siksi kuuden A-version katselmointipaketti. Yhteismenetelmä palvelee biryania, baozia, pizzaa, roti jalaa, upmaa ja mannapohjaista taatelipuuroa. Jokainen ainesosa kuuluu tasan yhteen laskentayksikköön. Koko aterian GI edellyttää koko määritellyn aterian hiilihydraattimäärää; pohjan tai verkkolettukomponentin GI ei kata kastiketta tai koko lautasta. Tutkimuksen testiannos ei määrää reseptin annosta. Biryani ei siirry paellaan, Cheela farinataan tai riisi–natto-aterian GI pelkkään nattoon.
 
 Käytin #183:n olemassa olevia suljettuja laskentatyökaluja:8 uuden valmistus-/lähdereitin ja5 lähdepalautuksen laskelmat läpäisivät niiden portit. Näistä kahdeksasta kuusi käyttää varsinaista valmistetun kokonaisuuden menetelmää; Chettinad ja kaakao-kookos-chia ovat muut kaksi lähde-/koodaussovellusta. Tämä ei varmista lähderuoan tieteellistä vastaavuutta. Erityisesti vanhaan diabetesaineistoon ja höyrytettyyn mannaan perustuva taatelipuuro on heikko sovellus. Se voi jäädä HOLDiin; sitä ei suositella ensimmäiseen julkaisuintegraatioon ilman parempaa valmistusnäyttöä.
 
@@ -54,6 +54,12 @@ Dashimakin alkuperäinen200 ml dashi sidotaan [valmistajan7 g/litra -ohjeeseen](
 Kolmessa yhteisessä reseptissä säilytetään vaihtoehtoiset ehdotukset yhden reseptitunnuksen alla. Kahvijogurtin10,92 on sama piste. Rahkakulhon paikallinen 2,41 B säilyttää suomalaisen metsämustikan ja esittää kanadalaisen luonnonmustikan53:n avoimena lajien välisenä analogiana; #183:n2,34 A käyttää pohjoisamerikkalaista marjaversiota. Hojichan paikallinen 8,82 A käyttää kaikki 2 g jauhettua [MUSO TLF013 -lehteä](https://muso-intl.com/wp-content/uploads/2022/01/TLF013-JAS-ORGANIC-HOJICHA-WEB.pdf), jonka EU-hiilihydraatti13,2 g/100 g on saatavan hiilihydraatin lähdemallin yläraja. #183:n8,42 B käyttää hauduketta. Suosittelen täyslehtiselle versiolle sen omaa A-lähdesidosta. Versioiden valinta ei moninkertaista kattavuutta.
 
 Paikallisesti varmennettu joukko on 22:13 A nykyisillä lähdeperheillä,1 A-aritmetiikan/MEXT-lähdepäätöksen ehdotus ja8 B. [source-extensions/cases.jsonl](source-extensions/cases.jsonl) sisältää vain kuusi lisäsyötettä; alkuperäisten 16 tulokset ovat [16-decision-matrix.csv](16-decision-matrix.csv):ssä. [summary.json](summary.json) on paikallisen joukon tilasto; koko yhteinen33 on erillisessä koonnissa.
+
+## Uusi B-poisjättöprofiili ja konkreettinen päätöserä
+
+[Kuuden A-version katselmointipaketti](six-a-review.md) yksilöi lähde-, sisältö- ja syöteversiot hyväksyntää varten. Niiden ehdollinen lisäys on6, yhteensä178/326 aiemman16:n kanssa, kun erillinen julkaisu myöhemmin hyväksytään.
+
+Uusi eristetty [B-malli nykyisillä A-poisjättörajoilla](minor-omission-review.md) vähentää GI50-mausteoletuksia: kolme vanhaa reseptiä saa vaihtoehdon ilman trace50-koodausta. Ne eivät lisää reseptimäärää. Kaakao-kookos-chia jää tässä profiilissa HOLDiin. Hernekeitto sai yhden uuden tutkimusmallin noin16, mutta sen1,9868875g poisjättö on aivan2g-rajan tuntumassa ja GI47 on keitetyn marrowfat-herneen heikko lähdeanalogia. Sitä ei lasketa yhteiseen33:een tai lähdekelpoiseksi julkaisuehdokkaaksi. Menetelmä odottaa hyväksyntää.
 
 ## Seuraava todellinen hyppy ja hyväksynnät
 

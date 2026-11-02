@@ -1,0 +1,33 @@
+{
+  "records": [
+    {
+      "id": "boiled-marrowfat-peas47",
+      "kind": "NAMED_HUMAN_GI",
+      "values": [
+        47
+      ],
+      "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+      "tablePdf": "https://nutritotal.com.br/pro/wp-content/uploads/2021/09/Tabela2_IG.pdf",
+      "tablePdfSha256": "af92f778e018a5b0779846cf756061370c674b386f7823d9917a505347a4ccba",
+      "locator": "Supplement2 printed p75 item3146; source ref132",
+      "food": "Marrowfat peas, dried, boiled in water with2g salt",
+      "country": "Canada",
+      "testYear": 1981,
+      "healthyParticipants": 6,
+      "reference": "glucose100,2h; repeated reference yes",
+      "testAvailableCho": 50,
+      "samplingMinutes": [
+        0,
+        15,
+        30,
+        45,
+        60,
+        90,
+        120
+      ],
+      "sem": 3,
+      "semUsedAsRange": false,
+      "limitation": "Low-quality n6 human observation; not a measured Finnish green-pea soup GI. Marrowfat versus Finnish dried green peas and1.5–2h soft soup preparation are explicit B analogies; mixture effects unknown.47 is one conditional source scenario, not a physiological bound."
+    }
+  ]
+}

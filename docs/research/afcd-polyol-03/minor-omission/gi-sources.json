@@ -1,0 +1,47 @@
+{
+  "records": [
+    {
+      "id": "boiled-marrowfat-peas47",
+      "kind": "NAMED_HUMAN_GI",
+      "values": [
+        47
+      ],
+      "path": "docs/research/afcd-polyol-03/minor-omission/source-observations.json",
+      "nativeId": "boiled-marrowfat-peas47",
+      "nativeRowSha256": "468a7772dbeb06f7a98e724dfc5c2bfa0950f02e4b237fe4ec86a324f4eaa276",
+      "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+      "locator": "Supplement2 printed p75 item3146; source ref132",
+      "limitation": "Low-quality n6 human observation; not a measured Finnish green-pea soup GI. Marrowfat versus Finnish dried green peas and1.5–2h soft soup preparation are explicit B analogies; mixture effects unknown.47 is one conditional source scenario, not a physiological bound.",
+      "allowedCompositionIds": [
+        "371"
+      ]
+    },
+    {
+      "id": "veg40",
+      "kind": "EXISTING_PUBLISHED_CODING",
+      "values": [
+        40
+      ],
+      "path": "docs/nutrition/glycemic-index-records.json",
+      "nativeId": "op142-vegetable-imputation40",
+      "nativeRowSha256": "529f04e0c0580f4492df49521fb05cede453c7424eb46bdd985457efea57d727",
+      "sourceUrl": "https://doi.org/10.2337/dc08-1239",
+      "locator": "Conclusions: assignment discussion",
+      "limitation": "Project published-imputation assignment, not measured ingredient or meal GI. Coding estimate only. Application to named fresh herbs, sprouts and alliums is an explicit project interpretation. It does not establish a physiological maximum or a one-unit uncertainty bound. Not a default for seed spices, flour, sauces or stock.",
+      "allowedCompositionIds": [
+        "303",
+        "324",
+        "33023",
+        "33456",
+        "335",
+        "352",
+        "386",
+        "387",
+        "389",
+        "393",
+        "F006250",
+        "F008806"
+      ]
+    }
+  ]
+}

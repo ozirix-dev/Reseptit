@@ -1,5 +1,5 @@
 {
-  "upstreamHead": "e0e761a14630d287be81eb61593b8e086e5b06a8",
+  "upstreamHead": "c559be5855b86e4b89b8f780df51a6298612ec6f",
   "upstreamArithmeticProposals": 30,
   "localHandoffArithmeticProposals": 22,
   "overlappingSupplementRecipeIds": [
@@ -26,5 +26,18 @@
   "gapTo80AfterHypothetical33": 72,
   "actualPublishedGain": 0,
   "preparedGroupArithmeticProposals": 6,
-  "newGiConstantInMextRoute": false
+  "newGiConstantInMextRoute": false,
+  "sourceHoldReviewHead": "c559be5855b86e4b89b8f780df51a6298612ec6f",
+  "sourceHoldRecipeIds": [
+    "baozi",
+    "hyderabadi-kanabiryani",
+    "intialainen-mannasuurimoupma",
+    "malesialainen-roti-jala-currykanalla",
+    "pizza-margherita",
+    "pohjoisafrikkalainen-taatelipuuro-appelsiinilla"
+  ],
+  "sourceHoldCount": 6,
+  "nonHoldArithmeticProposals": 27,
+  "pendingOutsideKnownSourceHolds": 11,
+  "shortfallTo30EvenIfAllNonHoldQualify": 3
 }

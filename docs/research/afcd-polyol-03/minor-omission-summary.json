@@ -1,0 +1,97 @@
+{
+  "summary": {
+    "profile": "GK_B_NAMED_SOURCES_WITH_A_MINOR_OMISSIONS_V1",
+    "newResearchRecipeCount": 1,
+    "newSourceQualifiedPublicationCandidates": 0,
+    "existingRecipeAlternativesReviewed": 4,
+    "existingRecipeAlternativesPassingNewProfile": 3,
+    "existingRecipeAlternativesWithoutAnyProposedBCode": 3,
+    "existingJointArithmeticCountUnchanged": 33,
+    "productionNumericUnchanged": 156,
+    "methodContentApprovedUnchanged": 16,
+    "sourceEquivalenceCertified": false,
+    "ownerApproval": false,
+    "publicationAuthorized": false
+  },
+  "candidates": [
+    {
+      "recipeId": "hernekeitto-savupotkalla",
+      "scope": "NEW_RESEARCH_ONLY_NOT_ADMITTED_TO_JOINT33",
+      "point": 16.22,
+      "range": null,
+      "omittedCho": 1.9868875,
+      "remainingProposedCodingIds": [],
+      "inputSha256": "9f9f667969d072e0a6bcba903ef54f6732f9163d9788860b8de0ac72732d5cee",
+      "sourceEquivalenceCertified": false
+    },
+    {
+      "recipeId": "intialainen-ven-pongal",
+      "scope": "EXISTING_ID_ALTERNATIVE_NO_EXTRA_COVERAGE",
+      "numericProposal": true,
+      "blockers": [],
+      "point": null,
+      "range": {
+        "min": 43.3023,
+        "max": 43.4168
+      },
+      "omittedCho": 0.3831,
+      "removedTrace50Ingredients": [
+        "ground black pepper"
+      ],
+      "remainingProposedCodingIds": [],
+      "inputSha256": "09e48478d7377680ef85b156a898209e87b3dfe728197ac3c1a93e48c4a97c6f",
+      "sourceEquivalenceCertified": false
+    },
+    {
+      "recipeId": "intialainen-pinaatti-paneer-chilla",
+      "scope": "EXISTING_ID_ALTERNATIVE_NO_EXTRA_COVERAGE",
+      "numericProposal": true,
+      "blockers": [],
+      "point": 8.76,
+      "range": null,
+      "omittedCho": 0.337,
+      "removedTrace50Ingredients": [
+        "juustokumina"
+      ],
+      "remainingProposedCodingIds": [],
+      "inputSha256": "07c830ad36f2fa9993699dc8597e40495b6c3b9758fc99e086d7f76a2f44076c",
+      "sourceEquivalenceCertified": false
+    },
+    {
+      "recipeId": "japanilainen-hojicha-jogurtti-persimonilla",
+      "scope": "EXISTING_ID_ALTERNATIVE_NO_EXTRA_COVERAGE",
+      "numericProposal": true,
+      "blockers": [],
+      "point": 8.34,
+      "range": null,
+      "omittedCho": 0.155,
+      "removedTrace50Ingredients": [
+        "suolaamattomat seesaminsiemenet"
+      ],
+      "remainingProposedCodingIds": [],
+      "inputSha256": "47d407521ae3978874ceef6f0907f6aecb323c697a8cd920f5582698a811d138",
+      "sourceEquivalenceCertified": false
+    },
+    {
+      "recipeId": "kaakao-kookos-chia",
+      "scope": "EXISTING_ID_ALTERNATIVE_NO_EXTRA_COVERAGE",
+      "numericProposal": false,
+      "blockers": [
+        "NAMED_HUMAN_GI_REQUIRED_FOR_COVERED_MAIN_FOOD"
+      ],
+      "point": null,
+      "range": null,
+      "omittedCho": null,
+      "removedTrace50Ingredients": [
+        "kaakaojauhe",
+        "vaniljauute",
+        "kuiva paahdettu kookoshiutale"
+      ],
+      "remainingProposedCodingIds": [
+        "plant50"
+      ],
+      "inputSha256": "a40134a105a455717698633da4b4c996b7be161a6d757f5260eba8cb0e170998",
+      "sourceEquivalenceCertified": false
+    }
+  ]
+}

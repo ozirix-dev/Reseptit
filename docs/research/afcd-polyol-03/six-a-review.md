@@ -1,0 +1,24 @@
+# GK80: kuuden A-version katselmointipaketti
+
+**Suositus: hyväksytään alla nimetyt lähdesovellukset ja tarkat sisältöversiot seuraavaan integraatioon.** Nämä käyttävät nykyistä A-aritmetiikkaa. Uusia GI-lukuvakioita ei lisätä. Lähdeperheiden kelpuutus ja uudet nimikoidut sovellukset ovat silti päätöksiä. Tämä paketti ei anna julkaisu-, Ready-, merge- tai deploy-valtuutta eikä avaa uudelleen aiemmin hyväksyttyä 16:ta versiota.
+
+Koneellisesti rajattu päätöskohde on [six-a-review-packet.json](six-a-review-packet.json), pakettirungon SHA256 `92a3e56aae708ef8a5c85ba897c04dec1d6970a94ba30e4300c429111348095d`. Se nimeää jokaisen alkuperäisen syötteen hashin ja vaaditut päätökset. Paikalliset lähteet ovat [source-extensions](source-extensions)-hakemistossa; kaksi muuta viittaavat #183:n muuttumattomaan commitiin `e0e761a14630d287be81eb61593b8e086e5b06a8`. Lähtöarvoja ei kopioida uudeksi rinnakkaiseksi rekisteriksi.
+
+| Tarkka versio | GK/annos | Päätöksen olennainen sisältö ja riski |
+| --- | ---: | --- |
+| Vietnamilainen kahvijogurtti |10,92 | Maustamaton Bulgarianjogurtti3,9%100g, kahvi200ml/200g, raaka tavallinen banaani125g ja tavallinen makeutettu lehmänmaitotiiviste30g. Tiivisteelle nimetty GI61; olemassa olevien banaani47- ja maitotuote30-sidontojen sovellus. Kahvin0,3gCHO jätetään näkyvästi pois. Kypsyys ja tiivisteen koostumus vaihtelevat. |
+| Dashimaki-aamiaislautanen |25,16 | Kaksi munaa110g, alkuperäinen100g kuiva valkoinen riisi tarkennetaan jasmiiniksi ja tarjotaan juuri keitettynä. Dashi:1,4g Hondashi-jauhetta lopullisessa200ml liemessä valmistajan7g/l-ohjeella; soijakastike18g, öljy13,5g. Munan, soijan ja koko dashijauhemassan yhteinen CHO-poisjättö1,72g/annos. Jauhemassa on yläraja, ei liemen tiheysarvio. |
+| Täyslehtinen hojicha-jogurtti |8,82 | Jogurtti2,5%200g, raaka kaki150g, MUSO TLF013 -lehti2g jauhettuna kokonaan ruokaan ja seesami5g. Lehtituotteen EU-CHO13,2g/100g on nimellisen lähdemallin yläraja; ei polyolinolla. Nimetty kaki61; kokonaispoisjättö0,1545g. Hyväksytään tämä vaihtoehto haudukeversiosta erillisenä sisältövalintana. |
+| Natto-riisikulho |25,34 | Maustamaton Itohiki-natto150g, kuiva valkoinen jasmiiniriisi100g, munat110g ja punnittu raaka kevätsipuli20g. ”Mausteineen” tarkoittaa luettelon sipulia ja suolaa, ei makeaa kaupallista tare-pussia. MEXTin natiivi saatavan hiilihydraatin massa0,3g/100g; natolle ei anneta GI:tä. Naton ja munan CHO-poisjättö0,39g. Uusi MEXT-lähdeperhe kelpuutetaan vain alla rajattuna. |
+| Pad kee mao konjacilla |1,80 | KoRo fettuccine vedessä600g punnittuna valutettuna, broilerin reisiliha500g; pavut150g, paprika120g, basilika30g, valkosipuli10,5g, chili24g, kala-/soija-/osterikastike30/15/15g, erytritoli4g, öljy27g. Tuotteen nimellinen<0,1gCHO/100g ei ole nolla tai erän analyysiraja. Nuudelin ja osterikastikkeen poisjättö0,9375g. AFCD-kalakastike on nimetyn Squid-tuotteen koostumusproxy; basilika, pavut ja kastikesidonnat katselmoidaan. |
+| Chettinad-kana |1,42 | Vain reseptin curry, ilman määräämätöntä tarjoiluriisiä tai leipää. Broileri700g, sipuli100g, tomaatti160g, valkosipuli7g, inkivääri15g, mustapippuri2g, korianterinsiemen2g, fenkoli1g, kaneli3g, öljy27g, tuore currylehti10g, suola6g, vesi100g. IFCT Table6:n natiivi saatavaCHO3,66g/100g; tuoreelle lehdelle nykyisen kasvis40-koodauksen nimetty sovellus. Mausteiden positiiviset määrät/ylärajat jätetään pois yhteensä1,23355g/annos. |
+
+## Lähdepäätösten rajaus
+
+- **MEXT:** vain vuoden2023 taulukon27.3.2026 korjatun version natiivi CHOAVL-massasumma ja kaksi yhtäpitävää alkuperäistä työkirjaa. Sokeriekvivalenttia, erotusarviota tai puuttuvaa kenttää ei vaihdeta sen tilalle. Naton julkaistu0,3 hyväksytään lähteen summana; se ei todista kaikkien osakomponenttien erillistä mittausta. Tuntematon polyoli/galaktoosi säilyy tuntemattomana. Adapteri hylkää kimchin puuttuvan massakentän.
+- **IFCT:** currylehden G010 natiivi Total Available Carbohydrate Table6:ssa; Table1:n erotusarvo4,51 ei kelpaa korvaavaksi kentäksi. Vain valmistellussa #183:n syötteessä yksilöity lähdesovellus. Ei yleistä hyväksyntää IFCT:n kaikille kentille tai elintarvikkeille.
+- Valmistajan EU-hiilihydraatti ja koko maustejauhemassa ovat vain dokumentoidun lähdemallin ylärajoja. Niistä ei johdeta polyolinollaa, erän todellista analyysirajaa tai makroja.
+
+Jokainen positiivinen GI:tön alkuperäinen ainesosa jää alle1gCHO/annos ja yhteinen poisjättö alle2g. Poisjättö ei tarkoita GI0:aa. Lähde- ja valmistusvastaavuutta ei voi korvata pelkällä omistajan hyväksynnällä; havaittu uusi puute palauttaa kyseisen version HOLDiin.
+
+**Vaikutus:** kuusi eri reseptiä nykyisen33:n sisällä; ei uusia tunnuksia tähän koontiin. Kun aiemmat16 ja nämä6 on erikseen hyväksytty, integroitu ja julkaistu, kattavuus voisi olla178/326=54,60%. Mainin tämänhetkinen156/326 ei muutu tästä päätöksestä.80% rajaan261 jää tällöinkin83 reseptiä.
