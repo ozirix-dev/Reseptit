@@ -1,0 +1,145 @@
+{
+  "profile": "EXISTING_A_STRICT_1_AND_2",
+  "activation": false,
+  "ownerApproval": false,
+  "publicationAuthorized": false,
+  "cases": [
+    {
+      "recipeId": "uunimakkara-sipulipedilla",
+      "level": "A",
+      "servings": 4,
+      "paths": {
+        "fi": "reseptit/paaruoat/uunimakkara-sipulipedilla.md"
+      },
+      "recipeSha256Lf": {
+        "fi": "4bc6f751fc46af1fcb7b72419438cc55fd8132b6893d74ddb65a9b732089b092"
+      },
+      "originalIngredients": [
+        {
+          "amount": 500,
+          "unit": "g",
+          "item": "lenkkimakkaraa"
+        },
+        {
+          "amount": 100,
+          "unit": "g",
+          "item": "cheddarjuustoraastetta"
+        },
+        {
+          "amount": 1,
+          "unit": "kpl",
+          "item": "sipuli"
+        },
+        {
+          "amount": 2,
+          "unit": "rkl",
+          "item": "Dijon-sinappia"
+        },
+        {
+          "amount": 100,
+          "unit": "g",
+          "item": "ranskankermaa"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "voita"
+        },
+        {
+          "amount": 1,
+          "unit": "tl",
+          "item": "paprikajauhetta"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "mustapippuria"
+        }
+      ],
+      "candidateIngredients": [
+        {
+          "originalIndex": 0,
+          "name": "lenkkimakkaraa",
+          "grams": 500,
+          "compositionId": "makutila-maalaislenkki",
+          "giId": null,
+          "carbohydrateUse": "UPPER_BOUND",
+          "note": "Named Makutila Maalaislenkki, weighed as sold."
+        },
+        {
+          "originalIndex": 1,
+          "name": "cheddarjuustoraastetta",
+          "grams": 100,
+          "compositionId": "698",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Original grams, native cheddar."
+        },
+        {
+          "originalIndex": 2,
+          "name": "sipuli",
+          "grams": 55,
+          "compositionId": "335",
+          "giId": "veg40",
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "One medium yellow onion, Fineli KPL_M edible weight."
+        },
+        {
+          "originalIndex": 3,
+          "name": "Dijon-sinappia",
+          "grams": 32,
+          "compositionId": "maille-dijon-fr215",
+          "giId": null,
+          "carbohydrateUse": "UPPER_BOUND",
+          "note": "Weigh 32 g Maille Dijon FR215; new exact quantity."
+        },
+        {
+          "originalIndex": 4,
+          "name": "ranskankermaa",
+          "grams": 100,
+          "compositionId": "628",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Original grams, native creme fraiche."
+        },
+        {
+          "originalIndex": 5,
+          "name": "voita",
+          "grams": 14,
+          "compositionId": "500",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Fineli tablespoon; total butter including any used to grease."
+        },
+        {
+          "originalIndex": 6,
+          "name": "paprikajauhetta",
+          "grams": 2,
+          "compositionId": "F006316",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weigh 2 g dry paprika powder; new exact quantity."
+        },
+        {
+          "originalIndex": 7,
+          "name": "mustapippuria",
+          "grams": 0.5,
+          "compositionId": "11177",
+          "giId": null,
+          "carbohydrateUse": "AVAILABLE_POINT",
+          "note": "Weigh 0.5 g black pepper; new exact quantity."
+        }
+      ],
+      "preparationDecision": "Sweat the yellow onion in the weighed butter. Bake at 200 C for 20–25 minutes, retaining all topping and pan juices. No additional grease. Apply existing plain allium coding to the yellow onion.",
+      "scenarios": [
+        {
+          "id": "NAMED_PRODUCT_CAPS",
+          "compositionOverrides": {}
+        }
+      ],
+      "approval": false,
+      "publicationAuthorized": false,
+      "inputSha256": "726315e676d5a36776e2cab4b9e75e3478e5b0c900e1230d4fbb183bb7650ae3"
+    }
+  ]
+}
