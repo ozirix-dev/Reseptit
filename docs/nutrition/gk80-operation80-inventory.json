@@ -4,9 +4,9 @@
   "coverage": {
     "PROPOSED_RANGE": 32,
     "PUBLISHED_SINGLE": 197,
-    "PROPOSED_SINGLE": 22,
+    "PROPOSED_SINGLE": 23,
     "IN_PROGRESS": 36,
-    "NO_GK": 29,
+    "NO_GK": 28,
     "PUBLISHED_RANGE": 10
   },
   "reviewedPrHeads": {
@@ -4913,10 +4913,10 @@
       "recipeSha256": "07659418c6a8ccbdcf907be2d09896db714fb40a1f9aebfbbc6df662dfe7e9d5",
       "pilotInputSha256": "5a7fc900657004a098dee76bb5a4e94a1c83398157c14188dc3d7ef3da23f9e6",
       "servings": 4,
-      "status": "NO_GK",
+      "status": "PROPOSED_SINGLE",
       "priorEvidence": [],
-      "level": null,
-      "ownerApproval": null,
+      "level": "B",
+      "ownerApproval": false,
       "sourceQualified": null,
       "blockers": [
         "jiaozi: dumpling-taikinalevyjä: No source-matched composition and preparation was resolved for “dumpling-taikinalevyjä”; it is not treated as zero.",
@@ -5085,7 +5085,55 @@
             "No source-matched available-carbohydrate composition is resolved for rice wine vinegar; the measured amount is not treated as zero."
           ]
         }
-      ]
+      ],
+      "operation80Proposal": {
+        "evidencePath": "docs/nutrition/gk80-operation80-batch-35.md",
+        "baselineRecipeSha256": "07659418c6a8ccbdcf907be2d09896db714fb40a1f9aebfbbc6df662dfe7e9d5",
+        "inputFields": [
+          "gramsBatch",
+          "choPer100g"
+        ],
+        "matrixInputs": [
+          [
+            300,
+            74
+          ],
+          [
+            300,
+            0
+          ],
+          [
+            200,
+            1.61
+          ],
+          [
+            40,
+            4.6
+          ],
+          [
+            6,
+            4.8
+          ]
+        ],
+        "liquidInputFields": [
+          "mlBatch",
+          "choPer100ml"
+        ],
+        "liquidMatrixInputs": [
+          [
+            15,
+            3.2
+          ]
+        ],
+        "choPerServing": "56.957",
+        "scenarios": [
+          {
+            "giGlucoseScale": "28",
+            "gkPerServing": "15.94796"
+          }
+        ],
+        "publicationAuthorized": false
+      }
     },
     {
       "recipeId": "kaakao-kookos-chia",
