@@ -85,7 +85,11 @@ class ControllerTests(unittest.TestCase):
         relative = "docs/research/gk80-batch30/fixture.json"
         evidence = self.root / relative
         evidence.parent.mkdir(parents=True, exist_ok=True)
-        input_hash = "a" * 64
+        input_relative = "docs/research/gk80-batch30/fixture-input.json"
+        input_file = self.root / input_relative
+        input_file.write_text(json.dumps({"recipeId": "foo", "servings": 4, "ingredients": [1, 2, 3]}),
+                              encoding="utf-8")
+        input_hash = controller.sha256(input_file.read_bytes())
         evidence.write_text(json.dumps({"recipeId": "foo", "inputSha256": input_hash}),
                             encoding="utf-8")
         entry = {"recipeId": "foo", "status": "VERIFIED",
@@ -93,7 +97,7 @@ class ControllerTests(unittest.TestCase):
                  "sources": [{"url": "https://fineli.fi/fineli/fi/elintarvikkeet/1"}],
                  "servings": 4, "ingredientCount": 5, "gkPerServing": 4.2,
                  "omittedChoPerServing": 0.1, "inputSha256": input_hash,
-                 "evidencePath": relative,
+                 "inputPath": input_relative, "evidencePath": relative,
                  "evidenceSha256": controller.sha256(evidence.read_bytes())}
         return evidence, {"schemaVersion": 1, "target": 30, "candidates": [entry]}
 
@@ -114,6 +118,62 @@ class ControllerTests(unittest.TestCase):
         item["checks"]["source"] = False
         with self.assertRaisesRegex(controller.GateError, "checklist"):
             controller.validate_queue(self.root, q, 30)
+
+
+    def test_verified_requires_real_input_sha_not_only_evidence_reference(self):
+        evidence, q = self.verified()
+        item = q["candidates"][0]
+        input_file = self.root / item["inputPath"]
+        input_file.write_text(json.dumps({"recipeId": "foo", "changed": True}), encoding="utf-8")
+        with self.assertRaisesRegex(controller.GateError, "Input SHA-256 mismatch"):
+            controller.validate_queue(self.root, q, 30)
+
+    def test_evidence_must_stay_in_physical_research_directory(self):
+        evidence, q = self.verified()
+        outside = self.root / "docs/research/other.json"
+        outside.write_bytes(evidence.read_bytes())
+        item = q["candidates"][0]
+        item["evidencePath"] = "docs/research/gk80-batch30/../other.json"
+        item["evidenceSha256"] = controller.sha256(outside.read_bytes())
+        with self.assertRaisesRegex(controller.GateError, "Unsafe"):
+            controller.validate_queue(self.root, q, 30)
+
+    def test_boolean_count_is_not_a_valid_serving_count(self):
+        _, q = self.verified()
+        q["candidates"][0]["servings"] = True
+        with self.assertRaisesRegex(controller.GateError, "serving count"):
+            controller.validate_queue(self.root, q, 30)
+
+    def test_scope_guard_blocks_changes_outside_research_directory(self):
+        original = subprocess.check_output(
+            ["git", "-C", str(self.root), "rev-parse", "HEAD"], text=True).strip()
+        approved = self.root / "docs/research/gk80-batch30/approved.json"
+        approved.parent.mkdir(parents=True, exist_ok=True)
+        approved.write_text("{}", encoding="utf-8")
+        controller.check_research_scope(self.root, original)
+        (self.root / "README.md").write_text("unexpected file", encoding="utf-8")
+        with self.assertRaisesRegex(controller.GateError, "Unapproved"):
+            controller.check_research_scope(self.root, original)
+
+    def test_invalid_queue_is_rolled_back_after_interrupted_turn(self):
+        self.initialize()
+        previous = controller.load_json(self.p["queue"])
+        self.p["queue"].write_text('{"candidates":', encoding="utf-8")
+        recovered, counts, error = controller.checked_queue_after_turn(
+            self.root, previous, self.p, 30)
+        self.assertIsNotNone(error)
+        self.assertEqual(counts["VERIFIED"], 0)
+        self.assertEqual(recovered, previous)
+        self.assertEqual(controller.load_json(self.p["queue"]), previous)
+
+    def test_budget_rejection_does_not_clear_stop(self):
+        self.initialize()
+        self.assertEqual(self.invoke("stop"), 0)
+        state = controller.load_json(self.p["state"])
+        state["turns"] = state["maxTurns"]
+        controller.atomic_json(self.p["state"], state)
+        self.assertEqual(self.invoke("resume"), 2)
+        self.assertTrue(self.p["stop"].exists())
 
     def test_handoff_refuses_incomplete_and_init_refuses_overwrite(self):
         self.initialize()
