@@ -4,9 +4,9 @@
   "coverage": {
     "PROPOSED_RANGE": 15,
     "PUBLISHED_SINGLE": 197,
-    "PROPOSED_SINGLE": 14,
-    "IN_PROGRESS": 24,
-    "NO_GK": 66,
+    "PROPOSED_SINGLE": 15,
+    "IN_PROGRESS": 25,
+    "NO_GK": 64,
     "PUBLISHED_RANGE": 10
   },
   "reviewedPrHeads": {
@@ -25,7 +25,6 @@
     "160": "64f2c14ee3b158fbeff6719278ffaa5f436aec4f"
   },
   "queue": [
-    "indonesialainen-pisang-goreng-aamiaiseksi",
     "intialainen-idli-kookoschutneylla",
     "japanilainen-curry-tofulla",
     "karibia-saltfish-fritterit",
@@ -53,7 +52,6 @@
     "goi-cuon",
     "indonesialainen-serabi-kookospannukakku",
     "japanilainen-miso-tofu-paksoi",
-    "japanilainen-okayu-umeboshipluumulla",
     "japanilainen-soba-aamiaiskeitto",
     "kiinalainen-katkarapu-wontonkeitto",
     "kookos-lime-kanacurry",
@@ -114,9 +112,10 @@
     "chole-bhature",
     "karibia-ackee-ja-suolakala",
     "indonesialainen-bubur-sumsum",
-    "indonesialainen-nasi-goreng-aamiaisriisi"
+    "indonesialainen-nasi-goreng-aamiaisriisi",
+    "indonesialainen-pisang-goreng-aamiaiseksi"
   ],
-  "nextRecipeId": "indonesialainen-pisang-goreng-aamiaiseksi",
+  "nextRecipeId": "intialainen-idli-kookoschutneylla",
   "recipes": [
     {
       "recipeId": "aloo-paratha",
@@ -2848,7 +2847,7 @@
       "recipeSha256": "138cdf475d4ee52853833fad3ad08a91fb97f0f5f1e951edaeb8d0477d0a79f7",
       "pilotInputSha256": "0cfd07959120ed124f57f29f05a15814e8ad6da274e4d17a62e704e0d34b7fe4",
       "servings": 2,
-      "status": "NO_GK",
+      "status": "IN_PROGRESS",
       "priorEvidence": [],
       "level": null,
       "ownerApproval": null,
@@ -2888,7 +2887,8 @@
             "Coconut is listed without fresh/dried state, palm sugar lacks a matching Fineli record, and banana mass is unspecified."
           ]
         }
-      ]
+      ],
+      "operation80Finding": "Current weighed recipe uses brown sugar and dried coconut; find human analogue for pan-fried rice-flour banana fritter."
     },
     {
       "recipeId": "indonesialainen-serabi-kookospannukakku",
@@ -3804,10 +3804,10 @@
       "recipeSha256": "b207cde733db80c11b05dd58e88db319c0c2c9993ca3f85e94878ed37c9e2215",
       "pilotInputSha256": "c12170d5c6dd73198870ccc533dfb3a5b40ca0bdf5dcf1e667c41c52dfb9f4c9",
       "servings": 2,
-      "status": "NO_GK",
+      "status": "PROPOSED_SINGLE",
       "priorEvidence": [],
-      "level": null,
-      "ownerApproval": null,
+      "level": "B",
+      "ownerApproval": false,
       "sourceQualified": null,
       "blockers": [
         "japanilainen-okayu-umeboshipluumulla: umeboshi: No source-matched composition and preparation was resolved for “umeboshi”; it is not treated as zero.",
@@ -3898,7 +3898,44 @@
             "Source-documented zero available carbohydrate: Plain salt has zero available carbohydrate."
           ]
         }
-      ]
+      ],
+      "operation80Proposal": {
+        "evidencePath": "docs/nutrition/gk80-operation80-batch-08.md",
+        "baselineRecipeSha256": "b207cde733db80c11b05dd58e88db319c0c2c9993ca3f85e94878ed37c9e2215",
+        "inputFields": [
+          "gramsBatch",
+          "choPer100g",
+          "giGlucoseScale"
+        ],
+        "scenarios": [
+          {
+            "inputs": [
+              [
+                100,
+                79,
+                92.5
+              ],
+              [
+                10,
+                0.9,
+                50
+              ],
+              [
+                8,
+                0.9,
+                50
+              ],
+              [
+                20,
+                4.74,
+                40
+              ]
+            ],
+            "gkPerServing": "36.7676"
+          }
+        ],
+        "publicationAuthorized": false
+      }
     },
     {
       "recipeId": "japanilainen-onigiri-lohella",
