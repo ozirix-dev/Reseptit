@@ -2,11 +2,11 @@
   "schemaVersion": 1,
   "main": "4d6f19a620bb95e771c12f499554bf2cf1f06e51",
   "coverage": {
-    "PROPOSED_RANGE": 22,
+    "PROPOSED_RANGE": 23,
     "PUBLISHED_SINGLE": 197,
     "PROPOSED_SINGLE": 17,
-    "IN_PROGRESS": 33,
-    "NO_GK": 47,
+    "IN_PROGRESS": 34,
+    "NO_GK": 45,
     "PUBLISHED_RANGE": 10
   },
   "reviewedPrHeads": {
@@ -111,7 +111,7 @@
     "japanilainen-curry-tofulla",
     "khao-soi-vhh-konjac"
   ],
-  "nextRecipeId": "spanakopita",
+  "nextRecipeId": "thai-roti-munalla-banaanilla",
   "recipes": [
     {
       "recipeId": "aloo-paratha",
@@ -14290,7 +14290,7 @@
       "recipeSha256": "c3477f355a83989aa699f969d38c542abea95759eab5cc0110b9a4e48dac99fe",
       "pilotInputSha256": "93de7bb42fb7e95e6a6b4169be90fe5e6d8c0e7edcc75457115a2c13fa1b9137",
       "servings": 6,
-      "status": "NO_GK",
+      "status": "IN_PROGRESS",
       "priorEvidence": [],
       "level": null,
       "ownerApproval": null,
@@ -14366,7 +14366,8 @@
             "AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved."
           ]
         }
-      ]
+      ],
+      "operation80EvidencePath": "docs/nutrition/gk80-operation80-batch-20.md"
     },
     {
       "recipeId": "tabbouleh",
@@ -14631,10 +14632,10 @@
       "recipeSha256": "eca214c31e4a0f06a62f02e62b18f1f6ca9598cd3650cd09dd463b7f436d239a",
       "pilotInputSha256": "d7ade617ea649e48510021b252de0c7efd0c8b35bd0dd17dd66e053dec24358b",
       "servings": 2,
-      "status": "NO_GK",
+      "status": "PROPOSED_RANGE",
       "priorEvidence": [],
-      "level": null,
-      "ownerApproval": null,
+      "level": "B",
+      "ownerApproval": false,
       "sourceQualified": null,
       "blockers": [
         "thai-maissifritterit: kypsennettyjä, valutettuja maissinjyviä: GI evidence is missing.",
@@ -14731,7 +14732,69 @@
             "Source-documented zero available carbohydrate: Plain salt has zero available carbohydrate."
           ]
         }
-      ]
+      ],
+      "operation80Proposal": {
+        "evidencePath": "docs/nutrition/gk80-operation80-batch-20.md",
+        "baselineRecipeSha256": "eca214c31e4a0f06a62f02e62b18f1f6ca9598cd3650cd09dd463b7f436d239a",
+        "inputFields": [
+          "gramsBatch",
+          "choPer100g",
+          "giGlucoseScale"
+        ],
+        "scenarios": [
+          {
+            "inputs": [
+              [
+                150,
+                24.32,
+                59
+              ],
+              [
+                100,
+                73.998,
+                57
+              ],
+              [
+                110,
+                0.3,
+                57
+              ],
+              [
+                6,
+                0.2,
+                57
+              ]
+            ],
+            "gkPerServing": "31.9485"
+          },
+          {
+            "inputs": [
+              [
+                150,
+                24.32,
+                59
+              ],
+              [
+                100,
+                73.998,
+                61.8
+              ],
+              [
+                110,
+                0.3,
+                61.8
+              ],
+              [
+                6,
+                0.2,
+                61.8
+              ]
+            ],
+            "gkPerServing": "33.73266"
+          }
+        ],
+        "publicationAuthorized": false
+      }
     },
     {
       "recipeId": "thai-papaijajogurtti",
