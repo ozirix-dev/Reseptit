@@ -4,9 +4,9 @@
   "coverage": {
     "PROPOSED_RANGE": 14,
     "PUBLISHED_SINGLE": 197,
-    "PROPOSED_SINGLE": 11,
-    "IN_PROGRESS": 17,
-    "NO_GK": 77,
+    "PROPOSED_SINGLE": 12,
+    "IN_PROGRESS": 21,
+    "NO_GK": 72,
     "PUBLISHED_RANGE": 10
   },
   "reviewedPrHeads": {
@@ -25,21 +25,16 @@
     "160": "64f2c14ee3b158fbeff6719278ffaa5f436aec4f"
   },
   "queue": [
-    "valimerellinen-appelsiini-aamiaiskakku",
     "chole-bhature",
-    "indonesialainen-bakwan-maissifritter",
     "indonesialainen-bubur-sumsum",
     "indonesialainen-nasi-goreng-aamiaisriisi",
     "indonesialainen-pisang-goreng-aamiaiseksi",
     "intialainen-idli-kookoschutneylla",
-    "intialainen-rava-uttapam",
     "japanilainen-curry-tofulla",
     "karibia-ackee-ja-suolakala",
-    "karibia-plantain-aamiaislautanen",
     "karibia-saltfish-fritterit",
     "khao-soi-vhh-konjac",
     "kiinalainen-bao-munalla",
-    "kiinalainen-jianbing-munaletty",
     "korealainen-bataatti-riisikulho",
     "korealainen-kimchi-jeon-aamiaiseksi",
     "kreikkalainen-moussaka",
@@ -118,9 +113,13 @@
     "vada-pav",
     "malesialainen-kookos-banaanikulho",
     "mapo-tofu",
-    "nasi-lemak"
+    "nasi-lemak",
+    "valimerellinen-appelsiini-aamiaiskakku",
+    "indonesialainen-bakwan-maissifritter",
+    "intialainen-rava-uttapam",
+    "kiinalainen-jianbing-munaletty"
   ],
-  "nextRecipeId": "valimerellinen-appelsiini-aamiaiskakku",
+  "nextRecipeId": "chole-bhature",
   "recipes": [
     {
       "recipeId": "aloo-paratha",
@@ -2446,7 +2445,7 @@
       "recipeSha256": "7ac0a0f8c4b3816b8eebec4caff0c5e61eba5211f2fc419d6a771e190e5921f3",
       "pilotInputSha256": "e529b65780cbf34fe28c5d7a83b952967c08e8a3765637cc51b637bef01bdb3e",
       "servings": 2,
-      "status": "NO_GK",
+      "status": "IN_PROGRESS",
       "priorEvidence": [],
       "level": null,
       "ownerApproval": null,
@@ -2534,7 +2533,8 @@
             "Source-documented zero available carbohydrate: Plain salt has zero available carbohydrate."
           ]
         }
-      ]
+      ],
+      "operation80Finding": "Available corn measurements concern different cooking matrices."
     },
     {
       "recipeId": "indonesialainen-bubur-ayam-kanariisipuuro",
@@ -3434,7 +3434,7 @@
       "recipeSha256": "da667b2f0d44a192fa9f930e08a640dbb2473eb0629452279506e4a77904f85b",
       "pilotInputSha256": "da979fb2efb6982fd417be7e9c19640de1f6c09ecd844a5c80c81691f44c8cd1",
       "servings": 2,
-      "status": "NO_GK",
+      "status": "IN_PROGRESS",
       "priorEvidence": [],
       "level": null,
       "ownerApproval": null,
@@ -3498,7 +3498,8 @@
             "Source-documented zero available carbohydrate: Salt has no available carbohydrate."
           ]
         }
-      ]
+      ],
+      "operation80Finding": "Rava dosa comparator requires application review to thick semolina-yogurt batter."
     },
     {
       "recipeId": "intialainen-ven-pongal",
@@ -5174,10 +5175,10 @@
       "recipeSha256": "558d423b988af31c83346c53894b0b484e31fc868eed0c8635fe054641405e6d",
       "pilotInputSha256": "d6f0933f54a4ae432b8077a169747205b03353ea769a1d682f39920dc1ed705f",
       "servings": 2,
-      "status": "NO_GK",
+      "status": "PROPOSED_SINGLE",
       "priorEvidence": [],
-      "level": null,
-      "ownerApproval": null,
+      "level": "B",
+      "ownerApproval": false,
       "sourceQualified": null,
       "blockers": [
         "karibia-plantain-aamiaislautanen: ruokabanaani: No source-matched composition and preparation was resolved for “ruokabanaani”; it is not treated as zero.",
@@ -5274,7 +5275,44 @@
             "Source-documented zero available carbohydrate: Plain salt has zero available carbohydrate."
           ]
         }
-      ]
+      ],
+      "operation80Proposal": {
+        "evidencePath": "docs/nutrition/gk80-operation80-batch-04.md",
+        "baselineRecipeSha256": "558d423b988af31c83346c53894b0b484e31fc868eed0c8635fe054641405e6d",
+        "inputFields": [
+          "gramsBatch",
+          "choPer100g",
+          "giGlucoseScale"
+        ],
+        "scenarios": [
+          {
+            "inputs": [
+              [
+                150,
+                23.63,
+                90
+              ],
+              [
+                110,
+                0.3,
+                50
+              ],
+              [
+                120,
+                0.77,
+                50
+              ],
+              [
+                40,
+                1.2,
+                50
+              ]
+            ],
+            "gkPerServing": "16.38375"
+          }
+        ],
+        "publicationAuthorized": false
+      }
     },
     {
       "recipeId": "karibia-saltfish-fritterit",
@@ -6226,7 +6264,7 @@
       "recipeSha256": "fade773e583d0ee2f045702a3b4e2e1c65064b1ab3a5e227c2d9818c01e83289",
       "pilotInputSha256": "0583d9747c9f7b2c03d5e8cbcb868964eb47e415d03d450d25c3e4514077f6bd",
       "servings": 2,
-      "status": "NO_GK",
+      "status": "IN_PROGRESS",
       "priorEvidence": [],
       "level": null,
       "ownerApproval": null,
@@ -6338,7 +6376,8 @@
             "The recipe lists one tablespoon soybean paste, but the product type, gram conversion and composition are not resolved; no miso or soy-sauce substitute is assumed."
           ]
         }
-      ]
+      ],
+      "operation80Finding": "Verify soybean paste identity, weighed dose, GI and wheat pancake source-use terms."
     },
     {
       "recipeId": "kiinalainen-katkarapu-wontonkeitto",
@@ -14761,7 +14800,7 @@
       "recipeSha256": "0866699f37d32c4330e6b089ed1567ede7b9b64ddf7081012fa97d644e588bee",
       "pilotInputSha256": "699552e36d6ce0440202d1b3401d07f0ffa22a0d4aa0395c3308f939ed11e2b0",
       "servings": 2,
-      "status": "NO_GK",
+      "status": "IN_PROGRESS",
       "priorEvidence": [],
       "level": null,
       "ownerApproval": null,
@@ -14831,7 +14870,8 @@
             "Source-documented zero available carbohydrate: Plain salt has zero available carbohydrate."
           ]
         }
-      ]
+      ],
+      "operation80Finding": "Resolve baked versus separately served yogurt and verify matched fruit-wheat matrix."
     },
     {
       "recipeId": "valimerellinen-farinata-aamupalaksi",
