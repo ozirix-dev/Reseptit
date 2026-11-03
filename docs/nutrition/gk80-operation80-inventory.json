@@ -4,9 +4,9 @@
   "coverage": {
     "PROPOSED_RANGE": 36,
     "PUBLISHED_SINGLE": 197,
-    "PROPOSED_SINGLE": 39,
+    "PROPOSED_SINGLE": 40,
     "IN_PROGRESS": 36,
-    "NO_GK": 8,
+    "NO_GK": 7,
     "PUBLISHED_RANGE": 10
   },
   "reviewedPrHeads": {
@@ -111,7 +111,7 @@
     "japanilainen-curry-tofulla",
     "khao-soi-vhh-konjac"
   ],
-  "nextRecipeId": "pani-puri",
+  "nextRecipeId": "lanzhou-naudanliha-nuudelikeitto",
   "recipes": [
     {
       "recipeId": "aloo-paratha",
@@ -10482,10 +10482,10 @@
       "recipeSha256": "7ca86931fae4b26def3abf3c664523e3188e80df33f3e44ee55f884476b356ff",
       "pilotInputSha256": "f77aa943f8db0bd156b24b7cdee9c23e29d9921045699561ac1470c6e5d459d6",
       "servings": 2,
-      "status": "NO_GK",
+      "status": "PROPOSED_SINGLE",
       "priorEvidence": [],
-      "level": null,
-      "ownerApproval": null,
+      "level": "B",
+      "ownerApproval": false,
       "sourceQualified": null,
       "blockers": [
         "malesialainen-roti-canai-dhalilla: vehnäjauho: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved.",
@@ -10570,7 +10570,41 @@
             "Individual sub-1 g contribution counted toward cumulative 2 g/serving editorial tolerance: Conservative culinary-use bound 0.2 g per recipe, divided by servings, below 1 g available carbohydrate per serving."
           ]
         }
-      ]
+      ],
+      "operation80Proposal": {
+        "evidencePath": "docs/nutrition/gk80-operation80-batch-57.md",
+        "baselineRecipeSha256": "7ca86931fae4b26def3abf3c664523e3188e80df33f3e44ee55f884476b356ff",
+        "inputFields": [
+          "gramsBatch",
+          "choPer100g"
+        ],
+        "matrixInputs": [
+          [
+            100,
+            73.998
+          ],
+          [
+            100,
+            52.53
+          ],
+          [
+            200,
+            3.4
+          ],
+          [
+            5,
+            4.51
+          ]
+        ],
+        "choPerServing": "66.77675",
+        "scenarios": [
+          {
+            "giGlucoseScale": "71",
+            "gkPerServing": "47.4114925"
+          }
+        ],
+        "publicationAuthorized": false
+      }
     },
     {
       "recipeId": "malesialainen-roti-jala-currykanalla",
