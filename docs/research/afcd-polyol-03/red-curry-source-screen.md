@@ -35,3 +35,9 @@ Kahden annoksen tutkimusversio säilyttää 100 g kuivaa pitkäjyväistä riisi�
 Riisin 37 g CHO/annos × GI 67 / 100 antaa 24,79 GK. Raaka tomaatti 2,15625 g CHO/annos × GI 22 / 100 antaa 0,474375 GK. Yhteensä 25,264375. Poisjätöt ovat kookosmaito 0,8 g, tahna 0,19 g ja muna 0,165 g eli 1,155 g/annos. Kumpikin tuoteilmoitus on nimellinen. Riisin GI on ryhmäviite. Tomaatin GI-viite koskee raakaa tomaattia. Ehdotus tarvitsee lähde- ja sisältökatselmoinnin sekä varsinaisen moottoriajon ennen integraatiota.
 
 [Alkuperäinen laskentasyöte](../../nutrition/calculations/thai-kananmunat-kookoscurryssa.json) · [Tuotesyöte](red-curry-a-route/cases.json) · [GI-katalogi](../../../site/scripts/gk80-food-catalog.json)
+
+## Kookos-limekanacurry
+
+Neljän annoksen laskentasyötteessä 150 g vihreitä papuja tuottaa 1,2375 g ja 120 g syötävää punaista paprikaa 1,35 g imeytyvää hiilihydraattia annosta kohti. Kumpikin ylittää yksittäisen poisjättörajan. Jos nimetään ja punnitaan 400 g Fairtrade Original -kookosmaitoa sekä 30 g Valcom Red -tahnaa, niiden varaukset ovat 0,8 ja 0,285 g/annos. Nykyisen laskentasyötteen kalakastikkeen, limetin ja basilikan kanssa yhteensä 1,293 g/annos jää jäljelle, mikäli papu ja paprika saavat omat kelpuutetut GI-viitteensä. Punnittu tuotepari avaa yksin nolla uutta tulosta. Molemmille kasviksille annettu GI 40 tuottaisi 1,035 GK/annos vain herkkyyskokeena. Julkaistava versio edellyttää molempien valmistusvastineiden sekä muiden lähdesovellusten katselmointia.
+
+[Laskentasyöte](../../nutrition/calculations/kookos-lime-kanacurry.json)
