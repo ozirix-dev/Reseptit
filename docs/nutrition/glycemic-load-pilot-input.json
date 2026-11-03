@@ -13395,9 +13395,8 @@
           "name": "avokado",
           "grams": 120,
           "fineliRecordId": "fineli-11057-release-20",
-          "giRecordId": "vegetables-category-mean-gi-66",
-          "massEvidence": "1 kpl converted using Fineli food-specific portion mass; AVOKADO, KUORITTU, KIVETÖN.",
-          "giMatchEvidence": "Low-confidence proxy: Vegetables other than potatoes, category mean; source category or closest published analogue, not a measured recipe GI."
+          "giRecordId": null,
+          "massEvidence": "One avocado assumed to yield 120 g edible flesh, using Fineli 11057 household portion. Two servings; approximately 0.48 g available carbohydrate each at 0.8 g/100 g."
         },
         {
           "name": "neutraalia paistoöljyä",
@@ -13701,10 +13700,12 @@
         {
           "name": "perunoita",
           "grams": 500,
-          "fineliRecordId": null,
-          "giRecordId": null,
-          "excludedReason": "No specific Fineli/AFCD food record and preparation match was resolved for “perunoita”; it is not treated as zero.",
-          "massEvidence": "Recipe-listed 500 g perunoita."
+          "fineliRecordId": "fineli-205-2026-10-24",
+          "giRecordId": "potato-boiled-preparation-analogue-gi-66",
+          "massEvidence": "500 g edible raw potato for four; composition before boiling assumes available carbohydrate retained. Served hot in the filling.",
+          "foodKey": "potato",
+          "preparationKey": "boiled-unspecified",
+          "giMatchEvidence": "Measured boiled potato preparation analogue; cultivar and preparation vary. Wolever et al. doi:10.1039/C1FO10042D reports 59.8 to 79.1 for freshly boiled cubes (11.59 to 15.33 GL per serving at this raw composition)."
         },
         {
           "name": "sipuli",
@@ -13722,11 +13723,13 @@
         },
         {
           "name": "sinapinsiemeniä",
-          "grams": null,
+          "grams": 3,
           "fineliRecordId": null,
           "giRecordId": null,
-          "excludedReason": "No specific Fineli/AFCD food record and preparation match was resolved for “sinapinsiemeniä”; it is not treated as zero.",
-          "massEvidence": "Recipe-listed 1 tl sinapinsiemeniä."
+          "excludedReason": "Small documented available-carbohydrate contribution.",
+          "massEvidence": "IFCT H013, 16.8 g/100 g; one teaspoon assumed to weigh 3 g",
+          "estimatedAvailableCarbohydratePerServingG": 0.126,
+          "negligibleAssumption": "IFCT H013, 16.8 g/100 g; one teaspoon assumed to weigh 3 g; four servings. https://www.nin.res.in/ebooks/IFCT2017_16122024.pdf"
         },
         {
           "name": "kurkumaa",
@@ -13753,8 +13756,10 @@
           "grams": 10,
           "fineliRecordId": null,
           "giRecordId": null,
-          "excludedReason": "No specific Fineli/AFCD food record and preparation match was resolved for “tuoreita currylehtiä”; it is not treated as zero.",
-          "massEvidence": "Recipe-listed 10 g tuoreita currylehtiä."
+          "excludedReason": "Small documented available-carbohydrate contribution.",
+          "massEvidence": "IFCT G010, 4.51 g/100 g; recipe lists 10 g",
+          "estimatedAvailableCarbohydratePerServingG": 0.11275,
+          "negligibleAssumption": "IFCT G010, 4.51 g/100 g; recipe lists 10 g; four servings. https://www.nin.res.in/ebooks/IFCT2017_16122024.pdf"
         },
         {
           "name": "tuoretta korianteria",
