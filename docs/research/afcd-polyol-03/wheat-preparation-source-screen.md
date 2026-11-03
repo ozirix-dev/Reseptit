@@ -27,3 +27,8 @@ Koostumusviitteistä Hassan ym. (1991) koskee kuwaitilaisia pikaruokia ja ilmoit
 
 Tulos jää lähde-HOLDiin. Valmistuksen vastaavuuden lisäksi jatkokelpoisessa GI-vertailussa on pystyttävä tunnistamaan käytettävissä olevan hiilihydraatin annostus tai arvioimaan nimenomaisesti poikkeavan tutkimusprotokollan soveltuvuus. Uusia numeerisia ehdokkaita tästä lähteestä 0.
 
+## Mitattu vehnädosa ja kimchi-jeon
+
+Chennain tutkimuksessa ohuen ja rapean vehnädosan GI oli 61,8 (SEM 5,7, analyysissä 14 osallistujaa). Koeruoka oli täysjyvävehnäpohjainen maustettu lettu. Taulukon I kypsässä näytteessä oli 32,46 g saatavaa hiilihydraattia ja 6,28 g kuitua per 100 g. Taulukon III testiannos 154,04 g vastaa noin 50 g saatavaa hiilihydraattia. Julkaistu GK 30,9 koskee tätä testiannosta. [Alkuperäistutkimus, taulukot I ja III](https://pmc.ncbi.nlm.nih.gov/articles/PMC9552392/)
+
+Kimchi-jeon sisältää 100 g vehnäjauhoa, 150 g kimchiä, kaksi kananmunaa, kevätsipulia ja paistoöljyä kahdelle. Molemmat ovat pannulla kypsennettyjä vehnälettuja, mutta jauhon jauhatusaste, kananmunat, hapan kimchi ja taikinan nestemäärä erottavat reseptin mitatusta tuotteesta. Koko dosan GI:tä ei siirretä jauhoriville eikä sen SEM-arvosta muodosteta reseptin vaihteluväliä. Nimetyn Vadasz-kimchin ehdollinen 0,75 g/annos auttaa koostumuksessa, mutta vehnätaikinan lähdesidos jää avoimeksi. Tästä vertailusta syntyi yksi valmistustasoinen lähdeviite ja nolla uutta numeerista ehdokasta. [Kimchin lähdetarkistus](kimchi-product-screen.md)
