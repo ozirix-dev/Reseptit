@@ -1,0 +1,159 @@
+{
+  "recipeId": "pohjoisafrikkalainen-msemen-hunajalla",
+  "servings": 2,
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "unroundedGk": "28.231782",
+  "upperScenario": {
+    "giOverrides": [
+      {
+        "inputIndex": 0,
+        "gi": 62.48
+      },
+      {
+        "inputIndex": 1,
+        "gi": 62.48
+      },
+      {
+        "inputIndex": 2,
+        "gi": 62.48
+      }
+    ],
+    "unroundedGk": "49.4006752"
+  },
+  "preparation": {
+    "fi": "Vaivaa {{amount:0}} g hienoa mannasuurimoa ja {{amount:1}} g vehnäjauhoa veden ja suolan kanssa pehmeäksi taikinaksi. Anna levätä. Levitä {{amount:2}} g voita kerrosten väliin, taita ja paista pannulla {{amount:4}} g:ssa öljyä. Jaa leivät ja {{amount:3}} g hunajaa {{servings}} annokseen.",
+    "en": "Knead {{amount:0}} g fine semolina and {{amount:1}} g wheat flour with water and salt into a soft dough. Let it rest. Spread {{amount:2}} g butter between the layers, fold and pan-fry in {{amount:4}} g oil. Divide the flatbreads and {{amount:3}} g honey among {{servings}} servings.",
+    "sv": "Knåda {{amount:0}} g fina mannagryn och {{amount:1}} g vetemjöl med vatten och salt till en mjuk deg. Låt vila. Bred {{amount:2}} g smör mellan lagren, vik och stek i {{amount:4}} g olja. Fördela bröden och {{amount:3}} g honung på {{servings}} portioner.",
+    "th": "นวดเซโมลินาเนื้อละเอียด {{amount:0}} กรัมและแป้งสาลี {{amount:1}} กรัมกับน้ำและเกลือจนแป้งนุ่ม พักแป้ง ทาเนย {{amount:2}} กรัมระหว่างชั้น พับและทอดในกระทะด้วยน้ำมัน {{amount:4}} กรัม แบ่งแผ่นแป้งกับน้ำผึ้ง {{amount:3}} กรัมเป็น {{servings}} ที่"
+  },
+  "limitation": {
+    "fi": "Vaihteluväli perustuu kahteen rasvaisen pannuleivän GI-mittaukseen. Msemenin jauhoseos ja rasvan määrä voivat muuttaa vastetta, joka voi jäädä välin ulkopuolelle.",
+    "en": "The range uses two measured GI values for flatbreads prepared with fat. The flour blend and amount of fat in msemen can affect the response, which may fall outside this range.",
+    "sv": "Intervallet bygger på två uppmätta GI-värden för pannbröd tillagade med fett. Mjölsorten och fettmängden i msemen kan påverka responsen, som kan hamna utanför intervallet.",
+    "th": "ช่วงนี้อ้างอิงค่า GI ที่วัดจากแผ่นแป้งทอดที่มีไขมันสองชนิด ส่วนผสมแป้งและปริมาณไขมันของมเซเมนอาจทำให้การตอบสนองอยู่นอกช่วงนี้"
+  },
+  "ingredients": [
+    {
+      "name": {
+        "fi": "Hieno mannasuurimo",
+        "en": "Fine semolina",
+        "sv": "Fina mannagryn",
+        "th": "เซโมลินาเนื้อละเอียด"
+      },
+      "grams": 100
+    },
+    {
+      "name": {
+        "fi": "Vehnäjauho",
+        "en": "Wheat flour",
+        "sv": "Vetemjöl",
+        "th": "แป้งสาลี"
+      },
+      "grams": 100
+    },
+    {
+      "name": {
+        "fi": "Voi",
+        "en": "Butter",
+        "sv": "Smör",
+        "th": "เนย"
+      },
+      "grams": 50
+    },
+    {
+      "name": {
+        "fi": "Hunaja",
+        "en": "Honey",
+        "sv": "Honung",
+        "th": "น้ำผึ้ง"
+      },
+      "grams": 20
+    },
+    {
+      "name": {
+        "fi": "Paistoöljy",
+        "en": "Cooking oil",
+        "sv": "Stekolja",
+        "th": "น้ำมันสำหรับทอด"
+      },
+      "grams": 13.5
+    },
+    {
+      "name": {
+        "fi": "Vesi",
+        "en": "Water",
+        "sv": "Vatten",
+        "th": "น้ำ"
+      },
+      "grams": null
+    },
+    {
+      "name": {
+        "fi": "Suola",
+        "en": "Salt",
+        "sv": "Salt",
+        "th": "เกลือ"
+      },
+      "grams": null
+    }
+  ],
+  "sources": [
+    {
+      "title": "Ali et al., Omani paratha",
+      "url": "https://doi.org/10.1080/10942910802472852",
+      "kind": "HUMAN_GI",
+      "note": "GI 31.8 for scenario A."
+    },
+    {
+      "title": "Shakappa et al., parota",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9304465/",
+      "kind": "HUMAN_GI",
+      "note": "GI 62.48 for scenario B."
+    },
+    {
+      "title": "Jenkins et al., honey",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/6259925/",
+      "kind": "HUMAN_GI",
+      "note": "GI 87 for honey."
+    },
+    {
+      "title": "Fineli 110, 112, 500",
+      "url": "https://fineli.fi/fineli/fi/ohje/19",
+      "kind": "CARBOHYDRATE",
+      "note": "Fineli Release 20, CC BY 4.0."
+    },
+    {
+      "title": "AFCD F004380",
+      "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd",
+      "kind": "CARBOHYDRATE",
+      "note": "AFCD Release 3, CC BY-SA 3.0 Australia."
+    }
+  ],
+  "inputs": [
+    [
+      100,
+      63.6,
+      31.8
+    ],
+    [
+      100,
+      73.998,
+      31.8
+    ],
+    [
+      50,
+      0.8,
+      31.8
+    ],
+    [
+      20,
+      72.3,
+      87
+    ]
+  ],
+  "boundFiles": {
+    "reseptit/aamupalat/pohjoisafrikkalainen-msemen-hunajalla.md": "e263a0339d743610e6b5877b625dc01d123f677c03c4fffe6979df4cd39282fa",
+    "docs/nutrition/gk80-operation80-batch-18.md": "c4e110dd596223cc878d2ef653c4a2a0f54e5ffc7149c9d7856d0d950170e9c7"
+  }
+}
