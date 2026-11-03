@@ -75,7 +75,7 @@ Ackee: erillinen GK-täsmäversio käyttää 60 g kypsää ruodotonta suolatursk
 
 ## Jatkoehdotukset
 
-Nämä neljä nelikielistä esikatseluversiota ovat kahden alkuperäisen erän lisäksi. Kohdennetussa tarkistuksessa niiden kanssa numeerinen esikatselukattavuus on 271/326.
+Nämä viisi nelikielistä esikatseluversiota ovat kahden alkuperäisen erän lisäksi. Kohdennetussa tarkistuksessa niiden kanssa numeerinen esikatselukattavuus on 272/326.
 
 | Resepti | GK/annos | Päätös ennen julkaisua |
 | --- | ---: | --- |
@@ -83,3 +83,4 @@ Nämä neljä nelikielistä esikatseluversiota ovat kahden alkuperäisen erän l
 | Aloo paratha | 43,64–45,96 | Hyväksy punnitut ainekset ja taikinan sekä perunan erilliset GI-verrokit. [Laskelma](gk80-operation80-aloo-paratha.md) |
 | Huevos divorciados | 4,94–7,00 | Hyväksy punaisen salsan punnittu tomaatti, mustapavun GI-koodi ja vihreän salsan skenaariot. [Laskelma](gk80-operation80-salsa-verde.md) |
 | Chilaquiles verdes | 16,71–18,78 | Hyväksy tortillan GI-verrokin käyttö ja vihreän salsan skenaariot. [Laskelma](gk80-operation80-salsa-verde.md) |
+| Pellavansiemenpuuro | 0,43 | Hyväksy nimetyt tuotteet, GI-koodit ja 1,645 g CHO:n pienosuudet annosta kohti. [Laskelma](gk80-operation80-pellava-puuro.md) |
