@@ -75,7 +75,7 @@ Ackee: erillinen GK-täsmäversio käyttää 60 g kypsää ruodotonta suolatursk
 
 ## Jatkoehdotukset
 
-Nämä seitsemäntoista nelikielistä esikatseluversiota ovat kahden alkuperäisen erän lisäksi. Kohdennetussa tarkistuksessa niiden kanssa numeerinen esikatselukattavuus on 284/326.
+Nämä kahdeksantoista nelikielistä esikatseluversiota ovat kahden alkuperäisen erän lisäksi. Kohdennetussa tarkistuksessa niiden kanssa numeerinen esikatselukattavuus on 285/326.
 
 | Resepti | GK/annos | Päätös ennen julkaisua |
 | --- | ---: | --- |
@@ -96,6 +96,7 @@ Nämä seitsemäntoista nelikielistä esikatseluversiota ovat kahden alkuperäis
 | Aamiaisparatha jogurtin kera | 30,80–32,44 | Hyväksy ehdotettu jogurttiannos, perunatäytteen valmistus ja GI-verrokit. [Ehdotus](gk80-operation80-intialainen-aloo-paratha-release-candidate.json) |
 | Margherita-pizza | 58,48 | Hyväksy kaupallinen paistettu pizzapohja kotitaikinan GI-verrokiksi. [Ehdotus](gk80-operation80-pizza-margherita-release-candidate.json) |
 | Pofiber-pizza kinkulla ja sienillä | 0,42 | Hyväksy 100 g herkkusieniä, 50 g kinkkua, punnitut pohjan ainekset ja 1,9625 g/annos poisjättö. [Ehdotus](gk80-operation80-ketopizza-pofiber-pohjalla-release-candidate.json) |
+| Yaki-onigiri misolla | 10,78 | Hyväksy 100 g kypsää sushiriisiä, 10 g misoa ja 2 g noria kahdelle sekä paahdetun riisipallon GI-verrokki. [Ehdotus](gk80-operation80-yaki-onigiri-release-candidate.json) |
 
 ### Aiempi rinnakkainen ehdotus: paistettu maksa ja pekoni
 
@@ -194,3 +195,7 @@ Pofiber-pizzan 50 g punainen paprika tuo 1,125 g, 50 g herkkusieniä 0,075 g ja 
 Punnittavan Pofiber-version tuotevalinnat ovat 175 g Valio Oltermanni -kermajuustoa (0 g hiilihydraattia / 100 g), 37,5 g Valio Viola -maustamatonta tuorejuustoa 1,5 kg:n pakkauksen tiedoilla (3,5 g / 100 g) ja 75 g Mutti Passataa (5,1 g / 100 g). Tuorejuuston 37,5 g on ehdotettu punnittu määrä reseptin 2,5 ruokalusikalle. Siitä tulee 0,65625 g/annos, jolloin viiden pienen rivin yhteismäärä on 1,93125 g/annos. Samoilla muilla sidoksilla 2 g:n raja täyttyy 41,43 g:n tuorejuustomäärällä, joten tilavuusmitan varaan jäävä laskelma ei riitä. Passatasta tulee 1,9125 g/annos. Tomaattimurskan GI 22 antaa sille verrokkiskenaariossa 0,42075 GK. Koko pizzan arvio edellyttää lisäksi paistetun paprikan GI-perustetta. [Oltermanni](https://www.valio.fi/tuotteet/valio-oltermanni-kermajuusto/500-g-kaare/) · [Viola](https://www.valio.fi/tuotteet/valio-viola-maustamaton-tuorejuusto-sanko/) · [Mutti](https://mutti-parma.com/products/passata/)
 
 Sieniversion ehdotuksessa 50 g paprikaa vaihtuu 50 grammaan herkkusieniä. Täytteitä on edelleen yhteensä 150 g. Punnittu 35 g tuorejuustoa jättää viiden pienen rivin yhteismääräksi 1,9625 g imeytyvää hiilihydraattia annosta kohti. GK-arvio 0,42075 tulee passatasta tomaattimurskaverrokilla. Arvio koskee tätä punnittua sieniversiota. [Ehdotus](gk80-operation80-ketopizza-pofiber-pohjalla-release-candidate.json)
+
+### Yaki-onigirin punnittu tarjoilu
+
+Kahden annoksen ehdotuksessa punnitaan 100 g keitettyä sushiriisiä ennen pannupaistoa. Nykyinen ohje jättää riisin punnitustilan avoimeksi ja ilmoittaa misoa sekä noria 150 g kumpaakin. Ehdotuksessa pallot sivellään 10 g:lla misoa ja viimeistellään 2 g:lla noria. Pakkausarvoilla riisistä tulee 14 g imeytyvää hiilihydraattia annosta kohti. Mison ja norin osuus 0,9083 g/annos jää laskelman ulkopuolelle. Satoun paahdetun riisipallon GI 77 on muunnettu riisivertailusta glukoosiasteikolle, ja sitä käytetään pannulla ruskistetun riisin verrokkina. [Ehdotus](gk80-operation80-yaki-onigiri-release-candidate.json) · [GI-taulukko](https://doi.org/10.1093/ajcn/nqab233)
