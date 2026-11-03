@@ -4,9 +4,9 @@
   "coverage": {
     "PROPOSED_RANGE": 36,
     "PUBLISHED_SINGLE": 197,
-    "PROPOSED_SINGLE": 32,
+    "PROPOSED_SINGLE": 33,
     "IN_PROGRESS": 36,
-    "NO_GK": 15,
+    "NO_GK": 14,
     "PUBLISHED_RANGE": 10
   },
   "reviewedPrHeads": {
@@ -111,7 +111,7 @@
     "japanilainen-curry-tofulla",
     "khao-soi-vhh-konjac"
   ],
-  "nextRecipeId": "dal-makhani",
+  "nextRecipeId": "dim-sum",
   "recipes": [
     {
       "recipeId": "aloo-paratha",
@@ -1576,10 +1576,10 @@
       "recipeSha256": "999691495f191f94a25664ff939f15ee350249745f07bbc2f578ecf408f21b43",
       "pilotInputSha256": "cf555ebe1095abfcac5e48571fdfc6cae752e6368eab8542689dbc0b5d0f9810",
       "servings": 4,
-      "status": "NO_GK",
+      "status": "PROPOSED_SINGLE",
       "priorEvidence": [],
-      "level": null,
-      "ownerApproval": null,
+      "level": "B",
+      "ownerApproval": false,
       "sourceQualified": null,
       "blockers": [
         "dal-makhani: mustia urad-dal-linssejä: No source-matched composition and preparation was resolved for “mustia urad-dal-linssejä”; it is not treated as zero.",
@@ -1754,7 +1754,74 @@
             "AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance."
           ]
         }
-      ]
+      ],
+      "operation80Proposal": {
+        "evidencePath": "docs/nutrition/gk80-operation80-batch-50.md",
+        "baselineRecipeSha256": "999691495f191f94a25664ff939f15ee350249745f07bbc2f578ecf408f21b43",
+        "inputFields": [
+          "gramsBatch",
+          "choPer100g",
+          "giGlucoseScale"
+        ],
+        "scenarios": [
+          {
+            "inputs": [
+              [
+                250,
+                43.99,
+                43
+              ],
+              [
+                80,
+                46.09,
+                26
+              ],
+              [
+                30,
+                0.8,
+                50
+              ],
+              [
+                100,
+                4.8,
+                40
+              ],
+              [
+                6,
+                10.2,
+                40
+              ],
+              [
+                20,
+                4.8,
+                50
+              ],
+              [
+                400,
+                3.9,
+                40
+              ],
+              [
+                2,
+                33.7,
+                50
+              ],
+              [
+                100,
+                2.9,
+                50
+              ],
+              [
+                10,
+                1.9,
+                50
+              ]
+            ],
+            "gkPerServing": "16.9406925"
+          }
+        ],
+        "publicationAuthorized": false
+      }
     },
     {
       "recipeId": "dan-dan-nuudelit",
