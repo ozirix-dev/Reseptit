@@ -2,11 +2,11 @@
   "schemaVersion": 1,
   "main": "4d6f19a620bb95e771c12f499554bf2cf1f06e51",
   "coverage": {
-    "PROPOSED_RANGE": 24,
+    "PROPOSED_RANGE": 25,
     "PUBLISHED_SINGLE": 197,
     "PROPOSED_SINGLE": 17,
     "IN_PROGRESS": 34,
-    "NO_GK": 44,
+    "NO_GK": 43,
     "PUBLISHED_RANGE": 10
   },
   "reviewedPrHeads": {
@@ -111,7 +111,7 @@
     "japanilainen-curry-tofulla",
     "khao-soi-vhh-konjac"
   ],
-  "nextRecipeId": "tom-yum-goong-vhh",
+  "nextRecipeId": "vietnamilainen-banh-xeo-aamiaisletut",
   "recipes": [
     {
       "recipeId": "aloo-paratha",
@@ -15185,10 +15185,10 @@
       "recipeSha256": "e2ac45c320ad6ecdcde131dcb8cea63c572b5ed14c50001822741232884db308",
       "pilotInputSha256": "4d416b08dd1e944242b0a6d19d7306b3ceb61ec60f12e8e79262c5551bc6f216",
       "servings": 4,
-      "status": "NO_GK",
+      "status": "PROPOSED_RANGE",
       "priorEvidence": [],
-      "level": null,
-      "ownerApproval": null,
+      "level": "B",
+      "ownerApproval": false,
       "sourceQualified": null,
       "blockers": [
         "tom-yum-goong-vhh: kalaliemikuutiota: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
@@ -15309,7 +15309,109 @@
             "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.057 g available carbohydrate): GI evidence is missing."
           ]
         }
-      ]
+      ],
+      "operation80Proposal": {
+        "evidencePath": "docs/nutrition/gk80-operation80-batch-22.md",
+        "baselineRecipeSha256": "e2ac45c320ad6ecdcde131dcb8cea63c572b5ed14c50001822741232884db308",
+        "inputFields": [
+          "gramsBatch",
+          "choPer100g",
+          "giGlucoseScale"
+        ],
+        "scenarios": [
+          {
+            "inputs": [
+              [
+                500,
+                0,
+                0
+              ],
+              [
+                200,
+                0.3,
+                50
+              ],
+              [
+                1000,
+                0,
+                0
+              ],
+              [
+                25,
+                4.8,
+                50
+              ],
+              [
+                24,
+                4.8,
+                40
+              ],
+              [
+                30,
+                3,
+                50
+              ],
+              [
+                150,
+                3.45,
+                40
+              ],
+              [
+                12,
+                0.505,
+                50
+              ]
+            ],
+            "gkPerServing": "0.977775"
+          },
+          {
+            "inputs": [
+              [
+                500,
+                0,
+                0
+              ],
+              [
+                200,
+                3.79,
+                50
+              ],
+              [
+                1000,
+                0,
+                0
+              ],
+              [
+                25,
+                4.8,
+                50
+              ],
+              [
+                24,
+                4.8,
+                40
+              ],
+              [
+                30,
+                3,
+                50
+              ],
+              [
+                150,
+                3.45,
+                40
+              ],
+              [
+                12,
+                0.505,
+                50
+              ]
+            ],
+            "gkPerServing": "1.850275"
+          }
+        ],
+        "publicationAuthorized": false
+      }
     },
     {
       "recipeId": "tomaatti-kananmuna-wokki",
