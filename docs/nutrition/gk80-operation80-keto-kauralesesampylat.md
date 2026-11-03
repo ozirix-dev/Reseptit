@@ -12,3 +12,9 @@
 Riederin ym. GI 56 ja 64 koskevat vehnäleipiä, joissa käytettiin kauralesetiivistettä. Kokeen verrokit vaihtelevat muun muassa beetaglukaanin ominaisuuksiltaan. Ne eivät kata tämän mantelijauhoa, psylliumia, munaa ja maitotuotteita sisältävän taikinan rakennetta. Siksi väli kuvaa kahden GI-oletuksen vaikutusta, ja soveltuvuus jää lähdekatselmointiin. Käytetty GI kohdistetaan kauraleseen ja mantelijauhon yhteenlaskettuun CHO:hon kerran. Muut GI-luvut ovat laskentakoodeja. [Rieder ym.](https://pubs.rsc.org/en/content/articlehtml/2019/fo/c8fo02098a)
 
 Tarkennus [PR #229:n](https://github.com/ozirix-dev/Reseptit/pull/229) skenaarioon on mantelijauhon koostumussidos. Muiden ainesten perusteet löytyvät [leivonta-auditoinnista](glycemic-bakery-four-source-review.md). Raakatulokset 1,6516625 ja 1,8145375. Seuraava päätös on, riittävätkö tutkimusleivät verrokeiksi vai tarvitaanko sämpylän rakennetta paremmin vastaava koe.
+
+## Psylliumia koskeva jatkotarkistus
+
+Fratelli ym. vertasivat ihmisillä psylliumia sisältäviä gluteenittomia leipiä ja kontrollileipiä. Tutkimus täydentää näyttöä psylliumista, mutta sen riisijauho–kassavatärkkelyspohja ei vastaa kauralese–mantelijauhopohjaa. Jos psylliumleivän GI siirrettäisiin tähän reseptiin, samalla siirtyisi myös eri tärkkelyspohjan vaste. [Fratelli ym.](https://www.sciencedirect.com/science/article/abs/pii/S1756464618300227)
+
+Mandeliannoksen ihmiskoe tutki manteleita valkoisen leivän rinnalla. Se osoitti annoksesta riippuvan vasteen yhdistelmäaterialle. Koe ei mittaa leivän sisään sekoitettua mantelijauhoa tai tämän taikinan rakennetta. Siksi kumpaakaan koetta ei lisätä laskennan vaihteluväliin. Riederin luvut jäävät edellä kuvatuiksi herkkyysskenaarioiksi. [Josse ym.](https://pubmed.ncbi.nlm.nih.gov/17292730/)
