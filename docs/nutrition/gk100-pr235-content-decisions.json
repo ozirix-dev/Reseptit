@@ -39,6 +39,64 @@
         "contentChange": "GK_ONLY",
         "outcome": "OWNER_DECISION"
       }
+    },
+    {
+      "classification": {
+        "contentChange": "GK_ONLY",
+        "candidateSha256": "7298edfdc8287de9177b1f56678ce03b5944ffec46d5bad2cb9135ad9edcc256",
+        "outcome": "OWNER_DECISION",
+        "reasons": [
+          "Uroojin ja Puttarajin mitattu GI koskee koko idli-chutney-ateriaa. Testichutneyn muut ainekset rajoittavat vastaavuutta.",
+          "IFCT B003 yksilöi kuoritun uradin. Ruokakoostumuksen lähteet on nimetty ja tutkimuksesta käytetään yksittäistä GI-tulosta."
+        ],
+        "risk": "MEDIUM",
+        "review": {
+          "depth": "FOCUSED",
+          "evidence": "docs/nutrition/gk80-operation80-batch-09.md ja IFCT B003 -korjattu ehdokaspaketti."
+        },
+        "contentSummary": "Erillinen fermentoitu 80 g valkoisen riisin, 20 g parboiled-riisin ja 16 g uradin taikina sekä 27 g kookoksen ja 2 g sinapinsiemenen chutney."
+      },
+      "recipeId": "intialainen-idli-kookoschutneylla",
+      "packetPath": "docs/nutrition/gk80-operation80-idli-release-candidate.json"
+    },
+    {
+      "classification": {
+        "contentChange": "GK_ONLY",
+        "candidateSha256": "7cb7dcc89d49a7b869197100bd7a4611c6666f3878bdb5528cae8be906484a7b",
+        "outcome": "OWNER_DECISION",
+        "reasons": [
+          "Kim ym. GI 92,5 koskee vedessä haudutettua valkoista riisipuuroa. Riisilajike ja kypsyys voivat muuttaa vastetta.",
+          "Päällisten määrät poikkeavat alkuperäisestä. Niille käytetään laskentakoodeja ja yksilöityjä MEXT-, Fineli- ja USDA-koostumustietoja."
+        ],
+        "risk": "MEDIUM",
+        "review": {
+          "depth": "FOCUSED",
+          "evidence": "docs/nutrition/gk80-operation80-batch-08.md ja nelikielinen vesipohjainen ehdokaspaketti."
+        },
+        "contentSummary": "Erillinen vesipohjainen puuro kahdelle, päällisinä 10 g kivetöntä umeboshia, 8 g seesamia ja 20 g kevätsipulia."
+      },
+      "recipeId": "japanilainen-okayu-umeboshipluumulla",
+      "packetPath": "docs/nutrition/gk80-operation80-okayu-release-candidate.json"
+    },
+    {
+      "classification": {
+        "contentChange": "GK_ONLY",
+        "candidateSha256": "eba490ecf7ed292982607ac5266b21e794f8456453858b0fea05bb4844584e05",
+        "outcome": "OWNER_DECISION",
+        "reasons": [
+          "GI 82 ja 90 ovat nimetyt jasmiiniriisin skenaariot. Vaihtelu kuvaa riisiä, ja haudutetun kastikkeen GI-koodit lisäävät epävarmuutta.",
+          "Kookoshiutaleen sekä poistettujen varsien ja lehtien poisjättö on yhteensä noin 1,79 g CHO/annos. GI 100 -seulonta muuttaisi kumpaakin skenaariota noin 1,79 GK, joten vaikutus on arvioitava päätöksessä.",
+          "Koostumussyötteet on sidottu Fineliin ja AFCD:hen. Tutkimusten GI-luvut käytetään yksittäisinä viitteinä."
+        ],
+        "risk": "HIGH",
+        "review": {
+          "depth": "DEEP",
+          "evidence": "docs/nutrition/gk80-operation80-batch-14.md, ehdokaspaketin kolme poisjättöriviä ja nelikieliset valmistusrajaukset."
+        },
+        "contentSummary": "Erillinen kuuden annoksen versio, jossa 300 g kuivaa jasmiiniriisiä tarjoillaan kokonaan ja kookosmaito sekä mausteet punnitaan."
+      },
+      "recipeId": "rendang-padang",
+      "packetPath": "docs/nutrition/gk80-operation80-rendang-release-candidate.json"
     }
   ]
 }
