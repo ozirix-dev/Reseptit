@@ -1,0 +1,7 @@
+# Konjac-pad thain tamarindi ja yhteisraja
+
+Alkuperäiset 30 g tahnaa ja neljä annosta vaativat alle 13,333… g hiilihydraattia per 100 g tuotetta, jos tahna jätetään pois A-laskennasta. Garden Queen 454 g:n tukkulähde ilmoittaa 14,92 g/100 g, mikä antaa 1,119 g/annos. Aiempi Blue Dragon 16 antaa 1,2, Thai Dancer 21 antaa 1,575 ja AFCD:n puhdas tahna 57,4 antaa 4,305 g/annos. Kaikki ylittävät yksittäisrajan alkuperäisellä määrällä. [Garden Queen](https://talardthai.com/product/garden-queen-concentrate-tamarind-454g/) · [Blue Dragon](https://www.bluedragon.co.uk/products/tamarind-paste) · [Thai Dancer](https://kuchnieswiata.connector-b2b.com/tamarind-paste-435ml-12-thai-dancer-p)
+
+Pelkkä pienempi tahnamäärä ei yksin ratkaise reseptiä. Ehdollinen osasumma on 1,8445 g/annos jo ennen tahnaa, kananmunia ja mahdollista muuta poisjättöä, jos varataan KoRo 0,1, maapähkinä F006107 0,6675, itu F008806 0,6, Squid 300 ml 0,195, lime F004729/F005199 0,225 ja korianteri F003192 0,057. Siksi tahnalle ja kananmunalle jää yhteensä alle 0,1555 g. Skenaario käyttää tuoreiden papuitujen raakakoostumusta sekä koko 60 g kuorittua limeä, eikä oleta alkuperäisten lohkojen syötävää osuutta.
+
+Yhteisen Konjac-tuotesidoksen hyöty säilyy, mutta Pad Thain eteneminen edellyttää tahnalle tai toiselle merkittävälle ainesosalle laskettavaa lähdesidosta. Mungidun kypsennys ja maapähkinän valmistus tarkistetaan ennen siirtoa. Seula tuotti 0 uutta numeerista ehdokasta.
