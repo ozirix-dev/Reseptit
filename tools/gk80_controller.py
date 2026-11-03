@@ -187,7 +187,8 @@ def check_research_scope(root: Path, baseline_sha: str) -> None:
     modified = git(root, "diff", "--name-only", baseline_sha, "--").splitlines()
     untracked = git(root, "ls-files", "--others", "--exclude-standard").splitlines()
     unexpected = sorted({f for f in modified + untracked
-                         if f and not f.replace("\\\\", "/").startswith(EVIDENCE_PREFIX)})
+                         if f and not (f.replace("\\\\", "/").startswith(EVIDENCE_PREFIX)
+                                       or f.replace("\\\\", "/").startswith(STATE_DIR + "/"))})
     if unexpected:
         raise GateError("Unapproved research worktree changes: " + ", ".join(unexpected[:12]))
 
@@ -489,14 +490,14 @@ def main(argv: list[str] | None = None) -> int:
             verified = sorted((v for v in queue["candidates"] if v["status"] == "VERIFIED"),
                               key=lambda v: v["recipeId"])
             lines = ["# GK80 batch30 – source-evidence handoff", "",
-                     f"Research start SHA: \`{state['startSha']}\`",
-                     f"Research branch: \`{state['branch']}\`",
+                     f"Research start SHA: `{state['startSha']}`",
+                     f"Research branch: `{state['branch']}`",
                      "State: RESEARCH VERIFIED (structural only), NOT OWNER APPROVED.",
                      "No Ready/merge/deploy authorization.", "",
                      "| Recipe ID | GK/serving | Omitted CHO g/serving | Evidence SHA256 |",
                      "| --- | ---: | ---: | --- |"]
             for v in verified:
-                lines.append(f"| {v['recipeId']} | {v['gkPerServing']} | {v['omittedChoPerServing']} | \`{v['evidenceSha256']}\` |")
+                lines.append(f"| {v['recipeId']} | {v['gkPerServing']} | {v['omittedChoPerServing']} | `{v['evidenceSha256']}` |")
             lines += ["", "Next: independently review scientific sources and all 30 evidence files.",
                       "Refresh main and open PR deduplication before creating ONE Draft PR.",
                       "No push/PR is performed by this controller.", ""]
