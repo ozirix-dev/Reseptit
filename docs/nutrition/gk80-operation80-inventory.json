@@ -4,9 +4,9 @@
   "coverage": {
     "PROPOSED_RANGE": 15,
     "PUBLISHED_SINGLE": 197,
-    "PROPOSED_SINGLE": 12,
+    "PROPOSED_SINGLE": 13,
     "IN_PROGRESS": 23,
-    "NO_GK": 69,
+    "NO_GK": 68,
     "PUBLISHED_RANGE": 10
   },
   "reviewedPrHeads": {
@@ -25,7 +25,6 @@
     "160": "64f2c14ee3b158fbeff6719278ffaa5f436aec4f"
   },
   "queue": [
-    "indonesialainen-bubur-sumsum",
     "indonesialainen-nasi-goreng-aamiaisriisi",
     "indonesialainen-pisang-goreng-aamiaiseksi",
     "intialainen-idli-kookoschutneylla",
@@ -116,9 +115,9 @@
     "kiinalainen-jianbing-munaletty",
     "chole-bhature",
     "karibia-ackee-ja-suolakala",
-    "nasi-lemak"
+    "indonesialainen-bubur-sumsum"
   ],
-  "nextRecipeId": "indonesialainen-bubur-sumsum",
+  "nextRecipeId": "indonesialainen-nasi-goreng-aamiaisriisi",
   "recipes": [
     {
       "recipeId": "aloo-paratha",
@@ -2556,7 +2555,7 @@
       "recipeSha256": "b3b37b70b74efc5e310662a4e046caa13f44cda96368d0a765a8997d0cd04ee3",
       "pilotInputSha256": "5996cd494b1fa936de14078ed32f54b625e8caed8ddc493c10d8194510d64027",
       "servings": 2,
-      "status": "NO_GK",
+      "status": "IN_PROGRESS",
       "priorEvidence": [],
       "level": null,
       "ownerApproval": null,
@@ -2620,7 +2619,8 @@
             "Source-documented zero available carbohydrate: Salt has no available carbohydrate."
           ]
         }
-      ]
+      ],
+      "operation80Finding": "Coconut milk composition available; resolve rice-flour porridge analogue, 150 g pandan use, palm sugar identity and served syrup."
     },
     {
       "recipeId": "indonesialainen-ketoprak-aamiaiskulho",
@@ -10818,10 +10818,10 @@
       "recipeSha256": "cf5979cb92a42aecfe907644fd7b674d101f6988750859d12bc83ee3f7a5d292",
       "pilotInputSha256": "e670f6f07f3c847084070881e1661149cc0aa83c4d3a1355d26b99140f3fdbc4",
       "servings": 4,
-      "status": "IN_PROGRESS",
+      "status": "PROPOSED_SINGLE",
       "priorEvidence": [],
-      "level": null,
-      "ownerApproval": null,
+      "level": "B",
+      "ownerApproval": false,
       "sourceQualified": null,
       "blockers": [
         "nasi-lemak: sambal ja kookosmaito: The sambal is an unbranded prepared sauce with no ingredient composition or matching GI; coconut milk preparation also lacks a defensible GI match if its measured carbohydrate exceeds the per-serving cutoff."
@@ -10853,7 +10853,61 @@
           ]
         }
       ],
-      "operation80Finding": "Whole dish human GI 66 comparator identified; bind all recipe carbohydrate rows."
+      "operation80Finding": "Whole dish human GI 66 comparator identified; bind all recipe carbohydrate rows.",
+      "operation80Proposal": {
+        "evidencePath": "docs/nutrition/gk80-operation80-batch-06.md",
+        "baselineRecipeSha256": "cf5979cb92a42aecfe907644fd7b674d101f6988750859d12bc83ee3f7a5d292",
+        "inputFields": [
+          "gramsBatch",
+          "choPer100g"
+        ],
+        "matrixInputs": [
+          [
+            300,
+            79
+          ],
+          [
+            200,
+            3.4
+          ],
+          [
+            220,
+            0.3
+          ],
+          [
+            80,
+            0.5
+          ],
+          [
+            80,
+            14.1
+          ],
+          [
+            400,
+            1.4
+          ],
+          [
+            30,
+            3.1
+          ],
+          [
+            25,
+            3.1
+          ],
+          [
+            15,
+            16
+          ]
+        ],
+        "choPerServing": "66.46125",
+        "scenarios": [
+          {
+            "giGlucoseScale": "66",
+            "gkPerServing": "43.8644250"
+          }
+        ],
+        "publicationAuthorized": false
+      }
     },
     {
       "recipeId": "okonomiyaki-kaaliletut",
