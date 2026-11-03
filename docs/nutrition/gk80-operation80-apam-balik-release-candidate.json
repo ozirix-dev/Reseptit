@@ -1,0 +1,177 @@
+{
+  "recipeId": "malesialainen-apam-balik",
+  "servings": 2,
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "unroundedGk": "32.58458",
+  "upperScenario": {
+    "giOverrides": [
+      {
+        "inputIndex": 0,
+        "gi": 61.8
+      },
+      {
+        "inputIndex": 1,
+        "gi": 61.8
+      }
+    ],
+    "unroundedGk": "34.364492"
+  },
+  "preparation": {
+    "fi": "Keitä {{amount:2}} g makeuttamattomia pakastemaissinjyviä pakkauksen ohjeen mukaan ja valuta. Vatkaa {{amount:0}} g vehnäjauhoa, {{amount:1}} g kuoretonta kananmunaa, {{amount:6}} ml vettä ja suola. Anna levätä 10 minuuttia. Paista ohuita lettuja {{amount:5}} rkl:ssa öljyä. Lisää maissi, {{amount:3}} g murskattua suolatonta maapähkinää ja {{amount:4}} g valkoista sokeria. Taita, kuumenna lyhyesti ja jaa {{servings}} annokseen.",
+    "en": "Boil {{amount:2}} g unsweetened frozen sweetcorn as directed on the packet and drain. Whisk {{amount:0}} g wheat flour, {{amount:1}} g shelled egg, {{amount:6}} ml water and salt. Rest for 10 minutes. Pan-fry thin pancakes in {{amount:5}} tbsp oil. Add the corn, {{amount:3}} g crushed unsalted peanuts and {{amount:4}} g white sugar. Fold, heat briefly and divide into {{servings}} servings.",
+    "sv": "Koka {{amount:2}} g osötad fryst majs enligt anvisningarna och låt rinna av. Vispa {{amount:0}} g vetemjöl, {{amount:1}} g ägg utan skal, {{amount:6}} ml vatten och salt. Låt vila i 10 minuter. Stek tunna pannkakor i {{amount:5}} msk olja. Tillsätt majsen, {{amount:3}} g krossade osaltade jordnötter och {{amount:4}} g vitt socker. Vik ihop, värm kort och dela i {{servings}} portioner.",
+    "th": "ต้มข้าวโพดหวานแช่แข็งไม่เติมน้ำตาล {{amount:2}} กรัมตามวิธีบนบรรจุภัณฑ์แล้วสะเด็ดน้ำ ตีแป้งสาลี {{amount:0}} กรัม ไข่ไม่รวมเปลือก {{amount:1}} กรัม น้ำ {{amount:6}} มล. และเกลือ พัก 10 นาที ทอดเป็นแผ่นบางในน้ำมัน {{amount:5}} ช้อนโต๊ะ ใส่ข้าวโพด ถั่วลิสงไม่ใส่เกลือบด {{amount:3}} กรัม และน้ำตาลทรายขาว {{amount:4}} กรัม พับ อุ่นสั้น ๆ แล้วแบ่งเป็น {{servings}} ที่"
+  },
+  "limitation": {
+    "fi": "Arvio koskee ohutta lettua. Vaihteluväli perustuu vehnäletun ja vehnä-dosan GI-mittauksiin. Täytteet lasketaan erikseen.",
+    "en": "The estimate applies to the thin pancake. The range uses measured GI values for a wheat pancake and wheat dosa. The toppings are calculated separately.",
+    "sv": "Uppskattningen gäller den tunna pannkakan. Intervallet bygger på uppmätt GI för vetepannkaka och vetedosa. Fyllningen beräknas separat.",
+    "th": "ค่าประมาณใช้กับแผ่นบาง ช่วงค่าอ้างอิง GI ที่วัดจากแพนเค้กแป้งสาลีและโดซาแป้งสาลี คำนวณไส้แยกต่างหาก"
+  },
+  "ingredients": [
+    {
+      "grams": 100,
+      "name": {
+        "fi": "Vehnäjauho",
+        "en": "Wheat flour",
+        "sv": "Vetemjöl",
+        "th": "แป้งสาลี"
+      }
+    },
+    {
+      "grams": 55,
+      "name": {
+        "fi": "Kananmuna ilman kuorta",
+        "en": "Shelled egg",
+        "sv": "Ägg utan skal",
+        "th": "ไข่ไม่รวมเปลือก"
+      }
+    },
+    {
+      "grams": 80,
+      "name": {
+        "fi": "Pakastemaissi",
+        "en": "Frozen sweetcorn",
+        "sv": "Fryst majs",
+        "th": "ข้าวโพดหวานแช่แข็ง"
+      }
+    },
+    {
+      "grams": 20,
+      "name": {
+        "fi": "Suolaton maapähkinä",
+        "en": "Unsalted peanuts",
+        "sv": "Osaltade jordnötter",
+        "th": "ถั่วลิสงไม่ใส่เกลือ"
+      }
+    },
+    {
+      "grams": 25,
+      "name": {
+        "fi": "Valkoinen sokeri",
+        "en": "White sugar",
+        "sv": "Vitt socker",
+        "th": "น้ำตาลทรายขาว"
+      }
+    },
+    {
+      "grams": null,
+      "name": {
+        "fi": "Paistoöljy",
+        "en": "Cooking oil",
+        "sv": "Stekolja",
+        "th": "น้ำมันสำหรับทอด"
+      },
+      "quantity": {
+        "amount": 1,
+        "unit": "tbsp"
+      }
+    },
+    {
+      "grams": null,
+      "name": {
+        "fi": "Vesi",
+        "en": "Water",
+        "sv": "Vatten",
+        "th": "น้ำ"
+      },
+      "quantity": {
+        "amount": 100,
+        "unit": "ml"
+      }
+    },
+    {
+      "grams": null,
+      "name": {
+        "fi": "Suola",
+        "en": "Salt",
+        "sv": "Salt",
+        "th": "เกลือ"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Kim et al., wheat pancake",
+      "url": "https://doi.org/10.1017/S0007114518003446",
+      "kind": "HUMAN_GI",
+      "note": "GI 57 for the batter in scenario A."
+    },
+    {
+      "title": "Shobana et al., wheat dosa",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9552392/",
+      "kind": "HUMAN_GI",
+      "note": "GI 61.8 for the batter in scenario B."
+    },
+    {
+      "title": "Jenkins et al., Table 1",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/6259925/",
+      "kind": "HUMAN_GI",
+      "note": "Sweetcorn 59, peanuts 13, sucrose 59."
+    },
+    {
+      "title": "THL Fineli 110, 858, 1",
+      "url": "https://fineli.fi/fineli/fi/ohje/19",
+      "kind": "CARBOHYDRATE",
+      "note": "Fineli Release 20, CC BY 4.0."
+    },
+    {
+      "title": "AFCD F003202, F006107",
+      "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd",
+      "kind": "CARBOHYDRATE",
+      "note": "AFCD Release 3, CC BY-SA 3.0 Australia."
+    }
+  ],
+  "inputs": [
+    [
+      100,
+      73.998,
+      57
+    ],
+    [
+      55,
+      0.3,
+      57
+    ],
+    [
+      80,
+      16.8,
+      59
+    ],
+    [
+      20,
+      8.9,
+      13
+    ],
+    [
+      25,
+      99.9,
+      59
+    ]
+  ],
+  "boundFiles": {
+    "reseptit/aamupalat/malesialainen-apam-balik.md": "e79cae619673433b33136e61e4ca91d14daa02a4c226645347b386ef38893f80",
+    "docs/nutrition/gk80-operation80-batch-15.md": "c874f41f03edeb02da532947c53469d2cfd7420548d6a67e5616e20f399e9d8e"
+  }
+}
