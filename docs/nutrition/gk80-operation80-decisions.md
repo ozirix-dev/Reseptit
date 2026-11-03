@@ -75,7 +75,7 @@ Ackee: erillinen GK-täsmäversio käyttää 60 g kypsää ruodotonta suolatursk
 
 ## Jatkoehdotukset
 
-Nämä kuusi nelikielistä esikatseluversiota ovat kahden alkuperäisen erän lisäksi. Kohdennetussa tarkistuksessa niiden kanssa numeerinen esikatselukattavuus on 273/326.
+Nämä yhdeksän nelikielistä esikatseluversiota ovat kahden alkuperäisen erän lisäksi. Kohdennetussa tarkistuksessa niiden kanssa numeerinen esikatselukattavuus on 276/326.
 
 | Resepti | GK/annos | Päätös ennen julkaisua |
 | --- | ---: | --- |
@@ -85,6 +85,9 @@ Nämä kuusi nelikielistä esikatseluversiota ovat kahden alkuperäisen erän li
 | Chilaquiles verdes | 16,71–18,78 | Hyväksy tortillan GI-verrokin käyttö ja vihreän salsan skenaariot. [Laskelma](gk80-operation80-salsa-verde.md) |
 | Pellavansiemenpuuro | 0,43 | Hyväksy nimetyt tuotteet, GI-koodit ja 1,645 g CHO:n pienosuudet annosta kohti. [Laskelma](gk80-operation80-pellava-puuro.md) |
 | Konjak-pad thai | 0,78 | Hyväksy 18 g tamarinditahnaa, punnittu tarjoilumehu ja GI-koodit. [Laskelma](gk80-operation80-pad-thai-vhh-konjac.md) |
+| VHH-lihapiirakka | Laskettu osuus alle 1 | Hyväksy Pickerd-mantelijauhe, punnitut määrät ja tuorejuuston GI-koodi. Pois rajattu CHO 1,47 g/annos. [Laskelma](../research/gk80-international-20261102/pickerd-almond-two.md) |
+| Keto-korvapuustit | Laskettu osuus alle 1 | Hyväksy Pickerd-mantelijauhe, punnittu kaneli ja tuorejuuston GI-koodi. Pois rajattu CHO 1,06 g/annos. [Laskelma](../research/gk80-international-20261102/pickerd-almond-two.md) |
+| VHH-Runebergintortut | Laskettu osuus alle 1 | Hyväksy Liovela-mantelijauho, punnitut määrät ja rahkan GI-koodi. Pois rajattu CHO 1,48 g/annos. [Laskelma](../research/gk80-international-20261102/runeberg-almond.md) |
 
 ### Aiempi rinnakkainen ehdotus: paistettu maksa ja pekoni
 
