@@ -2,11 +2,11 @@
   "schemaVersion": 1,
   "main": "4d6f19a620bb95e771c12f499554bf2cf1f06e51",
   "coverage": {
-    "PROPOSED_RANGE": 29,
+    "PROPOSED_RANGE": 30,
     "PUBLISHED_SINGLE": 197,
     "PROPOSED_SINGLE": 22,
     "IN_PROGRESS": 36,
-    "NO_GK": 32,
+    "NO_GK": 31,
     "PUBLISHED_RANGE": 10
   },
   "reviewedPrHeads": {
@@ -996,10 +996,10 @@
       "recipeSha256": "49a8897b6832d1a6fb68574c366acba08311463a8e39baa586f94c1fb369e548",
       "pilotInputSha256": "8f1369a533361a2807c8cf07a0027a54a2503c3400636fea41751d624b0af7aa",
       "servings": 4,
-      "status": "NO_GK",
+      "status": "PROPOSED_RANGE",
       "priorEvidence": [],
-      "level": null,
-      "ownerApproval": null,
+      "level": "B",
+      "ownerApproval": false,
       "sourceQualified": null,
       "blockers": [
         "carnitas-salaattitacot: limetti: The recipe amount 1 kpl has no food-specific mass conversion for Lime, peeled, raw.",
@@ -1132,7 +1132,79 @@
             "Source-documented zero available carbohydrate: Conservative available-carbohydrate bound 0 g per recipe; below 1 g per serving."
           ]
         }
-      ]
+      ],
+      "operation80Proposal": {
+        "evidencePath": "docs/nutrition/gk80-operation80-batch-32.md",
+        "baselineRecipeSha256": "49a8897b6832d1a6fb68574c366acba08311463a8e39baa586f94c1fb369e548",
+        "inputFields": [
+          "gramsBatch",
+          "choPer100g",
+          "giGlucoseScale"
+        ],
+        "scenarios": [
+          {
+            "inputs": [
+              [
+                130,
+                8.9,
+                41
+              ],
+              [
+                144,
+                1.8,
+                40
+              ],
+              [
+                70,
+                3.45,
+                40
+              ],
+              [
+                20,
+                5.447,
+                40
+              ],
+              [
+                6,
+                10.2,
+                40
+              ]
+            ],
+            "gkPerServing": "1.856765"
+          },
+          {
+            "inputs": [
+              [
+                130,
+                8.9,
+                54
+              ],
+              [
+                144,
+                1.8,
+                40
+              ],
+              [
+                70,
+                3.45,
+                40
+              ],
+              [
+                20,
+                5.447,
+                40
+              ],
+              [
+                6,
+                10.2,
+                40
+              ]
+            ],
+            "gkPerServing": "2.23279"
+          }
+        ],
+        "publicationAuthorized": false
+      }
     },
     {
       "recipeId": "char-siu",
