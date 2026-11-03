@@ -1,0 +1,128 @@
+{
+  "recipeId": "indonesialainen-lontong-sayur-aamiaiseksi",
+  "servings": 2,
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "unroundedGk": "17.252",
+  "inputs": [
+    [
+      40,
+      79,
+      83
+    ],
+    [
+      200,
+      3.4,
+      50
+    ],
+    [
+      200,
+      4.97,
+      40
+    ],
+    [
+      100,
+      1.8,
+      50
+    ]
+  ],
+  "ingredients": [
+    {
+      "grams": 40,
+      "name": {
+        "fi": "Kuiva valkoinen pitkäjyväinen riisi",
+        "en": "Dry white long-grain rice",
+        "sv": "Torrt vitt långkornigt ris",
+        "th": "ข้าวขาวเมล็ดยาวแห้ง"
+      }
+    },
+    {
+      "grams": 200,
+      "name": {
+        "fi": "Blue Dragon -kookosmaito",
+        "en": "Blue Dragon coconut milk",
+        "sv": "Blue Dragon-kokosmjölk",
+        "th": "กะทิ Blue Dragon"
+      }
+    },
+    {
+      "grams": 200,
+      "name": {
+        "fi": "Valkokaali",
+        "en": "White cabbage",
+        "sv": "Vitkål",
+        "th": "กะหล่ำปลีขาว"
+      }
+    },
+    {
+      "grams": 100,
+      "name": {
+        "fi": "Cauldron Extra Firm -tofu",
+        "en": "Cauldron Extra Firm tofu",
+        "sv": "Cauldron Extra Firm-tofu",
+        "th": "เต้าหู้แข็งพิเศษ Cauldron"
+      }
+    },
+    {
+      "grams": null,
+      "name": {
+        "fi": "Aneto-kasvisliemi",
+        "en": "Aneto vegetable broth",
+        "sv": "Aneto-grönsaksbuljong",
+        "th": "น้ำซุปผัก Aneto"
+      },
+      "quantity": {
+        "amount": 700,
+        "unit": "ml"
+      }
+    }
+  ],
+  "omissions": [
+    {
+      "ingredientIndex": 4,
+      "choPer100ml": 0.2
+    }
+  ],
+  "preparation": {
+    "fi": "Esikypsennä {{amount:0}} g riisiä vedessä, kääri tiiviisti banaaninlehteen ja keitä pakettia noin kaksi tuntia, kunnes riisi on tiivis ja kypsä. Poista lehti ja leikkaa koko riisikakku paloiksi. Hauduta {{amount:2}} g kaalia {{amount:4}} ml:ssa lientä. Lisää {{amount:1}} g kookosmaitoa ja {{amount:3}} g tofua. Lämmitä riisikakkupalat liemessä ja jaa koko erä {{servings}} annokseen.",
+    "en": "Parcook {{amount:0}} g rice in water, wrap tightly in a banana leaf and boil the parcel for about two hours, until firm and fully cooked. Remove the leaf and cut the entire rice cake into pieces. Simmer {{amount:2}} g cabbage in {{amount:4}} ml broth. Add {{amount:1}} g coconut milk and {{amount:3}} g tofu. Warm the rice cake pieces in the broth and divide the entire batch into {{servings}} servings.",
+    "sv": "Förkoka {{amount:0}} g ris i vatten, linda in tätt i bananblad och koka paketet i cirka två timmar tills riset är fast och genomkokt. Ta bort bladet och skär hela riskakan i bitar. Sjud {{amount:2}} g vitkål i {{amount:4}} ml buljong. Tillsätt {{amount:1}} g kokosmjölk och {{amount:3}} g tofu. Värm riskaksbitarna i buljongen och dela hela satsen i {{servings}} portioner.",
+    "th": "ต้มข้าว {{amount:0}} กรัมให้สุกบางส่วน ห่อใบตองให้แน่นแล้วต้มประมาณสองชั่วโมงจนข้าวแน่นและสุกทั่ว แกะใบตองออกแล้วหั่นข้าวทั้งหมดเป็นชิ้น เคี่ยวกะหล่ำปลี {{amount:2}} กรัมในน้ำซุป {{amount:4}} มล. เติมกะทิ {{amount:1}} กรัมและเต้าหู้ {{amount:3}} กรัม อุ่นชิ้นข้าวในน้ำซุปแล้วแบ่งทั้งหมดเป็น {{servings}} ที่"
+  },
+  "limitation": {
+    "fi": "GI 83 on lehtikääreessä kypsennetyn tahmariisin verrokki. Riisilaji ja kypsennys voivat poiketa. Liemestä jää pois 0,70 g CHO/annos.",
+    "en": "GI 83 is a proxy from glutinous rice cooked in a leaf wrapper. The rice and cooking method may differ. Broth contributes 0.70 g excluded carbohydrate per serving.",
+    "sv": "GI 83 bygger på klibbigt ris tillagat i ett bladpaket. Rissort och tillagning kan skilja sig. Buljongens 0,70 g kolhydrat per portion ingår inte.",
+    "th": "ค่า GI 83 ใช้ข้าวเหนียวที่ปรุงในห่อใบไม้เป็นตัวเทียบ พันธุ์ข้าวและวิธีปรุงอาจต่างกัน ไม่รวมคาร์โบไฮเดรตจากน้ำซุป 0.70 กรัมต่อที่"
+  },
+  "sources": [
+    {
+      "title": "Chen et al.",
+      "url": "https://www.wjgnet.com/1007-9327/full/v16/i12/1512-T2.htm"
+    },
+    {
+      "title": "Syadiah and Rimbawan",
+      "url": "https://repository.ipb.ac.id/handle/123456789/126726"
+    },
+    {
+      "title": "Fineli",
+      "url": "https://fineli.fi/fineli/fi/ohje/19"
+    },
+    {
+      "title": "Aneto",
+      "url": "https://www.caldoaneto.com/en/product/basic-broth/natural-vegetable-broth"
+    },
+    {
+      "title": "Blue Dragon",
+      "url": "https://www.bluedragon.co.uk/products/coconut-milk"
+    },
+    {
+      "title": "Cauldron",
+      "url": "https://www.cauldronfoods.co.uk/products/extra-firm-plant-based-tofu"
+    }
+  ],
+  "boundFiles": {
+    "reseptit/aamupalat/indonesialainen-lontong-sayur-aamiaiseksi.md": "6edb30b88df161bea6daeff58d333f752036c79784ea4366d352e8f69bc2ee7b",
+    "docs/nutrition/gk80-operation80-batch-48.md": "5cc2477dc61a82f360acd38f6807ccdcf5ca3b5d6e780f69310d51fb76350ba3"
+  }
+}
