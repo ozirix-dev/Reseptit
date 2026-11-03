@@ -2,11 +2,11 @@
   "schemaVersion": 1,
   "main": "4d6f19a620bb95e771c12f499554bf2cf1f06e51",
   "coverage": {
-    "PROPOSED_RANGE": 11,
+    "PROPOSED_RANGE": 14,
     "PUBLISHED_SINGLE": 197,
-    "PROPOSED_SINGLE": 10,
-    "IN_PROGRESS": 15,
-    "NO_GK": 83,
+    "PROPOSED_SINGLE": 11,
+    "IN_PROGRESS": 17,
+    "NO_GK": 77,
     "PUBLISHED_RANGE": 10
   },
   "reviewedPrHeads": {
@@ -25,18 +25,12 @@
     "160": "64f2c14ee3b158fbeff6719278ffaa5f436aec4f"
   },
   "queue": [
-    "malesialainen-kookos-banaanikulho",
-    "mapo-tofu",
-    "nasi-lemak",
-    "samosa",
     "valimerellinen-appelsiini-aamiaiskakku",
-    "vietnamilainen-banh-bao-kananmunalla",
     "chole-bhature",
     "indonesialainen-bakwan-maissifritter",
     "indonesialainen-bubur-sumsum",
     "indonesialainen-nasi-goreng-aamiaisriisi",
     "indonesialainen-pisang-goreng-aamiaiseksi",
-    "indonesialainen-tempeh-munakulho",
     "intialainen-idli-kookoschutneylla",
     "intialainen-rava-uttapam",
     "japanilainen-curry-tofulla",
@@ -119,12 +113,14 @@
     "ketopizza-pofiber-pohjalla",
     "kiinalainen-teehaudutetut-munat",
     "mala-xiang-guo",
-    "pellava-puuro-pahkinoilla",
     "pohjoisafrikkalainen-harcha-juustolla",
     "tangyuan",
-    "vada-pav"
+    "vada-pav",
+    "malesialainen-kookos-banaanikulho",
+    "mapo-tofu",
+    "nasi-lemak"
   ],
-  "nextRecipeId": "malesialainen-kookos-banaanikulho",
+  "nextRecipeId": "valimerellinen-appelsiini-aamiaiskakku",
   "recipes": [
     {
       "recipeId": "aloo-paratha",
@@ -2978,10 +2974,10 @@
       "recipeSha256": "48c54ac345257f808fa457837f20af7f560128d891f3108efe1b37b4b76df3f8",
       "pilotInputSha256": "1431ba70d225192fe3a4937b84f4794ac5f60075a6e99e7bf393e4e6295c8a15",
       "servings": 2,
-      "status": "NO_GK",
+      "status": "PROPOSED_RANGE",
       "priorEvidence": [],
-      "level": null,
-      "ownerApproval": null,
+      "level": "B",
+      "ownerApproval": false,
       "sourceQualified": null,
       "blockers": [
         "indonesialainen-tempeh-munakulho: tempeh: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
@@ -3054,7 +3050,69 @@
             "Source-documented zero available carbohydrate: Plain salt has zero available carbohydrate."
           ]
         }
-      ]
+      ],
+      "operation80Proposal": {
+        "evidencePath": "docs/nutrition/gk80-operation80-batch-03.md",
+        "baselineRecipeSha256": "48c54ac345257f808fa457837f20af7f560128d891f3108efe1b37b4b76df3f8",
+        "inputFields": [
+          "gramsBatch",
+          "choPer100g",
+          "giGlucoseScale"
+        ],
+        "scenarios": [
+          {
+            "inputs": [
+              [
+                100,
+                79,
+                82
+              ],
+              [
+                100,
+                1.9,
+                50
+              ],
+              [
+                110,
+                0.3,
+                50
+              ],
+              [
+                15,
+                3.1,
+                40
+              ]
+            ],
+            "gkPerServing": "33.0405"
+          },
+          {
+            "inputs": [
+              [
+                100,
+                79,
+                82
+              ],
+              [
+                100,
+                1.9,
+                50
+              ],
+              [
+                110,
+                0.3,
+                50
+              ],
+              [
+                30,
+                3.1,
+                40
+              ]
+            ],
+            "gkPerServing": "33.1335"
+          }
+        ],
+        "publicationAuthorized": false
+      }
     },
     {
       "recipeId": "intialainen-aloo-paratha",
@@ -8727,7 +8785,7 @@
       "recipeSha256": "38098f8441fc8db0000306ca5c61fa04dd5d44754b7bd3faf8364e611b9b31f7",
       "pilotInputSha256": "1561eaffb282281275d1e211ba21a64ec9d7e14ce1339999fbcae4ab293725e1",
       "servings": 2,
-      "status": "NO_GK",
+      "status": "IN_PROGRESS",
       "priorEvidence": [],
       "level": null,
       "ownerApproval": null,
@@ -8761,7 +8819,8 @@
             "Palm sugar lacks a matching Fineli food record; tapioca flour has a carbohydrate record but no published GI matched to the recipe preparation."
           ]
         }
-      ]
+      ],
+      "operation80Finding": "Weighed banana, cooked tapioca GI, palm sugar identity and served syrup."
     },
     {
       "recipeId": "malesialainen-kuih-seri-muka",
@@ -9106,7 +9165,7 @@
       "recipeSha256": "13ee33643135ded5d919c1263d5d4a5017a13b55024d2d2fa109d76709591895",
       "pilotInputSha256": "0f9964527454817d2fa0b0d4af4f47073baa872f814642d04d38f27c14d540d7",
       "servings": 4,
-      "status": "NO_GK",
+      "status": "IN_PROGRESS",
       "priorEvidence": [],
       "level": null,
       "ownerApproval": null,
@@ -9261,7 +9320,8 @@
             "The recipe amount 4 annosta has no food-specific mass conversion for RIISI PITKÄJYVÄINEN, PUUROUTUMATON."
           ]
         }
-      ]
+      ],
+      "operation80Finding": "Cooked rice portion mass and doubanjiang product, dose and GI."
     },
     {
       "recipeId": "marjainen-chiavanukas",
@@ -10680,7 +10740,7 @@
       "recipeSha256": "cf5979cb92a42aecfe907644fd7b674d101f6988750859d12bc83ee3f7a5d292",
       "pilotInputSha256": "e670f6f07f3c847084070881e1661149cc0aa83c4d3a1355d26b99140f3fdbc4",
       "servings": 4,
-      "status": "NO_GK",
+      "status": "IN_PROGRESS",
       "priorEvidence": [],
       "level": null,
       "ownerApproval": null,
@@ -10714,7 +10774,8 @@
             "The sambal is an unbranded prepared sauce with no ingredient composition or matching GI; coconut milk preparation also lacks a defensible GI match if its measured carbohydrate exceeds the per-serving cutoff."
           ]
         }
-      ]
+      ],
+      "operation80Finding": "Inproba composition verified; match coconut-rice human comparator and bind side portions."
     },
     {
       "recipeId": "okonomiyaki-kaaliletut",
@@ -11498,10 +11559,16 @@
       "recipeSha256": "6ef230c98eb7272242996be4d57e594d53e0727f25b4976594bc8e3a74d410f6",
       "pilotInputSha256": "da549b3ed90b9bce5a112e030ae3be4c142b2742d190a5b619917d8aabdc4666",
       "servings": 4,
-      "status": "IN_PROGRESS",
-      "priorEvidence": [],
+      "status": "PROPOSED_SINGLE",
+      "priorEvidence": [
+        {
+          "kind": "historical-conditional",
+          "path": "docs/research/gk80-international-20261102/followup/pellava-conditional-version.json",
+          "approved": false
+        }
+      ],
       "level": null,
-      "ownerApproval": null,
+      "ownerApproval": false,
       "sourceQualified": null,
       "blockers": [
         "pellava-puuro-pahkinoilla: kookosjauhoa: No source-matched composition and preparation was resolved for “kookosjauhoa”; it is not treated as zero."
@@ -12729,10 +12796,16 @@
       "recipeSha256": "46434c90d2a686eba39107cb9fb68ee4a1d3004ba24adade63de81db470a3140",
       "pilotInputSha256": "6faa8f7300ba4e49de064281f669a9fdcd4c0fb8d956fd4d3383f3f1d44ae000",
       "servings": 4,
-      "status": "NO_GK",
-      "priorEvidence": [],
+      "status": "PROPOSED_RANGE",
+      "priorEvidence": [
+        {
+          "kind": "historical-conditional",
+          "path": "docs/research/gk80-international-20261102/almond-reuse-and-oman/samosa-prepared-source-scenario.json",
+          "approved": false
+        }
+      ],
       "level": null,
-      "ownerApproval": null,
+      "ownerApproval": false,
       "sourceQualified": null,
       "blockers": [
         "samosa: vehnäjauhoja: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved."
@@ -15381,10 +15454,16 @@
       "recipeSha256": "f4613348486bde0f2a85018d632d0069bd461e9d5b8513e558b58bd768f1f06f",
       "pilotInputSha256": "7a3b71a8e56b94d05710499ac95a95c380305f65b62b793fc99127efafd66b73",
       "servings": 2,
-      "status": "NO_GK",
-      "priorEvidence": [],
+      "status": "PROPOSED_RANGE",
+      "priorEvidence": [
+        {
+          "kind": "historical-conditional",
+          "path": "docs/research/gk80-international-20261102/steamed-buns-source-control/banh-bao-component-proposal.json",
+          "approved": false
+        }
+      ],
       "level": null,
-      "ownerApproval": null,
+      "ownerApproval": false,
       "sourceQualified": null,
       "blockers": [
         "vietnamilainen-banh-bao-kananmunalla: vehnäjauho: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved."
