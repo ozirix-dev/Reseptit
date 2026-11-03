@@ -63,8 +63,10 @@ turvaportit sallivat.
 
 ### 3. Todistusketju (V1 rakenteellinen, myöhemmin vahvempi)
 
-- Varmennettavien tiedostojen SHA-256 tarkistetaan itse.
-- Lähde-/syötepolut rajataan omaan tutkimushakemistoon.
+- Molempien syöte- ja evidenssitiedostojen SHA-256 lasketaan ja tarkistetaan itse.
+- Lähde-/syötepolut rajataan fyysiseen tutkimushakemistoon, myös symlinkkien osalta.
+- Gitin muuttuneet tiedostot tarkistetaan ennen varsinaista ajoa ja sen jälkeen:
+  muu kuin tutkimushakemiston muutos pysäyttää jatkon (`STOPPED_GUARD`).
 - Tuotannon julkaistuja reseptejä ei muuteta tällä ajolla.
 - Luovutuksessa listataan 30 ID:tä ja niiden evidenssitiivisteet.
 - Tieteellinen lähdevarmennus kuuluu yhä erilliseen katselmointiin.
@@ -116,7 +118,7 @@ Ohjain ei automaattisesti pushaa, luo PR:ää tai julkaise mitään.
 
 - Read-only GitHubin resepti-ID-synkronointi ja julkaistujen
   versioiden törmäysportti (lähdekatselmoinnin jälkeen).
-- Todella atominen versioitu journal + palautus aikakatkaisuista.
+- Aikakatkaisusta selviytyvän nykyisen yhden vuoron palautuksen laajentaminen versioiduksi journaliksi ja usean prosessin kaatumistilanteisiin.
 - Ulkoinen käyttökrediitti-/tokenbudjetti, jos luotettava
   paikallinen kulutustieto on saatavilla.
 - Päätös- ja lähdeaineiston riippumaton verifier-palvelu.
@@ -134,7 +136,9 @@ Ohjain ei automaattisesti pushaa, luo PR:ää tai julkaise mitään.
 | Repo on Ravinto tai checkout main | HALT |
 | Worktree puuttuu tai branch vaihtuu | HALT |
 | Kaksi samaa recipe-ID:tä | HALT |
-| Väärä SHA-256 tai puuttuva tarkistusmerkintä | HALT |
+| Väärä syöte-/evidenssi-SHA tai puuttuva tarkistusmerkintä | HALT |
+| Ohjattu työvuoro muuttaa reseptitiedostoa tai vaihtaa branchia | STOPPED_GUARD |
+| Keskeytetty vuoro jättää rikkinäisen queue.json:n | Palautus ja STOPPED_INVALID_QUEUE |
 | HOLD ilman estettä | HALT |
 | DRY RUN ilman executea | Ei Codex-prosessia |
 | STOP tai active.lock | Ei uutta vuoroa |
