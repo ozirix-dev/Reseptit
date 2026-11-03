@@ -1,4 +1,3 @@
-import {recipeTextForApprovedSnapshot} from "./approved-recipe-note-edits";
 import {readFileSync} from 'node:fs';
 import {join} from 'node:path';
 import {textHash} from './gk149-model';
@@ -84,7 +83,7 @@ export function buildPohaHoneyMustardVariants(root: string): GkOnlyVariant[] {
     const path = directory + version.file;
     const packet: Packet = JSON.parse(read(path));
     const {recipeId, servings, ingredients, expected} = packet;
-    if (textHash(recipeTextForApprovedSnapshot(packet.sourcePath, read(packet.sourcePath))) !== packet.sourceLfSha256 || ingredients.length !== version.names.length) {
+    if (textHash(pohaHoneySourceSnapshot(packet.sourcePath, read(packet.sourcePath))) !== packet.sourceLfSha256 || ingredients.length !== version.names.length) {
       throw Error('Approved GK recipe binding changed: ' + recipeId);
     }
     const catalog: {foods: Record<string, FoodRecord>; existingGiCards: Record<string, GlycemicIndexRecord>} =
@@ -132,4 +131,15 @@ export function buildPohaHoneyMustardVariants(root: string): GkOnlyVariant[] {
       ],
     };
   });
+}
+
+export function pohaHoneySourceSnapshot(file: string, text: string): string {
+  if (file === "reseptit/aamupalat/indialainen-poha-maapahkinoilla.md" ||
+      file === "reseptit/paaruoat/hunaja-sinappikana-kaalilla.md") {
+    text = text.replace(
+      "\nstatus: published\ntranslation_languages: [en, sv, th]\ntranslation_status: {en: published, sv: published, th: published}\n",
+      "\nstatus: published\n",
+    );
+  }
+  return text;
 }

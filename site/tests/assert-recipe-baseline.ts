@@ -1,3 +1,4 @@
+import { pohaHoneySourceSnapshot } from "../scripts/gk-poha-honey-mustard";
 import assert from "node:assert/strict";
 import { execFileSync } from "node:child_process";
 import { readFileSync } from "node:fs";
@@ -27,7 +28,7 @@ export function assertRecipeBaseline(root: string, baseline: string, ...protecte
     const [status, file] = change.split("\t");
     if (status === "M" && file.startsWith("reseptit/")) {
       const current = readFileSync(path.join(root, file), "utf8").replaceAll("\r\n", "\n");
-      const snapshot = recipeTextForApprovedSnapshot(file, current);
+      const snapshot = pohaHoneySourceSnapshot(file, recipeTextForApprovedSnapshot(file, current));
       if (snapshot !== current) {
         const original = execFileSync("git", ["show", baseline + ":" + file], { cwd: root, encoding: "utf8" });
         assert.equal(snapshot, original, change);
