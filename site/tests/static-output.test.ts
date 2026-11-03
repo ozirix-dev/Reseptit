@@ -487,7 +487,8 @@ test('approved GK-only versions are explicit on every existing locale page and c
  for (const id of localizedRecipeIds) {
    assert.deepEqual(siteContent.recipes.filter(recipe => recipe.recipeId === id).map(recipe => recipe.locale).sort(), ['en', 'fi', 'sv', 'th'], id);
  }
- let pages=0;
+ // The six new routes are asserted separately above the historical page total.
+ let pages=-(localizedRecipeIds.length * 3);
  for(const variant of gkOnlyVariants){
   for(const recipe of siteContent.recipes.filter(r=>r.recipeId===variant.recipeId)){
    const html=await readFile(path.join(dist,recipe.routePath.slice(1),'index.html'),'utf8'),t=gkOnlyUi[recipe.locale];
@@ -496,8 +497,7 @@ test('approved GK-only versions are explicit on every existing locale page and c
    assert.ok(!html.includes('class="recipe-glycemic-load"'),'original unsupported version is not relabeled');
    if(variant.scenarioRange)assert.ok(html.includes(t.range));if(variant.sensitivity)assert.ok(html.includes(t.sensitivityNote));
    const addedEnglishPage = recipe.locale === "en" && ["keto-mutakakku", "keto-suklaakeksit"].includes(recipe.recipeId);
-   const addedPohaHoneyPage = recipe.locale !== "fi" && localizedRecipeIds.includes(recipe.recipeId);
-   if (!addedEnglishPage && !addedPohaHoneyPage) pages++;
+   if (!addedEnglishPage) pages++;
   }
  }
  assert.equal(pages,99+siteContent.recipes.filter(r=>r.recipeId==='lindstrominpihvit-kaalilla').length);
