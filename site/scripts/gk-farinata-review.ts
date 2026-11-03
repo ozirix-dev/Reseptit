@@ -211,7 +211,7 @@ type PointReviewCandidate = Omit<Candidate, 'ingredients' | 'omittedCho'> & {
     giOverrides?: { inputIndex: number; gi: number }[];
     choOverrides?: { inputIndex: number; cho: number; gi?: number }[];
   };
-  inputs: [number, number, number][];
+  inputs: [amount: number, choPer100: number, gi: number, unit?: 'ml'][];
   ingredients: GkOnlyVariant['ingredients'];
   sources: GkOnlyVariant['sources'];
 };
@@ -230,10 +230,14 @@ export function buildPointReviewVariant(root: string, packetPath: string): GkOnl
   for (const t of [c.preparation, c.limitation, ...c.ingredients.map(i => i.name)]) {
     if (!locales.every(locale => t[locale]?.trim())) throw Error('GK point translation missing: ' + c.recipeId);
   }
-  const point = c.inputs.reduce((sum, [g, cho, gi], index) => {
-    if (g !== c.ingredients[index].grams || ![g, cho, gi].every(n => Number.isFinite(n) && n >= 0)
+  const point = c.inputs.reduce((sum, [amount, cho, gi, unit], index) => {
+    const ingredient = c.ingredients[index];
+    const boundAmount = unit === 'ml' && ingredient.grams === null && ingredient.quantity?.unit === 'ml'
+      ? ingredient.quantity.amount
+      : unit === undefined ? ingredient.grams : null;
+    if (amount !== boundAmount || ![amount, cho, gi].every(n => Number.isFinite(n) && n >= 0)
         || cho > 100 || (cho > 0 && gi === 0)) throw Error('Invalid GK point input: ' + c.recipeId);
-    return sum + g * cho * gi;
+    return sum + amount * cho * gi;
   }, 0) / (10000 * c.servings);
   if (!Number.isFinite(Number(c.unroundedGk)) || Math.abs(point - Number(c.unroundedGk)) > 1e-10) {
     throw Error('GK point calculation changed: ' + c.recipeId);
@@ -248,7 +252,7 @@ export function buildPointReviewVariant(root: string, packetPath: string): GkOnl
     for (const { inputIndex, ingredientIndex } of c.upperScenario.replacements ?? []) {
       const row = c.inputs[inputIndex];
       const grams = c.ingredients[ingredientIndex]?.grams;
-      if (!row || indices.has(inputIndex) || ingredientIndex < c.inputs.length
+      if (!row || row[3] === 'ml' || indices.has(inputIndex) || ingredientIndex < c.inputs.length
           || grams == null || !Number.isFinite(grams) || grams < 0) {
         throw Error('Invalid GK range replacement: ' + c.recipeId);
       }
