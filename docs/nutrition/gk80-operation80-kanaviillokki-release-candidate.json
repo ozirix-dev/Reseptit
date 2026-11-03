@@ -1,0 +1,194 @@
+{
+  "recipeId": "kanaviillokki-kukkakaalilla",
+  "servings": 4,
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "unroundedGk": "2.163",
+  "inputs": [
+    [
+      600,
+      2.35,
+      40
+    ],
+    [
+      200,
+      2.9,
+      50
+    ],
+    [
+      28,
+      0.8,
+      50
+    ]
+  ],
+  "omissions": [
+    {
+      "ingredientIndex": 3,
+      "choPer100g": 74
+    },
+    {
+      "ingredientIndex": 4,
+      "choPer100ml": 0.2
+    },
+    {
+      "ingredientIndex": 5,
+      "choPer100g": 1.6
+    },
+    {
+      "ingredientIndex": 6,
+      "choPer100g": 0.011
+    },
+    {
+      "ingredientIndex": 7,
+      "choPer100g": 2.8
+    },
+    {
+      "ingredientIndex": 8,
+      "choPer100g": 100
+    }
+  ],
+  "ingredients": [
+    {
+      "name": {
+        "fi": "Kukkakaali",
+        "en": "Cauliflower",
+        "sv": "Blomkål",
+        "th": "ดอกกะหล่ำ"
+      },
+      "grams": 600
+    },
+    {
+      "name": {
+        "fi": "Kuohukerma",
+        "en": "Whipping cream",
+        "sv": "Vispgrädde",
+        "th": "วิปปิงครีม"
+      },
+      "grams": 200
+    },
+    {
+      "name": {
+        "fi": "Voi",
+        "en": "Butter",
+        "sv": "Smör",
+        "th": "เนย"
+      },
+      "grams": 28
+    },
+    {
+      "name": {
+        "fi": "Vehnäjauho",
+        "en": "Wheat flour",
+        "sv": "Vetemjöl",
+        "th": "แป้งสาลี"
+      },
+      "grams": 5
+    },
+    {
+      "name": {
+        "fi": "Aneto-vähäsuolainen kanaliemi",
+        "en": "Aneto low sodium chicken broth",
+        "sv": "Aneto kycklingbuljong med låg salthalt",
+        "th": "น้ำซุปไก่โซเดียมต่ำ Aneto"
+      },
+      "grams": null,
+      "quantity": {
+        "amount": 400,
+        "unit": "ml"
+      }
+    },
+    {
+      "name": {
+        "fi": "Sitruunamehu",
+        "en": "Lemon juice",
+        "sv": "Citronsaft",
+        "th": "น้ำเลมอน"
+      },
+      "grams": 15
+    },
+    {
+      "name": {
+        "fi": "Kypsä broilerin rintafilee",
+        "en": "Cooked chicken breast",
+        "sv": "Tillagad kycklingbröstfilé",
+        "th": "อกไก่สุก"
+      },
+      "grams": 500
+    },
+    {
+      "name": {
+        "fi": "Curryjauhe",
+        "en": "Curry powder",
+        "sv": "Currypulver",
+        "th": "ผงกะหรี่"
+      },
+      "grams": 2
+    },
+    {
+      "name": {
+        "fi": "Valkopippuri",
+        "en": "White pepper",
+        "sv": "Vitpeppar",
+        "th": "พริกไทยขาว"
+      },
+      "grams": 0.5
+    },
+    {
+      "name": {
+        "fi": "Suola",
+        "en": "Salt",
+        "sv": "Salt",
+        "th": "เกลือ"
+      },
+      "grams": null
+    }
+  ],
+  "preparation": {
+    "fi": "Kypsennä {{amount:3}} g jauhoa {{amount:2}} g:ssa voita. Vatkaa sekaan {{amount:4}} ml kanalientä ja {{amount:1}} g kermaa. Lisää {{amount:7}} g curryjauhetta, {{amount:5}} g sitruunamehua, suola ja enintään {{amount:8}} g valkopippuria. Hauduta ilman kantta sopivan sakeaksi. Lisää {{amount:6}} g kypsää kanaa ja kuumenna. Raasta {{amount:0}} g kukkakaalia ja höyrytä 4–5 minuuttia. Jaa kaikki {{servings}} annokseen.",
+    "en": "Cook {{amount:3}} g flour in {{amount:2}} g butter. Whisk in {{amount:4}} ml chicken broth and {{amount:1}} g cream. Add {{amount:7}} g curry powder, {{amount:5}} g lemon juice, salt and up to {{amount:8}} g white pepper. Simmer uncovered until thickened. Add {{amount:6}} g cooked chicken and heat through. Grate {{amount:0}} g cauliflower and steam for 4–5 minutes. Divide everything into {{servings}} servings.",
+    "sv": "Fräs {{amount:3}} g mjöl i {{amount:2}} g smör. Vispa i {{amount:4}} ml kycklingbuljong och {{amount:1}} g grädde. Tillsätt {{amount:7}} g curry, {{amount:5}} g citronsaft, salt och högst {{amount:8}} g vitpeppar. Sjud utan lock tills såsen tjocknar. Tillsätt {{amount:6}} g tillagad kyckling och värm igenom. Riv {{amount:0}} g blomkål och ånga i 4–5 minuter. Fördela allt i {{servings}} portioner.",
+    "th": "ผัดแป้ง {{amount:3}} กรัมในเนย {{amount:2}} กรัม คนกับน้ำซุปไก่ {{amount:4}} มล. และครีม {{amount:1}} กรัม ใส่ผงกะหรี่ {{amount:7}} กรัม น้ำเลมอน {{amount:5}} กรัม เกลือ และพริกไทยขาวไม่เกิน {{amount:8}} กรัม เคี่ยวโดยไม่ปิดฝาจนข้น ใส่ไก่สุก {{amount:6}} กรัมแล้วอุ่นให้ร้อน ขูดดอกกะหล่ำ {{amount:0}} กรัมแล้วนึ่ง 4–5 นาที แบ่งทั้งหมดเป็น {{servings}} ที่"
+  },
+  "limitation": {
+    "fi": "Arvio käyttää kukkakaalin, kerman ja voin GI-koodeja. Pienosuuksista, myös vehnäsuurusteesta, jää pois enintään 1,34 g hiilihydraattia annosta kohti.",
+    "en": "The estimate uses assigned GI codes for cauliflower, cream and butter. Small contributions, including flour, account for up to 1.34 g excluded carbohydrate per serving.",
+    "sv": "Uppskattningen använder tilldelade GI-koder för blomkål, grädde och smör. Små bidrag, däribland mjölet, ger högst 1,34 g kolhydrat per portion utanför beräkningen.",
+    "th": "ค่าประมาณใช้รหัส GI ตามกลุ่มสำหรับดอกกะหล่ำ ครีม และเนย ไม่รวมคาร์โบไฮเดรตจากส่วนผสมปริมาณน้อยรวมทั้งแป้งไม่เกิน 1.34 กรัมต่อที่"
+  },
+  "sources": [
+    {
+      "title": "Fineli 322, 631, 500, 110, 11557 and 7530",
+      "url": "https://fineli.fi/fineli/fi/ohje/19",
+      "kind": "CARBOHYDRATE",
+      "note": "THL CC BY 4.0."
+    },
+    {
+      "title": "Aneto",
+      "url": "https://www.caldoaneto.com/en/product/wellness-broths/natural-low-sodium-chicken-broth",
+      "kind": "CARBOHYDRATE",
+      "note": "0.2 g per 100 ml."
+    },
+    {
+      "title": "AFCD F003337",
+      "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd",
+      "kind": "CARBOHYDRATE",
+      "note": "CC BY-SA 3.0 Australia."
+    },
+    {
+      "title": "GI coding",
+      "url": "https://doi.org/10.2337/dc08-1239",
+      "kind": "PUBLISHED_CODING",
+      "note": "Cauliflower code 40."
+    },
+    {
+      "title": "Low carbohydrate coding",
+      "url": "https://doi.org/10.1016/j.jfca.2007.02.004",
+      "kind": "PUBLISHED_CODING",
+      "note": "Cream and butter code 50."
+    }
+  ],
+  "boundFiles": {
+    "reseptit/paaruoat/kanaviillokki-kukkakaalilla.md": "b9cd58a0912c9ca8ff4b3af7578164805667bb9640a03fc4b0c36507538c5a9a",
+    "docs/nutrition/gk80-operation80-batch-53.md": "db9d973ea4ecafb181d6aba9788daabcd35498249055fd6fa3bb0615b2ec8330"
+  }
+}
