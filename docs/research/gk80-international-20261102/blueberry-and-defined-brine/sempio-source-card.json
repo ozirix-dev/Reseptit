@@ -1,0 +1,48 @@
+{
+  "product": "Sempio low-sugar sun-dried gochujang500g",
+  "manufacturerPage": "https://www.sempio.com/market/jang/594",
+  "manufacturerLabelImage": "https://www.sempio.com/image/LU/BZ/20260522140514474ec24bf85-22ea-413a-b860-c4f5d5ac8e27.png",
+  "labelImageSha256": "13a0b76b55b9bf67f98b875576cacb43ee1f46c51542e22211b1ca94b14135fc",
+  "manufacturerHtmlSha256": "9433d2452fe9e38bbc50b9e8df7472bbdd164b2b6036449020612127a26329e8",
+  "ean": "8801005101622",
+  "visualRead": true,
+  "basis": "labelper100g",
+  "declared": {
+    "totalCarbohydrateG": 40,
+    "sugarsG": 3.6,
+    "alluloseG": 19,
+    "dietaryFibreG": 4,
+    "fatG": 2,
+    "proteinG": 6,
+    "energyKcal": 120,
+    "sodiumMg": 2680
+  },
+  "residualAlgebraGPer100g": 17,
+  "residualAlgebra": "40-19-4=17;not admitted as verified availableCHO orGIinput",
+  "status": "CONDITIONAL_SOURCE_RESEARCH_HOLD_NOT_USED_IN_RECIPE_MODEL",
+  "prospectiveOwnRecipes": [
+    "kimchi-jjigae",
+    "bibimbap"
+  ],
+  "newWholeRecipeUnlocks": 0,
+  "issues": [
+    "Current Korean carbohydrate/fibre/allulose label definition and full composition admission not established. Do not interpret40 as FineliCHOAVL or subtract fibre from an EU-available field.",
+    "Allulose is a monosaccharide,not a polyol. No unmeasured GI0 assigned. Unknown otherpolyols do not becomezero.",
+    "Low sugars3.6 does not equal availablecarbohydrate3.6. No spoon mass or sauce-specific GI confirmed.",
+    "MFDS historical zero-energy factor does not prove zero glycemic load. Existing chocolate/polyol pilot is not allulose-policy approval."
+  ],
+  "methodProposal": "Keep totalCHO,allulose,fibre and unidentified residual as separate source fields; seek a named allulose-response and Korean-label normalization decision before recipeapplication. No meal-level glucose-lowering factor.",
+  "methodChangeApplied": false,
+  "supportingSources": [
+    {
+      "url": "https://www.mfds.go.kr/brd/m_207/view.do?seq=10778",
+      "role": "Historical MFDS allulose energy-label amendment;not a humanGI source or2026completeconsolidatedlabelcode"
+    },
+    {
+      "url": "https://www.sciencedirect.com/science/article/pii/S175646462300169X",
+      "title": "Comparison of postprandial glycemic and insulinemic response of allulose when consumed alone or when added to sucrose: A randomized controlled trial",
+      "year": 2023,
+      "role": "Primary human study15gallulose alone/with30gsucrose;not a standard50galluloseGI test or gochujang measurement. FullpublisherHTML403,primaryabstractindexed;no newGI extracted"
+    }
+  ]
+}

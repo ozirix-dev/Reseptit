@@ -1,0 +1,208 @@
+{
+  "recipeId": "okonomiyaki-kaaliletut",
+  "sourcePath": "reseptit/paaruoat/okonomiyaki-kaaliletut.md",
+  "sourceLfSha256": "3cb879bd7e385f45701c52fe67f67b1f207d95d311eba531c4d17857a0883f8b",
+  "servings": 4,
+  "sourceIngredients": [
+    {
+      "amount": 400,
+      "unit": "g",
+      "item": "valkokaalia"
+    },
+    {
+      "amount": 3,
+      "unit": "kpl",
+      "item": "kananmunaa"
+    },
+    {
+      "amount": 60,
+      "unit": "g",
+      "item": "mantelijauhoa"
+    },
+    {
+      "amount": 2,
+      "unit": "rkl",
+      "item": "tamaria"
+    },
+    {
+      "amount": 2,
+      "unit": "kpl",
+      "item": "kevätsipulia"
+    },
+    {
+      "amount": 2,
+      "unit": "rkl",
+      "item": "neutraalia öljyä"
+    },
+    {
+      "amount": 100,
+      "unit": "g",
+      "item": "majoneesia"
+    },
+    {
+      "amount": 1,
+      "unit": "rkl",
+      "item": "srirachaa"
+    },
+    {
+      "amount": 1,
+      "unit": "rkl",
+      "item": "seesaminsiemeniä"
+    }
+  ],
+  "originalIngredientCount": 9,
+  "variant": "Named product version: Kikkoman Tamari gluten-free, Felix Kruunumajoneesi175g tube, Encona Thai Sriracha142ml. Four servings, all9 original quantities retained; full-fat almond meal. Mild olive cooking oil choice.",
+  "researchStatus": "CONDITIONAL_NAMED_LABEL_AND_QUANTITY_VERSION_HOLD",
+  "ingredients": [
+    {
+      "name": "valkokaalia",
+      "grams": 400,
+      "fineliRecordId": "fineli-320",
+      "giRecordId": "vegetables-category-mean-gi-66",
+      "massEvidence": "Current400g raw cabbage input cooked in pancakes. Existing66 category proxy retained, not changed to a new lower GI.",
+      "foodKey": "vegetable",
+      "preparationKey": "vegetable-category",
+      "giMatchEvidence": "Existing broad published category mean retained as LOW cooked-food proxy. Raw starting CHO retained; no quantified cooking loss. Not preparation-specific GI and not measured finished-meal response."
+    },
+    {
+      "name": "kananmunaa",
+      "grams": 165,
+      "fineliRecordId": "fineli-858",
+      "giRecordId": null,
+      "massEvidence": "Current3 eggs × nativeFineli858 KPL_M55g edible."
+    },
+    {
+      "name": "mantelijauhoa",
+      "grams": 60,
+      "fineliRecordId": "afcd-F006077",
+      "giRecordId": null,
+      "massEvidence": "Current60g FULL-FAT almond meal: AFCD5.4g native WITHOUT-sugar-alcohol CHO/100g; not whole-nut GI22, defatted flour, or Codex2 MEXT whole-almond version."
+    },
+    {
+      "name": "tamaria",
+      "grams": null,
+      "fineliRecordId": null,
+      "giRecordId": null,
+      "recipeQuantity": {
+        "amount": 2,
+        "unit": "rkl",
+        "massGrams": null
+      },
+      "excludedReason": "Positive unmatched-GI contribution retained in omission total using a named product label; unknown product is not zero.",
+      "availableCarbohydrateUpperBoundPerServingG": 0.15,
+      "upperBoundEvidence": "source-catalog.json#/products/tamari: original30ml ×2g/100ml /4=.15g nominal label CHO/serving.",
+      "massEvidence": "Original volume used directly against per100ml label, or original grams against per100g label. No invented density."
+    },
+    {
+      "name": "kevätsipulia",
+      "grams": 30,
+      "fineliRecordId": "afcd-F006250",
+      "giRecordId": "vegetables-category-mean-gi-66",
+      "massEvidence": "Current2 spring onions × AUSNUT2023 measure47656 15g; raw edible starting mass. Reject prior100g/piece and unsupported.5g batchCHO.",
+      "foodKey": "vegetable",
+      "preparationKey": "vegetable-category",
+      "giMatchEvidence": "Existing broad published category mean retained as LOW cooked-food proxy. Raw starting CHO retained; no quantified cooking loss. Not preparation-specific GI and not measured finished-meal response."
+    },
+    {
+      "name": "neutraalia öljyä",
+      "grams": 27,
+      "fineliRecordId": "fineli-536",
+      "giRecordId": null,
+      "massEvidence": "Current2rkl neutral cooking oil version explicitly chooses mild olive oil; native536 RKL13.5g. Pure oil0CHO."
+    },
+    {
+      "name": "majoneesia",
+      "grams": null,
+      "fineliRecordId": null,
+      "giRecordId": null,
+      "recipeQuantity": {
+        "amount": 100,
+        "unit": "g",
+        "massGrams": 100
+      },
+      "excludedReason": "Positive unmatched-GI contribution retained in omission total using a named product label; unknown product is not zero.",
+      "availableCarbohydrateUpperBoundPerServingG": 0.325,
+      "upperBoundEvidence": "source-catalog.json#/products/mayo: Felix Kruunumajoneesi175g tube label1.3g/100g; original100g /4=.325g/serv. Per15g rounded label0 is NOT used.",
+      "massEvidence": "Original volume used directly against per100ml label, or original grams against per100g label. No invented density."
+    },
+    {
+      "name": "srirachaa",
+      "grams": null,
+      "fineliRecordId": null,
+      "giRecordId": null,
+      "recipeQuantity": {
+        "amount": 1,
+        "unit": "rkl",
+        "massGrams": null
+      },
+      "excludedReason": "Positive unmatched-GI contribution retained in omission total using a named product label; unknown product is not zero.",
+      "availableCarbohydrateUpperBoundPerServingG": 0.525,
+      "upperBoundEvidence": "source-catalog.json#/products/sriracha: Encona Thai Sriracha142ml UK product label, retailer transcription14g/100ml; original15ml /4=.525g/serv. Manufacturer/package confirmation pending.",
+      "massEvidence": "Original volume used directly against per100ml label, or original grams against per100g label. No invented density."
+    },
+    {
+      "name": "seesaminsiemeniä",
+      "grams": 8.5,
+      "fineliRecordId": "fineli-385",
+      "giRecordId": null,
+      "massEvidence": "Current1rkl × nativeFineli385 RKL8.5g whole unhulled sesame. No nutGI22."
+    }
+  ],
+  "expected": {
+    "unroundedGk": "3.5079",
+    "omittedChoUpperG": "1.952875",
+    "marginBelowCumulativeCapG": "0.047125",
+    "independentDecimalRows": [
+      {
+        "name": "valkokaalia",
+        "choPerServingOrNominalUpper": "4.97",
+        "giRecordId": "vegetables-category-mean-gi-66"
+      },
+      {
+        "name": "kananmunaa",
+        "choPerServingOrNominalUpper": "0.12375",
+        "giRecordId": null
+      },
+      {
+        "name": "mantelijauhoa",
+        "choPerServingOrNominalUpper": "0.81",
+        "giRecordId": null
+      },
+      {
+        "name": "tamaria",
+        "choPerServingOrNominalUpper": "0.15",
+        "giRecordId": null
+      },
+      {
+        "name": "kevätsipulia",
+        "choPerServingOrNominalUpper": "0.345",
+        "giRecordId": "vegetables-category-mean-gi-66"
+      },
+      {
+        "name": "neutraalia öljyä",
+        "choPerServingOrNominalUpper": "0.0",
+        "giRecordId": null
+      },
+      {
+        "name": "majoneesia",
+        "choPerServingOrNominalUpper": "0.325",
+        "giRecordId": null
+      },
+      {
+        "name": "srirachaa",
+        "choPerServingOrNominalUpper": "0.525",
+        "giRecordId": null
+      },
+      {
+        "name": "seesaminsiemeniä",
+        "choPerServingOrNominalUpper": "0.019125",
+        "giRecordId": null
+      }
+    ]
+  },
+  "sourceApplicationApproved": false,
+  "publicationApproved": false,
+  "newPublishedValue": false,
+  "macroPublicationAuthorized": false,
+  "policyChangeApplied": false
+}

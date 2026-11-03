@@ -1,0 +1,403 @@
+{
+  "foods": {
+    "afcd-F006316": {
+      "id": "afcd-F006316",
+      "name": "Paprika, dry powder",
+      "state": "Paprika, dry powder",
+      "basis": "per100g-as-sold",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+      "nativeSourcePath": "docs/nutrition/afcd-release-3-reference.json",
+      "nativeSourceRecord": {
+        "source_id": "F006316",
+        "classification": 31302,
+        "derivation": "Borrowed",
+        "name": "Paprika, dry powder",
+        "protein_g_per_100g": 14.1,
+        "fat_g_per_100g": 12.9,
+        "fibre_g_per_100g": 34.9,
+        "glycerol_g_per_100g": null,
+        "erythritol_g_per_100g": null,
+        "maltitol_g_per_100g": null,
+        "mannitol_g_per_100g": null,
+        "xylitol_g_per_100g": null,
+        "sorbitol_g_per_100g": null,
+        "available_carbohydrate_without_sugar_alcohols_g_per_100g": 19.1,
+        "available_carbohydrate_with_sugar_alcohols_g_per_100g": 19.1
+      },
+      "polyolsSourceVerified": false,
+      "polyolsEvidence": "Native field retained, null remains unknown. Direct CHOAVL or AFCD WITHOUT-sugar-alcohols; no fibre deduction or inferred individual-polyolzero.",
+      "per100g": {
+        "carbohydrate": 19.1,
+        "fibre": 34.9,
+        "polyols": null,
+        "protein": 14.1,
+        "fat": 12.9
+      }
+    },
+    "afcd-F006618": {
+      "id": "afcd-F006618",
+      "name": "Pepper, black, ground",
+      "state": "Pepper, black, ground",
+      "basis": "per100g-as-sold",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+      "nativeSourcePath": "docs/nutrition/afcd-release-3-reference.json",
+      "nativeSourceRecord": {
+        "source_id": "F006618",
+        "classification": 31302,
+        "derivation": "Borrowed",
+        "name": "Pepper, black, ground",
+        "protein_g_per_100g": 10.4,
+        "fat_g_per_100g": 3.3,
+        "fibre_g_per_100g": 25.3,
+        "glycerol_g_per_100g": null,
+        "erythritol_g_per_100g": null,
+        "maltitol_g_per_100g": null,
+        "mannitol_g_per_100g": null,
+        "xylitol_g_per_100g": null,
+        "sorbitol_g_per_100g": null,
+        "available_carbohydrate_without_sugar_alcohols_g_per_100g": 38.6,
+        "available_carbohydrate_with_sugar_alcohols_g_per_100g": 38.6
+      },
+      "polyolsSourceVerified": false,
+      "polyolsEvidence": "Native field retained, null remains unknown. Direct CHOAVL or AFCD WITHOUT-sugar-alcohols; no fibre deduction or inferred individual-polyolzero.",
+      "per100g": {
+        "carbohydrate": 38.6,
+        "fibre": 25.3,
+        "polyols": null,
+        "protein": 10.4,
+        "fat": 3.3
+      }
+    },
+    "fineli-335": {
+      "id": "fineli-335",
+      "name": "SIPULI, KELTASIPULI",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/335",
+      "nativeSourcePath": "docs/nutrition/fineli-release-20-reference.json",
+      "nativeSourceRecord": {
+        "source_id": "335",
+        "name": "SIPULI, KELTASIPULI",
+        "food_type": "FOOD",
+        "process": "RAW",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "VEGONI",
+        "food_class": "VEGFRESH",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 4.8,
+          "fibre_g_per_100g": 1.2,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 1.25,
+          "fat_g_per_100g": 0.1
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0181"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "T",
+            "method_indicator": "MI0123"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MIR006"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0172"
+          }
+        },
+        "portion_mass_g": {
+          "KPL_S": 30.0,
+          "KPL_M": 55.0,
+          "KPL_L": 200.0,
+          "DL": 90.0
+        }
+      },
+      "state": "RAW",
+      "basis": "per100g-edible",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Native Fineli SUGOH field, not inferred zero",
+      "per100g": {
+        "carbohydrate": 4.8,
+        "polyols": 0.0,
+        "fibre": 1.2,
+        "protein": 1.25,
+        "fat": 0.1
+      }
+    },
+    "fineli-500": {
+      "id": "fineli-500",
+      "name": "VOI",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/500",
+      "nativeSourcePath": "docs/nutrition/fineli-release-20-reference.json",
+      "nativeSourceRecord": {
+        "source_id": "500",
+        "name": "VOI",
+        "food_type": "FOOD",
+        "process": "IND",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "BUTTER",
+        "food_class": "BUTTER",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 0.8,
+          "fibre_g_per_100g": 0.0,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 1.19,
+          "fat_g_per_100g": 81.3
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0181"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0123"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "U",
+            "method_indicator": "MIR007"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0172"
+          }
+        },
+        "portion_mass_g": {
+          "DL": 95.0,
+          "RKL": 14.0,
+          "TL": 4.5
+        }
+      },
+      "state": "IND",
+      "basis": "per100g-edible",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Native Fineli SUGOH field, not inferred zero",
+      "per100g": {
+        "carbohydrate": 0.8,
+        "polyols": 0.0,
+        "fibre": 0.0,
+        "protein": 1.19,
+        "fat": 81.3
+      }
+    },
+    "fineli-628": {
+      "id": "fineli-628",
+      "name": "CREME FRAICHE, RANSKANKERMA, RASVAA 28 %",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/628",
+      "nativeSourcePath": "docs/nutrition/fineli-release-20-reference.json",
+      "nativeSourceRecord": {
+        "source_id": "628",
+        "name": "CREME FRAICHE, RANSKANKERMA, RASVAA 28 %",
+        "food_type": "FOOD",
+        "process": "IND",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "SOUCREAM",
+        "food_class": "SOUCREAM",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 3.0,
+          "fibre_g_per_100g": 0.0,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 2.0,
+          "fat_g_per_100g": 28.0
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "L",
+            "method_type": "P",
+            "method_indicator": "MIR003"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0181"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "I",
+            "method_indicator": "MIR003"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "R",
+            "method_indicator": "MI0002"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "U",
+            "method_indicator": "MIR007"
+          }
+        },
+        "portion_mass_g": {
+          "DL": 100.0,
+          "RKL": 15.0,
+          "TL": 5.0
+        }
+      },
+      "state": "IND",
+      "basis": "per100g-edible",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Native Fineli SUGOH field, not inferred zero",
+      "per100g": {
+        "carbohydrate": 3.0,
+        "polyols": 0.0,
+        "fibre": 0.0,
+        "protein": 2.0,
+        "fat": 28.0
+      }
+    },
+    "fineli-698": {
+      "id": "fineli-698",
+      "name": "JUUSTO, CHEDDAR, RASVAA 34 %",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/698",
+      "nativeSourcePath": "docs/nutrition/fineli-release-20-reference.json",
+      "nativeSourceRecord": {
+        "source_id": "698",
+        "name": "JUUSTO, CHEDDAR, RASVAA 34 %",
+        "food_type": "FOOD",
+        "process": "IND",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "CHEECUHI",
+        "food_class": "CHEESCUR",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 0.1,
+          "fibre_g_per_100g": 0.0,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 25.63,
+          "fat_g_per_100g": 34.4
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "CG",
+            "method_indicator": "MIR003"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0181"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0123"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "U",
+            "method_indicator": "MIR007"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "U",
+            "method_indicator": "MIR003"
+          }
+        },
+        "portion_mass_g": {
+          "KPL_M": 20.0
+        }
+      },
+      "state": "IND",
+      "basis": "per100g-edible",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Native Fineli SUGOH field, not inferred zero",
+      "per100g": {
+        "carbohydrate": 0.1,
+        "polyols": 0.0,
+        "fibre": 0.0,
+        "protein": 25.63,
+        "fat": 34.4
+      }
+    }
+  },
+  "existingGiCards": {
+    "vegetables-category-mean-gi-66": {
+      "id": "vegetables-category-mean-gi-66",
+      "gi": 66,
+      "foodKey": "vegetable",
+      "preparationKey": "vegetable-category",
+      "food": "Vegetables other than potatoes, category mean",
+      "preparation": "Broad category mean; preparation and individual vegetables vary",
+      "qualityTier": "SUPPLEMENTARY",
+      "referenceScale": "GLUCOSE_100",
+      "matchKind": "CATEGORY_MEAN",
+      "confidence": "LOW",
+      "source": {
+        "title": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+        "url": "https://doi.org/10.1093/ajcn/nqab233",
+        "table": "Table 1 summary: vegetables other than potatoes mean GI 66 ± 19 (n=91), values from Supplemental Table 1",
+        "year": 2021,
+        "published": true,
+        "iso26642Confirmed": false,
+        "referenceFood": "Glucose",
+        "qualityEvidence": "Published broad category mean calculated from the ISO-screened Supplemental Table 1 food measurements. This category contains diverse vegetables and is not specific to cabbage, cauliflower, cucumber, zucchini, or eggplant."
+      },
+      "note": "Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence."
+    }
+  },
+  "products": {
+    "sausage": {
+      "name": "Makutila Tammelan lenkki",
+      "labelCarbohydratePer100g": 0.3,
+      "basis": "per100g-as-sold",
+      "sourcePages": {
+        "tammela": {
+          "url": "https://makutila.fi/tuote/tammelan-lenkki-2/",
+          "retrievedAtUtc": "2026-11-02T21:05:23.996516+00:00",
+          "rawHtmlSha256": "e9dd29adfc02e57ce2930d86f52dcc94a75911b55d8ec039cd550cc2c0de6d4b"
+        },
+        "range": {
+          "url": "https://makutila.fi/tuotevalikoima/makkarat/",
+          "retrievedAtUtc": "2026-11-02T21:05:25.203010+00:00",
+          "rawHtmlSha256": "8e7cb80c649076f693a500b715be2d1f064df2dae4ab6d90660915df82e1863b"
+        }
+      },
+      "polyols": null,
+      "labelUpperOnly": true,
+      "limitations": [
+        "Nominal EU label CHO ceiling, not an analytical maximum; individual polyols unknown, never set to zero.",
+        "Both pages repeat the same producer text, not independent analyses.",
+        "Producer ingredient prose says average fat16% but nutrition says19g; disclosed inconsistency prevents full macro claims. CHO0.3 is consistent across both pages.",
+        "Other sausages and production batches cannot inherit this value."
+      ]
+    },
+    "mustard": {
+      "name": "Maille Dijon Original865g Danish foodservice SKU12017601",
+      "ean": "3036810201761",
+      "url": "https://www.unileverfoodsolutions.dk/produkt/maille-dijon-original-865-g-24-DA-384452.html",
+      "basis": "per100g-as-sold",
+      "labelCarbohydrateG": 3.5,
+      "labelFibreG": 2,
+      "labelProteinG": 7,
+      "labelFatG": 11,
+      "htmlSha256": "7efc98bc8fdc163acb0b3ca86484b904c620e45f59bc3d1d66d8f451f87b8eda",
+      "usage": "Nominal label CHO ceiling including potentially unknown polyols; not an analytical maximum. No fibre deduction, no GI50 assignment and no inferred polyolzero."
+    }
+  },
+  "newGiMeasurements": 0,
+  "newMethodRulesApplied": false
+}

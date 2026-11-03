@@ -1,0 +1,40 @@
+{
+  "noNewGiAccepted": true,
+  "norwayCoconut": {
+    "url": "https://www.matvaretabellen.no/en/coconut-flour/",
+    "retrievedAtUtc": "2026-11-02T18:13:58.109177+00:00",
+    "documentSha256": "67c8079777d438d602abd14f8b9f4618161b4824242117bd7b5c13644dfa7f59",
+    "foodId": "05.445",
+    "availableCho": 5.2,
+    "fat": 61.3,
+    "fibre": 25,
+    "method": "MI0181 sugar+starch",
+    "decision": "NOT interchangeable with defatted Sukrin14g fat /18g carbohydrate. Identity/preparation mismatch; not used to force an opening."
+  },
+  "otherBrands": {
+    "foodinAndUrtekramCarbohydrateGPer100g": 22,
+    "portionChoFor20gFourServings": 1.1,
+    "decision": "Not eligible for <1g unmatched-GI omission. Product variants are not a confidence interval."
+  },
+  "afcdAlmondAlternative": {
+    "nativeRecord": {
+      "source_id": "F009824",
+      "classification": 20105,
+      "derivation": "Analysed",
+      "name": "Almond beverage, no added sugar, unfortified",
+      "protein_g_per_100g": 0.5,
+      "fat_g_per_100g": 1.4,
+      "fibre_g_per_100g": 0.5,
+      "glycerol_g_per_100g": null,
+      "erythritol_g_per_100g": null,
+      "maltitol_g_per_100g": null,
+      "mannitol_g_per_100g": null,
+      "xylitol_g_per_100g": null,
+      "sorbitol_g_per_100g": null,
+      "available_carbohydrate_without_sugar_alcohols_g_per_100g": 0,
+      "available_carbohydrate_with_sugar_alcohols_g_per_100g": 0
+    },
+    "decision": "Valid regional composition evidence, native availableCHO0; no individual-polyol-zero claim. Chosen pellava model uses locally available named Fineli34738 positive0.132 instead, not minimum cherry-picking."
+  },
+  "genericCoconutGi45": "Rejected: finished coconut-supplemented bakery measurements do not establish pure coconut-flour GI45."
+}

@@ -1,0 +1,145 @@
+{
+  "recipeId": "uunimakkara-sipulipedilla",
+  "sourcePath": "reseptit/paaruoat/uunimakkara-sipulipedilla.md",
+  "sourceLfSha256": "4bc6f751fc46af1fcb7b72419438cc55fd8132b6893d74ddb65a9b732089b092",
+  "sourceIngredients": [
+    {
+      "amount": 500,
+      "unit": "g",
+      "item": "lenkkimakkaraa"
+    },
+    {
+      "amount": 100,
+      "unit": "g",
+      "item": "cheddarjuustoraastetta"
+    },
+    {
+      "amount": 1,
+      "unit": "kpl",
+      "item": "sipuli"
+    },
+    {
+      "amount": 2,
+      "unit": "rkl",
+      "item": "Dijon-sinappia"
+    },
+    {
+      "amount": 100,
+      "unit": "g",
+      "item": "ranskankermaa"
+    },
+    {
+      "amount": 1,
+      "unit": "rkl",
+      "item": "voita"
+    },
+    {
+      "amount": 1,
+      "unit": "tl",
+      "item": "paprikajauhetta"
+    },
+    {
+      "amount": null,
+      "unit": "",
+      "item": "mustapippuria"
+    }
+  ],
+  "servings": 4,
+  "originalIngredientCount": 8,
+  "calculationIngredientCount": 8,
+  "rowMapping": "Each of8 source rows represented exactly once; no ingredient omitted, no side added.",
+  "variant": "PROPOSED named same-class lenkkimakkara500g, plain cheddar34%100g, edible onion55g, named Maille Dijon31.5g, plain creme fraiche28%100g, butter14g, paprika2.65g, pepper.5g; all ingredients consumed, no cooking-loss CHO deduction.",
+  "researchStatus": "CONDITIONAL_NAMED_PRODUCT_AND_FIXED_GRAM_CONTENT_REVIEW",
+  "ingredients": [
+    {
+      "sourceRowIndex": 0,
+      "name": "Makutila Tammelan lenkki",
+      "grams": 500,
+      "fineliRecordId": null,
+      "giRecordId": null,
+      "availableCarbohydrateUpperBoundPerServingG": 0.375,
+      "upperBoundEvidence": "Producer declares0.3g CHO/100g;500g/4 gives.375g nominal upper, not analytical maximum.",
+      "excludedReason": "Positive label-based CHO allowance; no ingredient GI and no inferred polyol zero."
+    },
+    {
+      "sourceRowIndex": 1,
+      "name": "34% cheddar, grate from plain solid cheese",
+      "grams": 100,
+      "fineliRecordId": "fineli-698",
+      "giRecordId": null,
+      "massEvidence": "Retain100g; specify plain34% cheddar, no starch-coated grated blend."
+    },
+    {
+      "sourceRowIndex": 2,
+      "name": "yellow onion, edible peeled mass",
+      "grams": 55,
+      "fineliRecordId": "fineli-335",
+      "giRecordId": "vegetables-category-mean-gi-66",
+      "massEvidence": "One medium onion native Fineli335 KPL_M55g; new version prescribes55g edible mass.",
+      "foodKey": "vegetable",
+      "preparationKey": "vegetable-category",
+      "giMatchEvidence": "Existing broad vegetable category GI66, LOW; not measured onion or mixed-meal GI. No fat/protein adjustment."
+    },
+    {
+      "sourceRowIndex": 3,
+      "name": "Maille Dijon Original865g DK SKU12017601 EAN3036810201761",
+      "grams": 31.5,
+      "fineliRecordId": null,
+      "giRecordId": null,
+      "availableCarbohydrateUpperBoundPerServingG": 0.275625,
+      "upperBoundEvidence": "Named manufacturer label3.5g CHO/100g;31.5g/4. Generic mustard density1.05g/ml*30ml informs new mass target, not measured Maille density.",
+      "excludedReason": "Positive label-based CHO allowance; no ingredient GI and no inferred polyol zero."
+    },
+    {
+      "sourceRowIndex": 4,
+      "name": "plain creme fraiche28% fat",
+      "grams": 100,
+      "fineliRecordId": "fineli-628",
+      "giRecordId": null,
+      "massEvidence": "Retain100g; specify plain28% creme fraiche. Native CHO3.0, no new dairy GI assigned."
+    },
+    {
+      "sourceRowIndex": 5,
+      "name": "butter",
+      "grams": 14,
+      "fineliRecordId": "fineli-500",
+      "giRecordId": null,
+      "massEvidence": "Retain1rkl, native Fineli500 RKL14g."
+    },
+    {
+      "sourceRowIndex": 6,
+      "name": "ground paprika",
+      "grams": 2.65,
+      "fineliRecordId": "afcd-F006316",
+      "giRecordId": null,
+      "massEvidence": "New version prescribes2.65g; AUSNUT2023 density.53g/ml*5ml informs1tl target."
+    },
+    {
+      "sourceRowIndex": 7,
+      "name": "ground black pepper",
+      "grams": 0.5,
+      "fineliRecordId": "afcd-F006618",
+      "giRecordId": null,
+      "massEvidence": "NEW weighed.5g target, replacing unspecified pepper. Not an observed batch weight."
+    }
+  ],
+  "expected": {
+    "unroundedGk": "0.4356",
+    "omittedChoNominalUpperG": "1.6284125",
+    "eachOmissionStrictlyUnderG": 1,
+    "cumulativeOmissionStrictlyUnderG": 2,
+    "display": "alle5",
+    "optionalGi0to150OmissionSensitivity": [
+      "0.4356",
+      "2.87821875"
+    ],
+    "sensitivityIsAssumptionNotPhysiologicalBound": true
+  },
+  "sourceApplicationApproved": false,
+  "contentVersionApproved": false,
+  "actualBatchWeighed": false,
+  "publicationApproved": false,
+  "macroPublicationAuthorized": false,
+  "newPublishedValue": false,
+  "policyChangeApplied": false
+}

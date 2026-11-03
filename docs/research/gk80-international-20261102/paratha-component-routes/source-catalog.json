@@ -1,0 +1,285 @@
+{
+  "foods": {
+    "fineli-110": {
+      "id": "fineli-110",
+      "name": "JAUHO, VEHNÄJAUHO, PUOLIKARKEA",
+      "nativePath": "docs/nutrition/fineli-release-20-reference.json",
+      "nativeId": "110",
+      "field": "per100g.available_carbohydrate_g_per_100g",
+      "availableChoPer100g": 73.998,
+      "polyols": 0.0,
+      "polyolsStatus": "NATIVE_FINELI_FIELD"
+    },
+    "fineli-205": {
+      "id": "fineli-205",
+      "name": "PERUNA, VANHA, KUORITTU",
+      "nativePath": "docs/nutrition/fineli-release-20-reference.json",
+      "nativeId": "205",
+      "field": "per100g.available_carbohydrate_g_per_100g",
+      "availableChoPer100g": 15.5,
+      "polyols": 0.0,
+      "polyolsStatus": "NATIVE_FINELI_FIELD"
+    },
+    "fineli-922": {
+      "id": "fineli-922",
+      "name": "VESI, VESIJOHTOVESI",
+      "nativePath": "docs/nutrition/fineli-release-20-reference.json",
+      "nativeId": "922",
+      "field": "per100g.available_carbohydrate_g_per_100g",
+      "availableChoPer100g": 0.0,
+      "polyols": 0.0,
+      "polyolsStatus": "NATIVE_FINELI_FIELD"
+    },
+    "fineli-30": {
+      "id": "fineli-30",
+      "name": "RUOKASUOLA, JODIOITU",
+      "nativePath": "docs/nutrition/fineli-release-20-reference.json",
+      "nativeId": "30",
+      "field": "per100g.available_carbohydrate_g_per_100g",
+      "availableChoPer100g": 0.0,
+      "polyols": 0.0,
+      "polyolsStatus": "NATIVE_FINELI_FIELD"
+    },
+    "fineli-541": {
+      "id": "fineli-541",
+      "name": "RUOKAÖLJY KESKIARVO, 87 % RYPSI- 8 % AURINGONKUKKA- JA 5% OLIIVIÖLJY",
+      "nativePath": "docs/nutrition/fineli-release-20-reference.json",
+      "nativeId": "541",
+      "field": "per100g.available_carbohydrate_g_per_100g",
+      "availableChoPer100g": 0.0,
+      "polyols": 0.0,
+      "polyolsStatus": "NATIVE_FINELI_FIELD"
+    },
+    "fineli-536": {
+      "id": "fineli-536",
+      "name": "OLIIVIÖLJY",
+      "nativePath": "docs/nutrition/fineli-release-20-reference.json",
+      "nativeId": "536",
+      "field": "per100g.available_carbohydrate_g_per_100g",
+      "availableChoPer100g": 0.0,
+      "polyols": 0.0,
+      "polyolsStatus": "NATIVE_FINELI_FIELD"
+    },
+    "fineli-619": {
+      "id": "fineli-619",
+      "name": "JOGURTTI, MAUSTAMATON, RASVAA 2,5 %, VL",
+      "nativePath": "docs/nutrition/fineli-release-20-reference.json",
+      "nativeId": "619",
+      "field": "per100g.available_carbohydrate_g_per_100g",
+      "availableChoPer100g": 5.0,
+      "polyols": 0.0,
+      "polyolsStatus": "NATIVE_FINELI_FIELD"
+    },
+    "afcd-F003327": {
+      "id": "afcd-F003327",
+      "name": "Cumin (cummin) seed, dried, ground",
+      "nativePath": "docs/nutrition/afcd-release-3-reference.json",
+      "nativeId": "F003327",
+      "field": "available_carbohydrate_without_sugar_alcohols_g_per_100g",
+      "availableChoPer100g": 33.7,
+      "polyols": null,
+      "polyolsStatus": "UNKNOWN_NOTZERO"
+    },
+    "afcd-F002893": {
+      "id": "afcd-F002893",
+      "name": "Chilli (chili), dried, ground",
+      "nativePath": "docs/nutrition/afcd-release-3-reference.json",
+      "nativeId": "F002893",
+      "field": "available_carbohydrate_without_sugar_alcohols_g_per_100g",
+      "availableChoPer100g": 12.9,
+      "polyols": null,
+      "polyolsStatus": "UNKNOWN_NOTZERO"
+    },
+    "afcd-F003192": {
+      "id": "afcd-F003192",
+      "name": "Coriander, fresh, raw",
+      "nativePath": "docs/nutrition/afcd-release-3-reference.json",
+      "nativeId": "F003192",
+      "field": "available_carbohydrate_without_sugar_alcohols_g_per_100g",
+      "availableChoPer100g": 1.9,
+      "polyols": null,
+      "polyolsStatus": "UNKNOWN_NOTZERO"
+    },
+    "afcd-F004205": {
+      "id": "afcd-F004205",
+      "name": "Ghee, clarified butter",
+      "nativePath": "docs/nutrition/afcd-release-3-reference.json",
+      "nativeId": "F004205",
+      "field": "available_carbohydrate_without_sugar_alcohols_g_per_100g",
+      "availableChoPer100g": 0,
+      "polyols": null,
+      "polyolsStatus": "UNKNOWN_NOTZERO"
+    },
+    "afcd-F006250": {
+      "id": "afcd-F006250",
+      "name": "Onion, spring, fresh, raw",
+      "nativePath": "docs/nutrition/afcd-release-3-reference.json",
+      "nativeId": "F006250",
+      "field": "available_carbohydrate_without_sugar_alcohols_g_per_100g",
+      "availableChoPer100g": 4.6,
+      "polyols": null,
+      "polyolsStatus": "UNKNOWN_NOTZERO"
+    },
+    "afcd-F008065": {
+      "id": "afcd-F008065",
+      "name": "Sauce, soy, commercial",
+      "nativePath": "docs/nutrition/afcd-release-3-reference.json",
+      "nativeId": "F008065",
+      "field": "available_carbohydrate_without_sugar_alcohols_g_per_100g",
+      "availableChoPer100g": 3.2,
+      "polyols": null,
+      "polyolsStatus": "UNKNOWN_NOTZERO"
+    },
+    "afcd-F006187": {
+      "id": "afcd-F006187",
+      "name": "Oil, sesame",
+      "nativePath": "docs/nutrition/afcd-release-3-reference.json",
+      "nativeId": "F006187",
+      "field": "available_carbohydrate_without_sugar_alcohols_g_per_100g",
+      "availableChoPer100g": 0,
+      "polyols": null,
+      "polyolsStatus": "UNKNOWN_NOTZERO"
+    }
+  },
+  "sideGiCards": {
+    "dairy-category-mean-gi-35": {
+      "id": "dairy-category-mean-gi-35",
+      "gi": 35,
+      "foodKey": "dairy",
+      "preparationKey": "unflavoured-dairy",
+      "food": "Dairy products, category mean",
+      "preparation": "Unflavoured dairy category mean used for plain cream cheese",
+      "qualityTier": "SUPPLEMENTARY",
+      "referenceScale": "GLUCOSE_100",
+      "matchKind": "CATEGORY_MEAN",
+      "confidence": "LOW",
+      "source": {
+        "title": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+        "url": "https://doi.org/10.1093/ajcn/nqab233",
+        "table": "Table 1 summary: dairy products mean GI 35 ± 11 (n=186)",
+        "year": 2021,
+        "published": true,
+        "iso26642Confirmed": true,
+        "qualityEvidence": "Published category mean from ISO-screened individual food measurements. This is not a cream-cheese-specific value and is used only as a clearly labelled category-level proxy."
+      },
+      "note": "Category mean, not a measured GI for the recipe's cream cheese."
+    },
+    "op142-lowcho50-r4": {
+      "id": "op142-lowcho50-r4",
+      "gi": 50,
+      "foodKey": "op142-lowcho-code",
+      "preparationKey": "op142-lowcho50-r4",
+      "food": "Named foods with <=5 g available CHO/100 g",
+      "preparation": "Candidate-specific application; see full source card and weighed version",
+      "qualityTier": "SUPPLEMENTARY",
+      "referenceScale": "GLUCOSE_100",
+      "matchKind": "ANALOG",
+      "confidence": "LOW",
+      "evidenceKind": "PUBLISHED_IMPUTATION",
+      "originalSourceCard": {
+        "id": "lowcho50-r4",
+        "gi": 50,
+        "scale": "GLUCOSE_100",
+        "family": "lowcho-code",
+        "food": "Named foods with <=5 g available CHO/100 g",
+        "evidenceKind": "PUBLISHED_IMPUTATION",
+        "sourceUrl": "https://doi.org/10.1016/j.jfca.2007.02.004",
+        "location": "Author presentation slide 12",
+        "confidence": "LOW",
+        "accessUrl": "https://pdfs.semanticscholar.org/eead/ef25b9a2d5c209deb31265082c85080758f4.pdf",
+        "documentSha256": "778292d5d11cfd377ea93f1927ba8205aa7aff0105d2345f458336bf8869d0f9",
+        "limitations": "Published low-carbohydrate default50, applied only to reviewed named compositions <=5 g available CHO/100g. This cutoff is a project rule, not a validated scientific threshold. Explicit AFCD commercial soy sauce and AFCD tahini plus complete Maille Dijon label are allowed, not all brands or pastes. No flour/sugar/honey/syrup or composition-unknown food.",
+        "allowedCompositionIds": [
+          "afcd-F000396-release-3-a1aa6eb1",
+          "afcd-F001301-release-3-578f337d",
+          "afcd-F002983-r4",
+          "afcd-F002991-release-3-aef4d973",
+          "afcd-F003337-release-3-358d7f7a",
+          "afcd-F004726-release-3-8b45863e",
+          "afcd-F004729-release-3-6915a221",
+          "afcd-F005198-release-3-d5346b07",
+          "afcd-F005946-release-3-13b128f1",
+          "afcd-F008004-r4",
+          "afcd-F008065-r4",
+          "afcd-F008936-release-3-145aa9dd",
+          "afcd-F009076-r4",
+          "fineli-11048-release-20-ef608526",
+          "fineli-11557-release-20-0e2f3532",
+          "fineli-29-release-20-efe46494",
+          "fineli-30315-release-20-36a6124d",
+          "fineli-30369-release-20-d894c260",
+          "fineli-7530-release-20-21f4037e",
+          "fineli-7600-release-20-f85560ba",
+          "fineli-779-release-20-66a2e282",
+          "fineli-8513-release-20-ae10a9b7",
+          "fineli-858-release-20-ae10a9b7",
+          "fineli-929-release-20-59dd350d",
+          "maille-label-proxy"
+        ],
+        "evidenceHash": "591d0a6e5b4f2244d7bc226cd4706dea84fcfb3db7bc59bf1c79b8b2205f6770"
+      },
+      "source": {
+        "title": "PROJECT PI, not measured food GI: Named foods with <=5 g available CHO/100 g",
+        "url": "https://doi.org/10.1016/j.jfca.2007.02.004",
+        "table": "Author presentation slide 12",
+        "year": 2007,
+        "published": true,
+        "iso26642Confirmed": false,
+        "qualityEvidence": "Published low-carbohydrate default50, applied only to reviewed named compositions <=5 g available CHO/100g. This cutoff is a project rule, not a validated scientific threshold. Explicit AFCD commercial soy sauce and AFCD tahini plus complete Maille Dijon label are allowed, not all brands or pastes. No flour/sugar/honey/syrup or composition-unknown food."
+      },
+      "note": "Project published-imputation assignment, not measured ingredient or meal GI. Published low-carbohydrate default50, applied only to reviewed named compositions <=5 g available CHO/100g. This cutoff is a project rule, not a validated scientific threshold. Explicit AFCD commercial soy sauce and AFCD tahini plus complete Maille Dijon label are allowed, not all brands or pastes. No flour/sugar/honey/syrup or composition-unknown food."
+    }
+  },
+  "newGlobalGiRecords": 0,
+  "quantitySources": {
+    "oil": "Fineli541 DL90g/100ml,RKL13.5g; AFCD F006187 native0CHO for sesameoil,not a sourceGIzero",
+    "sesameOil": {
+      "foodId": "F006187",
+      "source": "AUSNUT2023Foodmeasures",
+      "row": 3608,
+      "measureId": 43511,
+      "densityGPerMl": 0.92,
+      "tablespoonMl": 15,
+      "grams": 13.8
+    },
+    "onion": {
+      "foodId": "F006250",
+      "source": "AUSNUT2023Foodmeasures",
+      "row": 7854,
+      "measureId": 47655,
+      "densityGPerMl": 0.42,
+      "twoTablespoonMl": 30,
+      "grams": 12.6
+    },
+    "soy": {
+      "foodId": "F008065",
+      "source": "AUSNUT2023Foodmeasures",
+      "row": 7240,
+      "measureId": 47064,
+      "densityGPerMl": 1.05,
+      "tablespoonMl": 15,
+      "grams": 15.75
+    },
+    "groundCumin": {
+      "foodId": "F003327",
+      "source": "AUSNUT2023Foodmeasures",
+      "row": 9710,
+      "densityGPerMl": 0.53,
+      "teaspoonMl": 5,
+      "grams": 2.65
+    },
+    "ausnutWorkbookSha256": "58bee1204610efb72bb831dc7fb65acc23db540b51d056f83c6ac0ce84590475",
+    "metricSource": "https://www.martat.fi/ruoka/ruoanvalmistus/ruoka-aineiden-mitat-ja-painot/"
+  },
+  "newVersionDetails": [
+    "For bothstuffedparatha plates choose100g Fineli619 plainunsweetenedwholemilkyogurt per2servings,explicitlyaddedrow;unquantifiedpickle/raita notincludedinthisnamedversion.",
+    "Aloo-paratha weighpeeledrawpotato400g beforeboiling;choose30g pureghee over butter.",
+    "Aloo-paratha uses weighed2.65g groundcumin,1g chillipowder,2g garammasala. Groundcumin instead oforiginalwhole-seedspoon is an explicitnewversionchoice,not a claimedunitconversion.",
+    "Breakfastparatha explicitly boil/mash peeled150gpotato,stuffdough,pan-cook,serve100gyogurt.",
+    "Scallionbread retains100gflour,60mlwater,2rklonion,both1rkloils,and1rklcommercialsoysauce. Native sesameoil13.8g and neutraloil13.5g retainedasnominalinput."
+  ],
+  "licences": [
+    "THL Fineli Release20 CC BY4.0",
+    "FSANZ AFCD Release3 CC BY-SA3.0 Australia"
+  ]
+}

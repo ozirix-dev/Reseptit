@@ -1,0 +1,473 @@
+{
+  "mechanicalModelOnly": true,
+  "policyChangeApplied": false,
+  "productionWrites": false,
+  "results": [
+    {
+      "recipeId": "paella-valenciana",
+      "variant": "Chicken-only paella permitted by existing note; no optional rosemary sprig. Exactly1L of named Knorr F73781 stock at manufacturer8g/L. Paprika and saffron use sourced household-mass proxies.",
+      "researchStatus": "CONDITIONAL_NAMED_STOCK_AND_MASS_PROXY_APPLICATION_REVIEW_PENDING",
+      "sourceLfSha256": "49089d94833037456fa7f21b7e9b258a531c731db6f0344b2a789add6b96b3dd",
+      "allSourceRowsRepresented": true,
+      "result": {
+        "recipeId": "paella-valenciana",
+        "servings": 4,
+        "status": "CALCULATED",
+        "unroundedGlycemicLoadPerServing": 40.019490000000005,
+        "glycemicLoadPerServing": 40.02,
+        "glycemicLoadRangePerServing": null,
+        "omittedAvailableCarbohydratePerServingG": 1.5262499999999999,
+        "omittedAvailableCarbohydrateUpperBoundPerServingG": 1.5262499999999999,
+        "confidence": "LOW",
+        "interpretation": "Ingredient-based estimate only; actual prepared-meal response varies. Positive contributions are included when source-supported. An unmatched individual ingredient portion may be omitted only below 1 g available carbohydrate per serving, and all such omissions must total less than the 2 g/serving editorial tolerance.",
+        "ingredients": [
+          {
+            "name": "nahatonta ja luutonta broilerin reisilihaa",
+            "grams": 700,
+            "fineliRecordId": "fineli-30792",
+            "availableCarbohydratePer100g": 0,
+            "availableCarbohydratePerServingG": 0,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": null,
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "issues": []
+          },
+          {
+            "name": "puuroriisiä, kuivapaino",
+            "grams": 300,
+            "fineliRecordId": "fineli-156",
+            "availableCarbohydratePer100g": 75.6,
+            "availableCarbohydratePerServingG": 56.7,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": 67,
+            "giRecordId": "rice-category-mean-gi-67",
+            "qualityTier": "SUPPLEMENTARY",
+            "matchKind": "CATEGORY_MEAN",
+            "confidence": "LOW",
+            "giContribution": 37.989000000000004,
+            "giContributionRange": {
+              "min": 37.989000000000004,
+              "max": 37.989000000000004
+            },
+            "giCandidates": [
+              {
+                "id": "rice-category-mean-gi-67",
+                "gi": 67,
+                "preparation": "Category mean from Table 1; individual food and preparation were not tested as this item",
+                "qualityTier": "SUPPLEMENTARY",
+                "preparationMatches": true,
+                "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
+              }
+            ],
+            "issues": []
+          },
+          {
+            "name": "tuoreita vihreitä papuja",
+            "grams": 150,
+            "fineliRecordId": "fineli-372",
+            "availableCarbohydratePer100g": 4.754,
+            "availableCarbohydratePerServingG": 1.7827499999999998,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": 66,
+            "giRecordId": "vegetables-category-mean-gi-66",
+            "qualityTier": "SUPPLEMENTARY",
+            "matchKind": "CATEGORY_MEAN",
+            "confidence": "LOW",
+            "giContribution": 1.176615,
+            "giContributionRange": {
+              "min": 1.176615,
+              "max": 1.176615
+            },
+            "giCandidates": [
+              {
+                "id": "vegetables-category-mean-gi-66",
+                "gi": 66,
+                "preparation": "Broad category mean; preparation and individual vegetables vary",
+                "qualityTier": "SUPPLEMENTARY",
+                "preparationMatches": true,
+                "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
+              }
+            ],
+            "issues": []
+          },
+          {
+            "name": "tomaattimurskaa",
+            "grams": 150,
+            "fineliRecordId": "fineli-398",
+            "availableCarbohydratePer100g": 3.45,
+            "availableCarbohydratePerServingG": 1.29375,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": 66,
+            "giRecordId": "vegetables-category-mean-gi-66",
+            "qualityTier": "SUPPLEMENTARY",
+            "matchKind": "CATEGORY_MEAN",
+            "confidence": "LOW",
+            "giContribution": 0.853875,
+            "giContributionRange": {
+              "min": 0.853875,
+              "max": 0.853875
+            },
+            "giCandidates": [
+              {
+                "id": "vegetables-category-mean-gi-66",
+                "gi": 66,
+                "preparation": "Broad category mean; preparation and individual vegetables vary",
+                "qualityTier": "SUPPLEMENTARY",
+                "preparationMatches": true,
+                "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
+              }
+            ],
+            "issues": []
+          },
+          {
+            "name": "kanalientä",
+            "grams": null,
+            "recipeQuantity": {
+              "amount": 1,
+              "unit": "l",
+              "massGrams": null
+            },
+            "fineliRecordId": null,
+            "availableCarbohydratePer100g": null,
+            "availableCarbohydratePerServingG": null,
+            "availableCarbohydrateUpperBoundPerServingG": 0.82,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": "LOW",
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "excludedReason": "Named prepared stock: positive source-model CHO upper counted in editorial omission budget, not zero.",
+            "issues": [
+              "Conservative available-carbohydrate upper bound counted toward cumulative 2 g/serving editorial tolerance; this is not an actual nutrient estimate: source-catalog.stock:8g dry powder per manufacturer1L yield *41g EU carbohydrate/100g /4servings =0.82g. No liquid mass/density inferred. Source-model upper only; not a clinical batch maximum."
+            ]
+          },
+          {
+            "name": "savupaprikajauhetta",
+            "grams": 2.65,
+            "fineliRecordId": null,
+            "availableCarbohydratePer100g": null,
+            "availableCarbohydratePerServingG": null,
+            "availableCarbohydrateUpperBoundPerServingG": 0.6625,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": "LOW",
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "excludedReason": "Whole smoked-paprika mass ceiling used; unknown GI and precise CHO are not zero.",
+            "issues": [
+              "Conservative available-carbohydrate upper bound counted toward cumulative 2 g/serving editorial tolerance; this is not an actual nutrient estimate: source-catalog.quantities.paprika:1metric tsp5ml * generic dry-paprika density0.53g/ml =2.65g nominal batch mass. CHO cannot exceed entire mass;2.65g/4=.6625g. Density is a household proxy, not measured batch or product maximum."
+            ]
+          },
+          {
+            "name": "sahramia",
+            "grams": 0.175,
+            "fineliRecordId": null,
+            "availableCarbohydratePer100g": null,
+            "availableCarbohydratePerServingG": null,
+            "availableCarbohydrateUpperBoundPerServingG": 0.04375,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": "LOW",
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "excludedReason": "Whole saffron mass ceiling used; unknown GI is not zero.",
+            "issues": [
+              "Conservative available-carbohydrate upper bound counted toward cumulative 2 g/serving editorial tolerance; this is not an actual nutrient estimate: source-catalog.quantities.saffron:0.25*USDA0.7g/tsp=.175g batch. Entire mass/4=.04375g CHO ceiling. USDA carbohydrate composition not used."
+            ]
+          },
+          {
+            "name": "oliiviöljyä",
+            "grams": 40.5,
+            "fineliRecordId": "fineli-536",
+            "availableCarbohydratePer100g": 0,
+            "availableCarbohydratePerServingG": 0,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": null,
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "issues": []
+          },
+          {
+            "name": "suolaa",
+            "grams": 6.5,
+            "fineliRecordId": "fineli-30",
+            "availableCarbohydratePer100g": 0,
+            "availableCarbohydratePerServingG": 0,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": null,
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "issues": []
+          },
+          {
+            "name": "rosmariinin oksa",
+            "grams": 0,
+            "recipeQuantity": {
+              "amount": 1,
+              "unit": "kpl",
+              "massGrams": 0
+            },
+            "fineliRecordId": null,
+            "availableCarbohydratePer100g": null,
+            "availableCarbohydratePerServingG": 0,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": "LOW",
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "excludedReason": "Optional rosemary sprig intentionally not used in this named version.",
+            "issues": [
+              "Source-documented zero available carbohydrate: Source ingredient note says optional; instructions say add if desired. Selected0g, not an assertion that an unknown infusion extracts zero CHO."
+            ]
+          }
+        ],
+        "blockers": []
+      },
+      "negativeControls": [
+        {
+          "label": "Unknown stock is not zero or named Knorr",
+          "status": "INSUFFICIENT SOURCE DATA",
+          "blockers": [
+            "paella-valenciana: kanalientä: Named prepared stock: positive source-model CHO upper counted in editorial omission budget, not zero."
+          ]
+        },
+        {
+          "label": "Double-strength16g/L stock exceeds individual1g cap",
+          "status": "INSUFFICIENT SOURCE DATA",
+          "blockers": [
+            "paella-valenciana: kanalientä: Named prepared stock: positive source-model CHO upper counted in editorial omission budget, not zero."
+          ]
+        },
+        {
+          "label": "Missing paprika mass cannot use whole-mass bound",
+          "status": "INSUFFICIENT SOURCE DATA",
+          "blockers": [
+            "paella-valenciana: savupaprikajauhetta: Whole smoked-paprika mass ceiling used; unknown GI and precise CHO are not zero."
+          ]
+        },
+        {
+          "label": "Unweighed rosemary infusion is not the omitted optional branch",
+          "status": "INSUFFICIENT SOURCE DATA",
+          "blockers": [
+            "paella-valenciana: rosmariinin oksa: Optional rosemary sprig intentionally not used in this named version."
+          ]
+        }
+      ],
+      "sourceApplicationApproved": false,
+      "publicationApproved": false,
+      "newPublishedValue": false,
+      "macroPublicationAuthorized": false
+    },
+    {
+      "recipeId": "korealainen-kongjuk-soijapapu-riisipuuro",
+      "variant": "Current water-only recipe: dry soybeans150g soaked overnight, drained, boiled with100g dry long-grain rice and partly blended;10g whole unhulled sesame garnish. Salt as listed. No broth or extra template meat.",
+      "researchStatus": "SOURCE_DOCUMENTED_COMPLETE_CURRENT_RECIPE_CANDIDATE_APPLICATION_REVIEW_PENDING",
+      "sourceLfSha256": "6aca70cdb27f83a51c2d759e58bdcd446e6a1f9f5c414a71494fb44ec9454f31",
+      "allSourceRowsRepresented": true,
+      "result": {
+        "recipeId": "korealainen-kongjuk-soijapapu-riisipuuro",
+        "servings": 2,
+        "status": "CALCULATED",
+        "unroundedGlycemicLoadPerServing": 29.0915,
+        "glycemicLoadPerServing": 29.09,
+        "glycemicLoadRangePerServing": null,
+        "omittedAvailableCarbohydratePerServingG": 0.045,
+        "omittedAvailableCarbohydrateUpperBoundPerServingG": 0,
+        "confidence": "LOW",
+        "interpretation": "Ingredient-based estimate only; actual prepared-meal response varies. Positive contributions are included when source-supported. An unmatched individual ingredient portion may be omitted only below 1 g available carbohydrate per serving, and all such omissions must total less than the 2 g/serving editorial tolerance.",
+        "ingredients": [
+          {
+            "name": "soijapapu",
+            "grams": 150,
+            "fineliRecordId": "fineli-391",
+            "availableCarbohydratePer100g": 10.3,
+            "availableCarbohydratePerServingG": 7.725,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": 34,
+            "giRecordId": "legumes-category-mean-gi-34",
+            "qualityTier": "SUPPLEMENTARY",
+            "matchKind": "CATEGORY_MEAN",
+            "confidence": "LOW",
+            "giContribution": 2.6264999999999996,
+            "giContributionRange": {
+              "min": 2.6264999999999996,
+              "max": 2.6264999999999996
+            },
+            "giCandidates": [
+              {
+                "id": "legumes-category-mean-gi-34",
+                "gi": 34,
+                "preparation": "Category mean of tested legume foods",
+                "qualityTier": "SUPPLEMENTARY",
+                "preparationMatches": true,
+                "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
+              }
+            ],
+            "issues": []
+          },
+          {
+            "name": "riisi",
+            "grams": 100,
+            "fineliRecordId": "fineli-11521",
+            "availableCarbohydratePer100g": 79,
+            "availableCarbohydratePerServingG": 39.5,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": 67,
+            "giRecordId": "rice-category-mean-gi-67",
+            "qualityTier": "SUPPLEMENTARY",
+            "matchKind": "CATEGORY_MEAN",
+            "confidence": "LOW",
+            "giContribution": 26.465,
+            "giContributionRange": {
+              "min": 26.465,
+              "max": 26.465
+            },
+            "giCandidates": [
+              {
+                "id": "rice-category-mean-gi-67",
+                "gi": 67,
+                "preparation": "Category mean from Table 1; individual food and preparation were not tested as this item",
+                "qualityTier": "SUPPLEMENTARY",
+                "preparationMatches": true,
+                "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
+              }
+            ],
+            "issues": []
+          },
+          {
+            "name": "seesaminsiemen",
+            "grams": 10,
+            "fineliRecordId": "fineli-385",
+            "availableCarbohydratePer100g": 0.9,
+            "availableCarbohydratePerServingG": 0.045,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": null,
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "issues": [
+              "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.045 g available carbohydrate): GI evidence is missing."
+            ]
+          },
+          {
+            "name": "suola",
+            "grams": 6.5,
+            "fineliRecordId": "fineli-30",
+            "availableCarbohydratePer100g": 0,
+            "availableCarbohydratePerServingG": 0,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": null,
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "issues": []
+          },
+          {
+            "name": "vettä",
+            "grams": 700,
+            "fineliRecordId": "fineli-922",
+            "availableCarbohydratePer100g": 0,
+            "availableCarbohydratePerServingG": 0,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": null,
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "issues": []
+          },
+          {
+            "name": "suolaa maun mukaan",
+            "grams": null,
+            "fineliRecordId": null,
+            "availableCarbohydratePer100g": null,
+            "availableCarbohydratePerServingG": 0,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": "LOW",
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "excludedReason": "Plain salt, not a seasoning blend; source-documented zero available CHO.",
+            "issues": [
+              "Source-documented zero available carbohydrate: Fineli30 availableCHO0. Unspecified extra salt mass does not affect GK; sodium/macros stay unpublished."
+            ]
+          }
+        ],
+        "blockers": []
+      },
+      "negativeControls": [
+        {
+          "label": "Replacing current plain water with unspecified broth remains unsupported",
+          "status": "INSUFFICIENT SOURCE DATA",
+          "blockers": [
+            "korealainen-kongjuk-soijapapu-riisipuuro: unsupported broth alternative, not current water: Alternative stock composition unknown, not assigned zero."
+          ]
+        }
+      ],
+      "sourceApplicationApproved": false,
+      "publicationApproved": false,
+      "newPublishedValue": false,
+      "macroPublicationAuthorized": false
+    }
+  ]
+}

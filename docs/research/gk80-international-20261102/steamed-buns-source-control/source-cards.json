@@ -1,0 +1,95 @@
+{
+  "cards": {
+    "lau2015-osb68": {
+      "gi": 68,
+      "uncertainty": {
+        "value": 5,
+        "type": "SEM",
+        "notRecipeInterval": true
+      },
+      "n": 10,
+      "foodClass": "UNFILLED_YEAST_STEAMED_REFINED_WHEAT_BREAD",
+      "scope": "PREPARED_COMPONENT_ONLY",
+      "title": "Can bread processing conditions alter glycaemic response?",
+      "doi": "10.1016/j.foodchem.2014.10.040",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0308814614016021",
+      "year": 2015,
+      "reference": "GLUCOSE_100",
+      "availableChoTestG": 50,
+      "glucoseTestHours": 2,
+      "referenceRepeat": "STANDARD_AS_REPORTED_ATKINSON_T1",
+      "sample": "Capillary whole blood, HemoCue",
+      "preparation": "Medium-protein wheat flour; rest15min, prove40min, steam10min100C. Exact source formula not recovered from accessible primary abstract.",
+      "indexedAt": "Atkinson2021 Supplement1 row313 PDFpage22, visually checked; ref52",
+      "quality": "Published human GI and ISO-screened table; recipe transfer LOW because hydration, flour refinement/protein and exact formula are not fully matched. Not a raw flour GI.",
+      "primaryFullMethodsRetrieved": false,
+      "sourceApplicationApproved": false
+    },
+    "lan2013-white93": {
+      "gi": 93,
+      "uncertainty": {
+        "value": 11,
+        "type": "SD",
+        "notRecipeInterval": true
+      },
+      "n": 10,
+      "sex": "5male/5female",
+      "foodClass": "UNFILLED_YEAST_STEAMED_REFINED_WHEAT_BREAD",
+      "scope": "PREPARED_COMPONENT_ONLY",
+      "title": "Effect of consumption of micronutrient enriched wheat steamed bread on postprandial plasma glucose in healthy and type2 diabetic subjects",
+      "doi": "10.1186/1475-2891-12-64",
+      "url": "https://nutritionj.biomedcentral.com/articles/10.1186/1475-2891-12-64",
+      "primaryXml": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3679746/fullTextXML",
+      "year": 2013,
+      "table": "Table3 mixed white wheat control, NOT purple Jizi43975 or Chu2084",
+      "reference": "GLUCOSE_100",
+      "availableChoTestG": 50,
+      "testBreadG": 121,
+      "testChoPer100g": 41.5,
+      "glucoseTestHours": 2,
+      "referenceRepeat": "NO:one glucose test plus three breads per healthy subject",
+      "timesMin": [
+        0,
+        15,
+        30,
+        45,
+        60,
+        120
+      ],
+      "sample": "Venous plasma, glucose oxidase Beckman",
+      "preparation": "Flour1000g, water500g,dryyeast6g;knead8-10min;ferment60min32C75%RH;steam20min.15%bran removed;white cultivar mixture Shi4185/Shixin73350:50.",
+      "quality": "Supplementary human evidence; single reference and missing90min, no ISO claim. Original formula available. Cultivar/refinement and native Finnish flour differ. Separate diabetic experiment does NOT provide this GI.",
+      "sourceApplicationApproved": false
+    },
+    "haini2022-control69.18-HOLD": {
+      "giReportedButNotAdmitted": 69.18,
+      "reportedN": 15,
+      "doi": "10.1016/j.heliyon.2022.e09375",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9096677/",
+      "primaryXml": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9096677/fullTextXML",
+      "scope": "HOLD_NOT_USED",
+      "humanDesign": "15healthywomen,crossover,3glucose and2sessions per testfood;capillary meter;2h;nominal50gCHO",
+      "reason": "Unresolved Table1 dose/basis and Table5 dispersion inconsistencies; no author correction recovered in this bounded search. Do not reconstruct a corrected GI or uncertainty.",
+      "reportedTable1ControlPer100g": {
+        "availableCho": 96.43,
+        "protein": 9.41,
+        "fat": 1.21,
+        "fibre": 0.63,
+        "energyKcal": 290.8,
+        "testServingG": 51.85
+      },
+      "reportedTable5": {
+        "mean": 69.18,
+        "sd": 21.3,
+        "sem": 9.8
+      },
+      "checks": {
+        "sumChoProteinFatG": 107.05,
+        "calculatedKcalAtAuthors4492Factors": 435.51,
+        "sdDivSqrt15": 5.499636351614011
+      },
+      "note": "This screen identifies unresolved reporting problems, not evidence of misconduct. Abstract69.18 and treatment39.11 are not used."
+    }
+  },
+  "noNewGiProductionRecords": true
+}

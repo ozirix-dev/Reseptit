@@ -1,0 +1,10 @@
+# GK80 · farinatan kikhernejauhon lähderaja
+
+`valimerellinen-farinata-aamupalaksi` on tarkastetun Codex2-prioriteetti- ja päätösjonon ulkopuolella. Reseptin 100 g kikhernejauhoa, 150 ml vettä, 20 minuutin lepo ja 220 °C:n uunipaisto muodostavat varsinaisen testattavan komponentin. Tomaatti ja oliivit kypsyvät sen pinnalla. AFCD F003986:n 38,5 g/100 g antaa jauhosta **19,25 g imeytyvää hiilihydraattia/annos** kahdelle annokselle. Poisjättö ei käy.
+
+- Kahden chilla-version julkaistu menetelmä perustuu nimettyyn kokonaiskikhernejauhosta tehtyyn ohueen pannukakkuun. Aiempi hyväksyntä kattaa vain ne syötteet. Farinatan 100:150 jauho–vesisuhde, uunipaisto ja päälliset vaativat oman vastaavuusnäytön. [Chilla-versioiden integraatio](https://github.com/ozirix-dev/Reseptit/pull/192)
+- Johnson ym. mittasivat ihmisillä kikhernejauholla täydennettyä vehnäleipää osana aamiaista. Tämä on hyödyllinen uunipaiston vertailu, mutta ei puhtaasta kikhernejauhosta tehdyn ohuen farinatan GI. [Ihmistutkimus](https://www.nature.com/articles/1602054)
+- Pasqualoni ym. tutkivat leipää, jossa 30 % vehnäjauhosta korvattiin kikhernejauholla. Tutkimuksen pGI perustuu entsymaattiseen hydrolyysiin. Paperin ilmoittama 4,1 g hiilihydraattia/100 g jauhoa on ristiriidassa saman kappaleen energian ja makrojen kanssa, joten sitä ei käytetä positiivisena koostumusrajana. Valmistajan sivu tunnistaa 500 g kikhernejauhon, mutta ei vahvista tekstinä tuota lukua. [Alkuperäisartikkeli](https://doi.org/10.3390/foods13162488) · [Valmistajan tuote](https://www.molinorossetto.com/it/senza-glutine/1869-farina-di-ceci-senza-glutine.html)
+- Verkossa toistuva 35 yhdistää farinatan ja besan chillan. Luvulle ei löytynyt farinatan ihmismittausta. Sitä ei käytetä tässä reseptissä. [Verkkoluku](https://logifoodcoach.com/database/en/chickpea-pancake-besan-chilla/)
+
+**Vaikutus 0 uutta ehdokasta.** Farinata jää HOLDiin. Löydös sulkee pois sekä hyväksytyn chilla-syötteen laajentamisen että epäuskottavan koostumusluvun varaan rakennetun laskennan. Eteneminen edellyttää uunissa kypsennetyn kikhernejauhokomponentin siirrettävää ihmis-GI:tä tai erikseen hyväksyttyä, perusteltua menetelmää.

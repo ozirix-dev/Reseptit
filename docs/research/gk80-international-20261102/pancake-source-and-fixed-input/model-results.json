@@ -1,0 +1,265 @@
+{
+  "mechanicalModelOnly": true,
+  "actualBatchWeighed": false,
+  "currentRecipeApproved": false,
+  "newPublishedValue": false,
+  "proposedFixedVersionRequired": true,
+  "recipeId": "hunaja-sinappikana-kaalilla",
+  "result": {
+    "recipeId": "hunaja-sinappikana-kaalilla",
+    "servings": 4,
+    "status": "CALCULATED",
+    "unroundedGlycemicLoadPerServing": 7.1423000000000005,
+    "glycemicLoadPerServing": 7.14,
+    "glycemicLoadRangePerServing": null,
+    "omittedAvailableCarbohydratePerServingG": 1.2254125,
+    "omittedAvailableCarbohydrateUpperBoundPerServingG": 1.0506250000000001,
+    "confidence": "LOW",
+    "interpretation": "Ingredient-based estimate only; actual prepared-meal response varies. Positive contributions are included when source-supported. An unmatched individual ingredient portion may be omitted only below 1 g available carbohydrate per serving, and all such omissions must total less than the 2 g/serving editorial tolerance.",
+    "ingredients": [
+      {
+        "name": "nahatonta broilerin reisilihaa",
+        "grams": 600,
+        "fineliRecordId": "fineli-30792",
+        "availableCarbohydratePer100g": 0,
+        "availableCarbohydratePerServingG": 0,
+        "availableCarbohydrateUpperBoundPerServingG": null,
+        "availableCarbohydratePerServingRangeG": null,
+        "gi": null,
+        "giRecordId": null,
+        "qualityTier": null,
+        "matchKind": null,
+        "confidence": null,
+        "giContribution": null,
+        "giContributionRange": null,
+        "giCandidates": [],
+        "issues": []
+      },
+      {
+        "name": "valkokaalia",
+        "grams": 600,
+        "fineliRecordId": "fineli-320",
+        "availableCarbohydratePer100g": 4.97,
+        "availableCarbohydratePerServingG": 7.455,
+        "availableCarbohydrateUpperBoundPerServingG": null,
+        "availableCarbohydratePerServingRangeG": null,
+        "gi": 66,
+        "giRecordId": "vegetables-category-mean-gi-66",
+        "qualityTier": "SUPPLEMENTARY",
+        "matchKind": "CATEGORY_MEAN",
+        "confidence": "LOW",
+        "giContribution": 4.9203,
+        "giContributionRange": {
+          "min": 4.9203,
+          "max": 4.9203
+        },
+        "giCandidates": [
+          {
+            "id": "vegetables-category-mean-gi-66",
+            "gi": 66,
+            "preparation": "Broad category mean; preparation and individual vegetables vary",
+            "qualityTier": "SUPPLEMENTARY",
+            "preparationMatches": true,
+            "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
+          }
+        ],
+        "issues": []
+      },
+      {
+        "name": "Dijon-sinappia",
+        "grams": 31.5,
+        "recipeQuantity": {
+          "amount": 2,
+          "unit": "rkl",
+          "massGrams": 31.5
+        },
+        "fineliRecordId": null,
+        "availableCarbohydratePer100g": null,
+        "availableCarbohydratePerServingG": null,
+        "availableCarbohydrateUpperBoundPerServingG": 0.275625,
+        "availableCarbohydratePerServingRangeG": null,
+        "gi": null,
+        "giRecordId": null,
+        "qualityTier": null,
+        "matchKind": null,
+        "confidence": "LOW",
+        "giContribution": null,
+        "giContributionRange": null,
+        "giCandidates": [],
+        "excludedReason": "Named EU label-based positive omission, not zero and not assigned a mustardGI.",
+        "issues": [
+          "Conservative available-carbohydrate upper bound counted toward cumulative 2 g/serving editorial tolerance; this is not an actual nutrient estimate: Maille DK SKU12017601 EAN3036810201761 declares3.5g CHO/100g.31.5g/4 gives.275625g nominal CHO upper for this source model. Individual polyols unknown; not an analytical maximum."
+        ]
+      },
+      {
+        "name": "hunajaa",
+        "grams": 20,
+        "fineliRecordId": "fineli-4",
+        "availableCarbohydratePer100g": 80.8,
+        "availableCarbohydratePerServingG": 4.04,
+        "availableCarbohydrateUpperBoundPerServingG": null,
+        "availableCarbohydratePerServingRangeG": null,
+        "gi": 55,
+        "giRecordId": "honey-category-mean-gi-55-2002",
+        "qualityTier": "SUPPLEMENTARY",
+        "matchKind": "CATEGORY_MEAN",
+        "confidence": "LOW",
+        "giContribution": 2.222,
+        "giContributionRange": {
+          "min": 2.222,
+          "max": 2.222
+        },
+        "giCandidates": [
+          {
+            "id": "honey-category-mean-gi-55-2002",
+            "gi": 55,
+            "preparation": "Mean of honey varieties and commercial blends; not matched to a particular honey",
+            "qualityTier": "SUPPLEMENTARY",
+            "preparationMatches": true,
+            "sourceUrl": "https://doi.org/10.1093/ajcn/76.1.5"
+          }
+        ],
+        "issues": []
+      },
+      {
+        "name": "oliiviöljyä",
+        "grams": 27,
+        "fineliRecordId": "fineli-536",
+        "availableCarbohydratePer100g": 0,
+        "availableCarbohydratePerServingG": 0,
+        "availableCarbohydrateUpperBoundPerServingG": null,
+        "availableCarbohydratePerServingRangeG": null,
+        "gi": null,
+        "giRecordId": null,
+        "qualityTier": null,
+        "matchKind": null,
+        "confidence": null,
+        "giContribution": null,
+        "giContributionRange": null,
+        "giCandidates": [],
+        "issues": []
+      },
+      {
+        "name": "valkosipulijauhetta",
+        "grams": 3.1,
+        "recipeQuantity": {
+          "amount": 1,
+          "unit": "tl",
+          "massGrams": 3.1
+        },
+        "fineliRecordId": null,
+        "availableCarbohydratePer100g": null,
+        "availableCarbohydratePerServingG": null,
+        "availableCarbohydrateUpperBoundPerServingG": 0.775,
+        "availableCarbohydratePerServingRangeG": null,
+        "gi": null,
+        "giRecordId": null,
+        "qualityTier": null,
+        "matchKind": null,
+        "confidence": "LOW",
+        "giContribution": null,
+        "giContributionRange": null,
+        "giCandidates": [],
+        "excludedReason": "Use source-backed whole-mass ceiling, not unknown composition treated aszero.",
+        "issues": [
+          "Conservative available-carbohydrate upper bound counted toward cumulative 2 g/serving editorial tolerance; this is not an actual nutrient estimate: 3.1g explicitly prescribed garlic powder /4=.775g total ingredient mass per serving, an availableCHO physical ceiling. No unsupported GI or US carbohydrate normalization is required."
+        ]
+      },
+      {
+        "name": "paprikajauhetta",
+        "grams": 2.65,
+        "fineliRecordId": "afcd-F006316",
+        "availableCarbohydratePer100g": 19.1,
+        "availableCarbohydratePerServingG": 0.1265375,
+        "availableCarbohydrateUpperBoundPerServingG": null,
+        "availableCarbohydratePerServingRangeG": null,
+        "gi": null,
+        "giRecordId": null,
+        "qualityTier": null,
+        "matchKind": null,
+        "confidence": null,
+        "giContribution": null,
+        "giContributionRange": null,
+        "giCandidates": [],
+        "issues": [
+          "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.127 g available carbohydrate): GI evidence is missing."
+        ]
+      },
+      {
+        "name": "mustapippuria",
+        "grams": 0.5,
+        "fineliRecordId": "afcd-F006618",
+        "availableCarbohydratePer100g": 38.6,
+        "availableCarbohydratePerServingG": 0.04825,
+        "availableCarbohydrateUpperBoundPerServingG": null,
+        "availableCarbohydratePerServingRangeG": null,
+        "gi": null,
+        "giRecordId": null,
+        "qualityTier": null,
+        "matchKind": null,
+        "confidence": null,
+        "giContribution": null,
+        "giContributionRange": null,
+        "giCandidates": [],
+        "issues": [
+          "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.048 g available carbohydrate): GI evidence is missing."
+        ]
+      },
+      {
+        "name": "suolaa",
+        "grams": null,
+        "fineliRecordId": null,
+        "availableCarbohydratePer100g": null,
+        "availableCarbohydratePerServingG": 0,
+        "availableCarbohydrateUpperBoundPerServingG": null,
+        "availableCarbohydratePerServingRangeG": null,
+        "gi": null,
+        "giRecordId": null,
+        "qualityTier": null,
+        "matchKind": null,
+        "confidence": "LOW",
+        "giContribution": null,
+        "giContributionRange": null,
+        "giCandidates": [],
+        "excludedReason": "Plain salt part of original combined row, separate from fixed pepper; nativeFineli30 directCHO0.",
+        "issues": [
+          "Source-documented zero available carbohydrate: Source-catalog foods fineli-30 CHO0; no carbohydrate-bearing seasoning blend assumed. Unknown salt grams prevent full sodium/macro declaration, not GK."
+        ]
+      }
+    ],
+    "blockers": []
+  },
+  "negativeControls": [
+    {
+      "label": "Original unquantified pepper remains HOLD",
+      "status": "INSUFFICIENT SOURCE DATA",
+      "blockers": [
+        "hunaja-sinappikana-kaalilla: mustapippuria: Ingredient mass is missing or invalid."
+      ]
+    },
+    {
+      "label": "Unknown Dijon brand cannot inherit Maille label",
+      "status": "INSUFFICIENT SOURCE DATA",
+      "blockers": [
+        "hunaja-sinappikana-kaalilla: Dijon-sinappia: Named EU label-based positive omission, not zero and not assigned a mustardGI."
+      ]
+    },
+    {
+      "label": "Missing garlic quantity invalidates whole-mass ceiling",
+      "status": "INSUFFICIENT SOURCE DATA",
+      "blockers": [
+        "hunaja-sinappikana-kaalilla: valkosipulijauhetta: Use source-backed whole-mass ceiling, not unknown composition treated aszero."
+      ]
+    },
+    {
+      "label": "4g garlic whole-mass ceiling reaches individual1g threshold",
+      "status": "INSUFFICIENT SOURCE DATA",
+      "blockers": [
+        "hunaja-sinappikana-kaalilla: valkosipulijauhetta: Use source-backed whole-mass ceiling, not unknown composition treated aszero."
+      ]
+    }
+  ],
+  "newHumanPancakeSourceApplied": false,
+  "newGiRegistryCards": 0,
+  "newPolicyRules": 0
+}

@@ -1,0 +1,132 @@
+{
+  "kind": "COMPOSITION_AND_QUANTITY_EVIDENCE_NOT_GI",
+  "ausnut": {
+    "landingUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/ausnut/data-files",
+    "downloadUrl": "https://www.foodstandards.gov.au/sites/default/files/2025-08/AUSNUT%202023%20-%20Food%20measures.xlsx?v=20250829",
+    "downloadSha256": "58bee1204610efb72bb831dc7fb65acc23db540b51d056f83c6ac0ce84590475",
+    "sheet": "AUSNUT 2023",
+    "headerRow": 3,
+    "selectedRows": [
+      {
+        "excelRow": 6626,
+        "cells": [
+          20105001,
+          "F009824",
+          "Almond beverage, no added sugar, unfortified",
+          46453,
+          1,
+          "density",
+          null,
+          null,
+          null,
+          1.05,
+          1,
+          null
+        ]
+      },
+      {
+        "excelRow": 6627,
+        "cells": [
+          20106004,
+          "F009826",
+          "Almond beverage, no added sugar, added Ca",
+          46454,
+          1,
+          "density",
+          null,
+          null,
+          null,
+          1.05,
+          1,
+          null
+        ]
+      },
+      {
+        "excelRow": 9707,
+        "cells": [
+          31302003,
+          "F002963",
+          "Cinnamon, dried, ground",
+          49452,
+          1,
+          "density",
+          null,
+          null,
+          null,
+          0.51,
+          1,
+          null
+        ]
+      }
+    ],
+    "attribution": "Food Standards Australia New Zealand, AUSNUT 2023 Food measures. Selected source rows transcribed to JSON; values unchanged. Australian generic food density is a proxy, not a weighed Finnish recipe batch. FSANZ Data User Licence applies; see baseline AFCD source licence and Australian-data limitations.",
+    "columnHeaders": [
+      "Survey ID",
+      "Public food key",
+      "Food name",
+      "Measure ID",
+      "Quantity",
+      "Descriptor 1\n",
+      "Descriptor 2",
+      "Descriptor 3",
+      "Descriptor 4\n",
+      "Gram amount",
+      "Volume",
+      null
+    ]
+  },
+  "metricTeaspoon": {
+    "url": "https://www.martat.fi/ruoka/ruoanvalmistus/ruoka-aineiden-mitat-ja-painot/",
+    "retrievedAtUtc": "2026-11-02T18:13:57.722935+00:00",
+    "documentSha256": "47483580e72dec9fcb816320268cc053ea6256b8cc6523630bfb9618e9a2e174",
+    "millilitres": 5,
+    "scope": "Level Finnish culinary teaspoon; volume definition, not universal ingredient mass."
+  },
+  "cinnamonConversion": {
+    "publicFoodKey": "F002963",
+    "measureId": 49452,
+    "densityGPerMl": "0.51",
+    "volumeMl": "5",
+    "derivedMassG": "2.55",
+    "state": "Cinnamon, dried, ground",
+    "consumption": "All ground cinnamon retained; no sticks, infusion or extraction",
+    "measuredRecipeMass": false,
+    "uncertainty": "Generic density proxy. Spoon packing and product variation are not a quantified biological interval."
+  },
+  "usdaIndependentCrossCheck": {
+    "url": "https://fdc.nal.usda.gov/food-details/171320/nutrients",
+    "downloadSha256": "6a89dae2a4df235b9f49d5a40d150b6daeaf786abee6a170a0a7a00c72ff0624",
+    "fdcId": 171320,
+    "description": "Spices, cinnamon, ground",
+    "foodPortions": [
+      {
+        "id": 88429,
+        "dataPoints": 13,
+        "gramWeight": 2.6,
+        "sequenceNumber": 1,
+        "amount": 1.0,
+        "modifier": "tsp",
+        "measureUnit": {
+          "id": 9999,
+          "name": "undetermined",
+          "abbreviation": "undetermined"
+        }
+      },
+      {
+        "id": 88430,
+        "dataPoints": 12,
+        "gramWeight": 7.8,
+        "sequenceNumber": 2,
+        "amount": 1.0,
+        "modifier": "tbsp",
+        "measureUnit": {
+          "id": 9999,
+          "name": "undetermined",
+          "abbreviation": "undetermined"
+        }
+      }
+    ],
+    "interpretation": "USDA teaspoon2.6g supports scale plausibility but is not averaged with AUSNUT2.55g. Nutrient composition remains AFCD, not USDA total carbohydrate."
+  },
+  "gi50": "Explicit previously reviewed project small-spice imputation; NOT measured cinnamon GI; a new named application remains unapproved."
+}

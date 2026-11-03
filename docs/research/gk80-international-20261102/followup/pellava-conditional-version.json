@@ -1,0 +1,483 @@
+{
+  "recipeId": "pellava-puuro-pahkinoilla",
+  "sourcePath": "reseptit/aamupalat/pellava-puuro-pahkinoilla.md",
+  "sourceLfSha256": "6ef230c98eb7272242996be4d57e594d53e0727f25b4976594bc8e3a74d410f6",
+  "servings": 4,
+  "originalIngredientCount": 8,
+  "publicationApproved": false,
+  "newPublishedValue": false,
+  "macroPublicationAuthorized": false,
+  "rulesChanged": false,
+  "rows": [
+    {
+      "input": {
+        "name": "pellavansiemenrouhetta",
+        "grams": 35,
+        "fineliRecordId": "research-afcd-F008210",
+        "giRecordId": null,
+        "massEvidence": "Recipe-listed 35 g, mapped to Seed, linseed or flaxseed (linseed/flaxseed meal; whole-seed composition proxy, available carbohydrate is below 1 g per serving)."
+      },
+      "food": {
+        "id": "research-afcd-F008210",
+        "name": "Seed, linseed or flaxseed",
+        "state": "Seed, linseed or flaxseed",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/data-files",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": false,
+        "polyolsEvidence": "Unknown individual polyols retained as null. Native available carbohydrate without sugar alcohols used directly; no fibre or polyol subtraction.",
+        "per100g": {
+          "carbohydrate": 2.8,
+          "fibre": 32.9,
+          "polyols": null,
+          "protein": 21.6,
+          "fat": 32.6
+        }
+      },
+      "nativeSourceRecord": {
+        "source_id": "F008210",
+        "classification": 22101,
+        "derivation": "Analysed",
+        "name": "Seed, linseed or flaxseed",
+        "protein_g_per_100g": 21.6,
+        "fat_g_per_100g": 32.6,
+        "fibre_g_per_100g": 32.9,
+        "glycerol_g_per_100g": null,
+        "erythritol_g_per_100g": null,
+        "maltitol_g_per_100g": null,
+        "mannitol_g_per_100g": null,
+        "xylitol_g_per_100g": null,
+        "sorbitol_g_per_100g": null,
+        "available_carbohydrate_without_sugar_alcohols_g_per_100g": 2.8,
+        "available_carbohydrate_with_sugar_alcohols_g_per_100g": 2.8
+      },
+      "compositionOrigin": "afcd",
+      "sourceId": "F008210"
+    },
+    {
+      "input": {
+        "name": "kookosjauhoa",
+        "grams": 20,
+        "fineliRecordId": null,
+        "giRecordId": null,
+        "excludedReason": "Named Sukrin defatted coconut flour source-model upper only, CONDITIONAL; no flour GI assigned.",
+        "availableCarbohydrateUpperBoundPerServingG": 0.9,
+        "upperBoundEvidence": "Sukrin18g EU label carbohydrate/100g,20g/4servings => nominal label-composition upper0.9g; total including possible polyols bounds available carbohydrate under declared composition. Batch variation NOT covered; use of this upper remains conditional and unapproved."
+      },
+      "food": null,
+      "nativeSourceRecord": {
+        "manufacturer": "Funksjonell Mat / Sukrin",
+        "product": "Organic fat-reduced coconut flour400g",
+        "basis": "100g",
+        "euCarbohydrateIncludingPolyolsG": 18,
+        "sugarsG": 18,
+        "fibreG": 40,
+        "proteinG": 19,
+        "fatG": 14,
+        "polyolsG": null,
+        "polyolsZeroClaimPermitted": false,
+        "primarySources": [
+          {
+            "url": "https://sukrin.com/en/products/coconut-flour",
+            "retrievedAtUtc": "2026-11-02T18:13:56.266350+00:00",
+            "documentSha256": "a41befb8361b60856e60b1f0477a4bd562641ac2e1f7729d03ccf3480b3e7f49"
+          },
+          {
+            "url": "https://butikk.funksjonellmat.no/products/kokosmel-okologisk-fettredusert",
+            "retrievedAtUtc": "2026-11-02T18:13:57.405288+00:00",
+            "documentSha256": "a3fae795b553876b8e7b149f36ef399c5550013ec4cd6482c58d945eae9bb9b8"
+          }
+        ],
+        "isBiologicalMaximum": false
+      },
+      "compositionOrigin": "CONDITIONAL_LABEL_UPPER_NOT_APPROVED",
+      "sourceId": "sukrin-coconut-flour-400g"
+    },
+    {
+      "input": {
+        "name": "makeuttamatonta mantelimaitoa",
+        "grams": 250,
+        "fineliRecordId": "research-fineli-34738",
+        "giRecordId": null,
+        "massEvidence": "Named Fineli34738 unsweetened Alpro almond beverage, food-specific DL100g:250ml=2.5dl=250g. Native availableCHO0.132g/100g, not dairy milk."
+      },
+      "food": {
+        "id": "research-fineli-34738",
+        "name": "MANTELIJUOMA, MAKEUTTAMATON, ALPRO",
+        "state": "MANTELIJUOMA, MAKEUTTAMATON, ALPRO",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/34738",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli source component, retained as published; not inferred.",
+        "per100g": {
+          "carbohydrate": 0.132,
+          "fibre": 0.144,
+          "polyols": 0.0,
+          "protein": 0.48,
+          "fat": 1.025
+        }
+      },
+      "nativeSourceRecord": {
+        "source_id": "34738",
+        "name": "MANTELIJUOMA, MAKEUTTAMATON, ALPRO",
+        "food_type": "FOOD",
+        "process": "IND",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "LEGULIQ",
+        "food_class": "VEGJUICE",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 0.132,
+          "fibre_g_per_100g": 0.144,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 0.48,
+          "fat_g_per_100g": 1.025
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "R",
+            "method_indicator": "MI0002"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "R",
+            "method_indicator": "MI0002"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "R",
+            "method_indicator": "MI0002"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "R",
+            "method_indicator": "MI0002"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "R",
+            "method_indicator": "MI0002"
+          }
+        },
+        "portion_mass_g": {
+          "DL": 100.0,
+          "RKL": 15.0,
+          "TL": 5.0
+        }
+      },
+      "compositionOrigin": "fineli",
+      "sourceId": "34738"
+    },
+    {
+      "input": {
+        "name": "kuohukermaa",
+        "grams": 50,
+        "fineliRecordId": "research-fineli-631",
+        "giRecordId": "dairy-category-mean-gi-35",
+        "massEvidence": "Fineli631 whipping cream38%, DL100g:50ml=50g. Whole cream retained in heated porridge.",
+        "foodKey": "dairy",
+        "preparationKey": "unflavoured-dairy",
+        "giMatchEvidence": "Dairy products, category mean: Category mean, not a measured GI for the recipe's cream cheese.; category/analogue estimate, low confidence."
+      },
+      "food": {
+        "id": "research-fineli-631",
+        "name": "KERMA, KUOHUKERMA, RASVAA 38 %",
+        "state": "KERMA, KUOHUKERMA, RASVAA 38 %",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/631",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli source component, retained as published; not inferred.",
+        "per100g": {
+          "carbohydrate": 2.9,
+          "fibre": 0.0,
+          "polyols": 0.0,
+          "protein": 1.88,
+          "fat": 38.0
+        }
+      },
+      "nativeSourceRecord": {
+        "source_id": "631",
+        "name": "KERMA, KUOHUKERMA, RASVAA 38 %",
+        "food_type": "FOOD",
+        "process": "IND",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "CREAM",
+        "food_class": "CREAM",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 2.9,
+          "fibre_g_per_100g": 0.0,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 1.88,
+          "fat_g_per_100g": 38.0
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0181"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0123"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "U",
+            "method_indicator": "MIR007"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0172"
+          }
+        },
+        "portion_mass_g": {
+          "DL": 100.0,
+          "RKL": 15.0,
+          "TL": 5.0
+        }
+      },
+      "compositionOrigin": "fineli",
+      "sourceId": "631"
+    },
+    {
+      "input": {
+        "name": "kanelia",
+        "grams": 2.55,
+        "fineliRecordId": "research-afcd-F002963",
+        "giRecordId": null,
+        "massEvidence": "quantity-sources.json: AUSNUT F002963 measure49452 density0.51g/ml * Finnish level teaspoon5ml =2.55g; generic density proxy, not measured batch."
+      },
+      "food": {
+        "id": "research-afcd-F002963",
+        "name": "Cinnamon, dried, ground",
+        "state": "Cinnamon, dried, ground",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/data-files",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": false,
+        "polyolsEvidence": "Unknown individual polyols retained as null. Native available carbohydrate without sugar alcohols used directly; no fibre or polyol subtraction.",
+        "per100g": {
+          "carbohydrate": 27.5,
+          "fibre": 53.1,
+          "polyols": null,
+          "protein": 4,
+          "fat": 1.2
+        }
+      },
+      "nativeSourceRecord": {
+        "source_id": "F002963",
+        "classification": 31302,
+        "derivation": "Borrowed",
+        "name": "Cinnamon, dried, ground",
+        "protein_g_per_100g": 4,
+        "fat_g_per_100g": 1.2,
+        "fibre_g_per_100g": 53.1,
+        "glycerol_g_per_100g": null,
+        "erythritol_g_per_100g": null,
+        "maltitol_g_per_100g": null,
+        "mannitol_g_per_100g": null,
+        "xylitol_g_per_100g": null,
+        "sorbitol_g_per_100g": null,
+        "available_carbohydrate_without_sugar_alcohols_g_per_100g": 27.5,
+        "available_carbohydrate_with_sugar_alcohols_g_per_100g": 27.5
+      },
+      "compositionOrigin": "afcd",
+      "sourceId": "F002963"
+    },
+    {
+      "input": {
+        "name": "saksanpähkinöitä",
+        "grams": 20,
+        "fineliRecordId": "research-fineli-376",
+        "giRecordId": null,
+        "massEvidence": "Recipe-listed 20 g, mapped to PÄHKINÄ, SAKSANPÄHKINÄ (walnuts as sold)."
+      },
+      "food": {
+        "id": "research-fineli-376",
+        "name": "PÄHKINÄ, SAKSANPÄHKINÄ",
+        "state": "PÄHKINÄ, SAKSANPÄHKINÄ",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/376",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli source component, retained as published; not inferred.",
+        "per100g": {
+          "carbohydrate": 3.2,
+          "fibre": 5.2,
+          "polyols": 0.0,
+          "protein": 15.23,
+          "fat": 65.21
+        }
+      },
+      "nativeSourceRecord": {
+        "source_id": "376",
+        "name": "PÄHKINÄ, SAKSANPÄHKINÄ",
+        "food_type": "FOOD",
+        "process": "RAW",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "NUTSEED",
+        "food_class": "SNACKVEG",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 3.2,
+          "fibre_g_per_100g": 5.2,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 15.23,
+          "fat_g_per_100g": 65.21
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0181"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "U",
+            "method_indicator": "MIR007"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0172"
+          }
+        },
+        "portion_mass_g": {
+          "DL": 60.0,
+          "RKL": 6.0
+        }
+      },
+      "compositionOrigin": "fineli",
+      "sourceId": "376"
+    },
+    {
+      "input": {
+        "name": "vadelmia",
+        "grams": 30,
+        "fineliRecordId": "research-afcd-F007619",
+        "giRecordId": null,
+        "massEvidence": "Recipe-listed 30 g, mapped to Raspberry, raw (fresh raw raspberries)."
+      },
+      "food": {
+        "id": "research-afcd-F007619",
+        "name": "Raspberry, raw",
+        "state": "Raspberry, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/data-files",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": false,
+        "polyolsEvidence": "Unknown individual polyols retained as null. Native available carbohydrate without sugar alcohols used directly; no fibre or polyol subtraction.",
+        "per100g": {
+          "carbohydrate": 6.9,
+          "fibre": 4.8,
+          "polyols": null,
+          "protein": 1.1,
+          "fat": 0.3
+        }
+      },
+      "nativeSourceRecord": {
+        "source_id": "F007619",
+        "classification": 16201,
+        "derivation": "Analysed",
+        "name": "Raspberry, raw",
+        "protein_g_per_100g": 1.1,
+        "fat_g_per_100g": 0.3,
+        "fibre_g_per_100g": 4.8,
+        "glycerol_g_per_100g": null,
+        "erythritol_g_per_100g": null,
+        "maltitol_g_per_100g": null,
+        "mannitol_g_per_100g": 0.1,
+        "xylitol_g_per_100g": null,
+        "sorbitol_g_per_100g": 0,
+        "available_carbohydrate_without_sugar_alcohols_g_per_100g": 6.9,
+        "available_carbohydrate_with_sugar_alcohols_g_per_100g": 7
+      },
+      "compositionOrigin": "afcd",
+      "sourceId": "F007619"
+    },
+    {
+      "input": {
+        "name": "suolaa",
+        "grams": null,
+        "fineliRecordId": null,
+        "giRecordId": null,
+        "excludedReason": "Plain salt contributes no available carbohydrate.",
+        "estimatedAvailableCarbohydratePerServingG": 0,
+        "negligibleAssumption": "Plain salt has zero available carbohydrate.",
+        "massEvidence": "Recipe-listed salt; not weighed."
+      },
+      "food": null,
+      "compositionOrigin": "PURE_SALT_DOCUMENTED_ZERO",
+      "sourceId": "NaCl",
+      "nativeSourceRecord": {
+        "interpretation": "Plain salt, not seasoning blend. Native available carbohydrate zero independent of the unweighed pinch; does not authorize sodium or macro publication."
+      }
+    }
+  ],
+  "researchStatus": "CONDITIONAL_NAMED_PRODUCT_AND_LABEL_UPPER_REVIEW_PENDING",
+  "originalRecipeCanUseSourceConversion": false,
+  "immediatelyApprovedNewGk": false,
+  "templateSourceCard": {
+    "id": "small-flavour50-r6",
+    "gi": 50,
+    "scale": "GLUCOSE_100",
+    "family": "small-spice-extension",
+    "food": "Fixed weighed culinary ground spice, seed or vanilla extract",
+    "evidenceKind": "PUBLISHED_IMPUTATION",
+    "sourceUrl": "https://doi.org/10.1016/j.jfca.2007.02.004",
+    "location": "Explicit project extension of coding default, not directly published for these foods",
+    "confidence": "LOW",
+    "projectExtension": true,
+    "maxCarbohydratePerServing": 0.5,
+    "maxCumulativeCarbohydratePerServing": 1,
+    "limitations": "Own project extension of coding default, not measured food GI or directly published Schakel scope. Full composition and consumed grams mandatory; <=0.5 g CHO each and <=1 g aggregate per serving. Includes named vanilla extract, dried herbs and whole seed garnish. Excludes flour, baking powder, bulk paste, sugar, unknown extraction and sticks/pods. No biological error bound. USDA total-carbohydrate minus fibre is a disclosed available-CHO proxy; endogenous polyols unquantified, not asserted zero. This additional proxy use awaits owner method approval.",
+    "allowedCompositionIds": [
+      "A002258-r6",
+      "A002963-r6",
+      "A002970-r6",
+      "A003190-r6",
+      "A003327-r6",
+      "A006118-r6",
+      "A006316-r6",
+      "A006618-r6",
+      "A009335-r6",
+      "U170917-r6"
+    ],
+    "evidenceHash": "a62769b7d37e5f5160329e985610328c6a47cc6a004f7aeb9589e8943433e2c2"
+  },
+  "criticalCorrection": "Legacy cow milk Fineli684 mapping rejected. Named unsweetened almond beverage Fineli34738 positive availableCHO0.132g/100g substituted only in this research version. AFCD F009824 is an alternative regional no-added-sugar composition, not a licence to zero all almond beverages.",
+  "preparationNotes": [
+    "Heat flax,coconut flour,almond beverage and cream4-6min; all solids retained. Cinnamon added after heating; raw nuts and berries served on top. No cooked/flour humanGI analogy asserted.",
+    "Only cream dairy35 and cinnamon project50 included in point GK. Other positive unmatched portions counted under existing <1g each/<2g cumulative omission rule.",
+    "The original unbranded flour stays unresolved. Do not replace it globally with Sukrin or Norway05.445."
+  ],
+  "approvalStillRequired": [
+    "Explicit named Sukrin and Alpro version; original recipe is unbranded.",
+    "Source-model EU label carbohydrate upper18g/100g is an average composition, not a measured maximum. Assess admissibility before using omission branch; no new method silently approved.",
+    "New recipe-specific small-spice50 application and full preparation/composition review."
+  ],
+  "expected": {
+    "unroundedGk": "0.21453125",
+    "omittedChoUpperG": "1.905",
+    "coconutChoUpperG": "0.9",
+    "spiceChoG": "0.1753125"
+  }
+}

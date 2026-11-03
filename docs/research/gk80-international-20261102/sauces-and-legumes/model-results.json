@@ -1,0 +1,599 @@
+{
+  "mechanicalModelOnly": true,
+  "newGiSources": 0,
+  "newMethodRules": 0,
+  "results": [
+    {
+      "recipeId": "falafel",
+      "researchStatus": "SOURCE_DOCUMENTED_CURRENT_INPUT_PENDING_APPLICATION_REVIEW",
+      "result": {
+        "recipeId": "falafel",
+        "servings": 4,
+        "status": "CALCULATED",
+        "unroundedGlycemicLoadPerServing": 9.86,
+        "glycemicLoadPerServing": 9.86,
+        "glycemicLoadRangePerServing": null,
+        "omittedAvailableCarbohydratePerServingG": 1.9570875,
+        "omittedAvailableCarbohydrateUpperBoundPerServingG": 0,
+        "confidence": "LOW",
+        "interpretation": "Ingredient-based estimate only; actual prepared-meal response varies. Positive contributions are included when source-supported. An unmatched individual ingredient portion may be omitted only below 1 g available carbohydrate per serving, and all such omissions must total less than the 2 g/serving editorial tolerance.",
+        "ingredients": [
+          {
+            "name": "kuivattuja kikherneitä",
+            "grams": 250,
+            "fineliRecordId": "fineli-31218",
+            "availableCarbohydratePer100g": 46.4,
+            "availableCarbohydratePerServingG": 29,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": 34,
+            "giRecordId": "legumes-category-mean-gi-34",
+            "qualityTier": "SUPPLEMENTARY",
+            "matchKind": "CATEGORY_MEAN",
+            "confidence": "LOW",
+            "giContribution": 9.86,
+            "giContributionRange": {
+              "min": 9.86,
+              "max": 9.86
+            },
+            "giCandidates": [
+              {
+                "id": "legumes-category-mean-gi-34",
+                "gi": 34,
+                "preparation": "Category mean of tested legume foods",
+                "qualityTier": "SUPPLEMENTARY",
+                "preparationMatches": true,
+                "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
+              }
+            ],
+            "issues": []
+          },
+          {
+            "name": "keltasipulia",
+            "grams": 55,
+            "fineliRecordId": "fineli-335",
+            "availableCarbohydratePer100g": 4.8,
+            "availableCarbohydratePerServingG": 0.66,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": null,
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "issues": [
+              "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.660 g available carbohydrate): GI evidence is missing."
+            ]
+          },
+          {
+            "name": "valkosipulinkynttä",
+            "grams": 10.5,
+            "fineliRecordId": "fineli-393",
+            "availableCarbohydratePer100g": 16.3,
+            "availableCarbohydratePerServingG": 0.427875,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": null,
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "issues": [
+              "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.428 g available carbohydrate): GI evidence is missing."
+            ]
+          },
+          {
+            "name": "lehtipersiljaa",
+            "grams": 25,
+            "fineliRecordId": "fineli-333",
+            "availableCarbohydratePer100g": 1.1,
+            "availableCarbohydratePerServingG": 0.06875,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": null,
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "issues": [
+              "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.069 g available carbohydrate): GI evidence is missing."
+            ]
+          },
+          {
+            "name": "tuoretta korianteria",
+            "grams": 15,
+            "fineliRecordId": "fineli-34238",
+            "availableCarbohydratePer100g": 0.505,
+            "availableCarbohydratePerServingG": 0.0189375,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": null,
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "issues": [
+              "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.019 g available carbohydrate): GI evidence is missing."
+            ]
+          },
+          {
+            "name": "juustokuminaa",
+            "grams": 2.65,
+            "fineliRecordId": "afcd-F003327",
+            "availableCarbohydratePer100g": 33.7,
+            "availableCarbohydratePerServingG": 0.22326250000000003,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": null,
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "issues": [
+              "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.223 g available carbohydrate): GI evidence is missing."
+            ]
+          },
+          {
+            "name": "jauhettua korianteria",
+            "grams": 2.65,
+            "fineliRecordId": "afcd-F003190",
+            "availableCarbohydratePer100g": 8.4,
+            "availableCarbohydratePerServingG": 0.055650000000000005,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": null,
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "issues": [
+              "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.056 g available carbohydrate): GI evidence is missing."
+            ]
+          },
+          {
+            "name": "leivinjauhetta",
+            "grams": 2.275,
+            "fineliRecordId": "afcd-F000247",
+            "availableCarbohydratePer100g": 19.8,
+            "availableCarbohydratePerServingG": 0.1126125,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": null,
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "issues": [
+              "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.113 g available carbohydrate): GI evidence is missing."
+            ]
+          },
+          {
+            "name": "suolaa",
+            "grams": 6.5,
+            "fineliRecordId": "fineli-30",
+            "availableCarbohydratePer100g": 0,
+            "availableCarbohydratePerServingG": 0,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": null,
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "issues": []
+          },
+          {
+            "name": "sitruunamehua",
+            "grams": 15,
+            "fineliRecordId": "fineli-11557",
+            "availableCarbohydratePer100g": 1.6,
+            "availableCarbohydratePerServingG": 0.06,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": null,
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "issues": [
+              "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.060 g available carbohydrate): GI evidence is missing."
+            ]
+          },
+          {
+            "name": "oliiviöljyä",
+            "grams": 20,
+            "fineliRecordId": "fineli-536",
+            "availableCarbohydratePer100g": 0,
+            "availableCarbohydratePerServingG": 0,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": null,
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "issues": []
+          },
+          {
+            "name": "tahinia",
+            "grams": 120,
+            "fineliRecordId": "fineli-11087",
+            "availableCarbohydratePer100g": 0.9,
+            "availableCarbohydratePerServingG": 0.27,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": null,
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "issues": [
+              "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.270 g available carbohydrate): GI evidence is missing."
+            ]
+          },
+          {
+            "name": "kylmää vettä",
+            "grams": 100,
+            "fineliRecordId": "fineli-922",
+            "availableCarbohydratePer100g": 0,
+            "availableCarbohydratePerServingG": 0,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": null,
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "issues": []
+          },
+          {
+            "name": "sitruunamehua",
+            "grams": 15,
+            "fineliRecordId": "fineli-11557",
+            "availableCarbohydratePer100g": 1.6,
+            "availableCarbohydratePerServingG": 0.06,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": null,
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "issues": [
+              "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.060 g available carbohydrate): GI evidence is missing."
+            ]
+          }
+        ],
+        "blockers": []
+      },
+      "negativeControls": [
+        {
+          "label": "Unspecified baking-powder mass blocks instead of becomingzero",
+          "status": "INSUFFICIENT SOURCE DATA",
+          "blockers": [
+            "falafel: leivinjauhetta: Ingredient mass is missing or invalid."
+          ]
+        },
+        {
+          "label": "A100g onion instead of source55g exceeds individual1g omission cap",
+          "status": "INSUFFICIENT SOURCE DATA",
+          "blockers": [
+            "falafel: keltasipulia: GI evidence is missing."
+          ]
+        },
+        {
+          "label": "Unspecified dry chickpea composition blocks",
+          "status": "INSUFFICIENT SOURCE DATA",
+          "blockers": [
+            "falafel: kuivattuja kikherneitä: Fineli food record is missing."
+          ]
+        }
+      ],
+      "allCurrentRowsRepresented": true,
+      "sourceApplicationApproved": false,
+      "publicationApproved": false,
+      "newPublishedValue": false
+    },
+    {
+      "recipeId": "okonomiyaki-kaaliletut",
+      "researchStatus": "CONDITIONAL_NAMED_LABEL_AND_QUANTITY_VERSION_HOLD",
+      "result": {
+        "recipeId": "okonomiyaki-kaaliletut",
+        "servings": 4,
+        "status": "CALCULATED",
+        "unroundedGlycemicLoadPerServing": 3.5079,
+        "glycemicLoadPerServing": 3.51,
+        "glycemicLoadRangePerServing": null,
+        "omittedAvailableCarbohydratePerServingG": 1.952875,
+        "omittedAvailableCarbohydrateUpperBoundPerServingG": 1,
+        "confidence": "LOW",
+        "interpretation": "Ingredient-based estimate only; actual prepared-meal response varies. Positive contributions are included when source-supported. An unmatched individual ingredient portion may be omitted only below 1 g available carbohydrate per serving, and all such omissions must total less than the 2 g/serving editorial tolerance.",
+        "ingredients": [
+          {
+            "name": "valkokaalia",
+            "grams": 400,
+            "fineliRecordId": "fineli-320",
+            "availableCarbohydratePer100g": 4.97,
+            "availableCarbohydratePerServingG": 4.97,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": 66,
+            "giRecordId": "vegetables-category-mean-gi-66",
+            "qualityTier": "SUPPLEMENTARY",
+            "matchKind": "CATEGORY_MEAN",
+            "confidence": "LOW",
+            "giContribution": 3.2802,
+            "giContributionRange": {
+              "min": 3.2802,
+              "max": 3.2802
+            },
+            "giCandidates": [
+              {
+                "id": "vegetables-category-mean-gi-66",
+                "gi": 66,
+                "preparation": "Broad category mean; preparation and individual vegetables vary",
+                "qualityTier": "SUPPLEMENTARY",
+                "preparationMatches": true,
+                "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
+              }
+            ],
+            "issues": []
+          },
+          {
+            "name": "kananmunaa",
+            "grams": 165,
+            "fineliRecordId": "fineli-858",
+            "availableCarbohydratePer100g": 0.3,
+            "availableCarbohydratePerServingG": 0.12375,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": null,
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "issues": [
+              "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.124 g available carbohydrate): GI evidence is missing."
+            ]
+          },
+          {
+            "name": "mantelijauhoa",
+            "grams": 60,
+            "fineliRecordId": "afcd-F006077",
+            "availableCarbohydratePer100g": 5.4,
+            "availableCarbohydratePerServingG": 0.81,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": null,
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "issues": [
+              "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.810 g available carbohydrate): GI evidence is missing."
+            ]
+          },
+          {
+            "name": "tamaria",
+            "grams": null,
+            "recipeQuantity": {
+              "amount": 2,
+              "unit": "rkl",
+              "massGrams": null
+            },
+            "fineliRecordId": null,
+            "availableCarbohydratePer100g": null,
+            "availableCarbohydratePerServingG": null,
+            "availableCarbohydrateUpperBoundPerServingG": 0.15,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": "LOW",
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "excludedReason": "Positive unmatched-GI contribution retained in omission total using a named product label; unknown product is not zero.",
+            "issues": [
+              "Conservative available-carbohydrate upper bound counted toward cumulative 2 g/serving editorial tolerance; this is not an actual nutrient estimate: source-catalog.json#/products/tamari: original30ml ×2g/100ml /4=.15g nominal label CHO/serving."
+            ]
+          },
+          {
+            "name": "kevätsipulia",
+            "grams": 30,
+            "fineliRecordId": "afcd-F006250",
+            "availableCarbohydratePer100g": 4.6,
+            "availableCarbohydratePerServingG": 0.345,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": 66,
+            "giRecordId": "vegetables-category-mean-gi-66",
+            "qualityTier": "SUPPLEMENTARY",
+            "matchKind": "CATEGORY_MEAN",
+            "confidence": "LOW",
+            "giContribution": 0.22769999999999999,
+            "giContributionRange": {
+              "min": 0.22769999999999999,
+              "max": 0.22769999999999999
+            },
+            "giCandidates": [
+              {
+                "id": "vegetables-category-mean-gi-66",
+                "gi": 66,
+                "preparation": "Broad category mean; preparation and individual vegetables vary",
+                "qualityTier": "SUPPLEMENTARY",
+                "preparationMatches": true,
+                "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
+              }
+            ],
+            "issues": []
+          },
+          {
+            "name": "neutraalia öljyä",
+            "grams": 27,
+            "fineliRecordId": "fineli-536",
+            "availableCarbohydratePer100g": 0,
+            "availableCarbohydratePerServingG": 0,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": null,
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "issues": []
+          },
+          {
+            "name": "majoneesia",
+            "grams": null,
+            "recipeQuantity": {
+              "amount": 100,
+              "unit": "g",
+              "massGrams": 100
+            },
+            "fineliRecordId": null,
+            "availableCarbohydratePer100g": null,
+            "availableCarbohydratePerServingG": null,
+            "availableCarbohydrateUpperBoundPerServingG": 0.325,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": "LOW",
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "excludedReason": "Positive unmatched-GI contribution retained in omission total using a named product label; unknown product is not zero.",
+            "issues": [
+              "Conservative available-carbohydrate upper bound counted toward cumulative 2 g/serving editorial tolerance; this is not an actual nutrient estimate: source-catalog.json#/products/mayo: Felix Kruunumajoneesi175g tube label1.3g/100g; original100g /4=.325g/serv. Per15g rounded label0 is NOT used."
+            ]
+          },
+          {
+            "name": "srirachaa",
+            "grams": null,
+            "recipeQuantity": {
+              "amount": 1,
+              "unit": "rkl",
+              "massGrams": null
+            },
+            "fineliRecordId": null,
+            "availableCarbohydratePer100g": null,
+            "availableCarbohydratePerServingG": null,
+            "availableCarbohydrateUpperBoundPerServingG": 0.525,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": "LOW",
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "excludedReason": "Positive unmatched-GI contribution retained in omission total using a named product label; unknown product is not zero.",
+            "issues": [
+              "Conservative available-carbohydrate upper bound counted toward cumulative 2 g/serving editorial tolerance; this is not an actual nutrient estimate: source-catalog.json#/products/sriracha: Encona Thai Sriracha142ml UK product label, retailer transcription14g/100ml; original15ml /4=.525g/serv. Manufacturer/package confirmation pending."
+            ]
+          },
+          {
+            "name": "seesaminsiemeniä",
+            "grams": 8.5,
+            "fineliRecordId": "fineli-385",
+            "availableCarbohydratePer100g": 0.9,
+            "availableCarbohydratePerServingG": 0.019125,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": null,
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "issues": [
+              "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.019 g available carbohydrate): GI evidence is missing."
+            ]
+          }
+        ],
+        "blockers": []
+      },
+      "negativeControls": [
+        {
+          "label": "Unbranded sriracha cannot inherit Encona label",
+          "status": "INSUFFICIENT SOURCE DATA",
+          "blockers": [
+            "okonomiyaki-kaaliletut: srirachaa: Positive unmatched-GI contribution retained in omission total using a named product label; unknown product is not zero."
+          ]
+        },
+        {
+          "label": "Poppamies19g/100ml version fails cumulative2g cap",
+          "status": "INSUFFICIENT SOURCE DATA",
+          "blockers": [
+            "okonomiyaki-kaaliletut: cumulative omitted available carbohydrate is 2.140 g/serving, at or above the 2 g editorial tolerance."
+          ]
+        },
+        {
+          "label": "Unknown spring-onion quantity blocks",
+          "status": "INSUFFICIENT SOURCE DATA",
+          "blockers": [
+            "okonomiyaki-kaaliletut: kevätsipulia: Ingredient mass is missing or invalid."
+          ]
+        }
+      ],
+      "allCurrentRowsRepresented": true,
+      "sourceApplicationApproved": false,
+      "publicationApproved": false,
+      "newPublishedValue": false
+    }
+  ]
+}

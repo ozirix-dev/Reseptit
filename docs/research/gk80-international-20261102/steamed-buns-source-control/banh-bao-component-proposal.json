@@ -1,0 +1,117 @@
+{
+  "recipeId": "vietnamilainen-banh-bao-kananmunalla",
+  "sourcePath": "reseptit/aamupalat/vietnamilainen-banh-bao-kananmunalla.md",
+  "sourceLfSha256": "f4613348486bde0f2a85018d632d0069bd461e9d5b8513e558b58bd768f1f06f",
+  "servings": 2,
+  "sourceIngredients": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "item": "vehnäjauho"
+    },
+    {
+      "amount": 2,
+      "unit": "kpl",
+      "item": "kananmuna"
+    },
+    {
+      "amount": 1,
+      "unit": "kpl",
+      "item": "sieni"
+    },
+    {
+      "amount": 1,
+      "unit": "rkl",
+      "item": "soijakastike"
+    },
+    {
+      "amount": null,
+      "unit": "",
+      "item": "suolaa maun mukaan"
+    }
+  ],
+  "ingredients": [
+    {
+      "originalIndex": 0,
+      "name": "plain refined wheat flour",
+      "grams": 100,
+      "foodId": "fineli-110"
+    },
+    {
+      "originalIndex": 1,
+      "name": "two shell-free eggs",
+      "grams": 110,
+      "foodId": "fineli-858"
+    },
+    {
+      "originalIndex": 2,
+      "name": "one medium raw button mushroom",
+      "grams": 15,
+      "foodId": "fineli-345"
+    },
+    {
+      "originalIndex": 3,
+      "name": "commercial regular soy sauce",
+      "grams": 15.75,
+      "foodId": "afcd-F008065"
+    },
+    {
+      "originalIndex": 4,
+      "name": "plain salt to taste",
+      "grams": null,
+      "foodId": "fineli-30"
+    },
+    {
+      "originalIndex": null,
+      "name": "NEW plain dough water",
+      "grams": 50,
+      "foodId": "fineli-922"
+    },
+    {
+      "originalIndex": null,
+      "name": "NEW dry bakers yeast",
+      "grams": 0.6,
+      "foodId": "afcd-F009606"
+    }
+  ],
+  "preparedUnit": {
+    "foodClass": "UNFILLED_YEAST_STEAMED_REFINED_WHEAT_BREAD",
+    "ingredientIndices": [
+      0,
+      4,
+      5,
+      6
+    ],
+    "sourceIds": [
+      "lau2015-osb68",
+      "lan2013-white93"
+    ],
+    "application": "Apply GI once to complete steamed bun CHO, never raw flour. YeastCHO retained before fermentation; no assumed fermentation loss."
+  },
+  "separateIngredients": [
+    {
+      "ingredientIndex": 1,
+      "method": "POSITIVE_GI_OMISSION"
+    },
+    {
+      "ingredientIndex": 2,
+      "method": "POSITIVE_GI_OMISSION"
+    },
+    {
+      "ingredientIndex": 3,
+      "method": "EXISTING_NAMED_SOY_IMPUTATION50"
+    }
+  ],
+  "newContentVersion": {
+    "dough": "Retain100gflour;addexplicit50gwater and.6gdryyeast. Knead8-10min,ferment60min32C,steam20min; sufficient cooking required. Salt remains to taste with native zeroCHO coefficient, NOT assumed zero salt mass.",
+    "filling": "Cook two eggs separately. Specify15g edible button mushroom and cook without unlisted oil; season with15.75g regular commercial soy sauce. Fill buns after steaming. No sugar, oil, milk or baking powder silently added.",
+    "timeTotalMin": 100,
+    "limitations": "Lan ratios followed, but Chinese cultivars/refinement not exactly Finnish flour. Lau alternative has different known cooking schedule and unrecovered full formula; both are conditional human food-class scenarios, not an exact match."
+  },
+  "sourceApplicationApproved": false,
+  "contentVersionApproved": false,
+  "publicationApproved": false,
+  "productionMethodChangeApplied": false,
+  "newPublishedValue": false,
+  "macroPublicationAuthorized": false
+}
