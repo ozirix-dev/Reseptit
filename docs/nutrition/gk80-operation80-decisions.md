@@ -75,7 +75,7 @@ Ackee: erillinen GK-täsmäversio käyttää 60 g kypsää ruodotonta suolatursk
 
 ## Jatkoehdotukset
 
-Nämä kahdeksantoista nelikielistä esikatseluversiota ovat kahden alkuperäisen erän lisäksi. Kohdennetussa tarkistuksessa niiden kanssa numeerinen esikatselukattavuus on 285/326.
+Nämä yhdeksäntoista nelikielistä esikatseluversiota ovat kahden alkuperäisen erän lisäksi. Kohdennetussa tarkistuksessa niiden kanssa numeerinen esikatselukattavuus on 286/326.
 
 | Resepti | GK/annos | Päätös ennen julkaisua |
 | --- | ---: | --- |
@@ -97,6 +97,7 @@ Nämä kahdeksantoista nelikielistä esikatseluversiota ovat kahden alkuperäise
 | Margherita-pizza | 58,48 | Hyväksy kaupallinen paistettu pizzapohja kotitaikinan GI-verrokiksi. [Ehdotus](gk80-operation80-pizza-margherita-release-candidate.json) |
 | Pofiber-pizza kinkulla ja sienillä | 0,42 | Hyväksy 100 g herkkusieniä, 50 g kinkkua, punnitut pohjan ainekset ja 1,9625 g/annos poisjättö. [Ehdotus](gk80-operation80-ketopizza-pofiber-pohjalla-release-candidate.json) |
 | Yaki-onigiri misolla | 10,78 | Hyväksy 100 g kypsää sushiriisiä, 10 g misoa ja 2 g noria kahdelle sekä paahdetun riisipallon GI-verrokki. [Ehdotus](gk80-operation80-yaki-onigiri-release-candidate.json) |
+| Harcha tuorejuustolla | 20,80–22,36 | Hyväksy 40 g tarjoilujuustoa kahdelle sekä kahden ohuemman pannuleivän GI-arvot paksun harchan verrokeiksi. [Ehdotus](gk80-operation80-harcha-release-candidate.json) |
 
 ### Aiempi rinnakkainen ehdotus: paistettu maksa ja pekoni
 
