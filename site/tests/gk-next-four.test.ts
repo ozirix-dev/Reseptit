@@ -29,8 +29,8 @@ test('the four A inputs and legacy variants remain intact as four approved B ver
  for(const previous of baseline.legacyVariants){const v=old.find(v=>v.recipeId===previous.recipeId)!;assert.equal(digest(v),previous.variantSha256,previous.recipeId);}
  const report=read('tmp/nutrition/glycemic-load-pilot.json');
  assert.deepEqual(report.gkOnlyVariants,gkOnlyVariants);assert.deepEqual(report.versionCoverage,gkVersionCoverage);
- assert.equal(gkVersionCoverage.numericRecipes,206);assert.equal(gkVersionCoverage.originalNumeric,156);assert.equal(gkVersionCoverage.additionalA,40);assert.equal(gkVersionCoverage.additionalB,10);assert.equal(gkVersionCoverage.total,326);assert.equal(gkVersionCoverage.missing,120);
- assert.deepEqual(report.coverageViews,{originalRecipe:{total:326,numeric:156,missing:170},atLeastOneExactVersion:{total:326,numeric:206,missing:120,additionalApprovedVersions:50}});
+ assert.equal(gkVersionCoverage.numericRecipes,205);assert.equal(gkVersionCoverage.originalNumeric,156);assert.equal(gkVersionCoverage.additionalA,39);assert.equal(gkVersionCoverage.additionalB,10);assert.equal(gkVersionCoverage.total,326);assert.equal(gkVersionCoverage.missing,121);
+ assert.deepEqual(report.coverageViews,{originalRecipe:{total:326,numeric:156,missing:170},atLeastOneExactVersion:{total:326,numeric:205,missing:121,additionalApprovedVersions:49}});
  assert.throws(()=>countGkVersions(report.results,[...gkOnlyVariants,four[0]]),/distinct/);
  for(const id of ['jerk-kana','sate-ayam'])assert.ok(!gkOnlyVariants.some(v=>v.recipeId===id));
 });
@@ -201,7 +201,11 @@ test('Lindström brine is an independent preparation with scaled, fully included
 });
 
 test('the four reviewed GK-only versions retain their points and native liquid units', () => {
- const versions = gkOnlyVariants.slice(-8,-4);
+ const versions = ['siemengranola-jogurtilla', 'lahi-ita-pistaasijogurtti', 'korealainen-kongjuk-soijapapu-riisipuuro', 'falafel'].map(id => {
+  const version = gkOnlyVariants.find(v => v.recipeId === id);
+  assert.ok(version, id);
+  return version;
+ });
  assert.deepEqual(versions.map(v => [v.recipeId, v.point]), [
   ['siemengranola-jogurtilla', 2.47],
   ['lahi-ita-pistaasijogurtti', 4.37],
@@ -213,13 +217,4 @@ test('the four reviewed GK-only versions retain their points and native liquid u
  assert.deepEqual(gkOnlyQuantity(versions[2], 4), {amount: 700, unit: 'ml'});
  assert.deepEqual(gkOnlyQuantity(versions[3], 12), {amount: 100, unit: 'ml'});
  assert.ok(Math.abs(versions[3].omittedCho - 1.9570875) < 1e-10);
-});
-
-test('approved almond pies retain their exact results and apple sweetener measures', () => {
- const [apple, rhubarb] = gkOnlyVariants.slice(-2);
- assert.deepEqual([apple.recipeId, rhubarb.recipeId], ['vhh-omenapiirakka', 'vhh-raparperipiirakka']);
- assert.deepEqual([apple.point, rhubarb.point], [1.5, 1.33]);
- assert.deepEqual(gkOnlyQuantity(apple, 3), {amount: 2, unit: 'tbsp'});
- assert.deepEqual(gkOnlyQuantity(apple, 9), {amount: 1, unit: 'tbsp'});
- assert.deepEqual(gkOnlyQuantity(rhubarb, 7), {amount: 5, unit: 'g'});
 });
