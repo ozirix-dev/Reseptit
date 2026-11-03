@@ -1,6 +1,8 @@
 # GK80:n päätöstaulukko 3.11.2026
 
-Main `d224549f5e1df3078d9acfa4e79d5e3b84dd457b` sisältää 193/326 numeerista resepti-ID:tä. PR #195:n [julkaisuajo](https://github.com/ozirix-dev/Reseptit/actions/runs/41587298227) raportoi 193 numeerista reseptiä. [Tuotannon GK-koonti](https://ozirix-dev.github.io/Reseptit/glykeeminen-kuorma/) vahvisti **193/326 (59,2 %)**, joista 156 alkuperäisohjeita ja 37 nimettyjä GK-versioita. Tavoitteeseen 261 puuttuu 68. PR #194:n main-diff koskee suklaavertailua.
+**Ajantasainen GitHub-tilannekuva 3.11.2026:** main `e771b53ef560f7960f5a6210bc82e53e0e15142f` sisältää **197/326 (60,4 %)** numeerista resepti-ID:tä: 156 alkuperäisohjetta ja 41 nimettyä GK-only-versiota. [Mainin julkaisuajo 41594126919](https://github.com/ozirix-dev/Reseptit/actions/runs/41594126919) läpäisi buildin ja deployn. Tavoitteeseen 261 puuttuu **64**. Tämä on versionlukittu tilannekuva, ei automaattisesti päivittyvä nykytilamittari. Julkisen HTML:n erillistä uutta sisältöauditointia ei tehty tässä dokumentointipäivityksessä.
+
+**Edellinen todennettu vaihe:** main `d224549f5e1df3078d9acfa4e79d5e3b84dd457b`, [julkaisuajo 41587298227](https://github.com/ozirix-dev/Reseptit/actions/runs/41587298227) sekä [tuotannon GK-kooste](https://ozirix-dev.github.io/Reseptit/glykeeminen-kuorma/) näyttivät 193/326 (59,2 %). PR #194 koski vain suklaavertailua. Tämän jälkeen [#202](https://github.com/ozirix-dev/Reseptit/pull/202) lisäsi mustikkapiirakan ja [#203](https://github.com/ozirix-dev/Reseptit/pull/203) kolme kanacurrya.
 
 Historialliset luvut säilyvät omissa paketeissaan. 2.11.2026 tutkimus käynnistyi tasolta 156/326, ja [viimeinen 179/326-tilannekuva](blueberry-and-defined-brine/CURRENT.md) havaittiin 2.11.2026 klo 21.33 UTC.
 
@@ -23,8 +25,8 @@ GK per annos. A on ehdollinen aineslaskelma ja B ehdollinen valmistusvastine. *L
 | `vhh-omenapiirakka` | A | 1,4955 tai 1,47675 | MEXT 05001 ja rajattu ryhmäimputointi, [täsmäsyöte](almond-reuse-and-oman/vhh-omenapiirakka.json) | LOW* | Tutkimusvaihtoehdot vaativat oman hyväksynnän | Pois jonosta, julkaistu GK toisella syötteellä |
 | `vhh-raparperipiirakka` | A | 1,33125 tai 0,85625 | MEXT 05001 ja rajattu ryhmäimputointi, [täsmäsyöte](almond-reuse-and-oman/vhh-raparperipiirakka.json) | LOW* | Tutkimusvaihtoehdot vaativat oman hyväksynnän | Pois jonosta, julkaistu GK toisella syötteellä |
 | `uunimakkara-sipulipedilla` | A | 0,4356 | Nimetty Tammelan lenkki ja sinappi, [täsmäsyöte](sausage-named-version/proposal.json) | LOW* | Tutkimussyöte eroaa hyväksytystä 0,26-versiosta | Pois jonosta, #193 |
-| `vhh-mustikkapiirakka` | A | 1,30177875 | MEXT 05001 ja Fineli 622/442, [täsmäsyöte](blueberry-and-defined-brine/blueberry-pie-proposal.json) | LOW* | Kotijauhettu manteli, punnittu vanilja ja korjattu munamäärä | Sisältökatselmus |
-| `lindstrominpihvit-kaalilla` | A | 6,895695 | Fineli 30382/1/929/922 ja Maille, [täsmäsyöte](blueberry-and-defined-brine/lindstrom-defined-brine-proposal.json) | LOW* | Uusi itse tehty liemi ja punnitut mausteet | Sisältökatselmus |
+| `vhh-mustikkapiirakka` | A | 1,30177875 | MEXT 05001 ja Fineli 622/442, [täsmäsyöte](blueberry-and-defined-brine/blueberry-pie-proposal.json) | LOW* | Tutkimusversion hyväksyntä ja erillinen julkaisu [#202](https://github.com/ozirix-dev/Reseptit/pull/202) | Pois jatkojonosta, julkaistu täsmäversio |
+| `lindstrominpihvit-kaalilla` | A | 6,895695 | Fineli 30382/1/929/922 ja Maille, [täsmäsyöte](blueberry-and-defined-brine/lindstrom-defined-brine-proposal.json) | LOW* | Uusi itse tehty liemi ja punnitut mausteet | Ehdokas [#205](https://github.com/ozirix-dev/Reseptit/pull/205), ei vielä julkaistu |
 | `samosa` | B | 44,460742–44,611742 | Omanin ihmis-GI 60,4, [täsmäsyöte](almond-reuse-and-oman/samosa-prepared-source-scenario.json) | LOW / ehdollinen* | Uppopaistetun täytetyn yksikön vastaavuus | Valmistus- ja menetelmäkatselmus |
 | `aloo-paratha` | B | 57,07930685–57,47330685 | Thakurdesai 2024, valmistettu perunaparatha, [täsmäsyöte](paratha-component-routes/cases.json) | LOW / ehdollinen* | Täytetyn paistetun komponentin vastaavuus | Valmistus- ja menetelmäkatselmus |
 | `intialainen-aloo-paratha` | B | 39,5874897 | Thakurdesai 2024, valmistettu perunaparatha, [täsmäsyöte](paratha-component-routes/cases.json) | LOW / ehdollinen* | Aamiaisversion komponenttivastaavuus | Valmistus- ja menetelmäkatselmus |
@@ -66,12 +68,14 @@ Kuittisarake vertaa jokaista 20 resepti-ID:tä Codex2:n versionlukitun snapshoti
 
 Vertailu Codex2:n kolmeen CSV-jonoon ja hyväksyntäkuitteihin on sidottu [tutkimushaaran snapshotiin](https://github.com/ozirix-dev/Reseptit/tree/fcba8c85a31e49bf2d65dbb356eadf8d1ac56a0b/docs/research/afcd-polyol-03). Kuittivertailun yhteiset ID:t ovat paella ja uunimakkara. Viisi ID:tä poistuu jatkojonosta julkaistun GK:n perusteella, ja kaikki 20 säilyvät yllä tutkimushistoriana. Codex2:n seitsemän APPROVED_RESEARCH_HANDOFF-riviä sekä muut snapshotin kuittiversiot, mukaan lukien rahkapiirakka, täsmäävät jo tuotannon versioihin. Tässä vertailussa **0 varmennettua hyväksyttyä, julkaisematta olevaa versiota**.
 
-Jäljellä on 15 ehdollista ID:tä (11 A, 4 B). Teoreettinen yläraja on **208/326**, jos jokainen saa erilliset hyväksynnät ja julkaistaan. Käytännön ensimmäinen katselmointierä on alla. Viisi onnistunutta julkaisua antaisi **198/326**. Tarkista jokaisen syötteen tekninen julkaisukelpoisuus omistajan päätöksen jälkeen.
+Kun [#202](https://github.com/ozirix-dev/Reseptit/pull/202) julkaisi mustikkapiirakan, **20 historiallisesta tutkimus-ID:stä kuusi** on jo numeerisena versiona mainissa. Jäljellä on **14 erillistä vielä julkaisematonta ID:tä (10 A, 4 B)**. Kaikkien erillisen hyväksynnän ja julkaisun teoreettinen yläraja on **211/326**. Tämä ei ole hyväksytty tai julkaistu kattavuus.
 
-1. Hyväksytkö siemengranolan täsmäversion punnitun kanelimäärän ja vain tälle määrälle rajatun GI50-imputoinnin?
-2. Hyväksytkö pistaasijogurtin Steenbergs-ruusuvedellä ja nykyisillä maito-, pähkinä- ja hedelmäryhmän GI-arvioilla?
-3. Hyväksytkö kongjukin täsmällisen vesiversion ja sen nykyiset LOW-ryhmäsidonnat?
-4. Hyväksytkö falafelin GK-arvion linkitetylle uunissa paistetulle versiolle, johon kuuluu tahinikastike ja josta määrättömät tarjoiluehdotukset on rajattu pois?
-5. Hyväksytkö mustikkapiirakan version, jossa käytetään 150 g kuorellista itse jauhettua mantelia, 165 g kananmunaa ja 5 g punnittua vaniljauutetta?
+**Viisi näistä 14:stä on jo erillisissä integraatio-PR:issä**, eikä niitä tule palauttaa uuteen tutkimushyväksyntäjonoon:
+- [#205 Lindströminpihvit](https://github.com/ozirix-dev/Reseptit/pull/205): hyväksytty erillinen punajuuriliemen A-versio, Ready; ei vielä mainissa tilannekuvan hetkellä
+- [#206 Siemengranola, pistaasijogurtti, kongjuk ja falafel](https://github.com/ozirix-dev/Reseptit/pull/206): neljän hyväksytyn A-version integraatio, Draft; ei vielä mainissa tilannekuvan hetkellä
 
-Lähde- ja sisältöpäätökset koskevat linkitettyjä syötteitä. Mahdollisesta integraatiosta ja julkaisusta päätetään erikseen.
+Nämä viisi voivat nostaa 197:n **202/326:een** vain, jos kaikki viisi säilyvät erillisinä, nykyiseen mainiin yhteensopivina ja julkaistaan hyväksytysti. PR:ien vanhentuneita 195/326- ja 198/326-esikatselulukemia ei saa käyttää suoraan uusina nykytilalukuina. Ennen mergeä on varmennettava ajantasainen pohja, laskennan tulokset, hyväksyntä ja julkaisulupa.
+
+**Muu jäljellä oleva tutkimuskatselmointijono on yhdeksän ID:tä:** viisi A-versiota (`pellava-puuro-pahkinoilla`, `okonomiyaki-kaaliletut`, `hunaja-sinappikana-kaalilla`, `indialainen-poha-maapahkinoilla`, `pav-bhaji`) sekä neljä B-skenaariota (`samosa`, `aloo-paratha`, `intialainen-aloo-paratha`, `kiinalainen-kevatsipulipannukakku`). Niiden yksilölliset lähde-, valmistus- ja omistajapäätökset pysyvät avoinna. Viiden B-skenaarion historiallinen tutkimuslista säilyy yllä, mutta banh bao on jo julkaistu eri A-versiona.
+
+20 ID:n taulukko ja alla olevat Codex2-kuittivertailut ovat tutkimushetken historiallista evidenssiä, eivät nykyisen hyväksyntäjonon yksinomainen totuus. Tässä päivityksessä ei anneta uusia hyväksyntöjä eikä muuteta numeerisia GK-arvoja.
