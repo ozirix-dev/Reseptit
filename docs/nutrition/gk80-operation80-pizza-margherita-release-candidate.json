@@ -1,0 +1,107 @@
+{
+  "recipeId": "pizza-margherita",
+  "servings": 2,
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "unroundedGk": "58.47744",
+  "inputs": [
+    [
+      300,
+      73.998,
+      52
+    ],
+    [
+      200,
+      3.45,
+      22
+    ],
+    [
+      200,
+      0,
+      0
+    ]
+  ],
+  "ingredients": [
+    {
+      "grams": 300,
+      "name": {
+        "fi": "Vehnäjauho",
+        "en": "Wheat flour",
+        "sv": "Vetemjöl",
+        "th": "แป้งสาลี"
+      }
+    },
+    {
+      "grams": 200,
+      "name": {
+        "fi": "Tomaattimurska",
+        "en": "Crushed tomatoes",
+        "sv": "Krossade tomater",
+        "th": "มะเขือเทศบด"
+      }
+    },
+    {
+      "grams": 200,
+      "name": {
+        "fi": "Valutettu mozzarella",
+        "en": "Drained mozzarella",
+        "sv": "Avrunnen mozzarella",
+        "th": "มอซซาเรลลาสะเด็ดน้ำ"
+      }
+    },
+    {
+      "grams": 3,
+      "name": {
+        "fi": "Kuivahiiva",
+        "en": "Dry yeast",
+        "sv": "Torrjäst",
+        "th": "ยีสต์แห้ง"
+      }
+    },
+    {
+      "grams": 8,
+      "name": {
+        "fi": "Basilika, 8 lehden yläraja",
+        "en": "Basil, upper weight for 8 leaves",
+        "sv": "Basilika, högsta vikt för 8 blad",
+        "th": "โหระพา น้ำหนักสูงสุดของ 8 ใบ"
+      }
+    }
+  ],
+  "omissions": [
+    {
+      "ingredientIndex": 3,
+      "choPer100g": 6.3
+    },
+    {
+      "ingredientIndex": 4,
+      "choPer100g": 1.06
+    }
+  ],
+  "preparation": {
+    "fi": "Tee taikina reseptin mukaan 2 dl:sta vettä, jauhoista, hiivasta ja suolasta. Kohota tunti. Muotoile, täytä ja paista 250 °C:ssa tai kuumemmassa 7–10 minuuttia. Lisää basilika ja oliiviöljy. Jaa {{servings}} annokseen.",
+    "en": "Prepare dough as directed with 200 ml water, flour, yeast and salt. Proof for an hour. Shape, top and bake at 250 °C or hotter for 7–10 minutes. Add basil and olive oil. Divide into {{servings}} servings.",
+    "sv": "Gör degen enligt receptet med 2 dl vatten, mjöl, jäst och salt. Jäs en timme. Forma, lägg på fyllningen och grädda i minst 250 °C i 7–10 minuter. Tillsätt basilika och olivolja. Dela i {{servings}} portioner.",
+    "th": "ทำแป้งตามสูตรด้วยน้ำ 200 มล. แป้งสาลี ยีสต์ และเกลือ พักให้ขึ้นหนึ่งชั่วโมง ขึ้นรูป ใส่หน้า และอบที่ 250 °C ขึ้นไป 7–10 นาที เติมโหระพาและน้ำมันมะกอก แบ่งเป็น {{servings}} ที่"
+  },
+  "limitation": {
+    "fi": "Pohjan verrokki on kaupallinen Boboli-pohja, joka paistettiin 220 °C:ssa 9 minuuttia. Kotitekoinen taikina kohoaa tunnin ja paistuu kuumemmassa uunissa. Hiivasta ja basilikasta jää pois enintään 0,1369 g imeytyvää hiilihydraattia annosta kohti.",
+    "en": "The crust proxy is commercial Boboli baked at 220 °C for 9 minutes. The homemade dough proofs for an hour and bakes in a hotter oven. Up to 0.1369 g available carbohydrate per serving from yeast and basil is excluded.",
+    "sv": "Jämförelsen för botten är en köpt Bobolibotten gräddad i 220 °C i 9 minuter. Den hemlagade degen jäser en timme och gräddas i högre temperatur. Högst 0,1369 g tillgänglig kolhydrat per portion från jäst och basilika utelämnas.",
+    "th": "ใช้ฐานพิซซ่า Boboli ที่อบ 220 °C นาน 9 นาทีเป็นอาหารเทียบ แป้งทำเองพักหนึ่งชั่วโมงและอบร้อนกว่า ไม่รวมคาร์โบไฮเดรตที่ย่อยได้จากยีสต์และโหระพาสูงสุด 0.1369 กรัมต่อที่"
+  },
+  "sources": [
+    {
+      "title": "University of Sydney GI database, Boboli baked pizza base",
+      "url": "https://glycemicindex.com/gi-search/"
+    },
+    {
+      "title": "THL Fineli",
+      "url": "https://fineli.fi/fineli/fi/ohje/19"
+    }
+  ],
+  "boundFiles": {
+    "reseptit/paaruoat/pizza-margherita.md": "f15a74532945386942f8c5b39f7ffacdbed4c0cfaea33c1ad141949f7d55b9d2",
+    "docs/nutrition/glycemic-user-assessment-pilot-r0.md": "de30ab99cddabf34aa5f1631271980556160309a6002dd03ed1852aa01180469"
+  }
+}
