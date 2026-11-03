@@ -2,11 +2,11 @@
   "schemaVersion": 1,
   "main": "4d6f19a620bb95e771c12f499554bf2cf1f06e51",
   "coverage": {
-    "PROPOSED_RANGE": 31,
+    "PROPOSED_RANGE": 32,
     "PUBLISHED_SINGLE": 197,
     "PROPOSED_SINGLE": 22,
     "IN_PROGRESS": 36,
-    "NO_GK": 30,
+    "NO_GK": 29,
     "PUBLISHED_RANGE": 10
   },
   "reviewedPrHeads": {
@@ -15117,10 +15117,10 @@
       "recipeSha256": "1d127dee1a5b1e82c2cbbb7d71e41aac62e4d86266074d27d867197aa9e0ae83",
       "pilotInputSha256": "cfa14ec8d62ae442c61803694877169aa734c0b80bcfffca529517adfc63a191",
       "servings": 2,
-      "status": "NO_GK",
+      "status": "PROPOSED_RANGE",
       "priorEvidence": [],
-      "level": null,
-      "ownerApproval": null,
+      "level": "B",
+      "ownerApproval": false,
       "sourceQualified": null,
       "blockers": [
         "thai-kananmunat-kookoscurryssa: kookosmaito: GI evidence is missing.",
@@ -15211,7 +15211,69 @@
             "Source-documented zero available carbohydrate: Plain salt has zero available carbohydrate."
           ]
         }
-      ]
+      ],
+      "operation80Proposal": {
+        "evidencePath": "docs/nutrition/gk80-operation80-batch-34.md",
+        "baselineRecipeSha256": "1d127dee1a5b1e82c2cbbb7d71e41aac62e4d86266074d27d867197aa9e0ae83",
+        "inputFields": [
+          "gramsBatch",
+          "choPer100g",
+          "giGlucoseScale"
+        ],
+        "scenarios": [
+          {
+            "inputs": [
+              [
+                100,
+                79,
+                82
+              ],
+              [
+                200,
+                1.7,
+                50
+              ],
+              [
+                110,
+                0.3,
+                50
+              ],
+              [
+                100,
+                3.45,
+                40
+              ]
+            ],
+            "gkPerServing": "34.0125"
+          },
+          {
+            "inputs": [
+              [
+                100,
+                79,
+                82
+              ],
+              [
+                200,
+                3.4,
+                50
+              ],
+              [
+                110,
+                0.3,
+                50
+              ],
+              [
+                100,
+                3.45,
+                40
+              ]
+            ],
+            "gkPerServing": "34.8625"
+          }
+        ],
+        "publicationAuthorized": false
+      }
     },
     {
       "recipeId": "thai-khao-tom-katkaravuilla",
