@@ -204,7 +204,7 @@ export function buildAckeeReviewVariant(root: string): GkOnlyVariant {
 }
 
 type PointReviewCandidate = Omit<Candidate, 'ingredients' | 'omittedCho'> & {
-  omissions?: { ingredientIndex: number; choPer100ml: number }[];
+  omissions?: ({ ingredientIndex: number } & ({ choPer100ml: number } | { choPer100g: number }))[];
   inputs: [number, number, number][];
   ingredients: GkOnlyVariant['ingredients'];
   sources: GkOnlyVariant['sources'];
@@ -234,14 +234,19 @@ export function buildPointReviewVariant(root: string, packetPath: string): GkOnl
   }
   const seen = new Set<number>();
   const omittedCho = (c.omissions ?? []).reduce((sum, row) => {
-    const quantity = c.ingredients[row.ingredientIndex]?.quantity;
+    const ingredient = c.ingredients[row.ingredientIndex];
+    const liquid = 'choPer100ml' in row;
+    const amount = liquid
+      ? (ingredient?.quantity?.unit === 'ml' ? ingredient.quantity.amount : null)
+      : ingredient?.grams;
+    const concentration = liquid ? row.choPer100ml : row.choPer100g;
     if (row.ingredientIndex < c.inputs.length || seen.has(row.ingredientIndex)
-        || quantity?.unit !== 'ml' || !Number.isFinite(row.choPer100ml) || row.choPer100ml <= 0) {
-      throw Error('Invalid GK omitted liquid: ' + c.recipeId);
+        || amount == null || !Number.isFinite(amount) || !Number.isFinite(concentration)) {
+      throw Error('Invalid GK omitted ingredient: ' + c.recipeId);
     }
     seen.add(row.ingredientIndex);
-    const cho = quantity.amount * row.choPer100ml / (100 * c.servings);
-    if (!(cho > 0 && cho < 1)) throw Error('GK omitted liquid exceeds ingredient limit: ' + c.recipeId);
+    const cho = amount * concentration / (100 * c.servings);
+    if (!(cho > 0 && cho < 1)) throw Error('GK omission exceeds ingredient limit: ' + c.recipeId);
     return sum + cho;
   }, 0);
   if (omittedCho >= 2) throw Error('GK omissions exceed cumulative limit: ' + c.recipeId);
