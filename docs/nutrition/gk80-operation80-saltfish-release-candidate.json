@@ -1,0 +1,151 @@
+{
+  "recipeId": "karibia-saltfish-fritterit",
+  "servings": 2,
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "unroundedGk": "21.42858",
+  "upperScenario": {
+    "giOverrides": [
+      {
+        "inputIndex": 0,
+        "gi": 61.8
+      },
+      {
+        "inputIndex": 2,
+        "gi": 61.8
+      },
+      {
+        "inputIndex": 3,
+        "gi": 61.8
+      }
+    ],
+    "unroundedGk": "23.233092"
+  },
+  "preparation": {
+    "fi": "Liota ja kypsennä suolaturska pakkauksen ohjeen mukaan. Poista ruodot ja punnitse {{amount:1}} g kypsää kalaa. Sekoita {{amount:0}} g vehnäjauhoa, kala, {{amount:2}} g kevätsipulia ja {{amount:3}} g chiliä. Lisää vettä, kunnes voit lusikoida taikinan pannulle. Paista pieniä ohuita frittereitä molemmin puolin {{amount:4}} rkl:ssa öljyä ja jaa {{servings}} annokseen.",
+    "en": "Soak and cook the salt cod as directed on the packet. Remove bones and weigh {{amount:1}} g cooked fish. Mix {{amount:0}} g wheat flour, the fish, {{amount:2}} g spring onion and {{amount:3}} g chilli. Add water to make a spoonable batter. Pan-fry small thin fritters on both sides in {{amount:4}} tbsp oil and divide into {{servings}} servings.",
+    "sv": "Blötlägg och tillaga den saltade torsken enligt förpackningen. Ta bort benen och väg upp {{amount:1}} g tillagad fisk. Blanda {{amount:0}} g vetemjöl, fisken, {{amount:2}} g salladslök och {{amount:3}} g chili. Tillsätt vatten tills smeten går att klicka ut. Stek små tunna plättar på båda sidor i {{amount:4}} msk olja och dela i {{servings}} portioner.",
+    "th": "แช่และปรุงปลาค็อดเค็มตามวิธีบนบรรจุภัณฑ์ เอาก้างออกแล้วชั่งปลาสุก {{amount:1}} กรัม ผสมแป้งสาลี {{amount:0}} กรัม ปลา ต้นหอม {{amount:2}} กรัม และพริก {{amount:3}} กรัม เติมน้ำจนตักแป้งหยอดได้ ทอดแผ่นเล็กบางทั้งสองด้านในน้ำมัน {{amount:4}} ช้อนโต๊ะ แล้วแบ่งเป็น {{servings}} ที่"
+  },
+  "limitation": {
+    "fi": "Arvio koskee ohuita pannufrittereitä ja käyttää vehnäletun ja vehnä-dosan GI-mittauksia. Kalan lisääminen ja taikinan paksuus voivat muuttaa vastetta.",
+    "en": "The estimate applies to thin pan-fried fritters and uses measured GI values for a wheat pancake and wheat dosa. Fish and batter thickness can affect the response.",
+    "sv": "Uppskattningen gäller tunna pannstekta plättar och bygger på uppmätt GI för vetepannkaka och vetedosa. Fisken och smetens tjocklek kan påverka responsen.",
+    "th": "ค่าประมาณใช้กับแผ่นบางที่ทอดในกระทะและอ้างอิง GI ที่วัดจากแพนเค้กแป้งสาลีและโดซาแป้งสาลี ปลาและความหนาของแป้งอาจส่งผลต่อการตอบสนอง"
+  },
+  "ingredients": [
+    {
+      "name": {
+        "fi": "Vehnäjauho",
+        "en": "Wheat flour",
+        "sv": "Vetemjöl",
+        "th": "แป้งสาลี"
+      },
+      "grams": 100
+    },
+    {
+      "name": {
+        "fi": "Kypsä suolaturska",
+        "en": "Cooked salt cod",
+        "sv": "Tillagad saltad torsk",
+        "th": "ปลาค็อดเค็มสุก"
+      },
+      "grams": 10
+    },
+    {
+      "name": {
+        "fi": "Kevätsipuli",
+        "en": "Spring onion",
+        "sv": "Salladslök",
+        "th": "ต้นหอม"
+      },
+      "grams": 20
+    },
+    {
+      "name": {
+        "fi": "Punainen chili",
+        "en": "Red chilli",
+        "sv": "Röd chili",
+        "th": "พริกแดง"
+      },
+      "grams": 5
+    },
+    {
+      "name": {
+        "fi": "Paistoöljy",
+        "en": "Cooking oil",
+        "sv": "Stekolja",
+        "th": "น้ำมันสำหรับทอด"
+      },
+      "grams": null,
+      "quantity": {
+        "amount": 1,
+        "unit": "tbsp"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Kim et al., wheat pancake",
+      "url": "https://doi.org/10.1017/S0007114518003446",
+      "kind": "HUMAN_GI",
+      "note": "GI 57."
+    },
+    {
+      "title": "Shobana et al., wheat dosa",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9552392/",
+      "kind": "HUMAN_GI",
+      "note": "GI 61.8."
+    },
+    {
+      "title": "Fineli 110",
+      "url": "https://fineli.fi/fineli/fi/elintarvikkeet/110",
+      "kind": "CARBOHYDRATE",
+      "note": "Fineli Release 20, CC BY 4.0."
+    },
+    {
+      "title": "Aqua Azuri",
+      "url": "https://aqua-azuri.com/products/",
+      "kind": "CARBOHYDRATE",
+      "note": "Salt cod, 0 g carbohydrate."
+    },
+    {
+      "title": "USDA 170005",
+      "url": "https://fdc.nal.usda.gov/food-details/170005/nutrients",
+      "kind": "CARBOHYDRATE",
+      "note": "Total carbohydrate minus fibre."
+    },
+    {
+      "title": "AFCD F002901",
+      "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd",
+      "kind": "CARBOHYDRATE",
+      "note": "AFCD Release 3, CC BY-SA 3.0 Australia."
+    }
+  ],
+  "inputs": [
+    [
+      100,
+      74,
+      57
+    ],
+    [
+      10,
+      0,
+      0
+    ],
+    [
+      20,
+      4.74,
+      57
+    ],
+    [
+      5,
+      4.8,
+      57
+    ]
+  ],
+  "boundFiles": {
+    "reseptit/aamupalat/karibia-saltfish-fritterit.md": "311316ae83a2d5da1a8fb676809ea382d5da856d6f13bf1eaea17225fcf9669f",
+    "docs/nutrition/gk80-operation80-batch-11.md": "9817d5e392802b1e3345f90abc1e55d25942b157254706c69e447f7a82cf4f3a"
+  }
+}
