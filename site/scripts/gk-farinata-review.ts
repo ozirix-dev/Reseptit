@@ -205,6 +205,7 @@ export function buildAckeeReviewVariant(root: string): GkOnlyVariant {
 
 type PointReviewCandidate = Omit<Candidate, 'ingredients' | 'omittedCho'> & {
   omissions?: ({ ingredientIndex: number } & ({ choPer100ml: number } | { choPer100g: number }))[];
+  upperScenario?: { replacements: { inputIndex: number; ingredientIndex: number }[]; unroundedGk: string };
   inputs: [number, number, number][];
   ingredients: GkOnlyVariant['ingredients'];
   sources: GkOnlyVariant['sources'];
@@ -232,6 +233,28 @@ export function buildPointReviewVariant(root: string, packetPath: string): GkOnl
   if (!Number.isFinite(Number(c.unroundedGk)) || Math.abs(point - Number(c.unroundedGk)) > 1e-10) {
     throw Error('GK point calculation changed: ' + c.recipeId);
   }
+  let scenarioRange: GkOnlyVariant['scenarioRange'] = null;
+  if (c.upperScenario) {
+    if (c.omissions?.length) throw Error('Range omissions require scenario-specific bindings: ' + c.recipeId);
+    const indices = new Set<number>();
+    let delta = 0;
+    for (const { inputIndex, ingredientIndex } of c.upperScenario.replacements) {
+      const row = c.inputs[inputIndex];
+      const grams = c.ingredients[ingredientIndex]?.grams;
+      if (!row || indices.has(inputIndex) || ingredientIndex < c.inputs.length
+          || grams == null || !Number.isFinite(grams) || grams < 0) {
+        throw Error('Invalid GK range replacement: ' + c.recipeId);
+      }
+      indices.add(inputIndex);
+      delta += (grams - row[0]) * row[1] * row[2];
+    }
+    const max = point + delta / (10000 * c.servings);
+    const expected = Number(c.upperScenario.unroundedGk);
+    if (!Number.isFinite(expected) || max <= point || Math.abs(max - expected) > 1e-10) {
+      throw Error('GK range calculation changed: ' + c.recipeId);
+    }
+    scenarioRange = { min: point, max };
+  }
   const seen = new Set<number>();
   const omittedCho = (c.omissions ?? []).reduce((sum, row) => {
     const ingredient = c.ingredients[row.ingredientIndex];
@@ -253,7 +276,8 @@ export function buildPointReviewVariant(root: string, packetPath: string): GkOnl
   const inputSha256 = textHash(raw);
   return {
     recipeId: c.recipeId, versionId: 'gk-operation80-review-' + inputSha256.slice(0, 12), inputSha256,
-    level: 'B', servings: c.servings, point, scenarioRange: null, rangeKind: null,
+    level: 'B', servings: c.servings, point: scenarioRange ? null : point, scenarioRange,
+    rangeKind: scenarioRange ? 'NAMED_COMPARATOR_SCENARIOS' : null,
     omittedCho, confidence: 'LOW', macroScope: 'NO_MACRO_PACKAGE_FOR_THIS_VERSION',
     quantityContract: 'GK_ONLY_NATIVE_UNITS_V1', standalonePreparation: true,
     ingredients: c.ingredients, preparation: c.preparation, limitation: c.limitation,
