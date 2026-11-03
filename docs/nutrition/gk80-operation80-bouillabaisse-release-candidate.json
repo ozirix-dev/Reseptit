@@ -1,0 +1,273 @@
+{
+  "recipeId": "bouillabaisse",
+  "servings": 4,
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "unroundedGk": "22.2397105",
+  "upperScenario": {
+    "giOverrides": [
+      {
+        "inputIndex": 11,
+        "gi": 66
+      }
+    ],
+    "unroundedGk": "22.6916185"
+  },
+  "preparation": {
+    "fi": "Kuullota {{amount:3}} g sipulia ja {{amount:4}} g fenkolia {{amount:12}} rkl:ssa öljyä. Lisää {{amount:5}} g valkosipulia ja {{amount:9}} g timjamia. Lisää {{amount:6}} g tomaattimurskaa, {{amount:7}} g kalalientä ja {{amount:8}} g sahramia. Kiehauta ja keitä {{amount:10}} g perunaa lähes kypsäksi. Lisää {{amount:0}} g kalaa ja {{amount:2}} g katkarapuja ja kypsennä läpikypsiksi. Kuumenna lopuksi {{amount:1}} g kypsää, kuoretonta simpukanlihaa keitossa. Punnitse {{amount:11}} g leipää ennen paahtamista. Jaa keitto ja leipä {{servings}} annokseen.",
+    "en": "Sauté {{amount:3}} g onion and {{amount:4}} g fennel in {{amount:12}} tbsp oil. Add {{amount:5}} g garlic and {{amount:9}} g thyme. Add {{amount:6}} g crushed tomatoes, {{amount:7}} g stock and {{amount:8}} g saffron. Bring to a boil and cook {{amount:10}} g potatoes until nearly tender. Add {{amount:0}} g fish and {{amount:2}} g shrimp and cook through. Finally heat {{amount:1}} g cooked, shelled mussel meat in the soup. Weigh {{amount:11}} g bread before toasting. Divide the soup and toast into {{servings}} servings.",
+    "sv": "Fräs {{amount:3}} g lök och {{amount:4}} g fänkål i {{amount:12}} msk olja. Tillsätt {{amount:5}} g vitlök och {{amount:9}} g timjan. Tillsätt {{amount:6}} g krossade tomater, {{amount:7}} g buljong och {{amount:8}} g saffran. Koka upp och koka {{amount:10}} g potatis nästan mjuk. Tillsätt {{amount:0}} g fisk och {{amount:2}} g räkor och låt bli genomkokta. Värm till sist {{amount:1}} g kokt musselkött utan skal i soppan. Väg upp {{amount:11}} g bröd före rostning. Dela soppan och brödet i {{servings}} portioner.",
+    "th": "ผัดหัวหอม {{amount:3}} กรัมและเฟนเนล {{amount:4}} กรัมในน้ำมัน {{amount:12}} ช้อนโต๊ะ ใส่กระเทียม {{amount:5}} กรัมและไทม์ {{amount:9}} กรัม เติมมะเขือเทศบด {{amount:6}} กรัม น้ำสต๊อก {{amount:7}} กรัม และหญ้าฝรั่น {{amount:8}} กรัม ต้มให้เดือดแล้วต้มมันฝรั่ง {{amount:10}} กรัมจนเกือบนุ่ม ใส่ปลา {{amount:0}} กรัมและกุ้ง {{amount:2}} กรัม ต้มให้สุกทั่ว ใส่เนื้อหอยแมลงภู่สุกแกะเปลือก {{amount:1}} กรัมแล้วอุ่นให้ร้อน ชั่งขนมปัง {{amount:11}} กรัมก่อนปิ้ง แบ่งซุปและขนมปังปิ้งเป็น {{servings}} ที่"
+  },
+  "limitation": {
+    "fi": "Arvio sisältää paahdetun leivän. Vaihteluväli kuvaa kahden paahtoleipäverrokin vaikutusta. Peruna käyttää keitetyn perunan verrokkia, ja osalle keiton aineksista käytetään laskennallisia GI-koodeja.",
+    "en": "The estimate includes the toast. The range reflects two toasted bread comparators. Potatoes use a cooked potato comparator and some soup ingredients use assigned GI codes.",
+    "sv": "Uppskattningen omfattar det rostade brödet. Intervallet bygger på två jämförelsebröd. Potatisen jämförs med kokt potatis och vissa ingredienser i soppan får tilldelade GI-koder.",
+    "th": "ค่าประมาณรวมขนมปังปิ้งและใช้ขนมปังปิ้งสองชนิดเป็นตัวเปรียบเทียบ มันฝรั่งอ้างอิงจากมันฝรั่งสุก ส่วนผสมบางอย่างในซุปใช้ค่า GI ที่กำหนดตามกลุ่ม"
+  },
+  "ingredients": [
+    {
+      "name": {
+        "fi": "Valkoinen kalafilee",
+        "en": "White fish fillet",
+        "sv": "Vit fiskfilé",
+        "th": "เนื้อปลาขาว"
+      },
+      "grams": 600
+    },
+    {
+      "name": {
+        "fi": "Kypsä sinisimpukan liha",
+        "en": "Cooked mussel meat",
+        "sv": "Kokt musselkött",
+        "th": "เนื้อหอยแมลงภู่สุก"
+      },
+      "grams": 60
+    },
+    {
+      "name": {
+        "fi": "Katkarapu",
+        "en": "Shrimp",
+        "sv": "Räkor",
+        "th": "กุ้ง"
+      },
+      "grams": 200
+    },
+    {
+      "name": {
+        "fi": "Sipuli",
+        "en": "Onion",
+        "sv": "Lök",
+        "th": "หัวหอม"
+      },
+      "grams": 55
+    },
+    {
+      "name": {
+        "fi": "Fenkoli",
+        "en": "Fennel",
+        "sv": "Fänkål",
+        "th": "เฟนเนล"
+      },
+      "grams": 200
+    },
+    {
+      "name": {
+        "fi": "Valkosipuli",
+        "en": "Garlic",
+        "sv": "Vitlök",
+        "th": "กระเทียม"
+      },
+      "grams": 7
+    },
+    {
+      "name": {
+        "fi": "Tomaattimurska",
+        "en": "Crushed tomatoes",
+        "sv": "Krossade tomater",
+        "th": "มะเขือเทศบด"
+      },
+      "grams": 400
+    },
+    {
+      "name": {
+        "fi": "Laimennettu kalaliemi",
+        "en": "Diluted fish stock",
+        "sv": "Utspädd fiskbuljong",
+        "th": "น้ำสต๊อกปลาเจือจาง"
+      },
+      "grams": 1000
+    },
+    {
+      "name": {
+        "fi": "Sahrami",
+        "en": "Saffron",
+        "sv": "Saffran",
+        "th": "หญ้าฝรั่น"
+      },
+      "grams": 0.2
+    },
+    {
+      "name": {
+        "fi": "Kuivattu timjami",
+        "en": "Dried thyme",
+        "sv": "Torkad timjan",
+        "th": "ไทม์แห้ง"
+      },
+      "grams": 1
+    },
+    {
+      "name": {
+        "fi": "Keittoperuna",
+        "en": "Boiling potatoes",
+        "sv": "Potatis",
+        "th": "มันฝรั่ง"
+      },
+      "grams": 400
+    },
+    {
+      "name": {
+        "fi": "Vaalea vehnäleipä",
+        "en": "White wheat bread",
+        "sv": "Vitt vetebröd",
+        "th": "ขนมปังขาว"
+      },
+      "grams": 120
+    },
+    {
+      "name": {
+        "fi": "Oliiviöljy",
+        "en": "Olive oil",
+        "sv": "Olivolja",
+        "th": "น้ำมันมะกอก"
+      },
+      "grams": null,
+      "quantity": {
+        "amount": 2,
+        "unit": "tbsp"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Burton and Lightowler, toasted white bread",
+      "url": "https://doi.org/10.1038/sj.ejcn.1602746",
+      "kind": "HUMAN_GI",
+      "note": "Fresh toast comparators, glucose-scale values 63 and 66 as tabulated by Atkinson et al."
+    },
+    {
+      "title": "Atkinson et al., supplemental table A1",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2584181/",
+      "kind": "HUMAN_GI",
+      "note": "Rows 189 and 190."
+    },
+    {
+      "title": "Yang et al., cooked potato",
+      "url": "https://www.wjgnet.com/1007-9327/full/v12/i21/3430-T3.htm",
+      "kind": "HUMAN_GI",
+      "note": "Measured GI 66.4, rounded to the pilot value 66."
+    },
+    {
+      "title": "Fineli",
+      "url": "https://fineli.fi/fineli/fi/ohje/19",
+      "kind": "CARBOHYDRATE",
+      "note": "CC BY 4.0."
+    },
+    {
+      "title": "AFCD F005968",
+      "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd",
+      "kind": "CARBOHYDRATE",
+      "note": "CC BY-SA 3.0 Australia."
+    },
+    {
+      "title": "USDA saffron",
+      "url": "https://fdc.nal.usda.gov/food-details/170934/nutrients",
+      "kind": "CARBOHYDRATE",
+      "note": "Total carbohydrate minus fibre."
+    },
+    {
+      "title": "USDA dried thyme",
+      "url": "https://fdc.nal.usda.gov/food-details/170938/nutrients",
+      "kind": "CARBOHYDRATE",
+      "note": "Total carbohydrate minus fibre."
+    },
+    {
+      "title": "GI coding method",
+      "url": "https://doi.org/10.2337/dc08-1239",
+      "kind": "PUBLISHED_CODING",
+      "note": "Vegetable and spice codes."
+    },
+    {
+      "title": "Low carbohydrate food coding",
+      "url": "https://doi.org/10.1016/j.jfca.2007.02.004",
+      "kind": "PUBLISHED_CODING",
+      "note": "Mussel coding."
+    }
+  ],
+  "inputs": [
+    [
+      600,
+      0,
+      0
+    ],
+    [
+      60,
+      4.7,
+      50
+    ],
+    [
+      200,
+      0,
+      0
+    ],
+    [
+      55,
+      4.8,
+      40
+    ],
+    [
+      200,
+      1.8,
+      40
+    ],
+    [
+      7,
+      16.3,
+      40
+    ],
+    [
+      400,
+      3.45,
+      40
+    ],
+    [
+      1000,
+      0,
+      0
+    ],
+    [
+      0.2,
+      61.47,
+      50
+    ],
+    [
+      1,
+      26.94,
+      50
+    ],
+    [
+      400,
+      15.5,
+      66
+    ],
+    [
+      120,
+      50.212,
+      63
+    ]
+  ],
+  "boundFiles": {
+    "reseptit/paaruoat/bouillabaisse.md": "15a7127f67bc3d2b2707afe6137c05ddaecf8e39e424a4c66502c8e4a7a9218c",
+    "docs/nutrition/gk80-operation80-batch-12.md": "62f928a2b02f11cae2e956627517ec541a41b891766773616e2c1391ec18869b"
+  }
+}
