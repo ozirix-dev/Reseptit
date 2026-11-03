@@ -27,3 +27,11 @@ PR 207 on Ready tilassa ja build läpäisi tarkistuksen commitissa 5f91ad26ffb6f
 [Julkinen koonti](https://ozirix-dev.github.io/Reseptit/glykeeminen-kuorma/) · [PR 207](https://github.com/ozirix-dev/Reseptit/pull/207)
 
 Julkisesta koonnista varmennetut muut jo julkaistut reseptit ovat hernekeitto, besan-chilla, pinaatti-paneer-chilla, mannasuurimoupma, kana-tagine ja paella. Vanhan päätöstaulukon hyväksytty luovutus -merkintä näille kuudelle sekä pongalille kuvaa aiempaa työvaihetta. Seitsemän reseptiä sisältyvät julkiseen lähtölukuun.
+
+## Tilanne PR 207:n julkaisun jälkeen
+
+Julkinen kattavuus on 202/326 ja tavoitteeseen 261/326 tarvitaan 59 reseptiä. Draft PR 214 korvaa saman kolmen reseptin Draftin 213. Pav bhaji, hunaja-sinappikana kaalilla ja poha maapähkinöillä nostaisivat kattavuuden julkaistuina 205/326:een. Kerala-kalacurry, maksa ja pekoni sekä kevätsipulipannukakku ovat eri reseptejä. Molempien erien jälkeen ehdollinen kattavuus olisi 208/326.
+
+Margheritan 56–65 ja Hyderabadi-kanabiryanin 24–32 on hyväksytty täsmäversioina integraation valmisteluun. Ne tuovat mahdolliset kaksi erillistä resepti-ID:tä. Jos myös ne integroidaan ja julkaistaan, ehdollinen kattavuus olisi 210/326. Julkaisusta päätetään erikseen.
+
+[Draft PR 214](https://github.com/ozirix-dev/Reseptit/pull/214) · [Margheritan syöte](margherita-handoff.json) · [Biryanin syöte](biryani-handoff.json)
