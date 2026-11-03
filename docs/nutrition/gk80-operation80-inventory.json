@@ -4,9 +4,9 @@
   "coverage": {
     "PROPOSED_RANGE": 36,
     "PUBLISHED_SINGLE": 197,
-    "PROPOSED_SINGLE": 31,
+    "PROPOSED_SINGLE": 32,
     "IN_PROGRESS": 36,
-    "NO_GK": 16,
+    "NO_GK": 15,
     "PUBLISHED_RANGE": 10
   },
   "reviewedPrHeads": {
@@ -111,7 +111,7 @@
     "japanilainen-curry-tofulla",
     "khao-soi-vhh-konjac"
   ],
-  "nextRecipeId": "indonesialainen-lontong-sayur-aamiaiseksi",
+  "nextRecipeId": "karibia-bammy-kassavaleipa",
   "recipes": [
     {
       "recipeId": "aloo-paratha",
@@ -3167,10 +3167,10 @@
       "recipeSha256": "6edb30b88df161bea6daeff58d333f752036c79784ea4366d352e8f69bc2ee7b",
       "pilotInputSha256": "6976a048dcc5931e6d2dd943fd5278190515e353648f164a9412ceec325d601e",
       "servings": 2,
-      "status": "NO_GK",
+      "status": "PROPOSED_SINGLE",
       "priorEvidence": [],
-      "level": null,
-      "ownerApproval": null,
+      "level": "B",
+      "ownerApproval": false,
       "sourceQualified": null,
       "blockers": [
         "indonesialainen-lontong-sayur-aamiaiseksi: riisikakku: No source-matched composition and preparation was resolved for “riisikakku”; it is not treated as zero.",
@@ -3267,7 +3267,44 @@
             "Source-documented zero available carbohydrate: Plain salt has zero available carbohydrate."
           ]
         }
-      ]
+      ],
+      "operation80Proposal": {
+        "evidencePath": "docs/nutrition/gk80-operation80-batch-48.md",
+        "baselineRecipeSha256": "6edb30b88df161bea6daeff58d333f752036c79784ea4366d352e8f69bc2ee7b",
+        "inputFields": [
+          "gramsBatch",
+          "choPer100g",
+          "giGlucoseScale"
+        ],
+        "scenarios": [
+          {
+            "inputs": [
+              [
+                40,
+                79,
+                83
+              ],
+              [
+                200,
+                3.4,
+                50
+              ],
+              [
+                200,
+                4.97,
+                40
+              ],
+              [
+                100,
+                1.8,
+                50
+              ]
+            ],
+            "gkPerServing": "17.252"
+          }
+        ],
+        "publicationAuthorized": false
+      }
     },
     {
       "recipeId": "indonesialainen-nasi-goreng-aamiaisriisi",
