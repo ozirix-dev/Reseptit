@@ -28,8 +28,8 @@ test('the four A inputs and legacy variants remain intact as four approved B ver
  for(const previous of baseline.legacyVariants){const v=old.find(v=>v.recipeId===previous.recipeId)!;assert.equal(digest(v),previous.variantSha256,previous.recipeId);}
  const report=read('tmp/nutrition/glycemic-load-pilot.json');
  assert.deepEqual(report.gkOnlyVariants,gkOnlyVariants);assert.deepEqual(report.versionCoverage,gkVersionCoverage);
- assert.equal(gkVersionCoverage.numericRecipes,201);assert.equal(gkVersionCoverage.originalNumeric,156);assert.equal(gkVersionCoverage.additionalA,35);assert.equal(gkVersionCoverage.additionalB,10);assert.equal(gkVersionCoverage.total,326);assert.equal(gkVersionCoverage.missing,125);
- assert.deepEqual(report.coverageViews,{originalRecipe:{total:326,numeric:156,missing:170},atLeastOneExactVersion:{total:326,numeric:201,missing:125,additionalApprovedVersions:45}});
+ assert.equal(gkVersionCoverage.numericRecipes,198);assert.equal(gkVersionCoverage.originalNumeric,156);assert.equal(gkVersionCoverage.additionalA,32);assert.equal(gkVersionCoverage.additionalB,10);assert.equal(gkVersionCoverage.total,326);assert.equal(gkVersionCoverage.missing,128);
+ assert.deepEqual(report.coverageViews,{originalRecipe:{total:326,numeric:156,missing:170},atLeastOneExactVersion:{total:326,numeric:198,missing:128,additionalApprovedVersions:42}});
  assert.throws(()=>countGkVersions(report.results,[...gkOnlyVariants,four[0]]),/distinct/);
  for(const id of ['jerk-kana','sate-ayam'])assert.ok(!gkOnlyVariants.some(v=>v.recipeId===id));
 });
@@ -182,17 +182,19 @@ test('blueberry pie adds one exact GK-only version with separate egg quantities'
  assert.equal(variant.macroScope, 'NO_MACRO_PACKAGE_FOR_THIS_VERSION');
 });
 
-test('the four reviewed GK-only versions retain their points and native liquid units', () => {
- const versions = gkOnlyVariants.slice(-4);
- assert.deepEqual(versions.map(v => [v.recipeId, v.point]), [
-  ['siemengranola-jogurtilla', 2.47],
-  ['lahi-ita-pistaasijogurtti', 4.37],
-  ['korealainen-kongjuk-soijapapu-riisipuuro', 29.09],
-  ['falafel', 9.86],
- ]);
- assert.deepEqual(gkOnlyQuantity(versions[1], 2, 4), {amount: 10, unit: 'ml'});
- assert.match(gkOnlyPreparation(versions[1], 'fi', 4), /10 ml Steenbergs/);
- assert.deepEqual(gkOnlyQuantity(versions[2], 4), {amount: 700, unit: 'ml'});
- assert.deepEqual(gkOnlyQuantity(versions[3], 12), {amount: 100, unit: 'ml'});
- assert.ok(Math.abs(versions[3].omittedCho - 1.9570875) < 1e-10);
+test('Lindström brine is an independent preparation with scaled, fully included brine quantities', () => {
+  const variant = gkOnlyVariants.find(v => v.recipeId === 'lindstrominpihvit-kaalilla')!;
+  assert.equal(variant.point, 6.9);
+  assert.equal(variant.omittedCho, 0.6495625);
+  assert.equal(variant.macroScope, 'NO_MACRO_PACKAGE_FOR_THIS_VERSION');
+  assert.equal(variant.standalonePreparation, true);
+  for (const [index, amount] of [[2, 20], [3, 10], [4, 30]]) {
+    assert.deepEqual(gkOnlyQuantity(variant, index, 8), {amount, unit: 'g'});
+  }
+  for (const locale of ['fi', 'en', 'sv', 'th'] as const) {
+    const html = render(variant, locale);
+    assert.ok(html.includes(variant.limitation![locale]));
+    assert.ok(html.includes(variant.preparation[locale]));
+    assert.ok(!html.includes(gkOnlyUi[locale].prepare));
+  }
 });
