@@ -167,8 +167,29 @@ const gkOnlyVariants = [...buildGkOnlyVariants(root),...buildApprovedSevenVarian
 const versionCoverage = countGkVersions(results,gkOnlyVariants);
 if (process.argv.includes('--operation80-release-check')) {
   const { buildFarinataReviewVariant, buildLabnehReviewVariant, buildAckeeReviewVariant } = await import('./gk-farinata-review');
-  const review = await readFile(path.join(root, 'docs/nutrition/gk80-operation80-first-release-review.md'), 'utf8');
-  const firstBatch = [...review.matchAll(/^\| `([a-z0-9-]+)` \|/gm)].map(match => match[1]);
+  type ReleaseEntry = {
+    recipeId: string; recipePath: string; recipeSha256: string; servings: number;
+    evidencePath: string; evidenceSha256: string; scenarios: string[];
+  };
+  const { textHash } = await import('./gk149-model');
+  const manifest: { entries: ReleaseEntry[] } = JSON.parse(await readFile(
+    path.join(root, 'docs/nutrition/gk80-operation80-first-release-manifest.json'), 'utf8'));
+  const firstBatch = manifest.entries.map(entry => entry.recipeId);
+  const ackeePacket = JSON.parse(await readFile(
+    path.join(root, 'docs/nutrition/gk80-operation80-ackee-release-candidate.json'), 'utf8'));
+  const resultsById = new Map(results.map(result => [result.recipeId, result]));
+  await Promise.all(manifest.entries.map(async entry => {
+    const expectedRecipeHash = entry.recipeId === 'karibia-ackee-ja-suolakala'
+      ? ackeePacket.foodSafety.preparedRecipeSha256 : entry.recipeSha256;
+    const [recipe, evidence] = await Promise.all([
+      readFile(path.join(root, entry.recipePath), 'utf8'),
+      readFile(path.join(root, entry.evidencePath), 'utf8'),
+    ]);
+    if (textHash(recipe) !== expectedRecipeHash || textHash(evidence) !== entry.evidenceSha256
+        || resultsById.get(entry.recipeId)?.servings !== entry.servings) {
+      throw new Error('Operation80 recipe, serving or evidence binding changed: ' + entry.recipeId);
+    }
+  }));
   const firstBatchIds = new Set(firstBatch);
   const published = new Set(versionCoverage.numericRecipeIds);
   const available = new Set(results.map(result => result.recipeId));
@@ -185,6 +206,7 @@ if (process.argv.includes('--operation80-release-check')) {
   if (added.length !== prepared.length) throw new Error('Operation80 preview coverage mismatch');
   console.log(JSON.stringify({
     published: { numeric: versionCoverage.numericRecipes, total: versionCoverage.total },
+    verifiedFirstBatchBindings: manifest.entries.length,
     firstBatchPotential: versionCoverage.numericRecipes + firstBatch.length,
     preview: { numeric: preview.numericRecipes, added },
   }, null, 2));
