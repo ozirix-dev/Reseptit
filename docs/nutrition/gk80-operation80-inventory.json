@@ -4,9 +4,9 @@
   "coverage": {
     "PROPOSED_RANGE": 36,
     "PUBLISHED_SINGLE": 197,
-    "PROPOSED_SINGLE": 25,
+    "PROPOSED_SINGLE": 26,
     "IN_PROGRESS": 36,
-    "NO_GK": 22,
+    "NO_GK": 21,
     "PUBLISHED_RANGE": 10
   },
   "reviewedPrHeads": {
@@ -111,7 +111,7 @@
     "japanilainen-curry-tofulla",
     "khao-soi-vhh-konjac"
   ],
-  "nextRecipeId": "pho-bo",
+  "nextRecipeId": "pohjoisafrikkalainen-bissara",
   "recipes": [
     {
       "recipeId": "aloo-paratha",
@@ -13157,10 +13157,10 @@
       "recipeSha256": "99a56bba756b54b3bde16f25d4d6a00c76828d454c3b4870e826ee5accc786de",
       "pilotInputSha256": "29bd84c27385495445ff2542618dd6e54ee7f3212e61a502707186967b6c401a",
       "servings": 6,
-      "status": "NO_GK",
+      "status": "PROPOSED_SINGLE",
       "priorEvidence": [],
-      "level": null,
-      "ownerApproval": null,
+      "level": "B",
+      "ownerApproval": false,
       "sourceQualified": null,
       "blockers": [
         "pho-bo: naudallisia keittoluita: No matching raw bone-in beef food record was found in Fineli Rel20; the stock base cannot be assigned zero carbohydrate from a substitute meat cut.",
@@ -13323,7 +13323,64 @@
             "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.033 g available carbohydrate): GI evidence is missing."
           ]
         }
-      ]
+      ],
+      "operation80Proposal": {
+        "evidencePath": "docs/nutrition/gk80-operation80-batch-42.md",
+        "baselineRecipeSha256": "99a56bba756b54b3bde16f25d4d6a00c76828d454c3b4870e826ee5accc786de",
+        "inputFields": [
+          "gramsBatch",
+          "choPer100g",
+          "giGlucoseScale"
+        ],
+        "scenarios": [
+          {
+            "inputs": [
+              [
+                400,
+                81,
+                61
+              ],
+              [
+                100,
+                4.8,
+                40
+              ],
+              [
+                100,
+                4.8,
+                50
+              ],
+              [
+                54,
+                3,
+                50
+              ],
+              [
+                12,
+                99.9,
+                59
+              ],
+              [
+                150,
+                1.6,
+                50
+              ],
+              [
+                10,
+                0.2,
+                50
+              ],
+              [
+                20,
+                1.9,
+                50
+              ]
+            ],
+            "gkPerServing": "35.20715333333333333333333333"
+          }
+        ],
+        "publicationAuthorized": false
+      }
     },
     {
       "recipeId": "pizza-margherita",
