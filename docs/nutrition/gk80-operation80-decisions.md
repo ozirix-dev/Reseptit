@@ -2,7 +2,7 @@
 
 Main: `4d6f19a620bb95e771c12f499554bf2cf1f06e51`. Numeerinen lähtökattavuus 207/326. Erät sisältävät 30 + 30 erillistä reseptiä. Aiemmat Decimal-tarkistukset kattavat 48 + 37 skenaariota. Ehdotukset odottavat hyväksyntää. Täysi potentiaali 267/326 (81,90 %).
 
-Ensimmäisen erän täsmäversiot ovat nelikielisessä GK-only-esikatselussa. Toisen erän taulukko on valmistelujono. Jokaiselta riviltä tarkistetaan valmistus- ja määräsidos, poisjäävät hiilihydraatit sekä nelikielinen epävarmuusselite ennen julkaisua. Laskelmien lähteet ja skenaariot löytyvät rivien näyttölinkeistä.
+Molempien erien 60 täsmäversiota ovat nelikielisessä GK-only-esikatselussa. Katselmoi ensin 33 hyväksyntävalmista versiota, sitten 12 sisältöpäätöstä ja 15 lähdepäätöstä. Riveiltä löytyvät päätöskohteet sekä laskelmien lähteet ja skenaariot. Tilat kuvaavat katselmointitarvetta. Julkaisu edellyttää hyväksyntää yksilöidylle reseptiversiolle.
 
 Lähdeviittaus yksilöi käytetyn tutkimuksen. Taulukkoarvon uudelleenkäyttö edellyttää lähdekohtaista käyttöperustetta ja merkintää. Fineli Release 20: THL, CC BY 4.0. AFCD Release 3: FSANZ, CC BY-SA 3.0 Australia. CoFID: OGL v3.0. Tuote-etikettien yksittäiset ravintoarvot sidotaan nimettyihin tuotteisiin. Aineistojen kopiointi tai uudelleenjakelu arvioidaan erikseen.
 
