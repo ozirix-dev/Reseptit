@@ -199,3 +199,9 @@ Sieniversion ehdotuksessa 50 g paprikaa vaihtuu 50 grammaan herkkusieniä. Täyt
 ### Yaki-onigirin punnittu tarjoilu
 
 Kahden annoksen ehdotuksessa punnitaan 100 g keitettyä sushiriisiä ennen pannupaistoa. Nykyinen ohje jättää riisin punnitustilan avoimeksi ja ilmoittaa misoa sekä noria 150 g kumpaakin. Ehdotuksessa pallot sivellään 10 g:lla misoa ja viimeistellään 2 g:lla noria. Pakkausarvoilla riisistä tulee 14 g imeytyvää hiilihydraattia annosta kohti. Mison ja norin osuus 0,9083 g/annos jää laskelman ulkopuolelle. Satoun paahdetun riisipallon GI 77 on muunnettu riisivertailusta glukoosiasteikolle, ja sitä käytetään pannulla ruskistetun riisin verrokkina. [Ehdotus](gk80-operation80-yaki-onigiri-release-candidate.json) · [GI-taulukko](https://doi.org/10.1093/ajcn/nqab233)
+
+### Tangyuanin keitetty riisipallo ja liemi
+
+Chen ym. mittasivat glukoosivertailulla vedessä keitetyn Lee Chun -riisipallon GI:n 61 ± 10. Testierän 115 grammassa oli 50 g imeytyvää hiilihydraattia ja 23,1 g rasvaa. Tutkimustaulukko nimeää tuotteen ja keittotavan, mutta täyte jää yksilöimättä. Mittaus on käyttökelpoinen koko keitetyn pallon verrokkiehdokkaana, jos riisijauhon, seesamitäytteen ja rasvan suhde voidaan perustella. Liemen sokeri lasketaan erikseen tarjoillun liemen osuuden mukaan. [Chen ym., taulukot 1 ja 2](https://www.wjgnet.com/1007-9327/full/v16/i12/1512.htm)
+
+Muson mustan seesamin tuotetieto ilmoittaa 12,3 g hiilihydraattia EU-määritelmällä / 100 g. Reseptin 100 g antaa 3,075 g annosta kohti, mikä ylittää pienosuusrajan. Koko pallon GI-verrokkiin sisällytetään pallon kaikki imeytyvät hiilihydraatit, jolloin seesamia ja täytteen 50 g sokeria ei lisätä toistamiseen. Nykyisen liemen 60 g sokeria tarkoittaa 15 g annosta kohti, jos koko liemi jaetaan neljälle. [Muso-tuotetieto](https://muso-intl.com/wp-content/uploads/2022/01/RAW001-ORGANIC-BLACK-SESAME-WEB.pdf)
