@@ -4,9 +4,9 @@
   "coverage": {
     "PROPOSED_RANGE": 36,
     "PUBLISHED_SINGLE": 197,
-    "PROPOSED_SINGLE": 33,
+    "PROPOSED_SINGLE": 34,
     "IN_PROGRESS": 36,
-    "NO_GK": 14,
+    "NO_GK": 13,
     "PUBLISHED_RANGE": 10
   },
   "reviewedPrHeads": {
@@ -111,7 +111,7 @@
     "japanilainen-curry-tofulla",
     "khao-soi-vhh-konjac"
   ],
-  "nextRecipeId": "dim-sum",
+  "nextRecipeId": "hapanimela-porsas",
   "recipes": [
     {
       "recipeId": "aloo-paratha",
@@ -2035,10 +2035,10 @@
       "recipeSha256": "a40bdd3743cf62ff6ae9e463b07e4d02653afebc31f568426538ad47a26c6b41",
       "pilotInputSha256": "a3977504f27cac7f270fb0af54ec3a3029f47cbf0f96fcb8d937be5aad8cffd0",
       "servings": 4,
-      "status": "NO_GK",
+      "status": "PROPOSED_SINGLE",
       "priorEvidence": [],
-      "level": null,
-      "ownerApproval": null,
+      "level": "B",
+      "ownerApproval": false,
       "sourceQualified": null,
       "blockers": [
         "dim-sum: dumpling-taikinalevyjä: 12 wrappers lack package/sheet mass; major wheat carbohydrate quantity cannot be determined.",
@@ -2165,7 +2165,44 @@
             "Individual sub-1 g contribution counted toward cumulative 2 g/serving editorial tolerance: Plain unsweetened rice vinegar assumed; below 1 g carbohydrate/serving."
           ]
         }
-      ]
+      ],
+      "operation80Proposal": {
+        "evidencePath": "docs/nutrition/gk80-operation80-batch-51.md",
+        "baselineRecipeSha256": "a40bdd3743cf62ff6ae9e463b07e4d02653afebc31f568426538ad47a26c6b41",
+        "inputFields": [
+          "gramsBatch",
+          "choPer100g",
+          "giGlucoseScale"
+        ],
+        "scenarios": [
+          {
+            "inputs": [
+              [
+                240,
+                52.9,
+                88.1
+              ],
+              [
+                96,
+                50.8,
+                28
+              ],
+              [
+                8,
+                86,
+                28
+              ],
+              [
+                20,
+                4.6,
+                28
+              ]
+            ],
+            "gkPerServing": "31.9227"
+          }
+        ],
+        "publicationAuthorized": false
+      }
     },
     {
       "recipeId": "doner-kebab",
