@@ -1,0 +1,7 @@
+# GK80 · Bammy-kassavaleivän lähdekatselmointi
+
+Nykyinen resepti punnitsee 250 g kuorittua tuoretta kassavaa ja 15 g limettimehua. Vanhat kappalemuunnosesteet eivät kuvaa tätä versiota. Kassava raastetaan, puristetaan ja paistetaan kookosmaidon kanssa. Kuivan taikinan tai raaka-aineen koostumusta ei voi sitoa puristettuun massaan ilman tietoa siitä, paljonko tärkkelystä poistuu nesteen mukana.
+
+- Ramdathin ym. GI 94 koskee keitettyä kassavaa. Siinä puuttuvat bammyyn kuuluvat raastaminen, puristaminen ja pannulla paistaminen. [Ramdath ym.](https://pubmed.ncbi.nlm.nih.gov/15182400/)
+- Brasilialaisessa ihmistutkimuksessa kassavaleivän 89,23 perustuu leipäviitteeseen. Tutkimuksessa paistettiin uunissa erilainen taikina. Samassa tutkimuksessa mitattu tapiokavalmiste sisältää passionhedelmähilloa. Näitä arvoja ei käytetä pannulla paistetun bammy-leivän GI:nä. [Alkuperäistutkimus, taulukko 1 ja liite I](https://ojs.brazilianjournals.com.br/ojs/index.php/BRJD/article/download/33826/pdf/86409)
+- Raakakassavan käsittelyn turvallisuus pitää varmistaa ennen kuin nykyinen lyhyt kotiohje sidotaan laskentaan. Jamaikan sertifiointielin tunnistaa Rainforest Seafoodsin valmiin kassavabammyn, mutta sertifikaattisivu ei ilmoita hiilihydraatteja tai GI:tä. Valmiille bammylle tarvitaan tuotekohtainen koostumus, valmistusohje ja soveltuva GI. [FSANZ](https://www.foodstandards.gov.au/consumer/prevention-of-foodborne-illness/cassava) · [Jamaikan sertifiointielin](https://www.ncbj.org.jm/certified-client/rainforest-seafoods)

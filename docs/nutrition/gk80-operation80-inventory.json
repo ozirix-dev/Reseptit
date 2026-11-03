@@ -111,7 +111,7 @@
     "japanilainen-curry-tofulla",
     "khao-soi-vhh-konjac"
   ],
-  "nextRecipeId": "karibia-bammy-kassavaleipa",
+  "nextRecipeId": "dal-makhani",
   "recipes": [
     {
       "recipeId": "aloo-paratha",
@@ -5764,7 +5764,11 @@
             "Source-documented zero available carbohydrate: Plain salt has zero available carbohydrate."
           ]
         }
-      ]
+      ],
+      "operation80Screen": {
+        "finding": "Current recipe fixes raw peeled cassava at 250 g and lime juice at 15 g. Pressing losses, cassava preparation safety and an applicable human GI remain unresolved.",
+        "evidencePath": "docs/nutrition/gk80-operation80-batch-49.md"
+      }
     },
     {
       "recipeId": "karibia-callaloo-munakas",
