@@ -1,0 +1,7 @@
+# Naudanmaksan saatava hiilihydraatti ja mallin portti
+
+Fineli 786:n 5,031 g/100 g ylittää nykyisen nimetyn vähähiilihydraattisen GI 50 -mallin 5 g:n rajan. MEXT 11092:n raa'an naudanmaksan saatavan hiilihydraatin massasumma on arvioitu 3,3 g/100 g. Saman rivin 3,7 g on monosakkaridiekvivalentti. Kenttiä ei yhdistetä eikä sulkeissa ilmoitettua arviota kuvata eräkohtaiseksi mittaukseksi. USDA 13325:n 3,89 g on hiilihydraatti erotusmenetelmällä ja toimii erillisenä vertailuna. [MEXT 11092, hiilihydraattitaulukko](https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=11_11092_7&MODE=7) · [USDA 13325](https://www.ars.usda.gov/SP2UserFiles/Place/12354500/Data/SR27/reports/sr27fg13.pdf)
+
+MEXT-pisteellä 500 g raakaa naudanmaksaa antaa 4,125 g saatavaa CHO:ta annosta kohti, joten maksa vaatii laskettavan sidoksen. Jos uusi tarkka MEXT-sovellus ja nykyisen GI 50 -mallin käyttö hyväksytään, maksan ehdollinen GK-osuus olisi 2,0625. Finelin nykyinen lähde säilyttää oman estotuloksensa. Lähteiden ristiriita yli ja alle mallin rajan on hyväksynnässä näkyvä epävarmuus. GI 50 on nykyinen mallikoodaus, eikä naudanmaksan ihmismittaus.
+
+Seuraava tarkistus koskee nimettyä pekonia ja punnittua kermaa sekä sipulin, voin ja pippurin tarkkoja määriä. Kaikki kastike ja pannun nesteet kuuluvat syötteeseen. Maksan alkuperäinen kypsennysohje säilyy. Tässä seulassa syntyi yksi jatkosyöte ja 0 julkaisuun kelpaavaa arvoa.
