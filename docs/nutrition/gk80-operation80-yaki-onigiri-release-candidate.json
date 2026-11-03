@@ -1,0 +1,91 @@
+{
+  "recipeId": "japanilainen-yaki-onigiri-misolla",
+  "servings": 2,
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "unroundedGk": "10.78",
+  "inputs": [
+    [
+      100,
+      28,
+      77
+    ]
+  ],
+  "ingredients": [
+    {
+      "grams": 100,
+      "name": {
+        "fi": "Keitetty Clearspring-sushiriisi",
+        "en": "Cooked Clearspring sushi rice",
+        "sv": "Kokt Clearspring-sushiris",
+        "th": "ข้าวซูชิเคลียร์สปริงหุงสุก"
+      }
+    },
+    {
+      "grams": 10,
+      "name": {
+        "fi": "Hikari Organic White Miso",
+        "en": "Hikari Organic White Miso",
+        "sv": "Hikari Organic White Miso",
+        "th": "มิโซะขาวฮิคาริ"
+      }
+    },
+    {
+      "grams": 2,
+      "name": {
+        "fi": "Paahdettu Clearspring-nori",
+        "en": "Toasted Clearspring nori",
+        "sv": "Rostad Clearspring-nori",
+        "th": "สาหร่ายโนริย่างเคลียร์สปริง"
+      }
+    }
+  ],
+  "omissions": [
+    {
+      "ingredientIndex": 1,
+      "choPer100g": 16.666666666667
+    },
+    {
+      "ingredientIndex": 2,
+      "choPer100g": 7.5
+    }
+  ],
+  "preparation": {
+    "fi": "Kypsennä riisi pakkauksen mukaan ja punnitse 100 g kypsää riisiä. Muotoile palloiksi ja paista pinnat öljyssä. Sivele misolla ja lisää nori. Jaa {{servings}} annokseen.",
+    "en": "Cook the rice as directed and weigh out 100 g cooked rice. Shape into balls and pan-fry the surfaces in oil. Brush with miso and add nori. Divide into {{servings}} servings.",
+    "sv": "Koka riset enligt paketet och väg upp 100 g kokt ris. Forma bollar och stek ytorna i olja. Pensla med miso och tillsätt nori. Dela i {{servings}} portioner.",
+    "th": "หุงข้าวตามฉลากแล้วชั่งข้าวสุก 100 กรัม ปั้นเป็นก้อนและจี่ผิวในน้ำมัน ทามิโซะและเติมโนริ แบ่งเป็น {{servings}} ที่"
+  },
+  "limitation": {
+    "fi": "Ehdotus täsmentää riisin kypsäpainoksi 100 g ja pienentää mison 10 grammaan ja norin 2 grammaan. Paahdetun Satou-riisipallon GI 77 on muunnettu riisivertailusta glukoosiasteikolle. Mison ja norin 0,91 g imeytyvää hiilihydraattia annosta kohti jää laskelman ulkopuolelle.",
+    "en": "This version specifies 100 g cooked rice and reduces miso to 10 g and nori to 2 g. The roasted Satou rice ball GI of 77 was converted from a rice reference to the glucose scale. Miso and nori contribute 0.91 g excluded available carbohydrate per serving.",
+    "sv": "Versionen anger 100 g kokt ris och minskar mison till 10 g och norin till 2 g. GI 77 för rostad Satou-risboll har räknats om från risreferens till glukosskala. Miso och nori bidrar med 0,91 g tillgänglig kolhydrat per portion utanför beräkningen.",
+    "th": "สูตรนี้ใช้ข้าวสุก 100 กรัม ลดมิโซะเหลือ 10 กรัมและโนริเหลือ 2 กรัม ค่า GI 77 ของข้าวปั้นย่าง Satou แปลงจากค่าอ้างอิงข้าวเป็นสเกลกลูโคส ไม่รวมคาร์โบไฮเดรตที่ย่อยได้จากมิโซะและโนริ 0.91 กรัมต่อที่"
+  },
+  "sources": [
+    {
+      "title": "Sugiyama et al.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/12792658/"
+    },
+    {
+      "title": "Atkinson et al., Table 1 row 2043",
+      "url": "https://doi.org/10.1093/ajcn/nqab233"
+    },
+    {
+      "title": "Clearspring sushi rice",
+      "url": "https://www.clearspring.co.uk/collections/organic-japanese-sushi-rice/products/organic-japanese-sushi-rice"
+    },
+    {
+      "title": "Clearspring nori",
+      "url": "https://www.clearspring.co.uk/products/japanese-sushi-nori-dried-sea-vegetable"
+    },
+    {
+      "title": "Hikari White Miso",
+      "url": "https://hikarimiso.com/products/organic-miso-white-english-french-label/"
+    }
+  ],
+  "boundFiles": {
+    "reseptit/aamupalat/japanilainen-yaki-onigiri-misolla.md": "ecce61fa96e4bad04ddaaa871233e66bb2d1ff92e8b0e97baec90a265f6f4320",
+    "docs/nutrition/gk80-operation80-gochujang-miso.md": "7db740a6e46f9144951fa0508d0609353c0c68497b2170e606c37a8a4aed3226"
+  }
+}
