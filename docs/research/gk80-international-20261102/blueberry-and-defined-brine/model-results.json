@@ -1,0 +1,558 @@
+{
+  "results": [
+    {
+      "recipeId": "vhh-mustikkapiirakka",
+      "result": {
+        "recipeId": "vhh-mustikkapiirakka",
+        "servings": 8,
+        "status": "CALCULATED",
+        "unroundedGlycemicLoadPerServing": 1.30177875,
+        "glycemicLoadPerServing": 1.3,
+        "glycemicLoadRangePerServing": null,
+        "omittedAvailableCarbohydratePerServingG": 1.736875,
+        "omittedAvailableCarbohydrateUpperBoundPerServingG": 0.625,
+        "confidence": "LOW",
+        "interpretation": "Ingredient-based estimate only; actual prepared-meal response varies. Positive contributions are included when source-supported. An unmatched individual ingredient portion may be omitted only below 1 g available carbohydrate per serving, and all such omissions must total less than the 2 g/serving editorial tolerance.",
+        "ingredients": [
+          {
+            "name": "almond meal freshly ground from whole dry raw almonds",
+            "grams": 150,
+            "fineliRecordId": "MEXT2023-05001",
+            "availableCarbohydratePer100g": 5.2,
+            "availableCarbohydratePerServingG": 0.975,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": null,
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "issues": [
+              "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.975 g available carbohydrate): GI evidence is missing."
+            ]
+          },
+          {
+            "name": "voita",
+            "grams": 75,
+            "fineliRecordId": "fineli-500",
+            "availableCarbohydratePer100g": 0.8,
+            "availableCarbohydratePerServingG": 0.075,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": null,
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "issues": [
+              "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.075 g available carbohydrate): GI evidence is missing."
+            ]
+          },
+          {
+            "name": "kananmuna pohjaan",
+            "grams": 55,
+            "fineliRecordId": "fineli-858",
+            "availableCarbohydratePer100g": 0.3,
+            "availableCarbohydratePerServingG": 0.020625,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": null,
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "issues": [
+              "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.021 g available carbohydrate): GI evidence is missing."
+            ]
+          },
+          {
+            "name": "maitorahkaa,maustamaton alle0.5%rasva",
+            "grams": 250,
+            "fineliRecordId": "fineli-622",
+            "availableCarbohydratePer100g": 3,
+            "availableCarbohydratePerServingG": 0.9375,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": 35,
+            "giRecordId": "dairy-category-mean-gi-35",
+            "qualityTier": "SUPPLEMENTARY",
+            "matchKind": "CATEGORY_MEAN",
+            "confidence": "LOW",
+            "giContribution": 0.328125,
+            "giContributionRange": {
+              "min": 0.328125,
+              "max": 0.328125
+            },
+            "giCandidates": [
+              {
+                "id": "dairy-category-mean-gi-35",
+                "gi": 35,
+                "preparation": "Unflavoured dairy category mean used for plain cream cheese",
+                "qualityTier": "SUPPLEMENTARY",
+                "preparationMatches": true,
+                "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
+              }
+            ],
+            "issues": []
+          },
+          {
+            "name": "kaksi kananmunaa taytteeseen",
+            "grams": 110,
+            "fineliRecordId": "fineli-858",
+            "availableCarbohydratePer100g": 0.3,
+            "availableCarbohydratePerServingG": 0.04125,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": null,
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "issues": [
+              "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.041 g available carbohydrate): GI evidence is missing."
+            ]
+          },
+          {
+            "name": "metsamustikkaa (bilberry)",
+            "grams": 150,
+            "fineliRecordId": "fineli-442",
+            "availableCarbohydratePer100g": 10.182,
+            "availableCarbohydratePerServingG": 1.909125,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": 51,
+            "giRecordId": "fruit-category-mean-gi-51",
+            "qualityTier": "SUPPLEMENTARY",
+            "matchKind": "CATEGORY_MEAN",
+            "confidence": "LOW",
+            "giContribution": 0.97365375,
+            "giContributionRange": {
+              "min": 0.97365375,
+              "max": 0.97365375
+            },
+            "giCandidates": [
+              {
+                "id": "fruit-category-mean-gi-51",
+                "gi": 51,
+                "preparation": "Category mean from Table 1; individual food and preparation were not tested as this item",
+                "qualityTier": "SUPPLEMENTARY",
+                "preparationMatches": true,
+                "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
+              }
+            ],
+            "issues": []
+          },
+          {
+            "name": "vaniljauutetta,NEWweighed5g",
+            "grams": 5,
+            "fineliRecordId": null,
+            "availableCarbohydratePer100g": null,
+            "availableCarbohydratePerServingG": null,
+            "availableCarbohydrateUpperBoundPerServingG": 0.625,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": "LOW",
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "excludedReason": "Positive whole-mass source bound. Not an actual nutrient estimate.",
+            "issues": [
+              "Conservative available-carbohydrate upper bound counted toward cumulative 2 g/serving editorial tolerance; this is not an actual nutrient estimate: Prescribed5g vanilla/8=.625g total ingredientmass, physical availableCHO ceiling. No unknownGI,composition orpolyols settozero."
+            ]
+          }
+        ],
+        "blockers": []
+      },
+      "allOriginalSourceRowsRepresented": true,
+      "negativeControls": [
+        {
+          "label": "Generic commercial almondmeal5.4 exceeds single1g cap",
+          "engine": "CURRENT_GK_MODEL",
+          "status": "INSUFFICIENT SOURCE DATA",
+          "blockers": [
+            "vhh-mustikkapiirakka: almond meal freshly ground from whole dry raw almonds: GI evidence is missing."
+          ]
+        },
+        {
+          "label": "Almond154g exceeds single1g cap",
+          "engine": "CURRENT_GK_MODEL",
+          "status": "INSUFFICIENT SOURCE DATA",
+          "blockers": [
+            "vhh-mustikkapiirakka: almond meal freshly ground from whole dry raw almonds: GI evidence is missing."
+          ]
+        },
+        {
+          "label": "Unknown almond source is not zero",
+          "engine": "CURRENT_GK_MODEL",
+          "status": "INSUFFICIENT SOURCE DATA",
+          "blockers": [
+            "vhh-mustikkapiirakka: almond meal freshly ground from whole dry raw almonds: Fineli food record is missing."
+          ]
+        },
+        {
+          "label": "Unweighed vanilla has no5g physical bound",
+          "engine": "CURRENT_GK_MODEL",
+          "status": "INSUFFICIENT SOURCE DATA",
+          "blockers": [
+            "vhh-mustikkapiirakka: vaniljauutetta,NEWweighed5g: Positive whole-mass source bound. Not an actual nutrient estimate."
+          ]
+        },
+        {
+          "label": "Old275g egg mapping rejected:original1+2eggs total165g",
+          "engine": "SOURCE_ROW_QUANTITY_CHECK",
+          "status": "REJECTED",
+          "actualInvalidEggG": 275,
+          "requiredEggG": 165
+        }
+      ],
+      "sourceApplicationApproved": false,
+      "contentVersionApproved": false,
+      "publicationApproved": false,
+      "newPublishedValue": false
+    },
+    {
+      "recipeId": "lindstrominpihvit-kaalilla",
+      "result": {
+        "recipeId": "lindstrominpihvit-kaalilla",
+        "servings": 4,
+        "status": "CALCULATED",
+        "unroundedGlycemicLoadPerServing": 6.895695,
+        "glycemicLoadPerServing": 6.9,
+        "glycemicLoadRangePerServing": null,
+        "omittedAvailableCarbohydratePerServingG": 0.6495625,
+        "omittedAvailableCarbohydrateUpperBoundPerServingG": 0.1378125,
+        "confidence": "LOW",
+        "interpretation": "Ingredient-based estimate only; actual prepared-meal response varies. Positive contributions are included when source-supported. An unmatched individual ingredient portion may be omitted only below 1 g available carbohydrate per serving, and all such omissions must total less than the 2 g/serving editorial tolerance.",
+        "ingredients": [
+          {
+            "name": "naudan jauhelihaa7%rasva",
+            "grams": 500,
+            "fineliRecordId": "fineli-712",
+            "availableCarbohydratePer100g": 0,
+            "availableCarbohydratePerServingG": 0,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": null,
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "issues": []
+          },
+          {
+            "name": "keitetty punajuuri (red beet vegetable),unsalted",
+            "grams": 100,
+            "fineliRecordId": "fineli-30382",
+            "availableCarbohydratePer100g": 8.163,
+            "availableCarbohydratePerServingG": 2.04075,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": 66,
+            "giRecordId": "vegetables-category-mean-gi-66",
+            "qualityTier": "SUPPLEMENTARY",
+            "matchKind": "CATEGORY_MEAN",
+            "confidence": "LOW",
+            "giContribution": 1.3468950000000002,
+            "giContributionRange": {
+              "min": 1.3468950000000002,
+              "max": 1.3468950000000002
+            },
+            "giCandidates": [
+              {
+                "id": "vegetables-category-mean-gi-66",
+                "gi": 66,
+                "preparation": "Broad category mean; preparation and individual vegetables vary",
+                "qualityTier": "SUPPLEMENTARY",
+                "preparationMatches": true,
+                "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
+              }
+            ],
+            "issues": []
+          },
+          {
+            "name": "NEWliemen sokeri",
+            "grams": 10,
+            "fineliRecordId": "fineli-1",
+            "availableCarbohydratePer100g": 99.9,
+            "availableCarbohydratePerServingG": 2.4975,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": 58,
+            "giRecordId": "sugar-syrups-category-mean-gi-58",
+            "qualityTier": "SUPPLEMENTARY",
+            "matchKind": "CATEGORY_MEAN",
+            "confidence": "LOW",
+            "giContribution": 1.44855,
+            "giContributionRange": {
+              "min": 1.44855,
+              "max": 1.44855
+            },
+            "giCandidates": [
+              {
+                "id": "sugar-syrups-category-mean-gi-58",
+                "gi": 58,
+                "preparation": "Category mean from Table 1; individual food and preparation were not tested as this item",
+                "qualityTier": "SUPPLEMENTARY",
+                "preparationMatches": true,
+                "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
+              }
+            ],
+            "issues": []
+          },
+          {
+            "name": "NEWliemen valkoviinietikka",
+            "grams": 5,
+            "fineliRecordId": "fineli-929",
+            "availableCarbohydratePer100g": 0.5,
+            "availableCarbohydratePerServingG": 0.00625,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": null,
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "issues": [
+              "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.006 g available carbohydrate): GI evidence is missing."
+            ]
+          },
+          {
+            "name": "NEWliemen vesi",
+            "grams": 15,
+            "fineliRecordId": "fineli-922",
+            "availableCarbohydratePer100g": 0,
+            "availableCarbohydratePerServingG": 0,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": null,
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "issues": []
+          },
+          {
+            "name": "pieni keltasipuli",
+            "grams": 30,
+            "fineliRecordId": "fineli-335",
+            "availableCarbohydratePer100g": 4.8,
+            "availableCarbohydratePerServingG": 0.36,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": null,
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "issues": [
+              "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.360 g available carbohydrate): GI evidence is missing."
+            ]
+          },
+          {
+            "name": "kananmuna",
+            "grams": 55,
+            "fineliRecordId": "fineli-858",
+            "availableCarbohydratePer100g": 0.3,
+            "availableCarbohydratePerServingG": 0.04125,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": null,
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "issues": [
+              "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.041 g available carbohydrate): GI evidence is missing."
+            ]
+          },
+          {
+            "name": "MailleDijonOriginal865gDK SKU12017601EAN3036810201761",
+            "grams": 15.75,
+            "fineliRecordId": null,
+            "availableCarbohydratePer100g": null,
+            "availableCarbohydratePerServingG": null,
+            "availableCarbohydrateUpperBoundPerServingG": 0.1378125,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": "LOW",
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "excludedReason": "Positive label-based CHO allowance,not mustardGI orzero.",
+            "issues": [
+              "Conservative available-carbohydrate upper bound counted toward cumulative 2 g/serving editorial tolerance; this is not an actual nutrient estimate: NamedEUlabel3.5gCHO/100g*15.75g/4=.1378125 nominalupper,notanalyticalmaximum. Individualpolyolsunknown."
+            ]
+          },
+          {
+            "name": "voita",
+            "grams": 28,
+            "fineliRecordId": "fineli-500",
+            "availableCarbohydratePer100g": 0.8,
+            "availableCarbohydratePerServingG": 0.05600000000000001,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": null,
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "issues": [
+              "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.056 g available carbohydrate): GI evidence is missing."
+            ]
+          },
+          {
+            "name": "valkokaalia",
+            "grams": 500,
+            "fineliRecordId": "fineli-320",
+            "availableCarbohydratePer100g": 4.97,
+            "availableCarbohydratePerServingG": 6.2125,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": 66,
+            "giRecordId": "vegetables-category-mean-gi-66",
+            "qualityTier": "SUPPLEMENTARY",
+            "matchKind": "CATEGORY_MEAN",
+            "confidence": "LOW",
+            "giContribution": 4.10025,
+            "giContributionRange": {
+              "min": 4.10025,
+              "max": 4.10025
+            },
+            "giCandidates": [
+              {
+                "id": "vegetables-category-mean-gi-66",
+                "gi": 66,
+                "preparation": "Broad category mean; preparation and individual vegetables vary",
+                "qualityTier": "SUPPLEMENTARY",
+                "preparationMatches": true,
+                "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
+              }
+            ],
+            "issues": []
+          },
+          {
+            "name": "NEWweighedmustapippuri",
+            "grams": 0.5,
+            "fineliRecordId": "afcd-F006618",
+            "availableCarbohydratePer100g": 38.6,
+            "availableCarbohydratePerServingG": 0.04825,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": null,
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "issues": [
+              "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.048 g available carbohydrate): GI evidence is missing."
+            ]
+          },
+          {
+            "name": "plain suola maun mukaan",
+            "grams": null,
+            "fineliRecordId": null,
+            "availableCarbohydratePer100g": null,
+            "availableCarbohydratePerServingG": 0,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": "LOW",
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "excludedReason": "Source-backed plain salt zeroCHO coefficient only.",
+            "issues": [
+              "Source-documented zero available carbohydrate: Native Fineli30 CHO0 coefficient. Saltmassnotknown;not assumedzero saltmass."
+            ]
+          }
+        ],
+        "blockers": []
+      },
+      "allOriginalSourceRowsRepresented": true,
+      "negativeControls": [
+        {
+          "label": "Brine sugar may not be omitted or zeroed",
+          "engine": "CURRENT_GK_MODEL",
+          "status": "INSUFFICIENT SOURCE DATA",
+          "blockers": [
+            "lindstrominpihvit-kaalilla: NEWliemen sokeri: Existing published broad category proxy,LOW; new named recipe application needs source/content review. Not a measured ingredient- or meal-specific GI."
+          ]
+        },
+        {
+          "label": "Unknown commercial jar liquid is not a defined sugar ingredient",
+          "engine": "CURRENT_GK_MODEL",
+          "status": "INSUFFICIENT SOURCE DATA",
+          "blockers": [
+            "lindstrominpihvit-kaalilla: NEWliemen sokeri: Fineli food record is missing."
+          ]
+        },
+        {
+          "label": "Unknown Dijon brand cannot inherit Maille label",
+          "engine": "CURRENT_GK_MODEL",
+          "status": "INSUFFICIENT SOURCE DATA",
+          "blockers": [
+            "lindstrominpihvit-kaalilla: MailleDijonOriginal865gDK SKU12017601EAN3036810201761: Positive label-based CHO allowance,not mustardGI orzero."
+          ]
+        },
+        {
+          "label": "Unweighed black pepper is not zero",
+          "engine": "CURRENT_GK_MODEL",
+          "status": "INSUFFICIENT SOURCE DATA",
+          "blockers": [
+            "lindstrominpihvit-kaalilla: NEWweighedmustapippuri: Ingredient mass is missing or invalid."
+          ]
+        }
+      ],
+      "sourceApplicationApproved": false,
+      "contentVersionApproved": false,
+      "publicationApproved": false,
+      "newPublishedValue": false
+    }
+  ],
+  "newGiRecords": 0,
+  "newRulesApplied": false,
+  "newPublishedValues": 0,
+  "sempioNotUsed": true
+}

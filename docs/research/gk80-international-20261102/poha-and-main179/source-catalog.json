@@ -1,0 +1,565 @@
+{
+  "foods": {
+    "fineli-30": {
+      "id": "fineli-30",
+      "name": "RUOKASUOLA, JODIOITU",
+      "state": "RUOKASUOLA, JODIOITU",
+      "basis": "per100g-as-sold",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/30",
+      "nativeSourcePath": "docs/nutrition/fineli-release-20-reference.json",
+      "nativeSourceRecord": {
+        "source_id": "30",
+        "name": "RUOKASUOLA, JODIOITU",
+        "food_type": "FOOD",
+        "process": "IND",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "SALT",
+        "food_class": "SPICES",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 0.0,
+          "fibre_g_per_100g": 0.0,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 0.63,
+          "fat_g_per_100g": 0.0
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0181"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0123"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "U",
+            "method_indicator": "MIR003"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0172"
+          }
+        },
+        "portion_mass_g": {
+          "DL": 125.0,
+          "RKL": 20.0,
+          "TL": 6.5
+        }
+      },
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Native field retained,null is unknown. Direct FineliCHOAVL or AFCD WITHOUT-sugar-alcohols, not total-fibre subtraction.",
+      "per100g": {
+        "carbohydrate": 0.0,
+        "fibre": 0.0,
+        "polyols": 0.0,
+        "protein": 0.63,
+        "fat": 0.0
+      }
+    },
+    "fineli-182": {
+      "id": "fineli-182",
+      "name": "JAUHO, RIISIJAUHO, RIISIHIUTALE",
+      "state": "JAUHO, RIISIJAUHO, RIISIHIUTALE",
+      "basis": "per100g-as-sold",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/182",
+      "nativeSourcePath": "docs/nutrition/fineli-release-20-reference.json",
+      "nativeSourceRecord": {
+        "source_id": "182",
+        "name": "JAUHO, RIISIJAUHO, RIISIHIUTALE",
+        "food_type": "FOOD",
+        "process": "RAW",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "RICE",
+        "food_class": "FLOUR",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 79.3,
+          "fibre_g_per_100g": 2.3,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 7.69,
+          "fat_g_per_100g": 1.4
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0181"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0123"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "U",
+            "method_indicator": "MIR003"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0172"
+          }
+        },
+        "portion_mass_g": {
+          "DL": 55.0,
+          "RKL": 8.0
+        }
+      },
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Native field retained,null is unknown. Direct FineliCHOAVL or AFCD WITHOUT-sugar-alcohols, not total-fibre subtraction.",
+      "per100g": {
+        "carbohydrate": 79.3,
+        "fibre": 2.3,
+        "polyols": 0.0,
+        "protein": 7.69,
+        "fat": 1.4
+      }
+    },
+    "fineli-370": {
+      "id": "fineli-370",
+      "name": "HERNE, VIHREÄ, TUORE",
+      "state": "HERNE, VIHREÄ, TUORE",
+      "basis": "per100g-as-sold",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/370",
+      "nativeSourcePath": "docs/nutrition/fineli-release-20-reference.json",
+      "nativeSourceRecord": {
+        "source_id": "370",
+        "name": "HERNE, VIHREÄ, TUORE",
+        "food_type": "FOOD",
+        "process": "RAW",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "PEABEAN",
+        "food_class": "LEGUMES",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 9.495,
+          "fibre_g_per_100g": 3.1,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 5.623,
+          "fat_g_per_100g": 0.787
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "D",
+            "method_type": "AG",
+            "method_indicator": "MI1302"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0181"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "D",
+            "method_type": "AG",
+            "method_indicator": "MI0123"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MIR006"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0172"
+          }
+        },
+        "portion_mass_g": {
+          "DL": 60.0
+        }
+      },
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Native field retained,null is unknown. Direct FineliCHOAVL or AFCD WITHOUT-sugar-alcohols, not total-fibre subtraction.",
+      "per100g": {
+        "carbohydrate": 9.495,
+        "fibre": 3.1,
+        "polyols": 0.0,
+        "protein": 5.623,
+        "fat": 0.787
+      }
+    },
+    "fineli-541": {
+      "id": "fineli-541",
+      "name": "RUOKAÖLJY KESKIARVO, 87 % RYPSI- 8 % AURINGONKUKKA- JA 5% OLIIVIÖLJY",
+      "state": "RUOKAÖLJY KESKIARVO, 87 % RYPSI- 8 % AURINGONKUKKA- JA 5% OLIIVIÖLJY",
+      "basis": "per100g-as-sold",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/541",
+      "nativeSourcePath": "docs/nutrition/fineli-release-20-reference.json",
+      "nativeSourceRecord": {
+        "source_id": "541",
+        "name": "RUOKAÖLJY KESKIARVO, 87 % RYPSI- 8 % AURINGONKUKKA- JA 5% OLIIVIÖLJY",
+        "food_type": "FOOD",
+        "process": "IND",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "OIL",
+        "food_class": "OIL",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 0.0,
+          "fibre_g_per_100g": 0.0,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 0.0,
+          "fat_g_per_100g": 99.9
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "IG",
+            "method_indicator": "MIR003"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0123"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "U",
+            "method_indicator": "MIR003"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "R",
+            "method_indicator": "MI0002"
+          }
+        },
+        "portion_mass_g": {
+          "DL": 90.0,
+          "RKL": 13.5,
+          "TL": 4.5
+        }
+      },
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Native field retained,null is unknown. Direct FineliCHOAVL or AFCD WITHOUT-sugar-alcohols, not total-fibre subtraction.",
+      "per100g": {
+        "carbohydrate": 0.0,
+        "fibre": 0.0,
+        "polyols": 0.0,
+        "protein": 0.0,
+        "fat": 99.9
+      }
+    },
+    "fineli-11557": {
+      "id": "fineli-11557",
+      "name": "TÄYSMEHU, SITRUUNATÄYSMEHU, LAIMENTAMATON",
+      "state": "TÄYSMEHU, SITRUUNATÄYSMEHU, LAIMENTAMATON",
+      "basis": "per100g-as-sold",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11557",
+      "nativeSourcePath": "docs/nutrition/fineli-release-20-reference.json",
+      "nativeSourceRecord": {
+        "source_id": "11557",
+        "name": "TÄYSMEHU, SITRUUNATÄYSMEHU, LAIMENTAMATON",
+        "food_type": "FOOD",
+        "process": "MASH",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "JUICE",
+        "food_class": "FRUBJUIC",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 1.6,
+          "fibre_g_per_100g": 0.1,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 0.31,
+          "fat_g_per_100g": 0.0
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0181"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0123"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "IG",
+            "method_indicator": "MIR003"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          }
+        },
+        "portion_mass_g": {
+          "DL": 100.0,
+          "RKL": 15.0,
+          "TL": 5.0
+        }
+      },
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Native field retained,null is unknown. Direct FineliCHOAVL or AFCD WITHOUT-sugar-alcohols, not total-fibre subtraction.",
+      "per100g": {
+        "carbohydrate": 1.6,
+        "fibre": 0.1,
+        "polyols": 0.0,
+        "protein": 0.31,
+        "fat": 0.0
+      }
+    },
+    "afcd-F006107": {
+      "id": "afcd-F006107",
+      "name": "Nut, peanut, with skin, raw, unsalted",
+      "state": "Nut, peanut, with skin, raw, unsalted",
+      "basis": "per100g-as-sold",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+      "nativeSourcePath": "docs/nutrition/afcd-release-3-reference.json",
+      "nativeSourceRecord": {
+        "source_id": "F006107",
+        "classification": 22201,
+        "derivation": "Analysed",
+        "name": "Nut, peanut, with skin, raw, unsalted",
+        "protein_g_per_100g": 24.7,
+        "fat_g_per_100g": 47.1,
+        "fibre_g_per_100g": 8.2,
+        "glycerol_g_per_100g": null,
+        "erythritol_g_per_100g": null,
+        "maltitol_g_per_100g": null,
+        "mannitol_g_per_100g": null,
+        "xylitol_g_per_100g": null,
+        "sorbitol_g_per_100g": null,
+        "available_carbohydrate_without_sugar_alcohols_g_per_100g": 8.9,
+        "available_carbohydrate_with_sugar_alcohols_g_per_100g": 8.9
+      },
+      "polyolsSourceVerified": false,
+      "polyolsEvidence": "Native field retained,null is unknown. Direct FineliCHOAVL or AFCD WITHOUT-sugar-alcohols, not total-fibre subtraction.",
+      "per100g": {
+        "carbohydrate": 8.9,
+        "fibre": 8.2,
+        "polyols": null,
+        "protein": 24.7,
+        "fat": 47.1
+      }
+    },
+    "afcd-F003192": {
+      "id": "afcd-F003192",
+      "name": "Coriander, fresh, raw",
+      "state": "Coriander, fresh, raw",
+      "basis": "per100g-as-sold",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+      "nativeSourcePath": "docs/nutrition/afcd-release-3-reference.json",
+      "nativeSourceRecord": {
+        "source_id": "F003192",
+        "classification": 24403,
+        "derivation": "Analysed",
+        "name": "Coriander, fresh, raw",
+        "protein_g_per_100g": 3.1,
+        "fat_g_per_100g": 0.6,
+        "fibre_g_per_100g": 3.2,
+        "glycerol_g_per_100g": null,
+        "erythritol_g_per_100g": null,
+        "maltitol_g_per_100g": null,
+        "mannitol_g_per_100g": null,
+        "xylitol_g_per_100g": null,
+        "sorbitol_g_per_100g": null,
+        "available_carbohydrate_without_sugar_alcohols_g_per_100g": 1.9,
+        "available_carbohydrate_with_sugar_alcohols_g_per_100g": 1.9
+      },
+      "polyolsSourceVerified": false,
+      "polyolsEvidence": "Native field retained,null is unknown. Direct FineliCHOAVL or AFCD WITHOUT-sugar-alcohols, not total-fibre subtraction.",
+      "per100g": {
+        "carbohydrate": 1.9,
+        "fibre": 3.2,
+        "polyols": null,
+        "protein": 3.1,
+        "fat": 0.6
+      }
+    },
+    "IFCT-G010": {
+      "id": "IFCT-G010",
+      "name": "Curry leaves (Murraya koenigii), raw fresh edible leaves",
+      "state": "RAW_FRESH_EDIBLE_LEAVES",
+      "sourceUrl": "https://www.nin.res.in/ebooks/IFCT2017_16122024.pdf",
+      "basis": "per100g-as-sold",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "polyolsSourceVerified": false,
+      "polyolsEvidence": "IFCT native Table6 Total AvailableCHO excludes sugar alcohols by its defined glucogenic starch/free-sugar scope. Individual polyol quantities remain UNKNOWN. No P0 is inferred.",
+      "per100g": {
+        "carbohydrate": 3.66,
+        "fibre": null,
+        "polyols": null,
+        "protein": null,
+        "fat": null
+      },
+      "nativeSourcePath": "docs/nutrition/gk80-operation149/prepared-route-observations.json",
+      "nativeSourceCommit": "96a25d8c9db6fb0a505a70a37a5b357b6a83593a",
+      "nativeSourceRecord": {
+        "id": "IFCT-G010",
+        "foodCode": "G010",
+        "food": "Curry leaves (Murraya koenigii)",
+        "foodState": "RAW_FRESH_EDIBLE_LEAVES",
+        "nativeTable": 6,
+        "nativeColumn": "Total Available CHO",
+        "availablePer100g": 3.66,
+        "starchPer100g": 3.08,
+        "totalFreeSugarsPer100g": 0.6,
+        "byDifferenceTable1Value": 4.51,
+        "sourceUrl": "https://www.nin.res.in/ebooks/IFCT2017_16122024.pdf",
+        "pdfSha256": "e87629581a58faca286f4886504bc75f33d6d3771a50fb4e40e2afee2b2b32dd",
+        "definitionPdfPage": 27,
+        "observationPdfPage": 221,
+        "printedPage": 183,
+        "definition": "Available carbohydrate is the analytical total of free monosaccharides/disaccharides and starch; distinct from Table1 CHOAVLDF by difference.",
+        "transcriptionNote": "Use published native TotalAvailableCHO3.66. The printed starch+free-sugar means sum3.68; the cause of this0.02 publication difference is not established. Do not silently recompute or replace the published total.",
+        "polyols": "UNKNOWN; not included in the defined free-sugars+starch field; no P0 inferred",
+        "verified": "Source definition and aligned row inspected as rendered PDF images2026-11-02"
+      },
+      "retainedApprovedCompositionReference": {
+        "id": "IFCT-G010",
+        "kind": "IFCT_ANALYTICAL_AVAILABLE_CHO",
+        "path": "docs/nutrition/gk80-operation149/prepared-route-observations.json",
+        "nativeId": "G010",
+        "nativeField": "Table6.TotalAvailableCHO",
+        "nativeRowSha256": "b3a307aa2eb847ac37c1708a09332e8a1281079c6b5617276f8ec80dbe9f15a5",
+        "availablePer100g": 3.66,
+        "name": "IFCT2017 fresh curry leaves;Table6 analytical availableCHO",
+        "polyols": "UNKNOWN; not inferred from Table1 by-difference value"
+      },
+      "applicationStatus": "Existing admitted source family reused; NEW POHA APPLICATION NOT APPROVED. Chettinad input approval is not transferable."
+    }
+  },
+  "existingGiCards": {
+    "vegetables-category-mean-gi-66": {
+      "id": "vegetables-category-mean-gi-66",
+      "gi": 66,
+      "foodKey": "vegetable",
+      "preparationKey": "vegetable-category",
+      "food": "Vegetables other than potatoes, category mean",
+      "preparation": "Broad category mean; preparation and individual vegetables vary",
+      "qualityTier": "SUPPLEMENTARY",
+      "referenceScale": "GLUCOSE_100",
+      "matchKind": "CATEGORY_MEAN",
+      "confidence": "LOW",
+      "source": {
+        "title": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+        "url": "https://doi.org/10.1093/ajcn/nqab233",
+        "table": "Table 1 summary: vegetables other than potatoes mean GI 66 ± 19 (n=91), values from Supplemental Table 1",
+        "year": 2021,
+        "published": true,
+        "iso26642Confirmed": false,
+        "referenceFood": "Glucose",
+        "qualityEvidence": "Published broad category mean calculated from the ISO-screened Supplemental Table 1 food measurements. This category contains diverse vegetables and is not specific to cabbage, cauliflower, cucumber, zucchini, or eggplant."
+      },
+      "note": "Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence."
+    },
+    "nuts-category-mean-gi-22": {
+      "id": "nuts-category-mean-gi-22",
+      "gi": 22,
+      "foodKey": "peanut",
+      "preparationKey": "nuts-category-mean",
+      "food": "Nuts, category mean",
+      "preparation": "Nut category mean",
+      "qualityTier": "SUPPLEMENTARY",
+      "referenceScale": "GLUCOSE_100",
+      "source": {
+        "title": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+        "url": "https://doi.org/10.1093/ajcn/nqab233",
+        "table": "Table 1, nuts: mean 22, SD 2, n=3",
+        "year": 2021,
+        "published": true,
+        "iso26642Confirmed": false,
+        "participants": 3,
+        "referenceFood": "Glucose",
+        "qualityEvidence": "Published category mean with only three observations; not peanut-specific."
+      },
+      "note": "Low-confidence category mean for peanuts.",
+      "matchKind": "CATEGORY_MEAN",
+      "confidence": "LOW"
+    },
+    "rice-category-mean-gi-67": {
+      "id": "rice-category-mean-gi-67",
+      "gi": 67,
+      "foodKey": "rice-category-mean",
+      "preparationKey": "category-mean",
+      "food": "Rice category mean",
+      "preparation": "Category mean from Table 1; individual food and preparation were not tested as this item",
+      "qualityTier": "SUPPLEMENTARY",
+      "referenceScale": "GLUCOSE_100",
+      "source": {
+        "title": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+        "url": "https://doi.org/10.1093/ajcn/nqab233",
+        "table": "Table 1; mean of Supplemental Table 1 entries for Rice (n=128)",
+        "year": 2021,
+        "published": true,
+        "iso26642Confirmed": false,
+        "qualityEvidence": "Table 1 reports a category mean calculated from food-specific entries in Supplemental Table 1. The target ingredient was not individually tested; category matching is a broad proxy and is low confidence."
+      },
+      "note": "rice category mean; rice flour is a broad grain-form analogue",
+      "matchKind": "CATEGORY_MEAN",
+      "confidence": "LOW"
+    }
+  },
+  "newGiCards": [],
+  "reusedSource": {
+    "nativeObservationPath": "docs/nutrition/gk80-operation149/prepared-route-observations.json",
+    "compositionPath": "docs/nutrition/gk80-operation149/prepared-route-composition.json",
+    "approvalPath": "docs/nutrition/gk80-operation149/approved-six-owner-approval.json",
+    "commit": "96a25d8c9db6fb0a505a70a37a5b357b6a83593a",
+    "independentPdfRecheckSha256": "e87629581a58faca286f4886504bc75f33d6d3771a50fb4e40e2afee2b2b32dd",
+    "visualVerification": [
+      "PDFpage27/printedxx,definition3.2",
+      "PDFpage221/printed183,Table6 G010"
+    ],
+    "definitionDistinction": "Table1 CHOAVLDF4.51 is by difference. Native Table6 TotalAvailableCHO3.66 is used directly. Starch3.08 plus printed total sugars.60 sums3.68; the .02 publication difference is disclosed, not repaired or converted into unknown polyolzero.",
+    "newSourceCredit": false,
+    "newApplicationApproved": false
+  },
+  "quantitySources": {
+    "freshCoriander": {
+      "record": "afcd-F003192",
+      "measureSource": "AUSNUT2023 Food measures",
+      "sheet": "AUSNUT 2023",
+      "row": 7602,
+      "measureId": 47446,
+      "nativeDensityGPerMl": 0.25,
+      "metricTablespoonMl": 15,
+      "grams": 3.75,
+      "derivation": "15ml ×.25g/ml=3.75g, same food keyF003192 leaves and stems; generic food-specific measure, not a measured batch.",
+      "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/ausnut/data-files",
+      "xlsxSha256": "58bee1204610efb72bb831dc7fb65acc23db540b51d056f83c6ac0ce84590475",
+      "metricSource": "https://www.martat.fi/ruoka/ruoanvalmistus/ruoka-aineiden-mitat-ja-painot/"
+    },
+    "lemonJuice": {
+      "record": "fineli-11557",
+      "nativeMeasure": "RKL15g"
+    },
+    "oil": {
+      "record": "fineli-541",
+      "nativeMeasure": "RKL13.5g"
+    }
+  },
+  "noNewMethodRules": true,
+  "noMacroPublication": true
+}

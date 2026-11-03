@@ -1,0 +1,392 @@
+{
+  "repository": "ozirix-dev/Reseptit",
+  "role": "Codex1 / international GI source research",
+  "threadId": "01a19d5b-7732-70f1-8ef8-2c44dc197170",
+  "branch": "codex/gk80-international-sources-20261102",
+  "worktree": "D:\\Projects\\tmp\\reseptit-gk80-international-sources-20261102",
+  "writeScope": "docs/research/gk80-international-20261102 only",
+  "handoffRecipient": "Codex2 via this local pinned research package; no outbound message sent",
+  "publicationAuthorized": false,
+  "prOwner": "No PR created; this session owns the local research branch only",
+  "baselineMain": "061f8170a7bc31244ce787c13e80d3d757f0c859",
+  "observedAtUtc": "2026-11-02T17:55:05.254366+00:00",
+  "freshCalculation": {
+    "recipes": 326,
+    "calculated": 156,
+    "insufficientSourceData": 170
+  },
+  "target": 261,
+  "gap": 105,
+  "modelPreflight": {
+    "configuredModel": "gpt-6.1-sol",
+    "configuredEffort": "high",
+    "activeChatModelIndependentlyVisible": false,
+    "modelSwitched": false
+  },
+  "reportHubRead": [
+    "projects/reseptit.md at remote main (historical106 pointer)",
+    "reports/active/2026-11-01-reseptit-gk80-release-106.md at remote main",
+    "PR91 body and bounded run8 handoff context; historical119/130"
+  ],
+  "sourceHashes": {
+    "AGENTS.md": "c0939f7e34d5755f24371a2114cf6939d48a026c8caaf34fcb82b687724972c4",
+    "docs/rinnakkaiset-codex-ajot.md": "b5336920c641f59acdb6f45a783c2c3b838ef7559711f5002098e4255edc3705",
+    "docs/nutrition/glycemic-index-records.json": "a5ffa3a6e4b4d48a20fee2f31fa50c3aa0ff6355f63dc58bf7b699ade4205c87",
+    "docs/nutrition/food-records.json": "dcc7c77982577d328ae2227fd3d6d0f7993346f98224cf2a980c0daa16da81d3",
+    "docs/nutrition/glycemic-load-pilot-input.json": "3745f1a1b806b6153151116518a27d9143fadb6f23c6243d24d70f21d98f6a37",
+    "docs/nutrition/glycemic-load-recipe-bindings.json": "23b16dd9ccad695645f831a1b9db2b922f5b1015881406d44dde6e5ba24f8d01",
+    "docs/nutrition/glycemic-coverage-run-0-inventory.json": "a879e4467f8c356a7bd2981c415d9974a008d422a15e1447485e0285d19276b0",
+    "site/scripts/glycemic-load-model.ts": "4398915a27a853ddb2f1cdf802a7b63fb3060a09474684b09ed900c599b3f74f",
+    "site/scripts/gk80-candidate-model.ts": "54d37ca95b92a85e05542285b8f7815507cba6f679938a4ec0982e1d898da339",
+    "site/scripts/gk80-food-safety.ts": "80d048873db4931b6c3739d5058ae9ad3c576f4e331ccdc3ddc722f5fdf5814c",
+    "site/scripts/gk80-food-catalog.json": "3a1486ff714cd7d4298b67f4b6201a0de4e9018058d91c47b5f800003e4d0eb9"
+  },
+  "freshReportSha256": "2ef733d1489aa09e905e2fb365e5f690b5d1120c970aceeda82bb9cc55215af4",
+  "freshReportLocation": "D:\\Temp\\gk80-international-20261102\\main-snapshot\\tmp\\nutrition\\glycemic-load-pilot.json",
+  "openPullRequests": [
+    {
+      "headRefName": "codex/gk80-operation149-v2",
+      "headRefOid": "d98d77f56c244833320705b32e789ea72e30e58f",
+      "isDraft": false,
+      "number": 183,
+      "title": "GK80: 16 hyväksytyn GK-version integraatio ja julkaisemattomat jatkoehdotukset",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/183"
+    },
+    {
+      "headRefName": "codex/afcd-polyol-02-field-bindings",
+      "headRefOid": "924a827b515f4d4e27d70389837e22f904d38c1f",
+      "isDraft": true,
+      "number": 182,
+      "title": "AFCD-POLYOL-02: korjaa kolme hiilihydraattikenttäsidosta",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/182"
+    },
+    {
+      "headRefName": "codex/afcd-polyol-01-current",
+      "headRefOid": "88e08d517bb62fa83dd1207912569fe853737596",
+      "isDraft": true,
+      "number": 181,
+      "title": "AFCD-POLYOL-01: yhteinen lähdetulkinta ja reseptiriippuvuuksien auditointi",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/181"
+    },
+    {
+      "headRefName": "codex/operation147-method-audit",
+      "headRefOid": "fd8bd4d31e6d37bc53d669870a00557f5147644a",
+      "isDraft": true,
+      "number": 180,
+      "title": "Operaatio 147: ravintoarvo- ja GK-menetelmän järkeistämisauditointi",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/180"
+    },
+    {
+      "headRefName": "codex/recipavo-product-strategy-new-pr-20261102",
+      "headRefOid": "60a6b5c33cb4bf09e5270ab9011ecfbceda1d0e1",
+      "isDraft": true,
+      "number": 178,
+      "title": "Recipavo: tuote- ja liiketoimintasuunnitelma – uusi Draft-PR",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/178"
+    },
+    {
+      "headRefName": "codex/nutrition-core-vision-20261102",
+      "headRefOid": "9e0bab5209e59533e6b7326a5375680024ea7083",
+      "isDraft": true,
+      "number": 176,
+      "title": "Nutrition Core: yhteinen ravintoainetietovaranto ja vaiheistettu arkkitehtuuri",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/176"
+    },
+    {
+      "headRefName": "codex/source-01-report-20261102",
+      "headRefOid": "19939d95d8c93d6e93d4619d9f2510d043d246dc",
+      "isDraft": true,
+      "number": 174,
+      "title": "SOURCE-01: loppuraportti ja SQLite/D1-kenttäkartoitus vaiheen 1 hyväksyntään",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/174"
+    },
+    {
+      "headRefName": "codex/cloudflare-images-plan-20261102",
+      "headRefOid": "69a2ca2be732e9e4454cd44cf770a601feb8fd9d",
+      "isDraft": true,
+      "number": 172,
+      "title": "Cloudflare-siirtosuunnitelma: recipavo.com, D1, kuvat ja varmuuskopiot",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/172"
+    },
+    {
+      "headRefName": "codex/gk80-operation141",
+      "headRefOid": "87c603bfe5ded3b1fe6af1abdaa5b0442ebc5051",
+      "isDraft": true,
+      "number": 170,
+      "title": "docs(gk80): Operation 141 — 15 numerical proposals, 30 whole-recipe reviews",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/170"
+    },
+    {
+      "headRefName": "codex/gi-source-integrity-01",
+      "headRefOid": "e834bb59035dc20f09e015d57278a08771c13b13",
+      "isDraft": true,
+      "number": 169,
+      "title": "docs(nutrition): coconut GI source integrity and P1 binding decision",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/169"
+    },
+    {
+      "headRefName": "codex/gk80-night2-operation140",
+      "headRefOid": "0eacc8f0ba448347b0f39c2d4e76f887c9942934",
+      "isDraft": true,
+      "number": 168,
+      "title": "fix(nutrition): US-total normalization and Operation 140 findings",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/168"
+    },
+    {
+      "headRefName": "codex/gk80-main131-night",
+      "headRefOid": "b89a891171566cd6c8553349fdd363db6e5a93a9",
+      "isDraft": true,
+      "number": 166,
+      "title": "GK80 MAIN131: published-version regression guard and integration decision report",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/166"
+    },
+    {
+      "headRefName": "codex/gk80-afcd-recovery-02",
+      "headRefOid": "e496a1b5581037d3d910c0119a235cc7045dbbbb",
+      "isDraft": true,
+      "number": 164,
+      "title": "GK80 AFCD-RECOVERY-02: pois kytketty uunikanapastaprototyyppi, tarkkuus-HOLD",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/164"
+    },
+    {
+      "headRefName": "codex/gk80-afcd-recovery-01",
+      "headRefOid": "961cdd9af906d71de8fb1d512bf385cceaecece0",
+      "isDraft": true,
+      "number": 163,
+      "title": "GK80 AFCD-RECOVERY-01: yksi ehdollinen uunikanapastapilotti",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/163"
+    },
+    {
+      "headRefName": "codex/afcd-polyol-impact-01",
+      "headRefOid": "6f09e0a4b4caaac17412f12b1f3dcc79d875f345",
+      "isDraft": true,
+      "number": 161,
+      "title": "AFCD-POLYOL-IMPACT-01: lähdekattavuuden auditointi ja rajattu korjausehdotus",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/161"
+    },
+    {
+      "headRefName": "codex/gk80-run13-review",
+      "headRefOid": "64f2c14ee3b158fbeff6719278ffaa5f436aec4f",
+      "isDraft": true,
+      "number": 160,
+      "title": "GK-80 AJO 13: 22-recipe source review (Draft, below target)",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/160"
+    },
+    {
+      "headRefName": "codex/gk80-run12-review",
+      "headRefOid": "65f1877812bd9c082257a3e3b9066408bf4d99db",
+      "isDraft": true,
+      "number": 159,
+      "title": "GK-80 AJO 12: 22-recipe source review (Draft, below target)",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/159"
+    },
+    {
+      "headRefName": "codex/gk80-run11-review",
+      "headRefOid": "bcf214a8a900308a9b26cea68cf6cbee0f10a358",
+      "isDraft": true,
+      "number": 158,
+      "title": "GK-80 AJO 11: 22-recipe source review (Draft, below target)",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/158"
+    },
+    {
+      "headRefName": "codex/gk80-run10-review",
+      "headRefOid": "5d818a013db0d44e89e38d4293bf162d842a5f67",
+      "isDraft": true,
+      "number": 157,
+      "title": "GK-80 AJO 10: 22-recipe source review (Draft, below target)",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/157"
+    },
+    {
+      "headRefName": "codex/gk80-polyol-scoped-c-method",
+      "headRefOid": "d31c3a7ae157337177733375a9c7d811646187ee",
+      "isDraft": true,
+      "number": 156,
+      "title": "POLYOLI-03: kaksi rajattua GK-integraatiota (130→132), kolme HOLD",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/156"
+    },
+    {
+      "headRefName": "codex/gk80-polyol-source-followup",
+      "headRefOid": "08b69bd974c427c94be3a460c27d007fbcd53f54",
+      "isDraft": true,
+      "number": 155,
+      "title": "POLYOLI-02: maustereseptien lähdesidokset ja nakkikeiton katalogiehdotus",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/155"
+    },
+    {
+      "headRefName": "codex/gk80-polyol-policy-research",
+      "headRefOid": "d6d2d35e78df9e1b459f793a4fc1387fa791af80",
+      "isDraft": true,
+      "number": 154,
+      "title": "POLYOLI-01: polyoli-HOLDien lähdeauditointi ja eristetty vaikutuspilotti",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/154"
+    },
+    {
+      "headRefName": "codex/gk80-run9-release",
+      "headRefOid": "b8ece7ee1e4b80fc26abeb9b94944514875188d7",
+      "isDraft": false,
+      "number": 153,
+      "title": "GK-80 AJO9: 20 uutta arviota 22 reseptin erästä (Draft)",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/153"
+    },
+    {
+      "headRefName": "codex/gk80-run-6",
+      "headRefOid": "767f57795f981028227167d52ee23f7e674494db",
+      "isDraft": true,
+      "number": 148,
+      "title": "GK80 AJO6: 20 tutkittua, 7 uutta arviota ja 8 hyväksyntäaineistoa",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/148"
+    },
+    {
+      "headRefName": "codex/gk80-q09-quality",
+      "headRefOid": "31816bbe1c2401bc1f4c5864e36e87de30f426d0",
+      "isDraft": true,
+      "number": 147,
+      "title": "GK-80 Q09:8 positiivista korjausta ja yhden virheellisen nollan poisto",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/147"
+    },
+    {
+      "headRefName": "codex/gk80-integration-24",
+      "headRefOid": "5735e46f3939bfbc3154a1226e71729fa112522c",
+      "isDraft": true,
+      "number": 146,
+      "title": "GK-80 AJO6:24 reseptin yhteinen julkaisuintegraatio",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/146"
+    },
+    {
+      "headRefName": "codex/gk80-release-candidate-3",
+      "headRefOid": "1b2fbc7997ca15f5e37aa3415b11107ba06b9677",
+      "isDraft": true,
+      "number": 145,
+      "title": "GK-80:12 muuta reseptiä kolmannen julkaisupaketin katselmointiin",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/145"
+    },
+    {
+      "headRefName": "codex/gk80-run-5",
+      "headRefOid": "a1628d4f9ad7c133b24b627ab4fa858ccbace3b8",
+      "isDraft": true,
+      "number": 144,
+      "title": "GK-80 AJO5:26 uutta ehdotusta,48 aiemman auditointi ja261-polku",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/144"
+    },
+    {
+      "headRefName": "codex/gk80-integration-12",
+      "headRefOid": "1f0579b843d2b858800e475436f9d48857c90723",
+      "isDraft": true,
+      "number": 143,
+      "title": "GK-80 AJO 5: integroitu 12 reseptin julkaisuehdokas",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/143"
+    },
+    {
+      "headRefName": "codex/gk80-release-candidate-2",
+      "headRefOid": "d01b7cd050dea271a562242ffac236ac860eac40",
+      "isDraft": true,
+      "number": 142,
+      "title": "GK80 release candidate 2: eight complete modeled recipe versions",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/142"
+    },
+    {
+      "headRefName": "codex/gk80-run-4",
+      "headRefOid": "a332822fd29d054eb4c9510f07b22ee398404990",
+      "isDraft": true,
+      "number": 141,
+      "title": "GK80 AJO 4: 26 new numerical proposals from 50 recipes",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/141"
+    },
+    {
+      "headRefName": "codex/gk80-release-candidate-1",
+      "headRefOid": "283de58e144ae602bf471fe28d45cc9a81a11ede",
+      "isDraft": true,
+      "number": 140,
+      "title": "GK-80: ensimmäinen neljän reseptin julkaisuehdokas",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/140"
+    },
+    {
+      "headRefName": "codex/gk80-run-3-v2",
+      "headRefOid": "c660cc217bdd6df42e5648a48d3d23d28414819c",
+      "isDraft": true,
+      "number": 139,
+      "title": "GK-80 AJO 3 V2: 14 uutta arviota 40 reseptistä",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/139"
+    },
+    {
+      "headRefName": "codex/gk80-chicken-pans-1",
+      "headRefOid": "0eb8747069a57c306f32a612fad79d43e9892d65",
+      "isDraft": true,
+      "number": 138,
+      "title": "GK-80: kaksi ehdollista kanapannun GK-arviota katselmointiin",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/138"
+    },
+    {
+      "headRefName": "codex/gk80-broth-sauce-1",
+      "headRefOid": "2511f00a38e394faa54ee5896f2164c38db77870",
+      "isDraft": true,
+      "number": 137,
+      "title": "GK-80: liemi- ja kastiketuotteet kahdeksalle reseptille",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/137"
+    },
+    {
+      "headRefName": "codex/gk80-run-2",
+      "headRefOid": "61a4563a997a5c5aa603df109cea020f89c10d08",
+      "isDraft": true,
+      "number": 136,
+      "title": "GK-80 AJO 2: 4 ehdollista GK-pistettä 30 reseptistä (PARTIAL)",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/136"
+    },
+    {
+      "headRefName": "codex/gk80-pilot-1",
+      "headRefOid": "bff8c6a1799cf56947413ddfc634e72ea4d2efce",
+      "isDraft": true,
+      "number": 135,
+      "title": "GK-80 pilot 1: 20 reseptin eristetty laskentamalli ja katselmointiehdotukset",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/135"
+    },
+    {
+      "headRefName": "codex/gk-2-1-r3",
+      "headRefOid": "edabab80ec03d26ba85a6c51a07e58936a75298a",
+      "isDraft": true,
+      "number": 134,
+      "title": "GK 2.1 R3: 24 reseptin lähdevarmennus ja 14 kokonaishiilihydraattiarviota",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/134"
+    },
+    {
+      "headRefName": "codex/gk-2-1-r2",
+      "headRefOid": "020b665582f4f1ec54e56ec978581e424adc6ace",
+      "isDraft": true,
+      "number": 133,
+      "title": "GK 2.1 R2: hiilihydraattiseula ja kahdeksan reseptin lähdekorjaukset",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/133"
+    },
+    {
+      "headRefName": "codex/recipe-filter-gk-chips-20261027",
+      "headRefOid": "2ae46f59c9b982c540a10ba8e0a6cd999ace7187",
+      "isDraft": true,
+      "number": 119,
+      "title": "Draft: GK-suodatin, aktiiviset suodatinvalinnat ja kokonaisajan selkeytys",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/119"
+    },
+    {
+      "headRefName": "codex/gk-range-class-scenarios-roadmap-20261027",
+      "headRefOid": "0346e0facbbd62105b424e5cb8fe0c18bcc51731",
+      "isDraft": true,
+      "number": 118,
+      "title": "Suunnitelma: GK-vaihteluvälit, luokkavarmuus ja reseptiskenaariot (P0–P5)",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/118"
+    },
+    {
+      "headRefName": "dependabot/npm_and_yarn/site/vite-8.3.5",
+      "headRefOid": "61d19c6148a16bf8cf390f25ac213df1c6d831e5",
+      "isDraft": false,
+      "number": 116,
+      "title": "Bump vite from 8.3.4 to 8.3.5 in /site",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/116"
+    },
+    {
+      "headRefName": "codex/nutritics-evaluation",
+      "headRefOid": "930c398251515fbb7662e33707d7ed7e72bfc351",
+      "isDraft": true,
+      "number": 100,
+      "title": "Prepare secure Nutritics evaluation",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/100"
+    }
+  ]
+}

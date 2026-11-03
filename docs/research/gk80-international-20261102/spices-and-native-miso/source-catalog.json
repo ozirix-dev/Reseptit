@@ -1,0 +1,367 @@
+{
+  "foods": {
+    "fineli-205": {
+      "id": "fineli-205",
+      "name": "PERUNA, VANHA, KUORITTU",
+      "state": "PERUNA, VANHA, KUORITTU",
+      "basis": "per100g-as-sold",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "nativePath": "docs/nutrition/fineli-release-20-reference.json",
+      "nativeId": "205",
+      "nativeField": "per100g.available_carbohydrate_g_per_100g",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/205",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Native Fineli POLYL retained; AFCD individual polyols UNKNOWN, direct WITHOUT-sugar-alcohols field used.",
+      "per100g": {
+        "carbohydrate": 15.5,
+        "fibre": 1.4,
+        "polyols": 0.0,
+        "protein": 1.88,
+        "fat": 0.114
+      }
+    },
+    "fineli-322": {
+      "id": "fineli-322",
+      "name": "KUKKAKAALI",
+      "state": "KUKKAKAALI",
+      "basis": "per100g-as-sold",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "nativePath": "docs/nutrition/fineli-release-20-reference.json",
+      "nativeId": "322",
+      "nativeField": "per100g.available_carbohydrate_g_per_100g",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/322",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Native Fineli POLYL retained; AFCD individual polyols UNKNOWN, direct WITHOUT-sugar-alcohols field used.",
+      "per100g": {
+        "carbohydrate": 2.35,
+        "fibre": 1.9,
+        "polyols": 0.0,
+        "protein": 2.0,
+        "fat": 0.21
+      }
+    },
+    "fineli-370": {
+      "id": "fineli-370",
+      "name": "HERNE, VIHREÄ, TUORE",
+      "state": "HERNE, VIHREÄ, TUORE",
+      "basis": "per100g-as-sold",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "nativePath": "docs/nutrition/fineli-release-20-reference.json",
+      "nativeId": "370",
+      "nativeField": "per100g.available_carbohydrate_g_per_100g",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/370",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Native Fineli POLYL retained; AFCD individual polyols UNKNOWN, direct WITHOUT-sugar-alcohols field used.",
+      "per100g": {
+        "carbohydrate": 9.495,
+        "fibre": 3.1,
+        "polyols": 0.0,
+        "protein": 5.623,
+        "fat": 0.787
+      }
+    },
+    "fineli-300": {
+      "id": "fineli-300",
+      "name": "PORKKANA",
+      "state": "PORKKANA",
+      "basis": "per100g-as-sold",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "nativePath": "docs/nutrition/fineli-release-20-reference.json",
+      "nativeId": "300",
+      "nativeField": "per100g.available_carbohydrate_g_per_100g",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/300",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Native Fineli POLYL retained; AFCD individual polyols UNKNOWN, direct WITHOUT-sugar-alcohols field used.",
+      "per100g": {
+        "carbohydrate": 5.56,
+        "fibre": 2.4,
+        "polyols": 0.0,
+        "protein": 0.63,
+        "fat": 0.2
+      }
+    },
+    "fineli-541": {
+      "id": "fineli-541",
+      "name": "RUOKAÖLJY KESKIARVO, 87 % RYPSI- 8 % AURINGONKUKKA- JA 5% OLIIVIÖLJY",
+      "state": "RUOKAÖLJY KESKIARVO, 87 % RYPSI- 8 % AURINGONKUKKA- JA 5% OLIIVIÖLJY",
+      "basis": "per100g-as-sold",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "nativePath": "docs/nutrition/fineli-release-20-reference.json",
+      "nativeId": "541",
+      "nativeField": "per100g.available_carbohydrate_g_per_100g",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/541",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Native Fineli POLYL retained; AFCD individual polyols UNKNOWN, direct WITHOUT-sugar-alcohols field used.",
+      "per100g": {
+        "carbohydrate": 0.0,
+        "fibre": 0.0,
+        "polyols": 0.0,
+        "protein": 0.0,
+        "fat": 99.9
+      }
+    },
+    "fineli-500": {
+      "id": "fineli-500",
+      "name": "VOI",
+      "state": "VOI",
+      "basis": "per100g-as-sold",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "nativePath": "docs/nutrition/fineli-release-20-reference.json",
+      "nativeId": "500",
+      "nativeField": "per100g.available_carbohydrate_g_per_100g",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/500",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Native Fineli POLYL retained; AFCD individual polyols UNKNOWN, direct WITHOUT-sugar-alcohols field used.",
+      "per100g": {
+        "carbohydrate": 0.8,
+        "fibre": 0.0,
+        "polyols": 0.0,
+        "protein": 1.19,
+        "fat": 81.3
+      }
+    },
+    "fineli-335": {
+      "id": "fineli-335",
+      "name": "SIPULI, KELTASIPULI",
+      "state": "SIPULI, KELTASIPULI",
+      "basis": "per100g-as-sold",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "nativePath": "docs/nutrition/fineli-release-20-reference.json",
+      "nativeId": "335",
+      "nativeField": "per100g.available_carbohydrate_g_per_100g",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/335",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Native Fineli POLYL retained; AFCD individual polyols UNKNOWN, direct WITHOUT-sugar-alcohols field used.",
+      "per100g": {
+        "carbohydrate": 4.8,
+        "fibre": 1.2,
+        "polyols": 0.0,
+        "protein": 1.25,
+        "fat": 0.1
+      }
+    },
+    "fineli-393": {
+      "id": "fineli-393",
+      "name": "VALKOSIPULI",
+      "state": "VALKOSIPULI",
+      "basis": "per100g-as-sold",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "nativePath": "docs/nutrition/fineli-release-20-reference.json",
+      "nativeId": "393",
+      "nativeField": "per100g.available_carbohydrate_g_per_100g",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/393",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Native Fineli POLYL retained; AFCD individual polyols UNKNOWN, direct WITHOUT-sugar-alcohols field used.",
+      "per100g": {
+        "carbohydrate": 16.3,
+        "fibre": null,
+        "polyols": 0.0,
+        "protein": 7.9,
+        "fat": 0.6
+      }
+    },
+    "fineli-398": {
+      "id": "fineli-398",
+      "name": "TOMAATTIMURSKA",
+      "state": "TOMAATTIMURSKA",
+      "basis": "per100g-as-sold",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "nativePath": "docs/nutrition/fineli-release-20-reference.json",
+      "nativeId": "398",
+      "nativeField": "per100g.available_carbohydrate_g_per_100g",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/398",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Native Fineli POLYL retained; AFCD individual polyols UNKNOWN, direct WITHOUT-sugar-alcohols field used.",
+      "per100g": {
+        "carbohydrate": 3.45,
+        "fibre": 0.4,
+        "polyols": 0.0,
+        "protein": 0.55,
+        "fat": 0.2
+      }
+    },
+    "fineli-30": {
+      "id": "fineli-30",
+      "name": "RUOKASUOLA, JODIOITU",
+      "state": "RUOKASUOLA, JODIOITU",
+      "basis": "per100g-as-sold",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "nativePath": "docs/nutrition/fineli-release-20-reference.json",
+      "nativeId": "30",
+      "nativeField": "per100g.available_carbohydrate_g_per_100g",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/30",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Native Fineli POLYL retained; AFCD individual polyols UNKNOWN, direct WITHOUT-sugar-alcohols field used.",
+      "per100g": {
+        "carbohydrate": 0.0,
+        "fibre": 0.0,
+        "polyols": 0.0,
+        "protein": 0.63,
+        "fat": 0.0
+      }
+    },
+    "fineli-1108": {
+      "id": "fineli-1108",
+      "name": "VAALEA LEIPÄ, VEHNÄSÄMPYLÄ, KEVYTMAITO",
+      "state": "VAALEA LEIPÄ, VEHNÄSÄMPYLÄ, KEVYTMAITO",
+      "basis": "per100g-as-sold",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "nativePath": "docs/nutrition/fineli-release-20-reference.json",
+      "nativeId": "1108",
+      "nativeField": "per100g.available_carbohydrate_g_per_100g",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/1108",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Native Fineli POLYL retained; AFCD individual polyols UNKNOWN, direct WITHOUT-sugar-alcohols field used.",
+      "per100g": {
+        "carbohydrate": 51.997,
+        "fibre": 2.514,
+        "polyols": 0.0,
+        "protein": 8.73,
+        "fat": 6.681
+      }
+    },
+    "afcd-F003327": {
+      "id": "afcd-F003327",
+      "name": "Cumin (cummin) seed, dried, ground",
+      "state": "Cumin (cummin) seed, dried, ground",
+      "basis": "per100g-as-sold",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "nativePath": "docs/nutrition/afcd-release-3-reference.json",
+      "nativeId": "F003327",
+      "nativeField": "available_carbohydrate_without_sugar_alcohols_g_per_100g",
+      "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+      "polyolsSourceVerified": false,
+      "polyolsEvidence": "Native Fineli POLYL retained; AFCD individual polyols UNKNOWN, direct WITHOUT-sugar-alcohols field used.",
+      "per100g": {
+        "carbohydrate": 33.7,
+        "fibre": 10.5,
+        "polyols": null,
+        "protein": 17.8,
+        "fat": 22.3
+      }
+    },
+    "afcd-F003190": {
+      "id": "afcd-F003190",
+      "name": "Coriander seed, dried, ground",
+      "state": "Coriander seed, dried, ground",
+      "basis": "per100g-as-sold",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "nativePath": "docs/nutrition/afcd-release-3-reference.json",
+      "nativeId": "F003190",
+      "nativeField": "available_carbohydrate_without_sugar_alcohols_g_per_100g",
+      "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+      "polyolsSourceVerified": false,
+      "polyolsEvidence": "Native Fineli POLYL retained; AFCD individual polyols UNKNOWN, direct WITHOUT-sugar-alcohols field used.",
+      "per100g": {
+        "carbohydrate": 8.4,
+        "fibre": 41.9,
+        "polyols": null,
+        "protein": 12.4,
+        "fat": 17.8
+      }
+    },
+    "afcd-F006316": {
+      "id": "afcd-F006316",
+      "name": "Paprika, dry powder",
+      "state": "Paprika, dry powder",
+      "basis": "per100g-as-sold",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "nativePath": "docs/nutrition/afcd-release-3-reference.json",
+      "nativeId": "F006316",
+      "nativeField": "available_carbohydrate_without_sugar_alcohols_g_per_100g",
+      "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+      "polyolsSourceVerified": false,
+      "polyolsEvidence": "Native Fineli POLYL retained; AFCD individual polyols UNKNOWN, direct WITHOUT-sugar-alcohols field used.",
+      "per100g": {
+        "carbohydrate": 19.1,
+        "fibre": 34.9,
+        "polyols": null,
+        "protein": 14.1,
+        "fat": 12.9
+      }
+    },
+    "afcd-F009335": {
+      "id": "afcd-F009335",
+      "name": "Turmeric, dried, ground",
+      "state": "Turmeric, dried, ground",
+      "basis": "per100g-as-sold",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "nativePath": "docs/nutrition/afcd-release-3-reference.json",
+      "nativeId": "F009335",
+      "nativeField": "available_carbohydrate_without_sugar_alcohols_g_per_100g",
+      "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+      "polyolsSourceVerified": false,
+      "polyolsEvidence": "Native Fineli POLYL retained; AFCD individual polyols UNKNOWN, direct WITHOUT-sugar-alcohols field used.",
+      "per100g": {
+        "carbohydrate": 44.4,
+        "fibre": 22.7,
+        "polyols": null,
+        "protein": 9.7,
+        "fat": 3.2
+      }
+    },
+    "afcd-F002893": {
+      "id": "afcd-F002893",
+      "name": "Chilli (chili), dried, ground",
+      "state": "Chilli (chili), dried, ground",
+      "basis": "per100g-as-sold",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "nativePath": "docs/nutrition/afcd-release-3-reference.json",
+      "nativeId": "F002893",
+      "nativeField": "available_carbohydrate_without_sugar_alcohols_g_per_100g",
+      "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+      "polyolsSourceVerified": false,
+      "polyolsEvidence": "Native Fineli POLYL retained; AFCD individual polyols UNKNOWN, direct WITHOUT-sugar-alcohols field used.",
+      "per100g": {
+        "carbohydrate": 12.9,
+        "fibre": 34.2,
+        "polyols": null,
+        "protein": 12.3,
+        "fat": 14.3
+      }
+    },
+    "afcd-F003192": {
+      "id": "afcd-F003192",
+      "name": "Coriander, fresh, raw",
+      "state": "Coriander, fresh, raw",
+      "basis": "per100g-as-sold",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "nativePath": "docs/nutrition/afcd-release-3-reference.json",
+      "nativeId": "F003192",
+      "nativeField": "available_carbohydrate_without_sugar_alcohols_g_per_100g",
+      "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+      "polyolsSourceVerified": false,
+      "polyolsEvidence": "Native Fineli POLYL retained; AFCD individual polyols UNKNOWN, direct WITHOUT-sugar-alcohols field used.",
+      "per100g": {
+        "carbohydrate": 1.9,
+        "fibre": 3.2,
+        "polyols": null,
+        "protein": 3.1,
+        "fat": 0.6
+      }
+    }
+  },
+  "existingGiIds": [
+    "potato-mashed-preparation-analogue-gi-73",
+    "vegetables-category-mean-gi-66",
+    "bread-category-mean-gi-64"
+  ],
+  "newGiRecords": [],
+  "licences": [
+    "THL Fineli Release20 CC BY4.0",
+    "FSANZ AFCD Release3 CC BY-SA3.0 Australia"
+  ],
+  "matchLimits": [
+    "Starting ingredient amounts retained; no invented boiling-water leaching, cooking-yield, fat or protein GI correction.",
+    "Bread64 is a broad category mean for the300g existing soft wheat rolls, not raw wheat flour GI.",
+    "Mashed-potato73 is an existing preparation analogue; coarsely mashed mixed curry is unmeasured. Table SEM is not a recipe interval.",
+    "Paprika powder is a composition proxy for smoked paprika; smoke/process differences unquantified."
+  ],
+  "quantityChoices": {
+    "carrot": "Fineli300 native KPL_M65g, not old macro60g",
+    "onion": "Fineli335 native KPL_M55g",
+    "garlic": "Fineli393 native KPL_M3.5g*2=7g; old macro AFCD10.2gCHO and3g/clove not inherited",
+    "oil": "Fineli541 native RKL13.5g*2=27g",
+    "salt": "Fineli30 native TL6.5g"
+  }
+}

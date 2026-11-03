@@ -1,0 +1,24 @@
+{
+  "recipeId": "siemengranola-jogurtilla",
+  "mechanicalModelOnly": true,
+  "sourceEligible": false,
+  "publicationApproved": false,
+  "recipeChangedOnDisk": false,
+  "before": {
+    "status": "INSUFFICIENT SOURCE DATA",
+    "omitted": 2.06375
+  },
+  "after": {
+    "status": "CALCULATED",
+    "unroundedGk": 2.474125,
+    "gk": 2.47,
+    "omitted": 1.8850000000000002,
+    "confidence": "LOW"
+  },
+  "spiceCarbohydrate": 0.17875,
+  "spiceImputedGk": 0.089375,
+  "allAvailableCarbohydrate": 8.08875,
+  "cinnamonMassEvidenceVerified": false,
+  "allEightSourceIngredientRowsRepresented": true,
+  "unknownIndividualPolyolsForcedToZero": false
+}

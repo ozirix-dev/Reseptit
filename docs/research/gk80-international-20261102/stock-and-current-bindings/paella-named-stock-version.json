@@ -1,0 +1,182 @@
+{
+  "recipeId": "paella-valenciana",
+  "sourcePath": "reseptit/paaruoat/paella-valenciana.md",
+  "sourceLfSha256": "49089d94833037456fa7f21b7e9b258a531c731db6f0344b2a789add6b96b3dd",
+  "servings": 4,
+  "sourceIngredients": [
+    {
+      "amount": 700,
+      "unit": "g",
+      "item": "nahatonta ja luutonta broilerin reisilihaa"
+    },
+    {
+      "amount": 300,
+      "unit": "g",
+      "item": "puuroriisiä, kuivapaino"
+    },
+    {
+      "amount": 150,
+      "unit": "g",
+      "item": "tuoreita vihreitä papuja",
+      "note": "paloiteltuna"
+    },
+    {
+      "amount": 150,
+      "unit": "g",
+      "item": "tomaattimurskaa"
+    },
+    {
+      "amount": 1,
+      "unit": "l",
+      "item": "kanalientä"
+    },
+    {
+      "amount": 1,
+      "unit": "tl",
+      "item": "savupaprikajauhetta"
+    },
+    {
+      "amount": 0.25,
+      "unit": "tl",
+      "item": "sahramia"
+    },
+    {
+      "amount": 3,
+      "unit": "rkl",
+      "item": "oliiviöljyä"
+    },
+    {
+      "amount": 1,
+      "unit": "tl",
+      "item": "suolaa"
+    },
+    {
+      "amount": 1,
+      "unit": "kpl",
+      "item": "rosmariinin oksa",
+      "note": "valinnainen"
+    }
+  ],
+  "originalIngredientCount": 10,
+  "publicationApproved": false,
+  "sourceApplicationApproved": false,
+  "newPublishedValue": false,
+  "macroPublicationAuthorized": false,
+  "policyChangeApplied": false,
+  "variant": "Chicken-only paella permitted by existing note; no optional rosemary sprig. Exactly1L of named Knorr F73781 stock at manufacturer8g/L. Paprika and saffron use sourced household-mass proxies.",
+  "ingredients": [
+    {
+      "name": "nahatonta ja luutonta broilerin reisilihaa",
+      "grams": 700,
+      "fineliRecordId": "fineli-30792",
+      "giRecordId": null,
+      "massEvidence": "Recipe-listed edible grams; whole retained input, no unverified yield deduction."
+    },
+    {
+      "name": "puuroriisiä, kuivapaino",
+      "grams": 300,
+      "fineliRecordId": "fineli-156",
+      "giRecordId": "rice-category-mean-gi-67",
+      "massEvidence": "Recipe-listed edible grams; whole retained input, no unverified yield deduction.",
+      "foodKey": "rice-category-mean",
+      "preparationKey": "category-mean",
+      "giMatchEvidence": "Retained existing LOW category method for this cooked food family. Not a measured preparation-specific ingredient or meal GI."
+    },
+    {
+      "name": "tuoreita vihreitä papuja",
+      "grams": 150,
+      "fineliRecordId": "fineli-372",
+      "giRecordId": "vegetables-category-mean-gi-66",
+      "massEvidence": "Recipe-listed edible grams; whole retained input, no unverified yield deduction.",
+      "foodKey": "vegetable",
+      "preparationKey": "vegetable-category",
+      "giMatchEvidence": "Retained existing LOW category method for this cooked food family. Not a measured preparation-specific ingredient or meal GI."
+    },
+    {
+      "name": "tomaattimurskaa",
+      "grams": 150,
+      "fineliRecordId": "fineli-398",
+      "giRecordId": "vegetables-category-mean-gi-66",
+      "massEvidence": "Recipe-listed edible grams; whole retained input, no unverified yield deduction.",
+      "foodKey": "vegetable",
+      "preparationKey": "vegetable-category",
+      "giMatchEvidence": "Retained existing LOW category method for this cooked food family. Not a measured preparation-specific ingredient or meal GI."
+    },
+    {
+      "name": "kanalientä",
+      "grams": null,
+      "recipeQuantity": {
+        "amount": 1,
+        "unit": "l",
+        "massGrams": null
+      },
+      "fineliRecordId": null,
+      "giRecordId": null,
+      "excludedReason": "Named prepared stock: positive source-model CHO upper counted in editorial omission budget, not zero.",
+      "availableCarbohydrateUpperBoundPerServingG": 0.82,
+      "upperBoundEvidence": "source-catalog.stock:8g dry powder per manufacturer1L yield *41g EU carbohydrate/100g /4servings =0.82g. No liquid mass/density inferred. Source-model upper only; not a clinical batch maximum.",
+      "compositionSourceRef": "source-catalog.json#/stock",
+      "massEvidence": "Original1L prepared stock retained; source dry dose8g is not relabelled as8g liquid."
+    },
+    {
+      "name": "savupaprikajauhetta",
+      "grams": 2.65,
+      "fineliRecordId": null,
+      "giRecordId": null,
+      "excludedReason": "Whole smoked-paprika mass ceiling used; unknown GI and precise CHO are not zero.",
+      "availableCarbohydrateUpperBoundPerServingG": 0.6625,
+      "upperBoundEvidence": "source-catalog.quantities.paprika:1metric tsp5ml * generic dry-paprika density0.53g/ml =2.65g nominal batch mass. CHO cannot exceed entire mass;2.65g/4=.6625g. Density is a household proxy, not measured batch or product maximum.",
+      "massEvidence": "One original teaspoon, completely consumed. Food-specific measure proxy, not universal spoon grams."
+    },
+    {
+      "name": "sahramia",
+      "grams": 0.175,
+      "fineliRecordId": null,
+      "giRecordId": null,
+      "excludedReason": "Whole saffron mass ceiling used; unknown GI is not zero.",
+      "availableCarbohydrateUpperBoundPerServingG": 0.04375,
+      "upperBoundEvidence": "source-catalog.quantities.saffron:0.25*USDA0.7g/tsp=.175g batch. Entire mass/4=.04375g CHO ceiling. USDA carbohydrate composition not used.",
+      "massEvidence": "Original quarter teaspoon; ingredient-specific household-measure proxy."
+    },
+    {
+      "name": "oliiviöljyä",
+      "grams": 40.5,
+      "fineliRecordId": "fineli-536",
+      "giRecordId": null,
+      "massEvidence": "Fineli536 olive oil RKL13.5g;3rkl=40.5g. Source is olive oil, not sunflower oil540."
+    },
+    {
+      "name": "suolaa",
+      "grams": 6.5,
+      "fineliRecordId": "fineli-30",
+      "giRecordId": null,
+      "massEvidence": "Fineli30 iodized salt TL6.5g."
+    },
+    {
+      "name": "rosmariinin oksa",
+      "grams": 0,
+      "recipeQuantity": {
+        "amount": 1,
+        "unit": "kpl",
+        "massGrams": 0
+      },
+      "fineliRecordId": null,
+      "giRecordId": null,
+      "excludedReason": "Optional rosemary sprig intentionally not used in this named version.",
+      "estimatedAvailableCarbohydratePerServingG": 0,
+      "negligibleAssumption": "Source ingredient note says optional; instructions say add if desired. Selected0g, not an assertion that an unknown infusion extracts zero CHO."
+    }
+  ],
+  "expected": {
+    "unroundedGk": "40.01949",
+    "omittedChoUpperG": "1.52625",
+    "knownIncludedChoG": "59.7765"
+  },
+  "researchStatus": "CONDITIONAL_NAMED_STOCK_AND_MASS_PROXY_APPLICATION_REVIEW_PENDING",
+  "approvalStillRequired": [
+    "Exact Knorr product, preparation strength and source-model label upper admissibility. No soup-category GI or GI50 substitution.",
+    "Smoked-paprika measure proxy and saffron household measure: conservative100%-mass CHO ceiling within their assumed masses, not a measured maximum spoon mass.",
+    "Full10-row version and chicken-only/no-rosemary choices; old merged seasoning row and invented extra rabbit are not retained.",
+    "Rice67 and vegetable66 remain broad LOW category proxies. Numeric model success is not scientific approval."
+  ]
+}

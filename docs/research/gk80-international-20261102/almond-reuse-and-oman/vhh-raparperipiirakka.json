@@ -1,0 +1,185 @@
+{
+  "recipeId": "vhh-raparperipiirakka",
+  "sourcePath": "reseptit/jalkiruoat/vhh-raparperipiirakka.md",
+  "sourceIngredients": [
+    {
+      "amount": 150,
+      "unit": "g",
+      "item": "mantelijauhoa"
+    },
+    {
+      "amount": 60,
+      "unit": "g",
+      "item": "voita sulatettuna"
+    },
+    {
+      "amount": 1,
+      "unit": "kpl",
+      "item": "kananmuna pohjaan"
+    },
+    {
+      "amount": 250,
+      "unit": "g",
+      "item": "raparperia"
+    },
+    {
+      "amount": 150,
+      "unit": "g",
+      "item": "maitorahkaa"
+    },
+    {
+      "amount": 2,
+      "unit": "kpl",
+      "item": "kananmunaa täytteeseen"
+    },
+    {
+      "amount": 70,
+      "unit": "g",
+      "item": "erytritolia"
+    },
+    {
+      "amount": 1,
+      "unit": "tl",
+      "item": "vaniljauutetta"
+    },
+    {
+      "amount": 1,
+      "unit": "rkl",
+      "item": "psylliumia"
+    }
+  ],
+  "servings": 8,
+  "ingredients": [
+    {
+      "name": "mantelijauhoa",
+      "grams": 150,
+      "fineliRecordId": "MEXT2023-05001",
+      "giRecordId": null,
+      "massEvidence": "New source-resolved version: weigh150g dry unroasted whole ediblealmonds,grind without peeling/defatting/sieving,retain allmeal. Not a generic commercial almondflour composition substitution.",
+      "recipeQuantity": {
+        "amount": 150,
+        "unit": "g",
+        "massGrams": 150
+      }
+    },
+    {
+      "name": "voita sulatettuna",
+      "grams": 60,
+      "fineliRecordId": "fineli-500",
+      "giRecordId": null,
+      "massEvidence": "Current gram amount or source-specific measure; see source-catalog.",
+      "recipeQuantity": {
+        "amount": 60,
+        "unit": "g",
+        "massGrams": 60
+      }
+    },
+    {
+      "name": "kananmuna pohjaan",
+      "grams": 55,
+      "fineliRecordId": "fineli-858",
+      "giRecordId": null,
+      "massEvidence": "Current gram amount or source-specific measure; see source-catalog.",
+      "recipeQuantity": {
+        "amount": 1,
+        "unit": "kpl",
+        "massGrams": 55
+      }
+    },
+    {
+      "name": "raparperia",
+      "grams": 250,
+      "fineliRecordId": "fineli-338",
+      "giRecordId": "vegetables-category-mean-gi-66",
+      "massEvidence": "Current gram amount or source-specific measure; see source-catalog.",
+      "recipeQuantity": {
+        "amount": 250,
+        "unit": "g",
+        "massGrams": 250
+      },
+      "foodKey": "vegetable",
+      "preparationKey": "vegetable-category",
+      "giMatchEvidence": "Existing broad category mean,LOW,new exactrecipeapplicationNOTAPPROVED. Native source foodclass and full preparation disclosed; not measured thispieGI."
+    },
+    {
+      "name": "maitorahkaa",
+      "grams": 150,
+      "fineliRecordId": "fineli-622",
+      "giRecordId": "dairy-category-mean-gi-35",
+      "massEvidence": "Current gram amount or source-specific measure; see source-catalog.",
+      "recipeQuantity": {
+        "amount": 150,
+        "unit": "g",
+        "massGrams": 150
+      },
+      "foodKey": "dairy",
+      "preparationKey": "unflavoured-dairy",
+      "giMatchEvidence": "Existing broad category mean,LOW,new exactrecipeapplicationNOTAPPROVED. Native source foodclass and full preparation disclosed; not measured thispieGI."
+    },
+    {
+      "name": "kananmunaa täytteeseen",
+      "grams": 110,
+      "fineliRecordId": "fineli-858",
+      "giRecordId": null,
+      "massEvidence": "Current gram amount or source-specific measure; see source-catalog.",
+      "recipeQuantity": {
+        "amount": 2,
+        "unit": "kpl",
+        "massGrams": 110
+      }
+    },
+    {
+      "name": "erytritolia",
+      "grams": 70,
+      "fineliRecordId": "foodin-erythritol-200g-label-2026-10-24",
+      "giRecordId": null,
+      "massEvidence": "Current gram amount or source-specific measure; see source-catalog.",
+      "recipeQuantity": {
+        "amount": 70,
+        "unit": "g",
+        "massGrams": 70
+      }
+    },
+    {
+      "name": "vaniljauutetta",
+      "grams": 5,
+      "fineliRecordId": null,
+      "giRecordId": null,
+      "massEvidence": "New exact weighed5g vanillaextract replacing unresolved1tl quantity;not a density conversion.",
+      "recipeQuantity": {
+        "amount": 1,
+        "unit": "tl",
+        "massGrams": 5
+      },
+      "availableCarbohydrateUpperBoundPerServingG": 0.625,
+      "upperBoundEvidence": "Entire weighed5g/8servings is a physical mass ceiling for availableCHO;not actual extractcomposition or measuredavailableCHO.",
+      "excludedReason": "Source-defined exactversion mass ceiling,positive omission;notzero."
+    },
+    {
+      "name": "psylliumia",
+      "grams": 7.5,
+      "fineliRecordId": "afcd-F007502",
+      "giRecordId": null,
+      "massEvidence": "Current gram amount or source-specific measure; see source-catalog.",
+      "recipeQuantity": {
+        "amount": 1,
+        "unit": "rkl",
+        "massGrams": 7.5
+      }
+    }
+  ],
+  "expected": {
+    "unroundedGk": "1.331250",
+    "omittedChoIncludingCeilingsG": "1.731250",
+    "omittedPhysicalCeilingG": "0.625",
+    "almondChoG": ".975",
+    "almondMarginTo1g": ".025"
+  },
+  "sourceApplicationApproved": false,
+  "contentVersionApproved": false,
+  "publicationApproved": false,
+  "newPublishedValue": false,
+  "macroPublicationAuthorized": false,
+  "newRulesApplied": false,
+  "newSourceCredit": false
+}

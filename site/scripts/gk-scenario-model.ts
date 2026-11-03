@@ -1,3 +1,4 @@
+import {recipeTextForApprovedSnapshot} from "./approved-recipe-note-edits";
 /** Small adapter over the reviewed GK149 arithmetic; no publication path. */
 import {readFileSync} from 'node:fs';
 import path from 'node:path';
@@ -96,7 +97,7 @@ export function loadScenarioPilot(root:string):{pack:PilotPack;base:BaseContext}
  verifyPack(pack);
  for(const [file,hash] of Object.entries(pack.preserveFilesLfSha256)){
   if(path.isAbsolute(file)||file.split(/[\\/]/).includes('..'))fail('INVALID_BASELINE_PATH');
-  if(textHash(readFileSync(path.join(root,file),'utf8'))!==hash)fail('BASELINE_CHANGED: '+file);
+  if(textHash(recipeTextForApprovedSnapshot(file,readFileSync(path.join(root,file),'utf8').replaceAll('\r\n','\n')))!==hash)fail('BASELINE_CHANGED: '+file);
  }
  // Verification only for the source pack; evaluate exactly one recipe, never 326 recipes.
  const {cases,comps,gis}=loadPilot(root),c=cases.find(c=>c.recipeId===pack.recipeId);

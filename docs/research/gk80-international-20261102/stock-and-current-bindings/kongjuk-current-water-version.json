@@ -1,0 +1,123 @@
+{
+  "recipeId": "korealainen-kongjuk-soijapapu-riisipuuro",
+  "sourcePath": "reseptit/aamupalat/korealainen-kongjuk-soijapapu-riisipuuro.md",
+  "sourceLfSha256": "6aca70cdb27f83a51c2d759e58bdcd446e6a1f9f5c414a71494fb44ec9454f31",
+  "servings": 2,
+  "sourceIngredients": [
+    {
+      "amount": 150,
+      "unit": "g",
+      "item": "soijapapu"
+    },
+    {
+      "amount": 100,
+      "unit": "g",
+      "item": "riisi"
+    },
+    {
+      "amount": 10,
+      "unit": "g",
+      "item": "seesaminsiemen"
+    },
+    {
+      "amount": 1,
+      "unit": "tl",
+      "item": "suola"
+    },
+    {
+      "amount": 700,
+      "unit": "ml",
+      "item": "vettä"
+    },
+    {
+      "amount": null,
+      "unit": "",
+      "item": "suolaa maun mukaan"
+    }
+  ],
+  "originalIngredientCount": 6,
+  "publicationApproved": false,
+  "sourceApplicationApproved": false,
+  "newPublishedValue": false,
+  "macroPublicationAuthorized": false,
+  "policyChangeApplied": false,
+  "variant": "Current water-only recipe: dry soybeans150g soaked overnight, drained, boiled with100g dry long-grain rice and partly blended;10g whole unhulled sesame garnish. Salt as listed. No broth or extra template meat.",
+  "ingredients": [
+    {
+      "name": "soijapapu",
+      "grams": 150,
+      "fineliRecordId": "fineli-391",
+      "giRecordId": "legumes-category-mean-gi-34",
+      "massEvidence": "Current150g soybean; instructions specify dry beans soaked overnight. Starting dry CHO retained conservatively; no quantified soaking-leach deduction.",
+      "foodKey": "legume",
+      "preparationKey": "legume-category",
+      "giMatchEvidence": "Retained existing LOW category method for this cooked food family. Not a measured preparation-specific ingredient or meal GI."
+    },
+    {
+      "name": "riisi",
+      "grams": 100,
+      "fineliRecordId": "fineli-11521",
+      "giRecordId": "rice-category-mean-gi-67",
+      "massEvidence": "Current100g dry rice; retain earlier long-grain Fineli11521 composition choice explicitly, not cooked-rice mass.",
+      "foodKey": "rice-category-mean",
+      "preparationKey": "category-mean",
+      "giMatchEvidence": "Retained existing LOW category method for this cooked food family. Not a measured preparation-specific ingredient or meal GI."
+    },
+    {
+      "name": "seesaminsiemen",
+      "grams": 10,
+      "fineliRecordId": "fineli-385",
+      "giRecordId": null,
+      "massEvidence": "Current10g sesame, not legacy100g. Retain earlier whole unhulled Fineli385 identity, not a lower-CHO alternative."
+    },
+    {
+      "name": "suola",
+      "grams": 6.5,
+      "fineliRecordId": "fineli-30",
+      "giRecordId": null,
+      "massEvidence": "Current1tl salt; Fineli30 TL6.5g."
+    },
+    {
+      "name": "vettä",
+      "grams": 700,
+      "fineliRecordId": "fineli-922",
+      "giRecordId": null,
+      "massEvidence": "Current700ml plain water; Fineli922 food-specific DL100g gives700g. Fineli903 is beer and is not used."
+    },
+    {
+      "name": "suolaa maun mukaan",
+      "grams": null,
+      "fineliRecordId": null,
+      "giRecordId": null,
+      "excludedReason": "Plain salt, not a seasoning blend; source-documented zero available CHO.",
+      "estimatedAvailableCarbohydratePerServingG": 0,
+      "negligibleAssumption": "Fineli30 availableCHO0. Unspecified extra salt mass does not affect GK; sodium/macros stay unpublished.",
+      "compositionSourceRef": "source-catalog.json#/foods/fineli-30"
+    }
+  ],
+  "expected": {
+    "unroundedGk": "29.0915",
+    "omittedChoG": ".045",
+    "availableChoG": "47.27"
+  },
+  "researchStatus": "SOURCE_DOCUMENTED_COMPLETE_CURRENT_RECIPE_CANDIDATE_APPLICATION_REVIEW_PENDING",
+  "legacyCorrections": {
+    "sesameG": [
+      100,
+      10
+    ],
+    "liquid": [
+      "700ml water or mild broth, unsupported",
+      "700ml water explicitly in current recipe"
+    ],
+    "salt": [
+      "positive unverified spice estimates",
+      ".0 source carbohydrate, quantities not silently invented for extra salt"
+    ]
+  },
+  "approvalStillRequired": [
+    "New complete six-row version with explicit dry ingredient forms and water-only current recipe.",
+    "Existing legume34/rice67 category methods remain LOW; partial blending and soaking losses are not directly measured GI or cooked-composition matches.",
+    "No extra unlisted meat or broth is included from generic template instructions. No recipe/macro publication authorized."
+  ]
+}

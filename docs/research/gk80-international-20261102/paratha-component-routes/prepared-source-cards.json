@@ -1,0 +1,76 @@
+{
+  "cards": {
+    "potato-paratha-control78.8": {
+      "gi": 78.8,
+      "foodClass": "POTATO_STUFFED_PANBREAD",
+      "allowedScope": "PREPARED_UNIT",
+      "title": "Thakurdesai2024 potato-paratha control withoutFenuflakes",
+      "url": "https://doi.org/10.12944/CRNFSJ.12.1.05",
+      "primaryUrl": "https://www.foodandnutritionjournal.org/volume12number1/glycemic-index-lowering-effects-of-defatted-fenugreek-seed-flakes-fenuflakestm-on-some-indian-food-preparations-a-randomized-controlled-clinical-study/",
+      "locator": "Tables1/3/4;controlGI78.8±3.6SEM,n15,50gavailableCHO,threeglucosereferences,120min",
+      "sem": 3.6,
+      "n": 15,
+      "scale": "GLUCOSE_100",
+      "quality": "Humanstudy,authorsreportISO;SUPPLEMENTARYnamedapplicationpendingreview",
+      "preparation": "Stuffedwheatdoughwithboiled/cooledmashedpotato,seasoning;pan-cooked;sourceusesgroundnutoil.",
+      "limits": [
+        "Flourrefinement,exactdough/filling/oilratiosnotreported.",
+        "ControlTDF15.3gper50.1gavailableCHO signalsa differentmatrixfromrefinedFineli110;do notclaimclosefibre-match.",
+        "Fatandcooking/coolingdifferencesunquantified;SEMnotrecipeinterval.",
+        "Industryaffiliation/disclosedFenuflakesintervention;onlyuntreatedcontrolused."
+      ],
+      "newSourceCredit": false,
+      "priorCardPath": "docs/research/gk80-international-20261102/source-findings.json"
+    },
+    "kawan-frozen-paratha53": {
+      "gi": 53,
+      "foodClass": "UNFILLED_LAYERED_OIL_PANBREAD",
+      "allowedScope": "PREPARED_UNIT",
+      "title": "Atkinson2021 SupplementalTable1 row2084,Kawan Food ManufacturingMalaysia,frozenparatha",
+      "url": "https://doi.org/10.1093/ajcn/nqab233",
+      "accessUrl": "https://nutritotal.com.br/pro/wp-content/uploads/sites/3/2021/09/Tabela1_IG.pdf",
+      "locator": "PDFpage138,row2084,visuallychecked",
+      "pdfSha256": "e930c4a090697abd4f7331a64837b524cf4701513cbb9865a739f4f9fb131061",
+      "sem": 5,
+      "n": 10,
+      "scale": "GLUCOSE_100",
+      "testYear": 2019,
+      "testAvailableChoG": 50,
+      "testMassG": 125.3,
+      "reference": "glucose2h,standardtimepoints,capillaryplasma,enzymatic,UO5",
+      "quality": "PublishedreviewTier1;individualtestisunpublishedSydneyGIServiceobservation,notanindependentpublishedtrial",
+      "preparation": "Namedfrozenparatha,reheatedindrypan1.5minuntilbrown",
+      "limits": [
+        "Notfreshkneadedscallionbread;historicalformulationandfatrationotgiven.",
+        "NotstuffedpotatoparathaGI;do notapplytostuffedbread.",
+        "NotUSDAfrozenwholewheatparathacompositionorrawflourGI."
+      ],
+      "newSourceCredit": true
+    },
+    "omani-unfilled-paratha31.8": {
+      "gi": 31.8,
+      "foodClass": "UNFILLED_LAYERED_OIL_PANBREAD",
+      "allowedScope": "PREPARED_UNIT",
+      "title": "Ali2010 GlycemicIndexandChemicalCompositionofTraditionalOmaniBreads",
+      "url": "https://doi.org/10.1080/10942910802472852",
+      "primaryIndexedFullText": "https://www.tandfonline.com/doi/full/10.1080/10942910802472852",
+      "locator": "GlycemicIndexTesting:ninenormalhealthyvolunteers;Results:paratha31.8;Table1fat13.8g/100g",
+      "n": 9,
+      "scale": "GLUCOSE_100",
+      "reportedPlusMinusRoundedAbstract": 13,
+      "uncertaintyType": "NOT_PROMOTED_TO_SEM_OR_RECIPE_INTERVAL",
+      "reference": "50gavailableCHO,testfoodsrandomorder,glucose,250mlwater,0/15/30/45/60/90/120min",
+      "quality": "SUPPLEMENTARY;primaryindexedfulltextmethodsavailable,originalPDF403;independentISOconfirmationabsent",
+      "preparation": "Fat-containinglocalparatha,wheatflour,traditionalpanbread;marketorMinistryofHealthrecipes;exactamountsnotgiven.",
+      "limits": [
+        "Smalln9,variability,unknownexactrecipeandreference-repetitioncount.",
+        "Freshscallionbreadandfattyparathaareanalogues,notidentical.",
+        "Endpointnotastatisticalbound.",
+        "Notforpotato-stuffedparathaorrawflour."
+      ],
+      "newSourceCredit": true
+    }
+  },
+  "methodApplication": "Latestuserauthorizedselectingandusing3researchmethods;scopedpreparedunitsonly,noactiveGIregistrychange.",
+  "policyChangesInProduction": false
+}

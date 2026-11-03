@@ -1,0 +1,51 @@
+# GK80 · hyväksytyt syötteet ja ehdokkaat ilman päällekkäisyyksiä
+
+## PR 193 julkaistu
+
+Main be9dd28013ad7b777ad5fb91cdf0c75d0b037ad3. [Julkaisuajo 41536324200](https://github.com/ozirix-dev/Reseptit/actions/runs/41536324200) onnistui. Tarkistin julkisen sivun reseptitunnisteet välimuistin ohittavalla pyynnöllä. **191/326 eli 58,6 %**, tavoitevaje **70**. Kaikki neljä ovat numeerisia: paella-valenciana, kana-tagine-sitruunalla, hernekeitto-savupotkalla ja uunimakkara-sipulipedilla.
+
+Panang puuttuu edelleen julkisista numeerisista riveistä. Aiemman 33 tunnisteen unionista jää tämän erän jälkeen **29**. Yksi on hyväksytty Panang, 18 muita A-tutkimusversioita ja 10 B-skenaarioita. Kaikkien 29:n mahdollinen julkaisu tuottaisi edelleen 220/326. [Julkinen GK-kooste](https://ozirix-dev.github.io/Reseptit/glykeeminen-kuorma/)
+
+## Julkaisuerät 3.11.2026
+
+[PR 193](https://github.com/ozirix-dev/Reseptit/pull/193), pää cd1a8ef212ae30ba3dc9587da61148a20ae350a7, kokoaa neljä hyväksyttyä laskelmaa. Paella, kanatagine, hernekeitto ja uunimakkara ovat tässä integraatioerässä. PR on avoin Draft. Saman pään [build ja kattavuustarkistus](https://github.com/ozirix-dev/Reseptit/actions/runs/41535280436/job/125585434790) läpäisivät. Tuoreessa julkisen koosteen tarkistuksessa kaikki neljä tunnistetta olivat yhä vailla numeerista arvoa. PR:n esikatselun 191/326 on ehdollinen. Main on edelleen 1276116d ja viimeksi julkisesta koosteesta varmennettu luku 187/326.
+
+Panang kuuluu Codex2:n luovutuskuitin c82b8dd mukaan eri, myöhempään julkaisuomistajan erään. Syötehashi ja reseptien lähdetiivisteet on jo tarkistettu. Neljän PR 193 -reseptin ja Panangin mahdollinen julkaisu nostaisi luvun 192/326:een ja jättäisi 69 arvoa tavoitteeseen. Nämä viisi ovat alla olevan 33 ehdokkaan joukossa. Älä lisää PR 193:a toistamiseen unionin päälle.
+
+[Viiden hyväksytyn version reseptisidonta](approved-main-bindings.md) · [Viiden muun A-laskelman sisältöportit](five-a-gates.md) · [Siemengranolan nimetty tuotesidonta](granola-flakes.md)
+
+
+## Luovutus ennen PR 193:a, 3.11.2026
+
+Julkisesta listasta varmennettu **187/326**, mukana PR 192:n neljä B-versiota. Main on edelleen alla mainittu commit. Codex2:n haaran tilannekuva 07801a2 sisältää yhden uuden täsmähyväksynnän. Sitä seuraava bambulähteen täsmennys ei ole hyväksyntä.
+
+| Julkaisematon jono | Eri reseptit | Mahdollinen kertymä |
+| --- | ---: | ---: |
+| Hyväksytyt A-versiot: paella, kanatagine, hernekeitto, uunimakkara ja Panang | 5 | 192 |
+| Muut Codex1:n A-tutkimusversiot, sisältö- ja lähdepäätökset avoinna | 18 | 210 |
+| Codex1:n ehdolliset B-lähdeskenaariot | 10 | 220 |
+
+**33 mahdollista lisäystä.** Joukot on verrattu reseptitunnisteittain julkisiin riveihin. Paella ja uunimakkara kuuluvat vain hyväksyttyyn jonoon. Uudet B-skenaariot ovat [manakish](manakish-study.md) ja [moussaka](moussaka-study.md). Molemmat vaativat valmistus- tai sisältövastaavuuden päätöksen. Kaikkien 33:n eteneminen julkaisuun jättäisi vielä 41 arvoa tavoitteeseen 261. Julkaistusta tasosta puuttuu 74.
+
+Panangin hyväksytty syöte on `3439d3bb36c28dd06df3d8dbfc60a0a95f970d53011550c0a449743271954c03`. Laskettu GK-osuus **1,89**, poisjätöt **1,9328 g/annos**. Tarkistin kuittiin sidotut neljä tiedostohashia, kaikki täsmäsivät. Hyväksyntä koskee lähteitä ja reseptisisältöä sekä myöhempää integraatiota sen omistajalle. [Panangin hyväksyntäkuitti](https://github.com/ozirix-dev/Reseptit/blob/c3ec757/docs/research/afcd-polyol-03/panang-a-approval.json)
+
+## Aiempi tilannekuva
+
+Main `1276116d8bd4c84fc62ededebc8304a73c1cc9e1`. Codex2:n tutkimushaara tarkastettu commitissa `c4db68b4ca1433eb5cfc05459c04ac15bf252348`. Julkisella sivulla havaittiin 183 eri numeerista reseptiä. Neljä hyväksyttyä B-versiota on yhdistetty mainiin. Niiden julkaisuajo oli tarkistushetkellä käynnissä. [Julkinen kooste](https://ozirix-dev.github.io/Reseptit/glykeeminen-kuorma/) · [Julkaisuajo](https://github.com/ozirix-dev/Reseptit/actions/runs/41532475398)
+
+| Jono | Uusia tunnisteita havaittuun 183:een | Mahdollinen kertymä |
+| --- | ---: | ---: |
+| Mainiin yhdistetyt B-versiot. Besan-chilla, pinaatti-paneer-chilla, mannasuurimoupma ja ven pongal. | 4 | 187 |
+| Hyväksytyt A-täsmäversiot. Paella, kanatagine, hernekeitto ja uunimakkara. | 4 | 191 |
+| Codex1:n muut A-tutkimusversiot, lähde- ja sisältökatselmointiin. | 18 | 209 |
+| Codex1:n kahdeksan B-skenaariota, valmistusvastaavuus ja hyväksyntä avoinna. | 8 | 217 |
+
+**Yhteensä 34 mahdollista lisäystä.** Vertailin reseptitunnisteita julkiseen koosteeseen, Codex2:n päätösmatriisiin ja uusimpaan hyväksyntäkuittiin. Kaksi osumaa poistettiin Codex1:n 20 A-laskelman joukosta. Paella ja uunimakkara lasketaan hyväksyttyinä A-versioina. Luku 217 edellyttää kaikkien tässä lueteltujen versioiden hyväksyntää, tarvittavaa integraatiota ja julkaisua. Siitä jäisi 44 arvoa tavoitteeseen 261. Muut työjonot ovat vaikutusarvion ulkopuolella.
+
+## Uunimakkaran valittu syöte
+
+Uusin kuitti hyväksyy syötteen `726315e676d5a36776e2cab4b9e75e3478e5b0c900e1230d4fbb183bb7650ae3`, laskettu GK-osuus **0,26** ja poisjättövaraus **1,4763875 g/annos**. Käytä integraatioluovutuksessa tätä syötettä. Codex1:n aiempi 0,4356-skenaario jää tutkimushistoriaan. [Hyväksyntäkuitti](https://github.com/ozirix-dev/Reseptit/blob/c4db68b4ca1433eb5cfc05459c04ac15bf252348/docs/research/afcd-polyol-03/sausage-a-approval.json)
+
+## Katselmoinnin lisäykset
+
+Aiemman [luovutuksen](transfer-183.md) jälkeen syntyi viisi uutta A-ehdokasta. Ne ovat [kauralesesämpylät](oat-bran-rolls.md), [silakkapihvit](herring-rye-coating.md), [Runebergintortut](runeberg-almond.md) sekä [lihapiirakka ja keto-korvapuustit](pickerd-almond-two.md). Okonomiyakin [uusi valmistajalähde](almond-reuse-ayam.md) vahvistaa olemassa olevaa ehdokasta. Kung pao -kanan [riisilisuke](kung-pao-rice.md) on osaratkaisu ja jää kokonaisten reseptien luvun ulkopuolelle.

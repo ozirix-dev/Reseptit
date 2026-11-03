@@ -1,0 +1,393 @@
+{
+  "mechanicalModelOnly": true,
+  "policyChangeApplied": false,
+  "registryOrRecipeChanges": false,
+  "results": [
+    {
+      "recipeId": "lahi-ita-pistaasijogurtti",
+      "variant": "Plain unflavoured yogurt matching Fineli619; shelled pistachios matching Fineli31212; raw peeled pomegranate arils; Steenbergs Organic Rose Water; no added unspecified protein, beans or vegetables.",
+      "allSourceRowsRepresented": true,
+      "sourceLfSha256": "f9a1d41f86c92902bbda7c9f224cbc8de48900ec7726625a482f1ecea794a9e1",
+      "result": {
+        "recipeId": "lahi-ita-pistaasijogurtti",
+        "servings": 2,
+        "status": "CALCULATED",
+        "unroundedGlycemicLoadPerServing": 4.3665,
+        "glycemicLoadPerServing": 4.37,
+        "glycemicLoadRangePerServing": null,
+        "omittedAvailableCarbohydratePerServingG": 0,
+        "omittedAvailableCarbohydrateUpperBoundPerServingG": 0,
+        "confidence": "LOW",
+        "interpretation": "Ingredient-based estimate only; actual prepared-meal response varies. Positive contributions are included when source-supported. An unmatched individual ingredient portion may be omitted only below 1 g available carbohydrate per serving, and all such omissions must total less than the 2 g/serving editorial tolerance.",
+        "ingredients": [
+          {
+            "name": "jogurtti",
+            "grams": 200,
+            "fineliRecordId": "research-fineli-619",
+            "availableCarbohydratePer100g": 5,
+            "availableCarbohydratePerServingG": 5,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": 35,
+            "giRecordId": "dairy-category-mean-gi-35",
+            "qualityTier": "SUPPLEMENTARY",
+            "matchKind": "CATEGORY_MEAN",
+            "confidence": "LOW",
+            "giContribution": 1.75,
+            "giContributionRange": {
+              "min": 1.75,
+              "max": 1.75
+            },
+            "giCandidates": [
+              {
+                "id": "dairy-category-mean-gi-35",
+                "gi": 35,
+                "preparation": "Unflavoured dairy category mean used for plain cream cheese",
+                "qualityTier": "SUPPLEMENTARY",
+                "preparationMatches": true,
+                "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
+              }
+            ],
+            "issues": []
+          },
+          {
+            "name": "pistaasi",
+            "grams": 20,
+            "fineliRecordId": "research-fineli-31212",
+            "availableCarbohydratePer100g": 16.7,
+            "availableCarbohydratePerServingG": 1.67,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": 22,
+            "giRecordId": "nuts-category-mean-gi-22",
+            "qualityTier": "SUPPLEMENTARY",
+            "matchKind": "CATEGORY_MEAN",
+            "confidence": "LOW",
+            "giContribution": 0.36739999999999995,
+            "giContributionRange": {
+              "min": 0.36739999999999995,
+              "max": 0.36739999999999995
+            },
+            "giCandidates": [
+              {
+                "id": "nuts-category-mean-gi-22",
+                "gi": 22,
+                "preparation": "Nut category mean",
+                "qualityTier": "SUPPLEMENTARY",
+                "preparationMatches": true,
+                "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
+              }
+            ],
+            "issues": []
+          },
+          {
+            "name": "ruusuvesi",
+            "grams": null,
+            "recipeQuantity": {
+              "amount": 5,
+              "unit": "ml",
+              "massGrams": null
+            },
+            "fineliRecordId": null,
+            "availableCarbohydratePer100g": null,
+            "availableCarbohydratePerServingG": 0,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": "LOW",
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "excludedReason": "Named Steenbergs Organic Rose Water source-declared zero carbohydrate, not missing data.",
+            "issues": [
+              "Source-documented zero available carbohydrate: Manufacturer declares EU carbohydrate0.0g/100g for this pure distilled food-grade rosewater. Under that declared composition available carbohydrate is zero for any finite5ml portion. No density1g/ml or individual-polyol-zero inference. Label precision is not an analytical zero guarantee."
+            ]
+          },
+          {
+            "name": "granaattiomenan siemeniä",
+            "grams": 60,
+            "fineliRecordId": "research-fineli-31555",
+            "availableCarbohydratePer100g": 14.7,
+            "availableCarbohydratePerServingG": 4.41,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": 51,
+            "giRecordId": "fruit-category-mean-gi-51",
+            "qualityTier": "SUPPLEMENTARY",
+            "matchKind": "CATEGORY_MEAN",
+            "confidence": "LOW",
+            "giContribution": 2.2491,
+            "giContributionRange": {
+              "min": 2.2491,
+              "max": 2.2491
+            },
+            "giCandidates": [
+              {
+                "id": "fruit-category-mean-gi-51",
+                "gi": 51,
+                "preparation": "Category mean from Table 1; individual food and preparation were not tested as this item",
+                "qualityTier": "SUPPLEMENTARY",
+                "preparationMatches": true,
+                "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
+              }
+            ],
+            "issues": []
+          },
+          {
+            "name": "suolaa maun mukaan",
+            "grams": null,
+            "fineliRecordId": null,
+            "availableCarbohydratePer100g": null,
+            "availableCarbohydratePerServingG": 0,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": "LOW",
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "excludedReason": "Plain salt contributes no available carbohydrate.",
+            "issues": [
+              "Source-documented zero available carbohydrate: Plain sodium chloride, not a sweetened seasoning blend. Amount does not affect availableCHO; sodium remains unquantified."
+            ]
+          }
+        ],
+        "blockers": []
+      },
+      "unknownProductOrUnselectedBranchCounterfactual": {
+        "status": "INSUFFICIENT SOURCE DATA",
+        "blockers": [
+          "lahi-ita-pistaasijogurtti: ruusuvesi: Unspecified product or optional branch not selected: no zero is allowed."
+        ]
+      },
+      "finnishNamesOnly": null,
+      "sourceApplicationApproved": false,
+      "publicationApproved": false,
+      "newPublishedValue": false,
+      "macroPublicationAuthorized": false
+    },
+    {
+      "recipeId": "marjainen-chiavanukas",
+      "variant": "Explicit no-added-sweetener branch allowed by preparation step3. Named unsweetened Alpro almond beverage Fineli34738 and plain Greek7% yogurt Fineli34611; raw berries added after chilling. No coconut-beverage substitution.",
+      "role": "CODEX2_EXISTING_PRIORITY77_SOURCE_SUPPORT_ONLY",
+      "countedAsOwnNewRecipeCandidate": false,
+      "allSourceRowsRepresented": true,
+      "sourceLfSha256": "c4c9c7a14345199304e7221fab28633a4a9abeffa3c99afc780cb5360824ec22",
+      "result": {
+        "recipeId": "marjainen-chiavanukas",
+        "servings": 4,
+        "status": "CALCULATED",
+        "unroundedGlycemicLoadPerServing": 1.6330025,
+        "glycemicLoadPerServing": 1.63,
+        "glycemicLoadRangePerServing": null,
+        "omittedAvailableCarbohydratePerServingG": 0.2373,
+        "omittedAvailableCarbohydrateUpperBoundPerServingG": 0,
+        "confidence": "LOW",
+        "interpretation": "Ingredient-based estimate only; actual prepared-meal response varies. Positive contributions are included when source-supported. An unmatched individual ingredient portion may be omitted only below 1 g available carbohydrate per serving, and all such omissions must total less than the 2 g/serving editorial tolerance.",
+        "ingredients": [
+          {
+            "name": "chia-siemeniä",
+            "grams": 45,
+            "fineliRecordId": "research-fineli-34847",
+            "availableCarbohydratePer100g": 0.2,
+            "availableCarbohydratePerServingG": 0.0225,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": null,
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "issues": [
+              "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.022 g available carbohydrate): GI evidence is missing."
+            ]
+          },
+          {
+            "name": "makeuttamatonta mantelimaitoa",
+            "grams": 250,
+            "fineliRecordId": "research-fineli-34738",
+            "availableCarbohydratePer100g": 0.132,
+            "availableCarbohydratePerServingG": 0.0825,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": null,
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "issues": [
+              "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.083 g available carbohydrate): GI evidence is missing."
+            ]
+          },
+          {
+            "name": "maustamatonta kreikkalaista jogurttia",
+            "grams": 100,
+            "fineliRecordId": "research-fineli-34611",
+            "availableCarbohydratePer100g": 2.917,
+            "availableCarbohydratePerServingG": 0.72925,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": 35,
+            "giRecordId": "dairy-category-mean-gi-35",
+            "qualityTier": "SUPPLEMENTARY",
+            "matchKind": "CATEGORY_MEAN",
+            "confidence": "LOW",
+            "giContribution": 0.2552375,
+            "giContributionRange": {
+              "min": 0.2552375,
+              "max": 0.2552375
+            },
+            "giCandidates": [
+              {
+                "id": "dairy-category-mean-gi-35",
+                "gi": 35,
+                "preparation": "Unflavoured dairy category mean used for plain cream cheese",
+                "qualityTier": "SUPPLEMENTARY",
+                "preparationMatches": true,
+                "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
+              }
+            ],
+            "issues": []
+          },
+          {
+            "name": "vadelmia",
+            "grams": 100,
+            "fineliRecordId": "research-fineli-448",
+            "availableCarbohydratePer100g": 5.715,
+            "availableCarbohydratePerServingG": 1.42875,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": 51,
+            "giRecordId": "fruit-category-mean-gi-51",
+            "qualityTier": "SUPPLEMENTARY",
+            "matchKind": "CATEGORY_MEAN",
+            "confidence": "LOW",
+            "giContribution": 0.7286625,
+            "giContributionRange": {
+              "min": 0.7286625,
+              "max": 0.7286625
+            },
+            "giCandidates": [
+              {
+                "id": "fruit-category-mean-gi-51",
+                "gi": 51,
+                "preparation": "Category mean from Table 1; individual food and preparation were not tested as this item",
+                "qualityTier": "SUPPLEMENTARY",
+                "preparationMatches": true,
+                "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
+              }
+            ],
+            "issues": []
+          },
+          {
+            "name": "mustikoita",
+            "grams": 50,
+            "fineliRecordId": "research-fineli-442",
+            "availableCarbohydratePer100g": 10.182,
+            "availableCarbohydratePerServingG": 1.27275,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": 51,
+            "giRecordId": "fruit-category-mean-gi-51",
+            "qualityTier": "SUPPLEMENTARY",
+            "matchKind": "CATEGORY_MEAN",
+            "confidence": "LOW",
+            "giContribution": 0.6491025,
+            "giContributionRange": {
+              "min": 0.6491025,
+              "max": 0.6491025
+            },
+            "giCandidates": [
+              {
+                "id": "fruit-category-mean-gi-51",
+                "gi": 51,
+                "preparation": "Category mean from Table 1; individual food and preparation were not tested as this item",
+                "qualityTier": "SUPPLEMENTARY",
+                "preparationMatches": true,
+                "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
+              }
+            ],
+            "issues": []
+          },
+          {
+            "name": "vaniljauutetta",
+            "grams": 4.2,
+            "fineliRecordId": "research-afcd-F009350",
+            "availableCarbohydratePer100g": 12.6,
+            "availableCarbohydratePerServingG": 0.1323,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": null,
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "issues": [
+              "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.132 g available carbohydrate): GI evidence is missing."
+            ]
+          },
+          {
+            "name": "makeutusainetta maun mukaan",
+            "grams": 0,
+            "recipeQuantity": {
+              "amount": null,
+              "unit": null,
+              "massGrams": 0
+            },
+            "fineliRecordId": null,
+            "availableCarbohydratePer100g": null,
+            "availableCarbohydratePerServingG": 0,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": "LOW",
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "excludedReason": "Optional sweetener intentionally not used in this explicitly unsweetened branch.",
+            "issues": [
+              "Source-documented zero available carbohydrate: Preparation step3 says sweeten if desired. This named variant adds none (0g), not an assertion that an unidentified sweetener has0CHO."
+            ]
+          }
+        ],
+        "blockers": []
+      },
+      "unknownProductOrUnselectedBranchCounterfactual": {
+        "status": "INSUFFICIENT SOURCE DATA",
+        "blockers": [
+          "marjainen-chiavanukas: makeutusainetta maun mukaan: Unspecified product or optional branch not selected: no zero is allowed."
+        ]
+      },
+      "finnishNamesOnly": {
+        "status": "INSUFFICIENT SOURCE DATA",
+        "blockers": [
+          "marjainen-chiavanukas: vadelmia: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+          "marjainen-chiavanukas: mustikoita: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
+        ],
+        "scientificMeaning": "Literal family-recognition defect only. Same food IDs, nutrient values and raw berry identities; full source-backed aliases are in input bundle."
+      },
+      "sourceApplicationApproved": false,
+      "publicationApproved": false,
+      "newPublishedValue": false,
+      "macroPublicationAuthorized": false
+    }
+  ]
+}

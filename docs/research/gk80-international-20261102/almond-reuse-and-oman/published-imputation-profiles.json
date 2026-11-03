@@ -1,0 +1,354 @@
+{
+  "method": 3,
+  "cards": {
+    "op142-vegetable-imputation40": {
+      "id": "op142-vegetable-imputation40",
+      "gi": 40,
+      "foodKey": "op142-low-carb-vegetable",
+      "preparationKey": "op142-vegetable-imputation40",
+      "food": "Published assignment for low-carbohydrate vegetables, not measured food GI",
+      "preparation": "Candidate-specific application; see full source card and weighed version",
+      "qualityTier": "SUPPLEMENTARY",
+      "referenceScale": "GLUCOSE_100",
+      "matchKind": "ANALOG",
+      "confidence": "LOW",
+      "evidenceKind": "PUBLISHED_IMPUTATION",
+      "originalSourceCard": {
+        "id": "vegetable-imputation40",
+        "gi": 40,
+        "scale": "GLUCOSE_100",
+        "family": "low-carb-vegetable",
+        "food": "Published assignment for low-carbohydrate vegetables, not measured food GI",
+        "evidenceKind": "PUBLISHED_IMPUTATION",
+        "sourceUrl": "https://doi.org/10.2337/dc08-1239",
+        "accessUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC2584181/fullTextXML",
+        "documentSha256": "b3738226fa546af99ac25e5e3fa106e86cd204445f9153ef5ee762cb25f3b25a",
+        "location": "Conclusions: assignment discussion",
+        "originalStudy": "Atkinson, Foster-Powell, Brand-Miller 2008",
+        "confidence": "LOW",
+        "limitations": "Coding estimate only. Application to named fresh herbs, sprouts and alliums is an explicit project interpretation. It does not establish a physiological maximum or a one-unit uncertainty bound. Not a default for seed spices, flour, sauces or stock.",
+        "newRecordInRun2": true,
+        "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc"
+      },
+      "source": {
+        "title": "PROJECT PI, not measured food GI: Published assignment for low-carbohydrate vegetables, not measured food GI",
+        "url": "https://doi.org/10.2337/dc08-1239",
+        "table": "Conclusions: assignment discussion",
+        "year": 2008,
+        "published": true,
+        "iso26642Confirmed": false,
+        "qualityEvidence": "Coding estimate only. Application to named fresh herbs, sprouts and alliums is an explicit project interpretation. It does not establish a physiological maximum or a one-unit uncertainty bound. Not a default for seed spices, flour, sauces or stock."
+      },
+      "note": "Project published-imputation assignment, not measured ingredient or meal GI. Coding estimate only. Application to named fresh herbs, sprouts and alliums is an explicit project interpretation. It does not establish a physiological maximum or a one-unit uncertainty bound. Not a default for seed spices, flour, sauces or stock."
+    },
+    "op142-dairy-imputation30": {
+      "id": "op142-dairy-imputation30",
+      "gi": 30,
+      "foodKey": "op142-dairy-code",
+      "preparationKey": "op142-dairy-imputation30",
+      "food": "Unsweetened animal dairy coding assignment",
+      "preparation": "Candidate-specific application; see full source card and weighed version",
+      "qualityTier": "SUPPLEMENTARY",
+      "referenceScale": "GLUCOSE_100",
+      "matchKind": "ANALOG",
+      "confidence": "LOW",
+      "evidenceKind": "PUBLISHED_IMPUTATION",
+      "originalSourceCard": {
+        "id": "dairy-imputation30",
+        "gi": 30,
+        "scale": "GLUCOSE_100",
+        "family": "dairy-code",
+        "food": "Unsweetened animal dairy coding assignment",
+        "evidenceKind": "PUBLISHED_IMPUTATION",
+        "sourceUrl": "https://doi.org/10.2337/dc08-1239",
+        "location": "Conclusions, low-carbohydrate product assignment",
+        "confidence": "LOW",
+        "limitations": "Not tested cream, cheese or butter. Excludes plant drinks and sweetened dairy.",
+        "evidenceHash": "18dd13349258a887809f1dec2abce637ce648b7d2f829c690243734139912850"
+      },
+      "source": {
+        "title": "PROJECT PI, not measured food GI: Unsweetened animal dairy coding assignment",
+        "url": "https://doi.org/10.2337/dc08-1239",
+        "table": "Conclusions, low-carbohydrate product assignment",
+        "year": 2008,
+        "published": true,
+        "iso26642Confirmed": false,
+        "qualityEvidence": "Not tested cream, cheese or butter. Excludes plant drinks and sweetened dairy."
+      },
+      "note": "Project published-imputation assignment, not measured ingredient or meal GI. Not tested cream, cheese or butter. Excludes plant drinks and sweetened dairy."
+    }
+  },
+  "cases": [
+    {
+      "recipeId": "vhh-omenapiirakka",
+      "ingredients": [
+        {
+          "name": "mantelijauhoa",
+          "grams": 150,
+          "fineliRecordId": "MEXT2023-05001",
+          "giRecordId": null,
+          "massEvidence": "New source-resolved version: weigh150g dry unroasted whole ediblealmonds,grind without peeling/defatting/sieving,retain allmeal. Not a generic commercial almondflour composition substitution.",
+          "recipeQuantity": {
+            "amount": 150,
+            "unit": "g",
+            "massGrams": 150
+          }
+        },
+        {
+          "name": "voita kylmänä",
+          "grams": 50,
+          "fineliRecordId": "fineli-500",
+          "giRecordId": null,
+          "massEvidence": "Current gram amount or source-specific measure; see source-catalog.",
+          "recipeQuantity": {
+            "amount": 50,
+            "unit": "g",
+            "massGrams": 50
+          }
+        },
+        {
+          "name": "kananmuna",
+          "grams": 55,
+          "fineliRecordId": "fineli-858",
+          "giRecordId": null,
+          "massEvidence": "Current gram amount or source-specific measure; see source-catalog.",
+          "recipeQuantity": {
+            "amount": 1,
+            "unit": "kpl",
+            "massGrams": 55
+          }
+        },
+        {
+          "name": "erytritolia pohjaan",
+          "grams": 0,
+          "fineliRecordId": "foodin-erythritol-200g-label-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Original tablespoon amount of pure Foodin100%erythritol remains. Model0g is a mass sentinel only; source-backed availableCHO coefficient=100CHO-100polyols=0. No missing ingredient removed.",
+          "recipeQuantity": {
+            "amount": 2,
+            "unit": "rkl",
+            "massGrams": 0
+          }
+        },
+        {
+          "name": "pientä omenaa",
+          "grams": 200,
+          "fineliRecordId": "afcd-F000095",
+          "giRecordId": "fruit-category-mean-gi-51",
+          "massEvidence": "New weighed version:200g edible raw GrannySmith apple,skin retained,cored,from two smallapples. Explicitnewweight,not proof100g per smallapple. AFCD F000095 matches variety/skin state;starting amount bakedinpie.",
+          "recipeQuantity": {
+            "amount": 2,
+            "unit": "kpl",
+            "massGrams": 200
+          },
+          "foodKey": "fruit-category-mean",
+          "preparationKey": "category-mean",
+          "giMatchEvidence": "Isolated named research application of publishedimputation,authorized for study by latestuserrequest. NOT a measuredingredientGI or globallyapprovedscope. No flour/almondGI70or50 added."
+        },
+        {
+          "name": "kanelia",
+          "grams": 2.55,
+          "fineliRecordId": "afcd-F002963",
+          "giRecordId": null,
+          "massEvidence": "Current gram amount or source-specific measure; see source-catalog.",
+          "recipeQuantity": {
+            "amount": 1,
+            "unit": "tl",
+            "massGrams": 2.55
+          }
+        },
+        {
+          "name": "sitruunamehua",
+          "grams": 15,
+          "fineliRecordId": "fineli-11557",
+          "giRecordId": null,
+          "massEvidence": "Current gram amount or source-specific measure; see source-catalog.",
+          "recipeQuantity": {
+            "amount": 1,
+            "unit": "rkl",
+            "massGrams": 15
+          }
+        },
+        {
+          "name": "maitorahkaa",
+          "grams": 100,
+          "fineliRecordId": "fineli-622",
+          "giRecordId": "op142-dairy-imputation30",
+          "massEvidence": "Current gram amount or source-specific measure; see source-catalog.",
+          "recipeQuantity": {
+            "amount": 100,
+            "unit": "g",
+            "massGrams": 100
+          },
+          "foodKey": "op142-dairy-code",
+          "preparationKey": "op142-dairy-imputation30",
+          "giMatchEvidence": "Isolated named research application of publishedimputation,authorized for study by latestuserrequest. NOT a measuredingredientGI or globallyapprovedscope. No flour/almondGI70or50 added."
+        },
+        {
+          "name": "kananmuna täytteeseen",
+          "grams": 55,
+          "fineliRecordId": "fineli-858",
+          "giRecordId": null,
+          "massEvidence": "Current gram amount or source-specific measure; see source-catalog.",
+          "recipeQuantity": {
+            "amount": 1,
+            "unit": "kpl",
+            "massGrams": 55
+          }
+        },
+        {
+          "name": "erytritolia täytteeseen",
+          "grams": 0,
+          "fineliRecordId": "foodin-erythritol-200g-label-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Original tablespoon amount of pure Foodin100%erythritol remains. Model0g is a mass sentinel only; source-backed availableCHO coefficient=100CHO-100polyols=0. No missing ingredient removed.",
+          "recipeQuantity": {
+            "amount": 1,
+            "unit": "rkl",
+            "massGrams": 0
+          }
+        }
+      ],
+      "expectedGk": "1.47675",
+      "referenceCategoryGk": "1.49550",
+      "sourceScenarioMin": "1.47675",
+      "sourceScenarioMax": "1.49550",
+      "displayProposal": "alle5",
+      "displayMeaning": "Coarse outward presentation of namedsource/calculation scenarios,not a measuredrange or95percentCI. Positiveomissions remain separatelyreported.",
+      "newRecipeId": false
+    },
+    {
+      "recipeId": "vhh-raparperipiirakka",
+      "ingredients": [
+        {
+          "name": "mantelijauhoa",
+          "grams": 150,
+          "fineliRecordId": "MEXT2023-05001",
+          "giRecordId": null,
+          "massEvidence": "New source-resolved version: weigh150g dry unroasted whole ediblealmonds,grind without peeling/defatting/sieving,retain allmeal. Not a generic commercial almondflour composition substitution.",
+          "recipeQuantity": {
+            "amount": 150,
+            "unit": "g",
+            "massGrams": 150
+          }
+        },
+        {
+          "name": "voita sulatettuna",
+          "grams": 60,
+          "fineliRecordId": "fineli-500",
+          "giRecordId": null,
+          "massEvidence": "Current gram amount or source-specific measure; see source-catalog.",
+          "recipeQuantity": {
+            "amount": 60,
+            "unit": "g",
+            "massGrams": 60
+          }
+        },
+        {
+          "name": "kananmuna pohjaan",
+          "grams": 55,
+          "fineliRecordId": "fineli-858",
+          "giRecordId": null,
+          "massEvidence": "Current gram amount or source-specific measure; see source-catalog.",
+          "recipeQuantity": {
+            "amount": 1,
+            "unit": "kpl",
+            "massGrams": 55
+          }
+        },
+        {
+          "name": "raparperia",
+          "grams": 250,
+          "fineliRecordId": "fineli-338",
+          "giRecordId": "op142-vegetable-imputation40",
+          "massEvidence": "Current gram amount or source-specific measure; see source-catalog.",
+          "recipeQuantity": {
+            "amount": 250,
+            "unit": "g",
+            "massGrams": 250
+          },
+          "foodKey": "op142-low-carb-vegetable",
+          "preparationKey": "op142-vegetable-imputation40",
+          "giMatchEvidence": "Isolated named research application of publishedimputation,authorized for study by latestuserrequest. NOT a measuredingredientGI or globallyapprovedscope. No flour/almondGI70or50 added."
+        },
+        {
+          "name": "maitorahkaa",
+          "grams": 150,
+          "fineliRecordId": "fineli-622",
+          "giRecordId": "op142-dairy-imputation30",
+          "massEvidence": "Current gram amount or source-specific measure; see source-catalog.",
+          "recipeQuantity": {
+            "amount": 150,
+            "unit": "g",
+            "massGrams": 150
+          },
+          "foodKey": "op142-dairy-code",
+          "preparationKey": "op142-dairy-imputation30",
+          "giMatchEvidence": "Isolated named research application of publishedimputation,authorized for study by latestuserrequest. NOT a measuredingredientGI or globallyapprovedscope. No flour/almondGI70or50 added."
+        },
+        {
+          "name": "kananmunaa täytteeseen",
+          "grams": 110,
+          "fineliRecordId": "fineli-858",
+          "giRecordId": null,
+          "massEvidence": "Current gram amount or source-specific measure; see source-catalog.",
+          "recipeQuantity": {
+            "amount": 2,
+            "unit": "kpl",
+            "massGrams": 110
+          }
+        },
+        {
+          "name": "erytritolia",
+          "grams": 70,
+          "fineliRecordId": "foodin-erythritol-200g-label-2026-10-24",
+          "giRecordId": null,
+          "massEvidence": "Current gram amount or source-specific measure; see source-catalog.",
+          "recipeQuantity": {
+            "amount": 70,
+            "unit": "g",
+            "massGrams": 70
+          }
+        },
+        {
+          "name": "vaniljauutetta",
+          "grams": 5,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "massEvidence": "New exact weighed5g vanillaextract replacing unresolved1tl quantity;not a density conversion.",
+          "recipeQuantity": {
+            "amount": 1,
+            "unit": "tl",
+            "massGrams": 5
+          },
+          "availableCarbohydrateUpperBoundPerServingG": 0.625,
+          "upperBoundEvidence": "Entire weighed5g/8servings is a physical mass ceiling for availableCHO;not actual extractcomposition or measuredavailableCHO.",
+          "excludedReason": "Source-defined exactversion mass ceiling,positive omission;notzero."
+        },
+        {
+          "name": "psylliumia",
+          "grams": 7.5,
+          "fineliRecordId": "afcd-F007502",
+          "giRecordId": null,
+          "massEvidence": "Current gram amount or source-specific measure; see source-catalog.",
+          "recipeQuantity": {
+            "amount": 1,
+            "unit": "rkl",
+            "massGrams": 7.5
+          }
+        }
+      ],
+      "expectedGk": "0.85625",
+      "referenceCategoryGk": "1.331250",
+      "sourceScenarioMin": "0.85625",
+      "sourceScenarioMax": "1.331250",
+      "displayProposal": "alle5",
+      "displayMeaning": "Coarse outward presentation of namedsource/calculation scenarios,not a measuredrange or95percentCI. Positiveomissions remain separatelyreported.",
+      "newRecipeId": false
+    }
+  ],
+  "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2584181/",
+  "newRulesInProduction": false,
+  "newPublishedValues": 0,
+  "newApplicationReviewRequired": true
+}

@@ -1,0 +1,505 @@
+{
+  "foods": {
+    "fineli-4": {
+      "id": "fineli-4",
+      "name": "HUNAJA",
+      "state": "HUNAJA",
+      "basis": "per100g-as-sold",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/4",
+      "nativeSourcePath": "docs/nutrition/fineli-release-20-reference.json",
+      "nativeSourceRecord": {
+        "source_id": "4",
+        "name": "HUNAJA",
+        "food_type": "FOOD",
+        "process": "RAW",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "SUGARSYR",
+        "food_class": "SUGADD",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 80.8,
+          "fibre_g_per_100g": 0.0,
+          "polyols_g_per_100g": null,
+          "protein_g_per_100g": 0.5,
+          "fat_g_per_100g": 0.0
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0181"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0123"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0172"
+          }
+        },
+        "portion_mass_g": {
+          "DL": 140.0,
+          "RKL": 20.0,
+          "TL": 6.5
+        }
+      },
+      "polyolsSourceVerified": false,
+      "polyolsEvidence": "Native field retained, null remains unknown. Direct CHOAVL or AFCD WITHOUT-sugar-alcohols; no fibre deduction or inferred individual-polyolzero.",
+      "per100g": {
+        "carbohydrate": 80.8,
+        "fibre": 0.0,
+        "polyols": null,
+        "protein": 0.5,
+        "fat": 0.0
+      }
+    },
+    "fineli-30": {
+      "id": "fineli-30",
+      "name": "RUOKASUOLA, JODIOITU",
+      "state": "RUOKASUOLA, JODIOITU",
+      "basis": "per100g-as-sold",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/30",
+      "nativeSourcePath": "docs/nutrition/fineli-release-20-reference.json",
+      "nativeSourceRecord": {
+        "source_id": "30",
+        "name": "RUOKASUOLA, JODIOITU",
+        "food_type": "FOOD",
+        "process": "IND",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "SALT",
+        "food_class": "SPICES",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 0.0,
+          "fibre_g_per_100g": 0.0,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 0.63,
+          "fat_g_per_100g": 0.0
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0181"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0123"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "U",
+            "method_indicator": "MIR003"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0172"
+          }
+        },
+        "portion_mass_g": {
+          "DL": 125.0,
+          "RKL": 20.0,
+          "TL": 6.5
+        }
+      },
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Native field retained, null remains unknown. Direct CHOAVL or AFCD WITHOUT-sugar-alcohols; no fibre deduction or inferred individual-polyolzero.",
+      "per100g": {
+        "carbohydrate": 0.0,
+        "fibre": 0.0,
+        "polyols": 0.0,
+        "protein": 0.63,
+        "fat": 0.0
+      }
+    },
+    "fineli-320": {
+      "id": "fineli-320",
+      "name": "VALKOKAALI, KERÄKAALI",
+      "state": "VALKOKAALI, KERÄKAALI",
+      "basis": "per100g-as-sold",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/320",
+      "nativeSourcePath": "docs/nutrition/fineli-release-20-reference.json",
+      "nativeSourceRecord": {
+        "source_id": "320",
+        "name": "VALKOKAALI, KERÄKAALI",
+        "food_type": "FOOD",
+        "process": "RAW",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "CABBAGE",
+        "food_class": "VEGFRESH",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 4.97,
+          "fibre_g_per_100g": 2.0,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 1.2,
+          "fat_g_per_100g": 0.1
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "D",
+            "method_type": "AG",
+            "method_indicator": "MI1302"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0181"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "D",
+            "method_type": "S",
+            "method_indicator": "MI0123"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MIR006"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0172"
+          }
+        },
+        "portion_mass_g": {
+          "KPL_S": 800.0,
+          "KPL_M": 1200.0,
+          "KPL_L": 1500.0,
+          "DL": 40.0
+        }
+      },
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Native field retained, null remains unknown. Direct CHOAVL or AFCD WITHOUT-sugar-alcohols; no fibre deduction or inferred individual-polyolzero.",
+      "per100g": {
+        "carbohydrate": 4.97,
+        "fibre": 2.0,
+        "polyols": 0.0,
+        "protein": 1.2,
+        "fat": 0.1
+      }
+    },
+    "fineli-536": {
+      "id": "fineli-536",
+      "name": "OLIIVIÖLJY",
+      "state": "OLIIVIÖLJY",
+      "basis": "per100g-as-sold",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/536",
+      "nativeSourcePath": "docs/nutrition/fineli-release-20-reference.json",
+      "nativeSourceRecord": {
+        "source_id": "536",
+        "name": "OLIIVIÖLJY",
+        "food_type": "FOOD",
+        "process": "IND",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "OIL",
+        "food_class": "OIL",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 0.0,
+          "fibre_g_per_100g": 0.0,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 0.0,
+          "fat_g_per_100g": 100.0
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "IG",
+            "method_indicator": "MIR003"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0123"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "U",
+            "method_indicator": "MIR007"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0172"
+          }
+        },
+        "portion_mass_g": {
+          "DL": 90.0,
+          "RKL": 13.5,
+          "TL": 4.5
+        }
+      },
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Native field retained, null remains unknown. Direct CHOAVL or AFCD WITHOUT-sugar-alcohols; no fibre deduction or inferred individual-polyolzero.",
+      "per100g": {
+        "carbohydrate": 0.0,
+        "fibre": 0.0,
+        "polyols": 0.0,
+        "protein": 0.0,
+        "fat": 100.0
+      }
+    },
+    "fineli-30792": {
+      "id": "fineli-30792",
+      "name": "BROILERI, KOIPI-REISI, NAHATON",
+      "state": "BROILERI, KOIPI-REISI, NAHATON",
+      "basis": "per100g-as-sold",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/30792",
+      "nativeSourcePath": "docs/nutrition/fineli-release-20-reference.json",
+      "nativeSourceRecord": {
+        "source_id": "30792",
+        "name": "BROILERI, KOIPI-REISI, NAHATON",
+        "food_type": "FOOD",
+        "process": "RAW",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "POULTRY",
+        "food_class": "POULTRY",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 0.0,
+          "fibre_g_per_100g": 0.0,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 19.65,
+          "fat_g_per_100g": 3.42
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "CG",
+            "method_indicator": "MIR002"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "IG",
+            "method_indicator": "MIR003"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "U",
+            "method_indicator": "MIR007"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "U",
+            "method_indicator": "MIR003"
+          }
+        },
+        "portion_mass_g": {}
+      },
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Native field retained, null remains unknown. Direct CHOAVL or AFCD WITHOUT-sugar-alcohols; no fibre deduction or inferred individual-polyolzero.",
+      "per100g": {
+        "carbohydrate": 0.0,
+        "fibre": 0.0,
+        "polyols": 0.0,
+        "protein": 19.65,
+        "fat": 3.42
+      }
+    },
+    "afcd-F006316": {
+      "id": "afcd-F006316",
+      "name": "Paprika, dry powder",
+      "state": "Paprika, dry powder",
+      "basis": "per100g-as-sold",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+      "nativeSourcePath": "docs/nutrition/afcd-release-3-reference.json",
+      "nativeSourceRecord": {
+        "source_id": "F006316",
+        "classification": 31302,
+        "derivation": "Borrowed",
+        "name": "Paprika, dry powder",
+        "protein_g_per_100g": 14.1,
+        "fat_g_per_100g": 12.9,
+        "fibre_g_per_100g": 34.9,
+        "glycerol_g_per_100g": null,
+        "erythritol_g_per_100g": null,
+        "maltitol_g_per_100g": null,
+        "mannitol_g_per_100g": null,
+        "xylitol_g_per_100g": null,
+        "sorbitol_g_per_100g": null,
+        "available_carbohydrate_without_sugar_alcohols_g_per_100g": 19.1,
+        "available_carbohydrate_with_sugar_alcohols_g_per_100g": 19.1
+      },
+      "polyolsSourceVerified": false,
+      "polyolsEvidence": "Native field retained, null remains unknown. Direct CHOAVL or AFCD WITHOUT-sugar-alcohols; no fibre deduction or inferred individual-polyolzero.",
+      "per100g": {
+        "carbohydrate": 19.1,
+        "fibre": 34.9,
+        "polyols": null,
+        "protein": 14.1,
+        "fat": 12.9
+      }
+    },
+    "afcd-F006618": {
+      "id": "afcd-F006618",
+      "name": "Pepper, black, ground",
+      "state": "Pepper, black, ground",
+      "basis": "per100g-as-sold",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+      "nativeSourcePath": "docs/nutrition/afcd-release-3-reference.json",
+      "nativeSourceRecord": {
+        "source_id": "F006618",
+        "classification": 31302,
+        "derivation": "Borrowed",
+        "name": "Pepper, black, ground",
+        "protein_g_per_100g": 10.4,
+        "fat_g_per_100g": 3.3,
+        "fibre_g_per_100g": 25.3,
+        "glycerol_g_per_100g": null,
+        "erythritol_g_per_100g": null,
+        "maltitol_g_per_100g": null,
+        "mannitol_g_per_100g": null,
+        "xylitol_g_per_100g": null,
+        "sorbitol_g_per_100g": null,
+        "available_carbohydrate_without_sugar_alcohols_g_per_100g": 38.6,
+        "available_carbohydrate_with_sugar_alcohols_g_per_100g": 38.6
+      },
+      "polyolsSourceVerified": false,
+      "polyolsEvidence": "Native field retained, null remains unknown. Direct CHOAVL or AFCD WITHOUT-sugar-alcohols; no fibre deduction or inferred individual-polyolzero.",
+      "per100g": {
+        "carbohydrate": 38.6,
+        "fibre": 25.3,
+        "polyols": null,
+        "protein": 10.4,
+        "fat": 3.3
+      }
+    }
+  },
+  "existingGiCards": {
+    "vegetables-category-mean-gi-66": {
+      "id": "vegetables-category-mean-gi-66",
+      "gi": 66,
+      "foodKey": "vegetable",
+      "preparationKey": "vegetable-category",
+      "food": "Vegetables other than potatoes, category mean",
+      "preparation": "Broad category mean; preparation and individual vegetables vary",
+      "qualityTier": "SUPPLEMENTARY",
+      "referenceScale": "GLUCOSE_100",
+      "matchKind": "CATEGORY_MEAN",
+      "confidence": "LOW",
+      "source": {
+        "title": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+        "url": "https://doi.org/10.1093/ajcn/nqab233",
+        "table": "Table 1 summary: vegetables other than potatoes mean GI 66 ± 19 (n=91), values from Supplemental Table 1",
+        "year": 2021,
+        "published": true,
+        "iso26642Confirmed": false,
+        "referenceFood": "Glucose",
+        "qualityEvidence": "Published broad category mean calculated from the ISO-screened Supplemental Table 1 food measurements. This category contains diverse vegetables and is not specific to cabbage, cauliflower, cucumber, zucchini, or eggplant."
+      },
+      "note": "Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence."
+    },
+    "honey-category-mean-gi-55-2002": {
+      "id": "honey-category-mean-gi-55-2002",
+      "gi": 55,
+      "foodKey": "honey-category-mean",
+      "preparationKey": "category-mean",
+      "food": "Honey, mean of 11 types",
+      "preparation": "Mean of honey varieties and commercial blends; not matched to a particular honey",
+      "qualityTier": "SUPPLEMENTARY",
+      "referenceScale": "GLUCOSE_100",
+      "matchKind": "CATEGORY_MEAN",
+      "confidence": "LOW",
+      "source": {
+        "title": "International table of glycemic index and glycemic load values: 2002",
+        "url": "https://doi.org/10.1093/ajcn/76.1.5",
+        "table": "Table 1, food 586: mean of 11 types of honey, GI 55 ± 5, glucose scale",
+        "year": 2002,
+        "published": true,
+        "iso26642Confirmed": false,
+        "participants": null,
+        "referenceFood": "Glucose for 10 of 11 values; one bread-reference result was converted in the source table",
+        "qualityEvidence": "Published mean spanning 11 botanically and compositionally different honeys; source-level data are old and not a product-specific or ISO-confirmed match. Used only as a low-confidence category estimate."
+      },
+      "note": "Honey GI varies widely by floral source and fructose content. The 55 mean is an approximate category value, not a measured GI for the recipe's honey."
+    }
+  },
+  "newGiCards": [],
+  "quantitySources": {
+    "garlicPowder": {
+      "source": "USDA SR Legacy FDC171325",
+      "apiUrl": "https://api.nal.usda.gov/fdc/v1/food/171325?api_key=DEMO_KEY",
+      "captureSha256": "39b48438694f7ba0c08917999ea00702e859c398231b920f211f9f28b275abc4",
+      "portion": {
+        "id": 88439,
+        "dataPoints": 50,
+        "gramWeight": 3.1,
+        "sequenceNumber": 1,
+        "amount": 1.0,
+        "modifier": "tsp",
+        "measureUnit": {
+          "id": 9999,
+          "name": "undetermined",
+          "abbreviation": "undetermined"
+        }
+      },
+      "usedFor": "Mass only, not US totalCHO minus fibre.3.1g is prescribed gram target, not a claim that this recipe was weighed. A positive whole-mass CHO ceiling.775g/serv is used."
+    },
+    "ausnut": {
+      "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/ausnut/data-files",
+      "xlsxSha256": "58bee1204610efb72bb831dc7fb65acc23db540b51d056f83c6ac0ce84590475",
+      "sheet": "AUSNUT 2023",
+      "rows": [
+        {
+          "row": 7148,
+          "foodId": "F005973",
+          "measureId": 50248,
+          "densityGPerMl": 1.05
+        },
+        {
+          "row": 9718,
+          "foodId": "F006316",
+          "measureId": 49463,
+          "densityGPerMl": 0.53
+        }
+      ],
+      "metricSource": "https://www.martat.fi/ruoka/ruoanvalmistus/ruoka-aineiden-mitat-ja-painot/",
+      "tablespoonMl": 15,
+      "teaspoonMl": 5,
+      "limitation": "Generic cream-style mustard density is a disclosed quantity proxy for Dijon, not a measured Maille density. Version prescribes31.5g mustard and2.65g paprika; no claim of actual batch measurement."
+    }
+  },
+  "products": {
+    "mustard": {
+      "name": "Maille Dijon Original865g Danish foodservice SKU12017601",
+      "ean": "3036810201761",
+      "url": "https://www.unileverfoodsolutions.dk/produkt/maille-dijon-original-865-g-24-DA-384452.html",
+      "basis": "per100g-as-sold",
+      "labelCarbohydrateG": 3.5,
+      "labelFibreG": 2,
+      "labelProteinG": 7,
+      "labelFatG": 11,
+      "htmlSha256": "7efc98bc8fdc163acb0b3ca86484b904c620e45f59bc3d1d66d8f451f87b8eda",
+      "usage": "Nominal label CHO ceiling including potentially unknown polyols; not an analytical maximum. No fibre deduction, no GI50 assignment and no inferred polyolzero."
+    }
+  },
+  "newRulesApplied": false
+}

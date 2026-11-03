@@ -1,0 +1,13 @@
+import {readFileSync} from 'node:fs';
+import path from 'node:path';
+import {pathToFileURL} from 'node:url';
+const root=path.resolve(process.argv[2]??path.join(import.meta.dirname,'../../../..'));
+const dir=process.argv[3]??import.meta.dirname;
+const read=(p:string)=>JSON.parse(readFileSync(p,'utf8'));
+const p=read(path.join(dir,'published-imputation-profiles.json'));
+const foods=Object.values(read(path.join(dir,'source-catalog.json')).foods);
+const gis=read(path.join(root,'docs/nutrition/glycemic-index-records.json')).records;
+for(const [id,card] of Object.entries(p.cards))if(JSON.stringify(gis.find((r:any)=>r.id===id))!==JSON.stringify(card))throw Error('IMPUTATION_CARD_CHANGED');
+const {calculateGlycemicLoad}=await import(pathToFileURL(path.join(root,'site/scripts/glycemic-load-model.ts')).href);
+const results=p.cases.map((c:any)=>{const r=calculateGlycemicLoad({recipeId:c.recipeId,servings:8,ingredients:c.ingredients},foods,gis);if(r.status!=='CALCULATED'||Math.abs(r.unroundedGlycemicLoadPerServing-Number(c.expectedGk))>1e-9)throw Error('PROFILE_FAILED '+JSON.stringify(r.blockers));return {recipeId:c.recipeId,result:r,mechanicalResearchOnly:true,sourceApplicationApproved:false,newPublishedValue:false};});
+console.log(JSON.stringify({method:3,results,productionRulesChanged:false,publication:false},null,2));

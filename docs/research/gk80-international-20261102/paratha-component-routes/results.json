@@ -1,0 +1,119 @@
+{
+  "results": [
+    {
+      "recipeId": "aloo-paratha",
+      "sourceScenarios": [
+        {
+          "sourceId": "potato-paratha-control78.8",
+          "gi": "78.8",
+          "preparedChoPerServingMinG": "71.3252625",
+          "preparedChoPerServingMaxG": "71.8252625",
+          "gkMin": "57.07930685",
+          "gkMax": "57.47330685"
+        }
+      ],
+      "gkMin": "57.07930685",
+      "gkMax": "57.47330685",
+      "outwardDisplayBounds": [
+        55,
+        60
+      ],
+      "separateSideGkMin": "0.875",
+      "separateSideGkMax": "0.875",
+      "confidence": "LOW",
+      "sourceScenarioNotBiologicalRange": true,
+      "publicationApproved": false
+    },
+    {
+      "recipeId": "intialainen-aloo-paratha",
+      "sourceScenarios": [
+        {
+          "sourceId": "potato-paratha-control78.8",
+          "gi": "78.8",
+          "preparedChoPerServingMinG": "49.127525",
+          "preparedChoPerServingMaxG": "49.127525",
+          "gkMin": "39.5874897",
+          "gkMax": "39.5874897"
+        }
+      ],
+      "gkMin": "39.5874897",
+      "gkMax": "39.5874897",
+      "outwardDisplayBounds": [
+        35,
+        40
+      ],
+      "separateSideGkMin": "0.875",
+      "separateSideGkMax": "0.875",
+      "confidence": "LOW",
+      "sourceScenarioNotBiologicalRange": true,
+      "publicationApproved": false
+    },
+    {
+      "recipeId": "kiinalainen-kevatsipulipannukakku",
+      "sourceScenarios": [
+        {
+          "sourceId": "omani-unfilled-paratha31.8",
+          "gi": "31.8",
+          "preparedChoPerServingMinG": "37.2888",
+          "preparedChoPerServingMaxG": "37.2888",
+          "gkMin": "11.9838384",
+          "gkMax": "11.9838384"
+        },
+        {
+          "sourceId": "kawan-frozen-paratha53",
+          "gi": "53",
+          "preparedChoPerServingMinG": "37.2888",
+          "preparedChoPerServingMaxG": "37.2888",
+          "gkMin": "19.889064",
+          "gkMax": "19.889064"
+        }
+      ],
+      "gkMin": "11.9838384",
+      "gkMax": "19.889064",
+      "outwardDisplayBounds": [
+        10,
+        20
+      ],
+      "separateSideGkMin": "0.126",
+      "separateSideGkMax": "0.126",
+      "confidence": "LOW",
+      "sourceScenarioNotBiologicalRange": true,
+      "publicationApproved": false
+    }
+  ],
+  "negativeControls": [
+    {
+      "label": "Flour cannot be counted in both bread and a side",
+      "status": "REJECTED",
+      "reason": "Missing or double-counted ingredient allocation"
+    },
+    {
+      "label": "Unmatched spice blend cannot become pointzero",
+      "status": "REJECTED",
+      "reason": "Unknown composition has no physical CHO interval"
+    },
+    {
+      "label": "Unfilled Kawan paratha cannot stand for potato-stuffed paratha",
+      "status": "REJECTED",
+      "reason": "Prepared-food class or scope mismatch"
+    },
+    {
+      "label": "Unknown yogurt quantity blocks the complete plate",
+      "status": "REJECTED",
+      "reason": "Unresolved ingredient mass"
+    },
+    {
+      "label": "Removing the yogurt side allocation is not a complete plate",
+      "status": "REJECTED",
+      "reason": "Missing or double-counted ingredient allocation"
+    },
+    {
+      "label": "Wholefood GI cannot be attached only to the raw-flour row",
+      "status": "REJECTED",
+      "reason": "AssertionError"
+    }
+  ],
+  "newGiRecordsInProduction": 0,
+  "newPublishedValues": 0,
+  "method": "Prepared component GI times its source-backed availableCHO once,plus separate side GI;research only"
+}

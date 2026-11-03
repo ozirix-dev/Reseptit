@@ -1,0 +1,82 @@
+{
+  "result": {
+    "recipeId": "vietnamilainen-banh-bao-kananmunalla",
+    "scenarios": [
+      {
+        "sourceId": "lau2015-osb68",
+        "preparedGi": 68,
+        "wholeBunChoPerServingG": "37.0179",
+        "gkPerServing": "25.298172"
+      },
+      {
+        "sourceId": "lan2013-white93",
+        "preparedGi": 93,
+        "wholeBunChoPerServingG": "37.0179",
+        "gkPerServing": "34.552647"
+      }
+    ],
+    "gkMin": "25.298172",
+    "gkMax": "34.552647",
+    "displayBounds": [
+      25,
+      35
+    ],
+    "separateSoyGk": "0.126",
+    "positiveGiOmissionChoG": "0.1875",
+    "totalAvailableChoG": "37.4574",
+    "polyolsInMushroomAndAfcdFoods": "UNKNOWN_NOT_ASSUMED_ZERO",
+    "confidence": "LOW",
+    "sourceScenarioNotConfidenceOrPhysiologicalInterval": true,
+    "sourceApplicationApproved": false,
+    "publicationApproved": false,
+    "newPublishedValue": false
+  },
+  "negativeControls": [
+    {
+      "label": "Wholefood GI may not be used only on raw flour",
+      "status": "REJECTED",
+      "reason": "Missing or double-counted component allocation"
+    },
+    {
+      "label": "Double-counted flour as separate side",
+      "status": "REJECTED",
+      "reason": "Missing or double-counted component allocation"
+    },
+    {
+      "label": "Missing egg allocation",
+      "status": "REJECTED",
+      "reason": "Missing or double-counted component allocation"
+    },
+    {
+      "label": "Unknown mushroom mass is not zero",
+      "status": "REJECTED",
+      "reason": "Unknown positive-CHO food quantity is not zero"
+    },
+    {
+      "label": "Unreviewed hoisin cannot inherit soy GI50",
+      "status": "REJECTED",
+      "reason": "Unknown food composition"
+    },
+    {
+      "label": "Haini reported69.18 remains source HOLD",
+      "status": "REJECTED",
+      "reason": "Source HOLD or non-reviewed GI may not be applied"
+    },
+    {
+      "label": "Egg/mushroom filled-before-steaming bread is not the unfilled source component",
+      "status": "REJECTED",
+      "reason": "Prepared food is not the complete unfilled bun component"
+    },
+    {
+      "label": "1.5g positive egg omission is blocked",
+      "status": "REJECTED",
+      "reason": "Unreviewed or too-large positive omission"
+    }
+  ],
+  "newOwnCandidateIds": 1,
+  "totalOwnConditionalIds": 18,
+  "newApprovedValues": 0,
+  "newPublishedValues": 0,
+  "currentProductionModelWholeRecipeRun": false,
+  "method": "Isolated proposal: human prepared bun component GI once plus separate named soy and positive egg/mushroom omissions. No new production method or source approval."
+}

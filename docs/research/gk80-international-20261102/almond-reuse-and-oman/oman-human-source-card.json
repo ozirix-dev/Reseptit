@@ -1,0 +1,43 @@
+{
+  "kind": "CONDITIONAL_HUMAN_SOURCE_NOT_MODEL_ADMITTED",
+  "newAgainstOwnExistingFlourScreen": true,
+  "food": "Deep-fried vegetable samosa sold in Oman",
+  "humanGi": 60.4,
+  "reportedPlusMinus": 3.5,
+  "uncertaintyType": "NOT_IDENTIFIED_ON_TABLE; do not call it SEM or SD",
+  "humanParticipants": 12,
+  "inVitroPredictedGi": 69.2,
+  "inVitroPredictedPlusMinus": 3.5,
+  "neverInterchangeHumanAndPredicted": true,
+  "source": {
+    "authors": "Amanat Ali,Mostafa I.Waly,Neeru Bhatt",
+    "title": "Correlation between the in-vitro starch digestibility,predicted glycemic index and in-vivo glycemic index of selected Omani snack foods",
+    "year": 2022,
+    "journal": "International Journal of Chemical and Biochemical Sciences21:112-119",
+    "url": "https://iscientific.org/wp-content/uploads/2022/08/13-ijcbs-22-21-13.pdf",
+    "pdfSha256": "0447cc01d372bec86e11f7013da11fa9952a30cc202b519c3569d881fc03380b",
+    "humanVsPredictedLocator": "Table2,PDFpage5,printed116,visually checked",
+    "preparationLocator": "Results3.1,PDFpage3,printed114,visually checked",
+    "methodLocator": "Methods2.1,PDFpage2,printed113",
+    "quality": "SUPPLEMENTARY_PENDING_PROTOCOL_REVIEW;no independentISOconfirmation"
+  },
+  "preparationEvidence": "Locally purchased vegetable-filled samosa,described as deep-fried,with potato/greenpea/coriander/chilli filling. Additional carrot and raisins discussed; exact dough/filling/fat ratios and fry temperature unavailable. No measured rawflourGI.",
+  "humanMethodLimit": "Paper cites Ali2020 for human procedure. Full Ali2020 protocol not recovered; do not promote to an ISO-confirmed primary record.",
+  "related2020": {
+    "doi": "10.4103/ijnpnd.ijnpnd_5_20",
+    "title": "Glycemic Index of Commonly Consumed Snack Foods in Oman",
+    "universityPrimaryMetadata": "https://squ.elsevierpure.com/en/publications/glycemic-index-of-commonly-consumed-snack-foods-in-oman/",
+    "doiResolverResult": "404 during this research pass; university metadata verifies citation but not full methods",
+    "compendiumHumanPoint": 60.35,
+    "compendiumPlusMinus": 5.11,
+    "compendiumReference": "glucose/2h,n12,50gCHO,water arm",
+    "decision": "2022 explicitly cites2020. Same group and matching point; independence of participant cohort not established. Not two independent measurements and no averaging. The two reported dispersion values are not silently reconciled."
+  },
+  "potentialRecipeIds": ["samosa"],
+  "immediateWholeRecipeOpenings": 0,
+  "newCalculatedWholeRecipeCandidates": 0,
+  "whyNotOtherRecipes": "Not an ingredientGI for wheatflour/semolina and not a match for unfilled johnnycake,pancake,steamedbun or chickpea-flour fritter.",
+  "nextGate": "Recover upstream human protocol and establish exact targetpreparation/recipe ratios before a separately approved prepared-food application. No lab-prediction regression used to invent GI.",
+  "methodChangeApplied": false,
+  "publicationApplied": false
+}

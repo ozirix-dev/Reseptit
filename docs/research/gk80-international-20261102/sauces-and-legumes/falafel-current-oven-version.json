@@ -1,0 +1,271 @@
+{
+  "recipeId": "falafel",
+  "sourcePath": "reseptit/paaruoat/falafel.md",
+  "sourceLfSha256": "5f2549ef9ba3d3506719b5ccb0258b8ef374f8870c33348fd11a5a6edf4ac6b4",
+  "servings": 4,
+  "sourceIngredients": [
+    {
+      "amount": 250,
+      "unit": "g",
+      "item": "kuivattuja kikherneitä"
+    },
+    {
+      "amount": 1,
+      "unit": "kpl",
+      "item": "keltasipulia",
+      "note": "lohkottuna"
+    },
+    {
+      "amount": 3,
+      "unit": "kpl",
+      "item": "valkosipulinkynttä"
+    },
+    {
+      "amount": 25,
+      "unit": "g",
+      "item": "lehtipersiljaa"
+    },
+    {
+      "amount": 15,
+      "unit": "g",
+      "item": "tuoretta korianteria"
+    },
+    {
+      "amount": 1,
+      "unit": "tl",
+      "item": "juustokuminaa"
+    },
+    {
+      "amount": 1,
+      "unit": "tl",
+      "item": "jauhettua korianteria"
+    },
+    {
+      "amount": 0.5,
+      "unit": "tl",
+      "item": "leivinjauhetta"
+    },
+    {
+      "amount": 1,
+      "unit": "tl",
+      "item": "suolaa"
+    },
+    {
+      "amount": 1,
+      "unit": "rkl",
+      "item": "sitruunamehua"
+    },
+    {
+      "amount": 20,
+      "unit": "g",
+      "item": "oliiviöljyä",
+      "note": "falafelien voiteluun"
+    },
+    {
+      "amount": 120,
+      "unit": "g",
+      "item": "tahinia",
+      "note": "kastikkeeseen"
+    },
+    {
+      "amount": 100,
+      "unit": "ml",
+      "item": "kylmää vettä",
+      "note": "kastikkeeseen"
+    },
+    {
+      "amount": 1,
+      "unit": "rkl",
+      "item": "sitruunamehua",
+      "note": "kastikkeeseen"
+    }
+  ],
+  "originalIngredientCount": 14,
+  "variant": "All14 current listed falafel-and-tahini rows. Oven-baked dry soaked chickpeas. Unquantified serving suggestions pita bread and salad are outside this quantified recipe, not assigned zero.",
+  "researchStatus": "SOURCE_DOCUMENTED_CURRENT_INPUT_PENDING_APPLICATION_REVIEW",
+  "ingredients": [
+    {
+      "name": "kuivattuja kikherneitä",
+      "grams": 250,
+      "fineliRecordId": "fineli-31218",
+      "giRecordId": "legumes-category-mean-gi-34",
+      "massEvidence": "Current250g DRY chickpeas; Fineli31218, not green dry peas371. Soak and drain, grind, bake220C20–25min; retain starting dry CHO, no unsupported leaching deduction.",
+      "foodKey": "legume",
+      "preparationKey": "legume-category",
+      "giMatchEvidence": "Existing broad published category mean retained as LOW cooked-food proxy. Raw starting CHO retained; no quantified cooking loss. Not preparation-specific GI and not measured finished-meal response."
+    },
+    {
+      "name": "keltasipulia",
+      "grams": 55,
+      "fineliRecordId": "fineli-335",
+      "giRecordId": null,
+      "massEvidence": "Current1 onion × Fineli335 KPL_M55g."
+    },
+    {
+      "name": "valkosipulinkynttä",
+      "grams": 10.5,
+      "fineliRecordId": "fineli-393",
+      "giRecordId": null,
+      "massEvidence": "Current3 cloves × Fineli393 KPL_M3.5g. Not3 yellow onions165g."
+    },
+    {
+      "name": "lehtipersiljaa",
+      "grams": 25,
+      "fineliRecordId": "fineli-333",
+      "giRecordId": null,
+      "massEvidence": "Current25g parsley; ordinary fresh parsley composition is an explicit LOW variety proxy."
+    },
+    {
+      "name": "tuoretta korianteria",
+      "grams": 15,
+      "fineliRecordId": "fineli-34238",
+      "giRecordId": null,
+      "massEvidence": "Current15g fresh coriander, not assumed trace seasoning."
+    },
+    {
+      "name": "juustokuminaa",
+      "grams": 2.65,
+      "fineliRecordId": "afcd-F003327",
+      "giRecordId": null,
+      "massEvidence": "Current1tl; AUSNUT2023 measure49455 density.53g/ml × metric5ml; generic ground cumin quantity proxy."
+    },
+    {
+      "name": "jauhettua korianteria",
+      "grams": 2.65,
+      "fineliRecordId": "afcd-F003190",
+      "giRecordId": null,
+      "massEvidence": "Current1tl; AUSNUT2023 measure49454 density.53g/ml × metric5ml."
+    },
+    {
+      "name": "leivinjauhetta",
+      "grams": 2.275,
+      "fineliRecordId": "afcd-F000247",
+      "giRecordId": null,
+      "massEvidence": "Current.5tl; AUSNUT2023 measure49514 density.91g/ml ×2.5ml. Positive starch retained, no spice-GI assignment."
+    },
+    {
+      "name": "suolaa",
+      "grams": 6.5,
+      "fineliRecordId": "fineli-30",
+      "giRecordId": null,
+      "massEvidence": "Current1tl; Fineli30 TL6.5g."
+    },
+    {
+      "name": "sitruunamehua",
+      "grams": 15,
+      "fineliRecordId": "fineli-11557",
+      "giRecordId": null,
+      "massEvidence": "Current1rkl; native UNDILUTED juice11557 RKL15g, not diluted437."
+    },
+    {
+      "name": "oliiviöljyä",
+      "grams": 20,
+      "fineliRecordId": "fineli-536",
+      "giRecordId": null,
+      "massEvidence": "Current20g brushed onto falafels; not historical500g frying oil."
+    },
+    {
+      "name": "tahinia",
+      "grams": 120,
+      "fineliRecordId": "fineli-11087",
+      "giRecordId": null,
+      "massEvidence": "Current120g unsalted sesame paste native Fineli11087. Positive CHO omitted under existing tolerance, not assigned GI0."
+    },
+    {
+      "name": "kylmää vettä",
+      "grams": 100,
+      "fineliRecordId": "fineli-922",
+      "giRecordId": null,
+      "massEvidence": "Current100ml tap water; native DL100g."
+    },
+    {
+      "name": "sitruunamehua",
+      "grams": 15,
+      "fineliRecordId": "fineli-11557",
+      "giRecordId": null,
+      "massEvidence": "Separate sauce row, current1rkl;11557 RKL15g; not accidentally deduplicated."
+    }
+  ],
+  "expected": {
+    "unroundedGk": "9.86",
+    "omittedChoUpperG": "1.9570875",
+    "marginBelowCumulativeCapG": "0.0429125",
+    "independentDecimalRows": [
+      {
+        "name": "kuivattuja kikherneitä",
+        "choPerServingOrNominalUpper": "29.0",
+        "giRecordId": "legumes-category-mean-gi-34"
+      },
+      {
+        "name": "keltasipulia",
+        "choPerServingOrNominalUpper": "0.66",
+        "giRecordId": null
+      },
+      {
+        "name": "valkosipulinkynttä",
+        "choPerServingOrNominalUpper": "0.427875",
+        "giRecordId": null
+      },
+      {
+        "name": "lehtipersiljaa",
+        "choPerServingOrNominalUpper": "0.06875",
+        "giRecordId": null
+      },
+      {
+        "name": "tuoretta korianteria",
+        "choPerServingOrNominalUpper": "0.0189375",
+        "giRecordId": null
+      },
+      {
+        "name": "juustokuminaa",
+        "choPerServingOrNominalUpper": "0.2232625",
+        "giRecordId": null
+      },
+      {
+        "name": "jauhettua korianteria",
+        "choPerServingOrNominalUpper": "0.05565",
+        "giRecordId": null
+      },
+      {
+        "name": "leivinjauhetta",
+        "choPerServingOrNominalUpper": "0.1126125",
+        "giRecordId": null
+      },
+      {
+        "name": "suolaa",
+        "choPerServingOrNominalUpper": "0.00",
+        "giRecordId": null
+      },
+      {
+        "name": "sitruunamehua",
+        "choPerServingOrNominalUpper": "0.06",
+        "giRecordId": null
+      },
+      {
+        "name": "oliiviöljyä",
+        "choPerServingOrNominalUpper": "0.0",
+        "giRecordId": null
+      },
+      {
+        "name": "tahinia",
+        "choPerServingOrNominalUpper": "0.27",
+        "giRecordId": null
+      },
+      {
+        "name": "kylmää vettä",
+        "choPerServingOrNominalUpper": "0.0",
+        "giRecordId": null
+      },
+      {
+        "name": "sitruunamehua",
+        "choPerServingOrNominalUpper": "0.06",
+        "giRecordId": null
+      }
+    ]
+  },
+  "sourceApplicationApproved": false,
+  "publicationApproved": false,
+  "newPublishedValue": false,
+  "macroPublicationAuthorized": false,
+  "policyChangeApplied": false
+}

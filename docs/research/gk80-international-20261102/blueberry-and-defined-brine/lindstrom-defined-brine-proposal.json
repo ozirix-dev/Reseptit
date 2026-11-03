@@ -1,0 +1,171 @@
+{
+  "recipeId": "lindstrominpihvit-kaalilla",
+  "sourcePath": "reseptit/paaruoat/lindstrominpihvit-kaalilla.md",
+  "sourceLfSha256": "ea116b68468b429136a7d799a9e84530ab6d618b77aa4dcd2a18857599f77069",
+  "sourceIngredients": [
+    {
+      "amount": 500,
+      "unit": "g",
+      "item": "naudan jauhelihaa"
+    },
+    {
+      "amount": 100,
+      "unit": "g",
+      "item": "säilykepunajuurta"
+    },
+    {
+      "amount": 2,
+      "unit": "rkl",
+      "item": "punajuurilientä"
+    },
+    {
+      "amount": 1,
+      "unit": "kpl",
+      "item": "pieni sipuli"
+    },
+    {
+      "amount": 1,
+      "unit": "kpl",
+      "item": "kananmuna"
+    },
+    {
+      "amount": 1,
+      "unit": "rkl",
+      "item": "Dijon-sinappia"
+    },
+    {
+      "amount": 2,
+      "unit": "rkl",
+      "item": "voita"
+    },
+    {
+      "amount": 500,
+      "unit": "g",
+      "item": "valkokaalia"
+    },
+    {
+      "amount": null,
+      "unit": "",
+      "item": "suolaa ja mustapippuria"
+    }
+  ],
+  "servings": 4,
+  "variant": "NEW same-day beet and weighed homemade brine version:100g boiled unsalted beet plus all30g brine made from10g sugar,5g white winevinegar,15g water; substitutes original commercial preservedbeet and unmeasured jarjuice. NamedDijon15.75g,smallonion30g,newpepper.5g. No claim of equivalent2rkl volume or oldproduct nutrientvalue.",
+  "ingredients": [
+    {
+      "sourceRowIndex": 0,
+      "name": "naudan jauhelihaa7%rasva",
+      "grams": 500,
+      "fineliRecordId": "fineli-712",
+      "giRecordId": null
+    },
+    {
+      "sourceRowIndex": 1,
+      "name": "keitetty punajuuri (red beet vegetable),unsalted",
+      "grams": 100,
+      "fineliRecordId": "fineli-30382",
+      "giRecordId": "vegetables-category-mean-gi-66",
+      "massEvidence": "NEW100g edible boiled unsalted beet weighed before mixing with defined brine. Not a claimed native value for commercial beet preserve.",
+      "foodKey": "vegetable",
+      "preparationKey": "vegetable-category",
+      "giMatchEvidence": "Existing published broad category proxy,LOW; new named recipe application needs source/content review. Not a measured ingredient- or meal-specific GI."
+    },
+    {
+      "sourceRowIndex": 2,
+      "name": "NEWliemen sokeri",
+      "grams": 10,
+      "fineliRecordId": "fineli-1",
+      "giRecordId": "sugar-syrups-category-mean-gi-58",
+      "massEvidence": "10g ordinary crystalline sugar included in full30g brine batch; nativeCHO99.9g/100g,notzero.",
+      "foodKey": "sugar-syrups-category-mean",
+      "preparationKey": "category-mean",
+      "giMatchEvidence": "Existing published broad category proxy,LOW; new named recipe application needs source/content review. Not a measured ingredient- or meal-specific GI."
+    },
+    {
+      "sourceRowIndex": 2,
+      "name": "NEWliemen valkoviinietikka",
+      "grams": 5,
+      "fineliRecordId": "fineli-929",
+      "giRecordId": null
+    },
+    {
+      "sourceRowIndex": 2,
+      "name": "NEWliemen vesi",
+      "grams": 15,
+      "fineliRecordId": "fineli-922",
+      "giRecordId": null
+    },
+    {
+      "sourceRowIndex": 3,
+      "name": "pieni keltasipuli",
+      "grams": 30,
+      "fineliRecordId": "fineli-335",
+      "giRecordId": null,
+      "massEvidence": "Fineli335small30g,not medium55g."
+    },
+    {
+      "sourceRowIndex": 4,
+      "name": "kananmuna",
+      "grams": 55,
+      "fineliRecordId": "fineli-858",
+      "giRecordId": null
+    },
+    {
+      "sourceRowIndex": 5,
+      "name": "MailleDijonOriginal865gDK SKU12017601EAN3036810201761",
+      "grams": 15.75,
+      "fineliRecordId": null,
+      "giRecordId": null,
+      "availableCarbohydrateUpperBoundPerServingG": 0.1378125,
+      "upperBoundEvidence": "NamedEUlabel3.5gCHO/100g*15.75g/4=.1378125 nominalupper,notanalyticalmaximum. Individualpolyolsunknown.",
+      "excludedReason": "Positive label-based CHO allowance,not mustardGI orzero."
+    },
+    {
+      "sourceRowIndex": 6,
+      "name": "voita",
+      "grams": 28,
+      "fineliRecordId": "fineli-500",
+      "giRecordId": null
+    },
+    {
+      "sourceRowIndex": 7,
+      "name": "valkokaalia",
+      "grams": 500,
+      "fineliRecordId": "fineli-320",
+      "giRecordId": "vegetables-category-mean-gi-66",
+      "foodKey": "vegetable",
+      "preparationKey": "vegetable-category",
+      "giMatchEvidence": "Existing published broad category proxy,LOW; new named recipe application needs source/content review. Not a measured ingredient- or meal-specific GI."
+    },
+    {
+      "sourceRowIndex": 8,
+      "name": "NEWweighedmustapippuri",
+      "grams": 0.5,
+      "fineliRecordId": "afcd-F006618",
+      "giRecordId": null
+    },
+    {
+      "sourceRowIndex": 8,
+      "name": "plain suola maun mukaan",
+      "grams": null,
+      "fineliRecordId": null,
+      "giRecordId": null,
+      "estimatedAvailableCarbohydratePerServingG": 0,
+      "negligibleAssumption": "Native Fineli30 CHO0 coefficient. Saltmassnotknown;not assumedzero saltmass.",
+      "excludedReason": "Source-backed plain salt zeroCHO coefficient only."
+    }
+  ],
+  "brineVersionSpecification": "Mix all10g sugar+5g white winevinegar+15g water with100g boiled beet for this dish; use all beet and all brine in same batch, no discarded liquid or assumed diffusion loss. This is a source-resolved same-day recipe component, not a shelf-stable canning instruction or the current commercial-pickle version.",
+  "expected": {
+    "gk": "6.895695",
+    "omittedChoIncludingCeilingsG": "0.6495625",
+    "display": "5–10"
+  },
+  "sourceApplicationApproved": false,
+  "contentVersionApproved": false,
+  "actualBatchWeighed": false,
+  "publicationApproved": false,
+  "newPublishedValue": false,
+  "macroPublicationAuthorized": false,
+  "newRuleApplied": false
+}

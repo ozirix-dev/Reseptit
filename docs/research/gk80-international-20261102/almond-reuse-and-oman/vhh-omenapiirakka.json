@@ -1,0 +1,199 @@
+{
+  "recipeId": "vhh-omenapiirakka",
+  "sourcePath": "reseptit/jalkiruoat/vhh-omenapiirakka.md",
+  "sourceIngredients": [
+    {
+      "amount": 150,
+      "unit": "g",
+      "item": "mantelijauhoa"
+    },
+    {
+      "amount": 50,
+      "unit": "g",
+      "item": "voita kylmänä"
+    },
+    {
+      "amount": 1,
+      "unit": "kpl",
+      "item": "kananmuna"
+    },
+    {
+      "amount": 2,
+      "unit": "rkl",
+      "item": "erytritolia pohjaan"
+    },
+    {
+      "amount": 2,
+      "unit": "kpl",
+      "item": "pientä omenaa"
+    },
+    {
+      "amount": 1,
+      "unit": "tl",
+      "item": "kanelia"
+    },
+    {
+      "amount": 1,
+      "unit": "rkl",
+      "item": "sitruunamehua"
+    },
+    {
+      "amount": 100,
+      "unit": "g",
+      "item": "maitorahkaa"
+    },
+    {
+      "amount": 1,
+      "unit": "kpl",
+      "item": "kananmuna täytteeseen"
+    },
+    {
+      "amount": 1,
+      "unit": "rkl",
+      "item": "erytritolia täytteeseen"
+    }
+  ],
+  "servings": 8,
+  "ingredients": [
+    {
+      "name": "mantelijauhoa",
+      "grams": 150,
+      "fineliRecordId": "MEXT2023-05001",
+      "giRecordId": null,
+      "massEvidence": "New source-resolved version: weigh150g dry unroasted whole ediblealmonds,grind without peeling/defatting/sieving,retain allmeal. Not a generic commercial almondflour composition substitution.",
+      "recipeQuantity": {
+        "amount": 150,
+        "unit": "g",
+        "massGrams": 150
+      }
+    },
+    {
+      "name": "voita kylmänä",
+      "grams": 50,
+      "fineliRecordId": "fineli-500",
+      "giRecordId": null,
+      "massEvidence": "Current gram amount or source-specific measure; see source-catalog.",
+      "recipeQuantity": {
+        "amount": 50,
+        "unit": "g",
+        "massGrams": 50
+      }
+    },
+    {
+      "name": "kananmuna",
+      "grams": 55,
+      "fineliRecordId": "fineli-858",
+      "giRecordId": null,
+      "massEvidence": "Current gram amount or source-specific measure; see source-catalog.",
+      "recipeQuantity": {
+        "amount": 1,
+        "unit": "kpl",
+        "massGrams": 55
+      }
+    },
+    {
+      "name": "erytritolia pohjaan",
+      "grams": 0,
+      "fineliRecordId": "foodin-erythritol-200g-label-2026-10-24",
+      "giRecordId": null,
+      "massEvidence": "Original tablespoon amount of pure Foodin100%erythritol remains. Model0g is a mass sentinel only; source-backed availableCHO coefficient=100CHO-100polyols=0. No missing ingredient removed.",
+      "recipeQuantity": {
+        "amount": 2,
+        "unit": "rkl",
+        "massGrams": 0
+      }
+    },
+    {
+      "name": "pientä omenaa",
+      "grams": 200,
+      "fineliRecordId": "afcd-F000095",
+      "giRecordId": "fruit-category-mean-gi-51",
+      "massEvidence": "New weighed version:200g edible raw GrannySmith apple,skin retained,cored,from two smallapples. Explicitnewweight,not proof100g per smallapple. AFCD F000095 matches variety/skin state;starting amount bakedinpie.",
+      "recipeQuantity": {
+        "amount": 2,
+        "unit": "kpl",
+        "massGrams": 200
+      },
+      "foodKey": "fruit-category-mean",
+      "preparationKey": "category-mean",
+      "giMatchEvidence": "Existing broad category mean,LOW,new exactrecipeapplicationNOTAPPROVED. Native source foodclass and full preparation disclosed; not measured thispieGI."
+    },
+    {
+      "name": "kanelia",
+      "grams": 2.55,
+      "fineliRecordId": "afcd-F002963",
+      "giRecordId": null,
+      "massEvidence": "Current gram amount or source-specific measure; see source-catalog.",
+      "recipeQuantity": {
+        "amount": 1,
+        "unit": "tl",
+        "massGrams": 2.55
+      }
+    },
+    {
+      "name": "sitruunamehua",
+      "grams": 15,
+      "fineliRecordId": "fineli-11557",
+      "giRecordId": null,
+      "massEvidence": "Current gram amount or source-specific measure; see source-catalog.",
+      "recipeQuantity": {
+        "amount": 1,
+        "unit": "rkl",
+        "massGrams": 15
+      }
+    },
+    {
+      "name": "maitorahkaa",
+      "grams": 100,
+      "fineliRecordId": "fineli-622",
+      "giRecordId": "dairy-category-mean-gi-35",
+      "massEvidence": "Current gram amount or source-specific measure; see source-catalog.",
+      "recipeQuantity": {
+        "amount": 100,
+        "unit": "g",
+        "massGrams": 100
+      },
+      "foodKey": "dairy",
+      "preparationKey": "unflavoured-dairy",
+      "giMatchEvidence": "Existing broad category mean,LOW,new exactrecipeapplicationNOTAPPROVED. Native source foodclass and full preparation disclosed; not measured thispieGI."
+    },
+    {
+      "name": "kananmuna täytteeseen",
+      "grams": 55,
+      "fineliRecordId": "fineli-858",
+      "giRecordId": null,
+      "massEvidence": "Current gram amount or source-specific measure; see source-catalog.",
+      "recipeQuantity": {
+        "amount": 1,
+        "unit": "kpl",
+        "massGrams": 55
+      }
+    },
+    {
+      "name": "erytritolia täytteeseen",
+      "grams": 0,
+      "fineliRecordId": "foodin-erythritol-200g-label-2026-10-24",
+      "giRecordId": null,
+      "massEvidence": "Original tablespoon amount of pure Foodin100%erythritol remains. Model0g is a mass sentinel only; source-backed availableCHO coefficient=100CHO-100polyols=0. No missing ingredient removed.",
+      "recipeQuantity": {
+        "amount": 1,
+        "unit": "rkl",
+        "massGrams": 0
+      }
+    }
+  ],
+  "expected": {
+    "unroundedGk": "1.49550",
+    "omittedChoIncludingCeilingsG": "1.18390625",
+    "omittedPhysicalCeilingG": "0",
+    "almondChoG": ".975",
+    "almondMarginTo1g": ".025"
+  },
+  "sourceApplicationApproved": false,
+  "contentVersionApproved": false,
+  "publicationApproved": false,
+  "newPublishedValue": false,
+  "macroPublicationAuthorized": false,
+  "newRulesApplied": false,
+  "newSourceCredit": false
+}

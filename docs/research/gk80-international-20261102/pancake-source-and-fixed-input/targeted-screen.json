@@ -1,0 +1,36 @@
+{
+  "reuse": "Existing33case flour screen and bakery final source review reused; no full recipe reinventory.",
+  "sharedFamilyScreenedPreviously": 33,
+  "newHumanSourceCardsVerified": 1,
+  "immediatelyUsableCompleteRecipes": 0,
+  "newConditionalRecipeIds": [
+    "hunaja-sinappikana-kaalilla"
+  ],
+  "flourTargetsNotCountedAsOpen": [
+    {
+      "recipeId": "kiinalainen-kevatsipulipannukakku",
+      "decision": "HOLD: original100g flour60ml water is kneaded,rolled,layered and uses sesame oil; paste trial does not establish identical matrix.",
+      "remaining": "Flour refinement,hydration,fat ratio and layered preparation correspondence."
+    },
+    {
+      "recipeId": "kiinalainen-jianbing-munaletty",
+      "decision": "HOLD: thin flour-water crepe is closer, but water amount is unspecified; eggs added during cooking; soybean paste unknown.",
+      "remaining": "Quantified water, named paste mass/composition,component allocation and preparation match."
+    },
+    {
+      "recipeId": "korealainen-kimchi-jeon-aamiaiseksi",
+      "decision": "HOLD: materialkimchi and egg mixed into batter; not plain flour paste.",
+      "remaining": "Kimchi composition plus prepared-component evidence; no new zero or bulk-paste imputation."
+    }
+  ],
+  "rejectedShortcut": {
+    "food": "Huiluntuhti grill sausage0.3g CHO/100g",
+    "reason": "Different sausage class from original lenkkimakkara. Not substituted or counted as a source fix. Snellman Pro ring sausage5.7g CHO/100g does not meet500g/4 under1g omission.",
+    "sources": [
+      "https://www.kivikylan.fi/tuotteet/grillimakkarat/huiluntuhti/",
+      "https://snellmanpro.fi/snellman/kunnon-lenkki/"
+    ]
+  },
+  "farinataNotCounted": "A tomato-binding change alone would retain broad legumeGI on chickpea flour; flour/preparation applicability needs explicit review, not a falsely labelled new measured flourGI.",
+  "newMethodRulesApplied": 0
+}

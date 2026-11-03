@@ -1,0 +1,244 @@
+{
+  "recipeId": "indialainen-poha-maapahkinoilla",
+  "mechanicalModelOnly": true,
+  "result": {
+    "recipeId": "indialainen-poha-maapahkinoilla",
+    "servings": 2,
+    "status": "CALCULATED",
+    "unroundedGlycemicLoadPerServing": 28.327974999999995,
+    "glycemicLoadPerServing": 28.33,
+    "glycemicLoadRangePerServing": null,
+    "omittedAvailableCarbohydratePerServingG": 0.210525,
+    "omittedAvailableCarbohydrateUpperBoundPerServingG": 0,
+    "confidence": "LOW",
+    "interpretation": "Ingredient-based estimate only; actual prepared-meal response varies. Positive contributions are included when source-supported. An unmatched individual ingredient portion may be omitted only below 1 g available carbohydrate per serving, and all such omissions must total less than the 2 g/serving editorial tolerance.",
+    "ingredients": [
+      {
+        "name": "riisihiutale",
+        "grams": 100,
+        "fineliRecordId": "fineli-182",
+        "availableCarbohydratePer100g": 79.3,
+        "availableCarbohydratePerServingG": 39.65,
+        "availableCarbohydrateUpperBoundPerServingG": null,
+        "availableCarbohydratePerServingRangeG": null,
+        "gi": 67,
+        "giRecordId": "rice-category-mean-gi-67",
+        "qualityTier": "SUPPLEMENTARY",
+        "matchKind": "CATEGORY_MEAN",
+        "confidence": "LOW",
+        "giContribution": 26.565499999999997,
+        "giContributionRange": {
+          "min": 26.565499999999997,
+          "max": 26.565499999999997
+        },
+        "giCandidates": [
+          {
+            "id": "rice-category-mean-gi-67",
+            "gi": 67,
+            "preparation": "Category mean from Table 1; individual food and preparation were not tested as this item",
+            "qualityTier": "SUPPLEMENTARY",
+            "preparationMatches": true,
+            "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
+          }
+        ],
+        "issues": []
+      },
+      {
+        "name": "maapähkinä",
+        "grams": 20,
+        "fineliRecordId": "afcd-F006107",
+        "availableCarbohydratePer100g": 8.9,
+        "availableCarbohydratePerServingG": 0.89,
+        "availableCarbohydrateUpperBoundPerServingG": null,
+        "availableCarbohydratePerServingRangeG": null,
+        "gi": 22,
+        "giRecordId": "nuts-category-mean-gi-22",
+        "qualityTier": "SUPPLEMENTARY",
+        "matchKind": "CATEGORY_MEAN",
+        "confidence": "LOW",
+        "giContribution": 0.19580000000000003,
+        "giContributionRange": {
+          "min": 0.19580000000000003,
+          "max": 0.19580000000000003
+        },
+        "giCandidates": [
+          {
+            "id": "nuts-category-mean-gi-22",
+            "gi": 22,
+            "preparation": "Nut category mean",
+            "qualityTier": "SUPPLEMENTARY",
+            "preparationMatches": true,
+            "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
+          }
+        ],
+        "issues": []
+      },
+      {
+        "name": "curry-lehti",
+        "grams": 3,
+        "fineliRecordId": "IFCT-G010",
+        "availableCarbohydratePer100g": 3.66,
+        "availableCarbohydratePerServingG": 0.054900000000000004,
+        "availableCarbohydrateUpperBoundPerServingG": null,
+        "availableCarbohydratePerServingRangeG": null,
+        "gi": null,
+        "giRecordId": null,
+        "qualityTier": null,
+        "matchKind": null,
+        "confidence": null,
+        "giContribution": null,
+        "giContributionRange": null,
+        "giCandidates": [],
+        "issues": [
+          "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.055 g available carbohydrate): GI evidence is missing."
+        ]
+      },
+      {
+        "name": "herne",
+        "grams": 50,
+        "fineliRecordId": "fineli-370",
+        "availableCarbohydratePer100g": 9.495,
+        "availableCarbohydratePerServingG": 2.37375,
+        "availableCarbohydrateUpperBoundPerServingG": null,
+        "availableCarbohydratePerServingRangeG": null,
+        "gi": 66,
+        "giRecordId": "vegetables-category-mean-gi-66",
+        "qualityTier": "SUPPLEMENTARY",
+        "matchKind": "CATEGORY_MEAN",
+        "confidence": "LOW",
+        "giContribution": 1.5666749999999998,
+        "giContributionRange": {
+          "min": 1.5666749999999998,
+          "max": 1.5666749999999998
+        },
+        "giCandidates": [
+          {
+            "id": "vegetables-category-mean-gi-66",
+            "gi": 66,
+            "preparation": "Broad category mean; preparation and individual vegetables vary",
+            "qualityTier": "SUPPLEMENTARY",
+            "preparationMatches": true,
+            "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
+          }
+        ],
+        "issues": []
+      },
+      {
+        "name": "neutraalia paistoöljyä",
+        "grams": 13.5,
+        "fineliRecordId": "fineli-541",
+        "availableCarbohydratePer100g": 0,
+        "availableCarbohydratePerServingG": 0,
+        "availableCarbohydrateUpperBoundPerServingG": null,
+        "availableCarbohydratePerServingRangeG": null,
+        "gi": null,
+        "giRecordId": null,
+        "qualityTier": null,
+        "matchKind": null,
+        "confidence": null,
+        "giContribution": null,
+        "giContributionRange": null,
+        "giCandidates": [],
+        "issues": []
+      },
+      {
+        "name": "tuoretta korianteria",
+        "grams": 3.75,
+        "fineliRecordId": "afcd-F003192",
+        "availableCarbohydratePer100g": 1.9,
+        "availableCarbohydratePerServingG": 0.035625,
+        "availableCarbohydrateUpperBoundPerServingG": null,
+        "availableCarbohydratePerServingRangeG": null,
+        "gi": null,
+        "giRecordId": null,
+        "qualityTier": null,
+        "matchKind": null,
+        "confidence": null,
+        "giContribution": null,
+        "giContributionRange": null,
+        "giCandidates": [],
+        "issues": [
+          "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.036 g available carbohydrate): GI evidence is missing."
+        ]
+      },
+      {
+        "name": "sitruunamehua",
+        "grams": 15,
+        "fineliRecordId": "fineli-11557",
+        "availableCarbohydratePer100g": 1.6,
+        "availableCarbohydratePerServingG": 0.12,
+        "availableCarbohydrateUpperBoundPerServingG": null,
+        "availableCarbohydratePerServingRangeG": null,
+        "gi": null,
+        "giRecordId": null,
+        "qualityTier": null,
+        "matchKind": null,
+        "confidence": null,
+        "giContribution": null,
+        "giContributionRange": null,
+        "giCandidates": [],
+        "issues": [
+          "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.120 g available carbohydrate): GI evidence is missing."
+        ]
+      },
+      {
+        "name": "suolaa maun mukaan",
+        "grams": null,
+        "fineliRecordId": null,
+        "availableCarbohydratePer100g": null,
+        "availableCarbohydratePerServingG": 0,
+        "availableCarbohydrateUpperBoundPerServingG": null,
+        "availableCarbohydratePerServingRangeG": null,
+        "gi": null,
+        "giRecordId": null,
+        "qualityTier": null,
+        "matchKind": null,
+        "confidence": "LOW",
+        "giContribution": null,
+        "giContributionRange": null,
+        "giCandidates": [],
+        "excludedReason": "Plain salt,source-documented zero CHO,not a spice blend.",
+        "issues": [
+          "Source-documented zero available carbohydrate: NativeFineli30 directavailableCHO0; unspecified salt mass does not establish sodium or macro totals."
+        ]
+      }
+    ],
+    "blockers": []
+  },
+  "negativeControls": [
+    {
+      "label": "Unknown curry-leaf composition is notzero",
+      "status": "INSUFFICIENT SOURCE DATA",
+      "blockers": [
+        "indialainen-poha-maapahkinoilla: curry-lehti: Fineli food record is missing."
+      ]
+    },
+    {
+      "label": "Legacy150g leaves cannot replace current3g",
+      "status": "INSUFFICIENT SOURCE DATA",
+      "blockers": [
+        "indialainen-poha-maapahkinoilla: curry-lehti: GI evidence is missing."
+      ]
+    },
+    {
+      "label": "Unspecified fresh coriander quantity cannot inherit a trace assumption",
+      "status": "INSUFFICIENT SOURCE DATA",
+      "blockers": [
+        "indialainen-poha-maapahkinoilla: tuoretta korianteria: Ingredient mass is missing or invalid."
+      ]
+    },
+    {
+      "label": "Unknown peanut composition blocks",
+      "status": "INSUFFICIENT SOURCE DATA",
+      "blockers": [
+        "indialainen-poha-maapahkinoilla: maapähkinä: Fineli food record is missing."
+      ]
+    }
+  ],
+  "sourceFamilyReused": true,
+  "newSourceCredit": false,
+  "newRulesApplied": false,
+  "sourceApplicationApproved": false,
+  "contentVersionApproved": false,
+  "newPublishedValue": false
+}

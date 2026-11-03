@@ -75,6 +75,6 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 
 ## Muistiinpanot
 
-Keksit ovat pehmeitä kuumana ja kovettuvat jäähtyessään. Makeuttamattoman suklaan maku ja hiilihydraatit vaihtelevat tuotteittain.
+Keksit ovat pehmeitä kuumana ja kovettuvat jäähtyessään. Sokerittoman suklaan maku ja hiilihydraatit vaihtelevat tuotteittain.
 
 Ravintoarvot ovat toistaiseksi pois näkyvistä lähdetietojen tarkistuksen vuoksi.

@@ -1,0 +1,241 @@
+{
+  "researchOnly": true,
+  "sourceApplicationApproved": false,
+  "publicationApproved": false,
+  "newPublishedValue": false,
+  "recipeId": "uunimakkara-sipulipedilla",
+  "all8SourceRowsPresent": true,
+  "result": {
+    "recipeId": "uunimakkara-sipulipedilla",
+    "servings": 4,
+    "status": "CALCULATED",
+    "unroundedGlycemicLoadPerServing": 0.43560000000000004,
+    "glycemicLoadPerServing": 0.44,
+    "glycemicLoadRangePerServing": null,
+    "omittedAvailableCarbohydratePerServingG": 1.6284125,
+    "omittedAvailableCarbohydrateUpperBoundPerServingG": 0.650625,
+    "confidence": "LOW",
+    "interpretation": "Ingredient-based estimate only; actual prepared-meal response varies. Positive contributions are included when source-supported. An unmatched individual ingredient portion may be omitted only below 1 g available carbohydrate per serving, and all such omissions must total less than the 2 g/serving editorial tolerance.",
+    "ingredients": [
+      {
+        "name": "Makutila Tammelan lenkki",
+        "grams": 500,
+        "fineliRecordId": null,
+        "availableCarbohydratePer100g": null,
+        "availableCarbohydratePerServingG": null,
+        "availableCarbohydrateUpperBoundPerServingG": 0.375,
+        "availableCarbohydratePerServingRangeG": null,
+        "gi": null,
+        "giRecordId": null,
+        "qualityTier": null,
+        "matchKind": null,
+        "confidence": "LOW",
+        "giContribution": null,
+        "giContributionRange": null,
+        "giCandidates": [],
+        "excludedReason": "Positive label-based CHO allowance; no ingredient GI and no inferred polyol zero.",
+        "issues": [
+          "Conservative available-carbohydrate upper bound counted toward cumulative 2 g/serving editorial tolerance; this is not an actual nutrient estimate: Producer declares0.3g CHO/100g;500g/4 gives.375g nominal upper, not analytical maximum."
+        ]
+      },
+      {
+        "name": "34% cheddar, grate from plain solid cheese",
+        "grams": 100,
+        "fineliRecordId": "fineli-698",
+        "availableCarbohydratePer100g": 0.1,
+        "availableCarbohydratePerServingG": 0.025,
+        "availableCarbohydrateUpperBoundPerServingG": null,
+        "availableCarbohydratePerServingRangeG": null,
+        "gi": null,
+        "giRecordId": null,
+        "qualityTier": null,
+        "matchKind": null,
+        "confidence": null,
+        "giContribution": null,
+        "giContributionRange": null,
+        "giCandidates": [],
+        "issues": [
+          "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.025 g available carbohydrate): GI evidence is missing."
+        ]
+      },
+      {
+        "name": "yellow onion, edible peeled mass",
+        "grams": 55,
+        "fineliRecordId": "fineli-335",
+        "availableCarbohydratePer100g": 4.8,
+        "availableCarbohydratePerServingG": 0.66,
+        "availableCarbohydrateUpperBoundPerServingG": null,
+        "availableCarbohydratePerServingRangeG": null,
+        "gi": 66,
+        "giRecordId": "vegetables-category-mean-gi-66",
+        "qualityTier": "SUPPLEMENTARY",
+        "matchKind": "CATEGORY_MEAN",
+        "confidence": "LOW",
+        "giContribution": 0.43560000000000004,
+        "giContributionRange": {
+          "min": 0.43560000000000004,
+          "max": 0.43560000000000004
+        },
+        "giCandidates": [
+          {
+            "id": "vegetables-category-mean-gi-66",
+            "gi": 66,
+            "preparation": "Broad category mean; preparation and individual vegetables vary",
+            "qualityTier": "SUPPLEMENTARY",
+            "preparationMatches": true,
+            "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
+          }
+        ],
+        "issues": []
+      },
+      {
+        "name": "Maille Dijon Original865g DK SKU12017601 EAN3036810201761",
+        "grams": 31.5,
+        "fineliRecordId": null,
+        "availableCarbohydratePer100g": null,
+        "availableCarbohydratePerServingG": null,
+        "availableCarbohydrateUpperBoundPerServingG": 0.275625,
+        "availableCarbohydratePerServingRangeG": null,
+        "gi": null,
+        "giRecordId": null,
+        "qualityTier": null,
+        "matchKind": null,
+        "confidence": "LOW",
+        "giContribution": null,
+        "giContributionRange": null,
+        "giCandidates": [],
+        "excludedReason": "Positive label-based CHO allowance; no ingredient GI and no inferred polyol zero.",
+        "issues": [
+          "Conservative available-carbohydrate upper bound counted toward cumulative 2 g/serving editorial tolerance; this is not an actual nutrient estimate: Named manufacturer label3.5g CHO/100g;31.5g/4. Generic mustard density1.05g/ml*30ml informs new mass target, not measured Maille density."
+        ]
+      },
+      {
+        "name": "plain creme fraiche28% fat",
+        "grams": 100,
+        "fineliRecordId": "fineli-628",
+        "availableCarbohydratePer100g": 3,
+        "availableCarbohydratePerServingG": 0.75,
+        "availableCarbohydrateUpperBoundPerServingG": null,
+        "availableCarbohydratePerServingRangeG": null,
+        "gi": null,
+        "giRecordId": null,
+        "qualityTier": null,
+        "matchKind": null,
+        "confidence": null,
+        "giContribution": null,
+        "giContributionRange": null,
+        "giCandidates": [],
+        "issues": [
+          "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.750 g available carbohydrate): GI evidence is missing."
+        ]
+      },
+      {
+        "name": "butter",
+        "grams": 14,
+        "fineliRecordId": "fineli-500",
+        "availableCarbohydratePer100g": 0.8,
+        "availableCarbohydratePerServingG": 0.028000000000000004,
+        "availableCarbohydrateUpperBoundPerServingG": null,
+        "availableCarbohydratePerServingRangeG": null,
+        "gi": null,
+        "giRecordId": null,
+        "qualityTier": null,
+        "matchKind": null,
+        "confidence": null,
+        "giContribution": null,
+        "giContributionRange": null,
+        "giCandidates": [],
+        "issues": [
+          "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.028 g available carbohydrate): GI evidence is missing."
+        ]
+      },
+      {
+        "name": "ground paprika",
+        "grams": 2.65,
+        "fineliRecordId": "afcd-F006316",
+        "availableCarbohydratePer100g": 19.1,
+        "availableCarbohydratePerServingG": 0.1265375,
+        "availableCarbohydrateUpperBoundPerServingG": null,
+        "availableCarbohydratePerServingRangeG": null,
+        "gi": null,
+        "giRecordId": null,
+        "qualityTier": null,
+        "matchKind": null,
+        "confidence": null,
+        "giContribution": null,
+        "giContributionRange": null,
+        "giCandidates": [],
+        "issues": [
+          "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.127 g available carbohydrate): GI evidence is missing."
+        ]
+      },
+      {
+        "name": "ground black pepper",
+        "grams": 0.5,
+        "fineliRecordId": "afcd-F006618",
+        "availableCarbohydratePer100g": 38.6,
+        "availableCarbohydratePerServingG": 0.04825,
+        "availableCarbohydrateUpperBoundPerServingG": null,
+        "availableCarbohydratePerServingRangeG": null,
+        "gi": null,
+        "giRecordId": null,
+        "qualityTier": null,
+        "matchKind": null,
+        "confidence": null,
+        "giContribution": null,
+        "giContributionRange": null,
+        "giCandidates": [],
+        "issues": [
+          "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.048 g available carbohydrate): GI evidence is missing."
+        ]
+      }
+    ],
+    "blockers": []
+  },
+  "negativeControls": [
+    {
+      "label": "Unspecified sausage cannot inherit Tammelan label",
+      "status": "INSUFFICIENT SOURCE DATA",
+      "blockers": [
+        "uunimakkara-sipulipedilla: Makutila Tammelan lenkki: Positive label-based CHO allowance; no ingredient GI and no inferred polyol zero."
+      ]
+    },
+    {
+      "label": "Harkatien lenkki1.7 label yields2.125g, exceeds individual1g",
+      "status": "INSUFFICIENT SOURCE DATA",
+      "blockers": [
+        "uunimakkara-sipulipedilla: Makutila Tammelan lenkki: Positive label-based CHO allowance; no ingredient GI and no inferred polyol zero."
+      ]
+    },
+    {
+      "label": "Unweighed pepper not zero",
+      "status": "INSUFFICIENT SOURCE DATA",
+      "blockers": [
+        "uunimakkara-sipulipedilla: ground black pepper: Ingredient mass is missing or invalid."
+      ]
+    },
+    {
+      "label": "Dropping onion GI gives2.2884125g cumulative omission",
+      "status": "INSUFFICIENT SOURCE DATA",
+      "blockers": [
+        "uunimakkara-sipulipedilla: cumulative omitted available carbohydrate is 2.288 g/serving, at or above the 2 g editorial tolerance."
+      ]
+    },
+    {
+      "label": "Unknown Dijon brand cannot inherit named label",
+      "status": "INSUFFICIENT SOURCE DATA",
+      "blockers": [
+        "uunimakkara-sipulipedilla: Maille Dijon Original865g DK SKU12017601 EAN3036810201761: Positive label-based CHO allowance; no ingredient GI and no inferred polyol zero."
+      ]
+    },
+    {
+      "label": "Exact individual1g allowance is blocked",
+      "status": "INSUFFICIENT SOURCE DATA",
+      "blockers": [
+        "uunimakkara-sipulipedilla: Makutila Tammelan lenkki: Positive label-based CHO allowance; no ingredient GI and no inferred polyol zero."
+      ]
+    }
+  ],
+  "display": "alle5",
+  "displayIsNotConfidenceInterval": true
+}
