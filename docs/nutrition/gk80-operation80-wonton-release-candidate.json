@@ -1,0 +1,148 @@
+{
+  "recipeId": "kiinalainen-katkarapu-wontonkeitto",
+  "servings": 2,
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "unroundedGk": "11.0504",
+  "omissions": [
+    {
+      "ingredientIndex": 5,
+      "choPer100ml": 0.2
+    }
+  ],
+  "preparation": {
+    "fi": "Täytä {{amount:0}} g QQ Century Wonton Skin -levyjä {{amount:1}} g:lla kuorittuja katkarapuja ja {{amount:2}} g:lla inkivääriä. Sulje ja keitä kypsiksi {{amount:5}} ml:ssa Aneto Natural Low Sodium Chicken Brothia. Lisää {{amount:3}} g paksoita ja {{amount:4}} g kevätsipulia. Jaa keitto {{servings}} annokseen.",
+    "en": "Fill {{amount:0}} g QQ Century Wonton Skin wrappers with {{amount:1}} g peeled shrimp and {{amount:2}} g ginger. Seal and boil until cooked in {{amount:5}} ml Aneto Natural Low Sodium Chicken Broth. Add {{amount:3}} g bok choy and {{amount:4}} g spring onion. Divide the soup into {{servings}} servings.",
+    "sv": "Fyll {{amount:0}} g QQ Century Wonton Skin med {{amount:1}} g skalade räkor och {{amount:2}} g ingefära. Förslut och koka färdiga i {{amount:5}} ml Aneto Natural Low Sodium Chicken Broth. Tillsätt {{amount:3}} g pak choi och {{amount:4}} g salladslök. Dela soppan i {{servings}} portioner.",
+    "th": "ห่อกุ้งปอกเปลือก {{amount:1}} กรัมและขิง {{amount:2}} กรัมด้วยแผ่นเกี๊ยว QQ Century {{amount:0}} กรัม ปิดขอบแล้วต้มจนสุกในน้ำซุปไก่โซเดียมต่ำ Aneto {{amount:5}} มล. ใส่ผักกวางตุ้งฮ่องเต้ {{amount:3}} กรัมและต้นหอม {{amount:4}} กรัม แบ่งซุปเป็น {{servings}} ที่"
+  },
+  "limitation": {
+    "fi": "Wontonin GI-verrokki on liha-salottisipulinyytti. Inkiväärille ja vihanneksille käytetään laskentakoodeja. Liemen hiilihydraatit jäävät GK-summan ulkopuolelle.",
+    "en": "The GI comparator is a meat and shallot dumpling. Ginger and vegetables use assigned GI codes. Broth carbohydrate is excluded from the GL sum.",
+    "sv": "GI-jämförelsen är ett degknyte med kött och schalottenlök. Ingefära och grönsaker har tilldelade GI-koder. Buljongens kolhydrater ingår inte i GB-summan.",
+    "th": "ค่า GI อ้างอิงจากเกี๊ยวไส้เนื้อและหอมแดง ขิงและผักใช้ค่า GI ที่กำหนดตามกลุ่ม การคำนวณไม่รวมคาร์โบไฮเดรตจากน้ำซุป"
+  },
+  "ingredients": [
+    {
+      "name": {
+        "fi": "QQ Century -wontonlevyt",
+        "en": "QQ Century wonton wrappers",
+        "sv": "QQ Century wontonplattor",
+        "th": "แผ่นเกี๊ยว QQ Century"
+      },
+      "grams": 150
+    },
+    {
+      "name": {
+        "fi": "Kuorittu katkarapu",
+        "en": "Peeled shrimp",
+        "sv": "Skalade räkor",
+        "th": "กุ้งปอกเปลือก"
+      },
+      "grams": 150
+    },
+    {
+      "name": {
+        "fi": "Inkivääri",
+        "en": "Ginger",
+        "sv": "Ingefära",
+        "th": "ขิง"
+      },
+      "grams": 3
+    },
+    {
+      "name": {
+        "fi": "Paksoi",
+        "en": "Bok choy",
+        "sv": "Pak choi",
+        "th": "ผักกวางตุ้งฮ่องเต้"
+      },
+      "grams": 100
+    },
+    {
+      "name": {
+        "fi": "Kevätsipuli",
+        "en": "Spring onion",
+        "sv": "Salladslök",
+        "th": "ต้นหอม"
+      },
+      "grams": 12
+    },
+    {
+      "name": {
+        "fi": "Aneto-vähäsuolainen kanaliemi",
+        "en": "Aneto low sodium chicken broth",
+        "sv": "Aneto kycklingbuljong med låg salthalt",
+        "th": "น้ำซุปไก่โซเดียมต่ำ Aneto"
+      },
+      "grams": null,
+      "quantity": {
+        "amount": 700,
+        "unit": "ml"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Yang et al., meat and shallot dumpling",
+      "url": "https://www.wjgnet.com/1007-9327/full/v12/i21/3430.htm",
+      "kind": "HUMAN_GI",
+      "note": "GI 28 for the filled dumpling comparator."
+    },
+    {
+      "title": "QQ Century Wonton Skin",
+      "url": "https://qqcentury.com/wonton-skin/",
+      "kind": "CARBOHYDRATE",
+      "note": "50.8 g carbohydrate per 100 g."
+    },
+    {
+      "title": "Aneto Natural Low Sodium Chicken Broth",
+      "url": "https://www.caldoaneto.com/en/product/wellness-broths/natural-low-sodium-chicken-broth",
+      "kind": "CARBOHYDRATE",
+      "note": "0.2 g carbohydrate per 100 ml."
+    },
+    {
+      "title": "AFCD F007422, F004213, F006250",
+      "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd",
+      "kind": "CARBOHYDRATE",
+      "note": "CC BY-SA 3.0 Australia."
+    },
+    {
+      "title": "USDA 170390",
+      "url": "https://fdc.nal.usda.gov/food-details/170390/nutrients",
+      "kind": "CARBOHYDRATE",
+      "note": "Total carbohydrate minus fibre."
+    }
+  ],
+  "inputs": [
+    [
+      150,
+      50.8,
+      28
+    ],
+    [
+      150,
+      0,
+      0
+    ],
+    [
+      3,
+      4.8,
+      50
+    ],
+    [
+      100,
+      1.18,
+      40
+    ],
+    [
+      12,
+      4.6,
+      40
+    ]
+  ],
+  "boundFiles": {
+    "reseptit/aamupalat/kiinalainen-katkarapu-wontonkeitto.md": "4b40f0444ebb9f98772befef80a5e6751da56b4086cd22df854efcc20d7ed698",
+    "docs/nutrition/gk80-operation80-batch-29.md": "3b1d3a667e135b1cfe64ef1f2889f199a07b40b338848958b87e21d0eff6e96d"
+  }
+}
