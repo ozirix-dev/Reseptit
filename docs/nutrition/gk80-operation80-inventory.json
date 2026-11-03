@@ -4,9 +4,9 @@
   "coverage": {
     "PROPOSED_RANGE": 15,
     "PUBLISHED_SINGLE": 197,
-    "PROPOSED_SINGLE": 15,
+    "PROPOSED_SINGLE": 16,
     "IN_PROGRESS": 25,
-    "NO_GK": 64,
+    "NO_GK": 63,
     "PUBLISHED_RANGE": 10
   },
   "reviewedPrHeads": {
@@ -25,7 +25,6 @@
     "160": "64f2c14ee3b158fbeff6719278ffaa5f436aec4f"
   },
   "queue": [
-    "intialainen-idli-kookoschutneylla",
     "japanilainen-curry-tofulla",
     "karibia-saltfish-fritterit",
     "khao-soi-vhh-konjac",
@@ -115,7 +114,7 @@
     "indonesialainen-nasi-goreng-aamiaisriisi",
     "indonesialainen-pisang-goreng-aamiaiseksi"
   ],
-  "nextRecipeId": "intialainen-idli-kookoschutneylla",
+  "nextRecipeId": "japanilainen-curry-tofulla",
   "recipes": [
     {
       "recipeId": "aloo-paratha",
@@ -3238,10 +3237,10 @@
       "recipeSha256": "8659de7c543284d790fbc4dab4ac0fa29b30e83fd53008679849a54572abceed",
       "pilotInputSha256": "bae6655316cd92b801e87124bb6c513a615472ef8a7508c00217b49cff6c8340",
       "servings": 2,
-      "status": "NO_GK",
+      "status": "PROPOSED_SINGLE",
       "priorEvidence": [],
-      "level": null,
-      "ownerApproval": null,
+      "level": "B",
+      "ownerApproval": false,
       "sourceQualified": null,
       "blockers": [
         "intialainen-idli-kookoschutneylla: kookos: No specific Fineli/AFCD food record and preparation match was resolved for “kookos”; it is not treated as zero.",
@@ -3302,7 +3301,45 @@
             "Individual sub-1 g contribution counted toward cumulative 2 g/serving editorial tolerance: Conservative culinary-use bound 0.2 g per recipe, divided by servings, below 1 g available carbohydrate per serving."
           ]
         }
-      ]
+      ],
+      "operation80Proposal": {
+        "evidencePath": "docs/nutrition/gk80-operation80-batch-09.md",
+        "baselineRecipeSha256": "8659de7c543284d790fbc4dab4ac0fa29b30e83fd53008679849a54572abceed",
+        "inputFields": [
+          "gramsBatch",
+          "choPer100g"
+        ],
+        "matrixInputs": [
+          [
+            80,
+            79
+          ],
+          [
+            20,
+            75.7
+          ],
+          [
+            16,
+            57
+          ],
+          [
+            27,
+            6.23
+          ],
+          [
+            2,
+            15.89
+          ]
+        ],
+        "choPerServing": "44.72995",
+        "scenarios": [
+          {
+            "giGlucoseScale": "60",
+            "gkPerServing": "26.8379700"
+          }
+        ],
+        "publicationAuthorized": false
+      }
     },
     {
       "recipeId": "intialainen-mannasuurimoupma",
