@@ -1,0 +1,100 @@
+{
+  "recipeId": "kiinalainen-teehaudutetut-munat",
+  "servings": 2,
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "unroundedGk": "0.0825",
+  "inputs": [
+    [
+      110,
+      0.3,
+      50
+    ]
+  ],
+  "ingredients": [
+    {
+      "name": {
+        "fi": "Kananmunat",
+        "en": "Eggs",
+        "sv": "Ägg",
+        "th": "ไข่"
+      },
+      "grams": 110
+    },
+    {
+      "name": {
+        "fi": "Kikkoman-soijakastike",
+        "en": "Kikkoman soy sauce",
+        "sv": "Kikkoman-sojasås",
+        "th": "ซีอิ๊ว Kikkoman"
+      },
+      "grams": null,
+      "quantity": {
+        "amount": 15,
+        "unit": "ml"
+      }
+    },
+    {
+      "name": {
+        "fi": "Tähtianis",
+        "en": "Star anise",
+        "sv": "Stjärnanis",
+        "th": "โป๊ยกั๊ก"
+      },
+      "grams": 1
+    },
+    {
+      "name": {
+        "fi": "Makeuttamaton musta tee",
+        "en": "Unsweetened black tea",
+        "sv": "Osötat svart te",
+        "th": "ชาดำไม่หวาน"
+      },
+      "grams": null,
+      "quantity": {
+        "amount": 150,
+        "unit": "ml"
+      }
+    }
+  ],
+  "omissions": [
+    {
+      "ingredientIndex": 1,
+      "choPer100ml": 3.2
+    },
+    {
+      "ingredientIndex": 2,
+      "choPer100g": 100
+    }
+  ],
+  "preparation": {
+    "fi": "Keitä kaksi munaa ja jäähdytä hetki. Halkeile kuoret kevyesti. Kuumenna tee, soija, tähtianis ja suola. Hauduta munat mausteliemessä, kuori ja jaa munat sekä tarjoiltava liemi tasan {{servings}} annokseen.",
+    "en": "Boil two eggs and cool briefly. Gently crack the shells. Heat the tea, soy sauce, star anise and salt. Simmer the eggs in the seasoned liquid, peel and divide the eggs and any served liquid evenly into {{servings}} servings.",
+    "sv": "Koka två ägg och kyl dem kort. Knacka försiktigt skalen så att de spricker. Värm te, soja, stjärnanis och salt. Sjud äggen i lagen, skala och dela äggen och den lag som serveras jämnt i {{servings}} portioner.",
+    "th": "ต้มไข่สองฟองแล้วพักให้เย็นสักครู่ เคาะเปลือกให้ร้าวเบา ๆ อุ่นชา ซีอิ๊ว โป๊ยกั๊ก และเกลือ เคี่ยวไข่ในน้ำปรุงรส ปอกเปลือก แล้วแบ่งไข่และน้ำที่ใช้เสิร์ฟเท่า ๆ กันเป็น {{servings}} ที่"
+  },
+  "limitation": {
+    "fi": "Kananmunalle käytetään laskennallista GI-koodia 50. Soijan ja tähtianiksen pois rajattu osuus on enintään 0,74 g CHO/annos.",
+    "en": "Eggs use assigned GI code 50. Soy sauce and star anise contribute up to 0.74 g excluded carbohydrate per serving.",
+    "sv": "Ägg använder GI-kod 50. Uteslutna kolhydrater från soja och stjärnanis är högst 0,74 g per portion.",
+    "th": "ไข่ใช้ค่า GI ตามกลุ่ม 50 คาร์โบไฮเดรตจากซีอิ๊วและโป๊ยกั๊กที่ไม่รวมมีไม่เกิน 0.74 กรัมต่อที่"
+  },
+  "sources": [
+    {
+      "title": "Kikkoman",
+      "url": "https://www.kikkoman.co.uk/products/detail/fs-kikkoman-naturally-brewed-soy-sauce"
+    },
+    {
+      "title": "Fineli",
+      "url": "https://fineli.fi/fineli/fi/ohje/19"
+    },
+    {
+      "title": "AFCD",
+      "url": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd"
+    }
+  ],
+  "boundFiles": {
+    "reseptit/aamupalat/kiinalainen-teehaudutetut-munat.md": "bae898d991ed769ae2853f2860e1ebcd3629e292e0d5ca2901244c0377d640e1",
+    "docs/nutrition/gk80-operation80-teehaudutetut-munat.md": "940dcd14e3fb1836eb218da99b4cbebed5d6d8d257f7d73411e1d7153a9bb4cc"
+  }
+}
