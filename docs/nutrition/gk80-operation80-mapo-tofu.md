@@ -1,7 +1,17 @@
-# Mapo tofun riisi ja doubanjiang
+# Mapo tofu ja jasmiiniriisi
 
-Neljälle tarjottavan riisin ehdotettu laskentaversio on 200 g kuivaa pitkäjyväistä jasmiiniriisiä. Keitä vedessä ja jaa koko kypsä erä neljälle. Samalla Fineli 11521:n 79 g/100 g koostumusverrokilla ja GI-skenaarioilla 82 ja 90 kuin kung pao -kanassa riisin osuus on 32,39–35,55 GK/annos. Määrä on uusi punnittu tarjoiluvalinta reseptin neljälle määrittelemättömälle riisiannokselle. [Kung pao -laskelma](gk80-operation80-batch-37.md)
+**33,56–36,72 GK/annos**, ehdollinen arvio neljälle. Keitä 200 g kuivaa pitkäjyväistä jasmiiniriisiä vedessä ja jaa koko kypsä erä neljälle. Valmista mapo tofu reseptin mukaan käyttäen alla punnittuja aineksia, 200 g maustamatonta sian jauhelihaa, vettä ja puhdasta paistoöljyä. Riisimäärä on uusi tarjoiluvalinta.
 
-Lee Kum Kee Toban Djan (UK) sisältää 11 g imeytyvää CHO:ta / 100 g. Esimerkiksi 30 g punnittuna tuo 0,825 g/annos, mikä alittaa yksittäisen pienosuusrajan. 30 g on skenaario, jonka vastaavuutta reseptin kahteen ruokalusikalliseen ei ole varmennettu. [Valmistajan tuotetieto](https://uk.lkk.com/products/chilli-bean-sauce)
+| Aines | Erä, g | Imeytyvä CHO g/100 g | GI |
+| --- | ---: | ---: | ---: |
+| Jasmiiniriisi, kuiva, Fineli 11521:n verrokki | 200 | 79 | 82 tai 90 |
+| Cauldron Extra Firm Tofu | 400 | 1,8 | 50 |
+| Valkosipuli, Fineli 393 | 7 | 16,3 | 40 |
+| Inkivääri, AFCD F004213 | 10 | 4,8 | 50 |
+| Kevätsipuli, AFCD F006250 | 20 | 4,6 | 40 |
 
-Kun 0,825 g korvaa inventaarion vanhan 0,125 g:n tahnaoletuksen, tunnettujen ja arvioitujen pienosuuksien summa on noin 2,4144 g CHO/annos. Tähän sisältyvät valkosipuli, inkivääri, soija, maissitärkkelys, sichuaninpippuri ja kevätsipuli. Summan vuoksi koko reseptin GK jää avoimeksi. Seuraava tarkistus on soijan tuote- ja mittasidos sekä punnittujen mausteiden koostumus. Tofu ja jauheliha tarkistetaan täsmäversion koko laskennassa.
+Riisin GI-skenaariot ja mausteiden GI-koodit seuraavat kung pao -laskelmaa. Tofun GI 50 on vähähiilihydraattisen ruoan laskentakoodi. Summa ennen näyttöpyöristystä on 33,5561 tai 36,7161. [Kung pao](gk80-operation80-batch-37.md) · [Lontong sayur ja tofusidos](gk80-operation80-batch-48.md)
+
+Punnitse 30 g Lee Kum Kee Toban Djania (UK), 2,33 g maissitärkkelystä ja enintään 0,5 g sichuaninpippuria. Käytä 15 ml Kikkoman Naturally Brewed Soy Saucea (UK). Annoksessa tahnasta tulee 0,825 g CHO:ta, tärkkelyksestä 0,50095 g, soijasta 0,12 g ja pippurista enintään 0,125 g koko massalla rajattuna. Jokainen alittaa 1 g, yhteensä enintään 1,57095 g alittaa 2 g. Nämä jäävät GK-summasta. Puhdas öljy, vesi ja maustamaton sianliha lasketaan CHO-vapaiksi. [Lee Kum Kee](https://uk.lkk.com/products/chilli-bean-sauce) · [Kikkoman](https://www.kikkoman.co.uk/products/detail/fs-kikkoman-naturally-brewed-soy-sauce) · [Fineli](https://fineli.fi/fineli/fi/ohje/19)
+
+Tahnan 30 g ja mausteiden määrät ovat punnitun version valintoja. Katselmoi määrät, nimetty tofu sekä riisi- ja GI-koodisovellukset ennen hyväksyntää.
