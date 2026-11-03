@@ -1,0 +1,27 @@
+{
+  "recipeId": "hyderabadi-kanabiryani",
+  "servings": 4,
+  "nutritionInputSha256": "e85c334fe024d1895e371ca7b7f03109bf73f4367f0c3df8a9bfd843d707af3a",
+  "reviewCommit": "3084308648848e3f8c5d0329933fde777c17d97b",
+  "approvalCommit": "03da1d31bf31606ed255bb039437f28605d709a1",
+  "scope": "preparation_for_later_integration",
+  "releaseAuthorized": false,
+  "calculation": "whole_dish_comparator_scenarios",
+  "availableCarbohydratePerServingG": 60.47,
+  "seasoningNominalAdditionalUpperG": 0.4,
+  "lower": {
+    "gk": 24.7927,
+    "comparator": "Pilau rice with chicken curry",
+    "gi": 41
+  },
+  "upper": {
+    "gk": 31.6524,
+    "comparator": "Emirati chicken biryani",
+    "gi": 52
+  },
+  "displayRange": {
+    "max": 32,
+    "min": 24
+  },
+  "evidence": "biryani-whole-dish-review.md"
+}
