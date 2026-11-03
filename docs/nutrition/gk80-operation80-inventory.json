@@ -111,7 +111,7 @@
     "japanilainen-curry-tofulla",
     "khao-soi-vhh-konjac"
   ],
-  "nextRecipeId": "kiinalainen-bao-munalla",
+  "nextRecipeId": "kreikkalainen-moussaka",
   "recipes": [
     {
       "recipeId": "aloo-paratha",
@@ -6457,7 +6457,7 @@
       "recipeSha256": "dafce3c454f4be780f5a9c3d53803e028c1333ba4a32267d1e899bdbea6aa836",
       "pilotInputSha256": "b3e97d21b50ba22cd4c11300ef4e5ba91d62e9a03666cb966eb718470e096bd2",
       "servings": 2,
-      "status": "NO_GK",
+      "status": "IN_PROGRESS",
       "priorEvidence": [],
       "level": null,
       "ownerApproval": null,
@@ -6533,7 +6533,8 @@
             "Source-documented zero available carbohydrate: Plain salt has zero available carbohydrate."
           ]
         }
-      ]
+      ],
+      "operation80EvidencePath": "docs/nutrition/gk80-operation80-batch-13.md"
     },
     {
       "recipeId": "kiinalainen-hirssipuuro-taateleilla",
@@ -7305,7 +7306,7 @@
       "recipeSha256": "537e17b3a04e4ec0332e7deb7bcb632d241600d60eba500db646f53e8b678b8d",
       "pilotInputSha256": "2b2f958318f0fc347053aa8278dde9390d41079b623dc5e1575ed3a7fcb560b1",
       "servings": 2,
-      "status": "NO_GK",
+      "status": "IN_PROGRESS",
       "priorEvidence": [],
       "level": null,
       "ownerApproval": null,
@@ -7381,7 +7382,8 @@
             "Source-documented zero available carbohydrate: Plain salt has zero available carbohydrate."
           ]
         }
-      ]
+      ],
+      "operation80EvidencePath": "docs/nutrition/gk80-operation80-batch-13.md"
     },
     {
       "recipeId": "korealainen-bindaetteok-aamiaiseksi",
