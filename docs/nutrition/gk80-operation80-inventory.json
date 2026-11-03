@@ -2,11 +2,11 @@
   "schemaVersion": 1,
   "main": "4d6f19a620bb95e771c12f499554bf2cf1f06e51",
   "coverage": {
-    "PROPOSED_RANGE": 21,
+    "PROPOSED_RANGE": 22,
     "PUBLISHED_SINGLE": 197,
     "PROPOSED_SINGLE": 17,
     "IN_PROGRESS": 33,
-    "NO_GK": 48,
+    "NO_GK": 47,
     "PUBLISHED_RANGE": 10
   },
   "reviewedPrHeads": {
@@ -111,7 +111,7 @@
     "japanilainen-curry-tofulla",
     "khao-soi-vhh-konjac"
   ],
-  "nextRecipeId": "sichuan-hot-pot",
+  "nextRecipeId": "spanakopita",
   "recipes": [
     {
       "recipeId": "aloo-paratha",
@@ -13810,10 +13810,10 @@
       "recipeSha256": "0c1ef97b44a862df2c00529b2cc614e26711d04fd46c41f8d4b1320eb267c858",
       "pilotInputSha256": "1c0c37e9cbfeb4f1a59722d2ed49e253c6990f132b7078b7ce3d7425954eed69",
       "servings": 4,
-      "status": "NO_GK",
+      "status": "PROPOSED_RANGE",
       "priorEvidence": [],
-      "level": null,
-      "ownerApproval": null,
+      "level": "B",
+      "ownerApproval": false,
       "sourceQualified": null,
       "blockers": [
         "sichuan-hot-pot: naudan- tai kanalientä: No source-matched composition and preparation was resolved for “naudan- tai kanalientä”; it is not treated as zero.",
@@ -13970,7 +13970,109 @@
             "Individual sub-1 g contribution counted toward cumulative 2 g/serving editorial tolerance: Conservative available-carbohydrate bound 0.5 g per recipe; below 1 g per serving."
           ]
         }
-      ]
+      ],
+      "operation80Proposal": {
+        "evidencePath": "docs/nutrition/gk80-operation80-batch-19.md",
+        "baselineRecipeSha256": "0c1ef97b44a862df2c00529b2cc614e26711d04fd46c41f8d4b1320eb267c858",
+        "inputFields": [
+          "gramsBatch",
+          "choPer100g",
+          "giGlucoseScale"
+        ],
+        "scenarios": [
+          {
+            "inputs": [
+              [
+                300,
+                0,
+                0
+              ],
+              [
+                200,
+                0,
+                0
+              ],
+              [
+                200,
+                0.3,
+                40
+              ],
+              [
+                200,
+                1.61,
+                40
+              ],
+              [
+                7,
+                16.3,
+                40
+              ],
+              [
+                10,
+                4.8,
+                50
+              ],
+              [
+                20,
+                4.74,
+                40
+              ],
+              [
+                150,
+                50.1,
+                48.2
+              ]
+            ],
+            "gkPerServing": "9.706475"
+          },
+          {
+            "inputs": [
+              [
+                300,
+                0,
+                0
+              ],
+              [
+                200,
+                0,
+                0
+              ],
+              [
+                200,
+                0.3,
+                40
+              ],
+              [
+                200,
+                1.61,
+                40
+              ],
+              [
+                7,
+                16.3,
+                40
+              ],
+              [
+                10,
+                4.8,
+                50
+              ],
+              [
+                20,
+                4.74,
+                40
+              ],
+              [
+                150,
+                71.2,
+                46
+              ]
+            ],
+            "gkPerServing": "12.9329"
+          }
+        ],
+        "publicationAuthorized": false
+      }
     },
     {
       "recipeId": "siemengranola-jogurtilla",
