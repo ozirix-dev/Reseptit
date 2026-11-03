@@ -165,3 +165,11 @@ Aiemman punnitun skenaarion reseptitarkiste täsmää. Kun GI 60,35 kohdistetaan
 Inventaarion kaksi kecap manis -estettä viittaavat vanhaan syötteeseen. Nykyiset ainesrivit ja valmistus käyttävät marinadissa 32 g soijakastiketta ja 18 g fariinisokeria sekä kastikkeessa 16 g soijakastiketta ja 9 g fariinisokeria. Johdanto mainitsee edelleen kecap manisin. Uusi laskelma sidotaan ainesriviin ja valmistukseen. Katselmoinnissa sovitetaan myös johdanto niihin.
 
 Tarjoilulimetille voidaan käyttää konjak-pad thain punnitusmallia. Marinadin mehu ja tarjoiluun puristettu mehu sidotaan erikseen. Lisäksi tarvitaan nimetyn maapähkinävoin koostumus ja GI-peruste sekä grillattavan marinadin syötävä osuus. [Nykyinen resepti](../../reseptit/paaruoat/sate-ayam.md) · [Limettimehun punnitusmalli](gk80-operation80-pad-thai-vhh-konjac.md)
+
+### Breakfast aloo paratha with yoghurt
+
+The breakfast recipe `intialainen-aloo-paratha` stays on hold. Its title and serving instructions include plain yoghurt, but the ingredient list specifies neither its quantity nor its product. PR #229's 25.38644–26.53702 scenario covers the bread and filling. It also uses an assumed GI of 40 for the herbs and cumin.
+
+The University of Sydney database records GI 17 for Tamar Valley No Added Sugar Natural yoghurt. Using the separate Sydney reference composition for regular plain yoghurt (8.5 g available carbohydrate per 200 g), a 50 g serving would contribute about 0.36 GK. This is a sensitivity example using two sources. A release candidate needs a specified portion and a traceable composition for the selected yoghurt. [GI database](https://glycemicindex.com/gi-search/) [Plain yoghurt reference](https://glycemicindex.com/2024/05/milk-other-dairy-foods-and-blood-glucose/)
+
+The existing macro calculation binds the 150 g peeled potato to Fineli record 310, which the record names MAA-ARTISOKKA (Jerusalem artichoke). That record supplies 2.91 g available carbohydrate per 100 g, whereas the earlier GK scenario used 15.5 g per 100 g. Correct the raw edible potato binding and reconcile the nutrient totals before reusing this calculation. The method must also explicitly describe cooking and mashing the potato before filling the breads.
