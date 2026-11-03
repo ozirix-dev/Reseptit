@@ -1,3 +1,4 @@
+import { loadAuthorizedGk100Variants } from './gk100-approval-release';
 import {buildTwoAlmondPieVariants} from './gk-two-almond-pies';
 import {buildTehoajoVariants} from './gk-tehoajo-era1';
 import {buildPohaHoneyMustardVariants} from './gk-poha-honey-mustard';
@@ -163,7 +164,7 @@ const legacyResults = rawResults.map((result) => {
   return usesImputation ? {...result, assessmentType: "PUBLISHED_IMPUTATION" as const, modelScenario: "POINT_SCENARIO" as const} : result;
 });
 const results = await applyScopedPolyolC(root, await applyRecovery(root, await withdrawQ09Tea(root, await applyGk80Release(root, legacyResults))));
-const gkOnlyVariants = [...buildGkOnlyVariants(root),...buildApprovedSevenVariants(root),...buildApprovedFourVariants(root),...buildApprovedBVariants(root),...buildProductAVariants(root),...buildPanangKimchiVariants(root),buildBlueberryPieVariant(root),...buildThreeCurryVariants(root),buildLindstromBrineVariant(root),...buildReviewedGkVariants(root),...buildPohaHoneyMustardVariants(root),...buildTehoajoVariants(root),...buildTwoAlmondPieVariants(root)];
+const gkOnlyVariants = [...buildGkOnlyVariants(root),...buildApprovedSevenVariants(root),...buildApprovedFourVariants(root),...buildApprovedBVariants(root),...buildProductAVariants(root),...buildPanangKimchiVariants(root),buildBlueberryPieVariant(root),...buildThreeCurryVariants(root),buildLindstromBrineVariant(root),...buildReviewedGkVariants(root),...buildPohaHoneyMustardVariants(root),...buildTehoajoVariants(root),...buildTwoAlmondPieVariants(root),...loadAuthorizedGk100Variants(root)];
 const versionCoverage = countGkVersions(results,gkOnlyVariants);
 const report = {
   generatedAt: new Date().toISOString(),
