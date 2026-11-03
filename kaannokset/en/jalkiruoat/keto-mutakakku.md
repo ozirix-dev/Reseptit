@@ -59,12 +59,12 @@ translation_of: keto-mutakakku
 
 # Keto chocolate mud cake
 
-Dark chocolate and a buttery centre make this small mud cake rich. The cake is sweetened with erythritol.
+This small mud cake is rich with dark chocolate and has a soft, buttery centre. The cake is sweetened with erythritol.
 
 ## Preparation
 
-1. Preheat the oven to 175 °C and line a roughly 20 cm round tin with baking paper.
-2. Gently melt the chocolate and butter in a bowl over a pan of water or in short bursts in the microwave. Leave to cool slightly.
+1. Preheat the oven to 175 °C and line a round tin about 20 cm across with baking paper.
+2. Gently melt the chocolate and butter in a heatproof bowl set over a pan of simmering water or in short bursts in the microwave. Leave to cool slightly.
 3. Whisk the eggs and erythritol until fluffy. Mix in the melted chocolate and butter.
 4. Combine the almond flour, cocoa powder and salt. Fold the dry ingredients into the batter.
 5. Pour the batter into the tin and bake for 12–16 minutes. The centre should stay soft.

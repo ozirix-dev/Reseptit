@@ -15,3 +15,9 @@ Kakussa vertailu erottaa taikinan ja kuorrutteen, kekseissä suklaapalat ja erik
 - Esikatselukopion käännösauditointi kaikille 390 parille: 0 poikkeamaa. Tätä tarkistusta varten EN-luonnokset ja vastaavat FI-kielimerkinnät aktivoitiin vain paikallisessa kopiossa.
 
 Julkaisun yhteydessä FI-lähteiden käännösmetatiedot on päivitettävä ja niiden vaikutus lähdetiedostojen hasheihin varmennettava. Tässä muutoksessa FI-lähteet ja laskenta-aineisto säilyvät sellaisinaan.
+
+## PR #204:n jatkokatselmointi
+
+Mutakakun englanninkielistä kuvausta ja vesihaudeohjetta täsmennettiin. Keksien suklaapalat, kakun kuorrute ja valmistajan tuotesivun tunnistehuomio tarkistettiin lähdetekstejä vasten. Käännökset odottavat edelleen ihmisen kielentarkistusta.
+
+Ensimmäisessä CI-ajossa kaksi GK-regressiotestiä tulkitsi käännösluonnosten lisäämisen muutokseksi suojattuihin resepteihin. Testit sallivat nyt uusina lisätyt käännösluonnokset ja tarkistavat edelleen olemassa olevat tiedostot sekä alkuperäiset GK-tulokset.
