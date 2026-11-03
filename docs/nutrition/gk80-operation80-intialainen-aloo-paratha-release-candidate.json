@@ -1,0 +1,132 @@
+{
+  "recipeId": "intialainen-aloo-paratha",
+  "servings": 2,
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "unroundedGk": "30.80448385",
+  "upperScenario": {
+    "giOverrides": [
+      {
+        "inputIndex": 0,
+        "gi": 62.43
+      },
+      {
+        "inputIndex": 1,
+        "gi": 73
+      }
+    ],
+    "unroundedGk": "32.44331155"
+  },
+  "inputs": [
+    [
+      100,
+      73.998,
+      60.2
+    ],
+    [
+      150,
+      15.5,
+      66
+    ],
+    [
+      100,
+      10.10101,
+      17
+    ]
+  ],
+  "ingredients": [
+    {
+      "grams": 100,
+      "name": {
+        "fi": "Vehnäjauho",
+        "en": "Wheat flour",
+        "sv": "Vetemjöl",
+        "th": "แป้งสาลี"
+      }
+    },
+    {
+      "grams": 150,
+      "name": {
+        "fi": "Kuorittu raaka peruna",
+        "en": "Peeled raw potatoes",
+        "sv": "Skalad rå potatis",
+        "th": "มันฝรั่งดิบปอกเปลือก"
+      }
+    },
+    {
+      "grams": 100,
+      "name": {
+        "fi": "Maustamaton jogurtti",
+        "en": "Plain yoghurt",
+        "sv": "Naturell yoghurt",
+        "th": "โยเกิร์ตรสธรรมชาติ"
+      }
+    },
+    {
+      "grams": 6,
+      "name": {
+        "fi": "Korianteri",
+        "en": "Coriander",
+        "sv": "Koriander",
+        "th": "ผักชี"
+      }
+    },
+    {
+      "grams": 2,
+      "name": {
+        "fi": "Juustokumina",
+        "en": "Cumin",
+        "sv": "Spiskummin",
+        "th": "ยี่หร่า"
+      }
+    }
+  ],
+  "omissions": [
+    {
+      "ingredientIndex": 3,
+      "choPer100g": 1.9
+    },
+    {
+      "ingredientIndex": 4,
+      "choPer100g": 33.7
+    }
+  ],
+  "preparation": {
+    "fi": "Vaivaa jauhot, 60 ml vettä ja suola taikinaksi. Anna levätä 10 minuuttia. Keitä perunat kypsiksi ja muussaa ne korianterin ja juustokuminan kanssa. Täytä taikina ja paista leivät molemmin puolin ruokalusikallisessa öljyä. Jaa {{servings}} annokseen ja tarjoa jogurtin kanssa.",
+    "en": "Knead the flour, 60 ml water and salt. Rest for 10 minutes. Boil the potatoes until tender and mash with the coriander and cumin. Fill the dough and pan-fry on both sides in one tablespoon of oil. Divide into {{servings}} servings and serve with the yoghurt.",
+    "sv": "Knåda mjöl, 60 ml vatten och salt. Låt vila i 10 minuter. Koka potatisen mjuk och mosa med koriander och spiskummin. Fyll degen och stek bröden på båda sidor i en matsked olja. Dela i {{servings}} portioner och servera med yoghurten.",
+    "th": "นวดแป้งกับน้ำ 60 มล. และเกลือ พัก 10 นาที ต้มมันฝรั่งจนนุ่มแล้วบดกับผักชีและยี่หร่า ใส่ไส้แล้วทอดทั้งสองด้านในน้ำมันหนึ่งช้อนโต๊ะ แบ่งเป็น {{servings}} ที่และเสิร์ฟกับโยเกิร์ต"
+  },
+  "limitation": {
+    "fi": "Ehdotus käyttää 50 g jogurttia annosta kohti ja vuoden 2010 Tamar Valley -testinäytteen koostumusta (50 g hiilihydraattia 495 grammassa). Leipä ja perunatäyte käyttävät GI-verrokkeja. Mausteista jää laskelman ulkopuolelle 0,394 g hiilihydraattia annosta kohti.",
+    "en": "This proposal uses 50 g yoghurt per serving and the 2010 Tamar Valley test sample composition (50 g carbohydrate in 495 g). Bread and potato use GI proxies. Spices account for 0.394 g excluded carbohydrate per serving.",
+    "sv": "Förslaget använder 50 g yoghurt per portion och sammansättningen för Tamar Valleys prov från 2010 (50 g kolhydrat i 495 g). Bröd och potatis använder GI-värden från jämförbara livsmedel. Kryddorna står för 0,394 g kolhydrat per portion utanför beräkningen.",
+    "th": "ข้อเสนอนี้ใช้โยเกิร์ต 50 กรัมต่อที่ และข้อมูลตัวอย่าง Tamar Valley ปี 2010 (คาร์โบไฮเดรต 50 กรัมต่อ 495 กรัม) ใช้ค่า GI ของอาหารเทียบเคียงสำหรับแป้งและมันฝรั่ง ไม่รวมคาร์โบไฮเดรตจากเครื่องเทศ 0.394 กรัมต่อที่"
+  },
+  "sources": [
+    {
+      "title": "Fineli 205",
+      "url": "https://fineli.fi/fineli/fi/elintarvikkeet/205"
+    },
+    {
+      "title": "Methi paratha",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9552392/"
+    },
+    {
+      "title": "Chapati",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9304465/"
+    },
+    {
+      "title": "Potatoes",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2699495/"
+    },
+    {
+      "title": "2021 GI tables, supplemental table 1, row 1046",
+      "url": "https://doi.org/10.1093/ajcn/nqab233"
+    }
+  ],
+  "boundFiles": {
+    "reseptit/aamupalat/intialainen-aloo-paratha.md": "355753da95cc04ac8822f76a8ff51f5017a7b9bf4ce12de727abb1e5e7d6bfbc",
+    "docs/nutrition/gk80-operation80-aloo-paratha.md": "5351891ba74af35c2d928dbf78537067e51761e61cd8ee6e67f0ae59619750c3"
+  }
+}
