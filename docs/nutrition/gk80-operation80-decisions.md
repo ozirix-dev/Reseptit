@@ -75,7 +75,7 @@ Ackee: erillinen GK-täsmäversio käyttää 60 g kypsää ruodotonta suolatursk
 
 ## Jatkoehdotukset
 
-Nämä kaksitoista nelikielistä esikatseluversiota ovat kahden alkuperäisen erän lisäksi. Kohdennetussa tarkistuksessa niiden kanssa numeerinen esikatselukattavuus on 279/326.
+Nämä kolmetoista nelikielistä esikatseluversiota ovat kahden alkuperäisen erän lisäksi. Kohdennetussa tarkistuksessa niiden kanssa numeerinen esikatselukattavuus on 280/326.
 
 | Resepti | GK/annos | Päätös ennen julkaisua |
 | --- | ---: | --- |
@@ -91,6 +91,7 @@ Nämä kaksitoista nelikielistä esikatseluversiota ovat kahden alkuperäisen er
 | Teehaudutetut munat | Laskettu osuus alle 1 | Hyväksy soija, punnittu tähtianis, valmistusjärjestys ja munan GI-koodi. Pois rajattu CHO enintään 0,74 g/annos. [Laskelma](gk80-operation80-teehaudutetut-munat.md) |
 | Bánh bao kananmunalla | 25,30–34,55 | Hyväksy punnittu hiivataikina, täyttö höyrytyksen jälkeen ja kaksi höyryleivän GI-verrokkia. [Laskelma](../research/gk80-international-20261102/steamed-buns-source-control/CURRENT.md) |
 | Samosa | 44,42–44,57 | Hyväksy punnitut mausteet ja koko kasvis-sambosan GI-verrokki. [Laskentasyöte](gk80-operation80-samosa-release-candidate.json) |
+| Baozi | 31,20 | Hyväksy punnitut määrät, täytetyn höyrysämpylän verrokki ja lähteen julkaisukäyttö. [Laskelma](gk80-operation80-baozi.md) |
 
 ### Aiempi rinnakkainen ehdotus: paistettu maksa ja pekoni
 
@@ -157,3 +158,9 @@ Nykyinen resepti ilmoittaa 200 ml kookosmaitoa ja 150 g broileria, mutta valmist
 Sultan Qaboos Universityn alkuperäinen tutkimusraportti vahvistaa kasvis-sambosan vesivertailun GI:n 60,35. Kokeessa oli 12 tervettä vapaaehtoista, glukoosivertailu ja 50 g saatavaa CHO:ta testiateriassa. Vuoden 2022 artikkelin 60,4 käsitellään samaan tutkimuslinjaan kuuluvana arvona. Laboratorioennustetta 69,2 ei käytetä. Tarkkaa taikina–täytesuhdetta ja paisto-olosuhteita ei ole varmennettu. [Yliopiston tutkimusraportti](https://www.squ.edu.om/Portals/10/DNNGalleryPro/uploads/2019/4/24/CAMSResearchReport2011.pdf) · [Vuoden 2022 artikkeli](https://iscientific.org/wp-content/uploads/2022/08/13-ijcbs-22-21-13.pdf)
 
 Aiemman punnitun skenaarion reseptitarkiste täsmää. Kun GI 60,35 kohdistetaan kerran koko uppopaistetun peruna–hernesamosan hiilihydraatteihin, tulos on **44,42–44,57 GK/annos**. Väli syntyy yhden gramman garam masalan koostumusrajasta. Käytä laskelman 2 g juustokuminaa, 1 g garam masalaa ja 1 g chiliä. Punnitut mausteet ja tutkimussamosan soveltuvuus odottavat katselmointia. [Ainesrivit ja valmistus](../research/gk80-international-20261102/almond-reuse-and-oman/samosa-prepared-source-scenario.json)
+
+### Sate ayam
+
+Inventaarion kaksi kecap manis -estettä viittaavat vanhaan syötteeseen. Nykyiset ainesrivit ja valmistus käyttävät marinadissa 32 g soijakastiketta ja 18 g fariinisokeria sekä kastikkeessa 16 g soijakastiketta ja 9 g fariinisokeria. Johdanto mainitsee edelleen kecap manisin. Uusi laskelma sidotaan ainesriviin ja valmistukseen. Katselmoinnissa sovitetaan myös johdanto niihin.
+
+Tarjoilulimetille voidaan käyttää konjak-pad thain punnitusmallia. Marinadin mehu ja tarjoiluun puristettu mehu sidotaan erikseen. Lisäksi tarvitaan nimetyn maapähkinävoin koostumus ja GI-peruste sekä grillattavan marinadin syötävä osuus. [Nykyinen resepti](../../reseptit/paaruoat/sate-ayam.md) · [Limettimehun punnitusmalli](gk80-operation80-pad-thai-vhh-konjac.md)
