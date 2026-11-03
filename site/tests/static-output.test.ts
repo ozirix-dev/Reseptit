@@ -482,7 +482,7 @@ test('modeled captions disclose omissions in every locale and retain omission-fr
   }
 });
 
-test('approved GK-only versions are explicit on every existing locale page and coverage counts202 distinct recipes',async()=>{
+test('approved GK-only versions are explicit on every existing locale page and coverage counts 205 distinct recipes',async()=>{
  let pages=0;
  for(const variant of gkOnlyVariants){
   for(const recipe of siteContent.recipes.filter(r=>r.recipeId===variant.recipeId)){
@@ -493,9 +493,9 @@ test('approved GK-only versions are explicit on every existing locale page and c
    if(variant.scenarioRange)assert.ok(html.includes(t.range));if(variant.sensitivity)assert.ok(html.includes(t.sensitivityNote));pages++;
   }
  }
- assert.equal(pages,93+siteContent.recipes.filter(r=>r.recipeId==='lindstrominpihvit-kaalilla').length);
+ assert.equal(pages,93+siteContent.recipes.filter(r=>['lindstrominpihvit-kaalilla','pav-bhaji','hunaja-sinappikana-kaalilla','indialainen-poha-maapahkinoilla'].includes(r.recipeId)).length);
  for(const p of ['glykeeminen-kuorma','en/glycemic-load','sv/glykemisk-belastning','th/glycemic-load']){
-  const html=await readFile(path.join(dist,p,'index.html'),'utf8');assert.ok(html.includes('<strong>202</strong>'));assert.ok(html.includes('<strong>124</strong>'));assert.ok(html.includes('data-gk-coverage="version-aware"'));assert.ok(html.includes('data-gk-coverage="original"'));assert.ok(html.includes('<strong>156</strong>'));assert.ok(html.includes('<strong>170</strong>'));
+  const html=await readFile(path.join(dist,p,'index.html'),'utf8');assert.ok(html.includes('<strong>205</strong>'));assert.ok(html.includes('<strong>121</strong>'));assert.ok(html.includes('data-gk-coverage="version-aware"'));assert.ok(html.includes('data-gk-coverage="original"'));assert.ok(html.includes('<strong>156</strong>'));assert.ok(html.includes('<strong>170</strong>'));
   for(const v of gkOnlyVariants)assert.ok(html.includes(`data-gk-version="${v.versionId}"`));
  }
 });
