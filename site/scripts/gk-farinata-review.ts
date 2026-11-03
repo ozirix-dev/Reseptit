@@ -84,7 +84,71 @@ export function buildFarinataReviewVariant(root: string): GkOnlyVariant {
 }
 
 export function renderFarinataReview(root: string) {
-  const variant = buildFarinataReviewVariant(root);
+  return renderGkReview(buildFarinataReviewVariant(root));
+}
+
+export function renderGkReview(variant: GkOnlyVariant, servings = variant.servings) {
   return Object.fromEntries(locales.map(locale =>
-    [locale, renderToStaticMarkup(createElement(MemoryRouter, null, createElement(GkOnlyVariantPanel, { variant, locale })))]));
+    [locale, renderToStaticMarkup(createElement(MemoryRouter, null, createElement(GkOnlyVariantPanel, { variant, locale, servings })))]));
+}
+
+
+type LabnehCandidate = Pick<Candidate, 'recipeId' | 'servings' | 'reviewState' | 'publicationAuthorized'
+  | 'boundFiles' | 'preparation' | 'limitation' | 'omittedCho'> & {
+  commonSources: { id: string; url: string }[];
+  giCoding: { url: string };
+  scenarioProducts: { name: string; url: string; inputs: [number, number, number][]; unroundedGk: string }[];
+};
+
+export function buildLabnehReviewVariant(root: string): GkOnlyVariant {
+  const read = (file: string) => readFileSync(join(root, file), 'utf8');
+  const raw = read('docs/nutrition/gk80-operation80-labneh-release-candidate.json');
+  const c: LabnehCandidate = JSON.parse(raw);
+  const recipePath = 'reseptit/aamupalat/lahi-ita-labneh-kulho-zaatarilla.md';
+  if (c.recipeId !== 'lahi-ita-labneh-kulho-zaatarilla' || c.servings !== 2 || c.omittedCho !== 0
+      || c.reviewState !== 'PREPARED_FOR_REVIEW' || c.publicationAuthorized !== false
+      || c.scenarioProducts.length !== 2 || c.commonSources.length !== 3) {
+    throw Error('Unexpected labneh review scope');
+  }
+  for (const file of [recipePath, 'docs/nutrition/gk80-operation80-batch-01.md']) {
+    if (textHash(read(file)) !== c.boundFiles[file]) throw Error('Labneh review binding changed: ' + file);
+  }
+  const [first, second] = c.scenarioProducts;
+  if (first.inputs.length !== 4 || second.inputs.length !== 4
+      || !first.inputs.every(([grams, cho, gi], index) =>
+        second.inputs[index][0] === grams && second.inputs[index][2] === gi
+        && (index === 0 || second.inputs[index][1] === cho))) {
+    throw Error('Labneh scenarios must differ only in product carbohydrate');
+  }
+  const [min, max] = c.scenarioProducts.map(({ inputs, unroundedGk }) => {
+    const value = inputs.reduce((sum, [g, cho, gi]) => sum + g * cho * gi, 0) / (10000 * c.servings);
+    if (!Number.isFinite(value) || !Number.isFinite(Number(unroundedGk))
+        || Math.abs(value - Number(unroundedGk)) > 1e-10) throw Error('Labneh review calculation changed');
+    return value;
+  });
+  if (min >= max) throw Error('Labneh range is not ordered');
+  const names: LocalizedText[] = [
+    { fi: 'Maustamaton labneh', en: 'Plain labneh', sv: 'Naturell labneh', th: 'ลาบเนห์รสธรรมชาติ' },
+    { fi: 'Raaka kurkku', en: 'Raw cucumber', sv: 'Rå gurka', th: 'แตงกวาดิบ' },
+    { fi: 'KFF Za’atar', en: 'KFF Za’atar', sv: 'KFF Za’atar', th: 'ซาอาตาร์ KFF' },
+    { fi: 'Valutetut vihreät oliivit', en: 'Drained green olives', sv: 'Avrunna gröna oliver', th: 'มะกอกเขียวสะเด็ดน้ำ' },
+  ];
+  for (const locale of locales) {
+    if (!c.preparation[locale]?.trim() || !c.limitation[locale]?.trim()) throw Error('Labneh translation missing');
+  }
+  const inputSha256 = textHash(raw);
+  return {
+    recipeId: c.recipeId, versionId: 'gk-labneh-review-' + inputSha256.slice(0, 12), inputSha256,
+    level: 'B', servings: c.servings, point: null, scenarioRange: { min, max }, rangeKind: 'NAMED_COMPARATOR_SCENARIOS',
+    omittedCho: 0, confidence: 'LOW', macroScope: 'NO_MACRO_PACKAGE_FOR_THIS_VERSION', standalonePreparation: true,
+    ingredients: names.map((name, index) => ({ name, grams: first.inputs[index][0] })),
+    preparation: c.preparation, limitation: c.limitation, codingKinds: [], sensitivity: null,
+    sources: [
+      ...c.scenarioProducts.map(p => ({ title: p.name, url: p.url, kind: 'CARBOHYDRATE' as const,
+        note: p.inputs[0][1] + ' g available carbohydrate / 100 g' })),
+      ...c.commonSources.map((s, index) => ({ title: s.id, url: s.url, kind: 'CARBOHYDRATE' as const,
+        note: first.inputs[index + 1][1] + ' g available carbohydrate / 100 g' })),
+      { title: 'Assigned GI codes', url: c.giCoding.url, kind: 'B_CODING', note: 'Labneh 30, cucumber 40, za’atar 50' },
+    ],
+  };
 }

@@ -8,10 +8,10 @@
   "omittedCho": 0,
   "rangeKind": "NAMED_COMPARATOR_SCENARIOS",
   "preparation": {
-    "fi": "Jaa 100 g maustamatonta labneh’ta kahteen kulhoon. Lisää yhteensä 400 g raakaa kurkkua, 150 g valutettuja vihreitä oliiveja ja 2 g KFF Za’ataria. Viimeistele halutessasi oliiviöljyllä.",
-    "en": "Divide 100 g plain labneh between two bowls. Add a total of 400 g raw cucumber, 150 g drained green olives and 2 g KFF za’atar. Finish with olive oil if desired.",
-    "sv": "Fördela 100 g naturell labneh i två skålar. Tillsätt sammanlagt 400 g rå gurka, 150 g avrunna gröna oliver och 2 g KFF-za’atar. Ringla över olivolja om du vill.",
-    "th": "แบ่งลาบเนห์รสธรรมชาติ 100 กรัมใส่สองชาม เติมแตงกวาดิบรวม 400 กรัม มะกอกเขียวสะเด็ดน้ำ 150 กรัม และซาอาตาร์ KFF 2 กรัม ราดน้ำมันมะกอกได้ตามชอบ"
+    "fi": "Jaa {{amount:0}} g maustamatonta labneh’ta {{servings}} kulhoon. Lisää yhteensä {{amount:1}} g raakaa kurkkua, {{amount:3}} g valutettuja vihreitä oliiveja ja {{amount:2}} g KFF Za’ataria. Viimeistele halutessasi oliiviöljyllä.",
+    "en": "Divide {{amount:0}} g plain labneh between {{servings}} bowls. Add a total of {{amount:1}} g raw cucumber, {{amount:3}} g drained green olives and {{amount:2}} g KFF za’atar. Finish with olive oil if desired.",
+    "sv": "Fördela {{amount:0}} g naturell labneh i {{servings}} skålar. Tillsätt sammanlagt {{amount:1}} g rå gurka, {{amount:3}} g avrunna gröna oliver och {{amount:2}} g KFF-za’atar. Ringla över olivolja om du vill.",
+    "th": "แบ่งลาบเนห์รสธรรมชาติ {{amount:0}} กรัมใส่{{servings}} ชาม เติมแตงกวาดิบรวม {{amount:1}} กรัม มะกอกเขียวสะเด็ดน้ำ {{amount:3}} กรัม และซาอาตาร์ KFF {{amount:2}} กรัม ราดน้ำมันมะกอกได้ตามชอบ"
   },
   "limitation": {
     "fi": "Vaihteluväli kuvaa kahta nimettyä labneh-tuotetta. Positiivisille ainesosille käytetään GI-laskentakoodeja.",
