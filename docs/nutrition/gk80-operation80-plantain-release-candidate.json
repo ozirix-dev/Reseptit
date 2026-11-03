@@ -7,10 +7,10 @@
   "standalonePreparation": true,
   "omittedCho": 0,
   "preparation": {
-    "fi": "Paista 150 g kuorittua kypsää ruokabanaania sentin viipaleina ruokalusikallisessa neutraalia öljyä. Kypsennä 110 g kuoretonta kananmunaa. Jaa kahdelle ja tarjoa 120 g avokadon ja 40 g kuoritun limetin kanssa.",
-    "en": "Slice 150 g peeled ripe plantain into 1 cm rounds and pan-fry in a tablespoon of neutral oil. Cook 110 g shelled egg. Divide into two portions with 120 g avocado and 40 g peeled lime.",
-    "sv": "Skiva 150 g skalad mogen matbanan i centimetertjocka skivor och stek i en matsked neutral olja. Tillaga 110 g ägg utan skal. Dela i två portioner med 120 g avokado och 40 g skalad lime.",
-    "th": "หั่นกล้วยแพลนเทนสุกปอกเปลือก 150 กรัมเป็นแว่นหนา 1 ซม. ทอดในกระทะด้วยน้ำมันรสกลาง 1 ช้อนโต๊ะ ปรุงไข่ไม่รวมเปลือก 110 กรัมให้สุก แบ่งสองส่วน เสิร์ฟกับอะโวคาโด 120 กรัมและมะนาวปอกเปลือก 40 กรัม"
+    "fi": "Paista {{amount:0}} g kuorittua kypsää ruokabanaania sentin viipaleina {{amount:4}} ruokalusikallisessa neutraalia öljyä. Kypsennä {{amount:1}} g kuoretonta kananmunaa. Jaa {{servings}} annokseen ja tarjoa {{amount:2}} g avokadon ja {{amount:3}} g kuoritun limetin kanssa.",
+    "en": "Slice {{amount:0}} g peeled ripe plantain into 1 cm rounds and pan-fry in {{amount:4}} tbsp of neutral oil. Cook {{amount:1}} g shelled egg. Divide into {{servings}} portions with {{amount:2}} g avocado and {{amount:3}} g peeled lime.",
+    "sv": "Skiva {{amount:0}} g skalad mogen matbanan i centimetertjocka skivor och stek i {{amount:4}} matsked neutral olja. Tillaga {{amount:1}} g ägg utan skal. Dela i {{servings}} portioner med {{amount:2}} g avokado och {{amount:3}} g skalad lime.",
+    "th": "หั่นกล้วยแพลนเทนสุกปอกเปลือก {{amount:0}} กรัมเป็นแว่นหนา 1 ซม. ทอดในกระทะด้วยน้ำมันรสกลาง {{amount:4}} ช้อนโต๊ะ ปรุงไข่ไม่รวมเปลือก {{amount:1}} กรัมให้สุก แบ่ง{{servings}} ส่วน เสิร์ฟกับอะโวคาโด {{amount:2}} กรัมและมะนาวปอกเปลือก {{amount:3}} กรัม"
   },
   "limitation": {
     "fi": "Tutkimuksessa kypsä ruokabanaani uppopaistettiin. Kotiversio paistetaan pannulla ohuessa öljykerroksessa.",
@@ -20,24 +20,34 @@
   },
   "sources": [
     {
-      "id": "Bahado-Singh et al., Tables 2–3",
-      "url": "https://doi.org/10.1079/BJN20061792"
+      "title": "Bahado-Singh et al., Tables 2–3",
+      "url": "https://doi.org/10.1079/BJN20061792",
+      "kind": "HUMAN_GI",
+      "note": ""
     },
     {
-      "id": "Fineli 858",
-      "url": "https://fineli.fi/fineli/fi/elintarvikkeet/858"
+      "title": "Fineli 858",
+      "url": "https://fineli.fi/fineli/fi/elintarvikkeet/858",
+      "kind": "CARBOHYDRATE",
+      "note": ""
     },
     {
-      "id": "Fineli 11057",
-      "url": "https://fineli.fi/fineli/fi/elintarvikkeet/11057"
+      "title": "Fineli 11057",
+      "url": "https://fineli.fi/fineli/fi/elintarvikkeet/11057",
+      "kind": "CARBOHYDRATE",
+      "note": ""
     },
     {
-      "id": "AFCD F005199",
-      "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd"
+      "title": "AFCD F005199",
+      "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd",
+      "kind": "CARBOHYDRATE",
+      "note": ""
     },
     {
-      "id": "GI coding",
-      "url": "https://doi.org/10.1016/j.jfca.2007.02.004"
+      "title": "GI coding",
+      "url": "https://doi.org/10.1016/j.jfca.2007.02.004",
+      "kind": "B_CODING",
+      "note": ""
     }
   ],
   "boundFiles": {
@@ -71,5 +81,56 @@
       50
     ]
   ],
-  "unroundedGk": "16.38375"
+  "unroundedGk": "16.38375",
+  "ingredients": [
+    {
+      "name": {
+        "fi": "Kypsä kuorittu ruokabanaani",
+        "en": "Peeled ripe plantain",
+        "sv": "Skalad mogen matbanan",
+        "th": "กล้วยแพลนเทนสุกปอกเปลือก"
+      },
+      "grams": 150
+    },
+    {
+      "name": {
+        "fi": "Kananmuna ilman kuorta",
+        "en": "Shelled egg",
+        "sv": "Ägg utan skal",
+        "th": "ไข่ไม่รวมเปลือก"
+      },
+      "grams": 110
+    },
+    {
+      "name": {
+        "fi": "Avokado",
+        "en": "Avocado",
+        "sv": "Avokado",
+        "th": "อะโวคาโด"
+      },
+      "grams": 120
+    },
+    {
+      "name": {
+        "fi": "Kuorittu limetti",
+        "en": "Peeled lime",
+        "sv": "Skalad lime",
+        "th": "มะนาวปอกเปลือก"
+      },
+      "grams": 40
+    },
+    {
+      "name": {
+        "fi": "Neutraali paistoöljy",
+        "en": "Neutral cooking oil",
+        "sv": "Neutral stekolja",
+        "th": "น้ำมันรสกลาง"
+      },
+      "grams": null,
+      "quantity": {
+        "amount": 1,
+        "unit": "tbsp"
+      }
+    }
+  ]
 }

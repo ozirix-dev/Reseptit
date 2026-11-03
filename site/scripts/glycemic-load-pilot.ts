@@ -166,7 +166,7 @@ const results = await applyScopedPolyolC(root, await applyRecovery(root, await w
 const gkOnlyVariants = [...buildGkOnlyVariants(root),...buildApprovedSevenVariants(root),...buildApprovedFourVariants(root),...buildApprovedBVariants(root),...buildProductAVariants(root),...buildPanangKimchiVariants(root),buildBlueberryPieVariant(root),...buildThreeCurryVariants(root),buildLindstromBrineVariant(root),...buildReviewedGkVariants(root),...buildPohaHoneyMustardVariants(root),...buildTehoajoVariants(root),...buildTwoAlmondPieVariants(root)];
 const versionCoverage = countGkVersions(results,gkOnlyVariants);
 if (process.argv.includes('--operation80-release-check')) {
-  const { buildFarinataReviewVariant, buildLabnehReviewVariant, buildAckeeReviewVariant } = await import('./gk-farinata-review');
+  const { buildFarinataReviewVariant, buildLabnehReviewVariant, buildAckeeReviewVariant, buildPointReviewVariant } = await import('./gk-farinata-review');
   type ReleaseEntry = {
     recipeId: string; recipePath: string; recipeSha256: string; servings: number;
     evidencePath: string; evidenceSha256: string; scenarios: string[];
@@ -197,7 +197,10 @@ if (process.argv.includes('--operation80-release-check')) {
       || firstBatch.some(id => published.has(id) || !available.has(id))) {
     throw new Error('Operation80 first batch must contain 30 distinct unpublished recipe IDs');
   }
-  const prepared = [buildFarinataReviewVariant(root), buildLabnehReviewVariant(root), buildAckeeReviewVariant(root)];
+  const prepared = [buildFarinataReviewVariant(root), buildLabnehReviewVariant(root), buildAckeeReviewVariant(root),
+    ...['plantain', 'okayu'].map(name => buildPointReviewVariant(
+      root, 'docs/nutrition/gk80-operation80-' + name + '-release-candidate.json')),
+  ];
   if (prepared.some(variant => !firstBatchIds.has(variant.recipeId))) {
     throw new Error('Operation80 preview contains a recipe outside the first batch');
   }

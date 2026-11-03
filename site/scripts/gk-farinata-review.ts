@@ -202,3 +202,42 @@ export function buildAckeeReviewVariant(root: string): GkOnlyVariant {
     })),
   };
 }
+
+type PointReviewCandidate = Omit<Candidate, 'ingredients'> & {
+  inputs: [number, number, number][];
+  ingredients: GkOnlyVariant['ingredients'];
+  sources: GkOnlyVariant['sources'];
+};
+
+export function buildPointReviewVariant(root: string, packetPath: string): GkOnlyVariant {
+  const read = (file: string) => readFileSync(join(root, file), 'utf8');
+  const raw = read(packetPath);
+  const c: PointReviewCandidate = JSON.parse(raw);
+  if (c.reviewState !== 'PREPARED_FOR_REVIEW' || c.publicationAuthorized !== false
+      || !Number.isInteger(c.servings) || c.servings <= 0 || c.omittedCho !== 0
+      || c.inputs.length === 0 || c.inputs.length > c.ingredients.length
+      || Object.keys(c.boundFiles).length !== 2) throw Error('Invalid GK point review: ' + packetPath);
+  for (const [file, hash] of Object.entries(c.boundFiles)) {
+    if (textHash(read(file)) !== hash) throw Error('GK point binding changed: ' + file);
+  }
+  for (const t of [c.preparation, c.limitation, ...c.ingredients.map(i => i.name)]) {
+    if (!locales.every(locale => t[locale]?.trim())) throw Error('GK point translation missing: ' + c.recipeId);
+  }
+  const point = c.inputs.reduce((sum, [g, cho, gi], index) => {
+    if (g !== c.ingredients[index].grams || ![g, cho, gi].every(n => Number.isFinite(n) && n >= 0)
+        || cho > 100 || (cho > 0 && gi === 0)) throw Error('Invalid GK point input: ' + c.recipeId);
+    return sum + g * cho * gi;
+  }, 0) / (10000 * c.servings);
+  if (!Number.isFinite(Number(c.unroundedGk)) || Math.abs(point - Number(c.unroundedGk)) > 1e-10) {
+    throw Error('GK point calculation changed: ' + c.recipeId);
+  }
+  const inputSha256 = textHash(raw);
+  return {
+    recipeId: c.recipeId, versionId: 'gk-operation80-review-' + inputSha256.slice(0, 12), inputSha256,
+    level: 'B', servings: c.servings, point, scenarioRange: null, rangeKind: null,
+    omittedCho: 0, confidence: 'LOW', macroScope: 'NO_MACRO_PACKAGE_FOR_THIS_VERSION',
+    quantityContract: 'GK_ONLY_NATIVE_UNITS_V1', standalonePreparation: true,
+    ingredients: c.ingredients, preparation: c.preparation, limitation: c.limitation,
+    codingKinds: [], sensitivity: null, sources: c.sources,
+  };
+}
