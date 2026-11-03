@@ -241,7 +241,7 @@ const publicResults = results.flatMap((result) => {
     const ingredient = separator >= 0 ? detail.slice(0, separator) : "";
     const reason = separator >= 0 ? detail.slice(separator + 2) : detail;
     const category = /differs from the last GL review/i.test(reason) ? "REVIEW"
-      : /GI/i.test(reason) ? "GI"
+      : /\bGI\b|undefined category mean\/analogue/i.test(reason) ? "GI"
       : /food-specific mass conversion|food-specific.*mass|portion mass|gram conversion/i.test(reason) ? "PORTION"
       : /allows materially different|alternative|selected liquid|variant/i.test(reason) ? "VARIANT"
       : /amount|quantity|mass is missing|unweighed|implausible|unit or decimal/i.test(reason) ? "AMOUNT"
