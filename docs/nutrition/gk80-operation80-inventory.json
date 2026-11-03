@@ -4,9 +4,9 @@
   "coverage": {
     "PROPOSED_RANGE": 36,
     "PUBLISHED_SINGLE": 197,
-    "PROPOSED_SINGLE": 29,
+    "PROPOSED_SINGLE": 30,
     "IN_PROGRESS": 36,
-    "NO_GK": 18,
+    "NO_GK": 17,
     "PUBLISHED_RANGE": 10
   },
   "reviewedPrHeads": {
@@ -111,7 +111,7 @@
     "japanilainen-curry-tofulla",
     "khao-soi-vhh-konjac"
   ],
-  "nextRecipeId": "vietnamilainen-banh-cuon-sienilla",
+  "nextRecipeId": "vietnamilainen-xoi-maapahkinalla",
   "recipes": [
     {
       "recipeId": "aloo-paratha",
@@ -17935,10 +17935,10 @@
       "recipeSha256": "54b5cf45d8eeff8a07d9c5e9bcac2e4db43d916fb594818c2cc72485aafa9385",
       "pilotInputSha256": "283e0215b5ba888b078c1663aa62302a3f0494310bc7c5b03d3cd1b452246665",
       "servings": 2,
-      "status": "NO_GK",
+      "status": "PROPOSED_SINGLE",
       "priorEvidence": [],
-      "level": null,
-      "ownerApproval": null,
+      "level": "B",
+      "ownerApproval": false,
       "sourceQualified": null,
       "blockers": [
         "vietnamilainen-banh-cuon-sienilla: riisijauho: AJO 1.8: finished bakery category mean GI 58 does not measure this ingredient/preparation. No sufficiently matched original human GI source established; see glycemic-bakery-four-source-review.md.",
@@ -18006,7 +18006,49 @@
             "Source-documented zero available carbohydrate: Plain salt has zero available carbohydrate."
           ]
         }
-      ]
+      ],
+      "operation80Proposal": {
+        "evidencePath": "docs/nutrition/gk80-operation80-batch-46.md",
+        "baselineRecipeSha256": "54b5cf45d8eeff8a07d9c5e9bcac2e4db43d916fb594818c2cc72485aafa9385",
+        "inputFields": [
+          "gramsBatch",
+          "choPer100g",
+          "giGlucoseScale"
+        ],
+        "scenarios": [
+          {
+            "inputs": [
+              [
+                100,
+                79.3,
+                90
+              ],
+              [
+                100,
+                0.3,
+                50
+              ],
+              [
+                150,
+                0,
+                0
+              ],
+              [
+                18,
+                3,
+                50
+              ],
+              [
+                5,
+                1.9,
+                50
+              ]
+            ],
+            "gkPerServing": "35.91875"
+          }
+        ],
+        "publicationAuthorized": false
+      }
     },
     {
       "recipeId": "vietnamilainen-banh-mi-munalla",
