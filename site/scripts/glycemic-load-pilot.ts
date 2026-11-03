@@ -223,10 +223,13 @@ if (process.argv.includes('--operation80-release-check')) {
   if (prepared.length !== firstBatchIds.size || prepared.some(variant => !firstBatchIds.has(variant.recipeId))) {
     throw new Error('Operation80 preview contains a recipe outside the first batch');
   }
-  const preview = countGkVersions(results, [...existingGkOnlyVariants, ...prepared]);
+  const secondBatch = [
+    buildPointReviewVariant(root, 'docs/nutrition/gk80-operation80-silakkapihvit-release-candidate.json'),
+  ];
+  const preview = countGkVersions(results, [...existingGkOnlyVariants, ...prepared, ...secondBatch]);
   console.log(JSON.stringify({
     baseline: { numeric: baselineCoverage.numericRecipes, total: baselineCoverage.total },
-    preview: { numeric: preview.numericRecipes, added: prepared.map(variant => variant.recipeId).sort() },
+    preview: { numeric: preview.numericRecipes, firstBatch: prepared.map(variant => variant.recipeId).sort(), secondBatch: secondBatch.map(variant => variant.recipeId).sort() },
   }, null, 2));
   process.exit(0);
 }

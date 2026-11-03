@@ -1,0 +1,151 @@
+{
+  "recipeId": "silakkapihvit-tilli-kermakastike",
+  "servings": 4,
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "unroundedGk": "0.58075",
+  "inputs": [
+    [
+      500,
+      0,
+      0
+    ],
+    [
+      28,
+      0.8,
+      50
+    ],
+    [
+      150,
+      2.9,
+      50
+    ],
+    [
+      8,
+      0.9,
+      50
+    ]
+  ],
+  "omissions": [
+    {
+      "ingredientIndex": 4,
+      "choPer100g": 59.391
+    },
+    {
+      "ingredientIndex": 5,
+      "choPer100g": 1.6
+    },
+    {
+      "ingredientIndex": 6,
+      "choPer100g": 1.6
+    },
+    {
+      "ingredientIndex": 7,
+      "choPer100g": 100
+    }
+  ],
+  "ingredients": [
+    {
+      "name": {
+        "fi": "Silakkafileet",
+        "en": "Baltic herring fillets",
+        "sv": "Strömmingsfiléer",
+        "th": "เนื้อปลาเฮร์ริงบอลติก"
+      },
+      "grams": 500
+    },
+    {
+      "name": {
+        "fi": "Voi",
+        "en": "Butter",
+        "sv": "Smör",
+        "th": "เนย"
+      },
+      "grams": 28
+    },
+    {
+      "name": {
+        "fi": "Kuohukerma",
+        "en": "Whipping cream",
+        "sv": "Vispgrädde",
+        "th": "วิปปิงครีม"
+      },
+      "grams": 150
+    },
+    {
+      "name": {
+        "fi": "Tilli",
+        "en": "Dill",
+        "sv": "Dill",
+        "th": "ผักชีลาว"
+      },
+      "grams": 8
+    },
+    {
+      "name": {
+        "fi": "Täysjyväruisjauho",
+        "en": "Wholemeal rye flour",
+        "sv": "Fullkornsrågmjöl",
+        "th": "แป้งไรย์โฮลวีต"
+      },
+      "grams": 6
+    },
+    {
+      "name": {
+        "fi": "Sitruunamehu kastikkeeseen",
+        "en": "Lemon juice for sauce",
+        "sv": "Citronsaft till såsen",
+        "th": "น้ำเลมอนสำหรับซอส"
+      },
+      "grams": 15
+    },
+    {
+      "name": {
+        "fi": "Sitruunamehu tarjoiluun",
+        "en": "Lemon juice for serving",
+        "sv": "Citronsaft till servering",
+        "th": "น้ำเลมอนสำหรับเสิร์ฟ"
+      },
+      "grams": 20
+    },
+    {
+      "name": {
+        "fi": "Valkopippuri",
+        "en": "White pepper",
+        "sv": "Vitpeppar",
+        "th": "พริกไทยขาว"
+      },
+      "grams": 0.5
+    }
+  ],
+  "preparation": {
+    "fi": "Pölytä {{amount:0}} g silakkafileitä enintään {{amount:4}} g:lla ruisjauhoa. Mausta suolalla ja enintään {{amount:7}} g:lla valkopippuria. Taita fileet pareittain nahkapuolet ulospäin. Paista pihvit kypsiksi {{amount:1}} g:ssa voita. Tee kastike {{amount:2}} g:sta kermaa, {{amount:3}} g:sta tilliä ja {{amount:5}} g:sta sitruunamehua. Jaa pihvit, kastike ja {{amount:6}} g sitruunamehua {{servings}} annokseen.",
+    "en": "Dust {{amount:0}} g herring fillets with up to {{amount:4}} g rye flour. Season with salt and up to {{amount:7}} g white pepper. Pair the fillets skin-side out. Fry until cooked in {{amount:1}} g butter. Make a sauce with {{amount:2}} g cream, {{amount:3}} g dill and {{amount:5}} g lemon juice. Divide the fish, sauce and {{amount:6}} g lemon juice into {{servings}} servings.",
+    "sv": "Pudra {{amount:0}} g strömming med högst {{amount:4}} g rågmjöl. Krydda med salt och högst {{amount:7}} g vitpeppar. Vik filéerna parvis med skinnsidan utåt. Stek fisken färdig i {{amount:1}} g smör. Gör en sås av {{amount:2}} g grädde, {{amount:3}} g dill och {{amount:5}} g citronsaft. Dela fisken, såsen och {{amount:6}} g citronsaft i {{servings}} portioner.",
+    "th": "คลุกปลาเฮร์ริง {{amount:0}} กรัมด้วยแป้งไรย์ไม่เกิน {{amount:4}} กรัม ปรุงด้วยเกลือและพริกไทยขาวไม่เกิน {{amount:7}} กรัม ประกบเนื้อปลาเป็นคู่โดยหันหนังออก ทอดในเนย {{amount:1}} กรัมจนสุก ทำซอสจากครีม {{amount:2}} กรัม ผักชีลาว {{amount:3}} กรัม และน้ำเลมอน {{amount:5}} กรัม แบ่งปลา ซอส และน้ำเลมอน {{amount:6}} กรัมเป็น {{servings}} ที่"
+  },
+  "limitation": {
+    "fi": "Arvio käyttää laskennallisia GI-koodeja. Ruisjauhon, sitruunamehun ja valkopippurin hiilihydraatteja jää summan ulkopuolelle enintään 1,16 g annosta kohti.",
+    "en": "The estimate uses assigned GI codes. Up to 1.16 g of carbohydrate per serving from rye flour, lemon juice and white pepper is excluded.",
+    "sv": "Uppskattningen använder tilldelade GI-koder. Högst 1,16 g kolhydrat per portion från rågmjöl, citronsaft och vitpeppar ingår inte.",
+    "th": "ค่าประมาณใช้รหัส GI ตามกลุ่ม และไม่รวมคาร์โบไฮเดรตจากแป้งไรย์ น้ำเลมอน และพริกไทยขาวไม่เกิน 1.16 กรัมต่อที่"
+  },
+  "sources": [
+    {
+      "title": "THL Fineli 29207, 500, 631, 369, 100, 11557",
+      "url": "https://fineli.fi/fineli/fi/ohje/19",
+      "kind": "CARBOHYDRATE",
+      "note": "Fineli Release 20 CC BY 4.0."
+    },
+    {
+      "title": "Low carbohydrate coding",
+      "url": "https://doi.org/10.1016/j.jfca.2007.02.004",
+      "kind": "PUBLISHED_CODING",
+      "note": "Butter, cream and dill use assigned code 50."
+    }
+  ],
+  "boundFiles": {
+    "reseptit/paaruoat/silakkapihvit-tilli-kermakastike.md": "c2a1a660591eee52740e6356f88172ca92f765d4aad9e6dffb3044e32f590389",
+    "docs/nutrition/gk80-operation80-batch-44.md": "724cc660c45eeb316eedb316d3260be3054dab152abda29701d1e46eaf715914"
+  }
+}
