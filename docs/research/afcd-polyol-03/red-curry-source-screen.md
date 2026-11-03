@@ -41,3 +41,7 @@ Riisin 37 g CHO/annos × GI 67 / 100 antaa 24,79 GK. Raaka tomaatti 2,15625 g CH
 Neljän annoksen laskentasyötteessä 150 g vihreitä papuja tuottaa 1,2375 g ja 120 g syötävää punaista paprikaa 1,35 g imeytyvää hiilihydraattia annosta kohti. Kumpikin ylittää yksittäisen poisjättörajan. Jos nimetään ja punnitaan 400 g Fairtrade Original -kookosmaitoa sekä 30 g Valcom Red -tahnaa, niiden varaukset ovat 0,8 ja 0,285 g/annos. Nykyisen laskentasyötteen kalakastikkeen, limetin ja basilikan kanssa yhteensä 1,293 g/annos jää jäljelle, mikäli papu ja paprika saavat omat kelpuutetut GI-viitteensä. Punnittu tuotepari avaa yksin nolla uutta tulosta. Molemmille kasviksille annettu GI 40 tuottaisi 1,035 GK/annos vain herkkyyskokeena. Julkaistava versio edellyttää molempien valmistusvastineiden sekä muiden lähdesovellusten katselmointia.
 
 [Laskentasyöte](../../nutrition/calculations/kookos-lime-kanacurry.json)
+
+### Punnittu paprikavaihtoehto
+
+Jos 120 g paprikaa korvataan 60 grammalla syötävää punaista paprikaa, paprikan poisjättö on 60 × 0,045 / 4 = 0,675 g/annos. Yhteispoisjättö on 1,293 + 0,675 = 1,968 g/annos ja marginaali 0,032 g. Paprikalle ei tarvita GI-oletusta. Jos paellan taitepavulle hyväksytty GI 40 -malli kelpuutetaan tämän version kypsille taitepavuille, laskettu GK-osa on 1,2375 × 0,40 = 0,495. Paprikan puolittaminen muuttaa sisältöä. Tulos on seulonta nykyisillä koostumuspisteillä. Pienen marginaalin vuoksi kaikkien lähteiden, massojen ja kastikkeen tarjoilun täsmävarmennus tarvitaan ennen hyväksyntää.
