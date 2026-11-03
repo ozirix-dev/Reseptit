@@ -1,0 +1,52 @@
+{
+  "ownerApproval": "2026-11-03: Hyväksyn nuo kolme täsmäversiota.",
+  "cases": [
+    {
+      "recipeId": "pav-bhaji",
+      "proposal": "docs/research/gk80-international-20261102/spices-and-native-miso/pav-bhaji-current-source-version.json",
+      "catalog": "docs/research/gk80-international-20261102/spices-and-native-miso/source-catalog.json",
+      "bindings": {
+        "docs/research/gk80-international-20261102/spices-and-native-miso/pav-bhaji-current-source-version.json": "e22f15133ef2e9ea0903817766efe31ca7de6754fe60f1c05fae4faca65e817e",
+        "docs/research/gk80-international-20261102/spices-and-native-miso/source-catalog.json": "c795f34b75ff14ddd6126471b844300eae4ac3239754af16973b23c80d50c367",
+        "site/scripts/glycemic-load-model.ts": "10ce09e465886e4538fc0b2ad2a54ca0b050a9e3729b7417eb0a91f2b946b48c",
+        "site/scripts/nutrition-model.ts": "6667190a6604523fe083d6d766cfbbdb7c2ce75366194f3036ce711a8218a7ce",
+        "docs/nutrition/glycemic-index-records.json": "fb465ac8f68ffc85e29eb9900f17df00b081fa0ddc3e25d253140aecb248acda",
+        "reseptit/paaruoat/pav-bhaji.md": "aee53661e51534d3dc5ca6ec9bdad7eb9eaa16fa6b420e1c233cb7c1508461d5",
+        "docs/nutrition/calculations/pav-bhaji.json": "1e8cb80394a77492854a3522614dd3797bfb4e4661422eebc84e67583e68e740",
+        "docs/nutrition/fineli-release-20-reference.json": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76",
+        "docs/nutrition/afcd-release-3-reference.json": "02edf1cc95191c05edf791656a5109c41bcf4d4a3e707be69ef5009bc640022e"
+      }
+    },
+    {
+      "recipeId": "hunaja-sinappikana-kaalilla",
+      "proposal": "docs/research/gk80-international-20261102/pancake-source-and-fixed-input/honey-mustard-chicken-fixed-input-proposal.json",
+      "catalog": "docs/research/gk80-international-20261102/pancake-source-and-fixed-input/source-catalog.json",
+      "bindings": {
+        "docs/research/gk80-international-20261102/pancake-source-and-fixed-input/honey-mustard-chicken-fixed-input-proposal.json": "a1beb66e7abaf810278f0d78bfc1a79efb2d30755b58158c23dca1f0bd75f239",
+        "docs/research/gk80-international-20261102/pancake-source-and-fixed-input/source-catalog.json": "f0cd63f2e6f2f48ee6b5940d90b36db6fef3315734d18ed403c400362bf5ae55",
+        "site/scripts/glycemic-load-model.ts": "10ce09e465886e4538fc0b2ad2a54ca0b050a9e3729b7417eb0a91f2b946b48c",
+        "site/scripts/nutrition-model.ts": "6667190a6604523fe083d6d766cfbbdb7c2ce75366194f3036ce711a8218a7ce",
+        "docs/nutrition/fineli-release-20-reference.json": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76",
+        "docs/nutrition/afcd-release-3-reference.json": "02edf1cc95191c05edf791656a5109c41bcf4d4a3e707be69ef5009bc640022e",
+        "docs/nutrition/glycemic-index-records.json": "fb465ac8f68ffc85e29eb9900f17df00b081fa0ddc3e25d253140aecb248acda",
+        "reseptit/paaruoat/hunaja-sinappikana-kaalilla.md": "c993bedcb8e678b3ca9fa71b957a79ab3bbe0a3e50d42f624eacaf1e7904a859"
+      }
+    },
+    {
+      "recipeId": "indialainen-poha-maapahkinoilla",
+      "proposal": "docs/research/gk80-international-20261102/poha-and-main179/poha-fresh-leaf-version.json",
+      "catalog": "docs/research/gk80-international-20261102/poha-and-main179/source-catalog.json",
+      "bindings": {
+        "docs/research/gk80-international-20261102/poha-and-main179/poha-fresh-leaf-version.json": "90881aa37a0b15be63b2b7dabf4e96ba905c74037459afec87f56bd268db497c",
+        "docs/research/gk80-international-20261102/poha-and-main179/source-catalog.json": "fc9700a047885399cb243ce4ba51ec41329b84e51aa62eb22e9f489c8c9cc3ba",
+        "site/scripts/glycemic-load-model.ts": "10ce09e465886e4538fc0b2ad2a54ca0b050a9e3729b7417eb0a91f2b946b48c",
+        "site/scripts/nutrition-model.ts": "6667190a6604523fe083d6d766cfbbdb7c2ce75366194f3036ce711a8218a7ce",
+        "docs/nutrition/fineli-release-20-reference.json": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76",
+        "docs/nutrition/afcd-release-3-reference.json": "02edf1cc95191c05edf791656a5109c41bcf4d4a3e707be69ef5009bc640022e",
+        "docs/nutrition/glycemic-index-records.json": "fb465ac8f68ffc85e29eb9900f17df00b081fa0ddc3e25d253140aecb248acda",
+        "reseptit/aamupalat/indialainen-poha-maapahkinoilla.md": "70651af4a46cc2443fba33b56c5f83235bf2bd608ba3f450b1f8f8c49f2a7485",
+        "docs/nutrition/calculations/indialainen-poha-maapahkinoilla.json": "ea0a6f3540bf6a95e9f998b8fc1e0f06e37d43b912029437c138c9410b7186c8"
+      }
+    }
+  ]
+}
