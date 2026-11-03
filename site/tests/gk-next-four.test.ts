@@ -220,7 +220,10 @@ test('the four reviewed GK-only versions retain their points and native liquid u
 });
 
 test('approved almond pies retain their exact results and apple sweetener measures', () => {
- const [apple, rhubarb] = gkOnlyVariants.slice(-2);
+ const apple = gkOnlyVariants.find(variant => variant.recipeId === 'vhh-omenapiirakka');
+ const rhubarb = gkOnlyVariants.find(variant => variant.recipeId === 'vhh-raparperipiirakka');
+ assert.ok(apple);
+ assert.ok(rhubarb);
  assert.deepEqual([apple.recipeId, rhubarb.recipeId], ['vhh-omenapiirakka', 'vhh-raparperipiirakka']);
  assert.deepEqual([apple.point, rhubarb.point], [1.5, 1.33]);
  assert.deepEqual(gkOnlyQuantity(apple, 3), {amount: 2, unit: 'tbsp'});
