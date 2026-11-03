@@ -35,3 +35,5 @@ Julkinen kattavuus on 202/326 ja tavoitteeseen 261/326 tarvitaan 59 reseptiä. D
 Margheritan 56–65 ja Hyderabadi-kanabiryanin 24–32 on hyväksytty täsmäversioina integraation valmisteluun. Ne tuovat mahdolliset kaksi erillistä resepti-ID:tä. Jos myös ne integroidaan ja julkaistaan, ehdollinen kattavuus olisi 210/326. Julkaisusta päätetään erikseen.
 
 [Draft PR 214](https://github.com/ozirix-dev/Reseptit/pull/214) · [Margheritan syöte](margherita-handoff.json) · [Biryanin syöte](biryani-handoff.json)
+
+Margheritan ja Hyderabadi-kanabiryanin luovutuskenttä nutritionInputSha256 tarkoittaa ravintolaskentatiedoston sourceHash-kenttää. Molemmat arvot täsmäävät main-commitissa 9740c2a. Koko JSON-tiedoston tiiviste tarkistaa eri asian. Tarkista sourceHash uudelleen integraation pohjaversiosta ja käytä hyväksyttyjä välejä 56–65 ja 24–32.
