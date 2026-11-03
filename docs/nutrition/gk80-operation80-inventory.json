@@ -2,12 +2,12 @@
   "schemaVersion": 1,
   "main": "4d6f19a620bb95e771c12f499554bf2cf1f06e51",
   "coverage": {
+    "PROPOSED_RANGE": 10,
     "PUBLISHED_SINGLE": 197,
-    "NO_GK": 101,
-    "PROPOSED_RANGE": 9,
-    "PUBLISHED_RANGE": 10,
-    "PROPOSED_SINGLE": 5,
-    "IN_PROGRESS": 4
+    "PROPOSED_SINGLE": 6,
+    "IN_PROGRESS": 7,
+    "NO_GK": 96,
+    "PUBLISHED_RANGE": 10
   },
   "reviewedPrHeads": {
     "229": "2b50b18af9b473337d7ddad8d37a660547f1d63d",
@@ -25,16 +25,11 @@
     "160": "64f2c14ee3b158fbeff6719278ffaa5f436aec4f"
   },
   "queue": [
-    "bibimbap",
-    "char-siu",
     "gulab-jamun",
-    "intialainen-masala-dosa",
-    "japanilainen-yaki-onigiri-misolla",
     "karibia-johnny-cake",
     "keto-korvapuustit",
     "ketopizza-pofiber-pohjalla",
     "kiinalainen-teehaudutetut-munat",
-    "lahi-ita-labneh-kulho-zaatarilla",
     "lahi-ita-manakish-zaatarilla",
     "mala-xiang-guo",
     "malesialainen-kookos-banaanikulho",
@@ -46,7 +41,6 @@
     "tangyuan",
     "vada-pav",
     "valimerellinen-appelsiini-aamiaiskakku",
-    "valimerellinen-farinata-aamupalaksi",
     "vhh-lihapiirakka",
     "vhh-runebergintortut",
     "vietnamilainen-banh-bao-kananmunalla",
@@ -129,9 +123,13 @@
     "munakoiso-kesakurpitsalasagne",
     "paistettu-maksa-pekonilla",
     "kerala-kalacurry",
-    "hyderabadi-kanabiryani"
+    "hyderabadi-kanabiryani",
+    "bibimbap",
+    "char-siu",
+    "intialainen-masala-dosa",
+    "japanilainen-yaki-onigiri-misolla"
   ],
-  "nextRecipeId": "bibimbap",
+  "nextRecipeId": "gulab-jamun",
   "recipes": [
     {
       "recipeId": "aloo-paratha",
@@ -339,7 +337,7 @@
       "recipeSha256": "332f3f1b0dc5388eaecea810bf7613f596e9dc4a1013e6a2f6a46eb7331f5dba",
       "pilotInputSha256": "029a7e9f1f46e3163ba01cd92cd48b52d5ffc103c7d03e265add39af38a4a7d8",
       "servings": 4,
-      "status": "NO_GK",
+      "status": "IN_PROGRESS",
       "priorEvidence": [],
       "level": null,
       "ownerApproval": null,
@@ -421,7 +419,8 @@
             "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.019 g available carbohydrate): GI evidence is missing."
           ]
         }
-      ]
+      ],
+      "operation80Finding": "Sempio Classic label verified; weighed dose and GI remain open."
     },
     {
       "recipeId": "bouillabaisse",
@@ -885,7 +884,7 @@
       "recipeSha256": "1fac33770ec0fec36df5e22131cd067b4e237b2047956e3f126f1e9fecb3a9a6",
       "pilotInputSha256": "984fd22cfe25e6882100d4a91c368ff6d3d113166d6b624db264a640bd80ae43",
       "servings": 4,
-      "status": "NO_GK",
+      "status": "IN_PROGRESS",
       "priorEvidence": [],
       "level": null,
       "ownerApproval": null,
@@ -955,7 +954,8 @@
             "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.076 g available carbohydrate): GI evidence is missing."
           ]
         }
-      ]
+      ],
+      "operation80Finding": "Hoisin GI and retained marinade/glaze remain open."
     },
     {
       "recipeId": "chettinad-kana",
@@ -3283,7 +3283,7 @@
       "recipeSha256": "bbe0ddec40109be7f6815ae2f4c4d28d6f6677f3bf0844c64e9d1d997610e258",
       "pilotInputSha256": "c7ef6ccdc465a7892c995cf82a5c815db981ff6f5bcb639752839fb95d7a4985",
       "servings": 2,
-      "status": "NO_GK",
+      "status": "IN_PROGRESS",
       "priorEvidence": [],
       "level": null,
       "ownerApproval": null,
@@ -3330,7 +3330,8 @@
             "Individual sub-1 g contribution counted toward cumulative 2 g/serving editorial tolerance: Conservative culinary-use bound 0.2 g per recipe, divided by servings, below 1 g available carbohydrate per serving."
           ]
         }
-      ]
+      ],
+      "operation80Finding": "Confirm 150 g mustard seed."
     },
     {
       "recipeId": "intialainen-pesarattu-mungpavuista",
@@ -3980,7 +3981,7 @@
       "recipeSha256": "ecce61fa96e4bad04ddaaa871233e66bb2d1ff92e8b0e97baec90a265f6f4320",
       "pilotInputSha256": "23a2191aa86c52d6d43bae8e3374ca36d1acb5788e3c0e55fa28acae207d5c73",
       "servings": 2,
-      "status": "NO_GK",
+      "status": "IN_PROGRESS",
       "priorEvidence": [],
       "level": null,
       "ownerApproval": null,
@@ -4050,7 +4051,8 @@
             "Source-documented zero available carbohydrate: Plain salt has zero available carbohydrate."
           ]
         }
-      ]
+      ],
+      "operation80Finding": "Confirm 150 g miso and 150 g nori; bind pan-grilled rice preparation."
     },
     {
       "recipeId": "jauheliha-kaalikeitto-vhh",
@@ -7751,10 +7753,10 @@
       "recipeSha256": "7775f23aefb6aed2434512dd9f5cd42296d3e8bc6aa14decfeaf02bee0e7db95",
       "pilotInputSha256": "164a499d078e0a9f08c1bb88e105c9c708d86074268b8be90f16299addc5facc",
       "servings": 2,
-      "status": "NO_GK",
+      "status": "PROPOSED_RANGE",
       "priorEvidence": [],
-      "level": null,
-      "ownerApproval": null,
+      "level": "B",
+      "ownerApproval": false,
       "sourceQualified": null,
       "blockers": [
         "lahi-ita-labneh-kulho-zaatarilla: labneh: No source-matched composition and preparation was resolved for “labneh”; it is not treated as zero."
@@ -7809,7 +7811,69 @@
             "Source-documented zero available carbohydrate: Plain salt has zero available carbohydrate."
           ]
         }
-      ]
+      ],
+      "operation80Proposal": {
+        "evidencePath": "docs/nutrition/gk80-operation80-batch-01.md",
+        "baselineRecipeSha256": "7775f23aefb6aed2434512dd9f5cd42296d3e8bc6aa14decfeaf02bee0e7db95",
+        "inputFields": [
+          "gramsBatch",
+          "choPer100g",
+          "giGlucoseScale"
+        ],
+        "scenarios": [
+          {
+            "inputs": [
+              [
+                100,
+                2,
+                30
+              ],
+              [
+                400,
+                1.4,
+                40
+              ],
+              [
+                2,
+                8.4,
+                50
+              ],
+              [
+                150,
+                0,
+                0
+              ]
+            ],
+            "gkPerServing": "1.462"
+          },
+          {
+            "inputs": [
+              [
+                100,
+                4.1,
+                30
+              ],
+              [
+                400,
+                1.4,
+                40
+              ],
+              [
+                2,
+                8.4,
+                50
+              ],
+              [
+                150,
+                0,
+                0
+              ]
+            ],
+            "gkPerServing": "1.777"
+          }
+        ],
+        "publicationAuthorized": false
+      }
     },
     {
       "recipeId": "lahi-ita-manakish-zaatarilla",
@@ -14649,10 +14713,10 @@
       "recipeSha256": "1b15fd29f9d833b84289c2d1345e27a0110c4bda7044ed6939d581ede947d237",
       "pilotInputSha256": "0636df1f168a68ce74027daec35644b5da851ce89fb0d89f15681163f87a8d22",
       "servings": 2,
-      "status": "IN_PROGRESS",
+      "status": "PROPOSED_SINGLE",
       "priorEvidence": [],
-      "level": null,
-      "ownerApproval": null,
+      "level": "B",
+      "ownerApproval": false,
       "sourceQualified": null,
       "blockers": [
         "valimerellinen-farinata-aamupalaksi: tomaatti: GI evidence is missing."
@@ -14740,6 +14804,43 @@
         "gi": 42,
         "partialGkPerServing": 8.085,
         "wholeRecipe": false
+      },
+      "operation80Proposal": {
+        "evidencePath": "docs/nutrition/gk80-operation80-batch-01.md",
+        "baselineRecipeSha256": "1b15fd29f9d833b84289c2d1345e27a0110c4bda7044ed6939d581ede947d237",
+        "inputFields": [
+          "gramsBatch",
+          "choPer100g",
+          "giGlucoseScale"
+        ],
+        "scenarios": [
+          {
+            "inputs": [
+              [
+                100,
+                38.5,
+                42
+              ],
+              [
+                100,
+                3.45,
+                22
+              ],
+              [
+                1,
+                6.6,
+                40
+              ],
+              [
+                25,
+                0,
+                0
+              ]
+            ],
+            "gkPerServing": "8.4777"
+          }
+        ],
+        "publicationAuthorized": false
       }
     },
     {
