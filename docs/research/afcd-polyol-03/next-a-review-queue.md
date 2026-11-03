@@ -47,3 +47,11 @@ Kerala-kalacurry, maksa ja pekoni, kevätsipulipannukakku, Margherita ja Hyderab
 [Julkinen koonti](https://ozirix-dev.github.io/Reseptit/glykeeminen-kuorma/) · [PR 215:n julkaisuajo](https://github.com/ozirix-dev/Reseptit/actions/runs/41605550882)
 
 Pav bhajin integraatio on omassa [Draft PR 218:ssa](https://github.com/ozirix-dev/Reseptit/pull/218). Laske pav bhaji julkaisujonoon vain kerran. Pohan ja hunaja-sinappikanan [kielikorjaus PR 217](https://github.com/ozirix-dev/Reseptit/pull/217) koskee kahta jo laskettua resepti-ID:tä ja tuo kattavuuteen nolla uutta reseptiä.
+
+### Roti canai dhalilla
+
+UMS:n ihmiskokeessa roti canai ja dhal tarjoiltiin yhdessä. Tiivistelmän GI 62,59 koskee tätä ateriaa. Kymmenen terveen osallistujan kokeessa käytettiin glukoosivertailua, 50 g imeytyvää hiilihydraattia ja kahden tunnin seurantaa. Vuoden 2011 koostumusartikkelin GI 71 on peräisin sen viittaamasta vuoden 2005 väitöskirjasta. Testiannosten leivän ja dhalin suhteita ei ole varmennettu.
+
+Nykyisen syötteen vehnäjauhon, kuivien punalinssien ja kookosmaidon osuus on (73,998 + 45,7 + 200 × 0,92 × 0,017) / 2 = 61,413 g/annos. GI-pisteet antavat 38,44 ja 43,60 GK/annos ennen currylehtien osuutta. Väli 38–44 on herkkyysseulonta. Valmistusvastaavuus ja currylehtien koostumus jäävät avoimiksi.
+
+[UMS:n ihmiskoe](https://eprints.ums.edu.my/id/eprint/662/1/ae0000000310.pdf) · [Koostumusartikkeli, taulukko 2](https://pkukmweb.ukm.my/jsm/pdf_files/SM-PDF-40-8-2011/07%20nik%20shanita.pdf) · [Reseptin laskentasyöte](../../nutrition/calculations/malesialainen-roti-canai-dhalilla.json)
