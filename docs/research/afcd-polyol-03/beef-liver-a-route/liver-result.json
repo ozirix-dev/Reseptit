@@ -1,0 +1,67 @@
+{
+  "inputs": {
+    "rows": [
+      {
+        "name": "Raw beef liver",
+        "grams": 500,
+        "point": 3.3,
+        "sourceId": "MEXT 11092 estimated available CHO mass sum",
+        "url": "https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=11_11092_7&MODE=7",
+        "coded": "low"
+      },
+      {
+        "name": "Atria Suomalainen Pekoni 200 g",
+        "grams": 150,
+        "cap": 0.7,
+        "url": "https://www.atria.fi/tuotteet/atria-suomalainen-pekoni-200g/"
+      },
+      {
+        "name": "Yellow onion",
+        "grams": 55,
+        "fineli": "SIPULI, KELTASIPULI",
+        "coded": true
+      },
+      {
+        "name": "Butter",
+        "grams": 28,
+        "fineliId": "500"
+      },
+      {
+        "name": "Valio Keittiön lactose-free whipping cream 35%",
+        "grams": 100,
+        "cap": 3,
+        "url": "https://www.valio.fi/tuotteet/valio-keittion-kuohukerma-laktoositon/"
+      },
+      {
+        "name": "Pure salt",
+        "grams": 3,
+        "zero": true
+      },
+      {
+        "name": "Ground black pepper",
+        "grams": 1,
+        "fineliId": "11177"
+      }
+    ],
+    "servings": 4,
+    "recipeId": "paistettu-maksa-pekonilla",
+    "scope": "Four portions with all bacon, butter, cream sauce and pan juices. Original liver and bacon grams and liver doneness instruction retained. Cream and seasoning masses define the new exact version. MEXT estimated mass sum qualifies arithmetically, Fineli 5.031 does not qualify for this model.",
+    "lfSha256": {
+      "reseptit/paaruoat/paistettu-maksa-pekonilla.md": "32114e6da3c578b2a968f55cbf659604d2b0f3970696e4ae995c059702f8aed9",
+      "kaannokset/en/paaruoat/paistettu-maksa-pekonilla.md": "e849092bce4ea86e3d437cdf9f7055d08a50fee55bc4bc5e54ce2fe472a62314",
+      "kaannokset/sv/paaruoat/paistettu-maksa-pekonilla.md": "c979dd14ca2f65405239fa23cf624424240e9b427b71fbb8166786fdabe3ec46",
+      "kaannokset/th/paaruoat/paistettu-maksa-pekonilla.md": "2750f364906b469c168ede9ec190ba76f27614c3a9b029d78cffaf50d143fff9",
+      "docs/nutrition/fineli-release-20-reference.json": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76",
+      "docs/nutrition/afcd-release-3-reference.json": "02edf1cc95191c05edf791656a5109c41bcf4d4a3e707be69ef5009bc640022e",
+      "docs/nutrition/glycemic-index-records.json": "fb465ac8f68ffc85e29eb9900f17df00b081fa0ddc3e25d253140aecb248acda",
+      "site/scripts/glycemic-load-model.ts": "10ce09e465886e4538fc0b2ad2a54ca0b050a9e3729b7417eb0a91f2b946b48c"
+    }
+  },
+  "inputSha256": "02913db1bd928f97c7cb1ed27c1a58f540cb01887ac8545e5c06c9564dea9dcb",
+  "calculatedGkPart": 2.33,
+  "unroundedGk": 2.3265000000000002,
+  "omittedChoPerServing": 1.164275,
+  "sourceQualified": false,
+  "ownerApproved": false,
+  "publicationAuthorized": false
+}
