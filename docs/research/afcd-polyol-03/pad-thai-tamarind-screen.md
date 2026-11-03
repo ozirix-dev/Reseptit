@@ -37,3 +37,11 @@ Massapohjainen vaihtoehto säilyttää Squid 300 ml -tuotteen ja alkuperäiset 3
 Squid-tuote on nyt yksilöity. Terunkan 3,4 g/100 g -ilmoitus ja Asia Express Foodin tuotetieto ilmoittavat saman EAN-tunnuksen 8850620888012. Käytä tälle nimellistä varausta 0,255 g/annos ja yhteisvarausta 1,9545 g/annos. Maahantuoja vahvistaa tuotetunnisteen, ja jälleenmyyjän sivu antaa massapohjaisen ravintoarvon.
 
 [Massapohjainen ilmoitus ja EAN](https://www.terunka.cz/produkt/fish-sauce-rybi-omacka-300-ml) · [Maahantuoja](https://order.asiaexpressfood.nl/en/products/vissaus-5254.html)
+
+## Alkuperäisen 30 g tahnamäärän tutkimusreitti
+
+Garden Queen Concentrate Tamarind 454 g annostellaan suoraan wokkiin. Nimellinen 14,92 g CHO/100 g antaa neljälle annokselle 1,119 g/annos. A:n yksittäinen poisjättöraja ylittyy, joten tahna lasketaan mukaan. Skenaario käyttää maapähkinälle Jenkinsin ym. (1981) taulukon 1 GI-arvoa 13 sekä 20 g punnitulle raa’alle kevätsipulille veg40-mallia. Näiden laskettu GK-osuus on 0,178775/annos.
+
+Tamarindin GI 17,4 ja 36,3 antavat vastaavasti 0,373481 ja 0,584972 GK/annos koko lasketulle osalle. Korjattu poisjättövaraus on 1,1245 g/annos. Se saadaan vähentämällä aiemmasta 1,9545 grammasta laskentaan siirtyneet tahnan 0,60 g ja kevätsipulin 0,23 g. Aiempi 1,4845 g perustui 24 g:n tahnavarauksen ja 15 g:n tahnareitin sekoittamiseen. GI-vertailut kuvaavat lähdeskenaarioita. Soveltuvuus kaupalliseen wokissa kuumennettuun tiivisteeseen sekä maapähkinän ja kevätsipulin sovellukset vaativat katselmoinnin.
+
+[Garden Queen -tuotetieto](https://talardthai.com/product/garden-queen-concentrate-tamarind-454g/) · [Jenkins ym., taulukko 1](https://www.121cellmetagen.com/uploads/4/0/4/3/404373/glycemic_paper.pdf)
