@@ -4,9 +4,9 @@
   "coverage": {
     "PROPOSED_RANGE": 36,
     "PUBLISHED_SINGLE": 197,
-    "PROPOSED_SINGLE": 36,
+    "PROPOSED_SINGLE": 37,
     "IN_PROGRESS": 36,
-    "NO_GK": 11,
+    "NO_GK": 10,
     "PUBLISHED_RANGE": 10
   },
   "reviewedPrHeads": {
@@ -111,7 +111,7 @@
     "japanilainen-curry-tofulla",
     "khao-soi-vhh-konjac"
   ],
-  "nextRecipeId": "kimchi-jjigae",
+  "nextRecipeId": "tunisialainen-ojja",
   "recipes": [
     {
       "recipeId": "aloo-paratha",
@@ -7815,10 +7815,10 @@
       "recipeSha256": "ddf90c6176447617f9e997b58c8587fb5a3979aa40656aec152cab4407afb561",
       "pilotInputSha256": "2afb31057d66b954aa963a7e0b1d96539ffcf4313d9957a69dd1511ee26913f9",
       "servings": 4,
-      "status": "NO_GK",
+      "status": "PROPOSED_SINGLE",
       "priorEvidence": [],
-      "level": null,
-      "ownerApproval": null,
+      "level": "B",
+      "ownerApproval": false,
       "sourceQualified": null,
       "blockers": [
         "kimchi-jjigae: kypsää kimchiä: No source-matched composition and preparation was resolved for “kypsää kimchiä”; it is not treated as zero.",
@@ -7957,7 +7957,44 @@
             "Source-documented zero available carbohydrate: Pure edible oil has zero available carbohydrate."
           ]
         }
-      ]
+      ],
+      "operation80Proposal": {
+        "evidencePath": "docs/nutrition/gk80-operation80-batch-54.md",
+        "baselineRecipeSha256": "ddf90c6176447617f9e997b58c8587fb5a3979aa40656aec152cab4407afb561",
+        "inputFields": [
+          "gramsBatch",
+          "choPer100g",
+          "giGlucoseScale"
+        ],
+        "scenarios": [
+          {
+            "inputs": [
+              [
+                400,
+                1.1,
+                40
+              ],
+              [
+                300,
+                1.8,
+                50
+              ],
+              [
+                100,
+                4.8,
+                40
+              ],
+              [
+                40,
+                4.6,
+                40
+              ]
+            ],
+            "gkPerServing": "1.779"
+          }
+        ],
+        "publicationAuthorized": false
+      }
     },
     {
       "recipeId": "kookos-lime-kanacurry",
