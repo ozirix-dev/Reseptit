@@ -203,7 +203,7 @@ test('Lindström brine is an independent preparation with scaled, fully included
 test('the four reviewed GK-only versions retain their points and native liquid units', () => {
  const versions = gkOnlyVariants.slice(-4);
  assert.deepEqual(versions.map(v => [v.recipeId, v.point]), [
-  ['siemengranola-jogurtilla', 2.47],
+  ['siemengranola-jogurtilla', 2.38],
   ['lahi-ita-pistaasijogurtti', 4.37],
   ['korealainen-kongjuk-soijapapu-riisipuuro', 29.09],
   ['falafel', 9.86],
@@ -213,4 +213,18 @@ test('the four reviewed GK-only versions retain their points and native liquid u
  assert.deepEqual(gkOnlyQuantity(versions[2], 4), {amount: 700, unit: 'ml'});
  assert.deepEqual(gkOnlyQuantity(versions[3], 12), {amount: 100, unit: 'ml'});
  assert.ok(Math.abs(versions[3].omittedCho - 1.9570875) < 1e-10);
+});
+
+test('granola uses the exact named EDEKA product with a positive omission and no spice GI', () => {
+  const variant = gkOnlyVariants.find(v => v.recipeId === 'siemengranola-jogurtilla')!;
+  assert.equal(variant.point, 2.38);
+  assert.ok(Math.abs(variant.omittedCho - 1.8703125) < 1e-12);
+  assert.deepEqual(variant.codingKinds, []);
+  assert.equal(variant.macroScope, 'NO_MACRO_PACKAGE_FOR_THIS_VERSION');
+  assert.match(variant.ingredients[3].name.fi, /4311501358511/);
+  assert.deepEqual(gkOnlyQuantity(variant, 3, 8), {amount: 80, unit: 'g'});
+  assert.ok(variant.sources.some(s => s.url === 'https://www.edeka.de/sortiment/4311501358511/'));
+  for (const locale of ['fi', 'en', 'sv', 'th'] as const) {
+    assert.ok(render(variant, locale).includes(variant.limitation![locale]));
+  }
 });

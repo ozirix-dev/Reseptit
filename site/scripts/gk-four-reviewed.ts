@@ -1,3 +1,4 @@
+import {buildGranolaEdekaVariant} from './gk-granola-edeka';
 import {readFileSync} from 'node:fs';
 import {join} from 'node:path';
 import {textHash} from './gk149-model';
@@ -15,10 +16,6 @@ type Packet = {
 };
 
 const display = {
-  granola: {
-    preparation: 'Paahda siemenet, mantelilastut, voi ja punnittu kaneli yhdessä 160 °C:ssa 18–22 minuuttia. Käytä koko seos ja tarjoa jogurtin ja vadelmien kanssa.',
-    limitation: 'Jogurtille ja vadelmille käytetään ryhmä-GI-arvioita. GI 50 on mallin oletus vain tämän erän jauhetulle kanelille.',
-  },
   pistachio: {
     preparation: 'Sekoita maustamaton jogurtti ja {{amount:2}} ml Steenbergs-ruusuvettä. Lisää pistaasit ja granaattiomenansiemenet sekä halutessasi suolaa.',
     limitation: 'Jogurtille, pistaasille ja granaattiomenalle käytetään ryhmä-GI-arvioita. Ruusuveden hiilihydraatti perustuu nimetyn tuotteen etikettiin.',
@@ -44,35 +41,13 @@ export function buildReviewedGkVariants(root: string): GkOnlyVariant[] {
   const catalog: Record<string, FoodRecord[]> = JSON.parse(readText(folder + 'foods.json'));
   const nativeGi: GlycemicIndexRecord[] = JSON.parse(readText('docs/nutrition/glycemic-index-records.json')).records;
 
-  return Object.entries(display).map(([key, copy]) => {
+  const remainingVariants = Object.entries(display).map(([key, copy]): GkOnlyVariant => {
     const file = folder + key + '.json';
     const packet: Packet = JSON.parse(readText(file));
     const {recipeId, servings, rows, expected} = packet;
     const ingredients = packet.ingredients ?? rows!.map(row => row.input);
     const foods = catalog[key] ?? rows!.flatMap(row => row.food ? [row.food] : []);
     const giRecords = nativeGi.filter(record => ingredients.some(ingredient => ingredient.giRecordId === record.id));
-    if (key === 'granola') {
-      const cinnamon = ingredients[5];
-      const food = foods.find(record => record.id === cinnamon.fineliRecordId);
-      const policy = packet.templateSourceCard!;
-      const cho = (food?.per100g.carbohydrate ?? Infinity) * (cinnamon.grams ?? Infinity) / 100 / servings;
-      if (cinnamon.name !== 'kanelia' || cinnamon.grams !== 2.55
-          || cho > policy.maxCarbohydratePerServing || cho > policy.maxCumulativeCarbohydratePerServing) {
-        throw Error('Approved granola cinnamon binding changed');
-      }
-      const card: GlycemicIndexRecord = {
-        id: 'gk80-granola-cinnamon-50', gi: 50, foodKey: 'research-cinnamon',
-        preparationKey: 'ground-cinnamon-fully-retained', food: 'Jauhettu kaneli',
-        preparation: '2,55 g neljän annoksen granolaerässä', qualityTier: 'SUPPLEMENTARY',
-        referenceScale: 'GLUCOSE_100', matchKind: 'ANALOG', confidence: 'LOW', evidenceKind: 'PUBLISHED_IMPUTATION',
-        source: {title: 'Kanelin rajattu GI-oletus', url: policy.sourceUrl, table: 'Published GI coding method', year: 2007, published: true,
-          iso26642Confirmed: false, qualityEvidence: 'Projektin reseptikohtainen sovellus julkaistusta koodausmenetelmästä.'},
-        note: 'Oletus koskee vain tämän granolan kanelimäärää. Kanelin GI:tä ei ole mitattu tässä lähteessä.',
-      };
-      Object.assign(cinnamon, {giRecordId: card.id, foodKey: card.foodKey,
-        preparationKey: card.preparationKey, giMatchEvidence: card.note});
-      giRecords.push(card);
-    }
 
     const result = calculateGlycemicLoad({recipeId, servings, ingredients}, foods, giRecords);
     if (result.status !== 'CALCULATED' || result.blockers.length || result.unroundedGlycemicLoadPerServing === null
@@ -88,7 +63,6 @@ export function buildReviewedGkVariants(root: string): GkOnlyVariant[] {
       macroScope: 'NO_MACRO_PACKAGE_FOR_THIS_VERSION', quantityContract: 'GK_ONLY_NATIVE_UNITS_V1',
       ingredients: ingredients.map((ingredient, index) => {
         const labels: Partial<Record<string, Record<number, string>>> = {
-          granola: {5: 'Punnittu jauhettu kaneli', 6: 'Maustamaton kreikkalainen jogurtti, 10 % rasvaa'},
           pistachio: {0: 'Maustamaton jogurtti', 1: 'Kuoritut pistaasit', 2: 'Steenbergs-ruusuvesi'},
           kongjuk: {0: 'Kuivat soijapavut', 1: 'Kuiva pitkäjyväinen riisi', 2: 'Kuorimattomat seesaminsiemenet'},
           falafel: {9: 'Sitruunamehu taikinaan', 11: 'Suolaton tahini kastikkeeseen',
@@ -114,6 +88,7 @@ export function buildReviewedGkVariants(root: string): GkOnlyVariant[] {
       ],
     };
   });
+  return [buildGranolaEdekaVariant(root), ...remainingVariants];
 }
 
 // These four recipes currently have only Finnish pages.
