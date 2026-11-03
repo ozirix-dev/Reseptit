@@ -31,9 +31,40 @@ GK per annos. A on ehdollinen aineslaskelma ja B ehdollinen valmistusvastine. *L
 | `kiinalainen-kevatsipulipannukakku` | B | 11,9838384–19,889064 | Valmistettujen pannuleipien lähdekortit, [täsmäsyöte](paratha-component-routes/cases.json) | LOW / ehdollinen* | Kerrostus, rasva ja kastikkeen erillinen käsittely | Valmistus- ja menetelmäkatselmus |
 | `vietnamilainen-banh-bao-kananmunalla` | B | 25,298172–34,552647 | Lau 2015 ja Lan 2013, [täsmäsyöte](steamed-buns-source-control/banh-bao-component-proposal.json) | LOW / ehdollinen* | Uuden höyrytaikinan valmistusvastine ja menetelmätuki | Pois jonosta, julkaistu A-versio |
 
+### Täsmäsyötteiden tunnisteet ja Codex2-kuitit
+
+SHA-256 yksilöi yllä linkitetyn tutkimussyötteen Git-sisällön. Yhteisestä paratha-paketista hash lasketaan vain kyseisen ID:n JSON-objektille, avaimet järjestettyinä, UTF-8-muodossa ja ilman erottimien ympärillä olevia välilyöntejä. Nämä arkistohashit eivät ole hyväksyntäkuitin laskentasyötehasheja.
+
+GI:tön saatava CHO on tutkimuslaskelmasta pois jätetty positiivinen määrä grammoina annosta kohti. A-rivien summat sisältävät mahdolliset tutkimuspaketin kattoarviot. B-rivillä erittelemätön määrä jää avoimeksi.
+
+Kuittisarake vertaa jokaista 20 resepti-ID:tä Codex2:n versionlukitun snapshotin 10 hyväksyntäkuittiin. Paella ja uunimakkara löytyvät kuiteista. Kummankin kuitti koskee eri täsmäversiota.
+
+| Resepti-ID | Tutkimussyötteen SHA-256 | GI:tön CHO g/annos | Codex2-kuitti |
+| --- | --- | --- | --- |
+| `siemengranola-jogurtilla` | `f0ec31256c473fb98eefae2acd11c05ae8daad74d17a9852cf9f3fb2812fb24d` | 1,885 | Ei ID-osumaa |
+| `pellava-puuro-pahkinoilla` | `04baf63840f36c75d0b3608e4115b3a219b5b561c21b869c3af560a1c4f3c924` | 1,905 (nimellinen, sisältää kattoarvioita) | Ei ID-osumaa |
+| `lahi-ita-pistaasijogurtti` | `986cb3fda641818f1fb79883b52b241b74ec19027d8276221732e5ff2dd2dadf` | 0 | Ei ID-osumaa |
+| `korealainen-kongjuk-soijapapu-riisipuuro` | `362b8e7c482b1f79d92344761dfa781c646a46d807f9565e2fe46646c26aa4fd` | 0,045 | Ei ID-osumaa |
+| `paella-valenciana` | `b21a9c7ea5937d36c5b73fc61c46f3262298748e663af078cb8dbfd592dce3cb` | 1,52625 (kattoarvio) | [Kuitti](https://github.com/ozirix-dev/Reseptit/blob/fcba8c85a31e49bf2d65dbb356eadf8d1ac56a0b/docs/research/afcd-polyol-03/current-a-cap-approval.json) koskee eri versiota, GK 40,35. Hyväksytty syöte `5e9c7deff4c545411210ed1c5979ff29c0c63e37c746f1cc9fcc192d11b9fa69` |
+| `falafel` | `e733e3f65fc9bd467f04ee47c390b1a987c65d65304cc7161421c425d34c2de2` | 1,9570875 | Ei ID-osumaa |
+| `okonomiyaki-kaaliletut` | `86bea0a9c9eb8b4b88e082c2ed62de8b580f1cb81cb02fb7a34dcfdad60f2970` | 1,952875 | Ei ID-osumaa |
+| `hunaja-sinappikana-kaalilla` | `a1beb66e7abaf810278f0d78bfc1a79efb2d30755b58158c23dca1f0bd75f239` | 1,2254125 | Ei ID-osumaa |
+| `indialainen-poha-maapahkinoilla` | `90881aa37a0b15be63b2b7dabf4e96ba905c74037459afec87f56bd268db497c` | 0,210525 | Ei ID-osumaa |
+| `pav-bhaji` | `e22f15133ef2e9ea0903817766efe31ca7de6754fe60f1c05fae4faca65e817e` | 1,90775 | Ei ID-osumaa |
+| `vhh-omenapiirakka` | `909d45f07d6b4548c14f0b3fbe8a87e3f0ae044533ce4ab73f3bac3bcbb115d2` | 1,18390625 | Ei ID-osumaa |
+| `vhh-raparperipiirakka` | `07d408ef4ead966af300e705cce151f0f9cd58e951a3100187bf52578feb8b4c` | 1,73125 | Ei ID-osumaa |
+| `uunimakkara-sipulipedilla` | `1bef53eae6327750577b744f6717c43bc33fc6911c7c4594d797295ddb6c115e` | 1,6284125 (nimellinen) | [Kuitti](https://github.com/ozirix-dev/Reseptit/blob/fcba8c85a31e49bf2d65dbb356eadf8d1ac56a0b/docs/research/afcd-polyol-03/sausage-a-approval.json) koskee eri versiota, GK 0,26. Hyväksytty syöte `726315e676d5a36776e2cab4b9e75e3478e5b0c900e1230d4fbb183bb7650ae3` |
+| `vhh-mustikkapiirakka` | `4c8b093cdbf484b4e5b939e98400cc1eb310b2e0f95e0b142ea30447ceb2bd0a` | 1,736875 | Ei ID-osumaa |
+| `lindstrominpihvit-kaalilla` | `08dac21f5d3c6127cd7abae63b4224cd11ed4b0ebee1023f24283077741f7c51` | 0,6495625 | Ei ID-osumaa |
+| `samosa` | `887d71328f493de5870f913d3a40a0881a44d3489fad57ddb97e5220007c54d8` | Ei eritelty B-skenaariossa | Ei ID-osumaa |
+| `aloo-paratha` | `110a4ab63c6f866e4ae606629ffdb57a14bbcb66b5f981efa1556464b570cad7` | Ei eritelty B-skenaariossa | Ei ID-osumaa |
+| `intialainen-aloo-paratha` | `6a268c2cd9d62985f9bfa3ea1e4854eb1112af547e59b35d964255688c387954` | Ei eritelty B-skenaariossa | Ei ID-osumaa |
+| `kiinalainen-kevatsipulipannukakku` | `f640d29abfa627624ff5e527e28a1f76fc2279811785632bab33eb11d13bdf07` | Ei eritelty B-skenaariossa | Ei ID-osumaa |
+| `vietnamilainen-banh-bao-kananmunalla` | `61e9a8bffe095f02f50c59c652add9a880a7d7a599a24108390b976e7e76b1a9` | Ei eritelty B-skenaariossa | Ei ID-osumaa |
+
 ### Hyväksyntäjono ja ehdollinen potentiaali
 
-Vertailu Codex2:n kolmeen CSV-jonoon ja hyväksyntäkuitteihin on sidottu [tutkimushaaran snapshotiin](https://github.com/ozirix-dev/Reseptit/tree/fcba8c85a31e49bf2d65dbb356eadf8d1ac56a0b/docs/research/afcd-polyol-03). Paella on ainoa yhteinen ID näiden 20:n joukossa. Viisi ID:tä poistuu jatkojonosta julkaistun GK:n perusteella, ja kaikki 20 säilyvät yllä tutkimushistoriana. Codex2:n seitsemän APPROVED_RESEARCH_HANDOFF-riviä sekä muut snapshotin kuittiversiot, mukaan lukien rahkapiirakka, täsmäävät jo tuotannon versioihin. Tässä vertailussa **0 varmennettua hyväksyttyä, julkaisematta olevaa versiota**.
+Vertailu Codex2:n kolmeen CSV-jonoon ja hyväksyntäkuitteihin on sidottu [tutkimushaaran snapshotiin](https://github.com/ozirix-dev/Reseptit/tree/fcba8c85a31e49bf2d65dbb356eadf8d1ac56a0b/docs/research/afcd-polyol-03). Kuittivertailun yhteiset ID:t ovat paella ja uunimakkara. Viisi ID:tä poistuu jatkojonosta julkaistun GK:n perusteella, ja kaikki 20 säilyvät yllä tutkimushistoriana. Codex2:n seitsemän APPROVED_RESEARCH_HANDOFF-riviä sekä muut snapshotin kuittiversiot, mukaan lukien rahkapiirakka, täsmäävät jo tuotannon versioihin. Tässä vertailussa **0 varmennettua hyväksyttyä, julkaisematta olevaa versiota**.
 
 Jäljellä on 15 ehdollista ID:tä (11 A, 4 B). Teoreettinen yläraja on **208/326**, jos jokainen saa erilliset hyväksynnät ja julkaistaan. Käytännön ensimmäinen katselmointierä on alla. Viisi onnistunutta julkaisua antaisi **198/326**. Tarkista jokaisen syötteen tekninen julkaisukelpoisuus omistajan päätöksen jälkeen.
 
