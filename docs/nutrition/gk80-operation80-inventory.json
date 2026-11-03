@@ -4,9 +4,9 @@
   "coverage": {
     "PROPOSED_RANGE": 36,
     "PUBLISHED_SINGLE": 197,
-    "PROPOSED_SINGLE": 35,
+    "PROPOSED_SINGLE": 36,
     "IN_PROGRESS": 36,
-    "NO_GK": 12,
+    "NO_GK": 11,
     "PUBLISHED_RANGE": 10
   },
   "reviewedPrHeads": {
@@ -111,7 +111,7 @@
     "japanilainen-curry-tofulla",
     "khao-soi-vhh-konjac"
   ],
-  "nextRecipeId": "kanaviillokki-kukkakaalilla",
+  "nextRecipeId": "kimchi-jjigae",
   "recipes": [
     {
       "recipeId": "aloo-paratha",
@@ -5505,10 +5505,10 @@
       "recipeSha256": "b9cd58a0912c9ca8ff4b3af7578164805667bb9640a03fc4b0c36507538c5a9a",
       "pilotInputSha256": "02a02421bf237d62428cc8e510c3fdda0fc81f6e051c9b45e5bd8cddb4c57f3c",
       "servings": 4,
-      "status": "NO_GK",
+      "status": "PROPOSED_SINGLE",
       "priorEvidence": [],
-      "level": null,
-      "ownerApproval": null,
+      "level": "B",
+      "ownerApproval": false,
       "sourceQualified": null,
       "blockers": [
         "kanaviillokki-kukkakaalilla: kypsää, nahatonta broilerin rintafileetä: Fineli food record is missing.",
@@ -5647,7 +5647,39 @@
             "AJO 1.8: Salt and white pepper quantities unspecified; no source-backed positive carbohydrate ceiling."
           ]
         }
-      ]
+      ],
+      "operation80Proposal": {
+        "evidencePath": "docs/nutrition/gk80-operation80-batch-53.md",
+        "baselineRecipeSha256": "b9cd58a0912c9ca8ff4b3af7578164805667bb9640a03fc4b0c36507538c5a9a",
+        "inputFields": [
+          "gramsBatch",
+          "choPer100g",
+          "giGlucoseScale"
+        ],
+        "scenarios": [
+          {
+            "inputs": [
+              [
+                600,
+                2.35,
+                40
+              ],
+              [
+                200,
+                2.9,
+                50
+              ],
+              [
+                28,
+                0.8,
+                50
+              ]
+            ],
+            "gkPerServing": "2.163"
+          }
+        ],
+        "publicationAuthorized": false
+      }
     },
     {
       "recipeId": "kantonilainen-hoyrytetty-kala",
