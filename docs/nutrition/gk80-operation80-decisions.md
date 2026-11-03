@@ -127,3 +127,9 @@ Tuorejuuston 0,5 g CHO/annos antaa GI-koodilla 35 laskettuna 0,175 GK/annos kumm
 Resepti ryöppää lootusjuuren ja paistaa sen wokissa. USDA SR28:n keitetylle ja valutetulle juurelle ilmoitettu kokonais-CHO 16,02 g miinus kuitu 3,1 g antaa 12,92 g/100 g. Arvot on taulukossa johdettu ilman suoria analyysipisteitä. Jos valitaan 120 g punnittua valutettua juurta, osuus on 3,876 g/annos neljälle. Tämä on määräskenaario reseptin yhdelle juurelle. Yksittäinen 1 g:n raja edellyttäisi alle 31 g koko erään. [USDA SR28, NDB 11255](https://www.ars.usda.gov/ARSUserFiles/80400535/Data/SR/SR28/reports/sr28fg11.pdf)
 
 Lootuksen siemeniä koskeva ihmis-GI-koe mittaa eri kasvinosaa. Juuren GI jää avoimeksi. Mapo-tofun Toban Djan -sidos soveltuu tämän reseptin ehdotettuun 30 g:n punnittuun tahnaan ja antaa 0,825 g CHO/annos. Määrä on ehdotus ja edellyttää yhteistä pienosuustarkistusta. [Lootuksen siementen koe](https://pubmed.ncbi.nlm.nih.gov/30875961/) · [Toban Djanin laskentaperuste](gk80-operation80-mapo-tofu.md)
+
+### Bánh bao kananmunalla ja baozi
+
+Bánh baon lähdepaketin reseptitarkiste täsmää. Varmennettu ehdollinen laskelma on 25,298172–34,552647 GK/annos eli ulospäin pyöristettynä 25–35. Uusi taikina lisää 50 g vettä ja 0,6 g kuivahiivaa nykyiseen 100 g jauhomäärään. Höyrytetyn leipäkomponentin 37,0179 g CHO/annos lasketaan kahdella ihmis-GI-verrokilla 68 ja 93, ja soija lisää 0,126 GK. Täyte lisätään höyrytyksen jälkeen. Reseptin uusi valmistus ja lähdesovellus tarvitsevat hyväksynnän. [Lähdepaketti](../research/gk80-international-20261102/steamed-buns-source-control/CURRENT.md)
+
+Baozin historiallista 31,56 GK/annos -arvoa ei palauteta. Täytettynä höyrytetylle baozille ei käytetä suoraan bánh baon täyttämättömän leivän sidosta. Baozi tarvitsee oman valmistusverrokin, punnitun kevätsipulin ja maissitärkkelyksen GI- tai pienosuuspäätöksen.
