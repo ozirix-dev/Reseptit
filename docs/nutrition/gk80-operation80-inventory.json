@@ -2,11 +2,11 @@
   "schemaVersion": 1,
   "main": "4d6f19a620bb95e771c12f499554bf2cf1f06e51",
   "coverage": {
-    "PROPOSED_RANGE": 17,
+    "PROPOSED_RANGE": 18,
     "PUBLISHED_SINGLE": 197,
     "PROPOSED_SINGLE": 17,
-    "IN_PROGRESS": 26,
-    "NO_GK": 59,
+    "IN_PROGRESS": 31,
+    "NO_GK": 53,
     "PUBLISHED_RANGE": 10
   },
   "reviewedPrHeads": {
@@ -111,7 +111,7 @@
     "japanilainen-curry-tofulla",
     "khao-soi-vhh-konjac"
   ],
-  "nextRecipeId": "kreikkalainen-moussaka",
+  "nextRecipeId": "malesialainen-apam-balik",
   "recipes": [
     {
       "recipeId": "aloo-paratha",
@@ -7857,7 +7857,7 @@
       "recipeSha256": "a421dde851b40359047315504ab0e13ab47ee77719df7dae12594af2d579a684",
       "pilotInputSha256": "ef0e2e74f31ee390dfdd23ef4ea2e073d5b38476de3a7743eab5f3debdaade36",
       "servings": 6,
-      "status": "NO_GK",
+      "status": "IN_PROGRESS",
       "priorEvidence": [],
       "level": null,
       "ownerApproval": null,
@@ -7957,7 +7957,8 @@
             "Source-documented zero available carbohydrate: Nutrition-batch omission bound: available carbohydrate is at most 0 g per serving; kept below the pilot 1 g cutoff."
           ]
         }
-      ]
+      ],
+      "operation80EvidencePath": "docs/nutrition/gk80-operation80-batch-14.md"
     },
     {
       "recipeId": "kukkakaaligratiini-pekonilla",
@@ -8813,7 +8814,7 @@
       "recipeSha256": "0bc68c7f8a97e63f13b6dc778f1167979a4047b2e5f6a7286cd0c6bf185d0cb7",
       "pilotInputSha256": "24df4e4930fec27ade91f83e0805bbb1d5b6272da04bbe1fe4bedc67cce5a219",
       "servings": 4,
-      "status": "NO_GK",
+      "status": "IN_PROGRESS",
       "priorEvidence": [],
       "level": null,
       "ownerApproval": null,
@@ -8925,7 +8926,8 @@
             "GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
           ]
         }
-      ]
+      ],
+      "operation80EvidencePath": "docs/nutrition/gk80-operation80-batch-14.md"
     },
     {
       "recipeId": "mala-xiang-guo",
@@ -10625,7 +10627,7 @@
       "recipeSha256": "c83d14f66d5add960227fc90e39e720ccebb5c9473a5a69608a40ff2c8b2305e",
       "pilotInputSha256": "5badc1f4207f92c71b5b053e8acef0c7ddd8ecb04a8d5a6811dc2eaf0c92ca40",
       "servings": 4,
-      "status": "NO_GK",
+      "status": "IN_PROGRESS",
       "priorEvidence": [],
       "level": null,
       "ownerApproval": null,
@@ -10725,7 +10727,8 @@
             "Source-documented zero available carbohydrate: Pure edible oil has zero available carbohydrate."
           ]
         }
-      ]
+      ],
+      "operation80EvidencePath": "docs/nutrition/gk80-operation80-batch-14.md"
     },
     {
       "recipeId": "moo-ping-vhh",
@@ -12989,10 +12992,10 @@
       "recipeSha256": "e8058909f72f5543a2c65245d9bcd17b95ad6d024e69a0a770a6bc0489e8c007",
       "pilotInputSha256": "8563e6dfd7b5914b27b2538a96e86fc5f2d6f136aee1f5424bb6d8fdd44b7b65",
       "servings": 6,
-      "status": "NO_GK",
+      "status": "PROPOSED_RANGE",
       "priorEvidence": [],
-      "level": null,
-      "ownerApproval": null,
+      "level": "B",
+      "ownerApproval": false,
       "sourceQualified": null,
       "blockers": [
         "rendang-padang: kookosmaito: Coconut milk contributes >1 g available carbohydrate per serving and no valid GI record matches canned coconut milk; the available coconut-milk porridge value is not transferable.",
@@ -13029,7 +13032,109 @@
             "Coconut milk contributes >1 g available carbohydrate per serving and no valid GI record matches canned coconut milk; the available coconut-milk porridge value is not transferable."
           ]
         }
-      ]
+      ],
+      "operation80Proposal": {
+        "evidencePath": "docs/nutrition/gk80-operation80-batch-14.md",
+        "baselineRecipeSha256": "e8058909f72f5543a2c65245d9bcd17b95ad6d024e69a0a770a6bc0489e8c007",
+        "inputFields": [
+          "gramsBatch",
+          "choPer100g",
+          "giGlucoseScale"
+        ],
+        "scenarios": [
+          {
+            "inputs": [
+              [
+                900,
+                0,
+                0
+              ],
+              [
+                800,
+                1.7,
+                50
+              ],
+              [
+                150,
+                3.1,
+                40
+              ],
+              [
+                15,
+                10.2,
+                40
+              ],
+              [
+                55,
+                4.8,
+                50
+              ],
+              [
+                16,
+                4.8,
+                40
+              ],
+              [
+                2,
+                44.4,
+                50
+              ],
+              [
+                300,
+                79,
+                82
+              ]
+            ],
+            "gkPerServing": "34.28053333333333333333333333"
+          },
+          {
+            "inputs": [
+              [
+                900,
+                0,
+                0
+              ],
+              [
+                800,
+                1.7,
+                50
+              ],
+              [
+                150,
+                3.1,
+                40
+              ],
+              [
+                15,
+                10.2,
+                40
+              ],
+              [
+                55,
+                4.8,
+                50
+              ],
+              [
+                16,
+                4.8,
+                40
+              ],
+              [
+                2,
+                44.4,
+                50
+              ],
+              [
+                300,
+                79,
+                90
+              ]
+            ],
+            "gkPerServing": "37.44053333333333333333333333"
+          }
+        ],
+        "publicationAuthorized": false
+      }
     },
     {
       "recipeId": "rogan-josh",
