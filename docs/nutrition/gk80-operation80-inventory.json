@@ -4,9 +4,9 @@
   "coverage": {
     "PROPOSED_RANGE": 15,
     "PUBLISHED_SINGLE": 197,
-    "PROPOSED_SINGLE": 16,
+    "PROPOSED_SINGLE": 17,
     "IN_PROGRESS": 25,
-    "NO_GK": 63,
+    "NO_GK": 62,
     "PUBLISHED_RANGE": 10
   },
   "reviewedPrHeads": {
@@ -25,7 +25,6 @@
     "160": "64f2c14ee3b158fbeff6719278ffaa5f436aec4f"
   },
   "queue": [
-    "japanilainen-curry-tofulla",
     "karibia-saltfish-fritterit",
     "khao-soi-vhh-konjac",
     "kiinalainen-bao-munalla",
@@ -109,12 +108,12 @@
     "intialainen-rava-uttapam",
     "kiinalainen-jianbing-munaletty",
     "chole-bhature",
-    "karibia-ackee-ja-suolakala",
     "indonesialainen-bubur-sumsum",
     "indonesialainen-nasi-goreng-aamiaisriisi",
-    "indonesialainen-pisang-goreng-aamiaiseksi"
+    "indonesialainen-pisang-goreng-aamiaiseksi",
+    "japanilainen-curry-tofulla"
   ],
-  "nextRecipeId": "japanilainen-curry-tofulla",
+  "nextRecipeId": "karibia-saltfish-fritterit",
   "recipes": [
     {
       "recipeId": "aloo-paratha",
@@ -3599,7 +3598,7 @@
       "recipeSha256": "f1a04ad7cd859a175188940d482bd7555a822ae6f45e3b29bbfcad66303ec2d7",
       "pilotInputSha256": "605dddc16799140c57c310439cf12b2bdc3d852439360ed83392f4bff742c4ae",
       "servings": 4,
-      "status": "NO_GK",
+      "status": "IN_PROGRESS",
       "priorEvidence": [],
       "level": null,
       "ownerApproval": null,
@@ -3687,7 +3686,8 @@
             "Source-documented zero available carbohydrate: Pure edible oil has zero available carbohydrate."
           ]
         }
-      ]
+      ],
+      "operation80Finding": "S&B roux label verified; weigh the chosen package version, bind vegetable stock and a cooked sauce GI analogue."
     },
     {
       "recipeId": "japanilainen-dashimaki-tamago-aamiaislautasella",
@@ -4834,10 +4834,10 @@
       "recipeSha256": "57565170269e72af8dba35c959f83d8d64a9f16886a0a0a3b0f395ed66459183",
       "pilotInputSha256": "f7cc6e9d5cca63b08e91deb9475c4b9342b4df8b4a4d15007239edd1c18e08ec",
       "servings": 2,
-      "status": "IN_PROGRESS",
+      "status": "PROPOSED_SINGLE",
       "priorEvidence": [],
-      "level": null,
-      "ownerApproval": null,
+      "level": "B",
+      "ownerApproval": false,
       "sourceQualified": null,
       "blockers": [
         "karibia-ackee-ja-suolakala: suolakala: No source-matched composition and preparation was resolved for “suolakala”; it is not treated as zero.",
@@ -4923,7 +4923,44 @@
           ]
         }
       ],
-      "operation80Finding": "Named canned ackee identified; verify drained CHO basis and weighed fish and ackee."
+      "operation80Finding": "Named canned ackee identified; verify drained CHO basis and weighed fish and ackee.",
+      "operation80Proposal": {
+        "evidencePath": "docs/nutrition/gk80-operation80-batch-10.md",
+        "baselineRecipeSha256": "57565170269e72af8dba35c959f83d8d64a9f16886a0a0a3b0f395ed66459183",
+        "inputFields": [
+          "gramsBatch",
+          "choPer100g",
+          "giGlucoseScale"
+        ],
+        "scenarios": [
+          {
+            "inputs": [
+              [
+                150,
+                0.8,
+                50
+              ],
+              [
+                60,
+                0,
+                0
+              ],
+              [
+                125,
+                3.45,
+                40
+              ],
+              [
+                20,
+                4.74,
+                40
+              ]
+            ],
+            "gkPerServing": "1.3521"
+          }
+        ],
+        "publicationAuthorized": false
+      }
     },
     {
       "recipeId": "karibia-bammy-kassavaleipa",
