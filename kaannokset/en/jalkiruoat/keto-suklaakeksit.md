@@ -71,6 +71,6 @@ Almond flour, butter and sugar-free dark chocolate make cookies with crisp edges
 
 ## Notes
 
-The cookies are soft when hot and firm up as they cool. The flavour and carbohydrate content of unsweetened chocolate vary by product.
+The cookies are soft when hot and firm up as they cool. The flavour and carbohydrate content of sugar-free chocolate vary by product.
 
 Nutrition values are currently withheld while the source data is being checked.

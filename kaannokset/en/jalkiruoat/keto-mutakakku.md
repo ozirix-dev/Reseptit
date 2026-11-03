@@ -72,6 +72,6 @@ This small mud cake is rich with dark chocolate and has a soft, buttery centre. 
 
 ## Notes
 
-The baking time affects how soft the centre stays. Use unsweetened chocolate and check the carbohydrate content on the label.
+The baking time affects how soft the centre stays. Use sugar-free chocolate and check the carbohydrate content on the label.
 
 Nutrition values are currently withheld while the source data is being checked.

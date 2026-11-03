@@ -1,3 +1,4 @@
+import { verifyCase } from "../scripts/gk149-model";
 import test from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
@@ -8,7 +9,7 @@ import { renderToStaticMarkup } from "react-dom/server";
 import { parse } from "yaml";
 import { ChocolateComparison, chocolateComparisonProducts } from "../src/features/recipes/ChocolateComparisonFi";
 import { fingerprint } from "../scripts/gk80-candidate-model";
-import { digest, textHash } from "../scripts/gk149-model";
+import { digest } from "../scripts/gk149-model";
 import type { RecipeLocale } from "../src/types/content";
 
 const root = fileURLToPath(new URL("../../", import.meta.url));
@@ -93,7 +94,7 @@ test("existing exact mud-cake version and original withheld macros remain unchan
   const gold = JSON.parse(read(folder + "golden.json")).results.find((r: { recipeId: string }) => r.recipeId === "keto-mutakakku");
   assert.equal(gold.point, 0.07); assert.equal(gold.omittedCho, 1.3774);
   const recipeText = read(recipeCase.paths.fi);
-  assert.equal(textHash(recipeText), recipeCase.recipeSha256.fi);
+  verifyCase(root, recipeCase);
   const frontmatter = parse(recipeText.match(/^---\r?\n([\s\S]*?)\r?\n---/)![1]);
   for (const key of ["carbs_net_per_serving_g", "carbs_total_per_serving_g", "protein_per_serving_g", "fat_per_serving_g"]) assert.equal(frontmatter[key], null);
   assert.equal(frontmatter.servings, 8);

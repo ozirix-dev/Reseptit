@@ -21,3 +21,7 @@ Julkaisun yhteydessä FI-lähteiden käännösmetatiedot on päivitettävä ja n
 Mutakakun englanninkielistä kuvausta ja vesihaudeohjetta täsmennettiin. Keksien suklaapalat, kakun kuorrute ja valmistajan tuotesivun tunnistehuomio tarkistettiin lähdetekstejä vasten. Käännökset odottavat edelleen ihmisen kielentarkistusta.
 
 Ensimmäisessä CI-ajossa kaksi GK-regressiotestiä tulkitsi käännösluonnosten lisäämisen muutokseksi suojattuihin resepteihin. Testit sallivat nyt uusina lisätyt käännösluonnokset ja tarkistavat edelleen olemassa olevat tiedostot sekä alkuperäiset GK-tulokset.
+
+## Kielentarkistuksen palaute
+
+Käyttäjän katselmoinnin perusteella mutakakun ja suklaakeksien muistiinpanoissa käytetään nyt samoja termejä kuin ainesosaluetteloissa, *sokeriton* ja *sugar-free*. GK-tarkistus tunnistaa nämä kaksi täsmällistä muistiinpanomuutosta ja vertaa muuta reseptitiedostoa edelleen hyväksyttyyn versioon. Käännösten tiedostot ovat luonnoksia.
