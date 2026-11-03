@@ -1,0 +1,205 @@
+{
+  "recipeId": "samosa",
+  "servings": 4,
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "unroundedGk": "44.42393675",
+  "upperScenario": {
+    "choOverrides": [
+      {
+        "inputIndex": 7,
+        "cho": 100,
+        "gi": 60.35
+      }
+    ],
+    "unroundedGk": "44.57481175"
+  },
+  "inputs": [
+    [
+      300,
+      73.998,
+      60.35
+    ],
+    [
+      54,
+      0,
+      0
+    ],
+    [
+      6.5,
+      0,
+      0
+    ],
+    [
+      120,
+      0,
+      0
+    ],
+    [
+      400,
+      15.5,
+      60.35
+    ],
+    [
+      100,
+      9.36,
+      60.35
+    ],
+    [
+      2,
+      33.7,
+      60.35
+    ],
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      12.9,
+      60.35
+    ],
+    [
+      15,
+      1.9,
+      60.35
+    ],
+    [
+      50,
+      0,
+      0
+    ]
+  ],
+  "ingredients": [
+    {
+      "grams": 300,
+      "name": {
+        "fi": "Vehnäjauho",
+        "en": "Wheat flour",
+        "sv": "Vetemjöl",
+        "th": "แป้งสาลี"
+      }
+    },
+    {
+      "grams": 54,
+      "name": {
+        "fi": "Taikinan öljy",
+        "en": "Dough oil",
+        "sv": "Olja till degen",
+        "th": "น้ำมันสำหรับแป้ง"
+      }
+    },
+    {
+      "grams": 6.5,
+      "name": {
+        "fi": "Suola",
+        "en": "Salt",
+        "sv": "Salt",
+        "th": "เกลือ"
+      }
+    },
+    {
+      "grams": 120,
+      "name": {
+        "fi": "Vesi",
+        "en": "Water",
+        "sv": "Vatten",
+        "th": "น้ำ"
+      }
+    },
+    {
+      "grams": 400,
+      "name": {
+        "fi": "Peruna",
+        "en": "Potato",
+        "sv": "Potatis",
+        "th": "มันฝรั่ง"
+      }
+    },
+    {
+      "grams": 100,
+      "name": {
+        "fi": "Pakasteherneet",
+        "en": "Frozen peas",
+        "sv": "Frysta ärter",
+        "th": "ถั่วลันเตาแช่แข็ง"
+      }
+    },
+    {
+      "grams": 2,
+      "name": {
+        "fi": "Juustokuminansiemenet",
+        "en": "Cumin seeds",
+        "sv": "Spiskumminfrön",
+        "th": "เมล็ดยี่หร่า"
+      }
+    },
+    {
+      "grams": 1,
+      "name": {
+        "fi": "Garam masala",
+        "en": "Garam masala",
+        "sv": "Garam masala",
+        "th": "การัมมาซาลา"
+      }
+    },
+    {
+      "grams": 1,
+      "name": {
+        "fi": "Chilijauhe",
+        "en": "Chilli powder",
+        "sv": "Chilipulver",
+        "th": "พริกป่น"
+      }
+    },
+    {
+      "grams": 15,
+      "name": {
+        "fi": "Korianteri",
+        "en": "Coriander",
+        "sv": "Koriander",
+        "th": "ผักชี"
+      }
+    },
+    {
+      "grams": 50,
+      "name": {
+        "fi": "Arvioitu imeytyvä paistoöljy",
+        "en": "Estimated absorbed frying oil",
+        "sv": "Uppskattad upptagen frityrolja",
+        "th": "น้ำมันทอดที่คาดว่าซึมเข้าอาหาร"
+      }
+    }
+  ],
+  "preparation": {
+    "fi": "Sekoita jauho, suola, taikinan öljy ja vesi. Vaivaa ja anna levätä 30 minuuttia. Keitä perunat ja kuutioi. Paahda juustokumina ja paista perunat, herneet, garam masala ja chili. Lisää korianteri ja jäähdytä. Muotoile taikina kartioiksi ja täytä. Uppopaista 170 °C:ssa 6–8 minuuttia, valuta ja jaa {{servings}} annokseen.",
+    "en": "Mix flour, salt, dough oil and water. Knead and rest for 30 minutes. Boil and dice the potatoes. Toast the cumin and fry the potatoes, peas, garam masala and chilli. Add coriander and cool. Shape the dough into cones and fill. Deep-fry at 170 °C for 6–8 minutes, drain and divide into {{servings}} servings.",
+    "sv": "Blanda mjöl, salt, degolja och vatten. Knåda och låt vila 30 minuter. Koka och tärna potatisen. Rosta spiskummin och stek potatis, ärter, garam masala och chili. Tillsätt koriander och låt svalna. Forma degen till strutar och fyll dem. Fritera i 170 °C i 6–8 minuter, låt rinna av och dela i {{servings}} portioner.",
+    "th": "ผสมแป้ง เกลือ น้ำมันสำหรับแป้ง และน้ำ นวดแล้วพัก 30 นาที ต้มมันฝรั่งแล้วหั่นเต๋า คั่วยี่หร่าและผัดมันฝรั่ง ถั่วลันเตา การัมมาซาลา และพริกป่น ใส่ผักชีแล้วพักให้เย็น ขึ้นรูปแป้งเป็นกรวยแล้วใส่ไส้ ทอดที่ 170 °C นาน 6–8 นาที สะเด็ดน้ำมันและแบ่งเป็น {{servings}} ที่"
+  },
+  "limitation": {
+    "fi": "GI 60,35 on uppopaistetun kasvis-sambosan verrokki koko annokselle. Tutkimuksen taikina–täytesuhde on avoin. Väli kuvaa garam masalan CHO-rajaa.",
+    "en": "GI 60.35 is a whole-food proxy from deep-fried vegetable sambosa. The study dough-to-filling ratio is unknown. The range reflects the garam masala carbohydrate bound.",
+    "sv": "GI 60,35 är ett jämförelsevärde från friterad grönsakssambosa för hela portionen. Studiens förhållande mellan deg och fyllning är okänt. Intervallet speglar kolhydratgränsen för garam masala.",
+    "th": "ค่า GI 60.35 ใช้ซัมโบซาผักทอดเป็นตัวเทียบทั้งชิ้น งานวิจัยไม่ได้ระบุสัดส่วนแป้งต่อไส้ ช่วงนี้สะท้อนขอบเขตคาร์โบไฮเดรตของการัมมาซาลา"
+  },
+  "sources": [
+    {
+      "title": "Sultan Qaboos University",
+      "url": "https://www.squ.edu.om/Portals/10/DNNGalleryPro/uploads/2019/4/24/CAMSResearchReport2011.pdf"
+    },
+    {
+      "title": "Fineli",
+      "url": "https://fineli.fi/fineli/fi/ohje/19"
+    },
+    {
+      "title": "AFCD",
+      "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd"
+    }
+  ],
+  "boundFiles": {
+    "reseptit/alkuruoat/samosa.md": "46434c90d2a686eba39107cb9fb68ee4a1d3004ba24adade63de81db470a3140",
+    "docs/research/gk80-international-20261102/almond-reuse-and-oman/samosa-prepared-source-scenario.json": "887d71328f493de5870f913d3a40a0881a44d3489fad57ddb97e5220007c54d8"
+  }
+}
