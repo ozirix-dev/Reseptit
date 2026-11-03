@@ -72,3 +72,14 @@ Ackee: erillinen GK-täsmäversio käyttää 60 g kypsää ruodotonta suolatursk
 | 2 | vietnamilainen-papaija-kookospuuro | 41,77 | SOURCE_APPROVAL | Nelikielinen versio valmis. Hyväksy maidossa keitetyn tapiokan GI 81 kookosmaitopohjalle. Papaija lisätään vasta tarjoiltaessa. | [Laskelma](gk80-operation80-batch-61.md) |
 | 2 | vietnamilainen-xoi-maapahkinalla | 27,60 | CONTENT_APPROVAL | Nelikielinen versio valmis. Hyväksy 8 g seesamia ja 25 g tuoretta kookosta kahdelle alkuperäisten 100 g:n ja 150 g:n sijaan. | [Laskelma](gk80-operation80-batch-47.md) |
 | 2 | xiaolongbao | 15,77 | READY_FOR_APPROVAL | Nelikielinen versio valmis. Katselmoi liha–salottisipulinyytin GI 28 höyrytetylle lieminyytille ja dipin rajaus. | [Laskelma](gk80-operation80-batch-36.md) |
+
+## Jatkoehdotukset
+
+Nämä neljä nelikielistä esikatseluversiota ovat kahden alkuperäisen erän lisäksi. Kohdennetussa tarkistuksessa niiden kanssa numeerinen esikatselukattavuus on 271/326.
+
+| Resepti | GK/annos | Päätös ennen julkaisua |
+| --- | ---: | --- |
+| Mapo tofu | 33,56–36,72 | Hyväksy punnittu riisi, tofu ja tahna sekä GI-verrokit. [Laskelma](gk80-operation80-mapo-tofu.md) |
+| Aloo paratha | 43,64–45,96 | Hyväksy punnitut ainekset ja taikinan sekä perunan erilliset GI-verrokit. [Laskelma](gk80-operation80-aloo-paratha.md) |
+| Huevos divorciados | 4,94–7,00 | Hyväksy punaisen salsan punnittu tomaatti, mustapavun GI-koodi ja vihreän salsan skenaariot. [Laskelma](gk80-operation80-salsa-verde.md) |
+| Chilaquiles verdes | 16,71–18,78 | Hyväksy tortillan GI-verrokin käyttö ja vihreän salsan skenaariot. [Laskelma](gk80-operation80-salsa-verde.md) |
