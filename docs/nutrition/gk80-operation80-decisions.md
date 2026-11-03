@@ -84,3 +84,9 @@ Nämä viisi nelikielistä esikatseluversiota ovat kahden alkuperäisen erän li
 | Huevos divorciados | 4,94–7,00 | Hyväksy punaisen salsan punnittu tomaatti, mustapavun GI-koodi ja vihreän salsan skenaariot. [Laskelma](gk80-operation80-salsa-verde.md) |
 | Chilaquiles verdes | 16,71–18,78 | Hyväksy tortillan GI-verrokin käyttö ja vihreän salsan skenaariot. [Laskelma](gk80-operation80-salsa-verde.md) |
 | Pellavansiemenpuuro | 0,43 | Hyväksy nimetyt tuotteet, GI-koodit ja 1,645 g CHO:n pienosuudet annosta kohti. [Laskelma](gk80-operation80-pellava-puuro.md) |
+
+### Aiempi rinnakkainen ehdotus: paistettu maksa ja pekoni
+
+[PR #227:n näyttöpaketin](https://github.com/ozirix-dev/Reseptit/blob/cf551fd064036d31479bfa910ebf97adf42c57fe/docs/nutrition/gk80-kerala-liver-scallion.json) kaikki kahdeksan LF-tarkistetta täsmäävät paikallisiin resepti-, lähde- ja mallisidoksiin. Sen 2,3265 GK:n skenaario on edelleen lähdehyväksyntää vaativa, eikä sitä lasketa PR #230:n esikatselukattavuuteen.
+
+500 g maksaerä neljälle tuottaa MEXTin arviolla 3,3 g/100 g maksasta 4,125 g CHO/annos. Finelin 5,031 g/100 g antaa 6,28875 g/annos ja ylittää aiemman ehdotuksen käyttämän matalan CHO:n koodin ehdon. Kumpikaan määrä ei mahdu yksittäisen ainesosan pienosuusrajaan. Paistetulle naudanmaksalle ei tarkistuksessa löytynyt riittävää ihmis-GI-näyttöä. Lähdepäätös koskee sekä maksalle valittua koostumusta että GI-koodin soveltuvuutta. [MEXT 11092](https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=11_11092_7&MODE=7)
