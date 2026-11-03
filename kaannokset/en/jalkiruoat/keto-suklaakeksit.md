@@ -4,7 +4,7 @@ recipe_id: keto-suklaakeksit
 url_slug: keto-suklaakeksit
 category: jalkiruoka
 language: en
-status: draft
+status: published
 diet_class: keto
 main_ingredient:
   - kananmuna

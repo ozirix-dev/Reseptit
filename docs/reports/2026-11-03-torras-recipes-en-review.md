@@ -25,3 +25,7 @@ Ensimmäisessä CI-ajossa kaksi GK-regressiotestiä tulkitsi käännösluonnoste
 ## Kielentarkistuksen palaute
 
 Käyttäjän katselmoinnin perusteella mutakakun ja suklaakeksien muistiinpanoissa käytetään nyt samoja termejä kuin ainesosaluetteloissa, *sokeriton* ja *sugar-free*. GK-tarkistus tunnistaa nämä kaksi täsmällistä muistiinpanomuutosta ja vertaa muuta reseptitiedostoa edelleen hyväksyttyyn versioon. Käännösten tiedostot ovat luonnoksia.
+
+## Englanninkielisten sivujen julkaisuvalmistelu
+
+Käyttäjä tarkisti FI–EN-kielentarkistuspaketin 3.11.2026. Palautteen mukainen sokerittoman suklaan sanamuoto on mukana PR:n #204 yhdistetyssä versiossa. Tämä muutos aktivoi samat englanninkieliset tekstit ja Torras-vertailut. Suomenkielisiin lähteisiin lisättiin englannin julkaisumetatiedot. GK-sidonnat tunnistavat vain nämä täsmälliset metatiedot ja säilyttävät hyväksyttyjen laskentasyötteiden tarkistukset.

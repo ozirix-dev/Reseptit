@@ -14,7 +14,7 @@ const locales=['fi','en','sv','th'] as const;
 const localized=(v:any):LocalizedText=>{if(!v||!locales.every(l=>typeof v[l]==='string'&&v[l].trim()))throw Error('Missing next-seven locale');return v;};
 export function verifyNextSevenManifest(root:string){
  const raw=text(root,folder+'integration.json');
- if(textHash(raw)!=='24c9d5ae86c9944e68b8a7730ec1f0979afb9db21b19a59518ba83c4cf36190b')throw Error('Next-seven integration binding changed');
+ if(textHash(raw)!=='fde6fea10c41df71f766d19ea5346ec0af97f761952e9f507169c5c0c9667194')throw Error('Next-seven integration binding changed');
  const m=JSON.parse(raw);
  if(m.integrationAuthorized!==true||m.readyAuthorized!==false||m.mergeAuthorized!==false||m.deployAuthorized!==false||Object.keys(m.approvedInputs).length!==7)throw Error('Next-seven scope changed');
  for(const [p,sha] of Object.entries(m.filesLfSha256))if(textHash(text(root,p))!==sha)throw Error('Next-seven file changed: '+p);

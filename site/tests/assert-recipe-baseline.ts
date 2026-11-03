@@ -5,6 +5,12 @@ import path from "node:path";
 import { recipeTextForApprovedSnapshot } from "../scripts/approved-recipe-note-edits";
 import { parseMarkdown } from "../src/content/markdown";
 
+const publishedTorrasTranslations = new Set([
+  "kaannokset/en/jalkiruoat/keto-mutakakku.md",
+  "kaannokset/en/jalkiruoat/keto-suklaakeksit.md",
+  "kaannokset/en/jalkiruoat/meheva-suklaakakku.md",
+]);
+
 export function assertRecipeBaseline(root: string, baseline: string, ...protectedPaths: string[]) {
   const changes = execFileSync(
     "git",
@@ -25,6 +31,15 @@ export function assertRecipeBaseline(root: string, baseline: string, ...protecte
     }
     assert.ok(status === "A" && file.startsWith("kaannokset/") && file.endsWith(".md"), change);
     const draft = parseMarkdown(readFileSync(path.join(root, file), "utf8"));
-    assert.equal(draft?.data.status, "draft", change);
+    if (publishedTorrasTranslations.has(file) && draft?.data.status === "published") {
+      const reviewed = execFileSync("git", ["show", "d6531cd0592b01c0106a24bb6a3bd930dedbc504:" + file], {
+        cwd: root,
+        encoding: "utf8",
+      });
+      const current = readFileSync(path.join(root, file), "utf8").replaceAll("\r\n", "\n");
+      assert.equal(current, reviewed.replace("\nstatus: draft\n", "\nstatus: published\n"), change);
+    } else {
+      assert.equal(draft?.data.status, "draft", change);
+    }
   }
 }
