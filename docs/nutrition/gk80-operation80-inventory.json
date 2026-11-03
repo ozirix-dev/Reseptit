@@ -4,9 +4,9 @@
   "coverage": {
     "PROPOSED_RANGE": 36,
     "PUBLISHED_SINGLE": 197,
-    "PROPOSED_SINGLE": 27,
+    "PROPOSED_SINGLE": 28,
     "IN_PROGRESS": 36,
-    "NO_GK": 20,
+    "NO_GK": 19,
     "PUBLISHED_RANGE": 10
   },
   "reviewedPrHeads": {
@@ -111,7 +111,7 @@
     "japanilainen-curry-tofulla",
     "khao-soi-vhh-konjac"
   ],
-  "nextRecipeId": "silakkapihvit-tilli-kermakastike",
+  "nextRecipeId": "tunisialainen-brik",
   "recipes": [
     {
       "recipeId": "aloo-paratha",
@@ -15172,10 +15172,10 @@
       "recipeSha256": "c2a1a660591eee52740e6356f88172ca92f765d4aad9e6dffb3044e32f590389",
       "pilotInputSha256": "73bf81e8f6e61c181eb314564ed9ad7c43869b421f1e0fa64629a7f7cc7d7db0",
       "servings": 4,
-      "status": "NO_GK",
+      "status": "PROPOSED_SINGLE",
       "priorEvidence": [],
-      "level": null,
-      "ownerApproval": null,
+      "level": "B",
+      "ownerApproval": false,
       "sourceQualified": null,
       "blockers": [
         "silakkapihvit-tilli-kermakastike: ruisjauhoja: AJO 1.8: finished bakery category mean GI 58 does not measure this ingredient/preparation. No sufficiently matched original human GI source established; see glycemic-bakery-four-source-review.md.",
@@ -15290,7 +15290,44 @@
             "AJO 1.8: One serving lemon has no verified edible mass or consumed fraction; previous 58 g was unsupported."
           ]
         }
-      ]
+      ],
+      "operation80Proposal": {
+        "evidencePath": "docs/nutrition/gk80-operation80-batch-44.md",
+        "baselineRecipeSha256": "c2a1a660591eee52740e6356f88172ca92f765d4aad9e6dffb3044e32f590389",
+        "inputFields": [
+          "gramsBatch",
+          "choPer100g",
+          "giGlucoseScale"
+        ],
+        "scenarios": [
+          {
+            "inputs": [
+              [
+                500,
+                0,
+                0
+              ],
+              [
+                28,
+                0.8,
+                50
+              ],
+              [
+                150,
+                2.9,
+                50
+              ],
+              [
+                8,
+                0.9,
+                50
+              ]
+            ],
+            "gkPerServing": "0.58075"
+          }
+        ],
+        "publicationAuthorized": false
+      }
     },
     {
       "recipeId": "siskonmakkarakeitto-juurekset",
