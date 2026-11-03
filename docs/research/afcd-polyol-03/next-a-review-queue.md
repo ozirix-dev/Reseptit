@@ -45,3 +45,5 @@ Julkinen kattavuus on 204/326. Tavoitteeseen 261/326 puuttuu 57 reseptiä. Poha 
 Kerala-kalacurry, maksa ja pekoni, kevätsipulipannukakku, Margherita ja Hyderabadi-kanabiryani muodostavat viisi erillistä integraatioon valmisteltavaa hyväksyttyä reseptiä. Jos nämä viisi ja pav bhaji julkaistaan, kattavuus nousee 210/326:een ja vaje on 51.
 
 [Julkinen koonti](https://ozirix-dev.github.io/Reseptit/glykeeminen-kuorma/) · [PR 215:n julkaisuajo](https://github.com/ozirix-dev/Reseptit/actions/runs/41605550882)
+
+Pav bhajin integraatio on omassa [Draft PR 218:ssa](https://github.com/ozirix-dev/Reseptit/pull/218). Laske pav bhaji julkaisujonoon vain kerran. Pohan ja hunaja-sinappikanan [kielikorjaus PR 217](https://github.com/ozirix-dev/Reseptit/pull/217) koskee kahta jo laskettua resepti-ID:tä ja tuo kattavuuteen nolla uutta reseptiä.
