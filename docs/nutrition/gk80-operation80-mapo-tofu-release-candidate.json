@@ -174,31 +174,45 @@
   "sources": [
     {
       "title": "Jenkins",
-      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2996336/"
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2996336/",
+      "kind": "HUMAN_GI",
+      "note": "Cooked white rice control without added PGX."
     },
     {
       "title": "Tan",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/25789978/"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25789978/",
+      "kind": "HUMAN_GI",
+      "note": "Cooked jasmine rice human GI trial."
     },
     {
       "title": "Fineli",
-      "url": "https://fineli.fi/fineli/fi/ohje/19"
+      "url": "https://fineli.fi/fineli/fi/ohje/19",
+      "kind": "CARBOHYDRATE",
+      "note": "Finnish food composition data."
     },
     {
       "title": "AFCD",
-      "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd"
+      "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd",
+      "kind": "CARBOHYDRATE",
+      "note": "Australian food composition data."
     },
     {
       "title": "Lee Kum Kee",
-      "url": "https://uk.lkk.com/products/chilli-bean-sauce"
+      "url": "https://uk.lkk.com/products/chilli-bean-sauce",
+      "kind": "CARBOHYDRATE",
+      "note": "UK Toban Djan product carbohydrate declaration."
     },
     {
       "title": "Kikkoman",
-      "url": "https://www.kikkoman.co.uk/products/detail/fs-kikkoman-naturally-brewed-soy-sauce"
+      "url": "https://www.kikkoman.co.uk/products/detail/fs-kikkoman-naturally-brewed-soy-sauce",
+      "kind": "CARBOHYDRATE",
+      "note": "UK soy sauce product carbohydrate declaration."
     },
     {
       "title": "Cauldron",
-      "url": "https://www.cauldronfoods.co.uk/products/extra-firm-plant-based-tofu"
+      "url": "https://www.cauldronfoods.co.uk/products/extra-firm-plant-based-tofu",
+      "kind": "CARBOHYDRATE",
+      "note": "Extra Firm Plant Based Tofu carbohydrate declaration."
     }
   ],
   "boundFiles": {
