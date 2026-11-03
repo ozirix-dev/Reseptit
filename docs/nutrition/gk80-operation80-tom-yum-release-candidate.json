@@ -1,0 +1,239 @@
+{
+  "recipeId": "tom-yum-goong-vhh",
+  "servings": 4,
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "unroundedGk": "0.977775",
+  "upperScenario": {
+    "choOverrides": [
+      {
+        "inputIndex": 1,
+        "cho": 3.79
+      }
+    ],
+    "unroundedGk": "1.850275"
+  },
+  "omissions": [
+    {
+      "ingredientIndex": 8,
+      "choPer100g": 8.02
+    },
+    {
+      "ingredientIndex": 9,
+      "choPer100g": 25.31
+    },
+    {
+      "ingredientIndex": 10,
+      "choPer100g": 100
+    }
+  ],
+  "preparation": {
+    "fi": "Hauduta {{amount:2}} g:ssa laimennettua kalalientä {{amount:9}} g murskattua sitruunaruohoa, {{amount:10}} g makrutlimetinlehtiä ja {{amount:3}} g inkivääriä. Lisää {{amount:1}} g herkkusieniä tai osterivinokkaita, {{amount:4}} g chiliä ja {{amount:6}} g kirsikkatomaatteja. Lisää {{amount:0}} g katkarapuja ja kypsennä läpikypsiksi. Poista sitruunaruoho ja lehdet. Mausta {{amount:5}} g kalakastikkeella, {{amount:8}} g limettimehulla ja {{amount:7}} g korianterilla. Jaa {{servings}} annokseen.",
+    "en": "Simmer {{amount:9}} g bruised lemongrass, {{amount:10}} g makrut lime leaves and {{amount:3}} g ginger in {{amount:2}} g diluted fish stock. Add {{amount:1}} g button or oyster mushrooms, {{amount:4}} g chilli and {{amount:6}} g cherry tomatoes. Add {{amount:0}} g shrimp and cook through. Remove the lemongrass and lime leaves. Season with {{amount:5}} g fish sauce, {{amount:8}} g lime juice and {{amount:7}} g coriander. Divide into {{servings}} servings.",
+    "sv": "Sjud {{amount:9}} g krossat citrongräs, {{amount:10}} g makrutlimeblad och {{amount:3}} g ingefära i {{amount:2}} g utspädd fiskbuljong. Tillsätt {{amount:1}} g champinjoner eller ostronskivling, {{amount:4}} g chili och {{amount:6}} g körsbärstomater. Tillsätt {{amount:0}} g räkor och koka dem färdiga. Ta bort citrongräset och bladen. Smaksätt med {{amount:5}} g fisksås, {{amount:8}} g limejuice och {{amount:7}} g koriander. Dela i {{servings}} portioner.",
+    "th": "ต้มตะไคร้บุบ {{amount:9}} กรัม ใบมะกรูด {{amount:10}} กรัม และขิง {{amount:3}} กรัมในน้ำสต๊อกปลาเจือจาง {{amount:2}} กรัม ใส่เห็ดแชมปิญองหรือเห็ดนางรม {{amount:1}} กรัม พริก {{amount:4}} กรัม และมะเขือเทศเชอร์รี {{amount:6}} กรัม ใส่กุ้ง {{amount:0}} กรัมแล้วต้มจนสุก ตักตะไคร้และใบมะกรูดออก ปรุงด้วยน้ำปลา {{amount:5}} กรัม น้ำมะนาว {{amount:8}} กรัม และผักชี {{amount:7}} กรัม แบ่งเป็น {{servings}} ที่"
+  },
+  "limitation": {
+    "fi": "Alempi arvio käyttää herkkusientä ja ylempi osterivinokasta. Laskelma käyttää GI-koodeja. Limettimehun ja poistettavien mausteiden osuudet jäävät summan ulkopuolelle.",
+    "en": "The lower estimate uses button mushrooms and the upper uses oyster mushrooms. The calculation uses assigned GI codes. Lime juice and removed aromatics are excluded.",
+    "sv": "Den lägre uppskattningen gäller champinjoner och den högre ostronskivling. Beräkningen använder tilldelade GI-koder. Limejuice och borttagna kryddor ingår inte.",
+    "th": "ค่าต่ำใช้เห็ดแชมปิญอง ค่าสูงใช้เห็ดนางรม การคำนวณใช้ค่า GI ตามกลุ่มและไม่รวมคาร์โบไฮเดรตจากน้ำมะนาวและเครื่องเทศที่ตักออก"
+  },
+  "ingredients": [
+    {
+      "name": {
+        "fi": "Kuorittu katkarapu",
+        "en": "Peeled shrimp",
+        "sv": "Skalade räkor",
+        "th": "กุ้งปอกเปลือก"
+      },
+      "grams": 500
+    },
+    {
+      "name": {
+        "fi": "Herkkusieni tai osterivinokas",
+        "en": "Button or oyster mushrooms",
+        "sv": "Champinjoner eller ostronskivling",
+        "th": "เห็ดแชมปิญองหรือเห็ดนางรม"
+      },
+      "grams": 200
+    },
+    {
+      "name": {
+        "fi": "Laimennettu kalaliemi",
+        "en": "Diluted fish stock",
+        "sv": "Utspädd fiskbuljong",
+        "th": "น้ำสต๊อกปลาเจือจาง"
+      },
+      "grams": 1000
+    },
+    {
+      "name": {
+        "fi": "Inkivääri",
+        "en": "Ginger",
+        "sv": "Ingefära",
+        "th": "ขิง"
+      },
+      "grams": 25
+    },
+    {
+      "name": {
+        "fi": "Punainen chili",
+        "en": "Red chilli",
+        "sv": "Röd chili",
+        "th": "พริกแดง"
+      },
+      "grams": 24
+    },
+    {
+      "name": {
+        "fi": "Squid Brand -kalakastike",
+        "en": "Squid Brand fish sauce",
+        "sv": "Squid Brand-fisksås",
+        "th": "น้ำปลาตราปลาหมึก"
+      },
+      "grams": 30
+    },
+    {
+      "name": {
+        "fi": "Kirsikkatomaatti",
+        "en": "Cherry tomatoes",
+        "sv": "Körsbärstomater",
+        "th": "มะเขือเทศเชอร์รี"
+      },
+      "grams": 150
+    },
+    {
+      "name": {
+        "fi": "Korianteri",
+        "en": "Coriander",
+        "sv": "Koriander",
+        "th": "ผักชี"
+      },
+      "grams": 12
+    },
+    {
+      "name": {
+        "fi": "Limettimehu",
+        "en": "Lime juice",
+        "sv": "Limejuice",
+        "th": "น้ำมะนาว"
+      },
+      "grams": 45
+    },
+    {
+      "name": {
+        "fi": "Sitruunaruoho",
+        "en": "Lemongrass",
+        "sv": "Citrongräs",
+        "th": "ตะไคร้"
+      },
+      "grams": 8
+    },
+    {
+      "name": {
+        "fi": "Makrutlimetinlehdet",
+        "en": "Makrut lime leaves",
+        "sv": "Makrutlimeblad",
+        "th": "ใบมะกรูด"
+      },
+      "grams": 2
+    }
+  ],
+  "sources": [
+    {
+      "title": "Fineli 835, 345, 75, 352, 34238",
+      "url": "https://fineli.fi/fineli/fi/ohje/19",
+      "kind": "CARBOHYDRATE",
+      "note": "CC BY 4.0."
+    },
+    {
+      "title": "USDA oyster mushroom",
+      "url": "https://fdc.nal.usda.gov/food-details/168580/nutrients",
+      "kind": "CARBOHYDRATE",
+      "note": "6.09 g total minus 2.30 g fibre."
+    },
+    {
+      "title": "USDA lime juice",
+      "url": "https://fdc.nal.usda.gov/food-details/168156/nutrients",
+      "kind": "CARBOHYDRATE",
+      "note": "Available carbohydrate by difference."
+    },
+    {
+      "title": "USDA lemongrass",
+      "url": "https://fdc.nal.usda.gov/food-details/168573/nutrients",
+      "kind": "BOUND",
+      "note": "Total carbohydrate ceiling; lime leaves bounded by full mass."
+    },
+    {
+      "title": "AFCD",
+      "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd",
+      "kind": "CARBOHYDRATE",
+      "note": "CC BY-SA 3.0 Australia."
+    },
+    {
+      "title": "Squid Brand Fish Sauce",
+      "url": "https://www.henderson-foodservice.com/productpdf/download/file/id/9840/name/squid_brand_fish_sauce_%2812x700ml%29.pdf",
+      "kind": "CARBOHYDRATE",
+      "note": "3 g per 100 g."
+    },
+    {
+      "title": "GI coding",
+      "url": "https://doi.org/10.2337/dc08-1239",
+      "kind": "PUBLISHED_CODING",
+      "note": "Vegetables and herbs."
+    },
+    {
+      "title": "Low carbohydrate coding",
+      "url": "https://doi.org/10.1016/j.jfca.2007.02.004",
+      "kind": "PUBLISHED_CODING",
+      "note": "Mushrooms and fish sauce."
+    }
+  ],
+  "inputs": [
+    [
+      500,
+      0,
+      0
+    ],
+    [
+      200,
+      0.3,
+      50
+    ],
+    [
+      1000,
+      0,
+      0
+    ],
+    [
+      25,
+      4.8,
+      50
+    ],
+    [
+      24,
+      4.8,
+      40
+    ],
+    [
+      30,
+      3,
+      50
+    ],
+    [
+      150,
+      3.45,
+      40
+    ],
+    [
+      12,
+      0.505,
+      50
+    ]
+  ],
+  "boundFiles": {
+    "reseptit/paaruoat/tom-yum-goong-vhh.md": "e2ac45c320ad6ecdcde131dcb8cea63c572b5ed14c50001822741232884db308",
+    "docs/nutrition/gk80-operation80-batch-22.md": "d74125ec7a1ba686f5d08fe8e989c71d70245843b38241aa792d7e72c39f3fb9"
+  }
+}
