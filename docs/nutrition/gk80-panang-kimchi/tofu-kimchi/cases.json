@@ -1,0 +1,90 @@
+{
+  "activation": false,
+  "ownerApproval": false,
+  "cases": [
+    {
+      "recipeId": "korealainen-tofu-kimchi-aamiaiskulho",
+      "classification": "CONDITIONAL_A_ARITHMETIC_SOURCE_HOLD",
+      "arithmeticProfile": "EXISTING_A",
+      "servings": 2,
+      "paths": {
+        "fi": "reseptit/aamupalat/korealainen-tofu-kimchi-aamiaiskulho.md"
+      },
+      "recipeSha256Lf": {
+        "fi": "7650f5a800cd4b61077a089ffda402d7e67e7ce0f1a57653cc913204583e4fc7"
+      },
+      "originalIngredients": [
+        {
+          "amount": 100,
+          "unit": "g",
+          "item": "tofu"
+        },
+        {
+          "amount": 150,
+          "unit": "g",
+          "item": "kimchi"
+        },
+        {
+          "amount": 100,
+          "unit": "g",
+          "item": "riisi"
+        },
+        {
+          "amount": 100,
+          "unit": "g",
+          "item": "seesami"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "suolaa maun mukaan"
+        }
+      ],
+      "ingredients": [
+        {
+          "originalIndex": 0,
+          "name": "Plain firm tofu",
+          "grams": 100,
+          "sourceId": "F009176",
+          "giId": null
+        },
+        {
+          "originalIndex": 1,
+          "name": "Vadasz raw kimchi 400 g, stirred, liquid included",
+          "grams": 150,
+          "sourceId": "VADASZ400",
+          "giId": null
+        },
+        {
+          "originalIndex": 2,
+          "name": "Dry white jasmine rice, cooked warm",
+          "grams": 100,
+          "sourceId": "F007682",
+          "giId": "ehold-rice-jasmine68"
+        },
+        {
+          "originalIndex": 3,
+          "name": "Whole unhulled sesame seeds",
+          "grams": 100,
+          "sourceId": "385",
+          "giId": null
+        }
+      ],
+      "preparationDecision": "Cook 100 g dry white jasmine rice in water according to the package and serve all of it warm. Pan-sear 100 g plain firm tofu on nonstick cookware without unlisted dressing. Stir and weigh 150 g kimchi including liquid. Mix all 100 g unhulled sesame seeds into the two bowls. Pure salt to taste contains zero carbohydrate and has no assigned mass.",
+      "requiredDecisions": [
+        "EXACT_PRODUCT_SOURCE_AND_CONTENT_OWNER_REVIEW",
+        "GREEN_CURRY_AU64_VS_UK173_SAME_UPC_LABEL_VERSION",
+        "SQUID700_PRIMARY_LABEL_AND_G_VS_ML_UNIT_RESOLUTION",
+        "THAI_N35_TOTAL_CAP_ADMISSION_WITH_AVAILABLE_UNKNOWN",
+        "GK_ONLY_MACRO_VERSION_COMPATIBILITY"
+      ],
+      "ownerApproval": false,
+      "sourceQualified": false,
+      "publicationAuthorized": false,
+      "macroAction": "PRESERVE_ALL_CURRENT_VALUES_AND_WITHHOLDINGS",
+      "noNewGiConstants": true,
+      "minorBOmissionProfileActivated": false,
+      "inputSha256": "870ac7aeee7888d922565ccb5aefa4bb282432e846a685e9990b0e4b5e513093"
+    }
+  ]
+}
