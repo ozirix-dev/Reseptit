@@ -1,4 +1,3 @@
-import {buildGranolaEdekaVariant} from './gk-granola-edeka';
 import {buildLindstromBrineVariant} from './gk-lindstrom-brine';
 import {buildThreeCurryVariants} from './gk-three-curries';
 import {buildApprovedFourVariants} from './gk-next-four';
@@ -160,7 +159,7 @@ const legacyResults = rawResults.map((result) => {
   return usesImputation ? {...result, assessmentType: "PUBLISHED_IMPUTATION" as const, modelScenario: "POINT_SCENARIO" as const} : result;
 });
 const results = await applyScopedPolyolC(root, await applyRecovery(root, await withdrawQ09Tea(root, await applyGk80Release(root, legacyResults))));
-const gkOnlyVariants = [...buildGkOnlyVariants(root),...buildApprovedSevenVariants(root),...buildApprovedFourVariants(root),...buildApprovedBVariants(root),...buildProductAVariants(root),...buildPanangKimchiVariants(root),buildBlueberryPieVariant(root),...buildThreeCurryVariants(root),buildLindstromBrineVariant(root),buildGranolaEdekaVariant(root)];
+const gkOnlyVariants = [...buildGkOnlyVariants(root),...buildApprovedSevenVariants(root),...buildApprovedFourVariants(root),...buildApprovedBVariants(root),...buildProductAVariants(root),...buildPanangKimchiVariants(root),buildBlueberryPieVariant(root),...buildThreeCurryVariants(root),buildLindstromBrineVariant(root)];
 const versionCoverage = countGkVersions(results,gkOnlyVariants);
 const report = {
   generatedAt: new Date().toISOString(),
