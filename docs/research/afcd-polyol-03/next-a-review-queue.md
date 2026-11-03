@@ -1,6 +1,6 @@
 # GK80:n seuraavat A-katselmoinnit 3.11.2026
 
-Julkinen koonti näyttää 193/326. PR 202 on avoin luonnos yhdelle hyväksytylle mustikkapiirakkaversiolle. Sen ehdokasluku on 194/326. PR 201 dokumentoi jo julkaistujen Panangin ja tofu-kimchikulhon hyväksyntäketjun. Niistä ei tule uusia resepti-ID:itä. PR 199:n kansainvälisten tutkimussyötteiden katselmointi on erillinen. PR 200:n päätöstaulukossa on 20 tutkimusehdokasta, joista osa koskee jo julkaistuja tai muualla käsiteltäviä reseptejä. Tätä lukua ei lisätä kattavuuteen.
+Julkinen koonti näyttää 193/326. PR 202 on yhdistetty (b4849e9275d27c0a9172c1ba0d3935ae94c56462). Tarkistushetkellä sivusto näytti mustikkapiirakalle edelleen tekstin ”Kokonaisarviota ei julkaista” ja julkaisuajo 41591699187 oli käynnissä. Odotettu luku julkaisun jälkeen on 194/326. PR 201 dokumentoi jo julkaistujen Panangin ja tofu-kimchikulhon hyväksyntäketjun. Niistä ei tule uusia resepti-ID:itä. PR 199:n kansainvälisten tutkimussyötteiden katselmointi on erillinen. PR 200:n päätöstaulukossa on 20 tutkimusehdokasta, joista osa koskee jo julkaistuja tai muualla käsiteltäviä reseptejä. Tätä lukua ei lisätä kattavuuteen.
 
 | Resepti | GK:n laskettu osa | Poisjättö g/annos | Katselmointikysymys |
 | --- | ---: | ---: | --- |
