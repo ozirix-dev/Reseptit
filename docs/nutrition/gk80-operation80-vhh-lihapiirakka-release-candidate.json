@@ -1,0 +1,127 @@
+{
+  "recipeId": "vhh-lihapiirakka",
+  "servings": 8,
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "unroundedGk": "0.175",
+  "inputs": [
+    [
+      100,
+      4,
+      35
+    ]
+  ],
+  "ingredients": [
+    {
+      "grams": 100,
+      "name": {
+        "fi": "Tuorejuusto",
+        "en": "Cream cheese",
+        "sv": "Färskost",
+        "th": "ครีมชีส"
+      }
+    },
+    {
+      "grams": 200,
+      "name": {
+        "fi": "Pickerd-mantelijauhe",
+        "en": "Pickerd ground almonds",
+        "sv": "Pickerd malda mandlar",
+        "th": "อัลมอนด์บด Pickerd"
+      }
+    },
+    {
+      "grams": 110,
+      "name": {
+        "fi": "Kananmuna",
+        "en": "Egg",
+        "sv": "Ägg",
+        "th": "ไข่"
+      }
+    },
+    {
+      "grams": 80,
+      "name": {
+        "fi": "Sipuli",
+        "en": "Onion",
+        "sv": "Lök",
+        "th": "หัวหอม"
+      }
+    },
+    {
+      "grams": 0.5,
+      "name": {
+        "fi": "Mustapippuri",
+        "en": "Black pepper",
+        "sv": "Svartpeppar",
+        "th": "พริกไทยดำ"
+      }
+    },
+    {
+      "grams": 150,
+      "name": {
+        "fi": "Juustoraaste",
+        "en": "Grated cheese",
+        "sv": "Riven ost",
+        "th": "ชีสขูด"
+      }
+    },
+    {
+      "grams": 300,
+      "name": {
+        "fi": "Naudan jauheliha",
+        "en": "Minced beef",
+        "sv": "Nötfärs",
+        "th": "เนื้อวัวบด"
+      }
+    }
+  ],
+  "omissions": [
+    {
+      "ingredientIndex": 1,
+      "choPer100g": 3.7
+    },
+    {
+      "ingredientIndex": 2,
+      "choPer100g": 0.3
+    },
+    {
+      "ingredientIndex": 3,
+      "choPer100g": 4.8
+    },
+    {
+      "ingredientIndex": 4,
+      "choPer100g": 38.6
+    }
+  ],
+  "preparation": {
+    "fi": "Sekoita mantelijauhe, juustot ja toinen muna pohjaksi. Ruskista jauheliha ja sipuli, mausta ja lisää toinen muna täytteeseen. Kokoa piirakka reseptin mukaan, paista 200 °C:ssa noin 30 minuuttia ja jaa {{servings}} annokseen.",
+    "en": "Mix the ground almonds, cheeses and one egg for the crust. Brown the beef and onion, season and add the other egg to the filling. Assemble as directed, bake at 200 °C for about 30 minutes and divide into {{servings}} servings.",
+    "sv": "Blanda mandel, ost och ett ägg till botten. Bryn färs och lök, krydda och tillsätt det andra ägget i fyllningen. Montera enligt receptet, grädda i 200 °C cirka 30 minuter och dela i {{servings}} portioner.",
+    "th": "ผสมอัลมอนด์บด ชีส และไข่หนึ่งฟองเป็นฐาน ผัดเนื้อบดกับหัวหอม ปรุงรสและใส่ไข่อีกฟองในไส้ ประกอบตามสูตร อบที่ 200 °C ประมาณ 30 นาที แล้วแบ่งเป็น {{servings}} ที่"
+  },
+  "limitation": {
+    "fi": "Tuorejuuston laskennallinen GI on 35. Pois rajattu osuus on 1,470375 g CHO/annos.",
+    "en": "Cream cheese uses GI code 35. Excluded carbohydrate totals 1.470375 g per serving.",
+    "sv": "Färskosten använder GI-kod 35. Uteslutna kolhydrater är 1,470375 g per portion.",
+    "th": "ครีมชีสใช้ค่า GI ตามกลุ่ม 35 คาร์โบไฮเดรตที่ไม่รวมคือ 1.470375 กรัมต่อที่"
+  },
+  "sources": [
+    {
+      "title": "Pickerd",
+      "url": "https://www.pickerd.de/mandeln-gemahlen/3731"
+    },
+    {
+      "title": "Fineli",
+      "url": "https://fineli.fi/fineli/fi/ohje/19"
+    },
+    {
+      "title": "AFCD",
+      "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd"
+    }
+  ],
+  "boundFiles": {
+    "reseptit/leivonnaiset/vhh-lihapiirakka.md": "8b5071d4c6b08847a0855b630b34ee55471ed00cf6f61b9687e25f56f3ec96a9",
+    "docs/research/gk80-international-20261102/pickerd-almond-two.md": "0be931d58dcd394e3a38e7d4778b7e143f472ccf5564163ce7c27d8c1d3c66bf"
+  }
+}
