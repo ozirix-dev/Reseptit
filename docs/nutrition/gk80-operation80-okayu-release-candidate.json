@@ -1,0 +1,79 @@
+{
+  "recipeId": "japanilainen-okayu-umeboshipluumulla",
+  "servings": 2,
+  "level": "B",
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "standalonePreparation": true,
+  "omittedCho": 0,
+  "preparation": {
+    "fi": "Hauduta 100 g kuivaa valkoista riisiä 700 ml:ssa vettä noin 45 minuuttia, kunnes jyvät ovat hyvin pehmeitä. Jaa kahdelle ja lisää yhteensä 10 g kivetöntä suolattua umeboshia, 8 g seesamia ja 20 g kevätsipulia.",
+    "en": "Simmer 100 g dry white rice in 700 ml water for about 45 minutes, until very soft. Divide into two portions and add a total of 10 g pitted salted umeboshi, 8 g sesame seeds and 20 g spring onion.",
+    "sv": "Sjud 100 g torrt vitt ris i 700 ml vatten i cirka 45 minuter tills riset är mycket mjukt. Dela i två portioner och tillsätt sammanlagt 10 g urkärnad saltad umeboshi, 8 g sesamfrön och 20 g salladslök.",
+    "th": "เคี่ยวข้าวขาวแห้ง 100 กรัมในน้ำ 700 มล. ประมาณ 45 นาทีจนข้าวนิ่มมาก แบ่งสองส่วน เติมอุเมะโบชิดองเค็มเอาเม็ดออก 10 กรัม งา 8 กรัม และต้นหอม 20 กรัม"
+  },
+  "limitation": {
+    "fi": "Riisipuuron GI on valmistusverrokki. Päällisten punnitut määrät määrittävät tämän version.",
+    "en": "The rice porridge uses a preparation comparator for GI. The weighed toppings define this version.",
+    "sv": "Risgrötens GI bygger på ett jämförbart tillagningssätt. De vägda tillbehören definierar versionen.",
+    "th": "ค่า GI ของข้าวต้มอ้างอิงอาหารที่ปรุงด้วยวิธีใกล้เคียง สูตรนี้ใช้เครื่องโรยตามน้ำหนักที่ระบุ"
+  },
+  "sources": [
+    {
+      "id": "Kim et al., Tables 1 and 3",
+      "url": "https://doi.org/10.1017/S0007114518003446"
+    },
+    {
+      "id": "Fineli 11521",
+      "url": "https://fineli.fi/fineli/fi/elintarvikkeet/11521"
+    },
+    {
+      "id": "MEXT 07022",
+      "url": "https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=7_07022_7&MODE=7"
+    },
+    {
+      "id": "Fineli 385",
+      "url": "https://fineli.fi/fineli/fi/elintarvikkeet/385"
+    },
+    {
+      "id": "USDA 170005",
+      "url": "https://fdc.nal.usda.gov/food-details/170005/nutrients"
+    },
+    {
+      "id": "GI coding",
+      "url": "https://doi.org/10.2337/dc08-1239"
+    }
+  ],
+  "boundFiles": {
+    "reseptit/aamupalat/japanilainen-okayu-umeboshipluumulla.md": "b207cde733db80c11b05dd58e88db319c0c2c9993ca3f85e94878ed37c9e2215",
+    "docs/nutrition/gk80-operation80-batch-08.md": "1c10406123e598bc3d1bcdc25306943f99c0a12531392b99375f37cc22a865d9"
+  },
+  "inputFields": [
+    "gramsBatch",
+    "choPer100g",
+    "giGlucoseScale"
+  ],
+  "inputs": [
+    [
+      100,
+      79,
+      92.5
+    ],
+    [
+      10,
+      0.9,
+      50
+    ],
+    [
+      8,
+      0.9,
+      50
+    ],
+    [
+      20,
+      4.74,
+      40
+    ]
+  ],
+  "unroundedGk": "36.7676"
+}

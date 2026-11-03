@@ -1,0 +1,75 @@
+{
+  "recipeId": "karibia-plantain-aamiaislautanen",
+  "servings": 2,
+  "level": "B",
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "standalonePreparation": true,
+  "omittedCho": 0,
+  "preparation": {
+    "fi": "Paista 150 g kuorittua kypsää ruokabanaania sentin viipaleina ruokalusikallisessa neutraalia öljyä. Kypsennä 110 g kuoretonta kananmunaa. Jaa kahdelle ja tarjoa 120 g avokadon ja 40 g kuoritun limetin kanssa.",
+    "en": "Slice 150 g peeled ripe plantain into 1 cm rounds and pan-fry in a tablespoon of neutral oil. Cook 110 g shelled egg. Divide into two portions with 120 g avocado and 40 g peeled lime.",
+    "sv": "Skiva 150 g skalad mogen matbanan i centimetertjocka skivor och stek i en matsked neutral olja. Tillaga 110 g ägg utan skal. Dela i två portioner med 120 g avokado och 40 g skalad lime.",
+    "th": "หั่นกล้วยแพลนเทนสุกปอกเปลือก 150 กรัมเป็นแว่นหนา 1 ซม. ทอดในกระทะด้วยน้ำมันรสกลาง 1 ช้อนโต๊ะ ปรุงไข่ไม่รวมเปลือก 110 กรัมให้สุก แบ่งสองส่วน เสิร์ฟกับอะโวคาโด 120 กรัมและมะนาวปอกเปลือก 40 กรัม"
+  },
+  "limitation": {
+    "fi": "Tutkimuksessa kypsä ruokabanaani uppopaistettiin. Kotiversio paistetaan pannulla ohuessa öljykerroksessa.",
+    "en": "The study deep-fried ripe plantain. This version is shallow-fried in a pan.",
+    "sv": "I studien friterades mogen matbanan. Här steks den i ett tunt lager olja.",
+    "th": "การศึกษาทอดกล้วยสุกแบบน้ำมันท่วม สูตรนี้ทอดในกระทะด้วยน้ำมันเพียงเล็กน้อย"
+  },
+  "sources": [
+    {
+      "id": "Bahado-Singh et al., Tables 2–3",
+      "url": "https://doi.org/10.1079/BJN20061792"
+    },
+    {
+      "id": "Fineli 858",
+      "url": "https://fineli.fi/fineli/fi/elintarvikkeet/858"
+    },
+    {
+      "id": "Fineli 11057",
+      "url": "https://fineli.fi/fineli/fi/elintarvikkeet/11057"
+    },
+    {
+      "id": "AFCD F005199",
+      "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd"
+    },
+    {
+      "id": "GI coding",
+      "url": "https://doi.org/10.1016/j.jfca.2007.02.004"
+    }
+  ],
+  "boundFiles": {
+    "reseptit/aamupalat/karibia-plantain-aamiaislautanen.md": "558d423b988af31c83346c53894b0b484e31fc868eed0c8635fe054641405e6d",
+    "docs/nutrition/gk80-operation80-batch-04.md": "92fd2e19e1ab2c49f4096ec6e2687a9acd06bed5e13a8f4e3655f47f55b56b66"
+  },
+  "inputFields": [
+    "gramsBatch",
+    "choPer100g",
+    "giGlucoseScale"
+  ],
+  "inputs": [
+    [
+      150,
+      23.63,
+      90
+    ],
+    [
+      110,
+      0.3,
+      50
+    ],
+    [
+      120,
+      0.77,
+      50
+    ],
+    [
+      40,
+      1.2,
+      50
+    ]
+  ],
+  "unroundedGk": "16.38375"
+}
