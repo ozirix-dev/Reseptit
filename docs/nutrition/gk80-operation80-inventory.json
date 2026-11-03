@@ -2,11 +2,11 @@
   "schemaVersion": 1,
   "main": "4d6f19a620bb95e771c12f499554bf2cf1f06e51",
   "coverage": {
-    "PROPOSED_RANGE": 32,
+    "PROPOSED_RANGE": 33,
     "PUBLISHED_SINGLE": 197,
     "PROPOSED_SINGLE": 24,
     "IN_PROGRESS": 36,
-    "NO_GK": 27,
+    "NO_GK": 26,
     "PUBLISHED_RANGE": 10
   },
   "reviewedPrHeads": {
@@ -111,7 +111,7 @@
     "japanilainen-curry-tofulla",
     "khao-soi-vhh-konjac"
   ],
-  "nextRecipeId": "kung-pao-kana",
+  "nextRecipeId": "marjainen-chiavanukas",
   "recipes": [
     {
       "recipeId": "aloo-paratha",
@@ -8643,10 +8643,10 @@
       "recipeSha256": "f9e22adae3f6751502f6cb2470273c933981ecd1ab424dcf71221c0d2f21265f",
       "pilotInputSha256": "5cb4185c52f6c79fda1892ee7110575820ce971898dbb96cee928877b7c012ff",
       "servings": 4,
-      "status": "NO_GK",
+      "status": "PROPOSED_RANGE",
       "priorEvidence": [],
-      "level": null,
-      "ownerApproval": null,
+      "level": "B",
+      "ownerApproval": false,
       "sourceQualified": null,
       "blockers": [
         "kung-pao-kana: maissitärkkelystä: GI evidence is missing.",
@@ -8809,7 +8809,109 @@
             "The recipe amount 4 annosta has no food-specific mass conversion for RIISI PITKÄJYVÄINEN, PUUROUTUMATON."
           ]
         }
-      ]
+      ],
+      "operation80Proposal": {
+        "evidencePath": "docs/nutrition/gk80-operation80-batch-37.md",
+        "baselineRecipeSha256": "f9e22adae3f6751502f6cb2470273c933981ecd1ab424dcf71221c0d2f21265f",
+        "inputFields": [
+          "gramsBatch",
+          "choPer100g",
+          "giGlucoseScale"
+        ],
+        "scenarios": [
+          {
+            "inputs": [
+              [
+                200,
+                79,
+                82
+              ],
+              [
+                100,
+                14.1,
+                13
+              ],
+              [
+                12,
+                99.9,
+                59
+              ],
+              [
+                40,
+                4.6,
+                40
+              ],
+              [
+                6,
+                10.2,
+                40
+              ],
+              [
+                6,
+                4.8,
+                50
+              ],
+              [
+                4,
+                12.9,
+                40
+              ],
+              [
+                600,
+                0,
+                0
+              ]
+            ],
+            "gkPerServing": "34.94928"
+          },
+          {
+            "inputs": [
+              [
+                200,
+                79,
+                90
+              ],
+              [
+                100,
+                14.1,
+                13
+              ],
+              [
+                12,
+                99.9,
+                59
+              ],
+              [
+                40,
+                4.6,
+                40
+              ],
+              [
+                6,
+                10.2,
+                40
+              ],
+              [
+                6,
+                4.8,
+                50
+              ],
+              [
+                4,
+                12.9,
+                40
+              ],
+              [
+                600,
+                0,
+                0
+              ]
+            ],
+            "gkPerServing": "38.10928"
+          }
+        ],
+        "publicationAuthorized": false
+      }
     },
     {
       "recipeId": "kurkku-oliivi-aamiaiskulho",
