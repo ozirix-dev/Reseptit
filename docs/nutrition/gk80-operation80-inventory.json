@@ -4,9 +4,9 @@
   "coverage": {
     "PROPOSED_RANGE": 36,
     "PUBLISHED_SINGLE": 197,
-    "PROPOSED_SINGLE": 43,
+    "PROPOSED_SINGLE": 44,
     "IN_PROGRESS": 36,
-    "NO_GK": 4,
+    "NO_GK": 3,
     "PUBLISHED_RANGE": 10
   },
   "reviewedPrHeads": {
@@ -111,7 +111,7 @@
     "japanilainen-curry-tofulla",
     "khao-soi-vhh-konjac"
   ],
-  "nextRecipeId": "vietnamilainen-papaija-kookospuuro",
+  "nextRecipeId": "pekingin-ankka",
   "recipes": [
     {
       "recipeId": "aloo-paratha",
@@ -18782,10 +18782,10 @@
       "recipeSha256": "02440d7cfaac9b9b3b79e2467ee0fc4bd26afc49a0204253accf3478992aec99",
       "pilotInputSha256": "6931eb9a416ceaec56da0487739793d1ad769473d754384f9ce26d43dca68aa2",
       "servings": 2,
-      "status": "NO_GK",
+      "status": "PROPOSED_SINGLE",
       "priorEvidence": [],
-      "level": null,
-      "ownerApproval": null,
+      "level": "B",
+      "ownerApproval": false,
       "sourceQualified": null,
       "blockers": [
         "vietnamilainen-papaija-kookospuuro: tapioka: No source-matched composition and preparation was resolved for “tapioka”; it is not treated as zero.",
@@ -18906,7 +18906,39 @@
             "Source-documented zero available carbohydrate: Plain salt has zero available carbohydrate."
           ]
         }
-      ]
+      ],
+      "operation80Proposal": {
+        "evidencePath": "docs/nutrition/gk80-operation80-batch-61.md",
+        "baselineRecipeSha256": "02440d7cfaac9b9b3b79e2467ee0fc4bd26afc49a0204253accf3478992aec99",
+        "inputFields": [
+          "gramsBatch",
+          "choPer100g",
+          "giGlucoseScale"
+        ],
+        "scenarios": [
+          {
+            "inputs": [
+              [
+                100,
+                87.79,
+                81
+              ],
+              [
+                200,
+                3.4,
+                81
+              ],
+              [
+                200,
+                9.12,
+                38
+              ]
+            ],
+            "gkPerServing": "41.77455"
+          }
+        ],
+        "publicationAuthorized": false
+      }
     },
     {
       "recipeId": "vietnamilainen-pho-ga-aamuksi",
