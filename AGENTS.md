@@ -33,3 +33,11 @@
   session/branch lock. Continue using its required guarded operations.
 - Detailed project workflow and handoff format:
   [Rinnakkaisten Codex-ajojen toimintatapa](docs/rinnakkaiset-codex-ajot.md).
+
+## Codex Resource Economy
+
+- Use Sol High by default. Break difficult work into smaller steps and retain prior evidence before considering a model change.
+- Start GK80 work with `node site/scripts/gk80-work-index.mjs 230` and the linked [workflow](docs/gk80-resource-economy.md). Read only the rows, sources and diffs needed for the task. Recheck remote HEADs before using cached output.
+- Reuse catalog observations only when identity, preparation, license and source fingerprint match. Record each new observation once with its limits and provenance.
+- Run focused checks first and preserve release gates. Commit locally at useful checkpoints and normally push one finished batch (about ten recipes for bulk work). Let CI finish before pushing incidental edits. Push sooner for preservation, coordination or explicit instructions.
+- Keep recipe summaries around 150–250 words at most for routine cases. Report ID, GK, key sources, scenarios, decision, blocker and next step. Batch reports need counts, coverage potential and next ID. Preserve reproducible inputs and measure completed work.

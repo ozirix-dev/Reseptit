@@ -9,6 +9,7 @@ on:
       - "kuvat/**"
       - "site/**"
       - "docs/nutrition/**"
+      - "docs/research/**"
       - "meta/kaannokset/human-review-evidence.json"
       - ".github/dependabot.yml"
       - ".github/workflows/pages.yml"
@@ -52,7 +53,7 @@ jobs:
           cache-dependency-path: site/package-lock.json
 
       - name: Verify changed-path selector
-        run: node site/scripts/select-ci-checks.test.mjs
+        run: node --test site/scripts/select-ci-checks.test.mjs site/scripts/gk80-work-index.test.mjs
 
       - name: Select risk-based checks
         id: select

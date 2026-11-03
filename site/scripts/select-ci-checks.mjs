@@ -38,6 +38,14 @@ const nutritionSourceFiles = new Set([
   "docs/nutrition/cnf-2026-reference.json",
 ]);
 
+// These files are planning outputs. Keep this list exact: nearby packets
+// can be inputs to a release builder or a historical regression test.
+const planningJson = new Set([
+  "docs/nutrition/gk80-carnitas-couscous/operation145/next-queue.json",
+  "docs/nutrition/gk80-operation146/queue.json",
+  "docs/nutrition/gk80-run8/inventory.json",
+]);
+
 function addNutritionChecks(plan) {
   plan.runNutrition = true;
   plan.runBuild = true;
@@ -102,8 +110,10 @@ function classifyPaths(paths, { forceFull = false, classificationFailed = false 
       addGlycemicChecks(plan);
       continue;
     }
+    if (planningJson.has(file)) continue;
     if (/^kaannokset\/.+\.md$/i.test(file)) {
       plan.runContent = true;
+      plan.runTranslationReview = true;
       plan.needsNode = true;
       continue;
     }
@@ -218,6 +228,10 @@ function classifyPaths(paths, { forceFull = false, classificationFailed = false 
       plan.needsNode = true;
       continue;
     }
+    // Research packets can be sealed inputs, even when they live under docs.
+    if (file.startsWith("docs/research/") && !file.endsWith(".md")) return fullPlan();
+    if (file === "site/scripts/gk80-work-index.mjs" ||
+        file === "site/scripts/gk80-work-index.test.mjs") continue;
     if (file.startsWith("site/scripts/")) return fullPlan();
     if (file.startsWith("site/")) return fullPlan();
     if (/^(?:README\.md|AGENTS\.md|docs\/|meta\/|\.markdownlint-cli2\.jsonc$)/.test(file)) continue;
@@ -293,7 +307,7 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
   let classificationError = null;
   try {
     paths = process.env.CHANGED_PATHS_JSON ? JSON.parse(process.env.CHANGED_PATHS_JSON) : getChangedPaths();
-    if (!Array.isArray(paths)) throw new Error("Changed path list is not an array.");
+    if (!Array.isArray(paths) || paths.some(file => typeof file !== "string" || !file.trim())) throw new Error("Changed path list must contain non-empty strings.");
   } catch (error) {
     classificationError = error instanceof Error ? error.message : String(error);
   }

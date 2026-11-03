@@ -150,3 +150,19 @@ test("workflow and classification failures select the full fallback", () => {
   assert.equal(classifyPaths([], { classificationFailed: true }).full, true);
   assert.equal(classifyPaths(["site/new-unknown-config.toml"]).full, true);
 });
+
+test("known planning JSON stays lightweight while research inputs fail closed", () => {
+  for (const path of [
+    "docs/nutrition/gk80-carnitas-couscous/operation145/next-queue.json",
+    "docs/nutrition/gk80-operation146/queue.json",
+    "docs/nutrition/gk80-run8/inventory.json",
+  ]) {
+    const plan = classifyPaths([path]);
+    assert.equal(plan.needsNode, false, path);
+    assert.equal(plan.runBrowser, false, path);
+    assert.equal(applyEventPolicy(plan, "push").publish, false, path);
+  }
+  const research = classifyPaths(["docs/research/afcd-polyol-03/source-extensions/cases.jsonl"]);
+  assert.equal(research.full, true);
+  assert.equal(applyEventPolicy(research, "push").publish, true);
+});
