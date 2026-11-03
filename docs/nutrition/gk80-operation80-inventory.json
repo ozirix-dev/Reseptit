@@ -2,11 +2,11 @@
   "schemaVersion": 1,
   "main": "4d6f19a620bb95e771c12f499554bf2cf1f06e51",
   "coverage": {
-    "PROPOSED_RANGE": 19,
+    "PROPOSED_RANGE": 20,
     "PUBLISHED_SINGLE": 197,
     "PROPOSED_SINGLE": 17,
     "IN_PROGRESS": 33,
-    "NO_GK": 50,
+    "NO_GK": 49,
     "PUBLISHED_RANGE": 10
   },
   "reviewedPrHeads": {
@@ -111,7 +111,7 @@
     "japanilainen-curry-tofulla",
     "khao-soi-vhh-konjac"
   ],
-  "nextRecipeId": "pohjoisafrikkalainen-baghrir",
+  "nextRecipeId": "pohjoisafrikkalainen-msemen-hunajalla",
   "recipes": [
     {
       "recipeId": "aloo-paratha",
@@ -12438,10 +12438,10 @@
       "recipeSha256": "465c021ba03a828a5a70f17ad6d5bce142e9cf957dc7af730bf5c1c352d8f706",
       "pilotInputSha256": "f28783cbb610875acfb0a366a7ee03d2abeb9cc9b8d49cb322ead47b3f38fe3f",
       "servings": 2,
-      "status": "NO_GK",
+      "status": "PROPOSED_RANGE",
       "priorEvidence": [],
-      "level": null,
-      "ownerApproval": null,
+      "level": "B",
+      "ownerApproval": false,
       "sourceQualified": null,
       "blockers": [
         "pohjoisafrikkalainen-baghrir: mannasuurimo: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved.",
@@ -12514,7 +12514,69 @@
             "Individual sub-1 g contribution counted toward cumulative 2 g/serving editorial tolerance: Conservative culinary-use bound 0.2 g per recipe, divided by servings, below 1 g available carbohydrate per serving."
           ]
         }
-      ]
+      ],
+      "operation80Proposal": {
+        "evidencePath": "docs/nutrition/gk80-operation80-batch-17.md",
+        "baselineRecipeSha256": "465c021ba03a828a5a70f17ad6d5bce142e9cf957dc7af730bf5c1c352d8f706",
+        "inputFields": [
+          "gramsBatch",
+          "choPer100g",
+          "giGlucoseScale"
+        ],
+        "scenarios": [
+          {
+            "inputs": [
+              [
+                100,
+                63.6,
+                61.8
+              ],
+              [
+                100,
+                73.998,
+                61.8
+              ],
+              [
+                5,
+                6.3,
+                61.8
+              ],
+              [
+                20,
+                72.3,
+                87
+              ]
+            ],
+            "gkPerServing": "48.905217"
+          },
+          {
+            "inputs": [
+              [
+                100,
+                63.6,
+                66.43
+              ],
+              [
+                100,
+                73.998,
+                66.43
+              ],
+              [
+                5,
+                6.3,
+                66.43
+              ],
+              [
+                20,
+                72.3,
+                87
+              ]
+            ],
+            "gkPerServing": "52.09790295"
+          }
+        ],
+        "publicationAuthorized": false
+      }
     },
     {
       "recipeId": "pohjoisafrikkalainen-bissara",
