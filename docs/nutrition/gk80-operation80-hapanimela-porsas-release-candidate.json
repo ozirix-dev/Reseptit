@@ -1,0 +1,209 @@
+{
+  "recipeId": "hapanimela-porsas",
+  "servings": 4,
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "unroundedGk": "39.328085",
+  "inputs": [
+    [
+      200,
+      79,
+      82
+    ],
+    [
+      55,
+      0.3,
+      50
+    ],
+    [
+      150,
+      4.5,
+      40
+    ],
+    [
+      100,
+      4.8,
+      40
+    ],
+    [
+      150,
+      11.2,
+      53
+    ],
+    [
+      24,
+      99.9,
+      59
+    ],
+    [
+      600,
+      0,
+      0
+    ]
+  ],
+  "ingredients": [
+    {
+      "grams": 200,
+      "name": {
+        "fi": "Kuiva jasmiiniriisi",
+        "en": "Dry jasmine rice",
+        "sv": "Torrt jasminris",
+        "th": "ข้าวหอมมะลิแห้ง"
+      }
+    },
+    {
+      "grams": 55,
+      "name": {
+        "fi": "Kananmuna",
+        "en": "Egg",
+        "sv": "Ägg",
+        "th": "ไข่"
+      }
+    },
+    {
+      "grams": 150,
+      "name": {
+        "fi": "Punainen paprika",
+        "en": "Red pepper",
+        "sv": "Röd paprika",
+        "th": "พริกหวานแดง"
+      }
+    },
+    {
+      "grams": 100,
+      "name": {
+        "fi": "Keltasipuli",
+        "en": "Yellow onion",
+        "sv": "Gul lök",
+        "th": "หอมหัวใหญ่"
+      }
+    },
+    {
+      "grams": 150,
+      "name": {
+        "fi": "Valutettu ananas omassa mehussa",
+        "en": "Drained pineapple in juice",
+        "sv": "Avrunnen ananas i egen juice",
+        "th": "สับปะรดในน้ำผลไม้สะเด็ดน้ำ"
+      }
+    },
+    {
+      "grams": 24,
+      "name": {
+        "fi": "Sokeri",
+        "en": "Sugar",
+        "sv": "Socker",
+        "th": "น้ำตาล"
+      }
+    },
+    {
+      "grams": 600,
+      "name": {
+        "fi": "Porsaan ulkofilee",
+        "en": "Pork loin",
+        "sv": "Fläskytterfilé",
+        "th": "สันนอกหมู"
+      }
+    },
+    {
+      "grams": 4,
+      "name": {
+        "fi": "Maissitärkkelys",
+        "en": "Cornstarch",
+        "sv": "Majsstärkelse",
+        "th": "แป้งข้าวโพด"
+      }
+    },
+    {
+      "grams": 30,
+      "name": {
+        "fi": "Heinz-ketsuppi ilman lisättyä sokeria ja suolaa",
+        "en": "Heinz ketchup with no added sugar or salt",
+        "sv": "Heinz-ketchup utan tillsatt socker eller salt",
+        "th": "ซอสมะเขือเทศ Heinz ไม่เติมน้ำตาลและเกลือ"
+      }
+    },
+    {
+      "grams": 30,
+      "name": {
+        "fi": "Maustamaton riisiviinietikka",
+        "en": "Unseasoned rice vinegar",
+        "sv": "Okryddad risvinäger",
+        "th": "น้ำส้มสายชูข้าวไม่ปรุงรส"
+      }
+    },
+    {
+      "grams": null,
+      "name": {
+        "fi": "Kikkoman-soijakastike",
+        "en": "Kikkoman soy sauce",
+        "sv": "Kikkoman-sojasås",
+        "th": "ซีอิ๊ว Kikkoman"
+      },
+      "quantity": {
+        "amount": 15,
+        "unit": "ml"
+      }
+    }
+  ],
+  "omissions": [
+    {
+      "ingredientIndex": 7,
+      "choPer100g": 86
+    },
+    {
+      "ingredientIndex": 8,
+      "choPer100g": 6
+    },
+    {
+      "ingredientIndex": 9,
+      "choPer100g": 0.5
+    },
+    {
+      "ingredientIndex": 10,
+      "choPer100ml": 3.2
+    }
+  ],
+  "preparation": {
+    "fi": "Keitä {{amount:0}} g kuivaa riisiä vedessä. Kuorruta kuutioitu porsas {{amount:1}} g:lla kananmunaa ja {{amount:7}} g:lla maissitärkkelystä. Paista öljyssä kypsäksi. Paista paprika ja sipuli, lisää ananas. Sekoita ketsuppi, etikka, sokeri ja soija desilitraan vettä, lisää pannulle ja kiehauta. Lisää porsas ja jaa koko riisierä ja porsas kastikkeineen {{servings}} annokseen.",
+    "en": "Cook {{amount:0}} g dry rice in water. Coat the cubed pork with {{amount:1}} g egg and {{amount:7}} g cornstarch and fry in oil until cooked through. Fry the pepper and onion, then add the pineapple. Mix ketchup, vinegar, sugar and soy sauce with 100 ml water, add to the pan and bring to a boil. Return the pork and divide it with the sauce and all the rice into {{servings}} servings.",
+    "sv": "Koka {{amount:0}} g torrt ris i vatten. Vänd fläsktärningarna i {{amount:1}} g ägg och {{amount:7}} g majsstärkelse och stek i olja tills de är genomstekta. Stek paprika och lök och tillsätt ananas. Blanda ketchup, vinäger, socker och soja med 100 ml vatten, häll i pannan och koka upp. Lägg tillbaka fläsket och dela allt ris och fläsket med såsen i {{servings}} portioner.",
+    "th": "หุงข้าวแห้ง {{amount:0}} กรัมในน้ำ คลุกหมูหั่นเต๋ากับไข่ {{amount:1}} กรัมและแป้งข้าวโพด {{amount:7}} กรัม ทอดในน้ำมันจนสุก ผัดพริกหวานกับหอมใหญ่แล้วใส่สับปะรด ผสมซอสมะเขือเทศ น้ำส้มสายชู น้ำตาล และซีอิ๊วกับน้ำ 100 มล. เทลงกระทะแล้วต้มให้เดือด ใส่หมูกลับลงไป แบ่งข้าวทั้งหมดและหมูพร้อมซอสเป็น {{servings}} ที่"
+  },
+  "limitation": {
+    "fi": "Ananaksen GI 53 on mehussa säilötyn ananas-papaijaseoksen verrokki. Ohut tärkkelyspinta ja kastikkeen pienosuudet rajataan yhteensä enintään 1,4675 g CHO:hon annosta kohti.",
+    "en": "Pineapple GI 53 is a proxy from pineapple and papaya packed in juice. The thin starch coating and minor sauce ingredients contribute up to 1.4675 g excluded carbohydrate per serving.",
+    "sv": "Ananasens GI 53 kommer från ananas och papaya i juice. Det tunna stärkelseskiktet och små mängder såsingredienser ger högst 1,4675 g uteslutna kolhydrater per portion.",
+    "th": "ค่า GI 53 ใช้สับปะรดผสมมะละกอในน้ำผลไม้เป็นตัวเทียบ คาร์โบไฮเดรตจากแป้งเคลือบบางและส่วนประกอบซอสที่ไม่รวมมีไม่เกิน 1.4675 กรัมต่อที่"
+  },
+  "sources": [
+    {
+      "title": "Jenkins et al., rice",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2996336/"
+    },
+    {
+      "title": "Jenkins et al., sucrose",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/6259925/"
+    },
+    {
+      "title": "University of Sydney",
+      "url": "https://glycemicindex.com/gi-search/"
+    },
+    {
+      "title": "Fineli",
+      "url": "https://fineli.fi/fineli/fi/ohje/19"
+    },
+    {
+      "title": "Heinz",
+      "url": "https://www.heinz.com/en-GB/products/05000157140920-tomato-ketchup-no-added-sugar-salt"
+    },
+    {
+      "title": "Kikkoman",
+      "url": "https://www.kikkoman.co.uk/products/detail/fs-kikkoman-naturally-brewed-soy-sauce"
+    }
+  ],
+  "boundFiles": {
+    "reseptit/paaruoat/hapanimela-porsas.md": "2b5b1a12add2b95057c032ad37750688908a7e561114c856a3ce4517bfd10966",
+    "docs/nutrition/gk80-operation80-batch-52.md": "8a88902c94241ded631eff2d8581116b0f60f2da2b594171a6ba64ecef0f1064"
+  }
+}
