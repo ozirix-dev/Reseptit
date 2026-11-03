@@ -4,9 +4,9 @@
   "coverage": {
     "PROPOSED_RANGE": 36,
     "PUBLISHED_SINGLE": 197,
-    "PROPOSED_SINGLE": 34,
+    "PROPOSED_SINGLE": 35,
     "IN_PROGRESS": 36,
-    "NO_GK": 13,
+    "NO_GK": 12,
     "PUBLISHED_RANGE": 10
   },
   "reviewedPrHeads": {
@@ -111,7 +111,7 @@
     "japanilainen-curry-tofulla",
     "khao-soi-vhh-konjac"
   ],
-  "nextRecipeId": "hapanimela-porsas",
+  "nextRecipeId": "kanaviillokki-kukkakaalilla",
   "recipes": [
     {
       "recipeId": "aloo-paratha",
@@ -2435,10 +2435,10 @@
       "recipeSha256": "2b5b1a12add2b95057c032ad37750688908a7e561114c856a3ce4517bfd10966",
       "pilotInputSha256": "80dd6e6b014f670d31003fa37c09e6819ac1540ecf1cf4fa36712b4008972ee7",
       "servings": 4,
-      "status": "NO_GK",
+      "status": "PROPOSED_SINGLE",
       "priorEvidence": [],
-      "level": null,
-      "ownerApproval": null,
+      "level": "B",
+      "ownerApproval": false,
       "sourceQualified": null,
       "blockers": [
         "hapanimela-porsas: maissitärkkelystä: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved.",
@@ -2589,7 +2589,54 @@
             "Four cooked-rice portions have no gram weight or defined serving mass; this major carbohydrate side cannot be totaled."
           ]
         }
-      ]
+      ],
+      "operation80Proposal": {
+        "evidencePath": "docs/nutrition/gk80-operation80-batch-52.md",
+        "baselineRecipeSha256": "2b5b1a12add2b95057c032ad37750688908a7e561114c856a3ce4517bfd10966",
+        "inputFields": [
+          "gramsBatch",
+          "choPer100g",
+          "giGlucoseScale"
+        ],
+        "scenarios": [
+          {
+            "inputs": [
+              [
+                200,
+                79,
+                82
+              ],
+              [
+                55,
+                0.3,
+                50
+              ],
+              [
+                150,
+                4.5,
+                40
+              ],
+              [
+                100,
+                4.8,
+                40
+              ],
+              [
+                150,
+                11.2,
+                53
+              ],
+              [
+                24,
+                99.9,
+                59
+              ]
+            ],
+            "gkPerServing": "39.328085"
+          }
+        ],
+        "publicationAuthorized": false
+      }
     },
     {
       "recipeId": "harira",
