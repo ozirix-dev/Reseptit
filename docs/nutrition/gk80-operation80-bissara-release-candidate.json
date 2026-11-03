@@ -1,0 +1,130 @@
+{
+  "recipeId": "pohjoisafrikkalainen-bissara",
+  "servings": 2,
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "unroundedGk": "26.7617",
+  "inputs": [
+    [
+      150,
+      53.6,
+      66
+    ],
+    [
+      3,
+      10.2,
+      40
+    ],
+    [
+      2,
+      33.7,
+      50
+    ]
+  ],
+  "ingredients": [
+    {
+      "name": {
+        "fi": "Kuivat kuoritut härkäpavut",
+        "en": "Dried peeled fava beans",
+        "sv": "Torkade skalade bondbönor",
+        "th": "ถั่วปากอ้าแห้งกะเทาะเปลือก"
+      },
+      "grams": 150
+    },
+    {
+      "name": {
+        "fi": "Valkosipuli",
+        "en": "Garlic",
+        "sv": "Vitlök",
+        "th": "กระเทียม"
+      },
+      "grams": 3
+    },
+    {
+      "name": {
+        "fi": "Juustokumina",
+        "en": "Cumin",
+        "sv": "Spiskummin",
+        "th": "ยี่หร่า"
+      },
+      "grams": 2
+    },
+    {
+      "name": {
+        "fi": "Vesi",
+        "en": "Water",
+        "sv": "Vatten",
+        "th": "น้ำ"
+      },
+      "grams": null,
+      "quantity": {
+        "amount": 700,
+        "unit": "ml"
+      }
+    },
+    {
+      "name": {
+        "fi": "Oliiviöljy",
+        "en": "Olive oil",
+        "sv": "Olivolja",
+        "th": "น้ำมันมะกอก"
+      },
+      "grams": null,
+      "quantity": {
+        "amount": 1,
+        "unit": "tbsp"
+      }
+    },
+    {
+      "name": {
+        "fi": "Suola",
+        "en": "Salt",
+        "sv": "Salt",
+        "th": "เกลือ"
+      },
+      "grams": null
+    }
+  ],
+  "preparation": {
+    "fi": "Liota {{amount:0}} g kuivia kuorittuja härkäpapuja ja valuta. Keitä {{amount:3}} ml:ssa tuoretta vettä pakkauksen ohjeen mukaan täysin pehmeiksi. Soseuta koko jäljellä olevan keitinveden kanssa. Mausta {{amount:1}} g:lla valkosipulia, {{amount:2}} g:lla juustokuminaa, {{amount:4}} rkl:lla oliiviöljyä ja suolalla. Jaa {{servings}} annokseen.",
+    "en": "Soak {{amount:0}} g dried peeled fava beans and drain. Cook in {{amount:3}} ml fresh water as directed until completely soft. Purée with all remaining cooking water. Season with {{amount:1}} g garlic, {{amount:2}} g cumin, {{amount:4}} tbsp olive oil and salt. Divide into {{servings}} servings.",
+    "sv": "Blötlägg {{amount:0}} g torkade skalade bondbönor och låt rinna av. Koka dem helt mjuka i {{amount:3}} ml nytt vatten enligt förpackningen. Mixa med allt återstående kokvatten. Smaksätt med {{amount:1}} g vitlök, {{amount:2}} g spiskummin, {{amount:4}} msk olivolja och salt. Dela i {{servings}} portioner.",
+    "th": "แช่ถั่วปากอ้าแห้งกะเทาะเปลือก {{amount:0}} กรัมแล้วสะเด็ดน้ำ ต้มในน้ำใหม่ {{amount:3}} มล. ตามฉลากจนถั่วนุ่มดี ปั่นกับน้ำต้มที่เหลือทั้งหมด ปรุงด้วยกระเทียม {{amount:1}} กรัม ยี่หร่า {{amount:2}} กรัม น้ำมันมะกอก {{amount:4}} ช้อนโต๊ะ และเกลือ แบ่งเป็น {{servings}} ที่"
+  },
+  "limitation": {
+    "fi": "Arvio käyttää kuorittujen härkäpapujen GI-mittausta. Soseutus ja kypsennysaika voivat muuttaa vastetta.",
+    "en": "The estimate uses a measured GI for peeled fava beans. Puréeing and cooking time can affect the response.",
+    "sv": "Uppskattningen bygger på uppmätt GI för skalade bondbönor. Mixning och koktid kan påverka responsen.",
+    "th": "ค่าประมาณอ้างอิง GI ที่วัดจากถั่วปากอ้ากะเทาะเปลือก การปั่นและเวลาต้มอาจเปลี่ยนการตอบสนอง"
+  },
+  "sources": [
+    {
+      "title": "Thannoun and Al-Kubati",
+      "url": "https://ojs.uomosul.edu.iq/index.php/magrj/article/download/44591/44337",
+      "kind": "HUMAN_GI",
+      "note": "Glucose-scale GI 66; cooking liquid retained."
+    },
+    {
+      "title": "CREA 004420",
+      "url": "https://www.alimentinutrizione.it/tabelle-nutrizionali/004420",
+      "kind": "CARBOHYDRATE",
+      "note": "Marletta and Camilli, CREA food composition tables, 2019. 53.6 g available carbohydrate per 100 g."
+    },
+    {
+      "title": "AFCD F004193, F003327",
+      "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd",
+      "kind": "CARBOHYDRATE",
+      "note": "CC BY-SA 3.0 Australia."
+    },
+    {
+      "title": "GI coding",
+      "url": "https://doi.org/10.2337/dc08-1239",
+      "kind": "PUBLISHED_CODING",
+      "note": "Garlic and cumin use assigned codes."
+    }
+  ],
+  "boundFiles": {
+    "reseptit/aamupalat/pohjoisafrikkalainen-bissara.md": "1ff5c53d68cced68d1a56360dafccd38096f3192a2d0579cd79214362b9581a3",
+    "docs/nutrition/gk80-operation80-batch-43.md": "0c148e564280511dd7920fc3324f506d35f3914e4017cf83ad07402c6dc82413"
+  }
+}
