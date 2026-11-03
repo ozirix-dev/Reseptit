@@ -4,9 +4,9 @@
   "coverage": {
     "PROPOSED_RANGE": 28,
     "PUBLISHED_SINGLE": 197,
-    "PROPOSED_SINGLE": 19,
+    "PROPOSED_SINGLE": 20,
     "IN_PROGRESS": 35,
-    "NO_GK": 37,
+    "NO_GK": 36,
     "PUBLISHED_RANGE": 10
   },
   "reviewedPrHeads": {
@@ -111,7 +111,7 @@
     "japanilainen-curry-tofulla",
     "khao-soi-vhh-konjac"
   ],
-  "nextRecipeId": "indonesialainen-serabi-kookospannukakku",
+  "nextRecipeId": "japanilainen-miso-tofu-paksoi",
   "recipes": [
     {
       "recipeId": "aloo-paratha",
@@ -3351,10 +3351,10 @@
       "recipeSha256": "3c3948cb2d5e7092f203c3656f023a9c041066c4a364c624c1dea7ed82f8de70",
       "pilotInputSha256": "84d9348a17f547d045946007010866df25f9be84da103b1bdb3e7046db5b7b34",
       "servings": 2,
-      "status": "NO_GK",
+      "status": "PROPOSED_SINGLE",
       "priorEvidence": [],
-      "level": null,
-      "ownerApproval": null,
+      "level": "B",
+      "ownerApproval": false,
       "sourceQualified": null,
       "blockers": [
         "indonesialainen-serabi-kookospannukakku: kookosmaito: 200 ml canned coconut milk lacks food-specific Fineli mass-per-volume data.",
@@ -3421,7 +3421,44 @@
             "Source-documented zero available carbohydrate: Salt has no available carbohydrate."
           ]
         }
-      ]
+      ],
+      "operation80Proposal": {
+        "evidencePath": "docs/nutrition/gk80-operation80-batch-28.md",
+        "baselineRecipeSha256": "3c3948cb2d5e7092f203c3656f023a9c041066c4a364c624c1dea7ed82f8de70",
+        "inputFields": [
+          "gramsBatch",
+          "choPer100g",
+          "giGlucoseScale"
+        ],
+        "scenarios": [
+          {
+            "inputs": [
+              [
+                100,
+                79.3,
+                76
+              ],
+              [
+                20,
+                7.3,
+                76
+              ],
+              [
+                150,
+                1.7,
+                76
+              ],
+              [
+                30,
+                96.8,
+                59
+              ]
+            ],
+            "gkPerServing": "40.2246"
+          }
+        ],
+        "publicationAuthorized": false
+      }
     },
     {
       "recipeId": "indonesialainen-tempeh-munakulho",
