@@ -25,3 +25,5 @@ Julkisessa GK-koonnissa on 198/326 numeerista reseptiä. Pongalilla on jo julkin
 PR 207 on Ready tilassa ja build läpäisi tarkistuksen commitissa 5f91ad26ffb6f82f4ad0d94f04863821f674cce8. Sen neljä reseptiä nostaisivat kattavuuden julkaistuina 202/326:een. PR 210:n granola on sama resepti-ID. Kerala-kalacurry, paistettu maksa ja pekoni sekä kevätsipulipannukakku näkyvät julkisessa koonnissa ilman numeerista arviota. Niiden tarkat hyväksytyt versiot nostaisivat ehdollisen kattavuuden 205/326:een. Okayu, labneh ja teehaudutetut munat odottavat lähde- ja sisältöpäätöksiä.
 
 [Julkinen koonti](https://ozirix-dev.github.io/Reseptit/glykeeminen-kuorma/) · [PR 207](https://github.com/ozirix-dev/Reseptit/pull/207)
+
+Julkisesta koonnista varmennetut muut jo julkaistut reseptit ovat hernekeitto, besan-chilla, pinaatti-paneer-chilla, mannasuurimoupma, kana-tagine ja paella. Vanhan päätöstaulukon hyväksytty luovutus -merkintä näille kuudelle sekä pongalille kuvaa aiempaa työvaihetta. Seitsemän reseptiä sisältyvät julkiseen lähtölukuun.
