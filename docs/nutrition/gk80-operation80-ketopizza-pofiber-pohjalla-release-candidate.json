@@ -1,0 +1,144 @@
+{
+  "recipeId": "ketopizza-pofiber-pohjalla",
+  "servings": 2,
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "unroundedGk": "0.42075",
+  "inputs": [
+    [
+      75,
+      5.1,
+      22
+    ],
+    [
+      175,
+      0,
+      0
+    ]
+  ],
+  "ingredients": [
+    {
+      "grams": 75,
+      "name": {
+        "fi": "Mutti Passata",
+        "en": "Mutti Passata",
+        "sv": "Mutti Passata",
+        "th": "มุตติ พาสซาตา"
+      }
+    },
+    {
+      "grams": 175,
+      "name": {
+        "fi": "Valio Oltermanni -kermajuusto",
+        "en": "Valio Oltermanni cheese",
+        "sv": "Valio Oltermanni gräddost",
+        "th": "ชีสวาลิโอ โอลแตร์มันนิ"
+      }
+    },
+    {
+      "grams": 35,
+      "name": {
+        "fi": "Valio Viola -maustamaton tuorejuusto",
+        "en": "Valio Viola plain cream cheese",
+        "sv": "Valio Viola naturell färskost",
+        "th": "ครีมชีสวาลิโอ วิโอลารสธรรมชาติ"
+      }
+    },
+    {
+      "grams": 55,
+      "name": {
+        "fi": "Kananmuna ilman kuorta",
+        "en": "Shelled egg",
+        "sv": "Ägg utan skal",
+        "th": "ไข่ไก่ไม่รวมเปลือก"
+      }
+    },
+    {
+      "grams": 10.5,
+      "name": {
+        "fi": "Semper Pofiber",
+        "en": "Semper Pofiber",
+        "sv": "Semper Pofiber",
+        "th": "เซมเปอร์ โพไฟเบอร์"
+      }
+    },
+    {
+      "grams": 50,
+      "name": {
+        "fi": "Atrian Ohuen Ohut Palvikinkku",
+        "en": "Atria Ohuen Ohut smoked ham",
+        "sv": "Atria Ohuen Ohut rökt skinka",
+        "th": "แฮมรมควันอาเตรีย"
+      }
+    },
+    {
+      "grams": 100,
+      "name": {
+        "fi": "Herkkusieni",
+        "en": "Button mushrooms",
+        "sv": "Champinjoner",
+        "th": "เห็ดแชมปิญอง"
+      }
+    }
+  ],
+  "omissions": [
+    {
+      "ingredientIndex": 2,
+      "choPer100g": 3.5
+    },
+    {
+      "ingredientIndex": 3,
+      "choPer100g": 0.3
+    },
+    {
+      "ingredientIndex": 4,
+      "choPer100g": 17
+    },
+    {
+      "ingredientIndex": 5,
+      "choPer100g": 0.9
+    },
+    {
+      "ingredientIndex": 6,
+      "choPer100g": 0.3
+    }
+  ],
+  "preparation": {
+    "fi": "Sekoita raastettu juusto, tuorejuusto, muna ja Pofiber. Levitä pohja ja lisää passata, kinkku ja viipaloidut sienet. Paista reseptin mukaan 8–12 minuuttia leivinpaperin lämpörajan puitteissa. Jaa {{servings}} annokseen.",
+    "en": "Mix grated cheese, cream cheese, egg and Pofiber. Spread the dough and top with passata, ham and sliced mushrooms. Bake for 8–12 minutes as directed, within the baking paper temperature limit. Divide into {{servings}} servings.",
+    "sv": "Blanda riven ost, färskost, ägg och Pofiber. Bred ut degen och lägg på passata, skinka och skivade champinjoner. Grädda 8–12 minuter enligt receptet inom bakplåtspapprets temperaturgräns. Dela i {{servings}} portioner.",
+    "th": "ผสมชีสขูด ครีมชีส ไข่ และโพไฟเบอร์ แผ่แป้งแล้วใส่พาสซาตา แฮม และเห็ดหั่น อบ 8–12 นาทีตามสูตรโดยไม่เกินอุณหภูมิที่กระดาษรองอบรองรับ แบ่งเป็น {{servings}} ที่"
+  },
+  "limitation": {
+    "fi": "Sieniversiossa on 100 g herkkusieniä ja 50 g kinkkua. Passatan GI-verrokki on tomaattimurska. Viidestä ainesosasta jää laskelman ulkopuolelle 1,9625 g imeytyvää hiilihydraattia annosta kohti.",
+    "en": "This mushroom version uses 100 g mushrooms and 50 g ham. Passata uses crushed tomatoes as its GI proxy. Five ingredients contribute 1.9625 g available carbohydrate per serving outside the estimate.",
+    "sv": "Svampversionen använder 100 g champinjoner och 50 g skinka. GI för krossade tomater används för passatan. Fem ingredienser bidrar med 1,9625 g tillgängliga kolhydrater per portion utanför beräkningen.",
+    "th": "สูตรเห็ดใช้เห็ด 100 กรัมและแฮม 50 กรัม ใช้ค่า GI ของมะเขือเทศบดเทียบกับพาสซาตา การคำนวณไม่รวมคาร์โบไฮเดรตที่ย่อยได้ 1.9625 กรัมต่อที่จากส่วนผสมห้าชนิด"
+  },
+  "sources": [
+    {
+      "title": "Mutti Passata",
+      "url": "https://mutti-parma.com/products/passata/"
+    },
+    {
+      "title": "Valio Oltermanni",
+      "url": "https://www.valio.fi/tuotteet/valio-oltermanni-kermajuusto/500-g-kaare/"
+    },
+    {
+      "title": "Valio Viola",
+      "url": "https://www.valio.fi/tuotteet/valio-viola-maustamaton-tuorejuusto-sanko/"
+    },
+    {
+      "title": "Atria smoked ham",
+      "url": "https://www.atria.fi/tuotteet/atria-ohuen-ohut-palvikinkku-200g/"
+    },
+    {
+      "title": "Fineli mushrooms",
+      "url": "https://fineli.fi/fineli/fi/elintarvikkeet/345"
+    }
+  ],
+  "boundFiles": {
+    "reseptit/paaruoat/ketopizza-pofiber-pohjalla.md": "c6b50996b2e5da2969621b430aca57472a41df7f420ba2f66457366e486fc56f",
+    "docs/nutrition/gk80-operation80-inventory.json": "8258398785235a0688432f9cb74fe7b16ae0721bf941a04f7a2d6233b856b608"
+  }
+}
