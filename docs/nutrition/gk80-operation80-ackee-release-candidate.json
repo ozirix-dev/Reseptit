@@ -7,10 +7,10 @@
   "standalonePreparation": true,
   "omittedCho": 0,
   "preparation": {
-    "fi": "Käytä kaupallista ackee-säilykettä. Valuta ja punnitse 150 g. Huuhtele, liota ja kypsennä suolattu turska pakkauksen mukaan. Punnitse kypsää, ruodotonta kalaa 60 g. Kuullota 125 g tomaattia ja 20 g kevätsipulia ruokalusikallisessa neutraalia öljyä. Lisää kala ja kääntele ackee varovasti joukkoon. Jaa kahdelle.",
-    "en": "Use commercially canned ackee. Drain and weigh 150 g. Rinse, soak and cook the salted cod according to its package. Weigh 60 g of cooked, boneless fish. Soften 125 g tomato and 20 g spring onion in a tablespoon of neutral oil. Add the fish and gently fold in the ackee. Divide into two portions.",
-    "sv": "Använd kommersiellt konserverad ackee. Låt rinna av och väg upp 150 g. Skölj, blötlägg och tillaga den saltade torsken enligt förpackningen. Väg upp 60 g tillagad, benfri fisk. Fräs 125 g tomat och 20 g salladslök i en matsked neutral olja. Tillsätt fisken och vänd försiktigt ner ackeen. Dela i två portioner.",
-    "th": "ใช้แอกกีบรรจุกระป๋องที่ผลิตเพื่อจำหน่าย สะเด็ดน้ำแล้วชั่ง 150 กรัม ล้าง แช่ และปรุงปลาค็อดเค็มตามคำแนะนำบนฉลาก ชั่งเนื้อปลาสุกที่ไม่มีก้าง 60 กรัม ผัดมะเขือเทศ 125 กรัมและต้นหอม 20 กรัมในน้ำมันรสกลางหนึ่งช้อนโต๊ะให้นุ่ม ใส่ปลาแล้วคลุกแอกกีเบา ๆ แบ่งเป็นสองส่วน"
+    "fi": "Käytä kaupallista ackee-säilykettä. Valuta ja punnitse {{amount:0}} g. Huuhtele, liota ja kypsennä suolattu turska pakkauksen mukaan. Punnitse kypsää, ruodotonta kalaa {{amount:1}} g. Kuullota {{amount:2}} g tomaattia ja {{amount:3}} g kevätsipulia {{amount:4}} ruokalusikallisessa neutraalia öljyä. Lisää kala ja kääntele ackee varovasti joukkoon. Jaa {{servings}} annokseen.",
+    "en": "Use commercially canned ackee. Drain and weigh {{amount:0}} g. Rinse, soak and cook the salted cod according to its package. Weigh {{amount:1}} g of cooked, boneless fish. Soften {{amount:2}} g tomato and {{amount:3}} g spring onion in {{amount:4}} tbsp of neutral oil. Add the fish and gently fold in the ackee. Divide into {{servings}} portions.",
+    "sv": "Använd kommersiellt konserverad ackee. Låt rinna av och väg upp {{amount:0}} g. Skölj, blötlägg och tillaga den saltade torsken enligt förpackningen. Väg upp {{amount:1}} g tillagad, benfri fisk. Fräs {{amount:2}} g tomat och {{amount:3}} g salladslök i {{amount:4}} matsked neutral olja. Tillsätt fisken och vänd försiktigt ner ackeen. Dela i {{servings}} portioner.",
+    "th": "ใช้แอกกีบรรจุกระป๋องที่ผลิตเพื่อจำหน่าย สะเด็ดน้ำแล้วชั่ง {{amount:0}} กรัม ล้าง แช่ และปรุงปลาค็อดเค็มตามคำแนะนำบนฉลาก ชั่งเนื้อปลาสุกที่ไม่มีก้าง {{amount:1}} กรัม ผัดมะเขือเทศ {{amount:2}} กรัมและต้นหอม {{amount:3}} กรัมในน้ำมันรสกลาง {{amount:4}} ช้อนโต๊ะให้นุ่ม ใส่ปลาแล้วคลุกแอกกีเบา ๆ แบ่งเป็น{{servings}} ส่วน"
   },
   "limitation": {
     "fi": "Arvio koskee valutettua säilykeackeeta. Hiilihydraattimäärä perustuu CoFIDin säilykevertailuun ja GI-luvut ovat laskentakoodeja.",

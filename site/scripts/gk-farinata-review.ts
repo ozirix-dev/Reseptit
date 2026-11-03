@@ -152,3 +152,53 @@ export function buildLabnehReviewVariant(root: string): GkOnlyVariant {
     ],
   };
 }
+
+type AckeeCandidate = Omit<Candidate, 'ingredients'> & {
+  foodSafety: { url: string; preparedRecipeSha256: string };
+  inputs: [number, number, number][];
+  sources: { id: string; url: string; note?: string }[];
+};
+
+export function buildAckeeReviewVariant(root: string): GkOnlyVariant {
+  const read = (file: string) => readFileSync(join(root, file), 'utf8');
+  const raw = read('docs/nutrition/gk80-operation80-ackee-release-candidate.json');
+  const c: AckeeCandidate = JSON.parse(raw);
+  const recipePath = 'reseptit/aamupalat/karibia-ackee-ja-suolakala.md';
+  const evidencePath = 'docs/nutrition/gk80-operation80-batch-10.md';
+  if (c.recipeId !== 'karibia-ackee-ja-suolakala' || c.servings !== 2 || c.omittedCho !== 0
+      || c.reviewState !== 'PREPARED_FOR_REVIEW' || c.publicationAuthorized !== false
+      || c.inputs.length !== 4) throw Error('Unexpected ackee review scope');
+  if (textHash(read(recipePath)) !== c.foodSafety.preparedRecipeSha256
+      || textHash(read(evidencePath)) !== c.boundFiles[evidencePath]) {
+    throw Error('Ackee safety or evidence binding changed');
+  }
+  for (const locale of locales) {
+    if (!c.preparation[locale]?.trim() || !c.limitation[locale]?.trim()) throw Error('Ackee translation missing');
+  }
+  const point = c.inputs.reduce((sum, [g, cho, gi]) => sum + g * cho * gi, 0) / (10000 * c.servings);
+  if (!Number.isFinite(point) || !Number.isFinite(Number(c.unroundedGk))
+      || Math.abs(point - Number(c.unroundedGk)) > 1e-10) throw Error('Ackee review calculation changed');
+  const names: LocalizedText[] = [
+    { fi: 'Valutettu kaupallinen ackee-säilyke', en: 'Commercially canned ackee, drained', sv: 'Kommersiellt konserverad ackee, avrunnen', th: 'แอกกีกระป๋องที่ผลิตเพื่อจำหน่ายและสะเด็ดน้ำ' },
+    { fi: 'Kypsä, ruodoton suolattu turska', en: 'Cooked boneless salted cod', sv: 'Tillagad benfri saltad torsk', th: 'ปลาค็อดเค็มปรุงสุกไม่มีก้าง' },
+    { fi: 'Tomaatti', en: 'Tomato', sv: 'Tomat', th: 'มะเขือเทศ' },
+    { fi: 'Kevätsipuli', en: 'Spring onion', sv: 'Salladslök', th: 'ต้นหอม' },
+  ];
+  const inputSha256 = textHash(raw);
+  return {
+    recipeId: c.recipeId, versionId: 'gk-ackee-review-' + inputSha256.slice(0, 12), inputSha256,
+    level: 'B', servings: c.servings, point, scenarioRange: null, rangeKind: null,
+    omittedCho: 0, confidence: 'LOW', macroScope: 'NO_MACRO_PACKAGE_FOR_THIS_VERSION',
+    quantityContract: 'GK_ONLY_NATIVE_UNITS_V1', standalonePreparation: true,
+    ingredients: [
+      ...names.map((name, index) => ({ name, grams: c.inputs[index][0] })),
+      { name: { fi: 'Neutraali öljy', en: 'Neutral oil', sv: 'Neutral olja', th: 'น้ำมันรสกลาง' },
+        grams: null, quantity: { amount: 1, unit: 'tbsp' } },
+    ],
+    preparation: c.preparation, limitation: c.limitation, codingKinds: ['TRACE50'], sensitivity: null,
+    sources: c.sources.map(({ id, url, note }) => ({
+      title: id, url, note: note ?? '',
+      kind: id.endsWith('coding') ? 'B_CODING' : 'CARBOHYDRATE',
+    })),
+  };
+}
