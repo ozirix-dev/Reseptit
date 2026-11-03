@@ -2,11 +2,11 @@
   "schemaVersion": 1,
   "main": "4d6f19a620bb95e771c12f499554bf2cf1f06e51",
   "coverage": {
-    "PROPOSED_RANGE": 26,
+    "PROPOSED_RANGE": 27,
     "PUBLISHED_SINGLE": 197,
     "PROPOSED_SINGLE": 18,
     "IN_PROGRESS": 34,
-    "NO_GK": 41,
+    "NO_GK": 40,
     "PUBLISHED_RANGE": 10
   },
   "reviewedPrHeads": {
@@ -111,7 +111,7 @@
     "japanilainen-curry-tofulla",
     "khao-soi-vhh-konjac"
   ],
-  "nextRecipeId": "chow-mein",
+  "nextRecipeId": "dan-dan-nuudelit",
   "recipes": [
     {
       "recipeId": "aloo-paratha",
@@ -1308,10 +1308,10 @@
       "recipeSha256": "3e9d6ed75ef531708f84720de20aa4fc8d40122f0fdd81c6a6f609d34cbab9c2",
       "pilotInputSha256": "264a7aaacfda6ec6cf61752301901e79c2693ef599f38c4f3cb03f6cf78799dd",
       "servings": 4,
-      "status": "NO_GK",
+      "status": "PROPOSED_RANGE",
       "priorEvidence": [],
-      "level": null,
-      "ownerApproval": null,
+      "level": "B",
+      "ownerApproval": false,
       "sourceQualified": null,
       "blockers": [
         "chow-mein: soijakastiketta: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
@@ -1390,7 +1390,99 @@
             "Individual sub-1 g contribution counted toward cumulative 2 g/serving editorial tolerance: Two spring onions bounded at 40 g total using AFCD spring onion composition; <1 g available carbohydrate/serving."
           ]
         }
-      ]
+      ],
+      "operation80Proposal": {
+        "evidencePath": "docs/nutrition/gk80-operation80-batch-25.md",
+        "baselineRecipeSha256": "3e9d6ed75ef531708f84720de20aa4fc8d40122f0fdd81c6a6f609d34cbab9c2",
+        "inputFields": [
+          "gramsBatch",
+          "choPer100g",
+          "giGlucoseScale"
+        ],
+        "scenarios": [
+          {
+            "inputs": [
+              [
+                300,
+                29.1,
+                47
+              ],
+              [
+                400,
+                0,
+                0
+              ],
+              [
+                6,
+                10.2,
+                40
+              ],
+              [
+                200,
+                4.97,
+                40
+              ],
+              [
+                60,
+                5.56,
+                40
+              ],
+              [
+                54,
+                3.2,
+                50
+              ],
+              [
+                12,
+                4.6,
+                40
+              ]
+            ],
+            "gkPerServing": "11.91775"
+          },
+          {
+            "inputs": [
+              [
+                300,
+                29.1,
+                48.2
+              ],
+              [
+                400,
+                0,
+                0
+              ],
+              [
+                6,
+                10.2,
+                40
+              ],
+              [
+                200,
+                4.97,
+                40
+              ],
+              [
+                60,
+                5.56,
+                40
+              ],
+              [
+                54,
+                3.2,
+                50
+              ],
+              [
+                12,
+                4.6,
+                40
+              ]
+            ],
+            "gkPerServing": "12.17965"
+          }
+        ],
+        "publicationAuthorized": false
+      }
     },
     {
       "recipeId": "congee-riisipuuro",
