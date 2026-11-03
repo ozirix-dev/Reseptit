@@ -2,11 +2,11 @@
   "schemaVersion": 1,
   "main": "4d6f19a620bb95e771c12f499554bf2cf1f06e51",
   "coverage": {
-    "PROPOSED_RANGE": 10,
+    "PROPOSED_RANGE": 11,
     "PUBLISHED_SINGLE": 197,
-    "PROPOSED_SINGLE": 6,
-    "IN_PROGRESS": 7,
-    "NO_GK": 96,
+    "PROPOSED_SINGLE": 10,
+    "IN_PROGRESS": 15,
+    "NO_GK": 83,
     "PUBLISHED_RANGE": 10
   },
   "reviewedPrHeads": {
@@ -25,24 +25,11 @@
     "160": "64f2c14ee3b158fbeff6719278ffaa5f436aec4f"
   },
   "queue": [
-    "gulab-jamun",
-    "karibia-johnny-cake",
-    "keto-korvapuustit",
-    "ketopizza-pofiber-pohjalla",
-    "kiinalainen-teehaudutetut-munat",
-    "lahi-ita-manakish-zaatarilla",
-    "mala-xiang-guo",
     "malesialainen-kookos-banaanikulho",
     "mapo-tofu",
     "nasi-lemak",
-    "pellava-puuro-pahkinoilla",
-    "pohjoisafrikkalainen-harcha-juustolla",
     "samosa",
-    "tangyuan",
-    "vada-pav",
     "valimerellinen-appelsiini-aamiaiskakku",
-    "vhh-lihapiirakka",
-    "vhh-runebergintortut",
     "vietnamilainen-banh-bao-kananmunalla",
     "chole-bhature",
     "indonesialainen-bakwan-maissifritter",
@@ -127,9 +114,17 @@
     "bibimbap",
     "char-siu",
     "intialainen-masala-dosa",
-    "japanilainen-yaki-onigiri-misolla"
+    "japanilainen-yaki-onigiri-misolla",
+    "gulab-jamun",
+    "ketopizza-pofiber-pohjalla",
+    "kiinalainen-teehaudutetut-munat",
+    "mala-xiang-guo",
+    "pellava-puuro-pahkinoilla",
+    "pohjoisafrikkalainen-harcha-juustolla",
+    "tangyuan",
+    "vada-pav"
   ],
-  "nextRecipeId": "gulab-jamun",
+  "nextRecipeId": "malesialainen-kookos-banaanikulho",
   "recipes": [
     {
       "recipeId": "aloo-paratha",
@@ -1760,7 +1755,7 @@
       "recipeSha256": "963d9b79f962b790d752de2c6708c2564c67c1765a587580734c99d93ed08b11",
       "pilotInputSha256": "e6954280d6def9ba2a3c8219adc739a296340ba65c904e2fe8f84f37f691fdf3",
       "servings": 4,
-      "status": "NO_GK",
+      "status": "IN_PROGRESS",
       "priorEvidence": [],
       "level": null,
       "ownerApproval": null,
@@ -1794,7 +1789,8 @@
             "AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved."
           ]
         }
-      ]
+      ],
+      "operation80Finding": "Syrup retention and prepared milk-powder dough GI."
     },
     {
       "recipeId": "halloumimunakas",
@@ -4949,10 +4945,10 @@
       "recipeSha256": "eab5edacb27b76b31b5fb07912922d23bf5b88c5b09210efbff7802f138e34bc",
       "pilotInputSha256": "810dbd22d55fcf40164597ee6a24484d8cac03bbde4d5e3b178084728612c9cb",
       "servings": 2,
-      "status": "NO_GK",
+      "status": "PROPOSED_RANGE",
       "priorEvidence": [],
-      "level": null,
-      "ownerApproval": null,
+      "level": "B",
+      "ownerApproval": false,
       "sourceQualified": null,
       "blockers": [
         "karibia-johnny-cake: vehnäjauho: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved."
@@ -5032,7 +5028,45 @@
             "Source-documented zero available carbohydrate: Plain salt has zero available carbohydrate."
           ]
         }
-      ]
+      ],
+      "operation80Proposal": {
+        "evidencePath": "docs/nutrition/gk80-operation80-batch-02.md",
+        "baselineRecipeSha256": "eab5edacb27b76b31b5fb07912922d23bf5b88c5b09210efbff7802f138e34bc",
+        "matrixInputs": [
+          [
+            100,
+            74
+          ],
+          [
+            60,
+            4.8
+          ],
+          [
+            15,
+            0.8
+          ],
+          [
+            5,
+            37.8
+          ]
+        ],
+        "inputFields": [
+          "gramsBatch",
+          "choPer100g"
+        ],
+        "choPerServing": "39.445",
+        "scenarios": [
+          {
+            "giGlucoseScale": "60.2",
+            "gkPerServing": "23.74589"
+          },
+          {
+            "giGlucoseScale": "62.43",
+            "gkPerServing": "24.6255135"
+          }
+        ],
+        "publicationAuthorized": false
+      }
     },
     {
       "recipeId": "karibia-kookosriisi-pavuilla",
@@ -5667,10 +5701,16 @@
       "recipeSha256": "84f4ef23369a64393f922fd5df3f22079ca56ddcd8e5963d2d5484542252ba24",
       "pilotInputSha256": "9b207f519f96dca1a63b8b74a512e403cf68608d4efd7e5d239da95293ee7ba4",
       "servings": 8,
-      "status": "NO_GK",
-      "priorEvidence": [],
+      "status": "PROPOSED_SINGLE",
+      "priorEvidence": [
+        {
+          "kind": "historical-conditional-point",
+          "path": "docs/research/gk80-international-20261102/pickerd-almond-two.md",
+          "approved": false
+        }
+      ],
       "level": null,
-      "ownerApproval": null,
+      "ownerApproval": false,
       "sourceQualified": null,
       "blockers": [
         "keto-korvapuustit: mantelijauhoa: AJO 1.7: bakery GI 58 is a finished-product category mean, not almond meal. No preparation-matched primary human GI was found. AFCD F006077 is full-fat almond meal (CHOAVL without polyols 5.4 g/100 g), not defatted flour or almond bread. Missing GI is not zero."
@@ -5803,7 +5843,7 @@
       "recipeSha256": "c6b50996b2e5da2969621b430aca57472a41df7f420ba2f66457366e486fc56f",
       "pilotInputSha256": "eefdb5e56d66da256bf0f657f15022c5bb1c143bb54d66055d91648f0d92d820",
       "servings": 2,
-      "status": "NO_GK",
+      "status": "IN_PROGRESS",
       "priorEvidence": [],
       "level": null,
       "ownerApproval": null,
@@ -5861,7 +5901,8 @@
             "The recipe leaves 150 g of pizza toppings to the cook; ingredient identities and available carbohydrate cannot be established."
           ]
         }
-      ]
+      ],
+      "operation80Finding": "Named toppings and baked potato-fibre dough model."
     },
     {
       "recipeId": "khao-kha-moo-vhh",
@@ -6519,7 +6560,7 @@
       "recipeSha256": "bae898d991ed769ae2853f2860e1ebcd3629e292e0d5ca2901244c0377d640e1",
       "pilotInputSha256": "1d8237b463b40438ce70b4fd6035b2663b2075bf62dafefefc43e9f6a77ed32e",
       "servings": 2,
-      "status": "NO_GK",
+      "status": "IN_PROGRESS",
       "priorEvidence": [],
       "level": null,
       "ownerApproval": null,
@@ -6589,7 +6630,8 @@
             "Source-documented zero available carbohydrate: Plain salt has zero available carbohydrate."
           ]
         }
-      ]
+      ],
+      "operation80Finding": "Served liquid mass and star-anise extraction."
     },
     {
       "recipeId": "kiinalainen-tomaattimunakas-riisilla",
@@ -7881,10 +7923,16 @@
       "recipeSha256": "b1c6167df859ba8589506e7bdc4a87a42e72a69ed175d073001422eb515fbd45",
       "pilotInputSha256": "4840dc2364e6db4a258acfa62aafa4c3f557f70f2d380dba1e1b30f01f21064c",
       "servings": 2,
-      "status": "NO_GK",
-      "priorEvidence": [],
+      "status": "PROPOSED_SINGLE",
+      "priorEvidence": [
+        {
+          "kind": "historical-conditional-point",
+          "path": "docs/research/gk80-international-20261102/manakish-study.md",
+          "approved": false
+        }
+      ],
       "level": null,
-      "ownerApproval": null,
+      "ownerApproval": false,
       "sourceQualified": null,
       "blockers": [
         "lahi-ita-manakish-zaatarilla: vehnäjauho: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved."
@@ -8457,7 +8505,7 @@
       "recipeSha256": "b0236a1129edff415f95fcfdcbe48f12f2f761ecaa7b2588b49a9c3ffb8be887",
       "pilotInputSha256": "86f3cd8d8e82b827ea7f50a85d79a9190fc93361209ccf41d960e33065bbbbab",
       "servings": 4,
-      "status": "NO_GK",
+      "status": "IN_PROGRESS",
       "priorEvidence": [],
       "level": null,
       "ownerApproval": null,
@@ -8576,7 +8624,8 @@
             "Individual sub-1 g contribution counted toward cumulative 2 g/serving editorial tolerance: Conservative available-carbohydrate bound 0.5 g per recipe; below 1 g per serving."
           ]
         }
-      ]
+      ],
+      "operation80Finding": "Lotus root edible mass and doubanjiang binding."
     },
     {
       "recipeId": "malesialainen-apam-balik",
@@ -11449,7 +11498,7 @@
       "recipeSha256": "6ef230c98eb7272242996be4d57e594d53e0727f25b4976594bc8e3a74d410f6",
       "pilotInputSha256": "da549b3ed90b9bce5a112e030ae3be4c142b2742d190a5b619917d8aabdc4666",
       "servings": 4,
-      "status": "NO_GK",
+      "status": "IN_PROGRESS",
       "priorEvidence": [],
       "level": null,
       "ownerApproval": null,
@@ -11519,7 +11568,8 @@
             "Source-documented zero available carbohydrate: Plain salt has zero available carbohydrate."
           ]
         }
-      ]
+      ],
+      "operation80Finding": "Coconut flour model and wrong cow-milk binding for almond milk."
     },
     {
       "recipeId": "pho-bo",
@@ -11969,7 +12019,7 @@
       "recipeSha256": "e9d16b10d288751693eea94779000da147e386c91d74c86f732b1f8fbe08e06d",
       "pilotInputSha256": "9e338508f9fb40ec71fa5c4ceceec329f6dd26d008a4c005b9f0fc37c9e8a187",
       "servings": 2,
-      "status": "NO_GK",
+      "status": "IN_PROGRESS",
       "priorEvidence": [],
       "level": null,
       "ownerApproval": null,
@@ -12039,7 +12089,8 @@
             "Source-documented zero available carbohydrate: Plain salt has zero available carbohydrate."
           ]
         }
-      ]
+      ],
+      "operation80Finding": "Thick pan-cooked semolina and dairy matrix GI."
     },
     {
       "recipeId": "pohjoisafrikkalainen-harissa-shakshuka",
@@ -13426,7 +13477,7 @@
       "recipeSha256": "6bff68e6655d144890de3bb776ae05490d47f80f77088b0f2429ecb72914058a",
       "pilotInputSha256": "99e30bc07dfa185625e39f661f5576297d9aa515156d349ee068d48168ce1a3f",
       "servings": 4,
-      "status": "NO_GK",
+      "status": "IN_PROGRESS",
       "priorEvidence": [],
       "level": null,
       "ownerApproval": null,
@@ -13460,7 +13511,8 @@
             "The recipe lists 100 g black sesame without a matching Fineli record; the carbohydrate contribution and GI cannot be sourced."
           ]
         }
-      ]
+      ],
+      "operation80Finding": "Cooked glutinous rice flour matrix, black sesame and served syrup."
     },
     {
       "recipeId": "taytetyt-paprikat-vhh",
@@ -14593,7 +14645,7 @@
       "recipeSha256": "c9c0fa28820ada9ec13566a81e281a81d785c5632b3de6741b2823720021dd77",
       "pilotInputSha256": "7d1d0626e26ac4d9250bc881560283fe1ab9e9aea62b2d72cbb2b5f04d338534",
       "servings": 4,
-      "status": "NO_GK",
+      "status": "IN_PROGRESS",
       "priorEvidence": [],
       "level": null,
       "ownerApproval": null,
@@ -14627,7 +14679,8 @@
             "GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
           ]
         }
-      ]
+      ],
+      "operation80Finding": "Fried coating GI, batter retention and chutney."
     },
     {
       "recipeId": "valimerellinen-appelsiini-aamiaiskakku",
@@ -15062,10 +15115,16 @@
       "recipeSha256": "8b5071d4c6b08847a0855b630b34ee55471ed00cf6f61b9687e25f56f3ec96a9",
       "pilotInputSha256": "2dff51626e684a66e46b355bd50044d042e80dfbecf598c7f223bbd887abced8",
       "servings": 8,
-      "status": "NO_GK",
-      "priorEvidence": [],
+      "status": "PROPOSED_SINGLE",
+      "priorEvidence": [
+        {
+          "kind": "historical-conditional-point",
+          "path": "docs/research/gk80-international-20261102/pickerd-almond-two.md",
+          "approved": false
+        }
+      ],
       "level": null,
-      "ownerApproval": null,
+      "ownerApproval": false,
       "sourceQualified": null,
       "blockers": [
         "vhh-lihapiirakka: mantelijauhoa: AJO 1.7: bakery GI 58 is a finished-product category mean, not almond meal. No preparation-matched primary human GI was found. AFCD F006077 is full-fat almond meal (CHOAVL without polyols 5.4 g/100 g), not defatted flour or almond bread. Missing GI is not zero."
@@ -15226,10 +15285,16 @@
       "recipeSha256": "e579594baf3d71bd324b1051ab7df2ab2da81c17412ad1ea3d75637d4e5f1cc3",
       "pilotInputSha256": "011ccd392fd463469590cb7543bf1a646cd46d5cb71019a01a1c2a0d9bc4e562",
       "servings": 6,
-      "status": "NO_GK",
-      "priorEvidence": [],
+      "status": "PROPOSED_SINGLE",
+      "priorEvidence": [
+        {
+          "kind": "historical-conditional-point",
+          "path": "docs/research/gk80-international-20261102/runeberg-almond.md",
+          "approved": false
+        }
+      ],
       "level": null,
-      "ownerApproval": null,
+      "ownerApproval": false,
       "sourceQualified": null,
       "blockers": [
         "vhh-runebergintortut: mantelijauhoa: Bakery-products category mean is not a demonstrated match for almond meal; remove the unsupported GI proxy."
