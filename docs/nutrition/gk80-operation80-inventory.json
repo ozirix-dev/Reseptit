@@ -2,11 +2,11 @@
   "schemaVersion": 1,
   "main": "4d6f19a620bb95e771c12f499554bf2cf1f06e51",
   "coverage": {
-    "PROPOSED_RANGE": 14,
+    "PROPOSED_RANGE": 15,
     "PUBLISHED_SINGLE": 197,
     "PROPOSED_SINGLE": 12,
-    "IN_PROGRESS": 21,
-    "NO_GK": 72,
+    "IN_PROGRESS": 23,
+    "NO_GK": 69,
     "PUBLISHED_RANGE": 10
   },
   "reviewedPrHeads": {
@@ -25,18 +25,15 @@
     "160": "64f2c14ee3b158fbeff6719278ffaa5f436aec4f"
   },
   "queue": [
-    "chole-bhature",
     "indonesialainen-bubur-sumsum",
     "indonesialainen-nasi-goreng-aamiaisriisi",
     "indonesialainen-pisang-goreng-aamiaiseksi",
     "intialainen-idli-kookoschutneylla",
     "japanilainen-curry-tofulla",
-    "karibia-ackee-ja-suolakala",
     "karibia-saltfish-fritterit",
     "khao-soi-vhh-konjac",
     "kiinalainen-bao-munalla",
     "korealainen-bataatti-riisikulho",
-    "korealainen-kimchi-jeon-aamiaiseksi",
     "kreikkalainen-moussaka",
     "maksalaatikko-kukkakaalilla",
     "malesialainen-apam-balik",
@@ -113,13 +110,15 @@
     "vada-pav",
     "malesialainen-kookos-banaanikulho",
     "mapo-tofu",
-    "nasi-lemak",
     "valimerellinen-appelsiini-aamiaiskakku",
     "indonesialainen-bakwan-maissifritter",
     "intialainen-rava-uttapam",
-    "kiinalainen-jianbing-munaletty"
+    "kiinalainen-jianbing-munaletty",
+    "chole-bhature",
+    "karibia-ackee-ja-suolakala",
+    "nasi-lemak"
   ],
-  "nextRecipeId": "chole-bhature",
+  "nextRecipeId": "indonesialainen-bubur-sumsum",
   "recipes": [
     {
       "recipeId": "aloo-paratha",
@@ -981,7 +980,7 @@
       "recipeSha256": "29c490de9e1124ef0734c20e13a3ca124c869b02de985766cba278bfa015ccd8",
       "pilotInputSha256": "d9c12b5362ddabba242c697ff2bcd5752f76da3b78cd6aab4e1032cfe674617e",
       "servings": 4,
-      "status": "NO_GK",
+      "status": "IN_PROGRESS",
       "priorEvidence": [],
       "level": null,
       "ownerApproval": null,
@@ -1033,7 +1032,8 @@
             "AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved."
           ]
         }
-      ]
+      ],
+      "operation80Finding": "Fried yogurt dough GI plus cooked tomato and weighed spice bindings."
     },
     {
       "recipeId": "chow-mein",
@@ -4760,7 +4760,7 @@
       "recipeSha256": "57565170269e72af8dba35c959f83d8d64a9f16886a0a0a3b0f395ed66459183",
       "pilotInputSha256": "f7cc6e9d5cca63b08e91deb9475c4b9342b4df8b4a4d15007239edd1c18e08ec",
       "servings": 2,
-      "status": "NO_GK",
+      "status": "IN_PROGRESS",
       "priorEvidence": [],
       "level": null,
       "ownerApproval": null,
@@ -4848,7 +4848,8 @@
             "Source-documented zero available carbohydrate: Plain salt has zero available carbohydrate."
           ]
         }
-      ]
+      ],
+      "operation80Finding": "Named canned ackee identified; verify drained CHO basis and weighed fish and ackee."
     },
     {
       "recipeId": "karibia-bammy-kassavaleipa",
@@ -7225,10 +7226,10 @@
       "recipeSha256": "b7187bbba5e0e8f9632fd3e3885ddd2dd8716c27e93912836bf92eeea9fff3ef",
       "pilotInputSha256": "9d2c7ed54701348b6f581417dc76f7cf0a91e1bdeef2af7503d9fc217ec36160",
       "servings": 2,
-      "status": "NO_GK",
+      "status": "PROPOSED_RANGE",
       "priorEvidence": [],
-      "level": null,
-      "ownerApproval": null,
+      "level": "B",
+      "ownerApproval": false,
       "sourceQualified": null,
       "blockers": [
         "korealainen-kimchi-jeon-aamiaiseksi: kimchi: No source-matched composition and preparation was resolved for “kimchi”; it is not treated as zero.",
@@ -7325,7 +7326,45 @@
             "Source-documented zero available carbohydrate: Plain salt has zero available carbohydrate."
           ]
         }
-      ]
+      ],
+      "operation80Proposal": {
+        "evidencePath": "docs/nutrition/gk80-operation80-batch-05.md",
+        "baselineRecipeSha256": "b7187bbba5e0e8f9632fd3e3885ddd2dd8716c27e93912836bf92eeea9fff3ef",
+        "inputFields": [
+          "gramsBatch",
+          "choPer100g"
+        ],
+        "matrixInputs": [
+          [
+            100,
+            74
+          ],
+          [
+            150,
+            1.1
+          ],
+          [
+            110,
+            0.3
+          ],
+          [
+            20,
+            4.74
+          ]
+        ],
+        "choPerServing": "38.464",
+        "scenarios": [
+          {
+            "giGlucoseScale": "57",
+            "gkPerServing": "21.92448"
+          },
+          {
+            "giGlucoseScale": "61.8",
+            "gkPerServing": "23.770752"
+          }
+        ],
+        "publicationAuthorized": false
+      }
     },
     {
       "recipeId": "korealainen-kongjuk-soijapapu-riisipuuro",
@@ -10814,7 +10853,7 @@
           ]
         }
       ],
-      "operation80Finding": "Inproba composition verified; match coconut-rice human comparator and bind side portions."
+      "operation80Finding": "Whole dish human GI 66 comparator identified; bind all recipe carbohydrate rows."
     },
     {
       "recipeId": "okonomiyaki-kaaliletut",
