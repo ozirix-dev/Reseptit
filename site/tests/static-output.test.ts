@@ -483,6 +483,10 @@ test('modeled captions disclose omissions in every locale and retain omission-fr
 });
 
 test('approved GK-only versions are explicit on every existing locale page and coverage counts205 distinct recipes',async()=>{
+ const localizedRecipeIds = ['indialainen-poha-maapahkinoilla', 'hunaja-sinappikana-kaalilla'];
+ for (const id of localizedRecipeIds) {
+   assert.deepEqual(siteContent.recipes.filter(recipe => recipe.recipeId === id).map(recipe => recipe.locale).sort(), ['en', 'fi', 'sv', 'th'], id);
+ }
  let pages=0;
  for(const variant of gkOnlyVariants){
   for(const recipe of siteContent.recipes.filter(r=>r.recipeId===variant.recipeId)){
@@ -492,13 +496,11 @@ test('approved GK-only versions are explicit on every existing locale page and c
    assert.ok(!html.includes('class="recipe-glycemic-load"'),'original unsupported version is not relabeled');
    if(variant.scenarioRange)assert.ok(html.includes(t.range));if(variant.sensitivity)assert.ok(html.includes(t.sensitivityNote));
    const addedEnglishPage = recipe.locale === "en" && ["keto-mutakakku", "keto-suklaakeksit"].includes(recipe.recipeId);
-   if (!addedEnglishPage) pages++;
+   const addedPohaHoneyPage = recipe.locale !== "fi" && localizedRecipeIds.includes(recipe.recipeId);
+   if (!addedEnglishPage && !addedPohaHoneyPage) pages++;
   }
  }
- for (const id of ['indialainen-poha-maapahkinoilla', 'hunaja-sinappikana-kaalilla']) {
-   assert.deepEqual(siteContent.recipes.filter(recipe => recipe.recipeId === id).map(recipe => recipe.locale).sort(), ['en', 'fi', 'sv', 'th'], id);
- }
- assert.equal(pages,105+siteContent.recipes.filter(r=>r.recipeId==='lindstrominpihvit-kaalilla').length);
+ assert.equal(pages,99+siteContent.recipes.filter(r=>r.recipeId==='lindstrominpihvit-kaalilla').length);
  for(const p of ['glykeeminen-kuorma','en/glycemic-load','sv/glykemisk-belastning','th/glycemic-load']){
   const html=await readFile(path.join(dist,p,'index.html'),'utf8');assert.ok(html.includes('<strong>205</strong>'));assert.ok(html.includes('<strong>121</strong>'));assert.ok(html.includes('data-gk-coverage="version-aware"'));assert.ok(html.includes('data-gk-coverage="original"'));assert.ok(html.includes('<strong>156</strong>'));assert.ok(html.includes('<strong>170</strong>'));
   for(const v of gkOnlyVariants)assert.ok(html.includes(`data-gk-version="${v.versionId}"`));
