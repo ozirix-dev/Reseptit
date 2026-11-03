@@ -29,8 +29,8 @@ test('the four A inputs and legacy variants remain intact as four approved B ver
  for(const previous of baseline.legacyVariants){const v=old.find(v=>v.recipeId===previous.recipeId)!;assert.equal(digest(v),previous.variantSha256,previous.recipeId);}
  const report=read('tmp/nutrition/glycemic-load-pilot.json');
  assert.deepEqual(report.gkOnlyVariants,gkOnlyVariants);assert.deepEqual(report.versionCoverage,gkVersionCoverage);
- assert.equal(gkVersionCoverage.numericRecipes,198);assert.equal(gkVersionCoverage.originalNumeric,156);assert.equal(gkVersionCoverage.additionalA,32);assert.equal(gkVersionCoverage.additionalB,10);assert.equal(gkVersionCoverage.total,326);assert.equal(gkVersionCoverage.missing,128);
- assert.deepEqual(report.coverageViews,{originalRecipe:{total:326,numeric:156,missing:170},atLeastOneExactVersion:{total:326,numeric:198,missing:128,additionalApprovedVersions:42}});
+ assert.equal(gkVersionCoverage.numericRecipes,202);assert.equal(gkVersionCoverage.originalNumeric,156);assert.equal(gkVersionCoverage.additionalA,36);assert.equal(gkVersionCoverage.additionalB,10);assert.equal(gkVersionCoverage.total,326);assert.equal(gkVersionCoverage.missing,124);
+ assert.deepEqual(report.coverageViews,{originalRecipe:{total:326,numeric:156,missing:170},atLeastOneExactVersion:{total:326,numeric:202,missing:128,additionalApprovedVersions:46}});
  assert.throws(()=>countGkVersions(report.results,[...gkOnlyVariants,four[0]]),/distinct/);
  for(const id of ['jerk-kana','sate-ayam'])assert.ok(!gkOnlyVariants.some(v=>v.recipeId===id));
 });
@@ -198,4 +198,19 @@ test('Lindström brine is an independent preparation with scaled, fully included
     assert.ok(html.includes(variant.preparation[locale]));
     assert.ok(!html.includes(gkOnlyUi[locale].prepare));
   }
+});
+
+test('the four reviewed GK-only versions retain their points and native liquid units', () => {
+ const versions = gkOnlyVariants.slice(-4);
+ assert.deepEqual(versions.map(v => [v.recipeId, v.point]), [
+  ['siemengranola-jogurtilla', 2.47],
+  ['lahi-ita-pistaasijogurtti', 4.37],
+  ['korealainen-kongjuk-soijapapu-riisipuuro', 29.09],
+  ['falafel', 9.86],
+ ]);
+ assert.deepEqual(gkOnlyQuantity(versions[1], 2, 4), {amount: 10, unit: 'ml'});
+ assert.match(gkOnlyPreparation(versions[1], 'fi', 4), /10 ml Steenbergs/);
+ assert.deepEqual(gkOnlyQuantity(versions[2], 4), {amount: 700, unit: 'ml'});
+ assert.deepEqual(gkOnlyQuantity(versions[3], 12), {amount: 100, unit: 'ml'});
+ assert.ok(Math.abs(versions[3].omittedCho - 1.9570875) < 1e-10);
 });
