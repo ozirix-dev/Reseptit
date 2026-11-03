@@ -165,6 +165,31 @@ const legacyResults = rawResults.map((result) => {
 const results = await applyScopedPolyolC(root, await applyRecovery(root, await withdrawQ09Tea(root, await applyGk80Release(root, legacyResults))));
 const gkOnlyVariants = [...buildGkOnlyVariants(root),...buildApprovedSevenVariants(root),...buildApprovedFourVariants(root),...buildApprovedBVariants(root),...buildProductAVariants(root),...buildPanangKimchiVariants(root),buildBlueberryPieVariant(root),...buildThreeCurryVariants(root),buildLindstromBrineVariant(root),...buildReviewedGkVariants(root),...buildPohaHoneyMustardVariants(root),...buildTehoajoVariants(root),...buildTwoAlmondPieVariants(root)];
 const versionCoverage = countGkVersions(results,gkOnlyVariants);
+if (process.argv.includes('--operation80-release-check')) {
+  const { buildFarinataReviewVariant, buildLabnehReviewVariant } = await import('./gk-farinata-review');
+  const review = await readFile(path.join(root, 'docs/nutrition/gk80-operation80-first-release-review.md'), 'utf8');
+  const firstBatch = [...review.matchAll(/^\| `([a-z0-9-]+)` \|/gm)].map(match => match[1]);
+  const firstBatchIds = new Set(firstBatch);
+  const published = new Set(versionCoverage.numericRecipeIds);
+  const available = new Set(results.map(result => result.recipeId));
+  if (firstBatchIds.size !== 30 || firstBatch.length !== 30
+      || firstBatch.some(id => published.has(id) || !available.has(id))) {
+    throw new Error('Operation80 first batch must contain 30 distinct unpublished recipe IDs');
+  }
+  const prepared = [buildFarinataReviewVariant(root), buildLabnehReviewVariant(root)];
+  if (prepared.some(variant => !firstBatchIds.has(variant.recipeId))) {
+    throw new Error('Operation80 preview contains a recipe outside the first batch');
+  }
+  const preview = countGkVersions(results, [...gkOnlyVariants, ...prepared]);
+  const added = preview.numericRecipeIds.filter(id => !published.has(id));
+  if (added.length !== prepared.length) throw new Error('Operation80 preview coverage mismatch');
+  console.log(JSON.stringify({
+    published: { numeric: versionCoverage.numericRecipes, total: versionCoverage.total },
+    firstBatchPotential: versionCoverage.numericRecipes + firstBatch.length,
+    preview: { numeric: preview.numericRecipes, added },
+  }, null, 2));
+  process.exit(0);
+}
 const report = {
   generatedAt: new Date().toISOString(),
   scope: "Internal provenance report for ingredient-based per-serving estimates. These are not measurements of prepared meals or individual glucose responses.",
