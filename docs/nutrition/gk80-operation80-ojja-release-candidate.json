@@ -1,0 +1,226 @@
+{
+  "recipeId": "tunisialainen-ojja",
+  "servings": 4,
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "unroundedGk": "12.4821625",
+  "inputs": [
+    [
+      160,
+      43.9,
+      54
+    ],
+    [
+      100,
+      4.8,
+      40
+    ],
+    [
+      150,
+      4.5,
+      40
+    ],
+    [
+      6,
+      10.2,
+      40
+    ],
+    [
+      400,
+      3.9,
+      40
+    ],
+    [
+      2,
+      33.7,
+      50
+    ],
+    [
+      220,
+      0.3,
+      50
+    ],
+    [
+      15,
+      3.03,
+      50
+    ]
+  ],
+  "omissions": [
+    {
+      "ingredientIndex": 8,
+      "choPer100g": 6.6
+    }
+  ],
+  "ingredients": [
+    {
+      "name": {
+        "fi": "Bertinet-hapanjuurileipä",
+        "en": "Bertinet White Sourdough Loaf",
+        "sv": "Bertinet vitt surdegsbröd",
+        "th": "ขนมปังซาวร์โดว์ Bertinet"
+      },
+      "grams": 160
+    },
+    {
+      "name": {
+        "fi": "Keltasipuli",
+        "en": "Yellow onion",
+        "sv": "Gul lök",
+        "th": "หัวหอมเหลือง"
+      },
+      "grams": 100
+    },
+    {
+      "name": {
+        "fi": "Punainen paprika",
+        "en": "Red bell pepper",
+        "sv": "Röd paprika",
+        "th": "พริกหวานแดง"
+      },
+      "grams": 150
+    },
+    {
+      "name": {
+        "fi": "Valkosipuli",
+        "en": "Garlic",
+        "sv": "Vitlök",
+        "th": "กระเทียม"
+      },
+      "grams": 6
+    },
+    {
+      "name": {
+        "fi": "Mutti Polpa",
+        "en": "Mutti Polpa",
+        "sv": "Mutti Polpa",
+        "th": "มะเขือเทศ Mutti Polpa"
+      },
+      "grams": 400
+    },
+    {
+      "name": {
+        "fi": "Juustokumina",
+        "en": "Cumin",
+        "sv": "Spiskummin",
+        "th": "ยี่หร่า"
+      },
+      "grams": 2
+    },
+    {
+      "name": {
+        "fi": "Kuoreton kananmuna",
+        "en": "Shelled egg",
+        "sv": "Ägg utan skal",
+        "th": "ไข่ไม่รวมเปลือก"
+      },
+      "grams": 220
+    },
+    {
+      "name": {
+        "fi": "Persilja",
+        "en": "Parsley",
+        "sv": "Persilja",
+        "th": "พาร์สลีย์"
+      },
+      "grams": 15
+    },
+    {
+      "name": {
+        "fi": "Le Phare du Cap Bon -harissa",
+        "en": "Le Phare du Cap Bon harissa",
+        "sv": "Le Phare du Cap Bon harissa",
+        "th": "ฮาริสซา Le Phare du Cap Bon"
+      },
+      "grams": 5
+    },
+    {
+      "name": {
+        "fi": "Oliiviöljy",
+        "en": "Olive oil",
+        "sv": "Olivolja",
+        "th": "น้ำมันมะกอก"
+      },
+      "grams": null,
+      "quantity": {
+        "amount": 1,
+        "unit": "tbsp"
+      }
+    },
+    {
+      "name": {
+        "fi": "Suola",
+        "en": "Salt",
+        "sv": "Salt",
+        "th": "เกลือ"
+      },
+      "grams": null
+    }
+  ],
+  "preparation": {
+    "fi": "Kuullota {{amount:1}} g sipulia ja {{amount:2}} g paprikaa {{amount:9}} rkl:ssa öljyä. Lisää {{amount:3}} g valkosipulia, {{amount:5}} g juustokuminaa ja {{amount:8}} g harissaa. Lisää {{amount:4}} g tomaattimurskaa ja suola. Hauduta sakeaksi ja kypsennä {{amount:6}} g kananmunaa kastikkeessa kannen alla, kunnes valkuaiset hyytyvät. Lisää {{amount:7}} g persiljaa ja jaa pannu sekä {{amount:0}} g leipää {{servings}} annokseen.",
+    "en": "Soften {{amount:1}} g onion and {{amount:2}} g pepper in {{amount:9}} tbsp oil. Add {{amount:3}} g garlic, {{amount:5}} g cumin and {{amount:8}} g harissa. Add {{amount:4}} g crushed tomato and salt. Simmer until thick, then cover and cook {{amount:6}} g egg in the sauce until the whites set. Finish with {{amount:7}} g parsley and divide the pan and {{amount:0}} g bread into {{servings}} servings.",
+    "sv": "Fräs {{amount:1}} g lök och {{amount:2}} g paprika i {{amount:9}} msk olja. Tillsätt {{amount:3}} g vitlök, {{amount:5}} g spiskummin och {{amount:8}} g harissa. Tillsätt {{amount:4}} g krossade tomater och salt. Sjud tills såsen tjocknar och tillaga {{amount:6}} g ägg under lock tills vitorna stelnar. Toppa med {{amount:7}} g persilja och dela grytan och {{amount:0}} g bröd i {{servings}} portioner.",
+    "th": "ผัดหัวหอม {{amount:1}} กรัมและพริกหวาน {{amount:2}} กรัมในน้ำมัน {{amount:9}} ช้อนโต๊ะ ใส่กระเทียม {{amount:3}} กรัม ยี่หร่า {{amount:5}} กรัม และฮาริสซา {{amount:8}} กรัม เติมมะเขือเทศบด {{amount:4}} กรัมและเกลือ เคี่ยวจนข้น ใส่ไข่ {{amount:6}} กรัม ปิดฝาและปรุงจนไข่ขาวเซตตัว โรยพาร์สลีย์ {{amount:7}} กรัม แบ่งอาหารและขนมปัง {{amount:0}} กรัมเป็น {{servings}} ที่"
+  },
+  "limitation": {
+    "fi": "Leivälle käytetään vehnähapanjuurileivän GI-verrokkia ja kastikkeen aineksille laskentakoodeja. Harissan 0,0825 g hiilihydraattia annosta kohti jää laskelman ulkopuolelle.",
+    "en": "Bread uses a wheat sourdough GI comparator and sauce ingredients use assigned codes. Harissa contributes 0.0825 g excluded carbohydrate per serving.",
+    "sv": "Brödet jämförs med vetesurdegsbröd och såsingredienserna får tilldelade GI-koder. Harissans 0,0825 g kolhydrat per portion ingår inte.",
+    "th": "ขนมปังใช้ค่า GI อ้างอิงจากซาวร์โดว์ข้าวสาลี ส่วนผสมในซอสใช้รหัสตามกลุ่ม ไม่รวมคาร์โบไฮเดรตจากฮาริสซา 0.0825 กรัมต่อที่"
+  },
+  "sources": [
+    {
+      "title": "Sydney GI database",
+      "url": "https://glycemicindex.com/gi-search/",
+      "kind": "HUMAN_GI",
+      "note": "Wheat sourdough comparator, GI 54."
+    },
+    {
+      "title": "Bertinet",
+      "url": "https://bertinetbakery.com/product/bertinet-bakery-white-sourdough-loaf-500g/",
+      "kind": "CARBOHYDRATE",
+      "note": "43.9 g per 100 g."
+    },
+    {
+      "title": "Mutti",
+      "url": "https://mutti-parma.com/en/products/polpa/",
+      "kind": "CARBOHYDRATE",
+      "note": "3.9 g per 100 g."
+    },
+    {
+      "title": "Fineli",
+      "url": "https://fineli.fi/fineli/fi/ohje/19",
+      "kind": "CARBOHYDRATE",
+      "note": "THL CC BY 4.0."
+    },
+    {
+      "title": "AFCD",
+      "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd",
+      "kind": "CARBOHYDRATE",
+      "note": "CC BY-SA 3.0 Australia."
+    },
+    {
+      "title": "USDA SR Legacy parsley",
+      "url": "https://fdc.nal.usda.gov/",
+      "kind": "CARBOHYDRATE",
+      "note": "Total carbohydrate minus fibre."
+    },
+    {
+      "title": "Harissa product sheet",
+      "url": "https://www.cibus-gastronomie.ch/web/content/58444?access_token=8ff038ba-a503-42c7-b75f-c5b1ca951b27&download=true&unique=99320e2e798d1387d9b4843144a0db502ce6f189",
+      "kind": "CARBOHYDRATE",
+      "note": "6.6 g per 100 g."
+    },
+    {
+      "title": "GI coding",
+      "url": "https://doi.org/10.2337/dc08-1239",
+      "kind": "PUBLISHED_CODING",
+      "note": "Vegetable and seasoning codes."
+    }
+  ],
+  "boundFiles": {
+    "reseptit/paaruoat/tunisialainen-ojja.md": "7d9a80b28b84a9dbd8308e9f4a49d6ec240681259c6cd1bd35480c7e475fa5b8",
+    "docs/nutrition/gk80-operation80-batch-55.md": "205c26606cf89e05f8f58d76a0ff38784cab765d3221caa071db30f971b3123d"
+  }
+}
