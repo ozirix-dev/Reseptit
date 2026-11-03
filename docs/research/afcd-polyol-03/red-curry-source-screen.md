@@ -27,3 +27,11 @@ Kahdesta tölkin takaosan kuvasta luettiin 225 g nettopaino, 120 g valutettu pai
 [Pakkauskuva 1](https://supercostablanca.es/1547-home_default/kingfisher-sliced-bamboo-shoots-225g.jpg) · [Pakkauskuva 2](https://iseforestandgarden.com/cdn/shop/products/519gQVS1RjL_1200x1200.jpg?v=1632536072) · [Tescon massapohjainen tuotetieto](https://www.tesco.com/shop/en-GB/products/265819146)
 
 Pakkauskohtaisen syötteen nimellinen poisjättö on 1,7655 g/annos. Seuraavat portit ovat koko reseptin moottoritoisto ja tarkan sisältöversion katselmointi.
+
+## Kananmunat kookoscurryssa, raaka tomaatti
+
+Kahden annoksen tutkimusversio säilyttää 100 g kuivaa pitkäjyväistä riisiä, kaksi munaa sekä alkuperäisen öljyn ja suolan. Keitä riisi ja munat. Hauduta kastike 200 grammasta punnittua Fairtrade Original 1 L -kookosmaitoa ja 20 grammasta Valcom Red 210 g -tahnaa. Tarjoa koko kastike ja 125 g syötävää raakaa tomaattia erikseen. Punnittu kookosmaito, tahnan vaihto ja tomaatin tarjoilutapa ovat sisältömuutoksia.
+
+Riisin 37 g CHO/annos × GI 67 / 100 antaa 24,79 GK. Raaka tomaatti 2,15625 g CHO/annos × GI 22 / 100 antaa 0,474375 GK. Yhteensä 25,264375. Poisjätöt ovat kookosmaito 0,8 g, tahna 0,19 g ja muna 0,165 g eli 1,155 g/annos. Kumpikin tuoteilmoitus on nimellinen. Riisin GI on ryhmäviite. Tomaatin GI-viite koskee raakaa tomaattia. Ehdotus tarvitsee lähde- ja sisältökatselmoinnin sekä varsinaisen moottoriajon ennen integraatiota.
+
+[Alkuperäinen laskentasyöte](../../nutrition/calculations/thai-kananmunat-kookoscurryssa.json) · [Tuotesyöte](red-curry-a-route/cases.json) · [GI-katalogi](../../../site/scripts/gk80-food-catalog.json)
