@@ -1,0 +1,242 @@
+{
+  "recipeId": "rendang-padang",
+  "servings": 6,
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "unroundedGk": "34.28053333333333",
+  "upperScenario": {
+    "giOverrides": [
+      {
+        "inputIndex": 7,
+        "gi": 90
+      }
+    ],
+    "unroundedGk": "37.44053333333333"
+  },
+  "omissions": [
+    {
+      "ingredientIndex": 8,
+      "choPer100g": 7.301
+    },
+    {
+      "ingredientIndex": 9,
+      "choPer100g": 25.31
+    },
+    {
+      "ingredientIndex": 10,
+      "choPer100g": 100
+    }
+  ],
+  "preparation": {
+    "fi": "Hienonna {{amount:2}} g salottisipulia, {{amount:3}} g valkosipulia, {{amount:4}} g inkivääriä, {{amount:5}} g chiliä ja {{amount:6}} g kurkumaa tahnaksi. Kuumenna tahna, {{amount:1}} g kookosmaitoa, {{amount:9}} g kokonaisia sitruunaruohon varsia ja {{amount:10}} g makrutlimetinlehtiä. Lisää {{amount:0}} g naudanlapaa ja suola. Hauduta ilman kantta miedolla lämmöllä 3–4 tuntia, kunnes liha on mureaa ja kastike sakeaa. Poista varret ja lehdet. Lisää {{amount:8}} g paahdettua kookosta. Keitä {{amount:7}} g kuivaa jasmiiniriisiä erikseen ja jaa koko lämmin riisi ja rendang {{servings}} annokseen.",
+    "en": "Blend {{amount:2}} g shallot, {{amount:3}} g garlic, {{amount:4}} g ginger, {{amount:5}} g chilli and {{amount:6}} g turmeric into a paste. Heat with {{amount:1}} g coconut milk, {{amount:9}} g whole lemongrass stalks and {{amount:10}} g makrut lime leaves. Add {{amount:0}} g beef shoulder and salt. Simmer uncovered on low heat for 3–4 hours until tender and reduced. Remove the stalks and leaves. Stir in {{amount:8}} g toasted coconut. Cook {{amount:7}} g dry jasmine rice separately and divide all the warm rice and rendang into {{servings}} servings.",
+    "sv": "Mixa {{amount:2}} g schalottenlök, {{amount:3}} g vitlök, {{amount:4}} g ingefära, {{amount:5}} g chili och {{amount:6}} g gurkmeja till en pasta. Värm med {{amount:1}} g kokosmjölk, {{amount:9}} g hela citrongrässtjälkar och {{amount:10}} g makrutlimeblad. Tillsätt {{amount:0}} g nötbog och salt. Sjud utan lock på låg värme i 3–4 timmar tills köttet är mört och såsen har kokat ihop. Ta bort stjälkar och blad. Rör i {{amount:8}} g rostad kokos. Koka {{amount:7}} g torrt jasminris separat och fördela allt varmt ris och rendang på {{servings}} portioner.",
+    "th": "บดหอมแดง {{amount:2}} กรัม กระเทียม {{amount:3}} กรัม ขิง {{amount:4}} กรัม พริก {{amount:5}} กรัม และขมิ้น {{amount:6}} กรัมให้เป็นเครื่องแกง ตั้งไฟพร้อมกะทิ {{amount:1}} กรัม ตะไคร้ทั้งต้น {{amount:9}} กรัม และใบมะกรูด {{amount:10}} กรัม ใส่เนื้อวัวส่วนไหล่ {{amount:0}} กรัมและเกลือ เคี่ยวไฟอ่อนโดยไม่ปิดฝา 3–4 ชั่วโมงจนเนื้อนุ่มและซอสข้น ตักตะไคร้และใบมะกรูดออก ใส่มะพร้าวคั่ว {{amount:8}} กรัม หุงข้าวหอมมะลิแห้ง {{amount:7}} กรัมแยก แล้วแบ่งข้าวอุ่นและเรินดังทั้งหมดเป็น {{servings}} ที่"
+  },
+  "limitation": {
+    "fi": "Vaihteluväli perustuu kahteen jasmiiniriisin GI-mittaukseen. Kastikkeen osalle aineksista käytetään laskennallisia GI-koodeja. Kookoshiutaleiden ja poistettavien mausteiden pienet osuudet jäävät GK-summan ulkopuolelle.",
+    "en": "The range uses two jasmine rice GI measurements. Some sauce ingredients use assigned GI codes. Small contributions from coconut flakes and removed aromatics are excluded.",
+    "sv": "Intervallet bygger på två GI-mätningar för jasminris. Vissa såsingredienser får tilldelade GI-koder. Små bidrag från kokosflingor och borttagna kryddor ingår inte.",
+    "th": "ช่วงนี้อ้างอิงค่า GI ที่วัดจากข้าวหอมมะลิสองค่า ส่วนผสมบางอย่างในซอสใช้รหัส GI ตามกลุ่ม การคำนวณไม่รวมคาร์โบไฮเดรตปริมาณเล็กน้อยจากมะพร้าวคั่วและเครื่องเทศที่ตักออก"
+  },
+  "ingredients": [
+    {
+      "name": {
+        "fi": "Naudanlapa",
+        "en": "Beef shoulder",
+        "sv": "Nötbog",
+        "th": "เนื้อวัวส่วนไหล่"
+      },
+      "grams": 900
+    },
+    {
+      "name": {
+        "fi": "Täysrasvainen kookosmaito",
+        "en": "Full-fat coconut milk",
+        "sv": "Kokosmjölk med full fetthalt",
+        "th": "กะทิเต็มไขมัน"
+      },
+      "grams": 800
+    },
+    {
+      "name": {
+        "fi": "Salottisipuli",
+        "en": "Shallot",
+        "sv": "Schalottenlök",
+        "th": "หอมแดง"
+      },
+      "grams": 150
+    },
+    {
+      "name": {
+        "fi": "Valkosipuli",
+        "en": "Garlic",
+        "sv": "Vitlök",
+        "th": "กระเทียม"
+      },
+      "grams": 15
+    },
+    {
+      "name": {
+        "fi": "Inkivääri",
+        "en": "Ginger",
+        "sv": "Ingefära",
+        "th": "ขิง"
+      },
+      "grams": 55
+    },
+    {
+      "name": {
+        "fi": "Punainen chili",
+        "en": "Red chilli",
+        "sv": "Röd chili",
+        "th": "พริกแดง"
+      },
+      "grams": 16
+    },
+    {
+      "name": {
+        "fi": "Jauhettu kurkuma",
+        "en": "Ground turmeric",
+        "sv": "Malen gurkmeja",
+        "th": "ขมิ้นผง"
+      },
+      "grams": 2
+    },
+    {
+      "name": {
+        "fi": "Kuiva jasmiiniriisi",
+        "en": "Dry jasmine rice",
+        "sv": "Torrt jasminris",
+        "th": "ข้าวหอมมะลิแห้ง"
+      },
+      "grams": 300
+    },
+    {
+      "name": {
+        "fi": "Paahdettu makeuttamaton kookoshiutale",
+        "en": "Toasted unsweetened coconut flakes",
+        "sv": "Rostade osötade kokosflingor",
+        "th": "มะพร้าวคั่วไม่เติมน้ำตาล"
+      },
+      "grams": 50
+    },
+    {
+      "name": {
+        "fi": "Kokonainen sitruunaruoho",
+        "en": "Whole lemongrass stalks",
+        "sv": "Hela citrongrässtjälkar",
+        "th": "ตะไคร้ทั้งต้น"
+      },
+      "grams": 20
+    },
+    {
+      "name": {
+        "fi": "Makrutlimetinlehti",
+        "en": "Makrut lime leaves",
+        "sv": "Makrutlimeblad",
+        "th": "ใบมะกรูด"
+      },
+      "grams": 2
+    },
+    {
+      "name": {
+        "fi": "Suola",
+        "en": "Salt",
+        "sv": "Salt",
+        "th": "เกลือ"
+      },
+      "grams": null
+    }
+  ],
+  "sources": [
+    {
+      "title": "Jenkins et al., jasmine rice",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2996336/",
+      "kind": "HUMAN_GI",
+      "note": "GI 82 on the glucose scale after conversion."
+    },
+    {
+      "title": "Tan et al., Thai Hom Mali jasmine rice",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25789978/",
+      "kind": "HUMAN_GI",
+      "note": "GI 90 in the Indian ethnicity subgroup."
+    },
+    {
+      "title": "Fineli 719 and 11521",
+      "url": "https://fineli.fi/fineli/fi/ohje/19",
+      "kind": "CARBOHYDRATE",
+      "note": "CC BY 4.0."
+    },
+    {
+      "title": "AFCD",
+      "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd",
+      "kind": "CARBOHYDRATE",
+      "note": "CC BY-SA 3.0 Australia."
+    },
+    {
+      "title": "USDA 168573",
+      "url": "https://fdc.nal.usda.gov/food-details/168573/nutrients",
+      "kind": "BOUND",
+      "note": "25.31 g total CHO per 100 g lemongrass, assumes full extraction. Lime leaves are bounded by their full mass."
+    },
+    {
+      "title": "GI coding method",
+      "url": "https://doi.org/10.2337/dc08-1239",
+      "kind": "PUBLISHED_CODING",
+      "note": "Vegetable and spice codes."
+    },
+    {
+      "title": "Low-carbohydrate food coding",
+      "url": "https://doi.org/10.1016/j.jfca.2007.02.004",
+      "kind": "PUBLISHED_CODING",
+      "note": "Coconut milk code."
+    }
+  ],
+  "inputs": [
+    [
+      900,
+      0,
+      0
+    ],
+    [
+      800,
+      1.7,
+      50
+    ],
+    [
+      150,
+      3.1,
+      40
+    ],
+    [
+      15,
+      10.2,
+      40
+    ],
+    [
+      55,
+      4.8,
+      50
+    ],
+    [
+      16,
+      4.8,
+      40
+    ],
+    [
+      2,
+      44.4,
+      50
+    ],
+    [
+      300,
+      79,
+      82
+    ]
+  ],
+  "boundFiles": {
+    "reseptit/paaruoat/rendang-padang.md": "e8058909f72f5543a2c65245d9bcd17b95ad6d024e69a0a770a6bc0489e8c007",
+    "docs/nutrition/gk80-operation80-batch-14.md": "5470356844e43f3751c250aaf3f3e6fe92b8d1b9b33181e14afdf7fd2a7f05e6"
+  }
+}
