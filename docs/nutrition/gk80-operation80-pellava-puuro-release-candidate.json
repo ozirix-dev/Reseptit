@@ -1,0 +1,141 @@
+{
+  "recipeId": "pellava-puuro-pahkinoilla",
+  "servings": 4,
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "unroundedGk": "0.429825",
+  "inputs": [
+    [
+      50,
+      2.9,
+      35
+    ],
+    [
+      20,
+      3.2,
+      22
+    ],
+    [
+      30,
+      7,
+      51
+    ]
+  ],
+  "ingredients": [
+    {
+      "grams": 50,
+      "name": {
+        "fi": "Kuohukerma",
+        "en": "Whipping cream",
+        "sv": "Vispgrädde",
+        "th": "วิปปิงครีม"
+      }
+    },
+    {
+      "grams": 20,
+      "name": {
+        "fi": "Saksanpähkinät",
+        "en": "Walnuts",
+        "sv": "Valnötter",
+        "th": "วอลนัต"
+      }
+    },
+    {
+      "grams": 30,
+      "name": {
+        "fi": "Vadelmat",
+        "en": "Raspberries",
+        "sv": "Hallon",
+        "th": "ราสป์เบอร์รี"
+      }
+    },
+    {
+      "grams": 20,
+      "name": {
+        "fi": "Sukrin-kookosjauho",
+        "en": "Sukrin coconut flour",
+        "sv": "Sukrin-kokosmjöl",
+        "th": "แป้งมะพร้าว Sukrin"
+      }
+    },
+    {
+      "grams": 35,
+      "name": {
+        "fi": "Pellavansiemenrouhe",
+        "en": "Ground flaxseed",
+        "sv": "Krossat linfrö",
+        "th": "เมล็ดแฟลกซ์บด"
+      }
+    },
+    {
+      "grams": 2,
+      "name": {
+        "fi": "Kaneli",
+        "en": "Cinnamon",
+        "sv": "Kanel",
+        "th": "อบเชย"
+      }
+    },
+    {
+      "grams": null,
+      "name": {
+        "fi": "Alpro No Sugars -mantelijuoma",
+        "en": "Alpro No Sugars almond drink",
+        "sv": "Alpro No Sugars-mandeldryck",
+        "th": "นมอัลมอนด์ Alpro No Sugars"
+      },
+      "quantity": {
+        "amount": 250,
+        "unit": "ml"
+      }
+    }
+  ],
+  "omissions": [
+    {
+      "ingredientIndex": 3,
+      "choPer100g": 18
+    },
+    {
+      "ingredientIndex": 4,
+      "choPer100g": 2.8
+    },
+    {
+      "ingredientIndex": 5,
+      "choPer100g": 100
+    }
+  ],
+  "preparation": {
+    "fi": "Sekoita {{amount:4}} g pellavansiemenrouhetta, {{amount:3}} g kookosjauhoa, {{amount:6}} ml mantelijuomaa, {{amount:0}} g kermaa ja ripaus suolaa. Kuumenna miedolla lämmöllä 4–6 minuuttia sekoittaen. Lisää enintään {{amount:5}} g kanelia ja tarvittaessa vettä. Jaa puuro, {{amount:1}} g saksanpähkinöitä ja {{amount:2}} g vadelmia tasan {{servings}} annokseen.",
+    "en": "Mix {{amount:4}} g ground flaxseed, {{amount:3}} g coconut flour, {{amount:6}} ml almond drink, {{amount:0}} g cream and a pinch of salt. Cook over low heat for 4–6 minutes, stirring. Add up to {{amount:5}} g cinnamon and water as needed. Divide the porridge, {{amount:1}} g walnuts and {{amount:2}} g raspberries evenly into {{servings}} servings.",
+    "sv": "Blanda {{amount:4}} g krossat linfrö, {{amount:3}} g kokosmjöl, {{amount:6}} ml mandeldryck, {{amount:0}} g grädde och en nypa salt. Värm på låg värme i 4–6 minuter under omrörning. Tillsätt högst {{amount:5}} g kanel och vid behov vatten. Dela gröten, {{amount:1}} g valnötter och {{amount:2}} g hallon jämnt i {{servings}} portioner.",
+    "th": "ผสมเมล็ดแฟลกซ์บด {{amount:4}} กรัม แป้งมะพร้าว {{amount:3}} กรัม นมอัลมอนด์ {{amount:6}} มล. ครีม {{amount:0}} กรัม และเกลือเล็กน้อย ตั้งไฟอ่อน 4–6 นาทีและคนตลอด เติมอบเชยไม่เกิน {{amount:5}} กรัมและน้ำตามต้องการ แบ่งโจ๊ก วอลนัต {{amount:1}} กรัม และราสป์เบอร์รี {{amount:2}} กรัมเป็น {{servings}} ที่เท่า ๆ กัน"
+  },
+  "limitation": {
+    "fi": "Arvio käyttää nimettyjä tuotteita ja laskennallisia GI-koodeja. Kookosjauhon, pellavan ja kanelin osuudesta jää pois enintään 1,645 g CHO/annos.",
+    "en": "The estimate uses the named products and assigned GI codes. Coconut flour, flaxseed and cinnamon contribute up to 1.645 g excluded carbohydrate per serving.",
+    "sv": "Uppskattningen använder de namngivna produkterna och tilldelade GI-koder. Kokosmjöl, linfrö och kanel bidrar med högst 1,645 g uteslutna kolhydrater per portion.",
+    "th": "ค่าประมาณใช้ผลิตภัณฑ์ที่ระบุและค่า GI ตามกลุ่ม ไม่รวมคาร์โบไฮเดรตจากแป้งมะพร้าว เมล็ดแฟลกซ์ และอบเชยไม่เกิน 1.645 กรัมต่อที่"
+  },
+  "sources": [
+    {
+      "title": "Sukrin",
+      "url": "https://sukrin.com/en/products/coconut-flour"
+    },
+    {
+      "title": "Alpro",
+      "url": "https://www.alpro.com/fi/tuotteemme/juomat/mantelijuoma-makeuttamaton"
+    },
+    {
+      "title": "Fineli",
+      "url": "https://fineli.fi/fineli/fi/ohje/19"
+    },
+    {
+      "title": "AFCD",
+      "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd"
+    }
+  ],
+  "boundFiles": {
+    "reseptit/aamupalat/pellava-puuro-pahkinoilla.md": "6ef230c98eb7272242996be4d57e594d53e0727f25b4976594bc8e3a74d410f6",
+    "docs/nutrition/gk80-operation80-pellava-puuro.md": "7ca919d994eb50c842b9885144e906a3489f0587c8f84d13782ff7f0de40b15b"
+  }
+}
