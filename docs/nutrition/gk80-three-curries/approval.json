@@ -1,0 +1,38 @@
+{
+  "sourceCommit": "fcba8c85a31e49bf2d65dbb356eadf8d1ac56a0b",
+  "decisionDate": "2026-11-03",
+  "decision": "Hyväksyn vihreän, punaisen ja keltaisen kanacurryn tarkat A-versiot lähteineen. Valmistele niistä yksi Draft-PR repo_guardin kautta.",
+  "scope": "Exact A source/content approval and Draft PR",
+  "packets": {
+    "green": {
+      "recipeId": "thai-vihrea-curry-kanalla-vhh",
+      "inputSha256": "94ce19b3d298b2db88b37b8077692c93e95716ddcd73cb17130adb648115bbb8",
+      "calculatedGkPart": 2.38,
+      "omittedCho": 1.8705,
+      "files": {
+        "cases.json": "001a27ba9feb0b60d0d58c8a655347ef7d3c9b0fbad0413be4ee8775e0444357",
+        "sources.json": "58e02017dce4faf82076e6968ab24e6164c2c5258e19826e959cfd6bff7d5b24"
+      }
+    },
+    "red": {
+      "recipeId": "punainen-kanacurry-vhh",
+      "inputSha256": "b97b273a9fc4736a9022bddd671c40bf094aff1f8f8c850bddba5f9890f78b89",
+      "calculatedGkPart": 1.95,
+      "omittedCho": 1.7654999999999998,
+      "files": {
+        "cases.json": "00a904fb2128ce53d8ea0be6e01d23c999daf7e24bedd17f030f4a95b9b41534",
+        "sources.json": "1f45b603381e0d9f18ab0b9a2ccc062dd6ca7f23ccedf93a01b223fa302ef86b"
+      }
+    },
+    "yellow": {
+      "recipeId": "keltainen-kanacurry-vhh",
+      "inputSha256": "a14ead83a147ff5f469377ecd48d62ac817dfb59a16da14fcf57ad6d96de79ab",
+      "calculatedGkPart": 1.28,
+      "omittedCho": 1.9313125,
+      "files": {
+        "cases.json": "9704843def236ca1e3b9e94251732c137d3eeb5ecd2e47a7fe7b1900bf6a1490",
+        "sources.json": "cbfe174cfcaa2a9d21d2fc480a3ce9f8ac1f2000474fbaa4102375f6a44a5bf3"
+      }
+    }
+  }
+}

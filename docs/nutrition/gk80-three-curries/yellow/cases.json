@@ -1,0 +1,169 @@
+{
+  "activation": false,
+  "ownerApproval": false,
+  "cases": [
+    {
+      "recipeId": "keltainen-kanacurry-vhh",
+      "classification": "CONDITIONAL_A_ARITHMETIC_SOURCE_HOLD",
+      "arithmeticProfile": "EXISTING_A",
+      "servings": 4,
+      "paths": {
+        "fi": "reseptit/paaruoat/keltainen-kanacurry-vhh.md",
+        "en": "kaannokset/en/paaruoat/keltainen-kanacurry-vhh.md",
+        "sv": "kaannokset/sv/paaruoat/keltainen-kanacurry-vhh.md",
+        "th": "kaannokset/th/paaruoat/keltainen-kanacurry-vhh.md"
+      },
+      "recipeSha256Lf": {
+        "fi": "8b13271f5d045eceab072e1bd10020805a1edfb3fe00f5ee79ae3736c49ef668",
+        "en": "0896008fff6dbcda7118172d148f78d7475ea65aba13b113fcd1145049dc5923",
+        "sv": "761194934cc254b9255a96cfde40629135d3151def6fa8e3595ec494c2fbe275",
+        "th": "a5029267f68d899fa125350fa6822b2bf034ff15ffdcb976817a1b5971c6c638"
+      },
+      "originalIngredients": [
+        {
+          "amount": 600,
+          "unit": "g",
+          "item": "broilerin reisilihaa",
+          "note": "suupaloiksi leikattuna"
+        },
+        {
+          "amount": 400,
+          "unit": "g",
+          "item": "täysrasvaista kookosmaitoa"
+        },
+        {
+          "amount": 30,
+          "unit": "g",
+          "item": "Mae Ploy -keltaista currytahnaa",
+          "note": "tarkista hiilihydraatit"
+        },
+        {
+          "amount": 400,
+          "unit": "g",
+          "item": "kukkakaalia",
+          "note": "pieninä kukintoina"
+        },
+        {
+          "amount": 70,
+          "unit": "g",
+          "item": "pientä sipulia",
+          "note": "viipaloituna"
+        },
+        {
+          "amount": 15,
+          "unit": "g",
+          "item": "Squid Brand -kalakastiketta"
+        },
+        {
+          "amount": 1.5,
+          "unit": "g",
+          "item": "kurkumaa"
+        },
+        {
+          "amount": 4,
+          "unit": "g",
+          "item": "Foodin-erytritolia",
+          "note": "valinnainen"
+        },
+        {
+          "amount": 10,
+          "unit": "g",
+          "item": "kookosöljyä"
+        },
+        {
+          "amount": 5,
+          "unit": "g",
+          "item": "tuoretta korianteria",
+          "note": "tarjoiluun"
+        }
+      ],
+      "ingredients": [
+        {
+          "originalIndex": 0,
+          "name": "broilerin reisilihaa",
+          "grams": 600,
+          "sourceId": "A002806",
+          "giId": null
+        },
+        {
+          "originalIndex": 1,
+          "name": "Fairtrade Original coconut milk 1 L",
+          "grams": 400,
+          "sourceId": "FTO_1L_08_G",
+          "giId": null
+        },
+        {
+          "originalIndex": 2,
+          "name": "Ayam Thai Yellow Curry Paste AU 185 g",
+          "grams": 30,
+          "sourceId": "AYAM_YELLOW_185",
+          "giId": null
+        },
+        {
+          "originalIndex": 3,
+          "name": "kukkakaalia",
+          "grams": 400,
+          "sourceId": "F322",
+          "giId": "op142-vegetable-imputation40"
+        },
+        {
+          "originalIndex": 4,
+          "name": "pientä sipulia",
+          "grams": 70,
+          "sourceId": "335",
+          "giId": "op142-vegetable-imputation40"
+        },
+        {
+          "originalIndex": 5,
+          "name": "Squid fish sauce 300 ml EAN 8850620888012",
+          "grams": 15,
+          "sourceId": "SQUID300",
+          "giId": null
+        },
+        {
+          "originalIndex": 6,
+          "name": "kurkumaa",
+          "grams": 1.5,
+          "sourceId": "TURMERIC_WHOLE_MASS",
+          "giId": null
+        },
+        {
+          "originalIndex": 7,
+          "name": "Foodin-erytritolia",
+          "grams": 4,
+          "sourceId": "FOODIN_ERYTHRITOL",
+          "giId": null
+        },
+        {
+          "originalIndex": 8,
+          "name": "kookosöljyä",
+          "grams": 10,
+          "sourceId": "34140",
+          "giId": null
+        },
+        {
+          "originalIndex": 9,
+          "name": "tuoretta korianteria",
+          "grams": 5,
+          "sourceId": "34238",
+          "giId": null
+        }
+      ],
+      "preparationDecision": "Simmer cauliflower and yellow onion in the curry. Serve four portions with all sauce and fresh coriander, without a separate cauliflower rice side. Stir coconut milk before weighing. Include the listed 4 g pure erythritol.",
+      "requiredDecisions": [
+        "EXACT_PRODUCT_SOURCE_AND_CONTENT_OWNER_REVIEW",
+        "GREEN_CURRY_AU64_VS_UK173_SAME_UPC_LABEL_VERSION",
+        "SQUID700_PRIMARY_LABEL_AND_G_VS_ML_UNIT_RESOLUTION",
+        "THAI_N35_TOTAL_CAP_ADMISSION_WITH_AVAILABLE_UNKNOWN",
+        "GK_ONLY_MACRO_VERSION_COMPATIBILITY"
+      ],
+      "ownerApproval": false,
+      "sourceQualified": false,
+      "publicationAuthorized": false,
+      "macroAction": "PRESERVE_ALL_CURRENT_VALUES_AND_WITHHOLDINGS",
+      "noNewGiConstants": true,
+      "minorBOmissionProfileActivated": false,
+      "inputSha256": "a14ead83a147ff5f469377ecd48d62ac817dfb59a16da14fcf57ad6d96de79ab"
+    }
+  ]
+}
