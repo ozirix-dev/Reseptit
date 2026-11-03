@@ -210,6 +210,17 @@ def checked_queue_after_turn(root: Path, old_queue: dict, p: dict, target: int) 
 def active(root: Path) -> tuple[dict, dict, dict[str, Path]]:
     p = paths(root)
     state = load_json(p["state"])
+    for key in ("target", "maxTurns", "maxStaleTurns", "turns", "staleTurns"):
+        if type(state.get(key)) is not int:
+            raise GateError(f"Invalid controller-owned state field: {key}")
+    if (state.get("schemaVersion") != 1 or state["target"] != 30
+            or not 1 <= state["maxTurns"] <= 40
+            or not 1 <= state["maxStaleTurns"] <= 8
+            or not 0 <= state["turns"] <= state["maxTurns"]
+            or not 0 <= state["staleTurns"] <= state["maxTurns"]):
+        raise GateError("Controller-owned state budget or schema was altered")
+    if not isinstance(state.get("startSha"), str) or not re.fullmatch(r"[0-9a-f]{40}", state["startSha"]):
+        raise GateError("Invalid pinned research starting SHA")
     guard(root, state.get("branch"))
     queue = load_json(p["queue"])
     validate_queue(root, queue, state["target"])
@@ -292,7 +303,8 @@ def one_turn(root: Path, state: dict, queue: dict, p: dict, executable: str,
     if not execute:
         print("DRY RUN – no Codex started.\n" + text)
         return False
-    if not shutil.which(executable):
+    resolved_codex = shutil.which(executable)
+    if not resolved_codex:
         raise GateError(f"Codex executable not found: {executable}")
     check_research_scope(root, state["startSha"])
     acquire(p["lock"])
@@ -311,7 +323,7 @@ def one_turn(root: Path, state: dict, queue: dict, p: dict, executable: str,
     stopped = False
     try:
         # No shell interpolation, no API key handling, no approval/sandbox bypass.
-        cmd = [executable, "exec", "--sandbox", "workspace-write",
+        cmd = [resolved_codex, "exec", "--sandbox", "workspace-write",
                "-C", str(root), "--json", "-"]
         with logfile.open("wb") as log:
             proc = subprocess.Popen(
@@ -498,8 +510,8 @@ def main(argv: list[str] | None = None) -> int:
             raise GateError("Another process owns active.lock; refusing concurrent writer")
         if state["phase"] == "READY_FOR_DRAFT":
             raise GateError("30 candidates reached; use handoff")
-        if state["phase"] not in {"PAUSED", "RUNNING"}:
-            raise GateError(f"Stopped phase {state['phase']}; use resume after review")
+        if state["phase"] != "PAUSED":
+            raise GateError(f"Stopped or interrupted phase {state['phase']}; use resume after review")
         if args.action == "step":
             one_turn(root, state, queue, p, args.codex, args.max_seconds, args.execute)
         elif not args.execute:
