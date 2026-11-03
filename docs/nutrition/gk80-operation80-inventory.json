@@ -2,11 +2,11 @@
   "schemaVersion": 1,
   "main": "4d6f19a620bb95e771c12f499554bf2cf1f06e51",
   "coverage": {
-    "PROPOSED_RANGE": 20,
+    "PROPOSED_RANGE": 21,
     "PUBLISHED_SINGLE": 197,
     "PROPOSED_SINGLE": 17,
     "IN_PROGRESS": 33,
-    "NO_GK": 49,
+    "NO_GK": 48,
     "PUBLISHED_RANGE": 10
   },
   "reviewedPrHeads": {
@@ -111,7 +111,7 @@
     "japanilainen-curry-tofulla",
     "khao-soi-vhh-konjac"
   ],
-  "nextRecipeId": "pohjoisafrikkalainen-msemen-hunajalla",
+  "nextRecipeId": "sichuan-hot-pot",
   "recipes": [
     {
       "recipeId": "aloo-paratha",
@@ -12835,10 +12835,10 @@
       "recipeSha256": "e263a0339d743610e6b5877b625dc01d123f677c03c4fffe6979df4cd39282fa",
       "pilotInputSha256": "17f7f2ace29c2fc049634a67e096f30ec49e04b66ac339f3405c9ec9e4a9cd83",
       "servings": 2,
-      "status": "NO_GK",
+      "status": "PROPOSED_RANGE",
       "priorEvidence": [],
-      "level": null,
-      "ownerApproval": null,
+      "level": "B",
+      "ownerApproval": false,
       "sourceQualified": null,
       "blockers": [
         "pohjoisafrikkalainen-msemen-hunajalla: mannasuurimo: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved.",
@@ -12911,7 +12911,69 @@
             "Individual sub-1 g contribution counted toward cumulative 2 g/serving editorial tolerance: Conservative culinary-use bound 0.2 g per recipe, divided by servings, below 1 g available carbohydrate per serving."
           ]
         }
-      ]
+      ],
+      "operation80Proposal": {
+        "evidencePath": "docs/nutrition/gk80-operation80-batch-18.md",
+        "baselineRecipeSha256": "e263a0339d743610e6b5877b625dc01d123f677c03c4fffe6979df4cd39282fa",
+        "inputFields": [
+          "gramsBatch",
+          "choPer100g",
+          "giGlucoseScale"
+        ],
+        "scenarios": [
+          {
+            "inputs": [
+              [
+                100,
+                63.6,
+                31.8
+              ],
+              [
+                100,
+                73.998,
+                31.8
+              ],
+              [
+                50,
+                0.8,
+                31.8
+              ],
+              [
+                20,
+                72.3,
+                87
+              ]
+            ],
+            "gkPerServing": "28.231782"
+          },
+          {
+            "inputs": [
+              [
+                100,
+                63.6,
+                62.48
+              ],
+              [
+                100,
+                73.998,
+                62.48
+              ],
+              [
+                50,
+                0.8,
+                62.48
+              ],
+              [
+                20,
+                72.3,
+                87
+              ]
+            ],
+            "gkPerServing": "49.4006752"
+          }
+        ],
+        "publicationAuthorized": false
+      }
     },
     {
       "recipeId": "pohjoisafrikkalainen-taatelipuuro-appelsiinilla",
