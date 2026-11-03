@@ -91,3 +91,9 @@ Nämä kuusi nelikielistä esikatseluversiota ovat kahden alkuperäisen erän li
 [PR #227:n näyttöpaketin](https://github.com/ozirix-dev/Reseptit/blob/cf551fd064036d31479bfa910ebf97adf42c57fe/docs/nutrition/gk80-kerala-liver-scallion.json) kaikki kahdeksan LF-tarkistetta täsmäävät paikallisiin resepti-, lähde- ja mallisidoksiin. Sen 2,3265 GK:n skenaario on edelleen lähdehyväksyntää vaativa, eikä sitä lasketa PR #230:n esikatselukattavuuteen.
 
 500 g maksaerä neljälle tuottaa MEXTin arviolla 3,3 g/100 g maksasta 4,125 g CHO/annos. Finelin 5,031 g/100 g antaa 6,28875 g/annos ja ylittää aiemman ehdotuksen käyttämän matalan CHO:n koodin ehdon. Kumpikaan määrä ei mahdu yksittäisen ainesosan pienosuusrajaan. Paistetulle naudanmaksalle ei tarkistuksessa löytynyt riittävää ihmis-GI-näyttöä. Lähdepäätös koskee sekä maksalle valittua koostumusta että GI-koodin soveltuvuutta. [MEXT 11092](https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=11_11092_7&MODE=7)
+
+### Keto-korvapuustien mantelijauho
+
+Reseptin 200 g mantelijauhoa kahdeksalle edellyttää alle 4 g imeytyvää CHO:ta / 100 g, jotta jauhon osuus alittaa yksittäisen 1 g:n rajan. Kauralesesämpylöiden selvityksessä käytetty täysrasvainen AFCD F006077 (5,4 g/100 g) antaa 1,35 g/annos. Samalla koostumuksella raja alittuisi vasta alle 148,15 g:n erällä. Sellainen muutos vaatisi taikinan toimivuuden tarkistuksen.
+
+Haussa ei varmistunut rajan alittavaa täysrasvaista tuotetta. Esimerkiksi Nutsupplyn kuoritusta mantelista jauhettu tuote ilmoittaa 21 g CHO:ta / 100 g. Kokonais-GK jää avoimeksi, kunnes täysrasvaiselle jauholle löytyy sopiva tuotetieto ja koko pienosuusbudjetti täsmää tai paistetulle taikinalle löytyy soveltuva GI-verrokki. [Nutsupply](https://www.nutsupply.com/products/almond-flour) · [AFCD](https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd)
