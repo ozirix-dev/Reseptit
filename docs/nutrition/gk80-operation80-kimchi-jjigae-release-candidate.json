@@ -1,0 +1,228 @@
+{
+  "recipeId": "kimchi-jjigae",
+  "servings": 4,
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "unroundedGk": "1.779",
+  "inputs": [
+    [
+      400,
+      1.1,
+      40
+    ],
+    [
+      300,
+      1.8,
+      50
+    ],
+    [
+      100,
+      4.8,
+      40
+    ],
+    [
+      40,
+      4.6,
+      40
+    ],
+    [
+      300,
+      0,
+      0
+    ]
+  ],
+  "omissions": [
+    {
+      "ingredientIndex": 5,
+      "choPer100g": 51
+    },
+    {
+      "ingredientIndex": 6,
+      "choPer100ml": 0.2
+    },
+    {
+      "ingredientIndex": 7,
+      "choPer100ml": 3.2
+    },
+    {
+      "ingredientIndex": 8,
+      "choPer100g": 100
+    }
+  ],
+  "ingredients": [
+    {
+      "name": {
+        "fi": "Schöni-kimchi",
+        "en": "Schöni kimchi",
+        "sv": "Schöni-kimchi",
+        "th": "กิมจิ Schöni"
+      },
+      "grams": 400
+    },
+    {
+      "name": {
+        "fi": "Cauldron Extra Firm Tofu",
+        "en": "Cauldron Extra Firm Tofu",
+        "sv": "Cauldron Extra Firm Tofu",
+        "th": "เต้าหู้แข็ง Cauldron"
+      },
+      "grams": 300
+    },
+    {
+      "name": {
+        "fi": "Keltasipuli",
+        "en": "Yellow onion",
+        "sv": "Gul lök",
+        "th": "หัวหอมเหลือง"
+      },
+      "grams": 100
+    },
+    {
+      "name": {
+        "fi": "Kevätsipuli",
+        "en": "Spring onion",
+        "sv": "Salladslök",
+        "th": "ต้นหอม"
+      },
+      "grams": 40
+    },
+    {
+      "name": {
+        "fi": "Maustamaton kassler",
+        "en": "Unseasoned pork shoulder",
+        "sv": "Okryddad fläskkarré",
+        "th": "เนื้อหมูส่วนคอไม่ปรุงรส"
+      },
+      "grams": 300
+    },
+    {
+      "name": {
+        "fi": "Bibigo Hot Pepper Paste",
+        "en": "Bibigo Hot Pepper Paste",
+        "sv": "Bibigo Hot Pepper Paste",
+        "th": "พริกหมัก Bibigo"
+      },
+      "grams": 7
+    },
+    {
+      "name": {
+        "fi": "Aneto-kanaliemi",
+        "en": "Aneto chicken broth",
+        "sv": "Aneto kycklingbuljong",
+        "th": "น้ำซุปไก่ Aneto"
+      },
+      "grams": null,
+      "quantity": {
+        "amount": 800,
+        "unit": "ml"
+      }
+    },
+    {
+      "name": {
+        "fi": "Kikkoman-soijakastike",
+        "en": "Kikkoman soy sauce",
+        "sv": "Kikkoman-soja",
+        "th": "ซีอิ๊ว Kikkoman"
+      },
+      "grams": null,
+      "quantity": {
+        "amount": 15,
+        "unit": "ml"
+      }
+    },
+    {
+      "name": {
+        "fi": "Gochugaru",
+        "en": "Gochugaru",
+        "sv": "Gochugaru",
+        "th": "พริกป่นเกาหลี"
+      },
+      "grams": 2
+    },
+    {
+      "name": {
+        "fi": "Paistoöljy",
+        "en": "Cooking oil",
+        "sv": "Stekolja",
+        "th": "น้ำมันสำหรับผัด"
+      },
+      "grams": null,
+      "quantity": {
+        "amount": 1,
+        "unit": "tbsp"
+      }
+    }
+  ],
+  "preparation": {
+    "fi": "Ruskista {{amount:4}} g kassleria {{amount:9}} rkl:ssa öljyä. Lisää {{amount:0}} g kimchiä ja {{amount:2}} g keltasipulia. Lisää {{amount:6}} ml kanalientä, {{amount:5}} g chilitahnaa, {{amount:8}} g gochugarua ja {{amount:7}} ml soijakastiketta. Hauduta liha kypsäksi, lisää {{amount:1}} g tofua ja kuumenna. Viimeistele {{amount:3}} g:lla kevätsipulia ja jaa liemineen {{servings}} annokseen.",
+    "en": "Brown {{amount:4}} g pork in {{amount:9}} tbsp oil. Add {{amount:0}} g kimchi and {{amount:2}} g onion. Add {{amount:6}} ml broth, {{amount:5}} g chilli paste, {{amount:8}} g gochugaru and {{amount:7}} ml soy sauce. Simmer until the pork is cooked, then add {{amount:1}} g tofu and heat through. Finish with {{amount:3}} g spring onion and divide the stew and broth into {{servings}} servings.",
+    "sv": "Bryn {{amount:4}} g fläskkarré i {{amount:9}} msk olja. Tillsätt {{amount:0}} g kimchi och {{amount:2}} g gul lök. Tillsätt {{amount:6}} ml buljong, {{amount:5}} g chilipasta, {{amount:8}} g gochugaru och {{amount:7}} ml soja. Sjud tills köttet är genomkokt, tillsätt {{amount:1}} g tofu och värm igenom. Toppa med {{amount:3}} g salladslök och dela grytan med buljongen i {{servings}} portioner.",
+    "th": "ผัดหมู {{amount:4}} กรัมในน้ำมัน {{amount:9}} ช้อนโต๊ะจนขึ้นสี ใส่กิมจิ {{amount:0}} กรัมและหัวหอม {{amount:2}} กรัม เติมน้ำซุป {{amount:6}} มล. พริกหมัก {{amount:5}} กรัม พริกป่นเกาหลี {{amount:8}} กรัม และซีอิ๊ว {{amount:7}} มล. เคี่ยวจนหมูสุก ใส่เต้าหู้ {{amount:1}} กรัมแล้วอุ่นให้ร้อน โรยต้นหอม {{amount:3}} กรัม แบ่งทั้งเครื่องและน้ำซุปเป็น {{servings}} ที่"
+  },
+  "limitation": {
+    "fi": "Arvio koskee hauduketta ja käyttää laskennallisia GI-koodeja. Pienosuuksista jää pois enintään 1,92 g hiilihydraattia annosta kohti.",
+    "en": "The estimate covers the stew and uses assigned GI codes. Up to 1.92 g carbohydrate per serving is excluded.",
+    "sv": "Uppskattningen gäller grytan och använder tilldelade GI-koder. Högst 1,92 g kolhydrat per portion ingår inte.",
+    "th": "ค่าประมาณใช้กับแกงและใช้รหัส GI ตามกลุ่ม โดยไม่รวมคาร์โบไฮเดรตไม่เกิน 1.92 กรัมต่อที่"
+  },
+  "sources": [
+    {
+      "title": "Schöni",
+      "url": "https://schoenifood.ch/de/produkte/fermentiert-und-roh/schoni-bio-kimchi-mit-peperoni-fermentiert-roh-280g/",
+      "kind": "CARBOHYDRATE",
+      "note": "1.1 g per 100 g."
+    },
+    {
+      "title": "Cauldron",
+      "url": "https://www.cauldronfoods.co.uk/products/extra-firm-plant-based-tofu",
+      "kind": "CARBOHYDRATE",
+      "note": "1.8 g per 100 g."
+    },
+    {
+      "title": "Fineli 335",
+      "url": "https://fineli.fi/fineli/fi/elintarvikkeet/335",
+      "kind": "CARBOHYDRATE",
+      "note": "THL CC BY 4.0."
+    },
+    {
+      "title": "AFCD F006250",
+      "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd",
+      "kind": "CARBOHYDRATE",
+      "note": "CC BY-SA 3.0 Australia."
+    },
+    {
+      "title": "Bibigo",
+      "url": "https://bibigo.co.uk/product/go-chu-jang/",
+      "kind": "CARBOHYDRATE",
+      "note": "51 g per 100 g."
+    },
+    {
+      "title": "Aneto",
+      "url": "https://www.caldoaneto.com/en/product/wellness-broths/natural-low-sodium-chicken-broth",
+      "kind": "CARBOHYDRATE",
+      "note": "0.2 g per 100 ml."
+    },
+    {
+      "title": "Kikkoman",
+      "url": "https://www.kikkoman.co.uk/products/detail/fs-kikkoman-naturally-brewed-soy-sauce",
+      "kind": "CARBOHYDRATE",
+      "note": "3.2 g per 100 ml."
+    },
+    {
+      "title": "GI coding",
+      "url": "https://doi.org/10.2337/dc08-1239",
+      "kind": "PUBLISHED_CODING",
+      "note": "Vegetable codes."
+    },
+    {
+      "title": "Low carbohydrate coding",
+      "url": "https://doi.org/10.1016/j.jfca.2007.02.004",
+      "kind": "PUBLISHED_CODING",
+      "note": "Tofu code 50."
+    }
+  ],
+  "boundFiles": {
+    "reseptit/paaruoat/kimchi-jjigae.md": "ddf90c6176447617f9e997b58c8587fb5a3979aa40656aec152cab4407afb561",
+    "docs/nutrition/gk80-operation80-batch-54.md": "fa46005cf1b3aa085ebac40711fc2fa4ac7fa9c10f7889dc33e9dc929e73c4a1"
+  }
+}
