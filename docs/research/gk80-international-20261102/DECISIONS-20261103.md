@@ -62,7 +62,7 @@ Kuittisarake vertaa jokaista 20 resepti-ID:tä Codex2:n versionlukitun snapshoti
 | `aloo-paratha` | `110a4ab63c6f866e4ae606629ffdb57a14bbcb66b5f981efa1556464b570cad7` | Ei eritelty B-skenaariossa | Ei ID-osumaa |
 | `intialainen-aloo-paratha` | `6a268c2cd9d62985f9bfa3ea1e4854eb1112af547e59b35d964255688c387954` | Ei eritelty B-skenaariossa | Ei ID-osumaa |
 | `kiinalainen-kevatsipulipannukakku` | `f640d29abfa627624ff5e527e28a1f76fc2279811785632bab33eb11d13bdf07` | Ei eritelty B-skenaariossa | Ei ID-osumaa |
-| `vietnamilainen-banh-bao-kananmunalla` | `61e9a8bffe095f02f50c59c652add9a880a7d7a599a24108390b976e7e76b1a9` | Ei eritelty B-skenaariossa | Ei ID-osumaa |
+| `vietnamilainen-banh-bao-kananmunalla` | `61e9a8bffe095f02f50c59c652add9a880a7d7a599a24108390b976e7e76b1a9` | 0,1875 ([tutkimustulos](steamed-buns-source-control/results.json)) | Ei ID-osumaa |
 
 ### Hyväksyntäjono ja ehdollinen potentiaali
 
