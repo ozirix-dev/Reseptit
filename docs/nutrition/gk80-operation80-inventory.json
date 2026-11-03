@@ -2,11 +2,11 @@
   "schemaVersion": 1,
   "main": "4d6f19a620bb95e771c12f499554bf2cf1f06e51",
   "coverage": {
-    "PROPOSED_RANGE": 16,
+    "PROPOSED_RANGE": 17,
     "PUBLISHED_SINGLE": 197,
     "PROPOSED_SINGLE": 17,
-    "IN_PROGRESS": 25,
-    "NO_GK": 61,
+    "IN_PROGRESS": 26,
+    "NO_GK": 59,
     "PUBLISHED_RANGE": 10
   },
   "reviewedPrHeads": {
@@ -25,7 +25,6 @@
     "160": "64f2c14ee3b158fbeff6719278ffaa5f436aec4f"
   },
   "queue": [
-    "khao-soi-vhh-konjac",
     "kiinalainen-bao-munalla",
     "korealainen-bataatti-riisikulho",
     "kreikkalainen-moussaka",
@@ -66,7 +65,6 @@
     "tunisialainen-brik",
     "vietnamilainen-banh-cuon-sienilla",
     "vietnamilainen-xoi-maapahkinalla",
-    "bouillabaisse",
     "carnitas-salaattitacot",
     "indonesialainen-lontong-sayur-aamiaiseksi",
     "jiaozi",
@@ -110,9 +108,10 @@
     "indonesialainen-bubur-sumsum",
     "indonesialainen-nasi-goreng-aamiaisriisi",
     "indonesialainen-pisang-goreng-aamiaiseksi",
-    "japanilainen-curry-tofulla"
+    "japanilainen-curry-tofulla",
+    "khao-soi-vhh-konjac"
   ],
-  "nextRecipeId": "khao-soi-vhh-konjac",
+  "nextRecipeId": "kiinalainen-bao-munalla",
   "recipes": [
     {
       "recipeId": "aloo-paratha",
@@ -411,10 +410,10 @@
       "recipeSha256": "15a7127f67bc3d2b2707afe6137c05ddaecf8e39e424a4c66502c8e4a7a9218c",
       "pilotInputSha256": "8505a85bc79e01f43f3a4993940e3b58fa0df6c3ea89693112f887bb9e508457",
       "servings": 4,
-      "status": "NO_GK",
+      "status": "PROPOSED_RANGE",
       "priorEvidence": [],
-      "level": null,
-      "ownerApproval": null,
+      "level": "B",
+      "ownerApproval": false,
       "sourceQualified": null,
       "blockers": [
         "bouillabaisse: sinisimpukoita: GI evidence is missing.",
@@ -535,7 +534,149 @@
             "AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance."
           ]
         }
-      ]
+      ],
+      "operation80Proposal": {
+        "evidencePath": "docs/nutrition/gk80-operation80-batch-12.md",
+        "baselineRecipeSha256": "15a7127f67bc3d2b2707afe6137c05ddaecf8e39e424a4c66502c8e4a7a9218c",
+        "inputFields": [
+          "gramsBatch",
+          "choPer100g",
+          "giGlucoseScale"
+        ],
+        "scenarios": [
+          {
+            "inputs": [
+              [
+                600,
+                0,
+                0
+              ],
+              [
+                60,
+                4.7,
+                50
+              ],
+              [
+                200,
+                0,
+                0
+              ],
+              [
+                55,
+                4.8,
+                40
+              ],
+              [
+                200,
+                1.8,
+                40
+              ],
+              [
+                7,
+                16.3,
+                40
+              ],
+              [
+                400,
+                3.45,
+                40
+              ],
+              [
+                1000,
+                0,
+                0
+              ],
+              [
+                0.2,
+                61.47,
+                50
+              ],
+              [
+                1,
+                26.94,
+                50
+              ],
+              [
+                400,
+                15.5,
+                66
+              ],
+              [
+                120,
+                50.212,
+                63
+              ]
+            ],
+            "gkPerServing": "22.2397105"
+          },
+          {
+            "inputs": [
+              [
+                600,
+                0,
+                0
+              ],
+              [
+                60,
+                4.7,
+                50
+              ],
+              [
+                200,
+                0,
+                0
+              ],
+              [
+                55,
+                4.8,
+                40
+              ],
+              [
+                200,
+                1.8,
+                40
+              ],
+              [
+                7,
+                16.3,
+                40
+              ],
+              [
+                400,
+                3.45,
+                40
+              ],
+              [
+                1000,
+                0,
+                0
+              ],
+              [
+                0.2,
+                61.47,
+                50
+              ],
+              [
+                1,
+                26.94,
+                50
+              ],
+              [
+                400,
+                15.5,
+                66
+              ],
+              [
+                120,
+                50.212,
+                66
+              ]
+            ],
+            "gkPerServing": "22.6916185"
+          }
+        ],
+        "publicationAuthorized": false
+      }
     },
     {
       "recipeId": "broileri-kukkakaaligratiini",
@@ -6183,7 +6324,7 @@
       "recipeSha256": "c6eeb19825cc92cc820255d39f61e2448a0db8f86c5221db96187dfc982a6d3c",
       "pilotInputSha256": "fa642efad693812bac25fea83ed1f36b739aa79978dcbeca67a4757c6d785c60",
       "servings": 4,
-      "status": "NO_GK",
+      "status": "IN_PROGRESS",
       "priorEvidence": [],
       "level": null,
       "ownerApproval": null,
@@ -6307,7 +6448,8 @@
             "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.600 g available carbohydrate): GI evidence is missing."
           ]
         }
-      ]
+      ],
+      "operation80Finding": "Resolve package-specific curry paste GI and carbohydrate; bind chicken broth and drained pickled mustard greens."
     },
     {
       "recipeId": "kiinalainen-bao-munalla",
