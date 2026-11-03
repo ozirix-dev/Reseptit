@@ -111,6 +111,26 @@
       }
     }
   ],
+  "exclusions": [
+    {
+      "ingredientIndex": 5,
+      "kind": "ZERO_CHO",
+      "rationale": "Plain frying oil. Contributes no available carbohydrate.",
+      "evidencePath": "docs/nutrition/gk80-operation80-batch-15.md"
+    },
+    {
+      "ingredientIndex": 6,
+      "kind": "ZERO_CHO",
+      "rationale": "Plain water. Contributes no available carbohydrate.",
+      "evidencePath": "docs/nutrition/gk80-operation80-batch-15.md"
+    },
+    {
+      "ingredientIndex": 7,
+      "kind": "ZERO_CHO",
+      "rationale": "Pure salt. Contributes no available carbohydrate.",
+      "evidencePath": "docs/nutrition/gk80-operation80-batch-15.md"
+    }
+  ],
   "sources": [
     {
       "title": "Kim et al., wheat pancake",

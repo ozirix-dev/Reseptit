@@ -176,6 +176,32 @@
     "sv": "GI-jämförelsen gäller kokta torkade vetenudlar. Alla kolhydrater från lök och ingefära räknas in i buljongen. Högst 1,25 g kolhydrat per portion från kanel och stjärnanis ingår inte.",
     "th": "ค่า GI อ้างอิงเส้นข้าวสาลีแห้งที่ต้มสุก คำนวณคาร์โบไฮเดรตจากหัวหอมและขิงทั้งหมดในน้ำซุป ไม่รวมคาร์โบไฮเดรตจากอบเชยและโป๊ยกั๊กไม่เกิน 1.25 กรัมต่อที่"
   },
+  "exclusions": [
+    {
+      "ingredientIndex": 8,
+      "kind": "ZERO_CHO",
+      "rationale": "Unseasoned beef chuck. Contributes no available carbohydrate.",
+      "evidencePath": "docs/nutrition/gk80-operation80-batch-58.md"
+    },
+    {
+      "ingredientIndex": 9,
+      "kind": "ZERO_CHO",
+      "rationale": "Plain water. Contributes no available carbohydrate.",
+      "evidencePath": "docs/nutrition/gk80-operation80-batch-58.md"
+    },
+    {
+      "ingredientIndex": 10,
+      "kind": "ZERO_CHO",
+      "rationale": "Filtered chili oil without added sugar or solids. Contributes no available carbohydrate.",
+      "evidencePath": "docs/nutrition/gk80-operation80-batch-58.md"
+    },
+    {
+      "ingredientIndex": 11,
+      "kind": "ZERO_CHO",
+      "rationale": "Pure salt. Contributes no available carbohydrate.",
+      "evidencePath": "docs/nutrition/gk80-operation80-batch-58.md"
+    }
+  ],
   "sources": [
     {
       "title": "Yang et al.",

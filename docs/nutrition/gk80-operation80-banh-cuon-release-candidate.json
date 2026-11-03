@@ -121,6 +121,26 @@
     "sv": "Risarken jämförs med en ångad risrulle utan fyllning. Smetens sammansättning kan påverka responsen. Fyllningen beräknas separat.",
     "th": "แผ่นแป้งใช้อ้างอิงค่า GI จากแผ่นข้าวม้วนนึ่งที่ไม่มีไส้ ส่วนผสมแป้งอาจเปลี่ยนการตอบสนอง และคำนวณไส้แยกต่างหาก"
   },
+  "exclusions": [
+    {
+      "ingredientIndex": 5,
+      "kind": "ZERO_CHO",
+      "rationale": "Plain water. Contributes no available carbohydrate.",
+      "evidencePath": "docs/nutrition/gk80-operation80-batch-46.md"
+    },
+    {
+      "ingredientIndex": 6,
+      "kind": "ZERO_CHO",
+      "rationale": "Pure salt. Contributes no available carbohydrate.",
+      "evidencePath": "docs/nutrition/gk80-operation80-batch-46.md"
+    },
+    {
+      "ingredientIndex": 7,
+      "kind": "ZERO_CHO",
+      "rationale": "Optional plain greasing oil. Contributes no available carbohydrate.",
+      "evidencePath": "docs/nutrition/gk80-operation80-batch-46.md"
+    }
+  ],
   "sources": [
     {
       "title": "Chen et al., PSVR",

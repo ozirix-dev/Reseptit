@@ -88,6 +88,14 @@
       }
     }
   ],
+  "exclusions": [
+    {
+      "ingredientIndex": 4,
+      "kind": "ZERO_CHO",
+      "rationale": "Plain frying oil. Contributes no available carbohydrate.",
+      "evidencePath": "docs/nutrition/gk80-operation80-batch-05.md"
+    }
+  ],
   "sources": [
     {
       "title": "Kim et al., wheat pancake",
