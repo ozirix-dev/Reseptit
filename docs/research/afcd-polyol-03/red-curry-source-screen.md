@@ -59,3 +59,5 @@ A-moottori palautti CALCULATED. Taitepapujen GI 40 -mallilla laskettu osa on 0,4
 Julkinen kana-fajitapellin punnittu versio käyttää Fineli 386:n punaiseen paprikaan kasvisten PI40-mallia. Tämä on aiempi reseptikohtainen sovellus. Kookos-limekanacurryssa 120 g paprikaa tuottaa 1,35 g imeytyvää hiilihydraattia annosta kohti ja samalla mallilla 0,54 GK-yksikköä. Taitepapujen kanssa laskettu osa olisi 1,035 GK/annos ja Red Boat -version muiden rivien poisjättö 1,15875 g/annos. Paprika säilyy kokonaan. Pannukypsennyksen mallisovellus ja täsmäversio vaativat katselmoinnin.
 
 [Julkinen fajitapellin lähdeseloste](https://ozirix-dev.github.io/Reseptit/glykeeminen-kuorma/#kana-fajita-pelti)
+
+Katselmoitava versio käyttää edellä kuvatun Red Boat -version aineksia ja valmistusta. Syötävää punaista paprikaa on 120 g ja taitepapuja 150 g. Molemmat kypsennetään kastikkeessa ja lasketaan GI 40 -mallilla. A-moottori palautti CALCULATED ilman esteitä. Pyöristämätön GK-osa on 1,035 ja poisjättövaraus 1,15875 g/annos. Versio odottaa tarkkaa lähde- ja sisältöhyväksyntää.
