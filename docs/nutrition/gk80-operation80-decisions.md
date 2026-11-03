@@ -97,3 +97,9 @@ Nämä kuusi nelikielistä esikatseluversiota ovat kahden alkuperäisen erän li
 Reseptin 200 g mantelijauhoa kahdeksalle edellyttää alle 4 g imeytyvää CHO:ta / 100 g, jotta jauhon osuus alittaa yksittäisen 1 g:n rajan. Kauralesesämpylöiden selvityksessä käytetty täysrasvainen AFCD F006077 (5,4 g/100 g) antaa 1,35 g/annos. Samalla koostumuksella raja alittuisi vasta alle 148,15 g:n erällä. Sellainen muutos vaatisi taikinan toimivuuden tarkistuksen.
 
 Haussa ei varmistunut rajan alittavaa täysrasvaista tuotetta. Esimerkiksi Nutsupplyn kuoritusta mantelista jauhettu tuote ilmoittaa 21 g CHO:ta / 100 g. Kokonais-GK jää avoimeksi, kunnes täysrasvaiselle jauholle löytyy sopiva tuotetieto ja koko pienosuusbudjetti täsmää tai paistetulle taikinalle löytyy soveltuva GI-verrokki. [Nutsupply](https://www.nutsupply.com/products/almond-flour) · [AFCD](https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd)
+
+### Taatelipuuro appelsiinilla
+
+Aiemman ehdotuksen 21,64 GK/annos jää historiatiedoksi. Reseptin 100 g mannasuurimoa keitetään vedessä kahdelle. Inventaarion GI 55 koskee Mani ym. öljyä sisältävää valmistusta. Pletsch ym. tutkivat läheisempää valmistetta, mannasuurimopuuroa, 16 terveellä aikuisella satunnaistetussa vaihtovuorokokeessa. Julkaistu tulos on puuron ja täysjyvävehnäjauhopuuron iAUC-ero, josta ei saada glukoosiasteikon GI:tä ilman soveltuvaa vertailumittausta. Tulos kirjataan valmistustavan näytöksi. [Pletsch ym.](https://pubmed.ncbi.nlm.nih.gov/34999739/)
+
+Veteen kypsennetyn upittun taulukkoarvo 67 sisältää paahdetun mannan ja sipulin. Se ei yksin ratkaise öljyttömän mannapuuron GI-sidosta. Seuraava tarkistus on ensisijaisen valmistuskuvauksen ja vertailuaterian varmistaminen. [Kansainvälinen GI-taulukko](https://ajcn.nutrition.org/article/S0002-9165%2823%2905840-9/fulltext)
