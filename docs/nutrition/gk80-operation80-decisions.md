@@ -75,7 +75,7 @@ Ackee: erillinen GK-täsmäversio käyttää 60 g kypsää ruodotonta suolatursk
 
 ## Jatkoehdotukset
 
-Nämä viisitoista nelikielistä esikatseluversiota ovat kahden alkuperäisen erän lisäksi. Kohdennetussa tarkistuksessa niiden kanssa numeerinen esikatselukattavuus on 282/326.
+Nämä kuusitoista nelikielistä esikatseluversiota ovat kahden alkuperäisen erän lisäksi. Kohdennetussa tarkistuksessa niiden kanssa numeerinen esikatselukattavuus on 283/326.
 
 | Resepti | GK/annos | Päätös ennen julkaisua |
 | --- | ---: | --- |
@@ -94,6 +94,7 @@ Nämä viisitoista nelikielistä esikatseluversiota ovat kahden alkuperäisen er
 | Baozi | 31,20 | Hyväksy punnitut määrät, täytetyn höyrysämpylän verrokki ja lähteen julkaisukäyttö. [Laskelma](gk80-operation80-baozi.md) |
 | Sate ayam | 6,02 | Hyväksy nimetyt tuotteet, punnittu limetti, maapähkinän GI-verrokki ja marinadin täyden siirtymän oletus. [Laskelma](gk80-operation80-sate-ayam.md) |
 | Aamiaisparatha jogurtin kera | 30,80–32,44 | Hyväksy ehdotettu jogurttiannos, perunatäytteen valmistus ja GI-verrokit. [Ehdotus](gk80-operation80-intialainen-aloo-paratha-release-candidate.json) |
+| Margherita-pizza | 58,48 | Hyväksy kaupallinen paistettu pizzapohja kotitaikinan GI-verrokiksi. [Ehdotus](gk80-operation80-pizza-margherita-release-candidate.json) |
 
 ### Aiempi rinnakkainen ehdotus: paistettu maksa ja pekoni
 
@@ -180,3 +181,9 @@ THL verifies [Fineli 205](https://fineli.fi/fineli/fi/elintarvikkeet/205) as raw
 The batch-14 coriander and cumin inputs yield (6 × 1.9 + 2 × 33.7) / 200 = 0.394 g available carbohydrate per serving, using its 2 g assumption for one teaspoon of cumin. Bread and filling total 49.018 g available carbohydrate before yoghurt. The proposed variant specifies boiled and mashed potato, 2 g ground cumin and 50 g yoghurt per serving.
 
 The review variant uses the 2010 Tamar Valley yoghurt measurement from Atkinson et al., supplemental table 1, row 1046 (GI 17, test portion 495 g for 50 g available carbohydrate). A proposed 50 g serving adds 0.85858585 GK. The variant totals 30.80448385–32.44331155 GK per serving, with 0.394 g available carbohydrate from spices outside the GI sum. The test sample composition remains historical and any current yoghurt substitution needs a separate product match. [GI table](https://doi.org/10.1093/ajcn/nqab233) · [Four-language review variant](gk80-operation80-intialainen-aloo-paratha-release-candidate.json)
+
+### Margherita ja Pofiber-pizza
+
+Margheritan pohjaehdotus käyttää Sydneyn yliopiston Boboli-pohjan mittausta (GI 52, 220 °C / 9 min), josta tulee 57,71844 GK annosta kohti. Tomaattimurska lisää pilotin GI:llä 22 yhteensä 0,759 GK annosta kohti. Laskelman yhteissumma on 58,47744. Hiivan ja basilikan osuus on enintään 0,1369 g imeytyvää hiilihydraattia annosta kohti. Kotitaikinan tunnin kohotus ja kuumempi paisto jäävät verrokin epävarmuuksiksi. [GI-tietokanta](https://glycemicindex.com/gi-search/) · [Ehdotus](gk80-operation80-pizza-margherita-release-candidate.json)
+
+Pofiber-pizzan nykyinen ohje määrittää vakiotäytteeksi 50 g kinkkua, 50 g paprikaa ja 50 g herkkusieniä. Inventaarion avoin täyterivi voidaan seuraavassa laskelmassa korvata näillä kolmella erillisellä sidoksella. Boboli-verrokki koskee vehnäpohjaa. Semperin tuoterivillä (17 g hiilihydraattia / 100 g) oletettu 10,5 g Pofiber-annos koko reseptissä tuottaa 0,8925 g hiilihydraattia per annos. Alle 1 g:n poikkeus edellyttää alle 11,76 g:n kokonaismäärää, joten 3,5 rkl kannattaa sitoa punnittuun määrään. Pofiber ja muna käyttävät yhdessä 0,975 g kahden gramman poikkeusvarasta ennen muita puuttuvia rivejä. [Nykyinen resepti](../../reseptit/paaruoat/ketopizza-pofiber-pohjalla.md) · [Inventaario](gk80-operation80-inventory.json)
