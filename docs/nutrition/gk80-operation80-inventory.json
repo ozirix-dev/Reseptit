@@ -4,9 +4,9 @@
   "coverage": {
     "PROPOSED_RANGE": 36,
     "PUBLISHED_SINGLE": 197,
-    "PROPOSED_SINGLE": 44,
+    "PROPOSED_SINGLE": 45,
     "IN_PROGRESS": 36,
-    "NO_GK": 3,
+    "NO_GK": 2,
     "PUBLISHED_RANGE": 10
   },
   "reviewedPrHeads": {
@@ -5889,10 +5889,10 @@
       "recipeSha256": "7d428074d611fe4099d474cae84332bfada53d7be72e7aaba65f2eb440530951",
       "pilotInputSha256": "0da082e4655f8716bd8a9fc76a8d9657321b370fab8402f6c4a902857f4eace3",
       "servings": 2,
-      "status": "NO_GK",
+      "status": "PROPOSED_SINGLE",
       "priorEvidence": [],
-      "level": null,
-      "ownerApproval": null,
+      "level": "B",
+      "ownerApproval": false,
       "sourceQualified": null,
       "blockers": [
         "karibia-bammy-kassavaleipa: kassava: The recipe amount 1 kpl has no food-specific mass conversion for Cassava, peeled, fresh, raw.",
@@ -6005,6 +6005,38 @@
       "operation80Screen": {
         "finding": "Current recipe fixes raw peeled cassava at 250 g and lime juice at 15 g. Pressing losses, cassava preparation safety and an applicable human GI remain unresolved.",
         "evidencePath": "docs/nutrition/gk80-operation80-batch-49.md"
+      },
+      "operation80Proposal": {
+        "evidencePath": "docs/nutrition/gk80-operation80-batch-62.md",
+        "baselineRecipeSha256": "7d428074d611fe4099d474cae84332bfada53d7be72e7aaba65f2eb440530951",
+        "inputFields": [
+          "gramsBatch",
+          "choPer100g",
+          "giGlucoseScale"
+        ],
+        "scenarios": [
+          {
+            "inputs": [
+              [
+                181.5,
+                41.87,
+                117.55
+              ],
+              [
+                200,
+                3.4,
+                50
+              ],
+              [
+                100,
+                0.77,
+                50
+              ]
+            ],
+            "gkPerServing": "46.5580028875"
+          }
+        ],
+        "publicationAuthorized": false
       }
     },
     {

@@ -1,0 +1,13 @@
+# Bammy-kassavaleipä avokadolla
+
+**46,56 GK/annos**, ehdollinen B-ehdotus kahdelle. Korvaa reseptin raakakassava yhdellä valmiilla Carib Imports Jamaican Bammy Cassava Cakes -kassavaleivällä, joka on puolet 363 g:n pakkauksesta. Leikkaa neljään osaan. Käytä 200 g Blue Dragon Coconut Milkiä, pehmennä leipä osalla maidosta ja paista pannulla reseptin öljyssä. Kuumenna jäljelle jäävä kookosmaito erikseen ja jaa annoksille, jotta laskennan 200 g vastaa syötyä määrää. Tarjoa kummallekin kaksi palaa sekä 50 g kuorittua avokadoa ja 7,5 g limettimehua. Tämä valmistusversio käyttää teollisesti käsiteltyä bammyä, eikä laskelma kata nykyistä raakakassavaohjetta. Noudata pakkauksen kypsennysohjetta.
+
+| Ainesosa | g/erä | Imeytyvä CHO g/100 g | GI |
+| --- | ---: | ---: | ---: |
+| Carib Imports Jamaican Bammy Cassava Cakes | 181,5 | 41,87 | 117,55 |
+| Blue Dragon Coconut Milk | 200 | 3,4 | 50 |
+| Avokado, Fineli 11057 | 100 | 0,77 | 50 |
+
+Tuotetiedon neljännesleivässä on 21 g kokonais-CHO:ta ja 2 g kuitua. Neljä neljännestä antaa 76 g imeytyvää CHO:ta, joka vastaa 41,87 g:aa/100 g pyöristettynä. Lähde on jälleenmyyjän ravintoarvotaulukko. Limettimehu, USDA 168156, tuo 0,6015 g CHO/annos ja jää GK-summasta pienosuussäännöllä. Öljy ja suola eivät lisää CHO:ta. [Carib Imports -tuotetiedot](https://www.heb.com/product-detail/carib-imports-jamaican-bammy-cassava-cakes/1967608) · [Blue Dragon](https://www.bluedragon.co.uk/products/coconut-milk) · [Fineli CC BY 4.0](https://fineli.fi/fineli/fi/elintarvikkeet/11057) · [USDA](https://fdc.nal.usda.gov/food-details/168156/nutrients)
+
+Venezuelalaisessa ihmistutkimuksessa casaben glukoosiasteikon GI oli 117,55. Ohut kassavaleipä on prosessiltaan läheisempi verrokki bammylle kuin keitetty kokonainen kassava. Casabe eroaa bammystä kuivaukseltaan, paksuudeltaan ja tarjoilukosteudeltaan. Erillinen, viiden hengen rinnakkaisryhmiä käyttänyt tutkimus raportoi casabelle leipäviitteisen GI:n 65. Tutkimusten ero lisää epävarmuutta, eikä niitä yhdistetä saman asteikon vaihteluväliksi. Tämä skenaario näyttää glukoosivertailulla mitatun analogin vaikutuksen, eikä vahvista Carib-tuotteen tai koko aterian mitattua vastetta. Kookosmaidon ja avokadon 50 on laskentakoodi. Raakatulos pyöristetyllä pitoisuudella on 46,5580028875 GK/annos. [Casaben glukoosivertailu](https://ve.scielo.org/scielo.php?pid=S1690-31102006000300031&script=sci_arttext) · [Casaben leipävertailu](https://www.revistasan.org.ar/resumen.php?idt=402) · [Casaben valmistus](https://www.revfacagronluz.org.ve/PDF/enero_marzo2013/v30n1a2013131148.pdf) · [Kassavan käsittely](https://www.foodstandards.gov.au/consumer/prevention-of-foodborne-illness/cassava) · [Aiempi tarkistus](gk80-operation80-batch-49.md)
