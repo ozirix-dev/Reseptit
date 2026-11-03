@@ -4,13 +4,19 @@ Alla olevat laskennalliset arviot koskevat vain nimettyjä GK-versioita. Ehdokas
 
 | Resepti | Menetelmä ja GK/annos | CHO pois/annos | Tila ja avoin ehto |
 | --- | --- | ---: | --- |
-| Jiaozi | A · 15,95 · 4 annosta | 0,37875 g | **OWNER DECISION**. Päätös keitetystä GK-versiosta ja epävarmasta analogiasta. |
+| Jiaozi | A · 15,95 · 4 annosta | 0,37875 g | **READY**. Hyväksyntä keitetystä GK-versiosta ja epävarmasta analogiasta. |
 | Chow mein | A · 11,92–12,18 · 4 annosta | 0,93 g | **READY**. Hyväksytty versio käyttää 300 g kypsää valutettua munanuudelia ja 12 g Lee Kum Kee UK Premium Oyster Saucea. Väli vaihtaa GI-verrokkia samalla nuudelimäärällä. |
 | Serabi | B · 40,22 · 2 annosta | 0 g | **READY**. Hyväksytty ohut pannuserabi, jonka koko taikinalle käytetään dosaverrokkia. Fariinisokeri antaa laskelmassa 8,57 GK/annos erikseen. |
-| Dan dan | A · 18,53–24,98 · 4 annosta | 0,195 g | **OWNER DECISION**. Päätös kahdesta 300 g:n nuudelivaihtoehdosta ja tarjoilusta ilman valinnaista paksoita. |
-| Soba-aamiaiskeitto | A · 20,43 · 2 annosta | 0,90 g | **OWNER DECISION**. Päätös nimetystä sobasta, punnitusta dashista, nimetystä kanaliemestä ja pinaatista. |
+| Dan dan | A · 18,53–24,98 · 4 annosta | 0,195 g | **READY**. Hyväksyntä kahdesta 300 g:n nuudelivaihtoehdosta ja tarjoilusta ilman valinnaista paksoita. |
+| Soba-aamiaiskeitto | A · 20,43 · 2 annosta | 0,90 g | **READY**. Hyväksyntä nimetystä sobasta, punnitusta dashista, nimetystä kanaliemestä ja pinaatista. |
 
 Omistaja hyväksyi 3.11.2026 chow meinin ja ohuen pannuserabin GK-versiot commitissa `a16f1e19a07641164cdd15659a8b27b84deef66f`. Chow meinin ehdokas-JSONin SHA-256 (LF-rivinvaihdoilla) on `190fcd3422ebe04dee0a22d65d13ebca83c1de240e78898286fb75727623edf4` ja serabin `8fed31af6463e8c0907a294fc12b1e0162ee5cd86b986eeec7c04bd867b4b7ad`. READY tarkoittaa tässä hyväksyttyä GK-versiota. Julkaisuvaltuutus säilyy erillisenä.
+
+Omistaja hyväksyi myös jiaozin, dan danin ja soba-aamiaiskeiton GK-versiot julkaisuvalmisteluun. Hyväksyntä koskee commitin `82bc6c9eb63e380eb69d4ebac7466d39260a6d09` ehdokas-JSONeja ja seuraavia SHA-256-tarkisteita (LF-rivinvaihdoilla). [Omistajan päätös](https://github.com/ozirix-dev/Reseptit/pull/233#issuecomment-6615764475)
+
+- Jiaozi · [gk100-rescue-jiaozi](gk100-rescue-jiaozi-release-candidate.json) · `6660ce5dbf2690ccb89c9da125a8c3ea00a6703a57ef92d33241a7f207932d9c`
+- Dan dan · [gk100-rescue-dan-dan](gk100-rescue-dan-dan-release-candidate.json) · `ad22de231e93aa7f73a3ea6217d8ffadaf10994a1ce1cc1035f016503f2ba875`
+- Soba-aamiaiskeitto · [gk80-operation80-soba](gk80-operation80-soba-release-candidate.json) · `7196b4361e648d9a8d8c66dad87477d79bafdee02f42bab6496f80febb9e9a81`
 
 Codexin uusintakatselmointi valmistui samalle commitille ilman uusia tai ratkaisemattomia löydöksiä. Myös build läpäisi. [Katselmointi](https://github.com/ozirix-dev/Reseptit/pull/233#issuecomment-6615481518) · [Build](https://github.com/ozirix-dev/Reseptit/actions/runs/41718687542/job/126205347041)
 
