@@ -4,9 +4,9 @@
   "coverage": {
     "PROPOSED_RANGE": 36,
     "PUBLISHED_SINGLE": 197,
-    "PROPOSED_SINGLE": 37,
+    "PROPOSED_SINGLE": 38,
     "IN_PROGRESS": 36,
-    "NO_GK": 10,
+    "NO_GK": 9,
     "PUBLISHED_RANGE": 10
   },
   "reviewedPrHeads": {
@@ -111,7 +111,7 @@
     "japanilainen-curry-tofulla",
     "khao-soi-vhh-konjac"
   ],
-  "nextRecipeId": "tunisialainen-ojja",
+  "nextRecipeId": "idli-sambar",
   "recipes": [
     {
       "recipeId": "aloo-paratha",
@@ -17129,10 +17129,10 @@
       "recipeSha256": "7d9a80b28b84a9dbd8308e9f4a49d6ec240681259c6cd1bd35480c7e475fa5b8",
       "pilotInputSha256": "f0396d4bd9381862c46e6ae7a1c32c841df65821ff1345bb9e27482b4d805d5f",
       "servings": 4,
-      "status": "NO_GK",
+      "status": "PROPOSED_SINGLE",
       "priorEvidence": [],
-      "level": null,
-      "ownerApproval": null,
+      "level": "B",
+      "ownerApproval": false,
       "sourceQualified": null,
       "blockers": [
         "tunisialainen-ojja: punainen paprika: AJO 1.6B: generic Pepper GI 40 is reference-only. Species, colour, preparation and original human measurement are unverified; DOI 10.3390/nu12102989 Table 1 cannot support this ingredient. Missing GI is not zero.",
@@ -17283,7 +17283,64 @@
             "GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
           ]
         }
-      ]
+      ],
+      "operation80Proposal": {
+        "evidencePath": "docs/nutrition/gk80-operation80-batch-55.md",
+        "baselineRecipeSha256": "7d9a80b28b84a9dbd8308e9f4a49d6ec240681259c6cd1bd35480c7e475fa5b8",
+        "inputFields": [
+          "gramsBatch",
+          "choPer100g",
+          "giGlucoseScale"
+        ],
+        "scenarios": [
+          {
+            "inputs": [
+              [
+                160,
+                43.9,
+                54
+              ],
+              [
+                100,
+                4.8,
+                40
+              ],
+              [
+                150,
+                4.5,
+                40
+              ],
+              [
+                6,
+                10.2,
+                40
+              ],
+              [
+                400,
+                3.9,
+                40
+              ],
+              [
+                2,
+                33.7,
+                50
+              ],
+              [
+                220,
+                0.3,
+                50
+              ],
+              [
+                15,
+                3.03,
+                50
+              ]
+            ],
+            "gkPerServing": "12.4821625"
+          }
+        ],
+        "publicationAuthorized": false
+      }
     },
     {
       "recipeId": "uunikanapasta-kesakurpitsa",
