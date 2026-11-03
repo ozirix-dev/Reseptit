@@ -33,3 +33,7 @@ Rouhitun maapähkinän GI 7 tuottaisi 0,046725 GK/annos ja aiempi GI 13 tuottais
 Massapohjainen vaihtoehto säilyttää Squid 300 ml -tuotteen ja alkuperäiset 30 g: Tjin’s Tokon 3,4 g/100 g antaa 0,255 g/annos. Sillä ehdollinen yhteisvaraus on 1,9545 g ja marginaali 0,0455 g. Tuotesivulla ei ole EAN-tunnusta. Panangin Red Boat -sidonta käyttää per 100 ml -ilmoitusta, joten se edellyttäisi uutta sisältöversiota tai varmennettua tiheyttä. Pad kee maon hyväksytty AFCD-kalakastikeproxy on tapauskohtainen. Ensisijainen jatkoreitti säilyttää Squidin ja varmistaa massapohjaisen ilmoituksen tuotetunnisteen.
 
 [Squid-massatieto](https://www.tjinstoko.eu/en/squid-brand-fish-sauce-300ml.html) · [Red Boat -lähdekortti](panang-a-route/sources.json)
+
+Squid-tuote on nyt yksilöity. Terunkan 3,4 g/100 g -ilmoitus ja Asia Express Foodin tuotetieto ilmoittavat saman EAN-tunnuksen 8850620888012. Käytä tälle nimellistä varausta 0,255 g/annos ja yhteisvarausta 1,9545 g/annos. Maahantuoja vahvistaa tuotetunnisteen, ja jälleenmyyjän sivu antaa massapohjaisen ravintoarvon.
+
+[Massapohjainen ilmoitus ja EAN](https://www.terunka.cz/produkt/fish-sauce-rybi-omacka-300-ml) · [Maahantuoja](https://order.asiaexpressfood.nl/en/products/vissaus-5254.html)
