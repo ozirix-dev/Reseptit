@@ -71,3 +71,5 @@ A-moottori antoi 14,29 GK/annos. Lasketut rivit ovat paprika GI 40 -mallilla, to
 [Laskentasyöte](../../nutrition/calculations/tunisialainen-ojja.json) · [Harissan toimittajatieto](https://www.henderson-foodservice.com/productpdf/download/file/id/1032/name/Harissa_Paste_BD_%252528415ml%252529.pdf/)
 
 Harissan pakkaus on Le Phare du Cap Bon 380 g, EAN 6194049100020. Ranskalaisen tuotetiedon 11 g hiilihydraattia / 100 g vastaa toimittajan saman pakkauskoon ilmoitusta. Viiden gramman punnittu määrä antaa nimellisen 0,1375 g/annos varauksen. Tämä lähdesidonta ja tarkka sisältö odottavat hyväksyntää. [Pakkaus ja ravintoarvot](https://www.intermarche.com/produit/harissa-de-piment-rouge-fort/6194049100020)
+
+Käyttäjä hyväksyi commitin 99ddd78 tarkan ojjan lähde- ja sisältöversion integraation valmisteluun. Julkaisusta päätetään erikseen.
