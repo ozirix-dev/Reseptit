@@ -17,3 +17,11 @@ Kaikkien viiden lähde- ja sisältöhyväksyntä on kirjattu [hyväksyntätietue
 Julkinen lähtöluku on 198/326 Lindströminpihvien julkaisun jälkeen. PR 207 sisältää siemengranolan, pistaasijogurtin, kongjukin ja uunifalafelin. PR 210 tarjoaa samalle siemengranolan resepti-ID:lle EDEKA-mantelilastuihin sidotun 2,38 GK:n version. Molemmat PR:t muuttavat samaa GK-rekisteriä ja kahta yhteistä testitiedostoa. Yhdessä ne kattavat neljä eri reseptiä, joten niiden julkaisu nostaisi kattavuuden 202/326:een.
 
 Integraatiota odottavat Kerala-kalacurry, maksa ja pekoni sekä kevätsipulipannukakku. Niiden jälkeen ehdollinen kattavuus olisi 205/326. Labneh-kulhon täsmäversio odottaa erillistä lähde- ja sisältöhyväksyntää.
+
+## Julkaisujonon tarkistus
+
+Julkisessa GK-koonnissa on 198/326 numeerista reseptiä. Pongalilla on jo julkinen GK-versio. Vanhan päätöstaulukon integraatiomerkintä ei tee siitä uutta kattavuuslisää.
+
+PR 207 on Ready tilassa ja build läpäisi tarkistuksen commitissa 5f91ad26ffb6f82f4ad0d94f04863821f674cce8. Sen neljä reseptiä nostaisivat kattavuuden julkaistuina 202/326:een. PR 210:n granola on sama resepti-ID. Kerala-kalacurry, paistettu maksa ja pekoni sekä kevätsipulipannukakku näkyvät julkisessa koonnissa ilman numeerista arviota. Niiden tarkat hyväksytyt versiot nostaisivat ehdollisen kattavuuden 205/326:een. Okayu, labneh ja teehaudutetut munat odottavat lähde- ja sisältöpäätöksiä.
+
+[Julkinen koonti](https://ozirix-dev.github.io/Reseptit/glykeeminen-kuorma/) · [PR 207](https://github.com/ozirix-dev/Reseptit/pull/207)
