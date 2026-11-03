@@ -28,8 +28,8 @@ test('the four A inputs and legacy variants remain intact as four approved B ver
  for(const previous of baseline.legacyVariants){const v=old.find(v=>v.recipeId===previous.recipeId)!;assert.equal(digest(v),previous.variantSha256,previous.recipeId);}
  const report=read('tmp/nutrition/glycemic-load-pilot.json');
  assert.deepEqual(report.gkOnlyVariants,gkOnlyVariants);assert.deepEqual(report.versionCoverage,gkVersionCoverage);
- assert.equal(gkVersionCoverage.numericRecipes,194);assert.equal(gkVersionCoverage.originalNumeric,156);assert.equal(gkVersionCoverage.additionalA,28);assert.equal(gkVersionCoverage.additionalB,10);assert.equal(gkVersionCoverage.total,326);assert.equal(gkVersionCoverage.missing,132);
- assert.deepEqual(report.coverageViews,{originalRecipe:{total:326,numeric:156,missing:170},atLeastOneExactVersion:{total:326,numeric:194,missing:132,additionalApprovedVersions:38}});
+ assert.equal(gkVersionCoverage.numericRecipes,197);assert.equal(gkVersionCoverage.originalNumeric,156);assert.equal(gkVersionCoverage.additionalA,31);assert.equal(gkVersionCoverage.additionalB,10);assert.equal(gkVersionCoverage.total,326);assert.equal(gkVersionCoverage.missing,129);
+ assert.deepEqual(report.coverageViews,{originalRecipe:{total:326,numeric:156,missing:170},atLeastOneExactVersion:{total:326,numeric:197,missing:129,additionalApprovedVersions:41}});
  assert.throws(()=>countGkVersions(report.results,[...gkOnlyVariants,four[0]]),/distinct/);
  for(const id of ['jerk-kana','sate-ayam'])assert.ok(!gkOnlyVariants.some(v=>v.recipeId===id));
 });
@@ -82,7 +82,7 @@ test('four product A versions preserve the approved calculated-part presentation
 });
 
 test('Panang and tofu kimchi use the approved calculated portions and quantities',()=>{
- const [panang,kimchi]=gkOnlyVariants.slice(35);
+ const [panang,kimchi]=gkOnlyVariants.slice(35,37);
  assert.equal(panang.recipeId,'panang-curry-kanalla-vhh');
  assert.equal(panang.point,1.89);
  assert.ok(Math.abs(panang.omittedCho-1.9328)<1e-10);
@@ -97,6 +97,14 @@ test('Panang and tofu kimchi use the approved calculated portions and quantities
    assert.ok(render(variant,locale).includes(variant.limitation![locale]));
   }
  }
+});
+
+test('approved curry variants retain the sealed calculation and native quantities',()=>{
+ const [green,red,yellow]=gkOnlyVariants.slice(38);
+ assert.deepEqual([green.point,red.point,yellow.point],[2.38,1.95,1.28]);
+ assert.deepEqual(gkOnlyQuantity(green,6,8),{amount:60,unit:'ml'});
+ assert.deepEqual(gkOnlyQuantity(red,5,8),{amount:30,unit:'g'});
+ assert.ok([green,red,yellow].every(v=>v.level==='A' && v.omittedCho<2));
 });
 
 test('all326 parent GK objects,23 old variants, macro sources and recipe trees remain on the main baseline',()=>{

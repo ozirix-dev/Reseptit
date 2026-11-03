@@ -1,0 +1,178 @@
+{
+  "activation": false,
+  "ownerApproval": false,
+  "cases": [
+    {
+      "recipeId": "punainen-kanacurry-vhh",
+      "classification": "CONDITIONAL_A_ARITHMETIC_SOURCE_HOLD",
+      "arithmeticProfile": "EXISTING_A",
+      "servings": 4,
+      "paths": {
+        "fi": "reseptit/paaruoat/punainen-kanacurry-vhh.md",
+        "en": "kaannokset/en/paaruoat/punainen-kanacurry-vhh.md",
+        "sv": "kaannokset/sv/paaruoat/punainen-kanacurry-vhh.md",
+        "th": "kaannokset/th/paaruoat/punainen-kanacurry-vhh.md"
+      },
+      "recipeSha256Lf": {
+        "fi": "c332eb5b3779330a6e6c82a5172b8f7107ece977be6b72249f48ab2c950a4094",
+        "en": "79a3923fa0d06d292954c762681cb1868f32c33d17af9e91073de8b1b7327a99",
+        "sv": "dff12363bf60627400bef7a9277e6943cc5b6d5f10863a1e9b73875fe5d0e7a9",
+        "th": "64eee6c32f525315f7dadd68d1f74ca1e4d1e253c3c3b60499fb5c75f149901d"
+      },
+      "originalIngredients": [
+        {
+          "amount": 600,
+          "unit": "g",
+          "item": "nahatonta broilerin reisilihaa",
+          "note": "suupaloiksi leikattuna"
+        },
+        {
+          "amount": 400,
+          "unit": "g",
+          "item": "täysrasvaista kookosmaitoa"
+        },
+        {
+          "amount": 30,
+          "unit": "g",
+          "item": "Mae Ploy punaista currytahnaa"
+        },
+        {
+          "amount": 200,
+          "unit": "g",
+          "item": "bambunversoja",
+          "note": "valutettuna"
+        },
+        {
+          "amount": 120,
+          "unit": "g",
+          "item": "punaista paprikaa",
+          "note": "suikaleina"
+        },
+        {
+          "amount": 15,
+          "unit": "g",
+          "item": "Squid Brand -kalakastiketta"
+        },
+        {
+          "amount": 4,
+          "unit": "g",
+          "item": "Foodin-erytritolia"
+        },
+        {
+          "amount": 10,
+          "unit": "g",
+          "item": "kookosöljyä"
+        },
+        {
+          "amount": 20,
+          "unit": "g",
+          "item": "thaibasilikan lehtiä"
+        },
+        {
+          "amount": 600,
+          "unit": "g",
+          "item": "kukkakaaliriisiä"
+        },
+        {
+          "amount": 60,
+          "unit": "g",
+          "item": "limelohkoja"
+        }
+      ],
+      "ingredients": [
+        {
+          "originalIndex": 0,
+          "name": "nahatonta broilerin reisilihaa",
+          "grams": 600,
+          "sourceId": "A002806",
+          "giId": null
+        },
+        {
+          "originalIndex": 1,
+          "name": "Fairtrade Original coconut milk 1 L",
+          "grams": 400,
+          "sourceId": "FTO_1L_08_G",
+          "giId": null
+        },
+        {
+          "originalIndex": 2,
+          "name": "Valcom Red 210 g",
+          "grams": 30,
+          "sourceId": "VALCOM_RED",
+          "giId": null
+        },
+        {
+          "originalIndex": 3,
+          "name": "Kingfisher bamboo shoots, weighed drained",
+          "grams": 200,
+          "sourceId": "KINGFISHER_DRAINED",
+          "giId": null
+        },
+        {
+          "originalIndex": 4,
+          "name": "punaista paprikaa",
+          "grams": 120,
+          "sourceId": "386",
+          "giId": "op142-vegetable-imputation40"
+        },
+        {
+          "originalIndex": 5,
+          "name": "Squid fish sauce 300 ml EAN 8850620888012",
+          "grams": 15,
+          "sourceId": "SQUID300",
+          "giId": null
+        },
+        {
+          "originalIndex": 6,
+          "name": "Foodin-erytritolia",
+          "grams": 4,
+          "sourceId": "FOODIN_ERYTHRITOL",
+          "giId": null
+        },
+        {
+          "originalIndex": 7,
+          "name": "kookosöljyä",
+          "grams": 10,
+          "sourceId": "34140",
+          "giId": null
+        },
+        {
+          "originalIndex": 8,
+          "name": "thaibasilikan lehtiä",
+          "grams": 20,
+          "sourceId": "F11134",
+          "giId": null
+        },
+        {
+          "originalIndex": 9,
+          "name": "kukkakaaliriisiä",
+          "grams": 600,
+          "sourceId": "F322",
+          "giId": "op142-vegetable-imputation40"
+        },
+        {
+          "originalIndex": 10,
+          "name": "Peeled raw lime flesh, all served",
+          "grams": 60,
+          "sourceId": "F005199",
+          "giId": null
+        }
+      ],
+      "preparationDecision": "Retain all sauce and serve all cauliflower rice and weighed peeled lime flesh. Stir coconut milk before weighing. Weigh bamboo after draining, discard the packing liquid.",
+      "requiredDecisions": [
+        "EXACT_PRODUCT_SOURCE_AND_CONTENT_OWNER_REVIEW",
+        "GREEN_CURRY_AU64_VS_UK173_SAME_UPC_LABEL_VERSION",
+        "SQUID700_PRIMARY_LABEL_AND_G_VS_ML_UNIT_RESOLUTION",
+        "THAI_N35_TOTAL_CAP_ADMISSION_WITH_AVAILABLE_UNKNOWN",
+        "GK_ONLY_MACRO_VERSION_COMPATIBILITY"
+      ],
+      "ownerApproval": false,
+      "sourceQualified": false,
+      "publicationAuthorized": false,
+      "macroAction": "PRESERVE_ALL_CURRENT_VALUES_AND_WITHHOLDINGS",
+      "noNewGiConstants": true,
+      "minorBOmissionProfileActivated": false,
+      "inputSha256": "b97b273a9fc4736a9022bddd671c40bf094aff1f8f8c850bddba5f9890f78b89"
+    }
+  ]
+}
