@@ -4,9 +4,9 @@
   "coverage": {
     "PROPOSED_RANGE": 36,
     "PUBLISHED_SINGLE": 197,
-    "PROPOSED_SINGLE": 42,
+    "PROPOSED_SINGLE": 43,
     "IN_PROGRESS": 36,
-    "NO_GK": 5,
+    "NO_GK": 4,
     "PUBLISHED_RANGE": 10
   },
   "reviewedPrHeads": {
@@ -111,7 +111,7 @@
     "japanilainen-curry-tofulla",
     "khao-soi-vhh-konjac"
   ],
-  "nextRecipeId": "pekingin-ankka",
+  "nextRecipeId": "vietnamilainen-papaija-kookospuuro",
   "recipes": [
     {
       "recipeId": "aloo-paratha",
@@ -14882,10 +14882,10 @@
       "recipeSha256": "2817c67ea94abfd7eeeffa4e9a9b15911b84d72879e3f0cdd14d163932df02a6",
       "pilotInputSha256": "5612268001e4b43bcbf010e14bfcfd12f0e042bf4ed6f1182299cdf8e725469f",
       "servings": 4,
-      "status": "NO_GK",
+      "status": "PROPOSED_SINGLE",
       "priorEvidence": [],
-      "level": null,
-      "ownerApproval": null,
+      "level": "B",
+      "ownerApproval": false,
       "sourceQualified": null,
       "blockers": [
         "roujiamo: porsaan kassleria: No specific Fineli/AFCD food record and preparation match was resolved for “porsaan kassleria”; it is not treated as zero.",
@@ -15066,7 +15066,44 @@
             "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.660 g available carbohydrate): GI evidence is missing."
           ]
         }
-      ]
+      ],
+      "operation80Proposal": {
+        "evidencePath": "docs/nutrition/gk80-operation80-batch-60.md",
+        "baselineRecipeSha256": "2817c67ea94abfd7eeeffa4e9a9b15911b84d72879e3f0cdd14d163932df02a6",
+        "inputFields": [
+          "gramsBatch",
+          "choPer100g",
+          "giGlucoseScale"
+        ],
+        "scenarios": [
+          {
+            "inputs": [
+              [
+                300,
+                73.998,
+                79.6
+              ],
+              [
+                30,
+                14,
+                50
+              ],
+              [
+                15,
+                31,
+                50
+              ],
+              [
+                12,
+                4.74,
+                40
+              ]
+            ],
+            "gkPerServing": "45.339936"
+          }
+        ],
+        "publicationAuthorized": false
+      }
     },
     {
       "recipeId": "samosa",
