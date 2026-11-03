@@ -4,9 +4,9 @@
   "coverage": {
     "PROPOSED_RANGE": 36,
     "PUBLISHED_SINGLE": 197,
-    "PROPOSED_SINGLE": 28,
+    "PROPOSED_SINGLE": 29,
     "IN_PROGRESS": 36,
-    "NO_GK": 19,
+    "NO_GK": 18,
     "PUBLISHED_RANGE": 10
   },
   "reviewedPrHeads": {
@@ -111,7 +111,7 @@
     "japanilainen-curry-tofulla",
     "khao-soi-vhh-konjac"
   ],
-  "nextRecipeId": "tunisialainen-brik",
+  "nextRecipeId": "vietnamilainen-banh-cuon-sienilla",
   "recipes": [
     {
       "recipeId": "aloo-paratha",
@@ -16716,10 +16716,10 @@
       "recipeSha256": "1eb06f3db86fba5a21db1e252bdc307c37cbe146e1de3417d2d6f3f827ffcd7a",
       "pilotInputSha256": "a850862fd8958d1632e0c143da85f211b1caf0625c49aab800cf4f7afc256aa0",
       "servings": 4,
-      "status": "NO_GK",
+      "status": "PROPOSED_SINGLE",
       "priorEvidence": [],
-      "level": null,
-      "ownerApproval": null,
+      "level": "B",
+      "ownerApproval": false,
       "sourceQualified": null,
       "blockers": [
         "tunisialainen-brik: filo- tai malsouka-taikinaa: No source-matched composition and preparation was resolved for “filo- tai malsouka-taikinaa”; it is not treated as zero.",
@@ -16822,7 +16822,45 @@
             "Source-documented zero available carbohydrate: Pure edible oil has zero available carbohydrate."
           ]
         }
-      ]
+      ],
+      "operation80Proposal": {
+        "evidencePath": "docs/nutrition/gk80-operation80-batch-45.md",
+        "baselineRecipeSha256": "1eb06f3db86fba5a21db1e252bdc307c37cbe146e1de3417d2d6f3f827ffcd7a",
+        "inputFields": [
+          "gramsBatch",
+          "choPer100g"
+        ],
+        "matrixInputs": [
+          [
+            68,
+            60
+          ],
+          [
+            160,
+            0
+          ],
+          [
+            220,
+            0.3
+          ],
+          [
+            20,
+            1.69
+          ],
+          [
+            15,
+            3.03
+          ]
+        ],
+        "choPerServing": "10.563125",
+        "scenarios": [
+          {
+            "giGlucoseScale": "50",
+            "gkPerServing": "5.2815625"
+          }
+        ],
+        "publicationAuthorized": false
+      }
     },
     {
       "recipeId": "tunisialainen-ojja",
