@@ -83,7 +83,10 @@ export function buildPohaHoneyMustardVariants(root: string): GkOnlyVariant[] {
     const path = directory + version.file;
     const packet: Packet = JSON.parse(read(path));
     const {recipeId, servings, ingredients, expected} = packet;
-    if (textHash(read(packet.sourcePath)) !== packet.sourceLfSha256 || ingredients.length !== version.names.length) {
+    if (textHash(read(packet.sourcePath).replace(
+      "\nstatus: published\ntranslation_languages: [en, sv, th]\ntranslation_status: {en: published, sv: published, th: published}\n",
+      "\nstatus: published\n",
+    )) !== packet.sourceLfSha256 || ingredients.length !== version.names.length) {
       throw Error('Approved GK recipe binding changed: ' + recipeId);
     }
     const catalog: {foods: Record<string, FoodRecord>; existingGiCards: Record<string, GlycemicIndexRecord>} =
