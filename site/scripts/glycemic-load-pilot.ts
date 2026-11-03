@@ -186,7 +186,7 @@ const operation80Variants = await (async () => {
     evidencePath: string; evidenceSha256: string; scenarios: string[];
   };
   const approval = await readFile(path.join(root, 'docs/nutrition/gk80-operation80-first-release-approval.json'), 'utf8');
-  if (textHash(approval) !== 'f07b97cc44daaf863817b57d8a1685634019de2df24af6d1c5ab034251c9b45d') throw new Error('Operation80 release approval changed');
+  if (textHash(approval) !== 'c370cb126d9e35666c0a48fb51b540e40fbc19c1679d892362dd391fc850f2ac') throw new Error('Operation80 release approval changed');
   const { boundFiles }: { boundFiles: Record<string, string> } = JSON.parse(approval);
   await Promise.all(Object.entries(boundFiles).map(async ([file, expected]) => {
     if (textHash(await readFile(path.join(root, file), 'utf8')) !== expected) {
