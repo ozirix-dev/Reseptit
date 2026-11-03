@@ -1,0 +1,101 @@
+{
+  "batchId": "gk100-pr234-content-decisions",
+  "schemaVersion": 1,
+  "candidates": [
+    {
+      "classification": {
+        "review": {
+          "depth": "FOCUSED",
+          "evidence": "docs/nutrition/gk80-operation80-batch-15.md sekä ehdokaspaketin ainesosakirjanpito ja nelikielinen valmistusrajaus."
+        },
+        "outcome": "OWNER_DECISION",
+        "risk": "MEDIUM",
+        "candidateSha256": "d28fe24be6b2c96bf59c53cb32fd4ca80ea6f5180346fb3f8e182a7a0eab4942",
+        "reasons": [
+          "Vehnäletun ja vehnä-dosan mittaukset muodostavat skenaariot taikinalle. Muna ja taittaminen heikentävät vastaavuutta. Maissi, maapähkinä ja sokeri käsitellään erikseen.",
+          "Laskentamuistio yksilöi koostumuslähteet ja niiden käyttöehdot. Tutkimuksista käytetään yksittäisiä GI-lukuja."
+        ],
+        "contentChange": "GK_ONLY",
+        "contentSummary": "Hyväksy kahden annoksen ohut pannulettu, punnittu muna ja erikseen keitetty valutettu pakastemaissi."
+      },
+      "packetPath": "docs/nutrition/gk80-operation80-apam-balik-release-candidate.json",
+      "recipeId": "malesialainen-apam-balik"
+    },
+    {
+      "classification": {
+        "review": {
+          "depth": "FOCUSED",
+          "evidence": "docs/nutrition/gk80-operation80-batch-46.md sekä ehdokaspaketin ainesosakirjanpito ja nelikielinen valmistusrajaus."
+        },
+        "outcome": "OWNER_DECISION",
+        "risk": "MEDIUM",
+        "candidateSha256": "37dc9884050ee55f439a7d61e8311067b33c8abf3148e1db5b73e1b2d7b6fde6",
+        "reasons": [
+          "GI 90 koskee täyttämätöntä höyrytettyä riisirullaa. Taikinan koostumus ja tarjoilutapa voivat erota. Täyte käsitellään erikseen, ja osa sen GI-arvoista on laskentakoodeja.",
+          "Laskentamuistio yksilöi koostumuslähteet ja niiden käyttöehdot. Tutkimuksista käytetään yksittäisiä GI-lukuja."
+        ],
+        "contentChange": "GK_ONLY",
+        "contentSummary": "Hyväksy kahden annoksen höyrytetty riisilevy sekä punnittu sieni-lihatäyte, kalakastike ja korianteri."
+      },
+      "packetPath": "docs/nutrition/gk80-operation80-banh-cuon-release-candidate.json",
+      "recipeId": "vietnamilainen-banh-cuon-sienilla"
+    },
+    {
+      "classification": {
+        "review": {
+          "depth": "FOCUSED",
+          "evidence": "docs/nutrition/gk80-operation80-batch-05.md sekä ehdokaspaketin ainesosakirjanpito ja nelikielinen valmistusrajaus."
+        },
+        "outcome": "OWNER_DECISION",
+        "risk": "MEDIUM",
+        "candidateSha256": "e176efafcb95c513b466e542525e6e51585fca69b86829326883fce5f1310242",
+        "reasons": [
+          "Kaksi vehnälettumittausta määrittää taikinaskenaariot. Kimchi ja muna muuttavat taikinan happamuutta ja rakennetta. Kimchin hiilihydraatit sidotaan nimetyn tuotteen etikettiin.",
+          "Laskentamuistio yksilöi koostumuslähteet ja niiden käyttöehdot. Tutkimuksista käytetään yksittäisiä GI-lukuja."
+        ],
+        "contentChange": "GK_ONLY",
+        "contentSummary": "Hyväksy ohut pannulla paistettu versio nimetystä Schöni Bio Kimchi mit Peperoni -tuotteesta ja punnitusta kuorettomasta munasta."
+      },
+      "packetPath": "docs/nutrition/gk80-operation80-kimchi-jeon-release-candidate.json",
+      "recipeId": "korealainen-kimchi-jeon-aamiaiseksi"
+    },
+    {
+      "classification": {
+        "review": {
+          "depth": "DEEP",
+          "evidence": "docs/nutrition/gk80-operation80-batch-58.md sekä ehdokaspaketin ainesosakirjanpito ja nelikielinen valmistusrajaus."
+        },
+        "outcome": "OWNER_DECISION",
+        "risk": "HIGH",
+        "candidateSha256": "3a4f79fe060d876d7336db8af9c55eb19836e22be45ba269783649b897179fae",
+        "reasons": [
+          "Yangin GI 46 koskee kypsennettyä kuivaa vehnänuudelia. Hakubakun omaa GI:tä ei ole mitattu. Sipulin ja inkiväärin CHO lasketaan kokonaan liemeen. Kanelin ja tähtianiksen massasta rajattu 1,25 g CHO/annos jää pois ja tuottaisi 1,25 GK GI 100 -seulonnassa.",
+          "Laskentamuistio yksilöi koostumuslähteet ja niiden käyttöehdot. Tutkimuksista käytetään yksittäisiä GI-lukuja."
+        ],
+        "contentChange": "GK_ONLY",
+        "contentSummary": "Hyväksy neljän annoksen versio, jossa käytetään 350 g kuivaa Hakubaku Somenia, siivilöityä lientä ja suodatettua sokeritonta chiliöljyä."
+      },
+      "packetPath": "docs/nutrition/gk80-operation80-lanzhou-release-candidate.json",
+      "recipeId": "lanzhou-naudanliha-nuudelikeitto"
+    },
+    {
+      "classification": {
+        "review": {
+          "depth": "FOCUSED",
+          "evidence": "docs/nutrition/gk80-operation80-batch-11.md sekä ehdokaspaketin ainesosakirjanpito ja nelikielinen valmistusrajaus."
+        },
+        "outcome": "OWNER_DECISION",
+        "risk": "MEDIUM",
+        "candidateSha256": "8ca0ddd7262e65048a7a81b3a33c49a9e2ef43c621a6b38aeec4d60313b678db",
+        "reasons": [
+          "Vehnäletun ja vehnä-dosan GI-mittaukset ovat taikinaskenaarioita. Kalan lisääminen, paksuus ja paisto voivat muuttaa vastetta. Suolaturskan CHO sidotaan valmistajan tietoon.",
+          "Laskentamuistio yksilöi koostumuslähteet ja niiden käyttöehdot. Tutkimuksista käytetään yksittäisiä GI-lukuja."
+        ],
+        "contentChange": "GK_ONLY",
+        "contentSummary": "Hyväksy kaksi annosta ohuita pannufrittereitä punnitusta kypsästä suolaturskasta, kevätsipulista ja chilistä."
+      },
+      "packetPath": "docs/nutrition/gk80-operation80-saltfish-release-candidate.json",
+      "recipeId": "karibia-saltfish-fritterit"
+    }
+  ]
+}
