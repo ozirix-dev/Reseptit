@@ -1,0 +1,142 @@
+{
+  "recipeId": "japanilainen-okayu-umeboshipluumulla",
+  "servings": 2,
+  "level": "B",
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "standalonePreparation": true,
+  "omittedCho": 0,
+  "preparation": {
+    "fi": "Hauduta {{amount:0}} g kuivaa valkoista riisiä {{amount:4}} ml:ssa vettä noin 45 minuuttia, kunnes jyvät ovat hyvin pehmeitä. Jaa {{servings}} annokseen ja lisää yhteensä {{amount:1}} g kivetöntä suolattua umeboshia, {{amount:2}} g seesamia ja {{amount:3}} g kevätsipulia.",
+    "en": "Simmer {{amount:0}} g dry white rice in {{amount:4}} ml water for about 45 minutes, until very soft. Divide into {{servings}} portions and add a total of {{amount:1}} g pitted salted umeboshi, {{amount:2}} g sesame seeds and {{amount:3}} g spring onion.",
+    "sv": "Sjud {{amount:0}} g torrt vitt ris i {{amount:4}} ml vatten i cirka 45 minuter tills riset är mycket mjukt. Dela i {{servings}} portioner och tillsätt sammanlagt {{amount:1}} g urkärnad saltad umeboshi, {{amount:2}} g sesamfrön och {{amount:3}} g salladslök.",
+    "th": "เคี่ยวข้าวขาวแห้ง {{amount:0}} กรัมในน้ำ {{amount:4}} มล. ประมาณ 45 นาทีจนข้าวนิ่มมาก แบ่ง{{servings}} ส่วน เติมอุเมะโบชิดองเค็มเอาเม็ดออก {{amount:1}} กรัม งา {{amount:2}} กรัม และต้นหอม {{amount:3}} กรัม"
+  },
+  "limitation": {
+    "fi": "Riisipuuron GI on valmistusverrokki. Päällisten punnitut määrät määrittävät tämän version.",
+    "en": "The rice porridge uses a preparation comparator for GI. The weighed toppings define this version.",
+    "sv": "Risgrötens GI bygger på ett jämförbart tillagningssätt. De vägda tillbehören definierar versionen.",
+    "th": "ค่า GI ของข้าวต้มอ้างอิงอาหารที่ปรุงด้วยวิธีใกล้เคียง สูตรนี้ใช้เครื่องโรยตามน้ำหนักที่ระบุ"
+  },
+  "sources": [
+    {
+      "title": "Kim et al., Tables 1 and 3",
+      "url": "https://doi.org/10.1017/S0007114518003446",
+      "kind": "HUMAN_GI",
+      "note": ""
+    },
+    {
+      "title": "Fineli 11521",
+      "url": "https://fineli.fi/fineli/fi/elintarvikkeet/11521",
+      "kind": "CARBOHYDRATE",
+      "note": ""
+    },
+    {
+      "title": "MEXT 07022",
+      "url": "https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=7_07022_7&MODE=7",
+      "kind": "CARBOHYDRATE",
+      "note": ""
+    },
+    {
+      "title": "Fineli 385",
+      "url": "https://fineli.fi/fineli/fi/elintarvikkeet/385",
+      "kind": "CARBOHYDRATE",
+      "note": ""
+    },
+    {
+      "title": "USDA 170005",
+      "url": "https://fdc.nal.usda.gov/food-details/170005/nutrients",
+      "kind": "CARBOHYDRATE",
+      "note": ""
+    },
+    {
+      "title": "GI coding",
+      "url": "https://doi.org/10.2337/dc08-1239",
+      "kind": "B_CODING",
+      "note": ""
+    }
+  ],
+  "boundFiles": {
+    "reseptit/aamupalat/japanilainen-okayu-umeboshipluumulla.md": "b207cde733db80c11b05dd58e88db319c0c2c9993ca3f85e94878ed37c9e2215",
+    "docs/nutrition/gk80-operation80-batch-08.md": "1c10406123e598bc3d1bcdc25306943f99c0a12531392b99375f37cc22a865d9"
+  },
+  "inputFields": [
+    "gramsBatch",
+    "choPer100g",
+    "giGlucoseScale"
+  ],
+  "inputs": [
+    [
+      100,
+      79,
+      92.5
+    ],
+    [
+      10,
+      0.9,
+      50
+    ],
+    [
+      8,
+      0.9,
+      50
+    ],
+    [
+      20,
+      4.74,
+      40
+    ]
+  ],
+  "unroundedGk": "36.7676",
+  "ingredients": [
+    {
+      "name": {
+        "fi": "Kuiva valkoinen riisi",
+        "en": "Dry white rice",
+        "sv": "Torrt vitt ris",
+        "th": "ข้าวขาวแห้ง"
+      },
+      "grams": 100
+    },
+    {
+      "name": {
+        "fi": "Kivetön suolattu umeboshi",
+        "en": "Pitted salted umeboshi",
+        "sv": "Urkärnad saltad umeboshi",
+        "th": "อุเมะโบชิดองเค็มเอาเม็ดออก"
+      },
+      "grams": 10
+    },
+    {
+      "name": {
+        "fi": "Seesaminsiemenet",
+        "en": "Sesame seeds",
+        "sv": "Sesamfrön",
+        "th": "งา"
+      },
+      "grams": 8
+    },
+    {
+      "name": {
+        "fi": "Kevätsipuli",
+        "en": "Spring onion",
+        "sv": "Salladslök",
+        "th": "ต้นหอม"
+      },
+      "grams": 20
+    },
+    {
+      "name": {
+        "fi": "Vesi",
+        "en": "Water",
+        "sv": "Vatten",
+        "th": "น้ำ"
+      },
+      "grams": null,
+      "quantity": {
+        "amount": 700,
+        "unit": "ml"
+      }
+    }
+  ]
+}
