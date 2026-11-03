@@ -2,11 +2,11 @@
   "schemaVersion": 1,
   "main": "4d6f19a620bb95e771c12f499554bf2cf1f06e51",
   "coverage": {
-    "PROPOSED_RANGE": 34,
+    "PROPOSED_RANGE": 35,
     "PUBLISHED_SINGLE": 197,
     "PROPOSED_SINGLE": 24,
     "IN_PROGRESS": 36,
-    "NO_GK": 25,
+    "NO_GK": 24,
     "PUBLISHED_RANGE": 10
   },
   "reviewedPrHeads": {
@@ -111,7 +111,7 @@
     "japanilainen-curry-tofulla",
     "khao-soi-vhh-konjac"
   ],
-  "nextRecipeId": "masala-dosa",
+  "nextRecipeId": "meheva-suklaakakku",
   "recipes": [
     {
       "recipeId": "aloo-paratha",
@@ -10733,10 +10733,10 @@
       "recipeSha256": "994a62ee4c1072ec20c689ef5955992b706580f75268331bad8617822bf36ab3",
       "pilotInputSha256": "d7296116e1babb0fe9440fe6aa84f93966341f16ed157ad232c8f6e07f5f98dd",
       "servings": 4,
-      "status": "NO_GK",
+      "status": "PROPOSED_RANGE",
       "priorEvidence": [],
-      "level": null,
-      "ownerApproval": null,
+      "level": "B",
+      "ownerApproval": false,
       "sourceQualified": null,
       "blockers": [
         "masala-dosa: perunoita: No specific Fineli/AFCD food record and preparation match was resolved for “perunoita”; it is not treated as zero.",
@@ -10885,7 +10885,69 @@
             "Source-documented zero available carbohydrate: Plain water contains no available carbohydrate; excluded regardless of the recipe-listed volume."
           ]
         }
-      ]
+      ],
+      "operation80Proposal": {
+        "evidencePath": "docs/nutrition/gk80-operation80-batch-39.md",
+        "baselineRecipeSha256": "994a62ee4c1072ec20c689ef5955992b706580f75268331bad8617822bf36ab3",
+        "inputFields": [
+          "gramsBatch",
+          "choPer100g",
+          "giGlucoseScale"
+        ],
+        "scenarios": [
+          {
+            "inputs": [
+              [
+                250,
+                77.7,
+                76
+              ],
+              [
+                100,
+                57,
+                76
+              ],
+              [
+                500,
+                13,
+                66
+              ],
+              [
+                100,
+                4.8,
+                40
+              ]
+            ],
+            "gkPerServing": "58.9425"
+          },
+          {
+            "inputs": [
+              [
+                250,
+                77.7,
+                76
+              ],
+              [
+                100,
+                57,
+                76
+              ],
+              [
+                500,
+                19.9,
+                66
+              ],
+              [
+                100,
+                4.8,
+                40
+              ]
+            ],
+            "gkPerServing": "64.635"
+          }
+        ],
+        "publicationAuthorized": false
+      }
     },
     {
       "recipeId": "massaman-curry-kanalla-vhh",
