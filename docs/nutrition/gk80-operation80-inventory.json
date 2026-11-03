@@ -2,11 +2,11 @@
   "schemaVersion": 1,
   "main": "4d6f19a620bb95e771c12f499554bf2cf1f06e51",
   "coverage": {
-    "PROPOSED_RANGE": 15,
+    "PROPOSED_RANGE": 16,
     "PUBLISHED_SINGLE": 197,
     "PROPOSED_SINGLE": 17,
     "IN_PROGRESS": 25,
-    "NO_GK": 62,
+    "NO_GK": 61,
     "PUBLISHED_RANGE": 10
   },
   "reviewedPrHeads": {
@@ -25,7 +25,6 @@
     "160": "64f2c14ee3b158fbeff6719278ffaa5f436aec4f"
   },
   "queue": [
-    "karibia-saltfish-fritterit",
     "khao-soi-vhh-konjac",
     "kiinalainen-bao-munalla",
     "korealainen-bataatti-riisikulho",
@@ -113,7 +112,7 @@
     "indonesialainen-pisang-goreng-aamiaiseksi",
     "japanilainen-curry-tofulla"
   ],
-  "nextRecipeId": "karibia-saltfish-fritterit",
+  "nextRecipeId": "khao-soi-vhh-konjac",
   "recipes": [
     {
       "recipeId": "aloo-paratha",
@@ -5432,10 +5431,10 @@
       "recipeSha256": "311316ae83a2d5da1a8fb676809ea382d5da856d6f13bf1eaea17225fcf9669f",
       "pilotInputSha256": "12ed6c43607f698dd3a0ab1957f7fb2bbe36df6ff4160702db26cfc4ba8e31da",
       "servings": 2,
-      "status": "NO_GK",
+      "status": "PROPOSED_RANGE",
       "priorEvidence": [],
-      "level": null,
-      "ownerApproval": null,
+      "level": "B",
+      "ownerApproval": false,
       "sourceQualified": null,
       "blockers": [
         "karibia-saltfish-fritterit: suolakala: No source-matched composition and preparation was resolved for “suolakala”; it is not treated as zero.",
@@ -5532,7 +5531,45 @@
             "Source-documented zero available carbohydrate: Plain salt has zero available carbohydrate."
           ]
         }
-      ]
+      ],
+      "operation80Proposal": {
+        "evidencePath": "docs/nutrition/gk80-operation80-batch-11.md",
+        "baselineRecipeSha256": "311316ae83a2d5da1a8fb676809ea382d5da856d6f13bf1eaea17225fcf9669f",
+        "inputFields": [
+          "gramsBatch",
+          "choPer100g"
+        ],
+        "matrixInputs": [
+          [
+            100,
+            74
+          ],
+          [
+            10,
+            0
+          ],
+          [
+            20,
+            4.74
+          ],
+          [
+            5,
+            4.8
+          ]
+        ],
+        "choPerServing": "37.594",
+        "scenarios": [
+          {
+            "giGlucoseScale": "57",
+            "gkPerServing": "21.42858"
+          },
+          {
+            "giGlucoseScale": "61.8",
+            "gkPerServing": "23.233092"
+          }
+        ],
+        "publicationAuthorized": false
+      }
     },
     {
       "recipeId": "karjalanpaisti-vhh",
