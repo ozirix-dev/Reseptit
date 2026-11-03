@@ -1,6 +1,6 @@
 # GK80 · Keitetyt jiaozi-nyytit
 
-**15,95 GK/annos**, ehdollinen B-ehdotus neljälle. Tee taikina 300 g:sta vaaleaa vehnäjauhoa ja 170 ml:sta vettä. Käytä täytteeseen 300 g sianjauhelihaa, 200 g syötävää kiinankaalia ennen puristamista, 40 g kevätsipulia, 15 ml Kikkoman Naturally Brewed Soy Saucea (UK), 6 g inkivääriä sekä ohjeen seesamiöljy ja suola. Jaa koko taikina ja täyte 24 nyyttiin, keitä kypsiksi ja tarjoa kuusi nyyttiä kullekin. Käytä dippiin 45 ml samaa soijakastiketta ja 15 g maustamatonta riisiviinietikkaa. Punnittu täyte ja koko täytteen käyttö ovat laskettavan version ehtoja. Laskelma kohdistuu keitettyihin nyytteihin.
+**15,95 GK/annos**, ehdollinen A-menetelmän arvio neljälle. Tee taikina 300 g:sta vaaleaa vehnäjauhoa ja 170 ml:sta vettä. Käytä täytteeseen 300 g sianjauhelihaa, 200 g syötävää kiinankaalia ennen puristamista, 40 g kevätsipulia, 15 ml Kikkoman Naturally Brewed Soy Saucea (UK), 6 g inkivääriä sekä ohjeen seesamiöljy ja suola. Jaa koko taikina ja täyte 24 nyyttiin, keitä kypsiksi ja tarjoa kuusi nyyttiä kullekin. Käytä dippiin 45 ml samaa soijakastiketta ja 15 g maustamatonta riisiviinietikkaa. Punnittu täyte ja koko täytteen käyttö ovat laskettavan version ehtoja. Laskelma kohdistuu keitettyihin nyytteihin.
 
 | Nyyttien ainesosa | Erä | CHO g/100 g tai ml | CHO g erässä |
 |---|---:|---:|---:|

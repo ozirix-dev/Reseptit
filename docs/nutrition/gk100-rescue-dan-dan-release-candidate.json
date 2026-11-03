@@ -27,10 +27,10 @@
     "th": "ต้มอุด้งสดหรือโซเม็งแห้ง Hakubaku {{amount:0}} กรัมตามฉลาก เก็บน้ำต้มเส้น {{amount:8}} มล. ผัดหมูบด {{amount:1}} กรัม กระเทียม {{amount:2}} กรัม และซีอิ๊ว {{amount:3}} กรัมในน้ำมัน {{amount:9}} ช้อนโต๊ะจนหมูสุกทั่ว ผสมงาบด {{amount:4}} กรัม น้ำมันพริกกรอง {{amount:10}} ช้อนโต๊ะ น้ำส้มสายชู {{amount:7}} มล. และน้ำต้มเส้น คลุกเส้น หมู และซอส ใส่ถั่วลิสง {{amount:5}} กรัมและต้นหอม {{amount:6}} กรัม แบ่งเป็น {{servings}} ที่"
   },
   "limitation": {
-    "fi": "Alempi arvio käyttää tuoretta udonia ja ylempi kuivaa somenia. Kumpikin käyttää kypsennetyn vehnänuudelin GI-verrokkia. Etikan pieni hiilihydraattiosuus jää laskelman ulkopuolelle. Paksoi on valinnainen lisuke ja jää tämän arvion ulkopuolelle.",
-    "en": "The lower estimate uses fresh udon and the upper uses dry somen. Each uses a cooked wheat noodle GI comparator. The small carbohydrate contribution from vinegar is excluded. Optional pak choi is outside this estimate.",
-    "sv": "Den lägre uppskattningen gäller färsk udon och den högre torr somen. Båda använder GI för jämförbara kokta vetenudlar. Vinägerns lilla kolhydratbidrag ingår inte. Valfri pak choi ingår inte i uppskattningen.",
-    "th": "ค่าต่ำใช้เส้นอุด้งสด ค่าสูงใช้เส้นโซเม็งแห้ง ทั้งสองค่าอ้างอิง GI ของเส้นข้าวสาลีต้ม การคำนวณไม่รวมคาร์โบไฮเดรตปริมาณเล็กน้อยจากน้ำส้มสายชู การประมาณนี้ไม่รวมผักกวางตุ้งฮ่องเต้ที่เป็นเครื่องเคียงเสริม"
+    "fi": "Alempi arvio koskee 300 g:aa tuoretta udonia (GI-verrokki 48,2), ylempi 300 g:aa kuivaa Hakubaku Somenia (GI-verrokki 46). Molemmat määrät punnitaan ennen keittämistä ja verrokit mitattiin kypsinä. Pois jää 0,195 g etikan hiilihydraattia annosta kohti sekä valinnainen paksoilisuke. Valkosipuli, kevätsipuli, soija ja seesamitahna käyttävät laskentakoodeja.",
+    "en": "The lower estimate uses 300 g fresh udon (comparator GI 48.2), and the upper uses 300 g dry Hakubaku Somen (comparator GI 46). Both amounts are weighed before cooking and the comparators were measured cooked. Vinegar contributes 0.195 g carbohydrate per serving outside the calculation. The optional pak choi side is excluded. Garlic, spring onion, soy sauce and sesame paste use assigned GI codes.",
+    "sv": "Den lägre uppskattningen gäller 300 g färsk udon (jämförelse-GI 48,2), den högre 300 g torr Hakubaku Somen (jämförelse-GI 46). Båda mängderna vägs före kokning och jämförelsenudlarna mättes kokta. Vinägerns 0,195 g kolhydrat per portion och det valfria tillbehöret pak choi utelämnas. Vitlök, salladslök, soja och sesampasta använder tilldelade GI-koder.",
+    "th": "ค่าต่ำใช้เส้นอุด้งสด 300 กรัม (GI อ้างอิง 48.2) ค่าสูงใช้เส้นโซเม็งแห้ง Hakubaku 300 กรัม (GI อ้างอิง 46) ชั่งเส้นทั้งสองแบบก่อนต้ม ส่วนค่าอ้างอิงวัดจากเส้นที่ต้มแล้ว ไม่นับคาร์โบไฮเดรตจากน้ำส้มสายชู 0.195 กรัมต่อที่และผักกวางตุ้งฮ่องเต้ที่เป็นเครื่องเคียงเสริม กระเทียม ต้นหอม ซีอิ๊ว และงาบดใช้รหัส GI ที่กำหนดเพื่อการคำนวณ"
   },
   "ingredients": [
     {
@@ -160,7 +160,7 @@
       "title": "Yang et al.",
       "url": "https://www.wjgnet.com/1007-9327/full/v12/i21/3430-T2.htm",
       "kind": "HUMAN_GI",
-      "note": "Yang et al. 2006, Table 2, dried wheat noodles, glucose reference, GI 46 (n=10)."
+      "note": "Yang et al. 2006, Table 2, dried wheat noodles, glucose reference, GI 46 (n=10). Article CC BY-NC 4.0. The packet cites one result. Commercial citation basis remains pending."
     },
     {
       "title": "MEXT, 日本食品標準成分表（八訂）増補2023年, 01038",
@@ -256,6 +256,6 @@
   ],
   "boundFiles": {
     "reseptit/paaruoat/dan-dan-nuudelit.md": "81db676010a87a0a2b4a9dbd081ca672659fec2027fc82237b8bc606c3f34664",
-    "docs/nutrition/gk80-operation80-batch-26.md": "29c0d75f81b4f4a6cac7f2f55d09c59e303b2d38b104820278b4cbc15a9b86cf"
+    "docs/nutrition/gk80-operation80-batch-26.md": "5e729097bc2a41e0b00ad50bb6efe57f99aaa449111d4c6c9d490f827f009c65"
   }
 }

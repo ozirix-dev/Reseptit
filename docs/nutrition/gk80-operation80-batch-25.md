@@ -1,6 +1,6 @@
 # GK80 · Chow mein kanalla
 
-**11,92–12,18 GK/annos**, ehdollinen B-ehdotus neljälle. Keitä vehnämunanuudelit pakkauksen mukaan, valuta ja punnitse 300 g ennen wokkiin lisäämistä. Punnitse 6 g valkosipulia ja 60 g porkkanaa. Käytä 54 g AFCD F008065:n koostumusta vastaavaa soijakastiketta ja 12 g Lee Kum Kee UK Premium Oyster Saucea. Kastikkeiden punnitut määrät määrittelevät laskettavan version. Kypsennä ohjeen mukaan. Lisää keitetyt nuudelit loppuvaiheessa ja kääntele kuumiksi. Jaa koko erä neljälle.
+**11,92–12,18 GK/annos**, ehdollinen A-menetelmän arvio neljälle. Keitä vehnämunanuudelit pakkauksen mukaan, valuta ja punnitse 300 g ennen wokkiin lisäämistä. Punnitse 6 g valkosipulia ja 60 g porkkanaa. Käytä 54 g AFCD F008065:n koostumusta vastaavaa soijakastiketta ja 12 g Lee Kum Kee UK Premium Oyster Saucea. Kastikkeiden punnitut määrät määrittelevät laskettavan version. Kypsennä ohjeen mukaan. Lisää keitetyt nuudelit loppuvaiheessa ja kääntele kuumiksi. Jaa koko erä neljälle.
 
 | Ainesosa | Erä, g | CHO g/100 g | GI A / B |
 |---|---:|---:|---:|

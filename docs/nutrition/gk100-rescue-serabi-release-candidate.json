@@ -12,10 +12,10 @@
     "th": "ผสมแป้งข้าวเจ้า {{amount:0}} กรัม มะพร้าวแห้งไม่หวาน {{amount:1}} กรัม และกะทิกระป๋องชนิดเต็มมันเนย {{amount:2}} กรัม พัก 10 นาที ทอดเป็นแผ่นบางในน้ำมัน {{amount:4}} ช้อนโต๊ะ ละลายน้ำตาลทรายแดง {{amount:3}} กรัมบนหน้าแผ่น แบ่งเป็น {{servings}} ส่วน"
   },
   "limitation": {
-    "fi": "Ohut pannuserabi käyttää riisidosan GI-vertailua. Dosassa on urad-papua, serabissa kookosta. Kookosrasvan ja urad-pavun ero voi muuttaa vasteen suuntaa ja suuruutta. Fariinisokeri lasketaan erikseen.",
-    "en": "Thin pan-cooked serabi uses rice dosa as a GI comparator. Dosa contains urad dal, while serabi contains coconut. The difference between coconut fat and urad dal can change the response. Brown sugar is calculated separately.",
-    "sv": "Tunn pannstekt serabi använder risdosa som GI-jämförelse. Dosa innehåller uradbönor och serabi innehåller kokos. Skillnaden mellan kokosfett och uradbönor kan påverka blodsockersvaret. Farinsockret beräknas separat.",
-    "th": "เซราบีแผ่นบางที่ทอดในกระทะใช้ค่า GI อ้างอิงจากโดซาข้าว โดซามีถั่วอูรัด ส่วนเซราบีมีมะพร้าว ความต่างระหว่างไขมันมะพร้าวกับถั่วอูรัดอาจเปลี่ยนการตอบสนองของน้ำตาลในเลือด คำนวณน้ำตาลทรายแดงแยกต่างหาก"
+    "fi": "Riisi–urad-dosan mitattua GI-arvoa 76 käytetään ohuen pannuserabin koko riisi–kookostaikinan verrokkina. Urad-pavun ja kookoksen eron vaikutuksen suunta ja suuruus ovat avoimia. Pinnalle sulatettu fariinisokeri lasketaan erikseen sakkaroosiverrokilla GI 59.",
+    "en": "The measured GI of rice and urad dosa (76) is applied as a comparator to the entire rice and coconut batter of thin pan-cooked serabi. The direction and size of the effect of the difference between urad dal and coconut are unknown. The brown sugar topping is calculated separately with sucrose as the comparator (GI 59).",
+    "sv": "Uppmätt GI 76 för risdosa med uradbönor används som jämförelse för hela ris- och kokossmeten i tunn pannstekt serabi. Det är okänt hur och hur mycket skillnaden mellan uradbönor och kokos påverkar svaret. Farinsockret ovanpå beräknas separat med sackaros som jämförelse (GI 59).",
+    "th": "ใช้ค่า GI 76 ที่วัดจากโดซาข้าวผสมถั่วอูรัดเป็นค่าอ้างอิงสำหรับแป้งข้าวและมะพร้าวทั้งหมดของเซราบีแผ่นบางที่ทอดในกระทะ ยังไม่ทราบทิศทางหรือขนาดผลจากความต่างระหว่างถั่วอูรัดกับมะพร้าว น้ำตาลทรายแดงที่ละลายด้านหน้าคำนวณแยกโดยอ้างอิงซูโครส (GI 59)"
   },
   "ingredients": [
     {
@@ -73,7 +73,7 @@
       "title": "Tan et al., rice dosa",
       "url": "https://pubmed.ncbi.nlm.nih.gov/29759105/",
       "kind": "HUMAN_GI",
-      "note": "GI 76 applies once to the complete batter carbohydrate."
+      "note": "Measured GI 76 for rice and urad dosa, used as a comparator for the full serabi batter carbohydrate."
     },
     {
       "title": "Jenkins et al., sucrose",

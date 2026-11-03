@@ -26,10 +26,10 @@
     "th": "ต้มบะหมี่ไข่แล้วสะเด็ดน้ำ ชั่ง {{amount:0}} กรัม ผสมซีอิ๊ว {{amount:5}} กรัม ซอสหอยนางรม Lee Kum Kee Premium {{amount:7}} กรัม และน้ำมันงา {{amount:9}} มล. ผัดไก่ {{amount:1}} กรัมในน้ำมัน {{amount:8}} ช้อนโต๊ะจนสุกแล้วตักพัก ผัดกระเทียม {{amount:2}} กรัม กะหล่ำปลี {{amount:3}} กรัม และแครอต {{amount:4}} กรัม ใส่เส้น ซอส และไก่ ผัดให้ร้อนทั่ว ใส่ต้นหอม {{amount:6}} กรัม แล้วแบ่งเป็น {{servings}} ที่"
   },
   "limitation": {
-    "fi": "Nuudelien verrokit ovat keitetty munafettuccine ja keitetty vehnänuudeli. Lyhyt wokkaus voi muuttaa vastetta. Osterikastikkeen pieni hiilihydraattiosuus jää laskelman ulkopuolelle.",
-    "en": "The noodle comparators are boiled egg fettuccine and boiled wheat noodles. Brief wok cooking can affect the response. The small carbohydrate contribution from oyster sauce is excluded.",
-    "sv": "Jämförelseprodukterna är kokt äggfettuccine och kokta vetenudlar. Kort wokning kan påverka responsen. Det lilla kolhydratbidraget från ostronsås ingår inte i beräkningen.",
-    "th": "ค่าอ้างอิงมาจากเฟตตูชินีไข่ต้มและบะหมี่แป้งสาลีต้ม การผัดสั้น ๆ อาจเปลี่ยนการตอบสนอง การคำนวณไม่รวมคาร์โบไฮเดรตปริมาณเล็กน้อยจากซอสหอยนางรม"
+    "fi": "Väli kuvaa kahta nuudeliverrokkia samalla 300 g:n kypsällä, valutetulla nuudelimäärällä: munafettuccinea (GI 47) ja vehnänuudelia (GI 48,2). Wokkaus voi muuttaa vastetta. 12 g:n osterikastike-erästä jää pois 0,93 g hiilihydraattia annosta kohti. Kasvisten ja soijakastikkeen GI-arvot ovat laskentakoodeja.",
+    "en": "The range uses two comparators for the same 300 g of cooked, drained noodles: egg fettuccine (GI 47) and wheat noodles (GI 48.2). Stir-frying can affect the response. The 12 g batch amount of oyster sauce contributes 0.93 g carbohydrate per serving outside the calculation. Vegetables and soy sauce use assigned GI codes.",
+    "sv": "Intervallet bygger på två jämförelseprodukter för samma 300 g kokta, avrunna nudlar: äggfettuccine (GI 47) och vetenudlar (GI 48,2). Wokning kan påverka svaret. Från satsens 12 g ostronsås utelämnas 0,93 g kolhydrat per portion. Grönsaker och soja använder tilldelade GI-koder.",
+    "th": "ช่วงค่าคำนวณจากอาหารอ้างอิงสองชนิดสำหรับเส้นต้มสะเด็ดน้ำ 300 กรัมเท่ากัน ได้แก่ เฟตตูชินีไข่ (GI 47) และบะหมี่ข้าวสาลี (GI 48.2) การผัดอาจเปลี่ยนการตอบสนอง ซอสหอยนางรม 12 กรัมต่อสูตรให้คาร์โบไฮเดรต 0.93 กรัมต่อที่ซึ่งไม่นำมาคำนวณ ผักและซีอิ๊วใช้รหัส GI ที่กำหนดเพื่อการคำนวณ"
   },
   "ingredients": [
     {
@@ -214,6 +214,6 @@
   ],
   "boundFiles": {
     "reseptit/paaruoat/chow-mein.md": "3e9d6ed75ef531708f84720de20aa4fc8d40122f0fdd81c6a6f609d34cbab9c2",
-    "docs/nutrition/gk80-operation80-batch-25.md": "61bf66a84f1d95421c2c8ac29bbceef13b66014cc71dd7b0df2881a4de89782f"
+    "docs/nutrition/gk80-operation80-batch-25.md": "bb3012ab9df701173dfdb8c725e5a3bef2dfd1b869fc5d544170e599b235143c"
   }
 }

@@ -21,10 +21,10 @@
     "th": "ต้มโซบะแห้ง {{amount:0}} กรัม 5–6 นาทีตามฉลาก ล้างน้ำเย็นแล้วสะเด็ดน้ำ อุ่นดาชิโบนิโตที่กรองแล้ว {{amount:3}} กรัมกับน้ำซุปไก่ {{amount:4}} มล. เติมผักโขม {{amount:2}} กรัม ทำไข่ลวกแบบโพช {{amount:1}} กรัม แบ่งเส้น ไข่ และน้ำซุปเป็น {{servings}} ส่วน"
   },
   "limitation": {
-    "fi": "Tattarinuudelin GI perustuu keitettyyn tattarinuudeliverrokkiin. Liemistä jää GK-summan ulkopuolelle 0,90 g hiilihydraattia annosta kohti.",
-    "en": "GI is based on a cooked buckwheat noodle comparator. The broths contribute 0.90 g carbohydrate per serving outside the calculation.",
-    "sv": "GI bygger på en jämförelse med kokta bovetenudlar. Buljongerna bidrar med 0,90 g kolhydrat per portion utanför beräkningen.",
-    "th": "ค่า GI อ้างอิงเส้นบักวีตต้ม น้ำซุปทั้งสองชนิดมีคาร์โบไฮเดรต 0.90 กรัมต่อหนึ่งหน่วยบริโภคที่อยู่นอกการคำนวณ"
+    "fi": "Arvio koskee Muso NDL030 -täystattarisobaa, siivilöityä bonito-dashia ja Aneto Natural Low Sodium -kanalientä. GI 59,6 on anjovisliemessä tarjotun keitetyn tattarinuudelin verrokki. Liemistä jää pois 0,90 g hiilihydraattia annosta kohti. Pinaatin ja munan GI-arvot ovat laskentakoodeja.",
+    "en": "This estimate uses Muso NDL030 100% buckwheat soba, strained bonito dashi and Aneto Natural Low Sodium Chicken Broth. GI 59.6 comes from a cooked buckwheat noodle comparator served in anchovy broth. The broths contribute 0.90 g carbohydrate per serving outside the calculation. Spinach and egg use assigned GI codes.",
+    "sv": "Uppskattningen gäller Muso NDL030 soba av 100 % bovete, silad bonitodashi och Aneto Natural Low Sodium kycklingbuljong. GI 59,6 kommer från kokta bovetenudlar serverade i ansjovisbuljong. Buljongernas 0,90 g kolhydrat per portion utelämnas. Spenat och ägg använder tilldelade GI-koder.",
+    "th": "ค่าประมาณนี้ใช้โซบะบักวีต 100% Muso NDL030 ดาชิโบนิโตที่กรองแล้ว และน้ำซุปไก่โซเดียมต่ำ Aneto ค่า GI 59.6 อ้างอิงเส้นบักวีตต้มที่เสิร์ฟในน้ำซุปปลาแอนโชวี ไม่นับคาร์โบไฮเดรตจากน้ำซุป 0.90 กรัมต่อที่ ผักโขมและไข่ใช้รหัส GI ที่กำหนดเพื่อการคำนวณ"
   },
   "ingredients": [
     {
@@ -115,10 +115,16 @@
       "note": "THL Fineli CC BY 4.0."
     },
     {
-      "title": "Assigned GI coding",
+      "title": "Vegetable GI coding",
       "url": "https://doi.org/10.2337/dc08-1239",
-      "kind": "B_CODING",
-      "note": "Egg 50, spinach 40."
+      "kind": "PUBLISHED_CODING",
+      "note": "Assigned spinach code 40."
+    },
+    {
+      "title": "Low carbohydrate food coding",
+      "url": "https://doi.org/10.1016/j.jfca.2007.02.004",
+      "kind": "PUBLISHED_CODING",
+      "note": "Assigned egg code 50."
     }
   ],
   "inputs": [
@@ -140,6 +146,6 @@
   ],
   "boundFiles": {
     "reseptit/aamupalat/japanilainen-soba-aamiaiskeitto.md": "d27d97d6e7b065df3372970275ed3e4525910e98d5e780d4d208e536086b0273",
-    "docs/nutrition/gk80-operation80-batch-27.md": "08d86caa1e859b5458ebd1d3424f4a2a6a08fc14a6ce42efb4b52882a5a8c4fd"
+    "docs/nutrition/gk80-operation80-batch-27.md": "79ae0b220de0b0bc0049be460bc028f6faff1a3082f3c17ce41e41bf15228b72"
   }
 }

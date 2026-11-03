@@ -1,6 +1,6 @@
 # GK80 · Dan dan -nuudelit kahdella nuudelivaihtoehdolla
 
-**18,53–24,98 GK/annos**, ehdollinen B-ehdotus neljälle. Käytä 300 g kypsentämätöntä vehnänuudelia vaihtoehdon mukaan. Keitä pakkauksen ohjeella ja käytä kastikkeeseen ohjeen desilitra keitinvettä. Punnitse 30 g Lee Kum Kee Pure Sesame Pastea (UPC 078895149340), 18 g AFCD F008065:n koostumusta vastaavaa soijakastiketta, 7 g valkosipulia, 20 g paahdettua maapähkinää ja 24 g kevätsipulia. Käytä 15 ml Heng Shun Chinkiang 550 ml -etikkaa ja suodatettua chiliöljyä ilman kiinteitä maustepaloja tai lisättyä sokeria. Valitse reseptin tarjoilu ilman valinnaista paksoita. Jaa koko nuudeli- ja kastike-erä neljälle.
+**18,53–24,98 GK/annos**, ehdollinen A-menetelmän arvio neljälle. Käytä 300 g kypsentämätöntä vehnänuudelia vaihtoehdon mukaan. Keitä pakkauksen ohjeella ja käytä kastikkeeseen ohjeen desilitra keitinvettä. Punnitse 30 g Lee Kum Kee Pure Sesame Pastea (UPC 078895149340), 18 g AFCD F008065:n koostumusta vastaavaa soijakastiketta, 7 g valkosipulia, 20 g paahdettua maapähkinää ja 24 g kevätsipulia. Käytä 15 ml Heng Shun Chinkiang 550 ml -etikkaa ja suodatettua chiliöljyä ilman kiinteitä maustepaloja tai lisättyä sokeria. Valitse reseptin tarjoilu ilman valinnaista paksoita. Jaa koko nuudeli- ja kastike-erä neljälle.
 
 | Ainesosa | Erä, g | CHO g/100 g | GI |
 |---|---:|---:|---:|

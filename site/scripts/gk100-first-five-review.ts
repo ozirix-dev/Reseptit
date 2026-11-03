@@ -115,10 +115,14 @@ export function buildPointReviewVariant(root: string, packetPath: string): GkOnl
     return sum + cho;
   }, 0);
   if (omittedCho >= 2) throw Error('GK omissions exceed cumulative limit: ' + c.recipeId);
+  const level = omittedCho > 0 ? 'A' : 'B';
+  if (level === 'A' && c.sources.some(source => source.kind === 'B_CODING')) {
+    throw Error('B-only GI coding cannot be combined with A-method omissions: ' + c.recipeId);
+  }
   const inputSha256 = textHash(raw);
   return {
     recipeId: c.recipeId, versionId: 'gk-operation80-review-' + inputSha256.slice(0, 12), inputSha256,
-    level: 'B', servings: c.servings, point: scenarioRange ? null : point, scenarioRange,
+    level, servings: c.servings, point: scenarioRange ? null : point, scenarioRange,
     rangeKind: scenarioRange ? 'NAMED_COMPARATOR_SCENARIOS' : null,
     omittedCho, confidence: 'LOW', macroScope: 'NO_MACRO_PACKAGE_FOR_THIS_VERSION',
     quantityContract: 'GK_ONLY_NATIVE_UNITS_V1', standalonePreparation: true,
@@ -146,11 +150,14 @@ for (const variant of variants) {
   for (const locale of locales) {
     const html = renderToStaticMarkup(createElement(MemoryRouter, null,
       createElement(GkOnlyVariantPanel, { variant, locale, servings: variant.servings })));
+    if (html.includes('data-gk-omission="available-cho"') !== (variant.level === 'A')) {
+      throw new Error('GK review method and omission disclosure disagree: ' + variant.recipeId);
+    }
     const limitation = variant.limitation?.[locale];
     if (!limitation || !html.includes(limitation.replaceAll('&', '&amp;'))) {
       throw new Error('GK review limitation missing: ' + variant.recipeId + ' ' + locale);
     }
   }
 }
-console.log(JSON.stringify(variants.map(({ recipeId, inputSha256, point, scenarioRange }) =>
-  ({ recipeId, inputSha256, point, scenarioRange })), null, 2));
+console.log(JSON.stringify(variants.map(({ recipeId, inputSha256, level, servings, point, scenarioRange, omittedCho }) =>
+  ({ recipeId, inputSha256, level, servings, point, scenarioRange, omittedCho })), null, 2));

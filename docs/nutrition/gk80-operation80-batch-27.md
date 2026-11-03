@@ -1,6 +1,6 @@
 # GK80 · Soba-aamiaiskeitto tattarinuudelilla
 
-**20,43 GK/annos**, ehdollinen B-ehdotus kahdelle. Keitä erikseen 100 g kuivaa Muso Organic 100% Buckwheat Sobaa. Punnitse 200 g valmista, siivilöityä bonito-dashia MEXT 17019:n mukaan ja lisää 700 ml Aneto Natural Low Sodium Chicken Brothia. Punnittu valmis dashi täsmentää ohjeen 200 ml. Käytä 50 g tuoretta pinaattia ja kaksi uppomunaa (110 g kuoretonta munaa). Jaa keitetyt nuudelit, pinaatti, munat ja liemi kahdelle.
+**20,43 GK/annos**, ehdollinen A-menetelmän arvio kahdelle. Keitä erikseen 100 g kuivaa Muso Organic 100% Buckwheat Sobaa. Punnitse 200 g valmista, siivilöityä bonito-dashia MEXT 17019:n mukaan ja lisää 700 ml Aneto Natural Low Sodium Chicken Brothia. Punnittu valmis dashi täsmentää ohjeen 200 ml. Käytä 50 g tuoretta pinaattia ja kaksi uppomunaa (110 g kuoretonta munaa). Jaa keitetyt nuudelit, pinaatti, munat ja liemi kahdelle.
 
 | Ainesosa | Erä, g | CHO g/100 g | GI |
 |---|---:|---:|---:|
