@@ -29,3 +29,11 @@ Farhatin ym. alkuperäisen artikkelin taulukon 3 pizzarivi tarkistettiin kuvasta
 | Kinkku | 30,0 | 0 |
 
 Tutkimuksen ainesosat sisältävät tuoretta tomaattia, kun taas kotireseptissä käytetään tomaattimurskaa. Taulukon valmistustieto kattaa taikinan sekoittamisen, täytteiden levittämisen ja paistamisen. Kohotusaikaa tai paistolämpötilaa ei ilmoiteta. Tulostekstin öljymaininnan ristiriidan vuoksi tutkimuspohjan rasvamäärää ei voi johtaa reseptitaulukosta. Määrävertailu vahvistaa valmistus- ja täyte-erot, joten GI 56,04 säilyy herkkyysskenaariona. Italialaisen tutkimuksen tuotekohtainen rivi on edelleen avoin. Yliopiston arkistossa avoin versio on käsikirjoitus ja kustantajan versio on käyttörajoitettu. [Milano AIR](https://air.unimi.it/handle/2434/476796)
+
+## Kaksi glukoosivertailuun perustuvaa kokonaispizzaskenaariota
+
+Kansainvälisen vuoden 2002 taulukon pizzaryhmässä on Sydneyn yliopiston mittaama Pizza Hut Vegetarian Supreme thin and crispy, GI 49. Vertailuna oli glukoosi ja seuranta kaksi tuntia, osallistujina 10 tervettä henkilöä. Raportointi on yliopiston havainto GI-taulukossa. Kasvispizzan ohut kaupallinen pohja, täytteet ja rasvasuhde poikkeavat kotireseptistä. Farhatin ym. GI 56,04 koskee toista kokonaista pizzaa, jossa oli muun muassa kinkkua ja sipulia. Molemmat ovat matalan luottamuksen valmistusvastineita.
+
+Nykyinen 114,5415 g/annos CHO-pohja antaa 56,125335 ja 64,1890566 GK/annos. Jos basilikan 0,8 g/annos nimellinen yläraja sisällytetään yläpäähän, tulos on 64,6373766. Ulospäin pyöristetty tutkimusväli on 56–65. Väli kuvaa valittuja kokonaisruokavastineita ja basilikan koostumusvarausta. Se ei ole mitattu Margheritan vaihteluväli. Julkaisusopimus ja tarkat lähdesovellukset vaativat hyväksynnän.
+
+[Kansainvälinen GI-taulukko, pizzaryhmä 488](https://ajcn.nutrition.org/article/S0002-9165%25252823%252905840-9/fulltext)
