@@ -1,0 +1,16 @@
+{
+  "recipeId": "pizza-margherita",
+  "servings": 2,
+  "nutritionInputSha256": "dbd219f9f0863b81f0d165be06173a14711cf3ae7d0a303e0e08322a56624806",
+  "reviewCommit": "a500a43e30fd288a2543da9d085d080d7dfffd53",
+  "approvalCommit": "5b6bd36",
+  "scope": "preparation_for_later_integration",
+  "releaseAuthorized": false,
+  "calculation": "whole_pizza_comparator_scenarios",
+  "availableCarbohydratePerServingG": 114.5415,
+  "basilNominalAdditionalUpperG": 0.8,
+  "lower": {"comparator": "Pizza Hut Vegetarian Supreme thin and crispy", "gi": 49, "gk": 56.125335},
+  "upper": {"comparator": "Farhat et al. ham pizza", "gi": 56.04, "gk": 64.6373766},
+  "displayRange": {"min": 56, "max": 65},
+  "evidence": "margherita-source-recheck.md"
+}
