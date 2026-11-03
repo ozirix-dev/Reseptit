@@ -4,9 +4,9 @@
   "coverage": {
     "PROPOSED_RANGE": 32,
     "PUBLISHED_SINGLE": 197,
-    "PROPOSED_SINGLE": 23,
+    "PROPOSED_SINGLE": 24,
     "IN_PROGRESS": 36,
-    "NO_GK": 28,
+    "NO_GK": 27,
     "PUBLISHED_RANGE": 10
   },
   "reviewedPrHeads": {
@@ -17956,10 +17956,10 @@
       "recipeSha256": "2d0e026ce3e13ae802fb836053ee7c0b2a28a43ac0306a5ee902d59d1d2aa549",
       "pilotInputSha256": "e7ea7178d9c5b609d6c5b03fc47ecc25956ae4dfb49b72381bb383ae0c08ed81",
       "servings": 4,
-      "status": "NO_GK",
+      "status": "PROPOSED_SINGLE",
       "priorEvidence": [],
-      "level": null,
-      "ownerApproval": null,
+      "level": "B",
+      "ownerApproval": false,
       "sourceQualified": null,
       "blockers": [
         "xiaolongbao: pyöreitä dumpling-taikinalevyjä: No source-matched composition and preparation was resolved for “pyöreitä dumpling-taikinalevyjä”; it is not treated as zero.",
@@ -18104,7 +18104,59 @@
             "Individual sub-1 g contribution counted toward cumulative 2 g/serving editorial tolerance: Conservative available-carbohydrate bound 0.5 g per recipe; below 1 g per serving."
           ]
         }
-      ]
+      ],
+      "operation80Proposal": {
+        "evidencePath": "docs/nutrition/gk80-operation80-batch-36.md",
+        "baselineRecipeSha256": "2d0e026ce3e13ae802fb836053ee7c0b2a28a43ac0306a5ee902d59d1d2aa549",
+        "inputFields": [
+          "gramsBatch",
+          "choPer100g"
+        ],
+        "matrixInputs": [
+          [
+            300,
+            74
+          ],
+          [
+            300,
+            0
+          ],
+          [
+            145,
+            0.427
+          ],
+          [
+            5,
+            0
+          ],
+          [
+            40,
+            4.6
+          ],
+          [
+            6,
+            4.8
+          ]
+        ],
+        "liquidInputFields": [
+          "mlBatch",
+          "choPer100ml"
+        ],
+        "liquidMatrixInputs": [
+          [
+            15,
+            3.2
+          ]
+        ],
+        "choPerServing": "56.3067875",
+        "scenarios": [
+          {
+            "giGlucoseScale": "28",
+            "gkPerServing": "15.7659005"
+          }
+        ],
+        "publicationAuthorized": false
+      }
     },
     {
       "recipeId": "yangzhou-paistettu-riisi",
