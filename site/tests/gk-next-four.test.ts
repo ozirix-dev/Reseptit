@@ -201,7 +201,11 @@ test('Lindström brine is an independent preparation with scaled, fully included
 });
 
 test('the four reviewed GK-only versions retain their points and native liquid units', () => {
- const versions = gkOnlyVariants.slice(-6,-2);
+ const versions = ['siemengranola-jogurtilla', 'lahi-ita-pistaasijogurtti', 'korealainen-kongjuk-soijapapu-riisipuuro', 'falafel'].map(id => {
+  const version = gkOnlyVariants.find(v => v.recipeId === id);
+  assert.ok(version, id);
+  return version;
+ });
  assert.deepEqual(versions.map(v => [v.recipeId, v.point]), [
   ['siemengranola-jogurtilla', 2.47],
   ['lahi-ita-pistaasijogurtti', 4.37],
