@@ -11,6 +11,7 @@ export type PointReviewCandidate = {
   preparation: LocalizedText;
   limitation: LocalizedText;
   unroundedGk: string;
+  exclusions?: { ingredientIndex: number; kind: 'ZERO_CHO' | 'ALREADY_COUNTED'; rationale: string; evidencePath: string }[];
   omissions?: ({ ingredientIndex: number } & ({ choPer100ml: number } | { choPer100g: number }))[];
   upperScenario?: {
     unroundedGk: string;
@@ -21,6 +22,28 @@ export type PointReviewCandidate = {
   inputs: [amount: number, choPer100: number, gi: number, unit?: 'ml'][];
   ingredients: GkOnlyVariant['ingredients'];
   sources: GkOnlyVariant['sources'];
+};
+
+// The original five review packets predate explicit exclusions. Bind the
+// compatibility data to their exact packet bytes and verified calculation notes.
+const legacyExclusions: Record<string, NonNullable<PointReviewCandidate['exclusions']>> = {
+  '6660ce5dbf2690ccb89c9da125a8c3ea00a6703a57ef92d33241a7f207932d9c': [
+    { ingredientIndex: 8, kind: 'ZERO_CHO', rationale: 'Water', evidencePath: 'docs/nutrition/gk80-operation80-batch-35.md' },
+    { ingredientIndex: 9, kind: 'ZERO_CHO', rationale: 'Sesame oil', evidencePath: 'docs/nutrition/gk80-operation80-batch-35.md' },
+    { ingredientIndex: 10, kind: 'ZERO_CHO', rationale: 'Salt', evidencePath: 'docs/nutrition/gk80-operation80-batch-35.md' },
+  ],
+  '190fcd3422ebe04dee0a22d65d13ebca83c1de240e78898286fb75727623edf4': [
+    { ingredientIndex: 8, kind: 'ZERO_CHO', rationale: 'Cooking oil', evidencePath: 'docs/nutrition/gk80-operation80-batch-25.md' },
+    { ingredientIndex: 9, kind: 'ZERO_CHO', rationale: 'Sesame oil', evidencePath: 'docs/nutrition/gk80-operation80-batch-25.md' },
+  ],
+  '8fed31af6463e8c0907a294fc12b1e0162ee5cd86b986eeec7c04bd867b4b7ad': [
+    { ingredientIndex: 4, kind: 'ZERO_CHO', rationale: 'Cooking oil', evidencePath: 'docs/nutrition/gk80-operation80-batch-28.md' },
+  ],
+  'ad22de231e93aa7f73a3ea6217d8ffadaf10994a1ce1cc1035f016503f2ba875': [
+    { ingredientIndex: 8, kind: 'ALREADY_COUNTED', rationale: 'Cooking-water starch is counted in the uncooked noodle input', evidencePath: 'docs/nutrition/gk80-operation80-batch-26.md' },
+    { ingredientIndex: 9, kind: 'ZERO_CHO', rationale: 'Cooking oil', evidencePath: 'docs/nutrition/gk80-operation80-batch-26.md' },
+    { ingredientIndex: 10, kind: 'ZERO_CHO', rationale: 'Filtered chilli oil without solids or sugar', evidencePath: 'docs/nutrition/gk80-operation80-batch-26.md' },
+  ],
 };
 
 export function parsePointReviewVariant(raw: string, read: (file: string) => string): GkOnlyVariant {
@@ -64,6 +87,13 @@ export function parsePointReviewVariant(raw: string, read: (file: string) => str
   if (!Number.isFinite(Number(c.unroundedGk)) || Math.abs(point - Number(c.unroundedGk)) > 1e-10) {
     throw Error('GK point calculation changed: ' + c.recipeId);
   }
+  const accounted = new Set<number>();
+  function account(index: number) {
+    if (!Number.isInteger(index) || index < c.inputs.length || index >= c.ingredients.length || accounted.has(index)) {
+      throw Error('Invalid or duplicate GK ingredient accounting: ' + c.recipeId);
+    }
+    accounted.add(index);
+  }
   let scenarioRange: GkOnlyVariant['scenarioRange'] = null;
   if (c.upperScenario) {
     if (c.omissions?.length && c.upperScenario.replacements?.length) {
@@ -74,11 +104,12 @@ export function parsePointReviewVariant(raw: string, read: (file: string) => str
     for (const { inputIndex, ingredientIndex } of c.upperScenario.replacements ?? []) {
       const row = c.inputs[inputIndex];
       const grams = c.ingredients[ingredientIndex]?.grams;
-      if (!row || row[3] === 'ml' || indices.has(inputIndex) || ingredientIndex < c.inputs.length
+      if (!row || row[3] === 'ml' || indices.has(inputIndex)
           || grams == null || !Number.isFinite(grams) || grams < 0) {
         throw Error('Invalid GK range replacement: ' + c.recipeId);
       }
       indices.add(inputIndex);
+      account(ingredientIndex);
       delta += (grams - row[0]) * row[1] * row[2];
     }
     for (const { inputIndex, gi } of c.upperScenario.giOverrides ?? []) {
@@ -106,7 +137,6 @@ export function parsePointReviewVariant(raw: string, read: (file: string) => str
     }
     scenarioRange = { min: point, max };
   }
-  const seen = new Set<number>();
   const omittedCho = (c.omissions ?? []).reduce((sum, row) => {
     const ingredient = c.ingredients[row.ingredientIndex];
     const liquid = 'choPer100ml' in row;
@@ -114,21 +144,31 @@ export function parsePointReviewVariant(raw: string, read: (file: string) => str
       ? (ingredient?.quantity?.unit === 'ml' ? ingredient.quantity.amount : null)
       : ingredient?.grams;
     const concentration = liquid ? row.choPer100ml : row.choPer100g;
-    if (row.ingredientIndex < c.inputs.length || seen.has(row.ingredientIndex)
-        || amount == null || !Number.isFinite(amount) || !Number.isFinite(concentration) || concentration > 100) {
+    if (amount == null || !Number.isFinite(amount) || !Number.isFinite(concentration) || concentration > 100) {
       throw Error('Invalid GK omitted ingredient: ' + c.recipeId);
     }
-    seen.add(row.ingredientIndex);
+    account(row.ingredientIndex);
     const cho = amount * concentration / (100 * c.servings);
     if (!(cho > 0 && cho < 1)) throw Error('GK omission exceeds ingredient limit: ' + c.recipeId);
     return sum + cho;
   }, 0);
   if (omittedCho >= 2) throw Error('GK omissions exceed cumulative limit: ' + c.recipeId);
+  const inputSha256 = textHash(raw);
+  for (const exclusion of c.exclusions ?? legacyExclusions[inputSha256] ?? []) {
+    if (!['ZERO_CHO', 'ALREADY_COUNTED'].includes(exclusion.kind)
+        || typeof exclusion.rationale !== 'string' || !exclusion.rationale.trim()
+        || !/^docs\/nutrition\/[a-z0-9-]+\.md$/.test(exclusion.evidencePath)
+        || !Object.hasOwn(c.boundFiles, exclusion.evidencePath)) {
+      throw Error('Invalid GK ingredient exclusion: ' + c.recipeId);
+    }
+    account(exclusion.ingredientIndex);
+  }
+  const missing = c.ingredients.findIndex((_, index) => index >= c.inputs.length && !accounted.has(index));
+  if (missing !== -1) throw Error('UNACCOUNTED_GK_INGREDIENT: ' + c.recipeId + ' index ' + missing);
   const level = omittedCho > 0 ? 'A' : 'B';
   if (level === 'A' && c.sources.some(source => source.kind === 'B_CODING')) {
     throw Error('B-only GI coding cannot be combined with A-method omissions: ' + c.recipeId);
   }
-  const inputSha256 = textHash(raw);
   return {
     recipeId: c.recipeId, versionId: 'gk-operation80-review-' + inputSha256.slice(0, 12), inputSha256,
     level, servings: c.servings, point: scenarioRange ? null : point, scenarioRange,
@@ -139,4 +179,3 @@ export function parsePointReviewVariant(raw: string, read: (file: string) => str
     codingKinds: [], sensitivity: null, sources: c.sources,
   };
 }
-

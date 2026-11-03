@@ -90,7 +90,8 @@ function assess(entry: Batch['candidates'][number], read: ReadFile) {
   }
   const inputSha256 = fingerprint({
     servings: packet.servings, inputs: packet.inputs, omissions: packet.omissions ?? [],
-    upperScenario: packet.upperScenario ?? null, ingredients: packet.ingredients, sources: packet.sources,
+    upperScenario: packet.upperScenario ?? null, ...(packet.exclusions && { exclusions: packet.exclusions }),
+    ingredients: packet.ingredients, sources: packet.sources,
   });
   // GI 100 is an editorial stress case, not a bound on biological response.
   const riskSignals = [

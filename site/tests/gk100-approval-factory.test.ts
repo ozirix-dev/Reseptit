@@ -109,3 +109,39 @@ test('existing numeric coverage and duplicate recipe IDs are excluded', () => {
     'MAIN_ALREADY_HAS_NUMERIC_GK', 'DUPLICATE_RECIPE_ID', 'DUPLICATE_RECIPE_ID',
   ]);
 });
+
+test('an ingredient absent from the calculation and accounting blocks only its recipe', () => {
+  const { batch, files, read } = fixture();
+  const entry = batch.candidates[0];
+  const packet = JSON.parse(read(entry.packetPath));
+  packet.ingredients.push({ name: { ...locale, en: 'Sugar' }, grams: 500 });
+  const raw = JSON.stringify(packet);
+  files.set(entry.packetPath, raw);
+  entry.classification!.candidateSha256 = textHash(raw);
+
+  const checked = checkBatch(batch, read);
+  assert.match(checked.manifest.candidates[0].reason!, /UNACCOUNTED_GK_INGREDIENT: fixture-0 index 1/);
+  assert.equal(checked.manifest.candidates[0].state, 'BLOCKED');
+  const plan = prepareRelease(checked, approve(checked, 'fixture-1'), coverage, base, read);
+  assert.deepEqual(plan.variants.map(variant => variant.recipeId), ['fixture-1']);
+});
+
+test('an explicit exclusion requires a bound calculation note and cannot overlap another row', () => {
+  const { batch, files, read } = fixture(1);
+  const entry = batch.candidates[0];
+  const packet = JSON.parse(read(entry.packetPath));
+  packet.ingredients.push({ name: { ...locale, en: 'Water' }, grams: 100 });
+  packet.exclusions = [{ ingredientIndex: 1, kind: 'ZERO_CHO', rationale: 'Plain water', evidencePath: 'docs/nutrition/fixture-0.md' }];
+  const check = () => {
+    const raw = JSON.stringify(packet);
+    files.set(entry.packetPath, raw);
+    entry.classification!.candidateSha256 = textHash(raw);
+    return checkBatch(batch, read).manifest.candidates[0];
+  };
+  assert.equal(check().state, 'READY_FOR_APPROVAL');
+  packet.exclusions[0].evidencePath = 'docs/nutrition/unbound.md';
+  assert.match(check().reason!, /Invalid GK ingredient exclusion/);
+  packet.exclusions[0].evidencePath = 'docs/nutrition/fixture-0.md';
+  packet.omissions = [{ ingredientIndex: 1, choPer100g: 0.5 }];
+  assert.match(check().reason!, /duplicate GK ingredient accounting/);
+});
