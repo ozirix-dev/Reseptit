@@ -4,9 +4,9 @@
   "coverage": {
     "PROPOSED_RANGE": 36,
     "PUBLISHED_SINGLE": 197,
-    "PROPOSED_SINGLE": 24,
+    "PROPOSED_SINGLE": 25,
     "IN_PROGRESS": 36,
-    "NO_GK": 23,
+    "NO_GK": 22,
     "PUBLISHED_RANGE": 10
   },
   "reviewedPrHeads": {
@@ -111,7 +111,7 @@
     "japanilainen-curry-tofulla",
     "khao-soi-vhh-konjac"
   ],
-  "nextRecipeId": "okonomiyaki-kaaliletut",
+  "nextRecipeId": "pho-bo",
   "recipes": [
     {
       "recipeId": "aloo-paratha",
@@ -12254,10 +12254,10 @@
       "recipeSha256": "3cb879bd7e385f45701c52fe67f67b1f207d95d311eba531c4d17857a0883f8b",
       "pilotInputSha256": "2d5ec166f833ad4aa3e469ce380573f8ce9c134fc06628a626279f97fab822e2",
       "servings": 4,
-      "status": "NO_GK",
+      "status": "PROPOSED_SINGLE",
       "priorEvidence": [],
-      "level": null,
-      "ownerApproval": null,
+      "level": "B",
+      "ownerApproval": false,
       "sourceQualified": null,
       "blockers": [
         "okonomiyaki-kaaliletut: majoneesia: GI evidence is missing.",
@@ -12372,7 +12372,49 @@
             "GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
           ]
         }
-      ]
+      ],
+      "operation80Proposal": {
+        "evidencePath": "docs/nutrition/gk80-operation80-batch-41.md",
+        "baselineRecipeSha256": "3cb879bd7e385f45701c52fe67f67b1f207d95d311eba531c4d17857a0883f8b",
+        "inputFields": [
+          "gramsBatch",
+          "choPer100g",
+          "giGlucoseScale"
+        ],
+        "scenarios": [
+          {
+            "inputs": [
+              [
+                400,
+                4.97,
+                40
+              ],
+              [
+                165,
+                0.3,
+                50
+              ],
+              [
+                40,
+                4.6,
+                40
+              ],
+              [
+                10,
+                6.2,
+                50
+              ],
+              [
+                100,
+                1.4,
+                50
+              ]
+            ],
+            "gkPerServing": "2.486375"
+          }
+        ],
+        "publicationAuthorized": false
+      }
     },
     {
       "recipeId": "paahdettu-aamiaismunakoiso",
