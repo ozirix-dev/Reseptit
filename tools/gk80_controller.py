@@ -151,8 +151,10 @@ def validate_queue(root: Path, queue: dict, target: int) -> dict[str, int]:
             relative = item.get("evidencePath")
             if not isinstance(relative, str) or not relative.startswith(EVIDENCE_PREFIX):
                 raise GateError(f"Evidence must be in {EVIDENCE_PREFIX}: {recipe_id}")
+            evidence_root = (root / EVIDENCE_PREFIX).resolve()
             evidence = (root / relative).resolve()
-            if not evidence.is_relative_to(root.resolve()) or not evidence.is_file():
+            if (not evidence_root.is_relative_to(root.resolve())
+                    or not evidence.is_relative_to(evidence_root) or not evidence.is_file()):
                 raise GateError(f"Unsafe or missing evidence path for {recipe_id}")
             if sha256(evidence.read_bytes()) != item["evidenceSha256"]:
                 raise GateError(f"Evidence SHA-256 mismatch for {recipe_id}")
