@@ -1,0 +1,101 @@
+{
+  "candidates": [
+    {
+      "packetPath": "docs/nutrition/gk100-rescue-jiaozi-release-candidate.json",
+      "classification": {
+        "risk": "MEDIUM",
+        "reasons": [
+          "GI 28 kuvaa liha-salottisipulinyyttiä. Kuoriosuus ja kypsennys eivät varmistu. Kaali lasketaan ennen puristusta ja 0,37875 g dipin CHO:ta/annos jää pois.",
+          "Ehdokkaan lähderivit yksilöivät koostumussyötteet ja tutkimuksista käytetään yksittäisiä GI-lukuja."
+        ],
+        "outcome": "OWNER_DECISION",
+        "contentChange": "GK_ONLY",
+        "review": {
+          "depth": "FOCUSED",
+          "evidence": "docs/nutrition/gk80-operation80-batch-35.md ja ehdokaspaketin nelikielinen rajaus."
+        },
+        "contentSummary": "Keitetty neljän annoksen nyyttiversio ja erikseen tarjottava dippi.",
+        "candidateSha256": "6660ce5dbf2690ccb89c9da125a8c3ea00a6703a57ef92d33241a7f207932d9c"
+      },
+      "recipeId": "jiaozi"
+    },
+    {
+      "packetPath": "docs/nutrition/gk80-operation80-chow-mein-release-candidate.json",
+      "classification": {
+        "risk": "MEDIUM",
+        "reasons": [
+          "GI 47 ja 48,2 ovat kaksi eri nuudeliverrokkia. Wokkaus voi muuttaa vastetta. Kastikkeen poisjätön 0,93 g CHO/annos vaikutus on GI 100 -seulonnassa 0,93 GK.",
+          "Ehdokkaan lähderivit yksilöivät koostumussyötteet ja tutkimuksista käytetään yksittäisiä GI-lukuja."
+        ],
+        "outcome": "OWNER_DECISION",
+        "contentChange": "GK_ONLY",
+        "review": {
+          "depth": "FOCUSED",
+          "evidence": "docs/nutrition/gk80-operation80-batch-25.md ja ehdokaspaketin nelikielinen rajaus."
+        },
+        "contentSummary": "Punnitaan 300 g kypsiä valutettuja vehnämunanuudeleita ja käytetään 12 g nimettyä osterikastiketta.",
+        "candidateSha256": "190fcd3422ebe04dee0a22d65d13ebca83c1de240e78898286fb75727623edf4"
+      },
+      "recipeId": "chow-mein"
+    },
+    {
+      "packetPath": "docs/nutrition/gk100-rescue-serabi-release-candidate.json",
+      "classification": {
+        "risk": "HIGH",
+        "reasons": [
+          "GI 76 koskee riisi-urad-dosaa ja määrää lähes koko taikinan GK:n. Uradin ja kookoksen korvausvaikutuksen suuntaa ja suuruutta ei tunneta. Tarvitaan läheisempi taikinaverrokki tai erillinen syväkatselmointi ennen omistajan päätöstä.",
+          "Ehdokkaan lähderivit yksilöivät koostumussyötteet ja tutkimuksista käytetään yksittäisiä GI-lukuja."
+        ],
+        "outcome": "REVIEW_REQUIRED",
+        "contentChange": "GK_ONLY",
+        "review": {
+          "depth": "FOCUSED",
+          "evidence": "docs/nutrition/gk80-operation80-batch-28.md ja ehdokaspaketin nelikielinen rajaus."
+        },
+        "contentSummary": "Ohut riisi-kookospannukakku, jonka päälle sulatetaan punnittu fariinisokeri.",
+        "candidateSha256": "8fed31af6463e8c0907a294fc12b1e0162ee5cd86b986eeec7c04bd867b4b7ad"
+      },
+      "recipeId": "indonesialainen-serabi-kookospannukakku"
+    },
+    {
+      "packetPath": "docs/nutrition/gk100-rescue-dan-dan-release-candidate.json",
+      "classification": {
+        "risk": "MEDIUM",
+        "reasons": [
+          "Väli kuvaa kahta tuotetta ja niiden eri CHO-määriä. Nuudelien GI:t ovat verrokkeja ja kastikkeessa käytetään laskentakoodeja. Etikasta jää pois 0,195 g CHO/annos.",
+          "Ehdokkaan lähderivit yksilöivät koostumussyötteet ja tutkimuksista käytetään yksittäisiä GI-lukuja."
+        ],
+        "outcome": "OWNER_DECISION",
+        "contentChange": "GK_ONLY",
+        "review": {
+          "depth": "FOCUSED",
+          "evidence": "docs/nutrition/gk80-operation80-batch-26.md ja ehdokaspaketin nelikielinen rajaus."
+        },
+        "contentSummary": "Valitaan tuore udon tai kuiva Hakubaku Somen. Molemmissa 300 g ennen keittämistä. Valinnainen paksoi rajataan erilleen.",
+        "candidateSha256": "ad22de231e93aa7f73a3ea6217d8ffadaf10994a1ce1cc1035f016503f2ba875"
+      },
+      "recipeId": "dan-dan-nuudelit"
+    },
+    {
+      "packetPath": "docs/nutrition/gk80-operation80-soba-release-candidate.json",
+      "classification": {
+        "risk": "MEDIUM",
+        "reasons": [
+          "GI 59,6 koskee anjovisliemessä tarjottua keitettyä tattarinuudelia. Kahden liemen poisjättö on yhteensä 0,90 g CHO/annos. Pinaatille ja munalle käytetään laskentakoodeja.",
+          "Ehdokkaan lähderivit yksilöivät koostumussyötteet ja tutkimuksista käytetään yksittäisiä GI-lukuja."
+        ],
+        "outcome": "OWNER_DECISION",
+        "contentChange": "GK_ONLY",
+        "review": {
+          "depth": "FOCUSED",
+          "evidence": "docs/nutrition/gk80-operation80-batch-27.md ja ehdokaspaketin nelikielinen rajaus."
+        },
+        "contentSummary": "Valitaan Muso NDL030 -täystattarisoba, siivilöity bonito-dashi ja Aneto Natural Low Sodium -kanaliemi.",
+        "candidateSha256": "7196b4361e648d9a8d8c66dad87477d79bafdee02f42bab6496f80febb9e9a81"
+      },
+      "recipeId": "japanilainen-soba-aamiaiskeitto"
+    }
+  ],
+  "batchId": "gk100-pr233-content-decisions",
+  "schemaVersion": 1
+}
