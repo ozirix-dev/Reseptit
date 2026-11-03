@@ -120,3 +120,9 @@ Jogurttia sisältävän vehnäleivän tutkimus arvioi tärkkelyksen sulavuutta l
 Aiemman selvityksen Pickerd 3731 -tuotteen nykyinen valmistajasivu vahvistaa 3,7 g CHO/100 g. Tuote jauhetaan kokonaisista kuorituista manteleista. Molempien reseptien 200 g erässä jauho tuo 0,925 g CHO/annos ja alittaa yksittäisen pienosuusrajan. Molempien reseptien git-blobit täsmäävät aiempaan laskentaan. [Pickerd](https://www.pickerd.de/mandeln-gemahlen/3731) · [Punnitut määrät ja koostumussidokset](../research/gk80-international-20261102/pickerd-almond-two.md)
 
 Tuorejuuston 0,5 g CHO/annos antaa GI-koodilla 35 laskettuna 0,175 GK/annos kummassakin reseptissä. Pois rajattu CHO on lihapiirakassa 1,470375 g/annos ja korvapuusteissa 1,06328125 g/annos. Katselmoinnissa käytetään aiemman lähdepaketin esitystapaa **laskettu GK-arvio alle 5 / annos**, koska tarkka pisteluku kuvaa vain mallinnettua osuutta. Nimetty jauhe, punnitut mausteet ja tuorejuuston GI-koodi odottavat hyväksyntää.
+
+### Ma la xiang guo
+
+Resepti ryöppää lootusjuuren ja paistaa sen wokissa. USDA SR28:n keitetylle ja valutetulle juurelle ilmoitettu kokonais-CHO 16,02 g miinus kuitu 3,1 g antaa 12,92 g/100 g. Arvot on taulukossa johdettu ilman suoria analyysipisteitä. Jos valitaan 120 g punnittua valutettua juurta, osuus on 3,876 g/annos neljälle. Tämä on määräskenaario reseptin yhdelle juurelle. Yksittäinen 1 g:n raja edellyttäisi alle 31 g koko erään. [USDA SR28, NDB 11255](https://www.ars.usda.gov/ARSUserFiles/80400535/Data/SR/SR28/reports/sr28fg11.pdf)
+
+Lootuksen siemeniä koskeva ihmis-GI-koe mittaa eri kasvinosaa. Juuren GI jää avoimeksi. Mapo-tofun Toban Djan -sidos soveltuu tämän reseptin ehdotettuun 30 g:n punnittuun tahnaan ja antaa 0,825 g CHO/annos. Määrä on ehdotus ja edellyttää yhteistä pienosuustarkistusta. [Lootuksen siementen koe](https://pubmed.ncbi.nlm.nih.gov/30875961/) · [Toban Djanin laskentaperuste](gk80-operation80-mapo-tofu.md)
