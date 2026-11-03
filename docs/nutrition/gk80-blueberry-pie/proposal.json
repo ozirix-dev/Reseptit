@@ -1,0 +1,117 @@
+{
+  "recipeId": "vhh-mustikkapiirakka",
+  "sourcePath": "reseptit/jalkiruoat/vhh-mustikkapiirakka.md",
+  "sourceLfSha256": "ea939525ce0607bdb5de121ad861ea796a2019e856b616bab6dca5311f63fa18",
+  "sourceIngredients": [
+    {
+      "amount": 150,
+      "unit": "g",
+      "item": "mantelijauhoa"
+    },
+    {
+      "amount": 75,
+      "unit": "g",
+      "item": "voita"
+    },
+    {
+      "amount": 1,
+      "unit": "kpl",
+      "item": "kananmuna"
+    },
+    {
+      "amount": 250,
+      "unit": "g",
+      "item": "maitorahkaa"
+    },
+    {
+      "amount": 2,
+      "unit": "kpl",
+      "item": "kananmunaa"
+    },
+    {
+      "amount": 150,
+      "unit": "g",
+      "item": "mustikoita"
+    },
+    {
+      "amount": 1,
+      "unit": "tl",
+      "item": "vaniljauutetta"
+    }
+  ],
+  "servings": 8,
+  "variant": "NEW source-resolved almond preparation and weighed vanilla; seven original rows, egg1andegg2 kept separate.",
+  "ingredients": [
+    {
+      "sourceRowIndex": 0,
+      "name": "almond meal freshly ground from whole dry raw almonds",
+      "grams": 150,
+      "fineliRecordId": "MEXT2023-05001",
+      "giRecordId": null,
+      "massEvidence": "Weigh150g dry raw unpeeled whole almonds before grinding; no peeling,defatting,sieving or loss; retain allmeal. Not generic commercial almondflour."
+    },
+    {
+      "sourceRowIndex": 1,
+      "name": "voita",
+      "grams": 75,
+      "fineliRecordId": "fineli-500",
+      "giRecordId": null
+    },
+    {
+      "sourceRowIndex": 2,
+      "name": "kananmuna pohjaan",
+      "grams": 55,
+      "fineliRecordId": "fineli-858",
+      "giRecordId": null
+    },
+    {
+      "sourceRowIndex": 3,
+      "name": "maitorahkaa,maustamaton alle0.5%rasva",
+      "grams": 250,
+      "fineliRecordId": "fineli-622",
+      "giRecordId": "dairy-category-mean-gi-35",
+      "foodKey": "dairy",
+      "preparationKey": "unflavoured-dairy",
+      "giMatchEvidence": "Existing published broad category proxy,LOW; new named recipe application needs source/content review. Not a measured ingredient- or meal-specific GI."
+    },
+    {
+      "sourceRowIndex": 4,
+      "name": "kaksi kananmunaa taytteeseen",
+      "grams": 110,
+      "fineliRecordId": "fineli-858",
+      "giRecordId": null
+    },
+    {
+      "sourceRowIndex": 5,
+      "name": "metsamustikkaa (bilberry)",
+      "grams": 150,
+      "fineliRecordId": "fineli-442",
+      "giRecordId": "fruit-category-mean-gi-51",
+      "foodKey": "fruit-category-mean",
+      "preparationKey": "category-mean",
+      "giMatchEvidence": "Existing published broad category proxy,LOW; new named recipe application needs source/content review. Not a measured ingredient- or meal-specific GI."
+    },
+    {
+      "sourceRowIndex": 6,
+      "name": "vaniljauutetta,NEWweighed5g",
+      "grams": 5,
+      "fineliRecordId": null,
+      "giRecordId": null,
+      "availableCarbohydrateUpperBoundPerServingG": 0.625,
+      "upperBoundEvidence": "Prescribed5g vanilla/8=.625g total ingredientmass, physical availableCHO ceiling. No unknownGI,composition orpolyols settozero.",
+      "excludedReason": "Positive whole-mass source bound. Not an actual nutrient estimate."
+    }
+  ],
+  "expected": {
+    "gk": "1.30177875",
+    "omittedChoIncludingCeilingsG": "1.736875",
+    "display": "alle5"
+  },
+  "sourceApplicationApproved": false,
+  "contentVersionApproved": false,
+  "actualBatchWeighed": false,
+  "publicationApproved": false,
+  "newPublishedValue": false,
+  "macroPublicationAuthorized": false,
+  "newRuleApplied": false
+}

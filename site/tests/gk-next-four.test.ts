@@ -28,8 +28,8 @@ test('the four A inputs and legacy variants remain intact as four approved B ver
  for(const previous of baseline.legacyVariants){const v=old.find(v=>v.recipeId===previous.recipeId)!;assert.equal(digest(v),previous.variantSha256,previous.recipeId);}
  const report=read('tmp/nutrition/glycemic-load-pilot.json');
  assert.deepEqual(report.gkOnlyVariants,gkOnlyVariants);assert.deepEqual(report.versionCoverage,gkVersionCoverage);
- assert.equal(gkVersionCoverage.numericRecipes,193);assert.equal(gkVersionCoverage.originalNumeric,156);assert.equal(gkVersionCoverage.additionalA,27);assert.equal(gkVersionCoverage.additionalB,10);assert.equal(gkVersionCoverage.total,326);assert.equal(gkVersionCoverage.missing,133);
- assert.deepEqual(report.coverageViews,{originalRecipe:{total:326,numeric:156,missing:170},atLeastOneExactVersion:{total:326,numeric:193,missing:133,additionalApprovedVersions:37}});
+ assert.equal(gkVersionCoverage.numericRecipes,194);assert.equal(gkVersionCoverage.originalNumeric,156);assert.equal(gkVersionCoverage.additionalA,28);assert.equal(gkVersionCoverage.additionalB,10);assert.equal(gkVersionCoverage.total,326);assert.equal(gkVersionCoverage.missing,132);
+ assert.deepEqual(report.coverageViews,{originalRecipe:{total:326,numeric:156,missing:170},atLeastOneExactVersion:{total:326,numeric:194,missing:132,additionalApprovedVersions:38}});
  assert.throws(()=>countGkVersions(report.results,[...gkOnlyVariants,four[0]]),/distinct/);
  for(const id of ['jerk-kana','sate-ayam'])assert.ok(!gkOnlyVariants.some(v=>v.recipeId===id));
 });
@@ -162,4 +162,14 @@ test('independent Decimal replay matches four admitted A results and keeps nativ
  const output=JSON.parse(execFileSync(process.platform==='win32'?'python':'python3',['-I',path.join(root,folder+'verify_decimal.py')],{encoding:'utf8'}));assert.equal(output.status,'PASS');assert.equal(output.checked,4);assert.equal(output.writes,0);
  for(const v of four){const actual=output.results.find((r:any)=>r.recipeId===v.recipeId);assert.equal(Number(actual.point),v.point);assert.ok(Math.abs(Number(actual.omittedCho)-v.omittedCho)<1e-12);}
  const cacao=output.results.find((r:any)=>r.recipeId==='kaakao-kookos-chia');assert.equal(cacao.coveredCho,'0.725');assert.equal(cacao.omittedCho,'0.9625');
+});
+
+test('blueberry pie adds one exact GK-only version with separate egg quantities', () => {
+ const variant = gkOnlyVariants.find(v => v.recipeId === 'vhh-mustikkapiirakka');
+ assert.ok(variant);
+ assert.equal(variant.level, 'A');
+ assert.equal(variant.point, 1.3);
+ assert.ok(Math.abs(variant.omittedCho - 1.736875) < 1e-10);
+ assert.deepEqual(variant.ingredients.map(i => i.grams), [150, 75, 55, 250, 110, 150, 5]);
+ assert.equal(variant.macroScope, 'NO_MACRO_PACKAGE_FOR_THIS_VERSION');
 });
