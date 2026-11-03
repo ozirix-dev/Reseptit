@@ -495,7 +495,10 @@ test('approved GK-only versions are explicit on every existing locale page and c
    if (!addedEnglishPage) pages++;
   }
  }
- assert.equal(pages,99+siteContent.recipes.filter(r=>r.recipeId==='lindstrominpihvit-kaalilla').length);
+ for (const id of ['indialainen-poha-maapahkinoilla', 'hunaja-sinappikana-kaalilla']) {
+   assert.deepEqual(siteContent.recipes.filter(recipe => recipe.recipeId === id).map(recipe => recipe.locale).sort(), ['en', 'fi', 'sv', 'th'], id);
+ }
+ assert.equal(pages,105+siteContent.recipes.filter(r=>r.recipeId==='lindstrominpihvit-kaalilla').length);
  for(const p of ['glykeeminen-kuorma','en/glycemic-load','sv/glykemisk-belastning','th/glycemic-load']){
   const html=await readFile(path.join(dist,p,'index.html'),'utf8');assert.ok(html.includes('<strong>205</strong>'));assert.ok(html.includes('<strong>121</strong>'));assert.ok(html.includes('data-gk-coverage="version-aware"'));assert.ok(html.includes('data-gk-coverage="original"'));assert.ok(html.includes('<strong>156</strong>'));assert.ok(html.includes('<strong>170</strong>'));
   for(const v of gkOnlyVariants)assert.ok(html.includes(`data-gk-version="${v.versionId}"`));
