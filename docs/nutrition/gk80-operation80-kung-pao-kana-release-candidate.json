@@ -1,0 +1,219 @@
+{
+  "recipeId": "kung-pao-kana",
+  "servings": 4,
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "unroundedGk": "34.94928",
+  "upperScenario": {
+    "giOverrides": [
+      {
+        "inputIndex": 0,
+        "gi": 90
+      }
+    ],
+    "unroundedGk": "38.10928"
+  },
+  "inputs": [
+    [
+      200,
+      79,
+      82
+    ],
+    [
+      100,
+      14.1,
+      13
+    ],
+    [
+      12,
+      99.9,
+      59
+    ],
+    [
+      40,
+      4.6,
+      40
+    ],
+    [
+      6,
+      10.2,
+      40
+    ],
+    [
+      6,
+      4.8,
+      50
+    ],
+    [
+      4,
+      12.9,
+      40
+    ],
+    [
+      600,
+      0,
+      0
+    ]
+  ],
+  "ingredients": [
+    {
+      "grams": 200,
+      "name": {
+        "fi": "Kuiva jasmiiniriisi",
+        "en": "Dry jasmine rice",
+        "sv": "Torrt jasminris",
+        "th": "ข้าวหอมมะลิแห้ง"
+      }
+    },
+    {
+      "grams": 100,
+      "name": {
+        "fi": "Paahdetut maapähkinät",
+        "en": "Roasted peanuts",
+        "sv": "Rostade jordnötter",
+        "th": "ถั่วลิสงคั่ว"
+      }
+    },
+    {
+      "grams": 12,
+      "name": {
+        "fi": "Sokeri",
+        "en": "Sugar",
+        "sv": "Socker",
+        "th": "น้ำตาล"
+      }
+    },
+    {
+      "grams": 40,
+      "name": {
+        "fi": "Kevätsipuli",
+        "en": "Spring onion",
+        "sv": "Salladslök",
+        "th": "ต้นหอม"
+      }
+    },
+    {
+      "grams": 6,
+      "name": {
+        "fi": "Valkosipuli",
+        "en": "Garlic",
+        "sv": "Vitlök",
+        "th": "กระเทียม"
+      }
+    },
+    {
+      "grams": 6,
+      "name": {
+        "fi": "Inkivääri",
+        "en": "Ginger",
+        "sv": "Ingefära",
+        "th": "ขิง"
+      }
+    },
+    {
+      "grams": 4,
+      "name": {
+        "fi": "Kuivattu chili",
+        "en": "Dried chilli",
+        "sv": "Torkad chili",
+        "th": "พริกแห้ง"
+      }
+    },
+    {
+      "grams": 600,
+      "name": {
+        "fi": "Broilerin reisiliha",
+        "en": "Chicken thigh",
+        "sv": "Kycklinglårfilé",
+        "th": "เนื้อสะโพกไก่"
+      }
+    },
+    {
+      "grams": 4,
+      "name": {
+        "fi": "Maissitärkkelys",
+        "en": "Cornflour",
+        "sv": "Majsstärkelse",
+        "th": "แป้งข้าวโพด"
+      }
+    },
+    {
+      "grams": null,
+      "name": {
+        "fi": "Kikkoman-soijakastike",
+        "en": "Kikkoman soy sauce",
+        "sv": "Kikkoman-sojasås",
+        "th": "ซีอิ๊ว Kikkoman"
+      },
+      "quantity": {
+        "amount": 45,
+        "unit": "ml"
+      }
+    },
+    {
+      "grams": 15,
+      "name": {
+        "fi": "Riisiviinietikka",
+        "en": "Rice vinegar",
+        "sv": "Risvinäger",
+        "th": "น้ำส้มสายชูข้าว"
+      }
+    }
+  ],
+  "omissions": [
+    {
+      "ingredientIndex": 8,
+      "choPer100g": 86
+    },
+    {
+      "ingredientIndex": 9,
+      "choPer100ml": 3.2
+    },
+    {
+      "ingredientIndex": 10,
+      "choPer100g": 0.5
+    }
+  ],
+  "preparation": {
+    "fi": "Keitä {{amount:0}} g kuivaa riisiä vedessä ja tarjoa koko kypsä erä. Marinoi broileri {{amount:8}} g:ssa maissitärkkelystä ja 15 ml:ssa soijakastiketta. Sekoita kastikkeeksi loput 30 ml soijaa, riisiviinietikka, sokeri ja reseptin vesi. Wokkaa chili, broileri, valkosipuli, inkivääri ja kevätsipuli reseptin mukaan. Lisää kastike ja maapähkinät. Jaa wokki ja riisi {{servings}} annokseen.",
+    "en": "Cook {{amount:0}} g dry rice in water and serve the entire cooked batch. Marinate the chicken with {{amount:8}} g cornflour and 15 ml soy sauce. Mix the remaining 30 ml soy sauce, rice vinegar, sugar and water as directed. Stir-fry the chilli, chicken, garlic, ginger and spring onion as in the recipe. Add the sauce and peanuts. Divide the stir-fry and rice into {{servings}} servings.",
+    "sv": "Koka {{amount:0}} g torrt ris i vatten och servera hela den kokta satsen. Marinera kycklingen med {{amount:8}} g majsstärkelse och 15 ml soja. Blanda resterande 30 ml soja, risvinäger, socker och vatten enligt receptet. Woka chili, kyckling, vitlök, ingefära och salladslök enligt receptet. Tillsätt såsen och jordnötterna. Dela woken och riset i {{servings}} portioner.",
+    "th": "หุงข้าวแห้ง {{amount:0}} กรัมในน้ำและเสิร์ฟข้าวที่หุงทั้งหมด หมักไก่ด้วยแป้งข้าวโพด {{amount:8}} กรัมและซีอิ๊ว 15 มล. ผสมซีอิ๊วที่เหลือ 30 มล. กับน้ำส้มสายชูข้าว น้ำตาล และน้ำตามสูตร ผัดพริก ไก่ กระเทียม ขิง และต้นหอมตามสูตร ใส่ซอสและถั่วลิสง แบ่งไก่ผัดและข้าวเป็น {{servings}} ที่"
+  },
+  "limitation": {
+    "fi": "Riisin GI-skenaariot ovat 82 ja 90 samalla kuivapainolla. Pienosuuksista jää pois enintään 1,23875 g CHO/annos.",
+    "en": "The rice GI scenarios use 82 and 90 at the same dry weight. Up to 1.23875 g carbohydrate per serving is excluded.",
+    "sv": "Risscenarierna använder GI 82 och 90 med samma torrvikt. Högst 1,23875 g kolhydrat per portion ingår inte.",
+    "th": "สองกรณีใช้ค่า GI ข้าว 82 และ 90 ที่น้ำหนักแห้งเท่ากัน ไม่รวมคาร์โบไฮเดรตไม่เกิน 1.23875 กรัมต่อที่"
+  },
+  "sources": [
+    {
+      "title": "Jenkins et al., rice",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2996336/"
+    },
+    {
+      "title": "Tan et al.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25789978/"
+    },
+    {
+      "title": "Jenkins et al., peanuts and sucrose",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/6259925/"
+    },
+    {
+      "title": "Fineli",
+      "url": "https://fineli.fi/fineli/fi/elintarvikkeet/11521"
+    },
+    {
+      "title": "AFCD",
+      "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd"
+    },
+    {
+      "title": "Kikkoman",
+      "url": "https://www.kikkoman.co.uk/products/detail/fs-kikkoman-naturally-brewed-soy-sauce"
+    }
+  ],
+  "boundFiles": {
+    "reseptit/paaruoat/kung-pao-kana.md": "f9e22adae3f6751502f6cb2470273c933981ecd1ab424dcf71221c0d2f21265f",
+    "docs/nutrition/gk80-operation80-batch-37.md": "b4c1475a8d9d569656aa78f519be074fb147b5303358a3643d791e788cdb2ea9"
+  }
+}
