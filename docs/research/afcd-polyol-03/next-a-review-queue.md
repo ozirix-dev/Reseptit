@@ -37,3 +37,11 @@ Margheritan 56–65 ja Hyderabadi-kanabiryanin 24–32 on hyväksytty täsmäver
 [Draft PR 214](https://github.com/ozirix-dev/Reseptit/pull/214) · [Margheritan syöte](margherita-handoff.json) · [Biryanin syöte](biryani-handoff.json)
 
 Margheritan ja Hyderabadi-kanabiryanin luovutuskenttä nutritionInputSha256 tarkoittaa ravintolaskentatiedoston sourceHash-kenttää. Molemmat arvot täsmäävät main-commitissa 9740c2a. Koko JSON-tiedoston tiiviste tarkistaa eri asian. Tarkista sourceHash uudelleen integraation pohjaversiosta ja käytä hyväksyttyjä välejä 56–65 ja 24–32.
+
+## Tilanne PR 215:n julkaisun jälkeen
+
+Julkinen kattavuus on 204/326. Tavoitteeseen 261/326 puuttuu 57 reseptiä. Poha ja hunaja-sinappikana sisältyvät lähtölukuun. PR 214:stä vain pav bhaji kasvattaisi kattavuutta. GitHub ilmoittaa PR 214:ssä olevan yhdistämisristiriitoja. Julkaisuagentin käsiteltäväksi jää pav bhajin sovittaminen julkaistuun pohjaan.
+
+Kerala-kalacurry, maksa ja pekoni, kevätsipulipannukakku, Margherita ja Hyderabadi-kanabiryani muodostavat viisi erillistä integraatioon valmisteltavaa hyväksyttyä reseptiä. Jos nämä viisi ja pav bhaji julkaistaan, kattavuus nousee 210/326:een ja vaje on 51.
+
+[Julkinen koonti](https://ozirix-dev.github.io/Reseptit/glykeeminen-kuorma/) · [PR 215:n julkaisuajo](https://github.com/ozirix-dev/Reseptit/actions/runs/41605550882)
