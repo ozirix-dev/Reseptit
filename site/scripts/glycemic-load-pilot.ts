@@ -114,10 +114,20 @@ for (const record of giRecords) {
     throw new Error(`Strong GI record must be published and ISO 26642-confirmed: ${record.id}`);
   }
 }
+const { textHash } = await import('./gk149-model');
+const ackeeRecipeId = 'karibia-ackee-ja-suolakala';
+const ackeePacket = JSON.parse(await readFile(
+  path.join(root, 'docs/nutrition/gk80-operation80-ackee-release-candidate.json'), 'utf8'));
+// Keep the unavailable historical result tied to its original source binding.
+const ackeeSource = publishedRecipeSources.get(ackeeRecipeId);
+if (!ackeeSource || textHash(ackeeSource.markdown) !== ackeePacket.foodSafety.preparedRecipeSha256
+    || !recipeBindings.recipes[ackeeRecipeId]) {
+  throw new Error('Operation80 ackee recipe binding changed');
+}
 const sourceHashes = Object.fromEntries(expectedRecipeIds.map((recipeId) => {
   const source = publishedRecipeSources.get(recipeId);
   if (!source) throw new Error("Published source recipe is missing from the current GK set: " + recipeId);
-  return [recipeId, recipeBindingHash(source.markdown, recipeAliases.aliases)];
+  return [recipeId, recipeId === ackeeRecipeId ? recipeBindings.recipes[recipeId] : recipeBindingHash(source.markdown, recipeAliases.aliases)];
 }));
 
 // Only explicitly bound new versions require whole preparation/translation text.
@@ -163,6 +173,9 @@ const legacyResults = rawResults.map((result) => {
   return usesImputation ? {...result, assessmentType: "PUBLISHED_IMPUTATION" as const, modelScenario: "POINT_SCENARIO" as const} : result;
 });
 const results = await applyScopedPolyolC(root, await applyRecovery(root, await withdrawQ09Tea(root, await applyGk80Release(root, legacyResults))));
+if (results.find(result => result.recipeId === ackeeRecipeId)?.status !== 'INSUFFICIENT SOURCE DATA') {
+  throw new Error('The historical ackee recipe must remain without a numeric estimate');
+}
 const existingGkOnlyVariants = [...buildGkOnlyVariants(root),...buildApprovedSevenVariants(root),...buildApprovedFourVariants(root),...buildApprovedBVariants(root),...buildProductAVariants(root),...buildPanangKimchiVariants(root),buildBlueberryPieVariant(root),...buildThreeCurryVariants(root),buildLindstromBrineVariant(root),...buildReviewedGkVariants(root),...buildPohaHoneyMustardVariants(root),...buildTehoajoVariants(root),...buildTwoAlmondPieVariants(root)];
 const baselineCoverage = countGkVersions(results, existingGkOnlyVariants);
 const operation80Variants = await (async () => {
@@ -171,7 +184,6 @@ const operation80Variants = await (async () => {
     recipeId: string; recipePath: string; recipeSha256: string; servings: number;
     evidencePath: string; evidenceSha256: string; scenarios: string[];
   };
-  const { textHash } = await import('./gk149-model');
   const approval = await readFile(path.join(root, 'docs/nutrition/gk80-operation80-first-release-approval.json'), 'utf8');
   if (textHash(approval) !== 'f07b97cc44daaf863817b57d8a1685634019de2df24af6d1c5ab034251c9b45d') throw new Error('Operation80 release approval changed');
   const { boundFiles }: { boundFiles: Record<string, string> } = JSON.parse(approval);
@@ -183,11 +195,9 @@ const operation80Variants = await (async () => {
   const manifest: { entries: ReleaseEntry[] } = JSON.parse(await readFile(
     path.join(root, 'docs/nutrition/gk80-operation80-first-release-manifest.json'), 'utf8'));
   const firstBatch = manifest.entries.map(entry => entry.recipeId);
-  const ackeePacket = JSON.parse(await readFile(
-    path.join(root, 'docs/nutrition/gk80-operation80-ackee-release-candidate.json'), 'utf8'));
   const resultsById = new Map(results.map(result => [result.recipeId, result]));
   await Promise.all(manifest.entries.map(async entry => {
-    const expectedRecipeHash = entry.recipeId === 'karibia-ackee-ja-suolakala'
+    const expectedRecipeHash = entry.recipeId === ackeeRecipeId
       ? ackeePacket.foodSafety.preparedRecipeSha256 : entry.recipeSha256;
     const [recipe, evidence] = await Promise.all([
       readFile(path.join(root, entry.recipePath), 'utf8'),

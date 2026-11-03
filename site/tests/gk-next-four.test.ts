@@ -110,7 +110,7 @@ test('approved curry variants retain the sealed calculation and native quantitie
 
 test('all326 parent GK objects,23 old variants, macro sources and recipe trees remain on the main baseline',()=>{
  const report=read('tmp/nutrition/glycemic-load-pilot.json');assert.equal(report.results.length,326);
- assert.deepEqual(Object.fromEntries(report.results.map((r:any)=>[r.recipeId,digest(r)])), {...baseline.originalResultHashes, 'karibia-ackee-ja-suolakala': 'b48a1a53206bfcd4785a4eb5581eccd019bace8eeb2e2e5b37517d08f55e961b'});
+ assert.deepEqual(Object.fromEntries(report.results.map((r:any)=>[r.recipeId,digest(r)])),baseline.originalResultHashes);
  assert.equal(report.results.filter((r:any)=>r.status==='CALCULATED').length,156);
  for(const [p,hash] of Object.entries(baseline.protectedSourceFilesLfSha256))assert.equal(textHash(readFileSync(path.join(root,p),'utf8')),hash,p);
  assertRecipeBaseline(root,baseline.main,'docs/nutrition/calculations');
