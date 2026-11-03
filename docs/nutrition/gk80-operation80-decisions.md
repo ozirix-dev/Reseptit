@@ -75,7 +75,7 @@ Ackee: erillinen GK-täsmäversio käyttää 60 g kypsää ruodotonta suolatursk
 
 ## Jatkoehdotukset
 
-Nämä kolmetoista nelikielistä esikatseluversiota ovat kahden alkuperäisen erän lisäksi. Kohdennetussa tarkistuksessa niiden kanssa numeerinen esikatselukattavuus on 280/326.
+Nämä neljätoista nelikielistä esikatseluversiota ovat kahden alkuperäisen erän lisäksi. Kohdennetussa tarkistuksessa niiden kanssa numeerinen esikatselukattavuus on 281/326.
 
 | Resepti | GK/annos | Päätös ennen julkaisua |
 | --- | ---: | --- |
@@ -92,6 +92,7 @@ Nämä kolmetoista nelikielistä esikatseluversiota ovat kahden alkuperäisen er
 | Bánh bao kananmunalla | 25,30–34,55 | Hyväksy punnittu hiivataikina, täyttö höyrytyksen jälkeen ja kaksi höyryleivän GI-verrokkia. [Laskelma](../research/gk80-international-20261102/steamed-buns-source-control/CURRENT.md) |
 | Samosa | 44,42–44,57 | Hyväksy punnitut mausteet ja koko kasvis-sambosan GI-verrokki. [Laskentasyöte](gk80-operation80-samosa-release-candidate.json) |
 | Baozi | 31,20 | Hyväksy punnitut määrät, täytetyn höyrysämpylän verrokki ja lähteen julkaisukäyttö. [Laskelma](gk80-operation80-baozi.md) |
+| Sate ayam | 6,02 | Hyväksy nimetyt tuotteet, punnittu limetti, maapähkinän GI-verrokki ja marinadin täyden siirtymän oletus. [Laskelma](gk80-operation80-sate-ayam.md) |
 
 ### Aiempi rinnakkainen ehdotus: paistettu maksa ja pekoni
 
