@@ -9,3 +9,9 @@ Nykyohjeessa ei ole punnittua kookosmaidon jakoa taikinaan ja curryyn eikä curr
 - [Alkuperäistutkimus](https://pubmed.ncbi.nlm.nih.gov/22212476/)
 - [GI-taulukko, rivit 72 ja 76](https://pmc.ncbi.nlm.nih.gov/articles/PMC7791047/)
 - [Laskentasyöte](../../nutrition/calculations/malesialainen-roti-jala-currykanalla.json)
+
+## Testicurryn koostumus
+
+Kansainvälisen GI-taulukon täydennys kuvaa testicurryn perunaa ja kookosmaitoa sisältäväksi. Nykyisessä reseptissä ei ole perunaa. Letun ja koko aterian testiannoksissa oli 25 ja 32 g saatavaa hiilihydraattia. Erotusta ei kohdisteta pelkkään perunaan, koska curry on usean ainesosan kokonaisuus. GI 81 jää perunattoman reseptin herkkyyskokeeksi. Perunaa sisältävä sisältöversio vaatisi oman punnitun syötteen, valmistusohjeen ja hyväksynnän.
+
+[Testiruoan kuvaus](https://ghwinstitute.com/wp-content/uploads/2022/10/supplementaltable2-2.pdf)
