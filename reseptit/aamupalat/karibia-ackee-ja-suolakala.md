@@ -15,9 +15,10 @@ ingredients:
   - amount: 1
     unit: "tl"
     item: "suolakala"
-  - amount: 1
-    unit: "kpl"
-    item: "ackee"
+  - amount: 150
+    unit: "g"
+    item: "kaupallista ackee-säilykettä"
+    note: "valutettuna"
   - amount: 1
     unit: "kpl"
     item: "tomaatti"
@@ -59,4 +60,8 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 1. Valmistele ainekset: paloittele kasvikset ja kypsennä pavut tai liha tarvittaessa erikseen. Kuumenna öljy pannulla.
 2. Lisää pannulle pisimpään kypsyvät ainekset ja kypsennä pehmeiksi. Lisää mausteet ja tilkka vettä, jos pannu uhkaa kuivua.
 3. Lisää lopuksi nopeasti kypsyvät ainekset, kuten muna tai lehtivihannekset. Kypsennä juuri valmiiksi ja maista suola.
-4. Kuullota tomaatti ja sipuli, lisää suolakala ja kääntele lopuksi ackee varovasti joukkoon.
+4. Kuullota tomaatti ja sipuli, lisää suolakala ja kääntele lopuksi valutettu säilykeackee varovasti joukkoon.
+
+## Muistiinpanot
+
+Käytä tähän reseptiin kaupallista ackee-säilykettä. Tuoreen ackeen turvallinen käsittely edellyttää erityisosaamista. Kypsentäminen ei poista raa’an hedelmän hypoglysiini A:ta. [FDA:n ackee-ohje](https://www.fda.gov/food/natural-toxins-food/hypoglycin-and-ackee-fruit)
