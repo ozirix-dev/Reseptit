@@ -2,11 +2,11 @@
   "schemaVersion": 1,
   "main": "4d6f19a620bb95e771c12f499554bf2cf1f06e51",
   "coverage": {
-    "PROPOSED_RANGE": 27,
+    "PROPOSED_RANGE": 28,
     "PUBLISHED_SINGLE": 197,
     "PROPOSED_SINGLE": 18,
     "IN_PROGRESS": 34,
-    "NO_GK": 40,
+    "NO_GK": 39,
     "PUBLISHED_RANGE": 10
   },
   "reviewedPrHeads": {
@@ -111,7 +111,7 @@
     "japanilainen-curry-tofulla",
     "khao-soi-vhh-konjac"
   ],
-  "nextRecipeId": "dan-dan-nuudelit",
+  "nextRecipeId": "goi-cuon",
   "recipes": [
     {
       "recipeId": "aloo-paratha",
@@ -1690,10 +1690,10 @@
       "recipeSha256": "81db676010a87a0a2b4a9dbd081ca672659fec2027fc82237b8bc606c3f34664",
       "pilotInputSha256": "033a309295fe6649be76d19343b4a6f29a45c2b7f13b3fa5e8f3938bc5d875af",
       "servings": 4,
-      "status": "NO_GK",
+      "status": "PROPOSED_RANGE",
       "priorEvidence": [],
-      "level": null,
-      "ownerApproval": null,
+      "level": "B",
+      "ownerApproval": false,
       "sourceQualified": null,
       "blockers": [
         "dan-dan-nuudelit: seesamitahnaa: 2 tbsp tahini lacks a matched product composition record; whole sesame seeds are not a reliable substitute.",
@@ -1796,7 +1796,99 @@
             "Individual sub-1 g contribution counted toward cumulative 2 g/serving editorial tolerance: Two spring onions bounded below 1 g available carbohydrate per serving."
           ]
         }
-      ]
+      ],
+      "operation80Proposal": {
+        "evidencePath": "docs/nutrition/gk80-operation80-batch-26.md",
+        "baselineRecipeSha256": "81db676010a87a0a2b4a9dbd081ca672659fec2027fc82237b8bc606c3f34664",
+        "inputFields": [
+          "gramsBatch",
+          "choPer100g",
+          "giGlucoseScale"
+        ],
+        "scenarios": [
+          {
+            "inputs": [
+              [
+                300,
+                50.1,
+                48.2
+              ],
+              [
+                300,
+                0,
+                0
+              ],
+              [
+                7,
+                16.3,
+                40
+              ],
+              [
+                18,
+                3.2,
+                50
+              ],
+              [
+                30,
+                0.7,
+                50
+              ],
+              [
+                20,
+                14.1,
+                13
+              ],
+              [
+                24,
+                4.6,
+                40
+              ]
+            ],
+            "gkPerServing": "18.52555"
+          },
+          {
+            "inputs": [
+              [
+                300,
+                71.2,
+                46
+              ],
+              [
+                300,
+                0,
+                0
+              ],
+              [
+                7,
+                16.3,
+                40
+              ],
+              [
+                18,
+                3.2,
+                50
+              ],
+              [
+                30,
+                0.7,
+                50
+              ],
+              [
+                20,
+                14.1,
+                13
+              ],
+              [
+                24,
+                4.6,
+                40
+              ]
+            ],
+            "gkPerServing": "24.9784"
+          }
+        ],
+        "publicationAuthorized": false
+      }
     },
     {
       "recipeId": "dim-sum",
