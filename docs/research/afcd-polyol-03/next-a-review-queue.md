@@ -55,3 +55,5 @@ UMS:n ihmiskokeessa roti canai ja dhal tarjoiltiin yhdessä. Tiivistelmän GI 62
 Nykyisen syötteen vehnäjauhon, kuivien punalinssien ja kookosmaidon osuus on (73,998 + 45,7 + 200 × 0,92 × 0,017) / 2 = 61,413 g/annos. GI-pisteet antavat 38,44 ja 43,60 GK/annos ennen currylehtien osuutta. Väli 38–44 on herkkyysseulonta. Valmistusvastaavuus ja currylehtien koostumus jäävät avoimiksi.
 
 [UMS:n ihmiskoe](https://eprints.ums.edu.my/id/eprint/662/1/ae0000000310.pdf) · [Koostumusartikkeli, taulukko 2](https://pkukmweb.ukm.my/jsm/pdf_files/SM-PDF-40-8-2011/07%20nik%20shanita.pdf) · [Reseptin laskentasyöte](../../nutrition/calculations/malesialainen-roti-canai-dhalilla.json)
+
+Currylehtien täydennys. IFCT G010:n analyyttinen 3,66 g/100 g antaa 5 grammasta kahdelle annokselle 0,0915 g/annos, kun lehdet syödään kokonaan. Yhteensä 61,5045 g/annos antaa GI-pisteillä 62,59 ja 71 vastaavasti 38,49566655 ja 43,668195 GK/annos. Herkkyysväli säilyy 38–44. Testiannosten koostumusvastaavuus jää avoimeksi. [IFCT-sovellus](gi-fallback-followup.md)
