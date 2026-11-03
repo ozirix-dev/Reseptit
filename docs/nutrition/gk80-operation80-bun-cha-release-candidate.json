@@ -161,6 +161,20 @@
       }
     }
   ],
+  "exclusions": [
+    {
+      "ingredientIndex": 12,
+      "kind": "ZERO_CHO",
+      "rationale": "The named unseasoned rice vinegar declares 0 g carbohydrate per 15 ml. The batch uses 30 ml.",
+      "evidencePath": "docs/nutrition/gk80-operation80-batch-24.md"
+    },
+    {
+      "ingredientIndex": 13,
+      "kind": "ZERO_CHO",
+      "rationale": "Plain warm water adds no carbohydrate.",
+      "evidencePath": "docs/nutrition/gk80-operation80-batch-24.md"
+    }
+  ],
   "sources": [
     {
       "title": "Ranawana et al.",
