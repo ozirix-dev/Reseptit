@@ -8,7 +8,22 @@
         "massaman-curry-kanalla-vhh: kookosmaito: GI evidence is missing for standalone coconut milk. PMID 22849311 measured rice porridge with coconut milk (GI 31), not this ingredient; the mixed-meal result is not an accepted analogue.",
         "massaman-curry-kanalla-vhh: nauris: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "massaman-curry-kanalla-vhh: kookosmaito: GI evidence is missing for standalone coconut milk. PMID 22849311 measured rice porridge with coconut milk (GI 31), not this ingredient; the mixed-meal result is not an accepted analogue.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        },
+        {
+          "blocker": "massaman-curry-kanalla-vhh: nauris: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        }
+      ]
     },
     {
       "id": "chole-bhature",
@@ -16,35 +31,91 @@
         "chole-bhature: tomaattimurskaa: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
         "chole-bhature: vehnäjauhoja: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "chole-bhature: tomaattimurskaa: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        },
+        {
+          "blocker": "chole-bhature: vehnäjauhoja: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        }
+      ]
     },
     {
       "id": "gulab-jamun",
       "blockers": [
         "gulab-jamun: vehnäjauhoja: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved."
       ],
-      "review": "F. Needs evidence for fried dairy dough soaked in syrup."
+      "review": "F. Needs evidence for fried dairy dough soaked in syrup.",
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "gulab-jamun: vehnäjauhoja: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        }
+      ]
     },
     {
       "id": "samosa",
       "blockers": [
         "samosa: vehnäjauhoja: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "samosa: vehnäjauhoja: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        }
+      ]
     },
     {
       "id": "aloo-paratha",
       "blockers": [
         "aloo-paratha: vehnäjauhoja: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved."
       ],
-      "review": "C candidate for the complete filled bread. Flour type and filling ratio of the tested bread are unresolved."
+      "review": "C candidate for the complete filled bread. Flour type and filling ratio of the tested bread are unresolved.",
+      "paths": [
+        "C",
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "aloo-paratha: vehnäjauhoja: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        }
+      ]
     },
     {
       "id": "vada-pav",
       "blockers": [
         "vada-pav: kikhernejauhoja: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "vada-pav: kikhernejauhoja: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        }
+      ]
     },
     {
       "id": "pani-puri",
@@ -54,14 +125,49 @@
         "pani-puri: perunoita: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
         "pani-puri: tamarinditahnaa: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "pani-puri: mannasuurimoita: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        },
+        {
+          "blocker": "pani-puri: vehnäjauhoja: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        },
+        {
+          "blocker": "pani-puri: perunoita: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        },
+        {
+          "blocker": "pani-puri: tamarinditahnaa: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        }
+      ]
     },
     {
       "id": "pizza-margherita",
       "blockers": [
         "pizza-margherita: vehnäjauhoja: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "pizza-margherita: vehnäjauhoja: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        }
+      ]
     },
     {
       "id": "meheva-suklaakakku",
@@ -70,7 +176,27 @@
         "meheva-suklaakakku: vehnäjauhoja: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved.",
         "meheva-suklaakakku: tummaa suklaata: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "meheva-suklaakakku: tummaa suklaata: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        },
+        {
+          "blocker": "meheva-suklaakakku: vehnäjauhoja: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        },
+        {
+          "blocker": "meheva-suklaakakku: tummaa suklaata: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        }
+      ]
     },
     {
       "id": "baozi",
@@ -79,7 +205,27 @@
         "baozi: kevätsipulia: Ingredient mass is missing or invalid.",
         "baozi: maissitärkkelystä: Potato-products category mean is not a valid match for cornstarch; remove the unrelated GI mapping."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "baozi: vehnäjauhoja: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        },
+        {
+          "blocker": "baozi: kevätsipulia: Ingredient mass is missing or invalid.",
+          "status": "F",
+          "nextEvidence": "Verify edible mass for the actual recipe unit and preparation."
+        },
+        {
+          "blocker": "baozi: maissitärkkelystä: Potato-products category mean is not a valid match for cornstarch; remove the unrelated GI mapping.",
+          "status": "F",
+          "nextEvidence": "Review the source and the preparation or quantity recorded in the current recipe."
+        }
+      ]
     },
     {
       "id": "kreikkalainen-moussaka",
@@ -87,7 +233,22 @@
         "kreikkalainen-moussaka: kanelia: Ingredient mass is missing or invalid.",
         "kreikkalainen-moussaka: vehnäjauhoja: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "kreikkalainen-moussaka: kanelia: Ingredient mass is missing or invalid.",
+          "status": "F",
+          "nextEvidence": "Verify edible mass for the actual recipe unit and preparation."
+        },
+        {
+          "blocker": "kreikkalainen-moussaka: vehnäjauhoja: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        }
+      ]
     },
     {
       "id": "spanakopita",
@@ -95,28 +256,75 @@
         "spanakopita: kevätsipulia: Ingredient mass is missing or invalid.",
         "spanakopita: filotaikinaa: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "spanakopita: kevätsipulia: Ingredient mass is missing or invalid.",
+          "status": "F",
+          "nextEvidence": "Verify edible mass for the actual recipe unit and preparation."
+        },
+        {
+          "blocker": "spanakopita: filotaikinaa: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        }
+      ]
     },
     {
       "id": "vhh-lihapiirakka",
       "blockers": [
         "vhh-lihapiirakka: mantelijauhoa: AJO 1.7: bakery GI 58 is a finished-product category mean, not almond meal. No preparation-matched primary human GI was found. AFCD F006077 is full-fat almond meal (CHOAVL without polyols 5.4 g/100 g), not defatted flour or almond bread. Missing GI is not zero."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "vhh-lihapiirakka: mantelijauhoa: AJO 1.7: bakery GI 58 is a finished-product category mean, not almond meal. No preparation-matched primary human GI was found. AFCD F006077 is full-fat almond meal (CHOAVL without polyols 5.4 g/100 g), not defatted flour or almond bread. Missing GI is not zero.",
+          "status": "F",
+          "nextEvidence": "Review the source and the preparation or quantity recorded in the current recipe."
+        }
+      ]
     },
     {
       "id": "vhh-runebergintortut",
       "blockers": [
         "vhh-runebergintortut: mantelijauhoa: Bakery-products category mean is not a demonstrated match for almond meal; remove the unsupported GI proxy."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "vhh-runebergintortut: mantelijauhoa: Bakery-products category mean is not a demonstrated match for almond meal; remove the unsupported GI proxy.",
+          "status": "F",
+          "nextEvidence": "Review the source and the preparation or quantity recorded in the current recipe."
+        }
+      ]
     },
     {
       "id": "keto-korvapuustit",
       "blockers": [
         "keto-korvapuustit: mantelijauhoa: AJO 1.7: bakery GI 58 is a finished-product category mean, not almond meal. No preparation-matched primary human GI was found. AFCD F006077 is full-fat almond meal (CHOAVL without polyols 5.4 g/100 g), not defatted flour or almond bread. Missing GI is not zero."
       ],
-      "review": "A,C candidate from Pickerd almond research. Named almond product and preparation require review."
+      "review": "A,C candidate from Pickerd almond research. Named almond product and preparation require review.",
+      "paths": [
+        "A",
+        "C",
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "keto-korvapuustit: mantelijauhoa: AJO 1.7: bakery GI 58 is a finished-product category mean, not almond meal. No preparation-matched primary human GI was found. AFCD F006077 is full-fat almond meal (CHOAVL without polyols 5.4 g/100 g), not defatted flour or almond bread. Missing GI is not zero.",
+          "status": "F",
+          "nextEvidence": "Review the source and the preparation or quantity recorded in the current recipe."
+        }
+      ]
     },
     {
       "id": "maksalaatikko-kukkakaalilla",
@@ -124,21 +332,56 @@
         "maksalaatikko-kukkakaalilla: naudan maksaa: GI evidence is missing.",
         "maksalaatikko-kukkakaalilla: puolukoita: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "maksalaatikko-kukkakaalilla: naudan maksaa: GI evidence is missing.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        },
+        {
+          "blocker": "maksalaatikko-kukkakaalilla: puolukoita: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        }
+      ]
     },
     {
       "id": "paistettu-maksa-pekonilla",
       "blockers": [
         "paistettu-maksa-pekonilla: naudan maksaa: GI evidence is missing."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "paistettu-maksa-pekonilla: naudan maksaa: GI evidence is missing.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        }
+      ]
     },
     {
       "id": "pad-thai-vhh-konjac",
       "blockers": [
         "pad-thai-vhh-konjac: tamarinditahnaa: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
       ],
-      "review": "F. Existing 30 g tamarind paste portion needs a defensible GI or a separately reviewed weighed version."
+      "review": "F. Existing 30 g tamarind paste portion needs a defensible GI or a separately reviewed weighed version.",
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "pad-thai-vhh-konjac: tamarinditahnaa: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        }
+      ]
     },
     {
       "id": "khao-soi-vhh-konjac",
@@ -146,7 +389,22 @@
         "khao-soi-vhh-konjac: täysrasvaista kookosmaitoa: GI evidence is missing for standalone coconut milk. PMID 22849311 measured rice porridge with coconut milk (GI 31), not this ingredient; the mixed-meal result is not an accepted analogue.",
         "khao-soi-vhh-konjac: kanalientä: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "khao-soi-vhh-konjac: täysrasvaista kookosmaitoa: GI evidence is missing for standalone coconut milk. PMID 22849311 measured rice porridge with coconut milk (GI 31), not this ingredient; the mixed-meal result is not an accepted analogue.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        },
+        {
+          "blocker": "khao-soi-vhh-konjac: kanalientä: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        }
+      ]
     },
     {
       "id": "tom-yum-goong-vhh",
@@ -154,14 +412,39 @@
         "tom-yum-goong-vhh: kalaliemikuutiota: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
         "tom-yum-goong-vhh: sitruunaruohoa: Fresh lemongrass is removed after simmering, but no matching Fineli/AFCD food mapping or retained-solids carbohydrate estimate is available."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "tom-yum-goong-vhh: kalaliemikuutiota: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        },
+        {
+          "blocker": "tom-yum-goong-vhh: sitruunaruohoa: Fresh lemongrass is removed after simmering, but no matching Fineli/AFCD food mapping or retained-solids carbohydrate estimate is available.",
+          "status": "F",
+          "nextEvidence": "Review the source and the preparation or quantity recorded in the current recipe."
+        }
+      ]
     },
     {
       "id": "ketopizza-pofiber-pohjalla",
       "blockers": [
         "ketopizza-pofiber-pohjalla: pizzatäytteitä: The recipe leaves 150 g of pizza toppings to the cook; ingredient identities and available carbohydrate cannot be established."
       ],
-      "review": "F. Specify the 150 g toppings before computing carbohydrate."
+      "review": "F. Specify the 150 g toppings before computing carbohydrate.",
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "ketopizza-pofiber-pohjalla: pizzatäytteitä: The recipe leaves 150 g of pizza toppings to the cook; ingredient identities and available carbohydrate cannot be established.",
+          "status": "F",
+          "nextEvidence": "Review the source and the preparation or quantity recorded in the current recipe."
+        }
+      ]
     },
     {
       "id": "tom-kha-gai-vhh",
@@ -170,7 +453,27 @@
         "tom-kha-gai-vhh: kanalientä: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
         "tom-kha-gai-vhh: sitruunaruohoa: Fresh lemongrass is removed after simmering; no matching Fineli/AFCD mapping or retained-solids carbohydrate estimate is available."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "tom-kha-gai-vhh: täysrasvaista kookosmaitoa: GI evidence is missing for standalone coconut milk. PMID 22849311 measured rice porridge with coconut milk (GI 31), not this ingredient; the mixed-meal result is not an accepted analogue.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        },
+        {
+          "blocker": "tom-kha-gai-vhh: kanalientä: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        },
+        {
+          "blocker": "tom-kha-gai-vhh: sitruunaruohoa: Fresh lemongrass is removed after simmering; no matching Fineli/AFCD mapping or retained-solids carbohydrate estimate is available.",
+          "status": "F",
+          "nextEvidence": "Review the source and the preparation or quantity recorded in the current recipe."
+        }
+      ]
     },
     {
       "id": "marjainen-chiavanukas",
@@ -179,14 +482,45 @@
         "marjainen-chiavanukas: mustikoita: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
         "marjainen-chiavanukas: makeutusainetta maun mukaan: Sweetener type and quantity are unspecified; its available carbohydrate cannot be determined."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "marjainen-chiavanukas: vadelmia: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        },
+        {
+          "blocker": "marjainen-chiavanukas: mustikoita: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        },
+        {
+          "blocker": "marjainen-chiavanukas: makeutusainetta maun mukaan: Sweetener type and quantity are unspecified; its available carbohydrate cannot be determined.",
+          "status": "F",
+          "nextEvidence": "Review the source and the preparation or quantity recorded in the current recipe."
+        }
+      ]
     },
     {
       "id": "keto-kauralesesampylat",
       "blockers": [
         "keto-kauralesesampylat: kauralesettä: AJO 1.8: finished bakery category mean GI 58 does not measure this ingredient/preparation. No sufficiently matched original human GI source established; see glycemic-bakery-four-source-review.md."
       ],
-      "review": "C candidate from oat-bran-rolls research. Verify exact rolled ingredients and preparation."
+      "review": "C candidate from oat-bran-rolls research. Verify exact rolled ingredients and preparation.",
+      "paths": [
+        "C",
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "keto-kauralesesampylat: kauralesettä: AJO 1.8: finished bakery category mean GI 58 does not measure this ingredient/preparation. No sufficiently matched original human GI source established; see glycemic-bakery-four-source-review.md.",
+          "status": "F",
+          "nextEvidence": "Review the source and the preparation or quantity recorded in the current recipe."
+        }
+      ]
     },
     {
       "id": "hyderabadi-kanabiryani",
@@ -201,7 +535,57 @@
         "hyderabadi-kanabiryani: sahramia: AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
         "hyderabadi-kanabiryani: tuoretta minttua: AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "hyderabadi-kanabiryani: sipulia: AJO 1.5: onion GI 15 withdrawn; DOI 10.3390/nu12102989 Table 1 and DOI 10.3945/an.112.003509 Table 3 do not establish a preparation-matched primary human GI. Missing GI is not zero.",
+          "status": "F",
+          "nextEvidence": "Review the source and the preparation or quantity recorded in the current recipe."
+        },
+        {
+          "blocker": "hyderabadi-kanabiryani: garam masalaa: AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
+          "status": "F",
+          "nextEvidence": "Verify each small contribution and the combined omission threshold."
+        },
+        {
+          "blocker": "hyderabadi-kanabiryani: jauhettua juustokuminaa: AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
+          "status": "F",
+          "nextEvidence": "Verify each small contribution and the combined omission threshold."
+        },
+        {
+          "blocker": "hyderabadi-kanabiryani: jauhettua korianteria: AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
+          "status": "F",
+          "nextEvidence": "Verify each small contribution and the combined omission threshold."
+        },
+        {
+          "blocker": "hyderabadi-kanabiryani: kurkumaa: AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
+          "status": "F",
+          "nextEvidence": "Verify each small contribution and the combined omission threshold."
+        },
+        {
+          "blocker": "hyderabadi-kanabiryani: kanelitanko: AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
+          "status": "F",
+          "nextEvidence": "Verify each small contribution and the combined omission threshold."
+        },
+        {
+          "blocker": "hyderabadi-kanabiryani: kardemummakotaa: AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
+          "status": "F",
+          "nextEvidence": "Verify each small contribution and the combined omission threshold."
+        },
+        {
+          "blocker": "hyderabadi-kanabiryani: sahramia: AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
+          "status": "F",
+          "nextEvidence": "Verify each small contribution and the combined omission threshold."
+        },
+        {
+          "blocker": "hyderabadi-kanabiryani: tuoretta minttua: AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
+          "status": "F",
+          "nextEvidence": "Verify each small contribution and the combined omission threshold."
+        }
+      ]
     },
     {
       "id": "bun-cha-hanoi",
@@ -210,14 +594,44 @@
         "bun-cha-hanoi: salottisipulia: Ingredient mass is missing or invalid.",
         "bun-cha-hanoi: riisiviinietikkaa: AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "bun-cha-hanoi: kalakastiketta: AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
+          "status": "F",
+          "nextEvidence": "Verify each small contribution and the combined omission threshold."
+        },
+        {
+          "blocker": "bun-cha-hanoi: salottisipulia: Ingredient mass is missing or invalid.",
+          "status": "F",
+          "nextEvidence": "Verify edible mass for the actual recipe unit and preparation."
+        },
+        {
+          "blocker": "bun-cha-hanoi: riisiviinietikkaa: AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
+          "status": "F",
+          "nextEvidence": "Verify each small contribution and the combined omission threshold."
+        }
+      ]
     },
     {
       "id": "bibimbap",
       "blockers": [
         "bibimbap: gochujang-tahnaa: 2 tbsp unbranded gochujang has no product composition; available carbohydrate and sugar/rice content are material."
       ],
-      "review": "F. Unbranded gochujang needs a product and portion binding before estimating the GI contribution."
+      "review": "F. Unbranded gochujang needs a product and portion binding before estimating the GI contribution.",
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "bibimbap: gochujang-tahnaa: 2 tbsp unbranded gochujang has no product composition; available carbohydrate and sugar/rice content are material.",
+          "status": "F",
+          "nextEvidence": "Identify a matching composition record for the ingredient as used."
+        }
+      ]
     },
     {
       "id": "chow-mein",
@@ -226,7 +640,27 @@
         "chow-mein: osterikastiketta: 1 tbsp oyster sauce has no specified brand/product data; sugar may materially affect the total.",
         "chow-mein: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "chow-mein: soijakastiketta: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        },
+        {
+          "blocker": "chow-mein: osterikastiketta: 1 tbsp oyster sauce has no specified brand/product data; sugar may materially affect the total.",
+          "status": "F",
+          "nextEvidence": "Review the source and the preparation or quantity recorded in the current recipe."
+        },
+        {
+          "blocker": "chow-mein: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again.",
+          "status": "F",
+          "nextEvidence": "Compare current recipe, input and sources before updating the review seals."
+        }
+      ]
     },
     {
       "id": "dan-dan-nuudelit",
@@ -235,7 +669,27 @@
         "dan-dan-nuudelit: mustariisiviinietikkaa: No brand or label for black rice vinegar; added sugar status is unknown.",
         "dan-dan-nuudelit: nuudeleiden keitinvettä: 100 ml starchy cooking water retained in sauce has unmeasured carbohydrate concentration."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "dan-dan-nuudelit: seesamitahnaa: 2 tbsp tahini lacks a matched product composition record; whole sesame seeds are not a reliable substitute.",
+          "status": "F",
+          "nextEvidence": "Identify a matching composition record for the ingredient as used."
+        },
+        {
+          "blocker": "dan-dan-nuudelit: mustariisiviinietikkaa: No brand or label for black rice vinegar; added sugar status is unknown.",
+          "status": "F",
+          "nextEvidence": "Review the source and the preparation or quantity recorded in the current recipe."
+        },
+        {
+          "blocker": "dan-dan-nuudelit: nuudeleiden keitinvettä: 100 ml starchy cooking water retained in sauce has unmeasured carbohydrate concentration.",
+          "status": "F",
+          "nextEvidence": "Review the source and the preparation or quantity recorded in the current recipe."
+        }
+      ]
     },
     {
       "id": "goi-cuon",
@@ -244,7 +698,27 @@
         "goi-cuon: sileää maapähkinävoita: 120 g peanut butter has no matching product record; whole peanuts are not substituted because processing/additives differ.",
         "goi-cuon: hoisinkastiketta: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "goi-cuon: pyöreitä riisipapereita: Eight rice-paper sheets have no product-specific sheet mass; total wrapper carbohydrate cannot be established.",
+          "status": "F",
+          "nextEvidence": "Review the source and the preparation or quantity recorded in the current recipe."
+        },
+        {
+          "blocker": "goi-cuon: sileää maapähkinävoita: 120 g peanut butter has no matching product record; whole peanuts are not substituted because processing/additives differ.",
+          "status": "F",
+          "nextEvidence": "Review the source and the preparation or quantity recorded in the current recipe."
+        },
+        {
+          "blocker": "goi-cuon: hoisinkastiketta: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        }
+      ]
     },
     {
       "id": "hapanimela-porsas",
@@ -255,7 +729,37 @@
         "hapanimela-porsas: riisiviinietikkaa: AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
         "hapanimela-porsas: keitettyä riisiä: Four cooked-rice portions have no gram weight or defined serving mass; this major carbohydrate side cannot be totaled."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "hapanimela-porsas: maissitärkkelystä: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        },
+        {
+          "blocker": "hapanimela-porsas: ananasta: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        },
+        {
+          "blocker": "hapanimela-porsas: ketsuppia: 2 tbsp ketchup lacks specified brand/label; added sugars are material.",
+          "status": "F",
+          "nextEvidence": "Review the source and the preparation or quantity recorded in the current recipe."
+        },
+        {
+          "blocker": "hapanimela-porsas: riisiviinietikkaa: AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
+          "status": "F",
+          "nextEvidence": "Verify each small contribution and the combined omission threshold."
+        },
+        {
+          "blocker": "hapanimela-porsas: keitettyä riisiä: Four cooked-rice portions have no gram weight or defined serving mass; this major carbohydrate side cannot be totaled.",
+          "status": "F",
+          "nextEvidence": "Review the source and the preparation or quantity recorded in the current recipe."
+        }
+      ]
     },
     {
       "id": "idli-sambar",
@@ -267,7 +771,42 @@
         "idli-sambar: tuoreita currylehtiä: AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
         "idli-sambar: vettä: Unquantified water is carbohydrate-free, but dry/wet ingredient process state for the batter needs review; no mass entered."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "idli-sambar: urad-dal-linssejä: Urad dal/black gram has no matching source record in Fineli Rel20 or AFCD Release 3.",
+          "status": "F",
+          "nextEvidence": "Review the source and the preparation or quantity recorded in the current recipe."
+        },
+        {
+          "blocker": "idli-sambar: tamarinditahnaa: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        },
+        {
+          "blocker": "idli-sambar: sambar-mausteseosta: 1 tbsp commercial spice blend has no brand/ingredient list; flour/lentil/sugar fillers are unquantified.",
+          "status": "F",
+          "nextEvidence": "Review the source and the preparation or quantity recorded in the current recipe."
+        },
+        {
+          "blocker": "idli-sambar: sinapinsiemeniä: AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
+          "status": "F",
+          "nextEvidence": "Verify each small contribution and the combined omission threshold."
+        },
+        {
+          "blocker": "idli-sambar: tuoreita currylehtiä: AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
+          "status": "F",
+          "nextEvidence": "Verify each small contribution and the combined omission threshold."
+        },
+        {
+          "blocker": "idli-sambar: vettä: Unquantified water is carbohydrate-free, but dry/wet ingredient process state for the batter needs review; no mass entered.",
+          "status": "F",
+          "nextEvidence": "Review the source and the preparation or quantity recorded in the current recipe."
+        }
+      ]
     },
     {
       "id": "indonesialainen-bubur-sumsum",
@@ -275,7 +814,22 @@
         "indonesialainen-bubur-sumsum: kookosmaito: 200 ml canned coconut milk lacks food-specific Fineli mass per ml; no generic density conversion used.",
         "indonesialainen-bubur-sumsum: pandan: 150 g pandan is unusually large and lacks matching edible food record; source quantity and food mapping need confirmation."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "indonesialainen-bubur-sumsum: kookosmaito: 200 ml canned coconut milk lacks food-specific Fineli mass per ml; no generic density conversion used.",
+          "status": "F",
+          "nextEvidence": "Review the source and the preparation or quantity recorded in the current recipe."
+        },
+        {
+          "blocker": "indonesialainen-bubur-sumsum: pandan: 150 g pandan is unusually large and lacks matching edible food record; source quantity and food mapping need confirmation.",
+          "status": "F",
+          "nextEvidence": "Identify a matching composition record for the ingredient as used."
+        }
+      ]
     },
     {
       "id": "intialainen-rava-uttapam",
@@ -283,7 +837,22 @@
         "intialainen-rava-uttapam: mannasuurimo: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved.",
         "intialainen-rava-uttapam: sipuli: AJO 1.5: onion GI 15 withdrawn; DOI 10.3390/nu12102989 Table 1 and DOI 10.3945/an.112.003509 Table 3 do not establish a preparation-matched primary human GI. Missing GI is not zero."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "intialainen-rava-uttapam: mannasuurimo: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        },
+        {
+          "blocker": "intialainen-rava-uttapam: sipuli: AJO 1.5: onion GI 15 withdrawn; DOI 10.3390/nu12102989 Table 1 and DOI 10.3945/an.112.003509 Table 3 do not establish a preparation-matched primary human GI. Missing GI is not zero.",
+          "status": "F",
+          "nextEvidence": "Review the source and the preparation or quantity recorded in the current recipe."
+        }
+      ]
     },
     {
       "id": "intialainen-aloo-paratha",
@@ -291,7 +860,22 @@
         "intialainen-aloo-paratha: vehnäjauho: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
         "intialainen-aloo-paratha: korianteri: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "intialainen-aloo-paratha: vehnäjauho: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        },
+        {
+          "blocker": "intialainen-aloo-paratha: korianteri: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        }
+      ]
     },
     {
       "id": "indonesialainen-nasi-goreng-aamiaisriisi",
@@ -299,7 +883,22 @@
         "indonesialainen-nasi-goreng-aamiaisriisi: kecap manis: 150 g sweet soy sauce is a major carbohydrate source, but the product has no brand, label or matching composition record.",
         "indonesialainen-nasi-goreng-aamiaisriisi: salottisipuli: Ingredient mass is missing or invalid."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "indonesialainen-nasi-goreng-aamiaisriisi: kecap manis: 150 g sweet soy sauce is a major carbohydrate source, but the product has no brand, label or matching composition record.",
+          "status": "F",
+          "nextEvidence": "Identify a matching composition record for the ingredient as used."
+        },
+        {
+          "blocker": "indonesialainen-nasi-goreng-aamiaisriisi: salottisipuli: Ingredient mass is missing or invalid.",
+          "status": "F",
+          "nextEvidence": "Verify edible mass for the actual recipe unit and preparation."
+        }
+      ]
     },
     {
       "id": "indonesialainen-serabi-kookospannukakku",
@@ -308,7 +907,27 @@
         "indonesialainen-serabi-kookospannukakku: kookos: 150 g coconut state (fresh vs dried/desiccated) unspecified; composition differs materially.",
         "indonesialainen-serabi-kookospannukakku: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "indonesialainen-serabi-kookospannukakku: kookosmaito: 200 ml canned coconut milk lacks food-specific Fineli mass-per-volume data.",
+          "status": "F",
+          "nextEvidence": "Review the source and the preparation or quantity recorded in the current recipe."
+        },
+        {
+          "blocker": "indonesialainen-serabi-kookospannukakku: kookos: 150 g coconut state (fresh vs dried/desiccated) unspecified; composition differs materially.",
+          "status": "F",
+          "nextEvidence": "Identify a matching composition record for the ingredient as used."
+        },
+        {
+          "blocker": "indonesialainen-serabi-kookospannukakku: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again.",
+          "status": "F",
+          "nextEvidence": "Compare current recipe, input and sources before updating the review seals."
+        }
+      ]
     },
     {
       "id": "dim-sum",
@@ -319,7 +938,37 @@
         "dim-sum: valmiita bao-sämpylöitä: 8 buns have no product/size/weight; refined-grain carbohydrate is unquantified.",
         "dim-sum: soijakastiketta: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "dim-sum: dumpling-taikinalevyjä: 12 wrappers lack package/sheet mass; major wheat carbohydrate quantity cannot be determined.",
+          "status": "F",
+          "nextEvidence": "Review the source and the preparation or quantity recorded in the current recipe."
+        },
+        {
+          "blocker": "dim-sum: soijakastiketta: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        },
+        {
+          "blocker": "dim-sum: maissitärkkelystä: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        },
+        {
+          "blocker": "dim-sum: valmiita bao-sämpylöitä: 8 buns have no product/size/weight; refined-grain carbohydrate is unquantified.",
+          "status": "F",
+          "nextEvidence": "Review the source and the preparation or quantity recorded in the current recipe."
+        },
+        {
+          "blocker": "dim-sum: soijakastiketta: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        }
+      ]
     },
     {
       "id": "kerala-kalacurry",
@@ -327,7 +976,22 @@
         "kerala-kalacurry: kookosmaitoa: GI evidence is missing.",
         "kerala-kalacurry: tamarinditahnaa: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "kerala-kalacurry: kookosmaitoa: GI evidence is missing.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        },
+        {
+          "blocker": "kerala-kalacurry: tamarinditahnaa: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        }
+      ]
     },
     {
       "id": "silakkapihvit-tilli-kermakastike",
@@ -336,7 +1000,27 @@
         "silakkapihvit-tilli-kermakastike: suolaa ja valkopippuria: AJO 1.8: Salt and white pepper quantities unspecified; no source-backed positive carbohydrate ceiling.",
         "silakkapihvit-tilli-kermakastike: sitruuna tarjoiluun: AJO 1.8: One serving lemon has no verified edible mass or consumed fraction; previous 58 g was unsupported."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "silakkapihvit-tilli-kermakastike: ruisjauhoja: AJO 1.8: finished bakery category mean GI 58 does not measure this ingredient/preparation. No sufficiently matched original human GI source established; see glycemic-bakery-four-source-review.md.",
+          "status": "F",
+          "nextEvidence": "Review the source and the preparation or quantity recorded in the current recipe."
+        },
+        {
+          "blocker": "silakkapihvit-tilli-kermakastike: suolaa ja valkopippuria: AJO 1.8: Salt and white pepper quantities unspecified; no source-backed positive carbohydrate ceiling.",
+          "status": "F",
+          "nextEvidence": "Verify each small contribution and the combined omission threshold."
+        },
+        {
+          "blocker": "silakkapihvit-tilli-kermakastike: sitruuna tarjoiluun: AJO 1.8: One serving lemon has no verified edible mass or consumed fraction; previous 58 g was unsupported.",
+          "status": "F",
+          "nextEvidence": "Review the source and the preparation or quantity recorded in the current recipe."
+        }
+      ]
     },
     {
       "id": "pho-bo",
@@ -345,7 +1029,27 @@
         "pho-bo: keltasipuli: Aromatic is roasted, simmered in the stock, then strained; the amount of available carbohydrate retained in the consumed broth is not measured.",
         "pho-bo: tuore inkivääri: Aromatic is roasted, simmered in the stock, then strained; the amount of available carbohydrate retained in the consumed broth is not measured."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "pho-bo: naudallisia keittoluita: No matching raw bone-in beef food record was found in Fineli Rel20; the stock base cannot be assigned zero carbohydrate from a substitute meat cut.",
+          "status": "F",
+          "nextEvidence": "Identify a matching composition record for the ingredient as used."
+        },
+        {
+          "blocker": "pho-bo: keltasipuli: Aromatic is roasted, simmered in the stock, then strained; the amount of available carbohydrate retained in the consumed broth is not measured.",
+          "status": "F",
+          "nextEvidence": "Review the source and the preparation or quantity recorded in the current recipe."
+        },
+        {
+          "blocker": "pho-bo: tuore inkivääri: Aromatic is roasted, simmered in the stock, then strained; the amount of available carbohydrate retained in the consumed broth is not measured.",
+          "status": "F",
+          "nextEvidence": "Review the source and the preparation or quantity recorded in the current recipe."
+        }
+      ]
     },
     {
       "id": "jerk-kana",
@@ -353,14 +1057,39 @@
         "jerk-kana: kevätsipuli: 4 spring onions have no recipe-specific Fineli mass; the estimate cannot establish their available carbohydrate per serving.",
         "jerk-kana: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "jerk-kana: kevätsipuli: 4 spring onions have no recipe-specific Fineli mass; the estimate cannot establish their available carbohydrate per serving.",
+          "status": "F",
+          "nextEvidence": "Review the source and the preparation or quantity recorded in the current recipe."
+        },
+        {
+          "blocker": "jerk-kana: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again.",
+          "status": "F",
+          "nextEvidence": "Compare current recipe, input and sources before updating the review seals."
+        }
+      ]
     },
     {
       "id": "tangyuan",
       "blockers": [
         "tangyuan: musta seesami: The recipe lists 100 g black sesame without a matching Fineli record; the carbohydrate contribution and GI cannot be sourced."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "tangyuan: musta seesami: The recipe lists 100 g black sesame without a matching Fineli record; the carbohydrate contribution and GI cannot be sourced.",
+          "status": "F",
+          "nextEvidence": "Review the source and the preparation or quantity recorded in the current recipe."
+        }
+      ]
     },
     {
       "id": "rendang-padang",
@@ -368,7 +1097,22 @@
         "rendang-padang: kookosmaito: Coconut milk contributes >1 g available carbohydrate per serving and no valid GI record matches canned coconut milk; the available coconut-milk porridge value is not transferable.",
         "rendang-padang: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "rendang-padang: kookosmaito: Coconut milk contributes >1 g available carbohydrate per serving and no valid GI record matches canned coconut milk; the available coconut-milk porridge value is not transferable.",
+          "status": "F",
+          "nextEvidence": "Review the source and the preparation or quantity recorded in the current recipe."
+        },
+        {
+          "blocker": "rendang-padang: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again.",
+          "status": "F",
+          "nextEvidence": "Compare current recipe, input and sources before updating the review seals."
+        }
+      ]
     },
     {
       "id": "malesialainen-apam-balik",
@@ -376,14 +1120,39 @@
         "malesialainen-apam-balik: maissi: The recipe says one corn without specifying fresh, cooked, or grilled state; Fineli cob mass can be looked up, but preparation and GI cannot be matched unambiguously.",
         "malesialainen-apam-balik: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "malesialainen-apam-balik: maissi: The recipe says one corn without specifying fresh, cooked, or grilled state; Fineli cob mass can be looked up, but preparation and GI cannot be matched unambiguously.",
+          "status": "F",
+          "nextEvidence": "Review the source and the preparation or quantity recorded in the current recipe."
+        },
+        {
+          "blocker": "malesialainen-apam-balik: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again.",
+          "status": "F",
+          "nextEvidence": "Compare current recipe, input and sources before updating the review seals."
+        }
+      ]
     },
     {
       "id": "malesialainen-kookos-banaanikulho",
       "blockers": [
         "malesialainen-kookos-banaanikulho: palmusokeri ja tapioka: Palm sugar lacks a matching Fineli food record; tapioca flour has a carbohydrate record but no published GI matched to the recipe preparation."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "malesialainen-kookos-banaanikulho: palmusokeri ja tapioka: Palm sugar lacks a matching Fineli food record; tapioca flour has a carbohydrate record but no published GI matched to the recipe preparation.",
+          "status": "F",
+          "nextEvidence": "Identify a matching composition record for the ingredient as used."
+        }
+      ]
     },
     {
       "id": "indonesialainen-pisang-goreng-aamiaiseksi",
@@ -391,21 +1160,56 @@
         "indonesialainen-pisang-goreng-aamiaiseksi: kookos, palmusokeri ja banaani: Coconut is listed without fresh/dried state, palm sugar lacks a matching Fineli record, and banana mass is unspecified.",
         "indonesialainen-pisang-goreng-aamiaiseksi: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "indonesialainen-pisang-goreng-aamiaiseksi: kookos, palmusokeri ja banaani: Coconut is listed without fresh/dried state, palm sugar lacks a matching Fineli record, and banana mass is unspecified.",
+          "status": "F",
+          "nextEvidence": "Review the source and the preparation or quantity recorded in the current recipe."
+        },
+        {
+          "blocker": "indonesialainen-pisang-goreng-aamiaiseksi: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again.",
+          "status": "F",
+          "nextEvidence": "Compare current recipe, input and sources before updating the review seals."
+        }
+      ]
     },
     {
       "id": "nasi-lemak",
       "blockers": [
         "nasi-lemak: sambal ja kookosmaito: The sambal is an unbranded prepared sauce with no ingredient composition or matching GI; coconut milk preparation also lacks a defensible GI match if its measured carbohydrate exceeds the per-serving cutoff."
       ],
-      "review": "F. Both sambal and coconut milk need product or preparation binding."
+      "review": "F. Both sambal and coconut milk need product or preparation binding.",
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "nasi-lemak: sambal ja kookosmaito: The sambal is an unbranded prepared sauce with no ingredient composition or matching GI; coconut milk preparation also lacks a defensible GI match if its measured carbohydrate exceeds the per-serving cutoff.",
+          "status": "F",
+          "nextEvidence": "Identify a matching composition record for the ingredient as used."
+        }
+      ]
     },
     {
       "id": "char-siu",
       "blockers": [
         "char-siu: hoisinkastiketta: undefined category mean/analogue, low confidence; not a measured ingredient-specific value."
       ],
-      "review": "F. AFCD F008008 already supplies composition. The undefined regional GI mean is rejected."
+      "review": "F. AFCD F008008 already supplies composition. The undefined regional GI mean is rejected.",
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "char-siu: hoisinkastiketta: undefined category mean/analogue, low confidence; not a measured ingredient-specific value.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        }
+      ]
     },
     {
       "id": "lanzhou-naudanliha-nuudelikeitto",
@@ -415,7 +1219,32 @@
         "lanzhou-naudanliha-nuudelikeitto: retikkaa: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
         "lanzhou-naudanliha-nuudelikeitto: kevätsipulia: GI evidence is missing."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "lanzhou-naudanliha-nuudelikeitto: naudan etuselkää: Exact meat cut is not mapped to a Fineli/AFCD food record in this batch; carbohydrate is not assumed to be zero.",
+          "status": "F",
+          "nextEvidence": "Identify a matching composition record for the ingredient as used."
+        },
+        {
+          "blocker": "lanzhou-naudanliha-nuudelikeitto: vehnänuudeleita: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        },
+        {
+          "blocker": "lanzhou-naudanliha-nuudelikeitto: retikkaa: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        },
+        {
+          "blocker": "lanzhou-naudanliha-nuudelikeitto: kevätsipulia: GI evidence is missing.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        }
+      ]
     },
     {
       "id": "roujiamo",
@@ -425,7 +1254,32 @@
         "roujiamo: tummaa soijakastiketta: No specific Fineli/AFCD food record and preparation match was resolved for “tummaa soijakastiketta”; it is not treated as zero.",
         "roujiamo: vehnäjauhoja: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "roujiamo: porsaan kassleria: No specific Fineli/AFCD food record and preparation match was resolved for “porsaan kassleria”; it is not treated as zero.",
+          "status": "F",
+          "nextEvidence": "Identify a matching composition record for the ingredient as used."
+        },
+        {
+          "blocker": "roujiamo: soijakastiketta: No specific Fineli/AFCD food record and preparation match was resolved for “soijakastiketta”; it is not treated as zero.",
+          "status": "F",
+          "nextEvidence": "Identify a matching composition record for the ingredient as used."
+        },
+        {
+          "blocker": "roujiamo: tummaa soijakastiketta: No specific Fineli/AFCD food record and preparation match was resolved for “tummaa soijakastiketta”; it is not treated as zero.",
+          "status": "F",
+          "nextEvidence": "Identify a matching composition record for the ingredient as used."
+        },
+        {
+          "blocker": "roujiamo: vehnäjauhoja: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        }
+      ]
     },
     {
       "id": "meksikolainen-paputostada-aamupalaksi",
@@ -434,7 +1288,29 @@
         "meksikolainen-paputostada-aamupalaksi: GI/food mapping, portion, conversion, source evidence or calculation assumptions differ from the last GL review; the input must be reviewed again.",
         "meksikolainen-paputostada-aamupalaksi: a calculation-relevant food or GI source value/state differs from the last GL review; source mapping and calculation must be reviewed again."
       ],
-      "review": "D,E applied to avocado. Crisp tortilla still needs a preparation match."
+      "review": "D,E applied to avocado. Crisp tortilla still needs a preparation match.",
+      "paths": [
+        "D",
+        "E",
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "meksikolainen-paputostada-aamupalaksi: maissitortilla: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        },
+        {
+          "blocker": "meksikolainen-paputostada-aamupalaksi: GI/food mapping, portion, conversion, source evidence or calculation assumptions differ from the last GL review; the input must be reviewed again.",
+          "status": "F",
+          "nextEvidence": "Review the source and the preparation or quantity recorded in the current recipe."
+        },
+        {
+          "blocker": "meksikolainen-paputostada-aamupalaksi: a calculation-relevant food or GI source value/state differs from the last GL review; source mapping and calculation must be reviewed again.",
+          "status": "F",
+          "nextEvidence": "Compare current recipe, input and sources before updating the review seals."
+        }
+      ]
     },
     {
       "id": "masala-dosa",
@@ -442,7 +1318,25 @@
         "masala-dosa: GI/food mapping, portion, conversion, source evidence or calculation assumptions differ from the last GL review; the input must be reviewed again.",
         "masala-dosa: a calculation-relevant food or GI source value/state differs from the last GL review; source mapping and calculation must be reviewed again."
       ],
-      "review": "C,D,E applied to potato and spices. Review input and evidence seals after checking remaining legacy rice and urad assumptions."
+      "review": "C,D,E applied to potato and spices. Review input and evidence seals after checking remaining legacy rice and urad assumptions.",
+      "paths": [
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "masala-dosa: GI/food mapping, portion, conversion, source evidence or calculation assumptions differ from the last GL review; the input must be reviewed again.",
+          "status": "F",
+          "nextEvidence": "Review the source and the preparation or quantity recorded in the current recipe."
+        },
+        {
+          "blocker": "masala-dosa: a calculation-relevant food or GI source value/state differs from the last GL review; source mapping and calculation must be reviewed again.",
+          "status": "F",
+          "nextEvidence": "Compare current recipe, input and sources before updating the review seals."
+        }
+      ]
     },
     {
       "id": "intialainen-idli-kookoschutneylla",
@@ -450,7 +1344,22 @@
         "intialainen-idli-kookoschutneylla: kookos: No specific Fineli/AFCD food record and preparation match was resolved for “kookos”; it is not treated as zero.",
         "intialainen-idli-kookoschutneylla: sinapinsiemen: No specific Fineli/AFCD food record and preparation match was resolved for “sinapinsiemen”; it is not treated as zero."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "intialainen-idli-kookoschutneylla: kookos: No specific Fineli/AFCD food record and preparation match was resolved for “kookos”; it is not treated as zero.",
+          "status": "F",
+          "nextEvidence": "Identify a matching composition record for the ingredient as used."
+        },
+        {
+          "blocker": "intialainen-idli-kookoschutneylla: sinapinsiemen: No specific Fineli/AFCD food record and preparation match was resolved for “sinapinsiemen”; it is not treated as zero.",
+          "status": "F",
+          "nextEvidence": "Identify a matching composition record for the ingredient as used."
+        }
+      ]
     },
     {
       "id": "pohjoisafrikkalainen-baghrir",
@@ -458,14 +1367,40 @@
         "pohjoisafrikkalainen-baghrir: mannasuurimo: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved.",
         "pohjoisafrikkalainen-baghrir: vehnäjauho: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "pohjoisafrikkalainen-baghrir: mannasuurimo: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        },
+        {
+          "blocker": "pohjoisafrikkalainen-baghrir: vehnäjauho: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        }
+      ]
     },
     {
       "id": "intialainen-masala-dosa",
       "blockers": [
         "intialainen-masala-dosa: sinapinsiemen: No specific Fineli/AFCD food record and preparation match was resolved for “sinapinsiemen”; it is not treated as zero."
       ],
-      "review": "A candidate IFCT H013. F for 150 g mustard seed quantity, which cannot qualify for a small omission."
+      "review": "A candidate IFCT H013. F for 150 g mustard seed quantity, which cannot qualify for a small omission.",
+      "paths": [
+        "A",
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "intialainen-masala-dosa: sinapinsiemen: No specific Fineli/AFCD food record and preparation match was resolved for “sinapinsiemen”; it is not treated as zero.",
+          "status": "F",
+          "nextEvidence": "Identify a matching composition record for the ingredient as used."
+        }
+      ]
     },
     {
       "id": "pohjoisafrikkalainen-msemen-hunajalla",
@@ -473,7 +1408,22 @@
         "pohjoisafrikkalainen-msemen-hunajalla: mannasuurimo: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved.",
         "pohjoisafrikkalainen-msemen-hunajalla: vehnäjauho: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "pohjoisafrikkalainen-msemen-hunajalla: mannasuurimo: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        },
+        {
+          "blocker": "pohjoisafrikkalainen-msemen-hunajalla: vehnäjauho: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        }
+      ]
     },
     {
       "id": "malesialainen-roti-canai-dhalilla",
@@ -483,7 +1433,32 @@
         "malesialainen-roti-canai-dhalilla: curry-lehti: No specific Fineli/AFCD food record and preparation match was resolved for “curry-lehti”; it is not treated as zero.",
         "malesialainen-roti-canai-dhalilla: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "malesialainen-roti-canai-dhalilla: vehnäjauho: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        },
+        {
+          "blocker": "malesialainen-roti-canai-dhalilla: kookosmaito: GI evidence is missing.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        },
+        {
+          "blocker": "malesialainen-roti-canai-dhalilla: curry-lehti: No specific Fineli/AFCD food record and preparation match was resolved for “curry-lehti”; it is not treated as zero.",
+          "status": "F",
+          "nextEvidence": "Identify a matching composition record for the ingredient as used."
+        },
+        {
+          "blocker": "malesialainen-roti-canai-dhalilla: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again.",
+          "status": "F",
+          "nextEvidence": "Compare current recipe, input and sources before updating the review seals."
+        }
+      ]
     },
     {
       "id": "pohjoisafrikkalainen-bissara",
@@ -492,28 +1467,80 @@
         "pohjoisafrikkalainen-bissara: valkosipuli: The recipe gives 1 tl but SIPULI, KELTASIPULI has no matching Fineli food-specific unit mass; no general piece/spoon conversion is applied.",
         "pohjoisafrikkalainen-bissara: kasvis- tai kanalientä: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "pohjoisafrikkalainen-bissara: härkäpapu: No specific Fineli/AFCD food record and preparation match was resolved for “härkäpapu”; it is not treated as zero.",
+          "status": "F",
+          "nextEvidence": "Identify a matching composition record for the ingredient as used."
+        },
+        {
+          "blocker": "pohjoisafrikkalainen-bissara: valkosipuli: The recipe gives 1 tl but SIPULI, KELTASIPULI has no matching Fineli food-specific unit mass; no general piece/spoon conversion is applied.",
+          "status": "F",
+          "nextEvidence": "Review the source and the preparation or quantity recorded in the current recipe."
+        },
+        {
+          "blocker": "pohjoisafrikkalainen-bissara: kasvis- tai kanalientä: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        }
+      ]
     },
     {
       "id": "meksikolainen-chilaquiles-verdes",
       "blockers": [
         "meksikolainen-chilaquiles-verdes: salsa verde: No source-matched composition and preparation was resolved for “salsa verde”; it is not treated as zero."
       ],
-      "review": "D candidate at 48 g named salsa per batch. Current 150 g exceeds the rule; tortilla and cheese also need variant review."
+      "review": "D candidate at 48 g named salsa per batch. Current 150 g exceeds the rule; tortilla and cheese also need variant review.",
+      "paths": [
+        "D",
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "meksikolainen-chilaquiles-verdes: salsa verde: No source-matched composition and preparation was resolved for “salsa verde”; it is not treated as zero.",
+          "status": "F",
+          "nextEvidence": "Identify a matching composition record for the ingredient as used."
+        }
+      ]
     },
     {
       "id": "meksikolainen-huevos-divorciados",
       "blockers": [
         "meksikolainen-huevos-divorciados: vihreä salsa: No source-matched composition and preparation was resolved for “vihreä salsa”; it is not treated as zero."
       ],
-      "review": "D candidate at 48 g named salsa per batch. Current 150 g exceeds the rule; check cumulative omissions and the bean binding."
+      "review": "D candidate at 48 g named salsa per batch. Current 150 g exceeds the rule; check cumulative omissions and the bean binding.",
+      "paths": [
+        "D",
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "meksikolainen-huevos-divorciados: vihreä salsa: No source-matched composition and preparation was resolved for “vihreä salsa”; it is not treated as zero.",
+          "status": "F",
+          "nextEvidence": "Identify a matching composition record for the ingredient as used."
+        }
+      ]
     },
     {
       "id": "korealainen-bindaetteok-aamiaiseksi",
       "blockers": [
         "korealainen-bindaetteok-aamiaiseksi: kimchi: No source-matched composition and preparation was resolved for “kimchi”; it is not treated as zero."
       ],
-      "review": "F. Select a kimchi product or measured preparation for 150 g."
+      "review": "F. Select a kimchi product or measured preparation for 150 g.",
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "korealainen-bindaetteok-aamiaiseksi: kimchi: No source-matched composition and preparation was resolved for “kimchi”; it is not treated as zero.",
+          "status": "F",
+          "nextEvidence": "Identify a matching composition record for the ingredient as used."
+        }
+      ]
     },
     {
       "id": "vietnamilainen-banh-cuon-sienilla",
@@ -522,7 +1549,27 @@
         "vietnamilainen-banh-cuon-sienilla: kalakastike: Ingredient mass is missing or invalid.",
         "vietnamilainen-banh-cuon-sienilla: kalakastike: Fineli food record is missing."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "vietnamilainen-banh-cuon-sienilla: riisijauho: AJO 1.8: finished bakery category mean GI 58 does not measure this ingredient/preparation. No sufficiently matched original human GI source established; see glycemic-bakery-four-source-review.md.",
+          "status": "F",
+          "nextEvidence": "Review the source and the preparation or quantity recorded in the current recipe."
+        },
+        {
+          "blocker": "vietnamilainen-banh-cuon-sienilla: kalakastike: Ingredient mass is missing or invalid.",
+          "status": "F",
+          "nextEvidence": "Verify edible mass for the actual recipe unit and preparation."
+        },
+        {
+          "blocker": "vietnamilainen-banh-cuon-sienilla: kalakastike: Fineli food record is missing.",
+          "status": "F",
+          "nextEvidence": "Identify a matching composition record for the ingredient as used."
+        }
+      ]
     },
     {
       "id": "vietnamilainen-banh-xeo-aamiaisletut",
@@ -530,14 +1577,39 @@
         "vietnamilainen-banh-xeo-aamiaisletut: riisijauho: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved.",
         "vietnamilainen-banh-xeo-aamiaisletut: kookosmaito: GI evidence is missing."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "vietnamilainen-banh-xeo-aamiaisletut: riisijauho: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        },
+        {
+          "blocker": "vietnamilainen-banh-xeo-aamiaisletut: kookosmaito: GI evidence is missing.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        }
+      ]
     },
     {
       "id": "pohjoisafrikkalainen-harcha-juustolla",
       "blockers": [
         "pohjoisafrikkalainen-harcha-juustolla: mannasuurimo: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "pohjoisafrikkalainen-harcha-juustolla: mannasuurimo: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        }
+      ]
     },
     {
       "id": "kiinalainen-bao-munalla",
@@ -545,7 +1617,22 @@
         "kiinalainen-bao-munalla: vehnäjauho: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved.",
         "kiinalainen-bao-munalla: hoisin-kastike: The recipe amount 1 rkl has no food-specific mass conversion for Sauce, hoi sin (hoisin), commercial."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "kiinalainen-bao-munalla: vehnäjauho: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        },
+        {
+          "blocker": "kiinalainen-bao-munalla: hoisin-kastike: The recipe amount 1 rkl has no food-specific mass conversion for Sauce, hoi sin (hoisin), commercial.",
+          "status": "F",
+          "nextEvidence": "Verify edible mass for the actual recipe unit and preparation."
+        }
+      ]
     },
     {
       "id": "japanilainen-soba-aamiaiskeitto",
@@ -554,7 +1641,27 @@
         "japanilainen-soba-aamiaiskeitto: pinaatti: The recipe amount 1 kpl has no food-specific mass conversion for Spinach, baby, fresh, raw.",
         "japanilainen-soba-aamiaiskeitto: kasvis- tai kanalientä: The recipe allows materially different liquids (water, milk or broth); the selected liquid is not specified, so the carbohydrate total is not established."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "japanilainen-soba-aamiaiskeitto: dashi: No source-matched composition and preparation was resolved for “dashi”; it is not treated as zero.",
+          "status": "F",
+          "nextEvidence": "Identify a matching composition record for the ingredient as used."
+        },
+        {
+          "blocker": "japanilainen-soba-aamiaiskeitto: pinaatti: The recipe amount 1 kpl has no food-specific mass conversion for Spinach, baby, fresh, raw.",
+          "status": "F",
+          "nextEvidence": "Verify edible mass for the actual recipe unit and preparation."
+        },
+        {
+          "blocker": "japanilainen-soba-aamiaiskeitto: kasvis- tai kanalientä: The recipe allows materially different liquids (water, milk or broth); the selected liquid is not specified, so the carbohydrate total is not established.",
+          "status": "F",
+          "nextEvidence": "Review the source and the preparation or quantity recorded in the current recipe."
+        }
+      ]
     },
     {
       "id": "kiinalainen-jianbing-munaletty",
@@ -562,14 +1669,40 @@
         "kiinalainen-jianbing-munaletty: vehnäjauho: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved.",
         "kiinalainen-jianbing-munaletty: soijapaputahnaa: The recipe lists one tablespoon soybean paste, but the product type, gram conversion and composition are not resolved; no miso or soy-sauce substitute is assumed."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "kiinalainen-jianbing-munaletty: vehnäjauho: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        },
+        {
+          "blocker": "kiinalainen-jianbing-munaletty: soijapaputahnaa: The recipe lists one tablespoon soybean paste, but the product type, gram conversion and composition are not resolved; no miso or soy-sauce substitute is assumed.",
+          "status": "F",
+          "nextEvidence": "Identify a matching composition record for the ingredient as used."
+        }
+      ]
     },
     {
       "id": "karibia-johnny-cake",
       "blockers": [
         "karibia-johnny-cake: vehnäjauho: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved."
       ],
-      "review": "C candidate. Wheat pancake GI is sensitivity evidence until batter and preparation are reviewed."
+      "review": "C candidate. Wheat pancake GI is sensitivity evidence until batter and preparation are reviewed.",
+      "paths": [
+        "C",
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "karibia-johnny-cake: vehnäjauho: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        }
+      ]
     },
     {
       "id": "korealainen-bataatti-riisikulho",
@@ -577,21 +1710,56 @@
         "korealainen-bataatti-riisikulho: bataatti: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
         "korealainen-bataatti-riisikulho: gochujang: No source-matched composition and preparation was resolved for “gochujang”; it is not treated as zero."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "korealainen-bataatti-riisikulho: bataatti: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        },
+        {
+          "blocker": "korealainen-bataatti-riisikulho: gochujang: No source-matched composition and preparation was resolved for “gochujang”; it is not treated as zero.",
+          "status": "F",
+          "nextEvidence": "Identify a matching composition record for the ingredient as used."
+        }
+      ]
     },
     {
       "id": "valimerellinen-appelsiini-aamiaiskakku",
       "blockers": [
         "valimerellinen-appelsiini-aamiaiskakku: vehnäjauho: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "valimerellinen-appelsiini-aamiaiskakku: vehnäjauho: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        }
+      ]
     },
     {
       "id": "vietnamilainen-banh-bao-kananmunalla",
       "blockers": [
         "vietnamilainen-banh-bao-kananmunalla: vehnäjauho: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "vietnamilainen-banh-bao-kananmunalla: vehnäjauho: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        }
+      ]
     },
     {
       "id": "indonesialainen-bakwan-maissifritter",
@@ -599,14 +1767,39 @@
         "indonesialainen-bakwan-maissifritter: maissi: No suitable GI source is available for sweetcorn kernels cooked in battered bakwan. Boiled sweetcorn GI measurements are not assigned to the deep-fried batter preparation.",
         "indonesialainen-bakwan-maissifritter: vehnäjauho: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "indonesialainen-bakwan-maissifritter: maissi: No suitable GI source is available for sweetcorn kernels cooked in battered bakwan. Boiled sweetcorn GI measurements are not assigned to the deep-fried batter preparation.",
+          "status": "F",
+          "nextEvidence": "Review the source and the preparation or quantity recorded in the current recipe."
+        },
+        {
+          "blocker": "indonesialainen-bakwan-maissifritter: vehnäjauho: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        }
+      ]
     },
     {
       "id": "valimerellinen-farinata-aamupalaksi",
       "blockers": [
         "valimerellinen-farinata-aamupalaksi: tomaatti: GI evidence is missing."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "valimerellinen-farinata-aamupalaksi: tomaatti: GI evidence is missing.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        }
+      ]
     },
     {
       "id": "korealainen-kimchi-jeon-aamiaiseksi",
@@ -614,7 +1807,22 @@
         "korealainen-kimchi-jeon-aamiaiseksi: kimchi: No source-matched composition and preparation was resolved for “kimchi”; it is not treated as zero.",
         "korealainen-kimchi-jeon-aamiaiseksi: vehnäjauho: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "korealainen-kimchi-jeon-aamiaiseksi: kimchi: No source-matched composition and preparation was resolved for “kimchi”; it is not treated as zero.",
+          "status": "F",
+          "nextEvidence": "Identify a matching composition record for the ingredient as used."
+        },
+        {
+          "blocker": "korealainen-kimchi-jeon-aamiaiseksi: vehnäjauho: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        }
+      ]
     },
     {
       "id": "malesialainen-kuih-seri-muka",
@@ -622,7 +1830,22 @@
         "malesialainen-kuih-seri-muka: kookosmaito: GI evidence is missing.",
         "malesialainen-kuih-seri-muka: pandan: No source-matched composition and preparation was resolved for “pandan”; it is not treated as zero."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "malesialainen-kuih-seri-muka: kookosmaito: GI evidence is missing.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        },
+        {
+          "blocker": "malesialainen-kuih-seri-muka: pandan: No source-matched composition and preparation was resolved for “pandan”; it is not treated as zero.",
+          "status": "F",
+          "nextEvidence": "Identify a matching composition record for the ingredient as used."
+        }
+      ]
     },
     {
       "id": "indonesialainen-lontong-sayur-aamiaiseksi",
@@ -632,14 +1855,50 @@
         "indonesialainen-lontong-sayur-aamiaiseksi: kaali: The recipe amount 1 kpl has no food-specific mass conversion for KAALI, VALKOKAALI, KEITETTY, SUOLATON.",
         "indonesialainen-lontong-sayur-aamiaiseksi: kasvis- tai kanalientä: The recipe allows materially different liquids (water, milk or broth); the selected liquid is not specified, so the carbohydrate total is not established."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "indonesialainen-lontong-sayur-aamiaiseksi: riisikakku: No source-matched composition and preparation was resolved for “riisikakku”; it is not treated as zero.",
+          "status": "F",
+          "nextEvidence": "Identify a matching composition record for the ingredient as used."
+        },
+        {
+          "blocker": "indonesialainen-lontong-sayur-aamiaiseksi: kookosmaito: GI evidence is missing.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        },
+        {
+          "blocker": "indonesialainen-lontong-sayur-aamiaiseksi: kaali: The recipe amount 1 kpl has no food-specific mass conversion for KAALI, VALKOKAALI, KEITETTY, SUOLATON.",
+          "status": "F",
+          "nextEvidence": "Verify edible mass for the actual recipe unit and preparation."
+        },
+        {
+          "blocker": "indonesialainen-lontong-sayur-aamiaiseksi: kasvis- tai kanalientä: The recipe allows materially different liquids (water, milk or broth); the selected liquid is not specified, so the carbohydrate total is not established.",
+          "status": "F",
+          "nextEvidence": "Review the source and the preparation or quantity recorded in the current recipe."
+        }
+      ]
     },
     {
       "id": "lahi-ita-manakish-zaatarilla",
       "blockers": [
         "lahi-ita-manakish-zaatarilla: vehnäjauho: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved."
       ],
-      "review": "C candidate from prepared manakish research. Confirm dough and topping correspondence."
+      "review": "C candidate from prepared manakish research. Confirm dough and topping correspondence.",
+      "paths": [
+        "C",
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "lahi-ita-manakish-zaatarilla: vehnäjauho: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        }
+      ]
     },
     {
       "id": "japanilainen-okayu-umeboshipluumulla",
@@ -648,14 +1907,44 @@
         "japanilainen-okayu-umeboshipluumulla: seesaminsiemen: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
         "japanilainen-okayu-umeboshipluumulla: vettä tai mietoa lientä: The recipe allows materially different liquids (water, milk or broth); the selected liquid is not specified, so the carbohydrate total is not established."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "japanilainen-okayu-umeboshipluumulla: umeboshi: No source-matched composition and preparation was resolved for “umeboshi”; it is not treated as zero.",
+          "status": "F",
+          "nextEvidence": "Identify a matching composition record for the ingredient as used."
+        },
+        {
+          "blocker": "japanilainen-okayu-umeboshipluumulla: seesaminsiemen: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        },
+        {
+          "blocker": "japanilainen-okayu-umeboshipluumulla: vettä tai mietoa lientä: The recipe allows materially different liquids (water, milk or broth); the selected liquid is not specified, so the carbohydrate total is not established.",
+          "status": "F",
+          "nextEvidence": "Review the source and the preparation or quantity recorded in the current recipe."
+        }
+      ]
     },
     {
       "id": "japanilainen-yaki-onigiri-misolla",
       "blockers": [
         "japanilainen-yaki-onigiri-misolla: miso: No source-matched composition and preparation was resolved for “miso”; it is not treated as zero."
       ],
-      "review": "F. Confirm 150 g miso and name the product before selecting composition and GI."
+      "review": "F. Confirm 150 g miso and name the product before selecting composition and GI.",
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "japanilainen-yaki-onigiri-misolla: miso: No source-matched composition and preparation was resolved for “miso”; it is not treated as zero.",
+          "status": "F",
+          "nextEvidence": "Identify a matching composition record for the ingredient as used."
+        }
+      ]
     },
     {
       "id": "vietnamilainen-xoi-maapahkinalla",
@@ -664,7 +1953,27 @@
         "vietnamilainen-xoi-maapahkinalla: seesami: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
         "vietnamilainen-xoi-maapahkinalla: kookos: No source-matched composition and preparation was resolved for “kookos”; it is not treated as zero."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "vietnamilainen-xoi-maapahkinalla: tahmariisi: No source-matched composition and preparation was resolved for “tahmariisi”; it is not treated as zero.",
+          "status": "F",
+          "nextEvidence": "Identify a matching composition record for the ingredient as used."
+        },
+        {
+          "blocker": "vietnamilainen-xoi-maapahkinalla: seesami: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        },
+        {
+          "blocker": "vietnamilainen-xoi-maapahkinalla: kookos: No source-matched composition and preparation was resolved for “kookos”; it is not treated as zero.",
+          "status": "F",
+          "nextEvidence": "Identify a matching composition record for the ingredient as used."
+        }
+      ]
     },
     {
       "id": "malesialainen-roti-jala-currykanalla",
@@ -673,7 +1982,27 @@
         "malesialainen-roti-jala-currykanalla: kookosmaito: GI evidence is missing.",
         "malesialainen-roti-jala-currykanalla: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "malesialainen-roti-jala-currykanalla: vehnäjauho: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        },
+        {
+          "blocker": "malesialainen-roti-jala-currykanalla: kookosmaito: GI evidence is missing.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        },
+        {
+          "blocker": "malesialainen-roti-jala-currykanalla: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again.",
+          "status": "F",
+          "nextEvidence": "Compare current recipe, input and sources before updating the review seals."
+        }
+      ]
     },
     {
       "id": "thai-roti-munalla-banaanilla",
@@ -681,7 +2010,22 @@
         "thai-roti-munalla-banaanilla: vehnäjauho: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved.",
         "thai-roti-munalla-banaanilla: kookosmaito: GI evidence is missing."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "thai-roti-munalla-banaanilla: vehnäjauho: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        },
+        {
+          "blocker": "thai-roti-munalla-banaanilla: kookosmaito: GI evidence is missing.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        }
+      ]
     },
     {
       "id": "karibia-saltfish-fritterit",
@@ -689,14 +2033,40 @@
         "karibia-saltfish-fritterit: suolakala: No source-matched composition and preparation was resolved for “suolakala”; it is not treated as zero.",
         "karibia-saltfish-fritterit: vehnäjauho: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "karibia-saltfish-fritterit: suolakala: No source-matched composition and preparation was resolved for “suolakala”; it is not treated as zero.",
+          "status": "F",
+          "nextEvidence": "Identify a matching composition record for the ingredient as used."
+        },
+        {
+          "blocker": "karibia-saltfish-fritterit: vehnäjauho: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        }
+      ]
     },
     {
       "id": "kiinalainen-kevatsipulipannukakku",
       "blockers": [
         "kiinalainen-kevatsipulipannukakku: vehnäjauho: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved."
       ],
-      "review": "C candidate from prepared flatbread studies. Unresolved fat, layering and cooking equivalence."
+      "review": "C candidate from prepared flatbread studies. Unresolved fat, layering and cooking equivalence.",
+      "paths": [
+        "C",
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "kiinalainen-kevatsipulipannukakku: vehnäjauho: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        }
+      ]
     },
     {
       "id": "thai-maissifritterit",
@@ -704,7 +2074,22 @@
         "thai-maissifritterit: kypsennettyjä, valutettuja maissinjyviä: GI evidence is missing.",
         "thai-maissifritterit: vehnäjauho: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "thai-maissifritterit: kypsennettyjä, valutettuja maissinjyviä: GI evidence is missing.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        },
+        {
+          "blocker": "thai-maissifritterit: vehnäjauho: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        }
+      ]
     },
     {
       "id": "kiinalainen-katkarapu-wontonkeitto",
@@ -713,7 +2098,27 @@
         "kiinalainen-katkarapu-wontonkeitto: paksoi: GI evidence is missing.",
         "kiinalainen-katkarapu-wontonkeitto: kasvis- tai kanalientä: The recipe allows materially different liquids (water, milk or broth); the selected liquid is not specified, so the carbohydrate total is not established."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "kiinalainen-katkarapu-wontonkeitto: wonton-taikina: No source-matched composition and preparation was resolved for “wonton-taikina”; it is not treated as zero.",
+          "status": "F",
+          "nextEvidence": "Identify a matching composition record for the ingredient as used."
+        },
+        {
+          "blocker": "kiinalainen-katkarapu-wontonkeitto: paksoi: GI evidence is missing.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        },
+        {
+          "blocker": "kiinalainen-katkarapu-wontonkeitto: kasvis- tai kanalientä: The recipe allows materially different liquids (water, milk or broth); the selected liquid is not specified, so the carbohydrate total is not established.",
+          "status": "F",
+          "nextEvidence": "Review the source and the preparation or quantity recorded in the current recipe."
+        }
+      ]
     },
     {
       "id": "jiaozi",
@@ -723,7 +2128,32 @@
         "jiaozi: riisiviinietikkaa: No source-matched available-carbohydrate composition is resolved for rice wine vinegar; the measured amount is not treated as zero.",
         "jiaozi: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "jiaozi: dumpling-taikinalevyjä: No source-matched composition and preparation was resolved for “dumpling-taikinalevyjä”; it is not treated as zero.",
+          "status": "F",
+          "nextEvidence": "Identify a matching composition record for the ingredient as used."
+        },
+        {
+          "blocker": "jiaozi: soijakastiketta: GI evidence is missing.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        },
+        {
+          "blocker": "jiaozi: riisiviinietikkaa: No source-matched available-carbohydrate composition is resolved for rice wine vinegar; the measured amount is not treated as zero.",
+          "status": "F",
+          "nextEvidence": "Identify a matching composition record for the ingredient as used."
+        },
+        {
+          "blocker": "jiaozi: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again.",
+          "status": "F",
+          "nextEvidence": "Compare current recipe, input and sources before updating the review seals."
+        }
+      ]
     },
     {
       "id": "xiaolongbao",
@@ -733,7 +2163,32 @@
         "xiaolongbao: mustariisiviinietikkaa: GI food family does not match the ingredient (for example, rice is not rice vinegar or dairy is not milk chocolate).",
         "xiaolongbao: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "xiaolongbao: pyöreitä dumpling-taikinalevyjä: No source-matched composition and preparation was resolved for “pyöreitä dumpling-taikinalevyjä”; it is not treated as zero.",
+          "status": "F",
+          "nextEvidence": "Identify a matching composition record for the ingredient as used."
+        },
+        {
+          "blocker": "xiaolongbao: hyytelöitynyttä lihalientä: No source-matched composition and preparation was resolved for “hyytelöitynyttä lihalientä”; it is not treated as zero.",
+          "status": "F",
+          "nextEvidence": "Identify a matching composition record for the ingredient as used."
+        },
+        {
+          "blocker": "xiaolongbao: mustariisiviinietikkaa: GI food family does not match the ingredient (for example, rice is not rice vinegar or dairy is not milk chocolate).",
+          "status": "F",
+          "nextEvidence": "Review the source and the preparation or quantity recorded in the current recipe."
+        },
+        {
+          "blocker": "xiaolongbao: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again.",
+          "status": "F",
+          "nextEvidence": "Compare current recipe, input and sources before updating the review seals."
+        }
+      ]
     },
     {
       "id": "karibia-bammy-kassavaleipa",
@@ -743,7 +2198,32 @@
         "karibia-bammy-kassavaleipa: lime: The recipe amount 1 kpl has no food-specific mass conversion for Lime, peeled, raw.",
         "karibia-bammy-kassavaleipa: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "karibia-bammy-kassavaleipa: kassava: The recipe amount 1 kpl has no food-specific mass conversion for Cassava, peeled, fresh, raw.",
+          "status": "F",
+          "nextEvidence": "Verify edible mass for the actual recipe unit and preparation."
+        },
+        {
+          "blocker": "karibia-bammy-kassavaleipa: kookosmaito: GI evidence is missing.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        },
+        {
+          "blocker": "karibia-bammy-kassavaleipa: lime: The recipe amount 1 kpl has no food-specific mass conversion for Lime, peeled, raw.",
+          "status": "F",
+          "nextEvidence": "Verify edible mass for the actual recipe unit and preparation."
+        },
+        {
+          "blocker": "karibia-bammy-kassavaleipa: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again.",
+          "status": "F",
+          "nextEvidence": "Compare current recipe, input and sources before updating the review seals."
+        }
+      ]
     },
     {
       "id": "karibia-plantain-aamiaislautanen",
@@ -751,14 +2231,39 @@
         "karibia-plantain-aamiaislautanen: ruokabanaani: No source-matched composition and preparation was resolved for “ruokabanaani”; it is not treated as zero.",
         "karibia-plantain-aamiaislautanen: lime: The recipe amount 1 kpl has no food-specific mass conversion for Lime, peeled, raw."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "karibia-plantain-aamiaislautanen: ruokabanaani: No source-matched composition and preparation was resolved for “ruokabanaani”; it is not treated as zero.",
+          "status": "F",
+          "nextEvidence": "Identify a matching composition record for the ingredient as used."
+        },
+        {
+          "blocker": "karibia-plantain-aamiaislautanen: lime: The recipe amount 1 kpl has no food-specific mass conversion for Lime, peeled, raw.",
+          "status": "F",
+          "nextEvidence": "Verify edible mass for the actual recipe unit and preparation."
+        }
+      ]
     },
     {
       "id": "pohjoisafrikkalainen-taatelipuuro-appelsiinilla",
       "blockers": [
         "pohjoisafrikkalainen-taatelipuuro-appelsiinilla: mannasuurimo: NO MATCH: Mani et al. 1992 / International Tables 2021 Supplemental Table 2 item 2762 reports GI 55 ± 9 for semolina steamed and gelatinized with 5 g groundnut oil. It does not establish equivalence with this recipe’s water-boiled, oil-free semolina porridge or separate the oil effect. Keep the GI source record catalogued for its tested preparation; no suitable GI value is available for this ingredient and no category-mean substitute is accepted."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "pohjoisafrikkalainen-taatelipuuro-appelsiinilla: mannasuurimo: NO MATCH: Mani et al. 1992 / International Tables 2021 Supplemental Table 2 item 2762 reports GI 55 ± 9 for semolina steamed and gelatinized with 5 g groundnut oil. It does not establish equivalence with this recipe’s water-boiled, oil-free semolina porridge or separate the oil effect. Keep the GI source record catalogued for its tested preparation; no suitable GI value is available for this ingredient and no category-mean substitute is accepted.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        }
+      ]
     },
     {
       "id": "korealainen-mandu-keitto-aamiaiseksi",
@@ -767,7 +2272,27 @@
         "korealainen-mandu-keitto-aamiaiseksi: merilevä: No source-matched composition and preparation was resolved for “merilevä”; it is not treated as zero.",
         "korealainen-mandu-keitto-aamiaiseksi: kasvis- tai kanalientä: The recipe allows materially different liquids (water, milk or broth); the selected liquid is not specified, so the carbohydrate total is not established."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "korealainen-mandu-keitto-aamiaiseksi: mandu: No source-matched composition and preparation was resolved for “mandu”; it is not treated as zero.",
+          "status": "F",
+          "nextEvidence": "Identify a matching composition record for the ingredient as used."
+        },
+        {
+          "blocker": "korealainen-mandu-keitto-aamiaiseksi: merilevä: No source-matched composition and preparation was resolved for “merilevä”; it is not treated as zero.",
+          "status": "F",
+          "nextEvidence": "Identify a matching composition record for the ingredient as used."
+        },
+        {
+          "blocker": "korealainen-mandu-keitto-aamiaiseksi: kasvis- tai kanalientä: The recipe allows materially different liquids (water, milk or broth); the selected liquid is not specified, so the carbohydrate total is not established.",
+          "status": "F",
+          "nextEvidence": "Review the source and the preparation or quantity recorded in the current recipe."
+        }
+      ]
     },
     {
       "id": "tunisialainen-brik",
@@ -776,7 +2301,27 @@
         "tunisialainen-brik: kapriksia: The recipe amount 2 rkl has no food-specific mass conversion for Capers, pickled, canned, drained.",
         "tunisialainen-brik: tuoretta persiljaa: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "tunisialainen-brik: filo- tai malsouka-taikinaa: No source-matched composition and preparation was resolved for “filo- tai malsouka-taikinaa”; it is not treated as zero.",
+          "status": "F",
+          "nextEvidence": "Identify a matching composition record for the ingredient as used."
+        },
+        {
+          "blocker": "tunisialainen-brik: kapriksia: The recipe amount 2 rkl has no food-specific mass conversion for Capers, pickled, canned, drained.",
+          "status": "F",
+          "nextEvidence": "Verify edible mass for the actual recipe unit and preparation."
+        },
+        {
+          "blocker": "tunisialainen-brik: tuoretta persiljaa: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        }
+      ]
     },
     {
       "id": "dal-makhani",
@@ -787,7 +2332,37 @@
         "dal-makhani: garam masalaa: AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
         "dal-makhani: tuoretta korianteria: AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "dal-makhani: mustia urad-dal-linssejä: No source-matched composition and preparation was resolved for “mustia urad-dal-linssejä”; it is not treated as zero.",
+          "status": "F",
+          "nextEvidence": "Identify a matching composition record for the ingredient as used."
+        },
+        {
+          "blocker": "dal-makhani: tuoretta inkivääriä: AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
+          "status": "F",
+          "nextEvidence": "Verify each small contribution and the combined omission threshold."
+        },
+        {
+          "blocker": "dal-makhani: jauhettua juustokuminaa: AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
+          "status": "F",
+          "nextEvidence": "Verify each small contribution and the combined omission threshold."
+        },
+        {
+          "blocker": "dal-makhani: garam masalaa: AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
+          "status": "F",
+          "nextEvidence": "Verify each small contribution and the combined omission threshold."
+        },
+        {
+          "blocker": "dal-makhani: tuoretta korianteria: AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
+          "status": "F",
+          "nextEvidence": "Verify each small contribution and the combined omission threshold."
+        }
+      ]
     },
     {
       "id": "kung-pao-kana",
@@ -796,21 +2371,63 @@
         "kung-pao-kana: keitettyä riisiä: The recipe amount 4 annosta has no food-specific mass conversion for RIISI PITKÄJYVÄINEN, PUUROUTUMATON.",
         "kung-pao-kana: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "kung-pao-kana: maissitärkkelystä: GI evidence is missing.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        },
+        {
+          "blocker": "kung-pao-kana: keitettyä riisiä: The recipe amount 4 annosta has no food-specific mass conversion for RIISI PITKÄJYVÄINEN, PUUROUTUMATON.",
+          "status": "F",
+          "nextEvidence": "Verify edible mass for the actual recipe unit and preparation."
+        },
+        {
+          "blocker": "kung-pao-kana: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again.",
+          "status": "F",
+          "nextEvidence": "Compare current recipe, input and sources before updating the review seals."
+        }
+      ]
     },
     {
       "id": "mala-xiang-guo",
       "blockers": [
         "mala-xiang-guo: lootusjuurta: No source-matched composition and preparation was resolved for “lootusjuurta”; it is not treated as zero."
       ],
-      "review": "E candidate for lotus root. An edible mass and preparation-matched composition and GI are still needed."
+      "review": "E candidate for lotus root. An edible mass and preparation-matched composition and GI are still needed.",
+      "paths": [
+        "E",
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "mala-xiang-guo: lootusjuurta: No source-matched composition and preparation was resolved for “lootusjuurta”; it is not treated as zero.",
+          "status": "F",
+          "nextEvidence": "Identify a matching composition record for the ingredient as used."
+        }
+      ]
     },
     {
       "id": "mapo-tofu",
       "blockers": [
         "mapo-tofu: keitettyä riisiä: The recipe amount 4 annosta has no food-specific mass conversion for RIISI PITKÄJYVÄINEN, PUUROUTUMATON."
       ],
-      "review": "E candidate. Four rice portions need a defined cooked weight before calculation."
+      "review": "E candidate. Four rice portions need a defined cooked weight before calculation.",
+      "paths": [
+        "E",
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "mapo-tofu: keitettyä riisiä: The recipe amount 4 annosta has no food-specific mass conversion for RIISI PITKÄJYVÄINEN, PUUROUTUMATON.",
+          "status": "F",
+          "nextEvidence": "Verify edible mass for the actual recipe unit and preparation."
+        }
+      ]
     },
     {
       "id": "bouillabaisse",
@@ -820,7 +2437,32 @@
         "bouillabaisse: sahramia: AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
         "bouillabaisse: kuivattua timjamia: AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "bouillabaisse: sinisimpukoita: GI evidence is missing.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        },
+        {
+          "blocker": "bouillabaisse: fenkolia: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        },
+        {
+          "blocker": "bouillabaisse: sahramia: AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
+          "status": "F",
+          "nextEvidence": "Verify each small contribution and the combined omission threshold."
+        },
+        {
+          "blocker": "bouillabaisse: kuivattua timjamia: AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
+          "status": "F",
+          "nextEvidence": "Verify each small contribution and the combined omission threshold."
+        }
+      ]
     },
     {
       "id": "pekingin-ankka",
@@ -830,7 +2472,32 @@
         "pekingin-ankka: kiinalaisia vehnälettuja: No source-matched composition and preparation was resolved for “kiinalaisia vehnälettuja”; it is not treated as zero.",
         "pekingin-ankka: hoisinkastiketta: The recipe amount 4 rkl has no food-specific mass conversion for Sauce, hoi sin (hoisin), commercial."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "pekingin-ankka: ankkaa: The recipe amount 1 kpl has no food-specific mass conversion for Duck, lean flesh, skin & fat, raw.",
+          "status": "F",
+          "nextEvidence": "Verify edible mass for the actual recipe unit and preparation."
+        },
+        {
+          "blocker": "pekingin-ankka: hunajaa: GI evidence is missing.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        },
+        {
+          "blocker": "pekingin-ankka: kiinalaisia vehnälettuja: No source-matched composition and preparation was resolved for “kiinalaisia vehnälettuja”; it is not treated as zero.",
+          "status": "F",
+          "nextEvidence": "Identify a matching composition record for the ingredient as used."
+        },
+        {
+          "blocker": "pekingin-ankka: hoisinkastiketta: The recipe amount 4 rkl has no food-specific mass conversion for Sauce, hoi sin (hoisin), commercial.",
+          "status": "F",
+          "nextEvidence": "Verify edible mass for the actual recipe unit and preparation."
+        }
+      ]
     },
     {
       "id": "sichuan-hot-pot",
@@ -838,7 +2505,22 @@
         "sichuan-hot-pot: naudan- tai kanalientä: No source-matched composition and preparation was resolved for “naudan- tai kanalientä”; it is not treated as zero.",
         "sichuan-hot-pot: nuudeleita: No source-matched composition and preparation was resolved for “nuudeleita”; it is not treated as zero."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "sichuan-hot-pot: naudan- tai kanalientä: No source-matched composition and preparation was resolved for “naudan- tai kanalientä”; it is not treated as zero.",
+          "status": "F",
+          "nextEvidence": "Identify a matching composition record for the ingredient as used."
+        },
+        {
+          "blocker": "sichuan-hot-pot: nuudeleita: No source-matched composition and preparation was resolved for “nuudeleita”; it is not treated as zero.",
+          "status": "F",
+          "nextEvidence": "Identify a matching composition record for the ingredient as used."
+        }
+      ]
     },
     {
       "id": "tunisialainen-ojja",
@@ -849,7 +2531,37 @@
         "tunisialainen-ojja: tuoretta persiljaa: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
         "tunisialainen-ojja: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "tunisialainen-ojja: punainen paprika: AJO 1.6B: generic Pepper GI 40 is reference-only. Species, colour, preparation and original human measurement are unverified; DOI 10.3390/nu12102989 Table 1 cannot support this ingredient. Missing GI is not zero.",
+          "status": "F",
+          "nextEvidence": "Review the source and the preparation or quantity recorded in the current recipe."
+        },
+        {
+          "blocker": "tunisialainen-ojja: harissaa: No source-matched composition and preparation was resolved for “harissaa”; it is not treated as zero.",
+          "status": "F",
+          "nextEvidence": "Identify a matching composition record for the ingredient as used."
+        },
+        {
+          "blocker": "tunisialainen-ojja: juustokuminaa: AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
+          "status": "F",
+          "nextEvidence": "Verify each small contribution and the combined omission threshold."
+        },
+        {
+          "blocker": "tunisialainen-ojja: tuoretta persiljaa: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        },
+        {
+          "blocker": "tunisialainen-ojja: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again.",
+          "status": "F",
+          "nextEvidence": "Compare current recipe, input and sources before updating the review seals."
+        }
+      ]
     },
     {
       "id": "vietnamilainen-papaija-kookospuuro",
@@ -861,7 +2573,42 @@
         "vietnamilainen-papaija-kookospuuro: vettä tai mietoa lientä: The recipe allows materially different liquids (water, milk or broth); the selected liquid is not specified, so the carbohydrate total is not established.",
         "vietnamilainen-papaija-kookospuuro: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "vietnamilainen-papaija-kookospuuro: tapioka: No source-matched composition and preparation was resolved for “tapioka”; it is not treated as zero.",
+          "status": "F",
+          "nextEvidence": "Identify a matching composition record for the ingredient as used."
+        },
+        {
+          "blocker": "vietnamilainen-papaija-kookospuuro: kookosmaito: GI evidence is missing.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        },
+        {
+          "blocker": "vietnamilainen-papaija-kookospuuro: papaija: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        },
+        {
+          "blocker": "vietnamilainen-papaija-kookospuuro: lime: The recipe amount 1 kpl has no food-specific mass conversion for Lime, peeled, raw.",
+          "status": "F",
+          "nextEvidence": "Verify edible mass for the actual recipe unit and preparation."
+        },
+        {
+          "blocker": "vietnamilainen-papaija-kookospuuro: vettä tai mietoa lientä: The recipe allows materially different liquids (water, milk or broth); the selected liquid is not specified, so the carbohydrate total is not established.",
+          "status": "F",
+          "nextEvidence": "Review the source and the preparation or quantity recorded in the current recipe."
+        },
+        {
+          "blocker": "vietnamilainen-papaija-kookospuuro: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again.",
+          "status": "F",
+          "nextEvidence": "Compare current recipe, input and sources before updating the review seals."
+        }
+      ]
     },
     {
       "id": "indonesialainen-tempeh-munakulho",
@@ -869,7 +2616,22 @@
         "indonesialainen-tempeh-munakulho: tempeh: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
         "indonesialainen-tempeh-munakulho: sambal: No source-matched composition and preparation was resolved for “sambal”; it is not treated as zero."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "indonesialainen-tempeh-munakulho: tempeh: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        },
+        {
+          "blocker": "indonesialainen-tempeh-munakulho: sambal: No source-matched composition and preparation was resolved for “sambal”; it is not treated as zero.",
+          "status": "F",
+          "nextEvidence": "Identify a matching composition record for the ingredient as used."
+        }
+      ]
     },
     {
       "id": "thai-kananmunat-kookoscurryssa",
@@ -878,7 +2640,27 @@
         "thai-kananmunat-kookoscurryssa: punainen currytahna: No source-matched composition and preparation was resolved for “punainen currytahna”; it is not treated as zero.",
         "thai-kananmunat-kookoscurryssa: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "thai-kananmunat-kookoscurryssa: kookosmaito: GI evidence is missing.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        },
+        {
+          "blocker": "thai-kananmunat-kookoscurryssa: punainen currytahna: No source-matched composition and preparation was resolved for “punainen currytahna”; it is not treated as zero.",
+          "status": "F",
+          "nextEvidence": "Identify a matching composition record for the ingredient as used."
+        },
+        {
+          "blocker": "thai-kananmunat-kookoscurryssa: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again.",
+          "status": "F",
+          "nextEvidence": "Compare current recipe, input and sources before updating the review seals."
+        }
+      ]
     },
     {
       "id": "japanilainen-miso-tofu-paksoi",
@@ -887,7 +2669,27 @@
         "japanilainen-miso-tofu-paksoi: wakame: No source-matched composition and preparation was resolved for “wakame”; it is not treated as zero.",
         "japanilainen-miso-tofu-paksoi: kasvis- tai kanalientä: The recipe allows materially different liquids (water, milk or broth); the selected liquid is not specified, so the carbohydrate total is not established."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "japanilainen-miso-tofu-paksoi: miso: No source-matched composition and preparation was resolved for “miso”; it is not treated as zero.",
+          "status": "F",
+          "nextEvidence": "Identify a matching composition record for the ingredient as used."
+        },
+        {
+          "blocker": "japanilainen-miso-tofu-paksoi: wakame: No source-matched composition and preparation was resolved for “wakame”; it is not treated as zero.",
+          "status": "F",
+          "nextEvidence": "Identify a matching composition record for the ingredient as used."
+        },
+        {
+          "blocker": "japanilainen-miso-tofu-paksoi: kasvis- tai kanalientä: The recipe allows materially different liquids (water, milk or broth); the selected liquid is not specified, so the carbohydrate total is not established.",
+          "status": "F",
+          "nextEvidence": "Review the source and the preparation or quantity recorded in the current recipe."
+        }
+      ]
     },
     {
       "id": "japanilainen-curry-tofulla",
@@ -895,7 +2697,22 @@
         "japanilainen-curry-tofulla: kasvislientä: No source-matched composition and preparation was resolved for “kasvislientä”; it is not treated as zero.",
         "japanilainen-curry-tofulla: japanilaista curryroux-tahnaa: No source-matched composition and preparation was resolved for “japanilaista curryroux-tahnaa”; it is not treated as zero."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "japanilainen-curry-tofulla: kasvislientä: No source-matched composition and preparation was resolved for “kasvislientä”; it is not treated as zero.",
+          "status": "F",
+          "nextEvidence": "Identify a matching composition record for the ingredient as used."
+        },
+        {
+          "blocker": "japanilainen-curry-tofulla: japanilaista curryroux-tahnaa: No source-matched composition and preparation was resolved for “japanilaista curryroux-tahnaa”; it is not treated as zero.",
+          "status": "F",
+          "nextEvidence": "Identify a matching composition record for the ingredient as used."
+        }
+      ]
     },
     {
       "id": "kanaviillokki-kukkakaalilla",
@@ -906,7 +2723,37 @@
         "kanaviillokki-kukkakaalilla: kukkakaalia: Fineli food record is missing.",
         "kanaviillokki-kukkakaalilla: suolaa ja valkopippuria: AJO 1.8: Salt and white pepper quantities unspecified; no source-backed positive carbohydrate ceiling."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "kanaviillokki-kukkakaalilla: kypsää, nahatonta broilerin rintafileetä: Fineli food record is missing.",
+          "status": "F",
+          "nextEvidence": "Identify a matching composition record for the ingredient as used."
+        },
+        {
+          "blocker": "kanaviillokki-kukkakaalilla: vehnäjauhoja: AJO 1.8: finished bakery category mean GI 58 does not measure this ingredient/preparation. No sufficiently matched original human GI source established; see glycemic-bakery-four-source-review.md.",
+          "status": "F",
+          "nextEvidence": "Review the source and the preparation or quantity recorded in the current recipe."
+        },
+        {
+          "blocker": "kanaviillokki-kukkakaalilla: currya: AJO 1.8: One teaspoon curry mixture has no verified mass/composition ceiling.",
+          "status": "F",
+          "nextEvidence": "Identify a matching composition record for the ingredient as used."
+        },
+        {
+          "blocker": "kanaviillokki-kukkakaalilla: kukkakaalia: Fineli food record is missing.",
+          "status": "F",
+          "nextEvidence": "Identify a matching composition record for the ingredient as used."
+        },
+        {
+          "blocker": "kanaviillokki-kukkakaalilla: suolaa ja valkopippuria: AJO 1.8: Salt and white pepper quantities unspecified; no source-backed positive carbohydrate ceiling.",
+          "status": "F",
+          "nextEvidence": "Verify each small contribution and the combined omission threshold."
+        }
+      ]
     },
     {
       "id": "kookos-lime-kanacurry",
@@ -915,7 +2762,27 @@
         "kookos-lime-kanacurry: punainen paprika: AJO 1.6B: generic Pepper GI 40 is reference-only. Species, colour, preparation and original human measurement are unverified; DOI 10.3390/nu12102989 Table 1 cannot support this ingredient. Missing GI is not zero.",
         "kookos-lime-kanacurry: limetti: The recipe amount 1 kpl has no food-specific mass conversion for Lime, peeled, raw."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "kookos-lime-kanacurry: thaimaalaista currytahnaa: No source-matched composition and preparation was resolved for “thaimaalaista currytahnaa”; it is not treated as zero.",
+          "status": "F",
+          "nextEvidence": "Identify a matching composition record for the ingredient as used."
+        },
+        {
+          "blocker": "kookos-lime-kanacurry: punainen paprika: AJO 1.6B: generic Pepper GI 40 is reference-only. Species, colour, preparation and original human measurement are unverified; DOI 10.3390/nu12102989 Table 1 cannot support this ingredient. Missing GI is not zero.",
+          "status": "F",
+          "nextEvidence": "Review the source and the preparation or quantity recorded in the current recipe."
+        },
+        {
+          "blocker": "kookos-lime-kanacurry: limetti: The recipe amount 1 kpl has no food-specific mass conversion for Lime, peeled, raw.",
+          "status": "F",
+          "nextEvidence": "Verify edible mass for the actual recipe unit and preparation."
+        }
+      ]
     },
     {
       "id": "kimchi-jjigae",
@@ -926,7 +2793,37 @@
         "kimchi-jjigae: gochugaru-chilihiutaleita: AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
         "kimchi-jjigae: kevätsipulia: AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "kimchi-jjigae: kypsää kimchiä: No source-matched composition and preparation was resolved for “kypsää kimchiä”; it is not treated as zero.",
+          "status": "F",
+          "nextEvidence": "Identify a matching composition record for the ingredient as used."
+        },
+        {
+          "blocker": "kimchi-jjigae: kanalientä tai vettä: No source-matched composition and preparation was resolved for “kanalientä tai vettä”; it is not treated as zero.",
+          "status": "F",
+          "nextEvidence": "Identify a matching composition record for the ingredient as used."
+        },
+        {
+          "blocker": "kimchi-jjigae: gochujang-tahnaa: No source-matched composition and preparation was resolved for “gochujang-tahnaa”; it is not treated as zero.",
+          "status": "F",
+          "nextEvidence": "Identify a matching composition record for the ingredient as used."
+        },
+        {
+          "blocker": "kimchi-jjigae: gochugaru-chilihiutaleita: AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
+          "status": "F",
+          "nextEvidence": "Verify each small contribution and the combined omission threshold."
+        },
+        {
+          "blocker": "kimchi-jjigae: kevätsipulia: AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
+          "status": "F",
+          "nextEvidence": "Verify each small contribution and the combined omission threshold."
+        }
+      ]
     },
     {
       "id": "sate-ayam",
@@ -937,7 +2834,37 @@
         "sate-ayam: limetti: The recipe amount 1 kpl has no food-specific mass conversion for Lime, peeled, raw.",
         "sate-ayam: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "sate-ayam: kecap manis -kastiketta: No source-matched composition and preparation was resolved for “kecap manis -kastiketta”; it is not treated as zero.",
+          "status": "F",
+          "nextEvidence": "Identify a matching composition record for the ingredient as used."
+        },
+        {
+          "blocker": "sate-ayam: limettimehua: The recipe amount 2 rkl has no food-specific mass conversion for Juice, lime.",
+          "status": "F",
+          "nextEvidence": "Verify edible mass for the actual recipe unit and preparation."
+        },
+        {
+          "blocker": "sate-ayam: kecap manis -kastiketta: No source-matched composition and preparation was resolved for “kecap manis -kastiketta”; it is not treated as zero.",
+          "status": "F",
+          "nextEvidence": "Identify a matching composition record for the ingredient as used."
+        },
+        {
+          "blocker": "sate-ayam: limetti: The recipe amount 1 kpl has no food-specific mass conversion for Lime, peeled, raw.",
+          "status": "F",
+          "nextEvidence": "Verify edible mass for the actual recipe unit and preparation."
+        },
+        {
+          "blocker": "sate-ayam: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again.",
+          "status": "F",
+          "nextEvidence": "Compare current recipe, input and sources before updating the review seals."
+        }
+      ]
     },
     {
       "id": "okonomiyaki-kaaliletut",
@@ -946,7 +2873,27 @@
         "okonomiyaki-kaaliletut: srirachaa: No source-matched composition and preparation was resolved for “srirachaa”; it is not treated as zero.",
         "okonomiyaki-kaaliletut: seesaminsiemeniä: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "okonomiyaki-kaaliletut: majoneesia: GI evidence is missing.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        },
+        {
+          "blocker": "okonomiyaki-kaaliletut: srirachaa: No source-matched composition and preparation was resolved for “srirachaa”; it is not treated as zero.",
+          "status": "F",
+          "nextEvidence": "Identify a matching composition record for the ingredient as used."
+        },
+        {
+          "blocker": "okonomiyaki-kaaliletut: seesaminsiemeniä: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        }
+      ]
     },
     {
       "id": "karibia-ackee-ja-suolakala",
@@ -954,28 +2901,73 @@
         "karibia-ackee-ja-suolakala: suolakala: No source-matched composition and preparation was resolved for “suolakala”; it is not treated as zero.",
         "karibia-ackee-ja-suolakala: ackee: No source-matched composition and preparation was resolved for “ackee”; it is not treated as zero."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "karibia-ackee-ja-suolakala: suolakala: No source-matched composition and preparation was resolved for “suolakala”; it is not treated as zero.",
+          "status": "F",
+          "nextEvidence": "Identify a matching composition record for the ingredient as used."
+        },
+        {
+          "blocker": "karibia-ackee-ja-suolakala: ackee: No source-matched composition and preparation was resolved for “ackee”; it is not treated as zero.",
+          "status": "F",
+          "nextEvidence": "Identify a matching composition record for the ingredient as used."
+        }
+      ]
     },
     {
       "id": "lahi-ita-labneh-kulho-zaatarilla",
       "blockers": [
         "lahi-ita-labneh-kulho-zaatarilla: labneh: No source-matched composition and preparation was resolved for “labneh”; it is not treated as zero."
       ],
-      "review": "F. Name the labneh and establish whether the serving can use a dairy GI or the omission rule."
+      "review": "F. Name the labneh and establish whether the serving can use a dairy GI or the omission rule.",
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "lahi-ita-labneh-kulho-zaatarilla: labneh: No source-matched composition and preparation was resolved for “labneh”; it is not treated as zero.",
+          "status": "F",
+          "nextEvidence": "Identify a matching composition record for the ingredient as used."
+        }
+      ]
     },
     {
       "id": "pellava-puuro-pahkinoilla",
       "blockers": [
         "pellava-puuro-pahkinoilla: kookosjauhoa: No source-matched composition and preparation was resolved for “kookosjauhoa”; it is not treated as zero."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "pellava-puuro-pahkinoilla: kookosjauhoa: No source-matched composition and preparation was resolved for “kookosjauhoa”; it is not treated as zero.",
+          "status": "F",
+          "nextEvidence": "Identify a matching composition record for the ingredient as used."
+        }
+      ]
     },
     {
       "id": "kiinalainen-teehaudutetut-munat",
       "blockers": [
         "Q09 source data incomplete: consumed marinade and star anise; do not display zero."
       ],
-      "review": "F. Q09 release gate needs consumed marinade and star anise evidence."
+      "review": "F. Q09 release gate needs consumed marinade and star anise evidence.",
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "Q09 source data incomplete: consumed marinade and star anise; do not display zero.",
+          "status": "F",
+          "nextEvidence": "Review the source and the preparation or quantity recorded in the current recipe."
+        }
+      ]
     },
     {
       "id": "carnitas-salaattitacot",
@@ -985,7 +2977,32 @@
         "carnitas-salaattitacot: pico de galloa: No source-matched composition and preparation was resolved for “pico de galloa”; it is not treated as zero.",
         "carnitas-salaattitacot: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "carnitas-salaattitacot: limetti: The recipe amount 1 kpl has no food-specific mass conversion for Lime, peeled, raw.",
+          "status": "F",
+          "nextEvidence": "Verify edible mass for the actual recipe unit and preparation."
+        },
+        {
+          "blocker": "carnitas-salaattitacot: roomansalaatinlehtiä: Fineli has no validated mass for one romaine leaf; the recipe lists leaves rather than weighed lettuce, so no generic leaf mass is assumed.",
+          "status": "F",
+          "nextEvidence": "Review the source and the preparation or quantity recorded in the current recipe."
+        },
+        {
+          "blocker": "carnitas-salaattitacot: pico de galloa: No source-matched composition and preparation was resolved for “pico de galloa”; it is not treated as zero.",
+          "status": "F",
+          "nextEvidence": "Identify a matching composition record for the ingredient as used."
+        },
+        {
+          "blocker": "carnitas-salaattitacot: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again.",
+          "status": "F",
+          "nextEvidence": "Compare current recipe, input and sources before updating the review seals."
+        }
+      ]
     },
     {
       "id": "miso-lohi-paksoi",
@@ -993,7 +3010,22 @@
         "miso-lohi-paksoi: vaaleaa misotahnaa: No source-matched composition and preparation was resolved for “vaaleaa misotahnaa”; it is not treated as zero.",
         "miso-lohi-paksoi: seesaminsiemeniä: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "miso-lohi-paksoi: vaaleaa misotahnaa: No source-matched composition and preparation was resolved for “vaaleaa misotahnaa”; it is not treated as zero.",
+          "status": "F",
+          "nextEvidence": "Identify a matching composition record for the ingredient as used."
+        },
+        {
+          "blocker": "miso-lohi-paksoi: seesaminsiemeniä: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        }
+      ]
     },
     {
       "id": "munakoiso-kesakurpitsalasagne",
@@ -1014,7 +3046,97 @@
         "munakoiso-kesakurpitsalasagne: mustapippuri: Published recipe: available-carbohydrate composition is unresolved and GI evidence has not been reviewed; unknown values are not treated as zero.",
         "munakoiso-kesakurpitsalasagne: vesi: Published recipe: available-carbohydrate composition is unresolved and GI evidence has not been reviewed; unknown values are not treated as zero."
       ],
-      "review": null
+      "review": null,
+      "paths": [
+        "F"
+      ],
+      "unresolved": [
+        {
+          "blocker": "munakoiso-kesakurpitsalasagne: munakoiso: Published recipe: available-carbohydrate composition is unresolved and GI evidence has not been reviewed; unknown values are not treated as zero.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        },
+        {
+          "blocker": "munakoiso-kesakurpitsalasagne: kesäkurpitsa: Published recipe: available-carbohydrate composition is unresolved and GI evidence has not been reviewed; unknown values are not treated as zero.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        },
+        {
+          "blocker": "munakoiso-kesakurpitsalasagne: sipuli: Published recipe: available-carbohydrate composition is unresolved and GI evidence has not been reviewed; unknown values are not treated as zero.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        },
+        {
+          "blocker": "munakoiso-kesakurpitsalasagne: valkosipuli: Published recipe: available-carbohydrate composition is unresolved and GI evidence has not been reviewed; unknown values are not treated as zero.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        },
+        {
+          "blocker": "munakoiso-kesakurpitsalasagne: oliiviöljy: Published recipe: available-carbohydrate composition is unresolved and GI evidence has not been reviewed; unknown values are not treated as zero.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        },
+        {
+          "blocker": "munakoiso-kesakurpitsalasagne: tuore timjami: Published recipe: available-carbohydrate composition is unresolved and GI evidence has not been reviewed; unknown values are not treated as zero.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        },
+        {
+          "blocker": "munakoiso-kesakurpitsalasagne: valmis italialainen tomaattikastike: Published recipe: available-carbohydrate composition is unresolved and GI evidence has not been reviewed; unknown values are not treated as zero.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        },
+        {
+          "blocker": "munakoiso-kesakurpitsalasagne: lasagnelevyt: Published recipe: available-carbohydrate composition is unresolved and GI evidence has not been reviewed; unknown values are not treated as zero.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        },
+        {
+          "blocker": "munakoiso-kesakurpitsalasagne: mozzarella: Published recipe: available-carbohydrate composition is unresolved and GI evidence has not been reviewed; unknown values are not treated as zero.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        },
+        {
+          "blocker": "munakoiso-kesakurpitsalasagne: parmesaani tai vastaava kova juusto: Published recipe: available-carbohydrate composition is unresolved and GI evidence has not been reviewed; unknown values are not treated as zero.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        },
+        {
+          "blocker": "munakoiso-kesakurpitsalasagne: tuore basilika: Published recipe: available-carbohydrate composition is unresolved and GI evidence has not been reviewed; unknown values are not treated as zero.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        },
+        {
+          "blocker": "munakoiso-kesakurpitsalasagne: viinietikka: Published recipe: available-carbohydrate composition is unresolved and GI evidence has not been reviewed; unknown values are not treated as zero.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        },
+        {
+          "blocker": "munakoiso-kesakurpitsalasagne: suola: Published recipe: available-carbohydrate composition is unresolved and GI evidence has not been reviewed; unknown values are not treated as zero.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        },
+        {
+          "blocker": "munakoiso-kesakurpitsalasagne: mustapippuri: Published recipe: available-carbohydrate composition is unresolved and GI evidence has not been reviewed; unknown values are not treated as zero.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        },
+        {
+          "blocker": "munakoiso-kesakurpitsalasagne: vesi: Published recipe: available-carbohydrate composition is unresolved and GI evidence has not been reviewed; unknown values are not treated as zero.",
+          "status": "F",
+          "nextEvidence": "Verify direct GI or a preparation analogue for this ingredient or prepared component."
+        }
+      ]
     }
-  ]
+  ],
+  "pathCounts": {
+    "A": 2,
+    "B": 0,
+    "C": 7,
+    "D": 4,
+    "E": 4,
+    "F": 119
+  },
+  "fullyOpened": 0,
+  "classificationNote": "A to E identify documented partial fixes or named candidate routes in the reviewed subset. F marks unresolved evidence, recipe details or review, including records whose potential fix has not been verified. Counts overlap. F is not proof that new research is needed."
 }
