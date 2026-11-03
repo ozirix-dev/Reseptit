@@ -14,6 +14,6 @@ Kaikkien viiden lähde- ja sisältöhyväksyntä on kirjattu [hyväksyntätietue
 
 [Julkinen GK-sivu](https://ozirix-dev.github.io/Reseptit/glykeeminen-kuorma/) · [PR 199](https://github.com/ozirix-dev/Reseptit/pull/199) · [PR 200](https://github.com/ozirix-dev/Reseptit/pull/200) · [PR 201](https://github.com/ozirix-dev/Reseptit/pull/201) · [PR 202](https://github.com/ozirix-dev/Reseptit/pull/202)
 
-Julkinen lähtöluku on 197/326. Lindströminpihvien PR 205 on yhdistetty ja [julkaisuajo](https://github.com/ozirix-dev/Reseptit/actions/runs/41595448682) on käynnissä. [PR 207](https://github.com/ozirix-dev/Reseptit/pull/207) korvaa PR 206:n ja sisältää samat neljä reseptiä. PR 207:n esikatseluluku 201/326 perustuu kanacurryt sisältävään lähtöversioon. GitHub näyttää PR 207:lle yhdistämisristiriidan Lindströminpihvien yhdistämisen jälkeen. Kun myös Lindströminpihvit säilytetään sovituksessa, odotettu kattavuus on 202/326.
+Julkinen lähtöluku on 198/326 Lindströminpihvien julkaisun jälkeen. PR 207 sisältää siemengranolan, pistaasijogurtin, kongjukin ja uunifalafelin. PR 210 tarjoaa samalle siemengranolan resepti-ID:lle EDEKA-mantelilastuihin sidotun 2,38 GK:n version. Molemmat PR:t muuttavat samaa GK-rekisteriä ja kahta yhteistä testitiedostoa. Yhdessä ne kattavat neljä eri reseptiä, joten niiden julkaisu nostaisi kattavuuden 202/326:een.
 
-Integraatiota odottavat Kerala-kalacurry, maksa ja pekoni sekä [kevätsipulipannukakku](scallion-pancake-approval.json). Koko jonon julkaisun jälkeen kattavuus olisi 205/326 ja vaje tavoitteeseen 56 reseptiä.
+Integraatiota odottavat Kerala-kalacurry, maksa ja pekoni sekä kevätsipulipannukakku. Niiden jälkeen ehdollinen kattavuus olisi 205/326. Labneh-kulhon täsmäversio odottaa erillistä lähde- ja sisältöhyväksyntää.
