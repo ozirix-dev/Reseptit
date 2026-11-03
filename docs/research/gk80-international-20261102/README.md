@@ -1,6 +1,6 @@
 # GK80: kansainväliset GI-lähteet, Codex1
 
-> **Tilanne 3.11.2026:** main ja tuotanto 193/326. [Päätöstaulukko ja julkaisujono](DECISIONS-20261103.md) erottavat varmennetut julkaisut, ehdolliset laskelmat ja omistajapäätökset.
+> **Ajantasainen GitHub-tilannekuva 3.11.2026 (main `e771b53`):** 197/326 numeerista resepti-ID:tä, tavoitevaje 64. [Päätöstaulukko ja julkaisujono](DECISIONS-20261103.md) erottaa julkaistut, erillisten PR:ien hyväksytyt integraatioehdokkaat sekä vielä hyväksymättömät tutkimusskenaariot. Luvut ovat aikaleimattuja, eivät automaattisesti päivittyviä.
 
 > **Historiallinen tutkimusluovutus 2.11.2026 klo 21.33 UTC:** [blueberry-and-defined-brine/CURRENT.md](blueberry-and-defined-brine/CURRENT.md). Kaksi uutta täsmäversiota: mustikkapiirakka GK1,30177875 ja Lindströminpihvien itse määritelty liemiversio GK6,895695. Mustikkapiirakan munat1+2 käsitellään oikein165g:na. Korealaisen Sempio-tahnan nimetty alluloosi-/kuitulähde löytyi, mutta siitä ei kirjata uutta kokonaista avausta. Omia ehdollisia versioita20 eri ID:lle:15 A-tutkimusversiota ja5 B-lähdeskenaariota. Uusia hyväksyntöjä tai julkaisuja0. Julkaistuna179/326, tavoitteesta261 puuttuu82.
 
