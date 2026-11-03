@@ -1,0 +1,137 @@
+{
+  "recipeId": "vietnamilainen-banh-bao-kananmunalla",
+  "servings": 2,
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "unroundedGk": "25.298172",
+  "upperScenario": {
+    "giOverrides": [
+      {
+        "inputIndex": 0,
+        "gi": 93
+      },
+      {
+        "inputIndex": 1,
+        "gi": 93
+      }
+    ],
+    "unroundedGk": "34.552647"
+  },
+  "inputs": [
+    [
+      100,
+      73.998,
+      68
+    ],
+    [
+      0.6,
+      6.3,
+      68
+    ],
+    [
+      15.75,
+      3.2,
+      50
+    ]
+  ],
+  "ingredients": [
+    {
+      "grams": 100,
+      "name": {
+        "fi": "Vaalea vehnäjauho",
+        "en": "Refined wheat flour",
+        "sv": "Siktat vetemjöl",
+        "th": "แป้งสาลีขัดขาว"
+      }
+    },
+    {
+      "grams": 0.6,
+      "name": {
+        "fi": "Kuivahiiva",
+        "en": "Dry yeast",
+        "sv": "Torrjäst",
+        "th": "ยีสต์แห้ง"
+      }
+    },
+    {
+      "grams": 15.75,
+      "name": {
+        "fi": "Tavallinen soijakastike",
+        "en": "Regular soy sauce",
+        "sv": "Vanlig sojasås",
+        "th": "ซีอิ๊วธรรมดา"
+      }
+    },
+    {
+      "grams": 110,
+      "name": {
+        "fi": "Kuorettomat kananmunat",
+        "en": "Shelled eggs",
+        "sv": "Skalade ägg",
+        "th": "ไข่ไม่รวมเปลือก"
+      }
+    },
+    {
+      "grams": 15,
+      "name": {
+        "fi": "Herkkusieni",
+        "en": "Button mushroom",
+        "sv": "Champinjon",
+        "th": "เห็ดแชมปิญอง"
+      }
+    },
+    {
+      "grams": 50,
+      "name": {
+        "fi": "Vesi",
+        "en": "Water",
+        "sv": "Vatten",
+        "th": "น้ำ"
+      }
+    }
+  ],
+  "omissions": [
+    {
+      "ingredientIndex": 3,
+      "choPer100g": 0.3
+    },
+    {
+      "ingredientIndex": 4,
+      "choPer100g": 0.3
+    }
+  ],
+  "preparation": {
+    "fi": "Vaivaa jauho, vesi, hiiva ja suola 8–10 minuuttia. Kohota 60 minuuttia noin 32 °C:ssa. Muotoile kaksi sämpylää ja höyrytä 20 minuuttia kypsiksi. Keitä munat ja kypsennä pilkottu sieni ilman öljyä. Mausta sieni soijalla, täytä sämpylät höyrytyksen jälkeen ja jaa {{servings}} annokseen.",
+    "en": "Knead the flour, water, yeast and salt for 8–10 minutes. Proof for 60 minutes at about 32 °C. Shape two buns and steam for 20 minutes until cooked. Boil the eggs and cook the chopped mushroom without oil. Season the mushroom with soy sauce, fill the steamed buns and divide into {{servings}} servings.",
+    "sv": "Knåda mjöl, vatten, jäst och salt i 8–10 minuter. Jäs i 60 minuter vid cirka 32 °C. Forma två bullar och ångkoka i 20 minuter tills de är klara. Koka äggen och tillaga hackad svamp utan olja. Smaksätt svampen med soja, fyll bullarna efter ångkokningen och dela i {{servings}} portioner.",
+    "th": "นวดแป้ง น้ำ ยีสต์ และเกลือ 8–10 นาที พักให้ขึ้น 60 นาทีที่ประมาณ 32 °C ปั้นสองลูกแล้วนึ่ง 20 นาทีจนสุก ต้มไข่และปรุงเห็ดสับโดยไม่ใช้น้ำมัน ปรุงเห็ดด้วยซีอิ๊ว ใส่ไส้หลังนึ่งแล้วแบ่งเป็น {{servings}} ที่"
+  },
+  "limitation": {
+    "fi": "GI 68 ja 93 ovat täyttämättömien höyryleipien verrokkeja. Soija käyttää GI-koodia 50. Munasta ja sienestä jää pois 0,1875 g CHO/annos.",
+    "en": "GI 68 and 93 come from unfilled steamed bread proxies. Soy sauce uses GI code 50. Egg and mushroom contribute 0.1875 g excluded carbohydrate per serving.",
+    "sv": "GI 68 och 93 gäller jämförbara ofyllda ångbröd. Sojan använder GI-kod 50. Ägg och svamp ger 0,1875 g utesluten kolhydrat per portion.",
+    "th": "ค่า GI 68 และ 93 มาจากขนมปังนึ่งไม่ใส่ไส้ที่ใช้เทียบ ซีอิ๊วใช้ค่า GI ตามกลุ่ม 50 ไม่รวมคาร์โบไฮเดรตจากไข่และเห็ด 0.1875 กรัมต่อที่"
+  },
+  "sources": [
+    {
+      "title": "Lau et al.",
+      "url": "https://doi.org/10.1016/j.foodchem.2014.10.040"
+    },
+    {
+      "title": "Lan et al.",
+      "url": "https://doi.org/10.1186/1475-2891-12-64"
+    },
+    {
+      "title": "Fineli",
+      "url": "https://fineli.fi/fineli/fi/ohje/19"
+    },
+    {
+      "title": "AFCD",
+      "url": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd"
+    }
+  ],
+  "boundFiles": {
+    "reseptit/aamupalat/vietnamilainen-banh-bao-kananmunalla.md": "f4613348486bde0f2a85018d632d0069bd461e9d5b8513e558b58bd768f1f06f",
+    "docs/research/gk80-international-20261102/steamed-buns-source-control/banh-bao-component-proposal.json": "61e9a8bffe095f02f50c59c652add9a880a7d7a599a24108390b976e7e76b1a9"
+  }
+}
