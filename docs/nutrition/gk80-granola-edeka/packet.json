@@ -1,0 +1,307 @@
+{
+  "approval": {
+    "date": "2026-11-03",
+    "scope": "Owner approved this exact EDEKA product scenario and LOW GK calculation for implementation.",
+    "researchCommit": "3ca4b4fa650d158fceed0243895477c93ed279a8",
+    "researchPath": "docs/research/gk80-international-20261102/followup/granola-source-resolved.json"
+  },
+  "case": {
+    "recipeId": "siemengranola-jogurtilla",
+    "servings": 4,
+    "ingredients": [
+      {
+        "name": "kurpitsansiemeniä",
+        "grams": 80,
+        "fineliRecordId": "research-afcd-F008212",
+        "giRecordId": null,
+        "massEvidence": "Ingredient mapped to afcd-release-3 record F008212; source state: hulled pumpkin seeds."
+      },
+      {
+        "name": "auringonkukansiemeniä",
+        "grams": 60,
+        "fineliRecordId": "research-afcd-F008215",
+        "giRecordId": null,
+        "massEvidence": "Ingredient mapped to afcd-release-3 record F008215; source state: dried sunflower seeds."
+      },
+      {
+        "name": "pellavansiemenrouhetta",
+        "grams": 40,
+        "fineliRecordId": "research-afcd-F008210",
+        "giRecordId": null,
+        "massEvidence": "Ingredient mapped to afcd-release-3 record F008210; source state: ground linseed."
+      },
+      {
+        "name": "EDEKA Herzstücke mantelilastut, GTIN 4311501358511",
+        "grams": 40,
+        "fineliRecordId": null,
+        "giRecordId": null,
+        "massEvidence": "Ingredient mapped to fineli-release-20 record 379; source state: almonds, sliced; whole almond composition proxy.",
+        "availableCarbohydrateUpperBoundPerServingG": 0.47,
+        "upperBoundEvidence": "EDEKA nominal declaration 4.7 g carbohydrate per 100 g as sold",
+        "excludedReason": "Positive nominal carbohydrate allowance for the exact named product"
+      },
+      {
+        "name": "voita",
+        "grams": 30,
+        "fineliRecordId": "research-fineli-500",
+        "giRecordId": null,
+        "massEvidence": "Ingredient mapped to fineli-release-20 record 500; source state: raw/as listed."
+      },
+      {
+        "name": "kanelia",
+        "grams": 2.55,
+        "fineliRecordId": "research-afcd-F002963",
+        "giRecordId": null,
+        "massEvidence": "quantity-sources.json: AUSNUT F002963 measure49452 density0.51g/ml * Finnish level teaspoon5ml =2.55g; generic density proxy, not measured batch."
+      },
+      {
+        "name": "maustamatonta kreikkalaista jogurttia",
+        "grams": 400,
+        "fineliRecordId": "research-fineli-32201",
+        "giRecordId": "dairy-category-mean-gi-35",
+        "massEvidence": "Ingredient mapped to fineli-release-20 record 32201; source state: plain Greek yogurt, 10% fat.",
+        "giMatchEvidence": "Published GI analogue/category record dairy-category-mean-gi-35; source and limitations are listed centrally.",
+        "foodKey": "dairy",
+        "preparationKey": "unflavoured-dairy"
+      },
+      {
+        "name": "vadelmia",
+        "grams": 100,
+        "fineliRecordId": "research-afcd-F007619",
+        "giRecordId": "fruit-category-mean-gi-51",
+        "massEvidence": "Ingredient mapped to afcd-release-3 record F007619; source state: raw raspberries.",
+        "giMatchEvidence": "Published GI analogue/category record fruit-category-mean-gi-51; source and limitations are listed centrally.",
+        "foodKey": "fruit-category-mean",
+        "preparationKey": "category-mean"
+      }
+    ],
+    "expected": {
+      "gk": "2.38405",
+      "omittedChoIncludingCeilingsG": "1.8703125"
+    }
+  },
+  "sourceFilesLfSha256": {
+    "reseptit/aamupalat/siemengranola-jogurtilla.md": "0ea4aec2500d7f974f28db074b912bcb4a2c987dc58f35c5de3ad736bbdd404e",
+    "docs/nutrition/fineli-release-20-reference.json": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76",
+    "docs/nutrition/afcd-release-3-reference.json": "02edf1cc95191c05edf791656a5109c41bcf4d4a3e707be69ef5009bc640022e",
+    "docs/nutrition/glycemic-index-records.json": "fb465ac8f68ffc85e29eb9900f17df00b081fa0ddc3e25d253140aecb248acda",
+    "site/scripts/glycemic-load-model.ts": "10ce09e465886e4538fc0b2ad2a54ca0b050a9e3729b7417eb0a91f2b946b48c"
+  },
+  "foods": [
+    {
+      "id": "research-afcd-F008212",
+      "name": "Seed, pumpkin, hulled & dried",
+      "state": "Seed, pumpkin, hulled & dried",
+      "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/data-files",
+      "basis": "per100g-as-sold",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "per100g": {
+        "carbohydrate": 2.1,
+        "fibre": 4.6,
+        "polyols": null,
+        "protein": 30.2,
+        "fat": 45
+      }
+    },
+    {
+      "id": "research-afcd-F008215",
+      "name": "Seed, sunflower",
+      "state": "Seed, sunflower",
+      "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/data-files",
+      "basis": "per100g-as-sold",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "per100g": {
+        "carbohydrate": 3.1,
+        "fibre": 13,
+        "polyols": null,
+        "protein": 24.7,
+        "fat": 48.3
+      }
+    },
+    {
+      "id": "research-afcd-F008210",
+      "name": "Seed, linseed or flaxseed",
+      "state": "Seed, linseed or flaxseed",
+      "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/data-files",
+      "basis": "per100g-as-sold",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "per100g": {
+        "carbohydrate": 2.8,
+        "fibre": 32.9,
+        "polyols": null,
+        "protein": 21.6,
+        "fat": 32.6
+      }
+    },
+    {
+      "id": "research-fineli-500",
+      "name": "VOI",
+      "state": "VOI",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/500",
+      "basis": "per100g-as-sold",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "per100g": {
+        "carbohydrate": 0.8,
+        "fibre": 0.0,
+        "polyols": 0.0,
+        "protein": 1.19,
+        "fat": 81.3
+      }
+    },
+    {
+      "id": "research-afcd-F002963",
+      "name": "Cinnamon, dried, ground",
+      "state": "Cinnamon, dried, ground",
+      "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/data-files",
+      "basis": "per100g-as-sold",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "per100g": {
+        "carbohydrate": 27.5,
+        "fibre": 53.1,
+        "polyols": null,
+        "protein": 4,
+        "fat": 1.2
+      }
+    },
+    {
+      "id": "research-fineli-32201",
+      "name": "JOGURTTI, TURKKILAINEN/KREIKKALAINEN, RASVAA 10 %",
+      "state": "JOGURTTI, TURKKILAINEN/KREIKKALAINEN, RASVAA 10 %",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/32201",
+      "basis": "per100g-as-sold",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "per100g": {
+        "carbohydrate": 4.298,
+        "fibre": 0.0,
+        "polyols": 0.0,
+        "protein": 3.98,
+        "fat": 10.047
+      }
+    },
+    {
+      "id": "research-afcd-F007619",
+      "name": "Raspberry, raw",
+      "state": "Raspberry, raw",
+      "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/data-files",
+      "basis": "per100g-as-sold",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "per100g": {
+        "carbohydrate": 6.9,
+        "fibre": 4.8,
+        "polyols": null,
+        "protein": 1.1,
+        "fat": 0.3
+      }
+    }
+  ],
+  "gis": [
+    {
+      "id": "dairy-category-mean-gi-35",
+      "gi": 35,
+      "foodKey": "dairy",
+      "preparationKey": "unflavoured-dairy",
+      "food": "Dairy products, category mean",
+      "preparation": "Unflavoured dairy category mean used for plain cream cheese",
+      "qualityTier": "SUPPLEMENTARY",
+      "referenceScale": "GLUCOSE_100",
+      "matchKind": "CATEGORY_MEAN",
+      "confidence": "LOW",
+      "source": {
+        "title": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+        "url": "https://doi.org/10.1093/ajcn/nqab233",
+        "table": "Table 1 summary: dairy products mean GI 35 ± 11 (n=186)",
+        "year": 2021,
+        "published": true,
+        "iso26642Confirmed": true,
+        "qualityEvidence": "Published category mean from ISO-screened individual food measurements. This is not a cream-cheese-specific value and is used only as a clearly labelled category-level proxy."
+      },
+      "note": "Category mean, not a measured GI for the recipe's cream cheese."
+    },
+    {
+      "id": "fruit-category-mean-gi-51",
+      "gi": 51,
+      "foodKey": "fruit-category-mean",
+      "preparationKey": "category-mean",
+      "food": "Fruits and fruit products category mean",
+      "preparation": "Category mean from Table 1; individual food and preparation were not tested as this item",
+      "qualityTier": "SUPPLEMENTARY",
+      "referenceScale": "GLUCOSE_100",
+      "source": {
+        "title": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+        "url": "https://doi.org/10.1093/ajcn/nqab233",
+        "table": "Table 1; mean of Supplemental Table 1 entries for Fruits and fruit products (n=105)",
+        "year": 2021,
+        "published": true,
+        "iso26642Confirmed": false,
+        "qualityEvidence": "Table 1 reports a category mean calculated from food-specific entries in Supplemental Table 1. The target ingredient was not individually tested; category matching is a broad proxy and is low confidence."
+      },
+      "note": "fruit category mean; used only as a broad tamarind-paste analogue",
+      "matchKind": "CATEGORY_MEAN",
+      "confidence": "LOW"
+    }
+  ],
+  "product": {
+    "name": "EDEKA Herzstücke Mandeln, gehobelt, blanchiert",
+    "url": "https://www.edeka.de/sortiment/4311501358511/",
+    "gtin": "4311501358511",
+    "carbohydratePer100g": 4.7,
+    "verifiedOn": "2026-11-03",
+    "basis": "Brand product declaration, nominal as sold; verify physical package before use"
+  },
+  "copy": {
+    "names": {
+      "fi": [
+        "Kurpitsansiemenet",
+        "Auringonkukansiemenet",
+        "Pellavansiemenrouhe",
+        "EDEKA Herzstücke mantelilastut, GTIN 4311501358511",
+        "Voi",
+        "Jauhettu kaneli",
+        "Maustamaton kreikkalainen jogurtti",
+        "Vadelmat"
+      ],
+      "en": [
+        "Pumpkin seeds",
+        "Sunflower seeds",
+        "Ground flaxseed",
+        "EDEKA Herzstücke flaked almonds, GTIN 4311501358511",
+        "Butter",
+        "Ground cinnamon",
+        "Plain Greek yogurt",
+        "Raspberries"
+      ],
+      "sv": [
+        "Pumpafrön",
+        "Solrosfrön",
+        "Krossade linfrön",
+        "EDEKA Herzstücke mandelspån, GTIN 4311501358511",
+        "Smör",
+        "Malen kanel",
+        "Naturell grekisk yoghurt",
+        "Hallon"
+      ],
+      "th": [
+        "เมล็ดฟักทอง",
+        "เมล็ดทานตะวัน",
+        "เมล็ดแฟลกซ์บด",
+        "อัลมอนด์แผ่น EDEKA Herzstücke รหัส 4311501358511",
+        "เนย",
+        "อบเชยป่น",
+        "กรีกโยเกิร์ตรสธรรมชาติ",
+        "ราสป์เบอร์รี"
+      ]
+    },
+    "preparation": {
+      "fi": "Paahda siemenseos alkuperäisen ohjeen mukaan 160 °C:ssa 18–22 minuuttia. Käytä ilmoitettu määrä EDEKA-mantelilastuja ja tarkista pakkauksesta hiilihydraattimäärä 4,7 g / 100 g. Tarjoa jogurtin ja vadelmien kanssa.",
+      "en": "Toast the seed mixture at 160 °C for 18–22 minutes as in the original recipe. Use the listed amount of EDEKA flaked almonds and check that the package declares 4.7 g carbohydrate per 100 g. Serve with yogurt and raspberries.",
+      "sv": "Rosta fröblandningen i 160 °C i 18–22 minuter enligt originalreceptet. Använd angiven mängd EDEKA-mandelspån och kontrollera att förpackningen anger 4,7 g kolhydrater per 100 g. Servera med yoghurt och hallon.",
+      "th": "อบเมล็ดพืชที่ 160 °C นาน 18–22 นาทีตามสูตรเดิม ใช้อัลมอนด์แผ่น EDEKA ตามปริมาณที่ระบุ และตรวจว่าฉลากระบุคาร์โบไฮเดรต 4.7 กรัมต่อ 100 กรัม เสิร์ฟกับโยเกิร์ตและราสป์เบอร์รี"
+    },
+    "limitation": {
+      "fi": "Tämä tuoteskenaario koskee nimettyjä EDEKA-mantelilastuja. Laskettu osuus tulee jogurtista ja vadelmista ryhmä-GI-arvoilla. Mantelilastujen hiilihydraattimäärä perustuu tuotteen ravintoarvoilmoitukseen ja kanelin määrä tilavuusmitan massavastineeseen.",
+      "en": "This product scenario uses the named EDEKA flaked almonds. The calculated part comes from yogurt and raspberries using group GI values. The almond carbohydrate amount uses the product declaration and the cinnamon weight uses a volume-to-mass reference.",
+      "sv": "Produktscenariot gäller de angivna EDEKA-mandelspånen. Den beräknade delen kommer från yoghurt och hallon med grupp-GI. Mandelns kolhydratmängd bygger på produktdeklarationen och kanelens vikt på en omräkning från volymmått.",
+      "th": "กรณีนี้ใช้อัลมอนด์แผ่น EDEKA ที่ระบุ ส่วนที่คำนวณมาจากโยเกิร์ตและราสป์เบอร์รีโดยใช้ค่า GI ของกลุ่มอาหาร ปริมาณคาร์โบไฮเดรตของอัลมอนด์อ้างอิงฉลาก และน้ำหนักอบเชยอ้างอิงการแปลงหน่วยปริมาตรเป็นน้ำหนัก"
+    }
+  }
+}
