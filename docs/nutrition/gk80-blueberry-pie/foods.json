@@ -1,0 +1,172 @@
+[
+  {
+    "id": "MEXT2023-05001",
+    "name": "Raw dried whole almonds, freshly ground with skins and all fat retained",
+    "state": "Whole dry unroasted edible almonds before grinding; retain all resulting meal",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": false,
+    "polyolsEvidence": "Native mass-sumCHOAVL5.2,not monosaccharide-equivalent5.5 or difference11.5; individualpolyolsUNKNOWN.",
+    "sourceUrl": "https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=5_05001_7&MODE=7",
+    "per100g": {
+      "carbohydrate": 5.2,
+      "polyols": null,
+      "fibre": null,
+      "protein": null,
+      "fat": null
+    },
+    "nativeSourceRecord": {
+      "id": "MEXT2023-05001",
+      "nativeId": "05001",
+      "name": "アーモンド　乾",
+      "sourceRelease": "STFCJ2023_CORRECTED_2026_03_27",
+      "basis": "per100g-edible",
+      "fieldCode": "CHOAVL",
+      "fieldName": "利用可能炭水化物（質量計）",
+      "mainWorkbookSha256": "0d5a77077dd6cd91cbc2e6e317b8b218a38728c409eed452f1c10635a0d3099c",
+      "carbohydrateWorkbookSha256": "099bdadb4a980df503e7a3dd057e49a69b68315b67012a3358b9a6d06984e137",
+      "sheet": "表全体",
+      "mainCell": "P435",
+      "massToken": "5.2",
+      "monosaccharideEquivalentToken": "5.5",
+      "differenceToken": "11.5",
+      "differenceEnergyFlag": "*",
+      "polyolsToken": "-",
+      "carbohydrateCell": "O359",
+      "carbohydrateMassToken": "5.2",
+      "componentTokens": {
+        "STARCH": "0.1",
+        "GLUS": "Tr",
+        "FRUS": "Tr",
+        "GALS": "-",
+        "SUCS": "5.1",
+        "MALS": "0",
+        "LACS": "0",
+        "TRES": "(0)"
+      }
+    },
+    "sourceCredit": "REUSE_CODEX2_NOT_NEW_RESEARCH",
+    "sourceApplicationApproved": false
+  },
+  {
+    "id": "fineli-500",
+    "name": "VOI",
+    "state": "VOI",
+    "basis": "per100g-as-sold",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "nativePath": "docs/nutrition/fineli-release-20-reference.json",
+    "nativeId": "500",
+    "nativeClass": "BUTTER",
+    "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/500",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Native field retained; AFCD individualpolyolsUNKNOWN,directWITHOUT-sugar-alcohols used.",
+    "per100g": {
+      "carbohydrate": 0.8,
+      "polyols": 0.0,
+      "fibre": 0.0,
+      "protein": 1.19,
+      "fat": 81.3
+    }
+  },
+  {
+    "id": "fineli-858",
+    "name": "KANANMUNA, KUORETON",
+    "state": "KANANMUNA, KUORETON",
+    "basis": "per100g-as-sold",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "nativePath": "docs/nutrition/fineli-release-20-reference.json",
+    "nativeId": "858",
+    "nativeClass": "EGGS",
+    "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/858",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Native field retained; AFCD individualpolyolsUNKNOWN,directWITHOUT-sugar-alcohols used.",
+    "per100g": {
+      "carbohydrate": 0.3,
+      "polyols": 0.0,
+      "fibre": 0.0,
+      "protein": 12.61,
+      "fat": 9.24
+    }
+  },
+  {
+    "id": "fineli-622",
+    "name": "RAHKA, MAITORAHKA, MAUSTAMATON, RASVAA <0,5 %",
+    "state": "RAHKA, MAITORAHKA, MAUSTAMATON, RASVAA <0,5 %",
+    "basis": "per100g-as-sold",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "nativePath": "docs/nutrition/fineli-release-20-reference.json",
+    "nativeId": "622",
+    "nativeClass": "CURD",
+    "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/622",
+    "polyolsSourceVerified": true,
+    "polyolsEvidence": "Native field retained; AFCD individualpolyolsUNKNOWN,directWITHOUT-sugar-alcohols used.",
+    "per100g": {
+      "carbohydrate": 3.0,
+      "polyols": 0.0,
+      "fibre": 0.0,
+      "protein": 9.81,
+      "fat": 0.4
+    }
+  },
+  {
+    "id": "fineli-442",
+    "name": "MUSTIKKA, METSÄMUSTIKKA",
+    "nativePath": "docs/nutrition/fineli-release-20-reference.json",
+    "nativeId": "442",
+    "nativeRecord": {
+      "source_id": "442",
+      "name": "MUSTIKKA, METSÄMUSTIKKA",
+      "food_type": "FOOD",
+      "process": "RAW",
+      "edible_portion_percent": 100.0,
+      "ingredient_class": "BERRY",
+      "food_class": "BERFRESH",
+      "per100g": {
+        "available_carbohydrate_g_per_100g": 10.182,
+        "fibre_g_per_100g": 3.1,
+        "polyols_g_per_100g": null,
+        "protein_g_per_100g": 0.821,
+        "fat_g_per_100g": 1.059
+      },
+      "component_provenance": {
+        "fat_g_per_100g": {
+          "acquisition_type": "D",
+          "method_type": "AG",
+          "method_indicator": "MI1302"
+        },
+        "available_carbohydrate_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MI0181"
+        },
+        "protein_g_per_100g": {
+          "acquisition_type": "D",
+          "method_type": "AG",
+          "method_indicator": "MI0123"
+        },
+        "fibre_g_per_100g": {
+          "acquisition_type": "S",
+          "method_type": "S",
+          "method_indicator": "MI0172"
+        }
+      },
+      "portion_mass_g": {
+        "DL": 60.0,
+        "RKL": 12.0
+      }
+    },
+    "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/442",
+    "state": "RAW",
+    "basis": "per100g-edible",
+    "carbohydrateDefinition": "EU_AVAILABLE",
+    "polyolsSourceVerified": false,
+    "polyolsEvidence": "Native SUGOH, no inferred missing zero",
+    "per100g": {
+      "carbohydrate": 10.182,
+      "fibre": 3.1,
+      "polyols": null,
+      "protein": 0.821,
+      "fat": 1.059
+    }
+  }
+]
