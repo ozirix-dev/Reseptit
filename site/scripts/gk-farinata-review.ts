@@ -239,7 +239,9 @@ export function buildPointReviewVariant(root: string, packetPath: string): GkOnl
   }
   let scenarioRange: GkOnlyVariant['scenarioRange'] = null;
   if (c.upperScenario) {
-    if (c.omissions?.length) throw Error('Range omissions require scenario-specific bindings: ' + c.recipeId);
+    if (c.omissions?.length && c.upperScenario.replacements?.length) {
+      throw Error('Range omissions with ingredient replacements require scenario-specific bindings: ' + c.recipeId);
+    }
     const indices = new Set<number>();
     let delta = 0;
     for (const { inputIndex, ingredientIndex } of c.upperScenario.replacements ?? []) {
