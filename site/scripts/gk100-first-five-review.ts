@@ -146,7 +146,8 @@ for (const variant of variants) {
   for (const locale of locales) {
     const html = renderToStaticMarkup(createElement(MemoryRouter, null,
       createElement(GkOnlyVariantPanel, { variant, locale, servings: variant.servings })));
-    if (!html.includes(variant.limitation[locale].replaceAll('&', '&amp;'))) {
+    const limitation = variant.limitation?.[locale];
+    if (!limitation || !html.includes(limitation.replaceAll('&', '&amp;'))) {
       throw new Error('GK review limitation missing: ' + variant.recipeId + ' ' + locale);
     }
   }
