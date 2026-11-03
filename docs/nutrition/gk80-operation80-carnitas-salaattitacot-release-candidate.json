@@ -1,0 +1,209 @@
+{
+  "recipeId": "carnitas-salaattitacot",
+  "servings": 4,
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "unroundedGk": "1.856765",
+  "upperScenario": {
+    "giOverrides": [
+      {
+        "inputIndex": 0,
+        "gi": 54
+      }
+    ],
+    "unroundedGk": "2.23279"
+  },
+  "inputs": [
+    [
+      130,
+      8.9,
+      41
+    ],
+    [
+      144,
+      1.8,
+      40
+    ],
+    [
+      70,
+      3.45,
+      40
+    ],
+    [
+      20,
+      5.447,
+      40
+    ],
+    [
+      6,
+      10.2,
+      40
+    ],
+    [
+      800,
+      0,
+      0
+    ]
+  ],
+  "ingredients": [
+    {
+      "grams": 130,
+      "name": {
+        "fi": "Kuorittu appelsiini",
+        "en": "Peeled orange",
+        "sv": "Skalad apelsin",
+        "th": "ส้มปอกเปลือก"
+      }
+    },
+    {
+      "grams": 144,
+      "name": {
+        "fi": "Roomansalaatti",
+        "en": "Romaine lettuce",
+        "sv": "Romansallad",
+        "th": "ผักกาดโรเมน"
+      }
+    },
+    {
+      "grams": 70,
+      "name": {
+        "fi": "Tomaatti",
+        "en": "Tomato",
+        "sv": "Tomat",
+        "th": "มะเขือเทศ"
+      }
+    },
+    {
+      "grams": 20,
+      "name": {
+        "fi": "Punasipuli",
+        "en": "Red onion",
+        "sv": "Rödlök",
+        "th": "หอมแดง"
+      }
+    },
+    {
+      "grams": 6,
+      "name": {
+        "fi": "Valkosipuli",
+        "en": "Garlic",
+        "sv": "Vitlök",
+        "th": "กระเทียม"
+      }
+    },
+    {
+      "grams": 800,
+      "name": {
+        "fi": "Porsaan niska",
+        "en": "Pork shoulder",
+        "sv": "Fläskkarré",
+        "th": "สันคอหมู"
+      }
+    },
+    {
+      "grams": 30.8,
+      "name": {
+        "fi": "Limettimehu",
+        "en": "Lime juice",
+        "sv": "Limejuice",
+        "th": "น้ำมะนาว"
+      }
+    },
+    {
+      "grams": 2,
+      "name": {
+        "fi": "Juustokumina",
+        "en": "Cumin",
+        "sv": "Spiskummin",
+        "th": "ยี่หร่าป่น"
+      }
+    },
+    {
+      "grams": 1,
+      "name": {
+        "fi": "Kuivattu oregano",
+        "en": "Dried oregano",
+        "sv": "Torkad oregano",
+        "th": "ออริกาโนแห้ง"
+      }
+    },
+    {
+      "grams": 10,
+      "name": {
+        "fi": "Korianteri",
+        "en": "Coriander",
+        "sv": "Koriander",
+        "th": "ผักชี"
+      }
+    },
+    {
+      "grams": 0.2,
+      "name": {
+        "fi": "Mustapippuri",
+        "en": "Black pepper",
+        "sv": "Svartpeppar",
+        "th": "พริกไทยดำ"
+      }
+    }
+  ],
+  "omissions": [
+    {
+      "ingredientIndex": 6,
+      "choPer100g": 8.02
+    },
+    {
+      "ingredientIndex": 7,
+      "choPer100g": 33.7
+    },
+    {
+      "ingredientIndex": 8,
+      "choPer100g": 26.4
+    },
+    {
+      "ingredientIndex": 9,
+      "choPer100g": 1.9
+    },
+    {
+      "ingredientIndex": 10,
+      "choPer100g": 100
+    }
+  ],
+  "preparation": {
+    "fi": "Mausta kuutioitu porsaan niska suolalla, pippurilla, juustokuminalla ja oreganolla. Lisää pataan valkosipuli, {{amount:0}} g appelsiinia mehuna ja lohkoina, limettimehu ja 150 ml vettä. Hauduta kannen alla 150 °C:ssa noin 2,5 tuntia. Revi liha ja rapeuta se grillivastuksella. Sekoita tomaatti, punasipuli ja korianteri. Tarjoa liha ja salsa salaatinlehdissä. Jaa myös kaikki appelsiinilohkot ja haudutusliemi {{servings}} annokseen.",
+    "en": "Season the cubed pork with salt, pepper, cumin and oregano. Add garlic, {{amount:0}} g orange as juice and segments, lime juice and 150 ml water. Cover and braise at 150 °C for about 2½ hours. Shred the pork and crisp it under the grill. Mix tomato, red onion and coriander. Serve pork and salsa in lettuce leaves. Divide all the orange segments and braising liquid among the {{servings}} servings as well.",
+    "sv": "Krydda tärnat fläsk med salt, peppar, spiskummin och oregano. Tillsätt vitlök, {{amount:0}} g apelsin som juice och klyftor, limejuice och 150 ml vatten. Bräsera under lock i 150 °C i cirka 2½ timmar. Dra isär köttet och grilla ytan krispig. Blanda tomat, rödlök och koriander. Servera kött och salsa i salladsblad. Fördela även alla apelsinklyftor och bräseringsspadet på {{servings}} portioner.",
+    "th": "ปรุงสันคอหมูหั่นเต๋าด้วยเกลือ พริกไทย ยี่หร่า และออริกาโน ใส่กระเทียม ส้ม {{amount:0}} กรัมทั้งน้ำและกลีบ น้ำมะนาว และน้ำ 150 มล. ปิดฝาตุ๋นในเตาอบที่ 150 °C ประมาณ 2 ชั่วโมงครึ่ง ฉีกหมูแล้วย่างผิวให้กรอบ ผสมมะเขือเทศ หอมแดง และผักชี เสิร์ฟหมูกับซัลซาในใบผักกาด แบ่งกลีบส้มและน้ำตุ๋นทั้งหมดให้ครบ {{servings}} ที่"
+  },
+  "limitation": {
+    "fi": "GI 41–54 perustuu appelsiinimehuihin, joita käytetään haudutetun appelsiinin verrokkeina. Pienosuuksista jää pois enintään 0,95 g CHO/annos.",
+    "en": "GI 41–54 uses orange juice measurements as proxies for braised orange. Up to 0.95 g carbohydrate per serving is excluded.",
+    "sv": "GI 41–54 bygger på apelsinjuicer som används som jämförelse för bräserad apelsin. Högst 0,95 g kolhydrat per portion ingår inte.",
+    "th": "ค่า GI 41–54 ใช้ผลวัดน้ำส้มเป็นตัวเทียบสำหรับส้มตุ๋น ไม่รวมคาร์โบไฮเดรตไม่เกิน 0.95 กรัมต่อที่"
+  },
+  "sources": [
+    {
+      "title": "University of Sydney",
+      "url": "https://glycemicindex.com/gi-search/"
+    },
+    {
+      "title": "Fineli",
+      "url": "https://fineli.fi/fineli/fi/ohje/19"
+    },
+    {
+      "title": "AFCD",
+      "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd"
+    },
+    {
+      "title": "USDA",
+      "url": "https://fdc.nal.usda.gov/food-details/168156/nutrients"
+    },
+    {
+      "title": "GI coding",
+      "url": "https://doi.org/10.2337/dc08-1239"
+    }
+  ],
+  "boundFiles": {
+    "reseptit/paaruoat/carnitas-salaattitacot.md": "49a8897b6832d1a6fb68574c366acba08311463a8e39baa586f94c1fb369e548",
+    "docs/nutrition/gk80-operation80-batch-32.md": "e2a9bf57bbab7724a8fb77b5c79509cb5292aa833d5a98d33e8a2833c23a44a0"
+  }
+}
