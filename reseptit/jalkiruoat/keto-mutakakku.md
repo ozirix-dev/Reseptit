@@ -76,6 +76,6 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 
 ## Muistiinpanot
 
-Paistoaika vaikuttaa keskuksen pehmeyteen. Käytä makeuttamatonta suklaata ja tarkista tuotteen hiilihydraattimäärä.
+Paistoaika vaikuttaa keskuksen pehmeyteen. Käytä sokeritonta suklaata ja tarkista tuotteen hiilihydraattimäärä.
 
 Ravintoarvot ovat toistaiseksi pois näkyvistä lähdetietojen tarkistuksen vuoksi.
