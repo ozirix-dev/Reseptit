@@ -75,7 +75,7 @@ Ackee: erillinen GK-täsmäversio käyttää 60 g kypsää ruodotonta suolatursk
 
 ## Jatkoehdotukset
 
-Nämä yhdeksän nelikielistä esikatseluversiota ovat kahden alkuperäisen erän lisäksi. Kohdennetussa tarkistuksessa niiden kanssa numeerinen esikatselukattavuus on 276/326.
+Nämä kymmenen nelikielistä esikatseluversiota ovat kahden alkuperäisen erän lisäksi. Kohdennetussa tarkistuksessa niiden kanssa numeerinen esikatselukattavuus on 277/326.
 
 | Resepti | GK/annos | Päätös ennen julkaisua |
 | --- | ---: | --- |
@@ -88,6 +88,7 @@ Nämä yhdeksän nelikielistä esikatseluversiota ovat kahden alkuperäisen erä
 | VHH-lihapiirakka | Laskettu osuus alle 1 | Hyväksy Pickerd-mantelijauhe, punnitut määrät ja tuorejuuston GI-koodi. Pois rajattu CHO 1,47 g/annos. [Laskelma](../research/gk80-international-20261102/pickerd-almond-two.md) |
 | Keto-korvapuustit | Laskettu osuus alle 1 | Hyväksy Pickerd-mantelijauhe, punnittu kaneli ja tuorejuuston GI-koodi. Pois rajattu CHO 1,06 g/annos. [Laskelma](../research/gk80-international-20261102/pickerd-almond-two.md) |
 | VHH-Runebergintortut | Laskettu osuus alle 1 | Hyväksy Liovela-mantelijauho, punnitut määrät ja rahkan GI-koodi. Pois rajattu CHO 1,48 g/annos. [Laskelma](../research/gk80-international-20261102/runeberg-almond.md) |
+| Teehaudutetut munat | Laskettu osuus alle 1 | Hyväksy soija, punnittu tähtianis, valmistusjärjestys ja munan GI-koodi. Pois rajattu CHO enintään 0,74 g/annos. [Laskelma](gk80-operation80-teehaudutetut-munat.md) |
 
 ### Aiempi rinnakkainen ehdotus: paistettu maksa ja pekoni
 
