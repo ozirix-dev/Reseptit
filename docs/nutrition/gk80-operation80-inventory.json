@@ -4,9 +4,9 @@
   "coverage": {
     "PROPOSED_RANGE": 36,
     "PUBLISHED_SINGLE": 197,
-    "PROPOSED_SINGLE": 41,
+    "PROPOSED_SINGLE": 42,
     "IN_PROGRESS": 36,
-    "NO_GK": 6,
+    "NO_GK": 5,
     "PUBLISHED_RANGE": 10
   },
   "reviewedPrHeads": {
@@ -111,7 +111,7 @@
     "japanilainen-curry-tofulla",
     "khao-soi-vhh-konjac"
   ],
-  "nextRecipeId": "munakoiso-kesakurpitsalasagne",
+  "nextRecipeId": "pekingin-ankka",
   "recipes": [
     {
       "recipeId": "aloo-paratha",
@@ -12195,10 +12195,10 @@
       "recipeSha256": "4ae15e1b24e86165ef95b0a05ec26806bac14a48618fc9eeaeeb1f089d47d9f8",
       "pilotInputSha256": "f33be5e26b7b02977fb566a76d3f2fdb79e7b814ecb90369eea47151b9aef1bb",
       "servings": 4,
-      "status": "NO_GK",
+      "status": "PROPOSED_SINGLE",
       "priorEvidence": [],
-      "level": null,
-      "ownerApproval": null,
+      "level": "B",
+      "ownerApproval": false,
       "sourceQualified": null,
       "blockers": [
         "munakoiso-kesakurpitsalasagne: munakoiso: Published recipe: available-carbohydrate composition is unresolved and GI evidence has not been reviewed; unknown values are not treated as zero.",
@@ -12481,7 +12481,61 @@
             "Published recipe: available-carbohydrate composition is unresolved and GI evidence has not been reviewed; unknown values are not treated as zero."
           ]
         }
-      ]
+      ],
+      "operation80Proposal": {
+        "evidencePath": "docs/nutrition/gk80-operation80-batch-59.md",
+        "baselineRecipeSha256": "4ae15e1b24e86165ef95b0a05ec26806bac14a48618fc9eeaeeb1f089d47d9f8",
+        "inputFields": [
+          "gramsBatch",
+          "choPer100g"
+        ],
+        "matrixInputs": [
+          [
+            200,
+            72
+          ],
+          [
+            800,
+            5.3
+          ],
+          [
+            400,
+            3.1
+          ],
+          [
+            400,
+            2.5
+          ],
+          [
+            100,
+            4.8
+          ],
+          [
+            12,
+            16.3
+          ],
+          [
+            250,
+            2
+          ],
+          [
+            10,
+            1.05
+          ],
+          [
+            10,
+            0.27
+          ]
+        ],
+        "choPerServing": "55.172",
+        "scenarios": [
+          {
+            "giGlucoseScale": "20",
+            "gkPerServing": "11.0344"
+          }
+        ],
+        "publicationAuthorized": false
+      }
     },
     {
       "recipeId": "munakokkeli",
