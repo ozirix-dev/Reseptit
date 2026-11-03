@@ -1,0 +1,248 @@
+{
+  "recipeId": "tom-kha-gai-vhh",
+  "servings": 4,
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "unroundedGk": "1.282675",
+  "upperScenario": {
+    "choOverrides": [
+      {
+        "inputIndex": 1,
+        "cho": 3.4
+      }
+    ],
+    "unroundedGk": "2.132675"
+  },
+  "inputs": [
+    [
+      600,
+      0,
+      0
+    ],
+    [
+      400,
+      1.7,
+      50
+    ],
+    [
+      200,
+      0.3,
+      50
+    ],
+    [
+      30,
+      4.8,
+      50
+    ],
+    [
+      30,
+      3,
+      50
+    ],
+    [
+      12,
+      4.8,
+      40
+    ],
+    [
+      12,
+      0.505,
+      50
+    ]
+  ],
+  "omissions": [
+    {
+      "ingredientIndex": 7,
+      "choPer100ml": 0.2
+    },
+    {
+      "ingredientIndex": 8,
+      "choPer100g": 8.02
+    },
+    {
+      "ingredientIndex": 9,
+      "choPer100g": 25.31
+    },
+    {
+      "ingredientIndex": 10,
+      "choPer100g": 100
+    }
+  ],
+  "ingredients": [
+    {
+      "name": {
+        "fi": "Broilerin reisiliha",
+        "en": "Chicken thigh",
+        "sv": "Kycklinglårfilé",
+        "th": "เนื้อสะโพกไก่"
+      },
+      "grams": 600
+    },
+    {
+      "name": {
+        "fi": "Täysrasvainen kookosmaito",
+        "en": "Full-fat coconut milk",
+        "sv": "Kokosmjölk med full fetthalt",
+        "th": "กะทิเต็มไขมัน"
+      },
+      "grams": 400
+    },
+    {
+      "name": {
+        "fi": "Herkkusieni",
+        "en": "Button mushrooms",
+        "sv": "Champinjoner",
+        "th": "เห็ดแชมปิญอง"
+      },
+      "grams": 200
+    },
+    {
+      "name": {
+        "fi": "Inkivääri",
+        "en": "Ginger",
+        "sv": "Ingefära",
+        "th": "ขิง"
+      },
+      "grams": 30
+    },
+    {
+      "name": {
+        "fi": "Squid Brand -kalakastike",
+        "en": "Squid Brand fish sauce",
+        "sv": "Squid Brand-fisksås",
+        "th": "น้ำปลาตราปลาหมึก"
+      },
+      "grams": 30
+    },
+    {
+      "name": {
+        "fi": "Punainen chili",
+        "en": "Red chilli",
+        "sv": "Röd chili",
+        "th": "พริกแดง"
+      },
+      "grams": 12
+    },
+    {
+      "name": {
+        "fi": "Korianteri",
+        "en": "Coriander",
+        "sv": "Koriander",
+        "th": "ผักชี"
+      },
+      "grams": 12
+    },
+    {
+      "name": {
+        "fi": "Aneto-vähäsuolainen kanaliemi",
+        "en": "Aneto low sodium chicken broth",
+        "sv": "Aneto kycklingbuljong med låg salthalt",
+        "th": "น้ำซุปไก่โซเดียมต่ำ Aneto"
+      },
+      "grams": null,
+      "quantity": {
+        "amount": 500,
+        "unit": "ml"
+      }
+    },
+    {
+      "name": {
+        "fi": "Limettimehu",
+        "en": "Lime juice",
+        "sv": "Limejuice",
+        "th": "น้ำมะนาว"
+      },
+      "grams": 45
+    },
+    {
+      "name": {
+        "fi": "Sitruunaruoho",
+        "en": "Lemongrass",
+        "sv": "Citrongräs",
+        "th": "ตะไคร้"
+      },
+      "grams": 5
+    },
+    {
+      "name": {
+        "fi": "Makrutlimetinlehdet",
+        "en": "Makrut lime leaves",
+        "sv": "Makrutlimeblad",
+        "th": "ใบมะกรูด"
+      },
+      "grams": 2
+    }
+  ],
+  "preparation": {
+    "fi": "Hauduta {{amount:7}} ml:ssa kanalientä {{amount:9}} g murskattua sitruunaruohoa, {{amount:10}} g makrutlimetinlehtiä ja {{amount:3}} g inkivääriä. Lisää {{amount:1}} g kookosmaitoa, {{amount:0}} g broileria, {{amount:2}} g sieniä ja {{amount:5}} g chiliä. Hauduta broileri läpikypsäksi. Poista varret ja lehdet. Mausta {{amount:4}} g:lla kalakastiketta, {{amount:8}} g:lla limettimehua ja {{amount:6}} g:lla korianteria. Jaa keitto liemineen {{servings}} annokseen.",
+    "en": "Simmer {{amount:9}} g bruised lemongrass, {{amount:10}} g makrut lime leaves and {{amount:3}} g ginger in {{amount:7}} ml chicken broth. Add {{amount:1}} g coconut milk, {{amount:0}} g chicken, {{amount:2}} g mushrooms and {{amount:5}} g chilli. Simmer until the chicken is cooked through. Remove the stalks and leaves. Season with {{amount:4}} g fish sauce, {{amount:8}} g lime juice and {{amount:6}} g coriander. Divide the soup and broth into {{servings}} servings.",
+    "sv": "Sjud {{amount:9}} g krossat citrongräs, {{amount:10}} g makrutlimeblad och {{amount:3}} g ingefära i {{amount:7}} ml buljong. Tillsätt {{amount:1}} g kokosmjölk, {{amount:0}} g kyckling, {{amount:2}} g svamp och {{amount:5}} g chili. Sjud tills kycklingen är genomkokt. Ta bort stjälkar och blad. Smaksätt med {{amount:4}} g fisksås, {{amount:8}} g limejuice och {{amount:6}} g koriander. Dela soppan med buljongen i {{servings}} portioner.",
+    "th": "ต้มตะไคร้บุบ {{amount:9}} กรัม ใบมะกรูด {{amount:10}} กรัม และขิง {{amount:3}} กรัมในน้ำซุปไก่ {{amount:7}} มล. ใส่กะทิ {{amount:1}} กรัม ไก่ {{amount:0}} กรัม เห็ด {{amount:2}} กรัม และพริก {{amount:5}} กรัม เคี่ยวจนไก่สุกทั่ว ตักตะไคร้และใบมะกรูดออก ปรุงด้วยน้ำปลา {{amount:4}} กรัม น้ำมะนาว {{amount:8}} กรัม และผักชี {{amount:6}} กรัม แบ่งซุปพร้อมน้ำเป็น {{servings}} ที่"
+  },
+  "limitation": {
+    "fi": "Vaihteluväli perustuu kahden kookosmaidon hiilihydraattipitoisuuksiin ja laskennallisiin GI-koodeihin. Pienosuuksista jää pois enintään 1,97 g hiilihydraattia annosta kohti.",
+    "en": "The range uses two coconut milk carbohydrate values and assigned GI codes. Up to 1.97 g carbohydrate per serving is excluded.",
+    "sv": "Intervallet bygger på två kolhydratvärden för kokosmjölk och tilldelade GI-koder. Högst 1,97 g kolhydrat per portion ingår inte i beräkningen.",
+    "th": "ช่วงนี้ใช้ค่าคาร์โบไฮเดรตของกะทิสองแบบและค่า GI ตามกลุ่ม ไม่รวมคาร์โบไฮเดรตไม่เกิน 1.97 กรัมต่อที่"
+  },
+  "sources": [
+    {
+      "title": "AFCD",
+      "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd",
+      "kind": "CARBOHYDRATE",
+      "note": "CC BY-SA 3.0 Australia. Coconut milk A: 1.7 g per 100 g."
+    },
+    {
+      "title": "Blue Dragon",
+      "url": "https://www.bluedragon.co.uk/products/coconut-milk",
+      "kind": "CARBOHYDRATE",
+      "note": "Coconut milk B: 3.4 g per 100 g."
+    },
+    {
+      "title": "Fineli",
+      "url": "https://fineli.fi/fineli/fi/ohje/19",
+      "kind": "CARBOHYDRATE",
+      "note": "THL CC BY 4.0."
+    },
+    {
+      "title": "Aneto",
+      "url": "https://www.caldoaneto.com/en/product/wellness-broths/natural-low-sodium-chicken-broth",
+      "kind": "CARBOHYDRATE",
+      "note": "0.2 g per 100 ml."
+    },
+    {
+      "title": "Squid Brand",
+      "url": "https://www.henderson-foodservice.com/productpdf/download/file/id/9840/name/squid_brand_fish_sauce_%2812x700ml%29.pdf",
+      "kind": "CARBOHYDRATE",
+      "note": "3 g per 100 g."
+    },
+    {
+      "title": "USDA lemongrass",
+      "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/SR/SR28/reports/sr28fg11.pdf",
+      "kind": "BOUND",
+      "note": "Whole lemongrass total carbohydrate bound. Lime leaves bounded by mass."
+    },
+    {
+      "title": "USDA lime juice",
+      "url": "https://fdc.nal.usda.gov/food-details/168156/nutrients",
+      "kind": "CARBOHYDRATE",
+      "note": "Total carbohydrate minus fibre."
+    },
+    {
+      "title": "GI coding",
+      "url": "https://doi.org/10.2337/dc08-1239",
+      "kind": "PUBLISHED_CODING",
+      "note": "Vegetable and herb codes."
+    },
+    {
+      "title": "Low carbohydrate coding",
+      "url": "https://doi.org/10.1016/j.jfca.2007.02.004",
+      "kind": "PUBLISHED_CODING",
+      "note": "Low-carbohydrate food codes."
+    }
+  ],
+  "boundFiles": {
+    "reseptit/paaruoat/tom-kha-gai-vhh.md": "dd8b9c75be69130d255850296fbb22c4654c3364487cdd7a872a7099632950f1",
+    "docs/nutrition/gk80-operation80-batch-33.md": "2c8d4bcf574faa26e9e162325011627ef8e4ff45f029633b0a7442a68f396594"
+  }
+}
