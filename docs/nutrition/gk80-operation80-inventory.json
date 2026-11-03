@@ -4,9 +4,9 @@
   "coverage": {
     "PROPOSED_RANGE": 15,
     "PUBLISHED_SINGLE": 197,
-    "PROPOSED_SINGLE": 13,
-    "IN_PROGRESS": 23,
-    "NO_GK": 68,
+    "PROPOSED_SINGLE": 14,
+    "IN_PROGRESS": 24,
+    "NO_GK": 66,
     "PUBLISHED_RANGE": 10
   },
   "reviewedPrHeads": {
@@ -25,7 +25,6 @@
     "160": "64f2c14ee3b158fbeff6719278ffaa5f436aec4f"
   },
   "queue": [
-    "indonesialainen-nasi-goreng-aamiaisriisi",
     "indonesialainen-pisang-goreng-aamiaiseksi",
     "intialainen-idli-kookoschutneylla",
     "japanilainen-curry-tofulla",
@@ -38,7 +37,6 @@
     "malesialainen-apam-balik",
     "malesialainen-kuih-seri-muka",
     "massaman-curry-kanalla-vhh",
-    "meksikolainen-paputostada-aamupalaksi",
     "miso-lohi-paksoi",
     "pohjoisafrikkalainen-baghrir",
     "pohjoisafrikkalainen-msemen-hunajalla",
@@ -115,9 +113,10 @@
     "kiinalainen-jianbing-munaletty",
     "chole-bhature",
     "karibia-ackee-ja-suolakala",
-    "indonesialainen-bubur-sumsum"
+    "indonesialainen-bubur-sumsum",
+    "indonesialainen-nasi-goreng-aamiaisriisi"
   ],
-  "nextRecipeId": "indonesialainen-nasi-goreng-aamiaisriisi",
+  "nextRecipeId": "indonesialainen-pisang-goreng-aamiaiseksi",
   "recipes": [
     {
       "recipeId": "aloo-paratha",
@@ -2750,7 +2749,7 @@
       "recipeSha256": "f55e64e3d2dd6080a7cbcde3b067cac696aaf8a5595b67a5615433d7a43689d7",
       "pilotInputSha256": "4b861b09e35c994698b4c7f903e25bd60f45813d5f82658dcb1cdbe072e6eeab",
       "servings": 2,
-      "status": "NO_GK",
+      "status": "IN_PROGRESS",
       "priorEvidence": [],
       "level": null,
       "ownerApproval": null,
@@ -2826,7 +2825,8 @@
             "Source-documented zero available carbohydrate: Salt has no available carbohydrate."
           ]
         }
-      ]
+      ],
+      "operation80Finding": "Chang’s named sauce label located; confirm package, 150 g sauce mass, garlic and fried-rice comparator recipe."
     },
     {
       "recipeId": "indonesialainen-nasi-uduk-aamiaisella",
@@ -10177,10 +10177,10 @@
       "recipeSha256": "57e8193e7457a63d270b53386c030f2b905225b851e93c7c86941aa9e27aba5b",
       "pilotInputSha256": "7d4ff400c6afdf77585accb1b32ff59431f04baf9eee0408757e5b62ac8034c3",
       "servings": 2,
-      "status": "NO_GK",
+      "status": "PROPOSED_SINGLE",
       "priorEvidence": [],
-      "level": null,
-      "ownerApproval": null,
+      "level": "B",
+      "ownerApproval": false,
       "sourceQualified": null,
       "blockers": [
         "meksikolainen-paputostada-aamupalaksi: maissitortilla: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
@@ -10260,7 +10260,44 @@
             "Individual sub-1 g contribution counted toward cumulative 2 g/serving editorial tolerance: Conservative culinary-use bound 0.2 g per recipe, divided by servings, below 1 g available carbohydrate per serving."
           ]
         }
-      ]
+      ],
+      "operation80Proposal": {
+        "evidencePath": "docs/nutrition/gk80-operation80-batch-07.md",
+        "baselineRecipeSha256": "57e8193e7457a63d270b53386c030f2b905225b851e93c7c86941aa9e27aba5b",
+        "inputFields": [
+          "gramsBatch",
+          "choPer100g",
+          "giGlucoseScale"
+        ],
+        "scenarios": [
+          {
+            "inputs": [
+              [
+                100,
+                51.845,
+                72
+              ],
+              [
+                150,
+                9.65,
+                34
+              ],
+              [
+                110,
+                0.3,
+                50
+              ],
+              [
+                120,
+                0.77,
+                50
+              ]
+            ],
+            "gkPerServing": "21.43845"
+          }
+        ],
+        "publicationAuthorized": false
+      }
     },
     {
       "recipeId": "meksikolainen-quesadilla-sienilla",
