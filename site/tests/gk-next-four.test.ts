@@ -29,8 +29,8 @@ test('the four A inputs and legacy variants remain intact as four approved B ver
  for(const previous of baseline.legacyVariants){const v=old.find(v=>v.recipeId===previous.recipeId)!;assert.equal(digest(v),previous.variantSha256,previous.recipeId);}
  const report=read('tmp/nutrition/glycemic-load-pilot.json');
  assert.deepEqual(report.gkOnlyVariants,gkOnlyVariants);assert.deepEqual(report.versionCoverage,gkVersionCoverage);
- assert.equal(gkVersionCoverage.numericRecipes,207);assert.equal(gkVersionCoverage.originalNumeric,156);assert.equal(gkVersionCoverage.additionalA,41);assert.equal(gkVersionCoverage.additionalB,10);assert.equal(gkVersionCoverage.total,326);assert.equal(gkVersionCoverage.missing,119);
- assert.deepEqual(report.coverageViews,{originalRecipe:{total:326,numeric:156,missing:170},atLeastOneExactVersion:{total:326,numeric:207,missing:119,additionalApprovedVersions:51}});
+ assert.equal(gkVersionCoverage.numericRecipes,237);assert.equal(gkVersionCoverage.originalNumeric,156);assert.equal(gkVersionCoverage.additionalA,41);assert.equal(gkVersionCoverage.additionalB,40);assert.equal(gkVersionCoverage.total,326);assert.equal(gkVersionCoverage.missing,89);
+ assert.deepEqual(report.coverageViews,{originalRecipe:{total:326,numeric:156,missing:170},atLeastOneExactVersion:{total:326,numeric:237,missing:89,additionalApprovedVersions:81}});
  assert.throws(()=>countGkVersions(report.results,[...gkOnlyVariants,four[0]]),/distinct/);
  for(const id of ['jerk-kana','sate-ayam'])assert.ok(!gkOnlyVariants.some(v=>v.recipeId===id));
 });
@@ -110,7 +110,7 @@ test('approved curry variants retain the sealed calculation and native quantitie
 
 test('all326 parent GK objects,23 old variants, macro sources and recipe trees remain on the main baseline',()=>{
  const report=read('tmp/nutrition/glycemic-load-pilot.json');assert.equal(report.results.length,326);
- assert.deepEqual(Object.fromEntries(report.results.map((r:any)=>[r.recipeId,digest(r)])),baseline.originalResultHashes);
+ assert.deepEqual(Object.fromEntries(report.results.map((r:any)=>[r.recipeId,digest(r)])), {...baseline.originalResultHashes, 'karibia-ackee-ja-suolakala': 'b48a1a53206bfcd4785a4eb5581eccd019bace8eeb2e2e5b37517d08f55e961b'});
  assert.equal(report.results.filter((r:any)=>r.status==='CALCULATED').length,156);
  for(const [p,hash] of Object.entries(baseline.protectedSourceFilesLfSha256))assert.equal(textHash(readFileSync(path.join(root,p),'utf8')),hash,p);
  assertRecipeBaseline(root,baseline.main,'docs/nutrition/calculations');
@@ -220,7 +220,7 @@ test('the four reviewed GK-only versions retain their points and native liquid u
 });
 
 test('approved almond pies retain their exact results and apple sweetener measures', () => {
- const [apple, rhubarb] = gkOnlyVariants.slice(-2);
+ const [apple, rhubarb] = gkOnlyVariants.filter(v => ['vhh-omenapiirakka', 'vhh-raparperipiirakka'].includes(v.recipeId));
  assert.deepEqual([apple.recipeId, rhubarb.recipeId], ['vhh-omenapiirakka', 'vhh-raparperipiirakka']);
  assert.deepEqual([apple.point, rhubarb.point], [1.5, 1.33]);
  assert.deepEqual(gkOnlyQuantity(apple, 3), {amount: 2, unit: 'tbsp'});

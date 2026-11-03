@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { textHash } from "../scripts/gk149-model";
 import { execFileSync } from "node:child_process";
 import { readFileSync } from "node:fs";
 import path from "node:path";
@@ -22,6 +23,12 @@ export function assertRecipeBaseline(root: string, baseline: string, ...protecte
     const [status, file] = change.split("\t");
     if (status === "M" && file.startsWith("reseptit/")) {
       const current = readFileSync(path.join(root, file), "utf8").replaceAll("\r\n", "\n");
+      if (file === "reseptit/aamupalat/karibia-ackee-ja-suolakala.md") {
+        const original = execFileSync("git", ["show", baseline + ":" + file], { cwd: root, encoding: "utf8" });
+        assert.equal(textHash(original), "57565170269e72af8dba35c959f83d8d64a9f16886a0a0a3b0f395ed66459183", change);
+        assert.equal(textHash(current), "ccf0f6b8d757100a7c2974b0154e2d292ab965a11a4050e3ea890d209a289e2d", change);
+        continue;
+      }
       const snapshot = recipeTextForApprovedSnapshot(file, current);
       if (snapshot !== current) {
         const original = execFileSync("git", ["show", baseline + ":" + file], { cwd: root, encoding: "utf8" });

@@ -163,15 +163,23 @@ const legacyResults = rawResults.map((result) => {
   return usesImputation ? {...result, assessmentType: "PUBLISHED_IMPUTATION" as const, modelScenario: "POINT_SCENARIO" as const} : result;
 });
 const results = await applyScopedPolyolC(root, await applyRecovery(root, await withdrawQ09Tea(root, await applyGk80Release(root, legacyResults))));
-const gkOnlyVariants = [...buildGkOnlyVariants(root),...buildApprovedSevenVariants(root),...buildApprovedFourVariants(root),...buildApprovedBVariants(root),...buildProductAVariants(root),...buildPanangKimchiVariants(root),buildBlueberryPieVariant(root),...buildThreeCurryVariants(root),buildLindstromBrineVariant(root),...buildReviewedGkVariants(root),...buildPohaHoneyMustardVariants(root),...buildTehoajoVariants(root),...buildTwoAlmondPieVariants(root)];
-const versionCoverage = countGkVersions(results,gkOnlyVariants);
-if (process.argv.includes('--operation80-release-check')) {
+const existingGkOnlyVariants = [...buildGkOnlyVariants(root),...buildApprovedSevenVariants(root),...buildApprovedFourVariants(root),...buildApprovedBVariants(root),...buildProductAVariants(root),...buildPanangKimchiVariants(root),buildBlueberryPieVariant(root),...buildThreeCurryVariants(root),buildLindstromBrineVariant(root),...buildReviewedGkVariants(root),...buildPohaHoneyMustardVariants(root),...buildTehoajoVariants(root),...buildTwoAlmondPieVariants(root)];
+const baselineCoverage = countGkVersions(results, existingGkOnlyVariants);
+const operation80Variants = await (async () => {
   const { buildFarinataReviewVariant, buildLabnehReviewVariant, buildAckeeReviewVariant, buildPointReviewVariant } = await import('./gk-farinata-review');
   type ReleaseEntry = {
     recipeId: string; recipePath: string; recipeSha256: string; servings: number;
     evidencePath: string; evidenceSha256: string; scenarios: string[];
   };
   const { textHash } = await import('./gk149-model');
+  const approval = await readFile(path.join(root, 'docs/nutrition/gk80-operation80-first-release-approval.json'), 'utf8');
+  if (textHash(approval) !== 'f07b97cc44daaf863817b57d8a1685634019de2df24af6d1c5ab034251c9b45d') throw new Error('Operation80 release approval changed');
+  const { boundFiles }: { boundFiles: Record<string, string> } = JSON.parse(approval);
+  await Promise.all(Object.entries(boundFiles).map(async ([file, expected]) => {
+    if (textHash(await readFile(path.join(root, file), 'utf8')) !== expected) {
+      throw new Error('Operation80 approved input changed: ' + file);
+    }
+  }));
   const manifest: { entries: ReleaseEntry[] } = JSON.parse(await readFile(
     path.join(root, 'docs/nutrition/gk80-operation80-first-release-manifest.json'), 'utf8'));
   const firstBatch = manifest.entries.map(entry => entry.recipeId);
@@ -191,7 +199,7 @@ if (process.argv.includes('--operation80-release-check')) {
     }
   }));
   const firstBatchIds = new Set(firstBatch);
-  const published = new Set(versionCoverage.numericRecipeIds);
+  const published = new Set(baselineCoverage.numericRecipeIds);
   const available = new Set(results.map(result => result.recipeId));
   if (firstBatchIds.size !== 30 || firstBatch.length !== 30
       || firstBatch.some(id => published.has(id) || !available.has(id))) {
@@ -201,17 +209,20 @@ if (process.argv.includes('--operation80-release-check')) {
     ...['plantain', 'okayu', 'mandu', 'serabi', 'tostada', 'soba', 'banh-xeo', 'nasi-lemak', 'idli', 'tempeh', 'johnny-cake', 'apam-balik', 'saltfish', 'baghrir', 'msemen', 'thai-roti', 'corn-fritters', 'kimchi-jeon', 'wonton', 'coconut-lime', 'chow-mein', 'bun-cha', 'bouillabaisse', 'rendang', 'dan-dan', 'tom-yum', 'sichuan-hot-pot'].map(name => buildPointReviewVariant(
       root, 'docs/nutrition/gk80-operation80-' + name + '-release-candidate.json')),
   ];
-  if (prepared.some(variant => !firstBatchIds.has(variant.recipeId))) {
+  if (prepared.length !== firstBatchIds.size || prepared.some(variant => !firstBatchIds.has(variant.recipeId))) {
     throw new Error('Operation80 preview contains a recipe outside the first batch');
   }
-  const preview = countGkVersions(results, [...gkOnlyVariants, ...prepared]);
-  const added = preview.numericRecipeIds.filter(id => !published.has(id));
-  if (added.length !== prepared.length) throw new Error('Operation80 preview coverage mismatch');
+  return prepared;
+})();
+const gkOnlyVariants = [...existingGkOnlyVariants, ...operation80Variants];
+const versionCoverage = countGkVersions(results, gkOnlyVariants);
+if (versionCoverage.numericRecipes !== baselineCoverage.numericRecipes + operation80Variants.length) {
+  throw new Error('Operation80 release coverage mismatch');
+}
+if (process.argv.includes('--operation80-release-check')) {
   console.log(JSON.stringify({
-    published: { numeric: versionCoverage.numericRecipes, total: versionCoverage.total },
-    verifiedFirstBatchBindings: manifest.entries.length,
-    firstBatchPotential: versionCoverage.numericRecipes + firstBatch.length,
-    preview: { numeric: preview.numericRecipes, added },
+    baseline: { numeric: baselineCoverage.numericRecipes, total: baselineCoverage.total },
+    release: { numeric: versionCoverage.numericRecipes, added: operation80Variants.map(variant => variant.recipeId).sort() },
   }, null, 2));
   process.exit(0);
 }

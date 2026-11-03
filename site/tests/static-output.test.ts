@@ -186,13 +186,13 @@ test("GK values link to centralized recipe details on every published translatio
       }
     }
   }
-  const pasteBlocker = glycemicLoadPilotResults.find((result) => result.recipeId === "kookos-lime-kanacurry");
-  assert.ok(pasteBlocker?.incompleteReasons.length, "incomplete recipe includes a structured reason");
+  const missingResult = glycemicLoadPilotResults.find((result) => result.recipeId === "jerk-kana");
+  assert.ok(missingResult?.incompleteReasons.length, "incomplete recipe includes a structured reason");
   const methodPagePaths = { fi: "glykeeminen-kuorma", en: "en/glycemic-load", sv: "sv/glykemisk-belastning", th: "th/glycemic-load" };
   const labels = { fi: "Miksi kokonaisarviota ei ole?", en: "Why is there no total estimate?", sv: "Varför saknas ett totalvärde?", th: "เหตุใดจึงไม่มีค่าประมาณรวม" };
   for (const locale of ["fi", "en", "sv", "th"] as const) {
     const html = await readFile(path.join(dist, methodPagePaths[locale], "index.html"), "utf8");
-    const resultStart = html.indexOf('id="kookos-lime-kanacurry"');
+    const resultStart = html.indexOf('id="jerk-kana"');
     assert.ok(resultStart >= 0 && html.slice(resultStart, resultStart + 1_500).includes(labels[locale]), `${locale}: missing-result explanation is localized`);
   }
   const massaman = glycemicLoadPilotResults.find((result) => result.recipeId === "massaman-curry-kanalla-vhh");
@@ -482,7 +482,7 @@ test('modeled captions disclose omissions in every locale and retain omission-fr
   }
 });
 
-test('approved GK-only versions are explicit on every existing locale page and coverage counts207 distinct recipes',async()=>{
+test('approved GK-only versions are explicit on every existing locale page and coverage counts 237 distinct recipes',async()=>{
  let pages=0;
  for(const variant of gkOnlyVariants){
   for(const recipe of siteContent.recipes.filter(r=>r.recipeId===variant.recipeId)){
@@ -495,9 +495,9 @@ test('approved GK-only versions are explicit on every existing locale page and c
    if (!addedEnglishPage) pages++;
   }
  }
- assert.equal(pages,101+siteContent.recipes.filter(r=>r.recipeId==='lindstrominpihvit-kaalilla').length);
+ assert.equal(pages,101+siteContent.recipes.filter(r=>gkOnlyVariants.slice(51).some(v=>v.recipeId===r.recipeId)).length+siteContent.recipes.filter(r=>r.recipeId==='lindstrominpihvit-kaalilla').length);
  for(const p of ['glykeeminen-kuorma','en/glycemic-load','sv/glykemisk-belastning','th/glycemic-load']){
-  const html=await readFile(path.join(dist,p,'index.html'),'utf8');assert.ok(html.includes('<strong>207</strong>'));assert.ok(html.includes('<strong>119</strong>'));assert.ok(html.includes('data-gk-coverage="version-aware"'));assert.ok(html.includes('data-gk-coverage="original"'));assert.ok(html.includes('<strong>156</strong>'));assert.ok(html.includes('<strong>170</strong>'));
+  const html=await readFile(path.join(dist,p,'index.html'),'utf8');assert.ok(html.includes('<strong>237</strong>'));assert.ok(html.includes('<strong>89</strong>'));assert.ok(html.includes('data-gk-coverage="version-aware"'));assert.ok(html.includes('data-gk-coverage="original"'));assert.ok(html.includes('<strong>156</strong>'));assert.ok(html.includes('<strong>170</strong>'));
   for(const v of gkOnlyVariants)assert.ok(html.includes(`data-gk-version="${v.versionId}"`));
  }
 });
