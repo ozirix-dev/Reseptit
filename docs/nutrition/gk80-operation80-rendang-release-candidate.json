@@ -149,6 +149,14 @@
       "grams": null
     }
   ],
+  "exclusions": [
+    {
+      "ingredientIndex": 11,
+      "kind": "ZERO_CHO",
+      "rationale": "Pure salt. Contributes no available carbohydrate.",
+      "evidencePath": "docs/nutrition/gk80-operation80-batch-14.md"
+    }
+  ],
   "sources": [
     {
       "title": "Jenkins et al., jasmine rice",
