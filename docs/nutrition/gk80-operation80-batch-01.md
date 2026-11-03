@@ -49,4 +49,3 @@ Valmistajat ilmoittavat maustamattomien tuotteiden CHO:n. GI 30 on maitotuotteen
 | Yaki onigiri | Reseptissä on 150 g misoa ja 150 g noria kahdelle annokselle. Tarkista molemmat määrät ja riisipallon paistotapa ennen kokonaistulosta. |
 
 Seuraava käsittelemätön yhden esteen resepti on gulab jamun. Kahdelle uudelle laskelmalle tarvitaan version ja lähdesovelluksen katselmointi ennen hyväksyntää. Väli on esitetty #229:n nelikielisen mallin mukaan. Julkinen käyttöliittymä ei lue tätä pakettia.
-
