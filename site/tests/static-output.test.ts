@@ -483,18 +483,21 @@ test('modeled captions disclose omissions in every locale and retain omission-fr
 });
 
 test('approved GK-only versions are explicit on every existing locale page and coverage counts205 distinct recipes',async()=>{
- const localizedRecipeIds = ['indialainen-poha-maapahkinoilla', 'hunaja-sinappikana-kaalilla'];
- for (const id of localizedRecipeIds) {
-   assert.deepEqual(siteContent.recipes.filter(recipe => recipe.recipeId === id).map(recipe => recipe.locale).sort(), ['en', 'fi', 'sv', 'th'], id);
- }
- // The six new routes are asserted separately above the historical page total.
- let pages=-(localizedRecipeIds.length * 3);
+ let pages=0;
  for(const variant of gkOnlyVariants){
   for(const recipe of siteContent.recipes.filter(r=>r.recipeId===variant.recipeId)){
    const html=await readFile(path.join(dist,recipe.routePath.slice(1),'index.html'),'utf8'),t=gkOnlyUi[recipe.locale];
    assert.ok(html.includes(`data-gk-version="${variant.versionId}"`),recipe.routePath);
    assert.ok(html.includes(t.scope));assert.ok(html.includes(t.low));assert.ok(html.includes(gkScopeUi[recipe.locale].macroNotice));assert.ok(html.includes('data-nutrition-scope="ORIGINAL_RECIPE"'));assert.ok(html.includes('data-macro-separation="gk-only"'));assert.ok(html.includes(gkOnlyValue(variant,recipe.locale)));
    assert.ok(!html.includes('class="recipe-glycemic-load"'),'original unsupported version is not relabeled');
+   if (['indialainen-poha-maapahkinoilla', 'hunaja-sinappikana-kaalilla'].includes(recipe.recipeId)) {
+     if (recipe.locale === 'fi') {
+       assert.deepEqual(siteContent.recipes.filter(entry => entry.recipeId === recipe.recipeId).map(entry => entry.locale).sort(), ['en', 'fi', 'sv', 'th']);
+     } else {
+       // These new routes are verified above and counted separately from the historical total.
+       pages--;
+     }
+   }
    if(variant.scenarioRange)assert.ok(html.includes(t.range));if(variant.sensitivity)assert.ok(html.includes(t.sensitivityNote));
    const addedEnglishPage = recipe.locale === "en" && ["keto-mutakakku", "keto-suklaakeksit"].includes(recipe.recipeId);
    if (!addedEnglishPage) pages++;
