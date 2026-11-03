@@ -4,9 +4,9 @@
   "coverage": {
     "PROPOSED_RANGE": 28,
     "PUBLISHED_SINGLE": 197,
-    "PROPOSED_SINGLE": 20,
-    "IN_PROGRESS": 35,
-    "NO_GK": 36,
+    "PROPOSED_SINGLE": 21,
+    "IN_PROGRESS": 36,
+    "NO_GK": 34,
     "PUBLISHED_RANGE": 10
   },
   "reviewedPrHeads": {
@@ -111,7 +111,7 @@
     "japanilainen-curry-tofulla",
     "khao-soi-vhh-konjac"
   ],
-  "nextRecipeId": "japanilainen-miso-tofu-paksoi",
+  "nextRecipeId": "kookos-lime-kanacurry",
   "recipes": [
     {
       "recipeId": "aloo-paratha",
@@ -4231,7 +4231,7 @@
       "recipeSha256": "43e0b80f7058c844e6802ab5f4b061d7851f0626c97ee608d6eba5fbf2054279",
       "pilotInputSha256": "d14ce193d2d69286a6d5f013bc11d3d4ac9cc4af8a9528a95be4fe26e1d69866",
       "servings": 2,
-      "status": "NO_GK",
+      "status": "IN_PROGRESS",
       "priorEvidence": [],
       "level": null,
       "ownerApproval": null,
@@ -4313,7 +4313,8 @@
             "Source-documented zero available carbohydrate: Plain salt has zero available carbohydrate."
           ]
         }
-      ]
+      ],
+      "operation80EvidencePath": "docs/nutrition/gk80-operation80-batch-29.md"
     },
     {
       "recipeId": "japanilainen-natto-riisikulho",
@@ -7063,10 +7064,10 @@
       "recipeSha256": "4b40f0444ebb9f98772befef80a5e6751da56b4086cd22df854efcc20d7ed698",
       "pilotInputSha256": "71427ec1a63c4fe6c97ad409d2a264ec120645c06902d17bfbe8fbebc3e57978",
       "servings": 2,
-      "status": "NO_GK",
+      "status": "PROPOSED_SINGLE",
       "priorEvidence": [],
-      "level": null,
-      "ownerApproval": null,
+      "level": "B",
+      "ownerApproval": false,
       "sourceQualified": null,
       "blockers": [
         "kiinalainen-katkarapu-wontonkeitto: wonton-taikina: No source-matched composition and preparation was resolved for “wonton-taikina”; it is not treated as zero.",
@@ -7157,7 +7158,49 @@
             "Source-documented zero available carbohydrate: Plain salt has zero available carbohydrate."
           ]
         }
-      ]
+      ],
+      "operation80Proposal": {
+        "evidencePath": "docs/nutrition/gk80-operation80-batch-29.md",
+        "baselineRecipeSha256": "4b40f0444ebb9f98772befef80a5e6751da56b4086cd22df854efcc20d7ed698",
+        "inputFields": [
+          "gramsBatch",
+          "choPer100g",
+          "giGlucoseScale"
+        ],
+        "scenarios": [
+          {
+            "inputs": [
+              [
+                150,
+                50.8,
+                28
+              ],
+              [
+                150,
+                0,
+                0
+              ],
+              [
+                3,
+                4.8,
+                50
+              ],
+              [
+                100,
+                1.18,
+                40
+              ],
+              [
+                12,
+                4.6,
+                40
+              ]
+            ],
+            "gkPerServing": "11.0504"
+          }
+        ],
+        "publicationAuthorized": false
+      }
     },
     {
       "recipeId": "kiinalainen-kevatsipulipannukakku",
