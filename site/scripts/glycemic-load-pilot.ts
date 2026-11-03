@@ -255,10 +255,11 @@ if (process.argv.includes('--operation80-release-check')) {
     buildPointReviewVariant(root, 'docs/nutrition/gk80-operation80-hapanimela-porsas-release-candidate.json'),
     buildPointReviewVariant(root, 'docs/nutrition/gk80-operation80-meheva-suklaakakku-release-candidate.json'),
   ];
-  const preview = countGkVersions(results, [...existingGkOnlyVariants, ...prepared, ...secondBatch]);
+  const followup = [buildPointReviewVariant(root, 'docs/nutrition/gk80-operation80-mapo-tofu-release-candidate.json')];
+  const preview = countGkVersions(results, [...existingGkOnlyVariants, ...prepared, ...secondBatch, ...followup]);
   console.log(JSON.stringify({
     baseline: { numeric: baselineCoverage.numericRecipes, total: baselineCoverage.total },
-    preview: { numeric: preview.numericRecipes, firstBatch: prepared.map(variant => variant.recipeId).sort(), secondBatch: secondBatch.map(variant => variant.recipeId).sort() },
+    preview: { numeric: preview.numericRecipes, firstBatch: prepared.map(variant => variant.recipeId).sort(), secondBatch: secondBatch.map(variant => variant.recipeId).sort(), followup: followup.map(variant => variant.recipeId).sort() },
   }, null, 2));
   process.exit(0);
 }
