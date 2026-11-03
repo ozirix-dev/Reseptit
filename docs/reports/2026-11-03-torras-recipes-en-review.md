@@ -1,0 +1,17 @@
+# Kolmen Torras-reseptin EN-käännösten tarkistus 3.11.2026
+
+- `keto-mutakakku` → Keto chocolate mud cake
+- `keto-suklaakeksit` → Keto chocolate chunk cookies
+- `meheva-suklaakakku` → Moist chocolate cake
+
+**STRUCTURE PASS / AUTOMATED SEMANTIC REVIEW / HUMAN REVIEW PENDING.**
+
+Käännökset ovat luonnoksia. Tarkistin ainesosien järjestyksen, merkityksen, määrät ja yksiköt sekä annokset, valmistuksen, lämpötilat, ajat, otsikot, muistiinpanot ja kuvatekstit FI-lähteitä vasten. Lähteiden sanamuotoero säilyy: keto-ohjeiden ainesosaluettelossa suklaa on sokeritonta ja muistiinpanoissa puhutaan makeuttamattomasta suklaasta. Käännöksissä nämä ovat vastaavasti *sugar-free* ja *unsweetened*. Ihmisen kielentarkistus on tekemättä.
+
+Kakussa vertailu erottaa taikinan ja kuorrutteen, kekseissä suklaapalat ja erikseen lisättävän erytritolin. Keto-ohjeet viittaavat laskettuun osuuteen vain GK-only-osion näkyessä. Tuotelähteet, alkuperäinen lähdetarkistuspäivä ja maltitolituotteen tunnistehuomio ovat samat kuin FI-versiossa.
+
+- Repon käännösauditointi: 387 julkaistua paria, 0 poikkeamaa. Käännöstestit 27/27 ja vertailutestit 4/4.
+- Erillinen paikallinen esikatselu: 724 reittiä ja vertailu täsmälleen kuudella FI/EN-reseptisivulla. FI- ja EN-sivujen JSON-LD:n ravintotiedot täsmäsivät. Keto-ohjeilla näkyi nykyinen laskettu GK-osuus ja Mehevällä suklaakakulla nykyiset makrot.
+- Esikatselukopion käännösauditointi kaikille 390 parille: 0 poikkeamaa. Tätä tarkistusta varten EN-luonnokset ja vastaavat FI-kielimerkinnät aktivoitiin vain paikallisessa kopiossa.
+
+Julkaisun yhteydessä FI-lähteiden käännösmetatiedot on päivitettävä ja niiden vaikutus lähdetiedostojen hasheihin varmennettava. Tässä muutoksessa FI-lähteet ja laskenta-aineisto säilyvät sellaisinaan.
