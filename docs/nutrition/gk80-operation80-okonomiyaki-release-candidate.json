@@ -1,0 +1,205 @@
+{
+  "recipeId": "okonomiyaki-kaaliletut",
+  "servings": 4,
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "unroundedGk": "2.486375",
+  "inputs": [
+    [
+      400,
+      4.97,
+      40
+    ],
+    [
+      165,
+      0.3,
+      50
+    ],
+    [
+      40,
+      4.6,
+      40
+    ],
+    [
+      10,
+      6.2,
+      50
+    ],
+    [
+      100,
+      1.4,
+      50
+    ]
+  ],
+  "omissions": [
+    {
+      "ingredientIndex": 5,
+      "choPer100g": 6
+    },
+    {
+      "ingredientIndex": 6,
+      "choPer100ml": 6.666666666666667
+    },
+    {
+      "ingredientIndex": 7,
+      "choPer100g": 20
+    }
+  ],
+  "ingredients": [
+    {
+      "name": {
+        "fi": "Valkokaali",
+        "en": "White cabbage",
+        "sv": "Vitkål",
+        "th": "กะหล่ำปลี"
+      },
+      "grams": 400
+    },
+    {
+      "name": {
+        "fi": "Kuoreton kananmuna",
+        "en": "Shelled egg",
+        "sv": "Ägg utan skal",
+        "th": "ไข่ไม่รวมเปลือก"
+      },
+      "grams": 165
+    },
+    {
+      "name": {
+        "fi": "Kevätsipuli",
+        "en": "Spring onion",
+        "sv": "Salladslök",
+        "th": "ต้นหอม"
+      },
+      "grams": 40
+    },
+    {
+      "name": {
+        "fi": "Seesaminsiemen",
+        "en": "Sesame seeds",
+        "sv": "Sesamfrön",
+        "th": "งา"
+      },
+      "grams": 10
+    },
+    {
+      "name": {
+        "fi": "Hellmann’s Real Mayonnaise",
+        "en": "Hellmann’s Real Mayonnaise",
+        "sv": "Hellmann’s Real Mayonnaise",
+        "th": "มายองเนส Hellmann’s Real"
+      },
+      "grams": 100
+    },
+    {
+      "name": {
+        "fi": "Foodin-mantelijauho",
+        "en": "Foodin almond flour",
+        "sv": "Foodin-mandelmjöl",
+        "th": "แป้งอัลมอนด์ Foodin"
+      },
+      "grams": 60
+    },
+    {
+      "name": {
+        "fi": "San-J Tamari",
+        "en": "San-J Tamari",
+        "sv": "San-J Tamari",
+        "th": "ซอสทามาริ San-J"
+      },
+      "grams": null,
+      "quantity": {
+        "amount": 30,
+        "unit": "ml"
+      }
+    },
+    {
+      "name": {
+        "fi": "Huy Fong Sriracha",
+        "en": "Huy Fong Sriracha",
+        "sv": "Huy Fong Sriracha",
+        "th": "ซอสศรีราชา Huy Fong"
+      },
+      "grams": 10
+    },
+    {
+      "name": {
+        "fi": "Paistoöljy",
+        "en": "Cooking oil",
+        "sv": "Stekolja",
+        "th": "น้ำมันสำหรับทอด"
+      },
+      "grams": null,
+      "quantity": {
+        "amount": 2,
+        "unit": "tbsp"
+      }
+    }
+  ],
+  "preparation": {
+    "fi": "Sekoita {{amount:0}} g suikaloitua kaalia, {{amount:1}} g kananmunaa, {{amount:2}} g kevätsipulia, {{amount:5}} g mantelijauhoa ja {{amount:6}} ml tamaria. Paista {{servings}} lettua {{amount:8}} rkl:ssa öljyä keskilämmöllä 4–5 minuuttia puoleltaan. Jaa päälle {{amount:4}} g majoneesia, {{amount:7}} g srirachaa ja {{amount:3}} g seesamia.",
+    "en": "Mix {{amount:0}} g shredded cabbage, {{amount:1}} g egg, {{amount:2}} g spring onion, {{amount:5}} g almond flour and {{amount:6}} ml tamari. Fry {{servings}} pancakes in {{amount:8}} tbsp oil over medium heat for 4–5 minutes per side. Divide {{amount:4}} g mayonnaise, {{amount:7}} g sriracha and {{amount:3}} g sesame seeds over them.",
+    "sv": "Blanda {{amount:0}} g strimlad vitkål, {{amount:1}} g ägg, {{amount:2}} g salladslök, {{amount:5}} g mandelmjöl och {{amount:6}} ml tamari. Stek {{servings}} plättar i {{amount:8}} msk olja på medelvärme i 4–5 minuter per sida. Fördela {{amount:4}} g majonnäs, {{amount:7}} g sriracha och {{amount:3}} g sesamfrön över plättarna.",
+    "th": "ผสมกะหล่ำปลีซอย {{amount:0}} กรัม ไข่ {{amount:1}} กรัม ต้นหอม {{amount:2}} กรัม แป้งอัลมอนด์ {{amount:5}} กรัม และซอสทามาริ {{amount:6}} มล. ทอด {{servings}} แผ่นในน้ำมัน {{amount:8}} ช้อนโต๊ะด้วยไฟกลางด้านละ 4–5 นาที แบ่งมายองเนส {{amount:4}} กรัม ซอสศรีราชา {{amount:7}} กรัม และงา {{amount:3}} กรัมโรยหน้า"
+  },
+  "limitation": {
+    "fi": "Arvio käyttää ainesosien GI-koodeja. Mantelijauhon, tamarin ja srirachan hiilihydraatteja jää pois enintään 1,90 g annosta kohti.",
+    "en": "The estimate uses assigned ingredient GI codes. Up to 1.90 g carbohydrate per serving from almond flour, tamari and sriracha is excluded.",
+    "sv": "Uppskattningen använder tilldelade GI-koder. Högst 1,90 g kolhydrat per portion från mandelmjöl, tamari och sriracha ingår inte.",
+    "th": "ค่าประมาณใช้ค่า GI ตามกลุ่มส่วนผสม โดยไม่รวมคาร์โบไฮเดรตจากแป้งอัลมอนด์ ทามาริ และศรีราชาไม่เกิน 1.90 กรัมต่อที่"
+  },
+  "sources": [
+    {
+      "title": "Fineli",
+      "url": "https://fineli.fi/fineli/fi/ohje/19",
+      "kind": "CARBOHYDRATE",
+      "note": "THL CC BY 4.0."
+    },
+    {
+      "title": "AFCD",
+      "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd",
+      "kind": "CARBOHYDRATE",
+      "note": "CC BY-SA 3.0 Australia."
+    },
+    {
+      "title": "Hellmann’s",
+      "url": "https://www.unileverfoodsolutions.co.uk/product/hellmann-s-real-mayonnaise-10l-1-EN-592205.html",
+      "kind": "CARBOHYDRATE",
+      "note": "1.4 g per 100 g."
+    },
+    {
+      "title": "Foodin",
+      "url": "https://foodin.fi/tuote/mantelijauho-luomu-350g/",
+      "kind": "CARBOHYDRATE",
+      "note": "6 g per 100 g."
+    },
+    {
+      "title": "San-J",
+      "url": "https://san-j.com/tamari-soy-sauce/",
+      "kind": "BOUND",
+      "note": "Less than 1 g per 15 ml."
+    },
+    {
+      "title": "Huy Fong label",
+      "url": "https://www.huyfong.com/wp-content/uploads/2020/01/Recall-Letter-2019.pdf",
+      "kind": "BOUND",
+      "note": "Less than 1 g per 5 g."
+    },
+    {
+      "title": "GI coding",
+      "url": "https://doi.org/10.2337/dc08-1239",
+      "kind": "PUBLISHED_CODING",
+      "note": "Assigned vegetable and seasoning codes."
+    },
+    {
+      "title": "Low carbohydrate coding",
+      "url": "https://doi.org/10.1016/j.jfca.2007.02.004",
+      "kind": "PUBLISHED_CODING",
+      "note": "Assigned low-carbohydrate food codes."
+    }
+  ],
+  "boundFiles": {
+    "reseptit/paaruoat/okonomiyaki-kaaliletut.md": "3cb879bd7e385f45701c52fe67f67b1f207d95d311eba531c4d17857a0883f8b",
+    "docs/nutrition/gk80-operation80-batch-41.md": "d099cab83167ee5e90e9c62005cfc3a3d8c052ea6c56ba8a010688cff9944ee4"
+  }
+}
