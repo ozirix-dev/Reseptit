@@ -2,11 +2,11 @@
   "schemaVersion": 1,
   "main": "4d6f19a620bb95e771c12f499554bf2cf1f06e51",
   "coverage": {
-    "PROPOSED_RANGE": 35,
+    "PROPOSED_RANGE": 36,
     "PUBLISHED_SINGLE": 197,
     "PROPOSED_SINGLE": 24,
     "IN_PROGRESS": 36,
-    "NO_GK": 24,
+    "NO_GK": 23,
     "PUBLISHED_RANGE": 10
   },
   "reviewedPrHeads": {
@@ -111,7 +111,7 @@
     "japanilainen-curry-tofulla",
     "khao-soi-vhh-konjac"
   ],
-  "nextRecipeId": "meheva-suklaakakku",
+  "nextRecipeId": "okonomiyaki-kaaliletut",
   "recipes": [
     {
       "recipeId": "aloo-paratha",
@@ -11042,10 +11042,10 @@
       "recipeSha256": "f9753c28eee6064b1203bbb25365e80ce856c3a1c1ee7210162e1969a6cc4022",
       "pilotInputSha256": "0171305492135f1aae9f2ed348808eb3ccc2d39a2a0794c1ce094a0eb1e0d758",
       "servings": 10,
-      "status": "NO_GK",
+      "status": "PROPOSED_RANGE",
       "priorEvidence": [],
-      "level": null,
-      "ownerApproval": null,
+      "level": "B",
+      "ownerApproval": false,
       "sourceQualified": null,
       "blockers": [
         "meheva-suklaakakku: tummaa suklaata: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
@@ -11160,7 +11160,61 @@
             "GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
           ]
         }
-      ]
+      ],
+      "operation80Proposal": {
+        "evidencePath": "docs/nutrition/gk80-operation80-batch-40.md",
+        "baselineRecipeSha256": "f9753c28eee6064b1203bbb25365e80ce856c3a1c1ee7210162e1969a6cc4022",
+        "inputFields": [
+          "gramsBatch",
+          "choPer100g"
+        ],
+        "matrixInputs": [
+          [
+            300,
+            34
+          ],
+          [
+            200,
+            0.8
+          ],
+          [
+            220,
+            0.3
+          ],
+          [
+            180,
+            99.9
+          ],
+          [
+            120,
+            74
+          ],
+          [
+            30,
+            11
+          ],
+          [
+            4,
+            19.8
+          ],
+          [
+            100,
+            2.9
+          ]
+        ],
+        "choPerServing": "37.9872",
+        "scenarios": [
+          {
+            "giGlucoseScale": "38",
+            "gkPerServing": "14.435136"
+          },
+          {
+            "giGlucoseScale": "58",
+            "gkPerServing": "22.032576"
+          }
+        ],
+        "publicationAuthorized": false
+      }
     },
     {
       "recipeId": "meksikolainen-aamiais-tacot-mustapavuilla",
