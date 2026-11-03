@@ -198,7 +198,7 @@ if (process.argv.includes('--operation80-release-check')) {
     throw new Error('Operation80 first batch must contain 30 distinct unpublished recipe IDs');
   }
   const prepared = [buildFarinataReviewVariant(root), buildLabnehReviewVariant(root), buildAckeeReviewVariant(root),
-    ...['plantain', 'okayu', 'mandu', 'serabi'].map(name => buildPointReviewVariant(
+    ...['plantain', 'okayu', 'mandu', 'serabi', 'tostada'].map(name => buildPointReviewVariant(
       root, 'docs/nutrition/gk80-operation80-' + name + '-release-candidate.json')),
   ];
   if (prepared.some(variant => !firstBatchIds.has(variant.recipeId))) {
