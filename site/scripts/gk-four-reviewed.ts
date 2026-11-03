@@ -65,7 +65,7 @@ export function buildReviewedGkVariants(root: string): GkOnlyVariant[] {
         preparationKey: 'ground-cinnamon-fully-retained', food: 'Jauhettu kaneli',
         preparation: '2,55 g neljän annoksen granolaerässä', qualityTier: 'SUPPLEMENTARY',
         referenceScale: 'GLUCOSE_100', matchKind: 'ANALOG', confidence: 'LOW', evidenceKind: 'PUBLISHED_IMPUTATION',
-        source: {title: 'Kanelin rajattu GI-oletus', url: policy.sourceUrl, published: true,
+        source: {title: 'Kanelin rajattu GI-oletus', url: policy.sourceUrl, table: 'Published GI coding method', year: 2007, published: true,
           iso26642Confirmed: false, qualityEvidence: 'Projektin reseptikohtainen sovellus julkaistusta koodausmenetelmästä.'},
         note: 'Oletus koskee vain tämän granolan kanelimäärää. Kanelin GI:tä ei ole mitattu tässä lähteessä.',
       };
