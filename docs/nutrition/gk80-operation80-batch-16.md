@@ -1,0 +1,13 @@
+# GK80 · Seri mukan testiresepti ja Massaman-currytahna
+
+## Kuih seri muka
+
+Haronin ym. alkuperäinen koostumustutkimus yksilöi GI-tutkimukseen valmistetun seri mukan. Taulukon 1 erä sisälsi 250 g tahmariisiä, 350 ml kookosmaitoa, 70 g sokeria, 60 g vehnäjauhoa, 12 g maissitärkkelystä ja 106 g kananmunaa. Pandan käytettiin aromina (puoli ruokalusikallista). Taulukossa 2 riisikerrosta höyrytettiin 30 minuuttia ja molempia kerroksia vielä 60 minuuttia. Kuvan 1 testipala on 129 g, ja menetelmä kuvaa 50 g:n imeytyvän hiilihydraatin tavoitteen. [Alkuperäinen koostumustutkimus, taulukot 1–2 ja kuva 1](https://journalarticle.ukm.my/6610/1/3437-7614-1-SM.pdf)
+
+Osmanin ym. kooste raportoi Aminuddinin vuoden 2010 opinnäytteestä GI 51 ± 6 (12 tervettä osallistujaa). Alkuperäisen opinnäytteen GI-menetelmää ei saatu tarkistettua. Reseptin nykyisessä versiossa on 100 g tahmariisiä, 200 ml kookosmaitoa ja 150 g pandania. Siinä ei ole testireseptin sokeria, jauhoa tai tärkkelystä. Koostumustutkimuksen 129 g annosta ei voi käyttää tämän ohjeen annospainona. Pelkälle kypsälle thaimaalaiselle tahmariisille mitattu GI 92 tukee riisiosan jatkoselvitystä. Sitä ei siirretä koko kaksikerroksiseen annokseen. [Malesian GI-kooste](https://www.researchgate.net/publication/362708250_Glycaemic_index_and_glycaemic_load_of_foods_and_food_products_in_Malaysia_a_review) · [Tahmariisin alkuperäistutkimus](https://pubmed.ncbi.nlm.nih.gov/19169946/) · [Sydneyn GI-tietokanta](https://glycemicindex.com/gi-search/)
+
+Thai Bakelsin Apito Pandan Paste -tuoteselosteessa on 0,2 g kokonais-CHO:ta / 100 g. Se antaa punnittavan aromivaihtoehdon, jos annostus varmistetaan. Kyseessä on aromi- ja väriainevalmiste, joten 150 g reseptiriviä ei vaihdeta samaan painoon tahnaa. [Valmistajan tuoteseloste](https://www.bakels.co.th/wp-content/uploads/sites/37/2019/02/Apito-Pandan-Paste.pdf)
+
+## Massaman-kanacurry kukkakaaliriisillä
+
+Australian 1 kg Mae Ploy -tuoteseloste ilmoittaa 11,9 g CHO / 100 g. Britannian 400 g pakkauksen jakelijatieto ilmoittaa 24,3 g / 100 g. Reseptin 45 grammalla ero on 1,33875 vs. 2,73375 g CHO annosta kohti neljälle. Edes pienempi vaihtoehto ei yksin alita projektin alle 1 g CHO/annos -poikkeusrajaa. Ennen kokonaislaskentaa tarvitaan tuotesidottu GI-peruste tai erikseen hyväksyttävä muutos tahnan määrään sekä kypsän nauriin soveltuva laskentaperuste. [Australian 1 kg tuoteseloste](https://www.mocofoodservices.com.au/globalassets/related-items-import/26459-mmcpm1---mae-ploy-curry-paste-massaman-1kg.pdf) · [Britannian 400 g tuotetieto](https://talardthai.com/product/mae-ploy-massaman-curry-paste-400g/)

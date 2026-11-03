@@ -5,8 +5,8 @@
     "PROPOSED_RANGE": 19,
     "PUBLISHED_SINGLE": 197,
     "PROPOSED_SINGLE": 17,
-    "IN_PROGRESS": 31,
-    "NO_GK": 52,
+    "IN_PROGRESS": 33,
+    "NO_GK": 50,
     "PUBLISHED_RANGE": 10
   },
   "reviewedPrHeads": {
@@ -111,7 +111,7 @@
     "japanilainen-curry-tofulla",
     "khao-soi-vhh-konjac"
   ],
-  "nextRecipeId": "malesialainen-kuih-seri-muka",
+  "nextRecipeId": "pohjoisafrikkalainen-baghrir",
   "recipes": [
     {
       "recipeId": "aloo-paratha",
@@ -9272,7 +9272,7 @@
       "recipeSha256": "6ffe47ea6905e95d5cc73cce9dd35a4aca94eddb26d2444a584da0c21546dbd6",
       "pilotInputSha256": "58e8853404d4ac4b0b7624d52b389809e6ad56036f16bcd751a8946d3fc9ae5a",
       "servings": 2,
-      "status": "NO_GK",
+      "status": "IN_PROGRESS",
       "priorEvidence": [],
       "level": null,
       "ownerApproval": null,
@@ -9348,7 +9348,8 @@
             "Source-documented zero available carbohydrate: Plain salt has zero available carbohydrate."
           ]
         }
-      ]
+      ],
+      "operation80EvidencePath": "docs/nutrition/gk80-operation80-batch-16.md"
     },
     {
       "recipeId": "malesialainen-laksa-lemak-aamiaiseksi",
@@ -10075,7 +10076,7 @@
       "recipeSha256": "43f7ce521d58bba342757e830dbfa2c05e0e156b3031c843e7a0608d6a672734",
       "pilotInputSha256": "4ad45dd0fbd21989e0c93cfa8481d1180f1748274d950dbbcae804b6c476a667",
       "servings": 4,
-      "status": "NO_GK",
+      "status": "IN_PROGRESS",
       "priorEvidence": [],
       "level": null,
       "ownerApproval": null,
@@ -10139,7 +10140,8 @@
             "Individual sub-1 g contribution counted toward cumulative 2 g/serving editorial tolerance: Combined estimated available carbohydrate is under 1 g per serving; quantities are not fully weighed and the ingredient-specific contribution is omitted."
           ]
         }
-      ]
+      ],
+      "operation80EvidencePath": "docs/nutrition/gk80-operation80-batch-16.md"
     },
     {
       "recipeId": "medu-vada",
