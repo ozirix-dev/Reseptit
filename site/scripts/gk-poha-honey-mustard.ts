@@ -136,7 +136,7 @@ export function buildPohaHoneyMustardVariants(root: string): GkOnlyVariant[] {
 export function pohaHoneySourceSnapshot(file: string, text: string): string {
   if (file === "reseptit/aamupalat/indialainen-poha-maapahkinoilla.md" ||
       file === "reseptit/paaruoat/hunaja-sinappikana-kaalilla.md") {
-    text = text.replace(
+    text = text.replaceAll("\r\n", "\n").replace(
       "\nstatus: published\ntranslation_languages: [en, sv, th]\ntranslation_status: {en: published, sv: published, th: published}\n",
       "\nstatus: published\n",
     );
