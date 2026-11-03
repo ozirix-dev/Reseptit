@@ -4,9 +4,9 @@
   "coverage": {
     "PROPOSED_RANGE": 36,
     "PUBLISHED_SINGLE": 197,
-    "PROPOSED_SINGLE": 38,
+    "PROPOSED_SINGLE": 39,
     "IN_PROGRESS": 36,
-    "NO_GK": 9,
+    "NO_GK": 8,
     "PUBLISHED_RANGE": 10
   },
   "reviewedPrHeads": {
@@ -111,7 +111,7 @@
     "japanilainen-curry-tofulla",
     "khao-soi-vhh-konjac"
   ],
-  "nextRecipeId": "idli-sambar",
+  "nextRecipeId": "pani-puri",
   "recipes": [
     {
       "recipeId": "aloo-paratha",
@@ -2941,10 +2941,10 @@
       "recipeSha256": "9c0b75e24940dd7a399a88ec7e05bd279429f5cac9f4e3a54a8f4e960a7d14f1",
       "pilotInputSha256": "f485628440e78c2e9a4368c953047e2c900c57b1f45374f833f963abaa4847cf",
       "servings": 4,
-      "status": "NO_GK",
+      "status": "PROPOSED_SINGLE",
       "priorEvidence": [],
-      "level": null,
-      "ownerApproval": null,
+      "level": "B",
+      "ownerApproval": false,
       "sourceQualified": null,
       "blockers": [
         "idli-sambar: urad-dal-linssejä: Urad dal/black gram has no matching source record in Fineli Rel20 or AFCD Release 3.",
@@ -3089,7 +3089,61 @@
             "Unquantified water is carbohydrate-free, but dry/wet ingredient process state for the batter needs review; no mass entered."
           ]
         }
-      ]
+      ],
+      "operation80Proposal": {
+        "evidencePath": "docs/nutrition/gk80-operation80-batch-56.md",
+        "baselineRecipeSha256": "9c0b75e24940dd7a399a88ec7e05bd279429f5cac9f4e3a54a8f4e960a7d14f1",
+        "inputFields": [
+          "gramsBatch",
+          "choPer100g"
+        ],
+        "matrixInputs": [
+          [
+            250,
+            75.7
+          ],
+          [
+            100,
+            51
+          ],
+          [
+            200,
+            52.53
+          ],
+          [
+            100,
+            5.56
+          ],
+          [
+            100,
+            3.45
+          ],
+          [
+            100,
+            4.8
+          ],
+          [
+            15,
+            16
+          ],
+          [
+            6,
+            40
+          ],
+          [
+            2,
+            15.89
+          ]
+        ],
+        "choPerServing": "91.05945",
+        "scenarios": [
+          {
+            "giGlucoseScale": "68.69",
+            "gkPerServing": "62.548736205"
+          }
+        ],
+        "publicationAuthorized": false
+      }
     },
     {
       "recipeId": "indialainen-poha-maapahkinoilla",
