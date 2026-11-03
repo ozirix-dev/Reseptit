@@ -23,6 +23,13 @@ export function recipeTextForApprovedSnapshot(file: string, text: string): strin
       "\nstatus: published\n",
     );
   }
+  if (file === "reseptit/aamupalat/indialainen-poha-maapahkinoilla.md" ||
+      file === "reseptit/paaruoat/hunaja-sinappikana-kaalilla.md") {
+    text = text.replace(
+      "\nstatus: published\ntranslation_languages: [en, sv, th]\ntranslation_status: {en: published, sv: published, th: published}\n",
+      "\nstatus: published\n",
+    );
+  }
   const edit = approvedNoteEdits[file];
   if (!edit) return text;
   const [historical, current] = edit;
