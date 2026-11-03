@@ -4,9 +4,9 @@
   "coverage": {
     "PROPOSED_RANGE": 36,
     "PUBLISHED_SINGLE": 197,
-    "PROPOSED_SINGLE": 40,
+    "PROPOSED_SINGLE": 41,
     "IN_PROGRESS": 36,
-    "NO_GK": 7,
+    "NO_GK": 6,
     "PUBLISHED_RANGE": 10
   },
   "reviewedPrHeads": {
@@ -111,7 +111,7 @@
     "japanilainen-curry-tofulla",
     "khao-soi-vhh-konjac"
   ],
-  "nextRecipeId": "lanzhou-naudanliha-nuudelikeitto",
+  "nextRecipeId": "munakoiso-kesakurpitsalasagne",
   "recipes": [
     {
       "recipeId": "aloo-paratha",
@@ -9632,10 +9632,10 @@
       "recipeSha256": "07af0893f30f17b1316f5336826c6f5ade56c6d086a9a19612727a33d3ee71ea",
       "pilotInputSha256": "9b0ee8e54b0838b611706b563092881e35d31073d6301c24342dc3b2c8f88157",
       "servings": 4,
-      "status": "NO_GK",
+      "status": "PROPOSED_SINGLE",
       "priorEvidence": [],
-      "level": null,
-      "ownerApproval": null,
+      "level": "B",
+      "ownerApproval": false,
       "sourceQualified": null,
       "blockers": [
         "lanzhou-naudanliha-nuudelikeitto: naudan etuselkää: Exact meat cut is not mapped to a Fineli/AFCD food record in this batch; carbohydrate is not assumed to be zero.",
@@ -9816,7 +9816,54 @@
             "Individual sub-1 g contribution counted toward cumulative 2 g/serving editorial tolerance: Conservative culinary-use bound 0.2 g per recipe, divided by servings, below 1 g available carbohydrate per serving."
           ]
         }
-      ]
+      ],
+      "operation80Proposal": {
+        "evidencePath": "docs/nutrition/gk80-operation80-batch-58.md",
+        "baselineRecipeSha256": "07af0893f30f17b1316f5336826c6f5ade56c6d086a9a19612727a33d3ee71ea",
+        "inputFields": [
+          "gramsBatch",
+          "choPer100g",
+          "giGlucoseScale"
+        ],
+        "scenarios": [
+          {
+            "inputs": [
+              [
+                350,
+                71.2,
+                46
+              ],
+              [
+                100,
+                4.8,
+                40
+              ],
+              [
+                20,
+                4.8,
+                50
+              ],
+              [
+                600,
+                2.5,
+                40
+              ],
+              [
+                24,
+                4.74,
+                40
+              ],
+              [
+                15,
+                1.9,
+                50
+              ]
+            ],
+            "gkPerServing": "30.907385"
+          }
+        ],
+        "publicationAuthorized": false
+      }
     },
     {
       "recipeId": "larb-moo-vhh",
