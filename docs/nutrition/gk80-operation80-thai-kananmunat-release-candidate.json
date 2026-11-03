@@ -1,0 +1,164 @@
+{
+  "recipeId": "thai-kananmunat-kookoscurryssa",
+  "servings": 2,
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "unroundedGk": "34.0125",
+  "upperScenario": {
+    "choOverrides": [
+      {
+        "inputIndex": 1,
+        "cho": 3.4
+      }
+    ],
+    "unroundedGk": "34.8625"
+  },
+  "inputs": [
+    [
+      100,
+      79,
+      82
+    ],
+    [
+      200,
+      1.7,
+      50
+    ],
+    [
+      110,
+      0.3,
+      50
+    ],
+    [
+      100,
+      3.45,
+      40
+    ]
+  ],
+  "omissions": [
+    {
+      "ingredientIndex": 4,
+      "choPer100g": 10.65
+    }
+  ],
+  "ingredients": [
+    {
+      "name": {
+        "fi": "Kuiva jasmiiniriisi",
+        "en": "Dry jasmine rice",
+        "sv": "Torrt jasminris",
+        "th": "ข้าวหอมมะลิแห้ง"
+      },
+      "grams": 100
+    },
+    {
+      "name": {
+        "fi": "Täysrasvainen kookosmaito",
+        "en": "Full-fat coconut milk",
+        "sv": "Kokosmjölk med full fetthalt",
+        "th": "กะทิเต็มไขมัน"
+      },
+      "grams": 200
+    },
+    {
+      "name": {
+        "fi": "Kuoreton kananmuna",
+        "en": "Shelled egg",
+        "sv": "Ägg utan skal",
+        "th": "ไข่ไม่รวมเปลือก"
+      },
+      "grams": 110
+    },
+    {
+      "name": {
+        "fi": "Tomaatti",
+        "en": "Tomato",
+        "sv": "Tomat",
+        "th": "มะเขือเทศ"
+      },
+      "grams": 100
+    },
+    {
+      "name": {
+        "fi": "Mae Ploy -currytahna",
+        "en": "Mae Ploy curry paste",
+        "sv": "Mae Ploy currypasta",
+        "th": "พริกแกง Mae Ploy"
+      },
+      "grams": 18
+    },
+    {
+      "name": {
+        "fi": "Paistoöljy",
+        "en": "Cooking oil",
+        "sv": "Stekolja",
+        "th": "น้ำมันสำหรับผัด"
+      },
+      "grams": null,
+      "quantity": {
+        "amount": 1,
+        "unit": "tbsp"
+      }
+    }
+  ],
+  "preparation": {
+    "fi": "Keitä {{amount:0}} g kuivaa jasmiiniriisiä pakkauksen mukaan. Kuumenna {{amount:4}} g currytahnaa {{amount:5}} rkl:ssa öljyä, lisää {{amount:1}} g kookosmaitoa ja hauduta. Lisää {{amount:3}} g tomaattia ja kypsennä pehmeäksi. Keitä kananmunat, kuori ja punnitse {{amount:2}} g. Jaa curry, munat ja koko lämmin riisierä {{servings}} annokseen.",
+    "en": "Cook {{amount:0}} g dry jasmine rice as directed. Heat {{amount:4}} g curry paste in {{amount:5}} tbsp oil, add {{amount:1}} g coconut milk and simmer. Add {{amount:3}} g tomato and cook until soft. Boil and peel the eggs and weigh {{amount:2}} g. Divide the curry, eggs and all the warm rice into {{servings}} servings.",
+    "sv": "Koka {{amount:0}} g torrt jasminris enligt förpackningen. Värm {{amount:4}} g currypasta i {{amount:5}} msk olja, tillsätt {{amount:1}} g kokosmjölk och sjud. Tillsätt {{amount:3}} g tomat och koka mjuk. Koka och skala äggen och väg upp {{amount:2}} g. Dela curryn, äggen och allt varmt ris i {{servings}} portioner.",
+    "th": "หุงข้าวหอมมะลิแห้ง {{amount:0}} กรัมตามฉลาก ผัดพริกแกง {{amount:4}} กรัมในน้ำมัน {{amount:5}} ช้อนโต๊ะ เติมกะทิ {{amount:1}} กรัมแล้วเคี่ยว ใส่มะเขือเทศ {{amount:3}} กรัมแล้วต้มจนนุ่ม ต้มไข่ ปอกเปลือกและชั่ง {{amount:2}} กรัม แบ่งแกง ไข่ และข้าวอุ่นทั้งหมดเป็น {{servings}} ที่"
+  },
+  "limitation": {
+    "fi": "Vaihteluväli kuvaa kahden kookosmaidon hiilihydraattipitoisuuksia. Arvio sisältää lämpimän jasmiiniriisin. Currytahnasta jää pois noin 0,96 g hiilihydraattia annosta kohti.",
+    "en": "The range reflects two coconut milk carbohydrate values. The estimate includes warm jasmine rice. About 0.96 g carbohydrate per serving from curry paste is excluded.",
+    "sv": "Intervallet speglar två kolhydratvärden för kokosmjölk. Varmt jasminris ingår. Cirka 0,96 g kolhydrat per portion från currypastan ingår inte i beräkningen.",
+    "th": "ช่วงค่าสะท้อนคาร์โบไฮเดรตของกะทิสองแบบ ค่าประมาณรวมข้าวหอมมะลิอุ่น ไม่รวมคาร์โบไฮเดรตจากพริกแกงประมาณ 0.96 กรัมต่อที่"
+  },
+  "sources": [
+    {
+      "title": "Jenkins et al., cooked jasmine rice",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2996336/",
+      "kind": "HUMAN_GI",
+      "note": "Glucose-scale GI 82 after conversion."
+    },
+    {
+      "title": "Fineli 11521, 858 and 352",
+      "url": "https://fineli.fi/fineli/fi/ohje/19",
+      "kind": "CARBOHYDRATE",
+      "note": "THL CC BY 4.0."
+    },
+    {
+      "title": "AFCD F002991",
+      "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd",
+      "kind": "CARBOHYDRATE",
+      "note": "Scenario A, 1.7 g per 100 g."
+    },
+    {
+      "title": "Blue Dragon",
+      "url": "https://www.bluedragon.co.uk/products/coconut-milk",
+      "kind": "CARBOHYDRATE",
+      "note": "Scenario B, 3.4 g per 100 g."
+    },
+    {
+      "title": "Mae Ploy UPC 044738201698",
+      "url": "https://www.whatchefswant.com/wp-content/uploads/2021/01/Items-90011-and-90165.pdf",
+      "kind": "CARBOHYDRATE",
+      "note": "24.19 g total minus 13.54 g fibre per 100 g."
+    },
+    {
+      "title": "GI coding",
+      "url": "https://doi.org/10.2337/dc08-1239",
+      "kind": "PUBLISHED_CODING",
+      "note": "Tomato code 40."
+    },
+    {
+      "title": "Low carbohydrate coding",
+      "url": "https://doi.org/10.1016/j.jfca.2007.02.004",
+      "kind": "PUBLISHED_CODING",
+      "note": "Coconut milk and egg code 50."
+    }
+  ],
+  "boundFiles": {
+    "reseptit/aamupalat/thai-kananmunat-kookoscurryssa.md": "1d127dee1a5b1e82c2cbbb7d71e41aac62e4d86266074d27d867197aa9e0ae83",
+    "docs/nutrition/gk80-operation80-batch-34.md": "d67be9c7814a7c1a702f3389c651a9ec9fff5e8ade72c818e01525a6c1527d54"
+  }
+}
