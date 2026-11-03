@@ -11,6 +11,11 @@ const publishedTorrasTranslations = new Set([
   "kaannokset/en/jalkiruoat/meheva-suklaakakku.md",
 ]);
 
+const pohaHoneyTranslations = new Set(["en", "sv", "th"].flatMap(locale => [
+  `kaannokset/${locale}/aamupalat/indialainen-poha-maapahkinoilla.md`,
+  `kaannokset/${locale}/paaruoat/hunaja-sinappikana-kaalilla.md`,
+]));
+
 export function assertRecipeBaseline(root: string, baseline: string, ...protectedPaths: string[]) {
   const changes = execFileSync(
     "git",
@@ -38,6 +43,13 @@ export function assertRecipeBaseline(root: string, baseline: string, ...protecte
       });
       const current = readFileSync(path.join(root, file), "utf8").replaceAll("\r\n", "\n");
       assert.equal(current, reviewed.replace("\nstatus: draft\n", "\nstatus: published\n"), change);
+    } else if (pohaHoneyTranslations.has(file)) {
+      const translated = execFileSync("git", ["show", "4a7d039322a4fa437e7403e5b4a63f5af1d47c58:" + file], {
+        cwd: root,
+        encoding: "utf8",
+      });
+      const current = readFileSync(path.join(root, file), "utf8").replaceAll("\r\n", "\n");
+      assert.equal(current, translated, change);
     } else {
       assert.equal(draft?.data.status, "draft", change);
     }
