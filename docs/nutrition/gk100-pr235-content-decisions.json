@@ -1,0 +1,44 @@
+{
+  "batchId": "gk100-pr235-content-decisions",
+  "schemaVersion": 1,
+  "candidates": [
+    {
+      "recipeId": "valimerellinen-farinata-aamupalaksi",
+      "packetPath": "docs/nutrition/gk100-farinata-pan-release-candidate.json",
+      "classification": {
+        "reasons": [
+          "Batra ym. mittasivat fermentoimattoman kikherneletun. Vesi- ja öljysuhde sekä tutkimusprotokolla rajaavat analogiaa.",
+          "Raakatomaatti GI 23 koskee raakana tarjottavaa tomaattia. Rosmariinin 0,033 g CHO/annos jää pois. Fineli CC BY 4.0, AFCD CC BY-SA 3.0 Australia ja USDA CC0. GI-luvut viitataan yksittäisinä tutkimustuloksina."
+        ],
+        "risk": "MEDIUM",
+        "contentSummary": "Hyväksy erillinen pannulla paistettava versio. Taikina lepää 10 minuuttia ja tomaatti, rosmariini sekä oliivit lisätään tarjoiltaessa. Uuniohje jää omaksi reseptiversiokseen.",
+        "review": {
+          "depth": "FOCUSED",
+          "evidence": "GK100-katselmointi, Pannufarinata · varmennettu raakatomaattiverrokki. Ehdokaspaketin lähtöarvot ja nelikielinen rajaus tarkistettu alkuperäistä uuniohjetta vasten."
+        },
+        "candidateSha256": "94b9a3087127a3b01028e9b58b3098401cb3da6c601f4883e99ad2f2e1a312dc",
+        "contentChange": "GK_ONLY",
+        "outcome": "OWNER_DECISION"
+      }
+    },
+    {
+      "recipeId": "meksikolainen-paputostada-aamupalaksi",
+      "packetPath": "docs/nutrition/gk100-sanissimo-tostada-release-candidate.json",
+      "classification": {
+        "reasons": [
+          "GI 53 on keltaisen nixtamalisoidun maissitostadan ihmismittaus. Saníssimo on valkoista maissia, ja koostumus sidotaan dossierin tuotteeseen.",
+          "Mustapavun glukoosiasteikolle muunnetun GI 31:n säilykevalmistusta ei ole varmennettu. Muna ja avokado käyttävät laskentakoodeja. Fineli CC BY 4.0. GI-luvut ja tuote-etiketin ravintoarvo viitataan yksittäisinä tietoina."
+        ],
+        "risk": "MEDIUM",
+        "contentSummary": "Hyväksy erillinen versio, jossa 100 g maissitortillaa korvataan kuudella valmiilla 12 g Saníssimo-tostadalla kahdelle. Annokseen tulee kolme tostadaa.",
+        "review": {
+          "depth": "FOCUSED",
+          "evidence": "GK100-katselmointi, Nimetty tostadas-skenaario ja Mustapavun verrokki. Ehdokaspaketin lähtöarvot ja nelikielinen rajaus tarkistettu alkuperäistä tortillaohjetta vasten."
+        },
+        "candidateSha256": "110f8a43d51bbcd99b0620ce34a28b3c230ffc788b70e89b97ec0852c53d62a9",
+        "contentChange": "GK_ONLY",
+        "outcome": "OWNER_DECISION"
+      }
+    }
+  ]
+}
