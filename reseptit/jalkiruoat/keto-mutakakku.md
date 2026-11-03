@@ -5,6 +5,8 @@ url_slug: keto-mutakakku
 category: jalkiruoka
 language: fi
 status: published
+translation_languages: [en]
+translation_status: {en: published}
 diet_class: keto
 main_ingredient:
   - kananmuna

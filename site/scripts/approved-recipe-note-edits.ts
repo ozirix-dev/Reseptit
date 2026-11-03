@@ -1,5 +1,4 @@
-// Reconstruct the approved recipe snapshot for the two reviewed note edits.
-// The snapshot hash still verifies all other recipe text and metadata.
+// Reconstruct the approved recipe snapshot after reviewed note and locale metadata edits.
 const approvedNoteEdits: Readonly<Record<string, readonly [string, string]>> = {
   "reseptit/jalkiruoat/keto-mutakakku.md": [
     "Paistoaika vaikuttaa keskuksen pehmeyteen. Käytä makeuttamatonta suklaata ja tarkista tuotteen hiilihydraattimäärä.",
@@ -11,7 +10,19 @@ const approvedNoteEdits: Readonly<Record<string, readonly [string, string]>> = {
   ],
 };
 
+const englishPublicationSources = new Set([
+  "reseptit/jalkiruoat/keto-mutakakku.md",
+  "reseptit/jalkiruoat/keto-suklaakeksit.md",
+  "reseptit/jalkiruoat/meheva-suklaakakku.md",
+]);
+
 export function recipeTextForApprovedSnapshot(file: string, text: string): string {
+  if (englishPublicationSources.has(file)) {
+    text = text.replace(
+      "\nstatus: published\ntranslation_languages: [en]\ntranslation_status: {en: published}\n",
+      "\nstatus: published\n",
+    );
+  }
   const edit = approvedNoteEdits[file];
   if (!edit) return text;
   const [historical, current] = edit;

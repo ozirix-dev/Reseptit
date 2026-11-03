@@ -4,7 +4,7 @@ recipe_id: meheva-suklaakakku
 url_slug: meheva-suklaakakku
 category: jalkiruoka
 language: en
-status: draft
+status: published
 servings: 10
 time_total_min: 65
 difficulty: easy
