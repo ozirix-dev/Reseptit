@@ -4,9 +4,9 @@
   "coverage": {
     "PROPOSED_RANGE": 36,
     "PUBLISHED_SINGLE": 197,
-    "PROPOSED_SINGLE": 30,
+    "PROPOSED_SINGLE": 31,
     "IN_PROGRESS": 36,
-    "NO_GK": 17,
+    "NO_GK": 16,
     "PUBLISHED_RANGE": 10
   },
   "reviewedPrHeads": {
@@ -111,7 +111,7 @@
     "japanilainen-curry-tofulla",
     "khao-soi-vhh-konjac"
   ],
-  "nextRecipeId": "vietnamilainen-xoi-maapahkinalla",
+  "nextRecipeId": "indonesialainen-lontong-sayur-aamiaiseksi",
   "recipes": [
     {
       "recipeId": "aloo-paratha",
@@ -18384,10 +18384,10 @@
       "recipeSha256": "f5de045c45f50b5085810a20d18a239f5244831bf4ea06b9262b919862e61571",
       "pilotInputSha256": "29c47780ecae2c48dde3e535c04864f0b68bd02726965eda849fd5b8ee3fa1f5",
       "servings": 2,
-      "status": "NO_GK",
+      "status": "PROPOSED_SINGLE",
       "priorEvidence": [],
-      "level": null,
-      "ownerApproval": null,
+      "level": "B",
+      "ownerApproval": false,
       "sourceQualified": null,
       "blockers": [
         "vietnamilainen-xoi-maapahkinalla: tahmariisi: No source-matched composition and preparation was resolved for “tahmariisi”; it is not treated as zero.",
@@ -18466,7 +18466,34 @@
             "Source-documented zero available carbohydrate: Plain salt has zero available carbohydrate."
           ]
         }
-      ]
+      ],
+      "operation80Proposal": {
+        "evidencePath": "docs/nutrition/gk80-operation80-batch-47.md",
+        "baselineRecipeSha256": "f5de045c45f50b5085810a20d18a239f5244831bf4ea06b9262b919862e61571",
+        "inputFields": [
+          "gramsBatch",
+          "choPer100g",
+          "giGlucoseScale"
+        ],
+        "scenarios": [
+          {
+            "inputs": [
+              [
+                100,
+                70.5,
+                75.7
+              ],
+              [
+                100,
+                14.1,
+                13
+              ]
+            ],
+            "gkPerServing": "27.60075"
+          }
+        ],
+        "publicationAuthorized": false
+      }
     },
     {
       "recipeId": "xiaolongbao",
