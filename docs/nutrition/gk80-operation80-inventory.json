@@ -2,11 +2,11 @@
   "schemaVersion": 1,
   "main": "4d6f19a620bb95e771c12f499554bf2cf1f06e51",
   "coverage": {
-    "PROPOSED_RANGE": 23,
+    "PROPOSED_RANGE": 24,
     "PUBLISHED_SINGLE": 197,
     "PROPOSED_SINGLE": 17,
     "IN_PROGRESS": 34,
-    "NO_GK": 45,
+    "NO_GK": 44,
     "PUBLISHED_RANGE": 10
   },
   "reviewedPrHeads": {
@@ -111,7 +111,7 @@
     "japanilainen-curry-tofulla",
     "khao-soi-vhh-konjac"
   ],
-  "nextRecipeId": "thai-roti-munalla-banaanilla",
+  "nextRecipeId": "tom-yum-goong-vhh",
   "recipes": [
     {
       "recipeId": "aloo-paratha",
@@ -14844,10 +14844,10 @@
       "recipeSha256": "01b5f49344afa698e599aa1ae8672649a18182892227ae5aa8d49b07e582c0ba",
       "pilotInputSha256": "9623cb4e0251d09ec3430eb24db8fc248ae7c63502bf135f12f0e0656acd34aa",
       "servings": 2,
-      "status": "NO_GK",
+      "status": "PROPOSED_RANGE",
       "priorEvidence": [],
-      "level": null,
-      "ownerApproval": null,
+      "level": "B",
+      "ownerApproval": false,
       "sourceQualified": null,
       "blockers": [
         "thai-roti-munalla-banaanilla: vehnäjauho: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved.",
@@ -14932,7 +14932,79 @@
             "Source-documented zero available carbohydrate: Plain salt has zero available carbohydrate."
           ]
         }
-      ]
+      ],
+      "operation80Proposal": {
+        "evidencePath": "docs/nutrition/gk80-operation80-batch-21.md",
+        "baselineRecipeSha256": "01b5f49344afa698e599aa1ae8672649a18182892227ae5aa8d49b07e582c0ba",
+        "inputFields": [
+          "gramsBatch",
+          "choPer100g",
+          "giGlucoseScale"
+        ],
+        "scenarios": [
+          {
+            "inputs": [
+              [
+                100,
+                73.998,
+                57
+              ],
+              [
+                110,
+                0.3,
+                57
+              ],
+              [
+                200,
+                3.4,
+                57
+              ],
+              [
+                120,
+                18.3,
+                53
+              ],
+              [
+                20,
+                55.9,
+                61
+              ]
+            ],
+            "gkPerServing": "32.35078"
+          },
+          {
+            "inputs": [
+              [
+                100,
+                73.998,
+                61.8
+              ],
+              [
+                110,
+                0.3,
+                61.8
+              ],
+              [
+                200,
+                3.4,
+                61.8
+              ],
+              [
+                120,
+                18.3,
+                53
+              ],
+              [
+                20,
+                55.9,
+                61
+              ]
+            ],
+            "gkPerServing": "34.297852"
+          }
+        ],
+        "publicationAuthorized": false
+      }
     },
     {
       "recipeId": "thai-vihrea-curry-kanalla-vhh",
