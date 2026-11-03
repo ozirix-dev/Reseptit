@@ -1,0 +1,106 @@
+{
+  "recipeId": "meksikolainen-huevos-divorciados",
+  "servings": 2,
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "unroundedGk": "4.936608870967742",
+  "upperScenario": {
+    "choOverrides": [
+      {
+        "inputIndex": 0,
+        "cho": 13.333333333333334
+      }
+    ],
+    "unroundedGk": "7.001125"
+  },
+  "inputs": [
+    [
+      150,
+      6.451612903225806,
+      40
+    ],
+    [
+      125,
+      3.45,
+      22
+    ],
+    [
+      150,
+      9.65,
+      34
+    ],
+    [
+      110,
+      0.3,
+      40
+    ]
+  ],
+  "ingredients": [
+    {
+      "grams": 150,
+      "name": {
+        "fi": "Herdez Salsa Verde Mild tai Mad Mexican Salsa Verde",
+        "en": "Herdez Salsa Verde Mild or Mad Mexican Salsa Verde",
+        "sv": "Herdez Salsa Verde Mild eller Mad Mexican Salsa Verde",
+        "th": "ซัลซาเขียว Herdez Mild หรือ Mad Mexican"
+      }
+    },
+    {
+      "grams": 125,
+      "name": {
+        "fi": "Tomaatti",
+        "en": "Tomato",
+        "sv": "Tomat",
+        "th": "มะเขือเทศ"
+      }
+    },
+    {
+      "grams": 150,
+      "name": {
+        "fi": "Kypsät mustapavut",
+        "en": "Cooked black beans",
+        "sv": "Kokta svarta bönor",
+        "th": "ถั่วดำต้มสุก"
+      }
+    },
+    {
+      "grams": 110,
+      "name": {
+        "fi": "Kananmunat",
+        "en": "Eggs",
+        "sv": "Ägg",
+        "th": "ไข่"
+      }
+    }
+  ],
+  "preparation": {
+    "fi": "Kypsennä {{amount:1}} g pilkottua tomaattia pannulla punaiseksi salsaksi ja lämmitä {{amount:2}} g kypsiä mustapapuja. Paista {{amount:3}} g kananmunia paistoöljyssä. Tarjoa punainen salsa yhdellä munalla ja {{amount:0}} g vihreää salsaa toisella. Jaa kaikki ainekset tasan {{servings}} annokseen.",
+    "en": "Cook {{amount:1}} g chopped tomato in a pan for the red salsa and warm {{amount:2}} g cooked black beans. Fry {{amount:3}} g eggs in cooking oil. Serve one egg with the red salsa and the other with {{amount:0}} g green salsa. Divide all ingredients evenly into {{servings}} servings.",
+    "sv": "Koka {{amount:1}} g hackad tomat i panna till den röda salsan och värm {{amount:2}} g kokta svarta bönor. Stek {{amount:3}} g ägg i olja. Servera ett ägg med den röda salsan och det andra med {{amount:0}} g grön salsa. Dela alla ingredienser jämnt i {{servings}} portioner.",
+    "th": "ผัดมะเขือเทศสับ {{amount:1}} กรัมให้เป็นซัลซาแดงและอุ่นถั่วดำต้มสุก {{amount:2}} กรัม ทอดไข่ {{amount:3}} กรัมในน้ำมัน เสิร์ฟไข่ฟองหนึ่งกับซัลซาแดงและอีกฟองกับซัลซาเขียว {{amount:0}} กรัม แบ่งส่วนผสมทั้งหมดเท่า ๆ กันเป็น {{servings}} ที่"
+  },
+  "limitation": {
+    "fi": "Väli käyttää kahden salsan etikettiarvoja ja GI-koodia 40. Herdezin kuitumäärää ei ole eritelty. Papujen GI 34 on laskentakoodi.",
+    "en": "The range uses two salsa labels and GI code 40. Herdez does not quantify fibre. Bean GI 34 is an assigned code.",
+    "sv": "Intervallet använder två salsaetiketter och GI-kod 40. Herdez anger ingen fibermängd. Bönornas GI 34 är en tilldelad kod.",
+    "th": "ช่วงนี้ใช้ฉลากซัลซาสองชนิดและค่า GI ตามกลุ่ม 40 ฉลาก Herdez ไม่ระบุปริมาณใยอาหาร ค่า GI 34 ของถั่วเป็นค่าตามกลุ่ม"
+  },
+  "sources": [
+    {
+      "title": "Herdez",
+      "url": "https://www.salsas.com/herdez/wp-content/uploads/sites/2/2019/01/herdez-salsa-verde-mild-16-oz-nfp.jpg"
+    },
+    {
+      "title": "Mad Mexican",
+      "url": "https://madmexican.ca/artisan-foods/our-products/salsa-verde/"
+    },
+    {
+      "title": "PR #229",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/229"
+    }
+  ],
+  "boundFiles": {
+    "reseptit/aamupalat/meksikolainen-huevos-divorciados.md": "8e513db20a0b1a7ef2bc1b19d69f781853384522b42a87f88c75fb8c33307334",
+    "docs/nutrition/gk80-operation80-salsa-verde.md": "50f528ceaa22c664d36ccb6b8458ea4c99f244710e99bf04bcfe90ac38fd336d"
+  }
+}
