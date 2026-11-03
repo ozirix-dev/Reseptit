@@ -61,3 +61,5 @@ Baozi ja vietnamilainen muna-sienitäytteinen bánh bao ovat eri reseptejä. Yan
 Nykyinen laskentasyöte on neljälle ja käyttää saatavaa hiilihydraattia ilman kuitua. Kuivahiivan erillinen nimellinen varaus on 0,4 g/annos. Mittalusikoiden ja kevätsipulin kappalemäärien muunnokset on tarkistettava täsmäversiolle. Kokonaisruokavertailussa maissitärkkelystä ei lasketa erillisenä GI-osuutena. Julkaistavaa vaihteluväliä ei ole.
 
 [Yang ym., taulukko 2](https://doi.org/10.3748/wjg.v12.i21.3430) · [Grilliporsassämpylä, rivi 1996](https://ghwinstitute.com/wp-content/uploads/2022/10/supplementaltable1-2.pdf) · [Baozin laskentasyöte](../../nutrition/calculations/baozi.json)
+
+Baozin punnittu tutkimusversio käyttää nykyisen ravintolaskelman määriä: sokeri 12 g, kevätsipuli 30 g, soijakastike 30 g, seesamiöljy 4,5 g, inkivääri 6 g ja maissitärkkelys 8 g. Kuivahiivan AFCD F009606 -piste 6,3 g/100 g antaa alkuperäisellä 7 g määrällä 0,11025 g/annos. Neljän annoksen tarkennettu koostumuspiste on 80,4705 g/annos ja Yangin GI 39,1:llä laskettu GK 31,4639655. Maustemäärät ovat ehdotetun täsmäversion syötteitä. Soveltuvuus odottaa katselmointia.
