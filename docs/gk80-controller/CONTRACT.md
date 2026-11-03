@@ -74,8 +74,9 @@ valmistusversiot eivät muutu toiseksi ID:ksi eivätkä kasvata kattavuutta.
     "omission": true,
     "hash": true
   },
-  "inputSha256": "<64 hex-merkkiä varsinaisesta inputista>",
-  "evidencePath": "docs/research/gk80-batch30/<recipe-id>.json",
+  "inputPath": "docs/research/gk80-batch30/<recipe-id>-input.json",
+  "inputSha256": "<64 hex-merkkiä varsinaisen input-tiedoston tavuista>",
+  "evidencePath": "docs/research/gk80-batch30/<recipe-id>-evidence.json",
   "evidenceSha256": "<64 hex-merkkiä lähde-evidenssitiedoston tavuista>"
 }
 ~~~
@@ -83,11 +84,13 @@ valmistusversiot eivät muutu toiseksi ID:ksi eivätkä kasvata kattavuutta.
 Tässä esitetyt hash-tekstit ovat paikkamerkkejä: syöte ei läpäise tarkistinta
 ennen todellisia SHA-256-arvoja.
 
-Todellisen evidencePath-polun pitää sijaita oman tutkimus-worktreen
-docs/research/gk80-batch30-hakemistossa. Tiedoston on oltava JSON-objekti,
-joka sisältää vähintään recipeId- ja inputSha256-kentät. Sama ID ja hash
-pitää olla jonossa. Ajonohjain tarkistaa tiedoston todellisen SHA-256:n;
-polku ei saa nousta worktreestä ulos edes symlinkillä.
+Molemmat tiedostot (`inputPath` ja `evidencePath`) ovat UTF-8-JSON-objekteja,
+jotka sijaitsevat oman tutkimus-worktreen fyysisessä
+`docs/research/gk80-batch30/`-hakemistossa. Input sisältää vähintään
+`recipeId`-kentän; evidence sisältää `recipeId`- ja `inputSha256`-kentät.
+Ohjain laskee **molemmat SHA-256-arvot itse tiedostojen tavuista** ja varmistaa
+jonon arvot. Hakemistosta ulos osoittavat `..`-polut ja symlink-kohteet
+estetään. Sisällön tieteellinen oikeellisuus vaatii edelleen ihmiskatselmoinnin.
 
 Varmennuspaketissa tulee lisäksi kuvata:
 
@@ -118,6 +121,7 @@ Ohjaimella on omat tilansa:
 | STOPPED_STALLED | Peräkkäiset vuorot eivät päivitä jonoa |
 | STOPPED_CODEX_ERROR | Codex palautti virhekoodin |
 | STOPPED_INVALID_QUEUE | Jonon tarkistus ei läpäissyt; palautettiin edellinen |
+| STOPPED_GUARD | Väärä branch/origin tai muutoksia sallitun tutkimushakemiston ulkopuolella |
 | READY_FOR_DRAFT | 30 rakenteellista VERIFIED-tapausta; valmistellaan luovutus |
 
 Mikään näistä ei tarkoita, että GitHub-PR olisi valmis julkaistavaksi.
