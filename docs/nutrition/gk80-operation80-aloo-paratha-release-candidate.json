@@ -1,0 +1,158 @@
+{
+  "recipeId": "aloo-paratha",
+  "servings": 4,
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "unroundedGk": "43.640097",
+  "upperScenario": {
+    "giOverrides": [
+      {
+        "inputIndex": 0,
+        "gi": 62.43
+      },
+      {
+        "inputIndex": 1,
+        "gi": 73
+      }
+    ],
+    "unroundedGk": "45.96271355"
+  },
+  "inputs": [
+    [
+      300,
+      73.998,
+      60.2
+    ],
+    [
+      400,
+      15.5,
+      66
+    ],
+    [
+      30,
+      0,
+      0
+    ]
+  ],
+  "ingredients": [
+    {
+      "grams": 300,
+      "name": {
+        "fi": "Vehnäjauho",
+        "en": "Wheat flour",
+        "sv": "Vetemjöl",
+        "th": "แป้งสาลี"
+      }
+    },
+    {
+      "grams": 400,
+      "name": {
+        "fi": "Kuorittu peruna",
+        "en": "Peeled potatoes",
+        "sv": "Skalad potatis",
+        "th": "มันฝรั่งปอกเปลือก"
+      }
+    },
+    {
+      "grams": 30,
+      "name": {
+        "fi": "Ghee",
+        "en": "Ghee",
+        "sv": "Ghee",
+        "th": "เนยกี"
+      }
+    },
+    {
+      "grams": 2,
+      "name": {
+        "fi": "Juustokumina",
+        "en": "Cumin",
+        "sv": "Spiskummin",
+        "th": "ยี่หร่า"
+      }
+    },
+    {
+      "grams": 1,
+      "name": {
+        "fi": "Chilijauhe",
+        "en": "Chilli powder",
+        "sv": "Chilipulver",
+        "th": "พริกป่น"
+      }
+    },
+    {
+      "grams": 2,
+      "name": {
+        "fi": "Garam masala",
+        "en": "Garam masala",
+        "sv": "Garam masala",
+        "th": "การัมมาซาลา"
+      }
+    },
+    {
+      "grams": 15,
+      "name": {
+        "fi": "Korianteri",
+        "en": "Coriander",
+        "sv": "Koriander",
+        "th": "ผักชี"
+      }
+    }
+  ],
+  "omissions": [
+    {
+      "ingredientIndex": 3,
+      "choPer100g": 100
+    },
+    {
+      "ingredientIndex": 4,
+      "choPer100g": 100
+    },
+    {
+      "ingredientIndex": 5,
+      "choPer100g": 100
+    },
+    {
+      "ingredientIndex": 6,
+      "choPer100g": 1.9
+    }
+  ],
+  "preparation": {
+    "fi": "Vaivaa {{amount:0}} g jauhoja, suola ja 180 ml vettä taikinaksi. Anna levätä 20 minuuttia. Keitä ja muussaa {{amount:1}} g kuorittua perunaa ja sekoita joukkoon mausteet ja korianteri. Tee reseptin mukaan kuusi täytettyä leipää ja paista molemmin puolin {{amount:2}} g:ssa gheetä. Jaa leivät {{servings}} annokseen.",
+    "en": "Knead {{amount:0}} g flour, salt and 180 ml water into a dough. Rest for 20 minutes. Boil and mash {{amount:1}} g peeled potatoes and mix in the spices and coriander. Shape six filled breads as directed and fry on both sides using {{amount:2}} g ghee. Divide the breads into {{servings}} servings.",
+    "sv": "Knåda {{amount:0}} g mjöl, salt och 180 ml vatten till en deg. Låt vila 20 minuter. Koka och mosa {{amount:1}} g skalad potatis och blanda i kryddor och koriander. Forma sex fyllda bröd enligt receptet och stek på båda sidor med {{amount:2}} g ghee. Dela bröden i {{servings}} portioner.",
+    "th": "นวดแป้ง {{amount:0}} กรัม เกลือ และน้ำ 180 มล. พัก 20 นาที ต้มและบดมันฝรั่งปอกเปลือก {{amount:1}} กรัม ผสมเครื่องเทศและผักชี ทำแผ่นแป้งใส่ไส้หกแผ่นตามสูตรแล้วทอดทั้งสองด้านด้วยเนยกี {{amount:2}} กรัม แบ่งเป็น {{servings}} ที่"
+  },
+  "limitation": {
+    "fi": "Taikinan ja perunatäytteen GI:t perustuvat erillisiin verrokkeihin. Mausteista ja korianterista jää pois enintään 1,32125 g CHO/annos. Lisukkeet lasketaan erikseen.",
+    "en": "Dough and potato filling use separate GI proxies. Spices and coriander contribute up to 1.32125 g excluded carbohydrate per serving. Sides are separate.",
+    "sv": "Deg och potatisfyllning använder separata GI-jämförelser. Kryddor och koriander bidrar med högst 1,32125 g utesluten kolhydrat per portion. Tillbehör räknas separat.",
+    "th": "ใช้ค่า GI จากอาหารเทียบแยกกันสำหรับแป้งและไส้มันฝรั่ง ไม่รวมคาร์โบไฮเดรตจากเครื่องเทศและผักชีไม่เกิน 1.32125 กรัมต่อที่ คิดเครื่องเคียงแยก"
+  },
+  "sources": [
+    {
+      "title": "Methi paratha",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9552392/"
+    },
+    {
+      "title": "Chapati",
+      "url": "https://doi.org/10.1007/s13197-022-05368-6"
+    },
+    {
+      "title": "Potatoes",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2699495/"
+    },
+    {
+      "title": "Fineli",
+      "url": "https://fineli.fi/fineli/fi/ohje/19"
+    },
+    {
+      "title": "AFCD",
+      "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd"
+    }
+  ],
+  "boundFiles": {
+    "reseptit/paaruoat/aloo-paratha.md": "e6227412661df24116ad197f1d11700f6066c9f78e28064152f1792e11e24206",
+    "docs/nutrition/gk80-operation80-aloo-paratha.md": "5351891ba74af35c2d928dbf78537067e51761e61cd8ee6e67f0ae59619750c3"
+  }
+}
