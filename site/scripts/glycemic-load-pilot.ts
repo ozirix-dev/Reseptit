@@ -240,7 +240,7 @@ const publicResults = results.flatMap((result) => {
     const separator = detail.indexOf(": ");
     const ingredient = separator >= 0 ? detail.slice(0, separator) : "";
     const reason = separator >= 0 ? detail.slice(separator + 2) : detail;
-    const category = /differs from the last GL review/i.test(reason) ? "REVIEW"
+    const category = /differs? from the last GL review/i.test(reason) ? "REVIEW"
       : /\bGI\b|undefined category mean\/analogue/i.test(reason) ? "GI"
       : /food-specific mass conversion|food-specific.*mass|portion mass|gram conversion/i.test(reason) ? "PORTION"
       : /allows materially different|alternative|selected liquid|variant/i.test(reason) ? "VARIANT"
