@@ -1,0 +1,132 @@
+{
+  "recipeId": "vietnamilainen-banh-xeo-aamiaisletut",
+  "servings": 2,
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "unroundedGk": "32.36344",
+  "preparation": {
+    "fi": "Sekoita {{amount:0}} g riisijauhoa, {{amount:1}} g kookosmaitoa ja {{amount:2}} g jauhettua kurkumaa. Paista ohuet rapeat letut öljytyllä pannulla. Kypsennä erikseen {{amount:3}} g kuorittuja katkarapuja ja {{amount:4}} g mungpavunituja kauttaaltaan. Täytä letut ja jaa {{servings}} annokseen.",
+    "en": "Mix {{amount:0}} g rice flour, {{amount:1}} g coconut milk and {{amount:2}} g ground turmeric. Fry thin, crisp pancakes in an oiled pan. Separately cook {{amount:3}} g peeled prawns and {{amount:4}} g mung bean sprouts thoroughly. Fill the pancakes and divide into {{servings}} portions.",
+    "sv": "Blanda {{amount:0}} g rismjöl, {{amount:1}} g kokosmjölk och {{amount:2}} g malen gurkmeja. Stek tunna, krispiga pannkakor i en oljad panna. Tillaga {{amount:3}} g skalade räkor och {{amount:4}} g mungbönsgroddar ordentligt separat. Fyll pannkakorna och dela i {{servings}} portioner.",
+    "th": "ผสมแป้งข้าวเจ้า {{amount:0}} กรัม กะทิ {{amount:1}} กรัม และขมิ้นผง {{amount:2}} กรัม ทอดเป็นแผ่นบางกรอบในกระทะทาน้ำมัน ปรุงกุ้งปอกเปลือก {{amount:3}} กรัมและถั่วงอก {{amount:4}} กรัมแยกให้สุกทั่ว ใส่ไส้แล้วแบ่งเป็น {{servings}} ส่วน"
+  },
+  "limitation": {
+    "fi": "Taikinan GI perustuu riisidosaan, jossa on urad-papua. Bánh xèon taikinassa on kookosmaitoa. Kypsennettyjen itujen GI on laskentakoodi.",
+    "en": "Batter GI uses rice dosa as a comparator. Dosa contains urad dal, while bánh xèo batter contains coconut milk. Cooked sprouts use an assigned GI code.",
+    "sv": "Smetens GI bygger på en jämförelse med risdosa, som innehåller uradbönor. Bánh xèo innehåller kokosmjölk. Tillagade groddar har en tilldelad GI-kod.",
+    "th": "ค่า GI ของแป้งอ้างอิงโดซาข้าวที่มีถั่วอูรัด ส่วนแป้งบั๊ญแส่วมีกะทิ ถั่วงอกที่ปรุงสุกใช้ค่า GI ที่กำหนดเพื่อการคำนวณ"
+  },
+  "ingredients": [
+    {
+      "grams": 100,
+      "name": {
+        "fi": "Riisijauho",
+        "en": "Rice flour",
+        "sv": "Rismjöl",
+        "th": "แป้งข้าวเจ้า"
+      }
+    },
+    {
+      "grams": 200,
+      "name": {
+        "fi": "Täysrasvainen tölkkikookosmaito",
+        "en": "Full-fat canned coconut milk",
+        "sv": "Fet kokosmjölk på burk",
+        "th": "กะทิกระป๋อง"
+      }
+    },
+    {
+      "grams": 2,
+      "name": {
+        "fi": "Jauhettu kurkuma",
+        "en": "Ground turmeric",
+        "sv": "Malen gurkmeja",
+        "th": "ขมิ้นผง"
+      }
+    },
+    {
+      "grams": 150,
+      "name": {
+        "fi": "Raa’at kuoritut katkaravut",
+        "en": "Raw peeled prawns",
+        "sv": "Råa skalade räkor",
+        "th": "กุ้งดิบปอกเปลือก"
+      }
+    },
+    {
+      "grams": 150,
+      "name": {
+        "fi": "Mungpavunidut ennen kypsennystä",
+        "en": "Mung bean sprouts before cooking",
+        "sv": "Mungbönsgroddar före tillagning",
+        "th": "ถั่วงอกก่อนปรุง"
+      }
+    },
+    {
+      "grams": null,
+      "name": {
+        "fi": "Paistoöljy",
+        "en": "Cooking oil",
+        "sv": "Stekolja",
+        "th": "น้ำมันสำหรับทอด"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Tan et al., rice dosa",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29759105/",
+      "kind": "HUMAN_GI",
+      "note": "GI 76 is applied once to total batter carbohydrate."
+    },
+    {
+      "title": "Fineli 182",
+      "url": "https://fineli.fi/fineli/fi/elintarvikkeet/182",
+      "kind": "CARBOHYDRATE",
+      "note": "THL Fineli CC BY 4.0."
+    },
+    {
+      "title": "AFCD F002991, F009335, F007422, F008806",
+      "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd",
+      "kind": "CARBOHYDRATE",
+      "note": "FSANZ Release 3, CC BY-SA 3.0 Australia."
+    },
+    {
+      "title": "Assigned GI code",
+      "url": "https://doi.org/10.1016/j.jfca.2007.02.004",
+      "kind": "B_CODING",
+      "note": "Sprouts use code 50."
+    }
+  ],
+  "inputs": [
+    [
+      100,
+      79.3,
+      76
+    ],
+    [
+      200,
+      1.7,
+      76
+    ],
+    [
+      2,
+      44.4,
+      76
+    ],
+    [
+      150,
+      0,
+      0
+    ],
+    [
+      150,
+      1.6,
+      50
+    ]
+  ],
+  "boundFiles": {
+    "reseptit/aamupalat/vietnamilainen-banh-xeo-aamiaisletut.md": "bd4fbd1c77bd3d5383e5986c71bc87e5b2c0c0fd6ac1faa8b660b300b7b2136d",
+    "docs/nutrition/gk80-operation80-batch-23.md": "ec4426e7eb10ae5ea01e4a26601d46e704c73b04896fcf6fd18822628e001562"
+  }
+}
