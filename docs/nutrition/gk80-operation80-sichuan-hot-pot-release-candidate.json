@@ -1,0 +1,304 @@
+{
+  "recipeId": "sichuan-hot-pot",
+  "servings": 4,
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "unroundedGk": "9.706475",
+  "upperScenario": {
+    "choOverrides": [
+      {
+        "inputIndex": 7,
+        "cho": 71.2,
+        "gi": 46
+      }
+    ],
+    "unroundedGk": "12.9329"
+  },
+  "omissions": [
+    {
+      "ingredientIndex": 8,
+      "choPer100g": 41
+    },
+    {
+      "ingredientIndex": 9,
+      "choPer100g": 11
+    },
+    {
+      "ingredientIndex": 10,
+      "choPer100g": 100
+    },
+    {
+      "ingredientIndex": 11,
+      "choPer100g": 100
+    },
+    {
+      "ingredientIndex": 12,
+      "choPer100g": 100
+    }
+  ],
+  "preparation": {
+    "fi": "Paista {{amount:9}} g chilitahnaa, {{amount:4}} g valkosipulia, {{amount:5}} g inkivääriä sekä {{amount:10}} g sichuaninpippuria, {{amount:11}} g kanelia ja {{amount:12}} g tähtianista {{amount:14}} rkl:ssa öljyä. Lisää {{amount:8}} g liemijauhetta ja {{amount:13}} ml vettä, hauduta 20 minuuttia ja siivilöi kokonaiset mausteet pois. Kypsennä liemessä {{amount:0}} g naudanlihaa, {{amount:1}} g tofua, {{amount:2}} g sieniä, {{amount:3}} g kaalia ja {{amount:7}} g tuoretta udonia tai kuivaa somenia. Kypsennä liha kauttaaltaan ja nuudelit pakkauksen mukaan. Kostuta {{amount:6}} g kevätsipulia kuumalla liemellä dipiksi ja jaa ruoka {{servings}} annokseen.",
+    "en": "Fry {{amount:9}} g chilli bean paste, {{amount:4}} g garlic, {{amount:5}} g ginger, {{amount:10}} g Sichuan pepper, {{amount:11}} g cinnamon and {{amount:12}} g star anise in {{amount:14}} tbsp oil. Add {{amount:8}} g stock powder and {{amount:13}} ml water, simmer 20 minutes and strain out whole spices. Cook {{amount:0}} g beef, {{amount:1}} g tofu, {{amount:2}} g mushrooms, {{amount:3}} g cabbage and {{amount:7}} g fresh udon or dry somen in the broth. Cook the beef through and follow the noodle packet directions. Moisten {{amount:6}} g spring onion with hot broth as a dip and divide into {{servings}} servings.",
+    "sv": "Fräs {{amount:9}} g chilibönpasta, {{amount:4}} g vitlök, {{amount:5}} g ingefära, {{amount:10}} g sichuanpeppar, {{amount:11}} g kanel och {{amount:12}} g stjärnanis i {{amount:14}} msk olja. Tillsätt {{amount:8}} g buljongpulver och {{amount:13}} ml vatten, sjud i 20 minuter och sila bort hela kryddor. Tillaga {{amount:0}} g nötkött, {{amount:1}} g tofu, {{amount:2}} g svamp, {{amount:3}} g salladskål och {{amount:7}} g färsk udon eller torr somen i buljongen. Tillaga köttet helt och följ nudelförpackningen. Blanda {{amount:6}} g salladslök med lite het buljong till dipp och dela i {{servings}} portioner.",
+    "th": "ผัดซอสถั่วพริก {{amount:9}} กรัม กระเทียม {{amount:4}} กรัม ขิง {{amount:5}} กรัม พริกเสฉวน {{amount:10}} กรัม อบเชย {{amount:11}} กรัม และโป๊ยกั๊ก {{amount:12}} กรัมในน้ำมัน {{amount:14}} ช้อนโต๊ะ เติมผงน้ำซุป {{amount:8}} กรัมและน้ำ {{amount:13}} มล. เคี่ยว 20 นาทีแล้วกรองเครื่องเทศออก ต้มเนื้อวัว {{amount:0}} กรัม เต้าหู้ {{amount:1}} กรัม เห็ด {{amount:2}} กรัม ผักกาดขาว {{amount:3}} กรัม และอุด้งสดหรือโซเม็งแห้ง {{amount:7}} กรัมในน้ำซุป ต้มเนื้อให้สุกทั่วและต้มเส้นตามฉลาก เติมน้ำซุปร้อนเล็กน้อยในต้นหอม {{amount:6}} กรัมเป็นน้ำจิ้ม แล้วแบ่งเป็น {{servings}} ที่"
+  },
+  "limitation": {
+    "fi": "Alempi arvio käyttää tuoretta udonia ja ylempi kuivaa somenia. Liemijauheen, tahnan ja kokonaisten mausteiden pienet osuudet jäävät GK-summan ulkopuolelle.",
+    "en": "The lower estimate uses fresh udon and the upper uses dry somen. Small carbohydrate contributions from stock powder, paste and whole spices are excluded.",
+    "sv": "Den lägre uppskattningen gäller färsk udon och den högre torr somen. Små kolhydratbidrag från buljongpulver, pasta och hela kryddor ingår inte.",
+    "th": "ค่าต่ำใช้เส้นอุด้งสด ค่าสูงใช้เส้นโซเม็งแห้ง การคำนวณไม่รวมคาร์โบไฮเดรตปริมาณเล็กน้อยจากผงน้ำซุป ซอส และเครื่องเทศทั้งชิ้น"
+  },
+  "ingredients": [
+    {
+      "name": {
+        "fi": "Naudanliha",
+        "en": "Beef",
+        "sv": "Nötkött",
+        "th": "เนื้อวัว"
+      },
+      "grams": 300
+    },
+    {
+      "name": {
+        "fi": "Kiinteä tofu",
+        "en": "Firm tofu",
+        "sv": "Fast tofu",
+        "th": "เต้าหู้แข็ง"
+      },
+      "grams": 200
+    },
+    {
+      "name": {
+        "fi": "Herkkusieni",
+        "en": "Button mushrooms",
+        "sv": "Champinjoner",
+        "th": "เห็ดแชมปิญอง"
+      },
+      "grams": 200
+    },
+    {
+      "name": {
+        "fi": "Kiinankaali",
+        "en": "Chinese cabbage",
+        "sv": "Salladskål",
+        "th": "ผักกาดขาว"
+      },
+      "grams": 200
+    },
+    {
+      "name": {
+        "fi": "Valkosipuli",
+        "en": "Garlic",
+        "sv": "Vitlök",
+        "th": "กระเทียม"
+      },
+      "grams": 7
+    },
+    {
+      "name": {
+        "fi": "Inkivääri",
+        "en": "Ginger",
+        "sv": "Ingefära",
+        "th": "ขิง"
+      },
+      "grams": 10
+    },
+    {
+      "name": {
+        "fi": "Kevätsipuli",
+        "en": "Spring onion",
+        "sv": "Salladslök",
+        "th": "ต้นหอม"
+      },
+      "grams": 20
+    },
+    {
+      "name": {
+        "fi": "Tuore udon tai kuiva Hakubaku Somen",
+        "en": "Fresh udon or dry Hakubaku Somen",
+        "sv": "Färsk udon eller torr Hakubaku Somen",
+        "th": "อุด้งสดหรือโซเม็งแห้ง Hakubaku"
+      },
+      "grams": 150
+    },
+    {
+      "name": {
+        "fi": "Knorr Professional F73781",
+        "en": "Knorr Professional F73781",
+        "sv": "Knorr Professional F73781",
+        "th": "ผงน้ำซุป Knorr Professional F73781"
+      },
+      "grams": 8
+    },
+    {
+      "name": {
+        "fi": "Lee Kum Kee Chilli Bean Sauce",
+        "en": "Lee Kum Kee Chilli Bean Sauce",
+        "sv": "Lee Kum Kee Chilli Bean Sauce",
+        "th": "ซอสถั่วพริก Lee Kum Kee"
+      },
+      "grams": 30
+    },
+    {
+      "name": {
+        "fi": "Sichuaninpippuri",
+        "en": "Sichuan pepper",
+        "sv": "Sichuanpeppar",
+        "th": "พริกเสฉวน"
+      },
+      "grams": 0.4
+    },
+    {
+      "name": {
+        "fi": "Kanelitanko",
+        "en": "Cinnamon stick",
+        "sv": "Kanelstång",
+        "th": "อบเชยแท่ง"
+      },
+      "grams": 0.4
+    },
+    {
+      "name": {
+        "fi": "Tähtianis",
+        "en": "Star anise",
+        "sv": "Stjärnanis",
+        "th": "โป๊ยกั๊ก"
+      },
+      "grams": 0.4
+    },
+    {
+      "name": {
+        "fi": "Vesi",
+        "en": "Water",
+        "sv": "Vatten",
+        "th": "น้ำ"
+      },
+      "grams": null,
+      "quantity": {
+        "amount": 1000,
+        "unit": "ml"
+      }
+    },
+    {
+      "name": {
+        "fi": "Paistoöljy",
+        "en": "Cooking oil",
+        "sv": "Stekolja",
+        "th": "น้ำมันสำหรับผัด"
+      },
+      "grams": null,
+      "quantity": {
+        "amount": 2,
+        "unit": "tbsp"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Kim et al.",
+      "url": "https://doi.org/10.1017/S0007114518003446",
+      "kind": "HUMAN_GI",
+      "note": "Fresh wheat noodle GI 48.2."
+    },
+    {
+      "title": "Yang et al.",
+      "url": "https://www.wjgnet.com/1007-9327/full/v12/i21/3430-T2.htm",
+      "kind": "HUMAN_GI",
+      "note": "Dried wheat noodle GI 46."
+    },
+    {
+      "title": "MEXT 01038",
+      "url": "https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=1_01038_7&MODE=7",
+      "kind": "CARBOHYDRATE",
+      "note": "Fresh udon 50.1 g per 100 g."
+    },
+    {
+      "title": "Hakubaku",
+      "url": "https://hakubaku.com.au/product/somen/",
+      "kind": "CARBOHYDRATE",
+      "note": "Dry somen 71.2 g per 100 g."
+    },
+    {
+      "title": "Knorr",
+      "url": "https://www.unileverfoodsolutions.fi/tuotteet/knorr-kanaliemi-vaehaesuolainen-1-1-kg-34-FI-1249840.html",
+      "kind": "CARBOHYDRATE",
+      "note": "41 g per 100 g powder."
+    },
+    {
+      "title": "Lee Kum Kee",
+      "url": "https://uk.lkk.com/products/chilli-bean-sauce",
+      "kind": "CARBOHYDRATE",
+      "note": "11 g per 100 g."
+    },
+    {
+      "title": "Fineli",
+      "url": "https://fineli.fi/fineli/fi/ohje/19",
+      "kind": "CARBOHYDRATE",
+      "note": "CC BY 4.0."
+    },
+    {
+      "title": "AFCD",
+      "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd",
+      "kind": "CARBOHYDRATE",
+      "note": "CC BY-SA 3.0 Australia."
+    },
+    {
+      "title": "USDA spring onion",
+      "url": "https://fdc.nal.usda.gov/food-details/170005/nutrients",
+      "kind": "CARBOHYDRATE",
+      "note": "Total carbohydrate minus fibre."
+    },
+    {
+      "title": "GI coding",
+      "url": "https://doi.org/10.2337/dc08-1239",
+      "kind": "PUBLISHED_CODING",
+      "note": "Vegetable and spice codes."
+    }
+  ],
+  "inputs": [
+    [
+      300,
+      0,
+      0
+    ],
+    [
+      200,
+      0,
+      0
+    ],
+    [
+      200,
+      0.3,
+      40
+    ],
+    [
+      200,
+      1.61,
+      40
+    ],
+    [
+      7,
+      16.3,
+      40
+    ],
+    [
+      10,
+      4.8,
+      50
+    ],
+    [
+      20,
+      4.74,
+      40
+    ],
+    [
+      150,
+      50.1,
+      48.2
+    ]
+  ],
+  "boundFiles": {
+    "reseptit/paaruoat/sichuan-hot-pot.md": "0c1ef97b44a862df2c00529b2cc614e26711d04fd46c41f8d4b1320eb267c858",
+    "docs/nutrition/gk80-operation80-batch-19.md": "b87f15199b4946aea936d919343136788df34db139c5e711421ba9472cf77ed4"
+  }
+}
