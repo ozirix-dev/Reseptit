@@ -75,7 +75,7 @@ Ackee: erillinen GK-täsmäversio käyttää 60 g kypsää ruodotonta suolatursk
 
 ## Jatkoehdotukset
 
-Nämä kuusitoista nelikielistä esikatseluversiota ovat kahden alkuperäisen erän lisäksi. Kohdennetussa tarkistuksessa niiden kanssa numeerinen esikatselukattavuus on 283/326.
+Nämä seitsemäntoista nelikielistä esikatseluversiota ovat kahden alkuperäisen erän lisäksi. Kohdennetussa tarkistuksessa niiden kanssa numeerinen esikatselukattavuus on 284/326.
 
 | Resepti | GK/annos | Päätös ennen julkaisua |
 | --- | ---: | --- |
@@ -95,6 +95,7 @@ Nämä kuusitoista nelikielistä esikatseluversiota ovat kahden alkuperäisen er
 | Sate ayam | 6,02 | Hyväksy nimetyt tuotteet, punnittu limetti, maapähkinän GI-verrokki ja marinadin täyden siirtymän oletus. [Laskelma](gk80-operation80-sate-ayam.md) |
 | Aamiaisparatha jogurtin kera | 30,80–32,44 | Hyväksy ehdotettu jogurttiannos, perunatäytteen valmistus ja GI-verrokit. [Ehdotus](gk80-operation80-intialainen-aloo-paratha-release-candidate.json) |
 | Margherita-pizza | 58,48 | Hyväksy kaupallinen paistettu pizzapohja kotitaikinan GI-verrokiksi. [Ehdotus](gk80-operation80-pizza-margherita-release-candidate.json) |
+| Pofiber-pizza kinkulla ja sienillä | 0,42 | Hyväksy 100 g herkkusieniä, 50 g kinkkua, punnitut pohjan ainekset ja 1,9625 g/annos poisjättö. [Ehdotus](gk80-operation80-ketopizza-pofiber-pohjalla-release-candidate.json) |
 
 ### Aiempi rinnakkainen ehdotus: paistettu maksa ja pekoni
 
@@ -191,3 +192,5 @@ Pofiber-pizzan nykyinen ohje määrittää vakiotäytteeksi 50 g kinkkua, 50 g p
 Pofiber-pizzan 50 g punainen paprika tuo 1,125 g, 50 g herkkusieniä 0,075 g ja 50 g Atrian Ohuen Ohutta Palvikinkkua 0,225 g imeytyvää hiilihydraattia annosta kohti. Vakiotäytteiden yhteismäärä on 1,425 g/annos. Laskelma sitoo kinkun nimettyyn tuotteeseen (0,9 g/100 g). Pofiberin, munan, kinkun ja sienen pienet osuudet käyttävät yhteensä 1,275 g/annos poikkeusvarasta oletetulla 10,5 g:n Pofiber-määrällä. Muulle mahdolliselle poisjätölle jää 0,725 g/annos. Paprikan 1,125 g ylittää yksittäisen aineksen poikkeusrajan, joten koko reseptin GK tarvitsee paistetulle paprikalle perustellun GI:n sekä valitun kastikkeen ja juustojen sidokset. Paprikan kypsennystutkimus mittaa sokereita eikä ihmisillä mitattua GI:tä. [Paprika](https://fineli.fi/fineli/fi/elintarvikkeet/386) · [Herkkusieni](https://fineli.fi/fineli/fi/elintarvikkeet/345) · [Palvikinkku](https://www.atria.fi/tuotteet/atria-ohuen-ohut-palvikinkku-200g/) · [Kypsennystutkimus](https://pmc.ncbi.nlm.nih.gov/articles/PMC11319575/)
 
 Punnittavan Pofiber-version tuotevalinnat ovat 175 g Valio Oltermanni -kermajuustoa (0 g hiilihydraattia / 100 g), 37,5 g Valio Viola -maustamatonta tuorejuustoa 1,5 kg:n pakkauksen tiedoilla (3,5 g / 100 g) ja 75 g Mutti Passataa (5,1 g / 100 g). Tuorejuuston 37,5 g on ehdotettu punnittu määrä reseptin 2,5 ruokalusikalle. Siitä tulee 0,65625 g/annos, jolloin viiden pienen rivin yhteismäärä on 1,93125 g/annos. Samoilla muilla sidoksilla 2 g:n raja täyttyy 41,43 g:n tuorejuustomäärällä, joten tilavuusmitan varaan jäävä laskelma ei riitä. Passatasta tulee 1,9125 g/annos. Tomaattimurskan GI 22 antaa sille verrokkiskenaariossa 0,42075 GK. Koko pizzan arvio edellyttää lisäksi paistetun paprikan GI-perustetta. [Oltermanni](https://www.valio.fi/tuotteet/valio-oltermanni-kermajuusto/500-g-kaare/) · [Viola](https://www.valio.fi/tuotteet/valio-viola-maustamaton-tuorejuusto-sanko/) · [Mutti](https://mutti-parma.com/products/passata/)
+
+Sieniversion ehdotuksessa 50 g paprikaa vaihtuu 50 grammaan herkkusieniä. Täytteitä on edelleen yhteensä 150 g. Punnittu 35 g tuorejuustoa jättää viiden pienen rivin yhteismääräksi 1,9625 g imeytyvää hiilihydraattia annosta kohti. GK-arvio 0,42075 tulee passatasta tomaattimurskaverrokilla. Arvio koskee tätä punnittua sieniversiota. [Ehdotus](gk80-operation80-ketopizza-pofiber-pohjalla-release-candidate.json)
