@@ -137,9 +137,9 @@ def validate_queue(root: Path, queue: dict, target: int) -> dict[str, int]:
             if not all(isinstance(s, dict) and isinstance(s.get("url"), str)
                        and s["url"].startswith("https://") for s in item["sources"]):
                 raise GateError(f"Invalid sources for {recipe_id}")
-            if not isinstance(item.get("servings"), int) or item["servings"] <= 0:
+            if type(item.get("servings")) is not int or item["servings"] <= 0:
                 raise GateError(f"Missing serving count for {recipe_id}")
-            if not isinstance(item.get("ingredientCount"), int) or item["ingredientCount"] < 1:
+            if type(item.get("ingredientCount")) is not int or item["ingredientCount"] < 1:
                 raise GateError(f"Missing ingredient inventory for {recipe_id}")
             for name in ("gkPerServing", "omittedChoPerServing"):
                 value = item.get(name)
@@ -148,12 +148,13 @@ def validate_queue(root: Path, queue: dict, target: int) -> dict[str, int]:
             for name in ("inputSha256", "evidenceSha256"):
                 if not isinstance(item.get(name), str) or not HEX64.fullmatch(item[name]):
                     raise GateError(f"Missing SHA-256 {name} for {recipe_id}")
-            relative = item.get("evidencePath")
-            if not isinstance(relative, str) or not relative.startswith(EVIDENCE_PREFIX):
-                raise GateError(f"Evidence must be in {EVIDENCE_PREFIX}: {recipe_id}")
-            evidence = (root / relative).resolve()
-            if not evidence.is_relative_to(root.resolve()) or not evidence.is_file():
-                raise GateError(f"Unsafe or missing evidence path for {recipe_id}")
+            input_file = evidence_file(root, item.get("inputPath"), recipe_id)
+            if sha256(input_file.read_bytes()) != item["inputSha256"]:
+                raise GateError(f"Input SHA-256 mismatch for {recipe_id}")
+            input_object = load_json(input_file)
+            if input_object.get("recipeId") != recipe_id:
+                raise GateError(f"Input identity mismatch for {recipe_id}")
+            evidence = evidence_file(root, item.get("evidencePath"), recipe_id)
             if sha256(evidence.read_bytes()) != item["evidenceSha256"]:
                 raise GateError(f"Evidence SHA-256 mismatch for {recipe_id}")
             proof = load_json(evidence)
@@ -164,6 +165,46 @@ def validate_queue(root: Path, queue: dict, target: int) -> dict[str, int]:
     if counts["VERIFIED"] > target:
         raise GateError("More VERIFIED IDs than the agreed target; review queue")
     return counts
+
+
+def evidence_file(root: Path, relative: str, recipe_id: str) -> Path:
+    """Keep input and evidence within the physical research directory, not just the repo."""
+    if not isinstance(relative, str) or not relative.startswith(EVIDENCE_PREFIX):
+        raise GateError(f"Evidence must be in {EVIDENCE_PREFIX}: {recipe_id}")
+    canonical_root = root.resolve()
+    expected_dir = canonical_root / EVIDENCE_PREFIX
+    actual_dir = (root / EVIDENCE_PREFIX).resolve()
+    if actual_dir != expected_dir:
+        raise GateError(f"Unsafe evidence directory symlink for {recipe_id}")
+    resolved = (root / relative).resolve()
+    if not resolved.is_relative_to(expected_dir) or not resolved.is_file() or resolved.suffix != ".json":
+        raise GateError(f"Unsafe or missing evidence path for {recipe_id}")
+    return resolved
+
+
+def check_research_scope(root: Path, baseline_sha: str) -> None:
+    """Fail closed on changes outside the approved research directory, including commits."""
+    modified = git(root, "diff", "--name-only", baseline_sha, "--").splitlines()
+    untracked = git(root, "ls-files", "--others", "--exclude-standard").splitlines()
+    unexpected = sorted({f for f in modified + untracked
+                         if f and not f.replace("\\\\", "/").startswith(EVIDENCE_PREFIX)})
+    if unexpected:
+        raise GateError("Unapproved research worktree changes: " + ", ".join(unexpected[:12]))
+
+
+def checked_queue_after_turn(root: Path, old_queue: dict, p: dict, target: int) -> tuple[dict, dict | None, str | None]:
+    """Recover interrupted/partial queue writes without treating them as progress."""
+    try:
+        new_queue = load_json(p["queue"])
+        counts = validate_queue(root, new_queue, target)
+        return new_queue, counts, None
+    except GateError as exc:
+        atomic_json(p["queue"], old_queue)
+        try:
+            prior_counts = validate_queue(root, old_queue, target)
+        except GateError:
+            prior_counts = None  # An overwritten evidence file now requires manual repair.
+        return old_queue, prior_counts, str(exc)
 
 
 def active(root: Path) -> tuple[dict, dict, dict[str, Path]]:
@@ -210,12 +251,15 @@ HOLD any single blocked recipe with one exact blocker, then immediately
 select a different recipe. Do not spend the whole turn on one GI source.
 Consult current main and open PRs before adding IDs; omit already
 published and other writers' IDs. Recheck before preparing any handoff.
-Write completed source/amount/serving/preparation/omission evidence as
-JSON under docs/research/gk80-batch30/; include recipeId and inputSha256.
+Write immutable per-recipe input JSON and completed source/amount/serving/
+preparation/omission evidence JSON under docs/research/gk80-batch30/.
+Both JSON objects need recipeId; evidence JSON also has inputSha256.
 Update .gk80-controller/queue.json, schemaVersion 1, target {state['target']},
 candidates list. For VERIFIED, include checks source/amount/gi/omission/hash
 each true, sources with HTTPS URLs, gkPerServing, omittedChoPerServing,
-servings, ingredientCount, inputSha256, evidencePath, evidenceSha256.
+servings, ingredientCount, inputPath, inputSha256, evidencePath, evidenceSha256.
+Both hashes MUST be calculated from the corresponding real on-disk files.
+Do not mark VERIFIED on a guessed hash or on a placeholder file.
 VERIFIED requires genuine source and content review, not just arithmetic;
 the controller checks structural integrity, not scientific validity.
 Leave uncertain candidates CALCULATED or HOLD. Never invent GI or mass data.
@@ -250,6 +294,7 @@ def one_turn(root: Path, state: dict, queue: dict, p: dict, executable: str,
         return False
     if not shutil.which(executable):
         raise GateError(f"Codex executable not found: {executable}")
+    check_research_scope(root, state["startSha"])
     acquire(p["lock"])
     # Material progress, not a repeatedly edited prose note or timestamp.
     def fingerprint(q: dict) -> str:
@@ -312,19 +357,28 @@ def one_turn(root: Path, state: dict, queue: dict, p: dict, executable: str,
     state["lastExit"] = result_code
     state["lastLog"] = str(logfile.relative_to(root))
     state["updated"] = utcnow()
-    if stopped:
-        state["phase"] = "STOPPED_REQUESTED" if p["stop"].exists() else "STOPPED_TIMEOUT"
-        state["reason"] = "Explicit stop or bounded per-turn timeout"
+    try:
+        guard(root, state["branch"])
+        check_research_scope(root, state["startSha"])
+    except GateError as exc:
+        state["phase"], state["reason"] = "STOPPED_GUARD", str(exc)
         atomic_json(p["state"], state)
         return False
 
-    try:
-        new_queue = load_json(p["queue"])
-        new_counts = validate_queue(root, new_queue, state["target"])
-    except GateError as exc:
-        # Preserve the last valid checkpoint; invalid output stays in the log.
-        atomic_json(p["queue"], queue)
-        state["phase"], state["reason"] = "STOPPED_INVALID_QUEUE", str(exc)
+    new_queue, new_counts, recovery_error = checked_queue_after_turn(
+        root, queue, p, state["target"])
+    if recovery_error:
+        state["phase"], state["reason"] = (
+            "STOPPED_INVALID_QUEUE",
+            f"Restored prior queue after interrupted/invalid write: {recovery_error}"
+            + ("; previous evidence also changed, manual repair required" if new_counts is None else ""),
+        )
+        atomic_json(p["state"], state)
+        return False
+    if stopped:
+        state["phase"] = "STOPPED_REQUESTED" if p["stop"].exists() else "STOPPED_TIMEOUT"
+        state["reason"] = "Explicit stop or bounded per-turn timeout; valid queue checkpoint preserved"
+        state["lastVerified"] = new_counts["VERIFIED"]
         atomic_json(p["state"], state)
         return False
     unchanged = fingerprint(new_queue) == previous
@@ -400,16 +454,20 @@ def main(argv: list[str] | None = None) -> int:
         if args.action == "resume":
             if p["lock"].exists():
                 raise GateError("Controller lock is present; do not clear a live session")
-            p["stop"].unlink(missing_ok=True)
             if state["phase"] == "READY_FOR_DRAFT":
                 raise GateError("Target achieved; use handoff, not resume")
             if state["turns"] >= state["maxTurns"]:
                 raise GateError("Turn budget exhausted; requires explicit new plan")
+            if state["phase"] == "STOPPED_GUARD":
+                raise GateError("Research scope violation; inspect worktree before resuming")
+            check_research_scope(root, state["startSha"])
+            p["stop"].unlink(missing_ok=True)
             state["phase"], state["reason"] = "PAUSED", "Explicitly resumed"
             atomic_json(p["state"], state)
             print("Resumed; step/run still requires --execute")
             return 0
         if args.action == "handoff":
+            check_research_scope(root, state["startSha"])
             counts = validate_queue(root, queue, state["target"])
             if counts["VERIFIED"] < 30:
                 raise GateError(f"Need 30 VERIFIED IDs; have {counts['VERIFIED']}")
