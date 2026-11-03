@@ -1,4 +1,4 @@
-# GK80 · Päätöstaulukko 60 ehdotukselle
+# GK80 · Päätöstaulukko 79 ehdotukselle
 
 Main: `4d6f19a620bb95e771c12f499554bf2cf1f06e51`. Numeerinen lähtökattavuus 207/326. Erät sisältävät 30 + 30 erillistä reseptiä. Aiemmat Decimal-tarkistukset kattavat 48 + 37 skenaariota. Ehdotukset odottavat hyväksyntää. Täysi potentiaali 267/326 (81,90 %).
 
