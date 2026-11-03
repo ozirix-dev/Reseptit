@@ -251,7 +251,12 @@ def one_turn(root: Path, state: dict, queue: dict, p: dict, executable: str,
     if not shutil.which(executable):
         raise GateError(f"Codex executable not found: {executable}")
     acquire(p["lock"])
-    previous = json.dumps(queue, sort_keys=True, ensure_ascii=False)
+    # Material progress, not a repeatedly edited prose note or timestamp.
+    def fingerprint(q: dict) -> str:
+        items = [(v.get("recipeId"), v.get("status"), v.get("evidenceSha256"), v.get("blocker"))
+                 for v in q["candidates"]]
+        return json.dumps(sorted(items), sort_keys=True, ensure_ascii=False)
+    previous = fingerprint(queue)
     state["phase"], state["reason"] = "RUNNING", ""
     atomic_json(p["state"], state)
     p["logs"].mkdir(parents=True, exist_ok=True)
@@ -283,6 +288,23 @@ def one_turn(root: Path, state: dict, queue: dict, p: dict, executable: str,
                     break
                 time.sleep(0.5)
             result_code = proc.returncode if proc.returncode is not None else -1
+    except KeyboardInterrupt:
+        if "proc" in locals() and proc.poll() is None:
+            proc.terminate()
+            try:
+                proc.wait(timeout=8)
+            except subprocess.TimeoutExpired:
+                proc.kill()
+                proc.wait(timeout=8)
+        state["turns"] += 1
+        state["phase"], state["reason"] = "STOPPED_REQUESTED", "Ctrl+C interrupted the local Codex turn"
+        atomic_json(p["state"], state)
+        return False
+    except (OSError, subprocess.SubprocessError) as exc:
+        state["turns"] += 1
+        state["phase"], state["reason"] = "STOPPED_CODEX_ERROR", str(exc)
+        atomic_json(p["state"], state)
+        return False
     finally:
         p["lock"].unlink(missing_ok=True)
 
@@ -305,7 +327,7 @@ def one_turn(root: Path, state: dict, queue: dict, p: dict, executable: str,
         state["phase"], state["reason"] = "STOPPED_INVALID_QUEUE", str(exc)
         atomic_json(p["state"], state)
         return False
-    unchanged = json.dumps(new_queue, sort_keys=True, ensure_ascii=False) == previous
+    unchanged = fingerprint(new_queue) == previous
     state["staleTurns"] = state.get("staleTurns", 0) + 1 if unchanged else 0
     state["lastVerified"] = new_counts["VERIFIED"]
     if result_code != 0:
