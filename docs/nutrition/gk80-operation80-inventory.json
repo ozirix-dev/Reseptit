@@ -4,9 +4,9 @@
   "coverage": {
     "PROPOSED_RANGE": 36,
     "PUBLISHED_SINGLE": 197,
-    "PROPOSED_SINGLE": 26,
+    "PROPOSED_SINGLE": 27,
     "IN_PROGRESS": 36,
-    "NO_GK": 21,
+    "NO_GK": 20,
     "PUBLISHED_RANGE": 10
   },
   "reviewedPrHeads": {
@@ -111,7 +111,7 @@
     "japanilainen-curry-tofulla",
     "khao-soi-vhh-konjac"
   ],
-  "nextRecipeId": "pohjoisafrikkalainen-bissara",
+  "nextRecipeId": "silakkapihvit-tilli-kermakastike",
   "recipes": [
     {
       "recipeId": "aloo-paratha",
@@ -13616,10 +13616,10 @@
       "recipeSha256": "1ff5c53d68cced68d1a56360dafccd38096f3192a2d0579cd79214362b9581a3",
       "pilotInputSha256": "733a84539094e3939af5cdc76a57ed66ca62fd5cec266fb5f1a886d44ea19451",
       "servings": 2,
-      "status": "NO_GK",
+      "status": "PROPOSED_SINGLE",
       "priorEvidence": [],
-      "level": null,
-      "ownerApproval": null,
+      "level": "B",
+      "ownerApproval": false,
       "sourceQualified": null,
       "blockers": [
         "pohjoisafrikkalainen-bissara: härkäpapu: No specific Fineli/AFCD food record and preparation match was resolved for “härkäpapu”; it is not treated as zero.",
@@ -13710,7 +13710,39 @@
             "Individual sub-1 g contribution counted toward cumulative 2 g/serving editorial tolerance: Conservative culinary-use bound 0.2 g per recipe, divided by servings, below 1 g available carbohydrate per serving."
           ]
         }
-      ]
+      ],
+      "operation80Proposal": {
+        "evidencePath": "docs/nutrition/gk80-operation80-batch-43.md",
+        "baselineRecipeSha256": "1ff5c53d68cced68d1a56360dafccd38096f3192a2d0579cd79214362b9581a3",
+        "inputFields": [
+          "gramsBatch",
+          "choPer100g",
+          "giGlucoseScale"
+        ],
+        "scenarios": [
+          {
+            "inputs": [
+              [
+                150,
+                53.6,
+                66
+              ],
+              [
+                3,
+                10.2,
+                40
+              ],
+              [
+                2,
+                33.7,
+                50
+              ]
+            ],
+            "gkPerServing": "26.7617"
+          }
+        ],
+        "publicationAuthorized": false
+      }
     },
     {
       "recipeId": "pohjoisafrikkalainen-harcha-juustolla",
