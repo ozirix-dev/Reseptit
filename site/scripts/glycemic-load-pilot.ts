@@ -120,14 +120,15 @@ const ackeePacket = JSON.parse(await readFile(
   path.join(root, 'docs/nutrition/gk80-operation80-ackee-release-candidate.json'), 'utf8'));
 // Keep the unavailable historical result tied to its original source binding.
 const ackeeSource = publishedRecipeSources.get(ackeeRecipeId);
+const historicalAckeeBinding = recipeBindings.recipes[ackeeRecipeId];
 if (!ackeeSource || textHash(ackeeSource.markdown) !== ackeePacket.foodSafety.preparedRecipeSha256
-    || !recipeBindings.recipes[ackeeRecipeId]) {
+    || !historicalAckeeBinding) {
   throw new Error('Operation80 ackee recipe binding changed');
 }
 const sourceHashes = Object.fromEntries(expectedRecipeIds.map((recipeId) => {
   const source = publishedRecipeSources.get(recipeId);
   if (!source) throw new Error("Published source recipe is missing from the current GK set: " + recipeId);
-  return [recipeId, recipeId === ackeeRecipeId ? recipeBindings.recipes[recipeId] : recipeBindingHash(source.markdown, recipeAliases.aliases)];
+  return [recipeId, recipeId === ackeeRecipeId ? historicalAckeeBinding : recipeBindingHash(source.markdown, recipeAliases.aliases)];
 }));
 
 // Only explicitly bound new versions require whole preparation/translation text.
