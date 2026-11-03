@@ -1,0 +1,227 @@
+{
+  "recipeId": "roujiamo",
+  "servings": 4,
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "unroundedGk": "45.339936",
+  "inputs": [
+    [
+      300,
+      73.998,
+      79.6
+    ],
+    [
+      30,
+      14,
+      50
+    ],
+    [
+      15,
+      31,
+      50
+    ],
+    [
+      12,
+      4.74,
+      40
+    ]
+  ],
+  "omissions": [
+    {
+      "ingredientIndex": 4,
+      "choPer100g": 14.32
+    },
+    {
+      "ingredientIndex": 5,
+      "choPer100g": 44.24
+    },
+    {
+      "ingredientIndex": 6,
+      "choPer100g": 100
+    },
+    {
+      "ingredientIndex": 7,
+      "choPer100g": 100
+    }
+  ],
+  "ingredients": [
+    {
+      "name": {
+        "fi": "Vehnäjauho",
+        "en": "Wheat flour",
+        "sv": "Vetemjöl",
+        "th": "แป้งสาลี"
+      },
+      "grams": 300
+    },
+    {
+      "name": {
+        "fi": "Lee Kum Kee Premium Light Soy Sauce",
+        "en": "Lee Kum Kee Premium Light Soy Sauce",
+        "sv": "Lee Kum Kee Premium Light Soy Sauce",
+        "th": "ซีอิ๊วขาว Lee Kum Kee"
+      },
+      "grams": 30
+    },
+    {
+      "name": {
+        "fi": "Lee Kum Kee Premium Dark Soy Sauce",
+        "en": "Lee Kum Kee Premium Dark Soy Sauce",
+        "sv": "Lee Kum Kee Premium Dark Soy Sauce",
+        "th": "ซีอิ๊วดำ Lee Kum Kee"
+      },
+      "grams": 15
+    },
+    {
+      "name": {
+        "fi": "Kevätsipuli",
+        "en": "Spring onion",
+        "sv": "Salladslök",
+        "th": "ต้นหอม"
+      },
+      "grams": 12
+    },
+    {
+      "name": {
+        "fi": "Kuivahiiva",
+        "en": "Dry yeast",
+        "sv": "Torrjäst",
+        "th": "ยีสต์แห้ง"
+      },
+      "grams": 3
+    },
+    {
+      "name": {
+        "fi": "Juustokumina",
+        "en": "Cumin",
+        "sv": "Spiskummin",
+        "th": "ยี่หร่า"
+      },
+      "grams": 2
+    },
+    {
+      "name": {
+        "fi": "Kanelitanko",
+        "en": "Cinnamon stick",
+        "sv": "Kanelstång",
+        "th": "อบเชยแท่ง"
+      },
+      "grams": 3
+    },
+    {
+      "name": {
+        "fi": "Tähtianis",
+        "en": "Star anise",
+        "sv": "Stjärnanis",
+        "th": "โป๊ยกั๊ก"
+      },
+      "grams": 2
+    },
+    {
+      "name": {
+        "fi": "Maustamaton kassler",
+        "en": "Unseasoned pork shoulder",
+        "sv": "Okryddad fläskkarré",
+        "th": "เนื้อหมูส่วนคอไม่ปรุงรส"
+      },
+      "grams": 700
+    },
+    {
+      "name": {
+        "fi": "Vesi taikinaan",
+        "en": "Water for dough",
+        "sv": "Vatten till degen",
+        "th": "น้ำสำหรับแป้ง"
+      },
+      "grams": 180
+    },
+    {
+      "name": {
+        "fi": "Vesi liemeen",
+        "en": "Water for broth",
+        "sv": "Vatten till buljongen",
+        "th": "น้ำสำหรับต้มหมู"
+      },
+      "grams": null,
+      "quantity": {
+        "amount": 1000,
+        "unit": "ml"
+      }
+    },
+    {
+      "name": {
+        "fi": "Suola",
+        "en": "Salt",
+        "sv": "Salt",
+        "th": "เกลือ"
+      },
+      "grams": null
+    }
+  ],
+  "preparation": {
+    "fi": "Hauduta {{amount:8}} g kassleria {{amount:10}} ml:ssa vettä, jossa on {{amount:1}} g vaaleaa ja {{amount:2}} g tummaa soijakastiketta, {{amount:6}} g kanelia, {{amount:7}} g tähtianista, {{amount:5}} g juustokuminaa ja suolaa. Hauduta noin 2 tuntia, kunnes liha on mureaa. Poista kokonaiset mausteet. Vaivaa {{amount:0}} g jauhoa, {{amount:9}} g lämmintä vettä ja {{amount:4}} g kuivahiivaa. Kohota 45 minuuttia. Muotoile {{servings}} noin sentin paksuista leipää ja paista kuivalla pannulla 4–5 minuuttia puoleltaan. Hienonna liha, kostuta hiukan liemellä, lisää {{amount:3}} g kevätsipulia ja täytä leivät.",
+    "en": "Simmer {{amount:8}} g pork in {{amount:10}} ml water with {{amount:1}} g light and {{amount:2}} g dark soy sauce, {{amount:6}} g cinnamon, {{amount:7}} g star anise, {{amount:5}} g cumin and salt. Cook for about 2 hours until tender and remove whole spices. Knead {{amount:0}} g flour, {{amount:9}} g warm water and {{amount:4}} g yeast. Let rise for 45 minutes. Shape {{servings}} breads about 1 cm thick and cook in a dry pan for 4–5 minutes per side. Chop the pork, moisten with a little broth, add {{amount:3}} g spring onion and fill the breads.",
+    "sv": "Sjud {{amount:8}} g fläskkarré i {{amount:10}} ml vatten med {{amount:1}} g ljus och {{amount:2}} g mörk soja, {{amount:6}} g kanel, {{amount:7}} g stjärnanis, {{amount:5}} g spiskummin och salt. Sjud i cirka 2 timmar tills köttet är mört. Ta bort hela kryddor. Knåda {{amount:0}} g mjöl, {{amount:9}} g varmt vatten och {{amount:4}} g jäst. Låt jäsa i 45 minuter. Forma {{servings}} bröd, cirka 1 cm tjocka, och stek i torr panna i 4–5 minuter per sida. Hacka köttet, tillsätt lite buljong och {{amount:3}} g salladslök och fyll bröden.",
+    "th": "เคี่ยวเนื้อหมู {{amount:8}} กรัมในน้ำ {{amount:10}} มล. กับซีอิ๊วขาว {{amount:1}} กรัม ซีอิ๊วดำ {{amount:2}} กรัม อบเชย {{amount:6}} กรัม โป๊ยกั๊ก {{amount:7}} กรัม ยี่หร่า {{amount:5}} กรัม และเกลือ ประมาณ 2 ชั่วโมงจนหมูนุ่ม แล้วตักเครื่องเทศทั้งชิ้นออก นวดแป้ง {{amount:0}} กรัม น้ำอุ่น {{amount:9}} กรัม และยีสต์ {{amount:4}} กรัม พักให้ขึ้น 45 นาที ปั้นขนมปัง {{servings}} ชิ้นหนาประมาณ 1 ซม. จี่ในกระทะแห้งด้านละ 4–5 นาที สับหมู เติมน้ำต้มเล็กน้อยกับต้นหอม {{amount:3}} กรัม แล้วใส่ไส้ขนมปัง"
+  },
+  "limitation": {
+    "fi": "Leivän GI-verrokki on kiinalainen vehnälettu. Kohotus ja paisto voivat muuttaa vastetta. Molempien soijakastikkeiden hiilihydraatit lasketaan mukaan kokonaan.",
+    "en": "The bread uses a Chinese wheat pancake GI comparator. Proofing and cooking can affect the response. All carbohydrate from both soy sauces is counted.",
+    "sv": "Brödet jämförs med en kinesisk vetepannkaka. Jäsning och stekning kan påverka responsen. Alla kolhydrater från båda sojasåserna räknas med.",
+    "th": "ค่า GI ของขนมปังอ้างอิงแผ่นแป้งสาลีจีน การหมักและการจี่อาจเปลี่ยนการตอบสนอง คำนวณคาร์โบไฮเดรตทั้งหมดจากซีอิ๊วทั้งสองชนิด"
+  },
+  "sources": [
+    {
+      "title": "Yang et al.",
+      "url": "https://www.wjgnet.com/1007-9327/full/v12/i21/3430-T2.htm",
+      "kind": "HUMAN_GI",
+      "note": "Chinese wheat pancake, GI 79.6."
+    },
+    {
+      "title": "Fineli 110",
+      "url": "https://fineli.fi/fineli/fi/ohje/19",
+      "kind": "CARBOHYDRATE",
+      "note": "THL CC BY 4.0."
+    },
+    {
+      "title": "Lee Kum Kee light",
+      "url": "https://uk.lkk.com/veg-voyage-products/premium-light-soy-sauce",
+      "kind": "CARBOHYDRATE",
+      "note": "14 g per 100 g."
+    },
+    {
+      "title": "Lee Kum Kee dark",
+      "url": "https://uk.lkk.com/products/premium-dark-soy-sauce",
+      "kind": "CARBOHYDRATE",
+      "note": "31 g per 100 g."
+    },
+    {
+      "title": "USDA 170005",
+      "url": "https://fdc.nal.usda.gov/food-details/170005/nutrients",
+      "kind": "CARBOHYDRATE",
+      "note": "Available carbohydrate by difference."
+    },
+    {
+      "title": "USDA yeast",
+      "url": "https://fdc.nal.usda.gov/food-details/175043/nutrients",
+      "kind": "BOUND",
+      "note": "14.32 g per 100 g."
+    },
+    {
+      "title": "USDA cumin",
+      "url": "https://www.govinfo.gov/content/pkg/GOVPUB-A77-PURL-LPS86777/pdf/GOVPUB-A77-PURL-LPS86777.pdf",
+      "kind": "BOUND",
+      "note": "Total carbohydrate, 44.24 g per 100 g."
+    },
+    {
+      "title": "GI coding",
+      "url": "https://doi.org/10.2337/dc08-1239",
+      "kind": "PUBLISHED_CODING",
+      "note": "Soy sauce and spring onion use assigned codes."
+    }
+  ],
+  "boundFiles": {
+    "reseptit/paaruoat/roujiamo.md": "2817c67ea94abfd7eeeffa4e9a9b15911b84d72879e3f0cdd14d163932df02a6",
+    "docs/nutrition/gk80-operation80-batch-60.md": "8a6b3363b2a5b20d4a51750594d1e8baa7d25d43c1be24bd8ad4bbb3e69f8d4b"
+  }
+}
