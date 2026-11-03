@@ -1,0 +1,95 @@
+{
+  "inputs": {
+    "rows": [
+      {
+        "name": "Frozen plain saithe",
+        "grams": 600,
+        "fineli": "SEITI, PAKASTE"
+      },
+      {
+        "name": "Fairtrade Original coconut milk 1 L",
+        "grams": 400,
+        "cap": 0.8,
+        "url": "https://www.fairtradeoriginal.nl/product/biologische-kokosmelk-1-l/"
+      },
+      {
+        "name": "Yellow onion",
+        "grams": 55,
+        "fineli": "SIPULI, KELTASIPULI",
+        "coded": true
+      },
+      {
+        "name": "Garlic, two medium cloves",
+        "grams": 7,
+        "fineli": "VALKOSIPULI",
+        "coded": true
+      },
+      {
+        "name": "Fresh peeled ginger",
+        "grams": 15,
+        "afcd": "F004213"
+      },
+      {
+        "name": "Blue Dragon Tamarind Paste",
+        "grams": 10,
+        "cap": 16,
+        "url": "https://www.bluedragon.co.uk/products/tamarind-paste"
+      },
+      {
+        "name": "Ground dried turmeric",
+        "grams": 1.5,
+        "afcd": "F009335"
+      },
+      {
+        "name": "Chili powder",
+        "grams": 0.5,
+        "cap": 100
+      },
+      {
+        "name": "Mustard seeds",
+        "grams": 1,
+        "cap": 100
+      },
+      {
+        "name": "Optional curry leaves, omitted in this version",
+        "grams": 0,
+        "excluded": true
+      },
+      {
+        "name": "Pure oil, all retained",
+        "grams": 27,
+        "fineli": "KOOKOSÖLJY"
+      },
+      {
+        "name": "Pure salt",
+        "grams": 6,
+        "zero": true
+      },
+      {
+        "name": "Water for tamarind",
+        "grams": 100,
+        "zero": true
+      }
+    ],
+    "servings": 4,
+    "recipeId": "kerala-kalacurry",
+    "scope": "Curry only; rice is a separately calculated serving suggestion. Retain all served sauce. Weighed coconut milk and spices are a new exact version. No optional curry leaves.",
+    "lfSha256": {
+      "reseptit/paaruoat/kerala-kalacurry.md": "0c2d96d105ba258e741c9e50ffd7250f20f59167e63fb4850757f98dc46e2fed",
+      "kaannokset/en/paaruoat/kerala-kalacurry.md": "4a21ff86b6cf54f6060d14cfcf350087c86d0b2f1012967390124b6ad57f9b4c",
+      "kaannokset/sv/paaruoat/kerala-kalacurry.md": "83a6cecffc6102dc09a5eb4e01cc538a7373a9684f46e231ad01ce00e6dcbab7",
+      "kaannokset/th/paaruoat/kerala-kalacurry.md": "2b830cc2b14657cc10aabdea696cffdbca08fd793a3ecda3af0f8aee3433a6cd",
+      "docs/nutrition/fineli-release-20-reference.json": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76",
+      "docs/nutrition/afcd-release-3-reference.json": "02edf1cc95191c05edf791656a5109c41bcf4d4a3e707be69ef5009bc640022e",
+      "docs/nutrition/glycemic-index-records.json": "fb465ac8f68ffc85e29eb9900f17df00b081fa0ddc3e25d253140aecb248acda",
+      "site/scripts/glycemic-load-model.ts": "10ce09e465886e4538fc0b2ad2a54ca0b050a9e3729b7417eb0a91f2b946b48c"
+    }
+  },
+  "inputSha256": "69b262d069dbe69e4f61d2a5a6057132660b3a04bc2a38cfe2e4f93654b4bb05",
+  "calculatedGkPart": 0.38,
+  "unroundedGk": 0.3781,
+  "omittedChoPerServing": 1.9215,
+  "sourceQualified": false,
+  "ownerApproved": false,
+  "publicationAuthorized": false
+}
