@@ -2,11 +2,11 @@
   "schemaVersion": 1,
   "main": "4d6f19a620bb95e771c12f499554bf2cf1f06e51",
   "coverage": {
-    "PROPOSED_RANGE": 30,
+    "PROPOSED_RANGE": 31,
     "PUBLISHED_SINGLE": 197,
     "PROPOSED_SINGLE": 22,
     "IN_PROGRESS": 36,
-    "NO_GK": 31,
+    "NO_GK": 30,
     "PUBLISHED_RANGE": 10
   },
   "reviewedPrHeads": {
@@ -15650,10 +15650,10 @@
       "recipeSha256": "dd8b9c75be69130d255850296fbb22c4654c3364487cdd7a872a7099632950f1",
       "pilotInputSha256": "de5405c5fdd52c44008ad8377ea5e8660479bfa84d2daacb7c339b3785d9da67",
       "servings": 4,
-      "status": "NO_GK",
+      "status": "PROPOSED_RANGE",
       "priorEvidence": [],
-      "level": null,
-      "ownerApproval": null,
+      "level": "B",
+      "ownerApproval": false,
       "sourceQualified": null,
       "blockers": [
         "tom-kha-gai-vhh: täysrasvaista kookosmaitoa: GI evidence is missing for standalone coconut milk. PMID 22849311 measured rice porridge with coconut milk (GI 31), not this ingredient; the mixed-meal result is not an accepted analogue.",
@@ -15792,7 +15792,99 @@
             "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.057 g available carbohydrate): GI evidence is missing."
           ]
         }
-      ]
+      ],
+      "operation80Proposal": {
+        "evidencePath": "docs/nutrition/gk80-operation80-batch-33.md",
+        "baselineRecipeSha256": "dd8b9c75be69130d255850296fbb22c4654c3364487cdd7a872a7099632950f1",
+        "inputFields": [
+          "gramsBatch",
+          "choPer100g",
+          "giGlucoseScale"
+        ],
+        "scenarios": [
+          {
+            "inputs": [
+              [
+                600,
+                0,
+                0
+              ],
+              [
+                400,
+                1.7,
+                50
+              ],
+              [
+                200,
+                0.3,
+                50
+              ],
+              [
+                30,
+                4.8,
+                50
+              ],
+              [
+                30,
+                3,
+                50
+              ],
+              [
+                12,
+                4.8,
+                40
+              ],
+              [
+                12,
+                0.505,
+                50
+              ]
+            ],
+            "gkPerServing": "1.282675"
+          },
+          {
+            "inputs": [
+              [
+                600,
+                0,
+                0
+              ],
+              [
+                400,
+                3.4,
+                50
+              ],
+              [
+                200,
+                0.3,
+                50
+              ],
+              [
+                30,
+                4.8,
+                50
+              ],
+              [
+                30,
+                3,
+                50
+              ],
+              [
+                12,
+                4.8,
+                40
+              ],
+              [
+                12,
+                0.505,
+                50
+              ]
+            ],
+            "gkPerServing": "2.132675"
+          }
+        ],
+        "publicationAuthorized": false
+      }
     },
     {
       "recipeId": "tom-yum-goong-vhh",
