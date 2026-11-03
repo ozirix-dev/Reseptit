@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "activation": false,
+  "ownerApproval": false,
+  "startingHead": "98e1b21ee5bdd4745a041024abb0dde851bbb806",
+  "sourceFilesLfSha256": {
+    "docs/nutrition/fineli-release-20-reference.json": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76",
+    "docs/nutrition/afcd-release-3-reference.json": "02edf1cc95191c05edf791656a5109c41bcf4d4a3e707be69ef5009bc640022e",
+    "docs/nutrition/food-records.json": "2f8ff76b97848294c28195bb92c6d202e9754168ddb169d30ee5e8610d2c2b9b",
+    "docs/nutrition/glycemic-index-records.json": "fb465ac8f68ffc85e29eb9900f17df00b081fa0ddc3e25d253140aecb248acda",
+    "site/scripts/glycemic-load-model.ts": "10ce09e465886e4538fc0b2ad2a54ca0b050a9e3729b7417eb0a91f2b946b48c"
+  },
+  "externalObservations": [
+    {
+      "id": "FTO_1L_08_G",
+      "basis": "per100g",
+      "declaredCarbohydrate": 0.8,
+      "url": "https://www.fairtradeoriginal.nl/product/biologische-kokosmelk-1-l/"
+    },
+    {
+      "id": "SQUID300",
+      "basis": "per100g",
+      "declaredCarbohydrate": 2.6,
+      "url": "https://wiltonwholefoods.com/2513-squid-brand-fish-sauce-300ml-8850620888012.html"
+    },
+    {
+      "id": "AYAM_YELLOW_185",
+      "basis": "per100g",
+      "declaredCarbohydrate": 8.7,
+      "url": "https://ayam.com/index.php?Itemid=101&category_pathway=92&cid=191&ctrl=product&name=thai-yellow-curry-paste-185g-x-6&option=com_hikashop&task=show"
+    },
+    {
+      "id": "TURMERIC_WHOLE_MASS",
+      "basis": "per100g",
+      "totalCarbohydrate": 100
+    }
+  ],
+  "composition": [
+    {
+      "id": "F322",
+      "kind": "FINELI_NATIVE_POINT",
+      "nativeId": "322",
+      "name": "KUKKAKAALI",
+      "availablePer100g": 2.35,
+      "nativeField": "per100g.available_carbohydrate_g_per_100g"
+    },
+    {
+      "id": "A002806",
+      "kind": "AFCD_NATIVE_POINT",
+      "nativeId": "F002806",
+      "name": "Chicken, thigh, lean flesh, raw",
+      "availablePer100g": 0,
+      "nativeField": "available_carbohydrate_without_sugar_alcohols_g_per_100g"
+    },
+    {
+      "id": "FOODIN_ERYTHRITOL",
+      "kind": "EXPLICIT_LABEL_DIFFERENCE",
+      "nativeId": "foodin-erythritol-200g-label-2026-10-24",
+      "availablePer100g": 0,
+      "carbohydrate": 100,
+      "polyols": 100
+    },
+    {
+      "id": "34140",
+      "nativeId": "34140",
+      "kind": "FINELI_NATIVE_POINT",
+      "name": "KOOKOSÖLJY",
+      "availablePer100g": 0.0
+    },
+    {
+      "id": "335",
+      "nativeId": "335",
+      "kind": "FINELI_NATIVE_POINT",
+      "name": "SIPULI, KELTASIPULI",
+      "availablePer100g": 4.8
+    },
+    {
+      "id": "34238",
+      "nativeId": "34238",
+      "kind": "FINELI_NATIVE_POINT",
+      "name": "KORIANTERI, TUORE",
+      "availablePer100g": 0.505
+    }
+  ],
+  "giBinding": {
+    "nativeId": "op142-vegetable-imputation40",
+    "value": 40,
+    "allowedCompositionIds": [
+      "335",
+      "F322"
+    ],
+    "meaning": "Existing named nonstarchy vegetable PI coding; not measured ingredient GI or new category mean."
+  }
+}
