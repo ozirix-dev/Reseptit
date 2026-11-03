@@ -19,4 +19,3 @@ Knorrin tuoteselosteen 12,3 g CHO/100 g antaa tahnasta 0,9225 g/annos. Limettime
 | FI | EN | SV | TH |
 |---|---|---|---|
 | GK 2,09–2,94 / annos · arvio | GL 2.09–2.94 per serving · estimate | GB 2,09–2,94 per portion · uppskattning | ภาระน้ำตาล 2.09–2.94 ต่อหนึ่งหน่วยบริโภค · ค่าประมาณ |
-
