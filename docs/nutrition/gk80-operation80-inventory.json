@@ -2,11 +2,11 @@
   "schemaVersion": 1,
   "main": "4d6f19a620bb95e771c12f499554bf2cf1f06e51",
   "coverage": {
-    "PROPOSED_RANGE": 28,
+    "PROPOSED_RANGE": 29,
     "PUBLISHED_SINGLE": 197,
     "PROPOSED_SINGLE": 21,
     "IN_PROGRESS": 36,
-    "NO_GK": 34,
+    "NO_GK": 33,
     "PUBLISHED_RANGE": 10
   },
   "reviewedPrHeads": {
@@ -111,7 +111,7 @@
     "japanilainen-curry-tofulla",
     "khao-soi-vhh-konjac"
   ],
-  "nextRecipeId": "kookos-lime-kanacurry",
+  "nextRecipeId": "korealainen-mandu-keitto-aamiaiseksi",
   "recipes": [
     {
       "recipeId": "aloo-paratha",
@@ -7621,10 +7621,10 @@
       "recipeSha256": "3b0e306e88dc4feed09e84a47c445e87dff9046c7ea83bddf4605cfe98187f9c",
       "pilotInputSha256": "3a8400bcc7e293df12f4fa49a7ec77338ca9440e594fd7ff2e6b62dd11cd7167",
       "servings": 4,
-      "status": "NO_GK",
+      "status": "PROPOSED_RANGE",
       "priorEvidence": [],
-      "level": null,
-      "ownerApproval": null,
+      "level": "B",
+      "ownerApproval": false,
       "sourceQualified": null,
       "blockers": [
         "kookos-lime-kanacurry: thaimaalaista currytahnaa: No source-matched composition and preparation was resolved for “thaimaalaista currytahnaa”; it is not treated as zero.",
@@ -7727,7 +7727,89 @@
             "Source-documented zero available carbohydrate: Pure edible oil has zero available carbohydrate."
           ]
         }
-      ]
+      ],
+      "operation80Proposal": {
+        "evidencePath": "docs/nutrition/gk80-operation80-batch-30.md",
+        "baselineRecipeSha256": "3b0e306e88dc4feed09e84a47c445e87dff9046c7ea83bddf4605cfe98187f9c",
+        "inputFields": [
+          "gramsBatch",
+          "choPer100g",
+          "giGlucoseScale"
+        ],
+        "scenarios": [
+          {
+            "inputs": [
+              [
+                500,
+                0,
+                0
+              ],
+              [
+                400,
+                1.7,
+                50
+              ],
+              [
+                150,
+                3.3,
+                40
+              ],
+              [
+                150,
+                4.5,
+                40
+              ],
+              [
+                18,
+                3,
+                50
+              ],
+              [
+                10,
+                0.2,
+                50
+              ]
+            ],
+            "gkPerServing": "2.09"
+          },
+          {
+            "inputs": [
+              [
+                500,
+                0,
+                0
+              ],
+              [
+                400,
+                3.4,
+                50
+              ],
+              [
+                150,
+                3.3,
+                40
+              ],
+              [
+                150,
+                4.5,
+                40
+              ],
+              [
+                18,
+                3,
+                50
+              ],
+              [
+                10,
+                0.2,
+                50
+              ]
+            ],
+            "gkPerServing": "2.94"
+          }
+        ],
+        "publicationAuthorized": false
+      }
     },
     {
       "recipeId": "korealainen-bataatti-riisikulho",
