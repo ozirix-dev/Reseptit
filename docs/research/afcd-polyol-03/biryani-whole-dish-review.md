@@ -11,3 +11,7 @@ Emiraattilaisessa kokeessa basmatiriisi tarjoiltiin keitetyn kanan kanssa. Ainek
 - [Emiraattilainen tutkimus, taulukot 1 ja 3](https://doi.org/10.1017/S0007114517001027)
 - [Pilau ja kanacurry](https://pubmed.ncbi.nlm.nih.gov/24661372/)
 - [Reseptin laskentasyöte](../../nutrition/calculations/hyderabadi-kanabiryani.json)
+
+## Hyväksyntä
+
+Käyttäjä hyväksyi commitissa 3084308 katselmoidun tarkan 24–32 GK/annos -version myöhemmän integraation valmisteluun. Hyväksyntä koskee tämän reseptin kahta kokonaisateriaviitettä ja kuvattua hiilihydraattisyötettä. Julkaisu päätetään erikseen.
