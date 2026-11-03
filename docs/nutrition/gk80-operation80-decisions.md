@@ -105,3 +105,9 @@ Aiemman ehdotuksen 21,64 GK/annos jää historiatiedoksi. Reseptin 100 g mannasu
 Veteen kypsennetyn upittun taulukkoarvo 67 sisältää paahdetun mannan ja sipulin. Se ei yksin ratkaise öljyttömän mannapuuron GI-sidosta. Seuraava tarkistus on ensisijaisen valmistuskuvauksen ja vertailuaterian varmistaminen. [Kansainvälinen GI-taulukko](https://ajcn.nutrition.org/article/S0002-9165%2823%2905840-9/fulltext)
 
 Julkaistun mannasuurimoupman lähdepaketti sitoo Uroojin ja Puttarajin GI:n 69 paahdetusta mannasta, sipulista ja öljystä kypsennettyyn kokonaisuuteen. Luku on 11 terveen koehenkilön glukoosivertailusta. GI 67 on saman tutkimuksen eri osallistujaryhmän tulos. Siksi 67–69 ei kuvaa kahden valmistustavan vaihtelua. Upman hyväksyntä koskee sen yksilöityä reseptiversiota. Taatelipuuron veteen keitetylle mannalle jää avoin GI-sidos. [Urooj ja Puttaraj](https://pubmed.ncbi.nlm.nih.gov/10953672/) · [Upman lähdepaketti](gk80-four-approved-b/gi-fallback/sources.json)
+
+### Manakish za’atarilla
+
+Nykyinen kahden annoksen resepti käyttää 150 g vehnäjauhoa ja 100 g jogurttia ilman hiivaa. Ohje sallii pannun tai uunin. Aiempi tutkimusversio, 30,5 GK / testiannos, koskee hiivalla kohotettua ja kiviuunissa paistettua mankouchehia, joka pakastettiin ja lämmitettiin ennen koetta. Nykyohjeelle siitä ei siirretä numeroa. [Tutkimusversion erittely](../research/gk80-international-20261102/manakish-study.md)
+
+Jogurttia sisältävän vehnäleivän tutkimus arvioi tärkkelyksen sulavuutta laboratoriossa. Chapati-kokeessa oli ihmisillä mitattu kohottamaton litteä leipä, mutta se ei sido tämän reseptin jogurtti–vehnätaikinaa ja mausteöljyä. Julkaistun version GK jää avoimeksi. Erillinen tutkimusversio edellyttäisi valmistuksen ja tarjoilun täsmennystä sekä sisältöpäätöstä. [Jogurttitaikinan laboratoriokoe](https://pubmed.ncbi.nlm.nih.gov/32877815/) · [Chapati-koe](https://pubmed.ncbi.nlm.nih.gov/19700035/)
