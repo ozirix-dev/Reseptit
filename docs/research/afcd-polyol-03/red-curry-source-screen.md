@@ -53,3 +53,9 @@ Neljä annosta. Säilytä 500 g broilerin paistileikettä, 150 g vihreitä taite
 A-moottori palautti CALCULATED. Taitepapujen GI 40 -mallilla laskettu osa on 0,495 GK/annos, pyöristettynä 0,50. Poisjättövaraus on 0,8 + 0,285 + 0,675 + 0,01875 + 0,05 + 0,005 = 1,83375 g/annos. Tuoteilmoitukset ovat nimellisiä ja taitepapujen GI 40 on julkaistuun imputointiin perustuva malliarvo. Tarkka sisältö ja mallisovellus odottavat hyväksyntää.
 
 [Red Boat -tuotetieto](https://ctfood.se/fish-sauce-12x500ml-red-boat/?language=vi)
+
+### Koko paprikan säilyttävä vaihtoehto
+
+Julkinen kana-fajitapellin punnittu versio käyttää Fineli 386:n punaiseen paprikaan kasvisten PI40-mallia. Tämä on aiempi reseptikohtainen sovellus. Kookos-limekanacurryssa 120 g paprikaa tuottaa 1,35 g imeytyvää hiilihydraattia annosta kohti ja samalla mallilla 0,54 GK-yksikköä. Taitepapujen kanssa laskettu osa olisi 1,035 GK/annos ja Red Boat -version muiden rivien poisjättö 1,15875 g/annos. Paprika säilyy kokonaan. Pannukypsennyksen mallisovellus ja täsmäversio vaativat katselmoinnin.
+
+[Julkinen fajitapellin lähdeseloste](https://ozirix-dev.github.io/Reseptit/glykeeminen-kuorma/#kana-fajita-pelti)
