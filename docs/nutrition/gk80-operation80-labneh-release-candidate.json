@@ -1,0 +1,109 @@
+{
+  "recipeId": "lahi-ita-labneh-kulho-zaatarilla",
+  "level": "B",
+  "servings": 2,
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "standalonePreparation": true,
+  "omittedCho": 0,
+  "rangeKind": "NAMED_COMPARATOR_SCENARIOS",
+  "preparation": {
+    "fi": "Jaa 100 g maustamatonta labneh’ta kahteen kulhoon. Lisää yhteensä 400 g raakaa kurkkua, 150 g valutettuja vihreitä oliiveja ja 2 g KFF Za’ataria. Viimeistele halutessasi oliiviöljyllä.",
+    "en": "Divide 100 g plain labneh between two bowls. Add a total of 400 g raw cucumber, 150 g drained green olives and 2 g KFF za’atar. Finish with olive oil if desired.",
+    "sv": "Fördela 100 g naturell labneh i två skålar. Tillsätt sammanlagt 400 g rå gurka, 150 g avrunna gröna oliver och 2 g KFF-za’atar. Ringla över olivolja om du vill.",
+    "th": "แบ่งลาบเนห์รสธรรมชาติ 100 กรัมใส่สองชาม เติมแตงกวาดิบรวม 400 กรัม มะกอกเขียวสะเด็ดน้ำ 150 กรัม และซาอาตาร์ KFF 2 กรัม ราดน้ำมันมะกอกได้ตามชอบ"
+  },
+  "limitation": {
+    "fi": "Vaihteluväli kuvaa kahta nimettyä labneh-tuotetta. Positiivisille ainesosille käytetään GI-laskentakoodeja.",
+    "en": "The range represents two named labneh products. Ingredients with available carbohydrate use assigned GI codes.",
+    "sv": "Intervallet gäller två namngivna labnehprodukter. Ingredienser med tillgängliga kolhydrater har tilldelade GI-koder.",
+    "th": "ช่วงค่านี้มาจากผลิตภัณฑ์ลาบเนห์สองชนิดที่ระบุ ส่วนผสมที่มีคาร์โบไฮเดรตที่ย่อยได้ใช้ค่า GI ที่กำหนดเพื่อการคำนวณ"
+  },
+  "commonSources": [
+    {
+      "id": "Fineli 346",
+      "url": "https://fineli.fi/fineli/fi/elintarvikkeet/346"
+    },
+    {
+      "id": "KFF Za’atar 12421",
+      "url": "https://www.kff.co.uk/zaatar-blend-seasoning/p/12421"
+    },
+    {
+      "id": "Fineli 34972",
+      "url": "https://fineli.fi/fineli/fi/elintarvikkeet/34972"
+    }
+  ],
+  "giCoding": {
+    "url": "https://doi.org/10.2337/dc08-1239",
+    "codes": {
+      "labneh": 30,
+      "cucumber": 40,
+      "zaatar": 50
+    }
+  },
+  "scenarioProducts": [
+    {
+      "name": "Sütdiyarı Labneh 180 g",
+      "url": "https://sutdiyari.com/en/products/labneh-180g-en/",
+      "inputs": [
+        [
+          100,
+          2,
+          30
+        ],
+        [
+          400,
+          1.4,
+          40
+        ],
+        [
+          2,
+          8.4,
+          50
+        ],
+        [
+          150,
+          0,
+          0
+        ]
+      ],
+      "unroundedGk": "1.462"
+    },
+    {
+      "name": "Kolios Labneh 200 g",
+      "url": "https://www.eurial.pl/produkty/kolios-labneh-200g/",
+      "inputs": [
+        [
+          100,
+          4.1,
+          30
+        ],
+        [
+          400,
+          1.4,
+          40
+        ],
+        [
+          2,
+          8.4,
+          50
+        ],
+        [
+          150,
+          0,
+          0
+        ]
+      ],
+      "unroundedGk": "1.777"
+    }
+  ],
+  "boundFiles": {
+    "reseptit/aamupalat/lahi-ita-labneh-kulho-zaatarilla.md": "7775f23aefb6aed2434512dd9f5cd42296d3e8bc6aa14decfeaf02bee0e7db95",
+    "docs/nutrition/gk80-operation80-batch-01.md": "986018a31ba494cc652e612c2ac8d3fba888846b14278732585a79e89e2ef66e"
+  },
+  "inputFields": [
+    "gramsBatch",
+    "choPer100g",
+    "giGlucoseScale"
+  ]
+}
