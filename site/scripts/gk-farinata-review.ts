@@ -205,7 +205,11 @@ export function buildAckeeReviewVariant(root: string): GkOnlyVariant {
 
 type PointReviewCandidate = Omit<Candidate, 'ingredients' | 'omittedCho'> & {
   omissions?: ({ ingredientIndex: number } & ({ choPer100ml: number } | { choPer100g: number }))[];
-  upperScenario?: { replacements: { inputIndex: number; ingredientIndex: number }[]; unroundedGk: string };
+  upperScenario?: {
+    unroundedGk: string;
+    replacements?: { inputIndex: number; ingredientIndex: number }[];
+    giOverrides?: { inputIndex: number; gi: number }[];
+  };
   inputs: [number, number, number][];
   ingredients: GkOnlyVariant['ingredients'];
   sources: GkOnlyVariant['sources'];
@@ -238,7 +242,7 @@ export function buildPointReviewVariant(root: string, packetPath: string): GkOnl
     if (c.omissions?.length) throw Error('Range omissions require scenario-specific bindings: ' + c.recipeId);
     const indices = new Set<number>();
     let delta = 0;
-    for (const { inputIndex, ingredientIndex } of c.upperScenario.replacements) {
+    for (const { inputIndex, ingredientIndex } of c.upperScenario.replacements ?? []) {
       const row = c.inputs[inputIndex];
       const grams = c.ingredients[ingredientIndex]?.grams;
       if (!row || indices.has(inputIndex) || ingredientIndex < c.inputs.length
@@ -247,6 +251,14 @@ export function buildPointReviewVariant(root: string, packetPath: string): GkOnl
       }
       indices.add(inputIndex);
       delta += (grams - row[0]) * row[1] * row[2];
+    }
+    for (const { inputIndex, gi } of c.upperScenario.giOverrides ?? []) {
+      const row = c.inputs[inputIndex];
+      if (!row || indices.has(inputIndex) || !Number.isFinite(gi) || gi <= 0) {
+        throw Error('Invalid GK range GI override: ' + c.recipeId);
+      }
+      indices.add(inputIndex);
+      delta += row[0] * row[1] * (gi - row[2]);
     }
     const max = point + delta / (10000 * c.servings);
     const expected = Number(c.upperScenario.unroundedGk);

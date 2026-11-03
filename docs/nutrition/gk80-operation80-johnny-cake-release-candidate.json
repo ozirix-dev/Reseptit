@@ -1,0 +1,137 @@
+{
+  "recipeId": "karibia-johnny-cake",
+  "servings": 2,
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "unroundedGk": "23.74589",
+  "upperScenario": {
+    "giOverrides": [
+      {
+        "inputIndex": 0,
+        "gi": 62.43
+      },
+      {
+        "inputIndex": 1,
+        "gi": 62.43
+      },
+      {
+        "inputIndex": 2,
+        "gi": 62.43
+      },
+      {
+        "inputIndex": 3,
+        "gi": 62.43
+      }
+    ],
+    "unroundedGk": "24.6255135"
+  },
+  "preparation": {
+    "fi": "Sekoita {{amount:0}} g vehnäjauhoa, {{amount:1}} g maitoa, {{amount:2}} g voita ja {{amount:3}} g leivinjauhetta. Anna levätä 10 minuuttia. Muotoile {{servings}} ohutta leipää ja paista molemmin puolin {{amount:4}} rkl:ssa öljyä.",
+    "en": "Mix {{amount:0}} g wheat flour, {{amount:1}} g milk, {{amount:2}} g butter and {{amount:3}} g baking powder. Rest for 10 minutes. Shape {{servings}} thin flatbreads and pan-fry both sides in {{amount:4}} tbsp oil.",
+    "sv": "Blanda {{amount:0}} g vetemjöl, {{amount:1}} g mjölk, {{amount:2}} g smör och {{amount:3}} g bakpulver. Låt vila i 10 minuter. Forma {{servings}} tunna bröd och stek båda sidor i {{amount:4}} msk olja.",
+    "th": "ผสมแป้งสาลี {{amount:0}} กรัม นม {{amount:1}} กรัม เนย {{amount:2}} กรัม และผงฟู {{amount:3}} กรัม พัก 10 นาที ปั้นเป็นแผ่นบาง {{servings}} แผ่นแล้วทอดทั้งสองด้านในน้ำมัน {{amount:4}} ช้อนโต๊ะ"
+  },
+  "limitation": {
+    "fi": "Vaihteluväli perustuu methi parathan ja chapatin GI-mittauksiin. Kotiversion taikinassa on maitoa, voita ja leivinjauhetta.",
+    "en": "The range uses measured GI values for methi paratha and chapati. This dough contains milk, butter and baking powder.",
+    "sv": "Intervallet bygger på uppmätt GI för methi paratha och chapati. Degen här innehåller mjölk, smör och bakpulver.",
+    "th": "ช่วงค่านี้อ้างอิงค่า GI ที่วัดจากเมธีปราตาและจาปาตี แป้งสูตรนี้มีนม เนย และผงฟู"
+  },
+  "ingredients": [
+    {
+      "grams": 100,
+      "name": {
+        "fi": "Vaalea vehnäjauho",
+        "en": "White wheat flour",
+        "sv": "Vitt vetemjöl",
+        "th": "แป้งสาลีขาว"
+      }
+    },
+    {
+      "grams": 60,
+      "name": {
+        "fi": "Maito",
+        "en": "Milk",
+        "sv": "Mjölk",
+        "th": "นม"
+      }
+    },
+    {
+      "grams": 15,
+      "name": {
+        "fi": "Voi",
+        "en": "Butter",
+        "sv": "Smör",
+        "th": "เนย"
+      }
+    },
+    {
+      "grams": 5,
+      "name": {
+        "fi": "Leivinjauhe",
+        "en": "Baking powder",
+        "sv": "Bakpulver",
+        "th": "ผงฟู"
+      }
+    },
+    {
+      "grams": null,
+      "name": {
+        "fi": "Paistoöljy",
+        "en": "Cooking oil",
+        "sv": "Stekolja",
+        "th": "น้ำมันสำหรับทอด"
+      },
+      "quantity": {
+        "amount": 1,
+        "unit": "tbsp"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Shobana et al., methi paratha",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35859429/",
+      "kind": "HUMAN_GI",
+      "note": "GI 60.2 for scenario A."
+    },
+    {
+      "title": "Shakappa et al., chapati",
+      "url": "https://doi.org/10.1007/s13197-022-05368-6",
+      "kind": "HUMAN_GI",
+      "note": "GI 62.43 for scenario B."
+    },
+    {
+      "title": "THL Fineli 110, 684, 576, 74",
+      "url": "https://fineli.fi/fineli/fi/ohje/19",
+      "kind": "CARBOHYDRATE",
+      "note": "THL Fineli CC BY 4.0."
+    }
+  ],
+  "inputs": [
+    [
+      100,
+      74,
+      60.2
+    ],
+    [
+      60,
+      4.8,
+      60.2
+    ],
+    [
+      15,
+      0.8,
+      60.2
+    ],
+    [
+      5,
+      37.8,
+      60.2
+    ]
+  ],
+  "boundFiles": {
+    "reseptit/aamupalat/karibia-johnny-cake.md": "eab5edacb27b76b31b5fb07912922d23bf5b88c5b09210efbff7802f138e34bc",
+    "docs/nutrition/gk80-operation80-batch-02.md": "01f74836bb0102bea0466fa74c86a1e5dacbc7a437ac20d8c8c1306572956f79"
+  }
+}
