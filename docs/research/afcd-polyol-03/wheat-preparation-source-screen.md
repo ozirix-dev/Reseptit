@@ -53,3 +53,11 @@ Omanin kokeessa vedellä tarjotun kasvissamosan GI oli 60,35, annos 50 g imeytyv
 Samosan päivitetty skenaario käyttää Finelin pakastehernettä 34229 (9,36 g/100 g) sekä 15 g Fineli 34238 -korianteria (0,505 g/100 g). Näillä hiilihydraattipohja on 73,3574375 g/annos ennen kuivamausteita. Ehdotetut 2 g juustokuminaa, 1 g garam masalaa ja 1 g chilijauhetta antavat massapohjaisen 0–1 g/annos varauksen. Uusia julkaistavia arvoja tässä seulassa 0.
 
 [Sadha roti](https://pubmed.ncbi.nlm.nih.gov/15182400/) · [Omanin samosakoe](https://www.squ.edu.om/Portals/10/DNNGalleryPro/uploads/2019/4/24/CAMSResearchReport2011.pdf)
+
+## Porsastäytteinen baozi
+
+Baozi ja vietnamilainen muna-sienitäytteinen bánh bao ovat eri reseptejä. Yangin ym. taulukon 2 höyrytetyn liha-sipulisämpylän GI 39,1 antaa baozin 80,36 g/annos hiilihydraattipohjalla 31,42076 GK. Singaporelaisen grilliporsassämpylän GI 66 antaa 53,0376 GK. Grilliporsassämpylä jää herkkyysvertailuksi. Lähteet eivät yksilöi vastaavuutta tämän reseptin hiivataikinaan, sokerimäärään tai täytteen suhteeseen.
+
+Nykyinen laskentasyöte on neljälle ja käyttää saatavaa hiilihydraattia ilman kuitua. Kuivahiivan erillinen nimellinen varaus on 0,4 g/annos. Mittalusikoiden ja kevätsipulin kappalemäärien muunnokset on tarkistettava täsmäversiolle. Kokonaisruokavertailussa maissitärkkelystä ei lasketa erillisenä GI-osuutena. Julkaistavaa vaihteluväliä ei ole.
+
+[Yang ym., taulukko 2](https://doi.org/10.3748/wjg.v12.i21.3430) · [Grilliporsassämpylä, rivi 1996](https://ghwinstitute.com/wp-content/uploads/2022/10/supplementaltable1-2.pdf) · [Baozin laskentasyöte](../../nutrition/calculations/baozi.json)
