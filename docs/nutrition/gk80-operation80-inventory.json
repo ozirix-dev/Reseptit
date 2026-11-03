@@ -2,11 +2,11 @@
   "schemaVersion": 1,
   "main": "4d6f19a620bb95e771c12f499554bf2cf1f06e51",
   "coverage": {
-    "PROPOSED_RANGE": 25,
+    "PROPOSED_RANGE": 26,
     "PUBLISHED_SINGLE": 197,
     "PROPOSED_SINGLE": 18,
     "IN_PROGRESS": 34,
-    "NO_GK": 42,
+    "NO_GK": 41,
     "PUBLISHED_RANGE": 10
   },
   "reviewedPrHeads": {
@@ -111,7 +111,7 @@
     "japanilainen-curry-tofulla",
     "khao-soi-vhh-konjac"
   ],
-  "nextRecipeId": "bun-cha-hanoi",
+  "nextRecipeId": "chow-mein",
   "recipes": [
     {
       "recipeId": "aloo-paratha",
@@ -722,10 +722,10 @@
       "recipeSha256": "c5f2ee00e21ab79683da7f45d6c97a5fc87435b8c7460fc17a2603c46146c16a",
       "pilotInputSha256": "dcea4b0c0e8615e808db438eb31e679c2fae2179f3abb1fe9274a7249238a4d4",
       "servings": 4,
-      "status": "NO_GK",
+      "status": "PROPOSED_RANGE",
       "priorEvidence": [],
-      "level": null,
-      "ownerApproval": null,
+      "level": "B",
+      "ownerApproval": false,
       "sourceQualified": null,
       "blockers": [
         "bun-cha-hanoi: kalakastiketta: AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance.",
@@ -828,7 +828,139 @@
             "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.095 g available carbohydrate): AFCD fresh coriander available-carbohydrate record is used; no suitable published GI value is asserted, and its source-based contribution is counted under the current sub-1 g editorial tolerance."
           ]
         }
-      ]
+      ],
+      "operation80Proposal": {
+        "evidencePath": "docs/nutrition/gk80-operation80-batch-24.md",
+        "baselineRecipeSha256": "c5f2ee00e21ab79683da7f45d6c97a5fc87435b8c7460fc17a2603c46146c16a",
+        "inputFields": [
+          "gramsBatch",
+          "choPer100g",
+          "giGlucoseScale"
+        ],
+        "scenarios": [
+          {
+            "inputs": [
+              [
+                300,
+                81.64,
+                37
+              ],
+              [
+                400,
+                0,
+                0
+              ],
+              [
+                300,
+                0,
+                0
+              ],
+              [
+                120,
+                3,
+                50
+              ],
+              [
+                24,
+                96.8,
+                59
+              ],
+              [
+                24,
+                99.9,
+                59
+              ],
+              [
+                6,
+                10.2,
+                40
+              ],
+              [
+                40,
+                3.1,
+                40
+              ],
+              [
+                2.3,
+                38.65,
+                50
+              ],
+              [
+                150,
+                5.56,
+                40
+              ],
+              [
+                20,
+                1.9,
+                50
+              ]
+            ],
+            "gkPerServing": "31.24609875"
+          },
+          {
+            "inputs": [
+              [
+                300,
+                81.64,
+                61
+              ],
+              [
+                400,
+                0,
+                0
+              ],
+              [
+                300,
+                0,
+                0
+              ],
+              [
+                120,
+                3,
+                50
+              ],
+              [
+                24,
+                96.8,
+                59
+              ],
+              [
+                24,
+                99.9,
+                59
+              ],
+              [
+                6,
+                10.2,
+                40
+              ],
+              [
+                40,
+                3.1,
+                40
+              ],
+              [
+                2.3,
+                38.65,
+                50
+              ],
+              [
+                150,
+                5.56,
+                40
+              ],
+              [
+                20,
+                1.9,
+                50
+              ]
+            ],
+            "gkPerServing": "45.94129875"
+          }
+        ],
+        "publicationAuthorized": false
+      }
     },
     {
       "recipeId": "butter-chicken",
