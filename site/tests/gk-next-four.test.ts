@@ -1,3 +1,4 @@
+import {assertRecipeBaseline} from "./assert-recipe-baseline";
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
@@ -28,8 +29,8 @@ test('the four A inputs and legacy variants remain intact as four approved B ver
  for(const previous of baseline.legacyVariants){const v=old.find(v=>v.recipeId===previous.recipeId)!;assert.equal(digest(v),previous.variantSha256,previous.recipeId);}
  const report=read('tmp/nutrition/glycemic-load-pilot.json');
  assert.deepEqual(report.gkOnlyVariants,gkOnlyVariants);assert.deepEqual(report.versionCoverage,gkVersionCoverage);
- assert.equal(gkVersionCoverage.numericRecipes,198);assert.equal(gkVersionCoverage.originalNumeric,156);assert.equal(gkVersionCoverage.additionalA,32);assert.equal(gkVersionCoverage.additionalB,10);assert.equal(gkVersionCoverage.total,326);assert.equal(gkVersionCoverage.missing,128);
- assert.deepEqual(report.coverageViews,{originalRecipe:{total:326,numeric:156,missing:170},atLeastOneExactVersion:{total:326,numeric:198,missing:128,additionalApprovedVersions:42}});
+ assert.equal(gkVersionCoverage.numericRecipes,202);assert.equal(gkVersionCoverage.originalNumeric,156);assert.equal(gkVersionCoverage.additionalA,36);assert.equal(gkVersionCoverage.additionalB,10);assert.equal(gkVersionCoverage.total,326);assert.equal(gkVersionCoverage.missing,124);
+ assert.deepEqual(report.coverageViews,{originalRecipe:{total:326,numeric:156,missing:170},atLeastOneExactVersion:{total:326,numeric:202,missing:124,additionalApprovedVersions:46}});
  assert.throws(()=>countGkVersions(report.results,[...gkOnlyVariants,four[0]]),/distinct/);
  for(const id of ['jerk-kana','sate-ayam'])assert.ok(!gkOnlyVariants.some(v=>v.recipeId===id));
 });
@@ -112,7 +113,7 @@ test('all326 parent GK objects,23 old variants, macro sources and recipe trees r
  assert.deepEqual(Object.fromEntries(report.results.map((r:any)=>[r.recipeId,digest(r)])),baseline.originalResultHashes);
  assert.equal(report.results.filter((r:any)=>r.status==='CALCULATED').length,156);
  for(const [p,hash] of Object.entries(baseline.protectedSourceFilesLfSha256))assert.equal(textHash(readFileSync(path.join(root,p),'utf8')),hash,p);
- const changed=execFileSync('git',['diff','--name-only',baseline.main,'--','reseptit','kaannokset','docs/nutrition/calculations'],{cwd:root,encoding:'utf8'}).trim();assert.equal(changed,'');
+ assertRecipeBaseline(root,baseline.main,'docs/nutrition/calculations');
  for(const v of four){assert.equal(v.macroScope,'NO_MACRO_PACKAGE_FOR_THIS_VERSION');for(const key of ['macros','nutrition','macroEvidence'])assert.ok(!(key in v));assert.equal(report.results.find((r:any)=>r.recipeId===v.recipeId).status,'INSUFFICIENT SOURCE DATA');}
 });
 test('original three approval receipts stay exact and do not grant Ready/merge/deploy authority',()=>{
@@ -197,4 +198,19 @@ test('Lindström brine is an independent preparation with scaled, fully included
     assert.ok(html.includes(variant.preparation[locale]));
     assert.ok(!html.includes(gkOnlyUi[locale].prepare));
   }
+});
+
+test('the four reviewed GK-only versions retain their points and native liquid units', () => {
+ const versions = gkOnlyVariants.slice(-4);
+ assert.deepEqual(versions.map(v => [v.recipeId, v.point]), [
+  ['siemengranola-jogurtilla', 2.47],
+  ['lahi-ita-pistaasijogurtti', 4.37],
+  ['korealainen-kongjuk-soijapapu-riisipuuro', 29.09],
+  ['falafel', 9.86],
+ ]);
+ assert.deepEqual(gkOnlyQuantity(versions[1], 2, 4), {amount: 10, unit: 'ml'});
+ assert.match(gkOnlyPreparation(versions[1], 'fi', 4), /10 ml Steenbergs/);
+ assert.deepEqual(gkOnlyQuantity(versions[2], 4), {amount: 700, unit: 'ml'});
+ assert.deepEqual(gkOnlyQuantity(versions[3], 12), {amount: 100, unit: 'ml'});
+ assert.ok(Math.abs(versions[3].omittedCho - 1.9570875) < 1e-10);
 });

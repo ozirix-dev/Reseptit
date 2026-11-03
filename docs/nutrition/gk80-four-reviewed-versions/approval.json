@@ -1,0 +1,28 @@
+{
+  "researchCommit": "b6e5abf98ae1241f33f6407953d0523b98805d1e",
+  "researchInputs": {
+    "granola": "followup/granola-source-resolved.json",
+    "pistachio": "breakfast-versions/pistachio-yogurt-named-version.json",
+    "kongjuk": "stock-and-current-bindings/kongjuk-current-water-version.json",
+    "falafel": "sauces-and-legumes/falafel-current-oven-version.json"
+  },
+  "decisionSource": "Owner reply in the GK80 review chat on 2026-11-03",
+  "decision": "Hyväksyn kaikki neljä täsmäversiota ja valtuutan niiden integraation yhteen rajattuun Draft-PR:ään.",
+  "mergeAuthorized": false,
+  "publicationAuthorized": false,
+  "boundFiles": {
+    "site/scripts/glycemic-load-model.ts": "10ce09e465886e4538fc0b2ad2a54ca0b050a9e3729b7417eb0a91f2b946b48c",
+    "docs/nutrition/glycemic-index-records.json": "fb465ac8f68ffc85e29eb9900f17df00b081fa0ddc3e25d253140aecb248acda",
+    "docs/nutrition/fineli-release-20-reference.json": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76",
+    "docs/nutrition/afcd-release-3-reference.json": "02edf1cc95191c05edf791656a5109c41bcf4d4a3e707be69ef5009bc640022e",
+    "docs/nutrition/gk80-four-reviewed-versions/granola.json": "f0ec31256c473fb98eefae2acd11c05ae8daad74d17a9852cf9f3fb2812fb24d",
+    "reseptit/aamupalat/siemengranola-jogurtilla.md": "0ea4aec2500d7f974f28db074b912bcb4a2c987dc58f35c5de3ad736bbdd404e",
+    "docs/nutrition/gk80-four-reviewed-versions/pistachio.json": "986cb3fda641818f1fb79883b52b241b74ec19027d8276221732e5ff2dd2dadf",
+    "reseptit/aamupalat/lahi-ita-pistaasijogurtti.md": "f9a1d41f86c92902bbda7c9f224cbc8de48900ec7726625a482f1ecea794a9e1",
+    "docs/nutrition/gk80-four-reviewed-versions/kongjuk.json": "362b8e7c482b1f79d92344761dfa781c646a46d807f9565e2fe46646c26aa4fd",
+    "reseptit/aamupalat/korealainen-kongjuk-soijapapu-riisipuuro.md": "6aca70cdb27f83a51c2d759e58bdcd446e6a1f9f5c414a71494fb44ec9454f31",
+    "docs/nutrition/gk80-four-reviewed-versions/falafel.json": "e733e3f65fc9bd467f04ee47c390b1a987c65d65304cc7161421c425d34c2de2",
+    "reseptit/paaruoat/falafel.md": "5f2549ef9ba3d3506719b5ccb0258b8ef374f8870c33348fd11a5a6edf4ac6b4",
+    "docs/nutrition/gk80-four-reviewed-versions/foods.json": "c902478e335691b80cae5d49ffa9ca203ddfd9035bf015f22bf7d20963a3de6b"
+  }
+}
