@@ -75,7 +75,7 @@ Ackee: erillinen GK-täsmäversio käyttää 60 g kypsää ruodotonta suolatursk
 
 ## Jatkoehdotukset
 
-Nämä kymmenen nelikielistä esikatseluversiota ovat kahden alkuperäisen erän lisäksi. Kohdennetussa tarkistuksessa niiden kanssa numeerinen esikatselukattavuus on 277/326.
+Nämä yksitoista nelikielistä esikatseluversiota ovat kahden alkuperäisen erän lisäksi. Kohdennetussa tarkistuksessa niiden kanssa numeerinen esikatselukattavuus on 278/326.
 
 | Resepti | GK/annos | Päätös ennen julkaisua |
 | --- | ---: | --- |
@@ -89,6 +89,7 @@ Nämä kymmenen nelikielistä esikatseluversiota ovat kahden alkuperäisen erän
 | Keto-korvapuustit | Laskettu osuus alle 1 | Hyväksy Pickerd-mantelijauhe, punnittu kaneli ja tuorejuuston GI-koodi. Pois rajattu CHO 1,06 g/annos. [Laskelma](../research/gk80-international-20261102/pickerd-almond-two.md) |
 | VHH-Runebergintortut | Laskettu osuus alle 1 | Hyväksy Liovela-mantelijauho, punnitut määrät ja rahkan GI-koodi. Pois rajattu CHO 1,48 g/annos. [Laskelma](../research/gk80-international-20261102/runeberg-almond.md) |
 | Teehaudutetut munat | Laskettu osuus alle 1 | Hyväksy soija, punnittu tähtianis, valmistusjärjestys ja munan GI-koodi. Pois rajattu CHO enintään 0,74 g/annos. [Laskelma](gk80-operation80-teehaudutetut-munat.md) |
+| Bánh bao kananmunalla | 25,30–34,55 | Hyväksy punnittu hiivataikina, täyttö höyrytyksen jälkeen ja kaksi höyryleivän GI-verrokkia. [Laskelma](../research/gk80-international-20261102/steamed-buns-source-control/CURRENT.md) |
 
 ### Aiempi rinnakkainen ehdotus: paistettu maksa ja pekoni
 
