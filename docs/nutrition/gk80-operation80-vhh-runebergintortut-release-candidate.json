@@ -1,0 +1,148 @@
+{
+  "recipeId": "vhh-runebergintortut",
+  "servings": 6,
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "unroundedGk": "0.175",
+  "inputs": [
+    [
+      100,
+      3,
+      35
+    ]
+  ],
+  "ingredients": [
+    {
+      "grams": 100,
+      "name": {
+        "fi": "Maitorahka",
+        "en": "Plain quark",
+        "sv": "Naturell kvarg",
+        "th": "ควาร์กธรรมชาติ"
+      }
+    },
+    {
+      "grams": 120,
+      "name": {
+        "fi": "Liovela-mantelijauho",
+        "en": "Liovela almond flour",
+        "sv": "Liovela mandelmjöl",
+        "th": "แป้งอัลมอนด์ Liovela"
+      }
+    },
+    {
+      "grams": 50,
+      "name": {
+        "fi": "Voi",
+        "en": "Butter",
+        "sv": "Smör",
+        "th": "เนย"
+      }
+    },
+    {
+      "grams": 110,
+      "name": {
+        "fi": "Kananmunat",
+        "en": "Eggs",
+        "sv": "Ägg",
+        "th": "ไข่"
+      }
+    },
+    {
+      "grams": 2,
+      "name": {
+        "fi": "Kardemumma",
+        "en": "Cardamom",
+        "sv": "Kardemumma",
+        "th": "กระวาน"
+      }
+    },
+    {
+      "grams": 4,
+      "name": {
+        "fi": "Leivinjauhe",
+        "en": "Baking powder",
+        "sv": "Bakpulver",
+        "th": "ผงฟู"
+      }
+    },
+    {
+      "grams": 24,
+      "name": {
+        "fi": "Vadelmat",
+        "en": "Raspberries",
+        "sv": "Hallon",
+        "th": "ราสป์เบอร์รี"
+      }
+    },
+    {
+      "grams": null,
+      "quantity": {
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      "name": {
+        "fi": "Foodin-erytritoli",
+        "en": "Foodin erythritol",
+        "sv": "Foodin-erytritol",
+        "th": "อิริทริทอล Foodin"
+      }
+    }
+  ],
+  "omissions": [
+    {
+      "ingredientIndex": 1,
+      "choPer100g": 4.2
+    },
+    {
+      "ingredientIndex": 2,
+      "choPer100g": 0.8
+    },
+    {
+      "ingredientIndex": 3,
+      "choPer100g": 0.3
+    },
+    {
+      "ingredientIndex": 4,
+      "choPer100g": 34.4
+    },
+    {
+      "ingredientIndex": 5,
+      "choPer100g": 19.8
+    },
+    {
+      "ingredientIndex": 6,
+      "choPer100g": 6.9
+    }
+  ],
+  "preparation": {
+    "fi": "Sekoita mantelijauho, erytritoli, kardemumma ja leivinjauhe. Lisää sulatettu voi, munat ja rahka. Jaa taikina {{servings}} voideltuun muffinivuokaan. Paista 175 °C:ssa 18–20 minuuttia. Jäähdytä ja jaa vadelmat tortuille.",
+    "en": "Mix almond flour, erythritol, cardamom and baking powder. Add melted butter, eggs and quark. Divide into {{servings}} greased muffin cups. Bake at 175 °C for 18–20 minutes. Cool and divide the raspberries among the cakes.",
+    "sv": "Blanda mandelmjöl, erytritol, kardemumma och bakpulver. Tillsätt smält smör, ägg och kvarg. Fördela i {{servings}} smorda muffinsformar. Grädda i 175 °C i 18–20 minuter. Låt svalna och fördela hallonen över kakorna.",
+    "th": "ผสมแป้งอัลมอนด์ อิริทริทอล กระวาน และผงฟู เติมเนยละลาย ไข่ และควาร์ก แบ่งใส่พิมพ์มัฟฟินทาไขมัน {{servings}} ช่อง อบที่ 175 °C นาน 18–20 นาที พักให้เย็นแล้วแบ่งราสป์เบอร์รีให้แต่ละชิ้น"
+  },
+  "limitation": {
+    "fi": "Maitorahka käyttää GI-koodia 35. Pois rajattu osuus on noin 1,48 g CHO/annos.",
+    "en": "Quark uses GI code 35. Excluded carbohydrate is about 1.48 g per serving.",
+    "sv": "Kvargen använder GI-kod 35. Uteslutna kolhydrater är cirka 1,48 g per portion.",
+    "th": "ควาร์กใช้ค่า GI ตามกลุ่ม 35 คาร์โบไฮเดรตที่ไม่รวมประมาณ 1.48 กรัมต่อที่"
+  },
+  "sources": [
+    {
+      "title": "Liovela",
+      "url": "https://liovela.pl/en/home/219-almond-flour.html"
+    },
+    {
+      "title": "Fineli",
+      "url": "https://fineli.fi/fineli/fi/ohje/19"
+    },
+    {
+      "title": "AFCD",
+      "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd"
+    }
+  ],
+  "boundFiles": {
+    "reseptit/leivonnaiset/vhh-runebergintortut.md": "e579594baf3d71bd324b1051ab7df2ab2da81c17412ad1ea3d75637d4e5f1cc3",
+    "docs/research/gk80-international-20261102/runeberg-almond.md": "5954e7007f3abdeda557f5fc9f707dbfbe885c3a79dd5b71cdf59be19a8a4f2a"
+  }
+}
