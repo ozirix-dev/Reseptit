@@ -45,3 +45,11 @@ Neljän annoksen laskentasyötteessä 150 g vihreitä papuja tuottaa 1,2375 g ja
 ### Punnittu paprikavaihtoehto
 
 Jos 120 g paprikaa korvataan 60 grammalla syötävää punaista paprikaa, paprikan poisjättö on 60 × 0,045 / 4 = 0,675 g/annos. Yhteispoisjättö on 1,293 + 0,675 = 1,968 g/annos ja marginaali 0,032 g. Paprikalle ei tarvita GI-oletusta. Jos paellan taitepavulle hyväksytty GI 40 -malli kelpuutetaan tämän version kypsille taitepavuille, laskettu GK-osa on 1,2375 × 0,40 = 0,495. Paprikan puolittaminen muuttaa sisältöä. Tulos on seulonta nykyisillä koostumuspisteillä. Pienen marginaalin vuoksi kaikkien lähteiden, massojen ja kastikkeen tarjoilun täsmävarmennus tarvitaan ennen hyväksyntää.
+
+### Moottorilla varmennettu Red Boat -versio
+
+Neljä annosta. Säilytä 500 g broilerin paistileikettä, 150 g vihreitä taitepapuja, 50 g syötävää limeä, 10 g thaibasilikaa ja 13,5 g kookosöljyä. Käytä 400 g punnittua Fairtrade Original 1 L -kookosmaitoa, 30 g Valcom Red 210 g -tahnaa, 60 g syötävää punaista paprikaa ja suoraan mitattua 15 ml Red Boat 40°N -kalakastiketta. Kypsennä kana, taitepavut ja paprika kastikkeessa. Lisää lime ja basilika ja jaa koko kastike ja kiinteät ainekset neljään annokseen ilman erillistä lisuketta.
+
+A-moottori palautti CALCULATED. Taitepapujen GI 40 -mallilla laskettu osa on 0,495 GK/annos, pyöristettynä 0,50. Poisjättövaraus on 0,8 + 0,285 + 0,675 + 0,01875 + 0,05 + 0,005 = 1,83375 g/annos. Tuoteilmoitukset ovat nimellisiä ja taitepapujen GI 40 on julkaistuun imputointiin perustuva malliarvo. Tarkka sisältö ja mallisovellus odottavat hyväksyntää.
+
+[Red Boat -tuotetieto](https://ctfood.se/fish-sauce-12x500ml-red-boat/?language=vi)
