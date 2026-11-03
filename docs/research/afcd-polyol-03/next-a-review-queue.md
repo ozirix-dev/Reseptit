@@ -69,3 +69,5 @@ Neljän annoksen tutkimusversiossa käytetään 55 g sipulia, 150 g punaista pap
 A-moottori antoi 14,29 GK/annos. Lasketut rivit ovat paprika GI 40 -mallilla, tomaattimurska GI 22 -analogialla ja leipä GI 64 -ryhmäarvolla. Poisjättövaraus on 1,32525 g/annos. Siihen sisältyvät sipuli 0,66, valkosipuli 0,153, muna 0,165, harissa 0,1375, juustokumina 0,1685 ja persilja 0,04125 g/annos. Harissan nimellinen tuotearvo on 11 g/100 g. Tarkka pakkaus ja lähteiden reseptikohtainen soveltaminen vaativat katselmoinnin.
 
 [Laskentasyöte](../../nutrition/calculations/tunisialainen-ojja.json) · [Harissan toimittajatieto](https://www.henderson-foodservice.com/productpdf/download/file/id/1032/name/Harissa_Paste_BD_%252528415ml%252529.pdf/)
+
+Harissan pakkaus on Le Phare du Cap Bon 380 g, EAN 6194049100020. Ranskalaisen tuotetiedon 11 g hiilihydraattia / 100 g vastaa toimittajan saman pakkauskoon ilmoitusta. Viiden gramman punnittu määrä antaa nimellisen 0,1375 g/annos varauksen. Tämä lähdesidonta ja tarkka sisältö odottavat hyväksyntää. [Pakkaus ja ravintoarvot](https://www.intermarche.com/produit/harissa-de-piment-rouge-fort/6194049100020)
