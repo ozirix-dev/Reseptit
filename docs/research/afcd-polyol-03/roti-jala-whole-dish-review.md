@@ -23,3 +23,9 @@ Kaksi annosta. Jaa 200 ml kookosmaitoa kahteen 100 ml:n erään. Tee 100 g vehn�
 Letun hiilihydraatit ovat (73,998 + 0,330 + 100 × 0,92 × 0,017) / 2 = 37,946 g/annos. Testiletun GI 49 antaa GK-osaksi 18,59354. Kastikkeen kookosmaito lisää 0,782 g/annos ilman GI-arvoa. Laskettu osuus kattaa 97,98 % laskentasyötteen hiilihydraateista. Yksittäiseen 1 g rajaan jää 0,218 g/annos kookosmaitorivillä. Jokainen lisättävä mauste on käsiteltävä erillisenä rivinä ja yhteinen poisjättö tarkistettava uudelleen.
 
 Lettureitti perustuu yhteen vertailuruokaan. Taikinan koostumuksen ja paiston vastaavuus sekä maustetun kastikkeen lopullinen syöte vaativat katselmoinnin. GK 18,59 kuvaa laskettua osaa. Koko aterian GI 81 jää erilliseksi herkkyyskokeeksi.
+
+## Maustetun version konservatiivinen seulonta
+
+Lisää koko kanakastikkeeseen yhteensä 1,5 g kuivaa mietoa curryjauhetta ja tarjoa koko kastike kahdelle. Tämä on ehdotettu sisältömuutos. Seulonnassa curryjauheen koko massa varataan hiilihydraatille, jolloin annosta kohti varaus on enintään 0,75 g. Kastikkeen kookosmaidon 0,782 g ja mausteen 0,75 g alittavat kumpikin 1 g:n rajan. Yhteisvaraus 1,532 g alittaa 2 g:n rajan 0,468 grammalla. Letun laskettu osa pysyy arvossa 18,59354 GK/annos.
+
+Massavaraus on fysikaalinen seulontakatto. Curryjauheen imeytyvän hiilihydraatin lähdearvoa ei ole vielä sidottu syötteeseen. Lähteistetty mausterivi ja lettuanalogian katselmointi tarvitaan ennen A-version hyväksyntää.
