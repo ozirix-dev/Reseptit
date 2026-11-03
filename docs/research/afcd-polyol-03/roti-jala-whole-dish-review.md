@@ -29,3 +29,9 @@ Lettureitti perustuu yhteen vertailuruokaan. Taikinan koostumuksen ja paiston va
 Lisää koko kanakastikkeeseen yhteensä 1,5 g kuivaa mietoa curryjauhetta ja tarjoa koko kastike kahdelle. Tämä on ehdotettu sisältömuutos. Seulonnassa curryjauheen koko massa varataan hiilihydraatille, jolloin annosta kohti varaus on enintään 0,75 g. Kastikkeen kookosmaidon 0,782 g ja mausteen 0,75 g alittavat kumpikin 1 g:n rajan. Yhteisvaraus 1,532 g alittaa 2 g:n rajan 0,468 grammalla. Letun laskettu osa pysyy arvossa 18,59354 GK/annos.
 
 Massavaraus on fysikaalinen seulontakatto. Curryjauheen imeytyvän hiilihydraatin lähdearvoa ei ole vielä sidottu syötteeseen. Lähteistetty mausterivi ja lettuanalogian katselmointi tarvitaan ennen A-version hyväksyntää.
+
+## Curryjauheen koostumusviite
+
+Norjan Matvaretabellen ilmoittaa yleiselle curryjauheelle 2,8 g imeytyvää hiilihydraattia / 100 g. Kenttä on sokerin ja tärkkelyksen summa. 1,5 g kahdelle tuottaa 0,021 g/annos. Kastikkeen laskennallinen poisjättö on 0,782 + 0,021 = 0,803 g/annos ja letun laskettu GK-osa 18,59354. Koko maustemassaan perustuva 1,532 g/annos säilyy erillisenä seulontakattona. Koostumusviite on geneerinen. Ehdotettu sisältöversio ja testiletun GI 49:n soveltuvuus vaativat katselmoinnin.
+
+[Matvaretabellen: Curry powder](https://www.matvaretabellen.no/en/curry-powder/)
