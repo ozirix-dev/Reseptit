@@ -2,11 +2,11 @@
   "schemaVersion": 1,
   "main": "4d6f19a620bb95e771c12f499554bf2cf1f06e51",
   "coverage": {
-    "PROPOSED_RANGE": 33,
+    "PROPOSED_RANGE": 34,
     "PUBLISHED_SINGLE": 197,
     "PROPOSED_SINGLE": 24,
     "IN_PROGRESS": 36,
-    "NO_GK": 26,
+    "NO_GK": 25,
     "PUBLISHED_RANGE": 10
   },
   "reviewedPrHeads": {
@@ -111,7 +111,7 @@
     "japanilainen-curry-tofulla",
     "khao-soi-vhh-konjac"
   ],
-  "nextRecipeId": "marjainen-chiavanukas",
+  "nextRecipeId": "masala-dosa",
   "recipes": [
     {
       "recipeId": "aloo-paratha",
@@ -10539,10 +10539,10 @@
       "recipeSha256": "c4c9c7a14345199304e7221fab28633a4a9abeffa3c99afc780cb5360824ec22",
       "pilotInputSha256": "16c29d882247f1f5d2cf1c8c29d1f474c6e79bfa44acd6ed276673c058abe432",
       "servings": 4,
-      "status": "NO_GK",
+      "status": "PROPOSED_RANGE",
       "priorEvidence": [],
-      "level": null,
-      "ownerApproval": null,
+      "level": "B",
+      "ownerApproval": false,
       "sourceQualified": null,
       "blockers": [
         "marjainen-chiavanukas: vadelmia: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
@@ -10645,7 +10645,59 @@
             "Sweetener type and quantity are unspecified; its available carbohydrate cannot be determined."
           ]
         }
-      ]
+      ],
+      "operation80Proposal": {
+        "evidencePath": "docs/nutrition/gk80-operation80-batch-38.md",
+        "baselineRecipeSha256": "c4c9c7a14345199304e7221fab28633a4a9abeffa3c99afc780cb5360824ec22",
+        "inputFields": [
+          "gramsBatch",
+          "choPer100g",
+          "giGlucoseScale"
+        ],
+        "scenarios": [
+          {
+            "inputs": [
+              [
+                100,
+                5.715,
+                40
+              ],
+              [
+                50,
+                10.182,
+                53
+              ],
+              [
+                100,
+                3,
+                50
+              ]
+            ],
+            "gkPerServing": "1.6210575"
+          },
+          {
+            "inputs": [
+              [
+                100,
+                5.715,
+                53
+              ],
+              [
+                50,
+                10.182,
+                53
+              ],
+              [
+                100,
+                3,
+                50
+              ]
+            ],
+            "gkPerServing": "1.806795"
+          }
+        ],
+        "publicationAuthorized": false
+      }
     },
     {
       "recipeId": "marjakiisseli-vaniljakastikkeella",
