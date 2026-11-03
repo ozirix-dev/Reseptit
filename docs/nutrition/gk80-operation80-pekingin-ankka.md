@@ -18,3 +18,9 @@ Seuraava tehtävä on rajata hoisinin GI valmistusta ja sokerikoostumusta vastaa
 Hoisinille löytyi laskennallisia GI-arvioita, mutta haussa ei löytynyt mitattua ihmis-GI:tä. Tuotteen 10,2 g CHO:ta annoksessa merkitsee 1,02 GK:n muutosta jokaista kymmenen GI-pisteen eroa kohti. Tämän vuoksi valmistajan koostumustieto yksin ei riitä koko reseptin GK-arvoon. Sama hoisin-GI:n näyttöaukko koskee char siuta.
 
 Jatkojonon aamiaisresepti intialainen-masala-dosa käyttää 150 g sinapinsiemeniä kahdelle. Idli–sambarissa käytetty [USDA SR Legacy 170929](https://fdc.nal.usda.gov/food-details/170929/nutrients) antaa kokonais-CHO:n ja kuidun erotuksena 15,89 g/100 g. Nykyisellä määrällä se on 11,9175 g/annos, joten osuus ei mahdu pienosuusrajaan. Laskenta vaatii käyttömäärän vahvistuksen tai GI-näytön. Seuraavat rajatut tuotesidokset ovat bibimbapin gochujang ja yaki-onigirin miso.
+
+## Char siun marinadi
+
+Char siu käyttää neljälle kolme ruokalusikallista hoisinia, kaksi ruokalusikallista hunajaa marinadissa ja erillisen hunajasivelyn. Jos hoisinia punnitaan 60 g ja käytetään samaa Lee Kum Kee 240 g -tuotetta kuin yllä, lähtöpanos on 30,6 g CHO erässä eli 7,65 g/annos täydellä siirtymällä. 60 g on ehdotettu laskentapaino. Valmistajan 10 g etikettiannos ei vahvista ruokalusikan massaa.
+
+Hoisin alittaisi yksittäisen 1 g CHO:n rajan vain, jos syötäväksi päätyisi alle 4 g sen hiilihydraatteja koko erässä. Se vastaa alle 7,843 g:n hoisinmäärää tai alle 13,1 prosenttia 60 g:n lähtöpanoksesta. Marinadin punnitus ennen käyttöä ja jäljelle jäävän marinadin punnitus voivat rajata siirtymää. Huuhtoutuminen, lihasta irtoava neste ja paistohävikki estävät tarkan komponenttisaannon johtamisen pelkästä painoerosta. Punnittu puhdas viimeistelysively on käsiteltävä erikseen. Koko reseptin GK odottaa edelleen hoisinin GI-perustetta tai varmennettua pienosuutta sekä hunajan siirtymäsidosta. [Resepti](../../reseptit/paaruoat/char-siu.md)
