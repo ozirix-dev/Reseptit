@@ -4,9 +4,9 @@
   "coverage": {
     "PROPOSED_RANGE": 28,
     "PUBLISHED_SINGLE": 197,
-    "PROPOSED_SINGLE": 18,
-    "IN_PROGRESS": 34,
-    "NO_GK": 39,
+    "PROPOSED_SINGLE": 19,
+    "IN_PROGRESS": 35,
+    "NO_GK": 37,
     "PUBLISHED_RANGE": 10
   },
   "reviewedPrHeads": {
@@ -111,7 +111,7 @@
     "japanilainen-curry-tofulla",
     "khao-soi-vhh-konjac"
   ],
-  "nextRecipeId": "goi-cuon",
+  "nextRecipeId": "indonesialainen-serabi-kookospannukakku",
   "recipes": [
     {
       "recipeId": "aloo-paratha",
@@ -2099,7 +2099,7 @@
       "recipeSha256": "7fcd2329e81670898bebf9d23ca86eac09c4576fc3fda55f9ec6f2fe65d1426b",
       "pilotInputSha256": "8a401d907456221d50e2624319fcc7e6456bab4b9f9a84f809c3f511e3e4cb6f",
       "servings": 4,
-      "status": "NO_GK",
+      "status": "IN_PROGRESS",
       "priorEvidence": [],
       "level": null,
       "ownerApproval": null,
@@ -2193,7 +2193,8 @@
             "GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
           ]
         }
-      ]
+      ],
+      "operation80EvidencePath": "docs/nutrition/gk80-operation80-batch-27.md"
     },
     {
       "recipeId": "gulab-jamun",
@@ -4450,10 +4451,10 @@
       "recipeSha256": "d27d97d6e7b065df3372970275ed3e4525910e98d5e780d4d208e536086b0273",
       "pilotInputSha256": "f3a956bd91fd7a3bd42db6e494c631490f5e7a952ed7a18b8b59adbf0285be55",
       "servings": 2,
-      "status": "NO_GK",
+      "status": "PROPOSED_SINGLE",
       "priorEvidence": [],
-      "level": null,
-      "ownerApproval": null,
+      "level": "B",
+      "ownerApproval": false,
       "sourceQualified": null,
       "blockers": [
         "japanilainen-soba-aamiaiskeitto: dashi: No source-matched composition and preparation was resolved for “dashi”; it is not treated as zero.",
@@ -4544,7 +4545,39 @@
             "Source-documented zero available carbohydrate: Plain salt has zero available carbohydrate."
           ]
         }
-      ]
+      ],
+      "operation80Proposal": {
+        "evidencePath": "docs/nutrition/gk80-operation80-batch-27.md",
+        "baselineRecipeSha256": "d27d97d6e7b065df3372970275ed3e4525910e98d5e780d4d208e536086b0273",
+        "inputFields": [
+          "gramsBatch",
+          "choPer100g",
+          "giGlucoseScale"
+        ],
+        "scenarios": [
+          {
+            "inputs": [
+              [
+                100,
+                68.2,
+                59.6
+              ],
+              [
+                110,
+                0.3,
+                50
+              ],
+              [
+                50,
+                0.25,
+                40
+              ]
+            ],
+            "gkPerServing": "20.4311"
+          }
+        ],
+        "publicationAuthorized": false
+      }
     },
     {
       "recipeId": "japanilainen-tamago-kake-gohan",
