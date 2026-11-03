@@ -484,8 +484,6 @@ test('modeled captions disclose omissions in every locale and retain omission-fr
 
 test('approved GK-only versions are explicit on every existing locale page and coverage counts198 distinct recipes',async()=>{
  let pages=0;
- const newEnglishPages = new Set(["keto-mutakakku", "keto-suklaakeksit"]);
- const checkedEnglishPages = new Set<string>();
  for(const variant of gkOnlyVariants){
   for(const recipe of siteContent.recipes.filter(r=>r.recipeId===variant.recipeId)){
    const html=await readFile(path.join(dist,recipe.routePath.slice(1),'index.html'),'utf8'),t=gkOnlyUi[recipe.locale];
@@ -493,14 +491,23 @@ test('approved GK-only versions are explicit on every existing locale page and c
    assert.ok(html.includes(t.scope));assert.ok(html.includes(t.low));assert.ok(html.includes(gkScopeUi[recipe.locale].macroNotice));assert.ok(html.includes('data-nutrition-scope="ORIGINAL_RECIPE"'));assert.ok(html.includes('data-macro-separation="gk-only"'));assert.ok(html.includes(gkOnlyValue(variant,recipe.locale)));
    assert.ok(!html.includes('class="recipe-glycemic-load"'),'original unsupported version is not relabeled');
    if(variant.scenarioRange)assert.ok(html.includes(t.range));if(variant.sensitivity)assert.ok(html.includes(t.sensitivityNote));
-   if (recipe.locale === "en" && newEnglishPages.has(recipe.recipeId)) checkedEnglishPages.add(recipe.recipeId);
-   else pages++;
+   const addedEnglishPage = recipe.locale === "en" && ["keto-mutakakku", "keto-suklaakeksit"].includes(recipe.recipeId);
+   if (!addedEnglishPage) pages++;
   }
  }
- assert.deepEqual(checkedEnglishPages, newEnglishPages);
  assert.equal(pages,89+siteContent.recipes.filter(r=>r.recipeId==='lindstrominpihvit-kaalilla').length);
  for(const p of ['glykeeminen-kuorma','en/glycemic-load','sv/glykemisk-belastning','th/glycemic-load']){
   const html=await readFile(path.join(dist,p,'index.html'),'utf8');assert.ok(html.includes('<strong>198</strong>'));assert.ok(html.includes('<strong>128</strong>'));assert.ok(html.includes('data-gk-coverage="version-aware"'));assert.ok(html.includes('data-gk-coverage="original"'));assert.ok(html.includes('<strong>156</strong>'));assert.ok(html.includes('<strong>170</strong>'));
   for(const v of gkOnlyVariants)assert.ok(html.includes(`data-gk-version="${v.versionId}"`));
  }
+});
+
+test("all three English Torras comparisons are present with both products", async () => {
+  for (const slug of ["keto-mutakakku", "keto-suklaakeksit", "meheva-suklaakakku"]) {
+    const html = await readFile(path.join(dist, "en/recipes", slug, "index.html"), "utf8");
+    assert.match(html, /data-chocolate-comparison="en"/, slug);
+    assert.match(html, /data-chocolate-product="torras-maltitol"/, slug);
+    assert.match(html, /data-chocolate-product="torras-stevia"/, slug);
+    if (slug.startsWith("keto-")) assert.match(html, /calculated part below 1/, slug);
+  }
 });
