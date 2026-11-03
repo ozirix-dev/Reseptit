@@ -75,7 +75,7 @@ Ackee: erillinen GK-täsmäversio käyttää 60 g kypsää ruodotonta suolatursk
 
 ## Jatkoehdotukset
 
-Nämä neljätoista nelikielistä esikatseluversiota ovat kahden alkuperäisen erän lisäksi. Kohdennetussa tarkistuksessa niiden kanssa numeerinen esikatselukattavuus on 281/326.
+Nämä viisitoista nelikielistä esikatseluversiota ovat kahden alkuperäisen erän lisäksi. Kohdennetussa tarkistuksessa niiden kanssa numeerinen esikatselukattavuus on 282/326.
 
 | Resepti | GK/annos | Päätös ennen julkaisua |
 | --- | ---: | --- |
@@ -93,6 +93,7 @@ Nämä neljätoista nelikielistä esikatseluversiota ovat kahden alkuperäisen e
 | Samosa | 44,42–44,57 | Hyväksy punnitut mausteet ja koko kasvis-sambosan GI-verrokki. [Laskentasyöte](gk80-operation80-samosa-release-candidate.json) |
 | Baozi | 31,20 | Hyväksy punnitut määrät, täytetyn höyrysämpylän verrokki ja lähteen julkaisukäyttö. [Laskelma](gk80-operation80-baozi.md) |
 | Sate ayam | 6,02 | Hyväksy nimetyt tuotteet, punnittu limetti, maapähkinän GI-verrokki ja marinadin täyden siirtymän oletus. [Laskelma](gk80-operation80-sate-ayam.md) |
+| Aamiaisparatha jogurtin kera | 30,80–32,44 | Hyväksy ehdotettu jogurttiannos, perunatäytteen valmistus ja GI-verrokit. [Ehdotus](gk80-operation80-intialainen-aloo-paratha-release-candidate.json) |
 
 ### Aiempi rinnakkainen ehdotus: paistettu maksa ja pekoni
 
@@ -168,7 +169,7 @@ Tarjoilulimetille voidaan käyttää konjak-pad thain punnitusmallia. Marinadin 
 
 ### Breakfast aloo paratha with yoghurt
 
-The breakfast recipe `intialainen-aloo-paratha` stays on hold. Its title and serving instructions include plain yoghurt, but the ingredient list specifies neither its quantity nor its product. PR #229's 25.38644–26.53702 scenario covers the bread and filling. It also uses an assumed GI of 40 for the herbs and cumin.
+The current published recipe `intialainen-aloo-paratha` still needs a GK value. Its title and serving instructions include plain yoghurt, but the ingredient list specifies neither its quantity nor its product. PR #229's 25.38644–26.53702 scenario covers the bread and filling. It also uses an assumed GI of 40 for the herbs and cumin.
 
 The University of Sydney database records GI 17 for Tamar Valley No Added Sugar Natural yoghurt. Using the separate Sydney reference composition for regular plain yoghurt (8.5 g available carbohydrate per 200 g), a 50 g serving would contribute about 0.36 GK. This is a sensitivity example using two sources. A release candidate needs a specified portion and a traceable composition for the selected yoghurt. [GI database](https://glycemicindex.com/gi-search/) [Plain yoghurt reference](https://glycemicindex.com/2024/05/milk-other-dairy-foods-and-blood-glucose/)
 
@@ -176,4 +177,6 @@ The existing macro calculation binds the 150 g peeled potato to Fineli record 31
 
 THL verifies [Fineli 205](https://fineli.fi/fineli/fi/elintarvikkeet/205) as raw mature peeled potato (100% edible), with 15.5 g available carbohydrate, 1.0 g fibre, 1.9 g protein and 0.1 g fat per 100 g. For 150 g shared between two servings this supplies 11.625 g available carbohydrate per serving. Replacing only the old potato row adds 9.4425 g available carbohydrate and removes 2.25 g fibre per serving. The flour and potato subtotals alone are 29.945898 and 31.5847257 GK with the respective GI pairs 60.2/66 and 62.43/73. The PR #229 row's 4.65 g potato carbohydrate per serving is incompatible with the 150 g recipe quantity and 15.5 g/100 g basis.
 
-The batch-14 coriander and cumin inputs yield (6 × 1.9 + 2 × 33.7) / 200 = 0.394 g available carbohydrate per serving, using its 2 g assumption for one teaspoon of cumin. Bread and filling total 49.018 g available carbohydrate before yoghurt. Keep the subtotal for review until the potato preparation, cumin weight and yoghurt serving are fixed.
+The batch-14 coriander and cumin inputs yield (6 × 1.9 + 2 × 33.7) / 200 = 0.394 g available carbohydrate per serving, using its 2 g assumption for one teaspoon of cumin. Bread and filling total 49.018 g available carbohydrate before yoghurt. The proposed variant specifies boiled and mashed potato, 2 g ground cumin and 50 g yoghurt per serving.
+
+The review variant uses the 2010 Tamar Valley yoghurt measurement from Atkinson et al., supplemental table 1, row 1046 (GI 17, test portion 495 g for 50 g available carbohydrate). A proposed 50 g serving adds 0.85858585 GK. The variant totals 30.80448385–32.44331155 GK per serving, with 0.394 g available carbohydrate from spices outside the GI sum. The test sample composition remains historical and any current yoghurt substitution needs a separate product match. [GI table](https://doi.org/10.1093/ajcn/nqab233) · [Four-language review variant](gk80-operation80-intialainen-aloo-paratha-release-candidate.json)
