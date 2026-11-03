@@ -11,3 +11,9 @@
 [Fineli](https://fineli.fi/fineli/content/file/8) · [AFCD](https://www.foodstandards.gov.au/science-data/monitoringnutrients/afcd/datauserlicenceagreement) · [USDA](https://fdc.nal.usda.gov/api-guide/#licensing) · [Matvaretabellen](https://www.matvaretabellen.no/en/api/) · [IFCT 2017](https://www.nin.res.in/ebooks/IFCT2017.pdf) · [MEXT](https://www.mext.go.jp/a_menu/syokuhinseibun/)
 
 IFCT:n sama avoin kysymys koskee myös masala dosan B003-pakettia. Neljä muuta pakettia voi edetä omistajan katselmointiin kirjatuilla lähdemerkinnöillä ja reseptikohtaisilla rajauksilla.
+
+### Kuoritun uradin tuotetarkistus
+
+Seyfrieds Bio Urid Dal weiß (EAN 0604034605462) vastaa kuorittua ja halkaistua Vigna mungo -raaka-ainetta. Valmistajan verkkotaulukossa hiilihydraattia on 50,0 g, mutta taulukon otsikko käyttää 100 ml:aa. Saman tuotteen jälleenmyyjä ilmoittaa 50,0 g / 100 g. Lisäksi ilmoitetut rasva, hiilihydraatti ja proteiini vastaavat jo ilman kuitua noin 325 kcal:ta suhteessa taulukon 300 kcal:iin. Varmista fyysisen pakkauksen ravintoarvotaulukko tai valmistajan korjattu tietolehti ennen sitomista. [Valmistaja](https://www.seyfrieds.de/lebensmittel/huelsenfruechte/rohe-huelsenfruechte/1639/urid-dal-weiss-urdbohnen-geschaelt-gespalten) · [Jälleenmyyjä](https://www.satnam.de/en/urid-dal-white-organic-v-6500.html)
+
+Jos massaperusteinen 50,0 g vahvistuu, idlin 16 g:n urad-erä ja GI 60 tuottavat neljälle laskettuna −0,096 GK/annos. Ehdollinen tulos on 26,45397. Masala dosan 100 g:n urad-erä ja GI 76 tuottavat neljälle −0,19 GK/annos, jolloin kypsäpainoskenaariot ovat 57,6125–63,305. Laskelmat käyttävät samaa valmistusmallia kuin nykyiset paketit. Laila White -tuotteen vähittäismyyjän 44 g / 100 g on toinen tarkistettava vaihtoehto, mutta valmistajan vastaavaa etikettiä ei varmennettu. [Laila-tuotetiedot](https://www.sainsburys.co.uk/groceries/product/laila-urid-dal-white-1kg)
