@@ -179,18 +179,18 @@ if (results.find(result => result.recipeId === ackeeRecipeId)?.status !== 'INSUF
 }
 const existingGkOnlyVariants = [...buildGkOnlyVariants(root),...buildApprovedSevenVariants(root),...buildApprovedFourVariants(root),...buildApprovedBVariants(root),...buildProductAVariants(root),...buildPanangKimchiVariants(root),buildBlueberryPieVariant(root),...buildThreeCurryVariants(root),buildLindstromBrineVariant(root),...buildReviewedGkVariants(root),...buildPohaHoneyMustardVariants(root),...buildTehoajoVariants(root),...buildTwoAlmondPieVariants(root)];
 const baselineCoverage = countGkVersions(results, existingGkOnlyVariants);
-const operation80Variants = await (async () => {
+if (process.argv.includes('--operation80-release-check')) {
   const { buildFarinataReviewVariant, buildLabnehReviewVariant, buildAckeeReviewVariant, buildPointReviewVariant } = await import('./gk-farinata-review');
   type ReleaseEntry = {
     recipeId: string; recipePath: string; recipeSha256: string; servings: number;
     evidencePath: string; evidenceSha256: string; scenarios: string[];
   };
   const approval = await readFile(path.join(root, 'docs/nutrition/gk80-operation80-first-release-approval.json'), 'utf8');
-  if (textHash(approval) !== 'c370cb126d9e35666c0a48fb51b540e40fbc19c1679d892362dd391fc850f2ac') throw new Error('Operation80 release approval changed');
+  if (textHash(approval) !== 'e28a41515c09adf08f737c5b1432fc6ade0e0e1ab96342db950d3444c11f6b4f') throw new Error('Operation80 review seal changed');
   const { boundFiles }: { boundFiles: Record<string, string> } = JSON.parse(approval);
   await Promise.all(Object.entries(boundFiles).map(async ([file, expected]) => {
     if (textHash(await readFile(path.join(root, file), 'utf8')) !== expected) {
-      throw new Error('Operation80 approved input changed: ' + file);
+      throw new Error('Operation80 review input changed: ' + file);
     }
   }));
   const manifest: { entries: ReleaseEntry[] } = JSON.parse(await readFile(
@@ -223,20 +223,15 @@ const operation80Variants = await (async () => {
   if (prepared.length !== firstBatchIds.size || prepared.some(variant => !firstBatchIds.has(variant.recipeId))) {
     throw new Error('Operation80 preview contains a recipe outside the first batch');
   }
-  return prepared;
-})();
-const gkOnlyVariants = [...existingGkOnlyVariants, ...operation80Variants];
-const versionCoverage = countGkVersions(results, gkOnlyVariants);
-if (versionCoverage.numericRecipes !== baselineCoverage.numericRecipes + operation80Variants.length) {
-  throw new Error('Operation80 release coverage mismatch');
-}
-if (process.argv.includes('--operation80-release-check')) {
+  const preview = countGkVersions(results, [...existingGkOnlyVariants, ...prepared]);
   console.log(JSON.stringify({
     baseline: { numeric: baselineCoverage.numericRecipes, total: baselineCoverage.total },
-    release: { numeric: versionCoverage.numericRecipes, added: operation80Variants.map(variant => variant.recipeId).sort() },
+    preview: { numeric: preview.numericRecipes, added: prepared.map(variant => variant.recipeId).sort() },
   }, null, 2));
   process.exit(0);
 }
+const gkOnlyVariants = existingGkOnlyVariants;
+const versionCoverage = baselineCoverage;
 const report = {
   generatedAt: new Date().toISOString(),
   scope: "Internal provenance report for ingredient-based per-serving estimates. These are not measurements of prepared meals or individual glucose responses.",
