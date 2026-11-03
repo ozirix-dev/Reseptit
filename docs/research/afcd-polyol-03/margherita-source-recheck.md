@@ -37,3 +37,7 @@ Kansainvälisen vuoden 2002 taulukon pizzaryhmässä on Sydneyn yliopiston mitta
 Nykyinen 114,5415 g/annos CHO-pohja antaa 56,125335 ja 64,1890566 GK/annos. Jos basilikan 0,8 g/annos nimellinen yläraja sisällytetään yläpäähän, tulos on 64,6373766. Ulospäin pyöristetty tutkimusväli on 56–65. Väli kuvaa valittuja kokonaisruokavastineita ja basilikan koostumusvarausta. Se ei ole mitattu Margheritan vaihteluväli. Julkaisusopimus ja tarkat lähdesovellukset vaativat hyväksynnän.
 
 [Kansainvälinen GI-taulukko, pizzaryhmä 488](https://ajcn.nutrition.org/article/S0002-9165%25252823%252905840-9/fulltext)
+
+## Täsmäversion hyväksyntä
+
+Käyttäjä hyväksyi commitissa a500a43e30fd288a2543da9d085d080d7dfffd53 katselmoidun Margheritan 56–65 GK/annos -version myöhemmän integraation valmisteluun. Hyväksyntä koskee vain tässä dokumentoitua reseptiä ja sen kahta kokonaispizzavastinetta sekä basilikan koostumusvarausta. Julkaisu päätetään erikseen.
