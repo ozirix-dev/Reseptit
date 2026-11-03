@@ -1,0 +1,124 @@
+{
+  "recipeId": "vietnamilainen-xoi-maapahkinalla",
+  "servings": 2,
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "unroundedGk": "27.60075",
+  "inputs": [
+    [
+      100,
+      70.5,
+      75.7
+    ],
+    [
+      100,
+      14.1,
+      13
+    ]
+  ],
+  "omissions": [
+    {
+      "ingredientIndex": 2,
+      "choPer100g": 6.2
+    },
+    {
+      "ingredientIndex": 3,
+      "choPer100g": 6.23
+    }
+  ],
+  "ingredients": [
+    {
+      "name": {
+        "fi": "Kuiva valkoinen tahmariisi",
+        "en": "Dry white glutinous rice",
+        "sv": "Torrt vitt klibbris",
+        "th": "ข้าวเหนียวขาวแห้ง"
+      },
+      "grams": 100
+    },
+    {
+      "name": {
+        "fi": "Paahdettu maapähkinä",
+        "en": "Roasted peanuts",
+        "sv": "Rostade jordnötter",
+        "th": "ถั่วลิสงคั่ว"
+      },
+      "grams": 100
+    },
+    {
+      "name": {
+        "fi": "Paahdettu seesaminsiemen",
+        "en": "Toasted sesame seeds",
+        "sv": "Rostade sesamfrön",
+        "th": "งาคั่ว"
+      },
+      "grams": 8
+    },
+    {
+      "name": {
+        "fi": "Raastettu tuore kookos",
+        "en": "Grated fresh coconut",
+        "sv": "Riven färsk kokos",
+        "th": "มะพร้าวสดขูด"
+      },
+      "grams": 25
+    },
+    {
+      "name": {
+        "fi": "Suola",
+        "en": "Salt",
+        "sv": "Salt",
+        "th": "เกลือ"
+      },
+      "grams": null
+    }
+  ],
+  "preparation": {
+    "fi": "Liota {{amount:0}} g kuivaa tahmariisiä ja höyrytä kypsäksi. Tarjoa lämpimänä. Jaa riisi, {{amount:1}} g paahdettuja maapähkinöitä, {{amount:2}} g paahdettua seesamia ja {{amount:3}} g makeuttamatonta tuoretta kookosta {{servings}} annokseen. Mausta suolalla.",
+    "en": "Soak {{amount:0}} g dry glutinous rice and steam until tender. Serve warm. Divide the rice, {{amount:1}} g roasted peanuts, {{amount:2}} g toasted sesame and {{amount:3}} g unsweetened fresh coconut into {{servings}} servings. Season with salt.",
+    "sv": "Blötlägg {{amount:0}} g torrt klibbris och ångkoka tills det är mjukt. Servera varmt. Fördela riset, {{amount:1}} g rostade jordnötter, {{amount:2}} g rostade sesamfrön och {{amount:3}} g osötad färsk kokos i {{servings}} portioner. Smaka av med salt.",
+    "th": "แช่ข้าวเหนียวแห้ง {{amount:0}} กรัมแล้วนึ่งจนสุก เสิร์ฟขณะอุ่น แบ่งข้าว ถั่วลิสงคั่ว {{amount:1}} กรัม งาคั่ว {{amount:2}} กรัม และมะพร้าวสดไม่เติมน้ำตาล {{amount:3}} กรัมเป็น {{servings}} ที่ ปรุงด้วยเกลือ"
+  },
+  "limitation": {
+    "fi": "Riisilajike ja höyrytys voivat muuttaa vastetta. Maapähkinän GI on verrokki. Seesamin ja kookoksen osuus, noin 1,03 g hiilihydraattia annosta kohti, jää laskelman ulkopuolelle.",
+    "en": "Rice variety and steaming can affect the response. Peanut GI is an analogue. About 1.03 g carbohydrate per serving from sesame and coconut is excluded.",
+    "sv": "Rissort och ångkokning kan påverka responsen. GI för jordnötter är ett jämförelsevärde. Cirka 1,03 g kolhydrat per portion från sesam och kokos ingår inte.",
+    "th": "พันธุ์ข้าวและวิธีนึ่งอาจเปลี่ยนการตอบสนอง ค่า GI ของถั่วลิสงเป็นค่าอ้างอิง ไม่รวมคาร์โบไฮเดรตจากงาและมะพร้าวประมาณ 1.03 กรัมต่อที่"
+  },
+  "sources": [
+    {
+      "title": "Kim et al., steamed glutinous rice",
+      "url": "https://doi.org/10.1017/S0007114518003446",
+      "kind": "HUMAN_GI",
+      "note": "GI 75.7."
+    },
+    {
+      "title": "Jenkins et al., peanut",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/6259925/",
+      "kind": "HUMAN_GI",
+      "note": "GI 13 analogue for roasted peanut."
+    },
+    {
+      "title": "MEXT 01151",
+      "url": "https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=1_01151_7&MODE=7",
+      "kind": "CARBOHYDRATE",
+      "note": "Available carbohydrate by weight, 70.5 g per 100 g."
+    },
+    {
+      "title": "AFCD F006110, F008214",
+      "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd",
+      "kind": "CARBOHYDRATE",
+      "note": "CC BY-SA 3.0 Australia."
+    },
+    {
+      "title": "USDA 170169",
+      "url": "https://fdc.nal.usda.gov/food-details/170169/nutrients",
+      "kind": "CARBOHYDRATE",
+      "note": "Total carbohydrate minus fibre."
+    }
+  ],
+  "boundFiles": {
+    "reseptit/aamupalat/vietnamilainen-xoi-maapahkinalla.md": "f5de045c45f50b5085810a20d18a239f5244831bf4ea06b9262b919862e61571",
+    "docs/nutrition/gk80-operation80-batch-47.md": "5033465462c2afc7978d6f3beddbe3a5a1521af0c30b55be21bba99fc10a662f"
+  }
+}
