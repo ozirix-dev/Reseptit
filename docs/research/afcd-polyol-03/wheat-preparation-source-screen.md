@@ -40,3 +40,16 @@ Neljälle jaettu Fineli Release 20 -laskelma toistaa nykyisen nettohiilihydraatt
 Omanin kokeessa vedellä tarjotun kasvissamosan GI oli 60,35, annos 50 g imeytyvää hiilihydraattia. Tällä arvolla reseptin kolmen pääraaka-aineen laskennallinen GK-skenaario on 44,28015/annos pyöristettynä viiteen desimaaliin. GI koskee testattua kokonaista samosaa. Täytteen tarkkoja suhteita ei ole vahvistettu, eikä Pakistanin vertailusta ole varmennettu samosan taulukkoriviä. Tulos jää tutkimukseen.
 
 [Omanin koe](https://www.squ.edu.om/Portals/10/DNNGalleryPro/uploads/2019/4/24/CAMSResearchReport2011.pdf) · [Pakistanin tutkimus](https://doi.org/10.1080/27697061.2025.2523600)
+
+## Neljän avoimen vehnäreseptin jatkopäätös
+
+| Resepti | Tulos | Avoin kohta |
+| --- | --- | --- |
+| Samosa | Kokonaisruokaskenaario 44,27–44,87 GK/annos kiinteällä GI:llä 60,35. | Punnittu sisältö ja Omanin vertailun soveltuvuus. Väli kuvaa vain koostumusta. |
+| Johnny cake | Pannupaistettu vehnätaikina, jossa on maitoa, voita ja leivinjauhetta. Karibialaisen sadha rotin GI 65 on nimetty vertailu. | Taikinoiden koostumusero ja pannupaiston vastaavuus. |
+| Gulab jamun | 250 g sokeria neljälle antaa 62,5 g sokeria/annos, jos kaikki siirappi tarjoillaan. | Tarjotun siirapin määrä ja friteeratun maitotaikinan GI. |
+| Manakish | Za’atar-fatayer on valmistukseltaan läheinen uunivertailu. | Testiannoksen imeytyvä hiilihydraatti ja taikinan vastaavuus. |
+
+Samosan päivitetty skenaario käyttää Finelin pakastehernettä 34229 (9,36 g/100 g) sekä 15 g Fineli 34238 -korianteria (0,505 g/100 g). Näillä hiilihydraattipohja on 73,3574375 g/annos ennen kuivamausteita. Ehdotetut 2 g juustokuminaa, 1 g garam masalaa ja 1 g chilijauhetta antavat massapohjaisen 0–1 g/annos varauksen. Uusia julkaistavia arvoja tässä seulassa 0.
+
+[Sadha roti](https://pubmed.ncbi.nlm.nih.gov/15182400/) · [Omanin samosakoe](https://www.squ.edu.om/Portals/10/DNNGalleryPro/uploads/2019/4/24/CAMSResearchReport2011.pdf)
