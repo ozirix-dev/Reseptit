@@ -29,8 +29,8 @@ test('the four A inputs and legacy variants remain intact as four approved B ver
  for(const previous of baseline.legacyVariants){const v=old.find(v=>v.recipeId===previous.recipeId)!;assert.equal(digest(v),previous.variantSha256,previous.recipeId);}
  const report=read('tmp/nutrition/glycemic-load-pilot.json');
  assert.deepEqual(report.gkOnlyVariants,gkOnlyVariants);assert.deepEqual(report.versionCoverage,gkVersionCoverage);
- assert.equal(gkVersionCoverage.numericRecipes,198);assert.equal(gkVersionCoverage.originalNumeric,156);assert.equal(gkVersionCoverage.additionalA,32);assert.equal(gkVersionCoverage.additionalB,10);assert.equal(gkVersionCoverage.total,326);assert.equal(gkVersionCoverage.missing,128);
- assert.deepEqual(report.coverageViews,{originalRecipe:{total:326,numeric:156,missing:170},atLeastOneExactVersion:{total:326,numeric:198,missing:128,additionalApprovedVersions:42}});
+ assert.equal(gkVersionCoverage.numericRecipes,201);assert.equal(gkVersionCoverage.originalNumeric,156);assert.equal(gkVersionCoverage.additionalA,35);assert.equal(gkVersionCoverage.additionalB,10);assert.equal(gkVersionCoverage.total,326);assert.equal(gkVersionCoverage.missing,125);
+ assert.deepEqual(report.coverageViews,{originalRecipe:{total:326,numeric:156,missing:170},atLeastOneExactVersion:{total:326,numeric:201,missing:125,additionalApprovedVersions:45}});
  assert.throws(()=>countGkVersions(report.results,[...gkOnlyVariants,four[0]]),/distinct/);
  for(const id of ['jerk-kana','sate-ayam'])assert.ok(!gkOnlyVariants.some(v=>v.recipeId===id));
 });
