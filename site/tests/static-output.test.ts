@@ -484,15 +484,20 @@ test('modeled captions disclose omissions in every locale and retain omission-fr
 
 test('approved GK-only versions are explicit on every existing locale page and coverage counts198 distinct recipes',async()=>{
  let pages=0;
+ const newEnglishPages = new Set(["keto-mutakakku", "keto-suklaakeksit"]);
+ const checkedEnglishPages = new Set<string>();
  for(const variant of gkOnlyVariants){
   for(const recipe of siteContent.recipes.filter(r=>r.recipeId===variant.recipeId)){
    const html=await readFile(path.join(dist,recipe.routePath.slice(1),'index.html'),'utf8'),t=gkOnlyUi[recipe.locale];
    assert.ok(html.includes(`data-gk-version="${variant.versionId}"`),recipe.routePath);
    assert.ok(html.includes(t.scope));assert.ok(html.includes(t.low));assert.ok(html.includes(gkScopeUi[recipe.locale].macroNotice));assert.ok(html.includes('data-nutrition-scope="ORIGINAL_RECIPE"'));assert.ok(html.includes('data-macro-separation="gk-only"'));assert.ok(html.includes(gkOnlyValue(variant,recipe.locale)));
    assert.ok(!html.includes('class="recipe-glycemic-load"'),'original unsupported version is not relabeled');
-   if(variant.scenarioRange)assert.ok(html.includes(t.range));if(variant.sensitivity)assert.ok(html.includes(t.sensitivityNote));pages++;
+   if(variant.scenarioRange)assert.ok(html.includes(t.range));if(variant.sensitivity)assert.ok(html.includes(t.sensitivityNote));
+   if (recipe.locale === "en" && newEnglishPages.has(recipe.recipeId)) checkedEnglishPages.add(recipe.recipeId);
+   else pages++;
   }
  }
+ assert.deepEqual(checkedEnglishPages, newEnglishPages);
  assert.equal(pages,89+siteContent.recipes.filter(r=>r.recipeId==='lindstrominpihvit-kaalilla').length);
  for(const p of ['glykeeminen-kuorma','en/glycemic-load','sv/glykemisk-belastning','th/glycemic-load']){
   const html=await readFile(path.join(dist,p,'index.html'),'utf8');assert.ok(html.includes('<strong>198</strong>'));assert.ok(html.includes('<strong>128</strong>'));assert.ok(html.includes('data-gk-coverage="version-aware"'));assert.ok(html.includes('data-gk-coverage="original"'));assert.ok(html.includes('<strong>156</strong>'));assert.ok(html.includes('<strong>170</strong>'));
