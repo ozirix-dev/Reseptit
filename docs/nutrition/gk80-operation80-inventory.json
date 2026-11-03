@@ -4,9 +4,9 @@
   "coverage": {
     "PROPOSED_RANGE": 29,
     "PUBLISHED_SINGLE": 197,
-    "PROPOSED_SINGLE": 21,
+    "PROPOSED_SINGLE": 22,
     "IN_PROGRESS": 36,
-    "NO_GK": 33,
+    "NO_GK": 32,
     "PUBLISHED_RANGE": 10
   },
   "reviewedPrHeads": {
@@ -111,7 +111,7 @@
     "japanilainen-curry-tofulla",
     "khao-soi-vhh-konjac"
   ],
-  "nextRecipeId": "korealainen-mandu-keitto-aamiaiseksi",
+  "nextRecipeId": "kung-pao-kana",
   "recipes": [
     {
       "recipeId": "aloo-paratha",
@@ -8198,10 +8198,10 @@
       "recipeSha256": "032a62d408897d6332bc48b64ca104e5960af4953a937d76afdd3edd66a3bd79",
       "pilotInputSha256": "6201c785639b4b0d35023fefeca3cacc1f70d690c9a4ecbdaa8ebacf38eef2f2",
       "servings": 2,
-      "status": "NO_GK",
+      "status": "PROPOSED_SINGLE",
       "priorEvidence": [],
-      "level": null,
-      "ownerApproval": null,
+      "level": "B",
+      "ownerApproval": false,
       "sourceQualified": null,
       "blockers": [
         "korealainen-mandu-keitto-aamiaiseksi: mandu: No source-matched composition and preparation was resolved for “mandu”; it is not treated as zero.",
@@ -8304,7 +8304,39 @@
             "Source-documented zero available carbohydrate: Plain salt has zero available carbohydrate."
           ]
         }
-      ]
+      ],
+      "operation80Proposal": {
+        "evidencePath": "docs/nutrition/gk80-operation80-batch-31.md",
+        "baselineRecipeSha256": "032a62d408897d6332bc48b64ca104e5960af4953a937d76afdd3edd66a3bd79",
+        "inputFields": [
+          "gramsBatch",
+          "choPer100g",
+          "giGlucoseScale"
+        ],
+        "scenarios": [
+          {
+            "inputs": [
+              [
+                150,
+                31.3,
+                28
+              ],
+              [
+                110,
+                0.3,
+                50
+              ],
+              [
+                12,
+                4.6,
+                40
+              ]
+            ],
+            "gkPerServing": "6.77"
+          }
+        ],
+        "publicationAuthorized": false
+      }
     },
     {
       "recipeId": "korealainen-tofu-kimchi-aamiaiskulho",
