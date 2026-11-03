@@ -2,11 +2,11 @@
   "schemaVersion": 1,
   "main": "4d6f19a620bb95e771c12f499554bf2cf1f06e51",
   "coverage": {
-    "PROPOSED_RANGE": 18,
+    "PROPOSED_RANGE": 19,
     "PUBLISHED_SINGLE": 197,
     "PROPOSED_SINGLE": 17,
     "IN_PROGRESS": 31,
-    "NO_GK": 53,
+    "NO_GK": 52,
     "PUBLISHED_RANGE": 10
   },
   "reviewedPrHeads": {
@@ -111,7 +111,7 @@
     "japanilainen-curry-tofulla",
     "khao-soi-vhh-konjac"
   ],
-  "nextRecipeId": "malesialainen-apam-balik",
+  "nextRecipeId": "malesialainen-kuih-seri-muka",
   "recipes": [
     {
       "recipeId": "aloo-paratha",
@@ -9063,10 +9063,10 @@
       "recipeSha256": "e79cae619673433b33136e61e4ca91d14daa02a4c226645347b386ef38893f80",
       "pilotInputSha256": "a7169ab195375c76123e1f3a1d89c5740d60aba06123224695320e324d6b6275",
       "servings": 2,
-      "status": "NO_GK",
+      "status": "PROPOSED_RANGE",
       "priorEvidence": [],
-      "level": null,
-      "ownerApproval": null,
+      "level": "B",
+      "ownerApproval": false,
       "sourceQualified": null,
       "blockers": [
         "malesialainen-apam-balik: maissi: The recipe says one corn without specifying fresh, cooked, or grilled state; Fineli cob mass can be looked up, but preparation and GI cannot be matched unambiguously.",
@@ -9103,7 +9103,79 @@
             "The recipe says one corn without specifying fresh, cooked, or grilled state; Fineli cob mass can be looked up, but preparation and GI cannot be matched unambiguously."
           ]
         }
-      ]
+      ],
+      "operation80Proposal": {
+        "evidencePath": "docs/nutrition/gk80-operation80-batch-15.md",
+        "baselineRecipeSha256": "e79cae619673433b33136e61e4ca91d14daa02a4c226645347b386ef38893f80",
+        "inputFields": [
+          "gramsBatch",
+          "choPer100g",
+          "giGlucoseScale"
+        ],
+        "scenarios": [
+          {
+            "inputs": [
+              [
+                100,
+                73.998,
+                57
+              ],
+              [
+                55,
+                0.3,
+                57
+              ],
+              [
+                80,
+                16.8,
+                59
+              ],
+              [
+                20,
+                8.9,
+                13
+              ],
+              [
+                25,
+                99.9,
+                59
+              ]
+            ],
+            "gkPerServing": "32.58458"
+          },
+          {
+            "inputs": [
+              [
+                100,
+                73.998,
+                61.8
+              ],
+              [
+                55,
+                0.3,
+                61.8
+              ],
+              [
+                80,
+                16.8,
+                59
+              ],
+              [
+                20,
+                8.9,
+                13
+              ],
+              [
+                25,
+                99.9,
+                59
+              ]
+            ],
+            "gkPerServing": "34.364492"
+          }
+        ],
+        "publicationAuthorized": false
+      }
     },
     {
       "recipeId": "malesialainen-congee-inkivaarilla",
