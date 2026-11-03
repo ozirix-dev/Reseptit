@@ -4,9 +4,9 @@
   "coverage": {
     "PROPOSED_RANGE": 25,
     "PUBLISHED_SINGLE": 197,
-    "PROPOSED_SINGLE": 17,
+    "PROPOSED_SINGLE": 18,
     "IN_PROGRESS": 34,
-    "NO_GK": 43,
+    "NO_GK": 42,
     "PUBLISHED_RANGE": 10
   },
   "reviewedPrHeads": {
@@ -111,7 +111,7 @@
     "japanilainen-curry-tofulla",
     "khao-soi-vhh-konjac"
   ],
-  "nextRecipeId": "vietnamilainen-banh-xeo-aamiaisletut",
+  "nextRecipeId": "bun-cha-hanoi",
   "recipes": [
     {
       "recipeId": "aloo-paratha",
@@ -16735,10 +16735,10 @@
       "recipeSha256": "bd4fbd1c77bd3d5383e5986c71bc87e5b2c0c0fd6ac1faa8b660b300b7b2136d",
       "pilotInputSha256": "0bd2c6bbc9cc383b53f811a49a3f7223626ce7d4d31e8bb2abe7a534aee82a25",
       "servings": 2,
-      "status": "NO_GK",
+      "status": "PROPOSED_SINGLE",
       "priorEvidence": [],
-      "level": null,
-      "ownerApproval": null,
+      "level": "B",
+      "ownerApproval": false,
       "sourceQualified": null,
       "blockers": [
         "vietnamilainen-banh-xeo-aamiaisletut: riisijauho: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved.",
@@ -16811,7 +16811,49 @@
             "Source-documented zero available carbohydrate: Plain salt has zero available carbohydrate."
           ]
         }
-      ]
+      ],
+      "operation80Proposal": {
+        "evidencePath": "docs/nutrition/gk80-operation80-batch-23.md",
+        "baselineRecipeSha256": "bd4fbd1c77bd3d5383e5986c71bc87e5b2c0c0fd6ac1faa8b660b300b7b2136d",
+        "inputFields": [
+          "gramsBatch",
+          "choPer100g",
+          "giGlucoseScale"
+        ],
+        "scenarios": [
+          {
+            "inputs": [
+              [
+                100,
+                79.3,
+                76
+              ],
+              [
+                200,
+                1.7,
+                76
+              ],
+              [
+                2,
+                44.4,
+                76
+              ],
+              [
+                150,
+                0,
+                0
+              ],
+              [
+                150,
+                1.6,
+                50
+              ]
+            ],
+            "gkPerServing": "32.36344"
+          }
+        ],
+        "publicationAuthorized": false
+      }
     },
     {
       "recipeId": "vietnamilainen-chao-ga-kanapuuro",
