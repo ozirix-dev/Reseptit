@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "batchId": "gk100-pr236-content-decisions",
+  "candidates": [
+    {
+      "classification": {
+        "contentChange": "GK_ONLY",
+        "outcome": "OWNER_DECISION",
+        "risk": "MEDIUM",
+        "contentSummary": "Hyväksy erillinen neljän annoksen versio, jossa 300 g kuivaa riisivermiselliä, koko dippi ja punnittu marinadi jaetaan annoksiin.",
+        "reasons": [
+          "Kaksi kypsän riisinuudelin GI-mittausta määrittävät skenaariot. Pakkauskohtainen kypsennys ja kylmähuuhtelu voivat muuttaa vastaavuutta.",
+          "Koko dipin tarjoilu on sisältövalinta. Laskenta olettaa marinadin hiilihydraattien täyden siirtymän. Etikan nolla perustuu nimetyn tuotteen annosmerkintään."
+        ],
+        "review": {
+          "evidence": "docs/nutrition/gk80-operation80-batch-24.md ja nelikielisen ehdokkaan syötteet, lähteet ja valmistusrajaukset.",
+          "depth": "FOCUSED"
+        },
+        "candidateSha256": "e68a6f31c1b38a1b9679f2f7f6b1c3df574e15907e46ae56ad1a92b8bc7d7de3"
+      },
+      "packetPath": "docs/nutrition/gk80-operation80-bun-cha-release-candidate.json",
+      "recipeId": "bun-cha-hanoi"
+    },
+    {
+      "classification": {
+        "contentChange": "GK_ONLY",
+        "outcome": "OWNER_DECISION",
+        "risk": "HIGH",
+        "contentSummary": "Hyväksy erillinen neljän annoksen versio, jossa käytetään 200 g kuivaa jasmiiniriisiä, 400 g nimettyä kiinteää tofua ja punnitut kastikesyötteet.",
+        "reasons": [
+          "Riisin GI 82 on leipäviitteisestä kokeesta glukoosiasteikolle muunnettu arvo. GI 90 on Thai Hom Mali -kokeen yhden osallistujaryhmän pyöristetty glukoosiviitteinen tulos. Skenaariot kuvaavat riisiä.",
+          "Kastike ja tofu käyttävät laskentakoodeja. Summan ulkopuolelle jää enintään 1,57095 g CHO/annos. GI 100 -seulonnassa lisä olisi 1,57095 GK, joten poisjätön vaikutus on osa päätöstä.",
+          "Kiinteä tofu ja kuivan riisin punnitus määrittävät eri version kuin alkuperäisen reseptin pehmeä tofu ja kypsä riisi."
+        ],
+        "review": {
+          "evidence": "docs/nutrition/gk80-operation80-mapo-tofu.md, ehdokkaan neljä poisjättöriviä ja riisin GI-koosteen rivit 605 ja 609.",
+          "depth": "DEEP"
+        },
+        "candidateSha256": "063cb803deff24fa3312e1d6a8ae56d97ab97edfe877af41f51aaaa8dd71552b"
+      },
+      "packetPath": "docs/nutrition/gk80-operation80-mapo-tofu-release-candidate.json",
+      "recipeId": "mapo-tofu"
+    }
+  ]
+}
