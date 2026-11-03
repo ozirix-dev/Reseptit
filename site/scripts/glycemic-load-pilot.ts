@@ -237,6 +237,7 @@ if (process.argv.includes('--operation80-release-check')) {
     buildPointReviewVariant(root, 'docs/nutrition/gk80-operation80-bammy-release-candidate.json'),
     buildPointReviewVariant(root, 'docs/nutrition/gk80-operation80-banh-cuon-release-candidate.json'),
     buildPointReviewVariant(root, 'docs/nutrition/gk80-operation80-brik-release-candidate.json'),
+    buildPointReviewVariant(root, 'docs/nutrition/gk80-operation80-dim-sum-release-candidate.json'),
   ];
   const preview = countGkVersions(results, [...existingGkOnlyVariants, ...prepared, ...secondBatch]);
   console.log(JSON.stringify({
