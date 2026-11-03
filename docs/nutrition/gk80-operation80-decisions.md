@@ -134,3 +134,9 @@ Lootuksen siemeniä koskeva ihmis-GI-koe mittaa eri kasvinosaa. Juuren GI jää 
 Bánh baon lähdepaketin reseptitarkiste täsmää. Varmennettu ehdollinen laskelma on 25,298172–34,552647 GK/annos eli ulospäin pyöristettynä 25–35. Uusi taikina lisää 50 g vettä ja 0,6 g kuivahiivaa nykyiseen 100 g jauhomäärään. Höyrytetyn leipäkomponentin 37,0179 g CHO/annos lasketaan kahdella ihmis-GI-verrokilla 68 ja 93, ja soija lisää 0,126 GK. Täyte lisätään höyrytyksen jälkeen. Reseptin uusi valmistus ja lähdesovellus tarvitsevat hyväksynnän. [Lähdepaketti](../research/gk80-international-20261102/steamed-buns-source-control/CURRENT.md)
 
 Baozin historiallista 31,56 GK/annos -arvoa ei palauteta. Täytettynä höyrytetylle baozille ei käytetä suoraan bánh baon täyttämättömän leivän sidosta. Baozi tarvitsee oman valmistusverrokin, punnitun kevätsipulin ja maissitärkkelyksen GI- tai pienosuuspäätöksen.
+
+### Jerk-kana ja kookosriisi
+
+Ehdotettu 40 g punnittua kevätsipulia neljälle antaa AFCD F006250:n 4,6 g CHO/100 g arvolla 0,46 g CHO/annos. Samalla laskennallisella GI-koodilla 40 kuin kung pao -kanassa sen osuus on 0,184 GK/annos, jos koko marinadi päätyy annoksiin. Määrä on reseptin neljän kevätsipulin tilalle ehdotettu punnitus. [Koostumus- ja GI-koodisidos](gk80-operation80-batch-37.md)
+
+Thompson ym. vertasivat pitkäjyväistä riisiä ja kidneypapu–riisiateriaa samalla 50 g CHO-annoksella. Kidneypapuaterian iAUC-ero riisiin ei ollut tilastollisesti merkitsevä. Koe käytti riisiä vertailuna ja sen ateriasta puuttui kookosmaito. Se ei anna glukoosiasteikon GI:tä reseptin riisi–papu–kookosmaitolisukkeelle. Aiempi 43,96 GK/annos jää historiatiedoksi. Seuraava laskentavaihe on nimetyn valutetun pavun ja kookosmaidon koostumus, riisin valmistusverrokki sekä marinadin sokerin ja syötävän osuuden sitominen. [Thompson ym.](https://pmc.ncbi.nlm.nih.gov/articles/PMC3489574/)
