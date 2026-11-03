@@ -1,0 +1,861 @@
+{
+  "approval": {
+    "date": "2026-11-03",
+    "scope": "Owner approved the standalone homemade brine variant and the scoped LOW category-GI calculation in chat 01a19dfb-dc25-7292-9a91-d58514144c51. Technical integration only.",
+    "researchCommit": "3ca4b4fa650d158fceed0243895477c93ed279a8"
+  },
+  "case": {
+    "recipeId": "lindstrominpihvit-kaalilla",
+    "sourcePath": "reseptit/paaruoat/lindstrominpihvit-kaalilla.md",
+    "sourceLfSha256": "ea116b68468b429136a7d799a9e84530ab6d618b77aa4dcd2a18857599f77069",
+    "sourceIngredients": [
+      {
+        "amount": 500,
+        "unit": "g",
+        "item": "naudan jauhelihaa"
+      },
+      {
+        "amount": 100,
+        "unit": "g",
+        "item": "säilykepunajuurta"
+      },
+      {
+        "amount": 2,
+        "unit": "rkl",
+        "item": "punajuurilientä"
+      },
+      {
+        "amount": 1,
+        "unit": "kpl",
+        "item": "pieni sipuli"
+      },
+      {
+        "amount": 1,
+        "unit": "kpl",
+        "item": "kananmuna"
+      },
+      {
+        "amount": 1,
+        "unit": "rkl",
+        "item": "Dijon-sinappia"
+      },
+      {
+        "amount": 2,
+        "unit": "rkl",
+        "item": "voita"
+      },
+      {
+        "amount": 500,
+        "unit": "g",
+        "item": "valkokaalia"
+      },
+      {
+        "amount": null,
+        "unit": "",
+        "item": "suolaa ja mustapippuria"
+      }
+    ],
+    "servings": 4,
+    "variant": "NEW same-day beet and weighed homemade brine version:100g boiled unsalted beet plus all30g brine made from10g sugar,5g white winevinegar,15g water; substitutes original commercial preservedbeet and unmeasured jarjuice. NamedDijon15.75g,smallonion30g,newpepper.5g. No claim of equivalent2rkl volume or oldproduct nutrientvalue.",
+    "ingredients": [
+      {
+        "sourceRowIndex": 0,
+        "name": "naudan jauhelihaa7%rasva",
+        "grams": 500,
+        "fineliRecordId": "fineli-712",
+        "giRecordId": null
+      },
+      {
+        "sourceRowIndex": 1,
+        "name": "keitetty punajuuri (red beet vegetable),unsalted",
+        "grams": 100,
+        "fineliRecordId": "fineli-30382",
+        "giRecordId": "vegetables-category-mean-gi-66",
+        "massEvidence": "NEW100g edible boiled unsalted beet weighed before mixing with defined brine. Not a claimed native value for commercial beet preserve.",
+        "foodKey": "vegetable",
+        "preparationKey": "vegetable-category",
+        "giMatchEvidence": "Existing published broad category proxy,LOW; new named recipe application needs source/content review. Not a measured ingredient- or meal-specific GI."
+      },
+      {
+        "sourceRowIndex": 2,
+        "name": "NEWliemen sokeri",
+        "grams": 10,
+        "fineliRecordId": "fineli-1",
+        "giRecordId": "sugar-syrups-category-mean-gi-58",
+        "massEvidence": "10g ordinary crystalline sugar included in full30g brine batch; nativeCHO99.9g/100g,notzero.",
+        "foodKey": "sugar-syrups-category-mean",
+        "preparationKey": "category-mean",
+        "giMatchEvidence": "Existing published broad category proxy,LOW; new named recipe application needs source/content review. Not a measured ingredient- or meal-specific GI."
+      },
+      {
+        "sourceRowIndex": 2,
+        "name": "NEWliemen valkoviinietikka",
+        "grams": 5,
+        "fineliRecordId": "fineli-929",
+        "giRecordId": null
+      },
+      {
+        "sourceRowIndex": 2,
+        "name": "NEWliemen vesi",
+        "grams": 15,
+        "fineliRecordId": "fineli-922",
+        "giRecordId": null
+      },
+      {
+        "sourceRowIndex": 3,
+        "name": "pieni keltasipuli",
+        "grams": 30,
+        "fineliRecordId": "fineli-335",
+        "giRecordId": null,
+        "massEvidence": "Fineli335small30g,not medium55g."
+      },
+      {
+        "sourceRowIndex": 4,
+        "name": "kananmuna",
+        "grams": 55,
+        "fineliRecordId": "fineli-858",
+        "giRecordId": null
+      },
+      {
+        "sourceRowIndex": 5,
+        "name": "MailleDijonOriginal865gDK SKU12017601EAN3036810201761",
+        "grams": 15.75,
+        "fineliRecordId": null,
+        "giRecordId": null,
+        "availableCarbohydrateUpperBoundPerServingG": 0.1378125,
+        "upperBoundEvidence": "NamedEUlabel3.5gCHO/100g*15.75g/4=.1378125 nominalupper,notanalyticalmaximum. Individualpolyolsunknown.",
+        "excludedReason": "Positive label-based CHO allowance,not mustardGI orzero."
+      },
+      {
+        "sourceRowIndex": 6,
+        "name": "voita",
+        "grams": 28,
+        "fineliRecordId": "fineli-500",
+        "giRecordId": null
+      },
+      {
+        "sourceRowIndex": 7,
+        "name": "valkokaalia",
+        "grams": 500,
+        "fineliRecordId": "fineli-320",
+        "giRecordId": "vegetables-category-mean-gi-66",
+        "foodKey": "vegetable",
+        "preparationKey": "vegetable-category",
+        "giMatchEvidence": "Existing published broad category proxy,LOW; new named recipe application needs source/content review. Not a measured ingredient- or meal-specific GI."
+      },
+      {
+        "sourceRowIndex": 8,
+        "name": "NEWweighedmustapippuri",
+        "grams": 0.5,
+        "fineliRecordId": "afcd-F006618",
+        "giRecordId": null
+      },
+      {
+        "sourceRowIndex": 8,
+        "name": "plain suola maun mukaan",
+        "grams": null,
+        "fineliRecordId": null,
+        "giRecordId": null,
+        "estimatedAvailableCarbohydratePerServingG": 0,
+        "negligibleAssumption": "Native Fineli30 CHO0 coefficient. Saltmassnotknown;not assumedzero saltmass.",
+        "excludedReason": "Source-backed plain salt zeroCHO coefficient only."
+      }
+    ],
+    "brineVersionSpecification": "Mix all10g sugar+5g white winevinegar+15g water with100g boiled beet for this dish; use all beet and all brine in same batch, no discarded liquid or assumed diffusion loss. This is a source-resolved same-day recipe component, not a shelf-stable canning instruction or the current commercial-pickle version.",
+    "expected": {
+      "gk": "6.895695",
+      "omittedChoIncludingCeilingsG": "0.6495625",
+      "display": "5–10"
+    },
+    "sourceApplicationApproved": false,
+    "contentVersionApproved": false,
+    "actualBatchWeighed": false,
+    "publicationApproved": false,
+    "newPublishedValue": false,
+    "macroPublicationAuthorized": false,
+    "newRuleApplied": false
+  },
+  "sourceFilesLfSha256": {
+    "reseptit/paaruoat/lindstrominpihvit-kaalilla.md": "ea116b68468b429136a7d799a9e84530ab6d618b77aa4dcd2a18857599f77069",
+    "docs/nutrition/fineli-release-20-reference.json": "95936da78358138d303f85e8e21962b33052d47b71860d994905717d0a282e76",
+    "docs/nutrition/afcd-release-3-reference.json": "02edf1cc95191c05edf791656a5109c41bcf4d4a3e707be69ef5009bc640022e",
+    "docs/nutrition/glycemic-index-records.json": "fb465ac8f68ffc85e29eb9900f17df00b081fa0ddc3e25d253140aecb248acda",
+    "site/scripts/glycemic-load-model.ts": "10ce09e465886e4538fc0b2ad2a54ca0b050a9e3729b7417eb0a91f2b946b48c"
+  },
+  "foods": [
+    {
+      "id": "fineli-500",
+      "name": "VOI",
+      "state": "VOI",
+      "basis": "per100g-as-sold",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "nativePath": "docs/nutrition/fineli-release-20-reference.json",
+      "nativeId": "500",
+      "nativeClass": "BUTTER",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/500",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Native field retained; AFCD individualpolyolsUNKNOWN,directWITHOUT-sugar-alcohols used.",
+      "per100g": {
+        "carbohydrate": 0.8,
+        "polyols": 0.0,
+        "fibre": 0.0,
+        "protein": 1.19,
+        "fat": 81.3
+      }
+    },
+    {
+      "id": "fineli-858",
+      "name": "KANANMUNA, KUORETON",
+      "state": "KANANMUNA, KUORETON",
+      "basis": "per100g-as-sold",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "nativePath": "docs/nutrition/fineli-release-20-reference.json",
+      "nativeId": "858",
+      "nativeClass": "EGGS",
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/858",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Native field retained; AFCD individualpolyolsUNKNOWN,directWITHOUT-sugar-alcohols used.",
+      "per100g": {
+        "carbohydrate": 0.3,
+        "polyols": 0.0,
+        "fibre": 0.0,
+        "protein": 12.61,
+        "fat": 9.24
+      }
+    },
+    {
+      "id": "fineli-712",
+      "name": "JAUHELIHA, NAUDAN, VÄHÄRASVAINEN, RASVAA 7 %",
+      "nativePath": "docs/nutrition/fineli-release-20-reference.json",
+      "nativeId": "712",
+      "nativeRecord": {
+        "source_id": "712",
+        "name": "JAUHELIHA, NAUDAN, VÄHÄRASVAINEN, RASVAA 7 %",
+        "food_type": "FOOD",
+        "process": "RAW",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "BEEF",
+        "food_class": "MSTEAK",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 0.0,
+          "fibre_g_per_100g": 0.0,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 18.75,
+          "fat_g_per_100g": 7.0
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "L",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "IG",
+            "method_indicator": "MIR003"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0123"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "U",
+            "method_indicator": "MIR007"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "IG",
+            "method_indicator": "MIR003"
+          }
+        },
+        "portion_mass_g": {}
+      },
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/712",
+      "state": "RAW",
+      "basis": "per100g-edible",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Native SUGOH, no inferred missing zero",
+      "per100g": {
+        "carbohydrate": 0.0,
+        "fibre": 0.0,
+        "polyols": 0.0,
+        "protein": 18.75,
+        "fat": 7.0
+      }
+    },
+    {
+      "id": "fineli-335",
+      "name": "SIPULI, KELTASIPULI",
+      "nativePath": "docs/nutrition/fineli-release-20-reference.json",
+      "nativeId": "335",
+      "nativeRecord": {
+        "source_id": "335",
+        "name": "SIPULI, KELTASIPULI",
+        "food_type": "FOOD",
+        "process": "RAW",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "VEGONI",
+        "food_class": "VEGFRESH",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 4.8,
+          "fibre_g_per_100g": 1.2,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 1.25,
+          "fat_g_per_100g": 0.1
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0181"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "T",
+            "method_indicator": "MI0123"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MIR006"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0172"
+          }
+        },
+        "portion_mass_g": {
+          "KPL_S": 30.0,
+          "KPL_M": 55.0,
+          "KPL_L": 200.0,
+          "DL": 90.0
+        }
+      },
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/335",
+      "state": "RAW",
+      "basis": "per100g-edible",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Native SUGOH, no inferred missing zero",
+      "per100g": {
+        "carbohydrate": 4.8,
+        "fibre": 1.2,
+        "polyols": 0.0,
+        "protein": 1.25,
+        "fat": 0.1
+      }
+    },
+    {
+      "id": "fineli-30382",
+      "name": "PUNAJUURI, KEITETTY, SUOLATON",
+      "nativePath": "docs/nutrition/fineli-release-20-reference.json",
+      "nativeId": "30382",
+      "nativeRecord": {
+        "source_id": "30382",
+        "name": "PUNAJUURI, KEITETTY, SUOLATON",
+        "food_type": "DISH",
+        "process": "BOIL",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "DISH",
+        "food_class": "VEGPOT",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 8.163,
+          "fibre_g_per_100g": 2.551,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 1.43,
+          "fat_g_per_100g": 0.102
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "R",
+            "method_indicator": "MI0002"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "R",
+            "method_indicator": "MI0002"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "R",
+            "method_indicator": "MI0002"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "R",
+            "method_indicator": "MI0002"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "R",
+            "method_indicator": "MI0002"
+          }
+        },
+        "portion_mass_g": {
+          "KPL_M": 80.0
+        }
+      },
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/30382",
+      "state": "BOIL",
+      "basis": "per100g-edible",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Native SUGOH, no inferred missing zero",
+      "per100g": {
+        "carbohydrate": 8.163,
+        "fibre": 2.551,
+        "polyols": 0.0,
+        "protein": 1.43,
+        "fat": 0.102
+      }
+    },
+    {
+      "id": "fineli-929",
+      "name": "VIINIETIKKA",
+      "nativePath": "docs/nutrition/fineli-release-20-reference.json",
+      "nativeId": "929",
+      "nativeRecord": {
+        "source_id": "929",
+        "name": "VIINIETIKKA",
+        "food_type": "FOOD",
+        "process": "IND",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "FLAVSAUC",
+        "food_class": "SPISAUCE",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 0.5,
+          "fibre_g_per_100g": 0.0,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 0.0,
+          "fat_g_per_100g": 0.0
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "U",
+            "method_indicator": "MIR007"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0181"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "IG",
+            "method_indicator": "MIR003"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "U",
+            "method_indicator": "MIR003"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0172"
+          }
+        },
+        "portion_mass_g": {
+          "DL": 100.0,
+          "RKL": 15.0,
+          "TL": 5.0
+        }
+      },
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/929",
+      "state": "IND",
+      "basis": "per100g-edible",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Native SUGOH, no inferred missing zero",
+      "per100g": {
+        "carbohydrate": 0.5,
+        "fibre": 0.0,
+        "polyols": 0.0,
+        "protein": 0.0,
+        "fat": 0.0
+      }
+    },
+    {
+      "id": "fineli-1",
+      "name": "SOKERI",
+      "nativePath": "docs/nutrition/fineli-release-20-reference.json",
+      "nativeId": "1",
+      "nativeRecord": {
+        "source_id": "1",
+        "name": "SOKERI",
+        "food_type": "FOOD",
+        "process": "IND",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "SUGARSYR",
+        "food_class": "SUGADD",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 99.9,
+          "fibre_g_per_100g": 0.0,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 0.0,
+          "fat_g_per_100g": 0.0
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "F",
+            "method_type": "E",
+            "method_indicator": "MIR003"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0181"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "L",
+            "method_type": "P",
+            "method_indicator": "MIR003"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "U",
+            "method_indicator": "MIR007"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0172"
+          }
+        },
+        "portion_mass_g": {
+          "KPL_S": 2.0,
+          "KPL_M": 3.0,
+          "KPL_L": 4.0,
+          "DL": 85.0,
+          "RKL": 12.0,
+          "TL": 4.0
+        }
+      },
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/1",
+      "state": "IND",
+      "basis": "per100g-edible",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Native SUGOH, no inferred missing zero",
+      "per100g": {
+        "carbohydrate": 99.9,
+        "fibre": 0.0,
+        "polyols": 0.0,
+        "protein": 0.0,
+        "fat": 0.0
+      }
+    },
+    {
+      "id": "fineli-320",
+      "name": "VALKOKAALI, KERÄKAALI",
+      "nativePath": "docs/nutrition/fineli-release-20-reference.json",
+      "nativeId": "320",
+      "nativeRecord": {
+        "source_id": "320",
+        "name": "VALKOKAALI, KERÄKAALI",
+        "food_type": "FOOD",
+        "process": "RAW",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "CABBAGE",
+        "food_class": "VEGFRESH",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 4.97,
+          "fibre_g_per_100g": 2.0,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 1.2,
+          "fat_g_per_100g": 0.1
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "D",
+            "method_type": "AG",
+            "method_indicator": "MI1302"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0181"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "D",
+            "method_type": "S",
+            "method_indicator": "MI0123"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MIR006"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0172"
+          }
+        },
+        "portion_mass_g": {
+          "KPL_S": 800.0,
+          "KPL_M": 1200.0,
+          "KPL_L": 1500.0,
+          "DL": 40.0
+        }
+      },
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/320",
+      "state": "RAW",
+      "basis": "per100g-edible",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Native SUGOH, no inferred missing zero",
+      "per100g": {
+        "carbohydrate": 4.97,
+        "fibre": 2.0,
+        "polyols": 0.0,
+        "protein": 1.2,
+        "fat": 0.1
+      }
+    },
+    {
+      "id": "fineli-922",
+      "name": "VESI, VESIJOHTOVESI",
+      "nativePath": "docs/nutrition/fineli-release-20-reference.json",
+      "nativeId": "922",
+      "nativeRecord": {
+        "source_id": "922",
+        "name": "VESI, VESIJOHTOVESI",
+        "food_type": "FOOD",
+        "process": "X",
+        "edible_portion_percent": 100.0,
+        "ingredient_class": "WATER",
+        "food_class": "DRWATER",
+        "per100g": {
+          "available_carbohydrate_g_per_100g": 0.0,
+          "fibre_g_per_100g": 0.0,
+          "polyols_g_per_100g": 0.0,
+          "protein_g_per_100g": 0.0,
+          "fat_g_per_100g": 0.0
+        },
+        "component_provenance": {
+          "fat_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "IG",
+            "method_indicator": "MIR003"
+          },
+          "available_carbohydrate_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "IG",
+            "method_indicator": "MIR003"
+          },
+          "protein_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "IG",
+            "method_indicator": "MIR003"
+          },
+          "polyols_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "U",
+            "method_indicator": "MIR003"
+          },
+          "fibre_g_per_100g": {
+            "acquisition_type": "S",
+            "method_type": "S",
+            "method_indicator": "MI0172"
+          }
+        },
+        "portion_mass_g": {
+          "DL": 100.0,
+          "RKL": 15.0,
+          "TL": 5.0
+        }
+      },
+      "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/922",
+      "state": "X",
+      "basis": "per100g-edible",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "polyolsSourceVerified": true,
+      "polyolsEvidence": "Native SUGOH, no inferred missing zero",
+      "per100g": {
+        "carbohydrate": 0.0,
+        "fibre": 0.0,
+        "polyols": 0.0,
+        "protein": 0.0,
+        "fat": 0.0
+      }
+    },
+    {
+      "id": "afcd-F006618",
+      "name": "Pepper, black, ground",
+      "state": "Pepper, black, ground",
+      "basis": "per100g-as-sold",
+      "carbohydrateDefinition": "EU_AVAILABLE",
+      "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+      "nativeSourcePath": "docs/nutrition/afcd-release-3-reference.json",
+      "nativeSourceRecord": {
+        "source_id": "F006618",
+        "classification": 31302,
+        "derivation": "Borrowed",
+        "name": "Pepper, black, ground",
+        "protein_g_per_100g": 10.4,
+        "fat_g_per_100g": 3.3,
+        "fibre_g_per_100g": 25.3,
+        "glycerol_g_per_100g": null,
+        "erythritol_g_per_100g": null,
+        "maltitol_g_per_100g": null,
+        "mannitol_g_per_100g": null,
+        "xylitol_g_per_100g": null,
+        "sorbitol_g_per_100g": null,
+        "available_carbohydrate_without_sugar_alcohols_g_per_100g": 38.6,
+        "available_carbohydrate_with_sugar_alcohols_g_per_100g": 38.6
+      },
+      "polyolsSourceVerified": false,
+      "polyolsEvidence": "Native field retained, null remains unknown. Direct CHOAVL or AFCD WITHOUT-sugar-alcohols; no fibre deduction or inferred individual-polyolzero.",
+      "per100g": {
+        "carbohydrate": 38.6,
+        "fibre": 25.3,
+        "polyols": null,
+        "protein": 10.4,
+        "fat": 3.3
+      }
+    }
+  ],
+  "gis": [
+    {
+      "id": "vegetables-category-mean-gi-66",
+      "gi": 66,
+      "foodKey": "vegetable",
+      "preparationKey": "vegetable-category",
+      "food": "Vegetables other than potatoes, category mean",
+      "preparation": "Broad category mean; preparation and individual vegetables vary",
+      "qualityTier": "SUPPLEMENTARY",
+      "referenceScale": "GLUCOSE_100",
+      "matchKind": "CATEGORY_MEAN",
+      "confidence": "LOW",
+      "source": {
+        "title": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+        "url": "https://doi.org/10.1093/ajcn/nqab233",
+        "table": "Table 1 summary: vegetables other than potatoes mean GI 66 ± 19 (n=91), values from Supplemental Table 1",
+        "year": 2021,
+        "published": true,
+        "iso26642Confirmed": false,
+        "referenceFood": "Glucose",
+        "qualityEvidence": "Published broad category mean calculated from the ISO-screened Supplemental Table 1 food measurements. This category contains diverse vegetables and is not specific to cabbage, cauliflower, cucumber, zucchini, or eggplant."
+      },
+      "note": "Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence."
+    },
+    {
+      "id": "sugar-syrups-category-mean-gi-58",
+      "gi": 58,
+      "foodKey": "sugar-syrups-category-mean",
+      "preparationKey": "category-mean",
+      "food": "Sugars and syrups category mean",
+      "preparation": "Category mean from Table 1; individual food and preparation were not tested as this item",
+      "qualityTier": "SUPPLEMENTARY",
+      "referenceScale": "GLUCOSE_100",
+      "source": {
+        "title": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+        "url": "https://doi.org/10.1093/ajcn/nqab233",
+        "table": "Table 1; mean of Supplemental Table 1 entries for Sugars and syrups (n=50)",
+        "year": 2021,
+        "published": true,
+        "iso26642Confirmed": false,
+        "qualityEvidence": "Table 1 reports a category mean calculated from food-specific entries in Supplemental Table 1. The target ingredient was not individually tested; category matching is a broad proxy and is low confidence."
+      },
+      "note": "sugars and syrups category mean",
+      "matchKind": "CATEGORY_MEAN",
+      "confidence": "LOW"
+    }
+  ],
+  "mustard": {
+    "name": "Maille Dijon Original865g Danish foodservice SKU12017601",
+    "ean": "3036810201761",
+    "url": "https://www.unileverfoodsolutions.dk/produkt/maille-dijon-original-865-g-24-DA-384452.html",
+    "basis": "per100g-as-sold",
+    "labelCarbohydrateG": 3.5,
+    "labelFibreG": 2,
+    "labelProteinG": 7,
+    "labelFatG": 11,
+    "htmlSha256": "7efc98bc8fdc163acb0b3ca86484b904c620e45f59bc3d1d66d8f451f87b8eda",
+    "usage": "Nominal label CHO ceiling including potentially unknown polyols; not an analytical maximum. No fibre deduction, no GI50 assignment and no inferred polyolzero."
+  },
+  "copy": {
+    "names": {
+      "fi": [
+        "Naudanjauheliha, 7 %",
+        "Keitetty suolaton punajuuri",
+        "Sokeri",
+        "Valkoviinietikka",
+        "Vesi",
+        "Keltasipuli",
+        "Kananmuna ilman kuorta",
+        "Maille Dijon Original, SKU 12017601",
+        "Voi",
+        "Valkokaali",
+        "Mustapippuri",
+        "Suola maun mukaan"
+      ],
+      "en": [
+        "Ground beef, 7% fat",
+        "Boiled unsalted beetroot",
+        "Sugar",
+        "White wine vinegar",
+        "Water",
+        "Yellow onion",
+        "Egg without shell",
+        "Maille Dijon Original, SKU 12017601",
+        "Butter",
+        "White cabbage",
+        "Black pepper",
+        "Salt to taste"
+      ],
+      "sv": [
+        "Nötfärs, 7 % fett",
+        "Kokt osaltad rödbeta",
+        "Socker",
+        "Vitvinsvinäger",
+        "Vatten",
+        "Gul lök",
+        "Ägg utan skal",
+        "Maille Dijon Original, SKU 12017601",
+        "Smör",
+        "Vitkål",
+        "Svartpeppar",
+        "Salt efter smak"
+      ],
+      "th": [
+        "เนื้อวัวบด ไขมัน 7%",
+        "บีตรูตต้มไม่ใส่เกลือ",
+        "น้ำตาล",
+        "น้ำส้มสายชูไวน์ขาว",
+        "น้ำ",
+        "หอมใหญ่",
+        "ไข่ไม่รวมเปลือก",
+        "Maille Dijon Original รหัส 12017601",
+        "เนย",
+        "กะหล่ำปลีขาว",
+        "พริกไทยดำ",
+        "เกลือตามชอบ"
+      ]
+    },
+    "preparation": {
+      "fi": "Raasta keitetty punajuuri. Sekoita sokeri, etikka ja vesi liemeksi. Hienonna sipuli. Sekoita jauhelihaan punajuuri, koko liemi, sipuli, muna ja sinappi. Mausta suolalla ja pippurilla. Muotoile litteiksi pihveiksi ja paista osassa voita keskilämmöllä noin 4 minuuttia per puoli, kunnes ne ovat kypsiä. Suikaloi kaali ja paista lopussa voissa 10–12 minuuttia. Tarjoa heti.",
+      "en": "Grate the boiled beetroot. Mix the sugar, vinegar and water into a brine. Chop the onion. Mix the beef with the beetroot, all the brine, onion, egg and mustard. Season with salt and pepper. Shape flat patties and fry in some of the butter over medium heat for about 4 minutes per side until cooked through. Shred the cabbage and fry in the remaining butter for 10–12 minutes. Serve immediately.",
+      "sv": "Riv den kokta rödbetan. Blanda socker, vinäger och vatten till en lag. Hacka löken. Blanda nötfärsen med rödbeta, hela lagen, lök, ägg och senap. Krydda med salt och peppar. Forma platta biffar och stek dem i en del av smöret på medelvärme cirka 4 minuter per sida tills de är genomstekta. Strimla vitkålen och stek den i resten av smöret i 10–12 minuter. Servera genast.",
+      "th": "ขูดบีตรูตต้ม ผสมน้ำตาล น้ำส้มสายชู และน้ำให้เป็นน้ำปรุงรส สับหอมใหญ่ ผสมเนื้อบดกับบีตรูต น้ำปรุงรสทั้งหมด หอมใหญ่ ไข่ และมัสตาร์ด ปรุงด้วยเกลือและพริกไทย ปั้นเป็นแผ่นแบนแล้วทอดด้วยเนยส่วนหนึ่งบนไฟกลางประมาณด้านละ 4 นาทีจนสุกทั่ว ซอยกะหล่ำปลีแล้วผัดกับเนยที่เหลือ 10–12 นาที เสิร์ฟทันที"
+    },
+    "limitation": {
+      "fi": "Itse tehdyn punajuuriliemen versio. Arvio käyttää kasvisten ja sokerin ryhmä-GI-arvoja. Liemen koko sokerimäärä sisältyy laskentaan. Sinapin hiilihydraattivaraus perustuu nimetyn tuotteen etikettiin.",
+      "en": "Version with homemade beetroot brine. The estimate uses group GI values for vegetables and sugar. All the sugar in the brine is included. The mustard carbohydrate allowance uses the named product label.",
+      "sv": "Version med hemgjord rödbetslag. Beräkningen använder grupp-GI för grönsaker och socker. Allt socker i lagen ingår. Senapens kolhydratmängd baseras på den angivna produktens etikett.",
+      "th": "สูตรใช้น้ำปรุงรสบีตรูตทำเอง การประเมินใช้ค่า GI ของกลุ่มผักและน้ำตาล โดยนับน้ำตาลในน้ำปรุงรสทั้งหมด ปริมาณคาร์โบไฮเดรตของมัสตาร์ดอ้างอิงจากฉลากผลิตภัณฑ์ที่ระบุ"
+    }
+  }
+}
