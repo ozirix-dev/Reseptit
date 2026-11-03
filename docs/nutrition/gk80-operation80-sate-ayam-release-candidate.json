@@ -1,0 +1,178 @@
+{
+  "recipeId": "sate-ayam",
+  "servings": 4,
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "unroundedGk": "6.015175",
+  "inputs": [
+    [
+      150,
+      13,
+      13
+    ],
+    [
+      200,
+      3.4,
+      50
+    ],
+    [
+      27,
+      100,
+      59
+    ],
+    [
+      45,
+      8.02,
+      50
+    ],
+    [
+      6,
+      16.3,
+      40
+    ],
+    [
+      700,
+      0,
+      0
+    ]
+  ],
+  "ingredients": [
+    {
+      "grams": 150,
+      "name": {
+        "fi": "KoRo-maapähkinävoi",
+        "en": "KoRo peanut butter",
+        "sv": "KoRo-jordnötssmör",
+        "th": "เนยถั่ว KoRo"
+      }
+    },
+    {
+      "grams": 200,
+      "name": {
+        "fi": "Blue Dragon -kookosmaito",
+        "en": "Blue Dragon coconut milk",
+        "sv": "Blue Dragon-kokosmjölk",
+        "th": "กะทิ Blue Dragon"
+      }
+    },
+    {
+      "grams": 27,
+      "name": {
+        "fi": "Fariinisokeri",
+        "en": "Brown sugar",
+        "sv": "Farinsocker",
+        "th": "น้ำตาลทรายแดง"
+      }
+    },
+    {
+      "grams": 45,
+      "name": {
+        "fi": "Limettimehu",
+        "en": "Lime juice",
+        "sv": "Limejuice",
+        "th": "น้ำมะนาว"
+      }
+    },
+    {
+      "grams": 6,
+      "name": {
+        "fi": "Valkosipuli",
+        "en": "Garlic",
+        "sv": "Vitlök",
+        "th": "กระเทียม"
+      }
+    },
+    {
+      "grams": 700,
+      "name": {
+        "fi": "Broilerin reisiliha",
+        "en": "Chicken thigh",
+        "sv": "Kycklinglårfilé",
+        "th": "เนื้อสะโพกไก่"
+      }
+    },
+    {
+      "grams": null,
+      "name": {
+        "fi": "Kikkoman-soijakastike",
+        "en": "Kikkoman soy sauce",
+        "sv": "Kikkoman-sojasås",
+        "th": "ซีอิ๊ว Kikkoman"
+      },
+      "quantity": {
+        "amount": 45,
+        "unit": "ml"
+      }
+    },
+    {
+      "grams": 2,
+      "name": {
+        "fi": "Jauhettu korianteri",
+        "en": "Ground coriander",
+        "sv": "Malen koriander",
+        "th": "ลูกผักชีป่น"
+      }
+    },
+    {
+      "grams": 1,
+      "name": {
+        "fi": "Kurkuma",
+        "en": "Turmeric",
+        "sv": "Gurkmeja",
+        "th": "ขมิ้น"
+      }
+    }
+  ],
+  "omissions": [
+    {
+      "ingredientIndex": 6,
+      "choPer100ml": 3.2
+    },
+    {
+      "ingredientIndex": 7,
+      "choPer100g": 100
+    },
+    {
+      "ingredientIndex": 8,
+      "choPer100g": 100
+    }
+  ],
+  "preparation": {
+    "fi": "Marinoi kana 30 minuuttia seoksessa, jossa on 30 ml soijaa, 18 g fariinisokeria, 30 g limettimehua, valkosipuli, korianteri ja kurkuma. Lämmitä maapähkinävoi, kookosmaito, loput 15 ml soijaa ja 9 g sokeria kastikkeeksi. Grillaa vartaat kypsiksi ja jaa kastikkeen ja 15 g tarjoilulimettimehun kanssa {{servings}} annokseen.",
+    "en": "Marinate the chicken for 30 minutes in 30 ml soy sauce, 18 g brown sugar, 30 g lime juice, garlic, coriander and turmeric. Warm the peanut butter, coconut milk, remaining 15 ml soy sauce and 9 g sugar for the sauce. Grill the skewers until cooked through and divide with the sauce and 15 g serving lime juice into {{servings}} servings.",
+    "sv": "Marinera kycklingen i 30 minuter i 30 ml soja, 18 g farinsocker, 30 g limejuice, vitlök, koriander och gurkmeja. Värm jordnötssmör, kokosmjölk, resterande 15 ml soja och 9 g socker till sås. Grilla spetten tills de är genomstekta och dela med såsen och 15 g limejuice till servering i {{servings}} portioner.",
+    "th": "หมักไก่ 30 นาทีด้วยซีอิ๊ว 30 มล. น้ำตาลทรายแดง 18 กรัม น้ำมะนาว 30 กรัม กระเทียม ลูกผักชี และขมิ้น อุ่นเนยถั่ว กะทิ ซีอิ๊วที่เหลือ 15 มล. และน้ำตาล 9 กรัมให้เป็นซอส ย่างไก่เสียบไม้จนสุก แบ่งซอสและน้ำมะนาวสำหรับเสิร์ฟ 15 กรัมพร้อมไก่เป็น {{servings}} ที่"
+  },
+  "limitation": {
+    "fi": "Arvio olettaa marinadin hiilihydraattien täyden siirtymän annoksiin. Maapähkinän GI on levitteen verrokki. Pois rajattu osuus on enintään 1,11 g CHO/annos.",
+    "en": "The estimate assumes all marinade carbohydrate reaches the servings. Peanut GI is a proxy for peanut butter. Up to 1.11 g carbohydrate per serving is excluded.",
+    "sv": "Uppskattningen antar att alla kolhydrater från marinaden hamnar i portionerna. Jordnötternas GI används som jämförelse för jordnötssmöret. Högst 1,11 g kolhydrat per portion ingår inte.",
+    "th": "ค่าประมาณสมมติว่าคาร์โบไฮเดรตจากน้ำหมักทั้งหมดอยู่ในอาหาร ใช้ค่า GI ของถั่วลิสงแทนเนยถั่ว ไม่รวมคาร์โบไฮเดรตไม่เกิน 1.11 กรัมต่อที่"
+  },
+  "sources": [
+    {
+      "title": "KoRo",
+      "url": "https://www.koro.com/ie/peanut-butter-1kg"
+    },
+    {
+      "title": "Jenkins et al.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/6259925/"
+    },
+    {
+      "title": "Blue Dragon",
+      "url": "https://www.bluedragon.co.uk/products/coconut-milk"
+    },
+    {
+      "title": "Kikkoman",
+      "url": "https://www.kikkoman.co.uk/products/detail/fs-kikkoman-naturally-brewed-soy-sauce"
+    },
+    {
+      "title": "USDA lime juice",
+      "url": "https://fdc.nal.usda.gov/food-details/168156/nutrients"
+    }
+  ],
+  "boundFiles": {
+    "reseptit/paaruoat/sate-ayam.md": "3ed0776b1f7a4358f11648e9311faef5018a28b758e0826c72a0f62d26dda93b",
+    "docs/nutrition/gk80-operation80-sate-ayam.md": "833f5329346dbb19eb3e2a9d78053d6c7ed1132b3c97bb7714f0c7a3a490f762"
+  }
+}
