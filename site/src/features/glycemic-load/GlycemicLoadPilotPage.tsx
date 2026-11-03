@@ -1,5 +1,8 @@
+import { useState } from 'react';
+import { gkEstimate, gkEstimateClass } from '../recipes/gk-estimate';
+import { countPublishedGkEstimates } from '../recipes/gk-only-types';
 import {gkOnlyVariants,gkVersionCoverage} from '@/generated/gk-only-variants.generated';
-import {GkOnlyVariantPanel,gkOnlyUi,gkScopeUi} from '../recipes/GkOnlyVariantPanel';
+import {GkOnlyVariantPanel,gkOnlyUi,gkScopeUi,gkRangeUi} from '../recipes/GkOnlyVariantPanel';
 import {scopedPolyolDisclosure} from '../recipes/scoped-polyol-disclosure';
 import {recoveryDisclosure} from '../recipes/recovery-disclosure';
 import {formatGlycemicLoadNumber} from '../recipes/gk80-format';
@@ -55,6 +58,9 @@ const sources = [
 export function GlycemicLoadPilotPage() {
   const locale = recipeLocaleFromPath(useLocation().pathname);
   const text = copy[locale];
+  const [lowOnly, setLowOnly] = useState(false);
+  const rangeText = gkRangeUi[locale];
+  const coverage = countPublishedGkEstimates(glycemicLoadPilotResults, gkOnlyVariants);
 
   const numberLocale = { fi: "fi-FI", en: "en-GB", sv: "sv-SE", th: "th-TH" }[locale];
   const number = new Intl.NumberFormat(numberLocale, { maximumSignificantDigits: 1, minimumSignificantDigits: 1 });
@@ -78,10 +84,16 @@ export function GlycemicLoadPilotPage() {
       </section>
       <section className="glycemic-pilot__recipes" aria-labelledby="glycemic-pilot-recipes">
         <h2 id="glycemic-pilot-recipes">{text.recipeDetails}</h2>
+        <p>{rangeText.exact}: {coverage.exact} · {rangeText.range}: {coverage.range} · {rangeText.missing}: {coverage.missing} · {rangeText.total}: {coverage.exact + coverage.range}/{coverage.total}</p>
+        <label><input type="checkbox" checked={lowOnly} onChange={event => setLowOnly(event.target.checked)} /> {rangeText.low}</label>
         <ol>{glycemicLoadPilotResults.map((result) => {
           const localized = result.localeRoutes[locale] ?? result.localeRoutes.fi;
           const confidence = result.confidence === "HIGH" ? text.high : result.confidence === "MEDIUM" ? text.medium : text.low;
           const variant=gkOnlyVariants.find(v=>v.recipeId===result.recipeId);
+          const estimate = variant ? gkEstimate(variant.point, variant.scenarioRange)
+            : result.status === 'CALCULATED' ? gkEstimate(result.glycemicLoadPerServing, result.glycemicLoadRangePerServing)
+            : gkEstimate(null);
+          if (lowOnly && gkEstimateClass(estimate) !== 'LOW') return null;
           if(variant)return <li key={result.recipeId} id={result.recipeId} className="glycemic-pilot__recipe"><h3><Link to={localized?.routePath??result.routePath}>{localized?.title??result.title}</Link></h3><GkOnlyVariantPanel variant={variant} locale={locale} compact /></li>;
           return <li key={result.recipeId} id={result.recipeId} className="glycemic-pilot__recipe">
             <h3><Link to={localized?.routePath ?? result.routePath}>{localized?.title ?? result.title}</Link></h3>
