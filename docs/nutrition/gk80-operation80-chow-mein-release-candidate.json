@@ -1,0 +1,219 @@
+{
+  "recipeId": "chow-mein",
+  "servings": 4,
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "unroundedGk": "11.91775",
+  "upperScenario": {
+    "giOverrides": [
+      {
+        "inputIndex": 0,
+        "gi": 48.2
+      }
+    ],
+    "unroundedGk": "12.17965"
+  },
+  "omissions": [
+    {
+      "ingredientIndex": 7,
+      "choPer100g": 31
+    }
+  ],
+  "preparation": {
+    "fi": "Keitä ja valuta vehnämunanuudelit ja punnitse {{amount:0}} g. Sekoita {{amount:5}} g soijakastiketta, {{amount:7}} g Lee Kum Kee Premium Oyster Saucea ja {{amount:9}} ml seesamiöljyä. Wokkaa {{amount:1}} g broileria kypsäksi {{amount:8}} rkl:ssa öljyä ja nosta sivuun. Wokkaa {{amount:2}} g valkosipulia, {{amount:3}} g kaalia ja {{amount:4}} g porkkanaa. Lisää nuudelit, kastike ja broileri, kääntele kuumaksi, lisää {{amount:6}} g kevätsipulia ja jaa {{servings}} annokseen.",
+    "en": "Cook and drain the wheat egg noodles and weigh {{amount:0}} g. Mix {{amount:5}} g soy sauce, {{amount:7}} g Lee Kum Kee Premium Oyster Sauce and {{amount:9}} ml sesame oil. Stir-fry {{amount:1}} g chicken in {{amount:8}} tbsp oil until cooked and set aside. Stir-fry {{amount:2}} g garlic, {{amount:3}} g cabbage and {{amount:4}} g carrot. Add noodles, sauce and chicken, toss until hot, add {{amount:6}} g spring onion and divide into {{servings}} servings.",
+    "sv": "Koka och låt äggnudlarna rinna av och väg upp {{amount:0}} g. Blanda {{amount:5}} g soja, {{amount:7}} g Lee Kum Kee Premium Oyster Sauce och {{amount:9}} ml sesamolja. Woka {{amount:1}} g kyckling i {{amount:8}} msk olja tills den är genomstekt och lägg åt sidan. Woka {{amount:2}} g vitlök, {{amount:3}} g vitkål och {{amount:4}} g morot. Tillsätt nudlar, sås och kyckling, vänd runt tills allt är varmt, tillsätt {{amount:6}} g salladslök och dela i {{servings}} portioner.",
+    "th": "ต้มบะหมี่ไข่แล้วสะเด็ดน้ำ ชั่ง {{amount:0}} กรัม ผสมซีอิ๊ว {{amount:5}} กรัม ซอสหอยนางรม Lee Kum Kee Premium {{amount:7}} กรัม และน้ำมันงา {{amount:9}} มล. ผัดไก่ {{amount:1}} กรัมในน้ำมัน {{amount:8}} ช้อนโต๊ะจนสุกแล้วตักพัก ผัดกระเทียม {{amount:2}} กรัม กะหล่ำปลี {{amount:3}} กรัม และแครอต {{amount:4}} กรัม ใส่เส้น ซอส และไก่ ผัดให้ร้อนทั่ว ใส่ต้นหอม {{amount:6}} กรัม แล้วแบ่งเป็น {{servings}} ที่"
+  },
+  "limitation": {
+    "fi": "Nuudelien verrokit ovat keitetty munafettuccine ja keitetty vehnänuudeli. Lyhyt wokkaus voi muuttaa vastetta. Osterikastikkeen pieni hiilihydraattiosuus jää laskelman ulkopuolelle.",
+    "en": "The noodle comparators are boiled egg fettuccine and boiled wheat noodles. Brief wok cooking can affect the response. The small carbohydrate contribution from oyster sauce is excluded.",
+    "sv": "Jämförelseprodukterna är kokt äggfettuccine och kokta vetenudlar. Kort wokning kan påverka responsen. Det lilla kolhydratbidraget från ostronsås ingår inte i beräkningen.",
+    "th": "ค่าอ้างอิงมาจากเฟตตูชินีไข่ต้มและบะหมี่แป้งสาลีต้ม การผัดสั้น ๆ อาจเปลี่ยนการตอบสนอง การคำนวณไม่รวมคาร์โบไฮเดรตปริมาณเล็กน้อยจากซอสหอยนางรม"
+  },
+  "ingredients": [
+    {
+      "name": {
+        "fi": "Keitetty valutettu vehnämunanuudeli",
+        "en": "Cooked drained wheat egg noodles",
+        "sv": "Kokta avrunna äggnudlar",
+        "th": "บะหมี่ไข่ต้มสะเด็ดน้ำ"
+      },
+      "grams": 300
+    },
+    {
+      "name": {
+        "fi": "Broilerin reisiliha",
+        "en": "Chicken thigh",
+        "sv": "Kycklinglårfilé",
+        "th": "เนื้อสะโพกไก่"
+      },
+      "grams": 400
+    },
+    {
+      "name": {
+        "fi": "Valkosipuli",
+        "en": "Garlic",
+        "sv": "Vitlök",
+        "th": "กระเทียม"
+      },
+      "grams": 6
+    },
+    {
+      "name": {
+        "fi": "Valkokaali",
+        "en": "White cabbage",
+        "sv": "Vitkål",
+        "th": "กะหล่ำปลี"
+      },
+      "grams": 200
+    },
+    {
+      "name": {
+        "fi": "Porkkana",
+        "en": "Carrot",
+        "sv": "Morot",
+        "th": "แครอต"
+      },
+      "grams": 60
+    },
+    {
+      "name": {
+        "fi": "Soijakastike",
+        "en": "Soy sauce",
+        "sv": "Soja",
+        "th": "ซีอิ๊ว"
+      },
+      "grams": 54
+    },
+    {
+      "name": {
+        "fi": "Kevätsipuli",
+        "en": "Spring onion",
+        "sv": "Salladslök",
+        "th": "ต้นหอม"
+      },
+      "grams": 12
+    },
+    {
+      "name": {
+        "fi": "Lee Kum Kee -osterikastike",
+        "en": "Lee Kum Kee oyster sauce",
+        "sv": "Lee Kum Kee ostronsås",
+        "th": "ซอสหอยนางรม Lee Kum Kee"
+      },
+      "grams": 12
+    },
+    {
+      "name": {
+        "fi": "Paistoöljy",
+        "en": "Cooking oil",
+        "sv": "Stekolja",
+        "th": "น้ำมันสำหรับผัด"
+      },
+      "grams": null,
+      "quantity": {
+        "amount": 2,
+        "unit": "tbsp"
+      }
+    },
+    {
+      "name": {
+        "fi": "Seesamiöljy",
+        "en": "Sesame oil",
+        "sv": "Sesamolja",
+        "th": "น้ำมันงา"
+      },
+      "grams": null,
+      "quantity": {
+        "amount": 5,
+        "unit": "ml"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Perry et al., boiled egg fettuccine",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/10872434/",
+      "kind": "HUMAN_GI",
+      "note": "GI 47."
+    },
+    {
+      "title": "Kim et al., boiled wheat noodles",
+      "url": "https://doi.org/10.1017/S0007114518003446",
+      "kind": "HUMAN_GI",
+      "note": "GI 48.2."
+    },
+    {
+      "title": "AFCD F006044, F002806, F004193, F008065, F006250",
+      "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd",
+      "kind": "CARBOHYDRATE",
+      "note": "CC BY-SA 3.0 Australia."
+    },
+    {
+      "title": "Fineli 320, 300",
+      "url": "https://fineli.fi/fineli/fi/ohje/19",
+      "kind": "CARBOHYDRATE",
+      "note": "CC BY 4.0."
+    },
+    {
+      "title": "Lee Kum Kee Premium Oyster Sauce",
+      "url": "https://uk.lkk.com/products/premium-oyster-sauce",
+      "kind": "CARBOHYDRATE",
+      "note": "31 g CHO per 100 g."
+    },
+    {
+      "title": "GI coding method",
+      "url": "https://doi.org/10.2337/dc08-1239",
+      "kind": "PUBLISHED_CODING",
+      "note": "Vegetable GI code."
+    },
+    {
+      "title": "Low carbohydrate food coding",
+      "url": "https://doi.org/10.1016/j.jfca.2007.02.004",
+      "kind": "PUBLISHED_CODING",
+      "note": "Soy sauce GI code."
+    }
+  ],
+  "inputs": [
+    [
+      300,
+      29.1,
+      47
+    ],
+    [
+      400,
+      0,
+      0
+    ],
+    [
+      6,
+      10.2,
+      40
+    ],
+    [
+      200,
+      4.97,
+      40
+    ],
+    [
+      60,
+      5.56,
+      40
+    ],
+    [
+      54,
+      3.2,
+      50
+    ],
+    [
+      12,
+      4.6,
+      40
+    ]
+  ],
+  "boundFiles": {
+    "reseptit/paaruoat/chow-mein.md": "3e9d6ed75ef531708f84720de20aa4fc8d40122f0fdd81c6a6f609d34cbab9c2",
+    "docs/nutrition/gk80-operation80-batch-25.md": "61bf66a84f1d95421c2c8ac29bbceef13b66014cc71dd7b0df2881a4de89782f"
+  }
+}
