@@ -1,0 +1,106 @@
+{
+  "recipeId": "meksikolainen-chilaquiles-verdes",
+  "servings": 2,
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "unroundedGk": "16.713623870967742",
+  "upperScenario": {
+    "choOverrides": [
+      {
+        "inputIndex": 0,
+        "cho": 13.333333333333334
+      }
+    ],
+    "unroundedGk": "18.77814"
+  },
+  "inputs": [
+    [
+      150,
+      6.451612903225806,
+      40
+    ],
+    [
+      100,
+      51.845,
+      52.4
+    ],
+    [
+      150,
+      4.3,
+      35
+    ],
+    [
+      110,
+      0.3,
+      40
+    ]
+  ],
+  "ingredients": [
+    {
+      "grams": 150,
+      "name": {
+        "fi": "Herdez Salsa Verde Mild tai Mad Mexican Salsa Verde",
+        "en": "Herdez Salsa Verde Mild or Mad Mexican Salsa Verde",
+        "sv": "Herdez Salsa Verde Mild eller Mad Mexican Salsa Verde",
+        "th": "ซัลซาเขียว Herdez Mild หรือ Mad Mexican"
+      }
+    },
+    {
+      "grams": 100,
+      "name": {
+        "fi": "Maissitortillat",
+        "en": "Corn tortillas",
+        "sv": "Majstortillor",
+        "th": "ตอร์ติญาข้าวโพด"
+      }
+    },
+    {
+      "grams": 150,
+      "name": {
+        "fi": "Queso fresco",
+        "en": "Queso fresco",
+        "sv": "Queso fresco",
+        "th": "ชีสเกโซเฟรสโก"
+      }
+    },
+    {
+      "grams": 110,
+      "name": {
+        "fi": "Kananmunat",
+        "en": "Eggs",
+        "sv": "Ägg",
+        "th": "ไข่"
+      }
+    }
+  ],
+  "preparation": {
+    "fi": "Leikkaa {{amount:1}} g maissitortilloja paloiksi ja paista paistoöljyssä. Kuumenna {{amount:0}} g vihreää salsaa ja pyöräytä tortillapalat siinä. Paista {{amount:3}} g kananmunia ja murenna päälle {{amount:2}} g queso frescoa. Jaa tasan {{servings}} annokseen.",
+    "en": "Cut {{amount:1}} g corn tortillas into pieces and fry in oil. Heat {{amount:0}} g green salsa and toss the tortilla pieces in it. Fry {{amount:3}} g eggs and crumble {{amount:2}} g queso fresco on top. Divide evenly into {{servings}} servings.",
+    "sv": "Skär {{amount:1}} g majstortillor i bitar och stek i olja. Värm {{amount:0}} g grön salsa och vänd tortillabitarna i den. Stek {{amount:3}} g ägg och smula över {{amount:2}} g queso fresco. Dela jämnt i {{servings}} portioner.",
+    "th": "หั่นตอร์ติญาข้าวโพด {{amount:1}} กรัมเป็นชิ้นแล้วทอดในน้ำมัน อุ่นซัลซาเขียว {{amount:0}} กรัมแล้วคลุกกับตอร์ติญา ทอดไข่ {{amount:3}} กรัมและโรยชีสเกโซเฟรสโก {{amount:2}} กรัม แบ่งเท่า ๆ กันเป็น {{servings}} ที่"
+  },
+  "limitation": {
+    "fi": "Väli käyttää kahden salsan etikettiarvoja ja laskennallista GI-koodia 40. Herdezin kuitumäärää ei ole eritelty. Tortillan GI-verrokki ei kata pehmenemistä salsassa.",
+    "en": "The range uses two salsa labels and assigned GI code 40. Herdez does not quantify fibre. The tortilla GI proxy does not account for softening in salsa.",
+    "sv": "Intervallet använder två salsaetiketter och tilldelad GI-kod 40. Herdez anger ingen fibermängd. Tortillans GI-jämförelse tar inte hänsyn till att den mjuknar i salsan.",
+    "th": "ช่วงนี้ใช้ฉลากซัลซาสองชนิดและค่า GI ตามกลุ่ม 40 ฉลาก Herdez ไม่ระบุปริมาณใยอาหาร ค่า GI ที่ใช้เทียบตอร์ติญาไม่ได้ครอบคลุมการนิ่มลงในซัลซา"
+  },
+  "sources": [
+    {
+      "title": "Herdez",
+      "url": "https://www.salsas.com/herdez/wp-content/uploads/sites/2/2019/01/herdez-salsa-verde-mild-16-oz-nfp.jpg"
+    },
+    {
+      "title": "Mad Mexican",
+      "url": "https://madmexican.ca/artisan-foods/our-products/salsa-verde/"
+    },
+    {
+      "title": "PR #229",
+      "url": "https://github.com/ozirix-dev/Reseptit/pull/229"
+    }
+  ],
+  "boundFiles": {
+    "reseptit/aamupalat/meksikolainen-chilaquiles-verdes.md": "84d2801095a02bb3c9a7d98b4c937653798ee84706fe032cf886365bd4ae4160",
+    "docs/nutrition/gk80-operation80-salsa-verde.md": "50f528ceaa22c664d36ccb6b8458ea4c99f244710e99bf04bcfe90ac38fd336d"
+  }
+}
