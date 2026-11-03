@@ -1,0 +1,145 @@
+{
+  "recipeId": "korealainen-mandu-keitto-aamiaiseksi",
+  "servings": 2,
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "preparation": {
+    "fi": "Liota {{amount:4}} g kuivaa wakamea pakkauksen ohjeen mukaan. Valuta ja huuhtele. Keitä {{amount:0}} g manduja {{amount:3}} ml:ssa kanalientä pakkauksen mukaan. Lisää {{amount:1}} g vatkattua kananmunaa ja kypsennä. Lisää {{amount:2}} g kevätsipulia sekä wakame ja jaa {{servings}} annokseen.",
+    "en": "Soak {{amount:4}} g dried wakame as directed on the pack. Drain and rinse. Boil {{amount:0}} g mandu in {{amount:3}} ml broth according to the pack. Stir in {{amount:1}} g beaten egg and cook through. Add {{amount:2}} g spring onion and the wakame, then divide into {{servings}} portions.",
+    "sv": "Blötlägg {{amount:4}} g torkad wakame enligt förpackningen. Låt rinna av och skölj. Koka {{amount:0}} g mandu i {{amount:3}} ml buljong enligt förpackningen. Rör ner {{amount:1}} g uppvispat ägg och tillaga. Tillsätt {{amount:2}} g salladslök och wakame och dela i {{servings}} portioner.",
+    "th": "แช่วากาเมะแห้ง {{amount:4}} กรัมตามคำแนะนำบนฉลาก สะเด็ดน้ำแล้วล้าง ต้มมันดู {{amount:0}} กรัมในน้ำซุป {{amount:3}} มล. ตามฉลาก ใส่ไข่ตี {{amount:1}} กรัมแล้วต้มให้สุก เติมต้นหอม {{amount:2}} กรัมและวากาเมะ แบ่ง {{servings}} ส่วน"
+  },
+  "limitation": {
+    "fi": "Mandu käyttää liha–sipulinyytin GI-vertailua. Liemestä jää laskelman ulkopuolelle 0,70 g hiilihydraattia annosta kohti.",
+    "en": "Mandu uses a meat-and-onion dumpling as its GI comparator. The broth contributes 0.70 g carbohydrate per serving outside the calculation.",
+    "sv": "Mandu jämförs med en kött- och lökfylld dumpling för GI. Buljongen bidrar med 0,70 g kolhydrat per portion utanför beräkningen.",
+    "th": "ค่า GI ของมันดูอ้างอิงเกี๊ยวไส้เนื้อและหัวหอม น้ำซุปมีคาร์โบไฮเดรต 0.70 กรัมต่อหนึ่งหน่วยบริโภคที่อยู่นอกการคำนวณ"
+  },
+  "ingredients": [
+    {
+      "name": {
+        "fi": "Bibigo Mini Mandu",
+        "en": "Bibigo Mini Mandu",
+        "sv": "Bibigo Mini Mandu",
+        "th": "มันดู Bibigo Mini"
+      },
+      "grams": 150
+    },
+    {
+      "name": {
+        "fi": "Kananmuna ilman kuorta",
+        "en": "Shelled egg",
+        "sv": "Ägg utan skal",
+        "th": "ไข่ไม่รวมเปลือก"
+      },
+      "grams": 110
+    },
+    {
+      "name": {
+        "fi": "Kevätsipuli",
+        "en": "Spring onion",
+        "sv": "Salladslök",
+        "th": "ต้นหอม"
+      },
+      "grams": 12
+    },
+    {
+      "name": {
+        "fi": "Aneto-kanaliemi",
+        "en": "Aneto chicken broth",
+        "sv": "Aneto kycklingbuljong",
+        "th": "น้ำซุปไก่ Aneto"
+      },
+      "grams": null,
+      "quantity": {
+        "amount": 700,
+        "unit": "ml"
+      }
+    },
+    {
+      "name": {
+        "fi": "Kuiva Clearspring-wakame",
+        "en": "Dried Clearspring wakame",
+        "sv": "Torkad Clearspring-wakame",
+        "th": "วากาเมะแห้ง Clearspring"
+      },
+      "grams": 1
+    }
+  ],
+  "omissions": [
+    {
+      "ingredientIndex": 3,
+      "choPer100ml": 0.2
+    }
+  ],
+  "unroundedGk": "6.7659",
+  "sources": [
+    {
+      "title": "Yang et al., Table 2",
+      "url": "https://www.wjgnet.com/1007-9327/full/v12/i21/3430-T2.htm",
+      "kind": "HUMAN_GI",
+      "note": "Glucose-scale GI 28, meat–shallot dumpling."
+    },
+    {
+      "title": "Bibigo Mini Mandu",
+      "url": "https://bibigo.co.uk/product/mini-mandu-pork-vegetable-dumplings/",
+      "kind": "CARBOHYDRATE",
+      "note": "31.3 g/100 g"
+    },
+    {
+      "title": "Fineli 858",
+      "url": "https://fineli.fi/fineli/fi/elintarvikkeet/858",
+      "kind": "CARBOHYDRATE",
+      "note": "0.3 g/100 g"
+    },
+    {
+      "title": "AFCD F006250",
+      "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd",
+      "kind": "CARBOHYDRATE",
+      "note": "4.6 g/100 g"
+    },
+    {
+      "title": "Aneto",
+      "url": "https://www.caldoaneto.com/en/product/wellness-broths/natural-low-sodium-chicken-broth",
+      "kind": "CARBOHYDRATE",
+      "note": "0.2 g/100 ml"
+    },
+    {
+      "title": "Clearspring",
+      "url": "https://www.clearspring.co.uk/products/japanese-wakame-dried-sea-vegetable",
+      "kind": "CARBOHYDRATE",
+      "note": "0 g/100 g on supplier table."
+    },
+    {
+      "title": "Assigned GI codes",
+      "url": "https://doi.org/10.2337/dc08-1239",
+      "kind": "B_CODING",
+      "note": "Egg 50; spring onion 40."
+    }
+  ],
+  "preparationChange": {
+    "note": "Uses 1 g dry wakame per two servings instead of the research draft’s 10 g. The measured Clearspring sample supplied about 499 µg iodine per 5 g dry; lot variability and soaking retention are unknown. The carbohydrate calculation is unchanged.",
+    "source": "https://doi.org/10.3390/foods13162615"
+  },
+  "inputs": [
+    [
+      150,
+      31.3,
+      28
+    ],
+    [
+      110,
+      0.3,
+      50
+    ],
+    [
+      12,
+      4.6,
+      40
+    ]
+  ],
+  "boundFiles": {
+    "reseptit/aamupalat/korealainen-mandu-keitto-aamiaiseksi.md": "032a62d408897d6332bc48b64ca104e5960af4953a937d76afdd3edd66a3bd79",
+    "docs/nutrition/gk80-operation80-batch-31.md": "8f4b6e2a21ac6e7d00bdd75cd4b22e8b528529101d96265009d2dc53a7e07f19"
+  }
+}

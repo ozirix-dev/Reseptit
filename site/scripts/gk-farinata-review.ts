@@ -203,7 +203,8 @@ export function buildAckeeReviewVariant(root: string): GkOnlyVariant {
   };
 }
 
-type PointReviewCandidate = Omit<Candidate, 'ingredients'> & {
+type PointReviewCandidate = Omit<Candidate, 'ingredients' | 'omittedCho'> & {
+  omissions?: { ingredientIndex: number; choPer100ml: number }[];
   inputs: [number, number, number][];
   ingredients: GkOnlyVariant['ingredients'];
   sources: GkOnlyVariant['sources'];
@@ -214,7 +215,7 @@ export function buildPointReviewVariant(root: string, packetPath: string): GkOnl
   const raw = read(packetPath);
   const c: PointReviewCandidate = JSON.parse(raw);
   if (c.reviewState !== 'PREPARED_FOR_REVIEW' || c.publicationAuthorized !== false
-      || !Number.isInteger(c.servings) || c.servings <= 0 || c.omittedCho !== 0
+      || !Number.isInteger(c.servings) || c.servings <= 0
       || c.inputs.length === 0 || c.inputs.length > c.ingredients.length
       || Object.keys(c.boundFiles).length !== 2) throw Error('Invalid GK point review: ' + packetPath);
   for (const [file, hash] of Object.entries(c.boundFiles)) {
@@ -231,11 +232,24 @@ export function buildPointReviewVariant(root: string, packetPath: string): GkOnl
   if (!Number.isFinite(Number(c.unroundedGk)) || Math.abs(point - Number(c.unroundedGk)) > 1e-10) {
     throw Error('GK point calculation changed: ' + c.recipeId);
   }
+  const seen = new Set<number>();
+  const omittedCho = (c.omissions ?? []).reduce((sum, row) => {
+    const quantity = c.ingredients[row.ingredientIndex]?.quantity;
+    if (row.ingredientIndex < c.inputs.length || seen.has(row.ingredientIndex)
+        || quantity?.unit !== 'ml' || !Number.isFinite(row.choPer100ml) || row.choPer100ml <= 0) {
+      throw Error('Invalid GK omitted liquid: ' + c.recipeId);
+    }
+    seen.add(row.ingredientIndex);
+    const cho = quantity.amount * row.choPer100ml / (100 * c.servings);
+    if (!(cho > 0 && cho < 1)) throw Error('GK omitted liquid exceeds ingredient limit: ' + c.recipeId);
+    return sum + cho;
+  }, 0);
+  if (omittedCho >= 2) throw Error('GK omissions exceed cumulative limit: ' + c.recipeId);
   const inputSha256 = textHash(raw);
   return {
     recipeId: c.recipeId, versionId: 'gk-operation80-review-' + inputSha256.slice(0, 12), inputSha256,
     level: 'B', servings: c.servings, point, scenarioRange: null, rangeKind: null,
-    omittedCho: 0, confidence: 'LOW', macroScope: 'NO_MACRO_PACKAGE_FOR_THIS_VERSION',
+    omittedCho, confidence: 'LOW', macroScope: 'NO_MACRO_PACKAGE_FOR_THIS_VERSION',
     quantityContract: 'GK_ONLY_NATIVE_UNITS_V1', standalonePreparation: true,
     ingredients: c.ingredients, preparation: c.preparation, limitation: c.limitation,
     codingKinds: [], sensitivity: null, sources: c.sources,
