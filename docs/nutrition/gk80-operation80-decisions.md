@@ -90,3 +90,9 @@ Nämä viisi nelikielistä esikatseluversiota ovat kahden alkuperäisen erän li
 [PR #227:n näyttöpaketin](https://github.com/ozirix-dev/Reseptit/blob/cf551fd064036d31479bfa910ebf97adf42c57fe/docs/nutrition/gk80-kerala-liver-scallion.json) kaikki kahdeksan LF-tarkistetta täsmäävät paikallisiin resepti-, lähde- ja mallisidoksiin. Sen 2,3265 GK:n skenaario on edelleen lähdehyväksyntää vaativa, eikä sitä lasketa PR #230:n esikatselukattavuuteen.
 
 500 g maksaerä neljälle tuottaa MEXTin arviolla 3,3 g/100 g maksasta 4,125 g CHO/annos. Finelin 5,031 g/100 g antaa 6,28875 g/annos ja ylittää aiemman ehdotuksen käyttämän matalan CHO:n koodin ehdon. Kumpikaan määrä ei mahdu yksittäisen ainesosan pienosuusrajaan. Paistetulle naudanmaksalle ei tarkistuksessa löytynyt riittävää ihmis-GI-näyttöä. Lähdepäätös koskee sekä maksalle valittua koostumusta että GI-koodin soveltuvuutta. [MEXT 11092](https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=11_11092_7&MODE=7)
+
+### Pad thai konjaknuudeleilla
+
+[Blue Dragonin tahna](https://www.bluedragon.co.uk/products/tamarind-paste) antaa reseptin 30 g:lla ja 16 g CHO/100 g arvolla 1,2 g CHO/annos. Tahna alittaisi yksittäisen rajan vasta alle 25 g:n erällä. Mungpavuniduille phở bò -selvityksessä käytetty AFCD F008806 (1,6 g/100 g) antaa 150 g:lla 0,6 g/annos. Näiden kahden aineksen yksittäiset pienosuudet ovat mahdollisia esimerkiksi punnitulla 20 g tahnalla, jolloin niiden summa on 1,4 g/annos. 20 g on reseptimuutosehdotus.
+
+Resepti sisältää kastikkeen 15 g limettimehun lisäksi 60 g tarjoilulohkoja. [PR #229:n](https://github.com/ozirix-dev/Reseptit/pull/229) yhdistetty pienainesrivi ei erittele lohkoista käytettyä mehua. Ennen kokonais-GK:ta punnitaan tarjoilulimetistä käytetty mehu tai tehdään täsmäversio, jossa sen määrä määritellään. Lisäksi tarkistetaan muiden pienosuuksien summa ja wokattujen itujen soveltuvuus raakana ilmoitettuun CHO-arvoon. [Phở bò -koostumussidos](gk80-operation80-batch-42.md)
