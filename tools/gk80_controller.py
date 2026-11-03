@@ -248,7 +248,8 @@ def one_turn(root: Path, state: dict, queue: dict, p: dict, executable: str,
     if not execute:
         print("DRY RUN – no Codex started.\n" + text)
         return False
-    if not shutil.which(executable):
+    resolved_codex = shutil.which(executable)
+    if not resolved_codex:
         raise GateError(f"Codex executable not found: {executable}")
     acquire(p["lock"])
     # Material progress, not a repeatedly edited prose note or timestamp.
@@ -266,7 +267,7 @@ def one_turn(root: Path, state: dict, queue: dict, p: dict, executable: str,
     stopped = False
     try:
         # No shell interpolation, no API key handling, no approval/sandbox bypass.
-        cmd = [executable, "exec", "--sandbox", "workspace-write",
+        cmd = [resolved_codex, "exec", "--sandbox", "workspace-write",
                "-C", str(root), "--json", "-"]
         with logfile.open("wb") as log:
             proc = subprocess.Popen(
