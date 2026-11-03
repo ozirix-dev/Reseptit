@@ -34,8 +34,8 @@ test("two named Torras products retain their own verified manufacturer source bi
   assert.deepEqual(pilot.sources.find((s: { id: string }) => s.id === "torras-stevia").observation.polyolIngredients, ["erythritol", "steviol glycosides"]);
 });
 
-test("disclosure is confined to the two Finnish recipes and is collapsed in server HTML", () => {
-  for (const recipeId of ["keto-mutakakku", "keto-suklaakeksit"]) {
+test("disclosure is confined to the three Finnish recipes and is collapsed in server HTML", () => {
+  for (const recipeId of ["keto-mutakakku", "keto-suklaakeksit", "meheva-suklaakakku"]) {
     const html = render(recipeId);
     assert.match(html, /^<details class="recipe-panel chocolate-comparison"/);
     assert.doesNotMatch(html, /<details[^>]*\sopen(?:=|\s|>)/);
@@ -52,7 +52,12 @@ test("public comparison explains sweeteners and missing whole-cake evidence with
   assert.match(cookies, /ei voida määrittää valmiiden keksien GK:ta/);
   assert.match(cookies, /Suklaa käännellään taikinaan paloina/);
   assert.doesNotMatch(cookies, /kakun/);
-  const html = cake + cookies;
+  const frostedCake = render("meheva-suklaakakku");
+  assert.match(frostedCake, /Miten tummat suklaat eroavat makeutukseltaan/);
+  assert.match(frostedCake, /taikinaan voin kanssa ja kuorrutteeseen kerman kanssa/);
+  assert.match(frostedCake, /sokeria ja vehnäjauhoja/);
+  assert.doesNotMatch(frostedCake, /laskettu osuus|erikseen lisättävä erytritoli/);
+  const html = cake + cookies + frostedCake;
   assert.ok(html.includes("Miten käyttämäsi suklaa vaikuttaa GK-arvioon?"));
   assert.ok(html.includes("Makeutusaineet: Maltitoli"));
   assert.ok(html.includes("Makeutusaineet: Erytritoli ja stevioliglykosidit"));

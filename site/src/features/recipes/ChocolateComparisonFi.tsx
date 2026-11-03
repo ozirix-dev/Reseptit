@@ -26,14 +26,17 @@ export const chocolateComparisonProducts = [
 
 export function ChocolateComparisonFi({ recipeId, locale }: Pick<RecipeEntry, "recipeId" | "locale">) {
   const isCookie = recipeId === "keto-suklaakeksit";
-  if (locale !== "fi" || (!isCookie && recipeId !== "keto-mutakakku")) return null;
+  const isFrostedCake = recipeId === "meheva-suklaakakku";
+  if (locale !== "fi" || (!isCookie && !isFrostedCake && recipeId !== "keto-mutakakku")) return null;
 
   const recipeScope = isCookie ? "valmiiden keksien" : "koko kakun";
 
   return <details className="recipe-panel chocolate-comparison" data-chocolate-comparison="fi">
-    <summary><h2>Miten käyttämäsi suklaa vaikuttaa GK-arvioon?</h2></summary>
+    <summary><h2>{isFrostedCake ? "Miten tummat suklaat eroavat makeutukseltaan?" : "Miten käyttämäsi suklaa vaikuttaa GK-arvioon?"}</h2></summary>
     <div className="chocolate-comparison__body">
-      <p>Sokeriton suklaa voidaan makeuttaa eri aineilla. Pelkkä sokeriton-merkintä ei kerro {recipeScope} glykeemistä kuormaa (GK).</p>
+      {isFrostedCake
+        ? <p>Reseptissä tumma suklaa sulatetaan taikinaan voin kanssa ja kuorrutteeseen kerman kanssa. Jos harkitset sokeritonta suklaata jompaankumpaan, tarkista pakkauksesta, millä se on makeutettu.</p>
+        : <p>Sokeriton suklaa voidaan makeuttaa eri aineilla. Pelkkä sokeriton-merkintä ei kerro {recipeScope} glykeemistä kuormaa (GK).</p>}
       {chocolateComparisonProducts.map(product => <article className="chocolate-comparison__product" key={product.id} data-chocolate-product={product.id}>
         <h3>{product.name}</h3>
         <p><strong>Makeutusaineet: {product.sweeteners}.</strong></p>
@@ -41,10 +44,12 @@ export function ChocolateComparisonFi({ recipeId, locale }: Pick<RecipeEntry, "r
         <p className="recipe-disclosure">{product.note}</p>
         <p><a href={product.sourceUrl} rel="noopener noreferrer">Valmistajan tuotetiedot: {product.name}</a></p>
       </article>)}
-      <p>Näistä tuotetiedoista ei voida määrittää {recipeScope} GK:ta tai tuotteiden välistä GK-eroa. {isCookie
-        ? "Suklaa käännellään taikinaan paloina. Taikinaan erikseen lisättävä erytritoli ei kerro suklaapalojen makeutuksesta."
-        : "Myöskään reseptiin erikseen lisättävä erytritoli ei kerro suklaan makeutuksesta."}</p>
-      <p>Edellä näkyvä laskettu osuus koskee vain siinä kuvattua laskentaversiota. Vertailu ei ole henkilökohtaisen verensokerivasteen mittaus.</p>
+      {isFrostedCake ? <p>Taikinaan tulee suklaan lisäksi sokeria ja vehnäjauhoja. Tuotetiedoista ei voi päätellä, miten suklaan vaihtaminen taikinassa tai kuorrutteessa vaikuttaisi valmiin kakun makuun, rakenteeseen tai glykeemiseen kuormaan (GK).</p> : <>
+        <p>Näistä tuotetiedoista ei voida määrittää {recipeScope} GK:ta tai tuotteiden välistä GK-eroa. {isCookie
+          ? "Suklaa käännellään taikinaan paloina. Taikinaan erikseen lisättävä erytritoli ei kerro suklaapalojen makeutuksesta."
+          : "Myöskään reseptiin erikseen lisättävä erytritoli ei kerro suklaan makeutuksesta."}</p>
+        <p>Edellä näkyvä laskettu osuus koskee vain siinä kuvattua laskentaversiota. Vertailu ei ole henkilökohtaisen verensokerivasteen mittaus.</p>
+      </>}
       <p className="recipe-disclosure">Lähdeaineisto: valmistajan tuotetiedot, tarkistettu <time dateTime="2026-11-02">2.11.2026</time>. Tarkista ajantasaiset ainesosat pakkauksesta.</p>
     </div>
   </details>;
