@@ -83,6 +83,120 @@ jobs:
           }
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 
+      - name: Test GK80 controller when controller files change
+        if: github.event_name == 'pull_request'
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        run: |
+          if git diff --name-only "$BASE_SHA" "$HEAD_SHA" -- | grep -Eq '^tools/(gk80_controller.py|tests/test_gk80_controller.py)
+        run: npm ci
+        working-directory: site
+
+      - name: Generate content required by selected tests
+        if: steps.select.outputs.run_content_sync == 'true' && steps.select.outputs.run_build != 'true'
+        run: npm run content:sync
+        working-directory: site
+
+      - name: Validate changed recipe, translation, and evidence records
+        if: steps.select.outputs.run_content == 'true'
+        shell: pwsh
+        env:
+          CHANGED_PATHS: ${{ steps.select.outputs.changed_paths }}
+          BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before || github.sha }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+        run: |
+          $paths = @($env:CHANGED_PATHS -split "`n" | Where-Object { $_ })
+          $npmArguments = @('run', 'validate:changed-content', '--') + $paths
+          & npm @npmArguments
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+        working-directory: site
+
+      - name: Build the publishable site
+        if: steps.select.outputs.run_build == 'true'
+        run: npm run build
+        working-directory: site
+
+      - name: Run selected unit tests
+        if: steps.select.outputs.needs_node == 'true'
+        shell: pwsh
+        env:
+          UNIT_TESTS: ${{ steps.select.outputs.unit_tests }}
+        run: |
+          if ($env:UNIT_TESTS -eq '*') {
+            & npm test
+          }
+          else {
+            $tests = @($env:UNIT_TESTS -split '\s+' | Where-Object { $_ })
+            if ($tests.Count -gt 0) {
+              $npmArguments = @('exec', '--', 'tsx', '--test') + $tests
+              & npm @npmArguments
+            }
+          }
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+        working-directory: site
+
+      - name: Run nutrition model checks
+        if: steps.select.outputs.run_nutrition == 'true'
+        run: npm run test:nutrition
+        working-directory: site
+
+      - name: Run GI/GK calculation regressions
+        if: steps.select.outputs.run_glycemic == 'true'
+        run: npm run test:glycemic
+        working-directory: site
+
+      - name: Run translation review checks
+        if: steps.select.outputs.run_translation_review == 'true'
+        run: npm run test:translations
+        working-directory: site
+
+      - name: Run image pipeline checks
+        if: steps.select.outputs.run_images == 'true'
+        run: npm run test:image
+        working-directory: site
+
+      - name: Run GI/GK coverage audit
+        if: steps.select.outputs.run_glycemic == 'true' || steps.select.outputs.full == 'true'
+        run: npm run audit:glycemic-coverage
+        working-directory: site
+
+      - name: Check generated static output
+        if: steps.select.outputs.run_static == 'true'
+        run: npm run test:static
+        working-directory: site
+
+      - name: Run browser checks for UI changes
+        if: steps.select.outputs.run_browser == 'true'
+        run: npm run test:browser
+        working-directory: site
+        env:
+          PLAYWRIGHT_BROWSER_CHANNEL: chrome
+
+      - uses: actions/configure-pages@v6
+        if: steps.select.outputs.publish == 'true'
+      - uses: actions/upload-pages-artifact@v5
+        if: steps.select.outputs.publish == 'true'
+        with:
+          path: site/dist
+
+  deploy:
+    if: needs.build.outputs.publish == 'true'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5
+; then
+            python3 -m unittest discover -s tools/tests -p 'test_gk80_controller.py'
+          fi
+
       - name: Install site dependencies
         if: steps.select.outputs.needs_node == 'true'
         run: npm ci
