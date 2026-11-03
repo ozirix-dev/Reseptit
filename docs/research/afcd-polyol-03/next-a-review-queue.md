@@ -61,3 +61,11 @@ Currylehtien täydennys. IFCT G010:n analyyttinen 3,66 g/100 g antaa 5 grammasta
 ### Appelsiini-taatelipuuron mannavertailun korjaus
 
 Mani ym. 1992:n menetelmien ja taulukon 3 mukaan höyrytetyn mannan R1 GI oli 55 ja esipaahdetun mannan R5 GI 76. Kumpaankin testiannokseen lisättiin 5 g maapähkinäöljyä. GI 54 kuului mannan ja bengalinkikherneen seokselle R4. Koontitaulukon sidontaa ei käytetä sellaisenaan. Reseptin 31,8 g mannasta tulevaa imeytyvää hiilihydraattia annosta kohti antaa näillä kahdella mannapisteellä 17,49 ja 24,168 GK-yksikköä. Tulokset koskevat vain mannaa ja jäävät herkkyyskokeeksi. Suoraan vedessä keitetyn puuron valmistusvastine on avoin. [Mani ym. 1992](https://doi.org/10.1079/BJN19920102)
+
+### Tunisialainen ojja
+
+Neljän annoksen tutkimusversiossa käytetään 55 g sipulia, 150 g punaista paprikaa, 6 g valkosipulia, 400 g tomaattimurskaa, 5 g punnittua harissaa, 2 g juustokuminaa, 13,5 g oliiviöljyä, 220 g kuoretonta kananmunaa, 15 g persiljaa, 160 g maalaisleipää ja alkuperäinen suola. Harissan punnittu määrä on ehdotus. Koko kastike ja leipä jaetaan neljälle.
+
+A-moottori antoi 14,29 GK/annos. Lasketut rivit ovat paprika GI 40 -mallilla, tomaattimurska GI 22 -analogialla ja leipä GI 64 -ryhmäarvolla. Poisjättövaraus on 1,32525 g/annos. Siihen sisältyvät sipuli 0,66, valkosipuli 0,153, muna 0,165, harissa 0,1375, juustokumina 0,1685 ja persilja 0,04125 g/annos. Harissan nimellinen tuotearvo on 11 g/100 g. Tarkka pakkaus ja lähteiden reseptikohtainen soveltaminen vaativat katselmoinnin.
+
+[Laskentasyöte](../../nutrition/calculations/tunisialainen-ojja.json) · [Harissan toimittajatieto](https://www.henderson-foodservice.com/productpdf/download/file/id/1032/name/Harissa_Paste_BD_%252528415ml%252529.pdf/)
