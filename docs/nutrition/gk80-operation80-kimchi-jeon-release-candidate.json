@@ -1,0 +1,149 @@
+{
+  "recipeId": "korealainen-kimchi-jeon-aamiaiseksi",
+  "servings": 2,
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "unroundedGk": "21.92448",
+  "upperScenario": {
+    "giOverrides": [
+      {
+        "inputIndex": 0,
+        "gi": 61.8
+      },
+      {
+        "inputIndex": 1,
+        "gi": 61.8
+      },
+      {
+        "inputIndex": 2,
+        "gi": 61.8
+      },
+      {
+        "inputIndex": 3,
+        "gi": 61.8
+      }
+    ],
+    "unroundedGk": "23.770752"
+  },
+  "preparation": {
+    "fi": "Sekoita {{amount:0}} g vehnäjauhoa, {{amount:1}} g hienonnettua Schöni Bio Kimchi mit Peperoni -kimchiä, {{amount:2}} g kuoretonta kananmunaa ja {{amount:3}} g kevätsipulia. Lisää tarvittaessa vettä ja suolaa. Paista ohuiksi letuiksi {{amount:4}} rkl:ssa öljyä ja jaa {{servings}} annokseen.",
+    "en": "Mix {{amount:0}} g wheat flour, {{amount:1}} g chopped Schöni Bio Kimchi mit Peperoni, {{amount:2}} g shelled egg and {{amount:3}} g spring onion. Add water and salt as needed. Pan-fry thin pancakes in {{amount:4}} tbsp oil and divide into {{servings}} servings.",
+    "sv": "Blanda {{amount:0}} g vetemjöl, {{amount:1}} g hackad Schöni Bio Kimchi mit Peperoni, {{amount:2}} g ägg utan skal och {{amount:3}} g salladslök. Tillsätt vatten och salt vid behov. Stek tunna plättar i {{amount:4}} msk olja och dela i {{servings}} portioner.",
+    "th": "ผสมแป้งสาลี {{amount:0}} กรัม กิมจิ Schöni Bio Kimchi mit Peperoni สับ {{amount:1}} กรัม ไข่ไม่รวมเปลือก {{amount:2}} กรัม และต้นหอม {{amount:3}} กรัม เติมน้ำและเกลือตามต้องการ ทอดเป็นแผ่นบางในน้ำมัน {{amount:4}} ช้อนโต๊ะ แล้วแบ่งเป็น {{servings}} ที่"
+  },
+  "limitation": {
+    "fi": "Arvio käyttää kahden pannulla kypsennetyn vehnäletun GI-mittauksia. Kimchi ja muna muuttavat taikinan rakennetta ja happamuutta.",
+    "en": "The estimate uses measured GI values for two pan-cooked wheat pancakes. Kimchi and egg change the batter structure and acidity.",
+    "sv": "Uppskattningen använder uppmätt GI för två pannstekta veteplättar. Kimchi och ägg ändrar smetens struktur och syra.",
+    "th": "ค่าประมาณใช้ GI ที่วัดจากแผ่นแป้งสาลีทอดในกระทะสองชนิด กิมจิและไข่เปลี่ยนโครงสร้างและความเป็นกรดของแป้ง"
+  },
+  "ingredients": [
+    {
+      "name": {
+        "fi": "Vehnäjauho",
+        "en": "Wheat flour",
+        "sv": "Vetemjöl",
+        "th": "แป้งสาลี"
+      },
+      "grams": 100
+    },
+    {
+      "name": {
+        "fi": "Schöni Bio Kimchi mit Peperoni",
+        "en": "Schöni Bio Kimchi mit Peperoni",
+        "sv": "Schöni Bio Kimchi mit Peperoni",
+        "th": "กิมจิ Schöni Bio Kimchi mit Peperoni"
+      },
+      "grams": 150
+    },
+    {
+      "name": {
+        "fi": "Kuoreton kananmuna",
+        "en": "Shelled egg",
+        "sv": "Ägg utan skal",
+        "th": "ไข่ไม่รวมเปลือก"
+      },
+      "grams": 110
+    },
+    {
+      "name": {
+        "fi": "Kevätsipuli",
+        "en": "Spring onion",
+        "sv": "Salladslök",
+        "th": "ต้นหอม"
+      },
+      "grams": 20
+    },
+    {
+      "name": {
+        "fi": "Paistoöljy",
+        "en": "Cooking oil",
+        "sv": "Stekolja",
+        "th": "น้ำมันสำหรับทอด"
+      },
+      "grams": null,
+      "quantity": {
+        "amount": 1,
+        "unit": "tbsp"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Kim et al., wheat pancake",
+      "url": "https://doi.org/10.1017/S0007114518003446",
+      "kind": "HUMAN_GI",
+      "note": "GI 57."
+    },
+    {
+      "title": "Shobana et al., wheat dosa",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9552392/",
+      "kind": "HUMAN_GI",
+      "note": "GI 61.8."
+    },
+    {
+      "title": "Schöni Bio Kimchi mit Peperoni",
+      "url": "https://schoenifood.ch/de/produkte/fermentiert-und-roh/schoni-bio-kimchi-mit-peperoni-fermentiert-roh-280g/",
+      "kind": "CARBOHYDRATE",
+      "note": "Manufacturer lists 1.1 g carbohydrate per 100 g."
+    },
+    {
+      "title": "Fineli 110, 858",
+      "url": "https://fineli.fi/fineli/fi/ohje/19",
+      "kind": "CARBOHYDRATE",
+      "note": "Fineli Release 20, CC BY 4.0."
+    },
+    {
+      "title": "USDA 170005",
+      "url": "https://fdc.nal.usda.gov/food-details/170005/nutrients",
+      "kind": "CARBOHYDRATE",
+      "note": "Total carbohydrate minus fibre."
+    }
+  ],
+  "inputs": [
+    [
+      100,
+      74,
+      57
+    ],
+    [
+      150,
+      1.1,
+      57
+    ],
+    [
+      110,
+      0.3,
+      57
+    ],
+    [
+      20,
+      4.74,
+      57
+    ]
+  ],
+  "boundFiles": {
+    "reseptit/aamupalat/korealainen-kimchi-jeon-aamiaiseksi.md": "b7187bbba5e0e8f9632fd3e3885ddd2dd8716c27e93912836bf92eeea9fff3ef",
+    "docs/nutrition/gk80-operation80-batch-05.md": "400ab213f39d034240681c9bb4960253c6f0246f00d70c2f56d4f0721c9dd8a9"
+  }
+}
