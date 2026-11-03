@@ -96,7 +96,7 @@ Nämä kuusi nelikielistä esikatseluversiota ovat kahden alkuperäisen erän li
 
 Reseptin 200 g mantelijauhoa kahdeksalle edellyttää alle 4 g imeytyvää CHO:ta / 100 g, jotta jauhon osuus alittaa yksittäisen 1 g:n rajan. Kauralesesämpylöiden selvityksessä käytetty täysrasvainen AFCD F006077 (5,4 g/100 g) antaa 1,35 g/annos. Samalla koostumuksella raja alittuisi vasta alle 148,15 g:n erällä. Sellainen muutos vaatisi taikinan toimivuuden tarkistuksen.
 
-Haussa ei varmistunut rajan alittavaa täysrasvaista tuotetta. Esimerkiksi Nutsupplyn kuoritusta mantelista jauhettu tuote ilmoittaa 21 g CHO:ta / 100 g. Kokonais-GK jää avoimeksi, kunnes täysrasvaiselle jauholle löytyy sopiva tuotetieto ja koko pienosuusbudjetti täsmää tai paistetulle taikinalle löytyy soveltuva GI-verrokki. [Nutsupply](https://www.nutsupply.com/products/almond-flour) · [AFCD](https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd)
+Ensimmäinen haku ei löytänyt rajan alittavaa täysrasvaista tuotetta. Alla oleva Pickerd-tarkistus ratkaisee tuotteen koostumussidoksen. Esimerkiksi Nutsupplyn kuoritusta mantelista jauhettu tuote ilmoittaa 21 g CHO:ta / 100 g. Kokonais-GK jää avoimeksi, kunnes täysrasvaiselle jauholle löytyy sopiva tuotetieto ja koko pienosuusbudjetti täsmää tai paistetulle taikinalle löytyy soveltuva GI-verrokki. [Nutsupply](https://www.nutsupply.com/products/almond-flour) · [AFCD](https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd)
 
 ### Taatelipuuro appelsiinilla
 
@@ -111,3 +111,9 @@ Julkaistun mannasuurimoupman lähdepaketti sitoo Uroojin ja Puttarajin GI:n 69 p
 Nykyinen kahden annoksen resepti käyttää 150 g vehnäjauhoa ja 100 g jogurttia ilman hiivaa. Ohje sallii pannun tai uunin. Aiempi tutkimusversio, 30,5 GK / testiannos, koskee hiivalla kohotettua ja kiviuunissa paistettua mankouchehia, joka pakastettiin ja lämmitettiin ennen koetta. Nykyohjeelle siitä ei siirretä numeroa. [Tutkimusversion erittely](../research/gk80-international-20261102/manakish-study.md)
 
 Jogurttia sisältävän vehnäleivän tutkimus arvioi tärkkelyksen sulavuutta laboratoriossa. Chapati-kokeessa oli ihmisillä mitattu kohottamaton litteä leipä, mutta se ei sido tämän reseptin jogurtti–vehnätaikinaa ja mausteöljyä. Julkaistun version GK jää avoimeksi. Erillinen tutkimusversio edellyttäisi valmistuksen ja tarjoilun täsmennystä sekä sisältöpäätöstä. [Jogurttitaikinan laboratoriokoe](https://pubmed.ncbi.nlm.nih.gov/32877815/) · [Chapati-koe](https://pubmed.ncbi.nlm.nih.gov/19700035/)
+
+### VHH-lihapiirakka ja keto-korvapuustit
+
+Aiemman selvityksen Pickerd 3731 -tuotteen nykyinen valmistajasivu vahvistaa 3,7 g CHO/100 g. Tuote jauhetaan kokonaisista kuorituista manteleista. Molempien reseptien 200 g erässä jauho tuo 0,925 g CHO/annos ja alittaa yksittäisen pienosuusrajan. Molempien reseptien git-blobit täsmäävät aiempaan laskentaan. [Pickerd](https://www.pickerd.de/mandeln-gemahlen/3731) · [Punnitut määrät ja koostumussidokset](../research/gk80-international-20261102/pickerd-almond-two.md)
+
+Tuorejuuston 0,5 g CHO/annos antaa GI-koodilla 35 laskettuna 0,175 GK/annos kummassakin reseptissä. Pois rajattu CHO on lihapiirakassa 1,470375 g/annos ja korvapuusteissa 1,06328125 g/annos. Katselmoinnissa käytetään aiemman lähdepaketin esitystapaa **laskettu GK-arvio alle 5 / annos**, koska tarkka pisteluku kuvaa vain mallinnettua osuutta. Nimetty jauhe, punnitut mausteet ja tuorejuuston GI-koodi odottavat hyväksyntää.
