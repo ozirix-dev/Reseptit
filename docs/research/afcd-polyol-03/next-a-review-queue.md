@@ -57,3 +57,7 @@ Nykyisen syötteen vehnäjauhon, kuivien punalinssien ja kookosmaidon osuus on (
 [UMS:n ihmiskoe](https://eprints.ums.edu.my/id/eprint/662/1/ae0000000310.pdf) · [Koostumusartikkeli, taulukko 2](https://pkukmweb.ukm.my/jsm/pdf_files/SM-PDF-40-8-2011/07%20nik%20shanita.pdf) · [Reseptin laskentasyöte](../../nutrition/calculations/malesialainen-roti-canai-dhalilla.json)
 
 Currylehtien täydennys. IFCT G010:n analyyttinen 3,66 g/100 g antaa 5 grammasta kahdelle annokselle 0,0915 g/annos, kun lehdet syödään kokonaan. Yhteensä 61,5045 g/annos antaa GI-pisteillä 62,59 ja 71 vastaavasti 38,49566655 ja 43,668195 GK/annos. Herkkyysväli säilyy 38–44. Testiannosten koostumusvastaavuus jää avoimeksi. [IFCT-sovellus](gi-fallback-followup.md)
+
+### Appelsiini-taatelipuuron mannavertailun korjaus
+
+Mani ym. 1992:n menetelmien ja taulukon 3 mukaan höyrytetyn mannan R1 GI oli 55 ja esipaahdetun mannan R5 GI 76. Kumpaankin testiannokseen lisättiin 5 g maapähkinäöljyä. GI 54 kuului mannan ja bengalinkikherneen seokselle R4. Koontitaulukon sidontaa ei käytetä sellaisenaan. Reseptin 31,8 g mannasta tulevaa imeytyvää hiilihydraattia annosta kohti antaa näillä kahdella mannapisteellä 17,49 ja 24,168 GK-yksikköä. Tulokset koskevat vain mannaa ja jäävät herkkyyskokeeksi. Suoraan vedessä keitetyn puuron valmistusvastine on avoin. [Mani ym. 1992](https://doi.org/10.1079/BJN19920102)
