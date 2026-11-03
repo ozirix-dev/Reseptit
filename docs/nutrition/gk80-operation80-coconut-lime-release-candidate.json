@@ -1,0 +1,211 @@
+{
+  "recipeId": "kookos-lime-kanacurry",
+  "servings": 4,
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "unroundedGk": "2.09",
+  "upperScenario": {
+    "choOverrides": [
+      {
+        "inputIndex": 1,
+        "cho": 3.4
+      }
+    ],
+    "unroundedGk": "2.94"
+  },
+  "omissions": [
+    {
+      "ingredientIndex": 6,
+      "choPer100g": 12.3
+    },
+    {
+      "ingredientIndex": 7,
+      "choPer100g": 8.02
+    }
+  ],
+  "preparation": {
+    "fi": "Kuullota {{amount:6}} g Knorr-currytahnaa {{amount:8}} rkl:ssa kookosöljyä minuutti. Lisää puolet {{amount:1}} g:n kookosmaitoerästä ja {{amount:0}} g paloiteltua broileria. Kypsennä 5 minuuttia. Lisää loppu kookosmaito, {{amount:2}} g papuja ja {{amount:3}} g paprikaa. Hauduta 10–12 minuuttia kypsäksi. Lisää {{amount:4}} g kalakastiketta, {{amount:7}} g limettimehua ja {{amount:5}} g thaibasilikaa. Jaa {{servings}} annokseen.",
+    "en": "Fry {{amount:6}} g Knorr curry paste in {{amount:8}} tbsp coconut oil for one minute. Add half of the {{amount:1}} g coconut milk and {{amount:0}} g diced chicken. Cook for 5 minutes. Add the rest of the milk, {{amount:2}} g beans and {{amount:3}} g bell pepper. Simmer for 10–12 minutes until cooked. Add {{amount:4}} g fish sauce, {{amount:7}} g lime juice and {{amount:5}} g Thai basil. Divide into {{servings}} servings.",
+    "sv": "Fräs {{amount:6}} g currypasta från Knorr i {{amount:8}} msk kokosolja i en minut. Tillsätt hälften av {{amount:1}} g kokosmjölk och {{amount:0}} g tärnad kyckling. Tillaga i 5 minuter. Tillsätt resten av mjölken, {{amount:2}} g bönor och {{amount:3}} g paprika. Sjud i 10–12 minuter tills allt är genomkokt. Tillsätt {{amount:4}} g fisksås, {{amount:7}} g limejuice och {{amount:5}} g thaibasilika. Dela i {{servings}} portioner.",
+    "th": "ผัดพริกแกง Knorr {{amount:6}} กรัมในน้ำมันมะพร้าว {{amount:8}} ช้อนโต๊ะหนึ่งนาที เติมกะทิครึ่งหนึ่งจาก {{amount:1}} กรัมและไก่หั่นชิ้น {{amount:0}} กรัม ปรุง 5 นาที เติมกะทิที่เหลือ ถั่วแขก {{amount:2}} กรัม และพริกหวาน {{amount:3}} กรัม เคี่ยว 10–12 นาทีจนสุก เติมน้ำปลา {{amount:4}} กรัม น้ำมะนาว {{amount:7}} กรัม และใบโหระพา {{amount:5}} กรัม แบ่งเป็น {{servings}} ที่"
+  },
+  "limitation": {
+    "fi": "Vaihteluväli käyttää AFCD:n kookosmaidon ja Blue Dragonin hiilihydraattipitoisuuksia sekä laskennallisia GI-koodeja. Currytahnan ja limettimehun pienet osuudet jäävät GK-summan ulkopuolelle.",
+    "en": "The range uses AFCD and Blue Dragon coconut milk carbohydrate values with assigned GI codes. Small contributions from curry paste and lime juice are excluded from the GL sum.",
+    "sv": "Intervallet använder kolhydratvärden för kokosmjölk från AFCD och Blue Dragon samt tilldelade GI-koder. Små bidrag från currypasta och limejuice ingår inte i GB-summan.",
+    "th": "ช่วงนี้ใช้ค่าคาร์โบไฮเดรตของกะทิจาก AFCD และ Blue Dragon ร่วมกับค่า GI ที่กำหนดตามกลุ่ม การคำนวณไม่รวมคาร์โบไฮเดรตปริมาณเล็กน้อยจากพริกแกงและน้ำมะนาว"
+  },
+  "ingredients": [
+    {
+      "name": {
+        "fi": "Broilerin reisiliha",
+        "en": "Chicken thigh",
+        "sv": "Kycklinglårfilé",
+        "th": "เนื้อสะโพกไก่"
+      },
+      "grams": 500
+    },
+    {
+      "name": {
+        "fi": "Täysrasvainen kookosmaito",
+        "en": "Full-fat coconut milk",
+        "sv": "Kokosmjölk med full fetthalt",
+        "th": "กะทิเต็มไขมัน"
+      },
+      "grams": 400
+    },
+    {
+      "name": {
+        "fi": "Vihreät pavut",
+        "en": "Green beans",
+        "sv": "Gröna bönor",
+        "th": "ถั่วแขก"
+      },
+      "grams": 150
+    },
+    {
+      "name": {
+        "fi": "Punainen paprika",
+        "en": "Red bell pepper",
+        "sv": "Röd paprika",
+        "th": "พริกหวานแดง"
+      },
+      "grams": 150
+    },
+    {
+      "name": {
+        "fi": "Squid Brand -kalakastike",
+        "en": "Squid Brand fish sauce",
+        "sv": "Squid Brand fisksås",
+        "th": "น้ำปลาตราปลาหมึก"
+      },
+      "grams": 18
+    },
+    {
+      "name": {
+        "fi": "Thaibasilika",
+        "en": "Thai basil",
+        "sv": "Thaibasilika",
+        "th": "โหระพา"
+      },
+      "grams": 10
+    },
+    {
+      "name": {
+        "fi": "Knorr Thai Green Curry Paste",
+        "en": "Knorr Thai Green Curry Paste",
+        "sv": "Knorr Thai Green Curry Paste",
+        "th": "พริกแกงเขียวหวาน Knorr"
+      },
+      "grams": 30
+    },
+    {
+      "name": {
+        "fi": "Limettimehu",
+        "en": "Lime juice",
+        "sv": "Limejuice",
+        "th": "น้ำมะนาว"
+      },
+      "grams": 25
+    },
+    {
+      "name": {
+        "fi": "Kookosöljy",
+        "en": "Coconut oil",
+        "sv": "Kokosolja",
+        "th": "น้ำมันมะพร้าว"
+      },
+      "grams": null,
+      "quantity": {
+        "amount": 1,
+        "unit": "tbsp"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "AFCD F002806, F002991, F000431, F000396",
+      "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd",
+      "kind": "CARBOHYDRATE",
+      "note": "Scenario A coconut milk: 1.7 g CHO per 100 g."
+    },
+    {
+      "title": "Blue Dragon Coconut Milk",
+      "url": "https://www.bluedragon.co.uk/products/coconut-milk",
+      "kind": "CARBOHYDRATE",
+      "note": "Scenario B coconut milk: 3.4 g CHO per 100 g."
+    },
+    {
+      "title": "Fineli 386",
+      "url": "https://fineli.fi/fineli/fi/ohje/19",
+      "kind": "CARBOHYDRATE",
+      "note": "Fineli CC BY 4.0."
+    },
+    {
+      "title": "Squid Brand Fish Sauce",
+      "url": "https://www.henderson-foodservice.com/productpdf/download/file/id/9840/name/squid_brand_fish_sauce_%2812x700ml%29.pdf",
+      "kind": "CARBOHYDRATE",
+      "note": "3 g CHO per 100 g."
+    },
+    {
+      "title": "Knorr Thai Green Curry Paste",
+      "url": "https://sifu.unileversolutions.com/pdf/get/AU/en?cuEanCode=9300830021796&name=knorr-thai-green-curry-paste-850g",
+      "kind": "CARBOHYDRATE",
+      "note": "12.3 g CHO per 100 g."
+    },
+    {
+      "title": "USDA 168156",
+      "url": "https://fdc.nal.usda.gov/food-details/168156/nutrients",
+      "kind": "CARBOHYDRATE",
+      "note": "Total carbohydrate minus fibre."
+    },
+    {
+      "title": "GI coding method",
+      "url": "https://doi.org/10.2337/dc08-1239",
+      "kind": "PUBLISHED_CODING",
+      "note": "Vegetable and herb coding."
+    },
+    {
+      "title": "Low carbohydrate food coding",
+      "url": "https://doi.org/10.1016/j.jfca.2007.02.004",
+      "kind": "PUBLISHED_CODING",
+      "note": "Low-carbohydrate food coding."
+    }
+  ],
+  "inputs": [
+    [
+      500,
+      0,
+      0
+    ],
+    [
+      400,
+      1.7,
+      50
+    ],
+    [
+      150,
+      3.3,
+      40
+    ],
+    [
+      150,
+      4.5,
+      40
+    ],
+    [
+      18,
+      3,
+      50
+    ],
+    [
+      10,
+      0.2,
+      50
+    ]
+  ],
+  "boundFiles": {
+    "reseptit/paaruoat/kookos-lime-kanacurry.md": "3b0e306e88dc4feed09e84a47c445e87dff9046c7ea83bddf4605cfe98187f9c",
+    "docs/nutrition/gk80-operation80-batch-30.md": "d7f024c8e60734ca1e62e6a17052a8408594c657e4ff7e0d82330cae3865ddf3"
+  }
+}

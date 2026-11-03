@@ -209,6 +209,7 @@ type PointReviewCandidate = Omit<Candidate, 'ingredients' | 'omittedCho'> & {
     unroundedGk: string;
     replacements?: { inputIndex: number; ingredientIndex: number }[];
     giOverrides?: { inputIndex: number; gi: number }[];
+    choOverrides?: { inputIndex: number; cho: number }[];
   };
   inputs: [number, number, number][];
   ingredients: GkOnlyVariant['ingredients'];
@@ -261,6 +262,14 @@ export function buildPointReviewVariant(root: string, packetPath: string): GkOnl
       }
       indices.add(inputIndex);
       delta += row[0] * row[1] * (gi - row[2]);
+    }
+    for (const { inputIndex, cho } of c.upperScenario.choOverrides ?? []) {
+      const row = c.inputs[inputIndex];
+      if (!row || indices.has(inputIndex) || !Number.isFinite(cho) || cho < 0 || cho > 100 || (cho > 0 && row[2] === 0)) {
+        throw Error('Invalid GK range carbohydrate override: ' + c.recipeId);
+      }
+      indices.add(inputIndex);
+      delta += row[0] * (cho - row[1]) * row[2];
     }
     const max = point + delta / (10000 * c.servings);
     const expected = Number(c.upperScenario.unroundedGk);
