@@ -1,3 +1,6 @@
+import { loadAuthorizedGk100Variants } from './gk100-approval-release';
+import {buildTwoAlmondPieVariants} from './gk-two-almond-pies';
+import {buildTehoajoVariants} from './gk-tehoajo-era1';
 import {buildPohaHoneyMustardVariants} from './gk-poha-honey-mustard';
 import {buildReviewedGkVariants} from './gk-four-reviewed';
 import {buildLindstromBrineVariant} from './gk-lindstrom-brine';
@@ -10,7 +13,7 @@ import {buildPanangKimchiVariants} from './gk-panang-kimchi';
 import {buildGkOnlyVariants} from './gk149-integration';
 import {buildApprovedSevenVariants} from './gk-next-seven';
 import {countGkVersions} from '../src/features/recipes/gk-only-types';
-import {classifyGk80Source} from "./gk80-source-classification";
+import {catalogSourceApplication} from "./gk80-source-classification";
 import {applyScopedPolyolC} from './gk80-polyol-c';
 import {applyRecovery} from './gk80-uunikanapasta';
 import {withdrawQ09Tea} from './gk80-q09-withdrawal';
@@ -161,7 +164,7 @@ const legacyResults = rawResults.map((result) => {
   return usesImputation ? {...result, assessmentType: "PUBLISHED_IMPUTATION" as const, modelScenario: "POINT_SCENARIO" as const} : result;
 });
 const results = await applyScopedPolyolC(root, await applyRecovery(root, await withdrawQ09Tea(root, await applyGk80Release(root, legacyResults))));
-const gkOnlyVariants = [...buildGkOnlyVariants(root),...buildApprovedSevenVariants(root),...buildApprovedFourVariants(root),...buildApprovedBVariants(root),...buildProductAVariants(root),...buildPanangKimchiVariants(root),buildBlueberryPieVariant(root),...buildThreeCurryVariants(root),buildLindstromBrineVariant(root),...buildReviewedGkVariants(root),...buildPohaHoneyMustardVariants(root)];
+const gkOnlyVariants = [...buildGkOnlyVariants(root),...buildApprovedSevenVariants(root),...buildApprovedFourVariants(root),...buildApprovedBVariants(root),...buildProductAVariants(root),...buildPanangKimchiVariants(root),buildBlueberryPieVariant(root),...buildThreeCurryVariants(root),buildLindstromBrineVariant(root),...buildReviewedGkVariants(root),...buildPohaHoneyMustardVariants(root),...buildTehoajoVariants(root),...buildTwoAlmondPieVariants(root),...loadAuthorizedGk100Variants(root)];
 const versionCoverage = countGkVersions(results,gkOnlyVariants);
 const report = {
   generatedAt: new Date().toISOString(),
@@ -200,9 +203,6 @@ const outputPath = path.join(outputDir, "glycemic-load-pilot.json");
 await writeFile(outputPath, JSON.stringify(report, null, 2) + "\n");
 const isFixtureBuild = process.env.RECIPE_SOURCE_ROOT !== undefined;
 const publicResults = results.flatMap((result) => {
-  // This recipe already has a dedicated central-page explanation for why its
-  // earlier provisional total is withheld; keep its ingredient audit internal.
-  if (result.recipeId === "maksalaatikko-kukkakaalilla") return [];
   const recipe = siteContent.recipes.find((entry) => entry.recipeId === result.recipeId && entry.locale === "fi");
   if (!recipe) {
     // Image-pipeline tests build a tiny one-recipe fixture. Keep that build
@@ -211,6 +211,25 @@ const publicResults = results.flatMap((result) => {
     if (isFixtureBuild) return [];
     throw new Error(`Finnish published recipe is missing for GL pilot item: ${result.recipeId}`);
   }
+  const translations = siteContent.recipes.filter((entry) => entry.recipeId === result.recipeId);
+  const recipeIdentity = {
+    recipeId: result.recipeId,
+    title: recipe.title,
+    routePath: recipe.routePath,
+    localeRoutes: Object.fromEntries(translations.map((entry) => [entry.locale, { title: entry.title, routePath: entry.routePath }])),
+  };
+  // Include this recipe in search while keeping its ingredient audit internal.
+  if (result.recipeId === "maksalaatikko-kukkakaalilla") return {
+    ...recipeIdentity,
+    status: "INSUFFICIENT SOURCE DATA",
+    glycemicLoadPerServing: null,
+    glycemicLoadRangePerServing: null,
+    omittedAvailableCarbohydratePerServingG: 0,
+    confidence: null,
+    incompleteReasons: [],
+    carbohydrateSources: [],
+    sourceReferences: [],
+  };
   const sourceReferences: Array<{ title: string; url: string; matchKind: "EXACT" | "ANALOG" | "CATEGORY_MEAN" | "CALCULATION_POLICY"; confidence: "HIGH" | "MEDIUM" | "LOW"; evidenceKind?: "HUMAN_GI" | "PUBLISHED_IMPUTATION"; applicationKind?: "DIRECT" | "FOOD_ANALOGUE" | "PUBLISHED_IMPUTATION"; note: string }> = result.status === "CALCULATED"
     ? [...new Set(result.ingredients.flatMap((ingredient) => ingredient.giRecordId ? [ingredient.giRecordId] : []))]
       .map((recordId) => giRecords.find((record) => record.id === recordId))
@@ -218,7 +237,9 @@ const publicResults = results.flatMap((result) => {
       .map((record) => ({
         title: record.source.title,
         url: record.source.url,
-        ...(record.evidenceKind ? classifyGk80Source(record.evidenceKind, (record.matchKind ?? "EXACT") === "EXACT" ? "DIRECT" : "APPLIED") : {matchKind: record.matchKind ?? "EXACT"}),
+        matchKind: record.evidenceKind === "PUBLISHED_IMPUTATION" ? "CALCULATION_POLICY" : record.matchKind ?? "EXACT",
+        evidenceKind: record.evidenceKind,
+        applicationKind: catalogSourceApplication(record.evidenceKind, record.matchKind ?? "EXACT"),
         confidence: record.confidence ?? (record.qualityTier === "STRONG" ? "HIGH" : "LOW"),
         note: record.note ?? record.source.qualityEvidence,
       }))
@@ -244,15 +265,27 @@ const publicResults = results.flatMap((result) => {
       : /amount|quantity|mass is missing|unweighed|implausible|unit or decimal/i.test(reason) ? "AMOUNT"
       : "SOURCE";
     const ingredientIndex = recipe.ingredients.findIndex((entry) => entry.item === ingredient);
-    const translations = siteContent.recipes.filter((entry) => entry.recipeId === result.recipeId);
     const ingredientNames = Object.fromEntries(translations.map((entry) => [entry.locale, ingredientIndex >= 0 ? entry.ingredients[ingredientIndex]?.item : undefined]));
     return { ingredientIndex, ingredientNames, category };
   });
+  const ingredientEvidence = result.status === "CALCULATED" ? result.ingredients.flatMap((ingredient) => {
+    if (!ingredient.matchKind || !ingredient.giRecordId || ingredient.gi === null) return [];
+    const source = giRecords.find((record) => record.id === ingredient.giRecordId);
+    const index = recipe.ingredients.findIndex((entry) => entry.item === ingredient.name);
+    const ingredientNames = Object.fromEntries(translations.map((entry) => [entry.locale, index >= 0 ? entry.ingredients[index]?.item : undefined]));
+    return [{
+      name: ingredient.name,
+      ingredientNames,
+      matchKind: ingredient.matchKind,
+      evidenceKind: source?.evidenceKind,
+      applicationKind: catalogSourceApplication(source?.evidenceKind, ingredient.matchKind),
+      giRecordId: ingredient.giRecordId,
+      foodRecordId: ingredient.fineliRecordId,
+    }];
+  }) : [];
   return {
-    recipeId: result.recipeId,
-    title: recipe.title,
-    routePath: recipe.routePath,
-    localeRoutes: Object.fromEntries(siteContent.recipes.filter((entry) => entry.recipeId === result.recipeId).map((entry) => [entry.locale, { title: entry.title, routePath: entry.routePath }])),
+    ...recipeIdentity,
+    ...(ingredientEvidence.length ? { ingredientEvidence } : {}),
     status: result.status,
     incompleteReasons,
     glycemicLoadPerServing: result.glycemicLoadPerServing,
@@ -267,7 +300,10 @@ const publicResults = results.flatMap((result) => {
       .map((recordId) => foodRecords.find((record) => record.id === recordId))
       .filter((record): record is FoodRecord => record !== undefined)
       .map((record) => ({
-        title: record.name,
+        // Repair legacy Fineli label encoding in the public citation only.
+        title: record.id.startsWith("fineli-")
+          ? record.name.replaceAll("Ã¤", "ä").replaceAll("Ã¶", "ö").replaceAll("Ã„", "Ä")
+          : record.name,
         url: record.sourceUrl,
         note: record.id.startsWith("afcd-")
           ? "Available-carbohydrate value from AFCD Release 3; FSANZ attribution and CC BY-SA 3.0 Australia terms apply."
@@ -276,7 +312,7 @@ const publicResults = results.flatMap((result) => {
     sourceReferences,
   };
 });
-const expectedPublicResultCount = expectedRecipeIds.length - 1;
+const expectedPublicResultCount = expectedRecipeIds.length;
 if (!isFixtureBuild && publicResults.length !== expectedPublicResultCount) {
   throw new Error(`Production GL pilot page must include all ${expectedPublicResultCount} publishable entries.`);
 }
@@ -284,6 +320,6 @@ if (!isFixtureBuild && publicResults.length !== expectedPublicResultCount) {
 const publicGkOnlyVariants = isFixtureBuild ? [] : gkOnlyVariants;
 const gkOnlyModule = `/* Generated. Explicit GK-only version data; parent macros are separate. */\nimport type {GkOnlyVariant,GkVersionCoverage} from '../features/recipes/gk-only-types';\nexport const gkOnlyVariants:GkOnlyVariant[]=${JSON.stringify(publicGkOnlyVariants,null,2)};\nexport const gkVersionCoverage:GkVersionCoverage=${JSON.stringify(versionCoverage,null,2)};\n`;
 await writeFile(path.join(siteDir,'src/generated/gk-only-variants.generated.ts'),gkOnlyModule,'utf8');
-const publicModule = `/* Generated by scripts/glycemic-load-pilot.ts. Public-safe summary only. */\nexport interface GlycemicLoadPilotPublicResult { recipeId: string; title: string; routePath: string; localeRoutes: Partial<Record<"fi" | "en" | "sv" | "th", { title: string; routePath: string }>>; status: "CALCULATED" | "INSUFFICIENT SOURCE DATA"; assessmentType?: "PUBLISHED_IMPUTATION"; closedRecoveryC?: boolean; boundedPolyolC?: boolean; modelScenario?: "POINT_SCENARIO" | "NAMED_SCENARIO_RANGE"; incompleteReasons: Array<{ ingredientIndex: number; ingredientNames: Partial<Record<"fi" | "en" | "sv" | "th", string>>; category: "GI" | "SOURCE" | "PORTION" | "VARIANT" | "AMOUNT" }>; glycemicLoadPerServing: number | null; glycemicLoadRangePerServing: { min: number; max: number } | null; omittedAvailableCarbohydratePerServingG: number; confidence: "HIGH" | "MEDIUM" | "LOW" | null; carbohydrateSources: Array<{ title: string; url: string; note: string }>; sourceReferences: Array<{ title: string; url: string; matchKind: "EXACT" | "ANALOG" | "CATEGORY_MEAN" | "CALCULATION_POLICY"; confidence: "HIGH" | "MEDIUM" | "LOW"; evidenceKind?: "HUMAN_GI" | "PUBLISHED_IMPUTATION"; applicationKind?: "DIRECT" | "FOOD_ANALOGUE" | "PUBLISHED_IMPUTATION"; note: string }>; }\nexport const glycemicLoadPilotReviewedRecipeCount = ${expectedRecipeIds.length};\nexport const glycemicLoadPilotResults: GlycemicLoadPilotPublicResult[] = ${JSON.stringify(publicResults, null, 2)};\n`;
+const publicModule = `/* Generated by scripts/glycemic-load-pilot.ts. Public-safe summary only. */\nexport interface GlycemicLoadPilotPublicResult { recipeId: string; title: string; routePath: string; localeRoutes: Partial<Record<"fi" | "en" | "sv" | "th", { title: string; routePath: string }>>; status: "CALCULATED" | "INSUFFICIENT SOURCE DATA"; ingredientEvidence?: Array<{ name: string; ingredientNames: Partial<Record<"fi" | "en" | "sv" | "th", string>>; matchKind: string; evidenceKind?: string; applicationKind?: string; giRecordId: string; foodRecordId: string | null }>; assessmentType?: "PUBLISHED_IMPUTATION"; closedRecoveryC?: boolean; boundedPolyolC?: boolean; modelScenario?: "POINT_SCENARIO" | "NAMED_SCENARIO_RANGE"; incompleteReasons: Array<{ ingredientIndex: number; ingredientNames: Partial<Record<"fi" | "en" | "sv" | "th", string>>; category: "GI" | "SOURCE" | "PORTION" | "VARIANT" | "AMOUNT" }>; glycemicLoadPerServing: number | null; glycemicLoadRangePerServing: { min: number; max: number } | null; omittedAvailableCarbohydratePerServingG: number; confidence: "HIGH" | "MEDIUM" | "LOW" | null; carbohydrateSources: Array<{ title: string; url: string; note: string }>; sourceReferences: Array<{ title: string; url: string; matchKind: "EXACT" | "ANALOG" | "CATEGORY_MEAN" | "CALCULATION_POLICY"; confidence: "HIGH" | "MEDIUM" | "LOW"; evidenceKind?: "HUMAN_GI" | "PUBLISHED_IMPUTATION"; applicationKind?: "DIRECT" | "FOOD_ANALOGUE" | "PUBLISHED_IMPUTATION"; note: string }>; }\nexport const glycemicLoadPilotReviewedRecipeCount = ${expectedRecipeIds.length};\nexport const glycemicLoadPilotResults: GlycemicLoadPilotPublicResult[] = ${JSON.stringify(publicResults, null, 2)};\n`;
 await writeFile(path.join(siteDir, "src/generated/glycemic-load-pilot.generated.ts"), publicModule, "utf8");
 console.log(JSON.stringify({ ...report.summary, versionCoverage: {numericRecipes:versionCoverage.numericRecipes,additionalA:versionCoverage.additionalA,additionalB:versionCoverage.additionalB,missing:versionCoverage.missing}, output: path.relative(root, outputPath), blockers: results.map((result) => ({ recipeId: result.recipeId, count: result.blockers.length })) }, null, 2));

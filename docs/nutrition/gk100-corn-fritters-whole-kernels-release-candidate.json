@@ -1,0 +1,230 @@
+{
+  "recipeId": "thai-maissifritterit",
+  "servings": 2,
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "unroundedGk": "30.479325",
+  "upperScenario": {
+    "giOverrides": [
+      {
+        "inputIndex": 1,
+        "gi": 61.8
+      },
+      {
+        "inputIndex": 2,
+        "gi": 61.8
+      },
+      {
+        "inputIndex": 3,
+        "gi": 61.8
+      }
+    ],
+    "unroundedGk": "32.263485"
+  },
+  "omissions": [
+    {
+      "choPer100g": 8.02,
+      "ingredientIndex": 5
+    }
+  ],
+  "preparation": {
+    "fi": "Keitä maissia tähkässä suolatta 20 minuuttia, irrota jyvät ja valuta. Punnitse {{amount:0}} g kokonaisia kypsiä jyviä. Sekoita {{amount:1}} g vehnäjauhoa, {{amount:2}} g kuoretonta kananmunaa, {{amount:3}} g thaibasilikaa ja suola. Lisää tarvittaessa vettä ja kääntele jyvät joukkoon kokonaisina. Paista ohuita frittereitä molemmin puolin {{amount:6}} rkl:ssa öljyä. Jaa fritterit, {{amount:5}} g limettimehua ja {{amount:4}} g Blue Dragon Original Sweet Chilli -kastiketta {{servings}} annokseen.",
+    "en": "Boil the corn on the cob without salt for 20 minutes, remove the kernels and drain. Weigh {{amount:0}} g cooked whole kernels. Mix {{amount:1}} g wheat flour, {{amount:2}} g shelled egg, {{amount:3}} g Thai basil and salt. Add water as needed and fold in the whole kernels. Pan-fry thin fritters on both sides in {{amount:6}} tbsp oil. Divide the fritters, {{amount:5}} g lime juice and {{amount:4}} g Blue Dragon Original Sweet Chilli Sauce among {{servings}} servings.",
+    "sv": "Koka majsen på kolven utan salt i 20 minuter, lossa kornen och låt dem rinna av. Väg upp {{amount:0}} g kokta hela korn. Blanda {{amount:1}} g vetemjöl, {{amount:2}} g ägg utan skal, {{amount:3}} g thaibasilika och salt. Tillsätt vatten vid behov och vänd ner hela majskorn. Stek tunna plättar på båda sidor i {{amount:6}} msk olja. Fördela plättarna, {{amount:5}} g limejuice och {{amount:4}} g Blue Dragon Original Sweet Chilli Sauce på {{servings}} portioner.",
+    "th": "ต้มข้าวโพดทั้งฝักโดยไม่ใส่เกลือ 20 นาที แกะเมล็ดแล้วสะเด็ดน้ำ ชั่งเมล็ดสุกทั้งเมล็ด {{amount:0}} กรัม ผสมแป้งสาลี {{amount:1}} กรัม ไข่ไม่รวมเปลือก {{amount:2}} กรัม ใบโหระพา {{amount:3}} กรัม และเกลือ เติมน้ำตามต้องการแล้วคลุกเมล็ดข้าวโพดทั้งเมล็ด ทอดแผ่นบางทั้งสองด้านในน้ำมัน {{amount:6}} ช้อนโต๊ะ แบ่งแผ่นทอด น้ำมะนาว {{amount:5}} กรัม และซอสพริกหวาน Blue Dragon Original {{amount:4}} กรัม เป็น {{servings}} ที่"
+  },
+  "limitation": {
+    "sv": "Majsens GI 48 gäller korn kokta på kolven före stekning. Smetens scenarier bygger på två veteplättar. Sackaros används som jämförelse för såsen eftersom nästan alla dess kolhydrater är sockerarter. Cirka 0,20 g kolhydrat per portion från limejuice utelämnas.",
+    "fi": "Maissin GI 48 kuvaa tähkässä keitettyjä jyviä ennen pannupaistoa. Taikinan väli käyttää kahta vehnälettuverrokkia. Kastikkeelle käytetään sakkaroosianalogiaa, koska lähes kaikki sen hiilihydraatit ovat sokereita. Limettimehusta jää pois noin 0,20 g hiilihydraattia annosta kohti.",
+    "en": "Corn GI 48 is for kernels boiled on the cob before pan-frying. The batter scenarios use two wheat pancake comparators. Sucrose is used as a proxy for the sauce because almost all its carbohydrate is sugar. About 0.20 g carbohydrate per serving from lime juice is excluded.",
+    "th": "ค่า GI 48 ของข้าวโพดอ้างอิงเมล็ดที่ต้มทั้งฝักก่อนทอด แป้งใช้แผ่นแป้งสาลีสองชนิดเป็นตัวเปรียบเทียบ ซอสใช้ซูโครสเป็นค่าอ้างอิงเพราะคาร์โบไฮเดรตเกือบทั้งหมดเป็นน้ำตาล ไม่รวมคาร์โบไฮเดรตจากน้ำมะนาวประมาณ 0.20 กรัมต่อที่"
+  },
+  "ingredients": [
+    {
+      "name": {
+        "fi": "Kypsä valutettu maissi",
+        "en": "Cooked drained corn",
+        "sv": "Kokt avrunnen majs",
+        "th": "ข้าวโพดต้มสะเด็ดน้ำ"
+      },
+      "grams": 150
+    },
+    {
+      "name": {
+        "fi": "Vehnäjauho",
+        "en": "Wheat flour",
+        "sv": "Vetemjöl",
+        "th": "แป้งสาลี"
+      },
+      "grams": 100
+    },
+    {
+      "name": {
+        "fi": "Kuoreton kananmuna",
+        "en": "Shelled egg",
+        "sv": "Ägg utan skal",
+        "th": "ไข่ไม่รวมเปลือก"
+      },
+      "grams": 110
+    },
+    {
+      "name": {
+        "fi": "Thaibasilika",
+        "en": "Thai basil",
+        "sv": "Thaibasilika",
+        "th": "ใบโหระพา"
+      },
+      "grams": 6
+    },
+    {
+      "name": {
+        "fi": "Blue Dragon Original Sweet Chilli -kastike",
+        "en": "Blue Dragon Original Sweet Chilli Sauce",
+        "sv": "Blue Dragon Original Sweet Chilli Sauce",
+        "th": "ซอสพริกหวาน Blue Dragon Original"
+      },
+      "grams": 3
+    },
+    {
+      "name": {
+        "fi": "Limettimehu",
+        "en": "Lime juice",
+        "sv": "Limejuice",
+        "th": "น้ำมะนาว"
+      },
+      "grams": 5
+    },
+    {
+      "name": {
+        "fi": "Paistoöljy",
+        "en": "Cooking oil",
+        "sv": "Stekolja",
+        "th": "น้ำมันสำหรับทอด"
+      },
+      "grams": null,
+      "quantity": {
+        "amount": 1,
+        "unit": "tbsp"
+      }
+    },
+    {
+      "name": {
+        "fi": "Vesi",
+        "en": "Water",
+        "sv": "Vatten",
+        "th": "น้ำ"
+      },
+      "grams": null
+    },
+    {
+      "name": {
+        "fi": "Suola",
+        "en": "Salt",
+        "sv": "Salt",
+        "th": "เกลือ"
+      },
+      "grams": null
+    }
+  ],
+  "exclusions": [
+    {
+      "ingredientIndex": 6,
+      "kind": "ZERO_CHO",
+      "rationale": "Plain frying oil. Contributes no available carbohydrate.",
+      "evidencePath": "docs/nutrition/gk80-operation80-batch-20.md"
+    },
+    {
+      "ingredientIndex": 7,
+      "kind": "ZERO_CHO",
+      "rationale": "Plain water. Contributes no available carbohydrate.",
+      "evidencePath": "docs/nutrition/gk80-operation80-batch-20.md"
+    },
+    {
+      "ingredientIndex": 8,
+      "kind": "ZERO_CHO",
+      "rationale": "Pure salt. Contributes no available carbohydrate.",
+      "evidencePath": "docs/nutrition/gk80-operation80-batch-20.md"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Kim et al., wheat pancake",
+      "url": "https://doi.org/10.1017/S0007114518003446",
+      "kind": "HUMAN_GI",
+      "note": "GI 57."
+    },
+    {
+      "title": "Shobana et al., wheat dosa",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9552392/",
+      "kind": "HUMAN_GI",
+      "note": "GI 61.8."
+    },
+    {
+      "url": "https://doi.org/10.1093/ajcn/76.1.5",
+      "title": "Brand et al., sweet corn",
+      "note": "Sweet corn boiled on the cob for 20 minutes, glucose-reference GI 48, n=6.",
+      "kind": "HUMAN_GI"
+    },
+    {
+      "title": "Fineli 3040, 110, 858",
+      "url": "https://fineli.fi/fineli/fi/ohje/19",
+      "kind": "CARBOHYDRATE",
+      "note": "Fineli Release 20, CC BY 4.0."
+    },
+    {
+      "title": "AFCD F000396",
+      "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd",
+      "kind": "CARBOHYDRATE",
+      "note": "Basil analogue, CC BY-SA 3.0 Australia."
+    },
+    {
+      "title": "USDA 168156",
+      "url": "https://fdc.nal.usda.gov/food-details/168156/nutrients",
+      "kind": "CARBOHYDRATE",
+      "note": "Total carbohydrate minus fibre."
+    },
+    {
+      "title": "Blue Dragon Original Sweet Chilli Sauce",
+      "url": "https://www.bluedragon.co.uk/products/blue-dragon-original-sweet-chilli-sauce-190g",
+      "kind": "CARBOHYDRATE",
+      "note": "55.1 g carbohydrate and 54.7 g sugars per 100 g. The sucrose analogue is applied to all declared carbohydrate, including the 0.4 g non-sugar difference."
+    },
+    {
+      "url": "https://doi.org/10.1093/ajcn/76.1.5",
+      "title": "International GI tables, sucrose",
+      "note": "Sucrose GI 65 is a composition analogue for the whole sauce CHO, not a measurement of the sauce.",
+      "kind": "HUMAN_GI"
+    }
+  ],
+  "inputs": [
+    [
+      150,
+      24.32,
+      48
+    ],
+    [
+      100,
+      73.998,
+      57
+    ],
+    [
+      110,
+      0.3,
+      57
+    ],
+    [
+      6,
+      0.2,
+      57
+    ],
+    [
+      3,
+      55.1,
+      65
+    ]
+  ],
+  "boundFiles": {
+    "reseptit/aamupalat/thai-maissifritterit.md": "eca214c31e4a0f06a62f02e62b18f1f6ca9598cd3650cd09dd463b7f436d239a",
+    "docs/nutrition/gk80-operation80-batch-20.md": "1bbdfa6f2c58a9ded8d8fd7379a539a4700285c95b3c86a216be61d9d36ebc7f"
+  }
+}

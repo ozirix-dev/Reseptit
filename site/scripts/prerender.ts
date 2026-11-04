@@ -7,7 +7,7 @@ import { renderToString } from "react-dom/server";
 import { RouterProvider } from "react-router-dom";
 import { createServer } from "vite";
 import { siteContent } from "../src/generated/content.generated";
-import { recipeUi } from "../src/features/recipes/recipe-i18n";
+import { glycemicLoadMeta, recipeUi } from "../src/features/recipes/recipe-i18n";
 import { recipeJsonLd } from "../src/features/recipes/schema";
 import type { RecipeLocale } from "../src/types/content";
 
@@ -18,12 +18,6 @@ const localeBase: Record<RecipeLocale, string> = { fi: "", en: "/en/recipes", sv
 const indexNames: Record<RecipeLocale, string> = { fi: "Reseptit", en: "Recipes", sv: "Recept", th: "สูตรอาหาร" };
 const openGraphLocale: Record<RecipeLocale, string> = { fi: "fi_FI", en: "en_GB", sv: "sv_SE", th: "th_TH" };
 const methodRoutes: Record<RecipeLocale, string> = { fi: "/glykeeminen-kuorma/", en: "/en/glycemic-load/", sv: "/sv/glykemisk-belastning/", th: "/th/glycemic-load/" };
-const methodMeta: Record<RecipeLocale, { title: string; description: string }> = {
-  fi: { title: "Glykeeminen kuorma: lähteet ja laskenta | Reseptit", description: "Reseptien glykeemisen kuorman laskentatapa, lähteet ja reseptikohtaiset oletukset." },
-  en: { title: "Glycemic load: sources and method | Recipes", description: "Calculation method, sources and recipe-specific assumptions for glycemic-load estimates." },
-  sv: { title: "Glykemisk belastning: källor och metod | Recept", description: "Beräkningsmetod, källor och receptspecifika antaganden för uppskattningar av glykemisk belastning." },
-  th: { title: "ภาระน้ำตาลในเลือด: แหล่งข้อมูลและวิธีคำนวณ | สูตรอาหาร", description: "วิธีคำนวณ แหล่งข้อมูล และสมมติฐานเฉพาะสูตรสำหรับค่าประมาณภาระน้ำตาลในเลือด" },
-};
 function escapeHtml(value: string): string {
   return value.replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;");
 }
@@ -41,8 +35,8 @@ function routeMetadata(route: string) {
     locale === "fi" ? route === "/" : route === `${localeBase[locale]}/` || route === localeBase[locale]);
   if (!recipe && !pilotPage && indexLocale !== "fi" && (!indexLocale || !siteContent.recipes.some((item) => item.locale === indexLocale))) return null;
   const locale = recipe?.locale ?? methodLocale ?? indexLocale ?? "fi";
-  const title = pilotPage ? methodMeta[locale].title : recipe ? `${recipe.title} | ${indexNames[locale]}` : `${indexNames[locale]} | Ozirix`;
-  const description = pilotPage ? methodMeta[locale].description : recipe?.description || recipeUi[locale].intro;
+  const title = pilotPage ? glycemicLoadMeta[locale].title : recipe ? `${recipe.title} | ${indexNames[locale]}` : `${indexNames[locale]} | Ozirix`;
+  const description = pilotPage ? glycemicLoadMeta[locale].description : recipe?.description || recipeUi[locale].intro;
   const url = `${baseUrl}${route}`;
   const translations = recipe ? siteContent.recipes.filter((item) => item.recipeId === recipe.recipeId) : [];
   const publishedLocales = pilotPage ? (Object.keys(methodRoutes) as RecipeLocale[]).map((itemLocale) => ({ locale: itemLocale, path: methodRoutes[itemLocale] })) : recipe

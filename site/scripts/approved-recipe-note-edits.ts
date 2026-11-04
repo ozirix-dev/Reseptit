@@ -17,6 +17,12 @@ const englishPublicationSources = new Set([
 ]);
 
 export function recipeTextForApprovedSnapshot(file: string, text: string): string {
+  if (file === "reseptit/jalkiruoat/keto-mutakakku.md") {
+    text = text.replace(
+      "\nstatus: published\ntranslation_languages: [en, sv, th]\ntranslation_status: {en: published, sv: published, th: published}\n",
+      "\nstatus: published\ntranslation_languages: [en]\ntranslation_status: {en: published}\n",
+    );
+  }
   if (englishPublicationSources.has(file)) {
     text = text.replace(
       "\nstatus: published\ntranslation_languages: [en]\ntranslation_status: {en: published}\n",

@@ -1,3 +1,4 @@
+import { gkCopy } from "../src/features/glycemic-load/glycemic-load-copy";
 import "./content-layout.browser.test";
 import assert from "node:assert/strict";
 import { spawn, type ChildProcess } from "node:child_process";
@@ -47,7 +48,8 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
     assert.ok(noJs.url().endsWith("#recipe-instructions"));
     await noJs.close();
 
-    const page = await browser.newPage({ viewport: { width: 320, height: 800 } });
+    const context = await browser.newContext({ viewport: { width: 320, height: 800 } });
+    const page = await context.newPage();
     await page.route("https://ozirix-dev.github.io/Reseptit/kuvat/**", async (route) => {
       const imagePath = new URL(route.request().url()).pathname.split("/kuvat/")[1];
       await route.fulfill({ path: path.join(import.meta.dirname, "..", "public", "kuvat", ...imagePath.split("/")) });
@@ -57,12 +59,12 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
     page.on("console", (message) => { if (message.type() === "error") errors.push(message.text()); });
 
     const methodPages = [
-      { path: "/glykeeminen-kuorma/", locale: "fi", ogLocale: "fi_FI", title: "Glykeeminen kuorma: lähteet ja laskenta | Reseptit", description: "Reseptien glykeemisen kuorman laskentatapa, lähteet ja reseptikohtaiset oletukset." },
-      { path: "/en/glycemic-load/", locale: "en", ogLocale: "en_GB", title: "Glycemic load: sources and method | Recipes", description: "Calculation method, sources and recipe-specific assumptions for glycemic-load estimates." },
-      { path: "/sv/glykemisk-belastning/", locale: "sv", ogLocale: "sv_SE", title: "Glykemisk belastning: källor och metod | Recept", description: "Beräkningsmetod, källor och receptspecifika antaganden för uppskattningar av glykemisk belastning." },
-      { path: "/th/glycemic-load/", locale: "th", ogLocale: "th_TH", title: "ภาระน้ำตาลในเลือด: แหล่งข้อมูลและวิธีคำนวณ | สูตรอาหาร", description: "วิธีคำนวณ แหล่งข้อมูล และสมมติฐานเฉพาะสูตรสำหรับค่าประมาณภาระน้ำตาลในเลือด" },
-    ];
-    for (const methodPage of methodPages) {
+      { path: "/glykeeminen-kuorma/", locale: "fi", ogLocale: "fi_FI", title: "Reseptien glykeeminen kuorma (GK) | Reseptit", description: "Löydä reseptien glykeemisen kuorman (GK) arviot, luotettavuustiedot ja tarvittaessa tarkat laskentalähteet." },
+      { path: "/en/glycemic-load/", locale: "en", ogLocale: "en_GB", title: "Glycemic load (GL) of recipes | Recipes", description: "Explore calculated glycemic load estimates for recipes, their reliability and detailed sources." },
+      { path: "/sv/glykemisk-belastning/", locale: "sv", ogLocale: "sv_SE", title: "Receptens glykemiska belastning (GL) | Recept", description: "Hitta uppskattningar av receptens glykemiska belastning, säkerhet och detaljerade källor." },
+      { path: "/th/glycemic-load/", locale: "th", ogLocale: "th_TH", title: "ค่าภาระน้ำตาลในเลือด (GL) ของสูตรอาหาร | สูตรอาหาร", description: "ค้นหาค่าภาระน้ำตาลในเลือด (GL) ของสูตรอาหาร พร้อมระดับความน่าเชื่อถือและแหล่งข้อมูลการคำนวณ" },
+    ] as const;
+    for (const [index, methodPage] of methodPages.entries()) {
       const canonical = `https://ozirix-dev.github.io${base.replace("http://127.0.0.1:4176", "")}${methodPage.path}`;
       await page.goto(`${base}${methodPage.path}`);
       await page.waitForFunction((title) => document.title === title && Boolean(document.querySelector('link[rel="canonical"]')), methodPage.title);
@@ -86,6 +88,67 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
         assert.equal(await page.locator(`link[rel="alternate"][hreflang="${locale}"]`).getAttribute("href"), `https://ozirix-dev.github.io/Reseptit/${route}`);
       }
 
+      const width = [320, 390, 768, 1440][index];
+      await page.setViewportSize({ width, height: 800 });
+      const search = page.locator("#gk-recipe-search");
+      const results = page.locator(".glycemic-pilot__recipe");
+      await search.waitFor();
+      assert.equal(await results.count(), 24);
+      assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true, `${methodPage.locale} at ${width}px`);
+
+      const liverSearch = { fi: "Maksalaatikko", en: "Beef liver", sv: "Levergryta", th: "หม้อตับเนื้อ" }[methodPage.locale];
+      await search.fill(liverSearch);
+      const liver = page.locator("#maksalaatikko-kukkakaalilla");
+      assert.equal(await liver.isVisible(), true, `${methodPage.locale}: liver recipe is searchable`);
+      assert.match(await liver.innerText(), /GI/);
+      assert.ok((await liver.innerText()).includes(gkCopy[methodPage.locale].missing));
+      assert.doesNotMatch(await liver.innerText(), /3[.,]45/);
+      await page.getByRole("checkbox").check();
+      assert.equal(await liver.count(), 0);
+      await page.getByRole("checkbox").uncheck();
+      await search.fill("");
+
+      if (methodPage.locale === "fi") {
+        const initialIds = await results.evaluateAll((rows) => rows.map((row) => row.id));
+        await page.getByRole("button", { name: "Näytä lisää", exact: true }).click();
+        assert.equal(await results.count(), 48);
+        assert.equal(await results.nth(24).evaluate((row) => row === document.activeElement), true);
+        await page.getByRole("button", { name: "Näytä kaikki tulokset" }).click();
+        const allIds = await results.evaluateAll((rows) => rows.map((row) => row.id));
+        assert.ok(allIds.length > 48);
+        assert.equal(new Set(allIds).size, allIds.length);
+        const lastResult = results.last();
+        const lastId = allIds.at(-1);
+        const lastTitle = await lastResult.getByRole("heading", { level: 3 }).innerText();
+        assert.ok(lastId && !initialIds.includes(lastId));
+        await search.fill(lastTitle);
+        assert.equal(await results.first().getAttribute("id"), lastId);
+        await search.fill("");
+        assert.equal(await results.count(), 24);
+        await page.getByRole("checkbox").check();
+        assert.equal(await page.locator("#kookos-lime-kanacurry").count(), 0);
+        await page.evaluate(() => { window.location.hash = "kookos-lime-kanacurry"; });
+        await page.locator("#kookos-lime-kanacurry").waitFor();
+        assert.equal(await page.getByRole("checkbox").isChecked(), true);
+      }
+
+      const recipePrefix = { fi: "", en: "/en/recipes", sv: "/sv/recept", th: "/th/recipes" }[methodPage.locale];
+      await page.goto(`${base}${recipePrefix}/hummus/`);
+      const href = await page.locator(".recipe-glycemic-load__caption a").getAttribute("href");
+      assert.equal(href, `/Reseptit${methodPage.path}#hummus`);
+      const linkedPage = await context.newPage();
+      await linkedPage.goto(new URL(href!, base).href);
+      await linkedPage.waitForFunction(() => document.activeElement?.id === "hummus");
+      assert.equal(await linkedPage.locator(".glycemic-pilot__recipe").count(), 25);
+      await linkedPage.reload();
+      await linkedPage.waitForFunction(() => document.activeElement?.id === "hummus");
+      await linkedPage.locator("#gk-recipe-search").fill("zzzz1234");
+      assert.equal(await linkedPage.locator(".glycemic-pilot__recipe").count(), 1);
+      assert.equal(await linkedPage.locator(".glycemic-pilot__recipe").getAttribute("id"), "hummus");
+      await linkedPage.close();
+
+      await page.goto(`${base}${methodPage.path}`);
+      await search.waitFor();
       const noSlashPath = `${base}${methodPage.path.slice(0, -1)}`;
       await page.evaluate((path) => { history.pushState(null, "", path); dispatchEvent(new PopStateEvent("popstate")); }, noSlashPath);
       await page.waitForFunction((title) => document.title === title && Boolean(document.querySelector('link[rel="canonical"]')), methodPage.title);
@@ -198,15 +261,26 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
     await methodLink.focus();
     assert.equal(await methodLink.evaluate((element) => element.matches(":focus-visible")), true);
     await page.keyboard.press("Enter");
-    await page.getByRole("heading", { name: "Glykeeminen kuorma: lähteet ja laskenta" }).waitFor();
+    await page.getByRole("heading", { name: "Glykeeminen kuorma", exact: true }).waitFor();
     assert.ok(page.url().includes("#hummus"));
     assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true, "central GK details fit 320px");
-    const sourceSummary = page.locator("#hummus summary");
-    await sourceSummary.focus();
+    const hummus = page.locator("#hummus");
+    const technical = hummus.locator(".gk-evidence__technical");
+    const researchLink = technical.locator("a").first();
+    assert.equal(await researchLink.isVisible(), false);
+    assert.match(await hummus.innerText(), /Luotettavuus/);
+    assert.doesNotMatch(await hummus.innerText(), /HUMAN_GI|CATEGORY_MEAN|CALCULATION_POLICY/);
+    const calculation = hummus.locator(".gk-evidence__details").first();
+    await calculation.locator("summary").focus();
     await page.keyboard.press("Enter");
-    assert.equal(await page.locator("#hummus details").evaluate((element) => (element as HTMLDetailsElement).open), true);
+    assert.equal(await calculation.evaluate((element) => (element as HTMLDetailsElement).open), true);
+    assert.equal(await researchLink.isVisible(), false);
+    await technical.locator("summary").focus();
+    await page.keyboard.press("Enter");
+    assert.equal(await researchLink.isVisible(), true);
+    assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true, "expanded evidence fits 320px");
     await page.getByRole("link", { name: "English", exact: true }).click();
-    await page.getByRole("heading", { name: "Glycemic load: sources and method" }).waitFor();
+    await page.getByRole("heading", { name: "Glycemic load", exact: true }).waitFor();
     assert.ok(page.url().includes("/en/glycemic-load/"));
     await page.setViewportSize({ width: 320, height: 800 });
     assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true);

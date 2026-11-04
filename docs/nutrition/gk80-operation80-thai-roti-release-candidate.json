@@ -1,0 +1,179 @@
+{
+  "recipeId": "thai-roti-munalla-banaanilla",
+  "servings": 2,
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "unroundedGk": "32.35078",
+  "upperScenario": {
+    "giOverrides": [
+      {
+        "inputIndex": 0,
+        "gi": 61.8
+      },
+      {
+        "inputIndex": 1,
+        "gi": 61.8
+      },
+      {
+        "inputIndex": 2,
+        "gi": 61.8
+      }
+    ],
+    "unroundedGk": "34.297852"
+  },
+  "preparation": {
+    "fi": "Vatkaa {{amount:0}} g vehnäjauhoa, {{amount:1}} g kuoretonta kananmunaa ja {{amount:2}} g Blue Dragon Coconut Milkiä. Anna levätä 10 minuuttia ja paista ohuiksi letuiksi {{amount:5}} rkl:ssa öljyä. Lisää vasta paiston jälkeen {{amount:3}} g kuorittua kypsää banaania viipaleina. Taita, lisää {{amount:4}} g makeutettua Nestlé-kondensoitua maitoa ja jaa {{servings}} annokseen.",
+    "en": "Whisk {{amount:0}} g wheat flour, {{amount:1}} g shelled egg and {{amount:2}} g Blue Dragon Coconut Milk. Rest for 10 minutes and pan-fry thin pancakes in {{amount:5}} tbsp oil. After frying, add {{amount:3}} g sliced peeled ripe banana. Fold, drizzle with {{amount:4}} g Nestlé sweetened condensed milk and divide into {{servings}} servings.",
+    "sv": "Vispa {{amount:0}} g vetemjöl, {{amount:1}} g ägg utan skal och {{amount:2}} g Blue Dragon Coconut Milk. Låt vila i 10 minuter och stek tunna pannkakor i {{amount:5}} msk olja. Lägg på {{amount:3}} g skivad, skalad mogen banan efter stekningen. Vik, ringla över {{amount:4}} g sötad kondenserad mjölk från Nestlé och dela i {{servings}} portioner.",
+    "th": "ตีแป้งสาลี {{amount:0}} กรัม ไข่ไม่รวมเปลือก {{amount:1}} กรัม และกะทิ Blue Dragon {{amount:2}} กรัม พัก 10 นาที แล้วทอดเป็นแผ่นบางในน้ำมัน {{amount:5}} ช้อนโต๊ะ หลังทอดใส่กล้วยสุกปอกเปลือกหั่นแว่น {{amount:3}} กรัม พับ ราดนมข้นหวาน Nestlé {{amount:4}} กรัม แล้วแบ่งเป็น {{servings}} ที่"
+  },
+  "limitation": {
+    "fi": "Arvio koskee ohuita pannulettuja, joihin lisätään raaka kypsä banaani paiston jälkeen. Taikinaverrokit ja kondensoidun maidon historiallinen GI-mittaus tuovat epävarmuutta.",
+    "en": "The estimate applies to thin pancakes topped with uncooked ripe banana after frying. The batter comparators and the historical condensed milk GI measurement introduce uncertainty.",
+    "sv": "Uppskattningen gäller tunna pannkakor med rå mogen banan som läggs på efter stekning. Jämförelsesmetarna och den äldre GI-mätningen för kondenserad mjölk medför osäkerhet.",
+    "th": "ค่าประมาณใช้กับแผ่นบางที่ใส่กล้วยสุกสดหลังทอด สูตรแป้งที่ใช้เปรียบเทียบและค่า GI ของนมข้นหวานจากการวัดในอดีตมีความไม่แน่นอน"
+  },
+  "ingredients": [
+    {
+      "name": {
+        "fi": "Vehnäjauho",
+        "en": "Wheat flour",
+        "sv": "Vetemjöl",
+        "th": "แป้งสาลี"
+      },
+      "grams": 100
+    },
+    {
+      "name": {
+        "fi": "Kuoreton kananmuna",
+        "en": "Shelled egg",
+        "sv": "Ägg utan skal",
+        "th": "ไข่ไม่รวมเปลือก"
+      },
+      "grams": 110
+    },
+    {
+      "name": {
+        "fi": "Blue Dragon -kookosmaito",
+        "en": "Blue Dragon Coconut Milk",
+        "sv": "Blue Dragon-kokosmjölk",
+        "th": "กะทิ Blue Dragon"
+      },
+      "grams": 200
+    },
+    {
+      "name": {
+        "fi": "Kuorittu kypsä banaani",
+        "en": "Peeled ripe banana",
+        "sv": "Skalad mogen banan",
+        "th": "กล้วยสุกปอกเปลือก"
+      },
+      "grams": 120
+    },
+    {
+      "name": {
+        "fi": "Makeutettu Nestlé-kondensoitu maito",
+        "en": "Nestlé sweetened condensed milk",
+        "sv": "Sötad kondenserad mjölk från Nestlé",
+        "th": "นมข้นหวาน Nestlé"
+      },
+      "grams": 20
+    },
+    {
+      "name": {
+        "fi": "Paistoöljy",
+        "en": "Cooking oil",
+        "sv": "Stekolja",
+        "th": "น้ำมันสำหรับทอด"
+      },
+      "grams": null,
+      "quantity": {
+        "amount": 1,
+        "unit": "tbsp"
+      }
+    }
+  ],
+  "exclusions": [
+    {
+      "ingredientIndex": 5,
+      "kind": "ZERO_CHO",
+      "rationale": "Plain frying oil. Contributes no available carbohydrate.",
+      "evidencePath": "docs/nutrition/gk80-operation80-batch-21.md"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Kim et al., wheat pancake",
+      "url": "https://doi.org/10.1017/S0007114518003446",
+      "kind": "HUMAN_GI",
+      "note": "GI 57 for batter scenario A."
+    },
+    {
+      "title": "Shobana et al., wheat dosa",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9552392/",
+      "kind": "HUMAN_GI",
+      "note": "GI 61.8 for batter scenario B."
+    },
+    {
+      "title": "Brand-Miller et al., banana",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0022316622161146",
+      "kind": "HUMAN_GI",
+      "note": "GI 53 for banana."
+    },
+    {
+      "title": "Chan et al., condensed milk",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/11781674/",
+      "kind": "HUMAN_GI",
+      "note": "GI 61 for sweetened condensed milk."
+    },
+    {
+      "title": "Fineli 110, 858, 11049",
+      "url": "https://fineli.fi/fineli/fi/ohje/19",
+      "kind": "CARBOHYDRATE",
+      "note": "Fineli Release 20, CC BY 4.0."
+    },
+    {
+      "title": "Blue Dragon Coconut Milk",
+      "url": "https://www.bluedragon.co.uk/products/coconut-milk",
+      "kind": "CARBOHYDRATE",
+      "note": "3.4 g carbohydrate per 100 g."
+    },
+    {
+      "title": "Nestlé Sweetened Condensed Milk 395 g",
+      "url": "https://www.nestleprofessional.com.au/nestle-milks/sweetened-condensed-milk-395g",
+      "kind": "CARBOHYDRATE",
+      "note": "55.9 g carbohydrate per 100 g."
+    }
+  ],
+  "inputs": [
+    [
+      100,
+      73.998,
+      57
+    ],
+    [
+      110,
+      0.3,
+      57
+    ],
+    [
+      200,
+      3.4,
+      57
+    ],
+    [
+      120,
+      18.3,
+      53
+    ],
+    [
+      20,
+      55.9,
+      61
+    ]
+  ],
+  "boundFiles": {
+    "reseptit/aamupalat/thai-roti-munalla-banaanilla.md": "01b5f49344afa698e599aa1ae8672649a18182892227ae5aa8d49b07e582c0ba",
+    "docs/nutrition/gk80-operation80-batch-21.md": "135bd93f1859d8700b707d4522e0eb55a716b903b5cafb6479bd51fa68a5030b"
+  }
+}

@@ -1,0 +1,235 @@
+{
+  "recipeId": "masala-dosa",
+  "servings": 4,
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "unroundedGk": "57.8025",
+  "upperScenario": {
+    "choOverrides": [
+      {
+        "inputIndex": 2,
+        "cho": 19.9
+      }
+    ],
+    "unroundedGk": "63.495"
+  },
+  "inputs": [
+    [
+      250,
+      77.7,
+      76
+    ],
+    [
+      100,
+      51,
+      76
+    ],
+    [
+      500,
+      13,
+      66
+    ],
+    [
+      100,
+      4.8,
+      40
+    ]
+  ],
+  "omissions": [
+    {
+      "ingredientIndex": 4,
+      "choPer100g": 3.8
+    },
+    {
+      "ingredientIndex": 5,
+      "choPer100g": 15.9
+    },
+    {
+      "ingredientIndex": 6,
+      "choPer100g": 44.4
+    },
+    {
+      "ingredientIndex": 7,
+      "choPer100g": 4.8
+    },
+    {
+      "ingredientIndex": 8,
+      "choPer100g": 1.9
+    }
+  ],
+  "ingredients": [
+    {
+      "grams": 250,
+      "name": {
+        "fi": "Tilda Pure Basmati -riisi",
+        "en": "Tilda Pure Basmati rice",
+        "sv": "Tilda Pure Basmati-ris",
+        "th": "ข้าวบาสมาติ Tilda Pure"
+      }
+    },
+    {
+      "grams": 100,
+      "name": {
+        "fi": "Kuorittu halkaistu urad dal",
+        "en": "Dehulled split urad dal",
+        "sv": "Skalad delad urad dal",
+        "th": "ถั่วอูรัดผ่าซีกกะเทาะเปลือก"
+      }
+    },
+    {
+      "grams": 500,
+      "name": {
+        "fi": "Keitetty valutettu peruna",
+        "en": "Boiled drained potatoes",
+        "sv": "Kokt avrunnen potatis",
+        "th": "มันฝรั่งต้มสะเด็ดน้ำ"
+      }
+    },
+    {
+      "grams": 100,
+      "name": {
+        "fi": "Kuorittu keltasipuli",
+        "en": "Peeled yellow onion",
+        "sv": "Skalad gul lök",
+        "th": "หอมหัวใหญ่ปอกเปลือก"
+      }
+    },
+    {
+      "grams": 1,
+      "name": {
+        "fi": "Sarviapila",
+        "en": "Fenugreek seeds",
+        "sv": "Bockhornsklöverfrön",
+        "th": "เมล็ดลูกซัด"
+      }
+    },
+    {
+      "grams": 3,
+      "name": {
+        "fi": "Sinapinsiemenet",
+        "en": "Mustard seeds",
+        "sv": "Senapsfrön",
+        "th": "เมล็ดมัสตาร์ด"
+      }
+    },
+    {
+      "grams": 1,
+      "name": {
+        "fi": "Kurkuma",
+        "en": "Turmeric",
+        "sv": "Gurkmeja",
+        "th": "ขมิ้น"
+      }
+    },
+    {
+      "grams": 10,
+      "name": {
+        "fi": "Inkivääri",
+        "en": "Ginger",
+        "sv": "Ingefära",
+        "th": "ขิง"
+      }
+    },
+    {
+      "grams": 20,
+      "name": {
+        "fi": "Korianteri",
+        "en": "Coriander",
+        "sv": "Koriander",
+        "th": "ผักชี"
+      }
+    }
+  ],
+  "preparation": {
+    "fi": "Liota {{amount:0}} g riisiä, {{amount:1}} g urad dalia ja {{amount:4}} g sarviapilaa 4 tuntia. Valuta, jauha vedellä ja fermentoi 8–12 tuntia. Suolaa ja paista ohuiksi letuiksi. Kuullota öljyssä {{amount:3}} g sipulia, {{amount:5}} g sinapinsiemeniä, {{amount:6}} g kurkumaa ja {{amount:7}} g inkivääriä. Lisää {{amount:2}} g kypsää perunaa ja {{amount:8}} g korianteria. Täytä letut ja jaa {{servings}} annokseen.",
+    "en": "Soak {{amount:0}} g rice, {{amount:1}} g urad dal and {{amount:4}} g fenugreek for 4 hours. Drain, grind with water and ferment for 8–12 hours. Salt the batter and pan-fry thin dosas. Sauté {{amount:3}} g onion, {{amount:5}} g mustard seeds, {{amount:6}} g turmeric and {{amount:7}} g ginger in oil. Add {{amount:2}} g cooked potatoes and {{amount:8}} g coriander. Fill the dosas and divide into {{servings}} servings.",
+    "sv": "Blötlägg {{amount:0}} g ris, {{amount:1}} g urad dal och {{amount:4}} g bockhornsklöver i 4 timmar. Häll av, mal med vatten och jäs i 8–12 timmar. Salta smeten och stek tunna dosor. Fräs {{amount:3}} g lök, {{amount:5}} g senapsfrön, {{amount:6}} g gurkmeja och {{amount:7}} g ingefära i olja. Tillsätt {{amount:2}} g kokt potatis och {{amount:8}} g koriander. Fyll dosorna och dela i {{servings}} portioner.",
+    "th": "แช่ข้าว {{amount:0}} กรัม ถั่วอูรัด {{amount:1}} กรัม และเมล็ดลูกซัด {{amount:4}} กรัม 4 ชั่วโมง สะเด็ดน้ำ บดกับน้ำแล้วหมัก 8–12 ชั่วโมง เติมเกลือแล้วทอดแป้งเป็นแผ่นบาง ผัดหอม {{amount:3}} กรัม เมล็ดมัสตาร์ด {{amount:5}} กรัม ขมิ้น {{amount:6}} กรัม และขิง {{amount:7}} กรัมในน้ำมัน ใส่มันฝรั่งต้ม {{amount:2}} กรัมและผักชี {{amount:8}} กรัม ใส่ไส้แล้วแบ่งเป็น {{servings}} ที่"
+  },
+  "limitation": {
+    "fi": "Väli kuvaa keitetyn perunan koostumuseroa. Taikinan GI 76 on riisi–urad-dosan verrokki. Chutney ja sambar lasketaan erikseen. Mausteiden pienosuudet jäävät pois laskelmasta (arviolta 0,455 g CHO/annos).",
+    "en": "The range reflects carbohydrate differences between boiled potatoes. Batter GI 76 is from a comparable rice and urad dosa. Chutney and sambar are separate. Minor spices are excluded (estimated 0.455 g carbohydrate per serving).",
+    "sv": "Intervallet speglar skillnader i kolhydrathalt mellan kokta potatisar. Smetens GI 76 kommer från en jämförbar dosa med ris och urad dal. Chutney och sambar räknas separat. Kryddornas små bidrag utelämnas (uppskattningsvis 0,455 g kolhydrat per portion).",
+    "th": "ช่วงนี้สะท้อนความต่างของคาร์โบไฮเดรตในมันฝรั่งต้ม ค่า GI 76 มาจากโดซาข้าวและถั่วอูรัดที่ใช้เทียบ ชัทนีย์และซัมบาร์คิดแยก ไม่รวมคาร์โบไฮเดรตจากเครื่องเทศปริมาณเล็กน้อยประมาณ 0.455 กรัมต่อที่"
+  },
+  "sources": [
+    {
+      "title": "Tan et al.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29759105/",
+      "kind": "HUMAN_GI",
+      "note": "Glucose-scale GI 76 for a rice and urad dosa comparator."
+    },
+    {
+      "title": "Atkinson et al.",
+      "url": "https://doi.org/10.1093/ajcn/nqab233",
+      "kind": "HUMAN_GI",
+      "note": "Supplementary table 1 row 1842, boiled potato comparator GI 66."
+    },
+    {
+      "title": "Matvaretabellen early potatoes",
+      "url": "https://www.matvaretabellen.no/en/potatoes-early-boiled/",
+      "kind": "CARBOHYDRATE",
+      "note": "Boiled early potato, 13.0 g carbohydrate per 100 g."
+    },
+    {
+      "title": "Matvaretabellen storage potatoes",
+      "url": "https://www.matvaretabellen.no/en/potatoes-storage-boiled/",
+      "kind": "CARBOHYDRATE",
+      "note": "Boiled storage potato, 19.9 g carbohydrate per 100 g."
+    },
+    {
+      "title": "Tilda",
+      "url": "https://www.tilda.com/products/pure-basmati-rice/",
+      "kind": "CARBOHYDRATE",
+      "note": "Named dry basmati rice carbohydrate declaration."
+    },
+    {
+      "title": "IFCT B003",
+      "url": "https://www.nin.res.in/ebooks/IFCT2017_16122024.pdf",
+      "kind": "CARBOHYDRATE",
+      "note": "51 g per 100 g dry hulled black gram dal."
+    },
+    {
+      "title": "AFCD",
+      "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd",
+      "kind": "CARBOHYDRATE",
+      "note": "Ginger and coriander composition used in the omission calculation."
+    },
+    {
+      "title": "Fineli Release 20",
+      "url": "https://fineli.fi/fineli/fi/ohje/19",
+      "kind": "CARBOHYDRATE",
+      "note": "Fineli Release 20, yellow onion carbohydrate composition."
+    },
+    {
+      "url": "https://doi.org/10.2337/dc08-1239",
+      "kind": "PUBLISHED_CODING",
+      "note": "Assigned onion GI code 40.",
+      "title": "Vegetable GI coding"
+    },
+    {
+      "url": "https://www.nutridatabaze.cz/en/food/?id=974",
+      "title": "Czech food composition database, fenugreek seeds",
+      "note": "Available carbohydrate 3.8 g per 100 g.",
+      "kind": "CARBOHYDRATE"
+    },
+    {
+      "url": "https://www.matvaretabellen.no/en/mustard-seeds/",
+      "title": "Matvaretabellen, mustard seeds",
+      "note": "Available carbohydrate 15.9 g per 100 g.",
+      "kind": "CARBOHYDRATE"
+    },
+    {
+      "url": "https://www.matvaretabellen.no/gurkemeie-malt/",
+      "title": "Matvaretabellen, ground turmeric",
+      "note": "Available carbohydrate 44.4 g per 100 g.",
+      "kind": "CARBOHYDRATE"
+    }
+  ],
+  "boundFiles": {
+    "reseptit/paaruoat/masala-dosa.md": "994a62ee4c1072ec20c689ef5955992b706580f75268331bad8617822bf36ab3",
+    "docs/nutrition/gk80-operation80-batch-39.md": "dca3a1e0c96d955caaf486e4e2a5b7359176277ad109c3a30946c3528756d239"
+  },
+  "researchRevision": "IFCT B003 replaces inconsistent TRS web data. Bound batch memo documents the historical inputs.",
+  "supersedesReviewInput": "docs/nutrition/gk80-operation80-masala-dosa-release-candidate.json"
+}

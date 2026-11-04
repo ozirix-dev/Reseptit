@@ -5,10 +5,12 @@ import path from "node:path";
 import { recipeTextForApprovedSnapshot } from "../scripts/approved-recipe-note-edits";
 import { parseMarkdown } from "../src/content/markdown";
 
-const publishedTorrasTranslations = new Set([
-  "kaannokset/en/jalkiruoat/keto-mutakakku.md",
-  "kaannokset/en/jalkiruoat/keto-suklaakeksit.md",
-  "kaannokset/en/jalkiruoat/meheva-suklaakakku.md",
+const translationDraftCommits = new Map([
+  ["kaannokset/en/jalkiruoat/keto-mutakakku.md", "d6531cd0592b01c0106a24bb6a3bd930dedbc504"],
+  ["kaannokset/en/jalkiruoat/keto-suklaakeksit.md", "d6531cd0592b01c0106a24bb6a3bd930dedbc504"],
+  ["kaannokset/en/jalkiruoat/meheva-suklaakakku.md", "d6531cd0592b01c0106a24bb6a3bd930dedbc504"],
+  ["kaannokset/sv/jalkiruoat/keto-mutakakku.md", "47f3362c9fe426f25e6978dc9be519c19ae4b789"],
+  ["kaannokset/th/jalkiruoat/keto-mutakakku.md", "47f3362c9fe426f25e6978dc9be519c19ae4b789"],
 ]);
 
 export function assertRecipeBaseline(root: string, baseline: string, ...protectedPaths: string[]) {
@@ -31,8 +33,9 @@ export function assertRecipeBaseline(root: string, baseline: string, ...protecte
     }
     assert.ok(status === "A" && file.startsWith("kaannokset/") && file.endsWith(".md"), change);
     const draft = parseMarkdown(readFileSync(path.join(root, file), "utf8"));
-    if (publishedTorrasTranslations.has(file) && draft?.data.status === "published") {
-      const reviewed = execFileSync("git", ["show", "d6531cd0592b01c0106a24bb6a3bd930dedbc504:" + file], {
+    const draftCommit = translationDraftCommits.get(file);
+    if (draftCommit && draft?.data.status === "published") {
+      const reviewed = execFileSync("git", ["show", draftCommit + ":" + file], {
         cwd: root,
         encoding: "utf8",
       });

@@ -1,0 +1,261 @@
+{
+  "recipeId": "dan-dan-nuudelit",
+  "servings": 4,
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "unroundedGk": "18.52555",
+  "upperScenario": {
+    "choOverrides": [
+      {
+        "inputIndex": 0,
+        "cho": 71.2,
+        "gi": 46
+      }
+    ],
+    "unroundedGk": "24.9784"
+  },
+  "omissions": [
+    {
+      "ingredientIndex": 7,
+      "choPer100ml": 5.2
+    }
+  ],
+  "preparation": {
+    "fi": "Keitä {{amount:0}} g tuoretta udonia tai kuivaa Hakubaku Somenia pakkauksen mukaan. Säästä {{amount:8}} ml keitinvettä. Paista {{amount:1}} g jauhelihaa, {{amount:2}} g valkosipulia ja {{amount:3}} g soijakastiketta {{amount:9}} rkl:ssa öljyä, kunnes liha on kypsää. Sekoita kastikkeeksi {{amount:4}} g seesamitahnaa, {{amount:10}} rkl suodatettua chiliöljyä, {{amount:7}} ml etikkaa ja keitinvesi. Yhdistä nuudelit, liha ja kastike. Lisää {{amount:5}} g maapähkinää ja {{amount:6}} g kevätsipulia ja jaa {{servings}} annokseen.",
+    "en": "Cook {{amount:0}} g fresh udon or dry Hakubaku Somen as directed. Reserve {{amount:8}} ml cooking water. Fry {{amount:1}} g ground pork, {{amount:2}} g garlic and {{amount:3}} g soy sauce in {{amount:9}} tbsp oil until the pork is cooked through. Mix {{amount:4}} g sesame paste, {{amount:10}} tbsp filtered chilli oil, {{amount:7}} ml vinegar and the reserved water. Combine the noodles, pork and sauce. Add {{amount:5}} g peanuts and {{amount:6}} g spring onion and divide into {{servings}} servings.",
+    "sv": "Koka {{amount:0}} g färsk udon eller torr Hakubaku Somen enligt förpackningen. Spara {{amount:8}} ml kokvatten. Stek {{amount:1}} g fläskfärs, {{amount:2}} g vitlök och {{amount:3}} g soja i {{amount:9}} msk olja tills färsen är genomstekt. Blanda {{amount:4}} g sesampasta, {{amount:10}} msk filtrerad chiliolja, {{amount:7}} ml vinäger och kokvattnet. Blanda nudlarna, köttet och såsen. Tillsätt {{amount:5}} g jordnötter och {{amount:6}} g salladslök och dela i {{servings}} portioner.",
+    "th": "ต้มอุด้งสดหรือโซเม็งแห้ง Hakubaku {{amount:0}} กรัมตามฉลาก เก็บน้ำต้มเส้น {{amount:8}} มล. ผัดหมูบด {{amount:1}} กรัม กระเทียม {{amount:2}} กรัม และซีอิ๊ว {{amount:3}} กรัมในน้ำมัน {{amount:9}} ช้อนโต๊ะจนหมูสุกทั่ว ผสมงาบด {{amount:4}} กรัม น้ำมันพริกกรอง {{amount:10}} ช้อนโต๊ะ น้ำส้มสายชู {{amount:7}} มล. และน้ำต้มเส้น คลุกเส้น หมู และซอส ใส่ถั่วลิสง {{amount:5}} กรัมและต้นหอม {{amount:6}} กรัม แบ่งเป็น {{servings}} ที่"
+  },
+  "limitation": {
+    "fi": "Alempi arvio koskee 300 g:aa tuoretta udonia (GI-verrokki 48,2), ylempi 300 g:aa kuivaa Hakubaku Somenia (GI-verrokki 46). Molemmat määrät punnitaan ennen keittämistä ja verrokit mitattiin kypsinä. Pois jää 0,195 g etikan hiilihydraattia annosta kohti sekä valinnainen paksoilisuke. Valkosipuli, kevätsipuli, soija ja seesamitahna käyttävät laskentakoodeja.",
+    "en": "The lower estimate uses 300 g fresh udon (comparator GI 48.2), and the upper uses 300 g dry Hakubaku Somen (comparator GI 46). Both amounts are weighed before cooking and the comparators were measured cooked. Vinegar contributes 0.195 g carbohydrate per serving outside the calculation. The optional pak choi side is excluded. Garlic, spring onion, soy sauce and sesame paste use assigned GI codes.",
+    "sv": "Den lägre uppskattningen gäller 300 g färsk udon (jämförelse-GI 48,2), den högre 300 g torr Hakubaku Somen (jämförelse-GI 46). Båda mängderna vägs före kokning och jämförelsenudlarna mättes kokta. Vinägerns 0,195 g kolhydrat per portion och det valfria tillbehöret pak choi utelämnas. Vitlök, salladslök, soja och sesampasta använder tilldelade GI-koder.",
+    "th": "ค่าต่ำใช้เส้นอุด้งสด 300 กรัม (GI อ้างอิง 48.2) ค่าสูงใช้เส้นโซเม็งแห้ง Hakubaku 300 กรัม (GI อ้างอิง 46) ชั่งเส้นทั้งสองแบบก่อนต้ม ส่วนค่าอ้างอิงวัดจากเส้นที่ต้มแล้ว ไม่นับคาร์โบไฮเดรตจากน้ำส้มสายชู 0.195 กรัมต่อที่และผักกวางตุ้งฮ่องเต้ที่เป็นเครื่องเคียงเสริม กระเทียม ต้นหอม ซีอิ๊ว และงาบดใช้รหัส GI ที่กำหนดเพื่อการคำนวณ"
+  },
+  "ingredients": [
+    {
+      "name": {
+        "fi": "Tuore udon tai kuiva Hakubaku Somen",
+        "en": "Fresh udon or dry Hakubaku Somen",
+        "sv": "Färsk udon eller torr Hakubaku Somen",
+        "th": "อุด้งสดหรือโซเม็งแห้ง Hakubaku"
+      },
+      "grams": 300
+    },
+    {
+      "name": {
+        "fi": "Sian jauheliha",
+        "en": "Ground pork",
+        "sv": "Fläskfärs",
+        "th": "หมูบด"
+      },
+      "grams": 300
+    },
+    {
+      "name": {
+        "fi": "Valkosipuli",
+        "en": "Garlic",
+        "sv": "Vitlök",
+        "th": "กระเทียม"
+      },
+      "grams": 7
+    },
+    {
+      "name": {
+        "fi": "Soijakastike",
+        "en": "Soy sauce",
+        "sv": "Soja",
+        "th": "ซีอิ๊ว"
+      },
+      "grams": 18
+    },
+    {
+      "name": {
+        "fi": "Lee Kum Kee -seesamitahna",
+        "en": "Lee Kum Kee sesame paste",
+        "sv": "Lee Kum Kee sesampasta",
+        "th": "งาบด Lee Kum Kee"
+      },
+      "grams": 30
+    },
+    {
+      "name": {
+        "fi": "Paahdettu maapähkinä",
+        "en": "Roasted peanuts",
+        "sv": "Rostade jordnötter",
+        "th": "ถั่วลิสงคั่ว"
+      },
+      "grams": 20
+    },
+    {
+      "name": {
+        "fi": "Kevätsipuli",
+        "en": "Spring onion",
+        "sv": "Salladslök",
+        "th": "ต้นหอม"
+      },
+      "grams": 24
+    },
+    {
+      "name": {
+        "fi": "Heng Shun Chinkiang -etikka",
+        "en": "Heng Shun Chinkiang vinegar",
+        "sv": "Heng Shun Chinkiang-vinäger",
+        "th": "น้ำส้มสายชูดำ Heng Shun Chinkiang"
+      },
+      "grams": null,
+      "quantity": {
+        "amount": 15,
+        "unit": "ml"
+      }
+    },
+    {
+      "name": {
+        "fi": "Keitinvesi",
+        "en": "Noodle cooking water",
+        "sv": "Nudlarnas kokvatten",
+        "th": "น้ำต้มเส้น"
+      },
+      "grams": null,
+      "quantity": {
+        "amount": 100,
+        "unit": "ml"
+      }
+    },
+    {
+      "name": {
+        "fi": "Paistoöljy",
+        "en": "Cooking oil",
+        "sv": "Stekolja",
+        "th": "น้ำมันสำหรับผัด"
+      },
+      "grams": null,
+      "quantity": {
+        "amount": 1,
+        "unit": "tbsp"
+      }
+    },
+    {
+      "name": {
+        "fi": "Suodatettu chiliöljy",
+        "en": "Filtered chilli oil",
+        "sv": "Filtrerad chiliolja",
+        "th": "น้ำมันพริกกรอง"
+      },
+      "grams": null,
+      "quantity": {
+        "amount": 2,
+        "unit": "tbsp"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Kim et al.",
+      "url": "https://doi.org/10.1017/S0007114518003446",
+      "kind": "HUMAN_GI",
+      "note": "Kim et al. 2019, Table 3, fresh wheat noodles, glucose reference, GI 48.2."
+    },
+    {
+      "title": "Yang et al.",
+      "url": "https://www.wjgnet.com/1007-9327/full/v12/i21/3430-T2.htm",
+      "kind": "HUMAN_GI",
+      "note": "Yang et al. 2006, Table 2, dried wheat noodles, glucose reference, GI 46 (n=10). Article CC BY-NC 4.0. One reported GI value is cited as a factual input to an independent calculation."
+    },
+    {
+      "title": "MEXT, 日本食品標準成分表（八訂）増補2023年, 01038",
+      "url": "https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=1_01038_7&MODE=7",
+      "kind": "CARBOHYDRATE",
+      "note": "Fresh udon, 50.1 g per 100 g."
+    },
+    {
+      "title": "Hakubaku",
+      "url": "https://hakubaku.com.au/product/somen/",
+      "kind": "CARBOHYDRATE",
+      "note": "Dry somen, 71.2 g per 100 g."
+    },
+    {
+      "title": "Lee Kum Kee",
+      "url": "https://www.webstaurantstore.com/documents/nutrition/137lkk004240_ps_1300520042_pure_sesame_paste_317oz.pdf",
+      "kind": "CARBOHYDRATE",
+      "note": "Available carbohydrate by difference."
+    },
+    {
+      "title": "Heng Shun",
+      "url": "https://mamahuhu.ee/en/e-shop/products/chinkiang-aadikas-hengshun-550ml",
+      "kind": "CARBOHYDRATE",
+      "note": "Vinegar 5.2 g per 100 ml."
+    },
+    {
+      "title": "Jenkins et al.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/6259925/",
+      "kind": "HUMAN_GI",
+      "note": "Jenkins et al. 1981, Table 1, peanuts, glucose reference, GI 13 (n=5)."
+    },
+    {
+      "title": "Fineli",
+      "url": "https://fineli.fi/fineli/fi/ohje/19",
+      "kind": "CARBOHYDRATE",
+      "note": "CC BY 4.0."
+    },
+    {
+      "title": "AFCD",
+      "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd",
+      "kind": "CARBOHYDRATE",
+      "note": "CC BY-SA 3.0 Australia."
+    },
+    {
+      "title": "GI coding method",
+      "url": "https://doi.org/10.2337/dc08-1239",
+      "kind": "PUBLISHED_CODING",
+      "note": "Vegetable code."
+    },
+    {
+      "title": "Low carbohydrate food coding",
+      "url": "https://doi.org/10.1016/j.jfca.2007.02.004",
+      "kind": "PUBLISHED_CODING",
+      "note": "Soy sauce and sesame paste."
+    }
+  ],
+  "inputs": [
+    [
+      300,
+      50.1,
+      48.2
+    ],
+    [
+      300,
+      0,
+      0
+    ],
+    [
+      7,
+      16.3,
+      40
+    ],
+    [
+      18,
+      3.2,
+      50
+    ],
+    [
+      30,
+      0.7,
+      50
+    ],
+    [
+      20,
+      14.1,
+      13
+    ],
+    [
+      24,
+      4.6,
+      40
+    ]
+  ],
+  "boundFiles": {
+    "reseptit/paaruoat/dan-dan-nuudelit.md": "81db676010a87a0a2b4a9dbd081ca672659fec2027fc82237b8bc606c3f34664",
+    "docs/nutrition/gk80-operation80-batch-26.md": "5e729097bc2a41e0b00ad50bb6efe57f99aaa449111d4c6c9d490f827f009c65"
+  }
+}

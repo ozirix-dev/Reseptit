@@ -9,6 +9,7 @@ import {createElement as h} from 'react';
 import {renderToStaticMarkup} from 'react-dom/server';
 import {MemoryRouter} from 'react-router-dom';
 import {buildApprovedFourVariants,loadApprovedFour,verifyNextFourCase,verifyMext05001,NEXT_FOUR_INPUTS,verifyNextFourManifest} from '../scripts/gk-next-four';
+import {loadAuthorizedGk100Variants} from '../scripts/gk100-approval-release';
 import {buildGkOnlyVariants} from '../scripts/gk149-integration';
 import {buildApprovedSevenVariants} from '../scripts/gk-next-seven';
 import {digest,textHash} from '../scripts/gk149-model';
@@ -20,17 +21,27 @@ const root=fileURLToPath(new URL('../../',import.meta.url)),folder='docs/nutriti
 const read=(p:string)=>JSON.parse(readFileSync(path.join(root,p),'utf8'));
 const four=buildApprovedFourVariants(root),loaded=loadApprovedFour(root),manifest=verifyNextFourManifest(root),baseline=read(folder+'main-baseline.json');
 const old=[...buildGkOnlyVariants(root),...buildApprovedSevenVariants(root)];
+const yakiOnigiri = gkOnlyVariants.find(v => v.versionId === 'gk-operation80-review-aaceff8adf0d');
 const render=(v:GkOnlyVariant,locale:'fi'|'en'|'sv'|'th',servings=v.servings)=>renderToStaticMarkup(h(MemoryRouter,null,h(GkOnlyVariantPanel,{variant:v,locale,servings})));
 
-test('the four A inputs and legacy variants remain intact as four approved B versions enter coverage',()=>{
+test('the four A inputs and legacy coverage remain intact alongside authorized GK100 releases',()=>{
  assert.equal(four.length,4);assert.deepEqual(Object.fromEntries(four.map(v=>[v.recipeId,v.inputSha256])),NEXT_FOUR_INPUTS);
  assert.ok(four.every(v=>v.level==='A'&&v.confidence==='LOW'&&v.codingKinds.length===0));
  assert.deepEqual(gkOnlyVariants.slice(0,27),[...old,...four]);
  for(const previous of baseline.legacyVariants){const v=old.find(v=>v.recipeId===previous.recipeId)!;assert.equal(digest(v),previous.variantSha256,previous.recipeId);}
  const report=read('tmp/nutrition/glycemic-load-pilot.json');
  assert.deepEqual(report.gkOnlyVariants,gkOnlyVariants);assert.deepEqual(report.versionCoverage,gkVersionCoverage);
- assert.equal(gkVersionCoverage.numericRecipes,204);assert.equal(gkVersionCoverage.originalNumeric,156);assert.equal(gkVersionCoverage.additionalA,38);assert.equal(gkVersionCoverage.additionalB,10);assert.equal(gkVersionCoverage.total,326);assert.equal(gkVersionCoverage.missing,122);
- assert.deepEqual(report.coverageViews,{originalRecipe:{total:326,numeric:156,missing:170},atLeastOneExactVersion:{total:326,numeric:204,missing:122,additionalApprovedVersions:48}});
+ const releases=loadAuthorizedGk100Variants(root);
+ const releaseIds=new Set(releases.map(v=>v.recipeId));
+ assert.deepEqual(gkOnlyVariants.filter(v=>releaseIds.has(v.recipeId)),releases);
+ const legacy=countGkVersions(report.results,gkOnlyVariants.filter(v=>!releaseIds.has(v.recipeId)));
+ assert.deepEqual([legacy.numericRecipes,legacy.originalNumeric,legacy.additionalA,legacy.additionalB,legacy.total,legacy.missing],
+  [207,156,41,10,326,119]);
+ const coverage=countGkVersions(report.results,gkOnlyVariants);
+ assert.deepEqual(gkVersionCoverage,coverage);
+ assert.equal(coverage.numericRecipes,207+releases.length);
+ assert.deepEqual(report.coverageViews,{originalRecipe:{total:326,numeric:156,missing:170},
+  atLeastOneExactVersion:{total:326,numeric:coverage.numericRecipes,missing:coverage.missing,additionalApprovedVersions:gkOnlyVariants.length}});
  assert.throws(()=>countGkVersions(report.results,[...gkOnlyVariants,four[0]]),/distinct/);
  for(const id of ['jerk-kana','sate-ayam'])assert.ok(!gkOnlyVariants.some(v=>v.recipeId===id));
 });
@@ -201,7 +212,11 @@ test('Lindström brine is an independent preparation with scaled, fully included
 });
 
 test('the four reviewed GK-only versions retain their points and native liquid units', () => {
- const versions = gkOnlyVariants.slice(-6,-2);
+ const versions = ['siemengranola-jogurtilla', 'lahi-ita-pistaasijogurtti', 'korealainen-kongjuk-soijapapu-riisipuuro', 'falafel'].map(id => {
+  const version = gkOnlyVariants.find(v => v.recipeId === id);
+  assert.ok(version, id);
+  return version;
+ });
  assert.deepEqual(versions.map(v => [v.recipeId, v.point]), [
   ['siemengranola-jogurtilla', 2.47],
   ['lahi-ita-pistaasijogurtti', 4.37],
@@ -213,4 +228,26 @@ test('the four reviewed GK-only versions retain their points and native liquid u
  assert.deepEqual(gkOnlyQuantity(versions[2], 4), {amount: 700, unit: 'ml'});
  assert.deepEqual(gkOnlyQuantity(versions[3], 12), {amount: 100, unit: 'ml'});
  assert.ok(Math.abs(versions[3].omittedCho - 1.9570875) < 1e-10);
+});
+
+test('approved almond pies retain their exact results and apple sweetener measures', () => {
+ const apple = gkOnlyVariants.find(v => v.recipeId === 'vhh-omenapiirakka');
+ const rhubarb = gkOnlyVariants.find(v => v.recipeId === 'vhh-raparperipiirakka');
+ assert.ok(apple && rhubarb);
+ assert.deepEqual([apple.point, rhubarb.point], [1.5, 1.33]);
+ assert.deepEqual(gkOnlyQuantity(apple, 3), {amount: 2, unit: 'tbsp'});
+ assert.deepEqual(gkOnlyQuantity(apple, 9), {amount: 1, unit: 'tbsp'});
+ assert.deepEqual(gkOnlyQuantity(rhubarb, 7), {amount: 5, unit: 'g'});
+});
+
+test('authorized yaki onigiri scales the cooked rice in every preparation locale', {
+ skip: !yakiOnigiri,
+}, () => {
+ assert.ok(yakiOnigiri);
+ const packet = read('docs/nutrition/gk80-operation80-yaki-onigiri-release-candidate.json');
+ for (const locale of ['fi', 'en', 'sv', 'th'] as const) {
+  assert.equal(gkOnlyPreparation(yakiOnigiri, locale), packet.preparation[locale].replace('{{servings}}', '2'));
+  assert.ok(gkOnlyPreparation(yakiOnigiri, locale, 4).includes(locale === 'th' ? '200 กรัม' : '200 g'));
+ }
+ assert.deepEqual(gkOnlyQuantity(yakiOnigiri, 0, 4), { amount: 200, unit: 'g' });
 });
