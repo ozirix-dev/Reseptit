@@ -1,4 +1,5 @@
-import {gkOnlyVariants} from '../src/generated/gk-only-variants.generated';
+import {gkOnlyVariants,gkVersionCoverage} from '../src/generated/gk-only-variants.generated';
+import {loadAuthorizedGk100Variants} from '../scripts/gk100-approval-release';
 import {gkOnlyUi,gkOnlyValue,gkScopeUi} from '../src/features/recipes/GkOnlyVariantPanel';
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
@@ -482,7 +483,7 @@ test('modeled captions disclose omissions in every locale and retain omission-fr
   }
 });
 
-test('approved GK-only versions are explicit on every existing locale page and coverage counts207 distinct recipes',async()=>{
+test('approved GK-only versions are explicit on every existing locale page and coverage includes every authorized recipe',async()=>{
  let pages=0;
  for(const variant of gkOnlyVariants){
   for(const recipe of siteContent.recipes.filter(r=>r.recipeId===variant.recipeId)){
@@ -495,9 +496,12 @@ test('approved GK-only versions are explicit on every existing locale page and c
    if (!addedEnglishPage) pages++;
   }
  }
- assert.equal(pages,101+siteContent.recipes.filter(r=>r.recipeId==='lindstrominpihvit-kaalilla').length);
+ const releases=loadAuthorizedGk100Variants(path.resolve(import.meta.dirname,'../..'));
+ const releasedIds=new Set(releases.map(v=>v.recipeId));
+ const additionalPages=siteContent.recipes.filter(r=>releasedIds.has(r.recipeId)).length;
+ assert.equal(pages,101+siteContent.recipes.filter(r=>r.recipeId==='lindstrominpihvit-kaalilla').length+additionalPages);
  for(const p of ['glykeeminen-kuorma','en/glycemic-load','sv/glykemisk-belastning','th/glycemic-load']){
-  const html=await readFile(path.join(dist,p,'index.html'),'utf8');assert.ok(html.includes('<strong>207</strong>'));assert.ok(html.includes('<strong>119</strong>'));assert.ok(html.includes('data-gk-coverage="version-aware"'));assert.ok(html.includes('data-gk-coverage="original"'));assert.ok(html.includes('<strong>156</strong>'));assert.ok(html.includes('<strong>170</strong>'));
+  const html=await readFile(path.join(dist,p,'index.html'),'utf8');assert.ok(html.replaceAll('<!-- -->','').includes(`data-gk-coverage="version-aware"><li><strong>${gkVersionCoverage.numericRecipes}</strong> / ${gkVersionCoverage.total}`));assert.ok(html.includes(`<strong>${gkVersionCoverage.missing}</strong>`));assert.ok(html.includes('data-gk-coverage="version-aware"'));assert.ok(html.includes('data-gk-coverage="original"'));assert.ok(html.includes('<strong>156</strong>'));assert.ok(html.includes('<strong>170</strong>'));
   for(const v of gkOnlyVariants)assert.ok(html.includes(`data-gk-version="${v.versionId}"`));
  }
 });

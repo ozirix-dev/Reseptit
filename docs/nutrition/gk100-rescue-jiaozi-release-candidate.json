@@ -1,0 +1,209 @@
+{
+  "recipeId": "jiaozi",
+  "servings": 4,
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "unroundedGk": "15.94796",
+  "inputs": [
+    [
+      300,
+      74,
+      28
+    ],
+    [
+      300,
+      0,
+      0
+    ],
+    [
+      200,
+      1.61,
+      28
+    ],
+    [
+      40,
+      4.6,
+      28
+    ],
+    [
+      15,
+      3.2,
+      28,
+      "ml"
+    ],
+    [
+      6,
+      4.8,
+      28
+    ]
+  ],
+  "omissions": [
+    {
+      "ingredientIndex": 6,
+      "choPer100ml": 3.2
+    },
+    {
+      "ingredientIndex": 7,
+      "choPer100g": 0.5
+    }
+  ],
+  "ingredients": [
+    {
+      "name": {
+        "fi": "Vehnäjauho",
+        "en": "Wheat flour",
+        "sv": "Vetemjöl",
+        "th": "แป้งสาลี"
+      },
+      "grams": 300
+    },
+    {
+      "name": {
+        "fi": "Sianjauheliha",
+        "en": "Ground pork",
+        "sv": "Fläskfärs",
+        "th": "หมูบด"
+      },
+      "grams": 300
+    },
+    {
+      "name": {
+        "fi": "Kiinankaali",
+        "en": "Chinese cabbage",
+        "sv": "Salladskål",
+        "th": "ผักกาดขาว"
+      },
+      "grams": 200
+    },
+    {
+      "name": {
+        "fi": "Kevätsipuli",
+        "en": "Spring onion",
+        "sv": "Salladslök",
+        "th": "ต้นหอม"
+      },
+      "grams": 40
+    },
+    {
+      "name": {
+        "fi": "Kikkoman-soija täytteeseen",
+        "en": "Kikkoman soy sauce for filling",
+        "sv": "Kikkoman-soja till fyllning",
+        "th": "ซีอิ๊ว Kikkoman สำหรับไส้"
+      },
+      "grams": null,
+      "quantity": {
+        "amount": 15,
+        "unit": "ml"
+      }
+    },
+    {
+      "name": {
+        "fi": "Inkivääri",
+        "en": "Ginger",
+        "sv": "Ingefära",
+        "th": "ขิง"
+      },
+      "grams": 6
+    },
+    {
+      "name": {
+        "fi": "Kikkoman-soija dippiin",
+        "en": "Kikkoman soy sauce for dip",
+        "sv": "Kikkoman-soja till dipp",
+        "th": "ซีอิ๊ว Kikkoman สำหรับน้ำจิ้ม"
+      },
+      "grams": null,
+      "quantity": {
+        "amount": 45,
+        "unit": "ml"
+      }
+    },
+    {
+      "name": {
+        "fi": "Riisiviinietikka",
+        "en": "Rice vinegar",
+        "sv": "Risvinäger",
+        "th": "น้ำส้มสายชูข้าว"
+      },
+      "grams": 15
+    },
+    {
+      "name": {
+        "fi": "Vesi taikinaan",
+        "en": "Water for dough",
+        "sv": "Vatten till deg",
+        "th": "น้ำสำหรับแป้ง"
+      },
+      "grams": null,
+      "quantity": {
+        "amount": 170,
+        "unit": "ml"
+      }
+    },
+    {
+      "name": {
+        "fi": "Seesamiöljy",
+        "en": "Sesame oil",
+        "sv": "Sesamolja",
+        "th": "น้ำมันงา"
+      },
+      "grams": null,
+      "quantity": {
+        "amount": 5,
+        "unit": "ml"
+      }
+    },
+    {
+      "name": {
+        "fi": "Suola",
+        "en": "Salt",
+        "sv": "Salt",
+        "th": "เกลือ"
+      },
+      "grams": null
+    }
+  ],
+  "preparation": {
+    "fi": "Vaivaa {{amount:0}} g jauhoa ja {{amount:8}} ml vettä taikinaksi. Peitä ja anna levätä 30 minuuttia. Hienonna ja purista {{amount:2}} g kiinankaalia. Sekoita kaaliin {{amount:1}} g jauhelihaa, {{amount:3}} g kevätsipulia, {{amount:4}} ml soijaa, {{amount:5}} g inkivääriä, {{amount:9}} ml seesamiöljyä ja suola. Kääri koko täyte taikinaan ja keitä nyytit läpikypsiksi. Sekoita dippiin {{amount:6}} ml soijaa ja {{amount:7}} g etikkaa. Jaa nyytit ja dippi {{servings}} annokseen.",
+    "en": "Knead {{amount:0}} g flour and {{amount:8}} ml water into dough. Cover and rest for 30 minutes. Chop and squeeze {{amount:2}} g cabbage. Mix with {{amount:1}} g pork, {{amount:3}} g spring onion, {{amount:4}} ml soy sauce, {{amount:5}} g ginger, {{amount:9}} ml sesame oil and salt. Wrap all the filling in the dough and boil the dumplings until cooked through. Mix {{amount:6}} ml soy sauce and {{amount:7}} g vinegar for the dip. Divide the dumplings and dip into {{servings}} servings.",
+    "sv": "Knåda {{amount:0}} g mjöl och {{amount:8}} ml vatten till en deg. Täck och låt vila i 30 minuter. Hacka och krama ur {{amount:2}} g salladskål. Blanda med {{amount:1}} g fläskfärs, {{amount:3}} g salladslök, {{amount:4}} ml soja, {{amount:5}} g ingefära, {{amount:9}} ml sesamolja och salt. Slå in hela fyllningen i degen och koka knytena genom. Blanda {{amount:6}} ml soja och {{amount:7}} g vinäger till dipp. Dela knytena och dippen i {{servings}} portioner.",
+    "th": "นวดแป้ง {{amount:0}} กรัมกับน้ำ {{amount:8}} มล. ปิดไว้พัก 30 นาที สับและบีบน้ำออกจากผักกาดขาว {{amount:2}} กรัม ผสมกับหมูบด {{amount:1}} กรัม ต้นหอม {{amount:3}} กรัม ซีอิ๊ว {{amount:4}} มล. ขิง {{amount:5}} กรัม น้ำมันงา {{amount:9}} มล. และเกลือ ห่อไส้ทั้งหมดด้วยแป้งแล้วต้มจนสุกทั่ว ผสมซีอิ๊ว {{amount:6}} มล. กับน้ำส้มสายชู {{amount:7}} กรัมเป็นน้ำจิ้ม แบ่งเกี๊ยวและน้ำจิ้มเป็น {{servings}} ที่"
+  },
+  "limitation": {
+    "fi": "GI 28 on liha–salottisipulinyytin verrokki. Kaalin hiilihydraatit lasketaan ennen puristamista. Dipin osuus, noin 0,38 g hiilihydraattia annosta kohti, jää laskelman ulkopuolelle. Tutkimus ei yksilöi testinyytin kypsennystapaa tai kuoren osuutta.",
+    "en": "GI 28 is a meat and shallot dumpling comparator. Cabbage carbohydrate is counted before squeezing. About 0.38 g carbohydrate per serving from the dip is excluded. The study does not specify the test dumpling’s cooking method or wrapper proportion.",
+    "sv": "GI 28 kommer från ett degknyte med kött och schalottenlök. Kålens kolhydrater räknas före urkramning. Cirka 0,38 g kolhydrat per portion från dippen ingår inte. Studien anger varken hur testknytet tillagades eller hur stor andel skalet utgjorde.",
+    "th": "ค่า GI 28 อ้างอิงเกี๊ยวไส้เนื้อและหอมแดง คำนวณคาร์โบไฮเดรตจากผักก่อนบีบน้ำ ไม่รวมคาร์โบไฮเดรตจากน้ำจิ้มประมาณ 0.38 กรัมต่อที่ งานวิจัยไม่ได้ระบุวิธีปรุงเกี๊ยวที่ทดสอบหรือสัดส่วนแป้งห่อ"
+  },
+  "sources": [
+    {
+      "title": "Yang et al.",
+      "url": "https://www.wjgnet.com/1007-9327/full/v12/i21/3430.htm",
+      "kind": "HUMAN_GI",
+      "note": "Table 2, meat and shallot dumpling, n=10, glucose-scale GI 28. Article CC BY-NC 4.0. One reported GI value is cited as a factual input to an independent calculation."
+    },
+    {
+      "title": "Fineli",
+      "url": "https://fineli.fi/fineli/fi/ohje/19",
+      "kind": "CARBOHYDRATE",
+      "note": "THL CC BY 4.0."
+    },
+    {
+      "title": "AFCD",
+      "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd",
+      "kind": "CARBOHYDRATE",
+      "note": "CC BY-SA 3.0 Australia."
+    },
+    {
+      "title": "Kikkoman",
+      "url": "https://www.kikkoman.co.uk/products/detail/fs-kikkoman-naturally-brewed-soy-sauce",
+      "kind": "CARBOHYDRATE",
+      "note": "3.2 g per 100 ml."
+    }
+  ],
+  "boundFiles": {
+    "reseptit/alkuruoat/jiaozi.md": "07659418c6a8ccbdcf907be2d09896db714fb40a1f9aebfbbc6df662dfe7e9d5",
+    "docs/nutrition/gk80-operation80-batch-35.md": "dd2874279f33e194e35975373c724915cf9fc7bb4bf06a3e557f8c182141bec1"
+  }
+}
