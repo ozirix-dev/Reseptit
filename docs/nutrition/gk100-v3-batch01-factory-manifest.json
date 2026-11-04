@@ -7,11 +7,11 @@
       "packetPath": "docs/nutrition/gk100-v3-batch01-chiavanukas-release-candidate.json",
       "originalPath": "reseptit/aamupalat/marjainen-chiavanukas.md",
       "supportFiles": {
-        "docs/nutrition/gk100-v3-batch01-chiavanukas-review.md": "7ed598da90a430f4f551613533c2dd6ac67b6e74d1554adf0d9747c025043088"
+        "docs/nutrition/gk100-v3-batch01-chiavanukas-review.md": "5190b99784d3ed60b872a311a11041ba7a8bec7b96a3b47c584e4957c48c5a1b"
       },
-      "candidateSha256": "f16458e51d4e1a4e69aed52f88730ef312da135f9a720dddf49897f68057e57c",
+      "candidateSha256": "70a36f5973951adfe93500908de00fa0454d2a8773007fdd9fb95105bf7518e3",
       "originalSha256": "c4c9c7a14345199304e7221fab28633a4a9abeffa3c99afc780cb5360824ec22",
-      "inputSha256": "c660bc5a88906e4a4b887105bc9bd66879b2eb44c0f5c1f262a41b7acfe41f0b",
+      "inputSha256": "36457cb625e70c4f9bff7dcb3f80c6bc8164f7b807832d265086c7aac902265a",
       "servings": 4,
       "method": "A",
       "point": null,
@@ -21,18 +21,18 @@
       },
       "uncertainty": "NAMED_SCENARIOS",
       "limitation": {
-        "fi": "Kaksi matalan luottamuksen skenaariota käyttävät vadelmalle mansikan tai kanadalaisen villimustikan GI:tä. Metsämustikalle käytetään villimustikan vertailua ja jogurtille maustamattoman jogurtin ryhmäkeskiarvoa. Chian, mantelijuoman ja vaniljan 0,2373 g saatavaa CHO:ta annosta kohti jää summan ulkopuolelle.",
-        "en": "The two low-confidence scenarios use strawberry or Canadian wild blueberry GI for raspberry. Bilberry uses the wild blueberry comparator, and the yogurt uses a plain-yogurt category average. The sum omits 0.2373 g available carbohydrate per serving from chia, almond drink and vanilla.",
-        "sv": "De två scenarierna med låg tillförlitlighet använder GI för jordgubbe eller kanadensiskt vilt blåbär för hallon. Skogsblåbär jämförs med vilt blåbär och yoghurten använder gruppens medelvärde för naturell yoghurt. Beräkningen utelämnar 0,2373 g tillgängliga kolhydrater per portion från chia, mandeldryck och vanilj.",
-        "th": "สองกรณีประมาณการที่มีความเชื่อมั่นต่ำใช้ค่า GI ของสตรอว์เบอร์รีหรือบลูเบอร์รีป่าแคนาดาแทนราสป์เบอร์รี ใช้บลูเบอร์รีป่าเป็นตัวเปรียบเทียบของบิลเบอร์รี และใช้ค่าเฉลี่ยกลุ่มโยเกิร์ตรสธรรมชาติ การคำนวณไม่นับคาร์โบไฮเดรตที่ย่อยได้จากเจีย เครื่องดื่มอัลมอนด์ และวานิลลารวม 0.2373 กรัมต่อส่วน"
+        "fi": "Kaksi matalan luottamuksen skenaariota käyttävät vadelmalle mansikan tai kanadalaisen villimustikan GI:tä. Metsämustikalle käytetään villimustikan vertailua ja jogurtille maustamattoman jogurtin ryhmäkeskiarvoa. Chian, mantelijuoman ja vaniljan 0,2373 g saatavaa CHO:ta annosta kohti jää summan ulkopuolelle. Villimustikan koetuotteen tarkkaa tarjoilutilaa ei kuvata.",
+        "en": "The two low-confidence scenarios use strawberry or Canadian wild blueberry GI for raspberry. Bilberry uses the wild blueberry comparator, and the yogurt uses a plain-yogurt category average. The sum omits 0.2373 g available carbohydrate per serving from chia, almond drink and vanilla. The wild blueberry test record does not specify the exact serving state.",
+        "sv": "De två scenarierna med låg tillförlitlighet använder GI för jordgubbe eller kanadensiskt vilt blåbär för hallon. Skogsblåbär jämförs med vilt blåbär och yoghurten använder gruppens medelvärde för naturell yoghurt. Beräkningen utelämnar 0,2373 g tillgängliga kolhydrater per portion från chia, mandeldryck och vanilj. Testposten för vilda blåbär anger inte exakt serveringstillstånd.",
+        "th": "สองกรณีประมาณการที่มีความเชื่อมั่นต่ำใช้ค่า GI ของสตรอว์เบอร์รีหรือบลูเบอร์รีป่าแคนาดาแทนราสป์เบอร์รี ใช้บลูเบอร์รีป่าเป็นตัวเปรียบเทียบของบิลเบอร์รี และใช้ค่าเฉลี่ยกลุ่มโยเกิร์ตรสธรรมชาติ การคำนวณไม่นับคาร์โบไฮเดรตที่ย่อยได้จากเจีย เครื่องดื่มอัลมอนด์ และวานิลลารวม 0.2373 กรัมต่อส่วน ข้อมูลการทดสอบบลูเบอร์รีป่าไม่ได้ระบุสภาพที่เสิร์ฟอย่างละเอียด"
       },
       "omittedCho": 0.2373,
       "sources": [
         {
-          "title": "University of Sydney GI Search, raw berry comparators",
-          "url": "https://glycemicindex.com/gi-search/",
+          "title": "Atkinson et al. 2021, Supplemental Table 1, rows 1174 and 1092",
+          "url": "https://doi.org/10.1093/ajcn/nqab233",
           "kind": "HUMAN_GI",
-          "note": "Glucose-scale raw strawberry GI 40 and Canadian wild blueberry GI 53. Neither is a measured GI of raspberry or Finnish bilberry."
+          "note": "Raw strawberry GI 40 and Canadian wild blueberry GI 53 are on the table's glucose=100 scale. The blueberry test used bread as the reference. The underlying human observations are unpublished, the results are published in the supplement. Wild blueberry preparation at serving is unspecified and species differs from Finnish bilberry."
         },
         {
           "title": "Wolever, 2017, Table 1",
@@ -55,7 +55,7 @@
       ],
       "localeFields": "PRESENT",
       "classification": {
-        "candidateSha256": "f16458e51d4e1a4e69aed52f88730ef312da135f9a720dddf49897f68057e57c",
+        "candidateSha256": "70a36f5973951adfe93500908de00fa0454d2a8773007fdd9fb95105bf7518e3",
         "risk": "HIGH",
         "reasons": [
           "Raw berry analogues and a plain-yogurt category mean are explicitly labelled. Three quantified omissions total 0.2373 g CHO per serving.",
@@ -76,5 +76,5 @@
       "publicationAuthorized": false
     }
   ],
-  "manifestSha256": "f6b6a2d725cc79b16a29038d4863587d46a63aa4526608e6bb8e74c3b2f9a50e"
+  "manifestSha256": "466ea574c857aa258c8c8f5bc65f4e0e3f9471e65440fcd9e4dcc6ff3c77b55e"
 }
