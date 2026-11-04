@@ -64,7 +64,7 @@ Mandelmjöl, smör och sockerfri mörk choklad ger kakor med spröda kanter och 
 ## Tillagning
 
 1. Värm ugnen till 175 °C och klä en plåt med bakplåtspapper.
-2. Vispa smöret och erytritolen tills blandningen är ljus. Tillsätt ägget och vaniljen.
+2. Vispa smöret och erytritolen tills blandningen är ljus. Tillsätt ägget och vaniljextraktet.
 3. Blanda mandelmjöl, bakpulver och salt och rör ner blandningen i degen. Vänd ner chokladbitarna.
 4. Forma degen till 10 bollar, lägg dem på plåten och platta till dem lite.
 5. Grädda i 10–12 minuter tills kanterna får färg. Låt kakorna svalna på plåten innan du flyttar dem.

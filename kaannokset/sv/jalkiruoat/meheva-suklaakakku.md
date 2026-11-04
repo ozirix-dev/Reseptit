@@ -42,7 +42,7 @@ Den här enkla chokladkakan är mjuk i mitten och får ett tunt lager chokladgla
 3. Vispa ägg och socker ljust och pösigt. Rör försiktigt ner choklad- och smörblandningen.
 4. Sikta ihop mjöl, kakao och bakpulver. Vänd ner de torra ingredienserna i smeten och blanda bara tills allt gått ihop.
 5. Häll smeten i formen och grädda i 25–30 minuter. Mitten får gärna vara lite fuktig.
-6. Låt kakan svalna. Värm grädden, ta den från värmen och tillsätt chokladen till glasyren. Rör slätt, låt svalna en stund och bred glasyren över kakan.
+6. Låt kakan svalna. Värm grädden, ta den från värmen och tillsätt chokladen till glasyren. Rör glasyren slät, låt den svalna en stund och bred den över kakan.
 
 ## Anteckningar
 

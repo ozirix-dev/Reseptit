@@ -35,7 +35,7 @@ export const chocolateComparisonProducts = [
     },
     sv: {
       sweeteners: "Erytritol och steviolglykosider",
-      description: "Erytritol är en annan polyol än maltitol. Även den här chokladen innehåller andra kolhydrater, trots att den är märkt med stevia.",
+      description: "Erytritol är en annan polyol än maltitol. Chokladen innehåller även andra kolhydrater än polyoler.",
       note: "Kontrollera båda sötningsmedlen och övriga ingredienser på förpackningen, eftersom innehållet kan ändras.",
     },
     sourceUrl: "https://chocolatestorras.com/stevia-negro/",
@@ -57,7 +57,7 @@ export function ChocolateComparison({ recipeId, locale, hasGlVariant }: Pick<Rec
 
   return <details className="recipe-panel chocolate-comparison" data-chocolate-comparison={locale}>
     <summary><h2>{isSwedish
-      ? isFrostedCake ? "Hur sötas de mörka chokladsorterna?" : "Hur påverkar valet av choklad uppskattningen av GK?"
+      ? isFrostedCake ? "Hur sötas de mörka chokladsorterna?" : "Vad säger chokladens märkning om glykemisk belastning?"
       : isEnglish
       ? isFrostedCake ? "How are these dark chocolates sweetened?" : "How does your choice of chocolate affect the GL estimate?"
       : isFrostedCake ? "Miten tummat suklaat eroavat makeutukseltaan?" : "Miten käyttämäsi suklaa vaikuttaa GK-arvioon?"}</h2></summary>
@@ -65,7 +65,7 @@ export function ChocolateComparison({ recipeId, locale, hasGlVariant }: Pick<Rec
       {isSwedish ? (
         isFrostedCake
           ? <p>Den mörka chokladen smälts med smör till smeten och med grädde till glasyren. Om du funderar på att använda sockerfri choklad till någon av delarna, kontrollera hur den är sötad på förpackningen.</p>
-          : <p>Sockerfri choklad kan innehålla olika sötningsmedel. Märkningen sockerfri säger i sig inget om den glykemiska belastningen (GK) för {swedishScope}.</p>
+          : <p>Sockerfri choklad kan innehålla olika sötningsmedel. Märkningen sockerfri säger i sig inget om den glykemiska belastningen (GL) för {swedishScope}.</p>
       ) : isEnglish ? (
         isFrostedCake
           ? <p>The dark chocolate is melted with butter for the batter and with cream for the glaze. If you are considering sugar-free chocolate for either, check the pack to see how it is sweetened.</p>
@@ -85,9 +85,9 @@ export function ChocolateComparison({ recipeId, locale, hasGlVariant }: Pick<Rec
       })}
       {isSwedish ? (
         isFrostedCake
-          ? <p>Smeten innehåller också socker och vetemjöl. Produktinformationen räcker inte för att avgöra hur ett chokladbyte i smeten eller glasyren påverkar den färdiga kakans smak, konsistens eller glykemiska belastning (GK).</p>
+          ? <p>Smeten innehåller också socker och vetemjöl. Produktinformationen räcker inte för att avgöra hur ett chokladbyte i smeten eller glasyren påverkar den färdiga kakans smak, konsistens eller glykemiska belastning (GL).</p>
           : <>
-            <p>Produktinformationen räcker inte för att fastställa GK för {swedishScope} eller skillnaden i GK mellan chokladsorterna. {isCookie
+            <p>Produktinformationen räcker inte för att uppskatta GL för {swedishScope} eller avgöra hur ett chokladbyte skulle påverka värdet. {isCookie
               ? "Chokladen vänds ner i degen i bitar. Erytritolen som tillsätts separat i degen säger inget om hur chokladbitarna är sötade."
               : "Erytritolen som tillsätts separat i smeten säger inget om hur chokladen är sötad."}</p>
             {hasGlVariant ? <p>Den beräknade delen ovan gäller bara den version som beskrivs där.</p> : null}
