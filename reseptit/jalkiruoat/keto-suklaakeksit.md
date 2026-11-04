@@ -5,8 +5,8 @@ url_slug: keto-suklaakeksit
 category: jalkiruoka
 language: fi
 status: published
-translation_languages: [en, sv]
-translation_status: {en: published, sv: published}
+translation_languages: [en, sv, th]
+translation_status: {en: published, sv: published, th: published}
 diet_class: keto
 main_ingredient:
   - kananmuna

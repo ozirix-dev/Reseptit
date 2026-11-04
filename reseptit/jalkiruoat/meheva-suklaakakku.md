@@ -5,8 +5,8 @@ url_slug: meheva-suklaakakku
 category: jalkiruoka
 language: fi
 status: published
-translation_languages: [en, sv]
-translation_status: {en: published, sv: published}
+translation_languages: [en, sv, th]
+translation_status: {en: published, sv: published, th: published}
 servings: 10
 time_total_min: 65
 difficulty: helppo

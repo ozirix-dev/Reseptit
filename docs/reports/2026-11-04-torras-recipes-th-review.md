@@ -6,4 +6,4 @@ Thaikielinen vertailu käyttää samoja tuotesidontoja kuin muut kieliversiot. M
 
 **STRUCTURE PASS.** Rakennetarkistus läpäisi molemmat thaikieliset reseptit esikatselun metadatalla. Neljä englannin- ja ruotsinkielistä vertailuparia sekä neljä Torras-komponentin testiä läpäisivät. Paikallinen tuotantobuild esirenderöi 730 reittiä. Bravessa tarkistin 390 pikselin leveydellä, että vertailu avautui näppäimistöllä ja näytti molemmat lähdelinkit uusilla sivuilla sekä ketomutakakun thaikielisellä sivulla. Kumpikin valmistajan sivu vastasi HTTP 200.
 
-**AUTOMATED SEMANTIC REVIEW / HUMAN REVIEW PENDING.** Kielimalli vertasi käännöksiä lähteisiin. Riippumatonta ihmisen kielentarkistusta ei ole dokumentoitu. Uudet reseptit ovat PR:ssä luonnoksina.
+**AUTOMATED SEMANTIC REVIEW / HUMAN REVIEW PENDING.** Kielimalli vertasi käännöksiä lähteisiin. Riippumatonta ihmisen kielentarkistusta ei ole dokumentoitu. Käyttäjä hyväksyi reseptien ja vertailun julkaisun. Käännöstekstit vastaavat tarkistettua luonnoscommittia 0989c731ebd8e1e6c75935714c8fc2cf5bbf890a julkaisutilaa lukuun ottamatta.

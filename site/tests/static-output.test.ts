@@ -514,7 +514,7 @@ test('approved GK-only versions are explicit on every existing locale page and c
    if(variant.scenarioRange)assert.ok(html.includes(t.range));if(variant.sensitivity)assert.ok(html.includes(t.sensitivityNote));
    const addedTorrasPage = (recipe.locale === "en" && ["keto-mutakakku", "keto-suklaakeksit"].includes(recipe.recipeId))
      || (recipe.recipeId === "keto-mutakakku" && (recipe.locale === "sv" || recipe.locale === "th"))
-     || (recipe.recipeId === "keto-suklaakeksit" && recipe.locale === "sv");
+     || (recipe.recipeId === "keto-suklaakeksit" && (recipe.locale === "sv" || recipe.locale === "th"));
    if (!addedTorrasPage) pages++;
   }
  }
@@ -557,12 +557,17 @@ test("all three English Torras comparisons are present with both products", asyn
   }
 });
 
-test("Swedish Torras comparison and both products appear on the published recipe pages", async () => {
-  for (const slug of ["keto-mutakakku", "keto-suklaakeksit", "meheva-suklaakakku"]) {
-    const html = await readFile(path.join(dist, "sv/recept", slug, "index.html"), "utf8");
-    assert.match(html, /data-chocolate-comparison="sv"/, slug);
-    assert.match(html, /data-chocolate-product="torras-maltitol"/, slug);
-    assert.match(html, /data-chocolate-product="torras-stevia"/, slug);
-    if (slug.startsWith("keto-")) assert.match(html, /beräknad del under 1/, slug);
+test("Swedish and Thai Torras comparisons include both products on the published recipe pages", async () => {
+  for (const [locale, route, calculatedPart] of [
+    ["sv", "sv/recept", "beräknad del under 1"],
+    ["th", "th/recipes", "ส่วนที่คำนวณต่ำกว่า 1"],
+  ]) {
+    for (const slug of ["keto-mutakakku", "keto-suklaakeksit", "meheva-suklaakakku"]) {
+      const html = await readFile(path.join(dist, route, slug, "index.html"), "utf8");
+      assert.ok(html.includes('data-chocolate-comparison="' + locale + '"'), slug);
+      assert.match(html, /data-chocolate-product="torras-maltitol"/, slug);
+      assert.match(html, /data-chocolate-product="torras-stevia"/, slug);
+      if (slug.startsWith("keto-")) assert.ok(html.includes(calculatedPart), slug);
+    }
   }
 });

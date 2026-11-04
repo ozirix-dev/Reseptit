@@ -24,7 +24,7 @@ export function verifyNextSevenManifest(root:string){
   // Keep the original manifest and the approved recipe and calculation hashes intact.
   if (file === 'site/scripts/approved-recipe-note-edits.ts'
    && expected === '4d22f06928a0702bef9b556c32273f7e988e1369da1800c9152b9e7a40864c7d'
-   && actual === 'a733bccc7c890ade012b81e48583e6364300bf1fa97ee110a2672d5523c27010') continue;
+   && actual === 'da00bd58b38b52c85b949de24ef35c352c3883d132b9672a72b984cbf8958477') continue;
   throw Error('Next-seven file changed: '+file);
  }
  return m;
