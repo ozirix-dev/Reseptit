@@ -26,7 +26,7 @@ export function assertRecipeBaseline(root: string, baseline: string, ...protecte
 
   for (const change of changes) {
     const [status, file] = change.split("\t");
-    if (status === "M" && file.startsWith("reseptit/")) {
+    if (status === "M" && (file.startsWith("reseptit/") || file.startsWith("kaannokset/"))) {
       const current = readFileSync(path.join(root, file), "utf8").replaceAll("\r\n", "\n");
       const snapshot = recipeTextForApprovedSnapshot(file, current);
       if (snapshot !== current) {

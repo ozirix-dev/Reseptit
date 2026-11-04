@@ -1,3 +1,5 @@
+import {recipeTextForApprovedSnapshot} from '../scripts/approved-recipe-note-edits';
+import {parseMarkdown} from '../src/content/markdown';
 import test from 'node:test';import assert from 'node:assert/strict';import {readFileSync} from 'node:fs';import path from 'node:path';import {fileURLToPath} from 'node:url';import {execFileSync} from 'node:child_process';
 import {loadPreparedRoute,evaluatePrepared,verifyPreparedComposition,verifyPreparedBindings,formatPreparedProposal} from '../scripts/gk149-prepared-route';
 import {digest,textHash} from '../scripts/gk149-model';
@@ -56,4 +58,20 @@ test('independent Decimal and native-field replay verifies8 results and keeps al
  const p=JSON.parse(execFileSync(process.platform==='win32'?'python':'python3',['-I',path.join(root,'docs/nutrition/gk80-operation149/verify_prepared_route.py')],{encoding:'utf8'}));assert.equal(p.status,'PASS');assert.equal(p.checked,8);assert.equal(p.writes,0);
  for(const r of p.results){const actual=ctx.results.find(a=>a.recipeId===r.recipeId)!;if(r.point!==null)assert.equal(actual.point,Number(r.point));else{assert.ok(actual.scenarioRange);assert.ok(Math.abs(actual.scenarioRange.min-Number(r.minExact))<1e-10);assert.ok(Math.abs(actual.scenarioRange.max-Number(r.maxExact))<1e-10);}}
  const b=ctx.results.find(r=>r.recipeId==='hyderabadi-kanabiryani')!;for(const l of ['fi','en','sv','th'] as const){const text=formatPreparedProposal(b,l);assert.ok(text.text.includes('30–45'));assert.ok(text.note);}
+});
+
+
+test('the exact Thai biryani wording preserves the sealed recipe and rejects subsequent changes', () => {
+ const candidate=get('hyderabadi-kanabiryani');
+ const file=candidate.paths.th;
+ const current=readFileSync(path.join(root,file),'utf8').replaceAll('\r\n','\n');
+ const approved=recipeTextForApprovedSnapshot(file,current);
+ assert.notEqual(current,approved);
+ assert.equal(textHash(approved),candidate.recipeSha256.th);
+ assert.deepEqual(parseMarkdown(current)?.data,parseMarkdown(approved)?.data);
+ for(const modified of [current.replace('amount: 300','amount: 301'),current+'\nUnreviewed instruction.\n']){
+  assert.notEqual(modified,current);
+  assert.equal(recipeTextForApprovedSnapshot(file,modified),modified);
+  assert.notEqual(textHash(modified),candidate.recipeSha256.th);
+ }
 });
