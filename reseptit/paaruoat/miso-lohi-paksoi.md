@@ -5,6 +5,8 @@ url_slug: miso-lohi-paksoi
 category: paaruoka
 language: fi
 status: published
+translation_languages: [en, sv, th]
+translation_status: {en: published, sv: published, th: published}
 main_ingredient:
   - lohi
   - paksoi

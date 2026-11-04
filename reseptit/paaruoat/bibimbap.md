@@ -5,6 +5,8 @@ url_slug: bibimbap
 category: paaruoka
 language: fi
 status: published
+translation_languages: [en, sv, th]
+translation_status: {en: published, sv: published, th: published}
 servings: 4
 time_total_min: 50
 difficulty: keskitaso

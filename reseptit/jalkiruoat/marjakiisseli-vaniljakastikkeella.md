@@ -5,6 +5,8 @@ url_slug: marjakiisseli-vaniljakastikkeella
 category: jalkiruoka
 language: fi
 status: published
+translation_languages: [en, sv, th]
+translation_status: {en: published, sv: published, th: published}
 servings: 6
 time_total_min: 40
 difficulty: helppo
