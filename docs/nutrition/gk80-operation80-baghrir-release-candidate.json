@@ -1,0 +1,187 @@
+{
+  "recipeId": "pohjoisafrikkalainen-baghrir",
+  "servings": 2,
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "unroundedGk": "48.905217",
+  "upperScenario": {
+    "giOverrides": [
+      {
+        "inputIndex": 0,
+        "gi": 66.43
+      },
+      {
+        "inputIndex": 1,
+        "gi": 66.43
+      },
+      {
+        "inputIndex": 2,
+        "gi": 66.43
+      }
+    ],
+    "unroundedGk": "52.09790295"
+  },
+  "preparation": {
+    "fi": "Sekoita {{amount:0}} g hienoa mannasuurimoa, {{amount:1}} g vehnäjauhoa, {{amount:2}} g kuivahiivaa, {{amount:4}} ml lämmintä vettä ja suola. Anna levätä 10 minuuttia. Öljyä pannu {{amount:5}} rkl:lla öljyä ja paista ohuet letut yhdeltä puolelta, kunnes pinta asettuu ja reiät muodostuvat. Jaa letut ja {{amount:3}} g hunajaa {{servings}} annokseen.",
+    "en": "Mix {{amount:0}} g fine semolina, {{amount:1}} g wheat flour, {{amount:2}} g dry yeast, {{amount:4}} ml warm water and salt. Rest for 10 minutes. Grease the pan with {{amount:5}} tbsp oil and cook thin pancakes on one side until set and dotted with holes. Divide the pancakes and {{amount:3}} g honey among {{servings}} servings.",
+    "sv": "Blanda {{amount:0}} g fina mannagryn, {{amount:1}} g vetemjöl, {{amount:2}} g torrjäst, {{amount:4}} ml varmt vatten och salt. Låt vila i 10 minuter. Smörj pannan med {{amount:5}} msk olja och stek tunna pannkakor på ena sidan tills ytan stelnar och får hål. Fördela pannkakorna och {{amount:3}} g honung på {{servings}} portioner.",
+    "th": "ผสมเซโมลินาเนื้อละเอียด {{amount:0}} กรัม แป้งสาลี {{amount:1}} กรัม ยีสต์แห้ง {{amount:2}} กรัม น้ำอุ่น {{amount:4}} มล. และเกลือ พัก 10 นาที ทากระทะด้วยน้ำมัน {{amount:5}} ช้อนโต๊ะ แล้วทอดแผ่นบางด้านเดียวจนผิวเซตตัวและมีรู แบ่งแพนเค้กกับน้ำผึ้ง {{amount:3}} กรัมเป็น {{servings}} ที่"
+  },
+  "limitation": {
+    "fi": "Arvio koskee hunajaversiota. Vertailutaikinoiden koostumus, hiiva ja paistotapa eroavat baghrirista.",
+    "en": "The estimate applies to the honey version. The comparison batters differ from baghrir in composition, yeast and cooking method.",
+    "sv": "Uppskattningen gäller versionen med honung. Jämförelsesmetarna skiljer sig från baghrir i sammansättning, jäst och steksätt.",
+    "th": "ค่าประมาณใช้กับสูตรที่เสิร์ฟกับน้ำผึ้ง แป้งที่ใช้เปรียบเทียบมีส่วนผสม ยีสต์ และวิธีทอดต่างจากบักรีร์"
+  },
+  "ingredients": [
+    {
+      "name": {
+        "fi": "Hieno mannasuurimo",
+        "en": "Fine semolina",
+        "sv": "Fina mannagryn",
+        "th": "เซโมลินาเนื้อละเอียด"
+      },
+      "grams": 100
+    },
+    {
+      "name": {
+        "fi": "Vehnäjauho",
+        "en": "Wheat flour",
+        "sv": "Vetemjöl",
+        "th": "แป้งสาลี"
+      },
+      "grams": 100
+    },
+    {
+      "name": {
+        "fi": "Kuivahiiva",
+        "en": "Dry yeast",
+        "sv": "Torrjäst",
+        "th": "ยีสต์แห้ง"
+      },
+      "grams": 5
+    },
+    {
+      "name": {
+        "fi": "Hunaja",
+        "en": "Honey",
+        "sv": "Honung",
+        "th": "น้ำผึ้ง"
+      },
+      "grams": 20
+    },
+    {
+      "name": {
+        "fi": "Lämmin vesi",
+        "en": "Warm water",
+        "sv": "Varmt vatten",
+        "th": "น้ำอุ่น"
+      },
+      "grams": null,
+      "quantity": {
+        "amount": 150,
+        "unit": "ml"
+      }
+    },
+    {
+      "name": {
+        "fi": "Paistoöljy",
+        "en": "Cooking oil",
+        "sv": "Stekolja",
+        "th": "น้ำมันสำหรับทอด"
+      },
+      "grams": null,
+      "quantity": {
+        "amount": 1,
+        "unit": "tbsp"
+      }
+    },
+    {
+      "name": {
+        "fi": "Suola",
+        "en": "Salt",
+        "sv": "Salt",
+        "th": "เกลือ"
+      },
+      "grams": null
+    }
+  ],
+  "exclusions": [
+    {
+      "ingredientIndex": 4,
+      "kind": "ZERO_CHO",
+      "rationale": "Plain warm water. Contributes no available carbohydrate.",
+      "evidencePath": "docs/nutrition/gk80-operation80-batch-17.md"
+    },
+    {
+      "ingredientIndex": 5,
+      "kind": "ZERO_CHO",
+      "rationale": "Plain frying oil. Contributes no available carbohydrate.",
+      "evidencePath": "docs/nutrition/gk80-operation80-batch-17.md"
+    },
+    {
+      "ingredientIndex": 6,
+      "kind": "ZERO_CHO",
+      "rationale": "Pure salt. Contributes no available carbohydrate.",
+      "evidencePath": "docs/nutrition/gk80-operation80-batch-17.md"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Shobana et al., wheat dosa",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9552392/",
+      "kind": "HUMAN_GI",
+      "note": "GI 61.8 for batter scenario A."
+    },
+    {
+      "title": "Shakappa et al., onion rava dosa",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9304465/",
+      "kind": "HUMAN_GI",
+      "note": "GI 66.43 for batter scenario B."
+    },
+    {
+      "title": "Jenkins et al., honey",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/6259925/",
+      "kind": "HUMAN_GI",
+      "note": "GI 87 for honey."
+    },
+    {
+      "title": "Fineli 110, 112",
+      "url": "https://fineli.fi/fineli/fi/ohje/19",
+      "kind": "CARBOHYDRATE",
+      "note": "Fineli Release 20, CC BY 4.0."
+    },
+    {
+      "title": "AFCD F009606, F004380",
+      "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd",
+      "kind": "CARBOHYDRATE",
+      "note": "AFCD Release 3, CC BY-SA 3.0 Australia."
+    }
+  ],
+  "inputs": [
+    [
+      100,
+      63.6,
+      61.8
+    ],
+    [
+      100,
+      73.998,
+      61.8
+    ],
+    [
+      5,
+      6.3,
+      61.8
+    ],
+    [
+      20,
+      72.3,
+      87
+    ]
+  ],
+  "boundFiles": {
+    "reseptit/aamupalat/pohjoisafrikkalainen-baghrir.md": "465c021ba03a828a5a70f17ad6d5bce142e9cf957dc7af730bf5c1c352d8f706",
+    "docs/nutrition/gk80-operation80-batch-17.md": "52e32e89474ed53017c2d6e166840950784a5b92a24b8951df38b293c3b620ba"
+  }
+}

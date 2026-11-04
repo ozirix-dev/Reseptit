@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "batchId": "gk100-six-content-decisions",
+  "candidates": [
+    {
+      "classification": {
+        "reasons": [
+          "Kaksi mitattua dosaa antaa nimetyt taikinaskenaariot. Hiiva, jauhoseos ja yksipuolinen paisto rajaavat siirtoa. Hunaja lasketaan erikseen historiallisella verrokilla.",
+          "Laskentamuistio ja ehdokaspaketin lähderivit sitovat koostumustiedot ja yksittäiset tutkimusten GI-luvut."
+        ],
+        "candidateSha256": "d39cdeb08982951fc69e78afe7aa8dcb200dc4be9818df787e4eec02533f8cdc",
+        "contentSummary": "Yksipuolisesti paistettu hiivallinen baghrir ja 20 g hunajaa koko erälle.",
+        "contentChange": "GK_ONLY",
+        "risk": "MEDIUM",
+        "review": {
+          "evidence": "docs/nutrition/gk80-operation80-batch-17.md ja ehdokaspaketin valmistus- sekä lähderajaukset.",
+          "depth": "FOCUSED"
+        },
+        "outcome": "OWNER_DECISION"
+      },
+      "recipeId": "pohjoisafrikkalainen-baghrir",
+      "packetPath": "docs/nutrition/gk80-operation80-baghrir-release-candidate.json"
+    },
+    {
+      "classification": {
+        "reasons": [
+          "Pannuleivän analogiat koskevat taikinaa. Raakana lisättävä banaani ja kondensoitu maito ovat erilliset syötteet. Maidon historiallinen GI ja banaanin kypsyys lisäävät epävarmuutta.",
+          "Laskentamuistio ja ehdokaspaketin lähderivit sitovat koostumustiedot ja yksittäiset tutkimusten GI-luvut."
+        ],
+        "candidateSha256": "516a2d7d9c008488620f450c648e050308206184824d60293e6f8e395e26ef3b",
+        "contentSummary": "Ohut pannulettu, raaka kypsä banaani lisätään paiston jälkeen.",
+        "contentChange": "GK_ONLY",
+        "risk": "MEDIUM",
+        "review": {
+          "evidence": "docs/nutrition/gk80-operation80-batch-21.md ja ehdokaspaketin valmistus- sekä lähderajaukset.",
+          "depth": "FOCUSED"
+        },
+        "outcome": "OWNER_DECISION"
+      },
+      "recipeId": "thai-roti-munalla-banaanilla",
+      "packetPath": "docs/nutrition/gk80-operation80-thai-roti-release-candidate.json"
+    },
+    {
+      "classification": {
+        "reasons": [
+          "Paahdetun Satou-riisipallon GI 77 on muunnettu riisiasteikolta. Mison ja norin 0,91 g CHO/annos jää laskelmasta. Valmistus ja pienemmät päällismäärät määrittävät erillisen version.",
+          "Laskentamuistio ja ehdokaspaketin lähderivit sitovat koostumustiedot ja yksittäiset tutkimusten GI-luvut."
+        ],
+        "candidateSha256": "aaceff8adf0d867be58fbcf5aa7be91cbe2e4bb82ef681fbd24b34c5781840eb",
+        "contentSummary": "Punnitaan 100 g kypsää riisiä, 10 g misoa ja 2 g noria.",
+        "contentChange": "GK_ONLY",
+        "risk": "MEDIUM",
+        "review": {
+          "evidence": "docs/nutrition/gk80-operation80-gochujang-miso.md ja ehdokaspaketin valmistus- sekä lähderajaukset.",
+          "depth": "FOCUSED"
+        },
+        "outcome": "OWNER_DECISION"
+      },
+      "recipeId": "japanilainen-yaki-onigiri-misolla",
+      "packetPath": "docs/nutrition/gk80-operation80-yaki-onigiri-release-candidate.json"
+    },
+    {
+      "classification": {
+        "reasons": [
+          "GI 68 ja 93 ovat eri täyttämättömien höyryleipien skenaariot. Täytteen soija on laskentakoodi. Munan ja sienen poisjättö on 0,1875 g CHO/annos. Täytteen vaikutus höyryleivän vasteeseen jää avoimeksi.",
+          "Laskentamuistio ja ehdokaspaketin lähderivit sitovat koostumustiedot ja yksittäiset tutkimusten GI-luvut."
+        ],
+        "candidateSha256": "dc4f98df11db77e44a7d69276aeb74080cc134278ebcad78b02a284d721ea8bc",
+        "contentSummary": "Höyrytetty taikina ja erillinen punnittu muna-sienitäyte.",
+        "contentChange": "GK_ONLY",
+        "risk": "MEDIUM",
+        "review": {
+          "evidence": "docs/nutrition/gk100-samosa-banh-bao-evidence.md ja ehdokaspaketin valmistus- sekä lähderajaukset.",
+          "depth": "FOCUSED"
+        },
+        "outcome": "OWNER_DECISION"
+      },
+      "recipeId": "vietnamilainen-banh-bao-kananmunalla",
+      "packetPath": "docs/nutrition/gk80-operation80-banh-bao-kananmunalla-release-candidate.json"
+    },
+    {
+      "recipeId": "masala-dosa",
+      "classification": {
+        "contentSummary": "Erillinen neljän annoksen versio. Punnitse 500 g keitettyä valutettua perunaa ja käytä 3 g sinapinsiemeniä alkuperäisen 150 g:n sijaan. Kuorittu urad sidotaan IFCT B003:een ja chutney sekä sambar rajataan erikseen tarjottaviksi.",
+        "contentChange": "GK_ONLY",
+        "risk": "MEDIUM",
+        "candidateSha256": "e39be3ee36cc4a772dc35909a112132fd4cc397f35693e14b251e2f57b7674c6",
+        "outcome": "OWNER_DECISION",
+        "reasons": [
+          "Riisi–urad-dosan GI 76 kohdistetaan taikinaan kerran. Keitetyn perunan GI 66 on valmistusverrokki, ja skenaariot kuvaavat varhais- ja varastoperunan koostumuseroa.",
+          "Sipulin GI 40 on laskentakoodi. Pois jää 0,45475 g arvioitua mauste-CHO:ta annosta kohti. GI 100 -seulonnassa yläpää 63,495 nousee 63,94975:een, joten kokonaislukupyöristys on herkkä.",
+          "Koostumuslähteet yksilöidään ehdokkaassa. GI-lähteistä käytetään yksittäisiä mittaustuloksia. Nelikieliset tekstit rajaavat arvion dosaan ja täytteeseen."
+        ],
+        "review": {
+          "depth": "FOCUSED",
+          "evidence": "docs/nutrition/gk100-rescue-index.md, IFCT-version mausteiden tarkennus ja masala dosan nykyinen päätöspaketti. Tarkistettu erikseen dosan alkuperäisen reseptin punnitus ja tarjoilu."
+        }
+      },
+      "packetPath": "docs/nutrition/gk100-masala-dosa-ifct-release-candidate.json"
+    },
+    {
+      "packetPath": "docs/nutrition/gk100-corn-fritters-whole-kernels-release-candidate.json",
+      "classification": {
+        "risk": "MEDIUM",
+        "contentSummary": "Erillinen kahden annoksen versio. Keitä maissi tähkässä suolatta 20 minuuttia, valuta ja punnitse 150 g kypsiä kokonaisia jyviä. Pidä jyvät kokonaisina pannutaikinassa. Tarjoa 5 g limettimehua ja 3 g nimettyä Blue Dragon -kastiketta koko erälle.",
+        "review": {
+          "evidence": "docs/nutrition/gk100-rescue-index.md, maissifrittereiden kastike- ja esikeittokatselmukset. Tarkistettu erikseen alkuperäisen hienonnusvaiheen ero, ehdokkaan nelikielinen rajaus ja lähdesidokset.",
+          "depth": "FOCUSED"
+        },
+        "outcome": "OWNER_DECISION",
+        "reasons": [
+          "Maissin glukoosiviitteinen GI 48 vastaa esikeittoa. Pannulla uudelleen kypsennettyjä jyviä ei mitattu. Vehnätaikinan GI 57 ja 61,8 muodostavat nimetyt skenaariot samalle reseptille.",
+          "Sakkaroosin GI 65 sovelletaan kastikkeen koko hiilihydraattiosuuteen. Etiketin 55,1 g CHO:sta 54,7 g on sokereita. Muu osuus vastaa 0,006 g CHO:ta annosta kohti ja voi muuttaa tulosta vain vähän GI 0–100 -herkkyystestissä. Kastikkeen happamuuden vaikutusta ei ole mitattu.",
+          "Limetin poisjättö on 0,2005 g CHO/annos. GI 100 -seulonnassa alempi 30,479325 nousee arvoon 30,679825 ja kokonaislukupyöristys voi vaihtua. Fineli CC BY 4.0, AFCD CC BY-SA 3.0 Australia ja USDA CC0. GI-tutkimuksista käytetään yksittäisiä vertailulukuja."
+        ],
+        "candidateSha256": "10ee40f24219312ffd5020ef344c262267124b2cae9b81add8952bb53e87ea1a",
+        "contentChange": "GK_ONLY"
+      },
+      "recipeId": "thai-maissifritterit"
+    }
+  ]
+}
