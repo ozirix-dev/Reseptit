@@ -36,10 +36,10 @@ export function expectedPages(recipes: RecipeEntry[]): ExpectedPage[] {
   return [
     ...locales.map((locale) => ({ route: localeIndexes[locale], locale, h1: names[locale], title: `${names[locale]} | Ozirix`, description: recipeUi[locale].intro, alternates: alternateMap(indexes) })),
     ...([
-      { locale: "fi" as const, route: "/glykeeminen-kuorma/", h1: "Glykeeminen kuorma: lähteet ja laskenta", title: "Glykeeminen kuorma: lähteet ja laskenta | Reseptit", description: "Reseptien glykeemisen kuorman laskentatapa, lähteet ja reseptikohtaiset oletukset." },
-      { locale: "en" as const, route: "/en/glycemic-load/", h1: "Glycemic load: sources and method", title: "Glycemic load: sources and method | Recipes", description: "Calculation method, sources and recipe-specific assumptions for glycemic-load estimates." },
-      { locale: "sv" as const, route: "/sv/glykemisk-belastning/", h1: "Glykemisk belastning: källor och metod", title: "Glykemisk belastning: källor och metod | Recept", description: "Beräkningsmetod, källor och receptspecifika antaganden för uppskattningar av glykemisk belastning." },
-      { locale: "th" as const, route: "/th/glycemic-load/", h1: "ภาระน้ำตาลในเลือด: แหล่งข้อมูลและวิธีคำนวณ", title: "ภาระน้ำตาลในเลือด: แหล่งข้อมูลและวิธีคำนวณ | สูตรอาหาร", description: "วิธีคำนวณ แหล่งข้อมูล และสมมติฐานเฉพาะสูตรสำหรับค่าประมาณภาระน้ำตาลในเลือด" },
+      { locale: "fi" as const, route: "/glykeeminen-kuorma/", h1: "Reseptien glykeeminen kuorma (GK)", title: "Reseptien glykeeminen kuorma (GK) | Reseptit", description: "Löydä reseptien glykeemisen kuorman (GK) arviot, luotettavuustiedot ja tarvittaessa tarkat laskentalähteet." },
+      { locale: "en" as const, route: "/en/glycemic-load/", h1: "Glycemic load (GL) of recipes", title: "Glycemic load (GL) of recipes | Recipes", description: "Explore calculated glycemic load estimates for recipes, their reliability and detailed sources." },
+      { locale: "sv" as const, route: "/sv/glykemisk-belastning/", h1: "Receptens glykemiska belastning (GL)", title: "Receptens glykemiska belastning (GL) | Recept", description: "Hitta uppskattningar av receptens glykemiska belastning, säkerhet och detaljerade källor." },
+      { locale: "th" as const, route: "/th/glycemic-load/", h1: "ค่าภาระน้ำตาลในเลือด (GL) ของสูตรอาหาร", title: "ค่าภาระน้ำตาลในเลือด (GL) ของสูตรอาหาร | สูตรอาหาร", description: "ค้นหาค่าภาระน้ำตาลในเลือด (GL) ของสูตรอาหาร พร้อมระดับความน่าเชื่อถือและแหล่งข้อมูลการคำนวณ" },
     ]).map((page) => ({ ...page, alternates: alternateMap([
       { locale: "fi" as const, routePath: "/glykeeminen-kuorma/" },
       { locale: "en" as const, routePath: "/en/glycemic-load/" },
