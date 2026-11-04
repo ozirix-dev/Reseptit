@@ -169,7 +169,7 @@ test("GK values link to centralized recipe details on every published translatio
       const html = await readFile(path.join(dist, recipe.routePath.slice(1), "index.html"), "utf8");
       if (result.status === "CALCULATED" && result.glycemicLoadPerServing !== null) {
         assert.ok(html.includes(recipeUi[recipe.locale].glycemicLoad));
-        assert.ok(html.includes(recipeUi[recipe.locale].glycemicLoadMethod));
+        assert.ok(html.includes(gkCopy[recipe.locale].see));
         assert.ok(html.includes(`${recipe.locale === "fi" ? "/Reseptit" : "/Reseptit"}${recipe.locale === "fi" ? "/glykeeminen-kuorma/" : recipe.locale === "en" ? "/en/glycemic-load/" : recipe.locale === "sv" ? "/sv/glykemisk-belastning/" : "/th/glycemic-load/"}#${result.recipeId}`));
         assert.ok(result.confidence && html.includes(gkCopy[recipe.locale].levelNotes[result.confidence]), `${result.recipeId}/${recipe.locale}: confidence is visible`);
         if (result.omittedAvailableCarbohydratePerServingG > 0) assert.ok(html.includes(recipeUi[recipe.locale].glycemicLoadOmission(new Intl.NumberFormat({ fi: "fi-FI", en: "en-GB", sv: "sv-SE", th: "th-TH" }[recipe.locale], { maximumSignificantDigits: 1 }).format(result.omittedAvailableCarbohydratePerServingG))), `${result.recipeId}/${recipe.locale}: omitted small carbohydrate is disclosed`);

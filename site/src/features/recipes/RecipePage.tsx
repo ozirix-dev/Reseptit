@@ -75,7 +75,7 @@ export function RecipePage() {
           {glycemicLoad.assessmentType ? <p className="recipe-glycemic-load__class">{classLabel}</p> : null}
           <EstimateSummary result={glycemicLoad} locale={locale} />
           <p className="recipe-glycemic-load__caption">
-            <Link to={`${glycemicLoadPath(locale)}#${recipe.recipeId}`} aria-label={`${labels.glycemicLoadMethod} · ${recipe.title}`}>
+            <Link to={`${glycemicLoadPath(locale)}#${recipe.recipeId}`} aria-label={`${gkCopy[locale].see} · ${recipe.title}`}>
               {gkCopy[locale].see} ↗
             </Link>
           </p>
