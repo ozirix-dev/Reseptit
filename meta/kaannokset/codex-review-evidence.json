@@ -1,0 +1,380 @@
+{
+  "bouillabaisse:en": {
+    "source_hash": "c90950cd70562bad0787a7ccf30c7e75c798bbeb171dc84e11380e658e8071c1",
+    "translation_hash": "14189aee935808b56a4fd534484a774ae7d292162071b2b3b6d70cc256693656",
+    "reviewed_at": "2026-11-04",
+    "reference": "https://github.com/ozirix-dev/Reseptit/pull/262",
+    "correction_pr": 262,
+    "outcome": "pass",
+    "findings": []
+  },
+  "bouillabaisse:sv": {
+    "source_hash": "c90950cd70562bad0787a7ccf30c7e75c798bbeb171dc84e11380e658e8071c1",
+    "translation_hash": "194400771d75fe1fcedb337d04d8b888aa171ec7dd6c5ee0de1a86b26a7e3cdb",
+    "reviewed_at": "2026-11-04",
+    "reference": "https://github.com/ozirix-dev/Reseptit/pull/262",
+    "correction_pr": 262,
+    "outcome": "pass",
+    "findings": []
+  },
+  "bouillabaisse:th": {
+    "source_hash": "c90950cd70562bad0787a7ccf30c7e75c798bbeb171dc84e11380e658e8071c1",
+    "translation_hash": "60040c0434426ab19031805cc8417957812b1a1c59d50912ec81ea99c8b232f5",
+    "reviewed_at": "2026-11-04",
+    "reference": "https://github.com/ozirix-dev/Reseptit/pull/262",
+    "correction_pr": 262,
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P1",
+        "status": "fixed",
+        "summary": "Katkaravut kypsennetään liemessä ja avautumattomat simpukat hylätään."
+      }
+    ]
+  },
+  "butter-chicken:en": {
+    "source_hash": "d96f0df5a88d39b6cc370688cf92921ed81a57167c2efb2cb113c5f8c6dfa2ef",
+    "translation_hash": "dffa80776208ff48a131d0d4bbd364261282195fa61cabfa0afc94327269acae",
+    "reviewed_at": "2026-11-04",
+    "reference": "V2 riskierä / lähdecommit 6034aa9880dbc774639e58c2926c05f6100e7fc6",
+    "outcome": "pass",
+    "findings": []
+  },
+  "butter-chicken:sv": {
+    "source_hash": "d96f0df5a88d39b6cc370688cf92921ed81a57167c2efb2cb113c5f8c6dfa2ef",
+    "translation_hash": "7de504867438e233db1befa58f0958da00ea545830180a6d0ab99f057c6eb949",
+    "reviewed_at": "2026-11-04",
+    "reference": "V2 riskierä / lähdecommit 6034aa9880dbc774639e58c2926c05f6100e7fc6",
+    "outcome": "pass",
+    "findings": []
+  },
+  "butter-chicken:th": {
+    "source_hash": "d96f0df5a88d39b6cc370688cf92921ed81a57167c2efb2cb113c5f8c6dfa2ef",
+    "translation_hash": "60cd7ea3594a23dff36687413855b7145b9db628d5b6f6318d4c3ea0e4cb86af",
+    "reviewed_at": "2026-11-04",
+    "reference": "V2 riskierä / lähdecommit 6034aa9880dbc774639e58c2926c05f6100e7fc6",
+    "outcome": "pass",
+    "findings": []
+  },
+  "doner-kebab:en": {
+    "source_hash": "39a40f23281bd75526d364d63f970f8a41d88a885fe6de448cf13edb3afadc82",
+    "translation_hash": "3aa32ecdbf0c629bdc50d92f922c12c960ee55c163678f5a901fa3ff22f92670",
+    "reviewed_at": "2026-11-04",
+    "reference": "V2 riskierä / lähdecommit 6034aa9880dbc774639e58c2926c05f6100e7fc6",
+    "outcome": "pass",
+    "findings": []
+  },
+  "doner-kebab:sv": {
+    "source_hash": "39a40f23281bd75526d364d63f970f8a41d88a885fe6de448cf13edb3afadc82",
+    "translation_hash": "1a746ce3d16c765ad145a759a91d55e0e84d35f06f1a4786e9f653efae7574ea",
+    "reviewed_at": "2026-11-04",
+    "reference": "V2 riskierä / lähdecommit 6034aa9880dbc774639e58c2926c05f6100e7fc6",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "open",
+        "summary": "Otsikon biff voi antaa mielikuvan pihvistä. Ainesluettelo ja valmistus yksilöivät naudan jauhelihan."
+      }
+    ]
+  },
+  "doner-kebab:th": {
+    "source_hash": "39a40f23281bd75526d364d63f970f8a41d88a885fe6de448cf13edb3afadc82",
+    "translation_hash": "0d606c465eedb512b08e3d59ed8a067a189c80f064480cfbcac1bc9c5864d6ac",
+    "reviewed_at": "2026-11-04",
+    "reference": "V2 riskierä / lähdecommit 6034aa9880dbc774639e58c2926c05f6100e7fc6",
+    "outcome": "pass",
+    "findings": []
+  },
+  "hyderabadi-kanabiryani:en": {
+    "source_hash": "aa55df3398aaa1aef6a453675f91db9944bcf522979cf9f5ce54433f554637fe",
+    "translation_hash": "ec9e71e532bae5403e83bbfb0d7c0e7eaea7022d0ef112d47cc7c43d7fe08854",
+    "reviewed_at": "2026-11-04",
+    "reference": "https://github.com/ozirix-dev/Reseptit/pull/262",
+    "outcome": "pass",
+    "findings": []
+  },
+  "hyderabadi-kanabiryani:sv": {
+    "source_hash": "aa55df3398aaa1aef6a453675f91db9944bcf522979cf9f5ce54433f554637fe",
+    "translation_hash": "56be2b703a41d9b16cbe786be0b48577f55c8dc42fa3ec4d22baf30a1f4da58a",
+    "reviewed_at": "2026-11-04",
+    "reference": "https://github.com/ozirix-dev/Reseptit/pull/262",
+    "outcome": "pass",
+    "findings": []
+  },
+  "hyderabadi-kanabiryani:th": {
+    "source_hash": "aa55df3398aaa1aef6a453675f91db9944bcf522979cf9f5ce54433f554637fe",
+    "translation_hash": "58248898574d41a60b0c875c1f3153463571fdf24e9781e427db69abdc8099a3",
+    "reviewed_at": "2026-11-04",
+    "reference": "https://github.com/ozirix-dev/Reseptit/pull/262",
+    "correction_pr": 262,
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P1",
+        "status": "fixed",
+        "summary": "Riisi kuohkeutetaan eikä murskata."
+      },
+      {
+        "severity": "P1",
+        "status": "fixed",
+        "summary": "Jauhettu korianterinsiemen erotetaan tuoreesta korianterista."
+      }
+    ]
+  },
+  "kantonilainen-hoyrytetty-kala:en": {
+    "source_hash": "9c0141414a5968e07fb2e6bf067ced7df1f8f1cc737cad648a49dba192128469",
+    "translation_hash": "495c8c355fb3e820505d55a9fab4a36f9d342b41af9a9ebc7cf694c56d79b9d4",
+    "reviewed_at": "2026-11-04",
+    "reference": "https://github.com/ozirix-dev/Reseptit/pull/262",
+    "correction_pr": 262,
+    "outcome": "pass",
+    "findings": []
+  },
+  "kantonilainen-hoyrytetty-kala:sv": {
+    "source_hash": "9c0141414a5968e07fb2e6bf067ced7df1f8f1cc737cad648a49dba192128469",
+    "translation_hash": "6cb1f8b3fca91dd489a7561cfed3d47c21e192d3295c6e8199e986083cbb795b",
+    "reviewed_at": "2026-11-04",
+    "reference": "https://github.com/ozirix-dev/Reseptit/pull/262",
+    "correction_pr": 262,
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P1",
+        "status": "fixed",
+        "summary": "Höyrytysastiaksi palautettiin kuumuutta kestävä lautanen."
+      }
+    ]
+  },
+  "kantonilainen-hoyrytetty-kala:th": {
+    "source_hash": "9c0141414a5968e07fb2e6bf067ced7df1f8f1cc737cad648a49dba192128469",
+    "translation_hash": "6d04ee407f33a98f2d20de6c130cde7ca8b4dbe716cc159bacf2eed5bc78992d",
+    "reviewed_at": "2026-11-04",
+    "reference": "https://github.com/ozirix-dev/Reseptit/pull/262",
+    "correction_pr": 262,
+    "outcome": "pass",
+    "findings": []
+  },
+  "khao-man-gai-vhh:en": {
+    "source_hash": "5e61aec53a36e7a45fb07bbdd27d09307937178fb691e37753480e0d63bb6fe2",
+    "translation_hash": "f2b486c2d7455ac723d6932c55ff17e39c1bd827eb9a793ae7da7978d3eb6121",
+    "reviewed_at": "2026-11-04",
+    "reference": "V2 riskierä / lähdecommit 6034aa9880dbc774639e58c2926c05f6100e7fc6",
+    "outcome": "pass",
+    "findings": []
+  },
+  "khao-man-gai-vhh:sv": {
+    "source_hash": "5e61aec53a36e7a45fb07bbdd27d09307937178fb691e37753480e0d63bb6fe2",
+    "translation_hash": "8d820428c9cf7dfd2f39ff73d3085993ac17fdab0133a05af72e8d296bd5eb34",
+    "reviewed_at": "2026-11-04",
+    "reference": "V2 riskierä / lähdecommit 6034aa9880dbc774639e58c2926c05f6100e7fc6",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "open",
+        "summary": "Kypsennysohjeen broilern on suomesta siirtynyt termi. Kastiketta ohennetaan kypsennysliemellä, vaikka ruotsi puhuu fondista."
+      }
+    ]
+  },
+  "khao-man-gai-vhh:th": {
+    "source_hash": "5e61aec53a36e7a45fb07bbdd27d09307937178fb691e37753480e0d63bb6fe2",
+    "translation_hash": "2f00b24d48d45d886bb5c450a9c3a5680674ed548dec01178db2a9045e175524",
+    "reviewed_at": "2026-11-04",
+    "reference": "V2 riskierä / lähdecommit 6034aa9880dbc774639e58c2926c05f6100e7fc6",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "open",
+        "summary": "Tarjoiluvaiheen riisi kannattaa nimetä kukkakaaliriisiksi, kuten ainesluettelossa ja kuvauksessa."
+      }
+    ]
+  },
+  "lohikeitto-kuohukermalla:en": {
+    "source_hash": "144df3bfc29cc9ca441c9db597dd52cbf06a95700cea02a76e2d1c37cd5af339",
+    "translation_hash": "c77acdda92005bfbffa55aa3e481cee387600eef97ef85eee80ef3a247b3fb01",
+    "reviewed_at": "2026-11-04",
+    "reference": "V2 riskierä / lähdecommit 6034aa9880dbc774639e58c2926c05f6100e7fc6",
+    "outcome": "pass",
+    "findings": []
+  },
+  "lohikeitto-kuohukermalla:sv": {
+    "source_hash": "144df3bfc29cc9ca441c9db597dd52cbf06a95700cea02a76e2d1c37cd5af339",
+    "translation_hash": "a34edc3093eb6f9a32640899f6b2d6f84def9b129f9611c36bdeb4ee68574d8a",
+    "reviewed_at": "2026-11-04",
+    "reference": "V2 riskierä / lähdecommit 6034aa9880dbc774639e58c2926c05f6100e7fc6",
+    "outcome": "pass",
+    "findings": []
+  },
+  "lohikeitto-kuohukermalla:th": {
+    "source_hash": "144df3bfc29cc9ca441c9db597dd52cbf06a95700cea02a76e2d1c37cd5af339",
+    "translation_hash": "cc9a152949c8c5b7e09e8020966748b2e2f1736673cb1f14f57d2a9a85ee6076",
+    "reviewed_at": "2026-11-04",
+    "reference": "V2 riskierä / lähdecommit 6034aa9880dbc774639e58c2926c05f6100e7fc6",
+    "outcome": "pass",
+    "findings": []
+  },
+  "moo-ping-vhh:en": {
+    "source_hash": "70f7117491c98ad64c4c64d41c971a46a1eee7905c099a8b9af008d521d27238",
+    "translation_hash": "d5a8d1b696709db07008341aa51ec53e43d0ed7b6d62692e042820340058fa82",
+    "reviewed_at": "2026-11-04",
+    "reference": "V2 riskierä / lähdecommit 6034aa9880dbc774639e58c2926c05f6100e7fc6",
+    "outcome": "pass",
+    "findings": []
+  },
+  "moo-ping-vhh:sv": {
+    "source_hash": "70f7117491c98ad64c4c64d41c971a46a1eee7905c099a8b9af008d521d27238",
+    "translation_hash": "abbdcc6edc3a5c5dcd5f28016dafa6bba714a0b9873fe7fbc92df95741cd40f6",
+    "reviewed_at": "2026-11-04",
+    "reference": "V2 riskierä / lähdecommit 6034aa9880dbc774639e58c2926c05f6100e7fc6",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P3",
+        "status": "open",
+        "summary": "Alt-tekstin varm dippsås kuvaa lämpöä. Lähdetekstin tulinen tarkoittaa mausteisuutta."
+      }
+    ]
+  },
+  "moo-ping-vhh:th": {
+    "source_hash": "70f7117491c98ad64c4c64d41c971a46a1eee7905c099a8b9af008d521d27238",
+    "translation_hash": "c2b8e4ff938ed19fa505dab49daaff9ab5a0992ddeb59caaa0bda266199b8b6e",
+    "reviewed_at": "2026-11-04",
+    "reference": "V2 riskierä / lähdecommit 6034aa9880dbc774639e58c2926c05f6100e7fc6",
+    "outcome": "pass",
+    "findings": []
+  },
+  "pad-see-ew-vhh-konjac:en": {
+    "source_hash": "02786a070b951838b0899ab4ab663991efe3b80ddf90a516b8cea287cb110744",
+    "translation_hash": "65c8d31e2889c207cded6473d64a61950b22d8b8f471963b83b04ddf25df3da6",
+    "reviewed_at": "2026-11-04",
+    "reference": "V2 riskierä / lähdecommit 6034aa9880dbc774639e58c2926c05f6100e7fc6",
+    "outcome": "pass",
+    "findings": []
+  },
+  "pad-see-ew-vhh-konjac:sv": {
+    "source_hash": "02786a070b951838b0899ab4ab663991efe3b80ddf90a516b8cea287cb110744",
+    "translation_hash": "085df8a46224abf7222e6e2102ad79eeac82e9632ea427b8953e7a86cb0cdfa7",
+    "reviewed_at": "2026-11-04",
+    "reference": "V2 riskierä / lähdecommit 6034aa9880dbc774639e58c2926c05f6100e7fc6",
+    "outcome": "pass",
+    "findings": []
+  },
+  "pad-see-ew-vhh-konjac:th": {
+    "source_hash": "02786a070b951838b0899ab4ab663991efe3b80ddf90a516b8cea287cb110744",
+    "translation_hash": "2f885ae9d5e5e89445174511df7d5a76c52aeed1db206525f60f024885c096eb",
+    "reviewed_at": "2026-11-04",
+    "reference": "V2 riskierä / lähdecommit 6034aa9880dbc774639e58c2926c05f6100e7fc6",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "open",
+        "summary": "Nuudelien kuivapaisto ja sivuun siirtäminen on ilmaistu kömpelösti. Öljy lisätään vasta seuraavassa paistovaiheessa."
+      }
+    ]
+  },
+  "som-tam-vhh-kurkkuna:en": {
+    "source_hash": "d91c6a8cbe30a0502a8d07986739c3c64d92f4186860595f182be7518ab37183",
+    "translation_hash": "a7e621573c1d933806a9228bcba3d0a2eee5609b22efe254e24158d9daa1550e",
+    "reviewed_at": "2026-11-04",
+    "reference": "V2 riskierä / lähdecommit 6034aa9880dbc774639e58c2926c05f6100e7fc6",
+    "outcome": "pass",
+    "findings": []
+  },
+  "som-tam-vhh-kurkkuna:sv": {
+    "source_hash": "d91c6a8cbe30a0502a8d07986739c3c64d92f4186860595f182be7518ab37183",
+    "translation_hash": "71c4351aa882c2cd1f890803c9a97b8405941723a48ae33b566a95d381c6f91f",
+    "reviewed_at": "2026-11-04",
+    "reference": "V2 riskierä / lähdecommit 6034aa9880dbc774639e58c2926c05f6100e7fc6",
+    "outcome": "pass",
+    "findings": []
+  },
+  "som-tam-vhh-kurkkuna:th": {
+    "source_hash": "d91c6a8cbe30a0502a8d07986739c3c64d92f4186860595f182be7518ab37183",
+    "translation_hash": "e868a981ae9bd01ae23218bde6abe73bf7d4a4ee9ed87a88a465e27c2e468196",
+    "reviewed_at": "2026-11-04",
+    "reference": "V2 riskierä / lähdecommit 6034aa9880dbc774639e58c2926c05f6100e7fc6",
+    "outcome": "pass",
+    "findings": []
+  },
+  "tom-kha-gai-vhh:en": {
+    "source_hash": "1a7fc6df92d3c99198556cb8be9f522ac956076b023f5a206d84b46f85713539",
+    "translation_hash": "8e2f1f5a9b431e11e48a38e622e9af3c22d86e5fa58f05d8a8d81346369fc24e",
+    "reviewed_at": "2026-11-04",
+    "reference": "V2 riskierä / lähdecommit 6034aa9880dbc774639e58c2926c05f6100e7fc6",
+    "outcome": "pass",
+    "findings": []
+  },
+  "tom-kha-gai-vhh:sv": {
+    "source_hash": "1a7fc6df92d3c99198556cb8be9f522ac956076b023f5a206d84b46f85713539",
+    "translation_hash": "24d8ff1abd4f31ea6bb49301442a9a07560f13cb03093bdbee43828f8a99a71f",
+    "reviewed_at": "2026-11-04",
+    "reference": "V2 riskierä / lähdecommit 6034aa9880dbc774639e58c2926c05f6100e7fc6",
+    "outcome": "pass",
+    "findings": []
+  },
+  "tom-kha-gai-vhh:th": {
+    "source_hash": "1a7fc6df92d3c99198556cb8be9f522ac956076b023f5a206d84b46f85713539",
+    "translation_hash": "df45488ebc88ba717bdf73d41324a1694a77d3e701dd968cce109bd342a7cabd",
+    "reviewed_at": "2026-11-04",
+    "reference": "V2 riskierä / lähdecommit 6034aa9880dbc774639e58c2926c05f6100e7fc6",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "open",
+        "summary": "Otsikko kääntää ruokalajin nimeksi inkivääri-kanakeitto. Vakiintunut tom kha gai -nimi kannattaa säilyttää ja täsmentää, että tässä versiossa käytetään inkivääriä."
+      }
+    ]
+  },
+  "uunilohi-smetanakuorrutteella:en": {
+    "source_hash": "1c2c5a6f9b08f9d0417436fd2d50e20a9c6b97246662bdf0ff178be458fd74e2",
+    "translation_hash": "c6f14fd33bab63bfbdd0200b0574b668dd8940841d7601dccf44b8ab8f4757cd",
+    "reviewed_at": "2026-11-04",
+    "reference": "V2 riskierä / lähdecommit 6034aa9880dbc774639e58c2926c05f6100e7fc6",
+    "outcome": "pass",
+    "findings": []
+  },
+  "uunilohi-smetanakuorrutteella:sv": {
+    "source_hash": "1c2c5a6f9b08f9d0417436fd2d50e20a9c6b97246662bdf0ff178be458fd74e2",
+    "translation_hash": "f3a67c613d9c209a14ea84ee6c87202645874e26f2d7dbffe277dc7ae1517dbb",
+    "reviewed_at": "2026-11-04",
+    "reference": "V2 riskierä / lähdecommit 6034aa9880dbc774639e58c2926c05f6100e7fc6",
+    "outcome": "pass",
+    "findings": []
+  },
+  "uunilohi-smetanakuorrutteella:th": {
+    "source_hash": "1c2c5a6f9b08f9d0417436fd2d50e20a9c6b97246662bdf0ff178be458fd74e2",
+    "translation_hash": "d0799269e71afd380d3914097b131bbda94dcaca6ad321a9a2deb7e2bdd835d3",
+    "reviewed_at": "2026-11-04",
+    "reference": "V2 riskierä / lähdecommit 6034aa9880dbc774639e58c2926c05f6100e7fc6",
+    "outcome": "pass",
+    "findings": []
+  },
+  "yangzhou-paistettu-riisi:en": {
+    "source_hash": "2a06a52d3b6801aa7f533da6eabd063446c99e419e3943af225d13239115f2c9",
+    "translation_hash": "9a5bf3bd3e7aa65b49b1766996b4ad331557c7262f5a65057252453212f03676",
+    "reviewed_at": "2026-11-04",
+    "reference": "V2 riskierä / lähdecommit 6034aa9880dbc774639e58c2926c05f6100e7fc6",
+    "outcome": "pass",
+    "findings": []
+  },
+  "yangzhou-paistettu-riisi:sv": {
+    "source_hash": "2a06a52d3b6801aa7f533da6eabd063446c99e419e3943af225d13239115f2c9",
+    "translation_hash": "bf58de3f375434547ab2ebd9c8bcefede760bbc760a8501dbbebd3381324b235",
+    "reviewed_at": "2026-11-04",
+    "reference": "V2 riskierä / lähdecommit 6034aa9880dbc774639e58c2926c05f6100e7fc6",
+    "outcome": "pass",
+    "findings": []
+  },
+  "yangzhou-paistettu-riisi:th": {
+    "source_hash": "2a06a52d3b6801aa7f533da6eabd063446c99e419e3943af225d13239115f2c9",
+    "translation_hash": "96e4b87552d3ac66b0cc3ee83c5a518b514971e3f9181a44f00fe3e80ad207a0",
+    "reviewed_at": "2026-11-04",
+    "reference": "V2 riskierä / lähdecommit 6034aa9880dbc774639e58c2926c05f6100e7fc6",
+    "outcome": "pass",
+    "findings": []
+  }
+}

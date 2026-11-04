@@ -1,7 +1,8 @@
+import { changedSemanticReviewErrors, preparationRegressionErrors, semanticHash, semanticStatus } from "../scripts/translation-semantic-review";
 import test from "node:test";
 import assert from "node:assert/strict";
 import { auditTranslations, auditRecipePairs } from "../scripts/translation-audit";
-import { buildRegistry, contentHash, humanStatus, scopes, escapeHtml, evidenceSchema, loadCurrentReview, type ReviewEvidence } from "../scripts/translation-review";
+import { buildRegistry, contentHash, humanStatus, scopes, escapeHtml, evidenceSchema, loadCurrentReview, reviewSummary, type ReviewEvidence } from "../scripts/translation-review";
 const proof: ReviewEvidence = { recipe_id: "synthetic-fixture", locale: "en", evidence_id: "synthetic-test-not-a-real-approval", source_content_hash: contentHash("source"), translation_content_hash: contentHash("translation"), reviewed_at: "2026-10-20", scope: [...scopes], status: "complete", human_attestation: true };
 test("checked-in evidence is validated against real current file hashes", async () => {
   const { audit, rows } = await loadCurrentReview();
@@ -106,4 +107,57 @@ test("every participant of a source or translation route collision fails review"
     assert.equal(rows.length, 2);
     assert.ok(rows.every((r) => r.structural_status === "FAIL" && r.human_review_status !== "HUMAN REVIEW COMPLETE"));
   }
+});
+
+
+test("Codex evidence follows both meaning hashes and preserves separate human status", async () => {
+  const audit = await auditTranslations(["bouillabaisse"]);
+  const source = audit.publishedSources[0];
+  const target = audit.publishedTranslations.find((entry) => entry.data.language === "en")!;
+  const hashes = Object.fromEntries([source, ...audit.publishedTranslations].map((entry) => [entry.path, contentHash(entry.content)]));
+  const key = "bouillabaisse:en";
+  const evidence = { source_hash: semanticHash(source), translation_hash: semanticHash(target),
+    reviewed_at: "2026-11-04", reference: "synthetic fixture", outcome: "pass" as const, findings: [] };
+  const row = () => buildRegistry(audit, hashes, [], { [key]: evidence }).find((item) => item.locale === "en")!;
+  assert.equal(row().codex_review_status, "REVIEW CURRENT");
+  assert.equal(row().human_review_status, "AUTOMATED REVIEW ONLY");
+  assert.equal(semanticHash({ ...source, data: { ...source.data, translation_languages: [] }, content: source.content.replaceAll("\r\n", "\n").replaceAll("\n", "\r\n") + "\n\n" }), evidence.source_hash);
+  assert.deepEqual(changedSemanticReviewErrors(audit, new Set([target.path]), { [key]: evidence }), []);
+  assert.equal(changedSemanticReviewErrors(audit, new Set([source.path]), { [key]: evidence }).length, 2);
+  assert.deepEqual(changedSemanticReviewErrors(audit, new Set([target.path]), {}), [key + ": NOT REVIEWED"]);
+  source.content += "\nChanged Finnish preparation.\n";
+  assert.equal(row().codex_review_status, "REVIEW STALE");
+  evidence.source_hash = semanticHash(source);
+  target.content += "\nChanged translated preparation.\n";
+  assert.equal(row().codex_review_status, "REVIEW STALE");
+  assert.deepEqual(changedSemanticReviewErrors(audit, new Set([target.path]), { [key]: evidence }), [key + ": REVIEW STALE"]);
+  evidence.translation_hash = semanticHash(target);
+  const blocked = { ...evidence, findings: [{ severity: "P0", status: "open", summary: "Synthetic finding" }] } as const;
+  assert.equal(semanticStatus(evidence.source_hash, evidence.translation_hash, true, { ...blocked, findings: [...blocked.findings] }), "BLOCKED");
+  assert.equal(semanticStatus(evidence.source_hash, evidence.translation_hash, true, { ...evidence, outcome: "human-required" }), "HUMAN REVIEW REQUIRED");
+  const stats = reviewSummary(audit, buildRegistry(audit, hashes, [], { [key]: evidence }));
+  assert.equal(stats.published_pairs.count, 3);
+  assert.equal(stats.semantic_current.count, 1);
+  assert.equal(stats.semantic_unreviewed.count, 2);
+});
+
+test("preparation regressions catch scoped wrong methods, ingredients and missing negation", async () => {
+  const audit = await auditTranslations(["bouillabaisse", "hyderabadi-kanabiryani", "kantonilainen-hoyrytetty-kala"]);
+  const cases = [
+    ["bouillabaisse", "th", "4. ใส่กุ้งลงไปผัดต่อ", "4. ใส่กุ้งลงในน้ำซุปแล้วต้มต่อ", /broth/],
+    ["hyderabadi-kanabiryani", "th", "7. พักไว้ 10 นาทีแล้วขยี้เบา ๆ", "7. พักไว้ 10 นาทีแล้วซุยข้าวเบา ๆ", /fluff/],
+    ["hyderabadi-kanabiryani", "th", "2. ผสมไก่กับโยเกิร์ตและผักชีสด", "2. ผสมไก่กับโยเกิร์ตและเมล็ดผักชีป่น", /ground coriander/],
+    ["kantonilainen-hoyrytetty-kala", "sv", "1. Lägg fisken på en värmetålig plåt", "1. Lägg fisken på en värmetålig tallrik", /heatproof plate/],
+    ["kantonilainen-hoyrytetty-kala", "th", "4. อุ่นน้ำมันจนเกิดควัน", "4. อุ่นน้ำมันให้ร้อนแต่ไม่ให้เกิดควัน", /warning/],
+  ] as const;
+  for (const [id, locale, bad, good, expected] of cases) {
+    const entry = audit.publishedTranslations.find((item) => item.data.recipe_id === id && item.data.language === locale)!;
+    const context = id === "hyderabadi-kanabiryani" ? "\n2. ผสมโยเกิร์ตกับเมล็ดผักชีป่น\n6. เติมหญ้าฝรั่นและผักชีสด" : id === "kantonilainen-hoyrytetty-kala" && locale === "sv" ? "\n4. Värm oljan tills den är het men inte ryker" : "";
+    assert.match(preparationRegressionErrors({ ...entry, content: bad + context }).join(" "), expected);
+    assert.deepEqual(preparationRegressionErrors({ ...entry, content: good + context }), []);
+  }
+  const source = audit.publishedSources.find((item) => item.data.recipe_id === "bouillabaisse")!;
+  const targets = structuredClone(audit.publishedTranslations.filter((item) => item.data.recipe_id === source.data.recipe_id));
+  targets[0].data.carbs_net_per_serving_g = null;
+  assert.match(auditRecipePairs([source], targets).errors.join(" "), /carbs_net_per_serving_g=null/);
 });

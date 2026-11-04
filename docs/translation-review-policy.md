@@ -31,7 +31,12 @@ hyväksyntäehdot määräytyvät projektin normaalin työnkulun mukaan.
    niihin perustuvat väitteet. Tarkista myös muuttuneet sisäiset linkit.
    Ratkaise lähteen epäselvyydet todisteiden avulla. Puuttuvaa määrää,
    lämpötilaa tai ravintoarvoa ei päätellä esimerkiksi kuvasta.
-4. Kirjaa päivätty tarkistusyhteenveto ja sen kattamat tiedostot tai
+4. Kirjaa kummankin tiedoston merkitystiivisteet, päivämäärä, tulos,
+   avoimet ja korjatut havainnot sekä todisteviite
+   `meta/kaannokset/codex-review-evidence.json`-rekisteriin. Täydennä
+   korjaus-PR:n numero, kun se on tiedossa. Git säilyttää tietueen aiemmat
+   versiot. Ota lähtö- ja kohdetiivisteet työjonon `registry.json`-tiedostosta.
+   Kirjaa päivätty tarkistusyhteenveto ja sen kattamat tiedostot tai
    resepti–kieli-parit PR:ään tai olemassa olevaan kierrosraporttiin.
    Merkitse tarkistettu commit, automaattiset tulokset, todella tehty
    merkitysvertailu ja avoimet havainnot perusteluineen. Lisää löydetylle
@@ -42,6 +47,14 @@ Auditointi tunnistaa tunnettuja sanavirheitä ja reseptikohtaisia
 regressioita. Se ei päättele vapaasta tekstistä kaikkien ainesosien
 vastaavuutta, työvaiheiden merkitystä, ylimääräisiä kypsennysarvoja tai
 kieliasun luontevuutta. Nämä tarkistetaan lähdevertailussa.
+
+## Thain merkitysvertailu
+
+Lue ensin suomenkielinen resepti ja sitten thai itsenäisesti. Selitä hankalat
+kohdat takaisin suomeksi ja vertaa niitä alkuperäiseen. Tarkista erityisesti
+lajit, yrtit ja mausteet, kypsennysverbit, astiat, yksiköt ja kieltomuodot.
+Korjaa luontevalla thailla ja vertaa korjatun valmistusohjeen merkitys vielä
+kerran. Käytä suomea lähteenä. Takaisinkäännös täydentää vertailua.
 
 ## Havaintojen vakavuus
 
@@ -78,13 +91,24 @@ saadusta ilmoituksesta, jolloin ilmoittaja ei tarvitse GitHub-tunnusta.
 - Ehdotettu korjaus, jos tiedossa
 - Vaikutus käyttäjään ja arvioitu vakavuus
 
-Ylläpitäjä vertaa kohtaa lähteeseen, luokittelee havainnon ja kirjaa
-korjauksen sekä varmennuksen issueen. Käsittele vakavat turvallisuusvirheet
-kiireellisesti. Ryhmittele pienet kieliasukorjaukset eriin.
+Ylläpitäjä vertaa kohtaa lähteeseen ja muihin kieliversioihin, kirjaa
+vakavuuden ja päivittää rekisterin. Korjaa tai kirjaa epävarmuus. Lisää
+toistuvaan virheeseen rajattu regressiosuoja ja sulje issue vasta, kun
+korjaus on varmennettu. Käsittele turvallisuusvirheet kiireellisesti.
+
+P0 tarkoittaa välitöntä turvallisuusriskiä ja P1 olennaista sisältövirhettä.
+Molemmat estävät julkaisun. P2 tarkoittaa tavallista laatuvirhettä ja P3
+toimituksellista viimeistelyä.
 
 ## Riskiperusteinen eräauditointi
 
-Tarkista ensin ilmoitetut tai tunnetut olennaiset virheet. Rajaa seuraavat
+Tarkista ensin avoimet P0- ja P1-havainnot, sitten uudet ja muuttuneet parit,
+joilta puuttuu ajantasainen vertailu. Valitse yleensä 10–20 reseptiä ja
+kaikki niiden julkaistut kielet. Noudata samaa järjestystä seuraavassa erässä.
+Kirjaa valmistuneet ja keskeneräiset parit yhteen rajattuun PR:ään.
+`npm run review:translations -- --summary --changed-from=origin/main`
+näyttää tiiviit mittarit ja kymmenen seuraavaa reseptiä. Ilman vertailuviitettä
+jono painottaa tunnettuja ongelmia, vanhentuneita tarkistuksia ja reseptin riskiä. Rajaa seuraavat
 erät esimerkiksi raakaa eläinperäistä raaka-ainetta, säilytystä,
 kypsennyslämpötilaa, allergeeneja tai GK-versioita koskeviin resepteihin.
 Käy sen jälkeen läpi uudet ja muuttuneet käännökset, joista puuttuu
@@ -101,7 +125,11 @@ npx tsx scripts/translation-audit.ts --strict
 npm run review:translations
 ```
 
-Polut annetaan repon juureen suhteutettuina. Valitse tarkistukset muutoksen
+Polut annetaan repon juureen suhteutettuina. CI vertaa julkaistun sisällön
+merkitystiivistettä Gitin base-versioon. Uusi käännös ja merkitysmuutos
+edellyttävät ajantasaista rekisteritietuetta. Suomen lähteen merkitysmuutos
+vaatii kaikkien sen julkaistujen käännösten uudelleenvertailun. Paikallisessa
+ennakkotarkistuksessa aseta `BASE_SHA` PR:n vertailucommitiin. Valitse tarkistukset muutoksen
 mukaan. Lisää auditointikomentoon `--write-reports` vain, kun haluat päivittää
 inventaarion `docs/reports/translation-audit-current.csv` ja
 `docs/reports/recipe-inventory-current.csv`. Nykyisen työjonon käyttöohje

@@ -11,6 +11,17 @@ test("docs-only changes select no site build or test suite", () => {
   assert.equal(plan.runBuild, false);
 });
 
+test("translation evidence selects one dedicated suite and no build", () => {
+  const plan = classifyPaths(["meta/kaannokset/codex-review-evidence.json", "site/scripts/translation-semantic-review.ts"]);
+  assert.equal(plan.runTranslationReview, true);
+  assert.equal(plan.runBuild, false);
+  assert.deepEqual(plan.unitTests, []);
+  const recipe = classifyPaths(["kaannokset/th/paaruoat/bouillabaisse.md"]);
+  assert.equal(recipe.runContent, true);
+  assert.equal(recipe.runTranslationReview, false);
+  assert.equal(recipe.runBuild, false);
+});
+
 test("recipe additions, edits, and deletions select nutrition plus GI/GK checks", () => {
   for (const operation of ["add", "edit", "delete"]) {
     const plan = classifyPaths(["reseptit/paaruoat/munakoiso-kesakurpitsalasagne.md"]);
@@ -149,4 +160,17 @@ test("workflow and classification failures select the full fallback", () => {
   assert.equal(classifyPaths([".github/workflows/pages.yml"]).full, true);
   assert.equal(classifyPaths([], { classificationFailed: true }).full, true);
   assert.equal(classifyPaths(["site/new-unknown-config.toml"]).full, true);
+});
+
+test("full fallback retains the changed-content gate for mixed and forced runs", () => {
+  const translation = "kaannokset/th/paaruoat/hyderabadi-kanabiryani.md";
+  const other = "site/scripts/approved-recipe-note-edits.ts";
+  for (const paths of [[translation, other], [other, translation]]) {
+    const plan = classifyPaths(paths);
+    assert.equal(plan.full, true);
+    assert.equal(plan.runContent, true);
+  }
+  assert.equal(classifyPaths([translation], { forceFull: true }).runContent, true);
+  assert.equal(classifyPaths(["reseptit/_mallipohjat/resepti/resepti_pohja.md"]).runContent, false);
+  assert.equal(classifyPaths([other, "docs/nutrition/calculations/bouillabaisse.json"]).runContent, true);
 });
