@@ -2,13 +2,15 @@
 
 Tämä erä käsittelee jatkotoimet erillään PR #244:n kolmesta julkaisuvalmiista versiosta. [Riippumaton katselmointi](https://github.com/ozirix-dev/Reseptit/pull/244#pullrequestreview-5763290661)
 
-## Omistajan päätös · Tempeh-munakulho
+## Hyväksytty julkaisuvalmisteluun · Tempeh-munakulho
 
-**35,80 GK/annos.** Kahdelle 100 g kuivaa Double FP Thai Hom Mali -jasmiiniriisiä, 204 ml vettä, 100 g Bio Planet -tempehiä, 110 g kuoretonta kananmunaa, 10 g Inproba Sambal Oelekia, 5 g rypsiöljyä ja 1 g suolaa. Riisi kypsennetään annoksittain riisinkeittimessä. Sisältöpäätös koskee nimettyjä tuotteita ja punnittua annostusta, erityisesti **10 g sambalia kahdelle** alkuperäisen ainesosaluettelon 150 g:n sijaan.
+**35,80 GK/annos.** Kahdelle 100 g kuivaa Double FP Thai Hom Mali -jasmiiniriisiä, 204 ml vettä, 100 g Bio Planet -tempehiä, 110 g kuoretonta kananmunaa, 10 g Inproba Sambal Oelekia, 5 g rypsiöljyä ja 1 g suolaa. Riisi kypsennetään annoksittain riisinkeittimessä. Omistajan 4.11.2026 antama hyväksyntä koskee nimettyjä tuotteita ja punnittua annostusta, erityisesti **10 g sambalia kahdelle** alkuperäisen ainesosaluettelon 150 g:n sijaan.
 
 Nimetyn riisin glukoosiviitteinen ihmis-GI on 91,1. Tutkimuksen kuivan riisin hiilihydraattisyötteellä saadaan 35,8023 GK/annos. Lisukkeiden 0,420 g saatavaa hiilihydraattia annosta kohti jää GK-summan ulkopuolelle. GI 100 -stressi antaa 36,2223 GK/annos. Molemmat luvut pyöristyvät kokonaislukuna 36:een. Koko kulhon glukoosivastetta ei ole mitattu. Vanha 27,44–32,17 GK oli toiseen riisipakkaukseen sidottu vertailu. [Laskentamuistio](gk100-tempeh-munakulho-evidence.md) · [Tutkimushaaran paketti](https://github.com/ozirix-dev/Reseptit/blob/4ba8884666a2719231b1c1367dfdb95d6d19a23e/docs/nutrition/gk100-tempeh-munakulho-release-candidate.json)
 
-[Eräsyöte](gk100-244-followup-batch.json) · [Factory-manifesti](gk100-244-followup-manifest.json)
+[Eräsyöte](gk100-244-followup-batch.json) · [Factory-manifesti](gk100-244-followup-manifest.json) · [Sidottu hyväksyntä](gk100-244-followup-owner-approvals.json) · [Julkaisuvalmistelupaketti](gk100-244-followup-release-bundle.json)
+
+Approval Factory luokittelee hyväksytyn version tilaan `RELEASE_READY`. Julkaisuvalmistelupaketin SHA-256 on `517bd022458a8a96c26d4150d8046a56e582f92276c25fbb6967ed2729383a80`. Paketti sisältää yhden version ja tuotantokytkentä edellyttää erillistä valtuutusta.
 
 ## Edelleen avoimet näytöt
 
