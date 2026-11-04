@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "batchId": "gk100-sqlite-v3-batch01",
+  "candidates": [
+    {
+      "recipeId": "marjainen-chiavanukas",
+      "packetPath": "docs/nutrition/gk100-v3-batch01-chiavanukas-release-candidate.json",
+      "classification": {
+        "candidateSha256": "f16458e51d4e1a4e69aed52f88730ef312da135f9a720dddf49897f68057e57c",
+        "risk": "HIGH",
+        "reasons": [
+          "Raw berry analogues and a plain-yogurt category mean are explicitly labelled. Three quantified omissions total 0.2373 g CHO per serving.",
+          "Independent Decimal arithmetic, source scope and FI/EN/SV/TH quantities are documented in the bound review."
+        ],
+        "contentChange": "GK_ONLY",
+        "contentSummary": "Makeuttamaton Alpro-mantelijuoma, maustamaton kreikkalainen 7 % jogurtti ja kaksi raakamarjojen vertailuskenaariota neljälle.",
+        "outcome": "OWNER_DECISION",
+        "review": {
+          "depth": "DEEP",
+          "evidence": "docs/nutrition/gk100-v3-batch01-chiavanukas-review.md"
+        }
+      }
+    }
+  ]
+}

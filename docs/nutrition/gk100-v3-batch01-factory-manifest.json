@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "batchId": "gk100-sqlite-v3-batch01",
+  "candidates": [
+    {
+      "recipeId": "marjainen-chiavanukas",
+      "packetPath": "docs/nutrition/gk100-v3-batch01-chiavanukas-release-candidate.json",
+      "originalPath": "reseptit/aamupalat/marjainen-chiavanukas.md",
+      "supportFiles": {
+        "docs/nutrition/gk100-v3-batch01-chiavanukas-review.md": "7ed598da90a430f4f551613533c2dd6ac67b6e74d1554adf0d9747c025043088"
+      },
+      "candidateSha256": "f16458e51d4e1a4e69aed52f88730ef312da135f9a720dddf49897f68057e57c",
+      "originalSha256": "c4c9c7a14345199304e7221fab28633a4a9abeffa3c99afc780cb5360824ec22",
+      "inputSha256": "c660bc5a88906e4a4b887105bc9bd66879b2eb44c0f5c1f262a41b7acfe41f0b",
+      "servings": 4,
+      "method": "A",
+      "point": null,
+      "range": {
+        "min": 1.4429550000000002,
+        "max": 1.6286925
+      },
+      "uncertainty": "NAMED_SCENARIOS",
+      "limitation": {
+        "fi": "Kaksi matalan luottamuksen skenaariota käyttävät vadelmalle mansikan tai kanadalaisen villimustikan GI:tä. Metsämustikalle käytetään villimustikan vertailua ja jogurtille maustamattoman jogurtin ryhmäkeskiarvoa. Chian, mantelijuoman ja vaniljan 0,2373 g saatavaa CHO:ta annosta kohti jää summan ulkopuolelle.",
+        "en": "The two low-confidence scenarios use strawberry or Canadian wild blueberry GI for raspberry. Bilberry uses the wild blueberry comparator, and the yogurt uses a plain-yogurt category average. The sum omits 0.2373 g available carbohydrate per serving from chia, almond drink and vanilla.",
+        "sv": "De två scenarierna med låg tillförlitlighet använder GI för jordgubbe eller kanadensiskt vilt blåbär för hallon. Skogsblåbär jämförs med vilt blåbär och yoghurten använder gruppens medelvärde för naturell yoghurt. Beräkningen utelämnar 0,2373 g tillgängliga kolhydrater per portion från chia, mandeldryck och vanilj.",
+        "th": "สองกรณีประมาณการที่มีความเชื่อมั่นต่ำใช้ค่า GI ของสตรอว์เบอร์รีหรือบลูเบอร์รีป่าแคนาดาแทนราสป์เบอร์รี ใช้บลูเบอร์รีป่าเป็นตัวเปรียบเทียบของบิลเบอร์รี และใช้ค่าเฉลี่ยกลุ่มโยเกิร์ตรสธรรมชาติ การคำนวณไม่นับคาร์โบไฮเดรตที่ย่อยได้จากเจีย เครื่องดื่มอัลมอนด์ และวานิลลารวม 0.2373 กรัมต่อส่วน"
+      },
+      "omittedCho": 0.2373,
+      "sources": [
+        {
+          "title": "University of Sydney GI Search, raw berry comparators",
+          "url": "https://glycemicindex.com/gi-search/",
+          "kind": "HUMAN_GI",
+          "note": "Glucose-scale raw strawberry GI 40 and Canadian wild blueberry GI 53. Neither is a measured GI of raspberry or Finnish bilberry."
+        },
+        {
+          "title": "Wolever, 2017, Table 1",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28615381/",
+          "kind": "HUMAN_GI",
+          "note": "Category mean of 43 plain or artificially sweetened yogurt GI entries, 26.6 rounded to 27. Product-specific GI was not measured."
+        },
+        {
+          "title": "THL Fineli, FSANZ AFCD and USDA mass evidence",
+          "url": "https://github.com/ozirix-dev/Reseptit/blob/5cbd538587904fea02378a1773c2c8e1c24b6346/docs/research/gk80-international-20261102/breakfast-versions/chia-unsweetened-version.json",
+          "kind": "CARBOHYDRATE",
+          "note": "Pinned source file SHA-256 a3be56ae922d3f3a74636e72f913856c15b6115a1d91aea8e8767904423deab8; Fineli 34847, 34738, 34611, 448, 442 and AFCD F009350. USDA FDC 173471 supplies mass only."
+        }
+      ],
+      "omittedChoStressGkAtGi100": 0.2373,
+      "suggestedRisk": "MEDIUM",
+      "riskSignals": [
+        "NAMED_SCENARIO_RANGE",
+        "CHO_OMITTED"
+      ],
+      "localeFields": "PRESENT",
+      "classification": {
+        "candidateSha256": "f16458e51d4e1a4e69aed52f88730ef312da135f9a720dddf49897f68057e57c",
+        "risk": "HIGH",
+        "reasons": [
+          "Raw berry analogues and a plain-yogurt category mean are explicitly labelled. Three quantified omissions total 0.2373 g CHO per serving.",
+          "Independent Decimal arithmetic, source scope and FI/EN/SV/TH quantities are documented in the bound review."
+        ],
+        "contentChange": "GK_ONLY",
+        "contentSummary": "Makeuttamaton Alpro-mantelijuoma, maustamaton kreikkalainen 7 % jogurtti ja kaksi raakamarjojen vertailuskenaariota neljälle.",
+        "outcome": "OWNER_DECISION",
+        "review": {
+          "depth": "DEEP",
+          "evidence": "docs/nutrition/gk100-v3-batch01-chiavanukas-review.md"
+        }
+      },
+      "technical": "PASS",
+      "state": "OWNER_DECISION",
+      "reason": null,
+      "ownerStatus": "PENDING",
+      "publicationAuthorized": false
+    }
+  ],
+  "manifestSha256": "f6b6a2d725cc79b16a29038d4863587d46a63aa4526608e6bb8e74c3b2f9a50e"
+}
