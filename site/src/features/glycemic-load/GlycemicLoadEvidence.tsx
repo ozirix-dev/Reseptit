@@ -105,4 +105,3 @@ export function MissingEstimate({ result, locale, explanation }: {
     </details> : null}
   </>;
 }
-

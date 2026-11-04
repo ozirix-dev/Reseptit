@@ -243,4 +243,3 @@ export function missingReason(locale: RecipeLocale, category: string) {
   const { blockers } = gkCopy[locale];
   return Object.hasOwn(blockers, category) ? blockers[category as keyof typeof blockers] : blockers.UNKNOWN;
 }
-
