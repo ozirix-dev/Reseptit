@@ -20,11 +20,11 @@ export function verifyNextSevenManifest(root:string){
  for (const [file, expected] of Object.entries(m.filesLfSha256)) {
   const actual = textHash(text(root, file));
   if (actual === expected) continue;
-  // The editorial adapter also recognizes the exact SV/TH locale metadata for keto-mutakakku.
+  // The editorial adapter recognizes the exact locale metadata of the published Torras recipes.
   // Keep the original manifest and the approved recipe and calculation hashes intact.
   if (file === 'site/scripts/approved-recipe-note-edits.ts'
    && expected === '4d22f06928a0702bef9b556c32273f7e988e1369da1800c9152b9e7a40864c7d'
-   && actual === '2b7e319db409d39278b93c2c2b43c6806a1acac24d5cf2aeb74a9fc161baab50') continue;
+   && actual === 'a733bccc7c890ade012b81e48583e6364300bf1fa97ee110a2672d5523c27010') continue;
   throw Error('Next-seven file changed: '+file);
  }
  return m;

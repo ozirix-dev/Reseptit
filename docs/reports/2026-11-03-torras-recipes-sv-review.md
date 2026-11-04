@@ -8,4 +8,4 @@ Keto-suklaakeksit ja mehevä suklaakakku verrattiin suomenkielisiin resepteihin 
 
 **STRUCTURE PASS.** Projektin rakennetarkistus ajettu molemmille ruotsinnoksille muistissa julkaisutilaa vastaavalla metadatalla ja nykyisillä FI-lähteillä. Myös englanninkieliset vertailuparit läpäisivät. Torras-komponentin neljä testiä läpäisivät.
 
-**AUTOMATED SEMANTIC REVIEW / HUMAN REVIEW PENDING.** Kielimalli vertasi käännöksiä lähteisiin. Riippumatonta ihmisen kielentarkistusta ei ole dokumentoitu. Molemmat uudet ruotsinnokset odottavat julkaisupäätöstä luonnoksina.
+**AUTOMATED SEMANTIC REVIEW / HUMAN REVIEW PENDING.** Kielimalli vertasi käännöksiä lähteisiin. Riippumatonta ihmisen kielentarkistusta ei ole dokumentoitu. Käyttäjä hyväksyi molempien ruotsinnosten ja Torras-vertailun julkaisun. Käännökset vastaavat katselmoitua committia e70057d325b564f9e8406470fdd6f0a458087a28 julkaisutilaa lukuun ottamatta.

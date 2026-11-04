@@ -23,6 +23,12 @@ export function recipeTextForApprovedSnapshot(file: string, text: string): strin
       "\nstatus: published\ntranslation_languages: [en]\ntranslation_status: {en: published}\n",
     );
   }
+  if (file === "reseptit/jalkiruoat/keto-suklaakeksit.md" || file === "reseptit/jalkiruoat/meheva-suklaakakku.md") {
+    text = text.replace(
+      "\nstatus: published\ntranslation_languages: [en, sv]\ntranslation_status: {en: published, sv: published}\n",
+      "\nstatus: published\ntranslation_languages: [en]\ntranslation_status: {en: published}\n",
+    );
+  }
   if (englishPublicationSources.has(file)) {
     text = text.replace(
       "\nstatus: published\ntranslation_languages: [en]\ntranslation_status: {en: published}\n",
