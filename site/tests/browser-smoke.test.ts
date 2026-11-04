@@ -198,7 +198,7 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
     await methodLink.focus();
     assert.equal(await methodLink.evaluate((element) => element.matches(":focus-visible")), true);
     await page.keyboard.press("Enter");
-    await page.getByRole("heading", { name: "Glykeeminen kuorma: lähteet ja laskenta" }).waitFor();
+    await page.getByRole("heading", { name: "Reseptien glykeeminen kuorma (GK)" }).waitFor();
     assert.ok(page.url().includes("#hummus"));
     assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true, "central GK details fit 320px");
     const sourceSummary = page.locator("#hummus summary");
@@ -206,7 +206,7 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
     await page.keyboard.press("Enter");
     assert.equal(await page.locator("#hummus details").evaluate((element) => (element as HTMLDetailsElement).open), true);
     await page.getByRole("link", { name: "English", exact: true }).click();
-    await page.getByRole("heading", { name: "Glycemic load: sources and method" }).waitFor();
+    await page.getByRole("heading", { name: "Glycemic load (GL) of recipes" }).waitFor();
     assert.ok(page.url().includes("/en/glycemic-load/"));
     await page.setViewportSize({ width: 320, height: 800 });
     assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true);
