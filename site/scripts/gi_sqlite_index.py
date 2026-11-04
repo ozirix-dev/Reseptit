@@ -7,6 +7,8 @@ from __future__ import annotations
 
 import argparse
 from contextlib import closing
+import ctypes
+import errno
 import hashlib
 import json
 import math
@@ -125,12 +127,40 @@ def _build_index(source: Path, destination: Path, raw: bytes, source_sha256: str
     return {"sourceSha256": source_sha256, "sources": len(sources), "records": len(records), "db": str(destination)}
 
 
+def _create_index_file(temporary: str, destination: Path) -> None:
+    if os.name == "nt":
+        os.rename(temporary, destination)  # Windows rename fails if the destination exists.
+        return
+
+    try:
+        os.link(temporary, destination)
+        return
+    except OSError as exc:
+        if exc.errno not in {errno.EPERM, errno.ENOSYS, errno.ENOTSUP}:
+            raise
+        # Some filesystems support exclusive rename but lack hard links.
+        libc = ctypes.CDLL(None, use_errno=True)
+        source, target = os.fsencode(temporary), os.fsencode(destination)
+        if sys.platform == "linux" and hasattr(libc, "renameat2"):
+            rename = libc.renameat2
+            rename.argtypes = [ctypes.c_int, ctypes.c_char_p, ctypes.c_int, ctypes.c_char_p, ctypes.c_uint]
+            at_fdcwd, rename_noreplace = -100, 1
+            result = rename(at_fdcwd, source, at_fdcwd, target, rename_noreplace)
+        elif sys.platform == "darwin" and hasattr(libc, "renamex_np"):
+            rename = libc.renamex_np
+            rename.argtypes = [ctypes.c_char_p, ctypes.c_char_p, ctypes.c_uint]
+            rename_excl = 4
+            result = rename(source, target, rename_excl)
+        else:
+            raise
+        if result != 0:
+            code = ctypes.get_errno()
+            raise OSError(code, os.strerror(code), destination) from exc
+
+
 def _publish_index(temporary: str, destination: Path) -> None:
     try:
-        if os.name == "nt":
-            os.rename(temporary, destination)  # Windows rename does not replace an existing file.
-        else:
-            os.link(temporary, destination)  # Publish a complete file without replacing anything.
+        _create_index_file(temporary, destination)
     except FileExistsError:
         with closing(_open_index(destination)) as existing:
             _index_metadata(existing)

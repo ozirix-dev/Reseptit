@@ -1,6 +1,7 @@
 """No dependencies beyond Python stdlib. Run: python3 -m unittest discover -s site/tests -p 'test_gi_sqlite_index.py'"""
 
 from contextlib import closing
+import errno
 import importlib.util
 import json
 import os
@@ -133,6 +134,25 @@ class GiSqliteIndexTests(unittest.TestCase):
             with self.assertRaises(index.sqlite3.DatabaseError):
                 index.build_index(self.source, self.db)
         self.assertEqual(self.db.read_bytes(), b"other application's data")
+
+    def test_publication_falls_back_to_exclusive_rename_without_hard_links(self):
+        for platform, function, args in (
+            ("linux", "renameat2", (-100, b"staging", -100, b"target", 1)),
+            ("darwin", "renamex_np", (b"staging", b"target", 4)),
+        ):
+            with self.subTest(platform=platform), \
+                 patch.object(index.os, "name", "posix"), \
+                 patch.object(index.sys, "platform", platform), \
+                 patch.object(index.os, "link", side_effect=OSError(errno.ENOTSUP, "no hard links")), \
+                 patch.object(index.ctypes, "CDLL") as load:
+                rename = getattr(load.return_value, function)
+                rename.return_value = 0
+                index._create_index_file("staging", "target")
+                rename.assert_called_once_with(*args)
+                rename.return_value = -1
+                with patch.object(index.ctypes, "get_errno", return_value=errno.EEXIST):
+                    with self.assertRaises(FileExistsError):
+                        index._create_index_file("staging", "target")
 
     def test_unc_path_uses_empty_sqlite_uri_authority(self):
         with patch.object(Path, "resolve") as resolve, patch.object(index.sqlite3, "connect") as connect:
