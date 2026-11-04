@@ -1,5 +1,6 @@
 """No dependencies beyond Python stdlib. Run: python3 -m unittest discover -s site/tests -p 'test_gi_sqlite_index.py'"""
 
+from contextlib import closing
 import importlib.util
 import json
 import os
@@ -28,9 +29,11 @@ class GiSqliteIndexTests(unittest.TestCase):
             "records": [
                 {"id": "raw", "foodKey": "potato", "preparationKey": "raw", "gi": 50,
                  "qualityTier": "SUPPLEMENTARY", "referenceScale": "GLUCOSE_100",
-                 "matchKind": "ANALOG", "source": {"url": "https://example.org/raw", "table": "A"}},
+                 "matchKind": "ANALOG", "evidenceKind": "PUBLISHED_IMPUTATION",
+                 "source": {"url": "https://example.org/raw", "table": "A"}},
                 {"id": "boiled", "foodKey": "potato", "preparationKey": "boiled", "gi": 101,
                  "qualityTier": "STRONG", "referenceScale": "GLUCOSE_100",
+                 "calculationUse": "REFERENCE_ONLY",
                  "source": {"url": "https://example.org/boiled", "table": "B"}},
             ],
         }
@@ -46,12 +49,16 @@ class GiSqliteIndexTests(unittest.TestCase):
         result = index.lookup(self.source, self.db, "potato", "boiled")
         self.assertEqual([r["recordId"] for r in result["candidates"]], ["boiled"])
         self.assertEqual(result["candidates"][0]["gi"], 101)
+        self.assertEqual(result["candidates"][0]["calculationUse"], "REFERENCE_ONLY")
         self.assertEqual(result["candidates"][0]["sourceUrl"], "https://example.org/boiled")
         self.assertTrue(result["candidates"][0]["requiresRecipeSpecificApproval"])
         self.assertFalse(result["autoApproved"])
         comparison = index.lookup(self.source, self.db, "potato", "boiled", include_other_preparations=True)
         self.assertEqual(len(comparison["candidates"]), 2)
         self.assertEqual(comparison["candidates"][1]["matchAssessment"], "PREPARATION_NOT_ESTABLISHED")
+        self.assertEqual(comparison["candidates"][1]["evidenceKind"], "PUBLISHED_IMPUTATION")
+        limited = index.lookup(self.source, self.db, "potato", "raw", include_other_preparations=True, limit=1)
+        self.assertEqual([r["recordId"] for r in limited["candidates"]], ["raw"])
         self.assertEqual(index.lookup(self.source, self.db, "potato", "roasted")["candidates"], [])
         self.assertEqual(index.lookup(self.source, self.db, "banana", "boiled")["candidates"], [])
 
@@ -97,6 +104,32 @@ class GiSqliteIndexTests(unittest.TestCase):
         with self.assertRaises(index.sqlite3.DatabaseError):
             index.lookup_batch(self.source, self.db, [{"food_key": "potato"}])
         self.assertEqual(self.db.read_bytes(), b"not a generated GI index")
+
+    def test_build_and_batch_preserve_unrelated_sqlite_database(self):
+        with closing(index.sqlite3.connect(self.db)) as db, db:
+            db.execute("CREATE TABLE metadata (key TEXT PRIMARY KEY, value TEXT NOT NULL)")
+            db.executemany("INSERT INTO metadata VALUES (?, ?)", [
+                ("schema_version", "1"), ("source_sha256", "unrelated"),
+                ("source_count", "1"), ("record_count", "1"),
+            ])
+        original = self.db.read_bytes()
+        with self.assertRaisesRegex(ValueError, "not a GI index"):
+            index.build_index(self.source, self.db)
+        with self.assertRaisesRegex(ValueError, "not a GI index"):
+            index.lookup_batch(self.source, self.db, [{"food_key": "potato"}])
+        self.assertEqual(self.db.read_bytes(), original)
+
+    def test_legacy_index_is_readable_and_gets_marker_on_rebuild(self):
+        index.build_index(self.source, self.db)
+        with closing(index.sqlite3.connect(self.db)) as db, db:
+            db.execute("PRAGMA application_id = 0")
+        self.assertEqual(index.lookup(self.source, self.db, "potato", "raw")["candidates"][0]["gi"], 50)
+        self.data["records"][0]["gi"] = 58
+        self.write()
+        result = index.lookup_batch(self.source, self.db, [{"food_key": "potato", "preparation_key": "raw"}])
+        self.assertEqual(result[0]["candidates"][0]["gi"], 58)
+        with closing(index.sqlite3.connect(self.db)) as db:
+            self.assertEqual(db.execute("PRAGMA application_id").fetchone()[0], index.APPLICATION_ID)
 
     def test_stale_source_and_rebuild(self):
         index.build_index(self.source, self.db)

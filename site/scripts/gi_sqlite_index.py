@@ -19,6 +19,14 @@ import tempfile
 ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_SOURCE = ROOT / "docs/nutrition/glycemic-index-records.json"
 SCHEMA_VERSION = "1"
+APPLICATION_ID = 0x474B4749  # GKGI
+LEGACY_SCHEMA_OBJECTS = {
+    ("table", "metadata", "metadata"),
+    ("table", "source_registry", "source_registry"),
+    ("table", "gi_record", "gi_record"),
+    ("index", "gi_food", "gi_record"),
+    ("index", "gi_food_preparation", "gi_record"),
+}
 
 
 def _digest(raw: bytes) -> str:
@@ -67,6 +75,7 @@ def _build_index(source: Path, destination: Path, raw: bytes, source_sha256: str
     os.close(fd)
     try:
         with closing(sqlite3.connect(temporary)) as db, db:
+            db.execute(f"PRAGMA application_id = {APPLICATION_ID}")
             db.executescript("""
                 CREATE TABLE metadata (key TEXT PRIMARY KEY, value TEXT NOT NULL);
                 CREATE TABLE source_registry (
@@ -109,6 +118,9 @@ def _build_index(source: Path, destination: Path, raw: bytes, source_sha256: str
                     str(ref.get("table") or ref.get("locator") or ""),
                     json.dumps(row, sort_keys=True, ensure_ascii=False),
                 ))
+        if destination.exists() or destination.is_symlink():
+            with closing(_open_index(destination)) as existing:
+                _index_metadata(existing)
         os.replace(temporary, destination)
     finally:
         if os.path.exists(temporary):
@@ -116,13 +128,31 @@ def _build_index(source: Path, destination: Path, raw: bytes, source_sha256: str
     return {"sourceSha256": source_sha256, "sources": len(sources), "records": len(records), "db": str(destination)}
 
 
+def _open_index(destination: Path) -> sqlite3.Connection:
+    return sqlite3.connect(destination.resolve().as_uri() + "?mode=ro", uri=True)
+
+
+def _index_metadata(db: sqlite3.Connection) -> dict:
+    application_id = db.execute("PRAGMA application_id").fetchone()[0]
+    if application_id == 0:
+        # The initial V1 cache did not have a marker. Recognize its specific schema.
+        objects = set(db.execute(
+            "SELECT type, name, tbl_name FROM sqlite_master WHERE name NOT GLOB 'sqlite_*'"
+        ))
+        if objects != LEGACY_SCHEMA_OBJECTS:
+            raise ValueError("SQLite file is not a GI index")
+    elif application_id != APPLICATION_ID:
+        raise ValueError("SQLite file is not a GI index")
+    meta = dict(db.execute("SELECT key, value FROM metadata"))
+    if not {"schema_version", "source_sha256", "source_count", "record_count"} <= meta.keys():
+        raise ValueError("SQLite file is missing GI index metadata")
+    return meta
+
+
 def _open_verified(destination: Path, source_sha256: str) -> sqlite3.Connection:
-    db = sqlite3.connect(destination.resolve().as_uri() + "?mode=ro", uri=True)
-    db.row_factory = sqlite3.Row
+    db = _open_index(destination)
     try:
-        meta = dict(db.execute("SELECT key, value FROM metadata"))
-        if "schema_version" not in meta or "source_sha256" not in meta:
-            raise ValueError("SQLite file is missing GI index metadata")
+        meta = _index_metadata(db)
         if meta["schema_version"] != SCHEMA_VERSION:
             raise StaleIndexError("SQLite index schema mismatch: rebuild required")
         if meta["source_sha256"] != source_sha256:
@@ -130,6 +160,7 @@ def _open_verified(destination: Path, source_sha256: str) -> sqlite3.Connection:
     except Exception:
         db.close()
         raise
+    db.row_factory = sqlite3.Row
     return db
 
 
@@ -172,17 +203,24 @@ def _lookup(db: sqlite3.Connection, food_key: str, preparation_key: str | None =
     if preparation_key is not None and not include_other_preparations:
         query += " AND preparation_key = ?"
         params.append(preparation_key)
-    query += " ORDER BY preparation_key, id LIMIT ?"
+    query += " ORDER BY "
+    if preparation_key is not None and include_other_preparations:
+        query += "(preparation_key = ?) DESC, "
+        params.append(preparation_key)
+    query += "preparation_key, id LIMIT ?"
     params.append(limit)
     rows = db.execute(query, params).fetchall()
     candidates = []
     for row in rows:
+        evidence = json.loads(row["payload_json"])
         same_preparation = preparation_key is not None and row["preparation_key"] == preparation_key
         candidates.append({
             "recordId": row["id"], "foodKey": row["food_key"],
             "preparationKey": row["preparation_key"], "gi": row["gi"],
             "referenceScale": row["reference_scale"], "qualityTier": row["quality_tier"],
             "matchKind": row["match_kind"] or "UNSPECIFIED",
+            "calculationUse": evidence.get("calculationUse"),
+            "evidenceKind": evidence.get("evidenceKind"),
             "confidence": row["confidence"], "sourceUrl": row["source_url"],
             "sourceLocator": row["source_locator"],
             "matchAssessment": "SAME_PREPARATION_KEY_NEEDS_REVIEW" if same_preparation else "PREPARATION_NOT_ESTABLISHED",

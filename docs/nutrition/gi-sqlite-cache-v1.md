@@ -10,7 +10,7 @@ Pythonin vakio-sqlite3:lla rakennetaan paikallinen ja kokonaan uudelleen rakenne
 
 Taulut source_registry, gi_record ja metadata säilyttävät lähdetunnisteet, GI-tietueet, valmistustapa- ja elintarvikeavaimet sekä lähdeviitteet. Indeksit food_key ja food_key+preparation_key nopeuttavat hakuja. Tietokantaan tallennetaan alkuperäisen JSON-tiedoston SHA-256. Erähaku lukee ja tiivistää lähdetiedoston kerran. Se rakentaa puuttuvan tai vanhentuneen GI-indeksin samasta aineistosta ja tekee haut yhdellä lukuoikeuksin avatulla yhteydellä. Seuraava erä tarkistaa lähdeaineiston uudelleen. Yksittäishaku ja tilastokomento ilmoittavat vanhentuneesta indeksistä virheen.
 
-Tulos erottaa GI-arvon, laadun, analogian ja valmistustavan. Kaikki tulokset vaativat edelleen reseptikohtaisen katselmoinnin. Eri valmistustapojen tuloksia saa pyytää vain tutkimusvertailuun, ei automaattiseksi vastineeksi.
+Tulos erottaa GI-arvon, laadun, analogian, valmistustavan, näyttötyypin ja käyttörajoituksen. Vertailuhaussa pyydetyn valmistustavan osumat tulevat ennen muita. Indeksin rakentaminen tarkistaa olemassa olevan kohdetiedoston tunnisteen tai ensimmäisen V1-version rakenteen ennen korvaamista. Kaikki tulokset vaativat edelleen reseptikohtaisen katselmoinnin. Eri valmistustapojen tuloksia saa pyytää vain tutkimusvertailuun, ei automaattiseksi vastineeksi.
 
 ## Komennot (repojuuresta)
 
