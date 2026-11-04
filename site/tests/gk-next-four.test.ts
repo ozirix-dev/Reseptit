@@ -21,6 +21,7 @@ const root=fileURLToPath(new URL('../../',import.meta.url)),folder='docs/nutriti
 const read=(p:string)=>JSON.parse(readFileSync(path.join(root,p),'utf8'));
 const four=buildApprovedFourVariants(root),loaded=loadApprovedFour(root),manifest=verifyNextFourManifest(root),baseline=read(folder+'main-baseline.json');
 const old=[...buildGkOnlyVariants(root),...buildApprovedSevenVariants(root)];
+const yakiOnigiri = gkOnlyVariants.find(v => v.versionId === 'gk-operation80-review-aaceff8adf0d');
 const render=(v:GkOnlyVariant,locale:'fi'|'en'|'sv'|'th',servings=v.servings)=>renderToStaticMarkup(h(MemoryRouter,null,h(GkOnlyVariantPanel,{variant:v,locale,servings})));
 
 test('the four A inputs and legacy coverage remain intact alongside authorized GK100 releases',()=>{
@@ -237,4 +238,16 @@ test('approved almond pies retain their exact results and apple sweetener measur
  assert.deepEqual(gkOnlyQuantity(apple, 3), {amount: 2, unit: 'tbsp'});
  assert.deepEqual(gkOnlyQuantity(apple, 9), {amount: 1, unit: 'tbsp'});
  assert.deepEqual(gkOnlyQuantity(rhubarb, 7), {amount: 5, unit: 'g'});
+});
+
+test('authorized yaki onigiri scales the cooked rice in every preparation locale', {
+ skip: !yakiOnigiri,
+}, () => {
+ assert.ok(yakiOnigiri);
+ const packet = read('docs/nutrition/gk80-operation80-yaki-onigiri-release-candidate.json');
+ for (const locale of ['fi', 'en', 'sv', 'th'] as const) {
+  assert.equal(gkOnlyPreparation(yakiOnigiri, locale), packet.preparation[locale].replace('{{servings}}', '2'));
+  assert.ok(gkOnlyPreparation(yakiOnigiri, locale, 4).includes(locale === 'th' ? '200 กรัม' : '200 g'));
+ }
+ assert.deepEqual(gkOnlyQuantity(yakiOnigiri, 0, 4), { amount: 200, unit: 'g' });
 });

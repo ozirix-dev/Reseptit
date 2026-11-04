@@ -145,3 +145,18 @@ test('an explicit exclusion requires a bound calculation note and cannot overlap
   packet.omissions = [{ ingredientIndex: 1, choPer100g: 0.5 }];
   assert.match(check().reason!, /duplicate GK ingredient accounting/);
 });
+
+
+test('published ingredients contain display fields only', () => {
+  const { batch, files, read } = fixture(1);
+  const entry = batch.candidates[0];
+  const packet = JSON.parse(read(entry.packetPath));
+  Object.assign(packet.ingredients[0], { choPer100g: 20, gi: 50, composition: { id: 'evidence' } });
+  const raw = JSON.stringify(packet);
+  files.set(entry.packetPath, raw);
+  entry.classification!.candidateSha256 = textHash(raw);
+
+  const checked = checkBatch(batch, read);
+  assert.equal(checked.manifest.candidates[0].state, 'READY_FOR_APPROVAL');
+  assert.deepEqual(checked.variants.get(entry.recipeId)?.ingredients, [{ name: locale, grams: 100 }]);
+});
