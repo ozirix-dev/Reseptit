@@ -448,7 +448,11 @@ test('the sealed Okayu version passes review with zero omissions and an exact me
     assert.equal(path, mixedApprovalPath);
     return JSON.stringify(approval);
   };
-  assert.throws(() => checkMixedReviewBatch(batch, read, readRepo), /MIXED_EVIDENCE_METHOD_APPROVAL_REQUIRED/);
+  const readMainWithoutApproval = (path: string) => {
+    if (path === mixedApprovalPath) throw Object.assign(new Error('Approval file absent in test'), { code: 'ENOENT' });
+    return readRepo(path);
+  };
+  assert.throws(() => checkMixedReviewBatch(batch, read, readMainWithoutApproval), /MIXED_EVIDENCE_METHOD_APPROVAL_REQUIRED/);
   assert.throws(() => checkMixedReviewBatch(batch, read, () => JSON.stringify({ ...approval, policySha256: '0'.repeat(64) })),
     /INVALID_OR_STALE_MIXED_EVIDENCE_METHOD_APPROVAL/);
   const [entry] = batch.candidates;
