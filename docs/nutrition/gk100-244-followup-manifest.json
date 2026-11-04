@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "batchId": "gk100-244-followup",
+  "candidates": [
+    {
+      "recipeId": "indonesialainen-tempeh-munakulho",
+      "packetPath": "docs/nutrition/gk100-tempeh-munakulho-release-candidate.json",
+      "originalPath": "reseptit/aamupalat/indonesialainen-tempeh-munakulho.md",
+      "supportFiles": {
+        "docs/nutrition/gk100-tempeh-munakulho-evidence.md": "ad8e4a37bd4bb340848eff9d21f7c96b1621d5135dd3e503d002ad624b0720a4"
+      },
+      "candidateSha256": "ecc4fc332fad08f52f9b65c8e36708548e11a90e5c9895d6b3137678aef6fcbb",
+      "originalSha256": "48c54ac345257f808fa457837f20af7f560128d891f3108efe1b37b4b76df3f8",
+      "inputSha256": "be1eb1c5accede0e6565d0fb08babc8d8c83b5cf024a3577a6671cd8f5b34336",
+      "servings": 2,
+      "method": "A",
+      "point": 35.802299999999995,
+      "range": null,
+      "uncertainty": "LOW_CONFIDENCE_POINT",
+      "limitation": {
+        "fi": "Arvio koskee nimettyjä tuotteita ja sambalia 10 g kahteen annokseen. Alkuperäisen ainesosaluettelossa sambalia on 150 g. Laskelma käyttää erikseen mitattua riisin GI:tä ja jättää lisukkeiden 0,42 g imeytyvää hiilihydraattia annosta kohti pois. Kulhon yhteistä glukoosivastetta ei ole mitattu.",
+        "en": "The estimate applies to the named products and 10 g of sambal for two portions. The original ingredient list gives 150 g. It uses the GI of rice measured on its own and omits 0.42 g of available carbohydrate from the toppings per portion. The glucose response to the complete bowl has not been measured.",
+        "sv": "Uppskattningen gäller de namngivna produkterna och 10 g sambal till två portioner. I den ursprungliga ingredienslistan anges 150 g. Beräkningen använder GI för ris som testats separat och utelämnar 0,42 g tillgängliga kolhydrater från tillbehören per portion. Glukossvaret för hela måltiden har inte mätts.",
+        "th": "ค่าประมาณนี้ใช้กับผลิตภัณฑ์ที่ระบุและซัมบัล 10 กรัมสำหรับสองส่วน สูตรเดิมระบุซัมบัล 150 กรัม การคำนวณใช้ค่า GI ของข้าวที่ทดสอบแยกและไม่นับคาร์โบไฮเดรตที่ย่อยได้ 0.42 กรัมต่อส่วนจากเครื่องเคียง ยังไม่มีการวัดการตอบสนองของระดับน้ำตาลในเลือดหลังรับประทานอาหารทั้งชาม"
+      },
+      "omittedCho": 0.42000000000000004,
+      "sources": [
+        {
+          "title": "Tan et al. (2015), British Journal of Nutrition",
+          "url": "https://www.cambridge.org/core/journals/british-journal-of-nutrition/article/glycaemic-and-insulin-responses-glycaemic-index-and-insulinaemic-index-values-of-rice-between-three-asian-ethnic-groups/A97C03E5E18463A673D31D071625D6A8",
+          "kind": "HUMAN_GI",
+          "note": "Glucose-reference GI 91.1 for the named jasmine rice prepared in a rice cooker. The test used 50 g available carbohydrate in 63.6 g dry rice."
+        },
+        {
+          "title": "FairPrice, Double FP Thai Hom Mali 2.5 kg",
+          "url": "https://www.fairprice.com.sg/product/double-fp-thai-hom-mali-premium-quality-fragrant-rice-2-5kg-13098979",
+          "kind": "CARBOHYDRATE",
+          "note": "Lists 79 g carbohydrate and 0.4 g dietary fibre per 100 g; the study implies 78.62 g available carbohydrate per 100 g."
+        },
+        {
+          "title": "Bio Planet, Organic Natural Tempeh, EAN 5902650278721",
+          "url": "https://bioplanet.pl/tempeh-naturalny-bio-300-g-bio-planet/p30192",
+          "kind": "CARBOHYDRATE",
+          "note": "0.2 g carbohydrate and 11 g fibre per 100 g."
+        },
+        {
+          "title": "THL Fineli 858, shelled egg",
+          "url": "https://fineli.fi/fineli/fi/elintarvikkeet/858",
+          "kind": "CARBOHYDRATE",
+          "note": "0.3 g available carbohydrate per 100 g. CC BY 4.0."
+        },
+        {
+          "title": "Inproba Sambal Oelek, label E06431",
+          "url": "https://www.inproba.com/oriental/products/2726/sambal-oelek-100-g/",
+          "kind": "CARBOHYDRATE",
+          "note": "3.1 g carbohydrate per 100 g."
+        }
+      ],
+      "omittedChoStressGkAtGi100": 0.42000000000000004,
+      "suggestedRisk": "MEDIUM",
+      "riskSignals": [
+        "CHO_OMITTED"
+      ],
+      "localeFields": "PRESENT",
+      "classification": {
+        "risk": "MEDIUM",
+        "reasons": [
+          "Nimetyn riisin ihmis-GI ja vastaava riisinkeitinmenetelmä. 78,6 g/100 g perustuu tutkimuksen 50 g:n CHO-annokseen.",
+          "Munan, tempehin ja sambalin poisjättö 0,420 g/annos. GI 100 -herkkyyskokeessa lisäys 0,420 GK, ja kokonaislukuarvio pysyy 36:ssa. Kulhon yhteistä glukoosivastetta ei ole mitattu.",
+          "Paketissa on neljä kielitekstiä. Alkuperäinen resepti on suomenkielinen. THL Fineli CC BY 4.0, muista lähteistä yksittäisiä lähteistettyjä lukuja."
+        ],
+        "contentChange": "GK_ONLY",
+        "contentSummary": "Erillinen kahden annoksen GK-versio. Nimetty Double FP -riisi kypsennetään annoksittain riisinkeittimessä 100 g / 204 ml koko erälle. Käytetään Bio Planet -tempehiä, 110 g kuoretonta munaa ja 10 g Inproba-sambalia alkuperäisen ainesosaluettelon 150 g:n sijaan. Paistoon 5 g rypsiöljyä ja maustamiseen 1 g suolaa.",
+        "outcome": "OWNER_DECISION",
+        "review": {
+          "depth": "FOCUSED",
+          "evidence": "docs/nutrition/gk100-tempeh-munakulho-evidence.md"
+        },
+        "candidateSha256": "ecc4fc332fad08f52f9b65c8e36708548e11a90e5c9895d6b3137678aef6fcbb"
+      },
+      "technical": "PASS",
+      "state": "OWNER_DECISION",
+      "reason": null,
+      "ownerStatus": "PENDING",
+      "publicationAuthorized": false
+    }
+  ],
+  "manifestSha256": "14bd80a034232e425ac8aefbbcfbc52d406cb94f277f04ec1976850575d5ace3"
+}

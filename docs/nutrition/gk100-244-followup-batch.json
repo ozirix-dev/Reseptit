@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "batchId": "gk100-244-followup",
+  "candidates": [
+    {
+      "recipeId": "indonesialainen-tempeh-munakulho",
+      "packetPath": "docs/nutrition/gk100-tempeh-munakulho-release-candidate.json",
+      "classification": {
+        "risk": "MEDIUM",
+        "reasons": [
+          "Nimetyn riisin ihmis-GI ja vastaava riisinkeitinmenetelmä. 78,6 g/100 g perustuu tutkimuksen 50 g:n CHO-annokseen.",
+          "Munan, tempehin ja sambalin poisjättö 0,420 g/annos. GI 100 -herkkyyskokeessa lisäys 0,420 GK, ja kokonaislukuarvio pysyy 36:ssa. Kulhon yhteistä glukoosivastetta ei ole mitattu.",
+          "Paketissa on neljä kielitekstiä. Alkuperäinen resepti on suomenkielinen. THL Fineli CC BY 4.0, muista lähteistä yksittäisiä lähteistettyjä lukuja."
+        ],
+        "contentChange": "GK_ONLY",
+        "contentSummary": "Erillinen kahden annoksen GK-versio. Nimetty Double FP -riisi kypsennetään annoksittain riisinkeittimessä 100 g / 204 ml koko erälle. Käytetään Bio Planet -tempehiä, 110 g kuoretonta munaa ja 10 g Inproba-sambalia alkuperäisen ainesosaluettelon 150 g:n sijaan. Paistoon 5 g rypsiöljyä ja maustamiseen 1 g suolaa.",
+        "outcome": "OWNER_DECISION",
+        "review": {
+          "depth": "FOCUSED",
+          "evidence": "docs/nutrition/gk100-tempeh-munakulho-evidence.md"
+        },
+        "candidateSha256": "ecc4fc332fad08f52f9b65c8e36708548e11a90e5c9895d6b3137678aef6fcbb"
+      }
+    }
+  ]
+}
