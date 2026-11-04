@@ -192,6 +192,7 @@ export function auditRecipePairs(allSources: TranslationAuditResult["publishedSo
       if (!source.data.translation_languages?.includes(locale)) issues.push(`source translation_languages does not list ${locale}`);
       if (target.translation_of !== source.data.recipe_id) issues.push(`translation_of=${target.translation_of ?? "missing"}`);
       if (target.source_recipe !== source.path) issues.push(`source_recipe=${target.source_recipe ?? "missing"}, expected ${source.path}`);
+      if (target.source_language !== source.data.language) issues.push(`source_language=${target.source_language ?? "missing"}, expected ${source.data.language}`);
       if (target.language !== locale) issues.push(`language=${target.language}, expected ${locale}`);
       if (target.category !== source.data.category) issues.push(`category=${target.category}, expected ${source.data.category}`);
       if (target.servings !== source.data.servings) issues.push(`servings=${target.servings}, expected ${source.data.servings}`);
@@ -214,7 +215,14 @@ export function auditRecipePairs(allSources: TranslationAuditResult["publishedSo
         if ((source.data[key] ?? null) !== (target[key] ?? null)) issues.push(`${key}=${target[key] ?? null}, expected ${source.data[key] ?? null}`);
       }
       if ((source.data.diet_class ?? null) !== (target.diet_class ?? null)) issues.push(`diet_class=${target.diet_class ?? "missing"}, expected ${source.data.diet_class ?? "missing"}`);
-      if ((source.data.image?.src ?? null) !== (target.image?.src ?? null)) issues.push(`image=${target.image?.src ?? "missing"}, expected ${source.data.image?.src ?? "missing"}`);
+      const sourceImage = source.data.image;
+      const targetImage = target.image;
+      const imageIssues: string[] = [];
+      if (sourceImage?.src !== targetImage?.src) imageIssues.push(`image=${targetImage?.src ?? "missing"}, expected ${sourceImage?.src ?? "missing"}`);
+      if (sourceImage && targetImage && (sourceImage.width !== targetImage.width || sourceImage.height !== targetImage.height)) {
+        imageIssues.push(`image dimensions=${targetImage.width}x${targetImage.height}, expected ${sourceImage.width}x${sourceImage.height}`);
+      }
+      issues.push(...imageIssues);
       if (target.status !== "published") issues.push(`translation status is ${target.status}, expected published`);
       const sourceInstructions = instructionSection(source.content);
       const targetInstructions = instructionSection(translation.content);
@@ -229,7 +237,7 @@ export function auditRecipePairs(allSources: TranslationAuditResult["publishedSo
       const missingFacts = sourceFacts.filter((fact) => !targetFacts.includes(fact));
       if (missingFacts.length) issues.push(`instruction temperatures/durations missing from translation (${missingFacts.join(",")}; translation ${targetFacts.join(",")})`);
       issues.push(...knownTermErrors(source.data, target, locale, translation.content));
-      const metadataIssues = issues.filter((issue) => /translation_status|translation_languages|translation_of|source_recipe|language=|url_slug=|category=|servings=|cooking_method=|time_total_min|_per_serving_g|diet_class|image=|translation status/.test(issue));
+      const metadataIssues = issues.filter((issue) => /translation_status|translation_languages|translation_of|source_recipe|language=|url_slug=|category=|servings=|cooking_method=|time_total_min|_per_serving_g|diet_class|image=|image dimensions=|translation status/.test(issue));
       const ingredientIssues = issues.filter((issue) => /ingredient/.test(issue));
       const instructionIssues = issues.filter((issue) => /instruction step count|instruction temperatures\/durations/.test(issue));
       const risk = issues.some((issue) => /mistranslat|known mistranslated|beef mince translated|cabbage mistranslated|whipped cream translated/.test(issue)) ? "high" : issues.length ? "medium" : "low";
@@ -238,7 +246,7 @@ export function auditRecipePairs(allSources: TranslationAuditResult["publishedSo
         ingredient_check: ingredientIssues.length ? "FAIL" : "STRUCTURE PASS; wording not semantically proven",
         instruction_check: instructionIssues.length ? "FAIL" : "STEP COUNT/TIME/TEMPERATURE PASS; semantics not fully verified",
         metadata_check: metadataIssues.length ? "FAIL" : "PASS",
-        image_check: source.data.image?.src === target.image?.src ? "SAME FILE; visual audit not automated" : "FAIL",
+        image_check: imageIssues.length ? "FAIL" : "PASS; visual audit not automated",
         language_review: "Automated checks only; independent human language review pending",
         issues: issues.join("; "), risk_level: risk,
         review_status: issues.length ? "CORRECTION REQUIRED; HUMAN REVIEW PENDING" : "STRUCTURE PASS; AUTOMATED SEMANTIC REVIEW (known terms); HUMAN REVIEW PENDING",
@@ -277,6 +285,6 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
   const result = await auditTranslations();
   if (process.argv.includes("--write-reports")) await writeAuditReports(result);
   console.log(`Finnish sources: ${result.publishedSources.length}; published translations: ${result.publishedTranslations.length}; audited pairs: ${result.rows.length}; issues: ${result.errors.length}`);
-  for (const error of result.errors) console.log(`- ${error}`);
+  for (const error of result.errors) console.log(`- [BLOCKER] ${error}`);
   if (process.argv.includes("--strict") && result.errors.length) process.exitCode = 1;
 }

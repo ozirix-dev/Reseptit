@@ -1,71 +1,112 @@
 # Käännösten tarkistuskäytäntö
 
-Jokaisen reseptikäännösten lisäys- tai korjauskierroksen yhteydessä tehdään oma tarkistus. Tarkistuksessa:
+Reseptikäännös voidaan julkaista, kun automaattiset tarkistukset läpäisevät,
+Codex on verrannut sisällön merkitystä lähteeseen ja olennaisia virheitä ei
+ole avoinna. Riippumaton ihmistarkistus vaaditaan, jos olennainen
+turvallisuus- tai sisältöepäselvyys jää ratkaisematta. Muut julkaisu- ja
+hyväksyntäehdot määräytyvät projektin normaalin työnkulun mukaan.
 
-- verrataan käännöstä suomenkieliseen lähteeseen: ainesosien merkitys ja järjestys, määrät, yksiköt, annokset, kypsennystavat, valmistusajat ja numeeriset kypsennysarvot
-- etsitään kirjaimellisia tai asiayhteyteen sopimattomia käännöksiä, väärin kääntyneitä erikoistermejä sekä kuvausten ja ainesosien ristiriitoja
-- tarkistetaan otsikot, kuvan vaihtoehtotekstit, kielimerkinnät, julkaisu- ja luonnostilat sekä Markdown-rakenne
-- validoidaan käännösten metatiedot ja suoritetaan projektin käännösauditointi
-- tallennetaan päivätty raportti `docs/reports/`-hakemistoon, jossa kerrotaan laajuus, korjaukset, tarkistustulokset ja avoimet epävarmuudet
+## Tarkistus ennen julkaisua
 
-Automaattinen tarkistus ei yksinään todista käännöksen luontevuutta tai reseptin kulttuurista oikeellisuutta. Jos käännöstä ei ole tarkistanut kyseistä kieltä hyvin osaava ihminen, se merkitään raportissa tarkistamattomaksi ja pidetään luonnoksena, ellei käyttäjä erikseen pyydä julkaisemaan sitä.
+1. Tarkista PR:n automaattiset tulokset. Muuttuneiden reseptien CI-validaatio
+   tarkistaa Markdownin, metatiedot, kuvatiedostot ja reitit sekä ajaa
+   lähde–käännösparien auditoinnin muuttuneille reseptitunnuksille.
+   Auditointi vertaa julkaistuja kieliä ja tiloja, lähdeviitteitä,
+   annosmääriä, ainesosarivien lukumäärää ja rivikohtaisia määriä ja
+   yksiköitä, tunnistettuja kypsennysaikoja ja -lämpötiloja, ravintoarvoja
+   puuttuvine arvoineen sekä yhteistä kuvaa ja sen mittoja. GK:n nykyiset
+   sidontatarkistukset varmistavat hyväksyttyjen laskentaversioiden
+   linkityksen resepteihin.
+2. Vertaa Codexilla muuttunutta käännöstä suomenkieliseen lähteeseen.
+   Käy ainesosien merkitys ja järjestys läpi riveittäin. Vertaa
+   valmistusvaiheet, määrät, ajat, lämpötilat ja huomautukset. Tarkista
+   erityisesti raaka ja kypsä, eläin- ja kasvilajit, kerma ja vaahdotettu
+   kerma, rahka ja raejuusto, liemi ja fondi, tuore ja säilötty sekä
+   suklaa paloina ja sulatettuna. Varmista kieltomuodot, allergeenit ja
+   turvallisuuden kannalta olennaiset ohjeet. Tarkista otsikon,
+   kuvauksen, alt-tekstin ja hakutunnisteiden merkitys ja ymmärrettävyys.
+3. Kun sisältöön kuuluu GK-arvio, tarkista, että laskentaversio erottuu
+   alkuperäisestä, puuttuva arvio säilyy puuttuvana ja epävarmuus
+   ilmaistaan samalla tavalla. Avaa muuttuneet lähdelinkit ja varmista
+   niihin perustuvat väitteet. Tarkista myös muuttuneet sisäiset linkit.
+   Ratkaise lähteen epäselvyydet todisteiden avulla. Puuttuvaa määrää,
+   lämpötilaa tai ravintoarvoa ei päätellä esimerkiksi kuvasta.
+4. Kirjaa päivätty tarkistusyhteenveto ja sen kattamat tiedostot tai
+   resepti–kieli-parit PR:ään tai olemassa olevaan kierrosraporttiin.
+   Merkitse tarkistettu commit, automaattiset tulokset, todella tehty
+   merkitysvertailu ja avoimet havainnot perusteluineen. Lisää löydetylle
+   toistuvalle merkitysvirheelle rajattu regressiosuoja, kun se on
+   toteutettavissa luotettavasti.
 
-## Tarkistuksen tilat
+Auditointi tunnistaa tunnettuja sanavirheitä ja reseptikohtaisia
+regressioita. Se ei päättele vapaasta tekstistä kaikkien ainesosien
+vastaavuutta, työvaiheiden merkitystä, ylimääräisiä kypsennysarvoja tai
+kieliasun luontevuutta. Nämä tarkistetaan lähdevertailussa.
 
-- `STRUCTURE PASS`: julkaistujen vastineiden metadata, määrä/yksikkörivit,
-  työvaiheiden määrä ja tunnistetut numeeriset kypsennysarvot täsmäävät.
-- `AUTOMATED SEMANTIC REVIEW`: tunnetut virhetermit ja reseptikohtaiset
-  regressiot on tarkistettu. Kielimallin tekemä lähdevertailu raportoidaan
-  erikseen tällä tasolla; se ei ole riippumaton ihmistarkistus.
-- `HUMAN REVIEW PENDING`: kohdekielen osaajan arviota ei ole dokumentoitu.
-- `HUMAN REVIEW COMPLETE`: vain nimetyn ihmistarkistuksen todisteella,
-  päivämäärällä, tarkistetulla versiolla ja rajauksella.
+## Havaintojen vakavuus
 
-Tilat eivät korvaa toisiaan. Rakenteellisesti eheä käännös voi sisältää väärän
-ruoka-aineen, valmistusverbin tai kuvatekstin. Aiemmin käyttäjän pyynnöstä
-julkaistuja käännöksiä ei merkitä ihmistarkistetuiksi eikä poisteta julkaisusta
-automaattisesti tämän auditoinnin vuoksi.
+- **BLOCKER** estää julkaisun. Esimerkiksi automaattinen pakollinen
+  tarkistus epäonnistuu, olennainen ainesosa puuttuu, valmistukseen
+  vaikuttava määrä tai yksikkö on väärä, valmistusohje on vaarallinen,
+  allergeenitieto on virheellinen, GK on liitetty väärään reseptiversioon
+  tai lähteen kanssa on merkittävä ratkaisematon ristiriita. Korjaa ja
+  tarkista uudelleen. Jos olennainen turvallisuus- tai sisältöepäselvyys
+  jää ratkaisematta, pyydä ihmistarkistus ennen julkaisua.
+- **WARNING** on vähäinen poikkeama, kuten ymmärrettävä mutta kömpelö
+  sanamuoto tai puuttuva valinnainen selitys. Julkaisu voidaan sallia,
+  kun päätös ja perustelu kirjataan.
+- **INFO** on toimituksellinen havainto tai vaihtoehtoinen sanamuoto.
+  Sen voi käsitellä myöhemmässä erässä.
 
-## Ajantasainen inventaario
+Auditoinnin `STRUCTURE PASS` kuvaa rakennetarkistusta ja `AUTOMATED SEMANTIC REVIEW`
+tunnettujen virheiden automaattista tunnistusta. Raportoi Codexin tekemä
+lähdevertailu erikseen. `HUMAN REVIEW PENDING` kertoo, ettei ihmistarkistusta
+ole dokumentoitu. `HUMAN REVIEW COMPLETE` edellyttää dokumentoitua
+tarkistajaa, päivämäärää, versiota ja laajuutta. Inventaarion riskitasoja
+käytetään työjonon priorisointiin.
 
-Suorita `site/`-hakemistossa:
+## Virheilmoitukset
+
+Reseptisivun korjauslinkki vie
+[GitHub-issueihin](https://github.com/ozirix-dev/Reseptit/issues).
+Ylläpitäjä voi avata issuen myös muussa käytössä olevassa kanavassa
+saadusta ilmoituksesta, jolloin ilmoittaja ei tarvitse GitHub-tunnusta.
+
+- Reseptin URL
+- Kieli
+- Virheellinen kohta
+- Ehdotettu korjaus, jos tiedossa
+- Vaikutus käyttäjään ja arvioitu vakavuus
+
+Ylläpitäjä vertaa kohtaa lähteeseen, luokittelee havainnon ja kirjaa
+korjauksen sekä varmennuksen issueen. Käsittele vakavat turvallisuusvirheet
+kiireellisesti. Ryhmittele pienet kieliasukorjaukset eriin.
+
+## Riskiperusteinen eräauditointi
+
+Tarkista ensin ilmoitetut tai tunnetut olennaiset virheet. Rajaa seuraavat
+erät esimerkiksi raakaa eläinperäistä raaka-ainetta, säilytystä,
+kypsennyslämpötilaa, allergeeneja tai GK-versioita koskeviin resepteihin.
+Käy sen jälkeen läpi uudet ja muuttuneet käännökset, joista puuttuu
+merkitysvertailu, ja lopuksi vähäriskiset ryhmät. Rajaa erä resepteittäin
+ja kielittäin. Käytä nykyistä auditointia ja työjonoa kohteiden valintaan
+ja kirjaa kunkin erän todellinen tarkistuslaajuus.
+
+Aja komennot `site/`-hakemistossa:
 
 ```powershell
-npx tsx scripts/translation-audit.ts --strict --write-reports
+npm run validate:changed-content -- <muuttuneet reseptipolut>
 npm run test:translations
+npx tsx scripts/translation-audit.ts --strict
+npm run review:translations
 ```
 
-Tulokset ovat `docs/reports/translation-audit-current.csv` ja
-`docs/reports/recipe-inventory-current.csv`. Komento ei kirjoita historiallisia
-V1.3-raportteja uudelleen. Odotetut julkaistut kielet tulevat lähteen
-`translation_status`- ja `translation_languages`-metadatasta. Uusi resepti
-ei vaadi testien lukumäärävakion muuttamista. Luonnos ei ole julkaistu vastine.
+Polut annetaan repon juureen suhteutettuina. Valitse tarkistukset muutoksen
+mukaan. Lisää auditointikomentoon `--write-reports` vain, kun haluat päivittää
+inventaarion `docs/reports/translation-audit-current.csv` ja
+`docs/reports/recipe-inventory-current.csv`. Nykyisen työjonon käyttöohje
+on [ihmistarkistuksen työjonossa](translation-human-review.md).
 
-## Sisältötarkistuksen järjestys
-
-Vertaa ensin lähteen ja käännöksen ainesosat riveittäin. Tarkista sitten
-valmistus, ingressi, kuvaus, muistiinpanot, otsikko ja alt-teksti. Tarkista
-erityisesti eläin-/kasvilaji, raaka/kypsä, nestemäinen/vaahdotettu kerma,
-rahka/raejuusto, liemi/fondi ja tuore/säilötty tuote. Kuvaa ei käytetä
-perusteena muuttaa reseptin raaka-aineita.
-
-Todettu P0/P1-virhe korjataan lähteen tai luotettavan ruokaohjeen avulla.
-Epäselvä alkuperäinen ohje kirjataan päätettäväksi; puuttuvaa määrää,
-lämpötilaa tai ravintoarvoa ei päätellä ulkonäöstä. Suppeat regressiosäännöt
-eivät saa hylätä samoja sanoja oikein käyttävää toista reseptiä.
-
-V1.4:n laajuus, korjaukset ja avoimet havainnot ovat
-[sisältöraportissa](reports/2026-10-22-v1-4-content-quality.md).
-
-## Jatkotarkistuksessa opittu
-
-Tarkista ainesosien nimien lisäksi jokainen tekstihuomautus ja hakutunniste.
-Huomioi kieltomuodot: niiden katoaminen voi kääntää ravintoa tai valmistusta
-koskevan väitteen vastakkaiseksi. Vertaa myös raaka/kypsä-, liemi/tiiviste-
-ja uuni/pannu/grilli-merkityksiä sekä täytteen, pinnan ja tarjoilun eroa.
-
-Toistuvat tekstit saa tarkistaa ryhmissä, mutta raportoi erikseen koko aineiston
-rakennetarkistus ja semanttisen lähdevertailun todellinen laajuus. Tallenna
-jokaisesta kierroksesta päivätty raportti ja muuttuneiden kieliversioiden luettelo.
-Lisää löydetyille merkitysvirheille lähteeseen tai reseptiin rajattu regressiosuoja.
-Katso [22.10.2026 jatkotarkistus](reports/2026-10-22-translation-self-review.md).
+Aiemmat havainnot ja regressioesimerkit ovat
+[V1.4-sisältöraportissa](reports/2026-10-22-v1-4-content-quality.md) ja
+[jatkotarkistuksessa](reports/2026-10-22-translation-self-review.md).
