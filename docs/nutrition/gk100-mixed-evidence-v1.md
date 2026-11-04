@@ -16,23 +16,18 @@ Manifesti erittelee saatavan hiilihydraatin ja GK:n riveittäin sekä mitatun GI
 
 Teknisesti kelvollinen tulos jää tilaan `REVIEW_REQUIRED`, syynä `MIXED_EVIDENCE_METHOD_APPROVAL_REQUIRED`. Factory tuottaa katselmointierittelyn ilman julkaisuvarianttia. Käyttöönotto edellyttää ihmisen menetelmäpäätöstä V1:n soveltamisalasta ja epävarmuusrajoista. Sen lisäksi tarvitaan reseptikohtaiset sidosten katselmoinnit, omistajan sisältöpäätös ja erillinen tuotantovaltuutus. [Approval Factoryn nykyiset portit](gk100-approval-factory.md)
 
-## Päätösehdotus · koodien ja poisjättöjen yhteisvaikutus
+## Laskentakoodien epävarmuuden katselmointi
 
-Nykyiset 0,50 GK:n ja 10 %:n rajat seulovat vain poisjättöjä oletuksella GI 100. Ne voivat täyttyä, vaikka laskentakoodi määrää tuloksen. Ehdotan, että käyttöönotossa säilytetään nykyinen poisjättöseula ja lisätään erillinen yhteisvaikutuksen seula. Alla olevat rajat ovat ehdotettuja toimituksellisia rajoja. Niiden käytöstä tarvitaan menetelmäpäätös.
+Nykyiset 0,50 GK:n ja 10 %:n rajat seulovat poisjättöjä GI 100 -oletuksella. Manifesti ilmoittaa lisäksi, kuinka suuri osuus pistearviosta tulee koodeista. Stressiskenaarioissa näkyvät sekä koodien ja poisjättöjen erilliset vaikutukset että niiden yhteinen muutos GK-yksikköinä ja suhteessa pistearvioon.
 
-1. Säilytä mitattujen GI-rivien arvot. Laske kullekin koodiriville nimettyjen GI 0/100/150 -oletusten suurin nousu ja lasku sen omasta laskentapisteestä. Laske rivien nousut yhteen ja lisää poisjättöjen GI 150 -lisäys. Laske laskut erikseen yhteen. Näin yhden ainesosan oletusmuutos ei peitä toisen vaikutusta.
-2. Merkitse suurin yhteenlaskettu poikkeama GK-yksikköinä ja prosenttina laskentapisteestä. Ehdotus pistearvion jatkokatselmointiin on enintään **0,50 GK ja 10 %**. Jos jompikumpi ylittyy, pistearvio jää katselmointiin. Mahdollinen nimetty reseptiskenaario tarvitsee oman lähdeperusteensa.
-3. Tarkista, muuttuuko käyttäjälle näytettävä arvo tai luokka. Jos muuttuu, ratkaise esitystapa reseptikohtaisesti ennen pistearvion hyväksyntää. Esimerkkien läpäisy tarkoittaa yhteisvaikutuksen seulan läpäisyä.
+Menetelmäkatselmoinnin perusteella Factory nostaa kaksi alustavaa katselmointilippua. Rajat ovat toimituksellisia seulontarajoja. [Menetelmäkatselmointi](https://github.com/ozirix-dev/Reseptit/pull/250#pullrequestreview-5764235838)
 
-| Koetapaus | Laskentapiste | Koodattu CHO ja GK | Poisjätetty CHO | Yhteisvaikutus alas / ylös | Suurin suhteellinen poikkeama | Seula |
-| --- | ---: | --- | ---: | --- | ---: | --- |
-| Pieni koodiosuus | 14,10 | 0,20 g ja 0,10 GK | 0,10 g | 0,10 / 0,35 GK | 2,48 % | Läpäisee |
-| Koodi määrää tuloksen | 5,50 | 10,00 g ja 5,00 GK | 0,20 g | 5,00 / 10,30 GK | 187,27 % | Ylittää molemmat rajat |
-| Matala GK-piste | 1,00 | 0,20 g ja 0,10 GK | 0,10 g | 0,10 / 0,35 GK | 35,00 % | Ylittää suhteellisen rajan |
+- `MIXED_CODE_DOMINANCE`, kun yli 50 % pistearviosta tulee laskentakoodeista.
+- `MIXED_LARGE_GI100_STRESS_CHANGE`, kun GI 100 -skenaarion yhteinen muutos pistearvioon verrattuna ylittää itseisarvoltaan 20 %.
 
-Koetapaukset ovat synteettisiä. Stressitulokset testaavat oletusten vaikutusta. Ne eivät arvioi biologista vaihtelua tai mittausepävarmuutta.
+Esimerkiksi 5,50 GK:n koepisteestä 5,00 GK eli 90,9 % tuli koodista. Poisjättö oli 0,20 g CHO. GI 100 -skenaario antoi 10,70 GK eli 5,20 GK ja 94,5 % enemmän. Molemmat katselmointiliput nousivat. Testit kattavat myös tapauksen ilman lippuja ja tilanteet, joissa vain toinen lippu nousee. Liput jättävät tuloksen katselmointiin. Stressiluvut kuvaavat oletusten vaikutusta.
 
-Käyttöönotossa menetelmäpäätös sidotaan hyväksytyn sääntöversion tarkisteeseen. Reseptin ainesosasidoksen tarkistaa erillinen katselmoija. Sidoksen hyväksyntäviite osoittaa päätökseen, joka yksilöi käytetyt lähderivit, määrän, valmistuksen ja koostumuksen. Pistearvio tarvitsee lisäksi nykyiset tarkistesidotut resepti- ja tuotantopäätökset. Tämä ehdotus jättää laskentareitin katselmointikäyttöön.
+Käyttöönotossa menetelmäpäätös sidotaan hyväksytyn sääntöversion tarkisteeseen. Reseptin ainesosasidoksen tarkistaa erillinen katselmoija. Sidoksen hyväksyntäviite yksilöi lähderivit, määrän, valmistuksen ja koostumuksen. Lopulliset hyväksymisrajat ja reseptikohtaiset päätökset käsitellään erikseen.
 
 ## Lontong sayur · BLOCKED
 

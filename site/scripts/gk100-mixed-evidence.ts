@@ -109,14 +109,23 @@ export function calculateMixedEvidence(packet: MixedEvidencePacket, originalPath
   const sensitivity = [0, 100, 150].map(gi => {
     const omissionDelta = omittedCho * gi / 100;
     const codingDelta = codedCho * gi / 100 - codedGk;
+    const combinedDeltaGk = codingDelta + omissionDelta;
     return { name: 'ASSUMPTION_STRESS_GI_' + gi, assumedGi: gi, omissionDeltaGk: omissionDelta,
       omissionRelativeChange: omissionDelta / point, codingDeltaGk: codingDelta,
-      codingRelativeChange: codingDelta / point, combinedGk: point + codingDelta + omissionDelta };
+      codingRelativeChange: codingDelta / point, combinedGk: point + combinedDeltaGk,
+      combinedDeltaGk, combinedRelativeChange: combinedDeltaGk / point };
   });
   if (sensitivity.some(scenario => Object.values(scenario).some(value => typeof value === 'number' && !Number.isFinite(value)))) {
     throw Error('NONFINITE_MIXED_SENSITIVITY');
   }
+  const codedShare = codedGk / point;
+  const gi100 = sensitivity.find(scenario => scenario.assumedGi === 100)!;
+  // Editorial review flags only. Method approval and publication remain separate.
+  const reviewFlags = [
+    ...(codedShare > 0.50 ? ['MIXED_CODE_DOMINANCE'] : []),
+    ...(Math.abs(gi100.combinedRelativeChange) > 0.20 ? ['MIXED_LARGE_GI100_STRESS_CHANGE'] : []),
+  ];
   const inputSha256 = fingerprint({ method: packet.method, scopeSha256, contributions });
-  return { inputSha256, scopeSha256, contributions, point, humanGk, codedGk, omittedCho,
+  return { inputSha256, scopeSha256, contributions, point, humanGk, codedGk, codedShare, omittedCho, reviewFlags,
     uncertainty: { confidence: 'LOW' as const, scenarios: sensitivity, isBiologicalBound: false, isConfidenceInterval: false } };
 }

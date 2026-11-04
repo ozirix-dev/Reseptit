@@ -248,6 +248,8 @@ test('Mixed Evidence keeps measured GI above 100, codes and omissions separate',
     assert.equal(row.point, 12.5);
     assert.equal(row.mixedEvidence.humanGk, 12);
     assert.equal(row.mixedEvidence.codedGk, 0.5);
+    assert.equal(row.mixedEvidence.codedShare, 0.04);
+    assert.deepEqual(row.mixedEvidence.reviewFlags, []);
     assert.equal(row.omittedCho, 0.2);
     assert.equal(row.range, null);
     assert.equal(row.sources.find(source => source.kind === kind)?.note, bindings.coded.applicability);
@@ -260,6 +262,37 @@ test('Mixed Evidence keeps measured GI above 100, codes and omissions separate',
     assert.equal(scenarios[1].codingDeltaGk, 0.5);
     assert.equal(variants.size, 0);
   }
+});
+
+test('Mixed Evidence flags dominant coding and large combined stress independently', () => {
+  const { bindings, check } = mixedFixture();
+  const inspect = () => {
+    const checked = check();
+    const row = checked.manifest.candidates[0];
+    assert(row.technical === 'PASS' && row.mixedEvidence);
+    assert.equal(row.state, 'REVIEW_REQUIRED');
+    assert.equal(checked.variants.size, 0);
+    return row;
+  };
+  bindings.human.composition.availablePer100 = 1;
+  bindings.human.gi.value = 100;
+  bindings.coded.composition.availablePer100 = 20;
+  let row = inspect();
+  assert.equal(row.point, 5.5);
+  assert.equal(row.mixedEvidence!.codedShare, 5 / 5.5);
+  assert.deepEqual(row.mixedEvidence!.uncertainty.scenarios.map(s => s.combinedGk), [0.5, 10.7, 15.8]);
+  assert.equal(row.mixedEvidence!.uncertainty.scenarios[1].combinedRelativeChange, 5.2 / 5.5);
+  assert.deepEqual(row.riskSignals.slice(-2), ['MIXED_CODE_DOMINANCE', 'MIXED_LARGE_GI100_STRESS_CHANGE']);
+
+  // High code share with a code whose GI 100 stress has little effect.
+  bindings.coded.gi.value = 100;
+  assert.deepEqual(inspect().mixedEvidence!.reviewFlags, ['MIXED_CODE_DOMINANCE']);
+  // Half of the point comes from the code, but the stress change exceeds 20%.
+  bindings.human.composition.availablePer100 = 10;
+  bindings.coded.gi.value = 50;
+  row = inspect();
+  assert.equal(row.mixedEvidence!.codedShare, 0.5);
+  assert.deepEqual(row.mixedEvidence!.reviewFlags, ['MIXED_LARGE_GI100_STRESS_CHANGE']);
 });
 
 test('Mixed Evidence blocks unknown GI, missing approval and reclassified coding', () => {

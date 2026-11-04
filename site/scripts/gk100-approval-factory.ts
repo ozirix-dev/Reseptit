@@ -101,7 +101,7 @@ function assess(entry: Batch['candidates'][number], read: ReadFile) {
       servings: packet.servings, method: MIXED_EVIDENCE_METHOD, methodApproval: 'PENDING', mixedEvidence,
       point: mixedEvidence.point, range: null, uncertainty: 'MIXED_ASSUMPTION_STRESS', limitation: packet.limitation,
       omittedCho: mixedEvidence.omittedCho, omittedChoStressGkAtGi100: mixedEvidence.omittedCho,
-      suggestedRisk: 'HIGH', riskSignals: ['CHO_OMITTED', 'ASSIGNED_GI'],
+      suggestedRisk: 'HIGH', riskSignals: ['CHO_OMITTED', 'ASSIGNED_GI', ...mixedEvidence.reviewFlags],
       sources: mixedEvidence.contributions.flatMap(({ binding }) => {
         const { composition, gi, applicability } = binding;
         const carbohydrate = { kind: 'CARBOHYDRATE' as const, title: composition.source.locator,
