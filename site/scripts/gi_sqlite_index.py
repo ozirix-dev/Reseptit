@@ -6,6 +6,7 @@ Search results are evidence leads, never recipe-level GI/GK approvals.
 from __future__ import annotations
 
 import argparse
+from contextlib import closing
 import hashlib
 import json
 import math
@@ -56,7 +57,7 @@ def build_index(source: Path, destination: Path) -> dict:
     fd, temporary = tempfile.mkstemp(prefix=".gi-index-", suffix=".sqlite", dir=destination.parent)
     os.close(fd)
     try:
-        with sqlite3.connect(temporary) as db:
+        with closing(sqlite3.connect(temporary)) as db, db:
             db.executescript("""
                 CREATE TABLE metadata (key TEXT PRIMARY KEY, value TEXT NOT NULL);
                 CREATE TABLE source_registry (
@@ -125,7 +126,7 @@ def lookup(source: Path, destination: Path, food_key: str, preparation_key: str 
            include_other_preparations: bool = False, limit: int = 30) -> dict:
     if not food_key.strip() or limit < 1 or limit > 500:
         raise ValueError("Provide foodKey and 1 <= limit <= 500")
-    with _open_fresh(source, destination) as db:
+    with closing(_open_fresh(source, destination)) as db:
         query = "SELECT * FROM gi_record WHERE food_key = ?"
         params: list = [food_key]
         if preparation_key is not None and not include_other_preparations:
@@ -153,7 +154,7 @@ def lookup(source: Path, destination: Path, food_key: str, preparation_key: str 
 
 
 def stats(source: Path, destination: Path) -> dict:
-    with _open_fresh(source, destination) as db:
+    with closing(_open_fresh(source, destination)) as db:
         meta = dict(db.execute("SELECT key, value FROM metadata"))
         category = dict(db.execute("SELECT quality_tier, COUNT(*) FROM gi_record GROUP BY quality_tier"))
     return {"sourceSha256": meta["source_sha256"], "sources": int(meta["source_count"]),
