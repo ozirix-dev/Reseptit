@@ -86,6 +86,36 @@
     "outcome": "pass",
     "findings": []
   },
+  "gai-yang-vhh:en": {
+    "source_hash": "cb57ce3fb2e6a50c91ed7e2898b2984c62833f069783e9a7ada355ec9a987e01",
+    "translation_hash": "6d4b0295634729d44ec4e3bcbe5f29e97e9c50774fa8adb4f179407113afcbdc",
+    "reviewed_at": "2026-11-04",
+    "reference": "V2 riskierä 2, main 358bbadf9e8f28db254bcfc3bd68c4bdcc8f6e5c",
+    "outcome": "pass",
+    "findings": []
+  },
+  "gai-yang-vhh:sv": {
+    "source_hash": "cb57ce3fb2e6a50c91ed7e2898b2984c62833f069783e9a7ada355ec9a987e01",
+    "translation_hash": "65f6d86cba85b71c0d0d20660d05518658f063bf8f2014131693f8a716404ce6",
+    "reviewed_at": "2026-11-04",
+    "reference": "V2 riskierä 2, main 358bbadf9e8f28db254bcfc3bd68c4bdcc8f6e5c",
+    "outcome": "pass",
+    "findings": []
+  },
+  "gai-yang-vhh:th": {
+    "source_hash": "cb57ce3fb2e6a50c91ed7e2898b2984c62833f069783e9a7ada355ec9a987e01",
+    "translation_hash": "8c37211eee65e66f8f178befb58ea524d50ae61c8952e158a0a8e5a222c2a7fc",
+    "reviewed_at": "2026-11-04",
+    "reference": "V2 riskierä 2, main 358bbadf9e8f28db254bcfc3bd68c4bdcc8f6e5c",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "open",
+        "summary": "Grillivastuksen termi ja alt-tekstin toisto tarvitsevat kielenhuoltoa."
+      }
+    ]
+  },
   "hyderabadi-kanabiryani:en": {
     "source_hash": "aa55df3398aaa1aef6a453675f91db9944bcf522979cf9f5ce54433f554637fe",
     "translation_hash": "ec9e71e532bae5403e83bbfb0d7c0e7eaea7022d0ef112d47cc7c43d7fe08854",
@@ -122,6 +152,66 @@
       }
     ]
   },
+  "jauhelihapihvit-vhh-kermakastikkeella:en": {
+    "source_hash": "767add5ba3226bbcd4a240b0a2f6336bb9bafa575b461899441c5f3cbc38b5a2",
+    "translation_hash": "f3a83aa2d3d98813856467d29f16cc63df8101f6a8d2bd8f0c4cb8f120c88be1",
+    "reviewed_at": "2026-11-04",
+    "reference": "V2 riskierä 2, main 358bbadf9e8f28db254bcfc3bd68c4bdcc8f6e5c",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "open",
+        "summary": "Ohje puhuu pihvilihasta (steaks) jauhelihapihvien sijaan ja pannun paistopinnan irrotus on kömpelö."
+      }
+    ]
+  },
+  "jauhelihapihvit-vhh-kermakastikkeella:sv": {
+    "source_hash": "767add5ba3226bbcd4a240b0a2f6336bb9bafa575b461899441c5f3cbc38b5a2",
+    "translation_hash": "055d402e969cb1e43b30e8a48bf4ec3f8693730ab06445d1d68626d2d916b128",
+    "reviewed_at": "2026-11-04",
+    "reference": "V2 riskierä 2, main 358bbadf9e8f28db254bcfc3bd68c4bdcc8f6e5c",
+    "outcome": "pass",
+    "findings": []
+  },
+  "jauhelihapihvit-vhh-kermakastikkeella:th": {
+    "source_hash": "767add5ba3226bbcd4a240b0a2f6336bb9bafa575b461899441c5f3cbc38b5a2",
+    "translation_hash": "4b15b5bd25d62349172cc47e0aab6826a484451c43347d12c2737491f56a06d3",
+    "reviewed_at": "2026-11-04",
+    "reference": "V2 riskierä 2, main 358bbadf9e8f28db254bcfc3bd68c4bdcc8f6e5c",
+    "outcome": "pass",
+    "findings": []
+  },
+  "kai-jiew-vhh:en": {
+    "source_hash": "970b73bff87961d91704e46eafebeb1e698b2bb99e5a2006d8fc789065a8db43",
+    "translation_hash": "614404f416a653bb4c50d6f821c11d847e84d50631d68ed7fd6944ce5fc5f1ff",
+    "reviewed_at": "2026-11-04",
+    "reference": "V2 riskierä 2, main 358bbadf9e8f28db254bcfc3bd68c4bdcc8f6e5c",
+    "outcome": "pass",
+    "findings": []
+  },
+  "kai-jiew-vhh:sv": {
+    "source_hash": "970b73bff87961d91704e46eafebeb1e698b2bb99e5a2006d8fc789065a8db43",
+    "translation_hash": "73d7d06d109a5db83ed90b1852c69c5c78fe11f233ad0894d5bee4bfdc20388c",
+    "reviewed_at": "2026-11-04",
+    "reference": "V2 riskierä 2, main 358bbadf9e8f28db254bcfc3bd68c4bdcc8f6e5c",
+    "outcome": "pass",
+    "findings": []
+  },
+  "kai-jiew-vhh:th": {
+    "source_hash": "970b73bff87961d91704e46eafebeb1e698b2bb99e5a2006d8fc789065a8db43",
+    "translation_hash": "df32c530e281070c6f6b5a87d09ffc9971341e67d0970889566720966115c90b",
+    "reviewed_at": "2026-11-04",
+    "reference": "V2 riskierä 2, main 358bbadf9e8f28db254bcfc3bd68c4bdcc8f6e5c",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P1",
+        "status": "fixed",
+        "summary": "Paista keskilämmöllä, kunnes myös munakkaan keskusta on hyytynyt."
+      }
+    ]
+  },
   "kantonilainen-hoyrytetty-kala:en": {
     "source_hash": "9c0141414a5968e07fb2e6bf067ced7df1f8f1cc737cad648a49dba192128469",
     "translation_hash": "495c8c355fb3e820505d55a9fab4a36f9d342b41af9a9ebc7cf694c56d79b9d4",
@@ -154,6 +244,168 @@
     "correction_pr": 262,
     "outcome": "pass",
     "findings": []
+  },
+  "keltainen-kanacurry-vhh:en": {
+    "source_hash": "ef0e01433ec55e40f3f122c551c2dfe0eac5e7caadaeb13e66911ed1b20092ac",
+    "translation_hash": "bac9d7f8f5e23f09cd2f95197df504e4a7dc4f42bbb06b43d3aa954f9d04d330",
+    "reviewed_at": "2026-11-04",
+    "reference": "V2 riskierä 2, main 358bbadf9e8f28db254bcfc3bd68c4bdcc8f6e5c",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "open",
+        "summary": "Kuvauksesta voi lukea, että peruna imee kastiketta, vaikka tässä reseptissä käytetään kukkakaalia."
+      }
+    ]
+  },
+  "keltainen-kanacurry-vhh:sv": {
+    "source_hash": "ef0e01433ec55e40f3f122c551c2dfe0eac5e7caadaeb13e66911ed1b20092ac",
+    "translation_hash": "ea451bbcdbbe8f4ae0bcdfd5ac87ba42f7d8a68b433fe66b252975e000a8976c",
+    "reviewed_at": "2026-11-04",
+    "reference": "V2 riskierä 2, main 358bbadf9e8f28db254bcfc3bd68c4bdcc8f6e5c",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "open",
+        "summary": "Kuvauksesta voi lukea, että peruna imee kastiketta, vaikka tässä reseptissä käytetään kukkakaalia."
+      }
+    ]
+  },
+  "keltainen-kanacurry-vhh:th": {
+    "source_hash": "ef0e01433ec55e40f3f122c551c2dfe0eac5e7caadaeb13e66911ed1b20092ac",
+    "translation_hash": "ce51072d90c01423ef553f8c1be4a93486a6497a7e32e1bcb871ab14740d58fe",
+    "reviewed_at": "2026-11-04",
+    "reference": "V2 riskierä 2, main 358bbadf9e8f28db254bcfc3bd68c4bdcc8f6e5c",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "open",
+        "summary": "Täsmennä tahnan paistoaika yhteen minuuttiin ja kuvaa kukkakaalin kypsyminen samassa curryliemessä. Käännöstiedosto on sidottu hyväksyttyyn GK-versioon."
+      }
+    ]
+  },
+  "keto-kauralesesampylat:en": {
+    "source_hash": "37f4a3c7b6b9f79ea8704fc9ecf35718fa05e90cb2ce19e271fce94458a06be9",
+    "translation_hash": "dc959a9c90ea627101aa7f076430801eb6efc6e43c11794e996ba9fe1161ccdf",
+    "reviewed_at": "2026-11-04",
+    "reference": "V2 riskierä 2, main 358bbadf9e8f28db254bcfc3bd68c4bdcc8f6e5c",
+    "outcome": "pass",
+    "findings": []
+  },
+  "keto-kauralesesampylat:sv": {
+    "source_hash": "37f4a3c7b6b9f79ea8704fc9ecf35718fa05e90cb2ce19e271fce94458a06be9",
+    "translation_hash": "d2b71548a1953f089d4214c997b2981e7cec99e9c81081e83996d84e05308aa8",
+    "reviewed_at": "2026-11-04",
+    "reference": "V2 riskierä 2, main 358bbadf9e8f28db254bcfc3bd68c4bdcc8f6e5c",
+    "outcome": "pass",
+    "findings": []
+  },
+  "keto-kauralesesampylat:th": {
+    "source_hash": "37f4a3c7b6b9f79ea8704fc9ecf35718fa05e90cb2ce19e271fce94458a06be9",
+    "translation_hash": "178830a4cc5e091c23e51ba4f45f058cd1d8ee09639ecd4cf9f654f6f7bddedd",
+    "reviewed_at": "2026-11-04",
+    "reference": "V2 riskierä 2, main 358bbadf9e8f28db254bcfc3bd68c4bdcc8f6e5c",
+    "outcome": "pass",
+    "findings": []
+  },
+  "keto-pannukakku:en": {
+    "source_hash": "5f32373aab6aebf510a12dff72bbf512923143e25b6229e55da15a0633ca8d01",
+    "translation_hash": "2645470a08624809319f294feec58ae419bef7c84c0d462450a6a5e6d7a4c2ac",
+    "reviewed_at": "2026-11-04",
+    "reference": "V2 riskierä 2, main 358bbadf9e8f28db254bcfc3bd68c4bdcc8f6e5c",
+    "outcome": "pass",
+    "findings": []
+  },
+  "keto-pannukakku:sv": {
+    "source_hash": "5f32373aab6aebf510a12dff72bbf512923143e25b6229e55da15a0633ca8d01",
+    "translation_hash": "62f72b16ea9448fa77b5e1bb034a0652dbf60d0b4dc73e81d0ce9e739e6ed5bf",
+    "reviewed_at": "2026-11-04",
+    "reference": "V2 riskierä 2, main 358bbadf9e8f28db254bcfc3bd68c4bdcc8f6e5c",
+    "outcome": "pass",
+    "findings": []
+  },
+  "keto-pannukakku:th": {
+    "source_hash": "5f32373aab6aebf510a12dff72bbf512923143e25b6229e55da15a0633ca8d01",
+    "translation_hash": "2ba8e27380cac1abba908a0bc7ab5843f7db759eb3430f0d93500c6ebb8cbc4f",
+    "reviewed_at": "2026-11-04",
+    "reference": "V2 riskierä 2, main 358bbadf9e8f28db254bcfc3bd68c4bdcc8f6e5c",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "Voi sulatetaan uunissa uuninkestävässä astiassa."
+      }
+    ]
+  },
+  "ketopizza-pofiber-pohjalla:en": {
+    "source_hash": "37abeb2d7628f0bcf36c09674ca284c974fb2a9cc2cd600057ab123e111c4b9b",
+    "translation_hash": "ac5859bcac904ef0eac2cb9700c49c7fe69d899beec6003db567551dd548ed0a",
+    "reviewed_at": "2026-11-04",
+    "reference": "V2 riskierä 2, main 358bbadf9e8f28db254bcfc3bd68c4bdcc8f6e5c",
+    "outcome": "pass",
+    "findings": []
+  },
+  "ketopizza-pofiber-pohjalla:sv": {
+    "source_hash": "37abeb2d7628f0bcf36c09674ca284c974fb2a9cc2cd600057ab123e111c4b9b",
+    "translation_hash": "52b14bc0b9ba7a40a1e5883dbc85f01b997e7bc078f1a91c6c348e04c3e9f1a5",
+    "reviewed_at": "2026-11-04",
+    "reference": "V2 riskierä 2, main 358bbadf9e8f28db254bcfc3bd68c4bdcc8f6e5c",
+    "outcome": "pass",
+    "findings": []
+  },
+  "ketopizza-pofiber-pohjalla:th": {
+    "source_hash": "37abeb2d7628f0bcf36c09674ca284c974fb2a9cc2cd600057ab123e111c4b9b",
+    "translation_hash": "dd92ded413798e4bf6fe909e4219ea16cae49acdb28e68e604e3b70d9701095d",
+    "reviewed_at": "2026-11-04",
+    "reference": "V2 riskierä 2, main 358bbadf9e8f28db254bcfc3bd68c4bdcc8f6e5c",
+    "outcome": "pass",
+    "findings": []
+  },
+  "khao-kha-moo-vhh:en": {
+    "source_hash": "f4a084d763bd69b1d9ac214d1d80d16e5d2ec2d41d14a0c90ea7aeb3d82845ba",
+    "translation_hash": "170d4366cc711338660fd52dd0ff9216f0fdc16a443bdd887d89964dbec8d59c",
+    "reviewed_at": "2026-11-04",
+    "reference": "V2 riskierä 2, main 358bbadf9e8f28db254bcfc3bd68c4bdcc8f6e5c",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P1",
+        "status": "fixed",
+        "summary": "Kuvaus käyttää porsaan lapaa ja ohje ruskistaa padassa."
+      }
+    ]
+  },
+  "khao-kha-moo-vhh:sv": {
+    "source_hash": "f4a084d763bd69b1d9ac214d1d80d16e5d2ec2d41d14a0c90ea7aeb3d82845ba",
+    "translation_hash": "cc560ed61d10b3bd1f93699afcaf67d7fcce0d2279478fb372c15e3ba72c067a",
+    "reviewed_at": "2026-11-04",
+    "reference": "V2 riskierä 2, main 358bbadf9e8f28db254bcfc3bd68c4bdcc8f6e5c",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P1",
+        "status": "fixed",
+        "summary": "Kuvaus käyttää porsaan lapaa, ruskistus tapahtuu padassa ja liemi on kanalientä."
+      }
+    ]
+  },
+  "khao-kha-moo-vhh:th": {
+    "source_hash": "f4a084d763bd69b1d9ac214d1d80d16e5d2ec2d41d14a0c90ea7aeb3d82845ba",
+    "translation_hash": "77451c9dad7be69b986b16251ab2818ad327c5407f1b5905a5da7ec9a6a671d0",
+    "reviewed_at": "2026-11-04",
+    "reference": "V2 riskierä 2, main 358bbadf9e8f28db254bcfc3bd68c4bdcc8f6e5c",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P1",
+        "status": "fixed",
+        "summary": "Kuvaus käyttää porsaan lapaa ja ohje ruskistaa padassa."
+      }
+    ]
   },
   "khao-man-gai-vhh:en": {
     "source_hash": "5e61aec53a36e7a45fb07bbdd27d09307937178fb691e37753480e0d63bb6fe2",
@@ -190,6 +442,65 @@
         "summary": "Tarjoiluvaiheen riisi kannattaa nimetä kukkakaaliriisiksi, kuten ainesluettelossa ja kuvauksessa."
       }
     ]
+  },
+  "khao-soi-vhh-konjac:en": {
+    "source_hash": "e29d789c529b285bc62c7ea9078841b6655695e161294e3f4e853c24dd5fa69b",
+    "translation_hash": "d8e193942ebd62aa39bbfc8d49df97daf3e8bec0366145b3a0a3a0b351e61e3c",
+    "reviewed_at": "2026-11-04",
+    "reference": "V2 riskierä 2, main 358bbadf9e8f28db254bcfc3bd68c4bdcc8f6e5c",
+    "outcome": "pass",
+    "findings": []
+  },
+  "khao-soi-vhh-konjac:sv": {
+    "source_hash": "e29d789c529b285bc62c7ea9078841b6655695e161294e3f4e853c24dd5fa69b",
+    "translation_hash": "2d0a58e34fba2933ed6f2a2b1a57c8380bbba45c68f4d7396f237626a648d3a8",
+    "reviewed_at": "2026-11-04",
+    "reference": "V2 riskierä 2, main 358bbadf9e8f28db254bcfc3bd68c4bdcc8f6e5c",
+    "outcome": "pass",
+    "findings": []
+  },
+  "khao-soi-vhh-konjac:th": {
+    "source_hash": "e29d789c529b285bc62c7ea9078841b6655695e161294e3f4e853c24dd5fa69b",
+    "translation_hash": "0d14fb840f8379bb510a808e07616adef5ff2a9e75d635447007dff57a3ba368",
+    "reviewed_at": "2026-11-04",
+    "reference": "V2 riskierä 2, main 358bbadf9e8f28db254bcfc3bd68c4bdcc8f6e5c",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "Konjaknuudelit kuivapaistetaan pannulla ilman öljyä."
+      },
+      {
+        "severity": "P2",
+        "status": "open",
+        "summary": "Sinappikaalin termi vaihtelee ainesosissa ja kuvauksessa."
+      }
+    ]
+  },
+  "koshari:en": {
+    "source_hash": "c27cdc9664ae33d1d5f0a233ebee55bf8d6047d7a83f639bc512d1dff7549155",
+    "translation_hash": "d4981b113fb8938b13e80964556d3875564a3f50a0acdb29aa519768f87742b9",
+    "reviewed_at": "2026-11-04",
+    "reference": "V2 riskierä 2, main 358bbadf9e8f28db254bcfc3bd68c4bdcc8f6e5c",
+    "outcome": "pass",
+    "findings": []
+  },
+  "koshari:sv": {
+    "source_hash": "c27cdc9664ae33d1d5f0a233ebee55bf8d6047d7a83f639bc512d1dff7549155",
+    "translation_hash": "899dd242e03ab126c4ea38bf514bd71fdad39759ce035a2dd37a711eced7cc57",
+    "reviewed_at": "2026-11-04",
+    "reference": "V2 riskierä 2, main 358bbadf9e8f28db254bcfc3bd68c4bdcc8f6e5c",
+    "outcome": "pass",
+    "findings": []
+  },
+  "koshari:th": {
+    "source_hash": "c27cdc9664ae33d1d5f0a233ebee55bf8d6047d7a83f639bc512d1dff7549155",
+    "translation_hash": "b8cbc0fe5d52ceb96bbfec841374c319a3c43dc02ea47839abf1905d1e05310e",
+    "reviewed_at": "2026-11-04",
+    "reference": "V2 riskierä 2, main 358bbadf9e8f28db254bcfc3bd68c4bdcc8f6e5c",
+    "outcome": "pass",
+    "findings": []
   },
   "lohikeitto-kuohukermalla:en": {
     "source_hash": "144df3bfc29cc9ca441c9db597dd52cbf06a95700cea02a76e2d1c37cd5af339",

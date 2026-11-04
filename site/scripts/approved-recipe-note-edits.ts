@@ -18,7 +18,7 @@ const englishPublicationSources = new Set([
   "reseptit/jalkiruoat/meheva-suklaakakku.md",
 ]);
 
-// PR #262 contains reviewed editorial corrections only. Reconstruct the sealed
+// These entries contain reviewed editorial corrections only. Reconstruct the sealed
 // versions for GK verification; the exact current hash is required before any
 // inverse edit. Other changes must go through the normal snapshot review.
 const editorialSnapshots: Readonly<Record<string, {
@@ -89,6 +89,47 @@ const editorialSnapshots: Readonly<Record<string, {
     currentSha256: "db52b3d68df183a46bc2c814956a197343dbdfcfc027c3e981e84234a8c7521d",
     inverseEdits: [
       [79, 1, ""],
+    ],
+  },
+  "kaannokset/en/paaruoat/khao-kha-moo-vhh.md": {
+    currentSha256: "53b6883173604aa7218c367a36ae1d073bbb5f00a8bcf83916611325f5649c6b",
+    inverseEdits: [
+      [91, 1, "1. Brown the pork pieces in a pan on all sides. Set aside for a moment.\n"],
+      [87, 1, "The mild braising makes the pork belly tender and allows the spices to season the entire broth. The food is suitable for preparation the day before.\n"],
+    ],
+  },
+  "kaannokset/sv/paaruoat/khao-kha-moo-vhh.md": {
+    currentSha256: "755c54c7495d77961fee44576197488ec70458bcf6ba5438b7c413132af8df0f",
+    inverseEdits: [
+      [93, 1, "3. Häll i kycklingfonden. Tillsätt sojasås, fisksås och erytritol. Lägg tillbaka fläsket i grytan.\n"],
+      [91, 1, "1. Bryn fläskbitarna i en panna på alla sidor. Ställ åt sidan en stund.\n"],
+      [87, 1, "Den milda bräseringen gör fläskmagen mör och låter kryddorna krydda hela buljongen. Maten är lämplig att laga dagen innan.\n"],
+    ],
+  },
+  "kaannokset/th/jalkiruoat/keto-pannukakku.md": {
+    currentSha256: "d66ff0b49dbfacdeeb1ab693778197851a481cb1df4e880a95fd5650620bc5dd",
+    inverseEdits: [
+      [63, 1, "1. ตั้งเตาอบที่ 220 °C และละลายเนยบนถาดอบหรือในกระทะ\n"],
+    ],
+  },
+  "kaannokset/th/paaruoat/kai-jiew-vhh.md": {
+    currentSha256: "b83c6b58ad4e60bc28efcb5478344a2eba7333e41933088f445dc3662c99e620",
+    inverseEdits: [
+      [73, 1, "3. เทส่วนผสมไข่ลงในกระทะ ทอดด้วยไฟปานกลางจนขอบกรอบและอยู่ตรงกลาง\n"],
+      [63, 1, "ไก่เจียวเป็นไข่เจียวกรอบฟูกรอบปรุงรสด้วยน้ำปลา จัดเตรียมได้อย่างรวดเร็วและเหมาะเป็นอาหารว่างหรือเป็นส่วนหนึ่งของโต๊ะรับประทานอาหารขนาดใหญ่\n"],
+    ],
+  },
+  "kaannokset/th/paaruoat/khao-kha-moo-vhh.md": {
+    currentSha256: "a9fe38edf1999523f938385ec38f93624901779036a6fd6d29a83e2427879772",
+    inverseEdits: [
+      [91, 1, "1. ผัดชิ้นหมูในกระทะทุกด้าน พักไว้สักครู่\n"],
+      [87, 1, "การตุ๋นอย่างอ่อนจะทำให้เนื้อสันในหมูนุ่มและช่วยให้เครื่องเทศปรุงรสน้ำซุปทั้งหมดได้ สามารถเตรียมอาหารได้ล่วงหน้าหนึ่งวัน\n"],
+    ],
+  },
+  "kaannokset/th/paaruoat/khao-soi-vhh-konjac.md": {
+    currentSha256: "65676e5f2607aeb5f85dac4cd702b165e217e8ea642c5ad0c2d6ae938802ba81",
+    inverseEdits: [
+      [91, 1, "5. ล้างเส้นและสะเด็ดน้ำ ทอดในกระทะให้แห้งสักครู่แล้วแบ่งเป็นชาม\n"],
     ],
   },
 };
