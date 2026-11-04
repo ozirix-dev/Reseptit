@@ -270,7 +270,10 @@ const publicResults = results.flatMap((result) => {
       .map((recordId) => foodRecords.find((record) => record.id === recordId))
       .filter((record): record is FoodRecord => record !== undefined)
       .map((record) => ({
-        title: record.name,
+        // Repair legacy Fineli label encoding in the public citation only.
+        title: record.id.startsWith("fineli-")
+          ? record.name.replaceAll("Ã¤", "ä").replaceAll("Ã¶", "ö").replaceAll("Ã„", "Ä")
+          : record.name,
         url: record.sourceUrl,
         note: record.id.startsWith("afcd-")
           ? "Available-carbohydrate value from AFCD Release 3; FSANZ attribution and CC BY-SA 3.0 Australia terms apply."

@@ -7,7 +7,8 @@ Nykyinen /glykeeminen-kuorma/ on yhtä aikaa tekninen laskenta-arkisto ja käytt
 
 ## Toteutus tässä PR:ssä
 - Kaikki neljä kieliversiota saavat samasta lähdedatasta johdetun reseptihaun, tekstinsuodatuksen, vain laskennalliset arviot -rajauksen ja tuloslaskurin.
-- Arvion merkitys ja rajat esitetään ennen teknisiä tietoja.
+- Sivu kertoo, mitä annoskohtainen arvio tarkoittaa ja miksi sen luottamustaso voi olla matala. Haku tulee ennen kattavuuslukuja ja laskentamenetelmää.
+- Haku käy läpi koko aineiston. Nimen alusta löytyvät osumat näkyvät ensin ja kummassakin osumaryhmässä näytetään ensin valitun kielen nimet aakkosjärjestyksessä. Haun tai rajauksen muuttaminen palauttaa listan ensimmäiseen erään.
 - Kattavuuden A/B/C-versioerittely ja yksityiskohtaiset menetelmä- sekä viitetiedot siirretään avattaviin osioihin; mitään lähdeviitettä ei poisteta.
 - Reseptikohtaiset lähteet ja perustelut säilyvät avattavina; puuttuvat arviot pysyvät puuttuvina.
 - Mobiilihaku, kosketuspinta, näppäimistön fokus ja hakutuloksen ilmoitus parannetaan.
@@ -20,7 +21,7 @@ Nykyinen /glykeeminen-kuorma/ on yhtä aikaa tekninen laskenta-arkisto ja käytt
 4. Alkuperäisen reseptin ja muokatun version erot ja lähdeviitteet säilyvät.
 5. Kattavuusluvut luetaan edelleen generoituista tiedoista, ei kirjoiteta käsin.
 6. Tavanomainen navigaatio / reseptisivujen menetelmälinkit sekä nelikielinen canonical / SEO toimivat.
-7. Ankkurilinkit #recipeId poistavat tilapäisen suodatuksen ja paljastavat koko listan, jotta kohde pysyy saavutettavana. Varmista selaimessa myös suora sivunlataus.
+7. Ankkurilinkki nostaa linkitetyn reseptin listan alkuun. Resepti pysyy näkyvissä, vaikka haku tai rajaus sulkisi sen tuloksista. Tarkista myös suora sivunlataus ja uudelleenlataus.
 8. Ei muutoksia julkaistujen GK-arvojen laskentaan, riippuvuuksiin tai lähdedokumenttien tietueisiin.
 9. Tarkista saavutettavuus, mobiili 320px ja selaintesti kohdennetusti; käytä CI:n nykyistä valintalogiikkaa, älä käynnistä koko GK-testimassaa käsin.
 

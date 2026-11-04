@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { recipeJsonLd } from "@/features/recipes/schema";
-import { recipeLocaleFromPath, recipeUi } from "@/features/recipes/recipe-i18n";
+import { glycemicLoadMeta, recipeLocaleFromPath, recipeUi } from "@/features/recipes/recipe-i18n";
 import { useContent } from "@/lib/content";
 import type { RecipeLocale } from "@/types/content";
 
@@ -11,12 +11,6 @@ const baseByLocale: Record<RecipeLocale, string> = { fi: "", en: "/en/recipes", 
 const titleByLocale: Record<RecipeLocale, string> = { fi: "Reseptit", en: "Recipes", sv: "Recept", th: "สูตรอาหาร" };
 const openGraphLocale: Record<RecipeLocale, string> = { fi: "fi_FI", en: "en_GB", sv: "sv_SE", th: "th_TH" };
 const methodPaths: Record<RecipeLocale, string> = { fi: "/glykeeminen-kuorma/", en: "/en/glycemic-load/", sv: "/sv/glykemisk-belastning/", th: "/th/glycemic-load/" };
-const methodMeta: Record<RecipeLocale, { title: string; description: string }> = {
-  fi: { title: "Reseptien glykeeminen kuorma (GK) | Reseptit", description: "Löydä reseptien glykeemisen kuorman (GK) arviot, luotettavuustiedot ja tarvittaessa tarkat laskentalähteet." },
-  en: { title: "Glycemic load (GL) of recipes | Recipes", description: "Explore calculated glycemic load estimates for recipes, their reliability and detailed sources." },
-  sv: { title: "Receptens glykemiska belastning (GL) | Recept", description: "Hitta uppskattningar av receptens glykemiska belastning, säkerhet och detaljerade källor." },
-  th: { title: "ค่าภาระน้ำตาลในเลือด (GL) ของสูตรอาหาร | สูตรอาหาร", description: "ค้นหาค่าภาระน้ำตาลในเลือด (GL) ของสูตรอาหาร พร้อมระดับความน่าเชื่อถือและแหล่งข้อมูลการคำนวณ" },
-};
 
 function upsertMeta(key: string, keyValue: string, content: string): void {
   let element = document.head.querySelector<HTMLMetaElement>(`meta[${key}="${keyValue}"]`);
@@ -52,10 +46,10 @@ export function SeoMeta() {
     const known = recipe !== null || indexExists || isPilotPage;
     // Keep unknown deep links' metadata in the same locale as the visible not-found page.
     const locale = recipe?.locale ?? methodLocale ?? routeLocale ?? recipeLocaleFromPath(strippedPath);
-    const title = isPilotPage ? methodMeta[locale].title : known
+    const title = isPilotPage ? glycemicLoadMeta[locale].title : known
       ? recipe ? `${recipe.title} | ${titleByLocale[locale]}` : `${titleByLocale[locale]} | Ozirix`
       : `${recipeUi[locale].notFound} | ${titleByLocale[locale]}`;
-    const description = isPilotPage ? methodMeta[locale].description : recipe?.description || (!known ? recipeUi[locale].notFound : recipeUi[locale].intro);
+    const description = isPilotPage ? glycemicLoadMeta[locale].description : recipe?.description || (!known ? recipeUi[locale].notFound : recipeUi[locale].intro);
     const canonical = isPilotPage ? `${siteBase}${methodPaths[locale]}` : recipe ? `${siteBase}${recipe.routePath}` : indexExists ? `${siteBase}${indexPath(locale)}` : null;
     document.title = title;
     document.documentElement.lang = locale;

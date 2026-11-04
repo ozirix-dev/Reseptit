@@ -33,6 +33,13 @@ export function recipeIndexPath(locale: RecipeLocale): string {
   return locale === "fi" ? "/" : locale === "sv" ? "/sv/recept/" : `/${locale}/recipes/`;
 }
 
+export const glycemicLoadMeta: Record<RecipeLocale, { h1: string; title: string; description: string }> = {
+  fi: { h1: "Glykeeminen kuorma", title: "Reseptien glykeeminen kuorma (GK) | Reseptit", description: "Löydä reseptien glykeemisen kuorman (GK) arviot, luotettavuustiedot ja tarvittaessa tarkat laskentalähteet." },
+  en: { h1: "Glycemic load", title: "Glycemic load (GL) of recipes | Recipes", description: "Explore calculated glycemic load estimates for recipes, their reliability and detailed sources." },
+  sv: { h1: "Glykemisk belastning", title: "Receptens glykemiska belastning (GL) | Recept", description: "Hitta uppskattningar av receptens glykemiska belastning, säkerhet och detaljerade källor." },
+  th: { h1: "ภาระน้ำตาลในเลือด", title: "ค่าภาระน้ำตาลในเลือด (GL) ของสูตรอาหาร | สูตรอาหาร", description: "ค้นหาค่าภาระน้ำตาลในเลือด (GL) ของสูตรอาหาร พร้อมระดับความน่าเชื่อถือและแหล่งข้อมูลการคำนวณ" },
+};
+
 export function glycemicLoadPath(locale: RecipeLocale): string {
   return ({ fi: '/glykeeminen-kuorma/', en: '/en/glycemic-load/', sv: '/sv/glykemisk-belastning/', th: '/th/glycemic-load/' })[locale];
 }

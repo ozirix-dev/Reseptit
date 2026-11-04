@@ -193,6 +193,9 @@ test("GK values link to centralized recipe details on every published translatio
   const labels = { fi: "Miksi kokonaisarviota ei ole?", en: "Why is there no total estimate?", sv: "Varför saknas ett totalvärde?", th: "เหตุใดจึงไม่มีค่าประมาณรวม" };
   for (const locale of ["fi", "en", "sv", "th"] as const) {
     const html = await readFile(path.join(dist, methodPagePaths[locale], "index.html"), "utf8");
+    assert.ok(html.includes("Kikherne, kypsä tai säilyke"), "Fineli source label displays Finnish characters");
+    assert.ok(html.includes("TÄYSMEHU, SITRUUNATÄYSMEHU, LAIMENTAMATON"), "Fineli source label displays uppercase Ä");
+    assert.ok(!html.includes("kypsÃ¤ tai sÃ¤ilyke"));
     const resultStart = html.indexOf('id="kookos-lime-kanacurry"');
     assert.ok(resultStart >= 0 && html.slice(resultStart, resultStart + 1_500).includes(labels[locale]), `${locale}: missing-result explanation is localized`);
   }

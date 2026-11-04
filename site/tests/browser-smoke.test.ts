@@ -47,7 +47,8 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
     assert.ok(noJs.url().endsWith("#recipe-instructions"));
     await noJs.close();
 
-    const page = await browser.newPage({ viewport: { width: 320, height: 800 } });
+    const context = await browser.newContext({ viewport: { width: 320, height: 800 } });
+    const page = await context.newPage();
     await page.route("https://ozirix-dev.github.io/Reseptit/kuvat/**", async (route) => {
       const imagePath = new URL(route.request().url()).pathname.split("/kuvat/")[1];
       await route.fulfill({ path: path.join(import.meta.dirname, "..", "public", "kuvat", ...imagePath.split("/")) });
@@ -61,8 +62,8 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
       { path: "/en/glycemic-load/", locale: "en", ogLocale: "en_GB", title: "Glycemic load (GL) of recipes | Recipes", description: "Explore calculated glycemic load estimates for recipes, their reliability and detailed sources." },
       { path: "/sv/glykemisk-belastning/", locale: "sv", ogLocale: "sv_SE", title: "Receptens glykemiska belastning (GL) | Recept", description: "Hitta uppskattningar av receptens glykemiska belastning, säkerhet och detaljerade källor." },
       { path: "/th/glycemic-load/", locale: "th", ogLocale: "th_TH", title: "ค่าภาระน้ำตาลในเลือด (GL) ของสูตรอาหาร | สูตรอาหาร", description: "ค้นหาค่าภาระน้ำตาลในเลือด (GL) ของสูตรอาหาร พร้อมระดับความน่าเชื่อถือและแหล่งข้อมูลการคำนวณ" },
-    ];
-    for (const methodPage of methodPages) {
+    ] as const;
+    for (const [index, methodPage] of methodPages.entries()) {
       const canonical = `https://ozirix-dev.github.io${base.replace("http://127.0.0.1:4176", "")}${methodPage.path}`;
       await page.goto(`${base}${methodPage.path}`);
       await page.waitForFunction((title) => document.title === title && Boolean(document.querySelector('link[rel="canonical"]')), methodPage.title);
@@ -86,6 +87,55 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
         assert.equal(await page.locator(`link[rel="alternate"][hreflang="${locale}"]`).getAttribute("href"), `https://ozirix-dev.github.io/Reseptit/${route}`);
       }
 
+      const width = [320, 390, 768, 1440][index];
+      await page.setViewportSize({ width, height: 800 });
+      const search = page.locator("#gk-recipe-search");
+      const results = page.locator(".glycemic-pilot__recipe");
+      await search.waitFor();
+      assert.equal(await results.count(), 24);
+      assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true, `${methodPage.locale} at ${width}px`);
+
+      if (methodPage.locale === "fi") {
+        const initialIds = await results.evaluateAll((rows) => rows.map((row) => row.id));
+        await page.getByRole("button", { name: "Näytä lisää", exact: true }).click();
+        assert.equal(await results.count(), 48);
+        assert.equal(await results.nth(24).evaluate((row) => row === document.activeElement), true);
+        await page.getByRole("button", { name: "Näytä kaikki tulokset" }).click();
+        const allIds = await results.evaluateAll((rows) => rows.map((row) => row.id));
+        assert.ok(allIds.length > 48);
+        assert.equal(new Set(allIds).size, allIds.length);
+        const lastResult = results.last();
+        const lastId = allIds.at(-1);
+        const lastTitle = await lastResult.getByRole("heading", { level: 3 }).innerText();
+        assert.ok(lastId && !initialIds.includes(lastId));
+        await search.fill(lastTitle);
+        assert.equal(await results.first().getAttribute("id"), lastId);
+        await search.fill("");
+        assert.equal(await results.count(), 24);
+        await page.getByRole("checkbox").check();
+        assert.equal(await page.locator("#kookos-lime-kanacurry").count(), 0);
+        await page.evaluate(() => { window.location.hash = "kookos-lime-kanacurry"; });
+        await page.locator("#kookos-lime-kanacurry").waitFor();
+        assert.equal(await page.getByRole("checkbox").isChecked(), true);
+      }
+
+      const recipePrefix = { fi: "", en: "/en/recipes", sv: "/sv/recept", th: "/th/recipes" }[methodPage.locale];
+      await page.goto(`${base}${recipePrefix}/hummus/`);
+      const href = await page.locator(".recipe-glycemic-load__caption a").getAttribute("href");
+      assert.equal(href, `/Reseptit${methodPage.path}#hummus`);
+      const linkedPage = await context.newPage();
+      await linkedPage.goto(new URL(href!, base).href);
+      await linkedPage.waitForFunction(() => document.activeElement?.id === "hummus");
+      assert.equal(await linkedPage.locator(".glycemic-pilot__recipe").count(), 25);
+      await linkedPage.reload();
+      await linkedPage.waitForFunction(() => document.activeElement?.id === "hummus");
+      await linkedPage.locator("#gk-recipe-search").fill("zzzz1234");
+      assert.equal(await linkedPage.locator(".glycemic-pilot__recipe").count(), 1);
+      assert.equal(await linkedPage.locator(".glycemic-pilot__recipe").getAttribute("id"), "hummus");
+      await linkedPage.close();
+
+      await page.goto(`${base}${methodPage.path}`);
+      await search.waitFor();
       const noSlashPath = `${base}${methodPage.path.slice(0, -1)}`;
       await page.evaluate((path) => { history.pushState(null, "", path); dispatchEvent(new PopStateEvent("popstate")); }, noSlashPath);
       await page.waitForFunction((title) => document.title === title && Boolean(document.querySelector('link[rel="canonical"]')), methodPage.title);
@@ -198,7 +248,7 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
     await methodLink.focus();
     assert.equal(await methodLink.evaluate((element) => element.matches(":focus-visible")), true);
     await page.keyboard.press("Enter");
-    await page.getByRole("heading", { name: "Reseptien glykeeminen kuorma (GK)" }).waitFor();
+    await page.getByRole("heading", { name: "Glykeeminen kuorma", exact: true }).waitFor();
     assert.ok(page.url().includes("#hummus"));
     assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true, "central GK details fit 320px");
     const sourceSummary = page.locator("#hummus summary");
@@ -206,7 +256,7 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
     await page.keyboard.press("Enter");
     assert.equal(await page.locator("#hummus details").evaluate((element) => (element as HTMLDetailsElement).open), true);
     await page.getByRole("link", { name: "English", exact: true }).click();
-    await page.getByRole("heading", { name: "Glycemic load (GL) of recipes" }).waitFor();
+    await page.getByRole("heading", { name: "Glycemic load", exact: true }).waitFor();
     assert.ok(page.url().includes("/en/glycemic-load/"));
     await page.setViewportSize({ width: 320, height: 800 });
     assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true);

@@ -3,7 +3,7 @@ import path from "node:path";
 import { pathToFileURL } from "node:url";
 import { isDeepStrictEqual } from "node:util";
 import { localeIndexes } from "../src/content/route-data";
-import { recipeUi } from "../src/features/recipes/recipe-i18n";
+import { glycemicLoadMeta, glycemicLoadPath, recipeUi } from "../src/features/recipes/recipe-i18n";
 import type { RecipeEntry, RecipeLocale } from "../src/types/content";
 
 export const siteBase = "https://ozirix-dev.github.io/Reseptit";
@@ -33,19 +33,12 @@ export function expectedPages(recipes: RecipeEntry[]): ExpectedPage[] {
     return result;
   };
   const indexes = locales.map((locale) => ({ locale, routePath: localeIndexes[locale] }));
+  const glycemicPages = (Object.keys(glycemicLoadMeta) as RecipeLocale[]).map((locale) => ({ locale, routePath: glycemicLoadPath(locale) }));
   return [
     ...locales.map((locale) => ({ route: localeIndexes[locale], locale, h1: names[locale], title: `${names[locale]} | Ozirix`, description: recipeUi[locale].intro, alternates: alternateMap(indexes) })),
-    ...([
-      { locale: "fi" as const, route: "/glykeeminen-kuorma/", h1: "Reseptien glykeeminen kuorma (GK)", title: "Reseptien glykeeminen kuorma (GK) | Reseptit", description: "Löydä reseptien glykeemisen kuorman (GK) arviot, luotettavuustiedot ja tarvittaessa tarkat laskentalähteet." },
-      { locale: "en" as const, route: "/en/glycemic-load/", h1: "Glycemic load (GL) of recipes", title: "Glycemic load (GL) of recipes | Recipes", description: "Explore calculated glycemic load estimates for recipes, their reliability and detailed sources." },
-      { locale: "sv" as const, route: "/sv/glykemisk-belastning/", h1: "Receptens glykemiska belastning (GL)", title: "Receptens glykemiska belastning (GL) | Recept", description: "Hitta uppskattningar av receptens glykemiska belastning, säkerhet och detaljerade källor." },
-      { locale: "th" as const, route: "/th/glycemic-load/", h1: "ค่าภาระน้ำตาลในเลือด (GL) ของสูตรอาหาร", title: "ค่าภาระน้ำตาลในเลือด (GL) ของสูตรอาหาร | สูตรอาหาร", description: "ค้นหาค่าภาระน้ำตาลในเลือด (GL) ของสูตรอาหาร พร้อมระดับความน่าเชื่อถือและแหล่งข้อมูลการคำนวณ" },
-    ]).map((page) => ({ ...page, alternates: alternateMap([
-      { locale: "fi" as const, routePath: "/glykeeminen-kuorma/" },
-      { locale: "en" as const, routePath: "/en/glycemic-load/" },
-      { locale: "sv" as const, routePath: "/sv/glykemisk-belastning/" },
-      { locale: "th" as const, routePath: "/th/glycemic-load/" },
-    ]) })),
+    ...glycemicPages.map(({ locale, routePath }) => ({
+      route: routePath, locale, ...glycemicLoadMeta[locale], alternates: alternateMap(glycemicPages),
+    })),
     ...recipes.map((recipe) => ({ route: recipe.routePath, locale: recipe.locale, h1: recipe.title, title: `${recipe.title} | ${names[recipe.locale]}`, description: recipe.description || recipeUi[recipe.locale].intro, alternates: alternateMap(recipes.filter((r) => r.recipeId === recipe.recipeId)), recipe })),
   ];
 }
