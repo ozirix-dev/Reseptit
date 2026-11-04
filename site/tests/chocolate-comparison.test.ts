@@ -35,7 +35,7 @@ test("two named Torras products retain their own verified manufacturer source bi
   assert.deepEqual(pilot.sources.find((s: { id: string }) => s.id === "torras-stevia").observation.polyolIngredients, ["erythritol", "steviol glycosides"]);
 });
 
-test("disclosure is confined to the three recipes in Finnish and English and is collapsed in server HTML", () => {
+test("disclosure is confined to the three recipes in Finnish, English and Swedish and is collapsed in server HTML", () => {
   for (const recipeId of ["keto-mutakakku", "keto-suklaakeksit", "meheva-suklaakakku"]) {
     const html = render(recipeId);
     assert.match(html, /^<details class="recipe-panel chocolate-comparison"/);
@@ -54,7 +54,19 @@ test("disclosure is confined to the three recipes in Finnish and English and is 
       assert.match(english, /calculated part shown above/);
       assert.doesNotMatch(render(recipeId, "en", false), /calculated part shown above/);
     }
-    for (const locale of ["sv", "th"] as const) assert.equal(render(recipeId, locale), "");
+    const swedish = render(recipeId, "sv");
+    assert.match(swedish, /data-chocolate-comparison="sv"/);
+    assert.match(swedish, /Sötningsmedel: Maltitol/);
+    assert.match(swedish, /Sötningsmedel: Erytritol och steviolglykosider/);
+    for (const product of chocolateComparisonProducts) assert.ok(swedish.includes(product.sourceUrl));
+    if (recipeId === "meheva-suklaakakku") {
+      assert.match(swedish, /smör till smeten och med grädde till glasyren/);
+      assert.doesNotMatch(swedish, /Den beräknade delen ovan/);
+    } else {
+      assert.match(swedish, /Den beräknade delen ovan/);
+      assert.doesNotMatch(render(recipeId, "sv", false), /Den beräknade delen ovan/);
+    }
+    assert.equal(render(recipeId, "th"), "");
   }
   for (const id of ["vhh-juustokakku", "", "unknown"]) assert.equal(render(id), "");
 });
