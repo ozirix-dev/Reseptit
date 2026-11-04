@@ -161,3 +161,16 @@ test("workflow and classification failures select the full fallback", () => {
   assert.equal(classifyPaths([], { classificationFailed: true }).full, true);
   assert.equal(classifyPaths(["site/new-unknown-config.toml"]).full, true);
 });
+
+test("full fallback retains the changed-content gate for mixed and forced runs", () => {
+  const translation = "kaannokset/th/paaruoat/hyderabadi-kanabiryani.md";
+  const other = "site/scripts/approved-recipe-note-edits.ts";
+  for (const paths of [[translation, other], [other, translation]]) {
+    const plan = classifyPaths(paths);
+    assert.equal(plan.full, true);
+    assert.equal(plan.runContent, true);
+  }
+  assert.equal(classifyPaths([translation], { forceFull: true }).runContent, true);
+  assert.equal(classifyPaths(["reseptit/_mallipohjat/resepti/resepti_pohja.md"]).runContent, false);
+  assert.equal(classifyPaths([other, "docs/nutrition/calculations/bouillabaisse.json"]).runContent, true);
+});

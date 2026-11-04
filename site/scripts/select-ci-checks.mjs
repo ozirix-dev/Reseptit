@@ -56,10 +56,12 @@ function addGlycemicChecks(plan) {
   plan.unitTests.add("tests/glycemic-coverage-inventory.test.ts");
 }
 
-function fullPlan() {
+function fullPlan(paths) {
   return {
     full: true,
-    runContent: false,
+    runContent: paths.some((file) =>
+      (/^(?:reseptit|kaannokset)\/.+\.md$/i.test(file) && !file.includes("/_mallipohjat/")) ||
+      /^docs\/nutrition\/calculations\/[a-z0-9-]+\.json$/i.test(file)),
     runNutrition: false,
     runGlycemic: false,
     runTranslationReview: true,
@@ -75,7 +77,9 @@ function fullPlan() {
 }
 
 function classifyPaths(paths, { forceFull = false, classificationFailed = false } = {}) {
-  if (forceFull || classificationFailed || paths.length === 0) return fullPlan();
+  const normalized = paths.map((value) => value.replaceAll("\\", "/"));
+  const fallback = () => fullPlan(normalized);
+  if (forceFull || classificationFailed || paths.length === 0) return fallback();
 
   const plan = {
     full: false,
@@ -92,11 +96,9 @@ function classifyPaths(paths, { forceFull = false, classificationFailed = false 
     unitTests: new Set(),
     publish: false,
   };
-  const normalized = paths.map((value) => value.replaceAll("\\", "/"));
-
   for (const file of normalized) {
     if (/^reseptit\/.+\.md$/i.test(file)) {
-      if (file.includes("/_mallipohjat/")) return fullPlan();
+      if (file.includes("/_mallipohjat/")) return fallback();
       plan.runContent = true;
       addNutritionChecks(plan);
       addGlycemicChecks(plan);
@@ -133,7 +135,7 @@ function classifyPaths(paths, { forceFull = false, classificationFailed = false 
       addGlycemicChecks(plan);
       continue;
     }
-    if (/^docs\/nutrition\/.+\.json$/i.test(file)) return fullPlan();
+    if (/^docs\/nutrition\/.+\.json$/i.test(file)) return fallback();
     if (file === "meta/kaannokset/human-review-evidence.json" ||
         file === "meta/kaannokset/codex-review-evidence.json" ||
         file === "site/scripts/translation-semantic-review.ts" ||
@@ -152,7 +154,7 @@ function classifyPaths(paths, { forceFull = false, classificationFailed = false 
     if (file === ".github/workflows/pages.yml" || file === "site/package.json" ||
         file === "site/package-lock.json" || file === "site/scripts/build-content.ts" ||
         file === "site/scripts/select-ci-checks.mjs" || file.startsWith("site/scripts/ci-")) {
-      return fullPlan();
+      return fallback();
     }
     if (file.startsWith("site/tests/")) {
       const testPath = file.slice("site/".length);
@@ -167,7 +169,7 @@ function classifyPaths(paths, { forceFull = false, classificationFailed = false 
         plan.unitTests.add(testPath);
         if (generatedContentTests.has(testPath)) plan.runContentSync = true;
       } else {
-        return fullPlan();
+        return fallback();
       }
       plan.needsNode = true;
       continue;
@@ -197,7 +199,7 @@ function classifyPaths(paths, { forceFull = false, classificationFailed = false 
         ["site/src/content/schema.ts", ["tests/recipe-schema.test.ts"]],
       ]);
       const tests = testsBySource.get(file);
-      if (!tests) return fullPlan();
+      if (!tests) return fallback();
       for (const testFile of tests) plan.unitTests.add(testFile);
       plan.runBuild = true;
       plan.runStatic = true;
@@ -217,10 +219,10 @@ function classifyPaths(paths, { forceFull = false, classificationFailed = false 
       plan.needsNode = true;
       continue;
     }
-    if (file.startsWith("site/scripts/")) return fullPlan();
-    if (file.startsWith("site/")) return fullPlan();
+    if (file.startsWith("site/scripts/")) return fallback();
+    if (file.startsWith("site/")) return fallback();
     if (/^(?:README\.md|AGENTS\.md|docs\/|meta\/|\.github\/ISSUE_TEMPLATE\/|\.markdownlint-cli2\.jsonc$)/.test(file)) continue;
-    return fullPlan();
+    return fallback();
   }
 
   if (plan.runBuild) plan.runStatic = true;
