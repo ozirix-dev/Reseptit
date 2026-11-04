@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "batchId": "gk100-manakish-study",
+  "candidates": [
+    {
+      "recipeId": "lahi-ita-manakish-zaatarilla",
+      "packetPath": "docs/nutrition/gk100-manakish-study-release-candidate.json",
+      "classification": {
+        "risk": "HIGH",
+        "reasons": [
+          "GI mitattiin tutkimusleivästä sellaisenaan. Saatava hiilihydraatti on tutkimuksen ravintolaskennan vakioannos. Mukana ei ole GI-koodeja tai hiilihydraattien poisjättöjä.",
+          "Tutkimusversion hiivataikina, kiviuuni sekä pakastus ja uudelleenlämmitys poikkeavat alkuperäisen reseptin valmistuksesta. Arvio rajataan tutkittuun valmistustapaan."
+        ],
+        "contentChange": "GK_ONLY",
+        "contentSummary": "Erillinen M with S1 -tutkimusversio. Yksi noin 113 g leipä, 1 g sumakkia leipää kohti ja 260 ml juomavettä. Laskennallinen GK 30,50 annosta kohti.",
+        "outcome": "OWNER_DECISION",
+        "review": {
+          "depth": "DEEP",
+          "evidence": "docs/nutrition/gk100-manakish-study-review.md"
+        },
+        "candidateSha256": "d2723eefd0f251cbc8ccb3c696db9b78f20e7a168407b19657b94b8f2c4d4569"
+      }
+    }
+  ]
+}

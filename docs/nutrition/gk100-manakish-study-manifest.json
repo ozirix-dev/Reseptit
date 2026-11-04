@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "batchId": "gk100-manakish-study",
+  "candidates": [
+    {
+      "recipeId": "lahi-ita-manakish-zaatarilla",
+      "packetPath": "docs/nutrition/gk100-manakish-study-release-candidate.json",
+      "originalPath": "reseptit/aamupalat/lahi-ita-manakish-zaatarilla.md",
+      "supportFiles": {
+        "docs/nutrition/gk100-manakish-study-review.md": "5f06c3415a0073ab63a8015e2e4dfa7fe7da1f4ea7911ed27ace39f13cd1d479"
+      },
+      "candidateSha256": "d2723eefd0f251cbc8ccb3c696db9b78f20e7a168407b19657b94b8f2c4d4569",
+      "originalSha256": "b1c6167df859ba8589506e7bdc4a87a42e72a69ed175d073001422eb515fbd45",
+      "inputSha256": "89c1de593ae0df9a14ca212373a34f65235bbea5f0bb5ef349934ead51b57e45",
+      "servings": 1,
+      "method": "B",
+      "point": 30.5,
+      "range": null,
+      "uncertainty": "LOW_CONFIDENCE_POINT",
+      "limitation": {
+        "fi": "Arvio koskee noin 113 g:n M with S1 -koeleipää, jossa on 1 g sumakkia. GI 61 mitattiin 12 aikuisella. Saatava hiilihydraatti 50 g arvioitiin ravintolaskennalla, ja GK laskettiin näistä arvoista. Alkuperäisen reseptin jogurttitaikina sekä paistaminen pannulla tai tavallisessa uunissa poikkeavat koeasetelmasta.",
+        "en": "This estimate applies to the approximately 113 g M with S1 study bread with 1 g of sumac. GI 61 was measured in 12 adults. The study estimated 50 g of available carbohydrate with nutrition software, and GL was calculated from those values. The original recipe’s yoghurt dough and frying pan or conventional oven differ from the study protocol.",
+        "sv": "Uppskattningen gäller studiens cirka 113 g tunga M with S1-bröd med 1 g sumak. GI 61 mättes hos 12 vuxna. Studiens 50 g tillgängliga kolhydrater uppskattades med ett näringsberäkningsprogram. GB beräknades från dessa värden. Originalreceptets yoghurtdeg och tillagning i stekpanna eller vanlig ugn skiljer sig från studiens metod.",
+        "th": "ค่าประมาณนี้ใช้กับขนมปังทดลอง M with S1 หนักประมาณ 113 กรัมที่ใส่ซูแมค 1 กรัม ค่า GI 61 ได้จากการวัดในผู้ใหญ่ 12 คน งานวิจัยใช้โปรแกรมโภชนาการประเมินคาร์โบไฮเดรตที่ย่อยได้ 50 กรัม และคำนวณ GL จากค่าทั้งสอง แป้งโดว์โยเกิร์ตและการใช้กระทะหรือเตาอบทั่วไปในสูตรเดิมต่างจากวิธีที่ใช้ในการศึกษา"
+      },
+      "omittedCho": 0,
+      "sources": [
+        {
+          "title": "Haydamous Kahale et al. (2015), GI of mankoucheh",
+          "url": "https://www.researchgate.net/publication/276271406_Effect_of_sumac_spice_Turkish_coffee_and_yerba_mate_tea_on_the_postprandial_glycemic_response_to_Lebanese_mankoucheh",
+          "kind": "HUMAN_GI",
+          "note": "M with S1 (1 g sumac), glucose-reference GI 61 ± 6 SEM in 12 normoglycemic adults. Table I and Test meals describe the tested bread and plain water."
+        },
+        {
+          "title": "Haydamous Kahale et al. (2015), Test meals and Tables I and III",
+          "url": "https://www.researchgate.net/publication/276271406_Effect_of_sumac_spice_Turkish_coffee_and_yerba_mate_tea_on_the_postprandial_glycemic_response_to_Lebanese_mankoucheh",
+          "kind": "CARBOHYDRATE",
+          "note": "The study standardized the meal to 50 g available carbohydrate using Food Processor SQL. Table I gives approximately 113 g per bread. The 260 ml of plain drinking water adds no carbohydrate."
+        }
+      ],
+      "omittedChoStressGkAtGi100": 0,
+      "suggestedRisk": "LOW",
+      "riskSignals": [],
+      "localeFields": "PRESENT",
+      "classification": {
+        "risk": "HIGH",
+        "reasons": [
+          "GI mitattiin tutkimusleivästä sellaisenaan. Saatava hiilihydraatti on tutkimuksen ravintolaskennan vakioannos. Mukana ei ole GI-koodeja tai hiilihydraattien poisjättöjä.",
+          "Tutkimusversion hiivataikina, kiviuuni sekä pakastus ja uudelleenlämmitys poikkeavat alkuperäisen reseptin valmistuksesta. Arvio rajataan tutkittuun valmistustapaan."
+        ],
+        "contentChange": "GK_ONLY",
+        "contentSummary": "Erillinen M with S1 -tutkimusversio. Yksi noin 113 g leipä, 1 g sumakkia leipää kohti ja 260 ml juomavettä. Laskennallinen GK 30,50 annosta kohti.",
+        "outcome": "OWNER_DECISION",
+        "review": {
+          "depth": "DEEP",
+          "evidence": "docs/nutrition/gk100-manakish-study-review.md"
+        },
+        "candidateSha256": "d2723eefd0f251cbc8ccb3c696db9b78f20e7a168407b19657b94b8f2c4d4569"
+      },
+      "technical": "PASS",
+      "state": "OWNER_DECISION",
+      "reason": null,
+      "ownerStatus": "PENDING",
+      "publicationAuthorized": false
+    }
+  ],
+  "manifestSha256": "56f6dfcb3844464be8d72acb7bd7bc9958cb71bff37223a770d18bef06177bfd"
+}
