@@ -259,7 +259,8 @@ test("localized central GL pages render complete SEO metadata with canonical and
 test("GK evidence copy separates measured, comparison, modeled, and unrecognized inputs", () => {
   assert.equal(evidenceLabel({ matchKind: "EXACT", evidenceKind: "HUMAN_GI", applicationKind: "DIRECT" }), "direct");
   assert.equal(evidenceLabel({ matchKind: "EXACT" }), "published");
-  assert.equal(evidenceLabel({ matchKind: "CATEGORY_MEAN" }), "comparison");
+  assert.equal(evidenceLabel({ matchKind: "CATEGORY_MEAN" }), "categoryMean");
+  assert.equal(estimateBasis({ sourceReferences: [{ matchKind: "CATEGORY_MEAN" }] }), "comparison");
   assert.equal(evidenceLabel({ matchKind: "CALCULATION_POLICY", evidenceKind: "PUBLISHED_IMPUTATION" }), "model");
   assert.equal(estimateBasis({ sourceReferences: [{ matchKind: "EXACT", evidenceKind: "UNRECOGNIZED" }] }), "unknown");
   assert.equal(missingReason("fi", "CONFLICT"), gkCopy.fi.blockers.CONFLICT);

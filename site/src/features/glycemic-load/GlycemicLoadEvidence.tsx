@@ -25,7 +25,10 @@ export function EstimateSummary({ result, locale }: { result: EvidenceResult; lo
   return <>
     <EstimateConfidence locale={locale} confidence={result.confidence} />
     <p>{text.basis[basis]}
-      {basis === "model" && result.sourceReferences.some((source) => evidenceLabel(source) === "comparison") ? ` ${text.basis.comparison}` : ""}
+      {basis === "model" && result.sourceReferences.some((source) => {
+        const kind = evidenceLabel(source);
+        return kind === "comparison" || kind === "categoryMean";
+      }) ? ` ${text.basis.comparison}` : ""}
       {result.omittedAvailableCarbohydratePerServingG > 0 ? ` ${text.omitted}` : ""}
       {result.glycemicLoadRangePerServing ? ` ${text.range}` : ""}
     </p>

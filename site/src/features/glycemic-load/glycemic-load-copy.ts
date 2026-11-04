@@ -14,7 +14,7 @@ export const gkCopy = {
       MEDIUM: "Lähteet tukevat arviota, mutta osa arvoista on epävarmempia.",
       LOW: "Osa laskelmassa käytetyistä arvoista tai oletuksista on epävarmoja."
     },
-    personal: "Luotettavuus kertoo laskelman lähteistä. Oma verensokerivaste voi vaihdella.",
+    personal: "Annoksen GK on laskettu raaka-aineiden tiedoista. Luotettavuus kertoo laskelman lähteistä. Oma verensokerivaste voi vaihdella.",
     basis: {
       published: "Arvio perustuu raaka-aineiden hiilihydraatteihin ja lähteissä ilmoitettuihin GI-arvoihin.",
       comparison: "Laskelmassa käytettiin myös samankaltaisten ruokien tai ruokaryhmien vertailuarvoja.",
@@ -22,7 +22,8 @@ export const gkCopy = {
       unknown: "Arvio perustuu reseptin raaka-aineisiin ja niiden määriin. Tarkempi laskentaperusta löytyy lisätiedoista."
     },
     kinds: {
-      direct: "Suoraan mitattu GI-arvo",
+      direct: "Raaka-aineen mitattu GI-arvo",
+      categoryMean: "Ruokaryhmän keskiarvo",
       comparison: "Vertailuarvo",
       model: "Mallinnuksessa käytetty arvo",
       published: "Lähteessä ilmoitettu GI-arvo",
@@ -66,7 +67,7 @@ export const gkCopy = {
       MEDIUM: "The sources support the estimate, though some values are less certain.",
       LOW: "Some values or assumptions in the calculation are uncertain."
     },
-    personal: "Confidence describes the evidence behind the calculation. Your blood sugar response may vary.",
+    personal: "The serving’s GL is calculated from ingredient data. Confidence describes the evidence behind the calculation. Your blood sugar response may vary.",
     basis: {
       published: "The estimate uses the ingredients’ carbohydrate amounts and GI values reported in sources.",
       comparison: "The calculation also uses comparison values from similar foods or food groups.",
@@ -74,7 +75,8 @@ export const gkCopy = {
       unknown: "The estimate uses the recipe’s ingredients and amounts. See the details for the calculation basis."
     },
     kinds: {
-      direct: "Directly measured GI value",
+      direct: "Measured GI for the ingredient",
+      categoryMean: "Food group average",
       comparison: "Comparison value",
       model: "Value used in the model",
       published: "GI value reported in a source",
@@ -118,7 +120,7 @@ export const gkCopy = {
       MEDIUM: "Källorna stöder uppskattningen, men vissa värden är mer osäkra.",
       LOW: "Vissa värden eller antaganden i beräkningen är osäkra."
     },
-    personal: "Tillförlitligheten gäller underlaget för beräkningen. Ditt blodsocker kan reagera annorlunda.",
+    personal: "Portionens GL beräknas utifrån uppgifter om ingredienserna. Tillförlitligheten gäller underlaget för beräkningen. Ditt blodsocker kan reagera annorlunda.",
     basis: {
       published: "Uppskattningen bygger på mängden kolhydrater i ingredienserna och GI-värden från källorna.",
       comparison: "I beräkningen ingår också jämförelsevärden från liknande livsmedel eller livsmedelsgrupper.",
@@ -126,7 +128,8 @@ export const gkCopy = {
       unknown: "Uppskattningen bygger på receptets ingredienser och mängder. Mer om underlaget finns i detaljerna."
     },
     kinds: {
-      direct: "Direkt uppmätt GI-värde",
+      direct: "Uppmätt GI för ingrediensen",
+      categoryMean: "Genomsnitt för livsmedelsgruppen",
       comparison: "Jämförelsevärde",
       model: "Värde som används i modellen",
       published: "GI-värde från en källa",
@@ -170,7 +173,7 @@ export const gkCopy = {
       MEDIUM: "แหล่งข้อมูลสนับสนุนค่าประมาณ แต่บางค่ายังมีความไม่แน่นอน",
       LOW: "ค่าหรือสมมติฐานบางส่วนในการคำนวณยังมีความไม่แน่นอน"
     },
-    personal: "ระดับความเชื่อมั่นบอกคุณภาพของข้อมูลที่ใช้คำนวณ ระดับน้ำตาลในเลือดของแต่ละคนอาจตอบสนองต่างกัน",
+    personal: "ค่า GL ต่อหนึ่งที่คำนวณจากข้อมูลวัตถุดิบ ระดับความเชื่อมั่นบอกคุณภาพของข้อมูลที่ใช้คำนวณ ระดับน้ำตาลในเลือดของแต่ละคนอาจตอบสนองต่างกัน",
     basis: {
       published: "ค่าประมาณนี้ใช้ปริมาณคาร์โบไฮเดรตในวัตถุดิบและค่า GI จากแหล่งข้อมูล",
       comparison: "การคำนวณใช้ค่าเทียบเคียงจากอาหารที่คล้ายกันหรือจากกลุ่มอาหารด้วย",
@@ -178,7 +181,8 @@ export const gkCopy = {
       unknown: "ค่าประมาณนี้อิงจากวัตถุดิบและปริมาณตามสูตร ดูที่มาของการคำนวณได้ในรายละเอียด"
     },
     kinds: {
-      direct: "ค่า GI ที่วัดโดยตรง",
+      direct: "ค่า GI ที่วัดจากวัตถุดิบ",
+      categoryMean: "ค่าเฉลี่ยของกลุ่มอาหาร",
       comparison: "ค่าเทียบเคียง",
       model: "ค่าที่ใช้ในแบบจำลอง",
       published: "ค่า GI ที่แหล่งข้อมูลรายงาน",
@@ -212,19 +216,21 @@ export const gkCopy = {
 } satisfies Record<RecipeLocale, object>;
 
 type Evidence = {
-  matchKind: string;
+  matchKind?: string;
   evidenceKind?: string;
   applicationKind?: string;
 };
 
 export function evidenceLabel(source: Evidence) {
+  if (source.matchKind !== "EXACT" && source.matchKind !== "ANALOG" && source.matchKind !== "CATEGORY_MEAN" && source.matchKind !== "CALCULATION_POLICY") return "unknown";
   if (source.evidenceKind !== undefined && source.evidenceKind !== "HUMAN_GI" && source.evidenceKind !== "PUBLISHED_IMPUTATION") return "unknown";
   if (source.applicationKind !== undefined && source.applicationKind !== "DIRECT" && source.applicationKind !== "FOOD_ANALOGUE" && source.applicationKind !== "PUBLISHED_IMPUTATION") return "unknown";
   if (source.applicationKind === "PUBLISHED_IMPUTATION" || source.evidenceKind === "PUBLISHED_IMPUTATION") return "model";
   if (source.matchKind === "CALCULATION_POLICY") return "policy";
-  if (source.applicationKind === "FOOD_ANALOGUE" || source.matchKind === "ANALOG" || source.matchKind === "CATEGORY_MEAN") return "comparison";
-  if (source.matchKind === "EXACT" && source.evidenceKind === "HUMAN_GI" && source.applicationKind === "DIRECT") return "direct";
-  if (source.matchKind === "EXACT" && source.evidenceKind === undefined && source.applicationKind === undefined) return "published";
+  if (source.matchKind === "CATEGORY_MEAN") return "categoryMean";
+  if (source.applicationKind === "FOOD_ANALOGUE" || source.matchKind === "ANALOG") return "comparison";
+  if (source.evidenceKind === "HUMAN_GI" && source.applicationKind === "DIRECT") return "direct";
+  if (source.applicationKind === undefined) return "published";
   return "unknown";
 }
 
@@ -234,7 +240,7 @@ export function estimateBasis(result: { assessmentType?: string; sourceReference
   const kinds = result.sourceReferences.map(evidenceLabel);
   if (kinds.includes("unknown")) return "unknown";
   if (kinds.includes("model")) return "model";
-  if (kinds.includes("comparison")) return "comparison";
+  if (kinds.includes("comparison") || kinds.includes("categoryMean")) return "comparison";
   if (kinds.includes("direct") || kinds.includes("published")) return "published";
   return "unknown";
 }

@@ -13,7 +13,7 @@ import {buildPanangKimchiVariants} from './gk-panang-kimchi';
 import {buildGkOnlyVariants} from './gk149-integration';
 import {buildApprovedSevenVariants} from './gk-next-seven';
 import {countGkVersions} from '../src/features/recipes/gk-only-types';
-import {classifyGk80Source} from "./gk80-source-classification";
+import {catalogSourceApplication} from "./gk80-source-classification";
 import {applyScopedPolyolC} from './gk80-polyol-c';
 import {applyRecovery} from './gk80-uunikanapasta';
 import {withdrawQ09Tea} from './gk80-q09-withdrawal';
@@ -237,7 +237,9 @@ const publicResults = results.flatMap((result) => {
       .map((record) => ({
         title: record.source.title,
         url: record.source.url,
-        ...(record.evidenceKind ? classifyGk80Source(record.evidenceKind, (record.matchKind ?? "EXACT") === "EXACT" ? "DIRECT" : "APPLIED") : {matchKind: record.matchKind ?? "EXACT"}),
+        matchKind: record.evidenceKind === "PUBLISHED_IMPUTATION" ? "CALCULATION_POLICY" : record.matchKind ?? "EXACT",
+        evidenceKind: record.evidenceKind,
+        applicationKind: catalogSourceApplication(record.evidenceKind, record.matchKind ?? "EXACT"),
         confidence: record.confidence ?? (record.qualityTier === "STRONG" ? "HIGH" : "LOW"),
         note: record.note ?? record.source.qualityEvidence,
       }))
@@ -276,8 +278,7 @@ const publicResults = results.flatMap((result) => {
       ingredientNames,
       matchKind: ingredient.matchKind,
       evidenceKind: source?.evidenceKind,
-      applicationKind: source?.evidenceKind === "PUBLISHED_IMPUTATION" ? "PUBLISHED_IMPUTATION"
-        : source?.evidenceKind === "HUMAN_GI" ? (ingredient.matchKind === "EXACT" ? "DIRECT" : "FOOD_ANALOGUE") : undefined,
+      applicationKind: catalogSourceApplication(source?.evidenceKind, ingredient.matchKind),
       giRecordId: ingredient.giRecordId,
       foodRecordId: ingredient.fineliRecordId,
     }];
