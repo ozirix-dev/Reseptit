@@ -9,13 +9,13 @@
         "candidateSha256": "f72c9008819127bfdb42e0bcbf790f5e2bd1e77911ddaa9bb3a3a3e5dd4d77b8",
         "risk": "HIGH",
         "reasons": [
-          "Pienen ehjän pavun kokeen GI 66 ei ratkaise soseutuksen vaikutusta."
+          "GI 66 perustuu kolmen henkilön kokeeseen ehjillä keitetyillä härkäpavuilla. Soseutetusta kuoritusta pavusta tarvitaan valmistusta vastaava GI-peruste. Valkosipuli ja juustokumina (0,49 g CHO/annos) eivät ratkaise estettä."
         ],
         "contentChange": "GK_ONLY",
         "contentSummary": "150 g Legumi Select -kuorittua kuivahärkäpapua kahdelle, soseutus keitinveden kanssa ja punnitut mausteet.",
-        "outcome": "REVIEW_REQUIRED",
+        "outcome": "BLOCKED",
         "review": {
-          "depth": "FOCUSED",
+          "depth": "DEEP",
           "evidence": "docs/nutrition/gk100-bissara-select-review.md"
         }
       }
@@ -27,13 +27,13 @@
         "candidateSha256": "543952fb18fdc6df5c611353a88f710fbac5e229136bdb256a707a32880cbfe6",
         "risk": "HIGH",
         "reasons": [
-          "Koko annoksen sambosaverrokista puuttuvat täytteen ja taikinan suhteet sekä öljyn imeytyminen."
+          "Punnittu Meira-mauste ratkaisee koostumussyötteen. Koko samosan 44,49 GK:n laskennassa GI 60,35 perustuu omanilaiseen kasvis-sambosaan. Mitatun näytteen taikina–täytesuhde ja öljyn imeytyminen ovat avoimia, eikä laboratorioluku 69,2 ole toinen ihmismittaus."
         ],
         "contentChange": "GK_ONLY",
         "contentSummary": "Neljä annosta kasvis-samosaa punnituilla mausteilla, mukana 1 g Meira Garam Masalaa.",
-        "outcome": "REVIEW_REQUIRED",
+        "outcome": "BLOCKED",
         "review": {
-          "depth": "FOCUSED",
+          "depth": "DEEP",
           "evidence": "docs/nutrition/gk100-samosa-meira-review.md"
         }
       }
@@ -63,13 +63,13 @@
         "candidateSha256": "b4bac69d65dee437fad92d9a4d09b98100aab3a9a5883ecf73cf5c0e2aa8e8c0",
         "risk": "HIGH",
         "reasons": [
-          "Casabe-verrokki ja teollisesti käsitelty kassava edellyttävät erillistä menetelmä- ja turvallisuusarviota."
+          "Casaben GI 117,55 ei yksilöi kostutetun ja pannulla paistetun bammyn käsittelyä. Tarvitaan nimetyn kassavaleivän kypsennys- ja turvallisuussidos sekä sitä vastaava verrokki."
         ],
         "contentChange": "GK_ONLY",
         "contentSummary": "Kahdelle kaupallinen Carib Imports -kassavaleipä ja koko 200 g Blue Dragon -kookosmaitoa.",
-        "outcome": "REVIEW_REQUIRED",
+        "outcome": "BLOCKED",
         "review": {
-          "depth": "FOCUSED",
+          "depth": "DEEP",
           "evidence": "docs/nutrition/gk80-operation80-batch-62.md"
         }
       }
@@ -81,13 +81,13 @@
         "candidateSha256": "6e94bc4ed556db790f5cd5509a89604607f2b4b223bd4786a430680d3083550d",
         "risk": "HIGH",
         "reasons": [
-          "Koko taikinan dosaverrokki sekä itujen laskentakoodi vaativat syväkatselmoinnin."
+          "Kaksi ihmismittausta tukee riisidosaa taikinan herkkyysvertailuna. Erillinen kypsä itutäyte antaa tuotetiedoista 1,20–6,975 g CHO/annos. Itutuote ja sen kypsennyksen GI-peruste pitää sitoa, eikä taikinan GI kata täytettä."
         ],
         "contentChange": "GK_ONLY",
         "contentSummary": "Kahdelle ohuet letut 100 g riisijauhosta, 200 g kookosmaidosta ja 2 g kurkumasta sekä erikseen kypsennetyt katkaravut ja idut.",
-        "outcome": "REVIEW_REQUIRED",
+        "outcome": "BLOCKED",
         "review": {
-          "depth": "FOCUSED",
+          "depth": "DEEP",
           "evidence": "docs/nutrition/gk80-operation80-batch-23.md"
         }
       }
@@ -99,13 +99,13 @@
         "candidateSha256": "84b1c4323c48bcf0a830eb94f045b55898f817ec5c149ee6aed58c4e8aec147a",
         "risk": "HIGH",
         "reasons": [
-          "Koko sämpylän GK on herkkä GI-verrokille. Koeannoksen kuori–täytesuhde puuttuu."
+          "Täytetyn höyrysämpylän GI 39,1 vaikuttaa koko annokseen. Kuori–täytesuhde ja jauho puuttuvat, ja muut höyryleipäverrokit antavat olennaisesti eri luvun."
         ],
         "contentChange": "GK_ONLY",
         "contentSummary": "Neljä annosta punnittuja, höyrytettyjä porsas–kaalisämpylöitä.",
-        "outcome": "REVIEW_REQUIRED",
+        "outcome": "BLOCKED",
         "review": {
-          "depth": "FOCUSED",
+          "depth": "DEEP",
           "evidence": "docs/nutrition/gk80-operation80-baozi.md"
         }
       }
@@ -135,13 +135,13 @@
         "candidateSha256": "39c826a0d211c2264e78e8cd530c77b1f3adc93cfe2a4b02cedee6b48d338280",
         "risk": "HIGH",
         "reasons": [
-          "Kevätrullan GI-siirto brikin kuoreen ja täytteeseen vaatii syväkatselmoinnin."
+          "Chen ym. kuvaavat kevätrullan sanalla Instant. Taikinakuoren, täytteen ja paiston vastaavuus puuttuu, joten koko brikin 5,28 GK jää verrokkiskenaarioksi. Sitruunamehun pieni osuus ei ratkaise estettä."
         ],
         "contentChange": "GK_ONLY",
         "contentSummary": "Neljä 68 g:n yhteispainoon punnittua JR Feuille de Brick -arkkia ja punnittu täyte.",
-        "outcome": "REVIEW_REQUIRED",
+        "outcome": "BLOCKED",
         "review": {
-          "depth": "FOCUSED",
+          "depth": "DEEP",
           "evidence": "docs/nutrition/gk80-operation80-batch-45.md"
         }
       }
@@ -153,13 +153,13 @@
         "candidateSha256": "2bf355ad6adfcbed50701f8f7674c664076839641d716faa2cbeac2f73a6dc22",
         "risk": "HIGH",
         "reasons": [
-          "Chian ja vaniljauutteen poisjätön suhteellinen stressivaikutus ylittää katselmoinnin seulontarajan."
+          "Chian ja vaniljauutteen poisjättö on noin 0,34 g CHO/annos. GI 100 -stressi on noin viidennes 1,62–1,81 GK:n osatuloksesta. Alpro No Sugarsin nollahiilihydraatti on jo sidottu."
         ],
         "contentChange": "GK_ONLY",
         "contentSummary": "Neljälle 250 ml Alpro No Sugars -mantelijuomaa, FAGE Total 0 % -jogurttia, punnitut marjat ja vaniljauute. Valinnainen makeutus pois.",
-        "outcome": "REVIEW_REQUIRED",
+        "outcome": "BLOCKED",
         "review": {
-          "depth": "FOCUSED",
+          "depth": "DEEP",
           "evidence": "docs/nutrition/gk80-operation80-batch-38.md"
         }
       }
@@ -171,13 +171,13 @@
         "candidateSha256": "2950bfb27837efad79709772903cd711b0b81863ac25bf5e8e48ccbc8b4ebedd",
         "risk": "HIGH",
         "reasons": [
-          "Koodipohjainen tulos ja poisjätön vaikutus suhteessa matalaan arvioon tarvitsevat syväkatselmoinnin."
+          "Tarvitaan haudutetulle kastikepohjalle soveltuva GI-peruste ja jäljelle jäävän tahnan ja limetin osuuden ratkaisu. Ks. erittely alla."
         ],
         "contentChange": "GK_ONLY",
         "contentSummary": "Neljälle 400 g täysrasvaista kookosmaitoa, 30 g nimettyä currytahnaa sekä punnitut paprika, kalakastike ja limettimehu.",
-        "outcome": "REVIEW_REQUIRED",
+        "outcome": "BLOCKED",
         "review": {
-          "depth": "FOCUSED",
+          "depth": "DEEP",
           "evidence": "docs/nutrition/gk80-operation80-batch-30.md"
         }
       }
@@ -189,13 +189,13 @@
         "candidateSha256": "4d3f07c1d03b43f7193391c836747ceeb3efdafd781f1e1ee5cec881ae50a0ab",
         "risk": "HIGH",
         "reasons": [
-          "Kidneypavun turvallinen valmistus ja kuivan pavun hiilihydraatin siirtymä vaativat erillisen syväkatselmoinnin."
+          "Urad antaa 11,82 GK 16,94 GK:sta. Höyrytetyn uradin GI 43 ei kata keittoa ja osittaista murskaamista, ja vain osin palautettavan keitinliemen CHO-osuus on auki. Kidneypavun valmistus on kirjattu pakettiin. Pääeste on uradin sidos."
         ],
         "contentChange": "GK_ONLY",
         "contentSummary": "Neljälle punnitut kuivat urad- ja kidneypavut, Mutti Polpa ja määritelty liotus ja keitto. Arvio kattaa padan.",
-        "outcome": "REVIEW_REQUIRED",
+        "outcome": "BLOCKED",
         "review": {
-          "depth": "FOCUSED",
+          "depth": "DEEP",
           "evidence": "docs/nutrition/gk80-operation80-batch-50.md"
         }
       }
@@ -207,13 +207,13 @@
         "candidateSha256": "ee20c022f4cff3235f4bf449f234da31340b8e3ce928c577ecd235a016765a97",
         "risk": "HIGH",
         "reasons": [
-          "Wonderbaon koostumus on varmennettu, mutta höyryleipäverrokkien ero ja QQ Century -kuoren sidos vaativat jatkokatselmoinnin."
+          "Wonderbaon koostumus 52,9 g CHO/100 g on varmennettu. Vaihtoehtoinen höyryleipäverrokki muuttaa 31,92:n noin 25,54:ään. QQ Century -kuoren ja nyyttiverrokin vastaavuus pitää ratkaista erikseen."
         ],
         "contentChange": "GK_ONLY",
         "contentSummary": "Neljälle nimetyt QQ Century -nyytinkuoret, Wonderbao-sämpylät ja erillinen punnittu dippi.",
-        "outcome": "REVIEW_REQUIRED",
+        "outcome": "BLOCKED",
         "review": {
-          "depth": "FOCUSED",
+          "depth": "DEEP",
           "evidence": "docs/nutrition/gk80-operation80-batch-51.md"
         }
       }
@@ -225,13 +225,13 @@
         "candidateSha256": "db220edb9edc79d0a9b7b78ea8953053ecebdff2357a77361d0d4ab77e5b9fcf",
         "risk": "HIGH",
         "reasons": [
-          "Kohotusaineen, maidon ja ohuen pannureitin vaikutus kaipaa perusteltua analogiapäätöstä. Kapea verrokkiväli ei kata vaihtoehtoisen pannuleipämittauksen eroa."
+          "Punnittu ohut pannureitti on erotettu sämpyläreitistä. Paratha ja chapati antavat 23,75–24,63 GK, maitopannukakkuverrokki 26,43 ja toinen vehnäpannukakku 31,40. Maitoa ja leivinjauhetta käyttävälle taikinalle tarvitaan perusteltu verrokkivalinta."
         ],
         "contentChange": "GK_ONLY",
         "contentSummary": "Kahdelle ohut pannuleipä, jossa on 60 g maitoa. Paksu sämpyläreitti jää tämän arvion ulkopuolelle.",
-        "outcome": "REVIEW_REQUIRED",
+        "outcome": "BLOCKED",
         "review": {
-          "depth": "FOCUSED",
+          "depth": "DEEP",
           "evidence": "docs/nutrition/gk80-operation80-batch-02.md"
         }
       }
@@ -243,13 +243,13 @@
         "candidateSha256": "7f38382437e4dcc4125a6d8910bfbce6e7c90bceb143e672da553aea9408e7d0",
         "risk": "HIGH",
         "reasons": [
-          "Laskenta perustuu GI-koodeihin ja poisjätön vaikutus voi olla suuri suhteessa pistelukuun."
+          "Tarvitaan haudutetun kimchi-tofupohjan GI-peruste ja tahnan sekä muiden liemeen jäävien hiilihydraattien käsittely. Ks. erittely alla."
         ],
         "contentChange": "GK_ONLY",
         "contentSummary": "Neljälle punnittu kimchihauduke nimetyillä tuotteilla. Erillinen riisi jää arvion ulkopuolelle.",
-        "outcome": "REVIEW_REQUIRED",
+        "outcome": "BLOCKED",
         "review": {
-          "depth": "FOCUSED",
+          "depth": "DEEP",
           "evidence": "docs/nutrition/gk80-operation80-batch-54.md"
         }
       }
@@ -261,13 +261,13 @@
         "candidateSha256": "312ec06d1ad41c3fdfd79bf80e5011440b08e4d5b30d92b92797817da5b67fa3",
         "risk": "HIGH",
         "reasons": [
-          "Lehtikääreessä kypsennetty tahmariisi poikkeaa kotiversion pitkäjyväisestä riisistä. Suoran lähteen tulostaulukko puuttuu."
+          "Lehtikääreessä kypsennetyn tahmariisin GI 83 ei yksilöi pitkäjyväisen riisikakun vastetta. Lähimmän suoran lähteen tulostaulukko ja valmistussidos ovat auki."
         ],
         "contentChange": "GK_ONLY",
         "contentSummary": "Kahdelle 40 g kuivasta pitkäjyväisestä riisistä lehtikääreessä kypsennetty lontong ja punnitut liemituotteet.",
-        "outcome": "REVIEW_REQUIRED",
+        "outcome": "BLOCKED",
         "review": {
-          "depth": "FOCUSED",
+          "depth": "DEEP",
           "evidence": "docs/nutrition/gk80-operation80-batch-48.md"
         }
       }
@@ -279,13 +279,13 @@
         "candidateSha256": "4b7f1d58fe082ac5bd68e607c41d60db87921a90a0cb4de0045fb513bd8b059c",
         "risk": "HIGH",
         "reasons": [
-          "Kaupallisten vertailukakkujen rakenne ja täytteet eroavat kotikakusta. Saanto ja soveltuvuus ovat auki."
+          "14,44–22,03 GK:n kaupallisista verrokeista korkeammassa on erillinen maitokermatäyte. Mutakakku antaa 16,33 GK herkkyysvertailussa. Kotikakun kuorrutettu saanto ja läheisemmän verrokin koostumus on vahvistettava."
         ],
         "contentChange": "GK_ONLY",
         "contentSummary": "Kymmenen palaa, 300 g Lindt Excellence 70 % -suklaata ja punnittu kuorrute.",
-        "outcome": "REVIEW_REQUIRED",
+        "outcome": "BLOCKED",
         "review": {
-          "depth": "FOCUSED",
+          "depth": "DEEP",
           "evidence": "docs/nutrition/gk80-operation80-batch-40.md"
         }
       }
@@ -297,13 +297,13 @@
         "candidateSha256": "716072dae1fcb556bbaf4cf29ee9e2c85f576cb44f539f5cee566d373b64bee7",
         "risk": "HIGH",
         "reasons": [
-          "Parathaverrokkien suuri ero ja voikerrosten vaikutus vaativat syväkatselmoinnin."
+          "28,23 ja 49,40 GK/annos ovat kahden mitatun rasvaisen pannuleivän B-skenaariot. Ehto on punnittu kaksiosainen versio (100 g mannasuurimoa, 100 g vehnäjauhoa, 50 g kerrosvoita, 13,5 g paistoöljyä ja 20 g hunajaa) sekä kahden verrokkiskenaarion esitys. Todellinen vaste voi jäädä niiden ulkopuolelle."
         ],
         "contentChange": "GK_ONLY",
         "contentSummary": "Kahdelle punnittu mannaryyni-vehnätaikina, 50 g kerrosvoita ja 20 g hunajaa.",
-        "outcome": "REVIEW_REQUIRED",
+        "outcome": "OWNER_DECISION",
         "review": {
-          "depth": "FOCUSED",
+          "depth": "DEEP",
           "evidence": "docs/nutrition/gk80-operation80-batch-18.md"
         }
       }
@@ -315,13 +315,13 @@
         "candidateSha256": "b594bb2f4aa561a82d1a1efd3ca1884f888cf016c3ad8172d275fbe4a1b7de6d",
         "risk": "HIGH",
         "reasons": [
-          "Koko testiaterian GI 66 siirtyy eri rasva- ja proteiinikoostumukselle. Soveltuvuus on auki."
+          "GI 66 on kokonaisen testiaterian havainto. Samalla CHO-kuormalla kotiversion rasva- ja proteiinimäärät poikkeavat. Tarvitaan vastaava ateriakoostumus tai erillinen riisi- ja lisukemalli."
         ],
         "contentChange": "GK_ONLY",
         "contentSummary": "Neljälle 300 g kuivaa jasmiiniriisiä, 200 g kookosmaitoa ja punnitut anjovis-, maapähkinä- ja samballisukkeet.",
-        "outcome": "REVIEW_REQUIRED",
+        "outcome": "BLOCKED",
         "review": {
-          "depth": "FOCUSED",
+          "depth": "DEEP",
           "evidence": "docs/nutrition/gk80-operation80-batch-06.md"
         }
       }
@@ -333,13 +333,13 @@
         "candidateSha256": "934ac1a8bcd55e34ff49f46aadae0491303bcfc15187fc31f721425def7807d6",
         "risk": "HIGH",
         "reasons": [
-          "Leivän verrokki ja kastikkeen laskentakoodien soveltuvuus vaativat syväkatselmoinnin."
+          "Bertinet-leipä on sidottu koostumukseen. Leipäverrokit ja haudutetun pannun noin 3 GK:n koodiosuus vaativat perustelun. Tomaatti yksin sisältää 3,9 g CHO/annos. Harissan 0,0825 g:n poisjättö on sivuseikka."
         ],
         "contentChange": "GK_ONLY",
         "contentSummary": "Neljälle punnittu harissapannu ja 160 g Bertinet-hapanjuurileipää.",
-        "outcome": "REVIEW_REQUIRED",
+        "outcome": "BLOCKED",
         "review": {
-          "depth": "FOCUSED",
+          "depth": "DEEP",
           "evidence": "docs/nutrition/gk80-operation80-batch-55.md"
         }
       }
@@ -351,13 +351,13 @@
         "candidateSha256": "556106a2028aa57ed7ba3c0c361acfc9c46b3fc5e5a6d9a67754158079551589",
         "risk": "HIGH",
         "reasons": [
-          "Maidossa keitetyn tapiokan GI hallitsee arviota. Kookosmaidossa keitetyn kassavatapiokan vastaavaa mittausta ei ole sidottu."
+          "Maitoon keitetty tapioka määrää arvion. Tapiokaverrokin 10 GI-yksikköä muuttaa arviota noin 4,73 GK/annos. Kookosmaidossa kypsennetyn tapiokan valmistus- ja GI-sidos puuttuu."
         ],
         "contentChange": "GK_ONLY",
         "contentSummary": "Kahdelle 100 g kuivaa tapiokaa ja 200 g Blue Dragon -kookosmaitoa, papaija ja limetti tarjoiltaessa.",
-        "outcome": "REVIEW_REQUIRED",
+        "outcome": "BLOCKED",
         "review": {
-          "depth": "FOCUSED",
+          "depth": "DEEP",
           "evidence": "docs/nutrition/gk80-operation80-batch-61.md"
         }
       }
@@ -369,13 +369,13 @@
         "candidateSha256": "bc6ff60e83132d45d18650adcdb48036e733953bd63bf5a2adec84ec3aaeda28",
         "risk": "HIGH",
         "reasons": [
-          "GI 90 perustuu uppopaistoon. Siirto ohueen öljykerrokseen on avoin, ja vertailukoe antoi selvästi matalamman luvun."
+          "Noin 97 % tuloksesta tulee kypsän uppopaistetun ruokabanaanin GI 90:stä. Ohut öljykerros on eri valmistus. Matalampi paistoverrokki ei vahvista samaa kypsyys- ja valmistusastetta."
         ],
         "contentChange": "GK_ONLY",
         "contentSummary": "Kahdelle 150 g kypsää ruokabanaania pannulla sekä punnitut muna, avokado ja kuorittu limetti.",
-        "outcome": "REVIEW_REQUIRED",
+        "outcome": "BLOCKED",
         "review": {
-          "depth": "FOCUSED",
+          "depth": "DEEP",
           "evidence": "docs/nutrition/gk80-operation80-batch-04.md"
         }
       }
@@ -387,13 +387,13 @@
         "candidateSha256": "eb40e73454072d93a9ecd337f4a1bc0bd72d1c81328a643c1b820def426838b1",
         "risk": "HIGH",
         "reasons": [
-          "GI 71 kuvaa leivän ja dhalin yhdistelmää. Kotiversion leipä–kastikesuhde ja rasvakoostumus poikkeavat."
+          "Yhdistelmäverrokkien GI 69 ja 71 eivät varmista leivän ja dhalin osuuksia. Kotiversiossa on noin 45 % CHO:sta dhalissa, ja kookosmaidon rasva poikkeaa koostumusverrokista."
         ],
         "contentChange": "GK_ONLY",
         "contentSummary": "Kahdelle kerroksellinen pannuleipä ja punaiset linssit 200 g:ssa kookosmaitoa.",
-        "outcome": "REVIEW_REQUIRED",
+        "outcome": "BLOCKED",
         "review": {
-          "depth": "FOCUSED",
+          "depth": "DEEP",
           "evidence": "docs/nutrition/gk80-operation80-batch-57.md"
         }
       }
@@ -405,13 +405,13 @@
         "candidateSha256": "6b550ed0583b9ff55832d21d261bb259564087a7252b09d3df3223481b4dc2ff",
         "risk": "HIGH",
         "reasons": [
-          "Kohotetun leivän ja vehnälettuverrokin vastaavuus sekä liemen siirtymä ovat auki."
+          "Kohotetulle pannuleivälle käytetään vehnäletun GI 79,6:ta. Leivän rakenne pitää sitoa läheisempään verrokkiin. Soijakastikkeen siirtymän epävarmuus on toissijainen."
         ],
         "contentChange": "GK_ONLY",
         "contentSummary": "Neljälle punnittu kohotettu pannuleipä, porsastäyte ja nimetyt soijakastikkeet.",
-        "outcome": "REVIEW_REQUIRED",
+        "outcome": "BLOCKED",
         "review": {
-          "depth": "FOCUSED",
+          "depth": "DEEP",
           "evidence": "docs/nutrition/gk80-operation80-batch-60.md"
         }
       }
@@ -423,13 +423,13 @@
         "candidateSha256": "53feb9384ca60b90dfdb3acabb8341ffa97829f9086a5519d611cd03b50077b2",
         "risk": "HIGH",
         "reasons": [
-          "Jasmiiniriisi määrää noin 98 % alemmasta arviosta. Nimetyn riisin sidos ja sambalin annostus tarvitsevat erillisen ratkaisun."
+          "Jasmiiniriisi antaa noin 98 % alemmasta arviosta. Nimetyllä vertailuriisillä lähderivien valinta muuttaa tuloksen noin 27,44–32,17 GK:hon. Tarvitaan riisipakkauksen ja valmistuksen sidos sekä punnitun sambalversion päätös."
         ],
         "contentChange": "GK_ONLY",
         "contentSummary": "Kahdelle 100 g kuivaa jasmiiniriisiä, 100 g nimettyä tempehiä ja erilliset 15 g:n tai 30 g:n sambalskenaariot.",
-        "outcome": "REVIEW_REQUIRED",
+        "outcome": "BLOCKED",
         "review": {
-          "depth": "FOCUSED",
+          "depth": "DEEP",
           "evidence": "docs/nutrition/gk80-operation80-batch-03.md"
         }
       }
@@ -441,13 +441,13 @@
         "candidateSha256": "69953d83b9e6762a93756248cd325a5f7f3aa4bf3063705a6ee24fdd59811477",
         "risk": "HIGH",
         "reasons": [
-          "Yangin nyytin kuori, täyte ja kypsennys jäävät avoimiksi. Nyyttiverrokki määrää lähes koko arvion."
+          "Yangin liha–salottisipulinyytti antaa noin 96,5 % GK:sta. Kuori, täyte ja kypsennys jäävät avoimiksi. Tarvitaan keitetyn katkarapuwontonin tai sen kuoren valmistusverrokki."
         ],
         "contentChange": "GK_ONLY",
         "contentSummary": "Kahdelle 150 g nimettyjä wontonkuoria, 150 g katkarapua, 700 ml nimettyä lientä ja punnitut kasvikset.",
-        "outcome": "REVIEW_REQUIRED",
+        "outcome": "BLOCKED",
         "review": {
-          "depth": "FOCUSED",
+          "depth": "DEEP",
           "evidence": "docs/nutrition/gk80-operation80-batch-29.md"
         }
       }
@@ -459,13 +459,13 @@
         "candidateSha256": "ef8b9aeff8897ced2215b625d94bce0014c3ead815914ca6f364602ed1b0162f",
         "risk": "HIGH",
         "reasons": [
-          "Yangin keittotavaltaan avoin nyytti ei kata höyrytystä ja liemitäytettä. Siirto vaatii syväkatselmoinnin."
+          "Yangin GI 28 -nyytin kypsennystapa on avoin. Höyrytetyn ohuen kuoren ja liemitäytteen vastaavuus ratkaisee. Dipin 0,462 g CHO/annos ei ole pääeste."
         ],
         "contentChange": "GK_ONLY",
         "contentSummary": "Neljälle 24 höyrynyyttiä punnituilla taikina-, kanaliemihyytelö- ja dippimäärillä.",
-        "outcome": "REVIEW_REQUIRED",
+        "outcome": "BLOCKED",
         "review": {
-          "depth": "FOCUSED",
+          "depth": "DEEP",
           "evidence": "docs/nutrition/gk80-operation80-batch-36.md"
         }
       }
