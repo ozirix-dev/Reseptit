@@ -75,3 +75,4 @@ fat_per_serving_g: 9.04
 ## Anteckningar
 
 - När du häller het olja, använd en behållare med höga kanter och skydda händerna från stänk.
+- Gös och torsk kan användas i stället för sej. Näringsvärdena är beräknade för sej.

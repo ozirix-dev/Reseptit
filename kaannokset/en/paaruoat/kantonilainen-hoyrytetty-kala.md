@@ -75,3 +75,4 @@ Steamed white fish is finished with hot ginger and spring onion oil and soy sauc
 ## Notes
 
 - When pouring hot oil, use a container with high edges and protect your hands from splashes.
+- Zander and cod can be used instead of pollock. The listed nutrition values are based on pollock.

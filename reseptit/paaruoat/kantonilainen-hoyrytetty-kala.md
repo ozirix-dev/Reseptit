@@ -77,3 +77,4 @@ Höyrytetty valkoinen kala viimeistellään kuumalla inkivääri-sipuliöljyllä
 ## Muistiinpanot
 
 - Kuumaa öljyä kaadettaessa käytä korkeareunaista astiaa ja suojaa kädet roiskeilta.
+- Kuha ja turska ovat seitifileen vaihtoehtoja. Ilmoitetut ravintoarvot perustuvat seitiin.
