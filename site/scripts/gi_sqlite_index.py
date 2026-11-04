@@ -13,6 +13,7 @@ import math
 import os
 from pathlib import Path
 import sqlite3
+import sys
 import tempfile
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -48,10 +49,18 @@ def _check_registry(data: object) -> tuple[list[dict], list[dict]]:
     return sources, records
 
 
+class StaleIndexError(ValueError):
+    """The generated index exists but needs to be rebuilt."""
+
+
 def build_index(source: Path, destination: Path) -> dict:
+    raw = source.read_bytes()
+    return _build_index(source, destination, raw, _digest(raw))
+
+
+def _build_index(source: Path, destination: Path, raw: bytes, source_sha256: str) -> dict:
     if source.resolve() == destination.resolve():
         raise ValueError("SQLite output must differ from source JSON")
-    raw = source.read_bytes()
     sources, records = _check_registry(json.loads(raw))
     destination.parent.mkdir(parents=True, exist_ok=True)
     fd, temporary = tempfile.mkstemp(prefix=".gi-index-", suffix=".sqlite", dir=destination.parent)
@@ -83,7 +92,7 @@ def build_index(source: Path, destination: Path) -> dict:
             """)
             db.executemany("INSERT INTO metadata(key, value) VALUES (?, ?)", [
                 ("schema_version", SCHEMA_VERSION),
-                ("source_sha256", _digest(raw)),
+                ("source_sha256", source_sha256),
                 ("source_count", str(len(sources))),
                 ("record_count", str(len(records))),
             ])
@@ -104,37 +113,68 @@ def build_index(source: Path, destination: Path) -> dict:
     finally:
         if os.path.exists(temporary):
             os.unlink(temporary)
-    return {"sourceSha256": _digest(raw), "sources": len(sources), "records": len(records), "db": str(destination)}
+    return {"sourceSha256": source_sha256, "sources": len(sources), "records": len(records), "db": str(destination)}
 
 
-def _open_fresh(source: Path, destination: Path) -> sqlite3.Connection:
+def _open_verified(destination: Path, source_sha256: str) -> sqlite3.Connection:
     db = sqlite3.connect(destination.resolve().as_uri() + "?mode=ro", uri=True)
     db.row_factory = sqlite3.Row
     try:
         meta = dict(db.execute("SELECT key, value FROM metadata"))
-        if meta.get("schema_version") != SCHEMA_VERSION:
-            raise ValueError("SQLite index schema mismatch: rebuild required")
-        if meta.get("source_sha256") != _digest(source.read_bytes()):
-            raise ValueError("SQLite index is stale against canonical GI JSON: rebuild required")
+        if "schema_version" not in meta or "source_sha256" not in meta:
+            raise ValueError("SQLite file is missing GI index metadata")
+        if meta["schema_version"] != SCHEMA_VERSION:
+            raise StaleIndexError("SQLite index schema mismatch: rebuild required")
+        if meta["source_sha256"] != source_sha256:
+            raise StaleIndexError("SQLite index is stale against canonical GI JSON: rebuild required")
     except Exception:
         db.close()
         raise
     return db
 
 
+def _open_batch(source: Path, destination: Path) -> sqlite3.Connection:
+    raw = source.read_bytes()
+    source_sha256 = _digest(raw)
+    if destination.exists():
+        try:
+            return _open_verified(destination, source_sha256)
+        except StaleIndexError:
+            pass
+    _build_index(source, destination, raw, source_sha256)
+    return _open_verified(destination, source_sha256)
+
+
 def lookup(source: Path, destination: Path, food_key: str, preparation_key: str | None = None,
            include_other_preparations: bool = False, limit: int = 30) -> dict:
-    if not food_key.strip() or limit < 1 or limit > 500:
-        raise ValueError("Provide foodKey and 1 <= limit <= 500")
-    with closing(_open_fresh(source, destination)) as db:
-        query = "SELECT * FROM gi_record WHERE food_key = ?"
-        params: list = [food_key]
-        if preparation_key is not None and not include_other_preparations:
-            query += " AND preparation_key = ?"
-            params.append(preparation_key)
-        query += " ORDER BY preparation_key, id LIMIT ?"
-        params.append(limit)
-        rows = db.execute(query, params).fetchall()
+    with closing(_open_verified(destination, _digest(source.read_bytes()))) as db:
+        return _lookup(db, food_key, preparation_key, include_other_preparations, limit)
+
+
+def lookup_batch(source: Path, destination: Path, queries: list[dict]) -> list[dict]:
+    """Search a single verified snapshot and return results in request order."""
+    if not isinstance(queries, list) or any(not isinstance(query, dict) for query in queries):
+        raise ValueError("Batch queries must be a JSON array of query objects")
+    with closing(_open_batch(source, destination)) as db:
+        return [_lookup(db, **query) for query in queries]
+
+
+def _lookup(db: sqlite3.Connection, food_key: str, preparation_key: str | None = None,
+            include_other_preparations: bool = False, limit: int = 30) -> dict:
+    if not isinstance(food_key, str) or not food_key.strip() or type(limit) is not int or not 1 <= limit <= 500:
+        raise ValueError("Provide food_key and 1 <= limit <= 500")
+    if preparation_key is not None and not isinstance(preparation_key, str):
+        raise ValueError("preparation_key must be a string or null")
+    if not isinstance(include_other_preparations, bool):
+        raise ValueError("include_other_preparations must be a boolean")
+    query = "SELECT * FROM gi_record WHERE food_key = ?"
+    params: list = [food_key]
+    if preparation_key is not None and not include_other_preparations:
+        query += " AND preparation_key = ?"
+        params.append(preparation_key)
+    query += " ORDER BY preparation_key, id LIMIT ?"
+    params.append(limit)
+    rows = db.execute(query, params).fetchall()
     candidates = []
     for row in rows:
         same_preparation = preparation_key is not None and row["preparation_key"] == preparation_key
@@ -154,7 +194,7 @@ def lookup(source: Path, destination: Path, food_key: str, preparation_key: str 
 
 
 def stats(source: Path, destination: Path) -> dict:
-    with closing(_open_fresh(source, destination)) as db:
+    with closing(_open_verified(destination, _digest(source.read_bytes()))) as db:
         meta = dict(db.execute("SELECT key, value FROM metadata"))
         category = dict(db.execute("SELECT quality_tier, COUNT(*) FROM gi_record GROUP BY quality_tier"))
     return {"sourceSha256": meta["source_sha256"], "sources": int(meta["source_count"]),
@@ -163,9 +203,10 @@ def stats(source: Path, destination: Path) -> dict:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("mode", choices=("build", "lookup", "stats"))
+    parser.add_argument("mode", choices=("build", "lookup", "lookup-batch", "stats"))
     parser.add_argument("--source", type=Path, default=DEFAULT_SOURCE)
     parser.add_argument("--db", type=Path, required=True)
+    parser.add_argument("--queries", type=Path, help="JSON array for lookup-batch")
     parser.add_argument("--food-key")
     parser.add_argument("--preparation-key")
     parser.add_argument("--include-other-preparations", action="store_true")
@@ -175,11 +216,19 @@ def main() -> None:
         result = build_index(args.source, args.db)
     elif args.mode == "stats":
         result = stats(args.source, args.db)
+    elif args.mode == "lookup-batch":
+        if args.queries is None:
+            parser.error("lookup-batch requires --queries")
+        try:
+            result = lookup_batch(args.source, args.db, json.loads(args.queries.read_bytes()))
+        except (ValueError, TypeError) as exc:
+            parser.error(str(exc))
     else:
         if not args.food_key:
             parser.error("lookup requires --food-key")
         result = lookup(args.source, args.db, args.food_key, args.preparation_key,
                         args.include_other_preparations, args.limit)
+    sys.stdout.reconfigure(encoding="utf-8")
     print(json.dumps(result, ensure_ascii=False, indent=2, sort_keys=True))
 
 
