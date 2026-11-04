@@ -30,6 +30,7 @@ class GiSqliteIndexTests(unittest.TestCase):
                 {"id": "raw", "foodKey": "potato", "preparationKey": "raw", "gi": 50,
                  "qualityTier": "SUPPLEMENTARY", "referenceScale": "GLUCOSE_100",
                  "matchKind": "ANALOG", "evidenceKind": "PUBLISHED_IMPUTATION",
+                 "note": "Only for reviewed low-carbohydrate compositions.",
                  "source": {"url": "https://example.org/raw", "table": "A"}},
                 {"id": "boiled", "foodKey": "potato", "preparationKey": "boiled", "gi": 101,
                  "qualityTier": "STRONG", "referenceScale": "GLUCOSE_100",
@@ -57,6 +58,7 @@ class GiSqliteIndexTests(unittest.TestCase):
         self.assertEqual(len(comparison["candidates"]), 2)
         self.assertEqual(comparison["candidates"][1]["matchAssessment"], "PREPARATION_NOT_ESTABLISHED")
         self.assertEqual(comparison["candidates"][1]["evidenceKind"], "PUBLISHED_IMPUTATION")
+        self.assertEqual(comparison["candidates"][1]["note"], "Only for reviewed low-carbohydrate compositions.")
         limited = index.lookup(self.source, self.db, "potato", "raw", include_other_preparations=True, limit=1)
         self.assertEqual([r["recordId"] for r in limited["candidates"]], ["raw"])
         self.assertEqual(index.lookup(self.source, self.db, "potato", "roasted")["candidates"], [])
@@ -118,6 +120,25 @@ class GiSqliteIndexTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "not a GI index"):
             index.lookup_batch(self.source, self.db, [{"food_key": "potato"}])
         self.assertEqual(self.db.read_bytes(), original)
+
+    def test_build_preserves_file_created_during_publication(self):
+        publication_call = "rename" if os.name == "nt" else "link"
+        publish = getattr(os, publication_call)
+
+        def create_conflict(temporary, destination):
+            destination.write_bytes(b"other application's data")
+            publish(temporary, destination)
+
+        with patch.object(index.os, publication_call, side_effect=create_conflict):
+            with self.assertRaises(index.sqlite3.DatabaseError):
+                index.build_index(self.source, self.db)
+        self.assertEqual(self.db.read_bytes(), b"other application's data")
+
+    def test_unc_path_uses_empty_sqlite_uri_authority(self):
+        with patch.object(Path, "resolve") as resolve, patch.object(index.sqlite3, "connect") as connect:
+            resolve.return_value.as_uri.return_value = "file://fileserver/share/cache%20%231.sqlite"
+            index._open_index(self.db)
+        connect.assert_called_once_with("file:////fileserver/share/cache%20%231.sqlite?mode=ro", uri=True)
 
     def test_legacy_index_is_readable_and_gets_marker_on_rebuild(self):
         index.build_index(self.source, self.db)

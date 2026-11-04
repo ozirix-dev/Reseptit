@@ -118,18 +118,31 @@ def _build_index(source: Path, destination: Path, raw: bytes, source_sha256: str
                     str(ref.get("table") or ref.get("locator") or ""),
                     json.dumps(row, sort_keys=True, ensure_ascii=False),
                 ))
-        if destination.exists() or destination.is_symlink():
-            with closing(_open_index(destination)) as existing:
-                _index_metadata(existing)
-        os.replace(temporary, destination)
+        _publish_index(temporary, destination)
     finally:
         if os.path.exists(temporary):
             os.unlink(temporary)
     return {"sourceSha256": source_sha256, "sources": len(sources), "records": len(records), "db": str(destination)}
 
 
+def _publish_index(temporary: str, destination: Path) -> None:
+    try:
+        if os.name == "nt":
+            os.rename(temporary, destination)  # Windows rename does not replace an existing file.
+        else:
+            os.link(temporary, destination)  # Publish a complete file without replacing anything.
+    except FileExistsError:
+        with closing(_open_index(destination)) as existing:
+            _index_metadata(existing)
+        os.replace(temporary, destination)
+
+
 def _open_index(destination: Path) -> sqlite3.Connection:
-    return sqlite3.connect(destination.resolve().as_uri() + "?mode=ro", uri=True)
+    uri = destination.resolve().as_uri()
+    if uri.startswith("file://") and not uri.startswith("file:///"):
+        # Put a Windows UNC server in the path with an empty URI authority.
+        uri = "file://" + uri.removeprefix("file:")
+    return sqlite3.connect(uri + "?mode=ro", uri=True)
 
 
 def _index_metadata(db: sqlite3.Connection) -> dict:
@@ -221,6 +234,7 @@ def _lookup(db: sqlite3.Connection, food_key: str, preparation_key: str | None =
             "matchKind": row["match_kind"] or "UNSPECIFIED",
             "calculationUse": evidence.get("calculationUse"),
             "evidenceKind": evidence.get("evidenceKind"),
+            "note": evidence.get("note"),
             "confidence": row["confidence"], "sourceUrl": row["source_url"],
             "sourceLocator": row["source_locator"],
             "matchAssessment": "SAME_PREPARATION_KEY_NEEDS_REVIEW" if same_preparation else "PREPARATION_NOT_ESTABLISHED",
