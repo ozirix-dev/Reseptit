@@ -18,7 +18,7 @@ Teknisesti kelvollinen tulos jää tilaan `REVIEW_REQUIRED`, syynä `MIXED_EVIDE
 
 ## Laskentakoodien epävarmuuden katselmointi
 
-Nykyiset 0,50 GK:n ja 10 %:n rajat seulovat poisjättöjä GI 100 -oletuksella. Manifesti ilmoittaa lisäksi, kuinka suuri osuus pistearviosta tulee koodeista. Stressiskenaarioissa näkyvät sekä koodien ja poisjättöjen erilliset vaikutukset että niiden yhteinen muutos GK-yksikköinä ja suhteessa pistearvioon.
+Nykyiset 0,50 GK:n ja 10 %:n rajat seulovat poisjättöjä GI 100 -oletuksella. Manifestin `codedGk` ilmoittaa koodiosuuden GK-yksikköinä ja `codedPercent` prosentteina pistearviosta. GI 0/100/150 -skenaarioiden `codedScenarioGk` näyttää koodatun osuuden uuden GK-summan. Lisäksi näkyvät koodien ja poisjättöjen erilliset vaikutukset sekä niiden yhteinen muutos GK-yksikköinä ja suhteessa pistearvioon.
 
 Menetelmäkatselmoinnin perusteella Factory nostaa kaksi alustavaa katselmointilippua. Rajat ovat toimituksellisia seulontarajoja. [Menetelmäkatselmointi](https://github.com/ozirix-dev/Reseptit/pull/250#pullrequestreview-5764235838)
 
@@ -54,5 +54,19 @@ Avoimet rivit sisältävät yhteensä **9,07 g** saatavaa CHO:ta annosta kohti. 
 | Roujiamo | Vehnäletun GI ei vielä kuvaa kohotettua pannuleipää. |
 | Kookos-lime-kanacurry | Soveltuva ihmis-GI puuttuu. Avoin 1,42375 g lisää GI 100 -stressissä noin 48–68 % koodatusta osasummasta. |
 | Kimchi-jjigae | Soveltuva ihmis-GI puuttuu. Avoin enintään 1,9125 g lisää samassa stressissä noin 108 % koodatusta osasummasta. |
+
+### Viiden arkistopaketin uusintalaskenta
+
+Luvut on laskettu #244:n tarkisteeseen sidotuista syötteistä. Chiavanukkaalle käytettiin perusskenaariota. GI 100 -stressissä säilytettiin aiemmat ihmismittauksiin perustuvat analogiat ja vaihdettiin koodatut ja poisjätetyt osuudet GI 100 -oletukseen. Taulukko auttaa priorisoimaan lähde-esteet. Kaikki viisi pysyvät `BLOCKED`-tilassa.
+
+| Paketti | Historiallinen GK-piste | Koodiosuus GK / % | Poisjättö, g CHO | GI 100 -muutos GK / % | Seulan tulos arkistosyötteillä |
+| --- | ---: | ---: | ---: | ---: | --- |
+| Bammy | 46,56 | 1,89 / 4,06 % | 0,6015 | +2,49 / 5,36 % | Poisjättö ylittää 0,50 GK:n rajan. |
+| Marjainen chiavanukas | 1,62 | 0,375 / 23,13 % | 0,335325 | +0,71 / 43,82 % | Poisjättö ylittää 10 %:n rajan. Koodit ja poisjättö yhdessä ylittävät 20 %:n lippurajan. |
+| Dal makhani | 16,94 | 2,72 / 16,07 % | 0,50 | +4,27 / 25,22 % | Koodit ja poisjättö yhdessä ylittävät 20 %:n lippurajan. |
+| Ojja | 12,48 | 3,00 / 24,03 % | 0,0825 | +4,47 / 35,81 % | Koodit ja poisjättö yhdessä ylittävät 20 %:n lippurajan. |
+| Roujiamo | 45,34 | 1,16 / 2,57 % | 1,5786 | +2,77 / 6,11 % | Poisjättö ylittää 0,50 GK:n rajan. |
+
+[Arkistopaketit ja syötteet](https://github.com/ozirix-dev/Reseptit/blob/e2c3bca1072ccee1e3b565a9c08bac039d94ab59/docs/nutrition/gk100-next-26-batch.json)
 
 Bánh xèon ja ruokabanaanilautasen paketeissa on B-koodimerkintä, mutta niissä ei ole eksplisiittistä A-poisjättöä ja pääraaka-aineiden näyttö on kesken. Tempeh-munakulhon erillinen #245-versio toimii nykyisellä A-reitillä. Lukumäärä koskee näitä jo katselmoituja paketteja. [PR #244:n katselmointimuistio](https://github.com/ozirix-dev/Reseptit/blob/e2c3bca1072ccee1e3b565a9c08bac039d94ab59/docs/nutrition/gk100-next-26-review.md) · [PR #245:n jatkokatselmointi](https://github.com/ozirix-dev/Reseptit/blob/d9c699c810a98146c3b285011163b1d53546371f/docs/nutrition/gk100-244-followup-review.md)

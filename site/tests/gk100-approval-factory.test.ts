@@ -249,6 +249,7 @@ test('Mixed Evidence keeps measured GI above 100, codes and omissions separate',
     assert.equal(row.mixedEvidence.humanGk, 12);
     assert.equal(row.mixedEvidence.codedGk, 0.5);
     assert.equal(row.mixedEvidence.codedShare, 0.04);
+    assert.equal(row.mixedEvidence.codedPercent, 4);
     assert.deepEqual(row.mixedEvidence.reviewFlags, []);
     assert.equal(row.omittedCho, 0.2);
     assert.equal(row.range, null);
@@ -257,7 +258,8 @@ test('Mixed Evidence keeps measured GI above 100, codes and omissions separate',
     assert.equal(isBiologicalBound, false);
     assert.equal(isConfidenceInterval, false);
     assert.deepEqual(scenarios.map(scenario => scenario.assumedGi), [0, 100, 150]);
-    assert.equal(scenarios[1].omissionDeltaGk, 0.2);
+    assert.deepEqual(scenarios.map(scenario => scenario.codedScenarioGk), [0, 1, 1.5]);
+    assert.deepEqual(scenarios.map(scenario => scenario.omissionDeltaGk), [0, 0.2, 0.3]);
     assert.equal(scenarios[1].omissionRelativeChange, 0.016);
     assert.equal(scenarios[1].codingDeltaGk, 0.5);
     assert.equal(variants.size, 0);
@@ -293,6 +295,12 @@ test('Mixed Evidence flags dominant coding and large combined stress independent
   row = inspect();
   assert.equal(row.mixedEvidence!.codedShare, 0.5);
   assert.deepEqual(row.mixedEvidence!.reviewFlags, ['MIXED_LARGE_GI100_STRESS_CHANGE']);
+
+  bindings.human.composition.availablePer100 = 8.4;
+  bindings.coded.composition.availablePer100 = 3.2;
+  row = inspect();
+  assert.equal(row.mixedEvidence!.uncertainty.scenarios[1].combinedRelativeChange, 0.2);
+  assert.deepEqual(row.mixedEvidence!.reviewFlags, []);
 });
 
 test('Mixed Evidence blocks unknown GI, missing approval and reclassified coding', () => {
