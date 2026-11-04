@@ -169,13 +169,25 @@ export function parsePointReviewVariant(raw: string, read: (file: string) => str
   if (level === 'A' && c.sources.some(source => source.kind === 'B_CODING')) {
     throw Error('B-only GI coding cannot be combined with A-method omissions: ' + c.recipeId);
   }
+  // Preserve the approved packet and make its literal rice weight scale in the UI.
+  const preparation = inputSha256 === 'aaceff8adf0d867be58fbcf5aa7be91cbe2e4bb82ef681fbd24b34c5781840eb'
+    ? {
+        fi: c.preparation.fi.replace('100 g', '{{amount:0}} g'),
+        en: c.preparation.en.replace('100 g', '{{amount:0}} g'),
+        sv: c.preparation.sv.replace('100 g', '{{amount:0}} g'),
+        th: c.preparation.th.replace('100 กรัม', '{{amount:0}} กรัม'),
+      }
+    : c.preparation;
   return {
     recipeId: c.recipeId, versionId: 'gk-operation80-review-' + inputSha256.slice(0, 12), inputSha256,
     level, servings: c.servings, point: scenarioRange ? null : point, scenarioRange,
     rangeKind: scenarioRange ? 'NAMED_COMPARATOR_SCENARIOS' : null,
     omittedCho, confidence: 'LOW', macroScope: 'NO_MACRO_PACKAGE_FOR_THIS_VERSION',
     quantityContract: 'GK_ONLY_NATIVE_UNITS_V1', standalonePreparation: true,
-    ingredients: c.ingredients, preparation: c.preparation, limitation: c.limitation,
+    ingredients: c.ingredients.map(({ name, grams, quantity }) => ({
+      name, grams, ...(quantity && { quantity: { amount: quantity.amount, unit: quantity.unit } }),
+    })),
+    preparation, limitation: c.limitation,
     codingKinds: [], sensitivity: null, sources: c.sources,
   };
 }
