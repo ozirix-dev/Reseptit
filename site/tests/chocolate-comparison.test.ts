@@ -35,7 +35,7 @@ test("two named Torras products retain their own verified manufacturer source bi
   assert.deepEqual(pilot.sources.find((s: { id: string }) => s.id === "torras-stevia").observation.polyolIngredients, ["erythritol", "steviol glycosides"]);
 });
 
-test("disclosure is confined to the three recipes in Finnish, English and Swedish and is collapsed in server HTML", () => {
+test("disclosure is confined to the three recipes in Finnish, English, Swedish and Thai and is collapsed in server HTML", () => {
   for (const recipeId of ["keto-mutakakku", "keto-suklaakeksit", "meheva-suklaakakku"]) {
     const html = render(recipeId);
     assert.match(html, /^<details class="recipe-panel chocolate-comparison"/);
@@ -66,7 +66,18 @@ test("disclosure is confined to the three recipes in Finnish, English and Swedis
       assert.match(swedish, /Den beräknade delen ovan/);
       assert.doesNotMatch(render(recipeId, "sv", false), /Den beräknade delen ovan/);
     }
-    assert.equal(render(recipeId, "th"), "");
+    const thai = render(recipeId, "th");
+    assert.match(thai, /data-chocolate-comparison="th"/);
+    assert.match(thai, /สารให้ความหวาน: มอลทิทอล/);
+    assert.match(thai, /สารให้ความหวาน: อิริทริทอลและสตีวิออลไกลโคไซด์/);
+    for (const product of chocolateComparisonProducts) assert.ok(thai.includes(product.sourceUrl));
+    if (recipeId === "meheva-suklaakakku") {
+      assert.match(thai, /ตัวเค้กยังมีน้ำตาลและแป้งสาลี/);
+      assert.doesNotMatch(thai, /ค่าที่คำนวณไว้ด้านบน/);
+    } else {
+      assert.match(thai, /ค่าที่คำนวณไว้ด้านบน/);
+      assert.doesNotMatch(render(recipeId, "th", false), /ค่าที่คำนวณไว้ด้านบน/);
+    }
   }
   for (const id of ["vhh-juustokakku", "", "unknown"]) assert.equal(render(id), "");
 });
