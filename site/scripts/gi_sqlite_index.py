@@ -16,6 +16,7 @@ from pathlib import Path
 import sqlite3
 import sys
 import tempfile
+import time
 
 ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_SOURCE = ROOT / "docs/nutrition/glycemic-index-records.json"
@@ -67,7 +68,8 @@ def build_index(source: Path, destination: Path) -> dict:
     return _build_index(source, destination, raw, _digest(raw))
 
 
-def _build_index(source: Path, destination: Path, raw: bytes, source_sha256: str) -> dict:
+def _build_index(source: Path, destination: Path, raw: bytes, source_sha256: str, *,
+                 extend=None, replace_attempts: int = 1) -> dict:
     if source.resolve() == destination.resolve():
         raise ValueError("SQLite output must differ from source JSON")
     sources, records = _check_registry(json.loads(raw))
@@ -119,7 +121,9 @@ def _build_index(source: Path, destination: Path, raw: bytes, source_sha256: str
                     str(ref.get("table") or ref.get("locator") or ""),
                     json.dumps(row, sort_keys=True, ensure_ascii=False),
                 ))
-        _publish_index(temporary, destination)
+            if extend is not None:
+                extend(db, sources, records)
+        _publish_index(temporary, destination, replace_attempts)
     finally:
         if os.path.exists(temporary):
             os.unlink(temporary)
@@ -159,13 +163,26 @@ def _create_index_file(temporary: str, destination: Path) -> None:
             raise OSError(code, os.strerror(code), destination) from exc
 
 
-def _publish_index(temporary: str, destination: Path) -> None:
+def _publish_index(temporary: str, destination: Path, attempts: int) -> None:
     try:
         _create_index_file(temporary, destination)
     except FileExistsError:
+        pass
+    else:
+        return
+
+    for attempt in range(attempts):
         with closing(_open_index(destination)) as existing:
             _index_metadata(existing)
-        os.replace(temporary, destination)
+        try:
+            os.replace(temporary, destination)
+            return
+        except PermissionError as exc:
+            if attempts == 1 or getattr(exc, "winerror", None) not in {5, 32, 33}:
+                raise
+            if attempt + 1 == attempts:
+                raise ValueError(f"Cannot replace GI index (file in use or access denied): {destination}") from exc
+            time.sleep(0.05 * (attempt + 1))
 
 
 def _open_index(destination: Path) -> sqlite3.Connection:
@@ -254,26 +271,28 @@ def _lookup(db: sqlite3.Connection, food_key: str, preparation_key: str | None =
     query += "preparation_key, id LIMIT ?"
     params.append(limit)
     rows = db.execute(query, params).fetchall()
-    candidates = []
-    for row in rows:
-        evidence = json.loads(row["payload_json"])
-        same_preparation = preparation_key is not None and row["preparation_key"] == preparation_key
-        candidates.append({
-            "recordId": row["id"], "foodKey": row["food_key"],
-            "preparationKey": row["preparation_key"], "gi": row["gi"],
-            "referenceScale": row["reference_scale"], "qualityTier": row["quality_tier"],
-            "matchKind": row["match_kind"] or "UNSPECIFIED",
-            "calculationUse": evidence.get("calculationUse"),
-            "evidenceKind": evidence.get("evidenceKind"),
-            "note": evidence.get("note"),
-            "confidence": row["confidence"], "sourceUrl": row["source_url"],
-            "sourceLocator": row["source_locator"],
-            "matchAssessment": "SAME_PREPARATION_KEY_NEEDS_REVIEW" if same_preparation else "PREPARATION_NOT_ESTABLISHED",
-            "requiresRecipeSpecificApproval": True,
-        })
     return {"foodKey": food_key, "preparationKey": preparation_key,
-            "candidates": candidates, "autoApproved": False,
+            "candidates": [_candidate(row, preparation_key) for row in rows], "autoApproved": False,
             "note": "Search hits are evidence leads, never automatic GI or GK approvals."}
+
+
+def _candidate(row: sqlite3.Row, preparation_key: str | None = None, *, evidence: dict | None = None) -> dict:
+    if evidence is None:
+        evidence = json.loads(row["payload_json"])
+    same_preparation = preparation_key is not None and row["preparation_key"] == preparation_key
+    return {
+        "recordId": row["id"], "foodKey": row["food_key"],
+        "preparationKey": row["preparation_key"], "gi": row["gi"],
+        "referenceScale": row["reference_scale"], "qualityTier": row["quality_tier"],
+        "matchKind": row["match_kind"] or "UNSPECIFIED",
+        "calculationUse": evidence.get("calculationUse"),
+        "evidenceKind": evidence.get("evidenceKind"),
+        "note": evidence.get("note"),
+        "confidence": row["confidence"], "sourceUrl": row["source_url"],
+        "sourceLocator": row["source_locator"],
+        "matchAssessment": "SAME_PREPARATION_KEY_NEEDS_REVIEW" if same_preparation else "PREPARATION_NOT_ESTABLISHED",
+        "requiresRecipeSpecificApproval": True,
+    }
 
 
 def stats(source: Path, destination: Path) -> dict:
