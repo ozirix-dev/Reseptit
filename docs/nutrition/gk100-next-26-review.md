@@ -4,7 +4,7 @@ Pohja on 230/326 tuotannossa, main `de83657c52e0f018b10c3d5e7d26cdf671d5c85f`. L
 
 [Eräsyöte](gk100-next-26-batch.json) · [Päätösmanifesti](gk100-next-26-manifest.json) · [Sidotut omistajapäätökset](gk100-next-26-owner-approvals.json) · [Julkaisuvalmistelupaketti](gk100-next-26-release-bundle.json)
 
-Uuden manifestin SHA-256 on `a3b6c434076dc2cffa1a0cc62b056f5fe4d43fa37bbf3c6fbd54111f2a0b3e11`. Julkaisuvalmistelupaketin tarkiste on `f52626b01ac5a6191e39fea7ab9730b22786a47ad2a4dce26916580645bf56a9`. Vain kaksi hyväksyttyä ehdokasta on paketissa julkaisuvalmiina. Niiden julkaisu nostaisi kattavuuden **232/326:een (71,2 %)**. Tuotantokytkentä vaatii erillisen valtuutuksen.
+Uuden manifestin SHA-256 on `a3b6c434076dc2cffa1a0cc62b056f5fe4d43fa37bbf3c6fbd54111f2a0b3e11`. Julkaisuvalmistelupaketin tarkiste on `da49e4b58819e9f9eb1ba387b5f7e18ea454b608410e17592aa4c9b3ba4f488a`. Kolme hyväksyttyä ehdokasta on paketissa julkaisuvalmiina. Niiden julkaisu nostaisi kattavuuden **233/326:een (71,5 %)**. Tuotantokytkentä vaatii erillisen valtuutuksen.
 
 ## GO · hyväksytty julkaisuvalmisteluun
 
@@ -12,10 +12,7 @@ Uuden manifestin SHA-256 on `a3b6c434076dc2cffa1a0cc62b056f5fe4d43fa37bbf3c6fbd5
 | --- | ---: | --- |
 | Maapähkinä-xôi | 28,06 | Kahdelle 100 g tahmariisiä kuivapainona, höyrytettynä, 100 g paahdettua maapähkinää, 25 g tuoretta kookosta ja 8 g seesamia. Kuivapaino käyttää MEXTin saatavan hiilihydraatin massalukua. Riisin osuus on 26,68425 GK, maapähkinän 0,9165 ja kookoksen 0,4594625. Riisin GI-verrokki on höyrytetty. Seesami on mukana annoksessa. Sen 0,248 g CHO/annos jää GK-summasta pois ja GI 100 -stressi pitää kokonaislukupyöristyksen samana. [Laskentamuistio](gk100-xoi-coconut-review.md) |
 | Bouillabaisse | 22,24–22,69 | Neljälle 60 g kypsää kuoretonta simpukanlihaa, 1 000 g laimennettua kalalientä ja 120 g vaaleaa vehnäleipää punnittuna ennen paahtamista. **Paahdettu leipä sisältyy GK-arvioon** kaikissa neljässä kieliversiossa. Keitto antaa 12,7496425 GK/annos, leipä 9,490068 tai 9,941976 kahdella mitatulla paahtoleipäverrokilla. Keitetyn perunan GI on analogia. [Laskentamuistio](gk80-operation80-batch-12.md) · [GK-reseptitekstit](gk80-operation80-bouillabaisse-release-candidate.json) |
-
-## CONDITIONAL GO · yksi sisältöpäätös
-
-**Msemen hunajalla.** Hyväksyttävä GK-versio kahdelle sisältää 100 g hienoa mannasuurimoa, 100 g vehnäjauhoa, 50 g kerrosvoita, 13,5 g paistoöljyä ja 20 g erikseen tarjoiltua hunajaa. Omanin parathan ja Etelä-Intian parotan ihmismittaukset ovat rasvaisen, täyttämättömän pannuleivän verrokkeja. Hunajalle käytetään erillistä ihmismittausta. Hyväksyntä koskisi punnittua versiota ja lukujen **28,23 ja 49,40 GK/annos** esittämistä kahtena verrokkiskenaariona. Mannasuurimon, kerrosrasvan ja taittelun vaikutuksesta todellinen vaste voi jäädä skenaarioiden ulkopuolelle. [Laskentamuistio](gk80-operation80-batch-18.md)
+| Msemen hunajalla | 28,23 ja 49,40 | Kahdelle 100 g hienoa mannasuurimoa, 100 g vehnäjauhoa, 50 g kerrosvoita, 13,5 g paistoöljyä ja 20 g erikseen tarjoiltua hunajaa. Luvut ovat kaksi verrokkiskenaariota, jotka perustuvat Omanin parathan ja Etelä-Intian parotan ihmismittauksiin. Hunajalle käytetään erillistä ihmismittausta. Jauhoseos, kerrosrasva ja taittelu voivat siirtää vasteen skenaarioiden ulkopuolelle. [Laskentamuistio](gk80-operation80-batch-18.md) |
 
 ## BLOCKED · 23
 
@@ -60,4 +57,4 @@ Kummankaan reseptin laskennassa ei käytetä soveltuvaa ihmisillä mitattua GI:t
 
 - Factory kirjaa ihmis-GI:n lähteenä `HUMAN_GI`. Sovellettu mitattu verrokki käyttää samaa lähdetyyppiä, ja siirron perustelu ja epävarmuus näkyvät lähdehuomautuksessa sekä reseptitekstissä. `PUBLISHED_CODING` ja `B_CODING` erottavat laskentakoodit mittauksista. `BOUND` kuvaa koostumuksen rajaa. Tuntematon GI jää avoimeksi ja sen vaikutus käsitellään erikseen.
 - Aiemman pienosuussäännön grammaseula on alle 1 g ainesosaa kohti ja alle 2 g yhteensä annosta kohti. Arvion kokoon suhteutettu GI 100 -stressi voi silti osoittaa olennaisen epävarmuuden. Stressi on oletus. B-mallin koostumussidonnaiset koodit ja `TRACE50`-rajat eivät ratkaise näiden kahden annoksen avoimia osuuksia. GK149:n B-reitti edellyttää GI-perustetta kaikille positiivisille CHO-riveille. Näistä paketeista ei löytynyt perustetta muuttaa Factoryn lähdeporttia.
-- 15 aiempaa teknistä sidosta säilytettiin. Katselmointi erotti pienosuudet varsinaisista GI- ja valmistusongelmista, ja kaksi hyväksyntää sidottiin ehdokkaan, alkuperäisen reseptin, syötteiden ja manifestin tarkisteisiin.
+- 15 aiempaa teknistä sidosta säilytettiin. Katselmointi erotti pienosuudet varsinaisista GI- ja valmistusongelmista, ja kolme hyväksyntää sidottiin ehdokkaan, alkuperäisen reseptin, syötteiden ja manifestin tarkisteisiin.

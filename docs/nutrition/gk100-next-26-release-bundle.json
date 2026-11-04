@@ -2577,14 +2577,23 @@
         "inputSha256": "3e199b3ad8ae257e64cee74a176324471c707dfd7bdef3ab82dcc6e13728da3a",
         "decision": "APPROVE",
         "evidence": "Omistajan 4.11.2026 antama 26 reseptin erän toimeksianto, kohta 2. Tarkistettu punnittu GK-versio ja ilmoitettu annosarvo. Hyväksyntä koskee julkaisuvalmistelua."
+      },
+      {
+        "recipeId": "pohjoisafrikkalainen-msemen-hunajalla",
+        "candidateSha256": "716072dae1fcb556bbaf4cf29ee9e2c85f576cb44f539f5cee566d373b64bee7",
+        "originalSha256": "e263a0339d743610e6b5877b625dc01d123f677c03c4fffe6979df4cd39282fa",
+        "inputSha256": "d0eaa564c28d6cd0c20e438666849931b7dc9400b76d9729abd80a53043b7ba8",
+        "decision": "APPROVE",
+        "evidence": "Omistajan 4.11.2026 antama hyväksyntä Draft PR #244:lle. Punnittu msemen hunajalla sekä 28,23 ja 49,40 GK/annos kahtena verrokkiskenaariona. Hyväksyntä koskee julkaisuvalmistelua."
       }
     ]
   },
   "recipeIds": [
     "vietnamilainen-xoi-maapahkinalla",
-    "bouillabaisse"
+    "bouillabaisse",
+    "pohjoisafrikkalainen-msemen-hunajalla"
   ],
-  "expectedCoverageDelta": 2,
+  "expectedCoverageDelta": 3,
   "publicationAuthorized": false,
-  "bundleSha256": "f52626b01ac5a6191e39fea7ab9730b22786a47ad2a4dce26916580645bf56a9"
+  "bundleSha256": "da49e4b58819e9f9eb1ba387b5f7e18ea454b608410e17592aa4c9b3ba4f488a"
 }
