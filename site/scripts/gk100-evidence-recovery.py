@@ -5,11 +5,13 @@ import hashlib
 import json
 import re
 import subprocess
+from collections import Counter
 from decimal import Decimal
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
-BASE = "d12447d384aaeafc263c1c4e3d435bf9304f840e"
+BASE = "69182c5d749a91b50a76189a5475a8e2f50203f4"
+SAMPLE_BASE = "d12447d384aaeafc263c1c4e3d435bf9304f840e"
 ARCHIVES = {
     "230": "2b991589d4dfc2010f26ec16733a95eb9a7824fc",
     "244": "e2c3bca1072ccee1e3b565a9c08bac039d94ab59",
@@ -19,6 +21,8 @@ ARCHIVES = {
     "249": "2440fa19ddf59aed4f497c8ebead2e68993e830e",
 }
 NUTRITION = "docs/nutrition/"
+LOCAL_BATCH = NUTRITION + "gk100-evidence-recovery-v2-batch.json"
+QUEUE_STATES = ("SOURCE_BLOCKED", "REVIEW_REQUIRED", "OWNER_DECISION", "RELEASE_READY", "PUBLISHED")
 MANIFESTS = (
     ("244", "gk100-next-26"),
     ("245", "gk100-244-followup"),
@@ -104,6 +108,25 @@ def read_audit(audit_root, name):
     return json.loads((audit_root / "tmp/nutrition" / name).read_bytes())
 
 
+def published_releases(numeric, variants):
+    """Cross-check production release manifests against the verified pilot output."""
+    folder = NUTRITION + "gk100-approved-releases/"
+    paths = git("ls-tree", "-r", "--name-only", BASE, "--", folder).decode().splitlines()
+    if not paths:
+        raise ValueError("Missing production release manifests")
+    released = {}
+    for path in paths:
+        sealed = json.loads(git("show", BASE + ":" + path))
+        bundle, authorization = sealed["bundle"], sealed["authorization"]
+        ids = bundle["recipeIds"]
+        if (not ids or len(set(ids)) != len(ids) or len(ids) != bundle["expectedCoverageDelta"]
+                or bundle["bundleSha256"] != authorization["bundleSha256"]
+                or not set(ids) <= numeric & variants or set(ids) & released.keys()):
+            raise ValueError("Production release disagrees with version-aware audit: " + path)
+        released.update(dict.fromkeys(ids, path))
+    return released
+
+
 def emit(audit_root):
     pilot = read_audit(audit_root, "glycemic-load-pilot.json")
     recipes = indexed(read_audit(audit_root, "audit.json")["inventory"], "recipe_id")
@@ -133,15 +156,44 @@ def emit(audit_root):
         "path": NUTRITION + "gk100-lontong-sayur-calculation.md",
     }
 
+    released = published_releases(numeric, variants)
+    for key, entry in indexed(load(LOCAL_BATCH)["candidates"], "recipeId").items():
+        path = entry["packetPath"]
+        raw = (ROOT / path).read_bytes().replace(b"\r\n", b"\n")
+        packet, classification = json.loads(raw), entry["classification"]
+        sha = hashlib.sha256(raw).hexdigest()
+        if packet["recipeId"] != key or classification["candidateSha256"] != sha:
+            raise ValueError("Stale local review packet: " + path)
+        [original_sha] = [value for file, value in packet["boundFiles"].items() if file.startswith("reseptit/")]
+        reviews[key] = {"pr": 255, "batchPath": LOCAL_BATCH, "path": path,
+                        "state": classification["outcome"], "candidateSha256": sha,
+                        "originalSha256": original_sha}
+
     missing = results.keys() - numeric
-    for target, keys in PRIORITY_TARGETS.items():
-        if len(keys) != len(set(keys)) or not set(keys) <= missing:
+    queue_states = dict.fromkeys(numeric, "PUBLISHED")
+    for key in missing:
+        review = reviews.get(key, {})
+        state = review.get("state")
+        if state in {"REVIEW_REQUIRED", "OWNER_DECISION", "RELEASE_READY"}:
+            original = git("show", BASE + ":" + recipes[key]["source_path"]).replace(b"\r\n", b"\n")
+            if review.get("originalSha256") == hashlib.sha256(original).hexdigest():
+                queue_states[key] = state
+                continue
+        queue_states[key] = "SOURCE_BLOCKED"
+
+    priorities = []
+    for rank, (target, keys) in enumerate(PRIORITY_TARGETS.items(), 1):
+        if len(keys) != len(set(keys)) or not set(keys) <= results.keys():
             raise ValueError(f"Invalid recipe references in priority target: {target}")
-    header = {"schemaVersion": 1, "main": BASE, "total": len(results),
-              "numeric": len(numeric), "missing": len(missing), "archiveHeads": ARCHIVES,
-              "priorityTargets": [{"rank": rank, "target": target, "recipeIds": keys}
-                                  for rank, (target, keys) in enumerate(PRIORITY_TARGETS.items(), 1)]}
-    yield header
+        pending = [key for key in keys if key in missing]
+        if pending:
+            priorities.append({"rank": rank, "target": target, "recipeIds": pending})
+    counts = Counter(queue_states.values())
+    yield {"schemaVersion": 1, "main": BASE, "total": len(results),
+           "numeric": len(numeric), "missing": len(missing), "archiveHeads": ARCHIVES,
+           "queueCounts": {state: counts[state] for state in QUEUE_STATES},
+           "publishedReleaseManifestByRecipe": dict(sorted(released.items())),
+           "priorityTargets": priorities}
     gi = indexed(load(NUTRITION + "glycemic-index-records.json")["records"], "id")
     for key in sorted(missing):
         result, recipe = results[key], recipes[key]
@@ -167,7 +219,7 @@ def emit(audit_root):
             })
         known = sum(row["cho"] for row in ingredients if row["cho"] is not None)
         yield {
-            "recipeId": key, "status": "NO_PUBLISHED_NUMERIC_GK", "path": path,
+            "recipeId": key, "status": "NO_PUBLISHED_NUMERIC_GK", "queueState": queue_states[key], "path": path,
             "recipeSha256": hashlib.sha256(raw).hexdigest(), "inputSha256": pilot["calculationInputHashes"][key],
             "servings": result["servings"], "knownChoSubtotal": round(known, 9),
             "unquantifiedIngredients": [row["name"] for row in ingredients if row["cho"] is None],
@@ -243,7 +295,8 @@ if __name__ == "__main__":
     options = parser.parse_args()
     audit_root = options.audit_root.resolve()
     revision = git("-C", str(audit_root), "rev-parse", "HEAD").decode().strip()
-    if revision != BASE:
-        parser.error(f"Audit checkout must be at {BASE}, got {revision}")
+    expected_revision = SAMPLE_BASE if options.sample else BASE
+    if revision != expected_revision:
+        parser.error(f"Audit checkout must be at {expected_revision}, got {revision}")
     for record in comparison(audit_root) if options.sample else emit(audit_root):
         print(json.dumps(record, ensure_ascii=False, separators=(",", ":")))

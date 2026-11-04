@@ -1,8 +1,8 @@
 # GK100 · Evidence Recovery & Smart Review V2
 
-**CONDITIONAL GO katselmointiin.** Tuotannossa 230/326 (70,55 %) ennen ja jälkeen. Version huomioiva uudelleenlaskenta lukitusta mainista `d12447d384aaeafc263c1c4e3d435bf9304f840e` antoi 156 alkuperäistä arviota ja 74 täydentävää arviota eri resepteille. Tuotantosivun 230 täsmäsi. [Tuotantosivu](https://ozirix-dev.github.io/Reseptit/glykeeminen-kuorma/) · [Mainin CI](https://github.com/ozirix-dev/Reseptit/actions/runs/41847966171)
+**CONDITIONAL GO katselmointiin.** Tuotannossa on **235/326** numeerista GK-arviota (72,09 %). Työjono perustuu mainiin `69182c5d749a91b50a76189a5475a8e2f50203f4` ja sen julkaistuihin Factory-manifesteihin. Aiempi tutkimusvertailu tehtiin 230/326:n tilanteessa. [Tuotantosivu](https://ozirix-dev.github.io/Reseptit/glykeeminen-kuorma/) · [Tuotantoajo](https://github.com/ozirix-dev/Reseptit/actions/runs/41853724542)
 
-[96 reseptin koneellinen työindeksi](gk100-evidence-recovery-v2-inventory.jsonl) käyttää pääavaimena recipeId:tä ja pitää julkaistun kattavuuden erillään ehdokas- ja auditointitiloista. E1 koostumus, E2 GI, E3 valmistusvastaavuus, E4 määrä, E5 menetelmä, E6 sisältöpäätös, E7 käyttöoikeus, E8 tekninen sidos. Ensisijainen esteluokka ohjaa seuraavaa työvaihetta. Lähdeluokan tai GI-tunnisteen löytyminen osoittaa nykyisen syötteen, ja käyttökelpoisuus tarkistetaan reseptikohtaisesti. Saatavan CHO:n osasumma säilyy erillään puuttuvista riveistä ja rajatuista CHO-arvoista. Tarkistettuja paketteja luetaan nimetyistä Git-commiteista. #232, #241, #242 ja #253 olivat luonnoksia, #237 ja #250 yhdistettyjä, #230 avoin ja #244 luonnos. [#232](https://github.com/ozirix-dev/Reseptit/pull/232) · [#241](https://github.com/ozirix-dev/Reseptit/pull/241) · [#242](https://github.com/ozirix-dev/Reseptit/pull/242) · [#253](https://github.com/ozirix-dev/Reseptit/pull/253)
+[91 reseptin koneellinen työindeksi](gk100-evidence-recovery-v2-inventory.jsonl) käyttää pääavaimena recipeId:tä. `queueState` ohjaa jatkotyötä. `editorialDecision` säilyttää viimeksi kirjatun pakettipäätöksen ja `pilotStatus` kuvaa laskentapilotin tilaa. E1 koostumus, E2 GI, E3 valmistusvastaavuus, E4 määrä, E5 menetelmä, E6 sisältöpäätös, E7 käyttöoikeus, E8 tekninen sidos. Saatavan CHO:n osasumma säilyy erillään puuttuvista riveistä ja rajatuista CHO-arvoista. Tarkistettuja paketteja luetaan nimetyistä Git-commiteista.
 
 ## Vaikuttavimmat 20 lähdeaukkoa
 
@@ -39,9 +39,9 @@ Kaksi muuta koostumusriviä on tunnistettu täsmällisille jatkoversioille. MEXT
 
 Uutta näyttöä on siten **yhdelle katselmoitavalle reseptiversiolle, kolmelle koostumusriville** (yksi ehdokaspaketissa ja kaksi tarkasti rajattua jatkosidosta) sekä **kahdelle uudelle ihmis-GI-skenaarioreitille** (bao ja bataatti). Viimeksi mainitut koskevat komponentteja. Uusia koko reseptin hyväksyttyjä GI-sidoksia tai hyväksyntävalmiita reseptejä on **0**. Yhteisiä lähteitä voidaan tutkia useaan reseptiin, mutta ensimmäinen korjaus on sidottu yhteen. Päällekkäisiä ehdokkaita ei lasketa kattavuudeksi.
 
-## V1 ja V2 · 12 todellista tapausta
+## V1 ja V2 · 12 tapausta historiallisessa vertailussa
 
-Rajat ovat tämän otoksen valintaa varten: suuri ≥30, keski 10–<30, pieni <1 GK/annos, lisäksi kolme vaikeaa. V1 tarkoittaa nykyistä julkaistua tulosta tai lukittua tutkimuspäätöstä. V2 on katselmointiehdotus samalle syötteelle tai erikseen nimetylle korjaukselle. Julkaistu pisteluku säilyy vertailuarvona myös silloin, kun V2-koe edellyttää erillistä arviota uudelle käytölle.
+Vertailun lähtöcommit on `d12447d384aaeafc263c1c4e3d435bf9304f840e`. Rajat ovat tämän otoksen valintaa varten: suuri ≥30, keski 10–<30, pieni <1 GK/annos, lisäksi kolme vaikeaa. V1 tarkoittaa nykyistä julkaistua tulosta tai lukittua tutkimuspäätöstä. V2 on katselmointiehdotus samalle syötteelle tai erikseen nimetylle korjaukselle. Julkaistu pisteluku säilyy vertailuarvona myös silloin, kun V2-koe edellyttää erillistä arviota uudelle käytölle.
 
 | Resepti | V1 | V2-ehdotus | GK/annos ja ratkaisu |
 | --- | --- | --- | --- |
@@ -68,6 +68,14 @@ GI Knowledge Base -sopimus seuraa #242:n erottelua **lähde → havainto → sov
 
 ## Seuraava erä ja toisto
 
-Viisi aiemmin hyväksyttyä, vielä julkaisematonta versiota voidaan koota seuraavaksi erilliseen tuotantolupapäätökseen nykyisen mainin päälle. Maapähkinä-xôi, bouillabaisse ja hunajamsemen (#244), tempeh-munakulho (#245) sekä sumakkimanakish (#248). Factory varmisti kaikki viisi sidottua pakettia ja niiden erilliset omistajapäätökset nykyistä mainia ja kattavuutta vasten. Toista tarkistus julkaisupohjan vaihtuessa. Aloo parathan tutkimusannos #249 ja bánh xèon uusi katselmointi ovat erillisiä. Nykyisestä 96 aukosta viisi on arkistossa julkaisuvalmisteluun hyväksyttyjä, yksi odottaa omistajan päätöstä, yksi eteni syväkatselmointiin ja 89:llä on muu avoin selvitys- tai lähde-este. Lukua 89 ei tulkita 89 yksilölliseksi GI-lähteeksi. [#244](https://github.com/ozirix-dev/Reseptit/pull/244) · [#245](https://github.com/ozirix-dev/Reseptit/pull/245) · [#248](https://github.com/ozirix-dev/Reseptit/pull/248) · [#249](https://github.com/ozirix-dev/Reseptit/pull/249)
+| Työjonon tila | Reseptiä | Jatkotoimi |
+| --- | ---: | --- |
+| `PUBLISHED` | 235 | Tuotannossa. Indeksi jättää reseptit pois avoimista riveistä ja lähdeprioriteeteista. |
+| `OWNER_DECISION` | 1 | Aloo parathan 182 g:n tutkimusannos, 39,4788 GK, on valmis sisältöpäätökseen. [PR #249](https://github.com/ozirix-dev/Reseptit/pull/249) |
+| `REVIEW_REQUIRED` | 1 | Bánh xèon 80 g:n kypsä itutäyte, 31,76344 GK/annos, odottaa taikinaverrokin syväkatselmointia. Tämä on PR #255:n oman erän ainoa ehdokas. [Laskentamuistio](gk100-banh-xeo-cooked-sprouts-review.md) |
+| `RELEASE_READY` | 0 | Seuraava julkaisuvalmis erä syntyy reseptikohtaisen hyväksyntäkäsittelyn jälkeen. |
+| `SOURCE_BLOCKED` | 89 | Ratkaistavana on lähde, soveltuvuus tai paketin muu edellytys. Tarkka estetyyppi ja arkistopäätös näkyvät reseptirivillä. |
 
-Toista inventaario lukitusta main-commitista erillisessä worktreessä. Nouda manifestien pinnatut PR-commitit GitHubista, suorita `npm run content:sync`, `npm run audit:nutrition -- --strict` ja `npm run audit:glycemic-load` hakemistossa `site`. Tämän PR:n worktreessä `python -X utf8 site/scripts/gk100-evidence-recovery.py --audit-root POLKU_MAIN_WORKTREEHEN` tulostaa JSONL:n ja valitsin `--sample` tarkistaa 12 reseptin otoksen. Ehdokaspaketti tarkistetaan komennolla `npm run gk:approval-check -- check COMMIT ../docs/nutrition/gk100-evidence-recovery-v2-batch.json` hakemistossa `site`. Uusi tutkimustieto kirjataan pakettiin, ja tuotannon A/B- tai Mixed-rekisteriin siirtyminen edellyttää erillistä reseptikohtaista katselmointia.
+Maapähkinä-xôi, bouillabaisse, hunajamsemen, tempeh-munakulho ja sumakkimanakish ovat `PUBLISHED`-tilassa. Julkaisumanifestin reseptitunnisteet täsmäävät tuotannon auditointiin. Seuraava omistajan hyväksyntäerä sisältää yhden version. [Julkaisu-PR #257](https://github.com/ozirix-dev/Reseptit/pull/257)
+
+Toista inventaario lukitusta main-commitista erillisessä worktreessä. Nouda manifestien pinnatut PR-commitit GitHubista. Suorita `npm run content:sync`, `npm run audit:nutrition -- --strict` ja `npm run audit:glycemic-load` auditointipuun `site`-hakemistossa. Tämän PR:n worktreessä `python -X utf8 site/scripts/gk100-evidence-recovery.py --audit-root POLKU_MAIN_WORKTREEHEN` tulostaa JSONL:n. Historiallinen `--sample` käyttää yllä mainitun vertailucommitin erillistä auditointipuuta. Bánh xèon paketin voi tarkistaa komennolla `npm run gk:approval-check -- check COMMIT ../docs/nutrition/gk100-evidence-recovery-v2-batch.json` hakemistossa `site`.
