@@ -1,10 +1,11 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
+import { readFileSync } from 'node:fs';
 import { fingerprint } from '../scripts/gk80-candidate-model';
-import { mixedBindingsPath, MIXED_EVIDENCE_METHOD, type MixedEvidencePacket } from '../scripts/gk100-mixed-evidence';
-import { parsePointReviewVariant } from '../scripts/gk100-point-packet';
+import { mixedApprovalPath, mixedBindingsPath, mixedPolicySha256, MIXED_EVIDENCE_METHOD, type MixedEvidencePacket } from '../scripts/gk100-mixed-evidence';
+import { parsePointReviewVariant, type PointReviewCandidate } from '../scripts/gk100-point-packet';
 import { textHash } from '../scripts/gk149-model';
-import { applyDecisions, checkBatch, prepareRelease, type Batch, type Decisions } from '../scripts/gk100-approval-factory';
+import { applyDecisions, checkBatch, checkMixedReviewBatch, prepareRelease, type Batch, type Classification, type Decisions } from '../scripts/gk100-approval-factory';
 import { makeReleaseBundle, verifyReleaseBundle } from '../scripts/gk100-approval-release';
 
 const base = '1'.repeat(40);
@@ -267,7 +268,7 @@ test('Mixed Evidence keeps measured GI above 100, codes and omissions separate',
 });
 
 test('Mixed Evidence flags dominant coding and large combined stress independently', () => {
-  const { bindings, check } = mixedFixture();
+  const { batch, bindings, check, read } = mixedFixture();
   const inspect = () => {
     const checked = check();
     const row = checked.manifest.candidates[0];
@@ -285,6 +286,10 @@ test('Mixed Evidence flags dominant coding and large combined stress independent
   assert.deepEqual(row.mixedEvidence!.uncertainty.scenarios.map(s => s.combinedGk), [0.5, 10.7, 15.8]);
   assert.equal(row.mixedEvidence!.uncertainty.scenarios[1].combinedRelativeChange, 5.2 / 5.5);
   assert.deepEqual(row.riskSignals.slice(-2), ['MIXED_CODE_DOMINANCE', 'MIXED_LARGE_GI100_STRESS_CHANGE']);
+  batch.candidates[0].classification!.review!.inputSha256 = row.inputSha256;
+  const approval = { schemaVersion: 1, decision: 'APPROVE_REVIEW_ONLY', policySha256: mixedPolicySha256, evidence: 'Fixture only' };
+  assert.equal(checkMixedReviewBatch(batch, read, () => JSON.stringify(approval)).manifest.candidates[0].reason,
+    'MIXED_EVIDENCE_SPECIAL_REVIEW_REQUIRED');
 
   // High code share with a code whose GI 100 stress has little effect.
   bindings.coded.gi.value = 100;
@@ -385,4 +390,85 @@ test('the Lontong quantities fail even if its rice and tofu are treated as bound
     assert.match(check().manifest.candidates[0].reason!,
       availableCho >= 1 ? /MIXED_OMISSION_EXCEEDS_INGREDIENT_LIMIT/ : /MIXED_OMISSION_STRESS_EXCEEDS_REVIEW_SCREEN/);
   }
+});
+
+test('the sealed Okayu version passes review with zero omissions and an exact method decision', () => {
+  const packetPath = 'docs/nutrition/gk80-operation80-okayu-release-candidate.json';
+  const readRepo = (path: string) => readFileSync(new URL('../../' + path, import.meta.url), 'utf8');
+  const legacyRaw = readRepo(packetPath);
+  // Reuse the exact version and sources reviewed for PR #240. The registry
+  // below exists only in this test, never in the Factory's live registry.
+  assert.equal(textHash(legacyRaw), '7cb7dcc89d49a7b869197100bd7a4611c6666f3878bdb5528cae8be906484a7b');
+  const { recipeId, servings, boundFiles, preparation, limitation, ingredients, reviewState, publicationAuthorized,
+    inputs, sources } = JSON.parse(legacyRaw) as PointReviewCandidate;
+  const originalPath = 'reseptit/aamupalat/' + recipeId + '.md';
+  const scopeSha256 = fingerprint({ recipeId, originalSha256: boundFiles[originalPath], servings, ingredients, preparation });
+  const source = ({ url, title }: typeof sources[number]) => ({ url, locator: title });
+  const rows: MixedEvidencePacket['rows'] = [
+    { ingredientIndex: 0, bindingId: 'rice', kind: 'HUMAN_GI' },
+    { ingredientIndex: 1, bindingId: 'umeboshi', kind: 'B_CODING' },
+    { ingredientIndex: 2, bindingId: 'sesame', kind: 'B_CODING' },
+    { ingredientIndex: 3, bindingId: 'spring-onion', kind: 'B_CODING' },
+    { ingredientIndex: 4, bindingId: 'water', kind: 'UNKNOWN' },
+  ];
+  const bindings = Object.fromEntries(rows.map(({ ingredientIndex, bindingId, kind }) => {
+    const input = inputs[ingredientIndex];
+    return [bindingId, {
+      scopeSha256, ingredientIndex,
+      composition: { id: bindingId, unit: input ? 'g' : 'ml', availablePer100: input?.[1] ?? 0,
+        source: input ? source(sources[ingredientIndex + 1])
+          : { url: 'https://github.com/ozirix-dev/Reseptit/blob/3cb570f53ae5506831efc9ff9e9a0f6f8de19705/docs/nutrition/gk80-operation80-batch-08.md', locator: 'Plain cooking water' } },
+      gi: input ? { kind, value: input[2], source: source(sources[kind === 'HUMAN_GI' ? 0 : 5]) } : { kind },
+      applicability: 'Exact Okayu preparation reviewed in PR #240',
+      approvalEvidence: 'PR #240 archive reference for test only',
+    }];
+  }));
+  const packet: MixedEvidencePacket = { recipeId, servings, boundFiles, preparation, limitation, ingredients,
+    reviewState, publicationAuthorized, rows, method: MIXED_EVIDENCE_METHOD };
+  const raw = JSON.stringify(packet);
+  const read = (path: string) => {
+    if (path === packetPath) return raw;
+    if (path === mixedBindingsPath) return JSON.stringify({ schemaVersion: 1, bindings });
+    return readRepo(path);
+  };
+  const batch: Batch = { schemaVersion: 1, batchId: 'okayu-validation', candidates: [{ recipeId, packetPath }] };
+  const [row] = checkBatch(batch, read).manifest.candidates;
+  assert(row.technical === 'PASS' && row.mixedEvidence);
+  assert.equal(row.state, 'REVIEW_REQUIRED');
+  assert.equal(row.mixedEvidence.policySha256, mixedPolicySha256);
+  assert.equal(row.omittedCho, 0);
+  assert.deepEqual(row.riskSignals, ['ASSIGNED_GI']);
+  assert.equal(row.mixedEvidence.point.toFixed(4), '36.7676');
+  assert.equal(row.mixedEvidence.codedGk.toFixed(4), '0.2301');
+  assert.deepEqual(row.mixedEvidence.uncertainty.scenarios.map(s => s.combinedGk.toFixed(4)),
+    ['36.5375', '37.0925', '37.3700']);
+
+  const approval = { schemaVersion: 1, decision: 'APPROVE_REVIEW_ONLY', policySha256: mixedPolicySha256, evidence: 'Test only' };
+  const readMain = (path: string) => {
+    assert.equal(path, mixedApprovalPath);
+    return JSON.stringify(approval);
+  };
+  const readMainWithoutApproval = (path: string) => {
+    if (path === mixedApprovalPath) throw Object.assign(new Error('Approval file absent in test'), { code: 'ENOENT' });
+    return readRepo(path);
+  };
+  assert.throws(() => checkMixedReviewBatch(batch, read, readMainWithoutApproval), /MIXED_EVIDENCE_METHOD_APPROVAL_REQUIRED/);
+  assert.throws(() => checkMixedReviewBatch(batch, read, () => JSON.stringify({ ...approval, policySha256: '0'.repeat(64) })),
+    /INVALID_OR_STALE_MIXED_EVIDENCE_METHOD_APPROVAL/);
+  const [entry] = batch.candidates;
+  const review: NonNullable<Classification['review']> = { depth: 'FOCUSED', evidence: 'Test only', inputSha256: row.inputSha256 };
+  entry.classification = { candidateSha256: textHash(raw), risk: 'HIGH', contentChange: 'GK_ONLY',
+    contentSummary: 'Water-based Okayu with weighed toppings', reasons: ['Test only'], outcome: 'OWNER_DECISION', review };
+  assert.equal(checkMixedReviewBatch(batch, read, readMain).manifest.candidates[0].reason, 'RISK_MATCHED_REVIEW_REQUIRED');
+  review.depth = 'DEEP';
+  const checked = checkMixedReviewBatch(batch, read, readMain);
+  assert.equal(checked.manifest.candidates[0].state, 'OWNER_DECISION');
+  assert.equal(checkBatch(batch, read).manifest.candidates[0].state, 'REVIEW_REQUIRED');
+  const decisions = approve(checked, recipeId);
+  assert.equal(applyDecisions(checked, decisions)[0].state, 'OWNER_APPROVED');
+  const plan = prepareRelease(checked, decisions, coverage, base, read);
+  assert.equal(plan.rows[0].reason, 'NO_RELEASE_VARIANT_FOR_REVIEW_ONLY_METHOD');
+  assert.equal(plan.expectedCoverageDelta, 0);
+  bindings['spring-onion'].composition.availablePer100 = 4.75;
+  assert.equal(checkMixedReviewBatch(batch, read, readMain).manifest.candidates[0].reason, 'MIXED_EVIDENCE_INPUT_REVIEW_REQUIRED');
 });
