@@ -1,15 +1,15 @@
 """Join the version-aware main audit with pinned editorial evidence; stdout is JSONL."""
 
+import argparse
 import hashlib
 import json
 import re
 import subprocess
-import sys
 from decimal import Decimal
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
-BASE = "b96ba0b0dfe8f859736f9db63be982021ca7a63d"
+BASE = "d12447d384aaeafc263c1c4e3d435bf9304f840e"
 ARCHIVES = {
     "230": "2b991589d4dfc2010f26ec16733a95eb9a7824fc",
     "244": "e2c3bca1072ccee1e3b565a9c08bac039d94ab59",
@@ -100,11 +100,13 @@ def category(message):
     return next((code for code, pattern in BLOCKERS if re.search(pattern, message, re.I)), "UNCLASSIFIED")
 
 
-def emit():
-    if git("merge-base", BASE, "HEAD").decode().strip() != BASE:
-        raise ValueError("Run on the pinned main or this review branch")
-    pilot = load("tmp/nutrition/glycemic-load-pilot.json")
-    recipes = indexed(load("tmp/nutrition/audit.json")["inventory"], "recipe_id")
+def read_audit(audit_root, name):
+    return json.loads((audit_root / "tmp/nutrition" / name).read_bytes())
+
+
+def emit(audit_root):
+    pilot = read_audit(audit_root, "glycemic-load-pilot.json")
+    recipes = indexed(read_audit(audit_root, "audit.json")["inventory"], "recipe_id")
     results = indexed(pilot["results"], "recipeId")
     historic = indexed(archive("230", "gk80-operation80-inventory")["recipes"], "recipeId")
     numeric = set(pilot["versionCoverage"]["numericRecipeIds"])
@@ -145,7 +147,7 @@ def emit():
         result, recipe = results[key], recipes[key]
         path = recipe["source_path"]
         raw = git("show", BASE + ":" + path)
-        if raw.decode().splitlines() != (ROOT / path).read_text(encoding="utf-8").splitlines():
+        if raw.decode().splitlines() != (audit_root / path).read_text(encoding="utf-8").splitlines():
             raise ValueError("Changed recipe file: " + path)
         issues = [[category(msg), msg.removeprefix(key + ": ")] for msg in result["blockers"]]
         previous = historic.get(key, {})
@@ -182,9 +184,9 @@ def emit():
         }
 
 
-def comparison():
+def comparison(audit_root):
     """Check the real recipe cohort against published outputs and pinned packets."""
-    pilot = load("tmp/nutrition/glycemic-load-pilot.json")
+    pilot = read_audit(audit_root, "glycemic-load-pilot.json")
     results = indexed(pilot["results"], "recipeId")
     variants = indexed(pilot["gkOnlyVariants"], "recipeId")
     cohort = (
@@ -235,7 +237,13 @@ def comparison():
 
 
 if __name__ == "__main__":
-    if sys.argv[1:] not in ([], ["--sample"]):
-        raise SystemExit("Usage: gk100-evidence-recovery.py [--sample]")
-    for record in comparison() if sys.argv[1:] else emit():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--audit-root", type=Path, required=True, help="Checkout used to generate the two audit reports")
+    parser.add_argument("--sample", action="store_true", help="Check the twelve real comparison cases")
+    options = parser.parse_args()
+    audit_root = options.audit_root.resolve()
+    revision = git("-C", str(audit_root), "rev-parse", "HEAD").decode().strip()
+    if revision != BASE:
+        parser.error(f"Audit checkout must be at {BASE}, got {revision}")
+    for record in comparison(audit_root) if options.sample else emit(audit_root):
         print(json.dumps(record, ensure_ascii=False, separators=(",", ":")))
