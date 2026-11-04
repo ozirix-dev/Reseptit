@@ -1,0 +1,123 @@
+{
+  "recipeId": "indonesialainen-serabi-kookospannukakku",
+  "servings": 2,
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "omittedCho": 0,
+  "unroundedGk": "40.2246",
+  "preparation": {
+    "fi": "Sekoita {{amount:0}} g riisijauhoa, {{amount:1}} g makeuttamatonta kookoshiutaletta ja {{amount:2}} g täysrasvaista tölkkikookosmaitoa. Anna levätä 10 minuuttia. Paista ohuet letut {{amount:4}} rkl:ssa öljyä. Sulata päälle {{amount:3}} g fariinisokeria. Jaa {{servings}} annokseen.",
+    "en": "Mix {{amount:0}} g rice flour, {{amount:1}} g unsweetened desiccated coconut and {{amount:2}} g full-fat canned coconut milk. Rest for 10 minutes. Pan-fry thin pancakes in {{amount:4}} tbsp oil. Melt {{amount:3}} g brown sugar on top. Divide into {{servings}} portions.",
+    "sv": "Blanda {{amount:0}} g rismjöl, {{amount:1}} g osötade kokosflingor och {{amount:2}} g fet kokosmjölk på burk. Låt vila i 10 minuter. Stek tunna pannkakor i {{amount:4}} msk olja. Smält {{amount:3}} g farinsocker ovanpå. Dela i {{servings}} portioner.",
+    "th": "ผสมแป้งข้าวเจ้า {{amount:0}} กรัม มะพร้าวแห้งไม่หวาน {{amount:1}} กรัม และกะทิกระป๋องชนิดเต็มมันเนย {{amount:2}} กรัม พัก 10 นาที ทอดเป็นแผ่นบางในน้ำมัน {{amount:4}} ช้อนโต๊ะ ละลายน้ำตาลทรายแดง {{amount:3}} กรัมบนหน้าแผ่น แบ่งเป็น {{servings}} ส่วน"
+  },
+  "limitation": {
+    "fi": "Riisi–urad-dosan mitattua GI-arvoa 76 käytetään ohuen pannuserabin koko riisi–kookostaikinan verrokkina. Urad-pavun ja kookoksen eron vaikutuksen suunta ja suuruus ovat avoimia. Pinnalle sulatettu fariinisokeri lasketaan erikseen sakkaroosiverrokilla GI 59.",
+    "en": "The measured GI of rice and urad dosa (76) is applied as a comparator to the entire rice and coconut batter of thin pan-cooked serabi. The direction and size of the effect of the difference between urad dal and coconut are unknown. The brown sugar topping is calculated separately with sucrose as the comparator (GI 59).",
+    "sv": "Uppmätt GI 76 för risdosa med uradbönor används som jämförelse för hela ris- och kokossmeten i tunn pannstekt serabi. Det är okänt hur och hur mycket skillnaden mellan uradbönor och kokos påverkar svaret. Farinsockret ovanpå beräknas separat med sackaros som jämförelse (GI 59).",
+    "th": "ใช้ค่า GI 76 ที่วัดจากโดซาข้าวผสมถั่วอูรัดเป็นค่าอ้างอิงสำหรับแป้งข้าวและมะพร้าวทั้งหมดของเซราบีแผ่นบางที่ทอดในกระทะ ยังไม่ทราบทิศทางหรือขนาดผลจากความต่างระหว่างถั่วอูรัดกับมะพร้าว น้ำตาลทรายแดงที่ละลายด้านหน้าคำนวณแยกโดยอ้างอิงซูโครส (GI 59)"
+  },
+  "ingredients": [
+    {
+      "grams": 100,
+      "name": {
+        "fi": "Riisijauho",
+        "en": "Rice flour",
+        "sv": "Rismjöl",
+        "th": "แป้งข้าวเจ้า"
+      }
+    },
+    {
+      "grams": 20,
+      "name": {
+        "fi": "Makeuttamaton kookoshiutale",
+        "en": "Unsweetened desiccated coconut",
+        "sv": "Osötade kokosflingor",
+        "th": "มะพร้าวแห้งไม่หวาน"
+      }
+    },
+    {
+      "grams": 150,
+      "name": {
+        "fi": "Täysrasvainen tölkkikookosmaito",
+        "en": "Full-fat canned coconut milk",
+        "sv": "Fet kokosmjölk på burk",
+        "th": "กะทิกระป๋อง"
+      }
+    },
+    {
+      "grams": 30,
+      "name": {
+        "fi": "Fariinisokeri",
+        "en": "Brown sugar",
+        "sv": "Farinsocker",
+        "th": "น้ำตาลทรายแดง"
+      }
+    },
+    {
+      "grams": null,
+      "name": {
+        "fi": "Paistoöljy",
+        "en": "Cooking oil",
+        "sv": "Stekolja",
+        "th": "น้ำมันสำหรับทอด"
+      },
+      "quantity": {
+        "amount": 1,
+        "unit": "tbsp"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Tan et al., rice dosa",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29759105/",
+      "kind": "HUMAN_GI",
+      "note": "Measured GI 76 for rice and urad dosa, used as a comparator for the full serabi batter carbohydrate."
+    },
+    {
+      "title": "Jenkins et al., sucrose",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/6259925/",
+      "kind": "HUMAN_GI",
+      "note": "Jenkins et al. 1981, Table 1, sucrose, glucose reference, GI 59 (n=5). Used as a comparator for brown sugar."
+    },
+    {
+      "title": "Fineli 182",
+      "url": "https://fineli.fi/fineli/fi/elintarvikkeet/182",
+      "kind": "CARBOHYDRATE",
+      "note": "Fineli Release 20, CC BY 4.0."
+    },
+    {
+      "title": "AFCD F002987, F002991, F008969",
+      "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd",
+      "kind": "CARBOHYDRATE",
+      "note": "FSANZ Release 3, CC BY-SA 3.0 Australia."
+    }
+  ],
+  "inputs": [
+    [
+      100,
+      79.3,
+      76
+    ],
+    [
+      20,
+      7.3,
+      76
+    ],
+    [
+      150,
+      1.7,
+      76
+    ],
+    [
+      30,
+      96.8,
+      59
+    ]
+  ],
+  "boundFiles": {
+    "reseptit/aamupalat/indonesialainen-serabi-kookospannukakku.md": "3c3948cb2d5e7092f203c3656f023a9c041066c4a364c624c1dea7ed82f8de70",
+    "docs/nutrition/gk80-operation80-batch-28.md": "3a6609194032f92ffce7f6bd28952c0dc9c75fea7cfef9f4dc34c3cd8dbb4a41"
+  }
+}

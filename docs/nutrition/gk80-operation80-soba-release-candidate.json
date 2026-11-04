@@ -1,0 +1,151 @@
+{
+  "recipeId": "japanilainen-soba-aamiaiskeitto",
+  "servings": 2,
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "unroundedGk": "20.4311",
+  "omissions": [
+    {
+      "ingredientIndex": 3,
+      "choPer100g": 0.2
+    },
+    {
+      "ingredientIndex": 4,
+      "choPer100ml": 0.2
+    }
+  ],
+  "preparation": {
+    "fi": "Keitä {{amount:0}} g kuivaa sobaa pakkauksen mukaan 5–6 minuuttia, huuhtele kylmällä vedellä ja valuta. Kuumenna {{amount:3}} g siivilöityä bonito-dashia ja {{amount:4}} ml kanalientä. Lisää {{amount:2}} g pinaattia. Kypsennä {{amount:1}} g kananmunaa uppomunina. Jaa nuudelit, munat ja liemi {{servings}} annokseen.",
+    "en": "Cook {{amount:0}} g dry soba for 5–6 minutes as directed on the pack, rinse cold and drain. Heat {{amount:3}} g strained bonito dashi and {{amount:4}} ml chicken broth. Add {{amount:2}} g spinach. Poach {{amount:1}} g egg. Divide the noodles, eggs and broth into {{servings}} portions.",
+    "sv": "Koka {{amount:0}} g torr soba i 5–6 minuter enligt förpackningen, skölj kallt och låt rinna av. Värm {{amount:3}} g silad bonitodashi och {{amount:4}} ml kycklingbuljong. Tillsätt {{amount:2}} g spenat. Pochera {{amount:1}} g ägg. Dela nudlarna, äggen och buljongen i {{servings}} portioner.",
+    "th": "ต้มโซบะแห้ง {{amount:0}} กรัม 5–6 นาทีตามฉลาก ล้างน้ำเย็นแล้วสะเด็ดน้ำ อุ่นดาชิโบนิโตที่กรองแล้ว {{amount:3}} กรัมกับน้ำซุปไก่ {{amount:4}} มล. เติมผักโขม {{amount:2}} กรัม ทำไข่ลวกแบบโพช {{amount:1}} กรัม แบ่งเส้น ไข่ และน้ำซุปเป็น {{servings}} ส่วน"
+  },
+  "limitation": {
+    "fi": "Arvio koskee Muso NDL030 -täystattarisobaa, siivilöityä bonito-dashia ja Aneto Natural Low Sodium -kanalientä. GI 59,6 on anjovisliemessä tarjotun keitetyn tattarinuudelin verrokki. Liemistä jää pois 0,90 g hiilihydraattia annosta kohti. Pinaatin ja munan GI-arvot ovat laskentakoodeja.",
+    "en": "This estimate uses Muso NDL030 100% buckwheat soba, strained bonito dashi and Aneto Natural Low Sodium Chicken Broth. GI 59.6 comes from a cooked buckwheat noodle comparator served in anchovy broth. The broths contribute 0.90 g carbohydrate per serving outside the calculation. Spinach and egg use assigned GI codes.",
+    "sv": "Uppskattningen gäller Muso NDL030 soba av 100 % bovete, silad bonitodashi och Aneto Natural Low Sodium kycklingbuljong. GI 59,6 kommer från kokta bovetenudlar serverade i ansjovisbuljong. Buljongernas 0,90 g kolhydrat per portion utelämnas. Spenat och ägg använder tilldelade GI-koder.",
+    "th": "ค่าประมาณนี้ใช้โซบะบักวีต 100% Muso NDL030 ดาชิโบนิโตที่กรองแล้ว และน้ำซุปไก่โซเดียมต่ำ Aneto ค่า GI 59.6 อ้างอิงเส้นบักวีตต้มที่เสิร์ฟในน้ำซุปปลาแอนโชวี ไม่นับคาร์โบไฮเดรตจากน้ำซุป 0.90 กรัมต่อที่ ผักโขมและไข่ใช้รหัส GI ที่กำหนดเพื่อการคำนวณ"
+  },
+  "ingredients": [
+    {
+      "grams": 100,
+      "name": {
+        "fi": "Kuiva Muso NDL030 -soba",
+        "en": "Dry Muso NDL030 soba",
+        "sv": "Torr Muso NDL030-soba",
+        "th": "โซบะแห้ง Muso NDL030"
+      }
+    },
+    {
+      "grams": 110,
+      "name": {
+        "fi": "Kananmuna ilman kuorta",
+        "en": "Shelled egg",
+        "sv": "Ägg utan skal",
+        "th": "ไข่ไม่รวมเปลือก"
+      }
+    },
+    {
+      "grams": 50,
+      "name": {
+        "fi": "Pinaatti",
+        "en": "Spinach",
+        "sv": "Spenat",
+        "th": "ผักโขม"
+      }
+    },
+    {
+      "grams": 200,
+      "name": {
+        "fi": "Siivilöity bonito-dashi",
+        "en": "Strained bonito dashi",
+        "sv": "Silad bonitodashi",
+        "th": "ดาชิโบนิโตที่กรองแล้ว"
+      }
+    },
+    {
+      "grams": null,
+      "name": {
+        "fi": "Aneto-kanaliemi",
+        "en": "Aneto chicken broth",
+        "sv": "Aneto kycklingbuljong",
+        "th": "น้ำซุปไก่ Aneto"
+      },
+      "quantity": {
+        "amount": 700,
+        "unit": "ml"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Kim et al., Tables 1 and 3",
+      "url": "https://doi.org/10.1017/S0007114518003446",
+      "kind": "HUMAN_GI",
+      "note": "Kim et al. 2019, Tables 1 and 3. Buckwheat noodles boiled in water and served in anchovy broth, glucose reference, GI 59.6 (n=13)."
+    },
+    {
+      "title": "Muso NDL030",
+      "url": "https://muso-intl.com/wp-content/uploads/2026/01/NDL030-ORGANIC-100-BUCKWHEAT-SOBA-WEB.pdf",
+      "kind": "CARBOHYDRATE",
+      "note": "68.2 g/100 g dry."
+    },
+    {
+      "title": "MEXT, 日本食品標準成分表（八訂）増補2023年, 17019",
+      "url": "https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=17_17019_6",
+      "kind": "CARBOHYDRATE",
+      "note": "0.2 g/100 g prepared bonito stock."
+    },
+    {
+      "title": "Aneto",
+      "url": "https://www.caldoaneto.com/en/product/wellness-broths/natural-low-sodium-chicken-broth",
+      "kind": "CARBOHYDRATE",
+      "note": "0.2 g/100 ml."
+    },
+    {
+      "title": "Fineli 858",
+      "url": "https://fineli.fi/fineli/fi/elintarvikkeet/858",
+      "kind": "CARBOHYDRATE",
+      "note": "THL Fineli CC BY 4.0."
+    },
+    {
+      "title": "Fineli 33456",
+      "url": "https://fineli.fi/fineli/fi/elintarvikkeet/33456",
+      "kind": "CARBOHYDRATE",
+      "note": "THL Fineli CC BY 4.0."
+    },
+    {
+      "title": "Vegetable GI coding",
+      "url": "https://doi.org/10.2337/dc08-1239",
+      "kind": "PUBLISHED_CODING",
+      "note": "Assigned spinach code 40."
+    },
+    {
+      "title": "Low carbohydrate food coding",
+      "url": "https://doi.org/10.1016/j.jfca.2007.02.004",
+      "kind": "PUBLISHED_CODING",
+      "note": "Assigned egg code 50."
+    }
+  ],
+  "inputs": [
+    [
+      100,
+      68.2,
+      59.6
+    ],
+    [
+      110,
+      0.3,
+      50
+    ],
+    [
+      50,
+      0.25,
+      40
+    ]
+  ],
+  "boundFiles": {
+    "reseptit/aamupalat/japanilainen-soba-aamiaiskeitto.md": "d27d97d6e7b065df3372970275ed3e4525910e98d5e780d4d208e536086b0273",
+    "docs/nutrition/gk80-operation80-batch-27.md": "79ae0b220de0b0bc0049be460bc028f6faff1a3082f3c17ce41e41bf15228b72"
+  }
+}
