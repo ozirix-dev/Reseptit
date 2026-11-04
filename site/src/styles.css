@@ -214,3 +214,9 @@ button { font: inherit; }
   .glycemic-pilot__summary { grid-template-columns: repeat(2,minmax(0,1fr)); }
   .glycemic-pilot__summary article:first-child { grid-column: 1 / -1; }
 }
+
+.glycemic-pilot__pagination { display: flex; flex-wrap: wrap; gap: .75rem; padding-top: .8rem; }
+.glycemic-pilot__pagination button { cursor: pointer; min-height: 44px; padding: .6rem 1rem; border-radius: .65rem; border: 1px solid var(--accent); color: var(--accent); background: white; font-weight: 700; }
+.glycemic-pilot__pagination button:first-child { color: white; background: var(--accent); }
+.glycemic-pilot__pagination button:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+.glycemic-pilot__recipe { scroll-margin-top: 1.5rem; }
