@@ -9,6 +9,7 @@ import {createElement as h} from 'react';
 import {renderToStaticMarkup} from 'react-dom/server';
 import {MemoryRouter} from 'react-router-dom';
 import {buildApprovedFourVariants,loadApprovedFour,verifyNextFourCase,verifyMext05001,NEXT_FOUR_INPUTS,verifyNextFourManifest} from '../scripts/gk-next-four';
+import {loadAuthorizedGk100Variants} from '../scripts/gk100-approval-release';
 import {buildGkOnlyVariants} from '../scripts/gk149-integration';
 import {buildApprovedSevenVariants} from '../scripts/gk-next-seven';
 import {digest,textHash} from '../scripts/gk149-model';
@@ -22,15 +23,24 @@ const four=buildApprovedFourVariants(root),loaded=loadApprovedFour(root),manifes
 const old=[...buildGkOnlyVariants(root),...buildApprovedSevenVariants(root)];
 const render=(v:GkOnlyVariant,locale:'fi'|'en'|'sv'|'th',servings=v.servings)=>renderToStaticMarkup(h(MemoryRouter,null,h(GkOnlyVariantPanel,{variant:v,locale,servings})));
 
-test('the four A inputs and legacy variants remain intact as four approved B versions enter coverage',()=>{
+test('the four A inputs and legacy coverage remain intact alongside authorized GK100 releases',()=>{
  assert.equal(four.length,4);assert.deepEqual(Object.fromEntries(four.map(v=>[v.recipeId,v.inputSha256])),NEXT_FOUR_INPUTS);
  assert.ok(four.every(v=>v.level==='A'&&v.confidence==='LOW'&&v.codingKinds.length===0));
  assert.deepEqual(gkOnlyVariants.slice(0,27),[...old,...four]);
  for(const previous of baseline.legacyVariants){const v=old.find(v=>v.recipeId===previous.recipeId)!;assert.equal(digest(v),previous.variantSha256,previous.recipeId);}
  const report=read('tmp/nutrition/glycemic-load-pilot.json');
  assert.deepEqual(report.gkOnlyVariants,gkOnlyVariants);assert.deepEqual(report.versionCoverage,gkVersionCoverage);
- assert.equal(gkVersionCoverage.numericRecipes,207);assert.equal(gkVersionCoverage.originalNumeric,156);assert.equal(gkVersionCoverage.additionalA,41);assert.equal(gkVersionCoverage.additionalB,10);assert.equal(gkVersionCoverage.total,326);assert.equal(gkVersionCoverage.missing,119);
- assert.deepEqual(report.coverageViews,{originalRecipe:{total:326,numeric:156,missing:170},atLeastOneExactVersion:{total:326,numeric:207,missing:119,additionalApprovedVersions:51}});
+ const releases=loadAuthorizedGk100Variants(root);
+ const releaseIds=new Set(releases.map(v=>v.recipeId));
+ assert.deepEqual(gkOnlyVariants.filter(v=>releaseIds.has(v.recipeId)),releases);
+ const legacy=countGkVersions(report.results,gkOnlyVariants.filter(v=>!releaseIds.has(v.recipeId)));
+ assert.deepEqual([legacy.numericRecipes,legacy.originalNumeric,legacy.additionalA,legacy.additionalB,legacy.total,legacy.missing],
+  [207,156,41,10,326,119]);
+ const coverage=countGkVersions(report.results,gkOnlyVariants);
+ assert.deepEqual(gkVersionCoverage,coverage);
+ assert.equal(coverage.numericRecipes,207+releases.length);
+ assert.deepEqual(report.coverageViews,{originalRecipe:{total:326,numeric:156,missing:170},
+  atLeastOneExactVersion:{total:326,numeric:coverage.numericRecipes,missing:coverage.missing,additionalApprovedVersions:gkOnlyVariants.length}});
  assert.throws(()=>countGkVersions(report.results,[...gkOnlyVariants,four[0]]),/distinct/);
  for(const id of ['jerk-kana','sate-ayam'])assert.ok(!gkOnlyVariants.some(v=>v.recipeId===id));
 });
@@ -220,8 +230,9 @@ test('the four reviewed GK-only versions retain their points and native liquid u
 });
 
 test('approved almond pies retain their exact results and apple sweetener measures', () => {
- const [apple, rhubarb] = gkOnlyVariants.slice(-2);
- assert.deepEqual([apple.recipeId, rhubarb.recipeId], ['vhh-omenapiirakka', 'vhh-raparperipiirakka']);
+ const apple = gkOnlyVariants.find(v => v.recipeId === 'vhh-omenapiirakka');
+ const rhubarb = gkOnlyVariants.find(v => v.recipeId === 'vhh-raparperipiirakka');
+ assert.ok(apple && rhubarb);
  assert.deepEqual([apple.point, rhubarb.point], [1.5, 1.33]);
  assert.deepEqual(gkOnlyQuantity(apple, 3), {amount: 2, unit: 'tbsp'});
  assert.deepEqual(gkOnlyQuantity(apple, 9), {amount: 1, unit: 'tbsp'});
