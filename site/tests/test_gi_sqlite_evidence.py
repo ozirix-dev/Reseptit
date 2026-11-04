@@ -95,8 +95,26 @@ class GiEvidenceTests(unittest.TestCase):
             self.assertEqual(evidence._text_ids(db, "SQLITE_TOKEN_SCAN", "Jäähdytetty peruna", "GI", 2), ["one"])
             self.assertEqual(evidence._text_ids(db, "SQLITE_TOKEN_SCAN", 'peruna OR "*"', "GI", 2), [])
 
+    def test_reference_only_alternative_does_not_invalidate_usable_binding(self):
+        self.registry["records"].append({**self.registry["records"][0], "id": "usable", "calculationUse": None})
+        self.write_sources()
+        keys = {"foodKey": "potato", "preparationKey": "boiled", "compositionRecordId": "food-1"}
+        bound, exact, restricted = self.search(
+            {"id": "bound", "giRecordId": "usable", **keys},
+            {"id": "exact", "limit": 1, **keys},
+            {"id": "restricted", "giRecordId": "boiled", **keys},
+        )["results"]
+        self.assertNotIn("GI_REFERENCE_ONLY", bound["gaps"])
+        self.assertNotIn("GI_REFERENCE_ONLY", exact["gaps"])
+        self.assertIn("GI_REFERENCE_ONLY", restricted["gaps"])
+
+    def test_text_search_rejects_excess_terms_instead_of_ignoring_them(self):
+        words = " ".join(f"term{i}" for i in range(65))
+        with self.assertRaisesRegex(ValueError, "at most 64 distinct words"):
+            self.search({"id": "overlong", "text": words})
+
     def test_conflicting_composition_rows_are_reported_and_stale_data_is_rebuilt(self):
-        requests = {"id": "conflict", "compositionRecordId": "food-1", "giRecordId": "steamed"}
+        requests = {"id": "conflict", "compositionRecordId": "food-1", "giRecordId": "steamed", "limit": 1}
         prior = self.search(requests)
         self.foods.append({**self.foods[0], "state": "raw"})
         self.write_sources()
@@ -155,4 +173,6 @@ class GiEvidenceTests(unittest.TestCase):
         ])
         self.assertEqual(report["inventoryPriorityTargets"][0]["recipeIds"], ["x"])
         self.assertEqual(report["results"][0]["review"], "UNSUPPORTED")
+        self.assertEqual(report["results"][1]["giRequirement"], "NOT_NEEDED_FOR_DOCUMENTED_ZERO_CHO")
+        self.assertNotIn("NO_GI_LEAD", report["results"][1]["gaps"])
         self.assertFalse(report["autoApproved"])

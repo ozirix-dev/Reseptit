@@ -127,7 +127,9 @@ def evidence_snapshot(source=index.DEFAULT_SOURCE, composition=DEFAULT_COMPOSITI
 
 
 def _text_ids(db, engine, text, kind, limit):
-    tokens = list(dict.fromkeys(_words(text)))[:12]
+    tokens = list(dict.fromkeys(_words(text)))
+    if len(tokens) > 64:
+        raise ValueError("Evidence text search supports at most 64 distinct words")
     if not tokens:
         return []
     if engine == "FTS5":
@@ -236,8 +238,18 @@ def _request(db, engine, request, sources_by_url):
     if any(item["retrieval"] == "BOUND_RECORD" and
            {"FOOD_KEY_MISMATCH", "PREPARATION_MISMATCH"}.intersection(item["warnings"]) for item in gi):
         gaps.append("GI_BINDING_KEY_MISMATCH")
-    if any(item["calculationUse"] == "REFERENCE_ONLY"
-           and item["retrieval"] in {"BOUND_RECORD", "EXACT_KEY_MATCH"} for item in gi):
+    if gi_id:
+        reference_only = any(item["recordId"] == gi_id and item["calculationUse"] == "REFERENCE_ONLY"
+                             for item in gi)
+    else:
+        exact = [item for item in gi if item["retrieval"] == "EXACT_KEY_MATCH"]
+        reference_only = bool(exact) and all(item["calculationUse"] == "REFERENCE_ONLY" for item in exact)
+        if reference_only:
+            records = db.execute("SELECT payload_json FROM gi_record WHERE food_key = ? AND preparation_key = ?",
+                                 (food, preparation))
+            reference_only = all(json.loads(record[0]).get("calculationUse") == "REFERENCE_ONLY"
+                                 for record in records)
+    if reference_only:
         gaps.append("GI_REFERENCE_ONLY")
     if not composition_id:
         gaps.append("COMPOSITION_BINDING_REQUIRED" if compositions else "NO_COMPOSITION_LEAD")
@@ -245,7 +257,8 @@ def _request(db, engine, request, sources_by_url):
         review = "UNSUPPORTED"
     else:
         review = "REVIEW_REQUIRED"
-    return {"gi": gi, "composition": list(compositions.values())[:limit], "gaps": gaps, "review": review}
+    return {"gi": gi, "composition": list(compositions.values())[:max(limit, bound_compositions)],
+            "gaps": gaps, "review": review}
 
 
 def lookup_gi_batch(requests, *, source=index.DEFAULT_SOURCE, composition=DEFAULT_COMPOSITION,
@@ -327,6 +340,16 @@ def review_queue(path, recipe_ids=(), *, inventory=True, **context):
     reuse = defaultdict(set)
     for entry, result in zip(ingredients, output["results"], strict=True):
         result.update(entry)
+        documented_zero = (
+            entry["queueCho"] == 0 and not entry["queueChoRange"] and not entry["queueChoUpperBound"]
+            and not entry["queueBlockers"] and not entry["existingGiRecordId"]
+        )
+        if documented_zero:
+            gi_search_gaps = {"NO_GI_LEAD", "NO_EXACT_GI_KEY", "NO_PREPARATION_MATCH"}
+            result["gaps"] = [gap for gap in result["gaps"] if gap not in gi_search_gaps]
+            result["giRequirement"] = "NOT_NEEDED_FOR_DOCUMENTED_ZERO_CHO"
+            if not result["gaps"]:
+                result["review"] = "REVIEW_REQUIRED"
         recipe = entry["recipeId"]
         term = _source_text(entry["ingredient"])
         for blocker in entry["queueBlockers"]:
