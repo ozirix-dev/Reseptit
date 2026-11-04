@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "batchId": "gk100-cake-tangyuan-studies",
+  "candidates": [
+    {
+      "recipeId": "meheva-suklaakakku",
+      "packetPath": "docs/nutrition/gk100-chocolate-cake-study-release-candidate.json",
+      "classification": {
+        "risk": "HIGH",
+        "reasons": [
+          "GI, saatava CHO sekä pohjan ja kuorrutteen painot ovat samasta glukoosiviitteisestä ihmiskokeesta.",
+          "Tulos rajataan historialliseen koeannokseen. Nykyisiä kakkutuotteita ja kotireseptiä ei sidota tutkimuksen tulokseen."
+        ],
+        "contentChange": "GK_ONLY",
+        "contentSummary": "Historiallinen kuorrutettu 107,2 g kakkupala ja 250 ml vettä. Nimellinen 50 g CHO ja GI 41 antavat 20,5 GK.",
+        "outcome": "OWNER_DECISION",
+        "review": {
+          "depth": "DEEP",
+          "evidence": "docs/nutrition/gk100-chocolate-cake-study-review.md"
+        },
+        "candidateSha256": "d033681b8541584d2b92b61f5b7f6a8563e79d4641471b07df57ff42d319fed4"
+      }
+    },
+    {
+      "recipeId": "tangyuan",
+      "packetPath": "docs/nutrition/gk100-tangyuan-study-release-candidate.json",
+      "classification": {
+        "risk": "HIGH",
+        "reasons": [
+          "Saatava hiilihydraatti, annospaino ja glukoosiviitteinen GI on sidottu samaan koeannokseen.",
+          "Rinnakkaisraportin GI poikkeaa ja täyte on yksilöimätön. Ehdotus koskee vain Chenin raportoimaa koeannosta."
+        ],
+        "contentChange": "GK_ONLY",
+        "contentSummary": "Historiallinen 115 g Lee Chun -riisipalloannos ja 250 ml vettä. 50 g saatavaa CHO:ta ja GI 61 antavat GK:n 30,5.",
+        "outcome": "OWNER_DECISION",
+        "review": {
+          "depth": "DEEP",
+          "evidence": "docs/nutrition/gk100-tangyuan-study-review.md"
+        },
+        "candidateSha256": "580ea679695009900d4e8b7f7247977018216b9c106c72a0a7dda691bb575f64"
+      }
+    }
+  ]
+}
