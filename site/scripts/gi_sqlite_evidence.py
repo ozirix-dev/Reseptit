@@ -65,6 +65,9 @@ def _extend_index(db, sources, gi_records, composition_raw, composition_sha):
     db.executemany("INSERT INTO metadata VALUES (?, ?)", [
         ("evidence_schema", EVIDENCE_SCHEMA), ("composition_sha256", composition_sha), ("text_engine", engine),
     ])
+    db.execute("ALTER TABLE gi_record ADD COLUMN calculation_use TEXT")
+    db.executemany("UPDATE gi_record SET calculation_use = ? WHERE id = ?",
+                   [(row.get("calculationUse"), row["id"]) for row in gi_records])
     for row in sorted(gi_records, key=lambda value: value["id"]):
         source = row["source"]
         registered = sources_by_url.get(source.get("url"), [])
@@ -91,6 +94,8 @@ def _verify(db, source_sha, composition_sha):
         raise index.StaleIndexError("GI evidence index does not match the source snapshots")
     if meta.get("text_engine") not in {"FTS5", "SQLITE_TOKEN_SCAN"}:
         raise ValueError("GI evidence index has invalid text-search metadata")
+    if "calculation_use" not in {row[1] for row in db.execute("PRAGMA table_info(gi_record)")}:
+        raise index.StaleIndexError("GI evidence index is missing its calculation-use column")
     db.execute("SELECT record_key, id, payload_json FROM composition_record LIMIT 0")
     try:
         db.execute("SELECT kind, record_id, text FROM evidence_text LIMIT 0")
@@ -201,7 +206,8 @@ def _request(db, engine, request, sources_by_url):
             gi_rows[gi_id] = (row, "BOUND_RECORD")
     if food:
         for row in db.execute(
-            "SELECT * FROM gi_record WHERE food_key = ? ORDER BY (preparation_key = ?) DESC, preparation_key, id LIMIT ?",
+            "SELECT * FROM gi_record WHERE food_key = ? ORDER BY (preparation_key = ?) DESC, "
+            "preparation_key, CASE WHEN calculation_use = 'REFERENCE_ONLY' THEN 1 ELSE 0 END, id LIMIT ?",
             (food, preparation, limit),
         ):
             match = ("EXACT_KEY_MATCH" if preparation and row["preparation_key"] == preparation
@@ -244,11 +250,6 @@ def _request(db, engine, request, sources_by_url):
     else:
         exact = [item for item in gi if item["retrieval"] == "EXACT_KEY_MATCH"]
         reference_only = bool(exact) and all(item["calculationUse"] == "REFERENCE_ONLY" for item in exact)
-        if reference_only:
-            records = db.execute("SELECT payload_json FROM gi_record WHERE food_key = ? AND preparation_key = ?",
-                                 (food, preparation))
-            reference_only = all(json.loads(record[0]).get("calculationUse") == "REFERENCE_ONLY"
-                                 for record in records)
     if reference_only:
         gaps.append("GI_REFERENCE_ONLY")
     if not composition_id:
@@ -311,6 +312,8 @@ def _queue_requests(recipes, *, inventory):
                                 "grams": item.get("grams"), "recipeQuantity": item.get("recipeQuantity"),
                                 "queueCho": item.get("cho"), "queueChoRange": item.get("choRange"),
                                 "queueChoUpperBound": item.get("choUpperBound"),
+                                "pilotChoEstimatePerServing": item.get("estimatedAvailableCarbohydratePerServingG"),
+                                "pilotChoEstimateEvidence": item.get("negligibleAssumption"),
                                 "queueBlockers": blockers.get(_source_text(item["name"]), []),
                                 "existingGiRecordId": gi_id,
                                 "existingCompositionRecordId": composition_id,
@@ -340,12 +343,10 @@ def review_queue(path, recipe_ids=(), *, inventory=True, **context):
     reuse = defaultdict(set)
     for entry, result in zip(ingredients, output["results"], strict=True):
         result.update(entry)
-        documented_zero = (
-            entry["queueCho"] == 0 and not entry["queueChoRange"] and not entry["queueChoUpperBound"]
-            and not entry["queueBlockers"] and not entry["existingGiRecordId"]
-        )
-        if documented_zero:
-            gi_search_gaps = {"NO_GI_LEAD", "NO_EXACT_GI_KEY", "NO_PREPARATION_MATCH"}
+        inventory_zero = entry["queueCho"] == 0 and not entry["queueChoRange"] and not entry["queueChoUpperBound"]
+        pilot_zero = entry["pilotChoEstimatePerServing"] == 0 and bool(entry["pilotChoEstimateEvidence"])
+        if (inventory_zero or pilot_zero) and not entry["queueBlockers"] and not entry["existingGiRecordId"]:
+            gi_search_gaps = {"NO_GI_LEAD", "NO_EXACT_GI_KEY", "NO_PREPARATION_MATCH", "GI_REFERENCE_ONLY"}
             result["gaps"] = [gap for gap in result["gaps"] if gap not in gi_search_gaps]
             result["giRequirement"] = "NOT_NEEDED_FOR_DOCUMENTED_ZERO_CHO"
             if not result["gaps"]:

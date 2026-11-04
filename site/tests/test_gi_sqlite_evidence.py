@@ -106,6 +106,7 @@ class GiEvidenceTests(unittest.TestCase):
         )["results"]
         self.assertNotIn("GI_REFERENCE_ONLY", bound["gaps"])
         self.assertNotIn("GI_REFERENCE_ONLY", exact["gaps"])
+        self.assertEqual(exact["gi"][0]["recordId"], "usable")
         self.assertIn("GI_REFERENCE_ONLY", restricted["gaps"])
 
     def test_text_search_rejects_excess_terms_instead_of_ignoring_them(self):
@@ -153,6 +154,17 @@ class GiEvidenceTests(unittest.TestCase):
             self.assertEqual(evidence._gi_record(reader, "boiled")["gi"], 65)
         fresh = self.search({"id": "two", "giRecordId": "boiled"})
         self.assertEqual(fresh["results"][0]["gi"][0]["gi"], 80)
+
+    def test_documented_pilot_zero_cho_keeps_reference_hit_without_gi_gap(self):
+        pilot = self.root / "pilot.json"
+        pilot.write_text(json.dumps({"recipes": [{"recipeId": "x", "ingredients": [
+            {"name": "peruna", "foodKey": "potato", "preparationKey": "boiled", "fineliRecordId": "food-1",
+             "estimatedAvailableCarbohydratePerServingG": 0, "negligibleAssumption": "documented zero"}
+        ]}]}), encoding="utf-8")
+        row = evidence.review_queue(pilot, inventory=False, **self.context)["results"][0]
+        self.assertEqual(row["giRequirement"], "NOT_NEEDED_FOR_DOCUMENTED_ZERO_CHO")
+        self.assertEqual(row["gaps"], [])
+        self.assertIn("REFERENCE_ONLY", row["gi"][0]["warnings"])
 
     def test_inventory_adapter_keeps_scope_existing_decisions_and_prioritizes_real_blockers(self):
         queue = self.root / "queue.jsonl"

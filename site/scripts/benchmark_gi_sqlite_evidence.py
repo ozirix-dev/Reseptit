@@ -79,7 +79,7 @@ def benchmark(repeats, directory):
         return exact_ids(json.loads(completed.stdout))
 
     def exact_ids(report):
-        return [tuple(row["recordId"] for row in result["gi"] if row["retrieval"] == "EXACT_KEY_MATCH")
+        return [tuple(sorted(row["recordId"] for row in result["gi"] if row["retrieval"] == "EXACT_KEY_MATCH"))
                 for result in report["results"]]
 
     def v1_individual():
