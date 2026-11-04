@@ -527,6 +527,25 @@ test('approved GK-only versions are explicit on every existing locale page and c
  }
 });
 
+test("Swedish and Thai keto mud cake show only the approved modified GL and its sources", async () => {
+  const variant = gkOnlyVariants.find((entry) => entry.recipeId === "keto-mutakakku");
+  assert.ok(variant);
+  for (const [locale, route] of [["sv", "sv/recept"], ["th", "th/recipes"]] as const) {
+    const html = await readFile(path.join(dist, route, "keto-mutakakku", "index.html"), "utf8");
+    const panel: string | undefined = html.match(new RegExp(`<section[^>]*data-gk-version="${variant.versionId}"[^>]*>([\\s\\S]*?)</section>`))?.[1];
+    assert.ok(panel, locale);
+    assert.ok(panel.includes(gkCopy[locale].modified));
+    assert.ok(panel.includes(gkScopeUi[locale].originalMissing));
+    assert.ok(panel.includes(gkOnlyValue(variant, locale)));
+    assert.ok(panel.includes(gkCopy[locale].sources));
+    assert.ok(panel.includes("gk-evidence__technical"));
+    for (const { url } of variant.sources.filter(({ url }) => url.startsWith("https://"))) {
+      assert.ok(panel.includes(`href="${url.replaceAll("&", "&amp;")}"`), `${locale}: ${url}`);
+    }
+    assert.ok(!html.includes('class="recipe-glycemic-load"'));
+  }
+});
+
 test("all three English Torras comparisons are present with both products", async () => {
   for (const slug of ["keto-mutakakku", "keto-suklaakeksit", "meheva-suklaakakku"]) {
     const html = await readFile(path.join(dist, "en/recipes", slug, "index.html"), "utf8");
