@@ -95,6 +95,17 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
       assert.equal(await results.count(), 24);
       assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true, `${methodPage.locale} at ${width}px`);
 
+      const liverSearch = { fi: "Maksalaatikko", en: "Beef liver", sv: "Levergryta", th: "หม้อตับเนื้อ" }[methodPage.locale];
+      await search.fill(liverSearch);
+      const liver = page.locator("#maksalaatikko-kukkakaalilla");
+      assert.equal(await liver.isVisible(), true, `${methodPage.locale}: liver recipe is searchable`);
+      assert.match(await liver.innerText(), /GI/);
+      assert.doesNotMatch(await liver.innerText(), /3[.,]45/);
+      await page.getByRole("checkbox").check();
+      assert.equal(await liver.count(), 0);
+      await page.getByRole("checkbox").uncheck();
+      await search.fill("");
+
       if (methodPage.locale === "fi") {
         const initialIds = await results.evaluateAll((rows) => rows.map((row) => row.id));
         await page.getByRole("button", { name: "Näytä lisää", exact: true }).click();
