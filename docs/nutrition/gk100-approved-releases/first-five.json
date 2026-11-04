@@ -1,0 +1,643 @@
+{
+  "bundle": {
+    "schemaVersion": 1,
+    "mainSha": "527236a8d8129e907daefe1d9fcd75b8b85bc6bd",
+    "batch": {
+      "candidates": [
+        {
+          "packetPath": "docs/nutrition/gk100-rescue-jiaozi-release-candidate.json",
+          "classification": {
+            "risk": "MEDIUM",
+            "reasons": [
+              "GI 28 kuvaa liha-salottisipulinyyttiä. Kuoriosuus ja kypsennys eivät varmistu. Kaali lasketaan ennen puristusta ja 0,37875 g dipin CHO:ta/annos jää pois.",
+              "Ehdokkaan lähderivit yksilöivät koostumussyötteet ja tutkimuksista käytetään yksittäisiä GI-lukuja."
+            ],
+            "outcome": "OWNER_DECISION",
+            "contentChange": "GK_ONLY",
+            "review": {
+              "depth": "FOCUSED",
+              "evidence": "docs/nutrition/gk80-operation80-batch-35.md ja ehdokaspaketin nelikielinen rajaus."
+            },
+            "contentSummary": "Keitetty neljän annoksen nyyttiversio ja erikseen tarjottava dippi.",
+            "candidateSha256": "6660ce5dbf2690ccb89c9da125a8c3ea00a6703a57ef92d33241a7f207932d9c"
+          },
+          "recipeId": "jiaozi"
+        },
+        {
+          "packetPath": "docs/nutrition/gk80-operation80-chow-mein-release-candidate.json",
+          "classification": {
+            "risk": "MEDIUM",
+            "reasons": [
+              "GI 47 ja 48,2 ovat kaksi eri nuudeliverrokkia. Wokkaus voi muuttaa vastetta. Kastikkeen poisjätön 0,93 g CHO/annos vaikutus on GI 100 -seulonnassa 0,93 GK.",
+              "Ehdokkaan lähderivit yksilöivät koostumussyötteet ja tutkimuksista käytetään yksittäisiä GI-lukuja."
+            ],
+            "outcome": "OWNER_DECISION",
+            "contentChange": "GK_ONLY",
+            "review": {
+              "depth": "FOCUSED",
+              "evidence": "docs/nutrition/gk80-operation80-batch-25.md ja ehdokaspaketin nelikielinen rajaus."
+            },
+            "contentSummary": "Punnitaan 300 g kypsiä valutettuja vehnämunanuudeleita ja käytetään 12 g nimettyä osterikastiketta.",
+            "candidateSha256": "190fcd3422ebe04dee0a22d65d13ebca83c1de240e78898286fb75727623edf4"
+          },
+          "recipeId": "chow-mein"
+        },
+        {
+          "packetPath": "docs/nutrition/gk100-rescue-serabi-release-candidate.json",
+          "classification": {
+            "risk": "HIGH",
+            "reasons": [
+              "Riisidosan GI 76 on ehdollinen taikinaverrokki. Premixin vehnä, urad ja palmuöljy sekä serabin kookos rajoittavat siirrettävyyttä. Syväkatselmointi säilyttää korkean riskin ja matalan luottamuksen.",
+              "Ehdokkaan lähderivit yksilöivät koostumussyötteet ja tutkimuksista käytetään yksittäisiä GI-lukuja."
+            ],
+            "outcome": "READY_FOR_APPROVAL",
+            "contentChange": "GK_ONLY",
+            "review": {
+              "depth": "DEEP",
+              "evidence": "docs/nutrition/gk100-first-five-release-review.md#serabin-syväkatselmointi"
+            },
+            "contentSummary": "Ohut riisi-kookospannukakku, jonka päälle sulatetaan punnittu fariinisokeri.",
+            "candidateSha256": "8fed31af6463e8c0907a294fc12b1e0162ee5cd86b986eeec7c04bd867b4b7ad"
+          },
+          "recipeId": "indonesialainen-serabi-kookospannukakku"
+        },
+        {
+          "packetPath": "docs/nutrition/gk100-rescue-dan-dan-release-candidate.json",
+          "classification": {
+            "risk": "MEDIUM",
+            "reasons": [
+              "Väli kuvaa kahta tuotetta ja niiden eri CHO-määriä. Nuudelien GI:t ovat verrokkeja ja kastikkeessa käytetään laskentakoodeja. Etikasta jää pois 0,195 g CHO/annos.",
+              "Ehdokkaan lähderivit yksilöivät koostumussyötteet ja tutkimuksista käytetään yksittäisiä GI-lukuja."
+            ],
+            "outcome": "OWNER_DECISION",
+            "contentChange": "GK_ONLY",
+            "review": {
+              "depth": "FOCUSED",
+              "evidence": "docs/nutrition/gk80-operation80-batch-26.md ja ehdokaspaketin nelikielinen rajaus."
+            },
+            "contentSummary": "Valitaan tuore udon tai kuiva Hakubaku Somen. Molemmissa 300 g ennen keittämistä. Valinnainen paksoi rajataan erilleen.",
+            "candidateSha256": "ad22de231e93aa7f73a3ea6217d8ffadaf10994a1ce1cc1035f016503f2ba875"
+          },
+          "recipeId": "dan-dan-nuudelit"
+        },
+        {
+          "packetPath": "docs/nutrition/gk80-operation80-soba-release-candidate.json",
+          "classification": {
+            "risk": "MEDIUM",
+            "reasons": [
+              "GI 59,6 koskee anjovisliemessä tarjottua keitettyä tattarinuudelia. Kahden liemen poisjättö on yhteensä 0,90 g CHO/annos. Pinaatille ja munalle käytetään laskentakoodeja.",
+              "Ehdokkaan lähderivit yksilöivät koostumussyötteet ja tutkimuksista käytetään yksittäisiä GI-lukuja."
+            ],
+            "outcome": "OWNER_DECISION",
+            "contentChange": "GK_ONLY",
+            "review": {
+              "depth": "FOCUSED",
+              "evidence": "docs/nutrition/gk80-operation80-batch-27.md ja ehdokaspaketin nelikielinen rajaus."
+            },
+            "contentSummary": "Valitaan Muso NDL030 -täystattarisoba, siivilöity bonito-dashi ja Aneto Natural Low Sodium -kanaliemi.",
+            "candidateSha256": "7196b4361e648d9a8d8c66dad87477d79bafdee02f42bab6496f80febb9e9a81"
+          },
+          "recipeId": "japanilainen-soba-aamiaiskeitto"
+        }
+      ],
+      "batchId": "gk100-pr233-content-decisions",
+      "schemaVersion": 1
+    },
+    "manifest": {
+      "schemaVersion": 1,
+      "batchId": "gk100-pr233-content-decisions",
+      "candidates": [
+        {
+          "recipeId": "jiaozi",
+          "packetPath": "docs/nutrition/gk100-rescue-jiaozi-release-candidate.json",
+          "originalPath": "reseptit/alkuruoat/jiaozi.md",
+          "supportFiles": {
+            "docs/nutrition/gk80-operation80-batch-35.md": "dd2874279f33e194e35975373c724915cf9fc7bb4bf06a3e557f8c182141bec1"
+          },
+          "candidateSha256": "6660ce5dbf2690ccb89c9da125a8c3ea00a6703a57ef92d33241a7f207932d9c",
+          "originalSha256": "07659418c6a8ccbdcf907be2d09896db714fb40a1f9aebfbbc6df662dfe7e9d5",
+          "inputSha256": "3d1b37529fbbff7f44466563d346117d471cd7c608f67f5c367e089eeaa3c384",
+          "servings": 4,
+          "method": "A",
+          "point": 15.94796,
+          "range": null,
+          "uncertainty": "LOW_CONFIDENCE_POINT",
+          "limitation": {
+            "fi": "GI 28 on liha–salottisipulinyytin verrokki. Kaalin hiilihydraatit lasketaan ennen puristamista. Dipin osuus, noin 0,38 g hiilihydraattia annosta kohti, jää laskelman ulkopuolelle. Tutkimus ei yksilöi testinyytin kypsennystapaa tai kuoren osuutta.",
+            "en": "GI 28 is a meat and shallot dumpling comparator. Cabbage carbohydrate is counted before squeezing. About 0.38 g carbohydrate per serving from the dip is excluded. The study does not specify the test dumpling’s cooking method or wrapper proportion.",
+            "sv": "GI 28 kommer från ett degknyte med kött och schalottenlök. Kålens kolhydrater räknas före urkramning. Cirka 0,38 g kolhydrat per portion från dippen ingår inte. Studien anger varken hur testknytet tillagades eller hur stor andel skalet utgjorde.",
+            "th": "ค่า GI 28 อ้างอิงเกี๊ยวไส้เนื้อและหอมแดง คำนวณคาร์โบไฮเดรตจากผักก่อนบีบน้ำ ไม่รวมคาร์โบไฮเดรตจากน้ำจิ้มประมาณ 0.38 กรัมต่อที่ งานวิจัยไม่ได้ระบุวิธีปรุงเกี๊ยวที่ทดสอบหรือสัดส่วนแป้งห่อ"
+          },
+          "omittedCho": 0.37875,
+          "sources": [
+            {
+              "title": "Yang et al.",
+              "url": "https://www.wjgnet.com/1007-9327/full/v12/i21/3430.htm",
+              "kind": "HUMAN_GI",
+              "note": "Table 2, meat and shallot dumpling, n=10, glucose-scale GI 28. Article CC BY-NC 4.0. One reported GI value is cited as a factual input to an independent calculation."
+            },
+            {
+              "title": "Fineli",
+              "url": "https://fineli.fi/fineli/fi/ohje/19",
+              "kind": "CARBOHYDRATE",
+              "note": "THL CC BY 4.0."
+            },
+            {
+              "title": "AFCD",
+              "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd",
+              "kind": "CARBOHYDRATE",
+              "note": "CC BY-SA 3.0 Australia."
+            },
+            {
+              "title": "Kikkoman",
+              "url": "https://www.kikkoman.co.uk/products/detail/fs-kikkoman-naturally-brewed-soy-sauce",
+              "kind": "CARBOHYDRATE",
+              "note": "3.2 g per 100 ml."
+            }
+          ],
+          "omittedChoStressGkAtGi100": 0.37875,
+          "suggestedRisk": "MEDIUM",
+          "riskSignals": [
+            "CHO_OMITTED"
+          ],
+          "localeFields": "PRESENT",
+          "classification": {
+            "risk": "MEDIUM",
+            "reasons": [
+              "GI 28 kuvaa liha-salottisipulinyyttiä. Kuoriosuus ja kypsennys eivät varmistu. Kaali lasketaan ennen puristusta ja 0,37875 g dipin CHO:ta/annos jää pois.",
+              "Ehdokkaan lähderivit yksilöivät koostumussyötteet ja tutkimuksista käytetään yksittäisiä GI-lukuja."
+            ],
+            "outcome": "OWNER_DECISION",
+            "contentChange": "GK_ONLY",
+            "review": {
+              "depth": "FOCUSED",
+              "evidence": "docs/nutrition/gk80-operation80-batch-35.md ja ehdokaspaketin nelikielinen rajaus."
+            },
+            "contentSummary": "Keitetty neljän annoksen nyyttiversio ja erikseen tarjottava dippi.",
+            "candidateSha256": "6660ce5dbf2690ccb89c9da125a8c3ea00a6703a57ef92d33241a7f207932d9c"
+          },
+          "technical": "PASS",
+          "state": "OWNER_DECISION",
+          "reason": null,
+          "ownerStatus": "PENDING",
+          "publicationAuthorized": false
+        },
+        {
+          "recipeId": "chow-mein",
+          "packetPath": "docs/nutrition/gk80-operation80-chow-mein-release-candidate.json",
+          "originalPath": "reseptit/paaruoat/chow-mein.md",
+          "supportFiles": {
+            "docs/nutrition/gk80-operation80-batch-25.md": "bb3012ab9df701173dfdb8c725e5a3bef2dfd1b869fc5d544170e599b235143c"
+          },
+          "candidateSha256": "190fcd3422ebe04dee0a22d65d13ebca83c1de240e78898286fb75727623edf4",
+          "originalSha256": "3e9d6ed75ef531708f84720de20aa4fc8d40122f0fdd81c6a6f609d34cbab9c2",
+          "inputSha256": "b6da7ccfffc9ad98b24a150e1f4a9cfe8232bd3d945663ac8165c79aeacac672",
+          "servings": 4,
+          "method": "A",
+          "point": null,
+          "range": {
+            "min": 11.91775,
+            "max": 12.17965
+          },
+          "uncertainty": "NAMED_SCENARIOS",
+          "limitation": {
+            "fi": "Väli kuvaa kahta nuudeliverrokkia samalla 300 g:n kypsällä, valutetulla nuudelimäärällä: munafettuccinea (GI 47) ja vehnänuudelia (GI 48,2). Wokkaus voi muuttaa vastetta. 12 g:n osterikastike-erästä jää pois 0,93 g hiilihydraattia annosta kohti. Kasvisten ja soijakastikkeen GI-arvot ovat laskentakoodeja.",
+            "en": "The range uses two comparators for the same 300 g of cooked, drained noodles: egg fettuccine (GI 47) and wheat noodles (GI 48.2). Stir-frying can affect the response. The 12 g batch amount of oyster sauce contributes 0.93 g carbohydrate per serving outside the calculation. Vegetables and soy sauce use assigned GI codes.",
+            "sv": "Intervallet bygger på två jämförelseprodukter för samma 300 g kokta, avrunna nudlar: äggfettuccine (GI 47) och vetenudlar (GI 48,2). Wokning kan påverka svaret. Från satsens 12 g ostronsås utelämnas 0,93 g kolhydrat per portion. Grönsaker och soja använder tilldelade GI-koder.",
+            "th": "ช่วงค่าคำนวณจากอาหารอ้างอิงสองชนิดสำหรับเส้นต้มสะเด็ดน้ำ 300 กรัมเท่ากัน ได้แก่ เฟตตูชินีไข่ (GI 47) และบะหมี่ข้าวสาลี (GI 48.2) การผัดอาจเปลี่ยนการตอบสนอง ซอสหอยนางรม 12 กรัมต่อสูตรให้คาร์โบไฮเดรต 0.93 กรัมต่อที่ซึ่งไม่นำมาคำนวณ ผักและซีอิ๊วใช้รหัส GI ที่กำหนดเพื่อการคำนวณ"
+          },
+          "omittedCho": 0.93,
+          "sources": [
+            {
+              "title": "Perry et al., boiled egg fettuccine",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/10872434/",
+              "kind": "HUMAN_GI",
+              "note": "Atkinson et al. 2021 supplemental table 1, row 1485. Mother Earth egg fettuccine, glucose reference, GI 47 (n=14). Original study: Perry et al., PMID 10872434."
+            },
+            {
+              "title": "Kim et al., boiled wheat noodles",
+              "url": "https://doi.org/10.1017/S0007114518003446",
+              "kind": "HUMAN_GI",
+              "note": "Kim et al. 2019, Table 3, fresh wheat noodles, glucose reference, GI 48.2."
+            },
+            {
+              "title": "AFCD F006044, F002806, F004193, F008065, F006250",
+              "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd",
+              "kind": "CARBOHYDRATE",
+              "note": "CC BY-SA 3.0 Australia."
+            },
+            {
+              "title": "Fineli 320, 300",
+              "url": "https://fineli.fi/fineli/fi/ohje/19",
+              "kind": "CARBOHYDRATE",
+              "note": "CC BY 4.0."
+            },
+            {
+              "title": "Lee Kum Kee Premium Oyster Sauce",
+              "url": "https://uk.lkk.com/products/premium-oyster-sauce",
+              "kind": "CARBOHYDRATE",
+              "note": "31 g CHO per 100 g."
+            },
+            {
+              "title": "GI coding method",
+              "url": "https://doi.org/10.2337/dc08-1239",
+              "kind": "PUBLISHED_CODING",
+              "note": "Vegetable GI code."
+            },
+            {
+              "title": "Low carbohydrate food coding",
+              "url": "https://doi.org/10.1016/j.jfca.2007.02.004",
+              "kind": "PUBLISHED_CODING",
+              "note": "Soy sauce GI code."
+            }
+          ],
+          "omittedChoStressGkAtGi100": 0.93,
+          "suggestedRisk": "MEDIUM",
+          "riskSignals": [
+            "NAMED_SCENARIO_RANGE",
+            "CHO_OMITTED",
+            "ASSIGNED_GI"
+          ],
+          "localeFields": "PRESENT",
+          "classification": {
+            "risk": "MEDIUM",
+            "reasons": [
+              "GI 47 ja 48,2 ovat kaksi eri nuudeliverrokkia. Wokkaus voi muuttaa vastetta. Kastikkeen poisjätön 0,93 g CHO/annos vaikutus on GI 100 -seulonnassa 0,93 GK.",
+              "Ehdokkaan lähderivit yksilöivät koostumussyötteet ja tutkimuksista käytetään yksittäisiä GI-lukuja."
+            ],
+            "outcome": "OWNER_DECISION",
+            "contentChange": "GK_ONLY",
+            "review": {
+              "depth": "FOCUSED",
+              "evidence": "docs/nutrition/gk80-operation80-batch-25.md ja ehdokaspaketin nelikielinen rajaus."
+            },
+            "contentSummary": "Punnitaan 300 g kypsiä valutettuja vehnämunanuudeleita ja käytetään 12 g nimettyä osterikastiketta.",
+            "candidateSha256": "190fcd3422ebe04dee0a22d65d13ebca83c1de240e78898286fb75727623edf4"
+          },
+          "technical": "PASS",
+          "state": "OWNER_DECISION",
+          "reason": null,
+          "ownerStatus": "PENDING",
+          "publicationAuthorized": false
+        },
+        {
+          "recipeId": "indonesialainen-serabi-kookospannukakku",
+          "packetPath": "docs/nutrition/gk100-rescue-serabi-release-candidate.json",
+          "originalPath": "reseptit/aamupalat/indonesialainen-serabi-kookospannukakku.md",
+          "supportFiles": {
+            "docs/nutrition/gk80-operation80-batch-28.md": "3a6609194032f92ffce7f6bd28952c0dc9c75fea7cfef9f4dc34c3cd8dbb4a41"
+          },
+          "candidateSha256": "8fed31af6463e8c0907a294fc12b1e0162ee5cd86b986eeec7c04bd867b4b7ad",
+          "originalSha256": "3c3948cb2d5e7092f203c3656f023a9c041066c4a364c624c1dea7ed82f8de70",
+          "inputSha256": "ca717b0c224ad5f4b299af9912a658f7f3b61fd6b9a6e13f1dec3bcabf98c50e",
+          "servings": 2,
+          "method": "B",
+          "point": 40.2246,
+          "range": null,
+          "uncertainty": "LOW_CONFIDENCE_POINT",
+          "limitation": {
+            "fi": "Riisi–urad-dosan mitattua GI-arvoa 76 käytetään ohuen pannuserabin koko riisi–kookostaikinan verrokkina. Urad-pavun ja kookoksen eron vaikutuksen suunta ja suuruus ovat avoimia. Pinnalle sulatettu fariinisokeri lasketaan erikseen sakkaroosiverrokilla GI 59.",
+            "en": "The measured GI of rice and urad dosa (76) is applied as a comparator to the entire rice and coconut batter of thin pan-cooked serabi. The direction and size of the effect of the difference between urad dal and coconut are unknown. The brown sugar topping is calculated separately with sucrose as the comparator (GI 59).",
+            "sv": "Uppmätt GI 76 för risdosa med uradbönor används som jämförelse för hela ris- och kokossmeten i tunn pannstekt serabi. Det är okänt hur och hur mycket skillnaden mellan uradbönor och kokos påverkar svaret. Farinsockret ovanpå beräknas separat med sackaros som jämförelse (GI 59).",
+            "th": "ใช้ค่า GI 76 ที่วัดจากโดซาข้าวผสมถั่วอูรัดเป็นค่าอ้างอิงสำหรับแป้งข้าวและมะพร้าวทั้งหมดของเซราบีแผ่นบางที่ทอดในกระทะ ยังไม่ทราบทิศทางหรือขนาดผลจากความต่างระหว่างถั่วอูรัดกับมะพร้าว น้ำตาลทรายแดงที่ละลายด้านหน้าคำนวณแยกโดยอ้างอิงซูโครส (GI 59)"
+          },
+          "omittedCho": 0,
+          "sources": [
+            {
+              "title": "Tan et al., rice dosa",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/29759105/",
+              "kind": "HUMAN_GI",
+              "note": "Measured GI 76 for rice and urad dosa, used as a comparator for the full serabi batter carbohydrate."
+            },
+            {
+              "title": "Jenkins et al., sucrose",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/6259925/",
+              "kind": "HUMAN_GI",
+              "note": "Jenkins et al. 1981, Table 1, sucrose, glucose reference, GI 59 (n=5). Used as a comparator for brown sugar."
+            },
+            {
+              "title": "Fineli 182",
+              "url": "https://fineli.fi/fineli/fi/elintarvikkeet/182",
+              "kind": "CARBOHYDRATE",
+              "note": "Fineli Release 20, CC BY 4.0."
+            },
+            {
+              "title": "AFCD F002987, F002991, F008969",
+              "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd",
+              "kind": "CARBOHYDRATE",
+              "note": "FSANZ Release 3, CC BY-SA 3.0 Australia."
+            }
+          ],
+          "omittedChoStressGkAtGi100": 0,
+          "suggestedRisk": "LOW",
+          "riskSignals": [],
+          "localeFields": "PRESENT",
+          "classification": {
+            "risk": "HIGH",
+            "reasons": [
+              "Riisidosan GI 76 on ehdollinen taikinaverrokki. Premixin vehnä, urad ja palmuöljy sekä serabin kookos rajoittavat siirrettävyyttä. Syväkatselmointi säilyttää korkean riskin ja matalan luottamuksen.",
+              "Ehdokkaan lähderivit yksilöivät koostumussyötteet ja tutkimuksista käytetään yksittäisiä GI-lukuja."
+            ],
+            "outcome": "READY_FOR_APPROVAL",
+            "contentChange": "GK_ONLY",
+            "review": {
+              "depth": "DEEP",
+              "evidence": "docs/nutrition/gk100-first-five-release-review.md#serabin-syväkatselmointi"
+            },
+            "contentSummary": "Ohut riisi-kookospannukakku, jonka päälle sulatetaan punnittu fariinisokeri.",
+            "candidateSha256": "8fed31af6463e8c0907a294fc12b1e0162ee5cd86b986eeec7c04bd867b4b7ad"
+          },
+          "technical": "PASS",
+          "state": "READY_FOR_APPROVAL",
+          "reason": null,
+          "ownerStatus": "PENDING",
+          "publicationAuthorized": false
+        },
+        {
+          "recipeId": "dan-dan-nuudelit",
+          "packetPath": "docs/nutrition/gk100-rescue-dan-dan-release-candidate.json",
+          "originalPath": "reseptit/paaruoat/dan-dan-nuudelit.md",
+          "supportFiles": {
+            "docs/nutrition/gk80-operation80-batch-26.md": "5e729097bc2a41e0b00ad50bb6efe57f99aaa449111d4c6c9d490f827f009c65"
+          },
+          "candidateSha256": "ad22de231e93aa7f73a3ea6217d8ffadaf10994a1ce1cc1035f016503f2ba875",
+          "originalSha256": "81db676010a87a0a2b4a9dbd081ca672659fec2027fc82237b8bc606c3f34664",
+          "inputSha256": "c77a28ecc5d6b3beffebb1fe107ee31cc7e5793322e5e5f3016a61b14265e3f1",
+          "servings": 4,
+          "method": "A",
+          "point": null,
+          "range": {
+            "min": 18.52555,
+            "max": 24.9784
+          },
+          "uncertainty": "NAMED_SCENARIOS",
+          "limitation": {
+            "fi": "Alempi arvio koskee 300 g:aa tuoretta udonia (GI-verrokki 48,2), ylempi 300 g:aa kuivaa Hakubaku Somenia (GI-verrokki 46). Molemmat määrät punnitaan ennen keittämistä ja verrokit mitattiin kypsinä. Pois jää 0,195 g etikan hiilihydraattia annosta kohti sekä valinnainen paksoilisuke. Valkosipuli, kevätsipuli, soija ja seesamitahna käyttävät laskentakoodeja.",
+            "en": "The lower estimate uses 300 g fresh udon (comparator GI 48.2), and the upper uses 300 g dry Hakubaku Somen (comparator GI 46). Both amounts are weighed before cooking and the comparators were measured cooked. Vinegar contributes 0.195 g carbohydrate per serving outside the calculation. The optional pak choi side is excluded. Garlic, spring onion, soy sauce and sesame paste use assigned GI codes.",
+            "sv": "Den lägre uppskattningen gäller 300 g färsk udon (jämförelse-GI 48,2), den högre 300 g torr Hakubaku Somen (jämförelse-GI 46). Båda mängderna vägs före kokning och jämförelsenudlarna mättes kokta. Vinägerns 0,195 g kolhydrat per portion och det valfria tillbehöret pak choi utelämnas. Vitlök, salladslök, soja och sesampasta använder tilldelade GI-koder.",
+            "th": "ค่าต่ำใช้เส้นอุด้งสด 300 กรัม (GI อ้างอิง 48.2) ค่าสูงใช้เส้นโซเม็งแห้ง Hakubaku 300 กรัม (GI อ้างอิง 46) ชั่งเส้นทั้งสองแบบก่อนต้ม ส่วนค่าอ้างอิงวัดจากเส้นที่ต้มแล้ว ไม่นับคาร์โบไฮเดรตจากน้ำส้มสายชู 0.195 กรัมต่อที่และผักกวางตุ้งฮ่องเต้ที่เป็นเครื่องเคียงเสริม กระเทียม ต้นหอม ซีอิ๊ว และงาบดใช้รหัส GI ที่กำหนดเพื่อการคำนวณ"
+          },
+          "omittedCho": 0.195,
+          "sources": [
+            {
+              "title": "Kim et al.",
+              "url": "https://doi.org/10.1017/S0007114518003446",
+              "kind": "HUMAN_GI",
+              "note": "Kim et al. 2019, Table 3, fresh wheat noodles, glucose reference, GI 48.2."
+            },
+            {
+              "title": "Yang et al.",
+              "url": "https://www.wjgnet.com/1007-9327/full/v12/i21/3430-T2.htm",
+              "kind": "HUMAN_GI",
+              "note": "Yang et al. 2006, Table 2, dried wheat noodles, glucose reference, GI 46 (n=10). Article CC BY-NC 4.0. One reported GI value is cited as a factual input to an independent calculation."
+            },
+            {
+              "title": "MEXT, 日本食品標準成分表（八訂）増補2023年, 01038",
+              "url": "https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=1_01038_7&MODE=7",
+              "kind": "CARBOHYDRATE",
+              "note": "Fresh udon, 50.1 g per 100 g."
+            },
+            {
+              "title": "Hakubaku",
+              "url": "https://hakubaku.com.au/product/somen/",
+              "kind": "CARBOHYDRATE",
+              "note": "Dry somen, 71.2 g per 100 g."
+            },
+            {
+              "title": "Lee Kum Kee",
+              "url": "https://www.webstaurantstore.com/documents/nutrition/137lkk004240_ps_1300520042_pure_sesame_paste_317oz.pdf",
+              "kind": "CARBOHYDRATE",
+              "note": "Available carbohydrate by difference."
+            },
+            {
+              "title": "Heng Shun",
+              "url": "https://mamahuhu.ee/en/e-shop/products/chinkiang-aadikas-hengshun-550ml",
+              "kind": "CARBOHYDRATE",
+              "note": "Vinegar 5.2 g per 100 ml."
+            },
+            {
+              "title": "Jenkins et al.",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/6259925/",
+              "kind": "HUMAN_GI",
+              "note": "Jenkins et al. 1981, Table 1, peanuts, glucose reference, GI 13 (n=5)."
+            },
+            {
+              "title": "Fineli",
+              "url": "https://fineli.fi/fineli/fi/ohje/19",
+              "kind": "CARBOHYDRATE",
+              "note": "CC BY 4.0."
+            },
+            {
+              "title": "AFCD",
+              "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd",
+              "kind": "CARBOHYDRATE",
+              "note": "CC BY-SA 3.0 Australia."
+            },
+            {
+              "title": "GI coding method",
+              "url": "https://doi.org/10.2337/dc08-1239",
+              "kind": "PUBLISHED_CODING",
+              "note": "Vegetable code."
+            },
+            {
+              "title": "Low carbohydrate food coding",
+              "url": "https://doi.org/10.1016/j.jfca.2007.02.004",
+              "kind": "PUBLISHED_CODING",
+              "note": "Soy sauce and sesame paste."
+            }
+          ],
+          "omittedChoStressGkAtGi100": 0.195,
+          "suggestedRisk": "MEDIUM",
+          "riskSignals": [
+            "NAMED_SCENARIO_RANGE",
+            "CHO_OMITTED",
+            "ASSIGNED_GI"
+          ],
+          "localeFields": "PRESENT",
+          "classification": {
+            "risk": "MEDIUM",
+            "reasons": [
+              "Väli kuvaa kahta tuotetta ja niiden eri CHO-määriä. Nuudelien GI:t ovat verrokkeja ja kastikkeessa käytetään laskentakoodeja. Etikasta jää pois 0,195 g CHO/annos.",
+              "Ehdokkaan lähderivit yksilöivät koostumussyötteet ja tutkimuksista käytetään yksittäisiä GI-lukuja."
+            ],
+            "outcome": "OWNER_DECISION",
+            "contentChange": "GK_ONLY",
+            "review": {
+              "depth": "FOCUSED",
+              "evidence": "docs/nutrition/gk80-operation80-batch-26.md ja ehdokaspaketin nelikielinen rajaus."
+            },
+            "contentSummary": "Valitaan tuore udon tai kuiva Hakubaku Somen. Molemmissa 300 g ennen keittämistä. Valinnainen paksoi rajataan erilleen.",
+            "candidateSha256": "ad22de231e93aa7f73a3ea6217d8ffadaf10994a1ce1cc1035f016503f2ba875"
+          },
+          "technical": "PASS",
+          "state": "OWNER_DECISION",
+          "reason": null,
+          "ownerStatus": "PENDING",
+          "publicationAuthorized": false
+        },
+        {
+          "recipeId": "japanilainen-soba-aamiaiskeitto",
+          "packetPath": "docs/nutrition/gk80-operation80-soba-release-candidate.json",
+          "originalPath": "reseptit/aamupalat/japanilainen-soba-aamiaiskeitto.md",
+          "supportFiles": {
+            "docs/nutrition/gk80-operation80-batch-27.md": "79ae0b220de0b0bc0049be460bc028f6faff1a3082f3c17ce41e41bf15228b72"
+          },
+          "candidateSha256": "7196b4361e648d9a8d8c66dad87477d79bafdee02f42bab6496f80febb9e9a81",
+          "originalSha256": "d27d97d6e7b065df3372970275ed3e4525910e98d5e780d4d208e536086b0273",
+          "inputSha256": "dc748e59443cf208db242969aa579c43b2d96f3f2e7f5ca1a64f0581e0df4d8f",
+          "servings": 2,
+          "method": "A",
+          "point": 20.4311,
+          "range": null,
+          "uncertainty": "LOW_CONFIDENCE_POINT",
+          "limitation": {
+            "fi": "Arvio koskee Muso NDL030 -täystattarisobaa, siivilöityä bonito-dashia ja Aneto Natural Low Sodium -kanalientä. GI 59,6 on anjovisliemessä tarjotun keitetyn tattarinuudelin verrokki. Liemistä jää pois 0,90 g hiilihydraattia annosta kohti. Pinaatin ja munan GI-arvot ovat laskentakoodeja.",
+            "en": "This estimate uses Muso NDL030 100% buckwheat soba, strained bonito dashi and Aneto Natural Low Sodium Chicken Broth. GI 59.6 comes from a cooked buckwheat noodle comparator served in anchovy broth. The broths contribute 0.90 g carbohydrate per serving outside the calculation. Spinach and egg use assigned GI codes.",
+            "sv": "Uppskattningen gäller Muso NDL030 soba av 100 % bovete, silad bonitodashi och Aneto Natural Low Sodium kycklingbuljong. GI 59,6 kommer från kokta bovetenudlar serverade i ansjovisbuljong. Buljongernas 0,90 g kolhydrat per portion utelämnas. Spenat och ägg använder tilldelade GI-koder.",
+            "th": "ค่าประมาณนี้ใช้โซบะบักวีต 100% Muso NDL030 ดาชิโบนิโตที่กรองแล้ว และน้ำซุปไก่โซเดียมต่ำ Aneto ค่า GI 59.6 อ้างอิงเส้นบักวีตต้มที่เสิร์ฟในน้ำซุปปลาแอนโชวี ไม่นับคาร์โบไฮเดรตจากน้ำซุป 0.90 กรัมต่อที่ ผักโขมและไข่ใช้รหัส GI ที่กำหนดเพื่อการคำนวณ"
+          },
+          "omittedCho": 0.8999999999999999,
+          "sources": [
+            {
+              "title": "Kim et al., Tables 1 and 3",
+              "url": "https://doi.org/10.1017/S0007114518003446",
+              "kind": "HUMAN_GI",
+              "note": "Kim et al. 2019, Tables 1 and 3. Buckwheat noodles boiled in water and served in anchovy broth, glucose reference, GI 59.6 (n=13)."
+            },
+            {
+              "title": "Muso NDL030",
+              "url": "https://muso-intl.com/wp-content/uploads/2026/01/NDL030-ORGANIC-100-BUCKWHEAT-SOBA-WEB.pdf",
+              "kind": "CARBOHYDRATE",
+              "note": "68.2 g/100 g dry."
+            },
+            {
+              "title": "MEXT, 日本食品標準成分表（八訂）増補2023年, 17019",
+              "url": "https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=17_17019_6",
+              "kind": "CARBOHYDRATE",
+              "note": "0.2 g/100 g prepared bonito stock."
+            },
+            {
+              "title": "Aneto",
+              "url": "https://www.caldoaneto.com/en/product/wellness-broths/natural-low-sodium-chicken-broth",
+              "kind": "CARBOHYDRATE",
+              "note": "0.2 g/100 ml."
+            },
+            {
+              "title": "Fineli 858",
+              "url": "https://fineli.fi/fineli/fi/elintarvikkeet/858",
+              "kind": "CARBOHYDRATE",
+              "note": "THL Fineli CC BY 4.0."
+            },
+            {
+              "title": "Fineli 33456",
+              "url": "https://fineli.fi/fineli/fi/elintarvikkeet/33456",
+              "kind": "CARBOHYDRATE",
+              "note": "THL Fineli CC BY 4.0."
+            },
+            {
+              "title": "Vegetable GI coding",
+              "url": "https://doi.org/10.2337/dc08-1239",
+              "kind": "PUBLISHED_CODING",
+              "note": "Assigned spinach code 40."
+            },
+            {
+              "title": "Low carbohydrate food coding",
+              "url": "https://doi.org/10.1016/j.jfca.2007.02.004",
+              "kind": "PUBLISHED_CODING",
+              "note": "Assigned egg code 50."
+            }
+          ],
+          "omittedChoStressGkAtGi100": 0.8999999999999999,
+          "suggestedRisk": "MEDIUM",
+          "riskSignals": [
+            "CHO_OMITTED",
+            "ASSIGNED_GI"
+          ],
+          "localeFields": "PRESENT",
+          "classification": {
+            "risk": "MEDIUM",
+            "reasons": [
+              "GI 59,6 koskee anjovisliemessä tarjottua keitettyä tattarinuudelia. Kahden liemen poisjättö on yhteensä 0,90 g CHO/annos. Pinaatille ja munalle käytetään laskentakoodeja.",
+              "Ehdokkaan lähderivit yksilöivät koostumussyötteet ja tutkimuksista käytetään yksittäisiä GI-lukuja."
+            ],
+            "outcome": "OWNER_DECISION",
+            "contentChange": "GK_ONLY",
+            "review": {
+              "depth": "FOCUSED",
+              "evidence": "docs/nutrition/gk80-operation80-batch-27.md ja ehdokaspaketin nelikielinen rajaus."
+            },
+            "contentSummary": "Valitaan Muso NDL030 -täystattarisoba, siivilöity bonito-dashi ja Aneto Natural Low Sodium -kanaliemi.",
+            "candidateSha256": "7196b4361e648d9a8d8c66dad87477d79bafdee02f42bab6496f80febb9e9a81"
+          },
+          "technical": "PASS",
+          "state": "OWNER_DECISION",
+          "reason": null,
+          "ownerStatus": "PENDING",
+          "publicationAuthorized": false
+        }
+      ],
+      "manifestSha256": "b496e4523fd9e981d35b3c8e5bb423b9f9f509303179ff38b077d8422ea80992"
+    },
+    "decisions": {
+      "schemaVersion": 1,
+      "manifestSha256": "b496e4523fd9e981d35b3c8e5bb423b9f9f509303179ff38b077d8422ea80992",
+      "records": [
+        {
+          "recipeId": "jiaozi",
+          "candidateSha256": "6660ce5dbf2690ccb89c9da125a8c3ea00a6703a57ef92d33241a7f207932d9c",
+          "originalSha256": "07659418c6a8ccbdcf907be2d09896db714fb40a1f9aebfbbc6df662dfe7e9d5",
+          "inputSha256": "3d1b37529fbbff7f44466563d346117d471cd7c608f67f5c367e089eeaa3c384",
+          "decision": "APPROVE",
+          "evidence": "https://github.com/ozirix-dev/Reseptit/pull/233#issuecomment-6615764475"
+        },
+        {
+          "recipeId": "chow-mein",
+          "candidateSha256": "190fcd3422ebe04dee0a22d65d13ebca83c1de240e78898286fb75727623edf4",
+          "originalSha256": "3e9d6ed75ef531708f84720de20aa4fc8d40122f0fdd81c6a6f609d34cbab9c2",
+          "inputSha256": "b6da7ccfffc9ad98b24a150e1f4a9cfe8232bd3d945663ac8165c79aeacac672",
+          "decision": "APPROVE",
+          "evidence": "https://github.com/ozirix-dev/Reseptit/blob/d7fe3644aaf1adaf6b69b6923f47fa02345b890a/docs/nutrition/gk100-first-five-review.md"
+        },
+        {
+          "recipeId": "indonesialainen-serabi-kookospannukakku",
+          "candidateSha256": "8fed31af6463e8c0907a294fc12b1e0162ee5cd86b986eeec7c04bd867b4b7ad",
+          "originalSha256": "3c3948cb2d5e7092f203c3656f023a9c041066c4a364c624c1dea7ed82f8de70",
+          "inputSha256": "ca717b0c224ad5f4b299af9912a658f7f3b61fd6b9a6e13f1dec3bcabf98c50e",
+          "decision": "APPROVE",
+          "evidence": "https://github.com/ozirix-dev/Reseptit/blob/d7fe3644aaf1adaf6b69b6923f47fa02345b890a/docs/nutrition/gk100-first-five-review.md"
+        },
+        {
+          "recipeId": "dan-dan-nuudelit",
+          "candidateSha256": "ad22de231e93aa7f73a3ea6217d8ffadaf10994a1ce1cc1035f016503f2ba875",
+          "originalSha256": "81db676010a87a0a2b4a9dbd081ca672659fec2027fc82237b8bc606c3f34664",
+          "inputSha256": "c77a28ecc5d6b3beffebb1fe107ee31cc7e5793322e5e5f3016a61b14265e3f1",
+          "decision": "APPROVE",
+          "evidence": "https://github.com/ozirix-dev/Reseptit/pull/233#issuecomment-6615764475"
+        },
+        {
+          "recipeId": "japanilainen-soba-aamiaiskeitto",
+          "candidateSha256": "7196b4361e648d9a8d8c66dad87477d79bafdee02f42bab6496f80febb9e9a81",
+          "originalSha256": "d27d97d6e7b065df3372970275ed3e4525910e98d5e780d4d208e536086b0273",
+          "inputSha256": "dc748e59443cf208db242969aa579c43b2d96f3f2e7f5ca1a64f0581e0df4d8f",
+          "decision": "APPROVE",
+          "evidence": "https://github.com/ozirix-dev/Reseptit/pull/233#issuecomment-6615764475"
+        }
+      ]
+    },
+    "recipeIds": [
+      "jiaozi",
+      "chow-mein",
+      "indonesialainen-serabi-kookospannukakku",
+      "dan-dan-nuudelit",
+      "japanilainen-soba-aamiaiskeitto"
+    ],
+    "expectedCoverageDelta": 5,
+    "publicationAuthorized": false,
+    "bundleSha256": "b8eee1b76d02bfa8aaf46aeb9cf17c1b9b5800a3f7559c3188d55269c9ef251c"
+  },
+  "authorization": {
+    "schemaVersion": 1,
+    "bundleSha256": "b8eee1b76d02bfa8aaf46aeb9cf17c1b9b5800a3f7559c3188d55269c9ef251c",
+    "evidence": "Omistajan 4.11.2026 antama nimenomainen julkaisuvaltuutus PR:ien #239 ja #240 kaikille 23 GK-versiolle. Tämä valtuutus koskee PR #239:n 5 versiota ja tarkisteella yksilöityä pakettia."
+  }
+}
