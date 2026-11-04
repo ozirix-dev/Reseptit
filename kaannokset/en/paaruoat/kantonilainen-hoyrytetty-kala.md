@@ -58,20 +58,21 @@ fat_per_serving_g: 9.04
 
 # Cantonese steamed fish with ginger
 
-Steamed white fish is finished with hot ginger-onion oil and soy sauce, which bring out the flavor of the fish.
+Steamed white fish is finished with hot ginger and spring onion oil and soy sauce, which bring out the flavor of the fish.
 
 ## Description
 
-Steamed white fish is finished with hot ginger-onion oil and soy sauce, which bring out the flavor of the fish.
+Steamed white fish is finished with hot ginger and spring onion oil and soy sauce, which bring out the flavor of the fish.
 
 ## Preparation
 
 1. Place the fish on a heat-resistant plate and spread half of the ginger on top.
-2. Steam in a covered steamer for about 8–12 minutes, depending on the thickness of the fillet, until the fish is cooked through and breaks easily.
+2. Steam in a covered steamer for about 8–12 minutes, depending on the thickness of the fillet, until the fish is cooked through and flakes easily.
 3. Pour off the liquid accumulated on the plate. Place the spring onion and the rest of the ginger on top of the fish.
-4. Heat the oil in a small pot until hot but not smoking. Carefully pour it over the ginger and onion.
+4. Heat the oil in a small pot until hot but not smoking. Carefully pour it over the ginger and spring onion.
 5. Spoon over the soy sauce and water. Serve immediately with lime and rice.
 
 ## Notes
 
 - When pouring hot oil, use a container with high edges and protect your hands from splashes.
+- Zander and cod can be used instead of pollock. The listed nutrition values are based on pollock.
