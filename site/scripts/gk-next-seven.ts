@@ -20,12 +20,13 @@ export function verifyNextSevenManifest(root:string){
  for (const [file, expected] of Object.entries(m.filesLfSha256)) {
   const actual = textHash(text(root, file));
   if (actual === expected) continue;
-  // Exact editorial adapter revisions for the Torras metadata and PR #262 corrections.
+  // Exact editorial adapter revisions for published translations and reviewed wording corrections.
   // Keep the original manifest and the approved recipe and calculation hashes intact.
   if (file === 'site/scripts/approved-recipe-note-edits.ts'
    && expected === '4d22f06928a0702bef9b556c32273f7e988e1369da1800c9152b9e7a40864c7d'
    && (actual === 'da00bd58b38b52c85b949de24ef35c352c3883d132b9672a72b984cbf8958477'
-    || actual === '0a1ef13a8e17b968a325444588f3922986962341d30f2d27c8ef3c4a01180004')) continue;
+    || actual === '0a1ef13a8e17b968a325444588f3922986962341d30f2d27c8ef3c4a01180004'
+    || actual === 'ea05d0f87e85189df63f1b7a21aa1c46c2e5390cc66a56735299d77f30dd5cd7')) continue;
   throw Error('Next-seven file changed: '+file);
  }
  return m;

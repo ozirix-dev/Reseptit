@@ -85,13 +85,13 @@ Khao kha moo är griskött som stuvas länge i en kryddig buljong. I denna lågk
 
 ## Beskrivning
 
-Den milda bräseringen gör fläskmagen mör och låter kryddorna krydda hela buljongen. Maten är lämplig att laga dagen innan.
+Den milda bräseringen gör fläskbogen mör och låter kryddorna krydda hela buljongen. Maten är lämplig att laga dagen innan.
 
 ## Tillagning
 
-1. Bryn fläskbitarna i en panna på alla sidor. Ställ åt sidan en stund.
+1. Bryn fläskbitarna i en gryta på alla sidor. Ställ åt sidan en stund.
 2. Lägg vitlök, kinesisk femkrydda, kanel och stjärnanis i grytan. Fräs i cirka 30 sekunder.
-3. Häll i kycklingfonden. Tillsätt sojasås, fisksås och erytritol. Lägg tillbaka fläsket i grytan.
+3. Häll i kycklingbuljongen. Tillsätt sojasås, fisksås och erytritol. Lägg tillbaka fläsket i grytan.
 4. Täck med lock och låt sjuda på mycket låg värme i ca 2,5 timme eller tills köttet är mjukt.
 5. Tillsätt de skalade kokta äggen de sista 20 minuterna. Ta bort fläsket och äggen från buljongen.
 6. Koka eller ånga kinakål snabbt. Hetta upp blomkålsriset i en panna.
