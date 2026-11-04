@@ -512,8 +512,9 @@ test('approved GK-only versions are explicit on every existing locale page and c
    assert.ok(html.includes(t.scope));assert.ok(html.includes(t.low));assert.ok(html.includes(gkScopeUi[recipe.locale].macroNotice));assert.ok(html.includes('data-nutrition-scope="ORIGINAL_RECIPE"'));assert.ok(html.includes('data-macro-separation="gk-only"'));assert.ok(html.includes(gkOnlyValue(variant,recipe.locale)));
    assert.ok(!html.includes('class="recipe-glycemic-load"'),'original unsupported version is not relabeled');
    if(variant.scenarioRange)assert.ok(html.includes(t.range));if(variant.sensitivity)assert.ok(html.includes(t.sensitivityNote));
-   const addedEnglishPage = recipe.locale === "en" && ["keto-mutakakku", "keto-suklaakeksit"].includes(recipe.recipeId);
-   if (!addedEnglishPage) pages++;
+   const addedTorrasPage = (recipe.locale === "en" && ["keto-mutakakku", "keto-suklaakeksit"].includes(recipe.recipeId))
+     || (recipe.recipeId === "keto-mutakakku" && (recipe.locale === "sv" || recipe.locale === "th"));
+   if (!addedTorrasPage) pages++;
   }
  }
  const releases=loadAuthorizedGk100Variants(path.resolve(import.meta.dirname,'../..'));
