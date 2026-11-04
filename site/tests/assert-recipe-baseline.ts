@@ -50,7 +50,7 @@ export function assertRecipeBaseline(root: string, baseline: string, ...protecte
         encoding: "utf8",
       });
       const current = readFileSync(path.join(root, file), "utf8").replaceAll("\r\n", "\n");
-      assert.equal(current, translated, change);
+      assert.equal(current, translated.replace("\nsource_recipe:", "\nsource_language: fi\nsource_recipe:"), change);
     } else {
       assert.equal(draft?.data.status, "draft", change);
     }

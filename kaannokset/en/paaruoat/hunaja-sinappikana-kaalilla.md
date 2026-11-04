@@ -52,6 +52,7 @@ carbs_total_per_serving_g: 15.53
 protein_per_serving_g: 30.86
 fat_per_serving_g: 11.91
 translation_of: hunaja-sinappikana-kaalilla
+source_language: fi
 source_recipe: reseptit/paaruoat/hunaja-sinappikana-kaalilla.md
 ---
 

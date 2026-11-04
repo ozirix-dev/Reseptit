@@ -52,6 +52,7 @@ carbs_total_per_serving_g: 45.86
 protein_per_serving_g: 7.79
 fat_per_serving_g: 12.36
 translation_of: indialainen-poha-maapahkinoilla
+source_language: fi
 source_recipe: reseptit/aamupalat/indialainen-poha-maapahkinoilla.md
 ---
 
