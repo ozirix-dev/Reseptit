@@ -31,7 +31,7 @@ ingredients:
   - amount: 250
     unit: g
     item: musslor
-    note: rengöras
+    note: rengjorda
   - amount: 200
     unit: g
     item: räkor
@@ -46,8 +46,8 @@ ingredients:
     note: tunt skivad
   - amount: 2
     unit: st
-    item: en vitlöksklyfta
-    note: strimlad
+    item: vitlöksklyftor
+    note: hackade
   - amount: 400
     unit: g
     item: krossade tomater
@@ -92,9 +92,9 @@ Provensalsk fisksoppa är smaksatt med tomat, fänkål och saffran. Servera med 
 ## Tillagning
 
 1. Fräs löken och fänkålen i olivolja i en kastrull i ca 8 minuter. Tillsätt vitlök och timjan.
-2. Tillsätt krossade tomater, fiskfond och saffran. Koka.
+2. Tillsätt krossade tomater, fiskbuljong och saffran. Koka upp.
 3. Tillsätt potatisen och koka i ca 15 minuter tills den nästan är mjuk.
-4. Lägg i fiskbitarna och musslorna. Täck över och koka i 5 minuter. Tillsätt räkorna och fortsätt koka tills fisken är genomstekt och musslorna har öppnat sig. Kassera oöppnade musslor.
+4. Lägg i fiskbitarna och musslorna. Täck över och koka i 5 minuter. Tillsätt räkorna och fortsätt koka tills fisken är genomkokt och musslorna har öppnat sig. Kassera oöppnade musslor.
 5. Servera soppan med rostat bröd.
 
 ## Anteckningar

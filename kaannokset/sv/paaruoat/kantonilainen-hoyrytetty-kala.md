@@ -66,10 +66,10 @@ fat_per_serving_g: 9.04
 
 ## Tillagning
 
-1. Lägg fisken på en värmetålig plåt och fördela hälften av ingefäran ovanpå.
-2. Ånga i täckt ångkokare i ca 8–12 minuter, beroende på filéns tjocklek, tills fisken är genomstekt och lätt går sönder.
-3. Häll av vätskan som samlats på plattan. Lägg vårlöken och resten av ingefäran ovanpå fisken.
-4. Hetta upp oljan i en liten gryta tills den är varm men inte ryker. Häll det försiktigt över ingefäran och löken.
+1. Lägg fisken på en värmetålig tallrik och fördela hälften av ingefäran ovanpå.
+2. Ånga i täckt ångkokare i ca 8–12 minuter, beroende på filéns tjocklek, tills fisken är genomkokt och lätt delar sig i lameller.
+3. Häll av vätskan som samlats på tallriken. Lägg vårlöken och resten av ingefäran ovanpå fisken.
+4. Hetta upp oljan i en liten gryta tills den är varm men inte ryker. Häll det försiktigt över ingefäran och vårlöken.
 5. Skeda över sojasåsen och vattnet. Servera genast med lime och ris.
 
 ## Anteckningar

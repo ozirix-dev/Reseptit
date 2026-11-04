@@ -46,8 +46,8 @@ ingredients:
     note: thinly sliced
   - amount: 2
     unit: piece
-    item: a clove of garlic
-    note: shredded
+    item: garlic cloves
+    note: chopped
   - amount: 400
     unit: g
     item: crushed tomatoes
@@ -92,7 +92,7 @@ Provençal fish soup is flavored with tomato, fennel and saffron. Serve with toa
 ## Preparation
 
 1. Sauté the onion and fennel in olive oil in a pot for about 8 minutes. Add garlic and thyme.
-2. Add crushed tomatoes, fish stock and saffron. Boil.
+2. Add crushed tomatoes, fish stock and saffron. Bring to a boil.
 3. Add the potatoes and cook for about 15 minutes until they are almost soft.
 4. Add the fish pieces and mussels. Cover and cook for 5 minutes. Add the shrimp and continue cooking until the fish is cooked through and the mussels have opened. Discard unopened mussels.
 5. Serve the soup with toasted bread.
