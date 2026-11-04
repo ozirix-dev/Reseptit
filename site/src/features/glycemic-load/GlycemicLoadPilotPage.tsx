@@ -3,6 +3,7 @@ import {GkOnlyVariantPanel,gkOnlyUi,gkScopeUi} from '../recipes/GkOnlyVariantPan
 import {scopedPolyolDisclosure} from '../recipes/scoped-polyol-disclosure';
 import {recoveryDisclosure} from '../recipes/recovery-disclosure';
 import {formatGlycemicLoadNumber} from '../recipes/gk80-format';
+import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { glycemicLoadPilotReviewedRecipeCount, glycemicLoadPilotResults } from "@/generated/glycemic-load-pilot.generated";
 import { recipeLocaleFromPath } from "@/features/recipes/recipe-i18n";
@@ -53,13 +54,28 @@ const sources = [
 ];
 
 export function GlycemicLoadPilotPage() {
-  const locale = recipeLocaleFromPath(useLocation().pathname);
+  const location = useLocation();
+  const locale = recipeLocaleFromPath(location.pathname);
+  const [search, setSearch] = useState("");
+  const [showCalculatedOnly, setShowCalculatedOnly] = useState(false);
   const text = copy[locale];
 
   const numberLocale = { fi: "fi-FI", en: "en-GB", sv: "sv-SE", th: "th-TH" }[locale];
   const number = new Intl.NumberFormat(numberLocale, { maximumSignificantDigits: 1, minimumSignificantDigits: 1 });
   const modelled = { fi: "Mallinnettu", en: "Modeled", sv: "Modellerad", th: "ค่าประมาณจากแบบจำลอง" }[locale];
   const displayNumber = (v:number, modeled:boolean) => formatGlycemicLoadNumber(v,numberLocale,modeled);
+  const ux = {
+    fi: { title: "Löydä reseptin GK-arvio", description: "Hae reseptin nimellä tai avaa sen tarkemmat lähteet. Laskettu arvo on arvio, ei verensokerimittaus.", search: "Hae reseptiä", placeholder: "Kirjoita reseptin nimi…", only: "Näytä vain GK-arvion sisältävät", matches: "Hakutuloksia", empty: "Yhtään sopivaa reseptiä ei löytynyt.", method: "Tarkat laskentamenetelmät ja tutkimuslähteet", variants: "Reseptikohtaiset arviot ja lähteet", background: "Mitä laskennan kattavuus tarkoittaa?", guidance: "GK-arvio on saatavilla sekä alkuperäisille että erikseen hyväksytyille muokatuille reseptiversioille. Muokattua versiota ei saa sekoittaa alkuperäiseen.", note: "Arviot perustuvat raaka-aineisiin ja annoskokoihin. Niistä ei voi päätellä yksittäisen ihmisen verensokerivastetta." },
+    en: { title: "Find a recipe's glycemic load", description: "Search by recipe name and open detailed sources as needed. The value is an estimate, not a glucose measurement.", search: "Search recipes", placeholder: "Enter a recipe name…", only: "Show recipes with a calculated GL", matches: "Matching recipes", empty: "No matching recipes found.", method: "Detailed calculation methods and scientific sources", variants: "Recipe estimates and sources", background: "What does calculation coverage mean?", guidance: "Estimates include original recipes and separately approved modified versions. A modified version must not be confused with the original.", note: "Estimates use ingredients and portion sizes. They do not predict an individual's glucose response." },
+    sv: { title: "Hitta receptets glykemiska belastning", description: "Sök på receptnamn och öppna källorna vid behov. Värdet är en uppskattning, inte en blodsockermätning.", search: "Sök recept", placeholder: "Skriv receptets namn…", only: "Visa endast recept med beräknat värde", matches: "Sökresultat", empty: "Inga recept hittades.", method: "Detaljerad beräkningsmetod och vetenskapliga källor", variants: "Receptvärden och källor", background: "Vad betyder täckningen?", guidance: "Uppskattningar finns för originalrecept och separat godkända ändrade versioner. Dessa får inte förväxlas.", note: "Uppskattningarna bygger på ingredienser och portionsstorlek, inte på en persons blodsockersvar." },
+    th: { title: "ค้นหาค่า GL ของสูตรอาหาร", description: "ค้นหาตามชื่อสูตรและเปิดดูแหล่งข้อมูลโดยละเอียดเมื่อจำเป็น ค่านี้เป็นการประมาณ ไม่ใช่ผลตรวจน้ำตาลในเลือด", search: "ค้นหาสูตรอาหาร", placeholder: "พิมพ์ชื่อสูตรอาหาร…", only: "แสดงเฉพาะสูตรที่มีค่า GL", matches: "ผลการค้นหา", empty: "ไม่พบสูตรอาหาร", method: "วิธีคำนวณและแหล่งข้อมูลวิชาการโดยละเอียด", variants: "ค่าประมาณและแหล่งข้อมูลของแต่ละสูตร", background: "ความครอบคลุมหมายถึงอะไร", guidance: "ค่าประมาณครอบคลุมสูตรต้นฉบับและสูตรที่ปรับแล้วซึ่งได้รับอนุมัติแยกต่างหาก ไม่ควรสับสนระหว่างสองแบบ", note: "ค่าประมาณคำนวณจากวัตถุดิบและปริมาณต่อหนึ่งที่ ไม่ใช่การทำนายระดับน้ำตาลในเลือดของแต่ละคน" },
+  }[locale];
+  const visibleResults = glycemicLoadPilotResults.filter((result) => {
+    if (showCalculatedOnly && result.status !== "CALCULATED" && !gkOnlyVariants.some((variant) => variant.recipeId === result.recipeId)) return false;
+    if (!search.trim()) return true;
+    const localized = result.localeRoutes[locale] ?? result.localeRoutes.fi;
+    return (localized?.title ?? result.title).toLocaleLowerCase(numberLocale).includes(search.trim().toLocaleLowerCase(numberLocale));
+  });
   const formatValue = (result: typeof glycemicLoadPilotResults[number]) => result.glycemicLoadRangePerServing
     ? `${result.assessmentType ? modelled + " " : ""}${text.about} ${displayNumber(result.glycemicLoadRangePerServing.min,!!result.assessmentType)}–${displayNumber(result.glycemicLoadRangePerServing.max,!!result.assessmentType)} ${text.perServing}`
     : result.glycemicLoadPerServing === null ? text.incomplete : `${result.assessmentType ? modelled + " " : ""}${text.about} ${displayNumber(result.glycemicLoadPerServing,!!result.assessmentType)} ${text.perServing}`;
@@ -71,14 +87,21 @@ export function GlycemicLoadPilotPage() {
         <article data-gk-coverage="original"><strong>{gkVersionCoverage.originalNumeric}</strong><span>{gkScopeUi[locale].originalCoverage}</span></article>
         <article><strong>{gkVersionCoverage.total-gkVersionCoverage.originalNumeric}</strong><span>{gkScopeUi[locale].originalMissing}</span></article>
       </div>
-      <section className="glycemic-pilot__method" id="gk-only-method"><h2>{gkOnlyUi[locale].title}</h2><p>{gkOnlyUi[locale].methodText}</p><ul data-gk-coverage="version-aware"><li><strong>{gkVersionCoverage.numericRecipes}</strong> / {gkVersionCoverage.total} — {gkOnlyUi[locale].coverage}</li><li>A: {gkVersionCoverage.originalNumeric+gkVersionCoverage.additionalA} — {gkOnlyUi[locale].aCount}</li><li>B: {gkVersionCoverage.additionalB} — {gkOnlyUi[locale].bCount}</li><li>C: {gkVersionCoverage.classOnly} — {gkOnlyUi[locale].cCount}</li><li><strong>{gkVersionCoverage.missing}</strong> — {gkScopeUi[locale].versionMissing}</li></ul></section>
-      <section className="glycemic-pilot__method" aria-labelledby="glycemic-pilot-method">
+      <details className="glycemic-pilot__method glycemic-pilot__disclosure" id="gk-only-method"><summary>{ux.background}</summary><h2>{gkOnlyUi[locale].title}</h2><p>{gkOnlyUi[locale].methodText}</p><ul data-gk-coverage="version-aware"><li><strong>{gkVersionCoverage.numericRecipes}</strong> / {gkVersionCoverage.total} — {gkOnlyUi[locale].coverage}</li><li>A: {gkVersionCoverage.originalNumeric+gkVersionCoverage.additionalA} — {gkOnlyUi[locale].aCount}</li><li>B: {gkVersionCoverage.additionalB} — {gkOnlyUi[locale].bCount}</li><li>C: {gkVersionCoverage.classOnly} — {gkOnlyUi[locale].cCount}</li><li><strong>{gkVersionCoverage.missing}</strong> — {gkScopeUi[locale].versionMissing}</li></ul><p>{ux.guidance}</p></details>
+      <details className="glycemic-pilot__method glycemic-pilot__disclosure" aria-labelledby="glycemic-pilot-method"><summary>{ux.method}</summary>
         <h2 id="glycemic-pilot-method">{text.method}</h2><p><strong>{text.formula}</strong></p><p>{text.fineli}</p><p>{text.gi}</p><p>{text.interpretation}</p><p data-method="gk80-modelled">{modelledMethod[locale]}</p>
         <h3>{text.sources}</h3><ul className="glycemic-pilot__sources">{sources.map(([title, url]) => <li key={url}><a href={url} rel="noopener noreferrer">{title}</a></li>)}</ul>
-      </section>
+      </details>
       <section className="glycemic-pilot__recipes" aria-labelledby="glycemic-pilot-recipes">
-        <h2 id="glycemic-pilot-recipes">{text.recipeDetails}</h2>
-        <ol>{glycemicLoadPilotResults.map((result) => {
+        <h2 id="glycemic-pilot-recipes">{ux.title}</h2>
+        <p>{ux.description}</p>
+        <p className="glycemic-pilot__caution">{ux.note}</p>
+        <label className="glycemic-pilot__search-label" htmlFor="gk-recipe-search">{ux.search}</label>
+        <input id="gk-recipe-search" type="search" autoComplete="off" value={search} onChange={(event) => setSearch(event.target.value)} placeholder={ux.placeholder} />
+        <label className="glycemic-pilot__filter"><input type="checkbox" checked={showCalculatedOnly} onChange={(event) => setShowCalculatedOnly(event.target.checked)} />{ux.only}</label>
+        <p className="glycemic-pilot__match-count" role="status">{ux.matches}: {visibleResults.length}</p>
+        {visibleResults.length === 0 ? <p>{ux.empty}</p> : null}
+        <ol>{visibleResults.map((result) => {
           const localized = result.localeRoutes[locale] ?? result.localeRoutes.fi;
           const confidence = result.confidence === "HIGH" ? text.high : result.confidence === "MEDIUM" ? text.medium : text.low;
           const variant=gkOnlyVariants.find(v=>v.recipeId===result.recipeId);
