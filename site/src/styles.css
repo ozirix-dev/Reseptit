@@ -196,3 +196,21 @@ button { font: inherit; }
 .chocolate-comparison > summary h2 { display: inline; font-size: 1.1rem; }
 .chocolate-comparison__body { display: grid; gap: 1rem; padding-top: .75rem; }
 .chocolate-comparison__product { display: grid; gap: .45rem; padding-top: 1rem; border-top: 1px solid var(--line); }
+
+
+/* GK method page: simple-first reading order, with technical evidence on demand. */
+.glycemic-pilot__disclosure { display: block; }
+.glycemic-pilot__disclosure > summary { cursor: pointer; color: var(--accent); font-weight: 700; font-size: 1.08rem; }
+.glycemic-pilot__disclosure > summary:focus-visible { outline: 3px solid var(--focus); outline-offset: 4px; }
+.glycemic-pilot__disclosure[open] > summary { margin-bottom: 1rem; }
+.glycemic-pilot__caution { padding: .75rem 1rem; border-left: 4px solid var(--accent); background: #eff6ef; }
+.glycemic-pilot__search-label { display: block; margin-top: 1rem; font-weight: 700; }
+#gk-recipe-search { width: 100%; padding: .75rem .9rem; border: 1px solid #9caf9f; border-radius: .65rem; font: inherit; background: white; color: inherit; }
+#gk-recipe-search:focus-visible, .glycemic-pilot__filter input:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+.glycemic-pilot__filter { display: flex; align-items: center; gap: .55rem; margin-top: .65rem; cursor: pointer; }
+.glycemic-pilot__filter input { width: 1.1rem; height: 1.1rem; accent-color: var(--accent); }
+.glycemic-pilot__match-count { color: var(--ink-soft); font-size: .92rem; }
+@media (max-width: 600px) {
+  .glycemic-pilot__summary { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .glycemic-pilot__summary article:first-child { grid-column: 1 / -1; }
+}
