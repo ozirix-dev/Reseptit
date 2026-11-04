@@ -1,0 +1,222 @@
+{
+  "recipeId": "valimerellinen-farinata-aamupalaksi",
+  "servings": 2,
+  "level": "A",
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "standalonePreparation": true,
+  "boundFiles": {
+    "reseptit/aamupalat/valimerellinen-farinata-aamupalaksi.md": "1b15fd29f9d833b84289c2d1345e27a0110c4bda7044ed6939d581ede947d237",
+    "docs/nutrition/gk80-operation80-batch-01.md": "986018a31ba494cc652e612c2ac8d3fba888846b14278732585a79e89e2ef66e"
+  },
+  "preparation": {
+    "fi": "Jauha kuivat kikherneet kuorineen. Sekoita veteen ja suolaan. Anna levätä 10 minuuttia. Paista ohuet letut öljytyllä pannulla. Jaa {{servings}} annokseen ja lisää raaka tomaatti, valutetut oliivit ja tuore rosmariini tarjoiltaessa.",
+    "en": "Grind the dried chickpeas with their skins. Mix with water and salt. Rest for 10 minutes. Cook thin pancakes in an oiled pan. Divide into {{servings}} servings and top with raw tomato, drained olives and fresh rosemary.",
+    "sv": "Mal de torkade kikärterna med skalet kvar. Blanda med vatten och salt. Låt vila i 10 minuter. Stek tunna pannkakor i en oljad panna. Fördela i {{servings}} portioner och toppa med rå tomat, avrunna oliver och färsk rosmarin.",
+    "th": "บดถั่วลูกไก่แห้งทั้งเปลือก ผสมกับน้ำและเกลือ พัก 10 นาที ทอดเป็นแผ่นบางในกระทะที่ทาน้ำมัน แบ่งเป็น {{servings}} ที่ แล้วใส่มะเขือเทศดิบ มะกอกที่สะเด็ดน้ำ และโรสแมรีสดก่อนเสิร์ฟ"
+  },
+  "limitation": {
+    "fi": "Kikherneletun GI perustuu cheela-verrokkiin. Veden ja öljyn määrät eroavat tutkimuksesta. Tomaatin GI on pienestä raakatomaattikokeesta. Rosmariinin 0,033 g hiilihydraattia annosta kohti on rajattu GK-summasta.",
+    "en": "The chickpea pancake uses cheela as a GI comparator. Water and oil amounts differ from the study. Tomato GI comes from a small raw-tomato trial. The sum excludes 0.033 g carbohydrate per serving from rosemary.",
+    "sv": "Kikärtspannkakans GI bygger på cheela som jämförelse. Mängden vatten och olja skiljer sig från studien. Tomatens GI kommer från en liten studie på rå tomat. Summan utesluter 0,033 g kolhydrat per portion från rosmarin.",
+    "th": "ค่า GI ของแผ่นถั่วลูกไก่อ้างอิงจากชีลา ปริมาณน้ำและน้ำมันต่างจากการศึกษา ค่า GI ของมะเขือเทศมาจากการทดลองขนาดเล็กที่ใช้มะเขือเทศดิบ ผลรวมไม่รวมคาร์โบไฮเดรตจากโรสแมรี 0.033 กรัมต่อหนึ่งหน่วยบริโภค"
+  },
+  "ingredients": [
+    {
+      "name": {
+        "fi": "Kuiva kokonainen kikherne",
+        "en": "Dried whole chickpeas",
+        "sv": "Torkade hela kikärter",
+        "th": "ถั่วลูกไก่แห้งทั้งเมล็ด"
+      },
+      "grams": 100,
+      "choPer100g": 38.5,
+      "gi": 42,
+      "composition": {
+        "id": "AFCD F002881",
+        "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd"
+      },
+      "giEvidence": {
+        "kind": "HUMAN_GI",
+        "url": "https://apjcn.qdu.edu.cn/3_4_1.pdf#page=2",
+        "locator": "Batra et al. Table 3, unfermented whole Bengal gram"
+      }
+    },
+    {
+      "name": {
+        "fi": "Raaka tomaatti",
+        "en": "Raw tomato",
+        "sv": "Rå tomat",
+        "th": "มะเขือเทศดิบ"
+      },
+      "grams": 100,
+      "choPer100g": 3.5,
+      "gi": 23,
+      "composition": {
+        "id": "Fineli 352",
+        "url": "https://fineli.fi/fineli/fi/elintarvikkeet/352"
+      },
+      "giEvidence": {
+        "kind": "HUMAN_GI",
+        "url": "https://edelweisspublications.com/articles/33/397/Glycemic-Index-of-Selected-Foods-in-Jamaica",
+        "locator": "Table 2; Atkinson 2021 Supplemental Table 2, row 3036",
+        "note": "Raw tomato. GI 23 ± 11, n=10, glucose reference. The figure caption and tabulated carbohydrate test dose differ."
+      }
+    },
+    {
+      "name": {
+        "fi": "Tuore rosmariini",
+        "en": "Fresh rosemary",
+        "sv": "Färsk rosmarin",
+        "th": "โรสแมรีสด"
+      },
+      "grams": 1,
+      "choPer100g": 6.6,
+      "gi": null,
+      "composition": {
+        "id": "USDA 173473",
+        "url": "https://fdc.nal.usda.gov/food-details/173473/nutrients"
+      },
+      "giEvidence": null,
+      "excludedFromGk": true
+    },
+    {
+      "name": {
+        "fi": "Valutetut vihreät oliivit",
+        "en": "Drained green olives",
+        "sv": "Avrunna gröna oliver",
+        "th": "มะกอกเขียวสะเด็ดน้ำ"
+      },
+      "grams": 25,
+      "choPer100g": 0,
+      "gi": null,
+      "composition": {
+        "id": "Fineli 34972",
+        "url": "https://fineli.fi/fineli/fi/elintarvikkeet/34972"
+      },
+      "giEvidence": null
+    },
+    {
+      "name": {
+        "fi": "Vesi",
+        "en": "Water",
+        "sv": "Vatten",
+        "th": "น้ำ"
+      },
+      "quantity": {
+        "amount": 150,
+        "unit": "ml"
+      },
+      "choPer100g": 0,
+      "grams": null
+    },
+    {
+      "name": {
+        "fi": "Neutraali paistoöljy",
+        "en": "Neutral cooking oil",
+        "sv": "Neutral stekolja",
+        "th": "น้ำมันรสกลางสำหรับทอด"
+      },
+      "quantity": {
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      "choPer100g": 0,
+      "grams": null
+    },
+    {
+      "name": {
+        "fi": "Suola maun mukaan",
+        "en": "Salt to taste",
+        "sv": "Salt efter smak",
+        "th": "เกลือตามชอบ"
+      },
+      "choPer100g": 0,
+      "grams": null
+    }
+  ],
+  "unroundedGk": "8.4875",
+  "supersedesReviewInput": "docs\\nutrition\\gk80-operation80-farinata-release-candidate.json",
+  "inputs": [
+    [
+      100,
+      38.5,
+      42
+    ],
+    [
+      100,
+      3.5,
+      23
+    ]
+  ],
+  "omissions": [
+    {
+      "choPer100g": 6.6,
+      "ingredientIndex": 2
+    }
+  ],
+  "exclusions": [
+    {
+      "ingredientIndex": 3,
+      "evidencePath": "docs/nutrition/gk80-operation80-batch-01.md",
+      "kind": "ZERO_CHO",
+      "rationale": "Fineli 34972 reports zero available carbohydrate for drained green olives."
+    },
+    {
+      "ingredientIndex": 4,
+      "evidencePath": "docs/nutrition/gk80-operation80-batch-01.md",
+      "kind": "ZERO_CHO",
+      "rationale": "Plain water."
+    },
+    {
+      "ingredientIndex": 5,
+      "evidencePath": "docs/nutrition/gk80-operation80-batch-01.md",
+      "kind": "ZERO_CHO",
+      "rationale": "Plain neutral frying oil."
+    },
+    {
+      "ingredientIndex": 6,
+      "evidencePath": "docs/nutrition/gk80-operation80-batch-01.md",
+      "kind": "ZERO_CHO",
+      "rationale": "Pure salt."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://apjcn.qdu.edu.cn/3_4_1.pdf#page=2",
+      "note": "GI 42 for the unfermented ground whole-chickpea pancake comparator.",
+      "kind": "HUMAN_GI",
+      "title": "Batra et al., Table 3"
+    },
+    {
+      "url": "https://edelweisspublications.com/articles/33/397/Glycemic-Index-of-Selected-Foods-in-Jamaica",
+      "note": "GI 23 for raw tomato.",
+      "kind": "HUMAN_GI",
+      "title": "Glycemic Index of Selected Foods in Jamaica"
+    },
+    {
+      "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd",
+      "note": "Dried whole chickpeas, 38.5 g available carbohydrate per 100 g.",
+      "kind": "CARBOHYDRATE",
+      "title": "AFCD F002881"
+    },
+    {
+      "url": "https://fineli.fi/fineli/fi/elintarvikkeet/352",
+      "note": "Raw tomato, 3.5 g carbohydrate per 100 g.",
+      "kind": "CARBOHYDRATE",
+      "title": "Fineli 352"
+    },
+    {
+      "url": "https://fdc.nal.usda.gov/food-details/173473/nutrients",
+      "note": "Rosemary, 6.6 g per 100 g after fibre subtraction.",
+      "kind": "CARBOHYDRATE",
+      "title": "USDA SR Legacy 173473"
+    },
+    {
+      "url": "https://fineli.fi/fineli/fi/elintarvikkeet/34972",
+      "note": "Drained green olives, zero available carbohydrate.",
+      "kind": "CARBOHYDRATE",
+      "title": "Fineli 34972"
+    }
+  ]
+}

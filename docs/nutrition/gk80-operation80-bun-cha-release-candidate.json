@@ -1,0 +1,306 @@
+{
+  "recipeId": "bun-cha-hanoi",
+  "servings": 4,
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "unroundedGk": "31.24609875",
+  "upperScenario": {
+    "giOverrides": [
+      {
+        "inputIndex": 0,
+        "gi": 61
+      }
+    ],
+    "unroundedGk": "45.94129875"
+  },
+  "preparation": {
+    "fi": "Jaa {{amount:3}} g kalakastiketta, {{amount:5}} g fariinisokeria, {{amount:7}} g valkosipulia, {{amount:8}} g salottisipulia ja {{amount:9}} g pippuria {{amount:1}} g:n jauhelihaerän ja {{amount:2}} g:n kylkiviipale-erän kesken. Muotoile jauheliha pihveiksi, anna lihojen maustua kylmässä 30 minuuttia ja paista läpikypsiksi. Sekoita dippiin {{amount:4}} g kalakastiketta, {{amount:12}} ml etikkaa, {{amount:6}} g sokeria, {{amount:13}} ml lämmintä vettä ja {{amount:10}} g porkkanaa. Keitä {{amount:0}} g riisivermiselliä pakkauksen mukaan ja huuhtele lyhyesti kylmällä vedellä. Jaa heti liha, nuudelit, koko dippi ja {{amount:11}} g korianteria {{servings}} annokseen.",
+    "en": "Divide {{amount:3}} g fish sauce, {{amount:5}} g brown sugar, {{amount:7}} g garlic, {{amount:8}} g shallot and {{amount:9}} g pepper between {{amount:1}} g ground pork and {{amount:2}} g pork belly slices. Shape the ground pork into patties, marinate both meats in the fridge for 30 minutes, then cook through. Mix {{amount:4}} g fish sauce, {{amount:12}} ml vinegar, {{amount:6}} g sugar, {{amount:13}} ml warm water and {{amount:10}} g carrot for the dip. Cook {{amount:0}} g rice vermicelli as directed and rinse briefly under cold water. Immediately divide the meat, noodles, all the dip and {{amount:11}} g coriander into {{servings}} servings.",
+    "sv": "Fördela {{amount:3}} g fisksås, {{amount:5}} g farinsocker, {{amount:7}} g vitlök, {{amount:8}} g schalottenlök och {{amount:9}} g peppar mellan {{amount:1}} g fläskfärs och {{amount:2}} g skivad fläsksida. Forma färsen till biffar, marinera köttet i kylen i 30 minuter och stek det genom. Blanda {{amount:4}} g fisksås, {{amount:12}} ml vinäger, {{amount:6}} g socker, {{amount:13}} ml varmt vatten och {{amount:10}} g morot till dippen. Koka {{amount:0}} g risvermicelli enligt förpackningen och skölj kort i kallt vatten. Fördela genast köttet, nudlarna, hela dippen och {{amount:11}} g koriander i {{servings}} portioner.",
+    "th": "แบ่งน้ำปลา {{amount:3}} กรัม น้ำตาลทรายแดง {{amount:5}} กรัม กระเทียม {{amount:7}} กรัม หอมแดง {{amount:8}} กรัม และพริกไทย {{amount:9}} กรัม ระหว่างหมูบด {{amount:1}} กรัมกับหมูสามชั้นหั่นบาง {{amount:2}} กรัม ปั้นหมูบดเป็นแผ่น หมักหมูทั้งสองแบบในตู้เย็น 30 นาที แล้วปรุงให้สุกทั่ว ผสมน้ำปลา {{amount:4}} กรัม น้ำส้มสายชู {{amount:12}} มล. น้ำตาล {{amount:6}} กรัม น้ำอุ่น {{amount:13}} มล. และแครอต {{amount:10}} กรัมเป็นน้ำจิ้ม ต้มเส้นหมี่ข้าว {{amount:0}} กรัมตามฉลากแล้วล้างน้ำเย็นสั้น ๆ แบ่งหมู เส้น น้ำจิ้มทั้งหมด และผักชี {{amount:11}} กรัมเป็น {{servings}} ที่ทันที"
+  },
+  "limitation": {
+    "fi": "Vaihteluväli perustuu kahteen kypsennetyn riisinuudelin GI-mittaukseen. Laskelma sisältää koko dipin ja olettaa, että kaikki marinadin hiilihydraatit päätyvät annoksiin. Siirtymää ei ole mitattu.",
+    "en": "The range uses two measured GI values for cooked rice noodles. The calculation includes all the dip and assumes that all marinade carbohydrate ends up in the servings. Transfer was not measured.",
+    "sv": "Intervallet bygger på två uppmätta GI-värden för kokta risnudlar. Beräkningen omfattar hela dippen och antar att alla kolhydrater i marinaden hamnar i portionerna. Överföringen har inte mätts.",
+    "th": "ช่วงนี้อ้างอิงค่า GI ที่วัดจากเส้นข้าวสุกสองชนิด การคำนวณรวมน้ำจิ้มทั้งหมดและสมมติว่าคาร์โบไฮเดรตทั้งหมดจากน้ำหมักอยู่ในอาหารที่เสิร์ฟ ยังไม่มีการวัดปริมาณที่ถ่ายโอน"
+  },
+  "ingredients": [
+    {
+      "name": {
+        "fi": "Kuiva riisivermiselli",
+        "en": "Dry rice vermicelli",
+        "sv": "Torr risvermicelli",
+        "th": "เส้นหมี่ข้าวแห้ง"
+      },
+      "grams": 300
+    },
+    {
+      "name": {
+        "fi": "Porsaan jauheliha",
+        "en": "Ground pork",
+        "sv": "Fläskfärs",
+        "th": "หมูบด"
+      },
+      "grams": 400
+    },
+    {
+      "name": {
+        "fi": "Porsaan kylki",
+        "en": "Pork belly",
+        "sv": "Fläsksida",
+        "th": "หมูสามชั้น"
+      },
+      "grams": 300
+    },
+    {
+      "name": {
+        "fi": "Squid Brand -kalakastike marinadiin",
+        "en": "Squid Brand fish sauce for marinade",
+        "sv": "Squid Brand-fisksås till marinad",
+        "th": "น้ำปลาตราปลาหมึกสำหรับหมัก"
+      },
+      "grams": 54
+    },
+    {
+      "name": {
+        "fi": "Squid Brand -kalakastike dippiin",
+        "en": "Squid Brand fish sauce for dip",
+        "sv": "Squid Brand-fisksås till dipp",
+        "th": "น้ำปลาตราปลาหมึกสำหรับน้ำจิ้ม"
+      },
+      "grams": 66
+    },
+    {
+      "name": {
+        "fi": "Fariinisokeri",
+        "en": "Brown sugar",
+        "sv": "Farinsocker",
+        "th": "น้ำตาลทรายแดง"
+      },
+      "grams": 24
+    },
+    {
+      "name": {
+        "fi": "Valkoinen sokeri",
+        "en": "White sugar",
+        "sv": "Vitt socker",
+        "th": "น้ำตาลทรายขาว"
+      },
+      "grams": 24
+    },
+    {
+      "name": {
+        "fi": "Valkosipuli",
+        "en": "Garlic",
+        "sv": "Vitlök",
+        "th": "กระเทียม"
+      },
+      "grams": 6
+    },
+    {
+      "name": {
+        "fi": "Salottisipuli",
+        "en": "Shallot",
+        "sv": "Schalottenlök",
+        "th": "หอมแดง"
+      },
+      "grams": 40
+    },
+    {
+      "name": {
+        "fi": "Mustapippuri",
+        "en": "Black pepper",
+        "sv": "Svartpeppar",
+        "th": "พริกไทยดำ"
+      },
+      "grams": 2.3
+    },
+    {
+      "name": {
+        "fi": "Porkkana",
+        "en": "Carrot",
+        "sv": "Morot",
+        "th": "แครอต"
+      },
+      "grams": 150
+    },
+    {
+      "name": {
+        "fi": "Korianteri",
+        "en": "Coriander",
+        "sv": "Koriander",
+        "th": "ผักชี"
+      },
+      "grams": 20
+    },
+    {
+      "name": {
+        "fi": "Maustamaton Kikkoman-riisiviinietikka",
+        "en": "Unseasoned Kikkoman rice vinegar",
+        "sv": "Okryddad Kikkoman-risvinäger",
+        "th": "น้ำส้มสายชูข้าว Kikkoman ไม่ปรุงรส"
+      },
+      "grams": null,
+      "quantity": {
+        "amount": 30,
+        "unit": "ml"
+      }
+    },
+    {
+      "name": {
+        "fi": "Lämmin vesi",
+        "en": "Warm water",
+        "sv": "Varmt vatten",
+        "th": "น้ำอุ่น"
+      },
+      "grams": null,
+      "quantity": {
+        "amount": 250,
+        "unit": "ml"
+      }
+    }
+  ],
+  "exclusions": [
+    {
+      "ingredientIndex": 12,
+      "kind": "ZERO_CHO",
+      "rationale": "The named unseasoned rice vinegar declares 0 g carbohydrate per 15 ml. The batch uses 30 ml.",
+      "evidencePath": "docs/nutrition/gk80-operation80-batch-24.md"
+    },
+    {
+      "ingredientIndex": 13,
+      "kind": "ZERO_CHO",
+      "rationale": "Plain warm water adds no carbohydrate.",
+      "evidencePath": "docs/nutrition/gk80-operation80-batch-24.md"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Ranawana et al.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/19169946/",
+      "kind": "HUMAN_GI",
+      "note": "Guilin rice vermicelli, GI 37."
+    },
+    {
+      "title": "Chan et al.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/11781674/",
+      "kind": "HUMAN_GI",
+      "note": "Cooked dried rice noodles, GI 61 in full group."
+    },
+    {
+      "title": "Jenkins et al.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/6259925/",
+      "kind": "HUMAN_GI",
+      "note": "Sucrose GI 59."
+    },
+    {
+      "title": "Fineli",
+      "url": "https://fineli.fi/fineli/fi/ohje/19",
+      "kind": "CARBOHYDRATE",
+      "note": "CC BY 4.0."
+    },
+    {
+      "title": "AFCD",
+      "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd",
+      "kind": "CARBOHYDRATE",
+      "note": "CC BY-SA 3.0 Australia."
+    },
+    {
+      "title": "USDA black pepper",
+      "url": "https://fdc.nal.usda.gov/food-details/170931/nutrients",
+      "kind": "CARBOHYDRATE",
+      "note": "Total carbohydrate minus fibre."
+    },
+    {
+      "title": "Kikkoman rice vinegar",
+      "url": "https://kikkomanusa.com/products/rice-vinegar/",
+      "kind": "CARBOHYDRATE",
+      "note": "Label declares 0 g per 15 ml."
+    },
+    {
+      "title": "Squid Brand",
+      "url": "https://www.henderson-foodservice.com/productpdf/download/file/id/9840/name/squid_brand_fish_sauce_%2812x700ml%29.pdf",
+      "kind": "CARBOHYDRATE",
+      "note": "3 g carbohydrate per 100 g."
+    },
+    {
+      "title": "GI coding method",
+      "url": "https://doi.org/10.2337/dc08-1239",
+      "kind": "PUBLISHED_CODING",
+      "note": "Vegetables and seasonings."
+    },
+    {
+      "title": "Low carbohydrate food coding",
+      "url": "https://doi.org/10.1016/j.jfca.2007.02.004",
+      "kind": "PUBLISHED_CODING",
+      "note": "Fish sauce."
+    }
+  ],
+  "inputs": [
+    [
+      300,
+      81.64,
+      37
+    ],
+    [
+      400,
+      0,
+      0
+    ],
+    [
+      300,
+      0,
+      0
+    ],
+    [
+      54,
+      3,
+      50
+    ],
+    [
+      66,
+      3,
+      50
+    ],
+    [
+      24,
+      96.8,
+      59
+    ],
+    [
+      24,
+      99.9,
+      59
+    ],
+    [
+      6,
+      10.2,
+      40
+    ],
+    [
+      40,
+      3.1,
+      40
+    ],
+    [
+      2.3,
+      38.65,
+      50
+    ],
+    [
+      150,
+      5.56,
+      40
+    ],
+    [
+      20,
+      1.9,
+      50
+    ]
+  ],
+  "boundFiles": {
+    "reseptit/paaruoat/bun-cha-hanoi.md": "c5f2ee00e21ab79683da7f45d6c97a5fc87435b8c7460fc17a2603c46146c16a",
+    "docs/nutrition/gk80-operation80-batch-24.md": "0e746e2d41467f44eccabbfb4078346fe0bcacd514767ec05112efb8139880fc"
+  }
+}

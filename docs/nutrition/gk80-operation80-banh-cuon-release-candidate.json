@@ -1,0 +1,180 @@
+{
+  "recipeId": "vietnamilainen-banh-cuon-sienilla",
+  "servings": 2,
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "unroundedGk": "35.91875",
+  "inputs": [
+    [
+      100,
+      79.3,
+      90
+    ],
+    [
+      100,
+      0.3,
+      50
+    ],
+    [
+      150,
+      0,
+      0
+    ],
+    [
+      18,
+      3,
+      50
+    ],
+    [
+      5,
+      1.9,
+      50
+    ]
+  ],
+  "ingredients": [
+    {
+      "name": {
+        "fi": "Riisijauho",
+        "en": "Rice flour",
+        "sv": "Rismjöl",
+        "th": "แป้งข้าวเจ้า"
+      },
+      "grams": 100
+    },
+    {
+      "name": {
+        "fi": "Herkkusieni",
+        "en": "Button mushrooms",
+        "sv": "Champinjoner",
+        "th": "เห็ดแชมปิญอง"
+      },
+      "grams": 100
+    },
+    {
+      "name": {
+        "fi": "Porsaanjauheliha",
+        "en": "Ground pork",
+        "sv": "Fläskfärs",
+        "th": "หมูบด"
+      },
+      "grams": 150
+    },
+    {
+      "name": {
+        "fi": "Squid Brand -kalakastike",
+        "en": "Squid Brand fish sauce",
+        "sv": "Squid Brand-fisksås",
+        "th": "น้ำปลาตราปลาหมึก"
+      },
+      "grams": 18
+    },
+    {
+      "name": {
+        "fi": "Korianteri",
+        "en": "Coriander",
+        "sv": "Koriander",
+        "th": "ผักชี"
+      },
+      "grams": 5
+    },
+    {
+      "name": {
+        "fi": "Vesi",
+        "en": "Water",
+        "sv": "Vatten",
+        "th": "น้ำ"
+      },
+      "grams": null,
+      "quantity": {
+        "amount": 250,
+        "unit": "ml"
+      }
+    },
+    {
+      "name": {
+        "fi": "Suola",
+        "en": "Salt",
+        "sv": "Salt",
+        "th": "เกลือ"
+      },
+      "grams": null
+    },
+    {
+      "name": {
+        "fi": "Voiteluöljy tarvittaessa",
+        "en": "Oil for greasing as needed",
+        "sv": "Olja till smörjning vid behov",
+        "th": "น้ำมันสำหรับทาพิมพ์ตามต้องการ"
+      },
+      "grams": null
+    }
+  ],
+  "preparation": {
+    "fi": "Sekoita {{amount:0}} g riisijauhoa ja {{amount:5}} ml vettä. Höyrytä koko taikina ohuina levyinä, voitele alusta tarvittaessa. Kypsennä {{amount:2}} g porsaanjauhelihaa läpikypsäksi ja paista {{amount:1}} g herkkusieniä. Mausta {{amount:3}} g:lla kalakastiketta ja tarvittaessa suolalla. Rullaa koko täyte levyihin, lisää {{amount:4}} g korianteria ja jaa {{servings}} annokseen.",
+    "en": "Mix {{amount:0}} g rice flour and {{amount:5}} ml water. Steam the whole batter in thin sheets, greasing the surface as needed. Cook {{amount:2}} g ground pork through and fry {{amount:1}} g mushrooms. Season with {{amount:3}} g fish sauce and salt if needed. Roll all the filling into the sheets, add {{amount:4}} g coriander and divide into {{servings}} servings.",
+    "sv": "Blanda {{amount:0}} g rismjöl och {{amount:5}} ml vatten. Ånga hela smeten i tunna ark och smörj ytan vid behov. Stek {{amount:2}} g fläskfärs helt genom och stek {{amount:1}} g champinjoner. Smaksätt med {{amount:3}} g fisksås och salt vid behov. Rulla in hela fyllningen i arken, toppa med {{amount:4}} g koriander och dela i {{servings}} portioner.",
+    "th": "ผสมแป้งข้าวเจ้า {{amount:0}} กรัมกับน้ำ {{amount:5}} มล. นึ่งแป้งทั้งหมดเป็นแผ่นบาง ทาน้ำมันที่พื้นผิวตามต้องการ ผัดหมูบด {{amount:2}} กรัมให้สุกทั่วและผัดเห็ด {{amount:1}} กรัม ปรุงด้วยน้ำปลา {{amount:3}} กรัมและเกลือตามต้องการ ม้วนไส้ทั้งหมดในแผ่นแป้ง โรยผักชี {{amount:4}} กรัมแล้วแบ่งเป็น {{servings}} ที่"
+  },
+  "limitation": {
+    "fi": "Riisilevyjen GI-verrokki on höyrytetty täyttämätön riisirulla. Taikinan koostumus voi muuttaa vastetta. Täyte lasketaan erikseen.",
+    "en": "The rice sheets use a steamed unfilled rice roll as a GI comparator. Batter composition can affect the response. The filling is calculated separately.",
+    "sv": "Risarken jämförs med en ångad risrulle utan fyllning. Smetens sammansättning kan påverka responsen. Fyllningen beräknas separat.",
+    "th": "แผ่นแป้งใช้อ้างอิงค่า GI จากแผ่นข้าวม้วนนึ่งที่ไม่มีไส้ ส่วนผสมแป้งอาจเปลี่ยนการตอบสนอง และคำนวณไส้แยกต่างหาก"
+  },
+  "exclusions": [
+    {
+      "ingredientIndex": 5,
+      "kind": "ZERO_CHO",
+      "rationale": "Plain water. Contributes no available carbohydrate.",
+      "evidencePath": "docs/nutrition/gk80-operation80-batch-46.md"
+    },
+    {
+      "ingredientIndex": 6,
+      "kind": "ZERO_CHO",
+      "rationale": "Pure salt. Contributes no available carbohydrate.",
+      "evidencePath": "docs/nutrition/gk80-operation80-batch-46.md"
+    },
+    {
+      "ingredientIndex": 7,
+      "kind": "ZERO_CHO",
+      "rationale": "Optional plain greasing oil. Contributes no available carbohydrate.",
+      "evidencePath": "docs/nutrition/gk80-operation80-batch-46.md"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Chen et al., PSVR",
+      "url": "https://www.wjgnet.com/1007-9327/full/v16/i12/1512-T2.htm",
+      "kind": "HUMAN_GI",
+      "note": "Glucose-scale GI 90 for steamed rice roll."
+    },
+    {
+      "title": "Fineli 182, 345 and 28946",
+      "url": "https://fineli.fi/fineli/fi/ohje/19",
+      "kind": "CARBOHYDRATE",
+      "note": "THL CC BY 4.0."
+    },
+    {
+      "title": "AFCD F003192",
+      "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd",
+      "kind": "CARBOHYDRATE",
+      "note": "CC BY-SA 3.0 Australia."
+    },
+    {
+      "title": "Squid Brand fish sauce",
+      "url": "https://www.henderson-foodservice.com/productpdf/download/file/id/9840/name/squid_brand_fish_sauce_%2812x700ml%29.pdf",
+      "kind": "CARBOHYDRATE",
+      "note": "3 g per 100 g."
+    },
+    {
+      "title": "Low carbohydrate coding",
+      "url": "https://doi.org/10.1016/j.jfca.2007.02.004",
+      "kind": "PUBLISHED_CODING",
+      "note": "Mushroom, fish sauce and coriander use code 50."
+    }
+  ],
+  "boundFiles": {
+    "reseptit/aamupalat/vietnamilainen-banh-cuon-sienilla.md": "54b5cf45d8eeff8a07d9c5e9bcac2e4db43d916fb594818c2cc72485aafa9385",
+    "docs/nutrition/gk80-operation80-batch-46.md": "ed8d86ce9ce6b6272fa50af7a65efe9640d7134220172982f69a34f9fa1b1781"
+  }
+}

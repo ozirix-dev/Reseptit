@@ -1,0 +1,222 @@
+{
+  "recipeId": "mapo-tofu",
+  "servings": 4,
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "unroundedGk": "33.5561",
+  "upperScenario": {
+    "giOverrides": [
+      {
+        "inputIndex": 0,
+        "gi": 90
+      }
+    ],
+    "unroundedGk": "36.7161"
+  },
+  "inputs": [
+    [
+      200,
+      79,
+      82
+    ],
+    [
+      400,
+      1.8,
+      50
+    ],
+    [
+      7,
+      16.3,
+      40
+    ],
+    [
+      10,
+      4.8,
+      50
+    ],
+    [
+      20,
+      4.6,
+      40
+    ],
+    [
+      200,
+      0,
+      0
+    ]
+  ],
+  "ingredients": [
+    {
+      "grams": 200,
+      "name": {
+        "fi": "Kuiva jasmiiniriisi",
+        "en": "Dry jasmine rice",
+        "sv": "Torrt jasminris",
+        "th": "ข้าวหอมมะลิแห้ง"
+      }
+    },
+    {
+      "grams": 400,
+      "name": {
+        "fi": "Cauldron Extra Firm -tofu",
+        "en": "Cauldron Extra Firm tofu",
+        "sv": "Cauldron Extra Firm-tofu",
+        "th": "เต้าหู้แข็งพิเศษ Cauldron"
+      }
+    },
+    {
+      "grams": 7,
+      "name": {
+        "fi": "Valkosipuli",
+        "en": "Garlic",
+        "sv": "Vitlök",
+        "th": "กระเทียม"
+      }
+    },
+    {
+      "grams": 10,
+      "name": {
+        "fi": "Inkivääri",
+        "en": "Ginger",
+        "sv": "Ingefära",
+        "th": "ขิง"
+      }
+    },
+    {
+      "grams": 20,
+      "name": {
+        "fi": "Kevätsipuli",
+        "en": "Spring onion",
+        "sv": "Salladslök",
+        "th": "ต้นหอม"
+      }
+    },
+    {
+      "grams": 200,
+      "name": {
+        "fi": "Sian jauheliha",
+        "en": "Minced pork",
+        "sv": "Fläskfärs",
+        "th": "หมูสับ"
+      }
+    },
+    {
+      "grams": 30,
+      "name": {
+        "fi": "Lee Kum Kee Toban Djan",
+        "en": "Lee Kum Kee Toban Djan",
+        "sv": "Lee Kum Kee Toban Djan",
+        "th": "เต้าเจี้ยวพริก Lee Kum Kee"
+      }
+    },
+    {
+      "grams": 2.33,
+      "name": {
+        "fi": "Maissitärkkelys",
+        "en": "Cornstarch",
+        "sv": "Majsstärkelse",
+        "th": "แป้งข้าวโพด"
+      }
+    },
+    {
+      "grams": 0.5,
+      "name": {
+        "fi": "Sichuaninpippuri",
+        "en": "Sichuan pepper",
+        "sv": "Sichuanpeppar",
+        "th": "พริกเสฉวน"
+      }
+    },
+    {
+      "grams": null,
+      "name": {
+        "fi": "Kikkoman-soijakastike",
+        "en": "Kikkoman soy sauce",
+        "sv": "Kikkoman-sojasås",
+        "th": "ซีอิ๊ว Kikkoman"
+      },
+      "quantity": {
+        "amount": 15,
+        "unit": "ml"
+      }
+    }
+  ],
+  "omissions": [
+    {
+      "ingredientIndex": 6,
+      "choPer100g": 11
+    },
+    {
+      "ingredientIndex": 7,
+      "choPer100g": 86
+    },
+    {
+      "ingredientIndex": 8,
+      "choPer100g": 100
+    },
+    {
+      "ingredientIndex": 9,
+      "choPer100ml": 3.2
+    }
+  ],
+  "preparation": {
+    "fi": "Keitä {{amount:0}} g kuivaa riisiä. Ruskista jauheliha öljyssä ja kuullota chilitahna, valkosipuli ja inkivääri. Lisää vesi, soija ja tofu, hauduta ja suurusta veteen sekoitetulla maissitärkkelyksellä. Viimeistele sichuaninpippurilla ja kevätsipulilla. Jaa tofu ja koko kypsä riisierä {{servings}} annokseen.",
+    "en": "Cook {{amount:0}} g dry rice. Brown the pork in oil and fry the chilli bean paste, garlic and ginger. Add water, soy sauce and tofu, simmer, then thicken with cornstarch mixed with water. Finish with Sichuan pepper and spring onion. Divide the tofu and all cooked rice into {{servings}} servings.",
+    "sv": "Koka {{amount:0}} g torrt ris. Bryn fläskfärsen i olja och fräs chilibönpastan, vitlöken och ingefäran. Tillsätt vatten, soja och tofu, sjud och red med majsstärkelse utrörd i vatten. Toppa med sichuanpeppar och salladslök. Dela tofun och allt kokt ris i {{servings}} portioner.",
+    "th": "หุงข้าวแห้ง {{amount:0}} กรัม ผัดหมูสับในน้ำมันให้สุก ผัดเต้าเจี้ยวพริก กระเทียม และขิง เติมน้ำ ซีอิ๊ว และเต้าหู้ เคี่ยวแล้วใส่แป้งข้าวโพดละลายน้ำ โรยพริกเสฉวนและต้นหอม แบ่งเต้าหู้และข้าวทั้งหมดเป็น {{servings}} ที่"
+  },
+  "limitation": {
+    "fi": "Vaihteluväli perustuu kahteen jasmiiniriisin GI-verrokkiin (82 ja 90) samalla riisin kuivapainolla. Tofu ja mausteet käyttävät laskentakoodeja. Pienosuuksista jää pois enintään 1,57095 g CHO/annos.",
+    "en": "The range uses two jasmine rice GI comparators (82 and 90) at the same dry rice weight. Tofu and seasonings use assigned GI codes. Up to 1.57095 g carbohydrate per serving is excluded.",
+    "sv": "Intervallet bygger på två GI-jämförelsevärden för jasminris (82 och 90) vid samma torrvikt. Tofu och kryddor använder tilldelade GI-koder. Högst 1,57095 g kolhydrat per portion ingår inte.",
+    "th": "ช่วงนี้ใช้ค่า GI ของข้าวหอมมะลิสองค่า (82 และ 90) โดยใช้น้ำหนักข้าวดิบเท่ากัน เต้าหู้และเครื่องปรุงใช้ค่า GI ตามกลุ่ม ไม่รวมคาร์โบไฮเดรตไม่เกิน 1.57095 กรัมต่อที่"
+  },
+  "sources": [
+    {
+      "title": "Jenkins",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2996336/",
+      "kind": "HUMAN_GI",
+      "note": "Cooked white rice control without added PGX."
+    },
+    {
+      "title": "Tan",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25789978/",
+      "kind": "HUMAN_GI",
+      "note": "Cooked jasmine rice human GI trial."
+    },
+    {
+      "title": "Fineli",
+      "url": "https://fineli.fi/fineli/fi/ohje/19",
+      "kind": "CARBOHYDRATE",
+      "note": "Finnish food composition data."
+    },
+    {
+      "title": "AFCD",
+      "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd",
+      "kind": "CARBOHYDRATE",
+      "note": "Australian food composition data."
+    },
+    {
+      "title": "Lee Kum Kee",
+      "url": "https://uk.lkk.com/products/chilli-bean-sauce",
+      "kind": "CARBOHYDRATE",
+      "note": "UK Toban Djan product carbohydrate declaration."
+    },
+    {
+      "title": "Kikkoman",
+      "url": "https://www.kikkoman.co.uk/products/detail/fs-kikkoman-naturally-brewed-soy-sauce",
+      "kind": "CARBOHYDRATE",
+      "note": "UK soy sauce product carbohydrate declaration."
+    },
+    {
+      "title": "Cauldron",
+      "url": "https://www.cauldronfoods.co.uk/products/extra-firm-plant-based-tofu",
+      "kind": "CARBOHYDRATE",
+      "note": "Extra Firm Plant Based Tofu carbohydrate declaration."
+    }
+  ],
+  "boundFiles": {
+    "reseptit/paaruoat/mapo-tofu.md": "13ee33643135ded5d919c1263d5d4a5017a13b55024d2d2fa109d76709591895",
+    "docs/nutrition/gk80-operation80-mapo-tofu.md": "58d6e2663d75d1b4f41c21f7c8a21931729d2d4af68cb3c1498dc1758b5731d4"
+  }
+}

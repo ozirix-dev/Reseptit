@@ -1,0 +1,149 @@
+{
+  "recipeId": "meksikolainen-paputostada-aamupalaksi",
+  "servings": 2,
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "unroundedGk": "16.638165",
+  "preparation": {
+    "fi": "Käytä kuusi valmista Saníssimo-tostadaa ({{amount:0}} g). Lämmitä {{amount:1}} g valutettuja mustapapuja. Paista {{amount:2}} g kananmunaa {{amount:4}} rkl:ssa öljyä. Kokoa tostadoille pavut, muna ja {{amount:3}} g avokadoa. Jaa {{servings}} annokseen.",
+    "en": "Use six ready-to-serve Saníssimo tostadas ({{amount:0}} g). Warm {{amount:1}} g drained black beans. Fry {{amount:2}} g egg in {{amount:4}} tbsp oil. Top the tostadas with beans, egg and {{amount:3}} g avocado. Divide into {{servings}} portions.",
+    "sv": "Använd sex färdiga Saníssimo-tostadas ({{amount:0}} g). Värm {{amount:1}} g avrunna svarta bönor. Stek {{amount:2}} g ägg i {{amount:4}} msk olja. Lägg bönor, ägg och {{amount:3}} g avokado på tostadasen. Dela i {{servings}} portioner.",
+    "th": "ใช้แผ่นตอสตาดาซานิสซิโมสำเร็จรูปหกแผ่น ({{amount:0}} กรัม) อุ่นถั่วดำสะเด็ดน้ำ {{amount:1}} กรัม ทอดไข่ {{amount:2}} กรัมในน้ำมัน {{amount:4}} ช้อนโต๊ะ วางถั่ว ไข่ และอะโวคาโด {{amount:3}} กรัมบนแผ่น แบ่งเป็น {{servings}} ส่วน"
+  },
+  "limitation": {
+    "fi": "Tostadan GI-verrokki on keltaisesta maissista. Mustapavun verrokista ei ole varmistettu säilykevalmistusta.",
+    "en": "The tostada GI comparator used yellow maize. Canning was not confirmed for the black bean comparator.",
+    "sv": "GI-jämförelsen för tostadan gäller gul majs. Det är oklart om de svarta bönorna i jämförelsen var konserverade.",
+    "th": "ค่า GI ของแผ่นตอสตาดาอ้างอิงจากข้าวโพดสีเหลือง ยังไม่ยืนยันว่าถั่วดำที่ใช้เปรียบเทียบเป็นถั่วกระป๋อง"
+  },
+  "ingredients": [
+    {
+      "grams": 72,
+      "name": {
+        "fi": "Saníssimo Tostadas Maíz",
+        "en": "Saníssimo Tostadas Maíz",
+        "sv": "Saníssimo Tostadas Maíz",
+        "th": "Saníssimo Tostadas Maíz"
+      }
+    },
+    {
+      "grams": 150,
+      "name": {
+        "fi": "Valutetut mustapavut",
+        "en": "Drained black beans",
+        "sv": "Avrunna svarta bönor",
+        "th": "ถั่วดำสะเด็ดน้ำ"
+      }
+    },
+    {
+      "grams": 110,
+      "name": {
+        "fi": "Kananmuna ilman kuorta",
+        "en": "Shelled egg",
+        "sv": "Ägg utan skal",
+        "th": "ไข่ไม่รวมเปลือก"
+      }
+    },
+    {
+      "grams": 120,
+      "name": {
+        "fi": "Avokadon hedelmäliha",
+        "en": "Avocado flesh",
+        "sv": "Avokadokött",
+        "th": "เนื้ออะโวคาโด"
+      }
+    },
+    {
+      "grams": null,
+      "name": {
+        "fi": "Neutraali paistoöljy",
+        "en": "Neutral cooking oil",
+        "sv": "Neutral stekolja",
+        "th": "น้ำมันรสกลางสำหรับทอด"
+      },
+      "quantity": {
+        "amount": 1,
+        "unit": "tbsp"
+      }
+    }
+  ],
+  "exclusions": [
+    {
+      "ingredientIndex": 4,
+      "kind": "ZERO_CHO",
+      "rationale": "Plain neutral frying oil contributes no available carbohydrate.",
+      "evidencePath": "docs/nutrition/gk80-operation80-batch-07.md"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Saníssimo, Tostadas Maíz, p. 13",
+      "url": "https://nutricionappsc-com-assets.s3.amazonaws.com/2024-04/DossierSanissimo_0.pdf",
+      "kind": "CARBOHYDRATE",
+      "note": "73.8 g available carbohydrate per 100 g, 12 g per piece."
+    },
+    {
+      "title": "Padilla Pavón et al.",
+      "url": "https://www.revistasan.org.ar/pdf_files/trabajos/vol_20/num_3/RSAN_20_3_88.pdf",
+      "kind": "HUMAN_GI",
+      "note": "Yellow nixtamalized corn tostada, GI 53, n=6."
+    },
+    {
+      "title": "Atkinson et al., Supplemental Table 2, row 3085",
+      "url": "https://nutritotal.com.br/pro/wp-content/uploads/sites/3/2021/09/Tabela2_IG.pdf",
+      "kind": "HUMAN_GI",
+      "note": "Black beans GI 31, converted from a bread reference. Canning not established."
+    },
+    {
+      "title": "Fineli 35638",
+      "url": "https://fineli.fi/fineli/fi/elintarvikkeet/35638",
+      "kind": "CARBOHYDRATE",
+      "note": "THL Fineli CC BY 4.0."
+    },
+    {
+      "title": "Fineli 858",
+      "url": "https://fineli.fi/fineli/fi/elintarvikkeet/858",
+      "kind": "CARBOHYDRATE",
+      "note": "THL Fineli CC BY 4.0."
+    },
+    {
+      "title": "Fineli 11057",
+      "url": "https://fineli.fi/fineli/fi/elintarvikkeet/11057",
+      "kind": "CARBOHYDRATE",
+      "note": "THL Fineli CC BY 4.0."
+    },
+    {
+      "title": "Assigned low-carbohydrate coding",
+      "url": "https://doi.org/10.1016/j.jfca.2007.02.004",
+      "kind": "B_CODING",
+      "note": "Egg and avocado use assigned GI 50."
+    }
+  ],
+  "inputs": [
+    [
+      72,
+      73.8,
+      53
+    ],
+    [
+      150,
+      9.65,
+      31
+    ],
+    [
+      110,
+      0.3,
+      50
+    ],
+    [
+      120,
+      0.77,
+      50
+    ]
+  ],
+  "boundFiles": {
+    "reseptit/aamupalat/meksikolainen-paputostada-aamupalaksi.md": "57e8193e7457a63d270b53386c030f2b905225b851e93c7c86941aa9e27aba5b",
+    "docs/nutrition/gk80-operation80-batch-07.md": "83487a3ee674a8a4ca1965e1a2c912f7feb9d68e16e985e923ce7c17d503967a"
+  },
+  "supersedesReviewInput": "docs/nutrition/gk80-operation80-tostada-release-candidate.json"
+}

@@ -1,0 +1,137 @@
+{
+  "recipeId": "intialainen-idli-kookoschutneylla",
+  "servings": 2,
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "unroundedGk": "26.54997",
+  "mealGi": 60,
+  "researchRevision": "IFCT B003 (51 g/100 g) replaces TRS label value (57 g/100 g). Prior result: 26.83797; reduction 0.288 GK per serving. The original research snapshot remains bound.",
+  "preparation": {
+    "fi": "Liota riisit ja urad noin viisi tuntia. Jauha riisit karkeaksi ja urad hienoksi. Sekoita ja fermentoi yön yli. Höyrytä pienissä öljytyissä vuoissa kypsäksi. Jauha kookos ja sinapinsiemen chutneyksi veden ja halutessasi suolan kanssa. Jaa {{servings}} annokseen.",
+    "en": "Soak the rice and urad for about five hours. Grind the rice coarsely and the urad finely. Mix and ferment overnight. Steam until cooked in small greased moulds. Grind coconut and mustard seed with water and optional salt for the chutney. Divide into {{servings}} portions.",
+    "sv": "Blötlägg riset och uradbönorna i cirka fem timmar. Mal riset grovt och uradbönorna fint. Blanda och fermentera över natten. Ångkoka i små smorda formar. Mal kokos och senapsfrö med vatten och eventuellt salt till chutneyn. Dela i {{servings}} portioner.",
+    "th": "แช่ข้าวและถั่วอูรัดประมาณห้าชั่วโมง บดข้าวหยาบและบดถั่วอูรัดละเอียด ผสมแล้วหมักข้ามคืน นึ่งในพิมพ์เล็กทาน้ำมันจนสุก บดมะพร้าวและเมล็ดมัสตาร์ดกับน้ำและเกลือตามชอบเป็นชัทนีย์ แบ่งเป็น {{servings}} ส่วน"
+  },
+  "limitation": {
+    "fi": "GI on mitattu idli–chutney-aterialle, jonka chutneyssa oli myös kikhernettä, chiliä ja korianteria. Tässä chutney perustuu kookokseen ja sinapinsiemeneen.",
+    "en": "GI was measured for an idli and chutney meal whose chutney also contained chickpeas, chilli and coriander. This chutney uses coconut and mustard seed.",
+    "sv": "GI uppmättes för en måltid med idli och chutney som även innehöll kikärter, chili och koriander. Den här chutneyn bygger på kokos och senapsfrö.",
+    "th": "ค่า GI วัดจากมื้ออิดลีกับชัทนีย์ที่มีถั่วลูกไก่ พริก และผักชี สูตรนี้ใช้มะพร้าวและเมล็ดมัสตาร์ด"
+  },
+  "ingredients": [
+    {
+      "grams": 80,
+      "name": {
+        "fi": "Kuiva valkoinen riisi",
+        "en": "Dry white rice",
+        "sv": "Torrt vitt ris",
+        "th": "ข้าวขาวแห้ง"
+      }
+    },
+    {
+      "grams": 20,
+      "name": {
+        "fi": "Kuiva parboiled-riisi",
+        "en": "Dry parboiled rice",
+        "sv": "Torrt parboiledris",
+        "th": "ข้าวนึ่งแห้ง"
+      }
+    },
+    {
+      "grams": 16,
+      "name": {
+        "fi": "Kuiva kuorittu urad dal",
+        "en": "Dry hulled urad dal",
+        "sv": "Torkad skalad urad dal",
+        "th": "ถั่วอูรัดแห้งกะเทาะเปลือก"
+      }
+    },
+    {
+      "grams": 27,
+      "name": {
+        "fi": "Tuore kookosliha",
+        "en": "Fresh coconut flesh",
+        "sv": "Färskt kokoskött",
+        "th": "เนื้อมะพร้าวสด"
+      }
+    },
+    {
+      "grams": 2,
+      "name": {
+        "fi": "Jauhettu sinapinsiemen",
+        "en": "Ground mustard seed",
+        "sv": "Malet senapsfrö",
+        "th": "เมล็ดมัสตาร์ดบด"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Urooj and Puttaraj, Table 5",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/10953672/",
+      "kind": "HUMAN_GI",
+      "note": "GI 60 for idli and chutney in healthy participants."
+    },
+    {
+      "title": "Fineli 11521",
+      "url": "https://fineli.fi/fineli/fi/elintarvikkeet/11521",
+      "kind": "CARBOHYDRATE",
+      "note": "CC BY 4.0."
+    },
+    {
+      "title": "Matvaretabellen parboiled rice",
+      "url": "https://www.matvaretabellen.no/en/rice-white-parboiled-long-grain-uncooked/",
+      "kind": "CARBOHYDRATE",
+      "note": "75.7 g per 100 g."
+    },
+    {
+      "title": "IFCT B003",
+      "url": "https://www.nin.res.in/ebooks/IFCT2017_16122024.pdf",
+      "kind": "CARBOHYDRATE",
+      "note": "51 g per 100 g dry hulled black gram dal."
+    },
+    {
+      "title": "USDA 170169",
+      "url": "https://fdc.nal.usda.gov/food-details/170169/nutrients",
+      "kind": "CARBOHYDRATE",
+      "note": "Total carbohydrate minus fibre."
+    },
+    {
+      "title": "USDA 170929",
+      "url": "https://fdc.nal.usda.gov/food-details/170929/nutrients",
+      "kind": "CARBOHYDRATE",
+      "note": "Total carbohydrate minus fibre."
+    }
+  ],
+  "inputs": [
+    [
+      80,
+      79,
+      60
+    ],
+    [
+      20,
+      75.7,
+      60
+    ],
+    [
+      16,
+      51,
+      60
+    ],
+    [
+      27,
+      6.23,
+      60
+    ],
+    [
+      2,
+      15.89,
+      60
+    ]
+  ],
+  "boundFiles": {
+    "reseptit/aamupalat/intialainen-idli-kookoschutneylla.md": "8659de7c543284d790fbc4dab4ac0fa29b30e83fd53008679849a54572abceed",
+    "docs/nutrition/gk80-operation80-batch-09.md": "6af49cfce9ffc21977a1fc676c23468ae7ccfff82590dbc7a4eb0e3cd7c2bf0f"
+  }
+}
