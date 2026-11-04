@@ -512,8 +512,9 @@ test('approved GK-only versions are explicit on every existing locale page and c
    assert.ok(html.includes(t.scope));assert.ok(html.includes(t.low));assert.ok(html.includes(gkScopeUi[recipe.locale].macroNotice));assert.ok(html.includes('data-nutrition-scope="ORIGINAL_RECIPE"'));assert.ok(html.includes('data-macro-separation="gk-only"'));assert.ok(html.includes(gkOnlyValue(variant,recipe.locale)));
    assert.ok(!html.includes('class="recipe-glycemic-load"'),'original unsupported version is not relabeled');
    if(variant.scenarioRange)assert.ok(html.includes(t.range));if(variant.sensitivity)assert.ok(html.includes(t.sensitivityNote));
-   const addedEnglishPage = recipe.locale === "en" && ["keto-mutakakku", "keto-suklaakeksit"].includes(recipe.recipeId);
-   if (!addedEnglishPage) pages++;
+   const addedTorrasPage = (recipe.locale === "en" && ["keto-mutakakku", "keto-suklaakeksit"].includes(recipe.recipeId))
+     || (recipe.recipeId === "keto-mutakakku" && (recipe.locale === "sv" || recipe.locale === "th"));
+   if (!addedTorrasPage) pages++;
   }
  }
  const releases=loadAuthorizedGk100Variants(path.resolve(import.meta.dirname,'../..'));
@@ -524,6 +525,25 @@ test('approved GK-only versions are explicit on every existing locale page and c
   const html=await readFile(path.join(dist,p,'index.html'),'utf8');assert.ok(html.replaceAll('<!-- -->','').includes(`data-gk-coverage="version-aware"><li><strong>${gkVersionCoverage.numericRecipes}</strong> / ${gkVersionCoverage.total}`));assert.ok(html.includes(`<strong>${gkVersionCoverage.missing}</strong>`));assert.ok(html.includes('data-gk-coverage="version-aware"'));assert.ok(html.includes('data-gk-coverage="original"'));assert.ok(html.includes('<strong>156</strong>'));assert.ok(html.includes('<strong>170</strong>'));
   for(const v of gkOnlyVariants)assert.ok(html.includes(`data-gk-version="${v.versionId}"`));
  }
+});
+
+test("Swedish and Thai keto mud cake show only the approved modified GL and its sources", async () => {
+  const variant = gkOnlyVariants.find((entry) => entry.recipeId === "keto-mutakakku");
+  assert.ok(variant);
+  for (const [locale, route] of [["sv", "sv/recept"], ["th", "th/recipes"]] as const) {
+    const html = await readFile(path.join(dist, route, "keto-mutakakku", "index.html"), "utf8");
+    const panel: string | undefined = html.match(new RegExp(`<section[^>]*data-gk-version="${variant.versionId}"[^>]*>([\\s\\S]*?)</section>`))?.[1];
+    assert.ok(panel, locale);
+    assert.ok(panel.includes(gkCopy[locale].modified));
+    assert.ok(panel.includes(gkScopeUi[locale].originalMissing));
+    assert.ok(panel.includes(gkOnlyValue(variant, locale)));
+    assert.ok(panel.includes(gkCopy[locale].sources));
+    assert.ok(panel.includes("gk-evidence__technical"));
+    for (const { url } of variant.sources.filter(({ url }) => url.startsWith("https://"))) {
+      assert.ok(panel.includes(`href="${url.replaceAll("&", "&amp;")}"`), `${locale}: ${url}`);
+    }
+    assert.ok(!html.includes('class="recipe-glycemic-load"'));
+  }
 });
 
 test("all three English Torras comparisons are present with both products", async () => {
