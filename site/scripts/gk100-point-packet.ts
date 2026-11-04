@@ -2,7 +2,7 @@ import type { GkOnlyVariant, LocalizedText } from '../src/features/recipes/gk-on
 import { textHash } from './gk149-model';
 
 const locales = ['fi', 'en', 'sv', 'th'] as const;
-export type PointReviewCandidate = {
+export type PointReviewBase = {
   recipeId: string;
   servings: number;
   reviewState: string;
@@ -10,6 +10,11 @@ export type PointReviewCandidate = {
   boundFiles: Record<string, string>;
   preparation: LocalizedText;
   limitation: LocalizedText;
+  ingredients: GkOnlyVariant['ingredients'];
+};
+
+export type PointReviewCandidate = PointReviewBase & {
+  method?: never;
   unroundedGk: string;
   exclusions?: { ingredientIndex: number; kind: 'ZERO_CHO' | 'ALREADY_COUNTED'; rationale: string; evidencePath: string }[];
   omissions?: ({ ingredientIndex: number } & ({ choPer100ml: number } | { choPer100g: number }))[];
@@ -20,7 +25,6 @@ export type PointReviewCandidate = {
     choOverrides?: { inputIndex: number; cho: number; gi?: number }[];
   };
   inputs: [amount: number, choPer100: number, gi: number, unit?: 'ml'][];
-  ingredients: GkOnlyVariant['ingredients'];
   sources: GkOnlyVariant['sources'];
 };
 
@@ -46,11 +50,9 @@ const legacyExclusions: Record<string, NonNullable<PointReviewCandidate['exclusi
   ],
 };
 
-export function parsePointReviewVariant(raw: string, read: (file: string) => string): GkOnlyVariant {
-  const c: PointReviewCandidate = JSON.parse(raw);
+export function validatePointReview(c: PointReviewBase, read: (file: string) => string) {
   if (c.reviewState !== 'PREPARED_FOR_REVIEW' || c.publicationAuthorized !== false
       || !Number.isInteger(c.servings) || c.servings <= 0
-      || c.inputs.length === 0 || c.inputs.length > c.ingredients.length
       || Object.keys(c.boundFiles).length !== 2) throw Error('Invalid GK point review: ' + c.recipeId);
   for (const [file, hash] of Object.entries(c.boundFiles)) {
     if (textHash(read(file)) !== hash) throw Error('GK point binding changed: ' + file);
@@ -75,6 +77,14 @@ export function parsePointReviewVariant(raw: string, read: (file: string) => str
       }
     }
   }
+}
+
+export function parsePointReviewVariant(raw: string, read: (file: string) => string): GkOnlyVariant {
+  const c: PointReviewCandidate = JSON.parse(raw);
+  if (Object.hasOwn(c, 'method') || c.inputs.length === 0 || c.inputs.length > c.ingredients.length) {
+    throw Error('Invalid GK point review: ' + c.recipeId);
+  }
+  validatePointReview(c, read);
   const point = c.inputs.reduce((sum, [amount, cho, gi, unit], index) => {
     const ingredient = c.ingredients[index];
     const boundAmount = unit === 'ml' && ingredient.grams === null && ingredient.quantity?.unit === 'ml'
