@@ -1,0 +1,156 @@
+{
+  "recipeId": "vietnamilainen-banh-xeo-aamiaisletut",
+  "servings": 2,
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "unroundedGk": "31.76344",
+  "preparation": {
+    "fi": "Sekoita {{amount:0}} g riisijauhoa, {{amount:1}} g kookosmaitoa ja {{amount:2}} g kurkumaa. Paista ohuiksi rapeiksi letuiksi öljytyllä pannulla. Kypsennä erikseen {{amount:3}} g raakoja kuorittuja katkarapuja kauttaaltaan. Keitä mungpavunidut, jäähdytä vedessä, valuta ja punnitse {{amount:4}} g kypsiä ituja. Lisää katkaravut ja idut letuille ja jaa {{servings}} annokseen.",
+    "en": "Mix {{amount:0}} g rice flour, {{amount:1}} g coconut milk and {{amount:2}} g turmeric. Fry thin, crisp pancakes in an oiled pan. Separately cook {{amount:3}} g raw peeled prawns thoroughly. Boil the mung bean sprouts, cool in water, drain and weigh {{amount:4}} g cooked sprouts. Fill with the prawns and sprouts and divide into {{servings}} portions.",
+    "sv": "Blanda {{amount:0}} g rismjöl, {{amount:1}} g kokosmjölk och {{amount:2}} g gurkmeja. Stek tunna, frasiga pannkakor i en oljad panna. Tillaga {{amount:3}} g råa skalade räkor separat tills de är genomkokta. Koka mungbönsgroddarna, kyl dem i vatten, låt rinna av och väg upp {{amount:4}} g kokta groddar. Fyll med räkor och groddar och dela i {{servings}} portioner.",
+    "th": "ผสมแป้งข้าวเจ้า {{amount:0}} กรัม กะทิ {{amount:1}} กรัม และขมิ้น {{amount:2}} กรัม ทอดเป็นแผ่นบางกรอบในกระทะทาน้ำมัน ปรุงกุ้งดิบปอกเปลือก {{amount:3}} กรัมแยกให้สุกทั่ว ต้มถั่วงอกถั่วเขียว แช่น้ำให้เย็น สะเด็ดน้ำ แล้วชั่งถั่วงอกสุก {{amount:4}} กรัม ใส่กุ้งและถั่วงอกเป็นไส้ แบ่งเป็น {{servings}} ส่วน"
+  },
+  "limitation": {
+    "fi": "Taikinan GI-verrokki on urad-papua sisältävä riisidosa. Bánh xèon kookosmaito ja rapeus voivat muuttaa vastetta. Keitetyistä ja valutetuista iduista jää laskennan ulkopuolelle 0,44 g imeytyvää hiilihydraattia annosta kohti. Koetaikina sisälsi myös vehnäjauhoa ja paistettiin gheessä.",
+    "en": "The batter comparator is rice dosa made with urad dal. Coconut milk and crispness may change the response. The calculation omits 0.44 g available carbohydrate per portion from boiled, drained sprouts. The test batter also contained wheat flour and was cooked in ghee.",
+    "sv": "Smeten jämförs med risdosa som innehåller uradbönor. Kokosmjölken och den frasiga konsistensen kan påverka svaret. Beräkningen utelämnar 0,44 g tillgängliga kolhydrater per portion från kokta, avrunna groddar. Testsmeten innehöll också vetemjöl och stektes i ghee.",
+    "th": "แป้งใช้โดซาข้าวที่มีถั่วอูรัดเป็นตัวเปรียบเทียบ กะทิและความกรอบอาจเปลี่ยนการตอบสนอง การคำนวณไม่นับคาร์โบไฮเดรตที่ย่อยได้ 0.44 กรัมต่อส่วนจากถั่วงอกต้มและสะเด็ดน้ำ แป้งที่ใช้ในการทดสอบมีแป้งสาลีด้วยและทอดด้วยเนยกี"
+  },
+  "ingredients": [
+    {
+      "grams": 100,
+      "name": {
+        "fi": "Riisijauho",
+        "en": "Rice flour",
+        "sv": "Rismjöl",
+        "th": "แป้งข้าวเจ้า"
+      }
+    },
+    {
+      "grams": 200,
+      "name": {
+        "fi": "Täysrasvainen tölkkikookosmaito",
+        "en": "Full-fat canned coconut milk",
+        "sv": "Fet kokosmjölk på burk",
+        "th": "กะทิกระป๋อง"
+      }
+    },
+    {
+      "grams": 2,
+      "name": {
+        "fi": "Jauhettu kurkuma",
+        "en": "Ground turmeric",
+        "sv": "Malen gurkmeja",
+        "th": "ขมิ้นผง"
+      }
+    },
+    {
+      "grams": 150,
+      "name": {
+        "fi": "Raa’at kuoritut katkaravut",
+        "en": "Raw peeled prawns",
+        "sv": "Råa skalade räkor",
+        "th": "กุ้งดิบปอกเปลือก"
+      }
+    },
+    {
+      "grams": 80,
+      "name": {
+        "fi": "Keitetyt ja valutetut mungpavunidut",
+        "en": "Boiled and drained mung bean sprouts",
+        "sv": "Kokta och avrunna mungbönsgroddar",
+        "th": "ถั่วงอกถั่วเขียวต้มและสะเด็ดน้ำ"
+      }
+    },
+    {
+      "grams": null,
+      "name": {
+        "fi": "Paistoöljy",
+        "en": "Cooking oil",
+        "sv": "Stekolja",
+        "th": "น้ำมันสำหรับทอด"
+      }
+    },
+    {
+      "grams": null,
+      "name": {
+        "fi": "Suola",
+        "en": "Salt",
+        "sv": "Salt",
+        "th": "เกลือ"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Tan et al., rice dosa",
+      "url": "https://doi.org/10.1017/S0007114518000703",
+      "kind": "HUMAN_GI",
+      "note": "Table 4, glucose-scale GI 76 for the rice dosa; preparation analogue for all batter carbohydrate, applied once."
+    },
+    {
+      "title": "Fineli 182",
+      "url": "https://fineli.fi/fineli/fi/elintarvikkeet/182",
+      "kind": "CARBOHYDRATE",
+      "note": "THL Fineli CC BY 4.0."
+    },
+    {
+      "title": "AFCD F002991, F009335, F007422",
+      "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd",
+      "kind": "CARBOHYDRATE",
+      "note": "FSANZ Release 3, CC BY-SA 3.0 Australia."
+    },
+    {
+      "title": "MEXT 日本食品標準成分表（八訂）増補2023年, 06292",
+      "url": "https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=6_06292_7&MODE=7",
+      "kind": "CARBOHYDRATE",
+      "note": "Estimated available carbohydrate mass sum 1.1 g per 100 g boiled, water-cooled, drained edible mung bean sprouts."
+    }
+  ],
+  "inputs": [
+    [
+      100,
+      79.3,
+      76
+    ],
+    [
+      200,
+      1.7,
+      76
+    ],
+    [
+      2,
+      44.4,
+      76
+    ],
+    [
+      150,
+      0,
+      0
+    ]
+  ],
+  "boundFiles": {
+    "reseptit/aamupalat/vietnamilainen-banh-xeo-aamiaisletut.md": "bd4fbd1c77bd3d5383e5986c71bc87e5b2c0c0fd6ac1faa8b660b300b7b2136d",
+    "docs/nutrition/gk100-banh-xeo-cooked-sprouts-review.md": "dcd2fac295e89362242fe6cdb5e8b49eb4103636bb7fc73c22a7ef3f8d964c77"
+  },
+  "exclusions": [
+    {
+      "ingredientIndex": 5,
+      "kind": "ZERO_CHO",
+      "rationale": "Plain cooking oil contributes zero available carbohydrate.",
+      "evidencePath": "docs/nutrition/gk100-banh-xeo-cooked-sprouts-review.md"
+    },
+    {
+      "ingredientIndex": 6,
+      "kind": "ZERO_CHO",
+      "rationale": "Pure salt contributes zero available carbohydrate.",
+      "evidencePath": "docs/nutrition/gk100-banh-xeo-cooked-sprouts-review.md"
+    }
+  ],
+  "omissions": [
+    {
+      "ingredientIndex": 4,
+      "choPer100g": 1.1
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "batchId": "gk100-evidence-recovery-v2",
+  "candidates": [
+    {
+      "recipeId": "vietnamilainen-banh-xeo-aamiaisletut",
+      "packetPath": "docs/nutrition/gk100-banh-xeo-cooked-sprouts-release-candidate.json",
+      "classification": {
+        "candidateSha256": "b20eaaa350956226f66e2c322ed0fbf2da773bc0fbb67a488111a18df161bfb0",
+        "risk": "HIGH",
+        "reasons": [
+          "Keitetty itutäyte on määrältään ja koostumukseltaan sidottu. Taikinaverrokin urad ja kookosmaidon vaikutus vaativat syväkatselmoinnin."
+        ],
+        "contentChange": "GK_ONLY",
+        "contentSummary": "80 g keitettyjä ja valutettuja mungpavunituja kahdelle.",
+        "outcome": "REVIEW_REQUIRED"
+      }
+    }
+  ]
+}
