@@ -7,7 +7,6 @@ from __future__ import annotations
 
 import argparse
 from contextlib import closing
-import ctypes
 import errno
 import hashlib
 import json
@@ -136,9 +135,11 @@ def _create_index_file(temporary: str, destination: Path) -> None:
         os.link(temporary, destination)
         return
     except OSError as exc:
-        if exc.errno not in {errno.EPERM, errno.ENOSYS, errno.ENOTSUP}:
+        if exc.errno not in {errno.EPERM, errno.ENOSYS, errno.ENOTSUP, errno.EOPNOTSUPP}:
             raise
         # Some filesystems support exclusive rename but lack hard links.
+        import ctypes
+
         libc = ctypes.CDLL(None, use_errno=True)
         source, target = os.fsencode(temporary), os.fsencode(destination)
         if sys.platform == "linux" and hasattr(libc, "renameat2"):
