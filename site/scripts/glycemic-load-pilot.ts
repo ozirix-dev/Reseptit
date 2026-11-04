@@ -203,9 +203,6 @@ const outputPath = path.join(outputDir, "glycemic-load-pilot.json");
 await writeFile(outputPath, JSON.stringify(report, null, 2) + "\n");
 const isFixtureBuild = process.env.RECIPE_SOURCE_ROOT !== undefined;
 const publicResults = results.flatMap((result) => {
-  // This recipe already has a dedicated central-page explanation for why its
-  // earlier provisional total is withheld; keep its ingredient audit internal.
-  if (result.recipeId === "maksalaatikko-kukkakaalilla") return [];
   const recipe = siteContent.recipes.find((entry) => entry.recipeId === result.recipeId && entry.locale === "fi");
   if (!recipe) {
     // Image-pipeline tests build a tiny one-recipe fixture. Keep that build
@@ -214,6 +211,24 @@ const publicResults = results.flatMap((result) => {
     if (isFixtureBuild) return [];
     throw new Error(`Finnish published recipe is missing for GL pilot item: ${result.recipeId}`);
   }
+  const recipeIdentity = {
+    recipeId: result.recipeId,
+    title: recipe.title,
+    routePath: recipe.routePath,
+    localeRoutes: Object.fromEntries(siteContent.recipes.filter((entry) => entry.recipeId === result.recipeId).map((entry) => [entry.locale, { title: entry.title, routePath: entry.routePath }])),
+  };
+  // Include this recipe in search while keeping its ingredient audit internal.
+  if (result.recipeId === "maksalaatikko-kukkakaalilla") return {
+    ...recipeIdentity,
+    status: "INSUFFICIENT SOURCE DATA",
+    glycemicLoadPerServing: null,
+    glycemicLoadRangePerServing: null,
+    omittedAvailableCarbohydratePerServingG: 0,
+    confidence: null,
+    incompleteReasons: [],
+    carbohydrateSources: [],
+    sourceReferences: [],
+  };
   const sourceReferences: Array<{ title: string; url: string; matchKind: "EXACT" | "ANALOG" | "CATEGORY_MEAN" | "CALCULATION_POLICY"; confidence: "HIGH" | "MEDIUM" | "LOW"; evidenceKind?: "HUMAN_GI" | "PUBLISHED_IMPUTATION"; applicationKind?: "DIRECT" | "FOOD_ANALOGUE" | "PUBLISHED_IMPUTATION"; note: string }> = result.status === "CALCULATED"
     ? [...new Set(result.ingredients.flatMap((ingredient) => ingredient.giRecordId ? [ingredient.giRecordId] : []))]
       .map((recordId) => giRecords.find((record) => record.id === recordId))
@@ -252,10 +267,7 @@ const publicResults = results.flatMap((result) => {
     return { ingredientIndex, ingredientNames, category };
   });
   return {
-    recipeId: result.recipeId,
-    title: recipe.title,
-    routePath: recipe.routePath,
-    localeRoutes: Object.fromEntries(siteContent.recipes.filter((entry) => entry.recipeId === result.recipeId).map((entry) => [entry.locale, { title: entry.title, routePath: entry.routePath }])),
+    ...recipeIdentity,
     status: result.status,
     incompleteReasons,
     glycemicLoadPerServing: result.glycemicLoadPerServing,
@@ -270,7 +282,10 @@ const publicResults = results.flatMap((result) => {
       .map((recordId) => foodRecords.find((record) => record.id === recordId))
       .filter((record): record is FoodRecord => record !== undefined)
       .map((record) => ({
-        title: record.name,
+        // Repair legacy Fineli label encoding in the public citation only.
+        title: record.id.startsWith("fineli-")
+          ? record.name.replaceAll("Ã¤", "ä").replaceAll("Ã¶", "ö").replaceAll("Ã„", "Ä")
+          : record.name,
         url: record.sourceUrl,
         note: record.id.startsWith("afcd-")
           ? "Available-carbohydrate value from AFCD Release 3; FSANZ attribution and CC BY-SA 3.0 Australia terms apply."
@@ -279,7 +294,7 @@ const publicResults = results.flatMap((result) => {
     sourceReferences,
   };
 });
-const expectedPublicResultCount = expectedRecipeIds.length - 1;
+const expectedPublicResultCount = expectedRecipeIds.length;
 if (!isFixtureBuild && publicResults.length !== expectedPublicResultCount) {
   throw new Error(`Production GL pilot page must include all ${expectedPublicResultCount} publishable entries.`);
 }

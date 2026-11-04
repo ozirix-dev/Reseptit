@@ -115,7 +115,6 @@ test("GK values link to centralized recipe details on every published translatio
   const audit = JSON.parse(await readFile(path.resolve(import.meta.dirname, "../../tmp/nutrition/glycemic-load-pilot.json"), "utf8")) as {
     results: Array<{ recipeId: string; status: "CALCULATED" | "INSUFFICIENT SOURCE DATA"; glycemicLoadPerServing: number | null; omittedAvailableCarbohydratePerServingG: number; ingredients: Array<{ availableCarbohydratePerServingG: number | null; gi: number | null; fineliRecordId: string | null; giRecordId: string | null }> }>;
   };
-  const publicAuditResults = audit.results.filter((result) => result.recipeId !== "maksalaatikko-kukkakaalilla");
   const reviewedRecipeIds = new Set(audit.results.map((result) => result.recipeId));
   assert.equal(reviewedRecipeIds.size, audit.results.length, "reviewed recipes stay unique");
   assert.equal(glycemicLoadPilotReviewedRecipeCount, reviewedRecipeIds.size);
@@ -128,9 +127,9 @@ test("GK values link to centralized recipe details on every published translatio
   assert.equal(lasagneAuditRows[0]?.glycemicLoadPerServing, null);
   assert.equal(lasagneAuditRows[0]?.ingredients.length, 15);
   assert.ok(lasagneAuditRows[0]?.ingredients.every((ingredient) => ingredient.availableCarbohydratePerServingG === null && ingredient.gi === null && ingredient.fineliRecordId === null && ingredient.giRecordId === null));
-  assert.equal(glycemicLoadPilotResults.length, publicAuditResults.length);
-  assert.equal(glycemicLoadPilotResults.filter((result) => result.status === "CALCULATED").length, publicAuditResults.filter((result) => result.status === "CALCULATED").length);
-  assert.equal(glycemicLoadPilotResults.filter((result) => result.status === "INSUFFICIENT SOURCE DATA").length, publicAuditResults.filter((result) => result.status === "INSUFFICIENT SOURCE DATA").length);
+  assert.equal(glycemicLoadPilotResults.length, audit.results.length);
+  assert.equal(glycemicLoadPilotResults.filter((result) => result.status === "CALCULATED").length, audit.results.filter((result) => result.status === "CALCULATED").length);
+  assert.equal(glycemicLoadPilotResults.filter((result) => result.status === "INSUFFICIENT SOURCE DATA").length, audit.results.filter((result) => result.status === "INSUFFICIENT SOURCE DATA").length);
   for (const [id, expected] of [
     ["indonesialainen-ketoprak-aamiaiskulho", 26.67],
     ["japanilainen-onigiri-lohella", 26.47],
@@ -151,16 +150,16 @@ test("GK values link to centralized recipe details on every published translatio
   }
   const releaseManifest=JSON.parse(await readFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-q09/manifest.json'),'utf8'));
   const releaseIds=new Set<string>(releaseManifest.recipeIds);
-  assert.deepEqual(publicAuditResults.filter(result=>result.status==='CALCULATED'&&releaseIds.has(result.recipeId)).map(result=>result.recipeId).sort(),[...releaseIds].sort());
-  assert.equal(publicAuditResults.filter(result=>result.status==='CALCULATED'&&!releaseIds.has(result.recipeId)).length,148,'156 current estimates outside the eight Q09 entries');
-  assert.equal(publicAuditResults.filter(result=>result.status==='CALCULATED').length,156,'operation146 adds exactly nine complete-macro GK candidates to147 main results');
+  assert.deepEqual(audit.results.filter(result=>result.status==='CALCULATED'&&releaseIds.has(result.recipeId)).map(result=>result.recipeId).sort(),[...releaseIds].sort());
+  assert.equal(audit.results.filter(result=>result.status==='CALCULATED'&&!releaseIds.has(result.recipeId)).length,148,'156 current estimates outside the eight Q09 entries');
+  assert.equal(audit.results.filter(result=>result.status==='CALCULATED').length,156,'operation146 adds exactly nine complete-macro GK candidates to147 main results');
   const paella = glycemicLoadPilotResults.find((entry) => entry.recipeId === "paella-valenciana");
   assert.equal(paella?.status, "INSUFFICIENT SOURCE DATA", "Paella remains blocked without a suitable chicken-stock GI source");
   assert.equal(paella?.glycemicLoadPerServing, null);
   const calculatedWithOmissions = glycemicLoadPilotResults.filter((result) => result.status === "CALCULATED" && result.omittedAvailableCarbohydratePerServingG > 0);
   assert.ok(calculatedWithOmissions.every((result) => result.confidence === "LOW"), "omitted carbohydrate always lowers estimate confidence");
   const zeroWithOmissions = glycemicLoadPilotResults.filter((result) => result.status === "CALCULATED" && result.glycemicLoadPerServing === 0 && result.omittedAvailableCarbohydratePerServingG > 0);
-  assert.deepEqual(zeroWithOmissions.map(row => row.recipeId).sort(), publicAuditResults.filter(row => row.status === "CALCULATED" && row.glycemicLoadPerServing === 0 && row.omittedAvailableCarbohydratePerServingG > 0).map(row => row.recipeId).sort());
+  assert.deepEqual(zeroWithOmissions.map(row => row.recipeId).sort(), audit.results.filter(row => row.status === "CALCULATED" && row.glycemicLoadPerServing === 0 && row.omittedAvailableCarbohydratePerServingG > 0).map(row => row.recipeId).sort());
   assert.deepEqual(zeroWithOmissions,[], 'Q09 removes every known positive-CHO zero');
   for (const result of glycemicLoadPilotResults) {
     const translations = siteContent.recipes.filter((recipe) => recipe.recipeId === result.recipeId);
@@ -193,12 +192,20 @@ test("GK values link to centralized recipe details on every published translatio
   const labels = { fi: "Miksi kokonaisarviota ei ole?", en: "Why is there no total estimate?", sv: "Varför saknas ett totalvärde?", th: "เหตุใดจึงไม่มีค่าประมาณรวม" };
   for (const locale of ["fi", "en", "sv", "th"] as const) {
     const html = await readFile(path.join(dist, methodPagePaths[locale], "index.html"), "utf8");
+    assert.ok(html.includes("Kikherne, kypsä tai säilyke"), "Fineli source label displays Finnish characters");
+    assert.ok(html.includes("TÄYSMEHU, SITRUUNATÄYSMEHU, LAIMENTAMATON"), "Fineli source label displays uppercase Ä");
+    assert.ok(!html.includes("kypsÃ¤ tai sÃ¤ilyke"));
     const resultStart = html.indexOf('id="kookos-lime-kanacurry"');
     assert.ok(resultStart >= 0 && html.slice(resultStart, resultStart + 1_500).includes(labels[locale]), `${locale}: missing-result explanation is localized`);
   }
   const massaman = glycemicLoadPilotResults.find((result) => result.recipeId === "massaman-curry-kanalla-vhh");
   assert.ok(massaman, "Massaman stays represented in the central audit");
-  assert.equal(glycemicLoadPilotResults.some((result) => result.recipeId === "maksalaatikko-kukkakaalilla"), false);
+  const liver = glycemicLoadPilotResults.find((result) => result.recipeId === "maksalaatikko-kukkakaalilla");
+  assert.equal(liver?.status, "INSUFFICIENT SOURCE DATA");
+  assert.equal(liver?.glycemicLoadPerServing, null);
+  assert.equal(liver?.glycemicLoadRangePerServing, null);
+  assert.deepEqual(liver?.carbohydrateSources, []);
+  assert.deepEqual(liver?.sourceReferences, []);
 });
 
 test("GI proxy matches remain visibly low confidence and incomplete totals are withheld", () => {
@@ -215,10 +222,10 @@ test("GI proxy matches remain visibly low confidence and incomplete totals are w
 
 test("localized central GL pages render complete SEO metadata with canonical and hreflang links", async () => {
   const pages = [
-    { route: "glykeeminen-kuorma", locale: "fi", ogLocale: "fi_FI", title: "Glykeeminen kuorma: lähteet ja laskenta | Reseptit", description: "Reseptien glykeemisen kuorman laskentatapa, lähteet ja reseptikohtaiset oletukset.", canonical: "https://ozirix-dev.github.io/Reseptit/glykeeminen-kuorma/" },
-    { route: "en/glycemic-load", locale: "en", ogLocale: "en_GB", title: "Glycemic load: sources and method | Recipes", description: "Calculation method, sources and recipe-specific assumptions for glycemic-load estimates.", canonical: "https://ozirix-dev.github.io/Reseptit/en/glycemic-load/" },
-    { route: "sv/glykemisk-belastning", locale: "sv", ogLocale: "sv_SE", title: "Glykemisk belastning: källor och metod | Recept", description: "Beräkningsmetod, källor och receptspecifika antaganden för uppskattningar av glykemisk belastning.", canonical: "https://ozirix-dev.github.io/Reseptit/sv/glykemisk-belastning/" },
-    { route: "th/glycemic-load", locale: "th", ogLocale: "th_TH", title: "ภาระน้ำตาลในเลือด: แหล่งข้อมูลและวิธีคำนวณ | สูตรอาหาร", description: "วิธีคำนวณ แหล่งข้อมูล และสมมติฐานเฉพาะสูตรสำหรับค่าประมาณภาระน้ำตาลในเลือด", canonical: "https://ozirix-dev.github.io/Reseptit/th/glycemic-load/" },
+    { route: "glykeeminen-kuorma", locale: "fi", ogLocale: "fi_FI", title: "Reseptien glykeeminen kuorma (GK) | Reseptit", description: "Löydä reseptien glykeemisen kuorman (GK) arviot, luotettavuustiedot ja tarvittaessa tarkat laskentalähteet.", canonical: "https://ozirix-dev.github.io/Reseptit/glykeeminen-kuorma/" },
+    { route: "en/glycemic-load", locale: "en", ogLocale: "en_GB", title: "Glycemic load (GL) of recipes | Recipes", description: "Explore calculated glycemic load estimates for recipes, their reliability and detailed sources.", canonical: "https://ozirix-dev.github.io/Reseptit/en/glycemic-load/" },
+    { route: "sv/glykemisk-belastning", locale: "sv", ogLocale: "sv_SE", title: "Receptens glykemiska belastning (GL) | Recept", description: "Hitta uppskattningar av receptens glykemiska belastning, säkerhet och detaljerade källor.", canonical: "https://ozirix-dev.github.io/Reseptit/sv/glykemisk-belastning/" },
+    { route: "th/glycemic-load", locale: "th", ogLocale: "th_TH", title: "ค่าภาระน้ำตาลในเลือด (GL) ของสูตรอาหาร | สูตรอาหาร", description: "ค้นหาค่าภาระน้ำตาลในเลือด (GL) ของสูตรอาหาร พร้อมระดับความน่าเชื่อถือและแหล่งข้อมูลการคำนวณ", canonical: "https://ozirix-dev.github.io/Reseptit/th/glycemic-load/" },
   ];
   for (const page of pages) {
     const html = await readFile(path.join(dist, page.route, "index.html"), "utf8");
@@ -241,9 +248,11 @@ test("localized central GL pages render complete SEO metadata with canonical and
     assert.match(html, /hreflang="sv"/);
     assert.match(html, /hreflang="th"/);
     assert.match(html, /hreflang="x-default"/);
-    const liverResult = html.match(/<aside id="maksalaatikko-kukkakaalilla"[\s\S]*?<\/aside>/);
-    assert.ok(liverResult, "the liver recipe has a centralized explanation");
-    assert.doesNotMatch(liverResult[0], /GK-arvio|GL estimate|GL-uppskattning|GL-uppskattning|3,45 \/ annos/);
+    const liverResult = html.match(/<li id="maksalaatikko-kukkakaalilla"[\s\S]*?<\/li>/);
+    assert.ok(liverResult, "the liver recipe is in the prerendered results");
+    assert.match(liverResult[0], /GI/);
+    assert.doesNotMatch(liverResult[0], /<details|3[.,]45/);
+    assert.equal(html.match(/id="maksalaatikko-kukkakaalilla"/g)?.length, 1);
   }
 });
 

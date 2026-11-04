@@ -46,6 +46,10 @@ export function gkOnlyPreparation(v:GkOnlyVariant,locale:RecipeLocale,servings=v
 }
 export function GkOnlyVariantPanel({variant:v,locale,servings,compact=false}:{variant:GkOnlyVariant;locale:RecipeLocale;servings?:number;compact?:boolean}){
  const t=gkOnlyUi[locale],n=new Intl.NumberFormat(locale,{maximumFractionDigits:3}),Heading=compact?'h4':'h2';
+ const modelAssumptions = <>
+  {v.codingKinds.includes('PLANT50') ? <p>{t.plant}</p> : null}
+  {v.codingKinds.includes('TRACE50') ? <p>{t.trace}</p> : null}
+ </>;
  return <section className={compact?'gk-only-variant':'recipe-panel gk-only-variant'} data-gk-version={v.versionId} data-gk-level={v.level} data-macro-scope={v.macroScope} data-gk-quantity-contract={v.quantityContract}>
   <Heading>{t.title}</Heading><p className="recipe-disclosure">{t.scope}</p>
   {v.limitation?<p className="recipe-disclosure" data-gk-limitation="exact-version"><strong>{v.limitation[locale]}</strong></p>:null}
@@ -53,10 +57,10 @@ export function GkOnlyVariantPanel({variant:v,locale,servings,compact=false}:{va
   {v.omittedCho>0?<p className="recipe-disclosure" data-gk-omission="available-cho"><strong>{t.omission} {n.format(Math.ceil(v.omittedCho*10)/10)} {t.omissionEnd}</strong></p>:null}
   {v.point!==null&&v.point<1&&v.omittedCho>0?<p>{gkScopeUi[locale].partial}</p>:null}<p>{t.low}</p>
   {v.scenarioRange?<p>{t.range}</p>:null}
-  {v.codingKinds.includes('PLANT50')?<p>{t.plant}</p>:null}{v.codingKinds.includes('TRACE50')?<p>{t.trace}</p>:null}
+  {compact ? null : modelAssumptions}
   <details><summary>{t.details}</summary><p>{{fi:'Ainesluettelon annosmäärä',en:'Servings for these amounts',sv:'Portioner för dessa mängder',th:'จำนวนที่สำหรับปริมาณนี้'}[locale]}: {n.format(servings??v.servings)}</p><ul>{v.ingredients.map((i,index)=>{const quantity=gkOnlyQuantity(v,index,servings??v.servings);return <li key={index}>{quantity?`${n.format(quantity.amount)} ${quantityUnit(quantity.unit,locale)}`:t.original} — {i.name[locale]}</li>;})}</ul>{v.standalonePreparation?null:<p>{t.prepare}</p>}<p>{gkOnlyPreparation(v,locale,servings)}</p></details>
   {v.sensitivity?<details><summary>{t.sensitivity}</summary><p>{n.format(Math.floor(v.sensitivity.min*1000)/1000)}–{n.format(Math.ceil(v.sensitivity.max*1000)/1000)} {t.per}</p><p>{t.sensitivityNote}</p></details>:null}
-  <details><summary>{t.sources}</summary><ul>{v.sources.map((s,index)=><li key={index}>{s.url.startsWith('#')?<Link to={`${glycemicLoadPath(locale)}${s.url}`}>{s.title}</Link>:<a href={s.url} rel="noopener noreferrer">{s.title}</a>} — {s.note}</li>)}</ul></details>
+  <details><summary>{t.sources}</summary>{compact ? modelAssumptions : null}<ul>{v.sources.map((s,index)=><li key={index}>{s.url.startsWith('#')?<Link to={`${glycemicLoadPath(locale)}${s.url}`}>{s.title}</Link>:<a href={s.url} rel="noopener noreferrer">{s.title}</a>} — {s.note}</li>)}</ul></details>
   {!compact?<p><Link to={`${glycemicLoadPath(locale)}#${v.recipeId}`}>{t.method} ↗</Link></p>:null}
  </section>;
 }
