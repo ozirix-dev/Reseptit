@@ -1,3 +1,4 @@
+import { gkCopy } from "../src/features/glycemic-load/glycemic-load-copy";
 import "./content-layout.browser.test";
 import assert from "node:assert/strict";
 import { spawn, type ChildProcess } from "node:child_process";
@@ -100,6 +101,7 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
       const liver = page.locator("#maksalaatikko-kukkakaalilla");
       assert.equal(await liver.isVisible(), true, `${methodPage.locale}: liver recipe is searchable`);
       assert.match(await liver.innerText(), /GI/);
+      assert.ok((await liver.innerText()).includes(gkCopy[methodPage.locale].missing));
       assert.doesNotMatch(await liver.innerText(), /3[.,]45/);
       await page.getByRole("checkbox").check();
       assert.equal(await liver.count(), 0);
@@ -262,10 +264,21 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
     await page.getByRole("heading", { name: "Glykeeminen kuorma", exact: true }).waitFor();
     assert.ok(page.url().includes("#hummus"));
     assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true, "central GK details fit 320px");
-    const sourceSummary = page.locator("#hummus summary");
-    await sourceSummary.focus();
+    const hummus = page.locator("#hummus");
+    const technical = hummus.locator(".gk-evidence__technical");
+    const researchLink = technical.locator("a").first();
+    assert.equal(await researchLink.isVisible(), false);
+    assert.match(await hummus.innerText(), /Luotettavuus/);
+    assert.doesNotMatch(await hummus.innerText(), /HUMAN_GI|CATEGORY_MEAN|CALCULATION_POLICY/);
+    const calculation = hummus.locator(".gk-evidence__details").first();
+    await calculation.locator("summary").focus();
     await page.keyboard.press("Enter");
-    assert.equal(await page.locator("#hummus details").evaluate((element) => (element as HTMLDetailsElement).open), true);
+    assert.equal(await calculation.evaluate((element) => (element as HTMLDetailsElement).open), true);
+    assert.equal(await researchLink.isVisible(), false);
+    await technical.locator("summary").focus();
+    await page.keyboard.press("Enter");
+    assert.equal(await researchLink.isVisible(), true);
+    assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true, "expanded evidence fits 320px");
     await page.getByRole("link", { name: "English", exact: true }).click();
     await page.getByRole("heading", { name: "Glycemic load", exact: true }).waitFor();
     assert.ok(page.url().includes("/en/glycemic-load/"));

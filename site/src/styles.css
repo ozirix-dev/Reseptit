@@ -56,9 +56,16 @@ button { font: inherit; }
 .glycemic-pilot__recipe h4 { margin: 0 0 .25rem; }
 .glycemic-pilot__recipe a { color: var(--accent); }
 .glycemic-pilot__recipe a:focus-visible, .glycemic-pilot__recipe summary:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; border-radius: .2rem; }
-.glycemic-pilot__recipe details { margin-top: .5rem; }
-.glycemic-pilot__recipe summary { width: fit-content; min-height: 44px; padding-block: .5rem; cursor: pointer; font-weight: 700; }
-.glycemic-pilot__recipe details ul { display: grid; gap: .5rem; margin-top: .55rem; padding-left: 1.25rem; }
+.gk-evidence__scope { color: var(--ink-soft); font-size: .9rem; font-weight: 700; }
+.gk-evidence__value { font-size: 1.15rem; margin-block: .25rem; }
+.gk-evidence__confidence { margin-block: .25rem; }
+.gk-evidence__confidence strong { color: var(--accent); }
+.gk-evidence__details { margin-top: .45rem; min-width: 0; overflow-wrap: anywhere; }
+.gk-evidence__details summary { width: fit-content; min-height: 44px; padding-block: .5rem; cursor: pointer; font-weight: 700; }
+.gk-evidence__details summary:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+.gk-evidence__details p + p { margin-top: .45rem; }
+.gk-evidence__details ul { display: grid; gap: .5rem; margin-block: .55rem; padding-inline-start: 1.25rem; }
+.gk-evidence__technical small { display: block; color: var(--ink-soft); }
 .recipe-glycemic-load__caption { margin: .25rem 0 0; font-size: .9rem; }
 .recipe-glycemic-load__caption a { display: inline-flex; align-items: center; justify-content: center; min-width: 2rem; min-height: 2rem; margin-inline-start: .2rem; border-radius: .35rem; font-weight: 700; }
 .recipe-glycemic-load__caption a:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
