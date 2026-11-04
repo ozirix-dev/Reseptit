@@ -2,6 +2,7 @@ import { basename } from 'node:path';
 import { fingerprint } from './gk80-candidate-model';
 import { textHash } from './gk149-model';
 import { parsePointReviewVariant, type PointReviewCandidate } from './gk100-point-packet';
+import { calculateMixedEvidence, mixedBindingsPath, MIXED_EVIDENCE_METHOD, type MixedEvidencePacket } from './gk100-mixed-evidence';
 import type { GkOnlyVariant } from '../src/features/recipes/gk-only-types';
 
 type ReadFile = (path: string) => string;
@@ -35,7 +36,9 @@ type Candidate = Binding & {
   originalPath: string;
   supportFiles: Record<string, string>;
   servings: number;
-  method: 'A' | 'B';
+  method: 'A' | 'B' | typeof MIXED_EVIDENCE_METHOD;
+  mixedEvidence?: ReturnType<typeof calculateMixedEvidence>;
+  methodApproval?: 'PENDING';
   point: number | null;
   range: GkOnlyVariant['scenarioRange'];
   uncertainty: string;
@@ -71,16 +74,48 @@ const fail = (reason: string): never => { throw new Error(reason); };
 function assess(entry: Batch['candidates'][number], read: ReadFile) {
   if (!id.test(entry.recipeId) || !packetPathPattern.test(entry.packetPath)) fail('INVALID_CANDIDATE_PATH_OR_ID');
   const raw = read(entry.packetPath);
-  const packet: PointReviewCandidate = JSON.parse(raw);
+  const packet: PointReviewCandidate | MixedEvidencePacket = JSON.parse(raw);
   const candidateSha256 = textHash(raw);
   if (packet.recipeId !== entry.recipeId) fail('PACKET_RECIPE_ID_MISMATCH');
   const originals = Object.keys(packet.boundFiles).filter(path => originalPathPattern.test(path));
   if (originals.length !== 1 || basename(originals[0], '.md') !== packet.recipeId) fail('ORIGINAL_RECIPE_BINDING');
   const originalPath = originals[0];
-  const variant = parsePointReviewVariant(raw, path => {
+  const readBound = (path: string) => {
     if (!originalPathPattern.test(path) && !/^docs\/nutrition\/[a-z0-9-]+\.md$/.test(path)) fail('INVALID_BOUND_PATH');
     return read(path);
-  });
+  };
+  if (packet.method !== undefined) {
+    if (packet.method !== MIXED_EVIDENCE_METHOD) return fail('UNKNOWN_GK_METHOD');
+    const mixedEvidence = calculateMixedEvidence(packet, originalPath, readBound, read(mixedBindingsPath));
+    const classification = entry.classification ?? null;
+    if (classification && classification.candidateSha256 !== candidateSha256) fail('UNKNOWN_OR_STALE_CLASSIFICATION');
+    const reason = classification?.contentChange === 'ORIGINAL_CHANGE' ? 'ORIGINAL_CHANGE_OUTSIDE_GK_ONLY_SCOPE'
+      : classification?.outcome === 'BLOCKED' ? 'MIXED_EVIDENCE_CLASSIFIED_BLOCKED' : null;
+
+    // Review-only until the method and its editorial uncertainty policy are approved.
+    // No GK-only variant is created, so neither release path can consume this result.
+    const row: Candidate = {
+      recipeId: packet.recipeId, packetPath: entry.packetPath, originalPath,
+      supportFiles: Object.fromEntries(Object.entries(packet.boundFiles).filter(([path]) => path !== originalPath)),
+      candidateSha256, originalSha256: packet.boundFiles[originalPath], inputSha256: mixedEvidence.inputSha256,
+      servings: packet.servings, method: MIXED_EVIDENCE_METHOD, methodApproval: 'PENDING', mixedEvidence,
+      point: mixedEvidence.point, range: null, uncertainty: 'MIXED_ASSUMPTION_STRESS', limitation: packet.limitation,
+      omittedCho: mixedEvidence.omittedCho, omittedChoStressGkAtGi100: mixedEvidence.omittedCho,
+      suggestedRisk: 'HIGH', riskSignals: ['CHO_OMITTED', 'ASSIGNED_GI'],
+      sources: mixedEvidence.contributions.flatMap(({ binding }) => {
+        const { composition, gi, applicability } = binding;
+        const carbohydrate = { kind: 'CARBOHYDRATE' as const, title: composition.source.locator,
+          url: composition.source.url, note: applicability };
+        if (gi.kind === 'UNKNOWN') return [carbohydrate];
+        return [carbohydrate, { kind: gi.kind, title: gi.source.locator, url: gi.source.url, note: applicability }];
+      }),
+      localeFields: 'PRESENT', classification, technical: 'PASS',
+      state: reason ? 'BLOCKED' : 'REVIEW_REQUIRED',
+      reason: reason ?? 'MIXED_EVIDENCE_METHOD_APPROVAL_REQUIRED', ownerStatus: 'PENDING', publicationAuthorized: false,
+    };
+    return { row, variant: undefined };
+  }
+  const variant = parsePointReviewVariant(raw, readBound);
   const kinds = ['CARBOHYDRATE', 'HUMAN_GI', 'PUBLISHED_CODING', 'B_CODING', 'BOUND'];
   if (!variant.sources.some(source => source.kind === 'HUMAN_GI')
       || !variant.sources.some(source => source.kind === 'CARBOHYDRATE')
@@ -151,7 +186,7 @@ export function checkBatch(batch: Batch, read: ReadFile) {
     try {
       if (counts.get(entry.recipeId)! > 1) fail('DUPLICATE_RECIPE_ID');
       const { row, variant } = assess(entry, read);
-      variants.set(entry.recipeId, variant);
+      if (variant) variants.set(entry.recipeId, variant);
       return row;
     } catch (error) {
       return { recipeId: entry.recipeId, packetPath: entry.packetPath, technical: 'FAIL' as const,

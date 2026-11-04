@@ -1,5 +1,8 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
+import { fingerprint } from '../scripts/gk80-candidate-model';
+import { mixedBindingsPath, MIXED_EVIDENCE_METHOD, type MixedEvidencePacket } from '../scripts/gk100-mixed-evidence';
+import { parsePointReviewVariant } from '../scripts/gk100-point-packet';
 import { textHash } from '../scripts/gk149-model';
 import { applyDecisions, checkBatch, prepareRelease, type Batch, type Decisions } from '../scripts/gk100-approval-factory';
 import { makeReleaseBundle, verifyReleaseBundle } from '../scripts/gk100-approval-release';
@@ -159,4 +162,186 @@ test('published ingredients contain display fields only', () => {
   const checked = checkBatch(batch, read);
   assert.equal(checked.manifest.candidates[0].state, 'READY_FOR_APPROVAL');
   assert.deepEqual(checked.variants.get(entry.recipeId)?.ingredients, [{ name: locale, grams: 100 }]);
+});
+
+test('legacy A and B retain their existing accounting and source gate', () => {
+  const { batch, read, files } = fixture(1);
+  const entry = batch.candidates[0];
+  const packet = JSON.parse(read(entry.packetPath));
+  delete entry.classification;
+  const check = () => {
+    files.set(entry.packetPath, JSON.stringify(packet));
+    return checkBatch(batch, read).manifest.candidates[0];
+  };
+  let row = check();
+  assert(row.technical === 'PASS');
+  assert.equal(row.method, 'B');
+  assert.equal(row.point, 5);
+  packet.ingredients.push({ name: locale, grams: 100 });
+  packet.omissions = [{ ingredientIndex: 1, choPer100g: 0.5 }];
+  row = check();
+  assert(row.technical === 'PASS');
+  assert.equal(row.method, 'A');
+  assert.equal(row.omittedCho, 0.25);
+  packet.sources.push({ ...packet.sources[0], kind: 'B_CODING' });
+  assert.match(check().reason!, /B-only GI coding cannot be combined with A-method omissions/);
+  packet.ingredients.pop();
+  delete packet.omissions;
+  row = check();
+  assert(row.technical === 'PASS');
+  assert.equal(row.method, 'B');
+});
+
+function mixedFixture() {
+  const { batch, read, files } = fixture(1);
+  const entry = batch.candidates[0];
+  const { recipeId, servings, boundFiles, preparation, limitation } = JSON.parse(read(entry.packetPath));
+  const packet: MixedEvidencePacket = {
+    recipeId, servings, boundFiles, preparation, limitation, method: MIXED_EVIDENCE_METHOD,
+    reviewState: 'PREPARED_FOR_REVIEW', publicationAuthorized: false,
+    ingredients: [{ name: locale, grams: 100 }, { name: locale, grams: 100 },
+      { name: locale, grams: null, quantity: { unit: 'ml', amount: 100 } }],
+    rows: [
+      { ingredientIndex: 0, bindingId: 'human', kind: 'HUMAN_GI' },
+      { ingredientIndex: 1, bindingId: 'coded', kind: 'B_CODING' },
+      { ingredientIndex: 2, bindingId: 'omit', kind: 'UNKNOWN', omissionReason: 'Small measured CHO, GI unresolved' },
+    ],
+  };
+  const scopeSha256 = fingerprint({
+    recipeId, originalSha256: boundFiles['reseptit/paaruoat/' + recipeId + '.md'],
+    servings, ingredients: packet.ingredients, preparation,
+  });
+  const source = { url: 'https://example.invalid/', locator: 'Synthetic test data' };
+  const common = { scopeSha256, applicability: 'Synthetic matching preparation', approvalEvidence: 'Test fixture only' };
+  const bindings = {
+    human: { ...common, ingredientIndex: 0,
+      composition: { id: 'main', unit: 'g', availablePer100: 20, source },
+      gi: { kind: 'HUMAN_GI', value: 120, source } },
+    coded: { ...common, ingredientIndex: 1,
+      composition: { id: 'coded-food', unit: 'g', availablePer100: 2, source },
+      gi: { kind: 'B_CODING', value: 50, source } },
+    omit: { ...common, ingredientIndex: 2,
+      composition: { id: 'broth', unit: 'ml', availablePer100: 0.4, source }, gi: { kind: 'UNKNOWN' } },
+  };
+  const check = () => {
+    files.set(mixedBindingsPath, JSON.stringify({ schemaVersion: 1, bindings }));
+    const raw = JSON.stringify(packet);
+    files.set(entry.packetPath, raw);
+    Object.assign(entry.classification!, { candidateSha256: textHash(raw), risk: 'HIGH',
+      review: { depth: 'DEEP', evidence: 'Fixture review' } });
+    return checkBatch(batch, read);
+  };
+  return { batch, read, files, check, packet, bindings };
+}
+
+test('Mixed Evidence keeps measured GI above 100, codes and omissions separate', () => {
+  const { check, bindings, packet } = mixedFixture();
+  for (const kind of ['B_CODING', 'PUBLISHED_CODING'] as const) {
+    bindings.coded.gi.kind = kind;
+    packet.rows[1].kind = kind;
+    const { manifest, variants } = check();
+    const [row] = manifest.candidates;
+    assert(row.technical === 'PASS' && row.mixedEvidence);
+    assert.equal(row.method, MIXED_EVIDENCE_METHOD);
+    assert.equal(row.state, 'REVIEW_REQUIRED');
+    assert.equal(row.methodApproval, 'PENDING');
+    assert.equal(row.point, 12.5);
+    assert.equal(row.mixedEvidence.humanGk, 12);
+    assert.equal(row.mixedEvidence.codedGk, 0.5);
+    assert.equal(row.omittedCho, 0.2);
+    assert.equal(row.range, null);
+    assert.equal(row.sources.find(source => source.kind === kind)?.note, bindings.coded.applicability);
+    const { scenarios, isBiologicalBound, isConfidenceInterval } = row.mixedEvidence.uncertainty;
+    assert.equal(isBiologicalBound, false);
+    assert.equal(isConfidenceInterval, false);
+    assert.deepEqual(scenarios.map(scenario => scenario.assumedGi), [0, 100, 150]);
+    assert.equal(scenarios[1].omissionDeltaGk, 0.2);
+    assert.equal(scenarios[1].omissionRelativeChange, 0.016);
+    assert.equal(scenarios[1].codingDeltaGk, 0.5);
+    assert.equal(variants.size, 0);
+  }
+});
+
+test('Mixed Evidence blocks unknown GI, missing approval and reclassified coding', () => {
+  const { packet, bindings, check } = mixedFixture();
+  const row = () => check().manifest.candidates[0];
+  packet.rows[2] = { ingredientIndex: 2, bindingId: 'omit', kind: 'UNKNOWN' };
+  assert.equal(row().state, 'BLOCKED');
+  assert.match(row().reason!, /UNRESOLVED_POSITIVE_MIXED_GI/);
+  packet.rows[2] = { ...packet.rows[2], omissionReason: 'Documented' };
+  packet.rows[1].bindingId = 'unapproved-composition';
+  assert.match(row().reason!, /UNAPPROVED_MIXED_COMPOSITION_GI_BINDING/);
+  packet.rows[1].bindingId = 'coded';
+  packet.rows[1].kind = 'HUMAN_GI';
+  assert.match(row().reason!, /MIXED_GI_EVIDENCE_KIND_MISMATCH/);
+  packet.rows[1].kind = 'B_CODING';
+  bindings.coded.scopeSha256 = '0'.repeat(64);
+  assert.match(row().reason!, /UNAPPROVED_MIXED_COMPOSITION_GI_BINDING/);
+});
+
+test('Mixed Evidence checks individual, cumulative and absolute or relative omission limits', () => {
+  const { packet, bindings, check } = mixedFixture();
+  const reason = () => check().manifest.candidates[0].reason!;
+  bindings.omit.composition.availablePer100 = 2;
+  assert.match(reason(), /MIXED_OMISSION_EXCEEDS_INGREDIENT_LIMIT/);
+  bindings.omit.composition.availablePer100 = 1.2;
+  assert.match(reason(), /MIXED_OMISSION_STRESS_EXCEEDS_REVIEW_SCREEN/);
+  bindings.omit.composition.availablePer100 = 0.4;
+  bindings.human.composition.availablePer100 = 2;
+  assert.match(reason(), /MIXED_OMISSION_STRESS_EXCEEDS_REVIEW_SCREEN/);
+
+  for (let index = 3; index <= 4; index++) {
+    packet.ingredients.push(packet.ingredients[2]);
+    packet.rows.push({ ingredientIndex: index, bindingId: 'extra-' + index, kind: 'UNKNOWN', omissionReason: 'Documented' });
+  }
+  const scopeSha256 = fingerprint({ recipeId: packet.recipeId,
+    originalSha256: packet.boundFiles['reseptit/paaruoat/fixture-0.md'], servings: packet.servings,
+    ingredients: packet.ingredients, preparation: packet.preparation });
+  for (const binding of Object.values(bindings)) binding.scopeSha256 = scopeSha256;
+  bindings.omit.composition.availablePer100 = 1.6;
+  Object.assign(bindings, {
+    'extra-3': { ...bindings.omit, ingredientIndex: 3 },
+    'extra-4': { ...bindings.omit, ingredientIndex: 4 },
+  });
+  assert.match(reason(), /MIXED_OMISSIONS_EXCEED_CUMULATIVE_LIMIT/);
+});
+
+test('Mixed Evidence binds both source input and original and cannot enter either release path', () => {
+  const { batch, packet, bindings, check, files, read } = mixedFixture();
+  const checked = check();
+  const decisions = approve(checked, 'fixture-0');
+  assert.equal(applyDecisions(checked, decisions)[0].state, 'REVIEW_REQUIRED');
+  const plan = prepareRelease(checked, decisions, coverage, base, read);
+  assert.equal(plan.expectedCoverageDelta, 0);
+  const bundle = makeReleaseBundle(checked, batch, decisions, plan);
+  assert.throws(() => verifyReleaseBundle(bundle, { schemaVersion: 1, bundleSha256: '', evidence: '' }, read),
+    /GK100_RELEASE_AUTHORIZATION/);
+  const { bundleSha256: _, ...body } = bundle;
+  const forgedBody = { ...body, recipeIds: [packet.recipeId], expectedCoverageDelta: 1 };
+  const forged = { ...forgedBody, bundleSha256: fingerprint(forgedBody) };
+  assert.throws(() => verifyReleaseBundle(forged, {
+    schemaVersion: 1, bundleSha256: forged.bundleSha256, evidence: 'Fixture publication authorization',
+  }, read), /GK100_RELEASE_OWNER_APPROVAL/);
+
+  bindings.coded.gi.value = 45;
+  assert.throws(() => applyDecisions(check(), decisions), /INVALID_OR_STALE_DECISIONS/);
+  files.set('reseptit/paaruoat/fixture-0.md', 'altered original');
+  assert.match(check().manifest.candidates[0].reason!, /GK point binding changed/);
+  assert.throws(() => parsePointReviewVariant(read(batch.candidates[0].packetPath), read), /Invalid GK point review/);
+});
+
+test('the Lontong quantities fail even if its rice and tofu are treated as bound', () => {
+  const { packet, bindings, check } = mixedFixture();
+  bindings.human.composition.availablePer100 = 31.6;
+  bindings.human.gi.value = 89;
+  bindings.coded.composition.availablePer100 = 1.8;
+  // Isolate each unresolved row with the rice and tofu retained.
+  for (const availableCho of [3.40, 4.97, 0.70]) {
+    bindings.omit.composition.availablePer100 = 2 * availableCho;
+    packet.rows[2] = { ingredientIndex: 2, bindingId: 'omit', kind: 'UNKNOWN' };
+    assert.match(check().manifest.candidates[0].reason!, /UNRESOLVED_POSITIVE_MIXED_GI/);
+    packet.rows[2] = { ...packet.rows[2], omissionReason: 'Stress-test the omission route' };
+    assert.match(check().manifest.candidates[0].reason!,
+      availableCho >= 1 ? /MIXED_OMISSION_EXCEEDS_INGREDIENT_LIMIT/ : /MIXED_OMISSION_STRESS_EXCEEDS_REVIEW_SCREEN/);
+  }
 });
