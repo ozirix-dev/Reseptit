@@ -49,6 +49,27 @@ Eräkomennon luvut sisältävät uuden Python-prosessin, tiedostojen luvun ja t�
 
 Tämä toteutus ei vielä tee PR #242:n erillistä lähde → riippumaton ihmis-GI-havainto → reseptisoveltuvuuspäätös -mallia. Nykyinen matchKind voi kuvata analogiaa tai kategoria-arvoa, eikä luokitus oikeuta käyttämään sitä uusissa resepteissä. Samasta tutkimuksesta lainattujen havaintojen deduplikointi kuuluu myöhempään kuratoituun lähdemalliin. Lähteen käyttöehdot on yhä arvioitava erikseen.
 
-Koostumuslähteiden haku, FTS5-tekstihaku ja Approval Factoryn lukukytkentä ovat jatkovaiheita.
+## SQLite V2:n käyttö GK100-lähdehaussa
+
+V2:n lähdehaku käyttää SQLitea oletuksena. Se lukee Gitissä olevat GI- ja koostumusrekisterit kerran erässä, sitoo tuloksen molempien SHA-256-tarkisteisiin ja käyttää yhtä vain luku -transaktiota. Toistuva kysely haetaan erän sisällä kerran. Puuttuva tai vanhentunut indeksi rakennetaan uudelleen. Windowsin tiedostolukossa korvaamista yritetään enintään kolmesti. Epäonnistuessa haku ilmoittaa virheen ja aiempi indeksi säilyy.
+
+```powershell
+python -B site/scripts/gi_sqlite_evidence.py --requests queries.json
+python -B site/scripts/gi_sqlite_evidence.py --pilot docs/nutrition/glycemic-load-pilot-input.json --recipe aloo-paratha
+python -B site/scripts/gi_sqlite_evidence.py --inventory gk100-inventory.jsonl --recipe aloo-paratha
+python -B site/scripts/benchmark_gi_sqlite_evidence.py --repeats 15
+```
+
+Kyselytiedosto on UTF-8 JSON -taulukko. Esimerkiksi `[{"id":"peruna","foodKey":"potato","preparationKey":"mashed-unspecified","text":"mashed potato"}]`. Sidos voidaan hakea myös `giRecordId`- ja `compositionRecordId`-kentillä. `--db` vaihtaa oletuspolun `.cache/gk100/evidence-v2.sqlite`. V1-komennot ja aiemmat V1-tiedostot toimivat edelleen. Ensimmäinen V2-haku laajentaa samaan polkuun osoitetun V1-indeksin tarvittaessa.
+
+FTS5 etsii sanoja rekisterin ruoka- ja tuotenimistä, valmistustavoista, tutkimusten otsikoista ja kuvauksista sekä lähdemuistioista. Unicode-teksti normalisoidaan ja haku käsittelee hakusanat kirjaimellisesti. Sanojen pitää esiintyä lähdeaineistossa. Kyselyssä voi olla enintään 64 eri sanaa. Haku ei taivuta eikä käännä sanoja. SQLite käyttää tarvittaessa rajattua sanahakua ilman FTS5:tä.
+
+Tulos erottaa avainosumat, tekstiosumat ja aiemmin kirjatut sidokset. GI-tuloksessa näkyvät näyttötyyppi, lähde, käyttörajoitukset ja huomautukset. Koostumustuloksessa näkyvät alkuperäinen yksikkö, tila, CHO-määritelmä ja lisenssitiedot. GI- ja koostumustietueita ei yhdistetä automaattisesti nimen perusteella. Jos koostumustunnisteella on eri tietueita, haku säilyttää vaihtoehdot ja näyttää ristiriidan.
+
+Lukuadapteri käyttää PR #255:n Evidence Recovery -inventaarion normalisoituja määriä, olemassa olevia sidoksia ja kirjattuja esteitä. Se raportoi inventaarion main-commitin ja tiedoston tarkisteen. Prioriteetit ryhmitellään kirjattujen esteiden perusteella ja toistuvat GI-sidokset lasketaan resepteittäin. Tekstiosumat ovat katselmoinnin aineistoa. Approval Factory tarkistaa laskelmat omilla hyväksyntäporteillaan.
+
+V2:n Windows-mittaus käytti samaa 30 reseptin ja 73 haun työkuormaa. Kaikki täsmähaut palauttivat samat tietuetunnisteet. Mediaanit 15 toistosta olivat JSONin luku ja muistihakemisto 0,93 ms, V1:n yksittäishaut 100,97 ms, V1:n erä 13,10 ms ja V2:n erä 6,54 ms (p95 12,71 ms). V2:n rakentaminen ja varmennettu avaus kesti 123,30 ms, lähteiden luku ja tiivistys 1,24 ms, avaus ja varmennus 0,84 ms ja kolmen tekstikyselyn erä 4,47 ms. CLI:n 319,19 ms sisälsi prosessin käynnistyksen ja koko raportin sarjallistamisen. Muistinkulutusta ja tokenisäästöä ei mitattu.
+
+Seuraava käyttöönottoaskel on käyttää ajantasaista Evidence Recovery -inventaarion vientiä katselmoinnissa. Laajemmat reseptiriippuvuudet tarvitsevat versionvarmennetun sidoksen reseptin, koostumustietueen, GI-havainnon ja reseptikohtaisen soveltuvuuspäätöksen välille.
 
 Julkaistut GK-arvot (lähtöhetken 235/326), Approval Factory ja A/B/Mixed Evidence -hyväksyntäportit pysyvät muuttumattomina.
