@@ -40,6 +40,11 @@
   against the Finnish source pass, with no known material error.
 - Require human review only if material safety or content uncertainty remains
   unresolved. Triage reported errors and correct them by risk.
-- Record the checked commit, scope, results and open findings. Follow the
+- Review new published translations and refresh the review for substantive
+  changes to either language file. Save the two semantic hashes, review date,
+  reference and findings in `meta/kaannokset/codex-review-evidence.json`.
+- Start with unresolved P0/P1 findings and changed pairs. Use the existing
+  review queue and continue from its recorded state.
+- Record the checked scope and results. Follow the
   [translation review policy](docs/translation-review-policy.md) for checks,
   severity levels and feedback handling.

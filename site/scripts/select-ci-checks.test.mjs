@@ -11,6 +11,17 @@ test("docs-only changes select no site build or test suite", () => {
   assert.equal(plan.runBuild, false);
 });
 
+test("translation evidence selects one dedicated suite and no build", () => {
+  const plan = classifyPaths(["meta/kaannokset/codex-review-evidence.json", "site/scripts/translation-semantic-review.ts"]);
+  assert.equal(plan.runTranslationReview, true);
+  assert.equal(plan.runBuild, false);
+  assert.deepEqual(plan.unitTests, []);
+  const recipe = classifyPaths(["kaannokset/th/paaruoat/bouillabaisse.md"]);
+  assert.equal(recipe.runContent, true);
+  assert.equal(recipe.runTranslationReview, false);
+  assert.equal(recipe.runBuild, false);
+});
+
 test("recipe additions, edits, and deletions select nutrition plus GI/GK checks", () => {
   for (const operation of ["add", "edit", "delete"]) {
     const plan = classifyPaths(["reseptit/paaruoat/munakoiso-kesakurpitsalasagne.md"]);

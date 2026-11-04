@@ -1,4 +1,4 @@
-# Käännösten ihmistarkistuksen työjono
+# Käännösten tarkistustyöjono
 
 Suorita `site/`-kansiossa `npm run review:translations`.
 Komento lukee julkaistun inventaarion, nykyiset rakennetarkistukset ja
@@ -22,7 +22,20 @@ kieltomuodot ja ruokavalioväitteet nostavat prioriteettia.
 Riskit ovat toimituksellisen jonon heuristiikka, eivät todiste virheestä.
 Käytä [ruokasanastoa](../meta/kaannokset/ruokasanasto.md).
 
-## Tilat ja hyväksyntätodiste
+## Codexin tarkistushistoria
+
+`--summary` näyttää mittarit ja seuraavat reseptit kirjoittamatta pakettia.
+Ajantasainen Codex-vertailu edellyttää molempien merkitystiivisteiden
+täsmäämistä sekä läpäistyjä automaattitarkistuksia. Avoin P0/P1 estää
+hyväksynnän. `human-required` vaatii epäselvyyden ratkaisemisen ja uuden
+tarkistuksen. Vanhentunut vertailu siirtyy jonoon ja aiemmat havainnot näkyvät.
+
+Merkitystiiviste säilyttää ainesrivit ja niiden järjestyksen, ravintoarvot,
+alt-tekstin ja Markdownin rakenteen. Rivinvaihtomuoto, YAML:n esitystapa
+ja julkaisu- tai kuvan toimitustekniikkaan liittyvät metatiedot eivät
+itsessään vanhenna vertailua. Julkaiseminen tarkistetaan erikseen.
+
+## Ihmistarkistuksen tilat ja hyväksyntätodiste
 
 | Tila | Merkitys |
 | --- | --- |

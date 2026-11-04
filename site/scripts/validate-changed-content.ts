@@ -5,6 +5,7 @@ import assert from "node:assert/strict";
 import { execFileSync } from "node:child_process";
 import { access, readFile, readdir } from "node:fs/promises";
 import path from "node:path";
+import { changedSemanticReviewErrors, loadSemanticEvidence, preparationRegressionErrors, semanticHash } from "./translation-semantic-review";
 import { auditTranslations } from "./translation-audit";
 import { verifyNutritionEvidence } from "./nutrition-evidence";
 import type { Calculation } from "./nutrition-model";
@@ -52,7 +53,7 @@ function changedNutritionValues(relativePath: string): boolean {
     /^\+(?!\+).*\b(?:carbs_net_per_serving_g|carbs_total_per_serving_g|protein_per_serving_g|fat_per_serving_g)\s*:/.test(line));
 }
 
-function previousRecipeId(relativePath: string): string | null {
+function previousRecipe(relativePath: string): ReturnType<typeof parseMarkdown> {
   const base = process.env.BASE_SHA;
   if (!base || /^0+$/.test(base)) return null;
   try {
@@ -61,10 +62,10 @@ function previousRecipeId(relativePath: string): string | null {
     return null;
   }
   const previous = execFileSync("git", ["show", `${base}:${relativePath}`], { encoding: "utf8" });
-  const parsed = parseMarkdown(previous);
-  return typeof parsed?.data.recipe_id === "string" ? parsed.data.recipe_id : null;
+  return parseMarkdown(previous);
 }
 
+const previousRecipes = new Map(recipePaths.map((file) => [file, previousRecipe(file)]));
 const changedRecipes: { path: string; data: ReturnType<typeof recipeFrontmatterSchema.parse>; markdown: string }[] = [];
 for (const relativePath of recipePaths) {
   const fullPath = resolveRepoFile(relativePath);
@@ -72,7 +73,7 @@ for (const relativePath of recipePaths) {
     await access(fullPath);
   } catch (error) {
     if ((error as NodeJS.ErrnoException).code !== "ENOENT") throw error;
-    assert(previousRecipeId(relativePath), `${relativePath}: deleted recipe has no previous version to validate`);
+    assert(previousRecipes.get(relativePath)?.data.recipe_id, `${relativePath}: deleted recipe has no previous version to validate`);
     continue;
   }
   const markdown = await readFile(fullPath, "utf8");
@@ -85,6 +86,7 @@ for (const relativePath of recipePaths) {
     const start = match.index + match[0].length;
     const next = parsed.content.slice(start).search(/^##\s+/m);
     const instructions = parsed.content.slice(start, next < 0 ? undefined : start + next).trim();
+    assert.deepEqual(preparationRegressionErrors({ data, content: parsed.content }), [], `${relativePath}: preparation regression`);
     const renderedSteps = await renderInstructionSteps(instructions);
     const rendered = renderedSteps?.join("") ?? await renderSafeMarkdown(instructions);
     assert(rendered.trim(), `${relativePath}: recipe instructions render to empty output`);
@@ -115,7 +117,7 @@ for (const relativePath of evidencePaths) {
 
 const recipeIds = new Set([
   ...changedRecipes.map((recipe) => recipe.data.recipe_id),
-  ...recipePaths.map(previousRecipeId).filter((id): id is string => Boolean(id)),
+  ...[...previousRecipes.values()].map((recipe) => recipe?.data.recipe_id).filter((id): id is string => typeof id === "string"),
   ...evidenceIds,
 ]);
 assert(recipeIds.size > 0, "No changed recipe or nutrition evidence paths were supplied.");
@@ -189,6 +191,22 @@ for (const recipeId of recipeIds) {
     assert.deepEqual(result.errors, [], `${recipeId}: nutrition evidence validation failed`);
   } else {
     assert(!evidenceIds.has(recipeId), `${recipeId}: changed calculation evidence is unavailable`);
+  }
+}
+
+if (process.env.BASE_SHA && !/^0+$/.test(process.env.BASE_SHA)) {
+  const changed = new Set(changedRecipes.filter((recipe) => {
+    if (recipe.data.status !== "published") return false;
+    const previous = previousRecipes.get(recipe.path);
+    if (previous?.data.status !== "published") return true;
+    const previousData = recipeFrontmatterSchema.safeParse(previous.data);
+    if (!previousData.success) return true;
+    const current = parseMarkdown(recipe.markdown)!;
+    return semanticHash({ data: previousData.data, content: previous.content }) !== semanticHash({ data: recipe.data, content: current.content });
+  }).map((recipe) => recipe.path));
+  if (changed.size) {
+    const errors = changedSemanticReviewErrors(audit, changed, await loadSemanticEvidence(repoRoot));
+    assert.deepEqual(errors, [], "Changed published translation pairs require current Codex source comparison evidence");
   }
 }
 

@@ -135,14 +135,13 @@ function classifyPaths(paths, { forceFull = false, classificationFailed = false 
     }
     if (/^docs\/nutrition\/.+\.json$/i.test(file)) return fullPlan();
     if (file === "meta/kaannokset/human-review-evidence.json" ||
+        file === "meta/kaannokset/codex-review-evidence.json" ||
+        file === "site/scripts/translation-semantic-review.ts" ||
+        file === "site/scripts/validate-changed-content.ts" ||
         file === "site/scripts/translation-review.ts" ||
         file === "site/scripts/translation-audit.ts") {
       plan.runTranslationReview = true;
       plan.needsNode = true;
-      plan.unitTests.add("tests/translation-review.test.ts");
-      if (file === "site/scripts/translation-audit.ts") {
-        plan.unitTests.add("tests/translations.test.ts");
-      }
       continue;
     }
     if (file.startsWith("kuvat/")) {
@@ -220,7 +219,7 @@ function classifyPaths(paths, { forceFull = false, classificationFailed = false 
     }
     if (file.startsWith("site/scripts/")) return fullPlan();
     if (file.startsWith("site/")) return fullPlan();
-    if (/^(?:README\.md|AGENTS\.md|docs\/|meta\/|\.markdownlint-cli2\.jsonc$)/.test(file)) continue;
+    if (/^(?:README\.md|AGENTS\.md|docs\/|meta\/|\.github\/ISSUE_TEMPLATE\/|\.markdownlint-cli2\.jsonc$)/.test(file)) continue;
     return fullPlan();
   }
 
