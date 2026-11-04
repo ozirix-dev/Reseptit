@@ -19,12 +19,12 @@ export type PublishedGlycemicLoad = Omit<GlycemicLoadDisplayCandidate, "status" 
 };
 
 /** Return public GK data only for a complete, calculated recipe total. */
-export function publishedGlycemicLoadForRecipe(
+export function publishedGlycemicLoadForRecipe<T extends GlycemicLoadDisplayCandidate>(
   recipeId: string,
-  results: GlycemicLoadDisplayCandidate[],
-): PublishedGlycemicLoad | null {
+  results: T[],
+): (T & PublishedGlycemicLoad) | null {
   const result = results.find((entry) => entry.recipeId === recipeId);
   return result?.status === "CALCULATED" && result.glycemicLoadPerServing !== null && result.confidence !== null
-    ? result as PublishedGlycemicLoad
+    ? result as T & PublishedGlycemicLoad
     : null;
 }
