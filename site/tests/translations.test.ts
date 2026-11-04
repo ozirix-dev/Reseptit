@@ -109,6 +109,24 @@ test("pair audit detects changed servings, ingredient amounts, units and cooking
   }
 });
 
+test("pair audit checks source language and shared image dimensions", async () => {
+  const real = await auditTranslations();
+  const original = real.publishedSources.find((recipe) => recipe.data.image && recipe.data.translation_status?.en === "published")!;
+  const source = structuredClone(original);
+  source.data.translation_languages = ["en"];
+  source.data.translation_status = { en: "published" };
+  const target = structuredClone(real.publishedTranslations.find((recipe) => recipe.data.recipe_id === source.data.recipe_id && recipe.data.language === "en")!);
+  assert.deepEqual(auditRecipePairs([source], [target]).errors, []);
+
+  delete target.data.source_language;
+  target.data.image!.width += 1;
+  const result = auditRecipePairs([source], [target]);
+  assert.match(result.errors.join(" "), /source_language=missing, expected fi/);
+  assert.match(result.errors.join(" "), /image dimensions=/);
+  assert.equal(result.rows[0].metadata_check, "FAIL");
+  assert.equal(result.rows[0].image_check, "FAIL");
+});
+
 test("V1.4 ingredient regressions distinguish species, dairy and raw ingredients", () => {
   const cases = [
     ["nakkeja", "trinkets", "frankfurters", "en"],

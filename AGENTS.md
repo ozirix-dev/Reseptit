@@ -33,3 +33,13 @@
   session/branch lock. Continue using its required guarded operations.
 - Detailed project workflow and handoff format:
   [Rinnakkaisten Codex-ajojen toimintatapa](docs/rinnakkaiset-codex-ajot.md).
+
+## Recipe translation quality
+
+- Publish recipe translations after automated checks and a Codex comparison
+  against the Finnish source pass, with no known material error.
+- Require human review only if material safety or content uncertainty remains
+  unresolved. Triage reported errors and correct them by risk.
+- Record the checked commit, scope, results and open findings. Follow the
+  [translation review policy](docs/translation-review-policy.md) for checks,
+  severity levels and feedback handling.
