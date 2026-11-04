@@ -1,9 +1,9 @@
 # Recipavo – Cloudflare-tuotanto ja GitHub Pages -staging (V2)
 
-**Tila:** suunnitelma / Draft PR, EI julkaisuvaltuutus  
-**Päivitetty:** 4.11.2026  
-**Päälähderepo:** [ozirix-dev/Reseptit](https://github.com/ozirix-dev/Reseptit), työpolku `D:\Projects\Products\Reseptit`  
-**Pohja:** main `de83657c52e0f018b10c3d5e7d26cdf671d5c85f`  
+**Tila:** suunnitelma / Draft PR, EI julkaisuvaltuutus
+**Päivitetty:** 4.11.2026
+**Päälähderepo:** [ozirix-dev/Reseptit](https://github.com/ozirix-dev/Reseptit), työpolku `D:\Projects\Products\Reseptit`
+**Pohja:** main `de83657c52e0f018b10c3d5e7d26cdf671d5c85f`
 **Aiempi selvitys:** [ReportHub 24.10. domainin valmistelu](https://github.com/ozirix-dev/ReportHub/blob/main/reports/archive/2026-10-24-recipavo-domain-preparation.md) ja [24.10. Coming Soon -julkaisu](https://github.com/ozirix-dev/ReportHub/blob/main/reports/archive/2026-10-24-recipavo-coming-soon-publication.md). Vanhat raportit säilyvät historiallisina, eivät nykyisen julkaisusuunnitelman lähteenä.
 
 ## Omistajan vahvistamat linjaukset 4.11.2026
