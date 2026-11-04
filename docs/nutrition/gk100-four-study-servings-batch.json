@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "batchId": "gk100-four-study-servings",
+  "candidates": [
+    {
+      "recipeId": "hyderabadi-kanabiryani",
+      "packetPath": "docs/nutrition/gk100-biryani-study-release-candidate.json",
+      "classification": {
+        "risk": "HIGH",
+        "reasons": [
+          "GI, koeannoksen paino ja saatava CHO ovat samasta glukoosiviitteisestä ihmiskokeesta. Laskenta kattaa koko koeaterian juomavesineen.",
+          "Ravintolan nimeä ja ainesosien painoja ei ilmoitettu. Uudelleen lämmitetty ravintola-annos erotetaan tuoreesta kerroskypsennetystä kotireseptistä kaikissa neljässä kieliversiossa."
+        ],
+        "contentChange": "GK_ONLY",
+        "contentSummary": "Erillinen historiallinen emiraattilainen kanabiryanin tutkimusvertailu, 253,9 g ruokaa ja 200 ml vettä. GI 52 ja 50 g saatavaa hiilihydraattia antavat 26 GK.",
+        "outcome": "OWNER_DECISION",
+        "review": {
+          "depth": "DEEP",
+          "evidence": "docs/nutrition/gk100-biryani-study-review.md"
+        },
+        "candidateSha256": "318b2135bbef68aaa9f9ecfc78a6b3328884e38576f19a81c082b5b79a4c131d"
+      }
+    },
+    {
+      "recipeId": "indonesialainen-nasi-goreng-aamiaisriisi",
+      "packetPath": "docs/nutrition/gk100-nasi-goreng-study-release-candidate.json",
+      "classification": {
+        "risk": "HIGH",
+        "reasons": [
+          "GI ja hiilihydraattikuorma on rajattu samaan historialliseen koeannokseen.",
+          "Koeateriassa käytettiin osterikastiketta. Nimellinen 25 g ja taulukon 25,10 g:n koostumuslaskelma erotetaan."
+        ],
+        "contentChange": "GK_ONLY",
+        "contentSummary": "Erillinen 129 g:n paistetun jasmiiniriisin koeannos ja 220 ml vettä. Nimelliskuormalla GK 12,5.",
+        "outcome": "OWNER_DECISION",
+        "review": {
+          "depth": "DEEP",
+          "evidence": "docs/nutrition/gk100-rice-bun-study-review.md"
+        },
+        "candidateSha256": "39fc887532bb3f09e202bafb2b9894a25a38ef42a3ba7be62a5b2389ffdc09f3"
+      }
+    },
+    {
+      "recipeId": "baozi",
+      "packetPath": "docs/nutrition/gk100-baozi-study-release-candidate.json",
+      "classification": {
+        "risk": "HIGH",
+        "reasons": [
+          "GI ja hiilihydraattikuorma on rajattu samaan historialliseen koeannokseen.",
+          "Taulukon 2 GI 66 poikkeaa keskustelun luvusta 64. Kotireseptin porsas-kaalitäyte poikkeaa koetuotteesta."
+        ],
+        "contentChange": "GK_ONLY",
+        "contentSummary": "Erillinen 154,7 g:n char siew pau -koeannos ja 200 ml vettä. GK 33 taulukon 2 GI:llä.",
+        "outcome": "OWNER_DECISION",
+        "review": {
+          "depth": "DEEP",
+          "evidence": "docs/nutrition/gk100-rice-bun-study-review.md"
+        },
+        "candidateSha256": "f9ad785665885da39244532c41291b849c938c13a723dd4c7e50f1d3d027f57c"
+      }
+    },
+    {
+      "recipeId": "nasi-lemak",
+      "packetPath": "docs/nutrition/gk100-nasi-lemak-study-release-candidate.json",
+      "classification": {
+        "risk": "HIGH",
+        "reasons": [
+          "Koeannoksen GI ja saatava CHO ovat samasta ihmiskokeesta. Laskenta kattaa kokonaisen testiruoan ja juomaveden.",
+          "Historiallinen tuote on nimetty, mutta lisukepainot ja tuotekoodi puuttuvat. Nelikielinen rajaus erottaa koetuloksen kotireseptistä."
+        ],
+        "contentChange": "GK_ONLY",
+        "contentSummary": "Erillinen historiallinen Old Chang Kee -tutkimusannos, 179,2 g ja 200 ml vettä. GI 66 ja 50 g saatavaa hiilihydraattia antavat 33 GK.",
+        "outcome": "OWNER_DECISION",
+        "review": {
+          "depth": "DEEP",
+          "evidence": "docs/nutrition/gk100-nasi-lemak-study-review.md"
+        },
+        "candidateSha256": "77d770d3e21913949309feb75dbbc8d41c5ef21f6ff50ae5e90edfaaa1865764"
+      }
+    }
+  ]
+}
