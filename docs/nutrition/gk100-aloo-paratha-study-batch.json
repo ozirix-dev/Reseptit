@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "batchId": "gk100-aloo-paratha-study",
+  "candidates": [
+    {
+      "recipeId": "intialainen-aloo-paratha",
+      "packetPath": "docs/nutrition/gk100-aloo-paratha-study-release-candidate.json",
+      "classification": {
+        "risk": "HIGH",
+        "reasons": [
+          "Kokonaisen tutkimusannoksen GI ja saatava CHO ovat samasta kontrollista. CC BY 4.0. Kaikki leivän ainekset sisältyvät yhteen syötteeseen.",
+          "Taikinan tarkat suhteet, jauhotyyppi ja viiteglukoosin muoto jäävät avoimiksi. Neljä kieliversiota rajaavat arvion tutkimusannokseen ja erottavat jogurttia sisältävän kotitarjoilun."
+        ],
+        "contentChange": "GK_ONLY",
+        "contentSummary": "Erillinen 182 g:n perunaparathan tutkimusvertailu, jossa juomana on 250 ml vettä. Raportoitu GI 78,8 ja analysoitu 50,1 g saatavaa hiilihydraattia antavat noin 39,5 GK per tutkimusannos.",
+        "outcome": "OWNER_DECISION",
+        "review": {
+          "depth": "DEEP",
+          "evidence": "docs/nutrition/gk100-aloo-paratha-study-review.md"
+        },
+        "candidateSha256": "13af95c73778862bebc3f53546e1e551703eb5ccea25f4edb9a02ef1079ef671"
+      }
+    }
+  ]
+}

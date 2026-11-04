@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "batchId": "gk100-aloo-paratha-study",
+  "candidates": [
+    {
+      "recipeId": "intialainen-aloo-paratha",
+      "packetPath": "docs/nutrition/gk100-aloo-paratha-study-release-candidate.json",
+      "originalPath": "reseptit/aamupalat/intialainen-aloo-paratha.md",
+      "supportFiles": {
+        "docs/nutrition/gk100-aloo-paratha-study-review.md": "d40c5eb3689667284896745ad5bb67d1f52c6997a954240e42035cd49397b2d3"
+      },
+      "candidateSha256": "13af95c73778862bebc3f53546e1e551703eb5ccea25f4edb9a02ef1079ef671",
+      "originalSha256": "355753da95cc04ac8822f76a8ff51f5017a7b9bf4ce12de727abb1e5e7d6bfbc",
+      "inputSha256": "b16d00b0888a29ab35830ba2d911bf7a78459003af27865571d50eb1bb96aa7e",
+      "servings": 1,
+      "method": "B",
+      "point": 39.4788,
+      "range": null,
+      "uncertainty": "LOW_CONFIDENCE_POINT",
+      "limitation": {
+        "fi": "Tutkimusvertailu koskee 182 g:n kontrolliannosta ilman Fenuflakes-lisää, tarjoiltuna veden kanssa. GI 78,8 mitattiin 15 aikuisella ja saatava hiilihydraatti 50,1 g määritettiin laboratoriossa. Jauhon tyyppi ja taikinan tarkat suhteet jäävät tutkimuksessa avoimiksi. GK-arvion soveltaminen jogurtin kanssa tarjoiltuun kotiversioon edellyttää erillistä vastaavuusnäyttöä.",
+        "en": "This comparison applies to the 182 g study control without added Fenuflakes, served with water. GI 78.8 was measured in 15 adults, and 50.1 g of available carbohydrate was measured in the laboratory. The study leaves the flour type and exact dough proportions unspecified. Applying the GL estimate to the home version served with yogurt requires separate evidence of comparability.",
+        "sv": "Jämförelsen gäller studiens kontrollportion på 182 g utan tillsatta Fenuflakes, serverad med vatten. GI 78,8 mättes hos 15 vuxna. De 50,1 g tillgängliga kolhydraterna bestämdes i laboratorium. Mjölsort och exakta proportioner i degen är ospecificerade. För att tillämpa GB-uppskattningen på hemmavarianten med yoghurt krävs separat stöd för jämförbarhet.",
+        "th": "ข้อมูลเปรียบเทียบนี้ใช้กับอาหารกลุ่มควบคุมหนัก 182 กรัมที่ไม่ได้เติม Fenuflakes และเสิร์ฟพร้อมน้ำ ค่า GI 78.8 วัดในผู้ใหญ่ 15 คน และคาร์โบไฮเดรตที่ย่อยได้ 50.1 กรัมมาจากการวิเคราะห์ในห้องปฏิบัติการ งานวิจัยไม่ได้ระบุชนิดแป้งและสัดส่วนแป้งโดว์อย่างละเอียด การใช้ค่า GL นี้กับสูตรทำที่บ้านซึ่งเสิร์ฟพร้อมโยเกิร์ตต้องมีหลักฐานเพิ่มเติมว่าทั้งสองแบบเทียบเคียงกันได้"
+      },
+      "omittedCho": 0,
+      "sources": [
+        {
+          "title": "Thakurdesai et al. (2024), Potato paratha control, Table 4",
+          "url": "https://www.foodandnutritionjournal.org/volume12number1/glycemic-index-lowering-effects-of-defatted-fenugreek-seed-flakes-fenuflakestm-on-some-indian-food-preparations-a-randomized-controlled-clinical-study/",
+          "kind": "HUMAN_GI",
+          "note": "Glucose-reference GI 78.8 ± 3.6 SEM for the 182 g control portion without added Fenuflakes. n=15. The paper reports 55 g of glucose in the reference drink without specifying its form. CC BY 4.0."
+        },
+        {
+          "title": "Thakurdesai et al. (2024), Potato paratha control, Table 3",
+          "url": "https://www.foodandnutritionjournal.org/volume12number1/glycemic-index-lowering-effects-of-defatted-fenugreek-seed-flakes-fenuflakestm-on-some-indian-food-preparations-a-randomized-controlled-clinical-study/",
+          "kind": "CARBOHYDRATE",
+          "note": "50.1 ± 0.1 g enzymatically determined available carbohydrate per control serving. Plain drinking water contributes zero carbohydrate. CC BY 4.0."
+        }
+      ],
+      "omittedChoStressGkAtGi100": 0,
+      "suggestedRisk": "LOW",
+      "riskSignals": [],
+      "localeFields": "PRESENT",
+      "classification": {
+        "risk": "HIGH",
+        "reasons": [
+          "Kokonaisen tutkimusannoksen GI ja saatava CHO ovat samasta kontrollista. CC BY 4.0. Kaikki leivän ainekset sisältyvät yhteen syötteeseen.",
+          "Taikinan tarkat suhteet, jauhotyyppi ja viiteglukoosin muoto jäävät avoimiksi. Neljä kieliversiota rajaavat arvion tutkimusannokseen ja erottavat jogurttia sisältävän kotitarjoilun."
+        ],
+        "contentChange": "GK_ONLY",
+        "contentSummary": "Erillinen 182 g:n perunaparathan tutkimusvertailu, jossa juomana on 250 ml vettä. Raportoitu GI 78,8 ja analysoitu 50,1 g saatavaa hiilihydraattia antavat noin 39,5 GK per tutkimusannos.",
+        "outcome": "OWNER_DECISION",
+        "review": {
+          "depth": "DEEP",
+          "evidence": "docs/nutrition/gk100-aloo-paratha-study-review.md"
+        },
+        "candidateSha256": "13af95c73778862bebc3f53546e1e551703eb5ccea25f4edb9a02ef1079ef671"
+      },
+      "technical": "PASS",
+      "state": "OWNER_DECISION",
+      "reason": null,
+      "ownerStatus": "PENDING",
+      "publicationAuthorized": false
+    }
+  ],
+  "manifestSha256": "134346318cf0fd1c73838aac37bf9c68c8c6fa8a1e1683002985e0672e76be38"
+}
