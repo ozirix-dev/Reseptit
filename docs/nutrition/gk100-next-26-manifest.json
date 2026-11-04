@@ -1,0 +1,2083 @@
+{
+  "schemaVersion": 1,
+  "batchId": "gk100-next-26-20261104",
+  "candidates": [
+    {
+      "recipeId": "pohjoisafrikkalainen-bissara",
+      "packetPath": "docs/nutrition/gk100-bissara-select-release-candidate.json",
+      "originalPath": "reseptit/aamupalat/pohjoisafrikkalainen-bissara.md",
+      "supportFiles": {
+        "docs/nutrition/gk100-bissara-select-review.md": "396ed12b2473f4266c957ea4933e7b2b7f515f67e1460c21db0f4903563c24d0"
+      },
+      "candidateSha256": "f72c9008819127bfdb42e0bcbf790f5e2bd1e77911ddaa9bb3a3a3e5dd4d77b8",
+      "originalSha256": "1ff5c53d68cced68d1a56360dafccd38096f3192a2d0579cd79214362b9581a3",
+      "inputSha256": "507f09c44f13a77f264f9c5e6dd6f8860ae1b80b950300ebb2e7265d254833a7",
+      "servings": 2,
+      "method": "A",
+      "point": 26.73,
+      "range": null,
+      "uncertainty": "LOW_CONFIDENCE_POINT",
+      "limitation": {
+        "fi": "Keitettyjen kuorittujen härkäpapujen GI 66 on soseen verrokki pienestä ihmiskokeesta. Valkosipulin ja juustokuminan 0,49 g hiilihydraattia annosta kohti jää GK-summasta pois.",
+        "en": "GI 66 for boiled peeled fava beans is a comparator for the purée from a small human study. The sum excludes 0.49 g carbohydrate per serving from garlic and cumin.",
+        "sv": "GI 66 för kokta skalade bondbönor kommer från en liten studie på människor och används som jämförelse för purén. Summan utesluter 0,49 g kolhydrat per portion från vitlök och spiskummin.",
+        "th": "ใช้ค่า GI 66 ของถั่วปากอ้ากะเทาะเปลือกต้มจากการศึกษาในคนกลุ่มเล็กเป็นค่าอ้างอิงสำหรับซุปบด ผลรวมไม่รวมคาร์โบไฮเดรต 0.49 กรัมต่อที่จากกระเทียมและยี่หร่า"
+      },
+      "omittedCho": 0.49,
+      "sources": [
+        {
+          "title": "Thannoun and Al-Kubati",
+          "url": "https://magrj.uomosul.edu.iq/article_35897_bd7b3ce68e2d9336bbdad977a8e4ef58.pdf",
+          "kind": "HUMAN_GI",
+          "note": "Table 4: glucose-scale GI 66, n=3, cooking liquid retained."
+        },
+        {
+          "title": "FSANZ Australian Food Composition Database Release 3, F004193 and F003327",
+          "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd",
+          "kind": "CARBOHYDRATE",
+          "note": "CC BY-SA 3.0 Australia. Original available carbohydrate values converted to serving quantities."
+        },
+        {
+          "title": "Legumi Select Fave Decorticate",
+          "url": "https://www.legumiselect.it/it/prodotti/fave-decorticate/",
+          "kind": "CARBOHYDRATE",
+          "note": "Manufacturer declares 54 g carbohydrate per 100 g dried peeled beans."
+        },
+        {
+          "title": "Itkonen et al., mashed fava bean trial",
+          "url": "https://hal.science/hal-05305562/document",
+          "kind": "BOUND",
+          "note": "Same registered clinical study as the 2024 protein paper. No glucose-reference GI."
+        }
+      ],
+      "omittedChoStressGkAtGi100": 0.49,
+      "suggestedRisk": "MEDIUM",
+      "riskSignals": [
+        "CHO_OMITTED"
+      ],
+      "localeFields": "PRESENT",
+      "classification": {
+        "candidateSha256": "f72c9008819127bfdb42e0bcbf790f5e2bd1e77911ddaa9bb3a3a3e5dd4d77b8",
+        "risk": "HIGH",
+        "reasons": [
+          "Pienen ehjän pavun kokeen GI 66 ei ratkaise soseutuksen vaikutusta."
+        ],
+        "contentChange": "GK_ONLY",
+        "contentSummary": "150 g Legumi Select -kuorittua kuivahärkäpapua kahdelle, soseutus keitinveden kanssa ja punnitut mausteet.",
+        "outcome": "REVIEW_REQUIRED",
+        "review": {
+          "depth": "FOCUSED",
+          "evidence": "docs/nutrition/gk100-bissara-select-review.md"
+        }
+      },
+      "technical": "PASS",
+      "state": "REVIEW_REQUIRED",
+      "reason": "RISK_MATCHED_REVIEW_REQUIRED",
+      "ownerStatus": "PENDING",
+      "publicationAuthorized": false
+    },
+    {
+      "recipeId": "samosa",
+      "packetPath": "docs/nutrition/gk100-samosa-meira-release-candidate.json",
+      "originalPath": "reseptit/alkuruoat/samosa.md",
+      "supportFiles": {
+        "docs/nutrition/gk100-samosa-meira-review.md": "237a5b8ed1574752a60f82b222ee3079a33accccc0a4de55c0b90c635b842c98"
+      },
+      "candidateSha256": "543952fb18fdc6df5c611353a88f710fbac5e229136bdb256a707a32880cbfe6",
+      "originalSha256": "46434c90d2a686eba39107cb9fb68ee4a1d3004ba24adade63de81db470a3140",
+      "inputSha256": "bec58681f2f56c894aeac9dea25157c9003a3c4c9aea76fa672362d98df11c8d",
+      "servings": 4,
+      "method": "B",
+      "point": 44.48579550000001,
+      "range": null,
+      "uncertainty": "LOW_CONFIDENCE_POINT",
+      "limitation": {
+        "fi": "Arvio käyttää kasvis-sambosan GI:tä 60,35 koko annoksen verrokkina. Tutkimusnäytteen taikinan ja täytteen suhde sekä öljyn imeytyminen ovat avoimia.",
+        "en": "The estimate uses vegetable sambosa GI 60.35 as a comparator for the whole serving. The test food’s pastry-to-filling ratio and oil uptake are unknown.",
+        "sv": "Uppskattningen använder GI 60,35 för grönsakssambosa som jämförelse för hela portionen. Förhållandet mellan deg och fyllning samt oljeupptaget i testmaten är okända.",
+        "th": "ค่าประมาณใช้ GI 60.35 ของซัมโบซาผักเป็นค่าอ้างอิงสำหรับทั้งหนึ่งหน่วยบริโภค ยังไม่ทราบสัดส่วนแป้งต่อไส้และปริมาณน้ำมันที่อาหารทดสอบดูดซับ"
+      },
+      "omittedCho": 0,
+      "sources": [
+        {
+          "title": "Sultan Qaboos University",
+          "url": "https://www.squ.edu.om/Portals/10/DNNGalleryPro/uploads/2019/4/24/CAMSResearchReport2011.pdf",
+          "kind": "HUMAN_GI",
+          "note": "Vegetable sambosa with water, glucose-scale GI 60.35."
+        },
+        {
+          "title": "Fineli",
+          "url": "https://fineli.fi/fineli/fi/ohje/19",
+          "kind": "CARBOHYDRATE",
+          "note": "Finnish composition data for dough and filling ingredients."
+        },
+        {
+          "title": "AFCD",
+          "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd",
+          "kind": "CARBOHYDRATE",
+          "note": "Australian composition data for seasonings."
+        },
+        {
+          "title": "Meira Garam Masala, no added salt",
+          "url": "https://meira.fi/tuote/garam-masala-ei-lisattya-suolaa/",
+          "kind": "CARBOHYDRATE",
+          "note": "41 g carbohydrate per 100 g."
+        },
+        {
+          "title": "Ali et al., Omani snack foods",
+          "url": "https://iscientific.org/wp-content/uploads/2022/08/13-ijcbs-22-21-13.pdf",
+          "kind": "BOUND",
+          "note": "Sample description and Table 2. Same evidence chain as the Omani report."
+        }
+      ],
+      "omittedChoStressGkAtGi100": 0,
+      "suggestedRisk": "LOW",
+      "riskSignals": [],
+      "localeFields": "PRESENT",
+      "classification": {
+        "candidateSha256": "543952fb18fdc6df5c611353a88f710fbac5e229136bdb256a707a32880cbfe6",
+        "risk": "HIGH",
+        "reasons": [
+          "Koko annoksen sambosaverrokista puuttuvat täytteen ja taikinan suhteet sekä öljyn imeytyminen."
+        ],
+        "contentChange": "GK_ONLY",
+        "contentSummary": "Neljä annosta kasvis-samosaa punnituilla mausteilla, mukana 1 g Meira Garam Masalaa.",
+        "outcome": "REVIEW_REQUIRED",
+        "review": {
+          "depth": "FOCUSED",
+          "evidence": "docs/nutrition/gk100-samosa-meira-review.md"
+        }
+      },
+      "technical": "PASS",
+      "state": "REVIEW_REQUIRED",
+      "reason": "RISK_MATCHED_REVIEW_REQUIRED",
+      "ownerStatus": "PENDING",
+      "publicationAuthorized": false
+    },
+    {
+      "recipeId": "vietnamilainen-xoi-maapahkinalla",
+      "packetPath": "docs/nutrition/gk100-xoi-coconut-release-candidate.json",
+      "originalPath": "reseptit/aamupalat/vietnamilainen-xoi-maapahkinalla.md",
+      "supportFiles": {
+        "docs/nutrition/gk100-xoi-coconut-review.md": "f26bae4a37ec15fe1fe63350663100ba95ae1d2261c15dcbaad2380f35ce66d5"
+      },
+      "candidateSha256": "b550e0bb54153f1dbed440ca3fa719d8d4a7122a75b5d7f0d76f712112ce8480",
+      "originalSha256": "f5de045c45f50b5085810a20d18a239f5244831bf4ea06b9262b919862e61571",
+      "inputSha256": "937a476c170773ed9677f450e785f462d6e30e39f8de7eea35e1aa79d9ecad74",
+      "servings": 2,
+      "method": "A",
+      "point": 28.0602125,
+      "range": null,
+      "uncertainty": "LOW_CONFIDENCE_POINT",
+      "limitation": {
+        "fi": "Riisin lajike ja höyrytys voivat muuttaa vastetta. Maapähkinän ja tuoreen kookoksen GI ovat verrokkeja. Paahdetun seesamin 0,248 g hiilihydraattia annosta kohti on rajattu GK-summasta.",
+        "en": "Rice variety and steaming can affect the response. The peanut and fresh coconut GI values are comparators. The sum excludes 0.248 g carbohydrate per serving from toasted sesame.",
+        "sv": "Rissort och ångkokning kan påverka responsen. GI för jordnötter och färsk kokos är jämförelsevärden. Summan utesluter 0,248 g kolhydrat per portion från rostat sesamfrö.",
+        "th": "พันธุ์ข้าวและวิธีนึ่งอาจเปลี่ยนการตอบสนอง ค่า GI ของถั่วลิสงและมะพร้าวสดเป็นค่าอ้างอิง ผลรวมไม่รวมคาร์โบไฮเดรต 0.248 กรัมต่อที่จากงาคั่ว"
+      },
+      "omittedCho": 0.248,
+      "sources": [
+        {
+          "title": "Kim et al., steamed glutinous rice",
+          "url": "https://doi.org/10.1017/S0007114518003446",
+          "kind": "HUMAN_GI",
+          "note": "GI 75.7."
+        },
+        {
+          "title": "Jenkins et al., peanut",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/6259925/",
+          "kind": "HUMAN_GI",
+          "note": "GI 13 analogue for roasted peanut."
+        },
+        {
+          "title": "MEXT Standard Tables of Food Composition in Japan, eighth edition, updated 2023, 01151",
+          "url": "https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=1_01151_7&MODE=7",
+          "kind": "CARBOHYDRATE",
+          "note": "Available carbohydrate by weight, 70.5 g per 100 g."
+        },
+        {
+          "title": "FSANZ Australian Food Composition Database, Release 3, F006110 and F008214",
+          "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd",
+          "kind": "CARBOHYDRATE",
+          "note": "CC BY-SA 3.0 Australia under the FSANZ Data User Licence Agreement. Australian values converted to recipe servings."
+        },
+        {
+          "title": "USDA 170169",
+          "url": "https://fdc.nal.usda.gov/food-details/170169/nutrients",
+          "kind": "CARBOHYDRATE",
+          "note": "Total carbohydrate minus fibre."
+        },
+        {
+          "title": "Kamchansuppasin et al., fresh coconut",
+          "url": "https://doi.org/10.47836/ifrj.28.4.15",
+          "kind": "HUMAN_GI",
+          "note": "Tables 2 and 3. GI 59.0 ± 8.2 SEM, n=12, 25 g available carbohydrate and glucose reference. The report does not specify cultivar or maturity. Applied as a fresh coconut analogue."
+        }
+      ],
+      "omittedChoStressGkAtGi100": 0.248,
+      "suggestedRisk": "MEDIUM",
+      "riskSignals": [
+        "CHO_OMITTED"
+      ],
+      "localeFields": "PRESENT",
+      "classification": {
+        "candidateSha256": "b550e0bb54153f1dbed440ca3fa719d8d4a7122a75b5d7f0d76f712112ce8480",
+        "risk": "MEDIUM",
+        "reasons": [
+          "Riisin lajike ja höyrytys voivat muuttaa vastetta. Maapähkinän ja tuoreen kookoksen GI ovat verrokkeja. Paahdetun seesamin 0,248 g hiilihydraattia annosta kohti on rajattu GK-summasta."
+        ],
+        "contentChange": "GK_ONLY",
+        "contentSummary": "Kahdelle 100 g kuivaa tahmariisiä, 100 g paahdettua maapähkinää, 25 g tuoretta kookosta ja 8 g seesamia.",
+        "outcome": "OWNER_DECISION",
+        "review": {
+          "depth": "FOCUSED",
+          "evidence": "docs/nutrition/gk100-xoi-coconut-review.md"
+        }
+      },
+      "technical": "PASS",
+      "state": "OWNER_DECISION",
+      "reason": null,
+      "ownerStatus": "PENDING",
+      "publicationAuthorized": false
+    },
+    {
+      "recipeId": "karibia-bammy-kassavaleipa",
+      "packetPath": "docs/nutrition/gk80-operation80-bammy-release-candidate.json",
+      "originalPath": "reseptit/aamupalat/karibia-bammy-kassavaleipa.md",
+      "supportFiles": {
+        "docs/nutrition/gk80-operation80-batch-62.md": "72d1206ee7d1415785366135a982b2d272fa606c0da33268c969e9997db5bae5"
+      },
+      "candidateSha256": "b4bac69d65dee437fad92d9a4d09b98100aab3a9a5883ecf73cf5c0e2aa8e8c0",
+      "originalSha256": "7d428074d611fe4099d474cae84332bfada53d7be72e7aaba65f2eb440530951",
+      "inputSha256": "aa199e0fddfb6e11e2cc92fe6c9acf685cc9958fac4fff862659a847e977f76a",
+      "servings": 2,
+      "method": "A",
+      "point": 46.558002887499995,
+      "range": null,
+      "uncertainty": "LOW_CONFIDENCE_POINT",
+      "limitation": {
+        "fi": "Arvio koskee kaupallista bammyä. GI 117,55 on casaben mittaus. Leivän paksuus ja kosteus voivat muuttaa vastetta. Limettimehun osuus jää laskelman ulkopuolelle.",
+        "en": "The estimate covers commercially prepared bammy. GI 117.55 was measured for casabe. Thickness and moisture can affect the response. Lime juice carbohydrate is excluded.",
+        "sv": "Uppskattningen gäller färdig bammy. GI 117,55 uppmättes för casabe. Tjocklek och fukt kan påverka responsen. Kolhydraterna från limejuice ingår inte.",
+        "th": "ค่าประมาณใช้กับ Bammy สำเร็จรูป ค่า GI 117.55 วัดจากขนมปังมันสำปะหลังคาซาเบ ความหนาและความชื้นอาจเปลี่ยนการตอบสนอง การคำนวณไม่รวมคาร์โบไฮเดรตจากน้ำมะนาว"
+      },
+      "omittedCho": 0.6015,
+      "sources": [
+        {
+          "title": "Carib Imports retailer label",
+          "url": "https://www.heb.com/product-detail/carib-imports-jamaican-bammy-cassava-cakes/1967608",
+          "kind": "CARBOHYDRATE",
+          "note": "Total carbohydrate minus fibre, 41.87 g per 100 g."
+        },
+        {
+          "title": "Casabe human GI",
+          "url": "https://ve.scielo.org/scielo.php?pid=S1690-31102006000300031&script=sci_arttext",
+          "kind": "HUMAN_GI",
+          "note": "Glucose-scale GI 117.55."
+        },
+        {
+          "title": "Blue Dragon",
+          "url": "https://www.bluedragon.co.uk/products/coconut-milk",
+          "kind": "CARBOHYDRATE",
+          "note": "3.4 g per 100 g."
+        },
+        {
+          "title": "Fineli 11057",
+          "url": "https://fineli.fi/fineli/fi/elintarvikkeet/11057",
+          "kind": "CARBOHYDRATE",
+          "note": "THL CC BY 4.0."
+        },
+        {
+          "title": "USDA lime juice",
+          "url": "https://fdc.nal.usda.gov/food-details/168156/nutrients",
+          "kind": "CARBOHYDRATE",
+          "note": "Total carbohydrate minus fibre."
+        },
+        {
+          "title": "Low carbohydrate coding",
+          "url": "https://doi.org/10.1016/j.jfca.2007.02.004",
+          "kind": "PUBLISHED_CODING",
+          "note": "Code 50 for coconut milk and avocado."
+        },
+        {
+          "title": "FSANZ cassava guidance",
+          "url": "https://www.foodstandards.gov.au/consumer/prevention-of-foodborne-illness/cassava",
+          "kind": "BOUND",
+          "note": "Cassava safety guidance. Use the named commercially processed product and follow the package."
+        }
+      ],
+      "omittedChoStressGkAtGi100": 0.6015,
+      "suggestedRisk": "MEDIUM",
+      "riskSignals": [
+        "CHO_OMITTED",
+        "ASSIGNED_GI"
+      ],
+      "localeFields": "PRESENT",
+      "classification": {
+        "candidateSha256": "b4bac69d65dee437fad92d9a4d09b98100aab3a9a5883ecf73cf5c0e2aa8e8c0",
+        "risk": "HIGH",
+        "reasons": [
+          "Casabe-verrokki ja teollisesti käsitelty kassava edellyttävät erillistä menetelmä- ja turvallisuusarviota."
+        ],
+        "contentChange": "GK_ONLY",
+        "contentSummary": "Kahdelle kaupallinen Carib Imports -kassavaleipä ja koko 200 g Blue Dragon -kookosmaitoa.",
+        "outcome": "REVIEW_REQUIRED",
+        "review": {
+          "depth": "FOCUSED",
+          "evidence": "docs/nutrition/gk80-operation80-batch-62.md"
+        }
+      },
+      "technical": "PASS",
+      "state": "REVIEW_REQUIRED",
+      "reason": "RISK_MATCHED_REVIEW_REQUIRED",
+      "ownerStatus": "PENDING",
+      "publicationAuthorized": false
+    },
+    {
+      "recipeId": "vietnamilainen-banh-xeo-aamiaisletut",
+      "packetPath": "docs/nutrition/gk80-operation80-banh-xeo-release-candidate.json",
+      "originalPath": "reseptit/aamupalat/vietnamilainen-banh-xeo-aamiaisletut.md",
+      "supportFiles": {
+        "docs/nutrition/gk80-operation80-batch-23.md": "ec4426e7eb10ae5ea01e4a26601d46e704c73b04896fcf6fd18822628e001562"
+      },
+      "candidateSha256": "6e94bc4ed556db790f5cd5509a89604607f2b4b223bd4786a430680d3083550d",
+      "originalSha256": "bd4fbd1c77bd3d5383e5986c71bc87e5b2c0c0fd6ac1faa8b660b300b7b2136d",
+      "inputSha256": "45dcaabb7bdc627d4e96d7ea2928a605a02c4b03d6137b6879ddd74999b3fe13",
+      "servings": 2,
+      "method": "B",
+      "point": 32.363440000000004,
+      "range": null,
+      "uncertainty": "LOW_CONFIDENCE_POINT",
+      "limitation": {
+        "fi": "Taikinan GI perustuu riisidosaan, jossa on urad-papua. Bánh xèon taikinassa on kookosmaitoa. Kypsennettyjen itujen GI on laskentakoodi.",
+        "en": "Batter GI uses rice dosa as a comparator. Dosa contains urad dal, while bánh xèo batter contains coconut milk. Cooked sprouts use an assigned GI code.",
+        "sv": "Smetens GI bygger på en jämförelse med risdosa, som innehåller uradbönor. Bánh xèo innehåller kokosmjölk. Tillagade groddar har en tilldelad GI-kod.",
+        "th": "ค่า GI ของแป้งอ้างอิงโดซาข้าวที่มีถั่วอูรัด ส่วนแป้งบั๊ญแส่วมีกะทิ ถั่วงอกที่ปรุงสุกใช้ค่า GI ที่กำหนดเพื่อการคำนวณ"
+      },
+      "omittedCho": 0,
+      "sources": [
+        {
+          "title": "Tan et al., rice dosa",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29759105/",
+          "kind": "HUMAN_GI",
+          "note": "GI 76 is applied once to total batter carbohydrate."
+        },
+        {
+          "title": "Fineli 182",
+          "url": "https://fineli.fi/fineli/fi/elintarvikkeet/182",
+          "kind": "CARBOHYDRATE",
+          "note": "THL Fineli CC BY 4.0."
+        },
+        {
+          "title": "AFCD F002991, F009335, F007422, F008806",
+          "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd",
+          "kind": "CARBOHYDRATE",
+          "note": "FSANZ Release 3, CC BY-SA 3.0 Australia."
+        },
+        {
+          "title": "Assigned GI code",
+          "url": "https://doi.org/10.1016/j.jfca.2007.02.004",
+          "kind": "B_CODING",
+          "note": "Sprouts use code 50."
+        }
+      ],
+      "omittedChoStressGkAtGi100": 0,
+      "suggestedRisk": "MEDIUM",
+      "riskSignals": [
+        "ASSIGNED_GI"
+      ],
+      "localeFields": "PRESENT",
+      "classification": {
+        "candidateSha256": "6e94bc4ed556db790f5cd5509a89604607f2b4b223bd4786a430680d3083550d",
+        "risk": "HIGH",
+        "reasons": [
+          "Koko taikinan dosaverrokki sekä itujen laskentakoodi vaativat syväkatselmoinnin."
+        ],
+        "contentChange": "GK_ONLY",
+        "contentSummary": "Kahdelle ohuet letut 100 g riisijauhosta, 200 g kookosmaidosta ja 2 g kurkumasta sekä erikseen kypsennetyt katkaravut ja idut.",
+        "outcome": "REVIEW_REQUIRED",
+        "review": {
+          "depth": "FOCUSED",
+          "evidence": "docs/nutrition/gk80-operation80-batch-23.md"
+        }
+      },
+      "technical": "PASS",
+      "state": "REVIEW_REQUIRED",
+      "reason": "RISK_MATCHED_REVIEW_REQUIRED",
+      "ownerStatus": "PENDING",
+      "publicationAuthorized": false
+    },
+    {
+      "recipeId": "baozi",
+      "packetPath": "docs/nutrition/gk80-operation80-baozi-release-candidate.json",
+      "originalPath": "reseptit/paaruoat/baozi.md",
+      "supportFiles": {
+        "docs/nutrition/gk80-operation80-baozi.md": "b924e594db261355cc1717417e87ebcf7aa545339a9ab2791bc2d9cc6eb53415"
+      },
+      "candidateSha256": "84b1c4323c48bcf0a830eb94f045b55898f817ec5c149ee6aed58c4e8aec147a",
+      "originalSha256": "af8efd8db3bbfc7a57f4e75fe537f88b03e9dfe4227ae586905a6c046b60f208",
+      "inputSha256": "cc04fe531d5dd3c068938ff20e7040793fc141f83a2de076963f6fc23fb4aff4",
+      "servings": 4,
+      "method": "B",
+      "point": 31.203364,
+      "range": null,
+      "uncertainty": "LOW_CONFIDENCE_POINT",
+      "limitation": {
+        "fi": "GI 39,1 on täytetyn höyrysämpylän verrokki koko baozille. Tutkimus ei erittele taikinan ja täytteen suhdetta.",
+        "en": "GI 39.1 comes from a filled steamed bun proxy for the whole baozi. The study does not specify the dough-to-filling ratio.",
+        "sv": "GI 39,1 bygger på en jämförbar fylld ångbulle för hela baozin. Studien anger inget förhållande mellan deg och fyllning.",
+        "th": "ค่า GI 39.1 ใช้ซาลาเปานึ่งไส้เนื้อเป็นตัวเทียบทั้งลูก งานวิจัยไม่ได้ระบุสัดส่วนแป้งต่อไส้"
+      },
+      "omittedCho": 0,
+      "sources": [
+        {
+          "title": "Yang et al.",
+          "url": "https://www.wjgnet.com/1007-9327/tables/v12/i21/3430.htm",
+          "kind": "HUMAN_GI",
+          "note": "Yang et al., Table 2. Glucose-scale GI 39.1 for the meat and shallot steamed bun."
+        },
+        {
+          "title": "Fineli",
+          "url": "https://fineli.fi/fineli/fi/ohje/19",
+          "kind": "CARBOHYDRATE",
+          "note": "THL Fineli. Wheat flour, sugar, Chinese cabbage and starch composition from the calculation note."
+        },
+        {
+          "title": "AFCD",
+          "url": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+          "kind": "CARBOHYDRATE",
+          "note": "FSANZ AFCD. Yeast, spring onion and ginger composition from the calculation note."
+        },
+        {
+          "title": "Kikkoman",
+          "url": "https://www.kikkoman.co.uk/products/detail/fs-kikkoman-naturally-brewed-soy-sauce",
+          "kind": "CARBOHYDRATE",
+          "note": "UK Naturally Brewed Soy Sauce. 3.2 g carbohydrate per 100 ml."
+        }
+      ],
+      "omittedChoStressGkAtGi100": 0,
+      "suggestedRisk": "LOW",
+      "riskSignals": [],
+      "localeFields": "PRESENT",
+      "classification": {
+        "candidateSha256": "84b1c4323c48bcf0a830eb94f045b55898f817ec5c149ee6aed58c4e8aec147a",
+        "risk": "HIGH",
+        "reasons": [
+          "Koko sämpylän GK on herkkä GI-verrokille. Koeannoksen kuori–täytesuhde puuttuu."
+        ],
+        "contentChange": "GK_ONLY",
+        "contentSummary": "Neljä annosta punnittuja, höyrytettyjä porsas–kaalisämpylöitä.",
+        "outcome": "REVIEW_REQUIRED",
+        "review": {
+          "depth": "FOCUSED",
+          "evidence": "docs/nutrition/gk80-operation80-baozi.md"
+        }
+      },
+      "technical": "PASS",
+      "state": "REVIEW_REQUIRED",
+      "reason": "RISK_MATCHED_REVIEW_REQUIRED",
+      "ownerStatus": "PENDING",
+      "publicationAuthorized": false
+    },
+    {
+      "recipeId": "bouillabaisse",
+      "packetPath": "docs/nutrition/gk80-operation80-bouillabaisse-release-candidate.json",
+      "originalPath": "reseptit/paaruoat/bouillabaisse.md",
+      "supportFiles": {
+        "docs/nutrition/gk80-operation80-batch-12.md": "62f928a2b02f11cae2e956627517ec541a41b891766773616e2c1391ec18869b"
+      },
+      "candidateSha256": "2ab755ecfc4d5de994feb1e1e1da14b6aa336a2eb15cdb3163efcc0eac71d617",
+      "originalSha256": "15a7127f67bc3d2b2707afe6137c05ddaecf8e39e424a4c66502c8e4a7a9218c",
+      "inputSha256": "3e199b3ad8ae257e64cee74a176324471c707dfd7bdef3ab82dcc6e13728da3a",
+      "servings": 4,
+      "method": "B",
+      "point": null,
+      "range": {
+        "min": 22.2397105,
+        "max": 22.6916185
+      },
+      "uncertainty": "NAMED_SCENARIOS",
+      "limitation": {
+        "fi": "Arvio sisältää paahdetun leivän. Vaihteluväli kuvaa kahden paahtoleipäverrokin vaikutusta. Peruna käyttää keitetyn perunan verrokkia, ja osalle keiton aineksista käytetään laskennallisia GI-koodeja.",
+        "en": "The estimate includes the toast. The range reflects two toasted bread comparators. Potatoes use a cooked potato comparator and some soup ingredients use assigned GI codes.",
+        "sv": "Uppskattningen omfattar det rostade brödet. Intervallet bygger på två jämförelsebröd. Potatisen jämförs med kokt potatis och vissa ingredienser i soppan får tilldelade GI-koder.",
+        "th": "ค่าประมาณรวมขนมปังปิ้งและใช้ขนมปังปิ้งสองชนิดเป็นตัวเปรียบเทียบ มันฝรั่งอ้างอิงจากมันฝรั่งสุก ส่วนผสมบางอย่างในซุปใช้ค่า GI ที่กำหนดตามกลุ่ม"
+      },
+      "omittedCho": 0,
+      "sources": [
+        {
+          "title": "Burton and Lightowler, toasted white bread",
+          "url": "https://doi.org/10.1038/sj.ejcn.1602746",
+          "kind": "HUMAN_GI",
+          "note": "Fresh toast comparators, glucose-scale values 63 and 66 as tabulated by Atkinson et al."
+        },
+        {
+          "title": "Atkinson et al., supplemental table A1",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2584181/",
+          "kind": "HUMAN_GI",
+          "note": "Rows 189 and 190."
+        },
+        {
+          "title": "Yang et al., cooked potato",
+          "url": "https://www.wjgnet.com/1007-9327/full/v12/i21/3430-T3.htm",
+          "kind": "HUMAN_GI",
+          "note": "Measured GI 66.4, rounded to the pilot value 66."
+        },
+        {
+          "title": "Fineli",
+          "url": "https://fineli.fi/fineli/fi/ohje/19",
+          "kind": "CARBOHYDRATE",
+          "note": "CC BY 4.0."
+        },
+        {
+          "title": "AFCD F005968",
+          "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd",
+          "kind": "CARBOHYDRATE",
+          "note": "CC BY-SA 3.0 Australia."
+        },
+        {
+          "title": "USDA saffron",
+          "url": "https://fdc.nal.usda.gov/food-details/170934/nutrients",
+          "kind": "CARBOHYDRATE",
+          "note": "Total carbohydrate minus fibre."
+        },
+        {
+          "title": "USDA dried thyme",
+          "url": "https://fdc.nal.usda.gov/food-details/170938/nutrients",
+          "kind": "CARBOHYDRATE",
+          "note": "Total carbohydrate minus fibre."
+        },
+        {
+          "title": "GI coding method",
+          "url": "https://doi.org/10.2337/dc08-1239",
+          "kind": "PUBLISHED_CODING",
+          "note": "Vegetable and spice codes."
+        },
+        {
+          "title": "Low carbohydrate food coding",
+          "url": "https://doi.org/10.1016/j.jfca.2007.02.004",
+          "kind": "PUBLISHED_CODING",
+          "note": "Mussel coding."
+        }
+      ],
+      "omittedChoStressGkAtGi100": 0,
+      "suggestedRisk": "MEDIUM",
+      "riskSignals": [
+        "NAMED_SCENARIO_RANGE",
+        "ASSIGNED_GI"
+      ],
+      "localeFields": "PRESENT",
+      "classification": {
+        "candidateSha256": "2ab755ecfc4d5de994feb1e1e1da14b6aa336a2eb15cdb3163efcc0eac71d617",
+        "risk": "MEDIUM",
+        "reasons": [
+          "Arvio sisältää paahdetun leivän. Vaihteluväli kuvaa kahden paahtoleipäverrokin vaikutusta. Peruna käyttää keitetyn perunan verrokkia, ja osalle keiton aineksista käytetään laskennallisia GI-koodeja."
+        ],
+        "contentChange": "GK_ONLY",
+        "contentSummary": "Neljälle 60 g kypsää simpukanlihaa, 1 000 g laimennettua kalalientä ja 120 g punnittua vaaleaa leipää paahdettuna.",
+        "outcome": "OWNER_DECISION",
+        "review": {
+          "depth": "FOCUSED",
+          "evidence": "docs/nutrition/gk80-operation80-batch-12.md"
+        }
+      },
+      "technical": "PASS",
+      "state": "OWNER_DECISION",
+      "reason": null,
+      "ownerStatus": "PENDING",
+      "publicationAuthorized": false
+    },
+    {
+      "recipeId": "tunisialainen-brik",
+      "packetPath": "docs/nutrition/gk80-operation80-brik-release-candidate.json",
+      "originalPath": "reseptit/alkuruoat/tunisialainen-brik.md",
+      "supportFiles": {
+        "docs/nutrition/gk80-operation80-batch-45.md": "6ee684fde3f6d478685d96cf760d7962b5c8eead2d79400491ae0ea05954132a"
+      },
+      "candidateSha256": "39c826a0d211c2264e78e8cd530c77b1f3adc93cfe2a4b02cedee6b48d338280",
+      "originalSha256": "1eb06f3db86fba5a21db1e252bdc307c37cbe146e1de3417d2d6f3f827ffcd7a",
+      "inputSha256": "7b7a69c619d0bf1009a196203680dd24111ded635afaf3de1b82996734e3772b",
+      "servings": 4,
+      "method": "A",
+      "point": 5.2815625,
+      "range": null,
+      "uncertainty": "LOW_CONFIDENCE_POINT",
+      "limitation": {
+        "fi": "GI 50 on paistetun kevätrullan verrokki. Kuori ja täyte voivat muuttaa vastetta. Sitruunamehun 0,14 g hiilihydraattia annosta kohti jää laskelman ulkopuolelle.",
+        "en": "GI 50 is a fried spring roll comparator. The wrapper and filling can affect the response. Lemon juice contributes 0.14 g excluded carbohydrate per serving.",
+        "sv": "GI 50 kommer från en friterad vårrulle. Deg och fyllning kan påverka responsen. Citronsaftens 0,14 g kolhydrat per portion ingår inte.",
+        "th": "ค่า GI 50 อ้างอิงปอเปี๊ยะทอด แผ่นแป้งและไส้อาจเปลี่ยนการตอบสนอง ไม่รวมคาร์โบไฮเดรตจากน้ำเลมอน 0.14 กรัมต่อที่"
+      },
+      "omittedCho": 0.14,
+      "sources": [
+        {
+          "title": "Chen et al., spring roll",
+          "url": "https://www.wjgnet.com/1007-9327/full/v16/i12/1512.htm",
+          "kind": "HUMAN_GI",
+          "note": "GI 50 on the glucose scale."
+        },
+        {
+          "title": "JR Feuille de Brick",
+          "url": "https://www.dabas.com/productsheet/07330177105295",
+          "kind": "CARBOHYDRATE",
+          "note": "60 g per 100 g."
+        },
+        {
+          "title": "Fineli 858, 11557",
+          "url": "https://fineli.fi/fineli/fi/ohje/19",
+          "kind": "CARBOHYDRATE",
+          "note": "THL CC BY 4.0."
+        },
+        {
+          "title": "USDA SR Legacy 02054 and 11297",
+          "url": "https://fdc.nal.usda.gov/",
+          "kind": "CARBOHYDRATE",
+          "note": "Capers and parsley, total carbohydrate minus fibre."
+        }
+      ],
+      "omittedChoStressGkAtGi100": 0.14,
+      "suggestedRisk": "MEDIUM",
+      "riskSignals": [
+        "CHO_OMITTED"
+      ],
+      "localeFields": "PRESENT",
+      "classification": {
+        "candidateSha256": "39c826a0d211c2264e78e8cd530c77b1f3adc93cfe2a4b02cedee6b48d338280",
+        "risk": "HIGH",
+        "reasons": [
+          "Kevätrullan GI-siirto brikin kuoreen ja täytteeseen vaatii syväkatselmoinnin."
+        ],
+        "contentChange": "GK_ONLY",
+        "contentSummary": "Neljä 68 g:n yhteispainoon punnittua JR Feuille de Brick -arkkia ja punnittu täyte.",
+        "outcome": "REVIEW_REQUIRED",
+        "review": {
+          "depth": "FOCUSED",
+          "evidence": "docs/nutrition/gk80-operation80-batch-45.md"
+        }
+      },
+      "technical": "PASS",
+      "state": "REVIEW_REQUIRED",
+      "reason": "RISK_MATCHED_REVIEW_REQUIRED",
+      "ownerStatus": "PENDING",
+      "publicationAuthorized": false
+    },
+    {
+      "recipeId": "marjainen-chiavanukas",
+      "packetPath": "docs/nutrition/gk80-operation80-chiavanukas-release-candidate.json",
+      "originalPath": "reseptit/aamupalat/marjainen-chiavanukas.md",
+      "supportFiles": {
+        "docs/nutrition/gk80-operation80-batch-38.md": "b18a7b897968565408bb36d9d012b22af6b6567a8bc2bf393612b830344ea9e3"
+      },
+      "candidateSha256": "2bf355ad6adfcbed50701f8f7674c664076839641d716faa2cbeac2f73a6dc22",
+      "originalSha256": "c4c9c7a14345199304e7221fab28633a4a9abeffa3c99afc780cb5360824ec22",
+      "inputSha256": "5049f7d32bdd61eeb86be09f3108e69fd3a0bd46ea327a1d37c690cbe383ec8a",
+      "servings": 4,
+      "method": "A",
+      "point": null,
+      "range": {
+        "min": 1.6210575,
+        "max": 1.8067950000000002
+      },
+      "uncertainty": "NAMED_SCENARIOS",
+      "limitation": {
+        "fi": "Vadelman verrokit ovat mansikka ja kanadalainen villimustikka. Villimustikka toimii myös metsämustikan verrokkina. Chian ja vaniljauutteen noin 0,34 g hiilihydraattia annosta kohti jää pois.",
+        "en": "Strawberry and Canadian wild blueberry are raspberry comparators. Wild blueberry also serves as the bilberry comparator. About 0.34 g carbohydrate per serving from chia and vanilla extract is excluded.",
+        "sv": "Jordgubbar och kanadensiska vilda blåbär används som jämförelse för hallon. Vilda blåbär används också som jämförelse för skogsblåbär. Cirka 0,34 g kolhydrat per portion från chia och vanilj ingår inte.",
+        "th": "ค่า GI ของราสป์เบอร์รีอ้างอิงสตรอว์เบอร์รีและบลูเบอร์รีป่าแคนาดา และใช้บลูเบอร์รีป่าเทียบกับบิลเบอร์รีด้วย ไม่รวมคาร์โบไฮเดรตจากเจียและวานิลลาประมาณ 0.34 กรัมต่อที่"
+      },
+      "omittedCho": 0.335325,
+      "sources": [
+        {
+          "title": "Sydney GI database",
+          "url": "https://glycemicindex.com/gi-search/",
+          "kind": "HUMAN_GI",
+          "note": "Raw strawberry GI 40 and Canadian wild blueberry GI 53."
+        },
+        {
+          "title": "Fineli 448 and 442",
+          "url": "https://fineli.fi/fineli/fi/ohje/19",
+          "kind": "CARBOHYDRATE",
+          "note": "THL CC BY 4.0."
+        },
+        {
+          "title": "FAGE Total 0%",
+          "url": "https://gr.fage/yogurts/total-0/total-0-500g",
+          "kind": "CARBOHYDRATE",
+          "note": "3.0 g per 100 g."
+        },
+        {
+          "title": "Midsona chia",
+          "url": "https://www.midsonafoodservice.fi/tuotteet/siemenet/chiasiemen/",
+          "kind": "CARBOHYDRATE",
+          "note": "1.8 g per 100 g."
+        },
+        {
+          "title": "Alpro",
+          "url": "https://www.alpro.com/fi/tuotteemme/juomat/mantelijuoma-makeuttamaton",
+          "kind": "CARBOHYDRATE",
+          "note": "0 g per 100 ml."
+        },
+        {
+          "title": "USDA vanilla extract",
+          "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/SR/SR28/reports/sr28fg02.pdf",
+          "kind": "CARBOHYDRATE",
+          "note": "12.65 g per 100 g."
+        },
+        {
+          "title": "Low carbohydrate coding",
+          "url": "https://doi.org/10.1016/j.jfca.2007.02.004",
+          "kind": "PUBLISHED_CODING",
+          "note": "Yogurt code 50."
+        }
+      ],
+      "omittedChoStressGkAtGi100": 0.335325,
+      "suggestedRisk": "MEDIUM",
+      "riskSignals": [
+        "NAMED_SCENARIO_RANGE",
+        "CHO_OMITTED",
+        "ASSIGNED_GI"
+      ],
+      "localeFields": "PRESENT",
+      "classification": {
+        "candidateSha256": "2bf355ad6adfcbed50701f8f7674c664076839641d716faa2cbeac2f73a6dc22",
+        "risk": "HIGH",
+        "reasons": [
+          "Chian ja vaniljauutteen poisjätön suhteellinen stressivaikutus ylittää katselmoinnin seulontarajan."
+        ],
+        "contentChange": "GK_ONLY",
+        "contentSummary": "Neljälle 250 ml Alpro No Sugars -mantelijuomaa, FAGE Total 0 % -jogurttia, punnitut marjat ja vaniljauute. Valinnainen makeutus pois.",
+        "outcome": "REVIEW_REQUIRED",
+        "review": {
+          "depth": "FOCUSED",
+          "evidence": "docs/nutrition/gk80-operation80-batch-38.md"
+        }
+      },
+      "technical": "PASS",
+      "state": "REVIEW_REQUIRED",
+      "reason": "RISK_MATCHED_REVIEW_REQUIRED",
+      "ownerStatus": "PENDING",
+      "publicationAuthorized": false
+    },
+    {
+      "recipeId": "kookos-lime-kanacurry",
+      "packetPath": "docs/nutrition/gk80-operation80-coconut-lime-release-candidate.json",
+      "technical": "FAIL",
+      "state": "BLOCKED",
+      "reason": "INVALID_SOURCE_RECORD",
+      "ownerStatus": "PENDING",
+      "publicationAuthorized": false
+    },
+    {
+      "recipeId": "dal-makhani",
+      "packetPath": "docs/nutrition/gk80-operation80-dal-makhani-release-candidate.json",
+      "originalPath": "reseptit/paaruoat/dal-makhani.md",
+      "supportFiles": {
+        "docs/nutrition/gk80-operation80-batch-50.md": "297baab3cd9808d53d9773014225044d69ba7e332db72a62446ab88db84177c2"
+      },
+      "candidateSha256": "4d3f07c1d03b43f7193391c836747ceeb3efdafd781f1e1ee5cec881ae50a0ab",
+      "originalSha256": "999691495f191f94a25664ff939f15ee350249745f07bbc2f578ecf408f21b43",
+      "inputSha256": "633fd40812c873450075ea36192ccd074cb9e1ed31507c504d647d64c6af96d1",
+      "servings": 4,
+      "method": "A",
+      "point": 16.940692499999997,
+      "range": null,
+      "uncertainty": "LOW_CONFIDENCE_POINT",
+      "limitation": {
+        "fi": "Arvio koskee pataa. Keittäminen ja osittainen murskaaminen voivat muuttaa papujen GI-vastetta. Garam masalasta jää pois enintään 0,50 g hiilihydraattia annosta kohti.",
+        "en": "The estimate covers the stew. Boiling and partial mashing may affect the beans’ GI response. Up to 0.50 g carbohydrate per serving from garam masala is excluded.",
+        "sv": "Uppskattningen gäller grytan. Kokning och mosning kan påverka bönornas GI-respons. Högst 0,50 g kolhydrat per portion från garam masala ingår inte.",
+        "th": "ค่าประมาณใช้กับแกง การต้มและบดถั่วบางส่วนอาจเปลี่ยนการตอบสนอง ไม่รวมคาร์โบไฮเดรตจากการัมมาซาลาไม่เกิน 0.50 กรัมต่อที่"
+      },
+      "omittedCho": 0.5,
+      "sources": [
+        {
+          "title": "Finnish Food Authority",
+          "url": "https://www.ruokavirasto.fi/en/foodstuffs/food-sector/food-information/labelling/instructions-for-use-and-warning/beans/",
+          "kind": "BOUND",
+          "note": "Soaking and boiling instructions for dried beans."
+        },
+        {
+          "title": "Urad GI",
+          "url": "https://doi.org/10.1093/ajcn/76.1.5",
+          "kind": "HUMAN_GI",
+          "note": "Steamed urad GI 43."
+        },
+        {
+          "title": "Kidney bean GI",
+          "url": "https://ojs.uomosul.edu.iq/index.php/magrj/article/download/44591/44337",
+          "kind": "HUMAN_GI",
+          "note": "Boiled kidney beans GI 26."
+        },
+        {
+          "title": "IFCT 2017 B004",
+          "url": "https://www.nin.res.in/ebooks/IFCT2017.pdf",
+          "kind": "CARBOHYDRATE",
+          "note": "Whole dry urad."
+        },
+        {
+          "title": "USDA 173744",
+          "url": "https://fdc.nal.usda.gov/food-details/173744/nutrients",
+          "kind": "CARBOHYDRATE",
+          "note": "Total carbohydrate minus fibre."
+        },
+        {
+          "title": "Mutti Polpa",
+          "url": "https://mutti-parma.com/en/products/polpa/",
+          "kind": "CARBOHYDRATE",
+          "note": "3.9 g per 100 g."
+        },
+        {
+          "title": "Fineli",
+          "url": "https://fineli.fi/fineli/fi/ohje/19",
+          "kind": "CARBOHYDRATE",
+          "note": "THL CC BY 4.0."
+        },
+        {
+          "title": "AFCD",
+          "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd",
+          "kind": "CARBOHYDRATE",
+          "note": "CC BY-SA 3.0 Australia."
+        },
+        {
+          "title": "GI coding",
+          "url": "https://doi.org/10.2337/dc08-1239",
+          "kind": "PUBLISHED_CODING",
+          "note": "Vegetable and seasoning codes."
+        },
+        {
+          "title": "Low carbohydrate coding",
+          "url": "https://doi.org/10.1016/j.jfca.2007.02.004",
+          "kind": "PUBLISHED_CODING",
+          "note": "Low carbohydrate food codes."
+        }
+      ],
+      "omittedChoStressGkAtGi100": 0.5,
+      "suggestedRisk": "MEDIUM",
+      "riskSignals": [
+        "CHO_OMITTED",
+        "ASSIGNED_GI"
+      ],
+      "localeFields": "PRESENT",
+      "classification": {
+        "candidateSha256": "4d3f07c1d03b43f7193391c836747ceeb3efdafd781f1e1ee5cec881ae50a0ab",
+        "risk": "HIGH",
+        "reasons": [
+          "Kidneypavun turvallinen valmistus ja kuivan pavun hiilihydraatin siirtymä vaativat erillisen syväkatselmoinnin."
+        ],
+        "contentChange": "GK_ONLY",
+        "contentSummary": "Neljälle punnitut kuivat urad- ja kidneypavut, Mutti Polpa ja määritelty liotus ja keitto. Arvio kattaa padan.",
+        "outcome": "REVIEW_REQUIRED",
+        "review": {
+          "depth": "FOCUSED",
+          "evidence": "docs/nutrition/gk80-operation80-batch-50.md"
+        }
+      },
+      "technical": "PASS",
+      "state": "REVIEW_REQUIRED",
+      "reason": "RISK_MATCHED_REVIEW_REQUIRED",
+      "ownerStatus": "PENDING",
+      "publicationAuthorized": false
+    },
+    {
+      "recipeId": "dim-sum",
+      "packetPath": "docs/nutrition/gk80-operation80-dim-sum-release-candidate.json",
+      "originalPath": "reseptit/alkuruoat/dim-sum.md",
+      "supportFiles": {
+        "docs/nutrition/gk80-operation80-batch-51.md": "6d9e41f38ad021e1c1f83c4bfa85c548a0d30869caac2c2c4c78153e3679d478"
+      },
+      "candidateSha256": "ee20c022f4cff3235f4bf449f234da31340b8e3ce928c577ecd235a016765a97",
+      "originalSha256": "a40bdd3743cf62ff6ae9e463b07e4d02653afebc31f568426538ad47a26c6b41",
+      "inputSha256": "e68980e9d7a38e1a87650e570474dda037066a42f43cd5e38b4366890fd4b819",
+      "servings": 4,
+      "method": "A",
+      "point": 31.922699999999995,
+      "range": null,
+      "uncertainty": "LOW_CONFIDENCE_POINT",
+      "limitation": {
+        "fi": "Baolle ja nyyteille käytetään eri GI-verrokkeja. Soijan ja etikan osuus, noin 0,50 g hiilihydraattia annosta kohti, jää GK-summan ulkopuolelle.",
+        "en": "Bao and dumplings use separate GI comparators. About 0.50 g carbohydrate per serving from soy sauce and vinegar is excluded.",
+        "sv": "Bao och degknyten använder olika GI-jämförelser. Cirka 0,50 g kolhydrat per portion från soja och vinäger ingår inte.",
+        "th": "หมั่นโถวและเกี๊ยวใช้ค่า GI อ้างอิงคนละชนิด ไม่รวมคาร์โบไฮเดรตจากซีอิ๊วและน้ำส้มสายชูประมาณ 0.50 กรัมต่อที่"
+      },
+      "omittedCho": 0.49874999999999997,
+      "sources": [
+        {
+          "title": "Yang et al., Table 2",
+          "url": "https://www.wjgnet.com/1007-9327/full/v12/i21/3430-T2.htm",
+          "kind": "HUMAN_GI",
+          "note": "Steamed wheat bread GI 88.1 and filled dumpling GI 28."
+        },
+        {
+          "title": "Wonderbao",
+          "url": "https://wonderbao.co/collections/classic-packs/products/plain-baos",
+          "kind": "CARBOHYDRATE",
+          "note": "52.9 g per 100 g."
+        },
+        {
+          "title": "QQ Century",
+          "url": "https://qqcentury.com/wonton-skin/",
+          "kind": "CARBOHYDRATE",
+          "note": "50.8 g per 100 g."
+        },
+        {
+          "title": "Fineli 27 and 929",
+          "url": "https://fineli.fi/fineli/fi/ohje/19",
+          "kind": "CARBOHYDRATE",
+          "note": "THL CC BY 4.0."
+        },
+        {
+          "title": "AFCD F006250",
+          "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd",
+          "kind": "CARBOHYDRATE",
+          "note": "CC BY-SA 3.0 Australia."
+        },
+        {
+          "title": "Kikkoman",
+          "url": "https://www.kikkoman.co.uk/products/detail/fs-kikkoman-naturally-brewed-soy-sauce",
+          "kind": "CARBOHYDRATE",
+          "note": "3.2 g per 100 ml."
+        }
+      ],
+      "omittedChoStressGkAtGi100": 0.49874999999999997,
+      "suggestedRisk": "MEDIUM",
+      "riskSignals": [
+        "CHO_OMITTED"
+      ],
+      "localeFields": "PRESENT",
+      "classification": {
+        "candidateSha256": "ee20c022f4cff3235f4bf449f234da31340b8e3ce928c577ecd235a016765a97",
+        "risk": "HIGH",
+        "reasons": [
+          "Wonderbaon koostumus on varmennettu, mutta höyryleipäverrokkien ero ja QQ Century -kuoren sidos vaativat jatkokatselmoinnin."
+        ],
+        "contentChange": "GK_ONLY",
+        "contentSummary": "Neljälle nimetyt QQ Century -nyytinkuoret, Wonderbao-sämpylät ja erillinen punnittu dippi.",
+        "outcome": "REVIEW_REQUIRED",
+        "review": {
+          "depth": "FOCUSED",
+          "evidence": "docs/nutrition/gk80-operation80-batch-51.md"
+        }
+      },
+      "technical": "PASS",
+      "state": "REVIEW_REQUIRED",
+      "reason": "RISK_MATCHED_REVIEW_REQUIRED",
+      "ownerStatus": "PENDING",
+      "publicationAuthorized": false
+    },
+    {
+      "recipeId": "karibia-johnny-cake",
+      "packetPath": "docs/nutrition/gk80-operation80-johnny-cake-release-candidate.json",
+      "originalPath": "reseptit/aamupalat/karibia-johnny-cake.md",
+      "supportFiles": {
+        "docs/nutrition/gk80-operation80-batch-02.md": "01f74836bb0102bea0466fa74c86a1e5dacbc7a437ac20d8c8c1306572956f79"
+      },
+      "candidateSha256": "db220edb9edc79d0a9b7b78ea8953053ecebdff2357a77361d0d4ab77e5b9fcf",
+      "originalSha256": "eab5edacb27b76b31b5fb07912922d23bf5b88c5b09210efbff7802f138e34bc",
+      "inputSha256": "670f1031f417802d53697bc6befbe1a1c1f5fa034326ed49d557290ca2bd56c0",
+      "servings": 2,
+      "method": "B",
+      "point": null,
+      "range": {
+        "min": 23.74589,
+        "max": 24.625513499999997
+      },
+      "uncertainty": "NAMED_SCENARIOS",
+      "limitation": {
+        "fi": "Vaihteluväli perustuu methi parathan ja chapatin GI-mittauksiin. Kotiversion taikinassa on maitoa, voita ja leivinjauhetta.",
+        "en": "The range uses measured GI values for methi paratha and chapati. This dough contains milk, butter and baking powder.",
+        "sv": "Intervallet bygger på uppmätt GI för methi paratha och chapati. Degen här innehåller mjölk, smör och bakpulver.",
+        "th": "ช่วงค่านี้อ้างอิงค่า GI ที่วัดจากเมธีปราตาและจาปาตี แป้งสูตรนี้มีนม เนย และผงฟู"
+      },
+      "omittedCho": 0,
+      "sources": [
+        {
+          "title": "Shobana et al., methi paratha",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35859429/",
+          "kind": "HUMAN_GI",
+          "note": "GI 60.2 for scenario A."
+        },
+        {
+          "title": "Shakappa et al., chapati",
+          "url": "https://doi.org/10.1007/s13197-022-05368-6",
+          "kind": "HUMAN_GI",
+          "note": "GI 62.43 for scenario B."
+        },
+        {
+          "title": "THL Fineli 110, 684, 576, 74",
+          "url": "https://fineli.fi/fineli/fi/ohje/19",
+          "kind": "CARBOHYDRATE",
+          "note": "THL Fineli CC BY 4.0."
+        }
+      ],
+      "omittedChoStressGkAtGi100": 0,
+      "suggestedRisk": "MEDIUM",
+      "riskSignals": [
+        "NAMED_SCENARIO_RANGE"
+      ],
+      "localeFields": "PRESENT",
+      "classification": {
+        "candidateSha256": "db220edb9edc79d0a9b7b78ea8953053ecebdff2357a77361d0d4ab77e5b9fcf",
+        "risk": "HIGH",
+        "reasons": [
+          "Kohotusaineen, maidon ja ohuen pannureitin vaikutus kaipaa perusteltua analogiapäätöstä. Kapea verrokkiväli ei kata vaihtoehtoisen pannuleipämittauksen eroa."
+        ],
+        "contentChange": "GK_ONLY",
+        "contentSummary": "Kahdelle ohut pannuleipä, jossa on 60 g maitoa. Paksu sämpyläreitti jää tämän arvion ulkopuolelle.",
+        "outcome": "REVIEW_REQUIRED",
+        "review": {
+          "depth": "FOCUSED",
+          "evidence": "docs/nutrition/gk80-operation80-batch-02.md"
+        }
+      },
+      "technical": "PASS",
+      "state": "REVIEW_REQUIRED",
+      "reason": "RISK_MATCHED_REVIEW_REQUIRED",
+      "ownerStatus": "PENDING",
+      "publicationAuthorized": false
+    },
+    {
+      "recipeId": "kimchi-jjigae",
+      "packetPath": "docs/nutrition/gk80-operation80-kimchi-jjigae-release-candidate.json",
+      "technical": "FAIL",
+      "state": "BLOCKED",
+      "reason": "INVALID_SOURCE_RECORD",
+      "ownerStatus": "PENDING",
+      "publicationAuthorized": false
+    },
+    {
+      "recipeId": "indonesialainen-lontong-sayur-aamiaiseksi",
+      "packetPath": "docs/nutrition/gk80-operation80-lontong-sayur-release-candidate.json",
+      "originalPath": "reseptit/aamupalat/indonesialainen-lontong-sayur-aamiaiseksi.md",
+      "supportFiles": {
+        "docs/nutrition/gk80-operation80-batch-48.md": "5cc2477dc61a82f360acd38f6807ccdcf5ca3b5d6e780f69310d51fb76350ba3"
+      },
+      "candidateSha256": "312ec06d1ad41c3fdfd79bf80e5011440b08e4d5b30d92b92797817da5b67fa3",
+      "originalSha256": "6edb30b88df161bea6daeff58d333f752036c79784ea4366d352e8f69bc2ee7b",
+      "inputSha256": "4686126bd5ff8814995850b80f71277eb8c6b4df8b80527eb914cf3c790d5358",
+      "servings": 2,
+      "method": "A",
+      "point": 17.252,
+      "range": null,
+      "uncertainty": "LOW_CONFIDENCE_POINT",
+      "limitation": {
+        "fi": "GI 83 on lehtikääreessä kypsennetyn tahmariisin verrokki. Riisilaji ja kypsennys voivat poiketa. Liemestä jää pois 0,70 g CHO/annos.",
+        "en": "GI 83 is a proxy from glutinous rice cooked in a leaf wrapper. The rice and cooking method may differ. Broth contributes 0.70 g excluded carbohydrate per serving.",
+        "sv": "GI 83 bygger på klibbigt ris tillagat i ett bladpaket. Rissort och tillagning kan skilja sig. Buljongens 0,70 g kolhydrat per portion ingår inte.",
+        "th": "ค่า GI 83 ใช้ข้าวเหนียวที่ปรุงในห่อใบไม้เป็นตัวเทียบ พันธุ์ข้าวและวิธีปรุงอาจต่างกัน ไม่รวมคาร์โบไฮเดรตจากน้ำซุป 0.70 กรัมต่อที่"
+      },
+      "omittedCho": 0.7,
+      "sources": [
+        {
+          "title": "Chen et al.",
+          "url": "https://www.wjgnet.com/1007-9327/full/v16/i12/1512-T2.htm",
+          "kind": "HUMAN_GI",
+          "note": "Chen et al., Table 2. GI 83 for the leaf-wrapped glutinous rice comparator."
+        },
+        {
+          "title": "Syadiah and Rimbawan",
+          "url": "https://repository.ipb.ac.id/handle/123456789/126726",
+          "kind": "BOUND",
+          "note": "Preparation reference for lontong. The result table could not be used as a GI input."
+        },
+        {
+          "title": "Fineli",
+          "url": "https://fineli.fi/fineli/fi/ohje/19",
+          "kind": "CARBOHYDRATE",
+          "note": "THL Fineli. Long-grain rice 11521 and cabbage 320."
+        },
+        {
+          "title": "Aneto",
+          "url": "https://www.caldoaneto.com/en/product/basic-broth/natural-vegetable-broth",
+          "kind": "CARBOHYDRATE",
+          "note": "Named vegetable broth. 0.2 g carbohydrate per 100 ml in the calculation note."
+        },
+        {
+          "title": "Blue Dragon",
+          "url": "https://www.bluedragon.co.uk/products/coconut-milk",
+          "kind": "CARBOHYDRATE",
+          "note": "Named coconut milk. 3.4 g carbohydrate per 100 g in the calculation note."
+        },
+        {
+          "title": "Cauldron",
+          "url": "https://www.cauldronfoods.co.uk/products/extra-firm-plant-based-tofu",
+          "kind": "CARBOHYDRATE",
+          "note": "Named extra-firm tofu. 1.8 g carbohydrate per 100 g in the calculation note."
+        }
+      ],
+      "omittedChoStressGkAtGi100": 0.7,
+      "suggestedRisk": "MEDIUM",
+      "riskSignals": [
+        "CHO_OMITTED"
+      ],
+      "localeFields": "PRESENT",
+      "classification": {
+        "candidateSha256": "312ec06d1ad41c3fdfd79bf80e5011440b08e4d5b30d92b92797817da5b67fa3",
+        "risk": "HIGH",
+        "reasons": [
+          "Lehtikääreessä kypsennetty tahmariisi poikkeaa kotiversion pitkäjyväisestä riisistä. Suoran lähteen tulostaulukko puuttuu."
+        ],
+        "contentChange": "GK_ONLY",
+        "contentSummary": "Kahdelle 40 g kuivasta pitkäjyväisestä riisistä lehtikääreessä kypsennetty lontong ja punnitut liemituotteet.",
+        "outcome": "REVIEW_REQUIRED",
+        "review": {
+          "depth": "FOCUSED",
+          "evidence": "docs/nutrition/gk80-operation80-batch-48.md"
+        }
+      },
+      "technical": "PASS",
+      "state": "REVIEW_REQUIRED",
+      "reason": "RISK_MATCHED_REVIEW_REQUIRED",
+      "ownerStatus": "PENDING",
+      "publicationAuthorized": false
+    },
+    {
+      "recipeId": "meheva-suklaakakku",
+      "packetPath": "docs/nutrition/gk80-operation80-meheva-suklaakakku-release-candidate.json",
+      "originalPath": "reseptit/jalkiruoat/meheva-suklaakakku.md",
+      "supportFiles": {
+        "docs/nutrition/gk80-operation80-batch-40.md": "406d250620f09d471eb319356c0c80ce14e4fb7c969677f13c0c7161f441d704"
+      },
+      "candidateSha256": "4b7f1d58fe082ac5bd68e607c41d60db87921a90a0cb4de0045fb513bd8b059c",
+      "originalSha256": "f9753c28eee6064b1203bbb25365e80ce856c3a1c1ee7210162e1969a6cc4022",
+      "inputSha256": "45cabc3e6effcd460ca0492c38451c39a3b6894aa99c916e37b77af1454fee28",
+      "servings": 10,
+      "method": "B",
+      "point": null,
+      "range": {
+        "min": 14.435136000000002,
+        "max": 22.032576000000002
+      },
+      "uncertainty": "NAMED_SCENARIOS",
+      "limitation": {
+        "fi": "Väli kuvaa kahden kuorrutetun verrokkikakun GI-eroa. Korkeamman GI:n kakussa on erillinen maitokermatäyte.",
+        "en": "The range reflects GI differences between two iced cake proxies. The higher-GI cake has a separate milk cream filling.",
+        "sv": "Intervallet speglar GI-skillnaden mellan två jämförbara kakor med glasyr. Kakan med högre GI har en separat mjölkkrämsfyllning.",
+        "th": "ช่วงนี้สะท้อนความต่างของค่า GI ระหว่างเค้กเคลือบสองชนิดที่ใช้เทียบ เค้กที่มี GI สูงกว่ามีไส้ครีมนมแยกต่างหาก"
+      },
+      "omittedCho": 0,
+      "sources": [
+        {
+          "title": "University of Sydney",
+          "url": "https://glycemicindex.com/gi-search/",
+          "kind": "HUMAN_GI",
+          "note": "GI 38 for Betty Crocker chocolate cake with chocolate frosting."
+        },
+        {
+          "title": "Scazzina et al.",
+          "url": "https://air.unimi.it/retrieve/handle/2434/476796/820476/Scazzina%20et%20al.pdf",
+          "kind": "HUMAN_GI",
+          "note": "GI 58 comparator for Kinder Delice, a chocolate-coated cake with separate milk cream filling."
+        },
+        {
+          "title": "Kinder",
+          "url": "https://www.kinder.com/it/it/kinder-delice",
+          "kind": "BOUND",
+          "note": "Manufacturer describes the comparator cake and its filling."
+        },
+        {
+          "title": "Lindt",
+          "url": "https://www.lindt.co.uk/lindt-excellence-dark-70-bar-100g-10",
+          "kind": "CARBOHYDRATE",
+          "note": "Named 70 percent dark chocolate carbohydrate declaration."
+        },
+        {
+          "title": "Fineli",
+          "url": "https://fineli.fi/fineli/fi/ohje/19",
+          "kind": "CARBOHYDRATE",
+          "note": "Finnish food composition data for cake ingredients."
+        },
+        {
+          "title": "AFCD",
+          "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd",
+          "kind": "CARBOHYDRATE",
+          "note": "Australian food composition data for baking powder."
+        }
+      ],
+      "omittedChoStressGkAtGi100": 0,
+      "suggestedRisk": "MEDIUM",
+      "riskSignals": [
+        "NAMED_SCENARIO_RANGE"
+      ],
+      "localeFields": "PRESENT",
+      "classification": {
+        "candidateSha256": "4b7f1d58fe082ac5bd68e607c41d60db87921a90a0cb4de0045fb513bd8b059c",
+        "risk": "HIGH",
+        "reasons": [
+          "Kaupallisten vertailukakkujen rakenne ja täytteet eroavat kotikakusta. Saanto ja soveltuvuus ovat auki."
+        ],
+        "contentChange": "GK_ONLY",
+        "contentSummary": "Kymmenen palaa, 300 g Lindt Excellence 70 % -suklaata ja punnittu kuorrute.",
+        "outcome": "REVIEW_REQUIRED",
+        "review": {
+          "depth": "FOCUSED",
+          "evidence": "docs/nutrition/gk80-operation80-batch-40.md"
+        }
+      },
+      "technical": "PASS",
+      "state": "REVIEW_REQUIRED",
+      "reason": "RISK_MATCHED_REVIEW_REQUIRED",
+      "ownerStatus": "PENDING",
+      "publicationAuthorized": false
+    },
+    {
+      "recipeId": "pohjoisafrikkalainen-msemen-hunajalla",
+      "packetPath": "docs/nutrition/gk80-operation80-msemen-release-candidate.json",
+      "originalPath": "reseptit/aamupalat/pohjoisafrikkalainen-msemen-hunajalla.md",
+      "supportFiles": {
+        "docs/nutrition/gk80-operation80-batch-18.md": "c4e110dd596223cc878d2ef653c4a2a0f54e5ffc7149c9d7856d0d950170e9c7"
+      },
+      "candidateSha256": "716072dae1fcb556bbaf4cf29ee9e2c85f576cb44f539f5cee566d373b64bee7",
+      "originalSha256": "e263a0339d743610e6b5877b625dc01d123f677c03c4fffe6979df4cd39282fa",
+      "inputSha256": "d0eaa564c28d6cd0c20e438666849931b7dc9400b76d9729abd80a53043b7ba8",
+      "servings": 2,
+      "method": "B",
+      "point": null,
+      "range": {
+        "min": 28.231782,
+        "max": 49.400675199999995
+      },
+      "uncertainty": "NAMED_SCENARIOS",
+      "limitation": {
+        "fi": "Vaihteluväli perustuu kahteen rasvaisen pannuleivän GI-mittaukseen. Msemenin jauhoseos ja rasvan määrä voivat muuttaa vastetta, joka voi jäädä välin ulkopuolelle.",
+        "en": "The range uses two measured GI values for flatbreads prepared with fat. The flour blend and amount of fat in msemen can affect the response, which may fall outside this range.",
+        "sv": "Intervallet bygger på två uppmätta GI-värden för pannbröd tillagade med fett. Mjölsorten och fettmängden i msemen kan påverka responsen, som kan hamna utanför intervallet.",
+        "th": "ช่วงนี้อ้างอิงค่า GI ที่วัดจากแผ่นแป้งทอดที่มีไขมันสองชนิด ส่วนผสมแป้งและปริมาณไขมันของมเซเมนอาจทำให้การตอบสนองอยู่นอกช่วงนี้"
+      },
+      "omittedCho": 0,
+      "sources": [
+        {
+          "title": "Ali et al., Omani paratha",
+          "url": "https://doi.org/10.1080/10942910802472852",
+          "kind": "HUMAN_GI",
+          "note": "GI 31.8 for scenario A."
+        },
+        {
+          "title": "Shakappa et al., parota",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9304465/",
+          "kind": "HUMAN_GI",
+          "note": "GI 62.48 for scenario B."
+        },
+        {
+          "title": "Jenkins et al., honey",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/6259925/",
+          "kind": "HUMAN_GI",
+          "note": "GI 87 for honey."
+        },
+        {
+          "title": "Fineli 110, 112, 500",
+          "url": "https://fineli.fi/fineli/fi/ohje/19",
+          "kind": "CARBOHYDRATE",
+          "note": "Fineli Release 20, CC BY 4.0."
+        },
+        {
+          "title": "AFCD F004380",
+          "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd",
+          "kind": "CARBOHYDRATE",
+          "note": "AFCD Release 3, CC BY-SA 3.0 Australia."
+        }
+      ],
+      "omittedChoStressGkAtGi100": 0,
+      "suggestedRisk": "MEDIUM",
+      "riskSignals": [
+        "NAMED_SCENARIO_RANGE"
+      ],
+      "localeFields": "PRESENT",
+      "classification": {
+        "candidateSha256": "716072dae1fcb556bbaf4cf29ee9e2c85f576cb44f539f5cee566d373b64bee7",
+        "risk": "HIGH",
+        "reasons": [
+          "Parathaverrokkien suuri ero ja voikerrosten vaikutus vaativat syväkatselmoinnin."
+        ],
+        "contentChange": "GK_ONLY",
+        "contentSummary": "Kahdelle punnittu mannaryyni-vehnätaikina, 50 g kerrosvoita ja 20 g hunajaa.",
+        "outcome": "REVIEW_REQUIRED",
+        "review": {
+          "depth": "FOCUSED",
+          "evidence": "docs/nutrition/gk80-operation80-batch-18.md"
+        }
+      },
+      "technical": "PASS",
+      "state": "REVIEW_REQUIRED",
+      "reason": "RISK_MATCHED_REVIEW_REQUIRED",
+      "ownerStatus": "PENDING",
+      "publicationAuthorized": false
+    },
+    {
+      "recipeId": "nasi-lemak",
+      "packetPath": "docs/nutrition/gk80-operation80-nasi-lemak-release-candidate.json",
+      "originalPath": "reseptit/paaruoat/nasi-lemak.md",
+      "supportFiles": {
+        "docs/nutrition/gk80-operation80-batch-06.md": "b7d4b20444a5ffdd79a62327f373e85d8be37afa01177f3cbdd07ee8350dd03c"
+      },
+      "candidateSha256": "b594bb2f4aa561a82d1a1efd3ca1884f888cf016c3ad8172d275fbe4a1b7de6d",
+      "originalSha256": "cf5979cb92a42aecfe907644fd7b674d101f6988750859d12bc83ee3f7a5d292",
+      "inputSha256": "3b03a012fdd7018ccc7f5a9a6a8d0a8b73215e5fbd3b4b23da687bd10e0dc348",
+      "servings": 4,
+      "method": "B",
+      "point": 43.864425,
+      "range": null,
+      "uncertainty": "LOW_CONFIDENCE_POINT",
+      "limitation": {
+        "fi": "GI 66 on mitattu kokonaisesta nasi lemak -ateriasta. Samalla hiilihydraattimäärällä kotiversion laskennallinen proteiinimäärä on suurempi ja rasvamäärä pienempi kuin koeateriassa. GI:n soveltuvuus kotiversioon on avoin.",
+        "en": "GI 66 was measured for a complete nasi lemak meal. At the same carbohydrate amount, this version has more protein and less fat in the composition calculation than the test meal. The applicability of its GI remains uncertain.",
+        "sv": "GI 66 uppmättes för en hel nasi lemak-måltid. Vid samma kolhydratmängd innehåller denna version enligt beräkningen mer protein och mindre fett än testmåltiden. Det är osäkert om GI-värdet kan överföras.",
+        "th": "ค่า GI 66 วัดจากนาซีเลอมักทั้งมื้อ เมื่อเทียบที่ปริมาณคาร์โบไฮเดรตเท่ากัน ผลคำนวณของสูตรนี้มีโปรตีนมากกว่าและไขมันน้อยกว่ามื้อที่ทดสอบ จึงยังไม่แน่ชัดว่าจะใช้ค่า GI นี้กับสูตรนี้ได้หรือไม่"
+      },
+      "omittedCho": 0,
+      "sources": [
+        {
+          "title": "Sun et al., Table 2",
+          "url": "https://doi.org/10.1017/S0007114514004425",
+          "kind": "HUMAN_GI",
+          "note": "GI 66, Old Chang Kee nasi lemak."
+        },
+        {
+          "title": "THL Fineli 11521, 858, 346",
+          "url": "https://fineli.fi/fineli/fi/ohje/19",
+          "kind": "CARBOHYDRATE",
+          "note": "CC BY 4.0."
+        },
+        {
+          "title": "AFCD F006110, F008227",
+          "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd",
+          "kind": "CARBOHYDRATE",
+          "note": "CC BY-SA 3.0 Australia."
+        },
+        {
+          "title": "MyFCD 110002",
+          "url": "https://myfcd.moh.gov.my/myfcd97/index.php/site/detail_product/110002/0/10/ikan%20bilis/0/0/",
+          "kind": "CARBOHYDRATE",
+          "note": "Uses the reported carbohydrate as a conservative input."
+        },
+        {
+          "title": "Blue Dragon Coconut Milk",
+          "url": "https://www.bluedragon.co.uk/products/coconut-milk",
+          "kind": "CARBOHYDRATE",
+          "note": "3.4 g per 100 g."
+        },
+        {
+          "title": "Blue Dragon Tamarind Paste",
+          "url": "https://www.bluedragon.co.uk/products/tamarind-paste",
+          "kind": "CARBOHYDRATE",
+          "note": "16 g per 100 g."
+        },
+        {
+          "title": "Inproba E06431",
+          "url": "https://www.inproba.com/oriental/products/2726/sambal-oelek-100-g/",
+          "kind": "CARBOHYDRATE",
+          "note": "3.1 g per 100 g."
+        }
+      ],
+      "omittedChoStressGkAtGi100": 0,
+      "suggestedRisk": "LOW",
+      "riskSignals": [],
+      "localeFields": "PRESENT",
+      "classification": {
+        "candidateSha256": "b594bb2f4aa561a82d1a1efd3ca1884f888cf016c3ad8172d275fbe4a1b7de6d",
+        "risk": "HIGH",
+        "reasons": [
+          "Koko testiaterian GI 66 siirtyy eri rasva- ja proteiinikoostumukselle. Soveltuvuus on auki."
+        ],
+        "contentChange": "GK_ONLY",
+        "contentSummary": "Neljälle 300 g kuivaa jasmiiniriisiä, 200 g kookosmaitoa ja punnitut anjovis-, maapähkinä- ja samballisukkeet.",
+        "outcome": "REVIEW_REQUIRED",
+        "review": {
+          "depth": "FOCUSED",
+          "evidence": "docs/nutrition/gk80-operation80-batch-06.md"
+        }
+      },
+      "technical": "PASS",
+      "state": "REVIEW_REQUIRED",
+      "reason": "RISK_MATCHED_REVIEW_REQUIRED",
+      "ownerStatus": "PENDING",
+      "publicationAuthorized": false
+    },
+    {
+      "recipeId": "tunisialainen-ojja",
+      "packetPath": "docs/nutrition/gk80-operation80-ojja-release-candidate.json",
+      "originalPath": "reseptit/paaruoat/tunisialainen-ojja.md",
+      "supportFiles": {
+        "docs/nutrition/gk80-operation80-batch-55.md": "205c26606cf89e05f8f58d76a0ff38784cab765d3221caa071db30f971b3123d"
+      },
+      "candidateSha256": "934ac1a8bcd55e34ff49f46aadae0491303bcfc15187fc31f721425def7807d6",
+      "originalSha256": "7d9a80b28b84a9dbd8308e9f4a49d6ec240681259c6cd1bd35480c7e475fa5b8",
+      "inputSha256": "58075c7155165903cb46fbb5ea0605327194b778a3feeba35d545f819c21b8fc",
+      "servings": 4,
+      "method": "A",
+      "point": 12.4821625,
+      "range": null,
+      "uncertainty": "LOW_CONFIDENCE_POINT",
+      "limitation": {
+        "fi": "Leivälle käytetään vehnähapanjuurileivän GI-verrokkia ja kastikkeen aineksille laskentakoodeja. Harissan 0,0825 g hiilihydraattia annosta kohti jää laskelman ulkopuolelle.",
+        "en": "Bread uses a wheat sourdough GI comparator and sauce ingredients use assigned codes. Harissa contributes 0.0825 g excluded carbohydrate per serving.",
+        "sv": "Brödet jämförs med vetesurdegsbröd och såsingredienserna får tilldelade GI-koder. Harissans 0,0825 g kolhydrat per portion ingår inte.",
+        "th": "ขนมปังใช้ค่า GI อ้างอิงจากซาวร์โดว์ข้าวสาลี ส่วนผสมในซอสใช้รหัสตามกลุ่ม ไม่รวมคาร์โบไฮเดรตจากฮาริสซา 0.0825 กรัมต่อที่"
+      },
+      "omittedCho": 0.0825,
+      "sources": [
+        {
+          "title": "Sydney GI database",
+          "url": "https://glycemicindex.com/gi-search/",
+          "kind": "HUMAN_GI",
+          "note": "Wheat sourdough comparator, GI 54."
+        },
+        {
+          "title": "Bertinet",
+          "url": "https://bertinetbakery.com/product/bertinet-bakery-white-sourdough-loaf-500g/",
+          "kind": "CARBOHYDRATE",
+          "note": "43.9 g per 100 g."
+        },
+        {
+          "title": "Mutti",
+          "url": "https://mutti-parma.com/en/products/polpa/",
+          "kind": "CARBOHYDRATE",
+          "note": "3.9 g per 100 g."
+        },
+        {
+          "title": "Fineli",
+          "url": "https://fineli.fi/fineli/fi/ohje/19",
+          "kind": "CARBOHYDRATE",
+          "note": "THL CC BY 4.0."
+        },
+        {
+          "title": "AFCD",
+          "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd",
+          "kind": "CARBOHYDRATE",
+          "note": "CC BY-SA 3.0 Australia."
+        },
+        {
+          "title": "USDA SR Legacy parsley",
+          "url": "https://fdc.nal.usda.gov/",
+          "kind": "CARBOHYDRATE",
+          "note": "Total carbohydrate minus fibre."
+        },
+        {
+          "title": "Harissa product sheet",
+          "url": "https://www.cibus-gastronomie.ch/web/content/58444?access_token=8ff038ba-a503-42c7-b75f-c5b1ca951b27&download=true&unique=99320e2e798d1387d9b4843144a0db502ce6f189",
+          "kind": "CARBOHYDRATE",
+          "note": "6.6 g per 100 g."
+        },
+        {
+          "title": "GI coding",
+          "url": "https://doi.org/10.2337/dc08-1239",
+          "kind": "PUBLISHED_CODING",
+          "note": "Vegetable and seasoning codes."
+        }
+      ],
+      "omittedChoStressGkAtGi100": 0.0825,
+      "suggestedRisk": "MEDIUM",
+      "riskSignals": [
+        "CHO_OMITTED",
+        "ASSIGNED_GI"
+      ],
+      "localeFields": "PRESENT",
+      "classification": {
+        "candidateSha256": "934ac1a8bcd55e34ff49f46aadae0491303bcfc15187fc31f721425def7807d6",
+        "risk": "HIGH",
+        "reasons": [
+          "Leivän verrokki ja kastikkeen laskentakoodien soveltuvuus vaativat syväkatselmoinnin."
+        ],
+        "contentChange": "GK_ONLY",
+        "contentSummary": "Neljälle punnittu harissapannu ja 160 g Bertinet-hapanjuurileipää.",
+        "outcome": "REVIEW_REQUIRED",
+        "review": {
+          "depth": "FOCUSED",
+          "evidence": "docs/nutrition/gk80-operation80-batch-55.md"
+        }
+      },
+      "technical": "PASS",
+      "state": "REVIEW_REQUIRED",
+      "reason": "RISK_MATCHED_REVIEW_REQUIRED",
+      "ownerStatus": "PENDING",
+      "publicationAuthorized": false
+    },
+    {
+      "recipeId": "vietnamilainen-papaija-kookospuuro",
+      "packetPath": "docs/nutrition/gk80-operation80-papaija-kookospuuro-release-candidate.json",
+      "originalPath": "reseptit/aamupalat/vietnamilainen-papaija-kookospuuro.md",
+      "supportFiles": {
+        "docs/nutrition/gk80-operation80-batch-61.md": "a93f6d927c55a362182fdc8bbfcef3719144a0d3d9735a478d8ebfa02f58c79f"
+      },
+      "candidateSha256": "556106a2028aa57ed7ba3c0c361acfc9c46b3fc5e5a6d9a67754158079551589",
+      "originalSha256": "02440d7cfaac9b9b3b79e2467ee0fc4bd26afc49a0204253accf3478992aec99",
+      "inputSha256": "7905744af0ad56738159f1a0500d314d4ff4ada6085dd359eae2a35a3c07aec0",
+      "servings": 2,
+      "method": "A",
+      "point": 41.77455,
+      "range": null,
+      "uncertainty": "LOW_CONFIDENCE_POINT",
+      "limitation": {
+        "fi": "Puuropohjan verrokki on maidossa keitetty tapioka. Kookosmaito ja helmikoko voivat muuttaa vastetta. Limettimehusta jää pois 0,60 g hiilihydraattia annosta kohti.",
+        "en": "The porridge uses tapioca cooked in milk as its GI comparator. Coconut milk and pearl size may affect the response. Lime juice contributes 0.60 g excluded carbohydrate per serving.",
+        "sv": "Gröten jämförs med tapioka kokt i mjölk. Kokosmjölk och pärlornas storlek kan påverka responsen. Limejuicens 0,60 g kolhydrat per portion ingår inte.",
+        "th": "ค่า GI ของโจ๊กอ้างอิงสาคูต้มในนม กะทิและขนาดเม็ดอาจเปลี่ยนการตอบสนอง ไม่รวมคาร์โบไฮเดรตจากน้ำมะนาว 0.60 กรัมต่อที่"
+      },
+      "omittedCho": 0.6015,
+      "sources": [
+        {
+          "title": "International GI tables",
+          "url": "https://doi.org/10.1093/ajcn/76.1.5",
+          "kind": "HUMAN_GI",
+          "note": "Glucose-scale GI 81 for tapioca boiled in milk."
+        },
+        {
+          "title": "Papaya human GI",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28972240/",
+          "kind": "HUMAN_GI",
+          "note": "GI 38."
+        },
+        {
+          "title": "USDA tapioca",
+          "url": "https://fdc.nal.usda.gov/food-details/169717/nutrients",
+          "kind": "CARBOHYDRATE",
+          "note": "Total carbohydrate minus fibre."
+        },
+        {
+          "title": "USDA papaya",
+          "url": "https://fdc.nal.usda.gov/food-details/169926/nutrients",
+          "kind": "CARBOHYDRATE",
+          "note": "Total carbohydrate minus fibre."
+        },
+        {
+          "title": "USDA lime juice",
+          "url": "https://fdc.nal.usda.gov/food-details/168156/nutrients",
+          "kind": "CARBOHYDRATE",
+          "note": "Total carbohydrate minus fibre."
+        },
+        {
+          "title": "Blue Dragon Coconut Milk",
+          "url": "https://www.bluedragon.co.uk/products/coconut-milk",
+          "kind": "CARBOHYDRATE",
+          "note": "3.4 g per 100 g."
+        }
+      ],
+      "omittedChoStressGkAtGi100": 0.6015,
+      "suggestedRisk": "MEDIUM",
+      "riskSignals": [
+        "CHO_OMITTED"
+      ],
+      "localeFields": "PRESENT",
+      "classification": {
+        "candidateSha256": "556106a2028aa57ed7ba3c0c361acfc9c46b3fc5e5a6d9a67754158079551589",
+        "risk": "HIGH",
+        "reasons": [
+          "Maidossa keitetyn tapiokan GI hallitsee arviota. Kookosmaidossa keitetyn kassavatapiokan vastaavaa mittausta ei ole sidottu."
+        ],
+        "contentChange": "GK_ONLY",
+        "contentSummary": "Kahdelle 100 g kuivaa tapiokaa ja 200 g Blue Dragon -kookosmaitoa, papaija ja limetti tarjoiltaessa.",
+        "outcome": "REVIEW_REQUIRED",
+        "review": {
+          "depth": "FOCUSED",
+          "evidence": "docs/nutrition/gk80-operation80-batch-61.md"
+        }
+      },
+      "technical": "PASS",
+      "state": "REVIEW_REQUIRED",
+      "reason": "RISK_MATCHED_REVIEW_REQUIRED",
+      "ownerStatus": "PENDING",
+      "publicationAuthorized": false
+    },
+    {
+      "recipeId": "karibia-plantain-aamiaislautanen",
+      "packetPath": "docs/nutrition/gk80-operation80-plantain-release-candidate.json",
+      "originalPath": "reseptit/aamupalat/karibia-plantain-aamiaislautanen.md",
+      "supportFiles": {
+        "docs/nutrition/gk80-operation80-batch-04.md": "92fd2e19e1ab2c49f4096ec6e2687a9acd06bed5e13a8f4e3655f47f55b56b66"
+      },
+      "candidateSha256": "bc6ff60e83132d45d18650adcdb48036e733953bd63bf5a2adec84ec3aaeda28",
+      "originalSha256": "558d423b988af31c83346c53894b0b484e31fc868eed0c8635fe054641405e6d",
+      "inputSha256": "ee6e0ec3616705b1dcbfbb220d87b66ab1ab86ec03f82d5cc2827101504ad013",
+      "servings": 2,
+      "method": "B",
+      "point": 16.38375,
+      "range": null,
+      "uncertainty": "LOW_CONFIDENCE_POINT",
+      "limitation": {
+        "fi": "Tutkimuksessa kypsä ruokabanaani uppopaistettiin. Kotiversio paistetaan pannulla ohuessa öljykerroksessa.",
+        "en": "The study deep-fried ripe plantain. This version is shallow-fried in a pan.",
+        "sv": "I studien friterades mogen matbanan. Här steks den i ett tunt lager olja.",
+        "th": "การศึกษาทอดกล้วยสุกแบบน้ำมันท่วม สูตรนี้ทอดในกระทะด้วยน้ำมันเพียงเล็กน้อย"
+      },
+      "omittedCho": 0,
+      "sources": [
+        {
+          "title": "Bahado-Singh et al., Tables 2–3",
+          "url": "https://doi.org/10.1079/BJN20061792",
+          "kind": "HUMAN_GI",
+          "note": "Bahado-Singh et al. Glucose-scale GI 90 for fried ripe plantain. Pan frying is a preparation analogy."
+        },
+        {
+          "title": "Fineli 858",
+          "url": "https://fineli.fi/fineli/fi/elintarvikkeet/858",
+          "kind": "CARBOHYDRATE",
+          "note": "THL Fineli 858. Egg composition."
+        },
+        {
+          "title": "Fineli 11057",
+          "url": "https://fineli.fi/fineli/fi/elintarvikkeet/11057",
+          "kind": "CARBOHYDRATE",
+          "note": "THL Fineli 11057. Avocado composition."
+        },
+        {
+          "title": "AFCD F005199",
+          "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd",
+          "kind": "CARBOHYDRATE",
+          "note": "FSANZ AFCD F005199. Peeled raw lime composition."
+        },
+        {
+          "title": "GI coding",
+          "url": "https://doi.org/10.1016/j.jfca.2007.02.004",
+          "kind": "B_CODING",
+          "note": "Assigned GI 50 for the egg, avocado and lime inputs."
+        }
+      ],
+      "omittedChoStressGkAtGi100": 0,
+      "suggestedRisk": "MEDIUM",
+      "riskSignals": [
+        "ASSIGNED_GI"
+      ],
+      "localeFields": "PRESENT",
+      "classification": {
+        "candidateSha256": "bc6ff60e83132d45d18650adcdb48036e733953bd63bf5a2adec84ec3aaeda28",
+        "risk": "HIGH",
+        "reasons": [
+          "GI 90 perustuu uppopaistoon. Siirto ohueen öljykerrokseen on avoin, ja vertailukoe antoi selvästi matalamman luvun."
+        ],
+        "contentChange": "GK_ONLY",
+        "contentSummary": "Kahdelle 150 g kypsää ruokabanaania pannulla sekä punnitut muna, avokado ja kuorittu limetti.",
+        "outcome": "REVIEW_REQUIRED",
+        "review": {
+          "depth": "FOCUSED",
+          "evidence": "docs/nutrition/gk80-operation80-batch-04.md"
+        }
+      },
+      "technical": "PASS",
+      "state": "REVIEW_REQUIRED",
+      "reason": "RISK_MATCHED_REVIEW_REQUIRED",
+      "ownerStatus": "PENDING",
+      "publicationAuthorized": false
+    },
+    {
+      "recipeId": "malesialainen-roti-canai-dhalilla",
+      "packetPath": "docs/nutrition/gk80-operation80-roti-canai-release-candidate.json",
+      "originalPath": "reseptit/aamupalat/malesialainen-roti-canai-dhalilla.md",
+      "supportFiles": {
+        "docs/nutrition/gk80-operation80-batch-57.md": "e16700bb145a3997ebe47307501034a209d6b8db710ad9625c5bf5ba260e06be"
+      },
+      "candidateSha256": "eb40e73454072d93a9ecd337f4a1bc0bd72d1c81328a643c1b820def426838b1",
+      "originalSha256": "7ca86931fae4b26def3abf3c664523e3188e80df33f3e44ee55f884476b356ff",
+      "inputSha256": "186ecccabcf035cbdfa49cd1dfc346a6a60e96414ecad5cda86c639be8e1d578",
+      "servings": 2,
+      "method": "B",
+      "point": 47.4114925,
+      "range": null,
+      "uncertainty": "LOW_CONFIDENCE_POINT",
+      "limitation": {
+        "fi": "GI 71 on roti canain ja dhalin yhdistelmän verrokki. Kotiversion kookosmaito ja leivän suhde kastikkeeseen voivat muuttaa vastetta.",
+        "en": "GI 71 is a comparator for roti canai served with dhal. Coconut milk and the bread-to-dhal ratio can affect the response.",
+        "sv": "GI 71 gäller en jämförelseportion med roti canai och dhal. Kokosmjölken och förhållandet mellan bröd och dhal kan påverka responsen.",
+        "th": "ค่า GI 71 อ้างอิงโรตีจาไนเสิร์ฟกับแกงถั่ว กะทิและสัดส่วนโรตีต่อแกงอาจเปลี่ยนการตอบสนอง"
+      },
+      "omittedCho": 0,
+      "sources": [
+        {
+          "title": "Malaysia Recommended Nutrient Intakes",
+          "url": "https://hq.moh.gov.my/nutrition/wp-content/uploads/2023/12/FA-Buku-RNI.pdf",
+          "kind": "HUMAN_GI",
+          "note": "Appendix 4.2 reports GI 71 for roti canai with dhal."
+        },
+        {
+          "title": "Nik Shanita et al.",
+          "url": "https://pkukmweb.ukm.my/jsm/pdf_files/SM-PDF-40-8-2011/07%20nik%20shanita.pdf",
+          "kind": "HUMAN_GI",
+          "note": "Table 2 traces GI 71 to an unpublished 2005 thesis."
+        },
+        {
+          "title": "Fineli 110",
+          "url": "https://fineli.fi/fineli/fi/elintarvikkeet/110",
+          "kind": "CARBOHYDRATE",
+          "note": "THL CC BY 4.0."
+        },
+        {
+          "title": "IFCT B013 and G010",
+          "url": "https://www.nin.res.in/ebooks/IFCT2017.pdf",
+          "kind": "CARBOHYDRATE",
+          "note": "Dry red lentils and curry leaves."
+        },
+        {
+          "title": "Blue Dragon",
+          "url": "https://www.bluedragon.co.uk/products/coconut-milk",
+          "kind": "CARBOHYDRATE",
+          "note": "3.4 g per 100 g."
+        }
+      ],
+      "omittedChoStressGkAtGi100": 0,
+      "suggestedRisk": "LOW",
+      "riskSignals": [],
+      "localeFields": "PRESENT",
+      "classification": {
+        "candidateSha256": "eb40e73454072d93a9ecd337f4a1bc0bd72d1c81328a643c1b820def426838b1",
+        "risk": "HIGH",
+        "reasons": [
+          "GI 71 kuvaa leivän ja dhalin yhdistelmää. Kotiversion leipä–kastikesuhde ja rasvakoostumus poikkeavat."
+        ],
+        "contentChange": "GK_ONLY",
+        "contentSummary": "Kahdelle kerroksellinen pannuleipä ja punaiset linssit 200 g:ssa kookosmaitoa.",
+        "outcome": "REVIEW_REQUIRED",
+        "review": {
+          "depth": "FOCUSED",
+          "evidence": "docs/nutrition/gk80-operation80-batch-57.md"
+        }
+      },
+      "technical": "PASS",
+      "state": "REVIEW_REQUIRED",
+      "reason": "RISK_MATCHED_REVIEW_REQUIRED",
+      "ownerStatus": "PENDING",
+      "publicationAuthorized": false
+    },
+    {
+      "recipeId": "roujiamo",
+      "packetPath": "docs/nutrition/gk80-operation80-roujiamo-release-candidate.json",
+      "originalPath": "reseptit/paaruoat/roujiamo.md",
+      "supportFiles": {
+        "docs/nutrition/gk80-operation80-batch-60.md": "8a6b3363b2a5b20d4a51750594d1e8baa7d25d43c1be24bd8ad4bbb3e69f8d4b"
+      },
+      "candidateSha256": "6b550ed0583b9ff55832d21d261bb259564087a7252b09d3df3223481b4dc2ff",
+      "originalSha256": "2817c67ea94abfd7eeeffa4e9a9b15911b84d72879e3f0cdd14d163932df02a6",
+      "inputSha256": "4c7c77733a3934b7891e56bf76eea1751663dad96edb093668c508c94227c0f2",
+      "servings": 4,
+      "method": "A",
+      "point": 45.339936,
+      "range": null,
+      "uncertainty": "LOW_CONFIDENCE_POINT",
+      "limitation": {
+        "fi": "Leivän GI-verrokki on kiinalainen vehnälettu. Kohotus ja paisto voivat muuttaa vastetta. Molempien soijakastikkeiden hiilihydraatit lasketaan mukaan kokonaan.",
+        "en": "The bread uses a Chinese wheat pancake GI comparator. Proofing and cooking can affect the response. All carbohydrate from both soy sauces is counted.",
+        "sv": "Brödet jämförs med en kinesisk vetepannkaka. Jäsning och stekning kan påverka responsen. Alla kolhydrater från båda sojasåserna räknas med.",
+        "th": "ค่า GI ของขนมปังอ้างอิงแผ่นแป้งสาลีจีน การหมักและการจี่อาจเปลี่ยนการตอบสนอง คำนวณคาร์โบไฮเดรตทั้งหมดจากซีอิ๊วทั้งสองชนิด"
+      },
+      "omittedCho": 1.5786,
+      "sources": [
+        {
+          "title": "Yang et al.",
+          "url": "https://www.wjgnet.com/1007-9327/full/v12/i21/3430-T2.htm",
+          "kind": "HUMAN_GI",
+          "note": "Chinese wheat pancake, GI 79.6."
+        },
+        {
+          "title": "Fineli 110",
+          "url": "https://fineli.fi/fineli/fi/ohje/19",
+          "kind": "CARBOHYDRATE",
+          "note": "THL CC BY 4.0."
+        },
+        {
+          "title": "Lee Kum Kee light",
+          "url": "https://uk.lkk.com/veg-voyage-products/premium-light-soy-sauce",
+          "kind": "CARBOHYDRATE",
+          "note": "14 g per 100 g."
+        },
+        {
+          "title": "Lee Kum Kee dark",
+          "url": "https://uk.lkk.com/products/premium-dark-soy-sauce",
+          "kind": "CARBOHYDRATE",
+          "note": "31 g per 100 g."
+        },
+        {
+          "title": "USDA 170005",
+          "url": "https://fdc.nal.usda.gov/food-details/170005/nutrients",
+          "kind": "CARBOHYDRATE",
+          "note": "Available carbohydrate by difference."
+        },
+        {
+          "title": "USDA yeast",
+          "url": "https://fdc.nal.usda.gov/food-details/175043/nutrients",
+          "kind": "BOUND",
+          "note": "14.32 g per 100 g."
+        },
+        {
+          "title": "USDA cumin",
+          "url": "https://www.govinfo.gov/content/pkg/GOVPUB-A77-PURL-LPS86777/pdf/GOVPUB-A77-PURL-LPS86777.pdf",
+          "kind": "BOUND",
+          "note": "Total carbohydrate, 44.24 g per 100 g."
+        },
+        {
+          "title": "GI coding",
+          "url": "https://doi.org/10.2337/dc08-1239",
+          "kind": "PUBLISHED_CODING",
+          "note": "Soy sauce and spring onion use assigned codes."
+        }
+      ],
+      "omittedChoStressGkAtGi100": 1.5786,
+      "suggestedRisk": "HIGH",
+      "riskSignals": [
+        "CHO_OMITTED",
+        "ASSIGNED_GI"
+      ],
+      "localeFields": "PRESENT",
+      "classification": {
+        "candidateSha256": "6b550ed0583b9ff55832d21d261bb259564087a7252b09d3df3223481b4dc2ff",
+        "risk": "HIGH",
+        "reasons": [
+          "Kohotetun leivän ja vehnälettuverrokin vastaavuus sekä liemen siirtymä ovat auki."
+        ],
+        "contentChange": "GK_ONLY",
+        "contentSummary": "Neljälle punnittu kohotettu pannuleipä, porsastäyte ja nimetyt soijakastikkeet.",
+        "outcome": "REVIEW_REQUIRED",
+        "review": {
+          "depth": "FOCUSED",
+          "evidence": "docs/nutrition/gk80-operation80-batch-60.md"
+        }
+      },
+      "technical": "PASS",
+      "state": "REVIEW_REQUIRED",
+      "reason": "RISK_MATCHED_REVIEW_REQUIRED",
+      "ownerStatus": "PENDING",
+      "publicationAuthorized": false
+    },
+    {
+      "recipeId": "indonesialainen-tempeh-munakulho",
+      "packetPath": "docs/nutrition/gk80-operation80-tempeh-release-candidate.json",
+      "originalPath": "reseptit/aamupalat/indonesialainen-tempeh-munakulho.md",
+      "supportFiles": {
+        "docs/nutrition/gk80-operation80-batch-03.md": "b37019443cc891c7c866377280a20a7816f33d548c61459304b3c03a20ce746d"
+      },
+      "candidateSha256": "53feb9384ca60b90dfdb3acabb8341ffa97829f9086a5519d611cd03b50077b2",
+      "originalSha256": "48c54ac345257f808fa457837f20af7f560128d891f3108efe1b37b4b76df3f8",
+      "inputSha256": "57828f87c4129195cd39cd598d0223c3e9bcef739c194cd9da45a6dbbccff470",
+      "servings": 2,
+      "method": "B",
+      "point": null,
+      "range": {
+        "min": 33.0405,
+        "max": 33.133500000000005
+      },
+      "uncertainty": "NAMED_SCENARIOS",
+      "limitation": {
+        "fi": "Vaihteluväli kuvaa kahden punnitun sambalmäärän vaikutusta. Tempehin, munan ja sambalin GI-luvut ovat laskentakoodeja.",
+        "en": "The range reflects two weighed amounts of sambal. Tempeh, egg and sambal use assigned GI codes.",
+        "sv": "Intervallet gäller två vägda mängder sambal. Tempeh, ägg och sambal har tilldelade GI-koder.",
+        "th": "ช่วงค่านี้มาจากซัมบัลสองปริมาณที่ชั่งไว้ เทมเป้ ไข่ และซัมบัลใช้ค่า GI ที่กำหนดเพื่อการคำนวณ"
+      },
+      "omittedCho": 0,
+      "sources": [
+        {
+          "title": "Jenkins et al., jasmine rice",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2996336/",
+          "kind": "HUMAN_GI",
+          "note": "GI 82 on glucose scale."
+        },
+        {
+          "title": "Fineli 11521 and 858",
+          "url": "https://fineli.fi/fineli/fi/ohje/19",
+          "kind": "CARBOHYDRATE",
+          "note": "THL Fineli CC BY 4.0."
+        },
+        {
+          "title": "Better Nature Original Tempeh",
+          "url": "https://www.betternaturetempeh.co/product/original-tempeh",
+          "kind": "CARBOHYDRATE",
+          "note": "1.9 g per 100 g."
+        },
+        {
+          "title": "Inproba E06431",
+          "url": "https://www.inproba.com/oriental/products/2726/sambal-oelek-100-g/",
+          "kind": "CARBOHYDRATE",
+          "note": "3.1 g per 100 g."
+        },
+        {
+          "title": "Assigned GI coding",
+          "url": "https://doi.org/10.2337/dc08-1239",
+          "kind": "B_CODING",
+          "note": "Tempeh and egg 50; sambal 40."
+        }
+      ],
+      "omittedChoStressGkAtGi100": 0,
+      "suggestedRisk": "MEDIUM",
+      "riskSignals": [
+        "NAMED_SCENARIO_RANGE",
+        "ASSIGNED_GI"
+      ],
+      "localeFields": "PRESENT",
+      "classification": {
+        "candidateSha256": "53feb9384ca60b90dfdb3acabb8341ffa97829f9086a5519d611cd03b50077b2",
+        "risk": "HIGH",
+        "reasons": [
+          "Jasmiiniriisi määrää noin 98 % alemmasta arviosta. Nimetyn riisin sidos ja sambalin annostus tarvitsevat erillisen ratkaisun."
+        ],
+        "contentChange": "GK_ONLY",
+        "contentSummary": "Kahdelle 100 g kuivaa jasmiiniriisiä, 100 g nimettyä tempehiä ja erilliset 15 g:n tai 30 g:n sambalskenaariot.",
+        "outcome": "REVIEW_REQUIRED",
+        "review": {
+          "depth": "FOCUSED",
+          "evidence": "docs/nutrition/gk80-operation80-batch-03.md"
+        }
+      },
+      "technical": "PASS",
+      "state": "REVIEW_REQUIRED",
+      "reason": "RISK_MATCHED_REVIEW_REQUIRED",
+      "ownerStatus": "PENDING",
+      "publicationAuthorized": false
+    },
+    {
+      "recipeId": "kiinalainen-katkarapu-wontonkeitto",
+      "packetPath": "docs/nutrition/gk80-operation80-wonton-release-candidate.json",
+      "originalPath": "reseptit/aamupalat/kiinalainen-katkarapu-wontonkeitto.md",
+      "supportFiles": {
+        "docs/nutrition/gk80-operation80-batch-29.md": "3b1d3a667e135b1cfe64ef1f2889f199a07b40b338848958b87e21d0eff6e96d"
+      },
+      "candidateSha256": "69953d83b9e6762a93756248cd325a5f7f3aa4bf3063705a6ee24fdd59811477",
+      "originalSha256": "4b40f0444ebb9f98772befef80a5e6751da56b4086cd22df854efcc20d7ed698",
+      "inputSha256": "85cb89857c152e6450fbad701fd0b495dc71efc65cf2b67bc3824e4c2226bd1d",
+      "servings": 2,
+      "method": "A",
+      "point": 11.0504,
+      "range": null,
+      "uncertainty": "LOW_CONFIDENCE_POINT",
+      "limitation": {
+        "fi": "Wontonin GI-verrokki on liha-salottisipulinyytti. Inkiväärille ja vihanneksille käytetään laskentakoodeja. Liemen hiilihydraatit jäävät GK-summan ulkopuolelle.",
+        "en": "The GI comparator is a meat and shallot dumpling. Ginger and vegetables use assigned GI codes. Broth carbohydrate is excluded from the GL sum.",
+        "sv": "GI-jämförelsen är ett degknyte med kött och schalottenlök. Ingefära och grönsaker har tilldelade GI-koder. Buljongens kolhydrater ingår inte i GB-summan.",
+        "th": "ค่า GI อ้างอิงจากเกี๊ยวไส้เนื้อและหอมแดง ขิงและผักใช้ค่า GI ที่กำหนดตามกลุ่ม การคำนวณไม่รวมคาร์โบไฮเดรตจากน้ำซุป"
+      },
+      "omittedCho": 0.7,
+      "sources": [
+        {
+          "title": "Yang et al., meat and shallot dumpling",
+          "url": "https://www.wjgnet.com/1007-9327/full/v12/i21/3430.htm",
+          "kind": "HUMAN_GI",
+          "note": "GI 28 for the filled dumpling comparator."
+        },
+        {
+          "title": "QQ Century Wonton Skin",
+          "url": "https://qqcentury.com/wonton-skin/",
+          "kind": "CARBOHYDRATE",
+          "note": "50.8 g carbohydrate per 100 g."
+        },
+        {
+          "title": "Aneto Natural Low Sodium Chicken Broth",
+          "url": "https://www.caldoaneto.com/en/product/wellness-broths/natural-low-sodium-chicken-broth",
+          "kind": "CARBOHYDRATE",
+          "note": "0.2 g carbohydrate per 100 ml."
+        },
+        {
+          "title": "AFCD F007422, F004213, F006250",
+          "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd",
+          "kind": "CARBOHYDRATE",
+          "note": "CC BY-SA 3.0 Australia."
+        },
+        {
+          "title": "USDA 170390",
+          "url": "https://fdc.nal.usda.gov/food-details/170390/nutrients",
+          "kind": "CARBOHYDRATE",
+          "note": "Total carbohydrate minus fibre."
+        }
+      ],
+      "omittedChoStressGkAtGi100": 0.7,
+      "suggestedRisk": "MEDIUM",
+      "riskSignals": [
+        "CHO_OMITTED"
+      ],
+      "localeFields": "PRESENT",
+      "classification": {
+        "candidateSha256": "69953d83b9e6762a93756248cd325a5f7f3aa4bf3063705a6ee24fdd59811477",
+        "risk": "HIGH",
+        "reasons": [
+          "Yangin nyytin kuori, täyte ja kypsennys jäävät avoimiksi. Nyyttiverrokki määrää lähes koko arvion."
+        ],
+        "contentChange": "GK_ONLY",
+        "contentSummary": "Kahdelle 150 g nimettyjä wontonkuoria, 150 g katkarapua, 700 ml nimettyä lientä ja punnitut kasvikset.",
+        "outcome": "REVIEW_REQUIRED",
+        "review": {
+          "depth": "FOCUSED",
+          "evidence": "docs/nutrition/gk80-operation80-batch-29.md"
+        }
+      },
+      "technical": "PASS",
+      "state": "REVIEW_REQUIRED",
+      "reason": "RISK_MATCHED_REVIEW_REQUIRED",
+      "ownerStatus": "PENDING",
+      "publicationAuthorized": false
+    },
+    {
+      "recipeId": "xiaolongbao",
+      "packetPath": "docs/nutrition/gk80-operation80-xiaolongbao-release-candidate.json",
+      "originalPath": "reseptit/alkuruoat/xiaolongbao.md",
+      "supportFiles": {
+        "docs/nutrition/gk80-operation80-batch-36.md": "30dc150b33d1f51e5516a4346bcd8e7c9332553242bd807f7f01c02aa50ed781"
+      },
+      "candidateSha256": "ef8b9aeff8897ced2215b625d94bce0014c3ead815914ca6f364602ed1b0162f",
+      "originalSha256": "2d0e026ce3e13ae802fb836053ee7c0b2a28a43ac0306a5ee902d59d1d2aa549",
+      "inputSha256": "98dcc46faec62bf7d90cdcbdb640143e30c62e3e0e5a0c2e003c5333396de80e",
+      "servings": 4,
+      "method": "A",
+      "point": 15.7659005,
+      "range": null,
+      "uncertainty": "LOW_CONFIDENCE_POINT",
+      "limitation": {
+        "fi": "GI 28 on liha–salottisipulinyytin verrokki. Kuoren paksuus, liemitäyte ja höyrytys voivat muuttaa vastetta. Dipin 0,462 g hiilihydraattia annosta kohti jää pois.",
+        "en": "GI 28 is a meat and shallot dumpling comparator. Wrapper thickness, broth filling and steaming can affect the response. The dip contributes 0.462 g excluded carbohydrate per serving.",
+        "sv": "GI 28 kommer från ett degknyte med kött och schalottenlök. Degens tjocklek, buljongfyllningen och ångkokningen kan påverka responsen. Dippens 0,462 g kolhydrat per portion ingår inte.",
+        "th": "ค่า GI 28 อ้างอิงเกี๊ยวไส้เนื้อและหอมแดง ความหนาของแป้ง ไส้น้ำซุป และการนึ่งอาจเปลี่ยนการตอบสนอง ไม่รวมคาร์โบไฮเดรตจากน้ำจิ้ม 0.462 กรัมต่อที่"
+      },
+      "omittedCho": 0.462,
+      "sources": [
+        {
+          "title": "Yang et al.",
+          "url": "https://www.wjgnet.com/1007-9327/full/v12/i21/3430.htm",
+          "kind": "HUMAN_GI",
+          "note": "Filled meat and shallot dumpling GI 28."
+        },
+        {
+          "title": "Fineli 110, 28946, 30315",
+          "url": "https://fineli.fi/fineli/fi/ohje/19",
+          "kind": "CARBOHYDRATE",
+          "note": "THL CC BY 4.0."
+        },
+        {
+          "title": "AFCD F004196, F006250, F004213",
+          "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd",
+          "kind": "CARBOHYDRATE",
+          "note": "CC BY-SA 3.0 Australia."
+        },
+        {
+          "title": "Kikkoman",
+          "url": "https://www.kikkoman.co.uk/products/detail/fs-kikkoman-naturally-brewed-soy-sauce",
+          "kind": "CARBOHYDRATE",
+          "note": "3.2 g per 100 ml."
+        },
+        {
+          "title": "Gold Plum Chinkiang",
+          "url": "https://www.okashigroup.com/catalog/gold-plum-chinkiang-vinegar-550ml",
+          "kind": "CARBOHYDRATE",
+          "note": "5.2 g per 100 ml."
+        }
+      ],
+      "omittedChoStressGkAtGi100": 0.462,
+      "suggestedRisk": "MEDIUM",
+      "riskSignals": [
+        "CHO_OMITTED"
+      ],
+      "localeFields": "PRESENT",
+      "classification": {
+        "candidateSha256": "ef8b9aeff8897ced2215b625d94bce0014c3ead815914ca6f364602ed1b0162f",
+        "risk": "HIGH",
+        "reasons": [
+          "Yangin keittotavaltaan avoin nyytti ei kata höyrytystä ja liemitäytettä. Siirto vaatii syväkatselmoinnin."
+        ],
+        "contentChange": "GK_ONLY",
+        "contentSummary": "Neljälle 24 höyrynyyttiä punnituilla taikina-, kanaliemihyytelö- ja dippimäärillä.",
+        "outcome": "REVIEW_REQUIRED",
+        "review": {
+          "depth": "FOCUSED",
+          "evidence": "docs/nutrition/gk80-operation80-batch-36.md"
+        }
+      },
+      "technical": "PASS",
+      "state": "REVIEW_REQUIRED",
+      "reason": "RISK_MATCHED_REVIEW_REQUIRED",
+      "ownerStatus": "PENDING",
+      "publicationAuthorized": false
+    }
+  ],
+  "manifestSha256": "e6edcf980b24419a587b9da8aacc8bcb942f3757d75c9a06da22da0b9bb1b1a0"
+}

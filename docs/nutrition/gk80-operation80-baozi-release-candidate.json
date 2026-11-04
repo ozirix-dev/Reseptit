@@ -1,0 +1,205 @@
+{
+  "recipeId": "baozi",
+  "servings": 4,
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "unroundedGk": "31.203364",
+  "inputs": [
+    [
+      400,
+      73.998,
+      39.1
+    ],
+    [
+      7,
+      6.3,
+      39.1
+    ],
+    [
+      12,
+      99.9,
+      39.1
+    ],
+    [
+      150,
+      1.61,
+      39.1
+    ],
+    [
+      20,
+      4.6,
+      39.1
+    ],
+    [
+      30,
+      3.2,
+      39.1,
+      "ml"
+    ],
+    [
+      10,
+      4.8,
+      39.1
+    ],
+    [
+      7,
+      86,
+      39.1
+    ],
+    [
+      300,
+      0,
+      0
+    ]
+  ],
+  "ingredients": [
+    {
+      "name": {
+        "fi": "Vehnäjauho",
+        "en": "Wheat flour",
+        "sv": "Vetemjöl",
+        "th": "แป้งสาลี"
+      },
+      "grams": 400
+    },
+    {
+      "name": {
+        "fi": "Kuivahiiva",
+        "en": "Dry yeast",
+        "sv": "Torrjäst",
+        "th": "ยีสต์แห้ง"
+      },
+      "grams": 7
+    },
+    {
+      "name": {
+        "fi": "Sokeri",
+        "en": "Sugar",
+        "sv": "Socker",
+        "th": "น้ำตาล"
+      },
+      "grams": 12
+    },
+    {
+      "name": {
+        "fi": "Kiinankaali",
+        "en": "Chinese cabbage",
+        "sv": "Salladskål",
+        "th": "ผักกาดขาว"
+      },
+      "grams": 150
+    },
+    {
+      "name": {
+        "fi": "Kevätsipuli",
+        "en": "Spring onion",
+        "sv": "Salladslök",
+        "th": "ต้นหอม"
+      },
+      "grams": 20
+    },
+    {
+      "name": {
+        "fi": "Kikkoman-soijakastike",
+        "en": "Kikkoman soy sauce",
+        "sv": "Kikkoman-sojasås",
+        "th": "ซีอิ๊ว Kikkoman"
+      },
+      "grams": null,
+      "quantity": {
+        "amount": 30,
+        "unit": "ml"
+      }
+    },
+    {
+      "name": {
+        "fi": "Inkivääri",
+        "en": "Ginger",
+        "sv": "Ingefära",
+        "th": "ขิง"
+      },
+      "grams": 10
+    },
+    {
+      "name": {
+        "fi": "Maissitärkkelys",
+        "en": "Cornstarch",
+        "sv": "Majsstärkelse",
+        "th": "แป้งข้าวโพด"
+      },
+      "grams": 7
+    },
+    {
+      "name": {
+        "fi": "Porsaan jauheliha",
+        "en": "Minced pork",
+        "sv": "Fläskfärs",
+        "th": "หมูสับ"
+      },
+      "grams": 300
+    },
+    {
+      "name": {
+        "fi": "Lämmin vesi",
+        "en": "Warm water",
+        "sv": "Varmt vatten",
+        "th": "น้ำอุ่น"
+      },
+      "grams": null,
+      "quantity": {
+        "amount": 250,
+        "unit": "ml"
+      }
+    }
+  ],
+  "preparation": {
+    "fi": "Sekoita hiiva ja sokeri {{amount:9}} ml:aan lämmintä vettä. Lisää jauho, vaivaa ja kohota 45 minuuttia. Purista kaalista neste. Sekoita kaali, porsas, kevätsipuli, soija, inkivääri, maissitärkkelys ja teelusikallinen seesamiöljyä. Täytä ja sulje 12 sämpylää. Kohota 15 minuuttia ja höyrytä 12–15 minuuttia. Odota 3 minuuttia ennen kannen avaamista. Jaa {{servings}} annokseen.",
+    "en": "Mix yeast and sugar with {{amount:9}} ml warm water. Add flour, knead and proof for 45 minutes. Squeeze excess liquid from the cabbage. Mix cabbage, pork, spring onion, soy sauce, ginger, cornstarch and a teaspoon of sesame oil. Fill and seal 12 buns. Proof for 15 minutes and steam for 12–15 minutes. Wait 3 minutes before opening the lid. Divide into {{servings}} servings.",
+    "sv": "Blanda jäst och socker med {{amount:9}} ml varmt vatten. Tillsätt mjöl, knåda och jäs i 45 minuter. Krama ur kålen. Blanda kål, fläskfärs, salladslök, soja, ingefära, majsstärkelse och en tesked sesamolja. Fyll och förslut 12 bullar. Jäs i 15 minuter och ångkoka i 12–15 minuter. Vänta 3 minuter innan locket öppnas. Dela i {{servings}} portioner.",
+    "th": "ผสมยีสต์และน้ำตาลกับน้ำอุ่น {{amount:9}} มล. เติมแป้ง นวดและพักให้ขึ้น 45 นาที บีบน้ำออกจากผักกาด ผสมผักกาด หมูสับ ต้นหอม ซีอิ๊ว ขิง แป้งข้าวโพด และน้ำมันงา 1 ช้อนชา ใส่ไส้และปิดแป้ง 12 ลูก พัก 15 นาทีแล้วนึ่ง 12–15 นาที รอ 3 นาทีก่อนเปิดฝา แบ่งเป็น {{servings}} ที่"
+  },
+  "limitation": {
+    "fi": "GI 39,1 on täytetyn höyrysämpylän verrokki koko baozille. Tutkimus ei erittele taikinan ja täytteen suhdetta.",
+    "en": "GI 39.1 comes from a filled steamed bun proxy for the whole baozi. The study does not specify the dough-to-filling ratio.",
+    "sv": "GI 39,1 bygger på en jämförbar fylld ångbulle för hela baozin. Studien anger inget förhållande mellan deg och fyllning.",
+    "th": "ค่า GI 39.1 ใช้ซาลาเปานึ่งไส้เนื้อเป็นตัวเทียบทั้งลูก งานวิจัยไม่ได้ระบุสัดส่วนแป้งต่อไส้"
+  },
+  "sources": [
+    {
+      "title": "Yang et al.",
+      "url": "https://www.wjgnet.com/1007-9327/tables/v12/i21/3430.htm",
+      "kind": "HUMAN_GI",
+      "note": "Yang et al., Table 2. Glucose-scale GI 39.1 for the meat and shallot steamed bun."
+    },
+    {
+      "title": "Fineli",
+      "url": "https://fineli.fi/fineli/fi/ohje/19",
+      "kind": "CARBOHYDRATE",
+      "note": "THL Fineli. Wheat flour, sugar, Chinese cabbage and starch composition from the calculation note."
+    },
+    {
+      "title": "AFCD",
+      "url": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+      "kind": "CARBOHYDRATE",
+      "note": "FSANZ AFCD. Yeast, spring onion and ginger composition from the calculation note."
+    },
+    {
+      "title": "Kikkoman",
+      "url": "https://www.kikkoman.co.uk/products/detail/fs-kikkoman-naturally-brewed-soy-sauce",
+      "kind": "CARBOHYDRATE",
+      "note": "UK Naturally Brewed Soy Sauce. 3.2 g carbohydrate per 100 ml."
+    }
+  ],
+  "boundFiles": {
+    "reseptit/paaruoat/baozi.md": "af8efd8db3bbfc7a57f4e75fe537f88b03e9dfe4227ae586905a6c046b60f208",
+    "docs/nutrition/gk80-operation80-baozi.md": "b924e594db261355cc1717417e87ebcf7aa545339a9ab2791bc2d9cc6eb53415"
+  },
+  "exclusions": [
+    {
+      "ingredientIndex": 9,
+      "kind": "ZERO_CHO",
+      "rationale": "Dough water is specified in the candidate preparation and contributes 0 g available carbohydrate.",
+      "evidencePath": "docs/nutrition/gk80-operation80-baozi.md"
+    }
+  ]
+}

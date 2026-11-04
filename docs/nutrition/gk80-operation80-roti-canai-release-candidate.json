@@ -1,0 +1,166 @@
+{
+  "recipeId": "malesialainen-roti-canai-dhalilla",
+  "servings": 2,
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "unroundedGk": "47.4114925",
+  "inputs": [
+    [
+      100,
+      73.998,
+      71
+    ],
+    [
+      100,
+      52.53,
+      71
+    ],
+    [
+      200,
+      3.4,
+      71
+    ],
+    [
+      5,
+      4.51,
+      71
+    ]
+  ],
+  "ingredients": [
+    {
+      "name": {
+        "fi": "Vehnäjauho",
+        "en": "Wheat flour",
+        "sv": "Vetemjöl",
+        "th": "แป้งสาลี"
+      },
+      "grams": 100
+    },
+    {
+      "name": {
+        "fi": "Kuiva punainen linssi",
+        "en": "Dry red lentils",
+        "sv": "Torra röda linser",
+        "th": "ถั่วเลนทิลแดงแห้ง"
+      },
+      "grams": 100
+    },
+    {
+      "name": {
+        "fi": "Blue Dragon Coconut Milk",
+        "en": "Blue Dragon Coconut Milk",
+        "sv": "Blue Dragon Coconut Milk",
+        "th": "กะทิ Blue Dragon"
+      },
+      "grams": 200
+    },
+    {
+      "name": {
+        "fi": "Tuoreet currylehdet",
+        "en": "Fresh curry leaves",
+        "sv": "Färska curryblad",
+        "th": "ใบแกงสด"
+      },
+      "grams": 5
+    },
+    {
+      "name": {
+        "fi": "Paistoöljy",
+        "en": "Cooking oil",
+        "sv": "Stekolja",
+        "th": "น้ำมันสำหรับทอด"
+      },
+      "grams": null,
+      "quantity": {
+        "amount": 1,
+        "unit": "tbsp"
+      }
+    },
+    {
+      "name": {
+        "fi": "Vesi",
+        "en": "Water",
+        "sv": "Vatten",
+        "th": "น้ำ"
+      },
+      "grams": null
+    },
+    {
+      "name": {
+        "fi": "Suola",
+        "en": "Salt",
+        "sv": "Salt",
+        "th": "เกลือ"
+      },
+      "grams": null
+    }
+  ],
+  "preparation": {
+    "fi": "Vaivaa {{amount:0}} g vehnäjauhoa, vettä ja suolaa pehmeäksi taikinaksi. Anna levätä 10 minuuttia. Taita ohuiksi kerrosleiviksi ja paista {{amount:4}} rkl:ssa öljyä. Keitä {{amount:1}} g kuivia punaisia linssejä pehmeiksi {{amount:2}} g:ssa kookosmaitoa ja tarvittavassa vedessä. Mausta {{amount:3}} g:lla currylehtiä. Jaa leivät ja koko dhal {{servings}} annokseen.",
+    "en": "Knead {{amount:0}} g flour, water and salt into a soft dough. Rest for 10 minutes, fold into thin layered breads and pan-fry in {{amount:4}} tbsp oil. Cook {{amount:1}} g dry red lentils until tender in {{amount:2}} g coconut milk and water as needed. Season with {{amount:3}} g curry leaves. Divide the breads and all the dhal into {{servings}} servings.",
+    "sv": "Knåda {{amount:0}} g vetemjöl, vatten och salt till en mjuk deg. Låt vila i 10 minuter, vik till tunna lagerbröd och stek i {{amount:4}} msk olja. Koka {{amount:1}} g torra röda linser mjuka i {{amount:2}} g kokosmjölk och vatten efter behov. Smaksätt med {{amount:3}} g curryblad. Dela bröden och all dhal i {{servings}} portioner.",
+    "th": "นวดแป้งสาลี {{amount:0}} กรัมกับน้ำและเกลือจนแป้งนุ่ม พัก 10 นาที พับเป็นแผ่นบางหลายชั้นแล้วทอดในน้ำมัน {{amount:4}} ช้อนโต๊ะ ต้มถั่วเลนทิลแดงแห้ง {{amount:1}} กรัมในกะทิ {{amount:2}} กรัมและน้ำตามต้องการจนถั่วนุ่ม ปรุงด้วยใบแกง {{amount:3}} กรัม แบ่งโรตีและแกงถั่วทั้งหมดเป็น {{servings}} ที่"
+  },
+  "limitation": {
+    "fi": "GI 71 on roti canain ja dhalin yhdistelmän verrokki. Kotiversion kookosmaito ja leivän suhde kastikkeeseen voivat muuttaa vastetta.",
+    "en": "GI 71 is a comparator for roti canai served with dhal. Coconut milk and the bread-to-dhal ratio can affect the response.",
+    "sv": "GI 71 gäller en jämförelseportion med roti canai och dhal. Kokosmjölken och förhållandet mellan bröd och dhal kan påverka responsen.",
+    "th": "ค่า GI 71 อ้างอิงโรตีจาไนเสิร์ฟกับแกงถั่ว กะทิและสัดส่วนโรตีต่อแกงอาจเปลี่ยนการตอบสนอง"
+  },
+  "sources": [
+    {
+      "title": "Malaysia Recommended Nutrient Intakes",
+      "url": "https://hq.moh.gov.my/nutrition/wp-content/uploads/2023/12/FA-Buku-RNI.pdf",
+      "kind": "HUMAN_GI",
+      "note": "Appendix 4.2 reports GI 71 for roti canai with dhal."
+    },
+    {
+      "title": "Nik Shanita et al.",
+      "url": "https://pkukmweb.ukm.my/jsm/pdf_files/SM-PDF-40-8-2011/07%20nik%20shanita.pdf",
+      "kind": "HUMAN_GI",
+      "note": "Table 2 traces GI 71 to an unpublished 2005 thesis."
+    },
+    {
+      "title": "Fineli 110",
+      "url": "https://fineli.fi/fineli/fi/elintarvikkeet/110",
+      "kind": "CARBOHYDRATE",
+      "note": "THL CC BY 4.0."
+    },
+    {
+      "title": "IFCT B013 and G010",
+      "url": "https://www.nin.res.in/ebooks/IFCT2017.pdf",
+      "kind": "CARBOHYDRATE",
+      "note": "Dry red lentils and curry leaves."
+    },
+    {
+      "title": "Blue Dragon",
+      "url": "https://www.bluedragon.co.uk/products/coconut-milk",
+      "kind": "CARBOHYDRATE",
+      "note": "3.4 g per 100 g."
+    }
+  ],
+  "boundFiles": {
+    "reseptit/aamupalat/malesialainen-roti-canai-dhalilla.md": "7ca86931fae4b26def3abf3c664523e3188e80df33f3e44ee55f884476b356ff",
+    "docs/nutrition/gk80-operation80-batch-57.md": "e16700bb145a3997ebe47307501034a209d6b8db710ad9625c5bf5ba260e06be"
+  },
+  "exclusions": [
+    {
+      "ingredientIndex": 4,
+      "kind": "ZERO_CHO",
+      "rationale": "Cooking oil. The bound calculation note gives this input zero available carbohydrate.",
+      "evidencePath": "docs/nutrition/gk80-operation80-batch-57.md"
+    },
+    {
+      "ingredientIndex": 5,
+      "kind": "ZERO_CHO",
+      "rationale": "Water. The bound calculation note gives this input zero available carbohydrate.",
+      "evidencePath": "docs/nutrition/gk80-operation80-batch-57.md"
+    },
+    {
+      "ingredientIndex": 6,
+      "kind": "ZERO_CHO",
+      "rationale": "Salt. The bound calculation note gives this input zero available carbohydrate.",
+      "evidencePath": "docs/nutrition/gk80-operation80-batch-57.md"
+    }
+  ]
+}

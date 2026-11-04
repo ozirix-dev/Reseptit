@@ -1,0 +1,143 @@
+{
+  "recipeId": "vietnamilainen-papaija-kookospuuro",
+  "servings": 2,
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "unroundedGk": "41.77455",
+  "inputs": [
+    [
+      100,
+      87.79,
+      81
+    ],
+    [
+      200,
+      3.4,
+      81
+    ],
+    [
+      200,
+      9.12,
+      38
+    ]
+  ],
+  "omissions": [
+    {
+      "ingredientIndex": 3,
+      "choPer100g": 8.02
+    }
+  ],
+  "ingredients": [
+    {
+      "name": {
+        "fi": "Kuivat tapiokahelmet",
+        "en": "Dry tapioca pearls",
+        "sv": "Torra tapiokapärlor",
+        "th": "เม็ดสาคูแห้ง"
+      },
+      "grams": 100
+    },
+    {
+      "name": {
+        "fi": "Blue Dragon -kookosmaito",
+        "en": "Blue Dragon Coconut Milk",
+        "sv": "Blue Dragon-kokosmjölk",
+        "th": "กะทิ Blue Dragon"
+      },
+      "grams": 200
+    },
+    {
+      "name": {
+        "fi": "Kypsä kuorittu papaija",
+        "en": "Ripe peeled papaya",
+        "sv": "Mogen skalad papaya",
+        "th": "มะละกอสุกปอกเปลือก"
+      },
+      "grams": 200
+    },
+    {
+      "name": {
+        "fi": "Limettimehu",
+        "en": "Lime juice",
+        "sv": "Limejuice",
+        "th": "น้ำมะนาว"
+      },
+      "grams": 15
+    },
+    {
+      "name": {
+        "fi": "Vesi",
+        "en": "Water",
+        "sv": "Vatten",
+        "th": "น้ำ"
+      },
+      "grams": null,
+      "quantity": {
+        "amount": 700,
+        "unit": "ml"
+      }
+    }
+  ],
+  "preparation": {
+    "fi": "Keitä {{amount:0}} g kuivia makeuttamattomia tapiokahelmiä {{amount:4}} ml:ssa vettä. Kun helmet alkavat muuttua läpikuultaviksi, lisää {{amount:1}} g kookosmaitoa ja hauduta kypsäksi. Jaa puuro, {{amount:2}} g paloiteltua papaijaa ja {{amount:3}} g limettimehua {{servings}} annokseen.",
+    "en": "Boil {{amount:0}} g dry unsweetened tapioca pearls in {{amount:4}} ml water. When the pearls begin to turn translucent, add {{amount:1}} g coconut milk and simmer until tender. Divide the porridge, {{amount:2}} g diced papaya and {{amount:3}} g lime juice into {{servings}} servings.",
+    "sv": "Koka {{amount:0}} g torra osötade tapiokapärlor i {{amount:4}} ml vatten. När pärlorna börjar bli genomskinliga, tillsätt {{amount:1}} g kokosmjölk och sjud tills pärlorna är mjuka. Fördela gröten, {{amount:2}} g tärnad papaya och {{amount:3}} g limejuice i {{servings}} portioner.",
+    "th": "ต้มเม็ดสาคูแห้งไม่เติมน้ำตาล {{amount:0}} กรัมในน้ำ {{amount:4}} มล. เมื่อเม็ดเริ่มใส เติมกะทิ {{amount:1}} กรัมแล้วเคี่ยวจนสุก แบ่งโจ๊ก มะละกอหั่นชิ้น {{amount:2}} กรัม และน้ำมะนาว {{amount:3}} กรัมเป็น {{servings}} ที่"
+  },
+  "limitation": {
+    "fi": "Puuropohjan verrokki on maidossa keitetty tapioka. Kookosmaito ja helmikoko voivat muuttaa vastetta. Limettimehusta jää pois 0,60 g hiilihydraattia annosta kohti.",
+    "en": "The porridge uses tapioca cooked in milk as its GI comparator. Coconut milk and pearl size may affect the response. Lime juice contributes 0.60 g excluded carbohydrate per serving.",
+    "sv": "Gröten jämförs med tapioka kokt i mjölk. Kokosmjölk och pärlornas storlek kan påverka responsen. Limejuicens 0,60 g kolhydrat per portion ingår inte.",
+    "th": "ค่า GI ของโจ๊กอ้างอิงสาคูต้มในนม กะทิและขนาดเม็ดอาจเปลี่ยนการตอบสนอง ไม่รวมคาร์โบไฮเดรตจากน้ำมะนาว 0.60 กรัมต่อที่"
+  },
+  "sources": [
+    {
+      "title": "International GI tables",
+      "url": "https://doi.org/10.1093/ajcn/76.1.5",
+      "kind": "HUMAN_GI",
+      "note": "Glucose-scale GI 81 for tapioca boiled in milk."
+    },
+    {
+      "title": "Papaya human GI",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28972240/",
+      "kind": "HUMAN_GI",
+      "note": "GI 38."
+    },
+    {
+      "title": "USDA tapioca",
+      "url": "https://fdc.nal.usda.gov/food-details/169717/nutrients",
+      "kind": "CARBOHYDRATE",
+      "note": "Total carbohydrate minus fibre."
+    },
+    {
+      "title": "USDA papaya",
+      "url": "https://fdc.nal.usda.gov/food-details/169926/nutrients",
+      "kind": "CARBOHYDRATE",
+      "note": "Total carbohydrate minus fibre."
+    },
+    {
+      "title": "USDA lime juice",
+      "url": "https://fdc.nal.usda.gov/food-details/168156/nutrients",
+      "kind": "CARBOHYDRATE",
+      "note": "Total carbohydrate minus fibre."
+    },
+    {
+      "title": "Blue Dragon Coconut Milk",
+      "url": "https://www.bluedragon.co.uk/products/coconut-milk",
+      "kind": "CARBOHYDRATE",
+      "note": "3.4 g per 100 g."
+    }
+  ],
+  "boundFiles": {
+    "reseptit/aamupalat/vietnamilainen-papaija-kookospuuro.md": "02440d7cfaac9b9b3b79e2467ee0fc4bd26afc49a0204253accf3478992aec99",
+    "docs/nutrition/gk80-operation80-batch-61.md": "a93f6d927c55a362182fdc8bbfcef3719144a0d3d9735a478d8ebfa02f58c79f"
+  },
+  "exclusions": [
+    {
+      "ingredientIndex": 4,
+      "kind": "ZERO_CHO",
+      "rationale": "Water. The bound calculation note gives this input zero available carbohydrate.",
+      "evidencePath": "docs/nutrition/gk80-operation80-batch-61.md"
+    }
+  ]
+}

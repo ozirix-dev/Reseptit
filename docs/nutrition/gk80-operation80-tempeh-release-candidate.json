@@ -1,0 +1,133 @@
+{
+  "recipeId": "indonesialainen-tempeh-munakulho",
+  "servings": 2,
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "unroundedGk": "33.0405",
+  "upperScenario": {
+    "replacements": [
+      {
+        "inputIndex": 3,
+        "ingredientIndex": 4
+      }
+    ],
+    "unroundedGk": "33.1335"
+  },
+  "preparation": {
+    "fi": "Keitä {{amount:0}} g jasmiiniriisiä pakkauksen mukaan. Paista {{amount:1}} g tempehiä rapeaksi ja kypsennä {{amount:2}} g kananmunaa. Valitse koko erälle joko {{amount:3}} g tai {{amount:4}} g sambalia. Jaa {{servings}} annokseen.",
+    "en": "Cook {{amount:0}} g jasmine rice according to the pack. Fry {{amount:1}} g tempeh until crisp and cook {{amount:2}} g egg. Choose either {{amount:3}} g or {{amount:4}} g sambal for the whole batch. Divide into {{servings}} portions.",
+    "sv": "Koka {{amount:0}} g jasminris enligt förpackningen. Stek {{amount:1}} g tempeh krispig och tillaga {{amount:2}} g ägg. Välj antingen {{amount:3}} g eller {{amount:4}} g sambal till hela satsen. Dela i {{servings}} portioner.",
+    "th": "หุงข้าวหอมมะลิ {{amount:0}} กรัมตามฉลาก ทอดเทมเป้ {{amount:1}} กรัมให้กรอบและปรุงไข่ {{amount:2}} กรัมให้สุก เลือกใช้ซัมบัล {{amount:3}} หรือ {{amount:4}} กรัมสำหรับทั้งสูตร แบ่งเป็น {{servings}} ส่วน"
+  },
+  "limitation": {
+    "fi": "Vaihteluväli kuvaa kahden punnitun sambalmäärän vaikutusta. Tempehin, munan ja sambalin GI-luvut ovat laskentakoodeja.",
+    "en": "The range reflects two weighed amounts of sambal. Tempeh, egg and sambal use assigned GI codes.",
+    "sv": "Intervallet gäller två vägda mängder sambal. Tempeh, ägg och sambal har tilldelade GI-koder.",
+    "th": "ช่วงค่านี้มาจากซัมบัลสองปริมาณที่ชั่งไว้ เทมเป้ ไข่ และซัมบัลใช้ค่า GI ที่กำหนดเพื่อการคำนวณ"
+  },
+  "ingredients": [
+    {
+      "grams": 100,
+      "name": {
+        "fi": "Kuiva jasmiiniriisi",
+        "en": "Dry jasmine rice",
+        "sv": "Torrt jasminris",
+        "th": "ข้าวหอมมะลิแห้ง"
+      }
+    },
+    {
+      "grams": 100,
+      "name": {
+        "fi": "Better Nature Original Tempeh",
+        "en": "Better Nature Original Tempeh",
+        "sv": "Better Nature Original Tempeh",
+        "th": "เทมเป้ Better Nature Original"
+      }
+    },
+    {
+      "grams": 110,
+      "name": {
+        "fi": "Kananmuna ilman kuorta",
+        "en": "Shelled egg",
+        "sv": "Ägg utan skal",
+        "th": "ไข่ไม่รวมเปลือก"
+      }
+    },
+    {
+      "grams": 15,
+      "name": {
+        "fi": "Inproba Sambal Oelek, vaihtoehto A",
+        "en": "Inproba Sambal Oelek, option A",
+        "sv": "Inproba Sambal Oelek, alternativ A",
+        "th": "ซัมบัลโอเล็ก Inproba ทางเลือก A"
+      }
+    },
+    {
+      "grams": 30,
+      "name": {
+        "fi": "Inproba Sambal Oelek, vaihtoehto B",
+        "en": "Inproba Sambal Oelek, option B",
+        "sv": "Inproba Sambal Oelek, alternativ B",
+        "th": "ซัมบัลโอเล็ก Inproba ทางเลือก B"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Jenkins et al., jasmine rice",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2996336/",
+      "kind": "HUMAN_GI",
+      "note": "GI 82 on glucose scale."
+    },
+    {
+      "title": "Fineli 11521 and 858",
+      "url": "https://fineli.fi/fineli/fi/ohje/19",
+      "kind": "CARBOHYDRATE",
+      "note": "THL Fineli CC BY 4.0."
+    },
+    {
+      "title": "Better Nature Original Tempeh",
+      "url": "https://www.betternaturetempeh.co/product/original-tempeh",
+      "kind": "CARBOHYDRATE",
+      "note": "1.9 g per 100 g."
+    },
+    {
+      "title": "Inproba E06431",
+      "url": "https://www.inproba.com/oriental/products/2726/sambal-oelek-100-g/",
+      "kind": "CARBOHYDRATE",
+      "note": "3.1 g per 100 g."
+    },
+    {
+      "title": "Assigned GI coding",
+      "url": "https://doi.org/10.2337/dc08-1239",
+      "kind": "B_CODING",
+      "note": "Tempeh and egg 50; sambal 40."
+    }
+  ],
+  "inputs": [
+    [
+      100,
+      79,
+      82
+    ],
+    [
+      100,
+      1.9,
+      50
+    ],
+    [
+      110,
+      0.3,
+      50
+    ],
+    [
+      15,
+      3.1,
+      40
+    ]
+  ],
+  "boundFiles": {
+    "reseptit/aamupalat/indonesialainen-tempeh-munakulho.md": "48c54ac345257f808fa457837f20af7f560128d891f3108efe1b37b4b76df3f8",
+    "docs/nutrition/gk80-operation80-batch-03.md": "b37019443cc891c7c866377280a20a7816f33d548c61459304b3c03a20ce746d"
+  }
+}

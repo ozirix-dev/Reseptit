@@ -1,0 +1,171 @@
+{
+  "recipeId": "marjainen-chiavanukas",
+  "servings": 4,
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "unroundedGk": "1.6210575",
+  "upperScenario": {
+    "giOverrides": [
+      {
+        "inputIndex": 0,
+        "gi": 53
+      }
+    ],
+    "unroundedGk": "1.806795"
+  },
+  "inputs": [
+    [
+      100,
+      5.715,
+      40
+    ],
+    [
+      50,
+      10.182,
+      53
+    ],
+    [
+      100,
+      3,
+      50
+    ]
+  ],
+  "omissions": [
+    {
+      "ingredientIndex": 3,
+      "choPer100g": 1.8
+    },
+    {
+      "ingredientIndex": 4,
+      "choPer100g": 12.65
+    }
+  ],
+  "ingredients": [
+    {
+      "name": {
+        "fi": "Tuore vadelma",
+        "en": "Fresh raspberries",
+        "sv": "Färska hallon",
+        "th": "ราสป์เบอร์รีสด"
+      },
+      "grams": 100
+    },
+    {
+      "name": {
+        "fi": "Tuore metsämustikka",
+        "en": "Fresh bilberries",
+        "sv": "Färska skogsblåbär",
+        "th": "บิลเบอร์รีสด"
+      },
+      "grams": 50
+    },
+    {
+      "name": {
+        "fi": "FAGE Total 0 %",
+        "en": "FAGE Total 0%",
+        "sv": "FAGE Total 0 %",
+        "th": "โยเกิร์ต FAGE Total 0%"
+      },
+      "grams": 100
+    },
+    {
+      "name": {
+        "fi": "Midsona-chiasiemen",
+        "en": "Midsona chia seeds",
+        "sv": "Midsona chiafrön",
+        "th": "เมล็ดเจีย Midsona"
+      },
+      "grams": 45
+    },
+    {
+      "name": {
+        "fi": "Vaniljauute",
+        "en": "Vanilla extract",
+        "sv": "Vaniljextrakt",
+        "th": "สารสกัดวานิลลา"
+      },
+      "grams": 4.2
+    },
+    {
+      "name": {
+        "fi": "Alpro Mantelijuoma No Sugars",
+        "en": "Alpro Almond No Sugars",
+        "sv": "Alpro Mandeldryck utan socker",
+        "th": "นมอัลมอนด์ไม่เติมน้ำตาล Alpro"
+      },
+      "grams": null,
+      "quantity": {
+        "amount": 250,
+        "unit": "ml"
+      }
+    }
+  ],
+  "preparation": {
+    "fi": "Sekoita {{amount:3}} g chiasiemeniä, {{amount:5}} ml mantelijuomaa, {{amount:2}} g jogurttia ja {{amount:4}} g vaniljauutetta. Anna hyytyä jääkaapissa. Jaa {{servings}} annokseen ja lisää tarjoiltaessa yhteensä {{amount:0}} g kokonaisia vadelmia ja {{amount:1}} g kokonaisia metsämustikoita.",
+    "en": "Mix {{amount:3}} g chia seeds, {{amount:5}} ml almond drink, {{amount:2}} g yogurt and {{amount:4}} g vanilla extract. Chill until set. Divide into {{servings}} servings and top with a total of {{amount:0}} g whole raspberries and {{amount:1}} g whole bilberries.",
+    "sv": "Blanda {{amount:3}} g chiafrön, {{amount:5}} ml mandeldryck, {{amount:2}} g yoghurt och {{amount:4}} g vaniljextrakt. Låt stelna i kylskåp. Dela i {{servings}} portioner och toppa med totalt {{amount:0}} g hela hallon och {{amount:1}} g hela skogsblåbär.",
+    "th": "ผสมเมล็ดเจีย {{amount:3}} กรัม นมอัลมอนด์ {{amount:5}} มล. โยเกิร์ต {{amount:2}} กรัม และสารสกัดวานิลลา {{amount:4}} กรัม แช่เย็นจนเซตตัว แบ่งเป็น {{servings}} ที่ แล้วโรยราสป์เบอร์รีทั้งผลรวม {{amount:0}} กรัมและบิลเบอร์รีทั้งผล {{amount:1}} กรัม"
+  },
+  "limitation": {
+    "fi": "Vadelman verrokit ovat mansikka ja kanadalainen villimustikka. Villimustikka toimii myös metsämustikan verrokkina. Chian ja vaniljauutteen noin 0,34 g hiilihydraattia annosta kohti jää pois.",
+    "en": "Strawberry and Canadian wild blueberry are raspberry comparators. Wild blueberry also serves as the bilberry comparator. About 0.34 g carbohydrate per serving from chia and vanilla extract is excluded.",
+    "sv": "Jordgubbar och kanadensiska vilda blåbär används som jämförelse för hallon. Vilda blåbär används också som jämförelse för skogsblåbär. Cirka 0,34 g kolhydrat per portion från chia och vanilj ingår inte.",
+    "th": "ค่า GI ของราสป์เบอร์รีอ้างอิงสตรอว์เบอร์รีและบลูเบอร์รีป่าแคนาดา และใช้บลูเบอร์รีป่าเทียบกับบิลเบอร์รีด้วย ไม่รวมคาร์โบไฮเดรตจากเจียและวานิลลาประมาณ 0.34 กรัมต่อที่"
+  },
+  "sources": [
+    {
+      "title": "Sydney GI database",
+      "url": "https://glycemicindex.com/gi-search/",
+      "kind": "HUMAN_GI",
+      "note": "Raw strawberry GI 40 and Canadian wild blueberry GI 53."
+    },
+    {
+      "title": "Fineli 448 and 442",
+      "url": "https://fineli.fi/fineli/fi/ohje/19",
+      "kind": "CARBOHYDRATE",
+      "note": "THL CC BY 4.0."
+    },
+    {
+      "title": "FAGE Total 0%",
+      "url": "https://gr.fage/yogurts/total-0/total-0-500g",
+      "kind": "CARBOHYDRATE",
+      "note": "3.0 g per 100 g."
+    },
+    {
+      "title": "Midsona chia",
+      "url": "https://www.midsonafoodservice.fi/tuotteet/siemenet/chiasiemen/",
+      "kind": "CARBOHYDRATE",
+      "note": "1.8 g per 100 g."
+    },
+    {
+      "title": "Alpro",
+      "url": "https://www.alpro.com/fi/tuotteemme/juomat/mantelijuoma-makeuttamaton",
+      "kind": "CARBOHYDRATE",
+      "note": "0 g per 100 ml."
+    },
+    {
+      "title": "USDA vanilla extract",
+      "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/SR/SR28/reports/sr28fg02.pdf",
+      "kind": "CARBOHYDRATE",
+      "note": "12.65 g per 100 g."
+    },
+    {
+      "title": "Low carbohydrate coding",
+      "url": "https://doi.org/10.1016/j.jfca.2007.02.004",
+      "kind": "PUBLISHED_CODING",
+      "note": "Yogurt code 50."
+    }
+  ],
+  "boundFiles": {
+    "reseptit/aamupalat/marjainen-chiavanukas.md": "c4c9c7a14345199304e7221fab28633a4a9abeffa3c99afc780cb5360824ec22",
+    "docs/nutrition/gk80-operation80-batch-38.md": "b18a7b897968565408bb36d9d012b22af6b6567a8bc2bf393612b830344ea9e3"
+  },
+  "exclusions": [
+    {
+      "ingredientIndex": 5,
+      "kind": "ZERO_CHO",
+      "rationale": "Alpro No Sugars label reports 0 g available carbohydrate per 100 ml.",
+      "evidencePath": "docs/nutrition/gk80-operation80-batch-38.md"
+    }
+  ]
+}

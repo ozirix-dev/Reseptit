@@ -1,0 +1,230 @@
+{
+  "recipeId": "nasi-lemak",
+  "servings": 4,
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "unroundedGk": "43.864425",
+  "mealGi": 66,
+  "preparation": {
+    "fi": "Keitä jasmiiniriisi kookosmaidossa ja vedessä. Keitä munat ja kuori ne. Huuhtele ja valuta anjovikset, paista ne öljyssä. Hauduta kastike salottisipulista, sambalista ja tamarindista, lisää tarvittaessa vettä. Jaa riisi, lisukkeet, kastike, paahdetut maapähkinät ja raaka kurkku {{servings}} annokseen.",
+    "en": "Cook the jasmine rice in coconut milk and water. Boil and peel the eggs. Rinse and drain the anchovies, then fry in oil. Simmer the shallot, sambal and tamarind, adding water if needed. Divide the rice, sides, sauce, roasted peanuts and raw cucumber into {{servings}} portions.",
+    "sv": "Koka jasminriset i kokosmjölk och vatten. Koka och skala äggen. Skölj och låt ansjovisen rinna av, stek den sedan i olja. Sjud schalottenlök, sambal och tamarind, tillsätt vatten vid behov. Dela ris, tillbehör, sås, rostade jordnötter och rå gurka i {{servings}} portioner.",
+    "th": "หุงข้าวหอมมะลิด้วยกะทิและน้ำ ต้มไข่แล้วปอกเปลือก ล้างปลาแอนโชวี สะเด็ดน้ำแล้วทอดในน้ำมัน เคี่ยวหอมแดง ซัมบัล และมะขาม เติมน้ำตามจำเป็น แบ่งข้าว เครื่องเคียง ซอส ถั่วลิสงคั่ว และแตงกวาดิบเป็น {{servings}} ส่วน"
+  },
+  "limitation": {
+    "fi": "GI 66 on mitattu kokonaisesta nasi lemak -ateriasta. Samalla hiilihydraattimäärällä kotiversion laskennallinen proteiinimäärä on suurempi ja rasvamäärä pienempi kuin koeateriassa. GI:n soveltuvuus kotiversioon on avoin.",
+    "en": "GI 66 was measured for a complete nasi lemak meal. At the same carbohydrate amount, this version has more protein and less fat in the composition calculation than the test meal. The applicability of its GI remains uncertain.",
+    "sv": "GI 66 uppmättes för en hel nasi lemak-måltid. Vid samma kolhydratmängd innehåller denna version enligt beräkningen mer protein och mindre fett än testmåltiden. Det är osäkert om GI-värdet kan överföras.",
+    "th": "ค่า GI 66 วัดจากนาซีเลอมักทั้งมื้อ เมื่อเทียบที่ปริมาณคาร์โบไฮเดรตเท่ากัน ผลคำนวณของสูตรนี้มีโปรตีนมากกว่าและไขมันน้อยกว่ามื้อที่ทดสอบ จึงยังไม่แน่ชัดว่าจะใช้ค่า GI นี้กับสูตรนี้ได้หรือไม่"
+  },
+  "ingredients": [
+    {
+      "grams": 300,
+      "name": {
+        "fi": "Kuiva valkoinen jasmiiniriisi",
+        "en": "Dry white jasmine rice",
+        "sv": "Torrt vitt jasminris",
+        "th": "ข้าวหอมมะลิขาวแห้ง"
+      }
+    },
+    {
+      "grams": 200,
+      "name": {
+        "fi": "Blue Dragon -kookosmaito",
+        "en": "Blue Dragon coconut milk",
+        "sv": "Blue Dragon kokosmjölk",
+        "th": "กะทิ Blue Dragon"
+      }
+    },
+    {
+      "grams": 220,
+      "name": {
+        "fi": "Kananmuna ilman kuorta",
+        "en": "Shelled egg",
+        "sv": "Ägg utan skal",
+        "th": "ไข่ไม่รวมเปลือก"
+      }
+    },
+    {
+      "grams": 80,
+      "name": {
+        "fi": "Kuivattu perattu suola-anjovis",
+        "en": "Dried gutted salted anchovies",
+        "sv": "Torkad rensad saltad ansjovis",
+        "th": "ปลาแอนโชวีเค็มแห้งควักไส้"
+      }
+    },
+    {
+      "grams": 80,
+      "name": {
+        "fi": "Öljyssä paahdettu kuoreton maapähkinä",
+        "en": "Oil-roasted skinned peanuts",
+        "sv": "Oljerostade skalade jordnötter",
+        "th": "ถั่วลิสงลอกเปลือกคั่วน้ำมัน"
+      }
+    },
+    {
+      "grams": 400,
+      "name": {
+        "fi": "Raaka kurkku",
+        "en": "Raw cucumber",
+        "sv": "Rå gurka",
+        "th": "แตงกวาดิบ"
+      }
+    },
+    {
+      "grams": 30,
+      "name": {
+        "fi": "Inproba Sambal Oelek",
+        "en": "Inproba Sambal Oelek",
+        "sv": "Inproba Sambal Oelek",
+        "th": "ซัมบัลโอเล็ก Inproba"
+      }
+    },
+    {
+      "grams": 25,
+      "name": {
+        "fi": "Kuorittu salottisipuli",
+        "en": "Peeled shallot",
+        "sv": "Skalad schalottenlök",
+        "th": "หอมแดงปอกเปลือก"
+      }
+    },
+    {
+      "grams": 15,
+      "name": {
+        "fi": "Blue Dragon -tamarinditahna",
+        "en": "Blue Dragon tamarind paste",
+        "sv": "Blue Dragon tamarindpasta",
+        "th": "มะขามเปียก Blue Dragon"
+      }
+    },
+    {
+      "grams": 250,
+      "name": {
+        "fi": "Vesi riisille",
+        "en": "Water for the rice",
+        "sv": "Vatten till riset",
+        "th": "น้ำสำหรับหุงข้าว"
+      }
+    },
+    {
+      "grams": null,
+      "name": {
+        "fi": "Paistoöljy",
+        "en": "Cooking oil",
+        "sv": "Stekolja",
+        "th": "น้ำมันสำหรับทอด"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Sun et al., Table 2",
+      "url": "https://doi.org/10.1017/S0007114514004425",
+      "kind": "HUMAN_GI",
+      "note": "GI 66, Old Chang Kee nasi lemak."
+    },
+    {
+      "title": "THL Fineli 11521, 858, 346",
+      "url": "https://fineli.fi/fineli/fi/ohje/19",
+      "kind": "CARBOHYDRATE",
+      "note": "CC BY 4.0."
+    },
+    {
+      "title": "AFCD F006110, F008227",
+      "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd",
+      "kind": "CARBOHYDRATE",
+      "note": "CC BY-SA 3.0 Australia."
+    },
+    {
+      "title": "MyFCD 110002",
+      "url": "https://myfcd.moh.gov.my/myfcd97/index.php/site/detail_product/110002/0/10/ikan%20bilis/0/0/",
+      "kind": "CARBOHYDRATE",
+      "note": "Uses the reported carbohydrate as a conservative input."
+    },
+    {
+      "title": "Blue Dragon Coconut Milk",
+      "url": "https://www.bluedragon.co.uk/products/coconut-milk",
+      "kind": "CARBOHYDRATE",
+      "note": "3.4 g per 100 g."
+    },
+    {
+      "title": "Blue Dragon Tamarind Paste",
+      "url": "https://www.bluedragon.co.uk/products/tamarind-paste",
+      "kind": "CARBOHYDRATE",
+      "note": "16 g per 100 g."
+    },
+    {
+      "title": "Inproba E06431",
+      "url": "https://www.inproba.com/oriental/products/2726/sambal-oelek-100-g/",
+      "kind": "CARBOHYDRATE",
+      "note": "3.1 g per 100 g."
+    }
+  ],
+  "inputs": [
+    [
+      300,
+      79,
+      66
+    ],
+    [
+      200,
+      3.4,
+      66
+    ],
+    [
+      220,
+      0.3,
+      66
+    ],
+    [
+      80,
+      0.5,
+      66
+    ],
+    [
+      80,
+      14.1,
+      66
+    ],
+    [
+      400,
+      1.4,
+      66
+    ],
+    [
+      30,
+      3.1,
+      66
+    ],
+    [
+      25,
+      3.1,
+      66
+    ],
+    [
+      15,
+      16,
+      66
+    ]
+  ],
+  "boundFiles": {
+    "reseptit/paaruoat/nasi-lemak.md": "cf5979cb92a42aecfe907644fd7b674d101f6988750859d12bc83ee3f7a5d292",
+    "docs/nutrition/gk80-operation80-batch-06.md": "b7d4b20444a5ffdd79a62327f373e85d8be37afa01177f3cbdd07ee8350dd03c"
+  },
+  "exclusions": [
+    {
+      "ingredientIndex": 9,
+      "kind": "ZERO_CHO",
+      "rationale": "Water for the rice. The bound calculation note gives this input zero available carbohydrate.",
+      "evidencePath": "docs/nutrition/gk80-operation80-batch-06.md"
+    },
+    {
+      "ingredientIndex": 10,
+      "kind": "ZERO_CHO",
+      "rationale": "Cooking oil. The bound calculation note gives this input zero available carbohydrate.",
+      "evidencePath": "docs/nutrition/gk80-operation80-batch-06.md"
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "recipeId": "pohjoisafrikkalainen-bissara",
+  "servings": 2,
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "unroundedGk": "26.73",
+  "inputs": [
+    [
+      150,
+      54,
+      66
+    ]
+  ],
+  "ingredients": [
+    {
+      "name": {
+        "fi": "Legumi Select -kuivahärkäpapu, kuorittu",
+        "en": "Legumi Select dried peeled fava beans",
+        "sv": "Legumi Select torkade skalade bondbönor",
+        "th": "ถั่วปากอ้าแห้งกะเทาะเปลือก Legumi Select"
+      },
+      "grams": 150
+    },
+    {
+      "name": {
+        "fi": "Valkosipuli",
+        "en": "Garlic",
+        "sv": "Vitlök",
+        "th": "กระเทียม"
+      },
+      "grams": 3
+    },
+    {
+      "name": {
+        "fi": "Juustokumina",
+        "en": "Cumin",
+        "sv": "Spiskummin",
+        "th": "ยี่หร่า"
+      },
+      "grams": 2
+    },
+    {
+      "name": {
+        "fi": "Vesi",
+        "en": "Water",
+        "sv": "Vatten",
+        "th": "น้ำ"
+      },
+      "grams": null,
+      "quantity": {
+        "amount": 700,
+        "unit": "ml"
+      }
+    },
+    {
+      "name": {
+        "fi": "Oliiviöljy",
+        "en": "Olive oil",
+        "sv": "Olivolja",
+        "th": "น้ำมันมะกอก"
+      },
+      "grams": null,
+      "quantity": {
+        "amount": 1,
+        "unit": "tbsp"
+      }
+    },
+    {
+      "name": {
+        "fi": "Suola",
+        "en": "Salt",
+        "sv": "Salt",
+        "th": "เกลือ"
+      },
+      "grams": null
+    }
+  ],
+  "preparation": {
+    "fi": "Liota {{amount:0}} g Legumi Selectin kuivia kuorittuja härkäpapuja ja valuta. Keitä {{amount:3}} ml:ssa tuoretta vettä pakkauksen ohjeen mukaan täysin pehmeiksi. Soseuta koko jäljellä olevan keitinveden kanssa. Mausta {{amount:1}} g:lla valkosipulia, {{amount:2}} g:lla juustokuminaa, {{amount:4}} rkl:lla oliiviöljyä ja suolalla. Jaa {{servings}} annokseen.",
+    "en": "Soak {{amount:0}} g Legumi Select dried peeled fava beans and drain. Cook in {{amount:3}} ml fresh water as directed until completely soft. Purée with all remaining cooking water. Season with {{amount:1}} g garlic, {{amount:2}} g cumin, {{amount:4}} tbsp olive oil and salt. Divide into {{servings}} servings.",
+    "sv": "Blötlägg {{amount:0}} g Legumi Select torkade skalade bondbönor och låt rinna av. Koka dem helt mjuka i {{amount:3}} ml nytt vatten enligt förpackningen. Mixa med allt återstående kokvatten. Smaksätt med {{amount:1}} g vitlök, {{amount:2}} g spiskummin, {{amount:4}} msk olivolja och salt. Dela i {{servings}} portioner.",
+    "th": "แช่ถั่วปากอ้าแห้งกะเทาะเปลือก Legumi Select {{amount:0}} กรัมแล้วสะเด็ดน้ำ ต้มในน้ำใหม่ {{amount:3}} มล. ตามฉลากจนถั่วนุ่มดี ปั่นกับน้ำต้มที่เหลือทั้งหมด ปรุงด้วยกระเทียม {{amount:1}} กรัม ยี่หร่า {{amount:2}} กรัม น้ำมันมะกอก {{amount:4}} ช้อนโต๊ะ และเกลือ แบ่งเป็น {{servings}} ที่"
+  },
+  "limitation": {
+    "fi": "Keitettyjen kuorittujen härkäpapujen GI 66 on soseen verrokki pienestä ihmiskokeesta. Valkosipulin ja juustokuminan 0,49 g hiilihydraattia annosta kohti jää GK-summasta pois.",
+    "en": "GI 66 for boiled peeled fava beans is a comparator for the purée from a small human study. The sum excludes 0.49 g carbohydrate per serving from garlic and cumin.",
+    "sv": "GI 66 för kokta skalade bondbönor kommer från en liten studie på människor och används som jämförelse för purén. Summan utesluter 0,49 g kolhydrat per portion från vitlök och spiskummin.",
+    "th": "ใช้ค่า GI 66 ของถั่วปากอ้ากะเทาะเปลือกต้มจากการศึกษาในคนกลุ่มเล็กเป็นค่าอ้างอิงสำหรับซุปบด ผลรวมไม่รวมคาร์โบไฮเดรต 0.49 กรัมต่อที่จากกระเทียมและยี่หร่า"
+  },
+  "sources": [
+    {
+      "title": "Thannoun and Al-Kubati",
+      "url": "https://magrj.uomosul.edu.iq/article_35897_bd7b3ce68e2d9336bbdad977a8e4ef58.pdf",
+      "kind": "HUMAN_GI",
+      "note": "Table 4: glucose-scale GI 66, n=3, cooking liquid retained."
+    },
+    {
+      "title": "FSANZ Australian Food Composition Database Release 3, F004193 and F003327",
+      "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd",
+      "kind": "CARBOHYDRATE",
+      "note": "CC BY-SA 3.0 Australia. Original available carbohydrate values converted to serving quantities."
+    },
+    {
+      "title": "Legumi Select Fave Decorticate",
+      "url": "https://www.legumiselect.it/it/prodotti/fave-decorticate/",
+      "kind": "CARBOHYDRATE",
+      "note": "Manufacturer declares 54 g carbohydrate per 100 g dried peeled beans."
+    },
+    {
+      "title": "Itkonen et al., mashed fava bean trial",
+      "url": "https://hal.science/hal-05305562/document",
+      "kind": "BOUND",
+      "note": "Same registered clinical study as the 2024 protein paper. No glucose-reference GI."
+    }
+  ],
+  "exclusions": [
+    {
+      "ingredientIndex": 3,
+      "kind": "ZERO_CHO",
+      "rationale": "Plain water contributes no available carbohydrate.",
+      "evidencePath": "docs/nutrition/gk100-bissara-select-review.md"
+    },
+    {
+      "ingredientIndex": 4,
+      "kind": "ZERO_CHO",
+      "rationale": "Pure cooking oil contributes no available carbohydrate.",
+      "evidencePath": "docs/nutrition/gk100-bissara-select-review.md"
+    },
+    {
+      "ingredientIndex": 5,
+      "kind": "ZERO_CHO",
+      "rationale": "Plain salt contributes no available carbohydrate.",
+      "evidencePath": "docs/nutrition/gk100-bissara-select-review.md"
+    }
+  ],
+  "boundFiles": {
+    "reseptit/aamupalat/pohjoisafrikkalainen-bissara.md": "1ff5c53d68cced68d1a56360dafccd38096f3192a2d0579cd79214362b9581a3",
+    "docs/nutrition/gk100-bissara-select-review.md": "396ed12b2473f4266c957ea4933e7b2b7f515f67e1460c21db0f4903563c24d0"
+  },
+  "omissions": [
+    {
+      "ingredientIndex": 1,
+      "choPer100g": 10.2
+    },
+    {
+      "ingredientIndex": 2,
+      "choPer100g": 33.7
+    }
+  ]
+}

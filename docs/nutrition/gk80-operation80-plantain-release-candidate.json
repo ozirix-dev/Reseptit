@@ -1,0 +1,144 @@
+{
+  "recipeId": "karibia-plantain-aamiaislautanen",
+  "servings": 2,
+  "level": "B",
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "standalonePreparation": true,
+  "omittedCho": 0,
+  "preparation": {
+    "fi": "Paista {{amount:0}} g kuorittua kypsää ruokabanaania sentin viipaleina {{amount:4}} ruokalusikallisessa neutraalia öljyä. Kypsennä {{amount:1}} g kuoretonta kananmunaa. Jaa {{servings}} annokseen ja tarjoa {{amount:2}} g avokadon ja {{amount:3}} g kuoritun limetin kanssa.",
+    "en": "Slice {{amount:0}} g peeled ripe plantain into 1 cm rounds and pan-fry in {{amount:4}} tbsp of neutral oil. Cook {{amount:1}} g shelled egg. Divide into {{servings}} portions with {{amount:2}} g avocado and {{amount:3}} g peeled lime.",
+    "sv": "Skiva {{amount:0}} g skalad mogen matbanan i centimetertjocka skivor och stek i {{amount:4}} matsked neutral olja. Tillaga {{amount:1}} g ägg utan skal. Dela i {{servings}} portioner med {{amount:2}} g avokado och {{amount:3}} g skalad lime.",
+    "th": "หั่นกล้วยแพลนเทนสุกปอกเปลือก {{amount:0}} กรัมเป็นแว่นหนา 1 ซม. ทอดในกระทะด้วยน้ำมันรสกลาง {{amount:4}} ช้อนโต๊ะ ปรุงไข่ไม่รวมเปลือก {{amount:1}} กรัมให้สุก แบ่ง{{servings}} ส่วน เสิร์ฟกับอะโวคาโด {{amount:2}} กรัมและมะนาวปอกเปลือก {{amount:3}} กรัม"
+  },
+  "limitation": {
+    "fi": "Tutkimuksessa kypsä ruokabanaani uppopaistettiin. Kotiversio paistetaan pannulla ohuessa öljykerroksessa.",
+    "en": "The study deep-fried ripe plantain. This version is shallow-fried in a pan.",
+    "sv": "I studien friterades mogen matbanan. Här steks den i ett tunt lager olja.",
+    "th": "การศึกษาทอดกล้วยสุกแบบน้ำมันท่วม สูตรนี้ทอดในกระทะด้วยน้ำมันเพียงเล็กน้อย"
+  },
+  "sources": [
+    {
+      "title": "Bahado-Singh et al., Tables 2–3",
+      "url": "https://doi.org/10.1079/BJN20061792",
+      "kind": "HUMAN_GI",
+      "note": "Bahado-Singh et al. Glucose-scale GI 90 for fried ripe plantain. Pan frying is a preparation analogy."
+    },
+    {
+      "title": "Fineli 858",
+      "url": "https://fineli.fi/fineli/fi/elintarvikkeet/858",
+      "kind": "CARBOHYDRATE",
+      "note": "THL Fineli 858. Egg composition."
+    },
+    {
+      "title": "Fineli 11057",
+      "url": "https://fineli.fi/fineli/fi/elintarvikkeet/11057",
+      "kind": "CARBOHYDRATE",
+      "note": "THL Fineli 11057. Avocado composition."
+    },
+    {
+      "title": "AFCD F005199",
+      "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd",
+      "kind": "CARBOHYDRATE",
+      "note": "FSANZ AFCD F005199. Peeled raw lime composition."
+    },
+    {
+      "title": "GI coding",
+      "url": "https://doi.org/10.1016/j.jfca.2007.02.004",
+      "kind": "B_CODING",
+      "note": "Assigned GI 50 for the egg, avocado and lime inputs."
+    }
+  ],
+  "boundFiles": {
+    "reseptit/aamupalat/karibia-plantain-aamiaislautanen.md": "558d423b988af31c83346c53894b0b484e31fc868eed0c8635fe054641405e6d",
+    "docs/nutrition/gk80-operation80-batch-04.md": "92fd2e19e1ab2c49f4096ec6e2687a9acd06bed5e13a8f4e3655f47f55b56b66"
+  },
+  "inputFields": [
+    "gramsBatch",
+    "choPer100g",
+    "giGlucoseScale"
+  ],
+  "inputs": [
+    [
+      150,
+      23.63,
+      90
+    ],
+    [
+      110,
+      0.3,
+      50
+    ],
+    [
+      120,
+      0.77,
+      50
+    ],
+    [
+      40,
+      1.2,
+      50
+    ]
+  ],
+  "unroundedGk": "16.38375",
+  "ingredients": [
+    {
+      "name": {
+        "fi": "Kypsä kuorittu ruokabanaani",
+        "en": "Peeled ripe plantain",
+        "sv": "Skalad mogen matbanan",
+        "th": "กล้วยแพลนเทนสุกปอกเปลือก"
+      },
+      "grams": 150
+    },
+    {
+      "name": {
+        "fi": "Kananmuna ilman kuorta",
+        "en": "Shelled egg",
+        "sv": "Ägg utan skal",
+        "th": "ไข่ไม่รวมเปลือก"
+      },
+      "grams": 110
+    },
+    {
+      "name": {
+        "fi": "Avokado",
+        "en": "Avocado",
+        "sv": "Avokado",
+        "th": "อะโวคาโด"
+      },
+      "grams": 120
+    },
+    {
+      "name": {
+        "fi": "Kuorittu limetti",
+        "en": "Peeled lime",
+        "sv": "Skalad lime",
+        "th": "มะนาวปอกเปลือก"
+      },
+      "grams": 40
+    },
+    {
+      "name": {
+        "fi": "Neutraali paistoöljy",
+        "en": "Neutral cooking oil",
+        "sv": "Neutral stekolja",
+        "th": "น้ำมันรสกลาง"
+      },
+      "grams": null,
+      "quantity": {
+        "amount": 1,
+        "unit": "tbsp"
+      }
+    }
+  ],
+  "exclusions": [
+    {
+      "ingredientIndex": 4,
+      "kind": "ZERO_CHO",
+      "rationale": "Neutral cooking oil. The bound calculation note gives this input zero available carbohydrate.",
+      "evidencePath": "docs/nutrition/gk80-operation80-batch-04.md"
+    }
+  ]
+}

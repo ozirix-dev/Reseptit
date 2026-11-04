@@ -1,0 +1,219 @@
+{
+  "recipeId": "dim-sum",
+  "servings": 4,
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "unroundedGk": "31.9227",
+  "inputs": [
+    [
+      240,
+      52.9,
+      88.1
+    ],
+    [
+      96,
+      50.8,
+      28
+    ],
+    [
+      8,
+      86,
+      28
+    ],
+    [
+      20,
+      4.6,
+      28
+    ],
+    [
+      200,
+      0,
+      0
+    ],
+    [
+      150,
+      0,
+      0
+    ]
+  ],
+  "omissions": [
+    {
+      "ingredientIndex": 6,
+      "choPer100ml": 3.2
+    },
+    {
+      "ingredientIndex": 7,
+      "choPer100ml": 3.2
+    },
+    {
+      "ingredientIndex": 8,
+      "choPer100g": 0.5
+    }
+  ],
+  "ingredients": [
+    {
+      "name": {
+        "fi": "Wonderbao Plain Gua Bao",
+        "en": "Wonderbao Plain Gua Bao",
+        "sv": "Wonderbao Plain Gua Bao",
+        "th": "หมั่นโถว Wonderbao"
+      },
+      "grams": 240
+    },
+    {
+      "name": {
+        "fi": "QQ Century Wonton Skin",
+        "en": "QQ Century Wonton Skin",
+        "sv": "QQ Century Wonton Skin",
+        "th": "แผ่นเกี๊ยว QQ Century"
+      },
+      "grams": 96
+    },
+    {
+      "name": {
+        "fi": "Maissitärkkelys",
+        "en": "Cornstarch",
+        "sv": "Majsstärkelse",
+        "th": "แป้งข้าวโพด"
+      },
+      "grams": 8
+    },
+    {
+      "name": {
+        "fi": "Kevätsipuli",
+        "en": "Spring onion",
+        "sv": "Salladslök",
+        "th": "ต้นหอม"
+      },
+      "grams": 20
+    },
+    {
+      "name": {
+        "fi": "Kuorittu katkarapu",
+        "en": "Peeled shrimp",
+        "sv": "Skalade räkor",
+        "th": "กุ้งปอกเปลือก"
+      },
+      "grams": 200
+    },
+    {
+      "name": {
+        "fi": "Porsaanjauheliha",
+        "en": "Ground pork",
+        "sv": "Fläskfärs",
+        "th": "หมูบด"
+      },
+      "grams": 150
+    },
+    {
+      "name": {
+        "fi": "Kikkoman-soija täytteeseen",
+        "en": "Kikkoman soy sauce for filling",
+        "sv": "Kikkoman-soja till fyllning",
+        "th": "ซีอิ๊ว Kikkoman สำหรับไส้"
+      },
+      "grams": null,
+      "quantity": {
+        "amount": 15,
+        "unit": "ml"
+      }
+    },
+    {
+      "name": {
+        "fi": "Kikkoman-soija dippiin",
+        "en": "Kikkoman soy sauce for dip",
+        "sv": "Kikkoman-soja till dipp",
+        "th": "ซีอิ๊ว Kikkoman สำหรับน้ำจิ้ม"
+      },
+      "grams": null,
+      "quantity": {
+        "amount": 45,
+        "unit": "ml"
+      }
+    },
+    {
+      "name": {
+        "fi": "Riisiviinietikka",
+        "en": "Rice vinegar",
+        "sv": "Risvinäger",
+        "th": "น้ำส้มสายชูข้าว"
+      },
+      "grams": 15
+    },
+    {
+      "name": {
+        "fi": "Seesamiöljy",
+        "en": "Sesame oil",
+        "sv": "Sesamolja",
+        "th": "น้ำมันงา"
+      },
+      "grams": null,
+      "quantity": {
+        "amount": 5,
+        "unit": "ml"
+      }
+    }
+  ],
+  "preparation": {
+    "fi": "Sekoita {{amount:4}} g katkarapuja, {{amount:5}} g jauhelihaa, {{amount:2}} g tärkkelystä, {{amount:3}} g kevätsipulia, {{amount:6}} ml soijaa ja {{amount:9}} ml seesamiöljyä. Jaa täyte {{amount:1}} g:lle taikinalevyjä ja taita avoimiksi nyyteiksi. Höyrytä 8–10 minuuttia läpikypsiksi. Höyrytä erikseen {{amount:0}} g bao-sämpylöitä pakkauksen ohjeen mukaan. Sekoita {{amount:7}} ml soijaa ja {{amount:8}} g riisiviinietikkaa. Jaa koko erä {{servings}} annokseen.",
+    "en": "Mix {{amount:4}} g shrimp, {{amount:5}} g pork, {{amount:2}} g cornstarch, {{amount:3}} g spring onion, {{amount:6}} ml soy sauce and {{amount:9}} ml sesame oil. Divide the filling among {{amount:1}} g wrappers and fold into open dumplings. Steam for 8–10 minutes until cooked through. Separately steam {{amount:0}} g bao buns as directed. Mix {{amount:7}} ml soy sauce and {{amount:8}} g rice vinegar. Divide the entire batch into {{servings}} servings.",
+    "sv": "Blanda {{amount:4}} g räkor, {{amount:5}} g fläskfärs, {{amount:2}} g majsstärkelse, {{amount:3}} g salladslök, {{amount:6}} ml soja och {{amount:9}} ml sesamolja. Fördela fyllningen på {{amount:1}} g degark och vik till öppna knyten. Ånga i 8–10 minuter tills fyllningen är genomkokt. Ånga {{amount:0}} g baobröd separat enligt förpackningen. Blanda {{amount:7}} ml soja med {{amount:8}} g risvinäger. Fördela allt i {{servings}} portioner.",
+    "th": "ผสมกุ้ง {{amount:4}} กรัม หมูบด {{amount:5}} กรัม แป้งข้าวโพด {{amount:2}} กรัม ต้นหอม {{amount:3}} กรัม ซีอิ๊ว {{amount:6}} มล. และน้ำมันงา {{amount:9}} มล. แบ่งไส้ใส่แผ่นเกี๊ยว {{amount:1}} กรัมแล้วพับให้เปิดด้านบน นึ่ง 8–10 นาทีจนไส้สุกทั่ว นึ่งหมั่นโถว {{amount:0}} กรัมแยกตามฉลาก ผสมซีอิ๊ว {{amount:7}} มล. กับน้ำส้มสายชูข้าว {{amount:8}} กรัม แบ่งทั้งหมดเป็น {{servings}} ที่"
+  },
+  "limitation": {
+    "fi": "Baolle ja nyyteille käytetään eri GI-verrokkeja. Soijan ja etikan osuus, noin 0,50 g hiilihydraattia annosta kohti, jää GK-summan ulkopuolelle.",
+    "en": "Bao and dumplings use separate GI comparators. About 0.50 g carbohydrate per serving from soy sauce and vinegar is excluded.",
+    "sv": "Bao och degknyten använder olika GI-jämförelser. Cirka 0,50 g kolhydrat per portion från soja och vinäger ingår inte.",
+    "th": "หมั่นโถวและเกี๊ยวใช้ค่า GI อ้างอิงคนละชนิด ไม่รวมคาร์โบไฮเดรตจากซีอิ๊วและน้ำส้มสายชูประมาณ 0.50 กรัมต่อที่"
+  },
+  "sources": [
+    {
+      "title": "Yang et al., Table 2",
+      "url": "https://www.wjgnet.com/1007-9327/full/v12/i21/3430-T2.htm",
+      "kind": "HUMAN_GI",
+      "note": "Steamed wheat bread GI 88.1 and filled dumpling GI 28."
+    },
+    {
+      "title": "Wonderbao",
+      "url": "https://wonderbao.co/collections/classic-packs/products/plain-baos",
+      "kind": "CARBOHYDRATE",
+      "note": "52.9 g per 100 g."
+    },
+    {
+      "title": "QQ Century",
+      "url": "https://qqcentury.com/wonton-skin/",
+      "kind": "CARBOHYDRATE",
+      "note": "50.8 g per 100 g."
+    },
+    {
+      "title": "Fineli 27 and 929",
+      "url": "https://fineli.fi/fineli/fi/ohje/19",
+      "kind": "CARBOHYDRATE",
+      "note": "THL CC BY 4.0."
+    },
+    {
+      "title": "AFCD F006250",
+      "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd",
+      "kind": "CARBOHYDRATE",
+      "note": "CC BY-SA 3.0 Australia."
+    },
+    {
+      "title": "Kikkoman",
+      "url": "https://www.kikkoman.co.uk/products/detail/fs-kikkoman-naturally-brewed-soy-sauce",
+      "kind": "CARBOHYDRATE",
+      "note": "3.2 g per 100 ml."
+    }
+  ],
+  "boundFiles": {
+    "reseptit/alkuruoat/dim-sum.md": "a40bdd3743cf62ff6ae9e463b07e4d02653afebc31f568426538ad47a26c6b41",
+    "docs/nutrition/gk80-operation80-batch-51.md": "6d9e41f38ad021e1c1f83c4bfa85c548a0d30869caac2c2c4c78153e3679d478"
+  },
+  "exclusions": [
+    {
+      "ingredientIndex": 9,
+      "kind": "ZERO_CHO",
+      "rationale": "Sesame oil. The bound calculation note gives this input zero available carbohydrate.",
+      "evidencePath": "docs/nutrition/gk80-operation80-batch-51.md"
+    }
+  ]
+}

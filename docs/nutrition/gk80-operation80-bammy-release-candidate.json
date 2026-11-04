@@ -1,0 +1,164 @@
+{
+  "recipeId": "karibia-bammy-kassavaleipa",
+  "servings": 2,
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "unroundedGk": "46.5580028875",
+  "inputs": [
+    [
+      181.5,
+      41.87,
+      117.55
+    ],
+    [
+      200,
+      3.4,
+      50
+    ],
+    [
+      100,
+      0.77,
+      50
+    ]
+  ],
+  "omissions": [
+    {
+      "ingredientIndex": 3,
+      "choPer100g": 8.02
+    }
+  ],
+  "ingredients": [
+    {
+      "name": {
+        "fi": "Carib Imports Jamaican Bammy Cassava Cakes",
+        "en": "Carib Imports Jamaican Bammy Cassava Cakes",
+        "sv": "Carib Imports Jamaican Bammy Cassava Cakes",
+        "th": "แผ่นมันสำปะหลัง Bammy ของ Carib Imports"
+      },
+      "grams": 181.5
+    },
+    {
+      "name": {
+        "fi": "Blue Dragon -kookosmaito",
+        "en": "Blue Dragon Coconut Milk",
+        "sv": "Blue Dragon-kokosmjölk",
+        "th": "กะทิ Blue Dragon"
+      },
+      "grams": 200
+    },
+    {
+      "name": {
+        "fi": "Kuorittu avokado",
+        "en": "Peeled avocado",
+        "sv": "Skalad avokado",
+        "th": "อะโวคาโดปอกเปลือก"
+      },
+      "grams": 100
+    },
+    {
+      "name": {
+        "fi": "Limettimehu",
+        "en": "Lime juice",
+        "sv": "Limejuice",
+        "th": "น้ำมะนาว"
+      },
+      "grams": 15
+    },
+    {
+      "name": {
+        "fi": "Paistoöljy",
+        "en": "Cooking oil",
+        "sv": "Stekolja",
+        "th": "น้ำมันสำหรับทอด"
+      },
+      "grams": null,
+      "quantity": {
+        "amount": 1,
+        "unit": "tbsp"
+      }
+    },
+    {
+      "name": {
+        "fi": "Suola",
+        "en": "Salt",
+        "sv": "Salt",
+        "th": "เกลือ"
+      },
+      "grams": null
+    }
+  ],
+  "preparation": {
+    "fi": "Käytä {{amount:0}} g kaupallista Carib Imports -bammyä. Leikkaa paloiksi, pehmennä osalla {{amount:1}} g:n kookosmaitoerästä ja paista {{amount:4}} rkl:ssa öljyä pakkauksen ohjeen mukaan. Kuumenna loput kookosmaidosta ja jaa kaikki bammy, kookosmaito, {{amount:2}} g avokadoa ja {{amount:3}} g limettimehua {{servings}} annokseen. Mausta suolalla.",
+    "en": "Use {{amount:0}} g commercially prepared Carib Imports bammy. Cut into pieces, soften with some of the {{amount:1}} g coconut milk and fry in {{amount:4}} tbsp oil as directed on the package. Heat the remaining coconut milk and divide all the bammy, coconut milk, {{amount:2}} g avocado and {{amount:3}} g lime juice into {{servings}} servings. Season with salt.",
+    "sv": "Använd {{amount:0}} g färdig bammy från Carib Imports. Skär i bitar, mjuka upp med en del av {{amount:1}} g kokosmjölk och stek i {{amount:4}} msk olja enligt förpackningen. Värm resten av kokosmjölken och fördela all bammy, kokosmjölk, {{amount:2}} g avokado och {{amount:3}} g limejuice i {{servings}} portioner. Smaka av med salt.",
+    "th": "ใช้แผ่น Bammy สำเร็จรูป Carib Imports {{amount:0}} กรัม หั่นเป็นชิ้น แช่ให้นุ่มด้วยกะทิบางส่วนจาก {{amount:1}} กรัม แล้วทอดในน้ำมัน {{amount:4}} ช้อนโต๊ะตามฉลาก อุ่นกะทิที่เหลือ แบ่ง Bammy กะทิทั้งหมด อะโวคาโด {{amount:2}} กรัม และน้ำมะนาว {{amount:3}} กรัมเป็น {{servings}} ที่ ปรุงด้วยเกลือ"
+  },
+  "limitation": {
+    "fi": "Arvio koskee kaupallista bammyä. GI 117,55 on casaben mittaus. Leivän paksuus ja kosteus voivat muuttaa vastetta. Limettimehun osuus jää laskelman ulkopuolelle.",
+    "en": "The estimate covers commercially prepared bammy. GI 117.55 was measured for casabe. Thickness and moisture can affect the response. Lime juice carbohydrate is excluded.",
+    "sv": "Uppskattningen gäller färdig bammy. GI 117,55 uppmättes för casabe. Tjocklek och fukt kan påverka responsen. Kolhydraterna från limejuice ingår inte.",
+    "th": "ค่าประมาณใช้กับ Bammy สำเร็จรูป ค่า GI 117.55 วัดจากขนมปังมันสำปะหลังคาซาเบ ความหนาและความชื้นอาจเปลี่ยนการตอบสนอง การคำนวณไม่รวมคาร์โบไฮเดรตจากน้ำมะนาว"
+  },
+  "sources": [
+    {
+      "title": "Carib Imports retailer label",
+      "url": "https://www.heb.com/product-detail/carib-imports-jamaican-bammy-cassava-cakes/1967608",
+      "kind": "CARBOHYDRATE",
+      "note": "Total carbohydrate minus fibre, 41.87 g per 100 g."
+    },
+    {
+      "title": "Casabe human GI",
+      "url": "https://ve.scielo.org/scielo.php?pid=S1690-31102006000300031&script=sci_arttext",
+      "kind": "HUMAN_GI",
+      "note": "Glucose-scale GI 117.55."
+    },
+    {
+      "title": "Blue Dragon",
+      "url": "https://www.bluedragon.co.uk/products/coconut-milk",
+      "kind": "CARBOHYDRATE",
+      "note": "3.4 g per 100 g."
+    },
+    {
+      "title": "Fineli 11057",
+      "url": "https://fineli.fi/fineli/fi/elintarvikkeet/11057",
+      "kind": "CARBOHYDRATE",
+      "note": "THL CC BY 4.0."
+    },
+    {
+      "title": "USDA lime juice",
+      "url": "https://fdc.nal.usda.gov/food-details/168156/nutrients",
+      "kind": "CARBOHYDRATE",
+      "note": "Total carbohydrate minus fibre."
+    },
+    {
+      "title": "Low carbohydrate coding",
+      "url": "https://doi.org/10.1016/j.jfca.2007.02.004",
+      "kind": "PUBLISHED_CODING",
+      "note": "Code 50 for coconut milk and avocado."
+    },
+    {
+      "title": "FSANZ cassava guidance",
+      "url": "https://www.foodstandards.gov.au/consumer/prevention-of-foodborne-illness/cassava",
+      "kind": "BOUND",
+      "note": "Cassava safety guidance. Use the named commercially processed product and follow the package."
+    }
+  ],
+  "exclusions": [
+    {
+      "ingredientIndex": 4,
+      "kind": "ZERO_CHO",
+      "rationale": "Pure cooking oil contributes no available carbohydrate.",
+      "evidencePath": "docs/nutrition/gk80-operation80-batch-62.md"
+    },
+    {
+      "ingredientIndex": 5,
+      "kind": "ZERO_CHO",
+      "rationale": "Plain salt contributes no available carbohydrate.",
+      "evidencePath": "docs/nutrition/gk80-operation80-batch-62.md"
+    }
+  ],
+  "boundFiles": {
+    "reseptit/aamupalat/karibia-bammy-kassavaleipa.md": "7d428074d611fe4099d474cae84332bfada53d7be72e7aaba65f2eb440530951",
+    "docs/nutrition/gk80-operation80-batch-62.md": "72d1206ee7d1415785366135a982b2d272fa606c0da33268c969e9997db5bae5"
+  }
+}

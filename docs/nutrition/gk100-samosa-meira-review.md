@@ -1,0 +1,7 @@
+# Samosa · punnittu Meira-versio
+
+Yksi gramma Meira Garam Masalaa (ei lisättyä suolaa) tuo 0,41 g saatavaa hiilihydraattia. Muiden ainesosien 294,442 g:n kanssa koko erässä on 294,852 g. Vedellä tarjoillun kasvis-sambosan mitatulla GI:llä 60,35 arvio on 44,4857955 GK/annos neljälle. Mausteen oletusväli korvautuu punnitulla tuotteella. [Meira](https://meira.fi/tuote/garam-masala-ei-lisattya-suolaa/) · [Aiemmat laskentasidokset](gk100-samosa-banh-bao-evidence.md)
+
+Analogian puolesta puhuvat uppopaisto sekä peruna, herneet, chili ja korianteri. Ali ym. ilmoittavat ihmistuloksen 60,4 ja erillisen laboratorioennusteen 69,2. Laboratoriossa analysoitu samosa ostettiin paikallisilta markkinoilta. Julkaisussa mainitaan myös porkkana ja muita täyteaineita. Ihmiskokeen näytteen taikina–täytesuhde, öljyn imeytyminen ja vastaavuus analysoituun näytteeseen jäävät avoimiksi. Julkaisua ja tutkimusraporttia käsitellään samana näyttöketjuna. [Omanin raportti](https://www.squ.edu.om/Portals/10/DNNGalleryPro/uploads/2019/4/24/CAMSResearchReport2011.pdf) · [Ali ym., 2022](https://iscientific.org/wp-content/uploads/2022/08/13-ijcbs-22-21-13.pdf)
+
+Seuraava syväkatselmointi tarvitsee mitatun näytteen ainesosat ja taikinan sekä täytteen osuudet tai läheisemmän ihmismittauksen. Kotiversion 73,713 g saatavaa hiilihydraattia annosta kohti tarkoittaa noin 0,6783 annosta 50 g:n koekuormaan. Varmista kypsä saanto ja saatava hiilihydraatti ennen mittausta.

@@ -1,0 +1,232 @@
+{
+  "recipeId": "meheva-suklaakakku",
+  "servings": 10,
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "unroundedGk": "14.435136",
+  "upperScenario": {
+    "giOverrides": [
+      {
+        "inputIndex": 0,
+        "gi": 58
+      },
+      {
+        "inputIndex": 1,
+        "gi": 58
+      },
+      {
+        "inputIndex": 2,
+        "gi": 58
+      },
+      {
+        "inputIndex": 3,
+        "gi": 58
+      },
+      {
+        "inputIndex": 4,
+        "gi": 58
+      },
+      {
+        "inputIndex": 5,
+        "gi": 58
+      },
+      {
+        "inputIndex": 6,
+        "gi": 58
+      },
+      {
+        "inputIndex": 7,
+        "gi": 58
+      },
+      {
+        "inputIndex": 8,
+        "gi": 58
+      }
+    ],
+    "unroundedGk": "22.032576"
+  },
+  "inputs": [
+    [
+      200,
+      34,
+      38
+    ],
+    [
+      100,
+      34,
+      38
+    ],
+    [
+      200,
+      0.8,
+      38
+    ],
+    [
+      220,
+      0.3,
+      38
+    ],
+    [
+      180,
+      99.9,
+      38
+    ],
+    [
+      120,
+      74,
+      38
+    ],
+    [
+      30,
+      11,
+      38
+    ],
+    [
+      4,
+      19.8,
+      38
+    ],
+    [
+      100,
+      2.9,
+      38
+    ]
+  ],
+  "ingredients": [
+    {
+      "grams": 200,
+      "name": {
+        "fi": "Lindt 70 % taikinaan",
+        "en": "Lindt 70% for batter",
+        "sv": "Lindt 70 % till smeten",
+        "th": "ช็อกโกแลต Lindt 70% สำหรับตัวเค้ก"
+      }
+    },
+    {
+      "grams": 100,
+      "name": {
+        "fi": "Lindt 70 % kuorrutteeseen",
+        "en": "Lindt 70% for icing",
+        "sv": "Lindt 70 % till glasyren",
+        "th": "ช็อกโกแลต Lindt 70% สำหรับหน้าเค้ก"
+      }
+    },
+    {
+      "grams": 200,
+      "name": {
+        "fi": "Voi",
+        "en": "Butter",
+        "sv": "Smör",
+        "th": "เนย"
+      }
+    },
+    {
+      "grams": 220,
+      "name": {
+        "fi": "Kananmunat",
+        "en": "Eggs",
+        "sv": "Ägg",
+        "th": "ไข่"
+      }
+    },
+    {
+      "grams": 180,
+      "name": {
+        "fi": "Sokeri",
+        "en": "Sugar",
+        "sv": "Socker",
+        "th": "น้ำตาล"
+      }
+    },
+    {
+      "grams": 120,
+      "name": {
+        "fi": "Vehnäjauho",
+        "en": "Wheat flour",
+        "sv": "Vetemjöl",
+        "th": "แป้งสาลี"
+      }
+    },
+    {
+      "grams": 30,
+      "name": {
+        "fi": "Kaakaojauhe",
+        "en": "Cocoa powder",
+        "sv": "Kakaopulver",
+        "th": "ผงโกโก้"
+      }
+    },
+    {
+      "grams": 4,
+      "name": {
+        "fi": "Leivinjauhe",
+        "en": "Baking powder",
+        "sv": "Bakpulver",
+        "th": "ผงฟู"
+      }
+    },
+    {
+      "grams": 100,
+      "name": {
+        "fi": "Kuohukerma",
+        "en": "Whipping cream",
+        "sv": "Vispgrädde",
+        "th": "วิปปิงครีม"
+      }
+    }
+  ],
+  "preparation": {
+    "fi": "Vuoraa noin 22 cm:n vuoka leivinpaperilla. Sulata {{amount:0}} g taikinasuklaata ja voi. Vatkaa munat ja sokeri, lisää suklaa-voiseos ja kääntele joukkoon jauhot, kaakao ja leivinjauhe. Paista 175 °C:ssa 25–30 minuuttia. Jäähdytä. Kuumenna kerma, nosta liedeltä ja sulata siihen {{amount:1}} g kuorrutesuklaata. Levitä koko kuorrute ja jaa kakku {{servings}} palaan.",
+    "en": "Line a roughly 22 cm tin with baking paper. Melt {{amount:0}} g batter chocolate with the butter. Whisk eggs and sugar, add the chocolate and butter and fold in flour, cocoa and baking powder. Bake at 175 °C for 25–30 minutes. Cool. Heat the cream, remove from the heat and melt {{amount:1}} g icing chocolate in it. Spread all the icing over the cake and cut into {{servings}} slices.",
+    "sv": "Klä en form på cirka 22 cm med bakplåtspapper. Smält {{amount:0}} g choklad till smeten med smöret. Vispa ägg och socker, tillsätt chokladsmöret och vänd ner mjöl, kakao och bakpulver. Grädda i 175 °C i 25–30 minuter. Låt svalna. Värm grädden, ta av från värmen och smält {{amount:1}} g choklad till glasyren i den. Bred på all glasyr och dela kakan i {{servings}} bitar.",
+    "th": "รองพิมพ์ขนาดประมาณ 22 ซม. ด้วยกระดาษอบ ละลายช็อกโกแลตสำหรับตัวเค้ก {{amount:0}} กรัมกับเนย ตีไข่กับน้ำตาล เติมช็อกโกแลตผสมเนย แล้วตะล่อมแป้ง ผงโกโก้ และผงฟู อบที่ 175 °C นาน 25–30 นาทีแล้วพักให้เย็น อุ่นครีม ยกลงจากเตาแล้วละลายช็อกโกแลตสำหรับหน้าเค้ก {{amount:1}} กรัมในครีม ปาดหน้าทั้งหมดแล้วตัดเป็น {{servings}} ชิ้น"
+  },
+  "limitation": {
+    "fi": "Väli kuvaa kahden kuorrutetun verrokkikakun GI-eroa. Korkeamman GI:n kakussa on erillinen maitokermatäyte.",
+    "en": "The range reflects GI differences between two iced cake proxies. The higher-GI cake has a separate milk cream filling.",
+    "sv": "Intervallet speglar GI-skillnaden mellan två jämförbara kakor med glasyr. Kakan med högre GI har en separat mjölkkrämsfyllning.",
+    "th": "ช่วงนี้สะท้อนความต่างของค่า GI ระหว่างเค้กเคลือบสองชนิดที่ใช้เทียบ เค้กที่มี GI สูงกว่ามีไส้ครีมนมแยกต่างหาก"
+  },
+  "sources": [
+    {
+      "title": "University of Sydney",
+      "url": "https://glycemicindex.com/gi-search/",
+      "kind": "HUMAN_GI",
+      "note": "GI 38 for Betty Crocker chocolate cake with chocolate frosting."
+    },
+    {
+      "title": "Scazzina et al.",
+      "url": "https://air.unimi.it/retrieve/handle/2434/476796/820476/Scazzina%20et%20al.pdf",
+      "kind": "HUMAN_GI",
+      "note": "GI 58 comparator for Kinder Delice, a chocolate-coated cake with separate milk cream filling."
+    },
+    {
+      "title": "Kinder",
+      "url": "https://www.kinder.com/it/it/kinder-delice",
+      "kind": "BOUND",
+      "note": "Manufacturer describes the comparator cake and its filling."
+    },
+    {
+      "title": "Lindt",
+      "url": "https://www.lindt.co.uk/lindt-excellence-dark-70-bar-100g-10",
+      "kind": "CARBOHYDRATE",
+      "note": "Named 70 percent dark chocolate carbohydrate declaration."
+    },
+    {
+      "title": "Fineli",
+      "url": "https://fineli.fi/fineli/fi/ohje/19",
+      "kind": "CARBOHYDRATE",
+      "note": "Finnish food composition data for cake ingredients."
+    },
+    {
+      "title": "AFCD",
+      "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd",
+      "kind": "CARBOHYDRATE",
+      "note": "Australian food composition data for baking powder."
+    }
+  ],
+  "boundFiles": {
+    "reseptit/jalkiruoat/meheva-suklaakakku.md": "f9753c28eee6064b1203bbb25365e80ce856c3a1c1ee7210162e1969a6cc4022",
+    "docs/nutrition/gk80-operation80-batch-40.md": "406d250620f09d471eb319356c0c80ce14e4fb7c969677f13c0c7161f441d704"
+  }
+}

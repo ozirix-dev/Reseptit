@@ -1,0 +1,213 @@
+{
+  "recipeId": "samosa",
+  "servings": 4,
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "unroundedGk": "44.4857955",
+  "inputs": [
+    [
+      300,
+      73.998,
+      60.35
+    ],
+    [
+      54,
+      0,
+      0
+    ],
+    [
+      6.5,
+      0,
+      0
+    ],
+    [
+      120,
+      0,
+      0
+    ],
+    [
+      400,
+      15.5,
+      60.35
+    ],
+    [
+      100,
+      9.36,
+      60.35
+    ],
+    [
+      2,
+      33.7,
+      60.35
+    ],
+    [
+      1,
+      41,
+      60.35
+    ],
+    [
+      1,
+      12.9,
+      60.35
+    ],
+    [
+      15,
+      1.9,
+      60.35
+    ],
+    [
+      50,
+      0,
+      0
+    ]
+  ],
+  "ingredients": [
+    {
+      "grams": 300,
+      "name": {
+        "fi": "Vehnäjauho",
+        "en": "Wheat flour",
+        "sv": "Vetemjöl",
+        "th": "แป้งสาลี"
+      }
+    },
+    {
+      "grams": 54,
+      "name": {
+        "fi": "Taikinan öljy",
+        "en": "Dough oil",
+        "sv": "Olja till degen",
+        "th": "น้ำมันสำหรับแป้ง"
+      }
+    },
+    {
+      "grams": 6.5,
+      "name": {
+        "fi": "Suola",
+        "en": "Salt",
+        "sv": "Salt",
+        "th": "เกลือ"
+      }
+    },
+    {
+      "grams": 120,
+      "name": {
+        "fi": "Vesi",
+        "en": "Water",
+        "sv": "Vatten",
+        "th": "น้ำ"
+      }
+    },
+    {
+      "grams": 400,
+      "name": {
+        "fi": "Peruna",
+        "en": "Potato",
+        "sv": "Potatis",
+        "th": "มันฝรั่ง"
+      }
+    },
+    {
+      "grams": 100,
+      "name": {
+        "fi": "Pakasteherneet",
+        "en": "Frozen peas",
+        "sv": "Frysta ärter",
+        "th": "ถั่วลันเตาแช่แข็ง"
+      }
+    },
+    {
+      "grams": 2,
+      "name": {
+        "fi": "Juustokuminansiemenet",
+        "en": "Cumin seeds",
+        "sv": "Spiskumminfrön",
+        "th": "เมล็ดยี่หร่า"
+      }
+    },
+    {
+      "grams": 1,
+      "name": {
+        "fi": "Meira Garam Masala, ei lisättyä suolaa",
+        "en": "Meira Garam Masala, no added salt",
+        "sv": "Meira Garam Masala, utan tillsatt salt",
+        "th": "การัมมาซาลา Meira แบบไม่เติมเกลือ"
+      }
+    },
+    {
+      "grams": 1,
+      "name": {
+        "fi": "Chilijauhe",
+        "en": "Chilli powder",
+        "sv": "Chilipulver",
+        "th": "พริกป่น"
+      }
+    },
+    {
+      "grams": 15,
+      "name": {
+        "fi": "Korianteri",
+        "en": "Coriander",
+        "sv": "Koriander",
+        "th": "ผักชี"
+      }
+    },
+    {
+      "grams": 50,
+      "name": {
+        "fi": "Arvioitu imeytyvä paistoöljy",
+        "en": "Estimated absorbed frying oil",
+        "sv": "Uppskattad upptagen frityrolja",
+        "th": "น้ำมันทอดที่คาดว่าซึมเข้าอาหาร"
+      }
+    }
+  ],
+  "preparation": {
+    "fi": "Sekoita jauho, suola, taikinan öljy ja vesi. Vaivaa ja anna levätä 30 minuuttia. Keitä perunat ja kuutioi. Paahda juustokumina ja paista perunat, herneet, {{amount:7}} g Meiran garam masalaa ja chili. Lisää korianteri ja jäähdytä. Muotoile taikina kartioiksi ja täytä. Uppopaista 170 °C:ssa 6–8 minuuttia, valuta ja jaa {{servings}} annokseen.",
+    "en": "Mix flour, salt, dough oil and water. Knead and rest for 30 minutes. Boil and dice the potatoes. Toast the cumin and fry the potatoes, peas, {{amount:7}} g Meira garam masala and chilli. Add coriander and cool. Shape the dough into cones and fill. Deep-fry at 170 °C for 6–8 minutes, drain and divide into {{servings}} servings.",
+    "sv": "Blanda mjöl, salt, degolja och vatten. Knåda och låt vila 30 minuter. Koka och tärna potatisen. Rosta spiskummin och stek potatis, ärter, {{amount:7}} g Meira garam masala och chili. Tillsätt koriander och låt svalna. Forma degen till strutar och fyll dem. Fritera i 170 °C i 6–8 minuter, låt rinna av och dela i {{servings}} portioner.",
+    "th": "ผสมแป้ง เกลือ น้ำมันสำหรับแป้ง และน้ำ นวดแล้วพัก 30 นาที ต้มมันฝรั่งแล้วหั่นเต๋า คั่วยี่หร่าและผัดมันฝรั่ง ถั่วลันเตา การัมมาซาลา Meira {{amount:7}} กรัม และพริกป่น ใส่ผักชีแล้วพักให้เย็น ขึ้นรูปแป้งเป็นกรวยแล้วใส่ไส้ ทอดที่ 170 °C นาน 6–8 นาที สะเด็ดน้ำมันและแบ่งเป็น {{servings}} ที่"
+  },
+  "limitation": {
+    "fi": "Arvio käyttää kasvis-sambosan GI:tä 60,35 koko annoksen verrokkina. Tutkimusnäytteen taikinan ja täytteen suhde sekä öljyn imeytyminen ovat avoimia.",
+    "en": "The estimate uses vegetable sambosa GI 60.35 as a comparator for the whole serving. The test food’s pastry-to-filling ratio and oil uptake are unknown.",
+    "sv": "Uppskattningen använder GI 60,35 för grönsakssambosa som jämförelse för hela portionen. Förhållandet mellan deg och fyllning samt oljeupptaget i testmaten är okända.",
+    "th": "ค่าประมาณใช้ GI 60.35 ของซัมโบซาผักเป็นค่าอ้างอิงสำหรับทั้งหนึ่งหน่วยบริโภค ยังไม่ทราบสัดส่วนแป้งต่อไส้และปริมาณน้ำมันที่อาหารทดสอบดูดซับ"
+  },
+  "sources": [
+    {
+      "title": "Sultan Qaboos University",
+      "url": "https://www.squ.edu.om/Portals/10/DNNGalleryPro/uploads/2019/4/24/CAMSResearchReport2011.pdf",
+      "kind": "HUMAN_GI",
+      "note": "Vegetable sambosa with water, glucose-scale GI 60.35."
+    },
+    {
+      "title": "Fineli",
+      "url": "https://fineli.fi/fineli/fi/ohje/19",
+      "kind": "CARBOHYDRATE",
+      "note": "Finnish composition data for dough and filling ingredients."
+    },
+    {
+      "title": "AFCD",
+      "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd",
+      "kind": "CARBOHYDRATE",
+      "note": "Australian composition data for seasonings."
+    },
+    {
+      "title": "Meira Garam Masala, no added salt",
+      "url": "https://meira.fi/tuote/garam-masala-ei-lisattya-suolaa/",
+      "kind": "CARBOHYDRATE",
+      "note": "41 g carbohydrate per 100 g."
+    },
+    {
+      "title": "Ali et al., Omani snack foods",
+      "url": "https://iscientific.org/wp-content/uploads/2022/08/13-ijcbs-22-21-13.pdf",
+      "kind": "BOUND",
+      "note": "Sample description and Table 2. Same evidence chain as the Omani report."
+    }
+  ],
+  "boundFiles": {
+    "reseptit/alkuruoat/samosa.md": "46434c90d2a686eba39107cb9fb68ee4a1d3004ba24adade63de81db470a3140",
+    "docs/nutrition/gk100-samosa-meira-review.md": "237a5b8ed1574752a60f82b222ee3079a33accccc0a4de55c0b90c635b842c98"
+  }
+}

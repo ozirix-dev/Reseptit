@@ -1,0 +1,249 @@
+{
+  "recipeId": "xiaolongbao",
+  "servings": 4,
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "unroundedGk": "15.7659005",
+  "inputs": [
+    [
+      300,
+      74,
+      28
+    ],
+    [
+      300,
+      0,
+      0
+    ],
+    [
+      145,
+      0.427,
+      28
+    ],
+    [
+      5,
+      0,
+      0
+    ],
+    [
+      40,
+      4.6,
+      28
+    ],
+    [
+      6,
+      4.8,
+      28
+    ],
+    [
+      15,
+      3.2,
+      28,
+      "ml"
+    ]
+  ],
+  "omissions": [
+    {
+      "ingredientIndex": 7,
+      "choPer100ml": 5.2
+    },
+    {
+      "ingredientIndex": 8,
+      "choPer100g": 4.8
+    }
+  ],
+  "ingredients": [
+    {
+      "name": {
+        "fi": "Vehnäjauho",
+        "en": "Wheat flour",
+        "sv": "Vetemjöl",
+        "th": "แป้งสาลี"
+      },
+      "grams": 300
+    },
+    {
+      "name": {
+        "fi": "Porsaanjauheliha",
+        "en": "Ground pork",
+        "sv": "Fläskfärs",
+        "th": "หมูบด"
+      },
+      "grams": 300
+    },
+    {
+      "name": {
+        "fi": "Laimennettu kanaliemi",
+        "en": "Diluted chicken stock",
+        "sv": "Utspädd kycklingbuljong",
+        "th": "น้ำซุปไก่เจือจาง"
+      },
+      "grams": 145
+    },
+    {
+      "name": {
+        "fi": "Liivatejauhe",
+        "en": "Powdered gelatine",
+        "sv": "Gelatinpulver",
+        "th": "เจลาตินผง"
+      },
+      "grams": 5
+    },
+    {
+      "name": {
+        "fi": "Kevätsipuli",
+        "en": "Spring onion",
+        "sv": "Salladslök",
+        "th": "ต้นหอม"
+      },
+      "grams": 40
+    },
+    {
+      "name": {
+        "fi": "Inkivääri täytteeseen",
+        "en": "Ginger for filling",
+        "sv": "Ingefära till fyllning",
+        "th": "ขิงสำหรับไส้"
+      },
+      "grams": 6
+    },
+    {
+      "name": {
+        "fi": "Kikkoman-soijakastike",
+        "en": "Kikkoman soy sauce",
+        "sv": "Kikkoman-soja",
+        "th": "ซีอิ๊ว Kikkoman"
+      },
+      "grams": null,
+      "quantity": {
+        "amount": 15,
+        "unit": "ml"
+      }
+    },
+    {
+      "name": {
+        "fi": "Gold Plum Chinkiang -etikka",
+        "en": "Gold Plum Chinkiang vinegar",
+        "sv": "Gold Plum Chinkiang-vinäger",
+        "th": "น้ำส้มสายชูดำ Gold Plum Chinkiang"
+      },
+      "grams": null,
+      "quantity": {
+        "amount": 30,
+        "unit": "ml"
+      }
+    },
+    {
+      "name": {
+        "fi": "Inkivääri tarjoiluun",
+        "en": "Ginger for serving",
+        "sv": "Ingefära till servering",
+        "th": "ขิงสำหรับเสิร์ฟ"
+      },
+      "grams": 6
+    },
+    {
+      "name": {
+        "fi": "Vesi",
+        "en": "Water",
+        "sv": "Vatten",
+        "th": "น้ำ"
+      },
+      "grams": null,
+      "quantity": {
+        "amount": 170,
+        "unit": "ml"
+      }
+    },
+    {
+      "name": {
+        "fi": "Seesamiöljy",
+        "en": "Sesame oil",
+        "sv": "Sesamolja",
+        "th": "น้ำมันงา"
+      },
+      "grams": null,
+      "quantity": {
+        "amount": 5,
+        "unit": "ml"
+      }
+    },
+    {
+      "name": {
+        "fi": "Suola",
+        "en": "Salt",
+        "sv": "Salt",
+        "th": "เกลือ"
+      },
+      "grams": null
+    }
+  ],
+  "preparation": {
+    "fi": "Liuota {{amount:3}} g liivatetta kuumaan {{amount:2}} g:n kanaliemeen, jäähdytä jähmeäksi ja kuutioi. Sekoita {{amount:1}} g jauhelihaa, {{amount:4}} g kevätsipulia, {{amount:5}} g inkivääriä, {{amount:6}} ml soijaa, {{amount:10}} ml seesamiöljyä ja suola. Lisää hyytelö ja pidä täyte kylmänä. Vaivaa {{amount:0}} g jauhoa ja {{amount:9}} ml vettä taikinaksi ja anna levätä 30 minuuttia. Tee kuusi nyyttiä annosta kohti, käytä koko täyte ja höyrytä 8–10 minuuttia läpikypsiksi. Jaa nyytit, {{amount:7}} ml etikkaa ja {{amount:8}} g tarjoiluinkivääriä {{servings}} annokseen.",
+    "en": "Dissolve {{amount:3}} g gelatine in {{amount:2}} g hot chicken stock, chill until set and dice. Mix {{amount:1}} g pork, {{amount:4}} g spring onion, {{amount:5}} g ginger, {{amount:6}} ml soy sauce, {{amount:10}} ml sesame oil and salt. Fold in the jelly and keep the filling cold. Knead {{amount:0}} g flour and {{amount:9}} ml water into dough and rest for 30 minutes. Make six dumplings per serving, use all the filling and steam for 8–10 minutes until cooked through. Divide the dumplings, {{amount:7}} ml vinegar and {{amount:8}} g serving ginger into {{servings}} servings.",
+    "sv": "Lös upp {{amount:3}} g gelatin i {{amount:2}} g varm kycklingbuljong, kyl tills den stelnar och tärna. Blanda {{amount:1}} g fläskfärs, {{amount:4}} g salladslök, {{amount:5}} g ingefära, {{amount:6}} ml soja, {{amount:10}} ml sesamolja och salt. Vänd ner gelén och håll fyllningen kall. Knåda {{amount:0}} g mjöl och {{amount:9}} ml vatten och låt vila i 30 minuter. Gör sex knyten per portion med hela fyllningen och ånga i 8–10 minuter tills de är genomkokta. Fördela knytena, {{amount:7}} ml vinäger och {{amount:8}} g ingefära på {{servings}} portioner.",
+    "th": "ละลายเจลาติน {{amount:3}} กรัมในน้ำซุปไก่ร้อน {{amount:2}} กรัม แช่เย็นจนเซตตัวแล้วหั่นเต๋า ผสมหมูบด {{amount:1}} กรัม ต้นหอม {{amount:4}} กรัม ขิง {{amount:5}} กรัม ซีอิ๊ว {{amount:6}} มล. น้ำมันงา {{amount:10}} มล. และเกลือ ใส่วุ้นน้ำซุปและเก็บไส้ให้เย็น นวดแป้ง {{amount:0}} กรัมกับน้ำ {{amount:9}} มล. แล้วพัก 30 นาที ทำเกี๊ยวหกชิ้นต่อที่ ใช้ไส้ทั้งหมดแล้วนึ่ง 8–10 นาทีจนสุกทั่ว แบ่งเกี๊ยว น้ำส้มสายชู {{amount:7}} มล. และขิง {{amount:8}} กรัมเป็น {{servings}} ที่"
+  },
+  "limitation": {
+    "fi": "GI 28 on liha–salottisipulinyytin verrokki. Kuoren paksuus, liemitäyte ja höyrytys voivat muuttaa vastetta. Dipin 0,462 g hiilihydraattia annosta kohti jää pois.",
+    "en": "GI 28 is a meat and shallot dumpling comparator. Wrapper thickness, broth filling and steaming can affect the response. The dip contributes 0.462 g excluded carbohydrate per serving.",
+    "sv": "GI 28 kommer från ett degknyte med kött och schalottenlök. Degens tjocklek, buljongfyllningen och ångkokningen kan påverka responsen. Dippens 0,462 g kolhydrat per portion ingår inte.",
+    "th": "ค่า GI 28 อ้างอิงเกี๊ยวไส้เนื้อและหอมแดง ความหนาของแป้ง ไส้น้ำซุป และการนึ่งอาจเปลี่ยนการตอบสนอง ไม่รวมคาร์โบไฮเดรตจากน้ำจิ้ม 0.462 กรัมต่อที่"
+  },
+  "sources": [
+    {
+      "title": "Yang et al.",
+      "url": "https://www.wjgnet.com/1007-9327/full/v12/i21/3430.htm",
+      "kind": "HUMAN_GI",
+      "note": "Filled meat and shallot dumpling GI 28."
+    },
+    {
+      "title": "Fineli 110, 28946, 30315",
+      "url": "https://fineli.fi/fineli/fi/ohje/19",
+      "kind": "CARBOHYDRATE",
+      "note": "THL CC BY 4.0."
+    },
+    {
+      "title": "AFCD F004196, F006250, F004213",
+      "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd",
+      "kind": "CARBOHYDRATE",
+      "note": "CC BY-SA 3.0 Australia."
+    },
+    {
+      "title": "Kikkoman",
+      "url": "https://www.kikkoman.co.uk/products/detail/fs-kikkoman-naturally-brewed-soy-sauce",
+      "kind": "CARBOHYDRATE",
+      "note": "3.2 g per 100 ml."
+    },
+    {
+      "title": "Gold Plum Chinkiang",
+      "url": "https://www.okashigroup.com/catalog/gold-plum-chinkiang-vinegar-550ml",
+      "kind": "CARBOHYDRATE",
+      "note": "5.2 g per 100 ml."
+    }
+  ],
+  "boundFiles": {
+    "reseptit/alkuruoat/xiaolongbao.md": "2d0e026ce3e13ae802fb836053ee7c0b2a28a43ac0306a5ee902d59d1d2aa549",
+    "docs/nutrition/gk80-operation80-batch-36.md": "30dc150b33d1f51e5516a4346bcd8e7c9332553242bd807f7f01c02aa50ed781"
+  },
+  "exclusions": [
+    {
+      "ingredientIndex": 9,
+      "kind": "ZERO_CHO",
+      "rationale": "Water. The bound calculation note gives this input zero available carbohydrate.",
+      "evidencePath": "docs/nutrition/gk80-operation80-batch-36.md"
+    },
+    {
+      "ingredientIndex": 10,
+      "kind": "ZERO_CHO",
+      "rationale": "Sesame oil. The bound calculation note gives this input zero available carbohydrate.",
+      "evidencePath": "docs/nutrition/gk80-operation80-batch-36.md"
+    },
+    {
+      "ingredientIndex": 11,
+      "kind": "ZERO_CHO",
+      "rationale": "Salt. The bound calculation note gives this input zero available carbohydrate.",
+      "evidencePath": "docs/nutrition/gk80-operation80-batch-36.md"
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "recipeId": "vietnamilainen-xoi-maapahkinalla",
+  "servings": 2,
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "unroundedGk": "28.0602125",
+  "inputs": [
+    [
+      100,
+      70.5,
+      75.7
+    ],
+    [
+      100,
+      14.1,
+      13
+    ],
+    [
+      25,
+      6.23,
+      59
+    ]
+  ],
+  "omissions": [
+    {
+      "ingredientIndex": 3,
+      "choPer100g": 6.2
+    }
+  ],
+  "ingredients": [
+    {
+      "name": {
+        "fi": "Kuiva valkoinen tahmariisi",
+        "en": "Dry white glutinous rice",
+        "sv": "Torrt vitt klibbris",
+        "th": "ข้าวเหนียวขาวแห้ง"
+      },
+      "grams": 100
+    },
+    {
+      "name": {
+        "fi": "Kuorittu öljyssä paahdettu suolaton maapähkinä",
+        "en": "Skinless unsalted oil-roasted peanuts",
+        "sv": "Skalade osaltade jordnötter rostade i olja",
+        "th": "ถั่วลิสงลอกเยื่อคั่วน้ำมันไม่ใส่เกลือ"
+      },
+      "grams": 100
+    },
+    {
+      "name": {
+        "fi": "Raastettu tuore kookos",
+        "en": "Grated fresh coconut",
+        "sv": "Riven färsk kokos",
+        "th": "มะพร้าวสดขูด"
+      },
+      "grams": 25
+    },
+    {
+      "name": {
+        "fi": "Paahdettu suolaton seesaminsiemen",
+        "en": "Toasted unsalted sesame seeds",
+        "sv": "Rostade osaltade sesamfrön",
+        "th": "งาคั่วไม่ใส่เกลือ"
+      },
+      "grams": 8
+    },
+    {
+      "name": {
+        "fi": "Suola",
+        "en": "Salt",
+        "sv": "Salt",
+        "th": "เกลือ"
+      },
+      "grams": null
+    }
+  ],
+  "preparation": {
+    "fi": "Liota {{amount:0}} g kuivaa tahmariisiä ja höyrytä kypsäksi. Jaa lämmin riisi, {{amount:1}} g kuorittuja öljyssä paahdettuja suolattomia maapähkinöitä, {{amount:2}} g raastettua makeuttamatonta tuoretta kookosta ja {{amount:3}} g paahdettua suolatonta seesamia {{servings}} annokseen. Mausta suolalla.",
+    "en": "Soak {{amount:0}} g dry glutinous rice and steam until tender. Divide the warm rice, {{amount:1}} g skinless unsalted oil-roasted peanuts, {{amount:2}} g grated unsweetened fresh coconut and {{amount:3}} g toasted unsalted sesame seeds into {{servings}} servings. Season with salt.",
+    "sv": "Blötlägg {{amount:0}} g torrt klibbris och ångkoka tills det är mjukt. Fördela det varma riset, {{amount:1}} g skalade osaltade jordnötter rostade i olja, {{amount:2}} g riven osötad färsk kokos och {{amount:3}} g rostade osaltade sesamfrön i {{servings}} portioner. Smaka av med salt.",
+    "th": "แช่ข้าวเหนียวแห้ง {{amount:0}} กรัมแล้วนึ่งจนสุก แบ่งข้าวเหนียวอุ่น ถั่วลิสงลอกเยื่อคั่วน้ำมันไม่ใส่เกลือ {{amount:1}} กรัม มะพร้าวสดขูดไม่เติมน้ำตาล {{amount:2}} กรัม และงาคั่วไม่ใส่เกลือ {{amount:3}} กรัมเป็น {{servings}} ที่ ปรุงรสด้วยเกลือ"
+  },
+  "limitation": {
+    "fi": "Riisin lajike ja höyrytys voivat muuttaa vastetta. Maapähkinän ja tuoreen kookoksen GI ovat verrokkeja. Paahdetun seesamin 0,248 g hiilihydraattia annosta kohti on rajattu GK-summasta.",
+    "en": "Rice variety and steaming can affect the response. The peanut and fresh coconut GI values are comparators. The sum excludes 0.248 g carbohydrate per serving from toasted sesame.",
+    "sv": "Rissort och ångkokning kan påverka responsen. GI för jordnötter och färsk kokos är jämförelsevärden. Summan utesluter 0,248 g kolhydrat per portion från rostat sesamfrö.",
+    "th": "พันธุ์ข้าวและวิธีนึ่งอาจเปลี่ยนการตอบสนอง ค่า GI ของถั่วลิสงและมะพร้าวสดเป็นค่าอ้างอิง ผลรวมไม่รวมคาร์โบไฮเดรต 0.248 กรัมต่อที่จากงาคั่ว"
+  },
+  "sources": [
+    {
+      "title": "Kim et al., steamed glutinous rice",
+      "url": "https://doi.org/10.1017/S0007114518003446",
+      "kind": "HUMAN_GI",
+      "note": "GI 75.7."
+    },
+    {
+      "title": "Jenkins et al., peanut",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/6259925/",
+      "kind": "HUMAN_GI",
+      "note": "GI 13 analogue for roasted peanut."
+    },
+    {
+      "title": "MEXT Standard Tables of Food Composition in Japan, eighth edition, updated 2023, 01151",
+      "url": "https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=1_01151_7&MODE=7",
+      "kind": "CARBOHYDRATE",
+      "note": "Available carbohydrate by weight, 70.5 g per 100 g."
+    },
+    {
+      "title": "FSANZ Australian Food Composition Database, Release 3, F006110 and F008214",
+      "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd",
+      "kind": "CARBOHYDRATE",
+      "note": "CC BY-SA 3.0 Australia under the FSANZ Data User Licence Agreement. Australian values converted to recipe servings."
+    },
+    {
+      "title": "USDA 170169",
+      "url": "https://fdc.nal.usda.gov/food-details/170169/nutrients",
+      "kind": "CARBOHYDRATE",
+      "note": "Total carbohydrate minus fibre."
+    },
+    {
+      "title": "Kamchansuppasin et al., fresh coconut",
+      "url": "https://doi.org/10.47836/ifrj.28.4.15",
+      "kind": "HUMAN_GI",
+      "note": "Tables 2 and 3. GI 59.0 ± 8.2 SEM, n=12, 25 g available carbohydrate and glucose reference. The report does not specify cultivar or maturity. Applied as a fresh coconut analogue."
+    }
+  ],
+  "boundFiles": {
+    "reseptit/aamupalat/vietnamilainen-xoi-maapahkinalla.md": "f5de045c45f50b5085810a20d18a239f5244831bf4ea06b9262b919862e61571",
+    "docs/nutrition/gk100-xoi-coconut-review.md": "f26bae4a37ec15fe1fe63350663100ba95ae1d2261c15dcbaad2380f35ce66d5"
+  },
+  "exclusions": [
+    {
+      "ingredientIndex": 4,
+      "kind": "ZERO_CHO",
+      "rationale": "Plain salt contributes no available carbohydrate.",
+      "evidencePath": "docs/nutrition/gk100-xoi-coconut-review.md"
+    }
+  ]
+}
