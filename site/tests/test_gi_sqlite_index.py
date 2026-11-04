@@ -139,13 +139,17 @@ class GiSqliteIndexTests(unittest.TestCase):
     def test_publication_falls_back_to_exclusive_rename_without_hard_links(self):
         import ctypes
 
+        # Keep the simulated errno values distinct even on hosts where they alias.
+        unsupported, operation_not_supported = 45, 102
         for platform, link_error, function, args in (
-            ("linux", errno.ENOTSUP, "renameat2", (-100, b"staging", -100, b"target", 1)),
-            ("darwin", errno.EOPNOTSUPP, "renamex_np", (b"staging", b"target", 4)),
+            ("linux", unsupported, "renameat2", (-100, b"staging", -100, b"target", 1)),
+            ("darwin", operation_not_supported, "renamex_np", (b"staging", b"target", 4)),
         ):
             with self.subTest(platform=platform), \
                  patch.object(index.os, "name", "posix"), \
                  patch.object(index.sys, "platform", platform), \
+                 patch.object(index.errno, "ENOTSUP", unsupported), \
+                 patch.object(index.errno, "EOPNOTSUPP", operation_not_supported), \
                  patch.object(index.os, "link", side_effect=OSError(link_error, "no hard links")), \
                  patch.object(ctypes, "CDLL") as load:
                 rename = getattr(load.return_value, function)
