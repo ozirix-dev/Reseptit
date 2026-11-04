@@ -3,6 +3,25 @@ import { validatePointReview, type PointReviewBase } from './gk100-point-packet'
 
 export const MIXED_EVIDENCE_METHOD = 'MIXED_EVIDENCE_V1';
 export const mixedBindingsPath = 'docs/nutrition/gk100-mixed-evidence-bindings.json';
+export const mixedApprovalPath = 'docs/nutrition/gk100-mixed-evidence-method-approval.json';
+
+const mixedPolicy = {
+  method: MIXED_EVIDENCE_METHOD,
+  revision: 1,
+  scope: 'REVIEW_ONLY_UNFLAGGED_POINT',
+  requiredPositiveContributions: ['HUMAN_GI', 'CODING'],
+  sourceBinding: 'EXACT_VERSION_INGREDIENT_COMPOSITION_GI_AND_REVIEW',
+  classification: 'DEEP_REVIEW_BOUND_TO_CALCULATION_INPUT',
+  omissionIngredientExclusive: 1,
+  omissionTotalExclusive: 2,
+  omissionAbsoluteGkInclusive: 0.5,
+  omissionRelativeInclusive: 0.10,
+  stressGi: [0, 100, 150],
+  stressScreenGi: 100,
+  codedShareFlagAbove: 0.50,
+  combinedStressFlagAbove: 0.20,
+} as const;
+export const mixedPolicySha256 = fingerprint(mixedPolicy);
 
 type Source = { url: string; locator: string };
 type GiKind = 'HUMAN_GI' | 'PUBLISHED_CODING' | 'B_CODING';
@@ -83,7 +102,7 @@ export function calculateMixedEvidence(packet: MixedEvidencePacket, originalPath
       if (availableCho > 0 && (!('omissionReason' in row) || !nonempty(row.omissionReason))) {
         blocked('UNRESOLVED_POSITIVE_MIXED_GI', index);
       }
-      if (availableCho >= 1) blocked('MIXED_OMISSION_EXCEEDS_INGREDIENT_LIMIT', index);
+      if (availableCho >= mixedPolicy.omissionIngredientExclusive) blocked('MIXED_OMISSION_EXCEEDS_INGREDIENT_LIMIT', index);
     } else {
       if (!(availableCho > 0) || !Number.isFinite(gi.value) || gi.value <= 0 || !validSource(gi.source)) {
         blocked('INVALID_MIXED_GI', index);
@@ -99,14 +118,17 @@ export function calculateMixedEvidence(packet: MixedEvidencePacket, originalPath
   const codedCho = coded.reduce((sum, row) => sum + row.availableCho, 0);
   const omittedCho = contributions.reduce((sum, row) => sum + (row.gk === null ? row.availableCho : 0), 0);
   const point = humanGk + codedGk;
-  if (![humanGk, codedGk, omittedCho, point].every(Number.isFinite) || humanGk <= 0 || codedGk <= 0 || omittedCho <= 0) {
-    throw Error('MIXED_REQUIRES_HUMAN_GI_CODE_AND_OMISSION');
+  if (![humanGk, codedGk, omittedCho, point].every(Number.isFinite) || humanGk <= 0 || codedGk <= 0) {
+    throw Error('MIXED_REQUIRES_HUMAN_GI_AND_CODE');
   }
-  if (omittedCho >= 2) throw Error('MIXED_OMISSIONS_EXCEED_CUMULATIVE_LIMIT');
+  if (omittedCho >= mixedPolicy.omissionTotalExclusive) throw Error('MIXED_OMISSIONS_EXCEED_CUMULATIVE_LIMIT');
   // Both editorial screens apply to omissions only. Coding uncertainty is reported separately.
-  if (omittedCho > 0.5 || omittedCho / point > 0.10) throw Error('MIXED_OMISSION_STRESS_EXCEEDS_REVIEW_SCREEN');
+  const omissionStress = omittedCho * mixedPolicy.stressScreenGi / 100;
+  if (omissionStress > mixedPolicy.omissionAbsoluteGkInclusive || omissionStress / point > mixedPolicy.omissionRelativeInclusive) {
+    throw Error('MIXED_OMISSION_STRESS_EXCEEDS_REVIEW_SCREEN');
+  }
 
-  const sensitivity = [0, 100, 150].map(gi => {
+  const sensitivity = mixedPolicy.stressGi.map(gi => {
     const omissionDelta = omittedCho * gi / 100;
     const codedScenarioGk = codedCho * gi / 100;
     const codingDelta = codedScenarioGk - codedGk;
@@ -120,13 +142,13 @@ export function calculateMixedEvidence(packet: MixedEvidencePacket, originalPath
     throw Error('NONFINITE_MIXED_SENSITIVITY');
   }
   const codedShare = codedGk / point;
-  const gi100 = sensitivity.find(scenario => scenario.assumedGi === 100)!;
+  const gi100 = sensitivity.find(scenario => scenario.assumedGi === mixedPolicy.stressScreenGi)!;
   // Editorial review flags only. Method approval and publication remain separate.
   const reviewFlags = [
-    ...(codedShare > 0.50 ? ['MIXED_CODE_DOMINANCE'] : []),
-    ...(Math.abs(gi100.combinedRelativeChange) > 0.20 ? ['MIXED_LARGE_GI100_STRESS_CHANGE'] : []),
+    ...(codedShare > mixedPolicy.codedShareFlagAbove ? ['MIXED_CODE_DOMINANCE'] : []),
+    ...(Math.abs(gi100.combinedRelativeChange) > mixedPolicy.combinedStressFlagAbove ? ['MIXED_LARGE_GI100_STRESS_CHANGE'] : []),
   ];
-  const inputSha256 = fingerprint({ method: packet.method, scopeSha256, contributions });
-  return { inputSha256, scopeSha256, contributions, point, humanGk, codedGk, codedShare, codedPercent: 100 * codedShare, omittedCho, reviewFlags,
+  const inputSha256 = fingerprint({ policySha256: mixedPolicySha256, scopeSha256, contributions });
+  return { inputSha256, policySha256: mixedPolicySha256, scopeSha256, contributions, point, humanGk, codedGk, codedShare, codedPercent: 100 * codedShare, omittedCho, reviewFlags,
     uncertainty: { confidence: 'LOW' as const, scenarios: sensitivity, isBiologicalBound: false, isConfidenceInterval: false } };
 }
