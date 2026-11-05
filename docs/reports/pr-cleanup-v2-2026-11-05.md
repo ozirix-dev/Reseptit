@@ -33,6 +33,7 @@ Luokittelu on siivouspäätös. Se ei kirjaa puuttuvaa sisältö-, menetelmä- t
 - #272 ja #274 koskevat lisäksi hyväksyttyjen FI-reseptien snapshot-palautuksia ja yhteisiä GK-buildereita. Säilytä mainin #270:n hyväksytty translation-baseline sekä #275/#276:n tutkimusannos-/kattavuuskorjaukset. Yhdistä uudet, erillisiin FI-polkuihin sidotut editorialSnapshots-rivit nykyisiin riveihin.
 - Hyväksyntäkuittien lähde-SHA:ta ei saa päivittää pelkän käännösmetadatan hyväksymiseksi. Näiden PR:ien tarkkaan nykyiseen tiedostohashiin sidottu inverseEdits palauttaa historialliset tavut, sitten alkuperäinen hyväksyntähash tarkistetaan. Tarkista LF/CRLF, nykyinen lähdehash ja V2-parin molemmat semanttiset hashit integraation jälkeen.
 - #274 lisää ruukkuyksikön nelikielisen aliasin. Sen viisi FI-lähteen P2-havaintoa säilyvät rekisterissä. Mainin julkaistuun chiavanukkaan täsmäversioon liittyvä sidos tarkistetaan erikseen.
+- Kaikkien kolmen erän 10 FI-tiedostoa eroavat nyky-mainista vain täsmällisellä kahden rivin käännösmetadatalohkolla. Yhteensä 30 FI-ohjeen muu tavusisältö säilyy. Yksikään erä ei muuta docs/nutrition-alueen alkuperäisiä hyväksyntä- tai evidenssitiedostoja.
 - Tämä ajo varmisti tiedosto-/avainpäällekkäisyydet ja integraatiorajat. Se ei toistanut 90 käännöksen kielikatselmointia eikä ajanut uutta 326 reseptin GK-laskentaa.
 
 ## Havaitut korjausta tai päätöstä odottavat asiat
