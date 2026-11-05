@@ -2,7 +2,7 @@
 
 [Nykyinen Factory-suunnitelma](gk100-v3-eight-release-plan.json) korvaa PR #271:n avauskuvauksen. Kaikki kahdeksan pakettia läpäisivät teknisen tarkistuksen. Uusi manifesti odottaa omistajan sisältöpäätöstä.
 
-Hyväksyttävän manifestin SHA-256 on `eded7c91b13fcc8f22c5700920594aade07332988074569807fff61c5f27ae2e`. Alkuperäinen [päätöstiedosto](https://github.com/ozirix-dev/Reseptit/blob/25ea0983a6ac69e1df90e7b3bad15b2510bdd338/docs/nutrition/gk100-v3-eight-decisions.json) säilyy Git-historiassa.
+Hyväksyttävän manifestin SHA-256 on `3055a2d4bffe93d667591d2f69f54ff8e629bab9ad95ab42af40287f9d566be9`. Alkuperäinen [päätöstiedosto](https://github.com/ozirix-dev/Reseptit/blob/25ea0983a6ac69e1df90e7b3bad15b2510bdd338/docs/nutrition/gk100-v3-eight-decisions.json) säilyy Git-historiassa.
 
 | Ehdokas | GK/annos | Esitys |
 | --- | ---: | --- |
@@ -15,7 +15,7 @@ Hyväksyttävän manifestin SHA-256 on `eded7c91b13fcc8f22c5700920594aade0733298
 | Mehevä suklaakakku | 20,5 | 107,2 g kuorrutettua tutkimuskakkua ja vettä |
 | Tangyuan | 30,5 | 115 g keitettyjä Lee Chun -riisipalloja ja vettä |
 
-Factory sitoo `studyServing`-esitystavan manifestiin. Merkitty GK-pistearvo koskee yhtä tutkimusannosta. Sivun annosvalitsin ei muuta sen ainesosamääriä, ja lähderajaus näkyy GK-luvun vieressä kaikilla neljällä kielellä. Seitsemän tutkimuspakettia säilyttävät alkuperäiset laskenta- ja pakettitarkisteensa.
+Factory sitoo `studyServing`-esitystavan sekä ehdokasriviin että katselmointiin. Kotireseptien GK-arvioiden suodatin jättää tutkimusvertailut pois. Merkitty GK-pistearvo koskee yhtä tutkimusannosta. Sivun annosvalitsin ei muuta sen ainesosamääriä, ja lähderajaus näkyy GK-luvun vieressä kaikilla neljällä kielellä. Seitsemän tutkimuspakettia säilyttävät alkuperäiset laskenta- ja pakettitarkisteensa.
 
 Chiavanukkaan ainesosalistalta poistettiin valinnainen makeutus, jonka valmistusohje käskee jättämään pois. Korjatun paketin tarkiste on `a0b8175f3d0bdea6c28fea78a809c7a388dbe299011db56b7416714db5890920`.
 

@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "mainSha": "d9e4fdc314142518b4afdd60933f3f0a75ead519",
-  "manifestSha256": "eded7c91b13fcc8f22c5700920594aade07332988074569807fff61c5f27ae2e",
-  "decisionsSha256": "60b61cd8a840ce51116734ede03ad3f80bf0df731b886c1fb9a7deaead6ced42",
+  "mainSha": "3de79f256490067500fe7f96706d4f4b20d26f91",
+  "manifestSha256": "3055a2d4bffe93d667591d2f69f54ff8e629bab9ad95ab42af40287f9d566be9",
+  "decisionsSha256": "2ba5ac02ab163c71d7666b5bd45a0b55aa345d43fd3f9d1f3f839ab90ef96f28",
   "expectedCoverageDelta": 0,
   "publicationAuthorized": false,
   "variants": [],
@@ -134,7 +134,8 @@
           "depth": "DEEP",
           "evidence": "docs/nutrition/gk100-aloo-paratha-study-review.md"
         },
-        "candidateSha256": "13af95c73778862bebc3f53546e1e551703eb5ccea25f4edb9a02ef1079ef671"
+        "candidateSha256": "13af95c73778862bebc3f53546e1e551703eb5ccea25f4edb9a02ef1079ef671",
+        "studyServing": true
       },
       "technical": "PASS",
       "state": "OWNER_DECISION",
@@ -196,7 +197,8 @@
           "depth": "DEEP",
           "evidence": "docs/nutrition/gk100-biryani-study-review.md"
         },
-        "candidateSha256": "318b2135bbef68aaa9f9ecfc78a6b3328884e38576f19a81c082b5b79a4c131d"
+        "candidateSha256": "318b2135bbef68aaa9f9ecfc78a6b3328884e38576f19a81c082b5b79a4c131d",
+        "studyServing": true
       },
       "technical": "PASS",
       "state": "OWNER_DECISION",
@@ -258,7 +260,8 @@
           "depth": "DEEP",
           "evidence": "docs/nutrition/gk100-rice-bun-study-review.md"
         },
-        "candidateSha256": "39fc887532bb3f09e202bafb2b9894a25a38ef42a3ba7be62a5b2389ffdc09f3"
+        "candidateSha256": "39fc887532bb3f09e202bafb2b9894a25a38ef42a3ba7be62a5b2389ffdc09f3",
+        "studyServing": true
       },
       "technical": "PASS",
       "state": "OWNER_DECISION",
@@ -320,7 +323,8 @@
           "depth": "DEEP",
           "evidence": "docs/nutrition/gk100-rice-bun-study-review.md"
         },
-        "candidateSha256": "f9ad785665885da39244532c41291b849c938c13a723dd4c7e50f1d3d027f57c"
+        "candidateSha256": "f9ad785665885da39244532c41291b849c938c13a723dd4c7e50f1d3d027f57c",
+        "studyServing": true
       },
       "technical": "PASS",
       "state": "OWNER_DECISION",
@@ -382,7 +386,8 @@
           "depth": "DEEP",
           "evidence": "docs/nutrition/gk100-nasi-lemak-study-review.md"
         },
-        "candidateSha256": "77d770d3e21913949309feb75dbbc8d41c5ef21f6ff50ae5e90edfaaa1865764"
+        "candidateSha256": "77d770d3e21913949309feb75dbbc8d41c5ef21f6ff50ae5e90edfaaa1865764",
+        "studyServing": true
       },
       "technical": "PASS",
       "state": "OWNER_DECISION",
@@ -444,7 +449,8 @@
           "depth": "DEEP",
           "evidence": "docs/nutrition/gk100-chocolate-cake-study-review.md"
         },
-        "candidateSha256": "d033681b8541584d2b92b61f5b7f6a8563e79d4641471b07df57ff42d319fed4"
+        "candidateSha256": "d033681b8541584d2b92b61f5b7f6a8563e79d4641471b07df57ff42d319fed4",
+        "studyServing": true
       },
       "technical": "PASS",
       "state": "OWNER_DECISION",
@@ -506,7 +512,8 @@
           "depth": "DEEP",
           "evidence": "docs/nutrition/gk100-tangyuan-study-review.md"
         },
-        "candidateSha256": "580ea679695009900d4e8b7f7247977018216b9c106c72a0a7dda691bb575f64"
+        "candidateSha256": "580ea679695009900d4e8b7f7247977018216b9c106c72a0a7dda691bb575f64",
+        "studyServing": true
       },
       "technical": "PASS",
       "state": "OWNER_DECISION",
@@ -516,10 +523,10 @@
     }
   ],
   "files": [],
-  "candidateCommit": "45dcff25bced2579f736a4cc4b1a12826c4935b4",
+  "candidateCommit": "0f41976a50350b7ac8c63700c9f1d8b3d0eb1064",
   "bundle": {
     "schemaVersion": 1,
-    "mainSha": "d9e4fdc314142518b4afdd60933f3f0a75ead519",
+    "mainSha": "3de79f256490067500fe7f96706d4f4b20d26f91",
     "batch": {
       "schemaVersion": 1,
       "batchId": "gk100-v3-eight-preparation",
@@ -559,7 +566,8 @@
               "depth": "DEEP",
               "evidence": "docs/nutrition/gk100-aloo-paratha-study-review.md"
             },
-            "candidateSha256": "13af95c73778862bebc3f53546e1e551703eb5ccea25f4edb9a02ef1079ef671"
+            "candidateSha256": "13af95c73778862bebc3f53546e1e551703eb5ccea25f4edb9a02ef1079ef671",
+            "studyServing": true
           },
           "studyServing": true
         },
@@ -579,7 +587,8 @@
               "depth": "DEEP",
               "evidence": "docs/nutrition/gk100-biryani-study-review.md"
             },
-            "candidateSha256": "318b2135bbef68aaa9f9ecfc78a6b3328884e38576f19a81c082b5b79a4c131d"
+            "candidateSha256": "318b2135bbef68aaa9f9ecfc78a6b3328884e38576f19a81c082b5b79a4c131d",
+            "studyServing": true
           },
           "studyServing": true
         },
@@ -599,7 +608,8 @@
               "depth": "DEEP",
               "evidence": "docs/nutrition/gk100-rice-bun-study-review.md"
             },
-            "candidateSha256": "39fc887532bb3f09e202bafb2b9894a25a38ef42a3ba7be62a5b2389ffdc09f3"
+            "candidateSha256": "39fc887532bb3f09e202bafb2b9894a25a38ef42a3ba7be62a5b2389ffdc09f3",
+            "studyServing": true
           },
           "studyServing": true
         },
@@ -619,7 +629,8 @@
               "depth": "DEEP",
               "evidence": "docs/nutrition/gk100-rice-bun-study-review.md"
             },
-            "candidateSha256": "f9ad785665885da39244532c41291b849c938c13a723dd4c7e50f1d3d027f57c"
+            "candidateSha256": "f9ad785665885da39244532c41291b849c938c13a723dd4c7e50f1d3d027f57c",
+            "studyServing": true
           },
           "studyServing": true
         },
@@ -639,7 +650,8 @@
               "depth": "DEEP",
               "evidence": "docs/nutrition/gk100-nasi-lemak-study-review.md"
             },
-            "candidateSha256": "77d770d3e21913949309feb75dbbc8d41c5ef21f6ff50ae5e90edfaaa1865764"
+            "candidateSha256": "77d770d3e21913949309feb75dbbc8d41c5ef21f6ff50ae5e90edfaaa1865764",
+            "studyServing": true
           },
           "studyServing": true
         },
@@ -659,7 +671,8 @@
               "depth": "DEEP",
               "evidence": "docs/nutrition/gk100-chocolate-cake-study-review.md"
             },
-            "candidateSha256": "d033681b8541584d2b92b61f5b7f6a8563e79d4641471b07df57ff42d319fed4"
+            "candidateSha256": "d033681b8541584d2b92b61f5b7f6a8563e79d4641471b07df57ff42d319fed4",
+            "studyServing": true
           },
           "studyServing": true
         },
@@ -679,7 +692,8 @@
               "depth": "DEEP",
               "evidence": "docs/nutrition/gk100-tangyuan-study-review.md"
             },
-            "candidateSha256": "580ea679695009900d4e8b7f7247977018216b9c106c72a0a7dda691bb575f64"
+            "candidateSha256": "580ea679695009900d4e8b7f7247977018216b9c106c72a0a7dda691bb575f64",
+            "studyServing": true
           },
           "studyServing": true
         }
@@ -816,7 +830,8 @@
               "depth": "DEEP",
               "evidence": "docs/nutrition/gk100-aloo-paratha-study-review.md"
             },
-            "candidateSha256": "13af95c73778862bebc3f53546e1e551703eb5ccea25f4edb9a02ef1079ef671"
+            "candidateSha256": "13af95c73778862bebc3f53546e1e551703eb5ccea25f4edb9a02ef1079ef671",
+            "studyServing": true
           },
           "technical": "PASS",
           "state": "OWNER_DECISION",
@@ -878,7 +893,8 @@
               "depth": "DEEP",
               "evidence": "docs/nutrition/gk100-biryani-study-review.md"
             },
-            "candidateSha256": "318b2135bbef68aaa9f9ecfc78a6b3328884e38576f19a81c082b5b79a4c131d"
+            "candidateSha256": "318b2135bbef68aaa9f9ecfc78a6b3328884e38576f19a81c082b5b79a4c131d",
+            "studyServing": true
           },
           "technical": "PASS",
           "state": "OWNER_DECISION",
@@ -940,7 +956,8 @@
               "depth": "DEEP",
               "evidence": "docs/nutrition/gk100-rice-bun-study-review.md"
             },
-            "candidateSha256": "39fc887532bb3f09e202bafb2b9894a25a38ef42a3ba7be62a5b2389ffdc09f3"
+            "candidateSha256": "39fc887532bb3f09e202bafb2b9894a25a38ef42a3ba7be62a5b2389ffdc09f3",
+            "studyServing": true
           },
           "technical": "PASS",
           "state": "OWNER_DECISION",
@@ -1002,7 +1019,8 @@
               "depth": "DEEP",
               "evidence": "docs/nutrition/gk100-rice-bun-study-review.md"
             },
-            "candidateSha256": "f9ad785665885da39244532c41291b849c938c13a723dd4c7e50f1d3d027f57c"
+            "candidateSha256": "f9ad785665885da39244532c41291b849c938c13a723dd4c7e50f1d3d027f57c",
+            "studyServing": true
           },
           "technical": "PASS",
           "state": "OWNER_DECISION",
@@ -1064,7 +1082,8 @@
               "depth": "DEEP",
               "evidence": "docs/nutrition/gk100-nasi-lemak-study-review.md"
             },
-            "candidateSha256": "77d770d3e21913949309feb75dbbc8d41c5ef21f6ff50ae5e90edfaaa1865764"
+            "candidateSha256": "77d770d3e21913949309feb75dbbc8d41c5ef21f6ff50ae5e90edfaaa1865764",
+            "studyServing": true
           },
           "technical": "PASS",
           "state": "OWNER_DECISION",
@@ -1126,7 +1145,8 @@
               "depth": "DEEP",
               "evidence": "docs/nutrition/gk100-chocolate-cake-study-review.md"
             },
-            "candidateSha256": "d033681b8541584d2b92b61f5b7f6a8563e79d4641471b07df57ff42d319fed4"
+            "candidateSha256": "d033681b8541584d2b92b61f5b7f6a8563e79d4641471b07df57ff42d319fed4",
+            "studyServing": true
           },
           "technical": "PASS",
           "state": "OWNER_DECISION",
@@ -1188,7 +1208,8 @@
               "depth": "DEEP",
               "evidence": "docs/nutrition/gk100-tangyuan-study-review.md"
             },
-            "candidateSha256": "580ea679695009900d4e8b7f7247977018216b9c106c72a0a7dda691bb575f64"
+            "candidateSha256": "580ea679695009900d4e8b7f7247977018216b9c106c72a0a7dda691bb575f64",
+            "studyServing": true
           },
           "technical": "PASS",
           "state": "OWNER_DECISION",
@@ -1197,16 +1218,16 @@
           "publicationAuthorized": false
         }
       ],
-      "manifestSha256": "eded7c91b13fcc8f22c5700920594aade07332988074569807fff61c5f27ae2e"
+      "manifestSha256": "3055a2d4bffe93d667591d2f69f54ff8e629bab9ad95ab42af40287f9d566be9"
     },
     "decisions": {
-      "manifestSha256": "eded7c91b13fcc8f22c5700920594aade07332988074569807fff61c5f27ae2e",
       "records": [],
+      "manifestSha256": "3055a2d4bffe93d667591d2f69f54ff8e629bab9ad95ab42af40287f9d566be9",
       "schemaVersion": 1
     },
     "recipeIds": [],
     "expectedCoverageDelta": 0,
     "publicationAuthorized": false,
-    "bundleSha256": "001cd9460043d0a7a7737663ac1cc9bd3e111609ad4e7ad319dbf4eb4d0f5553"
+    "bundleSha256": "e86f3e9c4d4161d7a4923e2044a2cb9618d740251ac1db1ce0f9beab21cf8fc4"
   }
 }
