@@ -1,3 +1,4 @@
+import {p1Transition,requiresP1SourceCorrection,verifyP1SourceInputs} from './p1-source-transition';
 import {execFileSync} from 'node:child_process';
 import {strict as assert} from 'node:assert';
 import {test} from 'node:test';
@@ -17,11 +18,15 @@ const lf=(v:any):any=>typeof v==='string'?v.replaceAll('\r\n','\n'):Array.isArra
 const before=json('docs/nutrition/gk-legacy-reconciliation/baseline.json');
 const report=json('tmp/nutrition/glycemic-load-pilot.json');
 
-test('live326 allow only the independently verified AFCD result deltas; every87 sealed variant and macro stays identical',()=>{
+test('live326 allow only exact AFCD deltas and ancestry-bound main P1 withdrawals; all87 variants and macros stay identical',()=>{
  assert.equal(report.results.length,326);
+ const requiresP1=requiresP1SourceCorrection(root);
+ verifyP1SourceInputs(json('docs/nutrition/glycemic-load-pilot-input.json').recipes,requiresP1);
  const affected=Object.keys(before.expectedResultDeltas);
  assert.deepEqual(affected.sort(),['pellava-puuro-pahkinoilla','valimerellinen-ricotta-persikkakulho']);
  for(const r of report.results){
+  const p1=p1Transition.records.find((x:any)=>x.recipeId===r.recipeId);
+  if(requiresP1&&p1){assert.equal(sha(r),p1.newResultSha256,r.recipeId+' reviewed P1 main correction');assert.equal(r.glycemicLoadPerServing,null);continue;}
   const restored=structuredClone(r);
   for(const delta of before.expectedResultDeltas[r.recipeId]??[]){
    const keys=delta.path.slice(1).split('/');let parent=restored;
@@ -36,8 +41,8 @@ test('live326 allow only the independently verified AFCD result deltas; every87 
  assert.equal(sha(lf(json('tmp/nutrition/audit.json').inventory)),before.macroInventorySha256);
  assert.equal(sha(report.giSourcePolicy),before.currentSourcePolicySha256);
  assert.equal(sha(report.giSourceCatalog),before.currentSourceCatalogSha256);
- assert.deepEqual(report.calculationInputMismatches,[]);
- assert.deepEqual(report.calculationEvidenceMismatches,[]);
+ assert.deepEqual(report.calculationInputMismatches,requiresP1?p1Transition.newInputMismatches:[]);
+ assert.deepEqual(report.calculationEvidenceMismatches,requiresP1?p1Transition.newEvidenceMismatches:[]);
  const peach=report.results.find((r:any)=>r.recipeId==='valimerellinen-ricotta-persikkakulho');
  assert.equal(peach.glycemicLoadPerServing,3.97);
  assert.equal(peach.unroundedGlycemicLoadPerServing,3.96885);
@@ -147,4 +152,12 @@ test('three original-case source cards cannot reuse a whole-food GI as a home re
  assert.throws(()=>verifyLegacyReviewEvidence(p=>read(p)+(p===cards.baozi.macroPath?'changed':'') ,manifest),/Reviewed recipe\/macro text changed/);
  const missing=structuredClone(manifest);missing.reviewTextSnapshots.pop();
  assert.throws(()=>verifyLegacyReviewEvidence(read,missing),/Missing reviewed recipe\/macro text snapshot/);
+});
+
+test('the reviewed P1 main profile forbids restoring cow-milk coconut inputs after integration',()=>{
+ const old=p1Transition.records.map((r:any)=>r.oldInput);
+ assert.throws(()=>verifyP1SourceInputs(old,true),/rolled back/);
+ assert.doesNotThrow(()=>verifyP1SourceInputs(old,false));
+ const mutated=structuredClone(old);mutated[0].ingredients[0].grams=999;
+ assert.throws(()=>verifyP1SourceInputs(mutated,false),/changed/);
 });

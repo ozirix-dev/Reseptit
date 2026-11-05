@@ -1,0 +1,667 @@
+{
+  "mainSha": "dab15fe907db7336320dcd79161fd61462b28034",
+  "scope": "Externally merged P1 coconut identity withdrawal; no local branch synchronization or source write",
+  "records": [
+    {
+      "recipeId": "kookos-lime-kanacurry",
+      "oldInput": {
+        "recipeId": "kookos-lime-kanacurry",
+        "servings": 4,
+        "ingredients": [
+          {
+            "name": "broilerin paistileikettä",
+            "grams": 500,
+            "fineliRecordId": "afcd-F002806-release-3",
+            "giRecordId": null,
+            "massEvidence": "Recipe-listed 500 g, mapped to Chicken, thigh, lean flesh, raw (raw chicken meat)."
+          },
+          {
+            "name": "täysrasvaista kookosmaitoa",
+            "grams": 400,
+            "fineliRecordId": "fineli-684-release-20",
+            "giRecordId": "dairy-category-mean-gi-35",
+            "massEvidence": "Recipe-listed 400 g, mapped to MAITO, KEVYTMAITO, D-VITAMIINIA 1 UG (plain milk).",
+            "foodKey": "dairy",
+            "preparationKey": "unflavoured-dairy",
+            "giMatchEvidence": "Dairy products, category mean: Category mean, not a measured GI for the recipe's cream cheese.; category/analogue estimate, low confidence."
+          },
+          {
+            "name": "thaimaalaista currytahnaa",
+            "grams": null,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "No source-matched composition and preparation was resolved for “thaimaalaista currytahnaa”; it is not treated as zero.",
+            "massEvidence": "Recipe-listed 2 rkl thaimaalaista currytahnaa."
+          },
+          {
+            "name": "vihreitä papuja",
+            "grams": 150,
+            "fineliRecordId": "fineli-29022-release-20",
+            "giRecordId": "vegetables-category-mean-gi-66",
+            "massEvidence": "Recipe-listed 150 g, mapped to PAPU, VIHREÄ PAPU, KEITETTY (boiled green beans).",
+            "foodKey": "vegetable",
+            "preparationKey": "vegetable-category",
+            "giMatchEvidence": "Vegetables other than potatoes, category mean: Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence.; category/analogue estimate, low confidence."
+          },
+          {
+            "name": "punainen paprika",
+            "grams": 170,
+            "fineliRecordId": "fineli-386-release-20",
+            "giRecordId": null,
+            "massEvidence": "One recipe-listed pepper represented by Fineli KPL_M 170 g standard portion estimate (size not specified; not weighed), mapped to PAPRIKA, PUNAINEN (raw red bell pepper). AJO 1.6B: starting edible raw ingredient, not cooked output weight; Fineli #386/#387 basis is 100% edible. No invented seed/stalk or cooking-loss multiplier.",
+            "foodKey": "red-pepper",
+            "preparationKey": "recipe-specific-preparation-no-approved-pepper-gi",
+            "giMatchEvidence": "AJO 1.6B: generic Pepper GI 40 is reference-only. Species, colour, preparation and original human measurement are unverified; DOI 10.3390/nu12102989 Table 1 cannot support this ingredient. Missing GI is not zero."
+          },
+          {
+            "name": "kalakastiketta",
+            "grams": 15,
+            "fineliRecordId": "fineli-8029-release-20",
+            "giRecordId": null,
+            "massEvidence": "Recipe-listed 15 g, mapped to KALAKASTIKE, MADEMUHENNOS (fish sauce as sold)."
+          },
+          {
+            "name": "limetti",
+            "grams": null,
+            "fineliRecordId": "afcd-F005199-release-3",
+            "giRecordId": "fruit-category-mean-gi-51",
+            "excludedReason": "The recipe amount 1 kpl has no food-specific mass conversion for Lime, peeled, raw.",
+            "massEvidence": "Mapped food state: peeled raw lime; mass conversion unavailable."
+          },
+          {
+            "name": "thaibasilikaa",
+            "grams": null,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Small culinary-use ingredient omitted under the documented <1 g available-carbohydrate/serving convention.",
+            "estimatedAvailableCarbohydratePerServingG": 0.125,
+            "negligibleAssumption": "Conservative available-carbohydrate bound 0.5 g per recipe; below 1 g per serving.",
+            "massEvidence": "Recipe-listed small seasoning/herb amount; bounded estimate, not a weighed amount."
+          },
+          {
+            "name": "kookosöljyä",
+            "grams": null,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Pure edible oil contributes no available carbohydrate.",
+            "estimatedAvailableCarbohydratePerServingG": 0,
+            "negligibleAssumption": "Pure edible oil has zero available carbohydrate.",
+            "massEvidence": "Recipe-listed pure cooking oil; mass is immaterial to available carbohydrate."
+          }
+        ]
+      },
+      "oldInputSha256": "e7927cc9efa30237b082502d62b20963bdca68f99236b020392cdece2e1076b5",
+      "newInputSha256": "7c1f78f5c6c339f39c1b78b4673238b4f9972ad8b78ad649e6be605b07e70a89",
+      "oldResult": {
+        "recipeId": "kookos-lime-kanacurry",
+        "servings": 4,
+        "status": "INSUFFICIENT SOURCE DATA",
+        "unroundedGlycemicLoadPerServing": null,
+        "glycemicLoadPerServing": null,
+        "glycemicLoadRangePerServing": null,
+        "omittedAvailableCarbohydratePerServingG": 0.18814999999999998,
+        "omittedAvailableCarbohydrateUpperBoundPerServingG": 0,
+        "confidence": null,
+        "interpretation": "Ingredient-based estimate only; actual prepared-meal response varies. Positive contributions are included when source-supported. An unmatched individual ingredient portion may be omitted only below 1 g available carbohydrate per serving, and all such omissions must total less than the 2 g/serving editorial tolerance.",
+        "ingredients": [
+          {
+            "name": "broilerin paistileikettä",
+            "grams": 500,
+            "fineliRecordId": "afcd-F002806-release-3",
+            "availableCarbohydratePer100g": 0,
+            "availableCarbohydratePerServingG": 0,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": null,
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "issues": []
+          },
+          {
+            "name": "täysrasvaista kookosmaitoa",
+            "grams": 400,
+            "fineliRecordId": "fineli-684-release-20",
+            "availableCarbohydratePer100g": 4.8,
+            "availableCarbohydratePerServingG": 4.8,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": 35,
+            "giRecordId": "dairy-category-mean-gi-35",
+            "qualityTier": "SUPPLEMENTARY",
+            "matchKind": "CATEGORY_MEAN",
+            "confidence": "LOW",
+            "giContribution": 1.68,
+            "giContributionRange": {
+              "min": 1.68,
+              "max": 1.68
+            },
+            "giCandidates": [
+              {
+                "id": "dairy-category-mean-gi-35",
+                "gi": 35,
+                "preparation": "Unflavoured dairy category mean used for plain cream cheese",
+                "qualityTier": "SUPPLEMENTARY",
+                "preparationMatches": true,
+                "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
+              }
+            ],
+            "issues": []
+          },
+          {
+            "name": "thaimaalaista currytahnaa",
+            "grams": null,
+            "fineliRecordId": null,
+            "availableCarbohydratePer100g": null,
+            "availableCarbohydratePerServingG": null,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": null,
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "excludedReason": "No source-matched composition and preparation was resolved for “thaimaalaista currytahnaa”; it is not treated as zero.",
+            "issues": [
+              "No source-matched composition and preparation was resolved for “thaimaalaista currytahnaa”; it is not treated as zero."
+            ]
+          },
+          {
+            "name": "vihreitä papuja",
+            "grams": 150,
+            "fineliRecordId": "fineli-29022-release-20",
+            "availableCarbohydratePer100g": 5.058,
+            "availableCarbohydratePerServingG": 1.89675,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": 66,
+            "giRecordId": "vegetables-category-mean-gi-66",
+            "qualityTier": "SUPPLEMENTARY",
+            "matchKind": "CATEGORY_MEAN",
+            "confidence": "LOW",
+            "giContribution": 1.251855,
+            "giContributionRange": {
+              "min": 1.251855,
+              "max": 1.251855
+            },
+            "giCandidates": [
+              {
+                "id": "vegetables-category-mean-gi-66",
+                "gi": 66,
+                "preparation": "Broad category mean; preparation and individual vegetables vary",
+                "qualityTier": "SUPPLEMENTARY",
+                "preparationMatches": true,
+                "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
+              }
+            ],
+            "issues": []
+          },
+          {
+            "name": "punainen paprika",
+            "grams": 170,
+            "fineliRecordId": "fineli-386-release-20",
+            "availableCarbohydratePer100g": 4.5,
+            "availableCarbohydratePerServingG": 1.9125,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": null,
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "issues": [
+              "AJO 1.6B: generic Pepper GI 40 is reference-only. Species, colour, preparation and original human measurement are unverified; DOI 10.3390/nu12102989 Table 1 cannot support this ingredient. Missing GI is not zero."
+            ]
+          },
+          {
+            "name": "kalakastiketta",
+            "grams": 15,
+            "fineliRecordId": "fineli-8029-release-20",
+            "availableCarbohydratePer100g": 1.684,
+            "availableCarbohydratePerServingG": 0.06315,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": null,
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "issues": [
+              "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.063 g available carbohydrate): GI evidence is missing."
+            ]
+          },
+          {
+            "name": "limetti",
+            "grams": null,
+            "fineliRecordId": "afcd-F005199-release-3",
+            "availableCarbohydratePer100g": null,
+            "availableCarbohydratePerServingG": null,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": "fruit-category-mean-gi-51",
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": null,
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "excludedReason": "The recipe amount 1 kpl has no food-specific mass conversion for Lime, peeled, raw.",
+            "issues": [
+              "The recipe amount 1 kpl has no food-specific mass conversion for Lime, peeled, raw."
+            ]
+          },
+          {
+            "name": "thaibasilikaa",
+            "grams": null,
+            "fineliRecordId": null,
+            "availableCarbohydratePer100g": null,
+            "availableCarbohydratePerServingG": 0.125,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": "LOW",
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "excludedReason": "Small culinary-use ingredient omitted under the documented <1 g available-carbohydrate/serving convention.",
+            "issues": [
+              "Individual sub-1 g contribution counted toward cumulative 2 g/serving editorial tolerance: Conservative available-carbohydrate bound 0.5 g per recipe; below 1 g per serving."
+            ]
+          },
+          {
+            "name": "kookosöljyä",
+            "grams": null,
+            "fineliRecordId": null,
+            "availableCarbohydratePer100g": null,
+            "availableCarbohydratePerServingG": 0,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": "LOW",
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "excludedReason": "Pure edible oil contributes no available carbohydrate.",
+            "issues": [
+              "Source-documented zero available carbohydrate: Pure edible oil has zero available carbohydrate."
+            ]
+          }
+        ],
+        "blockers": [
+          "kookos-lime-kanacurry: thaimaalaista currytahnaa: No source-matched composition and preparation was resolved for “thaimaalaista currytahnaa”; it is not treated as zero.",
+          "kookos-lime-kanacurry: punainen paprika: AJO 1.6B: generic Pepper GI 40 is reference-only. Species, colour, preparation and original human measurement are unverified; DOI 10.3390/nu12102989 Table 1 cannot support this ingredient. Missing GI is not zero.",
+          "kookos-lime-kanacurry: limetti: The recipe amount 1 kpl has no food-specific mass conversion for Lime, peeled, raw."
+        ]
+      },
+      "newResultSha256": "ccb8e4cb3c23dfdee67128ce984a8adcd61fc6d5ed8c252ffaee18092441eee9",
+      "newCalculationInputHash": "0e8e194ef0287297ab0a3d1f2e1cf04f435dcb4cb6d5cc8b8c1bed7cefc55bc7",
+      "newCalculationEvidenceHash": "c6466bd99a09ed02757885aa6a9ade0252ec550c1f3de2a942bb5a5a2b94c5e5",
+      "oldCalculationInputHash": "3a8400bcc7e293df12f4fa49a7ec77338ca9440e594fd7ff2e6b62dd11cd7167",
+      "oldCalculationEvidenceHash": "239ec9b904284f8cf882b3ad6700cb84a9d5dfdc7ef67701fb7631852ba8c896"
+    },
+    {
+      "recipeId": "sate-ayam",
+      "oldInput": {
+        "recipeId": "sate-ayam",
+        "servings": 4,
+        "ingredients": [
+          {
+            "name": "broilerin reisilihaa",
+            "grams": 700,
+            "fineliRecordId": "afcd-F002806-release-3",
+            "giRecordId": null,
+            "massEvidence": "Recipe-listed 700 g, mapped to Chicken, thigh, lean flesh, raw (raw chicken meat)."
+          },
+          {
+            "name": "kecap manis -kastiketta",
+            "grams": null,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "No source-matched composition and preparation was resolved for “kecap manis -kastiketta”; it is not treated as zero.",
+            "massEvidence": "Recipe-listed 2 rkl kecap manis -kastiketta."
+          },
+          {
+            "name": "limettimehua",
+            "grams": null,
+            "fineliRecordId": "afcd-F004729-release-3",
+            "giRecordId": null,
+            "excludedReason": "The recipe amount 2 rkl has no food-specific mass conversion for Juice, lime.",
+            "massEvidence": "Mapped food state: lime juice; mass conversion unavailable."
+          },
+          {
+            "name": "valkosipulinkynttä",
+            "grams": 7,
+            "fineliRecordId": "fineli-393-release-20",
+            "giRecordId": null,
+            "massEvidence": "Recipe-listed 7 g, mapped to VALKOSIPULI (raw garlic)."
+          },
+          {
+            "name": "jauhettua korianteria",
+            "grams": null,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Small culinary-use ingredient omitted under the documented <1 g available-carbohydrate/serving convention.",
+            "estimatedAvailableCarbohydratePerServingG": 0.125,
+            "negligibleAssumption": "Conservative available-carbohydrate bound 0.5 g per recipe; below 1 g per serving.",
+            "massEvidence": "Recipe-listed small seasoning/herb amount; bounded estimate, not a weighed amount."
+          },
+          {
+            "name": "kurkumaa",
+            "grams": null,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "Small culinary-use ingredient omitted under the documented <1 g available-carbohydrate/serving convention.",
+            "estimatedAvailableCarbohydratePerServingG": 0.125,
+            "negligibleAssumption": "Conservative available-carbohydrate bound 0.5 g per recipe; below 1 g per serving.",
+            "massEvidence": "Recipe-listed small seasoning/herb amount; bounded estimate, not a weighed amount."
+          },
+          {
+            "name": "maapähkinävoita",
+            "grams": 150,
+            "fineliRecordId": "fineli-576-release-20",
+            "giRecordId": null,
+            "massEvidence": "Recipe-listed 150 g, mapped to VOI, SUOLATON (unsalted butter)."
+          },
+          {
+            "name": "kookosmaitoa",
+            "grams": 200,
+            "fineliRecordId": "fineli-684-release-20",
+            "giRecordId": "dairy-category-mean-gi-35",
+            "massEvidence": "Recipe-listed 200 g, mapped to MAITO, KEVYTMAITO, D-VITAMIINIA 1 UG (plain milk).",
+            "foodKey": "dairy",
+            "preparationKey": "unflavoured-dairy",
+            "giMatchEvidence": "Dairy products, category mean: Category mean, not a measured GI for the recipe's cream cheese.; category/analogue estimate, low confidence."
+          },
+          {
+            "name": "kecap manis -kastiketta",
+            "grams": null,
+            "fineliRecordId": null,
+            "giRecordId": null,
+            "excludedReason": "No source-matched composition and preparation was resolved for “kecap manis -kastiketta”; it is not treated as zero.",
+            "massEvidence": "Recipe-listed 1 rkl kecap manis -kastiketta."
+          },
+          {
+            "name": "limetti",
+            "grams": null,
+            "fineliRecordId": "afcd-F005199-release-3",
+            "giRecordId": "fruit-category-mean-gi-51",
+            "excludedReason": "The recipe amount 1 kpl has no food-specific mass conversion for Lime, peeled, raw.",
+            "massEvidence": "Mapped food state: peeled raw lime; mass conversion unavailable."
+          }
+        ]
+      },
+      "oldInputSha256": "e8f578814684501b74516aa592ea0672ab11683275f49df3d66882a8130e3c5e",
+      "newInputSha256": "09cb9b16caa67a2ca17c38fdfd5f6ea5566482ae51f8924a36617a2e84e0bfeb",
+      "oldResult": {
+        "recipeId": "sate-ayam",
+        "servings": 4,
+        "status": "INSUFFICIENT SOURCE DATA",
+        "unroundedGlycemicLoadPerServing": null,
+        "glycemicLoadPerServing": null,
+        "glycemicLoadRangePerServing": null,
+        "omittedAvailableCarbohydratePerServingG": 0.83525,
+        "omittedAvailableCarbohydrateUpperBoundPerServingG": 0,
+        "confidence": null,
+        "interpretation": "Ingredient-based estimate only; actual prepared-meal response varies. Positive contributions are included when source-supported. An unmatched individual ingredient portion may be omitted only below 1 g available carbohydrate per serving, and all such omissions must total less than the 2 g/serving editorial tolerance.",
+        "ingredients": [
+          {
+            "name": "broilerin reisilihaa",
+            "grams": 700,
+            "fineliRecordId": "afcd-F002806-release-3",
+            "availableCarbohydratePer100g": 0,
+            "availableCarbohydratePerServingG": 0,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": null,
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "issues": []
+          },
+          {
+            "name": "kecap manis -kastiketta",
+            "grams": null,
+            "fineliRecordId": null,
+            "availableCarbohydratePer100g": null,
+            "availableCarbohydratePerServingG": null,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": null,
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "excludedReason": "No source-matched composition and preparation was resolved for “kecap manis -kastiketta”; it is not treated as zero.",
+            "issues": [
+              "No source-matched composition and preparation was resolved for “kecap manis -kastiketta”; it is not treated as zero."
+            ]
+          },
+          {
+            "name": "limettimehua",
+            "grams": null,
+            "fineliRecordId": "afcd-F004729-release-3",
+            "availableCarbohydratePer100g": null,
+            "availableCarbohydratePerServingG": null,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": null,
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "excludedReason": "The recipe amount 2 rkl has no food-specific mass conversion for Juice, lime.",
+            "issues": [
+              "The recipe amount 2 rkl has no food-specific mass conversion for Juice, lime."
+            ]
+          },
+          {
+            "name": "valkosipulinkynttä",
+            "grams": 7,
+            "fineliRecordId": "fineli-393-release-20",
+            "availableCarbohydratePer100g": 16.3,
+            "availableCarbohydratePerServingG": 0.28525,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": null,
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "issues": [
+              "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.285 g available carbohydrate): GI evidence is missing."
+            ]
+          },
+          {
+            "name": "jauhettua korianteria",
+            "grams": null,
+            "fineliRecordId": null,
+            "availableCarbohydratePer100g": null,
+            "availableCarbohydratePerServingG": 0.125,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": "LOW",
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "excludedReason": "Small culinary-use ingredient omitted under the documented <1 g available-carbohydrate/serving convention.",
+            "issues": [
+              "Individual sub-1 g contribution counted toward cumulative 2 g/serving editorial tolerance: Conservative available-carbohydrate bound 0.5 g per recipe; below 1 g per serving."
+            ]
+          },
+          {
+            "name": "kurkumaa",
+            "grams": null,
+            "fineliRecordId": null,
+            "availableCarbohydratePer100g": null,
+            "availableCarbohydratePerServingG": 0.125,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": "LOW",
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "excludedReason": "Small culinary-use ingredient omitted under the documented <1 g available-carbohydrate/serving convention.",
+            "issues": [
+              "Individual sub-1 g contribution counted toward cumulative 2 g/serving editorial tolerance: Conservative available-carbohydrate bound 0.5 g per recipe; below 1 g per serving."
+            ]
+          },
+          {
+            "name": "maapähkinävoita",
+            "grams": 150,
+            "fineliRecordId": "fineli-576-release-20",
+            "availableCarbohydratePer100g": 0.8,
+            "availableCarbohydratePerServingG": 0.3,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": null,
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "issues": [
+              "Individual sub-1 g contribution omitted and counted toward cumulative 2 g/serving editorial tolerance (0.300 g available carbohydrate): GI evidence is missing."
+            ]
+          },
+          {
+            "name": "kookosmaitoa",
+            "grams": 200,
+            "fineliRecordId": "fineli-684-release-20",
+            "availableCarbohydratePer100g": 4.8,
+            "availableCarbohydratePerServingG": 2.4,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": 35,
+            "giRecordId": "dairy-category-mean-gi-35",
+            "qualityTier": "SUPPLEMENTARY",
+            "matchKind": "CATEGORY_MEAN",
+            "confidence": "LOW",
+            "giContribution": 0.84,
+            "giContributionRange": {
+              "min": 0.84,
+              "max": 0.84
+            },
+            "giCandidates": [
+              {
+                "id": "dairy-category-mean-gi-35",
+                "gi": 35,
+                "preparation": "Unflavoured dairy category mean used for plain cream cheese",
+                "qualityTier": "SUPPLEMENTARY",
+                "preparationMatches": true,
+                "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233"
+              }
+            ],
+            "issues": []
+          },
+          {
+            "name": "kecap manis -kastiketta",
+            "grams": null,
+            "fineliRecordId": null,
+            "availableCarbohydratePer100g": null,
+            "availableCarbohydratePerServingG": null,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": null,
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": null,
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "excludedReason": "No source-matched composition and preparation was resolved for “kecap manis -kastiketta”; it is not treated as zero.",
+            "issues": [
+              "No source-matched composition and preparation was resolved for “kecap manis -kastiketta”; it is not treated as zero."
+            ]
+          },
+          {
+            "name": "limetti",
+            "grams": null,
+            "fineliRecordId": "afcd-F005199-release-3",
+            "availableCarbohydratePer100g": null,
+            "availableCarbohydratePerServingG": null,
+            "availableCarbohydrateUpperBoundPerServingG": null,
+            "availableCarbohydratePerServingRangeG": null,
+            "gi": null,
+            "giRecordId": "fruit-category-mean-gi-51",
+            "qualityTier": null,
+            "matchKind": null,
+            "confidence": null,
+            "giContribution": null,
+            "giContributionRange": null,
+            "giCandidates": [],
+            "excludedReason": "The recipe amount 1 kpl has no food-specific mass conversion for Lime, peeled, raw.",
+            "issues": [
+              "The recipe amount 1 kpl has no food-specific mass conversion for Lime, peeled, raw."
+            ]
+          }
+        ],
+        "blockers": [
+          "sate-ayam: kecap manis -kastiketta: No source-matched composition and preparation was resolved for “kecap manis -kastiketta”; it is not treated as zero.",
+          "sate-ayam: limettimehua: The recipe amount 2 rkl has no food-specific mass conversion for Juice, lime.",
+          "sate-ayam: kecap manis -kastiketta: No source-matched composition and preparation was resolved for “kecap manis -kastiketta”; it is not treated as zero.",
+          "sate-ayam: limetti: The recipe amount 1 kpl has no food-specific mass conversion for Lime, peeled, raw.",
+          "sate-ayam: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
+        ]
+      },
+      "newResultSha256": "fca734aa79a7a47409fc0d1d444c24f9495805f64be99cacf854fef7fbab8659",
+      "newCalculationInputHash": "29278c3a4b3a54c1e37c06dfb53a09185d8d1ee565f6d63fa33ca456121e3259",
+      "newCalculationEvidenceHash": "1e965b771b35f5172de5819f20997061c9abae769771e803edfb1bf2503aebe6",
+      "oldCalculationInputHash": "ec904e136679a62223057087e9c4ccc0e8867e46f8f88f9c27294bbd59f65353",
+      "oldCalculationEvidenceHash": "17ae64541eb223a108b80158f4854454c5bd339e83c87c0603cc6b23e6616a01"
+    }
+  ],
+  "newInputMismatches": [
+    "kookos-lime-kanacurry",
+    "sate-ayam"
+  ],
+  "newEvidenceMismatches": [
+    "kookos-lime-kanacurry",
+    "sate-ayam"
+  ],
+  "approvedVariantsUnchanged": 87,
+  "otherCompleteResultsUnchanged": 324
+}

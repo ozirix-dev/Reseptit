@@ -17,6 +17,16 @@ Viisi curry-/kimchiversiota sitoi koko food-records.json-tiedoston tarkisteen, v
 
 Vanhojen julkaisuerien testit käyttävät omaa muuttumatonta lähdeversiotaan. Erillinen nykytilan regressio tarkistaa kaikki 326/87 tulokset, makrot sekä siirtymän negatiiviset kontrollit. Historiallisten odotusten sovitus ei vapauta nykytilan portteja.
 
+## Samanaikaisesti mainiin yhdistetty P1-lähdekorjaus
+
+Mainin `dab15fe907db7336320dcd79161fd61462b28034` sisältää ulkoisen korjauksen: kookos-lime-kanacurryn ja sate ayamin kookosmaitoa ei enää sidota lehmänmaitoon tai dairy-GI:hin. Molemmat alkuperäisohjeet pysyvät HOLDissa ja kokonais-GK puuttuu. Tämä PR ei muuta niiden tuotantosyötteitä eikä palauta vanhoja sidoksia.
+
+`p1-main-transition.json` säilyttää vain näiden kahden tapauksen vanhat täydet syöte-/tulosobjektit sekä tarkistetun uuden profiilin tarkisteet. Testi tarkistaa HEADin Git-esi-isyyden: integraatiossa, jossa mainin korjaus on mukana, vaaditaan täsmälleen uusi lähdeprofiili ja kaksi uutta täyttä tulostarkistetta. Vanhan lehmänmaitosidoksen palautus hylätään. Korjausta edeltävän työhaaran paikallinen testi vaatii vanhan profiilin, joten paikallista tulosta ei esitetä uuden mainin integraatiotestinä.
+
+Integraation vertailu sallii ainoastaan kaksi edellä rajattua ulkoista HOLD-tulosmuutosta ja kaksi #182:n kenttäkohtaista poikkeamaa; muut 322 täydellistä tulosobjektia, kaikki 87 hyväksyttyä versiota ja 326 makropakettia pysyvät alkuperäisvertailussa. Kaksi nykyistä input/evidence-sidospoikkeamaa kirjataan täsmällisesti; kuitteja ei päivitetä eikä poikkeamia nimetä hyväksynnäksi. Vanhojen julkaisutestien muuttumaton näkymä palauttaa vain nämä kaksi HOLD-tapausta historiallista vertailua varten. Riippumaton nykytilan testi estää näkymää peittämästä palautusta tai muuta muutosta.
+
+Mainin syöte luettiin Git-objektista erilliseen scratchiin ja toistettiin readFile-sovittimella virallisessa laskentaputkessa. Vain nämä kaksi täyttä tulosta muuttuivat, molemmat jäivät ilman numeroa ja kaikki 87 versiota säilyivät. Tuotantosyötetiedostoa ei kirjoitettu eikä haaraa synkronoitu mainiin. Varsinainen integraatiovarmistus kuuluu PR:n CI-mergekommitille.
+
 ## Ehdokkaiden toistaminen
 
 `candidates.json` sisältää 30 täsmäpatchia ja jokaisen alkuperäisen ehdotuksen käsittelypäätöksen. `site/scripts/legacy-gk-corrections.ts` tarkistaa yhdeksän asianomaisen reseptiobjektin SHA:t sekä arvioitujen lähdetietueiden ja katselmointitekstin tarkisteet ja muodostaa ehdokkaat muistissa. Se ei kirjoita syötteitä, julkaisutietoja, sidoksia eikä hyväksyntöjä. Asianomaisen reseptin muuttuminen estää vanhojen patchien käyttämisen; muiden reseptien nopeusajot eivät pysähdy tämän sidoksen vuoksi. Koko syötetiedoston vanha LF-SHA säilyy vain historiaviitteenä.
