@@ -11310,5 +11310,1363 @@
       "274": "SUPERSEDED",
       "278": "REVIEW"
     }
+  },
+  "normalizationFollowUp": {
+    "beforeOpen": 29,
+    "beforeIncludesConcurrentPr": 279,
+    "closed": [
+      {
+        "number": 168,
+        "successor": 280,
+        "sourceHead": "0eacc8f0ba448347b0f39c2d4e76f887c9942934",
+        "commentUrl": "https://github.com/ozirix-dev/Reseptit/pull/168#issuecomment-6651703204",
+        "state": "CLOSED",
+        "closedAt": "2026-11-05T06:48:52Z",
+        "commentCreatedAt": "2026-11-05T06:48:48Z",
+        "commentBeforeClosure": true,
+        "branch": "codex/gk80-night2-operation140"
+      },
+      {
+        "number": 196,
+        "sourceHead": "c7342840af0809355019577bf579a5f2921f7d6c",
+        "successor": 116,
+        "commentUrl": "https://github.com/ozirix-dev/Reseptit/pull/196#issuecomment-6651799410",
+        "state": "CLOSED",
+        "closedAt": "2026-11-05T06:55:10Z",
+        "commentCreatedAt": "2026-11-05T06:55:06Z",
+        "commentBeforeClosure": true,
+        "branch": "dependabot/npm_and_yarn/site/types/node-26.6.6"
+      },
+      {
+        "number": 197,
+        "sourceHead": "635b4b8bc4fd49e8aa0c876052fcfbb160cdc35e",
+        "successor": 116,
+        "commentUrl": "https://github.com/ozirix-dev/Reseptit/pull/197#issuecomment-6651805484",
+        "state": "CLOSED",
+        "closedAt": "2026-11-05T06:55:33Z",
+        "commentCreatedAt": "2026-11-05T06:55:29Z",
+        "commentBeforeClosure": true,
+        "branch": "dependabot/npm_and_yarn/site/react-router-dom-7.18.5"
+      },
+      {
+        "number": 198,
+        "sourceHead": "0bcbb39ed1a05fac6bdb717427254fa3d244bd64",
+        "successor": 116,
+        "commentUrl": "https://github.com/ozirix-dev/Reseptit/pull/198#issuecomment-6651807756",
+        "state": "CLOSED",
+        "closedAt": "2026-11-05T06:55:40Z",
+        "commentCreatedAt": "2026-11-05T06:55:37Z",
+        "commentBeforeClosure": true,
+        "branch": "dependabot/npm_and_yarn/site/marked-18.1.2"
+      }
+    ],
+    "createdDraft": 280,
+    "updatedDraft": 116,
+    "afterOpen": 26,
+    "chatInitialOpen": 60,
+    "chatTotalClosed": 38,
+    "chatCreatedDrafts": [
+      277,
+      278,
+      280
+    ],
+    "concurrentCreatedPr": 279,
+    "mainSha": "0fa20528ffe0ca075c9e0fb54c2b388cd7d959fe",
+    "normalizationProof": {
+      "status": "PASS",
+      "mainSha": "0fa20528ffe0ca075c9e0fb54c2b388cd7d959fe",
+      "sourcePr": 168,
+      "sourceHeadSha": "0eacc8f0ba448347b0f39c2d4e76f887c9942934",
+      "sourceResearch": "https://github.com/ozirix-dev/Reseptit/tree/0eacc8f0ba448347b0f39c2d4e76f887c9942934/docs/research/gk80-night2-operation140",
+      "comparedEqual": {
+        "calculationInputs": "5c584d6663b42800f0c8e83919fa8356580b3a1aaebbd95eac4661b27eb6a487",
+        "calculationInputHashes": "047a4ebb58ab8665040cf7ef409b41bd6d0467fcbd919a742134da511762641d",
+        "calculationEvidenceHashes": "bd681b09232cb34fae26450df6bfd2c89cc8719cadc51c7294482c6b275db580",
+        "results": "1b9277adcb81b4603ea3486553e3ff6de93f23765b7d56e856b708c4c6f1ebda",
+        "gkOnlyVariants": "276a2739ff5dfaba305d14634f3685cf2229374fe88854e4de0576b186d775ab",
+        "versionCoverage": "99f09aa80e41b1c2fe7211224b4b72b5b78cf12444c2c1c70d31288533fac7a6",
+        "coverageViews": "60e1caa8979f79018e5b3791a467b7a8cce45097c616f72689caa2201801a440",
+        "summary": "6846233b96c8e38a5c3d43a53a74690779368f73a1e4c550105ce8d57edfcbae",
+        "recipeBindingMismatches": "57c7766f94fe7a2ede044134d6e31cd6eb715352603cfeba6359f3483a6dc303",
+        "calculationInputMismatches": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "calculationEvidenceMismatches": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "giSourcePolicy": "1df642ab2441e6df2de8423933b050973bf9719e36cf43fcff9365e09aed7b47",
+        "giSourceCatalog": "e3ec3fceb132e321f70c5171654342ae595bd2fd6a959a5bfcf4a06719164e7e",
+        "fineliEvidence": "4117a1bcebe24da3e0beac4d80f45c0337afba29a3651de36c23db2966f2abe1",
+        "additionalCarbohydrateEvidence": "3f79030560418ae2c29bace67321f5dc8bf3999d2bb3903a39c20d572eb60e62",
+        "massEvidence": "e9eef6ae53f21cf40893f5db727268621b1969b306634bfe00c894372743a615",
+        "recipeBindingBaseline": "c4ca826407f6a16aeb5947a2f7ae47212bb97e3a72ce426631fca10fb981e06c"
+      },
+      "nutritionComparedEqual": {
+        "sources": "a4e987d17584557e2fbed011cddf66dc5185338bc3ef33d4226f86c32b7364dd",
+        "counts": "1deff0a65c25a7695f1da29102c7ff6d0d8580bb3241a8cc3b0599d7f053796f",
+        "dietClasses": "2d22af1396772fbd31d3743347cd2b522275385e43317d21e2af0cfc2a6de34c",
+        "inventory": "c969804128cbc5de369cd93dbc083d1a480902c35a97bb395097f01532d9bfa5",
+        "pilots": "29fb534fe58776fe5c528167ccf7da27d9b89a30ccd802fcf4dadbfa58cb7f00"
+      },
+      "recipeResultsIdentical": 326,
+      "gkOnlyVariantsIdentical": 87,
+      "macroInventoryIdentical": 326,
+      "approvalOrSourceFilesChanged": false,
+      "reviewedModelLfSha256": "05a3edc945b444edd4c99aff90be6a17129559ee7779f8f5e372bf46877195d3",
+      "sourceInputHashChanges": {
+        "site/package.json": {
+          "before": "5c99e024c43fe6954ed6092e24d67416f5e602c70977e940566f9dd654c74616",
+          "after": "0e6dda5e864e7575384b7d0df2087ed359ffffefe5aa7c9f3d9487d054d5adfe"
+        },
+        "site/scripts/reviewed-nutrition-model-binding.ts": {
+          "before": null,
+          "after": "8028f98fa5a59a72a912dabb232ca6535e3bdb22f926af250cb4f30e3d9d2f7b"
+        },
+        "site/scripts/gk-next-four.ts": {
+          "before": "1ee5526e0b2df173eae22473875b4dd0c3cae75f54113056bb7cc30026648aaa",
+          "after": "04d340124d4046aa0a3575d575979f6f6f33923417fb3c24515c915df2d6f46f"
+        },
+        "site/scripts/gk-next-seven.ts": {
+          "before": "c5b4f860abe5f2426590d11df68129d3e32fca504a45b35e0ce7de969da1a883",
+          "after": "c61da90ec0e6aa41e37b98d175f6dfd26f2813bfc3ebb20110d539240292d799"
+        },
+        "site/scripts/nutrition-model.ts": {
+          "before": "6667190a6604523fe083d6d766cfbbdb7c2ce75366194f3036ce711a8218a7ce",
+          "after": "05a3edc945b444edd4c99aff90be6a17129559ee7779f8f5e372bf46877195d3"
+        },
+        "site/scripts/gk-tehoajo-era1.ts": {
+          "before": "9a262be66c7a2b98ccc6b215f1679e43a824259636dc4b43f71081435e7f1375",
+          "after": "312f0eb086c05f27d1cb9ae209111581dab2803ebd6e83d8191c10fc43036799"
+        }
+      },
+      "authority": {
+        "merge": false,
+        "deploy": false,
+        "newContentOrPublicationApproval": false
+      },
+      "checks": [
+        "20 focused normalization and all-three-loader binding tests: PASS",
+        "strict nutrition audit: PASS",
+        "full glycemic-load audit: PASS",
+        "TypeScript, Vite and prerender: PASS, 760 routes",
+        "317 unit tests, serial local execution: PASS",
+        "31 static and SEO tests: PASS"
+      ],
+      "digestEncoding": "SHA-256 of Python JSON, UTF-8, ensure_ascii=False, sort_keys=True, separators=(comma,colon)",
+      "originalResearchFilesRetained": [
+        "docs/research/gk80-night2-operation140/README.md",
+        "docs/research/gk80-night2-operation140/artifact-manifest.json",
+        "docs/research/gk80-night2-operation140/compare-normalization.mts",
+        "docs/research/gk80-night2-operation140/deep-review-six.json",
+        "docs/research/gk80-night2-operation140/github-preflight.json",
+        "docs/research/gk80-night2-operation140/input-manifest.json",
+        "docs/research/gk80-night2-operation140/kaya-decision.json",
+        "docs/research/gk80-night2-operation140/local-verification.json",
+        "docs/research/gk80-night2-operation140/main133-baseline.json",
+        "docs/research/gk80-night2-operation140/method-option.md",
+        "docs/research/gk80-night2-operation140/normalization-proof.json",
+        "docs/research/gk80-night2-operation140/partition.json",
+        "docs/research/gk80-night2-operation140/production-start.json",
+        "docs/research/gk80-night2-operation140/scope-and-resources.json",
+        "docs/research/gk80-night2-operation140/screening86.json",
+        "docs/research/gk80-night2-operation140/shared-source-decisions.json",
+        "docs/research/gk80-night2-operation140/shared-source-matrix193.json",
+        "docs/research/gk80-night2-operation140/verify.py"
+      ]
+    },
+    "dependencyValidation": {
+      "mainSha": "0fa20528ffe0ca075c9e0fb54c2b388cd7d959fe",
+      "dependencyHead": "607b23be5e1eaac03c0cc1705803d9e494872581",
+      "normalizationHead": "dc3aa002348cbdd579cf7a7b12b35e61de7c8bc6",
+      "localScope": "Current-main normalization worktree, temporary dependency-only overlay; original tracked files restored with guard",
+      "status": "PASS"
+    },
+    "dependencyMergePreviewTree": "12241f61299c26350772f75dcc222417151d87a3",
+    "ci": {
+      "280": {
+        "headSha": "dc3aa002348cbdd579cf7a7b12b35e61de7c8bc6",
+        "runId": 41982427071,
+        "url": "https://github.com/ozirix-dev/Reseptit/actions/runs/41982427071",
+        "build": "SUCCESS",
+        "deploy": "SKIPPED"
+      },
+      "116": {
+        "headSha": "607b23be5e1eaac03c0cc1705803d9e494872581",
+        "runId": 41982901747,
+        "url": "https://github.com/ozirix-dev/Reseptit/actions/runs/41982901747",
+        "build": "SUCCESS",
+        "deploy": "SKIPPED"
+      }
+    },
+    "all60OriginalBranchesPreserved": true,
+    "advancedOriginalBranches": [
+      {
+        "number": 223,
+        "before": "34d757c4ac7799db4d2ff91d3bf615406eb88fec",
+        "after": "b30c3f486574dc202a207f09ab004248cf4d4c39"
+      },
+      {
+        "number": 116,
+        "before": "61d19c6148a16bf8cf390f25ac213df1c6d831e5",
+        "after": "607b23be5e1eaac03c0cc1705803d9e494872581"
+      }
+    ],
+    "openPullRequests": [
+      {
+        "files": [
+          "docs/reports/pr168-normalization-regression.json",
+          "site/package.json",
+          "site/scripts/gk-next-four.ts",
+          "site/scripts/gk-next-seven.ts",
+          "site/scripts/gk-tehoajo-era1.ts",
+          "site/scripts/nutrition-model.ts",
+          "site/scripts/reviewed-nutrition-model-binding.ts",
+          "site/tests/nutrition-model-binding.test.ts",
+          "site/tests/nutrition-model.test.ts"
+        ],
+        "headRefName": "codex/pr168-normalization-fix",
+        "headRefOid": "dc3aa002348cbdd579cf7a7b12b35e61de7c8bc6",
+        "isDraft": true,
+        "latestReviews": [],
+        "mergeStateStatus": "CLEAN",
+        "mergeable": "MERGEABLE",
+        "number": 280,
+        "reviewDecision": "",
+        "statusCheckRollup": [
+          {
+            "__typename": "CheckRun",
+            "completedAt": "2026-11-05T06:47:44Z",
+            "conclusion": "SUCCESS",
+            "detailsUrl": "https://github.com/ozirix-dev/Reseptit/actions/runs/41982427071/job/127095360069",
+            "name": "build",
+            "startedAt": "2026-11-05T06:44:19Z",
+            "status": "COMPLETED",
+            "workflowName": "Recipe site"
+          },
+          {
+            "__typename": "CheckRun",
+            "completedAt": "2026-11-05T06:47:44Z",
+            "conclusion": "SKIPPED",
+            "detailsUrl": "https://github.com/ozirix-dev/Reseptit/actions/runs/41982427071/job/127096596142",
+            "name": "deploy",
+            "startedAt": "2026-11-05T06:47:45Z",
+            "status": "COMPLETED",
+            "workflowName": "Recipe site"
+          }
+        ],
+        "title": "fix(nutrition): korjaa #168 US-normalisointi säilyttäen hyväksytyt GK-tulokset",
+        "url": "https://github.com/ozirix-dev/Reseptit/pull/280",
+        "classification": "KEEP_ACTIVE",
+        "deferred": false,
+        "reserve": false,
+        "historyReference": false
+      },
+      {
+        "files": [
+          "docs/nutrition/gk100-single-run-orchestration-plan.md"
+        ],
+        "headRefName": "codex/gk100-calc-approval-single-run-plan-20261105",
+        "headRefOid": "1460486677bf6599134c5ea1b78db606e18978cf",
+        "isDraft": true,
+        "latestReviews": [],
+        "mergeStateStatus": "CLEAN",
+        "mergeable": "MERGEABLE",
+        "number": 279,
+        "reviewDecision": "",
+        "statusCheckRollup": [],
+        "title": "docs(gk100): yhden ajon GK-laskenta + Approval Factory (toteutus myöhemmin)",
+        "url": "https://github.com/ozirix-dev/Reseptit/pull/279",
+        "classification": "REVIEW",
+        "deferred": false,
+        "reserve": false,
+        "historyReference": false
+      },
+      {
+        "files": [
+          "kaannokset/en/aamupalat/indialainen-poha-maapahkinoilla.md",
+          "kaannokset/en/aamupalat/kaakao-kookos-chia.md",
+          "kaannokset/en/aamupalat/kiinalainen-riisipuuro-kananmunalla.md",
+          "kaannokset/en/aamupalat/korealainen-yachaejuk-kasvisjuk.md",
+          "kaannokset/en/aamupalat/kurkku-oliivi-aamiaiskulho.md",
+          "kaannokset/en/aamupalat/lahi-ita-kikhernejauho-yrttilettu.md",
+          "kaannokset/en/aamupalat/malesialainen-congee-inkivaarilla.md",
+          "kaannokset/en/aamupalat/marjainen-chiavanukas.md",
+          "kaannokset/en/aamupalat/munakasrulla-pinaatti-tuorejuustolla.md",
+          "kaannokset/en/aamupalat/paahdettu-aamiaismunakoiso.md",
+          "kaannokset/en/aamupalat/pohjoisafrikkalainen-kuskus-aamiaiskulho.md",
+          "kaannokset/en/aamupalat/pohjoisafrikkalainen-taatelipuuro-appelsiinilla.md",
+          "kaannokset/en/aamupalat/raejuusto-pesto-kasviskulho.md",
+          "kaannokset/en/aamupalat/savulohi-avokadokulho.md",
+          "kaannokset/en/aamupalat/siemengranola-jogurtilla.md",
+          "kaannokset/en/aamupalat/thai-jok-kanalla.md",
+          "kaannokset/en/aamupalat/thai-porsasjok.md",
+          "kaannokset/en/alkuruoat/goi-cuon.md",
+          "kaannokset/en/jalkiruoat/vhh-juustokakku.md",
+          "kaannokset/en/jalkiruoat/vhh-mansikkakakku.md",
+          "kaannokset/en/jalkiruoat/vhh-mokkapalat.md",
+          "kaannokset/en/jalkiruoat/vhh-omenapiirakka.md",
+          "kaannokset/en/jalkiruoat/vhh-raparperipiirakka.md",
+          "kaannokset/en/paaruoat/hernekeitto-savupotkalla.md",
+          "kaannokset/en/paaruoat/hunaja-sinappikana-kaalilla.md",
+          "kaannokset/en/paaruoat/japanilainen-curry-tofulla.md",
+          "kaannokset/en/paaruoat/kana-parmesaanipannu-parsakaali.md",
+          "kaannokset/en/paaruoat/kanaviillokki-kukkakaalilla.md",
+          "kaannokset/en/paaruoat/kermainen-kanasienipannu.md",
+          "kaannokset/en/paaruoat/nasi-lemak.md",
+          "kaannokset/en/paaruoat/tacokulho-nauta-avokado.md",
+          "kaannokset/en/paaruoat/uunimakkara-sipulipedilla.md",
+          "kaannokset/sv/aamupalat/indialainen-poha-maapahkinoilla.md",
+          "kaannokset/sv/aamupalat/kaakao-kookos-chia.md",
+          "kaannokset/sv/aamupalat/kiinalainen-riisipuuro-kananmunalla.md",
+          "kaannokset/sv/aamupalat/korealainen-yachaejuk-kasvisjuk.md",
+          "kaannokset/sv/aamupalat/kurkku-oliivi-aamiaiskulho.md",
+          "kaannokset/sv/aamupalat/lahi-ita-kikhernejauho-yrttilettu.md",
+          "kaannokset/sv/aamupalat/malesialainen-congee-inkivaarilla.md",
+          "kaannokset/sv/aamupalat/marjainen-chiavanukas.md",
+          "kaannokset/sv/aamupalat/munakasrulla-pinaatti-tuorejuustolla.md",
+          "kaannokset/sv/aamupalat/paahdettu-aamiaismunakoiso.md",
+          "kaannokset/sv/aamupalat/pohjoisafrikkalainen-kuskus-aamiaiskulho.md",
+          "kaannokset/sv/aamupalat/pohjoisafrikkalainen-taatelipuuro-appelsiinilla.md",
+          "kaannokset/sv/aamupalat/raejuusto-pesto-kasviskulho.md",
+          "kaannokset/sv/aamupalat/savulohi-avokadokulho.md",
+          "kaannokset/sv/aamupalat/siemengranola-jogurtilla.md",
+          "kaannokset/sv/aamupalat/thai-jok-kanalla.md",
+          "kaannokset/sv/aamupalat/thai-porsasjok.md",
+          "kaannokset/sv/alkuruoat/goi-cuon.md",
+          "kaannokset/sv/jalkiruoat/vhh-juustokakku.md",
+          "kaannokset/sv/jalkiruoat/vhh-mansikkakakku.md",
+          "kaannokset/sv/jalkiruoat/vhh-mokkapalat.md",
+          "kaannokset/sv/jalkiruoat/vhh-omenapiirakka.md",
+          "kaannokset/sv/jalkiruoat/vhh-raparperipiirakka.md",
+          "kaannokset/sv/paaruoat/hernekeitto-savupotkalla.md",
+          "kaannokset/sv/paaruoat/hunaja-sinappikana-kaalilla.md",
+          "kaannokset/sv/paaruoat/japanilainen-curry-tofulla.md",
+          "kaannokset/sv/paaruoat/kana-parmesaanipannu-parsakaali.md",
+          "kaannokset/sv/paaruoat/kanaviillokki-kukkakaalilla.md",
+          "kaannokset/sv/paaruoat/kermainen-kanasienipannu.md",
+          "kaannokset/sv/paaruoat/nasi-lemak.md",
+          "kaannokset/sv/paaruoat/tacokulho-nauta-avokado.md",
+          "kaannokset/sv/paaruoat/uunimakkara-sipulipedilla.md",
+          "kaannokset/th/aamupalat/indialainen-poha-maapahkinoilla.md",
+          "kaannokset/th/aamupalat/kaakao-kookos-chia.md",
+          "kaannokset/th/aamupalat/kiinalainen-riisipuuro-kananmunalla.md",
+          "kaannokset/th/aamupalat/korealainen-yachaejuk-kasvisjuk.md",
+          "kaannokset/th/aamupalat/kurkku-oliivi-aamiaiskulho.md",
+          "kaannokset/th/aamupalat/lahi-ita-kikhernejauho-yrttilettu.md",
+          "kaannokset/th/aamupalat/malesialainen-congee-inkivaarilla.md",
+          "kaannokset/th/aamupalat/marjainen-chiavanukas.md",
+          "kaannokset/th/aamupalat/munakasrulla-pinaatti-tuorejuustolla.md",
+          "kaannokset/th/aamupalat/paahdettu-aamiaismunakoiso.md",
+          "kaannokset/th/aamupalat/pohjoisafrikkalainen-kuskus-aamiaiskulho.md",
+          "kaannokset/th/aamupalat/pohjoisafrikkalainen-taatelipuuro-appelsiinilla.md",
+          "kaannokset/th/aamupalat/raejuusto-pesto-kasviskulho.md",
+          "kaannokset/th/aamupalat/savulohi-avokadokulho.md",
+          "kaannokset/th/aamupalat/siemengranola-jogurtilla.md",
+          "kaannokset/th/aamupalat/thai-jok-kanalla.md",
+          "kaannokset/th/aamupalat/thai-porsasjok.md",
+          "kaannokset/th/alkuruoat/goi-cuon.md",
+          "kaannokset/th/jalkiruoat/vhh-juustokakku.md",
+          "kaannokset/th/jalkiruoat/vhh-mansikkakakku.md",
+          "kaannokset/th/jalkiruoat/vhh-mokkapalat.md",
+          "kaannokset/th/jalkiruoat/vhh-omenapiirakka.md",
+          "kaannokset/th/jalkiruoat/vhh-raparperipiirakka.md",
+          "kaannokset/th/paaruoat/hernekeitto-savupotkalla.md",
+          "kaannokset/th/paaruoat/hunaja-sinappikana-kaalilla.md",
+          "kaannokset/th/paaruoat/japanilainen-curry-tofulla.md",
+          "kaannokset/th/paaruoat/kana-parmesaanipannu-parsakaali.md",
+          "kaannokset/th/paaruoat/kanaviillokki-kukkakaalilla.md",
+          "kaannokset/th/paaruoat/kermainen-kanasienipannu.md",
+          "kaannokset/th/paaruoat/nasi-lemak.md",
+          "kaannokset/th/paaruoat/tacokulho-nauta-avokado.md",
+          "kaannokset/th/paaruoat/uunimakkara-sipulipedilla.md",
+          "meta/kaannokset/codex-review-evidence.json",
+          "reseptit/aamupalat/indialainen-poha-maapahkinoilla.md",
+          "reseptit/aamupalat/kaakao-kookos-chia.md",
+          "reseptit/aamupalat/kiinalainen-riisipuuro-kananmunalla.md"
+        ],
+        "headRefName": "codex/pr-cleanup-translation-integration",
+        "headRefOid": "4ff37d68cc8f11eaf7051241c85fedbfc1e39c8d",
+        "isDraft": true,
+        "latestReviews": [],
+        "mergeStateStatus": "CLEAN",
+        "mergeable": "MERGEABLE",
+        "number": 278,
+        "reviewDecision": "",
+        "statusCheckRollup": [
+          {
+            "__typename": "CheckRun",
+            "completedAt": "2026-11-05T05:48:29Z",
+            "conclusion": "SUCCESS",
+            "detailsUrl": "https://github.com/ozirix-dev/Reseptit/actions/runs/41975750838/job/127074074121",
+            "name": "build",
+            "startedAt": "2026-11-05T05:43:04Z",
+            "status": "COMPLETED",
+            "workflowName": "Recipe site"
+          },
+          {
+            "__typename": "CheckRun",
+            "completedAt": "2026-11-05T05:48:29Z",
+            "conclusion": "SKIPPED",
+            "detailsUrl": "https://github.com/ozirix-dev/Reseptit/actions/runs/41975750838/job/127075902924",
+            "name": "deploy",
+            "startedAt": "2026-11-05T05:48:29Z",
+            "status": "COMPLETED",
+            "workflowName": "Recipe site"
+          }
+        ],
+        "title": "Korjaa ja kokoa 96 käännöstä sekä GK-snapshot-portit",
+        "url": "https://github.com/ozirix-dev/Reseptit/pull/278",
+        "classification": "REVIEW",
+        "deferred": false,
+        "reserve": false,
+        "historyReference": false
+      },
+      {
+        "files": [
+          "docs/reports/pr-cleanup-v2-2026-11-05.json",
+          "docs/reports/pr-cleanup-v2-2026-11-05.md"
+        ],
+        "headRefName": "codex/pr-cleanup-v2-history",
+        "headRefOid": "3f56dea4ed415624dfba1f3a0871758aec6722b9",
+        "isDraft": true,
+        "latestReviews": [],
+        "mergeStateStatus": "CLEAN",
+        "mergeable": "MERGEABLE",
+        "number": 277,
+        "reviewDecision": "",
+        "statusCheckRollup": [],
+        "title": "docs: PR cleanup V2 – luokittelu ja tutkimushistorian viitteet",
+        "url": "https://github.com/ozirix-dev/Reseptit/pull/277",
+        "classification": "REVIEW",
+        "deferred": false,
+        "reserve": false,
+        "historyReference": true
+      },
+      {
+        "files": [
+          "docs/nutrition/gk100-banh-xeo-cooked-sprouts-release-candidate.json",
+          "docs/nutrition/gk100-banh-xeo-cooked-sprouts-review.md",
+          "docs/nutrition/gk100-evidence-recovery-v2-batch.json",
+          "docs/nutrition/gk100-evidence-recovery-v2-inventory.jsonl",
+          "docs/nutrition/gk100-evidence-recovery-v2.md",
+          "site/scripts/gk100-evidence-recovery.py"
+        ],
+        "headRefName": "codex/gk100-evidence-recovery-smart-review-v2",
+        "headRefOid": "fa411bf1cb620dfd7db97730cfeb5b6fb5ca738d",
+        "isDraft": false,
+        "latestReviews": [],
+        "mergeStateStatus": "CLEAN",
+        "mergeable": "MERGEABLE",
+        "number": 255,
+        "reviewDecision": "",
+        "statusCheckRollup": [
+          {
+            "__typename": "CheckRun",
+            "completedAt": "2026-11-04T16:06:17Z",
+            "conclusion": "SUCCESS",
+            "detailsUrl": "https://github.com/ozirix-dev/Reseptit/actions/runs/41863401842/job/126691161188",
+            "name": "build",
+            "startedAt": "2026-11-04T16:01:06Z",
+            "status": "COMPLETED",
+            "workflowName": "Recipe site"
+          },
+          {
+            "__typename": "CheckRun",
+            "completedAt": "2026-11-04T16:06:17Z",
+            "conclusion": "SKIPPED",
+            "detailsUrl": "https://github.com/ozirix-dev/Reseptit/actions/runs/41863401842/job/126693791195",
+            "name": "deploy",
+            "startedAt": "2026-11-04T16:06:17Z",
+            "status": "COMPLETED",
+            "workflowName": "Recipe site"
+          }
+        ],
+        "title": "GK100 Evidence Recovery & Smart Review V2",
+        "url": "https://github.com/ozirix-dev/Reseptit/pull/255",
+        "classification": "KEEP_ACTIVE",
+        "deferred": false,
+        "reserve": false,
+        "historyReference": false
+      },
+      {
+        "files": [
+          "docs/recipavo-cloudflare-release-plan.md"
+        ],
+        "headRefName": "chatgpt/recipavo-cloudflare-launch-plan-20261104",
+        "headRefOid": "f493274b158f0611df20a1b0a0845c3e03119c15",
+        "isDraft": true,
+        "latestReviews": [],
+        "mergeStateStatus": "CLEAN",
+        "mergeable": "MERGEABLE",
+        "number": 243,
+        "reviewDecision": "",
+        "statusCheckRollup": [
+          {
+            "__typename": "CheckRun",
+            "completedAt": "2026-11-04T04:16:53Z",
+            "conclusion": "SUCCESS",
+            "detailsUrl": "https://github.com/ozirix-dev/Reseptit/actions/runs/41772223546/job/126384305855",
+            "name": "build",
+            "startedAt": "2026-11-04T04:16:44Z",
+            "status": "COMPLETED",
+            "workflowName": "Recipe site"
+          },
+          {
+            "__typename": "CheckRun",
+            "completedAt": "2026-11-04T04:16:54Z",
+            "conclusion": "SKIPPED",
+            "detailsUrl": "https://github.com/ozirix-dev/Reseptit/actions/runs/41772223546/job/126384372193",
+            "name": "deploy",
+            "startedAt": "2026-11-04T04:16:54Z",
+            "status": "COMPLETED",
+            "workflowName": "Recipe site"
+          }
+        ],
+        "title": "Recipavo V2: Cloudflare production, GitHub Pages staging and launch gates",
+        "url": "https://github.com/ozirix-dev/Reseptit/pull/243",
+        "classification": "REVIEW",
+        "deferred": false,
+        "reserve": false,
+        "historyReference": false
+      },
+      {
+        "files": [
+          "docs/nutrition/gi-knowledge-base-v1-plan.md"
+        ],
+        "headRefName": "chatgpt/gk100-gi-knowledge-base-plan-20261104",
+        "headRefOid": "f37ebe1b4599f0bdff2c71a76d3e3c1780548547",
+        "isDraft": true,
+        "latestReviews": [],
+        "mergeStateStatus": "CLEAN",
+        "mergeable": "MERGEABLE",
+        "number": 242,
+        "reviewDecision": "",
+        "statusCheckRollup": [
+          {
+            "__typename": "CheckRun",
+            "completedAt": "2026-11-04T03:42:47Z",
+            "conclusion": "SUCCESS",
+            "detailsUrl": "https://github.com/ozirix-dev/Reseptit/actions/runs/41768760363/job/126373258577",
+            "name": "build",
+            "startedAt": "2026-11-04T03:42:25Z",
+            "status": "COMPLETED",
+            "workflowName": "Recipe site"
+          },
+          {
+            "__typename": "CheckRun",
+            "completedAt": "2026-11-04T03:42:47Z",
+            "conclusion": "SKIPPED",
+            "detailsUrl": "https://github.com/ozirix-dev/Reseptit/actions/runs/41768760363/job/126373381070",
+            "name": "deploy",
+            "startedAt": "2026-11-04T03:42:47Z",
+            "status": "COMPLETED",
+            "workflowName": "Recipe site"
+          }
+        ],
+        "title": "GI Knowledge Base V1: curated GI evidence registry — plan",
+        "url": "https://github.com/ozirix-dev/Reseptit/pull/242",
+        "classification": "REVIEW",
+        "deferred": false,
+        "reserve": false,
+        "historyReference": false
+      },
+      {
+        "files": [
+          "docs/nutrition/gk100-new-recipe-pipeline-plan.md"
+        ],
+        "headRefName": "chatgpt/gk100-new-recipe-pipeline-plan-20261104",
+        "headRefOid": "8fd0800ed664f7f2c2c4a12b6f9b6914ef452dbc",
+        "isDraft": true,
+        "latestReviews": [],
+        "mergeStateStatus": "CLEAN",
+        "mergeable": "MERGEABLE",
+        "number": 241,
+        "reviewDecision": "",
+        "statusCheckRollup": [
+          {
+            "__typename": "CheckRun",
+            "completedAt": "2026-11-04T03:42:37Z",
+            "conclusion": "SUCCESS",
+            "detailsUrl": "https://github.com/ozirix-dev/Reseptit/actions/runs/41768755976/job/126373244783",
+            "name": "build",
+            "startedAt": "2026-11-04T03:42:22Z",
+            "status": "COMPLETED",
+            "workflowName": "Recipe site"
+          },
+          {
+            "__typename": "CheckRun",
+            "completedAt": "2026-11-04T03:42:37Z",
+            "conclusion": "SKIPPED",
+            "detailsUrl": "https://github.com/ozirix-dev/Reseptit/actions/runs/41768755976/job/126373328918",
+            "name": "deploy",
+            "startedAt": "2026-11-04T03:42:37Z",
+            "status": "COMPLETED",
+            "workflowName": "Recipe site"
+          }
+        ],
+        "title": "GK100: automatic GK assessment on new recipe creation — plan",
+        "url": "https://github.com/ozirix-dev/Reseptit/pull/241",
+        "classification": "REVIEW",
+        "deferred": false,
+        "reserve": false,
+        "historyReference": false
+      },
+      {
+        "files": [
+          ".github/workflows/pages.yml",
+          "AGENTS.md",
+          "docs/gk80-resource-economy.md",
+          "site/scripts/gk80-work-index.mjs",
+          "site/scripts/gk80-work-index.test.mjs",
+          "site/scripts/select-ci-checks.mjs",
+          "site/scripts/select-ci-checks.test.mjs"
+        ],
+        "headRefName": "codex/token-economy-v1",
+        "headRefOid": "9d20ca9adbd158a9acf6c50a1665dd4797250191",
+        "isDraft": true,
+        "latestReviews": [],
+        "mergeStateStatus": "DIRTY",
+        "mergeable": "CONFLICTING",
+        "number": 231,
+        "reviewDecision": "",
+        "statusCheckRollup": [
+          {
+            "__typename": "CheckRun",
+            "completedAt": "2026-11-03T15:49:13Z",
+            "conclusion": "SUCCESS",
+            "detailsUrl": "https://github.com/ozirix-dev/Reseptit/actions/runs/41667170946/job/126025480973",
+            "name": "build",
+            "startedAt": "2026-11-03T15:45:28Z",
+            "status": "COMPLETED",
+            "workflowName": "Recipe site"
+          },
+          {
+            "__typename": "CheckRun",
+            "completedAt": "2026-11-03T15:49:14Z",
+            "conclusion": "SKIPPED",
+            "detailsUrl": "https://github.com/ozirix-dev/Reseptit/actions/runs/41667170946/job/126027756703",
+            "name": "deploy",
+            "startedAt": "2026-11-03T15:49:14Z",
+            "status": "COMPLETED",
+            "workflowName": "Recipe site"
+          }
+        ],
+        "title": "Reduce GK80 context and target CI to changed inputs",
+        "url": "https://github.com/ozirix-dev/Reseptit/pull/231",
+        "classification": "KEEP_ACTIVE",
+        "deferred": false,
+        "reserve": false,
+        "historyReference": false
+      },
+      {
+        "files": [
+          "docs/nutrition/gk80-estimated-ranges-2026-11-03.md",
+          "site/package.json",
+          "site/scripts/gk-estimated-range.ts",
+          "site/scripts/gk80-bindaetteok-scenarios.ts",
+          "site/src/features/glycemic-load/GlycemicLoadPilotPage.tsx",
+          "site/src/features/recipes/GkOnlyVariantPanel.tsx",
+          "site/src/features/recipes/gk-estimate.ts",
+          "site/src/features/recipes/gk-only-types.ts",
+          "site/tests/gk-estimated-range.test.ts"
+        ],
+        "headRefName": "codex/gk80-estimated-ranges",
+        "headRefOid": "2b50b18af9b473337d7ddad8d37a660547f1d63d",
+        "isDraft": true,
+        "latestReviews": [],
+        "mergeStateStatus": "DIRTY",
+        "mergeable": "CONFLICTING",
+        "number": 229,
+        "reviewDecision": "",
+        "statusCheckRollup": [
+          {
+            "__typename": "CheckRun",
+            "completedAt": "2026-11-03T11:34:37Z",
+            "conclusion": "SUCCESS",
+            "detailsUrl": "https://github.com/ozirix-dev/Reseptit/actions/runs/41628002293/job/125890636352",
+            "name": "build",
+            "startedAt": "2026-11-03T11:31:06Z",
+            "status": "COMPLETED",
+            "workflowName": "Recipe site"
+          },
+          {
+            "__typename": "CheckRun",
+            "completedAt": "2026-11-03T11:34:38Z",
+            "conclusion": "SKIPPED",
+            "detailsUrl": "https://github.com/ozirix-dev/Reseptit/actions/runs/41628002293/job/125892267485",
+            "name": "deploy",
+            "startedAt": "2026-11-03T11:34:38Z",
+            "status": "COMPLETED",
+            "workflowName": "Recipe site"
+          }
+        ],
+        "title": "GK80: documented GL scenario ranges",
+        "url": "https://github.com/ozirix-dev/Reseptit/pull/229",
+        "classification": "REVIEW",
+        "deferred": false,
+        "reserve": false,
+        "historyReference": false
+      },
+      {
+        "files": [
+          "docs/nutrition/gk80-kerala-liver-scallion.json",
+          "site/scripts/gk-kerala-liver-scallion.ts",
+          "site/scripts/glycemic-load-pilot.ts",
+          "site/tests/gk-next-four.test.ts",
+          "site/tests/static-output.test.ts"
+        ],
+        "headRefName": "codex/gk80-kerala-liver-scallion",
+        "headRefOid": "cf551fd064036d31479bfa910ebf97adf42c57fe",
+        "isDraft": true,
+        "latestReviews": [],
+        "mergeStateStatus": "DIRTY",
+        "mergeable": "CONFLICTING",
+        "number": 227,
+        "reviewDecision": "",
+        "statusCheckRollup": [
+          {
+            "__typename": "CheckRun",
+            "completedAt": "2026-11-03T10:14:24Z",
+            "conclusion": "SUCCESS",
+            "detailsUrl": "https://github.com/ozirix-dev/Reseptit/actions/runs/41617089968/job/125853129364",
+            "name": "build",
+            "startedAt": "2026-11-03T10:10:55Z",
+            "status": "COMPLETED",
+            "workflowName": "Recipe site"
+          },
+          {
+            "__typename": "CheckRun",
+            "completedAt": "2026-11-03T10:14:25Z",
+            "conclusion": "SKIPPED",
+            "detailsUrl": "https://github.com/ozirix-dev/Reseptit/actions/runs/41617089968/job/125854798453",
+            "name": "deploy",
+            "startedAt": "2026-11-03T10:14:25Z",
+            "status": "COMPLETED",
+            "workflowName": "Recipe site"
+          }
+        ],
+        "title": "GK80: Kerala-kalacurry, maksa ja pekoni sekä kevätsipulipannukakku",
+        "url": "https://github.com/ozirix-dev/Reseptit/pull/227",
+        "classification": "REVIEW",
+        "deferred": false,
+        "reserve": false,
+        "historyReference": false
+      },
+      {
+        "files": [
+          "docs/nutrition/gk80-blocker-audit-screen.json",
+          "docs/nutrition/glycemic-load-pilot-input.json",
+          "site/scripts/glycemic-load-pilot.ts",
+          "site/src/features/glycemic-load/GlycemicLoadPilotPage.tsx",
+          "site/tests/gk80-blocker-audit.test.ts"
+        ],
+        "headRefName": "codex/gk80-blocker-audit",
+        "headRefOid": "cba54cfdc00b73460c7d8b9686bc97bcbc90d834",
+        "isDraft": true,
+        "latestReviews": [],
+        "mergeStateStatus": "DIRTY",
+        "mergeable": "CONFLICTING",
+        "number": 226,
+        "reviewDecision": "",
+        "statusCheckRollup": [
+          {
+            "__typename": "CheckRun",
+            "completedAt": "2026-11-03T10:11:21Z",
+            "conclusion": "FAILURE",
+            "detailsUrl": "https://github.com/ozirix-dev/Reseptit/actions/runs/41616860813/job/125852439966",
+            "name": "build",
+            "startedAt": "2026-11-03T10:09:28Z",
+            "status": "COMPLETED",
+            "workflowName": "Recipe site"
+          },
+          {
+            "__typename": "CheckRun",
+            "completedAt": "2026-11-03T10:11:21Z",
+            "conclusion": "SKIPPED",
+            "detailsUrl": "https://github.com/ozirix-dev/Reseptit/actions/runs/41616860813/job/125853357234",
+            "name": "deploy",
+            "startedAt": "2026-11-03T10:11:22Z",
+            "status": "COMPLETED",
+            "workflowName": "Recipe site"
+          }
+        ],
+        "title": "GK80: correct potato and avocado input bindings",
+        "url": "https://github.com/ozirix-dev/Reseptit/pull/226",
+        "classification": "BLOCKED",
+        "deferred": false,
+        "reserve": false,
+        "historyReference": false
+      },
+      {
+        "files": [
+          ".github/workflows/pages.yml",
+          ".gitignore",
+          "docs/gk80-controller/CONTRACT.md",
+          "docs/gk80-controller/PLAN.md",
+          "docs/gk80-controller/README.md",
+          "tools/gk80_controller.py",
+          "tools/tests/test_gk80_controller.py"
+        ],
+        "headRefName": "chatgpt/gk80-batch30-controller-v1-20261103",
+        "headRefOid": "b30c3f486574dc202a207f09ab004248cf4d4c39",
+        "isDraft": true,
+        "latestReviews": [],
+        "mergeStateStatus": "CLEAN",
+        "mergeable": "MERGEABLE",
+        "number": 223,
+        "reviewDecision": "",
+        "statusCheckRollup": [
+          {
+            "__typename": "CheckRun",
+            "completedAt": "2026-11-05T05:57:18Z",
+            "conclusion": "SUCCESS",
+            "detailsUrl": "https://github.com/ozirix-dev/Reseptit/actions/runs/41976660314/job/127076984596",
+            "name": "build",
+            "startedAt": "2026-11-05T05:51:49Z",
+            "status": "COMPLETED",
+            "workflowName": "Recipe site"
+          },
+          {
+            "__typename": "CheckRun",
+            "completedAt": "2026-11-05T05:57:18Z",
+            "conclusion": "SKIPPED",
+            "detailsUrl": "https://github.com/ozirix-dev/Reseptit/actions/runs/41976660314/job/127078784459",
+            "name": "deploy",
+            "startedAt": "2026-11-05T05:57:19Z",
+            "status": "COMPLETED",
+            "workflowName": "Recipe site"
+          }
+        ],
+        "title": "GK80 Controller V1: pysyvä 30 reseptin Codex-ajonohjain, stop, budget ja evidence-gates",
+        "url": "https://github.com/ozirix-dev/Reseptit/pull/223",
+        "classification": "KEEP_ACTIVE",
+        "deferred": false,
+        "reserve": true,
+        "historyReference": false
+      },
+      {
+        "files": [
+          "docs/nutrition/gk80-granola-edeka/packet.json",
+          "site/scripts/gk-four-reviewed.ts",
+          "site/scripts/gk-granola-edeka.ts",
+          "site/tests/gk-next-four.test.ts"
+        ],
+        "headRefName": "codex/gk80-granola-edeka",
+        "headRefOid": "c2e7c53ff55a562f1dd3f983266db33833b7ee26",
+        "isDraft": false,
+        "latestReviews": [],
+        "mergeStateStatus": "DIRTY",
+        "mergeable": "CONFLICTING",
+        "number": 210,
+        "reviewDecision": "",
+        "statusCheckRollup": [
+          {
+            "__typename": "CheckRun",
+            "completedAt": "2026-11-03T08:29:36Z",
+            "conclusion": "SUCCESS",
+            "detailsUrl": "https://github.com/ozirix-dev/Reseptit/actions/runs/41602985394/job/125806124054",
+            "name": "build",
+            "startedAt": "2026-11-03T08:24:36Z",
+            "status": "COMPLETED",
+            "workflowName": "Recipe site"
+          },
+          {
+            "__typename": "CheckRun",
+            "completedAt": "2026-11-03T08:29:37Z",
+            "conclusion": "SKIPPED",
+            "detailsUrl": "https://github.com/ozirix-dev/Reseptit/actions/runs/41602985394/job/125808169091",
+            "name": "deploy",
+            "startedAt": "2026-11-03T08:29:37Z",
+            "status": "COMPLETED",
+            "workflowName": "Recipe site"
+          }
+        ],
+        "title": "GK80: siemengranola EDEKA-mantelilastuilla",
+        "url": "https://github.com/ozirix-dev/Reseptit/pull/210",
+        "classification": "REVIEW",
+        "deferred": false,
+        "reserve": false,
+        "historyReference": false
+      },
+      {
+        "files": [
+          "docs/nutrition/afcd-field-bindings/README.md",
+          "docs/nutrition/afcd-field-bindings/before.json",
+          "docs/nutrition/afcd-field-bindings/verify_source.py",
+          "docs/nutrition/food-records.json",
+          "docs/nutrition/glycemic-load-recipe-bindings.json",
+          "site/tests/gk80-operation146.test.ts",
+          "site/tests/glycemic-load.test.ts",
+          "site/tests/restore-pre-ehold.ts"
+        ],
+        "headRefName": "codex/afcd-polyol-02-field-bindings",
+        "headRefOid": "924a827b515f4d4e27d70389837e22f904d38c1f",
+        "isDraft": true,
+        "latestReviews": [],
+        "mergeStateStatus": "CLEAN",
+        "mergeable": "MERGEABLE",
+        "number": 182,
+        "reviewDecision": "",
+        "statusCheckRollup": [
+          {
+            "__typename": "CheckRun",
+            "completedAt": "2026-11-02T10:48:39Z",
+            "conclusion": "SUCCESS",
+            "detailsUrl": "https://github.com/ozirix-dev/Reseptit/actions/runs/41431219490/job/125229990030",
+            "name": "build",
+            "startedAt": "2026-11-02T10:44:46Z",
+            "status": "COMPLETED",
+            "workflowName": "Recipe site"
+          },
+          {
+            "__typename": "CheckRun",
+            "completedAt": "2026-11-02T10:48:39Z",
+            "conclusion": "SKIPPED",
+            "detailsUrl": "https://github.com/ozirix-dev/Reseptit/actions/runs/41431219490/job/125231786896",
+            "name": "deploy",
+            "startedAt": "2026-11-02T10:48:40Z",
+            "status": "COMPLETED",
+            "workflowName": "Recipe site"
+          }
+        ],
+        "title": "AFCD-POLYOL-02: korjaa kolme hiilihydraattikenttäsidosta",
+        "url": "https://github.com/ozirix-dev/Reseptit/pull/182",
+        "classification": "REVIEW",
+        "deferred": false,
+        "reserve": false,
+        "historyReference": false
+      },
+      {
+        "files": [
+          "docs/research/afcd-polyol-01/README.md",
+          "docs/research/afcd-polyol-01/cohort.json",
+          "docs/research/afcd-polyol-01/normalization-variants.csv",
+          "docs/research/afcd-polyol-01/public-check.json",
+          "docs/research/afcd-polyol-01/recipe-dependencies.csv",
+          "docs/research/afcd-polyol-01/recipe-effects.csv",
+          "docs/research/afcd-polyol-01/source-decisions.csv",
+          "docs/research/afcd-polyol-01/source-manifest.json",
+          "docs/research/afcd-polyol-01/source-notes.json",
+          "docs/research/afcd-polyol-01/summary.json",
+          "docs/research/afcd-polyol-01/tools/README.md",
+          "docs/research/afcd-polyol-01/tools/audit.py",
+          "docs/research/afcd-polyol-01/tools/fetch-sources.py",
+          "docs/research/afcd-polyol-01/tools/numeric-probe.mts",
+          "docs/research/afcd-polyol-01/tools/verify.py",
+          "docs/research/afcd-polyol-01/validation.json"
+        ],
+        "headRefName": "codex/afcd-polyol-01-current",
+        "headRefOid": "88e08d517bb62fa83dd1207912569fe853737596",
+        "isDraft": true,
+        "latestReviews": [],
+        "mergeStateStatus": "CLEAN",
+        "mergeable": "MERGEABLE",
+        "number": 181,
+        "reviewDecision": "",
+        "statusCheckRollup": [],
+        "title": "AFCD-POLYOL-01: yhteinen lähdetulkinta ja reseptiriippuvuuksien auditointi",
+        "url": "https://github.com/ozirix-dev/Reseptit/pull/181",
+        "classification": "REVIEW",
+        "deferred": false,
+        "reserve": false,
+        "historyReference": false
+      },
+      {
+        "files": [
+          "docs/research/operation147/README.md",
+          "docs/research/operation147/afcd-definition-extract.json",
+          "docs/research/operation147/diagnostics.json",
+          "docs/research/operation147/gk-omission-sensitivity.json",
+          "docs/research/operation147/gk-threshold-sensitivity.json",
+          "docs/research/operation147/input-manifest.json",
+          "docs/research/operation147/production.json",
+          "docs/research/operation147/recipe-scenarios.csv",
+          "docs/research/operation147/recipe-scenarios.json",
+          "docs/research/operation147/scenario-summary.csv",
+          "docs/research/operation147/summary.json",
+          "docs/research/operation147/tools/README.md",
+          "docs/research/operation147/tools/baseline.mts",
+          "docs/research/operation147/tools/diagnostics.mts",
+          "docs/research/operation147/tools/extract-afcd.py",
+          "docs/research/operation147/tools/gk-sensitivity.mts",
+          "docs/research/operation147/tools/production.py",
+          "docs/research/operation147/tools/scenarios.py",
+          "docs/research/operation147/tools/scratch-scope.mts",
+          "docs/research/operation147/tools/scratch_scope.py",
+          "docs/research/operation147/tools/verify.py",
+          "docs/research/operation147/validation.json"
+        ],
+        "headRefName": "codex/operation147-method-audit",
+        "headRefOid": "fd8bd4d31e6d37bc53d669870a00557f5147644a",
+        "isDraft": true,
+        "latestReviews": [],
+        "mergeStateStatus": "CLEAN",
+        "mergeable": "MERGEABLE",
+        "number": 180,
+        "reviewDecision": "",
+        "statusCheckRollup": [],
+        "title": "Operaatio 147: ravintoarvo- ja GK-menetelmän järkeistämisauditointi",
+        "url": "https://github.com/ozirix-dev/Reseptit/pull/180",
+        "classification": "REVIEW",
+        "deferred": false,
+        "reserve": false,
+        "historyReference": false
+      },
+      {
+        "files": [
+          "docs/product/recipavo-product-strategy.md"
+        ],
+        "headRefName": "codex/recipavo-product-strategy-new-pr-20261102",
+        "headRefOid": "60a6b5c33cb4bf09e5270ab9011ecfbceda1d0e1",
+        "isDraft": true,
+        "latestReviews": [],
+        "mergeStateStatus": "CLEAN",
+        "mergeable": "MERGEABLE",
+        "number": 178,
+        "reviewDecision": "",
+        "statusCheckRollup": [],
+        "title": "Recipavo: tuote- ja liiketoimintasuunnitelma – uusi Draft-PR",
+        "url": "https://github.com/ozirix-dev/Reseptit/pull/178",
+        "classification": "REVIEW",
+        "deferred": false,
+        "reserve": false,
+        "historyReference": false
+      },
+      {
+        "files": [
+          "docs/architecture/nutrition-core-vision.md"
+        ],
+        "headRefName": "codex/nutrition-core-vision-20261102",
+        "headRefOid": "9e0bab5209e59533e6b7326a5375680024ea7083",
+        "isDraft": true,
+        "latestReviews": [],
+        "mergeStateStatus": "CLEAN",
+        "mergeable": "MERGEABLE",
+        "number": 176,
+        "reviewDecision": "",
+        "statusCheckRollup": [],
+        "title": "Nutrition Core: yhteinen ravintoainetietovaranto ja vaiheistettu arkkitehtuuri",
+        "url": "https://github.com/ozirix-dev/Reseptit/pull/176",
+        "classification": "REVIEW",
+        "deferred": false,
+        "reserve": false,
+        "historyReference": false
+      },
+      {
+        "files": [
+          "docs/research/source-01/README.md",
+          "docs/research/source-01/audit-baseline.mts",
+          "docs/research/source-01/baseline.json",
+          "docs/research/source-01/evidence-manifest.json",
+          "docs/research/source-01/field-mapping.md",
+          "docs/research/source-01/pilot-review.json",
+          "docs/research/source-01/sources.json"
+        ],
+        "headRefName": "codex/source-01-report-20261102",
+        "headRefOid": "19939d95d8c93d6e93d4619d9f2510d043d246dc",
+        "isDraft": true,
+        "latestReviews": [],
+        "mergeStateStatus": "CLEAN",
+        "mergeable": "MERGEABLE",
+        "number": 174,
+        "reviewDecision": "",
+        "statusCheckRollup": [],
+        "title": "SOURCE-01: loppuraportti ja SQLite/D1-kenttäkartoitus vaiheen 1 hyväksyntään",
+        "url": "https://github.com/ozirix-dev/Reseptit/pull/174",
+        "classification": "REVIEW",
+        "deferred": false,
+        "reserve": false,
+        "historyReference": false
+      },
+      {
+        "files": [
+          "docs/cloudflare-migration-plan.md",
+          "docs/cloudflare-migration/images-local-20261102.json",
+          "docs/cloudflare-migration/images-main-20261102.json",
+          "docs/cloudflare-migration/inventory-images.py",
+          "docs/cloudflare-migration/inventory-local-images.py",
+          "docs/cloudflare-migration/pr-172-description.md"
+        ],
+        "headRefName": "codex/cloudflare-images-plan-20261102",
+        "headRefOid": "69a2ca2be732e9e4454cd44cf770a601feb8fd9d",
+        "isDraft": true,
+        "latestReviews": [],
+        "mergeStateStatus": "CLEAN",
+        "mergeable": "MERGEABLE",
+        "number": 172,
+        "reviewDecision": "",
+        "statusCheckRollup": [],
+        "title": "Cloudflare-siirtosuunnitelma: recipavo.com, D1, kuvat ja varmuuskopiot",
+        "url": "https://github.com/ozirix-dev/Reseptit/pull/172",
+        "classification": "REVIEW",
+        "deferred": false,
+        "reserve": false,
+        "historyReference": false
+      },
+      {
+        "files": [
+          "docs/research/gi-source-integrity-01/README.md",
+          "docs/research/gi-source-integrity-01/admission.py",
+          "docs/research/gi-source-integrity-01/all-source-index.json",
+          "docs/research/gi-source-integrity-01/artifact-manifest.json",
+          "docs/research/gi-source-integrity-01/baseline133.json",
+          "docs/research/gi-source-integrity-01/coconut-identities.json",
+          "docs/research/gi-source-integrity-01/coconut-impact.json",
+          "docs/research/gi-source-integrity-01/coconut-recipes.json",
+          "docs/research/gi-source-integrity-01/contract.md",
+          "docs/research/gi-source-integrity-01/high-risk-screen.json",
+          "docs/research/gi-source-integrity-01/input-manifest.json",
+          "docs/research/gi-source-integrity-01/lowcho-applications.json",
+          "docs/research/gi-source-integrity-01/match-fixtures.json",
+          "docs/research/gi-source-integrity-01/p1-decision.json",
+          "docs/research/gi-source-integrity-01/research-source-screen.json",
+          "docs/research/gi-source-integrity-01/source-classifications.json",
+          "docs/research/gi-source-integrity-01/verify.py"
+        ],
+        "headRefName": "codex/gi-source-integrity-01",
+        "headRefOid": "e834bb59035dc20f09e015d57278a08771c13b13",
+        "isDraft": true,
+        "latestReviews": [],
+        "mergeStateStatus": "CLEAN",
+        "mergeable": "MERGEABLE",
+        "number": 169,
+        "reviewDecision": "",
+        "statusCheckRollup": [
+          {
+            "__typename": "CheckRun",
+            "completedAt": "2026-11-01T22:46:22Z",
+            "conclusion": "SUCCESS",
+            "detailsUrl": "https://github.com/ozirix-dev/Reseptit/actions/runs/41358779275/job/125004448945",
+            "name": "build",
+            "startedAt": "2026-11-01T22:46:13Z",
+            "status": "COMPLETED",
+            "workflowName": "Recipe site"
+          },
+          {
+            "__typename": "CheckRun",
+            "completedAt": "2026-11-01T22:46:22Z",
+            "conclusion": "SKIPPED",
+            "detailsUrl": "https://github.com/ozirix-dev/Reseptit/actions/runs/41358779275/job/125004496775",
+            "name": "deploy",
+            "startedAt": "2026-11-01T22:46:23Z",
+            "status": "COMPLETED",
+            "workflowName": "Recipe site"
+          }
+        ],
+        "title": "docs(nutrition): coconut GI source integrity and P1 binding decision",
+        "url": "https://github.com/ozirix-dev/Reseptit/pull/169",
+        "classification": "REVIEW",
+        "deferred": false,
+        "reserve": false,
+        "historyReference": false
+      },
+      {
+        "files": [
+          "docs/nutrition/gk-r2-carbohydrate-only-candidates.json",
+          "docs/nutrition/gk-r2-corrections.json",
+          "docs/nutrition/gk-r2-gk-proposals.json",
+          "docs/nutrition/gk-r2-inventory.json",
+          "docs/nutrition/gk-r2-nutrition-proposals.json",
+          "docs/nutrition/gk-r2-regression.json",
+          "docs/nutrition/gk-r2-review.md",
+          "docs/nutrition/gk-r2-source-review.json",
+          "docs/nutrition/glycemic-load-pilot-input.json",
+          "docs/nutrition/glycemic-load-recipe-bindings.json",
+          "docs/nutrition/tools/gk-r2-inventory.py",
+          "site/tests/glycemic-load.test.ts"
+        ],
+        "headRefName": "codex/gk-2-1-r2",
+        "headRefOid": "020b665582f4f1ec54e56ec978581e424adc6ace",
+        "isDraft": true,
+        "latestReviews": [],
+        "mergeStateStatus": "DIRTY",
+        "mergeable": "CONFLICTING",
+        "number": 133,
+        "reviewDecision": "",
+        "statusCheckRollup": [
+          {
+            "__typename": "CheckRun",
+            "completedAt": "2026-10-30T00:39:14Z",
+            "conclusion": "SUCCESS",
+            "detailsUrl": "https://github.com/ozirix-dev/Reseptit/actions/runs/40980658271/job/123819594034",
+            "name": "build",
+            "startedAt": "2026-10-30T00:35:41Z",
+            "status": "COMPLETED",
+            "workflowName": "Recipe site"
+          },
+          {
+            "__typename": "CheckRun",
+            "completedAt": "2026-10-30T00:39:14Z",
+            "conclusion": "SKIPPED",
+            "detailsUrl": "https://github.com/ozirix-dev/Reseptit/actions/runs/40980658271/job/123820847123",
+            "name": "deploy",
+            "startedAt": "2026-10-30T00:39:14Z",
+            "status": "COMPLETED",
+            "workflowName": "Recipe site"
+          }
+        ],
+        "title": "GK 2.1 R2: hiilihydraattiseula ja kahdeksan reseptin lähdekorjaukset",
+        "url": "https://github.com/ozirix-dev/Reseptit/pull/133",
+        "classification": "REVIEW",
+        "deferred": false,
+        "reserve": false,
+        "historyReference": false
+      },
+      {
+        "files": [
+          "site/scripts/glycemic-load-pilot.ts",
+          "site/src/features/recipes/RecipesPage.tsx",
+          "site/src/features/recipes/recipe-search.ts",
+          "site/src/features/recipes/recipe-tools.tsx",
+          "site/src/styles.css",
+          "site/tests/recipe-search.test.ts"
+        ],
+        "headRefName": "codex/recipe-filter-gk-chips-20261027",
+        "headRefOid": "2ae46f59c9b982c540a10ba8e0a6cd999ace7187",
+        "isDraft": true,
+        "latestReviews": [],
+        "mergeStateStatus": "DIRTY",
+        "mergeable": "CONFLICTING",
+        "number": 119,
+        "reviewDecision": "",
+        "statusCheckRollup": [
+          {
+            "__typename": "CheckRun",
+            "completedAt": "2026-10-27T12:06:17Z",
+            "conclusion": "SUCCESS",
+            "detailsUrl": "https://github.com/ozirix-dev/Reseptit/actions/runs/40500739779/job/122177491239",
+            "name": "build",
+            "startedAt": "2026-10-27T12:03:06Z",
+            "status": "COMPLETED",
+            "workflowName": "Recipe site"
+          },
+          {
+            "__typename": "CheckRun",
+            "completedAt": "2026-10-27T12:06:17Z",
+            "conclusion": "SKIPPED",
+            "detailsUrl": "https://github.com/ozirix-dev/Reseptit/actions/runs/40500739779/job/122178874099",
+            "name": "deploy",
+            "startedAt": "2026-10-27T12:06:17Z",
+            "status": "COMPLETED",
+            "workflowName": "Recipe site"
+          }
+        ],
+        "title": "Draft: GK-suodatin, aktiiviset suodatinvalinnat ja kokonaisajan selkeytys",
+        "url": "https://github.com/ozirix-dev/Reseptit/pull/119",
+        "classification": "REVIEW",
+        "deferred": false,
+        "reserve": false,
+        "historyReference": false
+      },
+      {
+        "files": [
+          "site/package-lock.json",
+          "site/package.json"
+        ],
+        "headRefName": "dependabot/npm_and_yarn/site/vite-8.3.5",
+        "headRefOid": "607b23be5e1eaac03c0cc1705803d9e494872581",
+        "isDraft": true,
+        "latestReviews": [],
+        "mergeStateStatus": "CLEAN",
+        "mergeable": "MERGEABLE",
+        "number": 116,
+        "reviewDecision": "",
+        "statusCheckRollup": [
+          {
+            "__typename": "CheckRun",
+            "completedAt": "2026-11-05T06:53:46Z",
+            "conclusion": "SUCCESS",
+            "detailsUrl": "https://github.com/ozirix-dev/Reseptit/actions/runs/41982901747/job/127096867862",
+            "name": "build",
+            "startedAt": "2026-11-05T06:48:34Z",
+            "status": "COMPLETED",
+            "workflowName": "Recipe site"
+          },
+          {
+            "__typename": "CheckRun",
+            "completedAt": "2026-11-05T06:53:46Z",
+            "conclusion": "SKIPPED",
+            "detailsUrl": "https://github.com/ozirix-dev/Reseptit/actions/runs/41982901747/job/127098683085",
+            "name": "deploy",
+            "startedAt": "2026-11-05T06:53:47Z",
+            "status": "COMPLETED",
+            "workflowName": "Recipe site"
+          }
+        ],
+        "title": "build(deps): kokoa Vite-, Node-, React Router- ja Marked-päivitykset",
+        "url": "https://github.com/ozirix-dev/Reseptit/pull/116",
+        "classification": "KEEP_ACTIVE",
+        "deferred": false,
+        "reserve": false,
+        "historyReference": false
+      },
+      {
+        "files": [
+          "docs/nutritics-evaluation/README.md",
+          "docs/nutritics-evaluation/comparison-template.csv",
+          "docs/nutritics-evaluation/feature-matrix.md",
+          "docs/nutritics-evaluation/seven-day-protocol.md",
+          "site/package.json",
+          "site/scripts/nutritics-evaluation-client.ts",
+          "site/tests/fixtures/nutritics-evaluation.ts",
+          "site/tests/nutritics-evaluation-client.test.ts"
+        ],
+        "headRefName": "codex/nutritics-evaluation",
+        "headRefOid": "930c398251515fbb7662e33707d7ed7e72bfc351",
+        "isDraft": true,
+        "latestReviews": [],
+        "mergeStateStatus": "DIRTY",
+        "mergeable": "CONFLICTING",
+        "number": 100,
+        "reviewDecision": "",
+        "statusCheckRollup": [
+          {
+            "__typename": "CheckRun",
+            "completedAt": "2026-10-25T03:02:15Z",
+            "conclusion": "SUCCESS",
+            "detailsUrl": "https://github.com/ozirix-dev/Reseptit/actions/runs/40156460129/job/121058796970",
+            "name": "build",
+            "startedAt": "2026-10-25T02:58:21Z",
+            "status": "COMPLETED",
+            "workflowName": "Recipe site"
+          },
+          {
+            "__typename": "CheckRun",
+            "completedAt": "2026-10-25T03:02:15Z",
+            "conclusion": "SKIPPED",
+            "detailsUrl": "https://github.com/ozirix-dev/Reseptit/actions/runs/40156460129/job/121059535980",
+            "name": "deploy",
+            "startedAt": "2026-10-25T03:02:15Z",
+            "status": "COMPLETED",
+            "workflowName": "Recipe site"
+          }
+        ],
+        "title": "Prepare secure Nutritics evaluation",
+        "url": "https://github.com/ozirix-dev/Reseptit/pull/100",
+        "classification": "BLOCKED",
+        "deferred": true,
+        "reserve": false,
+        "historyReference": false
+      }
+    ],
+    "classificationChanges": {
+      "168": "SUPERSEDED",
+      "182": "REVIEW",
+      "196": "SUPERSEDED",
+      "197": "SUPERSEDED",
+      "198": "SUPERSEDED",
+      "279": "REVIEW",
+      "280": "KEEP_ACTIVE"
+    },
+    "concurrentWork": "Read GK100 throughput plan; own isolated branches, serial local tests, one CI pipeline at a time, no other-session branch writes."
+  },
+  "latestOutcome": {
+    "afterOpen": 26,
+    "chatInitialOpen": 60,
+    "chatTotalClosed": 38,
+    "chatCreatedDrafts": [
+      277,
+      278,
+      280
+    ],
+    "concurrentCreatedPr": 279,
+    "mainSha": "0fa20528ffe0ca075c9e0fb54c2b388cd7d959fe",
+    "all60OriginalBranchesPreserved": true
   }
 }

@@ -1,6 +1,49 @@
 # Reseptit PR-jonon siivous V2 5.11.2026
 
-## Jatkokorjaukset 5.11.2026
+## Viimeisin tilanne: #168 korjattu ja riippuvuudet koottu
+
+Avoimia on nyt **26** (siivouksen alussa 60). Tässä jatkossa suljettiin #168, #196, #197 ja #198, avattiin korvaava Draft #280 ja päivitettiin olemassa oleva #116. Samanaikainen toinen istunto avasi suunnitelma-PR:n #279; sen sisältöä tai haaraa ei muokattu. Tässä chatissa suljettiin yhteensä 38 PR:ää ja avattiin kolme Draftia (#277, #278, #280). Tämän jatkon ensimmäinen ajantasainen tilanne oli 29 avoinna, #279 mukaan lukien.
+
+Varsinaisessa jatkojonossa on 23 PR:ää, kun käyttäjän sivuun jättämä #100, varalla oleva #223 ja historiaviite #277 erotetaan. Muiden sulkeminen edellyttäisi yksilöllisen sisällön hylkäämistä tai ratkaisemattoman sisältöpäätöksen ohittamista. Alla olevat aiempien vaiheiden jonot säilyvät päivättyinä tositteina.
+
+### #168:n seuraaja #280
+
+US-total-normalisoinnin saatava hiilihydraatti on nyt C−F−P, polyolit vähennetään kerran ja tuntematon/todentamaton/ristiriitainen polyolitieto estää GK-pistearvon. Kolme hyväksyntäpakettien lataajaa sallii vain yhden täsmällisen vanhasta laskentamoduulista tarkistettuun versioon johtavan SHA-siirtymän. Muut koodi- ja lähdemuutokset hylätään. Alkuperäisiä sinettejä, lähderajauksia tai hyväksyntöjä ei kirjoitettu uudelleen.
+
+Nyky-mainin vertailussa kaikki 326 täydellistä GK-tulosta, laskentasyötteet ja syöte-/evidenssitarkisteet, 87 täydellistä GK-versiota, lähdepolitiikat, kattavuus ja 326 makrotietuetta täsmäävät. 317/317 yksikkötestiä, 31/31 staattista/SEO-testiä, strict-ravintoarvoauditointi, GK-auditointi, TypeScript, Vite ja 760 reitin prerender läpäisevät. Testit ajettiin paikallisesti peräkkäin.
+
+HEAD `dc3aa002348cbdd579cf7a7b12b35e61de7c8bc6`: [#280](https://github.com/ozirix-dev/Reseptit/pull/280), [onnistunut CI](https://github.com/ozirix-dev/Reseptit/actions/runs/41982427071), deploy SKIPPED. [Regressiodigestit ja 18 tutkimustiedoston inventaario](https://github.com/ozirix-dev/Reseptit/blob/dc3aa002348cbdd579cf7a7b12b35e61de7c8bc6/docs/reports/pr168-normalization-regression.json).
+
+Alkuperäiset Decimal-todisteet, tutkimuspäätökset, HOLD-perusteet ja katselmointihistoria säilyvät [#168:ssa](https://github.com/ozirix-dev/Reseptit/pull/168) ja [pinnatussa 18 tiedoston tutkimuskansiossa](https://github.com/ozirix-dev/Reseptit/tree/0eacc8f0ba448347b0f39c2d4e76f887c9942934/docs/research/gk80-night2-operation140). Tutkimuspinoa ei kopioitu uuteen toteutukseen. [Sulkemisperustelu](https://github.com/ozirix-dev/Reseptit/pull/168#issuecomment-6651703204).
+
+### Riippuvuuserä #116
+
+#116 muutettiin Draftiksi ja siihen koottiin #196:n @types/node 26.6.6, #197:n react-router-dom/react-router 7.18.5 sekä set-cookie-parser 2.7.3 ja #198:n marked 18.1.2. Vite 8.3.5 säilyy alkuperäisenä päivityksenä. Siirretyt pakettitietueet, resolved-osoitteet ja integrity-tarkisteet ovat täsmälleen alkuperäisistä PR-commiteista. Muutoksia on vain kahdessa pakettitiedostossa.
+
+HEAD `607b23be5e1eaac03c0cc1705803d9e494872581`: [#116](https://github.com/ozirix-dev/Reseptit/pull/116), [onnistunut CI](https://github.com/ozirix-dev/Reseptit/actions/runs/41982901747), deploy SKIPPED. Nyky-mainin read-only merge-tree on konfliktiton. Yhteistarkistus #280:n kanssa läpäisi 43/43 paikallista testiä, TypeScriptin ja Vite-buildin. Alkuperäiset työpuutiedostot ja npm-asennus palautettiin.
+
+| Suljettu | Syy / seuraaja | Perustelukommentti ja säilytyspaikka |
+| --- | --- | --- |
+| #196 | Sama Node-tyyppipäivitys mukana #116:ssa | [Perustelu ja alkuperäinen commit](https://github.com/ozirix-dev/Reseptit/pull/196#issuecomment-6651799410) |
+| #197 | Sama Router- ja set-cookie-parser-päivitys mukana #116:ssa | [Perustelu ja alkuperäinen commit](https://github.com/ozirix-dev/Reseptit/pull/197#issuecomment-6651805484) |
+| #198 | Sama Marked-päivitys mukana #116:ssa | [Perustelu ja alkuperäinen commit](https://github.com/ozirix-dev/Reseptit/pull/198#issuecomment-6651807756) |
+
+Kommentit tallennettiin ennen sulkemista ja sulkemiset tarkistettiin GitHubista. Kaikki 60 alkuperäistä Git-haaraa säilyvät: #116 ja #223 etenivät yhdellä commitilla, muiden 58 alkuperäiset HEADit säilyivät. Main on yhä `0fa20528ffe0ca075c9e0fb54c2b388cd7d959fe`. Mergejä, deployta tai uusia sisältö-/julkaisuhyväksyntöjä ei tehty.
+
+### Nykyinen työjärjestys ja avoimet päätökset
+
+1. **Oikeellisuus:** #280 on turvallisesti katselmoitavissa seuraavaksi. #182 tarvitsee sisältöpäätöksen: AFCD-kenttäkorjaukset muuttavat nykyisiä hyväksyttyjä GK-tuloksia (esimerkiksi persikka 4,08 → 3,97). #133:n muut lähdekorjaukset, #169:n kookoksen lähdeidentiteetti ja #226:n peruna-/avokadosidokset jäävät erilliseen ratkaisuun. #180 ja #181 ovat menetelmä-/lähdetulkinnan katselmoinnissa. #229:n vaihteluvälimalli vaatii menetelmäpäätöksen.
+2. **GK-infrastruktuuri ja lähteet:** #255:n Smart Review / recovery -katselmointi, #174:n lähde-/kenttäkartoituspäätös sekä #231:n CI-/resurssirajauksen päivitys. #223:n turvakorjattu ajonohjain on varalla eikä sitä käynnistetä. Toisen istunnon #279-suunnitelma säilyy sen omassa hallinnassa; päällekkäisyys recovery-/paketointityön kanssa täsmäytetään ennen toteutusten yhdistämistä. #242:n kuratoidun GI-rekisterin suunnitelma ja #241:n uuden reseptin putki säilyvät yksilöllisinä suunnitelmina.
+3. **Julkaisuvalmistelu:** #227:n Kerala-/maksa-/kevätsipuliversiot ja #210:n EDEKA-granola tarvitsevat omat sisältö- ja julkaisurajauksensa. #271:n kahdeksan version jatko on jo mainin #276:ssa; suljettu historia säilyy aiemmassa osassa.
+4. **Käännökset:** #278 on turvallisesti katselmoitavissa: 96 paria, yhteiset rekisterit ja hyväksyttyjen FI-snapshotien SHA-sidokset on koottu yhteen. CI läpäisi. Aiemmin kirjatut FI-lähteiden P2-havainnot säilyvät.
+5. **Recipavo ja käyttöliittymä:** #172, #176, #178 ja #243 ovat neljä erillistä arkkitehtuuri-/tuote-/käyttöönottopäätöstä. #119:n suodatin- ja aikanäyttö on erillinen käyttöliittymäkatselmointi. Näitä ei suljeta aihepiirin samankaltaisuuden vuoksi.
+6. **Riippuvuudet:** koottu #116 on turvallisesti katselmoitavissa. #277:n historiaviite voidaan katselmoida dokumentaationa. #100 jää käyttäjän ohjeella sivuun.
+
+#280 ja #278 muuttavat kumpikin npm-testiluetteloa; kummankin uudet testit on säilytettävä myöhemmässä integraatiossa. #116:n riippuvuusrivit on puolestaan säilytettävä samassa package.json-tiedostossa. Niiden yhdistäminen mainiin jää erikseen valtuutettavaan vaiheeseen.
+
+Ajantasaiset kaikkien 26 avoimen PR:n HEADit, muutospolut, CI, katselmoinnit, merge-tila ja luokitus ovat JSON-raportin `normalizationFollowUp.openPullRequests`-kentässä. Aiemmat luokitukset ja tositteet säilyvät historiallisina tilannekuvina.
+
+## Aiemmat jatkokorjaukset 5.11.2026 (32 → 28)
 
 Käyttäjä pyysi jättämään Nutriticsin toistaiseksi sivuun ja ratkaisemaan muista mahdollisimman monta. Hän vahvisti myös kuvalla aktiivisen valinnan GPT-6.1 Sol Highksi.
 
@@ -26,13 +69,13 @@ Mainin erillisestä worktreestä tuotettuja tietoja verrattiin integraatioon. Ka
 
 [Nykyinen #223](https://github.com/ozirix-dev/Reseptit/pull/223) ja [CI 41976660314](https://github.com/ozirix-dev/Reseptit/actions/runs/41976660314).
 
-### Nyky-mainin normalisointihavainto
+### Korjauksen lähtöhavainto (#280 ratkaisi)
 
 #168:n koodi tarkistettiin nyky-mainin merge-tree-esikatselussa. Nutrition-modelin 18/18 testiä läpäisi, mutta GK-kokonaisajo pysähtyi kohtaan site/scripts/gk-next-seven.ts:50 virheellä Pad shared evidence changed: site/scripts/nutrition-model.ts. Pad see ew -paketti sitoo laskentamoduulin tarkan version. Jatkoluokka on BLOCKED teknisen yhteensopivuusintegraation vuoksi. Muutos tarvitsee nyky-mainin julkaistujen pakettien moduuliversioiden rajatun yhteensovituksen ja 326 tuloksen regression. Esikatselun lähdetiedostot palautettiin alkuperäisiin tavuihin.
 
 [Havainto PR #168:ssa](https://github.com/ozirix-dev/Reseptit/pull/168#issuecomment-6650908507).
 
-### Avoimen jonon nykyinen järjestys
+### Aiemman jatkovaiheen jonojärjestys
 
 1. Oikeellisuus ja normalisointi. #182, #133, #169, #181, #180 ja #226. #168:n moduuliversioeste ratkaistaan ennen mahdollista integraatiota.
 2. GK-infrastruktuuri ja lähteet. #255, #231, #242 ja #241. #223 säilyy varalla.
