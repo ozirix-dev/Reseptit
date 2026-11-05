@@ -39,7 +39,7 @@ T0 voidaan suunnitella nykyisen julkisen sivuston rinnalla; **T1–T4 eivät kuu
 
 ## Julkisen reseptiehdotuksen kaksivaiheinen hyväksyntäportti (T4)
 
-**Tuotepäätös:** käyttäjä **saa ehdottaa** omaa tai muuten asianmukaisin käyttöoikeuksin ehdotettavaa reseptiä julkiseen Recipavo/Reseptit-kirjastoon. Ehdottaminen on eri toiminto kuin yksityiseen kokoelmaan tallentaminen. **Vain alustavan samankaltaisuustarkistuksen läpäisevä ehdotus pääsee normaalisti omistajan toimitukselliseen hyväksyntäjonoon.** Lopullinen hyväksyjä on palvelun omistaja, ei algoritmi. Mikään vaihe ei itsessään tarkoita julkaisua.
+**Tuotepäätös:** käyttäjä **saa ehdottaa** omaa tai muuten asianmukaisin käyttöoikeuksin ehdotettavaa reseptiä julkiseen Recipavo/Reseptit-kirjastoon. Ehdottaminen on eri toiminto kuin yksityiseen kokoelmaan tallentaminen. **Vain alustavan samankaltaisuustarkistuksen läpäisevä ehdotus pääsee normaalisti omistajan toimitukselliseen hyväksyntäjonoon.** **Omistajalla on ehdoton, viimekätinen toimituksellinen päätösvalta**: hän voi hyväksyä, hylätä tai jättää ehdotuksen odottamaan oman harkintansa mukaan. Hylkäämistä ei tarvitse perustella ehdottajalle. Algoritmi ei voi kumota päätöstä. Mikään vaihe ei itsessään tarkoita julkaisua.
 
 ### Käyttäjän polku
 
@@ -49,9 +49,9 @@ T0 voidaan suunnitella nykyisen julkisen sivuston rinnalla; **T1–T4 eivät kuu
    - `NO_MATERIAL_MATCH`: ei olennaisesti samanlaista reseptiä → `OWNER_REVIEW_PENDING` (omistajan henkilökohtainen hyväksyntäjono), edelleen **ei julkaistu**.
    - `MATERIAL_DUPLICATE`: käytännössä sama resepti → **ei läpäise alkuporttia**; näytä käyttäjälle tunnistetun **julkisen** reseptin linkki ja ymmärrettävä ero-/päällekkäisyysselitys; tarjoa “muokkaa ehdotusta”, “tallenna vain itselle” ja “perustele merkittävä ero”. Älä automaattisesti avaa PR:ää.
    - `UNCERTAIN` tai tarkistus epäonnistuu → **ei läpäise automaattista alkuporttia**; anna selkeä tarkennus-/uudelleenyritys- tai rajattu ylläpitäjän poikkeustarkistuspolku. Älä väitä ettei duplikaattia ole. Mahdollinen poikkeus vaatii omistajan dokumentoidun tietoisen päätöksen, ei algoritmin hiljaista ohitusta.
-4. Omistajan käsittely: **hyväksy jatkovalmisteluun / pyydä muutoksia / hylkää**; näytä ehdotus, koostettu vertailutulos perusteluineen, julkiset vertailureseptit ja lähde-/käyttöoikeustila. Omistajalle ei lähetetä automaattisesti kaikkia käyttäjien omia yksityisiä reseptejä.
+4. Omistajan käsittely: **hyväksy jatkovalmisteluun / pyydä muutoksia / hylkää**; näytä ehdotus, koostettu vertailutulos ja sen sisäiset perustelut, julkiset vertailureseptit ja lähde-/käyttöoikeustila. **Omistajalla on yksinomainen viimeinen sana, eikä hylkäykselle tarvitse antaa käyttäjälle syytä.** Sisäiseen tapahtumalokiin riittää päätös, tekijä, ajankohta ja reseptiversio; vapaaehtoinen perustelumuistio jää vain toimituksen käyttöön. Omistajalle ei lähetetä automaattisesti kaikkia käyttäjien omia yksityisiä reseptejä.
 5. Vasta omistajan **erillisellä hyväksynnällä** ehdotus siirtyy toimitukselliseen valmisteluun (ainekset, rakenteet, realistinen valmistus, ravintoarvot, GK:n näyttö tai HOLD, kuvaoikeudet, neljä kieltä ja tarkistukset) ja tämän jälkeen tarvittaessa **Draft-PR**:ksi. Lopullinen julkaisulupa, merge ja deploy ovat oma päätösporttinsa. Aiempi omistajan sisällöllinen hyväksyntä ei ole merge/deploy-lupa.
-6. Kerro käyttäjälle ehdotuksen tila (esim. `tarkistuksessa`, `samankaltainen löytyi`, `toimituksen arvioitavana`, `lisätietoja pyydetty`, `hyväksytty valmisteluun`, `hylätty`) paljastamatta muiden käyttäjien yksityisiä reseptejä tai toimituksen sisäisiä tietoja. Hylätty ehdotus **ei poista** yksityistä reseptiä.
+6. Kerro käyttäjälle vain ehdotuksen tila (esim. `tarkistuksessa`, `samankaltainen löytyi`, `toimituksen arvioitavana`, `lisätietoja pyydetty`, `hyväksytty valmisteluun`, `hylätty`) paljastamatta muiden käyttäjien yksityisiä reseptejä tai toimituksen sisäisiä tietoja. Omistajan hylkäyksestä annetaan neutraali ilmoitus, esimerkiksi **“Reseptiehdotusta ei hyväksytty julkiseen reseptikirjastoon. Kiitos ehdotuksesta.”** Ei automaattista perustelua, yksityiskohtaista selontekoa, väittely-/valitusprosessia tai lupausta uudelleenarvioinnista. Mahdolliset laissa pakolliset ilmoitukset tai perustelut hoidetaan erikseen sovellettavien velvoitteiden mukaisesti. Hylätty ehdotus **ei poista** yksityistä reseptiä.
 
 ### Mitä “samankaltainen resepti” tarkoittaa
 
@@ -77,7 +77,7 @@ PublicRecipeSubmission:
   workflow_status: DRAFT | DUPLICATE_BLOCKED | CLARIFICATION_NEEDED |
                    OWNER_REVIEW_PENDING | CHANGES_REQUESTED | REJECTED |
                    APPROVED_FOR_PREPARATION | EDITORIAL_DRAFT
-  owner_decision: { decision?, actor_id?, at?, reason?, proposal_revision? }
+  owner_decision: { decision?, actor_id?, at?, internal_note_optional?, proposal_revision? }
 ```
 
 **Revisiointi:** materiaalinen muutos aineksiin, annoksiin tai valmistustapaan nollaa aiemman duplikaattitarkistuksen ja mahdollisen sisällöllisen hyväksynnän. Julkaisuvientiä varten vain erikseen hyväksytty toimituksellinen snapshot — ei henkilökohtaisia muistiinpanoja, päiväkirjoja, kontakteja tai piilotettuja metatietoja. Vertailu pidetään hallinnollisesti luettavana ja lokitus minimissä.
@@ -159,7 +159,7 @@ PrivateRecipe:
 | Saman ruokalajin merkittävästi eri pohja / menetelmä | Erottuva ehdotus voi läpäistä portin; esimerkkejä Margherita, Pofiber ja raejuustopizza. |
 | Osuma vain toisen käyttäjän käsittelyssä olevaan ehdotukseen | Ei vuoda muiden ehdotustekstejä tai omistajatietoja; pidetään alkuportissa ilman automaattista julkaisua. |
 | Epävarma / epäonnistunut vertailu | Ei automaattista läpäisyä; tarkennus tai omistajan dokumentoitu poikkeustarkistus. |
-| Omistaja hylkää tai pyytää muutoksia | Ehdotus ei etene julkaisuun; käyttäjän oma yksityinen resepti säilyy. |
+| Omistaja hylkää tai pyytää muutoksia | Ehdotus ei etene julkaisuun; hylkäysviesti on neutraali ilman julkisia perusteluja, yksityinen resepti säilyy. Päätös ja versio kirjataan toimituksen sisäisesti. |
 | Omistaja hyväksyy jatkovalmisteluun | Toimituksellinen draft ja mahdollinen erillinen GitHub-PR; ei itsestään mergeä eikä deployta. |
 
 ## Suorituskyky, kustannukset ja hyöty
