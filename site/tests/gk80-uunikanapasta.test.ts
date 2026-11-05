@@ -1,3 +1,4 @@
+import {isP1CoconutHold,assertP1CoconutHold} from './p1-coconut-hold-guard';
 import {restorePreEHold} from './restore-pre-ehold';
 import test from 'node:test';
 import assert from 'node:assert/strict';
@@ -75,7 +76,9 @@ test('recovery historical main131 regression changes exactly one object and reta
  let changed=0,preservedNumeric=0;
  for(const b of base.resultHashes){const r=actual.results.find((r:any)=>r.recipeId===b.recipeId);assert.ok(r);
   if(b.recipeId===recoveryRecipeId){assert.equal(b.status,'INSUFFICIENT SOURCE DATA');assert.equal(r.status,'CALCULATED');assert.equal(r.glycemicLoadPerServing,3);assert.equal(r.unroundedGlycemicLoadPerServing,null);assert.equal(r.closedRecoveryC,true);changed++;}
-  else{assert.equal(sha(r),b.sha256,b.recipeId);if(b.status==='CALCULATED')preservedNumeric++;}
+  else{if(isP1CoconutHold(r.recipeId))assertP1CoconutHold(r);
+   else assert.equal(sha(r),b.sha256,b.recipeId);
+   if(b.status==='CALCULATED')preservedNumeric++;}
  }
  assert.equal(changed,1);assert.equal(preservedNumeric,130);
  const pub=glycemicLoadPilotResults.find(r=>r.recipeId===recoveryRecipeId)!;assert.equal(pub.closedRecoveryC,true);assert.equal(pub.confidence,'LOW');
