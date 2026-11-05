@@ -268,8 +268,10 @@
       "Spring-onion 15 g/piece refers to edible bulb/stem; actual edible part and mass must match."
     ],
     "baozi": [
-      "Steamed/fermented preparation and cabbage GI remain unsupported.",
-      "Cornstarch mass/identity is supported; its steamed-filling GI is not supplied by raw-starch research."
+      "The primary food family is closer than barbecue pork buns, but flour/filling ratios, product formula and prepared mass are not provided.",
+      "Current macro evidence binds cornstarch to a potato-starch record and uses an old soy tablespoon mass; the displayed80.36 g CHO is not newly validated by this source.",
+      "Cabbage drainage, yeast/ginger assumptions and complete retained available carbohydrate need a bounded source review.",
+      "Do not assign whole-bun GI to raw flour, use tableGL14 as the home serving result, or convertSD13 into a scenario range. Existing Sun study comparison stays separate."
     ],
     "koshari": [
       "14 g cornstarch mass is supported; frying/coating GI and other existing model blockers remain."
@@ -278,13 +280,19 @@
       "Current approved version is a separate scope and remains unchanged. Candidate pea/preparation GI and other model blockers are unresolved."
     ],
     "kreikkalainen-moussaka": [
-      "Preserve scoped cooked-tomato analogue; other proposed category transfers require food/preparation support. Do not import boiled-potato GI into roasted/baked potato."
+      "Table row composition times experimental mass gives29.9936 g while the marked protocol footnote specifies25 g for test and reference; preserve both without rescaling measuredGI.",
+      "Historical commercial lamb product and current homemade beef/roux casserole are distinct; historical proportions, yield and reheating equivalence are not established.",
+      "The60 g roux flour contributes7.3998 g CHO/serving and cannot be omitted or assigned whole-meal GI.",
+      "The existing11.277 conditional arithmetic is not an approved home estimate; SEM8 is not a recipe scenario or biological range."
     ],
     "japanilainen-soba-aamiaiskeitto": [
       "Soba product/fraction/preparation and spinach mass are unresolved."
     ],
     "indonesialainen-bubur-sumsum": [
-      "Gelatinised rice-flour preparation and palm-sugar identity/composition remain unresolved."
+      "User explicitly preserved HOLD for150 g pandan; do not guess leaves, extraction, removal or edible fraction.",
+      "Palm species/product, coconut-milk density/composition and water-or-broth choice remain unresolved; no complete macro package is established.",
+      "Rice-flour/coconut porridge preparation is not a measured rice-grain GI transfer.",
+      "Registry66.35 and generic claims35/72 cannot be assigned to this unspecified sugar or complete recipe."
     ],
     "masala-dosa": [
       "100 g urad-dal is not green/brown lentil; matched raw lead is IFCT B003.",
@@ -445,5 +453,155 @@
       "snapshotSha256": "72794319f27994395dbb90478e6102171914d487776943fee68711e689da1dd7",
       "distinction": "Approved GK-only version uses six named Saníssimo tostadas72 g, not the original generic100 g tortilla input. Retain product, mass and comparator limits."
     }
+  },
+  "deepOriginalCaseReview": {
+    "reviewedPrHead": "2a8c4d0c33dfde88bda838ededd3846fb8b384c0",
+    "productionDataModified": false,
+    "sourceApprovalGranted": false,
+    "publicationAuthorized": false,
+    "cards": {
+      "baozi": {
+        "recipePath": "reseptit/paaruoat/baozi.md",
+        "macroPath": "docs/nutrition/calculations/baozi.json",
+        "status": "HOLD_TRANSFER_AND_CARBOHYDRATE_SCOPE",
+        "sourceAvailabilityResolved": true,
+        "publishedGlycemicLoadPerServing": null,
+        "transferApproved": false,
+        "wholeRecipeCarbohydrateApproved": false,
+        "primarySource": {
+          "title": "Yang et al.2006, Glycemic index of cereals and tubers produced in China",
+          "url": "https://www.wjgnet.com/1007-9327/full/v12/i21/3430.htm",
+          "doi": "10.3748/wjg.v12.i21.3430",
+          "pdfSha256": "6ee8060ef4e6ba5efcd315cb3c7c23ebb584c249e7575e2ca8f0dacfd111a4eb",
+          "pdfPage": 3,
+          "table": 2,
+          "testFood": "Steamed stuffed bun with shallot and meat",
+          "giMean": 39.1,
+          "spread": 13.0,
+          "spreadType": "SD",
+          "subjects": 10,
+          "reference": "GLUCOSE_100",
+          "testCarbohydrateG": 50,
+          "durationHours": 2
+        },
+        "crossCheck": {
+          "reference": "Atkinson2021 Supplemental Table1 row2048, PDFp136",
+          "sha256": "e930c4a090697abd4f7331a64837b524cf4701513cbb9865a739f4f9fb131061",
+          "giRounded": 39,
+          "semRounded": 4,
+          "recipeFormulaProvided": false,
+          "testPortionMassProvided": false,
+          "reportedServingGl": 14,
+          "servingGlIsHomeRecipeResult": false
+        },
+        "safeComponentCorrections": [
+          {
+            "ingredient": "maissitärkkelystä",
+            "oldMacroRecordId": "fineli-162-release-20",
+            "oldMacroGrams": 8,
+            "oldCarbohydratePer100g": 81.6,
+            "candidateRecordId": "fineli-27-2026-10-25",
+            "candidateGrams": 7,
+            "candidateCarbohydratePer100g": 86,
+            "carbohydrateDeltaPerServingG": -0.127
+          },
+          {
+            "ingredient": "soijakastiketta",
+            "oldMacroGrams": 30,
+            "candidateGrams": 36,
+            "carbohydratePer100g": 9.5,
+            "carbohydrateDeltaPerServingG": 0.1425
+          }
+        ],
+        "componentDeltaSumPerServingG": 0.0155,
+        "componentDeltaIsWholeMacroCorrection": false,
+        "holdReasons": [
+          "The primary food family is closer than barbecue pork buns, but flour/filling ratios, product formula and prepared mass are not provided.",
+          "Current macro evidence binds cornstarch to a potato-starch record and uses an old soy tablespoon mass; the displayed80.36 g CHO is not newly validated by this source.",
+          "Cabbage drainage, yeast/ginger assumptions and complete retained available carbohydrate need a bounded source review.",
+          "Do not assign whole-bun GI to raw flour, use tableGL14 as the home serving result, or convertSD13 into a scenario range. Existing Sun study comparison stays separate."
+        ],
+        "nextEvidenceNeeded": "Document matched dough/filling/preparation and a complete source-bound retained-CHO calculation, or define a separately reviewed exact version. Source study discovery alone is not application approval."
+      },
+      "kreikkalainen-moussaka": {
+        "recipePath": "reseptit/paaruoat/kreikkalainen-moussaka.md",
+        "macroPath": "docs/nutrition/calculations/kreikkalainen-moussaka.json",
+        "status": "HOLD_PREPARED_PRODUCT_TRANSFER",
+        "sourceAvailabilityResolved": true,
+        "publishedGlycemicLoadPerServing": null,
+        "transferApproved": false,
+        "wholeRecipeCarbohydrateApproved": false,
+        "primarySource": {
+          "title": "Henry et al.2005, commercially available UK products",
+          "doi": "10.1079/BJN20051594",
+          "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/39502DB89C8FDD82CFCEF46EFBDED5E4/S0007114505002692a.pdf/div-class-title-glycaemic-index-and-glycaemic-load-values-of-commercially-available-products-in-the-uk-div.pdf",
+          "pdfSha256": "1f1c8e05e5d0b435de2f01e7b1a4bca5f2f6ecfd9566e90cfbee31a4a995a78d",
+          "table": 2,
+          "row": 60,
+          "pdfPage": 5,
+          "testFood": "Tesco Finest lamb moussaka",
+          "giMean": 35,
+          "spread": 8,
+          "spreadType": "SEM",
+          "subjects": 10,
+          "reference": "GLUCOSE_100",
+          "footnoteProtocolCarbohydrateG": 25,
+          "reportedFoodCarbohydratePer100g": 9.1,
+          "reportedExperimentalMassG": 329.6,
+          "derivedCarbohydrateG": 29.9936
+        },
+        "holdReasons": [
+          "Table row composition times experimental mass gives29.9936 g while the marked protocol footnote specifies25 g for test and reference; preserve both without rescaling measuredGI.",
+          "Historical commercial lamb product and current homemade beef/roux casserole are distinct; historical proportions, yield and reheating equivalence are not established.",
+          "The60 g roux flour contributes7.3998 g CHO/serving and cannot be omitted or assigned whole-meal GI.",
+          "The existing11.277 conditional arithmetic is not an approved home estimate; SEM8 is not a recipe scenario or biological range."
+        ],
+        "nextEvidenceNeeded": "Matched historical recipe/product proportions and preparation/yield, or a separately reviewed whole-beef-moussaka/roux component route. Current retail composition cannot establish the2005 tested batch."
+      },
+      "indonesialainen-bubur-sumsum": {
+        "recipePath": "reseptit/aamupalat/indonesialainen-bubur-sumsum.md",
+        "macroPath": null,
+        "status": "HOLD_OWNER_CONTENT_AND_SOURCE_IDENTITY",
+        "sourceAvailabilityResolved": false,
+        "publishedGlycemicLoadPerServing": null,
+        "transferApproved": false,
+        "wholeRecipeCarbohydrateApproved": false,
+        "ownerDecision": {
+          "date": "2026-11-05",
+          "questionScope": "150 g pandan; edible ingredient or removed aromatic leaves",
+          "answer": "Unknown; preserve HOLD",
+          "recipeChanged": false
+        },
+        "primaryLead": {
+          "title": "UMIN000023807 palm-sugar crossover trial",
+          "url": "https://center6.umin.ac.jp/cgi-open-bin/ctr_e/ctr_view.cgi?recptno=R000027299",
+          "retainedHtmlSha256": "5cbeacc258b256897f5bde320e905c65b2e901cd5ec419cf5860195b407ca28e",
+          "completedSubjects": 12,
+          "consentedSubjects": 14,
+          "reference": "GLUCOSE_100",
+          "testCarbohydrateG": 50,
+          "reportedPalmSugarGiMean": 66.35,
+          "reportedSd": 16.64,
+          "journalPublicationStatus": "Unpublished",
+          "targetProductIdentityMatched": false,
+          "decision": "REGISTRY_RESULT_VERIFIED; not a universal palm-sugar GI and not an approved recipe source"
+        },
+        "rejectedNumericShortcut": {
+          "claimedFoodGi": 72,
+          "source": "https://itokindo.org/wp-content/uploads/tabel-indeks-glikemik-IG-untuk-120-makanan-populer-di-Indonesia-r1.pdf",
+          "decision": "No traceable primary human protocol/test recipe was established in this bounded search; do not import the number",
+          "isVerifiedGi": false
+        },
+        "holdReasons": [
+          "User explicitly preserved HOLD for150 g pandan; do not guess leaves, extraction, removal or edible fraction.",
+          "Palm species/product, coconut-milk density/composition and water-or-broth choice remain unresolved; no complete macro package is established.",
+          "Rice-flour/coconut porridge preparation is not a measured rice-grain GI transfer.",
+          "Registry66.35 and generic claims35/72 cannot be assigned to this unspecified sugar or complete recipe."
+        ],
+        "nextEvidenceNeeded": "Resolve the pandan food scope, choose a documented coconut milk and sugar product/species, specify the actual liquid and bind a complete recipe before any whole-food GI application."
+      }
+    },
+    "concurrentWork": "Other active GK100 chat inspected read-only; its current task concerns semolina, not these cases. No other worktree or branch was edited.",
+    "researchLimit": "Primary studies, tables and retained packets checked. No contact with authors, automatic source adoption or missing owner approval was performed."
   }
 }

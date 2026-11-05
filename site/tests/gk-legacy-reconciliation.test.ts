@@ -125,7 +125,26 @@ test('current-main133/226 candidates preserve production input, approved EHOLD r
 
 });
 
-test('independent Decimal checks seven source components without approving a whole recipe or sub-threshold omission',()=>{
+test('independent Decimal checks source components and the three original-case numeric traps without approving a whole recipe or sub-threshold omission',()=>{
  const proof=JSON.parse(execFileSync(process.platform==='win32'?'python':'python3',['-I',fileURLToPath(new URL('../../docs/nutrition/gk-legacy-reconciliation/verify_source_components.py',import.meta.url))],{encoding:'utf8'}));
- assert.equal(proof.status,'PASS');assert.equal(proof.checked,7);assert.equal(proof.publicationAuthorized,false);
+ assert.equal(proof.status,'PASS');assert.equal(proof.checked,12);assert.equal(proof.publicationAuthorized,false);
+});
+
+test('three original-case source cards cannot reuse a whole-food GI as a home result or ignore changed recipe/macro content',()=>{
+ const manifest=json('docs/nutrition/gk-legacy-reconciliation/candidates.json');
+ const review=verifyLegacyReviewEvidence(read,manifest);
+ const cards=review.deepOriginalCaseReview.cards;
+ assert.equal(cards.baozi.primarySource.giMean,39.1);
+ assert.equal(cards.baozi.primarySource.spreadType,'SD');
+ assert.equal(cards.baozi.crossCheck.servingGlIsHomeRecipeResult,false);
+ assert.equal(cards['kreikkalainen-moussaka'].primarySource.footnoteProtocolCarbohydrateG,25);
+ assert.equal(cards['indonesialainen-bubur-sumsum'].ownerDecision.answer,'Unknown; preserve HOLD');
+ for(const id of Object.keys(cards)){
+  const result=report.results.find((r:any)=>r.recipeId===id);
+  assert.equal(result.glycemicLoadPerServing,null);assert.equal(result.status,'INSUFFICIENT SOURCE DATA');
+ }
+ assert.throws(()=>verifyLegacyReviewEvidence(p=>read(p)+(p===cards.baozi.recipePath?'changed':'') ,manifest),/Reviewed recipe\/macro text changed/);
+ assert.throws(()=>verifyLegacyReviewEvidence(p=>read(p)+(p===cards.baozi.macroPath?'changed':'') ,manifest),/Reviewed recipe\/macro text changed/);
+ const missing=structuredClone(manifest);missing.reviewTextSnapshots.pop();
+ assert.throws(()=>verifyLegacyReviewEvidence(read,missing),/Missing reviewed recipe\/macro text snapshot/);
 });

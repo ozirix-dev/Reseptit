@@ -21,6 +21,15 @@ export function verifyLegacyReviewEvidence(read:(path:string)=>string,manifest:a
  const raw=read(manifest.sourceReviewPath).replaceAll('\r\n','\n');
  if(createHash('sha256').update(raw).digest('hex')!==manifest.sourceReviewSha256Lf)throw Error('Source review changed; refresh its bound assessment');
  const review=JSON.parse(raw);
+ const cards=review.deepOriginalCaseReview?.cards;
+ if(!cards||JSON.stringify(Object.keys(cards).sort())!==JSON.stringify(['baozi','indonesialainen-bubur-sumsum','kreikkalainen-moussaka']))throw Error('Missing original-case research scope');
+ const paths=[...new Set(Object.values(cards).flatMap((c:any)=>[c.recipePath,c.macroPath]).filter(Boolean))].sort();
+ const pins=manifest.reviewTextSnapshots??[];
+ if(JSON.stringify(paths)!==JSON.stringify(pins.map((p:any)=>p.path).sort()))throw Error('Missing reviewed recipe/macro text snapshot');
+ for(const pin of pins){
+  if(createHash('sha256').update(read(pin.path).replaceAll('\r\n','\n')).digest('hex')!==pin.sha256Lf)throw Error('Reviewed recipe/macro text changed: '+pin.path);
+ }
+
  for(const id of new Set<string>(review.giDecisions.map((d:any)=>d.giRecordId))){
   if(manifest.reviewEvidenceSnapshots.filter((p:any)=>p.path==='docs/nutrition/glycemic-index-records.json'&&p.id===id).length!==1)throw Error('Missing reviewed GI source snapshot: '+id);
  }
@@ -60,7 +69,7 @@ export function prepareLegacyGkCandidates(root:string) {
  const foods=JSON.parse(read('docs/nutrition/food-records.json'));
  const gis=JSON.parse(read('docs/nutrition/glycemic-index-records.json')).records;
  return {baseMain:manifest.baseMain,publicationAuthorized:false,sourceApprovalGranted:false,
-  contentDecisions:review.giDecisions,
+  contentDecisions:review.giDecisions,originalCaseResearch:review.deepOriginalCaseReview,
   pendingDecisions:review.giDecisions.filter((r:{action:string;recipeId:string})=>r.action==='WITHDRAW_GI_FROM_REVIEW_CANDIDATE'&&!review.currentSuccessors[r.recipeId].scope.startsWith('CURRENT_APPROVED_')),
   candidates:[...ids].map(recipeId=>{
    const before=inputs.find(r=>r.recipeId===recipeId)!;
