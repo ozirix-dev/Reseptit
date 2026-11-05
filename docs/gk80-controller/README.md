@@ -15,7 +15,7 @@ Tämän työkalun tarkoitus on estää Reseptit-projektin 30 reseptin GK80-työt
 | Paikalliset checkpointit ja JSONL-lokit | Kyllä |
 | Työpuun, Git-originin ja branchin tarkistus | Kyllä |
 | Päällekkäisten recipe-ID:iden esto työjonossa | Kyllä |
-| VERIFIED-vaatimukset: lähteet, määrät, GI, poisjättö, hash | Kyllä, rakenteellinen portti |
+| VERIFIED-vaatimukset: lähteet, määrät, GI, poisjättö, kaksi todellista tiedosto-SHA:ta | Kyllä, rakenteellinen portti |
 | Tieteellinen riippumaton GK-varmennus | Ei |
 | Reaaliaikainen main/PR-kattavuussynkronointi | Ei; nimetty Codex tarkistaa |
 | Automatisoitu GitHub PR, merge tai deploy | Ei |
@@ -123,12 +123,15 @@ Tämä luo tutkimuspakettiin tiedoston docs/research/gk80-batch30/HANDOFF.md, jo
 - Controllerin sandbox-käynnistys ei ole täydellinen tekninen verkko- tai git-toimien esto; myös repo_guard, Git-branchin omistajuus ja julkaisupäätökset ovat voimassa.
 - Automaatio ei käynnisty itsestään eikä toimi Windows-palveluna tai taustalla.
 - Älä pane yksityisiä avaimia, henkilötietoja tai muita salaisuuksia työjonoon tai lokeihin.
-- Virheellinen työjono pysäyttää seuraavan vuoron ja palautetaan viimeiseen kelvolliseen jonoon; epävarma tapaus ei mene automaattisesti VERIFIED-tilaan.
+- Keskeytetty tai virheellinen työjono palautetaan edellisen vuoron muistissa olevaan jonoon, mikäli kirjoitus epäonnistui. Jos aiemman jonon evidenssitiedostojakin on muutettu, vaaditaan manuaalinen korjaus.
+- Varmennetuille resepteille vaaditaan erillinen fyysinen `inputPath`-JSON ja `evidencePath`-JSON saman tutkimushakemiston alla. Kummankin SHA lasketaan aidosta tiedostosta.
+- Ennen jokaista varsinaista vuoroa ja sen jälkeen tarkistetaan, että muokkaukset rajoittuvat `docs/research/gk80-batch30/`-tutkimushakemistoon. Koodin `STOPPED_GUARD`-tila vaatii tarkastuksen; muutoksia ei poisteta automaattisesti.
+- Windowsissa STOP voi katkaista suoranaisen Codex CLI -prosessin mutta ei välttämättä kaikkia sen mahdollisesti käynnistämiä lapsiprosesseja. Tarkista prosessit ennen uutta ajoa.
 
 ## Rajatut testit
 
 ~~~powershell
-py -3 -m unittest discover -s tools/tests -p 'test_gk80_controller.py'
+py -3 "$worktree\tools\tests\test_gk80_controller.py"
 ~~~
 
 Testit käyttävät paikallista väliaikaista Git-repoa, eivät Codexia tai verkkoa. Ne kattavat alkuperän tarkistuksen, tilan talletuksen, dry-runin, pysäytyksen, lukon, virheelliset ID:t, lähde- ja SHA-256-portit. Ei koko 326 reseptin laskenta-ajoja eikä GitHub Actions -uusintoja.

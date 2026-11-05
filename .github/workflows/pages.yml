@@ -83,6 +83,18 @@ jobs:
           }
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 
+      - name: Run GK80 controller safety unit tests when changed
+        if: github.event_name == 'pull_request'
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        shell: bash
+        run: |
+          changed=$(git diff --name-only "$BASE_SHA" "$HEAD_SHA" --)
+          if printf '%s\n' "$changed" | grep -F -e 'tools/gk80_controller.py' -e 'tools/tests/test_gk80_controller.py'; then
+            python3 -m unittest discover -s tools/tests -p test_gk80_controller.py
+          fi
+
       - name: Install site dependencies
         if: steps.select.outputs.needs_node == 'true'
         run: npm ci
