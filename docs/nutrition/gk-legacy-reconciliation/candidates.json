@@ -1,0 +1,413 @@
+{
+  "baseMain": "081ba2c95f9243c1ed72206073160f9e64992e96",
+  "inputFileLfSha256": "fd6f066050ac8b11ef651bacc8af86ba395116586c354f436846b5372dde152b",
+  "publicationAuthorized": false,
+  "sourceApprovalGranted": false,
+  "productionInputModified": false,
+  "patches": [
+    {
+      "pr": 133,
+      "recipeId": "bulgogi",
+      "ingredient": "kevätsipulia",
+      "changes": {
+        "grams": 30,
+        "massEvidence": "R2: AFCD Release 3 F006250 measurements lists Spring Onion, 15 g. 2 recipe pieces x 15 g = 30 g edible reference portion; this is a food-specific portion estimate, not a weighing. Source: https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F006250. Analysed bulb/stem and excluded tops/roots are documented in gk-r2-source-review.json; no second 78% deduction."
+      },
+      "evidence": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F006250"
+    },
+    {
+      "pr": 133,
+      "recipeId": "baozi",
+      "ingredient": "kevätsipulia",
+      "changes": {
+        "grams": 30,
+        "massEvidence": "R2: AFCD Release 3 F006250 measurements lists Spring Onion, 15 g. 2 recipe pieces x 15 g = 30 g edible reference portion; this is a food-specific portion estimate, not a weighing. Source: https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F006250. Analysed bulb/stem and excluded tops/roots are documented in gk-r2-source-review.json; no second 78% deduction."
+      },
+      "evidence": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F006250"
+    },
+    {
+      "pr": 133,
+      "recipeId": "bulgogi",
+      "ingredient": "soijakastiketta",
+      "changes": {
+        "grams": 72,
+        "massEvidence": "R2: Fineli Release 20 #31 foodaddunit MASS: DL=120 g, RKL=18 g, TL=6 g. 60 ml x (120 g/dl / 100 ml/dl) = 72 g. Same soy-sauce composition; no generic water density. See gk-r2-source-review.json."
+      },
+      "evidence": "https://fineli.fi/fineli/fi/elintarvikkeet/31"
+    },
+    {
+      "pr": 133,
+      "recipeId": "baozi",
+      "ingredient": "soijakastiketta",
+      "changes": {
+        "grams": 36,
+        "massEvidence": "R2: Fineli Release 20 #31 foodaddunit MASS: DL=120 g, RKL=18 g, TL=6 g. 2 rkl x 18 g/rkl = 36 g. Same soy-sauce composition; no generic water density. See gk-r2-source-review.json."
+      },
+      "evidence": "https://fineli.fi/fineli/fi/elintarvikkeet/31"
+    },
+    {
+      "pr": 133,
+      "recipeId": "yangzhou-paistettu-riisi",
+      "ingredient": "soijakastiketta",
+      "changes": {
+        "grams": 36,
+        "massEvidence": "R2: Fineli Release 20 #31 foodaddunit MASS: DL=120 g, RKL=18 g, TL=6 g. 2 rkl x 18 g/rkl = 36 g. Same soy-sauce composition; no generic water density. See gk-r2-source-review.json.",
+        "estimatedAvailableCarbohydratePerServingG": 0.855
+      },
+      "evidence": "https://fineli.fi/fineli/fi/elintarvikkeet/31"
+    },
+    {
+      "pr": 133,
+      "recipeId": "baozi",
+      "ingredient": "maissitärkkelystä",
+      "changes": {
+        "grams": 7,
+        "massEvidence": "R2: Fineli Release 20 #27 corn starch, CHOAVL=86 g/100 g; foodaddunit RKL=7 g. 1 recipe tbsp x 7 g = 7 g. potato starch is not a valid composition or GI substitute. Source: https://fineli.fi/fineli/fi/elintarvikkeet/27 and locked Fineli reference.",
+        "fineliRecordId": "fineli-27-2026-10-25",
+        "foodKey": "corn-starch",
+        "preparationKey": "recipe-specific-no-approved-gi"
+      },
+      "evidence": "https://fineli.fi/fineli/fi/elintarvikkeet/27"
+    },
+    {
+      "pr": 133,
+      "recipeId": "koshari",
+      "ingredient": "maissitärkkelystä",
+      "changes": {
+        "grams": 14,
+        "massEvidence": "R2: Fineli Release 20 #27 corn starch, CHOAVL=86 g/100 g; foodaddunit RKL=7 g. 2 recipe tbsp x 7 g = 14 g. potato starch is not a valid composition or GI substitute. Source: https://fineli.fi/fineli/fi/elintarvikkeet/27 and locked Fineli reference."
+      },
+      "evidence": "https://fineli.fi/fineli/fi/elintarvikkeet/27"
+    },
+    {
+      "pr": 133,
+      "recipeId": "yangzhou-paistettu-riisi",
+      "ingredient": "neutraalia öljyä",
+      "changes": {
+        "grams": 27,
+        "massEvidence": "R2: Fineli Release 20 #541 RKL=13.5 g; 2 tbsp = 27 g, not 27.4 g. Available carbohydrate remains source-documented zero.",
+        "estimatedAvailableCarbohydratePerServingG": 0
+      },
+      "evidence": "https://fineli.fi/fineli/fi/elintarvikkeet/541"
+    },
+    {
+      "pr": 226,
+      "recipeId": "masala-dosa",
+      "ingredient": "perunoita",
+      "changes": {
+        "giRecordId": "potato-boiled-preparation-analogue-gi-66",
+        "foodKey": "potato",
+        "massEvidence": "500 g edible raw potato for four; composition before boiling assumes available carbohydrate retained. Served hot in the filling.",
+        "excludedReason": null,
+        "fineliRecordId": "fineli-205-2026-10-24",
+        "giMatchEvidence": "Measured boiled potato preparation analogue; cultivar and preparation vary. Wolever et al. doi:10.1039/C1FO10042D reports 59.8 to 79.1 for freshly boiled cubes (11.59 to 15.33 GL per serving at this raw composition).",
+        "preparationKey": "boiled-unspecified"
+      },
+      "evidence": "https://github.com/ozirix-dev/Reseptit/commit/cba54cfdc00b73460c7d8b9686bc97bcbc90d834"
+    },
+    {
+      "pr": 226,
+      "recipeId": "masala-dosa",
+      "ingredient": "sinapinsiemeniä",
+      "changes": {
+        "massEvidence": "IFCT H013, 16.8 g/100 g; one teaspoon assumed to weigh 3 g",
+        "excludedReason": "Small documented available-carbohydrate contribution.",
+        "estimatedAvailableCarbohydratePerServingG": 0.126,
+        "negligibleAssumption": "IFCT H013, 16.8 g/100 g; one teaspoon assumed to weigh 3 g; four servings. https://www.nin.res.in/ebooks/IFCT2017_16122024.pdf",
+        "grams": 3
+      },
+      "evidence": "https://github.com/ozirix-dev/Reseptit/commit/cba54cfdc00b73460c7d8b9686bc97bcbc90d834"
+    },
+    {
+      "pr": 226,
+      "recipeId": "masala-dosa",
+      "ingredient": "tuoreita currylehtiä",
+      "changes": {
+        "massEvidence": "IFCT G010, 4.51 g/100 g; recipe lists 10 g",
+        "excludedReason": "Small documented available-carbohydrate contribution.",
+        "estimatedAvailableCarbohydratePerServingG": 0.11275,
+        "negligibleAssumption": "IFCT G010, 4.51 g/100 g; recipe lists 10 g; four servings. https://www.nin.res.in/ebooks/IFCT2017_16122024.pdf"
+      },
+      "evidence": "https://github.com/ozirix-dev/Reseptit/commit/cba54cfdc00b73460c7d8b9686bc97bcbc90d834"
+    },
+    {
+      "pr": 226,
+      "recipeId": "meksikolainen-paputostada-aamupalaksi",
+      "ingredient": "avokado",
+      "changes": {
+        "massEvidence": "Current Fineli 11057 Release 20: 120 g edible avocado / 2 servings at 0.77 g available carbohydrate per 100 g = 0.462 g/serving. No new GI is assigned; tortilla and cumulative omission review remain required.",
+        "giMatchEvidence": null,
+        "giRecordId": null
+      },
+      "evidence": "https://github.com/ozirix-dev/Reseptit/commit/cba54cfdc00b73460c7d8b9686bc97bcbc90d834"
+    }
+  ],
+  "decisions": [
+    {
+      "pr": 133,
+      "recipeId": "bulgogi",
+      "ingredient": "kevätsipulia",
+      "kind": "MASS_VERIFIED",
+      "decision": "PREPARED_CANDIDATE",
+      "historicalSource": "https://github.com/ozirix-dev/Reseptit/blob/020b665582f4f1ec54e56ec978581e424adc6ace/docs/nutrition/gk-r2-corrections.json"
+    },
+    {
+      "pr": 133,
+      "recipeId": "tomaatti-kananmuna-wokki",
+      "ingredient": "kevätsipulia",
+      "kind": "MASS_VERIFIED",
+      "decision": "PRESERVE_CURRENT_APPROVED_EHOLD",
+      "historicalSource": "https://github.com/ozirix-dev/Reseptit/blob/020b665582f4f1ec54e56ec978581e424adc6ace/docs/nutrition/gk-r2-corrections.json"
+    },
+    {
+      "pr": 133,
+      "recipeId": "baozi",
+      "ingredient": "kevätsipulia",
+      "kind": "MASS_VERIFIED",
+      "decision": "PREPARED_CANDIDATE",
+      "historicalSource": "https://github.com/ozirix-dev/Reseptit/blob/020b665582f4f1ec54e56ec978581e424adc6ace/docs/nutrition/gk-r2-corrections.json"
+    },
+    {
+      "pr": 133,
+      "recipeId": "bulgogi",
+      "ingredient": "soijakastiketta",
+      "kind": "MASS_CORRECTED",
+      "decision": "PREPARED_CANDIDATE",
+      "historicalSource": "https://github.com/ozirix-dev/Reseptit/blob/020b665582f4f1ec54e56ec978581e424adc6ace/docs/nutrition/gk-r2-corrections.json"
+    },
+    {
+      "pr": 133,
+      "recipeId": "tomaatti-kananmuna-wokki",
+      "ingredient": "soijakastiketta",
+      "kind": "MASS_CORRECTED",
+      "decision": "PRESERVE_CURRENT_APPROVED_EHOLD",
+      "historicalSource": "https://github.com/ozirix-dev/Reseptit/blob/020b665582f4f1ec54e56ec978581e424adc6ace/docs/nutrition/gk-r2-corrections.json"
+    },
+    {
+      "pr": 133,
+      "recipeId": "baozi",
+      "ingredient": "soijakastiketta",
+      "kind": "MASS_CORRECTED",
+      "decision": "PREPARED_CANDIDATE",
+      "historicalSource": "https://github.com/ozirix-dev/Reseptit/blob/020b665582f4f1ec54e56ec978581e424adc6ace/docs/nutrition/gk-r2-corrections.json"
+    },
+    {
+      "pr": 133,
+      "recipeId": "yangzhou-paistettu-riisi",
+      "ingredient": "soijakastiketta",
+      "kind": "MASS_CORRECTED",
+      "decision": "PREPARED_CANDIDATE",
+      "historicalSource": "https://github.com/ozirix-dev/Reseptit/blob/020b665582f4f1ec54e56ec978581e424adc6ace/docs/nutrition/gk-r2-corrections.json"
+    },
+    {
+      "pr": 133,
+      "recipeId": "baozi",
+      "ingredient": "maissitärkkelystä",
+      "kind": "FOOD_AND_MASS_CORRECTED",
+      "decision": "PREPARED_CANDIDATE",
+      "historicalSource": "https://github.com/ozirix-dev/Reseptit/blob/020b665582f4f1ec54e56ec978581e424adc6ace/docs/nutrition/gk-r2-corrections.json"
+    },
+    {
+      "pr": 133,
+      "recipeId": "koshari",
+      "ingredient": "maissitärkkelystä",
+      "kind": "MASS_CORRECTED",
+      "decision": "PREPARED_CANDIDATE",
+      "historicalSource": "https://github.com/ozirix-dev/Reseptit/blob/020b665582f4f1ec54e56ec978581e424adc6ace/docs/nutrition/gk-r2-corrections.json"
+    },
+    {
+      "pr": 133,
+      "recipeId": "yangzhou-paistettu-riisi",
+      "ingredient": "neutraalia öljyä",
+      "kind": "MASS_CORRECTED",
+      "decision": "PREPARED_CANDIDATE",
+      "historicalSource": "https://github.com/ozirix-dev/Reseptit/blob/020b665582f4f1ec54e56ec978581e424adc6ace/docs/nutrition/gk-r2-corrections.json"
+    },
+    {
+      "pr": 133,
+      "recipeId": "bulgogi",
+      "ingredient": "jasmiiniriisiä",
+      "kind": "GI_REMOVED",
+      "decision": "PREPARATION_APPLICABILITY_REVIEW_REQUIRED",
+      "historicalSource": "https://github.com/ozirix-dev/Reseptit/blob/020b665582f4f1ec54e56ec978581e424adc6ace/docs/nutrition/gk-r2-corrections.json"
+    },
+    {
+      "pr": 133,
+      "recipeId": "bulgogi",
+      "ingredient": "soijakastiketta",
+      "kind": "GI_REMOVED",
+      "decision": "PREPARATION_APPLICABILITY_REVIEW_REQUIRED",
+      "historicalSource": "https://github.com/ozirix-dev/Reseptit/blob/020b665582f4f1ec54e56ec978581e424adc6ace/docs/nutrition/gk-r2-corrections.json"
+    },
+    {
+      "pr": 133,
+      "recipeId": "bulgogi",
+      "ingredient": "fariinisokeria",
+      "kind": "GI_REMOVED",
+      "decision": "PREPARATION_APPLICABILITY_REVIEW_REQUIRED",
+      "historicalSource": "https://github.com/ozirix-dev/Reseptit/blob/020b665582f4f1ec54e56ec978581e424adc6ace/docs/nutrition/gk-r2-corrections.json"
+    },
+    {
+      "pr": 133,
+      "recipeId": "bulgogi",
+      "ingredient": "päärynää",
+      "kind": "GI_REMOVED",
+      "decision": "PREPARATION_APPLICABILITY_REVIEW_REQUIRED",
+      "historicalSource": "https://github.com/ozirix-dev/Reseptit/blob/020b665582f4f1ec54e56ec978581e424adc6ace/docs/nutrition/gk-r2-corrections.json"
+    },
+    {
+      "pr": 133,
+      "recipeId": "tomaatti-kananmuna-wokki",
+      "ingredient": "kypsää tomaattia",
+      "kind": "GI_REMOVED",
+      "decision": "PRESERVE_CURRENT_APPROVED_EHOLD",
+      "historicalSource": "https://github.com/ozirix-dev/Reseptit/blob/020b665582f4f1ec54e56ec978581e424adc6ace/docs/nutrition/gk-r2-corrections.json"
+    },
+    {
+      "pr": 133,
+      "recipeId": "tomaatti-kananmuna-wokki",
+      "ingredient": "keitettyä riisiä",
+      "kind": "GI_REMOVED",
+      "decision": "PRESERVE_CURRENT_APPROVED_EHOLD",
+      "historicalSource": "https://github.com/ozirix-dev/Reseptit/blob/020b665582f4f1ec54e56ec978581e424adc6ace/docs/nutrition/gk-r2-corrections.json"
+    },
+    {
+      "pr": 133,
+      "recipeId": "tomaatti-kananmuna-wokki",
+      "ingredient": "sokeria",
+      "kind": "GI_REMOVED",
+      "decision": "PRESERVE_CURRENT_APPROVED_EHOLD",
+      "historicalSource": "https://github.com/ozirix-dev/Reseptit/blob/020b665582f4f1ec54e56ec978581e424adc6ace/docs/nutrition/gk-r2-corrections.json"
+    },
+    {
+      "pr": 133,
+      "recipeId": "baozi",
+      "ingredient": "sokeria",
+      "kind": "GI_REMOVED",
+      "decision": "PREPARATION_APPLICABILITY_REVIEW_REQUIRED",
+      "historicalSource": "https://github.com/ozirix-dev/Reseptit/blob/020b665582f4f1ec54e56ec978581e424adc6ace/docs/nutrition/gk-r2-corrections.json"
+    },
+    {
+      "pr": 133,
+      "recipeId": "baozi",
+      "ingredient": "kiinankaalia",
+      "kind": "GI_REMOVED",
+      "decision": "PREPARATION_APPLICABILITY_REVIEW_REQUIRED",
+      "historicalSource": "https://github.com/ozirix-dev/Reseptit/blob/020b665582f4f1ec54e56ec978581e424adc6ace/docs/nutrition/gk-r2-corrections.json"
+    },
+    {
+      "pr": 133,
+      "recipeId": "kreikkalainen-moussaka",
+      "ingredient": "munakoisoa",
+      "kind": "GI_REMOVED",
+      "decision": "PREPARATION_APPLICABILITY_REVIEW_REQUIRED",
+      "historicalSource": "https://github.com/ozirix-dev/Reseptit/blob/020b665582f4f1ec54e56ec978581e424adc6ace/docs/nutrition/gk-r2-corrections.json"
+    },
+    {
+      "pr": 133,
+      "recipeId": "kreikkalainen-moussaka",
+      "ingredient": "perunoita",
+      "kind": "GI_REMOVED",
+      "decision": "PREPARATION_APPLICABILITY_REVIEW_REQUIRED",
+      "historicalSource": "https://github.com/ozirix-dev/Reseptit/blob/020b665582f4f1ec54e56ec978581e424adc6ace/docs/nutrition/gk-r2-corrections.json"
+    },
+    {
+      "pr": 133,
+      "recipeId": "kreikkalainen-moussaka",
+      "ingredient": "tomaattimurskaa",
+      "kind": "GI_REMOVED",
+      "decision": "PREPARATION_APPLICABILITY_REVIEW_REQUIRED",
+      "historicalSource": "https://github.com/ozirix-dev/Reseptit/blob/020b665582f4f1ec54e56ec978581e424adc6ace/docs/nutrition/gk-r2-corrections.json"
+    },
+    {
+      "pr": 133,
+      "recipeId": "kreikkalainen-moussaka",
+      "ingredient": "maitoa",
+      "kind": "GI_REMOVED",
+      "decision": "PREPARATION_APPLICABILITY_REVIEW_REQUIRED",
+      "historicalSource": "https://github.com/ozirix-dev/Reseptit/blob/020b665582f4f1ec54e56ec978581e424adc6ace/docs/nutrition/gk-r2-corrections.json"
+    },
+    {
+      "pr": 133,
+      "recipeId": "kreikkalainen-moussaka",
+      "ingredient": "raastettua kovaa juustoa",
+      "kind": "GI_REMOVED",
+      "decision": "PREPARATION_APPLICABILITY_REVIEW_REQUIRED",
+      "historicalSource": "https://github.com/ozirix-dev/Reseptit/blob/020b665582f4f1ec54e56ec978581e424adc6ace/docs/nutrition/gk-r2-corrections.json"
+    },
+    {
+      "pr": 133,
+      "recipeId": "kreikkalainen-moussaka",
+      "ingredient": "mustapippuria",
+      "kind": "GI_REMOVED",
+      "decision": "PREPARATION_APPLICABILITY_REVIEW_REQUIRED",
+      "historicalSource": "https://github.com/ozirix-dev/Reseptit/blob/020b665582f4f1ec54e56ec978581e424adc6ace/docs/nutrition/gk-r2-corrections.json"
+    },
+    {
+      "pr": 133,
+      "recipeId": "yangzhou-paistettu-riisi",
+      "ingredient": "herneitä",
+      "kind": "GI_REMOVED",
+      "decision": "PREPARATION_APPLICABILITY_REVIEW_REQUIRED",
+      "historicalSource": "https://github.com/ozirix-dev/Reseptit/blob/020b665582f4f1ec54e56ec978581e424adc6ace/docs/nutrition/gk-r2-corrections.json"
+    },
+    {
+      "pr": 133,
+      "recipeId": "japanilainen-soba-aamiaiskeitto",
+      "ingredient": "soba-nuudeli",
+      "kind": "GI_REMOVED",
+      "decision": "PREPARATION_APPLICABILITY_REVIEW_REQUIRED",
+      "historicalSource": "https://github.com/ozirix-dev/Reseptit/blob/020b665582f4f1ec54e56ec978581e424adc6ace/docs/nutrition/gk-r2-corrections.json"
+    },
+    {
+      "pr": 133,
+      "recipeId": "japanilainen-soba-aamiaiskeitto",
+      "ingredient": "pinaatti",
+      "kind": "GI_REMOVED",
+      "decision": "PREPARATION_APPLICABILITY_REVIEW_REQUIRED",
+      "historicalSource": "https://github.com/ozirix-dev/Reseptit/blob/020b665582f4f1ec54e56ec978581e424adc6ace/docs/nutrition/gk-r2-corrections.json"
+    },
+    {
+      "pr": 133,
+      "recipeId": "indonesialainen-bubur-sumsum",
+      "ingredient": "riisijauho",
+      "kind": "GI_REMOVED",
+      "decision": "PREPARATION_APPLICABILITY_REVIEW_REQUIRED",
+      "historicalSource": "https://github.com/ozirix-dev/Reseptit/blob/020b665582f4f1ec54e56ec978581e424adc6ace/docs/nutrition/gk-r2-corrections.json"
+    },
+    {
+      "pr": 133,
+      "recipeId": "indonesialainen-bubur-sumsum",
+      "ingredient": "palmusokeri",
+      "kind": "GI_REMOVED",
+      "decision": "PREPARATION_APPLICABILITY_REVIEW_REQUIRED",
+      "historicalSource": "https://github.com/ozirix-dev/Reseptit/blob/020b665582f4f1ec54e56ec978581e424adc6ace/docs/nutrition/gk-r2-corrections.json"
+    },
+    {
+      "pr": 226,
+      "recipeId": "masala-dosa",
+      "ingredient": "perunoita",
+      "decision": "PREPARED_CANDIDATE_PUBLICATION_REVIEW_REQUIRED"
+    },
+    {
+      "pr": 226,
+      "recipeId": "masala-dosa",
+      "ingredient": "sinapinsiemeniä",
+      "decision": "PREPARED_CANDIDATE_PUBLICATION_REVIEW_REQUIRED"
+    },
+    {
+      "pr": 226,
+      "recipeId": "masala-dosa",
+      "ingredient": "tuoreita currylehtiä",
+      "decision": "PREPARED_CANDIDATE_PUBLICATION_REVIEW_REQUIRED"
+    },
+    {
+      "pr": 226,
+      "recipeId": "meksikolainen-paputostada-aamupalaksi",
+      "ingredient": "avokado",
+      "decision": "PREPARED_CANDIDATE_PUBLICATION_REVIEW_REQUIRED"
+    }
+  ],
+  "sourceReview133": "https://github.com/ozirix-dev/Reseptit/blob/020b665582f4f1ec54e56ec978581e424adc6ace/docs/nutrition/gk-r2-source-review.json",
+  "scope": "Prepared current-main candidate patches only. No source/GI/recipe publication approval is minted. Preserve current approved recipe variants and all current GI bindings until individual applicability decisions."
+}
