@@ -1,6 +1,8 @@
 import { EstimateDetails, EstimateSummary, MissingEstimate } from "./GlycemicLoadEvidence";
 import { gkCopy } from "./glycemic-load-copy";
 import {gkOnlyVariants,gkVersionCoverage} from '@/generated/gk-only-variants.generated';
+import { gkVariantScope } from '../recipes/gk-estimate-scope';
+import { GkCoverageSummary } from './GkCoverageSummary';
 import {GkOnlyVariantPanel,gkOnlyUi,gkScopeUi} from '../recipes/GkOnlyVariantPanel';
 import {scopedPolyolDisclosure} from '../recipes/scoped-polyol-disclosure';
 import {recoveryDisclosure} from '../recipes/recovery-disclosure';
@@ -50,15 +52,15 @@ const sources = [
 
 const pageSize = 24;
 const liverRecipeId = "maksalaatikko-kukkakaalilla";
-const recipeEstimateVariants = new Map(gkOnlyVariants.filter(variant => !variant.studyServing).map(variant => [variant.recipeId, variant]));
-const studyServingVariants = new Map(gkOnlyVariants.filter(variant => variant.studyServing).map(variant => [variant.recipeId, variant]));
+const recipeEstimateVariants = new Map(gkOnlyVariants.filter(variant => gkVariantScope(variant) === 'RECIPE_VARIANT').map(variant => [variant.recipeId, variant]));
+const studyServingVariants = new Map(gkOnlyVariants.filter(variant => gkVariantScope(variant) === 'STUDY_COMPARISON').map(variant => [variant.recipeId, variant]));
 
 const uxCopy = {
   fi: {
     intro: "Glykeeminen kuorma (GK) arvioi, kuinka paljon annoksen hiilihydraatit voivat nostaa verensokeria. Suurempi GK tarkoittaa suurempaa arvioitua vaikutusta.",
     title: "Löydä reseptin GK-arvio",
     search: "Hae reseptiä nimellä",
-    only: "Vain reseptit, joilla on GK-arvio",
+    only: "Vain alkuperäisen reseptin GK-arviot",
     empty: "Reseptejä ei löytynyt. Kokeile lyhyempää hakusanaa tai poista rajaus.",
     method: "Laskentatapa ja tutkimuslähteet",
     background: "Arvioiden kattavuus ja reseptiversiot",
@@ -72,7 +74,7 @@ const uxCopy = {
     intro: "Glycemic load (GL) estimates how much the carbohydrate in a serving may raise blood sugar. A higher GL means a larger estimated effect.",
     title: "Find a recipe’s GL estimate",
     search: "Search by recipe name",
-    only: "Only recipes with a GL estimate",
+    only: "Only original-recipe GL estimates",
     empty: "No recipes found. Try a shorter search term or turn off the filter.",
     method: "Calculation method and research sources",
     background: "Estimate coverage and recipe versions",
@@ -86,7 +88,7 @@ const uxCopy = {
     intro: "Glykemisk belastning (GL) uppskattar hur mycket kolhydraterna i en portion kan höja blodsockret. Högre GL betyder en större uppskattad påverkan.",
     title: "Hitta receptets GL-värde",
     search: "Sök på receptnamn",
-    only: "Visa bara recept med ett GL-värde",
+    only: "Visa bara GL-uppskattningar för originalrecept",
     empty: "Inga recept hittades. Prova ett kortare sökord eller stäng av filtret.",
     method: "Beräkningsmetod och forskningskällor",
     background: "Uppskattningarnas täckning och receptversioner",
@@ -100,7 +102,7 @@ const uxCopy = {
     intro: "ภาระน้ำตาลในเลือด (GL) เป็นค่าประมาณว่าคาร์โบไฮเดรตในอาหารหนึ่งที่อาจทำให้น้ำตาลในเลือดสูงขึ้นเพียงใด ยิ่งค่า GL สูง ผลที่คาดก็ยิ่งมากขึ้น",
     title: "ค้นหาค่า GL ของสูตรอาหาร",
     search: "ค้นหาตามชื่อสูตร",
-    only: "แสดงเฉพาะสูตรที่มีค่าประมาณ GL",
+    only: "แสดงเฉพาะค่าประมาณ GL ของสูตรเดิม",
     empty: "ไม่พบสูตรอาหาร ลองใช้คำค้นที่สั้นลงหรือปิดตัวกรอง",
     method: "วิธีคำนวณและแหล่งอ้างอิงงานวิจัย",
     background: "ความครอบคลุมของค่าประมาณและสูตรแต่ละแบบ",
@@ -169,7 +171,7 @@ export function GlycemicLoadPilotPage() {
   const searchKey = (value: string) => value.normalize("NFC").toLocaleLowerCase(numberLocale);
   const query = searchKey(search.trim());
   const matching = glycemicLoadPilotResults.filter((result) =>
-    (!showCalculatedOnly || result.status === "CALCULATED" || recipeEstimateVariants.has(result.recipeId))
+    (!showCalculatedOnly || result.status === "CALCULATED")
     && searchKey(titleFor(result)).includes(query)
   );
   if (enhanced) {
@@ -227,6 +229,7 @@ export function GlycemicLoadPilotPage() {
         <h1>{glycemicLoadMeta[locale].h1}</h1>
         <p className="page-intro__description">{ux.intro}</p>
       </header>
+      <GkCoverageSummary coverage={gkVersionCoverage} locale={locale} />
       <section className="glycemic-pilot__recipes" aria-labelledby="glycemic-pilot-recipes">
         <h2 id="glycemic-pilot-recipes">{ux.title}</h2>
         {enhanced ? <>
@@ -255,7 +258,7 @@ export function GlycemicLoadPilotPage() {
           <button type="button" onClick={() => showResults(Infinity)}>{ux.all}</button>
         </div> : null}
       </section>
-      <details className="glycemic-pilot__method glycemic-pilot__disclosure" id="gk-only-method"><summary>{ux.background}</summary><p>{glycemicLoadPilotReviewedRecipeCount} {text.total}</p><p>{gkOnlyUi[locale].methodText}</p><ul data-gk-coverage="version-aware"><li><strong>{gkVersionCoverage.numericRecipes}</strong> / {gkVersionCoverage.total} — {gkOnlyUi[locale].coverage}</li><li>A: {gkVersionCoverage.originalNumeric+gkVersionCoverage.additionalA} — {gkOnlyUi[locale].aCount}</li><li>B: {gkVersionCoverage.additionalB} — {gkOnlyUi[locale].bCount}</li><li>C: {gkVersionCoverage.classOnly} — {gkOnlyUi[locale].cCount}</li><li data-gk-coverage="original"><strong>{gkVersionCoverage.originalNumeric}</strong> — {gkScopeUi[locale].originalCoverage}</li><li><strong>{gkVersionCoverage.total - gkVersionCoverage.originalNumeric}</strong> — {gkScopeUi[locale].originalMissing}</li><li><strong>{gkVersionCoverage.missing}</strong> — {gkScopeUi[locale].versionMissing}</li><li><strong>{gkVersionCoverage.studyServingRecipeIds.length}</strong> — {gkScopeUi[locale].studyCoverage}</li></ul></details>
+      <details className="glycemic-pilot__method glycemic-pilot__disclosure" id="gk-only-method"><summary>{ux.background}</summary><p>{glycemicLoadPilotReviewedRecipeCount} {text.total}</p><p>{gkOnlyUi[locale].methodText}</p><ul data-gk-coverage="version-aware"><li><strong>{gkVersionCoverage.numericRecipes}</strong> / {gkVersionCoverage.total} — {gkOnlyUi[locale].coverage}</li><li>A: {gkVersionCoverage.additionalA} — {gkOnlyUi[locale].aCount}</li><li>B: {gkVersionCoverage.additionalB} — {gkOnlyUi[locale].bCount}</li><li>C: {gkVersionCoverage.classOnly} — {gkOnlyUi[locale].cCount}</li><li data-gk-coverage="original"><strong>{gkVersionCoverage.originalNumeric}</strong> — {gkScopeUi[locale].originalCoverage}</li><li><strong>{gkVersionCoverage.total - gkVersionCoverage.originalNumeric}</strong> — {gkScopeUi[locale].originalMissing}</li><li><strong>{gkVersionCoverage.missing}</strong> — {gkScopeUi[locale].versionMissing}</li><li><strong>{gkVersionCoverage.studyServingRecipeIds.length}</strong> — {gkScopeUi[locale].studyCoverage}</li></ul></details>
       <details className="glycemic-pilot__method glycemic-pilot__disclosure" aria-labelledby="glycemic-pilot-method"><summary>{ux.method}</summary>
         <h2 id="glycemic-pilot-method">{text.method}</h2><p><strong>{text.formula}</strong></p><p>{text.fineli}</p><p>{text.gi}</p><p>{text.interpretation}</p><p data-method="gk80-modelled">{modelledMethod[locale]}</p>
         <h3>{text.sources}</h3><ul className="glycemic-pilot__sources">{sources.map(([title, url]) => <li key={url}><a href={url} rel="noopener noreferrer">{title}</a></li>)}</ul>

@@ -1,4 +1,4 @@
-import { EstimateDetails, EstimateSummary } from "../glycemic-load/GlycemicLoadEvidence";
+import { EstimateDetails, EstimateSummary, MissingEstimate } from "../glycemic-load/GlycemicLoadEvidence";
 import { gkCopy } from "../glycemic-load/glycemic-load-copy";
 import { ChocolateComparison } from './ChocolateComparisonFi';
 import {gkOnlyVariants} from '@/generated/gk-only-variants.generated';
@@ -68,7 +68,7 @@ export function RecipePage() {
         {hydrated && recipe.instructionStepsHtml?.length ? <><div className="step-controls"><p aria-live="polite">{tools.progress}: {completed.length}/{recipe.instructionStepsHtml.length}</p><button type="button" onClick={() => setCompleted([])}>{tools.reset}</button></div><div className="rich-text"><ol className="recipe-steps">{recipe.instructionStepsHtml.map((step, index) => <li key={index} data-complete={completed.includes(index)}><div><label className="recipe-step-toggle"><input type="checkbox" aria-label={`${tools.completed}: ${index + 1}`} checked={completed.includes(index)} onChange={(event) => { const checked = event.currentTarget.checked; setCompleted(values => checked ? [...values, index] : values.filter(value => value !== index)); }} /></label><div className="recipe-step-text" dangerouslySetInnerHTML={{ __html: step }} /></div></li>)}</ol></div></> : <div className="rich-text" dangerouslySetInnerHTML={{ __html: recipe.instructionsHtml }} />}
       </section>
       <section className="recipe-panel" data-nutrition-scope="ORIGINAL_RECIPE"><h2>{hasGkVariant?gkScopeUi[locale].originalNutrition:labels.nutrition}</h2>{hasGkVariant?<p className="recipe-disclosure" data-macro-separation="gk-only"><strong>{gkScopeUi[locale].macroNotice}</strong></p>:null}<p className="recipe-disclosure">{nutritionItems.length ? tools.nutrition : tools.missing}</p>{nutritionItems.length ? <dl className="nutrition-list">{nutritionItems.map(([key, value]) => <div key={key}><dt>{labels.nutrients[key]}</dt><dd>{formatIngredientAmount(value, 1, 1, numberLocale)} g</dd></div>)}</dl> : null}
-        {glycemicLoad ? <div className="recipe-glycemic-load">
+        {glycemicLoad ? <div className="recipe-glycemic-load" data-gk-scope="ORIGINAL_RECIPE" data-gk-status="CALCULATED">
           <dl className="nutrition-list"><div>
             <dt>{glycemicLoad.assessmentType ? `${modelledLabel} ${labels.glycemicLoad}` : labels.glycemicLoad}</dt>
             <dd>{glValue} {glUnit}</dd>
@@ -91,10 +91,12 @@ export function RecipePage() {
             technicalNotes={glycemicLoad.closedRecoveryC ? <p>{recoveryDisclosure[locale]}</p> :
               glycemicLoad.boundedPolyolC ? <p>{scopedPolyolDisclosure[locale]}</p> : undefined}
           />
-        </div> : null}
+        </div> : <div className="recipe-glycemic-load" data-gk-scope="ORIGINAL_RECIPE" data-gk-status="UNAVAILABLE">
+          <MissingEstimate locale={locale} result={glycemicLoadPilotResults.find(result => result.recipeId === recipe.recipeId) ?? { incompleteReasons: [] }} />
+        </div>}
         {recipe.dietClass ? <p className="recipe-disclosure">{tools.diet}</p> : null}</section>
-      {gkVariants.map(variant => <GkOnlyVariantPanel key={variant.studyServing ? 'study' : 'recipe'}
-        variant={variant} locale={recipe.locale} servings={servings} originalHasGk={Boolean(glycemicLoad)} />)}
+      {gkVariants.map(variant => <GkOnlyVariantPanel key={variant.versionId}
+        variant={variant} locale={recipe.locale} servings={servings} originalHasGk={Boolean(glycemicLoad)} originalRecipe={recipe} />)}
       <ChocolateComparison recipeId={recipe.recipeId} locale={recipe.locale} hasGlVariant={hasGkVariant} />
       {recipe.notesHtml ? <section className="recipe-panel"><h2>{labels.notes}</h2><div className="rich-text" dangerouslySetInnerHTML={{ __html: recipe.notesHtml }} /></section> : null}
     </div>
