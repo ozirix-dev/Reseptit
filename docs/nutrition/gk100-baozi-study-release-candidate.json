@@ -1,0 +1,76 @@
+{
+  "recipeId": "baozi",
+  "servings": 1,
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "unroundedGk": "33",
+  "preparation": {
+    "fi": "Tutkimusvertailu koskee {{servings}} koeannosta. Kokeessa tarjoiltiin 154,7 g Tanjong Rhu Pau & Confectioneryn valmista grilliporsashöyrysämpylää ja 200 ml juomavettä.",
+    "en": "This comparison covers {{servings}} study servings. The test serving was 154.7 g of ready-to-eat barbecued pork buns from Tanjong Rhu Pau & Confectionery and 200 ml of drinking water.",
+    "sv": "Jämförelsen gäller {{servings}} studieportioner. I försöket serverades 154,7 g färdiga ångade bröd med grillat fläsk från Tanjong Rhu Pau & Confectionery och 200 ml dricksvatten.",
+    "th": "ข้อมูลนี้ใช้กับอาหารทดลอง {{servings}} ส่วน ประกอบด้วยซาลาเปาหมูแดงพร้อมรับประทานจาก Tanjong Rhu Pau & Confectionery 154.7 กรัมและน้ำดื่ม 200 มิลลิลิตร"
+  },
+  "limitation": {
+    "fi": "33 GK koskee Sunin ym. historiallista grilliporsassämpylän koeannosta ja taulukon 2 GI:tä. Kotireseptin porsas-kaalitäytteinen sämpylä vaatii erillisen arvion.",
+    "en": "The GL of 33 uses the historical barbecued pork bun serving and the GI in Table 2 of Sun et al. The homemade pork-and-cabbage bun requires a separate estimate.",
+    "sv": "GB 33 gäller den historiska testportionen med grillat fläsk och GI i tabell 2 hos Sun med flera. Det hemlagade brödet med fläsk och kål behöver bedömas separat.",
+    "th": "ค่า GL 33 ใช้กับซาลาเปาหมูแดงส่วนทดลองในอดีตและค่า GI ในตารางที่ 2 ของ Sun และคณะ สูตรทำที่บ้านที่ใช้ไส้หมูกับผักกาดขาวต้องประเมินแยกต่างหาก"
+  },
+  "ingredients": [
+    {
+      "grams": 154.7,
+      "name": {
+        "fi": "Tanjong Rhu Pau & Confectioneryn char siew pau, koeannos",
+        "en": "Tanjong Rhu Pau & Confectionery char siew pau, test serving",
+        "sv": "Char siew pau från Tanjong Rhu Pau & Confectionery, testportion",
+        "th": "ซาลาเปาหมูแดงจาก Tanjong Rhu Pau & Confectionery ส่วนทดลอง"
+      }
+    },
+    {
+      "grams": null,
+      "quantity": {
+        "amount": 200,
+        "unit": "ml"
+      },
+      "name": {
+        "fi": "Juomavesi",
+        "en": "Drinking water",
+        "sv": "Dricksvatten",
+        "th": "น้ำดื่ม"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Sun et al. (2015), glucose-reference GI",
+      "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/S0007114514004425",
+      "kind": "HUMAN_GI",
+      "note": "Table 2 reports glucose-reference GI 66 ± 7 SEM, n=10. The discussion gives 64; this packet follows Table 2."
+    },
+    {
+      "title": "Sun et al. (2015), study serving and carbohydrate",
+      "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/S0007114514004425",
+      "kind": "CARBOHYDRATE",
+      "note": "Table 1 reports 154.7 g prepared food and 32.3 g carbohydrate/100 g. The protocol specifies a 50 g available-carbohydrate load and 200 ml water."
+    }
+  ],
+  "inputs": [
+    [
+      154.7,
+      32.32062055591467,
+      66
+    ]
+  ],
+  "exclusions": [
+    {
+      "ingredientIndex": 1,
+      "kind": "ZERO_CHO",
+      "rationale": "Plain drinking water contributes zero available carbohydrate.",
+      "evidencePath": "docs/nutrition/gk100-rice-bun-study-review.md"
+    }
+  ],
+  "boundFiles": {
+    "reseptit/paaruoat/baozi.md": "af8efd8db3bbfc7a57f4e75fe537f88b03e9dfe4227ae586905a6c046b60f208",
+    "docs/nutrition/gk100-rice-bun-study-review.md": "8fc69585b98ce9eb14ad70190d19a673bcaa72eb479153f1b360d0e6ace9e5b4"
+  }
+}

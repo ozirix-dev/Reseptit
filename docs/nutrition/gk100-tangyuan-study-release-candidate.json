@@ -1,0 +1,76 @@
+{
+  "recipeId": "tangyuan",
+  "servings": 1,
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "unroundedGk": "30.5",
+  "preparation": {
+    "fi": "Historiallinen vertailu koskee {{servings}} koeannosta. Siihen kuului 115 g keitettyjä Lee Chun -riisipalloja ja 250 ml vettä.",
+    "en": "This historical comparison covers {{servings}} test serving. It contained 115 g of boiled Lee Chun glutinous rice balls and 250 ml of water.",
+    "sv": "Den historiska jämförelsen gäller {{servings}} testportion. Den bestod av 115 g kokta risbollar av klibbigt ris från Lee Chun och 250 ml vatten.",
+    "th": "ข้อมูลเปรียบเทียบจากการศึกษาในอดีตนี้ใช้กับอาหารทดลอง {{servings}} ส่วน ประกอบด้วยบัวลอยแป้งข้าวเหนียวต้มยี่ห้อ Lee Chun 115 กรัม และน้ำ 250 มิลลิลิตร"
+  },
+  "limitation": {
+    "fi": "GK 30,5 perustuu Chenin ym. koeannokseen, jonka täytettä ei yksilöity. Kotireseptin mustaseesamitäytteiset riisipallot ja makea inkivääriliemi tarvitsevat oman arvion.",
+    "en": "The GL of 30.5 is based on the serving tested by Chen et al., whose filling was unspecified. The homemade black sesame rice balls and sweet ginger broth require a separate estimate.",
+    "sv": "GB 30,5 bygger på testportionen hos Chen med flera, där fyllningen inte specificerades. De hemlagade risbollarna med svart sesam och söt ingefärslag behöver bedömas separat.",
+    "th": "ค่า GL 30.5 อ้างอิงจากอาหารส่วนที่ Chen และคณะทดสอบ โดยไม่ได้ระบุชนิดของไส้ บัวลอยไส้งาดำในสูตรโฮมเมดและน้ำขิงหวานต้องประเมินแยกต่างหาก"
+  },
+  "ingredients": [
+    {
+      "grams": 115,
+      "name": {
+        "fi": "Keitetyt Lee Chun -riisipallot, koeannos",
+        "en": "Boiled Lee Chun glutinous rice balls, test serving",
+        "sv": "Kokta risbollar av klibbigt ris från Lee Chun, testportion",
+        "th": "บัวลอยแป้งข้าวเหนียวต้มยี่ห้อ Lee Chun ส่วนทดลอง"
+      }
+    },
+    {
+      "grams": null,
+      "quantity": {
+        "amount": 250,
+        "unit": "ml"
+      },
+      "name": {
+        "fi": "Juomavesi",
+        "en": "Drinking water",
+        "sv": "Dricksvatten",
+        "th": "น้ำดื่ม"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Chen et al. (2010), Table 2",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2846258/",
+      "kind": "HUMAN_GI",
+      "note": "Glucose-reference GI 61 ± 10 SEM, 15 healthy adults, 120 min."
+    },
+    {
+      "title": "Chen et al. (2010), methods and Table 1",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2846258/",
+      "kind": "CARBOHYDRATE",
+      "note": "115 g of boiled Lee Chun glutinous rice balls provided 50 g available carbohydrate and were served with 250 mL water."
+    }
+  ],
+  "inputs": [
+    [
+      115,
+      43.47826086956522,
+      61
+    ]
+  ],
+  "exclusions": [
+    {
+      "ingredientIndex": 1,
+      "kind": "ZERO_CHO",
+      "rationale": "Plain drinking water contributes no available carbohydrate.",
+      "evidencePath": "docs/nutrition/gk100-tangyuan-study-review.md"
+    }
+  ],
+  "boundFiles": {
+    "reseptit/jalkiruoat/tangyuan.md": "6bff68e6655d144890de3bb776ae05490d47f80f77088b0f2429ecb72914058a",
+    "docs/nutrition/gk100-tangyuan-study-review.md": "7ddb5785a4cb69760622b2ead5bce067bfcaefd46044c66e17ec9dc96f2b2aea"
+  }
+}
