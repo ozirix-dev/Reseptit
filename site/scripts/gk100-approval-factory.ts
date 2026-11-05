@@ -12,6 +12,7 @@ type State = 'CANDIDATE' | 'TECHNICALLY_VALID' | 'REVIEW_REQUIRED' | 'OWNER_DECI
 
 export type Classification = {
   candidateSha256: string;
+  studyServing?: true;
   risk: Risk;
   reasons: string[];
   contentChange: 'NONE' | 'GK_ONLY' | 'ORIGINAL_CHANGE';
@@ -115,7 +116,8 @@ function assess(entry: Batch['candidates'][number], read: ReadFile, methodApprov
     if (!originalPathPattern.test(path) && !/^docs\/nutrition\/[a-z0-9-]+\.md$/.test(path)) fail('INVALID_BOUND_PATH');
     return read(path);
   };
-  if (entry.studyServing !== undefined && entry.studyServing !== true) fail('INVALID_STUDY_SERVING');
+  if ((entry.studyServing !== undefined && entry.studyServing !== true)
+      || entry.studyServing !== entry.classification?.studyServing) fail('INVALID_STUDY_SERVING');
   if (packet.method !== undefined) {
     if (entry.studyServing) fail('INVALID_STUDY_SERVING');
     if (packet.method !== MIXED_EVIDENCE_METHOD) return fail('UNKNOWN_GK_METHOD');

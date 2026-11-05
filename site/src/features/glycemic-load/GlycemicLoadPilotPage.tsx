@@ -51,6 +51,7 @@ const sources = [
 const pageSize = 24;
 const liverRecipeId = "maksalaatikko-kukkakaalilla";
 const variantsByRecipe = new Map(gkOnlyVariants.map((variant) => [variant.recipeId, variant]));
+const recipeEstimateVariants = new Set(gkOnlyVariants.filter((variant) => !variant.studyServing).map((variant) => variant.recipeId));
 
 const uxCopy = {
   fi: {
@@ -168,7 +169,7 @@ export function GlycemicLoadPilotPage() {
   const searchKey = (value: string) => value.normalize("NFC").toLocaleLowerCase(numberLocale);
   const query = searchKey(search.trim());
   const matching = glycemicLoadPilotResults.filter((result) =>
-    (!showCalculatedOnly || result.status === "CALCULATED" || variantsByRecipe.has(result.recipeId))
+    (!showCalculatedOnly || result.status === "CALCULATED" || recipeEstimateVariants.has(result.recipeId))
     && searchKey(titleFor(result)).includes(query)
   );
   if (enhanced) {

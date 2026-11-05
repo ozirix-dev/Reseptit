@@ -95,7 +95,12 @@ test('a sealed study serving keeps its scope and quantities beside the GL estima
   entry.classification!.candidateSha256 = textHash(raw);
   const unmarked = checkBatch(batch, read);
   entry.studyServing = true;
+  assert.equal(checkBatch(batch, read).manifest.candidates[0].reason, 'INVALID_STUDY_SERVING');
+  entry.classification!.studyServing = true;
   const checked = checkBatch(batch, read);
+  delete entry.studyServing;
+  assert.equal(checkBatch(batch, read).manifest.candidates[0].reason, 'INVALID_STUDY_SERVING');
+  entry.studyServing = true;
   assert.throws(() => applyDecisions(checked, approve(unmarked, entry.recipeId)), /INVALID_OR_STALE_DECISIONS/);
   const decisions = approve(checked, entry.recipeId);
   const plan = prepareRelease(checked, decisions, coverage, base, read);
