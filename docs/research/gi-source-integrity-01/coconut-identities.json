@@ -1,0 +1,268 @@
+{
+  "principle": "Product form is not inferred from coconut-milk name overlap",
+  "sevenForms": [
+    {
+      "form": "FULL_FAT_CANNED",
+      "compositionIds": [
+        "AFCD:F002991",
+        "Fineli:29014"
+      ],
+      "admissibleMeasuredGiFound": false,
+      "currentProjectAssumption": "Named lowcho50 applications only"
+    },
+    {
+      "form": "REDUCED_FAT_CANNED",
+      "compositionIds": [
+        "AFCD:F002990"
+      ],
+      "admissibleMeasuredGiFound": false,
+      "scope": "Not inherited from full-fat canned alias"
+    },
+    {
+      "form": "COCONUT_BEVERAGE",
+      "compositionIds": [
+        "AFCD:F009812",
+        "AFCD:F009813",
+        "Fineli:34845"
+      ],
+      "sourceCandidate": "alpro-coconut96_82",
+      "scope": "Exact historical product formulation unverified; in-vitro result reference only"
+    },
+    {
+      "form": "COCONUT_RICE_BEVERAGE",
+      "sourceCandidate": "coco-quench68",
+      "scope": "Named mixed-ingredient commercial beverage, not canned milk"
+    },
+    {
+      "form": "COCONUT_WATER",
+      "compositionIds": [
+        "AFCD:F002984",
+        "AFCD:F002986",
+        "AFCD:F009794"
+      ],
+      "sourceCandidate": "nudie-coconut-water55",
+      "scope": "Age and commercial form kept distinct"
+    },
+    {
+      "form": "COCONUT_FLESH",
+      "compositionIds": [
+        "AFCD:F002983",
+        "AFCD:F002985",
+        "AFCD:F002987",
+        "Fineli:382"
+      ],
+      "scope": "Fresh mature, young flesh and dried flakes are distinct; no milk-GI transfer"
+    },
+    {
+      "form": "COCONUT_MIXED_MEAL",
+      "sourceCandidate": "coconut-porridge31",
+      "scope": "Porridge formulation/preparation-specific; never an ingredient GI"
+    }
+  ],
+  "existingAfcdReferenceRows": [
+    {
+      "source_id": "F009798",
+      "classification": 20502,
+      "derivation": "Analysed",
+      "name": "Yoghurt, coconut based, flavoured",
+      "protein_g_per_100g": 1.1,
+      "fat_g_per_100g": 9,
+      "fibre_g_per_100g": 1.3,
+      "glycerol_g_per_100g": null,
+      "erythritol_g_per_100g": null,
+      "maltitol_g_per_100g": null,
+      "mannitol_g_per_100g": null,
+      "xylitol_g_per_100g": null,
+      "sorbitol_g_per_100g": null,
+      "available_carbohydrate_without_sugar_alcohols_g_per_100g": 9.2,
+      "available_carbohydrate_with_sugar_alcohols_g_per_100g": 9.2
+    },
+    {
+      "source_id": "F009812",
+      "classification": 20105,
+      "derivation": "Analysed",
+      "name": "Coconut beverage, unfortified",
+      "protein_g_per_100g": 0.2,
+      "fat_g_per_100g": 1.7,
+      "fibre_g_per_100g": 0,
+      "glycerol_g_per_100g": null,
+      "erythritol_g_per_100g": null,
+      "maltitol_g_per_100g": null,
+      "mannitol_g_per_100g": null,
+      "xylitol_g_per_100g": null,
+      "sorbitol_g_per_100g": null,
+      "available_carbohydrate_without_sugar_alcohols_g_per_100g": 2.4,
+      "available_carbohydrate_with_sugar_alcohols_g_per_100g": 2.4
+    },
+    {
+      "source_id": "F009813",
+      "classification": 20106,
+      "derivation": "Analysed",
+      "name": "Coconut beverage, added Ca",
+      "protein_g_per_100g": 0.2,
+      "fat_g_per_100g": 1.7,
+      "fibre_g_per_100g": 0,
+      "glycerol_g_per_100g": null,
+      "erythritol_g_per_100g": null,
+      "maltitol_g_per_100g": null,
+      "mannitol_g_per_100g": null,
+      "xylitol_g_per_100g": null,
+      "sorbitol_g_per_100g": null,
+      "available_carbohydrate_without_sugar_alcohols_g_per_100g": 2.4,
+      "available_carbohydrate_with_sugar_alcohols_g_per_100g": 2.4
+    },
+    {
+      "source_id": "F002983",
+      "classification": 22203,
+      "derivation": "Analysed",
+      "name": "Coconut, fresh, mature fruit, flesh",
+      "protein_g_per_100g": 3.8,
+      "fat_g_per_100g": 32.8,
+      "fibre_g_per_100g": 8.1,
+      "glycerol_g_per_100g": null,
+      "erythritol_g_per_100g": null,
+      "maltitol_g_per_100g": null,
+      "mannitol_g_per_100g": null,
+      "xylitol_g_per_100g": null,
+      "sorbitol_g_per_100g": null,
+      "available_carbohydrate_without_sugar_alcohols_g_per_100g": 3.3,
+      "available_carbohydrate_with_sugar_alcohols_g_per_100g": 3.3
+    },
+    {
+      "source_id": "F002985",
+      "classification": 22203,
+      "derivation": "Analysed",
+      "name": "Coconut, fresh, young or immature, flesh",
+      "protein_g_per_100g": 1.6,
+      "fat_g_per_100g": 5.6,
+      "fibre_g_per_100g": 0.5,
+      "glycerol_g_per_100g": null,
+      "erythritol_g_per_100g": null,
+      "maltitol_g_per_100g": null,
+      "mannitol_g_per_100g": null,
+      "xylitol_g_per_100g": null,
+      "sorbitol_g_per_100g": null,
+      "available_carbohydrate_without_sugar_alcohols_g_per_100g": 7,
+      "available_carbohydrate_with_sugar_alcohols_g_per_100g": 7
+    },
+    {
+      "source_id": "F002984",
+      "classification": 22203,
+      "derivation": "Analysed",
+      "name": "Coconut, fresh, mature, water or juice",
+      "protein_g_per_100g": 0.5,
+      "fat_g_per_100g": 0.1,
+      "fibre_g_per_100g": 0,
+      "glycerol_g_per_100g": null,
+      "erythritol_g_per_100g": null,
+      "maltitol_g_per_100g": null,
+      "mannitol_g_per_100g": null,
+      "xylitol_g_per_100g": null,
+      "sorbitol_g_per_100g": null,
+      "available_carbohydrate_without_sugar_alcohols_g_per_100g": 4.7,
+      "available_carbohydrate_with_sugar_alcohols_g_per_100g": 4.7
+    },
+    {
+      "source_id": "F002986",
+      "classification": 22203,
+      "derivation": "Analysed",
+      "name": "Coconut, fresh, young or immature, water or juice",
+      "protein_g_per_100g": 0.2,
+      "fat_g_per_100g": 0,
+      "fibre_g_per_100g": 0,
+      "glycerol_g_per_100g": null,
+      "erythritol_g_per_100g": null,
+      "maltitol_g_per_100g": null,
+      "mannitol_g_per_100g": null,
+      "xylitol_g_per_100g": null,
+      "sorbitol_g_per_100g": null,
+      "available_carbohydrate_without_sugar_alcohols_g_per_100g": 6.6,
+      "available_carbohydrate_with_sugar_alcohols_g_per_100g": 6.6
+    },
+    {
+      "source_id": "F009794",
+      "classification": 22203,
+      "derivation": "Analysed",
+      "name": "Water, coconut, commercial",
+      "protein_g_per_100g": 0.2,
+      "fat_g_per_100g": 0,
+      "fibre_g_per_100g": 0,
+      "glycerol_g_per_100g": null,
+      "erythritol_g_per_100g": null,
+      "maltitol_g_per_100g": null,
+      "mannitol_g_per_100g": null,
+      "xylitol_g_per_100g": null,
+      "sorbitol_g_per_100g": null,
+      "available_carbohydrate_without_sugar_alcohols_g_per_100g": 3.2,
+      "available_carbohydrate_with_sugar_alcohols_g_per_100g": 3.2
+    },
+    {
+      "source_id": "F002987",
+      "classification": 22203,
+      "derivation": "Analysed",
+      "name": "Coconut, grated & desiccated",
+      "protein_g_per_100g": 6.9,
+      "fat_g_per_100g": 65.4,
+      "fibre_g_per_100g": 15.4,
+      "glycerol_g_per_100g": null,
+      "erythritol_g_per_100g": null,
+      "maltitol_g_per_100g": null,
+      "mannitol_g_per_100g": null,
+      "xylitol_g_per_100g": null,
+      "sorbitol_g_per_100g": null,
+      "available_carbohydrate_without_sugar_alcohols_g_per_100g": 7.3,
+      "available_carbohydrate_with_sugar_alcohols_g_per_100g": 7.3
+    },
+    {
+      "source_id": "F002982",
+      "classification": 22203,
+      "derivation": "Analysed",
+      "name": "Coconut, cream, regular fat",
+      "protein_g_per_100g": 1.6,
+      "fat_g_per_100g": 23.2,
+      "fibre_g_per_100g": 0,
+      "glycerol_g_per_100g": null,
+      "erythritol_g_per_100g": null,
+      "maltitol_g_per_100g": null,
+      "mannitol_g_per_100g": null,
+      "xylitol_g_per_100g": null,
+      "sorbitol_g_per_100g": null,
+      "available_carbohydrate_without_sugar_alcohols_g_per_100g": 1.4,
+      "available_carbohydrate_with_sugar_alcohols_g_per_100g": 1.4
+    },
+    {
+      "source_id": "F002991",
+      "classification": 22203,
+      "derivation": "Analysed",
+      "name": "Coconut, milk, canned, regular fat",
+      "protein_g_per_100g": 1.4,
+      "fat_g_per_100g": 15.4,
+      "fibre_g_per_100g": 0,
+      "glycerol_g_per_100g": null,
+      "erythritol_g_per_100g": null,
+      "maltitol_g_per_100g": null,
+      "mannitol_g_per_100g": null,
+      "xylitol_g_per_100g": null,
+      "sorbitol_g_per_100g": null,
+      "available_carbohydrate_without_sugar_alcohols_g_per_100g": 1.7,
+      "available_carbohydrate_with_sugar_alcohols_g_per_100g": 1.7
+    },
+    {
+      "source_id": "F002990",
+      "classification": 22203,
+      "derivation": "Analysed",
+      "name": "Coconut, milk, canned, reduced fat",
+      "protein_g_per_100g": 0.6,
+      "fat_g_per_100g": 7.1,
+      "fibre_g_per_100g": 0,
+      "glycerol_g_per_100g": null,
+      "erythritol_g_per_100g": null,
+      "maltitol_g_per_100g": null,
+      "mannitol_g_per_100g": null,
+      "xylitol_g_per_100g": null,
+      "sorbitol_g_per_100g": null,
+      "available_carbohydrate_without_sugar_alcohols_g_per_100g": 0.9,
+      "available_carbohydrate_with_sugar_alcohols_g_per_100g": 0.9
+    }
+  ]
+}
