@@ -11480,9 +11480,9 @@
     "dependencyMergePreviewTree": "12241f61299c26350772f75dcc222417151d87a3",
     "ci": {
       "280": {
-        "headSha": "dc3aa002348cbdd579cf7a7b12b35e61de7c8bc6",
-        "runId": 41982427071,
-        "url": "https://github.com/ozirix-dev/Reseptit/actions/runs/41982427071",
+        "headSha": "4bc0cd2376f45a52fb8c0d7aba88b10da00eccb1",
+        "runId": 41986678495,
+        "url": "https://github.com/ozirix-dev/Reseptit/actions/runs/41986678495",
         "build": "SUCCESS",
         "deploy": "SKIPPED"
       },
@@ -11511,7 +11511,7 @@
       {
         "files": [
           "docs/reports/pr168-normalization-regression.json",
-          "site/package.json",
+          "docs/reports/pr278-pr280-integration-regression.json",
           "site/scripts/gk-next-four.ts",
           "site/scripts/gk-next-seven.ts",
           "site/scripts/gk-tehoajo-era1.ts",
@@ -11521,7 +11521,7 @@
           "site/tests/nutrition-model.test.ts"
         ],
         "headRefName": "codex/pr168-normalization-fix",
-        "headRefOid": "dc3aa002348cbdd579cf7a7b12b35e61de7c8bc6",
+        "headRefOid": "4bc0cd2376f45a52fb8c0d7aba88b10da00eccb1",
         "isDraft": true,
         "latestReviews": [],
         "mergeStateStatus": "CLEAN",
@@ -11531,21 +11531,21 @@
         "statusCheckRollup": [
           {
             "__typename": "CheckRun",
-            "completedAt": "2026-11-05T06:47:44Z",
+            "completedAt": "2026-11-05T07:25:26Z",
             "conclusion": "SUCCESS",
-            "detailsUrl": "https://github.com/ozirix-dev/Reseptit/actions/runs/41982427071/job/127095360069",
+            "detailsUrl": "https://github.com/ozirix-dev/Reseptit/actions/runs/41986678495/job/127108939566",
             "name": "build",
-            "startedAt": "2026-11-05T06:44:19Z",
+            "startedAt": "2026-11-05T07:21:42Z",
             "status": "COMPLETED",
             "workflowName": "Recipe site"
           },
           {
             "__typename": "CheckRun",
-            "completedAt": "2026-11-05T06:47:44Z",
+            "completedAt": "2026-11-05T07:25:26Z",
             "conclusion": "SKIPPED",
-            "detailsUrl": "https://github.com/ozirix-dev/Reseptit/actions/runs/41982427071/job/127096596142",
+            "detailsUrl": "https://github.com/ozirix-dev/Reseptit/actions/runs/41986678495/job/127110404878",
             "name": "deploy",
-            "startedAt": "2026-11-05T06:47:45Z",
+            "startedAt": "2026-11-05T07:25:26Z",
             "status": "COMPLETED",
             "workflowName": "Recipe site"
           }
@@ -12680,5 +12680,162 @@
     "concurrentCreatedPr": 279,
     "mainSha": "0fa20528ffe0ca075c9e0fb54c2b388cd7d959fe",
     "all60OriginalBranchesPreserved": true
+  },
+  "integrationResolution": {
+    "normalizationHead": "4bc0cd2376f45a52fb8c0d7aba88b10da00eccb1",
+    "translationHead": "4ff37d68cc8f11eaf7051241c85fedbfc1e39c8d",
+    "conflicts": [],
+    "finalPreviewTree": "c80de8f4a675bd967dc7dece209f39c59d1c60ea",
+    "combinedCodeEvidence": {
+      "normalizationHead": "5dfb0af8ab6c042a3022fe247b6035fa49012609",
+      "translationHead": "4ff37d68cc8f11eaf7051241c85fedbfc1e39c8d",
+      "mainSha": "0fa20528ffe0ca075c9e0fb54c2b388cd7d959fe",
+      "conflicts": [],
+      "testedCombinedTree": "d87dcc860bb14240e544ef60f88a0473c8d68eca",
+      "localValidationCommit": "d22e0c3367c3122c6121b0309df57e01e884f48b",
+      "validationBranchPublished": false,
+      "materializedFiles": [
+        "docs/reports/pr168-normalization-regression.json",
+        "site/scripts/gk-next-four.ts",
+        "site/scripts/gk-next-seven.ts",
+        "site/scripts/gk-tehoajo-era1.ts",
+        "site/scripts/nutrition-model.ts",
+        "site/scripts/reviewed-nutrition-model-binding.ts",
+        "site/tests/nutrition-model-binding.test.ts",
+        "site/tests/nutrition-model.test.ts"
+      ],
+      "status": "PASS",
+      "comparedEqual": {
+        "calculationInputs": "5c584d6663b42800f0c8e83919fa8356580b3a1aaebbd95eac4661b27eb6a487",
+        "calculationInputHashes": "047a4ebb58ab8665040cf7ef409b41bd6d0467fcbd919a742134da511762641d",
+        "calculationEvidenceHashes": "bd681b09232cb34fae26450df6bfd2c89cc8719cadc51c7294482c6b275db580",
+        "results": "1b9277adcb81b4603ea3486553e3ff6de93f23765b7d56e856b708c4c6f1ebda",
+        "gkOnlyVariants": "276a2739ff5dfaba305d14634f3685cf2229374fe88854e4de0576b186d775ab",
+        "versionCoverage": "99f09aa80e41b1c2fe7211224b4b72b5b78cf12444c2c1c70d31288533fac7a6",
+        "coverageViews": "60e1caa8979f79018e5b3791a467b7a8cce45097c616f72689caa2201801a440",
+        "summary": "6846233b96c8e38a5c3d43a53a74690779368f73a1e4c550105ce8d57edfcbae",
+        "recipeBindingMismatches": "57c7766f94fe7a2ede044134d6e31cd6eb715352603cfeba6359f3483a6dc303",
+        "calculationInputMismatches": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "calculationEvidenceMismatches": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "giSourcePolicy": "1df642ab2441e6df2de8423933b050973bf9719e36cf43fcff9365e09aed7b47",
+        "giSourceCatalog": "e3ec3fceb132e321f70c5171654342ae595bd2fd6a959a5bfcf4a06719164e7e",
+        "fineliEvidence": "4117a1bcebe24da3e0beac4d80f45c0337afba29a3651de36c23db2966f2abe1",
+        "additionalCarbohydrateEvidence": "3f79030560418ae2c29bace67321f5dc8bf3999d2bb3903a39c20d572eb60e62",
+        "massEvidence": "e9eef6ae53f21cf40893f5db727268621b1969b306634bfe00c894372743a615",
+        "recipeBindingBaseline": "c4ca826407f6a16aeb5947a2f7ae47212bb97e3a72ce426631fca10fb981e06c"
+      },
+      "macroInventoryComparedEqualExcludingReviewedMetadataHash": 326,
+      "macroSourceHashChanges": [
+        "reseptit/alkuruoat/goi-cuon.md",
+        "reseptit/paaruoat/hernekeitto-savupotkalla.md",
+        "reseptit/paaruoat/hunaja-sinappikana-kaalilla.md",
+        "reseptit/paaruoat/japanilainen-curry-tofulla.md",
+        "reseptit/paaruoat/kana-parmesaanipannu-parsakaali.md",
+        "reseptit/paaruoat/kanaviillokki-kukkakaalilla.md",
+        "reseptit/paaruoat/kermainen-kanasienipannu.md",
+        "reseptit/paaruoat/nasi-lemak.md",
+        "reseptit/paaruoat/tacokulho-nauta-avokado.md",
+        "reseptit/paaruoat/uunimakkara-sipulipedilla.md",
+        "reseptit/jalkiruoat/vhh-juustokakku.md",
+        "reseptit/jalkiruoat/vhh-mansikkakakku.md",
+        "reseptit/jalkiruoat/vhh-mokkapalat.md",
+        "reseptit/jalkiruoat/vhh-omenapiirakka.md",
+        "reseptit/jalkiruoat/vhh-raparperipiirakka.md",
+        "reseptit/aamupalat/indialainen-poha-maapahkinoilla.md",
+        "reseptit/aamupalat/kaakao-kookos-chia.md",
+        "reseptit/aamupalat/kiinalainen-riisipuuro-kananmunalla.md",
+        "reseptit/aamupalat/korealainen-yachaejuk-kasvisjuk.md",
+        "reseptit/aamupalat/kurkku-oliivi-aamiaiskulho.md",
+        "reseptit/aamupalat/lahi-ita-kikhernejauho-yrttilettu.md",
+        "reseptit/aamupalat/malesialainen-congee-inkivaarilla.md",
+        "reseptit/aamupalat/marjainen-chiavanukas.md",
+        "reseptit/aamupalat/munakasrulla-pinaatti-tuorejuustolla.md",
+        "reseptit/aamupalat/paahdettu-aamiaismunakoiso.md",
+        "reseptit/aamupalat/pohjoisafrikkalainen-kuskus-aamiaiskulho.md",
+        "reseptit/aamupalat/pohjoisafrikkalainen-taatelipuuro-appelsiinilla.md",
+        "reseptit/aamupalat/raejuusto-pesto-kasviskulho.md",
+        "reseptit/aamupalat/savulohi-avokadokulho.md",
+        "reseptit/aamupalat/siemengranola-jogurtilla.md",
+        "reseptit/aamupalat/thai-jok-kanalla.md",
+        "reseptit/aamupalat/thai-porsasjok.md"
+      ],
+      "preparedRecipeFilesLfBytesIdentical": 128,
+      "translationRegistryAndSnapshotFilesUnchanged": [
+        "site/package.json",
+        "site/tests/prepared-translation-baseline.json",
+        "site/scripts/approved-recipe-note-edits.ts",
+        "meta/kaannokset/codex-review-evidence.json"
+      ],
+      "approvedSourceAndReceiptTreesUnchanged": true,
+      "modelLfSha256": "05a3edc945b444edd4c99aff90be6a17129559ee7779f8f5e372bf46877195d3",
+      "recipeResultsIdentical": 326,
+      "gkOnlyVariantsIdentical": 87,
+      "publicRecipeTranslationsAdded": 96,
+      "authority": {
+        "merge": false,
+        "deploy": false,
+        "newContentOrPublicationApproval": false
+      },
+      "digestEncoding": "SHA-256 of Python JSON, UTF-8, ensure_ascii=False, sort_keys=True, separators=(comma,colon)",
+      "checks": {
+        "units": {
+          "passed": 321,
+          "failed": 0,
+          "serialLocalExecution": true
+        },
+        "translations": {
+          "passed": 30,
+          "failed": 0,
+          "serialLocalExecution": true
+        },
+        "static": {
+          "passed": 31,
+          "failed": 0,
+          "serialLocalExecution": true
+        },
+        "build": {
+          "contentSync": "PASS",
+          "strictNutritionAudit": "PASS",
+          "glycemicAudit": "PASS",
+          "typescript": "PASS",
+          "vite": "PASS",
+          "prerenderedRoutes": 856
+        },
+        "normalizationEntryPoint": {
+          "command": "npm run test:nutrition",
+          "passed": 31,
+          "bindingTestsReachedVia": "site/tests/nutrition-model.test.ts imports nutrition-model-binding.test.ts"
+        }
+      },
+      "requiredRegressionNames": [
+        "all three sealed loaders accept LF/CRLF code compatibility and reject changed code or sources",
+        "ingredient GK consumes normalized US available CHO and blocks an unknown-polyol point",
+        "sealed V3.1 releases accept only reviewed source metadata on LF and CRLF checkouts",
+        "reviewed locale metadata cannot conceal a new preparation in a sealed source",
+        "poha and honey-mustard GK-only details are correctly localized without changing their numeric result",
+        "locale metadata preserves the GK source seal on CRLF checkouts"
+      ],
+      "resolution": {
+        "packageJsonOn280": "Restored exact main scripts; the two binding tests execute via the existing nutrition-model entry point. Translation PR package.json and its poha tests remain unchanged.",
+        "gkNextFourImport": "Moved acceptsReviewedNutritionModelBinding below the existing imports, leaving translation snapshot import and gate intact.",
+        "otherSession": "Read current GK100 speed/research scope; no writes to its branches/worktrees. Serial local checks and one PR CI run.",
+        "noPullRequestCreated": true,
+        "noBranchMergePerformed": true,
+        "noMainMergeOrDeploy": true
+      },
+      "evidenceScope": "The tested combined tree is an unpushed validation commit materialized with guarded writes, not a branch merge. Only this JSON evidence is added after testing the code head."
+    },
+    "ci": {
+      "headSha": "4bc0cd2376f45a52fb8c0d7aba88b10da00eccb1",
+      "runId": 41986678495,
+      "url": "https://github.com/ozirix-dev/Reseptit/actions/runs/41986678495",
+      "build": "SUCCESS",
+      "deploy": "SKIPPED"
+    },
+    "otherSessionScope": "GK100 recipe research in Reseptit-gk100-rescue; no writes to that session worktrees or branches.",
+    "newPrs": 0,
+    "mainMerge": false,
+    "deploy": false,
+    "branchMergePerformed": false
   }
 }

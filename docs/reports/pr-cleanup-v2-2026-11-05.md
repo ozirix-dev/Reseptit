@@ -1,5 +1,19 @@
 # Reseptit PR-jonon siivous V2 5.11.2026
 
+## #280:n ja #278:n integraatioristiriidat ratkaistu
+
+Käyttäjän jatko-ohjeen mukaisesti molemmat tekstiristiriidat poistettiin pienellä #280:n muutoksella. Tarkistesidosten kaksi regressiota suoritetaan nyt olemassa olevan `nutrition-model.test.ts`-testipolun kautta, joten #280:n `package.json` palautui täsmälleen mainin tasolle. Molemmat testit suoritetaan edelleen normaalissa npm test- ja test:nutrition-ajossa. `gk-next-four.ts`:n uusi import siirrettiin eri kohtaan kuin #278:n snapshot-import; molempien erilliset tarkisteportit säilyvät.
+
+#280:n lopullinen HEAD on `4bc0cd2376f45a52fb8c0d7aba88b10da00eccb1`. #278 pysyy muuttamattomassa HEADissa `4ff37d68cc8f11eaf7051241c85fedbfc1e39c8d`. Read-only Git-esikatselu toimii kumpaankin suuntaan ilman konflikteja ja tuottaa puun `c80de8f4a675bd967dc7dece209f39c59d1c60ea`. Kumpaakaan PR:ää tai haaraa ei yhdistetty; yhteissisältö muodostettiin vain erilliseen, julkaisemattomaan regressiotyöpuuhun guarded write -operaatioilla. Uutta PR:ää ei avattu.
+
+Yhteisversion tarkistukset läpäisevät: **321 yksikkötestiä, 30 käännöstestiä ja 31 staattista/SEO-testiä**, strict-ravintoarvoauditointi, GK-auditointi, TypeScript, Vite ja 856 reitin prerender. Molempien alkuperäiset testit, mukaan lukien LF/CRLF-tarkistesidokset, US-polyolit, V3.1-hyväksyntäsinetit ja poha-/kanakäännökset, suoritettiin. Paikalliset tarkistukset ajettiin sarjana.
+
+Kaikki 326 täydellistä GK-tulosta, 87 täydellistä GK-versiota, laskentasyötteet ja niiden tarkisteet, lähdepolitiikat sekä 326 reseptin makrotiedot säilyvät. #278:n kaikki 128 valmisteltua reseptisnapshotia täsmäävät LF-tavutasolla; käännösrekisterit, editorialSnapshots-sidokset ja kaikki lähde-/hyväksyntäaineistot säilyvät. Makroinventaarion ainoat raakatekstin lähdetarkiste-erot mainiin ovat #278:n 32 aiemmin tarkistettua FI-kielimetadatamuutosta.
+
+[Pysyvä yhteisversion regressiotodiste](https://github.com/ozirix-dev/Reseptit/blob/4bc0cd2376f45a52fb8c0d7aba88b10da00eccb1/docs/reports/pr278-pr280-integration-regression.json) sisältää digesteineen testatun puun `d87dcc860bb14240e544ef60f88a0473c8d68eca` ja julkaisemattoman paikallisen validointicommitin `d22e0c3367c3122c6121b0309df57e01e884f48b`. Lopulliseen julkaistuun commit-tasoon lisättiin tämän jälkeen vain todiste-JSON.
+
+[#280:n tämän HEADin CI](https://github.com/ozirix-dev/Reseptit/actions/runs/41986678495) läpäisi; deploy SKIPPED. #278:n aiempi CI säilyy muuttamattomalla HEADilla. Nopeusajo jatkaa omassa GK100-reseptitutkimuksen työpuussaan; sen haaroihin ei kirjoitettu. Main on edelleen `0fa20528ffe0ca075c9e0fb54c2b388cd7d959fe`. Ei mergeä, deployta tai uusia hyväksyntöjä. Alla säilyvät aikaisempien vaiheiden tilannekuvat, mukaan lukien nyt ratkaistun konfliktin alkuperäinen tosite.
+
 ## Viimeisin tilanne: #168 korjattu ja riippuvuudet koottu
 
 Avoimia on nyt **26** (siivouksen alussa 60). Tässä jatkossa suljettiin #168, #196, #197 ja #198, avattiin korvaava Draft #280 ja päivitettiin olemassa oleva #116. Samanaikainen toinen istunto avasi suunnitelma-PR:n #279; sen sisältöä tai haaraa ei muokattu. Tässä chatissa suljettiin yhteensä 38 PR:ää ja avattiin kolme Draftia (#277, #278, #280). Tämän jatkon ensimmäinen ajantasainen tilanne oli 29 avoinna, #279 mukaan lukien.
