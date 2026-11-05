@@ -1,3 +1,4 @@
+import {countPublishedGkEstimates} from '../src/features/recipes/gk-estimate';
 import {originalGlycemicLoadCategory} from './glycemic-load-filter';
 import { loadAuthorizedGk100Variants } from './gk100-approval-release';
 import {buildTwoAlmondPieVariants} from './gk-two-almond-pies';
@@ -190,6 +191,7 @@ const report = {
   results,
   gkOnlyVariants,
   versionCoverage,
+  estimateCoverage: countPublishedGkEstimates(results,gkOnlyVariants),
   coverageViews:{originalRecipe:{total:versionCoverage.total,numeric:versionCoverage.originalNumeric,missing:versionCoverage.total-versionCoverage.originalNumeric},atLeastOneExactVersion:{total:versionCoverage.total,numeric:versionCoverage.numericRecipes,missing:versionCoverage.missing,additionalApprovedVersions:versionCoverage.additionalA+versionCoverage.additionalB}},
   summary: {
     recipes: results.length,
