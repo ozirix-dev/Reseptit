@@ -53,7 +53,7 @@ export const studyServingTitle = {
  th: 'ค่า GL ของอาหารทดลองหนึ่งส่วน',
 };
 
-export function GkOnlyVariantPanel({variant:v,locale,servings,compact=false}:{variant:GkOnlyVariant;locale:RecipeLocale;servings?:number;compact?:boolean}){
+export function GkOnlyVariantPanel({variant:v,locale,servings,compact=false,originalHasGk=false}:{variant:GkOnlyVariant;locale:RecipeLocale;servings?:number;compact?:boolean;originalHasGk?:boolean}){
  const t=gkOnlyUi[locale],n=new Intl.NumberFormat(locale,{maximumFractionDigits:3}),Heading=compact?'h4':'h2';
  const text = gkCopy[locale];
  const displayedServings = v.studyServing ? v.servings : (servings ?? v.servings);
@@ -63,7 +63,7 @@ export function GkOnlyVariantPanel({variant:v,locale,servings,compact=false}:{va
  </>;
  return <section className={compact?'gk-only-variant':'recipe-panel gk-only-variant'} data-gk-version={v.versionId} data-gk-level={v.level} data-macro-scope={v.macroScope} data-gk-quantity-contract={v.quantityContract}>
   <Heading>{v.studyServing ? studyServingTitle[locale] : text.modified}</Heading>
-  {!compact ? <p className="gk-evidence__scope">{gkScopeUi[locale].originalMissing}</p> : null}
+  {!compact && !originalHasGk ? <p className="gk-evidence__scope">{gkScopeUi[locale].originalMissing}</p> : null}
   {v.limitation ? <p data-gk-limitation="exact-version">{v.studyServing ? v.limitation[locale] : text.variantLimit}</p> : null}
   <p className="gk-evidence__value"><strong>{v.studyServing || v.level === 'A' ? t.a : t.b} · {gkOnlyValue(v, locale)} {t.per}</strong></p>
   <EstimateConfidence locale={locale} confidence={v.confidence} />

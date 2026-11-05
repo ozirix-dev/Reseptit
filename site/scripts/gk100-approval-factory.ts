@@ -264,13 +264,25 @@ export function applyDecisions(checked: Checked, decisions: Decisions) {
   });
 }
 
-export type MainCoverage = { schemaVersion: 1; mainSha: string; numericRecipeIds: string[] };
+export type MainCoverage = {
+  schemaVersion: 1;
+  mainSha: string;
+  numericRecipeIds: string[];
+  studyServingRecipeIds?: string[];
+};
+function validCoverageIds(ids: string[]) {
+  return Array.isArray(ids) && ids.every(recipeId => typeof recipeId === 'string' && id.test(recipeId))
+    && own(ids, recipeId => recipeId);
+}
 export function prepareRelease(checked: Checked, decisions: Decisions, coverage: MainCoverage,
   currentMain: string, readMain: ReadFile) {
   if (coverage.schemaVersion !== 1 || !/^[a-f0-9]{40}$/.test(currentMain) || coverage.mainSha !== currentMain
-      || !Array.isArray(coverage.numericRecipeIds) || !coverage.numericRecipeIds.every(recipeId => id.test(recipeId))
-      || !own(coverage.numericRecipeIds, recipeId => recipeId)) fail('INVALID_OR_STALE_MAIN_COVERAGE');
+      || !validCoverageIds(coverage.numericRecipeIds)
+      || (coverage.studyServingRecipeIds !== undefined && !validCoverageIds(coverage.studyServingRecipeIds))) {
+    fail('INVALID_OR_STALE_MAIN_COVERAGE');
+  }
   const existing = new Set(coverage.numericRecipeIds);
+  const existingStudyServings = new Set(coverage.studyServingRecipeIds);
   const selected: GkOnlyVariant[] = [];
   const rows = applyDecisions(checked, decisions).map(row => {
     if (row.state !== 'OWNER_APPROVED' || row.technical !== 'PASS') return row;
@@ -278,7 +290,9 @@ export function prepareRelease(checked: Checked, decisions: Decisions, coverage:
       const variant = checked.variants.get(row.recipeId);
       if (!variant) return fail('NO_RELEASE_VARIANT_FOR_REVIEW_ONLY_METHOD');
       if (!sha.test(row.originalSha256) || textHash(readMain(row.originalPath)) !== row.originalSha256) fail('MAIN_ORIGINAL_CHANGED');
-      if (existing.has(row.recipeId)) fail('MAIN_ALREADY_HAS_NUMERIC_GK');
+      if (variant.studyServing) {
+        if (existingStudyServings.has(row.recipeId)) fail('MAIN_ALREADY_HAS_STUDY_SERVING');
+      } else if (existing.has(row.recipeId)) fail('MAIN_ALREADY_HAS_NUMERIC_GK');
       for (const [file, expected] of Object.entries({ ...row.supportFiles, [row.packetPath]: row.candidateSha256 })) {
         let existingText: string | undefined;
         try { existingText = readMain(file); } catch { /* A new evidence file can be added to the release PR. */ }
@@ -291,7 +305,7 @@ export function prepareRelease(checked: Checked, decisions: Decisions, coverage:
     }
   });
   return { schemaVersion: 1, mainSha: currentMain, manifestSha256: checked.manifest.manifestSha256,
-    decisionsSha256: fingerprint(decisions), expectedCoverageDelta: selected.length,
+    decisionsSha256: fingerprint(decisions), expectedCoverageDelta: selected.filter(variant => !variant.studyServing).length,
     publicationAuthorized: false, variants: selected, rows,
     files: rows.flatMap(row => row.technical === 'PASS' && row.state === 'RELEASE_READY'
       ? [{ path: row.packetPath, sha256: row.candidateSha256 },

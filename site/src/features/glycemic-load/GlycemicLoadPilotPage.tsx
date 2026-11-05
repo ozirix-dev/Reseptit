@@ -50,8 +50,8 @@ const sources = [
 
 const pageSize = 24;
 const liverRecipeId = "maksalaatikko-kukkakaalilla";
-const variantsByRecipe = new Map(gkOnlyVariants.map((variant) => [variant.recipeId, variant]));
-const recipeEstimateVariants = new Set(gkOnlyVariants.filter((variant) => !variant.studyServing).map((variant) => variant.recipeId));
+const recipeEstimateVariants = new Map(gkOnlyVariants.filter(variant => !variant.studyServing).map(variant => [variant.recipeId, variant]));
+const studyServingVariants = new Map(gkOnlyVariants.filter(variant => variant.studyServing).map(variant => [variant.recipeId, variant]));
 
 const uxCopy = {
   fi: {
@@ -198,7 +198,8 @@ export function GlycemicLoadPilotPage() {
   function renderRecipe(result: typeof glycemicLoadPilotResults[number]) {
     const localized = result.localeRoutes[locale] ?? result.localeRoutes.fi;
     const isLiverRecipe = result.recipeId === liverRecipeId;
-    const variant = variantsByRecipe.get(result.recipeId);
+    const variant = recipeEstimateVariants.get(result.recipeId);
+    const studyServing = studyServingVariants.get(result.recipeId);
     return <li key={result.recipeId} id={result.recipeId} className="glycemic-pilot__recipe" tabIndex={-1}>
       {result === linked ? <p className="eyebrow">{ux.linked}</p> : null}
       <h3><Link to={localized?.routePath ?? result.routePath} lang={isLiverRecipe ? locale : localized ? recipeLocaleFromPath(localized.routePath) : "fi"}>{titleFor(result)}</Link></h3>
@@ -216,6 +217,7 @@ export function GlycemicLoadPilotPage() {
         />
       </> : <MissingEstimate result={result} locale={locale} explanation={isLiverRecipe ? text.liver : undefined} />}
       {variant ? <GkOnlyVariantPanel variant={variant} locale={locale} compact /> : null}
+      {studyServing ? <GkOnlyVariantPanel variant={studyServing} locale={locale} compact /> : null}
     </li>;
   }
 

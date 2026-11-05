@@ -16,10 +16,46 @@ export interface GkOnlyVariant {
  sensitivity:{min:number;max:number;kind:'ASSUMPTION_ONLY';gi:[0,150];isBiologicalBound:false;isConfidenceInterval:false}|null;
  sources:Array<{title:string;url:string;kind:'CARBOHYDRATE'|'HUMAN_GI'|'PUBLISHED_CODING'|'B_CODING'|'BOUND';note:string}>;
 }
-export interface GkVersionCoverage {total:number;originalNumeric:number;additionalA:number;additionalB:number;classOnly:number;numericRecipes:number;missing:number;numericRecipeIds:string[];}
-export function countGkVersions(original:Array<{recipeId:string;status:string}>,variants:GkOnlyVariant[]):GkVersionCoverage{
- const originalIds=new Set(original.map(r=>r.recipeId));if(originalIds.size!==original.length)throw Error('Duplicate original recipe');
- const old=new Set(original.filter(r=>r.status==='CALCULATED').map(r=>r.recipeId)),next=new Set<string>();
- for(const v of variants){if(!originalIds.has(v.recipeId)||old.has(v.recipeId)||next.has(v.recipeId))throw Error('GK-only version must cover one distinct previously missing recipe');if(v.level!=='A'&&v.level!=='B')throw Error('Class-only is not numeric');const point=typeof v.point==='number'&&Number.isFinite(v.point)&&v.point>=0;const range=v.scenarioRange&&Number.isFinite(v.scenarioRange.min)&&Number.isFinite(v.scenarioRange.max)&&v.scenarioRange.min>=0&&v.scenarioRange.max>=v.scenarioRange.min;if(!point&&!range)throw Error('Numeric GK-only value missing');next.add(v.recipeId);}
- const ids=[...old,...next].sort();return {total:original.length,originalNumeric:old.size,additionalA:variants.filter(v=>v.level==='A').length,additionalB:variants.filter(v=>v.level==='B').length,classOnly:0,numericRecipes:ids.length,missing:original.length-ids.length,numericRecipeIds:ids};
+export interface GkVersionCoverage {
+ total:number;
+ originalNumeric:number;
+ additionalA:number;
+ additionalB:number;
+ classOnly:number;
+ numericRecipes:number;
+ missing:number;
+ numericRecipeIds:string[];
+ studyServingRecipeIds:string[];
+}
+
+export function countGkVersions(original:Array<{recipeId:string;status:string}>,variants:GkOnlyVariant[]):GkVersionCoverage {
+ const originalIds = new Set(original.map(row => row.recipeId));
+ if (originalIds.size !== original.length) throw Error('Duplicate original recipe');
+ const originalNumeric = new Set(original.filter(row => row.status === 'CALCULATED').map(row => row.recipeId));
+ const additional = new Set<string>();
+ const studyServings = new Set<string>();
+ let additionalA = 0;
+ let additionalB = 0;
+ for (const variant of variants) {
+  const {recipeId, level, point, scenarioRange} = variant;
+  const covered = variant.studyServing ? studyServings : additional;
+  if (!originalIds.has(recipeId) || covered.has(recipeId) || (!variant.studyServing && originalNumeric.has(recipeId))) {
+   throw Error('GK-only version must cover one distinct recipe within its scope; home-recipe versions require missing original GK');
+  }
+  if (level !== 'A' && level !== 'B') throw Error('Class-only is not numeric');
+  const validPoint = typeof point === 'number' && Number.isFinite(point) && point >= 0;
+  const validRange = scenarioRange && Number.isFinite(scenarioRange.min) && Number.isFinite(scenarioRange.max)
+    && scenarioRange.min >= 0 && scenarioRange.max >= scenarioRange.min;
+  if (!validPoint && !validRange) throw Error('Numeric GK-only value missing');
+  covered.add(recipeId);
+  if (variant.studyServing) continue;
+  if (level === 'A') additionalA++;
+  else additionalB++;
+ }
+ const numericRecipeIds = [...originalNumeric, ...additional].sort();
+ return {
+  total: original.length, originalNumeric: originalNumeric.size, additionalA, additionalB, classOnly: 0,
+  numericRecipes: numericRecipeIds.length, missing: original.length - numericRecipeIds.length,
+  numericRecipeIds, studyServingRecipeIds: [...studyServings].sort(),
+ };
 }
