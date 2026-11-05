@@ -12654,7 +12654,19 @@
       "279": "REVIEW",
       "280": "KEEP_ACTIVE"
     },
-    "concurrentWork": "Read GK100 throughput plan; own isolated branches, serial local tests, one CI pipeline at a time, no other-session branch writes."
+    "concurrentWork": "Read GK100 throughput plan; own isolated branches, serial local tests, one CI pipeline at a time, no other-session branch writes.",
+    "integrationPreview": {
+      "heads": [
+        "dc3aa002348cbdd579cf7a7b12b35e61de7c8bc6",
+        "4ff37d68cc8f11eaf7051241c85fedbfc1e39c8d"
+      ],
+      "previewTree": "ca7d829a35c789ac7d2aa79b2cacfac441dcdd8b",
+      "conflicts": [
+        "site/package.json",
+        "site/scripts/gk-next-four.ts"
+      ],
+      "resolutionRequired": "Retain all test entries and both imports: acceptsReviewedNutritionModelBinding and recipeTextForApprovedSnapshot. Retain both distinct binding gates. Revalidate the actual combined revision when integration is authorized. No branch or main integration performed."
+    }
   },
   "latestOutcome": {
     "afterOpen": 26,

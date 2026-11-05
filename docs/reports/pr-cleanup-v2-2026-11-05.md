@@ -39,7 +39,7 @@ Kommentit tallennettiin ennen sulkemista ja sulkemiset tarkistettiin GitHubista.
 5. **Recipavo ja käyttöliittymä:** #172, #176, #178 ja #243 ovat neljä erillistä arkkitehtuuri-/tuote-/käyttöönottopäätöstä. #119:n suodatin- ja aikanäyttö on erillinen käyttöliittymäkatselmointi. Näitä ei suljeta aihepiirin samankaltaisuuden vuoksi.
 6. **Riippuvuudet:** koottu #116 on turvallisesti katselmoitavissa. #277:n historiaviite voidaan katselmoida dokumentaationa. #100 jää käyttäjän ohjeella sivuun.
 
-#280 ja #278 muuttavat kumpikin npm-testiluetteloa; kummankin uudet testit on säilytettävä myöhemmässä integraatiossa. #116:n riippuvuusrivit on puolestaan säilytettävä samassa package.json-tiedostossa. Niiden yhdistäminen mainiin jää erikseen valtuutettavaan vaiheeseen.
+#280:n ja #278:n read-only yhteisintegraation esikatselu tunnisti kaksi tekstiristiriitaa: `site/package.json` ja `site/scripts/gk-next-four.ts`. Jälkimmäisessä kumpikin lisää eri importin tiedoston alkuun. Myöhemmässä integraatiossa säilytetään molemmat importit (`acceptsReviewedNutritionModelBinding` ja `recipeTextForApprovedSnapshot`), kummankin tarkistesidoksen käsittely sekä molempien uudet npm-testit. #116:n riippuvuusrivit säilytetään samassa package.json-tiedostossa. Esikatselupuu on `ca7d829a35c789ac7d2aa79b2cacfac441dcdd8b`; varsinaista haarojen integraatiota ei tehty. Yhdistetyn version tarkistukset ja main-integraatio jäävät erikseen valtuutettavaan vaiheeseen.
 
 Ajantasaiset kaikkien 26 avoimen PR:n HEADit, muutospolut, CI, katselmoinnit, merge-tila ja luokitus ovat JSON-raportin `normalizationFollowUp.openPullRequests`-kentässä. Aiemmat luokitukset ja tositteet säilyvät historiallisina tilannekuvina.
 
