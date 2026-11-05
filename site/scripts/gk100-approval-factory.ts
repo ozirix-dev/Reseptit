@@ -22,7 +22,7 @@ export type Classification = {
 export type Batch = {
   schemaVersion: 1;
   batchId: string;
-  candidates: Array<{ recipeId: string; packetPath: string; classification?: Classification }>;
+  candidates: Array<{ recipeId: string; packetPath: string; classification?: Classification; studyServing?: true }>;
 };
 
 type Binding = {
@@ -35,6 +35,7 @@ type Candidate = Binding & {
   packetPath: string;
   originalPath: string;
   supportFiles: Record<string, string>;
+  studyServing?: true;
   servings: number;
   method: 'A' | 'B' | typeof MIXED_EVIDENCE_METHOD;
   mixedEvidence?: ReturnType<typeof calculateMixedEvidence>;
@@ -114,7 +115,9 @@ function assess(entry: Batch['candidates'][number], read: ReadFile, methodApprov
     if (!originalPathPattern.test(path) && !/^docs\/nutrition\/[a-z0-9-]+\.md$/.test(path)) fail('INVALID_BOUND_PATH');
     return read(path);
   };
+  if (entry.studyServing !== undefined && entry.studyServing !== true) fail('INVALID_STUDY_SERVING');
   if (packet.method !== undefined) {
+    if (entry.studyServing) fail('INVALID_STUDY_SERVING');
     if (packet.method !== MIXED_EVIDENCE_METHOD) return fail('UNKNOWN_GK_METHOD');
     const mixedEvidence = calculateMixedEvidence(packet, originalPath, readBound, read(mixedBindingsPath));
     const classification = entry.classification ?? null;
@@ -157,6 +160,12 @@ function assess(entry: Batch['candidates'][number], read: ReadFile, methodApprov
     return { row, variant: undefined };
   }
   const variant = parsePointReviewVariant(raw, readBound);
+  if (entry.studyServing) {
+    if (variant.servings !== 1 || variant.level !== 'A' || variant.scenarioRange || !variant.limitation) {
+      fail('INVALID_STUDY_SERVING');
+    }
+    variant.studyServing = true;
+  }
   const kinds = ['CARBOHYDRATE', 'HUMAN_GI', 'PUBLISHED_CODING', 'B_CODING', 'BOUND'];
   if (!variant.sources.some(source => source.kind === 'HUMAN_GI')
       || !variant.sources.some(source => source.kind === 'CARBOHYDRATE')
@@ -184,6 +193,7 @@ function assess(entry: Batch['candidates'][number], read: ReadFile, methodApprov
     supportFiles: Object.fromEntries(Object.entries(packet.boundFiles).filter(([file]) => file !== originalPath)),
     candidateSha256, originalSha256: packet.boundFiles[originalPath], inputSha256,
     servings: variant.servings, method: variant.level, point: variant.point, range: variant.scenarioRange,
+    ...(variant.studyServing && { studyServing: true as const }),
     uncertainty: variant.scenarioRange ? 'NAMED_SCENARIOS' : 'LOW_CONFIDENCE_POINT',
     limitation: variant.limitation, omittedCho: variant.omittedCho, sources: variant.sources,
     omittedChoStressGkAtGi100: variant.omittedCho, suggestedRisk, riskSignals,

@@ -46,38 +46,46 @@ export function gkOnlyPreparation(v:GkOnlyVariant,locale:RecipeLocale,servings=v
   return n.format(quantity.amount);
  });
 }
+const studyServingTitle = {
+ fi: 'Tutkimusannoksen GK',
+ en: 'GL for the study serving',
+ sv: 'GL för studieportionen',
+ th: 'ค่า GL ของอาหารทดลองหนึ่งส่วน',
+};
+
 export function GkOnlyVariantPanel({variant:v,locale,servings,compact=false}:{variant:GkOnlyVariant;locale:RecipeLocale;servings?:number;compact?:boolean}){
  const t=gkOnlyUi[locale],n=new Intl.NumberFormat(locale,{maximumFractionDigits:3}),Heading=compact?'h4':'h2';
  const text = gkCopy[locale];
+ const displayedServings = v.studyServing ? v.servings : (servings ?? v.servings);
  const modelAssumptions = <>
   {v.codingKinds.includes('PLANT50') ? <p>{t.plant}</p> : null}
   {v.codingKinds.includes('TRACE50') ? <p>{t.trace}</p> : null}
  </>;
  return <section className={compact?'gk-only-variant':'recipe-panel gk-only-variant'} data-gk-version={v.versionId} data-gk-level={v.level} data-macro-scope={v.macroScope} data-gk-quantity-contract={v.quantityContract}>
-  <Heading>{text.modified}</Heading>
+  <Heading>{v.studyServing ? studyServingTitle[locale] : text.modified}</Heading>
   {!compact ? <p className="gk-evidence__scope">{gkScopeUi[locale].originalMissing}</p> : null}
-  {v.limitation ? <p data-gk-limitation="exact-version">{text.variantLimit}</p> : null}
+  {v.limitation ? <p data-gk-limitation="exact-version">{v.studyServing ? v.limitation[locale] : text.variantLimit}</p> : null}
   <p className="gk-evidence__value"><strong>{v.level === 'A' ? t.a : t.b} · {gkOnlyValue(v, locale)} {t.per}</strong></p>
   <EstimateConfidence locale={locale} confidence={v.confidence} />
-  <p>{v.level === 'A' ? text.modifiedA : text.modifiedB}{v.omittedCho > 0 ? ` ${text.omitted}` : ''}</p>
+  {v.studyServing ? null : <p>{v.level === 'A' ? text.modifiedA : text.modifiedB}{v.omittedCho > 0 ? ` ${text.omitted}` : ''}</p>}
   {v.point !== null && v.point < 1 && v.omittedCho > 0 ? <p>{gkScopeUi[locale].partial}</p> : null}
   {v.scenarioRange ? <p>{t.range}</p> : null}
   <details className="gk-evidence__details">
     <summary>{text.how}</summary>
-    <p>{t.scope}</p>
-    {v.limitation ? <p><strong>{v.limitation[locale]}</strong></p> : null}
+    {v.studyServing ? null : <p>{t.scope}</p>}
+    {v.limitation && !v.studyServing ? <p><strong>{v.limitation[locale]}</strong></p> : null}
     {v.omittedCho > 0 ? <p data-gk-omission="available-cho">{t.omission} {n.format(Math.ceil(v.omittedCho * 10) / 10)} {t.omissionEnd}</p> : null}
-    <p>{t.low}</p>
+    {v.studyServing ? null : <p>{t.low}</p>}
     {v.sources.some((source) => source.kind === 'HUMAN_GI') ? <p>{text.kinds.published}</p> : null}
     {v.sources.some((source) => source.kind === 'PUBLISHED_CODING' || source.kind === 'B_CODING') ? <p>{text.kinds.model}</p> : null}
     <p><strong>{t.details}</strong></p>
-    <p>{{fi:'Ainesluettelon annosmäärä',en:'Servings for these amounts',sv:'Portioner för dessa mängder',th:'จำนวนที่สำหรับปริมาณนี้'}[locale]} · {n.format(servings ?? v.servings)}</p>
+    <p>{{fi:'Ainesluettelon annosmäärä',en:'Servings for these amounts',sv:'Portioner för dessa mängder',th:'จำนวนที่สำหรับปริมาณนี้'}[locale]} · {n.format(displayedServings)}</p>
     <ul>{v.ingredients.map((ingredient, index) => {
-      const quantity = gkOnlyQuantity(v, index, servings);
+      const quantity = gkOnlyQuantity(v, index, displayedServings);
       return <li key={index}>{quantity ? `${n.format(quantity.amount)} ${quantityUnit(quantity.unit, locale)}` : t.original} · {ingredient.name[locale]}</li>;
     })}</ul>
     {v.standalonePreparation ? null : <p>{t.prepare}</p>}
-    <p>{gkOnlyPreparation(v, locale, servings)}</p>
+    <p>{gkOnlyPreparation(v, locale, displayedServings)}</p>
   </details>
   <details className="gk-evidence__details gk-evidence__technical">
     <summary>{text.sources}</summary>
