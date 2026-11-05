@@ -33,9 +33,56 @@ Henkilökohtaista reseptiä, päiväkirjaa tai käyttäjän lähdetekstiä **ei 
 | T1: oma resepti tekstistä | Liitä/kirjoita resepti → esitä ainesosat ja ohjeet tarkistettavina → yksityinen tallennus ja revisio. | **P2:** tunnistus, tietosuoja, poisto/vienti, omistajuus; **P3:** yhteensopiva Diary-tietomalli. | Todellinen käyttäjä näkee vain omat reseptinsä, voi korjata ja poistaa; historia ei muutu hiljaa. |
 | T2: URL-tuonti | Julkisen reseptisivun osoite → rajattu nouto → rakenteisen Recipe/JSON-LD:n tai sivutekstin jäsentely → sama vahvistusnäkymä kuin T1. | T1, verkkonoudon tietoturva-, tekijänoikeus-, kustannus- ja ylläpitopäätös. | Käyttäjälle näytetään alkuperäinen URL ja epävarmat kentät; virheellinen/suojattu linkki palautuu manuaaliseen tekstitilaan. |
 | T3: Core-laskenta ja päiväkirjakirjaus | Hyväksytyt ruoka-aine-/määrävastineet, tunnetut makrot, kattavuus, GK vain hyväksytyllä lähdenäytöllä; annos kirjataan snapshotina. | Nutrition Core -rajapinta, lähde-/käyttöoikeudet, versionhallinta, P3 ja tarvittavat laskennan hyväksynnät. | Oikeat määrät; tuntematon ≠ 0; duplikaattikirjaus ja jälkikäteen muuttuva päiväkirjahistoria estetty. |
-| T4: vapaaehtoinen julkaisuehdotus | Erillinen “Ehdota reseptiä julkiseen kirjastoon” -toiminto, toimituksellinen jono ja valvottu GitHub-vienti. | Sisällön moderointi, käyttöoikeus- ja julkaisuprosessi; erillinen hyväksyntä. | Ei käyttäjätietojen vuotoa eikä automaattista merge/deployta. |
+| T4: vapaaehtoinen julkaisuehdotus | Erillinen “Ehdota reseptiä julkiseen kirjastoon” -toiminto → automaattinen duplikaatti-/samankaltaisuusportti → vain riittävän erottuva ehdotus omistajan hyväksyntäjonoon → toimituksellinen jatkovalmistelu ja valvottu GitHub-vienti. | Sisällön moderointi, duplikaattitarkistus, käyttöoikeus- ja julkaisuprosessi; erillinen hyväksyntä. | Samankaltainen ehdotus ei läpäise automaattista alkuporttia; omistaja päättää aina jatkosta. Ei käyttäjätietojen vuotoa tai automaattista merge/deployta. |
 
 T0 voidaan suunnitella nykyisen julkisen sivuston rinnalla; **T1–T4 eivät kuulu P1–P3:n tämänhetkiseen minimilaajuuteen** eikä niiden toiminnallisuutta pidä luvata ennen erillisiä päätöksiä.
+
+## Julkisen reseptiehdotuksen kaksivaiheinen hyväksyntäportti (T4)
+
+**Tuotepäätös:** käyttäjä **saa ehdottaa** omaa tai muuten asianmukaisin käyttöoikeuksin ehdotettavaa reseptiä julkiseen Recipavo/Reseptit-kirjastoon. Ehdottaminen on eri toiminto kuin yksityiseen kokoelmaan tallentaminen. **Vain alustavan samankaltaisuustarkistuksen läpäisevä ehdotus pääsee normaalisti omistajan toimitukselliseen hyväksyntäjonoon.** Lopullinen hyväksyjä on palvelun omistaja, ei algoritmi. Mikään vaihe ei itsessään tarkoita julkaisua.
+
+### Käyttäjän polku
+
+1. Käyttäjä valitsee erikseen **“Ehdota julkiseen reseptikirjastoon”**. Näytä mitä ehdotuksesta ja lähdeviitteistä siirtyy toimitukselliseen käsittelyyn; pyydä nimenomainen vahvistus ja ilmoitus tekijänoikeuksista / käytettävissä olevista luvista. Älä oleta, että yksityisen reseptin sisältöä saa jakaa.
+2. Tee **alustava päällekkäisyystarkistus** ennen raskasta ravinto-/GK-tutkimusta, käännöksiä, kuvantuotantoa tai GitHub-PR:ää. Vertaa **kaikkiin julkisesti hyväksyttyihin resepteihin ja julkaisujonon ehdokkaisiin**; huomioi neljän kielen otsikkovariaatiot ja saman reseptin kieliversiot yhtenä reseptinä.
+3. Tulokset:
+   - `NO_MATERIAL_MATCH`: ei olennaisesti samanlaista reseptiä → `OWNER_REVIEW_PENDING` (omistajan henkilökohtainen hyväksyntäjono), edelleen **ei julkaistu**.
+   - `MATERIAL_DUPLICATE`: käytännössä sama resepti → **ei läpäise alkuporttia**; näytä käyttäjälle tunnistetun **julkisen** reseptin linkki ja ymmärrettävä ero-/päällekkäisyysselitys; tarjoa “muokkaa ehdotusta”, “tallenna vain itselle” ja “perustele merkittävä ero”. Älä automaattisesti avaa PR:ää.
+   - `UNCERTAIN` tai tarkistus epäonnistuu → **ei läpäise automaattista alkuporttia**; anna selkeä tarkennus-/uudelleenyritys- tai rajattu ylläpitäjän poikkeustarkistuspolku. Älä väitä ettei duplikaattia ole. Mahdollinen poikkeus vaatii omistajan dokumentoidun tietoisen päätöksen, ei algoritmin hiljaista ohitusta.
+4. Omistajan käsittely: **hyväksy jatkovalmisteluun / pyydä muutoksia / hylkää**; näytä ehdotus, koostettu vertailutulos perusteluineen, julkiset vertailureseptit ja lähde-/käyttöoikeustila. Omistajalle ei lähetetä automaattisesti kaikkia käyttäjien omia yksityisiä reseptejä.
+5. Vasta omistajan **erillisellä hyväksynnällä** ehdotus siirtyy toimitukselliseen valmisteluun (ainekset, rakenteet, realistinen valmistus, ravintoarvot, GK:n näyttö tai HOLD, kuvaoikeudet, neljä kieltä ja tarkistukset) ja tämän jälkeen tarvittaessa **Draft-PR**:ksi. Lopullinen julkaisulupa, merge ja deploy ovat oma päätösporttinsa. Aiempi omistajan sisällöllinen hyväksyntä ei ole merge/deploy-lupa.
+6. Kerro käyttäjälle ehdotuksen tila (esim. `tarkistuksessa`, `samankaltainen löytyi`, `toimituksen arvioitavana`, `lisätietoja pyydetty`, `hyväksytty valmisteluun`, `hylätty`) paljastamatta muiden käyttäjien yksityisiä reseptejä tai toimituksen sisäisiä tietoja. Hylätty ehdotus **ei poista** yksityistä reseptiä.
+
+### Mitä “samankaltainen resepti” tarkoittaa
+
+Älä päätä päällekkäisyyttä pelkästä nimestä, slugista, tekstin samankaltaisuudesta tai samasta pääraaka-aineesta. Käytä kaksitasoista vertailua:
+
+- **Tarkka duplikaatti:** normalisoidun reseptisisällön, lähde-URL:n tai muun vahvan tunnisteen yhtenevyys; huomioi versiot ja käännökset.
+- **Olennainen samankaltaisuus:** vertaa raaka-aineiden joukkoa ja suhteita, korvaavia ainesosia, valmistustapaa, ruokalajin rakennetta, lopputulosta ja olennainen käyttäjähyöty. Kyseenalaista pelkkä mausteen, otsikon tai annoskoon muutos.
+- **Aito erottuvuus:** esimerkiksi Margherita-pizza, Pofiber-pohjainen pizza ja raejuustopizza ovat eri rakenne-/ruokavaliovaihtoehtoja; myös merkittävästi eri tekniikka tai allergeeniton / muun ruokavalion aidosti toimiva muunnos voi olla eri resepti.
+- Tarkistuksen on palautettava **lähdeviitteelliset osumat ja selitettävä peruste**; mahdollisia tulevia numeerisia samankaltaisuuskynnyksiä ei lukita ilman arvioitua testiaineistoa. Tekoälyluokittelija ei yksin saa julkaista tai hyväksyä ehdotusta.
+- Pending-jonon sisältö on luottamuksellista: älä paljasta toisten ehdottajien alkuperäisiä tekstejä tai henkilötietoja käyttäjälle. Jos ehdotus vastaa vain toisen käsittelyssä olevaa ehdotusta, anna geneerinen ilmoitus ja mahdollisuus yksityiseen tallentamiseen tai eron perustelemiseen.
+
+### Tietomallin ja hyväksyntälogiikan ehdotus (ei vielä skeemamuutosta)
+
+```text
+PublicRecipeSubmission:
+  submission_id, submitter_id, private_recipe_revision_id?
+  consent_version, explicit_submit_at, source_url?, rights_attestation
+  content_snapshot_for_editorial_review
+  duplicate_check: { status: NO_MATERIAL_MATCH | MATERIAL_DUPLICATE | UNCERTAIN,
+                     compared_library_revision, matched_public_recipe_ids[],
+                     matched_pending_submission_ids_internal_only[],
+                     reasons[], checked_at }
+  workflow_status: DRAFT | DUPLICATE_BLOCKED | CLARIFICATION_NEEDED |
+                   OWNER_REVIEW_PENDING | CHANGES_REQUESTED | REJECTED |
+                   APPROVED_FOR_PREPARATION | EDITORIAL_DRAFT
+  owner_decision: { decision?, actor_id?, at?, reason?, proposal_revision? }
+```
+
+**Revisiointi:** materiaalinen muutos aineksiin, annoksiin tai valmistustapaan nollaa aiemman duplikaattitarkistuksen ja mahdollisen sisällöllisen hyväksynnän. Julkaisuvientiä varten vain erikseen hyväksytty toimituksellinen snapshot — ei henkilökohtaisia muistiinpanoja, päiväkirjoja, kontakteja tai piilotettuja metatietoja. Vertailu pidetään hallinnollisesti luettavana ja lokitus minimissä.
+
+**Turvallinen oletus:** mitään reseptiä ei viedä julkiseen kirjastoon eikä GitHubiin ilman nimenomaista toimituksellista omistajapäätöstä; käyttäjälle tallennus yksityisenä on sallittu, vaikka ehdotus estyisi duplikaattina. Julkisen ehdotuksen alkuportti ei riipu GK:n numeerisesta valmistumisesta.
 
 ## Tuontitiedon rakenteinen sopimus
 
@@ -106,7 +153,14 @@ PrivateRecipe:
 | HTML sisältää prompt injectionin / skriptin / linkin ulkoiseen kuvaan | Ei suoritusta, ei oikeuksien nostoa, ei automaattista kuvahakua. |
 | Kahden käyttäjän reseptit ja suorien ID:iden kysely | Omistajuustarkistus estää kaiken ristiinpääsyn; arkisto-, vienti- ja poisto-operaatiot mukana. |
 | Uusinta yritystä tallennuksessa; saman reseptin muokkaus | Ei tuplatallennusta; uusi versio ei muuta aiempaa ruokapäiväkirjaa. |
-| “Ehdota julkaisuun” -toiminto | Ei anna julkista PR:ää tai deployta ilman toimituksellista hyväksyntää. |
+| “Ehdota julkaisuun” ilman vastaavaa julkista/pending-reseptiä | Läpäisee alkuportin mutta jää `OWNER_REVIEW_PENDING` -tilaan; ei PR:ää tai julkaisua ennen omistajan päätöstä. |
+| Täsmälleen sama tai olennaisesti sama resepti kuin kirjastossa | `MATERIAL_DUPLICATE`; ei toimitukselliseen normaalijonoon; käyttäjälle linkki julkiseen vastineeseen ja mahdollisuus muokata tai perustella ero. |
+| Vain vähän muuttunut otsikko/mauste/annoskoko | Ei kierrä duplikaattiporttia; kerrotaan merkityksellinen vertailuperuste. |
+| Saman ruokalajin merkittävästi eri pohja / menetelmä | Erottuva ehdotus voi läpäistä portin; esimerkkejä Margherita, Pofiber ja raejuustopizza. |
+| Osuma vain toisen käyttäjän käsittelyssä olevaan ehdotukseen | Ei vuoda muiden ehdotustekstejä tai omistajatietoja; pidetään alkuportissa ilman automaattista julkaisua. |
+| Epävarma / epäonnistunut vertailu | Ei automaattista läpäisyä; tarkennus tai omistajan dokumentoitu poikkeustarkistus. |
+| Omistaja hylkää tai pyytää muutoksia | Ehdotus ei etene julkaisuun; käyttäjän oma yksityinen resepti säilyy. |
+| Omistaja hyväksyy jatkovalmisteluun | Toimituksellinen draft ja mahdollinen erillinen GitHub-PR; ei itsestään mergeä eikä deployta. |
 
 ## Suorituskyky, kustannukset ja hyöty
 
@@ -124,4 +178,4 @@ Mitataan vaiheittain: valmistuiko resepti ilman tukea, paljonko määrien korjau
 
 **Ei tässä PR:ssä:** käyttäjälomaketta tuotantoon, ulkoista URL-noutoa, tietokantaa, kirjautumista, käyttäjädataa, ravintolaskennan muutoksia, GK:n hyväksyntää, muutoksia julkiseen sisällöntuotantoon, mergeä eikä deployta.
 
-**Valmis kun:** työnkulut, tietomalliluonnos, yksityinen/julkinen raja, riskit, testit ja vaiheistus ovat katselmoitavissa, ja T0-toteutus voidaan antaa omana rajattuna työpakettinaan.
+**Valmis kun:** työnkulut, tietomalliluonnos, yksityinen/julkinen raja, **samankaltaisuusportti ja omistajan kaksivaiheinen hyväksyntä**, riskit, testit ja vaiheistus ovat katselmoitavissa, ja T0-toteutus voidaan antaa omana rajattuna työpakettinaan.
