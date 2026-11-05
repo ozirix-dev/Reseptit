@@ -1,6 +1,10 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
 import { readFileSync } from 'node:fs';
+import { createElement } from 'react';
+import { renderToStaticMarkup } from 'react-dom/server';
+import { MemoryRouter } from 'react-router-dom';
+import { GkOnlyVariantPanel } from '../src/features/recipes/GkOnlyVariantPanel';
 import { fingerprint } from '../scripts/gk80-candidate-model';
 import { mixedApprovalPath, mixedBindingsPath, mixedPolicySha256, MIXED_EVIDENCE_METHOD, type MixedEvidencePacket } from '../scripts/gk100-mixed-evidence';
 import { parsePointReviewVariant, type PointReviewCandidate } from '../scripts/gk100-point-packet';
@@ -76,6 +80,37 @@ test('25 recipes are handled independently, with explicit approval and no public
   assert.deepEqual(verifyReleaseBundle(bundle, {
     schemaVersion: 1, bundleSha256: bundle.bundleSha256, evidence: 'fixture authorization',
   }, read), plan.variants);
+});
+
+test('a sealed study serving keeps its scope and quantities beside the GL estimate', () => {
+  const { batch, files, read } = fixture(1);
+  const entry = batch.candidates[0];
+  const packet = JSON.parse(read(entry.packetPath));
+  packet.servings = 1;
+  packet.unroundedGk = '10';
+  packet.preparation = { ...locale, en: 'Study servings: {{servings}}. Fixed amount: 100 g.' };
+  packet.limitation = { ...locale, en: 'Only the food served in the study.' };
+  const raw = JSON.stringify(packet);
+  files.set(entry.packetPath, raw);
+  entry.classification!.candidateSha256 = textHash(raw);
+  const unmarked = checkBatch(batch, read);
+  entry.studyServing = true;
+  const checked = checkBatch(batch, read);
+  assert.throws(() => applyDecisions(checked, approve(unmarked, entry.recipeId)), /INVALID_OR_STALE_DECISIONS/);
+  const decisions = approve(checked, entry.recipeId);
+  const plan = prepareRelease(checked, decisions, coverage, base, read);
+  const bundle = makeReleaseBundle(checked, batch, decisions, plan);
+  const [variant] = verifyReleaseBundle(bundle, {
+    schemaVersion: 1, bundleSha256: bundle.bundleSha256, evidence: 'fixture authorization',
+  }, read);
+  const html = renderToStaticMarkup(createElement(MemoryRouter, null,
+    createElement(GkOnlyVariantPanel, { variant, locale: 'en', servings: 4 })));
+  const [summary] = html.split('<details');
+  assert.match(summary, /GL for the study serving/);
+  assert.match(summary, /Only the food served in the study/);
+  assert.match(html, /Study servings: 1/);
+  assert.match(html, /100 g · en/);
+  assert.doesNotMatch(html, /400 g/);
 });
 
 test('different recipe, candidate revision or original invalidates the approval', () => {

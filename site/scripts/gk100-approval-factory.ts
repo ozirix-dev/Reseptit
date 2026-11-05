@@ -161,7 +161,7 @@ function assess(entry: Batch['candidates'][number], read: ReadFile, methodApprov
   }
   const variant = parsePointReviewVariant(raw, readBound);
   if (entry.studyServing) {
-    if (variant.servings !== 1 || variant.level !== 'A' || variant.scenarioRange || !variant.limitation) {
+    if (variant.servings !== 1 || variant.omittedCho !== 0 || variant.scenarioRange || !variant.limitation) {
       fail('INVALID_STUDY_SERVING');
     }
     variant.studyServing = true;

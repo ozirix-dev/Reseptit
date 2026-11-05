@@ -65,7 +65,7 @@ export function GkOnlyVariantPanel({variant:v,locale,servings,compact=false}:{va
   <Heading>{v.studyServing ? studyServingTitle[locale] : text.modified}</Heading>
   {!compact ? <p className="gk-evidence__scope">{gkScopeUi[locale].originalMissing}</p> : null}
   {v.limitation ? <p data-gk-limitation="exact-version">{v.studyServing ? v.limitation[locale] : text.variantLimit}</p> : null}
-  <p className="gk-evidence__value"><strong>{v.level === 'A' ? t.a : t.b} · {gkOnlyValue(v, locale)} {t.per}</strong></p>
+  <p className="gk-evidence__value"><strong>{v.studyServing || v.level === 'A' ? t.a : t.b} · {gkOnlyValue(v, locale)} {t.per}</strong></p>
   <EstimateConfidence locale={locale} confidence={v.confidence} />
   {v.studyServing ? null : <p>{v.level === 'A' ? text.modifiedA : text.modifiedB}{v.omittedCho > 0 ? ` ${text.omitted}` : ''}</p>}
   {v.point !== null && v.point < 1 && v.omittedCho > 0 ? <p>{gkScopeUi[locale].partial}</p> : null}
