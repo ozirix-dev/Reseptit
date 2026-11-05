@@ -2,487 +2,10 @@
   "schemaVersion": 1,
   "mainSha": "d9e4fdc314142518b4afdd60933f3f0a75ead519",
   "manifestSha256": "eded7c91b13fcc8f22c5700920594aade07332988074569807fff61c5f27ae2e",
-  "decisionsSha256": "213727caf3b40dd2f89ed0f10fd6d5ca94dc3c5f1811cb0106c42ebe43f7529d",
-  "expectedCoverageDelta": 7,
+  "decisionsSha256": "60b61cd8a840ce51116734ede03ad3f80bf0df731b886c1fb9a7deaead6ced42",
+  "expectedCoverageDelta": 0,
   "publicationAuthorized": false,
-  "variants": [
-    {
-      "recipeId": "intialainen-aloo-paratha",
-      "versionId": "gk-operation80-review-13af95c73778",
-      "inputSha256": "13af95c73778862bebc3f53546e1e551703eb5ccea25f4edb9a02ef1079ef671",
-      "level": "B",
-      "servings": 1,
-      "point": 39.4788,
-      "scenarioRange": null,
-      "rangeKind": null,
-      "omittedCho": 0,
-      "confidence": "LOW",
-      "macroScope": "NO_MACRO_PACKAGE_FOR_THIS_VERSION",
-      "quantityContract": "GK_ONLY_NATIVE_UNITS_V1",
-      "standalonePreparation": true,
-      "ingredients": [
-        {
-          "name": {
-            "fi": "Perunaparatha, valmis tutkimusannos",
-            "en": "Potato paratha, prepared study portion",
-            "sv": "Potatisparatha, färdig studieportion",
-            "th": "ปาราทาไส้มันฝรั่ง ส่วนทดลองที่ปรุงแล้ว"
-          },
-          "grams": 182
-        },
-        {
-          "name": {
-            "fi": "Juomavesi",
-            "en": "Drinking water",
-            "sv": "Dricksvatten",
-            "th": "น้ำดื่ม"
-          },
-          "grams": null,
-          "quantity": {
-            "amount": 250,
-            "unit": "ml"
-          }
-        }
-      ],
-      "preparation": {
-        "fi": "Vertailu koskee {{servings}} tutkimusannosta. Tutkimuksessa vehnäjauhosta, vedestä ja suolasta vaivattu taikina voideltiin maapähkinäöljyllä ja jätettiin lepäämään. Painekypsennetty peruna jäähdytettiin, kuorittiin ja muussattiin. Täytteeseen sekoitettiin sipulia, korianteria, vihreää chiliä ja mausteita. Kuhunkin leipään suljettiin 30 g täytettä. Leipä litistettiin ja paistettiin molemmin puolin keskilämmöllä. Kukin koeannos punnittiin 182 grammaan ja tarjottiin huoneenlämpöisenä 250 ml:n vesilasillisen kanssa.",
-        "en": "This comparison covers {{servings}} study servings. In the study, the wheat flour, water and salt dough was kneaded, brushed with peanut oil and rested. Pressure-cooked potatoes were cooled, peeled and mashed. Onion, coriander, green chilli and spices were mixed into the filling. Each flatbread enclosed 30 g of filling. The breads were flattened and cooked on both sides over medium heat. Each test serving was 182 g, served at room temperature with 250 ml of drinking water.",
-        "sv": "Jämförelsen gäller {{servings}} studieportioner. I studien knådades en deg av vetemjöl, vatten och salt. Degen penslades med jordnötsolja och fick vila. Den tryckkokta potatisen kyldes, skalades och mosades. Lök, koriander, grön chili och kryddor blandades ner i fyllningen. Varje bröd fylldes med 30 g fyllning. Bröden plattades till och stektes på båda sidor på medelvärme. Varje studieportion vägde 182 g och serverades rumstempererad med 250 ml dricksvatten.",
-        "th": "ข้อมูลเปรียบเทียบนี้ใช้กับ {{servings}} ส่วนตามแบบการศึกษา ในการศึกษา นวดแป้งสาลี น้ำ และเกลือเข้าด้วยกัน ทาด้วยน้ำมันถั่วลิสงแล้วพักแป้ง นำมันฝรั่งที่ปรุงด้วยหม้อแรงดันมาพักให้เย็น ปอกเปลือกและบด ผสมหอม ผักชี พริกเขียว และเครื่องเทศลงในไส้ ห่อไส้ 30 กรัมในแป้งแต่ละแผ่น กดให้แบนแล้วจี่ทั้งสองด้านด้วยไฟปานกลาง อาหารทดลองแต่ละส่วนหนัก 182 กรัม เสิร์ฟที่อุณหภูมิห้องพร้อมน้ำดื่ม 250 มล."
-      },
-      "limitation": {
-        "fi": "Tutkimusvertailu koskee 182 g:n kontrolliannosta ilman Fenuflakes-lisää, tarjoiltuna veden kanssa. GI 78,8 mitattiin 15 aikuisella ja saatava hiilihydraatti 50,1 g määritettiin laboratoriossa. Jauhon tyyppi ja taikinan tarkat suhteet jäävät tutkimuksessa avoimiksi. GK-arvion soveltaminen jogurtin kanssa tarjoiltuun kotiversioon edellyttää erillistä vastaavuusnäyttöä.",
-        "en": "This comparison applies to the 182 g study control without added Fenuflakes, served with water. GI 78.8 was measured in 15 adults, and 50.1 g of available carbohydrate was measured in the laboratory. The study leaves the flour type and exact dough proportions unspecified. Applying the GL estimate to the home version served with yogurt requires separate evidence of comparability.",
-        "sv": "Jämförelsen gäller studiens kontrollportion på 182 g utan tillsatta Fenuflakes, serverad med vatten. GI 78,8 mättes hos 15 vuxna. De 50,1 g tillgängliga kolhydraterna bestämdes i laboratorium. Mjölsort och exakta proportioner i degen är ospecificerade. För att tillämpa GB-uppskattningen på hemmavarianten med yoghurt krävs separat stöd för jämförbarhet.",
-        "th": "ข้อมูลเปรียบเทียบนี้ใช้กับอาหารกลุ่มควบคุมหนัก 182 กรัมที่ไม่ได้เติม Fenuflakes และเสิร์ฟพร้อมน้ำ ค่า GI 78.8 วัดในผู้ใหญ่ 15 คน และคาร์โบไฮเดรตที่ย่อยได้ 50.1 กรัมมาจากการวิเคราะห์ในห้องปฏิบัติการ งานวิจัยไม่ได้ระบุชนิดแป้งและสัดส่วนแป้งโดว์อย่างละเอียด การใช้ค่า GL นี้กับสูตรทำที่บ้านซึ่งเสิร์ฟพร้อมโยเกิร์ตต้องมีหลักฐานเพิ่มเติมว่าทั้งสองแบบเทียบเคียงกันได้"
-      },
-      "codingKinds": [],
-      "sensitivity": null,
-      "sources": [
-        {
-          "title": "Thakurdesai et al. (2024), Potato paratha control, Table 4",
-          "url": "https://www.foodandnutritionjournal.org/volume12number1/glycemic-index-lowering-effects-of-defatted-fenugreek-seed-flakes-fenuflakestm-on-some-indian-food-preparations-a-randomized-controlled-clinical-study/",
-          "kind": "HUMAN_GI",
-          "note": "Glucose-reference GI 78.8 ± 3.6 SEM for the 182 g control portion without added Fenuflakes. n=15. The paper reports 55 g of glucose in the reference drink without specifying its form. CC BY 4.0."
-        },
-        {
-          "title": "Thakurdesai et al. (2024), Potato paratha control, Table 3",
-          "url": "https://www.foodandnutritionjournal.org/volume12number1/glycemic-index-lowering-effects-of-defatted-fenugreek-seed-flakes-fenuflakestm-on-some-indian-food-preparations-a-randomized-controlled-clinical-study/",
-          "kind": "CARBOHYDRATE",
-          "note": "50.1 ± 0.1 g enzymatically determined available carbohydrate per control serving. Plain drinking water contributes zero carbohydrate. CC BY 4.0."
-        }
-      ],
-      "studyServing": true
-    },
-    {
-      "recipeId": "hyderabadi-kanabiryani",
-      "versionId": "gk-operation80-review-318b2135bbef",
-      "inputSha256": "318b2135bbef68aaa9f9ecfc78a6b3328884e38576f19a81c082b5b79a4c131d",
-      "level": "B",
-      "servings": 1,
-      "point": 26,
-      "scenarioRange": null,
-      "rangeKind": null,
-      "omittedCho": 0,
-      "confidence": "LOW",
-      "macroScope": "NO_MACRO_PACKAGE_FOR_THIS_VERSION",
-      "quantityContract": "GK_ONLY_NATIVE_UNITS_V1",
-      "standalonePreparation": true,
-      "ingredients": [
-        {
-          "name": {
-            "fi": "Emiraattilainen ravintolakanabiryani, lämmitetty koeannos",
-            "en": "UAE restaurant chicken biryani, reheated test serving",
-            "sv": "Kycklingbiryani från en restaurang i Förenade arabemiraten, uppvärmd testportion",
-            "th": "ข้าวหมกไก่จากร้านอาหารในสหรัฐอาหรับเอมิเรตส์ ส่วนทดลองที่อุ่นแล้ว"
-          },
-          "grams": 253.9
-        },
-        {
-          "name": {
-            "fi": "Juomavesi",
-            "en": "Drinking water",
-            "sv": "Dricksvatten",
-            "th": "น้ำดื่ม"
-          },
-          "grams": null,
-          "quantity": {
-            "amount": 200,
-            "unit": "ml"
-          }
-        }
-      ],
-      "preparation": {
-        "fi": "Vertailu koskee {{servings}} tutkimusannosta. Koeannos oli 253,9 g Arabiemiirikunnissa ravintolasta hankittua ja koeaamuna lämmitettyä kanabiryania sekä 200 ml juomavettä.",
-        "en": "This comparison covers {{servings}} study servings. The test serving was 253.9 g of restaurant chicken biryani from the United Arab Emirates, reheated on the morning of testing, with 200 ml of drinking water.",
-        "sv": "Jämförelsen gäller {{servings}} studieportioner. Testportionen var 253,9 g kycklingbiryani från en restaurang i Förenade arabemiraten, uppvärmd på testmorgonen, med 200 ml dricksvatten.",
-        "th": "ข้อมูลเปรียบเทียบนี้ใช้กับอาหารทดลอง {{servings}} ส่วน เป็นข้าวหมกไก่จากร้านอาหารในสหรัฐอาหรับเอมิเรตส์ 253.9 กรัม อุ่นในเช้าวันทดลอง และเสิร์ฟพร้อมน้ำดื่ม 200 มิลลิลิตร"
-      },
-      "limitation": {
-        "fi": "26 GK koskee Al Dhaherin ym. historiallista koeannosta, jossa oli 50 g saatavaa hiilihydraattia. Kotireseptissä riisi höyrytetään jogurttimarinoidun kanan päällä. Kotiversion GK edellyttää erillistä näyttöä.",
-        "en": "The GL of 26 applies to the historical test serving in Al Dhaheri et al., containing 50 g of available carbohydrate. In the home recipe the rice is steamed over yoghurt-marinated chicken. The home recipe requires separate GL evidence.",
-        "sv": "GB 26 gäller den historiska testportionen i Al Dhaheri med flera, med 50 g tillgängliga kolhydrater. I hemreceptet ångas riset ovanpå yoghurtmarinerad kyckling. Hemreceptets GB kräver separat underlag.",
-        "th": "ค่า GL 26 ใช้กับอาหารทดลองในอดีตของ Al Dhaheri และคณะ ซึ่งมีคาร์โบไฮเดรตที่ใช้ได้ 50 กรัม สูตรทำที่บ้านใช้วิธีนึ่งข้าวบนไก่ที่หมักโยเกิร์ต และต้องมีหลักฐานแยกต่างหากเพื่อระบุค่า GL"
-      },
-      "codingKinds": [],
-      "sensitivity": null,
-      "sources": [
-        {
-          "title": "Al Dhaheri et al. (2017), chicken biryani GI, Table 4",
-          "url": "https://www.cambridge.org/core/journals/british-journal-of-nutrition/article/glycaemic-index-and-glycaemic-load-values-of-commonly-consumed-foods-in-the-united-arab-emirates/0E4AAFD46B0BBAF5BBC36893B0BA0BCE",
-          "kind": "HUMAN_GI",
-          "note": "Glucose-reference GI 52 ± 4 SE in 15 healthy participants, with 2 h sampling and three reference tests."
-        },
-        {
-          "title": "Al Dhaheri et al. (2017), test portion, methods and Table 4",
-          "url": "https://www.cambridge.org/core/journals/british-journal-of-nutrition/article/glycaemic-index-and-glycaemic-load-values-of-commonly-consumed-foods-in-the-united-arab-emirates/0E4AAFD46B0BBAF5BBC36893B0BA0BCE",
-          "kind": "CARBOHYDRATE",
-          "note": "253.9 g experimental portion sized for 50 g available carbohydrate estimated by difference. The 261 g standard serving is separate. The test meal was served with 200 ml of plain water."
-        }
-      ],
-      "studyServing": true
-    },
-    {
-      "recipeId": "indonesialainen-nasi-goreng-aamiaisriisi",
-      "versionId": "gk-operation80-review-39fc887532bb",
-      "inputSha256": "39fc887532bb3f09e202bafb2b9894a25a38ef42a3ba7be62a5b2389ffdc09f3",
-      "level": "B",
-      "servings": 1,
-      "point": 12.5,
-      "scenarioRange": null,
-      "rangeKind": null,
-      "omittedCho": 0,
-      "confidence": "LOW",
-      "macroScope": "NO_MACRO_PACKAGE_FOR_THIS_VERSION",
-      "quantityContract": "GK_ONLY_NATIVE_UNITS_V1",
-      "standalonePreparation": true,
-      "ingredients": [
-        {
-          "name": {
-            "fi": "Paistettu Super Fragrant AAA -jasmiiniriisi, koeannos",
-            "en": "Fried Super Fragrant AAA jasmine rice, test serving",
-            "sv": "Stekt jasminris Super Fragrant AAA, testportion",
-            "th": "ข้าวหอมมะลิผัด Super Fragrant AAA ส่วนทดลอง"
-          },
-          "grams": 129
-        },
-        {
-          "name": {
-            "fi": "Juomavesi",
-            "en": "Drinking water",
-            "sv": "Dricksvatten",
-            "th": "น้ำดื่ม"
-          },
-          "grams": null,
-          "quantity": {
-            "amount": 220,
-            "unit": "ml"
-          }
-        }
-      ],
-      "preparation": {
-        "fi": "Tutkimusvertailu koskee {{servings}} koeannosta. Kokeessa tarjoiltiin 129 g pannulla paistettua jasmiiniriisiä lisukkeineen ja 220 ml juomavettä.",
-        "en": "This comparison covers {{servings}} study servings. The trial served 129 g of pan-fried jasmine rice with its mix-ins and 220 ml of drinking water.",
-        "sv": "Jämförelsen gäller {{servings}} studieportioner. I försöket serverades 129 g stekt jasminris med övriga ingredienser och 220 ml dricksvatten.",
-        "th": "ข้อมูลนี้ใช้กับอาหารทดลอง {{servings}} ส่วน ประกอบด้วยข้าวหอมมะลิผัดพร้อมเครื่อง 129 กรัมและน้ำดื่ม 220 มิลลิลิตร"
-      },
-      "limitation": {
-        "fi": "12,5 GK koskee Osmanin ym. koeannosta ja 25 g:n nimelliskuormaa. Ateriassa oli osterikastiketta. Kotireseptin makean soijakastikkeen ja paistetun munan sisältämä annos vaatii erillisen arvion.",
-        "en": "The GL of 12.5 uses the nominal 25 g carbohydrate load in Osman et al. The meal contained oyster sauce. The home serving with sweet soy sauce and a fried egg requires a separate estimate.",
-        "sv": "GB 12,5 gäller den nominella kolhydratmängden på 25 g i Osman med flera. Rätten innehöll ostronsås. Hemportionen med söt soja och stekt ägg behöver bedömas separat.",
-        "th": "ค่า GL 12.5 อิงคาร์โบไฮเดรตตามเป้าหมาย 25 กรัมในการศึกษาของ Osman และคณะ อาหารทดลองมีซอสหอยนางรม สูตรที่ใช้ซีอิ๊วหวานและไข่ดาวต้องประเมินแยกต่างหาก"
-      },
-      "codingKinds": [],
-      "sensitivity": null,
-      "sources": [
-        {
-          "title": "Osman et al. (2017), glucose-reference GI",
-          "url": "https://www.researchgate.net/publication/319617411_Estimating_Glycemic_Index_of_Rice-Based_Mixed_Meals_by_Using_Predicted_and_Adjusted_Formulae",
-          "kind": "HUMAN_GI",
-          "note": "Measured glucose-reference GI 50 ± 7 SE, n=11. The predicted and adjusted GI values in Table 4 are separate."
-        },
-        {
-          "title": "Osman et al. (2017), study serving and carbohydrate",
-          "url": "https://www.researchgate.net/publication/319617411_Estimating_Glycemic_Index_of_Rice-Based_Mixed_Meals_by_Using_Predicted_and_Adjusted_Formulae",
-          "kind": "CARBOHYDRATE",
-          "note": "The methods specify a nominal 25 g available-carbohydrate load and 220 ml of water. Table 1 lists 129 g and a software estimate of 25.10 g carbohydrate."
-        }
-      ],
-      "studyServing": true
-    },
-    {
-      "recipeId": "baozi",
-      "versionId": "gk-operation80-review-f9ad78566588",
-      "inputSha256": "f9ad785665885da39244532c41291b849c938c13a723dd4c7e50f1d3d027f57c",
-      "level": "B",
-      "servings": 1,
-      "point": 32.99999999999999,
-      "scenarioRange": null,
-      "rangeKind": null,
-      "omittedCho": 0,
-      "confidence": "LOW",
-      "macroScope": "NO_MACRO_PACKAGE_FOR_THIS_VERSION",
-      "quantityContract": "GK_ONLY_NATIVE_UNITS_V1",
-      "standalonePreparation": true,
-      "ingredients": [
-        {
-          "name": {
-            "fi": "Tanjong Rhu Pau & Confectioneryn char siew pau, koeannos",
-            "en": "Tanjong Rhu Pau & Confectionery char siew pau, test serving",
-            "sv": "Char siew pau från Tanjong Rhu Pau & Confectionery, testportion",
-            "th": "ซาลาเปาหมูแดงจาก Tanjong Rhu Pau & Confectionery ส่วนทดลอง"
-          },
-          "grams": 154.7
-        },
-        {
-          "name": {
-            "fi": "Juomavesi",
-            "en": "Drinking water",
-            "sv": "Dricksvatten",
-            "th": "น้ำดื่ม"
-          },
-          "grams": null,
-          "quantity": {
-            "amount": 200,
-            "unit": "ml"
-          }
-        }
-      ],
-      "preparation": {
-        "fi": "Tutkimusvertailu koskee {{servings}} koeannosta. Kokeessa tarjoiltiin 154,7 g Tanjong Rhu Pau & Confectioneryn valmista grilliporsashöyrysämpylää ja 200 ml juomavettä.",
-        "en": "This comparison covers {{servings}} study servings. The test serving was 154.7 g of ready-to-eat barbecued pork buns from Tanjong Rhu Pau & Confectionery and 200 ml of drinking water.",
-        "sv": "Jämförelsen gäller {{servings}} studieportioner. I försöket serverades 154,7 g färdiga ångade bröd med grillat fläsk från Tanjong Rhu Pau & Confectionery och 200 ml dricksvatten.",
-        "th": "ข้อมูลนี้ใช้กับอาหารทดลอง {{servings}} ส่วน ประกอบด้วยซาลาเปาหมูแดงพร้อมรับประทานจาก Tanjong Rhu Pau & Confectionery 154.7 กรัมและน้ำดื่ม 200 มิลลิลิตร"
-      },
-      "limitation": {
-        "fi": "33 GK koskee Sunin ym. historiallista grilliporsassämpylän koeannosta ja taulukon 2 GI:tä. Kotireseptin porsas-kaalitäytteinen sämpylä vaatii erillisen arvion.",
-        "en": "The GL of 33 uses the historical barbecued pork bun serving and the GI in Table 2 of Sun et al. The homemade pork-and-cabbage bun requires a separate estimate.",
-        "sv": "GB 33 gäller den historiska testportionen med grillat fläsk och GI i tabell 2 hos Sun med flera. Det hemlagade brödet med fläsk och kål behöver bedömas separat.",
-        "th": "ค่า GL 33 ใช้กับซาลาเปาหมูแดงส่วนทดลองในอดีตและค่า GI ในตารางที่ 2 ของ Sun และคณะ สูตรทำที่บ้านที่ใช้ไส้หมูกับผักกาดขาวต้องประเมินแยกต่างหาก"
-      },
-      "codingKinds": [],
-      "sensitivity": null,
-      "sources": [
-        {
-          "title": "Sun et al. (2015), glucose-reference GI",
-          "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/S0007114514004425",
-          "kind": "HUMAN_GI",
-          "note": "Table 2 reports glucose-reference GI 66 ± 7 SEM, n=10. The discussion gives 64; this packet follows Table 2."
-        },
-        {
-          "title": "Sun et al. (2015), study serving and carbohydrate",
-          "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/S0007114514004425",
-          "kind": "CARBOHYDRATE",
-          "note": "Table 1 reports 154.7 g prepared food and 32.3 g carbohydrate/100 g. The protocol specifies a 50 g available-carbohydrate load and 200 ml water."
-        }
-      ],
-      "studyServing": true
-    },
-    {
-      "recipeId": "nasi-lemak",
-      "versionId": "gk-operation80-review-77d770d3e219",
-      "inputSha256": "77d770d3e21913949309feb75dbbc8d41c5ef21f6ff50ae5e90edfaaa1865764",
-      "level": "B",
-      "servings": 1,
-      "point": 33,
-      "scenarioRange": null,
-      "rangeKind": null,
-      "omittedCho": 0,
-      "confidence": "LOW",
-      "macroScope": "NO_MACRO_PACKAGE_FOR_THIS_VERSION",
-      "quantityContract": "GK_ONLY_NATIVE_UNITS_V1",
-      "standalonePreparation": true,
-      "ingredients": [
-        {
-          "name": {
-            "fi": "Old Chang Kee -ketjun nasi lemak, valmis koeannos",
-            "en": "Old Chang Kee nasi lemak, prepared test serving",
-            "sv": "Nasi lemak från Old Chang Kee, färdig testportion",
-            "th": "นาซีเลอมักจาก Old Chang Kee ส่วนทดลองที่ปรุงแล้ว"
-          },
-          "grams": 179.2
-        },
-        {
-          "name": {
-            "fi": "Juomavesi",
-            "en": "Drinking water",
-            "sv": "Dricksvatten",
-            "th": "น้ำดื่ม"
-          },
-          "grams": null,
-          "quantity": {
-            "amount": 200,
-            "unit": "ml"
-          }
-        }
-      ],
-      "preparation": {
-        "fi": "Vertailu koskee {{servings}} tutkimusannosta. Koeannos oli 179,2 g Old Chang Kee -ketjun nasi lemakia, jonka kanssa juotiin 200 ml vettä.",
-        "en": "This comparison covers {{servings}} study servings. The test serving was 179.2 g of Old Chang Kee nasi lemak with 200 ml of drinking water.",
-        "sv": "Jämförelsen gäller {{servings}} studieportioner. Testportionen var 179,2 g nasi lemak från Old Chang Kee med 200 ml dricksvatten.",
-        "th": "ข้อมูลนี้ใช้กับอาหารทดลอง {{servings}} ส่วน ประกอบด้วยนาซีเลอมักจาก Old Chang Kee 179.2 กรัมและน้ำดื่ม 200 มิลลิลิตร"
-      },
-      "limitation": {
-        "fi": "33 GK koskee Sunin ym. historiallista koeannosta, jossa oli 50 g saatavaa hiilihydraattia. Lisukkeiden määriä ei ilmoitettu. Kotireseptin ja nykyisten myyntiannosten GK edellyttää erillistä näyttöä.",
-        "en": "The GL of 33 applies to the historical test serving in Sun et al., containing 50 g of available carbohydrate. The amounts of the side dishes were unspecified. The home recipe and current commercial servings require separate evidence.",
-        "sv": "GB 33 gäller den historiska testportionen i Sun med flera, med 50 g tillgängliga kolhydrater. Mängderna för tillbehören anges inte. Hemreceptet och dagens kommersiella portioner kräver separat underlag.",
-        "th": "ค่า GL 33 ใช้กับอาหารทดลองในอดีตของ Sun และคณะ ซึ่งมีคาร์โบไฮเดรตที่ใช้ได้ 50 กรัม งานวิจัยไม่ได้ระบุปริมาณเครื่องเคียง สูตรทำที่บ้านและอาหารที่ขายในปัจจุบันต้องมีหลักฐานแยกต่างหาก"
-      },
-      "codingKinds": [],
-      "sensitivity": null,
-      "sources": [
-        {
-          "title": "Sun et al. (2015), Old Chang Kee nasi lemak, Table 2",
-          "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/S0007114514004425",
-          "kind": "HUMAN_GI",
-          "note": "Glucose-reference GI 66 ± 5 SEM. Table 2 reports n=12. The article reports that one nasi lemak outlier was excluded."
-        },
-        {
-          "title": "Sun et al. (2015), test portion, Table 1",
-          "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/S0007114514004425",
-          "kind": "CARBOHYDRATE",
-          "note": "179.2 g prepared portion; 50 g available carbohydrate test load, with 27.9 g/100 g reported after rounding. The study served 200 ml of plain water."
-        }
-      ],
-      "studyServing": true
-    },
-    {
-      "recipeId": "meheva-suklaakakku",
-      "versionId": "gk-operation80-review-d033681b8541",
-      "inputSha256": "d033681b8541584d2b92b61f5b7f6a8563e79d4641471b07df57ff42d319fed4",
-      "level": "B",
-      "servings": 1,
-      "point": 20.5,
-      "scenarioRange": null,
-      "rangeKind": null,
-      "omittedCho": 0,
-      "confidence": "LOW",
-      "macroScope": "NO_MACRO_PACKAGE_FOR_THIS_VERSION",
-      "quantityContract": "GK_ONLY_NATIVE_UNITS_V1",
-      "standalonePreparation": true,
-      "ingredients": [
-        {
-          "name": {
-            "fi": "Kuorrutettu Betty Crocker -kakku, koeannos",
-            "en": "Frosted Betty Crocker cake, test serving",
-            "sv": "Betty Crocker-kaka med glasyr, testportion",
-            "th": "เค้ก Betty Crocker พร้อมครีมแต่งหน้า ส่วนทดลอง"
-          },
-          "grams": 107.2
-        },
-        {
-          "name": {
-            "fi": "Juomavesi",
-            "en": "Drinking water",
-            "sv": "Dricksvatten",
-            "th": "น้ำดื่ม"
-          },
-          "grams": null,
-          "quantity": {
-            "amount": 250,
-            "unit": "ml"
-          }
-        }
-      ],
-      "preparation": {
-        "fi": "Historiallinen vertailu koskee {{servings}} koeannosta. Siihen kuului 75,4 g paistettua Betty Crocker Chocolate Fudge Super Moist -kakkua, 31,8 g Creamy Deluxe Dark Dutch Fudge -kuorrutetta ja 250 ml vettä.",
-        "en": "This historical comparison covers {{servings}} test serving. It contained 75.4 g of baked Betty Crocker Chocolate Fudge Super Moist cake, 31.8 g of Creamy Deluxe Dark Dutch Fudge frosting and 250 ml of water.",
-        "sv": "Den historiska jämförelsen gäller {{servings}} testportion. Den innehöll 75,4 g gräddad Betty Crocker Chocolate Fudge Super Moist-kaka, 31,8 g Creamy Deluxe Dark Dutch Fudge-glasyr och 250 ml vatten.",
-        "th": "ข้อมูลเปรียบเทียบจากการศึกษาในอดีตนี้ใช้กับอาหารทดลอง {{servings}} ส่วน ประกอบด้วยเค้ก Betty Crocker Chocolate Fudge Super Moist ที่อบแล้ว 75.4 กรัม ครีมแต่งหน้า Creamy Deluxe Dark Dutch Fudge 31.8 กรัม และน้ำ 250 มิลลิลิตร"
-      },
-      "limitation": {
-        "fi": "GK 20,5 koskee vuoden 2003 kokeen kuorrutettua kakkupalaa. Nykyiset tuotteet ja kotitekoinen suklaakakku vaativat erillisen arvion.",
-        "en": "The GL of 20.5 applies to the frosted cake serving tested in 2003. Current products and the homemade chocolate cake require separate estimates.",
-        "sv": "GB 20,5 gäller kakan med glasyr som testades 2003. Dagens produkter och den hemlagade chokladkakan behöver bedömas separat.",
-        "th": "ค่า GL 20.5 ใช้กับเค้กพร้อมครีมแต่งหน้าที่ทดสอบในปี 2003 ผลิตภัณฑ์ปัจจุบันและเค้กช็อกโกแลตทำเองต้องประเมินแยกต่างหาก"
-      },
-      "codingKinds": [],
-      "sensitivity": null,
-      "sources": [
-        {
-          "title": "Brand-Miller et al. (2003), Table 2",
-          "url": "https://doi.org/10.1093/jn/133.10.3149",
-          "kind": "HUMAN_GI",
-          "note": "Glucose-reference GI 41 ± 4 SEM for the entire frosted chocolate cake, n=10 and 120 min."
-        },
-        {
-          "title": "Brand-Miller et al. (2003), methods and Table 1",
-          "url": "https://doi.org/10.1093/jn/133.10.3149",
-          "kind": "CARBOHYDRATE",
-          "note": "75.4 g baked cake plus 31.8 g frosting, with 51.8 g total carbohydrate minus 1.8 g fiber. The test portion provided 50 g available carbohydrate and was served with 250 ml water."
-        }
-      ],
-      "studyServing": true
-    },
-    {
-      "recipeId": "tangyuan",
-      "versionId": "gk-operation80-review-580ea6796950",
-      "inputSha256": "580ea679695009900d4e8b7f7247977018216b9c106c72a0a7dda691bb575f64",
-      "level": "B",
-      "servings": 1,
-      "point": 30.5,
-      "scenarioRange": null,
-      "rangeKind": null,
-      "omittedCho": 0,
-      "confidence": "LOW",
-      "macroScope": "NO_MACRO_PACKAGE_FOR_THIS_VERSION",
-      "quantityContract": "GK_ONLY_NATIVE_UNITS_V1",
-      "standalonePreparation": true,
-      "ingredients": [
-        {
-          "name": {
-            "fi": "Keitetyt Lee Chun -riisipallot, koeannos",
-            "en": "Boiled Lee Chun glutinous rice balls, test serving",
-            "sv": "Kokta risbollar av klibbigt ris från Lee Chun, testportion",
-            "th": "บัวลอยแป้งข้าวเหนียวต้มยี่ห้อ Lee Chun ส่วนทดลอง"
-          },
-          "grams": 115
-        },
-        {
-          "name": {
-            "fi": "Juomavesi",
-            "en": "Drinking water",
-            "sv": "Dricksvatten",
-            "th": "น้ำดื่ม"
-          },
-          "grams": null,
-          "quantity": {
-            "amount": 250,
-            "unit": "ml"
-          }
-        }
-      ],
-      "preparation": {
-        "fi": "Historiallinen vertailu koskee {{servings}} koeannosta. Siihen kuului 115 g keitettyjä Lee Chun -riisipalloja ja 250 ml vettä.",
-        "en": "This historical comparison covers {{servings}} test serving. It contained 115 g of boiled Lee Chun glutinous rice balls and 250 ml of water.",
-        "sv": "Den historiska jämförelsen gäller {{servings}} testportion. Den bestod av 115 g kokta risbollar av klibbigt ris från Lee Chun och 250 ml vatten.",
-        "th": "ข้อมูลเปรียบเทียบจากการศึกษาในอดีตนี้ใช้กับอาหารทดลอง {{servings}} ส่วน ประกอบด้วยบัวลอยแป้งข้าวเหนียวต้มยี่ห้อ Lee Chun 115 กรัม และน้ำ 250 มิลลิลิตร"
-      },
-      "limitation": {
-        "fi": "GK 30,5 perustuu Chenin ym. koeannokseen, jonka täytettä ei yksilöity. Kotireseptin mustaseesamitäytteiset riisipallot ja makea inkivääriliemi tarvitsevat oman arvion.",
-        "en": "The GL of 30.5 is based on the serving tested by Chen et al., whose filling was unspecified. The homemade black sesame rice balls and sweet ginger broth require a separate estimate.",
-        "sv": "GB 30,5 bygger på testportionen hos Chen med flera, där fyllningen inte specificerades. De hemlagade risbollarna med svart sesam och söt ingefärslag behöver bedömas separat.",
-        "th": "ค่า GL 30.5 อ้างอิงจากอาหารส่วนที่ Chen และคณะทดสอบ โดยไม่ได้ระบุชนิดของไส้ บัวลอยไส้งาดำในสูตรโฮมเมดและน้ำขิงหวานต้องประเมินแยกต่างหาก"
-      },
-      "codingKinds": [],
-      "sensitivity": null,
-      "sources": [
-        {
-          "title": "Chen et al. (2010), Table 2",
-          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2846258/",
-          "kind": "HUMAN_GI",
-          "note": "Glucose-reference GI 61 ± 10 SEM, 15 healthy adults, 120 min."
-        },
-        {
-          "title": "Chen et al. (2010), methods and Table 1",
-          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2846258/",
-          "kind": "CARBOHYDRATE",
-          "note": "115 g of boiled Lee Chun glutinous rice balls provided 50 g available carbohydrate and were served with 250 mL water."
-        }
-      ],
-      "studyServing": true
-    }
-  ],
+  "variants": [],
   "rows": [
     {
       "recipeId": "marjainen-chiavanukas",
@@ -614,9 +137,9 @@
         "candidateSha256": "13af95c73778862bebc3f53546e1e551703eb5ccea25f4edb9a02ef1079ef671"
       },
       "technical": "PASS",
-      "state": "RELEASE_READY",
+      "state": "OWNER_DECISION",
       "reason": null,
-      "ownerStatus": "APPROVED",
+      "ownerStatus": "PENDING",
       "publicationAuthorized": false
     },
     {
@@ -676,9 +199,9 @@
         "candidateSha256": "318b2135bbef68aaa9f9ecfc78a6b3328884e38576f19a81c082b5b79a4c131d"
       },
       "technical": "PASS",
-      "state": "RELEASE_READY",
+      "state": "OWNER_DECISION",
       "reason": null,
-      "ownerStatus": "APPROVED",
+      "ownerStatus": "PENDING",
       "publicationAuthorized": false
     },
     {
@@ -738,9 +261,9 @@
         "candidateSha256": "39fc887532bb3f09e202bafb2b9894a25a38ef42a3ba7be62a5b2389ffdc09f3"
       },
       "technical": "PASS",
-      "state": "RELEASE_READY",
+      "state": "OWNER_DECISION",
       "reason": null,
-      "ownerStatus": "APPROVED",
+      "ownerStatus": "PENDING",
       "publicationAuthorized": false
     },
     {
@@ -800,9 +323,9 @@
         "candidateSha256": "f9ad785665885da39244532c41291b849c938c13a723dd4c7e50f1d3d027f57c"
       },
       "technical": "PASS",
-      "state": "RELEASE_READY",
+      "state": "OWNER_DECISION",
       "reason": null,
-      "ownerStatus": "APPROVED",
+      "ownerStatus": "PENDING",
       "publicationAuthorized": false
     },
     {
@@ -862,9 +385,9 @@
         "candidateSha256": "77d770d3e21913949309feb75dbbc8d41c5ef21f6ff50ae5e90edfaaa1865764"
       },
       "technical": "PASS",
-      "state": "RELEASE_READY",
+      "state": "OWNER_DECISION",
       "reason": null,
-      "ownerStatus": "APPROVED",
+      "ownerStatus": "PENDING",
       "publicationAuthorized": false
     },
     {
@@ -924,9 +447,9 @@
         "candidateSha256": "d033681b8541584d2b92b61f5b7f6a8563e79d4641471b07df57ff42d319fed4"
       },
       "technical": "PASS",
-      "state": "RELEASE_READY",
+      "state": "OWNER_DECISION",
       "reason": null,
-      "ownerStatus": "APPROVED",
+      "ownerStatus": "PENDING",
       "publicationAuthorized": false
     },
     {
@@ -986,71 +509,14 @@
         "candidateSha256": "580ea679695009900d4e8b7f7247977018216b9c106c72a0a7dda691bb575f64"
       },
       "technical": "PASS",
-      "state": "RELEASE_READY",
+      "state": "OWNER_DECISION",
       "reason": null,
-      "ownerStatus": "APPROVED",
+      "ownerStatus": "PENDING",
       "publicationAuthorized": false
     }
   ],
-  "files": [
-    {
-      "path": "docs/nutrition/gk100-aloo-paratha-study-release-candidate.json",
-      "sha256": "13af95c73778862bebc3f53546e1e551703eb5ccea25f4edb9a02ef1079ef671"
-    },
-    {
-      "path": "docs/nutrition/gk100-aloo-paratha-study-review.md",
-      "sha256": "d40c5eb3689667284896745ad5bb67d1f52c6997a954240e42035cd49397b2d3"
-    },
-    {
-      "path": "docs/nutrition/gk100-biryani-study-release-candidate.json",
-      "sha256": "318b2135bbef68aaa9f9ecfc78a6b3328884e38576f19a81c082b5b79a4c131d"
-    },
-    {
-      "path": "docs/nutrition/gk100-biryani-study-review.md",
-      "sha256": "e3eef3f91e2bb8895acad3ea04109b65c7ca2c08747586c65cf2347e2f1a81ce"
-    },
-    {
-      "path": "docs/nutrition/gk100-nasi-goreng-study-release-candidate.json",
-      "sha256": "39fc887532bb3f09e202bafb2b9894a25a38ef42a3ba7be62a5b2389ffdc09f3"
-    },
-    {
-      "path": "docs/nutrition/gk100-rice-bun-study-review.md",
-      "sha256": "8fc69585b98ce9eb14ad70190d19a673bcaa72eb479153f1b360d0e6ace9e5b4"
-    },
-    {
-      "path": "docs/nutrition/gk100-baozi-study-release-candidate.json",
-      "sha256": "f9ad785665885da39244532c41291b849c938c13a723dd4c7e50f1d3d027f57c"
-    },
-    {
-      "path": "docs/nutrition/gk100-rice-bun-study-review.md",
-      "sha256": "8fc69585b98ce9eb14ad70190d19a673bcaa72eb479153f1b360d0e6ace9e5b4"
-    },
-    {
-      "path": "docs/nutrition/gk100-nasi-lemak-study-release-candidate.json",
-      "sha256": "77d770d3e21913949309feb75dbbc8d41c5ef21f6ff50ae5e90edfaaa1865764"
-    },
-    {
-      "path": "docs/nutrition/gk100-nasi-lemak-study-review.md",
-      "sha256": "0ac748819655ef76dec0dfc698947dd6985703a594d82339047cb226c11b0494"
-    },
-    {
-      "path": "docs/nutrition/gk100-chocolate-cake-study-release-candidate.json",
-      "sha256": "d033681b8541584d2b92b61f5b7f6a8563e79d4641471b07df57ff42d319fed4"
-    },
-    {
-      "path": "docs/nutrition/gk100-chocolate-cake-study-review.md",
-      "sha256": "ae077f06c9f706de009d22b31c28656eaa5a72ca72341037bc966bbeaeb94011"
-    },
-    {
-      "path": "docs/nutrition/gk100-tangyuan-study-release-candidate.json",
-      "sha256": "580ea679695009900d4e8b7f7247977018216b9c106c72a0a7dda691bb575f64"
-    },
-    {
-      "path": "docs/nutrition/gk100-tangyuan-study-review.md",
-      "sha256": "7ddb5785a4cb69760622b2ead5bce067bfcaefd46044c66e17ec9dc96f2b2aea"
-    }
-  ],
-  "candidateCommit": "b5de37644c72ed637c83c7864c95ee18621359df",
+  "files": [],
+  "candidateCommit": "45dcff25bced2579f736a4cc4b1a12826c4935b4",
   "bundle": {
     "schemaVersion": 1,
     "mainSha": "d9e4fdc314142518b4afdd60933f3f0a75ead519",
@@ -1734,78 +1200,13 @@
       "manifestSha256": "eded7c91b13fcc8f22c5700920594aade07332988074569807fff61c5f27ae2e"
     },
     "decisions": {
-      "schemaVersion": 1,
       "manifestSha256": "eded7c91b13fcc8f22c5700920594aade07332988074569807fff61c5f27ae2e",
-      "records": [
-        {
-          "recipeId": "intialainen-aloo-paratha",
-          "candidateSha256": "13af95c73778862bebc3f53546e1e551703eb5ccea25f4edb9a02ef1079ef671",
-          "originalSha256": "355753da95cc04ac8822f76a8ff51f5017a7b9bf4ce12de727abb1e5e7d6bfbc",
-          "inputSha256": "b16d00b0888a29ab35830ba2d911bf7a78459003af27865571d50eb1bb96aa7e",
-          "decision": "APPROVE",
-          "evidence": "Omistajan 5.11.2026 tässä Codex-keskustelussa antama sisältöhyväksyntä PR #269:n taulukon kahdeksalle versiolle HEADillä 2e6b46c2af777c7c76b773a07c55680a273f25d2. Hyväksyntä koskee julkaisuvalmistelua."
-        },
-        {
-          "recipeId": "hyderabadi-kanabiryani",
-          "candidateSha256": "318b2135bbef68aaa9f9ecfc78a6b3328884e38576f19a81c082b5b79a4c131d",
-          "originalSha256": "c3434af8d2dbd5b016f9afd18839fa778fb2a13d79c2cf0b9e4c2070d43367d9",
-          "inputSha256": "cdacfb67d0d87fce088e599f324f8964789d34582bec1290e07a3ddfe72301cd",
-          "decision": "APPROVE",
-          "evidence": "Omistajan 5.11.2026 tässä Codex-keskustelussa antama sisältöhyväksyntä PR #269:n taulukon kahdeksalle versiolle HEADillä 2e6b46c2af777c7c76b773a07c55680a273f25d2. Hyväksyntä koskee julkaisuvalmistelua."
-        },
-        {
-          "recipeId": "indonesialainen-nasi-goreng-aamiaisriisi",
-          "candidateSha256": "39fc887532bb3f09e202bafb2b9894a25a38ef42a3ba7be62a5b2389ffdc09f3",
-          "originalSha256": "f55e64e3d2dd6080a7cbcde3b067cac696aaf8a5595b67a5615433d7a43689d7",
-          "inputSha256": "07ff148e4641c07c6aae57a1f95193c1bf63bdc8df9da46ec263c295842db053",
-          "decision": "APPROVE",
-          "evidence": "Omistajan 5.11.2026 tässä Codex-keskustelussa antama sisältöhyväksyntä PR #269:n taulukon kahdeksalle versiolle HEADillä 2e6b46c2af777c7c76b773a07c55680a273f25d2. Hyväksyntä koskee julkaisuvalmistelua."
-        },
-        {
-          "recipeId": "baozi",
-          "candidateSha256": "f9ad785665885da39244532c41291b849c938c13a723dd4c7e50f1d3d027f57c",
-          "originalSha256": "af8efd8db3bbfc7a57f4e75fe537f88b03e9dfe4227ae586905a6c046b60f208",
-          "inputSha256": "b028f93e81831daff9a98af1b37802203b81182ddbc71fd616f5527de58e8f0b",
-          "decision": "APPROVE",
-          "evidence": "Omistajan 5.11.2026 tässä Codex-keskustelussa antama sisältöhyväksyntä PR #269:n taulukon kahdeksalle versiolle HEADillä 2e6b46c2af777c7c76b773a07c55680a273f25d2. Hyväksyntä koskee julkaisuvalmistelua."
-        },
-        {
-          "recipeId": "nasi-lemak",
-          "candidateSha256": "77d770d3e21913949309feb75dbbc8d41c5ef21f6ff50ae5e90edfaaa1865764",
-          "originalSha256": "cf5979cb92a42aecfe907644fd7b674d101f6988750859d12bc83ee3f7a5d292",
-          "inputSha256": "6daab85cbac6d35433ac69fb9b904112a3f9aa77850c3a9db6f9bb00439a4431",
-          "decision": "APPROVE",
-          "evidence": "Omistajan 5.11.2026 tässä Codex-keskustelussa antama sisältöhyväksyntä PR #269:n taulukon kahdeksalle versiolle HEADillä 2e6b46c2af777c7c76b773a07c55680a273f25d2. Hyväksyntä koskee julkaisuvalmistelua."
-        },
-        {
-          "recipeId": "meheva-suklaakakku",
-          "candidateSha256": "d033681b8541584d2b92b61f5b7f6a8563e79d4641471b07df57ff42d319fed4",
-          "originalSha256": "bcdd21dc1b94d9fc6cc82b1a57bd9dbf125ca501bcf330fd8b96559b25696463",
-          "inputSha256": "fea9f480bcf2dc02757c717c6359738cb21421c2f92a0f1cc6e11a7da6744124",
-          "decision": "APPROVE",
-          "evidence": "Omistajan 5.11.2026 tässä Codex-keskustelussa antama sisältöhyväksyntä PR #269:n taulukon kahdeksalle versiolle HEADillä 2e6b46c2af777c7c76b773a07c55680a273f25d2. Hyväksyntä koskee julkaisuvalmistelua."
-        },
-        {
-          "recipeId": "tangyuan",
-          "candidateSha256": "580ea679695009900d4e8b7f7247977018216b9c106c72a0a7dda691bb575f64",
-          "originalSha256": "6bff68e6655d144890de3bb776ae05490d47f80f77088b0f2429ecb72914058a",
-          "inputSha256": "7aadc98a4ba1139ab62db4370582fe7cd38b03f34195e9dfef8fe50a1380fb07",
-          "decision": "APPROVE",
-          "evidence": "Omistajan 5.11.2026 tässä Codex-keskustelussa antama sisältöhyväksyntä PR #269:n taulukon kahdeksalle versiolle HEADillä 2e6b46c2af777c7c76b773a07c55680a273f25d2. Hyväksyntä koskee julkaisuvalmistelua."
-        }
-      ]
+      "records": [],
+      "schemaVersion": 1
     },
-    "recipeIds": [
-      "intialainen-aloo-paratha",
-      "hyderabadi-kanabiryani",
-      "indonesialainen-nasi-goreng-aamiaisriisi",
-      "baozi",
-      "nasi-lemak",
-      "meheva-suklaakakku",
-      "tangyuan"
-    ],
-    "expectedCoverageDelta": 7,
+    "recipeIds": [],
+    "expectedCoverageDelta": 0,
     "publicationAuthorized": false,
-    "bundleSha256": "be86dcd0e20553be8c832f033c081cb4dd27da68cacb42cd0396e5c2abbd6614"
+    "bundleSha256": "001cd9460043d0a7a7737663ac1cc9bd3e111609ad4e7ad319dbf4eb4d0f5553"
   }
 }
