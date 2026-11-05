@@ -43,6 +43,7 @@ export const gkCopy = {
     missingBasis: "Yhden tai useamman raaka-aineen tietoja puuttuu tai laskennan perusteissa on epävarmuutta. Koko annoksen arviota ei voi julkaista luotettavasti.",
     why: "Miksi arvio puuttuu?",
     blockers: {
+      REVIEW_PENDING: "Raaka-aineen GK-arvioon tarvittavaa näyttöä ei ole vielä katselmoitu.",
       GI: "Raaka-aineelle ei löytynyt sopivaa GI-arvoa.",
       SOURCE: "Raaka-aineesta tai tuotteesta ei löytynyt sopivaa ravintokoostumustietoa.",
       PORTION: "Raaka-aineen määrää ei voitu muuntaa luotettavasti grammoiksi.",
@@ -96,6 +97,7 @@ export const gkCopy = {
     missingBasis: "Some ingredient data or calculation inputs could not be verified, so there is no reliable estimate for the whole serving.",
     why: "Why is the estimate missing?",
     blockers: {
+      REVIEW_PENDING: "The evidence needed to estimate this ingredient’s glycemic load has not yet been reviewed.",
       GI: "A suitable GI value was unavailable for this ingredient.",
       SOURCE: "Suitable nutrition data was unavailable for this ingredient or product.",
       PORTION: "The amount could not be reliably converted to grams.",
@@ -149,6 +151,7 @@ export const gkCopy = {
     missingBasis: "Vissa ingrediensuppgifter eller delar av beräkningsunderlaget kunde inte verifieras, så en tillförlitlig uppskattning för hela portionen saknas.",
     why: "Varför saknas en uppskattning?",
     blockers: {
+      REVIEW_PENDING: "Underlaget som behövs för att uppskatta ingrediensens glykemiska belastning har ännu inte granskats.",
       GI: "Ett lämpligt GI-värde saknas för ingrediensen.",
       SOURCE: "Lämpliga näringsuppgifter saknas för ingrediensen eller produkten.",
       PORTION: "Mängden kunde inte omvandlas till gram på ett tillförlitligt sätt.",
@@ -202,6 +205,7 @@ export const gkCopy = {
     missingBasis: "ข้อมูลวัตถุดิบหรือข้อมูลที่ใช้คำนวณบางส่วนยังยืนยันไม่ได้ จึงยังไม่มีค่าประมาณที่เชื่อถือได้สำหรับอาหารหนึ่งที่",
     why: "ทำไมจึงยังไม่มีค่าประมาณ",
     blockers: {
+      REVIEW_PENDING: "ยังไม่ได้ทบทวนหลักฐานที่จำเป็นต่อการประมาณค่าภาระน้ำตาลของวัตถุดิบนี้",
       GI: "ไม่พบค่า GI ที่เหมาะสมสำหรับวัตถุดิบนี้",
       SOURCE: "ไม่พบข้อมูลโภชนาการที่เหมาะสมสำหรับวัตถุดิบหรือผลิตภัณฑ์นี้",
       PORTION: "ไม่สามารถแปลงปริมาณเป็นกรัมได้อย่างน่าเชื่อถือ",
