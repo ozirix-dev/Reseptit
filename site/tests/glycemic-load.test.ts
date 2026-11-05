@@ -11,6 +11,9 @@ import { glycemicLoadEvidenceHash, glycemicLoadInputHash, recipeBindingHash, rec
 import { publishedGlycemicLoadForRecipe } from "../src/features/recipes/glycemic-load-display";
 import { parseMarkdown } from "../src/content/markdown";
 
+// Two intentional P1 source-identity corrections remain HOLD; older frozen releases predate them.
+const p1CoconutHoldIds = new Set(['kookos-lime-kanacurry', 'sate-ayam']);
+
 
 
 
@@ -84,8 +87,12 @@ async function historicalSourceReviewView(name:string,value:any):Promise<any>{
   const next=JSON.parse(await actualReadFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-release-5/main-baseline.json'),'utf8'));value={...value,results:value.results.map((r:any)=>next.selectedResults.find((x:any)=>x.recipeId===r.recipeId)??r),sourceHashes:{...value.sourceHashes,...next.sourceHashes}};
   const nextIds=new Set(next.selectedResults.map((r:any)=>r.recipeId));for(const key of ['recipeBindingMismatches','calculationInputMismatches','calculationEvidenceMismatches'])value[key]=[...value[key].filter((id:string)=>!nextIds.has(id)),...next[key].filter((id:string)=>nextIds.has(id))].sort();
   const old=await gk80HistoricalPromise;const ids=new Set(old.results.map((r:any)=>r.recipeId));
+  // The P1 coconut correction deliberately changes only two previously blocked legacy inputs.
+  // Compare historical batches without these new HOLD exceptions; the dedicated P1 test below
+  // independently checks their live source identity, unknown carbohydrate and blocked status.
   for(const key of ['recipeBindingMismatches','calculationInputMismatches','calculationEvidenceMismatches']){
-    assert.deepEqual(value[key].filter((id:string)=>!ids.has(id)),old[key].filter((id:string)=>!ids.has(id)),`${key}: non-candidate recipes unchanged`);
+    const notHistoricalOrP1=(id:string)=>!ids.has(id)&&!p1CoconutHoldIds.has(id);
+    assert.deepEqual(value[key].filter(notHistoricalOrP1),old[key].filter(notHistoricalOrP1),`${key}: non-candidate recipes unchanged`);
   }
   return {...value,results:value.results.map((r:any)=>old.results.find((x:any)=>x.recipeId===r.recipeId)??r),
     sourceHashes:{...value.sourceHashes,...old.sourceHashes},recipeBindingMismatches:old.recipeBindingMismatches,
@@ -1634,7 +1641,7 @@ test("onion source correction accounts for every published result and preserves 
   for (const row of review.allRecipeComparisons) {
     const actual = pilot.results.find((r: { recipeId: string }) => r.recipeId === row.recipeId);
     assert.ok(actual, row.recipeId);
-    const isR1B = r1bAffectedRecipeIds.has(row.recipeId);
+    const isR1B = r1bAffectedRecipeIds.has(row.recipeId) || p1CoconutHoldIds.has(row.recipeId);
     const expected = isR1B ? actual : bakery.allRecipeComparisons.find((r: { recipeId: string }) => r.recipeId === row.recipeId)?.after ?? pepper.allRecipeComparisons.find((r: { recipeId: string }) => r.recipeId === row.recipeId)?.after ?? row.after;
     if (!isR1B) {
       assert.equal(digest(actual), expected.resultSHA256, row.recipeId);
@@ -1749,7 +1756,7 @@ test("pepper correction locks all 326 baseline results, with exactly seven withd
     const actual = pilot.results.find((r: {recipeId: string}) => r.recipeId === row.recipeId);
     const before = baseline.results.find((r: {recipeId: string}) => r.recipeId === row.recipeId);
     assert.deepEqual(row.before, before);
-    const isR1B = r1bAffectedRecipeIds.has(row.recipeId);
+    const isR1B = r1bAffectedRecipeIds.has(row.recipeId) || p1CoconutHoldIds.has(row.recipeId);
     const expected = bakery.allRecipeComparisons.find((r: {recipeId: string}) => r.recipeId === row.recipeId).after;
     if (!isR1B) {
       assert.equal(hash(actual), expected.resultSHA256, row.recipeId);
@@ -1776,17 +1783,36 @@ test("pepper correction locks all 326 baseline results, with exactly seven withd
     const actual = calculateGlycemicLoad(input, foods, catalog.records);
     const expectedModelResult = structuredClone((await finalBakeryReviewPromise).affectedRecipes.find((r: {recipeId: string}) => r.recipeId === row.recipeId)?.after ?? row.after);
     expectedModelResult.blockers = expectedModelResult.blockers.filter((message: string) => !message.includes(": recipe structure differs from the last GL review"));
-    assert.deepEqual(actual, expectedModelResult);
+    // The historical pepper snapshot predates the separately audited P1 coconut HOLD.
+    // Keep exact comparison for every other recipe; the dedicated P1 tests lock the
+    // two coconut ingredients and prevent the rejected cow-milk identity returning.
+    if (!p1CoconutHoldIds.has(row.recipeId)) {
+      assert.deepEqual(actual, expectedModelResult);
+    } else {
+      assert.ok(actual.blockers.some((message: string) => message.includes("coconut milk was incorrectly linked")), row.recipeId);
+      assert.equal(actual.glycemicLoadPerServing, null, row.recipeId);
+    }
     assert.equal(actual.status, "INSUFFICIENT SOURCE DATA");
     assert.equal(actual.glycemicLoadPerServing, null);
-    assert.equal(glycemicLoadInputHash(input), bindings.calculationInputs[row.recipeId]);
-    assert.equal(glycemicLoadEvidenceHash(input, foods, catalog.records), bindings.calculationEvidence[row.recipeId]);
+    if (p1CoconutHoldIds.has(row.recipeId)) {
+      // The frozen release receipts must reject the corrected HOLD inputs until separately reviewed.
+      assert.notEqual(glycemicLoadInputHash(input), bindings.calculationInputs[row.recipeId], row.recipeId + ": old input seal is invalid");
+      assert.notEqual(glycemicLoadEvidenceHash(input, foods, catalog.records), bindings.calculationEvidence[row.recipeId], row.recipeId + ": old evidence seal is invalid");
+    } else {
+      assert.equal(glycemicLoadInputHash(input), bindings.calculationInputs[row.recipeId]);
+      assert.equal(glycemicLoadEvidenceHash(input, foods, catalog.records), bindings.calculationEvidence[row.recipeId]);
+    }
     const prior = baseline.affectedInputs.find((r: GlycemicLoadRecipeInput) => r.recipeId === row.recipeId);
     assert.notEqual(glycemicLoadInputHash(prior), bindings.calculationInputs[row.recipeId], "stale input rejected");
     assert.notEqual(glycemicLoadEvidenceHash(prior, foods, baseline.giCatalog.records), bindings.calculationEvidence[row.recipeId], "stale evidence rejected");
     const pepperIndices = new Set(row.pepperBindings.map((x: {index: number}) => x.index));
     for (let j = 0; j < prior.ingredients.length; j++) {
-      if (!pepperIndices.has(j) && !(await finalBakeryReviewPromise).allowedInputChanges.some((r: {recipeId: string; index: number}) => r.recipeId === row.recipeId && r.index === j)) assert.deepEqual(input.ingredients[j], prior.ingredients[j], `${row.recipeId}: non-pepper row unchanged`);
+      const isP1CoconutRow = p1CoconutHoldIds.has(row.recipeId) &&
+        ["täysrasvaista kookosmaitoa", "kookosmaitoa"].includes(input.ingredients[j]?.name ?? "");
+      if (!pepperIndices.has(j) && !isP1CoconutRow &&
+        !(await finalBakeryReviewPromise).allowedInputChanges.some((r: {recipeId: string; index: number}) => r.recipeId === row.recipeId && r.index === j)) {
+        assert.deepEqual(input.ingredients[j], prior.ingredients[j], `${row.recipeId}: non-pepper row unchanged`);
+      }
     }
   }
   for (const old of baseline.giCatalog.records) {
@@ -1970,7 +1996,7 @@ test("almond correction freezes the published 326 baseline and allows exactly 99
     const prior = baseline.results.find((r: {recipeId: string}) => r.recipeId === row.recipeId);
     const actual = pilot.results.find((r: {recipeId: string}) => r.recipeId === row.recipeId);
     assert.deepEqual(row.before, prior);
-    const isR1B = r1bAffectedRecipeIds.has(row.recipeId);
+    const isR1B = r1bAffectedRecipeIds.has(row.recipeId) || p1CoconutHoldIds.has(row.recipeId);
     const latest = bakery.affectedRecipeIds.includes(row.recipeId) ? bakery.allRecipeComparisons.find((r: {recipeId: string}) => r.recipeId === row.recipeId).after : row.after;
     if (!isR1B) {
       assert.equal(hash(actual), latest.resultSHA256, row.recipeId);
@@ -2139,7 +2165,7 @@ test("AJO 1.8 freezes published 101/326, withdraws exactly four and preserves 32
     const prior = baseline.results.find((r: {recipeId: string}) => r.recipeId === row.recipeId);
     const actual = pilot.results.find((r: {recipeId: string}) => r.recipeId === row.recipeId);
     assert.deepEqual(row.before, prior);
-    const isR1B = r1bAffectedRecipeIds.has(row.recipeId);
+    const isR1B = r1bAffectedRecipeIds.has(row.recipeId) || p1CoconutHoldIds.has(row.recipeId);
     const latest = (await finalBakeryReviewPromise).allRecipeComparisons.find((r: {recipeId: string}) => r.recipeId === row.recipeId).after;
     if (!isR1B) {
       assert.equal(hash(actual), latest.resultSHA256, row.recipeId);
@@ -2261,7 +2287,7 @@ test("AJO 1.9 freezes published 97 and withdraws exactly twelve across all 326 r
     assert.deepEqual(row.before, prior);
     assert.equal(prior.resultSHA256, four.allRecipeComparisons.find((r: {recipeId: string}) => r.recipeId === row.recipeId).after.resultSHA256, "published baseline continues exact historical results");
     const result = pilot.results.find((r: {recipeId: string}) => r.recipeId === row.recipeId);
-    const isR1B = r1bAffectedRecipeIds.has(row.recipeId);
+    const isR1B = r1bAffectedRecipeIds.has(row.recipeId) || p1CoconutHoldIds.has(row.recipeId);
     if (!isR1B) {
       assert.equal(hash(result), row.after.resultSHA256, row.recipeId);
       for (const key of ["status", "glycemicLoadPerServing", "unroundedGlycemicLoadPerServing", "glycemicLoadRangePerServing", "confidence", "omittedAvailableCarbohydratePerServingG", "omittedAvailableCarbohydrateUpperBoundPerServingG", "blockers"]) assert.deepEqual(result[key], row.after[key], row.recipeId + key);
@@ -2509,4 +2535,81 @@ test("exact reviewed text rejects changed preparation even when structural recip
  assert.equal(exactRecipeTextBindingMatches(hash,original.replaceAll('\n','\r\n')),true);
  assert.equal(exactRecipeTextBindingMatches(hash,changed),false);
  assert.equal(exactRecipeTextBindingMatches(undefined,original),false);
+});
+
+
+test("P1 coconut-milk identity: two legacy HOLD inputs cannot use cow-milk composition or dairy GI", async () => {
+  // Read current inputs directly: the historical readFile helper intentionally rewrites old snapshots.
+  const root = path.resolve(import.meta.dirname, "../..");
+  const [inputText, foodText, giText] = await Promise.all([
+    actualReadFile(path.join(root, "docs/nutrition/glycemic-load-pilot-input.json"), "utf8"),
+    actualReadFile(path.join(root, "docs/nutrition/food-records.json"), "utf8"),
+    actualReadFile(path.join(root, "docs/nutrition/glycemic-index-records.json"), "utf8"),
+  ]);
+  const inputs = JSON.parse(inputText) as { recipes: GlycemicLoadRecipeInput[] };
+  const foods = JSON.parse(foodText) as FoodRecord[];
+  const gi = (JSON.parse(giText) as { records: GlycemicIndexRecord[] }).records;
+
+  assert.equal(inputs.recipes.length, 326, "published recipe input corpus must remain complete");
+  for (const [recipeId, ingredientName, amountMl] of [
+    ["kookos-lime-kanacurry", "täysrasvaista kookosmaitoa", 400],
+    ["sate-ayam", "kookosmaitoa", 200],
+  ] as const) {
+    const recipe = inputs.recipes.find((row) => row.recipeId === recipeId);
+    assert.ok(recipe, recipeId + " must exist");
+    const ingredient = recipe.ingredients.find((row) => row.name === ingredientName);
+    assert.ok(ingredient, recipeId + " must retain its coconut ingredient");
+    assert.equal(ingredient.grams, null, recipeId + ": a milk-based ml-to-g conversion is not valid");
+    assert.equal(ingredient.fineliRecordId, null, recipeId + ": cow milk must not be a coconut composition");
+    assert.equal(ingredient.giRecordId, null, recipeId + ": dairy GI must not be a coconut GI");
+    assert.deepEqual(ingredient.recipeQuantity, { amount: amountMl, unit: "ml", massGrams: null });
+    assert.match(ingredient.excludedReason ?? "", /HOLD:.*coconut milk.*cow's milk/i);
+    assert.equal(ingredient.estimatedAvailableCarbohydratePerServingG, undefined, "unknown carbohydrate is not zero");
+    assert.equal(ingredient.negligibleAssumption, undefined, "unknown coconut milk must not become a small omission");
+
+    const result = calculateGlycemicLoad(recipe, foods, gi);
+    assert.equal(result.status, "INSUFFICIENT SOURCE DATA");
+    assert.equal(result.glycemicLoadPerServing, null);
+    assert.ok(result.blockers.some((reason) => reason.includes("coconut milk was incorrectly linked")),
+      recipeId + ": explicit source-identity HOLD must remain a blocking reason");
+    const assessed = result.ingredients.find((row) => row.name === ingredientName);
+    assert.ok(assessed, recipeId + ": calculator must retain coconut ingredient");
+    assert.equal(assessed.availableCarbohydratePerServingG, null);
+    assert.equal(assessed.giContribution, null);
+  }
+});
+
+
+test("P1 coconut milk HOLD rejects the cow-milk identity and dairy GI in both legacy inputs", async () => {
+  const root = path.resolve(import.meta.dirname, "../..");
+  const [pilotText, foodText, giText] = await Promise.all([
+    actualReadFile(path.join(root, "docs/nutrition/glycemic-load-pilot-input.json"), "utf8"),
+    actualReadFile(path.join(root, "docs/nutrition/food-records.json"), "utf8"),
+    actualReadFile(path.join(root, "docs/nutrition/glycemic-index-records.json"), "utf8"),
+  ]);
+  const pilot = JSON.parse(pilotText) as { recipes: GlycemicLoadRecipeInput[] };
+  const foods = JSON.parse(foodText) as FoodRecord[];
+  const gis = (JSON.parse(giText) as { records: GlycemicIndexRecord[] }).records;
+  assert.equal(pilot.recipes.length, 326, "retain the complete published recipe inventory");
+  for (const [recipeId, name, amountMl] of [
+    ["kookos-lime-kanacurry", "täysrasvaista kookosmaitoa", 400],
+    ["sate-ayam", "kookosmaitoa", 200],
+  ] as const) {
+    const recipe = pilot.recipes.find((entry) => entry.recipeId === recipeId);
+    assert.ok(recipe, recipeId);
+    const item = recipe.ingredients.find((entry) => entry.name === name);
+    assert.ok(item, `${recipeId} coconut milk`);
+    assert.equal(item.grams, null, "unverified ml-to-g conversion must not be used");
+    assert.equal(item.fineliRecordId, null, "cow's milk is not coconut milk");
+    assert.equal(item.giRecordId, null, "dairy GI is not coconut-milk GI");
+    assert.equal(item.foodKey, null);
+    assert.equal(item.preparationKey, null);
+    assert.deepEqual(item.recipeQuantity, { amount: amountMl, unit: "ml", massGrams: null });
+    assert.match(item.excludedReason ?? "", /HOLD.*coconut milk.*cow's milk/i);
+    assert.equal(item.estimatedAvailableCarbohydratePerServingG, undefined, "do not invent zero available carbohydrate");
+    const result = calculateGlycemicLoad(recipe, foods, gis);
+    assert.equal(result.status, "INSUFFICIENT SOURCE DATA", `${recipeId} stays HOLD`);
+    assert.equal(result.glycemicLoadPerServing, null, "no unreviewed numeric GK");
+    assert.ok(result.blockers.some((blocker) => blocker.includes(recipeId) && blocker.includes(name)), "source mismatch remains explicit blocker");
+  }
 });
