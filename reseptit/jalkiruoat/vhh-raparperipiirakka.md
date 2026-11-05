@@ -5,6 +5,8 @@ url_slug: vhh-raparperipiirakka
 category: jalkiruoka
 language: fi
 status: published
+translation_languages: [en, sv, th]
+translation_status: {en: published, sv: published, th: published}
 diet_class: vhh_tiukka
 main_ingredient:
   - kananmuna
