@@ -55,6 +55,23 @@ async function readFile(filename: Parameters<typeof actualReadFile>[0], encoding
 const gk80HistoricalPromise:Promise<any>=readFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-release-review/historical.json'),'utf8').then(JSON.parse);
 async function historicalSourceReviewView(name:string,value:any):Promise<any>{
   if(name!=='tmp/nutrition/glycemic-load-pilot.json')return value;
+  // Historical snapshots cover the reviewed input corpus. A newly published recipe
+  // may enter the live audit automatically, but it must have no numeric result.
+  const autoIncluded = new Set<string>(value.autoIncludedRecipeIds);
+  for (const recipeId of autoIncluded) {
+    const result = value.results.find((row: { recipeId: string }) => row.recipeId === recipeId);
+    assert.ok(result, recipeId);
+    assert.equal(result.status, "INSUFFICIENT SOURCE DATA", recipeId);
+    assert.equal(result.glycemicLoadPerServing, null, recipeId);
+    assert.equal(result.glycemicLoadRangePerServing, null, recipeId);
+    assert.equal(result.confidence, null, recipeId);
+  }
+  value.autoIncludedRecipeIds = [];
+  value.results = value.results.filter((row: { recipeId: string }) => !autoIncluded.has(row.recipeId));
+  value.calculationInputs = value.calculationInputs.filter((row: { recipeId: string }) => !autoIncluded.has(row.recipeId));
+  for (const key of ["recipeBindingMismatches", "calculationInputMismatches", "calculationEvidenceMismatches"]) {
+    value[key] = value[key].filter((recipeId: string) => !autoIncluded.has(recipeId));
+  }
   // Replay only the three newly integrated E cases for frozen historical assertions.
   const eh=JSON.parse(await actualReadFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-e-hold-release/historical-metadata.json'),'utf8'));
   const later=JSON.parse(await actualReadFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-carnitas-couscous/historical-metadata.json'),'utf8'));

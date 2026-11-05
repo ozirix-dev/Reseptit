@@ -1,0 +1,371 @@
+{
+  "recipeId": "raejuustopizza-kaurajauhopohjalla",
+  "sourceHash": "32e6247c13590f4f7e9e767c25bd4f0df09af83e1d5becf1ea7cc5b486489122",
+  "calculatedAt": "2026-11-05",
+  "batchId": "batch-294",
+  "servings": 2,
+  "scope": "Estimate for half the pizza from weighed edible ingredients. All listed ingredients included, no sides. Nutrients assumed retained because no cooking liquid or fat is discarded. Energy uses the pepperoni label and, for Fineli/AFCD entries, macro-derived Annex XIV factors (EU 1169/2011): 4 kcal/g protein and available carbohydrate, 9 fat, 2 fibre and 2.4 polyols. No cooked weight or glycaemic load is assumed.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "item": "2 % raejuustoa",
+      "amount": 200,
+      "unit": "g",
+      "state": "2% fat cottage cheese as sold",
+      "matchEvidence": "Fineli 2–5% cottage cheese entry has 2 g fat per 100 g, matching the specified fat content.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Grams refer to the edible amount used in the recipe.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Ingredient-input estimate: all edible inputs retained. Exclude mozzarella brine before weighing.",
+      "record": {
+        "id": "fineli-649-release-20",
+        "name": "RAEJUUSTO, RASVAA 2-5 %",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/649",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "2% fat cottage cheese as sold",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 2.5,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "per100g": {
+          "carbohydrate": 2.5,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 15.81,
+          "fat": 2,
+          "kcal": 91.24
+        }
+      }
+    },
+    {
+      "item": "kuoretonta kananmunaa",
+      "amount": 110,
+      "unit": "g",
+      "state": "raw whole egg weighed without shell",
+      "matchEvidence": "Fineli shelled whole raw egg; the recipe specifies edible weight.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Grams refer to the edible amount used in the recipe.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Ingredient-input estimate: all edible inputs retained. Exclude mozzarella brine before weighing.",
+      "record": {
+        "id": "fineli-858-release-20",
+        "name": "KANANMUNA, KUORETON",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/858",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "raw whole egg weighed without shell",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0.3,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "per100g": {
+          "carbohydrate": 0.3,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 12.61,
+          "fat": 9.24,
+          "kcal": 134.8
+        }
+      }
+    },
+    {
+      "item": "kaurajauhoa",
+      "amount": 25,
+      "unit": "g",
+      "state": "plain dry oat flour",
+      "matchEvidence": "Fineli plain oat flour; weight before baking.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Grams refer to the edible amount used in the recipe.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Ingredient-input estimate: all edible inputs retained. Exclude mozzarella brine before weighing.",
+      "record": {
+        "id": "fineli-30190-release-20",
+        "name": "JAUHO, KAURAJAUHO",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/30190",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "plain dry oat flour",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 63.877,
+          "FIBT": 5.7,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "per100g": {
+          "carbohydrate": 63.877,
+          "fibre": 5.7,
+          "polyols": 0,
+          "protein": 12.6,
+          "fat": 7.08,
+          "kcal": 381.028
+        }
+      }
+    },
+    {
+      "item": "valkosipulia hienonnettuna",
+      "amount": 5,
+      "unit": "g",
+      "state": "raw peeled garlic",
+      "matchEvidence": "Fineli 393 lacks a fibre value in Release 20. Use the complete AFCD record for peeled raw garlic.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Grams refer to the edible amount used in the recipe.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Ingredient-input estimate: all edible inputs retained. Exclude mozzarella brine before weighing.",
+      "record": {
+        "id": "afcd-F004193-release-3",
+        "name": "Garlic, peeled, fresh, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ, AFCD Release 3, AFCD Data User Licence Agreement",
+        "state": "raw peeled garlic",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Difference of the same AFCD food's available carbohydrate with and without sugar alcohols; AFCD covers sorbitol, mannitol and glycerol.",
+        "per100g": {
+          "carbohydrate": 10.2,
+          "fibre": 16.9,
+          "polyols": 0,
+          "protein": 6.1,
+          "fat": 2.8,
+          "kcal": 124.2
+        }
+      }
+    },
+    {
+      "item": "keltasipulia hienonnettuna",
+      "amount": 40,
+      "unit": "g",
+      "state": "raw edible yellow onion",
+      "matchEvidence": "Fineli yellow onion; weight after peeling.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Grams refer to the edible amount used in the recipe.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Ingredient-input estimate: all edible inputs retained. Exclude mozzarella brine before weighing.",
+      "record": {
+        "id": "fineli-335-release-20",
+        "name": "SIPULI, KELTASIPULI",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/335",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "raw edible yellow onion",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 4.8,
+          "FIBT": 1.2,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "per100g": {
+          "carbohydrate": 4.8,
+          "fibre": 1.2,
+          "polyols": 0,
+          "protein": 1.25,
+          "fat": 0.1,
+          "kcal": 27.5
+        }
+      }
+    },
+    {
+      "item": "tuoretta basilikaa hienonnettuna",
+      "amount": 3,
+      "unit": "g",
+      "state": "fresh raw green basil",
+      "matchEvidence": "Fineli 11134 lacks a fibre value in Release 20. Use the complete AFCD record for fresh green basil.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Grams refer to the edible amount used in the recipe.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Ingredient-input estimate: all edible inputs retained. Exclude mozzarella brine before weighing.",
+      "record": {
+        "id": "afcd-F000396-release-3",
+        "name": "Basil, green, fresh, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ, AFCD Release 3, AFCD Data User Licence Agreement",
+        "state": "fresh raw green basil",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Difference of the same AFCD food's available carbohydrate with and without sugar alcohols; AFCD covers sorbitol, mannitol and glycerol.",
+        "per100g": {
+          "carbohydrate": 0.2,
+          "fibre": 3.3,
+          "polyols": 0,
+          "protein": 2.6,
+          "fat": 0.5,
+          "kcal": 22.3
+        }
+      }
+    },
+    {
+      "item": "suolaa",
+      "amount": 1,
+      "unit": "g",
+      "state": "table salt as sold",
+      "matchEvidence": "AFCD iodised table salt is the calculation reference for the 1 g of salt.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Grams refer to the edible amount used in the recipe.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Ingredient-input estimate: all edible inputs retained. Exclude mozzarella brine before weighing.",
+      "record": {
+        "id": "afcd-F007878-release-3",
+        "name": "Salt, table, iodised",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ, AFCD Release 3, AFCD Data User Licence Agreement",
+        "state": "table salt as sold",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Difference of the same AFCD food's available carbohydrate with and without sugar alcohols; AFCD covers sorbitol, mannitol and glycerol.",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 0,
+          "kcal": 0
+        }
+      }
+    },
+    {
+      "item": "maustamatonta hienoa tomaattimurskaa",
+      "amount": 60,
+      "unit": "g",
+      "state": "plain canned finely crushed tomato",
+      "matchEvidence": "Fineli plain crushed tomato is the composition match. Finely crushing it does not add ingredients.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Grams refer to the edible amount used in the recipe.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Ingredient-input estimate: all edible inputs retained. Exclude mozzarella brine before weighing.",
+      "record": {
+        "id": "fineli-398-release-20",
+        "name": "TOMAATTIMURSKA",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/398",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "plain canned finely crushed tomato",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 3.45,
+          "FIBT": 0.4,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "per100g": {
+          "carbohydrate": 3.45,
+          "fibre": 0.4,
+          "polyols": 0,
+          "protein": 0.55,
+          "fat": 0.2,
+          "kcal": 18.6
+        }
+      }
+    },
+    {
+      "item": "valutettua ja raastettua mozzarellaa (noin 20 % rasvaa)",
+      "amount": 80,
+      "unit": "g",
+      "state": "fresh mozzarella about 20% fat, edible cheese only",
+      "matchEvidence": "Fineli fresh mozzarella with 20.7 g fat per 100 g approximates the specified 20% mozzarella. Weight excludes brine.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Grams refer to the edible amount used in the recipe.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Ingredient-input estimate: all edible inputs retained. Exclude mozzarella brine before weighing.",
+      "record": {
+        "id": "fineli-29239-release-20",
+        "name": "JUUSTO, MOZZARELLA, RASVAA 20 %, TUOREJUUSTO",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/29239",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "fresh mozzarella about 20% fat, edible cheese only",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 18.6,
+          "fat": 20.7,
+          "kcal": 260.7
+        }
+      }
+    },
+    {
+      "item": "kypsää kalkkunapepperonia",
+      "amount": 50,
+      "unit": "g",
+      "state": "fully cooked, ready-to-eat turkey pepperoni as sold",
+      "matchEvidence": "Exact manufacturer label for the reference product used in the recipe estimate: per 30 g, 70 kcal, 9 g protein, 4 g fat, 0 g total carbohydrate and 0 g fibre. Label values are rounded.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Grams refer to the edible amount used in the recipe.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Ingredient-input estimate: all edible inputs retained. Exclude mozzarella brine before weighing.",
+      "record": {
+        "id": "hormel-turkey-pepperoni-5oz-label-2026-11-05",
+        "name": "HORMEL Turkey Pepperoni, 5 oz, 30 g label serving",
+        "sourceUrl": "https://www.hormel.com/brands/hormel-pepperoni/product/turkey-pepperoni/",
+        "retrievedAt": "2026-11-05",
+        "licence": "Hormel Foods manufacturer nutrition facts; individual label values only",
+        "state": "fully cooked, ready-to-eat turkey pepperoni as sold",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "US_TOTAL_INCLUDING_FIBRE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "The US label reports 0 g total carbohydrate and 0 g dietary fibre per 30 g. Polyols are bounded by total carbohydrate and are zero at the label's stated precision. This is not a laboratory zero.",
+        "per100g": {
+          "kcal": 233.33333333,
+          "protein": 30,
+          "fat": 13.33333333,
+          "carbohydrate": 0,
+          "fibre": 0,
+          "sugars": 0,
+          "polyols": 0
+        }
+      }
+    }
+  ]
+}
