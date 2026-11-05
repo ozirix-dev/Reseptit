@@ -83,15 +83,6 @@
         "sv": "Vaniljextrakt",
         "th": "สารสกัดวานิลลา"
       }
-    },
-    {
-      "grams": null,
-      "name": {
-        "fi": "Valinnainen makeutus, jätetään pois",
-        "en": "Optional sweetener, left out",
-        "sv": "Valfritt sötningsmedel, utelämnas",
-        "th": "สารให้ความหวาน ไม่ใส่ในสูตรนี้"
-      }
     }
   ],
   "sources": [
@@ -143,14 +134,6 @@
     {
       "ingredientIndex": 5,
       "choPer100g": 12.6
-    }
-  ],
-  "exclusions": [
-    {
-      "ingredientIndex": 6,
-      "kind": "ZERO_CHO",
-      "rationale": "Optional sweetener is not used in this version.",
-      "evidencePath": "docs/nutrition/gk100-v3-batch01-chiavanukas-review.md"
     }
   ],
   "boundFiles": {
