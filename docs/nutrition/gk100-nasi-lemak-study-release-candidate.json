@@ -1,0 +1,76 @@
+{
+  "recipeId": "nasi-lemak",
+  "servings": 1,
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "unroundedGk": "33",
+  "preparation": {
+    "fi": "Vertailu koskee {{servings}} tutkimusannosta. Koeannos oli 179,2 g Old Chang Kee -ketjun nasi lemakia, jonka kanssa juotiin 200 ml vettä.",
+    "en": "This comparison covers {{servings}} study servings. The test serving was 179.2 g of Old Chang Kee nasi lemak with 200 ml of drinking water.",
+    "sv": "Jämförelsen gäller {{servings}} studieportioner. Testportionen var 179,2 g nasi lemak från Old Chang Kee med 200 ml dricksvatten.",
+    "th": "ข้อมูลนี้ใช้กับอาหารทดลอง {{servings}} ส่วน ประกอบด้วยนาซีเลอมักจาก Old Chang Kee 179.2 กรัมและน้ำดื่ม 200 มิลลิลิตร"
+  },
+  "limitation": {
+    "fi": "33 GK koskee Sunin ym. historiallista koeannosta, jossa oli 50 g saatavaa hiilihydraattia. Lisukkeiden määriä ei ilmoitettu. Kotireseptin ja nykyisten myyntiannosten GK edellyttää erillistä näyttöä.",
+    "en": "The GL of 33 applies to the historical test serving in Sun et al., containing 50 g of available carbohydrate. The amounts of the side dishes were unspecified. The home recipe and current commercial servings require separate evidence.",
+    "sv": "GB 33 gäller den historiska testportionen i Sun med flera, med 50 g tillgängliga kolhydrater. Mängderna för tillbehören anges inte. Hemreceptet och dagens kommersiella portioner kräver separat underlag.",
+    "th": "ค่า GL 33 ใช้กับอาหารทดลองในอดีตของ Sun และคณะ ซึ่งมีคาร์โบไฮเดรตที่ใช้ได้ 50 กรัม งานวิจัยไม่ได้ระบุปริมาณเครื่องเคียง สูตรทำที่บ้านและอาหารที่ขายในปัจจุบันต้องมีหลักฐานแยกต่างหาก"
+  },
+  "ingredients": [
+    {
+      "grams": 179.2,
+      "name": {
+        "fi": "Old Chang Kee -ketjun nasi lemak, valmis koeannos",
+        "en": "Old Chang Kee nasi lemak, prepared test serving",
+        "sv": "Nasi lemak från Old Chang Kee, färdig testportion",
+        "th": "นาซีเลอมักจาก Old Chang Kee ส่วนทดลองที่ปรุงแล้ว"
+      }
+    },
+    {
+      "grams": null,
+      "quantity": {
+        "amount": 200,
+        "unit": "ml"
+      },
+      "name": {
+        "fi": "Juomavesi",
+        "en": "Drinking water",
+        "sv": "Dricksvatten",
+        "th": "น้ำดื่ม"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Sun et al. (2015), Old Chang Kee nasi lemak, Table 2",
+      "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/S0007114514004425",
+      "kind": "HUMAN_GI",
+      "note": "Glucose-reference GI 66 ± 5 SEM. Table 2 reports n=12. The article reports that one nasi lemak outlier was excluded."
+    },
+    {
+      "title": "Sun et al. (2015), test portion, Table 1",
+      "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/S0007114514004425",
+      "kind": "CARBOHYDRATE",
+      "note": "179.2 g prepared portion; 50 g available carbohydrate test load, with 27.9 g/100 g reported after rounding. The study served 200 ml of plain water."
+    }
+  ],
+  "inputs": [
+    [
+      179.2,
+      27.901785714285715,
+      66
+    ]
+  ],
+  "exclusions": [
+    {
+      "ingredientIndex": 1,
+      "kind": "ZERO_CHO",
+      "rationale": "The 200 ml of plain drinking water contributes zero available carbohydrate.",
+      "evidencePath": "docs/nutrition/gk100-nasi-lemak-study-review.md"
+    }
+  ],
+  "boundFiles": {
+    "reseptit/paaruoat/nasi-lemak.md": "cf5979cb92a42aecfe907644fd7b674d101f6988750859d12bc83ee3f7a5d292",
+    "docs/nutrition/gk100-nasi-lemak-study-review.md": "0ac748819655ef76dec0dfc698947dd6985703a594d82339047cb226c11b0494"
+  }
+}

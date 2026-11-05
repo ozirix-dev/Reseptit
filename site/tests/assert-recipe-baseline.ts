@@ -4,6 +4,8 @@ import { readFileSync } from "node:fs";
 import path from "node:path";
 import { recipeTextForApprovedSnapshot } from "../scripts/approved-recipe-note-edits";
 import { parseMarkdown } from "../src/content/markdown";
+import { textHash } from "../scripts/gk149-model";
+import approvedTranslations from "./approved-translation-baseline.json";
 
 const translationDraftCommits = new Map([
   ["kaannokset/en/jalkiruoat/keto-mutakakku.md", "d6531cd0592b01c0106a24bb6a3bd930dedbc504"],
@@ -17,6 +19,9 @@ const translationDraftCommits = new Map([
   ["kaannokset/th/jalkiruoat/meheva-suklaakakku.md", "0989c731ebd8e1e6c75935714c8fc2cf5bbf890a"],
 ]);
 
+// Byte fingerprints of the publication changes from the pinned PR #270 merge.
+const approvedChanges = new Map(Object.entries(approvedTranslations.changes));
+
 export function assertRecipeBaseline(root: string, baseline: string, ...protectedPaths: string[]) {
   const changes = execFileSync(
     "git",
@@ -26,6 +31,11 @@ export function assertRecipeBaseline(root: string, baseline: string, ...protecte
 
   for (const change of changes) {
     const [status, file] = change.split("\t");
+    const approved = approvedChanges.get(file);
+    if (approved?.status === status) {
+      assert.equal(textHash(readFileSync(path.join(root, file), "utf8")), approved.sha256, change);
+      continue;
+    }
     if (status === "M" && (file.startsWith("reseptit/") || file.startsWith("kaannokset/"))) {
       const current = readFileSync(path.join(root, file), "utf8").replaceAll("\r\n", "\n");
       const snapshot = recipeTextForApprovedSnapshot(file, current);

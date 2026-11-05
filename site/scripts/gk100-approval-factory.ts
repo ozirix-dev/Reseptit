@@ -12,6 +12,7 @@ type State = 'CANDIDATE' | 'TECHNICALLY_VALID' | 'REVIEW_REQUIRED' | 'OWNER_DECI
 
 export type Classification = {
   candidateSha256: string;
+  studyServing?: true;
   risk: Risk;
   reasons: string[];
   contentChange: 'NONE' | 'GK_ONLY' | 'ORIGINAL_CHANGE';
@@ -22,7 +23,7 @@ export type Classification = {
 export type Batch = {
   schemaVersion: 1;
   batchId: string;
-  candidates: Array<{ recipeId: string; packetPath: string; classification?: Classification }>;
+  candidates: Array<{ recipeId: string; packetPath: string; classification?: Classification; studyServing?: true }>;
 };
 
 type Binding = {
@@ -35,6 +36,7 @@ type Candidate = Binding & {
   packetPath: string;
   originalPath: string;
   supportFiles: Record<string, string>;
+  studyServing?: true;
   servings: number;
   method: 'A' | 'B' | typeof MIXED_EVIDENCE_METHOD;
   mixedEvidence?: ReturnType<typeof calculateMixedEvidence>;
@@ -114,7 +116,10 @@ function assess(entry: Batch['candidates'][number], read: ReadFile, methodApprov
     if (!originalPathPattern.test(path) && !/^docs\/nutrition\/[a-z0-9-]+\.md$/.test(path)) fail('INVALID_BOUND_PATH');
     return read(path);
   };
+  if ((entry.studyServing !== undefined && entry.studyServing !== true)
+      || entry.studyServing !== entry.classification?.studyServing) fail('INVALID_STUDY_SERVING');
   if (packet.method !== undefined) {
+    if (entry.studyServing) fail('INVALID_STUDY_SERVING');
     if (packet.method !== MIXED_EVIDENCE_METHOD) return fail('UNKNOWN_GK_METHOD');
     const mixedEvidence = calculateMixedEvidence(packet, originalPath, readBound, read(mixedBindingsPath));
     const classification = entry.classification ?? null;
@@ -157,6 +162,13 @@ function assess(entry: Batch['candidates'][number], read: ReadFile, methodApprov
     return { row, variant: undefined };
   }
   const variant = parsePointReviewVariant(raw, readBound);
+  const assignedGi = variant.sources.some(source => source.kind === 'PUBLISHED_CODING' || source.kind === 'B_CODING');
+  if (entry.studyServing) {
+    if (variant.servings !== 1 || variant.omittedCho !== 0 || variant.scenarioRange || !variant.limitation || assignedGi) {
+      fail('INVALID_STUDY_SERVING');
+    }
+    variant.studyServing = true;
+  }
   const kinds = ['CARBOHYDRATE', 'HUMAN_GI', 'PUBLISHED_CODING', 'B_CODING', 'BOUND'];
   if (!variant.sources.some(source => source.kind === 'HUMAN_GI')
       || !variant.sources.some(source => source.kind === 'CARBOHYDRATE')
@@ -173,8 +185,7 @@ function assess(entry: Batch['candidates'][number], read: ReadFile, methodApprov
   const riskSignals = [
     ...(variant.scenarioRange ? ['NAMED_SCENARIO_RANGE'] : []),
     ...(variant.omittedCho > 0 ? ['CHO_OMITTED'] : []),
-    ...(variant.sources.some(source => source.kind === 'PUBLISHED_CODING' || source.kind === 'B_CODING')
-      ? ['ASSIGNED_GI'] : []),
+    ...(assignedGi ? ['ASSIGNED_GI'] : []),
   ];
   const suggestedRisk = variant.omittedCho >= 1 ? 'HIGH' : riskSignals.length ? 'MEDIUM' : 'LOW';
   const classification = entry.classification ?? null;
@@ -184,6 +195,7 @@ function assess(entry: Batch['candidates'][number], read: ReadFile, methodApprov
     supportFiles: Object.fromEntries(Object.entries(packet.boundFiles).filter(([file]) => file !== originalPath)),
     candidateSha256, originalSha256: packet.boundFiles[originalPath], inputSha256,
     servings: variant.servings, method: variant.level, point: variant.point, range: variant.scenarioRange,
+    ...(variant.studyServing && { studyServing: true as const }),
     uncertainty: variant.scenarioRange ? 'NAMED_SCENARIOS' : 'LOW_CONFIDENCE_POINT',
     limitation: variant.limitation, omittedCho: variant.omittedCho, sources: variant.sources,
     omittedChoStressGkAtGi100: variant.omittedCho, suggestedRisk, riskSignals,
@@ -252,13 +264,25 @@ export function applyDecisions(checked: Checked, decisions: Decisions) {
   });
 }
 
-export type MainCoverage = { schemaVersion: 1; mainSha: string; numericRecipeIds: string[] };
+export type MainCoverage = {
+  schemaVersion: 1;
+  mainSha: string;
+  numericRecipeIds: string[];
+  studyServingRecipeIds?: string[];
+};
+function validCoverageIds(ids: string[]) {
+  return Array.isArray(ids) && ids.every(recipeId => typeof recipeId === 'string' && id.test(recipeId))
+    && own(ids, recipeId => recipeId);
+}
 export function prepareRelease(checked: Checked, decisions: Decisions, coverage: MainCoverage,
   currentMain: string, readMain: ReadFile) {
   if (coverage.schemaVersion !== 1 || !/^[a-f0-9]{40}$/.test(currentMain) || coverage.mainSha !== currentMain
-      || !Array.isArray(coverage.numericRecipeIds) || !coverage.numericRecipeIds.every(recipeId => id.test(recipeId))
-      || !own(coverage.numericRecipeIds, recipeId => recipeId)) fail('INVALID_OR_STALE_MAIN_COVERAGE');
+      || !validCoverageIds(coverage.numericRecipeIds)
+      || (coverage.studyServingRecipeIds !== undefined && !validCoverageIds(coverage.studyServingRecipeIds))) {
+    fail('INVALID_OR_STALE_MAIN_COVERAGE');
+  }
   const existing = new Set(coverage.numericRecipeIds);
+  const existingStudyServings = new Set(coverage.studyServingRecipeIds);
   const selected: GkOnlyVariant[] = [];
   const rows = applyDecisions(checked, decisions).map(row => {
     if (row.state !== 'OWNER_APPROVED' || row.technical !== 'PASS') return row;
@@ -266,7 +290,10 @@ export function prepareRelease(checked: Checked, decisions: Decisions, coverage:
       const variant = checked.variants.get(row.recipeId);
       if (!variant) return fail('NO_RELEASE_VARIANT_FOR_REVIEW_ONLY_METHOD');
       if (!sha.test(row.originalSha256) || textHash(readMain(row.originalPath)) !== row.originalSha256) fail('MAIN_ORIGINAL_CHANGED');
-      if (existing.has(row.recipeId)) fail('MAIN_ALREADY_HAS_NUMERIC_GK');
+      if (variant.studyServing) {
+        if (coverage.studyServingRecipeIds === undefined) fail('MAIN_STUDY_COVERAGE_REQUIRED');
+        if (existingStudyServings.has(row.recipeId)) fail('MAIN_ALREADY_HAS_STUDY_SERVING');
+      } else if (existing.has(row.recipeId)) fail('MAIN_ALREADY_HAS_NUMERIC_GK');
       for (const [file, expected] of Object.entries({ ...row.supportFiles, [row.packetPath]: row.candidateSha256 })) {
         let existingText: string | undefined;
         try { existingText = readMain(file); } catch { /* A new evidence file can be added to the release PR. */ }
@@ -279,7 +306,7 @@ export function prepareRelease(checked: Checked, decisions: Decisions, coverage:
     }
   });
   return { schemaVersion: 1, mainSha: currentMain, manifestSha256: checked.manifest.manifestSha256,
-    decisionsSha256: fingerprint(decisions), expectedCoverageDelta: selected.length,
+    decisionsSha256: fingerprint(decisions), expectedCoverageDelta: selected.filter(variant => !variant.studyServing).length,
     publicationAuthorized: false, variants: selected, rows,
     files: rows.flatMap(row => row.technical === 'PASS' && row.state === 'RELEASE_READY'
       ? [{ path: row.packetPath, sha256: row.candidateSha256 },
