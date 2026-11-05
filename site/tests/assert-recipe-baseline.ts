@@ -17,6 +17,9 @@ const translationDraftCommits = new Map([
   ["kaannokset/th/jalkiruoat/meheva-suklaakakku.md", "0989c731ebd8e1e6c75935714c8fc2cf5bbf890a"],
 ]);
 
+// The first translation publication batch is already approved on main (PR #270).
+const translationPublication = "3de79f256490067500fe7f96706d4f4b20d26f91";
+
 export function assertRecipeBaseline(root: string, baseline: string, ...protectedPaths: string[]) {
   const changes = execFileSync(
     "git",
@@ -24,8 +27,19 @@ export function assertRecipeBaseline(root: string, baseline: string, ...protecte
     { cwd: root, encoding: "utf8" },
   ).trim().split(/\r?\n/).filter(Boolean);
 
+  const publishedChanges = new Set(execFileSync("git", [
+    "diff", "--no-renames", "--name-status", translationPublication + "^1", translationPublication,
+    "--", "reseptit", "kaannokset",
+  ], { cwd: root, encoding: "utf8" }).trim().split(/\r?\n/));
+
   for (const change of changes) {
     const [status, file] = change.split("\t");
+    if (publishedChanges.has(change)) {
+      const approved = execFileSync("git", ["show", translationPublication + ":" + file], { cwd: root, encoding: "utf8" });
+      const current = readFileSync(path.join(root, file), "utf8").replaceAll("\r\n", "\n");
+      assert.equal(current, approved, change);
+      continue;
+    }
     if (status === "M" && (file.startsWith("reseptit/") || file.startsWith("kaannokset/"))) {
       const current = readFileSync(path.join(root, file), "utf8").replaceAll("\r\n", "\n");
       const snapshot = recipeTextForApprovedSnapshot(file, current);
