@@ -2560,7 +2560,7 @@ test("P1 coconut-milk identity: two legacy HOLD inputs cannot use cow-milk compo
   }
 });
 
- 
+
 test("P1 coconut milk HOLD rejects the cow-milk identity and dairy GI in both legacy inputs", async () => {
   const root = path.resolve(import.meta.dirname, "../..");
   const [pilotText, foodText, giText] = await Promise.all([
