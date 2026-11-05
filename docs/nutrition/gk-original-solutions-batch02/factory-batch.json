@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "batchId": "original-solutions-batch02",
+  "candidates": [
+    {
+      "recipeId": "vhh-mansikkakakku",
+      "packetPath": "docs/nutrition/gk-original-batch02-mansikka-release-candidate.json",
+      "classification": {
+        "candidateSha256": "a647d543b7b7e13ebe0ed7e1910a2445d84f0d0971090e04977eabc9e17e3268",
+        "risk": "HIGH",
+        "reasons": [
+          "Original ingredient quantities/preparation retained; only source-backed reference masses changed.",
+          "Category-level GI applicability and generic vanilla-extract matching remain REVIEW_PENDING.",
+          "Positive omissions remain visible; no source or owner approval granted."
+        ],
+        "contentChange": "NONE",
+        "contentSummary": "Original strawberry-cake research candidate; not a different recipe or publication bundle.",
+        "outcome": "REVIEW_REQUIRED"
+      }
+    }
+  ]
+}

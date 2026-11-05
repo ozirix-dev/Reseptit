@@ -1,0 +1,163 @@
+{
+  "recipeId": "vhh-mansikkakakku",
+  "servings": 10,
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "boundFiles": {
+    "reseptit/jalkiruoat/vhh-mansikkakakku.md": "275587e8131c07fc05497f869d54861f3d4c446139d8693fa5c46ad043927e75",
+    "docs/nutrition/gk-original-batch02-mansikka-evidence.md": "41d0ae9a1a2347b8b35aad2cc838ce2d965f37c753888c4813f57052870de1cc"
+  },
+  "preparation": {
+    "fi": "Noudata alkuperäisen mansikkakakun määriä, valmistusta ja 10 annosta. Vaniljauutteen 1 tl:n viitemassa on4,3g ja leivinjauheen1tl:n5g; nämä ovat lähteistettyjä laskentatäsmennyksiä, eivät ohjeen muutos.",
+    "en": "Follow the unchanged original strawberry-cake recipe and its10 servings. Reference masses are4.3g per original teaspoon of vanilla extract and5g per teaspoon of baking powder; these clarify calculation without changing the recipe.",
+    "sv": "Följ originalreceptets mängder, tillagning och10 portioner. Referensvikterna är4,3g för originalets tesked vaniljextrakt och5g för en tesked bakpulver; receptet ändras inte.",
+    "th": "ทำตามปริมาณและวิธีทำเค้กสตรอว์เบอร์รีต้นฉบับสำหรับ10ที่ ใช้น้ำหนักอ้างอิงสารสกัดวานิลลา4.3กรัมต่อช้อนชาและผงฟู5กรัมต่อช้อนชาเพื่อคำนวณ โดยไม่เปลี่ยนสูตร"
+  },
+  "limitation": {
+    "fi": "Ehdollinen nykyisen menetelmän arvio. Maitotuotteiden ja hedelmien GI35/51 ovat ryhmäkeskiarvoja, eivät tämän kakun tai ainesosien mittauksia. Positiivista CHO:ta jää pois0,86718g/annos. Geneerisen vaniljauutteen vastaavuus ja GI-soveltuvuus ovat katselmoimatta; ei omistaja- tai julkaisulupaa.",
+    "en": "Conditional existing-policy estimate. Dairy/fruit GI35/51 are group means, not measurements of this cake or its ingredients. Positive omitted carbohydrate is0.86718g/serving. Generic extract matching and GI applicability remain unreviewed; no owner or publication approval.",
+    "sv": "Villkorad uppskattning med befintlig metod. GI35/51 är gruppmedelvärden, inte mätningar av kakan eller dess ingredienser.0,86718g positiv kolhydrat per portion utelämnas. Vaniljextraktets matchning och GI-tillämplighet väntar på granskning; inget ägar- eller publiceringsgodkännande.",
+    "th": "เป็นค่าตามสมมติฐานของวิธีเดิม GI35/51เป็นค่าเฉลี่ยกลุ่ม ไม่ใช่ผลวัดเค้กหรือส่วนผสมนี้ ละเว้นคาร์โบไฮเดรตที่มีจริง0.86718กรัมต่อที่ ความตรงกันของสารสกัดและการใช้GIยังรอทบทวน ไม่มีการอนุมัติจากเจ้าของหรืออนุญาตเผยแพร่"
+  },
+  "ingredients": [
+    {
+      "name": {
+        "fi": "kuohukermaa",
+        "en": "heavy cream",
+        "sv": "vispgrädde",
+        "th": "วิปปิงครีม"
+      },
+      "grams": 200
+    },
+    {
+      "name": {
+        "fi": "maitorahkaa",
+        "en": "quark",
+        "sv": "kvarg",
+        "th": "ควาร์ก"
+      },
+      "grams": 150
+    },
+    {
+      "name": {
+        "fi": "tuoreita mansikoita",
+        "en": "fresh strawberries",
+        "sv": "färska jordgubbar",
+        "th": "สตรอว์เบอร์รีสด"
+      },
+      "grams": 250
+    },
+    {
+      "name": {
+        "fi": "erytritolia",
+        "en": "erythritol",
+        "sv": "erytritol",
+        "th": "อิริทริทอล"
+      },
+      "grams": 100
+    },
+    {
+      "name": {
+        "fi": "kananmunaa",
+        "en": "eggs",
+        "sv": "ägg",
+        "th": "ไข่ไก่"
+      },
+      "grams": 220
+    },
+    {
+      "name": {
+        "fi": "mantelijauhoa",
+        "en": "almond flour",
+        "sv": "mandelmjöl",
+        "th": "แป้งอัลมอนด์"
+      },
+      "grams": 120
+    },
+    {
+      "name": {
+        "fi": "leivinjauhetta",
+        "en": "baking powder",
+        "sv": "bakpulver",
+        "th": "ผงฟู"
+      },
+      "grams": 5
+    },
+    {
+      "name": {
+        "fi": "vaniljauutetta",
+        "en": "vanilla extract",
+        "sv": "vaniljextrakt",
+        "th": "สารสกัดวานิลลา"
+      },
+      "grams": 4.3
+    }
+  ],
+  "inputs": [
+    [
+      200,
+      2.9,
+      35
+    ],
+    [
+      150,
+      3,
+      35
+    ],
+    [
+      250,
+      5.6,
+      51
+    ],
+    [
+      100,
+      0,
+      0
+    ]
+  ],
+  "omissions": [
+    {
+      "ingredientIndex": 4,
+      "choPer100g": 0.3
+    },
+    {
+      "ingredientIndex": 5,
+      "choPer100g": 5.4
+    },
+    {
+      "ingredientIndex": 6,
+      "choPer100g": 19.8
+    },
+    {
+      "ingredientIndex": 7,
+      "choPer100g": 12.6
+    }
+  ],
+  "unroundedGk": "1.0745",
+  "sources": [
+    {
+      "kind": "CARBOHYDRATE",
+      "title": "Existing source-bound Fineli/AFCD and pure erythritol records",
+      "url": "https://github.com/ozirix-dev/Reseptit/blob/be26182a1b0547a6d98e889349855ee05bda07c7/docs/nutrition/food-records.json",
+      "note": "Exact current records are pinned per ingredient in the research capsule; no source value is replaced."
+    },
+    {
+      "kind": "HUMAN_GI",
+      "title": "Atkinson2021 Table1 underlying human-study group means, not an ingredient-specific trial",
+      "url": "https://doi.org/10.1093/ajcn/nqab233",
+      "note": "Only the actually used dairy35 and fruit51 group statistics are referenced. This is not a human GI measurement of these ingredients or cake; applicability remains pending."
+    },
+    {
+      "kind": "PUBLISHED_CODING",
+      "title": "Existing original-input category-mean application",
+      "url": "https://github.com/ozirix-dev/Reseptit/blob/be26182a1b0547a6d98e889349855ee05bda07c7/docs/nutrition/glycemic-index-records.json",
+      "note": "35/51 are existing category proxies. Their application is an explicit low-confidence assumption requiring focused scientific review, not a newly approved GI."
+    },
+    {
+      "kind": "CARBOHYDRATE",
+      "title": "Health Canada CNF216 metric vanilla extract portion",
+      "url": "https://aliments-nutrition.canada.ca/cnf-fce/serving-portion?id=216&lang=eng&wbdisable=true",
+      "note": "5ml reference portion4.3g; generic food reference, not actual product identification."
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "batchId": "original-solutions-batch02",
+  "candidates": [
+    {
+      "recipeId": "vhh-mansikkakakku",
+      "packetPath": "docs/nutrition/gk-original-batch02-mansikka-release-candidate.json",
+      "originalPath": "reseptit/jalkiruoat/vhh-mansikkakakku.md",
+      "supportFiles": {
+        "docs/nutrition/gk-original-batch02-mansikka-evidence.md": "41d0ae9a1a2347b8b35aad2cc838ce2d965f37c753888c4813f57052870de1cc"
+      },
+      "candidateSha256": "a647d543b7b7e13ebe0ed7e1910a2445d84f0d0971090e04977eabc9e17e3268",
+      "originalSha256": "275587e8131c07fc05497f869d54861f3d4c446139d8693fa5c46ad043927e75",
+      "inputSha256": "4a72721ee0ad301ce0c283e72bde778607d08fa376e4c0a790ae4ca54a9bfd93",
+      "servings": 10,
+      "method": "A",
+      "point": 1.0745,
+      "range": null,
+      "uncertainty": "LOW_CONFIDENCE_POINT",
+      "limitation": {
+        "fi": "Ehdollinen nykyisen menetelmän arvio. Maitotuotteiden ja hedelmien GI35/51 ovat ryhmäkeskiarvoja, eivät tämän kakun tai ainesosien mittauksia. Positiivista CHO:ta jää pois0,86718g/annos. Geneerisen vaniljauutteen vastaavuus ja GI-soveltuvuus ovat katselmoimatta; ei omistaja- tai julkaisulupaa.",
+        "en": "Conditional existing-policy estimate. Dairy/fruit GI35/51 are group means, not measurements of this cake or its ingredients. Positive omitted carbohydrate is0.86718g/serving. Generic extract matching and GI applicability remain unreviewed; no owner or publication approval.",
+        "sv": "Villkorad uppskattning med befintlig metod. GI35/51 är gruppmedelvärden, inte mätningar av kakan eller dess ingredienser.0,86718g positiv kolhydrat per portion utelämnas. Vaniljextraktets matchning och GI-tillämplighet väntar på granskning; inget ägar- eller publiceringsgodkännande.",
+        "th": "เป็นค่าตามสมมติฐานของวิธีเดิม GI35/51เป็นค่าเฉลี่ยกลุ่ม ไม่ใช่ผลวัดเค้กหรือส่วนผสมนี้ ละเว้นคาร์โบไฮเดรตที่มีจริง0.86718กรัมต่อที่ ความตรงกันของสารสกัดและการใช้GIยังรอทบทวน ไม่มีการอนุมัติจากเจ้าของหรืออนุญาตเผยแพร่"
+      },
+      "omittedCho": 0.86718,
+      "sources": [
+        {
+          "kind": "CARBOHYDRATE",
+          "title": "Existing source-bound Fineli/AFCD and pure erythritol records",
+          "url": "https://github.com/ozirix-dev/Reseptit/blob/be26182a1b0547a6d98e889349855ee05bda07c7/docs/nutrition/food-records.json",
+          "note": "Exact current records are pinned per ingredient in the research capsule; no source value is replaced."
+        },
+        {
+          "kind": "HUMAN_GI",
+          "title": "Atkinson2021 Table1 underlying human-study group means, not an ingredient-specific trial",
+          "url": "https://doi.org/10.1093/ajcn/nqab233",
+          "note": "Only the actually used dairy35 and fruit51 group statistics are referenced. This is not a human GI measurement of these ingredients or cake; applicability remains pending."
+        },
+        {
+          "kind": "PUBLISHED_CODING",
+          "title": "Existing original-input category-mean application",
+          "url": "https://github.com/ozirix-dev/Reseptit/blob/be26182a1b0547a6d98e889349855ee05bda07c7/docs/nutrition/glycemic-index-records.json",
+          "note": "35/51 are existing category proxies. Their application is an explicit low-confidence assumption requiring focused scientific review, not a newly approved GI."
+        },
+        {
+          "kind": "CARBOHYDRATE",
+          "title": "Health Canada CNF216 metric vanilla extract portion",
+          "url": "https://aliments-nutrition.canada.ca/cnf-fce/serving-portion?id=216&lang=eng&wbdisable=true",
+          "note": "5ml reference portion4.3g; generic food reference, not actual product identification."
+        }
+      ],
+      "omittedChoStressGkAtGi100": 0.86718,
+      "suggestedRisk": "MEDIUM",
+      "riskSignals": [
+        "CHO_OMITTED",
+        "ASSIGNED_GI"
+      ],
+      "localeFields": "PRESENT",
+      "classification": {
+        "candidateSha256": "a647d543b7b7e13ebe0ed7e1910a2445d84f0d0971090e04977eabc9e17e3268",
+        "risk": "HIGH",
+        "reasons": [
+          "Original ingredient quantities/preparation retained; only source-backed reference masses changed.",
+          "Category-level GI applicability and generic vanilla-extract matching remain REVIEW_PENDING.",
+          "Positive omissions remain visible; no source or owner approval granted."
+        ],
+        "contentChange": "NONE",
+        "contentSummary": "Original strawberry-cake research candidate; not a different recipe or publication bundle.",
+        "outcome": "REVIEW_REQUIRED"
+      },
+      "technical": "PASS",
+      "state": "REVIEW_REQUIRED",
+      "reason": "RISK_MATCHED_REVIEW_REQUIRED",
+      "ownerStatus": "PENDING",
+      "publicationAuthorized": false
+    }
+  ],
+  "manifestSha256": "dff4c9f489245fa0239a63ec011062d3ff3bfb54845717811d4bb969fb96c96e"
+}
