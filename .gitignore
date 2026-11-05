@@ -168,3 +168,6 @@ site/src/generated/routes.generated.ts
 site/src/generated/glycemic-load-pilot.generated.ts
 site/public/data/
 site/src/generated/gk-only-variants.generated.ts
+
+# GK80-controller runtime: local logs, checkpoints, stop flag and lock
+.gk80-controller/
