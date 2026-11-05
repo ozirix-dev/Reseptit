@@ -44,7 +44,8 @@ Katalogin hakutulos ≠ soveltuvuushyväksyntä. Yksi hyväksytty GI-havainto vo
 - GI_APPLICABILITY_REVIEW: vertailu löytyy mutta ei soveltuvuuspäätöstä.
 - RESEARCH_REQUIRED: olennainen GI/CHO puuttuu; tutkimusjono, ei keinotekoista GK:ta.
 - WHAT_IF_ONLY: oletuksia kokeileva arvo, ei julkaistava arvio.
-- INVALID: negatiivinen/ääretön massaluku, päällekkäinen komponentti, väärä CHO-määritelmä, rikkinäinen lähdesidos tai vanhentunut tarkiste.
+- STALE_INPUT: aiemmin sidottu resepti, koostumus tai soveltuvuus on muuttunut. Arvio palautetaan HOLDiin, kunnes sidokset tarkistetaan.
+- INVALID: negatiivinen tai ääretön massa, päällekkäinen komponentti, virheellinen CHO-määritelmä tai rakenteellisesti rikkinäinen lähdesidos.
 
 Laskentatila ja julkaisutila ovat **eri ulottuvuuksia**. MODEL_POINT_REVIEWABLE ei ole automaattisesti PUBLIC_MODEL_APPROVED.
 
