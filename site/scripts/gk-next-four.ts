@@ -1,4 +1,3 @@
-import {acceptsReviewedNutritionModelBinding} from './reviewed-nutrition-model-binding';
 /** Four exact owner-approved A versions; no release authority or general source admission. */
 import {readFileSync} from 'node:fs';
 import path from 'node:path';
@@ -8,6 +7,7 @@ import {calculateGlycemicLoad,type GlycemicLoadIngredientInput,type GlycemicInde
 import type {FoodRecord} from './nutrition-model';
 import {mextAvailableMass} from '../../docs/research/afcd-polyol-03/mext-available-source';
 import type {GkOnlyVariant,LocalizedText} from '../src/features/recipes/gk-only-types';
+import {acceptsReviewedNutritionModelBinding} from './reviewed-nutrition-model-binding';
 
 const folder='docs/nutrition/gk80-next-four/';
 const read=(root:string,p:string)=>JSON.parse(readFileSync(path.join(root,p),'utf8'));

@@ -1,3 +1,5 @@
+// Keep sealed-loader regressions on the existing nutrition CI entry point.
+import './nutrition-model-binding.test';
 import { calculateGlycemicLoad, type GlycemicIndexRecord } from "../scripts/glycemic-load-model";
 import test from "node:test";
 import assert from "node:assert/strict";
