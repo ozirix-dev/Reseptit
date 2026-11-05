@@ -1,3 +1,4 @@
+import {isP1CoconutHold,assertP1CoconutHold,assertOnlyP1CoconutInputChanges} from './p1-coconut-hold-guard';
 import {restoreBeforeOperation146} from './restore-pre-ehold';
 import test from 'node:test';
 import assert from 'node:assert/strict';
@@ -14,7 +15,10 @@ const hash=(p:string)=>createHash('sha256').update(readFileSync(new URL(p,root),
 const entry=json(folder+'integration.json').recipes[0];
 test('exactly one new couscous result; all325 others and146 prior numeric results preserved',()=>{
  const report=restoreBeforeOperation146(json('tmp/nutrition/glycemic-load-pilot.json')),base=json(folder+'main146-baseline.json');assert.equal(report.results.length,326);assert.equal(report.summary.calculated,147);assert.equal(report.summary.insufficientSourceData,179);assert.equal(base.numericIds.length,146);
- for(const r of report.results)if(r.recipeId!==entry.recipeId)assert.equal(createHash('sha256').update(JSON.stringify(r)).digest('hex'),base.resultHashes[r.recipeId],r.recipeId);
+ for(const r of report.results)if(r.recipeId!==entry.recipeId){
+  if(isP1CoconutHold(r.recipeId))assertP1CoconutHold(r);
+  else assert.equal(createHash('sha256').update(JSON.stringify(r)).digest('hex'),base.resultHashes[r.recipeId],r.recipeId);
+ }
  for(const id of base.numericIds)assert.equal(report.results.find((r:any)=>r.recipeId===id).status,'CALCULATED');
  const r=report.results.find((r:any)=>r.recipeId===entry.recipeId);assert.equal(r.glycemicLoadPerServing,37.50);assert.equal(r.confidence,'LOW');assert.equal(r.glycemicLoadRangePerServing,null);assert.equal(r.assessmentType,'PUBLISHED_IMPUTATION');assert.ok(r.omittedAvailableCarbohydratePerServingG<2);
  for(const id of ['carnitas-salaattitacot','kiinalainen-teehaudutetut-munat'])assert.equal(report.results.find((r:any)=>r.recipeId===id).glycemicLoadPerServing,null);
