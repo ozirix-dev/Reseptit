@@ -17,6 +17,14 @@ const translationDraftCommits = new Map([
   ["kaannokset/th/jalkiruoat/meheva-suklaakakku.md", "0989c731ebd8e1e6c75935714c8fc2cf5bbf890a"],
 ]);
 
+
+// The two localization batches add reviewed translations and locale metadata.
+const reviewedPublications = [
+  ["d9e4fdc314142518b4afdd60933f3f0a75ead519", "3de79f256490067500fe7f96706d4f4b20d26f91"],
+  ["3de79f256490067500fe7f96706d4f4b20d26f91", "2e4e84532eb046c6e38d513c5ba3a7e2bf783f25"],
+] as const;
+const publishedLocaleMetadata = "\ntranslation_languages: [en, sv, th]\ntranslation_status: {en: published, sv: published, th: published}\n";
+
 export function assertRecipeBaseline(root: string, baseline: string, ...protectedPaths: string[]) {
   const changes = execFileSync(
     "git",
@@ -24,11 +32,28 @@ export function assertRecipeBaseline(root: string, baseline: string, ...protecte
     { cwd: root, encoding: "utf8" },
   ).trim().split(/\r?\n/).filter(Boolean);
 
+  const published = new Map<string, string>();
+  for (const [parent, commit] of reviewedPublications) {
+    const files = execFileSync(
+      "git",
+      ["diff", "--name-only", "--diff-filter=A", parent, commit, "--", "kaannokset"],
+      { cwd: root, encoding: "utf8" },
+    ).trim().split(/\r?\n/).filter(Boolean);
+    assert.equal(files.length, 30, commit);
+    for (const file of files) published.set(file, commit);
+  }
+
   for (const change of changes) {
     const [status, file] = change.split("\t");
     if (status === "M" && (file.startsWith("reseptit/") || file.startsWith("kaannokset/"))) {
       const current = readFileSync(path.join(root, file), "utf8").replaceAll("\r\n", "\n");
-      const snapshot = recipeTextForApprovedSnapshot(file, current);
+      let snapshot = recipeTextForApprovedSnapshot(file, current);
+      if (snapshot === current && file.startsWith("reseptit/")) {
+        const relativeRecipePath = file.slice("reseptit/".length);
+        if (["en", "sv", "th"].every(locale => published.has(`kaannokset/${locale}/${relativeRecipePath}`))) {
+          snapshot = snapshot.replace(publishedLocaleMetadata, "\n");
+        }
+      }
       if (snapshot !== current) {
         const original = execFileSync("git", ["show", baseline + ":" + file], { cwd: root, encoding: "utf8" });
         assert.equal(snapshot, original, change);
@@ -36,6 +61,13 @@ export function assertRecipeBaseline(root: string, baseline: string, ...protecte
       }
     }
     assert.ok(status === "A" && file.startsWith("kaannokset/") && file.endsWith(".md"), change);
+    const publishedCommit = published.get(file);
+    if (publishedCommit) {
+      const reviewed = execFileSync("git", ["show", publishedCommit + ":" + file], { cwd: root, encoding: "utf8" });
+      const current = readFileSync(path.join(root, file), "utf8").replaceAll("\r\n", "\n");
+      assert.equal(current, reviewed, change);
+      continue;
+    }
     const draft = parseMarkdown(readFileSync(path.join(root, file), "utf8"));
     const draftCommit = translationDraftCommits.get(file);
     if (draftCommit && draft?.data.status === "published") {

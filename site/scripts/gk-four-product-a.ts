@@ -1,3 +1,4 @@
+import {recipeTextForApprovedSnapshot} from './approved-recipe-note-edits';
 import {createHash} from 'node:crypto';
 import {readFileSync} from 'node:fs';
 import {join} from 'node:path';
@@ -65,7 +66,7 @@ export function buildProductAVariants(root: string): GkOnlyVariant[] {
       check(c.level==='A' && c.servings===4 && inputSha256===accepted.inputSha256
         && sha(JSON.stringify(input))===inputSha256, 'exact input: '+c.recipeId);
       for (const [locale,file] of Object.entries(c.paths)) {
-        check(sha(text(file as string))===c.recipeSha256Lf[locale], 'parent recipe seal: '+file);
+        check(sha(recipeTextForApprovedSnapshot(file as string,text(file as string)))===c.recipeSha256Lf[locale], 'parent recipe seal: '+file);
       }
       const usedComposition = new Set<string>();
       const usedRecords = new Set<string>();

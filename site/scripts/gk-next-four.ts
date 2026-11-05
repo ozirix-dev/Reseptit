@@ -1,3 +1,4 @@
+import {recipeTextForApprovedSnapshot} from './approved-recipe-note-edits';
 /** Four exact owner-approved A versions; no release authority or general source admission. */
 import {readFileSync} from 'node:fs';
 import path from 'node:path';
@@ -105,7 +106,7 @@ export function loadApprovedFour(root:string){
  const copy=read(root,folder+'public-copy.json');
  return pack.cases.map((c:any)=>{
   verifyNextFourCase(c);
-  for(const [locale,p] of Object.entries(c.paths))if(textHash(text(root,p as string))!==(c.recipeSha256??c.recipeSha256Lf)[locale])fail('parent recipe version changed');
+  for(const [locale,p] of Object.entries(c.paths))if(textHash(recipeTextForApprovedSnapshot(p as string,text(root,p as string).replaceAll('\r\n','\n')))!==(c.recipeSha256??c.recipeSha256Lf)[locale])fail('parent recipe version changed');
   const context=sources.contexts[pack.caseContexts[c.recipeId]],comps:Composition[]=context.composition.map((f:any)=>verifyComposition(root,context,f,sources.foodinOriginalFileLfSha256));
   const gis:GlycemicIndexRecord[]=context.giBindings.map((g:any)=>verifyGi(root,g));
   const foods:FoodRecord[]=comps.filter(f=>!f.upper).map(f=>({id:f.id,name:f.name,sourceUrl:f.url,retrievedAt:'2026-11-02',licence:'See pinned source catalog',state:'Exact admitted version',basis:'per100g-edible',carbohydrateDefinition:'EU_AVAILABLE',per100g:{carbohydrate:f.value}}));

@@ -25,6 +25,30 @@ const editorialSnapshots: Readonly<Record<string, {
   currentSha256: string;
   inverseEdits: ReadonlyArray<readonly [start: number, count: number, historical: string]>;
 }>> = {
+  "reseptit/aamupalat/pohjoisafrikkalainen-taatelipuuro-appelsiinilla.md": {
+    currentSha256: "8e37b1f3ccd7905d0d0ee68f40dcc7e99f0b62fb8b9255a4cecb837224999a1f",
+    inverseEdits: [[7, 2, ""]],
+  },
+  "reseptit/jalkiruoat/vhh-mokkapalat.md": {
+    currentSha256: "b882db07b90c5381945c4655e5c3993889d6b5e38b1449513beed29927226b4e",
+    inverseEdits: [[7, 2, ""]],
+  },
+  "reseptit/jalkiruoat/vhh-mansikkakakku.md": {
+    currentSha256: "275587e8131c07fc05497f869d54861f3d4c446139d8693fa5c46ad043927e75",
+    inverseEdits: [[7, 2, ""]],
+  },
+  "reseptit/jalkiruoat/vhh-juustokakku.md": {
+    currentSha256: "a3b484c62fd468d2ef37e679592f089f3f096172317161efb5d818625e9715a7",
+    inverseEdits: [[7, 2, ""]],
+  },
+  "reseptit/aamupalat/kaakao-kookos-chia.md": {
+    currentSha256: "18f096352da86a56eebc5f14fcbf62918c400a8b1b76521a4c84ddb134358fa9",
+    inverseEdits: [[7, 2, ""]],
+  },
+  "reseptit/paaruoat/hernekeitto-savupotkalla.md": {
+    currentSha256: "6bff45d3ceb0c81c7c29e296c5628245a5fea11aedd6a89f96dae48fb6116378",
+    inverseEdits: [[7, 2, ""]],
+  },
   "kaannokset/en/paaruoat/bouillabaisse.md": {
     currentSha256: "acff3d276d97886299e6ea5d8c2866c470f906547b943332cb797bd813c43be0",
     inverseEdits: [

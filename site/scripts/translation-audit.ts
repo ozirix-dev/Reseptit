@@ -72,6 +72,7 @@ function canonicalUnit(unit: string, locale: string): string | null {
     annosta: "serving", annos: "serving", servings: "serving", portion: "serving", portions: "serving", portioner: "serving", ที่: "serving",
     lehteä: "leaf", blad: "leaf", leaves: "leaf", leaf: "leaf", ใบ: "leaf",
     siivua: "slice", แว่น: "slice",
+    ruukku: "pot", pot: "pot", kruka: "pot", กระถาง: "pot",
   };
   if (common[normalized]) return common[normalized];
   const localized: Record<string, Record<string, string>> = {
