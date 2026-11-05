@@ -60,7 +60,8 @@ test('parent recipe/macro sources and all326 original-version results stay uncha
  // recipes, translations and nutrition sources remain immutable and distinct.
  assertRecipeBaseline(root,base.main);
  // New batch evidence may be added; existing nutrition sources may not be modified, removed or renamed.
- const changed=execFileSync('git',['diff','--name-only','--diff-filter=DMRT',base.main,'--','docs/nutrition'],{cwd:root,encoding:'utf8'}).trim().split(/\r?\n/).filter(Boolean).filter(p=>!p.startsWith(folder));for(const p of changed){const live=afcdSourceBeforeCorrection(p,readFileSync(path.join(root,p),'utf8'));const pinned=execFileSync('git',['show',base.main+':'+p],{cwd:root,encoding:'utf8'});assert.equal(live.replaceAll('\r\n','\n'),pinned.replaceAll('\r\n','\n'),p);}
+ // The pinned pilot input exceeds the default 1MiB child-process buffer; retain its complete byte comparison.
+ const changed=execFileSync('git',['diff','--name-only','--diff-filter=DMRT',base.main,'--','docs/nutrition'],{cwd:root,encoding:'utf8'}).trim().split(/\r?\n/).filter(Boolean).filter(p=>!p.startsWith(folder));for(const p of changed){const live=afcdSourceBeforeCorrection(p,readFileSync(path.join(root,p),'utf8'));const pinned=execFileSync('git',['show',base.main+':'+p],{cwd:root,encoding:'utf8',maxBuffer:32*1024*1024});assert.equal(live.replaceAll('\r\n','\n'),pinned.replaceAll('\r\n','\n'),p);}
  const report=restoreBeforeAfcdCorrection(json('tmp/nutrition/glycemic-load-pilot.json'));assert.equal(report.summary.calculated,156);assert.equal(report.results.length,326);for(const r of report.results)assert.equal(digest(r),base.baselineResultHashes[r.recipeId],r.recipeId);
  assert.ok(readFileSync(path.join(root,'site/scripts/glycemic-load-pilot.ts'),'utf8').includes('buildGkOnlyVariants'));assert.ok(!readFileSync(path.join(root,'site/scripts/gk80-release.ts'),'utf8').includes('gk149'));assert.equal(base.numericIds.length,156);
 });
