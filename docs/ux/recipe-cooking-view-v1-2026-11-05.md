@@ -1,8 +1,10 @@
 # Reseptin ainekset ja valmistus – ruoanlaittonäkymä V1
 
-**Päätösaihio:** 5.11.2026, raejuustopizzan FI-näkymän käytettävyyskatselmus.  
-**Lähtökohta:** https://ozirix-dev.github.io/Reseptit/raejuustopizza-kaurajauhopohjalla/  
-**Status:** toteutusta ohjaava suunnitelma; ei vielä käyttöliittymä- eikä reseptimuutoksia.  
+**Päätösaihio:** 5.11.2026, raejuustopizzan FI-näkymän käytettävyyskatselmus.
+
+**Lähtökohta:** https://ozirix-dev.github.io/Reseptit/raejuustopizza-kaurajauhopohjalla/
+
+**Status:** toteutusta ohjaava suunnitelma; ei vielä käyttöliittymä- eikä reseptimuutoksia.
 **Tavoite:** tehdä reseptistä helposti käytettävä keittiössä neljällä kielellä (FI/EN/SV/TH), säilyttäen täsmällinen laskentadata ja nykyinen kaksipalstainen perusrakenne.
 
 ## Havaittu nykytila ja rajaus
