@@ -1,8 +1,8 @@
 # GK100: yksi eräajo laskennasta Approval Factoryn tarkistukseen (suunnitelma)
 
-**Tila:** `DRAFT / PLAN ONLY / EI TOTEUTUS- TAI JULKAISULUPAA`  
-**Päivä:** 2026-11-05  
-**Kohde:** Reseptit / GK100, myöhemmin Recipavon laskentaputken soveltuva osa  
+**Tila:** `DRAFT / PLAN ONLY / EI TOTEUTUS- TAI JULKAISULUPAA`
+**Päivä:** 2026-11-05
+**Kohde:** Reseptit / GK100, myöhemmin Recipavon laskentaputken soveltuva osa
 **Omistajan tavoite:** laskenta ja Approval Factoryn tekninen tarkistus yhteen ohjattuun työnkulkuun. Ei tarvita kahta rinnakkaista Codex-istuntoa eikä samoja tarkistuksia kahteen kertaan. Yksittäiset laskenta- ja hyväksyntäkomponentit säilyvät erillisinä ja uudelleenkäytettävinä.
 
 ## 1. Miksi tämä kirjataan nyt?
