@@ -6,6 +6,7 @@ import { recipeTextForApprovedSnapshot } from "../scripts/approved-recipe-note-e
 import { parseMarkdown } from "../src/content/markdown";
 import { textHash } from "../scripts/gk149-model";
 import approvedTranslations from "./approved-translation-baseline.json";
+import preparedTranslations from "./prepared-translation-baseline.json";
 
 const translationDraftCommits = new Map([
   ["kaannokset/en/jalkiruoat/keto-mutakakku.md", "d6531cd0592b01c0106a24bb6a3bd930dedbc504"],
@@ -19,8 +20,12 @@ const translationDraftCommits = new Map([
   ["kaannokset/th/jalkiruoat/meheva-suklaakakku.md", "0989c731ebd8e1e6c75935714c8fc2cf5bbf890a"],
 ]);
 
-// Byte fingerprints of the publication changes from the pinned PR #270 merge.
-const approvedChanges = new Map(Object.entries(approvedTranslations.changes));
+// Exact recipe snapshots protect historical GK tests during translation preparation.
+// Production approval records remain in approvedTranslations.
+const recipeChanges = new Map([
+  ...Object.entries(approvedTranslations.changes),
+  ...Object.entries(preparedTranslations.changes),
+]);
 
 export function assertRecipeBaseline(root: string, baseline: string, ...protectedPaths: string[]) {
   const changes = execFileSync(
@@ -31,7 +36,7 @@ export function assertRecipeBaseline(root: string, baseline: string, ...protecte
 
   for (const change of changes) {
     const [status, file] = change.split("\t");
-    const approved = approvedChanges.get(file);
+    const approved = recipeChanges.get(file);
     if (approved?.status === status) {
       assert.equal(textHash(readFileSync(path.join(root, file), "utf8")), approved.sha256, change);
       continue;

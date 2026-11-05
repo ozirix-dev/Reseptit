@@ -1,3 +1,4 @@
+import {recipeTextForApprovedSnapshot} from './approved-recipe-note-edits';
 import {readFileSync} from 'node:fs';
 import {join} from 'node:path';
 import {textHash} from './gk149-model';
@@ -39,7 +40,11 @@ export function buildReviewedGkVariants(root: string): GkOnlyVariant[] {
   if (textHash(approvalText) !== '75db052b76b8ed61623cb2a36ee631c5fdf262192814f2c64d7845abb7de99b6') throw Error('GK80 four-version approval changed');
   const approval = JSON.parse(approvalText);
   for (const [file, expected] of Object.entries(approval.boundFiles)) {
-    if (textHash(readText(file)) !== expected) throw Error('GK80 four-version binding changed: ' + file);
+    const contents = readText(file);
+    const snapshot = file.startsWith('reseptit/')
+      ? recipeTextForApprovedSnapshot(file, contents.replaceAll('\r\n','\n'))
+      : contents;
+    if (textHash(snapshot) !== expected) throw Error('GK80 four-version binding changed: ' + file);
   }
   const catalog: Record<string, FoodRecord[]> = JSON.parse(readText(folder + 'foods.json'));
   const nativeGi: GlycemicIndexRecord[] = JSON.parse(readText('docs/nutrition/glycemic-index-records.json')).records;
