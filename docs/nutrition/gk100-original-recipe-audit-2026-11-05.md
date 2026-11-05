@@ -3,7 +3,7 @@
 ## Päätös ja rajaus
 
 Omistaja vahvisti 5.11.2026: GK-laskenta mukautuu reseptiin. Pysyvä sääntö on
-[GK-menetelmän päädokumentissa](README.md#alkuperäisen-reseptin-ensisijaisuus--omistajan-päätös-5112026).
+[GK-menetelmän päädokumentissa](gk-original-recipe-method.md).
 Tämä työ tekee luokittelun ja korjaussuunnitelman, ei sisältöhyväksyntöjä,
 menetelmän käyttöönottoa, tuotantoarvojen muutosta, mergeä tai deployta.
 
@@ -174,10 +174,25 @@ liotusta koetta vastaavaksi. Tässä ei avata ylimääräistä PR:ää tai Issue
 GK-ajo tehtiin ensin lähtö-mainissa ja kerran uudelleen muuttuneen mainin
 vuoksi erillisessä omassa työpuussa. Koko sivustobuildiä tai
 uutta tutkimusta ei tarvita dokumentti- ja auditointimuutoksen tarkistamiseen.
-Koneellinen auditin tarkistus (326 riviä, 15 alkuperäis- ja katselmustarkistetta,
+Koneellinen auditointitarkistus (326 riviä, 15 alkuperäis- ja katselmustarkistetta,
 luokat, mittarit ja linkit) sekä Markdown-lint läpäisivät. Kohdennetuista
 GK-regressioista 109/110 läpäisi heti; viimeinen tarvitsi uuden työpuun
 puuttuvan ravintoarvoauditin. Audit tuotettiin ja kyseinen regressio läpäisi
 uusinnan. Uuden mainin kookosmaitosidoksen kohdennettu regressio läpäisi.
 Tarkistustulokset ja niiden rajaus ovat myös PR:n kuvauksessa. Kaikki reseptit, laskentasyötteet,
 GI-tietueet, hyväksyntämanifestit ja tuotantokoodi säilyvät muuttumattomina.
+
+### CI:n historiavertailujen tila
+
+PR:n ensimmäinen CI-ajo `42012130752` läpäisi buildin mutta päättyi
+yksikkötesteissä tulokseen 318/328, kymmenen epäonnistumista. Nyky-mainin
+`dab15fe907db7336320dcd79161fd61462b28034` ajo `42011884750` epäonnistui
+samoissa kymmenessä nimetyssä historiavertailussa. Kookosmaitokorjauksen
+muuttunut HOLD-objekti ei vastaa vanhoja jäädytettyjä tulostiivisteitä.
+Niiden korjausta ei liitetä tähän dokumentti-PR:ään eikä testeihin tehdä
+poikkeuksia. PR #285:n työpuu säilyy koskemattomana.
+
+Vanha ravintoarvo-README kuuluu lisäksi jäädytettyihin makrolähteisiin.
+Uusi pysyvä periaate kirjataan siksi omaan GK-menetelmädokumenttiin, johon
+Factory ja tämä auditointi viittaavat. README palautettiin täsmälleen
+lähtö-mainin sisältöön, jotta tämä PR ei tuo uutta makrolähdepoikkeamaa.

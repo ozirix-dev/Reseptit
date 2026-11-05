@@ -4,7 +4,7 @@ Factory tarkistaa enintään 30 ehdokasta yhdellä ajolla ja tekee SHA-sidotun e
 
 ## Alkuperäissoveltuvuus ennen kattavuusväitettä
 
-[Omistajan pysyvä periaate](README.md#alkuperäisen-reseptin-ensisijaisuus--omistajan-päätös-5112026)
+[Omistajan pysyvä periaate](gk-original-recipe-method.md)
 velvoittaa erottamaan alkuperäisen reseptin, aidon erillisversion ja
 tutkimusvertailun. Nykyinen `GK_ONLY` tarkoittaa, ettei alkuperäistä tiedostoa
 muuteta; se ei osoita ehdokkaan koostumuksen tai valmistuksen vastaavuutta.
