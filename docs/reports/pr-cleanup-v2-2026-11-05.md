@@ -1,5 +1,58 @@
 # Reseptit PR-jonon siivous V2 5.11.2026
 
+## Jatkokorjaukset 5.11.2026
+
+Käyttäjä pyysi jättämään Nutriticsin toistaiseksi sivuun ja ratkaisemaan muista mahdollisimman monta. Hän vahvisti myös kuvalla aktiivisen valinnan GPT-6.1 Sol Highksi.
+
+- Jatkovaiheen lähtömäärä oli 32. Suljettiin viisi PR:ää ja avattiin yksi koottu toteutus-Draft #278. Lopuksi avoimia on 28. Tämän chatin molemmissa vaiheissa suljettiin yhteensä 34 PR:ää ja avattiin kaksi Draftia.
+- #222, #272, #273 ja #274 korvattiin yhdellä 96 käännösparin integraatiolla #278. HEAD on 4ff37d68cc8f11eaf7051241c85fedbfc1e39c8d. Automaattinen CI 41975750838 onnistui.
+- #223:een integroitiin #224:n kuuden tiedoston turvakorjaukset. HEAD b30c3f486574dc202a207f09ab004248cf4d4c39 ja CI 41976660314 onnistui. Koko Git-puu 8aac9af90cef6017f85de234e53277ad66b16310 vastaa täsmälleen #224:n tarkistettua lähdepuuta. #224 suljettiin tämän perusteella.
+- Kaikki 60 alkuperäistä etähaaraa säilytettiin. #223:n haara eteni yhdellä korjauscommitilla alkuperäisen HEADin päälle. Muiden 59 alkuperäisen haaran HEADit säilyivät. Main on edelleen 0fa20528ffe0ca075c9e0fb54c2b388cd7d959fe.
+- Ajonohjain on varalla Draft-PR:ssä. Nutritics #100 jäi käyttäjän ohjeella jatkotyön ulkopuolelle.
+
+### Käännösintegraation korjaukset ja näyttö
+
+#278 yhdistää 96 käännöstä, 32 FI-tiedoston kielimetadatan ja 96 V2-tarkistusta. Kuusi #222:n paria verrattiin lähteisiin ja niiden FI-lähteiden P2-havainnot kirjattiin. Valmisteltujen 128 reseptitiedoston SHA-256:t ja neljän lähde-PR:n täydet HEADit ovat site/tests/prepared-translation-baseline.json-tiedostossa.
+
+Sisältötarkistin käyttää samaa semanttisen muutoksen määritelmää GK-portissa ja käännösportissa. Factory palauttaa tarvittaessa tarkan, nykyhashiin sidotun lähdesnapshotin ennen alkuperäisen hyväksyntähashin tarkistusta. Regressiot kattavat LF/CRLF-muodon sekä valmistustekstin muutoksen hylkäyksen. Pohan/kanan regressiot kytkettiin normaaliin npm test -komentoon.
+
+Mainin erillisestä worktreestä tuotettuja tietoja verrattiin integraatioon. Kaikki 326 laskentasyötettä, laskentasyötehashit, evidenssihashit, 326 täydellistä laskentatulosta, 87 täydellistä GK-versiota, kattavuus ja aiemmat mismatch-listat täsmäsivät. Build tuotti 856 reittiä. Käännöstestit 30/30, staattiset testit 31/31, Factoryn testit 18/18 ja poha-/kanatestit 2/2 läpäisivät. Ainesosamäärän ja valmistusohjeen muutoskokeet hylättiin. CI varmisti lopullisen commitin.
+
+[Integraatio #278](https://github.com/ozirix-dev/Reseptit/pull/278) ja [CI 41975750838](https://github.com/ozirix-dev/Reseptit/actions/runs/41975750838).
+
+### Controller-integraatio
+
+#224:n fyysisten input/evidence-SHA:iden tarkistus, työpuurajat ja keskeytyksen palautus koottiin #223:een omassa worktreessä. 14 offline-turvatestiä läpäisi. Alkuperäisen #224:n haara ja keskustelu säilyvät.
+
+[Nykyinen #223](https://github.com/ozirix-dev/Reseptit/pull/223) ja [CI 41976660314](https://github.com/ozirix-dev/Reseptit/actions/runs/41976660314).
+
+### Nyky-mainin normalisointihavainto
+
+#168:n koodi tarkistettiin nyky-mainin merge-tree-esikatselussa. Nutrition-modelin 18/18 testiä läpäisi, mutta GK-kokonaisajo pysähtyi kohtaan site/scripts/gk-next-seven.ts:50 virheellä Pad shared evidence changed: site/scripts/nutrition-model.ts. Pad see ew -paketti sitoo laskentamoduulin tarkan version. Jatkoluokka on BLOCKED teknisen yhteensopivuusintegraation vuoksi. Muutos tarvitsee nyky-mainin julkaistujen pakettien moduuliversioiden rajatun yhteensovituksen ja 326 tuloksen regression. Esikatselun lähdetiedostot palautettiin alkuperäisiin tavuihin.
+
+[Havainto PR #168:ssa](https://github.com/ozirix-dev/Reseptit/pull/168#issuecomment-6650908507).
+
+### Avoimen jonon nykyinen järjestys
+
+1. Oikeellisuus ja normalisointi. #182, #133, #169, #181, #180 ja #226. #168:n moduuliversioeste ratkaistaan ennen mahdollista integraatiota.
+2. GK-infrastruktuuri ja lähteet. #255, #231, #242 ja #241. #223 säilyy varalla.
+3. GK-versiot ja esityssopimus. #210, #227 ja #229.
+4. Käännösten yksi katselmoitava kokonaisuus. #278.
+5. Recipavon tietomalli, tuote ja käyttöliittymä. #174, #172, #176, #178, #243 ja #119.
+6. Riippuvuudet. #116, #196, #197 ja #198.
+
+#277 säilyttää historiaviitteen ja on dokumentaation katselmointijonossa. #100 on käyttäjän pyynnöstä sivussa. Alla oleva alkuperäinen 60 PR:n luokittelu on ensimmäisen siivousvaiheen tilannekuva, jota yllä oleva jatkovaihe täydentää.
+
+### Jatkovaiheen sulkemistositteet
+
+| PR | Seuraaja | Ennen sulkemista tallennettu kommentti |
+| --- | --- | --- |
+| #222 | #278 | [Peruste ja säilytysviite](https://github.com/ozirix-dev/Reseptit/pull/222#issuecomment-6650880334) |
+| #224 | #223 | [Peruste ja säilytysviite](https://github.com/ozirix-dev/Reseptit/pull/224#issuecomment-6650953322) |
+| #272 | #278 | [Peruste ja säilytysviite](https://github.com/ozirix-dev/Reseptit/pull/272#issuecomment-6650882425) |
+| #273 | #278 | [Peruste ja säilytysviite](https://github.com/ozirix-dev/Reseptit/pull/273#issuecomment-6650884373) |
+| #274 | #278 | [Peruste ja säilytysviite](https://github.com/ozirix-dev/Reseptit/pull/274#issuecomment-6650886117) |
+
 ## Toteutunut siivous ja lopputarkistus
 
 - Avoin jono pieneni 60 PR:stä 32 PR:ään. Suljettiin 29, ja yksi uusi koottu Draft #277 säilyttää historiaviitteen. Aiemmasta jonosta jäi avoimeksi 31 PR:ää.
