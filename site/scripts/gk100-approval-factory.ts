@@ -1,3 +1,4 @@
+import { recipeTextForApprovedSnapshot } from './approved-recipe-note-edits';
 import { basename } from 'node:path';
 import { fingerprint } from './gk80-candidate-model';
 import { textHash } from './gk149-model';
@@ -114,7 +115,10 @@ function assess(entry: Batch['candidates'][number], read: ReadFile, methodApprov
   const originalPath = originals[0];
   const readBound = (path: string) => {
     if (!originalPathPattern.test(path) && !/^docs\/nutrition\/[a-z0-9-]+\.md$/.test(path)) fail('INVALID_BOUND_PATH');
-    return read(path);
+    const contents = read(path);
+    return originalPathPattern.test(path) && textHash(contents) !== packet.boundFiles[path]
+      ? recipeTextForApprovedSnapshot(path, contents.replaceAll('\r\n', '\n'))
+      : contents;
   };
   if ((entry.studyServing !== undefined && entry.studyServing !== true)
       || entry.studyServing !== entry.classification?.studyServing) fail('INVALID_STUDY_SERVING');
