@@ -556,3 +556,26 @@ test('the sealed Okayu version passes review with zero omissions and an exact me
   bindings['spring-onion'].composition.availablePer100 = 4.75;
   assert.equal(checkMixedReviewBatch(batch, read, readMain).manifest.candidates[0].reason, 'MIXED_EVIDENCE_INPUT_REVIEW_REQUIRED');
 });
+
+
+test('sealed V3.1 releases accept only reviewed source metadata on LF and CRLF checkouts', () => {
+  const readRepo = (path: string) => readFileSync(new URL('../../' + path, import.meta.url), 'utf8');
+  const { bundle, authorization } = JSON.parse(readRepo('docs/nutrition/gk100-approved-releases/v31-eight.json'));
+  for (const crlf of [false, true]) {
+    const read = (path: string) => {
+      const contents = readRepo(path).replaceAll('\r\n', '\n');
+      return crlf ? contents.replaceAll('\n', '\r\n') : contents;
+    };
+    const variants = verifyReleaseBundle(bundle, authorization, read);
+    assert.equal(variants.length, 8);
+    assert.equal(variants.filter(variant => variant.studyServing).length, 7);
+  }
+});
+
+test('reviewed locale metadata cannot conceal a new preparation in a sealed source', () => {
+  const readRepo = (path: string) => readFileSync(new URL('../../' + path, import.meta.url), 'utf8');
+  const { bundle, authorization } = JSON.parse(readRepo('docs/nutrition/gk100-approved-releases/v31-eight.json'));
+  const changedRead = (path: string) => readRepo(path) +
+    (path === 'reseptit/aamupalat/marjainen-chiavanukas.md' ? '\nUnreviewed preparation change\n' : '');
+  assert.throws(() => verifyReleaseBundle(bundle, authorization, changedRead), /GK100_RELEASE_CANDIDATE_CHANGED/);
+});

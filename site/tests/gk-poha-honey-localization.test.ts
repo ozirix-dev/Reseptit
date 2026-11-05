@@ -1,7 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {fileURLToPath} from 'node:url';
-import {buildPohaHoneyMustardVariants} from '../scripts/gk-poha-honey-mustard';
+import {readFileSync} from 'node:fs';
+import {buildPohaHoneyMustardVariants, pohaHoneySourceSnapshot} from '../scripts/gk-poha-honey-mustard';
 
 const root = fileURLToPath(new URL('../../', import.meta.url));
 
@@ -25,5 +26,17 @@ test('poha and honey-mustard GK-only details are correctly localized without cha
       assert.ok(variant.preparation[locale].length > 30);
       assert.ok((variant.limitation?.[locale]?.length ?? 0) > 30);
     }
+  }
+});
+
+test('locale metadata preserves the GK source seal on CRLF checkouts', () => {
+  for (const file of [
+    'reseptit/aamupalat/indialainen-poha-maapahkinoilla.md',
+    'reseptit/paaruoat/hunaja-sinappikana-kaalilla.md',
+  ]) {
+    const lf = readFileSync(new URL('../../' + file, import.meta.url), 'utf8').replaceAll('\r\n', '\n');
+    const snapshot = pohaHoneySourceSnapshot(file, lf);
+    assert.ok(!snapshot.includes('translation_languages:'));
+    assert.equal(pohaHoneySourceSnapshot(file, lf.replaceAll('\n', '\r\n')), snapshot);
   }
 });

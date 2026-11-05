@@ -25,6 +25,134 @@ const editorialSnapshots: Readonly<Record<string, {
   currentSha256: string;
   inverseEdits: ReadonlyArray<readonly [start: number, count: number, historical: string]>;
 }>> = {
+  "reseptit/aamupalat/indialainen-poha-maapahkinoilla.md": {
+    currentSha256: "5fc1ccc4d6c48268325313fa6e5075d9a9bcf5d8f97943758aba6da8ab906dbd",
+    inverseEdits: [[7, 2, ""]],
+  },
+  "reseptit/aamupalat/kaakao-kookos-chia.md": {
+    currentSha256: "18f096352da86a56eebc5f14fcbf62918c400a8b1b76521a4c84ddb134358fa9",
+    inverseEdits: [[7, 2, ""]],
+  },
+  "reseptit/aamupalat/kiinalainen-riisipuuro-kananmunalla.md": {
+    currentSha256: "0b9b81f1ad1973bba7177df5123fd4fad0efc9975fa529977cd84c12afc9e722",
+    inverseEdits: [[7, 2, ""]],
+  },
+  "reseptit/aamupalat/korealainen-yachaejuk-kasvisjuk.md": {
+    currentSha256: "cb8786b238364fff803719f6dcc6ea8c945249fb6b312a56b47b9a7a77f153d9",
+    inverseEdits: [[7, 2, ""]],
+  },
+  "reseptit/aamupalat/kurkku-oliivi-aamiaiskulho.md": {
+    currentSha256: "a6808c672e693002702c5bbe96296b9106839866bbaa81e71433eb7535b5038f",
+    inverseEdits: [[7, 2, ""]],
+  },
+  "reseptit/aamupalat/lahi-ita-kikhernejauho-yrttilettu.md": {
+    currentSha256: "d1597fdfc474e36a9958edaf1a2fde3b37f25a1895a6356d6df30f9afc00eeb8",
+    inverseEdits: [[7, 2, ""]],
+  },
+  "reseptit/aamupalat/malesialainen-congee-inkivaarilla.md": {
+    currentSha256: "4d4a7197991bde1cc03541052c83d45be15f9b9ba81954c539ceaf1b684dcf91",
+    inverseEdits: [[7, 2, ""]],
+  },
+  "reseptit/aamupalat/marjainen-chiavanukas.md": {
+    currentSha256: "f8603ab9d3d0d5aff3e4a215da3df5fd30ae59ac881c512fd108878b436fb7dd",
+    inverseEdits: [[7, 2, ""]],
+  },
+  "reseptit/aamupalat/munakasrulla-pinaatti-tuorejuustolla.md": {
+    currentSha256: "a612d8075e162818968800c4393a93b693cda16290035342ca189a08bd0f8cfd",
+    inverseEdits: [[7, 2, ""]],
+  },
+  "reseptit/aamupalat/paahdettu-aamiaismunakoiso.md": {
+    currentSha256: "84c98cc7638b8229a6170305eed10d32910a45c746b306771966c6d3b4374e91",
+    inverseEdits: [[7, 2, ""]],
+  },
+  "reseptit/aamupalat/pohjoisafrikkalainen-kuskus-aamiaiskulho.md": {
+    currentSha256: "0e6c1004975dd002bf42662946bbf15bbbb19f607aaa893a554cce19dbe372f7",
+    inverseEdits: [[7, 2, ""]],
+  },
+  "reseptit/aamupalat/pohjoisafrikkalainen-taatelipuuro-appelsiinilla.md": {
+    currentSha256: "8e37b1f3ccd7905d0d0ee68f40dcc7e99f0b62fb8b9255a4cecb837224999a1f",
+    inverseEdits: [[7, 2, ""]],
+  },
+  "reseptit/aamupalat/raejuusto-pesto-kasviskulho.md": {
+    currentSha256: "946db111ae676e3f9b34986434f6e87575c4af1066de36f078a18b06f616bb1a",
+    inverseEdits: [[7, 2, ""]],
+  },
+  "reseptit/aamupalat/savulohi-avokadokulho.md": {
+    currentSha256: "107b89c5657e76dc24066f590925ef49437ae28238e2871f65b9ed461d3f82d8",
+    inverseEdits: [[7, 2, ""]],
+  },
+  "reseptit/aamupalat/siemengranola-jogurtilla.md": {
+    currentSha256: "8100f920ba654edf84b847336d90899c6d6613d01e8dee20af7c913ea7eb474e",
+    inverseEdits: [[7, 2, ""]],
+  },
+  "reseptit/aamupalat/thai-jok-kanalla.md": {
+    currentSha256: "9e8476e9aa500c56da7ac439a54cc41d991cec82a1c9e59dfc75352816c858df",
+    inverseEdits: [[7, 2, ""]],
+  },
+  "reseptit/aamupalat/thai-porsasjok.md": {
+    currentSha256: "11a68c3326993ecb61b2b04bf80da614c3717edfb12507f377278c02d720e73b",
+    inverseEdits: [[7, 2, ""]],
+  },
+  "reseptit/alkuruoat/goi-cuon.md": {
+    currentSha256: "2ac5dff950a37121b81380f4cdc7980e6fb595a8ac6b49ec1afc401b5746dfb7",
+    inverseEdits: [[7, 2, ""]],
+  },
+  "reseptit/jalkiruoat/vhh-juustokakku.md": {
+    currentSha256: "a3b484c62fd468d2ef37e679592f089f3f096172317161efb5d818625e9715a7",
+    inverseEdits: [[7, 2, ""]],
+  },
+  "reseptit/jalkiruoat/vhh-mansikkakakku.md": {
+    currentSha256: "275587e8131c07fc05497f869d54861f3d4c446139d8693fa5c46ad043927e75",
+    inverseEdits: [[7, 2, ""]],
+  },
+  "reseptit/jalkiruoat/vhh-mokkapalat.md": {
+    currentSha256: "b882db07b90c5381945c4655e5c3993889d6b5e38b1449513beed29927226b4e",
+    inverseEdits: [[7, 2, ""]],
+  },
+  "reseptit/jalkiruoat/vhh-omenapiirakka.md": {
+    currentSha256: "53541c935cdba02c05594508686ded88c78b8a559d23f041fa7492195c7ef6e9",
+    inverseEdits: [[7, 2, ""]],
+  },
+  "reseptit/jalkiruoat/vhh-raparperipiirakka.md": {
+    currentSha256: "e9ec69c8a0da92f6da888936fde52b65e3a0382c351b76d910f4e8ae9dff92a0",
+    inverseEdits: [[7, 2, ""]],
+  },
+  "reseptit/paaruoat/hernekeitto-savupotkalla.md": {
+    currentSha256: "6bff45d3ceb0c81c7c29e296c5628245a5fea11aedd6a89f96dae48fb6116378",
+    inverseEdits: [[7, 2, ""]],
+  },
+  "reseptit/paaruoat/hunaja-sinappikana-kaalilla.md": {
+    currentSha256: "8d49514be7f1938671f3c9ce074be4674e7f766e9229ac94c1b80a1f6ea1cdbe",
+    inverseEdits: [[7, 2, ""]],
+  },
+  "reseptit/paaruoat/japanilainen-curry-tofulla.md": {
+    currentSha256: "c3687678ca5f563200a54578ceec423bb4955abd13e8ca930b39ee3889a232e4",
+    inverseEdits: [[7, 2, ""]],
+  },
+  "reseptit/paaruoat/kana-parmesaanipannu-parsakaali.md": {
+    currentSha256: "b944bdb86c952ac1cc89f4f4a4571d048895553fb9af9dded9329c4dde3c75bd",
+    inverseEdits: [[7, 2, ""]],
+  },
+  "reseptit/paaruoat/kanaviillokki-kukkakaalilla.md": {
+    currentSha256: "ad8261f25febf41bf71110f85cd3ab1f89b709a1f2d9a9f316e60867254020a9",
+    inverseEdits: [[7, 2, ""]],
+  },
+  "reseptit/paaruoat/kermainen-kanasienipannu.md": {
+    currentSha256: "b495a67762f95a76bd5b06ca42be47244cdfe7bc95d31789fd0a91284ace38fe",
+    inverseEdits: [[7, 2, ""]],
+  },
+  "reseptit/paaruoat/nasi-lemak.md": {
+    currentSha256: "1dc92af8929f09f1e7798bb846f61b43d083f6104a6dd07b36819f636f9beed1",
+    inverseEdits: [[7, 2, ""]],
+  },
+  "reseptit/paaruoat/tacokulho-nauta-avokado.md": {
+    currentSha256: "f6ada74011e561cbad5d99cb691b66770ed4287b1ef92ccf67184680d7ccda55",
+    inverseEdits: [[7, 2, ""]],
+  },
+  "reseptit/paaruoat/uunimakkara-sipulipedilla.md": {
+    currentSha256: "d2705895936c37657fe45ac18e168b4e8eb3252def668e2bf1208d1680ece37e",
+    inverseEdits: [[7, 2, ""]],
+  },
   "kaannokset/en/paaruoat/bouillabaisse.md": {
     currentSha256: "acff3d276d97886299e6ea5d8c2866c470f906547b943332cb797bd813c43be0",
     inverseEdits: [

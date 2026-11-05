@@ -121,6 +121,16 @@ const recipeIds = new Set([
   ...evidenceIds,
 ]);
 assert(recipeIds.size > 0, "No changed recipe or nutrition evidence paths were supplied.");
+const semanticallyChanged = new Set(changedRecipes.filter((recipe) => {
+  if (recipe.data.status !== "published") return false;
+  const previous = previousRecipes.get(recipe.path);
+  if (previous?.data.status !== "published") return true;
+  const previousData = recipeFrontmatterSchema.safeParse(previous.data);
+  if (!previousData.success) return true;
+  const current = parseMarkdown(recipe.markdown)!;
+  return semanticHash({ data: previousData.data, content: previous.content }) !== semanticHash({ data: recipe.data, content: current.content });
+}).map((recipe) => recipe.path));
+
 const audit = await auditTranslations([...recipeIds]);
 const recipeBindings = JSON.parse(await readFile(resolveRepoFile("docs/nutrition/glycemic-load-recipe-bindings.json"), "utf8")) as {
   recipes?: Record<string, string>;
@@ -169,7 +179,7 @@ for (const recipeId of recipeIds) {
 
   const changedSource = changedRecipes.find((recipe) => recipe.data.recipe_id === recipeId && recipe.data.language === "fi");
   const boundRecipeHash = recipeBindings.recipes?.[recipeId];
-  if (changedSource && boundRecipeHash) {
+  if (changedSource && boundRecipeHash && semanticallyChanged.has(changedSource.path)) {
     const currentRecipeHash = recipeBindingHash(changedSource.markdown, recipeAliases.aliases ?? {});
     assert(currentRecipeHash === boundRecipeHash || await validateGk80Candidate(repoRoot, recipeId) || await validateRecovery(repoRoot,recipeId) || await validateScopedPolyolC(repoRoot,recipeId), `${recipeId}: GI/GK recipe binding is stale; review the related calculation before accepting this content change`);
   }
@@ -195,17 +205,8 @@ for (const recipeId of recipeIds) {
 }
 
 if (process.env.BASE_SHA && !/^0+$/.test(process.env.BASE_SHA)) {
-  const changed = new Set(changedRecipes.filter((recipe) => {
-    if (recipe.data.status !== "published") return false;
-    const previous = previousRecipes.get(recipe.path);
-    if (previous?.data.status !== "published") return true;
-    const previousData = recipeFrontmatterSchema.safeParse(previous.data);
-    if (!previousData.success) return true;
-    const current = parseMarkdown(recipe.markdown)!;
-    return semanticHash({ data: previousData.data, content: previous.content }) !== semanticHash({ data: recipe.data, content: current.content });
-  }).map((recipe) => recipe.path));
-  if (changed.size) {
-    const errors = changedSemanticReviewErrors(audit, changed, await loadSemanticEvidence(repoRoot));
+  if (semanticallyChanged.size) {
+    const errors = changedSemanticReviewErrors(audit, semanticallyChanged, await loadSemanticEvidence(repoRoot));
     assert.deepEqual(errors, [], "Changed published translation pairs require current Codex source comparison evidence");
   }
 }

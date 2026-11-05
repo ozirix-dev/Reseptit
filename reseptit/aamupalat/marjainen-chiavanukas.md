@@ -5,6 +5,8 @@ url_slug: marjainen-chiavanukas
 category: aamupala
 language: fi
 status: published
+translation_languages: [en, sv, th]
+translation_status: {en: published, sv: published, th: published}
 main_ingredient:
   - chia
   - marjat

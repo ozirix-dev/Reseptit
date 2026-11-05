@@ -1,0 +1,523 @@
+{
+  "sourceMain": "0fa20528ffe0ca075c9e0fb54c2b388cd7d959fe",
+  "sourcePullRequests": {
+    "222": "bca2d19f80fa21391a8e5696748c19ce24f92ba0",
+    "272": "176d28a299d7d9786e647746b8d6f00cbbc99f52",
+    "273": "7a4fcb1cc15536538a0ab63665582f5e8bbcfec8",
+    "274": "2233290dd792afa6f85ee9757bded170d0c06a27"
+  },
+  "changes": {
+    "kaannokset/en/aamupalat/indialainen-poha-maapahkinoilla.md": {
+      "status": "A",
+      "sha256": "8926cc0280b9afcf3975bb66219d074c780e1a3c2fffc428852f56182044e173"
+    },
+    "kaannokset/en/aamupalat/kaakao-kookos-chia.md": {
+      "status": "A",
+      "sha256": "e6e8f9a6b2df0fdecf3d6d09d04056ea11b0bed4bc01ebb8eb4c3f0ac3cb8bc9"
+    },
+    "kaannokset/en/aamupalat/kiinalainen-riisipuuro-kananmunalla.md": {
+      "status": "A",
+      "sha256": "370721495896fe8a9ddccd804a8a3f53be0e1c8d99e41a4b31a6a9eb099c4ff7"
+    },
+    "kaannokset/en/aamupalat/korealainen-yachaejuk-kasvisjuk.md": {
+      "status": "A",
+      "sha256": "15f5b5b3f51be9dbd5cc23e9189965a7f8b2124d7044dc2e110fa9eec49b59f4"
+    },
+    "kaannokset/en/aamupalat/kurkku-oliivi-aamiaiskulho.md": {
+      "status": "A",
+      "sha256": "60123190572d0c51fd6db81690bcac60b23baae9b912e2e7209beed5ffc6c0b3"
+    },
+    "kaannokset/en/aamupalat/lahi-ita-kikhernejauho-yrttilettu.md": {
+      "status": "A",
+      "sha256": "5bbe6f62207c33cc8e692c0a7001d6cdc0da955040696f855f8552e7b74ccde1"
+    },
+    "kaannokset/en/aamupalat/malesialainen-congee-inkivaarilla.md": {
+      "status": "A",
+      "sha256": "4e6a20f2cdd8823f9b6505d312773859673381f4c2879442a12b49172e52ff70"
+    },
+    "kaannokset/en/aamupalat/marjainen-chiavanukas.md": {
+      "status": "A",
+      "sha256": "33821bb432727d02a3b1a07dd36f83d61636207ced148d10c53dece52a58e9bd"
+    },
+    "kaannokset/en/aamupalat/munakasrulla-pinaatti-tuorejuustolla.md": {
+      "status": "A",
+      "sha256": "c6be9b7a07114f5f783c5540575818c0c9bd425ef68b82d130c87119a160166a"
+    },
+    "kaannokset/en/aamupalat/paahdettu-aamiaismunakoiso.md": {
+      "status": "A",
+      "sha256": "a1e3ae05e23c49690cb4d6e6696aba540df1b3fde56d2688d09da23d1da0ea25"
+    },
+    "kaannokset/en/aamupalat/pohjoisafrikkalainen-kuskus-aamiaiskulho.md": {
+      "status": "A",
+      "sha256": "318f675cac25d5b64bf9ca699b1ad5f0f8b2ff3a95630b6036f6da5b57a20db4"
+    },
+    "kaannokset/en/aamupalat/pohjoisafrikkalainen-taatelipuuro-appelsiinilla.md": {
+      "status": "A",
+      "sha256": "534b482f73ef503fd85ef95d72f1031d8ee5238710d9fafc812236628f5cfbe3"
+    },
+    "kaannokset/en/aamupalat/raejuusto-pesto-kasviskulho.md": {
+      "status": "A",
+      "sha256": "c4f2d77af060b198c7a861c1cf6da395fe7b0af81fb44588b0d2436cc6a82810"
+    },
+    "kaannokset/en/aamupalat/savulohi-avokadokulho.md": {
+      "status": "A",
+      "sha256": "269d33288e932fa2aa7e0f9e81d8c9219f0775fb1e3158e3dd12e41df879e402"
+    },
+    "kaannokset/en/aamupalat/siemengranola-jogurtilla.md": {
+      "status": "A",
+      "sha256": "cf112088451bc0dabe0e1bcbaa5fb99e27ddf9ff395a045966f1c103cc51f01f"
+    },
+    "kaannokset/en/aamupalat/thai-jok-kanalla.md": {
+      "status": "A",
+      "sha256": "7190dccf787b6443b5312d5ee70cfd447016b84f3fbff918e53e877117c00b38"
+    },
+    "kaannokset/en/aamupalat/thai-porsasjok.md": {
+      "status": "A",
+      "sha256": "d466699e630b82db1ee7ac978796be2f6447206a630bb33c08f0b60b21db6dff"
+    },
+    "kaannokset/en/alkuruoat/goi-cuon.md": {
+      "status": "A",
+      "sha256": "2a4446cc9957c7aa57ac2286dba91a3b0fd488f8965c366de7d5beca2ebacaef"
+    },
+    "kaannokset/en/jalkiruoat/vhh-juustokakku.md": {
+      "status": "A",
+      "sha256": "f4c9b4d976d943e1cc88d545a7b46755d78cb6a8e127851597ecdd053a3d87f7"
+    },
+    "kaannokset/en/jalkiruoat/vhh-mansikkakakku.md": {
+      "status": "A",
+      "sha256": "8c85f9d4a3fda164d9300414b027aa915bf67c9f0e40b2e9dc8feb93a63114ca"
+    },
+    "kaannokset/en/jalkiruoat/vhh-mokkapalat.md": {
+      "status": "A",
+      "sha256": "f2f7d123dea5fc7f8b3d22fdd157ccbad4e44be3550dce36d68b9c1ba5c73825"
+    },
+    "kaannokset/en/jalkiruoat/vhh-omenapiirakka.md": {
+      "status": "A",
+      "sha256": "4ee0d8227148091a191ea61bce5bc7d7a5722a9fdbaf77bf6f261a0d3c0b6430"
+    },
+    "kaannokset/en/jalkiruoat/vhh-raparperipiirakka.md": {
+      "status": "A",
+      "sha256": "f5b3aab87228d515614504e61dd38456575f859ab9452508f059f441841ccd48"
+    },
+    "kaannokset/en/paaruoat/hernekeitto-savupotkalla.md": {
+      "status": "A",
+      "sha256": "86455e2575cf2d41d0f1f275f976e333d4fae0404146cc6a8e72df0a0495ca4a"
+    },
+    "kaannokset/en/paaruoat/hunaja-sinappikana-kaalilla.md": {
+      "status": "A",
+      "sha256": "0344b59cd282565691116cf33a0ae7efa3ab8de006d50504165280b990ba0915"
+    },
+    "kaannokset/en/paaruoat/japanilainen-curry-tofulla.md": {
+      "status": "A",
+      "sha256": "b86a32935393fba8ce44f0a6ec2513af9f9a3244024008cb4d92773cae9663dd"
+    },
+    "kaannokset/en/paaruoat/kana-parmesaanipannu-parsakaali.md": {
+      "status": "A",
+      "sha256": "57693c938a61e0a2d1a58c9d4cc0be100a2ad8d599b639ac390cf274fb4228f8"
+    },
+    "kaannokset/en/paaruoat/kanaviillokki-kukkakaalilla.md": {
+      "status": "A",
+      "sha256": "630937bae758daf0540926c46bdfbbd40480d7142f6850369d0579a6c358a89b"
+    },
+    "kaannokset/en/paaruoat/kermainen-kanasienipannu.md": {
+      "status": "A",
+      "sha256": "941597edc07ea25193c73c2b77c6400cc347a3ef959265d322df3f53787ceeef"
+    },
+    "kaannokset/en/paaruoat/nasi-lemak.md": {
+      "status": "A",
+      "sha256": "c570859c0ba95709a8af04f42dbe8fb4289a6fcc78ccd675814edae96074bb6e"
+    },
+    "kaannokset/en/paaruoat/tacokulho-nauta-avokado.md": {
+      "status": "A",
+      "sha256": "013ccc74e3645d29a46868822af181cd5990149c6d0fb6d30b4270d349e595ca"
+    },
+    "kaannokset/en/paaruoat/uunimakkara-sipulipedilla.md": {
+      "status": "A",
+      "sha256": "e423cbfec82b12d1b8d660c171ce8c91e9bfa0b27609e164b71f0d6b831c9e1c"
+    },
+    "kaannokset/sv/aamupalat/indialainen-poha-maapahkinoilla.md": {
+      "status": "A",
+      "sha256": "022921d0b3d3348654eef9e2934c82b17df7d553cf0a8c57e9b8688ad975e7f8"
+    },
+    "kaannokset/sv/aamupalat/kaakao-kookos-chia.md": {
+      "status": "A",
+      "sha256": "a9f37f1ba391715075d4083c02c984660c435cbe03920ef48a81200cb75b4b2b"
+    },
+    "kaannokset/sv/aamupalat/kiinalainen-riisipuuro-kananmunalla.md": {
+      "status": "A",
+      "sha256": "88f739dad5498e4a95be3070016c41db8894b69d296cb6f9009e7566e7097c04"
+    },
+    "kaannokset/sv/aamupalat/korealainen-yachaejuk-kasvisjuk.md": {
+      "status": "A",
+      "sha256": "920251b1ef7134d5a274cf5797c6c75e1acf9bd9097386b297d051843207ecbf"
+    },
+    "kaannokset/sv/aamupalat/kurkku-oliivi-aamiaiskulho.md": {
+      "status": "A",
+      "sha256": "4a9bb31e77800a339a1c464aaa622e65c566f3d800b597bcb53a88c2c94d3a5a"
+    },
+    "kaannokset/sv/aamupalat/lahi-ita-kikhernejauho-yrttilettu.md": {
+      "status": "A",
+      "sha256": "8798031e91c14e1280ec59141df06b0853dcc0e787bab09110d970f68f22e6dd"
+    },
+    "kaannokset/sv/aamupalat/malesialainen-congee-inkivaarilla.md": {
+      "status": "A",
+      "sha256": "6c5639139903aaab41d537ac9ab5534347f8c5c6c5c1d4fdf226cdcb97243943"
+    },
+    "kaannokset/sv/aamupalat/marjainen-chiavanukas.md": {
+      "status": "A",
+      "sha256": "91af32fd7c66f11381ef03df81415e89feecb2cdd6d3044c83b4b4c909b21ead"
+    },
+    "kaannokset/sv/aamupalat/munakasrulla-pinaatti-tuorejuustolla.md": {
+      "status": "A",
+      "sha256": "436f4374549bda4db90a0a3eeb2c681052ecb04d5a1b48607e507452274a8466"
+    },
+    "kaannokset/sv/aamupalat/paahdettu-aamiaismunakoiso.md": {
+      "status": "A",
+      "sha256": "40895ea545e461ab84ca06c689c680abbbb59d8b88fee3da4be54920e8f289d5"
+    },
+    "kaannokset/sv/aamupalat/pohjoisafrikkalainen-kuskus-aamiaiskulho.md": {
+      "status": "A",
+      "sha256": "d4e30254231fbe84690ec700ad5e155260fa60614a984492aa8439788d4b27e9"
+    },
+    "kaannokset/sv/aamupalat/pohjoisafrikkalainen-taatelipuuro-appelsiinilla.md": {
+      "status": "A",
+      "sha256": "cc121416638fa0f33ab90c8f6cec7ae33d111c337b2ecafd03710dbbbcc40c8b"
+    },
+    "kaannokset/sv/aamupalat/raejuusto-pesto-kasviskulho.md": {
+      "status": "A",
+      "sha256": "18b229527712ed1e7a467603045caf2fd04294e2dde4ca93d9fc906d6235c7d2"
+    },
+    "kaannokset/sv/aamupalat/savulohi-avokadokulho.md": {
+      "status": "A",
+      "sha256": "cacf7d89e45a6757808e8aac0c2ff5bf707b9dbcbaffe42170425e126967f7dc"
+    },
+    "kaannokset/sv/aamupalat/siemengranola-jogurtilla.md": {
+      "status": "A",
+      "sha256": "725604a4606364ea72b2b8c9ff60c61088df331626dd04bf28f246adc5cccc82"
+    },
+    "kaannokset/sv/aamupalat/thai-jok-kanalla.md": {
+      "status": "A",
+      "sha256": "f395fecd443fc9009b452b7c3430036a0e3b7cb35fc75ba11d7a93da0ebb4909"
+    },
+    "kaannokset/sv/aamupalat/thai-porsasjok.md": {
+      "status": "A",
+      "sha256": "426b8c9587cb1d32ba53486282ebed14509a2927ef48a400216cc499bbcfd095"
+    },
+    "kaannokset/sv/alkuruoat/goi-cuon.md": {
+      "status": "A",
+      "sha256": "605eee85f88334377f32fc6aeee0f012aec7fa7fd9d37a7d64cd969e9826fd08"
+    },
+    "kaannokset/sv/jalkiruoat/vhh-juustokakku.md": {
+      "status": "A",
+      "sha256": "bdf442235ce1891ae1e158fbe61f76085fca0ff38eb96ee5429ff2605f4f1b2a"
+    },
+    "kaannokset/sv/jalkiruoat/vhh-mansikkakakku.md": {
+      "status": "A",
+      "sha256": "e5abcb0cfbaa5ec55e8e6b9f621af97d5bf02c7f321aa9b02abd352e66a04dda"
+    },
+    "kaannokset/sv/jalkiruoat/vhh-mokkapalat.md": {
+      "status": "A",
+      "sha256": "0682a26b3730a242ee1489e10900ad57767b098c239634480214ad1a89bfa04b"
+    },
+    "kaannokset/sv/jalkiruoat/vhh-omenapiirakka.md": {
+      "status": "A",
+      "sha256": "242430e8d181484f9bdff3b638c2601edd279c3566e4e982086c310be569a689"
+    },
+    "kaannokset/sv/jalkiruoat/vhh-raparperipiirakka.md": {
+      "status": "A",
+      "sha256": "214f9e630b5cf98b9365b8a55c91071ed10faa5f14f334b9103ce61839a78809"
+    },
+    "kaannokset/sv/paaruoat/hernekeitto-savupotkalla.md": {
+      "status": "A",
+      "sha256": "bce897d982d0c85cc0a2982cb8a1d2cda3059bb28a60395a479fb1f6dddf7cdd"
+    },
+    "kaannokset/sv/paaruoat/hunaja-sinappikana-kaalilla.md": {
+      "status": "A",
+      "sha256": "5322c5a7866d3a56ea92a3561f47699e904eefbe4d81355227de3c974639a698"
+    },
+    "kaannokset/sv/paaruoat/japanilainen-curry-tofulla.md": {
+      "status": "A",
+      "sha256": "551fe26fc45659e2cf6c3b0ca790455ed3f1cf9fb4db7b09cc65d9b7453a7580"
+    },
+    "kaannokset/sv/paaruoat/kana-parmesaanipannu-parsakaali.md": {
+      "status": "A",
+      "sha256": "b5b82e9c719bdb9441e6b7f758574c79c5425a0384ca6ab6447d996c3888ba27"
+    },
+    "kaannokset/sv/paaruoat/kanaviillokki-kukkakaalilla.md": {
+      "status": "A",
+      "sha256": "861e6074fd25fd597581368da95b3ae53bd760489ad456824f1402ec073ca3e1"
+    },
+    "kaannokset/sv/paaruoat/kermainen-kanasienipannu.md": {
+      "status": "A",
+      "sha256": "fb6bacc924417587d08a940e6635df6e5e7e7e7fcef133d350500f1b54c7a54e"
+    },
+    "kaannokset/sv/paaruoat/nasi-lemak.md": {
+      "status": "A",
+      "sha256": "1b68b31975242e9e6070275364aec06e679e6c26912555b013ee8efd04652f31"
+    },
+    "kaannokset/sv/paaruoat/tacokulho-nauta-avokado.md": {
+      "status": "A",
+      "sha256": "7214cb13c8c0c2fe05dcc4bebf6388278b5a754bde8bfbc6982ca49129b6d070"
+    },
+    "kaannokset/sv/paaruoat/uunimakkara-sipulipedilla.md": {
+      "status": "A",
+      "sha256": "e8d2c2e43ad241cedb1fc73d320bd0bb8f57cfe4d472c4605fb35c48aacadb21"
+    },
+    "kaannokset/th/aamupalat/indialainen-poha-maapahkinoilla.md": {
+      "status": "A",
+      "sha256": "7ca2544261b78711826cecd1a88d785f24f1af431be652ec0d8365e2d06e06d4"
+    },
+    "kaannokset/th/aamupalat/kaakao-kookos-chia.md": {
+      "status": "A",
+      "sha256": "ad1f224666b59a3b7eb9ce8376bd7d566fa23e5d8986a197d6189e7544e45fd7"
+    },
+    "kaannokset/th/aamupalat/kiinalainen-riisipuuro-kananmunalla.md": {
+      "status": "A",
+      "sha256": "180e9171ef63b217fce18326795f34736600ff83230a359a4605ec56d5a7c1e6"
+    },
+    "kaannokset/th/aamupalat/korealainen-yachaejuk-kasvisjuk.md": {
+      "status": "A",
+      "sha256": "4bcc95c60b96a85449305108832b05ca34f80c5421c836f26fec03dbe40dda4e"
+    },
+    "kaannokset/th/aamupalat/kurkku-oliivi-aamiaiskulho.md": {
+      "status": "A",
+      "sha256": "303ad349bf4e16d46a549ae64fb74ec95dbfe11d6f22a7bb05244cdb8b967903"
+    },
+    "kaannokset/th/aamupalat/lahi-ita-kikhernejauho-yrttilettu.md": {
+      "status": "A",
+      "sha256": "e7656c48dff5656322cae9bd9b22399923edb18ff32faee4efcd455f5cbc08e1"
+    },
+    "kaannokset/th/aamupalat/malesialainen-congee-inkivaarilla.md": {
+      "status": "A",
+      "sha256": "2ed36f9c499c29547d18266e802aaddbea9327ad308e1a18f1f3ea35ad59f7a0"
+    },
+    "kaannokset/th/aamupalat/marjainen-chiavanukas.md": {
+      "status": "A",
+      "sha256": "cbfd1b1847e8585b3b6de4547ee76b3e45c8ec5cb9acb12119b3b867624fd81f"
+    },
+    "kaannokset/th/aamupalat/munakasrulla-pinaatti-tuorejuustolla.md": {
+      "status": "A",
+      "sha256": "4b2bb34ba39d42669231394a1c5851729d4f50926083a63593ad900744fa2f8e"
+    },
+    "kaannokset/th/aamupalat/paahdettu-aamiaismunakoiso.md": {
+      "status": "A",
+      "sha256": "fd294a0321f5575717a5e4701e6a8e6e77ebbb12f5507678294c924742e34877"
+    },
+    "kaannokset/th/aamupalat/pohjoisafrikkalainen-kuskus-aamiaiskulho.md": {
+      "status": "A",
+      "sha256": "a93c24aea40a9da1e81b40633917dc730a6ca1c308120e9adef0607b660ac004"
+    },
+    "kaannokset/th/aamupalat/pohjoisafrikkalainen-taatelipuuro-appelsiinilla.md": {
+      "status": "A",
+      "sha256": "d6596321f41a5aff3a299a25be3ec4d355b1d1f98dc8920dc7d9a6bd34bd5f75"
+    },
+    "kaannokset/th/aamupalat/raejuusto-pesto-kasviskulho.md": {
+      "status": "A",
+      "sha256": "0a08c443ef50edac5ad81038a6f6ccfc21301d07982c0e9032679c732a361093"
+    },
+    "kaannokset/th/aamupalat/savulohi-avokadokulho.md": {
+      "status": "A",
+      "sha256": "9b42a3d16aba70f9ec482965ec88abca5008ec435ea167c8f21a4c064ad9b582"
+    },
+    "kaannokset/th/aamupalat/siemengranola-jogurtilla.md": {
+      "status": "A",
+      "sha256": "c88af3e64fffaeeb6f7422988d3fa33b953b3a5aeab66591e58c60205ffa8a86"
+    },
+    "kaannokset/th/aamupalat/thai-jok-kanalla.md": {
+      "status": "A",
+      "sha256": "8a561ef476e58c05359a0c2f263535fc77a55522483062c8c7a2b77d076dd3da"
+    },
+    "kaannokset/th/aamupalat/thai-porsasjok.md": {
+      "status": "A",
+      "sha256": "ca466b0139ae8a0a7aa37b1f4cccf2b26cfc4dda01a6979c945c590a25f9f19b"
+    },
+    "kaannokset/th/alkuruoat/goi-cuon.md": {
+      "status": "A",
+      "sha256": "97af96165ea60ad4e06201c67b5bccba79a4166995101eb3574f8e6e4a754720"
+    },
+    "kaannokset/th/jalkiruoat/vhh-juustokakku.md": {
+      "status": "A",
+      "sha256": "228e7193efd25a216b0f0e25b421bcd3401ee2d44468810650103a1e9543794c"
+    },
+    "kaannokset/th/jalkiruoat/vhh-mansikkakakku.md": {
+      "status": "A",
+      "sha256": "7d2934936213abc7823d2f8f58657bc9b5931f2a789b866a5f32f186d6215bca"
+    },
+    "kaannokset/th/jalkiruoat/vhh-mokkapalat.md": {
+      "status": "A",
+      "sha256": "977ab21001c873ba7e7e2d2df8e65f44ba848a151c3526f78ade09602308bdf3"
+    },
+    "kaannokset/th/jalkiruoat/vhh-omenapiirakka.md": {
+      "status": "A",
+      "sha256": "f5d71b0eb1ca0b178e228f743c1ad1b118ac72a759e539e5d977b35928927425"
+    },
+    "kaannokset/th/jalkiruoat/vhh-raparperipiirakka.md": {
+      "status": "A",
+      "sha256": "5f62f3c73b824c165327e803b612ac8741f2468998661435ee2944c07fa41ece"
+    },
+    "kaannokset/th/paaruoat/hernekeitto-savupotkalla.md": {
+      "status": "A",
+      "sha256": "64530e30ed3b552ecc8f8d44b3b99659f29c70e3770339b5ea4c7256edc591ae"
+    },
+    "kaannokset/th/paaruoat/hunaja-sinappikana-kaalilla.md": {
+      "status": "A",
+      "sha256": "7cc67fe930d33dc58bd00f666abfe2216b8b80412b83cf3b468e8e760c6a0ac9"
+    },
+    "kaannokset/th/paaruoat/japanilainen-curry-tofulla.md": {
+      "status": "A",
+      "sha256": "ebb83f74ab1e526bc3db1e0482c26a5a1204a092f76fd1bd13386a7971e52773"
+    },
+    "kaannokset/th/paaruoat/kana-parmesaanipannu-parsakaali.md": {
+      "status": "A",
+      "sha256": "fe0371fedd27c9617a9545fb0006537b49ac9d85d9dd7a899bd9f4e9a1a037a8"
+    },
+    "kaannokset/th/paaruoat/kanaviillokki-kukkakaalilla.md": {
+      "status": "A",
+      "sha256": "613c0ec14396fdad062fc0dee36c20a8e133e49eabfdda7cf20a57544db7008a"
+    },
+    "kaannokset/th/paaruoat/kermainen-kanasienipannu.md": {
+      "status": "A",
+      "sha256": "4a8d58889471dda90bad27186adcb970a2709340f2bff722bb746f100fdc7cda"
+    },
+    "kaannokset/th/paaruoat/nasi-lemak.md": {
+      "status": "A",
+      "sha256": "83103bb8ffa1fb1b8b1eddb72c2775b3908e63b8c7e71c949a6097348960ab40"
+    },
+    "kaannokset/th/paaruoat/tacokulho-nauta-avokado.md": {
+      "status": "A",
+      "sha256": "adbe53a33426136c7f9caa7e93316d1e8131d379846aad30e01a9b9003c056ac"
+    },
+    "kaannokset/th/paaruoat/uunimakkara-sipulipedilla.md": {
+      "status": "A",
+      "sha256": "e7e1eb7a7ce04230b150bd31b1135eba9d35d7dc5f158271304903b18709524f"
+    },
+    "reseptit/aamupalat/indialainen-poha-maapahkinoilla.md": {
+      "status": "M",
+      "sha256": "5fc1ccc4d6c48268325313fa6e5075d9a9bcf5d8f97943758aba6da8ab906dbd"
+    },
+    "reseptit/aamupalat/kaakao-kookos-chia.md": {
+      "status": "M",
+      "sha256": "18f096352da86a56eebc5f14fcbf62918c400a8b1b76521a4c84ddb134358fa9"
+    },
+    "reseptit/aamupalat/kiinalainen-riisipuuro-kananmunalla.md": {
+      "status": "M",
+      "sha256": "0b9b81f1ad1973bba7177df5123fd4fad0efc9975fa529977cd84c12afc9e722"
+    },
+    "reseptit/aamupalat/korealainen-yachaejuk-kasvisjuk.md": {
+      "status": "M",
+      "sha256": "cb8786b238364fff803719f6dcc6ea8c945249fb6b312a56b47b9a7a77f153d9"
+    },
+    "reseptit/aamupalat/kurkku-oliivi-aamiaiskulho.md": {
+      "status": "M",
+      "sha256": "a6808c672e693002702c5bbe96296b9106839866bbaa81e71433eb7535b5038f"
+    },
+    "reseptit/aamupalat/lahi-ita-kikhernejauho-yrttilettu.md": {
+      "status": "M",
+      "sha256": "d1597fdfc474e36a9958edaf1a2fde3b37f25a1895a6356d6df30f9afc00eeb8"
+    },
+    "reseptit/aamupalat/malesialainen-congee-inkivaarilla.md": {
+      "status": "M",
+      "sha256": "4d4a7197991bde1cc03541052c83d45be15f9b9ba81954c539ceaf1b684dcf91"
+    },
+    "reseptit/aamupalat/marjainen-chiavanukas.md": {
+      "status": "M",
+      "sha256": "f8603ab9d3d0d5aff3e4a215da3df5fd30ae59ac881c512fd108878b436fb7dd"
+    },
+    "reseptit/aamupalat/munakasrulla-pinaatti-tuorejuustolla.md": {
+      "status": "M",
+      "sha256": "a612d8075e162818968800c4393a93b693cda16290035342ca189a08bd0f8cfd"
+    },
+    "reseptit/aamupalat/paahdettu-aamiaismunakoiso.md": {
+      "status": "M",
+      "sha256": "84c98cc7638b8229a6170305eed10d32910a45c746b306771966c6d3b4374e91"
+    },
+    "reseptit/aamupalat/pohjoisafrikkalainen-kuskus-aamiaiskulho.md": {
+      "status": "M",
+      "sha256": "0e6c1004975dd002bf42662946bbf15bbbb19f607aaa893a554cce19dbe372f7"
+    },
+    "reseptit/aamupalat/pohjoisafrikkalainen-taatelipuuro-appelsiinilla.md": {
+      "status": "M",
+      "sha256": "8e37b1f3ccd7905d0d0ee68f40dcc7e99f0b62fb8b9255a4cecb837224999a1f"
+    },
+    "reseptit/aamupalat/raejuusto-pesto-kasviskulho.md": {
+      "status": "M",
+      "sha256": "946db111ae676e3f9b34986434f6e87575c4af1066de36f078a18b06f616bb1a"
+    },
+    "reseptit/aamupalat/savulohi-avokadokulho.md": {
+      "status": "M",
+      "sha256": "107b89c5657e76dc24066f590925ef49437ae28238e2871f65b9ed461d3f82d8"
+    },
+    "reseptit/aamupalat/siemengranola-jogurtilla.md": {
+      "status": "M",
+      "sha256": "8100f920ba654edf84b847336d90899c6d6613d01e8dee20af7c913ea7eb474e"
+    },
+    "reseptit/aamupalat/thai-jok-kanalla.md": {
+      "status": "M",
+      "sha256": "9e8476e9aa500c56da7ac439a54cc41d991cec82a1c9e59dfc75352816c858df"
+    },
+    "reseptit/aamupalat/thai-porsasjok.md": {
+      "status": "M",
+      "sha256": "11a68c3326993ecb61b2b04bf80da614c3717edfb12507f377278c02d720e73b"
+    },
+    "reseptit/alkuruoat/goi-cuon.md": {
+      "status": "M",
+      "sha256": "2ac5dff950a37121b81380f4cdc7980e6fb595a8ac6b49ec1afc401b5746dfb7"
+    },
+    "reseptit/jalkiruoat/vhh-juustokakku.md": {
+      "status": "M",
+      "sha256": "a3b484c62fd468d2ef37e679592f089f3f096172317161efb5d818625e9715a7"
+    },
+    "reseptit/jalkiruoat/vhh-mansikkakakku.md": {
+      "status": "M",
+      "sha256": "275587e8131c07fc05497f869d54861f3d4c446139d8693fa5c46ad043927e75"
+    },
+    "reseptit/jalkiruoat/vhh-mokkapalat.md": {
+      "status": "M",
+      "sha256": "b882db07b90c5381945c4655e5c3993889d6b5e38b1449513beed29927226b4e"
+    },
+    "reseptit/jalkiruoat/vhh-omenapiirakka.md": {
+      "status": "M",
+      "sha256": "53541c935cdba02c05594508686ded88c78b8a559d23f041fa7492195c7ef6e9"
+    },
+    "reseptit/jalkiruoat/vhh-raparperipiirakka.md": {
+      "status": "M",
+      "sha256": "e9ec69c8a0da92f6da888936fde52b65e3a0382c351b76d910f4e8ae9dff92a0"
+    },
+    "reseptit/paaruoat/hernekeitto-savupotkalla.md": {
+      "status": "M",
+      "sha256": "6bff45d3ceb0c81c7c29e296c5628245a5fea11aedd6a89f96dae48fb6116378"
+    },
+    "reseptit/paaruoat/hunaja-sinappikana-kaalilla.md": {
+      "status": "M",
+      "sha256": "8d49514be7f1938671f3c9ce074be4674e7f766e9229ac94c1b80a1f6ea1cdbe"
+    },
+    "reseptit/paaruoat/japanilainen-curry-tofulla.md": {
+      "status": "M",
+      "sha256": "c3687678ca5f563200a54578ceec423bb4955abd13e8ca930b39ee3889a232e4"
+    },
+    "reseptit/paaruoat/kana-parmesaanipannu-parsakaali.md": {
+      "status": "M",
+      "sha256": "b944bdb86c952ac1cc89f4f4a4571d048895553fb9af9dded9329c4dde3c75bd"
+    },
+    "reseptit/paaruoat/kanaviillokki-kukkakaalilla.md": {
+      "status": "M",
+      "sha256": "ad8261f25febf41bf71110f85cd3ab1f89b709a1f2d9a9f316e60867254020a9"
+    },
+    "reseptit/paaruoat/kermainen-kanasienipannu.md": {
+      "status": "M",
+      "sha256": "b495a67762f95a76bd5b06ca42be47244cdfe7bc95d31789fd0a91284ace38fe"
+    },
+    "reseptit/paaruoat/nasi-lemak.md": {
+      "status": "M",
+      "sha256": "1dc92af8929f09f1e7798bb846f61b43d083f6104a6dd07b36819f636f9beed1"
+    },
+    "reseptit/paaruoat/tacokulho-nauta-avokado.md": {
+      "status": "M",
+      "sha256": "f6ada74011e561cbad5d99cb691b66770ed4287b1ef92ccf67184680d7ccda55"
+    },
+    "reseptit/paaruoat/uunimakkara-sipulipedilla.md": {
+      "status": "M",
+      "sha256": "d2705895936c37657fe45ac18e168b4e8eb3252def668e2bf1208d1680ece37e"
+    }
+  }
+}
