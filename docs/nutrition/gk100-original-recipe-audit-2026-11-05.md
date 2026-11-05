@@ -22,6 +22,17 @@ Muiden haarojen sisältöä ei integroitu. Työpuu ja haara ovat erilliset:
 `D:/Projects/tmp/reseptit-gk100-original-recipe-priority`,
 `codex/gk100-original-recipe-priority`. PR #285:n ja rescue-ajon työpuihin ei kirjoitettu.
 
+## Tarkistusten jälkimerkintä 5.11.2026
+
+Tämä auditointi säilyttää #282:n jälkeisen, päivätyn laskentasnapshotin.
+PR #286:n aiempi CI-ajo #42013018190 epäonnistui ennen #287:n
+historiallisten kookosmaito-HOLD-regressiotestien korjausta. #287 yhdistettiin
+mainiin commitissa `121fab51877bb80311be5b11bbfe9861ab503c7a`.
+#284:n jälkeisen mainin CI-ajo #42016063729 läpäisi. Tämä tieto ei
+korvaa auditin lähde- ja syötetarkisteita eikä muuta sen 15 ehdokkaan
+sisältöpäätöksiä. Tämä dokumenttipäivitys ei aktivoi GK-laskentaa tai
+muuta julkaistuja tuloksia.
+
 ## 15 aiemman päätösehdokkaan uudelleenarvio
 
 **ORIGINAL_OK 0, VARIANT_ONLY 14, NO_RELIABLE_GK 1,
