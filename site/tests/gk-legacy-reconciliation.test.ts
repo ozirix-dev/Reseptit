@@ -12,6 +12,7 @@ const root=fileURLToPath(new URL('../../',import.meta.url));
 const read=(p:string)=>readFileSync(new URL('../../'+p,import.meta.url),'utf8');
 const json=(p:string)=>JSON.parse(read(p));
 const sha=(v:unknown)=>createHash('sha256').update(JSON.stringify(v)).digest('hex');
+const lf=(v:any):any=>typeof v==='string'?v.replaceAll('\r\n','\n'):Array.isArray(v)?v.map(lf):v&&typeof v==='object'?Object.fromEntries(Object.entries(v).map(([k,x])=>[k,lf(x)])):v;
 const before=json('docs/nutrition/gk-legacy-reconciliation/baseline.json');
 const report=json('tmp/nutrition/glycemic-load-pilot.json');
 
@@ -31,7 +32,7 @@ test('live326 allow only the independently verified AFCD result deltas; every87 
  }
  assert.equal(report.gkOnlyVariants.length,87);
  for(const v of report.gkOnlyVariants)assert.equal(sha(v),before.variantHashes[v.recipeId+'/'+v.versionId],v.recipeId);
- assert.equal(sha(json('tmp/nutrition/audit.json').inventory),before.macroInventorySha256);
+ assert.equal(sha(lf(json('tmp/nutrition/audit.json').inventory)),before.macroInventorySha256);
  assert.equal(sha(report.giSourcePolicy),before.currentSourcePolicySha256);
  assert.equal(sha(report.giSourceCatalog),before.currentSourceCatalogSha256);
  assert.deepEqual(report.calculationInputMismatches,[]);
@@ -66,8 +67,13 @@ test('current-main133/226 candidates preserve production input, approved EHOLD r
  const inputText=read('docs/nutrition/glycemic-load-pilot-input.json');
  const review=prepareLegacyGkCandidates(root);
  const manifest=json('docs/nutrition/gk-legacy-reconciliation/candidates.json');
- assert.doesNotThrow(()=>verifyLegacyCandidateInput(inputText.replaceAll('\r\n','\n').replaceAll('\n','\r\n'),manifest.inputFileLfSha256));
- assert.throws(()=>verifyLegacyCandidateInput(inputText+' ',manifest.inputFileLfSha256),/Current input changed/);
+ assert.doesNotThrow(()=>verifyLegacyCandidateInput(inputText.replaceAll('\r\n','\n').replaceAll('\n','\r\n'),manifest.recipeSnapshotsSha256));
+ const stale=JSON.parse(inputText);stale.recipes.find((r:any)=>r.recipeId==='baozi').ingredients[0].grams+=1;
+ assert.throws(()=>verifyLegacyCandidateInput(JSON.stringify(stale),manifest.recipeSnapshotsSha256),/Current input changed/);
+ const unrelated=JSON.parse(inputText);unrelated.recipes.find((r:any)=>!Object.hasOwn(manifest.recipeSnapshotsSha256,r.recipeId)).ingredients[0].grams=123;
+ assert.doesNotThrow(()=>verifyLegacyCandidateInput(JSON.stringify(unrelated),manifest.recipeSnapshotsSha256));
+ assert.equal(sha(lf({notes:'a\r\nb',value:3})),sha(lf({notes:'a\nb',value:3})));
+ assert.notEqual(sha(lf({notes:'a\nb',value:3})),sha(lf({notes:'a\nb',value:4})));
  assert.equal(review.publicationAuthorized,false);assert.equal(review.sourceApprovalGranted,false);
  assert.equal(review.candidates.length,6);
  assert.equal(read('docs/nutrition/glycemic-load-pilot-input.json'),inputText);

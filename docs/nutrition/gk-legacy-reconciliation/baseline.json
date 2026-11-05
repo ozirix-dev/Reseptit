@@ -439,7 +439,7 @@
     "meheva-suklaakakku/gk-operation80-review-d033681b8541": "d8449b0bc738083a068d5a65c67d5f724f7a1085014a713c3099ea9981c12a30",
     "tangyuan/gk-operation80-review-580ea6796950": "d1c7df2bac0613aea51316d284adeeedaf465dda3a865debad77d25bcc815306"
   },
-  "macroInventorySha256": "170254fad1f2a0095d7b648ee9f00ccd60a003794fb263a765f361cfa2f53c70",
+  "macroInventorySha256": "1ae482582f9abb7e5105ee5ad5ce8308bc8fa6031dc85a84cd397722fe6a2fa9",
   "currentSourcePolicySha256": "1df642ab2441e6df2de8423933b050973bf9719e36cf43fcff9365e09aed7b47",
   "currentSourceCatalogSha256": "7f5b0a5cbe33bbfc823a12dda996efd679d9d902d041a4b5a057ab1cb79a548a",
   "expectedResultDeltas": {
@@ -507,5 +507,6 @@
         "after": 0.26392499999999997
       }
     ]
-  }
+  },
+  "macroInventoryNormalization": "CRLF_TO_LF_STRINGS_ONLY"
 }

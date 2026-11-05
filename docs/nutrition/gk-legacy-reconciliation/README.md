@@ -11,7 +11,7 @@ Vertailupohja on `081ba2c95f9243c1ed72206073160f9e64992e96`. Tämä on yksi koot
 
 ## Aktiivinen korjaus ja arvosuoja
 
-`baseline.json` sitoo kaikki 326 aiempaa tulosobjektia, 87 täyttä GK-versiota sekä makroinventaarion. Ainoat sallitut aktiivisten tulosten erot on lueteltu kenttäkohtaisesti kahdelle #182:n reseptille. Muut 324 täyttä tulosobjektia, kaikki 87 versiota ja 326 makropakettia säilyvät identtisinä. GI-rekisteri, laskentamoottori, reseptitekstit, käännösten SHA-snapshotit ja hyväksyntäkuitit säilyvät.
+`baseline.json` sitoo kaikki 326 aiempaa tulosobjektia, 87 täyttä GK-versiota sekä makroinventaarion. Ainoat sallitut aktiivisten tulosten erot on lueteltu kenttäkohtaisesti kahdelle #182:n reseptille. Muut 324 täyttä tulosobjektia, kaikki 87 versiota ja 326 makropakettia säilyvät identtisinä. Makroinventaarion muistitekstien CRLF/LF-rivinvaihdot normalisoidaan vertailussa LF:ksi; kaikki kentät ja arvot pysyvät mukana. GI-rekisteri, laskentamoottori, reseptitekstit, käännösten SHA-snapshotit ja hyväksyntäkuitit säilyvät.
 
 Viisi curry-/kimchiversiota sitoi koko food-records.json-tiedoston tarkisteen, vaikka niiden omat hyväksytyt koostumusluvut eivät käytä kolmea korjattavaa tietuetta. Yhteensopivuussovitin sallii vain alkuperäisen ja täsmällisen korjatun tiedostoversion. Kolmen kentän palautus tuottaa alkuperäisen SHA-256:n. Osittainen korjaus, muu lähdemuutos, väärä tiedosto ja tuntematon odotettu hash estetään. Alkuperäisiä hyväksyntöjä ei kirjoiteta uudelleen.
 
@@ -19,7 +19,7 @@ Vanhojen julkaisuerien testit käyttävät omaa muuttumatonta lähdeversiotaan. 
 
 ## Ehdokkaiden toistaminen
 
-`candidates.json` sisältää 12 täsmäpatchia ja jokaisen alkuperäisen ehdotuksen käsittelypäätöksen. `site/scripts/legacy-gk-corrections.ts` tarkistaa nykyisen syötetiedoston LF-SHA:n ja muodostaa ehdokkaat muistissa. Se ei kirjoita syötteitä, julkaisutietoja, sidoksia eikä hyväksyntöjä. Syötteen muuttuminen estää vanhojen patchien käyttämisen.
+`candidates.json` sisältää 12 täsmäpatchia ja jokaisen alkuperäisen ehdotuksen käsittelypäätöksen. `site/scripts/legacy-gk-corrections.ts` tarkistaa kuuden asianomaisen reseptiobjektin SHA:t ja muodostaa ehdokkaat muistissa. Se ei kirjoita syötteitä, julkaisutietoja, sidoksia eikä hyväksyntöjä. Asianomaisen reseptin muuttuminen estää vanhojen patchien käyttämisen; muiden reseptien nopeusajot eivät pysähdy tämän sidoksen vuoksi. Koko syötetiedoston vanha LF-SHA säilyy vain historiaviitteenä.
 
 Toista repon `site`-hakemistossa: `npx tsx scripts/legacy-gk-corrections.ts`. Tuloksen `publicationAuthorized` ja `sourceApprovalGranted` ovat false. Esimerkiksi korjattu bulgogi ja masala dosa voivat saada raakaa laskentatulosta, mutta niiden nykyinen julkinen GK pysyy lähdepuutteellisena. Laskennallinen tulos ei ole lähde- tai julkaisuhyväksyntä.
 

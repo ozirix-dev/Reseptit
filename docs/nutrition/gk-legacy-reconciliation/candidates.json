@@ -1,6 +1,5 @@
 {
   "baseMain": "081ba2c95f9243c1ed72206073160f9e64992e96",
-  "inputFileLfSha256": "fd6f066050ac8b11ef651bacc8af86ba395116586c354f436846b5372dde152b",
   "publicationAuthorized": false,
   "sourceApprovalGranted": false,
   "productionInputModified": false,
@@ -409,5 +408,14 @@
     }
   ],
   "sourceReview133": "https://github.com/ozirix-dev/Reseptit/blob/020b665582f4f1ec54e56ec978581e424adc6ace/docs/nutrition/gk-r2-source-review.json",
-  "scope": "Prepared current-main candidate patches only. No source/GI/recipe publication approval is minted. Preserve current approved recipe variants and all current GI bindings until individual applicability decisions."
+  "scope": "Prepared current-main candidate patches only. No source/GI/recipe publication approval is minted. Preserve current approved recipe variants and all current GI bindings until individual applicability decisions.",
+  "inputFileLfSha256HistoricalReference": "fd6f066050ac8b11ef651bacc8af86ba395116586c354f436846b5372dde152b",
+  "recipeSnapshotsSha256": {
+    "bulgogi": "3992da0a46265f7bdde8817005dcf76e8d4656ab79ea7239b87f0cda8085cc61",
+    "baozi": "92ce97e3410b7b9a0b5bec4ba442e6cfedd8a1f308c0eb0ec130a9120f6d08de",
+    "yangzhou-paistettu-riisi": "c792edf540285a531737f2a35b219e231fc01c8c105f2fb3bc2036a2d9abeb6c",
+    "koshari": "ff5685dd04ca6307fc69848a3e909916cf6f1a2bd75d56932a5054fca84ebc52",
+    "masala-dosa": "3db0c7475b3bc018faebaf5d62490db4a3519293697f899601fce820b71bff9c",
+    "meksikolainen-paputostada-aamupalaksi": "eec177de4c8655b5d5165bb0500b5c688f7cffa300e6db916b73017247430408"
+  }
 }
