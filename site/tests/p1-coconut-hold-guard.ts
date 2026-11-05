@@ -6,7 +6,7 @@ import path from "node:path";
 
 /**
  * Historical GK80 snapshots predate the two P1 coconut-milk HOLD fixes (#282).
- * Never replace frozen release evidence. Only these exact two live result objects
+ * Do not change historical counters or rewrite snapshots. Only these exact two live result objects
  * may differ; every other historical result must retain its original hash.
  */
 export const p1CoconutHoldHashes: Readonly<Record<string, string>> = {
