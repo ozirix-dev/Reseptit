@@ -291,6 +291,7 @@ export function prepareRelease(checked: Checked, decisions: Decisions, coverage:
       if (!variant) return fail('NO_RELEASE_VARIANT_FOR_REVIEW_ONLY_METHOD');
       if (!sha.test(row.originalSha256) || textHash(readMain(row.originalPath)) !== row.originalSha256) fail('MAIN_ORIGINAL_CHANGED');
       if (variant.studyServing) {
+        if (coverage.studyServingRecipeIds === undefined) fail('MAIN_STUDY_COVERAGE_REQUIRED');
         if (existingStudyServings.has(row.recipeId)) fail('MAIN_ALREADY_HAS_STUDY_SERVING');
       } else if (existing.has(row.recipeId)) fail('MAIN_ALREADY_HAS_NUMERIC_GK');
       for (const [file, expected] of Object.entries({ ...row.supportFiles, [row.packetPath]: row.candidateSha256 })) {

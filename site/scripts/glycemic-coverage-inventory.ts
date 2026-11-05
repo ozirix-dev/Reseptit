@@ -506,7 +506,7 @@ const reportLines = [
     return `| ${row.recipeId} | ${row.otherBlockingCategoriesAtReviewStart.join(", ") || "none"} | ${row.batch2AOutcome} | ${row.currentStatus} | ${inputIngredients.replaceAll("|", "\\|")} |`;
   }),
   "",
-  ...(versionCoverage ? ["## GK-only-versiot", "", `Numeerinen GK vähintään yhdelle täsmälliselle versiolle: ${versionCoverage.numericRecipes}/${versionCoverage.total}; alkuperäisversioiden tuloksia ${versionCoverage.originalNumeric}, uutta A:ta ${versionCoverage.additionalA}, B:tä ${versionCoverage.additionalB}, pelkkiä luokkia ${versionCoverage.classOnly}. Kukin resepti lasketaan kerran. Erillisiä tutkimusannosvertailuja ${versionCoverage.studyServingRecipeIds?.length ?? 0}. Alkuperäisversioiden ja makrojen inventaario säilyy erillisenä.`, ""] : []),
+  ...(versionCoverage ? ["## GK-only-versiot", "", `Numeerinen GK kotireseptille tai sen täsmälliselle versiolle: ${versionCoverage.numericRecipes}/${versionCoverage.total}; alkuperäisversioiden tuloksia ${versionCoverage.originalNumeric}, uutta A:ta ${versionCoverage.additionalA}, B:tä ${versionCoverage.additionalB}, pelkkiä luokkia ${versionCoverage.classOnly}. Kukin resepti lasketaan kerran. Erillisiä tutkimusannosvertailuja ${versionCoverage.studyServingRecipeIds?.length ?? 0}. Alkuperäisversioiden ja makrojen inventaario säilyy erillisenä.`, ""] : []),
   "## Nykyiset keskeneräiset alkuperäisversiot",
   "",
   "JSON-inventaario sisältää jokaiselle nykyiselle reseptille reseptin, GK-syötteen ja lähdetietueiden fingerprintit, ravintoarvotilan, kaikki estot, puuttuvat ruoka-/GI-tietueet, massa-/valmistustilaongelmat sekä seuraavan työvaiheen. Tämä taulukko listaa keskeneräiset ensisijaisen esteen mukaan.",

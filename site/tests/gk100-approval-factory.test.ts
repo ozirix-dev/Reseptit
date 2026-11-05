@@ -104,7 +104,9 @@ test('a sealed study serving keeps its scope and quantities beside the GL estima
   entry.studyServing = true;
   assert.throws(() => applyDecisions(checked, approve(unmarked, entry.recipeId)), /INVALID_OR_STALE_DECISIONS/);
   const decisions = approve(checked, entry.recipeId);
-  const plan = prepareRelease(checked, decisions, coverage, base, read);
+  const legacyCoverage = prepareRelease(checked, decisions, coverage, base, read);
+  assert.equal(legacyCoverage.rows[0].reason, 'MAIN_STUDY_COVERAGE_REQUIRED');
+  const plan = prepareRelease(checked, decisions, { ...coverage, studyServingRecipeIds: [] }, base, read);
   const bundle = makeReleaseBundle(checked, batch, decisions, plan);
   const authorize = (bundleSha256: string) => ({
     schemaVersion: 1 as const, bundleSha256, evidence: 'fixture authorization',
@@ -118,7 +120,7 @@ test('a sealed study serving keeps its scope and quantities beside the GL estima
   const forged = { ...overstated, bundleSha256: fingerprint(overstated) };
   assert.throws(() => verifyReleaseBundle(forged, authorize(forged.bundleSha256), read), /GK100_RELEASE_COVERAGE_DELTA/);
 
-  const existingRecipe = { ...coverage, numericRecipeIds: [entry.recipeId] };
+  const existingRecipe = { ...coverage, numericRecipeIds: [entry.recipeId], studyServingRecipeIds: [] };
   const existingStudy = { ...coverage, studyServingRecipeIds: [entry.recipeId] };
   assert.equal(prepareRelease(checked, decisions, existingRecipe, base, read).rows[0].state, 'RELEASE_READY');
   assert.equal(prepareRelease(checked, decisions, existingStudy, base, read).rows[0].reason, 'MAIN_ALREADY_HAS_STUDY_SERVING');
