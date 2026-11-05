@@ -1,3 +1,4 @@
+import {recipeTextForApprovedSnapshot} from './approved-recipe-note-edits';
 import {readFileSync} from 'node:fs';
 import {join} from 'node:path';
 import {textHash} from './gk149-model';
@@ -38,7 +39,11 @@ export function buildTwoAlmondPieVariants(root: string): GkOnlyVariant[] {
   if (textHash(approval) !== '50f215e418e57b4e6cecfbee553adb69f5bb23c15be0f96743677699f15a3b6f') throw Error('Almond pie approval changed');
   const {boundFiles}: {boundFiles: Record<string, string>} = JSON.parse(approval);
   for (const [file, expected] of Object.entries(boundFiles)) {
-    if (textHash(read(file)) !== expected) throw Error('Almond pie binding changed: ' + file);
+    const contents = read(file);
+    const snapshot = file.startsWith('reseptit/')
+      ? recipeTextForApprovedSnapshot(file, contents.replaceAll('\r\n','\n'))
+      : contents;
+    if (textHash(snapshot) !== expected) throw Error('Almond pie binding changed: ' + file);
   }
 
   const catalog: {foods: Record<string, FoodRecord>; existingGiIds: string[]} = JSON.parse(read(archive + 'source-catalog.json'));

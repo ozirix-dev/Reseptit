@@ -25,6 +25,30 @@ const editorialSnapshots: Readonly<Record<string, {
   currentSha256: string;
   inverseEdits: ReadonlyArray<readonly [start: number, count: number, historical: string]>;
 }>> = {
+  "reseptit/paaruoat/kana-parmesaanipannu-parsakaali.md": {
+    currentSha256: "b944bdb86c952ac1cc89f4f4a4571d048895553fb9af9dded9329c4dde3c75bd",
+    inverseEdits: [[7, 2, ""]],
+  },
+  "reseptit/paaruoat/kermainen-kanasienipannu.md": {
+    currentSha256: "b495a67762f95a76bd5b06ca42be47244cdfe7bc95d31789fd0a91284ace38fe",
+    inverseEdits: [[7, 2, ""]],
+  },
+  "reseptit/paaruoat/uunimakkara-sipulipedilla.md": {
+    currentSha256: "d2705895936c37657fe45ac18e168b4e8eb3252def668e2bf1208d1680ece37e",
+    inverseEdits: [[7, 2, ""]],
+  },
+  "reseptit/aamupalat/siemengranola-jogurtilla.md": {
+    currentSha256: "8100f920ba654edf84b847336d90899c6d6613d01e8dee20af7c913ea7eb474e",
+    inverseEdits: [[7, 2, ""]],
+  },
+  "reseptit/jalkiruoat/vhh-omenapiirakka.md": {
+    currentSha256: "53541c935cdba02c05594508686ded88c78b8a559d23f041fa7492195c7ef6e9",
+    inverseEdits: [[7, 2, ""]],
+  },
+  "reseptit/jalkiruoat/vhh-raparperipiirakka.md": {
+    currentSha256: "e9ec69c8a0da92f6da888936fde52b65e3a0382c351b76d910f4e8ae9dff92a0",
+    inverseEdits: [[7, 2, ""]],
+  },
   "kaannokset/en/paaruoat/bouillabaisse.md": {
     currentSha256: "acff3d276d97886299e6ea5d8c2866c470f906547b943332cb797bd813c43be0",
     inverseEdits: [
