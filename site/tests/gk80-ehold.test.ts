@@ -1,4 +1,4 @@
-import {isP1CoconutHold,assertP1CoconutHold,assertOnlyP1CoconutInputChanges} from './p1-coconut-hold-guard';
+import {isP1CoconutHold,assertP1CoconutHold} from './p1-coconut-hold-guard';
 import {restoreBeforeCouscous} from './restore-pre-ehold';
 import test from 'node:test';
 import assert from 'node:assert/strict';
