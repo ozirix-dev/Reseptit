@@ -1,5 +1,57 @@
 # Reseptit PR-jonon siivous V2 5.11.2026
 
+## Vanhojen PR:ien arvopalautuksen tarkistus uuden mainin päälle
+
+Käyttäjä täsmensi ChatGPT:n huomautuksen koskevan vanhan PR:n riskiä palauttaa vanhentuneita GK-/lähdearvoja. Tarkistus tehtiin todellisella read-only kolmitieyhdistämisen esikatselulla, ei vertaamalla vanhaa PR-puuta suoraan mainiin tai kopioimalla vanhoja tiedostoja.
+
+Main muuttui tarkistuksen aikana muualla tehtyjen #280:n, #278:n ja #116:n mergejen kautta. Viimeinen tarkistettu main on **`8119417edaf0b3108effee41f16a3a24737feb09`**. Kaikki **23** tämän tilannekuvan avointa PR:ää tarkistettiin sitä vasten. Tässä istunnossa ei yhdistetty PR:iä tai haaroja eikä tehty deployta. Alla oleva #182/#255-vaikutusvertailu säilyy aiempaan mainiin sidottuna lähde- ja aritmetiikkatositteena; tämä uudempi esikatselu täydentää sitä.
+
+**Jo yhdistetyt #280 ja #278 säilyvät:** nyky-mainin koko Git-puu poikkeaa testatusta yhteispuusta `c80de8f4a675bd967dc7dece209f39c59d1c60ea` vain package.json- ja package-lock.json-tiedostojen riippuvuuspäivityksillä. Kaikki testikomennot täsmäävät yhteispuuhun. #116 ei siis palauttanut vanhaa testi- tai laskentakoodia eikä vanhoja resepti-/ravintoaineistoja. Aiemmin todennetut 326 GK-tulosta, 87 versiota ja reseptisnapshotit kuuluvat tähän säilyneeseen sisältöön; uusia numeerisia tuloksia ei arvioitu pelkän riippuvuuseron perusteella uudelleen.
+
+| Vanhat PR:t | Nyky-mainin esikatselun havainto | Suoja ennen jatkoa |
+| --- | --- | --- |
+| #133 | Konflikti suoraan glycemic-load-pilot-input.json- ja glycemic-load-recipe-bindings.json-tiedostoissa sekä GK-testissä. | Vanhaa syöte- tai sidostiedostoa ei oteta kokonaisena. Tarvittavat reseptikorjaukset erotetaan nyky-mainiin, nykyiset hyväksynnät säilyttäen. |
+| #226 | Konfliktit GK-putkessa ja sivussa; konfliktittomat datahunksit muuttaisivat 19 syötekenttää. Mukana masala dosan peruna-/maustemäppäykset ja paputostadan avokadon GI-sidos. | Määräoletukset ja lähdemäppäykset katselmoidaan nykyisiä syötteitä vasten. Vanha CI ei kata nykyistä putkea. |
+| #182 | Nyt myös tekstikonflikti gk80-operation146-testissä. Datapuoli muuttaisi täsmälleen kolme CHO-arvoa ja kaksi evidenssihashia; persikan GK muuttuisi tarkoituksellisesti. | Arvojen muutospäätös, nykyisten viiden version lähdesinetti-integraatio ja tuoreet regressiot. Vanhaa testipalautinta ei kopioida nykyisten snapshot-suojien päälle. |
+| #227, #210 | Konflikteja GK-putkessa/lataajassa ja julkaisuregressioissa. | Nykyiset julkaistut versiot ja niiden testit säilytetään; vain erikseen päätetyt uudet/muuttuvat versiot integroidaan. |
+| #119, #229 | Konflikteja GK-putkessa, paneelissa tai pakettikomennossa. | Käyttöliittymätyö erotetaan nykyisistä laskenta-, lähde- ja testisidoksista. |
+| #231 | Konfliktit AGENTS.md:ssä ja nykyisessä CI-valitsimessa sekä sen testissä. | Nykyisiä guard-, katselmointi- tai CI-suojia ei palauteta vanhaan versioon. |
+| #100 | Pakettikonflikti. | Käyttäjän ohjeella sivussa; ei toteutustoimia. |
+
+14 konfliktitonta esikatselua eivät muuta aktiivisia ravintoaine-, GI-, laskentasyöte-, tarkistesidos- tai makroevidenssi-JSONeja. Näissä ei havaittu automaattista vanhan data-arvon palautusta. Kaikissa 23 esikatselupuussa nykyinen nutrition-model.ts ja käännösten Codex-tarkistusrekisteri säilyivät; tämä ei hyväksy konfliktien myöhempää käsiratkaisua tai muuta koodia ilman regressioita. Yhdeksän PR:n konfliktit on ratkaistava rajattuina nyky-mainin muutoksina.
+
+PR-kohtaiset HEADit, esikatselupuut, konfliktit, muuttuvat operatiiviset JSON-avaimet ja nykyisen normalisoinnin/rekisterin säilymisvertailu ovat JSON-raportin `oldPrValueProtectionAudit`-osassa. **Nyky-main on aina vertailupohja; vanhan PR:n vihreä CI tai vanha kokonaistiedosto ei ole lupa korvata sen nykyistä vastinetta.**
+
+## #182:n lähde- ja vaikutuskatselmointi sekä #255:n syväkatselmointi
+
+Main on tarkistuksessa `0fa20528ffe0ca075c9e0fb54c2b388cd7d959fe`. PR #182 HEAD `924a827b515f4d4e27d70389837e22f904d38c1f` ja #255 HEAD `fa411bf1cb620dfd7db97730cfeb5b6fb5ca738d` säilyvät muuttamattomina. Molempien jatkoluokka on REVIEW. Katselmointi ei hyväksy sisältöä, lähdesoveltuvuutta tai julkaisua.
+
+### #182: lähdekorjaus on todennettu, arvo- ja integraatiopäätös avoinna
+
+Virallinen [FSANZ AFCD Release 3 -työkirja](https://www.foodstandards.gov.au/sites/default/files/2025-12/AFCD%20Release%203%20-%20Nutrient%20profiles.xlsx) ladattiin uudelleen. SHA-256 on `14cb3e73dbf58987b440e6299624c0fefd7a4e61591fc1f753995d9534e0efc9`, sama kuin alkuperäisessä PR:ssä. Sheet `All solids & liquids per 100 g`, sarake AM = ilman sokerialkoholeja, AN = sokerialkoholit mukana. Kaikki kolme tietuetunnusta ja soluarvot sekä alkuperäinen Decimal-tarkistin läpäisivät.
+
+| Tietue | Rivi | AN → AM, g/100 g | Nyky-mainin vaikutus |
+| --- | ---: | ---: | --- |
+| F006573, persikka | 678 | 8 → 7,7 | Ricotta-persikkakulho: tarkka GK 4,0836 → 3,96885, tallennettu piste 4,08 → 3,97; muutos −0,11475. Kokonaislukuteksti pysyisi noin 4:ssä. |
+| F007619, vadelma | 712 | 7 → 6,9 | Pellavapuuron osarivi muuttuu, kokonais-GK pysyy lähdepuutteellisena. |
+| F002384, juuriselleri | 1425 | 5 → 2,8 | Ei nykyisiä GK-syöteriippuvuuksia. |
+
+Kaikki 326 raakalaskentatulosta toistettiin nykyisellä laskentafunktiolla ennen kolmen kentän in-memory-korjausta ja sen jälkeen: kaksi yllä mainittua tulosobjektia muuttui ja muut 324 säilyivät täsmälleen. Kaikki 326 makroinventaarion tietuetta, tilamäärät, pilotit ja ruokavalioluokat säilyivät; kahden makroevidenssin vadelmakopiot ovat jo arvossa 6,9.
+
+Nyky-mainin 87 GK-only-version lataajat tarkistettiin erikseen eristetyssä simulaatiossa. **82 version täydet objektit säilyivät ennallaan, viisi estyi**: `buildThreeCurryVariants` (kolme curryä) ja `buildPanangKimchiVariants` (Panang ja tofu-kimchi). Molemmat sitovat koko food-records.json-tarkisteen ja hylkäävät sen muutoksen. Täysi GK-auditointi pysähtyy samaan Panang/kimchi-tarkisteporttiin. Alkuperäisen PR:n vanha vihreä CI ei siis todista nyky-mainin integraation valmiutta. Portteja tai alkuperäisiä hyväksyntäkuitteja ei ohitettu eikä muutettu.
+
+**Omistajan päätös:** hyväksytäänkö juuri nämä kolme CHO-kenttäkorjausta ja persikkakulhon numeerinen muutos 4,08 → 3,97? Nykyinen arvojen säilyttämisraja estää käyttöönoton. Päätöksen jälkeen tarvitaan viiden estyneen version rajattu lähdeyhteensopivuus ja täydellinen regressio. Tämä ei vahvista AFCD:n with/without-erotusta polyolien kokonaismääräksi tai muuta polyolilippujen hyväksyntää. Simulaation kaksi versionoitua datatiedostoa palautettiin täsmälleen mainin tavuihin; simulaatiohaaraa ei pushettu.
+
+### #255: laskenta ja turvaportit toimivat, soveltuvuus jää avoimeksi
+
+Nyky-mainin Approval Factory tarkisti alkuperäisen #255-commitin Bánh xèo -paketin. Tulos on technical PASS, tila REVIEW_REQUIRED ja syy RISK_MATCHED_REVIEW_REQUIRED; publicationAuthorized on false. Riippumaton Decimal toistaa pisteen 31,76344 ja pois jätetyn idun CHO:n 0,44 g/annos. Kolme negatiivista kontrollia läpäisivät: sidotun katselmointitekstin muuttaminen ja itumäärän muuttaminen estävät paketin; pelkkä OWNER_DECISION-luokkamerkintä ilman vaadittua syväkatselmointia ei edistä tilaa.
+
+MEXTin [06292, keitetty mungpavunitu](https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=6_06292_7&MODE=7) ilmoittaa saatavan CHO:n massasummaksi sulkeistetun arvion (1,1) g/100 g. 80 g kahdelle tuottaa 0,44 g/annos. [Tan ym. alkuperäistutkimus](https://www.cambridge.org/core/journals/british-journal-of-nutrition/article/glycaemic-index-and-insulinaemic-index-of-commercially-available-breakfast-and-snack-foods-in-an-asian-population/5AFFF9E50ABF78E226C19676CCEB7A62), taulukot 2 ja 4, tukee riisidosan GI:tä 76 (SEM 5), n=19, 50 g saatavaa CHO:ta. Koetaikina sisälsi riisin lisäksi vehnää ja uradia, ja se paistettiin gheessä. Tutkimus ei mittaa Bánh xèota. Soveltuvuuden siirto kookosmaitoa sisältävään rapeaan taikinaan on erillinen ratkaisematon katselmointipäätös; sen jälkeen tarvitaan omistajan päätös 80 g:n kypsäpunnituksesta. Tässä katselmoinnissa ei myönnetty uutta soveltuvuus- tai sisältöhyväksyntää.
+
+Recovery-CLI on tarkoituksella lukittu vanhaan auditointicommitiin `69182c5d749a91b50a76189a5475a8e2f50203f4` ja kieltäytyy nyky-mainin auditointipuusta. Sen 235 reseptin tilannekuvaa ei käytetä nykyisenä työjonona. Smart Review 2.0 on tässä PR:ssä sääntöehdotus ja historiallinen vertailufunktio, ei nyky-Factoryn porttien aktivointi. Yksilölliset tutkimuslähteet ja Bánh xèo -paketti säilytetään; live-inventaarion toteutuksen suhde toisen ajon uusiin työjonotyökaluihin on täsmäytettävä ennen yhdistämistä. Toisen ajon haaroihin ei kirjoitettu.
+
+Lähde- ja kontrollitodisteiden tarkisteet, vaikutusluvut, kaikki 14 varianttilataajan tulokset sekä Factoryn kontrollien tulokset ovat JSON-raportin `sourceAndRecoveryReview`-osassa. Uutta toteutus-PR:ää, mergeä, deployta tai hyväksyttyjen tuotantoarvojen muutosta ei tehty. Alla olevat tilannekuvat säilyvät historiallisina tositteina.
+
 ## #280:n ja #278:n integraatioristiriidat ratkaistu
 
 Käyttäjän jatko-ohjeen mukaisesti molemmat tekstiristiriidat poistettiin pienellä #280:n muutoksella. Tarkistesidosten kaksi regressiota suoritetaan nyt olemassa olevan `nutrition-model.test.ts`-testipolun kautta, joten #280:n `package.json` palautui täsmälleen mainin tasolle. Molemmat testit suoritetaan edelleen normaalissa npm test- ja test:nutrition-ajossa. `gk-next-four.ts`:n uusi import siirrettiin eri kohtaan kuin #278:n snapshot-import; molempien erilliset tarkisteportit säilyvät.

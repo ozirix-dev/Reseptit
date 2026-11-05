@@ -11779,7 +11779,7 @@
         ],
         "title": "GK100 Evidence Recovery & Smart Review V2",
         "url": "https://github.com/ozirix-dev/Reseptit/pull/255",
-        "classification": "KEEP_ACTIVE",
+        "classification": "REVIEW",
         "deferred": false,
         "reserve": false,
         "historyReference": false
@@ -12837,5 +12837,1007 @@
     "mainMerge": false,
     "deploy": false,
     "branchMergePerformed": false
+  },
+  "sourceAndRecoveryReview": {
+    "mainSha": "0fa20528ffe0ca075c9e0fb54c2b388cd7d959fe",
+    "pr182": {
+      "head": "924a827b515f4d4e27d70389837e22f904d38c1f",
+      "classification": "REVIEW",
+      "sourceWorkbookUrl": "https://www.foodstandards.gov.au/sites/default/files/2025-12/AFCD%20Release%203%20-%20Nutrient%20profiles.xlsx",
+      "sourceWorkbookSha256": "14cb3e73dbf58987b440e6299624c0fefd7a4e61591fc1f753995d9534e0efc9",
+      "sheet": "All solids & liquids per 100 g",
+      "sourceColumns": {
+        "AM": "without sugar alcohols",
+        "AN": "with sugar alcohols"
+      },
+      "fixes": [
+        {
+          "id": "afcd-F006573-release-3",
+          "nativeId": "F006573",
+          "before": 8,
+          "after": 7.7,
+          "source": {
+            "row": 678,
+            "without": 7.7,
+            "with": 8
+          }
+        },
+        {
+          "id": "afcd-F007619-release-3",
+          "nativeId": "F007619",
+          "before": 7,
+          "after": 6.9,
+          "source": {
+            "row": 712,
+            "without": 6.9,
+            "with": 7
+          }
+        },
+        {
+          "id": "afcd-F002384-release-3",
+          "nativeId": "F002384",
+          "before": 5,
+          "after": 2.8,
+          "source": {
+            "row": 1425,
+            "without": 2.8,
+            "with": 5
+          }
+        }
+      ],
+      "sourceVerified": true,
+      "independentDecimal": {
+        "status": "PASS",
+        "sourceRecords": 3,
+        "previousExactGk": "4.0836",
+        "correctedExactGk": "3.96885",
+        "deltaGk": "-0.11475"
+      },
+      "dependencies": {
+        "afcd-F002384-release-3": [],
+        "afcd-F006573-release-3": [
+          "valimerellinen-ricotta-persikkakulho"
+        ],
+        "afcd-F007619-release-3": [
+          "pellava-puuro-pahkinoilla"
+        ]
+      },
+      "unchangedRawRecipeResultObjects": 324,
+      "changedRawRecipeResultObjects": [
+        {
+          "recipeId": "valimerellinen-ricotta-persikkakulho",
+          "beforePoint": 4.08,
+          "afterPoint": 3.97,
+          "beforeExact": 4.083600000000001,
+          "afterExact": 3.96885,
+          "beforeStatus": "CALCULATED",
+          "afterStatus": "CALCULATED"
+        },
+        {
+          "recipeId": "pellava-puuro-pahkinoilla",
+          "beforePoint": null,
+          "afterPoint": null,
+          "beforeExact": null,
+          "afterExact": null,
+          "beforeStatus": "INSUFFICIENT SOURCE DATA",
+          "afterStatus": "INSUFFICIENT SOURCE DATA"
+        }
+      ],
+      "macroInventoryIdentical": 326,
+      "macroCopiesAlreadyCorrect": [
+        {
+          "file": "siemengranola-jogurtilla.json",
+          "foodId": "afcd-F007619-release-3",
+          "carbohydrate": 6.9,
+          "correctSourceValue": 6.9
+        },
+        {
+          "file": "vhh-runebergintortut.json",
+          "foodId": "afcd-F007619-release-3",
+          "carbohydrate": 6.9,
+          "correctSourceValue": 6.9
+        }
+      ],
+      "variantGates": {
+        "checked": 82,
+        "blocked": 5,
+        "total": 87,
+        "findings": [
+          {
+            "loader": "loadAuthorizedGk100Variants",
+            "variants": 36,
+            "status": "UNCHANGED"
+          },
+          {
+            "loader": "buildTwoAlmondPieVariants",
+            "variants": 2,
+            "status": "UNCHANGED"
+          },
+          {
+            "loader": "buildTehoajoVariants",
+            "variants": 1,
+            "status": "UNCHANGED"
+          },
+          {
+            "loader": "buildPohaHoneyMustardVariants",
+            "variants": 2,
+            "status": "UNCHANGED"
+          },
+          {
+            "loader": "buildReviewedGkVariants",
+            "variants": 4,
+            "status": "UNCHANGED"
+          },
+          {
+            "loader": "buildLindstromBrineVariant",
+            "variants": 1,
+            "status": "UNCHANGED"
+          },
+          {
+            "loader": "buildThreeCurryVariants",
+            "variants": [
+              "thai-vihrea-curry-kanalla-vhh",
+              "punainen-kanacurry-vhh",
+              "keltainen-kanacurry-vhh"
+            ],
+            "status": "BLOCKED",
+            "error": "Error: GK80 three curries: native source or engine changed: docs/nutrition/food-records.json"
+          },
+          {
+            "loader": "buildApprovedFourVariants",
+            "variants": 4,
+            "status": "UNCHANGED"
+          },
+          {
+            "loader": "buildApprovedBVariants",
+            "variants": 4,
+            "status": "UNCHANGED"
+          },
+          {
+            "loader": "buildProductAVariants",
+            "variants": 4,
+            "status": "UNCHANGED"
+          },
+          {
+            "loader": "buildBlueberryPieVariant",
+            "variants": 1,
+            "status": "UNCHANGED"
+          },
+          {
+            "loader": "buildPanangKimchiVariants",
+            "variants": [
+              "panang-curry-kanalla-vhh",
+              "korealainen-tofu-kimchi-aamiaiskulho"
+            ],
+            "status": "BLOCKED",
+            "error": "Error: GK80 Panang / kimchi: native source or engine changed: docs/nutrition/food-records.json"
+          },
+          {
+            "loader": "buildGkOnlyVariants",
+            "variants": 16,
+            "status": "UNCHANGED"
+          },
+          {
+            "loader": "buildApprovedSevenVariants",
+            "variants": 7,
+            "status": "UNCHANGED"
+          }
+        ]
+      },
+      "currentMainFullGkAudit": "BLOCKED: native source or engine changed: docs/nutrition/food-records.json; two loaders / five versions",
+      "sourceAndBindingFilesRestoredAfterSimulation": true,
+      "numericChangeAuthorized": false,
+      "nextDecision": "Owner scope decision for the exact three CHO field corrections and peach 4.08 -> 3.97, followed by narrowly reviewed source compatibility and full approved-variant regressions. No claim about total polyol completeness."
+    },
+    "pr255": {
+      "head": "fa411bf1cb620dfd7db97730cfeb5b6fb5ca738d",
+      "classification": "REVIEW",
+      "factoryChecks": [
+        {
+          "case": "real pinned packet",
+          "technical": "PASS",
+          "state": "REVIEW_REQUIRED",
+          "reason": "RISK_MATCHED_REVIEW_REQUIRED"
+        },
+        {
+          "case": "changed bound review",
+          "technical": "FAIL",
+          "state": "BLOCKED",
+          "reason": "GK point binding changed: docs/nutrition/gk100-banh-xeo-cooked-sprouts-review.md"
+        },
+        {
+          "case": "owner-decision label without deep review",
+          "technical": "PASS",
+          "state": "REVIEW_REQUIRED",
+          "reason": "RISK_MATCHED_REVIEW_REQUIRED"
+        },
+        {
+          "case": "unreviewed sprout mass",
+          "technical": "FAIL",
+          "state": "BLOCKED",
+          "reason": "UNKNOWN_OR_STALE_CLASSIFICATION"
+        }
+      ],
+      "independentDecimalPoint": "31.76344",
+      "omittedChoPerServing": "0.44",
+      "sproutEstimateSource": "https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=6_06292_7&MODE=7",
+      "sproutEstimatePer100g": "(1.1) g, MEXT 06292 boiled sprouts; mass sum and monosaccharide-equivalent both 1.1 here",
+      "giSource": "https://www.cambridge.org/core/journals/british-journal-of-nutrition/article/glycaemic-index-and-insulinaemic-index-of-commercially-available-breakfast-and-snack-foods-in-an-asian-population/5AFFF9E50ABF78E226C19676CCEB7A62",
+      "giSourceFacts": {
+        "n": 19,
+        "availableChoTestG": 50,
+        "riceDosaGi": 76,
+        "sem": 5,
+        "table2": "72.8 g premix + 110 g water + 15 g ghee; cook one minute each side; rice/wheat/urad/palm oil/salt",
+        "table4": "GI measured for rice dosa, not banh xeo"
+      },
+      "applicabilityConclusion": "No reviewed bridge establishes transfer from this dosa to the rice/coconut/crisp banh xeo candidate. Keep REVIEW_REQUIRED; no positive applicability or release approval granted. Owner decision on cooked 80 g sprout mass follows source applicability review.",
+      "currentMainOriginalRecipeBindingMatches": true,
+      "recoveryCliPinnedAuditBase": "69182c5d749a91b50a76189a5475a8e2f50203f4",
+      "recoveryCliRejectsCurrentMain": true,
+      "smartReviewScope": "Documented proposal and historical cohort comparison; not activated changes to the current Factory thresholds.",
+      "historicalInventoryNotCurrent": true,
+      "nextAction": "Separate the pinned research/candidate from live inventory tooling. Reconcile reuse with the active throughput work through its owner before any integration."
+    },
+    "authority": {
+      "merge": false,
+      "deploy": false,
+      "newSourceOrContentApproval": false,
+      "productionValuesModified": false
+    },
+    "otherSpeedRun": "Read-only scope check; no branch/worktree writes to the GK100 speed/research session; no parallel CI runs."
+  },
+  "oldPrValueProtectionAudit": {
+    "mainSha": "8119417edaf0b3108effee41f16a3a24737feb09",
+    "openCount": 23,
+    "records": [
+      {
+        "number": 279,
+        "headSha": "1460486677bf6599134c5ea1b78db606e18978cf",
+        "title": "docs(gk100): yhden ajon GK-laskenta + Approval Factory (toteutus myöhemmin)",
+        "mainSha": "8119417edaf0b3108effee41f16a3a24737feb09",
+        "mergeTree": "270bd37cc5b8d0759b70cc1b8eca3a82ecfd6887",
+        "clean": true,
+        "conflicts": [],
+        "changedPaths": [
+          "docs/nutrition/gk100-single-run-orchestration-plan.md"
+        ],
+        "activeDataChanges": [],
+        "recipeSourcePaths": [],
+        "calculationCodePaths": [],
+        "approvedNormalizationPreserved": true,
+        "approvedTranslationRegistryPreserved": true
+      },
+      {
+        "number": 277,
+        "headSha": "34a9187f9e0be1de385f01e71b04af607a0cb879",
+        "title": "docs: PR cleanup V2 – luokittelu ja tutkimushistorian viitteet",
+        "mainSha": "8119417edaf0b3108effee41f16a3a24737feb09",
+        "mergeTree": "fb4ae3428cd59dc49d6fc48d2ef0221769c02a97",
+        "clean": true,
+        "conflicts": [],
+        "changedPaths": [
+          "docs/reports/pr-cleanup-v2-2026-11-05.json",
+          "docs/reports/pr-cleanup-v2-2026-11-05.md"
+        ],
+        "activeDataChanges": [],
+        "recipeSourcePaths": [],
+        "calculationCodePaths": [],
+        "approvedNormalizationPreserved": true,
+        "approvedTranslationRegistryPreserved": true
+      },
+      {
+        "number": 255,
+        "headSha": "fa411bf1cb620dfd7db97730cfeb5b6fb5ca738d",
+        "title": "GK100 Evidence Recovery & Smart Review V2",
+        "mainSha": "8119417edaf0b3108effee41f16a3a24737feb09",
+        "mergeTree": "5ee79257c644a4c1a428aafc14eba3b15e853860",
+        "clean": true,
+        "conflicts": [],
+        "changedPaths": [
+          "docs/nutrition/gk100-banh-xeo-cooked-sprouts-release-candidate.json",
+          "docs/nutrition/gk100-banh-xeo-cooked-sprouts-review.md",
+          "docs/nutrition/gk100-evidence-recovery-v2-batch.json",
+          "docs/nutrition/gk100-evidence-recovery-v2-inventory.jsonl",
+          "docs/nutrition/gk100-evidence-recovery-v2.md",
+          "site/scripts/gk100-evidence-recovery.py"
+        ],
+        "activeDataChanges": [],
+        "recipeSourcePaths": [],
+        "calculationCodePaths": [],
+        "approvedNormalizationPreserved": true,
+        "approvedTranslationRegistryPreserved": true
+      },
+      {
+        "number": 243,
+        "headSha": "f493274b158f0611df20a1b0a0845c3e03119c15",
+        "title": "Recipavo V2: Cloudflare production, GitHub Pages staging and launch gates",
+        "mainSha": "8119417edaf0b3108effee41f16a3a24737feb09",
+        "mergeTree": "3c588f9ad98f5191fe863c92dd5337b71183c2b2",
+        "clean": true,
+        "conflicts": [],
+        "changedPaths": [
+          "docs/recipavo-cloudflare-release-plan.md"
+        ],
+        "activeDataChanges": [],
+        "recipeSourcePaths": [],
+        "calculationCodePaths": [],
+        "approvedNormalizationPreserved": true,
+        "approvedTranslationRegistryPreserved": true
+      },
+      {
+        "number": 242,
+        "headSha": "f37ebe1b4599f0bdff2c71a76d3e3c1780548547",
+        "title": "GI Knowledge Base V1: curated GI evidence registry — plan",
+        "mainSha": "8119417edaf0b3108effee41f16a3a24737feb09",
+        "mergeTree": "edfc2327aa4c9e4f102c7631f952e38121557a15",
+        "clean": true,
+        "conflicts": [],
+        "changedPaths": [
+          "docs/nutrition/gi-knowledge-base-v1-plan.md"
+        ],
+        "activeDataChanges": [],
+        "recipeSourcePaths": [],
+        "calculationCodePaths": [],
+        "approvedNormalizationPreserved": true,
+        "approvedTranslationRegistryPreserved": true
+      },
+      {
+        "number": 241,
+        "headSha": "8fd0800ed664f7f2c2c4a12b6f9b6914ef452dbc",
+        "title": "GK100: automatic GK assessment on new recipe creation — plan",
+        "mainSha": "8119417edaf0b3108effee41f16a3a24737feb09",
+        "mergeTree": "b2aa0ac4c086dd37a2a653548199918c72ec88af",
+        "clean": true,
+        "conflicts": [],
+        "changedPaths": [
+          "docs/nutrition/gk100-new-recipe-pipeline-plan.md"
+        ],
+        "activeDataChanges": [],
+        "recipeSourcePaths": [],
+        "calculationCodePaths": [],
+        "approvedNormalizationPreserved": true,
+        "approvedTranslationRegistryPreserved": true
+      },
+      {
+        "number": 231,
+        "headSha": "9d20ca9adbd158a9acf6c50a1665dd4797250191",
+        "title": "Reduce GK80 context and target CI to changed inputs",
+        "mainSha": "8119417edaf0b3108effee41f16a3a24737feb09",
+        "mergeTree": "a063444614122faa1cfd96df821157beb986e2d9",
+        "clean": false,
+        "conflicts": [
+          "AGENTS.md",
+          "site/scripts/select-ci-checks.mjs",
+          "site/scripts/select-ci-checks.test.mjs"
+        ],
+        "changedPaths": [
+          ".github/workflows/pages.yml",
+          "AGENTS.md",
+          "docs/gk80-resource-economy.md",
+          "site/scripts/gk80-work-index.mjs",
+          "site/scripts/gk80-work-index.test.mjs",
+          "site/scripts/select-ci-checks.mjs",
+          "site/scripts/select-ci-checks.test.mjs"
+        ],
+        "activeDataChanges": [],
+        "recipeSourcePaths": [],
+        "calculationCodePaths": [],
+        "approvedNormalizationPreserved": true,
+        "approvedTranslationRegistryPreserved": true,
+        "certification": "CONFLICT: no safe automatic result; current-main changes must be preserved during explicit resolution."
+      },
+      {
+        "number": 229,
+        "headSha": "2b50b18af9b473337d7ddad8d37a660547f1d63d",
+        "title": "GK80: documented GL scenario ranges",
+        "mainSha": "8119417edaf0b3108effee41f16a3a24737feb09",
+        "mergeTree": "3c733a6efdf56ebad66a13194e5987918b695875",
+        "clean": false,
+        "conflicts": [
+          "site/package.json",
+          "site/src/features/glycemic-load/GlycemicLoadPilotPage.tsx",
+          "site/src/features/recipes/GkOnlyVariantPanel.tsx"
+        ],
+        "changedPaths": [
+          "docs/nutrition/gk80-estimated-ranges-2026-11-03.md",
+          "site/package.json",
+          "site/scripts/gk-estimated-range.ts",
+          "site/scripts/gk80-bindaetteok-scenarios.ts",
+          "site/src/features/glycemic-load/GlycemicLoadPilotPage.tsx",
+          "site/src/features/recipes/GkOnlyVariantPanel.tsx",
+          "site/src/features/recipes/gk-estimate.ts",
+          "site/src/features/recipes/gk-only-types.ts",
+          "site/tests/gk-estimated-range.test.ts"
+        ],
+        "activeDataChanges": [],
+        "recipeSourcePaths": [],
+        "calculationCodePaths": [
+          "site/scripts/gk-estimated-range.ts"
+        ],
+        "approvedNormalizationPreserved": true,
+        "approvedTranslationRegistryPreserved": true,
+        "certification": "CONFLICT: no safe automatic result; current-main changes must be preserved during explicit resolution."
+      },
+      {
+        "number": 227,
+        "headSha": "cf551fd064036d31479bfa910ebf97adf42c57fe",
+        "title": "GK80: Kerala-kalacurry, maksa ja pekoni sekä kevätsipulipannukakku",
+        "mainSha": "8119417edaf0b3108effee41f16a3a24737feb09",
+        "mergeTree": "eedb126cd174ddc8662f75412eb0ae76801b6878",
+        "clean": false,
+        "conflicts": [
+          "site/scripts/glycemic-load-pilot.ts",
+          "site/tests/gk-next-four.test.ts",
+          "site/tests/static-output.test.ts"
+        ],
+        "changedPaths": [
+          "docs/nutrition/gk80-kerala-liver-scallion.json",
+          "site/scripts/gk-kerala-liver-scallion.ts",
+          "site/scripts/glycemic-load-pilot.ts",
+          "site/tests/gk-next-four.test.ts",
+          "site/tests/static-output.test.ts"
+        ],
+        "activeDataChanges": [],
+        "recipeSourcePaths": [],
+        "calculationCodePaths": [
+          "site/scripts/gk-kerala-liver-scallion.ts",
+          "site/scripts/glycemic-load-pilot.ts"
+        ],
+        "approvedNormalizationPreserved": true,
+        "approvedTranslationRegistryPreserved": true,
+        "certification": "CONFLICT: no safe automatic result; current-main changes must be preserved during explicit resolution."
+      },
+      {
+        "number": 226,
+        "headSha": "cba54cfdc00b73460c7d8b9686bc97bcbc90d834",
+        "title": "GK80: correct potato and avocado input bindings",
+        "mainSha": "8119417edaf0b3108effee41f16a3a24737feb09",
+        "mergeTree": "856bd761b0fc6ab5ca7cedd611284a3356441e93",
+        "clean": false,
+        "conflicts": [
+          "site/scripts/glycemic-load-pilot.ts",
+          "site/src/features/glycemic-load/GlycemicLoadPilotPage.tsx"
+        ],
+        "changedPaths": [
+          "docs/nutrition/gk80-blocker-audit-screen.json",
+          "docs/nutrition/glycemic-load-pilot-input.json",
+          "site/scripts/glycemic-load-pilot.ts",
+          "site/src/features/glycemic-load/GlycemicLoadPilotPage.tsx",
+          "site/tests/gk80-blocker-audit.test.ts"
+        ],
+        "activeDataChanges": [
+          {
+            "file": "docs/nutrition/glycemic-load-pilot-input.json",
+            "changes": [
+              {
+                "key": "/recipes/masala-dosa/ingredients/4/excludedReason",
+                "main": "No specific Fineli/AFCD food record and preparation match was resolved for “perunoita”; it is not treated as zero.",
+                "merged": null
+              },
+              {
+                "key": "/recipes/masala-dosa/ingredients/4/fineliRecordId",
+                "main": null,
+                "merged": "fineli-205-2026-10-24"
+              },
+              {
+                "key": "/recipes/masala-dosa/ingredients/4/foodKey",
+                "main": null,
+                "merged": "potato"
+              },
+              {
+                "key": "/recipes/masala-dosa/ingredients/4/giMatchEvidence",
+                "main": null,
+                "merged": "Measured boiled potato preparation analogue; cultivar and preparation vary. Wolever et al. doi:10.1039/C1FO10042D reports 59.8 to 79.1 for freshly boiled cubes (11.59 to 15.33 GL per serving at this raw composition)."
+              },
+              {
+                "key": "/recipes/masala-dosa/ingredients/4/giRecordId",
+                "main": null,
+                "merged": "potato-boiled-preparation-analogue-gi-66"
+              },
+              {
+                "key": "/recipes/masala-dosa/ingredients/4/massEvidence",
+                "main": "Recipe-listed 500 g perunoita.",
+                "merged": "500 g edible raw potato for four; composition before boiling assumes available carbohydrate retained. Served hot in the filling."
+              },
+              {
+                "key": "/recipes/masala-dosa/ingredients/4/preparationKey",
+                "main": null,
+                "merged": "boiled-unspecified"
+              },
+              {
+                "key": "/recipes/masala-dosa/ingredients/7/estimatedAvailableCarbohydratePerServingG",
+                "main": null,
+                "merged": 0.126
+              },
+              {
+                "key": "/recipes/masala-dosa/ingredients/7/excludedReason",
+                "main": "No specific Fineli/AFCD food record and preparation match was resolved for “sinapinsiemeniä”; it is not treated as zero.",
+                "merged": "Small documented available-carbohydrate contribution."
+              },
+              {
+                "key": "/recipes/masala-dosa/ingredients/7/grams",
+                "main": null,
+                "merged": 3
+              },
+              {
+                "key": "/recipes/masala-dosa/ingredients/7/massEvidence",
+                "main": "Recipe-listed 1 tl sinapinsiemeniä.",
+                "merged": "IFCT H013, 16.8 g/100 g; one teaspoon assumed to weigh 3 g"
+              },
+              {
+                "key": "/recipes/masala-dosa/ingredients/7/negligibleAssumption",
+                "main": null,
+                "merged": "IFCT H013, 16.8 g/100 g; one teaspoon assumed to weigh 3 g; four servings. https://www.nin.res.in/ebooks/IFCT2017_16122024.pdf"
+              },
+              {
+                "key": "/recipes/masala-dosa/ingredients/10/estimatedAvailableCarbohydratePerServingG",
+                "main": null,
+                "merged": 0.11275
+              },
+              {
+                "key": "/recipes/masala-dosa/ingredients/10/excludedReason",
+                "main": "No specific Fineli/AFCD food record and preparation match was resolved for “tuoreita currylehtiä”; it is not treated as zero.",
+                "merged": "Small documented available-carbohydrate contribution."
+              },
+              {
+                "key": "/recipes/masala-dosa/ingredients/10/massEvidence",
+                "main": "Recipe-listed 10 g tuoreita currylehtiä.",
+                "merged": "IFCT G010, 4.51 g/100 g; recipe lists 10 g"
+              },
+              {
+                "key": "/recipes/masala-dosa/ingredients/10/negligibleAssumption",
+                "main": null,
+                "merged": "IFCT G010, 4.51 g/100 g; recipe lists 10 g; four servings. https://www.nin.res.in/ebooks/IFCT2017_16122024.pdf"
+              },
+              {
+                "key": "/recipes/meksikolainen-paputostada-aamupalaksi/ingredients/3/giMatchEvidence",
+                "main": "Low-confidence proxy: Vegetables other than potatoes, category mean; source category or closest published analogue, not a measured recipe GI.",
+                "merged": null
+              },
+              {
+                "key": "/recipes/meksikolainen-paputostada-aamupalaksi/ingredients/3/giRecordId",
+                "main": "vegetables-category-mean-gi-66",
+                "merged": null
+              },
+              {
+                "key": "/recipes/meksikolainen-paputostada-aamupalaksi/ingredients/3/massEvidence",
+                "main": "1 kpl converted using Fineli food-specific portion mass; AVOKADO, KUORITTU, KIVETÖN.",
+                "merged": "One avocado assumed to yield 120 g edible flesh, using Fineli 11057 household portion. Two servings; approximately 0.48 g available carbohydrate each at 0.8 g/100 g."
+              }
+            ]
+          }
+        ],
+        "recipeSourcePaths": [],
+        "calculationCodePaths": [
+          "site/scripts/glycemic-load-pilot.ts"
+        ],
+        "approvedNormalizationPreserved": true,
+        "approvedTranslationRegistryPreserved": true,
+        "certification": "CONFLICT: no safe automatic result; current-main changes must be preserved during explicit resolution."
+      },
+      {
+        "number": 223,
+        "headSha": "b30c3f486574dc202a207f09ab004248cf4d4c39",
+        "title": "GK80 Controller V1: pysyvä 30 reseptin Codex-ajonohjain, stop, budget ja evidence-gates",
+        "mainSha": "8119417edaf0b3108effee41f16a3a24737feb09",
+        "mergeTree": "7612088b2ca0201137600cb813b03651eb7ae522",
+        "clean": true,
+        "conflicts": [],
+        "changedPaths": [
+          ".github/workflows/pages.yml",
+          ".gitignore",
+          "docs/gk80-controller/CONTRACT.md",
+          "docs/gk80-controller/PLAN.md",
+          "docs/gk80-controller/README.md",
+          "tools/gk80_controller.py",
+          "tools/tests/test_gk80_controller.py"
+        ],
+        "activeDataChanges": [],
+        "recipeSourcePaths": [],
+        "calculationCodePaths": [],
+        "approvedNormalizationPreserved": true,
+        "approvedTranslationRegistryPreserved": true
+      },
+      {
+        "number": 210,
+        "headSha": "c2e7c53ff55a562f1dd3f983266db33833b7ee26",
+        "title": "GK80: siemengranola EDEKA-mantelilastuilla",
+        "mainSha": "8119417edaf0b3108effee41f16a3a24737feb09",
+        "mergeTree": "bb96b7f2411c48bf794fdfeed09259a5d34c06d6",
+        "clean": false,
+        "conflicts": [
+          "site/scripts/gk-four-reviewed.ts",
+          "site/tests/gk-next-four.test.ts"
+        ],
+        "changedPaths": [
+          "docs/nutrition/gk80-granola-edeka/packet.json",
+          "site/scripts/gk-four-reviewed.ts",
+          "site/scripts/gk-granola-edeka.ts",
+          "site/tests/gk-next-four.test.ts"
+        ],
+        "activeDataChanges": [],
+        "recipeSourcePaths": [],
+        "calculationCodePaths": [
+          "site/scripts/gk-four-reviewed.ts",
+          "site/scripts/gk-granola-edeka.ts"
+        ],
+        "approvedNormalizationPreserved": true,
+        "approvedTranslationRegistryPreserved": true,
+        "certification": "CONFLICT: no safe automatic result; current-main changes must be preserved during explicit resolution."
+      },
+      {
+        "number": 182,
+        "headSha": "924a827b515f4d4e27d70389837e22f904d38c1f",
+        "title": "AFCD-POLYOL-02: korjaa kolme hiilihydraattikenttäsidosta",
+        "mainSha": "8119417edaf0b3108effee41f16a3a24737feb09",
+        "mergeTree": "a262ddb37b9f66d183937733eb6742526c9ef291",
+        "clean": false,
+        "conflicts": [
+          "site/tests/gk80-operation146.test.ts"
+        ],
+        "changedPaths": [
+          "docs/nutrition/afcd-field-bindings/README.md",
+          "docs/nutrition/afcd-field-bindings/before.json",
+          "docs/nutrition/afcd-field-bindings/verify_source.py",
+          "docs/nutrition/food-records.json",
+          "docs/nutrition/glycemic-load-recipe-bindings.json",
+          "site/tests/gk80-operation146.test.ts",
+          "site/tests/glycemic-load.test.ts",
+          "site/tests/restore-pre-ehold.ts"
+        ],
+        "activeDataChanges": [
+          {
+            "file": "docs/nutrition/food-records.json",
+            "changes": [
+              {
+                "key": "/afcd-F002384-release-3/per100g/carbohydrate",
+                "main": 5,
+                "merged": 2.8
+              },
+              {
+                "key": "/afcd-F006573-release-3/per100g/carbohydrate",
+                "main": 8,
+                "merged": 7.7
+              },
+              {
+                "key": "/afcd-F007619-release-3/per100g/carbohydrate",
+                "main": 7,
+                "merged": 6.9
+              }
+            ]
+          },
+          {
+            "file": "docs/nutrition/glycemic-load-recipe-bindings.json",
+            "changes": [
+              {
+                "key": "/calculationEvidence/pellava-puuro-pahkinoilla",
+                "main": "7058b639b3f3555c4903655d658c63d63aa89f74bc7a767746804820ec1227de",
+                "merged": "cbdd2e2f1dbac864a0081d6ec28e12ce1b83b6c470e99add4996465728dc41b4"
+              },
+              {
+                "key": "/calculationEvidence/valimerellinen-ricotta-persikkakulho",
+                "main": "0be8b4f6e08bd47036e9f35d6dae9b099b7eedb657b2dbabef60108136dce64d",
+                "merged": "80ee901449f42fe024a2d04e5de63729c8355c9004895e8230431bd39c8cc5c4"
+              }
+            ]
+          }
+        ],
+        "recipeSourcePaths": [],
+        "calculationCodePaths": [],
+        "approvedNormalizationPreserved": true,
+        "approvedTranslationRegistryPreserved": true,
+        "certification": "CONFLICT: no safe automatic result; current-main changes must be preserved during explicit resolution."
+      },
+      {
+        "number": 181,
+        "headSha": "88e08d517bb62fa83dd1207912569fe853737596",
+        "title": "AFCD-POLYOL-01: yhteinen lähdetulkinta ja reseptiriippuvuuksien auditointi",
+        "mainSha": "8119417edaf0b3108effee41f16a3a24737feb09",
+        "mergeTree": "765a0c35484ae0e829f11566f9aad61f88293108",
+        "clean": true,
+        "conflicts": [],
+        "changedPaths": [
+          "docs/research/afcd-polyol-01/README.md",
+          "docs/research/afcd-polyol-01/cohort.json",
+          "docs/research/afcd-polyol-01/normalization-variants.csv",
+          "docs/research/afcd-polyol-01/public-check.json",
+          "docs/research/afcd-polyol-01/recipe-dependencies.csv",
+          "docs/research/afcd-polyol-01/recipe-effects.csv",
+          "docs/research/afcd-polyol-01/source-decisions.csv",
+          "docs/research/afcd-polyol-01/source-manifest.json",
+          "docs/research/afcd-polyol-01/source-notes.json",
+          "docs/research/afcd-polyol-01/summary.json",
+          "docs/research/afcd-polyol-01/tools/README.md",
+          "docs/research/afcd-polyol-01/tools/audit.py",
+          "docs/research/afcd-polyol-01/tools/fetch-sources.py",
+          "docs/research/afcd-polyol-01/tools/numeric-probe.mts",
+          "docs/research/afcd-polyol-01/tools/verify.py",
+          "docs/research/afcd-polyol-01/validation.json"
+        ],
+        "activeDataChanges": [],
+        "recipeSourcePaths": [],
+        "calculationCodePaths": [],
+        "approvedNormalizationPreserved": true,
+        "approvedTranslationRegistryPreserved": true
+      },
+      {
+        "number": 180,
+        "headSha": "fd8bd4d31e6d37bc53d669870a00557f5147644a",
+        "title": "Operaatio 147: ravintoarvo- ja GK-menetelmän järkeistämisauditointi",
+        "mainSha": "8119417edaf0b3108effee41f16a3a24737feb09",
+        "mergeTree": "3360fedb74423f381f72b8fdd1624072bfa0e164",
+        "clean": true,
+        "conflicts": [],
+        "changedPaths": [
+          "docs/research/operation147/README.md",
+          "docs/research/operation147/afcd-definition-extract.json",
+          "docs/research/operation147/diagnostics.json",
+          "docs/research/operation147/gk-omission-sensitivity.json",
+          "docs/research/operation147/gk-threshold-sensitivity.json",
+          "docs/research/operation147/input-manifest.json",
+          "docs/research/operation147/production.json",
+          "docs/research/operation147/recipe-scenarios.csv",
+          "docs/research/operation147/recipe-scenarios.json",
+          "docs/research/operation147/scenario-summary.csv",
+          "docs/research/operation147/summary.json",
+          "docs/research/operation147/tools/README.md",
+          "docs/research/operation147/tools/baseline.mts",
+          "docs/research/operation147/tools/diagnostics.mts",
+          "docs/research/operation147/tools/extract-afcd.py",
+          "docs/research/operation147/tools/gk-sensitivity.mts",
+          "docs/research/operation147/tools/production.py",
+          "docs/research/operation147/tools/scenarios.py",
+          "docs/research/operation147/tools/scratch-scope.mts",
+          "docs/research/operation147/tools/scratch_scope.py",
+          "docs/research/operation147/tools/verify.py",
+          "docs/research/operation147/validation.json"
+        ],
+        "activeDataChanges": [],
+        "recipeSourcePaths": [],
+        "calculationCodePaths": [],
+        "approvedNormalizationPreserved": true,
+        "approvedTranslationRegistryPreserved": true
+      },
+      {
+        "number": 178,
+        "headSha": "60a6b5c33cb4bf09e5270ab9011ecfbceda1d0e1",
+        "title": "Recipavo: tuote- ja liiketoimintasuunnitelma – uusi Draft-PR",
+        "mainSha": "8119417edaf0b3108effee41f16a3a24737feb09",
+        "mergeTree": "bba976a6eb42935e6e619b338da3d08ec3b3e82e",
+        "clean": true,
+        "conflicts": [],
+        "changedPaths": [
+          "docs/product/recipavo-product-strategy.md"
+        ],
+        "activeDataChanges": [],
+        "recipeSourcePaths": [],
+        "calculationCodePaths": [],
+        "approvedNormalizationPreserved": true,
+        "approvedTranslationRegistryPreserved": true
+      },
+      {
+        "number": 176,
+        "headSha": "9e0bab5209e59533e6b7326a5375680024ea7083",
+        "title": "Nutrition Core: yhteinen ravintoainetietovaranto ja vaiheistettu arkkitehtuuri",
+        "mainSha": "8119417edaf0b3108effee41f16a3a24737feb09",
+        "mergeTree": "c2d60d6e400fc818228d3731949c2c1ace394248",
+        "clean": true,
+        "conflicts": [],
+        "changedPaths": [
+          "docs/architecture/nutrition-core-vision.md"
+        ],
+        "activeDataChanges": [],
+        "recipeSourcePaths": [],
+        "calculationCodePaths": [],
+        "approvedNormalizationPreserved": true,
+        "approvedTranslationRegistryPreserved": true
+      },
+      {
+        "number": 174,
+        "headSha": "19939d95d8c93d6e93d4619d9f2510d043d246dc",
+        "title": "SOURCE-01: loppuraportti ja SQLite/D1-kenttäkartoitus vaiheen 1 hyväksyntään",
+        "mainSha": "8119417edaf0b3108effee41f16a3a24737feb09",
+        "mergeTree": "186418402b19fb86189c33eebbfc7a17345fe5c7",
+        "clean": true,
+        "conflicts": [],
+        "changedPaths": [
+          "docs/research/source-01/README.md",
+          "docs/research/source-01/audit-baseline.mts",
+          "docs/research/source-01/baseline.json",
+          "docs/research/source-01/evidence-manifest.json",
+          "docs/research/source-01/field-mapping.md",
+          "docs/research/source-01/pilot-review.json",
+          "docs/research/source-01/sources.json"
+        ],
+        "activeDataChanges": [],
+        "recipeSourcePaths": [],
+        "calculationCodePaths": [],
+        "approvedNormalizationPreserved": true,
+        "approvedTranslationRegistryPreserved": true
+      },
+      {
+        "number": 172,
+        "headSha": "69a2ca2be732e9e4454cd44cf770a601feb8fd9d",
+        "title": "Cloudflare-siirtosuunnitelma: recipavo.com, D1, kuvat ja varmuuskopiot",
+        "mainSha": "8119417edaf0b3108effee41f16a3a24737feb09",
+        "mergeTree": "021a9b7529d8b14cf3ad4eeddae086838f6ddcc3",
+        "clean": true,
+        "conflicts": [],
+        "changedPaths": [
+          "docs/cloudflare-migration-plan.md",
+          "docs/cloudflare-migration/images-local-20261102.json",
+          "docs/cloudflare-migration/images-main-20261102.json",
+          "docs/cloudflare-migration/inventory-images.py",
+          "docs/cloudflare-migration/inventory-local-images.py",
+          "docs/cloudflare-migration/pr-172-description.md"
+        ],
+        "activeDataChanges": [],
+        "recipeSourcePaths": [],
+        "calculationCodePaths": [],
+        "approvedNormalizationPreserved": true,
+        "approvedTranslationRegistryPreserved": true
+      },
+      {
+        "number": 169,
+        "headSha": "e834bb59035dc20f09e015d57278a08771c13b13",
+        "title": "docs(nutrition): coconut GI source integrity and P1 binding decision",
+        "mainSha": "8119417edaf0b3108effee41f16a3a24737feb09",
+        "mergeTree": "05684a5805b3e2b9657356a4a7fc7f98fbcb130f",
+        "clean": true,
+        "conflicts": [],
+        "changedPaths": [
+          "docs/research/gi-source-integrity-01/README.md",
+          "docs/research/gi-source-integrity-01/admission.py",
+          "docs/research/gi-source-integrity-01/all-source-index.json",
+          "docs/research/gi-source-integrity-01/artifact-manifest.json",
+          "docs/research/gi-source-integrity-01/baseline133.json",
+          "docs/research/gi-source-integrity-01/coconut-identities.json",
+          "docs/research/gi-source-integrity-01/coconut-impact.json",
+          "docs/research/gi-source-integrity-01/coconut-recipes.json",
+          "docs/research/gi-source-integrity-01/contract.md",
+          "docs/research/gi-source-integrity-01/high-risk-screen.json",
+          "docs/research/gi-source-integrity-01/input-manifest.json",
+          "docs/research/gi-source-integrity-01/lowcho-applications.json",
+          "docs/research/gi-source-integrity-01/match-fixtures.json",
+          "docs/research/gi-source-integrity-01/p1-decision.json",
+          "docs/research/gi-source-integrity-01/research-source-screen.json",
+          "docs/research/gi-source-integrity-01/source-classifications.json",
+          "docs/research/gi-source-integrity-01/verify.py"
+        ],
+        "activeDataChanges": [],
+        "recipeSourcePaths": [],
+        "calculationCodePaths": [],
+        "approvedNormalizationPreserved": true,
+        "approvedTranslationRegistryPreserved": true
+      },
+      {
+        "number": 133,
+        "headSha": "020b665582f4f1ec54e56ec978581e424adc6ace",
+        "title": "GK 2.1 R2: hiilihydraattiseula ja kahdeksan reseptin lähdekorjaukset",
+        "mainSha": "8119417edaf0b3108effee41f16a3a24737feb09",
+        "mergeTree": "456e399c91d06a04a03785ca9218fca5f056e520",
+        "clean": false,
+        "conflicts": [
+          "docs/nutrition/glycemic-load-pilot-input.json",
+          "docs/nutrition/glycemic-load-recipe-bindings.json",
+          "site/tests/glycemic-load.test.ts"
+        ],
+        "changedPaths": [
+          "docs/nutrition/gk-r2-carbohydrate-only-candidates.json",
+          "docs/nutrition/gk-r2-corrections.json",
+          "docs/nutrition/gk-r2-gk-proposals.json",
+          "docs/nutrition/gk-r2-inventory.json",
+          "docs/nutrition/gk-r2-nutrition-proposals.json",
+          "docs/nutrition/gk-r2-regression.json",
+          "docs/nutrition/gk-r2-review.md",
+          "docs/nutrition/gk-r2-source-review.json",
+          "docs/nutrition/glycemic-load-pilot-input.json",
+          "docs/nutrition/glycemic-load-recipe-bindings.json",
+          "docs/nutrition/tools/gk-r2-inventory.py",
+          "site/tests/glycemic-load.test.ts"
+        ],
+        "activeDataChanges": [
+          {
+            "file": "docs/nutrition/glycemic-load-pilot-input.json",
+            "changes": [
+              {
+                "conflicted": true,
+                "requiresCurrentSourceResolution": true
+              }
+            ]
+          },
+          {
+            "file": "docs/nutrition/glycemic-load-recipe-bindings.json",
+            "changes": [
+              {
+                "conflicted": true,
+                "requiresCurrentSourceResolution": true
+              }
+            ]
+          }
+        ],
+        "recipeSourcePaths": [],
+        "calculationCodePaths": [],
+        "approvedNormalizationPreserved": true,
+        "approvedTranslationRegistryPreserved": true,
+        "certification": "CONFLICT: no safe automatic result; current-main changes must be preserved during explicit resolution."
+      },
+      {
+        "number": 119,
+        "headSha": "2ae46f59c9b982c540a10ba8e0a6cd999ace7187",
+        "title": "Draft: GK-suodatin, aktiiviset suodatinvalinnat ja kokonaisajan selkeytys",
+        "mainSha": "8119417edaf0b3108effee41f16a3a24737feb09",
+        "mergeTree": "23d849a4f05faa823e5d3ce64b17547fd3d7e1d8",
+        "clean": false,
+        "conflicts": [
+          "site/scripts/glycemic-load-pilot.ts"
+        ],
+        "changedPaths": [
+          "site/scripts/glycemic-load-pilot.ts",
+          "site/src/features/recipes/RecipesPage.tsx",
+          "site/src/features/recipes/recipe-search.ts",
+          "site/src/features/recipes/recipe-tools.tsx",
+          "site/src/styles.css",
+          "site/tests/recipe-search.test.ts"
+        ],
+        "activeDataChanges": [],
+        "recipeSourcePaths": [],
+        "calculationCodePaths": [
+          "site/scripts/glycemic-load-pilot.ts"
+        ],
+        "approvedNormalizationPreserved": true,
+        "approvedTranslationRegistryPreserved": true,
+        "certification": "CONFLICT: no safe automatic result; current-main changes must be preserved during explicit resolution."
+      },
+      {
+        "number": 100,
+        "headSha": "930c398251515fbb7662e33707d7ed7e72bfc351",
+        "title": "Prepare secure Nutritics evaluation",
+        "mainSha": "8119417edaf0b3108effee41f16a3a24737feb09",
+        "mergeTree": "c2490c62233ecccb655555280522757333e6813f",
+        "clean": false,
+        "conflicts": [
+          "site/package.json"
+        ],
+        "changedPaths": [
+          "docs/nutritics-evaluation/README.md",
+          "docs/nutritics-evaluation/comparison-template.csv",
+          "docs/nutritics-evaluation/feature-matrix.md",
+          "docs/nutritics-evaluation/seven-day-protocol.md",
+          "site/package.json",
+          "site/scripts/nutritics-evaluation-client.ts",
+          "site/tests/fixtures/nutritics-evaluation.ts",
+          "site/tests/nutritics-evaluation-client.test.ts"
+        ],
+        "activeDataChanges": [],
+        "recipeSourcePaths": [],
+        "calculationCodePaths": [],
+        "approvedNormalizationPreserved": true,
+        "approvedTranslationRegistryPreserved": true,
+        "certification": "CONFLICT: no safe automatic result; current-main changes must be preserved during explicit resolution."
+      }
+    ],
+    "readOnly": true,
+    "merged280And278ProductionTreePreserved": true,
+    "onlyDifferenceFromTestedJointTree": [
+      "site/package-lock.json",
+      "site/package.json"
+    ],
+    "allTestCommandsRetained": true,
+    "cleanPreviews": 14,
+    "conflictedPreviews": 9,
+    "limits": "Static merge-tree and active-data/code comparison; no certification of conflict resolutions or future changes. Code changes still require their risk-specific regressions.",
+    "noMergeOrDeployByThisSession": true
+  },
+  "latestRepositoryObservation": {
+    "mainSha": "8119417edaf0b3108effee41f16a3a24737feb09",
+    "openPullRequests": 23,
+    "externallyMergedSincePreviousSnapshot": [
+      280,
+      278,
+      116
+    ],
+    "thisSessionMergedPullRequests": []
   }
 }
