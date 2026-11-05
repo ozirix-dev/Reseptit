@@ -140,6 +140,30 @@
       }
     ]
   },
+  "goi-cuon:en": {
+    "source_hash": "a97c84705d482b4e64a879921bad7ffc3095d20219289489aebaec4a9a4cb56c",
+    "translation_hash": "f6a002d39fcda07cad6be49054ec40b02831f1e819e24eba324ae21eee796bab",
+    "reviewed_at": "2026-11-05",
+    "reference": "V2 / neljäs 30 käännöksen erä / lähde 3de79f25",
+    "outcome": "pass",
+    "findings": []
+  },
+  "goi-cuon:sv": {
+    "source_hash": "a97c84705d482b4e64a879921bad7ffc3095d20219289489aebaec4a9a4cb56c",
+    "translation_hash": "c1149a4af63bd0db577887c8b071baced3b8207551b04684c992774a7fa5fcd5",
+    "reviewed_at": "2026-11-05",
+    "reference": "V2 / neljäs 30 käännöksen erä / lähde 3de79f25",
+    "outcome": "pass",
+    "findings": []
+  },
+  "goi-cuon:th": {
+    "source_hash": "a97c84705d482b4e64a879921bad7ffc3095d20219289489aebaec4a9a4cb56c",
+    "translation_hash": "7d65647b18dcd0395fcdf392f020aecab6632c63e2cc2a0fa22aa8058a4a2460",
+    "reviewed_at": "2026-11-05",
+    "reference": "V2 / neljäs 30 käännöksen erä / lähde 3de79f25",
+    "outcome": "pass",
+    "findings": []
+  },
   "halloumimunakas:en": {
     "source_hash": "16c50cd22f2c0346fd0ec45ec31c046cf0bd8edd175794e51520db82b32f15b0",
     "translation_hash": "6cfa27e3bdfc45d888ec5c59b057882a3b8cd218566f6c988265c15d541b0533",
@@ -163,6 +187,48 @@
     "reference": "V2, ensimmäinen käännöserä / Halloumimunakas",
     "outcome": "pass",
     "findings": []
+  },
+  "hernekeitto-savupotkalla:en": {
+    "source_hash": "e826312bfc0dd313ae41301e7a8ec9390daa4ed84c0807ae2806fdd1b10fa327",
+    "translation_hash": "77cd5ecbe7a074642466af04c40fdef2aa0ad25a4eb9797aae634b107c5e7c4f",
+    "reviewed_at": "2026-11-05",
+    "reference": "V2 / neljäs 30 käännöksen erä / lähde 3de79f25",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "open",
+        "summary": "Lähteen 750 minuutin kokonaisaika poikkeaa ohjeen noin 12 tunnin liotuksesta ja 1,5–2 tunnin haudutuksesta. Molemmat kestot säilyvät käännöksen tekstissä."
+      }
+    ]
+  },
+  "hernekeitto-savupotkalla:sv": {
+    "source_hash": "e826312bfc0dd313ae41301e7a8ec9390daa4ed84c0807ae2806fdd1b10fa327",
+    "translation_hash": "fdcad7b869c62c5655004547aa2952d6002be174ba7e474a6731e46582616eb8",
+    "reviewed_at": "2026-11-05",
+    "reference": "V2 / neljäs 30 käännöksen erä / lähde 3de79f25",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "open",
+        "summary": "Lähteen 750 minuutin kokonaisaika poikkeaa ohjeen noin 12 tunnin liotuksesta ja 1,5–2 tunnin haudutuksesta. Molemmat kestot säilyvät käännöksen tekstissä."
+      }
+    ]
+  },
+  "hernekeitto-savupotkalla:th": {
+    "source_hash": "e826312bfc0dd313ae41301e7a8ec9390daa4ed84c0807ae2806fdd1b10fa327",
+    "translation_hash": "dfa43ce27efd8c17c726fc0cef2da34cf1f4a16e050a4b9d43a98d1f98c40ee0",
+    "reviewed_at": "2026-11-05",
+    "reference": "V2 / neljäs 30 käännöksen erä / lähde 3de79f25",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "open",
+        "summary": "Lähteen 750 minuutin kokonaisaika poikkeaa ohjeen noin 12 tunnin liotuksesta ja 1,5–2 tunnin haudutuksesta. Molemmat kestot säilyvät käännöksen tekstissä."
+      }
+    ]
   },
   "hyderabadi-kanabiryani:en": {
     "source_hash": "aa55df3398aaa1aef6a453675f91db9944bcf522979cf9f5ce54433f554637fe",
@@ -200,6 +266,48 @@
       }
     ]
   },
+  "japanilainen-curry-tofulla:en": {
+    "source_hash": "50fc764da52cd185c93f9cc1ffde228230ecd833635f5d76e04b57d8e969fe60",
+    "translation_hash": "be6bccb1efa3f3fbb35b32f898d1a0254bd7855a2946bd8fd64ce1e74ea16b9a",
+    "reviewed_at": "2026-11-05",
+    "reference": "V2 / neljäs 30 käännöksen erä / lähde 3de79f25",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "open",
+        "summary": "Lähde luettelee seesamiöljyn, mutta ei yksilöi sen lisäyskohtaa. Käännös säilyttää ainesluettelon eikä lisää oletettua työvaihetta."
+      }
+    ]
+  },
+  "japanilainen-curry-tofulla:sv": {
+    "source_hash": "50fc764da52cd185c93f9cc1ffde228230ecd833635f5d76e04b57d8e969fe60",
+    "translation_hash": "0681e87fbdb9d783ba56974b4e3975b980df8dbd2eaa9f6b9985a1d3fd5e8009",
+    "reviewed_at": "2026-11-05",
+    "reference": "V2 / neljäs 30 käännöksen erä / lähde 3de79f25",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "open",
+        "summary": "Lähde luettelee seesamiöljyn, mutta ei yksilöi sen lisäyskohtaa. Käännös säilyttää ainesluettelon eikä lisää oletettua työvaihetta."
+      }
+    ]
+  },
+  "japanilainen-curry-tofulla:th": {
+    "source_hash": "50fc764da52cd185c93f9cc1ffde228230ecd833635f5d76e04b57d8e969fe60",
+    "translation_hash": "8a1a77f02b7c5e3eb08b2b6ef0b53fd71273399c1052713dc4066c1c5ede1d8f",
+    "reviewed_at": "2026-11-05",
+    "reference": "V2 / neljäs 30 käännöksen erä / lähde 3de79f25",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "open",
+        "summary": "Lähde luettelee seesamiöljyn, mutta ei yksilöi sen lisäyskohtaa. Käännös säilyttää ainesluettelon eikä lisää oletettua työvaihetta."
+      }
+    ]
+  },
   "jauhelihapihvit-vhh-kermakastikkeella:en": {
     "source_hash": "767add5ba3226bbcd4a240b0a2f6336bb9bafa575b461899441c5f3cbc38b5a2",
     "translation_hash": "f3a83aa2d3d98813856467d29f16cc63df8101f6a8d2bd8f0c4cb8f120c88be1",
@@ -229,6 +337,48 @@
     "reference": "V2 riskierä 2, main 358bbadf9e8f28db254bcfc3bd68c4bdcc8f6e5c",
     "outcome": "pass",
     "findings": []
+  },
+  "kaakao-kookos-chia:en": {
+    "source_hash": "e2c4dfeae5b57e93456a85d9aa5e08b602f18d933dac58c596691a93a8f23c4e",
+    "translation_hash": "9df6bf3e9a655469402d5cfe925b0113f60310a99fdc9ff4b8e5bdcc442fffd8",
+    "reviewed_at": "2026-11-05",
+    "reference": "V2 / neljäs 30 käännöksen erä / lähde 3de79f25",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "open",
+        "summary": "Lähteen ainesluettelossa on valinnainen makeutusaine, mutta valmistuksessa ei kerrota lisäyskohtaa. Valmistus on kylmä, vaikka kypsennysmetatieto on yleinen. Käännös säilyttää lähteen ohjeen ja ainesluettelon."
+      }
+    ]
+  },
+  "kaakao-kookos-chia:sv": {
+    "source_hash": "e2c4dfeae5b57e93456a85d9aa5e08b602f18d933dac58c596691a93a8f23c4e",
+    "translation_hash": "d34b4cba2f9bfb4e2ab314ac1638630ff104dea0728781b7fb0c67eaabd8638e",
+    "reviewed_at": "2026-11-05",
+    "reference": "V2 / neljäs 30 käännöksen erä / lähde 3de79f25",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "open",
+        "summary": "Lähteen ainesluettelossa on valinnainen makeutusaine, mutta valmistuksessa ei kerrota lisäyskohtaa. Valmistus on kylmä, vaikka kypsennysmetatieto on yleinen. Käännös säilyttää lähteen ohjeen ja ainesluettelon."
+      }
+    ]
+  },
+  "kaakao-kookos-chia:th": {
+    "source_hash": "e2c4dfeae5b57e93456a85d9aa5e08b602f18d933dac58c596691a93a8f23c4e",
+    "translation_hash": "bb3e7ec9c905024f6642d9ee388c854ef30a985d9edd6625cc8c330254c05718",
+    "reviewed_at": "2026-11-05",
+    "reference": "V2 / neljäs 30 käännöksen erä / lähde 3de79f25",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "open",
+        "summary": "Lähteen ainesluettelossa on valinnainen makeutusaine, mutta valmistuksessa ei kerrota lisäyskohtaa. Valmistus on kylmä, vaikka kypsennysmetatieto on yleinen. Käännös säilyttää lähteen ohjeen ja ainesluettelon."
+      }
+    ]
   },
   "kai-jiew-vhh:en": {
     "source_hash": "970b73bff87961d91704e46eafebeb1e698b2bb99e5a2006d8fc789065a8db43",
@@ -598,6 +748,30 @@
     "outcome": "pass",
     "findings": []
   },
+  "korealainen-yachaejuk-kasvisjuk:en": {
+    "source_hash": "603b0f7d3cc790db78be1a6b249bbfe6386d2709eaabd0b70ecd23a9ce13d516",
+    "translation_hash": "45c9febe0cd8899856e4f37145d310d239a36554365d6a15a60b5c33ff75ee93",
+    "reviewed_at": "2026-11-05",
+    "reference": "V2 / neljäs 30 käännöksen erä / lähde 3de79f25",
+    "outcome": "pass",
+    "findings": []
+  },
+  "korealainen-yachaejuk-kasvisjuk:sv": {
+    "source_hash": "603b0f7d3cc790db78be1a6b249bbfe6386d2709eaabd0b70ecd23a9ce13d516",
+    "translation_hash": "94bbea72809edfff40f5083282f8a6d799c8aec2788897c0e599b79923072155",
+    "reviewed_at": "2026-11-05",
+    "reference": "V2 / neljäs 30 käännöksen erä / lähde 3de79f25",
+    "outcome": "pass",
+    "findings": []
+  },
+  "korealainen-yachaejuk-kasvisjuk:th": {
+    "source_hash": "603b0f7d3cc790db78be1a6b249bbfe6386d2709eaabd0b70ecd23a9ce13d516",
+    "translation_hash": "b439733638dd5dd425fcf176b5ba4b159dba82ea14caa16f7cc7e36710f9d0e7",
+    "reviewed_at": "2026-11-05",
+    "reference": "V2 / neljäs 30 käännöksen erä / lähde 3de79f25",
+    "outcome": "pass",
+    "findings": []
+  },
   "koshari:en": {
     "source_hash": "c27cdc9664ae33d1d5f0a233ebee55bf8d6047d7a83f639bc512d1dff7549155",
     "translation_hash": "d4981b113fb8938b13e80964556d3875564a3f50a0acdb29aa519768f87742b9",
@@ -645,6 +819,48 @@
     "reference": "V2 riskierä / lähdecommit 6034aa9880dbc774639e58c2926c05f6100e7fc6",
     "outcome": "pass",
     "findings": []
+  },
+  "marjainen-chiavanukas:en": {
+    "source_hash": "e3b99ed13391f011568da7f054026eb32f957b8ef6f64f5fd2549dc332f92f19",
+    "translation_hash": "129b580c122cc8f2cfab556e681404b076e7e21d19b1f3a00110757f093c1d8a",
+    "reviewed_at": "2026-11-05",
+    "reference": "V2 / neljäs 30 käännöksen erä / lähde 3de79f25",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "open",
+        "summary": "Lähde käyttää yleistä kypsennysmetatietoa kylmästä valmistuksesta. Käännöksen valmistustapa on lähteen mukainen."
+      }
+    ]
+  },
+  "marjainen-chiavanukas:sv": {
+    "source_hash": "e3b99ed13391f011568da7f054026eb32f957b8ef6f64f5fd2549dc332f92f19",
+    "translation_hash": "904caac4fdfb494dcc248aaf0596235d743ca6ccd518580b6b6152401e29cb95",
+    "reviewed_at": "2026-11-05",
+    "reference": "V2 / neljäs 30 käännöksen erä / lähde 3de79f25",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "open",
+        "summary": "Lähde käyttää yleistä kypsennysmetatietoa kylmästä valmistuksesta. Käännöksen valmistustapa on lähteen mukainen."
+      }
+    ]
+  },
+  "marjainen-chiavanukas:th": {
+    "source_hash": "e3b99ed13391f011568da7f054026eb32f957b8ef6f64f5fd2549dc332f92f19",
+    "translation_hash": "124f8084cebad318d3a6e39023d8ff77b8fba109994b73543f60b54f73ee4915",
+    "reviewed_at": "2026-11-05",
+    "reference": "V2 / neljäs 30 käännöksen erä / lähde 3de79f25",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "open",
+        "summary": "Lähde käyttää yleistä kypsennysmetatietoa kylmästä valmistuksesta. Käännöksen valmistustapa on lähteen mukainen."
+      }
+    ]
   },
   "marjakiisseli-vaniljakastikkeella:en": {
     "source_hash": "dbe2cecc9209e1f07b3f66919f5621b07324e836ac1d693808d39260dd6342f8",
@@ -826,6 +1042,30 @@
     "outcome": "pass",
     "findings": []
   },
+  "pohjoisafrikkalainen-taatelipuuro-appelsiinilla:en": {
+    "source_hash": "b2bdc69ad86dce423d23952ffd47843f64afe2d9002d5af53e809a19ecc586c1",
+    "translation_hash": "66c77d251766ded83bdabdc7ecf858ba80f5b0cf8532a2327187fd1c247d6da0",
+    "reviewed_at": "2026-11-05",
+    "reference": "V2 / neljäs 30 käännöksen erä / lähde 3de79f25",
+    "outcome": "pass",
+    "findings": []
+  },
+  "pohjoisafrikkalainen-taatelipuuro-appelsiinilla:sv": {
+    "source_hash": "b2bdc69ad86dce423d23952ffd47843f64afe2d9002d5af53e809a19ecc586c1",
+    "translation_hash": "cb3abfda03faeca08d1b2477609303c2f8c24b7a8acc6aaaff96fdf98efcb217",
+    "reviewed_at": "2026-11-05",
+    "reference": "V2 / neljäs 30 käännöksen erä / lähde 3de79f25",
+    "outcome": "pass",
+    "findings": []
+  },
+  "pohjoisafrikkalainen-taatelipuuro-appelsiinilla:th": {
+    "source_hash": "b2bdc69ad86dce423d23952ffd47843f64afe2d9002d5af53e809a19ecc586c1",
+    "translation_hash": "9ea7b17787517e7c4c57fc1f2b89cc6a6b77bf800abcd5d2e910343305616ed0",
+    "reviewed_at": "2026-11-05",
+    "reference": "V2 / neljäs 30 käännöksen erä / lähde 3de79f25",
+    "outcome": "pass",
+    "findings": []
+  },
   "som-tam-vhh-kurkkuna:en": {
     "source_hash": "d91c6a8cbe30a0502a8d07986739c3c64d92f4186860595f182be7518ab37183",
     "translation_hash": "a7e621573c1d933806a9228bcba3d0a2eee5609b22efe254e24158d9daa1550e",
@@ -901,6 +1141,96 @@
     "translation_hash": "d0799269e71afd380d3914097b131bbda94dcaca6ad321a9a2deb7e2bdd835d3",
     "reviewed_at": "2026-11-04",
     "reference": "V2 riskierä / lähdecommit 6034aa9880dbc774639e58c2926c05f6100e7fc6",
+    "outcome": "pass",
+    "findings": []
+  },
+  "vhh-juustokakku:en": {
+    "source_hash": "ccf9bc4d2bc8fa05cacae7b5435a52f5501432612192daf0a31d948045106c2a",
+    "translation_hash": "7e6ea5ad041dbd771e72aea6121f88639af6c6352a85e752ec5e5fb173bee0a9",
+    "reviewed_at": "2026-11-05",
+    "reference": "V2 / neljäs 30 käännöksen erä / lähde 3de79f25",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "open",
+        "summary": "Lähteen 90 minuutin kokonaisaika ei sisällä ohjeen vähintään neljän tunnin kylmäjäähdytystä. Käännöksessä säilyy nimenomainen jäähdytysohje."
+      }
+    ]
+  },
+  "vhh-juustokakku:sv": {
+    "source_hash": "ccf9bc4d2bc8fa05cacae7b5435a52f5501432612192daf0a31d948045106c2a",
+    "translation_hash": "28d8b4048d6d33e5d7796889ded0bebc8faac9aec8b713576b7577a0f82060e5",
+    "reviewed_at": "2026-11-05",
+    "reference": "V2 / neljäs 30 käännöksen erä / lähde 3de79f25",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "open",
+        "summary": "Lähteen 90 minuutin kokonaisaika ei sisällä ohjeen vähintään neljän tunnin kylmäjäähdytystä. Käännöksessä säilyy nimenomainen jäähdytysohje."
+      }
+    ]
+  },
+  "vhh-juustokakku:th": {
+    "source_hash": "ccf9bc4d2bc8fa05cacae7b5435a52f5501432612192daf0a31d948045106c2a",
+    "translation_hash": "2facdc51e330d4e151a3b61f0667178e8dd18ca516c8467d5b94fc814ca81e2c",
+    "reviewed_at": "2026-11-05",
+    "reference": "V2 / neljäs 30 käännöksen erä / lähde 3de79f25",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "open",
+        "summary": "Lähteen 90 minuutin kokonaisaika ei sisällä ohjeen vähintään neljän tunnin kylmäjäähdytystä. Käännöksessä säilyy nimenomainen jäähdytysohje."
+      }
+    ]
+  },
+  "vhh-mansikkakakku:en": {
+    "source_hash": "62908a3f9adaa3462a263165b2503561ef1a9a8c0d6c71f645c205c1992234a4",
+    "translation_hash": "a0b2b3e3e240dbf19fe14fb020f334ac6b02133bda00d0de4541c85962ffb3a4",
+    "reviewed_at": "2026-11-05",
+    "reference": "V2 / neljäs 30 käännöksen erä / lähde 3de79f25",
+    "outcome": "pass",
+    "findings": []
+  },
+  "vhh-mansikkakakku:sv": {
+    "source_hash": "62908a3f9adaa3462a263165b2503561ef1a9a8c0d6c71f645c205c1992234a4",
+    "translation_hash": "8c49c4826b63e8a62d1f86e0fd823af3013f62e58955fe61d75a7cd6a4b7da8a",
+    "reviewed_at": "2026-11-05",
+    "reference": "V2 / neljäs 30 käännöksen erä / lähde 3de79f25",
+    "outcome": "pass",
+    "findings": []
+  },
+  "vhh-mansikkakakku:th": {
+    "source_hash": "62908a3f9adaa3462a263165b2503561ef1a9a8c0d6c71f645c205c1992234a4",
+    "translation_hash": "45d2f51588290fc335173f092a3ab119df54ce752103669ec0b59c13e3c90117",
+    "reviewed_at": "2026-11-05",
+    "reference": "V2 / neljäs 30 käännöksen erä / lähde 3de79f25",
+    "outcome": "pass",
+    "findings": []
+  },
+  "vhh-mokkapalat:en": {
+    "source_hash": "d921da51f563ed17fc69fb9ff7a55adfad83a6ae98f0559adb24ae1d6cce55af",
+    "translation_hash": "9ed8daab8a6feb29ee9b4c584562dc62bdb3e673c68af81c8444aefcbc9cd43e",
+    "reviewed_at": "2026-11-05",
+    "reference": "V2 / neljäs 30 käännöksen erä / lähde 3de79f25",
+    "outcome": "pass",
+    "findings": []
+  },
+  "vhh-mokkapalat:sv": {
+    "source_hash": "d921da51f563ed17fc69fb9ff7a55adfad83a6ae98f0559adb24ae1d6cce55af",
+    "translation_hash": "5df58ddb2e508290ce52fb20c0d5c814f0fcbaaf1d3bd96016d6c16433e7e842",
+    "reviewed_at": "2026-11-05",
+    "reference": "V2 / neljäs 30 käännöksen erä / lähde 3de79f25",
+    "outcome": "pass",
+    "findings": []
+  },
+  "vhh-mokkapalat:th": {
+    "source_hash": "d921da51f563ed17fc69fb9ff7a55adfad83a6ae98f0559adb24ae1d6cce55af",
+    "translation_hash": "4e7c692f94dba2b5a2ec77edeb4b5895230ae2bf5bda8e7a0aee0cd63d6a2603",
+    "reviewed_at": "2026-11-05",
+    "reference": "V2 / neljäs 30 käännöksen erä / lähde 3de79f25",
     "outcome": "pass",
     "findings": []
   },
