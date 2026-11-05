@@ -1,4 +1,4 @@
-import {isP1CoconutHold,assertP1CoconutHold,assertOnlyP1CoconutInputChanges} from './p1-coconut-hold-guard';
+import {isP1CoconutHold,assertP1CoconutHold} from './p1-coconut-hold-guard';
 import {restorePreEHold} from './restore-pre-ehold';
 import test from 'node:test';import assert from 'node:assert/strict';import {readFileSync} from 'node:fs';import {createHash} from 'node:crypto';import {loadPacks} from '../scripts/gk80-release';import {calculateCandidate} from '../scripts/gk80-candidate-policy';
 const root=new URL('../../',import.meta.url);const json=(f:string)=>JSON.parse(readFileSync(new URL(f,root),'utf8'));
