@@ -2,7 +2,7 @@
 
 **EI julkaistava GK-laskelma.** Lähderesepti julkaistu PR #294:ssä, annos on **puoli** n. 25 cm:n pizzaa, erä 2 annosta.
 FI: reseptit/paaruoat/raejuustopizza-kaurajauhopohjalla.md
-Laskenta: docs/nutrition/calculations/raejuustopizza-kaurajauhopohjalla.json, sourceHash 32e6247c13590f4f7e9e767c25bd4f0df09af83e1d5becf1ea7cc5b486489122, laskentapäivä 5.11.2026.
+Laskenta: docs/nutrition/calculations/raejuustopizza-kaurajauhopohjalla.json, laskentapäivä 5.11.2026. Fixturessa on erikseen reseptitekstin ja koostumuspaketin UTF-8/LF-tarkisteet sekä ravintoauditoinnin aines- ja annossidos.
 
 ## 1. Tosi lähtötieto: imeytyvä hiilihydraatti
 
@@ -17,6 +17,8 @@ Laskenta: docs/nutrition/calculations/raejuustopizza-kaurajauhopohjalla.json, so
 | 60 g tomaattimurskaa | 1,035000 | Fineli 398 |
 | mozzarella, pepperoni ja suola | 0,000000 | juuri nykyisten sidottujen ravintoarvorivien mukaisesti |
 | **Yhteensä / annos** | **12,902625** | Julkinen ravintoarvio pyöristetään 12,90 g |
+
+Tase toistaa sidotun koostumuspaketin ilmoitetut arvot. Kalkkunapepperonin pakkausmerkinnän 0 g on laskennassa käytetty ilmoitus. Pyöristyksen vuoksi se tarvitsee B-menetelmässä perustellun ylärajan tai jää avoimeksi.
 
 Kaurajauhon osuus hiilihydraatista on 7,984625 / 12,902625 ≈ **61,884 %**. Muita hiilihydraatteja on 4,918 g annosta kohti, joten niitä ei saa piilottaa poisjättöön tai olettaa GI 0:ksi. Näin pysytään myös tiukan nykyisen A-menetelmän puolella rehellisinä.
 
@@ -50,6 +52,6 @@ Koneellinen [pilotti-JSON](raejuustopizza-laskentapilotti.json) erottaa CHO-fakt
 ## 5. Hyväksyntäkriteerit tälle pilotille
 
 - CHO-summa 12,902625 g/annos reproduktioidaan muuttamatta ravintoarvion alkuperäisiä tietueita.
-- Ei uusia kovakoodattuja kaura-GI-oletuksia. Kaikki myöhemmät GI-vastineet nimetään, lähteistetään ja valmistustestataan.
+- Ei uusia kovakoodattuja kaura-GI-oletuksia. Jokaiselle myöhemmälle GI-vastineelle kirjataan lähde, valmistuksen vastaavuus ja hyväksytty käyttöraja. Soveltuvuus arvioidaan dokumentoidusta valmistuksesta.
 - Väärä ainesmäärä, annosmäärä tai sourceHash vanhentaa pilottisidoksen.
 - Käyttäjä ei koskaan näe 'GK 8' vain siksi, että mitä-jos-taulukon keskiskenaario sattuu antamaan sen.

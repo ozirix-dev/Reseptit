@@ -25,23 +25,22 @@ Yksityisen Recipavo-reseptin userScope on erillinen; henkilötietoja, käyttäj�
   "publicationStatus": "NOT_REVIEWED",
   "pointPerServing": null,
   "scenariosPerServing": null,
-  "whatIfValues": null,
   "ingredients": [],
   "unresolved": [],
   "review": null
 }
 ```
 
-Tämä on käsitteellinen rajapinta, ei lupa muuttaa vanhan JSON-skeeman kenttiä. 'null' tarkoittaa ettei numeerista arvoa ole, ei GK 0. whatIfValues ei koskaan sisälly tuotannon resepti- tai versionCoverage-tietueisiin.
+Tämä on käsitteellinen rajapinta, ei lupa muuttaa vanhan JSON-skeeman kenttiä. 'null' tarkoittaa ettei numeerista arvoa ole, ei GK 0. C-herkkyyskokeella on oma WHAT_IF_ONLY-tulostyyppi ja erillinen tulostuspolku. B:n julkaisukytkentä hyväksyy vain menetelmäversion mukaisen B-tyypin, jonka julkaisutarkiste sitoo syötteen, lähteet, menetelmän, laskentatuloksen ja esitysversion samaan päätökseen.
 
 ## 3. Arviointialgoritmi
 
-1. Hae kanonisen FI-reseptin annokset ja ainesmäärät (ei suoraan HTML:stä). Bindaa nykyinen laskenta-JSON vain, jos laskennan sourceHash vastaa hyväksyttyä reseptiversiota; muutoin STALE_INPUT.
+1. Hae kanonisen FI-reseptin annokset ja ainesmäärät (ei suoraan HTML:stä). Kytke laskenta-JSON vain, jos sen sourceHash vastaa reseptin ravintosyötteen tarkistetta. Sido myös reseptitekstin ja koostumuspaketin omat tarkisteet arvioon. Jos jokin sidos vanhenee, palauta STALE_INPUT.
 2. Muunna ruoan massa syötäväksi grammamääräksi ja saatavaksi CHO:ksi sen omalla koostumussopimuksella. Säilytä polyolit erikseen. Epäselvä muunnos -> NEEDS_CLARIFICATION.
 3. Määritä **yksi** ei-päällekkäinen laskentayksikkö kullekin hiilihydraattimassalle: valmis komponentti TAI ainesosa. Tarkista koko erän CHO-tase/annos; ei kaksoislaskentaa.
 4. Hae GI Knowledge Basesta ehdokkaat read-only. Valitse vain täsmäävät, versiollisesti katselmoidut soveltuvuudet. Jos niitä ei ole, luo GI_APPLICABILITY_REVIEW tai RESEARCH_REQUIRED. Älä pyydä kielimallia generoimaan GI:tä.
 5. Lasketut termit: GK_i/annos = (erän saatava, GI-testiperustaan sopiva CHO_i / annokset) * GI_i/100. Tarkistettava summien uudelleenlaskenta Decimal-aritmetiikalla. Valmisteen GI kattaa vastaavan kokonaiskomponentin, ei sen yksittäisiä aineksia toistamiseen.
-6. Jos kaikki olennaiset termit läpäisevät tulevan menetelmäversion portit, muodosta MODEL_POINT_REVIEWABLE tai MODEL_SCENARIOS_REVIEWABLE. Muuten point=null, listaa osasumma vain tutkimusta varten.
+6. Jos jokainen positiivinen CHO-termi on ratkaistu ja kaikki termit läpäisevät menetelmäversion portit, muodosta MODEL_POINT_REVIEWABLE tai MODEL_SCENARIOS_REVIEWABLE. Muuten point=null, listaa osasumma vain tutkimusta varten.
 7. Review tarkistaa hashit ja lähdekäytön. Omistajan päätös tarvitaan julkisen Reseptit-sisällön julkaisuun. Mikä tahansa määrä-, valmistus-, koostumus-, GI-, soveltuvuus- tai menetelmämuutos vanhentaa luvan.
 8. Julkiselle sivulle siirretään vain nimenomaisen B-julkaisustatuksen sisältävä luku. Legacy-GK-funktioille ei syötetä tätä tulosta A-tilaan.
 

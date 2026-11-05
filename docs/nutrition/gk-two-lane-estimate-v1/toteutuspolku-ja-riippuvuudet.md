@@ -13,6 +13,8 @@
 | V4: Recipavo omat reseptit | Samasta ydinlaskimesta yksityinen ennakkoarvio, yksi olennaisin tarkennuskysymys kerrallaan, muuttuneen syötteen uudelleenlaskenta | Ei yksityisiä reseptejä julkiseen GitHubiin tai kysymättä pilvipalveluun | Privacy/performance/usability-pilotti |
 | V5: skaalaus ja vertailu | Kerran hyväksyttyjen soveltuvuuksien hallittu reuse 30+ reseptin erissä; 10–20 reseptin ulkoinen vertailu erillisen suunnitelman mukaan | Ei 300 ihmis-GI-testiä tai koko repositorion CI:tä jokaiselle ainekselle | Uudelleenkäyttöaste, virhe- ja peruutustilastot |
 
+V1:n pienin hyödyllinen rajaus on puhdas laskentafunktio ja paikallinen CLI. Syöte sisältää versionoidut annokset, koostumusrivit ja katselmoidut GI-sidokset. Tuloste on toistettava ehdokas tai perusteltu HOLD, jonka esteillä on ainesosa- ja lähdetunnisteet. Testaa ensin pizzan HOLD, yksi synteettinen täydellinen annos, kuivan ja kypsän massan ristiriita sekä komponentin kaksoislaskenta. Julkaisu-, Recipavo- ja tietokantasovittimet kuuluvat myöhempiin vaiheisiin.
+
 V1:n koodia ei ole vielä tässä PR:ssä. Se tehdään vasta kun rajapinta- ja menetelmäpäätös on hyväksytty. Nopein hyöty tulee **yhdestä GI-vastineen hyväksynnästä moneen reseptiin**, ei GK100:n vanhojen porttien kytkemisestä pois.
 
 ## Tiedossa olevat rajapinnat ja rinnakkaiset PR:t (tarkistettu 5.11.2026)
@@ -40,7 +42,7 @@ Avoimet PR:t ovat tarkistushetken tilannekuva; niiden haarojen HEADit ja tiedost
 
 1. Sallitaanko B-arvio julkisessa palvelussa vai vain Recipavon henkilökohtaisessa osiossa?
 2. Saako B:n kerran hyväksyttyjä GI-vastineita julkaista jatkossa automatisoidusti saman soveltuvuusavaimen piirissä, vai vaaditaanko toimituksellinen erähyväksyntä? Ehdotus: pilotissa erähyväksyntä.
-3. Mikä sallittu B-poisjättö/epävarmuusraja on? Ehdotus: V1 julkinen B vaatii kaikki positiiviset olennaiset GI-osuudet ratkaistuksi; myöhempi vaikutusrajainen sääntö tarvitsee erillisen päätöksen.
+3. Mikä sallittu B-poisjättö/epävarmuusraja on? Ehdotus: V1 tuottaa sisäisen ehdokkaan vain, kun kaikki positiiviset CHO-osuudet ja niiden GI-sidokset on ratkaistu; myöhempi vaikutusrajainen sääntö tarvitsee erillisen päätöksen.
 4. Näytetäänkö B:n matala/keskikorkea/korkea luokka? Ehdotus: ei V1:ssä.
 5. Miten peruuttaminen, lähteen päivittyminen ja automaattinen uudelleentarkistus näkyvät? Ehdotus: vanhentunut B-arvio piilotetaan, ei siirretä A:han.
 
