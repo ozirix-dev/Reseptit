@@ -4,6 +4,8 @@ import { readFileSync } from "node:fs";
 import path from "node:path";
 import { recipeTextForApprovedSnapshot } from "../scripts/approved-recipe-note-edits";
 import { parseMarkdown } from "../src/content/markdown";
+import { textHash } from "../scripts/gk149-model";
+import approvedTranslations from "./approved-translation-baseline.json";
 
 const translationDraftCommits = new Map([
   ["kaannokset/en/jalkiruoat/keto-mutakakku.md", "d6531cd0592b01c0106a24bb6a3bd930dedbc504"],
@@ -17,8 +19,8 @@ const translationDraftCommits = new Map([
   ["kaannokset/th/jalkiruoat/meheva-suklaakakku.md", "0989c731ebd8e1e6c75935714c8fc2cf5bbf890a"],
 ]);
 
-// The first translation publication batch is already approved on main (PR #270).
-const translationPublication = "3de79f256490067500fe7f96706d4f4b20d26f91";
+// Byte fingerprints of the publication changes from the pinned PR #270 merge.
+const approvedChanges = new Map(Object.entries(approvedTranslations.changes));
 
 export function assertRecipeBaseline(root: string, baseline: string, ...protectedPaths: string[]) {
   const changes = execFileSync(
@@ -27,17 +29,11 @@ export function assertRecipeBaseline(root: string, baseline: string, ...protecte
     { cwd: root, encoding: "utf8" },
   ).trim().split(/\r?\n/).filter(Boolean);
 
-  const publishedChanges = new Set(execFileSync("git", [
-    "diff", "--no-renames", "--name-status", translationPublication + "^1", translationPublication,
-    "--", "reseptit", "kaannokset",
-  ], { cwd: root, encoding: "utf8" }).trim().split(/\r?\n/));
-
   for (const change of changes) {
     const [status, file] = change.split("\t");
-    if (publishedChanges.has(change)) {
-      const approved = execFileSync("git", ["show", translationPublication + ":" + file], { cwd: root, encoding: "utf8" });
-      const current = readFileSync(path.join(root, file), "utf8").replaceAll("\r\n", "\n");
-      assert.equal(current, approved, change);
+    const approved = approvedChanges.get(file);
+    if (approved?.status === status) {
+      assert.equal(textHash(readFileSync(path.join(root, file), "utf8")), approved.sha256, change);
       continue;
     }
     if (status === "M" && (file.startsWith("reseptit/") || file.startsWith("kaannokset/"))) {
