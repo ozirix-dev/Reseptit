@@ -1,3 +1,5 @@
+import {gkVariantScope} from './gk-estimate-scope';
+import type {GkOnlyVariant} from './gk-only-types';
 export type GkRange = { min: number; max: number };
 
 export type GkEstimate =
@@ -27,7 +29,7 @@ export function gkEstimateClass(estimate: GkEstimate) {
 /** Home-recipe points and ranges; study servings remain a separate comparison scope. */
 export function countPublishedGkEstimates(
  original:Array<{recipeId:string;status:string;glycemicLoadPerServing:number|null;glycemicLoadRangePerServing?:GkRange|null}>,
- variants:Array<{recipeId:string;point:number|null;scenarioRange:GkRange|null;studyServing?:true}>,
+ variants:Array<Pick<GkOnlyVariant,'recipeId'|'versionId'|'inputSha256'|'point'|'scenarioRange'|'studyServing'>>,
 ) {
  const originalIds=new Set(original.map(r=>r.recipeId));
  if(originalIds.size!==original.length)throw Error('Duplicate original recipe');
@@ -35,7 +37,7 @@ export function countPublishedGkEstimates(
  let studyComparisons=0;
  for(const v of variants){
   if(!originalIds.has(v.recipeId))throw Error('Unknown recipe scope');
-  if(v.studyServing){studyComparisons++;continue;}
+  if(gkVariantScope(v)==='STUDY_COMPARISON'){studyComparisons++;continue;}
   if(home.has(v.recipeId)||original.find(r=>r.recipeId===v.recipeId)!.status==='CALCULATED')throw Error('Duplicate home numeric scope');
   home.set(v.recipeId,v);
  }

@@ -1,3 +1,5 @@
+import {readFileSync} from 'node:fs';
+import {manakishStudyBinding} from '../src/features/recipes/gk-estimate-scope';
 import { createElement } from "react";
 import { renderToStaticMarkup } from "react-dom/server";
 import { MemoryRouter } from "react-router-dom";
@@ -61,11 +63,27 @@ test("approved range display and coverage preserve the existing version contract
 
 test('home estimate counts never let a study comparison overwrite an original or home version',()=>{
  const original=[{recipeId:'original',status:'CALCULATED',glycemicLoadPerServing:7},{recipeId:'version',status:'INSUFFICIENT SOURCE DATA',glycemicLoadPerServing:null}];
- const home={recipeId:'version',point:null,scenarioRange:{min:8,max:12}};
- const study={recipeId:'original',point:null,scenarioRange:{min:20,max:30},studyServing:true as const};
+ const home={versionId:'fixture',inputSha256:'fixture',recipeId:'version',point:null,scenarioRange:{min:8,max:12}};
+ const study={versionId:'fixture-study',inputSha256:'fixture-study',recipeId:'original',point:null,scenarioRange:{min:20,max:30},studyServing:true as const};
  assert.deepEqual(countPublishedGkEstimates(original,[home,study]),{exact:1,range:1,missing:0,total:2,studyComparisons:1});
  assert.throws(()=>countPublishedGkEstimates(original,[home,home]),/Duplicate/);
  assert.throws(()=>countPublishedGkEstimates(original,[{...home,recipeId:'other'}]),/Unknown/);
  assert.throws(()=>calculateGkScenarios(1,['bean'],[scenarios[0],scenarios[0]]),/unique/);
  assert.throws(()=>calculateGkScenarios(1,['bean'],[{...scenarios[0],ingredients:[{...food,grams:1,availableChoPer100g:101,gi:60}]}]),/Invalid/);
+});
+
+test('real approved corpus counts eight studies including sealed manakish without changing its packet',()=>{
+ const report=JSON.parse(readFileSync(new URL('../../tmp/nutrition/glycemic-load-pilot.json',import.meta.url),'utf8'));
+ const before=JSON.stringify(report.gkOnlyVariants);
+ const manakish=report.gkOnlyVariants.find((v:any)=>v.recipeId===manakishStudyBinding.recipeId);
+ assert.equal(manakish.studyServing,undefined);
+ const counts=countPublishedGkEstimates(report.results,report.gkOnlyVariants);
+ assert.equal(counts.studyComparisons,8);
+ assert.equal(counts.studyComparisons,report.versionCoverage.studyServingRecipeIds.length);
+ assert.equal(counts.exact+counts.range,235);
+ assert.equal(counts.missing,91);
+ assert.equal(JSON.stringify(report.gkOnlyVariants),before);
+ const changed=structuredClone(report.gkOnlyVariants);
+ changed.find((v:any)=>v.recipeId===manakishStudyBinding.recipeId).inputSha256='changed';
+ assert.throws(()=>countPublishedGkEstimates(report.results,changed),/GK_SCOPE_REVIEW_REQUIRED/);
 });
