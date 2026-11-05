@@ -4,6 +4,7 @@ import { readFileSync } from 'node:fs';
 import { createElement } from 'react';
 import { renderToStaticMarkup } from 'react-dom/server';
 import { MemoryRouter } from 'react-router-dom';
+import { countGkVersions } from '../src/features/recipes/gk-only-types';
 import { GkOnlyVariantPanel } from '../src/features/recipes/GkOnlyVariantPanel';
 import { fingerprint } from '../scripts/gk80-candidate-model';
 import { mixedApprovalPath, mixedBindingsPath, mixedPolicySha256, MIXED_EVIDENCE_METHOD, type MixedEvidencePacket } from '../scripts/gk100-mixed-evidence';
@@ -103,11 +104,44 @@ test('a sealed study serving keeps its scope and quantities beside the GL estima
   entry.studyServing = true;
   assert.throws(() => applyDecisions(checked, approve(unmarked, entry.recipeId)), /INVALID_OR_STALE_DECISIONS/);
   const decisions = approve(checked, entry.recipeId);
-  const plan = prepareRelease(checked, decisions, coverage, base, read);
+  const legacyCoverage = prepareRelease(checked, decisions, coverage, base, read);
+  assert.equal(legacyCoverage.rows[0].reason, 'MAIN_STUDY_COVERAGE_REQUIRED');
+  const plan = prepareRelease(checked, decisions, { ...coverage, studyServingRecipeIds: [] }, base, read);
   const bundle = makeReleaseBundle(checked, batch, decisions, plan);
-  const [variant] = verifyReleaseBundle(bundle, {
-    schemaVersion: 1, bundleSha256: bundle.bundleSha256, evidence: 'fixture authorization',
-  }, read);
+  const authorize = (bundleSha256: string) => ({
+    schemaVersion: 1 as const, bundleSha256, evidence: 'fixture authorization',
+  });
+  const [variant] = verifyReleaseBundle(bundle, authorize(bundle.bundleSha256), read);
+  assert.equal(plan.rows[0].state, 'RELEASE_READY');
+  assert.equal(bundle.expectedCoverageDelta, 0);
+
+  const { bundleSha256: _, ...body } = bundle;
+  const overstated = { ...body, expectedCoverageDelta: 1 };
+  const forged = { ...overstated, bundleSha256: fingerprint(overstated) };
+  assert.throws(() => verifyReleaseBundle(forged, authorize(forged.bundleSha256), read), /GK100_RELEASE_COVERAGE_DELTA/);
+
+  const existingRecipe = { ...coverage, numericRecipeIds: [entry.recipeId], studyServingRecipeIds: [] };
+  const existingStudy = { ...coverage, studyServingRecipeIds: [entry.recipeId] };
+  assert.equal(prepareRelease(checked, decisions, existingRecipe, base, read).rows[0].state, 'RELEASE_READY');
+  assert.equal(prepareRelease(checked, decisions, existingStudy, base, read).rows[0].reason, 'MAIN_ALREADY_HAS_STUDY_SERVING');
+  assert.equal(prepareRelease(unmarked, approve(unmarked, entry.recipeId), existingStudy, base, read).expectedCoverageDelta, 1);
+
+  const missingOriginal = [{ recipeId: entry.recipeId, status: 'INSUFFICIENT_SOURCE_DATA' }];
+  const studyOnly = countGkVersions(missingOriginal, [variant]);
+  assert.deepEqual(studyOnly.numericRecipeIds, []);
+  assert.deepEqual(studyOnly.studyServingRecipeIds, [entry.recipeId]);
+  assert.deepEqual([studyOnly.numericRecipes, studyOnly.missing, studyOnly.additionalA, studyOnly.additionalB], [0, 1, 0, 0]);
+  const home = unmarked.variants.get(entry.recipeId)!;
+  const both = countGkVersions(missingOriginal, [variant, home]);
+  assert.deepEqual(both, countGkVersions(missingOriginal, [home, variant]));
+  assert.deepEqual(both.numericRecipeIds, [entry.recipeId]);
+  assert.deepEqual(both.studyServingRecipeIds, [entry.recipeId]);
+  assert.deepEqual([both.numericRecipes, both.missing, both.additionalA, both.additionalB], [1, 0, 0, 1]);
+  const withOriginal = countGkVersions([{ ...missingOriginal[0], status: 'CALCULATED' }], [variant]);
+  assert.equal(withOriginal.originalNumeric, 1);
+  assert.equal(withOriginal.additionalA, 0);
+  assert.throws(() => countGkVersions(missingOriginal, [variant, variant]), /distinct recipe within its scope/);
+  assert.throws(() => countGkVersions(missingOriginal, [{ ...variant, point: null }]), /Numeric GK-only value missing/);
   const html = renderToStaticMarkup(createElement(MemoryRouter, null,
     createElement(GkOnlyVariantPanel, { variant, locale: 'en', servings: 4 })));
   const [summary] = html.split('<details');

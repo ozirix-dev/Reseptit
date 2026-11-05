@@ -50,8 +50,8 @@ const sources = [
 
 const pageSize = 24;
 const liverRecipeId = "maksalaatikko-kukkakaalilla";
-const variantsByRecipe = new Map(gkOnlyVariants.map((variant) => [variant.recipeId, variant]));
-const recipeEstimateVariants = new Set(gkOnlyVariants.filter((variant) => !variant.studyServing).map((variant) => variant.recipeId));
+const recipeEstimateVariants = new Map(gkOnlyVariants.filter(variant => !variant.studyServing).map(variant => [variant.recipeId, variant]));
+const studyServingVariants = new Map(gkOnlyVariants.filter(variant => variant.studyServing).map(variant => [variant.recipeId, variant]));
 
 const uxCopy = {
   fi: {
@@ -198,7 +198,8 @@ export function GlycemicLoadPilotPage() {
   function renderRecipe(result: typeof glycemicLoadPilotResults[number]) {
     const localized = result.localeRoutes[locale] ?? result.localeRoutes.fi;
     const isLiverRecipe = result.recipeId === liverRecipeId;
-    const variant = variantsByRecipe.get(result.recipeId);
+    const variant = recipeEstimateVariants.get(result.recipeId);
+    const studyServing = studyServingVariants.get(result.recipeId);
     return <li key={result.recipeId} id={result.recipeId} className="glycemic-pilot__recipe" tabIndex={-1}>
       {result === linked ? <p className="eyebrow">{ux.linked}</p> : null}
       <h3><Link to={localized?.routePath ?? result.routePath} lang={isLiverRecipe ? locale : localized ? recipeLocaleFromPath(localized.routePath) : "fi"}>{titleFor(result)}</Link></h3>
@@ -216,6 +217,7 @@ export function GlycemicLoadPilotPage() {
         />
       </> : <MissingEstimate result={result} locale={locale} explanation={isLiverRecipe ? text.liver : undefined} />}
       {variant ? <GkOnlyVariantPanel variant={variant} locale={locale} compact /> : null}
+      {studyServing ? <GkOnlyVariantPanel variant={studyServing} locale={locale} compact /> : null}
     </li>;
   }
 
@@ -253,7 +255,7 @@ export function GlycemicLoadPilotPage() {
           <button type="button" onClick={() => showResults(Infinity)}>{ux.all}</button>
         </div> : null}
       </section>
-      <details className="glycemic-pilot__method glycemic-pilot__disclosure" id="gk-only-method"><summary>{ux.background}</summary><p>{glycemicLoadPilotReviewedRecipeCount} {text.total}</p><p>{gkOnlyUi[locale].methodText}</p><ul data-gk-coverage="version-aware"><li><strong>{gkVersionCoverage.numericRecipes}</strong> / {gkVersionCoverage.total} — {gkOnlyUi[locale].coverage}</li><li>A: {gkVersionCoverage.originalNumeric+gkVersionCoverage.additionalA} — {gkOnlyUi[locale].aCount}</li><li>B: {gkVersionCoverage.additionalB} — {gkOnlyUi[locale].bCount}</li><li>C: {gkVersionCoverage.classOnly} — {gkOnlyUi[locale].cCount}</li><li data-gk-coverage="original"><strong>{gkVersionCoverage.originalNumeric}</strong> — {gkScopeUi[locale].originalCoverage}</li><li><strong>{gkVersionCoverage.total - gkVersionCoverage.originalNumeric}</strong> — {gkScopeUi[locale].originalMissing}</li><li><strong>{gkVersionCoverage.missing}</strong> — {gkScopeUi[locale].versionMissing}</li></ul></details>
+      <details className="glycemic-pilot__method glycemic-pilot__disclosure" id="gk-only-method"><summary>{ux.background}</summary><p>{glycemicLoadPilotReviewedRecipeCount} {text.total}</p><p>{gkOnlyUi[locale].methodText}</p><ul data-gk-coverage="version-aware"><li><strong>{gkVersionCoverage.numericRecipes}</strong> / {gkVersionCoverage.total} — {gkOnlyUi[locale].coverage}</li><li>A: {gkVersionCoverage.originalNumeric+gkVersionCoverage.additionalA} — {gkOnlyUi[locale].aCount}</li><li>B: {gkVersionCoverage.additionalB} — {gkOnlyUi[locale].bCount}</li><li>C: {gkVersionCoverage.classOnly} — {gkOnlyUi[locale].cCount}</li><li data-gk-coverage="original"><strong>{gkVersionCoverage.originalNumeric}</strong> — {gkScopeUi[locale].originalCoverage}</li><li><strong>{gkVersionCoverage.total - gkVersionCoverage.originalNumeric}</strong> — {gkScopeUi[locale].originalMissing}</li><li><strong>{gkVersionCoverage.missing}</strong> — {gkScopeUi[locale].versionMissing}</li><li><strong>{gkVersionCoverage.studyServingRecipeIds.length}</strong> — {gkScopeUi[locale].studyCoverage}</li></ul></details>
       <details className="glycemic-pilot__method glycemic-pilot__disclosure" aria-labelledby="glycemic-pilot-method"><summary>{ux.method}</summary>
         <h2 id="glycemic-pilot-method">{text.method}</h2><p><strong>{text.formula}</strong></p><p>{text.fineli}</p><p>{text.gi}</p><p>{text.interpretation}</p><p data-method="gk80-modelled">{modelledMethod[locale]}</p>
         <h3>{text.sources}</h3><ul className="glycemic-pilot__sources">{sources.map(([title, url]) => <li key={url}><a href={url} rel="noopener noreferrer">{title}</a></li>)}</ul>

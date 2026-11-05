@@ -34,13 +34,15 @@ Syöte käyttää muotoa `{schemaVersion:1,batchId,candidates:[{recipeId,packetP
 
 Kirjaa käyttäjän päätöksistä erillinen JSON, jonka `schemaVersion` on 1 ja `manifestSha256` on omistajalle esitetyn manifestin tarkiste. Jokaisessa `records`-tietueessa on `recipeId`, `candidateSha256`, `originalSha256`, `inputSha256`, `decision` (`APPROVE`, `REJECT`, `RETURN`) ja `evidence` (viite nimenomaiseen omistajapäätökseen). Päätöksen voi jättää puuttumaan. Päätöstiedoston kirjaaja vastaa viitteen ja valtuutuksen aitoudesta. Tarkisteet sitovat sisällön, ja Git-katselmointi suojaa päätöstiedostojen muutoksia.
 
-Main-vertailun syöte on `{schemaVersion:1,mainSha,numericRecipeIds}`. Ota tunnisteet nykyisestä, puhtaalla main-työpuulla tuotetusta `tmp/nutrition/glycemic-load-pilot.json`-raportin `versionCoverage.numericRecipeIds`-kentästä. Kirjaa mainin täysi SHA raporttia tuotettaessa. Käytä tuoretta raporttia ja hae main-objekti ennen valmistelua.
+Main-vertailun syöte on `{schemaVersion:1,mainSha,numericRecipeIds,studyServingRecipeIds?}`. Ota tunnisteet nykyisestä, puhtaalla main-työpuulla tuotetusta `tmp/nutrition/glycemic-load-pilot.json`-raportin `versionCoverage.numericRecipeIds`-kentästä. Kopioi tutkimusvertailujen tunnisteet saman raportin `versionCoverage.studyServingRecipeIds`-kentästä. Tutkimusannosten valmistelu edellyttää listaa. Käytä tyhjää listaa, kun olet varmistanut, ettei mainissa ole julkaistuja tutkimusannoksia. Vanha syötemuoto kelpaa edelleen kotireseptien valmisteluun. Kirjaa mainin täysi SHA raporttia tuotettaessa. Käytä tuoretta raporttia ja hae main-objekti ennen valmistelua.
 
 ```powershell
 npm run --silent gk:approval-check -- prepare CANDIDATE_COMMIT batch.json decisions.json main-coverage.json
 ```
 
 Komento tarkistaa GitHubin nykyisen mainin ja valitsee vain hyväksytyt yhteensopivat versiot. Tulos sisältää pois jääneiden rivien syyt, odotetun kattavuusmuutoksen, kopioitavat paketti- ja evidenssitiedostot tarkisteineen sekä valmiin `bundle`-kentän. Varmista main uudelleen ennen Draft PR:n avaamista. Tee oma release-haara mainista, tuo vain valitut uudet tiedostot ja tallenna bundle julkaisun valmistelua varten. Alkuperäisiä reseptejä ei kopioida eikä muuteta.
+
+`studyServing`-paketti voi olla julkaisuvalmis myös silloin, kun reseptillä on jo numeerinen GK. Kotireseptin versio ja tutkimusvertailu tarkistetaan erikseen päällekkäisyyksien varalta. `expectedCoverageDelta` ilmoittaa, kuinka monta reseptiä saa numeerisen GK:n. Tutkimusannoksia seurataan erikseen.
 
 Tuotantokytkentä lukee vain `docs/nutrition/gk100-approved-releases/*.json`-tiedostoja. Kun omistaja on erikseen valtuuttanut juuri tämän bundlen tuotantokytkennän, sijoita sille kyseiseen hakemistoon tiedosto, jossa on `bundle` sekä `authorization: {schemaVersion:1,bundleSha256,evidence}`. Käytä repo guardin kirjoitus-, commit-, push- ja Draft PR -toimintoja. Hyväksytyt variantit kulkevat olemassa olevan GK-only-generaattorin kautta. Se tarkistaa uudelleen paketit ja päätökset ja estää päällekkäisen numeerisen kattavuuden. Factory-komento tulostaa valmistelun aineiston. PR:n avaaminen ja mahdollinen myöhempi yhdistäminen tapahtuvat omissa hyväksytyissä Git-toimissaan.
 

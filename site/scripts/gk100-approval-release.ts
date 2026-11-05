@@ -34,8 +34,7 @@ export function verifyReleaseBundle(sealed: Bundle & { bundleSha256: string }, a
       || bundleSha256 !== fingerprint(bundle) || authorization.schemaVersion !== 1
       || authorization.bundleSha256 !== bundleSha256 || typeof authorization.evidence !== 'string'
       || !authorization.evidence.trim() || !Array.isArray(bundle.recipeIds) || bundle.recipeIds.length === 0
-      || bundle.recipeIds.length !== new Set(bundle.recipeIds).size
-      || bundle.recipeIds.length !== bundle.expectedCoverageDelta) throw Error('GK100_RELEASE_AUTHORIZATION');
+      || bundle.recipeIds.length !== new Set(bundle.recipeIds).size) throw Error('GK100_RELEASE_AUTHORIZATION');
   const { manifestSha256, ...manifest } = bundle.manifest;
   if (manifestSha256 !== fingerprint(manifest)) throw Error('GK100_RELEASE_MANIFEST_HASH');
   const entries = bundle.batch.candidates.filter(entry => bundle.recipeIds.includes(entry.recipeId));
@@ -51,11 +50,15 @@ export function verifyReleaseBundle(sealed: Bundle & { bundleSha256: string }, a
     ...decisions, manifestSha256: checked.manifest.manifestSha256,
     records: decisions.records.filter(record => bundle.recipeIds.includes(record.recipeId)),
   });
-  return applied.map(row => {
+  const variants = applied.map(row => {
     const variant = checked.variants.get(row.recipeId);
     if (row.state !== 'OWNER_APPROVED' || !variant) throw Error('GK100_RELEASE_OWNER_APPROVAL');
     return variant;
   });
+  if (bundle.expectedCoverageDelta !== variants.filter(variant => !variant.studyServing).length) {
+    throw Error('GK100_RELEASE_COVERAGE_DELTA');
+  }
+  return variants;
 }
 
 export function loadAuthorizedGk100Variants(root: string): GkOnlyVariant[] {

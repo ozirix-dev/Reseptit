@@ -19,6 +19,6 @@ Factory sitoo `studyServing`-esitystavan sekä ehdokasriviin että katselmointii
 
 Chiavanukkaan ainesosalistalta poistettiin valinnainen makeutus, jonka valmistusohje käskee jättämään pois. Korjatun paketin tarkiste on `a0b8175f3d0bdea6c28fea78a809c7a388dbe299011db56b7416714db5890920`.
 
-Tutkimusvertailujen julkaisu edellyttää kattavuuspäätöstä. Nykyinen kattavuus laskee tutkimusvertailun reseptin numeeriseksi osumaksi ja estää myöhemmin kotireseptin oman arvion lisäämisen. Ennen tutkimusvertailujen julkaisua on päätettävä, lasketaanko ne erikseen vai voiko kotireseptin arvio korvata vertailun.
+P2-korjaus erottaa tutkimusvertailut kotireseptien numeerisesta GK-kattavuudesta. Kotireseptin GK-arvio voidaan myöhemmin lisätä tutkimusvertailun rinnalle. Jos erän kaikki kahdeksan versiota hyväksytään ja julkaistaan, chiavanukas lisää kattavuutta yhdellä reseptillä (235/326 → 236/326). Seitsemän tutkimusannosta raportoidaan erikseen. Aiempi PR #271:n avauskuvauksen kattavuusarvio 243/326 sisälsi myös tutkimusannokset.
 
 Tuotantoon kytkeminen edellyttää erillistä, bundlen tarkisteeseen sidottua julkaisulupaa.
