@@ -3,6 +3,7 @@ import { join, relative } from 'node:path';
 import { fingerprint } from './gk80-candidate-model';
 import { checkBatch, applyDecisions, type Batch, type Decisions, type prepareRelease } from './gk100-approval-factory';
 import type { GkOnlyVariant } from '../src/features/recipes/gk-only-types';
+import { gkVariantScope } from '../src/features/recipes/gk-estimate-scope';
 
 type Manifest = ReturnType<typeof checkBatch>['manifest'];
 type Bundle = {
@@ -13,6 +14,10 @@ type Bundle = {
   decisions: Decisions;
   recipeIds: string[];
   expectedCoverageDelta: number;
+  coverageScopeVersion?: 2;
+  expectedOriginalCoverageDelta?: number;
+  expectedVariantCoverageDelta?: number;
+  expectedStudyServingDelta?: number;
   publicationAuthorized: false;
 };
 type Authorization = { schemaVersion: 1; bundleSha256: string; evidence: string };
@@ -22,7 +27,10 @@ export function makeReleaseBundle(checked: ReturnType<typeof checkBatch>, batch:
   const bundle: Bundle = {
     schemaVersion: 1, mainSha: plan.mainSha, batch, manifest: checked.manifest, decisions,
     recipeIds: plan.variants.map(variant => variant.recipeId),
-    expectedCoverageDelta: plan.expectedCoverageDelta, publicationAuthorized: false,
+    expectedCoverageDelta: plan.expectedCoverageDelta, coverageScopeVersion: 2,
+    expectedOriginalCoverageDelta: plan.expectedOriginalCoverageDelta,
+    expectedVariantCoverageDelta: plan.expectedVariantCoverageDelta,
+    expectedStudyServingDelta: plan.expectedStudyServingDelta, publicationAuthorized: false,
   };
   return { ...bundle, bundleSha256: fingerprint(bundle) };
 }
@@ -55,7 +63,17 @@ export function verifyReleaseBundle(sealed: Bundle & { bundleSha256: string }, a
     if (row.state !== 'OWNER_APPROVED' || !variant) throw Error('GK100_RELEASE_OWNER_APPROVAL');
     return variant;
   });
-  if (bundle.expectedCoverageDelta !== variants.filter(variant => !variant.studyServing).length) {
+  if (bundle.coverageScopeVersion === undefined && [bundle.expectedOriginalCoverageDelta, bundle.expectedVariantCoverageDelta, bundle.expectedStudyServingDelta].some(value => value !== undefined)) {
+    throw Error('GK100_RELEASE_COVERAGE_SCOPE');
+  }
+  const homeCount = bundle.coverageScopeVersion === 2
+    ? variants.filter(variant => gkVariantScope(variant) === 'RECIPE_VARIANT').length
+    : variants.filter(variant => !variant.studyServing).length;
+  if (bundle.coverageScopeVersion !== undefined && bundle.coverageScopeVersion !== 2) throw Error('GK100_RELEASE_COVERAGE_SCOPE');
+  if (bundle.coverageScopeVersion === 2 && (bundle.expectedOriginalCoverageDelta !== 0
+      || bundle.expectedVariantCoverageDelta !== homeCount
+      || bundle.expectedStudyServingDelta !== variants.length - homeCount)) throw Error('GK100_RELEASE_COVERAGE_SCOPE');
+  if (bundle.expectedCoverageDelta !== homeCount) {
     throw Error('GK100_RELEASE_COVERAGE_DELTA');
   }
   return variants;

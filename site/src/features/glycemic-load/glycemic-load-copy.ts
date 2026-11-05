@@ -39,7 +39,7 @@ export const gkCopy = {
     modified: "Arvio koskee muokattua reseptiversiota",
     modifiedA: "Arvio perustuu tämän version raaka-aineisiin ja määriin sekä käytettävissä oleviin lähdetietoihin.",
     modifiedB: "Tämän version arviossa käytettiin myös laskennallisia oletuksia.",
-    missing: "GK-arviota ei ole saatavilla.",
+    missing: "GK-arviota ei voida laskea luotettavasti.",
     missingBasis: "Yhden tai useamman raaka-aineen tietoja puuttuu tai laskennan perusteissa on epävarmuutta. Koko annoksen arviota ei voi julkaista luotettavasti.",
     why: "Miksi arvio puuttuu?",
     blockers: {
@@ -92,7 +92,7 @@ export const gkCopy = {
     modified: "Estimate for the modified recipe",
     modifiedA: "The estimate uses the ingredients and amounts in this version and the available source data.",
     modifiedB: "The estimate for this version also uses modeled assumptions.",
-    missing: "A GL estimate is unavailable.",
+    missing: "A reliable glycemic load estimate is not available.",
     missingBasis: "Some ingredient data or calculation inputs could not be verified, so there is no reliable estimate for the whole serving.",
     why: "Why is the estimate missing?",
     blockers: {
@@ -145,7 +145,7 @@ export const gkCopy = {
     modified: "Uppskattning för den ändrade versionen",
     modifiedA: "Uppskattningen bygger på ingredienserna och mängderna i den här versionen samt tillgängliga källor.",
     modifiedB: "Uppskattningen för den här versionen bygger också på antaganden i en modell.",
-    missing: "En GL-uppskattning saknas.",
+    missing: "En tillförlitlig uppskattning av glykemisk belastning är inte tillgänglig.",
     missingBasis: "Vissa ingrediensuppgifter eller delar av beräkningsunderlaget kunde inte verifieras, så en tillförlitlig uppskattning för hela portionen saknas.",
     why: "Varför saknas en uppskattning?",
     blockers: {
@@ -198,7 +198,7 @@ export const gkCopy = {
     modified: "ค่าประมาณสำหรับสูตรที่ปรับแล้ว",
     modifiedA: "ค่าประมาณนี้อิงจากวัตถุดิบ ปริมาณในสูตรที่ปรับแล้ว และแหล่งข้อมูลที่มี",
     modifiedB: "ค่าประมาณของสูตรที่ปรับแล้วใช้สมมติฐานของแบบจำลองด้วย",
-    missing: "ยังไม่มีค่าประมาณ GL",
+    missing: "ยังไม่สามารถประมาณค่าภาระน้ำตาลได้อย่างน่าเชื่อถือ",
     missingBasis: "ข้อมูลวัตถุดิบหรือข้อมูลที่ใช้คำนวณบางส่วนยังยืนยันไม่ได้ จึงยังไม่มีค่าประมาณที่เชื่อถือได้สำหรับอาหารหนึ่งที่",
     why: "ทำไมจึงยังไม่มีค่าประมาณ",
     blockers: {

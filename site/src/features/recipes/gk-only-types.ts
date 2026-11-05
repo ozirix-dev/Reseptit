@@ -1,4 +1,5 @@
 import type {RecipeLocale} from '@/types/content';
+import { gkVariantScope } from './gk-estimate-scope';
 export type LocalizedText=Record<RecipeLocale,string>;
 export interface GkOnlyVariant {
  recipeId:string;versionId:string;inputSha256:string;level:'A'|'B';servings:number;
@@ -19,6 +20,13 @@ export interface GkOnlyVariant {
 export interface GkVersionCoverage {
  total:number;
  originalNumeric:number;
+ originalRecipeIds:string[];
+ variantNumeric:number;
+ variantRecipeIds:string[];
+ originalTarget:number;
+ originalTargetGap:number;
+ /** Historical mixed accounting, never original-recipe coverage. */
+ legacyNumericRecipes:number;
  additionalA:number;
  additionalB:number;
  classOnly:number;
@@ -34,12 +42,14 @@ export function countGkVersions(original:Array<{recipeId:string;status:string}>,
  const originalNumeric = new Set(original.filter(row => row.status === 'CALCULATED').map(row => row.recipeId));
  const additional = new Set<string>();
  const studyServings = new Set<string>();
+ const legacyIds = new Set(originalNumeric);
  let additionalA = 0;
  let additionalB = 0;
  for (const variant of variants) {
   const {recipeId, level, point, scenarioRange} = variant;
-  const covered = variant.studyServing ? studyServings : additional;
-  if (!originalIds.has(recipeId) || covered.has(recipeId) || (!variant.studyServing && originalNumeric.has(recipeId))) {
+  const study = gkVariantScope(variant) === 'STUDY_COMPARISON';
+  const covered = study ? studyServings : additional;
+  if (!originalIds.has(recipeId) || covered.has(recipeId) || (!study && originalNumeric.has(recipeId))) {
    throw Error('GK-only version must cover one distinct recipe within its scope; home-recipe versions require missing original GK');
   }
   if (level !== 'A' && level !== 'B') throw Error('Class-only is not numeric');
@@ -48,13 +58,17 @@ export function countGkVersions(original:Array<{recipeId:string;status:string}>,
     && scenarioRange.min >= 0 && scenarioRange.max >= scenarioRange.min;
   if (!validPoint && !validRange) throw Error('Numeric GK-only value missing');
   covered.add(recipeId);
-  if (variant.studyServing) continue;
+  if (!variant.studyServing) legacyIds.add(recipeId);
+  if (study) continue;
   if (level === 'A') additionalA++;
   else additionalB++;
  }
  const numericRecipeIds = [...originalNumeric, ...additional].sort();
  return {
-  total: original.length, originalNumeric: originalNumeric.size, additionalA, additionalB, classOnly: 0,
+  total: original.length, originalNumeric: originalNumeric.size,
+  originalRecipeIds: [...originalNumeric].sort(), variantNumeric: additional.size, variantRecipeIds: [...additional].sort(),
+  originalTarget: Math.ceil(original.length * 0.8), originalTargetGap: Math.max(0, Math.ceil(original.length * 0.8) - originalNumeric.size),
+  legacyNumericRecipes: legacyIds.size, additionalA, additionalB, classOnly: 0,
   numericRecipes: numericRecipeIds.length, missing: original.length - numericRecipeIds.length,
   numericRecipeIds, studyServingRecipeIds: [...studyServings].sort(),
  };

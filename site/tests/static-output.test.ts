@@ -1,5 +1,6 @@
 import { estimateBasis, evidenceLabel, gkCopy, missingReason } from "../src/features/glycemic-load/glycemic-load-copy";
 import {gkOnlyVariants,gkVersionCoverage} from '../src/generated/gk-only-variants.generated';
+import { gkVariantScope } from '../src/features/recipes/gk-estimate-scope';
 import {loadAuthorizedGk100Variants} from '../scripts/gk100-approval-release';
 import {gkOnlyUi,gkOnlyValue,gkScopeUi,studyServingTitle} from '../src/features/recipes/GkOnlyVariantPanel';
 import assert from "node:assert/strict";
@@ -107,7 +108,8 @@ test("vegetable lasagne publishes its supplied image and notes without unsupport
   for (const note of ["havainnekuva", "ei ole koekeitetty", "Allergeenit", "Hans Välimäki", "kaupalliseksi yhteistyöksi", "ei ole hyväksyttyä GK-arvoa"]) {
     assert.ok(html.includes(note), `lasagne: ${note} is visible`);
   }
-  assert.ok(!html.includes(recipeUi.fi.glycemicLoad), "an unsupported GK result is not displayed");
+  assert.ok(!html.includes('data-gk-status="CALCULATED"'), "an unsupported numeric GK result is not displayed");
+  assert.ok(html.includes(gkCopy.fi.missing), "the unavailable original estimate is explained");
   assert.ok(!html.includes("Reseptiluonnos"));
 });
 
@@ -182,8 +184,10 @@ test("GK values link to centralized recipe details on every published translatio
       } else {
         if(gkOnlyVariants.some(v=>v.recipeId===result.recipeId)){
           assert.ok(html.includes('data-macro-scope="NO_MACRO_PACKAGE_FOR_THIS_VERSION"'),`${result.recipeId}/${recipe.locale}: separately approved GK-only version is explicit`);
-          assert.ok(!html.includes('class="recipe-glycemic-load"'),`${result.recipeId}/${recipe.locale}: original incomplete GK is not relabeled as complete`);
-        }else assert.ok(!html.includes(recipeUi[recipe.locale].glycemicLoad), `${result.recipeId}/${recipe.locale}: incomplete GK stays hidden`);
+          assert.ok(html.includes('data-gk-status="UNAVAILABLE"'),`${result.recipeId}/${recipe.locale}: original missing GK stays explicit`);
+          assert.ok(!html.includes('data-gk-status="CALCULATED"'),`${result.recipeId}/${recipe.locale}: variant never supplies original GK`);
+        }
+        assert.ok(html.includes(gkCopy[recipe.locale].missing), `${result.recipeId}/${recipe.locale}: missing original GK is explained`);
       }
     }
   }
@@ -511,7 +515,7 @@ test('approved GK-only versions appear on each locale and home-recipe coverage i
   for(const recipe of recipePages){
    const html=await readFile(path.join(dist,recipe.routePath.slice(1),'index.html'),'utf8'),t=gkOnlyUi[recipe.locale];
    assert.ok(html.includes(`data-gk-version="${variant.versionId}"`),recipe.routePath);
-   if (variant.studyServing) {
+   if (gkVariantScope(variant) === 'STUDY_COMPARISON') {
      const panel = html.match(new RegExp(`<section[^>]*data-gk-version="${variant.versionId}"[^>]*>([\\s\\S]*?)</section>`))?.[1];
      assert.ok(panel, recipe.routePath);
      const [summary] = panel.split('<details');
@@ -526,7 +530,9 @@ test('approved GK-only versions appear on each locale and home-recipe coverage i
    assert.ok(html.includes(gkScopeUi[recipe.locale].macroNotice));assert.ok(html.includes('data-nutrition-scope="ORIGINAL_RECIPE"'));assert.ok(html.includes('data-macro-separation="gk-only"'));assert.ok(html.includes(gkOnlyValue(variant,recipe.locale)));
    const originalHasGk = glycemicLoadPilotResults.some(result => result.recipeId === variant.recipeId
      && result.status === 'CALCULATED' && result.glycemicLoadPerServing !== null);
-   assert.equal(html.includes('class="recipe-glycemic-load"'), originalHasGk, recipe.routePath);
+   assert.equal(html.includes('data-gk-status="CALCULATED"'), originalHasGk, recipe.routePath);
+   assert.equal(html.includes('data-gk-status="UNAVAILABLE"'), !originalHasGk, recipe.routePath);
+   if (!originalHasGk) assert.ok(html.includes(gkCopy[recipe.locale].missing), recipe.routePath);
    if(variant.scenarioRange)assert.ok(html.includes(t.range));if(variant.sensitivity)assert.ok(html.includes(t.sensitivityNote));
 
   }
@@ -556,7 +562,8 @@ test("Swedish and Thai keto mud cake show only the approved modified GL and its 
     for (const { url } of variant.sources.filter(({ url }) => url.startsWith("https://"))) {
       assert.ok(panel.includes(`href="${url.replaceAll("&", "&amp;")}"`), `${locale}: ${url}`);
     }
-    assert.ok(!html.includes('class="recipe-glycemic-load"'));
+    assert.ok(!html.includes('data-gk-status="CALCULATED"'));
+    assert.ok(html.includes(gkCopy[locale].missing));
   }
 });
 

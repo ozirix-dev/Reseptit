@@ -5,6 +5,7 @@ import { textHash } from './gk149-model';
 import { parsePointReviewVariant, type PointReviewCandidate } from './gk100-point-packet';
 import { calculateMixedEvidence, mixedApprovalPath, mixedBindingsPath, mixedPolicySha256, MIXED_EVIDENCE_METHOD, type MixedEvidencePacket } from './gk100-mixed-evidence';
 import type { GkOnlyVariant } from '../src/features/recipes/gk-only-types';
+import { gkVariantScope } from '../src/features/recipes/gk-estimate-scope';
 
 type ReadFile = (path: string) => string;
 type Risk = 'LOW' | 'MEDIUM' | 'HIGH';
@@ -273,6 +274,8 @@ export type MainCoverage = {
   mainSha: string;
   numericRecipeIds: string[];
   studyServingRecipeIds?: string[];
+  originalRecipeIds?: string[];
+  variantRecipeIds?: string[];
 };
 function validCoverageIds(ids: string[]) {
   return Array.isArray(ids) && ids.every(recipeId => typeof recipeId === 'string' && id.test(recipeId))
@@ -282,10 +285,19 @@ export function prepareRelease(checked: Checked, decisions: Decisions, coverage:
   currentMain: string, readMain: ReadFile) {
   if (coverage.schemaVersion !== 1 || !/^[a-f0-9]{40}$/.test(currentMain) || coverage.mainSha !== currentMain
       || !validCoverageIds(coverage.numericRecipeIds)
-      || (coverage.studyServingRecipeIds !== undefined && !validCoverageIds(coverage.studyServingRecipeIds))) {
+      || (coverage.studyServingRecipeIds !== undefined && !validCoverageIds(coverage.studyServingRecipeIds))
+      || (coverage.originalRecipeIds !== undefined && !validCoverageIds(coverage.originalRecipeIds))
+      || (coverage.variantRecipeIds !== undefined && !validCoverageIds(coverage.variantRecipeIds))) {
     fail('INVALID_OR_STALE_MAIN_COVERAGE');
   }
   const existing = new Set(coverage.numericRecipeIds);
+  if ((coverage.originalRecipeIds === undefined) !== (coverage.variantRecipeIds === undefined)
+      || (coverage.originalRecipeIds && coverage.variantRecipeIds && (
+        coverage.originalRecipeIds.some(recipeId => coverage.variantRecipeIds!.includes(recipeId))
+        || [...coverage.originalRecipeIds, ...coverage.variantRecipeIds].length !== existing.size
+        || [...coverage.originalRecipeIds, ...coverage.variantRecipeIds].some(recipeId => !existing.has(recipeId))))) {
+    fail('INVALID_MAIN_COVERAGE_SCOPES');
+  }
   const existingStudyServings = new Set(coverage.studyServingRecipeIds);
   const selected: GkOnlyVariant[] = [];
   const rows = applyDecisions(checked, decisions).map(row => {
@@ -294,7 +306,7 @@ export function prepareRelease(checked: Checked, decisions: Decisions, coverage:
       const variant = checked.variants.get(row.recipeId);
       if (!variant) return fail('NO_RELEASE_VARIANT_FOR_REVIEW_ONLY_METHOD');
       if (!sha.test(row.originalSha256) || textHash(readMain(row.originalPath)) !== row.originalSha256) fail('MAIN_ORIGINAL_CHANGED');
-      if (variant.studyServing) {
+      if (gkVariantScope(variant) === 'STUDY_COMPARISON') {
         if (coverage.studyServingRecipeIds === undefined) fail('MAIN_STUDY_COVERAGE_REQUIRED');
         if (existingStudyServings.has(row.recipeId)) fail('MAIN_ALREADY_HAS_STUDY_SERVING');
       } else if (existing.has(row.recipeId)) fail('MAIN_ALREADY_HAS_NUMERIC_GK');
@@ -310,7 +322,11 @@ export function prepareRelease(checked: Checked, decisions: Decisions, coverage:
     }
   });
   return { schemaVersion: 1, mainSha: currentMain, manifestSha256: checked.manifest.manifestSha256,
-    decisionsSha256: fingerprint(decisions), expectedCoverageDelta: selected.filter(variant => !variant.studyServing).length,
+    decisionsSha256: fingerprint(decisions),
+    expectedOriginalCoverageDelta: 0,
+    expectedVariantCoverageDelta: selected.filter(variant => gkVariantScope(variant) === 'RECIPE_VARIANT').length,
+    expectedStudyServingDelta: selected.filter(variant => gkVariantScope(variant) === 'STUDY_COMPARISON').length,
+    expectedCoverageDelta: selected.filter(variant => gkVariantScope(variant) === 'RECIPE_VARIANT').length,
     publicationAuthorized: false, variants: selected, rows,
     files: rows.flatMap(row => row.technical === 'PASS' && row.state === 'RELEASE_READY'
       ? [{ path: row.packetPath, sha256: row.candidateSha256 },
