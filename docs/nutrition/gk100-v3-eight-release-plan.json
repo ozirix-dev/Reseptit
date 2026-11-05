@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "mainSha": "d9e4fdc314142518b4afdd60933f3f0a75ead519",
-  "manifestSha256": "99884e1eb3c8074858a5c61ce77566db3225e92f7c842ba6464077b4b8d46356",
-  "decisionsSha256": "5d88fadaa87053e0e0936928f357c718e2f339ab6c88e21ee9733c1873a7f625",
-  "expectedCoverageDelta": 5,
+  "manifestSha256": "eded7c91b13fcc8f22c5700920594aade07332988074569807fff61c5f27ae2e",
+  "decisionsSha256": "213727caf3b40dd2f89ed0f10fd6d5ca94dc3c5f1811cb0106c42ebe43f7529d",
+  "expectedCoverageDelta": 7,
   "publicationAuthorized": false,
   "variants": [
     {
@@ -71,7 +71,8 @@
           "kind": "CARBOHYDRATE",
           "note": "50.1 ± 0.1 g enzymatically determined available carbohydrate per control serving. Plain drinking water contributes zero carbohydrate. CC BY 4.0."
         }
-      ]
+      ],
+      "studyServing": true
     },
     {
       "recipeId": "hyderabadi-kanabiryani",
@@ -138,7 +139,8 @@
           "kind": "CARBOHYDRATE",
           "note": "253.9 g experimental portion sized for 50 g available carbohydrate estimated by difference. The 261 g standard serving is separate. The test meal was served with 200 ml of plain water."
         }
-      ]
+      ],
+      "studyServing": true
     },
     {
       "recipeId": "indonesialainen-nasi-goreng-aamiaisriisi",
@@ -205,7 +207,8 @@
           "kind": "CARBOHYDRATE",
           "note": "The methods specify a nominal 25 g available-carbohydrate load and 220 ml of water. Table 1 lists 129 g and a software estimate of 25.10 g carbohydrate."
         }
-      ]
+      ],
+      "studyServing": true
     },
     {
       "recipeId": "baozi",
@@ -272,7 +275,8 @@
           "kind": "CARBOHYDRATE",
           "note": "Table 1 reports 154.7 g prepared food and 32.3 g carbohydrate/100 g. The protocol specifies a 50 g available-carbohydrate load and 200 ml water."
         }
-      ]
+      ],
+      "studyServing": true
     },
     {
       "recipeId": "nasi-lemak",
@@ -339,7 +343,144 @@
           "kind": "CARBOHYDRATE",
           "note": "179.2 g prepared portion; 50 g available carbohydrate test load, with 27.9 g/100 g reported after rounding. The study served 200 ml of plain water."
         }
-      ]
+      ],
+      "studyServing": true
+    },
+    {
+      "recipeId": "meheva-suklaakakku",
+      "versionId": "gk-operation80-review-d033681b8541",
+      "inputSha256": "d033681b8541584d2b92b61f5b7f6a8563e79d4641471b07df57ff42d319fed4",
+      "level": "B",
+      "servings": 1,
+      "point": 20.5,
+      "scenarioRange": null,
+      "rangeKind": null,
+      "omittedCho": 0,
+      "confidence": "LOW",
+      "macroScope": "NO_MACRO_PACKAGE_FOR_THIS_VERSION",
+      "quantityContract": "GK_ONLY_NATIVE_UNITS_V1",
+      "standalonePreparation": true,
+      "ingredients": [
+        {
+          "name": {
+            "fi": "Kuorrutettu Betty Crocker -kakku, koeannos",
+            "en": "Frosted Betty Crocker cake, test serving",
+            "sv": "Betty Crocker-kaka med glasyr, testportion",
+            "th": "เค้ก Betty Crocker พร้อมครีมแต่งหน้า ส่วนทดลอง"
+          },
+          "grams": 107.2
+        },
+        {
+          "name": {
+            "fi": "Juomavesi",
+            "en": "Drinking water",
+            "sv": "Dricksvatten",
+            "th": "น้ำดื่ม"
+          },
+          "grams": null,
+          "quantity": {
+            "amount": 250,
+            "unit": "ml"
+          }
+        }
+      ],
+      "preparation": {
+        "fi": "Historiallinen vertailu koskee {{servings}} koeannosta. Siihen kuului 75,4 g paistettua Betty Crocker Chocolate Fudge Super Moist -kakkua, 31,8 g Creamy Deluxe Dark Dutch Fudge -kuorrutetta ja 250 ml vettä.",
+        "en": "This historical comparison covers {{servings}} test serving. It contained 75.4 g of baked Betty Crocker Chocolate Fudge Super Moist cake, 31.8 g of Creamy Deluxe Dark Dutch Fudge frosting and 250 ml of water.",
+        "sv": "Den historiska jämförelsen gäller {{servings}} testportion. Den innehöll 75,4 g gräddad Betty Crocker Chocolate Fudge Super Moist-kaka, 31,8 g Creamy Deluxe Dark Dutch Fudge-glasyr och 250 ml vatten.",
+        "th": "ข้อมูลเปรียบเทียบจากการศึกษาในอดีตนี้ใช้กับอาหารทดลอง {{servings}} ส่วน ประกอบด้วยเค้ก Betty Crocker Chocolate Fudge Super Moist ที่อบแล้ว 75.4 กรัม ครีมแต่งหน้า Creamy Deluxe Dark Dutch Fudge 31.8 กรัม และน้ำ 250 มิลลิลิตร"
+      },
+      "limitation": {
+        "fi": "GK 20,5 koskee vuoden 2003 kokeen kuorrutettua kakkupalaa. Nykyiset tuotteet ja kotitekoinen suklaakakku vaativat erillisen arvion.",
+        "en": "The GL of 20.5 applies to the frosted cake serving tested in 2003. Current products and the homemade chocolate cake require separate estimates.",
+        "sv": "GB 20,5 gäller kakan med glasyr som testades 2003. Dagens produkter och den hemlagade chokladkakan behöver bedömas separat.",
+        "th": "ค่า GL 20.5 ใช้กับเค้กพร้อมครีมแต่งหน้าที่ทดสอบในปี 2003 ผลิตภัณฑ์ปัจจุบันและเค้กช็อกโกแลตทำเองต้องประเมินแยกต่างหาก"
+      },
+      "codingKinds": [],
+      "sensitivity": null,
+      "sources": [
+        {
+          "title": "Brand-Miller et al. (2003), Table 2",
+          "url": "https://doi.org/10.1093/jn/133.10.3149",
+          "kind": "HUMAN_GI",
+          "note": "Glucose-reference GI 41 ± 4 SEM for the entire frosted chocolate cake, n=10 and 120 min."
+        },
+        {
+          "title": "Brand-Miller et al. (2003), methods and Table 1",
+          "url": "https://doi.org/10.1093/jn/133.10.3149",
+          "kind": "CARBOHYDRATE",
+          "note": "75.4 g baked cake plus 31.8 g frosting, with 51.8 g total carbohydrate minus 1.8 g fiber. The test portion provided 50 g available carbohydrate and was served with 250 ml water."
+        }
+      ],
+      "studyServing": true
+    },
+    {
+      "recipeId": "tangyuan",
+      "versionId": "gk-operation80-review-580ea6796950",
+      "inputSha256": "580ea679695009900d4e8b7f7247977018216b9c106c72a0a7dda691bb575f64",
+      "level": "B",
+      "servings": 1,
+      "point": 30.5,
+      "scenarioRange": null,
+      "rangeKind": null,
+      "omittedCho": 0,
+      "confidence": "LOW",
+      "macroScope": "NO_MACRO_PACKAGE_FOR_THIS_VERSION",
+      "quantityContract": "GK_ONLY_NATIVE_UNITS_V1",
+      "standalonePreparation": true,
+      "ingredients": [
+        {
+          "name": {
+            "fi": "Keitetyt Lee Chun -riisipallot, koeannos",
+            "en": "Boiled Lee Chun glutinous rice balls, test serving",
+            "sv": "Kokta risbollar av klibbigt ris från Lee Chun, testportion",
+            "th": "บัวลอยแป้งข้าวเหนียวต้มยี่ห้อ Lee Chun ส่วนทดลอง"
+          },
+          "grams": 115
+        },
+        {
+          "name": {
+            "fi": "Juomavesi",
+            "en": "Drinking water",
+            "sv": "Dricksvatten",
+            "th": "น้ำดื่ม"
+          },
+          "grams": null,
+          "quantity": {
+            "amount": 250,
+            "unit": "ml"
+          }
+        }
+      ],
+      "preparation": {
+        "fi": "Historiallinen vertailu koskee {{servings}} koeannosta. Siihen kuului 115 g keitettyjä Lee Chun -riisipalloja ja 250 ml vettä.",
+        "en": "This historical comparison covers {{servings}} test serving. It contained 115 g of boiled Lee Chun glutinous rice balls and 250 ml of water.",
+        "sv": "Den historiska jämförelsen gäller {{servings}} testportion. Den bestod av 115 g kokta risbollar av klibbigt ris från Lee Chun och 250 ml vatten.",
+        "th": "ข้อมูลเปรียบเทียบจากการศึกษาในอดีตนี้ใช้กับอาหารทดลอง {{servings}} ส่วน ประกอบด้วยบัวลอยแป้งข้าวเหนียวต้มยี่ห้อ Lee Chun 115 กรัม และน้ำ 250 มิลลิลิตร"
+      },
+      "limitation": {
+        "fi": "GK 30,5 perustuu Chenin ym. koeannokseen, jonka täytettä ei yksilöity. Kotireseptin mustaseesamitäytteiset riisipallot ja makea inkivääriliemi tarvitsevat oman arvion.",
+        "en": "The GL of 30.5 is based on the serving tested by Chen et al., whose filling was unspecified. The homemade black sesame rice balls and sweet ginger broth require a separate estimate.",
+        "sv": "GB 30,5 bygger på testportionen hos Chen med flera, där fyllningen inte specificerades. De hemlagade risbollarna med svart sesam och söt ingefärslag behöver bedömas separat.",
+        "th": "ค่า GL 30.5 อ้างอิงจากอาหารส่วนที่ Chen และคณะทดสอบ โดยไม่ได้ระบุชนิดของไส้ บัวลอยไส้งาดำในสูตรโฮมเมดและน้ำขิงหวานต้องประเมินแยกต่างหาก"
+      },
+      "codingKinds": [],
+      "sensitivity": null,
+      "sources": [
+        {
+          "title": "Chen et al. (2010), Table 2",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2846258/",
+          "kind": "HUMAN_GI",
+          "note": "Glucose-reference GI 61 ± 10 SEM, 15 healthy adults, 120 min."
+        },
+        {
+          "title": "Chen et al. (2010), methods and Table 1",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2846258/",
+          "kind": "CARBOHYDRATE",
+          "note": "115 g of boiled Lee Chun glutinous rice balls provided 50 g available carbohydrate and were served with 250 mL water."
+        }
+      ],
+      "studyServing": true
     }
   ],
   "rows": [
@@ -430,6 +571,7 @@
       "method": "B",
       "point": 39.4788,
       "range": null,
+      "studyServing": true,
       "uncertainty": "LOW_CONFIDENCE_POINT",
       "limitation": {
         "fi": "Tutkimusvertailu koskee 182 g:n kontrolliannosta ilman Fenuflakes-lisää, tarjoiltuna veden kanssa. GI 78,8 mitattiin 15 aikuisella ja saatava hiilihydraatti 50,1 g määritettiin laboratoriossa. Jauhon tyyppi ja taikinan tarkat suhteet jäävät tutkimuksessa avoimiksi. GK-arvion soveltaminen jogurtin kanssa tarjoiltuun kotiversioon edellyttää erillistä vastaavuusnäyttöä.",
@@ -491,6 +633,7 @@
       "method": "B",
       "point": 26,
       "range": null,
+      "studyServing": true,
       "uncertainty": "LOW_CONFIDENCE_POINT",
       "limitation": {
         "fi": "26 GK koskee Al Dhaherin ym. historiallista koeannosta, jossa oli 50 g saatavaa hiilihydraattia. Kotireseptissä riisi höyrytetään jogurttimarinoidun kanan päällä. Kotiversion GK edellyttää erillistä näyttöä.",
@@ -552,6 +695,7 @@
       "method": "B",
       "point": 12.5,
       "range": null,
+      "studyServing": true,
       "uncertainty": "LOW_CONFIDENCE_POINT",
       "limitation": {
         "fi": "12,5 GK koskee Osmanin ym. koeannosta ja 25 g:n nimelliskuormaa. Ateriassa oli osterikastiketta. Kotireseptin makean soijakastikkeen ja paistetun munan sisältämä annos vaatii erillisen arvion.",
@@ -613,6 +757,7 @@
       "method": "B",
       "point": 32.99999999999999,
       "range": null,
+      "studyServing": true,
       "uncertainty": "LOW_CONFIDENCE_POINT",
       "limitation": {
         "fi": "33 GK koskee Sunin ym. historiallista grilliporsassämpylän koeannosta ja taulukon 2 GI:tä. Kotireseptin porsas-kaalitäytteinen sämpylä vaatii erillisen arvion.",
@@ -674,6 +819,7 @@
       "method": "B",
       "point": 33,
       "range": null,
+      "studyServing": true,
       "uncertainty": "LOW_CONFIDENCE_POINT",
       "limitation": {
         "fi": "33 GK koskee Sunin ym. historiallista koeannosta, jossa oli 50 g saatavaa hiilihydraattia. Lisukkeiden määriä ei ilmoitettu. Kotireseptin ja nykyisten myyntiannosten GK edellyttää erillistä näyttöä.",
@@ -728,13 +874,14 @@
       "supportFiles": {
         "docs/nutrition/gk100-chocolate-cake-study-review.md": "ae077f06c9f706de009d22b31c28656eaa5a72ca72341037bc966bbeaeb94011"
       },
-      "candidateSha256": "5ff08f129d8a03e4e33fba604f7b25c25389d0e36d4887ba99f99d84d40ce34e",
+      "candidateSha256": "d033681b8541584d2b92b61f5b7f6a8563e79d4641471b07df57ff42d319fed4",
       "originalSha256": "bcdd21dc1b94d9fc6cc82b1a57bd9dbf125ca501bcf330fd8b96559b25696463",
       "inputSha256": "fea9f480bcf2dc02757c717c6359738cb21421c2f92a0f1cc6e11a7da6744124",
       "servings": 1,
       "method": "B",
       "point": 20.5,
       "range": null,
+      "studyServing": true,
       "uncertainty": "LOW_CONFIDENCE_POINT",
       "limitation": {
         "fi": "GK 20,5 koskee vuoden 2003 kokeen kuorrutettua kakkupalaa. Nykyiset tuotteet ja kotitekoinen suklaakakku vaativat erillisen arvion.",
@@ -774,12 +921,12 @@
           "depth": "DEEP",
           "evidence": "docs/nutrition/gk100-chocolate-cake-study-review.md"
         },
-        "candidateSha256": "5ff08f129d8a03e4e33fba604f7b25c25389d0e36d4887ba99f99d84d40ce34e"
+        "candidateSha256": "d033681b8541584d2b92b61f5b7f6a8563e79d4641471b07df57ff42d319fed4"
       },
       "technical": "PASS",
-      "state": "OWNER_DECISION",
+      "state": "RELEASE_READY",
       "reason": null,
-      "ownerStatus": "PENDING",
+      "ownerStatus": "APPROVED",
       "publicationAuthorized": false
     },
     {
@@ -789,13 +936,14 @@
       "supportFiles": {
         "docs/nutrition/gk100-tangyuan-study-review.md": "7ddb5785a4cb69760622b2ead5bce067bfcaefd46044c66e17ec9dc96f2b2aea"
       },
-      "candidateSha256": "b3c0b92b2a999748e91b85f1a2bff572853fc463b627f04c67bcaaf61cca484d",
+      "candidateSha256": "580ea679695009900d4e8b7f7247977018216b9c106c72a0a7dda691bb575f64",
       "originalSha256": "6bff68e6655d144890de3bb776ae05490d47f80f77088b0f2429ecb72914058a",
       "inputSha256": "7aadc98a4ba1139ab62db4370582fe7cd38b03f34195e9dfef8fe50a1380fb07",
       "servings": 1,
       "method": "B",
       "point": 30.5,
       "range": null,
+      "studyServing": true,
       "uncertainty": "LOW_CONFIDENCE_POINT",
       "limitation": {
         "fi": "GK 30,5 perustuu Chenin ym. koeannokseen, jonka täytettä ei yksilöity. Kotireseptin mustaseesamitäytteiset riisipallot ja makea inkivääriliemi tarvitsevat oman arvion.",
@@ -835,12 +983,12 @@
           "depth": "DEEP",
           "evidence": "docs/nutrition/gk100-tangyuan-study-review.md"
         },
-        "candidateSha256": "b3c0b92b2a999748e91b85f1a2bff572853fc463b627f04c67bcaaf61cca484d"
+        "candidateSha256": "580ea679695009900d4e8b7f7247977018216b9c106c72a0a7dda691bb575f64"
       },
       "technical": "PASS",
-      "state": "OWNER_DECISION",
+      "state": "RELEASE_READY",
       "reason": null,
-      "ownerStatus": "PENDING",
+      "ownerStatus": "APPROVED",
       "publicationAuthorized": false
     }
   ],
@@ -884,9 +1032,25 @@
     {
       "path": "docs/nutrition/gk100-nasi-lemak-study-review.md",
       "sha256": "0ac748819655ef76dec0dfc698947dd6985703a594d82339047cb226c11b0494"
+    },
+    {
+      "path": "docs/nutrition/gk100-chocolate-cake-study-release-candidate.json",
+      "sha256": "d033681b8541584d2b92b61f5b7f6a8563e79d4641471b07df57ff42d319fed4"
+    },
+    {
+      "path": "docs/nutrition/gk100-chocolate-cake-study-review.md",
+      "sha256": "ae077f06c9f706de009d22b31c28656eaa5a72ca72341037bc966bbeaeb94011"
+    },
+    {
+      "path": "docs/nutrition/gk100-tangyuan-study-release-candidate.json",
+      "sha256": "580ea679695009900d4e8b7f7247977018216b9c106c72a0a7dda691bb575f64"
+    },
+    {
+      "path": "docs/nutrition/gk100-tangyuan-study-review.md",
+      "sha256": "7ddb5785a4cb69760622b2ead5bce067bfcaefd46044c66e17ec9dc96f2b2aea"
     }
   ],
-  "candidateCommit": "5c6ed36008877df4ed88516c60eebfc9389e6350",
+  "candidateCommit": "b5de37644c72ed637c83c7864c95ee18621359df",
   "bundle": {
     "schemaVersion": 1,
     "mainSha": "d9e4fdc314142518b4afdd60933f3f0a75ead519",
@@ -930,7 +1094,8 @@
               "evidence": "docs/nutrition/gk100-aloo-paratha-study-review.md"
             },
             "candidateSha256": "13af95c73778862bebc3f53546e1e551703eb5ccea25f4edb9a02ef1079ef671"
-          }
+          },
+          "studyServing": true
         },
         {
           "recipeId": "hyderabadi-kanabiryani",
@@ -949,7 +1114,8 @@
               "evidence": "docs/nutrition/gk100-biryani-study-review.md"
             },
             "candidateSha256": "318b2135bbef68aaa9f9ecfc78a6b3328884e38576f19a81c082b5b79a4c131d"
-          }
+          },
+          "studyServing": true
         },
         {
           "recipeId": "indonesialainen-nasi-goreng-aamiaisriisi",
@@ -968,7 +1134,8 @@
               "evidence": "docs/nutrition/gk100-rice-bun-study-review.md"
             },
             "candidateSha256": "39fc887532bb3f09e202bafb2b9894a25a38ef42a3ba7be62a5b2389ffdc09f3"
-          }
+          },
+          "studyServing": true
         },
         {
           "recipeId": "baozi",
@@ -987,7 +1154,8 @@
               "evidence": "docs/nutrition/gk100-rice-bun-study-review.md"
             },
             "candidateSha256": "f9ad785665885da39244532c41291b849c938c13a723dd4c7e50f1d3d027f57c"
-          }
+          },
+          "studyServing": true
         },
         {
           "recipeId": "nasi-lemak",
@@ -1006,7 +1174,8 @@
               "evidence": "docs/nutrition/gk100-nasi-lemak-study-review.md"
             },
             "candidateSha256": "77d770d3e21913949309feb75dbbc8d41c5ef21f6ff50ae5e90edfaaa1865764"
-          }
+          },
+          "studyServing": true
         },
         {
           "recipeId": "meheva-suklaakakku",
@@ -1024,8 +1193,9 @@
               "depth": "DEEP",
               "evidence": "docs/nutrition/gk100-chocolate-cake-study-review.md"
             },
-            "candidateSha256": "5ff08f129d8a03e4e33fba604f7b25c25389d0e36d4887ba99f99d84d40ce34e"
-          }
+            "candidateSha256": "d033681b8541584d2b92b61f5b7f6a8563e79d4641471b07df57ff42d319fed4"
+          },
+          "studyServing": true
         },
         {
           "recipeId": "tangyuan",
@@ -1043,8 +1213,9 @@
               "depth": "DEEP",
               "evidence": "docs/nutrition/gk100-tangyuan-study-review.md"
             },
-            "candidateSha256": "b3c0b92b2a999748e91b85f1a2bff572853fc463b627f04c67bcaaf61cca484d"
-          }
+            "candidateSha256": "580ea679695009900d4e8b7f7247977018216b9c106c72a0a7dda691bb575f64"
+          },
+          "studyServing": true
         }
       ]
     },
@@ -1139,6 +1310,7 @@
           "method": "B",
           "point": 39.4788,
           "range": null,
+          "studyServing": true,
           "uncertainty": "LOW_CONFIDENCE_POINT",
           "limitation": {
             "fi": "Tutkimusvertailu koskee 182 g:n kontrolliannosta ilman Fenuflakes-lisää, tarjoiltuna veden kanssa. GI 78,8 mitattiin 15 aikuisella ja saatava hiilihydraatti 50,1 g määritettiin laboratoriossa. Jauhon tyyppi ja taikinan tarkat suhteet jäävät tutkimuksessa avoimiksi. GK-arvion soveltaminen jogurtin kanssa tarjoiltuun kotiversioon edellyttää erillistä vastaavuusnäyttöä.",
@@ -1200,6 +1372,7 @@
           "method": "B",
           "point": 26,
           "range": null,
+          "studyServing": true,
           "uncertainty": "LOW_CONFIDENCE_POINT",
           "limitation": {
             "fi": "26 GK koskee Al Dhaherin ym. historiallista koeannosta, jossa oli 50 g saatavaa hiilihydraattia. Kotireseptissä riisi höyrytetään jogurttimarinoidun kanan päällä. Kotiversion GK edellyttää erillistä näyttöä.",
@@ -1261,6 +1434,7 @@
           "method": "B",
           "point": 12.5,
           "range": null,
+          "studyServing": true,
           "uncertainty": "LOW_CONFIDENCE_POINT",
           "limitation": {
             "fi": "12,5 GK koskee Osmanin ym. koeannosta ja 25 g:n nimelliskuormaa. Ateriassa oli osterikastiketta. Kotireseptin makean soijakastikkeen ja paistetun munan sisältämä annos vaatii erillisen arvion.",
@@ -1322,6 +1496,7 @@
           "method": "B",
           "point": 32.99999999999999,
           "range": null,
+          "studyServing": true,
           "uncertainty": "LOW_CONFIDENCE_POINT",
           "limitation": {
             "fi": "33 GK koskee Sunin ym. historiallista grilliporsassämpylän koeannosta ja taulukon 2 GI:tä. Kotireseptin porsas-kaalitäytteinen sämpylä vaatii erillisen arvion.",
@@ -1383,6 +1558,7 @@
           "method": "B",
           "point": 33,
           "range": null,
+          "studyServing": true,
           "uncertainty": "LOW_CONFIDENCE_POINT",
           "limitation": {
             "fi": "33 GK koskee Sunin ym. historiallista koeannosta, jossa oli 50 g saatavaa hiilihydraattia. Lisukkeiden määriä ei ilmoitettu. Kotireseptin ja nykyisten myyntiannosten GK edellyttää erillistä näyttöä.",
@@ -1437,13 +1613,14 @@
           "supportFiles": {
             "docs/nutrition/gk100-chocolate-cake-study-review.md": "ae077f06c9f706de009d22b31c28656eaa5a72ca72341037bc966bbeaeb94011"
           },
-          "candidateSha256": "5ff08f129d8a03e4e33fba604f7b25c25389d0e36d4887ba99f99d84d40ce34e",
+          "candidateSha256": "d033681b8541584d2b92b61f5b7f6a8563e79d4641471b07df57ff42d319fed4",
           "originalSha256": "bcdd21dc1b94d9fc6cc82b1a57bd9dbf125ca501bcf330fd8b96559b25696463",
           "inputSha256": "fea9f480bcf2dc02757c717c6359738cb21421c2f92a0f1cc6e11a7da6744124",
           "servings": 1,
           "method": "B",
           "point": 20.5,
           "range": null,
+          "studyServing": true,
           "uncertainty": "LOW_CONFIDENCE_POINT",
           "limitation": {
             "fi": "GK 20,5 koskee vuoden 2003 kokeen kuorrutettua kakkupalaa. Nykyiset tuotteet ja kotitekoinen suklaakakku vaativat erillisen arvion.",
@@ -1483,7 +1660,7 @@
               "depth": "DEEP",
               "evidence": "docs/nutrition/gk100-chocolate-cake-study-review.md"
             },
-            "candidateSha256": "5ff08f129d8a03e4e33fba604f7b25c25389d0e36d4887ba99f99d84d40ce34e"
+            "candidateSha256": "d033681b8541584d2b92b61f5b7f6a8563e79d4641471b07df57ff42d319fed4"
           },
           "technical": "PASS",
           "state": "OWNER_DECISION",
@@ -1498,13 +1675,14 @@
           "supportFiles": {
             "docs/nutrition/gk100-tangyuan-study-review.md": "7ddb5785a4cb69760622b2ead5bce067bfcaefd46044c66e17ec9dc96f2b2aea"
           },
-          "candidateSha256": "b3c0b92b2a999748e91b85f1a2bff572853fc463b627f04c67bcaaf61cca484d",
+          "candidateSha256": "580ea679695009900d4e8b7f7247977018216b9c106c72a0a7dda691bb575f64",
           "originalSha256": "6bff68e6655d144890de3bb776ae05490d47f80f77088b0f2429ecb72914058a",
           "inputSha256": "7aadc98a4ba1139ab62db4370582fe7cd38b03f34195e9dfef8fe50a1380fb07",
           "servings": 1,
           "method": "B",
           "point": 30.5,
           "range": null,
+          "studyServing": true,
           "uncertainty": "LOW_CONFIDENCE_POINT",
           "limitation": {
             "fi": "GK 30,5 perustuu Chenin ym. koeannokseen, jonka täytettä ei yksilöity. Kotireseptin mustaseesamitäytteiset riisipallot ja makea inkivääriliemi tarvitsevat oman arvion.",
@@ -1544,7 +1722,7 @@
               "depth": "DEEP",
               "evidence": "docs/nutrition/gk100-tangyuan-study-review.md"
             },
-            "candidateSha256": "b3c0b92b2a999748e91b85f1a2bff572853fc463b627f04c67bcaaf61cca484d"
+            "candidateSha256": "580ea679695009900d4e8b7f7247977018216b9c106c72a0a7dda691bb575f64"
           },
           "technical": "PASS",
           "state": "OWNER_DECISION",
@@ -1553,11 +1731,11 @@
           "publicationAuthorized": false
         }
       ],
-      "manifestSha256": "99884e1eb3c8074858a5c61ce77566db3225e92f7c842ba6464077b4b8d46356"
+      "manifestSha256": "eded7c91b13fcc8f22c5700920594aade07332988074569807fff61c5f27ae2e"
     },
     "decisions": {
       "schemaVersion": 1,
-      "manifestSha256": "99884e1eb3c8074858a5c61ce77566db3225e92f7c842ba6464077b4b8d46356",
+      "manifestSha256": "eded7c91b13fcc8f22c5700920594aade07332988074569807fff61c5f27ae2e",
       "records": [
         {
           "recipeId": "intialainen-aloo-paratha",
@@ -1598,6 +1776,22 @@
           "inputSha256": "6daab85cbac6d35433ac69fb9b904112a3f9aa77850c3a9db6f9bb00439a4431",
           "decision": "APPROVE",
           "evidence": "Omistajan 5.11.2026 tässä Codex-keskustelussa antama sisältöhyväksyntä PR #269:n taulukon kahdeksalle versiolle HEADillä 2e6b46c2af777c7c76b773a07c55680a273f25d2. Hyväksyntä koskee julkaisuvalmistelua."
+        },
+        {
+          "recipeId": "meheva-suklaakakku",
+          "candidateSha256": "d033681b8541584d2b92b61f5b7f6a8563e79d4641471b07df57ff42d319fed4",
+          "originalSha256": "bcdd21dc1b94d9fc6cc82b1a57bd9dbf125ca501bcf330fd8b96559b25696463",
+          "inputSha256": "fea9f480bcf2dc02757c717c6359738cb21421c2f92a0f1cc6e11a7da6744124",
+          "decision": "APPROVE",
+          "evidence": "Omistajan 5.11.2026 tässä Codex-keskustelussa antama sisältöhyväksyntä PR #269:n taulukon kahdeksalle versiolle HEADillä 2e6b46c2af777c7c76b773a07c55680a273f25d2. Hyväksyntä koskee julkaisuvalmistelua."
+        },
+        {
+          "recipeId": "tangyuan",
+          "candidateSha256": "580ea679695009900d4e8b7f7247977018216b9c106c72a0a7dda691bb575f64",
+          "originalSha256": "6bff68e6655d144890de3bb776ae05490d47f80f77088b0f2429ecb72914058a",
+          "inputSha256": "7aadc98a4ba1139ab62db4370582fe7cd38b03f34195e9dfef8fe50a1380fb07",
+          "decision": "APPROVE",
+          "evidence": "Omistajan 5.11.2026 tässä Codex-keskustelussa antama sisältöhyväksyntä PR #269:n taulukon kahdeksalle versiolle HEADillä 2e6b46c2af777c7c76b773a07c55680a273f25d2. Hyväksyntä koskee julkaisuvalmistelua."
         }
       ]
     },
@@ -1606,10 +1800,12 @@
       "hyderabadi-kanabiryani",
       "indonesialainen-nasi-goreng-aamiaisriisi",
       "baozi",
-      "nasi-lemak"
+      "nasi-lemak",
+      "meheva-suklaakakku",
+      "tangyuan"
     ],
-    "expectedCoverageDelta": 5,
+    "expectedCoverageDelta": 7,
     "publicationAuthorized": false,
-    "bundleSha256": "8b0707d091ee04bb9aa855a53f6e4d1530e240b5509e23152af8c97312fa01f8"
+    "bundleSha256": "be86dcd0e20553be8c832f033c081cb4dd27da68cacb42cd0396e5c2abbd6614"
   }
 }
