@@ -19,4 +19,6 @@ Factory sitoo `studyServing`-esitystavan sekä ehdokasriviin että katselmointii
 
 Chiavanukkaan ainesosalistalta poistettiin valinnainen makeutus, jonka valmistusohje käskee jättämään pois. Korjatun paketin tarkiste on `a0b8175f3d0bdea6c28fea78a809c7a388dbe299011db56b7416714db5890920`.
 
+Tutkimusvertailujen julkaisu edellyttää kattavuuspäätöstä. Nykyinen kattavuus laskee tutkimusvertailun reseptin numeeriseksi osumaksi ja estää myöhemmin kotireseptin oman arvion lisäämisen. Ennen tutkimusvertailujen julkaisua on päätettävä, lasketaanko ne erikseen vai voiko kotireseptin arvio korvata vertailun.
+
 Tuotantoon kytkeminen edellyttää erillistä, bundlen tarkisteeseen sidottua julkaisulupaa.
