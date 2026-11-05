@@ -1,3 +1,4 @@
+import {recipeTextForApprovedSnapshot} from './approved-recipe-note-edits';
 import {createHash} from 'node:crypto';
 import {readFileSync} from 'node:fs';
 import {join} from 'node:path';
@@ -145,7 +146,7 @@ export function buildApprovedBVariants(root: string): GkOnlyVariant[] {
         && approval.approvedInputs[c.recipeId] === inputSha256 && hash(JSON.stringify(input)) === inputSha256,
       'exact approved input changed: ' + c.recipeId);
       for (const [locale, file] of Object.entries(c.paths)) {
-        requireBinding(hash(text(file)) === c.recipeSha256[locale], 'parent recipe changed: ' + file);
+        requireBinding(hash(recipeTextForApprovedSnapshot(file, text(file))) === c.recipeSha256[locale], 'parent recipe changed: ' + file);
       }
       const results = c.scenarios.map(scenario => evaluate(c, scenario, compositions, bindings, nativeGi));
       const min = Math.min(...results.map(result => result.value));

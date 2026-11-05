@@ -1,3 +1,4 @@
+import {mainAdditionFiles} from "./original-content-transition";
 import assert from "node:assert/strict";
 import { execFileSync } from "node:child_process";
 import { readFileSync } from "node:fs";
@@ -36,6 +37,10 @@ export function assertRecipeBaseline(root: string, baseline: string, ...protecte
 
   for (const change of changes) {
     const [status, file] = change.split("\t");
+    if (status === "A" && Object.hasOwn(mainAdditionFiles, file)) {
+      assert.equal(textHash(readFileSync(path.join(root, file), "utf8")), mainAdditionFiles[file], change);
+      continue;
+    }
     const approved = recipeChanges.get(file);
     if (approved?.status === status) {
       assert.equal(textHash(readFileSync(path.join(root, file), "utf8")), approved.sha256, change);
