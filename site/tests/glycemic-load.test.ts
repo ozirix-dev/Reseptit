@@ -1,4 +1,4 @@
-import {restorePreEHold} from './restore-pre-ehold';
+import {restorePreEHold,afcdSourceBeforeCorrection} from './restore-pre-ehold';
 import assert from "node:assert/strict";
 import { readFile as actualReadFile } from "node:fs/promises";
 import path from "node:path";
@@ -20,8 +20,8 @@ const p1CoconutHoldIds = new Set(['kookos-lime-kanacurry', 'sate-ayam']);
 // Preserve original source-correction expectations. Actual current eight results
 // are strictly tested in gk80-release2.test.ts; no historical baseline is edited.
 async function readFile(filename: Parameters<typeof actualReadFile>[0], encoding: 'utf8'): Promise<string> {
- const text=await actualReadFile(filename,encoding);
  const relative=path.relative(path.resolve(import.meta.dirname,'../..'),String(filename)).replaceAll('\\','/');
+ const text=afcdSourceBeforeCorrection(relative,await actualReadFile(filename,encoding));
  const ehold=JSON.parse(await actualReadFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-e-hold-release/historical-metadata.json'),'utf8'));
 
  const later=JSON.parse(await actualReadFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-carnitas-couscous/historical-metadata.json'),'utf8'));

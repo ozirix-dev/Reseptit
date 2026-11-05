@@ -1,3 +1,4 @@
+import {restoreBeforeAfcdCorrection} from './restore-pre-ehold';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
@@ -51,8 +52,10 @@ test('original 156, variants 79, studies 8 and legacy 236 are disjoint scopes wi
 });
 
 test('all 326 original calculation objects and all 87 approved variant objects retain the current-main baseline hashes', () => {
-  // main 121fab51, independently captured before the presentation changes.
-  assert.equal(checksum(report.results),'697333a249360f25c42cc6170a7e0b1814e01b939b23ed38653f7dbd2f45b563');
+  // main 121fab51 predates the exact authorized AFCD correction.
+  // Project only those two frozen AFCD objects; live326 checks every permitted delta separately.
+  // P1 coconut HOLD objects and all87 variants remain live and exact.
+  assert.equal(checksum(restoreBeforeAfcdCorrection(structuredClone(report)).results),'697333a249360f25c42cc6170a7e0b1814e01b939b23ed38653f7dbd2f45b563');
   assert.equal(checksum(variants),'3270ca1bbdfcacc680d4bc7f2f9a599e9599e26ac29e87f9684c15565a83eee0');
 });
 

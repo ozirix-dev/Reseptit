@@ -1,3 +1,4 @@
+import {restoreBeforeAfcdCorrection} from './restore-pre-ehold';
 import {isP1CoconutHold,assertP1CoconutHold} from './p1-coconut-hold-guard';
 import {recipeTextForApprovedSnapshot} from '../scripts/approved-recipe-note-edits';
 import {siteContent as currentSiteContent} from '../src/generated/content.generated';
@@ -8,7 +9,7 @@ const root=new URL('../../',import.meta.url),folder='docs/nutrition/gk80-operati
 const json=(p:string)=>JSON.parse(readFileSync(new URL(p,root),'utf8')),hash=(s:string)=>createHash('sha256').update(s.replaceAll('\r\n','\n')).digest('hex'),fileHash=(p:string)=>hash(readFileSync(new URL(p,root),'utf8'));
 const pack=json(folder+'integration.json'),ids=new Set(pack.recipes.map((e:any)=>e.recipeId));
 test('nine new results preserve all147 prior numbers and every other full result',()=>{
- const report=json('tmp/nutrition/glycemic-load-pilot.json'),base=json(folder+'main147-baseline.json');assert.equal(ids.size,9);assert.equal(report.results.length,326);assert.equal(report.summary.calculated,156);assert.equal(report.summary.insufficientSourceData,170);assert.equal(base.numericIds.length,147);
+ const report=restoreBeforeAfcdCorrection(json('tmp/nutrition/glycemic-load-pilot.json')),base=json(folder+'main147-baseline.json');assert.equal(ids.size,9);assert.equal(report.results.length,326);assert.equal(report.summary.calculated,156);assert.equal(report.summary.insufficientSourceData,170);assert.equal(base.numericIds.length,147);
  for(const r of report.results){if(!ids.has(r.recipeId)){
   if(isP1CoconutHold(r.recipeId))assertP1CoconutHold(r);
   else assert.equal(hash(JSON.stringify(r)),base.resultHashes[r.recipeId],r.recipeId);

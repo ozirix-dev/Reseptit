@@ -1,3 +1,4 @@
+import {afcdSourceBeforeCorrection} from './restore-pre-ehold';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync,mkdtempSync,mkdirSync,writeFileSync,rmSync} from 'node:fs';
@@ -70,7 +71,7 @@ test('Foodin record refinement is proven against both exact Git snapshots withou
  }
  assert.throws(()=>verifyFoodinRecord(records,'0'.repeat(64)),/lineage/);
  // The source correction is not imported or used to silently replace any baseline result.
- assert.equal(textHash(readFileSync(path.join(root,binding.sourcePath),'utf8')),FOODIN_ORIGINAL_FILE_SHA256);
+ assert.equal(textHash(afcdSourceBeforeCorrection(binding.sourcePath,readFileSync(path.join(root,binding.sourcePath),'utf8'))),FOODIN_ORIGINAL_FILE_SHA256);
 });
 test('four-language panels keep own quantities, positive omissions, source limits and parent macro separation',()=>{
  for(const v of seven)for(const locale of ['fi','en','sv','th'] as const){
