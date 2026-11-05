@@ -1,7 +1,7 @@
 import { estimateBasis, evidenceLabel, gkCopy, missingReason } from "../src/features/glycemic-load/glycemic-load-copy";
 import {gkOnlyVariants,gkVersionCoverage} from '../src/generated/gk-only-variants.generated';
 import {loadAuthorizedGk100Variants} from '../scripts/gk100-approval-release';
-import {gkOnlyUi,gkOnlyValue,gkScopeUi} from '../src/features/recipes/GkOnlyVariantPanel';
+import {gkOnlyUi,gkOnlyValue,gkScopeUi,studyServingTitle} from '../src/features/recipes/GkOnlyVariantPanel';
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import path from "node:path";
@@ -509,7 +509,19 @@ test('approved GK-only versions are explicit on every existing locale page and c
   for(const recipe of siteContent.recipes.filter(r=>r.recipeId===variant.recipeId)){
    const html=await readFile(path.join(dist,recipe.routePath.slice(1),'index.html'),'utf8'),t=gkOnlyUi[recipe.locale];
    assert.ok(html.includes(`data-gk-version="${variant.versionId}"`),recipe.routePath);
-   assert.ok(html.includes(t.scope));assert.ok(html.includes(t.low));assert.ok(html.includes(gkScopeUi[recipe.locale].macroNotice));assert.ok(html.includes('data-nutrition-scope="ORIGINAL_RECIPE"'));assert.ok(html.includes('data-macro-separation="gk-only"'));assert.ok(html.includes(gkOnlyValue(variant,recipe.locale)));
+   if (variant.studyServing) {
+     const panel = html.match(new RegExp(`<section[^>]*data-gk-version="${variant.versionId}"[^>]*>([\\s\\S]*?)</section>`))?.[1];
+     assert.ok(panel, recipe.routePath);
+     const [summary] = panel.split('<details');
+     assert.ok(summary.includes(studyServingTitle[recipe.locale]), recipe.routePath);
+     const limitation = variant.limitation![recipe.locale]
+       .replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;')
+       .replaceAll('"', '&quot;').replaceAll("'", '&#x27;');
+     assert.ok(summary.includes(limitation), recipe.routePath);
+   } else {
+     assert.ok(html.includes(t.scope));assert.ok(html.includes(t.low));
+   }
+   assert.ok(html.includes(gkScopeUi[recipe.locale].macroNotice));assert.ok(html.includes('data-nutrition-scope="ORIGINAL_RECIPE"'));assert.ok(html.includes('data-macro-separation="gk-only"'));assert.ok(html.includes(gkOnlyValue(variant,recipe.locale)));
    assert.ok(!html.includes('class="recipe-glycemic-load"'),'original unsupported version is not relabeled');
    if(variant.scenarioRange)assert.ok(html.includes(t.range));if(variant.sensitivity)assert.ok(html.includes(t.sensitivityNote));
    const addedTorrasPage = (recipe.locale === "en" && ["keto-mutakakku", "keto-suklaakeksit"].includes(recipe.recipeId))

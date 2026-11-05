@@ -111,6 +111,16 @@ test('a sealed study serving keeps its scope and quantities beside the GL estima
   assert.match(html, /Study servings: 1/);
   assert.match(html, /100 g · en/);
   assert.doesNotMatch(html, /400 g/);
+  for (const kind of ['B_CODING', 'PUBLISHED_CODING']) {
+    const coded = JSON.stringify({ ...packet, sources: [...packet.sources,
+      { kind, title: 'Fixture code', url: 'https://example.invalid/', note: 'Fixture only' },
+    ] });
+    files.set(entry.packetPath, coded);
+    entry.classification!.candidateSha256 = textHash(coded);
+    const [row] = checkBatch(batch, read).manifest.candidates;
+    assert.equal(row.state, 'BLOCKED');
+    assert.equal(row.reason, 'INVALID_STUDY_SERVING');
+  }
 });
 
 test('different recipe, candidate revision or original invalidates the approval', () => {

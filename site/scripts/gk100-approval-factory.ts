@@ -160,8 +160,9 @@ function assess(entry: Batch['candidates'][number], read: ReadFile, methodApprov
     return { row, variant: undefined };
   }
   const variant = parsePointReviewVariant(raw, readBound);
+  const assignedGi = variant.sources.some(source => source.kind === 'PUBLISHED_CODING' || source.kind === 'B_CODING');
   if (entry.studyServing) {
-    if (variant.servings !== 1 || variant.omittedCho !== 0 || variant.scenarioRange || !variant.limitation) {
+    if (variant.servings !== 1 || variant.omittedCho !== 0 || variant.scenarioRange || !variant.limitation || assignedGi) {
       fail('INVALID_STUDY_SERVING');
     }
     variant.studyServing = true;
@@ -182,8 +183,7 @@ function assess(entry: Batch['candidates'][number], read: ReadFile, methodApprov
   const riskSignals = [
     ...(variant.scenarioRange ? ['NAMED_SCENARIO_RANGE'] : []),
     ...(variant.omittedCho > 0 ? ['CHO_OMITTED'] : []),
-    ...(variant.sources.some(source => source.kind === 'PUBLISHED_CODING' || source.kind === 'B_CODING')
-      ? ['ASSIGNED_GI'] : []),
+    ...(assignedGi ? ['ASSIGNED_GI'] : []),
   ];
   const suggestedRisk = variant.omittedCho >= 1 ? 'HIGH' : riskSignals.length ? 'MEDIUM' : 'LOW';
   const classification = entry.classification ?? null;

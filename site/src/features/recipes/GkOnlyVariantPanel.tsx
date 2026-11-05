@@ -46,7 +46,7 @@ export function gkOnlyPreparation(v:GkOnlyVariant,locale:RecipeLocale,servings=v
   return n.format(quantity.amount);
  });
 }
-const studyServingTitle = {
+export const studyServingTitle = {
  fi: 'Tutkimusannoksen GK',
  en: 'GL for the study serving',
  sv: 'GL för studieportionen',
