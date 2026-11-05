@@ -1783,7 +1783,15 @@ test("pepper correction locks all 326 baseline results, with exactly seven withd
     const actual = calculateGlycemicLoad(input, foods, catalog.records);
     const expectedModelResult = structuredClone((await finalBakeryReviewPromise).affectedRecipes.find((r: {recipeId: string}) => r.recipeId === row.recipeId)?.after ?? row.after);
     expectedModelResult.blockers = expectedModelResult.blockers.filter((message: string) => !message.includes(": recipe structure differs from the last GL review"));
-    assert.deepEqual(actual, expectedModelResult);
+    // The historical pepper snapshot predates the separately audited P1 coconut HOLD.
+    // Keep exact comparison for every other recipe; the dedicated P1 tests lock the
+    // two coconut ingredients and prevent the rejected cow-milk identity returning.
+    if (!p1CoconutHoldIds.has(row.recipeId)) {
+      assert.deepEqual(actual, expectedModelResult);
+    } else {
+      assert.ok(actual.blockers.some((message: string) => message.includes("coconut milk was incorrectly linked")), row.recipeId);
+      assert.equal(actual.glycemicLoadPerServing, null, row.recipeId);
+    }
     assert.equal(actual.status, "INSUFFICIENT SOURCE DATA");
     assert.equal(actual.glycemicLoadPerServing, null);
     assert.equal(glycemicLoadInputHash(input), bindings.calculationInputs[row.recipeId]);
@@ -1793,7 +1801,12 @@ test("pepper correction locks all 326 baseline results, with exactly seven withd
     assert.notEqual(glycemicLoadEvidenceHash(prior, foods, baseline.giCatalog.records), bindings.calculationEvidence[row.recipeId], "stale evidence rejected");
     const pepperIndices = new Set(row.pepperBindings.map((x: {index: number}) => x.index));
     for (let j = 0; j < prior.ingredients.length; j++) {
-      if (!pepperIndices.has(j) && !(await finalBakeryReviewPromise).allowedInputChanges.some((r: {recipeId: string; index: number}) => r.recipeId === row.recipeId && r.index === j)) assert.deepEqual(input.ingredients[j], prior.ingredients[j], `${row.recipeId}: non-pepper row unchanged`);
+      const isP1CoconutRow = p1CoconutHoldIds.has(row.recipeId) &&
+        ["täysrasvaista kookosmaitoa", "kookosmaitoa"].includes(input.ingredients[j]?.name ?? "");
+      if (!pepperIndices.has(j) && !isP1CoconutRow &&
+        !(await finalBakeryReviewPromise).allowedInputChanges.some((r: {recipeId: string; index: number}) => r.recipeId === row.recipeId && r.index === j)) {
+        assert.deepEqual(input.ingredients[j], prior.ingredients[j], `${row.recipeId}: non-pepper row unchanged`);
+      }
     }
   }
   for (const old of baseline.giCatalog.records) {
