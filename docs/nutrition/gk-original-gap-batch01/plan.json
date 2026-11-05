@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "mainSha": "944e3e2830d466933c99829d01172fb44f1be51f",
+  "publicationAuthorized": false,
+  "sourceApprovalGranted": false,
+  "selectionReason": "Five bounded original-scope cases with one current blocking condition, known component CHO and an explicit next-evidence requirement. This is not a release-ready ranking.",
+  "cases": [
+    {
+      "recipeId": "siemengranola-jogurtilla",
+      "classification": "SOURCE_OR_SCOPE_DECISION",
+      "finding": "Kuuden positiivisen poisjätön summa2,06375 g ylittää2 g rajan. Pelkän voin0,06 g ratkaiseminen jättää2,00375 g: edelleen HOLD.",
+      "nextEvidence": "Alkuperäiselle sopiva GI-/koostumusnäyttö vähintään yhdelle jäljelle jäävälle komponentille. Ei ainesmäärien vähennystä, EDEKA-vaihtoa tai erillisversion kanelioletuksen siirtoa."
+    },
+    {
+      "recipeId": "pad-see-ew-vhh-konjac",
+      "classification": "SOURCE_AND_QUANTITY_REVIEW",
+      "finding": "Poisjätöt2,6585 g/annos. Valkopippurille on arvioitu0,5 g CHO, mutta edes sen koko osuuden ratkaiseminen ei yksin alita2 g rajaa.",
+      "nextEvidence": "Selvitä alkuperäisen valkopippurin todellinen määrä sekä kastikkeiden valmistus- ja koostumusnäyttö. Ei kastikkeen vaihtamista vähähiilihydraattiseksi eikä pippurin asettamista nollaksi."
+    },
+    {
+      "recipeId": "paistettu-maksa-pekonilla",
+      "classification": "GI_APPLICABILITY_REQUIRED",
+      "finding": "Alkuperäinen500 g naudanmaksa /4 annosta antaa nykyisestä Fineli-tietueesta6,25 g CHO/annos. GI puuttuu. Koostumuslähteen vaihtaminen ei yksin ratkaise GI:tä.",
+      "nextEvidence": "Alkuperäisen maksan ja paistotavan kattava hyväksyttävä GI-/menetelmän soveltuvuuspäätös. #227:n erillistä valmistus-/tuoteversiota tai GI50-mallia ei tuoda automaattisesti alkuperäiselle."
+    },
+    {
+      "recipeId": "paella-valenciana",
+      "classification": "SOURCE_AND_NATIVE_UNIT_REVIEW",
+      "finding": "Alkuperäinen1 l kanaliemi on nykyisessä syötteessä1000 g; Fineli0,427 g/100 g antaa1,0675 g CHO/annos, yli yksittäisen poisjättörajan. Litraa ja kiloa ei yleisesti voi samastaa.",
+      "nextEvidence": "Alkuperäiselle todellisuudessa käytetylle liemelle koostumus natiiviyksikössä ja tarvittaessa luotettava tiheys sekä valmistusmatch. Ei liemen korvaamista uudella tuotteella tavoiterajan vuoksi eikä riisimäärän muutosta."
+    },
+    {
+      "recipeId": "pad-thai-vhh-konjac",
+      "classification": "GI_APPLICABILITY_REQUIRED",
+      "finding": "AFCD F009081 Tamarind, paste, pure:57,4 g/100 g; alkuperäisen30 g /4 annosta on4,305 g CHO. Puhtaan tahnan koostumus ei itsessään osoita GI-soveltuvuutta.",
+      "nextEvidence": "Alkuperäistä tamarinditahnaa ja käsittelyä vastaava GI-näyttö; valmisteen identiteetti tarkistetaan erikseen. Ei pienempää tahnamäärää, toista tuotetta, ryhmäkeskiarvon palautusta tai puuttuvan GI:n nollausta."
+    }
+  ]
+}
