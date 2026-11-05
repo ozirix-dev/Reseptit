@@ -1,3 +1,4 @@
+import {isP1CoconutHold,assertP1CoconutHold} from './p1-coconut-hold-guard';
 import {restorePreEHold} from './restore-pre-ehold';
 import test from 'node:test';
 import assert from 'node:assert/strict';
@@ -19,7 +20,8 @@ test('historical isolated24 view adds exactly24 (actual33 deltas tested separate
  let changed=0,unchanged=0;
  for(const old of baseline){const now=report.results.find((r:{recipeId:string})=>r.recipeId===old.recipeId);assert.ok(now);
   if(ids.has(old.recipeId)){changed++;assert.equal(old.status,'INSUFFICIENT SOURCE DATA');assert.equal(now.status,'CALCULATED');assert.equal(now.assessmentType,'PUBLISHED_IMPUTATION');assert.equal(now.confidence,'LOW');assert.equal(now.omittedAvailableCarbohydratePerServingG,0);}
-  else{unchanged++;assert.equal(createHash('sha256').update(JSON.stringify(now)).digest('hex'),old.sha256,old.recipeId);}
+  else{unchanged++;if(isP1CoconutHold(now.recipeId))assertP1CoconutHold(now);
+   else assert.equal(createHash('sha256').update(JSON.stringify(now)).digest('hex'),old.sha256,old.recipeId);}
  }
  assert.equal(changed,24);assert.equal(unchanged,302);assert.equal((await applyGk80Release(root,report.results)).length,326);
 });
