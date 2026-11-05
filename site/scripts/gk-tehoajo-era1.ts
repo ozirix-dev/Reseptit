@@ -1,3 +1,4 @@
+import {acceptsReviewedNutritionModelBinding} from './reviewed-nutrition-model-binding';
 import {createHash} from 'node:crypto';
 import {readFileSync} from 'node:fs';
 import {join} from 'node:path';
@@ -37,7 +38,8 @@ export function buildTehoajoVariants(root: string): GkOnlyVariant[] {
   const registry: {records: GlycemicIndexRecord[]} = JSON.parse(read('docs/nutrition/glycemic-index-records.json'));
   return approval.cases.map(({recipeId, proposal, catalog, bindings}, index) => {
     for (const [file, hash] of Object.entries(bindings)) {
-      if (sha(read(file)) !== hash) throw Error('GK80 tehoajo source changed: ' + file);
+      const actual = sha(read(file));
+      if (actual !== hash && !acceptsReviewedNutritionModelBinding(file, hash, actual)) throw Error('GK80 tehoajo source changed: ' + file);
     }
     const input: GlycemicLoadRecipeInput & {
       expected: {unroundedGk: string; omittedChoG?: string; omittedChoUpperG?: string};

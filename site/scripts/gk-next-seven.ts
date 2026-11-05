@@ -1,3 +1,4 @@
+import {acceptsReviewedNutritionModelBinding} from './reviewed-nutrition-model-binding';
 /** Seven exact, content-approved A versions. This adapter grants no release authority. */
 import {readFileSync} from 'node:fs';
 import path from 'node:path';
@@ -47,7 +48,10 @@ export function loadPadSeeEw(root:string){
  const shared=['docs/nutrition/fineli-release-20-reference.json','docs/nutrition/afcd-release-3-reference.json','docs/nutrition/food-records.json','docs/nutrition/glycemic-index-records.json','site/scripts/glycemic-load-model.ts','site/scripts/nutrition-model.ts'];
  for(const p of shared){
   if(p==='docs/nutrition/food-records.json')verifyFoodinRecord(read(root,p),sources.sourceFilesLfSha256[p]);
-  else if(textHash(text(root,p))!==sources.sourceFilesLfSha256[p])throw Error('Pad shared evidence changed: '+p);
+  else {
+   const actual=textHash(text(root,p)),expected=sources.sourceFilesLfSha256[p];
+   if(actual!==expected&&!acceptsReviewedNutritionModelBinding(p,expected,actual))throw Error('Pad shared evidence changed: '+p);
+  }
  }
  const comps:Composition[]=c.candidateIngredients.map((i:any)=>{
   const f=sources.composition.find((f:any)=>f.id===i.compositionId);if(!f)throw Error('Missing pad composition');

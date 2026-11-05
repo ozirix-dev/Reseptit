@@ -1,3 +1,4 @@
+import {acceptsReviewedNutritionModelBinding} from './reviewed-nutrition-model-binding';
 /** Four exact owner-approved A versions; no release authority or general source admission. */
 import {readFileSync} from 'node:fs';
 import path from 'node:path';
@@ -91,7 +92,10 @@ function verifyGi(root:string,g:any):GlycemicIndexRecord{
 export function loadApprovedFour(root:string){
  const manifest=verifyNextFourManifest(root),pack=read(root,folder+'cases.json'),sources=read(root,folder+'sources.json'),lineage=read(root,folder+'approval-lineage.json');
  if(pack.activation!==false||pack.sourceCommit!==manifest.sourceCommit||pack.cases.length!==4||digest(lineage.approvedInputs)!==digest(NEXT_FOUR_INPUTS))fail('projected approved scope');
- for(const [p,expected] of Object.entries(sources.sharedFilesLfSha256))if(textHash(text(root,p))!==expected)fail('shared source changed: '+p);
+ for(const [p,expected] of Object.entries(sources.sharedFilesLfSha256) as Array<[string,string]>){
+  const actual=textHash(text(root,p));
+  if(actual!==expected&&!acceptsReviewedNutritionModelBinding(p,expected,actual))fail('shared source changed: '+p);
+ }
  const admitted:Record<string,string>={};
  for(const [p,binding] of Object.entries(lineage.receiptBindings) as Array<[string,any]>){
   if(textHash(text(root,p))!==binding.sha256Lf)fail('original approval receipt changed');

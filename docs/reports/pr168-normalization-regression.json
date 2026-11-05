@@ -1,0 +1,98 @@
+{
+  "status": "PASS",
+  "mainSha": "0fa20528ffe0ca075c9e0fb54c2b388cd7d959fe",
+  "sourcePr": 168,
+  "sourceHeadSha": "0eacc8f0ba448347b0f39c2d4e76f887c9942934",
+  "sourceResearch": "https://github.com/ozirix-dev/Reseptit/tree/0eacc8f0ba448347b0f39c2d4e76f887c9942934/docs/research/gk80-night2-operation140",
+  "comparedEqual": {
+    "calculationInputs": "5c584d6663b42800f0c8e83919fa8356580b3a1aaebbd95eac4661b27eb6a487",
+    "calculationInputHashes": "047a4ebb58ab8665040cf7ef409b41bd6d0467fcbd919a742134da511762641d",
+    "calculationEvidenceHashes": "bd681b09232cb34fae26450df6bfd2c89cc8719cadc51c7294482c6b275db580",
+    "results": "1b9277adcb81b4603ea3486553e3ff6de93f23765b7d56e856b708c4c6f1ebda",
+    "gkOnlyVariants": "276a2739ff5dfaba305d14634f3685cf2229374fe88854e4de0576b186d775ab",
+    "versionCoverage": "99f09aa80e41b1c2fe7211224b4b72b5b78cf12444c2c1c70d31288533fac7a6",
+    "coverageViews": "60e1caa8979f79018e5b3791a467b7a8cce45097c616f72689caa2201801a440",
+    "summary": "6846233b96c8e38a5c3d43a53a74690779368f73a1e4c550105ce8d57edfcbae",
+    "recipeBindingMismatches": "57c7766f94fe7a2ede044134d6e31cd6eb715352603cfeba6359f3483a6dc303",
+    "calculationInputMismatches": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "calculationEvidenceMismatches": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "giSourcePolicy": "1df642ab2441e6df2de8423933b050973bf9719e36cf43fcff9365e09aed7b47",
+    "giSourceCatalog": "e3ec3fceb132e321f70c5171654342ae595bd2fd6a959a5bfcf4a06719164e7e",
+    "fineliEvidence": "4117a1bcebe24da3e0beac4d80f45c0337afba29a3651de36c23db2966f2abe1",
+    "additionalCarbohydrateEvidence": "3f79030560418ae2c29bace67321f5dc8bf3999d2bb3903a39c20d572eb60e62",
+    "massEvidence": "e9eef6ae53f21cf40893f5db727268621b1969b306634bfe00c894372743a615",
+    "recipeBindingBaseline": "c4ca826407f6a16aeb5947a2f7ae47212bb97e3a72ce426631fca10fb981e06c"
+  },
+  "nutritionComparedEqual": {
+    "sources": "a4e987d17584557e2fbed011cddf66dc5185338bc3ef33d4226f86c32b7364dd",
+    "counts": "1deff0a65c25a7695f1da29102c7ff6d0d8580bb3241a8cc3b0599d7f053796f",
+    "dietClasses": "2d22af1396772fbd31d3743347cd2b522275385e43317d21e2af0cfc2a6de34c",
+    "inventory": "c969804128cbc5de369cd93dbc083d1a480902c35a97bb395097f01532d9bfa5",
+    "pilots": "29fb534fe58776fe5c528167ccf7da27d9b89a30ccd802fcf4dadbfa58cb7f00"
+  },
+  "recipeResultsIdentical": 326,
+  "gkOnlyVariantsIdentical": 87,
+  "macroInventoryIdentical": 326,
+  "approvalOrSourceFilesChanged": false,
+  "reviewedModelLfSha256": "05a3edc945b444edd4c99aff90be6a17129559ee7779f8f5e372bf46877195d3",
+  "sourceInputHashChanges": {
+    "site/package.json": {
+      "before": "5c99e024c43fe6954ed6092e24d67416f5e602c70977e940566f9dd654c74616",
+      "after": "0e6dda5e864e7575384b7d0df2087ed359ffffefe5aa7c9f3d9487d054d5adfe"
+    },
+    "site/scripts/reviewed-nutrition-model-binding.ts": {
+      "before": null,
+      "after": "8028f98fa5a59a72a912dabb232ca6535e3bdb22f926af250cb4f30e3d9d2f7b"
+    },
+    "site/scripts/gk-next-four.ts": {
+      "before": "1ee5526e0b2df173eae22473875b4dd0c3cae75f54113056bb7cc30026648aaa",
+      "after": "04d340124d4046aa0a3575d575979f6f6f33923417fb3c24515c915df2d6f46f"
+    },
+    "site/scripts/gk-next-seven.ts": {
+      "before": "c5b4f860abe5f2426590d11df68129d3e32fca504a45b35e0ce7de969da1a883",
+      "after": "c61da90ec0e6aa41e37b98d175f6dfd26f2813bfc3ebb20110d539240292d799"
+    },
+    "site/scripts/nutrition-model.ts": {
+      "before": "6667190a6604523fe083d6d766cfbbdb7c2ce75366194f3036ce711a8218a7ce",
+      "after": "05a3edc945b444edd4c99aff90be6a17129559ee7779f8f5e372bf46877195d3"
+    },
+    "site/scripts/gk-tehoajo-era1.ts": {
+      "before": "9a262be66c7a2b98ccc6b215f1679e43a824259636dc4b43f71081435e7f1375",
+      "after": "312f0eb086c05f27d1cb9ae209111581dab2803ebd6e83d8191c10fc43036799"
+    }
+  },
+  "authority": {
+    "merge": false,
+    "deploy": false,
+    "newContentOrPublicationApproval": false
+  },
+  "checks": [
+    "20 focused normalization and all-three-loader binding tests: PASS",
+    "strict nutrition audit: PASS",
+    "full glycemic-load audit: PASS",
+    "TypeScript, Vite and prerender: PASS, 760 routes",
+    "317 unit tests, serial local execution: PASS",
+    "31 static and SEO tests: PASS"
+  ],
+  "digestEncoding": "SHA-256 of Python JSON, UTF-8, ensure_ascii=False, sort_keys=True, separators=(comma,colon)",
+  "originalResearchFilesRetained": [
+    "docs/research/gk80-night2-operation140/README.md",
+    "docs/research/gk80-night2-operation140/artifact-manifest.json",
+    "docs/research/gk80-night2-operation140/compare-normalization.mts",
+    "docs/research/gk80-night2-operation140/deep-review-six.json",
+    "docs/research/gk80-night2-operation140/github-preflight.json",
+    "docs/research/gk80-night2-operation140/input-manifest.json",
+    "docs/research/gk80-night2-operation140/kaya-decision.json",
+    "docs/research/gk80-night2-operation140/local-verification.json",
+    "docs/research/gk80-night2-operation140/main133-baseline.json",
+    "docs/research/gk80-night2-operation140/method-option.md",
+    "docs/research/gk80-night2-operation140/normalization-proof.json",
+    "docs/research/gk80-night2-operation140/partition.json",
+    "docs/research/gk80-night2-operation140/production-start.json",
+    "docs/research/gk80-night2-operation140/scope-and-resources.json",
+    "docs/research/gk80-night2-operation140/screening86.json",
+    "docs/research/gk80-night2-operation140/shared-source-decisions.json",
+    "docs/research/gk80-night2-operation140/shared-source-matrix193.json",
+    "docs/research/gk80-night2-operation140/verify.py"
+  ]
+}
