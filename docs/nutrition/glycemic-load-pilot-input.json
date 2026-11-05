@@ -20215,13 +20215,15 @@
         },
         {
           "name": "täysrasvaista kookosmaitoa",
-          "grams": 400,
-          "fineliRecordId": "fineli-684-release-20",
-          "giRecordId": "dairy-category-mean-gi-35",
-          "massEvidence": "Recipe-listed 400 g, mapped to MAITO, KEVYTMAITO, D-VITAMIINIA 1 UG (plain milk).",
-          "foodKey": "dairy",
-          "preparationKey": "unflavoured-dairy",
-          "giMatchEvidence": "Dairy products, category mean: Category mean, not a measured GI for the recipe's cream cheese.; category/analogue estimate, low confidence."
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "HOLD: coconut milk was incorrectly linked to cow's milk Fineli 684 and dairy GI 35; no approved coconut composition/GI or food-specific ml-to-g conversion for this ingredient.",
+          "massEvidence": "Original Finnish recipe specifies 400 ml coconut milk; food-specific mass conversion remains unresolved. No cow-milk mass conversion is applied.",
+          "foodKey": null,
+          "preparationKey": null,
+          "giMatchEvidence": "HOLD: invalid cow's milk and dairy GI binding withdrawn. Coconut milk GI applicability is not source-verified; missing GI is not zero.",
+          "recipeQuantity": {"amount": 400, "unit": "ml", "massGrams": null}
         },
         {
           "name": "thaimaalaista currytahnaa",
@@ -20443,13 +20445,15 @@
         },
         {
           "name": "kookosmaitoa",
-          "grams": 200,
-          "fineliRecordId": "fineli-684-release-20",
-          "giRecordId": "dairy-category-mean-gi-35",
-          "massEvidence": "Recipe-listed 200 g, mapped to MAITO, KEVYTMAITO, D-VITAMIINIA 1 UG (plain milk).",
-          "foodKey": "dairy",
-          "preparationKey": "unflavoured-dairy",
-          "giMatchEvidence": "Dairy products, category mean: Category mean, not a measured GI for the recipe's cream cheese.; category/analogue estimate, low confidence."
+          "grams": null,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "HOLD: coconut milk was incorrectly linked to cow's milk Fineli 684 and dairy GI 35; no approved coconut composition/GI or food-specific ml-to-g conversion for this ingredient.",
+          "massEvidence": "Original Finnish recipe specifies 200 ml coconut milk; food-specific mass conversion remains unresolved. No cow-milk mass conversion is applied.",
+          "foodKey": null,
+          "preparationKey": null,
+          "giMatchEvidence": "HOLD: invalid cow's milk and dairy GI binding withdrawn. Coconut milk GI applicability is not source-verified; missing GI is not zero.",
+          "recipeQuantity": {"amount": 200, "unit": "ml", "massGrams": null}
         },
         {
           "name": "kecap manis -kastiketta",

@@ -1,4 +1,5 @@
 import {restoreBeforeAfcdCorrection,afcdSourceBeforeCorrection} from './restore-pre-ehold';
+import {isP1CoconutHold,assertP1CoconutHold,assertOnlyP1CoconutInputChanges} from './p1-coconut-hold-guard';
 import {assertRecipeBaseline} from "./assert-recipe-baseline";
 import test from 'node:test';
 import assert from 'node:assert/strict';
@@ -122,9 +123,16 @@ test('approved curry variants retain the sealed calculation and native quantitie
 
 test('all326 parent GK objects,23 old variants, macro sources and recipe trees remain on the main baseline',()=>{
  const report=restoreBeforeAfcdCorrection(read('tmp/nutrition/glycemic-load-pilot.json'));assert.equal(report.results.length,326);
- assert.deepEqual(Object.fromEntries(report.results.map((r:any)=>[r.recipeId,digest(r)])),baseline.originalResultHashes);
+ for(const r of report.results){
+  if(isP1CoconutHold(r.recipeId))assertP1CoconutHold(r);
+  else assert.equal(digest(r),baseline.originalResultHashes[r.recipeId],r.recipeId);
+ }
  assert.equal(report.results.filter((r:any)=>r.status==='CALCULATED').length,156);
- for(const [p,hash] of Object.entries(baseline.protectedSourceFilesLfSha256))assert.equal(textHash(afcdSourceBeforeCorrection(p,readFileSync(path.join(root,p),'utf8'))),hash,p);
+ for(const [p,hash] of Object.entries(baseline.protectedSourceFilesLfSha256)){
+  if(p==='docs/nutrition/glycemic-load-pilot-input.json')continue;
+  assert.equal(textHash(afcdSourceBeforeCorrection(p,readFileSync(path.join(root,p),'utf8'))),hash,p);
+ }
+ assertOnlyP1CoconutInputChanges(root);
  assertRecipeBaseline(root,baseline.main,'docs/nutrition/calculations');
  for(const v of four){assert.equal(v.macroScope,'NO_MACRO_PACKAGE_FOR_THIS_VERSION');for(const key of ['macros','nutrition','macroEvidence'])assert.ok(!(key in v));assert.equal(report.results.find((r:any)=>r.recipeId===v.recipeId).status,'INSUFFICIENT SOURCE DATA');}
 });

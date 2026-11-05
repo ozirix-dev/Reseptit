@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "status": "AUDIT_SIDECAR_NOT_RUNTIME_MIGRATION",
+  "reviewDate": "2026-11-02",
+  "sources": [
+    {
+      "id": "coconut-porridge31",
+      "value": 31,
+      "reportedSpread": 5,
+      "measurementKind": "HUMAN_MEASURED_METHOD_UNCONFIRMED",
+      "testObjectKind": "MIXED_MEAL",
+      "applicationKind": "REFERENCE_ONLY",
+      "calculationUse": "REFERENCE_ONLY",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/22849311/",
+      "doi": "10.3109/09637486.2012.710895",
+      "productIdentity": "Rice and coconut-milk porridge control in Sri Lankan leafy-porridge study",
+      "preparation": "Porridge; exact full protocol unavailable",
+      "reference": "Glucose control described in abstract; complete protocol unconfirmed",
+      "participants": "10 in old card; not independently verified in accessible abstract",
+      "methodLimit": "Abstract reviewed, full methods unavailable; no ISO claim",
+      "notApplicableTo": "Standalone canned coconut milk"
+    },
+    {
+      "id": "coco-quench68",
+      "value": 68,
+      "measurementKind": "HUMAN_MEASURED_METHOD_UNCONFIRMED",
+      "testObjectKind": "SINGLE_FOOD",
+      "applicationKind": "REFERENCE_ONLY",
+      "calculationUse": "REFERENCE_ONLY",
+      "sourceUrl": "https://glycemicindex.com/gi-search/",
+      "productIdentity": "Pure Harvest Coco Quench, coconut and brown-rice beverage, Australia",
+      "brand": "Pure Harvest",
+      "participants": 10,
+      "participantsType": "Normal",
+      "testDurationHours": 2,
+      "testYear": 2020,
+      "originalReport": "Sydney GI Research Service unpublished observations",
+      "reference": "GI Search value; individual primary protocol/reference detail not available in row",
+      "methodLimit": "Do not infer ISO compliance from website or journal status",
+      "currentManufacturerUrl": "https://pureharvest.com.au/product/coco-quench-original/",
+      "currentIngredients": [
+        "Filtered water",
+        "Organic coconut milk20%",
+        "Organic brown rice",
+        "Sea salt"
+      ],
+      "currentPer100ml": {
+        "carbohydrate": 7.8,
+        "fat": 2.72,
+        "protein": 0.5
+      },
+      "historicalFormulaMatchVerified": false,
+      "rowCarbohydratePortionG": 25,
+      "rowGl": 17,
+      "rowServingSizeBlank": true,
+      "notApplicableTo": "Ordinary canned coconut milk;25g row carbohydrate is not a measured250ml serving"
+    },
+    {
+      "id": "alpro-coconut96_82",
+      "value": 96.82,
+      "reportedLaboratorySpread": 5.05,
+      "notHumanSEM": true,
+      "measurementKind": "IN_VITRO_ESTIMATE",
+      "testObjectKind": "SINGLE_FOOD",
+      "applicationKind": "REFERENCE_ONLY",
+      "calculationUse": "REFERENCE_ONLY",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5325842/",
+      "doi": "10.1007/s11130-016-0583-0",
+      "productIdentity": "Alpro Coconut Original commercial plant-based milk substitute",
+      "brand": "Alpro",
+      "method": "Multi-enzyme digestion of0.5g available carbohydrate, chromatography and artificial-neural-network-derived equation",
+      "participants": null,
+      "notApplicableTo": "Human measured GI or high-fat canned coconut milk",
+      "compositionTable1Per100g": {
+        "fat": 0.84,
+        "protein": 0.08
+      },
+      "compositionTable2Per100g": {
+        "sumSugars": 1.86
+      },
+      "ingredientList": "Historical supplement link encountered a browser challenge; exact historical ingredients not independently verified",
+      "notUsedAsBiologicalRange": true
+    },
+    {
+      "id": "nudie-coconut-water55",
+      "value": 55,
+      "measurementKind": "HUMAN_MEASURED_METHOD_UNCONFIRMED",
+      "testObjectKind": "SINGLE_FOOD",
+      "applicationKind": "REFERENCE_ONLY",
+      "calculationUse": "REFERENCE_ONLY",
+      "sourceUrl": "https://glycemicindex.com/gi-search/",
+      "productIdentity": "Nudie green-coconut water",
+      "participants": 9,
+      "participantsType": "Normal",
+      "testDurationHours": 2,
+      "testYear": 2012,
+      "methodLimit": "Individual protocol unavailable in database row; cannot transfer to flesh or milk"
+    },
+    {
+      "id": "lowcho50-existing-scope",
+      "value": 50,
+      "measurementKind": "NOT_MEASURED",
+      "testObjectKind": "POLICY",
+      "applicationKind": "PROJECT_IMPUTATION",
+      "calculationUse": "EXISTING_APPROVED_SCOPE_ONLY",
+      "sourceUrl": "https://doi.org/10.1016/j.jfca.2007.02.004",
+      "productIdentity": "No tested coconut product; a coding assumption applied to named reviewed compositions",
+      "method": "Published low-carbohydrate default; <=5g/100g cutoff and named bindings are project interpretation",
+      "participants": null,
+      "notApplicableTo": "New foods or preparations without explicit binding and approval"
+    }
+  ],
+  "secondaryCitationTrace": {
+    "url": "https://foodstruct.com/food/coconut-milk/glycemic-index",
+    "observation": "Secondary page attaches96.82 to generic coconut milk while linking Jeske2017, and31 to porridge while linking Senadheera2013. Used only to trace attribution, not as scientific GI evidence."
+  }
+}

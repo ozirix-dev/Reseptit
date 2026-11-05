@@ -1,0 +1,21 @@
+{
+  "genericWithEquationAdds": [
+    "sorbitol",
+    "mannitol",
+    "glycerol"
+  ],
+  "extraSpeciesColumns": [
+    "erythritol",
+    "maltitol",
+    "xylitol"
+  ],
+  "withoutMayUseLabelDifferenceMethod": true,
+  "reportingLimits": {
+    "Erythritol": "0.2",
+    "Maltitol": "0.2",
+    "Xylitol": "0.2"
+  },
+  "definitionsLocator": "Proximates!G38:H39; E35:E37",
+  "individualBlankMeans": "not reported, never inferred zero",
+  "aggregatePolyolReported": false
+}

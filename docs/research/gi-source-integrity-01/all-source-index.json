@@ -1,0 +1,3564 @@
+{
+  "baseMain": "583fdb91aeb12114f909412b9165fc3b02a6515d",
+  "cardOccurrences": 122,
+  "inVitroTextMarkers": 0,
+  "cards": [
+    {
+      "origin": "GLOBAL",
+      "record": {
+        "id": "whole-tomato-raw-gi-22",
+        "gi": 22,
+        "foodKey": "tomato",
+        "preparationKey": "whole-raw",
+        "food": "Whole tomatoes",
+        "preparation": "Whole, raw tomato",
+        "qualityTier": "STRONG",
+        "referenceScale": "GLUCOSE_100",
+        "source": {
+          "title": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+          "authors": "Fiona S Atkinson, Jennie C Brand-Miller, Kaye Foster-Powell, Anette E Buyken, Janina Goletzke",
+          "url": "https://doi.org/10.1093/ajcn/nqab233",
+          "table": "Supplemental Table 1; article Results also reports the value",
+          "year": 2021,
+          "published": true,
+          "iso26642Confirmed": true,
+          "qualityEvidence": "The record is from Supplemental Table 1, which the review defines as the ISO-methodology set. The tables identify the food as whole/raw tomato."
+        },
+        "note": "Direct GI value for whole raw tomato; this does not apply to crushed or cooked tomato."
+      },
+      "sourcePath": "docs/nutrition/glycemic-index-records.json"
+    },
+    {
+      "origin": "GLOBAL",
+      "record": {
+        "id": "tomato-cherry-raw-analogue-gi-22",
+        "gi": 22,
+        "foodKey": "tomato",
+        "preparationKey": "whole-raw",
+        "food": "Whole tomatoes, raw (analogue for raw cherry tomatoes)",
+        "preparation": "Whole, raw; cherry-tomato cultivar was not specified in the tested source food",
+        "qualityTier": "SUPPLEMENTARY",
+        "referenceScale": "GLUCOSE_100",
+        "matchKind": "ANALOG",
+        "confidence": "LOW",
+        "source": {
+          "title": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+          "authors": "Fiona S Atkinson, Jennie C Brand-Miller, Kaye Foster-Powell, Anette E Buyken, Janina Goletzke",
+          "url": "https://doi.org/10.1093/ajcn/nqab233",
+          "table": "Supplemental Table 1; whole tomatoes, raw, GI 22",
+          "year": 2021,
+          "published": true,
+          "iso26642Confirmed": true,
+          "qualityEvidence": "The review identifies Supplemental Table 1 as the ISO-methodology set. It reports raw whole tomatoes but does not identify cherry tomatoes or a cultivar. This is a disclosed tomato/cultivar analogue, not a cherry-tomato-specific measurement."
+        },
+        "note": "Low-confidence raw-tomato cultivar analogue; used only for uncooked cherry tomatoes and not for sauces or cooked tomatoes."
+      },
+      "sourcePath": "docs/nutrition/glycemic-index-records.json"
+    },
+    {
+      "origin": "GLOBAL",
+      "record": {
+        "id": "tomato-juice-canned-gi-38",
+        "gi": 38,
+        "foodKey": "tomato",
+        "preparationKey": "canned-juice",
+        "food": "Tomato juice, canned, no added sugar",
+        "preparation": "Canned juice; Berri product, Australia",
+        "qualityTier": "SUPPLEMENTARY",
+        "referenceScale": "GLUCOSE_100",
+        "source": {
+          "title": "University of Sydney Glycemic Index Search database",
+          "url": "https://glycemicindex.com/gi-search/",
+          "table": "Fruit and Fruit Products search entry; Sydney University GI Research Service unpublished observation, test year 2002",
+          "year": 2002,
+          "published": false,
+          "iso26642Confirmed": false,
+          "participants": 10,
+          "referenceFood": "Not stated in the database entry",
+          "testDurationHours": 2,
+          "qualityEvidence": "Database entry identifies an unpublished test; the full protocol and ISO compliance cannot be verified."
+        },
+        "note": "Candidate only. Juice does not match crushed tomato."
+      },
+      "sourcePath": "docs/nutrition/glycemic-index-records.json"
+    },
+    {
+      "origin": "GLOBAL",
+      "record": {
+        "id": "potato-boiled-china-gi-66",
+        "gi": 66,
+        "foodKey": "potato",
+        "preparationKey": "boiled-unspecified",
+        "food": "Potato, unspecified variety, boiled",
+        "preparation": "Boiled; China; test year 2005",
+        "qualityTier": "STRONG",
+        "referenceScale": "GLUCOSE_100",
+        "source": {
+          "title": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+          "url": "https://doi.org/10.1093/ajcn/nqab233",
+          "table": "Supplemental Table 1, entry 1842",
+          "year": 2021,
+          "published": true,
+          "iso26642Confirmed": true,
+          "participants": 10,
+          "referenceFood": "Glucose",
+          "testDurationHours": 2,
+          "qualityEvidence": "Supplemental Table 1 is the review's ISO-methodology set; source row describes boiled, unspecified potato. GI is rounded to the table's reported integer."
+        },
+        "note": "Candidate only. Boiled potato does not match the recipe's covered, low-heat oil-cooked slices mixed with egg and pan-set as a tortilla."
+      },
+      "sourcePath": "docs/nutrition/glycemic-index-records.json"
+    },
+    {
+      "origin": "GLOBAL",
+      "record": {
+        "id": "potato-cooked-china-nonwestern-gi-66-4",
+        "gi": 66.4,
+        "foodKey": "potato",
+        "preparationKey": "cooked-unspecified",
+        "food": "Potato, cooked",
+        "preparation": "China; preparation not further specified in the compendium table",
+        "qualityTier": "SUPPLEMENTARY",
+        "referenceScale": "GLUCOSE_100",
+        "source": {
+          "title": "Glycemic index of cereals and tubers produced in China",
+          "url": "https://doi.org/10.3748/wjg.v12.i21.3430",
+          "table": "Table 3, potato cooked; also listed as reference 101 in the 2021 non-western compendium",
+          "year": 2006,
+          "published": true,
+          "iso26642Confirmed": false,
+          "participants": 10,
+          "referenceFood": "Glucose",
+          "testDurationHours": 2,
+          "qualityEvidence": "Peer-reviewed primary source and n=10 are reported, but the record does not establish all ISO 26642 protocol requirements or precise cooking conditions."
+        },
+        "note": "Candidate only. Cooking description is insufficient to match the tortilla preparation."
+      },
+      "sourcePath": "docs/nutrition/glycemic-index-records.json"
+    },
+    {
+      "origin": "GLOBAL",
+      "record": {
+        "id": "potato-fried-evoo-lady-rosetta-gi-114",
+        "gi": 114,
+        "foodKey": "potato",
+        "preparationKey": "sliced-fried-extra-virgin-olive-oil-lady-rosetta",
+        "food": "Lady Rosetta potato, sliced",
+        "preparation": "Slices fried in extra-virgin olive oil",
+        "qualityTier": "SUPPLEMENTARY",
+        "referenceScale": "GLUCOSE_100",
+        "source": {
+          "title": "Glycemic Index of Two Different Fried Potato Varieties Cultivated Under Organic Fertilization Conditions",
+          "url": "https://doi.org/10.12944/CRNFSJ.4.1.02",
+          "table": "Results; Lady Rosetta fried in extra-virgin olive oil",
+          "year": 2016,
+          "published": true,
+          "iso26642Confirmed": false,
+          "participants": 8,
+          "referenceFood": "Glucose",
+          "testDurationHours": 2,
+          "qualityEvidence": "The study reports GI 114 ± 15 after a 50-g available-carbohydrate portion and standard 2-hour sampling, but tested only eight healthy men, below the ISO minimum of ten. Variety and sliced-fry preparation are specified; the recipe instead slow-cooks potato slices covered in oil, then sets them in egg."
+        },
+        "note": "Exploratory candidate only; n=8 does not meet the source policy, and fried slices do not match the recipe preparation."
+      },
+      "sourcePath": "docs/nutrition/glycemic-index-records.json"
+    },
+    {
+      "origin": "GLOBAL",
+      "record": {
+        "id": "potato-fried-evoo-spunta-gi-83",
+        "gi": 83,
+        "foodKey": "potato",
+        "preparationKey": "sliced-fried-extra-virgin-olive-oil-spunta",
+        "food": "Spunta potato, sliced",
+        "preparation": "Slices fried in extra-virgin olive oil",
+        "qualityTier": "SUPPLEMENTARY",
+        "referenceScale": "GLUCOSE_100",
+        "source": {
+          "title": "Glycemic Index of Two Different Fried Potato Varieties Cultivated Under Organic Fertilization Conditions",
+          "url": "https://doi.org/10.12944/CRNFSJ.4.1.02",
+          "table": "Results; Spunta fried in extra-virgin olive oil",
+          "year": 2016,
+          "published": true,
+          "iso26642Confirmed": false,
+          "participants": 8,
+          "referenceFood": "Glucose",
+          "testDurationHours": 2,
+          "qualityEvidence": "The study reports GI 83 ± 12 after a 50-g available-carbohydrate portion and standard 2-hour sampling, but tested only eight healthy men, below the ISO minimum of ten. Variety and sliced-fry preparation are specified; the recipe instead slow-cooks potato slices covered in oil, then sets them in egg."
+        },
+        "note": "Exploratory candidate only; n=8 does not meet the source policy, and fried slices do not match the recipe preparation."
+      },
+      "sourcePath": "docs/nutrition/glycemic-index-records.json"
+    },
+    {
+      "origin": "GLOBAL",
+      "record": {
+        "id": "potato-crisp-fried-china-nonwestern-gi-60-3",
+        "gi": 60.3,
+        "foodKey": "potato",
+        "preparationKey": "potato-crisp-oil-fried",
+        "food": "Potato crisp, oil fried",
+        "preparation": "Potato crisps, oil fried; China",
+        "qualityTier": "SUPPLEMENTARY",
+        "referenceScale": "GLUCOSE_100",
+        "source": {
+          "title": "Glycemic index of cereals and tubers produced in China",
+          "url": "https://doi.org/10.3748/wjg.v12.i21.3430",
+          "table": "Table 1, entry 442 in the 2021 non-western compendium",
+          "year": 2006,
+          "published": true,
+          "iso26642Confirmed": false,
+          "participants": 10,
+          "referenceFood": "Glucose",
+          "testDurationHours": 2,
+          "qualityEvidence": "The compendium reports GI 60.3 ± 7.0, n=10 and glucose/2 h; the primary record does not establish ISO compliance in this review, and crisp/chip processing is unlike tortilla potato."
+        },
+        "note": "Candidate only. A potato crisp is not a slow-cooked potato slice set in egg."
+      },
+      "sourcePath": "docs/nutrition/glycemic-index-records.json"
+    },
+    {
+      "origin": "GLOBAL",
+      "record": {
+        "id": "potato-steamed-nishiyutaka-nonwestern-gi-64",
+        "gi": 64,
+        "foodKey": "potato",
+        "preparationKey": "steamed-nishiyutaka",
+        "food": "Nishiyutaka potato",
+        "preparation": "Steamed; Japan",
+        "qualityTier": "SUPPLEMENTARY",
+        "referenceScale": "GLUCOSE_100",
+        "source": {
+          "title": "Consideration of the validity of glycemic index using blood glucose and insulin levels and breath hydrogen excretion in healthy subjects",
+          "url": "https://doi.org/10.1016/j.ijdm.2010.05.004",
+          "table": "Table 1, row 344 in the 2021 non-western compendium",
+          "year": 2010,
+          "published": true,
+          "iso26642Confirmed": false,
+          "participants": 12,
+          "referenceFood": "Glucose",
+          "testDurationHours": 2,
+          "qualityEvidence": "The compendium lists GI 64 with SD 15, n=12, 50 g available carbohydrate and glucose/2 h. The food is steamed potato cultivar Nishiyutaka, not oil-cooked tortilla potato; full ISO protocol was not confirmed here."
+        },
+        "note": "Candidate only. A steamed cultivar-specific potato is not preparation-matched to tortilla."
+      },
+      "sourcePath": "docs/nutrition/glycemic-index-records.json"
+    },
+    {
+      "origin": "GLOBAL",
+      "record": {
+        "id": "potato-steamed-ainoaka-nonwestern-gi-63",
+        "gi": 63,
+        "foodKey": "potato",
+        "preparationKey": "steamed-ainoaka",
+        "food": "Ainoaka potato",
+        "preparation": "Steamed; Japan",
+        "qualityTier": "SUPPLEMENTARY",
+        "referenceScale": "GLUCOSE_100",
+        "source": {
+          "title": "Consideration of the validity of glycemic index using blood glucose and insulin levels and breath hydrogen excretion in healthy subjects",
+          "url": "https://doi.org/10.1016/j.ijdm.2010.05.004",
+          "table": "Table 1, row 346 in the 2021 non-western compendium",
+          "year": 2010,
+          "published": true,
+          "iso26642Confirmed": false,
+          "participants": 12,
+          "referenceFood": "Glucose",
+          "testDurationHours": 2,
+          "qualityEvidence": "The compendium lists GI 63 with SD 19, n=12, 50 g available carbohydrate and glucose/2 h. The food is steamed potato cultivar Ainoaka, not oil-cooked tortilla potato; full ISO protocol was not confirmed here."
+        },
+        "note": "Candidate only. A steamed cultivar-specific potato is not preparation-matched to tortilla."
+      },
+      "sourcePath": "docs/nutrition/glycemic-index-records.json"
+    },
+    {
+      "origin": "GLOBAL",
+      "record": {
+        "id": "potato-steamed-dejima-nonwestern-gi-54",
+        "gi": 54,
+        "foodKey": "potato",
+        "preparationKey": "steamed-dejima",
+        "food": "Dejima potato",
+        "preparation": "Steamed; Japan",
+        "qualityTier": "SUPPLEMENTARY",
+        "referenceScale": "GLUCOSE_100",
+        "source": {
+          "title": "Consideration of the validity of glycemic index using blood glucose and insulin levels and breath hydrogen excretion in healthy subjects",
+          "url": "https://doi.org/10.1016/j.ijdm.2010.05.004",
+          "table": "Table 1, row 348 in the 2021 non-western compendium",
+          "year": 2010,
+          "published": true,
+          "iso26642Confirmed": false,
+          "participants": 12,
+          "referenceFood": "Glucose",
+          "testDurationHours": 2,
+          "qualityEvidence": "The compendium lists GI 54 with SD 17, n=12, 50 g available carbohydrate and glucose/2 h. The food is steamed potato cultivar Dejima, not oil-cooked tortilla potato; full ISO protocol was not confirmed here."
+        },
+        "note": "Candidate only. A steamed cultivar-specific potato is not preparation-matched to tortilla."
+      },
+      "sourcePath": "docs/nutrition/glycemic-index-records.json"
+    },
+    {
+      "origin": "GLOBAL",
+      "record": {
+        "id": "potato-boiled-tortilla-analogue-gi-66",
+        "gi": 66,
+        "foodKey": "potato",
+        "preparationKey": "boiled-unspecified",
+        "food": "Unspecified potato, boiled",
+        "preparation": "Boiled potato used as a broad preparation analogue for slow oil-cooked tortilla potato",
+        "qualityTier": "SUPPLEMENTARY",
+        "referenceScale": "GLUCOSE_100",
+        "matchKind": "ANALOG",
+        "confidence": "LOW",
+        "source": {
+          "title": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+          "url": "https://doi.org/10.1093/ajcn/nqab233",
+          "table": "Supplemental Table 1, entry 1842",
+          "year": 2021,
+          "published": true,
+          "iso26642Confirmed": true,
+          "participants": 10,
+          "referenceFood": "Glucose",
+          "testDurationHours": 2,
+          "qualityEvidence": "Published glucose-scale boiled-potato measurement from the ISO-screened table. The recipe preparation differs substantially (covered oil-cooking followed by setting with egg), so the reported value is used only as an explicitly low-confidence ingredient proxy, not as a measured tortilla GI."
+        },
+        "note": "Preparation mismatch is disclosed; actual potato GI varies by variety and cooking method."
+      },
+      "sourcePath": "docs/nutrition/glycemic-index-records.json"
+    },
+    {
+      "origin": "GLOBAL",
+      "record": {
+        "id": "tomato-raw-cooked-sauce-analogue-gi-22",
+        "gi": 22,
+        "foodKey": "tomato",
+        "preparationKey": "whole-raw",
+        "food": "Whole raw tomato",
+        "preparation": "Raw tomato value used as a proxy for crushed tomato cooked in sauce",
+        "qualityTier": "SUPPLEMENTARY",
+        "referenceScale": "GLUCOSE_100",
+        "matchKind": "ANALOG",
+        "confidence": "MEDIUM",
+        "source": {
+          "title": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+          "url": "https://doi.org/10.1093/ajcn/nqab233",
+          "table": "Supplemental Table 1; whole tomato, raw",
+          "year": 2021,
+          "published": true,
+          "iso26642Confirmed": true,
+          "qualityEvidence": "Published glucose-scale value from the ISO-screened table. The raw whole-tomato product is not the recipe's crushed cooked tomato; it is disclosed as the nearest directly documented tomato analogue."
+        },
+        "note": "GI 22 was measured for whole raw tomato, not cooked tomato sauce."
+      },
+      "sourcePath": "docs/nutrition/glycemic-index-records.json"
+    },
+    {
+      "origin": "GLOBAL",
+      "record": {
+        "id": "red-pepper-literature-analogue-gi-40",
+        "gi": 40,
+        "foodKey": "pepper-unspecified-secondary-table",
+        "preparationKey": "unspecified-secondary-table",
+        "food": "Pepper, unspecified product in secondary illustrative table",
+        "preparation": "Not specified; neither species/colour nor raw/cooked state is established",
+        "qualityTier": "SUPPLEMENTARY",
+        "referenceScale": "GLUCOSE_100",
+        "matchKind": "ANALOG",
+        "confidence": "LOW",
+        "source": {
+          "title": "Mens sana in corpore sano: Does the Glycemic Index Have a Role to Play?",
+          "url": "https://doi.org/10.3390/nu12102989",
+          "table": "Table 1: Pepper, serving 2 g, GI 40, carbohydrate 1 g; illustrative secondary table, no pepper-specific primary protocol",
+          "year": 2020,
+          "published": true,
+          "iso26642Confirmed": false,
+          "qualityEvidence": "Full-text JATS XML Table 1 has a generic Pepper row (2 g portion), not an identified red bell pepper test. The general footnote cites glycemicindex.com and Jenkins et al. 1983 (10.1007/BF00282710), without a row-specific primary study. Neither species, colour, preparation, participants nor original reference scale can be verified. GI 40 is retained only as historical secondary-table data; not an approved LOW analogue.",
+          "authors": "Lionel Carneiro; Corinne Leloup"
+        },
+        "note": "AJO 1.6B: REFERENCE_ONLY. The review defines glucose=100 generally; this does not verify the scale of a primary pepper experiment. No matching standalone red/green bell pepper measurement traced in Sydney GI Search or International Tables 2021 supplements 1/2. A 2 g serving suggests a seasoning but does not identify black pepper; no species inference is approved.",
+        "calculationUse": "REFERENCE_ONLY"
+      },
+      "sourcePath": "docs/nutrition/glycemic-index-records.json"
+    },
+    {
+      "origin": "GLOBAL",
+      "record": {
+        "id": "onion-literature-analogue-gi-15",
+        "gi": 15,
+        "foodKey": "onion",
+        "preparationKey": "unspecified-secondary-table",
+        "food": "Onion, generic vegetable table entry",
+        "preparation": "Preparation not reported; neither raw nor cooked onion was verified in a primary GI protocol.",
+        "qualityTier": "SUPPLEMENTARY",
+        "referenceScale": "GLUCOSE_100",
+        "matchKind": "ANALOG",
+        "confidence": "LOW",
+        "source": {
+          "title": "Mens sana in corpore sano: Does the Glycemic Index Have a Role to Play?",
+          "url": "https://doi.org/10.3390/nu12102989",
+          "table": "Table 1, generic onion entry (GI 15); secondary illustration, not a primary onion experiment",
+          "year": 2020,
+          "published": true,
+          "iso26642Confirmed": false,
+          "qualityEvidence": "Carneiro & Leloup (2020), Table 1, illustrates onion GI 15 but provides no onion-specific human protocol or preparation. Anderson, Soeandy & Smith (2013), DOI 10.3945/an.112.003509, Table 3 footnote 2, explicitly identifies onion 10–15 as online-source values without peer-reviewed GI measurements or preparation methods. The table uses a glucose reference, but the original onion experiment and scale cannot be verified. Retained as REFERENCE_ONLY; not an approved LOW analogue.",
+          "authors": "Lionel Carneiro; Corinne Leloup"
+        },
+        "note": "Historical secondary-table number only. No traceable preparation-matched human GI measurement; LOW confidence cannot substitute for missing primary provenance. Not approved for onion, garlic, spring onion or shallot calculations.",
+        "calculationUse": "REFERENCE_ONLY"
+      },
+      "sourcePath": "docs/nutrition/glycemic-index-records.json"
+    },
+    {
+      "origin": "GLOBAL",
+      "record": {
+        "id": "dairy-category-mean-gi-35",
+        "gi": 35,
+        "foodKey": "dairy",
+        "preparationKey": "unflavoured-dairy",
+        "food": "Dairy products, category mean",
+        "preparation": "Unflavoured dairy category mean used for plain cream cheese",
+        "qualityTier": "SUPPLEMENTARY",
+        "referenceScale": "GLUCOSE_100",
+        "matchKind": "CATEGORY_MEAN",
+        "confidence": "LOW",
+        "source": {
+          "title": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+          "url": "https://doi.org/10.1093/ajcn/nqab233",
+          "table": "Table 1 summary: dairy products mean GI 35 ± 11 (n=186)",
+          "year": 2021,
+          "published": true,
+          "iso26642Confirmed": true,
+          "qualityEvidence": "Published category mean from ISO-screened individual food measurements. This is not a cream-cheese-specific value and is used only as a clearly labelled category-level proxy."
+        },
+        "note": "Category mean, not a measured GI for the recipe's cream cheese."
+      },
+      "sourcePath": "docs/nutrition/glycemic-index-records.json"
+    },
+    {
+      "origin": "GLOBAL",
+      "record": {
+        "id": "plain-yogurt-category-mean-gi-27-2017",
+        "gi": 27,
+        "foodKey": "plain-yogurt-category-mean",
+        "preparationKey": "plain-unsweetened-yogurt",
+        "food": "Plain or artificially sweetened yogurt category mean",
+        "preparation": "Plain or artificially sweetened yogurt; category average, not a brand-specific test",
+        "qualityTier": "SUPPLEMENTARY",
+        "referenceScale": "GLUCOSE_100",
+        "matchKind": "CATEGORY_MEAN",
+        "confidence": "LOW",
+        "source": {
+          "title": "Yogurt Is a Low-Glycemic Index Food",
+          "authors": "Thomas MS Wolever",
+          "url": "https://doi.org/10.3945/jn.116.240770",
+          "table": "Table 1: plain/artificially sweetened yogurt database mean 26.6 ± 10.9 (n=43), rounded to GI 27",
+          "year": 2017,
+          "published": true,
+          "iso26642Confirmed": false,
+          "qualityEvidence": "Published analysis of the University of Sydney GI database. The reported mean summarizes 43 plain or artificially sweetened yogurt entries; it is not a new standardized test of this recipe's yogurt brand or the mixed recipe."
+        },
+        "note": "Low-confidence plain-yogurt category mean; the underlying individual database entries vary and this is not a brand-specific measurement."
+      },
+      "sourcePath": "docs/nutrition/glycemic-index-records.json"
+    },
+    {
+      "origin": "GLOBAL",
+      "record": {
+        "id": "chickpea-canned-gi-35",
+        "gi": 35,
+        "foodKey": "chickpea",
+        "preparationKey": "canned-drained",
+        "food": "Canned, drained chickpeas",
+        "preparation": "Canned chickpeas, drained; used as analogue for cooked chickpeas",
+        "qualityTier": "SUPPLEMENTARY",
+        "referenceScale": "GLUCOSE_100",
+        "matchKind": "ANALOG",
+        "confidence": "MEDIUM",
+        "source": {
+          "title": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+          "url": "https://doi.org/10.1093/ajcn/nqab233",
+          "table": "Supplemental Table 1, item 1284: chickpeas, canned, drained (Edgell), GI 35 ± 3",
+          "year": 2021,
+          "published": true,
+          "iso26642Confirmed": true,
+          "participants": 12,
+          "referenceFood": "Glucose",
+          "testDurationHours": 2,
+          "qualityEvidence": "The food measurement is listed in the review’s highest-quality Supplemental Table 1, which used methodology in accordance with ISO 26642. Recipe chickpeas are not branded Edgell; this is an explicit product analogue, not an exact match."
+        },
+        "note": "Measured for a specific Australian canned brand, not the recipe’s unspecified chickpea product."
+      },
+      "sourcePath": "docs/nutrition/glycemic-index-records.json"
+    },
+    {
+      "origin": "GLOBAL",
+      "record": {
+        "id": "legumes-category-mean-gi-34",
+        "gi": 34,
+        "foodKey": "legume",
+        "preparationKey": "legume-category",
+        "food": "Legumes, category mean",
+        "preparation": "Category mean of tested legume foods",
+        "qualityTier": "SUPPLEMENTARY",
+        "referenceScale": "GLUCOSE_100",
+        "matchKind": "CATEGORY_MEAN",
+        "confidence": "LOW",
+        "source": {
+          "title": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+          "url": "https://doi.org/10.1093/ajcn/nqab233",
+          "table": "Table 1 summary: legumes mean GI 34 ± 14 (n=32), values from Supplemental Table 1",
+          "year": 2021,
+          "published": true,
+          "iso26642Confirmed": false,
+          "referenceFood": "Glucose",
+          "qualityEvidence": "Published category mean calculated from the ISO-screened Supplemental Table 1 food measurements. It is not a kidney-bean-specific GI or a measurement of the recipe."
+        },
+        "note": "Broad category mean; substantial uncertainty when applied to a specific cooked bean."
+      },
+      "sourcePath": "docs/nutrition/glycemic-index-records.json"
+    },
+    {
+      "origin": "GLOBAL",
+      "record": {
+        "id": "vegetables-category-mean-gi-66",
+        "gi": 66,
+        "foodKey": "vegetable",
+        "preparationKey": "vegetable-category",
+        "food": "Vegetables other than potatoes, category mean",
+        "preparation": "Broad category mean; preparation and individual vegetables vary",
+        "qualityTier": "SUPPLEMENTARY",
+        "referenceScale": "GLUCOSE_100",
+        "matchKind": "CATEGORY_MEAN",
+        "confidence": "LOW",
+        "source": {
+          "title": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+          "url": "https://doi.org/10.1093/ajcn/nqab233",
+          "table": "Table 1 summary: vegetables other than potatoes mean GI 66 ± 19 (n=91), values from Supplemental Table 1",
+          "year": 2021,
+          "published": true,
+          "iso26642Confirmed": false,
+          "referenceFood": "Glucose",
+          "qualityEvidence": "Published broad category mean calculated from the ISO-screened Supplemental Table 1 food measurements. This category contains diverse vegetables and is not specific to cabbage, cauliflower, cucumber, zucchini, or eggplant."
+        },
+        "note": "Very broad category proxy. It may poorly represent individual non-starchy vegetables and is shown with low confidence."
+      },
+      "sourcePath": "docs/nutrition/glycemic-index-records.json"
+    },
+    {
+      "origin": "GLOBAL",
+      "record": {
+        "id": "soups-category-mean-gi-49",
+        "gi": 49,
+        "foodKey": "soup",
+        "preparationKey": "soup-category",
+        "food": "Soups, category mean",
+        "preparation": "Broad category mean of tested soups",
+        "qualityTier": "SUPPLEMENTARY",
+        "referenceScale": "GLUCOSE_100",
+        "matchKind": "CATEGORY_MEAN",
+        "confidence": "LOW",
+        "source": {
+          "title": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+          "url": "https://doi.org/10.1093/ajcn/nqab233",
+          "table": "Table 1 summary: soups mean GI 49 ± 10 (n=21), values from Supplemental Table 1",
+          "year": 2021,
+          "published": true,
+          "iso26642Confirmed": false,
+          "referenceFood": "Glucose",
+          "qualityEvidence": "Published category mean calculated from the ISO-screened Supplemental Table 1 food measurements. It is not a beef-broth-specific measurement."
+        },
+        "note": "Broad soup category mean applied to broth carbohydrate; weak match."
+      },
+      "sourcePath": "docs/nutrition/glycemic-index-records.json"
+    },
+    {
+      "origin": "GLOBAL",
+      "record": {
+        "id": "coconut-milk-porridge-gi-31",
+        "gi": 31,
+        "foodKey": "rice-porridge-with-coconut-milk",
+        "preparationKey": "rice-porridge-with-coconut-milk",
+        "food": "Rice porridge with coconut milk (mixed meal)",
+        "preparation": "Rice porridge prepared with coconut milk",
+        "qualityTier": "SUPPLEMENTARY",
+        "referenceScale": "GLUCOSE_100",
+        "source": {
+          "title": "Green leafy porridges: how good are they in controlling glycaemic response?",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/22849311/",
+          "table": "Original abstract: coconut-milk porridge GI 31 +/- 5; online publication 2012-07-31, journal 64(2):169-174 (2013)",
+          "year": 2013,
+          "published": true,
+          "iso26642Confirmed": false,
+          "participants": 10,
+          "referenceFood": "Glucose",
+          "qualityEvidence": "The original abstract identifies rice and coconut-milk porridges as controls for leafy porridges. GI 31 +/- 5 is a mixed rice-porridge result, not an isolated coconut-milk measurement. Full methods were not accessible for this review; ISO compliance is not confirmed. Retained as reference only, excluded from ingredient-based GL calculations.",
+          "authors": "S. P. A. S. Senadheera; Sagarika Ekanayake"
+        },
+        "note": "Mixed rice-and-coconut-milk porridge, not standalone coconut milk. No supported ingredient analogue is established. Exact preparation equivalence requires full-method review before any future calculation use.",
+        "matchKind": "EXACT",
+        "confidence": "LOW",
+        "calculationUse": "REFERENCE_ONLY"
+      },
+      "sourcePath": "docs/nutrition/glycemic-index-records.json"
+    },
+    {
+      "origin": "GLOBAL",
+      "record": {
+        "id": "asian-regional-category-mean-gi-60",
+        "gi": 60,
+        "foodKey": "curry-paste",
+        "preparationKey": "asian-regional-food-category",
+        "food": "Asian regional foods, category mean",
+        "preparation": "Regional category mean; heterogeneous foods",
+        "qualityTier": "SUPPLEMENTARY",
+        "referenceScale": "GLUCOSE_100",
+        "source": {
+          "title": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+          "url": "https://doi.org/10.1093/ajcn/nqab233",
+          "table": "Table 1, Asian foods: mean 60, SD 19, n=89",
+          "year": 2021,
+          "published": true,
+          "iso26642Confirmed": false,
+          "participants": 89,
+          "referenceFood": "Glucose",
+          "qualityEvidence": "Published regional category mean, not a curry-paste measurement."
+        },
+        "note": "Broad low-confidence regional category proxy for curry paste; not preparation-matched.",
+        "matchKind": "CATEGORY_MEAN",
+        "confidence": "LOW"
+      },
+      "sourcePath": "docs/nutrition/glycemic-index-records.json"
+    },
+    {
+      "origin": "GLOBAL",
+      "record": {
+        "id": "nuts-category-mean-gi-22",
+        "gi": 22,
+        "foodKey": "peanut",
+        "preparationKey": "nuts-category-mean",
+        "food": "Nuts, category mean",
+        "preparation": "Nut category mean",
+        "qualityTier": "SUPPLEMENTARY",
+        "referenceScale": "GLUCOSE_100",
+        "source": {
+          "title": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+          "url": "https://doi.org/10.1093/ajcn/nqab233",
+          "table": "Table 1, nuts: mean 22, SD 2, n=3",
+          "year": 2021,
+          "published": true,
+          "iso26642Confirmed": false,
+          "participants": 3,
+          "referenceFood": "Glucose",
+          "qualityEvidence": "Published category mean with only three observations; not peanut-specific."
+        },
+        "note": "Low-confidence category mean for peanuts.",
+        "matchKind": "CATEGORY_MEAN",
+        "confidence": "LOW"
+      },
+      "sourcePath": "docs/nutrition/glycemic-index-records.json"
+    },
+    {
+      "origin": "GLOBAL",
+      "record": {
+        "id": "bakery-products-category-mean-gi-58",
+        "gi": 58,
+        "foodKey": "bakery-products-category-mean",
+        "preparationKey": "category-mean",
+        "food": "Bakery products category mean",
+        "preparation": "Category mean from Table 1; individual food and preparation were not tested as this item",
+        "qualityTier": "SUPPLEMENTARY",
+        "referenceScale": "GLUCOSE_100",
+        "source": {
+          "title": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+          "url": "https://doi.org/10.1093/ajcn/nqab233",
+          "table": "Table 1; mean of Supplemental Table 1 entries for Bakery products (n=72)",
+          "year": 2021,
+          "published": true,
+          "iso26642Confirmed": false,
+          "qualityEvidence": "AJO 1.9: historical Table 1 mean of finished bakery products (72 entries), not an ingredient-specific human measurement. All 45 remaining bindings in 41 recipes were individually reviewed; none provides food/preparation equivalence. Retain the published category statistic as reference only. See glycemic-bakery-final-source-review.md."
+        },
+        "note": "Historical bakery-products category mean GI 58 preserved; not a GI source for flour, semolina, starch, flakes, couscous, bulgur, raw filo, noodles or cocoa. No active ingredient-calculation use is approved.",
+        "matchKind": "CATEGORY_MEAN",
+        "confidence": "LOW",
+        "calculationUse": "REFERENCE_ONLY"
+      },
+      "sourcePath": "docs/nutrition/glycemic-index-records.json"
+    },
+    {
+      "origin": "GLOBAL",
+      "record": {
+        "id": "bread-category-mean-gi-64",
+        "gi": 64,
+        "foodKey": "bread-category-mean",
+        "preparationKey": "category-mean",
+        "food": "Breads category mean",
+        "preparation": "Category mean from Table 1; individual food and preparation were not tested as this item",
+        "qualityTier": "SUPPLEMENTARY",
+        "referenceScale": "GLUCOSE_100",
+        "source": {
+          "title": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+          "url": "https://doi.org/10.1093/ajcn/nqab233",
+          "table": "Table 1; mean of Supplemental Table 1 entries for Breads (n=214)",
+          "year": 2021,
+          "published": true,
+          "iso26642Confirmed": false,
+          "qualityEvidence": "Table 1 reports a category mean calculated from food-specific entries in Supplemental Table 1. The target ingredient was not individually tested; category matching is a broad proxy and is low confidence."
+        },
+        "note": "bread category mean; product and processing variation is substantial",
+        "matchKind": "CATEGORY_MEAN",
+        "confidence": "LOW"
+      },
+      "sourcePath": "docs/nutrition/glycemic-index-records.json"
+    },
+    {
+      "origin": "GLOBAL",
+      "record": {
+        "id": "potatoes-category-mean-gi-71",
+        "gi": 71,
+        "foodKey": "potatoes-category-mean",
+        "preparationKey": "category-mean",
+        "food": "Potatoes and potato products category mean",
+        "preparation": "Category mean from Table 1; individual food and preparation were not tested as this item",
+        "qualityTier": "SUPPLEMENTARY",
+        "referenceScale": "GLUCOSE_100",
+        "source": {
+          "title": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+          "url": "https://doi.org/10.1093/ajcn/nqab233",
+          "table": "Table 1; mean of Supplemental Table 1 entries for Potatoes and potato products (n=66)",
+          "year": 2021,
+          "published": true,
+          "iso26642Confirmed": false,
+          "qualityEvidence": "Table 1 reports a category mean calculated from food-specific entries in Supplemental Table 1. The target ingredient was not individually tested; category matching is a broad proxy and is low confidence."
+        },
+        "note": "potato category mean; this is not preparation-specific",
+        "matchKind": "CATEGORY_MEAN",
+        "confidence": "LOW"
+      },
+      "sourcePath": "docs/nutrition/glycemic-index-records.json"
+    },
+    {
+      "origin": "GLOBAL",
+      "record": {
+        "id": "pasta-category-mean-gi-52",
+        "gi": 52,
+        "foodKey": "pasta-category-mean",
+        "preparationKey": "category-mean",
+        "food": "Pasta category mean",
+        "preparation": "Category mean from Table 1; individual food and preparation were not tested as this item",
+        "qualityTier": "SUPPLEMENTARY",
+        "referenceScale": "GLUCOSE_100",
+        "source": {
+          "title": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+          "url": "https://doi.org/10.1093/ajcn/nqab233",
+          "table": "Table 1; mean of Supplemental Table 1 entries for Pasta (n=77)",
+          "year": 2021,
+          "published": true,
+          "iso26642Confirmed": false,
+          "qualityEvidence": "Table 1 reports a category mean calculated from food-specific entries in Supplemental Table 1. The target ingredient was not individually tested; category matching is a broad proxy and is low confidence."
+        },
+        "note": "pasta category mean; product and cooking variation remains",
+        "matchKind": "CATEGORY_MEAN",
+        "confidence": "LOW"
+      },
+      "sourcePath": "docs/nutrition/glycemic-index-records.json"
+    },
+    {
+      "origin": "GLOBAL",
+      "record": {
+        "id": "rice-category-mean-gi-67",
+        "gi": 67,
+        "foodKey": "rice-category-mean",
+        "preparationKey": "category-mean",
+        "food": "Rice category mean",
+        "preparation": "Category mean from Table 1; individual food and preparation were not tested as this item",
+        "qualityTier": "SUPPLEMENTARY",
+        "referenceScale": "GLUCOSE_100",
+        "source": {
+          "title": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+          "url": "https://doi.org/10.1093/ajcn/nqab233",
+          "table": "Table 1; mean of Supplemental Table 1 entries for Rice (n=128)",
+          "year": 2021,
+          "published": true,
+          "iso26642Confirmed": false,
+          "qualityEvidence": "Table 1 reports a category mean calculated from food-specific entries in Supplemental Table 1. The target ingredient was not individually tested; category matching is a broad proxy and is low confidence."
+        },
+        "note": "rice category mean; rice flour is a broad grain-form analogue",
+        "matchKind": "CATEGORY_MEAN",
+        "confidence": "LOW"
+      },
+      "sourcePath": "docs/nutrition/glycemic-index-records.json"
+    },
+    {
+      "origin": "GLOBAL",
+      "record": {
+        "id": "sugar-syrups-category-mean-gi-58",
+        "gi": 58,
+        "foodKey": "sugar-syrups-category-mean",
+        "preparationKey": "category-mean",
+        "food": "Sugars and syrups category mean",
+        "preparation": "Category mean from Table 1; individual food and preparation were not tested as this item",
+        "qualityTier": "SUPPLEMENTARY",
+        "referenceScale": "GLUCOSE_100",
+        "source": {
+          "title": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+          "url": "https://doi.org/10.1093/ajcn/nqab233",
+          "table": "Table 1; mean of Supplemental Table 1 entries for Sugars and syrups (n=50)",
+          "year": 2021,
+          "published": true,
+          "iso26642Confirmed": false,
+          "qualityEvidence": "Table 1 reports a category mean calculated from food-specific entries in Supplemental Table 1. The target ingredient was not individually tested; category matching is a broad proxy and is low confidence."
+        },
+        "note": "sugars and syrups category mean",
+        "matchKind": "CATEGORY_MEAN",
+        "confidence": "LOW"
+      },
+      "sourcePath": "docs/nutrition/glycemic-index-records.json"
+    },
+    {
+      "origin": "GLOBAL",
+      "record": {
+        "id": "fruit-category-mean-gi-51",
+        "gi": 51,
+        "foodKey": "fruit-category-mean",
+        "preparationKey": "category-mean",
+        "food": "Fruits and fruit products category mean",
+        "preparation": "Category mean from Table 1; individual food and preparation were not tested as this item",
+        "qualityTier": "SUPPLEMENTARY",
+        "referenceScale": "GLUCOSE_100",
+        "source": {
+          "title": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+          "url": "https://doi.org/10.1093/ajcn/nqab233",
+          "table": "Table 1; mean of Supplemental Table 1 entries for Fruits and fruit products (n=105)",
+          "year": 2021,
+          "published": true,
+          "iso26642Confirmed": false,
+          "qualityEvidence": "Table 1 reports a category mean calculated from food-specific entries in Supplemental Table 1. The target ingredient was not individually tested; category matching is a broad proxy and is low confidence."
+        },
+        "note": "fruit category mean; used only as a broad tamarind-paste analogue",
+        "matchKind": "CATEGORY_MEAN",
+        "confidence": "LOW"
+      },
+      "sourcePath": "docs/nutrition/glycemic-index-records.json"
+    },
+    {
+      "origin": "GLOBAL",
+      "record": {
+        "id": "asian-indian-category-mean-gi-65",
+        "gi": 65,
+        "foodKey": "asian-indian-category-mean",
+        "preparationKey": "category-mean",
+        "food": "Asian Indian regional foods category mean",
+        "preparation": "Category mean from Table 1; individual food and preparation were not tested as this item",
+        "qualityTier": "SUPPLEMENTARY",
+        "referenceScale": "GLUCOSE_100",
+        "source": {
+          "title": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+          "url": "https://doi.org/10.1093/ajcn/nqab233",
+          "table": "Table 1; mean of Supplemental Table 1 entries for Asian Indian regional foods (n=19)",
+          "year": 2021,
+          "published": true,
+          "iso26642Confirmed": false,
+          "qualityEvidence": "Table 1 reports a category mean calculated from food-specific entries in Supplemental Table 1. The target ingredient was not individually tested; category matching is a broad proxy and is low confidence."
+        },
+        "note": "Asian Indian regional-food mean; not a food-specific chickpea-flour measurement",
+        "matchKind": "CATEGORY_MEAN",
+        "confidence": "LOW"
+      },
+      "sourcePath": "docs/nutrition/glycemic-index-records.json"
+    },
+    {
+      "origin": "GLOBAL",
+      "record": {
+        "id": "potato-boiled-preparation-analogue-gi-66",
+        "gi": 66,
+        "foodKey": "potato",
+        "preparationKey": "boiled-unspecified",
+        "food": "Potato, unspecified variety, boiled",
+        "preparation": "Boiled; China; test year 2005",
+        "qualityTier": "STRONG",
+        "referenceScale": "GLUCOSE_100",
+        "source": {
+          "title": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+          "url": "https://doi.org/10.1093/ajcn/nqab233",
+          "table": "Supplemental Table 1, entry 1842",
+          "year": 2021,
+          "published": true,
+          "iso26642Confirmed": true,
+          "participants": 10,
+          "referenceFood": "Glucose",
+          "testDurationHours": 2,
+          "qualityEvidence": "Supplemental Table 1 is the review's ISO-methodology set; source row describes boiled, unspecified potato. GI is rounded to the table's reported integer."
+        },
+        "note": "Measured boiled-potato value used as a preparation analogue for boiled potato pieces in these recipes; variety, region, cooling and recipe context differ.",
+        "matchKind": "ANALOG",
+        "confidence": "MEDIUM"
+      },
+      "sourcePath": "docs/nutrition/glycemic-index-records.json"
+    },
+    {
+      "origin": "GLOBAL",
+      "record": {
+        "id": "potato-mashed-preparation-analogue-gi-73",
+        "gi": 73,
+        "foodKey": "potato",
+        "preparationKey": "mashed-unspecified",
+        "food": "Mashed potato, unspecified product",
+        "preparation": "Mashed; China; test year 2005",
+        "qualityTier": "STRONG",
+        "referenceScale": "GLUCOSE_100",
+        "source": {
+          "title": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+          "url": "https://doi.org/10.1093/ajcn/nqab233",
+          "table": "Supplemental Table 1, entry 1861",
+          "year": 2021,
+          "published": true,
+          "iso26642Confirmed": true,
+          "participants": 10,
+          "referenceFood": "Glucose",
+          "testDurationHours": 2,
+          "qualityEvidence": "Supplemental Table 1 entry 1861 identifies mashed potato, NS (China, test year 2005), GI 73 ± 3, n=10, a 50 g available-carbohydrate portion, glucose/2 h and standard timepoints. It lists venous samples but the assay method as NS. Yang et al. (2006; https://doi.org/10.3748/wjg.v12.i21.3430), the underlying primary study cited in the 2021 non-western compendium, independently reports a distinct mashed-potato row at 73.0 ± 9.2 (n=10) and a cooked-potato row at 66.4 ± 3.8. This confirms the products and values are distinct; Yang does not specify the cooking method for the cooked-potato row. Table membership supports the review's ISO-methodology classification, but the original assay details cannot be independently verified."
+        },
+        "note": "Closer preparation analogue for aloo-paratha's boiled-and-mashed potato filling than boiled-potato GI 66; the recipe's variety, cooling, pan-cooked dough enclosure and whole meal remain untested. This is not the GI of aloo paratha.",
+        "matchKind": "ANALOG",
+        "confidence": "LOW"
+      },
+      "sourcePath": "docs/nutrition/glycemic-index-records.json"
+    },
+    {
+      "origin": "GLOBAL",
+      "record": {
+        "id": "dark-chocolate-international-tables-mean-gi-29",
+        "gi": 29,
+        "foodKey": "chocolate",
+        "preparationKey": "dark-chocolate-as-sold",
+        "food": "Dark chocolate products",
+        "preparation": "As sold; mean of four tested products",
+        "qualityTier": "STRONG",
+        "referenceScale": "GLUCOSE_100",
+        "source": {
+          "title": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+          "url": "https://doi.org/10.1093/ajcn/nqab233",
+          "table": "Supplemental Table 1, dark chocolate tests 1587–1590; mean GI 29",
+          "year": 2021,
+          "published": true,
+          "iso26642Confirmed": true,
+          "qualityEvidence": "The review identifies Supplemental Table 1 as ISO-method compliant. This mean summarizes four tested dark chocolate products and is not specific to the recipe brand or cacao percentage."
+        },
+        "note": "Mean of four ISO-tested dark chocolate products (GI 23, 44, 18, 29); not a brand-specific value.",
+        "matchKind": "CATEGORY_MEAN",
+        "confidence": "LOW"
+      },
+      "sourcePath": "docs/nutrition/glycemic-index-records.json"
+    },
+    {
+      "origin": "GLOBAL",
+      "record": {
+        "id": "corn-tortilla-noriega-2000-glucose-estimate",
+        "gi": 52.4,
+        "foodKey": "corn-tortilla",
+        "preparationKey": "commercial-corn-tortilla",
+        "food": "Corn tortilla",
+        "preparation": "Commercial corn tortilla; studied value converted from bread-reference scale to glucose scale",
+        "qualityTier": "SUPPLEMENTARY",
+        "referenceScale": "GLUCOSE_100",
+        "matchKind": "EXACT",
+        "confidence": "LOW",
+        "source": {
+          "title": "Glycaemic and insulinaemic indices of Mexican foods high in complex carbohydrates",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/10824718/",
+          "table": "Abstract; corn tortilla GI 73.8 ± 6.5 with bread=100 reference; converted ×0.71 as described by International Tables 2021",
+          "year": 2000,
+          "published": true,
+          "iso26642Confirmed": false,
+          "participants": 8,
+          "referenceFood": "Bread",
+          "testDurationHours": 3,
+          "qualityEvidence": "Published human food test, but only eight healthy subjects and a bread reference were used; glucose-scale conversion is an estimate, not an ISO-confirmed row."
+        },
+        "note": "Single published regional study; conversion to glucose scale uses the 0.71 factor described in International Tables 2021. Low confidence."
+      },
+      "sourcePath": "docs/nutrition/glycemic-index-records.json"
+    },
+    {
+      "origin": "GLOBAL",
+      "record": {
+        "id": "couscous-groats-rozanska-2020-gi-99",
+        "gi": 99,
+        "foodKey": "couscous-groats",
+        "preparationKey": "cooked-couscous-unspecified",
+        "food": "Couscous groats",
+        "preparation": "Cooked couscous groats; source does not identify the exact product brand or recipe preparation",
+        "qualityTier": "SUPPLEMENTARY",
+        "referenceScale": "GLUCOSE_100",
+        "matchKind": "ANALOG",
+        "confidence": "LOW",
+        "source": {
+          "title": "Assessment of the glycemic index of groats available on the Polish food market",
+          "url": "https://doi.org/10.32394/rpzh.2020.0101",
+          "table": "Table 4; mean GI 99.0 ± 36.0; 50 g available-carbohydrate portion; glucose reference described in Polish abstract",
+          "year": 2020,
+          "published": true,
+          "iso26642Confirmed": false,
+          "participants": 8,
+          "referenceFood": "Glucose",
+          "qualityEvidence": "Published human test of Polish-market couscous groats; n=8 and wide variation (SD 36); not ISO 26642-confirmed. Preparation and brand matching are limited."
+        },
+        "note": "Use only as a low-confidence couscous analogue; study mean has high variability and unspecified product/preparation."
+      },
+      "sourcePath": "docs/nutrition/glycemic-index-records.json"
+    },
+    {
+      "origin": "GLOBAL",
+      "record": {
+        "id": "millet-groats-rozanska-2020-gi-56-2",
+        "gi": 56.2,
+        "foodKey": "millet-groats",
+        "preparationKey": "cooked-millet-groats",
+        "food": "Millet groats",
+        "preparation": "Cooked millet groats; source product and exact cooking method not fully matched",
+        "qualityTier": "SUPPLEMENTARY",
+        "referenceScale": "GLUCOSE_100",
+        "matchKind": "ANALOG",
+        "confidence": "LOW",
+        "source": {
+          "title": "Assessment of the glycemic index of groats available on the Polish food market",
+          "url": "https://doi.org/10.32394/rpzh.2020.0101",
+          "table": "Table 4; mean GI 56.2 ± 20.6; 50 g available-carbohydrate portion; glucose reference described in Polish abstract",
+          "year": 2020,
+          "published": true,
+          "iso26642Confirmed": false,
+          "participants": 8,
+          "referenceFood": "Glucose",
+          "qualityEvidence": "Published human test of Polish-market millet groats; n=8 and wide variation (SD 20.6); not ISO 26642-confirmed. Exact millet cultivar and cooking details are not matched."
+        },
+        "note": "Low-confidence cooked-millet analogue; source reports a wide GI range."
+      },
+      "sourcePath": "docs/nutrition/glycemic-index-records.json"
+    },
+    {
+      "origin": "GLOBAL",
+      "record": {
+        "id": "rice-noodles-dried-boiled-chan-2001-gi-61",
+        "gi": 61,
+        "foodKey": "rice-noodles-dried",
+        "preparationKey": "dried-rice-noodles-boiled",
+        "food": "Rice noodles, dried",
+        "preparation": "Dried commercial rice noodles, boiled (Thai World brand)",
+        "qualityTier": "SUPPLEMENTARY",
+        "referenceScale": "GLUCOSE_100",
+        "matchKind": "EXACT",
+        "confidence": "LOW",
+        "source": {
+          "title": "The glycaemic index values of Vietnamese foods",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/11781674/",
+          "table": "Published study; rice-noodle values reported in the University of Sydney GI Search database; Thai World dried rice noodles boiled, GI 61",
+          "year": 2001,
+          "published": true,
+          "iso26642Confirmed": false,
+          "participants": 12,
+          "referenceFood": "Glucose",
+          "testDurationHours": 2,
+          "qualityEvidence": "Published human test in 12 healthy adults using a glucose reference and specified capillary time points; each food was tested once and not ISO 26642-confirmed."
+        },
+        "note": "Brand and noodle match is close; actual recipe broth/cooking can alter the response. Low confidence."
+      },
+      "sourcePath": "docs/nutrition/glycemic-index-records.json"
+    },
+    {
+      "origin": "GLOBAL",
+      "record": {
+        "id": "honey-category-mean-gi-55-2002",
+        "gi": 55,
+        "foodKey": "honey-category-mean",
+        "preparationKey": "category-mean",
+        "food": "Honey, mean of 11 types",
+        "preparation": "Mean of honey varieties and commercial blends; not matched to a particular honey",
+        "qualityTier": "SUPPLEMENTARY",
+        "referenceScale": "GLUCOSE_100",
+        "matchKind": "CATEGORY_MEAN",
+        "confidence": "LOW",
+        "source": {
+          "title": "International table of glycemic index and glycemic load values: 2002",
+          "url": "https://doi.org/10.1093/ajcn/76.1.5",
+          "table": "Table 1, food 586: mean of 11 types of honey, GI 55 ± 5, glucose scale",
+          "year": 2002,
+          "published": true,
+          "iso26642Confirmed": false,
+          "participants": null,
+          "referenceFood": "Glucose for 10 of 11 values; one bread-reference result was converted in the source table",
+          "qualityEvidence": "Published mean spanning 11 botanically and compositionally different honeys; source-level data are old and not a product-specific or ISO-confirmed match. Used only as a low-confidence category estimate."
+        },
+        "note": "Honey GI varies widely by floral source and fructose content. The 55 mean is an approximate category value, not a measured GI for the recipe's honey."
+      },
+      "sourcePath": "docs/nutrition/glycemic-index-records.json"
+    },
+    {
+      "origin": "GLOBAL",
+      "record": {
+        "id": "mango-raw-mean-gi-51-2002",
+        "gi": 51,
+        "foodKey": "mango",
+        "preparationKey": "raw",
+        "food": "Raw mango (food-specific mean of three studies)",
+        "preparation": "Raw mango; varieties differ across included studies",
+        "qualityTier": "SUPPLEMENTARY",
+        "referenceScale": "GLUCOSE_100",
+        "source": {
+          "title": "International table of glycemic index and glycemic load values: 2002",
+          "url": "https://doi.org/10.1093/ajcn/76.1.5",
+          "table": "Table 2, entry 412, raw mango: mean of three studies, GI 51 ± 5 (glucose scale); individual entries include raw mango from the Philippines, Australia, and ripe mango from India.",
+          "year": 2002,
+          "published": true,
+          "iso26642Confirmed": false,
+          "qualityEvidence": "Published food-specific mean across three human raw-mango studies; variety, ripeness and population differ, and this is not ISO-confirmed. Use as a low-confidence generic raw-mango estimate, not a measurement of a recipe or meal."
+        },
+        "note": "Food-specific mean; cultivar and ripeness vary. Low-confidence ingredient estimate.",
+        "matchKind": "ANALOG",
+        "confidence": "LOW"
+      },
+      "sourcePath": "docs/nutrition/glycemic-index-records.json"
+    },
+    {
+      "origin": "GLOBAL",
+      "record": {
+        "id": "pear-raw-mean-gi-38-2002",
+        "gi": 38,
+        "foodKey": "pear",
+        "preparationKey": "raw",
+        "food": "Pear, raw (mean of four studies)",
+        "preparation": "Raw pear; mean across four human studies, varieties and populations vary",
+        "qualityTier": "SUPPLEMENTARY",
+        "referenceScale": "GLUCOSE_100",
+        "matchKind": "ANALOG",
+        "confidence": "LOW",
+        "source": {
+          "title": "International table of glycemic index and glycemic load values: 2002",
+          "authors": "Foster-Powell K, Holt SHA, Brand-Miller JC",
+          "url": "https://doi.org/10.1093/ajcn/76.1.5",
+          "table": "Table 1, entries 423–426; mean of four raw-pear studies, GI 38 ± 2 on glucose scale",
+          "year": 2002,
+          "published": true,
+          "iso26642Confirmed": false,
+          "participants": null,
+          "referenceFood": "Glucose or values converted to glucose scale in the source table",
+          "qualityEvidence": "Published pooled value across four raw-pear human GI studies. The source table reports mean 38 ± 2; varieties, participant groups and individual study methods differ, and the pooled value is not ISO 26642-confirmed."
+        },
+        "note": "Food-specific raw-pear mean, used as a low-confidence analogue for grated pear in bulgogi marinade. The pear is added raw, then heated briefly with the marinated beef; neither the recipe nor the mixed meal was tested."
+      },
+      "sourcePath": "docs/nutrition/glycemic-index-records.json"
+    },
+    {
+      "origin": "GLOBAL",
+      "record": {
+        "id": "dried-date-tamer-mean-gi-55-2-algeffari-2016",
+        "gi": 55.2,
+        "foodKey": "dried-date-tamer",
+        "preparationKey": "tamer-stage-as-sold",
+        "food": "Tamer-stage dried dates, mean across 17 varieties",
+        "preparation": "Tamer-stage dates (fully ripe, firm and dried), consumed as sold with water; not a date paste, syrup, or cooked mixture",
+        "qualityTier": "SUPPLEMENTARY",
+        "referenceScale": "GLUCOSE_100",
+        "matchKind": "ANALOG",
+        "confidence": "LOW",
+        "source": {
+          "title": "Glycemic indices, glycemic load and glycemic response for seventeen varieties of dates grown in Saudi Arabia",
+          "authors": "AlGeffari MA, Almogbel ES, Alhomaidan HT, El-Mergawi R, Barrimah IA",
+          "url": "https://doi.org/10.5144/0256-4947.2016.397",
+          "table": "Table 2; mean GI 55.2 (SEM 7.7), range 42.8–74.6 across 17 Tamer-stage varieties; glucose reference",
+          "year": 2016,
+          "published": true,
+          "iso26642Confirmed": false,
+          "participants": 19,
+          "referenceFood": "50 g glucose in water (GI = 100)",
+          "qualityEvidence": "Published human GI study in 19 healthy adults. Each Tamer-stage date variety was tested once in 9–10 participants using a 50 g available-carbohydrate portion and glucose reference. The reported across-variety mean was 55.2 (SEM 7.7), with a wide 42.8–74.6 range; variety differences were not statistically significant, but this is not ISO 26642-confirmed and does not establish values for other ripeness stages or cooked date mixtures."
+        },
+        "note": "Low-confidence food-family mean for unsweetened Tamer-stage dried dates as sold. Use only when the recipe names dried dates added without further cooking; do not apply to date paste, syrup, fresh/semi-ripe dates, or dates cooked into a dish. This ingredient estimate is not a measurement of the recipe or meal."
+      },
+      "sourcePath": "docs/nutrition/glycemic-index-records.json"
+    },
+    {
+      "origin": "GLOBAL",
+      "record": {
+        "id": "semolina-steamed-gelatinized-mani-1992-gi-55",
+        "gi": 55,
+        "foodKey": "semolina",
+        "preparationKey": "steam-gelatinized-semolina-with-groundnut-oil",
+        "food": "Wheat semolina (Triticum aestivum)",
+        "preparation": "Steam-cooked and gelatinized with water and 5 g groundnut oil; India, 1991",
+        "qualityTier": "SUPPLEMENTARY",
+        "referenceScale": "GLUCOSE_100",
+        "matchKind": "ANALOG",
+        "confidence": "LOW",
+        "source": {
+          "title": "Glycaemic index of conventional carbohydrate meals",
+          "authors": "Mani UV, Pradhan SN, Mehta NC, Thakur DM, Iyer U, Mani I",
+          "url": "https://doi.org/10.1079/BJN19920102",
+          "table": "International Tables 2021 Supplemental Table 2 item 2762 and Mani et al. 1992 Table 3 meal R1: GI 55 ± 9; semolina steamed and gelatinized with 5 g groundnut oil; type 2 diabetes, n=6; 50 g available-carbohydrate portion; glucose reference; 0/60/120 minute timepoints.",
+          "year": 1992,
+          "published": true,
+          "iso26642Confirmed": false,
+          "participants": 6,
+          "referenceFood": "50 g glucose (GI = 100)",
+          "qualityEvidence": "The 2021 international tables place this result in Supplemental Table 2 because of method deviations: only six participants with type 2 diabetes, no repeated reference, and 0/60/120 minute sampling. The measured preparation is steam-cooked and gelatinized with water plus 5 g groundnut oil. The cited source does not establish equivalence with this recipe’s water-boiled, oil-free porridge or isolate the effect of the added oil. Retain the record for the tested preparation; do not map it to water-boiled semolina porridge without supporting evidence."
+        },
+        "note": "GI 55 is retained for the source-tested steam-gelatinized semolina with groundnut oil. It is not an accepted GI match for water-boiled, oil-free semolina porridge; do not present it as a measurement of this recipe or its mixed meal."
+      },
+      "sourcePath": "docs/nutrition/glycemic-index-records.json"
+    },
+    {
+      "origin": "GLOBAL",
+      "record": {
+        "id": "orange-navel-2021-gi-45",
+        "gi": 45,
+        "foodKey": "orange",
+        "preparationKey": "raw-orange",
+        "food": "Navel orange, raw",
+        "preparation": "Raw navel orange, segments; Australia, tested 2020",
+        "qualityTier": "STRONG",
+        "referenceScale": "GLUCOSE_100",
+        "matchKind": "ANALOG",
+        "confidence": "LOW",
+        "source": {
+          "title": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+          "authors": "Atkinson FS, Brand-Miller JC, Foster-Powell K, Buyken AE, Goletzke J",
+          "url": "https://doi.org/10.1093/ajcn/nqab233",
+          "table": "Supplemental Table 1 item 1150: navel oranges, Australia, GI 45 ± 5; 10 healthy adults; 50 g available carbohydrate; glucose, 2 h; ISO-consistent standard method.",
+          "year": 2021,
+          "published": true,
+          "iso26642Confirmed": true,
+          "participants": 10,
+          "referenceFood": "Glucose, 2 h (GI = 100)",
+          "qualityEvidence": "Published food-specific navel-orange measurement listed in Supplemental Table 1 as ISO 26642:2010-consistent. Source quality is strong; the recipe uses a generic raw peeled orange with unknown cultivar, so the recipe mapping remains a low-confidence analogue."
+        },
+        "note": "Direct source for raw navel orange; use for generic raw orange only as a cultivar analogue and retain LOW confidence when cultivar is unknown. Not a measurement of a recipe or meal."
+      },
+      "sourcePath": "docs/nutrition/glycemic-index-records.json"
+    },
+    {
+      "origin": "gk80-release-1",
+      "record": {
+        "id": "milk30",
+        "gi": 30,
+        "scale": "GLUCOSE_100",
+        "family": "plain-dairy",
+        "food": "Full-fat cow milk 30",
+        "preparation": "pasteurized full-fat milk",
+        "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+        "originalStudy": "Sydney UO5 2018",
+        "location": "Table1 row937 p63",
+        "accessUrl": "https://nutritotal.com.br/pro/wp-content/uploads/sites/3/2021/09/Tabela1_IG.pdf",
+        "accessMethod": "Original supplement document retrieved from a third-party mirror; not publisher-host access",
+        "documentSha256": "e930c4a090697abd4f7331a64837b524cf4701513cbb9865a739f4f9fb131061",
+        "referenceFood": "Glucose",
+        "statisticalUncertainty": {
+          "kind": "SEM",
+          "value": 3,
+          "usedAsRecipeRange": false
+        },
+        "participants": 13,
+        "limitations": "Application to residual lactose in plain cheese/butter is a LOW mechanistic analogy: same lactose, different fermented/solid fat-protein matrix; not measured cheese GI or a proven bound.",
+        "confidence": "LOW",
+        "allowedUse": "Only explicit food/preparation matches or separately reasoned ingredient analogies; no automatic family default",
+        "newRecord": true,
+        "evidenceHash": "c1ffbc72f69c337bcb024399da00e2f2724309598b487a8162f28cdad70d87c8"
+      },
+      "sourcePath": "docs/nutrition/gk80-release-1/sources.json",
+      "usedInActivePack": true
+    },
+    {
+      "origin": "gk80-release-1",
+      "record": {
+        "id": "honey-category-mean-gi-55-2002",
+        "gi": 55,
+        "scale": "GLUCOSE_100",
+        "family": "honey",
+        "food": "Honey, mean of 11 types",
+        "preparation": "Mean of honey varieties and commercial blends; not matched to a particular honey",
+        "sourceUrl": "https://doi.org/10.1093/ajcn/76.1.5",
+        "originalStudy": {
+          "title": "International table of glycemic index and glycemic load values: 2002",
+          "url": "https://doi.org/10.1093/ajcn/76.1.5",
+          "table": "Table 1, food 586: mean of 11 types of honey, GI 55 ± 5, glucose scale",
+          "year": 2002,
+          "published": true,
+          "iso26642Confirmed": false,
+          "participants": null,
+          "referenceFood": "Glucose for 10 of 11 values; one bread-reference result was converted in the source table",
+          "qualityEvidence": "Published mean spanning 11 botanically and compositionally different honeys; source-level data are old and not a product-specific or ISO-confirmed match. Used only as a low-confidence category estimate."
+        },
+        "referenceFood": "Already glucose-normalized in pinned active registry; do not convert twice",
+        "confidence": "LOW",
+        "limitations": "Honey GI varies widely by floral source and fructose content. The 55 mean is an approximate category value, not a measured GI for the recipe's honey.",
+        "allowedUse": "Only the named family and explicit preparation review",
+        "activeRecord": {
+          "id": "honey-category-mean-gi-55-2002",
+          "gi": 55,
+          "foodKey": "honey-category-mean",
+          "preparationKey": "category-mean",
+          "food": "Honey, mean of 11 types",
+          "preparation": "Mean of honey varieties and commercial blends; not matched to a particular honey",
+          "qualityTier": "SUPPLEMENTARY",
+          "referenceScale": "GLUCOSE_100",
+          "matchKind": "CATEGORY_MEAN",
+          "confidence": "LOW",
+          "source": {
+            "title": "International table of glycemic index and glycemic load values: 2002",
+            "url": "https://doi.org/10.1093/ajcn/76.1.5",
+            "table": "Table 1, food 586: mean of 11 types of honey, GI 55 ± 5, glucose scale",
+            "year": 2002,
+            "published": true,
+            "iso26642Confirmed": false,
+            "participants": null,
+            "referenceFood": "Glucose for 10 of 11 values; one bread-reference result was converted in the source table",
+            "qualityEvidence": "Published mean spanning 11 botanically and compositionally different honeys; source-level data are old and not a product-specific or ISO-confirmed match. Used only as a low-confidence category estimate."
+          },
+          "note": "Honey GI varies widely by floral source and fructose content. The 55 mean is an approximate category value, not a measured GI for the recipe's honey."
+        },
+        "newRecord": false,
+        "evidenceHash": "077705618b3aceedea03e5f2a3e5f23a032b1a923d811869303a141a873a3dd4"
+      },
+      "sourcePath": "docs/nutrition/gk80-release-1/sources.json",
+      "usedInActivePack": true
+    },
+    {
+      "origin": "gk80-release-1",
+      "record": {
+        "id": "rice-noodle61",
+        "gi": 61,
+        "scale": "GLUCOSE_100",
+        "family": "rice-noodle",
+        "food": "Dried rice noodles, boiled, Thai World Bangkok",
+        "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+        "accessUrl": "https://nutritotal.com.br/pro/wp-content/uploads/sites/3/2021/09/Tabela1_IG.pdf",
+        "documentSha256": "e930c4a090697abd4f7331a64837b524cf4701513cbb9865a739f4f9fb131061",
+        "location": "Table 1 row 1463 p99",
+        "originalStudy": "Chan et al.; DOI 10.1038/sj.ejcn.1601265; 12 normal participants in table",
+        "evidenceKind": "HUMAN_GI",
+        "confidence": "LOW",
+        "limitations": "Product analogy; generic dry rice noodle composition is separately sourced. Boil and eat hot; not fresh noodles or cooled/fried noodles.",
+        "newRecordInRun2": true,
+        "accessMethod": "Published original supplement, third-party mirror; cited original study not automatically full-text verified",
+        "participants": 12,
+        "statisticalUncertainty": {
+          "kind": "SEM",
+          "value": 6,
+          "usedAsRecipeRange": false
+        },
+        "evidenceHash": "51f4937eaa6c5a576a9e8b488efcdbc19521c178a79790b493d0097501d01cf0"
+      },
+      "sourcePath": "docs/nutrition/gk80-release-1/sources.json",
+      "usedInActivePack": true
+    },
+    {
+      "origin": "gk80-release-1",
+      "record": {
+        "id": "rice-congee80",
+        "gi": 80,
+        "scale": "GLUCOSE_100",
+        "family": "rice-congee",
+        "food": "Jasmine rice porridge, steamed 40 min; 31.6 g rice + 250 ml water",
+        "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+        "accessUrl": "https://nutritotal.com.br/pro/wp-content/uploads/sites/3/2021/09/Tabela1_IG.pdf",
+        "documentSha256": "e930c4a090697abd4f7331a64837b524cf4701513cbb9865a739f4f9fb131061",
+        "location": "Table 1 row 659 p46",
+        "originalStudy": "Thailand 2016, COFCO China rice, unpublished observations UO18",
+        "evidenceKind": "HUMAN_GI",
+        "confidence": "LOW",
+        "limitations": "Published GI result; detailed original protocol unavailable. Applied to a specified hot 40-minute rice porridge, not ordinary grain rice; simmering vs steaming remains an explicit analogy.",
+        "newRecordInRun2": true,
+        "accessMethod": "Published original supplement, third-party mirror; cited original study not automatically full-text verified",
+        "participants": 10,
+        "statisticalUncertainty": {
+          "kind": "SEM",
+          "value": 7,
+          "usedAsRecipeRange": false
+        },
+        "evidenceHash": "af37b2de4742d497b6d320272bc4c41ab2e6a22c532a3cc7e46bb0ab6a747fcc"
+      },
+      "sourcePath": "docs/nutrition/gk80-release-1/sources.json",
+      "usedInActivePack": true
+    },
+    {
+      "origin": "gk80-release-1",
+      "record": {
+        "id": "oats-elovena76",
+        "gi": 76,
+        "scale": "GLUCOSE_100",
+        "family": "oat-porridge",
+        "food": "Elovena rolled flakes 0.5–0.6 mm, cooked 10 min",
+        "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+        "accessUrl": "https://nutritotal.com.br/pro/wp-content/uploads/sites/3/2021/09/Tabela1_IG.pdf",
+        "documentSha256": "e930c4a090697abd4f7331a64837b524cf4701513cbb9865a739f4f9fb131061",
+        "location": "Table 1 row 436 p31",
+        "originalStudy": "Finland 2005, reference 59",
+        "evidenceKind": "HUMAN_GI",
+        "confidence": "LOW",
+        "limitations": "The study used glucose reference and 3 h sampling. Flake thickness and cooking are specified. Mixed meal milk/honey/mint effects are not measured.",
+        "newRecordInRun2": true,
+        "accessMethod": "Published original supplement, third-party mirror; cited original study not automatically full-text verified",
+        "participants": 12,
+        "statisticalUncertainty": {
+          "kind": "SEM",
+          "value": 7,
+          "usedAsRecipeRange": false
+        },
+        "evidenceHash": "b5d97449900e45b78330b696c2f4d4c2df640b3bc2950ec510d68a9522f38da1"
+      },
+      "sourcePath": "docs/nutrition/gk80-release-1/sources.json",
+      "usedInActivePack": true
+    },
+    {
+      "origin": "gk80-release-1",
+      "record": {
+        "id": "vegetable-imputation40",
+        "gi": 40,
+        "scale": "GLUCOSE_100",
+        "family": "low-carb-vegetable",
+        "food": "Published assignment for low-carbohydrate vegetables, not measured food GI",
+        "evidenceKind": "PUBLISHED_IMPUTATION",
+        "sourceUrl": "https://doi.org/10.2337/dc08-1239",
+        "accessUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC2584181/fullTextXML",
+        "documentSha256": "b3738226fa546af99ac25e5e3fa106e86cd204445f9153ef5ee762cb25f3b25a",
+        "location": "Conclusions: assignment discussion",
+        "originalStudy": "Atkinson, Foster-Powell, Brand-Miller 2008",
+        "confidence": "LOW",
+        "limitations": "Coding estimate only. Application to named fresh herbs, sprouts and alliums is an explicit project interpretation. It does not establish a physiological maximum or a one-unit uncertainty bound. Not a default for seed spices, flour, sauces or stock.",
+        "newRecordInRun2": true,
+        "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc"
+      },
+      "sourcePath": "docs/nutrition/gk80-release-1/sources.json",
+      "usedInActivePack": true
+    },
+    {
+      "origin": "gk80-release-2",
+      "record": {
+        "id": "chickpea-mean28",
+        "gi": 28,
+        "scale": "GLUCOSE_100",
+        "family": "cooked-chickpea",
+        "food": "Chickpeas, food-specific mean",
+        "evidenceKind": "HUMAN_GI",
+        "sourceUrl": "https://doi.org/10.2337/dc08-1239",
+        "location": "Table 1 food-specific means; not SEM as range",
+        "confidence": "LOW",
+        "limitations": "Applied food/preparation analogue; generic composition separately sourced. Not a broad all-legume or all-grain mean.",
+        "evidenceHash": "be748b0bd80b411c52a55fd893b28cc4dfbc35cf1a24898ba5cf5fc6afe7c6bc"
+      },
+      "sourcePath": "docs/nutrition/gk80-release-2/sources.json",
+      "usedInActivePack": true
+    },
+    {
+      "origin": "gk80-release-2",
+      "record": {
+        "id": "dairy-imputation30",
+        "gi": 30,
+        "scale": "GLUCOSE_100",
+        "family": "dairy-code",
+        "food": "Unsweetened animal dairy coding assignment",
+        "evidenceKind": "PUBLISHED_IMPUTATION",
+        "sourceUrl": "https://doi.org/10.2337/dc08-1239",
+        "location": "Conclusions, low-carbohydrate product assignment",
+        "confidence": "LOW",
+        "limitations": "Not tested cream, cheese or butter. Excludes plant drinks and sweetened dairy.",
+        "evidenceHash": "18dd13349258a887809f1dec2abce637ce648b7d2f829c690243734139912850"
+      },
+      "sourcePath": "docs/nutrition/gk80-release-2/sources.json",
+      "usedInActivePack": true
+    },
+    {
+      "origin": "gk80-release-2",
+      "record": {
+        "id": "honey-category-mean-gi-55-2002",
+        "gi": 55,
+        "scale": "GLUCOSE_100",
+        "family": "honey",
+        "food": "Honey, mean of 11 types",
+        "preparation": "Mean of honey varieties and commercial blends; not matched to a particular honey",
+        "sourceUrl": "https://doi.org/10.1093/ajcn/76.1.5",
+        "originalStudy": {
+          "title": "International table of glycemic index and glycemic load values: 2002",
+          "url": "https://doi.org/10.1093/ajcn/76.1.5",
+          "table": "Table 1, food 586: mean of 11 types of honey, GI 55 ± 5, glucose scale",
+          "year": 2002,
+          "published": true,
+          "iso26642Confirmed": false,
+          "participants": null,
+          "referenceFood": "Glucose for 10 of 11 values; one bread-reference result was converted in the source table",
+          "qualityEvidence": "Published mean spanning 11 botanically and compositionally different honeys; source-level data are old and not a product-specific or ISO-confirmed match. Used only as a low-confidence category estimate."
+        },
+        "referenceFood": "Already glucose-normalized in pinned active registry; do not convert twice",
+        "confidence": "LOW",
+        "limitations": "Honey GI varies widely by floral source and fructose content. The 55 mean is an approximate category value, not a measured GI for the recipe's honey.",
+        "allowedUse": "Only the named family and explicit preparation review",
+        "activeRecord": {
+          "id": "honey-category-mean-gi-55-2002",
+          "gi": 55,
+          "foodKey": "honey-category-mean",
+          "preparationKey": "category-mean",
+          "food": "Honey, mean of 11 types",
+          "preparation": "Mean of honey varieties and commercial blends; not matched to a particular honey",
+          "qualityTier": "SUPPLEMENTARY",
+          "referenceScale": "GLUCOSE_100",
+          "matchKind": "CATEGORY_MEAN",
+          "confidence": "LOW",
+          "source": {
+            "title": "International table of glycemic index and glycemic load values: 2002",
+            "url": "https://doi.org/10.1093/ajcn/76.1.5",
+            "table": "Table 1, food 586: mean of 11 types of honey, GI 55 ± 5, glucose scale",
+            "year": 2002,
+            "published": true,
+            "iso26642Confirmed": false,
+            "participants": null,
+            "referenceFood": "Glucose for 10 of 11 values; one bread-reference result was converted in the source table",
+            "qualityEvidence": "Published mean spanning 11 botanically and compositionally different honeys; source-level data are old and not a product-specific or ISO-confirmed match. Used only as a low-confidence category estimate."
+          },
+          "note": "Honey GI varies widely by floral source and fructose content. The 55 mean is an approximate category value, not a measured GI for the recipe's honey."
+        },
+        "newRecord": false,
+        "evidenceHash": "077705618b3aceedea03e5f2a3e5f23a032b1a923d811869303a141a873a3dd4"
+      },
+      "sourcePath": "docs/nutrition/gk80-release-2/sources.json",
+      "usedInActivePack": true
+    },
+    {
+      "origin": "gk80-release-2",
+      "record": {
+        "id": "lentil-mean32",
+        "gi": 32,
+        "scale": "GLUCOSE_100",
+        "family": "cooked-lentil",
+        "food": "Boiled lentils, food-specific mean",
+        "evidenceKind": "HUMAN_GI",
+        "sourceUrl": "https://doi.org/10.2337/dc08-1239",
+        "location": "Table 1 food-specific means; not SEM as range",
+        "confidence": "LOW",
+        "limitations": "Applied food/preparation analogue; generic composition separately sourced. Not a broad all-legume or all-grain mean.",
+        "evidenceHash": "0986393e2ccc72660695cb00ec6550bf6ab7696957b37354ed35457b241534d3"
+      },
+      "sourcePath": "docs/nutrition/gk80-release-2/sources.json",
+      "usedInActivePack": true
+    },
+    {
+      "origin": "gk80-release-2",
+      "record": {
+        "id": "lowcho50-v2",
+        "gi": 50,
+        "scale": "GLUCOSE_100",
+        "family": "lowcho-code",
+        "food": "Named foods with <=5 g available CHO/100 g",
+        "evidenceKind": "PUBLISHED_IMPUTATION",
+        "sourceUrl": "https://doi.org/10.1016/j.jfca.2007.02.004",
+        "location": "Author presentation slide 12",
+        "confidence": "LOW",
+        "accessUrl": "https://pdfs.semanticscholar.org/eead/ef25b9a2d5c209deb31265082c85080758f4.pdf",
+        "documentSha256": "778292d5d11cfd377ea93f1927ba8205aa7aff0105d2345f458336bf8869d0f9",
+        "limitations": "Published low-carbohydrate default. The <=5 g/100 g operational cutoff and named bindings are explicit project interpretation, not a threshold validated by Schakel. Excludes ordinary fruit, flour, concentrated sauce and nuts above the cutoff.",
+        "evidenceHash": "694a1349448978673a86e5305d8c09dcf4b454722063eaafd4dbcfee0ac05889"
+      },
+      "sourcePath": "docs/nutrition/gk80-release-2/sources.json",
+      "usedInActivePack": true
+    },
+    {
+      "origin": "gk80-release-2",
+      "record": {
+        "id": "pasta-mean49",
+        "gi": 49,
+        "scale": "GLUCOSE_100",
+        "family": "wheat-pasta",
+        "food": "White spaghetti, food-specific mean",
+        "evidenceKind": "HUMAN_GI",
+        "sourceUrl": "https://doi.org/10.2337/dc08-1239",
+        "location": "Table 1 food-specific means; not SEM as range",
+        "confidence": "LOW",
+        "limitations": "Applied food/preparation analogue; generic composition separately sourced. Not a broad all-legume or all-grain mean.",
+        "evidenceHash": "e971485deadcfa73418ca97b974a6fc495f6a5ec6e77faaa6f2bbfaa98d19f13"
+      },
+      "sourcePath": "docs/nutrition/gk80-release-2/sources.json",
+      "usedInActivePack": true
+    },
+    {
+      "origin": "gk80-release-2",
+      "record": {
+        "id": "rice-basmati57",
+        "gi": 57,
+        "family": "rice-grain",
+        "food": "basmati rice",
+        "preparation": "cooked rice as specified in Venn2014; no cooled-rice claim",
+        "sourceUrl": "https://doi.org/10.1186/1475-2891-13-50",
+        "originalStudy": "Venn2014 PMID24885045 PMC4047427",
+        "location": "Table2 European cohort glucose-reference column",
+        "accessUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4047427/fullTextXML",
+        "documentSha256": "c4342f41f5c5478e1c9e9baaf257c480e885f8eb064ecf53fa053d0ab55585c8",
+        "scale": "GLUCOSE_100",
+        "referenceFood": "Glucose",
+        "participants": 31,
+        "statisticalUncertainty": {
+          "kind": "95%CI",
+          "usedAsRecipeRange": false
+        },
+        "limitations": "European cohort selected consistently, not pooled with Chinese cohort. Other cohort means and CIs are not food-preparation bounds. Brown sugar is only an applied sucrose-dominant analogy.",
+        "confidence": "LOW",
+        "allowedUse": "Named grain-rice or sucrose applications only",
+        "newRecord": true,
+        "evidenceHash": "a644c4fd5e3969e23f403a0ca732e108cfe9c9dd4157c96c76b1117ca773c57c"
+      },
+      "sourcePath": "docs/nutrition/gk80-release-2/sources.json",
+      "usedInActivePack": true
+    },
+    {
+      "origin": "gk80-release-2",
+      "record": {
+        "id": "rice-congee80",
+        "gi": 80,
+        "scale": "GLUCOSE_100",
+        "family": "rice-congee",
+        "food": "Jasmine rice porridge, steamed 40 min; 31.6 g rice + 250 ml water",
+        "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+        "accessUrl": "https://nutritotal.com.br/pro/wp-content/uploads/sites/3/2021/09/Tabela1_IG.pdf",
+        "documentSha256": "e930c4a090697abd4f7331a64837b524cf4701513cbb9865a739f4f9fb131061",
+        "location": "Table 1 row 659 p46",
+        "originalStudy": "Thailand 2016, COFCO China rice, unpublished observations UO18",
+        "evidenceKind": "HUMAN_GI",
+        "confidence": "LOW",
+        "limitations": "Published GI result; detailed original protocol unavailable. Applied to a specified hot 40-minute rice porridge, not ordinary grain rice; simmering vs steaming remains an explicit analogy.",
+        "newRecordInRun2": true,
+        "accessMethod": "Published original supplement, third-party mirror; cited original study not automatically full-text verified",
+        "participants": 10,
+        "statisticalUncertainty": {
+          "kind": "SEM",
+          "value": 7,
+          "usedAsRecipeRange": false
+        },
+        "evidenceHash": "af37b2de4742d497b6d320272bc4c41ab2e6a22c532a3cc7e46bb0ab6a747fcc"
+      },
+      "sourcePath": "docs/nutrition/gk80-release-2/sources.json",
+      "usedInActivePack": true
+    },
+    {
+      "origin": "gk80-release-2",
+      "record": {
+        "id": "rice-jasmine68",
+        "gi": 68,
+        "family": "rice-grain",
+        "food": "jasmine rice",
+        "preparation": "cooked rice as specified in Venn2014; no cooled-rice claim",
+        "sourceUrl": "https://doi.org/10.1186/1475-2891-13-50",
+        "originalStudy": "Venn2014 PMID24885045 PMC4047427",
+        "location": "Table2 European cohort glucose-reference column",
+        "accessUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4047427/fullTextXML",
+        "documentSha256": "c4342f41f5c5478e1c9e9baaf257c480e885f8eb064ecf53fa053d0ab55585c8",
+        "scale": "GLUCOSE_100",
+        "referenceFood": "Glucose",
+        "participants": 31,
+        "statisticalUncertainty": {
+          "kind": "95%CI",
+          "usedAsRecipeRange": false
+        },
+        "limitations": "European cohort selected consistently, not pooled with Chinese cohort. Other cohort means and CIs are not food-preparation bounds. Brown sugar is only an applied sucrose-dominant analogy.",
+        "confidence": "LOW",
+        "allowedUse": "Named grain-rice or sucrose applications only",
+        "newRecord": true,
+        "evidenceHash": "3ecc3f0a5f8206b53edb3b53c56e2dd317df7bfcfe159254bd488b93a4f4c2b0"
+      },
+      "sourcePath": "docs/nutrition/gk80-release-2/sources.json",
+      "usedInActivePack": true
+    },
+    {
+      "origin": "gk80-release-2",
+      "record": {
+        "id": "spice-portion50-v2",
+        "gi": 50,
+        "scale": "GLUCOSE_100",
+        "family": "small-spice-extension",
+        "food": "Fixed small culinary dried-spice or seed portion",
+        "evidenceKind": "PUBLISHED_IMPUTATION",
+        "sourceUrl": "https://doi.org/10.1016/j.jfca.2007.02.004",
+        "location": "Explicit project extension of coding default, not directly published for these foods",
+        "confidence": "LOW",
+        "projectExtension": true,
+        "maxCarbohydratePerServing": 0.5,
+        "maxCumulativeCarbohydratePerServing": 1,
+        "limitations": "Not a measured seed/spice GI. Explicit owner method decision required. Only spices/seeds with complete composition and fixed mass, <=0.5 g CHO each and <=1 g aggregate per serving. No oilseed flour, tahini, nut butter, whole sticks/pods, unknown extraction or large portions.",
+        "evidenceHash": "e20cb72075e8986490084d1d3dc9ee004939aec16cf800eed7e97b1d19458369"
+      },
+      "sourcePath": "docs/nutrition/gk80-release-2/sources.json",
+      "usedInActivePack": true
+    },
+    {
+      "origin": "gk80-release-2",
+      "record": {
+        "id": "vegetable-imputation40",
+        "gi": 40,
+        "scale": "GLUCOSE_100",
+        "family": "low-carb-vegetable",
+        "food": "Published assignment for low-carbohydrate vegetables, not measured food GI",
+        "evidenceKind": "PUBLISHED_IMPUTATION",
+        "sourceUrl": "https://doi.org/10.2337/dc08-1239",
+        "accessUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC2584181/fullTextXML",
+        "documentSha256": "b3738226fa546af99ac25e5e3fa106e86cd204445f9153ef5ee762cb25f3b25a",
+        "location": "Conclusions: assignment discussion",
+        "originalStudy": "Atkinson, Foster-Powell, Brand-Miller 2008",
+        "confidence": "LOW",
+        "limitations": "Coding estimate only. Application to named fresh herbs, sprouts and alliums is an explicit project interpretation. It does not establish a physiological maximum or a one-unit uncertainty bound. Not a default for seed spices, flour, sauces or stock.",
+        "newRecordInRun2": true,
+        "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc"
+      },
+      "sourcePath": "docs/nutrition/gk80-release-2/sources.json",
+      "usedInActivePack": true
+    },
+    {
+      "origin": "gk80-release-3",
+      "record": {
+        "id": "brown-sugar60-r4",
+        "gi": 60,
+        "scale": "GLUCOSE_100",
+        "family": "brown-sugar",
+        "food": "Sucrose human comparator applied to brown sugar",
+        "evidenceKind": "HUMAN_GI",
+        "sourceUrl": "https://doi.org/10.1186/1475-2891-13-50",
+        "location": "Venn 2014 European cohort sucrose60",
+        "confidence": "LOW",
+        "limitations": "Project food analogy for a named weighed sucrose-dominant brown sugar. Molasses/product variation unquantified; not a brown-sugar measurement.",
+        "evidenceHash": "eed3e401a20f93e5d676f7a4e491f6aa91d2721e4193e0431b506c723c0424cf"
+      },
+      "sourcePath": "docs/nutrition/gk80-release-3/sources.json",
+      "usedInActivePack": true
+    },
+    {
+      "origin": "gk80-release-3",
+      "record": {
+        "id": "chickpea-mean28",
+        "gi": 28,
+        "scale": "GLUCOSE_100",
+        "family": "cooked-chickpea",
+        "food": "Chickpeas, food-specific mean",
+        "evidenceKind": "HUMAN_GI",
+        "sourceUrl": "https://doi.org/10.2337/dc08-1239",
+        "location": "Table 1 food-specific means; not SEM as range",
+        "confidence": "LOW",
+        "limitations": "Applied food/preparation analogue; generic composition separately sourced. Not a broad all-legume or all-grain mean.",
+        "evidenceHash": "be748b0bd80b411c52a55fd893b28cc4dfbc35cf1a24898ba5cf5fc6afe7c6bc"
+      },
+      "sourcePath": "docs/nutrition/gk80-release-3/sources.json",
+      "usedInActivePack": true
+    },
+    {
+      "origin": "gk80-release-3",
+      "record": {
+        "id": "cornmeal-porridge68-r4",
+        "gi": 68,
+        "scale": "GLUCOSE_100",
+        "family": "cornmeal-porridge",
+        "food": "Cornmeal porridge, China",
+        "evidenceKind": "HUMAN_GI",
+        "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+        "location": "Supplement1 row555 p39, 10 healthy adults; recipe granularity not fully specified",
+        "confidence": "LOW",
+        "accessUrl": "https://nutritotal.com.br/pro/wp-content/uploads/sites/3/2021/09/Tabela1_IG.pdf",
+        "documentSha256": "69deea1d1229c1d06f25bb8ff27b19e6003b63f39c6aec25cffb8bc99475122a",
+        "limitations": "Human evidence applied to named food/preparation, LOW analogue. Not measured meal GI. Source SEM is not a recipe interval. Generic composition remains a separate proxy.",
+        "evidenceHash": "5501573d34202fbc5a122d3c9271cee3d511a162b89f386f7bab0ca11b4559f1"
+      },
+      "sourcePath": "docs/nutrition/gk80-release-3/sources.json",
+      "usedInActivePack": true
+    },
+    {
+      "origin": "gk80-release-3",
+      "record": {
+        "id": "dairy-imputation30",
+        "gi": 30,
+        "scale": "GLUCOSE_100",
+        "family": "dairy-code",
+        "food": "Unsweetened animal dairy coding assignment",
+        "evidenceKind": "PUBLISHED_IMPUTATION",
+        "sourceUrl": "https://doi.org/10.2337/dc08-1239",
+        "location": "Conclusions, low-carbohydrate product assignment",
+        "confidence": "LOW",
+        "limitations": "Not tested cream, cheese or butter. Excludes plant drinks and sweetened dairy.",
+        "evidenceHash": "18dd13349258a887809f1dec2abce637ce648b7d2f829c690243734139912850"
+      },
+      "sourcePath": "docs/nutrition/gk80-release-3/sources.json",
+      "usedInActivePack": true
+    },
+    {
+      "origin": "gk80-release-3",
+      "record": {
+        "id": "dried-date-tamer-mean-gi-55-2-algeffari-2016",
+        "gi": 55.2,
+        "scale": "GLUCOSE_100",
+        "family": "date",
+        "food": "Tamer-stage dried dates, mean across 17 varieties",
+        "preparation": "Tamer-stage dates (fully ripe, firm and dried), consumed as sold with water; not a date paste, syrup, or cooked mixture",
+        "sourceUrl": "https://doi.org/10.5144/0256-4947.2016.397",
+        "originalStudy": {
+          "title": "Glycemic indices, glycemic load and glycemic response for seventeen varieties of dates grown in Saudi Arabia",
+          "authors": "AlGeffari MA, Almogbel ES, Alhomaidan HT, El-Mergawi R, Barrimah IA",
+          "url": "https://doi.org/10.5144/0256-4947.2016.397",
+          "table": "Table 2; mean GI 55.2 (SEM 7.7), range 42.8–74.6 across 17 Tamer-stage varieties; glucose reference",
+          "year": 2016,
+          "published": true,
+          "iso26642Confirmed": false,
+          "participants": 19,
+          "referenceFood": "50 g glucose in water (GI = 100)",
+          "qualityEvidence": "Published human GI study in 19 healthy adults. Each Tamer-stage date variety was tested once in 9–10 participants using a 50 g available-carbohydrate portion and glucose reference. The reported across-variety mean was 55.2 (SEM 7.7), with a wide 42.8–74.6 range; variety differences were not statistically significant, but this is not ISO 26642-confirmed and does not establish values for other ripeness stages or cooked date mixtures."
+        },
+        "referenceFood": "Already glucose-normalized in pinned active registry; do not convert twice",
+        "confidence": "LOW",
+        "limitations": "Low-confidence food-family mean for unsweetened Tamer-stage dried dates as sold. Use only when the recipe names dried dates added without further cooking; do not apply to date paste, syrup, fresh/semi-ripe dates, or dates cooked into a dish. This ingredient estimate is not a measurement of the recipe or meal.",
+        "allowedUse": "Only the named family and explicit preparation review",
+        "activeRecord": {
+          "id": "dried-date-tamer-mean-gi-55-2-algeffari-2016",
+          "gi": 55.2,
+          "foodKey": "dried-date-tamer",
+          "preparationKey": "tamer-stage-as-sold",
+          "food": "Tamer-stage dried dates, mean across 17 varieties",
+          "preparation": "Tamer-stage dates (fully ripe, firm and dried), consumed as sold with water; not a date paste, syrup, or cooked mixture",
+          "qualityTier": "SUPPLEMENTARY",
+          "referenceScale": "GLUCOSE_100",
+          "matchKind": "ANALOG",
+          "confidence": "LOW",
+          "source": {
+            "title": "Glycemic indices, glycemic load and glycemic response for seventeen varieties of dates grown in Saudi Arabia",
+            "authors": "AlGeffari MA, Almogbel ES, Alhomaidan HT, El-Mergawi R, Barrimah IA",
+            "url": "https://doi.org/10.5144/0256-4947.2016.397",
+            "table": "Table 2; mean GI 55.2 (SEM 7.7), range 42.8–74.6 across 17 Tamer-stage varieties; glucose reference",
+            "year": 2016,
+            "published": true,
+            "iso26642Confirmed": false,
+            "participants": 19,
+            "referenceFood": "50 g glucose in water (GI = 100)",
+            "qualityEvidence": "Published human GI study in 19 healthy adults. Each Tamer-stage date variety was tested once in 9–10 participants using a 50 g available-carbohydrate portion and glucose reference. The reported across-variety mean was 55.2 (SEM 7.7), with a wide 42.8–74.6 range; variety differences were not statistically significant, but this is not ISO 26642-confirmed and does not establish values for other ripeness stages or cooked date mixtures."
+          },
+          "note": "Low-confidence food-family mean for unsweetened Tamer-stage dried dates as sold. Use only when the recipe names dried dates added without further cooking; do not apply to date paste, syrup, fresh/semi-ripe dates, or dates cooked into a dish. This ingredient estimate is not a measurement of the recipe or meal."
+        },
+        "newRecord": false,
+        "evidenceHash": "c77834b8193752e34ac3553d6f8149f480a3290ee8177e2824dea7c4c07d2d6e"
+      },
+      "sourcePath": "docs/nutrition/gk80-release-3/sources.json",
+      "usedInActivePack": true
+    },
+    {
+      "origin": "gk80-release-3",
+      "record": {
+        "id": "honey-category-mean-gi-55-2002",
+        "gi": 55,
+        "scale": "GLUCOSE_100",
+        "family": "honey",
+        "food": "Honey, mean of 11 types",
+        "preparation": "Mean of honey varieties and commercial blends; not matched to a particular honey",
+        "sourceUrl": "https://doi.org/10.1093/ajcn/76.1.5",
+        "originalStudy": {
+          "title": "International table of glycemic index and glycemic load values: 2002",
+          "url": "https://doi.org/10.1093/ajcn/76.1.5",
+          "table": "Table 1, food 586: mean of 11 types of honey, GI 55 ± 5, glucose scale",
+          "year": 2002,
+          "published": true,
+          "iso26642Confirmed": false,
+          "participants": null,
+          "referenceFood": "Glucose for 10 of 11 values; one bread-reference result was converted in the source table",
+          "qualityEvidence": "Published mean spanning 11 botanically and compositionally different honeys; source-level data are old and not a product-specific or ISO-confirmed match. Used only as a low-confidence category estimate."
+        },
+        "referenceFood": "Already glucose-normalized in pinned active registry; do not convert twice",
+        "confidence": "LOW",
+        "limitations": "Honey GI varies widely by floral source and fructose content. The 55 mean is an approximate category value, not a measured GI for the recipe's honey.",
+        "allowedUse": "Only the named family and explicit preparation review",
+        "activeRecord": {
+          "id": "honey-category-mean-gi-55-2002",
+          "gi": 55,
+          "foodKey": "honey-category-mean",
+          "preparationKey": "category-mean",
+          "food": "Honey, mean of 11 types",
+          "preparation": "Mean of honey varieties and commercial blends; not matched to a particular honey",
+          "qualityTier": "SUPPLEMENTARY",
+          "referenceScale": "GLUCOSE_100",
+          "matchKind": "CATEGORY_MEAN",
+          "confidence": "LOW",
+          "source": {
+            "title": "International table of glycemic index and glycemic load values: 2002",
+            "url": "https://doi.org/10.1093/ajcn/76.1.5",
+            "table": "Table 1, food 586: mean of 11 types of honey, GI 55 ± 5, glucose scale",
+            "year": 2002,
+            "published": true,
+            "iso26642Confirmed": false,
+            "participants": null,
+            "referenceFood": "Glucose for 10 of 11 values; one bread-reference result was converted in the source table",
+            "qualityEvidence": "Published mean spanning 11 botanically and compositionally different honeys; source-level data are old and not a product-specific or ISO-confirmed match. Used only as a low-confidence category estimate."
+          },
+          "note": "Honey GI varies widely by floral source and fructose content. The 55 mean is an approximate category value, not a measured GI for the recipe's honey."
+        },
+        "newRecord": false,
+        "evidenceHash": "077705618b3aceedea03e5f2a3e5f23a032b1a923d811869303a141a873a3dd4"
+      },
+      "sourcePath": "docs/nutrition/gk80-release-3/sources.json",
+      "usedInActivePack": true
+    },
+    {
+      "origin": "gk80-release-3",
+      "record": {
+        "id": "kidney-mean24-r4",
+        "gi": 24,
+        "scale": "GLUCOSE_100",
+        "family": "cooked-kidney",
+        "food": "Boiled kidney beans, food-specific mean",
+        "evidenceKind": "HUMAN_GI",
+        "sourceUrl": "https://doi.org/10.2337/dc08-1239",
+        "location": "Atkinson 2008 Table1",
+        "confidence": "LOW",
+        "accessUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2584181/",
+        "documentSha256": "b3738226fa546af99ac25e5e3fa106e86cd204445f9153ef5ee762cb25f3b25a",
+        "limitations": "Human evidence applied to named food/preparation, LOW analogue. Not measured meal GI. Source SEM is not a recipe interval. Generic composition remains a separate proxy.",
+        "evidenceHash": "a5a7e4455445127d2896e4c5f303beb97148bc0dafb19f53d549568a60ba2bde"
+      },
+      "sourcePath": "docs/nutrition/gk80-release-3/sources.json",
+      "usedInActivePack": true
+    },
+    {
+      "origin": "gk80-release-3",
+      "record": {
+        "id": "lowcho50-r4",
+        "gi": 50,
+        "scale": "GLUCOSE_100",
+        "family": "lowcho-code",
+        "food": "Named foods with <=5 g available CHO/100 g",
+        "evidenceKind": "PUBLISHED_IMPUTATION",
+        "sourceUrl": "https://doi.org/10.1016/j.jfca.2007.02.004",
+        "location": "Author presentation slide 12",
+        "confidence": "LOW",
+        "accessUrl": "https://pdfs.semanticscholar.org/eead/ef25b9a2d5c209deb31265082c85080758f4.pdf",
+        "documentSha256": "778292d5d11cfd377ea93f1927ba8205aa7aff0105d2345f458336bf8869d0f9",
+        "limitations": "Published low-carbohydrate default50, applied only to reviewed named compositions <=5 g available CHO/100g. This cutoff is a project rule, not a validated scientific threshold. Explicit AFCD commercial soy sauce and AFCD tahini plus complete Maille Dijon label are allowed, not all brands or pastes. No flour/sugar/honey/syrup or composition-unknown food.",
+        "allowedCompositionIds": [
+          "afcd-F000396-release-3-a1aa6eb1",
+          "afcd-F001301-release-3-578f337d",
+          "afcd-F002983-r4",
+          "afcd-F002991-release-3-aef4d973",
+          "afcd-F003337-release-3-358d7f7a",
+          "afcd-F004726-release-3-8b45863e",
+          "afcd-F004729-release-3-6915a221",
+          "afcd-F005198-release-3-d5346b07",
+          "afcd-F005946-release-3-13b128f1",
+          "afcd-F008004-r4",
+          "afcd-F008065-r4",
+          "afcd-F008936-release-3-145aa9dd",
+          "afcd-F009076-r4",
+          "fineli-11048-release-20-ef608526",
+          "fineli-11557-release-20-0e2f3532",
+          "fineli-29-release-20-efe46494",
+          "fineli-30315-release-20-36a6124d",
+          "fineli-30369-release-20-d894c260",
+          "fineli-7530-release-20-21f4037e",
+          "fineli-7600-release-20-f85560ba",
+          "fineli-779-release-20-66a2e282",
+          "fineli-8513-release-20-ae10a9b7",
+          "fineli-858-release-20-ae10a9b7",
+          "fineli-929-release-20-59dd350d",
+          "maille-label-proxy"
+        ],
+        "evidenceHash": "591d0a6e5b4f2244d7bc226cd4706dea84fcfb3db7bc59bf1c79b8b2205f6770"
+      },
+      "sourcePath": "docs/nutrition/gk80-release-3/sources.json",
+      "usedInActivePack": true
+    },
+    {
+      "origin": "gk80-release-3",
+      "record": {
+        "id": "oats-elovena76",
+        "gi": 76,
+        "scale": "GLUCOSE_100",
+        "family": "oat-porridge",
+        "food": "Elovena rolled flakes 0.5–0.6 mm, cooked 10 min",
+        "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+        "accessUrl": "https://nutritotal.com.br/pro/wp-content/uploads/sites/3/2021/09/Tabela1_IG.pdf",
+        "documentSha256": "e930c4a090697abd4f7331a64837b524cf4701513cbb9865a739f4f9fb131061",
+        "location": "Table 1 row 436 p31",
+        "originalStudy": "Finland 2005, reference 59",
+        "evidenceKind": "HUMAN_GI",
+        "confidence": "LOW",
+        "limitations": "The study used glucose reference and 3 h sampling. Flake thickness and cooking are specified. Mixed meal milk/honey/mint effects are not measured.",
+        "newRecordInRun2": true,
+        "accessMethod": "Published original supplement, third-party mirror; cited original study not automatically full-text verified",
+        "participants": 12,
+        "statisticalUncertainty": {
+          "kind": "SEM",
+          "value": 7,
+          "usedAsRecipeRange": false
+        },
+        "evidenceHash": "b5d97449900e45b78330b696c2f4d4c2df640b3bc2950ec510d68a9522f38da1"
+      },
+      "sourcePath": "docs/nutrition/gk80-release-3/sources.json",
+      "usedInActivePack": true
+    },
+    {
+      "origin": "gk80-release-3",
+      "record": {
+        "id": "orange45-r4",
+        "gi": 45,
+        "scale": "GLUCOSE_100",
+        "family": "orange",
+        "food": "Raw peeled navel orange pieces",
+        "evidenceKind": "HUMAN_GI",
+        "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+        "reviewedRegistryRecord": {
+          "id": "orange-navel-2021-gi-45",
+          "gi": 45,
+          "foodKey": "orange",
+          "preparationKey": "raw-orange",
+          "food": "Navel orange, raw",
+          "preparation": "Raw navel orange, segments; Australia, tested 2020",
+          "qualityTier": "STRONG",
+          "referenceScale": "GLUCOSE_100",
+          "matchKind": "ANALOG",
+          "confidence": "LOW",
+          "source": {
+            "title": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+            "authors": "Atkinson FS, Brand-Miller JC, Foster-Powell K, Buyken AE, Goletzke J",
+            "url": "https://doi.org/10.1093/ajcn/nqab233",
+            "table": "Supplemental Table 1 item 1150: navel oranges, Australia, GI 45 ± 5; 10 healthy adults; 50 g available carbohydrate; glucose, 2 h; ISO-consistent standard method.",
+            "year": 2021,
+            "published": true,
+            "iso26642Confirmed": true,
+            "participants": 10,
+            "referenceFood": "Glucose, 2 h (GI = 100)",
+            "qualityEvidence": "Published food-specific navel-orange measurement listed in Supplemental Table 1 as ISO 26642:2010-consistent. Source quality is strong; the recipe uses a generic raw peeled orange with unknown cultivar, so the recipe mapping remains a low-confidence analogue."
+          },
+          "note": "Direct source for raw navel orange; use for generic raw orange only as a cultivar analogue and retain LOW confidence when cultivar is unknown. Not a measurement of a recipe or meal."
+        },
+        "limitations": "Raw navel-orange human point applied to cooked retained fruit in carnitas as explicit LOW preparation analogy. No cooked-fruit measurement.",
+        "evidenceHash": "996b1efc8f043872232277f18a1ff818f2fc566bb8d1bda1bf937c0c9365024e"
+      },
+      "sourcePath": "docs/nutrition/gk80-release-3/sources.json",
+      "usedInActivePack": true
+    },
+    {
+      "origin": "gk80-release-3",
+      "record": {
+        "id": "papaya-pieces38-r4",
+        "gi": 38,
+        "scale": "GLUCOSE_100",
+        "family": "papaya-pieces",
+        "food": "Raw papaya cut into bite-size pieces",
+        "evidenceKind": "HUMAN_GI",
+        "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+        "location": "Supplement1 row1153 p78, 19 healthy adults",
+        "confidence": "LOW",
+        "accessUrl": "https://nutritotal.com.br/pro/wp-content/uploads/sites/3/2021/09/Tabela1_IG.pdf",
+        "documentSha256": "69deea1d1229c1d06f25bb8ff27b19e6003b63f39c6aec25cffb8bc99475122a",
+        "limitations": "Human evidence applied to named food/preparation, LOW analogue. Not measured meal GI. Source SEM is not a recipe interval. Generic composition remains a separate proxy.",
+        "evidenceHash": "2e5be7ad700a58329aa545e9444e04b30fdea5b8be609a3047ba62562dc760b9"
+      },
+      "sourcePath": "docs/nutrition/gk80-release-3/sources.json",
+      "usedInActivePack": true
+    },
+    {
+      "origin": "gk80-release-3",
+      "record": {
+        "id": "pita-white68-r4",
+        "gi": 68,
+        "scale": "GLUCOSE_100",
+        "family": "white-pita",
+        "food": "White mini pita bread, UK",
+        "evidenceKind": "HUMAN_GI",
+        "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+        "location": "Supplement1 row347 p25, 10 healthy adults",
+        "confidence": "LOW",
+        "accessUrl": "https://nutritotal.com.br/pro/wp-content/uploads/sites/3/2021/09/Tabela1_IG.pdf",
+        "documentSha256": "69deea1d1229c1d06f25bb8ff27b19e6003b63f39c6aec25cffb8bc99475122a",
+        "limitations": "Human evidence applied to named food/preparation, LOW analogue. Not measured meal GI. Source SEM is not a recipe interval. Generic composition remains a separate proxy.",
+        "evidenceHash": "58cd5ba8bcf9e1633991c2309063b1336dec5aab6cd624e42ebbc03c747c00b5"
+      },
+      "sourcePath": "docs/nutrition/gk80-release-3/sources.json",
+      "usedInActivePack": true
+    },
+    {
+      "origin": "gk80-release-3",
+      "record": {
+        "id": "pumpkin51",
+        "gi": 51,
+        "scale": "GLUCOSE_100",
+        "family": "boiled-butternut",
+        "food": "Peeled boiled butternut pumpkin",
+        "evidenceKind": "HUMAN_GI",
+        "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+        "location": "Supplement1 row1799 p120",
+        "confidence": "LOW",
+        "accessUrl": "https://nutritotal.com.br/pro/wp-content/uploads/sites/3/2021/09/Tabela1_IG.pdf",
+        "documentSha256": "69deea1d1229c1d06f25bb8ff27b19e6003b63f39c6aec25cffb8bc99475122a",
+        "limitations": "Human evidence applied to named food/preparation, LOW analogue. Not measured meal GI. Source SEM is not a recipe interval. Generic composition remains a separate proxy.",
+        "evidenceHash": "3e39c711069ef80f308c0b43030a28e2de3a8bc27c359cba33a8565b9e5b4d2c"
+      },
+      "sourcePath": "docs/nutrition/gk80-release-3/sources.json",
+      "usedInActivePack": true
+    },
+    {
+      "origin": "gk80-release-3",
+      "record": {
+        "id": "rice-jasmine68",
+        "gi": 68,
+        "family": "rice-grain",
+        "food": "jasmine rice",
+        "preparation": "cooked rice as specified in Venn2014; no cooled-rice claim",
+        "sourceUrl": "https://doi.org/10.1186/1475-2891-13-50",
+        "originalStudy": "Venn2014 PMID24885045 PMC4047427",
+        "location": "Table2 European cohort glucose-reference column",
+        "accessUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4047427/fullTextXML",
+        "documentSha256": "c4342f41f5c5478e1c9e9baaf257c480e885f8eb064ecf53fa053d0ab55585c8",
+        "scale": "GLUCOSE_100",
+        "referenceFood": "Glucose",
+        "participants": 31,
+        "statisticalUncertainty": {
+          "kind": "95%CI",
+          "usedAsRecipeRange": false
+        },
+        "limitations": "European cohort selected consistently, not pooled with Chinese cohort. Other cohort means and CIs are not food-preparation bounds. Brown sugar is only an applied sucrose-dominant analogy.",
+        "confidence": "LOW",
+        "allowedUse": "Named grain-rice or sucrose applications only",
+        "newRecord": true,
+        "evidenceHash": "3ecc3f0a5f8206b53edb3b53c56e2dd317df7bfcfe159254bd488b93a4f4c2b0"
+      },
+      "sourcePath": "docs/nutrition/gk80-release-3/sources.json",
+      "usedInActivePack": true
+    },
+    {
+      "origin": "gk80-release-3",
+      "record": {
+        "id": "small-flavour50-r4",
+        "gi": 50,
+        "scale": "GLUCOSE_100",
+        "family": "small-spice-extension",
+        "food": "Fixed weighed culinary ground spice, seed or vanilla extract",
+        "evidenceKind": "PUBLISHED_IMPUTATION",
+        "sourceUrl": "https://doi.org/10.1016/j.jfca.2007.02.004",
+        "location": "Explicit project extension of coding default, not directly published for these foods",
+        "confidence": "LOW",
+        "projectExtension": true,
+        "maxCarbohydratePerServing": 0.5,
+        "maxCumulativeCarbohydratePerServing": 1,
+        "limitations": "Own project extension of coding default, not measured food GI or directly published Schakel scope. Full composition and consumed grams mandatory; <=0.5 g CHO each and <=1 g aggregate per serving. Includes named vanilla extract, dried herbs and whole seed garnish. Excludes flour, baking powder, bulk paste, sugar, unknown extraction and sticks/pods. No biological error bound.",
+        "allowedCompositionIds": [
+          "afcd-F002258-release-3-e23045e9",
+          "afcd-F002963-release-3-675e24d6",
+          "afcd-F003190-release-3-75db5621",
+          "afcd-F003327-release-3-66a5ea67",
+          "afcd-F006281-release-3-6c6c6bfe",
+          "afcd-F006316-release-3-c369b734",
+          "afcd-F006618-release-3-a814ab84",
+          "afcd-F008214-release-3-82a89f38",
+          "afcd-F009160-r4",
+          "afcd-F009160-release-3-88061dcd",
+          "afcd-F009335-release-3-34c60a8e",
+          "afcd-F009350-release-3-2181fb59",
+          "fineli-34245-release-20-60090bb3"
+        ],
+        "evidenceHash": "8daa54a7a72b78c45e25da32e9b2f72ddc1e720bd6e12b5468cea0aa0ecf067a"
+      },
+      "sourcePath": "docs/nutrition/gk80-release-3/sources.json",
+      "usedInActivePack": true
+    },
+    {
+      "origin": "gk80-release-3",
+      "record": {
+        "id": "vegetable-imputation40",
+        "gi": 40,
+        "scale": "GLUCOSE_100",
+        "family": "low-carb-vegetable",
+        "food": "Published assignment for low-carbohydrate vegetables, not measured food GI",
+        "evidenceKind": "PUBLISHED_IMPUTATION",
+        "sourceUrl": "https://doi.org/10.2337/dc08-1239",
+        "accessUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC2584181/fullTextXML",
+        "documentSha256": "b3738226fa546af99ac25e5e3fa106e86cd204445f9153ef5ee762cb25f3b25a",
+        "location": "Conclusions: assignment discussion",
+        "originalStudy": "Atkinson, Foster-Powell, Brand-Miller 2008",
+        "confidence": "LOW",
+        "limitations": "Coding estimate only. Application to named fresh herbs, sprouts and alliums is an explicit project interpretation. It does not establish a physiological maximum or a one-unit uncertainty bound. Not a default for seed spices, flour, sauces or stock.",
+        "newRecordInRun2": true,
+        "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc"
+      },
+      "sourcePath": "docs/nutrition/gk80-release-3/sources.json",
+      "usedInActivePack": true
+    },
+    {
+      "origin": "gk80-release-4",
+      "record": {
+        "id": "vegetable-imputation40",
+        "gi": 40,
+        "scale": "GLUCOSE_100",
+        "family": "low-carb-vegetable",
+        "food": "Published assignment for low-carbohydrate vegetables, not measured food GI",
+        "evidenceKind": "PUBLISHED_IMPUTATION",
+        "sourceUrl": "https://doi.org/10.2337/dc08-1239",
+        "accessUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC2584181/fullTextXML",
+        "documentSha256": "b3738226fa546af99ac25e5e3fa106e86cd204445f9153ef5ee762cb25f3b25a",
+        "location": "Conclusions: assignment discussion",
+        "originalStudy": "Atkinson, Foster-Powell, Brand-Miller 2008",
+        "confidence": "LOW",
+        "limitations": "Coding estimate only. Application to named fresh herbs, sprouts and alliums is an explicit project interpretation. It does not establish a physiological maximum or a one-unit uncertainty bound. Not a default for seed spices, flour, sauces or stock.",
+        "newRecordInRun2": true,
+        "allowedCompositionIds": [
+          "F500-q09",
+          "F11057-q09",
+          "F34190-q09",
+          "F369-q09",
+          "A006250-q09",
+          "F631-q09",
+          "F698-q09",
+          "A000396-q09",
+          "A006316-q09",
+          "F858-q09",
+          "F642-q09",
+          "F922-q09",
+          "F11557-q09",
+          "F335-q09",
+          "F536-q09",
+          "F11562-q09",
+          "F707-q09",
+          "A008004-q09",
+          "F11067-q09",
+          "F392-q09",
+          "A006118-q09",
+          "F33456-q09",
+          "A009160-q09",
+          "A006618-q09",
+          "F389-q09"
+        ],
+        "evidenceHash": "45f4c80ac2ac10c8875df006e13d2d8d49e8145a588ec3eafbd67c757308e77a"
+      },
+      "sourcePath": "docs/nutrition/gk80-release-4/sources.json",
+      "usedInActivePack": true
+    },
+    {
+      "origin": "gk80-release-4",
+      "record": {
+        "id": "dairy-imputation30",
+        "gi": 30,
+        "scale": "GLUCOSE_100",
+        "family": "dairy-code",
+        "food": "Unsweetened animal dairy coding assignment",
+        "evidenceKind": "PUBLISHED_IMPUTATION",
+        "sourceUrl": "https://doi.org/10.2337/dc08-1239",
+        "location": "Conclusions, low-carbohydrate product assignment",
+        "confidence": "LOW",
+        "limitations": "Not tested cream, cheese or butter. Excludes plant drinks and sweetened dairy.",
+        "allowedCompositionIds": [
+          "F500-q09",
+          "F11057-q09",
+          "F34190-q09",
+          "F369-q09",
+          "A006250-q09",
+          "F631-q09",
+          "F698-q09",
+          "A000396-q09",
+          "A006316-q09",
+          "F858-q09",
+          "F642-q09",
+          "F922-q09",
+          "F11557-q09",
+          "F335-q09",
+          "F536-q09",
+          "F11562-q09",
+          "F707-q09",
+          "A008004-q09",
+          "F11067-q09",
+          "F392-q09",
+          "A006118-q09",
+          "F33456-q09",
+          "A009160-q09",
+          "A006618-q09",
+          "F389-q09"
+        ],
+        "evidenceHash": "155f2de5585062b776f1ceb76ab5a338fc3c76e045fa0da7798d852ca71deb37"
+      },
+      "sourcePath": "docs/nutrition/gk80-release-4/sources.json",
+      "usedInActivePack": true
+    },
+    {
+      "origin": "gk80-release-4",
+      "record": {
+        "id": "lowcho50-r5",
+        "gi": 50,
+        "scale": "GLUCOSE_100",
+        "family": "lowcho-code",
+        "food": "Named foods with <=5 g available CHO/100 g",
+        "evidenceKind": "PUBLISHED_IMPUTATION",
+        "sourceUrl": "https://doi.org/10.1016/j.jfca.2007.02.004",
+        "location": "Author presentation slide 12",
+        "confidence": "LOW",
+        "accessUrl": "https://pdfs.semanticscholar.org/eead/ef25b9a2d5c209deb31265082c85080758f4.pdf",
+        "documentSha256": "778292d5d11cfd377ea93f1927ba8205aa7aff0105d2345f458336bf8869d0f9",
+        "limitations": "Published low-carbohydrate default50, applied only to reviewed named compositions <=5 g available CHO/100g. This cutoff is a project rule, not a validated scientific threshold. Explicit AFCD commercial soy sauce and AFCD tahini plus complete Maille Dijon label are allowed, not all brands or pastes. No flour/sugar/honey/syrup or composition-unknown food.",
+        "allowedCompositionIds": [
+          "F500-q09",
+          "F11057-q09",
+          "F34190-q09",
+          "F369-q09",
+          "A006250-q09",
+          "F631-q09",
+          "F698-q09",
+          "A000396-q09",
+          "A006316-q09",
+          "F858-q09",
+          "F642-q09",
+          "F922-q09",
+          "F11557-q09",
+          "F335-q09",
+          "F536-q09",
+          "F11562-q09",
+          "F707-q09",
+          "A008004-q09",
+          "F11067-q09",
+          "F392-q09",
+          "A006118-q09",
+          "F33456-q09",
+          "A009160-q09",
+          "A006618-q09",
+          "F389-q09"
+        ],
+        "evidenceHash": "7bd58b861dab7a23e95f4fa6f6003159b8cd5d9f6e0de2102311b641685af6bc"
+      },
+      "sourcePath": "docs/nutrition/gk80-release-4/sources.json",
+      "usedInActivePack": true
+    },
+    {
+      "origin": "gk80-release-4",
+      "record": {
+        "id": "small-flavour50-r5",
+        "gi": 50,
+        "scale": "GLUCOSE_100",
+        "family": "small-spice-extension",
+        "food": "Fixed weighed culinary ground spice, seed or vanilla extract",
+        "evidenceKind": "PUBLISHED_IMPUTATION",
+        "sourceUrl": "https://doi.org/10.1016/j.jfca.2007.02.004",
+        "location": "Explicit project extension of coding default, not directly published for these foods",
+        "confidence": "LOW",
+        "projectExtension": true,
+        "maxCarbohydratePerServing": 0.5,
+        "maxCumulativeCarbohydratePerServing": 1,
+        "limitations": "Own project extension of coding default, not measured food GI or directly published Schakel scope. Full composition and consumed grams mandatory; <=0.5 g CHO each and <=1 g aggregate per serving. Includes named vanilla extract, dried herbs and whole seed garnish. Excludes flour, baking powder, bulk paste, sugar, unknown extraction and sticks/pods. No biological error bound. USDA total-carbohydrate minus fibre is a disclosed available-CHO proxy; endogenous polyols unquantified, not asserted zero. This additional proxy use awaits owner method approval.",
+        "allowedCompositionIds": [
+          "F500-q09",
+          "F11057-q09",
+          "F34190-q09",
+          "F369-q09",
+          "A006250-q09",
+          "F631-q09",
+          "F698-q09",
+          "A000396-q09",
+          "A006316-q09",
+          "F858-q09",
+          "F642-q09",
+          "F922-q09",
+          "F11557-q09",
+          "F335-q09",
+          "F536-q09",
+          "F11562-q09",
+          "F707-q09",
+          "A008004-q09",
+          "F11067-q09",
+          "F392-q09",
+          "A006118-q09",
+          "F33456-q09",
+          "A009160-q09",
+          "A006618-q09",
+          "F389-q09"
+        ],
+        "evidenceHash": "a1165f8864e4127e36b4112a001fd17852f928ac9a107495f500c1d862b4295a"
+      },
+      "sourcePath": "docs/nutrition/gk80-release-4/sources.json",
+      "usedInActivePack": true
+    },
+    {
+      "origin": "gk80-release-5",
+      "record": {
+        "id": "rice-jasmine68",
+        "gi": 68,
+        "family": "rice-grain",
+        "food": "jasmine rice",
+        "preparation": "cooked rice as specified in Venn2014; no cooled-rice claim",
+        "sourceUrl": "https://doi.org/10.1186/1475-2891-13-50",
+        "originalStudy": "Venn2014 PMID24885045 PMC4047427",
+        "location": "Table2 European cohort glucose-reference column",
+        "accessUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4047427/fullTextXML",
+        "documentSha256": "c4342f41f5c5478e1c9e9baaf257c480e885f8eb064ecf53fa053d0ab55585c8",
+        "scale": "GLUCOSE_100",
+        "referenceFood": "Glucose",
+        "participants": 31,
+        "statisticalUncertainty": {
+          "kind": "95%CI",
+          "usedAsRecipeRange": false
+        },
+        "limitations": "European cohort selected consistently, not pooled with Chinese cohort. Other cohort means and CIs are not food-preparation bounds. Brown sugar is only an applied sucrose-dominant analogy.",
+        "confidence": "LOW",
+        "allowedUse": "Named grain-rice or sucrose applications only",
+        "newRecord": true,
+        "evidenceHash": "3ecc3f0a5f8206b53edb3b53c56e2dd317df7bfcfe159254bd488b93a4f4c2b0"
+      },
+      "sourcePath": "docs/nutrition/gk80-release-5/sources.json",
+      "usedInActivePack": true
+    },
+    {
+      "origin": "gk80-release-5",
+      "record": {
+        "id": "rice-noodle61",
+        "gi": 61,
+        "scale": "GLUCOSE_100",
+        "family": "rice-noodle",
+        "food": "Dried rice noodles, boiled, Thai World Bangkok",
+        "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+        "accessUrl": "https://nutritotal.com.br/pro/wp-content/uploads/sites/3/2021/09/Tabela1_IG.pdf",
+        "documentSha256": "e930c4a090697abd4f7331a64837b524cf4701513cbb9865a739f4f9fb131061",
+        "location": "Table 1 row 1463 p99",
+        "originalStudy": "Chan et al.; DOI 10.1038/sj.ejcn.1601265; 12 normal participants in table",
+        "evidenceKind": "HUMAN_GI",
+        "confidence": "LOW",
+        "limitations": "Product analogy; generic dry rice noodle composition is separately sourced. Boil and eat hot; not fresh noodles or cooled/fried noodles.",
+        "newRecordInRun2": true,
+        "accessMethod": "Published original supplement, third-party mirror; cited original study not automatically full-text verified",
+        "participants": 12,
+        "statisticalUncertainty": {
+          "kind": "SEM",
+          "value": 6,
+          "usedAsRecipeRange": false
+        },
+        "evidenceHash": "51f4937eaa6c5a576a9e8b488efcdbc19521c178a79790b493d0097501d01cf0"
+      },
+      "sourcePath": "docs/nutrition/gk80-release-5/sources.json",
+      "usedInActivePack": true
+    },
+    {
+      "origin": "gk80-release-5",
+      "record": {
+        "id": "vegetable-imputation40",
+        "gi": 40,
+        "scale": "GLUCOSE_100",
+        "family": "low-carb-vegetable",
+        "food": "Published assignment for low-carbohydrate vegetables, not measured food GI",
+        "evidenceKind": "PUBLISHED_IMPUTATION",
+        "sourceUrl": "https://doi.org/10.2337/dc08-1239",
+        "accessUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC2584181/fullTextXML",
+        "documentSha256": "b3738226fa546af99ac25e5e3fa106e86cd204445f9153ef5ee762cb25f3b25a",
+        "location": "Conclusions: assignment discussion",
+        "originalStudy": "Atkinson, Foster-Powell, Brand-Miller 2008",
+        "confidence": "LOW",
+        "limitations": "Coding estimate only. Application to named fresh herbs, sprouts and alliums is an explicit project interpretation. It does not establish a physiological maximum or a one-unit uncertainty bound. Not a default for seed spices, flour, sauces or stock.",
+        "newRecordInRun2": true,
+        "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc"
+      },
+      "sourcePath": "docs/nutrition/gk80-release-5/sources.json",
+      "usedInActivePack": true
+    },
+    {
+      "origin": "gk80-release-5",
+      "record": {
+        "id": "dairy-imputation30",
+        "gi": 30,
+        "scale": "GLUCOSE_100",
+        "family": "dairy-code",
+        "food": "Unsweetened animal dairy coding assignment",
+        "evidenceKind": "PUBLISHED_IMPUTATION",
+        "sourceUrl": "https://doi.org/10.2337/dc08-1239",
+        "location": "Conclusions, low-carbohydrate product assignment",
+        "confidence": "LOW",
+        "limitations": "Not tested cream, cheese or butter. Excludes plant drinks and sweetened dairy.",
+        "evidenceHash": "18dd13349258a887809f1dec2abce637ce648b7d2f829c690243734139912850"
+      },
+      "sourcePath": "docs/nutrition/gk80-release-5/sources.json",
+      "usedInActivePack": true
+    },
+    {
+      "origin": "gk80-release-5",
+      "record": {
+        "id": "kidney-mean24-r4",
+        "gi": 24,
+        "scale": "GLUCOSE_100",
+        "family": "cooked-kidney",
+        "food": "Boiled kidney beans, food-specific mean",
+        "evidenceKind": "HUMAN_GI",
+        "sourceUrl": "https://doi.org/10.2337/dc08-1239",
+        "location": "Atkinson 2008 Table1",
+        "confidence": "LOW",
+        "accessUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2584181/",
+        "documentSha256": "b3738226fa546af99ac25e5e3fa106e86cd204445f9153ef5ee762cb25f3b25a",
+        "limitations": "Human evidence applied to named food/preparation, LOW analogue. Not measured meal GI. Source SEM is not a recipe interval. Generic composition remains a separate proxy.",
+        "evidenceHash": "a5a7e4455445127d2896e4c5f303beb97148bc0dafb19f53d549568a60ba2bde"
+      },
+      "sourcePath": "docs/nutrition/gk80-release-5/sources.json",
+      "usedInActivePack": true
+    },
+    {
+      "origin": "gk80-release-5",
+      "record": {
+        "id": "potato-boiled66-r5",
+        "gi": 66,
+        "scale": "GLUCOSE_100",
+        "family": "POTATO",
+        "food": "Potato, unspecified variety, boiled",
+        "evidenceKind": "HUMAN_GI",
+        "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+        "location": "Existing reviewed registry potato-boiled-china-gi-66",
+        "confidence": "LOW",
+        "limitations": "Named human food/preparation comparator applied as explicit LOW analogy. Not measured meal GI or a biological uncertainty bound; SEM/SD not a recipe range.",
+        "reviewedRegistryRecord": {
+          "id": "potato-boiled-china-gi-66",
+          "gi": 66,
+          "foodKey": "potato",
+          "preparationKey": "boiled-unspecified",
+          "food": "Potato, unspecified variety, boiled",
+          "preparation": "Boiled; China; test year 2005",
+          "qualityTier": "STRONG",
+          "referenceScale": "GLUCOSE_100",
+          "source": {
+            "title": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+            "url": "https://doi.org/10.1093/ajcn/nqab233",
+            "table": "Supplemental Table 1, entry 1842",
+            "year": 2021,
+            "published": true,
+            "iso26642Confirmed": true,
+            "participants": 10,
+            "referenceFood": "Glucose",
+            "testDurationHours": 2,
+            "qualityEvidence": "Supplemental Table 1 is the review's ISO-methodology set; source row describes boiled, unspecified potato. GI is rounded to the table's reported integer."
+          },
+          "note": "Candidate only. Boiled potato does not match the recipe's covered, low-heat oil-cooked slices mixed with egg and pan-set as a tortilla."
+        },
+        "normalization": "Glucose scale already recorded; no second conversion",
+        "evidenceHash": "f25b18579925dbf83988b8c91ef3a90e8bc3336c40d2e3eafaba40b51796bd73"
+      },
+      "sourcePath": "docs/nutrition/gk80-release-5/sources.json",
+      "usedInActivePack": true
+    },
+    {
+      "origin": "gk80-release-5",
+      "record": {
+        "id": "mango51-r5",
+        "gi": 51,
+        "scale": "GLUCOSE_100",
+        "family": "MANGO",
+        "food": "Raw mango (food-specific mean of three studies)",
+        "evidenceKind": "HUMAN_GI",
+        "sourceUrl": "https://doi.org/10.1093/ajcn/76.1.5",
+        "location": "Existing reviewed registry mango-raw-mean-gi-51-2002",
+        "confidence": "LOW",
+        "limitations": "Named human food/preparation comparator applied as explicit LOW analogy. Not measured meal GI or a biological uncertainty bound; SEM/SD not a recipe range.",
+        "reviewedRegistryRecord": {
+          "id": "mango-raw-mean-gi-51-2002",
+          "gi": 51,
+          "foodKey": "mango",
+          "preparationKey": "raw",
+          "food": "Raw mango (food-specific mean of three studies)",
+          "preparation": "Raw mango; varieties differ across included studies",
+          "qualityTier": "SUPPLEMENTARY",
+          "referenceScale": "GLUCOSE_100",
+          "source": {
+            "title": "International table of glycemic index and glycemic load values: 2002",
+            "url": "https://doi.org/10.1093/ajcn/76.1.5",
+            "table": "Table 2, entry 412, raw mango: mean of three studies, GI 51 ± 5 (glucose scale); individual entries include raw mango from the Philippines, Australia, and ripe mango from India.",
+            "year": 2002,
+            "published": true,
+            "iso26642Confirmed": false,
+            "qualityEvidence": "Published food-specific mean across three human raw-mango studies; variety, ripeness and population differ, and this is not ISO-confirmed. Use as a low-confidence generic raw-mango estimate, not a measurement of a recipe or meal."
+          },
+          "note": "Food-specific mean; cultivar and ripeness vary. Low-confidence ingredient estimate.",
+          "matchKind": "ANALOG",
+          "confidence": "LOW"
+        },
+        "normalization": "Glucose scale already recorded; no second conversion",
+        "evidenceHash": "ef5c85a1332ea413d750c9840b95d0cfd9f2563c2266ceb6d95c7be6b342cc9f"
+      },
+      "sourcePath": "docs/nutrition/gk80-release-5/sources.json",
+      "usedInActivePack": true
+    },
+    {
+      "origin": "gk80-release-5",
+      "record": {
+        "id": "lowcho50-r5",
+        "gi": 50,
+        "scale": "GLUCOSE_100",
+        "family": "lowcho-code",
+        "food": "Named foods with <=5 g available CHO/100 g",
+        "evidenceKind": "PUBLISHED_IMPUTATION",
+        "sourceUrl": "https://doi.org/10.1016/j.jfca.2007.02.004",
+        "location": "Author presentation slide 12",
+        "confidence": "LOW",
+        "accessUrl": "https://pdfs.semanticscholar.org/eead/ef25b9a2d5c209deb31265082c85080758f4.pdf",
+        "documentSha256": "778292d5d11cfd377ea93f1927ba8205aa7aff0105d2345f458336bf8869d0f9",
+        "limitations": "Published low-carbohydrate default50, applied only to reviewed named compositions <=5 g available CHO/100g. This cutoff is a project rule, not a validated scientific threshold. Explicit AFCD commercial soy sauce and AFCD tahini plus complete Maille Dijon label are allowed, not all brands or pastes. No flour/sugar/honey/syrup or composition-unknown food.",
+        "allowedCompositionIds": [
+          "A002991-r5",
+          "A004726-r5",
+          "A004729-r5",
+          "A005199-r5",
+          "A008065-r5",
+          "A008936-r5",
+          "F11048-r5",
+          "F11057-r5",
+          "F29-r5",
+          "F30369-r5",
+          "F7530-r5",
+          "F779-r5",
+          "F858-r5",
+          "F929-r5",
+          "maille-label-proxy"
+        ],
+        "evidenceHash": "8a6861520fba329dbf241b7af9f5a7dac13b7a67356990f3a0f5414f0a9c1288"
+      },
+      "sourcePath": "docs/nutrition/gk80-release-5/sources.json",
+      "usedInActivePack": true
+    },
+    {
+      "origin": "gk80-release-5",
+      "record": {
+        "id": "small-flavour50-r5",
+        "gi": 50,
+        "scale": "GLUCOSE_100",
+        "family": "small-spice-extension",
+        "food": "Fixed weighed culinary ground spice, seed or vanilla extract",
+        "evidenceKind": "PUBLISHED_IMPUTATION",
+        "sourceUrl": "https://doi.org/10.1016/j.jfca.2007.02.004",
+        "location": "Explicit project extension of coding default, not directly published for these foods",
+        "confidence": "LOW",
+        "projectExtension": true,
+        "maxCarbohydratePerServing": 0.5,
+        "maxCumulativeCarbohydratePerServing": 1,
+        "limitations": "Own project extension of coding default, not measured food GI or directly published Schakel scope. Full composition and consumed grams mandatory; <=0.5 g CHO each and <=1 g aggregate per serving. Includes named vanilla extract, dried herbs and whole seed garnish. Excludes flour, baking powder, bulk paste, sugar, unknown extraction and sticks/pods. No biological error bound. USDA total-carbohydrate minus fibre is a disclosed available-CHO proxy; endogenous polyols unquantified, not asserted zero. This additional proxy use awaits owner method approval.",
+        "allowedCompositionIds": [
+          "A002258-r5",
+          "A002893-r5",
+          "A002963-r5",
+          "A003190-r5",
+          "A003327-r5",
+          "A006281-r5",
+          "A006316-r5",
+          "A006618-r5",
+          "A008214-r5",
+          "A009160-r5",
+          "A009335-r5",
+          "F34245-r5",
+          "U170917-r5",
+          "U170928-r5",
+          "U171315-r5"
+        ],
+        "evidenceHash": "6a29f0c9ff97d7c1bc4dc3cc40f67a4822336b55da8535a117287b3f2338e927"
+      },
+      "sourcePath": "docs/nutrition/gk80-release-5/sources.json",
+      "usedInActivePack": true
+    },
+    {
+      "origin": "gk80-release-6",
+      "record": {
+        "id": "honey-category-mean-gi-55-2002",
+        "gi": 55,
+        "scale": "GLUCOSE_100",
+        "family": "honey",
+        "food": "Honey, mean of 11 types",
+        "preparation": "Mean of honey varieties and commercial blends; not matched to a particular honey",
+        "sourceUrl": "https://doi.org/10.1093/ajcn/76.1.5",
+        "originalStudy": {
+          "title": "International table of glycemic index and glycemic load values: 2002",
+          "url": "https://doi.org/10.1093/ajcn/76.1.5",
+          "table": "Table 1, food 586: mean of 11 types of honey, GI 55 ± 5, glucose scale",
+          "year": 2002,
+          "published": true,
+          "iso26642Confirmed": false,
+          "participants": null,
+          "referenceFood": "Glucose for 10 of 11 values; one bread-reference result was converted in the source table",
+          "qualityEvidence": "Published mean spanning 11 botanically and compositionally different honeys; source-level data are old and not a product-specific or ISO-confirmed match. Used only as a low-confidence category estimate."
+        },
+        "referenceFood": "Already glucose-normalized in pinned active registry; do not convert twice",
+        "confidence": "LOW",
+        "limitations": "Honey GI varies widely by floral source and fructose content. The 55 mean is an approximate category value, not a measured GI for the recipe's honey.",
+        "allowedUse": "Only the named family and explicit preparation review",
+        "activeRecord": {
+          "id": "honey-category-mean-gi-55-2002",
+          "gi": 55,
+          "foodKey": "honey-category-mean",
+          "preparationKey": "category-mean",
+          "food": "Honey, mean of 11 types",
+          "preparation": "Mean of honey varieties and commercial blends; not matched to a particular honey",
+          "qualityTier": "SUPPLEMENTARY",
+          "referenceScale": "GLUCOSE_100",
+          "matchKind": "CATEGORY_MEAN",
+          "confidence": "LOW",
+          "source": {
+            "title": "International table of glycemic index and glycemic load values: 2002",
+            "url": "https://doi.org/10.1093/ajcn/76.1.5",
+            "table": "Table 1, food 586: mean of 11 types of honey, GI 55 ± 5, glucose scale",
+            "year": 2002,
+            "published": true,
+            "iso26642Confirmed": false,
+            "participants": null,
+            "referenceFood": "Glucose for 10 of 11 values; one bread-reference result was converted in the source table",
+            "qualityEvidence": "Published mean spanning 11 botanically and compositionally different honeys; source-level data are old and not a product-specific or ISO-confirmed match. Used only as a low-confidence category estimate."
+          },
+          "note": "Honey GI varies widely by floral source and fructose content. The 55 mean is an approximate category value, not a measured GI for the recipe's honey."
+        },
+        "newRecord": false,
+        "evidenceHash": "077705618b3aceedea03e5f2a3e5f23a032b1a923d811869303a141a873a3dd4"
+      },
+      "sourcePath": "docs/nutrition/gk80-release-6/sources.json",
+      "usedInActivePack": true
+    },
+    {
+      "origin": "gk80-release-6",
+      "record": {
+        "id": "vegetable-imputation40",
+        "gi": 40,
+        "scale": "GLUCOSE_100",
+        "family": "low-carb-vegetable",
+        "food": "Published assignment for low-carbohydrate vegetables, not measured food GI",
+        "evidenceKind": "PUBLISHED_IMPUTATION",
+        "sourceUrl": "https://doi.org/10.2337/dc08-1239",
+        "accessUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC2584181/fullTextXML",
+        "documentSha256": "b3738226fa546af99ac25e5e3fa106e86cd204445f9153ef5ee762cb25f3b25a",
+        "location": "Conclusions: assignment discussion",
+        "originalStudy": "Atkinson, Foster-Powell, Brand-Miller 2008",
+        "confidence": "LOW",
+        "limitations": "Coding estimate only. Application to named fresh herbs, sprouts and alliums is an explicit project interpretation. It does not establish a physiological maximum or a one-unit uncertainty bound. Not a default for seed spices, flour, sauces or stock.",
+        "newRecordInRun2": true,
+        "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc"
+      },
+      "sourcePath": "docs/nutrition/gk80-release-6/sources.json",
+      "usedInActivePack": true
+    },
+    {
+      "origin": "gk80-release-6",
+      "record": {
+        "id": "dairy-imputation30",
+        "gi": 30,
+        "scale": "GLUCOSE_100",
+        "family": "dairy-code",
+        "food": "Unsweetened animal dairy coding assignment",
+        "evidenceKind": "PUBLISHED_IMPUTATION",
+        "sourceUrl": "https://doi.org/10.2337/dc08-1239",
+        "location": "Conclusions, low-carbohydrate product assignment",
+        "confidence": "LOW",
+        "limitations": "Not tested cream, cheese or butter. Excludes plant drinks and sweetened dairy.",
+        "evidenceHash": "18dd13349258a887809f1dec2abce637ce648b7d2f829c690243734139912850"
+      },
+      "sourcePath": "docs/nutrition/gk80-release-6/sources.json",
+      "usedInActivePack": true
+    },
+    {
+      "origin": "gk80-release-6",
+      "record": {
+        "id": "lowcho50-r6",
+        "gi": 50,
+        "scale": "GLUCOSE_100",
+        "family": "lowcho-code",
+        "food": "Named foods with <=5 g available CHO/100 g",
+        "evidenceKind": "PUBLISHED_IMPUTATION",
+        "sourceUrl": "https://doi.org/10.1016/j.jfca.2007.02.004",
+        "location": "Author presentation slide 12",
+        "confidence": "LOW",
+        "accessUrl": "https://pdfs.semanticscholar.org/eead/ef25b9a2d5c209deb31265082c85080758f4.pdf",
+        "documentSha256": "778292d5d11cfd377ea93f1927ba8205aa7aff0105d2345f458336bf8869d0f9",
+        "limitations": "Published low-carbohydrate default50, applied only to reviewed named compositions <=5 g available CHO/100g. This cutoff is a project rule, not a validated scientific threshold. Explicit AFCD commercial soy sauce and AFCD tahini plus complete Maille Dijon label are allowed, not all brands or pastes. No flour/sugar/honey/syrup or composition-unknown food.",
+        "allowedCompositionIds": [
+          "A002991-r6",
+          "A004729-r6",
+          "A005199-r6",
+          "A008004-r6",
+          "A008065-r6",
+          "F11557-r6",
+          "F29-r6",
+          "F7600-r6",
+          "F858-r6"
+        ],
+        "evidenceHash": "b831cb9118a8e0990b807a35aa80b854ec0c9ee0aeaf878dd32bb9f0f94fe86d"
+      },
+      "sourcePath": "docs/nutrition/gk80-release-6/sources.json",
+      "usedInActivePack": true
+    },
+    {
+      "origin": "gk80-release-6",
+      "record": {
+        "id": "small-flavour50-r6",
+        "gi": 50,
+        "scale": "GLUCOSE_100",
+        "family": "small-spice-extension",
+        "food": "Fixed weighed culinary ground spice, seed or vanilla extract",
+        "evidenceKind": "PUBLISHED_IMPUTATION",
+        "sourceUrl": "https://doi.org/10.1016/j.jfca.2007.02.004",
+        "location": "Explicit project extension of coding default, not directly published for these foods",
+        "confidence": "LOW",
+        "projectExtension": true,
+        "maxCarbohydratePerServing": 0.5,
+        "maxCumulativeCarbohydratePerServing": 1,
+        "limitations": "Own project extension of coding default, not measured food GI or directly published Schakel scope. Full composition and consumed grams mandatory; <=0.5 g CHO each and <=1 g aggregate per serving. Includes named vanilla extract, dried herbs and whole seed garnish. Excludes flour, baking powder, bulk paste, sugar, unknown extraction and sticks/pods. No biological error bound. USDA total-carbohydrate minus fibre is a disclosed available-CHO proxy; endogenous polyols unquantified, not asserted zero. This additional proxy use awaits owner method approval.",
+        "allowedCompositionIds": [
+          "A002258-r6",
+          "A002963-r6",
+          "A002970-r6",
+          "A003190-r6",
+          "A003327-r6",
+          "A006118-r6",
+          "A006316-r6",
+          "A006618-r6",
+          "A009335-r6",
+          "U170917-r6"
+        ],
+        "evidenceHash": "a62769b7d37e5f5160329e985610328c6a47cc6a004f7aeb9589e8943433e2c2"
+      },
+      "sourcePath": "docs/nutrition/gk80-release-6/sources.json",
+      "usedInActivePack": true
+    },
+    {
+      "origin": "gk80-release-6",
+      "record": {
+        "id": "whole-peanut13-r6",
+        "gi": 13,
+        "scale": "GLUCOSE_100",
+        "family": "WHOLE_PEANUT",
+        "food": "Whole peanuts, preparation unspecified; explicit analogy to roasted peanuts",
+        "evidenceKind": "HUMAN_GI",
+        "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+        "location": "2021 Supplement2 row3245, Canada1981; five healthy participants,25g available carbohydrate, glucose2h; GI13 SEM6. Table2 is lower-quality evidence; not a peanut butter value.",
+        "documentSha256": "af92f778e018a5b0779846cf756061370c674b386f7823d9917a505347a4ccba",
+        "originalStudyMetadataUrl": "https://pubmed.ncbi.nlm.nih.gov/6259925/",
+        "originalFullTextVerified": false,
+        "confidence": "LOW",
+        "limitations": "Small sample; preparation/roast unspecified; LOW applied whole-food analogy, not direct recipe GI. SEM6 is not a biological recipe range. No second glucose conversion.",
+        "evidenceHash": "2f3ab0a72d92b42d7fa5bf92ad19f7dfb4774f94b322b8d68cf1ffacbf226079"
+      },
+      "sourcePath": "docs/nutrition/gk80-release-6/sources.json",
+      "usedInActivePack": true
+    },
+    {
+      "origin": "gk80-release-7",
+      "record": {
+        "id": "vegetable-imputation40",
+        "gi": 40,
+        "scale": "GLUCOSE_100",
+        "family": "low-carb-vegetable",
+        "food": "Published assignment for low-carbohydrate vegetables, not measured food GI",
+        "evidenceKind": "PUBLISHED_IMPUTATION",
+        "sourceUrl": "https://doi.org/10.2337/dc08-1239",
+        "accessUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC2584181/fullTextXML",
+        "documentSha256": "b3738226fa546af99ac25e5e3fa106e86cd204445f9153ef5ee762cb25f3b25a",
+        "location": "Conclusions: assignment discussion",
+        "originalStudy": "Atkinson, Foster-Powell, Brand-Miller 2008",
+        "confidence": "LOW",
+        "limitations": "Coding estimate only. Application to named fresh herbs, sprouts and alliums is an explicit project interpretation. It does not establish a physiological maximum or a one-unit uncertainty bound. Not a default for seed spices, flour, sauces or stock.",
+        "newRecordInRun2": true,
+        "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc"
+      },
+      "sourcePath": "docs/nutrition/gk80-release-7/sources.json",
+      "usedInActivePack": true
+    },
+    {
+      "origin": "gk80-release-7",
+      "record": {
+        "id": "potato-boiled66-r5",
+        "gi": 66,
+        "scale": "GLUCOSE_100",
+        "family": "POTATO",
+        "food": "Potato, unspecified variety, boiled",
+        "evidenceKind": "HUMAN_GI",
+        "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+        "location": "Existing reviewed registry potato-boiled-china-gi-66",
+        "confidence": "LOW",
+        "limitations": "Named human food/preparation comparator applied as explicit LOW analogy. Not measured meal GI or a biological uncertainty bound; SEM/SD not a recipe range.",
+        "reviewedRegistryRecord": {
+          "id": "potato-boiled-china-gi-66",
+          "gi": 66,
+          "foodKey": "potato",
+          "preparationKey": "boiled-unspecified",
+          "food": "Potato, unspecified variety, boiled",
+          "preparation": "Boiled; China; test year 2005",
+          "qualityTier": "STRONG",
+          "referenceScale": "GLUCOSE_100",
+          "source": {
+            "title": "International tables of glycemic index and glycemic load values 2021: a systematic review",
+            "url": "https://doi.org/10.1093/ajcn/nqab233",
+            "table": "Supplemental Table 1, entry 1842",
+            "year": 2021,
+            "published": true,
+            "iso26642Confirmed": true,
+            "participants": 10,
+            "referenceFood": "Glucose",
+            "testDurationHours": 2,
+            "qualityEvidence": "Supplemental Table 1 is the review's ISO-methodology set; source row describes boiled, unspecified potato. GI is rounded to the table's reported integer."
+          },
+          "note": "Candidate only. Boiled potato does not match the recipe's covered, low-heat oil-cooked slices mixed with egg and pan-set as a tortilla."
+        },
+        "normalization": "Glucose scale already recorded; no second conversion",
+        "evidenceHash": "f25b18579925dbf83988b8c91ef3a90e8bc3336c40d2e3eafaba40b51796bd73"
+      },
+      "sourcePath": "docs/nutrition/gk80-release-7/sources.json",
+      "usedInActivePack": true
+    },
+    {
+      "origin": "gk80-release-7",
+      "record": {
+        "id": "lowcho50-r5",
+        "gi": 50,
+        "scale": "GLUCOSE_100",
+        "family": "lowcho-code",
+        "food": "Named foods with <=5 g available CHO/100 g",
+        "evidenceKind": "PUBLISHED_IMPUTATION",
+        "sourceUrl": "https://doi.org/10.1016/j.jfca.2007.02.004",
+        "location": "Author presentation slide 12",
+        "confidence": "LOW",
+        "accessUrl": "https://pdfs.semanticscholar.org/eead/ef25b9a2d5c209deb31265082c85080758f4.pdf",
+        "documentSha256": "778292d5d11cfd377ea93f1927ba8205aa7aff0105d2345f458336bf8869d0f9",
+        "limitations": "Published low-carbohydrate default50, applied only to reviewed named compositions <=5 g available CHO/100g. This cutoff is a project rule, not a validated scientific threshold. Explicit AFCD commercial soy sauce and AFCD tahini plus complete Maille Dijon label are allowed, not all brands or pastes. No flour/sugar/honey/syrup or composition-unknown food.",
+        "allowedCompositionIds": [
+          "A002991-r5",
+          "A004726-r5",
+          "A004729-r5",
+          "A005199-r5",
+          "A008065-r5",
+          "A008936-r5",
+          "F11048-r5",
+          "F11057-r5",
+          "F29-r5",
+          "F30369-r5",
+          "F7530-r5",
+          "F779-r5",
+          "F858-r5",
+          "F929-r5",
+          "maille-label-proxy"
+        ],
+        "evidenceHash": "8a6861520fba329dbf241b7af9f5a7dac13b7a67356990f3a0f5414f0a9c1288"
+      },
+      "sourcePath": "docs/nutrition/gk80-release-7/sources.json",
+      "usedInActivePack": true
+    },
+    {
+      "origin": "gk80-release-7",
+      "record": {
+        "id": "small-flavour50-r5",
+        "gi": 50,
+        "scale": "GLUCOSE_100",
+        "family": "small-spice-extension",
+        "food": "Fixed weighed culinary ground spice, seed or vanilla extract",
+        "evidenceKind": "PUBLISHED_IMPUTATION",
+        "sourceUrl": "https://doi.org/10.1016/j.jfca.2007.02.004",
+        "location": "Explicit project extension of coding default, not directly published for these foods",
+        "confidence": "LOW",
+        "projectExtension": true,
+        "maxCarbohydratePerServing": 0.5,
+        "maxCumulativeCarbohydratePerServing": 1,
+        "limitations": "Own project extension of coding default, not measured food GI or directly published Schakel scope. Full composition and consumed grams mandatory; <=0.5 g CHO each and <=1 g aggregate per serving. Includes named vanilla extract, dried herbs and whole seed garnish. Excludes flour, baking powder, bulk paste, sugar, unknown extraction and sticks/pods. No biological error bound. USDA total-carbohydrate minus fibre is a disclosed available-CHO proxy; endogenous polyols unquantified, not asserted zero. This additional proxy use awaits owner method approval.",
+        "allowedCompositionIds": [
+          "A002258-r5",
+          "A002893-r5",
+          "A002963-r5",
+          "A003190-r5",
+          "A003327-r5",
+          "A006281-r5",
+          "A006316-r5",
+          "A006618-r5",
+          "A008214-r5",
+          "A009160-r5",
+          "A009335-r5",
+          "F34245-r5",
+          "U170917-r5",
+          "U170928-r5",
+          "U171315-r5"
+        ],
+        "evidenceHash": "6a29f0c9ff97d7c1bc4dc3cc40f67a4822336b55da8535a117287b3f2338e927"
+      },
+      "sourcePath": "docs/nutrition/gk80-release-7/sources.json",
+      "usedInActivePack": true
+    },
+    {
+      "origin": "gk80-release-7",
+      "record": {
+        "id": "bulgur64_5-r5",
+        "gi": 64.5,
+        "scale": "GLUCOSE_100",
+        "family": "BULGUR",
+        "food": "Bulgur groats boiled15min until water absorbed",
+        "evidenceKind": "HUMAN_GI",
+        "sourceUrl": "https://doi.org/10.32394/rpzh.2020.0101",
+        "location": "Rozanska2020 Tables2/4; eight healthy volunteers; glucose50g/2h",
+        "confidence": "LOW",
+        "limitations": "Named human food/preparation comparator applied as explicit LOW analogy. Not measured meal GI or a biological uncertainty bound; SEM/SD not a recipe range.",
+        "cooking": "15min absorb all water, serve immediately; no cold-soaked fine-bulgur claim",
+        "statisticalUncertainty": {
+          "kind": "SD",
+          "value": 36.8,
+          "usedAsRecipeRange": false
+        },
+        "evidenceHash": "dcbe008d7fd818b1b19bb003c15bf774517099cf575c46442bb8e873d3d0cf5c"
+      },
+      "sourcePath": "docs/nutrition/gk80-release-7/sources.json",
+      "usedInActivePack": true
+    },
+    {
+      "origin": "gk80-release-7",
+      "record": {
+        "id": "dairy-imputation30",
+        "gi": 30,
+        "scale": "GLUCOSE_100",
+        "family": "dairy-code",
+        "food": "Unsweetened animal dairy coding assignment",
+        "evidenceKind": "PUBLISHED_IMPUTATION",
+        "sourceUrl": "https://doi.org/10.2337/dc08-1239",
+        "location": "Conclusions, low-carbohydrate product assignment",
+        "confidence": "LOW",
+        "limitations": "Not tested cream, cheese or butter. Excludes plant drinks and sweetened dairy.",
+        "evidenceHash": "18dd13349258a887809f1dec2abce637ce648b7d2f829c690243734139912850"
+      },
+      "sourcePath": "docs/nutrition/gk80-release-7/sources.json",
+      "usedInActivePack": true
+    },
+    {
+      "origin": "gk80-release-7",
+      "record": {
+        "id": "corn-tortilla52_4-r5",
+        "gi": 52.4,
+        "scale": "GLUCOSE_100",
+        "family": "CORN_TORTILLA",
+        "food": "Corn tortilla",
+        "evidenceKind": "HUMAN_GI",
+        "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/10824718/",
+        "location": "Existing reviewed registry corn-tortilla-noriega-2000-glucose-estimate",
+        "confidence": "LOW",
+        "limitations": "Named human food/preparation comparator applied as explicit LOW analogy. Not measured meal GI or a biological uncertainty bound; SEM/SD not a recipe range.",
+        "reviewedRegistryRecord": {
+          "id": "corn-tortilla-noriega-2000-glucose-estimate",
+          "gi": 52.4,
+          "foodKey": "corn-tortilla",
+          "preparationKey": "commercial-corn-tortilla",
+          "food": "Corn tortilla",
+          "preparation": "Commercial corn tortilla; studied value converted from bread-reference scale to glucose scale",
+          "qualityTier": "SUPPLEMENTARY",
+          "referenceScale": "GLUCOSE_100",
+          "matchKind": "EXACT",
+          "confidence": "LOW",
+          "source": {
+            "title": "Glycaemic and insulinaemic indices of Mexican foods high in complex carbohydrates",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/10824718/",
+            "table": "Abstract; corn tortilla GI 73.8 ± 6.5 with bread=100 reference; converted ×0.71 as described by International Tables 2021",
+            "year": 2000,
+            "published": true,
+            "iso26642Confirmed": false,
+            "participants": 8,
+            "referenceFood": "Bread",
+            "testDurationHours": 3,
+            "qualityEvidence": "Published human food test, but only eight healthy subjects and a bread reference were used; glucose-scale conversion is an estimate, not an ISO-confirmed row."
+          },
+          "note": "Single published regional study; conversion to glucose scale uses the 0.71 factor described in International Tables 2021. Low confidence."
+        },
+        "normalization": "Glucose scale already recorded; no second conversion",
+        "evidenceHash": "bd0b29dd318d75e3a5cb353e866c69a0cb62f4334d68f9a9788f796401493c85"
+      },
+      "sourcePath": "docs/nutrition/gk80-release-7/sources.json",
+      "usedInActivePack": true
+    },
+    {
+      "origin": "gk80-release-7",
+      "record": {
+        "id": "sweetcorn51-r5",
+        "gi": 51,
+        "scale": "GLUCOSE_100",
+        "family": "SWEET_CORN",
+        "food": "Sweet corn microwaved1.5min",
+        "evidenceKind": "HUMAN_GI",
+        "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+        "location": "Supplement1 row1801 p121 / row558 p39, 10 healthy adults, glucose2h",
+        "confidence": "LOW",
+        "limitations": "Named human food/preparation comparator applied as explicit LOW analogy. Not measured meal GI or a biological uncertainty bound; SEM/SD not a recipe range.",
+        "documentSha256": "69deea1d1229c1d06f25bb8ff27b19e6003b63f39c6aec25cffb8bc99475122a",
+        "evidenceHash": "dcd56790c144eb062bc05b00aba3a85478f6197dbb1c9cf898ee0ee6171cecb8"
+      },
+      "sourcePath": "docs/nutrition/gk80-release-7/sources.json",
+      "usedInActivePack": true
+    },
+    {
+      "origin": "gk80-release-7",
+      "record": {
+        "id": "rice-jasmine68",
+        "gi": 68,
+        "family": "rice-grain",
+        "food": "jasmine rice",
+        "preparation": "cooked rice as specified in Venn2014; no cooled-rice claim",
+        "sourceUrl": "https://doi.org/10.1186/1475-2891-13-50",
+        "originalStudy": "Venn2014 PMID24885045 PMC4047427",
+        "location": "Table2 European cohort glucose-reference column",
+        "accessUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4047427/fullTextXML",
+        "documentSha256": "c4342f41f5c5478e1c9e9baaf257c480e885f8eb064ecf53fa053d0ab55585c8",
+        "scale": "GLUCOSE_100",
+        "referenceFood": "Glucose",
+        "participants": 31,
+        "statisticalUncertainty": {
+          "kind": "95%CI",
+          "usedAsRecipeRange": false
+        },
+        "limitations": "European cohort selected consistently, not pooled with Chinese cohort. Other cohort means and CIs are not food-preparation bounds. Brown sugar is only an applied sucrose-dominant analogy.",
+        "confidence": "LOW",
+        "allowedUse": "Named grain-rice or sucrose applications only",
+        "newRecord": true,
+        "evidenceHash": "3ecc3f0a5f8206b53edb3b53c56e2dd317df7bfcfe159254bd488b93a4f4c2b0"
+      },
+      "sourcePath": "docs/nutrition/gk80-release-7/sources.json",
+      "usedInActivePack": true
+    },
+    {
+      "origin": "gk80-release-7",
+      "record": {
+        "id": "lentil-mean32",
+        "gi": 32,
+        "scale": "GLUCOSE_100",
+        "family": "cooked-lentil",
+        "food": "Boiled lentils, food-specific mean",
+        "evidenceKind": "HUMAN_GI",
+        "sourceUrl": "https://doi.org/10.2337/dc08-1239",
+        "location": "Table 1 food-specific means; not SEM as range",
+        "confidence": "LOW",
+        "limitations": "Applied food/preparation analogue; generic composition separately sourced. Not a broad all-legume or all-grain mean.",
+        "evidenceHash": "0986393e2ccc72660695cb00ec6550bf6ab7696957b37354ed35457b241534d3"
+      },
+      "sourcePath": "docs/nutrition/gk80-release-7/sources.json",
+      "usedInActivePack": true
+    },
+    {
+      "origin": "gk80-release-7",
+      "record": {
+        "id": "pasta-mean49",
+        "gi": 49,
+        "scale": "GLUCOSE_100",
+        "family": "wheat-pasta",
+        "food": "White spaghetti, food-specific mean",
+        "evidenceKind": "HUMAN_GI",
+        "sourceUrl": "https://doi.org/10.2337/dc08-1239",
+        "location": "Table 1 food-specific means; not SEM as range",
+        "confidence": "LOW",
+        "limitations": "Applied food/preparation analogue; generic composition separately sourced. Not a broad all-legume or all-grain mean.",
+        "evidenceHash": "e971485deadcfa73418ca97b974a6fc495f6a5ec6e77faaa6f2bbfaa98d19f13"
+      },
+      "sourcePath": "docs/nutrition/gk80-release-7/sources.json",
+      "usedInActivePack": true
+    },
+    {
+      "origin": "gk80-release-7",
+      "record": {
+        "id": "peas42-r5",
+        "gi": 42,
+        "scale": "GLUCOSE_100",
+        "family": "GREEN_PEA",
+        "food": "Frozen green peas heated in microwave, McCain Australia",
+        "evidenceKind": "HUMAN_GI",
+        "sourceUrl": "https://doi.org/10.1093/ajcn/nqab233",
+        "location": "Supplement1 row1798 p120; 10 healthy adults, glucose2h",
+        "confidence": "LOW",
+        "limitations": "Named human food/preparation comparator applied as explicit LOW analogy. Not measured meal GI or a biological uncertainty bound; SEM/SD not a recipe range.",
+        "documentSha256": "69deea1d1229c1d06f25bb8ff27b19e6003b63f39c6aec25cffb8bc99475122a",
+        "evidenceHash": "57fa8b80740ce65e6cd704f8f1055db2f5931ff8cbcd9e7da0ac4ae1143dba9a"
+      },
+      "sourcePath": "docs/nutrition/gk80-release-7/sources.json",
+      "usedInActivePack": true
+    },
+    {
+      "origin": "recoveryC:uunikanapasta-kesakurpitsa",
+      "record": {
+        "id": "vegetable-imputation40",
+        "gi": 40,
+        "scale": "GLUCOSE_100",
+        "family": "low-carb-vegetable",
+        "food": "Published assignment for low-carbohydrate vegetables, not measured food GI",
+        "evidenceKind": "PUBLISHED_IMPUTATION",
+        "sourceUrl": "https://doi.org/10.2337/dc08-1239",
+        "accessUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC2584181/fullTextXML",
+        "documentSha256": "b3738226fa546af99ac25e5e3fa106e86cd204445f9153ef5ee762cb25f3b25a",
+        "location": "Conclusions: assignment discussion",
+        "originalStudy": "Atkinson, Foster-Powell, Brand-Miller 2008",
+        "confidence": "LOW",
+        "limitations": "Coding estimate only. Application to named fresh herbs, sprouts and alliums is an explicit project interpretation. It does not establish a physiological maximum or a one-unit uncertainty bound. Not a default for seed spices, flour, sauces or stock.",
+        "newRecordInRun2": true,
+        "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc"
+      },
+      "sourcePath": "docs/nutrition/calculations/uunikanapasta-kesakurpitsa.json",
+      "usedInActivePack": true,
+      "scopedRecipeIds": [
+        "uunikanapasta-kesakurpitsa"
+      ]
+    },
+    {
+      "origin": "recoveryC:uunikanapasta-kesakurpitsa",
+      "record": {
+        "id": "dairy-imputation30",
+        "gi": 30,
+        "scale": "GLUCOSE_100",
+        "family": "dairy-code",
+        "food": "Unsweetened animal dairy coding assignment",
+        "evidenceKind": "PUBLISHED_IMPUTATION",
+        "sourceUrl": "https://doi.org/10.2337/dc08-1239",
+        "location": "Conclusions, low-carbohydrate product assignment",
+        "confidence": "LOW",
+        "limitations": "Not tested cream, cheese or butter. Excludes plant drinks and sweetened dairy.",
+        "evidenceHash": "18dd13349258a887809f1dec2abce637ce648b7d2f829c690243734139912850"
+      },
+      "sourcePath": "docs/nutrition/calculations/uunikanapasta-kesakurpitsa.json",
+      "usedInActivePack": true,
+      "scopedRecipeIds": [
+        "uunikanapasta-kesakurpitsa"
+      ]
+    },
+    {
+      "origin": "recoveryC:uunikanapasta-kesakurpitsa",
+      "record": {
+        "id": "lowcho50-r4",
+        "gi": 50,
+        "scale": "GLUCOSE_100",
+        "family": "lowcho-code",
+        "food": "Named foods with <=5 g available CHO/100 g",
+        "evidenceKind": "PUBLISHED_IMPUTATION",
+        "sourceUrl": "https://doi.org/10.1016/j.jfca.2007.02.004",
+        "location": "Author presentation slide 12",
+        "confidence": "LOW",
+        "accessUrl": "https://pdfs.semanticscholar.org/eead/ef25b9a2d5c209deb31265082c85080758f4.pdf",
+        "documentSha256": "778292d5d11cfd377ea93f1927ba8205aa7aff0105d2345f458336bf8869d0f9",
+        "limitations": "Published low-carbohydrate default50, applied only to reviewed named compositions <=5 g available CHO/100g. This cutoff is a project rule, not a validated scientific threshold. Explicit AFCD commercial soy sauce and AFCD tahini plus complete Maille Dijon label are allowed, not all brands or pastes. No flour/sugar/honey/syrup or composition-unknown food.",
+        "allowedCompositionIds": [
+          "recovery01-fineli-11134-web-table-20261101"
+        ],
+        "closedRecipeScope": "uunikanapasta-kesakurpitsa",
+        "approvedProposalFingerprint": "e1f620de4ef73f347ddff4c14e41dadb1acf9b8282b7761404865491b415cc07",
+        "evidenceHash": "09f9fbd33d1e2b0eef9c9d56534cf151807bc14d846234ebe43aaf4384f8efdd"
+      },
+      "sourcePath": "docs/nutrition/calculations/uunikanapasta-kesakurpitsa.json",
+      "usedInActivePack": true,
+      "scopedRecipeIds": [
+        "uunikanapasta-kesakurpitsa"
+      ]
+    },
+    {
+      "origin": "recoveryC:uunikanapasta-kesakurpitsa",
+      "record": {
+        "id": "small-flavour50-r4",
+        "gi": 50,
+        "scale": "GLUCOSE_100",
+        "family": "small-spice-extension",
+        "food": "Fixed weighed culinary ground spice, seed or vanilla extract",
+        "evidenceKind": "PUBLISHED_IMPUTATION",
+        "sourceUrl": "https://doi.org/10.1016/j.jfca.2007.02.004",
+        "location": "Explicit project extension of coding default, not directly published for these foods",
+        "confidence": "LOW",
+        "projectExtension": true,
+        "maxCarbohydratePerServing": 0.5,
+        "maxCumulativeCarbohydratePerServing": 1,
+        "limitations": "Own project extension of coding default, not measured food GI or directly published Schakel scope. Full composition and consumed grams mandatory; <=0.5 g CHO each and <=1 g aggregate per serving. Includes named vanilla extract, dried herbs and whole seed garnish. Excludes flour, baking powder, bulk paste, sugar, unknown extraction and sticks/pods. No biological error bound.",
+        "allowedCompositionIds": [
+          "afcd-F002258-release-3-e23045e9",
+          "afcd-F002963-release-3-675e24d6",
+          "afcd-F003190-release-3-75db5621",
+          "afcd-F003327-release-3-66a5ea67",
+          "afcd-F006281-release-3-6c6c6bfe",
+          "afcd-F006316-release-3-c369b734",
+          "afcd-F006618-release-3-a814ab84",
+          "afcd-F008214-release-3-82a89f38",
+          "afcd-F009160-r4",
+          "afcd-F009160-release-3-88061dcd",
+          "afcd-F009335-release-3-34c60a8e",
+          "afcd-F009350-release-3-2181fb59",
+          "fineli-34245-release-20-60090bb3"
+        ],
+        "evidenceHash": "8daa54a7a72b78c45e25da32e9b2f72ddc1e720bd6e12b5468cea0aa0ecf067a"
+      },
+      "sourcePath": "docs/nutrition/calculations/uunikanapasta-kesakurpitsa.json",
+      "usedInActivePack": true,
+      "scopedRecipeIds": [
+        "uunikanapasta-kesakurpitsa"
+      ]
+    },
+    {
+      "origin": "scopedPolyolC:jauheliha-kaalikeitto-vhh",
+      "record": {
+        "id": "vegetable-imputation40",
+        "gi": 40,
+        "scale": "GLUCOSE_100",
+        "family": "low-carb-vegetable",
+        "food": "Published assignment for low-carbohydrate vegetables, not measured food GI",
+        "evidenceKind": "PUBLISHED_IMPUTATION",
+        "sourceUrl": "https://doi.org/10.2337/dc08-1239",
+        "accessUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC2584181/fullTextXML",
+        "documentSha256": "b3738226fa546af99ac25e5e3fa106e86cd204445f9153ef5ee762cb25f3b25a",
+        "location": "Conclusions: assignment discussion",
+        "originalStudy": "Atkinson, Foster-Powell, Brand-Miller 2008",
+        "confidence": "LOW",
+        "limitations": "Coding estimate only. Application to named fresh herbs, sprouts and alliums is an explicit project interpretation. It does not establish a physiological maximum or a one-unit uncertainty bound. Not a default for seed spices, flour, sauces or stock.",
+        "newRecordInRun2": true,
+        "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc"
+      },
+      "sourcePath": "docs/nutrition/calculations/jauheliha-kaalikeitto-vhh.json",
+      "usedInActivePack": true,
+      "scopedRecipeIds": [
+        "jauheliha-kaalikeitto-vhh"
+      ]
+    },
+    {
+      "origin": "scopedPolyolC:jauheliha-kaalikeitto-vhh",
+      "record": {
+        "id": "lowcho50-r5",
+        "gi": 50,
+        "scale": "GLUCOSE_100",
+        "family": "lowcho-code",
+        "food": "Named foods with <=5 g available CHO/100 g",
+        "evidenceKind": "PUBLISHED_IMPUTATION",
+        "sourceUrl": "https://doi.org/10.1016/j.jfca.2007.02.004",
+        "location": "Author presentation slide 12",
+        "confidence": "LOW",
+        "accessUrl": "https://pdfs.semanticscholar.org/eead/ef25b9a2d5c209deb31265082c85080758f4.pdf",
+        "documentSha256": "778292d5d11cfd377ea93f1927ba8205aa7aff0105d2345f458336bf8869d0f9",
+        "limitations": "Published low-carbohydrate default50, applied only to reviewed named compositions <=5 g available CHO/100g. This cutoff is a project rule, not a validated scientific threshold. Explicit AFCD commercial soy sauce and AFCD tahini plus complete Maille Dijon label are allowed, not all brands or pastes. No flour/sugar/honey/syrup or composition-unknown food.",
+        "allowedCompositionIds": [
+          "A002991-r5",
+          "A004726-r5",
+          "A004729-r5",
+          "A005199-r5",
+          "A008065-r5",
+          "A008936-r5",
+          "F11048-r5",
+          "F11057-r5",
+          "F29-r5",
+          "F30369-r5",
+          "F7530-r5",
+          "F779-r5",
+          "F858-r5",
+          "F929-r5",
+          "maille-label-proxy"
+        ],
+        "evidenceHash": "8a6861520fba329dbf241b7af9f5a7dac13b7a67356990f3a0f5414f0a9c1288"
+      },
+      "sourcePath": "docs/nutrition/calculations/jauheliha-kaalikeitto-vhh.json",
+      "usedInActivePack": true,
+      "scopedRecipeIds": [
+        "jauheliha-kaalikeitto-vhh"
+      ]
+    },
+    {
+      "origin": "scopedPolyolC:jauheliha-kaalikeitto-vhh",
+      "record": {
+        "id": "small-flavour50-r5",
+        "gi": 50,
+        "scale": "GLUCOSE_100",
+        "family": "small-spice-extension",
+        "food": "Fixed weighed culinary ground spice, seed or vanilla extract",
+        "evidenceKind": "PUBLISHED_IMPUTATION",
+        "sourceUrl": "https://doi.org/10.1016/j.jfca.2007.02.004",
+        "location": "Explicit project extension of coding default, not directly published for these foods",
+        "confidence": "LOW",
+        "projectExtension": true,
+        "maxCarbohydratePerServing": 0.5,
+        "maxCumulativeCarbohydratePerServing": 1,
+        "limitations": "Own project extension of coding default, not measured food GI or directly published Schakel scope. Full composition and consumed grams mandatory; <=0.5 g CHO each and <=1 g aggregate per serving. Includes named vanilla extract, dried herbs and whole seed garnish. Excludes flour, baking powder, bulk paste, sugar, unknown extraction and sticks/pods. No biological error bound. USDA total-carbohydrate minus fibre is a disclosed available-CHO proxy; endogenous polyols unquantified, not asserted zero. This additional proxy use awaits owner method approval.",
+        "allowedCompositionIds": [
+          "A002258-r5",
+          "A002893-r5",
+          "A002963-r5",
+          "A003190-r5",
+          "A003327-r5",
+          "A006281-r5",
+          "A006316-r5",
+          "A006618-r5",
+          "A008214-r5",
+          "A009160-r5",
+          "A009335-r5",
+          "F34245-r5",
+          "U170917-r5",
+          "U170928-r5",
+          "U171315-r5"
+        ],
+        "evidenceHash": "6a29f0c9ff97d7c1bc4dc3cc40f67a4822336b55da8535a117287b3f2338e927"
+      },
+      "sourcePath": "docs/nutrition/calculations/jauheliha-kaalikeitto-vhh.json",
+      "usedInActivePack": true,
+      "scopedRecipeIds": [
+        "jauheliha-kaalikeitto-vhh"
+      ]
+    },
+    {
+      "origin": "scopedPolyolC:jauheliha-kaalikeitto-vhh",
+      "record": {
+        "id": "marjoram50-polyoli02-source-substitution",
+        "gi": 50,
+        "scale": "GLUCOSE_100",
+        "family": "small-spice-extension",
+        "food": "Fixed weighed culinary ground spice, seed or vanilla extract",
+        "evidenceKind": "PUBLISHED_IMPUTATION",
+        "sourceUrl": "https://doi.org/10.1016/j.jfca.2007.02.004",
+        "location": "Explicit project extension of coding default, not directly published for these foods",
+        "confidence": "LOW",
+        "projectExtension": true,
+        "maxCarbohydratePerServing": 0.5,
+        "maxCumulativeCarbohydratePerServing": 1,
+        "limitations": "Own project extension of coding default, not measured food GI or directly published Schakel scope. Full composition and consumed grams mandatory; <=0.5 g CHO each and <=1 g aggregate per serving. Includes named vanilla extract, dried herbs and whole seed garnish. Excludes flour, baking powder, bulk paste, sugar, unknown extraction and sticks/pods. No biological error bound. USDA total-carbohydrate minus fibre is a disclosed available-CHO proxy; endogenous polyols unquantified, not asserted zero. This additional proxy use awaits owner method approval.",
+        "allowedCompositionIds": [
+          "norway-06.186-polyoli02-20261101"
+        ],
+        "recipeScope": [
+          "jauheliha-kaalikeitto-vhh",
+          "vhh-kaalilaatikko"
+        ],
+        "applicationNote": "Owner-approved GI50 project assumption for the named dried-marjoram versions only; not a measured marjoram GI.",
+        "evidenceHash": "b5981bbf999790ae431bf6072cc1152da873973e9caa650c2db68c93b89097ca"
+      },
+      "sourcePath": "docs/nutrition/calculations/jauheliha-kaalikeitto-vhh.json",
+      "usedInActivePack": true,
+      "scopedRecipeIds": [
+        "jauheliha-kaalikeitto-vhh"
+      ]
+    },
+    {
+      "origin": "scopedPolyolC:vhh-kaalilaatikko",
+      "record": {
+        "id": "vegetable-imputation40",
+        "gi": 40,
+        "scale": "GLUCOSE_100",
+        "family": "low-carb-vegetable",
+        "food": "Published assignment for low-carbohydrate vegetables, not measured food GI",
+        "evidenceKind": "PUBLISHED_IMPUTATION",
+        "sourceUrl": "https://doi.org/10.2337/dc08-1239",
+        "accessUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC2584181/fullTextXML",
+        "documentSha256": "b3738226fa546af99ac25e5e3fa106e86cd204445f9153ef5ee762cb25f3b25a",
+        "location": "Conclusions: assignment discussion",
+        "originalStudy": "Atkinson, Foster-Powell, Brand-Miller 2008",
+        "confidence": "LOW",
+        "limitations": "Coding estimate only. Application to named fresh herbs, sprouts and alliums is an explicit project interpretation. It does not establish a physiological maximum or a one-unit uncertainty bound. Not a default for seed spices, flour, sauces or stock.",
+        "newRecordInRun2": true,
+        "evidenceHash": "3f8f79331d7069a683d50c48aa45860e4fc94d6dc20ee85e5a4e341927cf27bc"
+      },
+      "sourcePath": "docs/nutrition/calculations/vhh-kaalilaatikko.json",
+      "usedInActivePack": true,
+      "scopedRecipeIds": [
+        "vhh-kaalilaatikko"
+      ]
+    },
+    {
+      "origin": "scopedPolyolC:vhh-kaalilaatikko",
+      "record": {
+        "id": "dairy-imputation30",
+        "gi": 30,
+        "scale": "GLUCOSE_100",
+        "family": "dairy-code",
+        "food": "Unsweetened animal dairy coding assignment",
+        "evidenceKind": "PUBLISHED_IMPUTATION",
+        "sourceUrl": "https://doi.org/10.2337/dc08-1239",
+        "location": "Conclusions, low-carbohydrate product assignment",
+        "confidence": "LOW",
+        "limitations": "Not tested cream, cheese or butter. Excludes plant drinks and sweetened dairy.",
+        "evidenceHash": "18dd13349258a887809f1dec2abce637ce648b7d2f829c690243734139912850"
+      },
+      "sourcePath": "docs/nutrition/calculations/vhh-kaalilaatikko.json",
+      "usedInActivePack": true,
+      "scopedRecipeIds": [
+        "vhh-kaalilaatikko"
+      ]
+    },
+    {
+      "origin": "scopedPolyolC:vhh-kaalilaatikko",
+      "record": {
+        "id": "lowcho50-r5",
+        "gi": 50,
+        "scale": "GLUCOSE_100",
+        "family": "lowcho-code",
+        "food": "Named foods with <=5 g available CHO/100 g",
+        "evidenceKind": "PUBLISHED_IMPUTATION",
+        "sourceUrl": "https://doi.org/10.1016/j.jfca.2007.02.004",
+        "location": "Author presentation slide 12",
+        "confidence": "LOW",
+        "accessUrl": "https://pdfs.semanticscholar.org/eead/ef25b9a2d5c209deb31265082c85080758f4.pdf",
+        "documentSha256": "778292d5d11cfd377ea93f1927ba8205aa7aff0105d2345f458336bf8869d0f9",
+        "limitations": "Published low-carbohydrate default50, applied only to reviewed named compositions <=5 g available CHO/100g. This cutoff is a project rule, not a validated scientific threshold. Explicit AFCD commercial soy sauce and AFCD tahini plus complete Maille Dijon label are allowed, not all brands or pastes. No flour/sugar/honey/syrup or composition-unknown food.",
+        "allowedCompositionIds": [
+          "A002991-r5",
+          "A004726-r5",
+          "A004729-r5",
+          "A005199-r5",
+          "A008065-r5",
+          "A008936-r5",
+          "F11048-r5",
+          "F11057-r5",
+          "F29-r5",
+          "F30369-r5",
+          "F7530-r5",
+          "F779-r5",
+          "F858-r5",
+          "F929-r5",
+          "maille-label-proxy"
+        ],
+        "evidenceHash": "8a6861520fba329dbf241b7af9f5a7dac13b7a67356990f3a0f5414f0a9c1288"
+      },
+      "sourcePath": "docs/nutrition/calculations/vhh-kaalilaatikko.json",
+      "usedInActivePack": true,
+      "scopedRecipeIds": [
+        "vhh-kaalilaatikko"
+      ]
+    },
+    {
+      "origin": "scopedPolyolC:vhh-kaalilaatikko",
+      "record": {
+        "id": "small-flavour50-r5",
+        "gi": 50,
+        "scale": "GLUCOSE_100",
+        "family": "small-spice-extension",
+        "food": "Fixed weighed culinary ground spice, seed or vanilla extract",
+        "evidenceKind": "PUBLISHED_IMPUTATION",
+        "sourceUrl": "https://doi.org/10.1016/j.jfca.2007.02.004",
+        "location": "Explicit project extension of coding default, not directly published for these foods",
+        "confidence": "LOW",
+        "projectExtension": true,
+        "maxCarbohydratePerServing": 0.5,
+        "maxCumulativeCarbohydratePerServing": 1,
+        "limitations": "Own project extension of coding default, not measured food GI or directly published Schakel scope. Full composition and consumed grams mandatory; <=0.5 g CHO each and <=1 g aggregate per serving. Includes named vanilla extract, dried herbs and whole seed garnish. Excludes flour, baking powder, bulk paste, sugar, unknown extraction and sticks/pods. No biological error bound. USDA total-carbohydrate minus fibre is a disclosed available-CHO proxy; endogenous polyols unquantified, not asserted zero. This additional proxy use awaits owner method approval.",
+        "allowedCompositionIds": [
+          "A002258-r5",
+          "A002893-r5",
+          "A002963-r5",
+          "A003190-r5",
+          "A003327-r5",
+          "A006281-r5",
+          "A006316-r5",
+          "A006618-r5",
+          "A008214-r5",
+          "A009160-r5",
+          "A009335-r5",
+          "F34245-r5",
+          "U170917-r5",
+          "U170928-r5",
+          "U171315-r5"
+        ],
+        "evidenceHash": "6a29f0c9ff97d7c1bc4dc3cc40f67a4822336b55da8535a117287b3f2338e927"
+      },
+      "sourcePath": "docs/nutrition/calculations/vhh-kaalilaatikko.json",
+      "usedInActivePack": true,
+      "scopedRecipeIds": [
+        "vhh-kaalilaatikko"
+      ]
+    },
+    {
+      "origin": "scopedPolyolC:vhh-kaalilaatikko",
+      "record": {
+        "id": "marjoram50-polyoli02-source-substitution",
+        "gi": 50,
+        "scale": "GLUCOSE_100",
+        "family": "small-spice-extension",
+        "food": "Fixed weighed culinary ground spice, seed or vanilla extract",
+        "evidenceKind": "PUBLISHED_IMPUTATION",
+        "sourceUrl": "https://doi.org/10.1016/j.jfca.2007.02.004",
+        "location": "Explicit project extension of coding default, not directly published for these foods",
+        "confidence": "LOW",
+        "projectExtension": true,
+        "maxCarbohydratePerServing": 0.5,
+        "maxCumulativeCarbohydratePerServing": 1,
+        "limitations": "Own project extension of coding default, not measured food GI or directly published Schakel scope. Full composition and consumed grams mandatory; <=0.5 g CHO each and <=1 g aggregate per serving. Includes named vanilla extract, dried herbs and whole seed garnish. Excludes flour, baking powder, bulk paste, sugar, unknown extraction and sticks/pods. No biological error bound. USDA total-carbohydrate minus fibre is a disclosed available-CHO proxy; endogenous polyols unquantified, not asserted zero. This additional proxy use awaits owner method approval.",
+        "allowedCompositionIds": [
+          "norway-06.186-polyoli02-20261101"
+        ],
+        "recipeScope": [
+          "jauheliha-kaalikeitto-vhh",
+          "vhh-kaalilaatikko"
+        ],
+        "applicationNote": "Owner-approved GI50 project assumption for the named dried-marjoram versions only; not a measured marjoram GI.",
+        "evidenceHash": "b5981bbf999790ae431bf6072cc1152da873973e9caa650c2db68c93b89097ca"
+      },
+      "sourcePath": "docs/nutrition/calculations/vhh-kaalilaatikko.json",
+      "usedInActivePack": true,
+      "scopedRecipeIds": [
+        "vhh-kaalilaatikko"
+      ]
+    }
+  ]
+}
