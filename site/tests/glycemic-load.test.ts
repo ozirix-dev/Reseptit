@@ -84,8 +84,13 @@ async function historicalSourceReviewView(name:string,value:any):Promise<any>{
   const next=JSON.parse(await actualReadFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-release-5/main-baseline.json'),'utf8'));value={...value,results:value.results.map((r:any)=>next.selectedResults.find((x:any)=>x.recipeId===r.recipeId)??r),sourceHashes:{...value.sourceHashes,...next.sourceHashes}};
   const nextIds=new Set(next.selectedResults.map((r:any)=>r.recipeId));for(const key of ['recipeBindingMismatches','calculationInputMismatches','calculationEvidenceMismatches'])value[key]=[...value[key].filter((id:string)=>!nextIds.has(id)),...next[key].filter((id:string)=>nextIds.has(id))].sort();
   const old=await gk80HistoricalPromise;const ids=new Set(old.results.map((r:any)=>r.recipeId));
+  // The P1 coconut correction deliberately changes only two previously blocked legacy inputs.
+  // Compare historical batches without these new HOLD exceptions; the dedicated P1 test below
+  // independently checks their live source identity, unknown carbohydrate and blocked status.
+  const p1CoconutHoldIds=new Set(['kookos-lime-kanacurry','sate-ayam']);
   for(const key of ['recipeBindingMismatches','calculationInputMismatches','calculationEvidenceMismatches']){
-    assert.deepEqual(value[key].filter((id:string)=>!ids.has(id)),old[key].filter((id:string)=>!ids.has(id)),`${key}: non-candidate recipes unchanged`);
+    const notHistoricalOrP1=(id:string)=>!ids.has(id)&&!p1CoconutHoldIds.has(id);
+    assert.deepEqual(value[key].filter(notHistoricalOrP1),old[key].filter(notHistoricalOrP1),`${key}: non-candidate recipes unchanged`);
   }
   return {...value,results:value.results.map((r:any)=>old.results.find((x:any)=>x.recipeId===r.recipeId)??r),
     sourceHashes:{...value.sourceHashes,...old.sourceHashes},recipeBindingMismatches:old.recipeBindingMismatches,
