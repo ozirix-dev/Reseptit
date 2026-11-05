@@ -53,4 +53,3 @@ Nämä ovat pysyvä viestisopimus. Käyttöliittymän kytkentä ja vanhojen
 julkaisujen luokkasiirrot toteutetaan erikseen katselmoidussa vaiheessa.
 Nykyisiä hyväksyntämanifesteja, tarkisteita tai tutkimushistoriaa ei kirjoiteta
 uudelleen. [15 ehdokkaan arvio ja kattavuuden korjaussuunnitelma](gk100-original-recipe-audit-2026-11-05.md)
-
