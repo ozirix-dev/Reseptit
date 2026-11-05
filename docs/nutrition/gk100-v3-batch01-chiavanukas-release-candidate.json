@@ -1,0 +1,160 @@
+{
+  "recipeId": "marjainen-chiavanukas",
+  "servings": 4,
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "unroundedGk": "1.442955",
+  "upperScenario": {
+    "giOverrides": [
+      {
+        "inputIndex": 1,
+        "gi": 53
+      }
+    ],
+    "unroundedGk": "1.6286925"
+  },
+  "preparation": {
+    "fi": "Sekoita {{amount:3}} g chiansiemeniä, {{amount:4}} ml makeuttamatonta Alpro-mantelijuomaa ja {{amount:5}} g vaniljauutetta. Sekoita 10 minuutin kuluttua ja jäähdytä vähintään neljä tuntia. Sekoita joukkoon {{amount:0}} g maustamatonta 7 % kreikkalaista jogurttia. Jaa {{servings}} annokseen ja lisää yhteensä {{amount:1}} g vadelmia ja {{amount:2}} g metsämustikoita. Jätä makeutus pois.",
+    "en": "Mix {{amount:3}} g chia seeds, {{amount:4}} ml unsweetened Alpro almond drink and {{amount:5}} g vanilla extract. Stir again after 10 minutes and refrigerate for at least four hours. Stir in {{amount:0}} g plain Greek yogurt with 7% fat. Divide into {{servings}} portions and top with a total of {{amount:1}} g raspberries and {{amount:2}} g bilberries. Leave out the sweetener.",
+    "sv": "Blanda {{amount:3}} g chiafrön, {{amount:4}} ml osötad Alpro-mandeldryck och {{amount:5}} g vaniljextrakt. Rör om efter 10 minuter och kyl i minst fyra timmar. Rör ner {{amount:0}} g naturell grekisk yoghurt med 7 % fett. Fördela i {{servings}} portioner och toppa med totalt {{amount:1}} g hallon och {{amount:2}} g skogsblåbär. Utelämna sötningsmedlet.",
+    "th": "ผสมเมล็ดเจีย {{amount:3}} กรัม เครื่องดื่มอัลมอนด์ Alpro ไม่เติมน้ำตาล {{amount:4}} มล. และสารสกัดวานิลลา {{amount:5}} กรัม คนอีกครั้งหลังผ่านไป 10 นาที แล้วแช่เย็นอย่างน้อย 4 ชั่วโมง ผสมกรีกโยเกิร์ตรสธรรมชาติไขมัน 7% {{amount:0}} กรัม แบ่งเป็น {{servings}} ส่วน โรยราสป์เบอร์รีรวม {{amount:1}} กรัมและบิลเบอร์รีรวม {{amount:2}} กรัม ไม่เติมสารให้ความหวาน"
+  },
+  "limitation": {
+    "fi": "Kaksi matalan luottamuksen skenaariota käyttävät vadelmalle mansikan tai kanadalaisen villimustikan GI:tä. Metsämustikalle käytetään villimustikan vertailua ja jogurtille maustamattoman jogurtin ryhmäkeskiarvoa. Chian, mantelijuoman ja vaniljan 0,2373 g saatavaa CHO:ta annosta kohti jää summan ulkopuolelle. Villimustikan koetuotteen tarkkaa tarjoilutilaa ei kuvata.",
+    "en": "The two low-confidence scenarios use strawberry or Canadian wild blueberry GI for raspberry. Bilberry uses the wild blueberry comparator, and the yogurt uses a plain-yogurt category average. The sum omits 0.2373 g available carbohydrate per serving from chia, almond drink and vanilla. The wild blueberry test record does not specify the exact serving state.",
+    "sv": "De två scenarierna med låg tillförlitlighet använder GI för jordgubbe eller kanadensiskt vilt blåbär för hallon. Skogsblåbär jämförs med vilt blåbär och yoghurten använder gruppens medelvärde för naturell yoghurt. Beräkningen utelämnar 0,2373 g tillgängliga kolhydrater per portion från chia, mandeldryck och vanilj. Testposten för vilda blåbär anger inte exakt serveringstillstånd.",
+    "th": "สองกรณีประมาณการที่มีความเชื่อมั่นต่ำใช้ค่า GI ของสตรอว์เบอร์รีหรือบลูเบอร์รีป่าแคนาดาแทนราสป์เบอร์รี ใช้บลูเบอร์รีป่าเป็นตัวเปรียบเทียบของบิลเบอร์รี และใช้ค่าเฉลี่ยกลุ่มโยเกิร์ตรสธรรมชาติ การคำนวณไม่นับคาร์โบไฮเดรตที่ย่อยได้จากเจีย เครื่องดื่มอัลมอนด์ และวานิลลารวม 0.2373 กรัมต่อส่วน ข้อมูลการทดสอบบลูเบอร์รีป่าไม่ได้ระบุสภาพที่เสิร์ฟอย่างละเอียด"
+  },
+  "ingredients": [
+    {
+      "grams": 100,
+      "name": {
+        "fi": "Maustamaton kreikkalainen jogurtti 7 %",
+        "en": "Plain Greek yogurt, 7% fat",
+        "sv": "Naturell grekisk yoghurt, 7 % fett",
+        "th": "กรีกโยเกิร์ตรสธรรมชาติ ไขมัน 7%"
+      }
+    },
+    {
+      "grams": 100,
+      "name": {
+        "fi": "Raa'at kokonaiset vadelmat",
+        "en": "Whole raw raspberries",
+        "sv": "Hela råa hallon",
+        "th": "ราสป์เบอร์รีสดทั้งผล"
+      }
+    },
+    {
+      "grams": 50,
+      "name": {
+        "fi": "Raa'at kokonaiset metsämustikat",
+        "en": "Whole raw bilberries",
+        "sv": "Hela råa skogsblåbär",
+        "th": "บิลเบอร์รีสดทั้งผล"
+      }
+    },
+    {
+      "grams": 45,
+      "name": {
+        "fi": "Chiansiemenet",
+        "en": "Chia seeds",
+        "sv": "Chiafrön",
+        "th": "เมล็ดเจีย"
+      }
+    },
+    {
+      "grams": null,
+      "name": {
+        "fi": "Makeuttamaton Alpro-mantelijuoma",
+        "en": "Unsweetened Alpro almond drink",
+        "sv": "Osötad Alpro-mandeldryck",
+        "th": "เครื่องดื่มอัลมอนด์ Alpro ไม่เติมน้ำตาล"
+      },
+      "quantity": {
+        "amount": 250,
+        "unit": "ml"
+      }
+    },
+    {
+      "grams": 4.2,
+      "name": {
+        "fi": "Vaniljauute",
+        "en": "Vanilla extract",
+        "sv": "Vaniljextrakt",
+        "th": "สารสกัดวานิลลา"
+      }
+    },
+    {
+      "grams": null,
+      "name": {
+        "fi": "Valinnainen makeutus, jätetään pois",
+        "en": "Optional sweetener, left out",
+        "sv": "Valfritt sötningsmedel, utelämnas",
+        "th": "สารให้ความหวาน ไม่ใส่ในสูตรนี้"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Atkinson et al. 2021, Supplemental Table 1, rows 1174 and 1092",
+      "url": "https://doi.org/10.1093/ajcn/nqab233",
+      "kind": "HUMAN_GI",
+      "note": "Raw strawberry GI 40 and Canadian wild blueberry GI 53 are on the table's glucose=100 scale. The blueberry test used bread as the reference. The underlying human observations are unpublished, the results are published in the supplement. Wild blueberry preparation at serving is unspecified and species differs from Finnish bilberry."
+    },
+    {
+      "title": "Wolever, 2017, Table 1",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28615381/",
+      "kind": "HUMAN_GI",
+      "note": "Category mean of 43 plain or artificially sweetened yogurt GI entries, 26.6 rounded to 27. Product-specific GI was not measured."
+    },
+    {
+      "title": "THL Fineli, FSANZ AFCD and USDA mass evidence",
+      "url": "https://github.com/ozirix-dev/Reseptit/blob/5cbd538587904fea02378a1773c2c8e1c24b6346/docs/research/gk80-international-20261102/breakfast-versions/chia-unsweetened-version.json",
+      "kind": "CARBOHYDRATE",
+      "note": "Pinned source file SHA-256 a3be56ae922d3f3a74636e72f913856c15b6115a1d91aea8e8767904423deab8; Fineli 34847, 34738, 34611, 448, 442 and AFCD F009350. USDA FDC 173471 supplies mass only."
+    }
+  ],
+  "inputs": [
+    [
+      100,
+      2.917,
+      27
+    ],
+    [
+      100,
+      5.715,
+      40
+    ],
+    [
+      50,
+      10.182,
+      53
+    ]
+  ],
+  "omissions": [
+    {
+      "ingredientIndex": 3,
+      "choPer100g": 0.2
+    },
+    {
+      "ingredientIndex": 4,
+      "choPer100ml": 0.132
+    },
+    {
+      "ingredientIndex": 5,
+      "choPer100g": 12.6
+    }
+  ],
+  "exclusions": [
+    {
+      "ingredientIndex": 6,
+      "kind": "ZERO_CHO",
+      "rationale": "Optional sweetener is not used in this version.",
+      "evidencePath": "docs/nutrition/gk100-v3-batch01-chiavanukas-review.md"
+    }
+  ],
+  "boundFiles": {
+    "reseptit/aamupalat/marjainen-chiavanukas.md": "c4c9c7a14345199304e7221fab28633a4a9abeffa3c99afc780cb5360824ec22",
+    "docs/nutrition/gk100-v3-batch01-chiavanukas-review.md": "5190b99784d3ed60b872a311a11041ba7a8bec7b96a3b47c584e4957c48c5a1b"
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "recipeId": "hyderabadi-kanabiryani",
+  "servings": 1,
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "unroundedGk": "26",
+  "preparation": {
+    "fi": "Vertailu koskee {{servings}} tutkimusannosta. Koeannos oli 253,9 g Arabiemiirikunnissa ravintolasta hankittua ja koeaamuna lämmitettyä kanabiryania sekä 200 ml juomavettä.",
+    "en": "This comparison covers {{servings}} study servings. The test serving was 253.9 g of restaurant chicken biryani from the United Arab Emirates, reheated on the morning of testing, with 200 ml of drinking water.",
+    "sv": "Jämförelsen gäller {{servings}} studieportioner. Testportionen var 253,9 g kycklingbiryani från en restaurang i Förenade arabemiraten, uppvärmd på testmorgonen, med 200 ml dricksvatten.",
+    "th": "ข้อมูลเปรียบเทียบนี้ใช้กับอาหารทดลอง {{servings}} ส่วน เป็นข้าวหมกไก่จากร้านอาหารในสหรัฐอาหรับเอมิเรตส์ 253.9 กรัม อุ่นในเช้าวันทดลอง และเสิร์ฟพร้อมน้ำดื่ม 200 มิลลิลิตร"
+  },
+  "limitation": {
+    "fi": "26 GK koskee Al Dhaherin ym. historiallista koeannosta, jossa oli 50 g saatavaa hiilihydraattia. Kotireseptissä riisi höyrytetään jogurttimarinoidun kanan päällä. Kotiversion GK edellyttää erillistä näyttöä.",
+    "en": "The GL of 26 applies to the historical test serving in Al Dhaheri et al., containing 50 g of available carbohydrate. In the home recipe the rice is steamed over yoghurt-marinated chicken. The home recipe requires separate GL evidence.",
+    "sv": "GB 26 gäller den historiska testportionen i Al Dhaheri med flera, med 50 g tillgängliga kolhydrater. I hemreceptet ångas riset ovanpå yoghurtmarinerad kyckling. Hemreceptets GB kräver separat underlag.",
+    "th": "ค่า GL 26 ใช้กับอาหารทดลองในอดีตของ Al Dhaheri และคณะ ซึ่งมีคาร์โบไฮเดรตที่ใช้ได้ 50 กรัม สูตรทำที่บ้านใช้วิธีนึ่งข้าวบนไก่ที่หมักโยเกิร์ต และต้องมีหลักฐานแยกต่างหากเพื่อระบุค่า GL"
+  },
+  "ingredients": [
+    {
+      "grams": 253.9,
+      "name": {
+        "fi": "Emiraattilainen ravintolakanabiryani, lämmitetty koeannos",
+        "en": "UAE restaurant chicken biryani, reheated test serving",
+        "sv": "Kycklingbiryani från en restaurang i Förenade arabemiraten, uppvärmd testportion",
+        "th": "ข้าวหมกไก่จากร้านอาหารในสหรัฐอาหรับเอมิเรตส์ ส่วนทดลองที่อุ่นแล้ว"
+      }
+    },
+    {
+      "grams": null,
+      "quantity": {
+        "amount": 200,
+        "unit": "ml"
+      },
+      "name": {
+        "fi": "Juomavesi",
+        "en": "Drinking water",
+        "sv": "Dricksvatten",
+        "th": "น้ำดื่ม"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Al Dhaheri et al. (2017), chicken biryani GI, Table 4",
+      "url": "https://www.cambridge.org/core/journals/british-journal-of-nutrition/article/glycaemic-index-and-glycaemic-load-values-of-commonly-consumed-foods-in-the-united-arab-emirates/0E4AAFD46B0BBAF5BBC36893B0BA0BCE",
+      "kind": "HUMAN_GI",
+      "note": "Glucose-reference GI 52 ± 4 SE in 15 healthy participants, with 2 h sampling and three reference tests."
+    },
+    {
+      "title": "Al Dhaheri et al. (2017), test portion, methods and Table 4",
+      "url": "https://www.cambridge.org/core/journals/british-journal-of-nutrition/article/glycaemic-index-and-glycaemic-load-values-of-commonly-consumed-foods-in-the-united-arab-emirates/0E4AAFD46B0BBAF5BBC36893B0BA0BCE",
+      "kind": "CARBOHYDRATE",
+      "note": "253.9 g experimental portion sized for 50 g available carbohydrate estimated by difference. The 261 g standard serving is separate. The test meal was served with 200 ml of plain water."
+    }
+  ],
+  "inputs": [
+    [
+      253.9,
+      19.692792437967704,
+      52
+    ]
+  ],
+  "exclusions": [
+    {
+      "ingredientIndex": 1,
+      "kind": "ZERO_CHO",
+      "rationale": "The 200 ml of plain drinking water contributes zero available carbohydrate.",
+      "evidencePath": "docs/nutrition/gk100-biryani-study-review.md"
+    }
+  ],
+  "boundFiles": {
+    "reseptit/paaruoat/hyderabadi-kanabiryani.md": "c3434af8d2dbd5b016f9afd18839fa778fb2a13d79c2cf0b9e4c2070d43367d9",
+    "docs/nutrition/gk100-biryani-study-review.md": "e3eef3f91e2bb8895acad3ea04109b65c7ca2c08747586c65cf2347e2f1a81ce"
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 1,
+  "batchId": "gk100-v3-eight-preparation",
+  "candidates": [
+    {
+      "recipeId": "marjainen-chiavanukas",
+      "packetPath": "docs/nutrition/gk100-v3-batch01-chiavanukas-release-candidate.json",
+      "classification": {
+        "candidateSha256": "70a36f5973951adfe93500908de00fa0454d2a8773007fdd9fb95105bf7518e3",
+        "risk": "HIGH",
+        "reasons": [
+          "Raw berry analogues and a plain-yogurt category mean are explicitly labelled. Three quantified omissions total 0.2373 g CHO per serving.",
+          "Independent Decimal arithmetic, source scope and FI/EN/SV/TH quantities are documented in the bound review."
+        ],
+        "contentChange": "GK_ONLY",
+        "contentSummary": "Makeuttamaton Alpro-mantelijuoma, maustamaton kreikkalainen 7 % jogurtti ja kaksi raakamarjojen vertailuskenaariota neljälle.",
+        "outcome": "OWNER_DECISION",
+        "review": {
+          "depth": "DEEP",
+          "evidence": "docs/nutrition/gk100-v3-batch01-chiavanukas-review.md"
+        }
+      }
+    },
+    {
+      "recipeId": "intialainen-aloo-paratha",
+      "packetPath": "docs/nutrition/gk100-aloo-paratha-study-release-candidate.json",
+      "classification": {
+        "risk": "HIGH",
+        "reasons": [
+          "Kokonaisen tutkimusannoksen GI ja saatava CHO ovat samasta kontrollista. CC BY 4.0. Kaikki leivän ainekset sisältyvät yhteen syötteeseen.",
+          "Taikinan tarkat suhteet, jauhotyyppi ja viiteglukoosin muoto jäävät avoimiksi. Neljä kieliversiota rajaavat arvion tutkimusannokseen ja erottavat jogurttia sisältävän kotitarjoilun."
+        ],
+        "contentChange": "GK_ONLY",
+        "contentSummary": "Erillinen 182 g:n perunaparathan tutkimusvertailu, jossa juomana on 250 ml vettä. Raportoitu GI 78,8 ja analysoitu 50,1 g saatavaa hiilihydraattia antavat noin 39,5 GK per tutkimusannos.",
+        "outcome": "OWNER_DECISION",
+        "review": {
+          "depth": "DEEP",
+          "evidence": "docs/nutrition/gk100-aloo-paratha-study-review.md"
+        },
+        "candidateSha256": "13af95c73778862bebc3f53546e1e551703eb5ccea25f4edb9a02ef1079ef671"
+      }
+    },
+    {
+      "recipeId": "hyderabadi-kanabiryani",
+      "packetPath": "docs/nutrition/gk100-biryani-study-release-candidate.json",
+      "classification": {
+        "risk": "HIGH",
+        "reasons": [
+          "GI, koeannoksen paino ja saatava CHO ovat samasta glukoosiviitteisestä ihmiskokeesta. Laskenta kattaa koko koeaterian juomavesineen.",
+          "Ravintolan nimeä ja ainesosien painoja ei ilmoitettu. Uudelleen lämmitetty ravintola-annos erotetaan tuoreesta kerroskypsennetystä kotireseptistä kaikissa neljässä kieliversiossa."
+        ],
+        "contentChange": "GK_ONLY",
+        "contentSummary": "Erillinen historiallinen emiraattilainen kanabiryanin tutkimusvertailu, 253,9 g ruokaa ja 200 ml vettä. GI 52 ja 50 g saatavaa hiilihydraattia antavat 26 GK.",
+        "outcome": "OWNER_DECISION",
+        "review": {
+          "depth": "DEEP",
+          "evidence": "docs/nutrition/gk100-biryani-study-review.md"
+        },
+        "candidateSha256": "318b2135bbef68aaa9f9ecfc78a6b3328884e38576f19a81c082b5b79a4c131d"
+      }
+    },
+    {
+      "recipeId": "indonesialainen-nasi-goreng-aamiaisriisi",
+      "packetPath": "docs/nutrition/gk100-nasi-goreng-study-release-candidate.json",
+      "classification": {
+        "risk": "HIGH",
+        "reasons": [
+          "GI ja hiilihydraattikuorma on rajattu samaan historialliseen koeannokseen.",
+          "Koeateriassa käytettiin osterikastiketta. Nimellinen 25 g ja taulukon 25,10 g:n koostumuslaskelma erotetaan."
+        ],
+        "contentChange": "GK_ONLY",
+        "contentSummary": "Erillinen 129 g:n paistetun jasmiiniriisin koeannos ja 220 ml vettä. Nimelliskuormalla GK 12,5.",
+        "outcome": "OWNER_DECISION",
+        "review": {
+          "depth": "DEEP",
+          "evidence": "docs/nutrition/gk100-rice-bun-study-review.md"
+        },
+        "candidateSha256": "39fc887532bb3f09e202bafb2b9894a25a38ef42a3ba7be62a5b2389ffdc09f3"
+      }
+    },
+    {
+      "recipeId": "baozi",
+      "packetPath": "docs/nutrition/gk100-baozi-study-release-candidate.json",
+      "classification": {
+        "risk": "HIGH",
+        "reasons": [
+          "GI ja hiilihydraattikuorma on rajattu samaan historialliseen koeannokseen.",
+          "Taulukon 2 GI 66 poikkeaa keskustelun luvusta 64. Kotireseptin porsas-kaalitäyte poikkeaa koetuotteesta."
+        ],
+        "contentChange": "GK_ONLY",
+        "contentSummary": "Erillinen 154,7 g:n char siew pau -koeannos ja 200 ml vettä. GK 33 taulukon 2 GI:llä.",
+        "outcome": "OWNER_DECISION",
+        "review": {
+          "depth": "DEEP",
+          "evidence": "docs/nutrition/gk100-rice-bun-study-review.md"
+        },
+        "candidateSha256": "f9ad785665885da39244532c41291b849c938c13a723dd4c7e50f1d3d027f57c"
+      }
+    },
+    {
+      "recipeId": "nasi-lemak",
+      "packetPath": "docs/nutrition/gk100-nasi-lemak-study-release-candidate.json",
+      "classification": {
+        "risk": "HIGH",
+        "reasons": [
+          "Koeannoksen GI ja saatava CHO ovat samasta ihmiskokeesta. Laskenta kattaa kokonaisen testiruoan ja juomaveden.",
+          "Historiallinen tuote on nimetty, mutta lisukepainot ja tuotekoodi puuttuvat. Nelikielinen rajaus erottaa koetuloksen kotireseptistä."
+        ],
+        "contentChange": "GK_ONLY",
+        "contentSummary": "Erillinen historiallinen Old Chang Kee -tutkimusannos, 179,2 g ja 200 ml vettä. GI 66 ja 50 g saatavaa hiilihydraattia antavat 33 GK.",
+        "outcome": "OWNER_DECISION",
+        "review": {
+          "depth": "DEEP",
+          "evidence": "docs/nutrition/gk100-nasi-lemak-study-review.md"
+        },
+        "candidateSha256": "77d770d3e21913949309feb75dbbc8d41c5ef21f6ff50ae5e90edfaaa1865764"
+      }
+    },
+    {
+      "recipeId": "meheva-suklaakakku",
+      "packetPath": "docs/nutrition/gk100-chocolate-cake-study-release-candidate.json",
+      "classification": {
+        "risk": "HIGH",
+        "reasons": [
+          "GI, saatava CHO sekä pohjan ja kuorrutteen painot ovat samasta glukoosiviitteisestä ihmiskokeesta.",
+          "Tulos rajataan historialliseen koeannokseen. Nykyisiä kakkutuotteita ja kotireseptiä ei sidota tutkimuksen tulokseen."
+        ],
+        "contentChange": "GK_ONLY",
+        "contentSummary": "Historiallinen kuorrutettu 107,2 g kakkupala ja 250 ml vettä. Nimellinen 50 g CHO ja GI 41 antavat 20,5 GK.",
+        "outcome": "OWNER_DECISION",
+        "review": {
+          "depth": "DEEP",
+          "evidence": "docs/nutrition/gk100-chocolate-cake-study-review.md"
+        },
+        "candidateSha256": "d033681b8541584d2b92b61f5b7f6a8563e79d4641471b07df57ff42d319fed4"
+      }
+    },
+    {
+      "recipeId": "tangyuan",
+      "packetPath": "docs/nutrition/gk100-tangyuan-study-release-candidate.json",
+      "classification": {
+        "risk": "HIGH",
+        "reasons": [
+          "Saatava hiilihydraatti, annospaino ja glukoosiviitteinen GI on sidottu samaan koeannokseen.",
+          "Rinnakkaisraportin GI poikkeaa ja täyte on yksilöimätön. Ehdotus koskee vain Chenin raportoimaa koeannosta."
+        ],
+        "contentChange": "GK_ONLY",
+        "contentSummary": "Historiallinen 115 g Lee Chun -riisipalloannos ja 250 ml vettä. 50 g saatavaa CHO:ta ja GI 61 antavat GK:n 30,5.",
+        "outcome": "OWNER_DECISION",
+        "review": {
+          "depth": "DEEP",
+          "evidence": "docs/nutrition/gk100-tangyuan-study-review.md"
+        },
+        "candidateSha256": "580ea679695009900d4e8b7f7247977018216b9c106c72a0a7dda691bb575f64"
+      }
+    }
+  ]
+}

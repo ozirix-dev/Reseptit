@@ -1,0 +1,76 @@
+{
+  "recipeId": "meheva-suklaakakku",
+  "servings": 1,
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "unroundedGk": "20.5",
+  "preparation": {
+    "fi": "Historiallinen vertailu koskee {{servings}} koeannosta. Siihen kuului 75,4 g paistettua Betty Crocker Chocolate Fudge Super Moist -kakkua, 31,8 g Creamy Deluxe Dark Dutch Fudge -kuorrutetta ja 250 ml vettä.",
+    "en": "This historical comparison covers {{servings}} test serving. It contained 75.4 g of baked Betty Crocker Chocolate Fudge Super Moist cake, 31.8 g of Creamy Deluxe Dark Dutch Fudge frosting and 250 ml of water.",
+    "sv": "Den historiska jämförelsen gäller {{servings}} testportion. Den innehöll 75,4 g gräddad Betty Crocker Chocolate Fudge Super Moist-kaka, 31,8 g Creamy Deluxe Dark Dutch Fudge-glasyr och 250 ml vatten.",
+    "th": "ข้อมูลเปรียบเทียบจากการศึกษาในอดีตนี้ใช้กับอาหารทดลอง {{servings}} ส่วน ประกอบด้วยเค้ก Betty Crocker Chocolate Fudge Super Moist ที่อบแล้ว 75.4 กรัม ครีมแต่งหน้า Creamy Deluxe Dark Dutch Fudge 31.8 กรัม และน้ำ 250 มิลลิลิตร"
+  },
+  "limitation": {
+    "fi": "GK 20,5 koskee vuoden 2003 kokeen kuorrutettua kakkupalaa. Nykyiset tuotteet ja kotitekoinen suklaakakku vaativat erillisen arvion.",
+    "en": "The GL of 20.5 applies to the frosted cake serving tested in 2003. Current products and the homemade chocolate cake require separate estimates.",
+    "sv": "GB 20,5 gäller kakan med glasyr som testades 2003. Dagens produkter och den hemlagade chokladkakan behöver bedömas separat.",
+    "th": "ค่า GL 20.5 ใช้กับเค้กพร้อมครีมแต่งหน้าที่ทดสอบในปี 2003 ผลิตภัณฑ์ปัจจุบันและเค้กช็อกโกแลตทำเองต้องประเมินแยกต่างหาก"
+  },
+  "ingredients": [
+    {
+      "grams": 107.2,
+      "name": {
+        "fi": "Kuorrutettu Betty Crocker -kakku, koeannos",
+        "en": "Frosted Betty Crocker cake, test serving",
+        "sv": "Betty Crocker-kaka med glasyr, testportion",
+        "th": "เค้ก Betty Crocker พร้อมครีมแต่งหน้า ส่วนทดลอง"
+      }
+    },
+    {
+      "grams": null,
+      "quantity": {
+        "amount": 250,
+        "unit": "ml"
+      },
+      "name": {
+        "fi": "Juomavesi",
+        "en": "Drinking water",
+        "sv": "Dricksvatten",
+        "th": "น้ำดื่ม"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Brand-Miller et al. (2003), Table 2",
+      "url": "https://doi.org/10.1093/jn/133.10.3149",
+      "kind": "HUMAN_GI",
+      "note": "Glucose-reference GI 41 ± 4 SEM for the entire frosted chocolate cake, n=10 and 120 min."
+    },
+    {
+      "title": "Brand-Miller et al. (2003), methods and Table 1",
+      "url": "https://doi.org/10.1093/jn/133.10.3149",
+      "kind": "CARBOHYDRATE",
+      "note": "75.4 g baked cake plus 31.8 g frosting, with 51.8 g total carbohydrate minus 1.8 g fiber. The test portion provided 50 g available carbohydrate and was served with 250 ml water."
+    }
+  ],
+  "inputs": [
+    [
+      107.2,
+      46.64179104477612,
+      41
+    ]
+  ],
+  "exclusions": [
+    {
+      "ingredientIndex": 1,
+      "kind": "ZERO_CHO",
+      "rationale": "Plain drinking water contributes no available carbohydrate.",
+      "evidencePath": "docs/nutrition/gk100-chocolate-cake-study-review.md"
+    }
+  ],
+  "boundFiles": {
+    "reseptit/jalkiruoat/meheva-suklaakakku.md": "bcdd21dc1b94d9fc6cc82b1a57bd9dbf125ca501bcf330fd8b96559b25696463",
+    "docs/nutrition/gk100-chocolate-cake-study-review.md": "ae077f06c9f706de009d22b31c28656eaa5a72ca72341037bc966bbeaeb94011"
+  }
+}

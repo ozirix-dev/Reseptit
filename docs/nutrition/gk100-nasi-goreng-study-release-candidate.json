@@ -1,0 +1,76 @@
+{
+  "recipeId": "indonesialainen-nasi-goreng-aamiaisriisi",
+  "servings": 1,
+  "reviewState": "PREPARED_FOR_REVIEW",
+  "publicationAuthorized": false,
+  "unroundedGk": "12.5",
+  "preparation": {
+    "fi": "Tutkimusvertailu koskee {{servings}} koeannosta. Kokeessa tarjoiltiin 129 g pannulla paistettua jasmiiniriisiä lisukkeineen ja 220 ml juomavettä.",
+    "en": "This comparison covers {{servings}} study servings. The trial served 129 g of pan-fried jasmine rice with its mix-ins and 220 ml of drinking water.",
+    "sv": "Jämförelsen gäller {{servings}} studieportioner. I försöket serverades 129 g stekt jasminris med övriga ingredienser och 220 ml dricksvatten.",
+    "th": "ข้อมูลนี้ใช้กับอาหารทดลอง {{servings}} ส่วน ประกอบด้วยข้าวหอมมะลิผัดพร้อมเครื่อง 129 กรัมและน้ำดื่ม 220 มิลลิลิตร"
+  },
+  "limitation": {
+    "fi": "12,5 GK koskee Osmanin ym. koeannosta ja 25 g:n nimelliskuormaa. Ateriassa oli osterikastiketta. Kotireseptin makean soijakastikkeen ja paistetun munan sisältämä annos vaatii erillisen arvion.",
+    "en": "The GL of 12.5 uses the nominal 25 g carbohydrate load in Osman et al. The meal contained oyster sauce. The home serving with sweet soy sauce and a fried egg requires a separate estimate.",
+    "sv": "GB 12,5 gäller den nominella kolhydratmängden på 25 g i Osman med flera. Rätten innehöll ostronsås. Hemportionen med söt soja och stekt ägg behöver bedömas separat.",
+    "th": "ค่า GL 12.5 อิงคาร์โบไฮเดรตตามเป้าหมาย 25 กรัมในการศึกษาของ Osman และคณะ อาหารทดลองมีซอสหอยนางรม สูตรที่ใช้ซีอิ๊วหวานและไข่ดาวต้องประเมินแยกต่างหาก"
+  },
+  "ingredients": [
+    {
+      "grams": 129,
+      "name": {
+        "fi": "Paistettu Super Fragrant AAA -jasmiiniriisi, koeannos",
+        "en": "Fried Super Fragrant AAA jasmine rice, test serving",
+        "sv": "Stekt jasminris Super Fragrant AAA, testportion",
+        "th": "ข้าวหอมมะลิผัด Super Fragrant AAA ส่วนทดลอง"
+      }
+    },
+    {
+      "grams": null,
+      "quantity": {
+        "amount": 220,
+        "unit": "ml"
+      },
+      "name": {
+        "fi": "Juomavesi",
+        "en": "Drinking water",
+        "sv": "Dricksvatten",
+        "th": "น้ำดื่ม"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Osman et al. (2017), glucose-reference GI",
+      "url": "https://www.researchgate.net/publication/319617411_Estimating_Glycemic_Index_of_Rice-Based_Mixed_Meals_by_Using_Predicted_and_Adjusted_Formulae",
+      "kind": "HUMAN_GI",
+      "note": "Measured glucose-reference GI 50 ± 7 SE, n=11. The predicted and adjusted GI values in Table 4 are separate."
+    },
+    {
+      "title": "Osman et al. (2017), study serving and carbohydrate",
+      "url": "https://www.researchgate.net/publication/319617411_Estimating_Glycemic_Index_of_Rice-Based_Mixed_Meals_by_Using_Predicted_and_Adjusted_Formulae",
+      "kind": "CARBOHYDRATE",
+      "note": "The methods specify a nominal 25 g available-carbohydrate load and 220 ml of water. Table 1 lists 129 g and a software estimate of 25.10 g carbohydrate."
+    }
+  ],
+  "inputs": [
+    [
+      129,
+      19.37984496124031,
+      50
+    ]
+  ],
+  "exclusions": [
+    {
+      "ingredientIndex": 1,
+      "kind": "ZERO_CHO",
+      "rationale": "Plain drinking water contributes zero available carbohydrate.",
+      "evidencePath": "docs/nutrition/gk100-rice-bun-study-review.md"
+    }
+  ],
+  "boundFiles": {
+    "reseptit/aamupalat/indonesialainen-nasi-goreng-aamiaisriisi.md": "f55e64e3d2dd6080a7cbcde3b067cac696aaf8a5595b67a5615433d7a43689d7",
+    "docs/nutrition/gk100-rice-bun-study-review.md": "8fc69585b98ce9eb14ad70190d19a673bcaa72eb479153f1b360d0e6ace9e5b4"
+  }
+}
