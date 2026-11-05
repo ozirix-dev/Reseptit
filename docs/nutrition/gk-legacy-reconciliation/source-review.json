@@ -1,0 +1,449 @@
+{
+  "schemaVersion": 1,
+  "baseMain": "081ba2c95f9243c1ed72206073160f9e64992e96",
+  "reviewedPrHead": "82cd8dbdf89a4f1098b61bd81c98c6c66973dff1",
+  "sourceApprovalGranted": false,
+  "publicationAuthorized": false,
+  "productionDataModified": false,
+  "giDecisions": [
+    {
+      "pr": 133,
+      "recipeId": "bulgogi",
+      "ingredient": "jasmiiniriisiä",
+      "giRecordId": "rice-category-mean-gi-67",
+      "action": "WITHDRAW_GI_FROM_REVIEW_CANDIDATE",
+      "rationale": "The catalog explicitly identifies a broad category mean rather than this food/preparation. Preserve existing production policy and values, but withhold this binding from the new candidate until its preparation/application is established; no exact-food inference or new imputation policy is granted.",
+      "evidence": [
+        "https://doi.org/10.1093/ajcn/nqab233",
+        "site/scripts/glycemic-load-pilot.ts#giSourcePolicy",
+        "https://nutrition.org/ajcn-publishes-international-tables-of-glycemic-index-and-glycemic-load-values-2021-a-systematic-review/"
+      ],
+      "productionBindingChanged": false,
+      "newSourceApproval": false
+    },
+    {
+      "pr": 133,
+      "recipeId": "bulgogi",
+      "ingredient": "soijakastiketta",
+      "giRecordId": "legumes-category-mean-gi-34",
+      "action": "WITHDRAW_GI_FROM_REVIEW_CANDIDATE",
+      "rationale": "Fermented soy sauce is not the whole-legume category. No matched sauce GI was established; do not turn the sauce CHO into zero.",
+      "evidence": [
+        "https://doi.org/10.1093/ajcn/nqab233",
+        "site/scripts/glycemic-load-pilot.ts#giSourcePolicy",
+        "https://nutrition.org/ajcn-publishes-international-tables-of-glycemic-index-and-glycemic-load-values-2021-a-systematic-review/"
+      ],
+      "productionBindingChanged": false,
+      "newSourceApproval": false
+    },
+    {
+      "pr": 133,
+      "recipeId": "bulgogi",
+      "ingredient": "fariinisokeria",
+      "giRecordId": "sugar-syrups-category-mean-gi-58",
+      "action": "WITHDRAW_GI_FROM_REVIEW_CANDIDATE",
+      "rationale": "The catalog explicitly identifies a broad category mean rather than this food/preparation. Preserve existing production policy and values, but withhold this binding from the new candidate until its preparation/application is established; no exact-food inference or new imputation policy is granted.",
+      "evidence": [
+        "https://doi.org/10.1093/ajcn/nqab233",
+        "site/scripts/glycemic-load-pilot.ts#giSourcePolicy",
+        "https://nutrition.org/ajcn-publishes-international-tables-of-glycemic-index-and-glycemic-load-values-2021-a-systematic-review/"
+      ],
+      "productionBindingChanged": false,
+      "newSourceApproval": false
+    },
+    {
+      "pr": 133,
+      "recipeId": "bulgogi",
+      "ingredient": "päärynää",
+      "giRecordId": "pear-raw-mean-gi-38-2002",
+      "action": "KEEP_EXISTING_SCOPED_ANALOG",
+      "rationale": "Current catalog explicitly discloses this preparation transfer as a LOW-confidence analogue. Retain its existing bounded scope; lack of a tested mixed meal alone does not justify restoring an old blanket deletion. This is not approval of a new whole-recipe estimate.",
+      "evidence": [
+        "https://doi.org/10.1093/ajcn/76.1.5",
+        "site/scripts/glycemic-load-pilot.ts#giSourcePolicy",
+        "https://nutrition.org/ajcn-publishes-international-tables-of-glycemic-index-and-glycemic-load-values-2021-a-systematic-review/"
+      ],
+      "productionBindingChanged": false,
+      "newSourceApproval": false
+    },
+    {
+      "pr": 133,
+      "recipeId": "baozi",
+      "ingredient": "sokeria",
+      "giRecordId": "sugar-syrups-category-mean-gi-58",
+      "action": "WITHDRAW_GI_FROM_REVIEW_CANDIDATE",
+      "rationale": "The catalog explicitly identifies a broad category mean rather than this food/preparation. Preserve existing production policy and values, but withhold this binding from the new candidate until its preparation/application is established; no exact-food inference or new imputation policy is granted.",
+      "evidence": [
+        "https://doi.org/10.1093/ajcn/nqab233",
+        "site/scripts/glycemic-load-pilot.ts#giSourcePolicy",
+        "https://nutrition.org/ajcn-publishes-international-tables-of-glycemic-index-and-glycemic-load-values-2021-a-systematic-review/"
+      ],
+      "productionBindingChanged": false,
+      "newSourceApproval": false
+    },
+    {
+      "pr": 133,
+      "recipeId": "baozi",
+      "ingredient": "kiinankaalia",
+      "giRecordId": "vegetables-category-mean-gi-66",
+      "action": "WITHDRAW_GI_FROM_REVIEW_CANDIDATE",
+      "rationale": "The catalog explicitly identifies a broad category mean rather than this food/preparation. Preserve existing production policy and values, but withhold this binding from the new candidate until its preparation/application is established; no exact-food inference or new imputation policy is granted.",
+      "evidence": [
+        "https://doi.org/10.1093/ajcn/nqab233",
+        "site/scripts/glycemic-load-pilot.ts#giSourcePolicy",
+        "https://nutrition.org/ajcn-publishes-international-tables-of-glycemic-index-and-glycemic-load-values-2021-a-systematic-review/"
+      ],
+      "productionBindingChanged": false,
+      "newSourceApproval": false
+    },
+    {
+      "pr": 133,
+      "recipeId": "kreikkalainen-moussaka",
+      "ingredient": "munakoisoa",
+      "giRecordId": "vegetables-category-mean-gi-66",
+      "action": "WITHDRAW_GI_FROM_REVIEW_CANDIDATE",
+      "rationale": "The catalog explicitly identifies a broad category mean rather than this food/preparation. Preserve existing production policy and values, but withhold this binding from the new candidate until its preparation/application is established; no exact-food inference or new imputation policy is granted.",
+      "evidence": [
+        "https://doi.org/10.1093/ajcn/nqab233",
+        "site/scripts/glycemic-load-pilot.ts#giSourcePolicy",
+        "https://nutrition.org/ajcn-publishes-international-tables-of-glycemic-index-and-glycemic-load-values-2021-a-systematic-review/"
+      ],
+      "productionBindingChanged": false,
+      "newSourceApproval": false
+    },
+    {
+      "pr": 133,
+      "recipeId": "kreikkalainen-moussaka",
+      "ingredient": "perunoita",
+      "giRecordId": "potatoes-category-mean-gi-71",
+      "action": "WITHDRAW_GI_FROM_REVIEW_CANDIDATE",
+      "rationale": "The catalog explicitly identifies a broad category mean rather than this food/preparation. Preserve existing production policy and values, but withhold this binding from the new candidate until its preparation/application is established; no exact-food inference or new imputation policy is granted.",
+      "evidence": [
+        "https://doi.org/10.1093/ajcn/nqab233",
+        "site/scripts/glycemic-load-pilot.ts#giSourcePolicy",
+        "https://nutrition.org/ajcn-publishes-international-tables-of-glycemic-index-and-glycemic-load-values-2021-a-systematic-review/"
+      ],
+      "productionBindingChanged": false,
+      "newSourceApproval": false
+    },
+    {
+      "pr": 133,
+      "recipeId": "kreikkalainen-moussaka",
+      "ingredient": "tomaattimurskaa",
+      "giRecordId": "tomato-raw-cooked-sauce-analogue-gi-22",
+      "action": "KEEP_EXISTING_SCOPED_ANALOG",
+      "rationale": "Current catalog explicitly discloses this preparation transfer as a LOW-confidence analogue. Retain its existing bounded scope; lack of a tested mixed meal alone does not justify restoring an old blanket deletion. This is not approval of a new whole-recipe estimate.",
+      "evidence": [
+        "https://doi.org/10.1093/ajcn/nqab233",
+        "site/scripts/glycemic-load-pilot.ts#giSourcePolicy",
+        "https://nutrition.org/ajcn-publishes-international-tables-of-glycemic-index-and-glycemic-load-values-2021-a-systematic-review/"
+      ],
+      "productionBindingChanged": false,
+      "newSourceApproval": false
+    },
+    {
+      "pr": 133,
+      "recipeId": "kreikkalainen-moussaka",
+      "ingredient": "maitoa",
+      "giRecordId": "dairy-category-mean-gi-35",
+      "action": "WITHDRAW_GI_FROM_REVIEW_CANDIDATE",
+      "rationale": "The catalog explicitly identifies a broad category mean rather than this food/preparation. Preserve existing production policy and values, but withhold this binding from the new candidate until its preparation/application is established; no exact-food inference or new imputation policy is granted.",
+      "evidence": [
+        "https://doi.org/10.1093/ajcn/nqab233",
+        "site/scripts/glycemic-load-pilot.ts#giSourcePolicy",
+        "https://nutrition.org/ajcn-publishes-international-tables-of-glycemic-index-and-glycemic-load-values-2021-a-systematic-review/"
+      ],
+      "productionBindingChanged": false,
+      "newSourceApproval": false
+    },
+    {
+      "pr": 133,
+      "recipeId": "kreikkalainen-moussaka",
+      "ingredient": "raastettua kovaa juustoa",
+      "giRecordId": "dairy-category-mean-gi-35",
+      "action": "WITHDRAW_GI_FROM_REVIEW_CANDIDATE",
+      "rationale": "The catalog explicitly identifies a broad category mean rather than this food/preparation. Preserve existing production policy and values, but withhold this binding from the new candidate until its preparation/application is established; no exact-food inference or new imputation policy is granted.",
+      "evidence": [
+        "https://doi.org/10.1093/ajcn/nqab233",
+        "site/scripts/glycemic-load-pilot.ts#giSourcePolicy",
+        "https://nutrition.org/ajcn-publishes-international-tables-of-glycemic-index-and-glycemic-load-values-2021-a-systematic-review/"
+      ],
+      "productionBindingChanged": false,
+      "newSourceApproval": false
+    },
+    {
+      "pr": 133,
+      "recipeId": "kreikkalainen-moussaka",
+      "ingredient": "mustapippuria",
+      "giRecordId": "vegetables-category-mean-gi-66",
+      "action": "WITHDRAW_GI_FROM_REVIEW_CANDIDATE",
+      "rationale": "Ground dried pepper is not the broad vegetable category. Known positive CHO still needs an evidence-based omission assessment.",
+      "evidence": [
+        "https://doi.org/10.1093/ajcn/nqab233",
+        "site/scripts/glycemic-load-pilot.ts#giSourcePolicy",
+        "https://nutrition.org/ajcn-publishes-international-tables-of-glycemic-index-and-glycemic-load-values-2021-a-systematic-review/"
+      ],
+      "productionBindingChanged": false,
+      "newSourceApproval": false
+    },
+    {
+      "pr": 133,
+      "recipeId": "yangzhou-paistettu-riisi",
+      "ingredient": "herneitä",
+      "giRecordId": "legumes-category-mean-gi-34",
+      "action": "WITHDRAW_GI_FROM_REVIEW_CANDIDATE",
+      "rationale": "The catalog explicitly identifies a broad category mean rather than this food/preparation. Preserve existing production policy and values, but withhold this binding from the new candidate until its preparation/application is established; no exact-food inference or new imputation policy is granted.",
+      "evidence": [
+        "https://doi.org/10.1093/ajcn/nqab233",
+        "site/scripts/glycemic-load-pilot.ts#giSourcePolicy",
+        "https://nutrition.org/ajcn-publishes-international-tables-of-glycemic-index-and-glycemic-load-values-2021-a-systematic-review/"
+      ],
+      "productionBindingChanged": false,
+      "newSourceApproval": false
+    },
+    {
+      "pr": 133,
+      "recipeId": "japanilainen-soba-aamiaiskeitto",
+      "ingredient": "soba-nuudeli",
+      "giRecordId": "pasta-category-mean-gi-52",
+      "action": "WITHDRAW_GI_FROM_REVIEW_CANDIDATE",
+      "rationale": "Unspecified buckwheat/wheat fraction and product/preparation are not established by a pasta category mean. Source leads in the historical review do not establish an exact human GI transfer.",
+      "evidence": [
+        "https://doi.org/10.1093/ajcn/nqab233",
+        "site/scripts/glycemic-load-pilot.ts#giSourcePolicy",
+        "https://nutrition.org/ajcn-publishes-international-tables-of-glycemic-index-and-glycemic-load-values-2021-a-systematic-review/"
+      ],
+      "productionBindingChanged": false,
+      "newSourceApproval": false
+    },
+    {
+      "pr": 133,
+      "recipeId": "japanilainen-soba-aamiaiskeitto",
+      "ingredient": "pinaatti",
+      "giRecordId": "vegetables-category-mean-gi-66",
+      "action": "WITHDRAW_GI_FROM_REVIEW_CANDIDATE",
+      "rationale": "Spinach amount is missing; a category GI cannot establish mass or a complete carbohydrate contribution.",
+      "evidence": [
+        "https://doi.org/10.1093/ajcn/nqab233",
+        "site/scripts/glycemic-load-pilot.ts#giSourcePolicy",
+        "https://nutrition.org/ajcn-publishes-international-tables-of-glycemic-index-and-glycemic-load-values-2021-a-systematic-review/"
+      ],
+      "productionBindingChanged": false,
+      "newSourceApproval": false
+    },
+    {
+      "pr": 133,
+      "recipeId": "indonesialainen-bubur-sumsum",
+      "ingredient": "riisijauho",
+      "giRecordId": "rice-category-mean-gi-67",
+      "action": "WITHDRAW_GI_FROM_REVIEW_CANDIDATE",
+      "rationale": "Cooked rice-grain category mean does not establish the gelatinised rice-flour/coconut preparation for a new reviewed candidate.",
+      "evidence": [
+        "https://doi.org/10.1093/ajcn/nqab233",
+        "site/scripts/glycemic-load-pilot.ts#giSourcePolicy",
+        "https://nutrition.org/ajcn-publishes-international-tables-of-glycemic-index-and-glycemic-load-values-2021-a-systematic-review/"
+      ],
+      "productionBindingChanged": false,
+      "newSourceApproval": false
+    },
+    {
+      "pr": 133,
+      "recipeId": "indonesialainen-bubur-sumsum",
+      "ingredient": "palmusokeri",
+      "giRecordId": "sugar-syrups-category-mean-gi-58",
+      "action": "WITHDRAW_GI_FROM_REVIEW_CANDIDATE",
+      "rationale": "Palm-sugar identity/composition and the prepared syrup remain unresolved; generic white-sugar composition and a category GI do not establish this product.",
+      "evidence": [
+        "https://doi.org/10.1093/ajcn/nqab233",
+        "site/scripts/glycemic-load-pilot.ts#giSourcePolicy",
+        "https://nutrition.org/ajcn-publishes-international-tables-of-glycemic-index-and-glycemic-load-values-2021-a-systematic-review/"
+      ],
+      "productionBindingChanged": false,
+      "newSourceApproval": false
+    }
+  ],
+  "candidateHolds": {
+    "bulgogi": [
+      "No matched rice/sauce/sugar GI for this new candidate; current scoped pear analogue retained.",
+      "Spring-onion 15 g/piece refers to edible bulb/stem; actual edible part and mass must match."
+    ],
+    "baozi": [
+      "Steamed/fermented preparation and cabbage GI remain unsupported.",
+      "Cornstarch mass/identity is supported; its steamed-filling GI is not supplied by raw-starch research."
+    ],
+    "koshari": [
+      "14 g cornstarch mass is supported; frying/coating GI and other existing model blockers remain."
+    ],
+    "yangzhou-paistettu-riisi": [
+      "Current approved version is a separate scope and remains unchanged. Candidate pea/preparation GI and other model blockers are unresolved."
+    ],
+    "kreikkalainen-moussaka": [
+      "Preserve scoped cooked-tomato analogue; other proposed category transfers require food/preparation support. Do not import boiled-potato GI into roasted/baked potato."
+    ],
+    "japanilainen-soba-aamiaiskeitto": [
+      "Soba product/fraction/preparation and spinach mass are unresolved."
+    ],
+    "indonesialainen-bubur-sumsum": [
+      "Gelatinised rice-flour preparation and palm-sugar identity/composition remain unresolved."
+    ],
+    "masala-dosa": [
+      "100 g urad-dal is not green/brown lentil; matched raw lead is IFCT B003.",
+      "Fermented rice/urad batter GI cannot be inferred from whole-grain category means.",
+      "500 g potato as peeled edible raw mass and CHO retention are scenario assumptions, not verified measurements.",
+      "Mustard teaspoon mass 3 g is assumed; IFCT native basis/polyols and commercial/public reuse remain unresolved.",
+      "Chutney and sambar mentioned as accompaniments are not included in this recipe-input scope."
+    ],
+    "meksikolainen-paputostada-aamupalaksi": [
+      "Avocado identity/composition and positive omission amount are supported by pinned Fineli Release20.",
+      "Commercial tortilla human GI does not establish the crisp tostada; retain preparation HOLD."
+    ]
+  },
+  "sourceObservations": [
+    {
+      "id": "IFCT2017-B003",
+      "identity": "Black gram, dal (Phaseolus mungo), raw",
+      "nativeComponent": "CHOAVLDF",
+      "per100g": 51,
+      "pdfPage": 42,
+      "decision": "IDENTITY_MATCHED_RESEARCH_LEAD_ONLY; do not substitute green/brown lentil; not installed as EU_AVAILABLE food"
+    },
+    {
+      "id": "IFCT2017-G010",
+      "identity": "Curry leaves, raw",
+      "nativeComponent": "CHOAVLDF",
+      "per100g": 4.51,
+      "pdfPage": 54,
+      "decision": "SOURCE_CELL_VERIFIED; 10 g/4 servings gives 0.11275 g, conditional on basis/retention"
+    },
+    {
+      "id": "IFCT2017-G014",
+      "identity": "Ginger, fresh",
+      "nativeComponent": "CHOAVLDF",
+      "per100g": 8.97,
+      "pdfPage": 54,
+      "decision": "SOURCE_CELL_VERIFIED; correct old 0.1 g diagnostic contribution to 0.22425 g for 10 g/4 servings"
+    },
+    {
+      "id": "IFCT2017-H013",
+      "identity": "Mustard seeds (Brassica nigra)",
+      "nativeComponent": "CHOAVLDF",
+      "per100g": 16.8,
+      "pdfPage": 55,
+      "decision": "SOURCE_CELL_VERIFIED; 0.126 g/serving only if assumed 3 g teaspoon is accepted; mass remains HOLD"
+    }
+  ],
+  "ifctSource": {
+    "source": "https://www.nin.res.in/ebooks/IFCT2017_16122024.pdf",
+    "sha256": "e87629581a58faca286f4886504bc75f33d6d3771a50fb4e40e2afee2b2b32dd",
+    "cachedSourceIdentical": true,
+    "selectedPdfPages": [
+      54,
+      55
+    ]
+  },
+  "ifctRightsAndBasis": "Retain docs/research/source-01/sources.json IFCT DEFER_RIGHTS_AND_FIELD_REVIEW. No public/commercial source activation or polyol verification granted. PDF pages were visually checked; no PDF or source table copied into this repo. This restriction concerns new candidate use and does not reopen or revoke the narrowly approved current masala-dosa version.",
+  "safeComponentDecisions": [
+    {
+      "case": "baozi/koshari starch",
+      "basis": "Pinned Fineli27, 86 g CHO/100 g; RKL7 g",
+      "decision": "IDENTITY_AND_REFERENCE_PORTION_SUPPORTED_ONLY",
+      "source": "https://fineli.fi/fineli/fi/elintarvikkeet/27"
+    },
+    {
+      "case": "soy/oil mass",
+      "basis": "Pinned Fineli31 RKL18 g, Fineli541 RKL13.5 g",
+      "decision": "FOOD_SPECIFIC_REFERENCE_PORTIONS_SUPPORTED_ONLY",
+      "source": "docs/nutrition/fineli-release-20-reference.json"
+    },
+    {
+      "case": "avocado",
+      "basis": "Pinned Fineli11057: 0.77 g/100 g, medium edible portion120 g/2 servings; 0.462 g CHO/serving",
+      "decision": "SOURCE_COMPOSITION_SUPPORTED; remove vegetable GI in candidate only",
+      "source": "docs/nutrition/fineli-release-20-reference.json"
+    },
+    {
+      "case": "potato",
+      "basis": "Fineli205 raw peeled15.5 g CHO/100 g; catalog boiled-potato analogue66",
+      "decision": "CONDITIONAL_COMPONENT_SCENARIO_ONLY; 12.7875 GK/serving if 500 g edible raw and complete CHO retention; not a dosa total",
+      "source": "https://fineli.fi/fineli/fi/elintarvikkeet/205"
+    }
+  ],
+  "outstandingWork": "Preserve six current approved home scopes; do not activate their stale generic candidates. Baozi has only a study comparison, not an approved home substitute. Active original-source gaps remain in baozi, Greek moussaka and bubur sumsum; the15 withdrawn candidate GI rows include9 in these three unresolved originals.",
+  "currentSuccessors": {
+    "bulgogi": {
+      "scope": "CURRENT_APPROVED_GK_ONLY",
+      "point": 41.31,
+      "scenarioRange": null,
+      "versionId": "gk-next4-5ae159afc878",
+      "snapshotSha256": "7fe436412068192c24de53c0fe16ba4395977968d4d573128885755c47135287",
+      "distinction": "Approved GK-only version uses weighed72 g soy,14 g brown sugar and40 g spring onion; old candidate reference conversions (including30 g spring onion) cannot replace it."
+    },
+    "baozi": {
+      "scope": "STUDY_COMPARISON_ONLY",
+      "point": 32.99999999999999,
+      "scenarioRange": null,
+      "versionId": "gk-operation80-review-f9ad78566588",
+      "snapshotSha256": "6e19042beea5f0dfe63c91ec33553e76afb577868d2004a79d8a520a89701dc4",
+      "distinction": "The existing33 GK study serving is154.7 g historical Tanjong Rhu char siew pau plus200 ml water. It is not the pork/cabbage home-recipe baozi estimate."
+    },
+    "koshari": {
+      "scope": "CURRENT_APPROVED_ORIGINAL",
+      "point": 48.49,
+      "scenarioRange": null,
+      "versionId": null,
+      "snapshotSha256": "6c3f1f4881e8b4df9237a82bb65c6f8d929c08531e47e95996514691fe997a0c",
+      "distinction": "Approved current original result uses its own release input, including no cornstarch row; the old14 g starch proposal is not an ingredient correction to that approved scope."
+    },
+    "yangzhou-paistettu-riisi": {
+      "scope": "CURRENT_APPROVED_ORIGINAL",
+      "point": 25.08,
+      "scenarioRange": null,
+      "versionId": null,
+      "snapshotSha256": "2704bba68851ed5c4c56581db7d63c0d8fde8b2252edfd78117621356e4885f9",
+      "distinction": "Approved current original result uses weighed30 g soy and27.4 g oil with its own peas/rice coding; do not replace those with old reference-portion conversions36/27 g."
+    },
+    "kreikkalainen-moussaka": {
+      "scope": "NO_APPROVED_HOME_SCOPE",
+      "point": null,
+      "scenarioRange": null,
+      "versionId": null,
+      "snapshotSha256": null,
+      "distinction": "Original recipe source/preparation evidence is unresolved; no existing approved home scope was found."
+    },
+    "japanilainen-soba-aamiaiskeitto": {
+      "scope": "CURRENT_APPROVED_GK_ONLY",
+      "point": 20.4311,
+      "scenarioRange": null,
+      "versionId": "gk-operation80-review-7196b4361e64",
+      "snapshotSha256": "9039439def9749a279a7bb9747e7529646eea9e543dd853aedb6ce4f38c56b63",
+      "distinction": "Approved GK-only version uses Muso NDL030100% buckwheat soba,50 g spinach, named broth and its own cooking comparator; unspecified generic soba is not interchangeable."
+    },
+    "indonesialainen-bubur-sumsum": {
+      "scope": "NO_APPROVED_HOME_SCOPE",
+      "point": null,
+      "scenarioRange": null,
+      "versionId": null,
+      "snapshotSha256": null,
+      "distinction": "Original recipe source/preparation evidence is unresolved; no existing approved home scope was found."
+    },
+    "masala-dosa": {
+      "scope": "CURRENT_APPROVED_GK_ONLY",
+      "point": null,
+      "scenarioRange": {
+        "min": 57.8025,
+        "max": 63.495
+      },
+      "versionId": "gk-operation80-review-e39be3ee36cc",
+      "snapshotSha256": "40b55aa893ffd7167af38ca1f4bab9fb7f526f7e7468d411ac01d0b8394dcbc0",
+      "distinction": "Approved GK-only version uses Tilda rice, matched urad,500 g cooked drained potato,100 g onion and its own spice masses. Its57.8025–63.495 scenario range is not the old generic raw-potato candidate49.75."
+    },
+    "meksikolainen-paputostada-aamupalaksi": {
+      "scope": "CURRENT_APPROVED_GK_ONLY",
+      "point": 16.638165,
+      "scenarioRange": null,
+      "versionId": "gk-operation80-review-110f8a43d51b",
+      "snapshotSha256": "72794319f27994395dbb90478e6102171914d487776943fee68711e689da1dd7",
+      "distinction": "Approved GK-only version uses six named Saníssimo tostadas72 g, not the original generic100 g tortilla input. Retain product, mass and comparator limits."
+    }
+  }
+}

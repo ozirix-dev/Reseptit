@@ -5,9 +5,9 @@ Vertailupohja on `081ba2c95f9243c1ed72206073160f9e64992e96`. Tämä on yksi koot
 | PR | Nykyinen ratkaisu | Jäljelle jäävä päätös |
 | --- | --- | --- |
 | #229 | Kokonaisskenaarioiden laskin ja sen regressiot sovitettu nykyiseen versiosopimukseen. Auditissa erotetaan pisteet, vaihteluvälit ja puuttuvat arviot. Tutkimusannosvertailut pysyvät erillään eivätkä korvaa alkuperäisohjeen arviota. Nykyinen vaihteluvälipaneeli ja #283:n alkuperäisohjeen suodatin säilyvät. | Historiallisen bindaetteok-ehdotuksen soveltuvuus ja julkaisu vaativat oman katselmointinsa. Sitä ei lisätä julkaistuihin versioihin. |
-| #133 | 8 massa-/identiteettikorjauksen ehdokaspatchia sovitettu nykyisiin riveihin: bulgogi, baozi, Yangzhou-riisi ja koshari. Baozin 8 g perunatärkkelyssidos vaihtuu ehdokkaassa 7 g maissitärkkelys-ID:hen 27. Muita nykyisiä koostumussidoksia ei palauteta vanhasta haarasta. | 17 GI-poistoehdotusta odottaa valmistusmatchin päätöstä. Tomaatti-kananmuna-wokin kaikki 5 vanhaa ehdotusta ohitetaan nykyisen hyväksytyn EHOLD-käsittelyn säilyttämiseksi. Ehdokaslaskenta ei hyväksy uusia lähteitä tai julkaise GK:ta. |
+| #133 | 8 massa-/identiteettikorjauksen ehdokaspatchia sovitettu nykyisiin riveihin: bulgogi, baozi, Yangzhou-riisi ja koshari. Baozin 8 g perunatärkkelyssidos vaihtuu ehdokkaassa 7 g maissitärkkelys-ID:hen 27. Muita nykyisiä koostumussidoksia ei palauteta vanhasta haarasta. | 17 GI-poistoehdotusta on arvioitu: kaksi nykyistä rajattua analogiaa säilyy, 15 GI:tä poistetaan vain uusista katselmointiehdokkaista. Kuuden nykyisen hyväksytyn kotireseptirajauksen rinnalle ei aktivoida vanhoja geneerisiä ehdokkaita. Tomaatti-kananmuna-wokin kaikki 5 vanhaa ehdotusta ohitetaan nykyisen hyväksytyn EHOLD-käsittelyn säilyttämiseksi. Ehdokaslaskenta ei hyväksy uusia lähteitä tai julkaise GK:ta. |
 | #182 | Kolme AFCD:n available CHO -kenttää korjataan ilman sokerialkoholeja ilmoitetuiksi. Persikkakulhon piste 4,08 → 3,97, näyttö edelleen noin 4. Vadelman osuus muuttuu, pellavapuuro pysyy lähdepuutteellisena. | Käyttäjä valtuutti tämän rajatun numeerisen korjauksen Draftiin. Polyolien kokonaiskattavuuden väitteet ja #181:n laajempi menetelmäpäätös säilyvät erillisinä. Ei julkaisuvaltuutta. |
-| #226 | 4 nykyisiin riveihin sovitettua ehdokaspatchia: masala dosan peruna, sinapinsiemenet ja currylehdet sekä paputostadan avokado. Avokado käyttää nykyistä 0,77 g/100 g koostumusta: 0,462 g CHO/annos. Perusteeton avokadon GI poistuu ehdokkaasta. | Raakakoostumuksen siirto keitettyyn perunaan, valmistusanalogian soveltuvuus, mausteiden poisjätöt ja tortillan lähdepuute on katselmoitava ennen uutta julkaisua. |
+| #226 | 4 nykyisiin riveihin sovitettua ehdokaspatchia: masala dosan peruna, sinapinsiemenet ja currylehdet sekä paputostadan avokado. Avokado käyttää nykyistä 0,77 g/100 g koostumusta: 0,462 g CHO/annos. Perusteeton avokadon GI poistuu ehdokkaasta. | Nykyiset hyväksytyt dosa- ja tostada-versiot säilyvät omilla määrillään ja tuotteillaan. Vanhan ehdokkaan vihreä linssi ei vastaa urad dalia, eikä sen geneerinen tortillavertailu kata rapeaa tostadaa. Näitä vanhoja ehdokkaita ei aktivoida. |
 
 ## Aktiivinen korjaus ja arvosuoja
 
@@ -19,9 +19,31 @@ Vanhojen julkaisuerien testit käyttävät omaa muuttumatonta lähdeversiotaan. 
 
 ## Ehdokkaiden toistaminen
 
-`candidates.json` sisältää 12 täsmäpatchia ja jokaisen alkuperäisen ehdotuksen käsittelypäätöksen. `site/scripts/legacy-gk-corrections.ts` tarkistaa kuuden asianomaisen reseptiobjektin SHA:t ja muodostaa ehdokkaat muistissa. Se ei kirjoita syötteitä, julkaisutietoja, sidoksia eikä hyväksyntöjä. Asianomaisen reseptin muuttuminen estää vanhojen patchien käyttämisen; muiden reseptien nopeusajot eivät pysähdy tämän sidoksen vuoksi. Koko syötetiedoston vanha LF-SHA säilyy vain historiaviitteenä.
+`candidates.json` sisältää 30 täsmäpatchia ja jokaisen alkuperäisen ehdotuksen käsittelypäätöksen. `site/scripts/legacy-gk-corrections.ts` tarkistaa yhdeksän asianomaisen reseptiobjektin SHA:t sekä arvioitujen lähdetietueiden ja katselmointitekstin tarkisteet ja muodostaa ehdokkaat muistissa. Se ei kirjoita syötteitä, julkaisutietoja, sidoksia eikä hyväksyntöjä. Asianomaisen reseptin muuttuminen estää vanhojen patchien käyttämisen; muiden reseptien nopeusajot eivät pysähdy tämän sidoksen vuoksi. Koko syötetiedoston vanha LF-SHA säilyy vain historiaviitteenä.
 
-Toista repon `site`-hakemistossa: `npx tsx scripts/legacy-gk-corrections.ts`. Tuloksen `publicationAuthorized` ja `sourceApprovalGranted` ovat false. Esimerkiksi korjattu bulgogi ja masala dosa voivat saada raakaa laskentatulosta, mutta niiden nykyinen julkinen GK pysyy lähdepuutteellisena. Laskennallinen tulos ei ole lähde- tai julkaisuhyväksyntä.
+Varmista ensin tavallisella buildilla, että `tmp/nutrition/glycemic-load-pilot.json` on tämän HEADin tuore tulos. Toista sitten repon `site`-hakemistossa: `npx tsx scripts/legacy-gk-corrections.ts`. Tuloksen `publicationAuthorized` ja `sourceApprovalGranted` ovat false. GI-/identiteettikarsinnan jälkeen kaikki vanhat ehdokkaat pysyvät lähdepuutteellisina. Nykyiset hyväksytyt alkuperäis- ja GK-versiot pysyvät erillisinä. Laskennallinen tulos ei ole lähde- tai julkaisuhyväksyntä.
+
+## #133:n ja #226:n lähde- ja sisältöpäätökset
+
+`source-review.json` tallentaa kaikki 17 GI-päätöstä, alkuperäislähteet, rajaukset ja nykyisten seuraajien täydet tarkisteet. Päärynä38 ja tomaatti 22 säilyvät nykyisen katalogin nimenomaisesti rajaamina analogioina. Muut 15 sidosta jäävät pois vain uusista katselmointiehdokkaista: ryhmäkeskiarvo ei yksin osoita uuden ruoan valmistusmatchia. Nykyistä julkaistua lähdepolitiikkaa tai hyväksyttyä lukua ei muuteta.
+
+| Tapaus | Turvallinen jatko |
+| --- | --- |
+| Bulgogi | Säilytä GK-only 41,31: punnitut 72 g soijaa,14 g sokeria ja 40 g kevätsipulia. Vanha kappalemuunnos 30 g ei korvaa tätä versiota. |
+| Koshari | Säilytä nykyisen alkuperäisohjeen 48,49. Sen hyväksytty syöte ei sisällä vanhan ehdokkaan maissitärkkelysriviä. |
+| Yangzhou-riisi | Säilytä nykyinen 25,08, punnittu 30 g soijaa ja 27,4 g öljyä. Vanha lusikkamuunnos 36/27 g ei korvaa hyväksyttyä versiota. |
+| Masala dosa | Säilytä GK-only 57,8025–63,495: nimetty riisi, urad dal ja 500 g kypsää valutettua perunaa sekä omat määrät. Vanhan 500 g raaka-perunaehdokkaan 49,75 ei ole tämän version arvo. |
+| Paputostada | Säilytä GK-only 16,638165: kuusi nimettyä Saníssimo-tostadaa 72 g. Vanha geneerinen 100 g tortilla ei ole sama tuote tai määrä. |
+| Soba-aamiaiskeitto | Säilytä GK-only 20,4311: Muso NDL030, 50 g pinaattia ja nimetyt liemet. Geneeristä sobaa ei korvata automaattisesti näillä tiedoilla. |
+| Baozi | HOLD kotireseptille. Olemassa oleva noin 33 GK on historiallinen 154,7 g char siew pau -tutkimusannos; se ei ole kotireseptin arvio. |
+| Kreikkalainen moussaka | HOLD alkuperäisohjeelle: puuttuvat valmistusmatchit; keitetyn perunan GI ei ratkaise paahdettua/uuniperunaa. |
+| Bubur sumsum | HOLD alkuperäisohjeelle: riisijauhopuuron valmistusmatch ja palmusokerin identiteetti/koostumus puuttuvat. |
+
+Kuusi turvallista nykyrajausta jää käyttöön. Kolmen muun kotireseptin yhdeksän GI-riviä vaatii edelleen lähdetyötä; turvallinen pidätyspäätös ei tuota puuttuvaa GI-näyttöä.
+
+IFCT2017:n alkuperäinen PDF tarkistettiin SHA-256:lla ja taulukkosivut 42, 54 ja 55 luettiin myös kuvina. Urad dalin raaka koostumus löytyy riviltä B003, ei vihreän/ruskean linssin tietueesta. InkiväärinG014 natiivi CHOAVLDF 8,97 antaa 10 g/4 annoksesta 0,22425 g; vanha 0,1-ehdokas korjataan. CurrylehtienG010 4,51 ja sinapinsiementenH013 16,80 ovat lähteen natiivilukuja; 3 g sinappilusikka on yhä oletus. IFCT:n oikeus-, komponenttipohja- ja polyolirajoja ei ohiteta eikä natiivilukua nimetä automaattisesti EU_AVAILABLE-arvoksi. Jo hyväksytyn erillisen dosa-version lähderajausta ei avata uudelleen.
+
+`verify_source_components.py` tarkistaa riippumattomalla Decimal-laskennalla seitsemän komponenttilaskelmaa. Soijan 1,71 g ja baozi-tärkkelyksen 1,505 g CHO/annos eivät mahdu yksittäisen GI-puuttuvan rivin alle 1 g:n poisjättöön. Avokadon 0,462 g on positiivinen osuus; se ei ratkaise tostadan valmistusmatchia.
 
 ## Historiallinen aineisto
 

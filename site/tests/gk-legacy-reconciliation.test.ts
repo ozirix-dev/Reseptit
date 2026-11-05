@@ -1,8 +1,9 @@
+import {execFileSync} from 'node:child_process';
 import {strict as assert} from 'node:assert';
 import {test} from 'node:test';
 import {createHash} from 'node:crypto';
 import {readFileSync} from 'node:fs';
-import {prepareLegacyGkCandidates,verifyLegacyCandidateInput} from '../scripts/legacy-gk-corrections';
+import {prepareLegacyGkCandidates,verifyLegacyCandidateInput,verifyLegacyCandidateScope,verifyLegacyReviewEvidence} from '../scripts/legacy-gk-corrections';
 import {reviewedSourceHashMatches} from '../scripts/afcd-column-correction';
 import {glycemicLoadEvidenceHash,glycemicLoadInputHash} from '../scripts/glycemic-load-recipe-binding';
 import {roundGlycemicLoadForDisplay} from '../scripts/glycemic-load-model';
@@ -75,20 +76,56 @@ test('current-main133/226 candidates preserve production input, approved EHOLD r
  assert.equal(sha(lf({notes:'a\r\nb',value:3})),sha(lf({notes:'a\nb',value:3})));
  assert.notEqual(sha(lf({notes:'a\nb',value:3})),sha(lf({notes:'a\nb',value:4})));
  assert.equal(review.publicationAuthorized,false);assert.equal(review.sourceApprovalGranted,false);
- assert.equal(review.candidates.length,6);
+ assert.equal(review.candidates.length,9);
  assert.equal(read('docs/nutrition/glycemic-load-pilot-input.json'),inputText);
  assert.ok(!review.candidates.some(r=>r.recipeId==='tomaatti-kananmuna-wokki'));
- const pending=review.pendingDecisions;
- assert.equal(pending.filter((p:any)=>p.decision==='PREPARATION_APPLICABILITY_REVIEW_REQUIRED').length,17);
- assert.equal(pending.filter((p:any)=>p.decision==='PRESERVE_CURRENT_APPROVED_EHOLD').length,5);
+ assert.equal(review.contentDecisions.length,17);
+ assert.equal(review.pendingDecisions.length,9);
+ assert.equal(review.contentDecisions.filter((p:any)=>p.action==='KEEP_EXISTING_SCOPED_ANALOG').length,2);
+ const original=json('docs/nutrition/gk-legacy-reconciliation/candidates.json');
+ assert.equal(original.decisions.filter((p:any)=>p.decision==='PRESERVE_CURRENT_APPROVED_EHOLD').length,5);
+ const missingSource=structuredClone(original);missingSource.reviewEvidenceSnapshots=missingSource.reviewEvidenceSnapshots.filter((p:any)=>p.id!=='pear-raw-mean-gi-38-2002');
+ assert.throws(()=>verifyLegacyReviewEvidence(read,missingSource),/Missing reviewed GI source snapshot/);
+ const missing=structuredClone(original);delete missing.recipeSnapshotsSha256.baozi;
+ assert.throws(()=>verifyLegacyCandidateScope(missing),/exact snapshot/);
+ assert.throws(()=>verifyLegacyReviewEvidence(p=>{
+  if(p!=='docs/nutrition/glycemic-index-records.json')return read(p);
+  const data=json(p);data.records.find((r:any)=>r.id==='pear-raw-mean-gi-38-2002').gi=99;return JSON.stringify(data);
+ },original),/Reviewed source record changed/);
+ assert.doesNotThrow(()=>verifyLegacyReviewEvidence(p=>{
+  if(p!=='docs/nutrition/glycemic-index-records.json')return read(p);
+  const data=json(p);data.records.find((r:any)=>!original.reviewEvidenceSnapshots.some((snap:any)=>snap.id===r.id)).gi=99;return JSON.stringify(data);
+ },original));
  const baozi=review.candidates.find(r=>r.recipeId==='baozi')!.input.ingredients;
  assert.equal(baozi.find(r=>r.name==='maissitärkkelystä')!.fineliRecordId,'fineli-27-2026-10-25');
  assert.equal(baozi.find(r=>r.name==='maissitärkkelystä')!.grams,7);
  const avocado=review.candidates.find(r=>r.recipeId==='meksikolainen-paputostada-aamupalaksi')!.after.ingredients.find(r=>/avokado/.test(r.name))!;
  assert.equal(avocado.availableCarbohydratePerServingG,0.462);assert.equal(avocado.gi,null);
  for(const id of ['bulgogi','masala-dosa']){
-  assert.equal(review.candidates.find(r=>r.recipeId===id)!.after.status,'CALCULATED');
+  assert.equal(review.candidates.find(r=>r.recipeId===id)!.after.status,'INSUFFICIENT SOURCE DATA');
   assert.equal(report.results.find((r:any)=>r.recipeId===id).glycemicLoadPerServing,null,'candidate cannot publish itself');
  }
- for(const c of review.candidates)assert.equal(c.publicationStatus,'REVIEW_REQUIRED');
+ assert.equal(review.candidates.filter(c=>c.contentAssessment.status==='SUPERSEDED_BY_APPROVED_SCOPE').length,6);
+ const baoziScope=review.candidates.find(r=>r.recipeId==='baozi')!;
+ assert.equal(baoziScope.existingSuccessor.scope,'STUDY_COMPARISON_ONLY');
+ assert.equal(baoziScope.contentAssessment.status,'HOLD');
+ const tostada=review.candidates.find(r=>r.recipeId==='meksikolainen-paputostada-aamupalaksi')!;
+ assert.equal(tostada.existingSuccessor.point,16.638165);
+ assert.match(tostada.existingSuccessor.distinction,/72 g|72g/);
+ const dosa=review.candidates.find(r=>r.recipeId==='masala-dosa')!;
+ assert.deepEqual(dosa.existingSuccessor.scenarioRange,{min:57.8025,max:63.495});
+ assert.equal(dosa.input.ingredients.find(r=>r.name==='urad-dal-linssejä')!.fineliRecordId,null);
+ assert.equal(dosa.input.ingredients.find(r=>r.name==='tuoretta inkivääriä')!.estimatedAvailableCarbohydratePerServingG,0.22425);
+ for(const decision of review.contentDecisions){
+  const input=review.candidates.find(r=>r.recipeId===decision.recipeId)!.input;
+  const row=input.ingredients.find(r=>r.name===decision.ingredient)!;
+  assert.equal(row.giRecordId,decision.action==='KEEP_EXISTING_SCOPED_ANALOG'?decision.giRecordId:null);
+ }
+ for(const c of review.candidates){assert.equal(c.publicationStatus,'REVIEW_REQUIRED');assert.equal(c.contentAssessment.status,c.existingSuccessor.scope.startsWith('CURRENT_APPROVED_')?'SUPERSEDED_BY_APPROVED_SCOPE':'HOLD');assert.equal(c.contentAssessment.publishedGlycemicLoadPerServing,null);assert.ok(c.contentAssessment.reasons.length>0);}
+
+});
+
+test('independent Decimal checks seven source components without approving a whole recipe or sub-threshold omission',()=>{
+ const proof=JSON.parse(execFileSync(process.platform==='win32'?'python':'python3',['-I',fileURLToPath(new URL('../../docs/nutrition/gk-legacy-reconciliation/verify_source_components.py',import.meta.url))],{encoding:'utf8'}));
+ assert.equal(proof.status,'PASS');assert.equal(proof.checked,7);assert.equal(proof.publicationAuthorized,false);
 });
