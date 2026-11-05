@@ -190,7 +190,9 @@ const report = {
   results,
   gkOnlyVariants,
   versionCoverage,
-  coverageViews:{originalRecipe:{total:versionCoverage.total,numeric:versionCoverage.originalNumeric,missing:versionCoverage.total-versionCoverage.originalNumeric},atLeastOneExactVersion:{total:versionCoverage.total,numeric:versionCoverage.numericRecipes,missing:versionCoverage.missing,additionalApprovedVersions:versionCoverage.additionalA+versionCoverage.additionalB}},
+  coveragePolicyVersion: 2,
+  originalCoverageTarget: { numeric: versionCoverage.originalNumeric, total: versionCoverage.total, target: versionCoverage.originalTarget, gap: versionCoverage.originalTargetGap },
+  coverageViews:{originalRecipe:{total:versionCoverage.total,numeric:versionCoverage.originalNumeric,missing:versionCoverage.total-versionCoverage.originalNumeric},atLeastOneExactVersion:{total:versionCoverage.total,numeric:versionCoverage.numericRecipes,missing:versionCoverage.missing,additionalApprovedVersions:versionCoverage.additionalA+versionCoverage.additionalB}, separateVariants:{numeric:versionCoverage.variantNumeric,recipeIds:versionCoverage.variantRecipeIds}, studyComparisons:{numeric:versionCoverage.studyServingRecipeIds.length,recipeIds:versionCoverage.studyServingRecipeIds}, legacyMixed:{numeric:versionCoverage.legacyNumericRecipes,historicalOnly:true}},
   summary: {
     recipes: results.length,
     calculated: results.filter((result) => result.status === "CALCULATED").length,

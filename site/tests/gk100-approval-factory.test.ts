@@ -579,3 +579,18 @@ test('reviewed locale metadata cannot conceal a new preparation in a sealed sour
     (path === 'reseptit/aamupalat/marjainen-chiavanukas.md' ? '\nUnreviewed preparation change\n' : '');
   assert.throws(() => verifyReleaseBundle(bundle, authorization, changedRead), /GK100_RELEASE_CANDIDATE_CHANGED/);
 });
+
+
+test('GK-only release forecasts never claim original-recipe coverage; v2 bundles reject forged original deltas', () => {
+  const {batch,read}=fixture(1);const checked=checkBatch(batch,read);const decisions=approve(checked,'fixture-0');
+  const plan=prepareRelease(checked,decisions,{...coverage,originalRecipeIds:[],variantRecipeIds:[]},base,read);
+  assert.deepEqual([plan.expectedOriginalCoverageDelta,plan.expectedVariantCoverageDelta,plan.expectedStudyServingDelta],[0,1,0]);
+  const bundle=makeReleaseBundle(checked,batch,decisions,plan);
+  assert.equal(bundle.coverageScopeVersion,2);
+  const {bundleSha256:_,...body}=bundle;
+  const forgedBody={...body,expectedOriginalCoverageDelta:1};const forged={...forgedBody,bundleSha256:fingerprint(forgedBody)};
+  assert.throws(()=>verifyReleaseBundle(forged,{schemaVersion:1,bundleSha256:forged.bundleSha256,evidence:'test only'},read),/GK100_RELEASE_COVERAGE_SCOPE/);
+  const {coverageScopeVersion:ignoredScopeVersion,...unversionedBody}=forgedBody;const unversioned={...unversionedBody,bundleSha256:fingerprint(unversionedBody)};
+  assert.throws(()=>verifyReleaseBundle(unversioned,{schemaVersion:1,bundleSha256:unversioned.bundleSha256,evidence:'test only'},read),/GK100_RELEASE_COVERAGE_SCOPE/);
+  assert.throws(()=>prepareRelease(checked,decisions,{...coverage,numericRecipeIds:['fixture-0'],originalRecipeIds:[],variantRecipeIds:[]},base,read),/INVALID_MAIN_COVERAGE_SCOPES/);
+});

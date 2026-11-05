@@ -1,0 +1,169 @@
+{
+  "schemaVersion": 1,
+  "sourcePr": 286,
+  "sourceHead": "68bb4987521859225b6b22a584dad4567242210e",
+  "purpose": "Exclude pending non-original candidates from ORIGINAL_COVERAGE forecasts; no content or scientific approval.",
+  "expectedOriginalCoverageDelta": 0,
+  "candidates": [
+    {
+      "recipeId": "korealainen-bindaetteok-aamiaiseksi",
+      "classification": "VARIANT_ONLY",
+      "candidateSha256": "70618e80e77e4dd3855ba9d70f3cfef83131e88181f3f37dc7511d6b47028717",
+      "originalSha256": "d2a7929ac74825b42e516a08fda2ec1964bd3c5115d047be83c3babadc315ada",
+      "inputSha256": "fddf48b53f03bccaa9c30303df95bf82e0f5f6c2b041741d2de022d1742d40f1",
+      "ownerStatus": "PENDING",
+      "publicationAuthorized": false
+    },
+    {
+      "recipeId": "kerala-kalacurry",
+      "classification": "VARIANT_ONLY",
+      "candidateSha256": "1404630b81a56fade45e9401e88844a4958f1f6c9d89122b6bf1e5602b70aa5b",
+      "originalSha256": "0c2d96d105ba258e741c9e50ffd7250f20f59167e63fb4850757f98dc46e2fed",
+      "inputSha256": "1945399a31394f5a5e793ffda3543f810fe96c7d8419fbeeca7355617199a260",
+      "ownerStatus": "PENDING",
+      "publicationAuthorized": false
+    },
+    {
+      "recipeId": "kookos-lime-kanacurry",
+      "classification": "VARIANT_ONLY",
+      "candidateSha256": "01d78bbd64316c02b73f719ff96d5321573f6b1bd20b74e8627b981ae64ade99",
+      "originalSha256": "33285cce2687729b8d484bd86269769037afb986a91263a6bc5ff1c8ae2f08de",
+      "inputSha256": "11a1091a81d069e66c41378da12569e1d0aeb3214544a0cf43157adc2a821601",
+      "ownerStatus": "PENDING",
+      "publicationAuthorized": false
+    },
+    {
+      "recipeId": "indonesialainen-lontong-sayur-aamiaiseksi",
+      "classification": "VARIANT_ONLY",
+      "candidateSha256": "1fa3e8c9310177af3983eaa52430f390e17b7858e0d91b7e3b74ad6c68171c51",
+      "originalSha256": "6edb30b88df161bea6daeff58d333f752036c79784ea4366d352e8f69bc2ee7b",
+      "inputSha256": "bbc3990b9128b99b3d54ae6540975dd0fac3cb5e24010b91547be47a7bf79279",
+      "ownerStatus": "PENDING",
+      "publicationAuthorized": false
+    },
+    {
+      "recipeId": "pho-bo",
+      "classification": "VARIANT_ONLY",
+      "candidateSha256": "9f3068fe2b82387cdfe9734e060f34820a8daecacb04c0703ccb40b59e3d6025",
+      "originalSha256": "99a56bba756b54b3bde16f25d4d6a00c76828d454c3b4870e826ee5accc786de",
+      "inputSha256": "45f1bc2a938492a8d13c938ba7466395d8f35d75b2de8981e58fc3775a277565",
+      "ownerStatus": "PENDING",
+      "publicationAuthorized": false
+    },
+    {
+      "recipeId": "kiinalainen-bao-munalla",
+      "classification": "VARIANT_ONLY",
+      "candidateSha256": "c3856748ceed04de8e786dfc0ef3bbc9b424771a1a504a554812e9f5f0ba7466",
+      "originalSha256": "dafce3c454f4be780f5a9c3d53803e028c1333ba4a32267d1e899bdbea6aa836",
+      "inputSha256": "930018b4f54a1daea9a16656e0b74549c5d3fb4bb4f3f63c50b548ec080e433f",
+      "ownerStatus": "PENDING",
+      "publicationAuthorized": false
+    },
+    {
+      "recipeId": "meksikolainen-chilaquiles-verdes",
+      "classification": "VARIANT_ONLY",
+      "candidateSha256": "dfd8d8102ba4a4e52496b2a3ca1457064b9027ce5cec8a48fa84d4b4531bf71f",
+      "originalSha256": "84d2801095a02bb3c9a7d98b4c937653798ee84706fe032cf886365bd4ae4160",
+      "inputSha256": "bf18ecdda86b3472960cd193a3886ed6a58f05be92150fc4b3ff5a4391b764c2",
+      "ownerStatus": "PENDING",
+      "publicationAuthorized": false
+    },
+    {
+      "recipeId": "meksikolainen-huevos-divorciados",
+      "classification": "VARIANT_ONLY",
+      "candidateSha256": "225c0153050d6689ab1b140f8c34db97c22e04578c1cd2a24b8b6fdccc1e25a5",
+      "originalSha256": "8e513db20a0b1a7ef2bc1b19d69f781853384522b42a87f88c75fb8c33307334",
+      "inputSha256": "d0f89f67ff1b161b39fea83a11c316f3d037c6207f17359994f18c41eaf58428",
+      "ownerStatus": "PENDING",
+      "publicationAuthorized": false
+    },
+    {
+      "recipeId": "pellava-puuro-pahkinoilla",
+      "classification": "VARIANT_ONLY",
+      "candidateSha256": "47634d773d781ab5c8135205fe8f91f17c091b4f56ad46cdb70d91d14c29b17f",
+      "originalSha256": "8d14943ee4a198f0645ab1020a47d936961a6da07585a0de8cdf902fa8c9fe6a",
+      "inputSha256": "22b77bca93f0ac87bd54017417ed0fb562496bfec765ab439381584ec08ca9fe",
+      "ownerStatus": "PENDING",
+      "publicationAuthorized": false
+    },
+    {
+      "recipeId": "idli-sambar",
+      "classification": "NO_RELIABLE_GK",
+      "candidateSha256": "7af6c3ae2f0f3e589db2469a56f654197b655d31fb86580ec7ad0478c61c4ccd",
+      "originalSha256": "9c0b75e24940dd7a399a88ec7e05bd279429f5cac9f4e3a54a8f4e960a7d14f1",
+      "inputSha256": "8e802776291772ab94a0c63c173c9e3d48fb71fb90dbd057271bee8cf373c95f",
+      "ownerStatus": "PENDING",
+      "publicationAuthorized": false
+    },
+    {
+      "recipeId": "pohjoisafrikkalainen-bissara",
+      "classification": "VARIANT_ONLY",
+      "candidateSha256": "54d191683a91dcb1d5a4997a175c829f3a63d8e98b6ea91a312c4a83847923fe",
+      "originalSha256": "1ff5c53d68cced68d1a56360dafccd38096f3192a2d0579cd79214362b9581a3",
+      "inputSha256": "4c6504cc75b8ad17f4cd2be27d4f46a6656359aa369cf976a05499e87e5b6bad",
+      "ownerStatus": "PENDING",
+      "publicationAuthorized": false
+    },
+    {
+      "recipeId": "korealainen-bataatti-riisikulho",
+      "classification": "VARIANT_ONLY",
+      "candidateSha256": "c772830e4adbb29046b3904e6bcbd2b0bf875d461e3f12ad326a3c553413d437",
+      "originalSha256": "537e17b3a04e4ec0332e7deb7bcb632d241600d60eba500db646f53e8b678b8d",
+      "inputSha256": "93c515ac03fbad74df63e5a61317a9f0ddb0f58c87181a6b5bfb13b72003efdb",
+      "ownerStatus": "PENDING",
+      "publicationAuthorized": false
+    },
+    {
+      "recipeId": "kung-pao-kana",
+      "classification": "VARIANT_ONLY",
+      "candidateSha256": "9d804bb829e15fc1b0d8d4abdfb86fa67998b917bb4c7de034052cd827f611f0",
+      "originalSha256": "f9e22adae3f6751502f6cb2470273c933981ecd1ab424dcf71221c0d2f21265f",
+      "inputSha256": "37c35d0b766889159f36295f50b92c7e72946e33d396d5126f64d5186751fe3c",
+      "ownerStatus": "PENDING",
+      "publicationAuthorized": false
+    },
+    {
+      "recipeId": "intialainen-masala-dosa",
+      "classification": "VARIANT_ONLY",
+      "candidateSha256": "399614c7a907dd4bd964596bbdbbdad5a06394bb22db46cebecba6c88847c464",
+      "originalSha256": "bbe0ddec40109be7f6815ae2f4c4d28d6f6677f3bf0844c64e9d1d997610e258",
+      "inputSha256": "e896fd57c6406f7afeb10ca675258802e451d09b7806b2211f5f3c395547ae98",
+      "ownerStatus": "PENDING",
+      "publicationAuthorized": false
+    },
+    {
+      "recipeId": "jerk-kana",
+      "classification": "VARIANT_ONLY",
+      "candidateSha256": "85b0fe0fa6d303a6635bff658b134f37680ee55b3b0582e2770d3251e20b7150",
+      "originalSha256": "9a5501f0f5a7e397f211ed3fc6017975122aa8ce7b3e3c9bbb741096157acafc",
+      "inputSha256": "9fceafc9bacfe3492c992f9a1fdeaa383ad24e8331ab2c4289405c7dcbf58531",
+      "ownerStatus": "PENDING",
+      "publicationAuthorized": false
+    }
+  ],
+  "baselineMainSha": "121fab51877bb80311be5b11bbfe9861ab503c7a",
+  "documentationRecheckMainSha": "721e22716c312afb4f1634240012fac7a69570c0",
+  "historicalCiComparison": {
+    "pr286Run": 42013018190,
+    "sameBaseMainRun": 42011884750,
+    "sameBaseMainSha": "dab15fe907db7336320dcd79161fd61462b28034",
+    "matchingFailureNames": [
+      "all326 parent GK objects,23 old variants, macro sources and recipe trees remain on the main baseline",
+      "parent recipe/macro sources and all326 original-version results stay unchanged after GK-only approval",
+      "Operation142 adds exactly ten candidates and preserves all133 current main numeric results",
+      "exactly one new couscous result; all325 others and146 prior numeric results preserved",
+      "three E-HOLD candidates preserve every other result object and all143 numeric results",
+      "historical isolated24 view adds exactly24 (actual33 deltas tested separately), preserving all 302 other result objects",
+      "nine new results preserve all147 prior numbers and every other full result",
+      "historical C-release regression changes exactly two; all131 previous numeric results and three HOLDs stay identical",
+      "historical isolated Q09 view changes nine old zeros (combined33 tested separately) and preserves all317 other complete result hashes",
+      "recovery historical main131 regression changes exactly one object and retains all130 numeric values"
+    ],
+    "fixedByPr": 287,
+    "fixedMainSha": "121fab51877bb80311be5b11bbfe9861ab503c7a",
+    "baselineFocusedChecks": {
+      "pass": 10,
+      "fail": 0
+    }
+  }
+}
