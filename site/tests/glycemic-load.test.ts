@@ -2510,3 +2510,45 @@ test("exact reviewed text rejects changed preparation even when structural recip
  assert.equal(exactRecipeTextBindingMatches(hash,changed),false);
  assert.equal(exactRecipeTextBindingMatches(undefined,original),false);
 });
+
+
+test("P1 coconut-milk identity: two legacy HOLD inputs cannot use cow-milk composition or dairy GI", async () => {
+  // Read current inputs directly: the historical readFile helper intentionally rewrites old snapshots.
+  const root = path.resolve(import.meta.dirname, "../..");
+  const [inputText, foodText, giText] = await Promise.all([
+    actualReadFile(path.join(root, "docs/nutrition/glycemic-load-pilot-input.json"), "utf8"),
+    actualReadFile(path.join(root, "docs/nutrition/food-records.json"), "utf8"),
+    actualReadFile(path.join(root, "docs/nutrition/glycemic-index-records.json"), "utf8"),
+  ]);
+  const inputs = JSON.parse(inputText) as { recipes: GlycemicLoadRecipeInput[] };
+  const foods = JSON.parse(foodText) as FoodRecord[];
+  const gi = (JSON.parse(giText) as { records: GlycemicIndexRecord[] }).records;
+
+  assert.equal(inputs.recipes.length, 326, "published recipe input corpus must remain complete");
+  for (const [recipeId, ingredientName, amountMl] of [
+    ["kookos-lime-kanacurry", "täysrasvaista kookosmaitoa", 400],
+    ["sate-ayam", "kookosmaitoa", 200],
+  ] as const) {
+    const recipe = inputs.recipes.find((row) => row.recipeId === recipeId);
+    assert.ok(recipe, recipeId + " must exist");
+    const ingredient = recipe.ingredients.find((row) => row.name === ingredientName);
+    assert.ok(ingredient, recipeId + " must retain its coconut ingredient");
+    assert.equal(ingredient.grams, null, recipeId + ": a milk-based ml-to-g conversion is not valid");
+    assert.equal(ingredient.fineliRecordId, null, recipeId + ": cow milk must not be a coconut composition");
+    assert.equal(ingredient.giRecordId, null, recipeId + ": dairy GI must not be a coconut GI");
+    assert.deepEqual(ingredient.recipeQuantity, { amount: amountMl, unit: "ml", massGrams: null });
+    assert.match(ingredient.excludedReason ?? "", /HOLD:.*coconut milk.*cow's milk/i);
+    assert.equal(ingredient.estimatedAvailableCarbohydratePerServingG, undefined, "unknown carbohydrate is not zero");
+    assert.equal(ingredient.negligibleAssumption, undefined, "unknown coconut milk must not become a small omission");
+
+    const result = calculateGlycemicLoad(recipe, foods, gi);
+    assert.equal(result.status, "INSUFFICIENT SOURCE DATA");
+    assert.equal(result.glycemicLoadPerServing, null);
+    assert.ok(result.blockers.some((reason) => reason.includes("coconut milk was incorrectly linked")),
+      recipeId + ": explicit source-identity HOLD must remain a blocking reason");
+    const assessed = result.ingredients.find((row) => row.name === ingredientName);
+    assert.ok(assessed, recipeId + ": calculator must retain coconut ingredient");
+    assert.equal(assessed.availableCarbohydratePerServingG, null);
+    assert.equal(assessed.giContribution, null);
+  }
+});
