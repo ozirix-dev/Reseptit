@@ -18,7 +18,7 @@ test('closed pilot reports its actual16 results, not the30 target or classes as 
 test('all170 HOLDs screened and all70 selected IDs have a concrete decision',()=>{
  const csv=readFileSync(path.join(root,folder+'hold-screen.csv'),'utf8').trim().split(/\r?\n/);assert.equal(csv.length,171);
  const ids=csv.slice(1).map(l=>l.split(',')[0]);assert.equal(new Set(ids).size,170);
- const hold=json('tmp/nutrition/glycemic-load-pilot.json').results.filter((r:any)=>r.status!=='CALCULATED').map((r:any)=>r.recipeId);assert.deepEqual(new Set(ids),new Set(hold));assert.ok(cases.every(c=>hold.includes(c.recipeId)));
+ const hold=restoreBeforeAfcdCorrection(json('tmp/nutrition/glycemic-load-pilot.json')).results.filter((r:any)=>r.status!=='CALCULATED').map((r:any)=>r.recipeId);assert.deepEqual(new Set(ids),new Set(hold));assert.ok(cases.every(c=>hold.includes(c.recipeId)));
  const d=json(folder+'recipe-decisions.json');assert.equal(d.decisions.length,70);assert.equal(d.decisions.filter((r:any)=>r.decision==='HOLD').length,54);assert.deepEqual(new Set(d.decisions.map((r:any)=>r.recipeId)),new Set(pack.selectedRecipeIds));assert.ok(d.decisions.every((r:any)=>r.decisionEvidence.length>50));assert.equal(json(folder+'next30.json').queue.length,30);
 });
 test('native availableCHO is independently verified; wrong field, stale source, P0 proxy rejected',()=>{

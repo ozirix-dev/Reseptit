@@ -1,3 +1,4 @@
+import {assertOriginalContentTransition,originalContentInventoryBefore,restoreBeforeOriginalContent} from './original-content-transition';
 import {p1Transition,requiresP1SourceCorrection,verifyP1SourceInputs} from './p1-source-transition';
 import {execFileSync} from 'node:child_process';
 import {strict as assert} from 'node:assert';
@@ -18,13 +19,15 @@ const lf=(v:any):any=>typeof v==='string'?v.replaceAll('\r\n','\n'):Array.isArra
 const before=json('docs/nutrition/gk-legacy-reconciliation/baseline.json');
 const report=json('tmp/nutrition/glycemic-load-pilot.json');
 
-test('live326 allow only exact AFCD deltas and ancestry-bound main P1 withdrawals; all87 variants and macros stay identical',()=>{
- assert.equal(report.results.length,326);
+test('Live original results preserve frozen history plus the exact reviewed transitions; all87 variants and macros stay identical',()=>{
+ assert.equal(report.results.length,327);
+ assertOriginalContentTransition(report);
+ const historical = restoreBeforeOriginalContent(structuredClone(report));
  const requiresP1=requiresP1SourceCorrection(root);
  verifyP1SourceInputs(json('docs/nutrition/glycemic-load-pilot-input.json').recipes,requiresP1);
  const affected=Object.keys(before.expectedResultDeltas);
  assert.deepEqual(affected.sort(),['pellava-puuro-pahkinoilla','valimerellinen-ricotta-persikkakulho']);
- for(const r of report.results){
+ for(const r of historical.results){
   const p1=p1Transition.records.find((x:any)=>x.recipeId===r.recipeId);
   if(requiresP1&&p1){assert.equal(sha(r),p1.newResultSha256,r.recipeId+' reviewed P1 main correction');assert.equal(r.glycemicLoadPerServing,null);continue;}
   const restored=structuredClone(r);
@@ -38,11 +41,11 @@ test('live326 allow only exact AFCD deltas and ancestry-bound main P1 withdrawal
  }
  assert.equal(report.gkOnlyVariants.length,87);
  for(const v of report.gkOnlyVariants)assert.equal(sha(v),before.variantHashes[v.recipeId+'/'+v.versionId],v.recipeId);
- assert.equal(sha(lf(json('tmp/nutrition/audit.json').inventory)),before.macroInventorySha256);
+ assert.equal(sha(lf(originalContentInventoryBefore(json('tmp/nutrition/audit.json').inventory))),before.macroInventorySha256);
  assert.equal(sha(report.giSourcePolicy),before.currentSourcePolicySha256);
  assert.equal(sha(report.giSourceCatalog),before.currentSourceCatalogSha256);
- assert.deepEqual(report.calculationInputMismatches,requiresP1?p1Transition.newInputMismatches:[]);
- assert.deepEqual(report.calculationEvidenceMismatches,requiresP1?p1Transition.newEvidenceMismatches:[]);
+ assert.deepEqual(historical.calculationInputMismatches,requiresP1?p1Transition.newInputMismatches:[]);
+ assert.deepEqual(historical.calculationEvidenceMismatches,requiresP1?p1Transition.newEvidenceMismatches:[]);
  const peach=report.results.find((r:any)=>r.recipeId==='valimerellinen-ricotta-persikkakulho');
  assert.equal(peach.glycemicLoadPerServing,3.97);
  assert.equal(peach.unroundedGlycemicLoadPerServing,3.96885);

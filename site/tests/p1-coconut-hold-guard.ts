@@ -1,3 +1,4 @@
+import {originalContentSourceBefore} from './original-content-transition';
 import assert from "node:assert/strict";
 import { createHash } from "node:crypto";
 import { execFileSync } from "node:child_process";
@@ -40,7 +41,7 @@ export function assertOnlyP1CoconutInputChanges(root: string): void {
   const old = JSON.parse(execFileSync("git", [
     "show", "081ba2c95f9243c1ed72206073160f9e64992e96:" + relative
   ], { cwd: root, encoding: "utf8", maxBuffer: 16 * 1024 * 1024 }));
-  const current = JSON.parse(readFileSync(path.join(root, relative), "utf8"));
+  const current = JSON.parse(originalContentSourceBefore(relative, readFileSync(path.join(root, relative), "utf8")));
   assert.equal(old.recipes.length, 326);
   assert.equal(current.recipes.length, 326);
   const expectedNames: Record<string, [string, number]> = {

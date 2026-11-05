@@ -64,9 +64,9 @@ ingredients:
     unit: st
     item: vårlök
     note: i skivor
-  - amount: 4
-    unit: portioner
-    item: kokt ris
+  - amount: 600
+    unit: g
+    item: kokt långkornigt ris
 source_language: fi
 source_recipe: reseptit/paaruoat/mapo-tofu.md
 translation_of: mapo-tofu
@@ -86,7 +86,7 @@ Tofurätten i Sichuan-stil kombinerar mjuk tofu, köttfärs, chilibönpasta och 
 2. Tillsätt chilipasta, vitlök och ingefära. Stek i en minut, rör om.
 3. Tillsätt vatten och sojasås. Koka upp och tillsätt försiktigt tofun. Sjud i 8 minuter.
 4. Blanda majsstärkelse med en matsked vatten. Häll i pannan i en tunn remsa och rör tills såsen tjocknar lite.
-5. Strö Sichuanpeppar och vårlök ovanpå. Servera med ris.
+5. Strö Sichuanpeppar och vårlök ovanpå. Servera med 150 g kokt långkornigt ris per person.
 
 ## Anteckningar
 

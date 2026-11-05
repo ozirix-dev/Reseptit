@@ -260,6 +260,26 @@ const editorialSnapshots: Readonly<Record<string, {
       [91, 1, "5. ล้างเส้นและสะเด็ดน้ำ ทอดในกระทะให้แห้งสักครู่แล้วแบ่งเป็นชาม\n"],
     ],
   },
+  "reseptit/aamupalat/intialainen-pinaatti-paneer-chilla.md": {
+    currentSha256: "c4c77740d96d341f6530dc32275426bbf5fd6ed971dcad69d7f7d4e8de46fcd2",
+    inverseEdits: [[61, 9, "1. Sekoita jauhot tai viljat ja muut kuivat ainekset kulhossa. Lisää neste vähitellen ja vatkaa tasaiseksi taikinaksi.\n2. Anna taikinan levätä 10 minuuttia. Jos käytät kokonaisia palkokasveja tai viljoja taikinapohjana, niiden tulee olla liotettuja ja hienonnettuja.\n3. Kuumenna öljytty pannu keskilämmölle. Paista taikina ohuina annoksina; käännä, kun reunat kuivuvat ja pinta alkaa asettua.\n4. Tarjoa korianterichutneyn ja sitruunalohkon kanssa.\n"], [17, 6, "  - amount: 1\n    unit: \"kpl\"\n    item: \"pinaatti\"\n"]],
+  },
+  "reseptit/paaruoat/mapo-tofu.md": {
+    currentSha256: "341342cef1ea3ff375deb9504bb47e56f3837ed3991956a27ce490fb759ae433",
+    inverseEdits: [[90, 1, "5. Ripottele päälle sichuaninpippuri ja kevätsipuli. Tarjoa riisin kanssa.\n"], [66, 3, "  - amount: 4\n    unit: annosta\n    item: keitettyä riisiä\n"]],
+  },
+  "kaannokset/en/paaruoat/mapo-tofu.md": {
+    currentSha256: "be198ffacbf58dbac9c46b14eb7f5758a2d780749b76d9c9ada0b2344aa410ca",
+    inverseEdits: [[88, 1, "5. Sprinkle Sichuan pepper and spring onion on top. Serve with rice.\n"], [66, 3, "  - amount: 4\n    unit: servings\n    item: cooked rice\n"]],
+  },
+  "kaannokset/sv/paaruoat/mapo-tofu.md": {
+    currentSha256: "4906e4cfd9aa31e47822b4d5fa734d1569faaa540985d034789092322632d08e",
+    inverseEdits: [[88, 1, "5. Strö Sichuanpeppar och vårlök ovanpå. Servera med ris.\n"], [66, 3, "  - amount: 4\n    unit: portioner\n    item: kokt ris\n"]],
+  },
+  "kaannokset/th/paaruoat/mapo-tofu.md": {
+    currentSha256: "45d18da6bfbc731685e873ffe44c9fe3e39cf498ee5488af2417e60759fff0fd",
+    inverseEdits: [[88, 1, "5. โรยพริกไทยเสฉวนและต้นหอมลงไปด้านบน เสิร์ฟพร้อมข้าว\n"], [85, 1, "2. ใส่น้ำพริกโต้วปันเจียง กระเทียม และขิง ผัดสักครู่กวน\n"], [66, 3, "  - amount: 4\n    unit: ที่\n    item: ข้าวสวย\n"]],
+  },
 };
 
 export function recipeTextForApprovedSnapshot(file: string, text: string): string {

@@ -7601,9 +7601,9 @@
           "giRecordId": null
         },
         {
-          "name": "kananmunia",
-          "grams": 165,
-          "massEvidence": "3 eggs × Fineli #858 KPL_M 55 g",
+          "name": "kananmuna",
+          "grams": 55,
+          "massEvidence": "1 egg × Fineli #858 KPL_M 55 g",
           "fineliRecordId": "fineli-858-2026-10-25",
           "giRecordId": null
         },
@@ -18093,29 +18093,32 @@
           "name": "kikhernejauho",
           "grams": 100,
           "fineliRecordId": "afcd-F003986-release-3",
-          "giRecordId": "legumes-category-mean-gi-34",
-          "massEvidence": "Recipe-listed 100 g, mapped to Flour, chickpea (besan) (raw chickpea flour (besan)).",
-          "foodKey": "legume",
-          "preparationKey": "legume-category",
-          "giMatchEvidence": "Legumes, category mean: Broad category mean; substantial uncertainty when applied to a specific cooked bean.; category/analogue estimate, low confidence."
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed 100 g, mapped to Flour, chickpea (besan) (raw chickpea flour (besan))."
         },
         {
-          "name": "pinaatti",
-          "grams": null,
+          "name": "tuoretta pinaattia",
+          "grams": 50,
           "fineliRecordId": "afcd-F008749-release-3",
-          "giRecordId": "vegetables-category-mean-gi-66",
-          "excludedReason": "The recipe amount 1 kpl has no food-specific mass conversion for Spinach, baby, fresh, raw.",
-          "massEvidence": "Mapped food state: fresh raw baby spinach; mass conversion unavailable."
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed 50 g fresh spinach. AFCD baby spinach is a composition reference pending applicability review."
+        },
+        {
+          "name": "vettä",
+          "grams": 140,
+          "fineliRecordId": null,
+          "giRecordId": null,
+          "excludedReason": "Plain water contributes zero available carbohydrate.",
+          "estimatedAvailableCarbohydratePerServingG": 0,
+          "negligibleAssumption": "Plain water has zero available carbohydrate.",
+          "massEvidence": "Recipe-listed 140 ml plain water."
         },
         {
           "name": "paneer",
           "grams": 100,
           "fineliRecordId": "fineli-650-release-20",
-          "giRecordId": "dairy-category-mean-gi-35",
-          "massEvidence": "Recipe-listed 100 g, mapped to TUOREJUUSTO, KOTIJUUSTO, RASVAA 9-14 %, MAALAISJUUSTO (plain fresh cheese, closest generic Fineli match).",
-          "foodKey": "dairy",
-          "preparationKey": "unflavoured-dairy",
-          "giMatchEvidence": "Dairy products, category mean: Category mean, not a measured GI for the recipe's cream cheese.; category/analogue estimate, low confidence."
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed 100 g, mapped to TUOREJUUSTO, KOTIJUUSTO, RASVAA 9-14 %, MAALAISJUUSTO (plain fresh cheese, closest generic Fineli match)."
         },
         {
           "name": "juustokumina",
@@ -18927,12 +18930,11 @@
           "massEvidence": "Recipe-listed small seasoning/herb amount; bounded estimate, not a weighed amount."
         },
         {
-          "name": "keitettyä riisiä",
-          "grams": null,
-          "fineliRecordId": "fineli-11521-release-20",
-          "giRecordId": "rice-category-mean-gi-67",
-          "excludedReason": "The recipe amount 4 annosta has no food-specific mass conversion for RIISI PITKÄJYVÄINEN, PUUROUTUMATON.",
-          "massEvidence": "Mapped food state: dry uncooked long-grain white rice; mass conversion unavailable."
+          "name": "kypsää pitkäjyväistä riisiä",
+          "grams": 600,
+          "fineliRecordId": "fineli-30346-release-20",
+          "giRecordId": null,
+          "massEvidence": "Recipe-listed 600 g cooked long-grain rice across four servings. Fineli 30346: cooked unsalted long-grain rice."
         }
       ]
     },
