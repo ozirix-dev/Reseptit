@@ -1,6 +1,11 @@
 # Reseptit: yhteinen Cloudflare-siirtosuunnitelma
 
-Päivitetty 2.11.2026. Tila: dokumentaatio, **ei toteutus- tai julkaisulupaa**.
+Päivitetty 5.11.2026. Tila: säilytettävä suunnittelu- ja inventaariodokumentaatio, **ei toteutus- tai julkaisulupaa**.
+
+**Siivouksen päätös:** PR:n dokumentaation yhdistäminen mainiin ei hyväksy SOURCE-01-lähteitä,
+D1/R2-migraatiota, kuvien julkaisua, DNS-siirtoa tai vaiheiden aloitusta.
+Kuvainventaariot ovat 2.11.2026 päivättyjä historiallisia havaintoja;
+ennen toteutusta ne luetaan uudelleen hyväksytystä ajantasaisesta main-snapshotista.
 Repository: `ozirix-dev/Reseptit`. [Draft-PR #172](https://github.com/ozirix-dev/Reseptit/pull/172).
 Työhaara: `codex/cloudflare-images-plan-20261102`.
 Inventaarion main-SHA: `583fdb91aeb12114f909412b9165fc3b02a6515d`.
