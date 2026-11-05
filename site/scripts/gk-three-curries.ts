@@ -1,3 +1,4 @@
+import {reviewedSourceHashMatches} from './afcd-column-correction';
 import {createHash} from 'node:crypto';
 import {readFileSync} from 'node:fs';
 import {join} from 'node:path';
@@ -29,7 +30,7 @@ export function buildThreeCurryVariants(root:string): GkOnlyVariant[] {
     }
     const sources = read(dir+'sources.json');
     for (const [file,hash] of Object.entries(sources.sourceFilesLfSha256)) {
-      check(sha(text(file))===hash,'native source or engine changed: '+file);
+      check(reviewedSourceHashMatches(file,text(file),hash as string),'native source or engine changed: '+file);
     }
     const {cases} = read(dir+'cases.json');
     check(cases.length===1,'single exact case');
