@@ -2559,3 +2559,38 @@ test("P1 coconut-milk identity: two legacy HOLD inputs cannot use cow-milk compo
     assert.equal(assessed.giContribution, null);
   }
 });
+
+ 
+test("P1 coconut milk HOLD rejects the cow-milk identity and dairy GI in both legacy inputs", async () => {
+  const root = path.resolve(import.meta.dirname, "../..");
+  const [pilotText, foodText, giText] = await Promise.all([
+    actualReadFile(path.join(root, "docs/nutrition/glycemic-load-pilot-input.json"), "utf8"),
+    actualReadFile(path.join(root, "docs/nutrition/food-records.json"), "utf8"),
+    actualReadFile(path.join(root, "docs/nutrition/glycemic-index-records.json"), "utf8"),
+  ]);
+  const pilot = JSON.parse(pilotText) as { recipes: GlycemicLoadRecipeInput[] };
+  const foods = JSON.parse(foodText) as FoodRecord[];
+  const gis = (JSON.parse(giText) as { records: GlycemicIndexRecord[] }).records;
+  assert.equal(pilot.recipes.length, 326, "retain the complete published recipe inventory");
+  for (const [recipeId, name, amountMl] of [
+    ["kookos-lime-kanacurry", "täysrasvaista kookosmaitoa", 400],
+    ["sate-ayam", "kookosmaitoa", 200],
+  ] as const) {
+    const recipe = pilot.recipes.find((entry) => entry.recipeId === recipeId);
+    assert.ok(recipe, recipeId);
+    const item = recipe.ingredients.find((entry) => entry.name === name);
+    assert.ok(item, `${recipeId} coconut milk`);
+    assert.equal(item.grams, null, "unverified ml-to-g conversion must not be used");
+    assert.equal(item.fineliRecordId, null, "cow's milk is not coconut milk");
+    assert.equal(item.giRecordId, null, "dairy GI is not coconut-milk GI");
+    assert.equal(item.foodKey, null);
+    assert.equal(item.preparationKey, null);
+    assert.deepEqual(item.recipeQuantity, { amount: amountMl, unit: "ml", massGrams: null });
+    assert.match(item.excludedReason ?? "", /HOLD.*coconut milk.*cow's milk/i);
+    assert.equal(item.estimatedAvailableCarbohydratePerServingG, undefined, "do not invent zero available carbohydrate");
+    const result = calculateGlycemicLoad(recipe, foods, gis);
+    assert.equal(result.status, "INSUFFICIENT SOURCE DATA", `${recipeId} stays HOLD`);
+    assert.equal(result.glycemicLoadPerServing, null, "no unreviewed numeric GK");
+    assert.ok(result.blockers.some((blocker) => blocker.includes(recipeId) && blocker.includes(name)), "source mismatch remains explicit blocker");
+  }
+});
