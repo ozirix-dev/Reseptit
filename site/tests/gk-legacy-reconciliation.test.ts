@@ -41,7 +41,11 @@ test('Live original results preserve frozen history plus the exact reviewed tran
  }
  assert.equal(report.gkOnlyVariants.length,87);
  for(const v of report.gkOnlyVariants)assert.equal(sha(v),before.variantHashes[v.recipeId+'/'+v.versionId],v.recipeId);
- assert.equal(sha(lf(originalContentInventoryBefore(json('tmp/nutrition/audit.json').inventory))),before.macroInventorySha256);
+ const inventory = json('tmp/nutrition/audit.json').inventory;
+ for (const lineEnding of ['\n', '\r\n']) {
+  const withLineEndings = inventory.map((row: any) => ({...row, notes: row.notes.replaceAll('\r\n', '\n').replaceAll('\n', lineEnding)}));
+  assert.equal(sha(lf(originalContentInventoryBefore(withLineEndings))),before.macroInventorySha256);
+ }
  assert.equal(sha(report.giSourcePolicy),before.currentSourcePolicySha256);
  assert.equal(sha(report.giSourceCatalog),before.currentSourceCatalogSha256);
  assert.deepEqual(historical.calculationInputMismatches,requiresP1?p1Transition.newInputMismatches:[]);

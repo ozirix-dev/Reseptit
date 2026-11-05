@@ -100,14 +100,19 @@ export function assertOriginalContentTransition(report: any) {
   }
 }
 
+// Recipe notes in the audit follow the checkout's line endings.
+function inventoryRowWithLfNotes<T extends {notes: string}>(row: T): T {
+  return { ...row, notes: row.notes.replaceAll("\r\n", "\n") };
+}
+
 // Inventory rows carry recipe text metadata even when the macro values are missing.
 export function originalContentInventoryBefore(rows: any[]) {
   const addition = rows.filter(row => row.recipe_id === mainAddition.recipeId);
-  assert.deepEqual(addition, [mainAddition.inventory]);
+  assert.deepEqual(addition.map(inventoryRowWithLfNotes), [inventoryRowWithLfNotes(mainAddition.inventory)]);
   return rows.filter(row => row.recipe_id !== mainAddition.recipeId).map(row => {
     const change = changes.get(row.recipe_id);
     if (!change || !("inventory" in change.after) || !("inventory" in change.before)) return row;
-    assert.deepEqual(row, change.after.inventory, row.recipe_id + " current nutrition inventory");
+    assert.deepEqual(inventoryRowWithLfNotes(row), inventoryRowWithLfNotes(change.after.inventory), row.recipe_id + " current nutrition inventory");
     return structuredClone(change.before.inventory);
   });
 }
