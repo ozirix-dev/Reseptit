@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "GK_TWO_LANE_PIZZA_RESEARCH_FIXTURE_V1",
+  "description": "NON-PUBLISHABLE example: official GK remains HOLD; GI sensitivity values are arbitrary mathematical inputs, not sourced GI estimates.",
+  "methodStatus": "DESIGN_ONLY",
+  "publicationAuthorized": false,
+  "lane": "WHAT_IF_ONLY",
+  "recipeId": "raejuustopizza-kaurajauhopohjalla",
+  "recipeSource": "reseptit/paaruoat/raejuustopizza-kaurajauhopohjalla.md",
+  "compositionSource": "docs/nutrition/calculations/raejuustopizza-kaurajauhopohjalla.json",
+  "compositionSourceHash": "32e6247c13590f4f7e9e767c25bd4f0df09af83e1d5becf1ea7cc5b486489122",
+  "servings": 2,
+  "availableCarbohydratePerServingG": 12.902625,
+  "oatFlourCarbohydratePerServingG": 7.984625,
+  "otherCarbohydratePerServingG": 4.918,
+  "actualGlycemicLoadPerServing": null,
+  "reviewedGiForBakedOatCottageCheeseBase": null,
+  "otherCarbohydrateGiBindings": [],
+  "modelPointPerServing": null,
+  "modelRangePerServing": null,
+  "inputStatus": "CHO_KNOWN_GI_APPLICABILITY_UNRESOLVED",
+  "mathematicalWhatIf": {
+    "note": "Never publish as GI/GK; arbitrary GI sensitivity at one assumed other-CHO GI 50",
+    "otherGiAssumption": 50,
+    "oatGiAssumptions": [
+      50,
+      70,
+      100
+    ],
+    "resultsPerServing": [
+      6.4513125,
+      8.0482375,
+      10.443625
+    ],
+    "biologicalRange": false,
+    "confidenceInterval": false,
+    "sourceBackedComparators": false
+  },
+  "acceptance": {
+    "expectedFirstStatus": "GI_APPLICABILITY_REVIEW",
+    "mustNotChangeLegacyGk": true,
+    "mustNotCountTowardsCoverage": true,
+    "requiresOwnerApprovalForFuturePublicEstimate": true
+  }
+}
