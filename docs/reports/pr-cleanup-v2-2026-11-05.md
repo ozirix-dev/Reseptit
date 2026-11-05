@@ -1,5 +1,56 @@
 # Reseptit PR-jonon siivous V2 5.11.2026
 
+## Toteutunut siivous ja lopputarkistus
+
+- Avoin jono pieneni 60 PR:stä 32 PR:ään. Suljettiin 29, ja yksi uusi koottu Draft #277 säilyttää historiaviitteen. Aiemmasta jonosta jäi avoimeksi 31 PR:ää.
+- Kaikki 29 sulkemista varmennettiin GitHubin GraphQL-rajapinnasta. Jokaisella on perustelukommentti, joka on tallennettu ennen sulkemista. HEADit vastaavat kartoitusta ja merge-tila on false.
+- Kaikkien 60 alkuperäisen PR:n nimetty etähaara säilyi samalla HEADilla. Myös 31 avoimeksi jätetyn PR:n HEADit säilyivät. Main on edelleen 0fa20528ffe0ca075c9e0fb54c2b388cd7d959fe.
+- #255 sai jatkokommentin #269:n työlistasta ja avoimista HOLD-perusteista. #222 sai täsmällisen CI-diagnoosin. #272 ja #274 saivat yhteisten tiedostojen ja SHA-sidosten integraatiorajat.
+- #272:n ja #274:n kaikki 12 uutta editorialSnapshots-riviä varmennettiin erikseen. currentSha256 vastaa alkuperäistä Git-blobia ja inverseEdits palauttaa nyky-mainin tavut täsmälleen.
+- Avoimen aiemman jonon luokat ovat KEEP_ACTIVE 10, REVIEW 15, STACKED 1 ja BLOCKED 5. Arkisto-Draft #277 on lisäksi dokumentaation katselmointijonossa.
+- Tarkistus rajautui kartoitukseen, tiedosto-/avain-/hashvertailuihin, main-merge-tree-tarkistuksiin ja dokumentaation validointiin. Käännöserien uusi kielellinen katselmointi sekä nyky-mainin kohdennetut GK-regressiot kuuluvat seuraavien integraatioiden portteihin.
+
+### Sulkemisten GitHub-tositteet
+
+| PR | Luokka | Perustelukommentti | Suljettu UTC |
+| --- | --- | --- | --- |
+| #118 | ARCHIVE | [Tallennettu peruste ja säilytysviite](https://github.com/ozirix-dev/Reseptit/pull/118#issuecomment-6650212992) | 2026-11-05T05:06:26Z |
+| #134 | ARCHIVE | [Tallennettu peruste ja säilytysviite](https://github.com/ozirix-dev/Reseptit/pull/134#issuecomment-6650209883) | 2026-11-05T05:06:14Z |
+| #135 | ARCHIVE | [Tallennettu peruste ja säilytysviite](https://github.com/ozirix-dev/Reseptit/pull/135#issuecomment-6650207535) | 2026-11-05T05:06:03Z |
+| #136 | ARCHIVE | [Tallennettu peruste ja säilytysviite](https://github.com/ozirix-dev/Reseptit/pull/136#issuecomment-6650203011) | 2026-11-05T05:05:43Z |
+| #137 | ARCHIVE | [Tallennettu peruste ja säilytysviite](https://github.com/ozirix-dev/Reseptit/pull/137#issuecomment-6650200639) | 2026-11-05T05:05:33Z |
+| #138 | ARCHIVE | [Tallennettu peruste ja säilytysviite](https://github.com/ozirix-dev/Reseptit/pull/138#issuecomment-6650197781) | 2026-11-05T05:05:21Z |
+| #139 | ARCHIVE | [Tallennettu peruste ja säilytysviite](https://github.com/ozirix-dev/Reseptit/pull/139#issuecomment-6650195632) | 2026-11-05T05:05:12Z |
+| #141 | ARCHIVE | [Tallennettu peruste ja säilytysviite](https://github.com/ozirix-dev/Reseptit/pull/141#issuecomment-6650192892) | 2026-11-05T05:05:01Z |
+| #144 | ARCHIVE | [Tallennettu peruste ja säilytysviite](https://github.com/ozirix-dev/Reseptit/pull/144#issuecomment-6650188150) | 2026-11-05T05:04:38Z |
+| #146 | SUPERSEDED | [Tallennettu peruste ja säilytysviite](https://github.com/ozirix-dev/Reseptit/pull/146#issuecomment-6650185795) | 2026-11-05T05:04:28Z |
+| #147 | SUPERSEDED | [Tallennettu peruste ja säilytysviite](https://github.com/ozirix-dev/Reseptit/pull/147#issuecomment-6650183060) | 2026-11-05T05:04:17Z |
+| #148 | ARCHIVE | [Tallennettu peruste ja säilytysviite](https://github.com/ozirix-dev/Reseptit/pull/148#issuecomment-6650180757) | 2026-11-05T05:04:07Z |
+| #154 | ARCHIVE | [Tallennettu peruste ja säilytysviite](https://github.com/ozirix-dev/Reseptit/pull/154#issuecomment-6650178126) | 2026-11-05T05:03:57Z |
+| #155 | ARCHIVE | [Tallennettu peruste ja säilytysviite](https://github.com/ozirix-dev/Reseptit/pull/155#issuecomment-6650172977) | 2026-11-05T05:03:34Z |
+| #161 | ARCHIVE | [Tallennettu peruste ja säilytysviite](https://github.com/ozirix-dev/Reseptit/pull/161#issuecomment-6650170440) | 2026-11-05T05:03:24Z |
+| #164 | ARCHIVE | [Tallennettu peruste ja säilytysviite](https://github.com/ozirix-dev/Reseptit/pull/164#issuecomment-6650167805) | 2026-11-05T05:03:13Z |
+| #166 | ARCHIVE | [Tallennettu peruste ja säilytysviite](https://github.com/ozirix-dev/Reseptit/pull/166#issuecomment-6650165324) | 2026-11-05T05:03:02Z |
+| #170 | ARCHIVE | [Tallennettu peruste ja säilytysviite](https://github.com/ozirix-dev/Reseptit/pull/170#issuecomment-6650162776) | 2026-11-05T05:02:51Z |
+| #187 | ARCHIVE | [Tallennettu peruste ja säilytysviite](https://github.com/ozirix-dev/Reseptit/pull/187#issuecomment-6650154546) | 2026-11-05T05:02:24Z |
+| #219 | SUPERSEDED | [Tallennettu peruste ja säilytysviite](https://github.com/ozirix-dev/Reseptit/pull/219#issuecomment-6650151678) | 2026-11-05T05:02:12Z |
+| #225 | ARCHIVE | [Tallennettu peruste ja säilytysviite](https://github.com/ozirix-dev/Reseptit/pull/225#issuecomment-6650148227) | 2026-11-05T05:02:01Z |
+| #228 | ARCHIVE | [Tallennettu peruste ja säilytysviite](https://github.com/ozirix-dev/Reseptit/pull/228#issuecomment-6650145361) | 2026-11-05T05:01:50Z |
+| #233 | SUPERSEDED | [Tallennettu peruste ja säilytysviite](https://github.com/ozirix-dev/Reseptit/pull/233#issuecomment-6650141988) | 2026-11-05T05:01:39Z |
+| #234 | SUPERSEDED | [Tallennettu peruste ja säilytysviite](https://github.com/ozirix-dev/Reseptit/pull/234#issuecomment-6650136116) | 2026-11-05T05:01:18Z |
+| #235 | SUPERSEDED | [Tallennettu peruste ja säilytysviite](https://github.com/ozirix-dev/Reseptit/pull/235#issuecomment-6650133079) | 2026-11-05T05:01:06Z |
+| #236 | SUPERSEDED | [Tallennettu peruste ja säilytysviite](https://github.com/ozirix-dev/Reseptit/pull/236#issuecomment-6650130374) | 2026-11-05T05:00:56Z |
+| #238 | SUPERSEDED | [Tallennettu peruste ja säilytysviite](https://github.com/ozirix-dev/Reseptit/pull/238#issuecomment-6650127221) | 2026-11-05T05:00:47Z |
+| #269 | ARCHIVE | [Tallennettu peruste ja säilytysviite](https://github.com/ozirix-dev/Reseptit/pull/269#issuecomment-6650124283) | 2026-11-05T05:00:34Z |
+| #271 | SUPERSEDED | [Tallennettu peruste ja säilytysviite](https://github.com/ozirix-dev/Reseptit/pull/271#issuecomment-6650110204) | 2026-11-05T05:00:18Z |
+
+### Aktiivisten PR:ien jatkokommentit
+
+- [PR #255 jatkotoimet](https://github.com/ozirix-dev/Reseptit/pull/255#issuecomment-6650223643)
+- [PR #222 jatkotoimet](https://github.com/ozirix-dev/Reseptit/pull/222#issuecomment-6650225502)
+- [PR #272 jatkotoimet](https://github.com/ozirix-dev/Reseptit/pull/272#issuecomment-6650227253)
+- [PR #274 jatkotoimet](https://github.com/ozirix-dev/Reseptit/pull/274#issuecomment-6650229555)
+
 ## Tarkistettu lähtötilanne
 
 - Repo on ozirix-dev/Reseptit. Main on `0fa20528ffe0ca075c9e0fb54c2b388cd7d959fe`. Sen Recipe site -ajo 41965490135 onnistui.
