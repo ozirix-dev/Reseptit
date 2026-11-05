@@ -1,3 +1,4 @@
+import {isP1CoconutHold,assertP1CoconutHold,assertOnlyP1CoconutInputChanges} from './p1-coconut-hold-guard';
 import {restorePreEHold} from './restore-pre-ehold';
 import test from 'node:test';import assert from 'node:assert/strict';import {readFileSync} from 'node:fs';import {createHash} from 'node:crypto';import {loadPacks} from '../scripts/gk80-release';import {calculateCandidate} from '../scripts/gk80-candidate-policy';
 const root=new URL('../../',import.meta.url);const json=(f:string)=>JSON.parse(readFileSync(new URL(f,root),'utf8'));
@@ -5,7 +6,10 @@ test('Operation142 adds exactly ten candidates and preserves all133 current main
  const report=restorePreEHold(json('tmp/nutrition/glycemic-load-pilot.json')),baseline=json('docs/nutrition/gk80-operation142/main133-baseline.json'),pack=json('docs/nutrition/gk80-operation142/integration.json');
  const ids=new Set(pack.recipes.map((r:any)=>r.recipeId));
  assert.equal(report.results.length,326);assert.equal(report.summary.calculated,143);assert.equal(report.summary.insufficientSourceData,183);assert.equal(ids.size,10);
- for(const current of report.results.filter((r:any)=>!ids.has(r.recipeId)))assert.equal(createHash('sha256').update(JSON.stringify(current)).digest('hex'),baseline.resultHashes[current.recipeId],current.recipeId+': unchanged full result');
+ for(const current of report.results.filter((r:any)=>!ids.has(r.recipeId))){
+  if(isP1CoconutHold(current.recipeId))assertP1CoconutHold(current);
+  else assert.equal(createHash('sha256').update(JSON.stringify(current)).digest('hex'),baseline.resultHashes[current.recipeId],current.recipeId+': unchanged full result');
+ }
  for(const previous of baseline.numericIds){const current=report.results.find((r:any)=>r.recipeId===previous);assert.ok(current,previous);assert.equal(createHash('sha256').update(JSON.stringify(current)).digest('hex'),baseline.resultHashes[previous],previous);assert.ok(!ids.has(previous));}
  for(const entry of pack.recipes){const result=report.results.find((r:any)=>r.recipeId===entry.recipeId);assert.equal(result.status,'CALCULATED');assert.equal(result.confidence,'LOW');assert.equal(result.assessmentType,'PUBLISHED_IMPUTATION');assert.equal(result.glycemicLoadPerServing,entry.gk);assert.ok(result.omittedAvailableCarbohydratePerServingG<2);assert.equal(result.glycemicLoadRangePerServing,null);}
  assert.equal(report.results.find((r:any)=>r.recipeId==='kiinalainen-teehaudutetut-munat').glycemicLoadPerServing,null);
