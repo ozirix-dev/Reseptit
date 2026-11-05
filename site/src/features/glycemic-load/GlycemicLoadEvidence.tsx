@@ -93,16 +93,19 @@ export function MissingEstimate({ result, locale, explanation }: {
   explanation?: string;
 }) {
   const text = gkCopy[locale];
+  const sharedPendingReview = result.incompleteReasons.length > 1 && result.incompleteReasons.every(reason =>
+    reason.category === "REVIEW_PENDING" && (reason.ingredientNames[locale] ?? reason.ingredientNames.fi));
   return <>
     <p><strong>{text.missing}</strong></p>
     <p>{explanation ?? text.missingBasis}</p>
     {result.incompleteReasons.length ? <details className="gk-evidence__details">
       <summary>{text.why}</summary>
+      {sharedPendingReview ? <p>{text.pendingReviewGroup}</p> : null}
       <ul>{result.incompleteReasons.map((reason, index) => {
         const ingredient = reason.ingredientNames[locale] ?? reason.ingredientNames.fi;
         return <li key={index}>
-          {ingredient ? <><strong lang={reason.ingredientNames[locale] ? locale : "fi"}>{ingredient}</strong> · </> : null}
-          {missingReason(locale, reason.category)}
+          {ingredient ? <><strong lang={reason.ingredientNames[locale] ? locale : "fi"}>{ingredient}</strong></> : null}
+          {!sharedPendingReview ? <>{ingredient ? " · " : null}{missingReason(locale, reason.category)}</> : null}
         </li>;
       })}</ul>
     </details> : null}

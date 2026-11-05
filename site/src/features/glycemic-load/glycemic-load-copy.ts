@@ -42,6 +42,7 @@ export const gkCopy = {
     missing: "GK-arviota ei voida laskea luotettavasti.",
     missingBasis: "Yhden tai useamman raaka-aineen tietoja puuttuu tai laskennan perusteissa on epävarmuutta. Koko annoksen arviota ei voi julkaista luotettavasti.",
     why: "Miksi arvio puuttuu?",
+    pendingReviewGroup: "Näiden raaka-aineiden GK-arvioon tarvittavaa näyttöä ei ole vielä katselmoitu.",
     blockers: {
       REVIEW_PENDING: "Raaka-aineen GK-arvioon tarvittavaa näyttöä ei ole vielä katselmoitu.",
       GI: "Raaka-aineelle ei löytynyt sopivaa GI-arvoa.",
@@ -96,6 +97,7 @@ export const gkCopy = {
     missing: "A reliable glycemic load estimate is not available.",
     missingBasis: "Some ingredient data or calculation inputs could not be verified, so there is no reliable estimate for the whole serving.",
     why: "Why is the estimate missing?",
+    pendingReviewGroup: "The evidence needed to estimate the glycemic load of these ingredients has not yet been reviewed.",
     blockers: {
       REVIEW_PENDING: "The evidence needed to estimate this ingredient’s glycemic load has not yet been reviewed.",
       GI: "A suitable GI value was unavailable for this ingredient.",
@@ -150,6 +152,7 @@ export const gkCopy = {
     missing: "En tillförlitlig uppskattning av glykemisk belastning är inte tillgänglig.",
     missingBasis: "Vissa ingrediensuppgifter eller delar av beräkningsunderlaget kunde inte verifieras, så en tillförlitlig uppskattning för hela portionen saknas.",
     why: "Varför saknas en uppskattning?",
+    pendingReviewGroup: "Underlaget som behövs för att uppskatta dessa ingrediensers glykemiska belastning har ännu inte granskats.",
     blockers: {
       REVIEW_PENDING: "Underlaget som behövs för att uppskatta ingrediensens glykemiska belastning har ännu inte granskats.",
       GI: "Ett lämpligt GI-värde saknas för ingrediensen.",
@@ -204,6 +207,7 @@ export const gkCopy = {
     missing: "ยังไม่สามารถประมาณค่าภาระน้ำตาลได้อย่างน่าเชื่อถือ",
     missingBasis: "ข้อมูลวัตถุดิบหรือข้อมูลที่ใช้คำนวณบางส่วนยังยืนยันไม่ได้ จึงยังไม่มีค่าประมาณที่เชื่อถือได้สำหรับอาหารหนึ่งที่",
     why: "ทำไมจึงยังไม่มีค่าประมาณ",
+    pendingReviewGroup: "ยังไม่ได้ทบทวนหลักฐานที่จำเป็นต่อการประมาณค่าภาระน้ำตาลของวัตถุดิบเหล่านี้",
     blockers: {
       REVIEW_PENDING: "ยังไม่ได้ทบทวนหลักฐานที่จำเป็นต่อการประมาณค่าภาระน้ำตาลของวัตถุดิบนี้",
       GI: "ไม่พบค่า GI ที่เหมาะสมสำหรับวัตถุดิบนี้",

@@ -78,10 +78,10 @@ test("missing estimates show a localized explanation with or without a known ing
 
 
 const pendingEvidenceText = {
-  fi: "Raaka-aineen GK-arvioon tarvittavaa näyttöä ei ole vielä katselmoitu.",
-  en: "The evidence needed to estimate this ingredient’s glycemic load has not yet been reviewed.",
-  sv: "Underlaget som behövs för att uppskatta ingrediensens glykemiska belastning har ännu inte granskats.",
-  th: "ยังไม่ได้ทบทวนหลักฐานที่จำเป็นต่อการประมาณค่าภาระน้ำตาลของวัตถุดิบนี้",
+  fi: "Näiden raaka-aineiden GK-arvioon tarvittavaa näyttöä ei ole vielä katselmoitu.",
+  en: "The evidence needed to estimate the glycemic load of these ingredients has not yet been reviewed.",
+  sv: "Underlaget som behövs för att uppskatta dessa ingrediensers glykemiska belastning har ännu inte granskats.",
+  th: "ยังไม่ได้ทบทวนหลักฐานที่จำเป็นต่อการประมาณค่าภาระน้ำตาลของวัตถุดิบเหล่านี้",
 };
 
 for (const locale of ["fi", "en", "sv", "th"] as const) {
@@ -93,11 +93,17 @@ for (const locale of ["fi", "en", "sv", "th"] as const) {
     assert.equal(result.incompleteReasons.length, 15);
     assert.ok(result.incompleteReasons.every(reason => reason.category === "REVIEW_PENDING"));
     const html = renderToStaticMarkup(createElement(MissingEstimate, { locale, result }));
-    assert.equal(html.split(pendingEvidenceText[locale]).length - 1, 15);
+    assert.equal(html.split(pendingEvidenceText[locale]).length - 1, 1);
+    assert.equal((html.match(/<li>/g) ?? []).length, 15);
+    for (const reason of result.incompleteReasons) {
+      const name = reason.ingredientNames[locale] ?? reason.ingredientNames.fi;
+      const ingredient = renderToStaticMarkup(createElement("strong", { lang: reason.ingredientNames[locale] ? locale : "fi" }, name));
+      assert.ok(html.includes(ingredient), `ingredient retained: ${name}`);
+    }
     assert.ok(html.includes(gkCopy[locale].missing));
     assert.ok(!html.includes(gkCopy[locale].blockers.GI));
     assert.ok(!html.includes(gkCopy[locale].blockers.SOURCE));
-    for (const category of ["GI", "SOURCE"] as const) {
+    for (const category of ["REVIEW_PENDING", "GI", "SOURCE", "PORTION", "AMOUNT"] as const) {
       const unavailable = renderToStaticMarkup(createElement(MissingEstimate, {
         locale,
         result: { incompleteReasons: [{ ingredientIndex: 0, ingredientNames: {}, category }] },
@@ -105,5 +111,22 @@ for (const locale of ["fi", "en", "sv", "th"] as const) {
       assert.ok(unavailable.includes(gkCopy[locale].blockers[category]));
       assert.ok(!unavailable.includes(pendingEvidenceText[locale]));
     }
+    const categories = ["REVIEW_PENDING", "GI", "SOURCE", "PORTION", "AMOUNT"] as const;
+    const mixed = renderToStaticMarkup(createElement(MissingEstimate, {
+      locale,
+      result: { incompleteReasons: categories.map((category, ingredientIndex) => ({
+        ingredientIndex, ingredientNames: { [locale]: category }, category,
+      })) },
+    }));
+    assert.ok(!mixed.includes(pendingEvidenceText[locale]));
+    for (const category of categories) assert.ok(mixed.includes(gkCopy[locale].blockers[category]));
+    const unnamed = renderToStaticMarkup(createElement(MissingEstimate, {
+      locale,
+      result: { incompleteReasons: [0, 1].map(ingredientIndex => ({
+        ingredientIndex, ingredientNames: {}, category: "REVIEW_PENDING" as const,
+      })) },
+    }));
+    assert.equal(unnamed.split(gkCopy[locale].blockers.REVIEW_PENDING).length - 1, 2);
+    assert.ok(!unnamed.includes(pendingEvidenceText[locale]));
   });
 }
