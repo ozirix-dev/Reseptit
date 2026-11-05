@@ -238,6 +238,20 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
       await page.getByLabel(toolUi[locale].ingredient, { exact: true }).selectOption("chicken");
       assert.ok(await page.locator(".recipe-card").count() > 0);
       assert.match(page.url(), /time=60&cuisine=thai&ingredient=chicken/);
+      await page.getByLabel(toolUi[locale].gl, { exact: true }).selectOption("low");
+      await page.waitForFunction(() => new URL(location.href).searchParams.get("gl") === "low");
+      assert.equal(await page.locator(".recipe-filter-chip").count(), 4, `${locale} filter chips`);
+      assert.ok((await page.locator(".recipe-gl-disclosure").innerText()).includes(toolUi[locale].glNote));
+      const glChip = page.getByRole("button", {name: `${toolUi[locale].removeFilter}: ${toolUi[locale].lowGl}`, exact: true});
+      await glChip.focus();
+      await page.keyboard.press("Enter");
+      await page.waitForFunction(() => !new URL(location.href).searchParams.has("gl"));
+      assert.equal(await page.getByLabel(toolUi[locale].time, {exact: true}).inputValue(), "60");
+      assert.equal(await page.getByLabel(toolUi[locale].cuisine, {exact: true}).inputValue(), "thai");
+      assert.equal(await page.getByLabel(toolUi[locale].ingredient, {exact: true}).inputValue(), "chicken");
+      assert.equal(await page.locator(".recipe-filter-chip").count(), 3);
+      await page.waitForFunction(() => document.activeElement?.classList.contains("recipe-filter-chip"));
+
       assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true, `${locale} advanced filters`);
       await page.reload();
       await page.waitForFunction(() => document.querySelector<HTMLSelectElement>("#recipe-cuisine")?.value === "thai");
