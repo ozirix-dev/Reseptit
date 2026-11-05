@@ -1794,8 +1794,14 @@ test("pepper correction locks all 326 baseline results, with exactly seven withd
     }
     assert.equal(actual.status, "INSUFFICIENT SOURCE DATA");
     assert.equal(actual.glycemicLoadPerServing, null);
-    assert.equal(glycemicLoadInputHash(input), bindings.calculationInputs[row.recipeId]);
-    assert.equal(glycemicLoadEvidenceHash(input, foods, catalog.records), bindings.calculationEvidence[row.recipeId]);
+    if (p1CoconutHoldIds.has(row.recipeId)) {
+      // The frozen release receipts must reject the corrected HOLD inputs until separately reviewed.
+      assert.notEqual(glycemicLoadInputHash(input), bindings.calculationInputs[row.recipeId], row.recipeId + ": old input seal is invalid");
+      assert.notEqual(glycemicLoadEvidenceHash(input, foods, catalog.records), bindings.calculationEvidence[row.recipeId], row.recipeId + ": old evidence seal is invalid");
+    } else {
+      assert.equal(glycemicLoadInputHash(input), bindings.calculationInputs[row.recipeId]);
+      assert.equal(glycemicLoadEvidenceHash(input, foods, catalog.records), bindings.calculationEvidence[row.recipeId]);
+    }
     const prior = baseline.affectedInputs.find((r: GlycemicLoadRecipeInput) => r.recipeId === row.recipeId);
     assert.notEqual(glycemicLoadInputHash(prior), bindings.calculationInputs[row.recipeId], "stale input rejected");
     assert.notEqual(glycemicLoadEvidenceHash(prior, foods, baseline.giCatalog.records), bindings.calculationEvidence[row.recipeId], "stale evidence rejected");
