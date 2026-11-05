@@ -2,6 +2,26 @@
 
 Factory tarkistaa enintään 30 ehdokasta yhdellä ajolla ja tekee SHA-sidotun erämanifestin. Se lukee ehdokkaat nimetystä Git-commitista. Laskenta, ainesosat, lähteet ja kielitekstit tulevat ehdokas-JSONista, eikä niitä ylläpidetä manifestissa käsin. Käytä jokaiselle erälle omaa tunnistetta.
 
+## Alkuperäissoveltuvuus ennen kattavuusväitettä
+
+[Omistajan pysyvä periaate](gk-original-recipe-method.md)
+velvoittaa erottamaan alkuperäisen reseptin, aidon erillisversion ja
+tutkimusvertailun. Nykyinen `GK_ONLY` tarkoittaa, ettei alkuperäistä tiedostoa
+muuteta; se ei osoita ehdokkaan koostumuksen tai valmistuksen vastaavuutta.
+Samoin A/B-menetelmätaso, tekninen PASS ja sisältöhyväksyntä eivät ole
+`ORIGINAL_OK`-päätöksiä.
+
+Ennen seuraavaa kattavuuslisäystä tarkista alkuperäissoveltuvuus resepti-,
+ehdokas- ja syötetarkisteisiin sidottuna. `VARIANT_ONLY`, `NO_RELIABLE_GK` ja
+`CLARIFICATION_NEEDED` eivät kasvata alkuperäisten kattavuutta.
+`expectedCoverageDelta` ja `numericRecipeIds` ovat nykyisen toteutuksen
+versiokattavuuskenttiä. Niitä ei tulkita alkuperäiskattavuudeksi.
+Tutkimusvertailu ei kasvata kumpaakaan kotireseptimittaria.
+
+[Nykytilan auditointi ja toteutusvaiheen portit](gk100-original-recipe-audit-2026-11-05.md)
+eivät muuta Factoryn laskentaa, julkaisuvaltuutuksia tai vanhoja manifesteja.
+Vanha 15 ehdokkaan +15-ennuste ei ole voimassa alkuperäisreseptien ennusteena.
+
 ## Tarkista erä
 
 Aja `site`-hakemistossa. Esimerkki lukee viisi ehdokasta olemassa olevasta commitista, jonka on oltava paikallisessa Git-objektitietokannassa.
