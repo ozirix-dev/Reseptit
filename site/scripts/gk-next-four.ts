@@ -7,6 +7,7 @@ import {calculateGlycemicLoad,type GlycemicLoadIngredientInput,type GlycemicInde
 import type {FoodRecord} from './nutrition-model';
 import {mextAvailableMass} from '../../docs/research/afcd-polyol-03/mext-available-source';
 import type {GkOnlyVariant,LocalizedText} from '../src/features/recipes/gk-only-types';
+import {acceptsReviewedNutritionModelBinding} from './reviewed-nutrition-model-binding';
 
 const folder='docs/nutrition/gk80-next-four/';
 const read=(root:string,p:string)=>JSON.parse(readFileSync(path.join(root,p),'utf8'));
@@ -91,7 +92,10 @@ function verifyGi(root:string,g:any):GlycemicIndexRecord{
 export function loadApprovedFour(root:string){
  const manifest=verifyNextFourManifest(root),pack=read(root,folder+'cases.json'),sources=read(root,folder+'sources.json'),lineage=read(root,folder+'approval-lineage.json');
  if(pack.activation!==false||pack.sourceCommit!==manifest.sourceCommit||pack.cases.length!==4||digest(lineage.approvedInputs)!==digest(NEXT_FOUR_INPUTS))fail('projected approved scope');
- for(const [p,expected] of Object.entries(sources.sharedFilesLfSha256))if(textHash(text(root,p))!==expected)fail('shared source changed: '+p);
+ for(const [p,expected] of Object.entries(sources.sharedFilesLfSha256) as Array<[string,string]>){
+  const actual=textHash(text(root,p));
+  if(actual!==expected&&!acceptsReviewedNutritionModelBinding(p,expected,actual))fail('shared source changed: '+p);
+ }
  const admitted:Record<string,string>={};
  for(const [p,binding] of Object.entries(lineage.receiptBindings) as Array<[string,any]>){
   if(textHash(text(root,p))!==binding.sha256Lf)fail('original approval receipt changed');

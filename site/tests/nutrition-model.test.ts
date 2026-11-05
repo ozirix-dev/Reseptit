@@ -1,3 +1,6 @@
+// Keep sealed-loader regressions on the existing nutrition CI entry point.
+import './nutrition-model-binding.test';
+import { calculateGlycemicLoad, type GlycemicIndexRecord } from "../scripts/glycemic-load-model";
 import test from "node:test";
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
@@ -166,4 +169,46 @@ test("decimal multiplication, subtraction, aggregation and serving division rema
   input.ingredients[0].record!.per100g.carbohydrate = 0.7; input.ingredients[0].record!.per100g.fibre = 0.35;
   input.ingredients = [input.ingredients[0]]; input.servings = 1;
   assert.equal(calculate(input).total.carbohydrate, 0.32);
+});
+
+test("US total excludes verified polyols exactly once in available CHO and reconstructs source total", () => {
+  const source: FoodRecord = { ...food, carbohydrateDefinition: "US_TOTAL_INCLUDING_FIBRE", polyolsEvidence: "Synthetic source explicitly reports three grams of polyols",
+    per100g: { ...food.per100g, carbohydrate: 20, fibre: 4, polyols: 3 } };
+  assert.deepEqual(normalizeCarbohydrate(source), { available: 13, net: 13 });
+  const input = fixture(); input.servings = 1; input.ingredients[0].amount = 100;
+  input.ingredients[0].record = source;
+  const result = calculate(input);
+  assert.equal(result.status, "ESTIMATE WITH EVIDENCE");
+  assert.equal(result.total.carbohydrate, 13);
+  assert.equal(result.total.netCarbohydrate, 13);
+  assert.equal(result.totalCarbohydrateGrams, 20);
+  assert.equal(result.totalCarbohydratePerServingG, 20);
+});
+
+test("US total with unknown, unverified or conflicting polyols cannot supply an available-CHO point", () => {
+  const source: FoodRecord = { ...food, carbohydrateDefinition: "US_TOTAL_INCLUDING_FIBRE", polyolsEvidence: "Synthetic source explicitly reports three grams of polyols",
+    per100g: { ...food.per100g, carbohydrate: 20, fibre: 4, polyols: 3 } };
+  for (const changed of [
+    { ...source, per100g: { ...source.per100g, polyols: null } },
+    { ...source, polyolsSourceVerified: false },
+    { ...source, polyolsEvidence: "" },
+    { ...source, per100g: { ...source.per100g, polyols: 17 } },
+  ]) assert.deepEqual(normalizeCarbohydrate(changed), { available: null, net: null });
+  assert.deepEqual(normalizeCarbohydrate({ ...source, per100g: { ...source.per100g, polyols: 0 } }), { available: 16, net: 16 });
+  assert.deepEqual(normalizeCarbohydrate({ ...source, carbohydrateDefinition: "EU_AVAILABLE" }), { available: 20, net: 20 });
+  assert.deepEqual(normalizeCarbohydrate({ ...source, carbohydrateDefinition: "EU_TOTAL_INCLUDING_POLYOLS" }), { available: 17, net: 17 });
+});
+
+test("ingredient GK consumes normalized US available CHO and blocks an unknown-polyol point", () => {
+  const source: FoodRecord = { ...food, carbohydrateDefinition: "US_TOTAL_INCLUDING_FIBRE", polyolsEvidence: "Synthetic source explicitly reports three grams of polyols",
+    per100g: { ...food.per100g, carbohydrate: 20, fibre: 4, polyols: 3 } };
+  const gi: GlycemicIndexRecord = { id: "synthetic-us-gi", gi: 50, foodKey: "synthetic-us", preparationKey: "as-sold", food: "Synthetic test fixture", preparation: "as-sold", qualityTier: "STRONG", referenceScale: "GLUCOSE_100", matchKind: "EXACT", confidence: "HIGH",
+    source: { title: "Synthetic control", url: "https://example.org/fixture", table: "Synthetic control", year: 2026, published: true, iso26642Confirmed: true, participants: 10, referenceFood: "Glucose", testDurationHours: 2, qualityEvidence: "Synthetic control, no real-food GI claim" } };
+  const input = { recipeId: "synthetic-us", servings: 1, ingredients: [{ name: "Synthetic test fixture", grams: 100, fineliRecordId: source.id, giRecordId: gi.id, foodKey: gi.foodKey, preparationKey: gi.preparationKey, massEvidence: "Synthetic weighed100g", giMatchEvidence: "Synthetic exact control" }] };
+  const result = calculateGlycemicLoad(input, [source], [gi]);
+  assert.equal(result.status, "CALCULATED");
+  assert.equal(result.unroundedGlycemicLoadPerServing, 6.5);
+  const unresolved = calculateGlycemicLoad(input, [{ ...source, per100g: { ...source.per100g, polyols: null } }], [gi]);
+  assert.equal(unresolved.status, "INSUFFICIENT SOURCE DATA");
+  assert.equal(unresolved.glycemicLoadPerServing, null);
 });
