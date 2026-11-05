@@ -1,132 +1,11 @@
 {
   "schemaVersion": 1,
   "mainSha": "d9e4fdc314142518b4afdd60933f3f0a75ead519",
-  "manifestSha256": "a2711e535516ebc80554fdea2c66875305f4c703749297108bf1d6ed8f155a9b",
-  "decisionsSha256": "e2846d2fc735f5e667d27025f8667380b764327f4b3b1ab89b92e59b13869ed3",
-  "expectedCoverageDelta": 8,
+  "manifestSha256": "99884e1eb3c8074858a5c61ce77566db3225e92f7c842ba6464077b4b8d46356",
+  "decisionsSha256": "5d88fadaa87053e0e0936928f357c718e2f339ab6c88e21ee9733c1873a7f625",
+  "expectedCoverageDelta": 5,
   "publicationAuthorized": false,
   "variants": [
-    {
-      "recipeId": "marjainen-chiavanukas",
-      "versionId": "gk-operation80-review-70a36f597395",
-      "inputSha256": "70a36f5973951adfe93500908de00fa0454d2a8773007fdd9fb95105bf7518e3",
-      "level": "A",
-      "servings": 4,
-      "point": null,
-      "scenarioRange": {
-        "min": 1.4429550000000002,
-        "max": 1.6286925
-      },
-      "rangeKind": "NAMED_COMPARATOR_SCENARIOS",
-      "omittedCho": 0.2373,
-      "confidence": "LOW",
-      "macroScope": "NO_MACRO_PACKAGE_FOR_THIS_VERSION",
-      "quantityContract": "GK_ONLY_NATIVE_UNITS_V1",
-      "standalonePreparation": true,
-      "ingredients": [
-        {
-          "name": {
-            "fi": "Maustamaton kreikkalainen jogurtti 7 %",
-            "en": "Plain Greek yogurt, 7% fat",
-            "sv": "Naturell grekisk yoghurt, 7 % fett",
-            "th": "กรีกโยเกิร์ตรสธรรมชาติ ไขมัน 7%"
-          },
-          "grams": 100
-        },
-        {
-          "name": {
-            "fi": "Raa'at kokonaiset vadelmat",
-            "en": "Whole raw raspberries",
-            "sv": "Hela råa hallon",
-            "th": "ราสป์เบอร์รีสดทั้งผล"
-          },
-          "grams": 100
-        },
-        {
-          "name": {
-            "fi": "Raa'at kokonaiset metsämustikat",
-            "en": "Whole raw bilberries",
-            "sv": "Hela råa skogsblåbär",
-            "th": "บิลเบอร์รีสดทั้งผล"
-          },
-          "grams": 50
-        },
-        {
-          "name": {
-            "fi": "Chiansiemenet",
-            "en": "Chia seeds",
-            "sv": "Chiafrön",
-            "th": "เมล็ดเจีย"
-          },
-          "grams": 45
-        },
-        {
-          "name": {
-            "fi": "Makeuttamaton Alpro-mantelijuoma",
-            "en": "Unsweetened Alpro almond drink",
-            "sv": "Osötad Alpro-mandeldryck",
-            "th": "เครื่องดื่มอัลมอนด์ Alpro ไม่เติมน้ำตาล"
-          },
-          "grams": null,
-          "quantity": {
-            "amount": 250,
-            "unit": "ml"
-          }
-        },
-        {
-          "name": {
-            "fi": "Vaniljauute",
-            "en": "Vanilla extract",
-            "sv": "Vaniljextrakt",
-            "th": "สารสกัดวานิลลา"
-          },
-          "grams": 4.2
-        },
-        {
-          "name": {
-            "fi": "Valinnainen makeutus, jätetään pois",
-            "en": "Optional sweetener, left out",
-            "sv": "Valfritt sötningsmedel, utelämnas",
-            "th": "สารให้ความหวาน ไม่ใส่ในสูตรนี้"
-          },
-          "grams": null
-        }
-      ],
-      "preparation": {
-        "fi": "Sekoita {{amount:3}} g chiansiemeniä, {{amount:4}} ml makeuttamatonta Alpro-mantelijuomaa ja {{amount:5}} g vaniljauutetta. Sekoita 10 minuutin kuluttua ja jäähdytä vähintään neljä tuntia. Sekoita joukkoon {{amount:0}} g maustamatonta 7 % kreikkalaista jogurttia. Jaa {{servings}} annokseen ja lisää yhteensä {{amount:1}} g vadelmia ja {{amount:2}} g metsämustikoita. Jätä makeutus pois.",
-        "en": "Mix {{amount:3}} g chia seeds, {{amount:4}} ml unsweetened Alpro almond drink and {{amount:5}} g vanilla extract. Stir again after 10 minutes and refrigerate for at least four hours. Stir in {{amount:0}} g plain Greek yogurt with 7% fat. Divide into {{servings}} portions and top with a total of {{amount:1}} g raspberries and {{amount:2}} g bilberries. Leave out the sweetener.",
-        "sv": "Blanda {{amount:3}} g chiafrön, {{amount:4}} ml osötad Alpro-mandeldryck och {{amount:5}} g vaniljextrakt. Rör om efter 10 minuter och kyl i minst fyra timmar. Rör ner {{amount:0}} g naturell grekisk yoghurt med 7 % fett. Fördela i {{servings}} portioner och toppa med totalt {{amount:1}} g hallon och {{amount:2}} g skogsblåbär. Utelämna sötningsmedlet.",
-        "th": "ผสมเมล็ดเจีย {{amount:3}} กรัม เครื่องดื่มอัลมอนด์ Alpro ไม่เติมน้ำตาล {{amount:4}} มล. และสารสกัดวานิลลา {{amount:5}} กรัม คนอีกครั้งหลังผ่านไป 10 นาที แล้วแช่เย็นอย่างน้อย 4 ชั่วโมง ผสมกรีกโยเกิร์ตรสธรรมชาติไขมัน 7% {{amount:0}} กรัม แบ่งเป็น {{servings}} ส่วน โรยราสป์เบอร์รีรวม {{amount:1}} กรัมและบิลเบอร์รีรวม {{amount:2}} กรัม ไม่เติมสารให้ความหวาน"
-      },
-      "limitation": {
-        "fi": "Kaksi matalan luottamuksen skenaariota käyttävät vadelmalle mansikan tai kanadalaisen villimustikan GI:tä. Metsämustikalle käytetään villimustikan vertailua ja jogurtille maustamattoman jogurtin ryhmäkeskiarvoa. Chian, mantelijuoman ja vaniljan 0,2373 g saatavaa CHO:ta annosta kohti jää summan ulkopuolelle. Villimustikan koetuotteen tarkkaa tarjoilutilaa ei kuvata.",
-        "en": "The two low-confidence scenarios use strawberry or Canadian wild blueberry GI for raspberry. Bilberry uses the wild blueberry comparator, and the yogurt uses a plain-yogurt category average. The sum omits 0.2373 g available carbohydrate per serving from chia, almond drink and vanilla. The wild blueberry test record does not specify the exact serving state.",
-        "sv": "De två scenarierna med låg tillförlitlighet använder GI för jordgubbe eller kanadensiskt vilt blåbär för hallon. Skogsblåbär jämförs med vilt blåbär och yoghurten använder gruppens medelvärde för naturell yoghurt. Beräkningen utelämnar 0,2373 g tillgängliga kolhydrater per portion från chia, mandeldryck och vanilj. Testposten för vilda blåbär anger inte exakt serveringstillstånd.",
-        "th": "สองกรณีประมาณการที่มีความเชื่อมั่นต่ำใช้ค่า GI ของสตรอว์เบอร์รีหรือบลูเบอร์รีป่าแคนาดาแทนราสป์เบอร์รี ใช้บลูเบอร์รีป่าเป็นตัวเปรียบเทียบของบิลเบอร์รี และใช้ค่าเฉลี่ยกลุ่มโยเกิร์ตรสธรรมชาติ การคำนวณไม่นับคาร์โบไฮเดรตที่ย่อยได้จากเจีย เครื่องดื่มอัลมอนด์ และวานิลลารวม 0.2373 กรัมต่อส่วน ข้อมูลการทดสอบบลูเบอร์รีป่าไม่ได้ระบุสภาพที่เสิร์ฟอย่างละเอียด"
-      },
-      "codingKinds": [],
-      "sensitivity": null,
-      "sources": [
-        {
-          "title": "Atkinson et al. 2021, Supplemental Table 1, rows 1174 and 1092",
-          "url": "https://doi.org/10.1093/ajcn/nqab233",
-          "kind": "HUMAN_GI",
-          "note": "Raw strawberry GI 40 and Canadian wild blueberry GI 53 are on the table's glucose=100 scale. The blueberry test used bread as the reference. The underlying human observations are unpublished, the results are published in the supplement. Wild blueberry preparation at serving is unspecified and species differs from Finnish bilberry."
-        },
-        {
-          "title": "Wolever, 2017, Table 1",
-          "url": "https://pubmed.ncbi.nlm.nih.gov/28615381/",
-          "kind": "HUMAN_GI",
-          "note": "Category mean of 43 plain or artificially sweetened yogurt GI entries, 26.6 rounded to 27. Product-specific GI was not measured."
-        },
-        {
-          "title": "THL Fineli, FSANZ AFCD and USDA mass evidence",
-          "url": "https://github.com/ozirix-dev/Reseptit/blob/5cbd538587904fea02378a1773c2c8e1c24b6346/docs/research/gk80-international-20261102/breakfast-versions/chia-unsweetened-version.json",
-          "kind": "CARBOHYDRATE",
-          "note": "Pinned source file SHA-256 a3be56ae922d3f3a74636e72f913856c15b6115a1d91aea8e8767904423deab8; Fineli 34847, 34738, 34611, 448, 442 and AFCD F009350. USDA FDC 173471 supplies mass only."
-        }
-      ]
-    },
     {
       "recipeId": "intialainen-aloo-paratha",
       "versionId": "gk-operation80-review-13af95c73778",
@@ -461,140 +340,6 @@
           "note": "179.2 g prepared portion; 50 g available carbohydrate test load, with 27.9 g/100 g reported after rounding. The study served 200 ml of plain water."
         }
       ]
-    },
-    {
-      "recipeId": "meheva-suklaakakku",
-      "versionId": "gk-operation80-review-d033681b8541",
-      "inputSha256": "d033681b8541584d2b92b61f5b7f6a8563e79d4641471b07df57ff42d319fed4",
-      "level": "B",
-      "servings": 1,
-      "point": 20.5,
-      "scenarioRange": null,
-      "rangeKind": null,
-      "omittedCho": 0,
-      "confidence": "LOW",
-      "macroScope": "NO_MACRO_PACKAGE_FOR_THIS_VERSION",
-      "quantityContract": "GK_ONLY_NATIVE_UNITS_V1",
-      "standalonePreparation": true,
-      "ingredients": [
-        {
-          "name": {
-            "fi": "Kuorrutettu Betty Crocker -kakku, koeannos",
-            "en": "Frosted Betty Crocker cake, test serving",
-            "sv": "Betty Crocker-kaka med glasyr, testportion",
-            "th": "เค้ก Betty Crocker พร้อมครีมแต่งหน้า ส่วนทดลอง"
-          },
-          "grams": 107.2
-        },
-        {
-          "name": {
-            "fi": "Juomavesi",
-            "en": "Drinking water",
-            "sv": "Dricksvatten",
-            "th": "น้ำดื่ม"
-          },
-          "grams": null,
-          "quantity": {
-            "amount": 250,
-            "unit": "ml"
-          }
-        }
-      ],
-      "preparation": {
-        "fi": "Historiallinen vertailu koskee {{servings}} koeannosta. Siihen kuului 75,4 g paistettua Betty Crocker Chocolate Fudge Super Moist -kakkua, 31,8 g Creamy Deluxe Dark Dutch Fudge -kuorrutetta ja 250 ml vettä.",
-        "en": "This historical comparison covers {{servings}} test serving. It contained 75.4 g of baked Betty Crocker Chocolate Fudge Super Moist cake, 31.8 g of Creamy Deluxe Dark Dutch Fudge frosting and 250 ml of water.",
-        "sv": "Den historiska jämförelsen gäller {{servings}} testportion. Den innehöll 75,4 g gräddad Betty Crocker Chocolate Fudge Super Moist-kaka, 31,8 g Creamy Deluxe Dark Dutch Fudge-glasyr och 250 ml vatten.",
-        "th": "ข้อมูลเปรียบเทียบจากการศึกษาในอดีตนี้ใช้กับอาหารทดลอง {{servings}} ส่วน ประกอบด้วยเค้ก Betty Crocker Chocolate Fudge Super Moist ที่อบแล้ว 75.4 กรัม ครีมแต่งหน้า Creamy Deluxe Dark Dutch Fudge 31.8 กรัม และน้ำ 250 มิลลิลิตร"
-      },
-      "limitation": {
-        "fi": "GK 20,5 koskee vuoden 2003 kokeen kuorrutettua kakkupalaa. Nykyiset tuotteet ja kotitekoinen suklaakakku vaativat erillisen arvion.",
-        "en": "The GL of 20.5 applies to the frosted cake serving tested in 2003. Current products and the homemade chocolate cake require separate estimates.",
-        "sv": "GB 20,5 gäller kakan med glasyr som testades 2003. Dagens produkter och den hemlagade chokladkakan behöver bedömas separat.",
-        "th": "ค่า GL 20.5 ใช้กับเค้กพร้อมครีมแต่งหน้าที่ทดสอบในปี 2003 ผลิตภัณฑ์ปัจจุบันและเค้กช็อกโกแลตทำเองต้องประเมินแยกต่างหาก"
-      },
-      "codingKinds": [],
-      "sensitivity": null,
-      "sources": [
-        {
-          "title": "Brand-Miller et al. (2003), Table 2",
-          "url": "https://doi.org/10.1093/jn/133.10.3149",
-          "kind": "HUMAN_GI",
-          "note": "Glucose-reference GI 41 ± 4 SEM for the entire frosted chocolate cake, n=10 and 120 min."
-        },
-        {
-          "title": "Brand-Miller et al. (2003), methods and Table 1",
-          "url": "https://doi.org/10.1093/jn/133.10.3149",
-          "kind": "CARBOHYDRATE",
-          "note": "75.4 g baked cake plus 31.8 g frosting, with 51.8 g total carbohydrate minus 1.8 g fiber. The test portion provided 50 g available carbohydrate and was served with 250 ml water."
-        }
-      ]
-    },
-    {
-      "recipeId": "tangyuan",
-      "versionId": "gk-operation80-review-580ea6796950",
-      "inputSha256": "580ea679695009900d4e8b7f7247977018216b9c106c72a0a7dda691bb575f64",
-      "level": "B",
-      "servings": 1,
-      "point": 30.5,
-      "scenarioRange": null,
-      "rangeKind": null,
-      "omittedCho": 0,
-      "confidence": "LOW",
-      "macroScope": "NO_MACRO_PACKAGE_FOR_THIS_VERSION",
-      "quantityContract": "GK_ONLY_NATIVE_UNITS_V1",
-      "standalonePreparation": true,
-      "ingredients": [
-        {
-          "name": {
-            "fi": "Keitetyt Lee Chun -riisipallot, koeannos",
-            "en": "Boiled Lee Chun glutinous rice balls, test serving",
-            "sv": "Kokta risbollar av klibbigt ris från Lee Chun, testportion",
-            "th": "บัวลอยแป้งข้าวเหนียวต้มยี่ห้อ Lee Chun ส่วนทดลอง"
-          },
-          "grams": 115
-        },
-        {
-          "name": {
-            "fi": "Juomavesi",
-            "en": "Drinking water",
-            "sv": "Dricksvatten",
-            "th": "น้ำดื่ม"
-          },
-          "grams": null,
-          "quantity": {
-            "amount": 250,
-            "unit": "ml"
-          }
-        }
-      ],
-      "preparation": {
-        "fi": "Historiallinen vertailu koskee {{servings}} koeannosta. Siihen kuului 115 g keitettyjä Lee Chun -riisipalloja ja 250 ml vettä.",
-        "en": "This historical comparison covers {{servings}} test serving. It contained 115 g of boiled Lee Chun glutinous rice balls and 250 ml of water.",
-        "sv": "Den historiska jämförelsen gäller {{servings}} testportion. Den bestod av 115 g kokta risbollar av klibbigt ris från Lee Chun och 250 ml vatten.",
-        "th": "ข้อมูลเปรียบเทียบจากการศึกษาในอดีตนี้ใช้กับอาหารทดลอง {{servings}} ส่วน ประกอบด้วยบัวลอยแป้งข้าวเหนียวต้มยี่ห้อ Lee Chun 115 กรัม และน้ำ 250 มิลลิลิตร"
-      },
-      "limitation": {
-        "fi": "GK 30,5 perustuu Chenin ym. koeannokseen, jonka täytettä ei yksilöity. Kotireseptin mustaseesamitäytteiset riisipallot ja makea inkivääriliemi tarvitsevat oman arvion.",
-        "en": "The GL of 30.5 is based on the serving tested by Chen et al., whose filling was unspecified. The homemade black sesame rice balls and sweet ginger broth require a separate estimate.",
-        "sv": "GB 30,5 bygger på testportionen hos Chen med flera, där fyllningen inte specificerades. De hemlagade risbollarna med svart sesam och söt ingefärslag behöver bedömas separat.",
-        "th": "ค่า GL 30.5 อ้างอิงจากอาหารส่วนที่ Chen และคณะทดสอบ โดยไม่ได้ระบุชนิดของไส้ บัวลอยไส้งาดำในสูตรโฮมเมดและน้ำขิงหวานต้องประเมินแยกต่างหาก"
-      },
-      "codingKinds": [],
-      "sensitivity": null,
-      "sources": [
-        {
-          "title": "Chen et al. (2010), Table 2",
-          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2846258/",
-          "kind": "HUMAN_GI",
-          "note": "Glucose-reference GI 61 ± 10 SEM, 15 healthy adults, 120 min."
-        },
-        {
-          "title": "Chen et al. (2010), methods and Table 1",
-          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2846258/",
-          "kind": "CARBOHYDRATE",
-          "note": "115 g of boiled Lee Chun glutinous rice balls provided 50 g available carbohydrate and were served with 250 mL water."
-        }
-      ]
     }
   ],
   "rows": [
@@ -605,9 +350,9 @@
       "supportFiles": {
         "docs/nutrition/gk100-v3-batch01-chiavanukas-review.md": "5190b99784d3ed60b872a311a11041ba7a8bec7b96a3b47c584e4957c48c5a1b"
       },
-      "candidateSha256": "70a36f5973951adfe93500908de00fa0454d2a8773007fdd9fb95105bf7518e3",
+      "candidateSha256": "a0b8175f3d0bdea6c28fea78a809c7a388dbe299011db56b7416714db5890920",
       "originalSha256": "c4c9c7a14345199304e7221fab28633a4a9abeffa3c99afc780cb5360824ec22",
-      "inputSha256": "36457cb625e70c4f9bff7dcb3f80c6bc8164f7b807832d265086c7aac902265a",
+      "inputSha256": "5875ca394d9845cfe1746348e3b23f4263f89047a7829a76b7b46268c98abbe1",
       "servings": 4,
       "method": "A",
       "point": null,
@@ -651,7 +396,7 @@
       ],
       "localeFields": "PRESENT",
       "classification": {
-        "candidateSha256": "70a36f5973951adfe93500908de00fa0454d2a8773007fdd9fb95105bf7518e3",
+        "candidateSha256": "a0b8175f3d0bdea6c28fea78a809c7a388dbe299011db56b7416714db5890920",
         "risk": "HIGH",
         "reasons": [
           "Raw berry analogues and a plain-yogurt category mean are explicitly labelled. Three quantified omissions total 0.2373 g CHO per serving.",
@@ -666,9 +411,9 @@
         }
       },
       "technical": "PASS",
-      "state": "RELEASE_READY",
+      "state": "OWNER_DECISION",
       "reason": null,
-      "ownerStatus": "APPROVED",
+      "ownerStatus": "PENDING",
       "publicationAuthorized": false
     },
     {
@@ -983,7 +728,7 @@
       "supportFiles": {
         "docs/nutrition/gk100-chocolate-cake-study-review.md": "ae077f06c9f706de009d22b31c28656eaa5a72ca72341037bc966bbeaeb94011"
       },
-      "candidateSha256": "d033681b8541584d2b92b61f5b7f6a8563e79d4641471b07df57ff42d319fed4",
+      "candidateSha256": "5ff08f129d8a03e4e33fba604f7b25c25389d0e36d4887ba99f99d84d40ce34e",
       "originalSha256": "bcdd21dc1b94d9fc6cc82b1a57bd9dbf125ca501bcf330fd8b96559b25696463",
       "inputSha256": "fea9f480bcf2dc02757c717c6359738cb21421c2f92a0f1cc6e11a7da6744124",
       "servings": 1,
@@ -1029,12 +774,12 @@
           "depth": "DEEP",
           "evidence": "docs/nutrition/gk100-chocolate-cake-study-review.md"
         },
-        "candidateSha256": "d033681b8541584d2b92b61f5b7f6a8563e79d4641471b07df57ff42d319fed4"
+        "candidateSha256": "5ff08f129d8a03e4e33fba604f7b25c25389d0e36d4887ba99f99d84d40ce34e"
       },
       "technical": "PASS",
-      "state": "RELEASE_READY",
+      "state": "OWNER_DECISION",
       "reason": null,
-      "ownerStatus": "APPROVED",
+      "ownerStatus": "PENDING",
       "publicationAuthorized": false
     },
     {
@@ -1044,7 +789,7 @@
       "supportFiles": {
         "docs/nutrition/gk100-tangyuan-study-review.md": "7ddb5785a4cb69760622b2ead5bce067bfcaefd46044c66e17ec9dc96f2b2aea"
       },
-      "candidateSha256": "580ea679695009900d4e8b7f7247977018216b9c106c72a0a7dda691bb575f64",
+      "candidateSha256": "b3c0b92b2a999748e91b85f1a2bff572853fc463b627f04c67bcaaf61cca484d",
       "originalSha256": "6bff68e6655d144890de3bb776ae05490d47f80f77088b0f2429ecb72914058a",
       "inputSha256": "7aadc98a4ba1139ab62db4370582fe7cd38b03f34195e9dfef8fe50a1380fb07",
       "servings": 1,
@@ -1090,24 +835,16 @@
           "depth": "DEEP",
           "evidence": "docs/nutrition/gk100-tangyuan-study-review.md"
         },
-        "candidateSha256": "580ea679695009900d4e8b7f7247977018216b9c106c72a0a7dda691bb575f64"
+        "candidateSha256": "b3c0b92b2a999748e91b85f1a2bff572853fc463b627f04c67bcaaf61cca484d"
       },
       "technical": "PASS",
-      "state": "RELEASE_READY",
+      "state": "OWNER_DECISION",
       "reason": null,
-      "ownerStatus": "APPROVED",
+      "ownerStatus": "PENDING",
       "publicationAuthorized": false
     }
   ],
   "files": [
-    {
-      "path": "docs/nutrition/gk100-v3-batch01-chiavanukas-release-candidate.json",
-      "sha256": "70a36f5973951adfe93500908de00fa0454d2a8773007fdd9fb95105bf7518e3"
-    },
-    {
-      "path": "docs/nutrition/gk100-v3-batch01-chiavanukas-review.md",
-      "sha256": "5190b99784d3ed60b872a311a11041ba7a8bec7b96a3b47c584e4957c48c5a1b"
-    },
     {
       "path": "docs/nutrition/gk100-aloo-paratha-study-release-candidate.json",
       "sha256": "13af95c73778862bebc3f53546e1e551703eb5ccea25f4edb9a02ef1079ef671"
@@ -1147,25 +884,9 @@
     {
       "path": "docs/nutrition/gk100-nasi-lemak-study-review.md",
       "sha256": "0ac748819655ef76dec0dfc698947dd6985703a594d82339047cb226c11b0494"
-    },
-    {
-      "path": "docs/nutrition/gk100-chocolate-cake-study-release-candidate.json",
-      "sha256": "d033681b8541584d2b92b61f5b7f6a8563e79d4641471b07df57ff42d319fed4"
-    },
-    {
-      "path": "docs/nutrition/gk100-chocolate-cake-study-review.md",
-      "sha256": "ae077f06c9f706de009d22b31c28656eaa5a72ca72341037bc966bbeaeb94011"
-    },
-    {
-      "path": "docs/nutrition/gk100-tangyuan-study-release-candidate.json",
-      "sha256": "580ea679695009900d4e8b7f7247977018216b9c106c72a0a7dda691bb575f64"
-    },
-    {
-      "path": "docs/nutrition/gk100-tangyuan-study-review.md",
-      "sha256": "7ddb5785a4cb69760622b2ead5bce067bfcaefd46044c66e17ec9dc96f2b2aea"
     }
   ],
-  "candidateCommit": "751fccc6d8422c17bd588b10407b2fd54aa59672",
+  "candidateCommit": "5c6ed36008877df4ed88516c60eebfc9389e6350",
   "bundle": {
     "schemaVersion": 1,
     "mainSha": "d9e4fdc314142518b4afdd60933f3f0a75ead519",
@@ -1177,7 +898,7 @@
           "recipeId": "marjainen-chiavanukas",
           "packetPath": "docs/nutrition/gk100-v3-batch01-chiavanukas-release-candidate.json",
           "classification": {
-            "candidateSha256": "70a36f5973951adfe93500908de00fa0454d2a8773007fdd9fb95105bf7518e3",
+            "candidateSha256": "a0b8175f3d0bdea6c28fea78a809c7a388dbe299011db56b7416714db5890920",
             "risk": "HIGH",
             "reasons": [
               "Raw berry analogues and a plain-yogurt category mean are explicitly labelled. Three quantified omissions total 0.2373 g CHO per serving.",
@@ -1303,7 +1024,7 @@
               "depth": "DEEP",
               "evidence": "docs/nutrition/gk100-chocolate-cake-study-review.md"
             },
-            "candidateSha256": "d033681b8541584d2b92b61f5b7f6a8563e79d4641471b07df57ff42d319fed4"
+            "candidateSha256": "5ff08f129d8a03e4e33fba604f7b25c25389d0e36d4887ba99f99d84d40ce34e"
           }
         },
         {
@@ -1322,7 +1043,7 @@
               "depth": "DEEP",
               "evidence": "docs/nutrition/gk100-tangyuan-study-review.md"
             },
-            "candidateSha256": "580ea679695009900d4e8b7f7247977018216b9c106c72a0a7dda691bb575f64"
+            "candidateSha256": "b3c0b92b2a999748e91b85f1a2bff572853fc463b627f04c67bcaaf61cca484d"
           }
         }
       ]
@@ -1338,9 +1059,9 @@
           "supportFiles": {
             "docs/nutrition/gk100-v3-batch01-chiavanukas-review.md": "5190b99784d3ed60b872a311a11041ba7a8bec7b96a3b47c584e4957c48c5a1b"
           },
-          "candidateSha256": "70a36f5973951adfe93500908de00fa0454d2a8773007fdd9fb95105bf7518e3",
+          "candidateSha256": "a0b8175f3d0bdea6c28fea78a809c7a388dbe299011db56b7416714db5890920",
           "originalSha256": "c4c9c7a14345199304e7221fab28633a4a9abeffa3c99afc780cb5360824ec22",
-          "inputSha256": "36457cb625e70c4f9bff7dcb3f80c6bc8164f7b807832d265086c7aac902265a",
+          "inputSha256": "5875ca394d9845cfe1746348e3b23f4263f89047a7829a76b7b46268c98abbe1",
           "servings": 4,
           "method": "A",
           "point": null,
@@ -1384,7 +1105,7 @@
           ],
           "localeFields": "PRESENT",
           "classification": {
-            "candidateSha256": "70a36f5973951adfe93500908de00fa0454d2a8773007fdd9fb95105bf7518e3",
+            "candidateSha256": "a0b8175f3d0bdea6c28fea78a809c7a388dbe299011db56b7416714db5890920",
             "risk": "HIGH",
             "reasons": [
               "Raw berry analogues and a plain-yogurt category mean are explicitly labelled. Three quantified omissions total 0.2373 g CHO per serving.",
@@ -1716,7 +1437,7 @@
           "supportFiles": {
             "docs/nutrition/gk100-chocolate-cake-study-review.md": "ae077f06c9f706de009d22b31c28656eaa5a72ca72341037bc966bbeaeb94011"
           },
-          "candidateSha256": "d033681b8541584d2b92b61f5b7f6a8563e79d4641471b07df57ff42d319fed4",
+          "candidateSha256": "5ff08f129d8a03e4e33fba604f7b25c25389d0e36d4887ba99f99d84d40ce34e",
           "originalSha256": "bcdd21dc1b94d9fc6cc82b1a57bd9dbf125ca501bcf330fd8b96559b25696463",
           "inputSha256": "fea9f480bcf2dc02757c717c6359738cb21421c2f92a0f1cc6e11a7da6744124",
           "servings": 1,
@@ -1762,7 +1483,7 @@
               "depth": "DEEP",
               "evidence": "docs/nutrition/gk100-chocolate-cake-study-review.md"
             },
-            "candidateSha256": "d033681b8541584d2b92b61f5b7f6a8563e79d4641471b07df57ff42d319fed4"
+            "candidateSha256": "5ff08f129d8a03e4e33fba604f7b25c25389d0e36d4887ba99f99d84d40ce34e"
           },
           "technical": "PASS",
           "state": "OWNER_DECISION",
@@ -1777,7 +1498,7 @@
           "supportFiles": {
             "docs/nutrition/gk100-tangyuan-study-review.md": "7ddb5785a4cb69760622b2ead5bce067bfcaefd46044c66e17ec9dc96f2b2aea"
           },
-          "candidateSha256": "580ea679695009900d4e8b7f7247977018216b9c106c72a0a7dda691bb575f64",
+          "candidateSha256": "b3c0b92b2a999748e91b85f1a2bff572853fc463b627f04c67bcaaf61cca484d",
           "originalSha256": "6bff68e6655d144890de3bb776ae05490d47f80f77088b0f2429ecb72914058a",
           "inputSha256": "7aadc98a4ba1139ab62db4370582fe7cd38b03f34195e9dfef8fe50a1380fb07",
           "servings": 1,
@@ -1823,7 +1544,7 @@
               "depth": "DEEP",
               "evidence": "docs/nutrition/gk100-tangyuan-study-review.md"
             },
-            "candidateSha256": "580ea679695009900d4e8b7f7247977018216b9c106c72a0a7dda691bb575f64"
+            "candidateSha256": "b3c0b92b2a999748e91b85f1a2bff572853fc463b627f04c67bcaaf61cca484d"
           },
           "technical": "PASS",
           "state": "OWNER_DECISION",
@@ -1832,20 +1553,12 @@
           "publicationAuthorized": false
         }
       ],
-      "manifestSha256": "a2711e535516ebc80554fdea2c66875305f4c703749297108bf1d6ed8f155a9b"
+      "manifestSha256": "99884e1eb3c8074858a5c61ce77566db3225e92f7c842ba6464077b4b8d46356"
     },
     "decisions": {
       "schemaVersion": 1,
-      "manifestSha256": "a2711e535516ebc80554fdea2c66875305f4c703749297108bf1d6ed8f155a9b",
+      "manifestSha256": "99884e1eb3c8074858a5c61ce77566db3225e92f7c842ba6464077b4b8d46356",
       "records": [
-        {
-          "recipeId": "marjainen-chiavanukas",
-          "candidateSha256": "70a36f5973951adfe93500908de00fa0454d2a8773007fdd9fb95105bf7518e3",
-          "originalSha256": "c4c9c7a14345199304e7221fab28633a4a9abeffa3c99afc780cb5360824ec22",
-          "inputSha256": "36457cb625e70c4f9bff7dcb3f80c6bc8164f7b807832d265086c7aac902265a",
-          "decision": "APPROVE",
-          "evidence": "Omistajan 5.11.2026 tässä Codex-keskustelussa antama sisältöhyväksyntä PR #269:n taulukon kahdeksalle versiolle HEADillä 2e6b46c2af777c7c76b773a07c55680a273f25d2. Hyväksyntä koskee julkaisuvalmistelua."
-        },
         {
           "recipeId": "intialainen-aloo-paratha",
           "candidateSha256": "13af95c73778862bebc3f53546e1e551703eb5ccea25f4edb9a02ef1079ef671",
@@ -1885,37 +1598,18 @@
           "inputSha256": "6daab85cbac6d35433ac69fb9b904112a3f9aa77850c3a9db6f9bb00439a4431",
           "decision": "APPROVE",
           "evidence": "Omistajan 5.11.2026 tässä Codex-keskustelussa antama sisältöhyväksyntä PR #269:n taulukon kahdeksalle versiolle HEADillä 2e6b46c2af777c7c76b773a07c55680a273f25d2. Hyväksyntä koskee julkaisuvalmistelua."
-        },
-        {
-          "recipeId": "meheva-suklaakakku",
-          "candidateSha256": "d033681b8541584d2b92b61f5b7f6a8563e79d4641471b07df57ff42d319fed4",
-          "originalSha256": "bcdd21dc1b94d9fc6cc82b1a57bd9dbf125ca501bcf330fd8b96559b25696463",
-          "inputSha256": "fea9f480bcf2dc02757c717c6359738cb21421c2f92a0f1cc6e11a7da6744124",
-          "decision": "APPROVE",
-          "evidence": "Omistajan 5.11.2026 tässä Codex-keskustelussa antama sisältöhyväksyntä PR #269:n taulukon kahdeksalle versiolle HEADillä 2e6b46c2af777c7c76b773a07c55680a273f25d2. Hyväksyntä koskee julkaisuvalmistelua."
-        },
-        {
-          "recipeId": "tangyuan",
-          "candidateSha256": "580ea679695009900d4e8b7f7247977018216b9c106c72a0a7dda691bb575f64",
-          "originalSha256": "6bff68e6655d144890de3bb776ae05490d47f80f77088b0f2429ecb72914058a",
-          "inputSha256": "7aadc98a4ba1139ab62db4370582fe7cd38b03f34195e9dfef8fe50a1380fb07",
-          "decision": "APPROVE",
-          "evidence": "Omistajan 5.11.2026 tässä Codex-keskustelussa antama sisältöhyväksyntä PR #269:n taulukon kahdeksalle versiolle HEADillä 2e6b46c2af777c7c76b773a07c55680a273f25d2. Hyväksyntä koskee julkaisuvalmistelua."
         }
       ]
     },
     "recipeIds": [
-      "marjainen-chiavanukas",
       "intialainen-aloo-paratha",
       "hyderabadi-kanabiryani",
       "indonesialainen-nasi-goreng-aamiaisriisi",
       "baozi",
-      "nasi-lemak",
-      "meheva-suklaakakku",
-      "tangyuan"
+      "nasi-lemak"
     ],
-    "expectedCoverageDelta": 8,
+    "expectedCoverageDelta": 5,
     "publicationAuthorized": false,
-    "bundleSha256": "b59a87d05189ea3a01c9d4f02bdf2e92679d7c8f8f657c0a2dc135eecc6e2e2f"
+    "bundleSha256": "8b0707d091ee04bb9aa855a53f6e4d1530e240b5509e23152af8c97312fa01f8"
   }
 }
