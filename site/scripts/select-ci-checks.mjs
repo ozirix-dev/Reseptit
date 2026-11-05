@@ -38,6 +38,13 @@ const nutritionSourceFiles = new Set([
   "docs/nutrition/cnf-2026-reference.json",
 ]);
 
+// Exact planning outputs only. Unknown neighboring files retain full checks.
+const planningJson = new Set([
+  "docs/nutrition/gk80-carnitas-couscous/operation145/next-queue.json",
+  "docs/nutrition/gk80-operation146/queue.json",
+  "docs/nutrition/gk80-run8/inventory.json",
+]);
+
 function addNutritionChecks(plan) {
   plan.runNutrition = true;
   plan.runBuild = true;
@@ -77,9 +84,10 @@ function fullPlan(paths) {
 }
 
 function classifyPaths(paths, { forceFull = false, classificationFailed = false } = {}) {
-  const normalized = paths.map((value) => value.replaceAll("\\", "/"));
+  const valid = Array.isArray(paths) && paths.every(value => typeof value === "string" && value.trim());
+  const normalized = valid ? paths.map((value) => value.replaceAll("\\", "/")) : [];
   const fallback = () => fullPlan(normalized);
-  if (forceFull || classificationFailed || paths.length === 0) return fallback();
+  if (!valid || forceFull || classificationFailed || paths.length === 0) return fallback();
 
   const plan = {
     full: false,
@@ -97,6 +105,9 @@ function classifyPaths(paths, { forceFull = false, classificationFailed = false 
     publish: false,
   };
   for (const file of normalized) {
+    if (planningJson.has(file)) continue;
+    // Review prose can also be a sealed approval input.
+    if (file.startsWith("docs/research/")) return fallback();
     if (/^reseptit\/.+\.md$/i.test(file)) {
       if (file.includes("/_mallipohjat/")) return fallback();
       plan.runContent = true;
@@ -106,6 +117,7 @@ function classifyPaths(paths, { forceFull = false, classificationFailed = false 
     }
     if (/^kaannokset\/.+\.md$/i.test(file)) {
       plan.runContent = true;
+      plan.runTranslationReview = true;
       plan.needsNode = true;
       continue;
     }
@@ -167,7 +179,10 @@ function classifyPaths(paths, { forceFull = false, classificationFailed = false 
         plan.runBuild = true;
       } else if (/\.test\.ts$/.test(file)) {
         plan.unitTests.add(testPath);
-        if (generatedContentTests.has(testPath)) plan.runContentSync = true;
+        if (testPath === "tests/recipe-search.test.ts") {
+          plan.runBuild = true;
+          plan.runStatic = true;
+        } else if (generatedContentTests.has(testPath)) plan.runContentSync = true;
       } else {
         return fallback();
       }
@@ -294,9 +309,10 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
   let classificationError = null;
   try {
     paths = process.env.CHANGED_PATHS_JSON ? JSON.parse(process.env.CHANGED_PATHS_JSON) : getChangedPaths();
-    if (!Array.isArray(paths)) throw new Error("Changed path list is not an array.");
+    if (!Array.isArray(paths) || paths.some(file => typeof file !== "string" || !file.trim())) throw new Error("Changed paths must be non-empty strings.");
   } catch (error) {
     classificationError = error instanceof Error ? error.message : String(error);
+    paths = [];
   }
   const plan = applyEventPolicy(classifyPaths(paths, {
     forceFull: process.env.FORCE_FULL === "true",

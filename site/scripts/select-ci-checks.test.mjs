@@ -1,3 +1,8 @@
+import {execFileSync} from 'node:child_process';
+import {mkdtempSync, readFileSync, rmSync} from 'node:fs';
+import {tmpdir} from 'node:os';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
 import assert from "node:assert/strict";
 import test from "node:test";
 import { applyEventPolicy, classifyPaths } from "./select-ci-checks.mjs";
@@ -18,7 +23,7 @@ test("translation evidence selects one dedicated suite and no build", () => {
   assert.deepEqual(plan.unitTests, []);
   const recipe = classifyPaths(["kaannokset/th/paaruoat/bouillabaisse.md"]);
   assert.equal(recipe.runContent, true);
-  assert.equal(recipe.runTranslationReview, false);
+  assert.equal(recipe.runTranslationReview, true);
   assert.equal(recipe.runBuild, false);
 });
 
@@ -173,4 +178,59 @@ test("full fallback retains the changed-content gate for mixed and forced runs",
   assert.equal(classifyPaths([translation], { forceFull: true }).runContent, true);
   assert.equal(classifyPaths(["reseptit/_mallipohjat/resepti/resepti_pohja.md"]).runContent, false);
   assert.equal(classifyPaths([other, "docs/nutrition/calculations/bouillabaisse.json"]).runContent, true);
+});
+
+test('only exact unbound planning JSONs avoid a full suite; adjacent packets remain protected', () => {
+  for (const file of [
+    'docs/nutrition/gk80-carnitas-couscous/operation145/next-queue.json',
+    'docs/nutrition/gk80-operation146/queue.json',
+    'docs/nutrition/gk80-run8/inventory.json',
+  ]) {
+    const plan = classifyPaths([file]);
+    assert.equal(plan.full, false, file);
+    assert.equal(plan.needsNode, false, file);
+  }
+  for (const file of [
+    'docs/nutrition/gk80-operation146/inputs.json',
+    'docs/nutrition/gk100-approved-releases/v31-eight.json',
+    'docs/research/example/candidate.json',
+    'docs/research/example/verify.py',
+    'docs/research/example/review.md',
+  ]) assert.equal(classifyPaths([file]).full, true, file);
+  const combined = classifyPaths(['docs/nutrition/gk80-run8/inventory.json', 'docs/nutrition/food-records.json']);
+  assert.equal(combined.runGlycemic, true);
+  assert.equal(combined.runNutrition, true);
+  assert.equal(combined.runBuild, true);
+});
+
+test('malformed changed paths fall back to full checks without crashing', () => {
+  for (const paths of [null, {}, [false], [3], [''], ['  '], ['docs/notes.md', null]]) {
+    const plan = classifyPaths(paths);
+    assert.equal(plan.full, true);
+    assert.equal(plan.runBuild, true);
+    assert.equal(plan.runBrowser, true);
+  }
+});
+
+test('search tests build the GK-derived filter data before running', () => {
+  const plan = classifyPaths(['site/tests/recipe-search.test.ts']);
+  assert.equal(plan.runBuild, true);
+  assert.equal(plan.runStatic, true);
+  assert.equal(plan.runContentSync, false);
+});
+
+test('malformed CLI input emits full-check outputs and a classification error', () => {
+  const fixture = mkdtempSync(path.join(tmpdir(), 'recipe-ci-input-'));
+  try {
+    const output = path.join(fixture, 'outputs');
+    const result = JSON.parse(execFileSync(process.execPath, [fileURLToPath(new URL('./select-ci-checks.mjs', import.meta.url))], {
+      env: {...process.env, CHANGED_PATHS_JSON: '[false]', GITHUB_OUTPUT: output,
+        EVENT_NAME: 'pull_request', FORCE_FULL: 'false', DEPLOY: 'false'},
+      encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'],
+    }));
+    assert.equal(result.full, true);
+    assert.equal(result.runBuild, true);
+    assert.equal(result.publish, false);
+    assert.ok(readFileSync(output, 'utf8').includes('classification_error=true'));
+  } finally { rmSync(fixture, {recursive: true, force: true}); }
 });
