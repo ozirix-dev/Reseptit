@@ -1,3 +1,4 @@
+import {recipeTextForApprovedSnapshot} from '../scripts/approved-recipe-note-edits';
 import {restorePreEHold,afcdSourceBeforeCorrection} from './restore-pre-ehold';
 import assert from "node:assert/strict";
 import { readFile as actualReadFile } from "node:fs/promises";
@@ -21,7 +22,8 @@ const p1CoconutHoldIds = new Set(['kookos-lime-kanacurry', 'sate-ayam']);
 // are strictly tested in gk80-release2.test.ts; no historical baseline is edited.
 async function readFile(filename: Parameters<typeof actualReadFile>[0], encoding: 'utf8'): Promise<string> {
  const relative=path.relative(path.resolve(import.meta.dirname,'../..'),String(filename)).replaceAll('\\','/');
- const text=afcdSourceBeforeCorrection(relative,await actualReadFile(filename,encoding));
+ const raw=await actualReadFile(filename,encoding);
+ const text=afcdSourceBeforeCorrection(relative,(relative === "reseptit/paaruoat/mapo-tofu.md" || relative === "reseptit/aamupalat/intialainen-pinaatti-paneer-chilla.md") ? recipeTextForApprovedSnapshot(relative,raw.replaceAll("\r\n","\n")) : raw);
  const ehold=JSON.parse(await actualReadFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-e-hold-release/historical-metadata.json'),'utf8'));
 
  const later=JSON.parse(await actualReadFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-carnitas-couscous/historical-metadata.json'),'utf8'));

@@ -15,9 +15,12 @@ ingredients:
   - amount: 100
     unit: "g"
     item: "kikhernejauho"
-  - amount: 1
-    unit: "kpl"
-    item: "pinaatti"
+  - amount: 50
+    unit: "g"
+    item: "tuoretta pinaattia"
+  - amount: 140
+    unit: "ml"
+    item: "vettä"
   - amount: 100
     unit: "g"
     item: "paneer"
@@ -56,7 +59,12 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 
 ## Valmistus
 
-1. Sekoita jauhot tai viljat ja muut kuivat ainekset kulhossa. Lisää neste vähitellen ja vatkaa tasaiseksi taikinaksi.
-2. Anna taikinan levätä 10 minuuttia. Jos käytät kokonaisia palkokasveja tai viljoja taikinapohjana, niiden tulee olla liotettuja ja hienonnettuja.
-3. Kuumenna öljytty pannu keskilämmölle. Paista taikina ohuina annoksina; käännä, kun reunat kuivuvat ja pinta alkaa asettua.
-4. Tarjoa korianterichutneyn ja sitruunalohkon kanssa.
+1. Vatkaa kikhernejauho, juustokumina, suola ja vesi tasaiseksi taikinaksi. Anna levätä 10 minuuttia.
+2. Huuhtele ja kuivaa pinaatti. Hienonna se ja sekoita taikinaan. Murusta paneer täytteeksi.
+3. Kuumenna öljy pannulla keskilämmöllä. Levitä taikinaa ohuiksi letuiksi ja paista molemmin puolin.
+4. Jaa paneer lettujen päälle, taita letut ja lämmitä täytettä pannulla, kunnes se on lämmin.
+5. Tarjoa halutessasi korianterichutney ja sitruunalohkot erikseen.
+
+## Muistiinpanot
+
+Täsmennettyä ohjetta ei ole vielä koepaistettu.

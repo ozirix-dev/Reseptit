@@ -64,9 +64,9 @@ ingredients:
     unit: piece
     item: spring onions
     note: in slices
-  - amount: 4
-    unit: servings
-    item: cooked rice
+  - amount: 600
+    unit: g
+    item: cooked long-grain rice
 source_language: fi
 source_recipe: reseptit/paaruoat/mapo-tofu.md
 translation_of: mapo-tofu
@@ -86,7 +86,7 @@ The Sichuan-style tofu dish combines soft tofu, minced meat, chili bean paste an
 2. Add chili paste, garlic and ginger. Fry for a minute, stirring.
 3. Add water and soy sauce. Bring to a boil and carefully add the tofu. Simmer for 8 minutes.
 4. Mix cornstarch with a tablespoon of water. Pour into the pan in a thin strip and stir until the sauce thickens a little.
-5. Sprinkle Sichuan pepper and spring onion on top. Serve with rice.
+5. Sprinkle Sichuan pepper and spring onion on top. Serve with 150 g of cooked long-grain rice per person.
 
 ## Notes
 

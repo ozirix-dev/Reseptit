@@ -64,9 +64,9 @@ ingredients:
     unit: kpl
     item: kevätsipulia
     note: viipaleina
-  - amount: 4
-    unit: annosta
-    item: keitettyä riisiä
+  - amount: 600
+    unit: g
+    item: kypsää pitkäjyväistä riisiä
 translation_languages:
   - en
   - sv
@@ -88,7 +88,7 @@ Sichuanilaistyylinen tofuannos yhdistää pehmeän tofun, jauhelihan, chilipavun
 2. Lisää chilitahna, valkosipuli ja inkivääri. Paista minuutti sekoittaen.
 3. Lisää vesi ja soijakastike. Kiehauta ja lisää tofu varovasti. Hauduta 8 minuuttia.
 4. Sekoita maissitärkkelys ruokalusikalliseen vettä. Kaada pannulle ohuena nauhana ja sekoita, kunnes kastike hieman sakenee.
-5. Ripottele päälle sichuaninpippuri ja kevätsipuli. Tarjoa riisin kanssa.
+5. Ripottele päälle sichuaninpippuri ja kevätsipuli. Tarjoa kullekin 150 g kypsää pitkäjyväistä riisiä.
 
 ## Muistiinpanot
 
