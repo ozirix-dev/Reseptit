@@ -36,4 +36,3 @@ Tämä PR muuttaa vain dokumentaatiota. Ei resepti-, makro-, GK-, laskentamootto
 ## Tarkistukset
 
 Markdown-rakenne, paikalliset dokumenttilinkit, sisäinen johdonmukaisuus ja git diff --check. Dokumentaatiocommitissa [skip ci]; workflow-käynnistimet ja uuden HEADin Actions-ajojen puuttuminen tarkistetaan. Aiemmat inventaariot ja apuskriptit pysyvät ennallaan.
-
