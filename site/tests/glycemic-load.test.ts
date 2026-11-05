@@ -11,6 +11,9 @@ import { glycemicLoadEvidenceHash, glycemicLoadInputHash, recipeBindingHash, rec
 import { publishedGlycemicLoadForRecipe } from "../src/features/recipes/glycemic-load-display";
 import { parseMarkdown } from "../src/content/markdown";
 
+// Two intentional P1 source-identity corrections remain HOLD; older frozen releases predate them.
+const p1CoconutHoldIds = new Set(['kookos-lime-kanacurry', 'sate-ayam']);
+
 
 
 
@@ -87,7 +90,6 @@ async function historicalSourceReviewView(name:string,value:any):Promise<any>{
   // The P1 coconut correction deliberately changes only two previously blocked legacy inputs.
   // Compare historical batches without these new HOLD exceptions; the dedicated P1 test below
   // independently checks their live source identity, unknown carbohydrate and blocked status.
-  const p1CoconutHoldIds=new Set(['kookos-lime-kanacurry','sate-ayam']);
   for(const key of ['recipeBindingMismatches','calculationInputMismatches','calculationEvidenceMismatches']){
     const notHistoricalOrP1=(id:string)=>!ids.has(id)&&!p1CoconutHoldIds.has(id);
     assert.deepEqual(value[key].filter(notHistoricalOrP1),old[key].filter(notHistoricalOrP1),`${key}: non-candidate recipes unchanged`);
@@ -1639,7 +1641,7 @@ test("onion source correction accounts for every published result and preserves 
   for (const row of review.allRecipeComparisons) {
     const actual = pilot.results.find((r: { recipeId: string }) => r.recipeId === row.recipeId);
     assert.ok(actual, row.recipeId);
-    const isR1B = r1bAffectedRecipeIds.has(row.recipeId);
+    const isR1B = r1bAffectedRecipeIds.has(row.recipeId) || p1CoconutHoldIds.has(row.recipeId);
     const expected = isR1B ? actual : bakery.allRecipeComparisons.find((r: { recipeId: string }) => r.recipeId === row.recipeId)?.after ?? pepper.allRecipeComparisons.find((r: { recipeId: string }) => r.recipeId === row.recipeId)?.after ?? row.after;
     if (!isR1B) {
       assert.equal(digest(actual), expected.resultSHA256, row.recipeId);
@@ -1754,7 +1756,7 @@ test("pepper correction locks all 326 baseline results, with exactly seven withd
     const actual = pilot.results.find((r: {recipeId: string}) => r.recipeId === row.recipeId);
     const before = baseline.results.find((r: {recipeId: string}) => r.recipeId === row.recipeId);
     assert.deepEqual(row.before, before);
-    const isR1B = r1bAffectedRecipeIds.has(row.recipeId);
+    const isR1B = r1bAffectedRecipeIds.has(row.recipeId) || p1CoconutHoldIds.has(row.recipeId);
     const expected = bakery.allRecipeComparisons.find((r: {recipeId: string}) => r.recipeId === row.recipeId).after;
     if (!isR1B) {
       assert.equal(hash(actual), expected.resultSHA256, row.recipeId);
@@ -1975,7 +1977,7 @@ test("almond correction freezes the published 326 baseline and allows exactly 99
     const prior = baseline.results.find((r: {recipeId: string}) => r.recipeId === row.recipeId);
     const actual = pilot.results.find((r: {recipeId: string}) => r.recipeId === row.recipeId);
     assert.deepEqual(row.before, prior);
-    const isR1B = r1bAffectedRecipeIds.has(row.recipeId);
+    const isR1B = r1bAffectedRecipeIds.has(row.recipeId) || p1CoconutHoldIds.has(row.recipeId);
     const latest = bakery.affectedRecipeIds.includes(row.recipeId) ? bakery.allRecipeComparisons.find((r: {recipeId: string}) => r.recipeId === row.recipeId).after : row.after;
     if (!isR1B) {
       assert.equal(hash(actual), latest.resultSHA256, row.recipeId);
@@ -2144,7 +2146,7 @@ test("AJO 1.8 freezes published 101/326, withdraws exactly four and preserves 32
     const prior = baseline.results.find((r: {recipeId: string}) => r.recipeId === row.recipeId);
     const actual = pilot.results.find((r: {recipeId: string}) => r.recipeId === row.recipeId);
     assert.deepEqual(row.before, prior);
-    const isR1B = r1bAffectedRecipeIds.has(row.recipeId);
+    const isR1B = r1bAffectedRecipeIds.has(row.recipeId) || p1CoconutHoldIds.has(row.recipeId);
     const latest = (await finalBakeryReviewPromise).allRecipeComparisons.find((r: {recipeId: string}) => r.recipeId === row.recipeId).after;
     if (!isR1B) {
       assert.equal(hash(actual), latest.resultSHA256, row.recipeId);
@@ -2266,7 +2268,7 @@ test("AJO 1.9 freezes published 97 and withdraws exactly twelve across all 326 r
     assert.deepEqual(row.before, prior);
     assert.equal(prior.resultSHA256, four.allRecipeComparisons.find((r: {recipeId: string}) => r.recipeId === row.recipeId).after.resultSHA256, "published baseline continues exact historical results");
     const result = pilot.results.find((r: {recipeId: string}) => r.recipeId === row.recipeId);
-    const isR1B = r1bAffectedRecipeIds.has(row.recipeId);
+    const isR1B = r1bAffectedRecipeIds.has(row.recipeId) || p1CoconutHoldIds.has(row.recipeId);
     if (!isR1B) {
       assert.equal(hash(result), row.after.resultSHA256, row.recipeId);
       for (const key of ["status", "glycemicLoadPerServing", "unroundedGlycemicLoadPerServing", "glycemicLoadRangePerServing", "confidence", "omittedAvailableCarbohydratePerServingG", "omittedAvailableCarbohydrateUpperBoundPerServingG", "blockers"]) assert.deepEqual(result[key], row.after[key], row.recipeId + key);
