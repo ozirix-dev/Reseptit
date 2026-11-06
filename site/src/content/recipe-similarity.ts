@@ -67,15 +67,15 @@ const aliases: readonly [RegExp, string][] = [
   [/(?:tuorejuusto|cream cheese|färskost)/i, "tuorejuusto"],
   [/(?:mozzarella)/i, "mozzarella"],
   [/(?:kananmunan keltuai|egg yolk|äggula)/i, "keltuainen"],
-  [/(?:kananmuna|kananmunia|munaa ilman|egg|ägg|ไข่)/i, "kananmuna"],
-  [/(?:voi(?:ta|lla|sula)?|butter|smör)/i, "voi"],
+  [/(?:kananmuna|kananmunia|munaa ilman|\beggs?\b|ägg|ไข่)/i, "kananmuna"],
+  [/(?:\bvoi(?:ta|lla|sula)?\b|\bbutter\b|\bsmör\b)/i, "voi"],
   [/(?:oliiviöljy|olive oil|olivolja)/i, "oliiviöljy"],
   [/(?:öljy|cooking oil|vegetable oil|น้ำมัน)/i, "öljy"],
   [/(?:kuivahiiva|tuorehiiva|yeast|jäst)/i, "hiiva"],
   [/(?:sokeri|sokeria|sugar|socker|น้ำตาล)/i, "sokeri"],
   [/(?:suola|suolaa|salt|เกลือ)/i, "suola"],
   [/(?:kookosmaito|coconut milk|kokosmjölk|กะทิ)/i, "kookosmaito"],
-  [/(?:täysmaito|maitoa|milk|mjölk|นม)/i, "maito"],
+  [/(?:täysmaito|\bmaito\b|maitoa|milk|mjölk|นม)/i, "maito"],
   [/(?:vesi|vettä|water|vatten|น้ำเปล่า)/i, "vesi"],
   [/(?:seesaminsiemen|sesame seed|sesamfrö)/i, "seesaminsiemen"],
   [/(?:kananrinta|broilerin rinta|chicken breast)/i, "kananrinta"],
@@ -83,6 +83,7 @@ const aliases: readonly [RegExp, string][] = [
   [/(?:jauheliha|ground beef|minced meat|köttfärs)/i, "jauheliha"],
   [/(?:kerma|kermaa|cream|grädde)/i, "kerma"],
   [/(?:riisi|riisiä|rice|ข้าว)/i, "riisi"],
+  [/(?:perunajauho|potato flour|potato starch)/i, "perunajauho"],
   [/(?:peruna|perunaa|potato|potatis)/i, "peruna"],
   [/(?:kurkku|kurkkua|cucumber|gurka|แตงกวา)/i, "kurkku"],
   [/(?:inkiväär|ginger|ingefära|ขิง)/i, "inkivääri"],
@@ -202,12 +203,17 @@ function revisionHash(value: string): string {
   return (hash >>> 0).toString(16).padStart(8, "0");
 }
 
-const preparedCache = new WeakMap<SimilarityRecipe, PreparedRecipe>();
+const preparedCache = new WeakMap<SimilarityRecipe, { signature: string; prepared: PreparedRecipe }>();
 
 function prepare(recipe: SimilarityRecipe): PreparedRecipe {
-  // Inputs are immutable recipe snapshots for the duration of each audit.
+  // Invalidate on in-place user edits as well as when a fresh object is supplied.
+  // Snapshotting only cheap structured inputs avoids recomputing the regex index.
+  const signature = JSON.stringify([
+    recipe.title, recipe.servings, recipe.ingredients, recipe.instructions,
+    recipe.cookingMethods, recipe.category, recipe.locale,
+  ]);
   const cached = preparedCache.get(recipe);
-  if (cached) return cached;
+  if (cached?.signature === signature) return cached.prepared;
   const items = new Map<string, IndexedIngredient>();
   let unknown = 0;
   for (const ingredient of recipe.ingredients) {
@@ -236,7 +242,7 @@ function prepare(recipe: SimilarityRecipe): PreparedRecipe {
     limited: significant.size < 2 || recipe.servings <= 0 || !Number.isFinite(recipe.servings) ||
       unknown > recipe.ingredients.length * 0.5,
   };
-  preparedCache.set(recipe, prepared);
+  preparedCache.set(recipe, { signature, prepared });
   return prepared;
 }
 
@@ -402,10 +408,17 @@ export function checkPublicRecipeSubmission(
   published: readonly SimilarityRecipe[],
   pending: readonly SimilarityRecipe[],
 ): { internal: SimilarityAssessment; publicStatus: SimilarityStatus; publicMatches: Pick<SimilarityMatch, "recipeId" | "title" | "reasons">[] } {
+  const idCollision = [...published, ...pending].some((recipe) => recipe.recipeId === submission.recipeId);
   const internal = assessRecipeSimilarity(submission, [
     ...published.map((recipe) => ({ ...recipe, scope: "published" as const })),
     ...pending.map((recipe) => ({ ...recipe, scope: "pending" as const })),
   ]);
+  // Callers must assign trusted submission IDs. A colliding user-supplied ID
+  // could otherwise skip its source recipe as a "translation" and pass as new.
+  if (idCollision) {
+    internal.warnings.push("Reseptitunniste on jo käytössä: omistajan tarkistus vaaditaan.");
+    if (internal.status === "NO_MATERIAL_MATCH") internal.status = "UNCERTAIN";
+  }
   // Pending-only material matches must not reveal whether another user has
   // submitted this formula. The client receives an ordinary review-required state.
   const hasVisibleMaterial = internal.matches.some((match) =>
