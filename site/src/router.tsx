@@ -9,6 +9,7 @@ import { useContent } from "@/lib/content";
 import { loadContent } from "@/lib/load-content";
 import type { RouteContent } from "@/content/route-data";
 import { SeoMeta } from "@/SeoMeta";
+import { BlogIndex, BlogArticle } from "@/features/blog/BlogPages";
 
 function SiteLayout() {
   const { pathname } = useLocation();
@@ -30,6 +31,7 @@ function SiteLayout() {
             {availableLocales.includes("en") ? <Link to={isMethodPage ? glycemicLoadPath("en") : "/en/recipes/"} lang="en" aria-current={isMethodPage && locale === "en" ? "page" : undefined}>English</Link> : null}
             {availableLocales.includes("sv") ? <Link to={isMethodPage ? glycemicLoadPath("sv") : "/sv/recept/"} lang="sv" aria-current={isMethodPage && locale === "sv" ? "page" : undefined}>Svenska</Link> : null}
             {availableLocales.includes("th") ? <Link to={isMethodPage ? glycemicLoadPath("th") : "/th/recipes/"} lang="th" aria-current={isMethodPage && locale === "th" ? "page" : undefined}>ไทย</Link> : null}
+            <Link to="/ruokaopas/" lang="fi" aria-current={pathname.startsWith("/ruokaopas") ? "page" : undefined}>Ruokaopas{locale !== "fi" ? " (FI)" : ""}</Link>
             <Link to={glycemicLoadPath(locale)} lang={locale} aria-current={isMethodPage ? "page" : undefined}>{labels.glycemicLoadNav}</Link>
           </nav> : null}
         </div>
@@ -70,6 +72,8 @@ export const siteRoutes: RouteObject[] = [
     children: [
       { index: true, element: <RecipesPage locale="fi" /> },
       { path: "glykeeminen-kuorma", element: <GlycemicLoadPilotPage /> },
+      { path: "ruokaopas", element: <BlogIndex /> },
+      { path: "ruokaopas/:slug", element: <BlogArticle /> },
       { path: "en/glycemic-load", element: <GlycemicLoadPilotPage /> },
       { path: "sv/glykemisk-belastning", element: <GlycemicLoadPilotPage /> },
       { path: "th/glycemic-load", element: <GlycemicLoadPilotPage /> },
