@@ -4,6 +4,7 @@ import { RecipeAbout } from "@/features/recipes/recipe-tools";
 import { RecipesPage } from "@/features/recipes/RecipesPage";
 import { GlycemicLoadPilotPage } from "@/features/glycemic-load/GlycemicLoadPilotPage";
 import { glycemicLoadPath, recipeIndexPath, recipeLocaleFromPath, recipeUi } from "@/features/recipes/recipe-i18n";
+import { isRecipavoHeroPreviewEnabled, recipavoHeroCopy } from "@/features/recipes/recipavo-hero";
 import { useContent } from "@/lib/content";
 import { loadContent } from "@/lib/load-content";
 import type { RouteContent } from "@/content/route-data";
@@ -13,6 +14,8 @@ function SiteLayout() {
   const { pathname } = useLocation();
   const locale = recipeLocaleFromPath(pathname);
   const labels = recipeUi[locale];
+  const previewCopy = isRecipavoHeroPreviewEnabled() ? recipavoHeroCopy[locale] : null;
+  const brand = previewCopy?.brand ?? labels.brand;
   const isMethodPage = Object.values({ fi: "/glykeeminen-kuorma", en: "/en/glycemic-load", sv: "/sv/glykemisk-belastning", th: "/th/glycemic-load" }).includes(pathname.replace(/\/$/, ""));
   const { locales: availableLocales } = useContent();
   return (
@@ -21,7 +24,7 @@ function SiteLayout() {
       <a className="skip-link" href="#main">{labels.skipToContent}</a>
       <header className="site-header">
         <div className="container site-header__inner">
-          <Link className="site-brand" to={recipeIndexPath(locale)} aria-label={labels.brandHome}><span className="site-brand__mark" aria-hidden="true">{labels.brand.slice(0, 1)}</span><span><strong>{labels.brand}</strong><small>{labels.tagline}</small></span></Link>
+          <Link className="site-brand" to={recipeIndexPath(locale)} aria-label={previewCopy?.brandHome ?? labels.brandHome}><span className="site-brand__mark" aria-hidden="true">{brand.slice(0, 1)}</span><span><strong>{brand}</strong><small>{previewCopy?.tagline ?? labels.tagline}</small></span></Link>
           {availableLocales.length > 1 ? <nav className="site-nav" aria-label={labels.languages}>
             {availableLocales.includes("fi") ? <Link to={isMethodPage ? glycemicLoadPath("fi") : "/"} lang="fi" aria-current={isMethodPage && locale === "fi" ? "page" : undefined}>Suomi</Link> : null}
             {availableLocales.includes("en") ? <Link to={isMethodPage ? glycemicLoadPath("en") : "/en/recipes/"} lang="en" aria-current={isMethodPage && locale === "en" ? "page" : undefined}>English</Link> : null}
@@ -32,7 +35,7 @@ function SiteLayout() {
         </div>
       </header>
       <main id="main" className="site-main"><Outlet /></main>
-      <footer className="site-footer"><div className="container"><p>{labels.footer}</p><RecipeAbout locale={locale} /></div></footer>
+      <footer className="site-footer"><div className="container"><p>{previewCopy?.footer ?? labels.footer}</p><RecipeAbout locale={locale} /></div></footer>
     </div>
   );
 }

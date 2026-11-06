@@ -8,6 +8,7 @@ import { RouterProvider } from "react-router-dom";
 import { createServer } from "vite";
 import { siteContent } from "../src/generated/content.generated";
 import { glycemicLoadMeta, recipeUi } from "../src/features/recipes/recipe-i18n";
+import { recipavoHeroCopy } from "../src/features/recipes/recipavo-hero";
 import { recipeJsonLd } from "../src/features/recipes/schema";
 import type { RecipeLocale } from "../src/types/content";
 
@@ -35,8 +36,10 @@ function routeMetadata(route: string) {
     locale === "fi" ? route === "/" : route === `${localeBase[locale]}/` || route === localeBase[locale]);
   if (!recipe && !pilotPage && indexLocale !== "fi" && (!indexLocale || !siteContent.recipes.some((item) => item.locale === indexLocale))) return null;
   const locale = recipe?.locale ?? methodLocale ?? indexLocale ?? "fi";
-  const title = pilotPage ? glycemicLoadMeta[locale].title : recipe ? `${recipe.title} | ${indexNames[locale]}` : `${indexNames[locale]} | Ozirix`;
-  const description = pilotPage ? glycemicLoadMeta[locale].description : recipe?.description || recipeUi[locale].intro;
+  // Preview output is never an authorized production or SEO migration build.
+  const preview = process.env.VITE_RECIPAVO_HERO_PREVIEW === "true";
+  const title = preview && indexLocale ? `${recipavoHeroCopy[locale].title} | Recipavo` : pilotPage ? glycemicLoadMeta[locale].title : recipe ? `${recipe.title} | ${indexNames[locale]}` : `${indexNames[locale]} | Ozirix`;
+  const description = preview && indexLocale ? recipavoHeroCopy[locale].intro : pilotPage ? glycemicLoadMeta[locale].description : recipe?.description || recipeUi[locale].intro;
   const url = `${baseUrl}${route}`;
   const translations = recipe ? siteContent.recipes.filter((item) => item.recipeId === recipe.recipeId) : [];
   const publishedLocales = pilotPage ? (Object.keys(methodRoutes) as RecipeLocale[]).map((itemLocale) => ({ locale: itemLocale, path: methodRoutes[itemLocale] })) : recipe
@@ -65,6 +68,7 @@ function routeMetadata(route: string) {
     head: [
       `<title>${escapeHtml(title)}</title>`,
       `<meta name="description" content="${escapeHtml(description)}" />`,
+      ...(preview ? ['<meta name="robots" content="noindex, nofollow" />'] : []),
       `<link rel="canonical" href="${escapeHtml(url)}" />`,
       `<meta property="og:type" content="${recipe ? "article" : "website"}" />`,
       `<meta property="og:title" content="${escapeHtml(title)}" />`,

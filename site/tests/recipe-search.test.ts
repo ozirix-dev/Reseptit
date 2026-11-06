@@ -4,6 +4,7 @@ import test from "node:test";
 import { siteContent } from "../src/generated/content.generated";
 import { emptyRecipeFilters, filterRecipes, normalizeSearchText, parseRecipeFilters, recipeFiltersToSearch } from "../src/features/recipes/recipe-search";
 import { recipeFacets } from "../src/content/recipe-facets";
+import { isRecipavoHeroPreviewEnabled, recipavoHeroCopy } from "../src/features/recipes/recipavo-hero";
 import { glycemicLoadFilterCategories } from "../src/generated/glycemic-load-filters.generated";
 import { glycemicLoadPilotResults } from "../src/generated/glycemic-load-pilot.generated";
 
@@ -186,4 +187,17 @@ test('rounded published points and precise scenario ranges must share the filter
   const estimate = {status: 'CALCULATED', confidence: 'LOW', glycemicLoadPerServing: 20, glycemicLoadRangePerServing: {min: 20.00004, max: 20.00005}};
   assert.equal(originalGlycemicLoadCategory(estimate), 'high');
   assert.equal(originalGlycemicLoadCategory({...estimate, glycemicLoadPerServing: 9.99, glycemicLoadRangePerServing: {min: 10.01, max: 10.02}}), null);
+});
+
+
+test("Recipavo phase-1 preview copy is localized and never promises unavailable features", () => {
+  for (const locale of ["fi", "en", "sv", "th"] as const) {
+    const hero = recipavoHeroCopy[locale];
+    assert.equal(hero.brand, "Recipavo");
+    assert.ok(hero.brandHome && hero.tagline && hero.eyebrow && hero.title && hero.intro && hero.footer, locale);
+    assert.ok(hero.title.length < 90 && hero.intro.length < 250, locale);
+    assert.ok(!/Plus|Päiväkirja|Diary|สมัครสมาชิก/i.test([hero.title, hero.intro].join(" ")), locale);
+  }
+  // The feature must remain disabled in ordinary builds, including plain Node tests.
+  if (!import.meta.env?.VITE_RECIPAVO_HERO_PREVIEW) assert.equal(isRecipavoHeroPreviewEnabled(), false);
 });
