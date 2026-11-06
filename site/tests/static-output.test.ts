@@ -8,6 +8,7 @@ import { readFile } from "node:fs/promises";
 import path from "node:path";
 import test from "node:test";
 import { recipeUi } from "../src/features/recipes/recipe-i18n";
+import { copyrightSourceUrl, copyrightUi } from "../src/features/recipes/recipe-copyright";
 import { toolUi } from "../src/features/recipes/recipe-tools";
 import { siteContent } from "../src/generated/content.generated";
 import { glycemicLoadPilotReviewedRecipeCount, glycemicLoadPilotResults } from "../src/generated/glycemic-load-pilot.generated";
@@ -589,5 +590,18 @@ test("Swedish and Thai Torras comparisons include both products on the published
       assert.match(html, /data-chocolate-product="torras-stevia"/, slug);
       if (slug.startsWith("keto-")) assert.ok(html.includes(calculatedPart), slug);
     }
+  }
+});
+
+test("copyright policy is unobtrusive, accessible and prerendered in all four languages", async () => {
+  for (const [locale, route] of [["fi", ""], ["en", "en/recipes"], ["sv", "sv/recept"], ["th", "th/recipes"]] as const) {
+    const html = await readFile(path.join(dist, route, "index.html"), "utf8");
+    const footer = html.slice(html.indexOf('<footer class="site-footer">'));
+    assert.ok(footer.includes('<details class="recipe-about recipe-copyright">'), `${locale}: rights disclosure in footer`);
+    assert.ok(footer.includes(`<summary>${copyrightUi[locale].title}</summary>`), `${locale}: translated summary`);
+    assert.ok(footer.includes(copyrightUi[locale].background), `${locale}: SSR policy available before JavaScript`);
+    assert.ok(footer.includes(copyrightUi[locale].sourceLabel), `${locale}: recognized guidance linked`);
+    assert.ok(footer.includes(`href="${copyrightSourceUrl}"`), `${locale}: source URL`);
+    assert.ok(footer.includes('href="https://github.com/ozirix-dev/Reseptit/issues"'), `${locale}: correction channel`);
   }
 });
