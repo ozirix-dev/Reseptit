@@ -3,7 +3,7 @@
 **Päiväys:** 6.11.2026  
 **Tila:** suunnittelu-PR / Draft; ei AI-kutsuja, käyttäjärajapintaa, palvelinrajapintaa, tilinkytkentää eikä tuotantojulkaisua.  
 **Omistaja:** Reseptit / Recipavo. **Kohde:** tuleva https://www.recipavo.com/.  
-**Periaate:** nykyinen julkinen reseptipalvelu toimii edelleen ilman Keittiöapuria, JavaScriptiä ja kirjautumista.
+**Periaate:** julkaistut reseptisivut, reseptikortit ja linkit toimivat edelleen ilman Keittiöapuria, JavaScriptiä tai kirjautumista; hakusuodattimet tarvitsevat nykyiseen tapaan JavaScriptin.
 
 ## 1. Päätösesitys
 
@@ -11,7 +11,7 @@ Rakennetaan **oma Recipavo Keittiöapuri**, jonka ensimmäinen tehtävä on ohja
 
 **Miksi tämä on erillinen ominaisuus:** nykyinen hakukenttä hallitsee jo hakusanat, kielikohtaisen normalisoinnin, kategoriat, keto/VHH:n, maksimiajan, aluekeittiöt, ainesosaryhmät ja GK-luokat. AI:n tehtävä on muuntaa luonnollinen pyyntö näihin rajauksiin, kysyä tarpeellinen täsmennys ja selittää löydetyt vaihtoehdot — ei olla oma tietokanta.
 
-**Ei nyt:** chat-kuplaa nykyiseen heroon, maksullisuutta, käyttäjäprofiileja, päiväkirjaa, D1-keskusteluhistoriaa, semanttista vektorihakuinfraan tai Cloudflare-domainin vaihtoa.
+**Ei nyt:** chat-kuplaa nykyiseen heroon, maksullisuutta, käyttäjäprofiileja, päiväkirjaa, D1-keskusteluhistoriaa, erillistä vektorihakua tai Cloudflare-domainin vaihtoa.
 
 ## 2. Todettu lähtötilanne ja riippuvuudet
 
@@ -64,7 +64,7 @@ flowchart TD
 
 **Määrittelemättömät/keskeneräiset:** puuttuva määrä tai puuttuva GI-sidos aiheuttaa eston GK-numeroiden esittämiseen; vanha/nimeämätön vastaavuus ei kelpaa. V1 ei laske uusia GK-lukuja eikä sovella ruoka-aineryhmäanalogiaa. Jos hyväksytty GK-paketti ei ole buildissa saatavilla, numeerinen GK jätetään kokonaan pois.
 
-**Backend:** samaan origin-polkuun suunniteltu POST /api/assistant/v1, vain Cloudflare-pilottiin; Worker saa hakea vain julkaistun, buildissä versionoidun indeksin. Provider ja malli ympäristöasetuksina, ei käyttäjän antamina. Varsinainen AI saa tehdä rajatun intenttijäsennyksen, ei antaa suoraan selaimelle luotettuna pidettävää reseptifaktaa. Serveri validioi listan ja ottaa lopulliset faktat indeksistä.
+**Backend:** samaan origin-polkuun suunniteltu POST /api/assistant/v1, vain Cloudflare-pilottiin; Worker saa hakea vain julkaistun, buildissä versionoidun indeksin. Provider ja malli ympäristöasetuksina, ei käyttäjän antamina. Varsinainen AI saa tehdä rajatun intenttijäsennyksen, ei antaa suoraan selaimelle luotettuna pidettävää reseptifaktaa. Palvelin validoi listan ja ottaa lopulliset faktat indeksistä.
 
 **Vaihtoehto avoinna:** Cloudflare Workers AI (malli Cloudflaren alustalla) vs. OpenAI API Cloudflare AI Gatewayn kautta. Valinta tehdään laadun ja **todellisten** hintojen testistä. Ei samaan vaiheeseen kahta laskutettavaa mallia.
 
@@ -72,7 +72,7 @@ flowchart TD
 
 - Ensisijainen paikka: reseptihaun yhteydessä pieni “Kysy Keittiöapurilta” -valinta vasta, kun haku ja hero/H2-kirjasto ovat vakiintuneet; ei pakollista kelluvaa kuplaa tai tilaa vievää heroa.
 - Suositukset ovat **oikeita reseptikortteja** ja linkkejä, eivät pelkkiä tekstikuvauksia. Aktiiviset rajaukset ovat näkyvissä ja käyttäjä saa poistaa ne.
-- Haku ja reseptilinkit pysyvät käytettävissä ilman AI:ta, ilman kirjautumista ja ilman JavaScriptiä. AI:n palvelukatko ei estä reseptien lukemista.
+- Hakusuodattimet toimivat ilman AI:ta ja kirjautumista JavaScriptin ollessa käytössä; julkaistut reseptikortit ja reseptilinkit näkyvät myös ilman JavaScriptiä. AI:n palvelukatko ei estä reseptien lukemista.
 - Koko käyttö neljällä kielellä, myös virheet, kuittaukset, lähderajaukset ja tietosuojatekstit. Thai-segmentointi ja eri kielten diakriitit testattava.
 - WCAG 2.2 AA -tavoite: näppäimistökäyttö, kohdistuksen palautus, aria-live maltillisesti, viestien navigointi, ruudunlukija, 320 px viewport ja reduced-motion; ei automaattista fokuskaappausta.
 - Visuaalisen toteutuksen täytyy noudattaa nykyistä niukkaa HTML/CSS-linjaa, ei uutta UI-kirjastoa. Ei chatin päällä kiinteää paneelia mobiilissa.
@@ -143,7 +143,7 @@ Cloudflare Workers Paid perusmaksu on **$5/kk tilikohtaisesti** ja voi olla jo n
 |---|---|
 | Keksitty GK, CHO tai ravintoarvo | Vain lähteestä palautettu nullable-fakta; kieltäydy arvosta ilman hyväksyttyä evidence/hash-sidosta |
 | Käännöksen keksitty reseptilinkki | Vain reitti-indeksin olemassa oleva locale + routePath |
-| Kalliit bottipyynnöt | Atomiikkinen käyttökatto, per-user/per-origin rajat, testattu kill switch, fallback hakuun |
+| Kalliit bottipyynnöt | Atominen käyttökatto, per-user/per-origin rajat, testattu kill switch, fallback hakuun |
 | Prompt-injektio / XSS | Tyypitetty toiminto, serverin allowlist ja eskapointi; resepti- ja käyttäjätekstit epäluotettavia |
 | Arkaluontoinen käyttäjädata / lokitus | Ei pitkäaikaishistoriaa, DPA/siirtoarvio, gatewayn logging OFF, ei tekstiä telemetriaan |
 | SEO, hero tai blogi rikkoutuu | Omat tiedostopolut ja kytkin OFF; no-JS ja mobile-mittaukset |
