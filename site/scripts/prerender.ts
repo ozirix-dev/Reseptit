@@ -9,6 +9,7 @@ import { createServer } from "vite";
 import { siteContent } from "../src/generated/content.generated";
 import { glycemicLoadMeta, recipeUi } from "../src/features/recipes/recipe-i18n";
 import { recipeJsonLd } from "../src/features/recipes/schema";
+import { blogIndexPath, blogIndexTitle, blogIndexDescription, blogPosts, blogPostForRoute, blogRoutes, blogJsonLd } from "../src/features/blog/blog-data";
 import type { RecipeLocale } from "../src/types/content";
 
 const siteDir = path.resolve(import.meta.dirname, "..");
@@ -29,17 +30,19 @@ function outputPaths(route: string): string[] {
 
 function routeMetadata(route: string) {
   const recipe = siteContent.recipes.find((item) => item.routePath === route);
+  const blogPost = blogPostForRoute(route);
+  const isBlogIndex = route === blogIndexPath;
   const methodLocale = (Object.keys(methodRoutes) as RecipeLocale[]).find((locale) => route === methodRoutes[locale]);
   const pilotPage = methodLocale !== undefined;
   const indexLocale = (Object.keys(localeBase) as RecipeLocale[]).find((locale) =>
     locale === "fi" ? route === "/" : route === `${localeBase[locale]}/` || route === localeBase[locale]);
-  if (!recipe && !pilotPage && indexLocale !== "fi" && (!indexLocale || !siteContent.recipes.some((item) => item.locale === indexLocale))) return null;
-  const locale = recipe?.locale ?? methodLocale ?? indexLocale ?? "fi";
-  const title = pilotPage ? glycemicLoadMeta[locale].title : recipe ? `${recipe.title} | ${indexNames[locale]}` : `${indexNames[locale]} | Ozirix`;
-  const description = pilotPage ? glycemicLoadMeta[locale].description : recipe?.description || recipeUi[locale].intro;
+  if (!recipe && !pilotPage && !blogPost && !isBlogIndex && indexLocale !== "fi" && (!indexLocale || !siteContent.recipes.some((item) => item.locale === indexLocale))) return null;
+  const locale = blogPost || isBlogIndex ? "fi" : recipe?.locale ?? methodLocale ?? indexLocale ?? "fi";
+  const title = blogPost ? blogPost.seoTitle : isBlogIndex ? blogIndexTitle : pilotPage ? glycemicLoadMeta[locale].title : recipe ? `${recipe.title} | ${indexNames[locale]}` : `${indexNames[locale]} | Ozirix`;
+  const description = blogPost ? blogPost.excerpt : isBlogIndex ? blogIndexDescription : pilotPage ? glycemicLoadMeta[locale].description : recipe?.description || recipeUi[locale].intro;
   const url = `${baseUrl}${route}`;
   const translations = recipe ? siteContent.recipes.filter((item) => item.recipeId === recipe.recipeId) : [];
-  const publishedLocales = pilotPage ? (Object.keys(methodRoutes) as RecipeLocale[]).map((itemLocale) => ({ locale: itemLocale, path: methodRoutes[itemLocale] })) : recipe
+  const publishedLocales = blogPost || isBlogIndex ? [{ locale: "fi" as const, path: route }] : pilotPage ? (Object.keys(methodRoutes) as RecipeLocale[]).map((itemLocale) => ({ locale: itemLocale, path: methodRoutes[itemLocale] })) : recipe
     ? translations.map((item) => ({ locale: item.locale, path: item.routePath }))
     : (Object.keys(localeBase) as RecipeLocale[])
         .filter((itemLocale) => siteContent.recipes.some((item) => item.locale === itemLocale))
@@ -48,15 +51,16 @@ function routeMetadata(route: string) {
     `<link rel="alternate" hreflang="${altLocale}" href="${escapeHtml(`${baseUrl}${altPath}`)}" />`);
   const defaultAlternate = publishedLocales.find((item) => item.locale === "fi") ?? publishedLocales[0];
   if (defaultAlternate) alternates.push(`<link rel="alternate" hreflang="x-default" href="${escapeHtml(`${baseUrl}${defaultAlternate.path}`)}" />`);
-  const imageTags = recipe?.image ? [
-    `<meta property="og:image" content="${escapeHtml(recipe.image.src)}" />`,
-    `<meta name="twitter:image" content="${escapeHtml(recipe.image.src)}" />`,
+  const pageImage = recipe?.image?.src ?? blogPost?.image;
+  const imageTags = pageImage ? [
+    `<meta property="og:image" content="${escapeHtml(pageImage)}" />`,
+    `<meta name="twitter:image" content="${escapeHtml(pageImage)}" />`,
   ] : [];
   const jsonLd = recipe
     ? `<script id="recipe-jsonld" type="application/ld+json">${JSON.stringify(recipeJsonLd(recipe)).replaceAll("<", "\\u003c")}</script>`
-    : "";
+    : blogPost ? `<script id="blog-jsonld" type="application/ld+json">${JSON.stringify(blogJsonLd(blogPost)).replaceAll("<", "\\u003c")}</script>` : "";
   // Match the card grid breakpoints. Do not eagerly fetch three cards on mobile.
-  const desktopImages = recipe || pilotPage ? [] : siteContent.recipes.filter((item) => item.locale === locale)
+  const desktopImages = recipe || pilotPage || blogPost || isBlogIndex ? [] : siteContent.recipes.filter((item) => item.locale === locale)
     .slice(1, 3).flatMap((item, index) => item.image ? [
       `<link rel="preload" as="image" fetchpriority="high" href="${escapeHtml(item.image.src)}" media="(min-width: ${index === 0 ? 700 : 1100}px)"${item.image.srcSet ? ` imagesrcset="${escapeHtml(item.image.srcSet)}"` : ""}${item.image.srcSet ? ` imagesizes="${escapeHtml(recipeCardSizes)}"` : ""} />`,
     ] : []);
@@ -66,12 +70,12 @@ function routeMetadata(route: string) {
       `<title>${escapeHtml(title)}</title>`,
       `<meta name="description" content="${escapeHtml(description)}" />`,
       `<link rel="canonical" href="${escapeHtml(url)}" />`,
-      `<meta property="og:type" content="${recipe ? "article" : "website"}" />`,
+      `<meta property="og:type" content="${recipe || blogPost ? "article" : "website"}" />`,
       `<meta property="og:title" content="${escapeHtml(title)}" />`,
       `<meta property="og:description" content="${escapeHtml(description)}" />`,
       `<meta property="og:url" content="${escapeHtml(url)}" />`,
       `<meta property="og:locale" content="${openGraphLocale[locale]}" />`,
-      `<meta name="twitter:card" content="${recipe?.image ? "summary_large_image" : "summary"}" />`,
+      `<meta name="twitter:card" content="${pageImage ? "summary_large_image" : "summary"}" />`,
       `<meta name="twitter:title" content="${escapeHtml(title)}" />`,
       `<meta name="twitter:description" content="${escapeHtml(description)}" />`,
       ...imageTags, ...alternates, ...desktopImages, jsonLd,
@@ -102,6 +106,7 @@ try {
   const routes = [...new Set([
     "/",
     ...Object.values(methodRoutes),
+    ...blogRoutes,
     ...(Object.keys(localeBase) as RecipeLocale[])
       .filter((locale) => locale !== "fi" && siteContent.recipes.some((recipe) => recipe.locale === locale))
       .map((locale) => `${localeBase[locale]}/`),

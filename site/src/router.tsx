@@ -8,11 +8,13 @@ import { useContent } from "@/lib/content";
 import { loadContent } from "@/lib/load-content";
 import type { RouteContent } from "@/content/route-data";
 import { SeoMeta } from "@/SeoMeta";
+import { BlogIndexPage, BlogArticlePage } from "@/features/blog/BlogPages";
 
 function SiteLayout() {
   const { pathname } = useLocation();
   const locale = recipeLocaleFromPath(pathname);
   const labels = recipeUi[locale];
+  const isBlogPage = pathname === "/ruokaopas/" || pathname.startsWith("/ruokaopas/");
   const isMethodPage = Object.values({ fi: "/glykeeminen-kuorma", en: "/en/glycemic-load", sv: "/sv/glykemisk-belastning", th: "/th/glycemic-load" }).includes(pathname.replace(/\/$/, ""));
   const { locales: availableLocales } = useContent();
   return (
@@ -28,6 +30,7 @@ function SiteLayout() {
             {availableLocales.includes("sv") ? <Link to={isMethodPage ? glycemicLoadPath("sv") : "/sv/recept/"} lang="sv" aria-current={isMethodPage && locale === "sv" ? "page" : undefined}>Svenska</Link> : null}
             {availableLocales.includes("th") ? <Link to={isMethodPage ? glycemicLoadPath("th") : "/th/recipes/"} lang="th" aria-current={isMethodPage && locale === "th" ? "page" : undefined}>ไทย</Link> : null}
             <Link to={glycemicLoadPath(locale)} lang={locale} aria-current={isMethodPage ? "page" : undefined}>{labels.glycemicLoadNav}</Link>
+            <Link to="/ruokaopas/" lang="fi" hrefLang="fi" aria-current={isBlogPage ? "page" : undefined}>Ruokaopas</Link>
           </nav> : null}
         </div>
       </header>
@@ -70,6 +73,8 @@ export const siteRoutes: RouteObject[] = [
       { path: "en/glycemic-load", element: <GlycemicLoadPilotPage /> },
       { path: "sv/glykemisk-belastning", element: <GlycemicLoadPilotPage /> },
       { path: "th/glycemic-load", element: <GlycemicLoadPilotPage /> },
+      { path: "ruokaopas", element: <BlogIndexPage /> },
+      { path: "ruokaopas/:slug", element: <BlogArticlePage /> },
       { path: ":slug", element: <RecipePage /> },
       { path: "en/recipes", element: <RecipesPage locale="en" /> },
       { path: "en/recipes/:slug", element: <RecipePage /> },

@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { recipeJsonLd } from "@/features/recipes/schema";
+import { blogIndexPath, blogIndexTitle, blogIndexDescription, blogPostForRoute, blogJsonLd } from "@/features/blog/blog-data";
 import { glycemicLoadMeta, recipeLocaleFromPath, recipeUi } from "@/features/recipes/recipe-i18n";
 import { useContent } from "@/lib/content";
 import type { RecipeLocale } from "@/types/content";
@@ -38,31 +39,34 @@ export function SeoMeta() {
   useEffect(() => {
     const strippedPath = pathname.replace(new RegExp(`^${sitePath}(?=/|$)`), "") || "/";
     const normalizedPath = normalizeRoutePath(strippedPath);
+    const blogPost = blogPostForRoute(`${normalizedPath}/`);
+    const isBlogIndex = normalizedPath === normalizeRoutePath(blogIndexPath);
     const routeLocale = (Object.keys(baseByLocale) as RecipeLocale[]).find((locale) =>
       locale === "fi" ? strippedPath === "/" : strippedPath === `${baseByLocale[locale]}/` || strippedPath === baseByLocale[locale]);
     const indexExists = routeLocale === "fi" || (routeLocale !== undefined && locales.includes(routeLocale));
     const methodLocale = (Object.keys(methodPaths) as RecipeLocale[]).find((item) => normalizedPath === normalizeRoutePath(methodPaths[item]));
     const isPilotPage = methodLocale !== undefined;
-    const known = recipe !== null || indexExists || isPilotPage;
+    const known = recipe !== null || indexExists || isPilotPage || isBlogIndex || blogPost !== null;
     // Keep unknown deep links' metadata in the same locale as the visible not-found page.
-    const locale = recipe?.locale ?? methodLocale ?? routeLocale ?? recipeLocaleFromPath(strippedPath);
-    const title = isPilotPage ? glycemicLoadMeta[locale].title : known
+    const locale = blogPost || isBlogIndex ? "fi" : recipe?.locale ?? methodLocale ?? routeLocale ?? recipeLocaleFromPath(strippedPath);
+    const title = blogPost ? blogPost.seoTitle : isBlogIndex ? blogIndexTitle : isPilotPage ? glycemicLoadMeta[locale].title : known
       ? recipe ? `${recipe.title} | ${titleByLocale[locale]}` : `${titleByLocale[locale]} | Ozirix`
       : `${recipeUi[locale].notFound} | ${titleByLocale[locale]}`;
-    const description = isPilotPage ? glycemicLoadMeta[locale].description : recipe?.description || (!known ? recipeUi[locale].notFound : recipeUi[locale].intro);
-    const canonical = isPilotPage ? `${siteBase}${methodPaths[locale]}` : recipe ? `${siteBase}${recipe.routePath}` : indexExists ? `${siteBase}${indexPath(locale)}` : null;
+    const description = blogPost ? blogPost.excerpt : isBlogIndex ? blogIndexDescription : isPilotPage ? glycemicLoadMeta[locale].description : recipe?.description || (!known ? recipeUi[locale].notFound : recipeUi[locale].intro);
+    const canonical = blogPost ? `${siteBase}${blogPost.routePath}` : isBlogIndex ? `${siteBase}${blogIndexPath}` : isPilotPage ? `${siteBase}${methodPaths[locale]}` : recipe ? `${siteBase}${recipe.routePath}` : indexExists ? `${siteBase}${indexPath(locale)}` : null;
     document.title = title;
     document.documentElement.lang = locale;
     upsertMeta("name", "description", description);
     upsertMeta("property", "og:title", title);
     upsertMeta("property", "og:description", description);
-    upsertMeta("property", "og:type", recipe ? "article" : "website");
+    upsertMeta("property", "og:type", recipe || blogPost ? "article" : "website");
     upsertMeta("property", "og:locale", openGraphLocale[locale]);
     upsertMeta("property", "og:url", canonical ?? `${siteBase}/404.html`);
-    upsertMeta("name", "twitter:card", recipe?.image ? "summary_large_image" : "summary");
+    const pageImage = recipe?.image?.src ?? blogPost?.image;
+    upsertMeta("name", "twitter:card", pageImage ? "summary_large_image" : "summary");
     upsertMeta("name", "twitter:title", title);
     upsertMeta("name", "twitter:description", description);
-    document.head.querySelectorAll('link[rel="canonical"], link[rel="alternate"][hreflang], meta[property="og:image"], meta[name="twitter:image"], script#recipe-jsonld, meta[name="robots"]').forEach((element) => element.remove());
+    document.head.querySelectorAll('link[rel="canonical"], link[rel="alternate"][hreflang], meta[property="og:image"], meta[name="twitter:image"], script#recipe-jsonld, script#blog-jsonld, meta[name="robots"]').forEach((element) => element.remove());
     if (!known) upsertMeta("name", "robots", "noindex,follow");
     if (canonical) {
       const canonicalLink = document.createElement("link");
@@ -70,7 +74,7 @@ export function SeoMeta() {
       canonicalLink.href = canonical;
       document.head.append(canonicalLink);
     }
-    const alternates = !known ? [] : isPilotPage ? (Object.keys(methodPaths) as RecipeLocale[]).map((entryLocale) => ({ locale: entryLocale, path: methodPaths[entryLocale] })) : recipe
+    const alternates = !known ? [] : blogPost || isBlogIndex ? [{ locale: "fi" as const, path: blogPost?.routePath ?? blogIndexPath }] : isPilotPage ? (Object.keys(methodPaths) as RecipeLocale[]).map((entryLocale) => ({ locale: entryLocale, path: methodPaths[entryLocale] })) : recipe
       ? translations.map((entry) => ({ locale: entry.locale, path: entry.routePath }))
       : (Object.keys(baseByLocale) as RecipeLocale[])
           .filter((entryLocale) => locales.includes(entryLocale))
@@ -90,15 +94,15 @@ export function SeoMeta() {
       link.href = `${siteBase}${defaultAlternate.path}`;
       document.head.append(link);
     }
-    if (recipe?.image) {
-      upsertMeta("property", "og:image", recipe.image.src);
-      upsertMeta("name", "twitter:image", recipe.image.src);
+    if (pageImage) {
+      upsertMeta("property", "og:image", pageImage);
+      upsertMeta("name", "twitter:image", pageImage);
     }
-    if (recipe) {
+    if (recipe || blogPost) {
       const script = document.createElement("script");
-      script.id = "recipe-jsonld";
+      script.id = recipe ? "recipe-jsonld" : "blog-jsonld";
       script.type = "application/ld+json";
-      script.textContent = JSON.stringify(recipeJsonLd(recipe));
+      script.textContent = JSON.stringify(recipe ? recipeJsonLd(recipe) : blogJsonLd(blogPost!));
       document.head.append(script);
     }
   }, [pathname, recipe, translations, locales]);

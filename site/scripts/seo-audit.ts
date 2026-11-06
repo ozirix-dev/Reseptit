@@ -3,12 +3,13 @@ import path from "node:path";
 import { pathToFileURL } from "node:url";
 import { isDeepStrictEqual } from "node:util";
 import { localeIndexes } from "../src/content/route-data";
+import { blogIndexPath, blogIndexTitle, blogIndexDescription, blogPosts, blogJsonLd, type BlogPost } from "../src/features/blog/blog-data";
 import { glycemicLoadMeta, glycemicLoadPath, recipeUi } from "../src/features/recipes/recipe-i18n";
 import type { RecipeEntry, RecipeLocale } from "../src/types/content";
 
 export const siteBase = "https://ozirix-dev.github.io/Reseptit";
 export interface SeoFinding { route: string; code: string; detail: string }
-export interface ExpectedPage { route: string; locale: RecipeLocale; title: string; description: string; h1: string; alternates: Record<string, string>; recipe?: RecipeEntry }
+export interface ExpectedPage { route: string; locale: RecipeLocale; title: string; description: string; h1: string; alternates: Record<string, string>; recipe?: RecipeEntry; blogPost?: BlogPost }
 const names = { fi: "Reseptit", en: "Recipes", sv: "Recept", th: "สูตรอาหาร" };
 export const decodeHtml = (value: string) => value.replace(/&(?:amp|quot|apos|lt|gt|#\d+|#x[0-9a-f]+);/gi, (entity) => {
   const named: Record<string, string> = { "&amp;": "&", "&quot;": '"', "&apos;": "'", "&lt;": "<", "&gt;": ">" };
@@ -40,6 +41,8 @@ export function expectedPages(recipes: RecipeEntry[]): ExpectedPage[] {
       route: routePath, locale, ...glycemicLoadMeta[locale], alternates: alternateMap(glycemicPages),
     })),
     ...recipes.map((recipe) => ({ route: recipe.routePath, locale: recipe.locale, h1: recipe.title, title: `${recipe.title} | ${names[recipe.locale]}`, description: recipe.description || recipeUi[recipe.locale].intro, alternates: alternateMap(recipes.filter((r) => r.recipeId === recipe.recipeId)), recipe })),
+    { route: blogIndexPath, locale: "fi", h1: "Ruokaopas", title: blogIndexTitle, description: blogIndexDescription, alternates: alternateMap([{ locale: "fi", routePath: blogIndexPath }]) },
+    ...blogPosts.map((blogPost) => ({ route: blogPost.routePath, locale: "fi" as const, h1: blogPost.title, title: blogPost.seoTitle, description: blogPost.excerpt, alternates: alternateMap([{ locale: "fi", routePath: blogPost.routePath }]), blogPost })),
   ];
 }
 
@@ -59,6 +62,17 @@ export function inspectPage(html: string, expected: ExpectedPage): SeoFinding[] 
   check(!metas.some((m) => ["robots", "googlebot"].includes(m.name) && /(?:noindex|none)/i.test(m.content)), "NOINDEX", "Published page blocks indexing");
   const scripts = activeScripts(html);
   const jsonScripts = scripts.filter((script) => script.attributes.type === "application/ld+json");
+  if (expected.blogPost) {
+    const blogPost = expected.blogPost;
+    check(jsonScripts.length === 1 && jsonScripts[0]?.attributes.id === "blog-jsonld", "BLOG_JSONLD_COUNT", "Blog article needs exactly one BlogPosting JSON-LD");
+    try {
+      const json = JSON.parse(jsonScripts[0]?.content ?? "");
+      check(isDeepStrictEqual(json, blogJsonLd(blogPost)), "BLOG_JSONLD_SOURCE", "BlogPosting schema does not match article");
+    } catch { check(false, "BLOG_JSONLD_PARSE", "Invalid blog JSON-LD"); }
+    check(tags(html, "img").some((img) => img.src === blogPost.image && img.alt === blogPost.imageAlt), "BLOG_IMAGE", "Blog image/alt differs from article");
+    check(metas.some((m) => m.property === "og:image" && m.content === blogPost.image), "BLOG_OG_IMAGE", "Blog OG image differs from article");
+    return issues;
+  }
   if (!expected.recipe) {
     check(jsonScripts.length === 0, "INDEX_JSONLD", "Index unexpectedly declares recipe data");
     return issues;
@@ -170,11 +184,16 @@ export async function auditSeo(dist: string, recipes: RecipeEntry[], manifestRou
   for (const url of images) {
     try {
       const parsed = new URL(url);
-      if (parsed.origin !== "https://ozirix-dev.github.io" || !parsed.pathname.startsWith("/Reseptit/kuvat/") || parsed.search || parsed.hash) throw Error("Image outside Pages image root");
+      if (parsed.origin !== "https://ozirix-dev.github.io" || parsed.search || parsed.hash) throw Error("Image origin invalid");
+      const isBlogSvg = parsed.pathname.startsWith("/Reseptit/ruokaopas/images/") && parsed.pathname.endsWith(".svg");
+      if (!isBlogSvg && !parsed.pathname.startsWith("/Reseptit/kuvat/")) throw Error("Image outside allowed roots");
       const target = path.resolve(dist, decodeURIComponent(parsed.pathname.slice("/Reseptit/".length)));
       if (!target.startsWith(path.resolve(dist) + path.sep)) throw Error("Path escape");
       const file = await readFile(target);
-      if (file.toString("ascii", 0, 4) !== "RIFF" || file.toString("ascii", 8, 12) !== "WEBP") throw Error("Missing/invalid WebP");
+      if (isBlogSvg) {
+        const svg = file.toString("utf8");
+        if (!svg.includes("<svg ") || /<script\b|\bonload\s*=|\bonerror\s*=/i.test(svg)) throw Error("Missing/unsafe SVG illustration");
+      } else if (file.toString("ascii", 0, 4) !== "RIFF" || file.toString("ascii", 8, 12) !== "WEBP") throw Error("Missing/invalid WebP");
     } catch (error) { add("IMAGE_FILE", `${url}: ${String(error)}`); }
   }
   const missing = await readFile(path.join(dist, "404.html"), "utf8");
