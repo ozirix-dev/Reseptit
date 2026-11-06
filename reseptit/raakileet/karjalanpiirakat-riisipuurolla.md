@@ -15,8 +15,13 @@ carbs_total_per_serving_g: null
 carbs_net_per_serving_g: null
 protein_per_serving_g: null
 fat_per_serving_g: null
-translation_languages: []
-translation_status: {}
+translation_languages: [en, sv, th]
+translation_status: {en: draft, sv: draft, th: draft}
+image:
+  src: leivonnaiset/karjalanpiirakat-riisipuurolla.webp
+  alt: "Perinteisiä karjalanpiirakoita, joissa on ohut rypytetty ruisreuna ja vaalea riisipuurotäyte"
+  width: 1600
+  height: 900
 ingredients:
   - amount: 180
     unit: g
@@ -94,3 +99,7 @@ Yksi annos on **yksi piirakka** ilman munavoita. Erä tuottaa 24 samankokoista p
 - Ruis- ja vehnäjauhojen GI:tä ei johdeta suoraan toisista leivistä tai jauhojen raaka-aineista. Selvitä soveltuva mitattu tuotteen/valmistustavan näyttö tai jätä GK estetyksi.
 - Täysmaidon hiilihydraatit ja voitelun toteutunut imeytymä huomioitava; munavoita ei saa liittää laskuun huomaamatta.
 - Julkaisu vaatii koeleivonnan, APT-eritelmän tarkistuksen, tuotetietueet, hyväksyttävän GI-näytön tai näkyvän ei-laskettavissa-tilan, oman kuvan ja laaduntarkastetut käännökset.
+
+## Muistiinpanot
+
+- Kuva on tekoälyllä tuotettu havainnekuva ruoasta, ei kuva tässä projektissa valmistetusta koeruoasta.

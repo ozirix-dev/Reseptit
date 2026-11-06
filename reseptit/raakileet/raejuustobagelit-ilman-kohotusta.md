@@ -15,8 +15,13 @@ carbs_total_per_serving_g: null
 carbs_net_per_serving_g: null
 protein_per_serving_g: null
 fat_per_serving_g: null
-translation_languages: []
-translation_status: {}
+translation_languages: [en, sv, th]
+translation_status: {en: draft, sv: draft, th: draft}
+image:
+  src: leivonnaiset/raejuustobagelit-ilman-kohotusta.webp
+  alt: "Kuusi kullanruskeaa raejuustobagelia, joiden keskellä on reikä"
+  width: 1600
+  height: 900
 ingredients:
   - amount: 400
     unit: g
@@ -59,3 +64,7 @@ Raejuustobagelit olivat Kotona-sivuston suosituin uusi suolainen leivonnainen vu
 - Kirjaa jauhojen tarkka tuote, paistosaanto, leivän keskipaino, raejuuston EU-hiilihydraattitieto ja käytetty munavoitelu.
 - Ei automaattista VHH- tai keto-luokitusta. Runsas raejuusto ei yksin todista ravitsemusväitteitä.
 - Erityinen koeleivonnan portti: renkaille on saatava riittävä kuohkeus ja leikattava sisus ilman mittaamattomia korjausjauhoja. Kuvitus, käännökset ja ravintolaskenta ennen julkaisua.
+
+## Muistiinpanot
+
+- Kuva on tekoälyllä tuotettu havainnekuva ruoasta, ei kuva tässä projektissa valmistetusta koeruoasta.

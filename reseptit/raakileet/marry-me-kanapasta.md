@@ -15,8 +15,13 @@ carbs_total_per_serving_g: null
 carbs_net_per_serving_g: null
 protein_per_serving_g: null
 fat_per_serving_g: null
-translation_languages: []
-translation_status: {}
+translation_languages: [en, sv, th]
+translation_status: {en: draft, sv: draft, th: draft}
+image:
+  src: paaruoat/marry-me-kanapasta.webp
+  alt: "Kermaista kanaspagettia aurinkokuivatuilla tomaateilla ja parmesaanilla"
+  width: 1600
+  height: 900
 ingredients:
   - amount: 600
     unit: g
@@ -81,3 +86,7 @@ Marry me -kanapasta oli K-Ruoan vuoden 2025 suosituin uusi resepti: https://www.
 - Aurinkokuivattujen tomaattien valutus on vakioitava, jotta öljy, lisätty sokeri ja hiilihydraatit tulevat oikeasta tuotteesta.
 - Käytä Finelin tai pakkauksen yksilöityjä hiilihydraattitietueita myös sipulille, valkosipulille ja kermalle. Yli sallitun HIILARI/GI-puutteen kohdalla GK pysyy estettynä.
 - Ei VHH- tai keto-väitettä. Ennen julkaisua tarvitaan koekeitto, ravintoarvot, reseptikohtainen GK-lähdemuistio, oma kuva ja käännökset.
+
+## Muistiinpanot
+
+- Kuva on tekoälyllä tuotettu havainnekuva ruoasta, ei kuva tässä projektissa valmistetusta koeruoasta.

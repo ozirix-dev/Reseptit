@@ -15,8 +15,13 @@ carbs_total_per_serving_g: null
 carbs_net_per_serving_g: null
 protein_per_serving_g: null
 fat_per_serving_g: null
-translation_languages: []
-translation_status: {}
+translation_languages: [en, sv, th]
+translation_status: {en: draft, sv: draft, th: draft}
+image:
+  src: paaruoat/linssimakaronilaatikko.webp
+  alt: "Linssimakaronilaatikkoa uunivuoassa, pinnalla sulanutta emmentaljuustoa"
+  width: 1600
+  height: 900
 ingredients:
   - amount: 220
     unit: g
@@ -78,3 +83,7 @@ K-Ruoan vuoden 2025 suosituimpien uutuuksien joukossa oli linssimakaronilaatikko
 - Maito, sipuli ja mausteet kirjataan hiilihydraattimassaan. Pienten GI-puutteiden yhteissumma lasketaan annoskohtaisesti; 1 g:n toleranssia ei sovelleta joka ainesosaan erikseen.
 - Linssin matala GI ei tee koko laatikon GK:sta automaattisesti matalaa. Keto-/VHH-väitettä ei tehdä.
 - Ennen julkaisua koepaisto, aineiston lähdesidokset, ravintoarvot, oma kuva, käännökset ja hyväksytty GK tai näkyvä GK-estesyy.
+
+## Muistiinpanot
+
+- Kuva on tekoälyllä tuotettu havainnekuva ruoasta, ei kuva tässä projektissa valmistetusta koeruoasta.

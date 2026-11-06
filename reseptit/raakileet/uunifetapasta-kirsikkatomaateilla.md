@@ -15,8 +15,13 @@ carbs_total_per_serving_g: null
 carbs_net_per_serving_g: null
 protein_per_serving_g: null
 fat_per_serving_g: null
-translation_languages: []
-translation_status: {}
+translation_languages: [en, sv, th]
+translation_status: {en: draft, sv: draft, th: draft}
+image:
+  src: paaruoat/uunifetapasta-kirsikkatomaateilla.webp
+  alt: "Uunifetapastaa, jossa on penneä, paahdettua fetaa ja kirsikkatomaatteja"
+  width: 1600
+  height: 900
 ingredients:
   - amount: 240
     unit: g
@@ -71,3 +76,7 @@ Uunifetapastan alkuperäisen idean ja vuoden 2019 suomalaisen ruoka-ilmiön teki
 - Kirsikkatomaatin, chilin, valkosipulin, fetan ja basilikan hiilihydraatit kirjataan; yksittäisten pienien ainesosien poisjättöjä ei yhdistetä hyväksyntärajan ohi.
 - Öljy ei katoa laskennasta eikä valmisruoan suurentunut tai pienentynyt paino muuta absoluuttista hiilihydraattimäärää.
 - Ei keto- eikä VHH-luokitusta. Julkaisuun tarvitaan koekeitto, yksilöidyt ravintoarvot, GK-evidence, omakuva ja tarkistetut käännökset.
+
+## Muistiinpanot
+
+- Kuva on tekoälyllä tuotettu havainnekuva ruoasta, ei kuva tässä projektissa valmistetusta koeruoasta.
