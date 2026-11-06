@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import { auditTranslations, auditRecipePairs } from "../scripts/translation-audit";
+import { auditTranslations, auditRecipePairs, sourceCategories } from "../scripts/translation-audit";
 import { semanticTermErrors, semanticProseErrors, semanticNoteErrors, semanticTagErrors } from "../scripts/semantic-terms";
 
 test("review backlog fixes stay aligned in all four recipe locales", async () => {
@@ -387,4 +387,17 @@ test("translation audit checks notes and tags as well as prose negation and cook
   const buns = result.publishedTranslations.find((r) => r.data.recipe_id === "keto-kauralesesampylat" && r.data.language === "th")!;
   assert.match(buns.content, /รำข้าวโอ๊ตมีคาร์โบไฮเดรต/);
   assert.doesNotMatch(buns.content, /รำข้าวโอ๊ตไม่มีคาร์โบไฮเดรต/);
+});
+
+
+test("published snack sources are within the translation and nutrition audit inventory", async () => {
+  assert.ok(sourceCategories.includes("valipalat"), "valipalat must be a source directory");
+  assert.equal(new Set(sourceCategories).size, sourceCategories.length, "source directories must be unique");
+  const audit = await auditTranslations();
+  const snacks = audit.publishedSources.filter((source) => source.data.category === "valipala");
+  assert.ok(snacks.every((source) => source.path.startsWith("reseptit/valipalat/")));
+  for (const recipe of snacks) {
+    const targeted = await auditTranslations([recipe.data.recipe_id]);
+    assert.ok(targeted.publishedSources.some((entry) => entry.path === recipe.path));
+  }
 });
