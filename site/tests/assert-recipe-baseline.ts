@@ -1,4 +1,4 @@
-import {mainAdditionFiles, postBaselineBriocheIds} from "./original-content-transition";
+import {mainAdditionFiles, postBaselineBriocheIds, postBaselineKetoIds} from "./original-content-transition";
 import assert from "node:assert/strict";
 import { execFileSync } from "node:child_process";
 import { readFileSync } from "node:fs";
@@ -15,6 +15,14 @@ const briochePublishedFiles = new Set(postBaselineBriocheIds.flatMap(id => [
   `reseptit/leivonnaiset/${id}.md`,
   `docs/nutrition/calculations/${id}.json`,
 ]));
+
+// This exact release-source commit contains the three reviewed FI recipe files.
+// Only those unmodified paths are allowed through the sealed history check.
+// This does NOT approve a numeric GK value or permit arbitrary additions.
+const ketoRecipeSourceSha = "8d4a73a43c76473a1b0985b7437f31bc23a365da";
+const ketoPublishedFiles = new Set(postBaselineKetoIds.map(id =>
+  `reseptit/${id === "suklaavaahto-tummasta-suklaasta" ? "jalkiruoat" : "aamupalat"}/${id}.md`
+));
 
 const translationDraftCommits = new Map([
   ["kaannokset/en/jalkiruoat/keto-mutakakku.md", "d6531cd0592b01c0106a24bb6a3bd930dedbc504"],
@@ -53,6 +61,12 @@ export function assertRecipeBaseline(root: string, baseline: string, ...protecte
       // arbitrary new recipe additions admitted into historical baselines.
       const published = execFileSync("git", ["show", `${briochePublishSha}:${file}`], { cwd: root, encoding: "utf8" });
       assert.equal(readFileSync(path.join(root, file), "utf8").replaceAll("\r\n", "\n"), published.replaceAll("\r\n", "\n"), change);
+      continue;
+    }
+    if (status === "A" && ketoPublishedFiles.has(file)) {
+      const published = execFileSync("git", ["show", `${ketoRecipeSourceSha}:${file}`], { cwd: root, encoding: "utf8" });
+      const current = readFileSync(path.join(root, file), "utf8").replaceAll("\r\n", "\n");
+      assert.equal(current, published.replaceAll("\r\n", "\n"), change);
       continue;
     }
     const approved = recipeChanges.get(file);
