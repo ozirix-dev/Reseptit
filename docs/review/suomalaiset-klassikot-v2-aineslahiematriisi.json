@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "phase": "Finnish classics phase 3 product-candidate sync 2026-11-06",
+  "phase": "Finnish classics phase 4 WebP-bound draft consistency 2026-11-06",
   "state": "CANDIDATE_ONLY_NO_GK_OR_MACRO_APPROVAL",
   "foodRecords": {
     "path": "docs/nutrition/food-records.json",
@@ -13,12 +13,13 @@
     "The legacy availableCarbPer100g field is a nutrition-only library value, not a validated GI or recipe-level carbohydrate claim.",
     "Rye and wheat flour in Karelian pies require specific flour grade verification, despite food-level nutrition records being available.",
     "The SHA and item names were re-synced to five changed ingredient lists; product labels are proposals only, not accepted nutrient binding.",
-    "De Cecco spaghetti n12 conflicting same-EAN public carbohydrate labels (69/72 g per 100 g) prevent publication until physical label reconciliation."
+    "De Cecco spaghetti n12 conflicting same-EAN public carbohydrate labels (69/72 g per 100 g) prevent publication until physical label reconciliation.",
+    "Photos and draft translation statuses were added to FI sources; updated recipeBlobSha values preserve exact evidence binding. Images do not imply real test cooking or macro/GK approval."
   ],
   "recipes": [
     {
       "recipeId": "karjalanpiirakat-riisipuurolla",
-      "recipeBlobSha": "1428ff2c8831685fdfc9ff47765b12d7f3a65bb5",
+      "recipeBlobSha": "4396df5b8e32a22cbcde218dfd51223953bd9b96",
       "servings": 24,
       "ingredients": [
         {
@@ -170,7 +171,7 @@
     },
     {
       "recipeId": "marry-me-kanapasta",
-      "recipeBlobSha": "3fb0f4462c92f81942b6777d37dc40ccea05d238",
+      "recipeBlobSha": "23134b915e1a739120c646e109690c0b118b3b41",
       "servings": 4,
       "ingredients": [
         {
@@ -359,7 +360,7 @@
     },
     {
       "recipeId": "uunifetapasta-kirsikkatomaateilla",
-      "recipeBlobSha": "ab9c318364e7dd9bdf6fa645554babc46a6f7c8e",
+      "recipeBlobSha": "abced8727b1bbbfc6f4ff3f8e811715795d6ee55",
       "servings": 4,
       "ingredients": [
         {
@@ -502,7 +503,7 @@
     },
     {
       "recipeId": "raejuustobagelit-ilman-kohotusta",
-      "recipeBlobSha": "363551ce2afa44cdc7ae3eb38464fdfb554e7d45",
+      "recipeBlobSha": "c1e1dc30725b23a048bff441e9cff7fb3ab0dbae",
       "servings": 6,
       "ingredients": [
         {
@@ -584,7 +585,7 @@
     },
     {
       "recipeId": "linssimakaronilaatikko",
-      "recipeBlobSha": "160a10ef3bd176770d34c378809999284b508260",
+      "recipeBlobSha": "86822f9d2edb967586f33bc21b8a3c7507a00f7d",
       "servings": 6,
       "ingredients": [
         {
