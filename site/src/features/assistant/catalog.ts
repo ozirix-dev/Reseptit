@@ -79,7 +79,7 @@ export function createAssistantCatalog(
       ...summarizeRecipe(recipe),
       image: null,
       ingredients: recipe.ingredients.map(({ amount, unit, item, note }) => ({
-        amount, unit, item, ...(note ? { note } : {}),
+        amount, unit, item, ...(note !== undefined ? { note } : {}),
       })),
       servings: recipe.servings,
       nutritionPerServing: { ...recipe.nutrition }, // Null is unknown; never turn it into zero.
