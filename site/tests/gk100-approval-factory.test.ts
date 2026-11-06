@@ -601,12 +601,16 @@ test('GK-only release forecasts never claim original-recipe coverage; v2 bundles
 test('reviewed farinata correction preserves its sealed pan variant and fails closed on other edits', () => {
   const readRepo = (file: string) => readFileSync(new URL('../../' + file, import.meta.url), 'utf8');
   const recipePath = 'reseptit/aamupalat/valimerellinen-farinata-aamupalaksi.md';
-  const historical = readRepo(recipePath);
+  const historical = readRepo('site/tests/fixtures/gk100-farinata-historical.md');
+  const correctedRecipeTextFrom = (original: string, oldSteps: string, nextSteps: string) =>
+    original.replace('time_total_min: 25', 'time_total_min: 55').replace(oldSteps, nextSteps);
   const previousSteps = "1. Sekoita jauhot tai viljat ja muut kuivat ainekset kulhossa. Lisää neste vähitellen ja vatkaa tasaiseksi taikinaksi.\n2. Anna taikinan levätä 10 minuuttia. Jos käytät kokonaisia palkokasveja tai viljoja taikinapohjana, niiden tulee olla liotettuja ja hienonnettuja.\n3. Kuumenna öljytty pannu keskilämmölle. Paista taikina ohuina annoksina; käännä, kun reunat kuivuvat ja pinta alkaa asettua.\n4. Vatkaa kikhernejauho ja vesi tasaiseksi taikinaksi ja anna levätä 20 minuuttia. Lisää hienonnettu rosmariini ja kaada öljyttyyn vuokaan. Lisää viipaloidut oliivit ja tomaatti. Paista 220-asteisessa uunissa, kunnes pinta on kullanruskea ja keskusta hyytynyt.";
   const correctedSteps = "1. Kuumenna uuni 220 °C:seen (kiertoilmalla 200 °C). Voitele noin 20–22 cm:n matala uuninkestävä vuoka reseptin paistoöljyllä.\n2. Vatkaa kikhernejauho ja 150 ml vettä tasaiseksi taikinaksi. Anna taikinan turvota 20 minuuttia.\n3. Hienonna rosmariini ja sekoita se taikinaan. Viipaloi tomaatti ja oliivit. Lisää taikinaan suolaa maun mukaan.\n4. Kaada taikina vuokaan ja levitä tomaattiviipaleet sekä oliivit pinnalle. Paista uunin keskitasolla noin 20–25 minuuttia, kunnes pinta saa väriä ja keskusta on hyytynyt.\n5. Anna levätä noin 5 minuuttia ennen kuin leikkaat farinatan kahteen annokseen.";
+  const current = readRepo(recipePath);
+  assert([historical, correctedRecipeTextFrom(historical, previousSteps, correctedSteps)].includes(current),
+    'Current farinata must be either the original or exact reviewed oven correction');
   assert(historical.includes(previousSteps));
-  const corrected = historical.replace('time_total_min: 25', 'time_total_min: 55')
-    .replace(previousSteps, correctedSteps);
+  const corrected = correctedRecipeTextFrom(historical, previousSteps, correctedSteps);
   assert.notEqual(corrected, historical);
   assert.equal(textHash(historical), '1b15fd29f9d833b84289c2d1345e27a0110c4bda7044ed6939d581ede947d237');
   assert.equal(textHash(corrected), '1f065d830bd5f4018b69d2298cb4ef9a5286903866d85538aa5d4f3d66a5e90d');
@@ -621,11 +625,11 @@ test('reviewed farinata correction preserves its sealed pan variant and fails cl
     file => file === recipePath ? corrected.replace('time_total_min: 55', 'time_total_min: 56') : readRepo(file)),
   /GK100_RELEASE_CANDIDATE_CHANGED/);
   assert.throws(() => verifyReleaseBundle(bundle, authorization,
-    file => file === recipePath ? corrected.replace('100\\n    unit: g\\n    item: tomaattia', '105\\n    unit: g\\n    item: tomaattia') : readRepo(file)),
+    file => file === recipePath ? corrected.replace('  - amount: 100', '  - amount: 101') : readRepo(file)),
   /GK100_RELEASE_CANDIDATE_CHANGED/);
   assert.throws(() => verifyReleaseBundle(bundle, authorization,
-    file => file === recipePath ? corrected + '\\nUnreviewed cooking modification\\n' : readRepo(file)),
+    file => file === recipePath ? corrected + ' Unreviewed cooking modification' : readRepo(file)),
   /GK100_RELEASE_CANDIDATE_CHANGED/);
-  assert.equal(recipeTextForApprovedSnapshot(recipePath, corrected + '\\nUnreviewed cooking modification\\n'),
-    corrected + '\\nUnreviewed cooking modification\\n');
+  assert.equal(recipeTextForApprovedSnapshot(recipePath, corrected + ' Unreviewed cooking modification'),
+    corrected + ' Unreviewed cooking modification');
 });
