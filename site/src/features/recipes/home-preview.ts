@@ -22,8 +22,9 @@ export function homepagePicks<T extends Pick<RecipeSummary, "recipeId" | "catego
     while (picks.length < limit) {
       let added = false;
       for (const pool of pools) {
-        const next = pool.shift();
-        if (next && !used.has(next.recipeId)) {
+        let next = pool.shift();
+        while (next && used.has(next.recipeId)) next = pool.shift();
+        if (next) {
           picks.push(next);
           used.add(next.recipeId);
           added = true;
