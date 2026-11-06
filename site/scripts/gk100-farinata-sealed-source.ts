@@ -13,12 +13,12 @@ const sha256 = (value: string) => createHash('sha256').update(value).digest('hex
 /** Exact version mapping; anything other than the reviewed text remains fail-closed. */
 export function historicalFarinataForApprovedPanVersion(path: string, current: string): string {
   if (path !== originalPath) return current;
-  const normalized = current.replaceAll('\\r\\n', '\\n');
+  const normalized = current.replaceAll('\r\n', '\n');
   if (sha256(normalized) !== reviewedSha256) return current;
-  const lines = normalized.split('\\n');
+  const lines = normalized.split('\n');
   lines.splice(66, 5, ...approvedHistoricalSteps);
   lines.splice(36, 1, 'time_total_min: 25');
-  const historical = lines.join('\\n');
+  const historical = lines.join('\n');
   if (sha256(historical) !== originalSha256) throw Error('GK100_FARINATA_HISTORICAL_SNAPSHOT_MISMATCH');
   return historical;
 }
