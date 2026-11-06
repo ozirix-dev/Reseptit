@@ -40,7 +40,7 @@ A spoonable warm chia porridge with a deep chocolate flavour. Butter and cream m
 ## Preparation
 
 1. Heat the water to a gentle simmer in a small saucepan.
-2. Gradually sprinkle in the chia seeds, stirring constantly to prevent lumps. Let the mixture thicken for five minutes.
+2. Gradually sprinkle in the chia seeds, stirring constantly to prevent lumps. Let the mixture thicken for 5 minutes.
 3. Add the cream and butter. Keep stirring over low heat for another 2–4 minutes; add a little water only if the porridge becomes too thick.
 4. Take the pan off the heat. Add finely chopped dark chocolate and salt. Stir until the chocolate melts into the porridge.
 5. Serve warm as one hearty breakfast portion.
