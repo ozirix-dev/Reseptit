@@ -1,0 +1,15 @@
+{
+  "$schema": "https://raw.githubusercontent.com/cloudflare/workers-sdk/main/packages/wrangler/config-schema.json",
+  "name": "recipavo-assistant-mock-preview",
+  "main": "./workers/assistant-mock.ts",
+  "compatibility_date": "2026-11-06",
+  "workers_dev": false,
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS",
+    "run_worker_first": ["/api/assistant/*"]
+  },
+  "vars": {
+    "ASSISTANT_MOCK_ENABLED": "false"
+  }
+}
