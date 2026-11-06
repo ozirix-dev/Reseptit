@@ -56,7 +56,7 @@ Raejuusto pitää nämä rengassämpylät mehevinä. Taikina kohotetaan leivinja
 
 ## Tausta ja erottuvuus
 
-Raejuustobagelit olivat Kotona-sivuston suosituin uusi suolainen leivonnainen vuonna 2025: https://www.meillakotona.fi/artikkelit/vuoden-2025-suosituimmat-suolaiset-leivonnaiset. Tämä on oma punnittu koeleivontaversio eikä olemassa olevan raejuustopizzan uusintajulkaisu.
+Raejuustobagelit olivat Kotona-sivuston suosituin uusi suolainen leivonnainen vuonna 2025: https://www.meillakotona.fi/artikkelit/vuoden-2025-suosituimmat-suolaiset-leivonnaiset. Tämä on oma punnittu reseptiluonnos, jonka rakenne ja paistoaika odottavat vielä käytännön koeleivontaa; kyse ei ole raejuustopizzan uusintajulkaisusta.
 
 ## GK ja julkaisu
 
