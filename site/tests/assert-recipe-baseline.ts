@@ -1,4 +1,4 @@
-import {mainAdditionFiles} from "./original-content-transition";
+import {mainAdditionFiles, postBaselineBriocheIds} from "./original-content-transition";
 import assert from "node:assert/strict";
 import { execFileSync } from "node:child_process";
 import { readFileSync } from "node:fs";
@@ -8,6 +8,10 @@ import { parseMarkdown } from "../src/content/markdown";
 import { textHash } from "../scripts/gk149-model";
 import approvedTranslations from "./approved-translation-baseline.json";
 import preparedTranslations from "./prepared-translation-baseline.json";
+
+// The PR #302 recipe additions were reviewed and published separately.
+const briochePublishSha = "e0e7519ea66f878427c241349fdea5dc918516ec";
+const briochePublishedFiles = new Set(postBaselineBriocheIds.map(id => `reseptit/leivonnaiset/${id}.md`));
 
 const translationDraftCommits = new Map([
   ["kaannokset/en/jalkiruoat/keto-mutakakku.md", "d6531cd0592b01c0106a24bb6a3bd930dedbc504"],
@@ -39,6 +43,13 @@ export function assertRecipeBaseline(root: string, baseline: string, ...protecte
     const [status, file] = change.split("\t");
     if (status === "A" && Object.hasOwn(mainAdditionFiles, file)) {
       assert.equal(textHash(readFileSync(path.join(root, file), "utf8")), mainAdditionFiles[file], change);
+      continue;
+    }
+    if (status === "A" && briochePublishedFiles.has(file)) {
+      // Prove that these are the *exact* previously published files, not
+      // arbitrary new recipe additions admitted into historical baselines.
+      const published = execFileSync("git", ["show", `${briochePublishSha}:${file}`], { cwd: root, encoding: "utf8" });
+      assert.equal(readFileSync(path.join(root, file), "utf8").replaceAll("\r\n", "\n"), published.replaceAll("\r\n", "\n"), change);
       continue;
     }
     const approved = recipeChanges.get(file);
