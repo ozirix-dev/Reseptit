@@ -9,8 +9,8 @@ import { contentManifest } from "../src/generated/routes.generated";
 const dist = path.resolve(import.meta.dirname, "../dist");
 
 test("Ruokaopas publishes exactly two sourced Finnish pilot articles", () => {
-  assert.equal(articles.length, 2);
-  assert.equal(blogPosts.length, 2);
+  assert.equal(articles.length, 12);
+  assert.equal(blogPosts.length, 12);
   assert.equal(new Set(articles.map(articlePath)).size, 2);
   for(const article of articles) {
     assert.match(article.slug, /^[a-z0-9]+(?:-[a-z0-9]+)*$/);
@@ -21,6 +21,7 @@ test("Ruokaopas publishes exactly two sourced Finnish pilot articles", () => {
     assert.ok(article.datePublished && article.author);
     assert.ok(article.alt.length > 12);
   }
+  assert.equal(new Set(articles.map(p => p.image)).size, 12, "Each article needs its own artwork");
   const brioche = articles.find(post => post.slug === "briossisampylan-onnistuminen")!;
   assert.deepEqual(brioche.related.map(item => item.path), [
     "/briossisampylat-joshua-weissman/",
