@@ -1,5 +1,4 @@
 import {recipeTextForApprovedSnapshot} from './approved-recipe-note-edits';
-import {publicGiSourceNote} from './gk-source-copy';
 import {readFileSync} from 'node:fs';
 import {join} from 'node:path';
 import {textHash} from './gk149-model';
@@ -85,7 +84,7 @@ export function buildTwoAlmondPieVariants(root: string): GkOnlyVariant[] {
         })),
         ...gis.filter(gi => ingredients.some(row => row.giRecordId === gi.id)).map(gi => ({
           title: gi.source.title, url: gi.source.url, kind: 'PUBLISHED_CODING' as const,
-          note: publicGiSourceNote(gi),
+          note: gi.note ?? gi.source.qualityEvidence,
         })),
         ...(recipeId === 'vhh-raparperipiirakka' ? [{title: 'Punnitun vaniljauutteen massavaraus',
           url: 'https://github.com/ozirix-dev/Reseptit/blob/b7096c7/' + path, kind: 'BOUND' as const,
