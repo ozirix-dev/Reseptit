@@ -36,4 +36,4 @@ Valion tiedotteen kesäkauden kiinnostuksen kohteita:
 
 ## Päätös käyttöön
 
-Ensimmäiset kaksi blogiartikkelia: briossisämpylöiden valmistustekniikka (hampurilaisteeman polku) ja GI/GK-annoskokoselitys (Recipavon erikoisosaaminen). Pidä 10 muuta ehdotusta sisältöjonossa, älä julkaise ennen omistajan katselmusta. 
+Ensimmäiset kaksi blogiartikkelia: briossisämpylöiden valmistustekniikka (hampurilaisteeman polku) ja GI/GK-annoskokoselitys (Recipavon erikoisosaaminen). Pidä 10 muuta ehdotusta sisältöjonossa, älä julkaise ennen omistajan katselmusta.
