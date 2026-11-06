@@ -223,9 +223,10 @@ test("Recipavo homepage preview examples are deterministic, localized and all li
 });
 
 test("homepage preview keeps unillustrated recipes reachable when insufficient image picks exist", () => {
+  const illustrated = finnishRecipes.find((item) => item.image !== null)!;
   const sample = [
     { recipeId: "third", category: "aamupala" as const, image: null },
-    { recipeId: "first", category: "paaruoka" as const, image: { src: "placeholder" } },
+    { recipeId: "first", category: "paaruoka" as const, image: illustrated.image },
     { recipeId: "second", category: "jalkiruoka" as const, image: null },
   ];
   assert.deepEqual(homepagePicks(sample, 3).map((item) => item.recipeId), ["first", "third", "second"]);
