@@ -69,3 +69,5 @@ Tunt rågskal med veckade kanter och fyllning av risgrynsgröt. Ger 24 piroger; 
 ## Anteckningar
 
 Det namnskyddade tillagningssättet måste kontrolleras. Tillräckliga GI-uppgifter för ris och gräddat rågskal saknas; GK är HOLD. Innehåller gluten och mjölk.
+
+**Källor för traditionen:** [Finlands livsmedelsverk](https://www.ruokavirasto.fi/yritykset/oppaat/nimisuojattujen-elintarvikkeiden-valvontaohje/nimisuojattujen-elintarvikkeiden-valvontaohje/) och [Martats bakråd](https://www.martat.fi/reseptit/karjalanpiirakat/).

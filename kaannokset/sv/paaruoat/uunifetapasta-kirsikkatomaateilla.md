@@ -63,3 +63,5 @@ Feta och körsbärstomater rostas till en pastasås. Den ursprungliga finska id�
 ## Anteckningar
 
 Originalidén kommer från Jenni Häyrinen: https://liemessa.fi/2019/02/uunifetapasta/. Innehåller vetegluten och mjölk. GI för exakt denna penne är inte verifierat; GK är HOLD.
+
+**Ursprunglig idé:** [Jenni Häyrinen, Liemessä (2019)](https://liemessa.fi/2019/02/uunifetapasta/). Recipavo uppfann inte ugnsfetapasta.

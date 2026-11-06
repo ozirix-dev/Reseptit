@@ -72,3 +72,5 @@ Krämig kycklingspaghetti med soltorkade tomater och parmesan. Fyra portioner me
 ## Anteckningar
 
 Innehåller vetegluten och mjölk. Spagettins nätuppgifter om kolhydrater skiljer sig (69 respektive 72 g/100 g); kontrollera förpackningen. GI 50 är bara en kandidat och GK är HOLD.
+
+**Popularitetskälla:** [K-Ruokas favoriter 2025](https://www.k-ruoka.fi/artikkelit/arki/suomen-suosituimmat-reseptit). Recipavos variant är självständigt skriven och inte kopierad från ett annat recept.

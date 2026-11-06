@@ -51,3 +51,5 @@ Ringformade kesobröd med bakpulver, utan jäst eller jäsning. De kokas inte so
 ## Anteckningar
 
 Innehåller gluten, mjölk och ägg. Väg använd äggpensling och provbaka inkråmet. Passande GI saknas; GK är HOLD.
+
+**Inspiration:** [Kotonas populära nya salta bakverk 2025](https://www.meillakotona.fi/artikkelit/vuoden-2025-suosituimmat-suolaiset-leivonnaiset). Detta är en självständig, uppvägd bakpulvervariant.

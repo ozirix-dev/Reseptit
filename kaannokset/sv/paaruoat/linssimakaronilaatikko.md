@@ -70,3 +70,5 @@ Finsk vegetarisk makaronilåda där gröna linser ersätter köttfärs. Inte en 
 ## Anteckningar
 
 Innehåller vetegluten, mjölk och ägg. Exakta GI-källor för makaroner och gröna linser saknas; GK är HOLD.
+
+**Popularitetskälla:** [K-Ruokas nya favoriter 2025](https://www.k-ruoka.fi/artikkelit/arki/suomen-suosituimmat-reseptit). Detta är Recipavos självständigt utvecklade vegetariska version.
