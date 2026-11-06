@@ -1,3 +1,5 @@
+import { moreBlogPosts } from "./blog-more";
+
 export interface BlogSection {
   heading: string;
   paragraphs?: string[];
@@ -158,6 +160,7 @@ export const blogPosts: BlogPost[] = [
     ],
     related: [{ title: "Lue sivuston GK-menetelmästä", path: "/glykeeminen-kuorma/" }, { title: "Etsi reseptejä GK-suodattimella", path: "/" }]
   }
+  ...moreBlogPosts
 ];
 export const blogRoutes = [blogIndexPath, ...blogPosts.map(post => post.routePath)];
 export const blogPostForRoute = (route: string) => blogPosts.find(post => post.routePath === route) ?? null;
