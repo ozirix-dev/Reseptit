@@ -1,25 +1,15 @@
 import assert from "node:assert/strict";
-import { readFile } from "node:fs/promises";
-import path from "node:path";
 import test from "node:test";
-import { parseMarkdown } from "../src/content/markdown";
+import { siteContent } from "../src/generated/content.generated";
 
-test("published ackee recipe cannot silently omit its food-safety guard", async () => {
-  const filepath = path.resolve(import.meta.dirname, "../../reseptit/aamupalat/karibia-ackee-ja-suolakala.md");
-  const parsed = parseMarkdown(await readFile(filepath, "utf8"));
-  assert.ok(parsed);
-  if (parsed.data.status !== "published") return;
-
-  const ingredients = parsed.data.ingredients as Array<{ item: string; amount: number | null; unit: string }>;
-  const ackee = ingredients.find(({ item }) => /ackee/i.test(item));
-  assert.ok(ackee, "ackee must be explicitly listed");
-  const commerciallyProcessed = /säilyke|tölkitetty|kaupallisesti käsitelty/i.test(ackee.item);
-  const safeInstructions = /turvallis|kuumentaminen|kuumennusta|kypsymät/i.test(parsed.content)
-    && /FDA: Hypoglycin A and Ackee Fruit/.test(parsed.content);
-  assert.ok(safeInstructions, "ackee safety source and handling warning required");
-
-  if (!commerciallyProcessed) {
-    assert.match(parsed.content, /Älä valmista tätä ruokalajia näiden keskeneräisten mittojen/i,
-      "unverified whole-fruit/quantity recipe must not be presented as cookable");
-  }
+test("published ackee page carries the safety hold without modifying nutrition-bound recipe source", () => {
+  const recipe = siteContent.recipes.find((entry) =>
+    entry.recipeId === "karibia-ackee-ja-suolakala" && entry.locale === "fi");
+  assert.ok(recipe, "published original ackee page must remain discoverable until reviewed");
+  assert.match(recipe.description, /TURVALLISUUSVAROITUS/);
+  assert.match(recipe.description, /Älä valmista ruokaa näillä ainesmäärillä/);
+  assert.match(recipe.description, /hypoglysiini A/i);
+  assert.match(recipe.instructionsText.join(" "), /Älä valmista tätä ruokalajia/);
+  assert.match(recipe.instructionsText.join(" "), /fda\.gov\/food\/natural-toxins-food\/hypoglycin-and-ackee-fruit/);
+  assert.doesNotMatch(recipe.instructionsText.join(" "), /kypsennä pavut tai liha/);
 });
