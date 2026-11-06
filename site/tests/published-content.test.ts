@@ -107,6 +107,8 @@ test("the Finnish breakfast and dessert collections contain 152 and ten publishe
     ["uunimunat-pinaatilla", 1.3],
     ["halloumimunakas", 3.42],
     ["kaakao-kookos-chia", 2.53],
+    ["rasvakaakao-rouva-keto", 3.69],
+    ["lammin-chia-puuro-rouva-keto", 3.11],
     ["kurkku-oliivi-aamiaiskulho", 2.07],
     ["raejuusto-pesto-kasviskulho", 2.99],
     ["marjainen-chiavanukas", 3.51],
@@ -215,6 +217,21 @@ test("the Finnish breakfast and dessert collections contain 152 and ten publishe
       documentedBreakfastNetCarbs.get(recipe.recipeId) ?? null,
       "only recipes with documented nutrition estimates have values",
     );
+  }
+});
+
+test("three new keto recipes have evidence-bound available carbohydrates and images, without invented total carbohydrates", async () => {
+  const repoDir = path.resolve(import.meta.dirname, "../..");
+  const evidence = JSON.parse(await readFile(path.join(repoDir, "docs/nutrition/drafts/rouva-keto-keto-release-2026-11-06.json"), "utf8"));
+  const ids = ["rasvakaakao-rouva-keto", "lammin-chia-puuro-rouva-keto", "suklaavaahto-tummasta-suklaasta"];
+  assert.deepEqual(evidence.recipes.map((entry: {key: string}) => entry.key).sort(), ids.slice().sort());
+  for (const id of ids) {
+    const recipe = siteContent.recipes.find(entry => entry.locale === "fi" && entry.recipeId === id);
+    assert.ok(recipe, `${id}: published Finnish recipe`);
+    const source = evidence.recipes.find((entry: {key: string}) => entry.key === id);
+    assert.equal(recipe.nutrition.carbsNetG, source.perServing.carbs_net_g);
+    assert.equal(recipe.nutrition.carbsTotalG, null, "Unverified chocolate fibre/polyols must not be zero-imputed");
+    assert.ok(recipe.image, `${id}: original image`);
   }
 });
 
