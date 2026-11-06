@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 import { recipeJsonLd } from "@/features/recipes/schema";
 import { glycemicLoadMeta, recipeLocaleFromPath, recipeUi } from "@/features/recipes/recipe-i18n";
 import { useContent } from "@/lib/content";
-import { articles, articlePath, blogRoot } from "@/features/blog/blog-data";
+import { articles, articlePath, blogRoot, blogPosts, blogJsonLd } from "@/features/blog/blog-data";
 import type { RecipeLocale } from "@/types/content";
 
 const siteBase = "https://ozirix-dev.github.io/Reseptit";
@@ -104,7 +104,7 @@ export function SeoMeta() {
       upsertMeta("name", "twitter:image", image);
       const script = document.createElement("script");
       script.id = "blog-jsonld"; script.type = "application/ld+json";
-      script.textContent = JSON.stringify({ "@context": "https://schema.org", "@type": "BlogPosting", headline: blogPost.title, description: blogPost.description, datePublished: blogPost.datePublished, dateModified: blogPost.dateModified, inLanguage: "fi", author: { "@type": "Organization", name: "Reseptit-toimitus" }, image: [image], mainEntityOfPage: canonical });
+      script.textContent = JSON.stringify(blogJsonLd(blogPosts.find(post => post.slug === blogPost.slug)!));
       document.head.append(script);
     }
     if (recipe) {
