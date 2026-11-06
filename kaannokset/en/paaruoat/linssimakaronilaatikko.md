@@ -70,3 +70,5 @@ A Finnish oven-baked macaroni casserole with green lentils in place of minced me
 ## Notes
 
 Contains wheat gluten, milk and egg. Exact macaroni and green-lentil GI matches are missing, so GK remains HOLD.
+
+**Popularity context:** [K-Ruoka's 2025 new favourites](https://www.k-ruoka.fi/artikkelit/arki/suomen-suosituimmat-reseptit). This is Recipavo's independently developed vegetarian version.

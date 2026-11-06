@@ -51,3 +51,5 @@ Ring-shaped cottage cheese rolls raised with baking powder, not yeast. Unlike tr
 ## Notes
 
 Contains gluten, milk and egg. Weigh the actual egg glaze and test the crumb. No matching GI for this baked food; GK is HOLD.
+
+**Inspiration:** [Kotona's popular new savoury bakes of 2025](https://www.meillakotona.fi/artikkelit/vuoden-2025-suosituimmat-suolaiset-leivonnaiset). This is an independently weighed, baking-powder-raised recipe.

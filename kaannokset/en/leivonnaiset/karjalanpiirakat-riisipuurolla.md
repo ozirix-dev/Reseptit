@@ -69,3 +69,5 @@ Thin crimped rye crusts filled with milk-cooked rice porridge. Makes 24 pies; on
 ## Notes
 
 Traditional-speciality name still requires verification. The rice and baked rye crust lack suitable GI evidence, so GK remains unavailable. Contains gluten and milk.
+
+**Traditional-speciality references:** [Finnish Food Authority](https://www.ruokavirasto.fi/yritykset/oppaat/nimisuojattujen-elintarvikkeiden-valvontaohje/nimisuojattujen-elintarvikkeiden-valvontaohje/) and [Martat's baking guidance](https://www.martat.fi/reseptit/karjalanpiirakat/).

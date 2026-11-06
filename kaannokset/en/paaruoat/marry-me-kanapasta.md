@@ -72,3 +72,5 @@ Creamy chicken spaghetti with sun-dried tomatoes and Parmesan. Four servings; re
 ## Notes
 
 Contains wheat gluten and milk. The EAN-matched spaghetti has conflicting online carbohydrate declarations (69 and 72 g/100 g); verify the physical package. GI 50 is a candidate only and GK is HOLD.
+
+**Popularity context:** [K-Ruoka's 2025 favourites](https://www.k-ruoka.fi/artikkelit/arki/suomen-suosituimmat-reseptit). This independently written Recipavo version is not copied from another publisher's instructions.

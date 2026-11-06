@@ -63,3 +63,5 @@ Feta and cherry tomatoes roast into a sauce for penne. The original Finnish bake
 ## Notes
 
 Original idea credited to Jenni Häyrinen: https://liemessa.fi/2019/02/uunifetapasta/. Contains wheat gluten and milk. Exact penne GI is not verified; GK remains HOLD.
+
+**Original idea:** [Jenni Häyrinen, Liemessä (2019)](https://liemessa.fi/2019/02/uunifetapasta/). Recipavo did not invent oven-baked feta pasta.
