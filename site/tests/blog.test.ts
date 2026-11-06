@@ -8,10 +8,10 @@ import { contentManifest } from "../src/generated/routes.generated";
 
 const dist = path.resolve(import.meta.dirname, "../dist");
 
-test("Ruokaopas publishes exactly two sourced Finnish pilot articles", () => {
-  assert.equal(articles.length, 2);
-  assert.equal(blogPosts.length, 2);
-  assert.equal(new Set(articles.map(articlePath)).size, 2);
+test("Ruokaopas publishes exactly twelve sourced Finnish articles", () => {
+  assert.equal(articles.length, 12);
+  assert.equal(blogPosts.length, 12);
+  assert.equal(new Set(articles.map(articlePath)).size, 12);
   for(const article of articles) {
     assert.match(article.slug, /^[a-z0-9]+(?:-[a-z0-9]+)*$/);
     assert.equal(articlePath(article), `/ruokaopas/${article.slug}/`);
@@ -21,6 +21,7 @@ test("Ruokaopas publishes exactly two sourced Finnish pilot articles", () => {
     assert.ok(article.datePublished && article.author);
     assert.ok(article.alt.length > 12);
   }
+  assert.equal(new Set(articles.map(p => p.image)).size, 12, "Each article needs its own artwork");
   const brioche = articles.find(post => post.slug === "briossisampylan-onnistuminen")!;
   assert.deepEqual(brioche.related.map(item => item.path), [
     "/briossisampylat-joshua-weissman/",
@@ -44,7 +45,8 @@ test("Ruokaopas URLs are prerendered, linked and sourced without JS", async () =
     assert.ok(html.includes(`rel="canonical" href="https://ozirix-dev.github.io/Reseptit${route}"`));
     assert.ok(html.includes(`<script id="blog-jsonld" type="application/ld+json">`));
     assert.ok(html.includes("Lähteet ja lisätietoa"));
-    assert.ok(html.includes(`alt="${article.alt}"`));
+    const escapedAlt = article.alt.replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;").replaceAll("\'", "&#x27;");
+    assert.ok(html.includes(`alt="${escapedAlt}"`), article.slug);
     for (const related of article.related) assert.ok(html.includes(`href="/Reseptit${related.path}"`), related.path);
     const asset = path.join(dist, article.image.replace(/^\//, ""));
     const body = await readFile(asset);

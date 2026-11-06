@@ -441,11 +441,11 @@ test("responsive image metadata reaches every route, SEO and matching preloads",
     const payload = JSON.parse(payloadText);
     const expected = recipe ? [recipe] : payload.recipes;
     if (route.startsWith("/ruokaopas/")) {
-      assert.equal(imgs.length, route === "/ruokaopas/" ? 2 : 1);
+      assert.equal(imgs.length, route === "/ruokaopas/" ? 12 : 1);
       for (const img of imgs) {
         assert.ok(img.alt, route);
-        assert.match(img.src, /^\/Reseptit\/ruokaopas\/(briossi|gk)\.svg$/);
-        assert.ok((await readFile(path.join(dist, "ruokaopas", path.basename(img.src)))).length > 0);
+        assert.match(img.src, /^\/Reseptit\/ruokaopas\/(?:kuvitus\/[a-z0-9-]+|briossi|gk)\.svg$/);
+        assert.ok((await readFile(path.join(dist, img.src.replace(/^\/Reseptit\//, "")))).length > 0);
       }
     } else {
       assert.equal(imgs.length, expected.filter((r: {image: unknown}) => r.image).length);
