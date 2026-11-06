@@ -1,7 +1,7 @@
 # Recipavo Image SEO V1 – kuvastandardi, kuvaputki ja julkaisurajat
 
-Päiväys: 2026-11-06  
-Tila: **toteutusohje / hyväksyttävä erikseen**, ei väite jo tehdyistä teknisistä muutoksista.  
+Päiväys: 2026-11-06
+Tila: **toteutusohje / hyväksyttävä erikseen**, ei väite jo tehdyistä teknisistä muutoksista.
 Kohde: Reseptit (nykyinen GitHub Pages), myöhemmin Recipavo.com; reseptit ensin, blogi samaa laadunhallintaa soveltaen.
 
 ## Miksi
