@@ -1,8 +1,8 @@
 # GI-lähteiden kohdennettu 10 reseptin pilotti — 6.11.2026
 
-**Tila:** RESEARCH_ONLY / DRAFT / ei hyväksyttyjä GI- tai GK-arvoja  
-**Lähtötilan estelista:** [GK100 ratkaisuerä 02, PR #292](https://github.com/ozirix-dev/Reseptit/pull/292), tiedosto `docs/nutrition/gk-original-solutions-batch02/priority-snapshot.json` SHA:ssa `20bfcefb621a2bafa16f240591c7749fe8023fc5`. Tämä on **5.11. historiallinen prioriteettikuva**, ei automaattisesti tämän päivän tuotantotila.  
-**Reseptit:** kaikki kymmenen reseptin **main-haaran sisältö** avattu ja blob-SHA kirjattu 6.11.2026. Ei nykyisen julkaistun GK-esterekisterin täyttä uusinta-ajoa tässä pilotissa.  
+**Tila:** RESEARCH_ONLY / DRAFT / ei hyväksyttyjä GI- tai GK-arvoja
+**Lähtötilan estelista:** [GK100 ratkaisuerä 02, PR #292](https://github.com/ozirix-dev/Reseptit/pull/292), tiedosto `docs/nutrition/gk-original-solutions-batch02/priority-snapshot.json` SHA:ssa `20bfcefb621a2bafa16f240591c7749fe8023fc5`. Tämä on **5.11. historiallinen prioriteettikuva**, ei automaattisesti tämän päivän tuotantotila.
+**Reseptit:** kaikki kymmenen reseptin **main-haaran sisältö** avattu ja blob-SHA kirjattu 6.11.2026. Ei nykyisen julkaistun GK-esterekisterin täyttä uusinta-ajoa tässä pilotissa.
 **Aiemmat löydöt:** [GI-regional intake PR #299](https://github.com/ozirix-dev/Reseptit/pull/299) (21 faktahavaintoa, kahdeksan muuta reseptivertailua), [ReportHub 5.11. audit](https://github.com/ozirix-dev/ReportHub/blob/main/reports/audits/2026-11-05-gi-tutkimusaineistojen-lahdekartoitus.md) sekä [Issue #300](https://github.com/ozirix-dev/Reseptit/issues/300) (Grokin 30 lähteen vertailu). **Nämä 10 reseptiä valittiin eri resepteiksi kuin #299:n kahdeksan vertailua.**
 
 ## Työn tavoite ja onnistumiskriteerit
