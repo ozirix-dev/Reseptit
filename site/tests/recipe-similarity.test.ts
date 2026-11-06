@@ -133,6 +133,37 @@ test("Finnish source is preferred over an earlier translation of the same recipe
   assert.equal(assessRecipeSimilarity(another, [translated, bun]).status, "MATERIAL_DUPLICATE");
 });
 
+
+test("ingredient matching does not confuse eggplant with egg or a sandwich with butter", () => {
+  assert.equal(canonicalIngredient("eggplant"), "eggplant");
+  assert.equal(canonicalIngredient("voileipä"), "voileipä");
+  assert.equal(canonicalIngredient("voita"), "voi");
+  assert.equal(canonicalIngredient("perunajauhoa"), "perunajauho");
+  assert.equal(canonicalIngredient("maito"), "maito");
+});
+
+test("editing the same recipe object invalidates its cached ingredient comparison", () => {
+  const editable = {
+    ...bun, recipeId: "editable", ingredients: bun.ingredients.map((ingredient) => ({ ...ingredient })),
+  };
+  const before = assessRecipeSimilarity(editable, [bun]);
+  assert.equal(before.status, "MATERIAL_DUPLICATE");
+  editable.ingredients[0].amount = 1600;
+  const after = assessRecipeSimilarity(editable, [bun]);
+  assert.notEqual(after.candidateRevision, before.candidateRevision);
+  assert.notEqual(after.status, "MATERIAL_DUPLICATE");
+});
+
+test("a public submission reusing an existing recipe ID must not bypass review", () => {
+  const sameIdentifier = { ...bun, title: "Different title with colliding ID",
+    ingredients: [{ item: "fresh vegetable", amount: 100, unit: "g" },
+      { item: "another vegetable", amount: 50, unit: "g" }] };
+  const result = checkPublicRecipeSubmission(sameIdentifier, [bun], []);
+  assert.equal(result.internal.status, "UNCERTAIN");
+  assert.equal(result.publicStatus, "UNCERTAIN");
+  assert.deepEqual(result.publicMatches, []);
+});
+
 test("non-Finnish submissions are conservatively marked uncertain", () => {
   const english = { ...bun, recipeId: "english", locale: "en" };
   const result = assessRecipeSimilarity(english, []);

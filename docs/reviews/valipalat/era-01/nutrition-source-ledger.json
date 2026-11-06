@@ -1,0 +1,212 @@
+{
+  "reviewDate": "2026-11-06",
+  "sourceCatalog": "docs/nutrition/food-records.json",
+  "status": "EDITORIAL_CANDIDATES_ONLY",
+  "publicNutritionAuthorized": false,
+  "publicGlycemicLoadAuthorized": false,
+  "methods": {
+    "availableCarbohydrate": "Fineli/AFCD EU_AVAILABLE as reported; fibre and polyols are not deducted twice",
+    "totalCarbohydrate": "available carbohydrate + documented fibre + documented polyols",
+    "energy": "Not calculated in this packet",
+    "retention": "Raw input composition proxy; cheddar baking loss not tested",
+    "rule": "Draft-only label candidates; original composition sourceId bindings remain historical previews and must NOT be used as product-matched publication values. Missing fibre/polyols are unknown, not zero. Final calculations require separately validated exact records and owner publication decision."
+  },
+  "recipes": [
+    {
+      "id": "rapeat-juustonaksut",
+      "source": "docs/reviews/valipalat/katselmointi/rapeat-juustonaksut.md",
+      "servings": 4,
+      "reviewStatus": "HOLD",
+      "glycemicLoadStatus": "HOLD",
+      "ingredients": [
+        {
+          "amountG": 140,
+          "sourceId": "fineli-698-release-20",
+          "match": "EXACT",
+          "note": "Cheddar approximately 34% fat; edible cheese weight before baking."
+        },
+        {
+          "amountG": 1,
+          "sourceId": "afcd-F006316-release-3",
+          "match": "PROVISIONAL",
+          "note": "Previous AFCD dry paprika is a superseded macro proxy; new exact smoked paprika package values are in labelCandidate and need audit before calculation.",
+          "labelCandidate": {
+            "brand": "Santa Maria Paprika Smoked",
+            "size": "37 g",
+            "ean": "7311311015243",
+            "sourceUrl": "https://www.s-kaupat.fi/tuote/santa-maria-37g-paprika-smoked-savupaprikajauhe/7311311015243",
+            "per100g": {
+              "carbohydrate": 13,
+              "protein": 15,
+              "fat": 17,
+              "fibre": 41,
+              "polyols": null
+            },
+            "note": "Smoked paprika exact product label, polyols not declared; old AFCD dried paprika preview is not the final value."
+          }
+        }
+      ],
+      "illustrativeMacroPreviewPerServing": {
+        "carbsNetG": 0.08,
+        "carbsTotalG": 0.17,
+        "proteinG": 9.01,
+        "fatG": 12.07,
+        "fibreG": 0.09
+      },
+      "blockers": [
+        "Smoked paprika product/source match",
+        "Fat remaining on baking paper after baking and actual portion retention",
+        "Kitchen test for 12 crisps and time",
+        "Missing approved GI or explicit GK-HOLD publication policy"
+      ]
+    },
+    {
+      "id": "taytetyt-kananmunat-yrteilla",
+      "source": "docs/reviews/valipalat/katselmointi/taytetyt-kananmunat-yrteilla.md",
+      "servings": 6,
+      "reviewStatus": "HOLD",
+      "glycemicLoadStatus": "HOLD",
+      "ingredients": [
+        {
+          "amountG": 330,
+          "sourceId": "fineli-8513-2026-10-24",
+          "match": "EXACT",
+          "note": "Hard-boiled peeled egg, edible weight. Validate actual weigh-in."
+        },
+        {
+          "amountG": 55,
+          "sourceId": "afcd-F005441-release-3",
+          "match": "PROVISIONAL",
+          "note": "Now a specific 400g Hellmann's Real label candidate; AFCD mayo is NOT a replacement. Contains added sugar. Fibre/polyols missing.",
+          "labelCandidate": {
+            "brand": "Hellmann's Real",
+            "size": "400 g",
+            "ean": "5000184321064",
+            "sourceUrl": "https://www.s-kaupat.fi/tuote/hellmanns-real-majoneesi-400-g/5000184321064",
+            "per100g": {
+              "carbohydrate": 1.4,
+              "protein": 1.1,
+              "fat": 79,
+              "fibre": null,
+              "polyols": null
+            },
+            "note": "Contains added sugar; fibre and polyol amounts not declared. Not a complete nutrition record."
+          }
+        },
+        {
+          "amountG": 10,
+          "sourceId": "fineli-28-release-20",
+          "match": "PROVISIONAL",
+          "note": "Now a specific Maille Dijon Originale 215g label candidate; Fineli generic mustard is NOT the same product. Fibre/polyols missing.",
+          "labelCandidate": {
+            "brand": "Maille Dijon Originale",
+            "size": "215 g",
+            "ean": "3036810201280",
+            "sourceUrl": "https://www.s-kaupat.fi/tuote/maille-dijon-original-sinappi-perinteinen-maku-215-g/3036810201280",
+            "per100g": {
+              "carbohydrate": 3.5,
+              "protein": 7,
+              "fat": 11,
+              "fibre": null,
+              "polyols": null
+            },
+            "note": "Retail 215g label does not list fibre and polyols. Do not transfer 1kg professional pack's fibre by assumption."
+          }
+        },
+        {
+          "amountG": 5,
+          "sourceId": "fineli-392-2026-10-24",
+          "match": "BLOCKED",
+          "note": "Chives record lacks source-backed protein/fat fields; do not fill with zeros."
+        },
+        {
+          "amountG": 1,
+          "sourceId": "afcd-F006316-release-3",
+          "match": "PROVISIONAL",
+          "note": "Santa Maria smoked paprika label found, but polyols not declared; AFCD dry paprika is a superseded preview.",
+          "labelCandidate": {
+            "brand": "Santa Maria Paprika Smoked",
+            "size": "37 g",
+            "ean": "7311311015243",
+            "sourceUrl": "https://www.s-kaupat.fi/tuote/santa-maria-37g-paprika-smoked-savupaprikajauhe/7311311015243",
+            "per100g": {
+              "carbohydrate": 13,
+              "protein": 15,
+              "fat": 17,
+              "fibre": 41,
+              "polyols": null
+            },
+            "note": "Smoked paprika exact product label, polyols not declared; old AFCD dried paprika preview is not the final value."
+          }
+        }
+      ],
+      "illustrativeMacroPreviewPerServing": null,
+      "blockers": [
+        "Choose branded mayonnaise and Dijon mustard with exact label and nutrition data",
+        "Find full-source macros for chives",
+        "Verify smoked paprika or documented omission bound",
+        "Cooked edible egg mass confirmed by weighing",
+        "GK still HOLD"
+      ]
+    },
+    {
+      "id": "fetavaahto-kasvistikuilla",
+      "source": "docs/reviews/valipalat/katselmointi/fetavaahto-kasvistikuilla.md",
+      "servings": 4,
+      "reviewStatus": "CANDIDATE_FOR_NUTRITION_REVIEW",
+      "glycemicLoadStatus": "HOLD",
+      "ingredients": [
+        {
+          "amountG": 120,
+          "sourceId": "fineli-11211-release-20",
+          "match": "EXACT",
+          "note": "Drained goat's-milk feta 25% fat."
+        },
+        {
+          "amountG": 100,
+          "sourceId": "fineli-34611-release-20",
+          "match": "EXACT",
+          "note": "Lactose-free plain Greek yogurt 7% fat."
+        },
+        {
+          "amountG": 10,
+          "sourceId": "fineli-11557-release-20",
+          "match": "EXACT",
+          "note": "Undiluted lemon juice."
+        },
+        {
+          "amountG": 5,
+          "sourceId": "fineli-369-release-20",
+          "match": "EXACT",
+          "note": "Fresh dill."
+        },
+        {
+          "amountG": 200,
+          "sourceId": "fineli-346-release-20",
+          "match": "EXACT",
+          "note": "Raw edible cucumber."
+        },
+        {
+          "amountG": 150,
+          "sourceId": "fineli-386-release-20",
+          "match": "EXACT",
+          "note": "Raw edible red bell pepper."
+        }
+      ],
+      "illustrativeMacroPreviewPerServing": {
+        "carbsNetG": 3.53,
+        "carbsTotalG": 4.83,
+        "proteinG": 8.15,
+        "fatG": 9.42,
+        "fibreG": 1.3
+      },
+      "blockers": [
+        "Human review of exact product/source applicability",
+        "Independent nutrition evidence and frontmatter audit before release",
+        "Matching dish photo and language review",
+        "GI/GK must remain HOLD unless separately approved"
+      ]
+    }
+  ],
+  "labelCandidateReview": "2026-11-06"
+}

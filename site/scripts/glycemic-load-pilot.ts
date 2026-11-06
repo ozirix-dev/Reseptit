@@ -1,4 +1,5 @@
 import {countPublishedGkEstimates} from '../src/features/recipes/gk-estimate';
+import {publicGiSourceNote} from "./gk-source-copy";
 import {originalGlycemicLoadCategory} from './glycemic-load-filter';
 import { loadAuthorizedGk100Variants } from './gk100-approval-release';
 import {buildTwoAlmondPieVariants} from './gk-two-almond-pies';
@@ -246,7 +247,7 @@ const publicResults = results.flatMap((result) => {
         evidenceKind: record.evidenceKind,
         applicationKind: catalogSourceApplication(record.evidenceKind, record.matchKind ?? "EXACT"),
         confidence: record.confidence ?? (record.qualityTier === "STRONG" ? "HIGH" : "LOW"),
-        note: record.note ?? record.source.qualityEvidence,
+        note: publicGiSourceNote(record),
       }))
     : [];
   if (result.candidateSources) sourceReferences.push(...result.candidateSources);
