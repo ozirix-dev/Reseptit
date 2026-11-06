@@ -58,4 +58,3 @@ export const assistantDemoCopy: Record<RecipeLocale, UiCopy> = {
     presets: { "keto-30": "คีโต ไม่เกิน 30 นาที", breakfast: "อาหารเช้า", snack: "ของว่าง" },
   },
 };
-
