@@ -72,3 +72,49 @@ test("new recipes require exact amounts for nutrition-critical ingredients", () 
   }]));
   assert.doesNotThrow(() => assertQuantifiedCriticalIngredients(siteContent.recipes));
 });
+
+
+test("second snack review batch matches its source ledger and cannot publish duplicates", async () => {
+  const { readFileSync } = await import("node:fs");
+  const path = await import("node:path");
+  const root = path.resolve(import.meta.dirname, "../..");
+  const ledger = JSON.parse(readFileSync(path.join(root, "docs/reviews/valipalat/era-02/source-bindings.json"), "utf8")) as {
+    status: string; published: boolean; publicationAuthorized: boolean; glycemicLoadStatus: string;
+    recipes: Array<{ id: string; servings: number; status: string; gk: string;
+      sourceFile: string; ingredients: Array<{ grams: number; unit: string; item: string; sourceId: string | null }> }>;
+  };
+  const foodRecords = JSON.parse(readFileSync(path.join(root, "docs/nutrition/food-records.json"), "utf8")) as Array<{ id: string }>;
+  const knownIds = new Set(foodRecords.map(row => row.id));
+  assert.equal(ledger.status, "DRAFT_SOURCE_MAPPING_ONLY");
+  assert.equal(ledger.published, false);
+  assert.equal(ledger.publicationAuthorized, false);
+  assert.equal(ledger.glycemicLoadStatus, "HOLD_ALL");
+  assert.equal(ledger.recipes.length, 5);
+  for (const recipe of ledger.recipes) {
+    const md = parseMarkdown(readFileSync(path.join(root, recipe.sourceFile), "utf8"));
+    assert.ok(md, recipe.sourceFile);
+    const actual = recipeFrontmatterSchema.parse(md.data);
+    assert.equal(actual.recipe_id, recipe.id);
+    assert.equal(actual.url_slug, recipe.id);
+    assert.equal(actual.category, "valipala");
+    assert.equal(actual.language, "fi");
+    assert.equal(actual.status, "draft");
+    assert.equal(actual.servings, recipe.servings);
+    assert.equal(recipe.status, "REVIEW_REQUIRED");
+    assert.equal(recipe.gk, "HOLD");
+    assert.equal(actual.ingredients.length, recipe.ingredients.length);
+    for (let i = 0; i < actual.ingredients.length; i++) {
+      assert.equal(actual.ingredients[i].amount, recipe.ingredients[i].grams);
+      assert.equal(actual.ingredients[i].unit, recipe.ingredients[i].unit);
+      assert.equal(actual.ingredients[i].item, recipe.ingredients[i].item);
+      const id = recipe.ingredients[i].sourceId;
+      if (id !== null) assert.ok(knownIds.has(id), `${recipe.id} unknown food source: ${id}`);
+    }
+    assert.ok(!siteContent.recipes.some(item => item.recipeId === recipe.id),
+      `${recipe.id} unexpectedly already published`);
+  }
+  assert.ok(siteContent.recipes.some(item => item.recipeId === "munakasmuffinit" && item.locale === "fi"),
+    "existing muffins must be reused, not duplicated");
+  assert.ok(!siteContent.recipes.some(item => item.recipeId === "suklaamousse-keto" && item.locale === "fi"),
+    "the old mousse title-only stub must not be presented as published");
+});
