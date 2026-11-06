@@ -11,7 +11,10 @@ import preparedTranslations from "./prepared-translation-baseline.json";
 
 // The PR #302 recipe additions were reviewed and published separately.
 const briochePublishSha = "e0e7519ea66f878427c241349fdea5dc918516ec";
-const briochePublishedFiles = new Set(postBaselineBriocheIds.map(id => `reseptit/leivonnaiset/${id}.md`));
+const briochePublishedFiles = new Set(postBaselineBriocheIds.flatMap(id => [
+  `reseptit/leivonnaiset/${id}.md`,
+  `docs/nutrition/calculations/${id}.json`,
+]));
 
 const translationDraftCommits = new Map([
   ["kaannokset/en/jalkiruoat/keto-mutakakku.md", "d6531cd0592b01c0106a24bb6a3bd930dedbc504"],
