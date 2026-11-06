@@ -25,7 +25,8 @@ image:
 ingredients:
   - amount: 220
     unit: g
-    item: durumvehnämakaronia, kuivapaino
+    item: Myllyn Paras Makaroni -sarvimakaronia, kuivapaino
+    note: EAN 6417700050725; vehnä- ja durumvehnäjauhoa, valmistajan 68 g CHO/100 g; varmista oma pakkaus ennen laskentaa
   - amount: 150
     unit: g
     item: Coop vihreitä kuivattuja linssejä, kuivapaino
@@ -66,8 +67,8 @@ Tässä suomalaisen uunilaatikon kasvisversiossa vihreät linssit tuovat rakenne
 
 ## Valmistus
 
-1. Huuhdo 150 g kuivattuja Coop-vihreitä linssejä. Keitä niitä runsaassa vedessä pakkauksen ohjeen mukaan lähes kypsiksi, yleensä noin 20–25 minuuttia. Valuta ja punnitse kypsät linssit.
-2. Keitä 220 g kuivaa makaronia vedessä hieman alle pakkauksen kypsennysajan, koska makaroni jatkaa kypsymistä uunissa. Valuta ja punnitse kypsä makaroni.
+1. Huuhdo 150 g kuivattuja Coop-vihreitä linssejä. Pakkauksen täysi keittoaika on 15–20 minuuttia; laatikkoa varten keitä noin 12–15 minuuttia, kunnes linssit ovat lähes kypsiä mutta eivät kovia. Valuta ja punnitse linssit. Ne kypsyvät vielä uunissa.
+2. Keitä 220 g kuivaa Myllyn Paras Makaroni -sarvimakaronia noin 5–6 minuuttia (pakkauksen normaali keittoaika noin 8 min), koska makaroni kypsyy vielä uunissa. Valuta ja punnitse makaroni.
 3. Hienonna 40 g sipulia ja pehmennä se pannussa 15 g oliiviöljyssä. Sekoita mukaan 2 g paprikajauhetta ja 1 g kuivattua timjamia.
 4. Yhdistä makaroni, linssit ja maustettu sipuli uunivuokaan. Sekoita 500 g maitoa, 110 g kuoretonta kananmunaa, 5 g suolaa ja 1 g mustapippuria tasaiseksi munamaidoksi ja kaada vuokaan.
 5. Raasta 100 g Valio Punaleima Emmental 17 % -juustoa ja levitä se päälle. Paista 190 °C:ssa noin 35–45 minuuttia, kunnes keskusta on hyytynyt ja pinta saanut väriä. Anna vetäytyä 10 minuuttia ja jaa kuuteen yhtä suureen annokseen.
@@ -87,3 +88,5 @@ K-Ruoan vuoden 2025 suosituimpien uutuuksien joukossa oli linssimakaronilaatikko
 ## Muistiinpanot
 
 - Kuva on tekoälyllä tuotettu havainnekuva ruoasta, ei kuva tässä projektissa valmistetusta koeruoasta.
+
+- **Allergeenit:** sisältää vehnää (gluteeni), maitoa ja kananmunaa. Coop-vihreät linssit voivat sisältää pieniä määriä vehnää ja ohraa. Tarkista aina käytetyt pakkaukset.

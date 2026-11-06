@@ -24,7 +24,7 @@ image:
 ingredients:
   - amount: 220
     unit: g
-    item: "dry durum-wheat macaroni"
+    item: "Myllyn Paras elbow macaroni (wheat and durum wheat flour), dry weight"
   - amount: 150
     unit: g
     item: "Coop dried green lentils"
@@ -65,8 +65,8 @@ A Finnish oven-baked macaroni casserole with green lentils in place of minced me
 
 ## Preparation
 
-1. Rinse 150 g dried green lentils and boil in plenty of water for about 20–25 minutes, or as stated on the pack, until nearly tender. Drain and weigh.
-2. Boil 220 g dry macaroni slightly less than the package time; it will cook further in the oven. Drain and weigh.
+1. Rinse 150 g dried Coop green lentils. The package's full boiling time is 15–20 minutes; for the casserole boil for about 12–15 minutes until nearly tender but not hard. Drain and weigh. The lentils will finish cooking in the oven.
+2. Boil 220 g dry Myllyn Paras elbow macaroni for about 5–6 minutes (the normal package time is about 8 minutes). It will cook further in the oven. Drain and weigh.
 3. Soften 40 g chopped onion in 15 g olive oil. Add 2 g paprika powder and 1 g dried thyme.
 4. Combine macaroni, lentils and onion in a baking dish. Whisk 500 g milk with 110 g shelled egg, 5 g salt and 1 g black pepper; pour over.
 5. Grate 100 g Valio Emmental 17% and sprinkle on top. Bake at 190 °C for 35–45 minutes until set. Rest for 10 minutes and divide into six equal portions.
@@ -79,3 +79,5 @@ Contains wheat gluten, milk and egg. Exact macaroni and green-lentil GI matches 
 **Popularity context:** [K-Ruoka's 2025 new favourites](https://www.k-ruoka.fi/artikkelit/arki/suomen-suosituimmat-reseptit). This is Recipavo's independently developed vegetarian version.
 
 - This AI-generated illustration is not a photograph of a physical test cook or bake.
+
+- **Allergens:** contains wheat (gluten), milk and egg. Coop green lentils may contain traces of wheat and barley. Check the actual packages.

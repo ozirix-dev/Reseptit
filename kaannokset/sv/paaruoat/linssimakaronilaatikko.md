@@ -24,7 +24,7 @@ image:
 ingredients:
   - amount: 220
     unit: g
-    item: "torra makaroner av durumvete"
+    item: "Myllyn Paras makaroner (vete- och durumvetemjöl), torrvikt"
   - amount: 150
     unit: g
     item: "Coop torkade gröna linser"
@@ -65,8 +65,8 @@ Finsk vegetarisk makaronilåda där gröna linser ersätter köttfärs. Inte en 
 
 ## Tillagning
 
-1. Skölj 150 g torkade gröna linser och koka i rikligt vatten cirka 20–25 minuter, eller enligt förpackningen, tills de nästan är mjuka. Häll av och väg.
-2. Koka 220 g torra makaroner något kortare tid än förpackningen anger, eftersom de tillagas vidare i ugnen. Häll av och väg.
+1. Skölj 150 g torkade Coop gröna linser. Förpackningens fulla koktid är 15–20 minuter; inför ugnstillagningen kokas de cirka 12–15 minuter tills de nästan är mjuka men inte hårda. Häll av och väg. De blir färdiga i ugnen.
+2. Koka 220 g torra Myllyn Paras-makaroner i cirka 5–6 minuter (normal koktid enligt förpackningen cirka 8 minuter). Makaronerna tillagas vidare i ugnen. Häll av och väg.
 3. Mjukstek 40 g hackad lök i 15 g olivolja. Tillsätt 2 g paprikapulver och 1 g torkad timjan.
 4. Blanda makaroner, linser och lök i en form. Vispa 500 g mjölk med 110 g ägg utan skal, 5 g salt och 1 g svartpeppar och häll över.
 5. Riv 100 g Valio Emmental 17% och strö över. Grädda vid 190 °C i 35–45 minuter tills lådan stelnat. Låt vila 10 minuter och dela i sex lika portioner.
@@ -79,3 +79,5 @@ Innehåller vetegluten, mjölk och ägg. Exakta GI-källor för makaroner och gr
 **Popularitetskälla:** [K-Ruokas nya favoriter 2025](https://www.k-ruoka.fi/artikkelit/arki/suomen-suosituimmat-reseptit). Detta är Recipavos självständigt utvecklade vegetariska version.
 
 - Bilden är AI-genererad och inte ett fotografi från en verklig provlagning eller provbakning.
+
+- **Allergener:** innehåller vete (gluten), mjölk och ägg. Coop gröna linser kan innehålla spår av vete och korn. Kontrollera de använda förpackningarna.
