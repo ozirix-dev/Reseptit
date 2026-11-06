@@ -10,7 +10,7 @@ Tämä on käytännön jatko suunnitelmalle [Recipavo etusivu ja erillinen kirja
 - Poiminnat valitaan deterministisesti ruokalajeja vuorotellen; kuvallisia julkaistuja reseptejä suositaan. Ei anneta virheellisiä suosituin-, arvioitu-, uusimmat- tai koepaistettu-väitteitä.
 - Koko kirjaston muu osa on **natiivin avattavan `details`-elementin sisällä**. Käyttäjä voi selata sitä ilman JavaScriptiä, kaikki reseptien olemassa olevat reittilinkit säilyvät ja footer on normaalisti lähellä poimintoja.
 - Aihelinkit käyttävät nykyisiä `?category=`- ja `?diet=`-parametreja ja nykyistä hakulogiiikkaa; suodattimia käytettäessä näytetään vanhan haun tulosluettelo ennallaan.
-- Omat tyylit `site/src/features/recipes/home-preview.css` on rajattu esikatseluluokkaan, jotta tavallinen tuotannon CSS ja rinnakkaisen blogin #303/#309 muutokset eivät sekoitu.
+- Omat tyylit `site/src/features/recipes/home-preview.css` on rajattu esikatseluluokkaan. Ruokaopas #309 on jo julkaistu erillisenä; tämä muutos ei kosketa sen reittejä tai tyylejä.
 - Neljän kielen valintojen ja suodatettavien aiheiden testit kuuluvat olemassa olevaan `recipe-search.test.ts`-testisarjaan.
 
 ## Näin testaat paikallisesti (PowerShell)
@@ -42,7 +42,7 @@ Remove-Item Env:VITE_RECIPAVO_HERO_PREVIEW
 
 - H2: uusi eksplisiittinen sivutettu kirjastoreitti, sivukohtainen data, vanhojen kyselylinkkien yhteensopivuus sekä canonical/hreflang/sitemap/404-testit.
 - H3: lyhyt etusivu tuotantoon vasta H2:n ja nelikielisen arvioinnin jälkeen, Cloudflare-domainin käyttöönotto erillisellä päätöksellä.
-- Ruokaopas vasta, kun rinnakkaisista #303/#309-toteutuksista on yksi katselmoitu ja julkaistu. Ei kopioida blogikoodia eikä luoda kuolleita linkkejä tässä PR:ssä.
+- Ruokaopas #309 on julkaistu ja päällekkäinen #303 suljettu. Välipalakategorian valmistelu #310 on mainissa ilman julkaistuja välipalareseptejä. Briossikuvien ja reseptien korjaus #314 yhdistetty. Tämä H1-PR ei kopioi blogia, lisää valikolle uusia reittejä eikä tuo luonnoksia julkiseksi.
 
 ## Palautus ja omistajuus
 
