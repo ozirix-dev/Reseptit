@@ -9,8 +9,10 @@ import { textHash } from "../scripts/gk149-model";
 import approvedTranslations from "./approved-translation-baseline.json";
 import preparedTranslations from "./prepared-translation-baseline.json";
 
-// The PR #302 recipe additions were reviewed and published separately.
-const briochePublishSha = "e0e7519ea66f878427c241349fdea5dc918516ec";
+// PR #302 introduced three recipes after the frozen 326-recipe GK baseline.
+// The separately approved P0 image/ingredient correction is pinned to one
+// exact commit without mutating any of the old 326 recipe calculation inputs.
+const briocheImageCorrectionSha = "992cf1f4f623da0d4ee596770ce7c211e8c31a89";
 const briochePublishedFiles = new Set(postBaselineBriocheIds.flatMap(id => [
   `reseptit/leivonnaiset/${id}.md`,
   `docs/nutrition/calculations/${id}.json`,
@@ -49,9 +51,9 @@ export function assertRecipeBaseline(root: string, baseline: string, ...protecte
       continue;
     }
     if (status === "A" && briochePublishedFiles.has(file)) {
-      // Prove that these are the *exact* previously published files, not
+      // Prove that these are the *exact* approved P0-corrected files, not
       // arbitrary new recipe additions admitted into historical baselines.
-      const published = execFileSync("git", ["show", `${briochePublishSha}:${file}`], { cwd: root, encoding: "utf8" });
+      const published = execFileSync("git", ["show", `${briocheImageCorrectionSha}:${file}`], { cwd: root, encoding: "utf8" });
       assert.equal(readFileSync(path.join(root, file), "utf8").replaceAll("\r\n", "\n"), published.replaceAll("\r\n", "\n"), change);
       continue;
     }

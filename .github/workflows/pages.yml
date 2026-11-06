@@ -108,6 +108,34 @@ jobs:
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
         working-directory: site
 
+      - name: Check new recipes for semantic duplicates (advisory)
+        if: steps.select.outputs.run_content == 'true'
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before || github.sha }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+        run: |
+          npm run audit:similarity -- --changed --limit=20 --output=site/similarity-review.md
+          cat similarity-review.md >> "$GITHUB_STEP_SUMMARY"
+        working-directory: site
+
+      - name: Full duplicate inventory when detector changes
+        if: contains(steps.select.outputs.changed_paths, 'recipe-similarity')
+        run: |
+          npm run audit:similarity -- --all --limit=30 --output=site/similarity-inventory.md
+          cat similarity-inventory.md >> "$GITHUB_STEP_SUMMARY"
+        working-directory: site
+
+      - name: Upload full duplicate audit for editorial review
+        if: contains(steps.select.outputs.changed_paths, 'recipe-similarity')
+        uses: actions/upload-artifact@v4
+        with:
+          name: recipe-similarity-inventory
+          path: |
+            site/similarity-inventory.md
+            site/similarity-inventory.json
+          if-no-files-found: error
+          retention-days: 14
+
       - name: Build the publishable site
         if: steps.select.outputs.run_build == 'true'
         run: npm run build
