@@ -3,7 +3,7 @@ import path from "node:path";
 import { pathToFileURL } from "node:url";
 import { isDeepStrictEqual } from "node:util";
 import { localeIndexes } from "../src/content/route-data";
-import { articles, articlePath, blogRoot } from "../src/features/blog/blog-data";
+import { articles, articlePath, blogRoot, blogPosts, blogJsonLd } from "../src/features/blog/blog-data";
 import { glycemicLoadMeta, glycemicLoadPath, recipeUi } from "../src/features/recipes/recipe-i18n";
 import type { RecipeEntry, RecipeLocale } from "../src/types/content";
 
@@ -66,7 +66,7 @@ export function inspectPage(html: string, expected: ExpectedPage): SeoFinding[] 
     const post = articles.find(item => articlePath(item) === expected.route);
     check(jsonScripts.length === (post ? 1 : 0), "BLOG_JSONLD_COUNT", "Blog article must declare BlogPosting exactly once");
     if (post && jsonScripts.length === 1) {
-      try { const data = JSON.parse(jsonScripts[0].content); check(data["@type"] === "BlogPosting" && data.headline === post.title && data.datePublished === post.datePublished && data.dateModified === post.dateModified, "BLOG_JSONLD_SOURCE", "BlogPosting must match source"); }
+      try { const data = JSON.parse(jsonScripts[0].content); check(isDeepStrictEqual(data, blogJsonLd(blogPosts.find(item => item.slug === post.slug)!)), "BLOG_JSONLD_SOURCE", "BlogPosting must exactly match source"); }
       catch { check(false, "BLOG_JSONLD_PARSE", "Invalid BlogPosting JSON-LD"); }
     }
     return issues;
