@@ -81,7 +81,7 @@ Perinteistä briossia kevyempi mutta hieman makea ja voimaisesti viimeistelty s�
 
 ## Muistiinpanot
 
-- Tausta: *Beautiful Burger Buns* on Ellen Dorseyn (Moomie) resepti, joka tuli tunnetuksi King Arthur Bakingin leivontayhteisössä. Sivustolla on yli 1 600 käyttäjäarviota ja arvosana noin 4,7/5. [Alkuperäinen King Arthurin resepti](https://www.kingarthurbaking.com/recipes/beautiful-burger-buns-recipe).
+- Tausta: *Beautiful Burger Buns* on Ellen Dorseyn (Moomie) resepti, joka tuli tunnetuksi King Arthur Bakingin leivontayhteisössä. Sivustolla on yli 1 600 käyttäjäarviota ja arvosana noin 4,7/5. [Alkuperäinen King Arthurin resepti](https://www.kingarthurbaking.com/recipes/beautiful-burger-buns-recipe). [Katso King Arthur Bakingin YouTube-valmistusvideo](https://www.youtube.com/watch?v=QHvjvpVdBxw).
 - Alkuperäinen ohje tuottaa kahdeksan sämpylää; tässä sovitus yhdeksälle. Tämä on briossityylinen burgerisämpylä, ei hyvin voipitoinen klassinen briossi. Koepaistoa ei ole tehty tämän version mitoilla.
 - Ainesosapohjainen ravintoarvio sisältää koko 48 g:n voisulan sekä 9 g seesaminsiemeniä. Jos voita jää käyttämättä tai siemenet jätetään pois, arvot muuttuvat.
 - GK-lukua ei julkaista ilman paistetun taikinan lähdesoveltuvuuden arviointia. Täysjyväburgerin GI 62 ei osoita näiden vaaleiden sämpylöiden GI:tä.
