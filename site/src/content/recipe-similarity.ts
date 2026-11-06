@@ -84,6 +84,10 @@ const aliases: readonly [RegExp, string][] = [
   [/(?:kerma|kermaa|cream|grädde)/i, "kerma"],
   [/(?:riisi|riisiä|rice|ข้าว)/i, "riisi"],
   [/(?:peruna|perunaa|potato|potatis)/i, "peruna"],
+  [/(?:kurkku|kurkkua|cucumber|gurka|แตงกวา)/i, "kurkku"],
+  [/(?:inkiväär|ginger|ingefära|ขิง)/i, "inkivääri"],
+  [/(?:korianteri|korianteria|coriander|cilantro|ผักชี)/i, "korianteri"],
+  [/(?:perunoita|peruna|potato|potatis|มันฝรั่ง)/i, "peruna"],
   [/(?:tomaattikastike|tomato sauce|passata)/i, "tomaattikastike"],
   [/(?:tomaatti|tomaat|tomato|tomat|มะเขือเทศ)/i, "tomaatti"],
   [/(?:valkosipuli|garlic|vitlök|กระเทียม)/i, "valkosipuli"],
@@ -112,6 +116,31 @@ const methods: readonly [RegExp, string][] = [
   [/(?:vatka|whisk|visp)/i, "vatkaus"],
   [/(?:soseut|blend|purée|mixaa)/i, "soseutus"],
   [/(?:kohot|proof|rise|jäsa)/i, "kohotus"],
+];
+
+// Distinct final dish structures must not be mistaken for the same dish
+// solely because flour, eggs, oil and spices overlap.
+const dishForms: readonly [RegExp, string][] = [
+  [/(?:sämpyl|briossi|burger bun|buns)/i, "sämpylä"],
+  [/(?:pannukakku|pannari|serabi|baghrir|pancake)/i, "pannukakku"],
+  [/(?:keksi|cookie|biscuit)/i, "keksi"],
+  [/(?:kakku|cake|brownie)/i, "kakku"],
+  [/(?:piirakka|pie|tart)/i, "piirakka"],
+  [/(?:pizza|pitsa)/i, "pizza"],
+  [/(?:tostada)/i, "tostada"],
+  [/(?:taco)/i, "taco"],
+  [/(?:samosa)/i, "samosa"],
+  [/(?:paratha)/i, "paratha"],
+  [/(?:fritter|pakora)/i, "fritter"],
+  [/(?:munakas|omelette|omelet)/i, "munakas"],
+  [/(?:puuro|congee|jok|juk|porridge)/i, "puuro"],
+  [/(?:riisikulho|rice bowl|gyeranbap|jumeokbap)/i, "riisikulho"],
+  [/(?:keitto|soup|pho[- ]|ramen)/i, "keitto"],
+  [/(?:dumpling|jiaozi|gyoza|momo)/i, "myky"],
+  [/(?:nuudel|noodle|laksa)/i, "nuudelit"],
+  [/(?:gratiini|gratin)/i, "gratiini"],
+  [/(?:salaatti|salad)/i, "salaatti"],
+  [/(?:leipä|bread|msemen|roti)/i, "leipä"],
 ];
 
 const structuralIngredients = new Set([
@@ -159,6 +188,7 @@ interface PreparedRecipe {
   items: Map<string, IndexedIngredient>;
   significant: Set<string>;
   methodSet: Set<string>;
+  dishForm: string | null;
   revision: string;
   limited: boolean;
 }
@@ -197,11 +227,12 @@ function prepare(recipe: SimilarityRecipe): PreparedRecipe {
   const methodText = [...recipe.instructions, ...(recipe.cookingMethods ?? [])].join(" ");
   const methodSet = new Set(methods.filter(([pattern]) => pattern.test(methodText)).map(([, name]) => name));
   const significant = new Set([...items.keys()].filter((name) => !insignificantIngredients.has(name)));
+  const dishForm = dishForms.find(([pattern]) => pattern.test(recipe.title))?.[1] ?? null;
   const quantityKey = [...items].sort(([a], [b]) => a.localeCompare(b)).map(([name, item]) =>
     [name, item.unit ?? "?", item.quantity === null ? "?" : item.quantity.toFixed(5)].join(":")).join("|");
-  const revision = revisionHash(quantityKey + "#" + [...methodSet].sort().join("|") + "#" + clean(recipe.title));
+  const revision = revisionHash(quantityKey + "#" + [...methodSet].sort().join("|") + "#" + clean(recipe.title) + "#" + clean(methodText));
   const prepared: PreparedRecipe = {
-    recipe, items, significant, methodSet, revision,
+    recipe, items, significant, methodSet, dishForm, revision,
     limited: significant.size < 2 || recipe.servings <= 0 || !Number.isFinite(recipe.servings) ||
       unknown > recipe.ingredients.length * 0.5,
   };
@@ -280,7 +311,13 @@ function evaluate(a: PreparedRecipe, b: PreparedRecipe): SimilarityMatch | null 
   const titleOverlap = overlapRatio(titleA, titleB);
   const sourceMatch = Boolean(a.recipe.sourceUrl && b.recipe.sourceUrl &&
     a.recipe.sourceUrl === b.recipe.sourceUrl);
-  if (ingredientOverlap < 0.45 && !(ingredientOverlap >= 0.3 && (titleOverlap > 0.7 || sourceMatch))) return null;
+  if (a.dishForm && b.dishForm && a.dishForm !== b.dishForm) {
+    // Very similar formulas may still merit review as clearly named variants.
+    // Ordinary cake-vs-cookie or bread-vs-pancake matches are unhelpful noise.
+    if (ingredientOverlap < 0.92 || quantities === null || quantities < 0.88) return null;
+    differences.push("Ruokalajin lopputulos poikkeaa: " + a.dishForm + " / " + b.dishForm + ".");
+  }
+  if (ingredientOverlap < 0.52 && !(ingredientOverlap >= 0.4 && (titleOverlap > 0.7 || sourceMatch))) return null;
   const score = ingredientOverlap * 0.65 + (quantities ?? 0.5) * 0.25 + method * 0.1;
   const exactFormula = ingredientOverlap === 1 && quantities !== null && quantities > 0.995 &&
     method > 0.65 && differences.length === 0;
@@ -315,13 +352,16 @@ export function assessRecipeSimilarity(
   maxMatches = 8,
 ): SimilarityAssessment {
   const prepared = prepare(candidate);
-  const seen = new Set<string>();
+  const unique = new Map<string, SimilarityRecipe>();
+  for (const recipe of library) {
+    if (!unique.has(recipe.recipeId) || (recipe.locale === "fi" && unique.get(recipe.recipeId)?.locale !== "fi")) {
+      unique.set(recipe.recipeId, recipe);
+    }
+  }
   const matches: SimilarityMatch[] = [];
   let comparedRecipes = 0;
-  for (const recipe of library) {
+  for (const recipe of unique.values()) {
     if (recipe.recipeId === candidate.recipeId) continue; // translation/revision of same recipe
-    if (seen.has(recipe.recipeId)) continue;
-    seen.add(recipe.recipeId);
     comparedRecipes++;
     const match = evaluate(prepared, prepare(recipe));
     if (match) matches.push(match);
@@ -366,8 +406,14 @@ export function checkPublicRecipeSubmission(
     ...published.map((recipe) => ({ ...recipe, scope: "published" as const })),
     ...pending.map((recipe) => ({ ...recipe, scope: "pending" as const })),
   ]);
+  // Pending-only material matches must not reveal whether another user has
+  // submitted this formula. The client receives an ordinary review-required state.
+  const hasVisibleMaterial = internal.matches.some((match) =>
+    match.scope === "published" && match.kind === "MATERIAL_DUPLICATE");
+  const publicStatus: SimilarityStatus = internal.status === "MATERIAL_DUPLICATE" && !hasVisibleMaterial ?
+    "UNCERTAIN" : internal.status;
   return {
-    internal, publicStatus: internal.status,
+    internal, publicStatus,
     publicMatches: internal.matches.filter((match) => match.scope === "published").map((match) => ({
       recipeId: match.recipeId, title: match.title, reasons: match.reasons,
     })),
