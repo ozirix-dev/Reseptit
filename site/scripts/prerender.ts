@@ -59,7 +59,7 @@ function routeMetadata(route: string) {
     `<meta property="og:image" content="${escapeHtml(recipe.image.src)}" />`,
     `<meta name="twitter:image" content="${escapeHtml(recipe.image.src)}" />`,
   ] : [];
-  const jsonLd = blogPost ? `<script id="blog-jsonld" type="application/ld+json">${JSON.stringify({"@context":"https://schema.org","@type":"BlogPosting",headline:blogPost.title,description:blogPost.description,datePublished:"2026-11-06",inLanguage:"fi",author:{"@type":"Organization",name:"Reseptit-toimitus"},image:[`${baseUrl}${blogPost.image}`],mainEntityOfPage:url}).replaceAll("<","\\u003c")}</script>` : recipe
+  const jsonLd = blogPost ? `<script id="blog-jsonld" type="application/ld+json">${JSON.stringify({"@context":"https://schema.org","@type":"BlogPosting",headline:blogPost.title,description:blogPost.description,datePublished:blogPost.datePublished,dateModified:blogPost.dateModified,inLanguage:"fi",author:{"@type":"Organization",name:"Reseptit-toimitus"},image:[`${baseUrl}${blogPost.image}`],mainEntityOfPage:url}).replaceAll("<","\\u003c")}</script>` : recipe
     ? `<script id="recipe-jsonld" type="application/ld+json">${JSON.stringify(recipeJsonLd(recipe)).replaceAll("<", "\\u003c")}</script>`
     : "";
   // Match the card grid breakpoints. Do not eagerly fetch three cards on mobile.
