@@ -16,6 +16,11 @@ carbs_net_per_serving_g: null
 protein_per_serving_g: null
 fat_per_serving_g: null
 tags: ["draft"]
+image:
+  src: leivonnaiset/karjalanpiirakat-riisipuurolla.webp
+  alt: "Traditional Karelian rice pies with thin crimped rye crusts and pale rice filling"
+  width: 1600
+  height: 900
 ingredients:
   - amount: 180
     unit: g
@@ -71,3 +76,5 @@ Thin crimped rye crusts filled with milk-cooked rice porridge. Makes 24 pies; on
 Traditional-speciality name still requires verification. The rice and baked rye crust lack suitable GI evidence, so GK remains unavailable. Contains gluten and milk.
 
 **Traditional-speciality references:** [Finnish Food Authority](https://www.ruokavirasto.fi/yritykset/oppaat/nimisuojattujen-elintarvikkeiden-valvontaohje/nimisuojattujen-elintarvikkeiden-valvontaohje/) and [Martat's baking guidance](https://www.martat.fi/reseptit/karjalanpiirakat/).
+
+- This AI-generated illustration is not a photograph of a physical test cook or bake.

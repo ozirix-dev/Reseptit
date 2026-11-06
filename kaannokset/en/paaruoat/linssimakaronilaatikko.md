@@ -16,6 +16,11 @@ carbs_net_per_serving_g: null
 protein_per_serving_g: null
 fat_per_serving_g: null
 tags: ["draft"]
+image:
+  src: paaruoat/linssimakaronilaatikko.webp
+  alt: "Finnish green lentil macaroni casserole with melted Emmental topping"
+  width: 1600
+  height: 900
 ingredients:
   - amount: 220
     unit: g
@@ -72,3 +77,5 @@ A Finnish oven-baked macaroni casserole with green lentils in place of minced me
 Contains wheat gluten, milk and egg. Exact macaroni and green-lentil GI matches are missing, so GK remains HOLD.
 
 **Popularity context:** [K-Ruoka's 2025 new favourites](https://www.k-ruoka.fi/artikkelit/arki/suomen-suosituimmat-reseptit). This is Recipavo's independently developed vegetarian version.
+
+- This AI-generated illustration is not a photograph of a physical test cook or bake.

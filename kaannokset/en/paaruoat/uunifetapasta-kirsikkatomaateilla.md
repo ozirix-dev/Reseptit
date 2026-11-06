@@ -16,6 +16,11 @@ carbs_net_per_serving_g: null
 protein_per_serving_g: null
 fat_per_serving_g: null
 tags: ["draft"]
+image:
+  src: paaruoat/uunifetapasta-kirsikkatomaateilla.webp
+  alt: "Baked feta penne with cherry tomatoes and fresh basil"
+  width: 1600
+  height: 900
 ingredients:
   - amount: 240
     unit: g
@@ -65,3 +70,5 @@ Feta and cherry tomatoes roast into a sauce for penne. The original Finnish bake
 Original idea credited to Jenni Häyrinen: https://liemessa.fi/2019/02/uunifetapasta/. Contains wheat gluten and milk. Exact penne GI is not verified; GK remains HOLD.
 
 **Original idea:** [Jenni Häyrinen, Liemessä (2019)](https://liemessa.fi/2019/02/uunifetapasta/). Recipavo did not invent oven-baked feta pasta.
+
+- This AI-generated illustration is not a photograph of a physical test cook or bake.

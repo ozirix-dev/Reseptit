@@ -16,6 +16,11 @@ carbs_net_per_serving_g: null
 protein_per_serving_g: null
 fat_per_serving_g: null
 tags: ["draft"]
+image:
+  src: leivonnaiset/raejuustobagelit-ilman-kohotusta.webp
+  alt: "Six golden cottage cheese bagel-style rolls with visible centre holes"
+  width: 1600
+  height: 900
 ingredients:
   - amount: 400
     unit: g
@@ -53,3 +58,5 @@ Ring-shaped cottage cheese rolls raised with baking powder, not yeast. Unlike tr
 Contains gluten, milk and egg. Weigh the actual egg glaze and test the crumb. No matching GI for this baked food; GK is HOLD.
 
 **Inspiration:** [Kotona's popular new savoury bakes of 2025](https://www.meillakotona.fi/artikkelit/vuoden-2025-suosituimmat-suolaiset-leivonnaiset). This is an independently weighed, baking-powder-raised recipe.
+
+- This AI-generated illustration is not a photograph of a physical test cook or bake.

@@ -16,6 +16,11 @@ carbs_net_per_serving_g: null
 protein_per_serving_g: null
 fat_per_serving_g: null
 tags: ["draft"]
+image:
+  src: paaruoat/marry-me-kanapasta.webp
+  alt: "Creamy chicken spaghetti with sun-dried tomatoes and Parmesan"
+  width: 1600
+  height: 900
 ingredients:
   - amount: 600
     unit: g
@@ -74,3 +79,5 @@ Creamy chicken spaghetti with sun-dried tomatoes and Parmesan. Four servings; re
 Contains wheat gluten and milk. The EAN-matched spaghetti has conflicting online carbohydrate declarations (69 and 72 g/100 g); verify the physical package. GI 50 is a candidate only and GK is HOLD.
 
 **Popularity context:** [K-Ruoka's 2025 favourites](https://www.k-ruoka.fi/artikkelit/arki/suomen-suosituimmat-reseptit). This independently written Recipavo version is not copied from another publisher's instructions.
+
+- This AI-generated illustration is not a photograph of a physical test cook or bake.
