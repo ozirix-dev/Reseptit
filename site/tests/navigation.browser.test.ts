@@ -60,6 +60,7 @@ test("navigation keeps separate menus and restores scroll correctly across all l
   await mobile.locator(".site-primary-nav a").first().click();
   await mobile.waitForURL(base + "/");
   await mobile.waitForFunction(() => window.scrollY < 8);
+  await mobile.waitForFunction(() => !(document.querySelector(".site-primary-menu") as HTMLDetailsElement)?.open);
   assert.equal(await mobile.locator(".site-primary-menu").evaluate((node: HTMLDetailsElement) => node.open), false);
   await mobile.locator(".site-language-menu > summary").click();
   assert.ok(await mobile.locator(".site-language-nav a").first().isVisible());
