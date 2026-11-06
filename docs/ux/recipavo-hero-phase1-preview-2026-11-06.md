@@ -33,6 +33,10 @@ Vertaa sitten tavalliseen buildiin ilman ympäristömuuttujaa. **Älä käytä t
 4. Tavallisen buildin HTML ei saa sisältää Recipavo-esikatselun H1:tä eikä `robots=noindex`-lisäystä tästä muutoksesta. Preview-buildin HTML saa ne, mutta sitä ei saa indeksoida tai julkaista tuotantona.
 5. Omistaja tarkistaa FI- ja EN-/SV-/TH-tekstien merkitysvastaavuuden hyväksyntäportissa. Tarvittaessa korjataan ilman uusia ravitsemusväitteitä.
 
+## Blogin oma valikkokohta
+
+Blogia kehitetään rinnakkaisessa työssä. Julkinen **Blogi**-navigaatiolinkki lisätään vasta, kun blogin oikeat sivut ja kielireitit ovat olemassa ja niillä on hyväksytyt canonical-/hreflang-ratkaisut. Tämän Hero-esikatselun PR ei luo blogin reittejä eikä dead-end-CTA:ta. Blogin toteutus tarkistaa ristiriidat `site/src/router.tsx`-tiedostossa ja huolehtii pienillä näytöillä navigaation luettavuudesta. Blogin linkkiä ei pidä sitoa Recipavon Heron käyttöönottoon; se on oma julkaisuporttinsa.
+
 ## Vaihe 1:n lopullinen tuotantokäyttö on myöhempi päätös
 
 Yhdistäminen, Cloudflare-domainin kytkentä, uusi canonical/hreflang/sitemap/robots, absoluuttiset linkit, mahdolliset redirectit ja julkaisuvaltuutus ovat erillinen julkaisuportti PR #243:ssa suunnitellun työn jälkeen. Tämä PR ei toteuta kyseisiä infrastruktuurimuutoksia, eikä julkaise Recipavoa.
