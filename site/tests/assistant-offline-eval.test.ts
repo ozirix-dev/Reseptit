@@ -106,7 +106,7 @@ test("A4 strict schema rejects untrusted model numbers, URLs, extra fields and f
 });
 
 test("A4 candidate comparison measures a supplied prediction file, not free AI accuracy", () => {
-  const predictions = assistantEvalCases.map((item) => ({ id: item.id, output: structuredClone(item.expected) }));
+  const predictions: Array<{ id: string; output: unknown }> = assistantEvalCases.map((item) => ({ id: item.id, output: structuredClone(item.expected) }));
   const valid = evaluateAssistantCases(assistantEvalCases, catalogs, predictions);
   assert.equal(valid.mode, "candidate_file");
   assert.equal(valid.candidateEvaluated, 80);
