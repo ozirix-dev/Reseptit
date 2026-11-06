@@ -23,11 +23,11 @@ image:
   width: 1600
   height: 900
 ingredients:
-  - amount: 180
+  - amount: 210
     unit: g
     item: täysjyväruisjauhoa, kuivapaino
     note: kuoritaikina, kirjaa käytetty tuote ja ravintotietue
-  - amount: 60
+  - amount: 70
     unit: g
     item: puolikarkeaa vehnäjauhoa, kuivapaino
     note: kuoritaikina
@@ -35,7 +35,7 @@ ingredients:
     unit: g
     item: täysjyväruisjauhoa, kaulintaan varattu erä
     note: punnitse erikseen käytetty ja takaisin jäänyt massa; laskentaan vain tarttunut osa
-  - amount: 170
+  - amount: 200
     unit: g
     item: vettä
     note: kuoritaikina
@@ -73,7 +73,7 @@ Ohueksi kaulittu ruiskuori ja pehmeä riisitäyte ovat tämän karjalaisen perin
 
 1. Kuumenna täytteen 220 g vettä kattilassa ja sekoita mukaan 200 g Pirkka-puuroriisiä. Anna veden imeytyä riisiin rauhallisesti sekoittaen.
 2. Lisää 800 g tavallista täysmaitoa pienissä erissä. Hauduta hiljalleen noin 35–45 minuuttia ja sekoita pohjaa myöten, kunnes puuro on paksua mutta levittyvää. Mausta 5 g suolalla. Levitä puuro matalaan astiaan ja jäähdytä nopeasti; jatka leivontaa vasta, kun puuro on käsiteltävän lämpöistä. Jos säilytät puuroa myöhempää käyttöä varten, jäähdytä se viipymättä kylmäsäilytyslämpöön. Älä jätä keitettyä riisiä pitkäksi aikaa huoneenlämpöön.
-3. Sekoita kuoritaikinan 170 g vesi, 4 g suola, 180 g täysjyväruisjauho ja 60 g puolikarkea vehnäjauho tiiviiksi taikinaksi. Vaivaa vain sen verran, että massa on tasainen. Pidä taikina peitettynä kuivumisen estämiseksi.
+3. Sekoita kuoritaikinan 200 g vesi, 4 g suola, 210 g täysjyväruisjauho ja 70 g puolikarkea vehnäjauho tiiviiksi taikinaksi. Vaivaa vain sen verran, että massa on tasainen. Pidä taikina peitettynä kuivumisen estämiseksi.
 4. Jaa taikina täsmälleen 24 palaan. Kaulitse jokainen jauhotetulla alustalla hyvin ohueksi, noin 10–13 cm:n soikioksi. Käytä kaulinnassa vain erikseen punnittua, enintään 20 g:n ruisjauhoerää. Punnitse kaulinnan jälkeen käyttämättä jäänyt osuus; näin piirakoihin tarttunut jauho voidaan huomioida myöhemmässä ravintolaskennassa. Jos 20 g ei riitä, kirjaa lisätarve ja koeleivonta HOLDiin.
 5. Punnitse valmis puuro ja jaa koko määrä 24 tasasuureen osaan. Levitä annos jokaisen kuoren keskelle, jätä reunoille tilaa ja rypytä kuori täytteen päälle. Piirakan keskiosa jää avoimeksi.
 6. Paista 275 °C:ssa hyvin kuumassa uunissa noin 15–20 minuuttia, kunnes reunat ovat napakat ja paikoin ruskeat. Valvo paistoa uunin mukaan; tarkista, että uunin todellinen lämpötila on korkea.
@@ -89,7 +89,7 @@ Yksi annos on **yksi piirakka** ilman munavoita. Erä tuottaa 24 samankokoista p
 - EU:n Aito perinteinen tuote (APT) -suojan valmistus- ja ainesosavaatimukset: https://www.ruokavirasto.fi/yritykset/oppaat/nimisuojattujen-elintarvikkeiden-valvontaohje/nimisuojattujen-elintarvikkeiden-valvontaohje/
 - Perinteisen tekniikan ja täytteen vertailulähde: https://www.martat.fi/reseptit/karjalanpiirakat/
 - Historian tausta: https://hotellijaravintolamuseo.fi/karjalanpiirakoiden-historia/
-- Rukiin osuus varsinaisen kuoritaikinan jauhoista on 180/240 g eli 75 %; kaulintajauho on erillinen punnittu erä. Resepti ei sisällä mantelia, psylliumia, korvausriisiä eikä laktoositonta maitojuomaa. Jos raaka-aine- tai menetelmätarkastus epäonnistuu, käytetään nimeä **riisipiirakka**, ei karjalanpiirakka.
+- Rukiin osuus varsinaisen kuoritaikinan jauhoista on 210/280 g eli 75 %; kaulintajauho on erillinen punnittu erä. Resepti ei sisällä mantelia, psylliumia, korvausriisiä eikä laktoositonta maitojuomaa. Kuoritaikinan 280 g jauhoja ja 200 g vettä seuraavat EU:n vuoden 2019 eritelmän likimääräistä mittasuhdetta; toimivuus vaatii vielä koeleivonnan. Jos raaka-aine- tai menetelmätarkastus epäonnistuu, käytetään nimeä **riisipiirakka**, ei karjalanpiirakka.
 - Omat määrät ja valmistusteksti on laadittu toimituksellisesti. Lähteiden kuvia ja tekstejä ei kopioida.
 
 ## GK ja julkaisun esteet

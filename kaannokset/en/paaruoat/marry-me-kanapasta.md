@@ -81,3 +81,5 @@ Contains wheat gluten and milk. The EAN-matched spaghetti has conflicting online
 **Popularity context:** [K-Ruoka's 2025 favourites](https://www.k-ruoka.fi/artikkelit/arki/suomen-suosituimmat-reseptit). This independently written Recipavo version is not copied from another publisher's instructions.
 
 - This AI-generated illustration is not a photograph of a physical test cook or bake.
+
+- **Allergen and pack check:** Royal sun-dried tomatoes contain **sulphites** (potassium metabisulphite, E224). The dish also contains wheat (gluten) and milk. De Cecco spaghetti may contain traces of soy and mustard. Verify the physical packaging and the potentially inconsistent tomato GTIN.

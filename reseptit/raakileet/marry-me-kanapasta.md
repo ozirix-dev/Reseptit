@@ -83,10 +83,12 @@ Marry me -kanapasta oli K-Ruoan vuoden 2025 suosituin uusi resepti: https://www.
 ## GK ja julkaisu
 
 - **GK: HOLD.** Dokumentoi valitun De Cecco Spaghetti n°12 -pakkauksen EAN, ravintoarvot ja 10 minuutin al dente -kypsennys sekä kuiva ja kypsä massa. Scazzinan mittaama GI 50 on ehdokas; tarkista tuotteen aikakausi- ja valmistusvastaavuus ennen hyväksyntää. GI-vastaavuus on osoitettava tarkalla lähteellä.
-- Aurinkokuivattujen tomaattien valutus on vakioitava, jotta öljy, lisätty sokeri ja hiilihydraatit tulevat oikeasta tuotteesta.
+- Aurinkokuivattujen tomaattien valutus on vakioitava, jotta öljy, sokerit ja hiilihydraatit tulevat oikeasta tuotteesta.
 - Käytä Finelin tai pakkauksen yksilöityjä hiilihydraattitietueita myös sipulille, valkosipulille ja kermalle. Yli sallitun HIILARI/GI-puutteen kohdalla GK pysyy estettynä.
 - Ei VHH- tai keto-väitettä. Ennen julkaisua tarvitaan koekeitto, ravintoarvot, reseptikohtainen GK-lähdemuistio, oma kuva ja käännökset.
 
 ## Muistiinpanot
 
 - Kuva on tekoälyllä tuotettu havainnekuva ruoasta, ei kuva tässä projektissa valmistetusta koeruoasta.
+
+- **Allergeenit ja pakkausvarmennus:** Royal-aurinkokuivatuissa tomaateissa on säilöntäaineena **kaliumdisulfiittia (E224, sulfiitit)**. Resepti sisältää lisäksi vehnää (gluteeni) ja maitoa. De Cecco -spagetti saattaa sisältää jäämiä soijasta ja sinapista. Tarkista aina käytetty pakkaus. Tuotteen maahantuojan GTIN ja vähittäiskaupan EAN on tarkistettava ennen lopullista ravintoarvosidontaa.

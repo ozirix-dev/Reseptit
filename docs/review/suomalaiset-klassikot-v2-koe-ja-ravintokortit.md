@@ -19,7 +19,7 @@ Huomaa, että `NUTRITION_CANDIDATE` tarkoittaa vain lähdekandidaattia. GI-näyt
 Kirjaa jokaisen koeversion valmistuspäivä, tekijä, laite/uunin todellinen lämpötila, erän hävikki, ainesosapakettien tiedot ja valokuva. Punnitse syötävät raaka-aineet grammoina, sekä valmis erä **kokonaisuutena ja yksittäisenä annoksena**. Tee tarvittaessa toisen kerran toistettavuustesti; kirjaa havaittu vaihtelu, älä vain onnistunutta versiota.
 
 ### Karjalanpiirakat (24 kpl, yksi piirakka/annos)
-- Ruisjauho 180 g + punnittu kaulintajauho (varaus enintään 20 g) ja vehnäjauho 60 g. Varmista jauholajien tarkka nimi ja pakkaus; `fineli-100-release-20` ja `fineli-110-release-20` ovat ravintokandidaatteja.
+- Ruisjauho 210 g + punnittu kaulintajauho (varaus enintään 20 g) ja vehnäjauho 70 g; kuoritaikinaan 200 g vettä. Varmista jauholajien tarkka nimi ja pakkaus; `fineli-100-release-20` ja `fineli-110-release-20` ovat ravintokandidaatteja.
 - Puuroutuva riisi kuivana 200 g: `fineli-156-release-20`. Täysmaito 800 g: `fineli-689-2026-10-24`. Riisin lajike ja puuroksi keittämisen GI-osuma on yhä avoin.
 - Kirjaa kaulintajauhon varauksesta palautuva osuus sekä 30 g voiteluvoin todellinen imeytymä. Jos mittausta ei tehdä, koko reseptin ravintomallia ei hyväksytä.
 - Tarkista paisto 275 °C, noin 15–20 min, rypytys, ohut kuori ja tuotteiden yhdenmukaisuus Ruokaviraston APT-kuvauksen kanssa.
@@ -31,6 +31,7 @@ Kirjaa jokaisen koeversion valmistuspäivä, tekijä, laite/uunin todellinen lä
 - Kuiva durumspagetti 240 g: Fineli `117` on ravintoarvojen alustava *yleinen pasta*, ei riittävän yksilöity GI-täsmäosuma. Punnitse kuivapaino, kypsennysaika, valutettu kypsä paino sekä mahdollinen keittovedessä menetetty tärkkelys.
 - Öljyssä säilötty aurinkokuivattu tomaatti 80 g **valutettuna**: tuotteen pakkaus, ainesosat, lisätty sokeri, ravintoarvojen ilmoitusperuste ja valutus on varmennettava. Älä korvaa tavallisella tomaatilla laskennassa.
 - Kypsennä kana turvallisesti; arvioi kastikkeen koostumus ja lopullinen annoskoko.
+- **Turvallisuustarkistus:** Royal-tomaattituote sisältää E224-sulfiitteja; ilmoita allergia neljällä kielellä. De Cecco -pastassa voi olla soija- ja sinappijäämiä. Maahantuojan Royal-GTIN eroaa vähittäiskaupan EANista ja pitää varmistaa.
 - **Ensimmäinen jatkoon lähdeselvityksessä:** julkaistu mittausnäyttö spagetille on olemassa, mutta se ei oikeuta nimeämättömän pastan GI:n automaattista hyväksyntää.
 
 ### Uunifetapasta (4 annosta)

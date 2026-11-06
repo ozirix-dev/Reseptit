@@ -22,16 +22,16 @@ image:
   width: 1600
   height: 900
 ingredients:
-  - amount: 180
+  - amount: 210
     unit: g
     item: "wholegrain rye flour"
-  - amount: 60
+  - amount: 70
     unit: g
     item: "semi-coarse wheat flour"
   - amount: 20
     unit: g
     item: "rye flour reserved for dusting"
-  - amount: 170
+  - amount: 200
     unit: g
     item: "water for dough"
   - amount: 4
@@ -64,7 +64,7 @@ Thin crimped rye crusts filled with milk-cooked rice porridge. Makes 24 pies; on
 
 1. Simmer 200 g pudding rice with 220 g water until absorbed.
 2. Gradually add 800 g whole milk; stir over low heat for 35–45 minutes until thick but spreadable. Add 5 g salt. Cool quickly in a shallow dish; never leave cooked rice standing at room temperature.
-3. Mix 170 g water, 4 g salt, 180 g wholegrain rye flour and 60 g semi-coarse wheat flour into a firm dough. Keep covered.
+3. Mix 200 g water, 4 g salt, 210 g wholegrain rye flour and 70 g semi-coarse wheat flour into a firm dough. Keep covered.
 4. Divide the dough into 24 equal pieces and roll thin ovals about 10–13 cm long. Use no more than 20 g separately weighed dusting flour; weigh the remainder.
 5. Divide the weighed rice filling equally across the 24 crusts. Fold and crimp the edges, keeping the centres open.
 6. Bake at 275 °C for 15–20 minutes, watching carefully until the crusts firm and brown.

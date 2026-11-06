@@ -81,3 +81,5 @@ Innehåller vetegluten och mjölk. Spagettins nätuppgifter om kolhydrater skilj
 **Popularitetskälla:** [K-Ruokas favoriter 2025](https://www.k-ruoka.fi/artikkelit/arki/suomen-suosituimmat-reseptit). Recipavos variant är självständigt skriven och inte kopierad från ett annat recept.
 
 - Bilden är AI-genererad och inte ett fotografi från en verklig provlagning eller provbakning.
+
+- **Allergener och produktkontroll:** Royal soltorkade tomater innehåller **sulfiter** (kaliumdisulfit, E224). Rätten innehåller även vete (gluten) och mjölk. De Cecco-spagetti kan innehålla spår av soja och senap. Kontrollera förpackningarna och tomatproduktens avvikande GTIN.
