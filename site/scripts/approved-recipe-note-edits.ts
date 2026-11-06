@@ -25,6 +25,17 @@ const editorialSnapshots: Readonly<Record<string, {
   currentSha256: string;
   inverseEdits: ReadonlyArray<readonly [start: number, count: number, historical: string]>;
 }>> = {
+  // An oven-farinata editorial correction must keep the separately approved
+  // pan-farinata GK100 variant bound to its exact historical recipe bytes.
+  // New source: sha256 1f065d830bd5f4018b69d2298cb4ef9a5286903866d85538aa5d4f3d66a5e90d; sealed original: 1b15fd29f9d833b84289c2d1345e27a0110c4bda7044ed6939d581ede947d237.
+  // Never accept arbitrary edits or recalculate this GK from the current recipe.
+  "reseptit/aamupalat/valimerellinen-farinata-aamupalaksi.md": {
+    currentSha256: "1f065d830bd5f4018b69d2298cb4ef9a5286903866d85538aa5d4f3d66a5e90d",
+    inverseEdits: [
+      [66, 5, "1. Sekoita jauhot tai viljat ja muut kuivat ainekset kulhossa. Lisää neste vähitellen ja vatkaa tasaiseksi taikinaksi.\n2. Anna taikinan levätä 10 minuuttia. Jos käytät kokonaisia palkokasveja tai viljoja taikinapohjana, niiden tulee olla liotettuja ja hienonnettuja.\n3. Kuumenna öljytty pannu keskilämmölle. Paista taikina ohuina annoksina; käännä, kun reunat kuivuvat ja pinta alkaa asettua.\n4. Vatkaa kikhernejauho ja vesi tasaiseksi taikinaksi ja anna levätä 20 minuuttia. Lisää hienonnettu rosmariini ja kaada öljyttyyn vuokaan. Lisää viipaloidut oliivit ja tomaatti. Paista 220-asteisessa uunissa, kunnes pinta on kullanruskea ja keskusta hyytynyt.\n"],
+      [36, 1, "time_total_min: 25\n"],
+    ],
+  },
   "reseptit/aamupalat/indialainen-poha-maapahkinoilla.md": {
     currentSha256: "5fc1ccc4d6c48268325313fa6e5075d9a9bcf5d8f97943758aba6da8ab906dbd",
     inverseEdits: [[7, 2, ""]],
