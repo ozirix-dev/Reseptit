@@ -104,7 +104,7 @@ export function SeoMeta() {
       upsertMeta("name", "twitter:image", image);
       const script = document.createElement("script");
       script.id = "blog-jsonld"; script.type = "application/ld+json";
-      script.textContent = JSON.stringify({ "@context": "https://schema.org", "@type": "BlogPosting", headline: blogPost.title, description: blogPost.description, datePublished: "2026-11-06", inLanguage: "fi", author: { "@type": "Organization", name: "Reseptit-toimitus" }, image: [image], mainEntityOfPage: canonical });
+      script.textContent = JSON.stringify({ "@context": "https://schema.org", "@type": "BlogPosting", headline: blogPost.title, description: blogPost.description, datePublished: blogPost.datePublished, dateModified: blogPost.dateModified, inLanguage: "fi", author: { "@type": "Organization", name: "Reseptit-toimitus" }, image: [image], mainEntityOfPage: canonical });
       document.head.append(script);
     }
     if (recipe) {
