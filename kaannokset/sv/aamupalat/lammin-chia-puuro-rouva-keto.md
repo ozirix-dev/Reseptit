@@ -40,7 +40,7 @@ Varm, skedbar chiagröt med fyllig chokladsmak. Smör och grädde gör den kräm
 ## Tillagning
 
 1. Värm vattnet till svag sjudning i en liten kastrull.
-2. Strö gradvis ner chiafröna under ständig omrörning så att de inte klumpar ihop sig. Låt svälla i fem minuter.
+2. Strö gradvis ner chiafröna under ständig omrörning så att de inte klumpar ihop sig. Låt svälla i 5 minuter.
 3. Tillsätt grädde och smör. Rör på låg värme ytterligare 2–4 minuter; tillsätt lite vatten bara om gröten blir för tjock.
 4. Lyft kastrullen från värmen. Tillsätt finhackad mörk choklad och salt. Rör tills chokladen smälter ner i gröten.
 5. Servera varm som en mättande frukostportion.
