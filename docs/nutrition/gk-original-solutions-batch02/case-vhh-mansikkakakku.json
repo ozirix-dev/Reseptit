@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 1,
+  "recipeId": "vhh-mansikkakakku",
+  "recipePath": "reseptit/jalkiruoat/vhh-mansikkakakku.md",
+  "recipeSha256Lf": "275587e8131c07fc05497f869d54861f3d4c446139d8693fa5c46ad043927e75",
+  "inputSha256": "f73281c4a1e900df2f0f68e8908e935beb05e7dc78ee9faf84f9f6bfea188194",
+  "sourceRecords": [
+    {
+      "path": "docs/nutrition/food-records.json",
+      "kind": "FOOD",
+      "id": "fineli-858-2026-10-24",
+      "sha256": "de32e458bb97b463d1a1f9246160c2112b7f85259b82a9e7347b89c031ef283c"
+    },
+    {
+      "path": "docs/nutrition/food-records.json",
+      "kind": "FOOD",
+      "id": "foodin-erythritol-200g-label-2026-10-24",
+      "sha256": "7316387b3494d6bffe17dbcfaf1b8a9ec8c4e385fc275dc519a47563b0aea958"
+    },
+    {
+      "path": "docs/nutrition/food-records.json",
+      "kind": "FOOD",
+      "id": "afcd-F006077-2026-10-24",
+      "sha256": "5c6f5c15cd9ef5e22513695dee466816a9b825a72d12ffe23d920fea765c5a67"
+    },
+    {
+      "path": "docs/nutrition/food-records.json",
+      "kind": "FOOD",
+      "id": "afcd-F000247-2026-10-24",
+      "sha256": "ea2d4b3d50fbcdbf60dd7d3db2e5cf92d77695b480aca65b53d824a069567a92"
+    },
+    {
+      "path": "docs/nutrition/food-records.json",
+      "kind": "FOOD",
+      "id": "fineli-631-2026-10-24",
+      "sha256": "c16952693fd4ea4cbfa9fa2fd231e796e3c91682dd38ac989470d4f5f9611e41"
+    },
+    {
+      "path": "docs/nutrition/food-records.json",
+      "kind": "FOOD",
+      "id": "fineli-622-2026-10-24",
+      "sha256": "a4f868693464ae374931c70c5471dc24c0085b37baa2848cc84b754277a63698"
+    },
+    {
+      "path": "docs/nutrition/food-records.json",
+      "kind": "FOOD",
+      "id": "afcd-F008952-2026-10-24",
+      "sha256": "4077b4026244dbb3b9ed6b0ce111e508756d44756fc988abd95ca3d8a1ddd538"
+    },
+    {
+      "path": "docs/nutrition/food-records.json",
+      "kind": "FOOD",
+      "id": "afcd-F009350-2026-10-24",
+      "sha256": "c73b80b3a46e6ff7a74bdae43cfaa854bf17da15809a281484f6cf33048f210c"
+    },
+    {
+      "path": "docs/nutrition/glycemic-index-records.json",
+      "kind": "GI",
+      "id": "dairy-category-mean-gi-35",
+      "sha256": "44934cf1dea37db76f63ff43d0ee1ff39b46d5ddc28caaf558740cc6db005ef7"
+    },
+    {
+      "path": "docs/nutrition/glycemic-index-records.json",
+      "kind": "GI",
+      "id": "fruit-category-mean-gi-51",
+      "sha256": "9cef5a252166bc9edc3884c5dc05403bcf6a544f3d1d3311e26dd9d53dc632e0"
+    },
+    {
+      "path": "docs/nutrition/fineli-release-20-reference.json",
+      "kind": "NATIVE",
+      "id": "74",
+      "purpose": "PORTION_OR_NATIVE_COMPOSITION",
+      "sha256": "e80925449195a90730ff639146b9e1371165552b2065c079ee334c60cd8b2905"
+    },
+    {
+      "path": "docs/nutrition/fineli-release-20-reference.json",
+      "kind": "NATIVE",
+      "id": "858",
+      "purpose": "PORTION_OR_NATIVE_COMPOSITION",
+      "sha256": "d1dde56a2329f736963017aa7f4a9c9f230aa21dd4827fdde027ee43c6ae3af6"
+    },
+    {
+      "path": "docs/nutrition/fineli-release-20-reference.json",
+      "kind": "NATIVE",
+      "id": "631",
+      "purpose": "PORTION_OR_NATIVE_COMPOSITION",
+      "sha256": "dbb3e9d8ebfdd47d7b1170d77d96b3e791169738dc66ed845288d1516790aa68"
+    },
+    {
+      "path": "docs/nutrition/gk-original-solutions-batch02/sources.json",
+      "kind": "NATIVE",
+      "id": "cnf216",
+      "purpose": "PORTION",
+      "sha256": "6c52dd48af624fed1ceedb2dfe7d13d983f8bee1303f392377e203f954a576e6"
+    }
+  ],
+  "methodFiles": {
+    "site/scripts/glycemic-load-model.ts": "10ce09e465886e4538fc0b2ad2a54ca0b050a9e3729b7417eb0a91f2b946b48c",
+    "site/scripts/nutrition-model.ts": "05a3edc945b444edd4c99aff90be6a17129559ee7779f8f5e372bf46877195d3"
+  },
+  "previousGiDecisionsSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "patches": [
+    {
+      "index": 3,
+      "name": "leivinjauhetta",
+      "kind": "REFERENCE_PORTION",
+      "changes": {
+        "grams": 5,
+        "massEvidence": "Fineli Rel20 #74 TL=5g; retain original teaspoon count. Generic baking-powder reference mass, no new product or composition replacement."
+      }
+    },
+    {
+      "index": 7,
+      "name": "vaniljauutetta",
+      "kind": "REFERENCE_PORTION",
+      "changes": {
+        "grams": 4.3,
+        "massEvidence": "Health Canada CNF216 generic vanilla extract5ml=4.3g. Original1 metric teaspoon retained. Generic food-specific reference estimate, not actual product weighing; applicability and product type remain under review."
+      }
+    }
+  ],
+  "expectedResultSha256": "d05e57743be6b756c6834c0c717044ec13e4e62ce4a576816fa80a7696d3cf78",
+  "numericOriginalCandidate": true,
+  "originalCorrespondence": "ORIGINAL_QUANTITIES_AND_PREPARATION_RETAINED_REFERENCE_MASS_CLARIFICATIONS_ONLY",
+  "scientificStatus": "REVIEW_PENDING_CURRENT_CATEGORY_MEAN_APPLICATIONS",
+  "caution": "Conditional existing-policy model estimate, not a measured cake response. Generic extract reference and heterogeneous dairy/fruit mean applicability require review.",
+  "scientificApproval": false,
+  "ownerApproval": false,
+  "publicationAuthorized": false,
+  "boundTextFiles": {
+    "kaannokset/en/jalkiruoat/vhh-mansikkakakku.md": "8c85f9d4a3fda164d9300414b027aa915bf67c9f0e40b2e9dc8feb93a63114ca",
+    "kaannokset/sv/jalkiruoat/vhh-mansikkakakku.md": "e5abcb0cfbaa5ec55e8e6b9f621af97d5bf02c7f321aa9b02abd352e66a04dda",
+    "kaannokset/th/jalkiruoat/vhh-mansikkakakku.md": "7d2934936213abc7823d2f8f58657bc9b5931f2a789b866a5f32f186d6215bca"
+  }
+}

@@ -1,0 +1,1424 @@
+{
+  "requestSha256": "53cc53871378be49ec129c751579a3167d5cef9b96f8b160b112a896f29f3dc5",
+  "indexSnapshotSha256": "d09ce0879c36fc483d09ec32013114cdcfb8b6004f5d33d21e2f883351a99691",
+  "sourceSha256": "a5ffa3a6e4b4d48a20fee2f31fa50c3aa0ff6355f63dc58bf7b699ade4205c87",
+  "compositionSha256": "4869a7ec93b2ccfafccb5e8c6c01a81e9fe665093d5550b9f0f2df71a8f3095f",
+  "evidenceSchema": "2",
+  "textEngine": "FTS5",
+  "autoApproved": false,
+  "requests": [
+    {
+      "id": "keto-mutakakku:0",
+      "gaps": [
+        "NO_GI_LEAD",
+        "NO_COMPOSITION_LEAD"
+      ],
+      "review": "UNSUPPORTED",
+      "gi": [],
+      "composition": []
+    },
+    {
+      "id": "keto-suklaakeksit:0",
+      "gaps": [
+        "NO_GI_LEAD",
+        "NO_COMPOSITION_LEAD"
+      ],
+      "review": "UNSUPPORTED",
+      "gi": [],
+      "composition": []
+    },
+    {
+      "id": "bulgogi:0",
+      "gaps": [
+        "NO_GI_LEAD"
+      ],
+      "review": "UNSUPPORTED",
+      "gi": [],
+      "composition": [
+        {
+          "id": "afcd-F006250-2026-10-24",
+          "retrieval": "BOUND_RECORD"
+        }
+      ]
+    },
+    {
+      "id": "vhh-mansikkakakku:0",
+      "gaps": [
+        "NO_GI_LEAD"
+      ],
+      "review": "UNSUPPORTED",
+      "gi": [],
+      "composition": [
+        {
+          "id": "afcd-F009350-2026-10-24",
+          "retrieval": "BOUND_RECORD"
+        }
+      ]
+    },
+    {
+      "id": "valimerellinen-farinata-aamupalaksi:0",
+      "gaps": [
+        "NO_GI_LEAD"
+      ],
+      "review": "UNSUPPORTED",
+      "gi": [],
+      "composition": [
+        {
+          "id": "fineli-352-release-20",
+          "retrieval": "BOUND_RECORD"
+        },
+        {
+          "id": "fineli-352-2026-10-25",
+          "retrieval": "TEXT_MATCH"
+        },
+        {
+          "id": "fineli-352-2026-10-24",
+          "retrieval": "TEXT_MATCH"
+        }
+      ]
+    },
+    {
+      "id": "intialainen-pinaatti-paneer-chilla:0",
+      "gaps": [],
+      "review": "REVIEW_REQUIRED",
+      "gi": [
+        {
+          "retrieval": "BOUND_RECORD",
+          "warnings": [
+            "POSSIBLE_ANALOGUE"
+          ]
+        }
+      ],
+      "composition": [
+        {
+          "id": "afcd-F008749-release-3",
+          "retrieval": "BOUND_RECORD"
+        },
+        {
+          "id": "fineli-33456-2026-10-25",
+          "retrieval": "TEXT_MATCH"
+        },
+        {
+          "id": "fineli-33456-2026-10-24",
+          "retrieval": "TEXT_MATCH"
+        }
+      ]
+    },
+    {
+      "id": "tangyuan:0",
+      "gaps": [
+        "NO_GI_LEAD",
+        "NO_COMPOSITION_LEAD"
+      ],
+      "review": "UNSUPPORTED",
+      "gi": [],
+      "composition": []
+    },
+    {
+      "id": "mala-xiang-guo:0",
+      "gaps": [
+        "NO_GI_LEAD",
+        "NO_COMPOSITION_LEAD"
+      ],
+      "review": "UNSUPPORTED",
+      "gi": [],
+      "composition": []
+    },
+    {
+      "id": "pellava-puuro-pahkinoilla:0",
+      "gaps": [
+        "NO_GI_LEAD",
+        "NO_COMPOSITION_LEAD"
+      ],
+      "review": "UNSUPPORTED",
+      "gi": [],
+      "composition": []
+    },
+    {
+      "id": "lahi-ita-labneh-kulho-zaatarilla:0",
+      "gaps": [
+        "NO_GI_LEAD",
+        "NO_COMPOSITION_LEAD"
+      ],
+      "review": "UNSUPPORTED",
+      "gi": [],
+      "composition": []
+    },
+    {
+      "id": "meksikolainen-chilaquiles-verdes:0",
+      "gaps": [
+        "NO_GI_LEAD",
+        "NO_COMPOSITION_LEAD"
+      ],
+      "review": "UNSUPPORTED",
+      "gi": [],
+      "composition": []
+    },
+    {
+      "id": "meksikolainen-huevos-divorciados:0",
+      "gaps": [
+        "NO_GI_LEAD",
+        "NO_COMPOSITION_LEAD"
+      ],
+      "review": "UNSUPPORTED",
+      "gi": [],
+      "composition": []
+    },
+    {
+      "id": "valimerellinen-halloumi-tomaattileipa:0",
+      "gaps": [
+        "NO_GI_LEAD",
+        "NO_COMPOSITION_LEAD"
+      ],
+      "review": "UNSUPPORTED",
+      "gi": [],
+      "composition": []
+    },
+    {
+      "id": "bibimbap:0",
+      "gaps": [
+        "NO_GI_LEAD",
+        "NO_COMPOSITION_LEAD"
+      ],
+      "review": "UNSUPPORTED",
+      "gi": [],
+      "composition": []
+    },
+    {
+      "id": "mapo-tofu:0",
+      "gaps": [],
+      "review": "REVIEW_REQUIRED",
+      "gi": [
+        {
+          "retrieval": "BOUND_RECORD",
+          "warnings": [
+            "POSSIBLE_ANALOGUE"
+          ]
+        }
+      ],
+      "composition": [
+        {
+          "id": "fineli-11521-release-20",
+          "retrieval": "BOUND_RECORD"
+        }
+      ]
+    },
+    {
+      "id": "keto-kauralesesampylat:0",
+      "gaps": [
+        "NO_GI_LEAD"
+      ],
+      "review": "UNSUPPORTED",
+      "gi": [],
+      "composition": [
+        {
+          "id": "fineli-170-2026-10-25",
+          "retrieval": "BOUND_RECORD"
+        }
+      ]
+    },
+    {
+      "id": "rahkapiirakka-vhh:0",
+      "gaps": [
+        "NO_GI_LEAD"
+      ],
+      "review": "UNSUPPORTED",
+      "gi": [],
+      "composition": [
+        {
+          "id": "afcd-F006077-2026-10-24",
+          "retrieval": "BOUND_RECORD"
+        }
+      ]
+    },
+    {
+      "id": "vhh-lihapiirakka:0",
+      "gaps": [
+        "NO_GI_LEAD"
+      ],
+      "review": "UNSUPPORTED",
+      "gi": [],
+      "composition": [
+        {
+          "id": "afcd-F006077-2026-10-24",
+          "retrieval": "BOUND_RECORD"
+        }
+      ]
+    },
+    {
+      "id": "keto-korvapuustit:0",
+      "gaps": [
+        "NO_GI_LEAD"
+      ],
+      "review": "UNSUPPORTED",
+      "gi": [],
+      "composition": [
+        {
+          "id": "afcd-F006077-2026-10-24",
+          "retrieval": "BOUND_RECORD"
+        }
+      ]
+    },
+    {
+      "id": "vada-pav:0",
+      "gaps": [],
+      "review": "REVIEW_REQUIRED",
+      "gi": [
+        {
+          "retrieval": "BOUND_RECORD",
+          "warnings": [
+            "POSSIBLE_ANALOGUE"
+          ]
+        }
+      ],
+      "composition": [
+        {
+          "id": "afcd-f003986-2026-10-24",
+          "retrieval": "BOUND_RECORD"
+        }
+      ]
+    },
+    {
+      "id": "korealainen-bindaetteok-aamiaiseksi:0",
+      "gaps": [
+        "NO_GI_LEAD",
+        "NO_COMPOSITION_LEAD"
+      ],
+      "review": "UNSUPPORTED",
+      "gi": [],
+      "composition": []
+    },
+    {
+      "id": "aloo-paratha:0",
+      "gaps": [
+        "NO_GI_LEAD"
+      ],
+      "review": "UNSUPPORTED",
+      "gi": [],
+      "composition": [
+        {
+          "id": "fineli-110-2026-10-24",
+          "retrieval": "BOUND_RECORD"
+        }
+      ]
+    },
+    {
+      "id": "kiinalainen-teehaudutetut-munat:0",
+      "gaps": [
+        "NO_GI_LEAD"
+      ],
+      "review": "UNSUPPORTED",
+      "gi": [],
+      "composition": [
+        {
+          "id": "fineli-858-release-20",
+          "retrieval": "BOUND_RECORD"
+        },
+        {
+          "id": "fineli-858-2026-10-25",
+          "retrieval": "TEXT_MATCH"
+        },
+        {
+          "id": "fineli-8513-2026-10-24",
+          "retrieval": "TEXT_MATCH"
+        }
+      ]
+    },
+    {
+      "id": "pad-kee-mao-vhh-konjac:0",
+      "gaps": [
+        "NO_GI_LEAD"
+      ],
+      "review": "UNSUPPORTED",
+      "gi": [],
+      "composition": [
+        {
+          "id": "fineli-386-2026-10-25",
+          "retrieval": "BOUND_RECORD"
+        }
+      ]
+    },
+    {
+      "id": "vhh-mustikkapiirakka:0",
+      "gaps": [],
+      "review": "REVIEW_REQUIRED",
+      "gi": [
+        {
+          "retrieval": "BOUND_RECORD",
+          "warnings": [
+            "POSSIBLE_ANALOGUE"
+          ]
+        }
+      ],
+      "composition": [
+        {
+          "id": "fineli-442-2026-10-25",
+          "retrieval": "BOUND_RECORD"
+        }
+      ]
+    },
+    {
+      "id": "karibia-plantain-aamiaislautanen:0",
+      "gaps": [
+        "NO_GI_LEAD",
+        "NO_COMPOSITION_LEAD"
+      ],
+      "review": "UNSUPPORTED",
+      "gi": [],
+      "composition": []
+    },
+    {
+      "id": "karibia-plantain-aamiaislautanen:1",
+      "gaps": [],
+      "review": "REVIEW_REQUIRED",
+      "gi": [
+        {
+          "retrieval": "BOUND_RECORD",
+          "warnings": [
+            "POSSIBLE_ANALOGUE"
+          ]
+        }
+      ],
+      "composition": [
+        {
+          "id": "afcd-F005199-release-3",
+          "retrieval": "BOUND_RECORD"
+        },
+        {
+          "id": "afcd-F004729-release-3",
+          "retrieval": "TEXT_MATCH"
+        },
+        {
+          "id": "afcd-F005198-release-3",
+          "retrieval": "TEXT_MATCH"
+        }
+      ]
+    },
+    {
+      "id": "kana-parmesaanipannu-parsakaali:0",
+      "gaps": [
+        "NO_GI_LEAD"
+      ],
+      "review": "UNSUPPORTED",
+      "gi": [],
+      "composition": [
+        {
+          "id": "afcd-F004193-2026-10-24",
+          "retrieval": "BOUND_RECORD"
+        }
+      ]
+    },
+    {
+      "id": "kana-parmesaanipannu-parsakaali:1",
+      "gaps": [
+        "NO_GI_LEAD",
+        "NO_COMPOSITION_LEAD"
+      ],
+      "review": "UNSUPPORTED",
+      "gi": [],
+      "composition": []
+    },
+    {
+      "id": "kermainen-kanasienipannu:0",
+      "gaps": [
+        "NO_GI_LEAD"
+      ],
+      "review": "UNSUPPORTED",
+      "gi": [],
+      "composition": [
+        {
+          "id": "fineli-335-2026-10-24",
+          "retrieval": "BOUND_RECORD"
+        }
+      ]
+    },
+    {
+      "id": "kermainen-kanasienipannu:1",
+      "gaps": [
+        "NO_GI_LEAD",
+        "NO_COMPOSITION_LEAD"
+      ],
+      "review": "UNSUPPORTED",
+      "gi": [],
+      "composition": []
+    },
+    {
+      "id": "valimerellinen-appelsiini-aamiaiskakku:0",
+      "gaps": [
+        "NO_GI_LEAD"
+      ],
+      "review": "UNSUPPORTED",
+      "gi": [],
+      "composition": [
+        {
+          "id": "fineli-110-release-20",
+          "retrieval": "BOUND_RECORD"
+        },
+        {
+          "id": "fineli-110-2026-10-25",
+          "retrieval": "TEXT_MATCH"
+        },
+        {
+          "id": "fineli-31842-release-20",
+          "retrieval": "TEXT_MATCH"
+        }
+      ]
+    },
+    {
+      "id": "munakoiso-kesakurpitsalasagne:0",
+      "gaps": [
+        "NO_GI_LEAD",
+        "COMPOSITION_BINDING_REQUIRED"
+      ],
+      "review": "UNSUPPORTED",
+      "gi": [],
+      "composition": [
+        {
+          "id": "fineli-362-2026-10-25",
+          "retrieval": "TEXT_MATCH"
+        },
+        {
+          "id": "fineli-362-2026-10-24",
+          "retrieval": "TEXT_MATCH"
+        },
+        {
+          "id": "ehold-fineli-362",
+          "retrieval": "TEXT_MATCH"
+        }
+      ]
+    },
+    {
+      "id": "munakoiso-kesakurpitsalasagne:1",
+      "gaps": [
+        "NO_GI_LEAD",
+        "COMPOSITION_BINDING_REQUIRED"
+      ],
+      "review": "UNSUPPORTED",
+      "gi": [],
+      "composition": [
+        {
+          "id": "fineli-389-release-20",
+          "retrieval": "TEXT_MATCH"
+        },
+        {
+          "id": "op142-fineli-389",
+          "retrieval": "TEXT_MATCH"
+        },
+        {
+          "id": "cc-hold-fineli-389",
+          "retrieval": "TEXT_MATCH"
+        }
+      ]
+    },
+    {
+      "id": "munakoiso-kesakurpitsalasagne:2",
+      "gaps": [
+        "NO_GI_LEAD",
+        "COMPOSITION_BINDING_REQUIRED"
+      ],
+      "review": "UNSUPPORTED",
+      "gi": [],
+      "composition": [
+        {
+          "id": "fineli-34234-2026-10-25",
+          "retrieval": "TEXT_MATCH"
+        },
+        {
+          "id": "fineli-335-2026-10-25",
+          "retrieval": "TEXT_MATCH"
+        },
+        {
+          "id": "fineli-34234-2026-10-24",
+          "retrieval": "TEXT_MATCH"
+        }
+      ]
+    },
+    {
+      "id": "munakoiso-kesakurpitsalasagne:3",
+      "gaps": [
+        "NO_GI_LEAD",
+        "COMPOSITION_BINDING_REQUIRED"
+      ],
+      "review": "UNSUPPORTED",
+      "gi": [],
+      "composition": [
+        {
+          "id": "fineli-393-2026-10-25",
+          "retrieval": "TEXT_MATCH"
+        },
+        {
+          "id": "fineli-393-release-20",
+          "retrieval": "TEXT_MATCH"
+        },
+        {
+          "id": "fineli-393-2026-10-24",
+          "retrieval": "TEXT_MATCH"
+        }
+      ]
+    },
+    {
+      "id": "munakoiso-kesakurpitsalasagne:4",
+      "gaps": [
+        "NO_GI_LEAD",
+        "COMPOSITION_BINDING_REQUIRED"
+      ],
+      "review": "UNSUPPORTED",
+      "gi": [],
+      "composition": [
+        {
+          "id": "fineli-536-2026-10-25",
+          "retrieval": "TEXT_MATCH"
+        },
+        {
+          "id": "fineli-536-release-20",
+          "retrieval": "TEXT_MATCH"
+        },
+        {
+          "id": "fineli-541-2026-10-25",
+          "retrieval": "TEXT_MATCH"
+        }
+      ]
+    },
+    {
+      "id": "munakoiso-kesakurpitsalasagne:5",
+      "gaps": [
+        "NO_GI_LEAD",
+        "NO_COMPOSITION_LEAD"
+      ],
+      "review": "UNSUPPORTED",
+      "gi": [],
+      "composition": []
+    },
+    {
+      "id": "munakoiso-kesakurpitsalasagne:6",
+      "gaps": [
+        "NO_GI_LEAD",
+        "NO_COMPOSITION_LEAD"
+      ],
+      "review": "UNSUPPORTED",
+      "gi": [],
+      "composition": []
+    },
+    {
+      "id": "munakoiso-kesakurpitsalasagne:7",
+      "gaps": [
+        "NO_GI_LEAD",
+        "NO_COMPOSITION_LEAD"
+      ],
+      "review": "UNSUPPORTED",
+      "gi": [],
+      "composition": []
+    },
+    {
+      "id": "munakoiso-kesakurpitsalasagne:8",
+      "gaps": [
+        "NO_GI_LEAD",
+        "COMPOSITION_BINDING_REQUIRED"
+      ],
+      "review": "UNSUPPORTED",
+      "gi": [],
+      "composition": [
+        {
+          "id": "fineli-29239-2026-10-24",
+          "retrieval": "TEXT_MATCH"
+        },
+        {
+          "id": "fineli-29239-release-20",
+          "retrieval": "TEXT_MATCH"
+        },
+        {
+          "id": "op146-fineli-29239",
+          "retrieval": "TEXT_MATCH"
+        }
+      ]
+    },
+    {
+      "id": "munakoiso-kesakurpitsalasagne:9",
+      "gaps": [
+        "NO_GI_LEAD",
+        "NO_COMPOSITION_LEAD"
+      ],
+      "review": "UNSUPPORTED",
+      "gi": [],
+      "composition": []
+    },
+    {
+      "id": "munakoiso-kesakurpitsalasagne:10",
+      "gaps": [
+        "NO_GI_LEAD",
+        "COMPOSITION_BINDING_REQUIRED"
+      ],
+      "review": "UNSUPPORTED",
+      "gi": [],
+      "composition": [
+        {
+          "id": "fineli-11134-2026-10-24",
+          "retrieval": "TEXT_MATCH"
+        },
+        {
+          "id": "ehold-fineli-11134",
+          "retrieval": "TEXT_MATCH"
+        },
+        {
+          "id": "op142-fineli-11134",
+          "retrieval": "TEXT_MATCH"
+        }
+      ]
+    },
+    {
+      "id": "munakoiso-kesakurpitsalasagne:11",
+      "gaps": [
+        "NO_GI_LEAD",
+        "COMPOSITION_BINDING_REQUIRED"
+      ],
+      "review": "UNSUPPORTED",
+      "gi": [],
+      "composition": [
+        {
+          "id": "fineli-929-release-20",
+          "retrieval": "TEXT_MATCH"
+        },
+        {
+          "id": "fineli-929-2026-10-24",
+          "retrieval": "TEXT_MATCH"
+        },
+        {
+          "id": "ehold-fineli-929",
+          "retrieval": "TEXT_MATCH"
+        }
+      ]
+    },
+    {
+      "id": "munakoiso-kesakurpitsalasagne:12",
+      "gaps": [
+        "NO_GI_LEAD",
+        "COMPOSITION_BINDING_REQUIRED"
+      ],
+      "review": "UNSUPPORTED",
+      "gi": [],
+      "composition": [
+        {
+          "id": "fineli-31233-release-20",
+          "retrieval": "TEXT_MATCH"
+        }
+      ]
+    },
+    {
+      "id": "munakoiso-kesakurpitsalasagne:13",
+      "gaps": [
+        "NO_GI_LEAD",
+        "COMPOSITION_BINDING_REQUIRED"
+      ],
+      "review": "UNSUPPORTED",
+      "gi": [],
+      "composition": [
+        {
+          "id": "fineli-11177-2026-10-25",
+          "retrieval": "TEXT_MATCH"
+        },
+        {
+          "id": "fineli-11177-2026-10-24",
+          "retrieval": "TEXT_MATCH"
+        },
+        {
+          "id": "op142-fineli-11177",
+          "retrieval": "TEXT_MATCH"
+        }
+      ]
+    },
+    {
+      "id": "munakoiso-kesakurpitsalasagne:14",
+      "gaps": [
+        "NO_GI_LEAD",
+        "COMPOSITION_BINDING_REQUIRED"
+      ],
+      "review": "UNSUPPORTED",
+      "gi": [],
+      "composition": [
+        {
+          "id": "fineli-922-2026-10-25",
+          "retrieval": "TEXT_MATCH"
+        },
+        {
+          "id": "fineli-922-release-20",
+          "retrieval": "TEXT_MATCH"
+        },
+        {
+          "id": "fineli-922-2026-10-24",
+          "retrieval": "TEXT_MATCH"
+        }
+      ]
+    },
+    {
+      "id": "char-siu:0",
+      "gaps": [
+        "BOUND_GI_NOT_IN_REGISTRY"
+      ],
+      "review": "UNSUPPORTED",
+      "gi": [],
+      "composition": [
+        {
+          "id": "afcd-F008008-release-3",
+          "retrieval": "BOUND_RECORD"
+        }
+      ]
+    },
+    {
+      "id": "jauheliha-makaronilaatikko:0",
+      "gaps": [
+        "NO_GI_LEAD"
+      ],
+      "review": "UNSUPPORTED",
+      "gi": [],
+      "composition": [
+        {
+          "id": "fineli-117-2026-10-24",
+          "retrieval": "BOUND_RECORD"
+        }
+      ]
+    },
+    {
+      "id": "keltainen-kanacurry-vhh:0",
+      "gaps": [
+        "NO_GI_LEAD"
+      ],
+      "review": "UNSUPPORTED",
+      "gi": [],
+      "composition": [
+        {
+          "id": "fineli-29014-2026-10-24",
+          "retrieval": "BOUND_RECORD"
+        }
+      ]
+    },
+    {
+      "id": "khao-soi-vhh-konjac:0",
+      "gaps": [
+        "NO_GI_LEAD"
+      ],
+      "review": "UNSUPPORTED",
+      "gi": [],
+      "composition": [
+        {
+          "id": "fineli-29014-2026-10-24",
+          "retrieval": "BOUND_RECORD"
+        }
+      ]
+    },
+    {
+      "id": "khao-soi-vhh-konjac:1",
+      "gaps": [],
+      "review": "REVIEW_REQUIRED",
+      "gi": [
+        {
+          "retrieval": "BOUND_RECORD",
+          "warnings": [
+            "POSSIBLE_ANALOGUE"
+          ]
+        }
+      ],
+      "composition": [
+        {
+          "id": "fineli-30315-2026-10-24",
+          "retrieval": "BOUND_RECORD"
+        }
+      ]
+    },
+    {
+      "id": "korealainen-tofu-kimchi-aamiaiskulho:0",
+      "gaps": [
+        "NO_GI_LEAD",
+        "NO_COMPOSITION_LEAD"
+      ],
+      "review": "UNSUPPORTED",
+      "gi": [],
+      "composition": []
+    },
+    {
+      "id": "korealainen-tofu-kimchi-aamiaiskulho:1",
+      "gaps": [],
+      "review": "REVIEW_REQUIRED",
+      "gi": [
+        {
+          "retrieval": "BOUND_RECORD",
+          "warnings": [
+            "POSSIBLE_ANALOGUE"
+          ]
+        }
+      ],
+      "composition": [
+        {
+          "id": "fineli-385-release-20",
+          "retrieval": "BOUND_RECORD"
+        }
+      ]
+    },
+    {
+      "id": "maksalaatikko-kukkakaalilla:0",
+      "gaps": [
+        "NO_GI_LEAD"
+      ],
+      "review": "UNSUPPORTED",
+      "gi": [],
+      "composition": [
+        {
+          "id": "fineli-786-2026-10-24",
+          "retrieval": "BOUND_RECORD"
+        }
+      ]
+    },
+    {
+      "id": "maksalaatikko-kukkakaalilla:1",
+      "gaps": [],
+      "review": "REVIEW_REQUIRED",
+      "gi": [
+        {
+          "retrieval": "BOUND_RECORD",
+          "warnings": [
+            "POSSIBLE_ANALOGUE"
+          ]
+        }
+      ],
+      "composition": [
+        {
+          "id": "fineli-440-2026-10-24",
+          "retrieval": "BOUND_RECORD"
+        }
+      ]
+    },
+    {
+      "id": "miso-lohi-paksoi:0",
+      "gaps": [
+        "NO_GI_LEAD",
+        "NO_COMPOSITION_LEAD"
+      ],
+      "review": "UNSUPPORTED",
+      "gi": [],
+      "composition": []
+    },
+    {
+      "id": "miso-lohi-paksoi:1",
+      "gaps": [],
+      "review": "REVIEW_REQUIRED",
+      "gi": [
+        {
+          "retrieval": "BOUND_RECORD",
+          "warnings": [
+            "POSSIBLE_ANALOGUE"
+          ]
+        }
+      ],
+      "composition": [
+        {
+          "id": "fineli-385-release-20",
+          "retrieval": "BOUND_RECORD"
+        }
+      ]
+    },
+    {
+      "id": "vhh-runebergintortut:0",
+      "gaps": [
+        "NO_GI_LEAD"
+      ],
+      "review": "UNSUPPORTED",
+      "gi": [],
+      "composition": [
+        {
+          "id": "afcd-F006077-2026-10-24",
+          "retrieval": "BOUND_RECORD"
+        }
+      ]
+    },
+    {
+      "id": "indonesialainen-nasi-goreng-aamiaisriisi:0",
+      "gaps": [
+        "NO_GI_LEAD",
+        "NO_COMPOSITION_LEAD"
+      ],
+      "review": "UNSUPPORTED",
+      "gi": [],
+      "composition": []
+    },
+    {
+      "id": "indonesialainen-nasi-goreng-aamiaisriisi:1",
+      "gaps": [
+        "NO_GI_LEAD"
+      ],
+      "review": "UNSUPPORTED",
+      "gi": [],
+      "composition": [
+        {
+          "id": "fineli-335-2026-10-25",
+          "retrieval": "BOUND_RECORD"
+        }
+      ]
+    },
+    {
+      "id": "tunisialainen-brik:0",
+      "gaps": [
+        "NO_GI_LEAD",
+        "NO_COMPOSITION_LEAD"
+      ],
+      "review": "UNSUPPORTED",
+      "gi": [],
+      "composition": []
+    },
+    {
+      "id": "tunisialainen-brik:1",
+      "gaps": [
+        "NO_GI_LEAD"
+      ],
+      "review": "UNSUPPORTED",
+      "gi": [],
+      "composition": [
+        {
+          "id": "afcd-F002220-release-3",
+          "retrieval": "BOUND_RECORD"
+        }
+      ]
+    },
+    {
+      "id": "tunisialainen-brik:2",
+      "gaps": [],
+      "review": "REVIEW_REQUIRED",
+      "gi": [
+        {
+          "retrieval": "BOUND_RECORD",
+          "warnings": [
+            "POSSIBLE_ANALOGUE"
+          ]
+        }
+      ],
+      "composition": [
+        {
+          "id": "fineli-333-release-20",
+          "retrieval": "BOUND_RECORD"
+        }
+      ]
+    },
+    {
+      "id": "vietnamilainen-xoi-maapahkinalla:0",
+      "gaps": [
+        "NO_GI_LEAD",
+        "NO_COMPOSITION_LEAD"
+      ],
+      "review": "UNSUPPORTED",
+      "gi": [],
+      "composition": []
+    },
+    {
+      "id": "vietnamilainen-xoi-maapahkinalla:1",
+      "gaps": [],
+      "review": "REVIEW_REQUIRED",
+      "gi": [
+        {
+          "retrieval": "BOUND_RECORD",
+          "warnings": [
+            "POSSIBLE_ANALOGUE"
+          ]
+        }
+      ],
+      "composition": [
+        {
+          "id": "fineli-385-release-20",
+          "retrieval": "BOUND_RECORD"
+        }
+      ]
+    },
+    {
+      "id": "vietnamilainen-xoi-maapahkinalla:2",
+      "gaps": [
+        "NO_GI_LEAD",
+        "NO_COMPOSITION_LEAD"
+      ],
+      "review": "UNSUPPORTED",
+      "gi": [],
+      "composition": []
+    },
+    {
+      "id": "chow-mein:0",
+      "gaps": [],
+      "review": "REVIEW_REQUIRED",
+      "gi": [
+        {
+          "retrieval": "BOUND_RECORD",
+          "warnings": [
+            "POSSIBLE_ANALOGUE"
+          ]
+        }
+      ],
+      "composition": [
+        {
+          "id": "fineli-31-2026-10-25",
+          "retrieval": "BOUND_RECORD"
+        }
+      ]
+    },
+    {
+      "id": "chow-mein:1",
+      "gaps": [
+        "NO_GI_LEAD",
+        "NO_COMPOSITION_LEAD"
+      ],
+      "review": "UNSUPPORTED",
+      "gi": [],
+      "composition": []
+    },
+    {
+      "id": "congee-riisipuuro:0",
+      "gaps": [],
+      "review": "REVIEW_REQUIRED",
+      "gi": [
+        {
+          "retrieval": "BOUND_RECORD",
+          "warnings": [
+            "POSSIBLE_ANALOGUE"
+          ]
+        }
+      ],
+      "composition": [
+        {
+          "id": "afcd-F008936-2026-10-24",
+          "retrieval": "BOUND_RECORD"
+        }
+      ]
+    },
+    {
+      "id": "congee-riisipuuro:1",
+      "gaps": [],
+      "review": "REVIEW_REQUIRED",
+      "gi": [
+        {
+          "retrieval": "BOUND_RECORD",
+          "warnings": [
+            "POSSIBLE_ANALOGUE"
+          ]
+        }
+      ],
+      "composition": [
+        {
+          "id": "afcd-F004213-2026-10-24",
+          "retrieval": "BOUND_RECORD"
+        }
+      ]
+    },
+    {
+      "id": "congee-riisipuuro:2",
+      "gaps": [
+        "NO_GI_LEAD"
+      ],
+      "review": "UNSUPPORTED",
+      "gi": [],
+      "composition": [
+        {
+          "id": "afcd-F006250-2026-10-24",
+          "retrieval": "BOUND_RECORD"
+        }
+      ]
+    },
+    {
+      "id": "hernekeitto-savupotkalla:0",
+      "gaps": [
+        "NO_GI_LEAD",
+        "NO_COMPOSITION_LEAD"
+      ],
+      "review": "UNSUPPORTED",
+      "gi": [],
+      "composition": []
+    },
+    {
+      "id": "hernekeitto-savupotkalla:1",
+      "gaps": [],
+      "review": "REVIEW_REQUIRED",
+      "gi": [
+        {
+          "retrieval": "BOUND_RECORD",
+          "warnings": [
+            "POSSIBLE_ANALOGUE"
+          ]
+        }
+      ],
+      "composition": [
+        {
+          "id": "fineli-28-release-20",
+          "retrieval": "BOUND_RECORD"
+        }
+      ]
+    },
+    {
+      "id": "hunaja-sinappikana-kaalilla:0",
+      "gaps": [
+        "NO_GI_LEAD"
+      ],
+      "review": "UNSUPPORTED",
+      "gi": [],
+      "composition": [
+        {
+          "id": "fineli-393-release-20",
+          "retrieval": "BOUND_RECORD"
+        }
+      ]
+    },
+    {
+      "id": "indonesialainen-tempeh-munakulho:0",
+      "gaps": [],
+      "review": "REVIEW_REQUIRED",
+      "gi": [
+        {
+          "retrieval": "BOUND_RECORD",
+          "warnings": [
+            "POSSIBLE_ANALOGUE"
+          ]
+        }
+      ],
+      "composition": [
+        {
+          "id": "fineli-31249-release-20",
+          "retrieval": "BOUND_RECORD"
+        }
+      ]
+    },
+    {
+      "id": "indonesialainen-tempeh-munakulho:1",
+      "gaps": [
+        "NO_GI_LEAD",
+        "NO_COMPOSITION_LEAD"
+      ],
+      "review": "UNSUPPORTED",
+      "gi": [],
+      "composition": []
+    },
+    {
+      "id": "japanilainen-dashimaki-tamago-aamiaislautasella:0",
+      "gaps": [
+        "NO_GI_LEAD",
+        "NO_COMPOSITION_LEAD"
+      ],
+      "review": "UNSUPPORTED",
+      "gi": [],
+      "composition": []
+    },
+    {
+      "id": "japanilainen-hojicha-jogurtti-persimonilla:0",
+      "gaps": [],
+      "review": "REVIEW_REQUIRED",
+      "gi": [
+        {
+          "retrieval": "BOUND_RECORD",
+          "warnings": [
+            "POSSIBLE_ANALOGUE"
+          ]
+        }
+      ],
+      "composition": [
+        {
+          "id": "fineli-33038-release-20",
+          "retrieval": "BOUND_RECORD"
+        }
+      ]
+    },
+    {
+      "id": "japanilainen-hojicha-jogurtti-persimonilla:1",
+      "gaps": [
+        "NO_GI_LEAD",
+        "NO_COMPOSITION_LEAD"
+      ],
+      "review": "UNSUPPORTED",
+      "gi": [],
+      "composition": []
+    },
+    {
+      "id": "japanilainen-hojicha-jogurtti-persimonilla:2",
+      "gaps": [],
+      "review": "REVIEW_REQUIRED",
+      "gi": [
+        {
+          "retrieval": "BOUND_RECORD",
+          "warnings": [
+            "POSSIBLE_ANALOGUE"
+          ]
+        }
+      ],
+      "composition": [
+        {
+          "id": "fineli-385-release-20",
+          "retrieval": "BOUND_RECORD"
+        },
+        {
+          "id": "fineli-385-2026-10-25",
+          "retrieval": "TEXT_MATCH"
+        },
+        {
+          "id": "fineli-34245-2026-10-24",
+          "retrieval": "TEXT_MATCH"
+        }
+      ]
+    },
+    {
+      "id": "kerala-kalacurry:0",
+      "gaps": [
+        "NO_GI_LEAD"
+      ],
+      "review": "UNSUPPORTED",
+      "gi": [],
+      "composition": [
+        {
+          "id": "afcd-F002991-release-3",
+          "retrieval": "BOUND_RECORD"
+        }
+      ]
+    },
+    {
+      "id": "kerala-kalacurry:1",
+      "gaps": [],
+      "review": "REVIEW_REQUIRED",
+      "gi": [
+        {
+          "retrieval": "BOUND_RECORD",
+          "warnings": [
+            "POSSIBLE_ANALOGUE"
+          ]
+        }
+      ],
+      "composition": [
+        {
+          "id": "afcd-F009081-release-3",
+          "retrieval": "BOUND_RECORD"
+        }
+      ]
+    },
+    {
+      "id": "meksikolainen-paputostada-aamupalaksi:0",
+      "gaps": [],
+      "review": "REVIEW_REQUIRED",
+      "gi": [
+        {
+          "retrieval": "BOUND_RECORD",
+          "warnings": []
+        }
+      ],
+      "composition": [
+        {
+          "id": "fineli-35554-release-20",
+          "retrieval": "BOUND_RECORD"
+        }
+      ]
+    },
+    {
+      "id": "meksikolainen-paputostada-aamupalaksi:1",
+      "gaps": [],
+      "review": "REVIEW_REQUIRED",
+      "gi": [
+        {
+          "retrieval": "BOUND_RECORD",
+          "warnings": [
+            "POSSIBLE_ANALOGUE"
+          ]
+        }
+      ],
+      "composition": [
+        {
+          "id": "fineli-11057-release-20",
+          "retrieval": "BOUND_RECORD"
+        },
+        {
+          "id": "fineli-11057-2026-10-25",
+          "retrieval": "TEXT_MATCH"
+        },
+        {
+          "id": "fineli-11057-2026-10-24",
+          "retrieval": "TEXT_MATCH"
+        }
+      ]
+    },
+    {
+      "id": "paneer-tikka:0",
+      "gaps": [
+        "NO_GI_LEAD"
+      ],
+      "review": "UNSUPPORTED",
+      "gi": [],
+      "composition": [
+        {
+          "id": "fineli-386-release-20",
+          "retrieval": "BOUND_RECORD"
+        }
+      ]
+    },
+    {
+      "id": "paneer-tikka:1",
+      "gaps": [
+        "NO_GI_LEAD"
+      ],
+      "review": "UNSUPPORTED",
+      "gi": [],
+      "composition": [
+        {
+          "id": "fineli-387-release-20",
+          "retrieval": "BOUND_RECORD"
+        }
+      ]
+    },
+    {
+      "id": "uunimakkara-sipulipedilla:0",
+      "gaps": [
+        "NO_GI_LEAD"
+      ],
+      "review": "UNSUPPORTED",
+      "gi": [],
+      "composition": [
+        {
+          "id": "fineli-7607-release-20",
+          "retrieval": "BOUND_RECORD"
+        }
+      ]
+    },
+    {
+      "id": "japanilainen-okayu-umeboshipluumulla:0",
+      "gaps": [
+        "NO_GI_LEAD",
+        "NO_COMPOSITION_LEAD"
+      ],
+      "review": "UNSUPPORTED",
+      "gi": [],
+      "composition": []
+    },
+    {
+      "id": "japanilainen-okayu-umeboshipluumulla:1",
+      "gaps": [],
+      "review": "REVIEW_REQUIRED",
+      "gi": [
+        {
+          "retrieval": "BOUND_RECORD",
+          "warnings": [
+            "POSSIBLE_ANALOGUE"
+          ]
+        }
+      ],
+      "composition": [
+        {
+          "id": "fineli-385-release-20",
+          "retrieval": "BOUND_RECORD"
+        },
+        {
+          "id": "fineli-385-2026-10-25",
+          "retrieval": "TEXT_MATCH"
+        },
+        {
+          "id": "fineli-34245-2026-10-24",
+          "retrieval": "TEXT_MATCH"
+        }
+      ]
+    },
+    {
+      "id": "japanilainen-okayu-umeboshipluumulla:2",
+      "gaps": [
+        "NO_GI_LEAD",
+        "NO_COMPOSITION_LEAD"
+      ],
+      "review": "UNSUPPORTED",
+      "gi": [],
+      "composition": []
+    }
+  ]
+}

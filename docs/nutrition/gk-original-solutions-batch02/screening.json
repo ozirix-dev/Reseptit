@@ -1,0 +1,3261 @@
+{
+  "baseMainSha": "be26182a1b0547a6d98e889349855ee05bda07c7",
+  "screenedCount": 53,
+  "oneBlockerScreened": 32,
+  "statusCounts": {
+    "HOLD": 18,
+    "SOURCE_RESEARCH": 11,
+    "CANDIDATE": 1,
+    "NEEDS_CLARIFICATION": 23
+  },
+  "recipes": [
+    {
+      "recipeId": "keto-mutakakku",
+      "recipePath": "reseptit/jalkiruoat/keto-mutakakku.md",
+      "blockerCount": 1,
+      "blockers": [
+        "keto-mutakakku: ripaus suolaa: AJO 1.7: previous omission amount/bound has no verified mass or source-backed ceiling; unresolved quantity cannot qualify for tolerance."
+      ],
+      "solutionTypes": [
+        "QUANTITY"
+      ],
+      "evidenceState": "SOURCE_BINDING_UNRESOLVED",
+      "originalIngredientCount": 8,
+      "inputRowCount": 8,
+      "rowAccounting": "COUNT_MATCH_REQUIRES_SEMANTIC_REVIEW",
+      "priorWithdrawnGiBindings": [],
+      "inheritedAssumptionsRequiringReview": [],
+      "carbohydrateImpact": {
+        "knownBlockedComponents": [],
+        "knownBlockedSumG": 0,
+        "unknownBlockedComponents": [
+          "ripaus suolaa"
+        ],
+        "completeBound": false
+      },
+      "priority": {
+        "score": 40,
+        "factors": {
+          "nativeZeroLead": 40,
+          "verifiedReferencePortionLead": 0,
+          "existingComposition": 0,
+          "completeRowAccounting": 10,
+          "establishedNegativeSearch": 0,
+          "priorBatchWithoutNewLead": 0,
+          "materialUnknownCho": -10,
+          "knownCarbohydrateExposure": 0,
+          "priorScientificWithdrawals": 0,
+          "independentUnknownQuantitiesOrComposition": 0,
+          "inheritedUnweighedCulinaryAssumptions": 0
+        },
+        "basis": "Feasibility heuristic: quantity/source identity, completeness, CHO materiality and previous negative searches; not blocker count alone."
+      },
+      "nextStep": "Verify native-zero plain-salt composition without inventing a pinch mass; audit all other positive CHO.",
+      "publicationAuthorized": false,
+      "screenStatus": "HOLD",
+      "screenFinding": "Tavallisen suolan natiivikoostumus on0 CHO, massaa ei päätellä. Vaniljan ja kaakaon viitemassat täsmennetään tutkimuksessa. Mallin0 koostuu kokonaan positiivisista poisjätöistä; ei luotettavan kokonais-GK:n ehdokas.",
+      "recipeSha256Lf": "c20d6ea6f792a5d2b8a4110c374b9fc01b2c8570e15dd10df8d089440b4c4916",
+      "inputSha256": "e8c0abb0fbb27b8571cce58fb1454ce0aae00894589f02322834f7d4a7db3e72",
+      "recipeBodyReviewed": true,
+      "existingSourcesAndAuditsReviewed": true,
+      "sqliteRequests": [
+        "keto-mutakakku:0"
+      ]
+    },
+    {
+      "recipeId": "keto-suklaakeksit",
+      "recipePath": "reseptit/jalkiruoat/keto-suklaakeksit.md",
+      "blockerCount": 1,
+      "blockers": [
+        "keto-suklaakeksit: ripaus suolaa: AJO 1.7: previous omission amount/bound has no verified mass or source-backed ceiling; unresolved quantity cannot qualify for tolerance."
+      ],
+      "solutionTypes": [
+        "QUANTITY"
+      ],
+      "evidenceState": "SOURCE_BINDING_UNRESOLVED",
+      "originalIngredientCount": 8,
+      "inputRowCount": 8,
+      "rowAccounting": "COUNT_MATCH_REQUIRES_SEMANTIC_REVIEW",
+      "priorWithdrawnGiBindings": [],
+      "inheritedAssumptionsRequiringReview": [],
+      "carbohydrateImpact": {
+        "knownBlockedComponents": [],
+        "knownBlockedSumG": 0,
+        "unknownBlockedComponents": [
+          "ripaus suolaa"
+        ],
+        "completeBound": false
+      },
+      "priority": {
+        "score": 40,
+        "factors": {
+          "nativeZeroLead": 40,
+          "verifiedReferencePortionLead": 0,
+          "existingComposition": 0,
+          "completeRowAccounting": 10,
+          "establishedNegativeSearch": 0,
+          "priorBatchWithoutNewLead": 0,
+          "materialUnknownCho": -10,
+          "knownCarbohydrateExposure": 0,
+          "priorScientificWithdrawals": 0,
+          "independentUnknownQuantitiesOrComposition": 0,
+          "inheritedUnweighedCulinaryAssumptions": 0
+        },
+        "basis": "Feasibility heuristic: quantity/source identity, completeness, CHO materiality and previous negative searches; not blocker count alone."
+      },
+      "nextStep": "Verify native-zero plain-salt composition without inventing a pinch mass; audit all other positive CHO.",
+      "publicationAuthorized": false,
+      "screenStatus": "HOLD",
+      "screenFinding": "Suolan nollanäyttö ratkaisee yhden rivin. Kaikki positiivinen CHO jää pois; aritmeettinen0 ei ole uusi luotettava kokonais-GK.",
+      "recipeSha256Lf": "eb155901a9b5e2892aa3b068a3445b0cf6e8af58b13a2fd784fcbd62e8582cc8",
+      "inputSha256": "8750119d7c5f489af66bebe80d31b1c91acd390e3eda4ff00d5ec45bb497841c",
+      "recipeBodyReviewed": true,
+      "existingSourcesAndAuditsReviewed": true,
+      "sqliteRequests": [
+        "keto-suklaakeksit:0"
+      ]
+    },
+    {
+      "recipeId": "bulgogi",
+      "recipePath": "reseptit/paaruoat/bulgogi.md",
+      "blockerCount": 1,
+      "blockers": [
+        "bulgogi: kevätsipulia: Ingredient mass is missing or invalid."
+      ],
+      "solutionTypes": [
+        "QUANTITY",
+        "GI_OR_PREPARATION"
+      ],
+      "evidenceState": "SOURCE_BINDING_UNRESOLVED",
+      "originalIngredientCount": 11,
+      "inputRowCount": 11,
+      "rowAccounting": "COUNT_MATCH_REQUIRES_SEMANTIC_REVIEW",
+      "priorWithdrawnGiBindings": [
+        {
+          "ingredient": "jasmiiniriisiä",
+          "giRecordId": "rice-category-mean-gi-67",
+          "rationale": "The catalog explicitly identifies a broad category mean rather than this food/preparation. Preserve existing production policy and values, but withhold this binding from the new candidate until its preparation/application is established; no exact-food inference or new imputation policy is granted."
+        },
+        {
+          "ingredient": "soijakastiketta",
+          "giRecordId": "legumes-category-mean-gi-34",
+          "rationale": "Fermented soy sauce is not the whole-legume category. No matched sauce GI was established; do not turn the sauce CHO into zero."
+        },
+        {
+          "ingredient": "fariinisokeria",
+          "giRecordId": "sugar-syrups-category-mean-gi-58",
+          "rationale": "The catalog explicitly identifies a broad category mean rather than this food/preparation. Preserve existing production policy and values, but withhold this binding from the new candidate until its preparation/application is established; no exact-food inference or new imputation policy is granted."
+        }
+      ],
+      "inheritedAssumptionsRequiringReview": [],
+      "carbohydrateImpact": {
+        "knownBlockedComponents": [],
+        "knownBlockedSumG": 0,
+        "unknownBlockedComponents": [
+          "kevätsipulia"
+        ],
+        "completeBound": false
+      },
+      "priority": {
+        "score": 10,
+        "factors": {
+          "nativeZeroLead": 0,
+          "verifiedReferencePortionLead": 25,
+          "existingComposition": 10,
+          "completeRowAccounting": 10,
+          "establishedNegativeSearch": 0,
+          "priorBatchWithoutNewLead": 0,
+          "materialUnknownCho": -10,
+          "knownCarbohydrateExposure": 0,
+          "priorScientificWithdrawals": -25,
+          "independentUnknownQuantitiesOrComposition": 0,
+          "inheritedUnweighedCulinaryAssumptions": 0
+        },
+        "basis": "Feasibility heuristic: quantity/source identity, completeness, CHO materiality and previous negative searches; not blocker count alone."
+      },
+      "nextStep": "Check existing food-specific reference portions and the exact original quantity; no copied variant mass.",
+      "publicationAuthorized": false,
+      "screenStatus": "SOURCE_RESEARCH",
+      "screenFinding": "Lähteistetty15g/medium ja Fineli-soijan60ml→72g ovat mahdollisia määrätäsmennyksiä. Aiemmat riisi/soija/sokeri-GI-pidätykset estävät uuden kokonaisluvun. 40g:n varianttia ei kopioida.",
+      "recipeSha256Lf": "c84490ec24ce44ad3f0930dbb242db9017a01431f2d910e0723af526fffc8cc8",
+      "inputSha256": "72481e11592955d9e7cdcbb5e4097545fa92c6e57642e65e70f6b09e870909c9",
+      "recipeBodyReviewed": true,
+      "existingSourcesAndAuditsReviewed": true,
+      "sqliteRequests": [
+        "bulgogi:0"
+      ]
+    },
+    {
+      "recipeId": "vhh-mansikkakakku",
+      "recipePath": "reseptit/jalkiruoat/vhh-mansikkakakku.md",
+      "blockerCount": 1,
+      "blockers": [
+        "vhh-mansikkakakku: vaniljauutetta: Ingredient mass is missing or invalid."
+      ],
+      "solutionTypes": [
+        "QUANTITY"
+      ],
+      "evidenceState": "SOURCE_BINDING_UNRESOLVED",
+      "originalIngredientCount": 8,
+      "inputRowCount": 8,
+      "rowAccounting": "COUNT_MATCH_REQUIRES_SEMANTIC_REVIEW",
+      "priorWithdrawnGiBindings": [],
+      "inheritedAssumptionsRequiringReview": [],
+      "carbohydrateImpact": {
+        "knownBlockedComponents": [],
+        "knownBlockedSumG": 0,
+        "unknownBlockedComponents": [
+          "vaniljauutetta"
+        ],
+        "completeBound": false
+      },
+      "priority": {
+        "score": 35,
+        "factors": {
+          "nativeZeroLead": 0,
+          "verifiedReferencePortionLead": 25,
+          "existingComposition": 10,
+          "completeRowAccounting": 10,
+          "establishedNegativeSearch": 0,
+          "priorBatchWithoutNewLead": 0,
+          "materialUnknownCho": -10,
+          "knownCarbohydrateExposure": 0,
+          "priorScientificWithdrawals": 0,
+          "independentUnknownQuantitiesOrComposition": 0,
+          "inheritedUnweighedCulinaryAssumptions": 0
+        },
+        "basis": "Feasibility heuristic: quantity/source identity, completeness, CHO materiality and previous negative searches; not blocker count alone."
+      },
+      "nextStep": "Check existing food-specific reference portions and the exact original quantity; no copied variant mass.",
+      "publicationAuthorized": false,
+      "screenStatus": "CANDIDATE",
+      "screenFinding": "CNF216 antaa5ml=4.3g; Fineli74 korjaa1tl leivinjauheen5g:ksi. Nykyisen menetelmän ehdollinen piste; lähdesoveltuvuus ja omistajapäätös kesken.",
+      "recipeSha256Lf": "275587e8131c07fc05497f869d54861f3d4c446139d8693fa5c46ad043927e75",
+      "inputSha256": "f73281c4a1e900df2f0f68e8908e935beb05e7dc78ee9faf84f9f6bfea188194",
+      "recipeBodyReviewed": true,
+      "existingSourcesAndAuditsReviewed": true,
+      "sqliteRequests": [
+        "vhh-mansikkakakku:0"
+      ]
+    },
+    {
+      "recipeId": "valimerellinen-farinata-aamupalaksi",
+      "recipePath": "reseptit/aamupalat/valimerellinen-farinata-aamupalaksi.md",
+      "blockerCount": 1,
+      "blockers": [
+        "valimerellinen-farinata-aamupalaksi: tomaatti: GI evidence is missing."
+      ],
+      "solutionTypes": [
+        "GI_OR_PREPARATION"
+      ],
+      "evidenceState": "SOURCE_BINDING_UNRESOLVED",
+      "originalIngredientCount": 7,
+      "inputRowCount": 7,
+      "rowAccounting": "COUNT_MATCH_REQUIRES_SEMANTIC_REVIEW",
+      "priorWithdrawnGiBindings": [],
+      "inheritedAssumptionsRequiringReview": [],
+      "carbohydrateImpact": {
+        "knownBlockedComponents": [
+          {
+            "ingredient": "tomaatti",
+            "choPerServingG": 1.725
+          }
+        ],
+        "knownBlockedSumG": 1.725,
+        "unknownBlockedComponents": [],
+        "completeBound": false
+      },
+      "priority": {
+        "score": 10,
+        "factors": {
+          "nativeZeroLead": 0,
+          "verifiedReferencePortionLead": 0,
+          "existingComposition": 10,
+          "completeRowAccounting": 10,
+          "establishedNegativeSearch": 0,
+          "priorBatchWithoutNewLead": 0,
+          "materialUnknownCho": 0,
+          "knownCarbohydrateExposure": -10,
+          "priorScientificWithdrawals": 0,
+          "independentUnknownQuantitiesOrComposition": 0,
+          "inheritedUnweighedCulinaryAssumptions": 0
+        },
+        "basis": "Feasibility heuristic: quantity/source identity, completeness, CHO materiality and previous negative searches; not blocker count alone."
+      },
+      "nextStep": "Search existing composition/GI indexes and verify product/preparation identity before any calculation.",
+      "publicationAuthorized": false,
+      "screenStatus": "SOURCE_RESEARCH",
+      "screenFinding": "100g tomaattia /2:1.725g CHO. Kypsennys220°C; raw22 ja cooked-sauce analogue eivät osoita uunitomaatin matchia. Yksittäinen poisjättö ei sovellu.",
+      "recipeSha256Lf": "1b15fd29f9d833b84289c2d1345e27a0110c4bda7044ed6939d581ede947d237",
+      "inputSha256": "49cc3b69519eeaf60a74fb58cd707b18d64c2047d7193e5bbe0d0284a2a9cfa7",
+      "recipeBodyReviewed": true,
+      "existingSourcesAndAuditsReviewed": true,
+      "sqliteRequests": [
+        "valimerellinen-farinata-aamupalaksi:0"
+      ]
+    },
+    {
+      "recipeId": "intialainen-pinaatti-paneer-chilla",
+      "recipePath": "reseptit/aamupalat/intialainen-pinaatti-paneer-chilla.md",
+      "blockerCount": 1,
+      "blockers": [
+        "intialainen-pinaatti-paneer-chilla: pinaatti: The recipe amount 1 kpl has no food-specific mass conversion for Spinach, baby, fresh, raw."
+      ],
+      "solutionTypes": [
+        "QUANTITY",
+        "IDENTITY_OR_CLARIFICATION"
+      ],
+      "evidenceState": "SOURCE_BINDING_UNRESOLVED",
+      "originalIngredientCount": 6,
+      "inputRowCount": 6,
+      "rowAccounting": "COUNT_MATCH_REQUIRES_SEMANTIC_REVIEW",
+      "priorWithdrawnGiBindings": [],
+      "inheritedAssumptionsRequiringReview": [
+        {
+          "ingredient": "juustokumina",
+          "choEstimate": 0.25,
+          "evidence": "Conservative available-carbohydrate bound 0.5 g per recipe; below 1 g per serving."
+        }
+      ],
+      "carbohydrateImpact": {
+        "knownBlockedComponents": [],
+        "knownBlockedSumG": 0,
+        "unknownBlockedComponents": [
+          "pinaatti"
+        ],
+        "completeBound": false
+      },
+      "priority": {
+        "score": 0,
+        "factors": {
+          "nativeZeroLead": 0,
+          "verifiedReferencePortionLead": 0,
+          "existingComposition": 10,
+          "completeRowAccounting": 10,
+          "establishedNegativeSearch": 0,
+          "priorBatchWithoutNewLead": 0,
+          "materialUnknownCho": -10,
+          "knownCarbohydrateExposure": 0,
+          "priorScientificWithdrawals": 0,
+          "independentUnknownQuantitiesOrComposition": 0,
+          "inheritedUnweighedCulinaryAssumptions": -10
+        },
+        "basis": "Feasibility heuristic: quantity/source identity, completeness, CHO materiality and previous negative searches; not blocker count alone."
+      },
+      "nextStep": "Check existing food-specific reference portions and the exact original quantity; no copied variant mass.",
+      "publicationAuthorized": false,
+      "screenStatus": "NEEDS_CLARIFICATION",
+      "screenFinding": "1kpl pinaattia ei nimeä lehteä, nippua tai pussia. Valmistus ei kerro grammoja. Ei päätellä määrää viereisestä reseptistä.",
+      "recipeSha256Lf": "98e47d0383a3b5ce559858d69fad27f7e3b25d02a6182b91bec803ccbc0e8145",
+      "inputSha256": "a462d3eecc16e38b0466ef9168dfae17d702ddf5e52e167e405c5330045a3741",
+      "recipeBodyReviewed": true,
+      "existingSourcesAndAuditsReviewed": true,
+      "sqliteRequests": [
+        "intialainen-pinaatti-paneer-chilla:0"
+      ]
+    },
+    {
+      "recipeId": "tangyuan",
+      "recipePath": "reseptit/jalkiruoat/tangyuan.md",
+      "blockerCount": 1,
+      "blockers": [
+        "tangyuan: musta seesami: The recipe lists 100 g black sesame without a matching Fineli record; the carbohydrate contribution and GI cannot be sourced."
+      ],
+      "solutionTypes": [
+        "COMPOSITION",
+        "GI_OR_PREPARATION"
+      ],
+      "evidenceState": "SOURCE_BINDING_UNRESOLVED",
+      "originalIngredientCount": 8,
+      "inputRowCount": 1,
+      "rowAccounting": "RECONCILE_WHOLE_RECIPE_FIRST",
+      "priorWithdrawnGiBindings": [],
+      "inheritedAssumptionsRequiringReview": [],
+      "carbohydrateImpact": {
+        "knownBlockedComponents": [],
+        "knownBlockedSumG": 0,
+        "unknownBlockedComponents": [
+          "musta seesami"
+        ],
+        "completeBound": false
+      },
+      "priority": {
+        "score": -45,
+        "factors": {
+          "nativeZeroLead": 0,
+          "verifiedReferencePortionLead": 0,
+          "existingComposition": 0,
+          "completeRowAccounting": -35,
+          "establishedNegativeSearch": 0,
+          "priorBatchWithoutNewLead": 0,
+          "materialUnknownCho": -10,
+          "knownCarbohydrateExposure": 0,
+          "priorScientificWithdrawals": 0,
+          "independentUnknownQuantitiesOrComposition": 0,
+          "inheritedUnweighedCulinaryAssumptions": 0
+        },
+        "basis": "Feasibility heuristic: quantity/source identity, completeness, CHO materiality and previous negative searches; not blocker count alone."
+      },
+      "nextStep": "Reconcile every original ingredient before treating the listed blockers as exhaustive.",
+      "publicationAuthorized": false,
+      "screenStatus": "HOLD",
+      "screenFinding": "Nykyinen1 rivin syöte ei kata alkuperäisen8 ainesosaa: myös250g tahmeaa riisijauhoa ja110g sokeria kuuluvat ohjeeseen. Mustan seesamin ratkaisu yksin ei ratkaise reseptiä.",
+      "recipeSha256Lf": "6bff68e6655d144890de3bb776ae05490d47f80f77088b0f2429ecb72914058a",
+      "inputSha256": "dec6ce7e91584a0e89ad9709091b7a9b1b86e94d11f80cd251c2748d66b18131",
+      "recipeBodyReviewed": true,
+      "existingSourcesAndAuditsReviewed": true,
+      "sqliteRequests": [
+        "tangyuan:0"
+      ]
+    },
+    {
+      "recipeId": "mala-xiang-guo",
+      "recipePath": "reseptit/paaruoat/mala-xiang-guo.md",
+      "blockerCount": 1,
+      "blockers": [
+        "mala-xiang-guo: lootusjuurta: No source-matched composition and preparation was resolved for “lootusjuurta”; it is not treated as zero."
+      ],
+      "solutionTypes": [
+        "COMPOSITION",
+        "GI_OR_PREPARATION"
+      ],
+      "evidenceState": "SOURCE_BINDING_UNRESOLVED",
+      "originalIngredientCount": 12,
+      "inputRowCount": 12,
+      "rowAccounting": "COUNT_MATCH_REQUIRES_SEMANTIC_REVIEW",
+      "priorWithdrawnGiBindings": [],
+      "inheritedAssumptionsRequiringReview": [
+        {
+          "ingredient": "doubanjiang-chilitahnaa",
+          "choEstimate": 0.125,
+          "evidence": "Conservative available-carbohydrate bound 0.5 g per recipe; below 1 g per serving."
+        },
+        {
+          "ingredient": "sichuaninpippuria",
+          "choEstimate": 0.125,
+          "evidence": "Conservative available-carbohydrate bound 0.5 g per recipe; below 1 g per serving."
+        },
+        {
+          "ingredient": "kevätsipulia",
+          "choEstimate": 0.125,
+          "evidence": "Conservative available-carbohydrate bound 0.5 g per recipe; below 1 g per serving."
+        }
+      ],
+      "carbohydrateImpact": {
+        "knownBlockedComponents": [],
+        "knownBlockedSumG": 0,
+        "unknownBlockedComponents": [
+          "lootusjuurta"
+        ],
+        "completeBound": false
+      },
+      "priority": {
+        "score": -10,
+        "factors": {
+          "nativeZeroLead": 0,
+          "verifiedReferencePortionLead": 0,
+          "existingComposition": 0,
+          "completeRowAccounting": 10,
+          "establishedNegativeSearch": 0,
+          "priorBatchWithoutNewLead": 0,
+          "materialUnknownCho": -10,
+          "knownCarbohydrateExposure": 0,
+          "priorScientificWithdrawals": 0,
+          "independentUnknownQuantitiesOrComposition": 0,
+          "inheritedUnweighedCulinaryAssumptions": -10
+        },
+        "basis": "Feasibility heuristic: quantity/source identity, completeness, CHO materiality and previous negative searches; not blocker count alone."
+      },
+      "nextStep": "Search existing composition/GI indexes and verify product/preparation identity before any calculation.",
+      "publicationAuthorized": false,
+      "screenStatus": "NEEDS_CLARIFICATION",
+      "screenFinding": "1kpl lootusjuurta ei määritä massaa tai palan kokoa. SQLite/Fineli/AFCD-rekistereistä ei löydy täsmällistä sidosta; uusi koostumustietue ei ratkaisisi määrää ja GI:tä.",
+      "recipeSha256Lf": "b0236a1129edff415f95fcfdcbe48f12f2f761ecaa7b2588b49a9c3ffb8be887",
+      "inputSha256": "2c01ed511d5030b32690d5162bf5b163f5447a54108cbf62d3f50b39b602448f",
+      "recipeBodyReviewed": true,
+      "existingSourcesAndAuditsReviewed": true,
+      "sqliteRequests": [
+        "mala-xiang-guo:0"
+      ]
+    },
+    {
+      "recipeId": "pellava-puuro-pahkinoilla",
+      "recipePath": "reseptit/aamupalat/pellava-puuro-pahkinoilla.md",
+      "blockerCount": 1,
+      "blockers": [
+        "pellava-puuro-pahkinoilla: kookosjauhoa: No source-matched composition and preparation was resolved for “kookosjauhoa”; it is not treated as zero."
+      ],
+      "solutionTypes": [
+        "COMPOSITION",
+        "GI_OR_PREPARATION"
+      ],
+      "evidenceState": "SOURCE_BINDING_UNRESOLVED",
+      "originalIngredientCount": 8,
+      "inputRowCount": 8,
+      "rowAccounting": "COUNT_MATCH_REQUIRES_SEMANTIC_REVIEW",
+      "priorWithdrawnGiBindings": [],
+      "inheritedAssumptionsRequiringReview": [
+        {
+          "ingredient": "kanelia",
+          "choEstimate": 0.125,
+          "evidence": "Conservative available-carbohydrate bound 0.5 g per recipe; below 1 g per serving."
+        }
+      ],
+      "carbohydrateImpact": {
+        "knownBlockedComponents": [],
+        "knownBlockedSumG": 0,
+        "unknownBlockedComponents": [
+          "kookosjauhoa"
+        ],
+        "completeBound": false
+      },
+      "priority": {
+        "score": -10,
+        "factors": {
+          "nativeZeroLead": 0,
+          "verifiedReferencePortionLead": 0,
+          "existingComposition": 0,
+          "completeRowAccounting": 10,
+          "establishedNegativeSearch": 0,
+          "priorBatchWithoutNewLead": 0,
+          "materialUnknownCho": -10,
+          "knownCarbohydrateExposure": 0,
+          "priorScientificWithdrawals": 0,
+          "independentUnknownQuantitiesOrComposition": 0,
+          "inheritedUnweighedCulinaryAssumptions": -10
+        },
+        "basis": "Feasibility heuristic: quantity/source identity, completeness, CHO materiality and previous negative searches; not blocker count alone."
+      },
+      "nextStep": "Search existing composition/GI indexes and verify product/preparation identity before any calculation.",
+      "publicationAuthorized": false,
+      "screenStatus": "SOURCE_RESEARCH",
+      "screenFinding": "AFCD F002987 on kuivattu kookosraaste, ei kookosjauho. Fineli/AFCD/SQLite eivät tarjoa nyt täsmällistä jauhosidosta. Rasvaisuutta tai tuotetta ei vaihdeta.",
+      "recipeSha256Lf": "8d14943ee4a198f0645ab1020a47d936961a6da07585a0de8cdf902fa8c9fe6a",
+      "inputSha256": "da667df1789be08b64fdc1da6737184de42d0209d353c5959d97dbd46a4a6ba5",
+      "recipeBodyReviewed": true,
+      "existingSourcesAndAuditsReviewed": true,
+      "sqliteRequests": [
+        "pellava-puuro-pahkinoilla:0"
+      ]
+    },
+    {
+      "recipeId": "lahi-ita-labneh-kulho-zaatarilla",
+      "recipePath": "reseptit/aamupalat/lahi-ita-labneh-kulho-zaatarilla.md",
+      "blockerCount": 1,
+      "blockers": [
+        "lahi-ita-labneh-kulho-zaatarilla: labneh: No source-matched composition and preparation was resolved for “labneh”; it is not treated as zero."
+      ],
+      "solutionTypes": [
+        "COMPOSITION",
+        "GI_OR_PREPARATION"
+      ],
+      "evidenceState": "SOURCE_BINDING_UNRESOLVED",
+      "originalIngredientCount": 5,
+      "inputRowCount": 5,
+      "rowAccounting": "COUNT_MATCH_REQUIRES_SEMANTIC_REVIEW",
+      "priorWithdrawnGiBindings": [],
+      "inheritedAssumptionsRequiringReview": [
+        {
+          "ingredient": "zaatar",
+          "choEstimate": 0.25,
+          "evidence": "Conservative available-carbohydrate bound 0.5 g per recipe; below 1 g per serving."
+        }
+      ],
+      "carbohydrateImpact": {
+        "knownBlockedComponents": [],
+        "knownBlockedSumG": 0,
+        "unknownBlockedComponents": [
+          "labneh"
+        ],
+        "completeBound": false
+      },
+      "priority": {
+        "score": -10,
+        "factors": {
+          "nativeZeroLead": 0,
+          "verifiedReferencePortionLead": 0,
+          "existingComposition": 0,
+          "completeRowAccounting": 10,
+          "establishedNegativeSearch": 0,
+          "priorBatchWithoutNewLead": 0,
+          "materialUnknownCho": -10,
+          "knownCarbohydrateExposure": 0,
+          "priorScientificWithdrawals": 0,
+          "independentUnknownQuantitiesOrComposition": 0,
+          "inheritedUnweighedCulinaryAssumptions": -10
+        },
+        "basis": "Feasibility heuristic: quantity/source identity, completeness, CHO materiality and previous negative searches; not blocker count alone."
+      },
+      "nextStep": "Search existing composition/GI indexes and verify product/preparation identity before any calculation.",
+      "publicationAuthorized": false,
+      "screenStatus": "NEEDS_CLARIFICATION",
+      "screenFinding": "100g labneh; valutuksen/rasvapitoisuuden ja valmisteen identiteetti puuttuu. Kreikkalainen jogurtti ei automaattisesti ole sama tuote.",
+      "recipeSha256Lf": "7775f23aefb6aed2434512dd9f5cd42296d3e8bc6aa14decfeaf02bee0e7db95",
+      "inputSha256": "57761d5f255ea87de2d572ac3d8c108e74bac72087689faec2fa963ff67b9864",
+      "recipeBodyReviewed": true,
+      "existingSourcesAndAuditsReviewed": true,
+      "sqliteRequests": [
+        "lahi-ita-labneh-kulho-zaatarilla:0"
+      ]
+    },
+    {
+      "recipeId": "meksikolainen-chilaquiles-verdes",
+      "recipePath": "reseptit/aamupalat/meksikolainen-chilaquiles-verdes.md",
+      "blockerCount": 1,
+      "blockers": [
+        "meksikolainen-chilaquiles-verdes: salsa verde: No source-matched composition and preparation was resolved for “salsa verde”; it is not treated as zero."
+      ],
+      "solutionTypes": [
+        "COMPOSITION",
+        "GI_OR_PREPARATION"
+      ],
+      "evidenceState": "SOURCE_BINDING_UNRESOLVED",
+      "originalIngredientCount": 6,
+      "inputRowCount": 6,
+      "rowAccounting": "COUNT_MATCH_REQUIRES_SEMANTIC_REVIEW",
+      "priorWithdrawnGiBindings": [],
+      "inheritedAssumptionsRequiringReview": [],
+      "carbohydrateImpact": {
+        "knownBlockedComponents": [],
+        "knownBlockedSumG": 0,
+        "unknownBlockedComponents": [
+          "salsa verde"
+        ],
+        "completeBound": false
+      },
+      "priority": {
+        "score": 0,
+        "factors": {
+          "nativeZeroLead": 0,
+          "verifiedReferencePortionLead": 0,
+          "existingComposition": 0,
+          "completeRowAccounting": 10,
+          "establishedNegativeSearch": 0,
+          "priorBatchWithoutNewLead": 0,
+          "materialUnknownCho": -10,
+          "knownCarbohydrateExposure": 0,
+          "priorScientificWithdrawals": 0,
+          "independentUnknownQuantitiesOrComposition": 0,
+          "inheritedUnweighedCulinaryAssumptions": 0
+        },
+        "basis": "Feasibility heuristic: quantity/source identity, completeness, CHO materiality and previous negative searches; not blocker count alone."
+      },
+      "nextStep": "Search existing composition/GI indexes and verify product/preparation identity before any calculation.",
+      "publicationAuthorized": false,
+      "screenStatus": "NEEDS_CLARIFICATION",
+      "screenFinding": "150g salsa verde vaatii todellisen kastikkeen koostumuksen ja valmistuksen. Tomaatti ei korvaa tomatillokastiketta eikä tuotetta nimetä laskennan vuoksi.",
+      "recipeSha256Lf": "84d2801095a02bb3c9a7d98b4c937653798ee84706fe032cf886365bd4ae4160",
+      "inputSha256": "636b45526aa27cf22b7a7a8afa50d471e0b4a52c5f874d5e151a422632a7ab31",
+      "recipeBodyReviewed": true,
+      "existingSourcesAndAuditsReviewed": true,
+      "sqliteRequests": [
+        "meksikolainen-chilaquiles-verdes:0"
+      ]
+    },
+    {
+      "recipeId": "meksikolainen-huevos-divorciados",
+      "recipePath": "reseptit/aamupalat/meksikolainen-huevos-divorciados.md",
+      "blockerCount": 1,
+      "blockers": [
+        "meksikolainen-huevos-divorciados: vihreä salsa: No source-matched composition and preparation was resolved for “vihreä salsa”; it is not treated as zero."
+      ],
+      "solutionTypes": [
+        "COMPOSITION",
+        "GI_OR_PREPARATION"
+      ],
+      "evidenceState": "SOURCE_BINDING_UNRESOLVED",
+      "originalIngredientCount": 6,
+      "inputRowCount": 6,
+      "rowAccounting": "COUNT_MATCH_REQUIRES_SEMANTIC_REVIEW",
+      "priorWithdrawnGiBindings": [],
+      "inheritedAssumptionsRequiringReview": [],
+      "carbohydrateImpact": {
+        "knownBlockedComponents": [],
+        "knownBlockedSumG": 0,
+        "unknownBlockedComponents": [
+          "vihreä salsa"
+        ],
+        "completeBound": false
+      },
+      "priority": {
+        "score": 0,
+        "factors": {
+          "nativeZeroLead": 0,
+          "verifiedReferencePortionLead": 0,
+          "existingComposition": 0,
+          "completeRowAccounting": 10,
+          "establishedNegativeSearch": 0,
+          "priorBatchWithoutNewLead": 0,
+          "materialUnknownCho": -10,
+          "knownCarbohydrateExposure": 0,
+          "priorScientificWithdrawals": 0,
+          "independentUnknownQuantitiesOrComposition": 0,
+          "inheritedUnweighedCulinaryAssumptions": 0
+        },
+        "basis": "Feasibility heuristic: quantity/source identity, completeness, CHO materiality and previous negative searches; not blocker count alone."
+      },
+      "nextStep": "Search existing composition/GI indexes and verify product/preparation identity before any calculation.",
+      "publicationAuthorized": false,
+      "screenStatus": "NEEDS_CLARIFICATION",
+      "screenFinding": "150g vihreä salsa ei yksilöi tuotetta tai kotireseptiä. Koostumus ja GI-soveltuvuus jäävät avoimiksi.",
+      "recipeSha256Lf": "8e513db20a0b1a7ef2bc1b19d69f781853384522b42a87f88c75fb8c33307334",
+      "inputSha256": "d39ed88cb2a1f32bd4c4850695fdeb8aa9a72fb4d3181d17942614ab541dfc73",
+      "recipeBodyReviewed": true,
+      "existingSourcesAndAuditsReviewed": true,
+      "sqliteRequests": [
+        "meksikolainen-huevos-divorciados:0"
+      ]
+    },
+    {
+      "recipeId": "valimerellinen-halloumi-tomaattileipa",
+      "recipePath": "reseptit/aamupalat/valimerellinen-halloumi-tomaattileipa.md",
+      "blockerCount": 1,
+      "blockers": [
+        "valimerellinen-halloumi-tomaattileipa: hapanjuurileipä: No source-matched composition and preparation was resolved for “hapanjuurileipä”; it is not treated as zero."
+      ],
+      "solutionTypes": [
+        "COMPOSITION",
+        "GI_OR_PREPARATION"
+      ],
+      "evidenceState": "SOURCE_BINDING_UNRESOLVED",
+      "originalIngredientCount": 6,
+      "inputRowCount": 6,
+      "rowAccounting": "COUNT_MATCH_REQUIRES_SEMANTIC_REVIEW",
+      "priorWithdrawnGiBindings": [],
+      "inheritedAssumptionsRequiringReview": [],
+      "carbohydrateImpact": {
+        "knownBlockedComponents": [],
+        "knownBlockedSumG": 0,
+        "unknownBlockedComponents": [
+          "hapanjuurileipä"
+        ],
+        "completeBound": false
+      },
+      "priority": {
+        "score": 0,
+        "factors": {
+          "nativeZeroLead": 0,
+          "verifiedReferencePortionLead": 0,
+          "existingComposition": 0,
+          "completeRowAccounting": 10,
+          "establishedNegativeSearch": 0,
+          "priorBatchWithoutNewLead": 0,
+          "materialUnknownCho": -10,
+          "knownCarbohydrateExposure": 0,
+          "priorScientificWithdrawals": 0,
+          "independentUnknownQuantitiesOrComposition": 0,
+          "inheritedUnweighedCulinaryAssumptions": 0
+        },
+        "basis": "Feasibility heuristic: quantity/source identity, completeness, CHO materiality and previous negative searches; not blocker count alone."
+      },
+      "nextStep": "Search existing composition/GI indexes and verify product/preparation identity before any calculation.",
+      "publicationAuthorized": false,
+      "screenStatus": "NEEDS_CLARIFICATION",
+      "screenFinding": "100g hapanjuurileivän viljalaji, koostumus ja fermentaatio puuttuvat. Nimetyllä muulla leivällä tehty versio ei ratkaise alkuperäistä.",
+      "recipeSha256Lf": "53ff3eaf7cc57e6b4d4a2c7d2caf51a51dff926f99532fa069e598fb558a9e67",
+      "inputSha256": "2cf8a5a1648683a4117e2719cb6c47e17195141636f46711532502033014ce93",
+      "recipeBodyReviewed": true,
+      "existingSourcesAndAuditsReviewed": true,
+      "sqliteRequests": [
+        "valimerellinen-halloumi-tomaattileipa:0"
+      ]
+    },
+    {
+      "recipeId": "bibimbap",
+      "recipePath": "reseptit/paaruoat/bibimbap.md",
+      "blockerCount": 1,
+      "blockers": [
+        "bibimbap: gochujang-tahnaa: 2 tbsp unbranded gochujang has no product composition; available carbohydrate and sugar/rice content are material."
+      ],
+      "solutionTypes": [
+        "COMPOSITION",
+        "IDENTITY_OR_CLARIFICATION"
+      ],
+      "evidenceState": "SOURCE_BINDING_UNRESOLVED",
+      "originalIngredientCount": 13,
+      "inputRowCount": 13,
+      "rowAccounting": "COUNT_MATCH_REQUIRES_SEMANTIC_REVIEW",
+      "priorWithdrawnGiBindings": [],
+      "inheritedAssumptionsRequiringReview": [],
+      "carbohydrateImpact": {
+        "knownBlockedComponents": [],
+        "knownBlockedSumG": 0,
+        "unknownBlockedComponents": [
+          "gochujang-tahnaa"
+        ],
+        "completeBound": false
+      },
+      "priority": {
+        "score": 0,
+        "factors": {
+          "nativeZeroLead": 0,
+          "verifiedReferencePortionLead": 0,
+          "existingComposition": 0,
+          "completeRowAccounting": 10,
+          "establishedNegativeSearch": 0,
+          "priorBatchWithoutNewLead": 0,
+          "materialUnknownCho": -10,
+          "knownCarbohydrateExposure": 0,
+          "priorScientificWithdrawals": 0,
+          "independentUnknownQuantitiesOrComposition": 0,
+          "inheritedUnweighedCulinaryAssumptions": 0
+        },
+        "basis": "Feasibility heuristic: quantity/source identity, completeness, CHO materiality and previous negative searches; not blocker count alone."
+      },
+      "nextStep": "Search existing composition/GI indexes and verify product/preparation identity before any calculation.",
+      "publicationAuthorized": false,
+      "screenStatus": "NEEDS_CLARIFICATION",
+      "screenFinding": "2rkl gochujang: riisi-/sokerikoostumus ja lusikkamassa riippuvat tuotteesta. Eri tuotetta ei valita pienimmän CHO:n perusteella.",
+      "recipeSha256Lf": "2958b592708535d22287f845d66a1b4523827f940e69d76f8852a8e5d1de5340",
+      "inputSha256": "7af7d0d876cc74b143877ba6f34382e42a56c407d6f6487105a5906933e80132",
+      "recipeBodyReviewed": true,
+      "existingSourcesAndAuditsReviewed": true,
+      "sqliteRequests": [
+        "bibimbap:0"
+      ]
+    },
+    {
+      "recipeId": "mapo-tofu",
+      "recipePath": "reseptit/paaruoat/mapo-tofu.md",
+      "blockerCount": 1,
+      "blockers": [
+        "mapo-tofu: keitettyä riisiä: The recipe amount 4 annosta has no food-specific mass conversion for RIISI PITKÄJYVÄINEN, PUUROUTUMATON."
+      ],
+      "solutionTypes": [
+        "QUANTITY"
+      ],
+      "evidenceState": "SOURCE_BINDING_UNRESOLVED",
+      "originalIngredientCount": 13,
+      "inputRowCount": 13,
+      "rowAccounting": "COUNT_MATCH_REQUIRES_SEMANTIC_REVIEW",
+      "priorWithdrawnGiBindings": [],
+      "inheritedAssumptionsRequiringReview": [
+        {
+          "ingredient": "doubanjiang-chilitahnaa",
+          "choEstimate": 0.125,
+          "evidence": "Conservative available-carbohydrate bound 0.5 g per recipe; below 1 g per serving."
+        },
+        {
+          "ingredient": "tuoretta inkivääriä",
+          "choEstimate": 0.125,
+          "evidence": "Conservative available-carbohydrate bound 0.5 g per recipe; below 1 g per serving."
+        },
+        {
+          "ingredient": "jauhettua sichuaninpippuria",
+          "choEstimate": 0.125,
+          "evidence": "Conservative available-carbohydrate bound 0.5 g per recipe; below 1 g per serving."
+        },
+        {
+          "ingredient": "kevätsipulia",
+          "choEstimate": 0.125,
+          "evidence": "Conservative available-carbohydrate bound 0.5 g per recipe; below 1 g per serving."
+        }
+      ],
+      "carbohydrateImpact": {
+        "knownBlockedComponents": [],
+        "knownBlockedSumG": 0,
+        "unknownBlockedComponents": [
+          "keitettyä riisiä"
+        ],
+        "completeBound": false
+      },
+      "priority": {
+        "score": 0,
+        "factors": {
+          "nativeZeroLead": 0,
+          "verifiedReferencePortionLead": 0,
+          "existingComposition": 10,
+          "completeRowAccounting": 10,
+          "establishedNegativeSearch": 0,
+          "priorBatchWithoutNewLead": 0,
+          "materialUnknownCho": -10,
+          "knownCarbohydrateExposure": 0,
+          "priorScientificWithdrawals": 0,
+          "independentUnknownQuantitiesOrComposition": 0,
+          "inheritedUnweighedCulinaryAssumptions": -10
+        },
+        "basis": "Feasibility heuristic: quantity/source identity, completeness, CHO materiality and previous negative searches; not blocker count alone."
+      },
+      "nextStep": "Check existing food-specific reference portions and the exact original quantity; no copied variant mass.",
+      "publicationAuthorized": false,
+      "screenStatus": "NEEDS_CLARIFICATION",
+      "screenFinding": "4 annosta keitettyä riisiä ei ole määrä grammoina. Kuivapainoa tai standardiannosta ei päätellä eikä kypsä/raaka-muunnosta keksitä.",
+      "recipeSha256Lf": "13ee33643135ded5d919c1263d5d4a5017a13b55024d2d2fa109d76709591895",
+      "inputSha256": "9235ca21e0095d6a2d71f0c810c1f2f2f0dc2bf19f9cf46dd247c80f025f4a31",
+      "recipeBodyReviewed": true,
+      "existingSourcesAndAuditsReviewed": true,
+      "sqliteRequests": [
+        "mapo-tofu:0"
+      ]
+    },
+    {
+      "recipeId": "keto-kauralesesampylat",
+      "recipePath": "reseptit/leivonnaiset/keto-kauralesesampylat.md",
+      "blockerCount": 1,
+      "blockers": [
+        "keto-kauralesesampylat: kauralesettä: AJO 1.8: finished bakery category mean GI 58 does not measure this ingredient/preparation. No sufficiently matched original human GI source established; see glycemic-bakery-four-source-review.md."
+      ],
+      "solutionTypes": [
+        "GI_OR_PREPARATION"
+      ],
+      "evidenceState": "NO_RELIABLE_SOURCE_FOUND",
+      "originalIngredientCount": 10,
+      "inputRowCount": 10,
+      "rowAccounting": "COUNT_MATCH_REQUIRES_SEMANTIC_REVIEW",
+      "priorWithdrawnGiBindings": [],
+      "inheritedAssumptionsRequiringReview": [],
+      "carbohydrateImpact": {
+        "knownBlockedComponents": [
+          {
+            "ingredient": "kauralesettä",
+            "choPerServingG": 1.6309375
+          }
+        ],
+        "knownBlockedSumG": 1.6309375,
+        "unknownBlockedComponents": [],
+        "completeBound": false
+      },
+      "priority": {
+        "score": -15,
+        "factors": {
+          "nativeZeroLead": 0,
+          "verifiedReferencePortionLead": 0,
+          "existingComposition": 10,
+          "completeRowAccounting": 10,
+          "establishedNegativeSearch": -25,
+          "priorBatchWithoutNewLead": 0,
+          "materialUnknownCho": 0,
+          "knownCarbohydrateExposure": -10,
+          "priorScientificWithdrawals": 0,
+          "independentUnknownQuantitiesOrComposition": 0,
+          "inheritedUnweighedCulinaryAssumptions": 0
+        },
+        "basis": "Feasibility heuristic: quantity/source identity, completeness, CHO materiality and previous negative searches; not blocker count alone."
+      },
+      "nextStep": "Use the pinned earlier source review; new research requires a concrete new lead.",
+      "publicationAuthorized": false,
+      "screenStatus": "HOLD",
+      "screenFinding": "25g kauraleseitä tuottaa1.6309375g CHO/annos, yli yksittäisrajan. AJO1.8:n negatiivinen valmistusmatch säilyy; muu leipä-GI ei mittaa tätä paistettua leseohjetta.",
+      "recipeSha256Lf": "440af17791363cba9823f3ab38fbd4ba813ba45e3a5f468084b86d91603d46c8",
+      "inputSha256": "7affc56a88cf9ed503ddc6abe0c4019741285e8440394c1cbc8c412ef130abcb",
+      "recipeBodyReviewed": true,
+      "existingSourcesAndAuditsReviewed": true,
+      "sqliteRequests": [
+        "keto-kauralesesampylat:0"
+      ]
+    },
+    {
+      "recipeId": "rahkapiirakka-vhh",
+      "recipePath": "reseptit/jalkiruoat/rahkapiirakka-vhh.md",
+      "blockerCount": 1,
+      "blockers": [
+        "rahkapiirakka-vhh: mantelijauhoa: AJO 1.7: bakery GI 58 is a finished-product category mean, not almond meal. No preparation-matched primary human GI was found. AFCD F006077 is full-fat almond meal (CHOAVL without polyols 5.4 g/100 g), not defatted flour or almond bread. Missing GI is not zero."
+      ],
+      "solutionTypes": [
+        "GI_OR_PREPARATION",
+        "IDENTITY_OR_CLARIFICATION"
+      ],
+      "evidenceState": "NO_RELIABLE_SOURCE_FOUND",
+      "originalIngredientCount": 8,
+      "inputRowCount": 8,
+      "rowAccounting": "COUNT_MATCH_REQUIRES_SEMANTIC_REVIEW",
+      "priorWithdrawnGiBindings": [],
+      "inheritedAssumptionsRequiringReview": [],
+      "carbohydrateImpact": {
+        "knownBlockedComponents": [
+          {
+            "ingredient": "mantelijauhoa",
+            "choPerServingG": 1.0125
+          }
+        ],
+        "knownBlockedSumG": 1.0125,
+        "unknownBlockedComponents": [],
+        "completeBound": false
+      },
+      "priority": {
+        "score": -15,
+        "factors": {
+          "nativeZeroLead": 0,
+          "verifiedReferencePortionLead": 0,
+          "existingComposition": 10,
+          "completeRowAccounting": 10,
+          "establishedNegativeSearch": -25,
+          "priorBatchWithoutNewLead": 0,
+          "materialUnknownCho": 0,
+          "knownCarbohydrateExposure": -10,
+          "priorScientificWithdrawals": 0,
+          "independentUnknownQuantitiesOrComposition": 0,
+          "inheritedUnweighedCulinaryAssumptions": 0
+        },
+        "basis": "Feasibility heuristic: quantity/source identity, completeness, CHO materiality and previous negative searches; not blocker count alone."
+      },
+      "nextStep": "Use the pinned earlier source review; new research requires a concrete new lead.",
+      "publicationAuthorized": false,
+      "screenStatus": "HOLD",
+      "screenFinding": "Mantelijauhon1.0125g ylittää1g:n rajan. Ei pyöristystä alle rajan, pienempää määrää tai eri koostumustietueen valintaa kattavuuden vuoksi. AJO1.7 säilyy.",
+      "recipeSha256Lf": "e902035d36263b4ad41d337d5fed8283d76e8fffcbfc87c28d53076c075dfdab",
+      "inputSha256": "e1550d8e93dbf8b2f2a9fc55c085a5a3686ab21519e2b7e0431ba76db596e30a",
+      "recipeBodyReviewed": true,
+      "existingSourcesAndAuditsReviewed": true,
+      "sqliteRequests": [
+        "rahkapiirakka-vhh:0"
+      ]
+    },
+    {
+      "recipeId": "vhh-lihapiirakka",
+      "recipePath": "reseptit/leivonnaiset/vhh-lihapiirakka.md",
+      "blockerCount": 1,
+      "blockers": [
+        "vhh-lihapiirakka: mantelijauhoa: AJO 1.7: bakery GI 58 is a finished-product category mean, not almond meal. No preparation-matched primary human GI was found. AFCD F006077 is full-fat almond meal (CHOAVL without polyols 5.4 g/100 g), not defatted flour or almond bread. Missing GI is not zero."
+      ],
+      "solutionTypes": [
+        "GI_OR_PREPARATION",
+        "IDENTITY_OR_CLARIFICATION"
+      ],
+      "evidenceState": "NO_RELIABLE_SOURCE_FOUND",
+      "originalIngredientCount": 8,
+      "inputRowCount": 8,
+      "rowAccounting": "COUNT_MATCH_REQUIRES_SEMANTIC_REVIEW",
+      "priorWithdrawnGiBindings": [],
+      "inheritedAssumptionsRequiringReview": [],
+      "carbohydrateImpact": {
+        "knownBlockedComponents": [
+          {
+            "ingredient": "mantelijauhoa",
+            "choPerServingG": 1.35
+          }
+        ],
+        "knownBlockedSumG": 1.35,
+        "unknownBlockedComponents": [],
+        "completeBound": false
+      },
+      "priority": {
+        "score": -15,
+        "factors": {
+          "nativeZeroLead": 0,
+          "verifiedReferencePortionLead": 0,
+          "existingComposition": 10,
+          "completeRowAccounting": 10,
+          "establishedNegativeSearch": -25,
+          "priorBatchWithoutNewLead": 0,
+          "materialUnknownCho": 0,
+          "knownCarbohydrateExposure": -10,
+          "priorScientificWithdrawals": 0,
+          "independentUnknownQuantitiesOrComposition": 0,
+          "inheritedUnweighedCulinaryAssumptions": 0
+        },
+        "basis": "Feasibility heuristic: quantity/source identity, completeness, CHO materiality and previous negative searches; not blocker count alone."
+      },
+      "nextStep": "Use the pinned earlier source review; new research requires a concrete new lead.",
+      "publicationAuthorized": false,
+      "screenStatus": "HOLD",
+      "screenFinding": "Mantelijauhon1.35g/annos tarvitsee valmistusmatchin; AJO1.7 ei vahvistanut sitä.",
+      "recipeSha256Lf": "8b5071d4c6b08847a0855b630b34ee55471ed00cf6f61b9687e25f56f3ec96a9",
+      "inputSha256": "d672d10838ced75d9c197ad3fd667e30875a8fcadd33438489a67effedda4f8b",
+      "recipeBodyReviewed": true,
+      "existingSourcesAndAuditsReviewed": true,
+      "sqliteRequests": [
+        "vhh-lihapiirakka:0"
+      ]
+    },
+    {
+      "recipeId": "keto-korvapuustit",
+      "recipePath": "reseptit/leivonnaiset/keto-korvapuustit.md",
+      "blockerCount": 1,
+      "blockers": [
+        "keto-korvapuustit: mantelijauhoa: AJO 1.7: bakery GI 58 is a finished-product category mean, not almond meal. No preparation-matched primary human GI was found. AFCD F006077 is full-fat almond meal (CHOAVL without polyols 5.4 g/100 g), not defatted flour or almond bread. Missing GI is not zero."
+      ],
+      "solutionTypes": [
+        "GI_OR_PREPARATION",
+        "IDENTITY_OR_CLARIFICATION"
+      ],
+      "evidenceState": "NO_RELIABLE_SOURCE_FOUND",
+      "originalIngredientCount": 7,
+      "inputRowCount": 7,
+      "rowAccounting": "COUNT_MATCH_REQUIRES_SEMANTIC_REVIEW",
+      "priorWithdrawnGiBindings": [],
+      "inheritedAssumptionsRequiringReview": [],
+      "carbohydrateImpact": {
+        "knownBlockedComponents": [
+          {
+            "ingredient": "mantelijauhoa",
+            "choPerServingG": 1.35
+          }
+        ],
+        "knownBlockedSumG": 1.35,
+        "unknownBlockedComponents": [],
+        "completeBound": false
+      },
+      "priority": {
+        "score": -15,
+        "factors": {
+          "nativeZeroLead": 0,
+          "verifiedReferencePortionLead": 0,
+          "existingComposition": 10,
+          "completeRowAccounting": 10,
+          "establishedNegativeSearch": -25,
+          "priorBatchWithoutNewLead": 0,
+          "materialUnknownCho": 0,
+          "knownCarbohydrateExposure": -10,
+          "priorScientificWithdrawals": 0,
+          "independentUnknownQuantitiesOrComposition": 0,
+          "inheritedUnweighedCulinaryAssumptions": 0
+        },
+        "basis": "Feasibility heuristic: quantity/source identity, completeness, CHO materiality and previous negative searches; not blocker count alone."
+      },
+      "nextStep": "Use the pinned earlier source review; new research requires a concrete new lead.",
+      "publicationAuthorized": false,
+      "screenStatus": "HOLD",
+      "screenFinding": "Mantelijauhon1.35g/annos ei ole pieni poisjättö. Mozzarellataikinan valmistusta ei ratkaise leipien ryhmäkeskiarvo.",
+      "recipeSha256Lf": "84f4ef23369a64393f922fd5df3f22079ca56ddcd8e5963d2d5484542252ba24",
+      "inputSha256": "512ec0f1d88d2b453254d4a6f7e4cb17335e9a80f9a35b6f3dbf11fc8ecb2c24",
+      "recipeBodyReviewed": true,
+      "existingSourcesAndAuditsReviewed": true,
+      "sqliteRequests": [
+        "keto-korvapuustit:0"
+      ]
+    },
+    {
+      "recipeId": "vada-pav",
+      "recipePath": "reseptit/alkuruoat/vada-pav.md",
+      "blockerCount": 1,
+      "blockers": [
+        "vada-pav: kikhernejauhoja: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
+      ],
+      "solutionTypes": [
+        "GI_OR_PREPARATION"
+      ],
+      "evidenceState": "SOURCE_BINDING_UNRESOLVED",
+      "originalIngredientCount": 12,
+      "inputRowCount": 3,
+      "rowAccounting": "RECONCILE_WHOLE_RECIPE_FIRST",
+      "priorWithdrawnGiBindings": [],
+      "inheritedAssumptionsRequiringReview": [],
+      "carbohydrateImpact": {
+        "knownBlockedComponents": [
+          {
+            "ingredient": "kikhernejauhoja",
+            "choPerServingG": 9.625
+          }
+        ],
+        "knownBlockedSumG": 9.625,
+        "unknownBlockedComponents": [],
+        "completeBound": false
+      },
+      "priority": {
+        "score": -35,
+        "factors": {
+          "nativeZeroLead": 0,
+          "verifiedReferencePortionLead": 0,
+          "existingComposition": 10,
+          "completeRowAccounting": -35,
+          "establishedNegativeSearch": 0,
+          "priorBatchWithoutNewLead": 0,
+          "materialUnknownCho": 0,
+          "knownCarbohydrateExposure": -10,
+          "priorScientificWithdrawals": 0,
+          "independentUnknownQuantitiesOrComposition": 0,
+          "inheritedUnweighedCulinaryAssumptions": 0
+        },
+        "basis": "Feasibility heuristic: quantity/source identity, completeness, CHO materiality and previous negative searches; not blocker count alone."
+      },
+      "nextStep": "Reconcile every original ingredient before treating the listed blockers as exhaustive.",
+      "publicationAuthorized": false,
+      "screenStatus": "HOLD",
+      "screenFinding": "Nykyinen3 riviä ei kata12 alkuperäistä ainesosaa, mukaan lukien4 sämpylää. Kikhernejauhon GI:n etsiminen yksin ei ratkaise kokonaisuutta.",
+      "recipeSha256Lf": "c9c0fa28820ada9ec13566a81e281a81d785c5632b3de6741b2823720021dd77",
+      "inputSha256": "92e7c51a99e8dde61d2079e027bec9eedd995316d784b348501fb52a119379a8",
+      "recipeBodyReviewed": true,
+      "existingSourcesAndAuditsReviewed": true,
+      "sqliteRequests": [
+        "vada-pav:0"
+      ]
+    },
+    {
+      "recipeId": "korealainen-bindaetteok-aamiaiseksi",
+      "recipePath": "reseptit/aamupalat/korealainen-bindaetteok-aamiaiseksi.md",
+      "blockerCount": 1,
+      "blockers": [
+        "korealainen-bindaetteok-aamiaiseksi: kimchi: No source-matched composition and preparation was resolved for “kimchi”; it is not treated as zero."
+      ],
+      "solutionTypes": [
+        "COMPOSITION",
+        "GI_OR_PREPARATION"
+      ],
+      "evidenceState": "SOURCE_BINDING_UNRESOLVED",
+      "originalIngredientCount": 6,
+      "inputRowCount": 6,
+      "rowAccounting": "COUNT_MATCH_REQUIRES_SEMANTIC_REVIEW",
+      "priorWithdrawnGiBindings": [],
+      "inheritedAssumptionsRequiringReview": [
+        {
+          "ingredient": "kevätsipuli",
+          "choEstimate": 0.25,
+          "evidence": "Conservative available-carbohydrate bound 0.5 g per recipe; below 1 g per serving."
+        }
+      ],
+      "carbohydrateImpact": {
+        "knownBlockedComponents": [],
+        "knownBlockedSumG": 0,
+        "unknownBlockedComponents": [
+          "kimchi"
+        ],
+        "completeBound": false
+      },
+      "priority": {
+        "score": -10,
+        "factors": {
+          "nativeZeroLead": 0,
+          "verifiedReferencePortionLead": 0,
+          "existingComposition": 0,
+          "completeRowAccounting": 10,
+          "establishedNegativeSearch": 0,
+          "priorBatchWithoutNewLead": 0,
+          "materialUnknownCho": -10,
+          "knownCarbohydrateExposure": 0,
+          "priorScientificWithdrawals": 0,
+          "independentUnknownQuantitiesOrComposition": 0,
+          "inheritedUnweighedCulinaryAssumptions": -10
+        },
+        "basis": "Feasibility heuristic: quantity/source identity, completeness, CHO materiality and previous negative searches; not blocker count alone."
+      },
+      "nextStep": "Search existing composition/GI indexes and verify product/preparation identity before any calculation.",
+      "publicationAuthorized": false,
+      "screenStatus": "NEEDS_CLARIFICATION",
+      "screenFinding": "Alkuperäinen150g kimchi vaatii täsmällisen valmisteen; aiemman erillisversion kimchin vähennys25g:aan ei ole ratkaisu.",
+      "recipeSha256Lf": "d2a7929ac74825b42e516a08fda2ec1964bd3c5115d047be83c3babadc315ada",
+      "inputSha256": "f2138f00353279ef9b8fc16624625601b4fc5448ecfc41c428aa27392bf34ac9",
+      "recipeBodyReviewed": true,
+      "existingSourcesAndAuditsReviewed": true,
+      "sqliteRequests": [
+        "korealainen-bindaetteok-aamiaiseksi:0"
+      ]
+    },
+    {
+      "recipeId": "aloo-paratha",
+      "recipePath": "reseptit/paaruoat/aloo-paratha.md",
+      "blockerCount": 1,
+      "blockers": [
+        "aloo-paratha: vehnäjauhoja: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved."
+      ],
+      "solutionTypes": [
+        "QUANTITY",
+        "COMPOSITION",
+        "GI_OR_PREPARATION",
+        "IDENTITY_OR_CLARIFICATION"
+      ],
+      "evidenceState": "NO_RELIABLE_SOURCE_FOUND",
+      "originalIngredientCount": 9,
+      "inputRowCount": 2,
+      "rowAccounting": "RECONCILE_WHOLE_RECIPE_FIRST",
+      "priorWithdrawnGiBindings": [],
+      "inheritedAssumptionsRequiringReview": [],
+      "carbohydrateImpact": {
+        "knownBlockedComponents": [
+          {
+            "ingredient": "vehnäjauhoja",
+            "choPerServingG": 55.49850000000001
+          }
+        ],
+        "knownBlockedSumG": 55.49850000000001,
+        "unknownBlockedComponents": [],
+        "completeBound": false
+      },
+      "priority": {
+        "score": -60,
+        "factors": {
+          "nativeZeroLead": 0,
+          "verifiedReferencePortionLead": 0,
+          "existingComposition": 10,
+          "completeRowAccounting": -35,
+          "establishedNegativeSearch": -25,
+          "priorBatchWithoutNewLead": 0,
+          "materialUnknownCho": 0,
+          "knownCarbohydrateExposure": -10,
+          "priorScientificWithdrawals": 0,
+          "independentUnknownQuantitiesOrComposition": 0,
+          "inheritedUnweighedCulinaryAssumptions": 0
+        },
+        "basis": "Feasibility heuristic: quantity/source identity, completeness, CHO materiality and previous negative searches; not blocker count alone."
+      },
+      "nextStep": "Reconcile every original ingredient before treating the listed blockers as exhaustive.",
+      "publicationAuthorized": false,
+      "screenStatus": "HOLD",
+      "screenFinding": "Nykyinen2 riviä ei kata9 alkuperäistä ainesosaa. Valmistusmatch ja perunatäytteen koko koostumus ratkaistava; tutkimusannosta ei siirretä kotireseptiksi.",
+      "recipeSha256Lf": "e6227412661df24116ad197f1d11700f6066c9f78e28064152f1792e11e24206",
+      "inputSha256": "f2ce9e98a9bcdb938c8c009be8b6499912d211f50514b1c47a0ff383c4ef08d4",
+      "recipeBodyReviewed": true,
+      "existingSourcesAndAuditsReviewed": true,
+      "sqliteRequests": [
+        "aloo-paratha:0"
+      ]
+    },
+    {
+      "recipeId": "kiinalainen-teehaudutetut-munat",
+      "recipePath": "reseptit/aamupalat/kiinalainen-teehaudutetut-munat.md",
+      "blockerCount": 1,
+      "blockers": [
+        "Q09 source data incomplete: consumed marinade and star anise; do not display zero."
+      ],
+      "solutionTypes": [
+        "GI_OR_PREPARATION"
+      ],
+      "evidenceState": "SOURCE_BINDING_UNRESOLVED",
+      "originalIngredientCount": 5,
+      "inputRowCount": 5,
+      "rowAccounting": "COUNT_MATCH_REQUIRES_SEMANTIC_REVIEW",
+      "priorWithdrawnGiBindings": [],
+      "inheritedAssumptionsRequiringReview": [
+        {
+          "ingredient": "tähtianista",
+          "choEstimate": 0.25,
+          "evidence": "Conservative available-carbohydrate bound 0.5 g per recipe; below 1 g per serving."
+        }
+      ],
+      "carbohydrateImpact": {
+        "knownBlockedComponents": [],
+        "knownBlockedSumG": 0,
+        "unknownBlockedComponents": [],
+        "completeBound": false
+      },
+      "priority": {
+        "score": 0,
+        "factors": {
+          "nativeZeroLead": 0,
+          "verifiedReferencePortionLead": 0,
+          "existingComposition": 0,
+          "completeRowAccounting": 10,
+          "establishedNegativeSearch": 0,
+          "priorBatchWithoutNewLead": 0,
+          "materialUnknownCho": 0,
+          "knownCarbohydrateExposure": 0,
+          "priorScientificWithdrawals": 0,
+          "independentUnknownQuantitiesOrComposition": 0,
+          "inheritedUnweighedCulinaryAssumptions": -10
+        },
+        "basis": "Feasibility heuristic: quantity/source identity, completeness, CHO materiality and previous negative searches; not blocker count alone."
+      },
+      "nextStep": "Search existing composition/GI indexes and verify product/preparation identity before any calculation.",
+      "publicationAuthorized": false,
+      "screenStatus": "NEEDS_CLARIFICATION",
+      "screenFinding": "Q09:ssa syödyn marinadin ja tähtianiksen osuudet puuttuvat. Koko kastiketta ei lasketa syödyksi eikä poistuvaa osuutta oleteta nollaksi.",
+      "recipeSha256Lf": "bae898d991ed769ae2853f2860e1ebcd3629e292e0d5ca2901244c0377d640e1",
+      "inputSha256": "cbbed64b977bb8fecf5cc3524e38faa754c0a33bbe3217c5d0e46eb569c8542f",
+      "recipeBodyReviewed": true,
+      "existingSourcesAndAuditsReviewed": true,
+      "sqliteRequests": [
+        "kiinalainen-teehaudutetut-munat:0"
+      ]
+    },
+    {
+      "recipeId": "pad-kee-mao-vhh-konjac",
+      "recipePath": "reseptit/paaruoat/pad-kee-mao-vhh-konjac.md",
+      "blockerCount": 1,
+      "blockers": [
+        "pad-kee-mao-vhh-konjac: punaista paprikaa: AJO 1.6B: generic Pepper GI 40 is reference-only. Species, colour, preparation and original human measurement are unverified; DOI 10.3390/nu12102989 Table 1 cannot support this ingredient. Missing GI is not zero."
+      ],
+      "solutionTypes": [
+        "GI_OR_PREPARATION"
+      ],
+      "evidenceState": "SOURCE_BINDING_UNRESOLVED",
+      "originalIngredientCount": 12,
+      "inputRowCount": 12,
+      "rowAccounting": "COUNT_MATCH_REQUIRES_SEMANTIC_REVIEW",
+      "priorWithdrawnGiBindings": [],
+      "inheritedAssumptionsRequiringReview": [],
+      "carbohydrateImpact": {
+        "knownBlockedComponents": [
+          {
+            "ingredient": "punaista paprikaa",
+            "choPerServingG": 1.35
+          }
+        ],
+        "knownBlockedSumG": 1.35,
+        "unknownBlockedComponents": [],
+        "completeBound": false
+      },
+      "priority": {
+        "score": 10,
+        "factors": {
+          "nativeZeroLead": 0,
+          "verifiedReferencePortionLead": 0,
+          "existingComposition": 10,
+          "completeRowAccounting": 10,
+          "establishedNegativeSearch": 0,
+          "priorBatchWithoutNewLead": 0,
+          "materialUnknownCho": 0,
+          "knownCarbohydrateExposure": -10,
+          "priorScientificWithdrawals": 0,
+          "independentUnknownQuantitiesOrComposition": 0,
+          "inheritedUnweighedCulinaryAssumptions": 0
+        },
+        "basis": "Feasibility heuristic: quantity/source identity, completeness, CHO materiality and previous negative searches; not blocker count alone."
+      },
+      "nextStep": "Search existing composition/GI indexes and verify product/preparation identity before any calculation.",
+      "publicationAuthorized": false,
+      "screenStatus": "HOLD",
+      "screenFinding": "Paprikan1.35g/annos on yli1g. AJO1.6B:n REFERENCE_ONLY-paprika40 ei muutu uudeksi ihmis-GI-näytöksi.",
+      "recipeSha256Lf": "85931d9ea0a5d4d8910ce51bed38af5ac52b8803414114118fde62de007827be",
+      "inputSha256": "2809378d6edc024227813f4ab6407e94a14e11f4de2b87e1ca7ee80b96e5ea39",
+      "recipeBodyReviewed": true,
+      "existingSourcesAndAuditsReviewed": true,
+      "sqliteRequests": [
+        "pad-kee-mao-vhh-konjac:0"
+      ]
+    },
+    {
+      "recipeId": "vhh-mustikkapiirakka",
+      "recipePath": "reseptit/jalkiruoat/vhh-mustikkapiirakka.md",
+      "blockerCount": 1,
+      "blockers": [
+        "vhh-mustikkapiirakka: mustikoita: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
+      ],
+      "solutionTypes": [
+        "GI_OR_PREPARATION"
+      ],
+      "evidenceState": "SOURCE_BINDING_UNRESOLVED",
+      "originalIngredientCount": 7,
+      "inputRowCount": 7,
+      "rowAccounting": "COUNT_MATCH_REQUIRES_SEMANTIC_REVIEW",
+      "priorWithdrawnGiBindings": [],
+      "inheritedAssumptionsRequiringReview": [],
+      "carbohydrateImpact": {
+        "knownBlockedComponents": [
+          {
+            "ingredient": "mustikoita",
+            "choPerServingG": 1.909125
+          }
+        ],
+        "knownBlockedSumG": 1.909125,
+        "unknownBlockedComponents": [],
+        "completeBound": false
+      },
+      "priority": {
+        "score": 10,
+        "factors": {
+          "nativeZeroLead": 0,
+          "verifiedReferencePortionLead": 0,
+          "existingComposition": 10,
+          "completeRowAccounting": 10,
+          "establishedNegativeSearch": 0,
+          "priorBatchWithoutNewLead": 0,
+          "materialUnknownCho": 0,
+          "knownCarbohydrateExposure": -10,
+          "priorScientificWithdrawals": 0,
+          "independentUnknownQuantitiesOrComposition": 0,
+          "inheritedUnweighedCulinaryAssumptions": 0
+        },
+        "basis": "Feasibility heuristic: quantity/source identity, completeness, CHO materiality and previous negative searches; not blocker count alone."
+      },
+      "nextStep": "Search existing composition/GI indexes and verify product/preparation identity before any calculation.",
+      "publicationAuthorized": false,
+      "screenStatus": "SOURCE_RESEARCH",
+      "screenFinding": "Mustikan laji/valmiste ja valmistusmatch erotettava: kanadalainen blueberry53 ei automaattisesti kata suomalaista paistettua bilberryä.",
+      "recipeSha256Lf": "ea939525ce0607bdb5de121ad861ea796a2019e856b616bab6dca5311f63fa18",
+      "inputSha256": "972ab92f0209d34ffbe1db81baec55f798d39ee3de8467eb2259b16cb092b45d",
+      "recipeBodyReviewed": true,
+      "existingSourcesAndAuditsReviewed": true,
+      "sqliteRequests": [
+        "vhh-mustikkapiirakka:0"
+      ]
+    },
+    {
+      "recipeId": "karibia-plantain-aamiaislautanen",
+      "recipePath": "reseptit/aamupalat/karibia-plantain-aamiaislautanen.md",
+      "blockerCount": 2,
+      "blockers": [
+        "karibia-plantain-aamiaislautanen: ruokabanaani: No source-matched composition and preparation was resolved for “ruokabanaani”; it is not treated as zero.",
+        "karibia-plantain-aamiaislautanen: lime: The recipe amount 1 kpl has no food-specific mass conversion for Lime, peeled, raw."
+      ],
+      "solutionTypes": [
+        "QUANTITY",
+        "COMPOSITION",
+        "GI_OR_PREPARATION",
+        "IDENTITY_OR_CLARIFICATION"
+      ],
+      "evidenceState": "SOURCE_BINDING_UNRESOLVED",
+      "originalIngredientCount": 6,
+      "inputRowCount": 6,
+      "rowAccounting": "COUNT_MATCH_REQUIRES_SEMANTIC_REVIEW",
+      "priorWithdrawnGiBindings": [],
+      "inheritedAssumptionsRequiringReview": [],
+      "carbohydrateImpact": {
+        "knownBlockedComponents": [],
+        "knownBlockedSumG": 0,
+        "unknownBlockedComponents": [
+          "ruokabanaani",
+          "lime"
+        ],
+        "completeBound": false
+      },
+      "priority": {
+        "score": 6,
+        "factors": {
+          "nativeZeroLead": 0,
+          "verifiedReferencePortionLead": 0,
+          "existingComposition": 10,
+          "completeRowAccounting": 10,
+          "establishedNegativeSearch": 0,
+          "priorBatchWithoutNewLead": 0,
+          "materialUnknownCho": -10,
+          "knownCarbohydrateExposure": 0,
+          "priorScientificWithdrawals": 0,
+          "independentUnknownQuantitiesOrComposition": -4,
+          "inheritedUnweighedCulinaryAssumptions": 0
+        },
+        "basis": "Feasibility heuristic: quantity/source identity, completeness, CHO materiality and previous negative searches; not blocker count alone."
+      },
+      "nextStep": "Check existing food-specific reference portions and the exact original quantity; no copied variant mass.",
+      "publicationAuthorized": false,
+      "screenStatus": "NEEDS_CLARIFICATION",
+      "screenFinding": "Ruokabanaanin kypsyys/paisto ja yhden banaanin syötävä massa sekä limen massa vaativat täsmennyksen; eri kypsyyttä ei valita GI:n vuoksi.",
+      "recipeSha256Lf": "558d423b988af31c83346c53894b0b484e31fc868eed0c8635fe054641405e6d",
+      "inputSha256": "828adbd937aa62ccaf84f923ceedb57fccf4e1376e8b4ddad991b4659e6ae0d3",
+      "recipeBodyReviewed": true,
+      "existingSourcesAndAuditsReviewed": true,
+      "sqliteRequests": [
+        "karibia-plantain-aamiaislautanen:0",
+        "karibia-plantain-aamiaislautanen:1"
+      ]
+    },
+    {
+      "recipeId": "kana-parmesaanipannu-parsakaali",
+      "recipePath": "reseptit/paaruoat/kana-parmesaanipannu-parsakaali.md",
+      "blockerCount": 2,
+      "blockers": [
+        "kana-parmesaanipannu-parsakaali: valkosipulimurskaa: Ingredient mass is missing or invalid.",
+        "kana-parmesaanipannu-parsakaali: suolaa ja mustapippuria: AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance."
+      ],
+      "solutionTypes": [
+        "QUANTITY",
+        "COMPOSITION"
+      ],
+      "evidenceState": "SOURCE_BINDING_UNRESOLVED",
+      "originalIngredientCount": 8,
+      "inputRowCount": 8,
+      "rowAccounting": "COUNT_MATCH_REQUIRES_SEMANTIC_REVIEW",
+      "priorWithdrawnGiBindings": [],
+      "inheritedAssumptionsRequiringReview": [],
+      "carbohydrateImpact": {
+        "knownBlockedComponents": [],
+        "knownBlockedSumG": 0,
+        "unknownBlockedComponents": [
+          "valkosipulimurskaa",
+          "suolaa ja mustapippuria"
+        ],
+        "completeBound": false
+      },
+      "priority": {
+        "score": 6,
+        "factors": {
+          "nativeZeroLead": 0,
+          "verifiedReferencePortionLead": 0,
+          "existingComposition": 10,
+          "completeRowAccounting": 10,
+          "establishedNegativeSearch": 0,
+          "priorBatchWithoutNewLead": 0,
+          "materialUnknownCho": -10,
+          "knownCarbohydrateExposure": 0,
+          "priorScientificWithdrawals": 0,
+          "independentUnknownQuantitiesOrComposition": -4,
+          "inheritedUnweighedCulinaryAssumptions": 0
+        },
+        "basis": "Feasibility heuristic: quantity/source identity, completeness, CHO materiality and previous negative searches; not blocker count alone."
+      },
+      "nextStep": "Check existing food-specific reference portions and the exact original quantity; no copied variant mass.",
+      "publicationAuthorized": false,
+      "screenStatus": "NEEDS_CLARIFICATION",
+      "screenFinding": "Valkosipulimurskan lusikkamitta on mahdollinen lähdepolku, mutta suola-pippuriseoksen määrää ei ratkaista suolan nollahiilihydraatilla.",
+      "recipeSha256Lf": "b944bdb86c952ac1cc89f4f4a4571d048895553fb9af9dded9329c4dde3c75bd",
+      "inputSha256": "1079f8bedb68072096c9093cba3259bb300e2ecb4c9f7193ad7e73fcdf19cac2",
+      "recipeBodyReviewed": true,
+      "existingSourcesAndAuditsReviewed": true,
+      "sqliteRequests": [
+        "kana-parmesaanipannu-parsakaali:0",
+        "kana-parmesaanipannu-parsakaali:1"
+      ]
+    },
+    {
+      "recipeId": "kermainen-kanasienipannu",
+      "recipePath": "reseptit/paaruoat/kermainen-kanasienipannu.md",
+      "blockerCount": 2,
+      "blockers": [
+        "kermainen-kanasienipannu: salottisipuli: Ingredient mass is missing or invalid.",
+        "kermainen-kanasienipannu: suolaa ja mustapippuria: AJO 1.5: prior positive carbohydrate estimate has no verified mass/composition or source-backed upper bound; it cannot qualify for the omission tolerance."
+      ],
+      "solutionTypes": [
+        "QUANTITY",
+        "COMPOSITION"
+      ],
+      "evidenceState": "SOURCE_BINDING_UNRESOLVED",
+      "originalIngredientCount": 9,
+      "inputRowCount": 9,
+      "rowAccounting": "COUNT_MATCH_REQUIRES_SEMANTIC_REVIEW",
+      "priorWithdrawnGiBindings": [],
+      "inheritedAssumptionsRequiringReview": [],
+      "carbohydrateImpact": {
+        "knownBlockedComponents": [],
+        "knownBlockedSumG": 0,
+        "unknownBlockedComponents": [
+          "salottisipuli",
+          "suolaa ja mustapippuria"
+        ],
+        "completeBound": false
+      },
+      "priority": {
+        "score": 6,
+        "factors": {
+          "nativeZeroLead": 0,
+          "verifiedReferencePortionLead": 0,
+          "existingComposition": 10,
+          "completeRowAccounting": 10,
+          "establishedNegativeSearch": 0,
+          "priorBatchWithoutNewLead": 0,
+          "materialUnknownCho": -10,
+          "knownCarbohydrateExposure": 0,
+          "priorScientificWithdrawals": 0,
+          "independentUnknownQuantitiesOrComposition": -4,
+          "inheritedUnweighedCulinaryAssumptions": 0
+        },
+        "basis": "Feasibility heuristic: quantity/source identity, completeness, CHO materiality and previous negative searches; not blocker count alone."
+      },
+      "nextStep": "Check existing food-specific reference portions and the exact original quantity; no copied variant mass.",
+      "publicationAuthorized": false,
+      "screenStatus": "NEEDS_CLARIFICATION",
+      "screenFinding": "Salottisipulille voi löytyä viitepaino, mutta suola-pippuriseos jää ratkaisematta. Ei nollata seosta.",
+      "recipeSha256Lf": "b495a67762f95a76bd5b06ca42be47244cdfe7bc95d31789fd0a91284ace38fe",
+      "inputSha256": "8590609adbba319c8271293f520c97b259ada1ab7aa0720cf9d564b1a0ad89f5",
+      "recipeBodyReviewed": true,
+      "existingSourcesAndAuditsReviewed": true,
+      "sqliteRequests": [
+        "kermainen-kanasienipannu:0",
+        "kermainen-kanasienipannu:1"
+      ]
+    },
+    {
+      "recipeId": "valimerellinen-appelsiini-aamiaiskakku",
+      "recipePath": "reseptit/aamupalat/valimerellinen-appelsiini-aamiaiskakku.md",
+      "blockerCount": 1,
+      "blockers": [
+        "valimerellinen-appelsiini-aamiaiskakku: vehnäjauho: AJO 1.9: all remaining uses reviewed in glycemic-bakery-final-source-review.md/json. Atkinson 2021 Table 1 bakery GI 58 is a heterogeneous finished-product category mean, not a measurement of this ingredient in this preparation. No sufficiently matched primary human GI was verified. Record is REFERENCE_ONLY; missing GI is not zero. Original quantity and composition are preserved."
+      ],
+      "solutionTypes": [
+        "QUANTITY",
+        "COMPOSITION",
+        "GI_OR_PREPARATION",
+        "IDENTITY_OR_CLARIFICATION"
+      ],
+      "evidenceState": "NO_RELIABLE_SOURCE_FOUND",
+      "originalIngredientCount": 6,
+      "inputRowCount": 6,
+      "rowAccounting": "COUNT_MATCH_REQUIRES_SEMANTIC_REVIEW",
+      "priorWithdrawnGiBindings": [],
+      "inheritedAssumptionsRequiringReview": [],
+      "carbohydrateImpact": {
+        "knownBlockedComponents": [
+          {
+            "ingredient": "vehnäjauho",
+            "choPerServingG": 36.999
+          }
+        ],
+        "knownBlockedSumG": 36.999,
+        "unknownBlockedComponents": [],
+        "completeBound": false
+      },
+      "priority": {
+        "score": -15,
+        "factors": {
+          "nativeZeroLead": 0,
+          "verifiedReferencePortionLead": 0,
+          "existingComposition": 10,
+          "completeRowAccounting": 10,
+          "establishedNegativeSearch": -25,
+          "priorBatchWithoutNewLead": 0,
+          "materialUnknownCho": 0,
+          "knownCarbohydrateExposure": -10,
+          "priorScientificWithdrawals": 0,
+          "independentUnknownQuantitiesOrComposition": 0,
+          "inheritedUnweighedCulinaryAssumptions": 0
+        },
+        "basis": "Feasibility heuristic: quantity/source identity, completeness, CHO materiality and previous negative searches; not blocker count alone."
+      },
+      "nextStep": "Check existing food-specific reference portions and the exact original quantity; no copied variant mass.",
+      "publicationAuthorized": false,
+      "screenStatus": "HOLD",
+      "screenFinding": "Vehnäjauhon36.999g/annos on olennainen. AJO1.9:n julkaisematon tai heterogeeninen leipäanalogia ei ratkaise valmistusmatchia.",
+      "recipeSha256Lf": "0866699f37d32c4330e6b089ed1567ede7b9b64ddf7081012fa97d644e588bee",
+      "inputSha256": "845b9000d76fb982eccc878f316db45a1a889b38cd62c89cae3f721951c7106b",
+      "recipeBodyReviewed": true,
+      "existingSourcesAndAuditsReviewed": true,
+      "sqliteRequests": [
+        "valimerellinen-appelsiini-aamiaiskakku:0"
+      ]
+    },
+    {
+      "recipeId": "munakoiso-kesakurpitsalasagne",
+      "recipePath": "reseptit/paaruoat/munakoiso-kesakurpitsalasagne.md",
+      "blockerCount": 15,
+      "blockers": [
+        "munakoiso-kesakurpitsalasagne: munakoiso: Published recipe: available-carbohydrate composition is unresolved and GI evidence has not been reviewed; unknown values are not treated as zero.",
+        "munakoiso-kesakurpitsalasagne: kesäkurpitsa: Published recipe: available-carbohydrate composition is unresolved and GI evidence has not been reviewed; unknown values are not treated as zero.",
+        "munakoiso-kesakurpitsalasagne: sipuli: Published recipe: available-carbohydrate composition is unresolved and GI evidence has not been reviewed; unknown values are not treated as zero.",
+        "munakoiso-kesakurpitsalasagne: valkosipuli: Published recipe: available-carbohydrate composition is unresolved and GI evidence has not been reviewed; unknown values are not treated as zero.",
+        "munakoiso-kesakurpitsalasagne: oliiviöljy: Published recipe: available-carbohydrate composition is unresolved and GI evidence has not been reviewed; unknown values are not treated as zero.",
+        "munakoiso-kesakurpitsalasagne: tuore timjami: Published recipe: available-carbohydrate composition is unresolved and GI evidence has not been reviewed; unknown values are not treated as zero.",
+        "munakoiso-kesakurpitsalasagne: valmis italialainen tomaattikastike: Published recipe: available-carbohydrate composition is unresolved and GI evidence has not been reviewed; unknown values are not treated as zero.",
+        "munakoiso-kesakurpitsalasagne: lasagnelevyt: Published recipe: available-carbohydrate composition is unresolved and GI evidence has not been reviewed; unknown values are not treated as zero.",
+        "munakoiso-kesakurpitsalasagne: mozzarella: Published recipe: available-carbohydrate composition is unresolved and GI evidence has not been reviewed; unknown values are not treated as zero.",
+        "munakoiso-kesakurpitsalasagne: parmesaani tai vastaava kova juusto: Published recipe: available-carbohydrate composition is unresolved and GI evidence has not been reviewed; unknown values are not treated as zero.",
+        "munakoiso-kesakurpitsalasagne: tuore basilika: Published recipe: available-carbohydrate composition is unresolved and GI evidence has not been reviewed; unknown values are not treated as zero.",
+        "munakoiso-kesakurpitsalasagne: viinietikka: Published recipe: available-carbohydrate composition is unresolved and GI evidence has not been reviewed; unknown values are not treated as zero.",
+        "munakoiso-kesakurpitsalasagne: suola: Published recipe: available-carbohydrate composition is unresolved and GI evidence has not been reviewed; unknown values are not treated as zero.",
+        "munakoiso-kesakurpitsalasagne: mustapippuri: Published recipe: available-carbohydrate composition is unresolved and GI evidence has not been reviewed; unknown values are not treated as zero.",
+        "munakoiso-kesakurpitsalasagne: vesi: Published recipe: available-carbohydrate composition is unresolved and GI evidence has not been reviewed; unknown values are not treated as zero."
+      ],
+      "solutionTypes": [
+        "COMPOSITION",
+        "GI_OR_PREPARATION"
+      ],
+      "evidenceState": "REVIEW_PENDING",
+      "originalIngredientCount": 15,
+      "inputRowCount": 15,
+      "rowAccounting": "COUNT_MATCH_REQUIRES_SEMANTIC_REVIEW",
+      "priorWithdrawnGiBindings": [],
+      "inheritedAssumptionsRequiringReview": [],
+      "carbohydrateImpact": {
+        "knownBlockedComponents": [],
+        "knownBlockedSumG": 0,
+        "unknownBlockedComponents": [
+          "munakoiso",
+          "kesäkurpitsa",
+          "sipuli",
+          "valkosipuli",
+          "oliiviöljy",
+          "tuore timjami",
+          "valmis italialainen tomaattikastike",
+          "lasagnelevyt",
+          "mozzarella",
+          "parmesaani tai vastaava kova juusto",
+          "tuore basilika",
+          "viinietikka",
+          "suola",
+          "mustapippuri",
+          "vesi"
+        ],
+        "completeBound": false
+      },
+      "priority": {
+        "score": -20,
+        "factors": {
+          "nativeZeroLead": 0,
+          "verifiedReferencePortionLead": 0,
+          "existingComposition": 0,
+          "completeRowAccounting": 10,
+          "establishedNegativeSearch": 0,
+          "priorBatchWithoutNewLead": 0,
+          "materialUnknownCho": -10,
+          "knownCarbohydrateExposure": 0,
+          "priorScientificWithdrawals": 0,
+          "independentUnknownQuantitiesOrComposition": -20,
+          "inheritedUnweighedCulinaryAssumptions": 0
+        },
+        "basis": "Feasibility heuristic: quantity/source identity, completeness, CHO materiality and previous negative searches; not blocker count alone."
+      },
+      "nextStep": "Search existing composition/GI indexes and verify product/preparation identity before any calculation.",
+      "publicationAuthorized": false,
+      "screenStatus": "SOURCE_RESEARCH",
+      "screenFinding": "15 riviä on REVIEW_PENDING, ei osoitus tuloksettomasta lähdehausta. #290:n luokittelu säilyy; kastikkeen tuotetieto ja pastan valmistus vaativat varsinaisen lähdetyön.",
+      "recipeSha256Lf": "4ae15e1b24e86165ef95b0a05ec26806bac14a48618fc9eeaeeb1f089d47d9f8",
+      "inputSha256": "c5c21b9c5cec7c3bfa6755207b31fa4e8d3f771d1d5b0bfd41dbc0bb15c67e85",
+      "recipeBodyReviewed": true,
+      "existingSourcesAndAuditsReviewed": true,
+      "sqliteRequests": [
+        "munakoiso-kesakurpitsalasagne:0",
+        "munakoiso-kesakurpitsalasagne:1",
+        "munakoiso-kesakurpitsalasagne:2",
+        "munakoiso-kesakurpitsalasagne:3",
+        "munakoiso-kesakurpitsalasagne:4",
+        "munakoiso-kesakurpitsalasagne:5",
+        "munakoiso-kesakurpitsalasagne:6",
+        "munakoiso-kesakurpitsalasagne:7",
+        "munakoiso-kesakurpitsalasagne:8",
+        "munakoiso-kesakurpitsalasagne:9",
+        "munakoiso-kesakurpitsalasagne:10",
+        "munakoiso-kesakurpitsalasagne:11",
+        "munakoiso-kesakurpitsalasagne:12",
+        "munakoiso-kesakurpitsalasagne:13",
+        "munakoiso-kesakurpitsalasagne:14"
+      ]
+    },
+    {
+      "recipeId": "char-siu",
+      "recipePath": "reseptit/paaruoat/char-siu.md",
+      "blockerCount": 1,
+      "blockers": [
+        "char-siu: hoisinkastiketta: undefined category mean/analogue, low confidence; not a measured ingredient-specific value."
+      ],
+      "solutionTypes": [
+        "SOURCE_RESEARCH"
+      ],
+      "evidenceState": "SOURCE_BINDING_UNRESOLVED",
+      "originalIngredientCount": 9,
+      "inputRowCount": 9,
+      "rowAccounting": "COUNT_MATCH_REQUIRES_SEMANTIC_REVIEW",
+      "priorWithdrawnGiBindings": [],
+      "inheritedAssumptionsRequiringReview": [],
+      "carbohydrateImpact": {
+        "knownBlockedComponents": [
+          {
+            "ingredient": "hoisinkastiketta",
+            "choPerServingG": 4.1850000000000005
+          }
+        ],
+        "knownBlockedSumG": 4.1850000000000005,
+        "unknownBlockedComponents": [],
+        "completeBound": false
+      },
+      "priority": {
+        "score": 10,
+        "factors": {
+          "nativeZeroLead": 0,
+          "verifiedReferencePortionLead": 0,
+          "existingComposition": 10,
+          "completeRowAccounting": 10,
+          "establishedNegativeSearch": 0,
+          "priorBatchWithoutNewLead": 0,
+          "materialUnknownCho": 0,
+          "knownCarbohydrateExposure": -10,
+          "priorScientificWithdrawals": 0,
+          "independentUnknownQuantitiesOrComposition": 0,
+          "inheritedUnweighedCulinaryAssumptions": 0
+        },
+        "basis": "Feasibility heuristic: quantity/source identity, completeness, CHO materiality and previous negative searches; not blocker count alone."
+      },
+      "nextStep": "Search existing composition/GI indexes and verify product/preparation identity before any calculation.",
+      "publicationAuthorized": false,
+      "screenStatus": "SOURCE_RESEARCH",
+      "screenFinding": "Hoisinin4,185g CHO/annos on olennainen; undefined category mean ei ole kastikkeen mittaus. Määrän tai tuotteen vaihto ei ratkaise alkuperäistä.",
+      "recipeSha256Lf": "1fac33770ec0fec36df5e22131cd067b4e237b2047956e3f126f1e9fecb3a9a6",
+      "inputSha256": "36e41aa2b15838465ec21a0c73e1323c6aeb5e5d82fd02c6108df11f789ec0e5",
+      "recipeBodyReviewed": true,
+      "existingSourcesAndAuditsReviewed": true,
+      "sqliteRequests": [
+        "char-siu:0"
+      ]
+    },
+    {
+      "recipeId": "jauheliha-makaronilaatikko",
+      "recipePath": "reseptit/paaruoat/jauheliha-makaronilaatikko.md",
+      "blockerCount": 1,
+      "blockers": [
+        "jauheliha-makaronilaatikko: kuivattua makaronia: R1B source review: no GI binding retained for the casserole preparation; plain pasta/category averages do not establish the GI of pasta baked in egg and dairy."
+      ],
+      "solutionTypes": [
+        "GI_OR_PREPARATION"
+      ],
+      "evidenceState": "SOURCE_BINDING_UNRESOLVED",
+      "originalIngredientCount": 14,
+      "inputRowCount": 14,
+      "rowAccounting": "COUNT_MATCH_REQUIRES_SEMANTIC_REVIEW",
+      "priorWithdrawnGiBindings": [],
+      "inheritedAssumptionsRequiringReview": [],
+      "carbohydrateImpact": {
+        "knownBlockedComponents": [
+          {
+            "ingredient": "kuivattua makaronia",
+            "choPerServingG": 33.2
+          }
+        ],
+        "knownBlockedSumG": 33.2,
+        "unknownBlockedComponents": [],
+        "completeBound": false
+      },
+      "priority": {
+        "score": 10,
+        "factors": {
+          "nativeZeroLead": 0,
+          "verifiedReferencePortionLead": 0,
+          "existingComposition": 10,
+          "completeRowAccounting": 10,
+          "establishedNegativeSearch": 0,
+          "priorBatchWithoutNewLead": 0,
+          "materialUnknownCho": 0,
+          "knownCarbohydrateExposure": -10,
+          "priorScientificWithdrawals": 0,
+          "independentUnknownQuantitiesOrComposition": 0,
+          "inheritedUnweighedCulinaryAssumptions": 0
+        },
+        "basis": "Feasibility heuristic: quantity/source identity, completeness, CHO materiality and previous negative searches; not blocker count alone."
+      },
+      "nextStep": "Search existing composition/GI indexes and verify product/preparation identity before any calculation.",
+      "publicationAuthorized": false,
+      "screenStatus": "HOLD",
+      "screenFinding": "R1B on pidättänyt uunissa muna-maitoseokseen kypsyvän makaronin GI:n. Keitetyn pastan ryhmäkeskiarvo ei osoita vuoan valmistusmatchia.",
+      "recipeSha256Lf": "29d29a7faeff8029b9700b1d21f3e14bde10bedae2988112987437eee4e98eba",
+      "inputSha256": "1da370d1195ec4a983bf41c80f92e2831fbe2bfd0291b19f746d0ab869b440ed",
+      "recipeBodyReviewed": true,
+      "existingSourcesAndAuditsReviewed": true,
+      "sqliteRequests": [
+        "jauheliha-makaronilaatikko:0"
+      ]
+    },
+    {
+      "recipeId": "keltainen-kanacurry-vhh",
+      "recipePath": "reseptit/paaruoat/keltainen-kanacurry-vhh.md",
+      "blockerCount": 1,
+      "blockers": [
+        "keltainen-kanacurry-vhh: täysrasvaista kookosmaitoa: GI evidence is missing for standalone coconut milk. PMID 22849311 measured rice porridge with coconut milk (GI 31), not this ingredient; the mixed-meal result is not an accepted analogue."
+      ],
+      "solutionTypes": [
+        "GI_OR_PREPARATION"
+      ],
+      "evidenceState": "SOURCE_BINDING_UNRESOLVED",
+      "originalIngredientCount": 10,
+      "inputRowCount": 10,
+      "rowAccounting": "COUNT_MATCH_REQUIRES_SEMANTIC_REVIEW",
+      "priorWithdrawnGiBindings": [],
+      "inheritedAssumptionsRequiringReview": [],
+      "carbohydrateImpact": {
+        "knownBlockedComponents": [
+          {
+            "ingredient": "täysrasvaista kookosmaitoa",
+            "choPerServingG": 2.81
+          }
+        ],
+        "knownBlockedSumG": 2.81,
+        "unknownBlockedComponents": [],
+        "completeBound": false
+      },
+      "priority": {
+        "score": 10,
+        "factors": {
+          "nativeZeroLead": 0,
+          "verifiedReferencePortionLead": 0,
+          "existingComposition": 10,
+          "completeRowAccounting": 10,
+          "establishedNegativeSearch": 0,
+          "priorBatchWithoutNewLead": 0,
+          "materialUnknownCho": 0,
+          "knownCarbohydrateExposure": -10,
+          "priorScientificWithdrawals": 0,
+          "independentUnknownQuantitiesOrComposition": 0,
+          "inheritedUnweighedCulinaryAssumptions": 0
+        },
+        "basis": "Feasibility heuristic: quantity/source identity, completeness, CHO materiality and previous negative searches; not blocker count alone."
+      },
+      "nextStep": "Search existing composition/GI indexes and verify product/preparation identity before any calculation.",
+      "publicationAuthorized": false,
+      "screenStatus": "HOLD",
+      "screenFinding": "Itsenäisen kookosmaidon merkittävä CHO tarvitsee oman näytön; kookosriisipuuronGI31 on eri kokonaisruoka.",
+      "recipeSha256Lf": "8b13271f5d045eceab072e1bd10020805a1edfb3fe00f5ee79ae3736c49ef668",
+      "inputSha256": "9c3e4a94c9133cf042d0aa19f84220b6290a1fe3d2b27c66f850774acdc3b30e",
+      "recipeBodyReviewed": true,
+      "existingSourcesAndAuditsReviewed": true,
+      "sqliteRequests": [
+        "keltainen-kanacurry-vhh:0"
+      ]
+    },
+    {
+      "recipeId": "khao-soi-vhh-konjac",
+      "recipePath": "reseptit/paaruoat/khao-soi-vhh-konjac.md",
+      "blockerCount": 2,
+      "blockers": [
+        "khao-soi-vhh-konjac: täysrasvaista kookosmaitoa: GI evidence is missing for standalone coconut milk. PMID 22849311 measured rice porridge with coconut milk (GI 31), not this ingredient; the mixed-meal result is not an accepted analogue.",
+        "khao-soi-vhh-konjac: kanalientä: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
+      ],
+      "solutionTypes": [
+        "SMALL_CHO_REVIEW",
+        "GI_OR_PREPARATION"
+      ],
+      "evidenceState": "SOURCE_BINDING_UNRESOLVED",
+      "originalIngredientCount": 12,
+      "inputRowCount": 12,
+      "rowAccounting": "COUNT_MATCH_REQUIRES_SEMANTIC_REVIEW",
+      "priorWithdrawnGiBindings": [],
+      "inheritedAssumptionsRequiringReview": [],
+      "carbohydrateImpact": {
+        "knownBlockedComponents": [
+          {
+            "ingredient": "täysrasvaista kookosmaitoa",
+            "choPerServingG": 2.81
+          },
+          {
+            "ingredient": "kanalientä",
+            "choPerServingG": 0.5
+          }
+        ],
+        "knownBlockedSumG": 3.31,
+        "unknownBlockedComponents": [],
+        "completeBound": false
+      },
+      "priority": {
+        "score": 10,
+        "factors": {
+          "nativeZeroLead": 0,
+          "verifiedReferencePortionLead": 0,
+          "existingComposition": 10,
+          "completeRowAccounting": 10,
+          "establishedNegativeSearch": 0,
+          "priorBatchWithoutNewLead": 0,
+          "materialUnknownCho": 0,
+          "knownCarbohydrateExposure": -10,
+          "priorScientificWithdrawals": 0,
+          "independentUnknownQuantitiesOrComposition": 0,
+          "inheritedUnweighedCulinaryAssumptions": 0
+        },
+        "basis": "Feasibility heuristic: quantity/source identity, completeness, CHO materiality and previous negative searches; not blocker count alone."
+      },
+      "nextStep": "Search existing composition/GI indexes and verify product/preparation identity before any calculation.",
+      "publicationAuthorized": false,
+      "screenStatus": "HOLD",
+      "screenFinding": "Kookosmaidon ja kanaliemen GI-valmistusmatchit puuttuvat. Olemassa olevat nimetyt tahna/nuudelituotteet eivät ratkaise näitä kahta merkittävää osuutta.",
+      "recipeSha256Lf": "c6eeb19825cc92cc820255d39f61e2448a0db8f86c5221db96187dfc982a6d3c",
+      "inputSha256": "7e604cc6bee6b9797fb75a11caec635524d344a5dac6a1031f2ad0b94c25660f",
+      "recipeBodyReviewed": true,
+      "existingSourcesAndAuditsReviewed": true,
+      "sqliteRequests": [
+        "khao-soi-vhh-konjac:0",
+        "khao-soi-vhh-konjac:1"
+      ]
+    },
+    {
+      "recipeId": "korealainen-tofu-kimchi-aamiaiskulho",
+      "recipePath": "reseptit/aamupalat/korealainen-tofu-kimchi-aamiaiskulho.md",
+      "blockerCount": 2,
+      "blockers": [
+        "korealainen-tofu-kimchi-aamiaiskulho: kimchi: No source-matched composition and preparation was resolved for “kimchi”; it is not treated as zero.",
+        "korealainen-tofu-kimchi-aamiaiskulho: seesami: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
+      ],
+      "solutionTypes": [
+        "COMPOSITION",
+        "SMALL_CHO_REVIEW",
+        "GI_OR_PREPARATION"
+      ],
+      "evidenceState": "SOURCE_BINDING_UNRESOLVED",
+      "originalIngredientCount": 5,
+      "inputRowCount": 5,
+      "rowAccounting": "COUNT_MATCH_REQUIRES_SEMANTIC_REVIEW",
+      "priorWithdrawnGiBindings": [],
+      "inheritedAssumptionsRequiringReview": [],
+      "carbohydrateImpact": {
+        "knownBlockedComponents": [
+          {
+            "ingredient": "seesami",
+            "choPerServingG": 0.45
+          }
+        ],
+        "knownBlockedSumG": 0.45,
+        "unknownBlockedComponents": [
+          "kimchi"
+        ],
+        "completeBound": false
+      },
+      "priority": {
+        "score": 10,
+        "factors": {
+          "nativeZeroLead": 0,
+          "verifiedReferencePortionLead": 0,
+          "existingComposition": 10,
+          "completeRowAccounting": 10,
+          "establishedNegativeSearch": 0,
+          "priorBatchWithoutNewLead": 0,
+          "materialUnknownCho": -10,
+          "knownCarbohydrateExposure": 0,
+          "priorScientificWithdrawals": 0,
+          "independentUnknownQuantitiesOrComposition": 0,
+          "inheritedUnweighedCulinaryAssumptions": 0
+        },
+        "basis": "Feasibility heuristic: quantity/source identity, completeness, CHO materiality and previous negative searches; not blocker count alone."
+      },
+      "nextStep": "Search existing composition/GI indexes and verify product/preparation identity before any calculation.",
+      "publicationAuthorized": false,
+      "screenStatus": "NEEDS_CLARIFICATION",
+      "screenFinding": "150g kimchin identiteetti/koostumus puuttuu ja100g seesami on olennainen. Seesamimäärää ei pienennetä eikä toisen kimchiversion kuittia siirretä.",
+      "recipeSha256Lf": "7650f5a800cd4b61077a089ffda402d7e67e7ce0f1a57653cc913204583e4fc7",
+      "inputSha256": "28c69629cc822e8a77e815244561813caf75283be9cbd3d0e6eb4b41e199ff8f",
+      "recipeBodyReviewed": true,
+      "existingSourcesAndAuditsReviewed": true,
+      "sqliteRequests": [
+        "korealainen-tofu-kimchi-aamiaiskulho:0",
+        "korealainen-tofu-kimchi-aamiaiskulho:1"
+      ]
+    },
+    {
+      "recipeId": "maksalaatikko-kukkakaalilla",
+      "recipePath": "reseptit/paaruoat/maksalaatikko-kukkakaalilla.md",
+      "blockerCount": 2,
+      "blockers": [
+        "maksalaatikko-kukkakaalilla: naudan maksaa: GI evidence is missing.",
+        "maksalaatikko-kukkakaalilla: puolukoita: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
+      ],
+      "solutionTypes": [
+        "GI_OR_PREPARATION"
+      ],
+      "evidenceState": "SOURCE_BINDING_UNRESOLVED",
+      "originalIngredientCount": 9,
+      "inputRowCount": 9,
+      "rowAccounting": "COUNT_MATCH_REQUIRES_SEMANTIC_REVIEW",
+      "priorWithdrawnGiBindings": [],
+      "inheritedAssumptionsRequiringReview": [],
+      "carbohydrateImpact": {
+        "knownBlockedComponents": [
+          {
+            "ingredient": "naudan maksaa",
+            "choPerServingG": 5
+          },
+          {
+            "ingredient": "puolukoita",
+            "choPerServingG": 2.225
+          }
+        ],
+        "knownBlockedSumG": 7.225,
+        "unknownBlockedComponents": [],
+        "completeBound": false
+      },
+      "priority": {
+        "score": 10,
+        "factors": {
+          "nativeZeroLead": 0,
+          "verifiedReferencePortionLead": 0,
+          "existingComposition": 10,
+          "completeRowAccounting": 10,
+          "establishedNegativeSearch": 0,
+          "priorBatchWithoutNewLead": 0,
+          "materialUnknownCho": 0,
+          "knownCarbohydrateExposure": -10,
+          "priorScientificWithdrawals": 0,
+          "independentUnknownQuantitiesOrComposition": 0,
+          "inheritedUnweighedCulinaryAssumptions": 0
+        },
+        "basis": "Feasibility heuristic: quantity/source identity, completeness, CHO materiality and previous negative searches; not blocker count alone."
+      },
+      "nextStep": "Search existing composition/GI indexes and verify product/preparation identity before any calculation.",
+      "publicationAuthorized": false,
+      "screenStatus": "HOLD",
+      "screenFinding": "Maksan ja paistettujen puolukoiden GI-soveltuvuus ratkaisematta. Kahden olennaisen osuuden tutkimus ei ratkea mausteiden täsmennyksellä.",
+      "recipeSha256Lf": "0bc68c7f8a97e63f13b6dc778f1167979a4047b2e5f6a7286cd0c6bf185d0cb7",
+      "inputSha256": "7650068b0189f30bcf23d4afc316e914070181c3313add7e87b1de1873b9e8c1",
+      "recipeBodyReviewed": true,
+      "existingSourcesAndAuditsReviewed": true,
+      "sqliteRequests": [
+        "maksalaatikko-kukkakaalilla:0",
+        "maksalaatikko-kukkakaalilla:1"
+      ]
+    },
+    {
+      "recipeId": "miso-lohi-paksoi",
+      "recipePath": "reseptit/paaruoat/miso-lohi-paksoi.md",
+      "blockerCount": 2,
+      "blockers": [
+        "miso-lohi-paksoi: vaaleaa misotahnaa: No source-matched composition and preparation was resolved for “vaaleaa misotahnaa”; it is not treated as zero.",
+        "miso-lohi-paksoi: seesaminsiemeniä: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
+      ],
+      "solutionTypes": [
+        "COMPOSITION",
+        "SMALL_CHO_REVIEW",
+        "GI_OR_PREPARATION"
+      ],
+      "evidenceState": "SOURCE_BINDING_UNRESOLVED",
+      "originalIngredientCount": 8,
+      "inputRowCount": 8,
+      "rowAccounting": "COUNT_MATCH_REQUIRES_SEMANTIC_REVIEW",
+      "priorWithdrawnGiBindings": [],
+      "inheritedAssumptionsRequiringReview": [],
+      "carbohydrateImpact": {
+        "knownBlockedComponents": [
+          {
+            "ingredient": "seesaminsiemeniä",
+            "choPerServingG": 0.019125
+          }
+        ],
+        "knownBlockedSumG": 0.019125,
+        "unknownBlockedComponents": [
+          "vaaleaa misotahnaa"
+        ],
+        "completeBound": false
+      },
+      "priority": {
+        "score": 10,
+        "factors": {
+          "nativeZeroLead": 0,
+          "verifiedReferencePortionLead": 0,
+          "existingComposition": 10,
+          "completeRowAccounting": 10,
+          "establishedNegativeSearch": 0,
+          "priorBatchWithoutNewLead": 0,
+          "materialUnknownCho": -10,
+          "knownCarbohydrateExposure": 0,
+          "priorScientificWithdrawals": 0,
+          "independentUnknownQuantitiesOrComposition": 0,
+          "inheritedUnweighedCulinaryAssumptions": 0
+        },
+        "basis": "Feasibility heuristic: quantity/source identity, completeness, CHO materiality and previous negative searches; not blocker count alone."
+      },
+      "nextStep": "Search existing composition/GI indexes and verify product/preparation identity before any calculation.",
+      "publicationAuthorized": false,
+      "screenStatus": "NEEDS_CLARIFICATION",
+      "screenFinding": "Vaalean mison todellinen koostumus ja lusikkamassa puuttuvat; seesamin GI-sidos on myös ratkaisematon. Toisen misotuotteen valinta ei ole automaattinen täsmennys.",
+      "recipeSha256Lf": "5f56dba09a8658ba3b48e2974855e705602720b3b6972e10f04348f0faa2d0ac",
+      "inputSha256": "e72116099146f9c438c73e218d7cfa1d5ed8f8c38e65be2b99f87e366daf0133",
+      "recipeBodyReviewed": true,
+      "existingSourcesAndAuditsReviewed": true,
+      "sqliteRequests": [
+        "miso-lohi-paksoi:0",
+        "miso-lohi-paksoi:1"
+      ]
+    },
+    {
+      "recipeId": "vhh-runebergintortut",
+      "recipePath": "reseptit/leivonnaiset/vhh-runebergintortut.md",
+      "blockerCount": 1,
+      "blockers": [
+        "vhh-runebergintortut: mantelijauhoa: Bakery-products category mean is not a demonstrated match for almond meal; remove the unsupported GI proxy."
+      ],
+      "solutionTypes": [
+        "GI_OR_PREPARATION",
+        "IDENTITY_OR_CLARIFICATION"
+      ],
+      "evidenceState": "SOURCE_BINDING_UNRESOLVED",
+      "originalIngredientCount": 8,
+      "inputRowCount": 8,
+      "rowAccounting": "COUNT_MATCH_REQUIRES_SEMANTIC_REVIEW",
+      "priorWithdrawnGiBindings": [],
+      "inheritedAssumptionsRequiringReview": [],
+      "carbohydrateImpact": {
+        "knownBlockedComponents": [
+          {
+            "ingredient": "mantelijauhoa",
+            "choPerServingG": 1.08
+          }
+        ],
+        "knownBlockedSumG": 1.08,
+        "unknownBlockedComponents": [],
+        "completeBound": false
+      },
+      "priority": {
+        "score": 10,
+        "factors": {
+          "nativeZeroLead": 0,
+          "verifiedReferencePortionLead": 0,
+          "existingComposition": 10,
+          "completeRowAccounting": 10,
+          "establishedNegativeSearch": 0,
+          "priorBatchWithoutNewLead": 0,
+          "materialUnknownCho": 0,
+          "knownCarbohydrateExposure": -10,
+          "priorScientificWithdrawals": 0,
+          "independentUnknownQuantitiesOrComposition": 0,
+          "inheritedUnweighedCulinaryAssumptions": 0
+        },
+        "basis": "Feasibility heuristic: quantity/source identity, completeness, CHO materiality and previous negative searches; not blocker count alone."
+      },
+      "nextStep": "Search existing composition/GI indexes and verify product/preparation identity before any calculation.",
+      "publicationAuthorized": false,
+      "screenStatus": "HOLD",
+      "screenFinding": "120g mantelijauhoa /6 annosta:1,08g CHO, yli1g. Leivinjauheen viitemassa ei ratkaise jauhon valmistusmatchia; annosmäärää ei kasvateta.",
+      "recipeSha256Lf": "e579594baf3d71bd324b1051ab7df2ab2da81c17412ad1ea3d75637d4e5f1cc3",
+      "inputSha256": "962c0dc86bb4223bc788e8f552ced2c845b9d9a12da77348da639ea5ba86c97f",
+      "recipeBodyReviewed": true,
+      "existingSourcesAndAuditsReviewed": true,
+      "sqliteRequests": [
+        "vhh-runebergintortut:0"
+      ]
+    },
+    {
+      "recipeId": "indonesialainen-nasi-goreng-aamiaisriisi",
+      "recipePath": "reseptit/aamupalat/indonesialainen-nasi-goreng-aamiaisriisi.md",
+      "blockerCount": 2,
+      "blockers": [
+        "indonesialainen-nasi-goreng-aamiaisriisi: kecap manis: 150 g sweet soy sauce is a major carbohydrate source, but the product has no brand, label or matching composition record.",
+        "indonesialainen-nasi-goreng-aamiaisriisi: salottisipuli: Ingredient mass is missing or invalid."
+      ],
+      "solutionTypes": [
+        "QUANTITY",
+        "COMPOSITION",
+        "IDENTITY_OR_CLARIFICATION"
+      ],
+      "evidenceState": "SOURCE_BINDING_UNRESOLVED",
+      "originalIngredientCount": 6,
+      "inputRowCount": 6,
+      "rowAccounting": "COUNT_MATCH_REQUIRES_SEMANTIC_REVIEW",
+      "priorWithdrawnGiBindings": [],
+      "inheritedAssumptionsRequiringReview": [],
+      "carbohydrateImpact": {
+        "knownBlockedComponents": [],
+        "knownBlockedSumG": 0,
+        "unknownBlockedComponents": [
+          "kecap manis",
+          "salottisipuli"
+        ],
+        "completeBound": false
+      },
+      "priority": {
+        "score": 6,
+        "factors": {
+          "nativeZeroLead": 0,
+          "verifiedReferencePortionLead": 0,
+          "existingComposition": 10,
+          "completeRowAccounting": 10,
+          "establishedNegativeSearch": 0,
+          "priorBatchWithoutNewLead": 0,
+          "materialUnknownCho": -10,
+          "knownCarbohydrateExposure": 0,
+          "priorScientificWithdrawals": 0,
+          "independentUnknownQuantitiesOrComposition": -4,
+          "inheritedUnweighedCulinaryAssumptions": 0
+        },
+        "basis": "Feasibility heuristic: quantity/source identity, completeness, CHO materiality and previous negative searches; not blocker count alone."
+      },
+      "nextStep": "Check existing food-specific reference portions and the exact original quantity; no copied variant mass.",
+      "publicationAuthorized": false,
+      "screenStatus": "NEEDS_CLARIFICATION",
+      "screenFinding": "150g kecap manis on olennainen epäselvä tuote; salottisipulin viitemassa ei yksin ratkaise kastikkeen koostumusta.",
+      "recipeSha256Lf": "f55e64e3d2dd6080a7cbcde3b067cac696aaf8a5595b67a5615433d7a43689d7",
+      "inputSha256": "da927bd8f4d03c366291ed6b4a0af748a0f1b84650fdb5998ecd63337d7ee8c5",
+      "recipeBodyReviewed": true,
+      "existingSourcesAndAuditsReviewed": true,
+      "sqliteRequests": [
+        "indonesialainen-nasi-goreng-aamiaisriisi:0",
+        "indonesialainen-nasi-goreng-aamiaisriisi:1"
+      ]
+    },
+    {
+      "recipeId": "tunisialainen-brik",
+      "recipePath": "reseptit/alkuruoat/tunisialainen-brik.md",
+      "blockerCount": 3,
+      "blockers": [
+        "tunisialainen-brik: filo- tai malsouka-taikinaa: No source-matched composition and preparation was resolved for “filo- tai malsouka-taikinaa”; it is not treated as zero.",
+        "tunisialainen-brik: kapriksia: The recipe amount 2 rkl has no food-specific mass conversion for Capers, pickled, canned, drained.",
+        "tunisialainen-brik: tuoretta persiljaa: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
+      ],
+      "solutionTypes": [
+        "QUANTITY",
+        "COMPOSITION",
+        "SMALL_CHO_REVIEW",
+        "GI_OR_PREPARATION"
+      ],
+      "evidenceState": "SOURCE_BINDING_UNRESOLVED",
+      "originalIngredientCount": 8,
+      "inputRowCount": 8,
+      "rowAccounting": "COUNT_MATCH_REQUIRES_SEMANTIC_REVIEW",
+      "priorWithdrawnGiBindings": [],
+      "inheritedAssumptionsRequiringReview": [],
+      "carbohydrateImpact": {
+        "knownBlockedComponents": [
+          {
+            "ingredient": "tuoretta persiljaa",
+            "choPerServingG": 0.04125
+          }
+        ],
+        "knownBlockedSumG": 0.04125,
+        "unknownBlockedComponents": [
+          "filo- tai malsouka-taikinaa",
+          "kapriksia"
+        ],
+        "completeBound": false
+      },
+      "priority": {
+        "score": 6,
+        "factors": {
+          "nativeZeroLead": 0,
+          "verifiedReferencePortionLead": 0,
+          "existingComposition": 10,
+          "completeRowAccounting": 10,
+          "establishedNegativeSearch": 0,
+          "priorBatchWithoutNewLead": 0,
+          "materialUnknownCho": -10,
+          "knownCarbohydrateExposure": 0,
+          "priorScientificWithdrawals": 0,
+          "independentUnknownQuantitiesOrComposition": -4,
+          "inheritedUnweighedCulinaryAssumptions": 0
+        },
+        "basis": "Feasibility heuristic: quantity/source identity, completeness, CHO materiality and previous negative searches; not blocker count alone."
+      },
+      "nextStep": "Check existing food-specific reference portions and the exact original quantity; no copied variant mass.",
+      "publicationAuthorized": false,
+      "screenStatus": "NEEDS_CLARIFICATION",
+      "screenFinding": "Filo tai malsouka ovat vaihtoehtoisia taikinoita; kaprikselle tarvitaan lusikkamassa ja persiljalle soveltuvuuspäätös. Taikinaa ei valita GI:n perusteella.",
+      "recipeSha256Lf": "1eb06f3db86fba5a21db1e252bdc307c37cbe146e1de3417d2d6f3f827ffcd7a",
+      "inputSha256": "7a63c29555c34573af42bbcbee540c8f2f5f651f36786a51ce631878e3fe1678",
+      "recipeBodyReviewed": true,
+      "existingSourcesAndAuditsReviewed": true,
+      "sqliteRequests": [
+        "tunisialainen-brik:0",
+        "tunisialainen-brik:1",
+        "tunisialainen-brik:2"
+      ]
+    },
+    {
+      "recipeId": "vietnamilainen-xoi-maapahkinalla",
+      "recipePath": "reseptit/aamupalat/vietnamilainen-xoi-maapahkinalla.md",
+      "blockerCount": 3,
+      "blockers": [
+        "vietnamilainen-xoi-maapahkinalla: tahmariisi: No source-matched composition and preparation was resolved for “tahmariisi”; it is not treated as zero.",
+        "vietnamilainen-xoi-maapahkinalla: seesami: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+        "vietnamilainen-xoi-maapahkinalla: kookos: No source-matched composition and preparation was resolved for “kookos”; it is not treated as zero."
+      ],
+      "solutionTypes": [
+        "COMPOSITION",
+        "SMALL_CHO_REVIEW",
+        "GI_OR_PREPARATION"
+      ],
+      "evidenceState": "SOURCE_BINDING_UNRESOLVED",
+      "originalIngredientCount": 5,
+      "inputRowCount": 5,
+      "rowAccounting": "COUNT_MATCH_REQUIRES_SEMANTIC_REVIEW",
+      "priorWithdrawnGiBindings": [],
+      "inheritedAssumptionsRequiringReview": [],
+      "carbohydrateImpact": {
+        "knownBlockedComponents": [
+          {
+            "ingredient": "seesami",
+            "choPerServingG": 0.45
+          }
+        ],
+        "knownBlockedSumG": 0.45,
+        "unknownBlockedComponents": [
+          "tahmariisi",
+          "kookos"
+        ],
+        "completeBound": false
+      },
+      "priority": {
+        "score": 6,
+        "factors": {
+          "nativeZeroLead": 0,
+          "verifiedReferencePortionLead": 0,
+          "existingComposition": 10,
+          "completeRowAccounting": 10,
+          "establishedNegativeSearch": 0,
+          "priorBatchWithoutNewLead": 0,
+          "materialUnknownCho": -10,
+          "knownCarbohydrateExposure": 0,
+          "priorScientificWithdrawals": 0,
+          "independentUnknownQuantitiesOrComposition": -4,
+          "inheritedUnweighedCulinaryAssumptions": 0
+        },
+        "basis": "Feasibility heuristic: quantity/source identity, completeness, CHO materiality and previous negative searches; not blocker count alone."
+      },
+      "nextStep": "Search existing composition/GI indexes and verify product/preparation identity before any calculation.",
+      "publicationAuthorized": false,
+      "screenStatus": "NEEDS_CLARIFICATION",
+      "screenFinding": "Tahmariisin ja kookoksen koostumus sekä seesamin GI tarvitsevat erilliset sidokset; kookoksen valmistemuotoa ei päätellä.",
+      "recipeSha256Lf": "f5de045c45f50b5085810a20d18a239f5244831bf4ea06b9262b919862e61571",
+      "inputSha256": "bf1616ab3c9d17a782098094a154f422768c33e329b8cb589536da51b33d1d89",
+      "recipeBodyReviewed": true,
+      "existingSourcesAndAuditsReviewed": true,
+      "sqliteRequests": [
+        "vietnamilainen-xoi-maapahkinalla:0",
+        "vietnamilainen-xoi-maapahkinalla:1",
+        "vietnamilainen-xoi-maapahkinalla:2"
+      ]
+    },
+    {
+      "recipeId": "chow-mein",
+      "recipePath": "reseptit/paaruoat/chow-mein.md",
+      "blockerCount": 3,
+      "blockers": [
+        "chow-mein: soijakastiketta: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+        "chow-mein: osterikastiketta: 1 tbsp oyster sauce has no specified brand/product data; sugar may materially affect the total.",
+        "chow-mein: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
+      ],
+      "solutionTypes": [
+        "GI_OR_PREPARATION",
+        "IDENTITY_OR_CLARIFICATION"
+      ],
+      "evidenceState": "SOURCE_BINDING_UNRESOLVED",
+      "originalIngredientCount": 10,
+      "inputRowCount": 10,
+      "rowAccounting": "COUNT_MATCH_REQUIRES_SEMANTIC_REVIEW",
+      "priorWithdrawnGiBindings": [],
+      "inheritedAssumptionsRequiringReview": [],
+      "carbohydrateImpact": {
+        "knownBlockedComponents": [
+          {
+            "ingredient": "soijakastiketta",
+            "choPerServingG": 1.2825
+          }
+        ],
+        "knownBlockedSumG": 1.2825,
+        "unknownBlockedComponents": [
+          "osterikastiketta"
+        ],
+        "completeBound": false
+      },
+      "priority": {
+        "score": 0,
+        "factors": {
+          "nativeZeroLead": 0,
+          "verifiedReferencePortionLead": 0,
+          "existingComposition": 10,
+          "completeRowAccounting": 10,
+          "establishedNegativeSearch": 0,
+          "priorBatchWithoutNewLead": 0,
+          "materialUnknownCho": -10,
+          "knownCarbohydrateExposure": -10,
+          "priorScientificWithdrawals": 0,
+          "independentUnknownQuantitiesOrComposition": 0,
+          "inheritedUnweighedCulinaryAssumptions": 0
+        },
+        "basis": "Feasibility heuristic: quantity/source identity, completeness, CHO materiality and previous negative searches; not blocker count alone."
+      },
+      "nextStep": "Search existing composition/GI indexes and verify product/preparation identity before any calculation.",
+      "publicationAuthorized": false,
+      "screenStatus": "NEEDS_CLARIFICATION",
+      "screenFinding": "Osterikastikkeen tuote ja soijakastikkeen GI puuttuvat; muuttunut resepti vaatii uuden kokonaissidonnan.",
+      "recipeSha256Lf": "3e9d6ed75ef531708f84720de20aa4fc8d40122f0fdd81c6a6f609d34cbab9c2",
+      "inputSha256": "31f5218ee156127f4dba9ea96c0e9103f24941361ef19d65a30b67e4645559e7",
+      "recipeBodyReviewed": true,
+      "existingSourcesAndAuditsReviewed": true,
+      "sqliteRequests": [
+        "chow-mein:0",
+        "chow-mein:1"
+      ]
+    },
+    {
+      "recipeId": "congee-riisipuuro",
+      "recipePath": "reseptit/paaruoat/congee-riisipuuro.md",
+      "blockerCount": 3,
+      "blockers": [
+        "congee-riisipuuro: kanalientä: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+        "congee-riisipuuro: tuoretta inkivääriä: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+        "congee-riisipuuro: kevätsipulia: Ingredient mass is missing or invalid."
+      ],
+      "solutionTypes": [
+        "QUANTITY",
+        "SMALL_CHO_REVIEW",
+        "GI_OR_PREPARATION"
+      ],
+      "evidenceState": "SOURCE_BINDING_UNRESOLVED",
+      "originalIngredientCount": 8,
+      "inputRowCount": 8,
+      "rowAccounting": "COUNT_MATCH_REQUIRES_SEMANTIC_REVIEW",
+      "priorWithdrawnGiBindings": [],
+      "inheritedAssumptionsRequiringReview": [],
+      "carbohydrateImpact": {
+        "knownBlockedComponents": [
+          {
+            "ingredient": "kanalientä",
+            "choPerServingG": 2
+          },
+          {
+            "ingredient": "tuoretta inkivääriä",
+            "choPerServingG": 0.072
+          }
+        ],
+        "knownBlockedSumG": 2.072,
+        "unknownBlockedComponents": [
+          "kevätsipulia"
+        ],
+        "completeBound": false
+      },
+      "priority": {
+        "score": 0,
+        "factors": {
+          "nativeZeroLead": 0,
+          "verifiedReferencePortionLead": 0,
+          "existingComposition": 10,
+          "completeRowAccounting": 10,
+          "establishedNegativeSearch": 0,
+          "priorBatchWithoutNewLead": 0,
+          "materialUnknownCho": -10,
+          "knownCarbohydrateExposure": -10,
+          "priorScientificWithdrawals": 0,
+          "independentUnknownQuantitiesOrComposition": 0,
+          "inheritedUnweighedCulinaryAssumptions": 0
+        },
+        "basis": "Feasibility heuristic: quantity/source identity, completeness, CHO materiality and previous negative searches; not blocker count alone."
+      },
+      "nextStep": "Check existing food-specific reference portions and the exact original quantity; no copied variant mass.",
+      "publicationAuthorized": false,
+      "screenStatus": "SOURCE_RESEARCH",
+      "screenFinding": "Kevätsipulin viitemassa ei ratkaise kanaliemen ja inkiväärin GI-soveltuvuutta; keitetyn riisipuuron valmistus arvioitava erikseen.",
+      "recipeSha256Lf": "1041166cfeaedda86d91d80ab89cd9ebd39b9abdeff0f8164fc5720389212fca",
+      "inputSha256": "2b18e67ce5f76211fa3cf9153f22ff472ba026c624d91f6fc448cfcf4b93ffa9",
+      "recipeBodyReviewed": true,
+      "existingSourcesAndAuditsReviewed": true,
+      "sqliteRequests": [
+        "congee-riisipuuro:0",
+        "congee-riisipuuro:1",
+        "congee-riisipuuro:2"
+      ]
+    },
+    {
+      "recipeId": "hernekeitto-savupotkalla",
+      "recipePath": "reseptit/paaruoat/hernekeitto-savupotkalla.md",
+      "blockerCount": 2,
+      "blockers": [
+        "hernekeitto-savupotkalla: laakerinlehteä: No specific Fineli/AFCD food record and preparation match was resolved for “laakerinlehteä”; it is not treated as zero.",
+        "hernekeitto-savupotkalla: sinappia tarjoiluun: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
+      ],
+      "solutionTypes": [
+        "COMPOSITION",
+        "SMALL_CHO_REVIEW",
+        "GI_OR_PREPARATION"
+      ],
+      "evidenceState": "SOURCE_BINDING_UNRESOLVED",
+      "originalIngredientCount": 8,
+      "inputRowCount": 8,
+      "rowAccounting": "COUNT_MATCH_REQUIRES_SEMANTIC_REVIEW",
+      "priorWithdrawnGiBindings": [],
+      "inheritedAssumptionsRequiringReview": [
+        {
+          "ingredient": "meiramia",
+          "choEstimate": 0.25,
+          "evidence": "Conservative culinary-use bound 0.5 g per recipe, divided by servings, below 1 g available carbohydrate per serving."
+        },
+        {
+          "ingredient": "suolaa ja mustapippuria",
+          "choEstimate": 0.1,
+          "evidence": "Conservative culinary-use bound 0.2 g per recipe, divided by servings, below 1 g available carbohydrate per serving."
+        }
+      ],
+      "carbohydrateImpact": {
+        "knownBlockedComponents": [
+          {
+            "ingredient": "sinappia tarjoiluun",
+            "choPerServingG": 0.564
+          }
+        ],
+        "knownBlockedSumG": 0.564,
+        "unknownBlockedComponents": [
+          "laakerinlehteä"
+        ],
+        "completeBound": false
+      },
+      "priority": {
+        "score": 0,
+        "factors": {
+          "nativeZeroLead": 0,
+          "verifiedReferencePortionLead": 0,
+          "existingComposition": 10,
+          "completeRowAccounting": 10,
+          "establishedNegativeSearch": 0,
+          "priorBatchWithoutNewLead": 0,
+          "materialUnknownCho": -10,
+          "knownCarbohydrateExposure": 0,
+          "priorScientificWithdrawals": 0,
+          "independentUnknownQuantitiesOrComposition": 0,
+          "inheritedUnweighedCulinaryAssumptions": -10
+        },
+        "basis": "Feasibility heuristic: quantity/source identity, completeness, CHO materiality and previous negative searches; not blocker count alone."
+      },
+      "nextStep": "Search existing composition/GI indexes and verify product/preparation identity before any calculation.",
+      "publicationAuthorized": false,
+      "screenStatus": "HOLD",
+      "screenFinding": "Laakerinlehden lisäksi sinapin GI-sidos on ratkaisematon. Syöte rinnastaa700g savupotkan raakaan vähärasvaiseen sianfileeseen ja sisältää todentamattomia mauste-oletuksia. Pelkkä lehtien pienen osuuden käsittely ei osoita kokonaisuuden soveltuvuutta.",
+      "recipeSha256Lf": "6bff45d3ceb0c81c7c29e296c5628245a5fea11aedd6a89f96dae48fb6116378",
+      "inputSha256": "b67053745f69b0b105c12f27180b3354bd29b57e4d7a59672f91e8efc217874b",
+      "recipeBodyReviewed": true,
+      "existingSourcesAndAuditsReviewed": true,
+      "sqliteRequests": [
+        "hernekeitto-savupotkalla:0",
+        "hernekeitto-savupotkalla:1"
+      ]
+    },
+    {
+      "recipeId": "hunaja-sinappikana-kaalilla",
+      "recipePath": "reseptit/paaruoat/hunaja-sinappikana-kaalilla.md",
+      "blockerCount": 2,
+      "blockers": [
+        "hunaja-sinappikana-kaalilla: valkosipulijauhetta: The recipe amount 1 tl has no food-specific mass conversion for VALKOSIPULI.",
+        "hunaja-sinappikana-kaalilla: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
+      ],
+      "solutionTypes": [
+        "QUANTITY"
+      ],
+      "evidenceState": "SOURCE_BINDING_UNRESOLVED",
+      "originalIngredientCount": 8,
+      "inputRowCount": 8,
+      "rowAccounting": "COUNT_MATCH_REQUIRES_SEMANTIC_REVIEW",
+      "priorWithdrawnGiBindings": [],
+      "inheritedAssumptionsRequiringReview": [
+        {
+          "ingredient": "paprikajauhetta",
+          "choEstimate": 0.125,
+          "evidence": "Conservative available-carbohydrate bound 0.5 g per recipe; below 1 g per serving."
+        },
+        {
+          "ingredient": "suolaa ja mustapippuria",
+          "choEstimate": 0.125,
+          "evidence": "Conservative available-carbohydrate bound 0.5 g per recipe; below 1 g per serving."
+        }
+      ],
+      "carbohydrateImpact": {
+        "knownBlockedComponents": [],
+        "knownBlockedSumG": 0,
+        "unknownBlockedComponents": [
+          "valkosipulijauhetta"
+        ],
+        "completeBound": false
+      },
+      "priority": {
+        "score": 0,
+        "factors": {
+          "nativeZeroLead": 0,
+          "verifiedReferencePortionLead": 0,
+          "existingComposition": 10,
+          "completeRowAccounting": 10,
+          "establishedNegativeSearch": 0,
+          "priorBatchWithoutNewLead": 0,
+          "materialUnknownCho": -10,
+          "knownCarbohydrateExposure": 0,
+          "priorScientificWithdrawals": 0,
+          "independentUnknownQuantitiesOrComposition": 0,
+          "inheritedUnweighedCulinaryAssumptions": -10
+        },
+        "basis": "Feasibility heuristic: quantity/source identity, completeness, CHO materiality and previous negative searches; not blocker count alone."
+      },
+      "nextStep": "Check existing food-specific reference portions and the exact original quantity; no copied variant mass.",
+      "publicationAuthorized": false,
+      "screenStatus": "SOURCE_RESEARCH",
+      "screenFinding": "Valkosipulijauheen1tl on sidottu tuoreeseen valkosipuliin; koostumus/massamuoto korjattava lähteellisesti. Lisäksi alkuperäisen reseptin sidonta on vanhentunut ja mausteseoksen oletus katselmoimatta.",
+      "recipeSha256Lf": "8d49514be7f1938671f3c9ce074be4674e7f766e9229ac94c1b80a1f6ea1cdbe",
+      "inputSha256": "7741e4171f3265a104e00c1a16d238a3c967f3b3837bfd554f49833233afc2bb",
+      "recipeBodyReviewed": true,
+      "existingSourcesAndAuditsReviewed": true,
+      "sqliteRequests": [
+        "hunaja-sinappikana-kaalilla:0"
+      ]
+    },
+    {
+      "recipeId": "indonesialainen-tempeh-munakulho",
+      "recipePath": "reseptit/aamupalat/indonesialainen-tempeh-munakulho.md",
+      "blockerCount": 2,
+      "blockers": [
+        "indonesialainen-tempeh-munakulho: tempeh: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+        "indonesialainen-tempeh-munakulho: sambal: No source-matched composition and preparation was resolved for “sambal”; it is not treated as zero."
+      ],
+      "solutionTypes": [
+        "COMPOSITION",
+        "GI_OR_PREPARATION"
+      ],
+      "evidenceState": "SOURCE_BINDING_UNRESOLVED",
+      "originalIngredientCount": 5,
+      "inputRowCount": 5,
+      "rowAccounting": "COUNT_MATCH_REQUIRES_SEMANTIC_REVIEW",
+      "priorWithdrawnGiBindings": [],
+      "inheritedAssumptionsRequiringReview": [],
+      "carbohydrateImpact": {
+        "knownBlockedComponents": [
+          {
+            "ingredient": "tempeh",
+            "choPerServingG": 2.75
+          }
+        ],
+        "knownBlockedSumG": 2.75,
+        "unknownBlockedComponents": [
+          "sambal"
+        ],
+        "completeBound": false
+      },
+      "priority": {
+        "score": 0,
+        "factors": {
+          "nativeZeroLead": 0,
+          "verifiedReferencePortionLead": 0,
+          "existingComposition": 10,
+          "completeRowAccounting": 10,
+          "establishedNegativeSearch": 0,
+          "priorBatchWithoutNewLead": 0,
+          "materialUnknownCho": -10,
+          "knownCarbohydrateExposure": -10,
+          "priorScientificWithdrawals": 0,
+          "independentUnknownQuantitiesOrComposition": 0,
+          "inheritedUnweighedCulinaryAssumptions": 0
+        },
+        "basis": "Feasibility heuristic: quantity/source identity, completeness, CHO materiality and previous negative searches; not blocker count alone."
+      },
+      "nextStep": "Search existing composition/GI indexes and verify product/preparation identity before any calculation.",
+      "publicationAuthorized": false,
+      "screenStatus": "NEEDS_CLARIFICATION",
+      "screenFinding": "150g sambal on olennainen nimeämätön kastike ja tempehin nykyinen GI-soveltuvuus on ratkaisematon. Pelkkä fermentoidun soijan lähde ei ratkaise sambalia.",
+      "recipeSha256Lf": "48c54ac345257f808fa457837f20af7f560128d891f3108efe1b37b4b76df3f8",
+      "inputSha256": "dc31f7a1df8c375c2322cd393fe6b1454f4b11b958f06b136370e044bad7d318",
+      "recipeBodyReviewed": true,
+      "existingSourcesAndAuditsReviewed": true,
+      "sqliteRequests": [
+        "indonesialainen-tempeh-munakulho:0",
+        "indonesialainen-tempeh-munakulho:1"
+      ]
+    },
+    {
+      "recipeId": "japanilainen-dashimaki-tamago-aamiaislautasella",
+      "recipePath": "reseptit/aamupalat/japanilainen-dashimaki-tamago-aamiaislautasella.md",
+      "blockerCount": 1,
+      "blockers": [
+        "japanilainen-dashimaki-tamago-aamiaislautasella: dashi: No source-matched composition and preparation was resolved for “dashi”; it is not treated as zero."
+      ],
+      "solutionTypes": [
+        "COMPOSITION",
+        "GI_OR_PREPARATION"
+      ],
+      "evidenceState": "SOURCE_BINDING_UNRESOLVED",
+      "originalIngredientCount": 6,
+      "inputRowCount": 6,
+      "rowAccounting": "COUNT_MATCH_REQUIRES_SEMANTIC_REVIEW",
+      "priorWithdrawnGiBindings": [],
+      "inheritedAssumptionsRequiringReview": [],
+      "carbohydrateImpact": {
+        "knownBlockedComponents": [],
+        "knownBlockedSumG": 0,
+        "unknownBlockedComponents": [
+          "dashi"
+        ],
+        "completeBound": false
+      },
+      "priority": {
+        "score": 0,
+        "factors": {
+          "nativeZeroLead": 0,
+          "verifiedReferencePortionLead": 0,
+          "existingComposition": 0,
+          "completeRowAccounting": 10,
+          "establishedNegativeSearch": 0,
+          "priorBatchWithoutNewLead": 0,
+          "materialUnknownCho": -10,
+          "knownCarbohydrateExposure": 0,
+          "priorScientificWithdrawals": 0,
+          "independentUnknownQuantitiesOrComposition": 0,
+          "inheritedUnweighedCulinaryAssumptions": 0
+        },
+        "basis": "Feasibility heuristic: quantity/source identity, completeness, CHO materiality and previous negative searches; not blocker count alone."
+      },
+      "nextStep": "Search existing composition/GI indexes and verify product/preparation identity before any calculation.",
+      "publicationAuthorized": false,
+      "screenStatus": "NEEDS_CLARIFICATION",
+      "screenFinding": "200ml dashille ei ole nimettyä koostumusta ja valmistusta. Liemeen käytettyjen raaka-aineiden syöty osuus tai toinen nimetty dashi ei ole automaattinen alkuperäisratkaisu.",
+      "recipeSha256Lf": "cbd1fc4d7b4b5dc4a3bdd509c26b46a23b432e93ce3ab008145c08a9f37ed9c2",
+      "inputSha256": "267858e0ac32e37002e2bc157bf91bec35dcbf530c5abfe4f30052157c226821",
+      "recipeBodyReviewed": true,
+      "existingSourcesAndAuditsReviewed": true,
+      "sqliteRequests": [
+        "japanilainen-dashimaki-tamago-aamiaislautasella:0"
+      ]
+    },
+    {
+      "recipeId": "japanilainen-hojicha-jogurtti-persimonilla",
+      "recipePath": "reseptit/aamupalat/japanilainen-hojicha-jogurtti-persimonilla.md",
+      "blockerCount": 4,
+      "blockers": [
+        "japanilainen-hojicha-jogurtti-persimonilla: persimon: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+        "japanilainen-hojicha-jogurtti-persimonilla: hojicha: No source-matched composition and preparation was resolved for “hojicha”; it is not treated as zero.",
+        "japanilainen-hojicha-jogurtti-persimonilla: seesaminsiemen: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+        "japanilainen-hojicha-jogurtti-persimonilla: recipe structure differs from the last GL review (b1c2bd3e036f0a17b3f61a560c39b5df56e1d8d5); ingredient mapping and calculation must be reviewed again."
+      ],
+      "solutionTypes": [
+        "COMPOSITION",
+        "SMALL_CHO_REVIEW",
+        "GI_OR_PREPARATION"
+      ],
+      "evidenceState": "SOURCE_BINDING_UNRESOLVED",
+      "originalIngredientCount": 5,
+      "inputRowCount": 5,
+      "rowAccounting": "COUNT_MATCH_REQUIRES_SEMANTIC_REVIEW",
+      "priorWithdrawnGiBindings": [],
+      "inheritedAssumptionsRequiringReview": [],
+      "carbohydrateImpact": {
+        "knownBlockedComponents": [
+          {
+            "ingredient": "persimon",
+            "choPerServingG": 12
+          },
+          {
+            "ingredient": "seesaminsiemen",
+            "choPerServingG": 0.45
+          }
+        ],
+        "knownBlockedSumG": 12.45,
+        "unknownBlockedComponents": [
+          "hojicha"
+        ],
+        "completeBound": false
+      },
+      "priority": {
+        "score": 0,
+        "factors": {
+          "nativeZeroLead": 0,
+          "verifiedReferencePortionLead": 0,
+          "existingComposition": 10,
+          "completeRowAccounting": 10,
+          "establishedNegativeSearch": 0,
+          "priorBatchWithoutNewLead": 0,
+          "materialUnknownCho": -10,
+          "knownCarbohydrateExposure": -10,
+          "priorScientificWithdrawals": 0,
+          "independentUnknownQuantitiesOrComposition": 0,
+          "inheritedUnweighedCulinaryAssumptions": 0
+        },
+        "basis": "Feasibility heuristic: quantity/source identity, completeness, CHO materiality and previous negative searches; not blocker count alone."
+      },
+      "nextStep": "Search existing composition/GI indexes and verify product/preparation identity before any calculation.",
+      "publicationAuthorized": false,
+      "screenStatus": "SOURCE_RESEARCH",
+      "screenFinding": "Persimonin ja seesamin GI-sidokset, hojichan koostumus ja muuttunut reseptisidonta ovat eri kysymyksiä. Vanhaa tuote-/annosversiota ei käytetä uudelleen.",
+      "recipeSha256Lf": "cae50573ff18898460b95e9c674d0bc39514c7cbaaaa502d4008171b14261cfe",
+      "inputSha256": "34614c113bca10dbd220ed9dad0954a61f98265d3e28ec6f2dd6f37a560e1360",
+      "recipeBodyReviewed": true,
+      "existingSourcesAndAuditsReviewed": true,
+      "sqliteRequests": [
+        "japanilainen-hojicha-jogurtti-persimonilla:0",
+        "japanilainen-hojicha-jogurtti-persimonilla:1",
+        "japanilainen-hojicha-jogurtti-persimonilla:2"
+      ]
+    },
+    {
+      "recipeId": "kerala-kalacurry",
+      "recipePath": "reseptit/paaruoat/kerala-kalacurry.md",
+      "blockerCount": 2,
+      "blockers": [
+        "kerala-kalacurry: kookosmaitoa: GI evidence is missing.",
+        "kerala-kalacurry: tamarinditahnaa: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
+      ],
+      "solutionTypes": [
+        "GI_OR_PREPARATION"
+      ],
+      "evidenceState": "SOURCE_BINDING_UNRESOLVED",
+      "originalIngredientCount": 13,
+      "inputRowCount": 13,
+      "rowAccounting": "COUNT_MATCH_REQUIRES_SEMANTIC_REVIEW",
+      "priorWithdrawnGiBindings": [],
+      "inheritedAssumptionsRequiringReview": [
+        {
+          "ingredient": "sinapinsiemeniä",
+          "choEstimate": 0.25,
+          "evidence": "Conservative culinary-use estimate; unweighed garnish quantities are bounded below 1 g available carbohydrate per serving and shown as an assumption, not a measured amount."
+        },
+        {
+          "ingredient": "suolaa",
+          "choEstimate": 0.25,
+          "evidence": "Conservative culinary-use estimate; unweighed garnish quantities are bounded below 1 g available carbohydrate per serving and shown as an assumption, not a measured amount."
+        }
+      ],
+      "carbohydrateImpact": {
+        "knownBlockedComponents": [
+          {
+            "ingredient": "kookosmaitoa",
+            "choPerServingG": 1.564
+          },
+          {
+            "ingredient": "tamarinditahnaa",
+            "choPerServingG": 2.1525
+          }
+        ],
+        "knownBlockedSumG": 3.7165,
+        "unknownBlockedComponents": [],
+        "completeBound": false
+      },
+      "priority": {
+        "score": 0,
+        "factors": {
+          "nativeZeroLead": 0,
+          "verifiedReferencePortionLead": 0,
+          "existingComposition": 10,
+          "completeRowAccounting": 10,
+          "establishedNegativeSearch": 0,
+          "priorBatchWithoutNewLead": 0,
+          "materialUnknownCho": 0,
+          "knownCarbohydrateExposure": -10,
+          "priorScientificWithdrawals": 0,
+          "independentUnknownQuantitiesOrComposition": 0,
+          "inheritedUnweighedCulinaryAssumptions": -10
+        },
+        "basis": "Feasibility heuristic: quantity/source identity, completeness, CHO materiality and previous negative searches; not blocker count alone."
+      },
+      "nextStep": "Search existing composition/GI indexes and verify product/preparation identity before any calculation.",
+      "publicationAuthorized": false,
+      "screenStatus": "SOURCE_RESEARCH",
+      "screenFinding": "Alkuperäiset400ml kookosmaitoa ja1rkl tamarindia tarvitsevat vastaavuuden; #227:n toiseen tuote-/mausteversioon siirtyminen ei ole alkuperäiskorjaus.",
+      "recipeSha256Lf": "0c2d96d105ba258e741c9e50ffd7250f20f59167e63fb4850757f98dc46e2fed",
+      "inputSha256": "2e66493ec843a684ea6f9bd924fe28889d6637a28e7ee5ca496bc7c0a53eb8e7",
+      "recipeBodyReviewed": true,
+      "existingSourcesAndAuditsReviewed": true,
+      "sqliteRequests": [
+        "kerala-kalacurry:0",
+        "kerala-kalacurry:1"
+      ]
+    },
+    {
+      "recipeId": "meksikolainen-paputostada-aamupalaksi",
+      "recipePath": "reseptit/aamupalat/meksikolainen-paputostada-aamupalaksi.md",
+      "blockerCount": 2,
+      "blockers": [
+        "meksikolainen-paputostada-aamupalaksi: maissitortilla: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+        "meksikolainen-paputostada-aamupalaksi: avokado: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale."
+      ],
+      "solutionTypes": [
+        "SMALL_CHO_REVIEW",
+        "GI_OR_PREPARATION"
+      ],
+      "evidenceState": "SOURCE_BINDING_UNRESOLVED",
+      "originalIngredientCount": 6,
+      "inputRowCount": 6,
+      "rowAccounting": "COUNT_MATCH_REQUIRES_SEMANTIC_REVIEW",
+      "priorWithdrawnGiBindings": [],
+      "inheritedAssumptionsRequiringReview": [
+        {
+          "ingredient": "suolaa maun mukaan",
+          "choEstimate": 0.1,
+          "evidence": "Conservative culinary-use bound 0.2 g per recipe, divided by servings, below 1 g available carbohydrate per serving."
+        }
+      ],
+      "carbohydrateImpact": {
+        "knownBlockedComponents": [
+          {
+            "ingredient": "maissitortilla",
+            "choPerServingG": 25.9225
+          },
+          {
+            "ingredient": "avokado",
+            "choPerServingG": 0.462
+          }
+        ],
+        "knownBlockedSumG": 26.3845,
+        "unknownBlockedComponents": [],
+        "completeBound": false
+      },
+      "priority": {
+        "score": 0,
+        "factors": {
+          "nativeZeroLead": 0,
+          "verifiedReferencePortionLead": 0,
+          "existingComposition": 10,
+          "completeRowAccounting": 10,
+          "establishedNegativeSearch": 0,
+          "priorBatchWithoutNewLead": 0,
+          "materialUnknownCho": 0,
+          "knownCarbohydrateExposure": -10,
+          "priorScientificWithdrawals": 0,
+          "independentUnknownQuantitiesOrComposition": 0,
+          "inheritedUnweighedCulinaryAssumptions": -10
+        },
+        "basis": "Feasibility heuristic: quantity/source identity, completeness, CHO materiality and previous negative searches; not blocker count alone."
+      },
+      "nextStep": "Search existing composition/GI indexes and verify product/preparation identity before any calculation.",
+      "publicationAuthorized": false,
+      "screenStatus": "SOURCE_RESEARCH",
+      "screenFinding": "Alkuperäinen100g maissitortilla ei ole nimetyn rapean72g tostadan versio. Avokadon lähde voidaan arvioida erikseen, mutta se ei ratkaise tortillan valmistusmatchia.",
+      "recipeSha256Lf": "57e8193e7457a63d270b53386c030f2b905225b851e93c7c86941aa9e27aba5b",
+      "inputSha256": "04d43c60a47591f9ffea4f3a7ed98c8d7de31a590103f2609afd266cfc4e43bd",
+      "recipeBodyReviewed": true,
+      "existingSourcesAndAuditsReviewed": true,
+      "sqliteRequests": [
+        "meksikolainen-paputostada-aamupalaksi:0",
+        "meksikolainen-paputostada-aamupalaksi:1"
+      ]
+    },
+    {
+      "recipeId": "paneer-tikka",
+      "recipePath": "reseptit/alkuruoat/paneer-tikka.md",
+      "blockerCount": 2,
+      "blockers": [
+        "paneer-tikka: punaista paprikaa: AJO 1.6B: generic Pepper GI 40 is reference-only. Species, colour, preparation and original human measurement are unverified; DOI 10.3390/nu12102989 Table 1 cannot support this ingredient. Missing GI is not zero. AJO 1.6B: original red pepper matches Fineli #386: CHOAVL 4.5, fibre 1.9, polyols 0 g/100 g; previous #387 green pepper had CHOAVL 2.5. Corrected using source values, no colour multiplier.",
+        "paneer-tikka: vihreää paprikaa: AJO 1.6B: generic Pepper GI 40 is reference-only. Species, colour, preparation and original human measurement are unverified; DOI 10.3390/nu12102989 Table 1 cannot support this ingredient. Missing GI is not zero."
+      ],
+      "solutionTypes": [
+        "GI_OR_PREPARATION"
+      ],
+      "evidenceState": "SOURCE_BINDING_UNRESOLVED",
+      "originalIngredientCount": 10,
+      "inputRowCount": 10,
+      "rowAccounting": "COUNT_MATCH_REQUIRES_SEMANTIC_REVIEW",
+      "priorWithdrawnGiBindings": [],
+      "inheritedAssumptionsRequiringReview": [
+        {
+          "ingredient": "garam masalaa",
+          "choEstimate": 0.125,
+          "evidence": "Conservative available-carbohydrate bound 0.5 g per recipe; below 1 g per serving."
+        },
+        {
+          "ingredient": "paprikajauhetta",
+          "choEstimate": 0.125,
+          "evidence": "Conservative available-carbohydrate bound 0.5 g per recipe; below 1 g per serving."
+        },
+        {
+          "ingredient": "kurkumaa",
+          "choEstimate": 0.125,
+          "evidence": "Conservative available-carbohydrate bound 0.5 g per recipe; below 1 g per serving."
+        }
+      ],
+      "carbohydrateImpact": {
+        "knownBlockedComponents": [
+          {
+            "ingredient": "punaista paprikaa",
+            "choPerServingG": 1.9125
+          },
+          {
+            "ingredient": "vihreää paprikaa",
+            "choPerServingG": 1.0625
+          }
+        ],
+        "knownBlockedSumG": 2.975,
+        "unknownBlockedComponents": [],
+        "completeBound": false
+      },
+      "priority": {
+        "score": 0,
+        "factors": {
+          "nativeZeroLead": 0,
+          "verifiedReferencePortionLead": 0,
+          "existingComposition": 10,
+          "completeRowAccounting": 10,
+          "establishedNegativeSearch": 0,
+          "priorBatchWithoutNewLead": 0,
+          "materialUnknownCho": 0,
+          "knownCarbohydrateExposure": -10,
+          "priorScientificWithdrawals": 0,
+          "independentUnknownQuantitiesOrComposition": 0,
+          "inheritedUnweighedCulinaryAssumptions": -10
+        },
+        "basis": "Feasibility heuristic: quantity/source identity, completeness, CHO materiality and previous negative searches; not blocker count alone."
+      },
+      "nextStep": "Search existing composition/GI indexes and verify product/preparation identity before any calculation.",
+      "publicationAuthorized": false,
+      "screenStatus": "HOLD",
+      "screenFinding": "Punainen ja vihreä paprika ovat eri koostumukset. AJO1.6B:n generic Pepper40 on reference-only; kumpaakaan sidosta ei palauteta ilman uutta soveltuvaa ihmisnäyttöä.",
+      "recipeSha256Lf": "146542a69bf1c0cfe8ed0f2cd8986600f8b7ccc5eaecdf07fab26b44e4f7d7a4",
+      "inputSha256": "f5e149d1e1a3c87261b80487629f8fdcb464d65b2964843265f85278dd4046c8",
+      "recipeBodyReviewed": true,
+      "existingSourcesAndAuditsReviewed": true,
+      "sqliteRequests": [
+        "paneer-tikka:0",
+        "paneer-tikka:1"
+      ]
+    },
+    {
+      "recipeId": "uunimakkara-sipulipedilla",
+      "recipePath": "reseptit/paaruoat/uunimakkara-sipulipedilla.md",
+      "blockerCount": 1,
+      "blockers": [
+        "uunimakkara-sipulipedilla: lenkkimakkaraa: GI evidence is missing."
+      ],
+      "solutionTypes": [
+        "GI_OR_PREPARATION"
+      ],
+      "evidenceState": "SOURCE_BINDING_UNRESOLVED",
+      "originalIngredientCount": 8,
+      "inputRowCount": 8,
+      "rowAccounting": "COUNT_MATCH_REQUIRES_SEMANTIC_REVIEW",
+      "priorWithdrawnGiBindings": [],
+      "inheritedAssumptionsRequiringReview": [
+        {
+          "ingredient": "mustapippuria",
+          "choEstimate": 0.25,
+          "evidence": "Conservative culinary-use estimate; unweighed garnish quantities are bounded below 1 g available carbohydrate per serving and shown as an assumption, not a measured amount."
+        }
+      ],
+      "carbohydrateImpact": {
+        "knownBlockedComponents": [
+          {
+            "ingredient": "lenkkimakkaraa",
+            "choPerServingG": 9.4975
+          }
+        ],
+        "knownBlockedSumG": 9.4975,
+        "unknownBlockedComponents": [],
+        "completeBound": false
+      },
+      "priority": {
+        "score": 0,
+        "factors": {
+          "nativeZeroLead": 0,
+          "verifiedReferencePortionLead": 0,
+          "existingComposition": 10,
+          "completeRowAccounting": 10,
+          "establishedNegativeSearch": 0,
+          "priorBatchWithoutNewLead": 0,
+          "materialUnknownCho": 0,
+          "knownCarbohydrateExposure": -10,
+          "priorScientificWithdrawals": 0,
+          "independentUnknownQuantitiesOrComposition": 0,
+          "inheritedUnweighedCulinaryAssumptions": -10
+        },
+        "basis": "Feasibility heuristic: quantity/source identity, completeness, CHO materiality and previous negative searches; not blocker count alone."
+      },
+      "nextStep": "Search existing composition/GI indexes and verify product/preparation identity before any calculation.",
+      "publicationAuthorized": false,
+      "screenStatus": "NEEDS_CLARIFICATION",
+      "screenFinding": "500g lenkkimakkaraa on merkittävä tärkkelys-/sokerilähde. Tuotteen identiteetti ja soveltuva GI-/menetelmänäyttö tarvitaan; proteiiniruoan nolla-oletus ei käy.",
+      "recipeSha256Lf": "d2705895936c37657fe45ac18e168b4e8eb3252def668e2bf1208d1680ece37e",
+      "inputSha256": "ab39d46f8b22f4c98c34cf59a21fcb7729a0ab8da39b912a36caa07de50a8c07",
+      "recipeBodyReviewed": true,
+      "existingSourcesAndAuditsReviewed": true,
+      "sqliteRequests": [
+        "uunimakkara-sipulipedilla:0"
+      ]
+    },
+    {
+      "recipeId": "japanilainen-okayu-umeboshipluumulla",
+      "recipePath": "reseptit/aamupalat/japanilainen-okayu-umeboshipluumulla.md",
+      "blockerCount": 3,
+      "blockers": [
+        "japanilainen-okayu-umeboshipluumulla: umeboshi: No source-matched composition and preparation was resolved for “umeboshi”; it is not treated as zero.",
+        "japanilainen-okayu-umeboshipluumulla: seesaminsiemen: GI value is unpublished, off-scale, or its food/preparation match lacks a rationale.",
+        "japanilainen-okayu-umeboshipluumulla: vettä tai mietoa lientä: The recipe allows materially different liquids (water, milk or broth); the selected liquid is not specified, so the carbohydrate total is not established."
+      ],
+      "solutionTypes": [
+        "COMPOSITION",
+        "SMALL_CHO_REVIEW",
+        "GI_OR_PREPARATION",
+        "IDENTITY_OR_CLARIFICATION"
+      ],
+      "evidenceState": "SOURCE_BINDING_UNRESOLVED",
+      "originalIngredientCount": 6,
+      "inputRowCount": 6,
+      "rowAccounting": "COUNT_MATCH_REQUIRES_SEMANTIC_REVIEW",
+      "priorWithdrawnGiBindings": [],
+      "inheritedAssumptionsRequiringReview": [
+        {
+          "ingredient": "kevätsipuli",
+          "choEstimate": 0.25,
+          "evidence": "Conservative available-carbohydrate bound 0.5 g per recipe; below 1 g per serving."
+        }
+      ],
+      "carbohydrateImpact": {
+        "knownBlockedComponents": [
+          {
+            "ingredient": "seesaminsiemen",
+            "choPerServingG": 0.45
+          }
+        ],
+        "knownBlockedSumG": 0.45,
+        "unknownBlockedComponents": [
+          "umeboshi",
+          "vettä tai mietoa lientä"
+        ],
+        "completeBound": false
+      },
+      "priority": {
+        "score": -4,
+        "factors": {
+          "nativeZeroLead": 0,
+          "verifiedReferencePortionLead": 0,
+          "existingComposition": 10,
+          "completeRowAccounting": 10,
+          "establishedNegativeSearch": 0,
+          "priorBatchWithoutNewLead": 0,
+          "materialUnknownCho": -10,
+          "knownCarbohydrateExposure": 0,
+          "priorScientificWithdrawals": 0,
+          "independentUnknownQuantitiesOrComposition": -4,
+          "inheritedUnweighedCulinaryAssumptions": -10
+        },
+        "basis": "Feasibility heuristic: quantity/source identity, completeness, CHO materiality and previous negative searches; not blocker count alone."
+      },
+      "nextStep": "Search existing composition/GI indexes and verify product/preparation identity before any calculation.",
+      "publicationAuthorized": false,
+      "screenStatus": "NEEDS_CLARIFICATION",
+      "screenFinding": "150g umeboshi,100g seesami ja vesi/liemi-vaihtoehto ovat eri ratkaistavia kysymyksiä. Valmistetun erillisversion hyväksyntää ei siirretä alkuperäiseen.",
+      "recipeSha256Lf": "b207cde733db80c11b05dd58e88db319c0c2c9993ca3f85e94878ed37c9e2215",
+      "inputSha256": "2dd059921ced5c1e7740897feda1f72ffb7ba3f43e8bc1ad95b7839c37a3d59f",
+      "recipeBodyReviewed": true,
+      "existingSourcesAndAuditsReviewed": true,
+      "sqliteRequests": [
+        "japanilainen-okayu-umeboshipluumulla:0",
+        "japanilainen-okayu-umeboshipluumulla:1",
+        "japanilainen-okayu-umeboshipluumulla:2"
+      ]
+    }
+  ],
+  "publicationAuthorized": false
+}

@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "recipeId": "bulgogi",
+  "recipePath": "reseptit/paaruoat/bulgogi.md",
+  "recipeSha256Lf": "c84490ec24ce44ad3f0930dbb242db9017a01431f2d910e0723af526fffc8cc8",
+  "inputSha256": "72481e11592955d9e7cdcbb5e4097545fa92c6e57642e65e70f6b09e870909c9",
+  "sourceRecords": [
+    {
+      "path": "docs/nutrition/food-records.json",
+      "kind": "FOOD",
+      "id": "afcd-F000810-2026-10-24",
+      "sha256": "f84dcf6e2a814e109d6ab4ff7082770c12ae8aff6abfc4525bd701d692a5ae88"
+    },
+    {
+      "path": "docs/nutrition/food-records.json",
+      "kind": "FOOD",
+      "id": "afcd-F007682-2026-10-24",
+      "sha256": "ea81a144569fb7af90a8105bdfa71dbaee6c5209315545dabf9656d0d2b6920b"
+    },
+    {
+      "path": "docs/nutrition/food-records.json",
+      "kind": "FOOD",
+      "id": "fineli-31-2026-10-24",
+      "sha256": "960c44e08f1c3489c0bbf8734ebdf9e72bd2353489e5343ece7069e415c34bce"
+    },
+    {
+      "path": "docs/nutrition/food-records.json",
+      "kind": "FOOD",
+      "id": "afcd-F008969-2026-10-24",
+      "sha256": "06b5e4cffcf839aac8048ab2ef4dc79e5a0844f3ee8b952a6f5de4b43538f3ec"
+    },
+    {
+      "path": "docs/nutrition/food-records.json",
+      "kind": "FOOD",
+      "id": "afcd-F006187-2026-10-24",
+      "sha256": "05f4438694544611bdfb9254d22dd1594d763e108cb6a00c1f214af2fa8b0cd6"
+    },
+    {
+      "path": "docs/nutrition/food-records.json",
+      "kind": "FOOD",
+      "id": "afcd-F004193-2026-10-24",
+      "sha256": "0adc46150a618a051a7ee62e40e804124562fc9580e5705bc137d39313ba0f0a"
+    },
+    {
+      "path": "docs/nutrition/food-records.json",
+      "kind": "FOOD",
+      "id": "fineli-11062-2026-10-24",
+      "sha256": "ddd7ce10debb117e286473c1cf02fa3164c28c56102dfa69c0df44220f38e96b"
+    },
+    {
+      "path": "docs/nutrition/food-records.json",
+      "kind": "FOOD",
+      "id": "fineli-335-2026-10-24",
+      "sha256": "f14e25ab6f0c2e39200bd8adc8a8f6a8851316f4dc22312bebe5545429fa9309"
+    },
+    {
+      "path": "docs/nutrition/food-records.json",
+      "kind": "FOOD",
+      "id": "afcd-F006250-2026-10-24",
+      "sha256": "c3a869ebc5c9a4926df3955bef67f24e4564eb8e9a4806dde9941ff3167268d5"
+    },
+    {
+      "path": "docs/nutrition/food-records.json",
+      "kind": "FOOD",
+      "id": "fineli-34245-2026-10-24",
+      "sha256": "e1b780cb46b7466a84996ea67091897d0ce2ae7c978eb4db603a69a9bb53e411"
+    },
+    {
+      "path": "docs/nutrition/food-records.json",
+      "kind": "FOOD",
+      "id": "afcd-F006618-2026-10-24",
+      "sha256": "10790a671669b444dc1a287ca278c6e3203811f8015b9014e89586c54fe219a5"
+    },
+    {
+      "path": "docs/nutrition/glycemic-index-records.json",
+      "kind": "GI",
+      "id": "rice-category-mean-gi-67",
+      "sha256": "850a7e49805a33840c18d6f37febb288cffdb4156c6d8e0a892d5f5409136f3d"
+    },
+    {
+      "path": "docs/nutrition/glycemic-index-records.json",
+      "kind": "GI",
+      "id": "legumes-category-mean-gi-34",
+      "sha256": "b97abeb543df92b03c6cc2ff6f79ab5b4e5d8ecf69bd109101c486f72b56f671"
+    },
+    {
+      "path": "docs/nutrition/glycemic-index-records.json",
+      "kind": "GI",
+      "id": "sugar-syrups-category-mean-gi-58",
+      "sha256": "a6a1315ff696630ee4ab8e0b9b6fb8630258277caa6faf069d96afecbfe69b7d"
+    },
+    {
+      "path": "docs/nutrition/glycemic-index-records.json",
+      "kind": "GI",
+      "id": "pear-raw-mean-gi-38-2002",
+      "sha256": "b34c7797a88fa2f1694c18cb96a7e0568e5acadc05eb7d3a5ee7b135c2a25492"
+    },
+    {
+      "path": "docs/nutrition/fineli-release-20-reference.json",
+      "kind": "NATIVE",
+      "id": "31",
+      "purpose": "PORTION_OR_NATIVE_COMPOSITION",
+      "sha256": "cf29a69292935ea3c28eef18667cfbe3111200da37ebbcd0fe0531d9f2f91901"
+    },
+    {
+      "path": "docs/nutrition/fineli-release-20-reference.json",
+      "kind": "NATIVE",
+      "id": "385",
+      "purpose": "PORTION_OR_NATIVE_COMPOSITION",
+      "sha256": "4317766ff60dc5387a6759b19ed76394bf8bd70fa794a91a099f8375daebd6a8"
+    },
+    {
+      "path": "docs/nutrition/gk-original-solutions-batch02/sources.json",
+      "kind": "NATIVE",
+      "id": "hc-scallion",
+      "purpose": "PORTION",
+      "sha256": "3fe9113adacbd912da21240183e2fff84bdcbc2b39aedafb7376425f3290242c"
+    }
+  ],
+  "methodFiles": {
+    "site/scripts/glycemic-load-model.ts": "10ce09e465886e4538fc0b2ad2a54ca0b050a9e3729b7417eb0a91f2b946b48c",
+    "site/scripts/nutrition-model.ts": "05a3edc945b444edd4c99aff90be6a17129559ee7779f8f5e372bf46877195d3"
+  },
+  "previousGiDecisionsSha256": "c0535763b3ba43f66a413631ce918c7a0fa58c31af2666a0561fd8906093b0be",
+  "patches": [
+    {
+      "index": 2,
+      "name": "soijakastiketta",
+      "kind": "REFERENCE_PORTION",
+      "changes": {
+        "grams": 72,
+        "massEvidence": "Fineli Rel20 #31 DL=120g. Original60ml ×120g/100ml=72g. Ingredient-specific volume, not water density or copied weighed version."
+      }
+    },
+    {
+      "index": 8,
+      "name": "kevätsipulia",
+      "kind": "REFERENCE_PORTION",
+      "changes": {
+        "grams": 30,
+        "massEvidence": "Health Canada 2008: one medium raw green scallion15g edible reference portion. Original2 pieces represented by2 medium reference portions; not a weighing, bound or copied40g variant. Original count retained."
+      }
+    }
+  ],
+  "expectedResultSha256": "08344cf54f88f392cb1775bf538a71870d5ab8ccb388da2c221a394e2291509f",
+  "numericOriginalCandidate": false,
+  "originalCorrespondence": "ORIGINAL_QUANTITIES_AND_PREPARATION_RETAINED_REFERENCE_MASS_CLARIFICATIONS_ONLY",
+  "scientificStatus": "HOLD",
+  "caution": "New mass evidence does not undo the three prior GI withdrawals. Soy, sugar and rice remain unresolved for a new original total.",
+  "scientificApproval": false,
+  "ownerApproval": false,
+  "publicationAuthorized": false
+}

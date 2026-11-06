@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "baseMainSha": "be26182a1b0547a6d98e889349855ee05bda07c7",
+  "cases": [
+    {
+      "recipeId": "bulgogi",
+      "path": "docs/nutrition/gk-original-solutions-batch02/case-bulgogi.json",
+      "sha256Lf": "9992e0bfb13593aec91a669ee135e4dbb7968533cddb3f5991619e4648758185",
+      "numericOriginalCandidate": false,
+      "hasVerifiedReferencePortion": true,
+      "modelStatus": "INSUFFICIENT SOURCE DATA",
+      "modelPoint": null,
+      "unroundedPoint": null,
+      "omittedCho": 1.01588375
+    },
+    {
+      "recipeId": "vhh-mansikkakakku",
+      "path": "docs/nutrition/gk-original-solutions-batch02/case-vhh-mansikkakakku.json",
+      "sha256Lf": "58def405be30aa2def4b9e161e3186244d6d5db2aeaf1ff549e3e4dcf7521fcb",
+      "numericOriginalCandidate": true,
+      "hasVerifiedReferencePortion": true,
+      "modelStatus": "CALCULATED",
+      "modelPoint": 1.07,
+      "unroundedPoint": 1.0745,
+      "omittedCho": 0.86718
+    },
+    {
+      "recipeId": "keto-mutakakku",
+      "path": "docs/nutrition/gk-original-solutions-batch02/case-keto-mutakakku.json",
+      "sha256Lf": "cd7f5076ab85c6c31a678284a0c17671dcd6e847536300e73f24f7aaa0b3c65c",
+      "numericOriginalCandidate": false,
+      "hasVerifiedReferencePortion": true,
+      "modelStatus": "CALCULATED",
+      "modelPoint": 0,
+      "unroundedPoint": 0,
+      "omittedCho": 1.5883500000000002
+    },
+    {
+      "recipeId": "keto-suklaakeksit",
+      "path": "docs/nutrition/gk-original-solutions-batch02/case-keto-suklaakeksit.json",
+      "sha256Lf": "f029722026d5596aa6df09c8a646c577b6653be0b9cdcc02df0025bf6233ecb2",
+      "numericOriginalCandidate": false,
+      "hasVerifiedReferencePortion": true,
+      "modelStatus": "CALCULATED",
+      "modelPoint": 0,
+      "unroundedPoint": 0,
+      "omittedCho": 1.41818
+    }
+  ],
+  "publicationAuthorized": false
+}

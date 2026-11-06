@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "foods": [
+    {
+      "source_id": "cnf216",
+      "food": "Vanilla extract",
+      "nativeMeasureMl": 5,
+      "massG": 4.3,
+      "id": "cnf216",
+      "url": "https://aliments-nutrition.canada.ca/cnf-fce/serving-portion?id=216&lang=eng&wbdisable=true",
+      "retrievedAt": "2026-11-05",
+      "snapshotSha256": "4ec70d9d841b3383b270170908faa541d902105e0ac0ea6fdc9fa521273e0578",
+      "rawRetainedOutsideRepository": true,
+      "licenceScope": "Only numeric measure facts and attribution retained; raw page outside repository."
+    },
+    {
+      "source_id": "hc-scallion",
+      "food": "Onions, green (scallion), raw",
+      "nativeMeasure": "1 medium",
+      "edibleMassG": 15,
+      "id": "hc-scallion",
+      "url": "https://www.canada.ca/en/health-canada/services/food-nutrition/healthy-eating/nutrient-data/table-4-vegetables-vegetable-products-nutrient-value-some-common-foods-2008.html",
+      "retrievedAt": "2026-11-05",
+      "snapshotSha256": "91b42b7c2e779050465cbabc879a4c0a4456df7044d2da1b78822d34a43c6b80",
+      "rawRetainedOutsideRepository": true,
+      "nativeMeasureIsMaximum": false,
+      "licenceScope": "Only numeric measure facts and attribution retained; raw page outside repository."
+    }
+  ],
+  "additionalLead": {
+    "food": "Strawberries, fresh, raw",
+    "reportedGi": 40,
+    "reportedSem": 7,
+    "subjects": 10,
+    "reference": "GLUCOSE",
+    "source": "https://ajcn.nutrition.org/article/S0002-9165%2823%2905840-9/fulltext",
+    "table": "2002 table item436",
+    "originalStudyStatus": "UO_UNPUBLISHED_OBSERVATION",
+    "admitted": false,
+    "reason": "A number in the published table does not establish a published original trial or ISO-quality protocol. Not substituted for the current group mean."
+  }
+}

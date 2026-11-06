@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "recipeId": "keto-suklaakeksit",
+  "recipePath": "reseptit/jalkiruoat/keto-suklaakeksit.md",
+  "recipeSha256Lf": "eb155901a9b5e2892aa3b068a3445b0cf6e8af58b13a2fd784fcbd62e8582cc8",
+  "inputSha256": "8750119d7c5f489af66bebe80d31b1c91acd390e3eda4ff00d5ec45bb497841c",
+  "sourceRecords": [
+    {
+      "path": "docs/nutrition/food-records.json",
+      "kind": "FOOD",
+      "id": "fineli-500-2026-10-24",
+      "sha256": "b326c2ecb1f46088c9bedb002a1ea293a33fa1fc30f9069b437a351938d3c895"
+    },
+    {
+      "path": "docs/nutrition/food-records.json",
+      "kind": "FOOD",
+      "id": "foodin-erythritol-200g-label-2026-10-24",
+      "sha256": "7316387b3494d6bffe17dbcfaf1b8a9ec8c4e385fc275dc519a47563b0aea958"
+    },
+    {
+      "path": "docs/nutrition/food-records.json",
+      "kind": "FOOD",
+      "id": "fineli-858-2026-10-24",
+      "sha256": "de32e458bb97b463d1a1f9246160c2112b7f85259b82a9e7347b89c031ef283c"
+    },
+    {
+      "path": "docs/nutrition/food-records.json",
+      "kind": "FOOD",
+      "id": "afcd-F006077-2026-10-24",
+      "sha256": "5c6f5c15cd9ef5e22513695dee466816a9b825a72d12ffe23d920fea765c5a67"
+    },
+    {
+      "path": "docs/nutrition/food-records.json",
+      "kind": "FOOD",
+      "id": "afcd-F000247-2026-10-24",
+      "sha256": "ea2d4b3d50fbcdbf60dd7d3db2e5cf92d77695b480aca65b53d824a069567a92"
+    },
+    {
+      "path": "docs/nutrition/food-records.json",
+      "kind": "FOOD",
+      "id": "afcd-F009837-2026-10-24",
+      "sha256": "0cb1ff6f689e8c8b731daaceb8e90b67e6f51ad916c6293f7b40604e67435f9c"
+    },
+    {
+      "path": "docs/nutrition/food-records.json",
+      "kind": "FOOD",
+      "id": "afcd-F009350-2026-10-24",
+      "sha256": "c73b80b3a46e6ff7a74bdae43cfaa854bf17da15809a281484f6cf33048f210c"
+    },
+    {
+      "path": "docs/nutrition/fineli-release-20-reference.json",
+      "kind": "NATIVE",
+      "id": "74",
+      "purpose": "PORTION_OR_NATIVE_COMPOSITION",
+      "sha256": "e80925449195a90730ff639146b9e1371165552b2065c079ee334c60cd8b2905"
+    },
+    {
+      "path": "docs/nutrition/fineli-release-20-reference.json",
+      "kind": "NATIVE",
+      "id": "30",
+      "purpose": "PLAIN_SALT",
+      "sha256": "7403fc308d9a84d9423ed22762b8185d8d19903ca0837c1586f5998bf4fa2e54"
+    },
+    {
+      "path": "docs/nutrition/fineli-release-20-reference.json",
+      "kind": "NATIVE",
+      "id": "79",
+      "purpose": "PLAIN_SALT",
+      "sha256": "aad01b0ccb903f6adae4d3180fff9a75d531a6696387cdf8c531ca7201a1b130"
+    },
+    {
+      "path": "docs/nutrition/fineli-release-20-reference.json",
+      "kind": "NATIVE",
+      "id": "35555",
+      "purpose": "PLAIN_SALT",
+      "sha256": "aa04b80b47db475eed0f008b9c9f40a9427941cf2b5b6c768d753b538d1e55e2"
+    },
+    {
+      "path": "docs/nutrition/gk-original-solutions-batch02/sources.json",
+      "kind": "NATIVE",
+      "id": "cnf216",
+      "purpose": "PORTION",
+      "sha256": "6c52dd48af624fed1ceedb2dfe7d13d983f8bee1303f392377e203f954a576e6"
+    }
+  ],
+  "methodFiles": {
+    "site/scripts/glycemic-load-model.ts": "10ce09e465886e4538fc0b2ad2a54ca0b050a9e3729b7417eb0a91f2b946b48c",
+    "site/scripts/nutrition-model.ts": "05a3edc945b444edd4c99aff90be6a17129559ee7779f8f5e372bf46877195d3"
+  },
+  "previousGiDecisionsSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "patches": [
+    {
+      "index": 4,
+      "name": "leivinjauhetta",
+      "kind": "REFERENCE_PORTION",
+      "changes": {
+        "grams": 2.5,
+        "massEvidence": "Fineli Rel20 #74 TL=5g; retain original teaspoon count. Generic baking-powder reference mass, no new product or composition replacement."
+      }
+    },
+    {
+      "index": 6,
+      "name": "vaniljauutetta",
+      "kind": "REFERENCE_PORTION",
+      "changes": {
+        "grams": 4.3,
+        "massEvidence": "Health Canada CNF216 generic vanilla extract5ml=4.3g. Original1 metric teaspoon retained. Generic food-specific reference estimate, not actual product weighing; applicability and product type remain under review."
+      }
+    },
+    {
+      "index": 7,
+      "name": "ripaus suolaa",
+      "kind": "NATIVE_ZERO_SALT",
+      "changes": {
+        "estimatedAvailableCarbohydratePerServingG": 0,
+        "excludedReason": "Available carbohydrate of plain table salt is source-documented native zero; pinch mass remains unknown and is not set to zero. No seasoning mixture is covered.",
+        "negligibleAssumption": "Native source zero for plain table salt: Fineli Rel20 #30/#79/#35555 and corroborating AFCD F007878/F007879 available carbohydrate0. This does not infer a pinch mass or zero sodium; seasoning mixtures excluded.",
+        "massEvidence": "Original pinch and grams remain unspecified. Only available CHO follows the documented native-zero plain ingredient; no nutrient amount for sodium or salt mass is calculated."
+      }
+    }
+  ],
+  "expectedResultSha256": "759a975b4422f4101da405c67a6a44ad6227bf4369fb608a6e45ecf512bef1d8",
+  "numericOriginalCandidate": false,
+  "originalCorrespondence": "ORIGINAL_QUANTITIES_AND_PREPARATION_RETAINED_REFERENCE_MASS_CLARIFICATIONS_ONLY",
+  "scientificStatus": "HOLD",
+  "caution": "Plain-salt zero resolves one row but every positive carbohydrate contribution is omitted. Arithmetic zero is not presented as a reliable original total.",
+  "scientificApproval": false,
+  "ownerApproval": false,
+  "publicationAuthorized": false
+}
