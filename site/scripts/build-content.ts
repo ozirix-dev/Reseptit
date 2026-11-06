@@ -1,4 +1,5 @@
 import { createHash } from "node:crypto";
+import { publicRecipeQualityHold } from "./recipe-quality-holds";
 import { recipeFacets } from "../src/content/recipe-facets";
 import { articles, articlePath, blogRoot } from "../src/features/blog/blog-data";
 import { contentForRoute } from "../src/content/route-data";
@@ -126,7 +127,8 @@ async function buildRecipes(): Promise<RecipeEntry[]> {
     imagePaths.forEach((imagePath) => publishedImagePaths.add(imagePath));
     const instructions = section(parsed.content, ["Valmistus", "Preparation", "Instructions", "Tillagning", "Gör så här", "การทำ", "วิธีทำ"]);
     const safetyHold = publicSafetyHold(data.recipe_id, data.language);
-    const publicInstructions = safetyHold?.instructions ?? instructions;
+    const visibleHold = safetyHold ?? publicRecipeQualityHold(data.recipe_id, data.language);
+    const publicInstructions = visibleHold?.instructions ?? instructions;
     if (!instructions) throw new Error(`Published recipe has no instructions: ${filePath}`);
     const descriptionSection = section(parsed.content, ["Kuvaus", "Description", "Beskrivning", "คำอธิบาย"]);
     const notes = section(parsed.content, ["Muistiinpanot", "Notes", "Anteckningar", "หมายเหตุ"]);
@@ -134,7 +136,7 @@ async function buildRecipes(): Promise<RecipeEntry[]> {
     recipes.push({
       kind: "recipe", recipeId: data.recipe_id, slug: data.url_slug, locale: data.language,
       title: data.title, category: data.category, dietClass: data.diet_class ?? null, routePath: routeForRecipe(data.language, data.url_slug),
-      description: safetyHold?.description ?? recipeDescription(parsed.content, descriptionSection, data.language, data.ingredients), ingredients: data.ingredients,
+      description: visibleHold?.description ?? recipeDescription(parsed.content, descriptionSection, data.language, data.ingredients), ingredients: data.ingredients,
       instructionsHtml: await renderSafeMarkdown(publicInstructions),
       instructionStepsHtml: await renderInstructionSteps(publicInstructions),
       instructionsText: instructionSteps.length ? instructionSteps : publicInstructions.split(/\n\s*\n/).filter(Boolean),
