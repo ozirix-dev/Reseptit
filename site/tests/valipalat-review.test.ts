@@ -107,3 +107,34 @@ test("source-bound macro previews stay preliminary; blockers never become zero",
     else assert.equal(item.reviewStatus,"CANDIDATE_FOR_NUTRITION_REVIEW");
   }
 });
+
+
+test("brand-labelled candidates have matching EAN in all four draft languages, without inventing missing nutrients", () => {
+  const expected: Record<string, Array<[number, string]>> = {
+    "rapeat-juustonaksut": [[1, "7311311015243"]],
+    "taytetyt-kananmunat-yrteilla": [[1, "5000184321064"], [2, "3036810201280"], [4, "7311311015243"]],
+  };
+  for (const item of ledger.recipes) {
+    if (!expected[item.id]) continue;
+    const fi = recipeFrontmatter(item.source);
+    const translations = ["en", "sv", "th"].map(locale =>
+      recipeFrontmatter(`docs/reviews/valipalat/era-01/translations/${locale}/${item.id}.md`));
+    for (const [ingredientIndex, ean] of expected[item.id]) {
+      assert.ok(fi.ingredients[ingredientIndex].item.includes(ean));
+      for (const translated of translations) {
+        assert.ok(translated.ingredients[ingredientIndex].item.includes(ean),
+          `${item.id}/${translated.language}: wrong product EAN`);
+        assert.equal(translated.status, "draft");
+      }
+      const candidate = (item.ingredients[ingredientIndex] as InputMapping & {
+        labelCandidate?: { ean: string; sourceUrl: string; per100g: { fibre: number|null; polyols: number|null } };
+      }).labelCandidate;
+      assert.ok(candidate && candidate.ean === ean);
+      assert.ok(candidate.sourceUrl.startsWith("https://"));
+      assert.equal(candidate.per100g.polyols, null, "unreported polyols remain unknown, not zero");
+      if (ean !== "7311311015243") {
+        assert.equal(candidate.per100g.fibre, null, "missing fibre cannot be inferred from other packages");
+      }
+    }
+  }
+});
