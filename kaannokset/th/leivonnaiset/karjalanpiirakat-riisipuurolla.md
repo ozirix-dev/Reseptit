@@ -69,3 +69,5 @@ ingredients:
 ## หมายเหตุ
 
 ต้องตรวจสอบข้อกำหนดชื่ออาหารดั้งเดิม ยังไม่มีหลักฐาน GI ที่ตรงสำหรับข้าวและเปลือกไรย์อบ จึงยังไม่อนุมัติ GK มีแป้งกลูเตนและนม
+
+**แหล่งข้อมูลอาหารดั้งเดิม:** [สำนักงานความปลอดภัยอาหารฟินแลนด์](https://www.ruokavirasto.fi/yritykset/oppaat/nimisuojattujen-elintarvikkeiden-valvontaohje/nimisuojattujen-elintarvikkeiden-valvontaohje/) และ [วิธีทำของ Martat](https://www.martat.fi/reseptit/karjalanpiirakat/).

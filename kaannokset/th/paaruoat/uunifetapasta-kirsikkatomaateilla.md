@@ -63,3 +63,5 @@ ingredients:
 ## หมายเหตุ
 
 ต้นฉบับโดย Jenni Häyrinen: https://liemessa.fi/2019/02/uunifetapasta/ มีข้าวสาลี (กลูเตน) และนม ยังไม่ได้ยืนยัน GI ของเพนเนรุ่นนี้ จึงยังไม่อนุมัติ GK
+
+**เจ้าของแนวคิดต้นฉบับ:** [Jenni Häyrinen, Liemessä (2019)](https://liemessa.fi/2019/02/uunifetapasta/) Recipavo ไม่ใช่ผู้คิดค้นพาสต้าเฟตาอบ
