@@ -12,7 +12,7 @@ import preparedTranslations from "./prepared-translation-baseline.json";
 // PR #302 introduced three recipes after the frozen 326-recipe GK baseline.
 // The separately approved P0 image/ingredient correction is pinned to one
 // exact commit without mutating any of the old 326 recipe calculation inputs.
-const briocheImageCorrectionSha = "8df0cae38472fcbc8d47a9c17f96f3aa17761008";
+const briocheImageCorrectionSha = "992cf1f4f623da0d4ee596770ce7c211e8c31a89";
 const briochePublishedFiles = new Set(postBaselineBriocheIds.flatMap(id => [
   `reseptit/leivonnaiset/${id}.md`,
   `docs/nutrition/calculations/${id}.json`,
