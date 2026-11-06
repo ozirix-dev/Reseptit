@@ -81,7 +81,20 @@ export async function verifyFinnishClassicsReview() {
   }
   assert.equal(count, 47, "expected exactly 47 ingredient rows");
   assert.equal(bindings, 8, "expected eight product bindings");
-  return { recipes: 5, ingredients: count, productBindings: bindings };
+
+  const photos = JSON.parse(await read("docs/review/suomalaiset-klassikot-v4-kuvabriefit.json"));
+  assert.equal(photos.recipes.length, 5, "expected five image review sources");
+  const known = new Set(matrix.recipes.map((entry) => entry.recipeId));
+  for (const photo of photos.recipes) {
+    assert(known.has(photo.recipe_id), "photo without matching draft: " + photo.recipe_id);
+    assert.equal(photo.imageStatus, "JPEG_STAGED_WEBP_NOT_CREATED", "unreviewed image status change");
+    const raw = await readFile(path.join(root, photo.originalFile));
+    assert(raw.length > 60_000, photo.recipe_id + ": JPEG is unexpectedly small");
+    assert(raw[0] === 0xff && raw[1] === 0xd8, photo.recipe_id + ": invalid JPEG magic");
+    const imageGitSha = createHash("sha1").update("blob " + raw.length + "\\0").update(raw).digest("hex");
+    assert.equal(imageGitSha, photo.sourceGitBlobSha, photo.recipe_id + ": photo no longer matches reviewed Git blob");
+  }
+  return { recipes: 5, ingredients: count, productBindings: bindings, stagedJPEGs: 5 };
 }
 
 verifyFinnishClassicsReview().then((data) => {
