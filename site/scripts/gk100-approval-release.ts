@@ -1,6 +1,7 @@
 import { readFileSync, readdirSync, realpathSync } from 'node:fs';
 import { join, relative } from 'node:path';
 import { fingerprint } from './gk80-candidate-model';
+import { historicalFarinataForApprovedPanVersion } from './gk100-farinata-sealed-source';
 import { checkBatch, applyDecisions, type Batch, type Decisions, type prepareRelease } from './gk100-approval-factory';
 import type { GkOnlyVariant } from '../src/features/recipes/gk-only-types';
 import { gkVariantScope } from '../src/features/recipes/gk-estimate-scope';
@@ -47,7 +48,16 @@ export function verifyReleaseBundle(sealed: Bundle & { bundleSha256: string }, a
   if (manifestSha256 !== fingerprint(manifest)) throw Error('GK100_RELEASE_MANIFEST_HASH');
   const entries = bundle.batch.candidates.filter(entry => bundle.recipeIds.includes(entry.recipeId));
   if (entries.length !== bundle.recipeIds.length) throw Error('GK100_RELEASE_SCOPE');
-  const checked = checkBatch({ ...bundle.batch, candidates: entries }, read);
+  // The approved 18-version bundle includes a *separate* pan-farinata GK.
+  // Preserve its sealed original source only for the exact reviewed oven-recipe
+  // editorial correction. Unreviewed source changes still fail the manifest.
+  const checked = checkBatch({ ...bundle.batch, candidates: entries }, (file) => {
+    const source = read(file);
+    return bundle.batch.batchId === 'gk100-owner-approved-eighteen'
+      && bundle.recipeIds.includes('valimerellinen-farinata-aamupalaksi')
+      ? historicalFarinataForApprovedPanVersion(file, source)
+      : source;
+  });
   const decisions = bundle.decisions;
   if (decisions.manifestSha256 !== manifestSha256) throw Error('GK100_RELEASE_DECISION_HASH');
   for (const row of checked.manifest.candidates) {
