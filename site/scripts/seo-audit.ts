@@ -66,7 +66,7 @@ export function inspectPage(html: string, expected: ExpectedPage): SeoFinding[] 
     const post = articles.find(item => articlePath(item) === expected.route);
     check(jsonScripts.length === (post ? 1 : 0), "BLOG_JSONLD_COUNT", "Blog article must declare BlogPosting exactly once");
     if (post && jsonScripts.length === 1) {
-      try { const data = JSON.parse(jsonScripts[0].content); check(data["@type"] === "BlogPosting" && data.headline === post.title && data.datePublished === "2026-11-06", "BLOG_JSONLD_SOURCE", "BlogPosting must match source"); }
+      try { const data = JSON.parse(jsonScripts[0].content); check(data["@type"] === "BlogPosting" && data.headline === post.title && data.datePublished === post.datePublished && data.dateModified === post.dateModified, "BLOG_JSONLD_SOURCE", "BlogPosting must match source"); }
       catch { check(false, "BLOG_JSONLD_PARSE", "Invalid BlogPosting JSON-LD"); }
     }
     return issues;
