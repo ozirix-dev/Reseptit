@@ -6,28 +6,28 @@ category: valipala
 language: fi
 status: draft
 servings: 12
-time_total_min: 80
+time_total_min: 85
 difficulty: Helppo
 main_ingredient: ["siemenet"]
 tags: [välipala, katselmointiin, vhh-ehdokas]
 ingredients:
   - amount: 80
     unit: "g"
-    item: "auringonkukansiemeniä"
+    item: "kuorittuja auringonkukansiemeniä"
   - amount: 60
     unit: "g"
     item: "pellavansiemenrouhetta"
   - amount: 40
     unit: "g"
-    item: "seesaminsiemeniä"
+    item: "kuorittuja seesaminsiemeniä"
   - amount: 25
     unit: "g"
-    item: "chia-siemeniä"
+    item: "chiansiemeniä"
   - amount: 10
     unit: "g"
-    item: "psylliumkuitua"
+    item: "psylliumsiemenkuorijauhetta"
   - amount: 220
-    unit: "ml"
+    unit: "g"
     item: "vettä"
   - amount: 15
     unit: "g"
@@ -43,19 +43,21 @@ translation_status: {}
 
 ## Kuvaus
 
-VHH- ja keto-välipalavalikoiman katselmointiehdokas. Reseptin määrät ja työjärjestys ovat alustavia: ne on tarkistettava koekeittiössä ennen julkaisua.
+Siemenistä ja psylliumista paistettava gluteeniton näkkäri on suunniteltu kahdentoista palan välipalaeräksi. Tasainen levityspaksuus ja täydellinen kuivuminen ovat onnistumisen tärkeimmät asiat.
 
 ## Valmistus
 
-1. Kuumenna uuni 150 asteeseen. Sekoita kuivat ainekset.
-2. Lisää vesi ja oliiviöljy, sekoita ja anna turvota 10 minuuttia.
-3. Levitä massa kahden leivinpaperin välissä ohueksi levyksi. Poista päällimmäinen paperi ja merkitse 12 palaa.
-4. Paista noin 50–60 minuuttia, kunnes levy on kauttaaltaan kuivunut. Jäähdytä ja paloittele.
+1. Kuumenna uuni 150 °C:een (ylä- ja alalämpö). Vuoraa noin 30 × 40 cm pelti leivinpaperilla.
+2. Punnitse auringonkukansiemenet, pellavarouhe, seesaminsiemenet, chiansiemenet, psyllium ja suola. Sekoita kuivat aineet huolellisesti keskenään.
+3. Lisää 220 g vettä ja 15 g oliiviöljyä. Sekoita tasaiseksi ja anna turvota noin 10 minuuttia.
+4. Levitä massa leivinpaperille mahdollisimman tasaiseksi, alustavasti noin 2–3 mm paksuksi levyksi. Merkitse veitsellä 12 samankokoista palaa.
+5. Paista alustavasti 50–60 minuuttia. Jos levy on keskeltä pehmeä, jatka kuivaamista lyhyissä jaksoissa ja tarkkaile, ettei pinta pala.
+6. Jäähdytä kokonaan ritilällä, halkaise merkityistä kohdista 12 palaan ja punnitse haluttaessa valmiin erän massa. Säilytä kuivana vasta täysin jäähtyneenä.
 
 ## Muistiinpanot
 
-**KATSELMOINTI / EI JULKAISUUN** — Listan alkuperäinen kohta 24.
+**KATSELMOINTI / EI JULKAISUUN.** Listan alkuperäinen kohta 24.
 
-Koepaisto tarvitaan: uunin kosteus ja levyn paksuus ratkaisevat rapeuden. GK ei saa perustua pelkkään hiilihydraattien vähäisyyteen.
+**HOLD:** pellavansiemenrouheelle AFCD:n pellavansiemenprofiili on koostumusvertailu, ei välttämättä täsmärouhe. Auringonkukan, seesamin ja chia-tuotteiden muoto yksilöitävä. Täsmänääkkärin kuivausajasta, paistohävikistä ja säilyvyydestä ei ole koepaistoa. GK-laskentaan ei saa käyttää yleistä siemenryhmän GI:tä.
 
-**Julkaisuportti:** koekeittiö ja annoskoko; riippumaton ravintolaskenta; GI/GK-lähdesidokset tai perusteltu GK HOLD; aidon kuvan hankinta; neljä kieliversiota; deduplikointi; omistajan hyväksyntä. Keto-luokitusta ei aseteta ennen tarkistettua laskentaa.
+**Julkaisuportti:** koekeittiön annos- ja työjärjestystarkistus; lähteistetty ravintolaskenta; GI/GK hyväksytyllä menetelmällä tai HOLD; täsmäkuva, joka vastaa kaikkia aineksia; merkitystarkistetut FI/EN/SV/TH-versiot; omistajan hyväksyntä. `diet_class`-merkintää ei aseteta ennen laskentaa.
