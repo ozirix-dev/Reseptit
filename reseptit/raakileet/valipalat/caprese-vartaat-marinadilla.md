@@ -5,12 +5,20 @@ url_slug: caprese-vartaat-marinadilla
 category: valipala
 language: fi
 status: draft
+servings: 2
+ingredients:
+  - amount: 100
+    unit: "g"
+    item: "mozzarellaa"
+  - amount: 150
+    unit: "g"
+    item: "kirsikkatomaatteja"
 ---
 
 # Caprese-vartaat yrttiöljyllä
 
 **JONO: DRAFT / EI KATSELMOINTIERÄSSÄ.** Alkuperäinen listan kohta 13.
 
-Ei uutena ennen vertailua nykyiseen tomaatti–mozzarella-reseptiin: reseptit/alkuruoat/tomaatti-mozzarella-vhh.md.
+Vertaa reseptit/alkuruoat/tomaatti-mozzarella-vhh.md:hen ennen uutta reseptiä.
 
-Alustava välipalaidea. Määritä myöhemmin grammoina ainekset, annoskoko, valmistus, keto/VHH-soveltuvuus, kuvatarve ja ravinto/GK-lähteet. Tämä raakile sijaitsee julkaisulähteen ulkopuolella eikä sitä saa nostaa julkaisuun ilman erillistä hyväksyntää.
+Ainekset ja 2 annoksen oletus ovat **alustavia suunnitteluarvoja**, eivät hyväksytty resepti tai ravintolaskennan syöte. Tämä raakile sijaitsee julkaisulähteen ulkopuolella. Täydennä myöhemmin ohje, koetestit, ravinto-/GK-lähteet, kuvat ja käännökset vasta toimituksellisen päätöksen jälkeen.

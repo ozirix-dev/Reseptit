@@ -5,12 +5,20 @@ url_slug: kookos-chia-vanukas
 category: valipala
 language: fi
 status: draft
+servings: 2
+ingredients:
+  - amount: 40
+    unit: "g"
+    item: "chia-siemeniä"
+  - amount: 200
+    unit: "g"
+    item: "kookoskermaa"
 ---
 
 # Kookos-chia-vanukas
 
 **JONO: DRAFT / EI KATSELMOINTIERÄSSÄ.** Alkuperäinen listan kohta 22.
 
-Mahdollinen duplikaatti: reseptit/aamupalat/marjainen-chiavanukas.md ja kaakao-kookos-chia.md. Selvitä myös kookoskerman GI.
+Vertaa reseptit/aamupalat/marjainen-chiavanukas.md ja kaakao-kookos-chia.md; selvitä kookoskerman GI.
 
-Alustava välipalaidea. Määritä myöhemmin grammoina ainekset, annoskoko, valmistus, keto/VHH-soveltuvuus, kuvatarve ja ravinto/GK-lähteet. Tämä raakile sijaitsee julkaisulähteen ulkopuolella eikä sitä saa nostaa julkaisuun ilman erillistä hyväksyntää.
+Ainekset ja 2 annoksen oletus ovat **alustavia suunnitteluarvoja**, eivät hyväksytty resepti tai ravintolaskennan syöte. Tämä raakile sijaitsee julkaisulähteen ulkopuolella. Täydennä myöhemmin ohje, koetestit, ravinto-/GK-lähteet, kuvat ja käännökset vasta toimituksellisen päätöksen jälkeen.

@@ -5,12 +5,20 @@ url_slug: fathead-juustoleipa
 category: valipala
 language: fi
 status: draft
+servings: 2
+ingredients:
+  - amount: 150
+    unit: "g"
+    item: "mozzarellaa"
+  - amount: 70
+    unit: "g"
+    item: "mantelijauhoa"
 ---
 
 # Fathead-juustoleipä
 
 **JONO: DRAFT / EI KATSELMOINTIERÄSSÄ.** Alkuperäinen listan kohta 19.
 
-Selvitä leivontakategoria ja ero nykyisiin keto-leipiin ennen uutta reseptiä.
+Selvitä ero nykyisiin keto-leipiin ja oikea luokka.
 
-Alustava välipalaidea. Määritä myöhemmin grammoina ainekset, annoskoko, valmistus, keto/VHH-soveltuvuus, kuvatarve ja ravinto/GK-lähteet. Tämä raakile sijaitsee julkaisulähteen ulkopuolella eikä sitä saa nostaa julkaisuun ilman erillistä hyväksyntää.
+Ainekset ja 2 annoksen oletus ovat **alustavia suunnitteluarvoja**, eivät hyväksytty resepti tai ravintolaskennan syöte. Tämä raakile sijaitsee julkaisulähteen ulkopuolella. Täydennä myöhemmin ohje, koetestit, ravinto-/GK-lähteet, kuvat ja käännökset vasta toimituksellisen päätöksen jälkeen.

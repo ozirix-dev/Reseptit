@@ -5,12 +5,20 @@ url_slug: guacamole-kurkkutikuille
 category: valipala
 language: fi
 status: draft
+servings: 2
+ingredients:
+  - amount: 140
+    unit: "g"
+    item: "avokadon hedelmälihaa"
+  - amount: 10
+    unit: "g"
+    item: "limettimehua"
 ---
 
 # Guacamole ja kurkkutikut
 
 **JONO: DRAFT / EI KATSELMOINTIERÄSSÄ.** Alkuperäinen listan kohta 14.
 
-Guacamole saattaa toimia itsenäisenä dippireseptinä. Kurkkutikkuja ei lisätä erilliseksi reseptiksi.
+Guacamole sopii mahdollisesti itsenäiseksi dippireseptiksi; kurkkutikut vain tarjoiluun.
 
-Alustava välipalaidea. Määritä myöhemmin grammoina ainekset, annoskoko, valmistus, keto/VHH-soveltuvuus, kuvatarve ja ravinto/GK-lähteet. Tämä raakile sijaitsee julkaisulähteen ulkopuolella eikä sitä saa nostaa julkaisuun ilman erillistä hyväksyntää.
+Ainekset ja 2 annoksen oletus ovat **alustavia suunnitteluarvoja**, eivät hyväksytty resepti tai ravintolaskennan syöte. Tämä raakile sijaitsee julkaisulähteen ulkopuolella. Täydennä myöhemmin ohje, koetestit, ravinto-/GK-lähteet, kuvat ja käännökset vasta toimituksellisen päätöksen jälkeen.

@@ -5,12 +5,20 @@ url_slug: proteiinivanukas
 category: valipala
 language: fi
 status: draft
+servings: 2
+ingredients:
+  - amount: 40
+    unit: "g"
+    item: "maustamatonta proteiinijauhetta"
+  - amount: 200
+    unit: "ml"
+    item: "maitoa"
 ---
 
 # Proteiinivanukas
 
 **JONO: DRAFT / EI KATSELMOINTIERÄSSÄ.** Alkuperäinen listan kohta 28.
 
-Vaatii yksilöidyn proteiinijauheen ja maidon sekä tuotekohtaisen ravintodatan.
+Yksilöi proteiinijauhe ja maitotuote ennen ravintolaskentaa.
 
-Alustava välipalaidea. Määritä myöhemmin grammoina ainekset, annoskoko, valmistus, keto/VHH-soveltuvuus, kuvatarve ja ravinto/GK-lähteet. Tämä raakile sijaitsee julkaisulähteen ulkopuolella eikä sitä saa nostaa julkaisuun ilman erillistä hyväksyntää.
+Ainekset ja 2 annoksen oletus ovat **alustavia suunnitteluarvoja**, eivät hyväksytty resepti tai ravintolaskennan syöte. Tämä raakile sijaitsee julkaisulähteen ulkopuolella. Täydennä myöhemmin ohje, koetestit, ravinto-/GK-lähteet, kuvat ja käännökset vasta toimituksellisen päätöksen jälkeen.
