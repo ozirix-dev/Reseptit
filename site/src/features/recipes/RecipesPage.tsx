@@ -45,7 +45,7 @@ export function RecipesPage({ locale }: { locale: RecipeLocale }) {
     const next = { ...filters, ...patch };
     setFilters(next);
     const search = recipeFiltersToSearch(next);
-    navigate(`${location.pathname}${search}`, { replace: true });
+    navigate(`${location.pathname}${search}`, { replace: true, preventScrollReset: true });
   }
 
   function removeFilter(patch: Partial<RecipeFilters>, button: HTMLButtonElement) {
@@ -59,7 +59,7 @@ export function RecipesPage({ locale }: { locale: RecipeLocale }) {
 
   function resetFilters() {
     setFilters(emptyRecipeFilters);
-    navigate(location.pathname, { replace: true });
+    navigate(location.pathname, { replace: true, preventScrollReset: true });
   }
 
   const filteredRecipes = filterRecipes(recipes, filters, locale, glycemicLoadFilterCategories);
