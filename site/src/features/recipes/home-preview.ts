@@ -1,7 +1,7 @@
 import type { RecipeSummary } from "@/content/route-data";
 import type { RecipeLocale } from "@/types/content";
 
-const categoryOrder: RecipeSummary["category"][] = ["paaruoka", "leivonnainen", "aamupala", "alkuruoka", "jalkiruoka"];
+const categoryOrder: RecipeSummary["category"][] = ["paaruoka", "leivonnainen", "aamupala", "valipala", "alkuruoka", "jalkiruoka"];
 export const homepagePickLimit = 9;
 
 /**
@@ -42,12 +42,13 @@ export function homepagePicks<T extends Pick<RecipeSummary, "recipeId" | "catego
 }
 
 export type HomepageTopic =
-  | { kind: "category"; value: "paaruoka" | "aamupala" | "leivonnainen" | "jalkiruoka" }
+  | { kind: "category"; value: "paaruoka" | "aamupala" | "valipala" | "leivonnainen" | "jalkiruoka" }
   | { kind: "diet"; value: "keto" | "vhh" };
 
 const topicOrder: HomepageTopic[] = [
   { kind: "category", value: "paaruoka" },
   { kind: "category", value: "aamupala" },
+  { kind: "category", value: "valipala" },
   { kind: "category", value: "leivonnainen" },
   { kind: "category", value: "jalkiruoka" },
   { kind: "diet", value: "keto" },
