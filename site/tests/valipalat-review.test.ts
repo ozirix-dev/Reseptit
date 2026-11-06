@@ -138,3 +138,60 @@ test("brand-labelled candidates have matching EAN in all four draft languages, w
     }
   }
 });
+
+
+test("feta snack has a reproducible six-source nutrition candidate, with GK withheld", async () => {
+  const { calculate } = await import("../scripts/nutrition-model");
+  const { recipeNutritionInputHash } = await import("../scripts/nutrition-evidence");
+  const candidate = readJson("docs/reviews/valipalat/era-01/feta-evidence-candidate.json") as {
+    recipeId: string;
+    recipePath: string;
+    calculatedAt: string;
+    approvedForPublication: boolean;
+    gkStatus: string;
+    ingredientRecords: Array<{ sourceId: string; amountG: number; note: string }>;
+    expectedMacrosPerServing: { carbsNetG: number; carbsTotalG: number; proteinG: number; fatG: number };
+  };
+  assert.equal(candidate.approvedForPublication, false);
+  assert.equal(candidate.gkStatus, "HOLD");
+  const recipe = recipeFrontmatter(candidate.recipePath);
+  assert.equal(recipe.recipe_id, candidate.recipeId);
+  assert.equal(recipe.status, "draft");
+  assert.equal(candidate.ingredientRecords.length, recipe.ingredients.length);
+  const calculation = {
+    recipeId: candidate.recipeId,
+    sourceHash: recipeNutritionInputHash(recipe),
+    calculatedAt: candidate.calculatedAt,
+    servings: recipe.servings,
+    scope: "Uncooked weighed ingredients served in four portions; all specified edible quantities consumed",
+    reviewerStatus: "AUTOMATED ONLY" as const,
+    carbohydrateOutput: "AVAILABLE_EXCLUDING_FIBRE" as const,
+    ingredients: candidate.ingredientRecords.map((input, index) => {
+      const source = recipe.ingredients[index];
+      const record = records.get(input.sourceId);
+      assert.ok(record, `missing source ${input.sourceId}`);
+      assert.equal(source.amount, input.amountG);
+      assert.equal(source.unit, "g");
+      assert.ok(input.note.length > 10);
+      return {
+        item: source.item, amount: source.amount, unit: source.unit,
+        record: record as import("../scripts/nutrition-model").FoodRecord,
+        state: (record as import("../scripts/nutrition-model").FoodRecord).state,
+        matchEvidence: `Exact ingredient and preparation match: ${input.note}`,
+        edibleFraction: 1,
+        edibleEvidence: "All ingredient weights are edible, after draining and trimming",
+        retainedFraction: 1,
+        retentionEvidence: "Cold preparation, all weighed edible ingredients served; no cooking loss",
+      };
+    }),
+  };
+  const result = calculate(calculation);
+  assert.equal(result.status, "ESTIMATE WITH EVIDENCE");
+  const got = {
+    carbsNetG: result.perServing.netCarbohydrate,
+    carbsTotalG: result.totalCarbohydratePerServingG,
+    proteinG: result.perServing.protein,
+    fatG: result.perServing.fat,
+  };
+  assert.deepEqual(got, candidate.expectedMacrosPerServing);
+});
