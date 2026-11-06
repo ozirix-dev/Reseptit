@@ -25,5 +25,5 @@ jobs:
         run: npm ci --prefix site --no-audit --no-fund
       - name: Convert reviewed source JPEG photos to WebP
         run: node docs/review/convert-finnish-classics-webp.mjs
-      - name: Emit generated WebP for connector-managed PR commit
-        run: node docs/review/export-finnish-classics-webp-once.mjs
+      - name: Verify all image hashes, evidence inputs and 20 unpublished recipe bindings
+        run: node docs/review/verify-finnish-classics.mjs
