@@ -16,6 +16,11 @@ carbs_net_per_serving_g: null
 protein_per_serving_g: null
 fat_per_serving_g: null
 tags: ["draft"]
+image:
+  src: leivonnaiset/raejuustobagelit-ilman-kohotusta.webp
+  alt: "Sex gyllenbruna kesobagels med hål i mitten"
+  width: 1600
+  height: 900
 ingredients:
   - amount: 400
     unit: g
@@ -53,3 +58,5 @@ Ringformade kesobröd med bakpulver, utan jäst eller jäsning. De kokas inte so
 Innehåller gluten, mjölk och ägg. Väg använd äggpensling och provbaka inkråmet. Passande GI saknas; GK är HOLD.
 
 **Inspiration:** [Kotonas populära nya salta bakverk 2025](https://www.meillakotona.fi/artikkelit/vuoden-2025-suosituimmat-suolaiset-leivonnaiset). Detta är en självständig, uppvägd bakpulvervariant.
+
+- Bilden är AI-genererad och inte ett fotografi från en verklig provlagning eller provbakning.

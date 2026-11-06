@@ -16,6 +16,11 @@ carbs_net_per_serving_g: null
 protein_per_serving_g: null
 fat_per_serving_g: null
 tags: ["draft"]
+image:
+  src: paaruoat/uunifetapasta-kirsikkatomaateilla.webp
+  alt: "Ugnsfetapasta med penne, körsbärstomater och färsk basilika"
+  width: 1600
+  height: 900
 ingredients:
   - amount: 240
     unit: g
@@ -65,3 +70,5 @@ Feta och körsbärstomater rostas till en pastasås. Den ursprungliga finska id�
 Originalidén kommer från Jenni Häyrinen: https://liemessa.fi/2019/02/uunifetapasta/. Innehåller vetegluten och mjölk. GI för exakt denna penne är inte verifierat; GK är HOLD.
 
 **Ursprunglig idé:** [Jenni Häyrinen, Liemessä (2019)](https://liemessa.fi/2019/02/uunifetapasta/). Recipavo uppfann inte ugnsfetapasta.
+
+- Bilden är AI-genererad och inte ett fotografi från en verklig provlagning eller provbakning.

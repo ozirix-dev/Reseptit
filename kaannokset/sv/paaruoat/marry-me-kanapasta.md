@@ -16,6 +16,11 @@ carbs_net_per_serving_g: null
 protein_per_serving_g: null
 fat_per_serving_g: null
 tags: ["draft"]
+image:
+  src: paaruoat/marry-me-kanapasta.webp
+  alt: "Krämig kycklingspaghetti med soltorkade tomater och parmesan"
+  width: 1600
+  height: 900
 ingredients:
   - amount: 600
     unit: g
@@ -74,3 +79,5 @@ Krämig kycklingspaghetti med soltorkade tomater och parmesan. Fyra portioner me
 Innehåller vetegluten och mjölk. Spagettins nätuppgifter om kolhydrater skiljer sig (69 respektive 72 g/100 g); kontrollera förpackningen. GI 50 är bara en kandidat och GK är HOLD.
 
 **Popularitetskälla:** [K-Ruokas favoriter 2025](https://www.k-ruoka.fi/artikkelit/arki/suomen-suosituimmat-reseptit). Recipavos variant är självständigt skriven och inte kopierad från ett annat recept.
+
+- Bilden är AI-genererad och inte ett fotografi från en verklig provlagning eller provbakning.

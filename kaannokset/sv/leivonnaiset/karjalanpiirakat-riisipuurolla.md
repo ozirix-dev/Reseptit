@@ -16,6 +16,11 @@ carbs_net_per_serving_g: null
 protein_per_serving_g: null
 fat_per_serving_g: null
 tags: ["draft"]
+image:
+  src: leivonnaiset/karjalanpiirakat-riisipuurolla.webp
+  alt: "Traditionella karelska rispiroger med tunna veckade rågkanter och ljus risgrynsfyllning"
+  width: 1600
+  height: 900
 ingredients:
   - amount: 180
     unit: g
@@ -71,3 +76,5 @@ Tunt rågskal med veckade kanter och fyllning av risgrynsgröt. Ger 24 piroger; 
 Det namnskyddade tillagningssättet måste kontrolleras. Tillräckliga GI-uppgifter för ris och gräddat rågskal saknas; GK är HOLD. Innehåller gluten och mjölk.
 
 **Källor för traditionen:** [Finlands livsmedelsverk](https://www.ruokavirasto.fi/yritykset/oppaat/nimisuojattujen-elintarvikkeiden-valvontaohje/nimisuojattujen-elintarvikkeiden-valvontaohje/) och [Martats bakråd](https://www.martat.fi/reseptit/karjalanpiirakat/).
+
+- Bilden är AI-genererad och inte ett fotografi från en verklig provlagning eller provbakning.

@@ -16,6 +16,11 @@ carbs_net_per_serving_g: null
 protein_per_serving_g: null
 fat_per_serving_g: null
 tags: ["draft"]
+image:
+  src: paaruoat/linssimakaronilaatikko.webp
+  alt: "Makaronilåda med gröna linser och smält emmentalost"
+  width: 1600
+  height: 900
 ingredients:
   - amount: 220
     unit: g
@@ -72,3 +77,5 @@ Finsk vegetarisk makaronilåda där gröna linser ersätter köttfärs. Inte en 
 Innehåller vetegluten, mjölk och ägg. Exakta GI-källor för makaroner och gröna linser saknas; GK är HOLD.
 
 **Popularitetskälla:** [K-Ruokas nya favoriter 2025](https://www.k-ruoka.fi/artikkelit/arki/suomen-suosituimmat-reseptit). Detta är Recipavos självständigt utvecklade vegetariska version.
+
+- Bilden är AI-genererad och inte ett fotografi från en verklig provlagning eller provbakning.
