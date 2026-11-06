@@ -14,7 +14,7 @@ Asenna site-hakemiston riippuvuudet (npm ci). Käytä site-hakemistossa:
 
 - Koko kirjasto: npm run audit:similarity -- --all --limit=30 --output=site/similarity-inventory.md
 - Muuttuneet reseptit: BASE_SHA=<main_sha> HEAD_SHA=HEAD npm run audit:similarity -- --changed
-- Yksi rakenteinen reseptiehdotus: npm run audit:similarity -- --submission=reseptit/aamupalat/esimerkki.md
+- Yksi rakenteinen reseptiehdotus: npm run audit:similarity -- --submission=docs/reviews/oma-luonnos.md (edellyttää olemassa olevaa rakenteista Markdown-luonnosta, jota ei merkitä julkaistuksi)
 - Yksikkötestit: npx tsx --test tests/recipe-similarity.test.ts
 
 Jos --output on annettu, tuotetaan Markdown ja JSON. PR:n muuttuneiden reseptien tulos kirjautuu CI:hin varoituksina. Kun vertailumoottoria muutetaan, GitHub Actions tekee koko kirjaston inventaarion sekä säilyttää tuloksen lyhytaikaisena artefaktina.
