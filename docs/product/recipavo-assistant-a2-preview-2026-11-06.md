@@ -1,7 +1,7 @@
 # Recipavo Keittiöapuri — A2, nelikielinen paikallinen mock-esikatselu
 
-Päiväys: 6.11.2026  
-Tila: toteutus ja tests, ei julkinen UI-julkaisu eikä AI-palvelu.  
+Päiväys: 6.11.2026
+Tila: toteutus ja tests, ei julkinen UI-julkaisu eikä AI-palvelu.
 Riippuvuus: A1 PR #324, suunnittelun tausta PR #320.
 
 ## Mitä A2 oikeasti tekee
