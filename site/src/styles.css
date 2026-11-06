@@ -252,3 +252,6 @@ button { font: inherit; }
 .blog-lead { font-size:1.12rem; }
 .blog-sources { border:1px solid var(--line); padding:1.1rem; border-radius:.8rem; }
 .blog-sources ul { margin:0;padding-left:1.25rem; }
+.blog-related { padding:1.1rem; border-radius:.8rem; background:#e9f0e7; }
+.blog-related ul { margin:0; padding-left:1.25rem; }
+.blog-related a { display:inline-block; min-height:44px; padding-block:.35rem; }
