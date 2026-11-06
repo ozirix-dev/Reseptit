@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "createdAt": "2026-11-06",
   "recipeCount": 5,
-  "status": "BRIEFS_ONLY_IMAGES_NOT_GENERATED_OR_COMMITTED",
+  "status": "FIVE_AI_JPEG_REVIEW_ASSETS_STAGED_WEBP_PENDING_NOT_PUBLISHED",
   "sourceImagePolicy": "docs/seo/recipavo-image-seo-v1.md",
-  "imageHandling": "No AI UI mockups or web search imagery may be mistaken for recipe photographs. Do not set image.src until real WebP exists in kuvat/.",
+  "imageHandling": "Five individual AI-generated food photos have been staged as JPEG review sources only. Do not link image.src until WebP originals are generated and checked in kuvat/ and the images are editorially approved.",
   "delivery": {
     "publishPipeline": "current WebP original and generated 480/960/1440 width versions",
     "proposedRatios": [
@@ -12,7 +12,10 @@
       "4:3 1600x1200",
       "1:1 1600x1600"
     ],
-    "note": "Three ratios are planned in SEO V1 but NOT currently supported by strict image.variants schema. For first PR use one high-quality supported image src only."
+    "note": "Three ratios are planned in SEO V1 but NOT currently supported by strict image.variants schema. For first PR use one high-quality supported image src only.",
+    "converter": "node docs/review/convert-finnish-classics-webp.mjs (run at repo root after cd site && npm ci)",
+    "sourceFormat": "JPEG (2016x1152)",
+    "actualOutputStatus": "WEBP_CONVERSION_SCRIPT_STAGED_NOT_EXECUTED"
   },
   "recipes": [
     {
@@ -32,9 +35,16 @@
         "no potato or cheese topping",
         "egg butter may appear separately only if clearly labelled accompaniment"
       ],
-      "altReviewStatus": "DRAFT_NOT_HUMAN_ATTESTED",
-      "imageStatus": "NOT_CREATED",
-      "originalFile": null
+      "altReviewStatus": "INITIAL_ASSISTANT_VISUAL_CHECK_HUMAN_REVIEW_PENDING",
+      "imageStatus": "JPEG_STAGED_WEBP_NOT_CREATED",
+      "originalFile": "docs/review/kuvat/suomalaiset-klassikot/karjalanpiirakat-riisipuurolla.jpg",
+      "generatedBy": "Adobe Firefly image generation",
+      "sourcePixels": {
+        "width": 2016,
+        "height": 1152
+      },
+      "sourceImageType": "AI-generated photorealistic recipe illustration, not evidence of physical cooking",
+      "expectedWebpPath": "kuvat/leivonnaiset/karjalanpiirakat-riisipuurolla.webp"
     },
     {
       "recipe_id": "marry-me-kanapasta",
@@ -53,9 +63,16 @@
         "sun-dried tomato strips instead of cherry tomatoes",
         "no ingredients not listed in recipe"
       ],
-      "altReviewStatus": "DRAFT_NOT_HUMAN_ATTESTED",
-      "imageStatus": "NOT_CREATED",
-      "originalFile": null
+      "altReviewStatus": "INITIAL_ASSISTANT_VISUAL_CHECK_HUMAN_REVIEW_PENDING",
+      "imageStatus": "JPEG_STAGED_WEBP_NOT_CREATED",
+      "originalFile": "docs/review/kuvat/suomalaiset-klassikot/marry-me-kanapasta.jpg",
+      "generatedBy": "Adobe Firefly image generation",
+      "sourcePixels": {
+        "width": 2016,
+        "height": 1152
+      },
+      "sourceImageType": "AI-generated photorealistic recipe illustration, not evidence of physical cooking",
+      "expectedWebpPath": "kuvat/paaruoat/marry-me-kanapasta.webp"
     },
     {
       "recipe_id": "uunifetapasta-kirsikkatomaateilla",
@@ -74,9 +91,16 @@
         "basil and subtle chilli",
         "no meat or spaghetti"
       ],
-      "altReviewStatus": "DRAFT_NOT_HUMAN_ATTESTED",
-      "imageStatus": "NOT_CREATED",
-      "originalFile": null
+      "altReviewStatus": "INITIAL_ASSISTANT_VISUAL_CHECK_HUMAN_REVIEW_PENDING",
+      "imageStatus": "JPEG_STAGED_WEBP_NOT_CREATED",
+      "originalFile": "docs/review/kuvat/suomalaiset-klassikot/uunifetapasta-kirsikkatomaateilla.jpg",
+      "generatedBy": "Adobe Firefly image generation",
+      "sourcePixels": {
+        "width": 2016,
+        "height": 1152
+      },
+      "sourceImageType": "AI-generated photorealistic recipe illustration, not evidence of physical cooking",
+      "expectedWebpPath": "kuvat/paaruoat/uunifetapasta-kirsikkatomaateilla.webp"
     },
     {
       "recipe_id": "raejuustobagelit-ilman-kohotusta",
@@ -95,9 +119,16 @@
         "no visible yeast proofing or traditional boiled bagel look",
         "baked surface, egg glaze only"
       ],
-      "altReviewStatus": "DRAFT_NOT_HUMAN_ATTESTED",
-      "imageStatus": "NOT_CREATED",
-      "originalFile": null
+      "altReviewStatus": "INITIAL_ASSISTANT_VISUAL_CHECK_HUMAN_REVIEW_PENDING",
+      "imageStatus": "JPEG_STAGED_WEBP_NOT_CREATED",
+      "originalFile": "docs/review/kuvat/suomalaiset-klassikot/raejuustobagelit-ilman-kohotusta.jpg",
+      "generatedBy": "Adobe Firefly image generation",
+      "sourcePixels": {
+        "width": 2016,
+        "height": 1152
+      },
+      "sourceImageType": "AI-generated photorealistic recipe illustration, not evidence of physical cooking",
+      "expectedWebpPath": "kuvat/leivonnaiset/raejuustobagelit-ilman-kohotusta.webp"
     },
     {
       "recipe_id": "linssimakaronilaatikko",
@@ -116,9 +147,16 @@
         "melted cheese top",
         "real casserole structure"
       ],
-      "altReviewStatus": "DRAFT_NOT_HUMAN_ATTESTED",
-      "imageStatus": "NOT_CREATED",
-      "originalFile": null
+      "altReviewStatus": "INITIAL_ASSISTANT_VISUAL_CHECK_HUMAN_REVIEW_PENDING",
+      "imageStatus": "JPEG_STAGED_WEBP_NOT_CREATED",
+      "originalFile": "docs/review/kuvat/suomalaiset-klassikot/linssimakaronilaatikko.jpg",
+      "generatedBy": "Adobe Firefly image generation",
+      "sourcePixels": {
+        "width": 2016,
+        "height": 1152
+      },
+      "sourceImageType": "AI-generated photorealistic recipe illustration, not evidence of physical cooking",
+      "expectedWebpPath": "kuvat/paaruoat/linssimakaronilaatikko.webp"
     }
   ]
 }
