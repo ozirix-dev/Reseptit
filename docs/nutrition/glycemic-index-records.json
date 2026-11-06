@@ -448,7 +448,7 @@
         "iso26642Confirmed": true,
         "qualityEvidence": "Published category mean from ISO-screened individual food measurements. This is not a cream-cheese-specific value and is used only as a clearly labelled category-level proxy."
       },
-      "note": "Low-confidence dairy-product group mean; not a measured GI for this recipe's specific dairy ingredient or preparation."
+      "note": "Category mean, not a measured GI for the recipe's cream cheese."
     },
     {
       "id": "plain-yogurt-category-mean-gi-27-2017",
@@ -637,7 +637,7 @@
         "referenceFood": "Glucose",
         "qualityEvidence": "Published category mean with only three observations; not peanut-specific."
       },
-      "note": "Low-confidence nut-group mean from few observations; not measured for this recipe's nut ingredient or flour preparation.",
+      "note": "Low-confidence category mean for peanuts.",
       "matchKind": "CATEGORY_MEAN",
       "confidence": "LOW"
     },
@@ -792,7 +792,7 @@
         "iso26642Confirmed": false,
         "qualityEvidence": "Table 1 reports a category mean calculated from food-specific entries in Supplemental Table 1. The target ingredient was not individually tested; category matching is a broad proxy and is low confidence."
       },
-      "note": "Low-confidence fruit-product group mean; not a measured GI for this recipe's specific fruit or preparation.",
+      "note": "fruit category mean; used only as a broad tamarind-paste analogue",
       "matchKind": "CATEGORY_MEAN",
       "confidence": "LOW"
     },
