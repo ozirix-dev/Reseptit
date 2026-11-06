@@ -1,4 +1,4 @@
-import { createBrowserRouter, createMemoryRouter, Link, Outlet, useLocation, type RouteObject } from "react-router-dom";
+import { createBrowserRouter, createMemoryRouter, Link, Outlet, ScrollRestoration, useLocation, type RouteObject } from "react-router-dom";
 import { RecipePage } from "@/features/recipes/RecipePage";
 import { RecipeAbout } from "@/features/recipes/recipe-tools";
 import { RecipesPage } from "@/features/recipes/RecipesPage";
@@ -10,6 +10,7 @@ import { loadContent } from "@/lib/load-content";
 import type { RouteContent } from "@/content/route-data";
 import { SeoMeta } from "@/SeoMeta";
 import { BlogIndex, BlogArticle } from "@/features/blog/BlogPages";
+import { SiteNavigation } from "@/SiteNavigation";
 
 function SiteLayout() {
   const { pathname } = useLocation();
@@ -17,8 +18,7 @@ function SiteLayout() {
   const labels = recipeUi[locale];
   const previewCopy = isRecipavoHeroPreviewEnabled() ? recipavoHeroCopy[locale] : null;
   const brand = previewCopy?.brand ?? labels.brand;
-  const isMethodPage = Object.values({ fi: "/glykeeminen-kuorma", en: "/en/glycemic-load", sv: "/sv/glykemisk-belastning", th: "/th/glycemic-load" }).includes(pathname.replace(/\/$/, ""));
-  const { locales: availableLocales } = useContent();
+  const { locales: availableLocales, translations } = useContent();
   return (
     <div className="site-shell">
       <SeoMeta />
@@ -26,18 +26,12 @@ function SiteLayout() {
       <header className="site-header">
         <div className="container site-header__inner">
           <Link className="site-brand" to={recipeIndexPath(locale)} aria-label={previewCopy?.brandHome ?? labels.brandHome}><span className="site-brand__mark" aria-hidden="true">{brand.slice(0, 1)}</span><span><strong>{brand}</strong><small>{previewCopy?.tagline ?? labels.tagline}</small></span></Link>
-          {availableLocales.length > 1 ? <nav className="site-nav" aria-label={labels.languages}>
-            {availableLocales.includes("fi") ? <Link to={isMethodPage ? glycemicLoadPath("fi") : "/"} lang="fi" aria-current={isMethodPage && locale === "fi" ? "page" : undefined}>Suomi</Link> : null}
-            {availableLocales.includes("en") ? <Link to={isMethodPage ? glycemicLoadPath("en") : "/en/recipes/"} lang="en" aria-current={isMethodPage && locale === "en" ? "page" : undefined}>English</Link> : null}
-            {availableLocales.includes("sv") ? <Link to={isMethodPage ? glycemicLoadPath("sv") : "/sv/recept/"} lang="sv" aria-current={isMethodPage && locale === "sv" ? "page" : undefined}>Svenska</Link> : null}
-            {availableLocales.includes("th") ? <Link to={isMethodPage ? glycemicLoadPath("th") : "/th/recipes/"} lang="th" aria-current={isMethodPage && locale === "th" ? "page" : undefined}>ไทย</Link> : null}
-            <Link to="/ruokaopas/" lang="fi" aria-current={pathname.startsWith("/ruokaopas") ? "page" : undefined}>Ruokaopas{locale !== "fi" ? " (FI)" : ""}</Link>
-            <Link to={glycemicLoadPath(locale)} lang={locale} aria-current={isMethodPage ? "page" : undefined}>{labels.glycemicLoadNav}</Link>
-          </nav> : null}
+          <SiteNavigation pathname={pathname} locale={locale} availableLocales={availableLocales} translations={translations} />
         </div>
       </header>
       <main id="main" className="site-main"><Outlet /></main>
       <footer className="site-footer"><div className="container"><p>{previewCopy?.footer ?? labels.footer}</p><RecipeAbout locale={locale} /></div></footer>
+      <ScrollRestoration />
     </div>
   );
 }
