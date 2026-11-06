@@ -232,7 +232,10 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
     for (const [locale, route] of [["fi", "/"], ["en", "/en/recipes/"], ["sv", "/sv/recept/"], ["th", "/th/recipes/"]] as const) {
       await page.goto(`${base}${route}`);
       await page.getByRole("searchbox", { name: recipeUi[locale].search }).waitFor();
-      await page.locator(".recipe-more-filters summary").click();
+      const advancedFilters = page.locator(".recipe-more-filters");
+      assert.equal(await advancedFilters.evaluate((details: HTMLDetailsElement) => details.open), false, `${locale}: extra filters initially collapsed`);
+      await advancedFilters.locator("summary").click();
+      assert.equal(await advancedFilters.evaluate((details: HTMLDetailsElement) => details.open), true, `${locale}: extra filters can be opened`);
       await page.getByLabel(toolUi[locale].time, { exact: true }).selectOption("60");
       await page.getByLabel(toolUi[locale].cuisine, { exact: true }).selectOption("thai");
       await page.getByLabel(toolUi[locale].ingredient, { exact: true }).selectOption("chicken");
