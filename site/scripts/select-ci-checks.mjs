@@ -63,6 +63,14 @@ function addGlycemicChecks(plan) {
   plan.unitTests.add("tests/glycemic-coverage-inventory.test.ts");
 }
 
+function addBrowserSuite(plan, suite) {
+  plan.runBrowser = true;
+  plan.runBuild = true;
+  plan.runStatic = true;
+  plan.needsNode = true;
+  plan.browserSuites.add(suite);
+}
+
 function fullPlan(paths) {
   return {
     full: true,
@@ -75,6 +83,7 @@ function fullPlan(paths) {
     runImages: true,
     runStatic: true,
     runBrowser: true,
+    browserSuites: ["smoke", "ui", "routes", "images"],
     runBuild: true,
     runContentSync: false,
     needsNode: true,
@@ -98,6 +107,7 @@ function classifyPaths(paths, { forceFull = false, classificationFailed = false 
     runImages: false,
     runStatic: false,
     runBrowser: false,
+    browserSuites: new Set(),
     runBuild: false,
     runContentSync: false,
     needsNode: false,
@@ -170,10 +180,19 @@ function classifyPaths(paths, { forceFull = false, classificationFailed = false 
     }
     if (file.startsWith("site/tests/")) {
       const testPath = file.slice("site/".length);
-      if (/\.browser\.test\.ts$/.test(file) || testPath === "tests/browser-smoke.test.ts") {
-        plan.runBrowser = true;
-        plan.runBuild = true;
-        plan.runStatic = true;
+      const suiteByFile = new Map([
+        ["tests/ci-essential.browser.test.ts", "smoke"],
+        ["tests/browser-smoke.test.ts", "ui"],
+        ["tests/content-layout.browser.test.ts", "ui"],
+        ["tests/route-loading.browser.test.ts", "routes"],
+        ["tests/responsive-images.browser.test.ts", "images"],
+        // The preview-specific workflow runs its own feature-flagged browser test.
+        ["tests/recipavo-preview.browser.test.ts", "smoke"],
+      ]);
+      if (suiteByFile.has(testPath)) {
+        addBrowserSuite(plan, suiteByFile.get(testPath));
+      } else if (/\.browser\.test\.ts$/.test(file)) {
+        return fallback();
       } else if (testPath === "tests/static-output.test.ts" || testPath === "tests/seo-audit.test.ts") {
         plan.runStatic = true;
         plan.runBuild = true;
@@ -221,11 +240,33 @@ function classifyPaths(paths, { forceFull = false, classificationFailed = false 
       plan.needsNode = true;
       continue;
     }
+    if (file === "site/src/features/recipes/recipe-search.ts") {
+      plan.unitTests.add("tests/recipe-search.test.ts");
+      addBrowserSuite(plan, "smoke");
+      addBrowserSuite(plan, "ui");
+      continue;
+    }
+    if (file === "site/src/features/recipes/image-layout.ts") {
+      addBrowserSuite(plan, "smoke");
+      addBrowserSuite(plan, "images");
+      continue;
+    }
+    if (file.startsWith("site/src/features/blog/") && /\.ts$/.test(file)) {
+      addBrowserSuite(plan, "smoke");
+      continue;
+    }
     if (file.startsWith("site/src/") && /\.(?:tsx|css)$/.test(file)) {
-      plan.runBrowser = true;
-      plan.runBuild = true;
-      plan.runStatic = true;
-      plan.needsNode = true;
+      addBrowserSuite(plan, "smoke");
+      if (file === "site/src/router.tsx" || file === "site/src/SeoMeta.tsx") {
+        addBrowserSuite(plan, "ui");
+        addBrowserSuite(plan, "routes");
+      } else if (file.startsWith("site/src/features/glycemic-load/") ||
+                 file === "site/src/features/recipes/RecipesPage.tsx" ||
+                 file === "site/src/features/recipes/RecipePage.tsx") {
+        addBrowserSuite(plan, "ui");
+      } else if (file.startsWith("site/src/features/recipes/") && /image/i.test(file)) {
+        addBrowserSuite(plan, "images");
+      }
       continue;
     }
     if (file.startsWith("site/public/")) {
@@ -246,6 +287,7 @@ function classifyPaths(paths, { forceFull = false, classificationFailed = false 
     plan.needsNode = true;
   }
   plan.unitTests = [...plan.unitTests].sort();
+  plan.browserSuites = ["smoke", "ui", "routes", "images"].filter((suite) => plan.browserSuites.has(suite));
   return plan;
 }
 
@@ -283,7 +325,7 @@ function writeGithubOutputs(plan, paths, classificationError) {
     `changed_paths<<${delimiter}`,
     ...paths,
     delimiter,
-    ...Object.entries(plan).filter(([key]) => key !== "unitTests").map(([key, value]) =>
+    ...Object.entries(plan).filter(([key]) => key !== "unitTests" && key !== "browserSuites").map(([key, value]) =>
       `${{
         full: "full",
         runContent: "run_content",
@@ -299,6 +341,7 @@ function writeGithubOutputs(plan, paths, classificationError) {
         publish: "publish",
       }[key]}=${String(value)}`),
     `unit_tests=${Array.isArray(plan.unitTests) ? plan.unitTests.join(" ") : "*"}`,
+    `browser_suites=${plan.browserSuites.join(" ")}`,
     `classification_error=${String(Boolean(classificationError))}`,
   ];
   appendFileSync(process.env.GITHUB_OUTPUT, `${rows.join("\n")}\n`, "utf8");
