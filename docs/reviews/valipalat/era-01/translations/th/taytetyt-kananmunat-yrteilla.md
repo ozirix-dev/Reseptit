@@ -18,16 +18,16 @@ ingredients:
     item: "ไข่ต้มสุกปอกเปลือก (ประมาณ 6 ฟอง ชั่งเฉพาะส่วนที่กินได้)"
   - amount: 55
     unit: "g"
-    item: "มายองเนสชนิดไขมันเต็ม (รอระบุผลิตภัณฑ์)"
+    item: "มายองเนส Hellmann's Real (400 กรัม EAN 5000184321064)"
   - amount: 10
     unit: "g"
-    item: "มัสตาร์ดดิฌง (รอระบุผลิตภัณฑ์)"
+    item: "มัสตาร์ดดิฌง Maille Dijon Originale (215 กรัม EAN 3036810201280)"
   - amount: 5
     unit: "g"
     item: "กุยช่ายฝรั่งสด"
   - amount: 1
     unit: "g"
-    item: "ผงปาปริการมควัน"
+    item: "ผงปาปริการมควัน Santa Maria Paprika Smoked (37 กรัม EAN 7311311015243)"
 ---
 
 # ไข่ต้มยัดไส้สมุนไพร

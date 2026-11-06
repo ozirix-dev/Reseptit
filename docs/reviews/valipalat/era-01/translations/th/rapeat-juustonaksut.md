@@ -18,7 +18,7 @@ ingredients:
     item: "เชดดาร์ชีสขูด ไขมันประมาณ 34%"
   - amount: 1
     unit: "g"
-    item: "ผงปาปริการมควัน"
+    item: "ผงปาปริการมควัน Santa Maria Paprika Smoked (37 กรัม EAN 7311311015243)"
 ---
 
 # ชีสเชดดาร์อบกรอบ

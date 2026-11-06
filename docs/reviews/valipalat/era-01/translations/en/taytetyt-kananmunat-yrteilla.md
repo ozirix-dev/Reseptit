@@ -18,16 +18,16 @@ ingredients:
     item: "hard-boiled, peeled eggs (about six eggs; edible weight)"
   - amount: 55
     unit: "g"
-    item: "full-fat mayonnaise (exact product to be selected)"
+    item: "Hellmann's Real mayonnaise (400 g, EAN 5000184321064)"
   - amount: 10
     unit: "g"
-    item: "Dijon mustard (exact product to be selected)"
+    item: "Maille Dijon Originale mustard (215 g, EAN 3036810201280)"
   - amount: 5
     unit: "g"
     item: "fresh chives"
   - amount: 1
     unit: "g"
-    item: "smoked paprika powder"
+    item: "Santa Maria Paprika Smoked powder (37 g, EAN 7311311015243)"
 ---
 
 # Herb deviled eggs
