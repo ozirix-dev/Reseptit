@@ -1,5 +1,9 @@
 # Responsiiviset reseptikuvat
 
+**Google Recipe / Discover -tavoitekoot, nykyiset puutteet ja vaiheittaiset julkaisuportit:**
+[Recipavo Image SEO V1](seo/recipavo-image-seo-v1.md). Nykyinen dokumentti kuvaa jo toimivaa V1.5-kuvaputkea;
+kolmen kuvasuhteen tuki on vasta suunniteltu, ei vielä käytössä.
+
 ## Ylläpito
 
 Reseptin `image.src` osoittaa alkuperäiseen WebP-kuvaan `kuvat/`-kansiossa.
