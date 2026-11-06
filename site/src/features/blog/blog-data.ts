@@ -85,8 +85,8 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Mitä kannattaa vertailla seuraavaksi?",
         paragraphs: [
-          "Vertailussa kiinnostavimmat erot ovat voin ja kananmunan suhteet, kylmälepo, kohotuskerrat sekä lopullinen sämpyläkoko. Emme nimeä reseptiä parhaaksi ilman koepaistoa tai vertailukelpoista testausta. Tämä juttu on tekniikkaopas, ei väite toimituksen tekemästä testistä.",
-          "Erilliset briossireseptit kannattaa julkaista omina reseptikortteinaan vasta lähteiden, määrien ja tekijänoikeuksien tarkistamisen jälkeen."
+          "Reseptit-sivustolla on nyt kolme yhdeksän sämpylän ohjetta: Joshua Weissmanin tangzhong-tyylinen briossi, Moomien legendaariset hampurilaissämpylät ja The Clever Carrotin kevyempi versio. Erot liittyvät etenkin taikinan rakenteeseen, valmistustapaan ja voin määrään.",
+          "Reseptikortit ovat lähteistettyjä, omiksi kirjoitettuja sovituksia. Niitä ei esitetä toimituksen koepaistoina, eikä yhtä versiota nimetä parhaaksi ilman vertailukelpoista testiä. Jokaisen reseptin muistiossa on tiedot lähteistä ja tunnettuudesta."
         ]
       }
     ],
@@ -95,7 +95,11 @@ export const blogPosts: BlogPost[] = [
       { label: "King Arthur Baking: Classic Brioche Recipe", url: "https://www.kingarthurbaking.com/recipes/classic-brioche-recipe" },
       { label: "King Arthur Baking: Brioche (ammattilaisohje)", url: "https://www.kingarthurbaking.com/pro/formulas/brioche" }
     ],
-    related: [{ title: "Selaa leivonnaisreseptejä", path: "/" }]
+    related: [
+      { title: "Joshua Weissman: kuohkeat briossisämpylät (9 kpl)", path: "/briossisampylat-joshua-weissman/" },
+      { title: "Moomien legendaariset hampurilaissämpylät (9 kpl)", path: "/hampurilaissampylat-moomie/" },
+      { title: "The Clever Carrot: kevyet briossisämpylät (9 kpl)", path: "/kevyet-briossisampylat-clever-carrot/" }
+    ]
   },
   {
     slug: "gi-ja-gk-annoskoko",
