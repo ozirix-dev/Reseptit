@@ -104,7 +104,33 @@ test("pending submissions never leak another user's proposed recipe in public ma
   const result = checkPublicRecipeSubmission(proposal, [], [pending]);
   assert.equal(result.internal.status, "MATERIAL_DUPLICATE");
   assert.deepEqual(result.publicMatches, []);
+  assert.equal(result.publicStatus, "UNCERTAIN");
   assert.equal(JSON.stringify(result.publicMatches).includes("someone-private"), false);
+});
+
+test("different finished dishes do not flood the review queue on shared pantry ingredients", () => {
+  const cake = { ...bun, recipeId: "cake", title: "Suklaakakku" };
+  const cookies = { ...bun, recipeId: "cookies", title: "Suklaakeksit",
+    ingredients: bun.ingredients.map((item) => ({
+      ...item, amount: item.item.includes("kananmun") || item.item.includes("voita") ? item.amount! * 2 : item.amount,
+    })),
+  };
+  const result = assessRecipeSimilarity(cookies, [cake]);
+  assert.equal(result.status, "NO_MATERIAL_MATCH");
+});
+
+test("taco and tostada with the same formula are a reviewable variant, not an automatic duplicate", () => {
+  const taco = { ...bun, recipeId: "taco", title: "Taco" };
+  const tostada = { ...bun, recipeId: "tostada", title: "Tostada" };
+  const result = assessRecipeSimilarity(taco, [tostada]);
+  assert.equal(result.status, "UNCERTAIN");
+  assert.equal(result.matches[0].kind, "POSSIBLE_VARIANT");
+});
+
+test("Finnish source is preferred over an earlier translation of the same recipe", () => {
+  const translated = { ...bun, locale: "en", ingredients: [{ item: "unknown novelty", amount: 1, unit: "kpl" }] };
+  const another = { ...bun, recipeId: "other-bun", title: "My bun" };
+  assert.equal(assessRecipeSimilarity(another, [translated, bun]).status, "MATERIAL_DUPLICATE");
 });
 
 test("non-Finnish submissions are conservatively marked uncertain", () => {
