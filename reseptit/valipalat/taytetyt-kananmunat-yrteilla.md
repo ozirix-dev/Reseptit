@@ -8,7 +8,7 @@ status: draft
 servings: 6
 time_total_min: 25
 difficulty: Helppo
-main_ingredient: ["kananmunaa syötäväksi jäävänä osana (noin 6 kananmunaa)", "majoneesia ilman lisättyä sokeria"]
+main_ingredient: ["kananmuna"]
 tags: [välipala, katselmointiin, vhh-ehdokas]
 ingredients:
   - amount: 330

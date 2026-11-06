@@ -8,7 +8,7 @@ status: draft
 servings: 6
 time_total_min: 35
 difficulty: Helppo
-main_ingredient: ["tuoreita jalapeñoja", "maustamatonta tuorejuustoa"]
+main_ingredient: ["juusto", "pekoni"]
 tags: [välipala, katselmointiin, vhh-ehdokas]
 ingredients:
   - amount: 150

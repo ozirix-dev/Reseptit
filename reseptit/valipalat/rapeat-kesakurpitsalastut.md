@@ -8,7 +8,7 @@ status: draft
 servings: 3
 time_total_min: 95
 difficulty: Helppo
-main_ingredient: ["kesäkurpitsaa", "oliiviöljyä"]
+main_ingredient: ["kesäkurpitsa", "juusto"]
 tags: [välipala, katselmointiin, vhh-ehdokas]
 ingredients:
   - amount: 350

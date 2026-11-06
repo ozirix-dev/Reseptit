@@ -8,7 +8,7 @@ status: draft
 servings: 4
 time_total_min: 20
 difficulty: Helppo
-main_ingredient: ["cheddarjuustoa raasteena", "savupaprikajauhetta"]
+main_ingredient: ["juusto"]
 tags: [välipala, katselmointiin, vhh-ehdokas]
 ingredients:
   - amount: 140

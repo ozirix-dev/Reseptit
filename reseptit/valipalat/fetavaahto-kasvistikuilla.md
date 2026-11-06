@@ -8,7 +8,7 @@ status: draft
 servings: 4
 time_total_min: 15
 difficulty: Helppo
-main_ingredient: ["fetajuustoa", "maustamatonta kreikkalaista jogurttia"]
+main_ingredient: ["feta", "kurkku"]
 tags: [välipala, katselmointiin, vhh-ehdokas]
 ingredients:
   - amount: 120

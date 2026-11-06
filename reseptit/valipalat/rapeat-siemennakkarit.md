@@ -8,7 +8,7 @@ status: draft
 servings: 12
 time_total_min: 80
 difficulty: Helppo
-main_ingredient: ["auringonkukansiemeniä", "pellavansiemenrouhetta"]
+main_ingredient: ["siemenet"]
 tags: [välipala, katselmointiin, vhh-ehdokas]
 ingredients:
   - amount: 80

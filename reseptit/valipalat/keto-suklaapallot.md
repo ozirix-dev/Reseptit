@@ -8,7 +8,7 @@ status: draft
 servings: 12
 time_total_min: 50
 difficulty: Helppo
-main_ingredient: ["mantelijauhoa", "voita"]
+main_ingredient: ["manteli", "kaakao"]
 tags: [välipala, katselmointiin, vhh-ehdokas]
 ingredients:
   - amount: 120

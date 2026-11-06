@@ -8,7 +8,7 @@ status: draft
 servings: 4
 time_total_min: 15
 difficulty: Helppo
-main_ingredient: ["tonnikalaa vedessä, valutettuna", "majoneesia ilman lisättyä sokeria"]
+main_ingredient: ["tonnikala", "kurkku"]
 tags: [välipala, katselmointiin, vhh-ehdokas]
 ingredients:
   - amount: 160
