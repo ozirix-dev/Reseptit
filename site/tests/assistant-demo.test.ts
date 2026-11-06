@@ -7,7 +7,7 @@ import { siteContent } from "../src/generated/content.generated";
 import { createAssistantCatalog } from "../src/features/assistant/catalog";
 import { assistantDemoCopy } from "../src/features/assistant/demo-i18n";
 import { demoRecipeHref, demoSearchCatalog, demoSearchFilters, loadDemoCatalog, validateDemoCatalog } from "../src/features/assistant/demo";
-import type { RecipeEntry, RecipeLocale } from "../src/types/content";
+import type { RecipeEntry } from "../src/types/content";
 
 const locales = ["fi", "en", "sv", "th"] as const;
 const version = (recipe: RecipeEntry) => createHash("sha256").update(JSON.stringify(recipe)).digest("hex");
