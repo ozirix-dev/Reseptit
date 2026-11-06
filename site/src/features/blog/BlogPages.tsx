@@ -14,7 +14,7 @@ export function BlogArticle() {
  const {slug}=useParams();
  const article:Article|undefined=articles.find(p=>p.slug===slug);
  if(!article)return <section className="page-section"><div className="container container--narrow"><h1>Artikkelia ei löytynyt</h1><Link to={blogRoot}>Kaikki artikkelit</Link></div></section>;
- return <article className="page-section"><div className="container container--narrow blog-article">
+ return <article className="page-section blog-article-page"><div className="container container--narrow blog-article">
  <nav aria-label="Murupolku"><Link to="/">Reseptit</Link> / <Link to={blogRoot}>Ruokaopas</Link></nav>
  <p className="eyebrow">{article.category}</p><h1>{article.title}</h1><p className="blog-lead">{article.description}</p>
  <p className="blog-meta"><time dateTime={article.datePublished}>{new Intl.DateTimeFormat("fi-FI").format(new Date(article.datePublished+"T12:00:00Z"))}</time> · {article.readingMinutes} min lukuaika · {article.author}</p>
