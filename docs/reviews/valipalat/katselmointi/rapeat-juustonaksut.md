@@ -18,7 +18,7 @@ ingredients:
     item: "cheddarjuustoa raasteena, rasvaa noin 34 %"
   - amount: 1
     unit: "g"
-    item: "savupaprikajauhetta"
+    item: "Santa Maria Paprika Smoked -savupaprikajauhetta (37 g, EAN 7311311015243)"
 ---
 
 # Rapeat cheddarjuustonaksut
@@ -37,6 +37,6 @@ Pellillä rapeutuvat cheddarjuustolastut valmistuvat kahdesta aineksesta. Kolme 
 
 ## Muistiinpanot
 
-**KATSELMOINTI – EI JULKAISUUN.** Tarkista koepaistolla 12 kappaleen koko, uunin todellinen paistoaika ja jäähtyneen naksun rapeus. Rasvaa voi jäädä leivinpaperille; punnitse mahdollinen hävikki ennen ravintoarvojen julkaisemista. Savupaprikan koostumus on toistaiseksi verrattu tavalliseen kuivattuun paprikajauheeseen eikä täsmätuotteeseen. GK = HOLD; älä tulkitse vähäistä hiilihydraattimäärää mitatuksi GI:ksi.
+**KATSELMOINTI – EI JULKAISUUN.** Tarkista koepaistolla 12 kappaleen koko, uunin todellinen paistoaika ja jäähtyneen naksun rapeus. Rasvaa voi jäädä leivinpaperille; punnitse mahdollinen hävikki ennen ravintoarvojen julkaisemista. Savupaprikan tuotekohtaiset pakkausarvot on nyt löydetty (Santa Maria, EAN 7311311015243), mutta alkuperäinen AFCD-tavallisen paprikan makrovertailu on korvattava ennen julkaistavia ravintoarvoja. GK = HOLD; älä tulkitse vähäistä hiilihydraattimäärää mitatuksi GI:ksi.
 
 **Julkaisuportti:** annos- ja punnitustarkistus; lähteistetty ravintolaskenta; GK-arvo vain hyväksytystä GI-näytöstä tai HOLD; tuotteeseen täsmäävä ruokakuva; käännösten merkitystarkistus; omistajan julkaisupäätös. Ei vielä diet_class-luokitusta.

@@ -18,7 +18,7 @@ ingredients:
     item: "riven cheddarost, cirka 34 % fett"
   - amount: 1
     unit: "g"
-    item: "rökt paprikapulver"
+    item: "Santa Maria Paprika Smoked, rökt paprikapulver (37 g, EAN 7311311015243)"
 ---
 
 # Krispiga cheddarflarn

@@ -18,16 +18,16 @@ ingredients:
     item: "hårdkokta och skalade ägg (cirka sex ägg, ätlig vikt)"
   - amount: 55
     unit: "g"
-    item: "fet majonnäs (exakt produkt väljs senare)"
+    item: "Hellmann's Real majonnäs (400 g, EAN 5000184321064)"
   - amount: 10
     unit: "g"
-    item: "dijonsenap (exakt produkt väljs senare)"
+    item: "Maille Dijon Originale dijonsenap (215 g, EAN 3036810201280)"
   - amount: 5
     unit: "g"
     item: "färsk gräslök"
   - amount: 1
     unit: "g"
-    item: "rökt paprikapulver"
+    item: "Santa Maria Paprika Smoked, rökt paprikapulver (37 g, EAN 7311311015243)"
 ---
 
 # Örtfyllda ägghalvor

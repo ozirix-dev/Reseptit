@@ -18,16 +18,16 @@ ingredients:
     item: "kovaksi keitettyä ja kuorittua kananmunaa (noin 6 munaa)"
   - amount: 55
     unit: "g"
-    item: "täysrasvaista majoneesia (tarkka tuote vielä valittava)"
+    item: "Hellmann's Real -majoneesia (400 g, EAN 5000184321064)"
   - amount: 10
     unit: "g"
-    item: "Dijon-sinappia (tarkka tuote vielä valittava)"
+    item: "Maille Dijon Originale -sinappia (215 g, EAN 3036810201280)"
   - amount: 5
     unit: "g"
     item: "tuoretta ruohosipulia"
   - amount: 1
     unit: "g"
-    item: "savupaprikajauhetta"
+    item: "Santa Maria Paprika Smoked -savupaprikajauhetta (37 g, EAN 7311311015243)"
 ---
 
 # Yrttiset täytetyt kananmunat
@@ -46,6 +46,6 @@ Klassiset täytetyt kananmunat saavat pehmeän keltuaistäytteen majoneesista, s
 
 ## Muistiinpanot
 
-**KATSELMOINTI – EI JULKAISUUN.** Kuuden munan syötävä paino voi poiketa 330 grammasta; oikaise valmistuserän laskenta toteutuneeseen punnitukseen. Majoneesin ja Dijon-sinapin täsmätuotteiden pakkaustiedot puuttuvat, joten kokonaista ravintoarvoa ei julkaista. Ruohosipulin täydelliset makroarvot ja savupaprikan tuotekohtainen vastaavuus tarkistettava. GK = HOLD. Kananmunat ovat helposti pilaantuva täyte: säilytä kylmässä, älä jätä seisomaan huoneenlämpöön.
+**KATSELMOINTI – EI JULKAISUUN.** Kuuden munan syötävä paino voi poiketa 330 grammasta; oikaise valmistuserän laskenta toteutuneeseen punnitukseen. Majoneesille (Hellmann's Real 400 g) ja Dijon-sinapille (Maille Originale 215 g) löytyivät tuotekohtaiset ravintoarvot; niistä puuttuu kuitenkin osa kuitu- ja polyolitiedoista. Hellmann's sisältää lisättyä sokeria, joten älä merkitse sitä sokerittomaksi tai sano ettei siinä ole lisättyä sokeria. Ruohosipulin täydelliset makroarvot sekä kaikkien tuotteiden kuitu/polyolit on vielä katselmoitava. Santa Maria -savupaprikan pakkausarvot ovat saatavilla, mutta vanha AFCD-vertailu pitää korvata. GK = HOLD. Kananmunat ovat helposti pilaantuva täyte: säilytä kylmässä, älä jätä seisomaan huoneenlämpöön.
 
 **Julkaisuportti:** annos- ja punnitustarkistus; lähteistetty ravintolaskenta; GK-arvo vain hyväksytystä GI-näytöstä tai HOLD; tuotteeseen täsmäävä ruokakuva; käännösten merkitystarkistus; omistajan julkaisupäätös. Ei vielä diet_class-luokitusta.

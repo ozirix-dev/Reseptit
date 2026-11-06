@@ -9,7 +9,7 @@
     "totalCarbohydrate": "available carbohydrate + documented fibre + documented polyols",
     "energy": "Not calculated in this packet",
     "retention": "Raw input composition proxy; cheddar baking loss not tested",
-    "rule": "A complete set of exact ingredient matches is required before numerical values can progress beyond preliminary editorial review. No GI defaults or nutrition estimates may be published from this document."
+    "rule": "Draft-only label candidates; original composition sourceId bindings remain historical previews and must NOT be used as product-matched publication values. Missing fibre/polyols are unknown, not zero. Final calculations require separately validated exact records and owner publication decision."
   },
   "recipes": [
     {
@@ -29,7 +29,21 @@
           "amountG": 1,
           "sourceId": "afcd-F006316-release-3",
           "match": "PROVISIONAL",
-          "note": "Source is plain dried paprika, not verified smoked paprika. Do not treat as exact product or GI assignment."
+          "note": "Previous AFCD dry paprika is a superseded macro proxy; new exact smoked paprika package values are in labelCandidate and need audit before calculation.",
+          "labelCandidate": {
+            "brand": "Santa Maria Paprika Smoked",
+            "size": "37 g",
+            "ean": "7311311015243",
+            "sourceUrl": "https://www.s-kaupat.fi/tuote/santa-maria-37g-paprika-smoked-savupaprikajauhe/7311311015243",
+            "per100g": {
+              "carbohydrate": 13,
+              "protein": 15,
+              "fat": 17,
+              "fibre": 41,
+              "polyols": null
+            },
+            "note": "Smoked paprika exact product label, polyols not declared; old AFCD dried paprika preview is not the final value."
+          }
         }
       ],
       "illustrativeMacroPreviewPerServing": {
@@ -63,13 +77,41 @@
           "amountG": 55,
           "sourceId": "afcd-F005441-release-3",
           "match": "PROVISIONAL",
-          "note": "Commercial traditional mayonnaise >65% fat; recipe product has not been chosen and may vary widely."
+          "note": "Now a specific 400g Hellmann's Real label candidate; AFCD mayo is NOT a replacement. Contains added sugar. Fibre/polyols missing.",
+          "labelCandidate": {
+            "brand": "Hellmann's Real",
+            "size": "400 g",
+            "ean": "5000184321064",
+            "sourceUrl": "https://www.s-kaupat.fi/tuote/hellmanns-real-majoneesi-400-g/5000184321064",
+            "per100g": {
+              "carbohydrate": 1.4,
+              "protein": 1.1,
+              "fat": 79,
+              "fibre": null,
+              "polyols": null
+            },
+            "note": "Contains added sugar; fibre and polyol amounts not declared. Not a complete nutrition record."
+          }
         },
         {
           "amountG": 10,
           "sourceId": "fineli-28-release-20",
           "match": "PROVISIONAL",
-          "note": "Generic mustard, not verified Dijon product."
+          "note": "Now a specific Maille Dijon Originale 215g label candidate; Fineli generic mustard is NOT the same product. Fibre/polyols missing.",
+          "labelCandidate": {
+            "brand": "Maille Dijon Originale",
+            "size": "215 g",
+            "ean": "3036810201280",
+            "sourceUrl": "https://www.s-kaupat.fi/tuote/maille-dijon-original-sinappi-perinteinen-maku-215-g/3036810201280",
+            "per100g": {
+              "carbohydrate": 3.5,
+              "protein": 7,
+              "fat": 11,
+              "fibre": null,
+              "polyols": null
+            },
+            "note": "Retail 215g label does not list fibre and polyols. Do not transfer 1kg professional pack's fibre by assumption."
+          }
         },
         {
           "amountG": 5,
@@ -81,7 +123,21 @@
           "amountG": 1,
           "sourceId": "afcd-F006316-release-3",
           "match": "PROVISIONAL",
-          "note": "Dry paprika, not verified smoked paprika."
+          "note": "Santa Maria smoked paprika label found, but polyols not declared; AFCD dry paprika is a superseded preview.",
+          "labelCandidate": {
+            "brand": "Santa Maria Paprika Smoked",
+            "size": "37 g",
+            "ean": "7311311015243",
+            "sourceUrl": "https://www.s-kaupat.fi/tuote/santa-maria-37g-paprika-smoked-savupaprikajauhe/7311311015243",
+            "per100g": {
+              "carbohydrate": 13,
+              "protein": 15,
+              "fat": 17,
+              "fibre": 41,
+              "polyols": null
+            },
+            "note": "Smoked paprika exact product label, polyols not declared; old AFCD dried paprika preview is not the final value."
+          }
         }
       ],
       "illustrativeMacroPreviewPerServing": null,
@@ -151,5 +207,6 @@
         "GI/GK must remain HOLD unless separately approved"
       ]
     }
-  ]
+  ],
+  "labelCandidateReview": "2026-11-06"
 }

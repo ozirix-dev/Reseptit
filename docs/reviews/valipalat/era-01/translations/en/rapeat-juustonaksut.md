@@ -18,7 +18,7 @@ ingredients:
     item: "grated cheddar cheese, approximately 34% fat"
   - amount: 1
     unit: "g"
-    item: "smoked paprika powder"
+    item: "Santa Maria Paprika Smoked powder (37 g, EAN 7311311015243)"
 ---
 
 # Crispy cheddar cheese crisps
