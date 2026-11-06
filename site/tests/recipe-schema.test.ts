@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import { parseMarkdown } from "../src/content/markdown";
-import { assertQuantifiedCriticalIngredients, assertUniqueRecipes } from "../src/content/recipe-validation";
+import { assertQuantifiedCriticalIngredients, assertUniqueRecipes, assertSnackPublicationReady, snackPublicationErrors } from "../src/content/recipe-validation";
 import { recipeFrontmatterSchema } from "../src/content/schema";
 import { siteContent } from "../src/generated/content.generated";
 import { recipeJsonLd } from "../src/features/recipes/schema";
@@ -117,4 +117,34 @@ test("second snack review batch matches its source ledger and cannot publish dup
     "existing muffins must be reused, not duplicated");
   assert.ok(!siteContent.recipes.some(item => item.recipeId === "suklaamousse-keto" && item.locale === "fi"),
     "the old mousse title-only stub must not be presented as published");
+});
+
+test("new published snacks fail closed without photo and nutrition evidence", () => {
+  const candidate = {
+    recipe_id: "valipala-julkaisukoe",
+    category: "valipala",
+    status: "draft",
+    ingredients: [{ amount: 80, unit: "g", item: "juustoa" }],
+  };
+  assert.deepEqual(snackPublicationErrors(candidate), []);
+  const proposed = { ...candidate, status: "published" };
+  assert.throws(() => assertSnackPublicationReady(proposed), /approved WebP image/);
+  assert.ok(snackPublicationErrors(proposed).some(error => error.includes("carbs_net_per_serving_g")));
+  const withImage = {
+    ...proposed,
+    image: { src: "valipalat/test-recipe.webp", alt: "Valmis välipala", width: 1600, height: 900 },
+  };
+  assert.ok(!snackPublicationErrors(withImage).some(error => error.includes("WebP image")));
+  const ready = {
+    ...withImage, carbs_net_per_serving_g: 1, carbs_total_per_serving_g: 2,
+    protein_per_serving_g: 12, fat_per_serving_g: 10,
+  };
+  assert.doesNotThrow(() => assertSnackPublicationReady(ready));
+  assert.ok(snackPublicationErrors({ ...ready, carbs_total_per_serving_g: 0.5 })
+    .some(error => error.includes("below net carbohydrates")));
+  assert.ok(snackPublicationErrors({ ...ready, ingredients: [{ amount: null, unit: "", item: "juustoa" }] })
+    .some(error => error.includes("quantified amount")));
+  assert.ok(snackPublicationErrors({ ...ready, image: { ...ready.image, src: "paaruoat/test.webp" } })
+    .some(error => error.includes("kuvat/valipalat/")));
+  assert.doesNotThrow(() => assertSnackPublicationReady({ ...proposed, category: "paaruoka" }));
 });

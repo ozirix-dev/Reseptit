@@ -6,7 +6,7 @@ import { createAssistantCatalog } from "../src/features/assistant/catalog";
 import { mkdir, readdir, readFile, writeFile, rm } from "node:fs/promises";
 import path from "node:path";
 import { parseMarkdown, renderSafeMarkdown, renderInstructionSteps } from "../src/content/markdown";
-import { assertQuantifiedCriticalIngredients, assertUniqueRecipes } from "../src/content/recipe-validation";
+import { assertQuantifiedCriticalIngredients, assertUniqueRecipes, assertSnackPublicationReady } from "../src/content/recipe-validation";
 import { recipeFrontmatterSchema } from "../src/content/schema";
 import { rebuildPublishedImages } from "../src/content/published-images";
 import type { RecipeEntry, RecipeLocale, SiteContentIndex } from "../src/types/content";
@@ -118,6 +118,7 @@ async function buildRecipes(): Promise<RecipeEntry[]> {
     if (parsed.data.status === "draft") continue;
     if (parsed.data.status !== "published") throw new Error(`Recipe status must be draft or published: ${filePath}`);
     const data = recipeFrontmatterSchema.parse(parsed.data);
+    assertSnackPublicationReady(data);
     if (data.language === "fi") sourceFacets.set(data.recipe_id, recipeFacets(data.main_ingredient ?? [], data.tags));
     const imagePaths = data.image
       ? [data.image.src, ...(data.image.srcset ?? []).map((item) => item.src)]
