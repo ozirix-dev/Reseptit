@@ -48,6 +48,16 @@ test("aamupala is a supported recipe category", () => {
   }).success, true);
 });
 
+test("valipala category is accepted, but drafts do not imply publication", () => {
+  const recipe = siteContent.recipes[0];
+  assert.equal(recipeFrontmatterSchema.safeParse({
+    title: "Välipalaluonnos", recipe_id: "valipala-koe", url_slug: "valipala-koe",
+    category: "valipala", language: "fi", status: "draft",
+    ingredients: [{amount: 100, unit: "g", item: "kurkkua"}], servings: 2,
+  }).success, true);
+  assert.ok(!siteContent.recipes.some((entry) => entry.recipeId === "valipala-koe"));
+});
+
 test("duplicate published recipe locale and route are rejected", () => {
   const recipe = siteContent.recipes[0];
   assert.throws(() => assertUniqueRecipes([recipe, { ...recipe }]), /Duplicate published recipe translation/);

@@ -1,5 +1,7 @@
-# Paaluokat
+# Pääluokat
 
+- aamupala
+- valipala
 - alkuruoka
 - paaruoka
 - jalkiruoka
