@@ -38,6 +38,31 @@ Aineskohtaiset syötteet, ravintolähteet, grammapainot ja kaikkien neljän uude
 
 **Suklaa on tärkeä päätöskohta:** tavallisen tumman suklaan Fineli-tietueessa on 53,26 g imeytyvää hiilihydraattia / 100 g. Siksi tässä suklaaversiossa on 13,46 g / annos eikä sitä pidetä automaattisesti ketoreseptinä. Erillinen sokerittoman suklaan skenaario vaatii täsmävalmisteen, polyolimäärät ja uuden laskennan. Pastöroidun valkuaisen vaahdotettavuus pitää koetestata.
 
+## Keto-keittiöversiot ja ehdolliset GK-esikatselut (6.11.2026)
+
+**Käyttäjän sisältöpyyntö:** kaikki neljä pysyvät keto-soveltuvina, ja lähdeidea tunnistettavana. GK-menetelmää **ei** höllennetä. Alkuperäiset lähtölaskelmat säilyvät muuttumattomina tiedostossa [`independent-nutrition.json`](independent-nutrition.json), ja uudet punnitut keto-versiot sekä omat lähdesidokset ovat [`keto-variants-2026-11-06.json`](keto-variants-2026-11-06.json).
+
+| Resepti/versio | Keto-toteutus | KH g/annos | Ehdollinen suklaan GI29-skenaario GK¹ | GI:n puutteen vuoksi pois jäävä KH g/annos |
+| --- | --- | ---: | ---: | ---: |
+| [Rasvakaakao — tumma suklaa, keto](luonnokset/rasvakaakao-rouva-keto.md) | VARIANT_ONLY | 3,69 | 0,61 | 1,59 |
+| [Lämmin suklaa-chia-puuro — keto](luonnokset/lammin-chia-puuro-rouva-keto.md) | VARIANT_ONLY | 3,11 | 0,61 | 1,01 |
+| [Kahden aineksen ketosuklaavaahto (90 %)](luonnokset/suklaavaahto-tummasta-suklaasta.md) | CLARIFICATION_NEEDED | 3,64 | 1,02 | 0,14 |
+
+¹ **Ei julkaistava GK-luku.** Lasku on `(Lindt 90 % CHO g/annos) × 29/100`; vain suklaa lasketaan ja muut tunnetut GI-puutteiset, yksittäin alle 1 g ja yhteensä alle 2 g osuudet eritellään avoimesti. Sama 29 ei ole Lindtin tuotekohtainen mittaus. GI-kategoriasidoksen soveltuvuus, lähteiden hyväksyntä, valmistusvaikutus sekä laskentamallin puuttuva suklaa-kategoria vaativat katselmoinnin. Ei GK0-kiertotietä, ei tekaistua GI:tä.
+
+**Pizza on jo keto ja julkaistu.** Sitä ei muuteta tai kahdenneta. Rouva Keton pizzapohjavertailua ei muuteta keto-versioksi eikä GK-osumaa tavoitella annoksen keinotekoisella pienentämisellä. Pizzan nykyisestä reseptistä tarkistetaan ensin määrät, täytteiden tarkat hiilihydraatit, Pofiberin tuotemassa ja käytettävissä olevat suora-/valmistusvastaavat GI:t erillisessä hyväksytyssä GK-prosessissa.
+
+## GK-laskennan rehellinen rajaus
+
+Suklaan `GI 29` on [International Tables 2021](https://doi.org/10.1093/ajcn/nqab233) -katsauksen neljän tuotteen keskiarvo (rekisterissä `dark-chocolate-international-tables-mean-gi-29`). Se **ei** ole Lindt 90 % -tuotteen mittaus. Keskiarvon käyttäminen näissä resepteissä on *vasta arvioitava soveltuvuus*, ei hyväksytty GI-sidos. Seuraavassa ilmoitetaan vain **nimetty testiskenaario**, ei julkaistavaa GK-arvoa. Esikatselupisteet eivät sisällä GI:ltään tuntemattomien pienten ainesten vaikutusta; se on näkyvissä erikseen. Niistä ei saa tehdä täsmällistä GK-pistettä ilman menetelmäkatselmointia.
+
+Uusi keto-keittiöversio ei korvaa Rouva Keton alkuperäistä eikä kartuta alkuperäisen reseptin GK-kattavuutta. Kerman vähentäminen chia-puurossa ja suklaan lisääminen kaakaoon ovat *erillisiä kulinaarisia versioita*. Erityisesti chia-puuron muutos on selvä, ei vain mittayksikön tarkennus.
+
+Lindt 90 % [Suomen tuotetiedossa](https://www.lindt.fi/fi/lindt-excellence-dark-90-bar-100g-fi-fi-03046920029759) 100 g:ssä on 14 g imeytyvää hiilihydraattia, 10 g proteiinia, 55 g rasvaa ja 592 kcal, mutta **kuitu ja polyolit eivät ole eriteltyjä**. Niitä ei päätellä nollaksi. Näiden vaihtoehtojen `carbs_total_per_serving_g` jää tyhjäksi, kunnes tietue täsmennetään. Tämä ei estä imeytyvän hiilihydraatin laskemista labelista. Myös koekeittiön muna- ja rasvatuotteet tarkistetaan ennen mahdollista julkaisua.
+
+Koodi `site/scripts/glycemic-load-model.ts` sisältää GI-kategorioiden kelpoisuuden tarkistuksen `categoryMeanMatchesFood`, jossa **ei tällä hetkellä ole `chocolate`-sääntöä**. En lisää sellaista sokkona: uusi tieteellinen / tekninen hyväksyntä tarvitaan, tai käytetään parempaa suoraan sopivaa GI-näyttöä. Ei muutoksia nykyisiin GK- tai GI-rekistereihin tässä PR:ssä.
+
+
 ## Julkaisemattomien reseptinimien jatkojono
 
 Seuraavat ovat **vain kartoittamattomia nimiehdokkaita**, eivät lähdevarmennettuja ohjeita:
@@ -55,9 +80,9 @@ Ensimmäinen toteutus sijoitti kolme uutta reseptiluonnosta `reseptit/raakileet/
 
 1. Hyväksy kolme punnittavaa keittiösovitetta ja pizzan vertailun rajaus; reseptit on koetehtävä. Chia-puuron suolamäärä on toimituksellisesti pienennetty.
 2. Tarkista erityisesti kuohukerman rasvaprosentti, tuorejuusto, kookosöljy, Pofiber, tumma suklaa sekä pastöroidut munaerät tuotepakkausten ja ravintotietueiden tasolla. Jos tuote muuttuu, laske uudelleen.
-3. Sovi vanhan `suklaamousse-keto.md`-otsikon käsittely ja varmista, ettei uusia duplikaatteja tule.
+3. Tarkista 90 % suklaan tuotetiedot, puuttuvat kuitu/polyolit sekä dark chocolate GI29 -soveltuvuus. Sovi vanhan `suklaamousse-keto.md`-otsikon käsittely ja varmista, ettei uusia duplikaatteja tule.
 4. Kolme omaa, alkuperäistä SVG-kuvitusluonnosta on mukana tarkistukseen. **Julkaisussa kuvat on viimeisteltävä erillisiksi WebP-kuviksi** ja vietävä `kuvat/`-hakemistoon oikein mitoin, kuva-alt-tekstein ja testi-ajoin. Ketopizzalla on jo oma WebP.
 5. Tarkista suomenkieliset tekstit, tee EN/SV/TH-käännökset tarvittaessa, ja aja `cd site && npm ci && npm test && npm run build && npm run test:static && npm run audit:nutrition`. Tässä tutkimus-PR:ssä ei ole tehty paikallista buildiä connector-ympäristössä.
-6. GK jää tyhjäksi, ellei kullekin ainesosalle löydy omassa GK-prosessissa hyväksyttyä relevanttia GI-evidenssiä. Draft-tila ei synnytä julkaistavia reittejä.
+6. GK pysyy julkaisematta, kunnes sekä mittauslähde- ja tuotekohtainen soveltuvuus että puuttuvien GI-osuuksien rajat on katselmoitu. Suklaan 29 on vasta kategorinen skenaario, ei hyväksytty piste. Draft-tila ei synnytä julkaistavia reittejä.
 
 **Julkaisupäätöstä tai yhteistyöväitettä Rouva Keton kanssa ei ole tehty.**

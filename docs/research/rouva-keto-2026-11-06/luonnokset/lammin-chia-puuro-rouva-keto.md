@@ -1,5 +1,5 @@
 ---
-title: "Lämmin chia-puuro (Rouva Keto -lähdeidea)"
+title: "Lämmin suklaa-chia-puuro – keto"
 recipe_id: lammin-chia-puuro-rouva-keto
 url_slug: lammin-chia-puuro-rouva-keto
 category: aamupala
@@ -9,36 +9,39 @@ diet_class: keto
 servings: 1
 time_total_min: 15
 difficulty: helppo
-main_ingredient: [chia, kerma]
+main_ingredient: [chia, kerma, suklaa]
 cooking_method: [keitto]
-tags: [aamupala, chia, puuro, keto]
-carbs_net_per_serving_g: 2.96
-carbs_total_per_serving_g: 13.28
-protein_per_serving_g: 8.75
-fat_per_serving_g: 48.17
+tags: [aamupala, chia, keto, suklaa, puuro]
+carbs_net_per_serving_g: 3.11
+carbs_total_per_serving_g: null
+protein_per_serving_g: 9.05
+fat_per_serving_g: 37.95
 ingredients:
   - { amount: 30, unit: g, item: "chiansiemeniä" }
-  - { amount: 100, unit: g, item: "kuohukermaa, noin 38 % rasvaa" }
-  - { amount: 150, unit: g, item: "vettä", note: "noin 1,5 dl" }
+  - { amount: 30, unit: g, item: "kuohukermaa, 38 % rasvaa" }
+  - { amount: 10, unit: g, item: "voita" }
+  - { amount: 15, unit: g, item: "Lindt Excellence 90 % tummaa suklaata", note: "GTIN 3046920029759" }
+  - { amount: 200, unit: g, item: "vettä" }
   - { amount: 0.5, unit: g, item: "suolaa" }
 ---
 
-# Lämmin chia-puuro
+# Lämmin suklaa-chia-puuro
 
-Lusikoitava chia-puuro valmistuu liedellä kylmän chiavanukkaan sijaan. Annos on tuhti aamupala.
+Yhden kattilan paksu chia-puuro, johon sulatettu tumma suklaa antaa maun. **Tämä on oma suklaaversio**, ei Rouva Keton alkuperäisen vaniljaisen kermapuuron laskentatulos.
 
 ## Valmistus
 
-1. Kuumenna 150 g vettä pienessä kattilassa kevyesti poreilevaksi.
-2. Ripottele 30 g chiansiemeniä veteen koko ajan sekoittaen.
-3. Anna turvota miedolla lämmöllä 4–5 minuuttia; sekoita usein, jotta siemenet eivät tartu pohjaan.
-4. Lisää 100 g kuohukermaa ja kuumenna vielä 2–4 minuuttia, kunnes puuro on lusikoitavaa.
-5. Lisää 0,5 g suolaa. Anna jäähtyä hetki ennen tarjoamista.
+1. Mittaa kattilaan 200 g vettä ja kuumenna miedolle poreilulle.
+2. Ripottele 30 g chiansiemeniä joukkoon jatkuvasti sekoittaen, jotta ne eivät paakkuunnu. Anna turvota 5 minuuttia.
+3. Lisää 30 g kuohukermaa ja 10 g voita. Kuumenna miedolla lämmöllä 2–4 minuuttia; lisää tarvittaessa pieni tilkka vettä, jos puuro paksuuntuu liikaa.
+4. Nosta kattila pois liedeltä, lisää 15 g hienonnettua tummaa suklaata ja 0,5 g suolaa. Sekoita, kunnes suklaa sulaa puuroon.
+5. Tarjoa lämpimänä. Annos on yksi tukeva aamupuuro.
 
 ## Muistiinpanot
 
-- Lähteen 1/2 tl suolaa vähennettiin toimituksellisessa sovitteessa 0,5 grammaan. Vaniljajauhe ja voilisäke eivät sisälly laskettuun perusannokseen.
-- Arvio / annos: **501,01 kcal**, imeytyvä CHO **2,96 g**, kokonais-CHO **13,28 g**, proteiini **8,75 g**, rasva **48,17 g**.
-- Lähde: [Sulamo: Lämmin chia-puuro, Rouva Keto](https://www.sulamo.fi/resepti/ohje/353703/lammin-chia-puuro-rouva-keto). Tekijyysmerkintää ei ole itsenäisesti vahvistettu.
-- Riippumaton laskenta: [aineistomuistio](../independent-nutrition.json). Kuvitusluonnos: [SVG](../kuvitus/lammin-chia-puuro.svg).
-- Muista: **oma, määrällisesti tarkennettu sovitus** julkisesta lähdeideasta, ei alkuperäisen tekstin kopio. Resepti on `draft`, eikä näitä arvioita saa tulkita laboratoriomittauksiksi. Kuvitus on oma SVG-esikatselu; julkaisu vaatii WebP:n, käännökset ja QA:n.
+- Alkuperäiseen verrattuna kermaa on vähemmän, ja voi sekä suklaa täydentävät rakennetta. Tämä on kulinaarinen versio, **ei alkuperäisen GK**.
+- Makrot / annos (oma arvio): **410,99 kcal**, imeytyvä hiilihydraatti **3,11 g**, proteiini **9,05 g**, rasva **37,95 g**. Kokonaishiilihydraatti ei ole varmistettavissa suklaan kuidun osalta.
+- **GK-tutkimusskenaario (EI julkaistava GK):** suklaan 29 GI -keskiarvolla **0,61**, lisäksi **1,01 g**/annos GI-tiedoltaan puuttuvia pieniä osuuksia. Ei valmis GK-luku.
+- Idea: [Sulamo – Lämmin chia-puuro, Rouva Keto](https://www.sulamo.fi/resepti/ohje/353703/lammin-chia-puuro-rouva-keto). Tuote: [Lindt Suomen tiedot](https://www.lindt.fi/fi/lindt-excellence-dark-90-bar-100g-fi-fi-03046920029759).
+- Oma sanamuoto, ei yhteistyöväitettä. Koekeittiötesti vielä tekemättä.
+- [Ravinto- ja GK-katselmointipaketti](../keto-variants-2026-11-06.json).
