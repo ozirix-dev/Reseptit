@@ -234,3 +234,56 @@ test('malformed CLI input emits full-check outputs and a classification error', 
     assert.ok(readFileSync(output, 'utf8').includes('classification_error=true'));
   } finally { rmSync(fixture, {recursive: true, force: true}); }
 });
+
+test("three-tier browser selection keeps docs and content fast", () => {
+  assert.deepEqual(classifyPaths(["docs/review/new-recipe.md"]).browserSuites, []);
+  assert.deepEqual(classifyPaths(["reseptit/paaruoat/kana.md"]).browserSuites, []);
+  assert.deepEqual(classifyPaths(["kaannokset/th/paaruoat/kana.md"]).browserSuites, []);
+  assert.deepEqual(classifyPaths(["kuvat/paaruoat/kana.webp"]).browserSuites, []);
+});
+
+test("UI and blog changes select the essential browser test", () => {
+  for (const p of ["site/src/styles.css", "site/src/features/recipes/home-preview.css", "site/src/features/blog/blog-data.ts"]) {
+    const plan = classifyPaths([p]);
+    assert.deepEqual(plan.browserSuites, ["smoke"], p);
+    assert.equal(plan.runBuild, true, p);
+    assert.equal(plan.runBrowser, true, p);
+  }
+});
+
+test("riskier browser changes add only their relevant deep suites", () => {
+  assert.deepEqual(classifyPaths(["site/src/features/recipes/RecipesPage.tsx"]).browserSuites, ["smoke", "ui"]);
+  assert.deepEqual(classifyPaths(["site/src/router.tsx"]).browserSuites, ["smoke", "ui", "routes"]);
+  assert.deepEqual(classifyPaths(["site/src/SeoMeta.tsx"]).browserSuites, ["smoke", "ui", "routes"]);
+  assert.deepEqual(classifyPaths(["site/src/features/recipes/image-layout.ts"]).browserSuites, ["smoke", "images"]);
+  const search = classifyPaths(["site/src/features/recipes/recipe-search.ts"]);
+  assert.deepEqual(search.browserSuites, ["smoke", "ui"]);
+  assert.ok(search.unitTests.includes("tests/recipe-search.test.ts"));
+});
+
+test("test-file changes select relevant suite without running all browsers", () => {
+  assert.deepEqual(classifyPaths(["site/tests/ci-essential.browser.test.ts"]).browserSuites, ["smoke"]);
+  assert.deepEqual(classifyPaths(["site/tests/browser-smoke.test.ts"]).browserSuites, ["ui"]);
+  assert.deepEqual(classifyPaths(["site/tests/route-loading.browser.test.ts"]).browserSuites, ["routes"]);
+  assert.deepEqual(classifyPaths(["site/tests/responsive-images.browser.test.ts"]).browserSuites, ["images"]);
+  assert.equal(classifyPaths(["site/tests/new-experimental.browser.test.ts"]).full, true);
+});
+
+test("multi-file diffs take a union; unknown or CI changes fail closed", () => {
+  const p = classifyPaths(["site/src/features/recipes/image-layout.ts", "site/src/router.tsx"]);
+  assert.deepEqual(p.browserSuites, ["smoke", "ui", "routes", "images"]);
+  const unknown = classifyPaths(["site/src/features/assistant/unknown.ts"]);
+  assert.equal(unknown.full, true);
+  assert.deepEqual(unknown.browserSuites, ["smoke", "ui", "routes", "images"]);
+  const ci = classifyPaths([".github/workflows/pages.yml"]);
+  assert.equal(ci.full, true);
+  assert.deepEqual(ci.browserSuites, ["smoke", "ui", "routes", "images"]);
+});
+
+test("browser-specific output is absent from docs-only and present on UI changes", () => {
+  const content = classifyPaths(["docs/review/only-report.md"]);
+  assert.equal(content.runBrowser, false);
+  const changed = classifyPaths(["site/src/styles.css"]);
+  assert.equal(changed.runBrowser, true);
+  assert.deepEqual(changed.browserSuites, ["smoke"]);
+});
