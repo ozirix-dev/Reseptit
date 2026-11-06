@@ -1,0 +1,29 @@
+name: Finnish classics photos WebP one-time conversion
+on:
+  push:
+    branches:
+      - content/suomalaiset-klassikot-gk-valmistelu-20261106
+    paths:
+      - .github/workflows/finnish-classics-webp-once.yml
+
+permissions:
+  contents: read
+
+jobs:
+  convert:
+    if: github.repository == 'ozirix-dev/Reseptit'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install existing site dependencies
+        run: npm ci --prefix site --no-audit --no-fund
+      - name: Convert reviewed source JPEG photos to WebP
+        run: node docs/review/convert-finnish-classics-webp.mjs
+      - name: Emit generated WebP for connector-managed PR commit
+        run: node docs/review/export-finnish-classics-webp-once.mjs
