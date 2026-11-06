@@ -42,5 +42,5 @@ Täyteläinen suklaavaahto syntyy suklaasta ja vaahdotetusta kananmunasta. Resep
 - Arvio / annos: **193,03 kcal**, imeytyvä CHO **13,46 g**, kokonais-CHO **15,44 g**, proteiini **6,67 g**, rasva **12,06 g**.
 - Lähdeidea: [Sulamo: Todellinen suklaaherkku (Rouva keto)](https://www.sulamo.fi/resepti/ohje/455804/todellinen-suklaaherkku-rouva-keto). Tekijyysmerkintää ei ole itsenäisesti varmennettu.
 - Repossa on vanha pelkän otsikon sisältävä `reseptit/jalkiruoat/suklaamousse-keto.md`; päällekkäisyys on ratkaistava ennen uutta julkaisua.
-- Riippumaton laskenta: [aineistomuistio](../../docs/research/rouva-keto-2026-11-06/independent-nutrition.json). Kuvitusluonnos: [SVG](../../docs/research/rouva-keto-2026-11-06/kuvitus/suklaavaahto.svg).
+- Riippumaton laskenta: [aineistomuistio](../independent-nutrition.json). Kuvitusluonnos: [SVG](../kuvitus/suklaavaahto.svg).
 - Muista: **oma, määrällisesti tarkennettu sovitus** julkisesta lähdeideasta, ei alkuperäisen tekstin kopio. Resepti on `draft`, eikä näitä arvioita saa tulkita laboratoriomittauksiksi. Kuvitus on oma SVG-esikatselu; julkaisu vaatii WebP:n, käännökset ja QA:n.

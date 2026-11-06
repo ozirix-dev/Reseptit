@@ -41,5 +41,5 @@ Täyteläinen lämmin kaakao, jonka maku tulee aidosta kaakaosta. Tämä on yksi
 - Punnitut määrät poikkeavat lähteen ruokalusikoista toimituksellisen mittatarkennuksen vuoksi.
 - Arvio / annos: **326,53 kcal**, imeytyvä CHO **1,63 g**, kokonais-CHO **3,45 g**, proteiini **1,82 g**, rasva **34,35 g**.
 - Alkuperäisen resepti-idean lähde: [Sulamo: Rasvakaakao Rouva Keto](https://www.sulamo.fi/resepti/ohje/354018/rasvakaakao-rouva-keto). Sulamon nimitieto ei itsessään todista tekijyyttä.
-- Riippumaton laskenta: [aineistomuistio](../../docs/research/rouva-keto-2026-11-06/independent-nutrition.json). Kuvitusluonnos: [SVG](../../docs/research/rouva-keto-2026-11-06/kuvitus/rasvakaakao.svg).
+- Riippumaton laskenta: [aineistomuistio](../independent-nutrition.json). Kuvitusluonnos: [SVG](../kuvitus/rasvakaakao.svg).
 - Muista: **oma, määrällisesti tarkennettu sovitus** julkisesta lähdeideasta, ei alkuperäisen tekstin kopio. Resepti on `draft`, eikä näitä arvioita saa tulkita laboratoriomittauksiksi. Kuvitus on oma SVG-esikatselu; julkaisu vaatii WebP:n, käännökset ja QA:n.

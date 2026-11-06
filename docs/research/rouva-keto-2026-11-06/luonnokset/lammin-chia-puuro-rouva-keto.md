@@ -40,5 +40,5 @@ Lusikoitava chia-puuro valmistuu liedellä kylmän chiavanukkaan sijaan. Annos o
 - Lähteen 1/2 tl suolaa vähennettiin toimituksellisessa sovitteessa 0,5 grammaan. Vaniljajauhe ja voilisäke eivät sisälly laskettuun perusannokseen.
 - Arvio / annos: **501,01 kcal**, imeytyvä CHO **2,96 g**, kokonais-CHO **13,28 g**, proteiini **8,75 g**, rasva **48,17 g**.
 - Lähde: [Sulamo: Lämmin chia-puuro, Rouva Keto](https://www.sulamo.fi/resepti/ohje/353703/lammin-chia-puuro-rouva-keto). Tekijyysmerkintää ei ole itsenäisesti vahvistettu.
-- Riippumaton laskenta: [aineistomuistio](../../docs/research/rouva-keto-2026-11-06/independent-nutrition.json). Kuvitusluonnos: [SVG](../../docs/research/rouva-keto-2026-11-06/kuvitus/lammin-chia-puuro.svg).
+- Riippumaton laskenta: [aineistomuistio](../independent-nutrition.json). Kuvitusluonnos: [SVG](../kuvitus/lammin-chia-puuro.svg).
 - Muista: **oma, määrällisesti tarkennettu sovitus** julkisesta lähdeideasta, ei alkuperäisen tekstin kopio. Resepti on `draft`, eikä näitä arvioita saa tulkita laboratoriomittauksiksi. Kuvitus on oma SVG-esikatselu; julkaisu vaatii WebP:n, käännökset ja QA:n.

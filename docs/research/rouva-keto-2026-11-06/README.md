@@ -17,9 +17,9 @@
 | Ehdokas | Nykyinen Recipavo | Päätös / sisältö |
 | --- | --- | --- |
 | Ketopizza / Pofiber-pohja | [`reseptit/paaruoat/ketopizza-pofiber-pohjalla.md`](../../../reseptit/paaruoat/ketopizza-pofiber-pohjalla.md), **published**, oma WebP ja EN/SV/TH. Olemassa oleva pizza käyttää *eri pohjamääriä ja täytteitä*. | **EI uutta kopiota.** Dokumentoidaan blogin pohjan erillinen ravintovertaillaskelma; ei muuteta julkaistuja arvoja. Provenienssi omalle reseptille selvitetään erikseen ennen mahdollista lähdemainintaa. |
-| Rasvakaakao | Ei samannimistä reseptiä inventoiduissa reseptikansioissa. | [Uusi draft](../../../reseptit/raakileet/rasvakaakao-rouva-keto.md), punnittavat määrät, oma [kuvitus](kuvitus/rasvakaakao.svg). |
-| Lämmin chia-puuro | [`kaakao-kookos-chia`](../../../reseptit/aamupalat/kaakao-kookos-chia.md) ja [`marjainen-chiavanukas`](../../../reseptit/aamupalat/marjainen-chiavanukas.md) ovat **kylmiä** vanukkaita. | [Uusi draft](../../../reseptit/raakileet/lammin-chia-puuro-rouva-keto.md), ei turhaa päällekkäisyyttä; oma [kuvitus](kuvitus/lammin-chia-puuro.svg). |
-| Todellinen suklaaherkku | [`reseptit/jalkiruoat/suklaamousse-keto.md`](../../../reseptit/jalkiruoat/suklaamousse-keto.md) on **vain otsikko**, ei julkaistavaa ohjetta. | [Uusi draft](../../../reseptit/raakileet/suklaavaahto-tummasta-suklaasta.md), oma [kuvitus](kuvitus/suklaavaahto.svg). Ratkaistaan vanhan tiedoston kohtalo ennen julkaisua. |
+| Rasvakaakao | Ei samannimistä reseptiä inventoiduissa reseptikansioissa. | [Uusi draft](luonnokset/rasvakaakao-rouva-keto.md), punnittavat määrät, oma [kuvitus](kuvitus/rasvakaakao.svg). |
+| Lämmin chia-puuro | [`kaakao-kookos-chia`](../../../reseptit/aamupalat/kaakao-kookos-chia.md) ja [`marjainen-chiavanukas`](../../../reseptit/aamupalat/marjainen-chiavanukas.md) ovat **kylmiä** vanukkaita. | [Uusi draft](luonnokset/lammin-chia-puuro-rouva-keto.md), ei turhaa päällekkäisyyttä; oma [kuvitus](kuvitus/lammin-chia-puuro.svg). |
+| Todellinen suklaaherkku | [`reseptit/jalkiruoat/suklaamousse-keto.md`](../../../reseptit/jalkiruoat/suklaamousse-keto.md) on **vain otsikko**, ei julkaistavaa ohjetta. | [Uusi draft](luonnokset/suklaavaahto-tummasta-suklaasta.md), oma [kuvitus](kuvitus/suklaavaahto.svg). Ratkaistaan vanhan tiedoston kohtalo ennen julkaisua. |
 
 Päällekkäisyys on katsottu **main-haaran 2026-11-06** reseptinimistä ja yllä viitatuista sisällöistä; uusien PR:ien sisällöt tarkistetaan vielä ennen mergeä.
 
@@ -46,6 +46,10 @@ Seuraavat ovat **vain kartoittamattomia nimiehdokkaita**, eivät lähdevarmennet
 - Sulamo-nimihavainnot: lohiyllätys, valkosipulijuustorieska, rieska, syyspäivän sämpylät, juustosiemensämpylät, meksikolaisherkku, nopsa kesäkurpitsapannu, yrttiuunilohi, potpotmoussaka.
 - Top 20 -e-kirjan nimiluettelo: lohturuoka, butterchicken ja kukkakaaliriisi, chili con keto, meksikon vuoka, cheddarpekonikana, Rouva Keton kesälasse, kimchikeitto, kasvisjauhelihasoppa, fetajuustokeitto, munakasrulla, rinkelit, ketoburger, riisitön sushi, ketokuningattaren kakku, lakujätski.
 - Eri listoissa toistuvat nimikkeet (ketopizza, italianpata, kaalisalaatti, lohiyllätys, valkosipulirieskat) käsitellään **yhtenä ideana**, ei useana julkaistavana reseptinä. Täyttä maksullisen teoksen sisältöä ei haeta.
+
+## Regressiotestin havainto: draftit erillisessä research-hakemistossa
+
+Ensimmäinen toteutus sijoitti kolme uutta reseptiluonnosta `reseptit/raakileet/`-kansioon. GK-regressiotestien reseptimäärä nousi 327 → 330 **vaikka frontmatter oli `status: draft`**, ja 20 vanhaa GK-testiä epäonnistui. Reseptiauditoinnin nykyiset historialukitukset näyttävät laskevan myös raakileiden uudet MD-tiedostot. Siksi tämä tutkimuspaketti säilyttää luonnokset `docs/research/rouva-keto-2026-11-06/luonnokset/`-kansiossa, eikä koske reseptipuuhun. Vasta erillisessä julkaisuprosessissa siirretään hyväksytyt reseptit oikeisiin sisältökansioihin ja päivitetään testien hyväksytyt lukuarvot normaalin prosessin mukaan.
 
 ## Portit ennen Ready/merge/julkaisua
 
