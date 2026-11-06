@@ -296,6 +296,7 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
     await page.keyboard.press("Enter");
     assert.equal(await researchLink.isVisible(), true);
     assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true, "expanded evidence fits 320px");
+    await page.locator(".site-language-menu > summary").click();
     await page.getByRole("link", { name: "English", exact: true }).click();
     await page.getByRole("heading", { name: "Glycemic load", exact: true }).waitFor();
     assert.ok(page.url().includes("/en/glycemic-load/"));
