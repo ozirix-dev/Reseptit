@@ -51,7 +51,7 @@ Ringformade kesobröd med bakpulver, utan jäst eller jäsning. De kokas inte so
 2. Mixa keson slät, blanda mjöl med bakpulver och salt och rör ihop.
 3. Låt den mjuka degen vila 10 minuter och dela i sex lika stora vägda bitar. Tillsätt inte ovägt extramjöl om degen inte håller formen; dokumentera provbakningen.
 4. Forma sex ringar på bakplåtspapper. Vispa upp 55 g ägg utan skal, pensla och väg det som blir kvar.
-5. Grädda mitt i ugnen 25–30 minuter tills ytan är brun och insidan genomgräddad. Svalna kort på galler.
+5. Grädda mitt i ugnen preliminärt 25–30 minuter tills ytan är brun och insidan genomgräddad. Kontrollera gräddningen redan efter 20 minuter; sluttiden måste fastställas genom provbakning. Låt svalna kort på galler.
 
 ## Anteckningar
 

@@ -51,7 +51,7 @@ Ring-shaped cottage cheese rolls raised with baking powder, not yeast. Unlike tr
 2. Blend the cottage cheese smooth, mix flour with baking powder and salt, then combine.
 3. Rest the soft dough for 10 minutes and divide into six equally weighed pieces. Do not add unmeasured extra flour if the dough fails to hold its shape; record it as a test issue.
 4. Shape six rings on baking parchment. Beat 55 g shelled egg and brush the rings, weighing the egg left unused.
-5. Bake on the middle rack for 25–30 minutes until browned and fully cooked inside. Cool briefly on a rack before slicing.
+5. Bake on the middle rack for a preliminary 25–30 minutes until browned and cooked inside. Start checking for doneness after 20 minutes; the final baking time needs a physical test. Cool briefly on a rack before slicing.
 
 ## Notes
 

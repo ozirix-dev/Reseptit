@@ -52,7 +52,7 @@ Raejuusto pitää nämä rengassämpylät mehevinä. Taikina kohotetaan leivinja
 2. Soseuta raejuusto tasaiseksi. Sekoita erillisessä kulhossa vehnäjauhot, leivinjauhe ja suola, ja yhdistä ne raejuustoon.
 3. Muodosta pehmeä, muotoiltava taikina. Anna levätä 10 minuuttia. Punnitse taikinan koko massa ja jaa kuuteen samanpainoiseen osaan. Jos taikina ei pysy renkaana ilman lisäjauhoja, kirjaa ongelma koeleivontaan sen sijaan, että lisäisit jauhoja mittaamatta.
 4. Pyöritä paloista kuusi rengasta leivinpaperille. Sekoita 55 g kuoretonta kananmunaa ja voitele pinnat. Punnitse kulhoon jäävä muna.
-5. Paista keskitasolla noin 25–30 minuuttia, kunnes pinta on ruskea ja sisus kypsä. Anna vetäytyä ritilällä ennen halkaisemista.
+5. Paista keskitasolla alustavasti noin 25–30 minuuttia, kunnes pinta on ruskea ja sisus kypsä. Tarkista kypsyys ensimmäisen kerran jo 20 minuutin kohdalla; lopullinen paistoaika varmistetaan koeleivonnassa. Anna vetäytyä ritilällä ennen halkaisemista.
 
 ## Tausta ja erottuvuus
 
