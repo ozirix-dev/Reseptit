@@ -159,7 +159,7 @@ export const blogPosts: BlogPost[] = [
       { label: "Diabetes UK: Glycaemic index and diabetes (tarkistettu 22.9.2025)", url: "https://www.diabetes.org.uk/living-with-diabetes/eating/carbohydrates-and-diabetes/glycaemic-index-and-diabetes" }
     ],
     related: [{ title: "Lue sivuston GK-menetelmästä", path: "/glykeeminen-kuorma/" }, { title: "Etsi reseptejä GK-suodattimella", path: "/" }]
-  }
+  },
   ...moreBlogPosts
 ];
 export const blogRoutes = [blogIndexPath, ...blogPosts.map(post => post.routePath)];
