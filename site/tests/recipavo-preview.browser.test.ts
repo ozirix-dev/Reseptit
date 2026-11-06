@@ -13,6 +13,7 @@ const indexes = { fi: "/", en: "/en/recipes/", sv: "/sv/recept/", th: "/th/recip
 test("preview HTML stays noindex after React hydration and keeps every locale reachable", async () => {
   assert.equal(process.env.VITE_RECIPAVO_HERO_PREVIEW, "true", "Build and test must use the explicit preview flag");
   const homePicksExpected = existsSync(path.resolve("src/features/recipes/home-preview.ts"));
+  assert.equal(homePicksExpected, true, "H1 preview must be present on the integrated main before releasing this SEO fix");
   const server = spawn(process.execPath, [path.resolve("node_modules/vite/bin/vite.js"), "preview", "--host", "127.0.0.1", "--port", "4181", "--strictPort"], { stdio: "pipe" });
   let output = "";
   server.stdout.on("data", (data) => { output += data; });
