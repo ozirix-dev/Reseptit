@@ -49,7 +49,6 @@ test("aamupala is a supported recipe category", () => {
 });
 
 test("valipala category is accepted, but drafts do not imply publication", () => {
-  const recipe = siteContent.recipes[0];
   assert.equal(recipeFrontmatterSchema.safeParse({
     title: "Välipalaluonnos", recipe_id: "valipala-koe", url_slug: "valipala-koe",
     category: "valipala", language: "fi", status: "draft",
