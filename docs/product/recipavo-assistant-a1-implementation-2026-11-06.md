@@ -1,7 +1,7 @@
 # Recipavo Keittiöapuri — A1: read-only julkaistu indeksi ja yhteinen haku
 
-**Päiväys:** 6.11.2026  
-**Tila:** A1-toteutus erillisessä PR:ssä. Ei AI-mallia, chat-käyttöliittymää, Worker-rajapintaa, laskutusavainta, Diary-integraatiota tai domainin vaihtoa.  
+**Päiväys:** 6.11.2026
+**Tila:** A1-toteutus erillisessä PR:ssä. Ei AI-mallia, chat-käyttöliittymää, Worker-rajapintaa, laskutusavainta, Diary-integraatiota tai domainin vaihtoa.
 **Edeltävä suunnitelma:** [Keittiöapuri V1, PR #320](https://github.com/ozirix-dev/Reseptit/pull/320).
 
 ## Tavoite ja nykyisen toteutuksen käyttö
