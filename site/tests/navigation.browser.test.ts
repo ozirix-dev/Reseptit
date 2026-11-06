@@ -52,6 +52,7 @@ test("navigation keeps separate menus and restores scroll correctly across all l
 
   const mobile = await browser.newPage({ viewport: { width: 390, height: 800 } });
   await mobile.goto(base + "/ruokaopas/");
+  await mobile.waitForFunction(() => !(document.querySelector(".site-primary-menu") as HTMLDetailsElement)?.open);
   assert.ok(await mobile.locator(".site-primary-menu > summary").isVisible());
   assert.ok(await mobile.locator(".site-language-menu > summary").isVisible());
   await mobile.locator(".site-primary-menu > summary").click();
