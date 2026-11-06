@@ -2,6 +2,7 @@ import { createHash } from "node:crypto";
 import { recipeFacets } from "../src/content/recipe-facets";
 import { articles, articlePath, blogRoot } from "../src/features/blog/blog-data";
 import { contentForRoute } from "../src/content/route-data";
+import { createAssistantCatalog } from "../src/features/assistant/catalog";
 import { mkdir, readdir, readFile, writeFile, rm } from "node:fs/promises";
 import path from "node:path";
 import { parseMarkdown, renderSafeMarkdown, renderInstructionSteps } from "../src/content/markdown";
@@ -193,6 +194,22 @@ async function main() {
     manifest[route] = filename;
     await writeFile(path.join(dataDir, filename), json, "utf8");
   }
+  // A1: lazily consumed, language-scoped assistant catalogs, never loaded into the main JS bundle.
+  // This is published content only; no AI generation, GK estimates, drafts or private user data.
+  const sha256 = (value: string) => createHash("sha256").update(value).digest("hex");
+  const recipeVersions = new Map(recipes.map((recipe) => [recipe, sha256(JSON.stringify(recipe))]));
+  const assistantManifest: Partial<Record<RecipeLocale, { file: string; sha256: string; count: number }>> = {};
+  for (const locale of ["fi", "en", "sv", "th"] as const) {
+    if (!recipes.some((recipe) => recipe.locale === locale)) continue;
+    const catalog = createAssistantCatalog(recipes, locale, (recipe) => recipeVersions.get(recipe)!);
+    const json = JSON.stringify(catalog);
+    const digest = sha256(json);
+    const filename = `assistant-${locale}-${digest.slice(0, 20)}.json`;
+    await writeFile(path.join(dataDir, filename), json, "utf8");
+    assistantManifest[locale] = { file: filename, sha256: digest, count: catalog.recipes.length };
+  }
+  await writeFile(path.join(dataDir, "assistant-manifest.json"),
+    JSON.stringify({ schemaVersion: 1, locales: assistantManifest }), "utf8");
   const locales = [...new Set(recipes.map((recipe) => recipe.locale))];
   await writeFile(path.join(outputDir, "routes.generated.ts"), `/* Generated; route addresses only, no recipe content. */
 import type { RecipeLocale } from "../types/content";
