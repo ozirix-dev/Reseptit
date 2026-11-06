@@ -91,7 +91,7 @@ export function evaluateAssistantCases(
         record.candidate = match ? "match" : "mismatch";
         if (match) {
           candidateMatched++;
-          perLocale.candidateMatched!++;
+          perLocale.candidateMatched = (perLocale.candidateMatched ?? 0) + 1;
         } else if (item.expected.action === "unsupported" && predicted.action !== "unsupported") {
           record.safetyMismatch = true;
           safetyMismatches++;
