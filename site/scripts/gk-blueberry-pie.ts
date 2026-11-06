@@ -1,3 +1,4 @@
+import {publicGiSourceNote} from './gk-source-copy';
 import {readFileSync} from 'node:fs';
 import {join} from 'node:path';
 import {textHash} from './gk149-model';
@@ -52,7 +53,7 @@ export function buildBlueberryPieVariant(root: string): GkOnlyVariant {
       ...gis.map(gi => ({
         title: gi.source.title, url: gi.source.url,
         kind: gi.evidenceKind === 'HUMAN_GI' ? 'HUMAN_GI' as const : 'PUBLISHED_CODING' as const,
-        note: gi.note ?? gi.source.qualityEvidence,
+        note: publicGiSourceNote(gi),
       })),
     ],
   };
