@@ -66,27 +66,28 @@ const aliases: readonly [RegExp, string][] = [
   [/(?:raejuusto|cottage cheese|keso)/i, "raejuusto"],
   [/(?:tuorejuusto|cream cheese|färskost)/i, "tuorejuusto"],
   [/(?:mozzarella)/i, "mozzarella"],
-  [/(?:kananmuna|kananmunan|kananmunia|munaa ilman|egg|ägg|ไข่)/i, "kananmuna"],
   [/(?:kananmunan keltuai|egg yolk|äggula)/i, "keltuainen"],
+  [/(?:kananmuna|kananmunia|munaa ilman|egg|ägg|ไข่)/i, "kananmuna"],
   [/(?:voi(?:ta|lla|sula)?|butter|smör)/i, "voi"],
   [/(?:oliiviöljy|olive oil|olivolja)/i, "oliiviöljy"],
   [/(?:öljy|cooking oil|vegetable oil|น้ำมัน)/i, "öljy"],
   [/(?:kuivahiiva|tuorehiiva|yeast|jäst)/i, "hiiva"],
   [/(?:sokeri|sokeria|sugar|socker|น้ำตาล)/i, "sokeri"],
   [/(?:suola|suolaa|salt|เกลือ)/i, "suola"],
+  [/(?:kookosmaito|coconut milk|kokosmjölk|กะทิ)/i, "kookosmaito"],
   [/(?:täysmaito|maitoa|milk|mjölk|นม)/i, "maito"],
   [/(?:vesi|vettä|water|vatten|น้ำเปล่า)/i, "vesi"],
   [/(?:seesaminsiemen|sesame seed|sesamfrö)/i, "seesaminsiemen"],
   [/(?:kananrinta|broilerin rinta|chicken breast)/i, "kananrinta"],
   [/(?:broileri|kananliha|chicken|kyckling|ไก่)/i, "kana"],
   [/(?:jauheliha|ground beef|minced meat|köttfärs)/i, "jauheliha"],
-  [/(?:kookosmaito|coconut milk|kokosmjölk|กะทิ)/i, "kookosmaito"],
   [/(?:kerma|kermaa|cream|grädde)/i, "kerma"],
   [/(?:riisi|riisiä|rice|ข้าว)/i, "riisi"],
   [/(?:peruna|perunaa|potato|potatis)/i, "peruna"],
+  [/(?:tomaattikastike|tomato sauce|passata)/i, "tomaattikastike"],
   [/(?:tomaatti|tomaat|tomato|tomat|มะเขือเทศ)/i, "tomaatti"],
-  [/(?:sipuli|onion|lök|หัวหอม)/i, "sipuli"],
   [/(?:valkosipuli|garlic|vitlök|กระเทียม)/i, "valkosipuli"],
+  [/(?:sipuli|onion|lök|หัวหอม)/i, "sipuli"],
   [/(?:pinaatti|spinach|spenat|ผักโขม)/i, "pinaatti"],
   [/(?:kukkakaali|cauliflower|blomkål)/i, "kukkakaali"],
   [/(?:parsakaali|broccoli|broccoli)/i, "parsakaali"],
@@ -171,7 +172,12 @@ function revisionHash(value: string): string {
   return (hash >>> 0).toString(16).padStart(8, "0");
 }
 
+const preparedCache = new WeakMap<SimilarityRecipe, PreparedRecipe>();
+
 function prepare(recipe: SimilarityRecipe): PreparedRecipe {
+  // Inputs are immutable recipe snapshots for the duration of each audit.
+  const cached = preparedCache.get(recipe);
+  if (cached) return cached;
   const items = new Map<string, IndexedIngredient>();
   let unknown = 0;
   for (const ingredient of recipe.ingredients) {
@@ -194,11 +200,13 @@ function prepare(recipe: SimilarityRecipe): PreparedRecipe {
   const quantityKey = [...items].sort(([a], [b]) => a.localeCompare(b)).map(([name, item]) =>
     [name, item.unit ?? "?", item.quantity === null ? "?" : item.quantity.toFixed(5)].join(":")).join("|");
   const revision = revisionHash(quantityKey + "#" + [...methodSet].sort().join("|") + "#" + clean(recipe.title));
-  return {
+  const prepared: PreparedRecipe = {
     recipe, items, significant, methodSet, revision,
     limited: significant.size < 2 || recipe.servings <= 0 || !Number.isFinite(recipe.servings) ||
       unknown > recipe.ingredients.length * 0.5,
   };
+  preparedCache.set(recipe, prepared);
+  return prepared;
 }
 
 function overlapRatio(left: Set<string>, right: Set<string>): number {
