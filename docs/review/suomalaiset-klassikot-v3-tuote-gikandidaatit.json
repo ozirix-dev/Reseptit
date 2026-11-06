@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "createdAt": "2026-11-06",
-  "status": "CANDIDATES_NOT_CALCULATION_EVIDENCE",
+  "status": "PUBLIC_LABEL_CANDIDATES_FURTHER_RESEARCHED_UNAPPROVED",
   "purpose": "Public product-label and GI-study link map for five Finnish-classics drafts; do not treat public listing as physical pack or complete GI/macro review.",
   "selectionRules": [
     "Use EAN and full product name including variant; never infer from brand alone.",
@@ -38,7 +38,15 @@
       "giTestYear": 2005,
       "giReference": "Scazzina F et al., Glycemic index and glycemic load of commercial Italian foods. Nutr Metab Cardiovasc Dis. 2016;26(5):419–429.",
       "matchStatus": "SAME_NAMED_PRODUCT_STUDIED_BUT_BATCH_PREPARATION_AND_PACK_NUTRIENTS_NEED_REVIEW",
-      "notes": "Retailer disagrees on CHO (69 vs 72g/100g) despite same EAN; package label wins, no silent cherry-picking. Measured 2005 product may not match 2026 recipe exactly."
+      "notes": "Retailer disagrees on CHO (69 vs 72g/100g) despite same EAN; package label wins, no silent cherry-picking. Measured 2005 product may not match 2026 recipe exactly.",
+      "corrobationNote": "Current source hierarchy: K-Ruoka, Kespro, Edeka and Carrefour same-EAN listings support 69 g available CHO/100 g dry; separate retailer lists 72. Stronger label evidence but unresolved physical pack. Do not promote to verified.",
+      "corroboratingLabelUrls": [
+        "https://www.k-ruoka.fi/kauppa/tuote/de-cecco-spaghetti-n-12-500g-8001250120120",
+        "https://www.kespro.com/tuotteet/de-cecco-spaghetti-n-12-500g-8001250120120",
+        "https://edeka-foodservice.de/eigenmarken/produkte/451843003/de-cecco-spaghetti-500g",
+        "https://www.carrefour.it/p/de-cecco-spaghetti-n%C2%B012-500-g/8001250120120.html"
+      ],
+      "packInspectionRequired": true
     },
     {
       "id": "royal-tomato-5201194037031",
@@ -49,7 +57,16 @@
       "availableCarbohydratePer100g": 16,
       "url": "https://www.s-kaupat.fi/tuote/royal-330200g-aurinkokuivattu-tomaattisuikale-oljyssa/5201194037031",
       "matchStatus": "LABEL_BASIS_VS_DRAINED_MASS_NOT_YET_VERIFIED",
-      "notes": "Recipe uses 80g drained. Public nutrient label may refer to food as sold; determine whether drained weight and oil are included."
+      "notes": "Recipe uses 80g drained. Public nutrient label may refer to food as sold; determine whether drained weight and oil are included.",
+      "sulphites": {
+        "present": true,
+        "additive": "Potassium metabisulphite E224",
+        "allergenStatus": "sulphur dioxide/sulphites >10 mg/kg per importer",
+        "sourceUrl": "https://www.filos.fi/tuote/royal-aurinkokuivattu-tomaatti-oljyssa-200g/"
+      },
+      "importerOtherProductGTIN": "5201194037406",
+      "gtinDiscrepancy": "Retailer candidate EAN 5201194037031 is not equal to importer product page GTIN 5201194037406. Must not silently combine different SKUs.",
+      "drainBasisStatus": "NOT_CONFIRMED: manufacturer lists 330g net and 200g drained; unclear whether 100g nutrition refers to drained or total contents"
     },
     {
       "id": "barilla-penne-73-8076802085738",
@@ -64,7 +81,8 @@
       "giSourceUrl": "https://glycemicindex.com/gi-search/",
       "giTestYear": 2006,
       "matchStatus": "BARILLA_PENNE_GENERIC_STUDY_NOT_EXACT_N73_MODEL_CONFIRMED",
-      "notes": "Study says Barilla Penne durum wheat. Do not treat Penne Rigate n°73 as EXACT without proof of same SKU/shape/manufacturing method."
+      "notes": "Study says Barilla Penne durum wheat. Do not treat Penne Rigate n°73 as EXACT without proof of same SKU/shape/manufacturing method.",
+      "allergenNote": "Contains wheat; soy and mustard traces possible per S-kaupat, check physical pack."
     },
     {
       "id": "mevgal-feta-5201083349023",
@@ -75,7 +93,8 @@
       "availableCarbohydratePer100g": 0.7,
       "url": "https://www.k-ruoka.fi/kauppa/tuote/mevgal-aito-kreikkalainen-feta-200g-lakt-5201083349023",
       "matchStatus": "PUBLIC_LABEL_PENDING_PHYSICAL_PACKAGE",
-      "notes": "Genuine PDO feta (sheep/goat). Use 200g drained edible product; packaging may require weighing after brine removal."
+      "notes": "Genuine PDO feta (sheep/goat). Use 200g drained edible product; packaging may require weighing after brine removal.",
+      "allergenNote": "Milk allergen remains present despite lactose-free labelling."
     },
     {
       "id": "valio-raejuusto-6408430043019",
