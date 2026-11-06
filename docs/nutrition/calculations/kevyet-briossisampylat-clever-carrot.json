@@ -1,0 +1,384 @@
+{
+  "recipeId": "kevyet-briossisampylat-clever-carrot",
+  "sourceHash": "356fa9e2d65a2d83cb6fbe1401cf5d4918c469965b42ec3ad036ccf2263a58be",
+  "calculatedAt": "2026-11-06",
+  "batchId": "batch-297",
+  "servings": 9,
+  "scope": "Nine buns, weighed ingredients; inclusive of full explicitly listed egg wash, sesame topping and butter finish. Raw ingredient nutrition retained; no water or table salt macros. Baking moisture loss does not imply a macro loss. Buns not physically test baked.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "item": "vahvaa vehnäjauhoa",
+      "amount": 405,
+      "unit": "g",
+      "state": "semi-coarse wheat flour",
+      "matchEvidence": "Weighed raw edible ingredient; Fineli/AFCD record for flour.",
+      "record": {
+        "id": "fineli-110-release-20",
+        "name": "JAUHO, VEHNÄJAUHO, PUOLIKARKEA",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/110",
+        "retrievedAt": "2026-10-25",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "semi-coarse wheat flour",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 73.998,
+          "FIBT": 3.5,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 73.998,
+          "fibre": 3.5,
+          "polyols": 0,
+          "protein": 11.6,
+          "fat": 1.56
+        }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Grams are edible ingredient weights weighed for the recipe.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Ingredient-input nutrition model; all measured edible ingredient nutrients assumed retained in the nine buns."
+    },
+    {
+      "item": "vehnäjauhoa, puolikarkeaa",
+      "amount": 45,
+      "unit": "g",
+      "state": "semi-coarse wheat flour",
+      "matchEvidence": "Weighed raw edible ingredient; Fineli/AFCD record for flour.",
+      "record": {
+        "id": "fineli-110-release-20",
+        "name": "JAUHO, VEHNÄJAUHO, PUOLIKARKEA",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/110",
+        "retrievedAt": "2026-10-25",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "semi-coarse wheat flour",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 73.998,
+          "FIBT": 3.5,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 73.998,
+          "fibre": 3.5,
+          "polyols": 0,
+          "protein": 11.6,
+          "fat": 1.56
+        }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Grams are edible ingredient weights weighed for the recipe.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Ingredient-input nutrition model; all measured edible ingredient nutrients assumed retained in the nine buns."
+    },
+    {
+      "item": "vettä",
+      "amount": 270,
+      "unit": "g",
+      "state": "nutrient-free",
+      "matchEvidence": "Drinking water contributes no macronutrients.",
+      "excludedReason": "Plain drinking water, nutrient-free",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 0,
+        "netCarbohydrate": 0,
+        "totalCarbohydrate": 0,
+        "protein": 0,
+        "fat": 0
+      },
+      "omissionImpactEvidence": "Plain water is H2O; no macros and no kcal."
+    },
+    {
+      "item": "täysmaitoa",
+      "amount": 51,
+      "unit": "g",
+      "state": "raw/as listed",
+      "matchEvidence": "Weighed raw edible ingredient; Fineli/AFCD record for milk.",
+      "record": {
+        "id": "fineli-689-2026-10-24",
+        "name": "MAITO, TÄYSMAITO, D-VITAMIINIA 1 UG",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/689",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "raw/as listed",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 4.8,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 4.8,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 3,
+          "fat": 3.5
+        }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Grams are edible ingredient weights weighed for the recipe.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Ingredient-input nutrition model; all measured edible ingredient nutrients assumed retained in the nine buns."
+    },
+    {
+      "item": "kuivahiivaa",
+      "amount": 7,
+      "unit": "g",
+      "state": "dry yeast",
+      "matchEvidence": "Weighed raw edible ingredient; Fineli/AFCD record for yeast.",
+      "record": {
+        "id": "afcd-F009606-2026-10-24",
+        "name": "Yeast, dry powder",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "dry yeast",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 6.3,
+          "fibre": 26.9,
+          "polyols": 0,
+          "protein": 36.4,
+          "fat": 5
+        }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Grams are edible ingredient weights weighed for the recipe.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Ingredient-input nutrition model; all measured edible ingredient nutrients assumed retained in the nine buns."
+    },
+    {
+      "item": "sokeria",
+      "amount": 35,
+      "unit": "g",
+      "state": "granulated sugar",
+      "matchEvidence": "Weighed raw edible ingredient; Fineli/AFCD record for sugar.",
+      "record": {
+        "id": "fineli-1-release-20",
+        "name": "SOKERI",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/1",
+        "retrievedAt": "2026-10-25",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "granulated sugar",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 99.9,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Rel20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 99.9,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 0
+        }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Grams are edible ingredient weights weighed for the recipe.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Ingredient-input nutrition model; all measured edible ingredient nutrients assumed retained in the nine buns."
+    },
+    {
+      "item": "kananmunaa ilman kuorta",
+      "amount": 62,
+      "unit": "g",
+      "state": "raw edible egg, shell removed",
+      "matchEvidence": "Weighed raw edible ingredient; Fineli/AFCD record for egg.",
+      "record": {
+        "id": "fineli-858-release-20",
+        "name": "KANANMUNA, KUORETON",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/858",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "raw edible egg, shell removed",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0.3,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0.3,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 12.61,
+          "fat": 9.24
+        }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Grams are edible ingredient weights weighed for the recipe.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Ingredient-input nutrition model; all measured edible ingredient nutrients assumed retained in the nine buns."
+    },
+    {
+      "item": "suolaa",
+      "amount": 10,
+      "unit": "g",
+      "state": "nutrient-free",
+      "matchEvidence": "Table salt contributes no energy-yielding macronutrients.",
+      "excludedReason": "Pure table salt, 0 g macronutrients",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 0,
+        "netCarbohydrate": 0,
+        "totalCarbohydrate": 0,
+        "protein": 0,
+        "fat": 0
+      },
+      "omissionImpactEvidence": "Fineli 30 food salt records 0 g carbohydrates and protein/fat at culinary use."
+    },
+    {
+      "item": "voita",
+      "amount": 39,
+      "unit": "g",
+      "state": "butter",
+      "matchEvidence": "Weighed raw edible ingredient; Fineli/AFCD record for butter.",
+      "record": {
+        "id": "fineli-500-release-20",
+        "name": "VOI",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/500",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "butter",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0.8,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0.8,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 1.19,
+          "fat": 81.3
+        }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Grams are edible ingredient weights weighed for the recipe.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Ingredient-input nutrition model; all measured edible ingredient nutrients assumed retained in the nine buns."
+    },
+    {
+      "item": "kananmunaa ilman kuorta",
+      "amount": 15,
+      "unit": "g",
+      "state": "raw edible egg, shell removed",
+      "matchEvidence": "Weighed raw edible ingredient; Fineli/AFCD record for egg.",
+      "record": {
+        "id": "fineli-858-release-20",
+        "name": "KANANMUNA, KUORETON",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/858",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "raw edible egg, shell removed",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0.3,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0.3,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 12.61,
+          "fat": 9.24
+        }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Grams are edible ingredient weights weighed for the recipe.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Ingredient-input nutrition model; all measured edible ingredient nutrients assumed retained in the nine buns."
+    },
+    {
+      "item": "seesaminsiemeniä",
+      "amount": 9,
+      "unit": "g",
+      "state": "sesame seeds",
+      "matchEvidence": "Weighed raw edible ingredient; Fineli/AFCD record for sesame.",
+      "record": {
+        "id": "afcd-F008214-release-3",
+        "name": "Seed, sesame, unsalted",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "sesame seeds",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 6.2,
+          "fibre": 10.1,
+          "polyols": 0,
+          "protein": 22.2,
+          "fat": 55.6
+        }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Grams are edible ingredient weights weighed for the recipe.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Ingredient-input nutrition model; all measured edible ingredient nutrients assumed retained in the nine buns."
+    }
+  ]
+}
