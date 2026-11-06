@@ -21,7 +21,7 @@ const before=json('docs/nutrition/gk-legacy-reconciliation/baseline.json');
 const report=json('tmp/nutrition/glycemic-load-pilot.json');
 
 test('Live original results preserve frozen history plus the exact reviewed transitions; all87 variants and macros stay identical',()=>{
- assert.equal(report.results.length,330);
+ assert.equal(report.results.length,333);
  assertOriginalContentTransition(report);
  const historical = restoreBeforeOriginalContent(structuredClone(report));
  const requiresP1=requiresP1SourceCorrection(root);

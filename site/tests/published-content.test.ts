@@ -81,13 +81,13 @@ test("the ten additional Thai recipes are published in Finnish with their image 
   }
 });
 
-test("the Finnish breakfast and dessert collections contain 150 and ten published recipes with images", () => {
+test("the Finnish breakfast and dessert collections contain 152 and ten published recipes with images", () => {
   const breakfast = siteContent.recipes.filter((recipe) => recipe.locale === "fi" && recipe.category === "aamupala");
   const desserts = siteContent.recipes.filter((recipe) => recipe.locale === "fi" && recipe.category === "jalkiruoka" && [
     "vhh-brita-kakku", "keto-mutakakku", "vhh-mokkapalat", "keto-suklaakeksit", "vhh-omenapiirakka",
     "vhh-juustokakku", "vhh-raparperipiirakka", "vhh-korvapuustit", "vhh-mansikkakakku", "vhh-letut",
   ].includes(recipe.recipeId));
-  assert.equal(breakfast.length, 150);
+  assert.equal(breakfast.length, 152);
   assert.equal(desserts.length, 10);
   const documentedBreakfastNetCarbs = new Map([
     ["indonesialainen-ketoprak-aamiaiskulho", 44.21], ["indonesialainen-pisang-goreng-aamiaiseksi", 63.85],
@@ -108,6 +108,8 @@ test("the Finnish breakfast and dessert collections contain 150 and ten publishe
     ["uunimunat-pinaatilla", 1.3],
     ["halloumimunakas", 3.42],
     ["kaakao-kookos-chia", 2.53],
+    ["rasvakaakao-rouva-keto", 3.69],
+    ["lammin-chia-puuro-rouva-keto", 3.11],
     ["kurkku-oliivi-aamiaiskulho", 2.07],
     ["raejuusto-pesto-kasviskulho", 2.99],
     ["marjainen-chiavanukas", 3.51],
@@ -216,6 +218,21 @@ test("the Finnish breakfast and dessert collections contain 150 and ten publishe
       documentedBreakfastNetCarbs.get(recipe.recipeId) ?? null,
       "only recipes with documented nutrition estimates have values",
     );
+  }
+});
+
+test("three new keto recipes have evidence-bound available carbohydrates and images, without invented total carbohydrates", async () => {
+  const repoDir = path.resolve(import.meta.dirname, "../..");
+  const evidence = JSON.parse(await readFile(path.join(repoDir, "docs/nutrition/drafts/rouva-keto-keto-release-2026-11-06.json"), "utf8"));
+  const ids = ["rasvakaakao-rouva-keto", "lammin-chia-puuro-rouva-keto", "suklaavaahto-tummasta-suklaasta"];
+  assert.deepEqual(evidence.recipes.map((entry: {key: string}) => entry.key).sort(), ids.slice().sort());
+  for (const id of ids) {
+    const recipe = siteContent.recipes.find(entry => entry.locale === "fi" && entry.recipeId === id);
+    assert.ok(recipe, `${id}: published Finnish recipe`);
+    const source = evidence.recipes.find((entry: {key: string}) => entry.key === id);
+    assert.equal(recipe.nutrition.carbsNetG, source.perServing.carbs_net_g);
+    assert.equal(recipe.nutrition.carbsTotalG, null, "Unverified chocolate fibre/polyols must not be zero-imputed");
+    assert.ok(recipe.image, `${id}: original image`);
   }
 });
 
