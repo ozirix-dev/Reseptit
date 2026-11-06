@@ -83,18 +83,39 @@ export async function verifyFinnishClassicsReview() {
   assert.equal(bindings, 8, "expected eight product bindings");
 
   const photos = JSON.parse(await read("docs/review/suomalaiset-klassikot-v4-kuvabriefit.json"));
-  assert.equal(photos.recipes.length, 5, "expected five image review sources");
+  assert.equal(photos.recipes.length, 5, "expected five illustrated recipes");
   const known = new Set(matrix.recipes.map((entry) => entry.recipeId));
+  const hashBytes = (bytes) => createHash("sha1").update("blob " + bytes.length + "\0").update(bytes).digest("hex");
+  let localizedImages = 0;
   for (const photo of photos.recipes) {
     assert(known.has(photo.recipe_id), "photo without matching draft: " + photo.recipe_id);
-    assert.equal(photo.imageStatus, "JPEG_STAGED_WEBP_NOT_CREATED", "unreviewed image status change");
-    const raw = await readFile(path.join(root, photo.originalFile));
-    assert(raw.length > 60_000, photo.recipe_id + ": JPEG is unexpectedly small");
-    assert(raw[0] === 0xff && raw[1] === 0xd8, photo.recipe_id + ": invalid JPEG magic");
-    const imageGitSha = createHash("sha1").update("blob " + raw.length + "\0").update(raw).digest("hex");
-    assert.equal(imageGitSha, photo.sourceGitBlobSha, photo.recipe_id + ": photo no longer matches reviewed Git blob");
+    assert.equal(photo.imageStatus, "WEBP_COMMITTED_DRAFT_BOUND", "unexpected photo release status");
+    const jpeg = await readFile(path.join(root, photo.originalFile));
+    assert(jpeg.length > 60_000 && jpeg[0] === 0xff && jpeg[1] === 0xd8,
+      photo.recipe_id + ": invalid staged JPEG photo");
+    assert.equal(hashBytes(jpeg), photo.sourceGitBlobSha, photo.recipe_id + ": staged JPEG blob changed");
+    const webp = await readFile(path.join(root, photo.expectedWebpPath));
+    assert(webp.length > 30_000 && webp.toString("ascii", 0, 4) === "RIFF"
+      && webp.toString("ascii", 8, 12) === "WEBP", photo.recipe_id + ": invalid WebP master");
+    assert.equal(hashBytes(webp), photo.productionWebpGitBlobSha,
+      photo.recipe_id + ": verified WebP differs from manifest");
+    const relative = photo.expectedWebpPath.replace(/^kuvat\//, "");
+    for (const locale of ["fi", "en", "sv", "th"]) {
+      const filename = locale === "fi"
+        ? "reseptit/raakileet/" + photo.recipe_id + ".md"
+        : "kaannokset/" + locale + "/" + photo.category + "/" + photo.recipe_id + ".md";
+      const source = await read(filename);
+      assert(source.includes("  src: " + relative + "\n"),
+        filename + ": missing shared WebP image reference");
+      assert(source.includes("  width: 1600\n  height: 900\n"),
+        filename + ": incorrect WebP image dimensions");
+      assert(source.includes("status: draft"), filename + ": unexpected publish status");
+      assert(/AI|tekoälyllä/.test(source), filename + ": missing AI illustration disclosure");
+      localizedImages++;
+    }
   }
-  return { recipes: 5, ingredients: count, productBindings: bindings, stagedJPEGs: 5 };
+  return { recipes: 5, ingredients: count, productBindings: bindings, stagedJPEGs: 5, webpMasters: 5, localizedImages };
+
 }
 
 verifyFinnishClassicsReview().then((data) => {
