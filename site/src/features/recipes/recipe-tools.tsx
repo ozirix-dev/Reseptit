@@ -1,4 +1,5 @@
 import type { RecipeLocale } from "@/types/content";
+import { RecipeCopyright } from "./recipe-copyright";
 
 export const toolUi = {
   fi: {
@@ -65,8 +66,8 @@ export const toolUi = {
 
 export function RecipeAbout({ locale }: { locale: RecipeLocale }) {
   const labels = toolUi[locale];
-  return <details className="recipe-about"><summary>{labels.about}</summary><div>
+  return <><details className="recipe-about"><summary>{labels.about}</summary><div>
     <p>{labels.owner}</p><p>{labels.editorial}</p><p>{labels.images}</p><p>{labels.nutrition}</p><p>{labels.diet}</p>
     <a href="https://github.com/ozirix-dev/Reseptit/issues">{labels.feedback}</a>
-  </div></details>;
+  </div></details><RecipeCopyright locale={locale} /></>;
 }
