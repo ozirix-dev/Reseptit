@@ -80,3 +80,5 @@ Uunifetapastan alkuperäisen idean ja vuoden 2019 suomalaisen ruoka-ilmiön teki
 ## Muistiinpanot
 
 - Kuva on tekoälyllä tuotettu havainnekuva ruoasta, ei kuva tässä projektissa valmistetusta koeruoasta.
+
+- **Allergeenit:** vehnä (gluteeni) ja maito. Laktoositon Mevgal-feta on edelleen maitotuote. Barilla Penne Rigate n°73 saattaa sisältää jäämiä soijasta ja sinapista; tarkista pakkaus.

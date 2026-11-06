@@ -103,3 +103,5 @@ Yksi annos on **yksi piirakka** ilman munavoita. Erä tuottaa 24 samankokoista p
 ## Muistiinpanot
 
 - Kuva on tekoälyllä tuotettu havainnekuva ruoasta, ei kuva tässä projektissa valmistetusta koeruoasta.
+
+- **Allergeenit:** ruis ja vehnä (gluteeni) sekä maito. Munavoi ei kuulu tähän reseptiin; erillisenä tarjoiltuna se sisältää myös kananmunaa.

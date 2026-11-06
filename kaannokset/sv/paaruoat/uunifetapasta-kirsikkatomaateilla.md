@@ -72,3 +72,5 @@ Originalidén kommer från Jenni Häyrinen: https://liemessa.fi/2019/02/uunifeta
 **Ursprunglig idé:** [Jenni Häyrinen, Liemessä (2019)](https://liemessa.fi/2019/02/uunifetapasta/). Recipavo uppfann inte ugnsfetapasta.
 
 - Bilden är AI-genererad och inte ett fotografi från en verklig provlagning eller provbakning.
+
+- **Allergener:** innehåller vete (gluten) och mjölk; laktosfri feta är fortfarande en mjölkprodukt. Barilla Penne Rigate n°73 kan innehålla spår av soja och senap. Kontrollera förpackningen.

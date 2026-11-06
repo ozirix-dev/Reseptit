@@ -72,3 +72,5 @@ Original idea credited to Jenni Häyrinen: https://liemessa.fi/2019/02/uunifetap
 **Original idea:** [Jenni Häyrinen, Liemessä (2019)](https://liemessa.fi/2019/02/uunifetapasta/). Recipavo did not invent oven-baked feta pasta.
 
 - This AI-generated illustration is not a photograph of a physical test cook or bake.
+
+- **Allergen check:** contains wheat (gluten) and milk; lactose-free feta is still made from milk. Barilla Penne Rigate n°73 may contain traces of soy and mustard. Check the package.
