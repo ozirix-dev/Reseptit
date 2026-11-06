@@ -4,6 +4,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useContent } from "@/lib/content";
 import type { RecipeLocale } from "@/types/content";
 import { glycemicLoadPath, recipeUi } from "./recipe-i18n";
+import { isRecipavoHeroPreviewEnabled, recipavoHeroCopy } from "./recipavo-hero";
 import { toolUi } from "./recipe-tools";
 import { cuisines, ingredientGroups } from "@/content/recipe-facets";
 import { emptyRecipeFilters, filterRecipes, parseRecipeFilters, recipeFiltersToSearch, type RecipeCategory, type RecipeDietFilter, type RecipeFilters, type GlycemicLoadFilterCategory } from "./recipe-search";
@@ -16,6 +17,7 @@ const categories: RecipeSummary["category"][] = ["aamupala", "alkuruoka", "paaru
 export function RecipesPage({ locale }: { locale: RecipeLocale }) {
   const { recipes } = useContent();
   const labels = recipeUi[locale];
+  const heroCopy = isRecipavoHeroPreviewEnabled() ? recipavoHeroCopy[locale] : null;
   const tools = toolUi[locale];
   const location = useLocation();
   const navigate = useNavigate();
@@ -72,7 +74,7 @@ export function RecipesPage({ locale }: { locale: RecipeLocale }) {
   const hasActiveFilters = activeFilters.length > 0;
 
   return <section className="page-section recipe-index"><div className="container recipe-index__container">
-    <div className="page-intro"><p className="eyebrow">{labels.eyebrow}</p><h1>{labels.indexTitle}</h1><p className="page-intro__description">{labels.intro}</p></div>
+    <div className={heroCopy ? "page-intro recipavo-hero" : "page-intro"}><p className="eyebrow">{heroCopy?.eyebrow ?? labels.eyebrow}</p><h1>{heroCopy?.title ?? labels.indexTitle}</h1><p className="page-intro__description">{heroCopy?.intro ?? labels.intro}</p></div>
     {hydrated ? <form className="recipe-filters" role="search" aria-label={labels.search} onSubmit={(event) => event.preventDefault()}>
       <div className="recipe-search-field">
         <label htmlFor="recipe-search">{labels.search}</label>
