@@ -76,6 +76,10 @@ Seuraavat ovat **vain kartoittamattomia nimiehdokkaita**, eivät lähdevarmennet
 
 Ensimmäinen toteutus sijoitti kolme uutta reseptiluonnosta `reseptit/raakileet/`-kansioon. GK-regressiotestien reseptimäärä nousi 327 → 330 **vaikka frontmatter oli `status: draft`**, ja 20 vanhaa GK-testiä epäonnistui. Reseptiauditoinnin nykyiset historialukitukset näyttävät laskevan myös raakileiden uudet MD-tiedostot. Siksi tämä tutkimuspaketti säilyttää luonnokset `docs/research/rouva-keto-2026-11-06/luonnokset/`-kansiossa, eikä koske reseptipuuhun. Vasta erillisessä julkaisuprosessissa siirretään hyväksytyt reseptit oikeisiin sisältökansioihin ja päivitetään testien hyväksytyt lukuarvot normaalin prosessin mukaan.
 
+## CI-huomio 6.11. (ei piiloteta)
+
+Tämän katselmointierän CI on punainen, samoin [samanaikainen main-CI #42199510115](https://github.com/ozirix-dev/Reseptit/actions/runs/42199510115). Molemmissa sama **20 GK-historialukittua testiä** epäonnistuu, mm. testin pysyvä odotus `92` vs toteutunut `95` sekä julkaistujen reseptien määrän `327` vs `330`. Ero vastaa viimeksi lisättyjä **kolmea briossireseptiä** mainissa; se ei ole tämän tutkimus-PR:n julkaisu tai oikeuta päivittämään historiaa ilman katselmusta. Tässä PR:ssä ei ole muutoksia `reseptit/`, `site/` eikä GK-lähdetietueisiin. CI-ongelman korjauksen omistaja on yleinen GK-regressiotestien ylläpito. **Ei Ready/mergeä ennen vihreää exact-HEAD-tarkastusta tai erikseen dokumentoitua, asianmukaisesti hyväksyttyä baseline-korjausta.**
+
 ## Portit ennen Ready/merge/julkaisua
 
 1. Hyväksy kolme punnittavaa keittiösovitetta ja pizzan vertailun rajaus; reseptit on koetehtävä. Chia-puuron suolamäärä on toimituksellisesti pienennetty.
