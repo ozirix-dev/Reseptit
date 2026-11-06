@@ -1,7 +1,7 @@
 # Recipavo: etusivu ja erillinen reseptikirjasto V1 – päätös- ja toteutussuunnitelma
 
-**Päivä:** 6.11.2026  
-**Tila:** suunnitelma / katselmointiluonnos, **ei koodimuutosta eikä merge-, deploy- tai domain-cutover-lupaa**  
+**Päivä:** 6.11.2026
+**Tila:** suunnitelma / katselmointiluonnos, **ei koodimuutosta eikä merge-, deploy- tai domain-cutover-lupaa**
 **Perusta:** Reseptit `main` `4c6eefd88a6fe28e1c592058e7af1c34716c7fd1`; toteutuksen alkaessa tarkistetaan uusin main ja rinnakkaiset PR:t.
 
 ## 1. Arvio ja ehdotettu päätös
