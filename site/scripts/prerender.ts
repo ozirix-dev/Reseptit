@@ -10,7 +10,7 @@ import { siteContent } from "../src/generated/content.generated";
 import { glycemicLoadMeta, recipeUi } from "../src/features/recipes/recipe-i18n";
 import { recipavoHeroCopy } from "../src/features/recipes/recipavo-hero";
 import { recipeJsonLd } from "../src/features/recipes/schema";
-import { articles, articlePath, blogRoot } from "../src/features/blog/blog-data";
+import { articles, articlePath, blogRoot, blogPosts, blogJsonLd } from "../src/features/blog/blog-data";
 import type { RecipeLocale } from "../src/types/content";
 
 const siteDir = path.resolve(import.meta.dirname, "..");
@@ -59,7 +59,7 @@ function routeMetadata(route: string) {
     `<meta property="og:image" content="${escapeHtml(recipe.image.src)}" />`,
     `<meta name="twitter:image" content="${escapeHtml(recipe.image.src)}" />`,
   ] : [];
-  const jsonLd = blogPost ? `<script id="blog-jsonld" type="application/ld+json">${JSON.stringify({"@context":"https://schema.org","@type":"BlogPosting",headline:blogPost.title,description:blogPost.description,datePublished:blogPost.datePublished,dateModified:blogPost.dateModified,inLanguage:"fi",author:{"@type":"Organization",name:"Reseptit-toimitus"},image:[`${baseUrl}${blogPost.image}`],mainEntityOfPage:url}).replaceAll("<","\\u003c")}</script>` : recipe
+  const jsonLd = blogPost ? `<script id="blog-jsonld" type="application/ld+json">${JSON.stringify(blogJsonLd(blogPosts.find(post => post.slug === blogPost.slug)!)).replaceAll("<", "\\u003c")}</script>` : recipe
     ? `<script id="recipe-jsonld" type="application/ld+json">${JSON.stringify(recipeJsonLd(recipe)).replaceAll("<", "\\u003c")}</script>`
     : "";
   // Match the card grid breakpoints. Do not eagerly fetch three cards on mobile.
