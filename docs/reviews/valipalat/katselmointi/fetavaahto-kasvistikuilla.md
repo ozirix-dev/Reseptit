@@ -9,46 +9,46 @@ servings: 4
 time_total_min: 15
 difficulty: Helppo
 main_ingredient: ["feta", "kurkku"]
-tags: [välipala, katselmointiin, vhh-ehdokas]
+tags: [välipala, review-pending]
+translation_languages: [en, sv, th]
+translation_status: {en: draft, sv: draft, th: draft}
 ingredients:
   - amount: 120
     unit: "g"
-    item: "fetajuustoa"
+    item: "vuohenmaitofetaa, 25 % rasvaa, valutettuna"
   - amount: 100
     unit: "g"
-    item: "maustamatonta kreikkalaista jogurttia"
+    item: "maustamatonta laktoositonta kreikkalaista jogurttia, rasvaa 7 %"
   - amount: 10
     unit: "g"
-    item: "sitruunamehua"
+    item: "laimentamatonta sitruunamehua"
   - amount: 5
     unit: "g"
     item: "tuoretta tilliä"
   - amount: 200
     unit: "g"
-    item: "kurkkua"
+    item: "kurkkua, syötävää osaa"
   - amount: 150
     unit: "g"
-    item: "paprikaa"
-translation_languages: []
-translation_status: {}
+    item: "punaista paprikaa, syötävää osaa"
 ---
 
 # Yrttinen fetavaahto ja kasvistikkuja
 
 ## Kuvaus
 
-VHH- ja keto-välipalavalikoiman katselmointiehdokas. Reseptin määrät ja työjärjestys ovat alustavia: ne on tarkistettava koekeittiössä ennen julkaisua.
+Suolainen feta ja pehmeä kreikkalainen jogurtti vatkataan raikkaaksi yrttidipiksi. Kurkku ja punainen paprika tekevät siitä neljä valmista välipala-annosta.
 
 ## Valmistus
 
-1. Murustele feta ja soseuta se jogurtin sekä sitruunamehun kanssa tasaiseksi vaahdoksi.
-2. Hienonna tilli ja sekoita vaahtoon.
-3. Leikkaa kurkku ja paprika tikuiksi. Jaa neljään annokseen ja tarjoa fetavaahdon kanssa.
+1. Valuta fetajuuston suolaliemi pois ja punnitse 120 g fetaa. Punnitse erikseen 100 g jogurttia ja 10 g laimentamatonta sitruunamehua.
+2. Murustele feta kulhoon. Soseuta se jogurtin ja sitruunamehun kanssa sauvasekoittimella tai pienessä tehosekoittimessa tasaiseksi.
+3. Hienonna 5 g tuoretta tilliä ja sekoita fetavaahtoon. Maista ennen maustamista: feta on valmiiksi suolaista.
+4. Pese kurkku ja punainen paprika. Poista paprikan kanta ja siemenet, punnitse 200 g kurkkua sekä 150 g paprikan syötävää osaa ja leikkaa tikuiksi.
+5. Jaa fetavaahto ja kasvistikkujen punnitut määrät tasaisesti neljään annokseen. Tarjoa viileänä.
 
 ## Muistiinpanot
 
-**KATSELMOINTI / EI JULKAISUUN** — Listan alkuperäinen kohta 10.
+**KATSELMOINTI – EI JULKAISUUN.** Valitut Fineli-koostumustiedot koskevat vuohenmaitofetaa (25 % rasvaa), laktoositonta 7 % kreikkalaista jogurttia, laimentamatonta sitruunamehua ja punaista paprikaa. Vaihdot muihin tuotteisiin vaativat ravintoarvojen uudelleenlaskennan. Kuvaan ei saa lisätä esimerkiksi öljyä, leipää tai porkkanaa, joita ei ole ainesluettelossa. GK = HOLD: yksittäistä mitattua GI:tä tai hyväksyttyä koko aterian mallia ei ole.
 
-Tarkista fetan ja jogurtin tuotekohtaiset ravintoarvot, sitruunamehun hiilihydraatit ja GI-evidenssi.
-
-**Julkaisuportti:** koekeittiö ja annoskoko; riippumaton ravintolaskenta; GI/GK-lähdesidokset tai perusteltu GK HOLD; aidon kuvan hankinta; neljä kieliversiota; deduplikointi; omistajan hyväksyntä. Keto-luokitusta ei aseteta ennen tarkistettua laskentaa.
+**Julkaisuportti:** annos- ja punnitustarkistus; lähteistetty ravintolaskenta; GK-arvo vain hyväksytystä GI-näytöstä tai HOLD; tuotteeseen täsmäävä ruokakuva; käännösten merkitystarkistus; omistajan julkaisupäätös. Ei vielä diet_class-luokitusta.
