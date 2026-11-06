@@ -1,0 +1,408 @@
+{
+  "status": "RESEARCH_ESTIMATE_NOT_GK_APPROVED",
+  "sourceResearch": "https://github.com/ozirix-dev/Reseptit/pull/305",
+  "manufacturer": "https://www.lindt.fi/fi/lindt-excellence-dark-90-bar-100g-fi-fi-03046920029759",
+  "notes": "Independent ingredient-based estimate. Chocolate fibre/polyols unknown. No published GK.",
+  "recipes": [
+    {
+      "key": "rasvakaakao-rouva-keto",
+      "name": "Rasvakaakao — tumma suklaa, keto",
+      "servings": 1,
+      "ingredients": [
+        {
+          "name": "Kaakaojauhe, makeuttamaton",
+          "grams": 6,
+          "record": {
+            "id": "fineli-20-2026-10-24",
+            "name": "Kaakaojauhe, makeuttamaton",
+            "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/20",
+            "per100g": {
+              "carbohydrate": 11,
+              "protein": 18.5,
+              "fat": 21.7,
+              "fibre": 30.4,
+              "polyols": 0
+            }
+          },
+          "kind": "OMIT_LOW",
+          "availableCarbPerServingG": 0.66
+        },
+        {
+          "name": "Voi",
+          "grams": 8,
+          "record": {
+            "id": "fineli-500-release-20",
+            "name": "VOI",
+            "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/500",
+            "per100g": {
+              "carbohydrate": 0.8,
+              "protein": 1.19,
+              "fat": 81.3,
+              "fibre": 0,
+              "polyols": 0
+            }
+          },
+          "kind": "OMIT_LOW",
+          "availableCarbPerServingG": 0.06
+        },
+        {
+          "name": "Kookosöljy",
+          "grams": 8,
+          "record": {
+            "id": "usda-sr-legacy-171412",
+            "name": "Coconut oil",
+            "sourceUrl": "https://fdc.nal.usda.gov/food-details/171412/nutrients",
+            "per100g": {
+              "carbohydrate": 0,
+              "protein": 0,
+              "fat": 99.06,
+              "fibre": 0,
+              "polyols": 0
+            },
+            "note": "Inherited research proxy; exact cold-pressed brand not yet checked."
+          },
+          "kind": "ZERO",
+          "availableCarbPerServingG": 0
+        },
+        {
+          "name": "Kuohukerma 38 %",
+          "grams": 30,
+          "record": {
+            "id": "fineli-631-release-20",
+            "name": "KERMA, KUOHUKERMA, RASVAA 38 %",
+            "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/631",
+            "per100g": {
+              "carbohydrate": 2.9,
+              "protein": 1.88,
+              "fat": 38,
+              "fibre": 0,
+              "polyols": 0
+            }
+          },
+          "kind": "OMIT_LOW",
+          "availableCarbPerServingG": 0.87
+        },
+        {
+          "name": "Lindt Excellence 90 % tumma suklaa",
+          "grams": 15,
+          "record": {
+            "id": "lindt-excellence-90-3046920029759-FI-2026-11-06",
+            "name": "Lindt Excellence Dark 90%, GTIN 3046920029759",
+            "sourceUrl": "https://www.lindt.fi/fi/lindt-excellence-dark-90-bar-100g-fi-fi-03046920029759",
+            "per100g": {
+              "carbohydrate": 14,
+              "protein": 10,
+              "fat": 55,
+              "kcal": 592,
+              "fibre": null,
+              "polyols": null
+            },
+            "note": "Fibre and sugar alcohols not explicitly labeled, UNKNOWN, not zero. EU labeled carbohydrate 14g/100g treated as available CHO."
+          },
+          "kind": "GI_REVIEW",
+          "availableCarbPerServingG": 2.1
+        },
+        {
+          "name": "Vesi",
+          "grams": 200,
+          "record": {
+            "id": "water-macros-zero",
+            "name": "Water",
+            "sourceUrl": null,
+            "per100g": {
+              "carbohydrate": 0,
+              "protein": 0,
+              "fat": 0,
+              "fibre": 0,
+              "polyols": 0
+            },
+            "note": "Water is a documented non-caloric ingredient; no product or salt-table citation is attributed to it."
+          },
+          "kind": "ZERO",
+          "availableCarbPerServingG": 0
+        }
+      ],
+      "kind": "VARIANT_ONLY",
+      "note": "Suklaalisäys antaa ruoalle täyteläisen maun; rasvojen 12g→8g säätö tasapainottaa energiamäärää. Ei alkuperäisen kaakaon GK.",
+      "review": {
+        "calculatedAt": "2026-11-06",
+        "status": "GK_SCREENING_ONLY_SOURCE_APPLICATION_NOT_APPROVED",
+        "candidateGk29": 0.61,
+        "candidateGkContributingCarbsG": 2.1,
+        "omittedAvailableCarbG": 1.59,
+        "editorialOmissionPerIngredientBelow1": true,
+        "editorialOmissionCumulativeBelow2": true,
+        "moreReview": [
+          "GI29 only average of 4 products, not Lindt 90% measurement",
+          "Category mean chocolate matching currently absent in glycemic-load-model.ts",
+          "Product brand/processing, recipe preparation applicability and method decision",
+          "No published GK from candidate point"
+        ]
+      },
+      "perServing": {
+        "kcal": 350.08,
+        "carbs_net_g": 3.69,
+        "carbs_total_g": null,
+        "protein_g": 3.27,
+        "fat_g": 35.38,
+        "fiber_g": null
+      },
+      "unknownComponents": {
+        "fibre": [
+          "Lindt Excellence 90 % tumma suklaa"
+        ],
+        "polyols": [
+          "Lindt Excellence 90 % tumma suklaa"
+        ]
+      }
+    },
+    {
+      "key": "lammin-chia-puuro-rouva-keto",
+      "name": "Lämmin suklaa-chia-puuro — keto",
+      "servings": 1,
+      "ingredients": [
+        {
+          "name": "Chiansiemenet",
+          "grams": 30,
+          "record": {
+            "id": "fineli-34847-2026-10-25",
+            "name": "CHIANSIEMEN",
+            "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/34847?c=2034&c2=2168",
+            "per100g": {
+              "carbohydrate": 0.2,
+              "protein": 22.9,
+              "fat": 33.9,
+              "fibre": 34.4,
+              "polyols": 0
+            }
+          },
+          "kind": "OMIT_LOW",
+          "availableCarbPerServingG": 0.06
+        },
+        {
+          "name": "Kuohukerma 38 %",
+          "grams": 30,
+          "record": {
+            "id": "fineli-631-release-20",
+            "name": "KERMA, KUOHUKERMA, RASVAA 38 %",
+            "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/631",
+            "per100g": {
+              "carbohydrate": 2.9,
+              "protein": 1.88,
+              "fat": 38,
+              "fibre": 0,
+              "polyols": 0
+            }
+          },
+          "kind": "OMIT_LOW",
+          "availableCarbPerServingG": 0.87
+        },
+        {
+          "name": "Voi",
+          "grams": 10,
+          "record": {
+            "id": "fineli-500-release-20",
+            "name": "VOI",
+            "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/500",
+            "per100g": {
+              "carbohydrate": 0.8,
+              "protein": 1.19,
+              "fat": 81.3,
+              "fibre": 0,
+              "polyols": 0
+            }
+          },
+          "kind": "OMIT_LOW",
+          "availableCarbPerServingG": 0.08
+        },
+        {
+          "name": "Lindt Excellence 90 % tumma suklaa",
+          "grams": 15,
+          "record": {
+            "id": "lindt-excellence-90-3046920029759-FI-2026-11-06",
+            "name": "Lindt Excellence Dark 90%, GTIN 3046920029759",
+            "sourceUrl": "https://www.lindt.fi/fi/lindt-excellence-dark-90-bar-100g-fi-fi-03046920029759",
+            "per100g": {
+              "carbohydrate": 14,
+              "protein": 10,
+              "fat": 55,
+              "kcal": 592,
+              "fibre": null,
+              "polyols": null
+            },
+            "note": "Fibre and sugar alcohols not explicitly labeled, UNKNOWN, not zero. EU labeled carbohydrate 14g/100g treated as available CHO."
+          },
+          "kind": "GI_REVIEW",
+          "availableCarbPerServingG": 2.1
+        },
+        {
+          "name": "Vesi",
+          "grams": 200,
+          "record": {
+            "id": "water-macros-zero",
+            "name": "Water",
+            "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/30",
+            "per100g": {
+              "carbohydrate": 0,
+              "protein": 0,
+              "fat": 0,
+              "fibre": 0,
+              "polyols": 0
+            },
+            "note": "Water contributes no macros; source URL points to salt zero-macros for non-caloric references, water itself is ordinary drinking water."
+          },
+          "kind": "ZERO",
+          "availableCarbPerServingG": 0
+        },
+        {
+          "name": "Suola",
+          "grams": 0.5,
+          "record": {
+            "id": "salt-zero-carbs-reviewed",
+            "name": "Table salt",
+            "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/30",
+            "per100g": {
+              "carbohydrate": 0,
+              "protein": 0,
+              "fat": 0,
+              "fibre": 0,
+              "polyols": 0
+            },
+            "note": "Zero-carb salt; sodium not modeled here."
+          },
+          "kind": "ZERO",
+          "availableCarbPerServingG": 0
+        }
+      ],
+      "kind": "VARIANT_ONLY",
+      "note": "Uusi suklaaversio: säilyttää lämpimän chia-puuron, vähentää kermaa ja täydentää voilla. Ei alkuperäisen runsaammin kermaa sisältävän puuron GK.",
+      "review": {
+        "calculatedAt": "2026-11-06",
+        "status": "GK_SCREENING_ONLY_SOURCE_APPLICATION_NOT_APPROVED",
+        "candidateGk29": 0.61,
+        "candidateGkContributingCarbsG": 2.1,
+        "omittedAvailableCarbG": 1.01,
+        "editorialOmissionPerIngredientBelow1": true,
+        "editorialOmissionCumulativeBelow2": true,
+        "moreReview": [
+          "GI29 only average of 4 products, not Lindt 90% measurement",
+          "Category mean chocolate matching currently absent in glycemic-load-model.ts",
+          "Product brand/processing, recipe preparation applicability and method decision",
+          "No published GK from candidate point"
+        ]
+      },
+      "perServing": {
+        "kcal": 410.99,
+        "carbs_net_g": 3.11,
+        "carbs_total_g": null,
+        "protein_g": 9.05,
+        "fat_g": 37.95,
+        "fiber_g": null
+      },
+      "unknownComponents": {
+        "fibre": [
+          "Lindt Excellence 90 % tumma suklaa"
+        ],
+        "polyols": [
+          "Lindt Excellence 90 % tumma suklaa"
+        ]
+      }
+    },
+    {
+      "key": "suklaavaahto-tummasta-suklaasta",
+      "name": "Kahden aineksen ketosuklaavaahto (90 %)",
+      "servings": 4,
+      "ingredients": [
+        {
+          "name": "Lindt Excellence 90 % tumma suklaa",
+          "grams": 100,
+          "record": {
+            "id": "lindt-excellence-90-3046920029759-FI-2026-11-06",
+            "name": "Lindt Excellence Dark 90%, GTIN 3046920029759",
+            "sourceUrl": "https://www.lindt.fi/fi/lindt-excellence-dark-90-bar-100g-fi-fi-03046920029759",
+            "per100g": {
+              "carbohydrate": 14,
+              "protein": 10,
+              "fat": 55,
+              "kcal": 592,
+              "fibre": null,
+              "polyols": null
+            },
+            "note": "Fibre and sugar alcohols not explicitly labeled, UNKNOWN, not zero. EU labeled carbohydrate 14g/100g treated as available CHO."
+          },
+          "kind": "GI_REVIEW",
+          "availableCarbPerServingG": 3.5
+        },
+        {
+          "name": "Pastöroitu kananmunankeltuainen",
+          "grams": 59,
+          "record": {
+            "id": "fineli-851-2026-10-24",
+            "name": "KANANMUNAN KELTUAINEN, 34 % KANANMUNAN MASSASTA",
+            "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/851",
+            "per100g": {
+              "carbohydrate": 0.2,
+              "protein": 15.94,
+              "fat": 29.17,
+              "fibre": 0,
+              "polyols": 0
+            }
+          },
+          "kind": "OMIT_LOW",
+          "availableCarbPerServingG": 0.03
+        },
+        {
+          "name": "Pastöroitu kananmunanvalkuainen",
+          "grams": 115,
+          "record": {
+            "id": "fineli-852-2026-10-24",
+            "name": "KANANMUNAN VALKUAINEN, 66 % KANANMUNAN MASSASTA",
+            "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/852",
+            "per100g": {
+              "carbohydrate": 0.4,
+              "protein": 10.79,
+              "fat": 0.03,
+              "fibre": 0,
+              "polyols": 0
+            }
+          },
+          "kind": "OMIT_LOW",
+          "availableCarbPerServingG": 0.12
+        }
+      ],
+      "kind": "CLARIFICATION_NEEDED",
+      "note": "Vain tavallisen tumman suklaan tuotekohtainen tarkennus, 100 g ja kananmunat säilyvät; tuotteen pastörointi ja vaahdotettavuus varmistettava.",
+      "review": {
+        "calculatedAt": "2026-11-06",
+        "status": "GK_SCREENING_ONLY_SOURCE_APPLICATION_NOT_APPROVED",
+        "candidateGk29": 1.02,
+        "candidateGkContributingCarbsG": 3.5,
+        "omittedAvailableCarbG": 0.14,
+        "editorialOmissionPerIngredientBelow1": true,
+        "editorialOmissionCumulativeBelow2": true,
+        "moreReview": [
+          "GI29 only average of 4 products, not Lindt 90% measurement",
+          "Category mean chocolate matching currently absent in glycemic-load-model.ts",
+          "Product brand/processing, recipe preparation applicability and method decision",
+          "No published GK from candidate point"
+        ]
+      },
+      "perServing": {
+        "kcal": 209.19,
+        "carbs_net_g": 3.64,
+        "carbs_total_g": null,
+        "protein_g": 7.95,
+        "fat_g": 18.06,
+        "fiber_g": null
+      },
+      "unknownComponents": {
+        "fibre": [
+          "Lindt Excellence 90 % tumma suklaa"
+        ],
+        "polyols": [
+          "Lindt Excellence 90 % tumma suklaa"
+        ]
+      }
+    }
+  ]
+}
