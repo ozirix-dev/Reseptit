@@ -31,7 +31,7 @@ function SiteLayout() {
             {availableLocales.includes("en") ? <Link to={isMethodPage ? glycemicLoadPath("en") : "/en/recipes/"} lang="en" aria-current={isMethodPage && locale === "en" ? "page" : undefined}>English</Link> : null}
             {availableLocales.includes("sv") ? <Link to={isMethodPage ? glycemicLoadPath("sv") : "/sv/recept/"} lang="sv" aria-current={isMethodPage && locale === "sv" ? "page" : undefined}>Svenska</Link> : null}
             {availableLocales.includes("th") ? <Link to={isMethodPage ? glycemicLoadPath("th") : "/th/recipes/"} lang="th" aria-current={isMethodPage && locale === "th" ? "page" : undefined}>ไทย</Link> : null}
-            {locale === "fi" ? <Link to="/ruokaopas/" aria-current={pathname.startsWith("/ruokaopas") ? "page" : undefined}>Ruokaopas</Link> : null}
+            <Link to="/ruokaopas/" lang="fi" aria-current={pathname.startsWith("/ruokaopas") ? "page" : undefined}>Ruokaopas{locale !== "fi" ? " (FI)" : ""}</Link>
             <Link to={glycemicLoadPath(locale)} lang={locale} aria-current={isMethodPage ? "page" : undefined}>{labels.glycemicLoadNav}</Link>
           </nav> : null}
         </div>
