@@ -6,23 +6,23 @@ category: valipala
 language: fi
 status: draft
 servings: 6
-time_total_min: 35
+time_total_min: 40
 difficulty: Helppo
 main_ingredient: ["juusto", "pekoni"]
 tags: [välipala, katselmointiin, vhh-ehdokas]
 ingredients:
   - amount: 150
     unit: "g"
-    item: "tuoreita jalapeñoja"
+    item: "tuoreiden jalapeñojen syötävää osaa, kanta ja siemenet poistettu"
   - amount: 120
     unit: "g"
-    item: "maustamatonta tuorejuustoa"
+    item: "maustamatonta tuorejuustoa, rasvaa noin 20 %"
   - amount: 60
     unit: "g"
-    item: "cheddarjuustoa raasteena"
+    item: "cheddarjuustoraastetta, rasvaa noin 34 %"
   - amount: 90
     unit: "g"
-    item: "pekonia"
+    item: "pekonia, rasvaa noin 32 %, raakapaino"
 translation_languages: []
 translation_status: {}
 ---
@@ -31,19 +31,21 @@ translation_status: {}
 
 ## Kuvaus
 
-VHH- ja keto-välipalavalikoiman katselmointiehdokas. Reseptin määrät ja työjärjestys ovat alustavia: ne on tarkistettava koekeittiössä ennen julkaisua.
+Puolitetut jalapeñot täytetään kahdella juustolla ja kääritään pekoniin. Kuudesta välipala-annoksesta jokainen sisältää alustavasti kaksi chilipuolikasta.
 
 ## Valmistus
 
-1. Kuumenna uuni 200 asteeseen. Puolita jalapeñot ja poista siemenet; käytä käsineitä käsitellessäsi chilejä.
-2. Sekoita tuorejuusto ja cheddar. Jaa täyte tasan chilipuolikkaisiin.
-3. Leikkaa pekoni sopiviksi paloiksi ja kääri jokaisen täytetyn puolikkaan ympärille.
-4. Paista 18–22 minuuttia, kunnes pekoni on kypsää ja täyte kuplii. Jäähdytä ennen tarjoamista.
+1. Kuumenna uuni 200 °C:een (ylä- ja alalämpö). Vuoraa pelti leivinpaperilla; käytä suojakäsineitä chilejä käsitellessäsi ja vältä koskemasta silmiin.
+2. Puolita alustavasti kuusi keskikokoista jalapeñoa. Poista kannat, siemenet ja halutessasi vaaleat väliseinät. Punnitse 150 g jäljelle jäävää syötävää chiliosaa; kirjaa todellinen kappalemäärä.
+3. Punnitse 120 g maustamatonta 20 % tuorejuustoa ja 60 g 34 % cheddarraastetta. Sekoita juustot.
+4. Jaa täyte mahdollisimman tasaisesti kahteentoista jalapeñonpuolikkaaseen. Kääri ympärille yhteensä 90 g raakaa pekonia. Jos todellinen chilimäärä poikkeaa 12 puolikkaasta, tarkista annoslukema.
+5. Paista alustavasti 18–22 minuuttia, kunnes pekoni on kypsää ja rapeahkoa ja täyte kuumenee kauttaaltaan. Älä jätä raakaa pekonia pehmeäksi.
+6. Anna jäähtyä turvalliseen tarjoilulämpöön. Jaa kaksi täytettyä chilipuolikasta annosta kohti.
 
 ## Muistiinpanot
 
-**KATSELMOINTI / EI JULKAISUUN** — Listan alkuperäinen kohta 26.
+**KATSELMOINTI / EI JULKAISUUN.** Listan alkuperäinen kohta 26.
 
-Jalapeñojen kappalekoko ja punnitus sekä pekonin kypsennyshävikki vaativat koekeittiön tarkistuksen.
+**HOLD:** tuoreen jalapeñon oma täsmäravintolähde puuttuu; AFCD:n yleinen punainen chili EI ole jalapeñon täsmätieto. Pekonin paistohävikki ja mahdollinen pois valuva rasva dokumentoitava. Käsineet ja kypsän pekonin turvallinen käsittely olennainen. Koepaisto vahvistaa kypsennyksen ja annosmäärän.
 
-**Julkaisuportti:** koekeittiö ja annoskoko; riippumaton ravintolaskenta; GI/GK-lähdesidokset tai perusteltu GK HOLD; aidon kuvan hankinta; neljä kieliversiota; deduplikointi; omistajan hyväksyntä. Keto-luokitusta ei aseteta ennen tarkistettua laskentaa.
+**Julkaisuportti:** koekeittiön annos- ja työjärjestystarkistus; lähteistetty ravintolaskenta; GI/GK hyväksytyllä menetelmällä tai HOLD; täsmäkuva, joka vastaa kaikkia aineksia; merkitystarkistetut FI/EN/SV/TH-versiot; omistajan hyväksyntä. `diet_class`-merkintää ei aseteta ennen laskentaa.
