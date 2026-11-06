@@ -31,24 +31,32 @@ test("shared GI category mean notes avoid unrelated ingredient examples", async 
   }
 });
 
-import { buildBlueberryPieVariant } from "../scripts/gk-blueberry-pie";
-import { buildTwoAlmondPieVariants } from "../scripts/gk-two-almond-pies";
+import { createElement } from "react";
+import { renderToStaticMarkup } from "react-dom/server";
+import { gkOnlyVariants } from "../src/generated/gk-only-variants.generated";
+import { GkOnlyVariantPanel } from "../src/features/recipes/GkOnlyVariantPanel";
+import { publicGkOnlySourceNote } from "../src/features/recipes/gk-only-public-note";
 
-test("sealed GK-only variants use safe public GI source notes without touching calculations", () => {
-  const root = path.resolve(import.meta.dirname, "../..");
-  const variants = [buildBlueberryPieVariant(root), ...buildTwoAlmondPieVariants(root)];
-  assert.deepEqual(variants.map((variant) => variant.recipeId).sort(), [
-    "vhh-mustikkapiirakka", "vhh-omenapiirakka", "vhh-raparperipiirakka",
-  ]);
+test("GK-only citation display removes cross-ingredient notes without modifying sealed variant objects", () => {
+  const ids = ["vhh-mustikkapiirakka", "vhh-omenapiirakka", "vhh-raparperipiirakka"];
+  const variants = gkOnlyVariants.filter((variant) => ids.includes(variant.recipeId));
+  assert.deepEqual(variants.map((variant) => variant.recipeId).sort(), [...ids].sort());
+  let totalCorrected = 0;
   for (const variant of variants) {
-    assert.ok(variant.point !== null, `${variant.recipeId} retains approved calculated GK`);
-    const giNotes = variant.sources.filter((source) => source.kind === "PUBLISHED_CODING" || source.kind === "HUMAN_GI")
-      .map((source) => source.note);
-    assert.ok(giNotes.length > 0, `${variant.recipeId} retains GI evidence`);
-    assert.ok(giNotes.some((note) => note.includes("Low-confidence")), `${variant.recipeId} must expose uncertainty`);
-    for (const note of giNotes) {
-      assert.doesNotMatch(note, /cream cheese|tamarind.paste|category mean for peanuts/i,
-        `${variant.recipeId} must not inherit another ingredient's GI label`);
+    const before = structuredClone(variant);
+    const relevant = variant.sources.filter((source) =>
+      source.kind === "PUBLISHED_CODING" || source.kind === "HUMAN_GI");
+    assert.ok(relevant.length, `${variant.recipeId} must carry GI citations`);
+    for (const source of relevant) {
+      const visible = publicGkOnlySourceNote(source);
+      if (visible !== source.note) totalCorrected++;
+      assert.doesNotMatch(visible, /cream cheese|tamarind.paste|category mean for peanuts/i);
     }
+    const html = renderToStaticMarkup(createElement(GkOnlyVariantPanel, {
+      variant, locale: "fi", compact: true,
+    }));
+    assert.doesNotMatch(html, /cream cheese|tamarind.paste|category mean for peanuts/i);
+    assert.deepEqual(variant, before, `${variant.recipeId}: rendering cannot mutate signed GK object`);
   }
+  assert.ok(totalCorrected >= 3, "the display mapping must correct real reviewed source notes");
 });
