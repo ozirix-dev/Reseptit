@@ -53,6 +53,13 @@ export function SiteNavigation({ pathname, locale, availableLocales, translation
     }
   }, [pathname]);
 
+  const closeMobileMenus = () => {
+    if (window.matchMedia("(max-width: 700px)").matches) {
+      if (primary.current) primary.current.open = false;
+      if (languages.current) languages.current.open = false;
+    }
+  };
+
   const labels = copy[locale];
   const blog = isBlog(pathname);
   const method = isMethod(pathname);
@@ -60,16 +67,16 @@ export function SiteNavigation({ pathname, locale, availableLocales, translation
     <details className="site-primary-menu" ref={primary} open>
       <summary aria-label={labels.menu}>{labels.menu}<span aria-hidden="true"> ▾</span></summary>
       <nav className="site-primary-nav" aria-label={labels.sections}>
-        <Link to={recipeIndexPath(locale)} aria-current={!blog && !method ? "page" : undefined}>{labels.recipes}</Link>
-        <Link to="/ruokaopas/" lang="fi" aria-current={blog ? "page" : undefined}>{labels.blog}</Link>
-        <Link to={glycemicLoadPath(locale)} aria-current={method ? "page" : undefined}>{labels.method}</Link>
+        <Link to={recipeIndexPath(locale)} onClick={closeMobileMenus} aria-current={!blog && !method ? "page" : undefined}>{labels.recipes}</Link>
+        <Link to="/ruokaopas/" lang="fi" onClick={closeMobileMenus} aria-current={blog ? "page" : undefined}>{labels.blog}</Link>
+        <Link to={glycemicLoadPath(locale)} onClick={closeMobileMenus} aria-current={method ? "page" : undefined}>{labels.method}</Link>
       </nav>
     </details>
     {availableLocales.length > 1 && <details className="site-language-menu" ref={languages} open>
       <summary aria-label={labels.languages + ": " + localeNames[locale]}>{localeShort[locale]}<span aria-hidden="true"> ▾</span></summary>
       <nav className="site-language-nav" aria-label={labels.languages}>
         {localeOrder.filter(code => availableLocales.includes(code)).map(code =>
-          <Link key={code} lang={code} hrefLang={code} to={languageDestination(code, pathname, translations)} aria-current={locale === code ? "page" : undefined}>{localeNames[code]}</Link>
+          <Link key={code} lang={code} hrefLang={code} to={languageDestination(code, pathname, translations)} onClick={closeMobileMenus} aria-current={locale === code ? "page" : undefined}>{localeNames[code]}</Link>
         )}
       </nav>
     </details>}
