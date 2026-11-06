@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { recipeJsonLd } from "@/features/recipes/schema";
+import { isRecipavoHeroPreviewEnabled, recipavoHeroCopy } from "@/features/recipes/recipavo-hero";
 import { glycemicLoadMeta, recipeLocaleFromPath, recipeUi } from "@/features/recipes/recipe-i18n";
 import { useContent } from "@/lib/content";
 import { articles, articlePath, blogRoot, blogPosts, blogJsonLd } from "@/features/blog/blog-data";
@@ -48,12 +49,13 @@ export function SeoMeta() {
     const blogIndex = normalizedPath === normalizeRoutePath(blogRoot);
     const isBlog = !!blogPost || blogIndex;
     const known = recipe !== null || indexExists || isPilotPage || isBlog;
+    const preview = isRecipavoHeroPreviewEnabled();
     // Keep unknown deep links' metadata in the same locale as the visible not-found page.
     const locale = recipe?.locale ?? methodLocale ?? (isBlog ? "fi" : routeLocale) ?? recipeLocaleFromPath(strippedPath);
-    const title = blogPost ? `${blogPost.title} | Ruokaopas` : blogIndex ? "Ruokaopas | Reseptit" : isPilotPage ? glycemicLoadMeta[locale].title : known
+    const title = preview && indexExists ? `${recipavoHeroCopy[locale].title} | Recipavo` : blogPost ? `${blogPost.title} | Ruokaopas` : blogIndex ? "Ruokaopas | Reseptit" : isPilotPage ? glycemicLoadMeta[locale].title : known
       ? recipe ? `${recipe.title} | ${titleByLocale[locale]}` : `${titleByLocale[locale]} | Ozirix`
       : `${recipeUi[locale].notFound} | ${titleByLocale[locale]}`;
-    const description = blogPost?.description ?? (blogIndex ? "Ruoanlaiton tekniikoita ja luotettavaa ravitsemustietoa." : undefined) ?? (isPilotPage ? glycemicLoadMeta[locale].description : recipe?.description || (!known ? recipeUi[locale].notFound : recipeUi[locale].intro));
+    const description = preview && indexExists ? recipavoHeroCopy[locale].intro : blogPost?.description ?? (blogIndex ? "Ruoanlaiton tekniikoita ja luotettavaa ravitsemustietoa." : undefined) ?? (isPilotPage ? glycemicLoadMeta[locale].description : recipe?.description || (!known ? recipeUi[locale].notFound : recipeUi[locale].intro));
     const canonical = blogPost ? `${siteBase}${articlePath(blogPost)}` : blogIndex ? `${siteBase}${blogRoot}` : isPilotPage ? `${siteBase}${methodPaths[locale]}` : recipe ? `${siteBase}${recipe.routePath}` : indexExists ? `${siteBase}${indexPath(locale)}` : null;
     document.title = title;
     document.documentElement.lang = locale;
@@ -67,7 +69,8 @@ export function SeoMeta() {
     upsertMeta("name", "twitter:title", title);
     upsertMeta("name", "twitter:description", description);
     document.head.querySelectorAll('link[rel="canonical"], link[rel="alternate"][hreflang], meta[property="og:image"], meta[name="twitter:image"], script#recipe-jsonld, script#blog-jsonld, meta[name="robots"]').forEach((element) => element.remove());
-    if (!known) upsertMeta("name", "robots", "noindex,follow");
+    if (preview) upsertMeta("name", "robots", "noindex,nofollow");
+    else if (!known) upsertMeta("name", "robots", "noindex,follow");
     if (canonical) {
       const canonicalLink = document.createElement("link");
       canonicalLink.rel = "canonical";
