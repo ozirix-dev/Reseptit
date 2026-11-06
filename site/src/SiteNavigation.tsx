@@ -36,15 +36,28 @@ export function SiteNavigation({ pathname, locale, availableLocales, translation
 
   // React Router keeps the site shell mounted; close native mobile menus after route changes.
   useEffect(() => {
-    if (primary.current) primary.current.open = false;
-    if (languages.current) languages.current.open = false;
+    const media = window.matchMedia("(max-width: 700px)");
+    const sync = () => {
+      if (primary.current) primary.current.open = !media.matches;
+      if (languages.current) languages.current.open = !media.matches;
+    };
+    sync();
+    media.addEventListener("change", sync);
+    return () => media.removeEventListener("change", sync);
+  }, []);
+
+  useEffect(() => {
+    if (window.matchMedia("(max-width: 700px)").matches) {
+      if (primary.current) primary.current.open = false;
+      if (languages.current) languages.current.open = false;
+    }
   }, [pathname]);
 
   const labels = copy[locale];
   const blog = isBlog(pathname);
   const method = isMethod(pathname);
   return <div className="site-header__navigation">
-    <details className="site-primary-menu" ref={primary}>
+    <details className="site-primary-menu" ref={primary} open>
       <summary aria-label={labels.menu}>{labels.menu}<span aria-hidden="true"> ▾</span></summary>
       <nav className="site-primary-nav" aria-label={labels.sections}>
         <Link to={recipeIndexPath(locale)} aria-current={!blog && !method ? "page" : undefined}>{labels.recipes}</Link>
@@ -52,7 +65,7 @@ export function SiteNavigation({ pathname, locale, availableLocales, translation
         <Link to={glycemicLoadPath(locale)} aria-current={method ? "page" : undefined}>{labels.method}</Link>
       </nav>
     </details>
-    {availableLocales.length > 1 && <details className="site-language-menu" ref={languages}>
+    {availableLocales.length > 1 && <details className="site-language-menu" ref={languages} open>
       <summary aria-label={labels.languages + ": " + localeNames[locale]}>{localeShort[locale]}<span aria-hidden="true"> ▾</span></summary>
       <nav className="site-language-nav" aria-label={labels.languages}>
         {localeOrder.filter(code => availableLocales.includes(code)).map(code =>
