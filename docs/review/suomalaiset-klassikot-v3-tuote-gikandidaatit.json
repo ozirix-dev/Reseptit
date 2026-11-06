@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-11-06",
+  "status": "CANDIDATES_NOT_CALCULATION_EVIDENCE",
+  "purpose": "Public product-label and GI-study link map for five Finnish-classics drafts; do not treat public listing as physical pack or complete GI/macro review.",
+  "selectionRules": [
+    "Use EAN and full product name including variant; never infer from brand alone.",
+    "Physical package, batch, edible/drained mass and cooking needed for full nutrition evidence.",
+    "Only the researched De Cecco n°12 GI is linked to a same-named product; still needs preparation and time-era review.",
+    "Other product GI matches remain unresolved. A pasta-category mean, lentil-group mean or rye-bread analog is forbidden.",
+    "Where retailer CHO figures conflict, record both and do not publish numeric macros until reconciled."
+  ],
+  "productCandidates": [
+    {
+      "id": "pirkka-puuroriisi-6410405257864",
+      "recipeId": "karjalanpiirakat-riisipuurolla",
+      "position": 6,
+      "product": "Pirkka puuroriisi 1 kg",
+      "ean": "6410405257864",
+      "availableCarbohydratePer100g": 77,
+      "url": "https://www.k-ruoka.fi/kauppa/tuote/pirkka-puuroriisi-1kg-6410405257864",
+      "matchStatus": "PUBLIC_LABEL_PENDING_PHYSICAL_PACKAGE_AND_GI",
+      "notes": "Round-grain pudding rice, grain variety not declared; do not use jasmine/koshihikari GI."
+    },
+    {
+      "id": "dececco-spaghetti-12-8001250120120",
+      "recipeId": "marry-me-kanapasta",
+      "position": 2,
+      "product": "De Cecco Spaghetti n°12",
+      "ean": "8001250120120",
+      "availableCarbohydratePer100g": 69,
+      "url": "https://www.k-ruoka.fi/kauppa/tuote/de-cecco-spaghetti-n-12-500g-8001250120120",
+      "alternateUrl": "https://italianherkut.fi/tuote/spaghetti-12-500gr-de-cecco/",
+      "alternateAvailableCarbohydratePer100g": 72,
+      "cookingMinutesAlDente": 10,
+      "giCandidate": 50,
+      "giSourceUrl": "https://glycemicindex.com/gi-search/",
+      "giTestYear": 2005,
+      "giReference": "Scazzina F et al., Glycemic index and glycemic load of commercial Italian foods. Nutr Metab Cardiovasc Dis. 2016;26(5):419–429.",
+      "matchStatus": "SAME_NAMED_PRODUCT_STUDIED_BUT_BATCH_PREPARATION_AND_PACK_NUTRIENTS_NEED_REVIEW",
+      "notes": "Retailer disagrees on CHO (69 vs 72g/100g) despite same EAN; package label wins, no silent cherry-picking. Measured 2005 product may not match 2026 recipe exactly."
+    },
+    {
+      "id": "royal-tomato-5201194037031",
+      "recipeId": "marry-me-kanapasta",
+      "position": 4,
+      "product": "Royal aurinkokuivattu tomaattisuikale öljyssä 330/200 g",
+      "ean": "5201194037031",
+      "availableCarbohydratePer100g": 16,
+      "url": "https://www.s-kaupat.fi/tuote/royal-330200g-aurinkokuivattu-tomaattisuikale-oljyssa/5201194037031",
+      "matchStatus": "LABEL_BASIS_VS_DRAINED_MASS_NOT_YET_VERIFIED",
+      "notes": "Recipe uses 80g drained. Public nutrient label may refer to food as sold; determine whether drained weight and oil are included."
+    },
+    {
+      "id": "barilla-penne-73-8076802085738",
+      "recipeId": "uunifetapasta-kirsikkatomaateilla",
+      "position": 1,
+      "product": "Barilla Penne Rigate n°73",
+      "ean": "8076802085738",
+      "availableCarbohydratePer100g": 71,
+      "url": "https://www.s-kaupat.fi/tuote/barilla-penne-rigate-no73-durumvehnasta-valmistettu-pasta-500g/8076802085738",
+      "cookingMinutesListed": 11,
+      "giCandidate": 50,
+      "giSourceUrl": "https://glycemicindex.com/gi-search/",
+      "giTestYear": 2006,
+      "matchStatus": "BARILLA_PENNE_GENERIC_STUDY_NOT_EXACT_N73_MODEL_CONFIRMED",
+      "notes": "Study says Barilla Penne durum wheat. Do not treat Penne Rigate n°73 as EXACT without proof of same SKU/shape/manufacturing method."
+    },
+    {
+      "id": "mevgal-feta-5201083349023",
+      "recipeId": "uunifetapasta-kirsikkatomaateilla",
+      "position": 2,
+      "product": "Mevgal aito kreikkalainen feta PDO 200 g, laktoositon",
+      "ean": "5201083349023",
+      "availableCarbohydratePer100g": 0.7,
+      "url": "https://www.k-ruoka.fi/kauppa/tuote/mevgal-aito-kreikkalainen-feta-200g-lakt-5201083349023",
+      "matchStatus": "PUBLIC_LABEL_PENDING_PHYSICAL_PACKAGE",
+      "notes": "Genuine PDO feta (sheep/goat). Use 200g drained edible product; packaging may require weighing after brine removal."
+    },
+    {
+      "id": "valio-raejuusto-6408430043019",
+      "recipeId": "raejuustobagelit-ilman-kohotusta",
+      "position": 1,
+      "product": "Valio raejuusto 2 %",
+      "ean": "6408430043019",
+      "availableCarbohydratePer100g": 1.8,
+      "url": "https://www.valio.fi/tuotteet/valio-raejuusto/",
+      "matchStatus": "MANUFACTURER_LABEL_PENDING_PHYSICAL_PACKAGE",
+      "notes": "Manufacturer nutrition 1.8g available CHO /100g, two 200g or one 400g tub; no drain."
+    },
+    {
+      "id": "coop-lentils-7340191132238",
+      "recipeId": "linssimakaronilaatikko",
+      "position": 2,
+      "product": "Coop vihreät kuivatut linssit 400 g",
+      "ean": "7340191132238",
+      "availableCarbohydratePer100g": 43,
+      "url": "https://www.s-kaupat.fi/tuote/coop-vihreat-linssit-400-g/7340191132238",
+      "matchStatus": "PUBLIC_LABEL_PENDING_PHYSICAL_PACKAGE_AND_GI",
+      "notes": "Green lentils, 43g available carbohydrate/100g dry. Green lentil GI studies with different variety/cooking not automatically EXACT."
+    },
+    {
+      "id": "valio-emmental-6408430031221",
+      "recipeId": "linssimakaronilaatikko",
+      "position": 5,
+      "product": "Valio Emmental punaleima 17 % juusto",
+      "ean": "6408430031221",
+      "availableCarbohydratePer100g": 0,
+      "url": "https://www.valio.fi/tuotteet/valio-emmental-punaleima-17-juusto/",
+      "matchStatus": "MANUFACTURER_LABEL_PENDING_PHYSICAL_PACKAGE",
+      "notes": "17% fat, 33g protein/100g, grated from cheese block; avoid Fineli 27–30% emmental."
+    }
+  ]
+}
