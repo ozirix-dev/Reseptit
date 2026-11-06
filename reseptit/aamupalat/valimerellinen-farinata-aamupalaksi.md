@@ -10,7 +10,7 @@ main_ingredient:
   - "oliivi"
   - "tomaatti"
 cooking_method:
-  - "uuni"
+  - "paistaminen"
 ingredients:
   - amount: 100
     unit: g
