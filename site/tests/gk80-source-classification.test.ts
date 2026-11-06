@@ -30,3 +30,25 @@ test("shared GI category mean notes avoid unrelated ingredient examples", async 
     assert.deepEqual(record, before, "display helper must not mutate the evidence record");
   }
 });
+
+import { buildBlueberryPieVariant } from "../scripts/gk-blueberry-pie";
+import { buildTwoAlmondPieVariants } from "../scripts/gk-two-almond-pies";
+
+test("sealed GK-only variants use safe public GI source notes without touching calculations", () => {
+  const root = path.resolve(import.meta.dirname, "../..");
+  const variants = [buildBlueberryPieVariant(root), ...buildTwoAlmondPieVariants(root)];
+  assert.deepEqual(variants.map((variant) => variant.recipeId).sort(), [
+    "vhh-mustikkapiirakka", "vhh-omenapiirakka", "vhh-raparperipiirakka",
+  ]);
+  for (const variant of variants) {
+    assert.ok(variant.point !== null, `${variant.recipeId} retains approved calculated GK`);
+    const giNotes = variant.sources.filter((source) => source.kind === "PUBLISHED_CODING" || source.kind === "HUMAN_GI")
+      .map((source) => source.note);
+    assert.ok(giNotes.length > 0, `${variant.recipeId} retains GI evidence`);
+    assert.ok(giNotes.some((note) => note.includes("Low-confidence")), `${variant.recipeId} must expose uncertainty`);
+    for (const note of giNotes) {
+      assert.doesNotMatch(note, /cream cheese|tamarind.paste|category mean for peanuts/i,
+        `${variant.recipeId} must not inherit another ingredient's GI label`);
+    }
+  }
+});
