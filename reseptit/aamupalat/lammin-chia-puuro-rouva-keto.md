@@ -16,13 +16,11 @@ carbs_net_per_serving_g: 3.11
 carbs_total_per_serving_g: null
 protein_per_serving_g: 9.05
 fat_per_serving_g: 37.95
-translation_languages: [en, sv, th]
-translation_status: {en: published, sv: published, th: published}
 image:
   src: aamupalat/lammin-chia-puuro-rouva-keto.webp
   alt: "Lämmin suklaa-chia-puuro, digitaalinen ruokakuvitus"
   width: 1536
-  height: 1024
+  height: 864
 ingredients:
   - { amount: 30, unit: g, item: "chiansiemeniä" }
   - { amount: 30, unit: g, item: "kuohukermaa, 38 % rasvaa" }

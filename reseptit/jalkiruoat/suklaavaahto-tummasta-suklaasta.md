@@ -16,13 +16,11 @@ carbs_net_per_serving_g: 3.64
 carbs_total_per_serving_g: null
 protein_per_serving_g: 7.95
 fat_per_serving_g: 18.06
-translation_languages: [en, sv, th]
-translation_status: {en: published, sv: published, th: published}
 image:
   src: jalkiruoat/suklaavaahto-tummasta-suklaasta.webp
   alt: "Kahden aineksen ketosuklaavaahto, digitaalinen ruokakuvitus"
   width: 1536
-  height: 1024
+  height: 864
 ingredients:
   - { amount: 100, unit: g, item: "Lindt Excellence 90 % tummaa suklaata", note: "GTIN 3046920029759; ei sokeriton" }
   - { amount: 59, unit: g, item: "pastöroitua kananmunankeltuaista", note: "vastaa noin kolmen munan keltuaisia, punnitse" }

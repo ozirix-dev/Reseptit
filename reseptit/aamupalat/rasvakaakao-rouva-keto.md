@@ -16,13 +16,11 @@ carbs_net_per_serving_g: 3.69
 carbs_total_per_serving_g: null
 protein_per_serving_g: 3.27
 fat_per_serving_g: 35.38
-translation_languages: [en, sv, th]
-translation_status: {en: published, sv: published, th: published}
 image:
   src: aamupalat/rasvakaakao-rouva-keto.webp
   alt: "Rasvakaakao tummalla suklaalla, digitaalinen ruokakuvitus"
   width: 1536
-  height: 1024
+  height: 864
 ingredients:
   - { amount: 6, unit: g, item: "makeuttamatonta kaakaojauhetta" }
   - { amount: 8, unit: g, item: "voita" }
