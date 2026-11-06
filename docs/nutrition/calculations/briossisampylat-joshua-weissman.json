@@ -1,10 +1,10 @@
 {
   "recipeId": "briossisampylat-joshua-weissman",
-  "sourceHash": "f42794470f02e5b659deae8a4509bda4149d32ff96254ada68c1080be58bbf1e",
+  "sourceHash": "5b126b8a8de915cffaa84400916ed2129efe13c7cb636b8d5119368ecf55ff8e",
   "calculatedAt": "2026-11-06",
   "batchId": "batch-297",
   "servings": 9,
-  "scope": "Nine buns, weighed ingredients; inclusive of full explicitly listed egg wash, sesame topping and butter finish. Raw ingredient nutrition retained; no water or table salt macros. Baking moisture loss does not imply a macro loss. Buns not physically test baked.",
+  "scope": "Nine buns, weighed ingredients; includes the listed egg wash and melted butter finish but no sesame topping. Raw ingredient nutrition retained; water and table salt contribute no macronutrients. Baking moisture loss does not imply macronutrient loss. Buns not physically test-baked.",
   "reviewerStatus": "AUTOMATED ONLY",
   "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
   "ingredients": [
@@ -423,36 +423,6 @@
           "polyols": 0,
           "protein": 12.61,
           "fat": 9.24
-        }
-      },
-      "edibleFraction": 1,
-      "edibleEvidence": "Grams are edible ingredient weights weighed for the recipe.",
-      "retainedFraction": 1,
-      "retentionEvidence": "Ingredient-input nutrition model; all measured edible ingredient nutrients assumed retained in the nine buns."
-    },
-    {
-      "item": "seesaminsiemeniä",
-      "amount": 9,
-      "unit": "g",
-      "state": "sesame seeds",
-      "matchEvidence": "Weighed raw edible ingredient; Fineli/AFCD record for sesame.",
-      "record": {
-        "id": "afcd-F008214-release-3",
-        "name": "Seed, sesame, unsalted",
-        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
-        "retrievedAt": "2026-10-24",
-        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
-        "state": "sesame seeds",
-        "basis": "per100g-as-sold",
-        "carbohydrateDefinition": "EU_AVAILABLE",
-        "polyolsSourceVerified": true,
-        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
-        "per100g": {
-          "carbohydrate": 6.2,
-          "fibre": 10.1,
-          "polyols": 0,
-          "protein": 22.2,
-          "fat": 55.6
         }
       },
       "edibleFraction": 1,
