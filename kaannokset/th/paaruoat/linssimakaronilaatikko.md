@@ -16,6 +16,11 @@ carbs_net_per_serving_g: null
 protein_per_serving_g: null
 fat_per_serving_g: null
 tags: ["draft"]
+image:
+  src: paaruoat/linssimakaronilaatikko.webp
+  alt: "มักกะโรนีอบถั่วเลนทิลเขียวโรยชีสเอ็มเมนทาลละลาย"
+  width: 1600
+  height: 900
 ingredients:
   - amount: 220
     unit: g
@@ -72,3 +77,5 @@ ingredients:
 มีข้าวสาลี (กลูเตน) นมและไข่ ยังไม่มีหลักฐาน GI ที่ตรงของมักกะโรนีและถั่วเลนทิลเขียว จึงยังไม่อนุมัติ GK
 
 **แหล่งข้อมูลความนิยม:** [สูตรใหม่ยอดนิยมปี 2025 ของ K-Ruoka](https://www.k-ruoka.fi/artikkelit/arki/suomen-suosituimmat-reseptit) สูตรมังสวิรัตินี้ Recipavo พัฒนาขึ้นใหม่
+
+- ภาพประกอบนี้สร้างด้วย AI ไม่ใช่ภาพถ่ายจากการทดลองทำอาหารจริงในโครงการนี้

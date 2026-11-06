@@ -16,6 +16,11 @@ carbs_net_per_serving_g: null
 protein_per_serving_g: null
 fat_per_serving_g: null
 tags: ["draft"]
+image:
+  src: leivonnaiset/raejuustobagelit-ilman-kohotusta.webp
+  alt: "ขนมปังวงแหวนคอตเทจชีสสีเหลืองทองหกชิ้นมีรูตรงกลาง"
+  width: 1600
+  height: 900
 ingredients:
   - amount: 400
     unit: g
@@ -53,3 +58,5 @@ ingredients:
 มีแป้งกลูเตน นมและไข่ ต้องชั่งไข่ที่ทาจริงและตรวจเนื้อขนม ยังไม่มี GI ที่ตรงกับขนมอบ จึงยังไม่มี GK
 
 **แรงบันดาลใจ:** [ขนมอบคาวยอดนิยมปี 2025 ของ Kotona](https://www.meillakotona.fi/artikkelit/vuoden-2025-suosituimmat-suolaiset-leivonnaiset) สูตรนี้ชั่งส่วนผสมใหม่และใช้ผงฟู ไม่ใช้ยีสต์
+
+- ภาพประกอบนี้สร้างด้วย AI ไม่ใช่ภาพถ่ายจากการทดลองทำอาหารจริงในโครงการนี้

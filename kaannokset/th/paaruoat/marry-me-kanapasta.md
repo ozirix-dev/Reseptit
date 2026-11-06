@@ -16,6 +16,11 @@ carbs_net_per_serving_g: null
 protein_per_serving_g: null
 fat_per_serving_g: null
 tags: ["draft"]
+image:
+  src: paaruoat/marry-me-kanapasta.webp
+  alt: "สปาเกตตีไก่ซอสครีมกับมะเขือเทศแห้งและพาร์เมซาน"
+  width: 1600
+  height: 900
 ingredients:
   - amount: 600
     unit: g
@@ -74,3 +79,5 @@ ingredients:
 มีข้าวสาลี (กลูเตน) และนม ข้อมูลคาร์โบไฮเดรตของสปาเกตตีจากร้านค้าขัดแย้งกัน 69 และ 72 กรัมต่อ 100 กรัม ต้องตรวจฉลากจริง ค่า GI 50 ยังเป็นข้อมูลรอตรวจสอบ ไม่ใช่ GK ที่อนุมัติ
 
 **แหล่งข้อมูลความนิยม:** [สูตรยอดนิยมปี 2025 ของ K-Ruoka](https://www.k-ruoka.fi/artikkelit/arki/suomen-suosituimmat-reseptit) สูตร Recipavo นี้เขียนและกำหนดปริมาณขึ้นใหม่ ไม่คัดลอกวิธีทำของผู้เผยแพร่รายอื่น
+
+- ภาพประกอบนี้สร้างด้วย AI ไม่ใช่ภาพถ่ายจากการทดลองทำอาหารจริงในโครงการนี้

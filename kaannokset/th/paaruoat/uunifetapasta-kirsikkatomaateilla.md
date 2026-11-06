@@ -16,6 +16,11 @@ carbs_net_per_serving_g: null
 protein_per_serving_g: null
 fat_per_serving_g: null
 tags: ["draft"]
+image:
+  src: paaruoat/uunifetapasta-kirsikkatomaateilla.webp
+  alt: "เพนเนเฟตาชีสอบกับมะเขือเทศเชอร์รีและใบเบซิลสด"
+  width: 1600
+  height: 900
 ingredients:
   - amount: 240
     unit: g
@@ -65,3 +70,5 @@ ingredients:
 ต้นฉบับโดย Jenni Häyrinen: https://liemessa.fi/2019/02/uunifetapasta/ มีข้าวสาลี (กลูเตน) และนม ยังไม่ได้ยืนยัน GI ของเพนเนรุ่นนี้ จึงยังไม่อนุมัติ GK
 
 **เจ้าของแนวคิดต้นฉบับ:** [Jenni Häyrinen, Liemessä (2019)](https://liemessa.fi/2019/02/uunifetapasta/) Recipavo ไม่ใช่ผู้คิดค้นพาสต้าเฟตาอบ
+
+- ภาพประกอบนี้สร้างด้วย AI ไม่ใช่ภาพถ่ายจากการทดลองทำอาหารจริงในโครงการนี้

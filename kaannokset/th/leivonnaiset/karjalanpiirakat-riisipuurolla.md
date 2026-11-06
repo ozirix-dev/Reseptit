@@ -16,6 +16,11 @@ carbs_net_per_serving_g: null
 protein_per_serving_g: null
 fat_per_serving_g: null
 tags: ["draft"]
+image:
+  src: leivonnaiset/karjalanpiirakat-riisipuurolla.webp
+  alt: "พายคาเรเลียนไส้ข้าวสีอ่อน มีขอบแป้งไรย์บางจับจีบ"
+  width: 1600
+  height: 900
 ingredients:
   - amount: 180
     unit: g
@@ -71,3 +76,5 @@ ingredients:
 ต้องตรวจสอบข้อกำหนดชื่ออาหารดั้งเดิม ยังไม่มีหลักฐาน GI ที่ตรงสำหรับข้าวและเปลือกไรย์อบ จึงยังไม่อนุมัติ GK มีแป้งกลูเตนและนม
 
 **แหล่งข้อมูลอาหารดั้งเดิม:** [สำนักงานความปลอดภัยอาหารฟินแลนด์](https://www.ruokavirasto.fi/yritykset/oppaat/nimisuojattujen-elintarvikkeiden-valvontaohje/nimisuojattujen-elintarvikkeiden-valvontaohje/) และ [วิธีทำของ Martat](https://www.martat.fi/reseptit/karjalanpiirakat/).
+
+- ภาพประกอบนี้สร้างด้วย AI ไม่ใช่ภาพถ่ายจากการทดลองทำอาหารจริงในโครงการนี้
