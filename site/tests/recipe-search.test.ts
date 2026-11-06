@@ -108,6 +108,13 @@ test("category and diet filters use structured recipe fields and combine with AN
   assert.ok(combined.every((recipe) => recipe.category === "paaruoka" && recipe.dietClass !== null));
 });
 
+test("valipala category survives URL filtering and combines with diet", () => {
+  const sample = { ...finnishRecipes[0], category: "valipala" as const, dietClass: "keto" as const };
+  const filters = parseRecipeFilters("?category=valipala&diet=keto", ["all", "valipala", "paaruoka"]);
+  assert.equal(recipeFiltersToSearch(filters), "?category=valipala&diet=keto");
+  assert.deepEqual(filterRecipes([sample, finnishRecipes[0]], filters, "fi").map(item => item.recipeId), [sample.recipeId]);
+});
+
 test("URL filters normalize whitespace and reject unknown categories and diet values", () => {
   const parsed = parseRecipeFilters("?q=%20lohi++kerma%20&category=unknown&diet=invalid", ["all", "paaruoka"]);
   assert.deepEqual(parsed, { query: "lohi kerma", category: "all", diet: "all" });
