@@ -91,7 +91,7 @@ export async function verifyFinnishClassicsReview() {
     const raw = await readFile(path.join(root, photo.originalFile));
     assert(raw.length > 60_000, photo.recipe_id + ": JPEG is unexpectedly small");
     assert(raw[0] === 0xff && raw[1] === 0xd8, photo.recipe_id + ": invalid JPEG magic");
-    const imageGitSha = createHash("sha1").update("blob " + raw.length + "\\0").update(raw).digest("hex");
+    const imageGitSha = createHash("sha1").update("blob " + raw.length + "\0").update(raw).digest("hex");
     assert.equal(imageGitSha, photo.sourceGitBlobSha, photo.recipe_id + ": photo no longer matches reviewed Git blob");
   }
   return { recipes: 5, ingredients: count, productBindings: bindings, stagedJPEGs: 5 };
