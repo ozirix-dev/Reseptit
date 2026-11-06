@@ -1,8 +1,8 @@
 # Recipavo Keittiöapuri — Cloudflare + AI, vaiheistettu arkkitehtuurisuunnitelma V1
 
-**Päiväys:** 6.11.2026  
-**Tila:** suunnittelu-PR / Draft; ei AI-kutsuja, käyttäjärajapintaa, palvelinrajapintaa, tilinkytkentää eikä tuotantojulkaisua.  
-**Omistaja:** Reseptit / Recipavo. **Kohde:** tuleva https://www.recipavo.com/.  
+**Päiväys:** 6.11.2026
+**Tila:** suunnittelu-PR / Draft; ei AI-kutsuja, käyttäjärajapintaa, palvelinrajapintaa, tilinkytkentää eikä tuotantojulkaisua.
+**Omistaja:** Reseptit / Recipavo. **Kohde:** tuleva https://www.recipavo.com/.
 **Periaate:** julkaistut reseptisivut, reseptikortit ja linkit toimivat edelleen ilman Keittiöapuria, JavaScriptiä tai kirjautumista; hakusuodattimet tarvitsevat nykyiseen tapaan JavaScriptin.
 
 ## 1. Päätösesitys
@@ -159,3 +159,15 @@ Cloudflare Workers Paid perusmaksu on **$5/kk tilikohtaisesti** ja voi olla jo n
 5. Valitaanko A4:n vertailun jälkeen AI-palvelu todellisella FI/EN/SV/TH-laatu- ja kustannusnäytöllä?
 
 **Ei yhdistämistä tuotantojulkaisuluvaksi:** tämän dokumentin merge mainiin saa julkaista vain dokumentaation nykyisen GitHub Pagesin tavallisen putken kautta; ei anna oikeutta avata AI:ta, laskutusta, Cloudflare-rajapintaa eikä Recipavo-domainia.
+
+## Toteutustilanne 6.11.2026 (A1–A3)
+
+Alkuperäinen dokumentti on *suunnittelun lähtötilanne*. Sen A0–A6-vaiheistus säilyy, mutta seuraavat toiminnalliset osat on nyt toteutettu erillisinä, CI:ssä tarkistettuina PR:inä:
+
+- **A1** [PR #324](https://github.com/ozirix-dev/Reseptit/pull/324) MERGED: julkaistujen reseptien kielikohtaiset SHA-256-indeksit ja yhteinen hakufunktio.
+- **A2** [PR #336](https://github.com/ozirix-dev/Reseptit/pull/336) MERGED: nelikielinen, selaimen sisäinen testinäkymä ilman AI-kutsuja; tämä **ei** ole tuotannon näkyvä chat.
+- **A3** [PR #338](https://github.com/ozirix-dev/Reseptit/pull/338) MERGED: Worker-mock ja offline-testit; `ASSISTANT_MOCK_ENABLED=false` eikä Cloudflare-domainin reittejä ole aktivoitu.
+
+**A4–A6 ovat edelleen tekemättä.** Vaikka mock-API-koodi on mainissa, sen live-API, todellinen kustannusrajoitus, Turnstile, yksityisyysportit, mallikutsut ja julkaisuvaltuutus eivät ole valmiit. LLM-mallin valinta tehdään vasta oikealla nelikielisellä laatutestillä ja erillisellä budjettipäätöksellä. A3:n mock ei ole hyväksyntä avata maksullista API:a.
+
+**Kustannuslähteiden tarkistus 6.11.2026:** OpenAI GPT-5.4 mini -vertailu $0.75 / 1M input ja $4.50 / 1M output sekä Cloudflare Llama-3.1-8B-fp8-fast $0.045 / 1M input ja $0.384 / 1M output vastaavat tuottajien julkisia hintoja tarkistuspäivänä. Hinnat ja tuotteen saatavuus tarkistetaan uudelleen ennen A4:ää. Vertailu ei ole mallin valintapäätös.
