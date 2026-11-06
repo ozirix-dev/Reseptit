@@ -55,6 +55,9 @@ jobs:
       - name: Verify changed-path selector
         run: node site/scripts/select-ci-checks.test.mjs
 
+      - name: Verify browser-suite allowlist
+        run: node --test site/scripts/run-browser-suites.test.mjs
+
       - name: Select risk-based checks
         id: select
         env:
@@ -190,12 +193,13 @@ jobs:
         run: npm run test:static
         working-directory: site
 
-      - name: Run browser checks for UI changes
+      - name: Run focused Playwright browser suites
         if: steps.select.outputs.run_browser == 'true'
-        run: npm run test:browser
+        run: node scripts/run-browser-suites.mjs
         working-directory: site
         env:
           PLAYWRIGHT_BROWSER_CHANNEL: chrome
+          BROWSER_SUITES: ${{ steps.select.outputs.browser_suites }}
 
       - uses: actions/configure-pages@v6
         if: steps.select.outputs.publish == 'true'
