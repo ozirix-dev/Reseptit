@@ -9,7 +9,7 @@ import { createServer } from "vite";
 import { siteContent } from "../src/generated/content.generated";
 import { glycemicLoadMeta, recipeUi } from "../src/features/recipes/recipe-i18n";
 import { recipeJsonLd } from "../src/features/recipes/schema";
-import { blogIndexPath, blogIndexTitle, blogIndexDescription, blogPosts, blogPostForRoute, blogRoutes, blogJsonLd } from "../src/features/blog/blog-data";
+import { blogIndexPath, blogIndexTitle, blogIndexDescription, blogPostForRoute, blogRoutes, blogJsonLd } from "../src/features/blog/blog-data";
 import type { RecipeLocale } from "../src/types/content";
 
 const siteDir = path.resolve(import.meta.dirname, "..");
