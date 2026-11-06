@@ -80,7 +80,7 @@ export async function verifyFinnishClassicsReview() {
     }
   }
   assert.equal(count, 47, "expected exactly 47 ingredient rows");
-  assert.equal(bindings, 8, "expected eight product bindings");
+  assert.equal(bindings, 9, "expected nine product bindings after Myllyn Paras macaroni verification");
 
   const photos = JSON.parse(await read("docs/review/suomalaiset-klassikot-v4-kuvabriefit.json"));
   assert.equal(photos.recipes.length, 5, "expected five illustrated recipes");

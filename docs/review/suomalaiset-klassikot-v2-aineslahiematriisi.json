@@ -503,7 +503,7 @@
     },
     {
       "recipeId": "raejuustobagelit-ilman-kohotusta",
-      "recipeBlobSha": "c1e1dc30725b23a048bff441e9cff7fb3ab0dbae",
+      "recipeBlobSha": "54a32bff718923fc3781b116f093e06c8b93879a",
       "servings": 6,
       "ingredients": [
         {
@@ -585,12 +585,12 @@
     },
     {
       "recipeId": "linssimakaronilaatikko",
-      "recipeBlobSha": "86822f9d2edb967586f33bc21b8a3c7507a00f7d",
+      "recipeBlobSha": "f1a2d31af75be0708124a98ffff74a571fc3f824",
       "servings": 6,
       "ingredients": [
         {
           "position": 1,
-          "item": "durumvehnämakaronia, kuivapaino",
+          "item": "Myllyn Paras Makaroni -sarvimakaronia, kuivapaino",
           "amount_g": 220,
           "nutritionRecordCandidate": "fineli-117-2026-10-24",
           "recordName": "MAKARONI, PASTA",
@@ -598,9 +598,14 @@
           "sourceLicence": "THL, Fineli Rel20, CC BY 4.0",
           "availableCarbPer100g": 66.4,
           "status": "PRODUCT_EXACT_MATCH_MISSING",
-          "giEvidenceStatus": "NOT_REVIEWED_DO_NOT_INFER_FROM_RECORD",
+          "giEvidenceStatus": "EXACT_PRODUCT_GI_UNAVAILABLE",
           "matchType": "PRODUCT_EXACT_MATCH_MISSING",
-          "publishableNutrients": false
+          "publishableNutrients": false,
+          "publicProductCandidateId": "myllyn-paras-makaroni-6417700050725",
+          "publicProductEAN": "6417700050725",
+          "publicProductCarbohydratePer100g": 68,
+          "publicProductSource": "https://www.myllynparas.fi/tuotteet/makaroni-400-g",
+          "publicProductStatus": "MANUFACTURER_AND_RETAILER_PRODUCT_ID_CONFIRMED_GI_NOT_MATCHED_PACKAGE_2026_PENDING"
         },
         {
           "position": 2,

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "createdAt": "2026-11-06",
-  "status": "PUBLIC_LABEL_CANDIDATES_FURTHER_RESEARCHED_UNAPPROVED",
+  "status": "NINE_PRODUCT_CANDIDATES_NO_APPROVED_GI_OR_RECIPE_MACROS",
   "purpose": "Public product-label and GI-study link map for five Finnish-classics drafts; do not treat public listing as physical pack or complete GI/macro review.",
   "selectionRules": [
     "Use EAN and full product name including variant; never infer from brand alone.",
@@ -105,7 +105,9 @@
       "availableCarbohydratePer100g": 1.8,
       "url": "https://www.valio.fi/tuotteet/valio-raejuusto/",
       "matchStatus": "MANUFACTURER_LABEL_PENDING_PHYSICAL_PACKAGE",
-      "notes": "Manufacturer nutrition 1.8g available CHO /100g, two 200g or one 400g tub; no drain."
+      "notes": "Exact EAN identifies the Valio raejuusto 200 g tub (2% fat, 1.8g available CHO/100g). Use two 200g tubs for the weighed 400g recipe, or separately verify EAN on a 400g pack. No draining. Physical package still required.",
+      "packageSize_g": 200,
+      "packsFor400gRecipe": 2
     },
     {
       "id": "coop-lentils-7340191132238",
@@ -128,6 +130,26 @@
       "url": "https://www.valio.fi/tuotteet/valio-emmental-punaleima-17-juusto/",
       "matchStatus": "MANUFACTURER_LABEL_PENDING_PHYSICAL_PACKAGE",
       "notes": "17% fat, 33g protein/100g, grated from cheese block; avoid Fineli 27–30% emmental."
+    },
+    {
+      "id": "myllyn-paras-makaroni-6417700050725",
+      "recipeId": "linssimakaronilaatikko",
+      "position": 1,
+      "product": "Myllyn Paras Makaroni 400 g – sarvimakaroni, vehnä- ja durumvehnäjauho",
+      "ean": "6417700050725",
+      "availableCarbohydratePer100g": 68,
+      "availableProteinPer100g": 13,
+      "fatPer100g": 1.7,
+      "fibrePer100g": 4,
+      "cookingMinutesListed": 8,
+      "sourceType": "MANUFACTURER_AND_RETAILER_LABEL",
+      "url": "https://www.myllynparas.fi/tuotteet/makaroni-400-g",
+      "corroboratingUrls": [
+        "https://www.s-kaupat.fi/tuote/myllyn-paras-makaroni-400g/6417700050725",
+        "https://www.metrotukku.fi/fi/EUR/tuotteet/kuivatuotteet-ja-napostelu/myllyn-paras-makaroni-400g/6417700050725"
+      ],
+      "matchStatus": "MANUFACTURER_AND_RETAILER_PRODUCT_ID_CONFIRMED_GI_NOT_MATCHED_PACKAGE_2026_PENDING",
+      "notes": "Real elbow pasta, mix of wheat and durum wheat flours. Manufacturer advises shorter than 8 minutes for casseroles. 5–6 minutes chosen provisionally, requires real test. No exact measured GI."
     }
   ]
 }
