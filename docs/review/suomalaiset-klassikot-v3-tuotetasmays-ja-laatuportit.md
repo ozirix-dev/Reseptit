@@ -57,3 +57,8 @@ EU-pakkausmerkinnän hiilihydraateista **ei vähennetä kuitua toistamiseen**. T
 - Royal aurinkokuivattu tomaatti: https://www.s-kaupat.fi/tuote/royal-330200g-aurinkokuivattu-tomaattisuikale-oljyssa/5201194037031
 
 **Päätös:** viisi luonnosta pysyvät DRAFT-tilassa. Tämä V3 on tuote- ja GI-näytön valmistelua, ei julkaisu eikä GK-PASS.
+
+## V6-päivitys (7.11.2026)
+
+- Yhdeksäs tuotekandidaatti on Myllyn Paras Makaroni EAN 6417700050725 (68 g CHO/100 g; valmistaja + S-kaupat). Se on vehnä- ja durumvehnäjauhoista tehty sarvimakaroni, ei pelkkä durumtuote. Täsmä-GI puuttuu. Katso [V6-katselmointi](suomalaiset-klassikot-v6-kaksi-reseptia-2026-11-07.md).
+- Valion raejuuston EAN 6408430043019 koskee **200 g rasiaa**; 400 g reseptiin tarvitaan kaksi rasiaa tai erikseen tarkistettu 400 g pakkaus.

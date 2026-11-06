@@ -75,3 +75,9 @@ Kirjaa jokaisen koeversion valmistuspäivä, tekijä, laite/uunin todellinen lä
 - Ruokaviraston Karjalanpiirakka APT -eritelmä: https://www.ruokavirasto.fi/yritykset/oppaat/nimisuojattujen-elintarvikkeiden-valvontaohje/nimisuojattujen-elintarvikkeiden-valvontaohje/
 - GI-tutkimus pastan muodon ja kypsennyksen eroista: https://pubmed.ncbi.nlm.nih.gov/3743316/
 - Recipavon GI-lähdekatselmointi: [GI-haun muistio](suomalaiset-klassikot-gi-lahdehaku-2026-11-06.md).
+
+## V6-täydennys (7.11.2026)
+
+- Raejuustobageleille tehtiin 20 min aloitustarkistuksen sisältävä paisto-ohje, mutta Valion ja muiden 4 pikkubagelin vertailuohjeiden 15 min paisto **ei vahvista** meidän 6 isomman rinkelin 25–30 min paistoaikaa. Rehellinen koepaistotarve säilyy.
+- Linssilaatikossa on nyt Myllyn Paras Makaroni EAN 6417700050725 (68 g CHO / 100 g, normaali keitto n. 8 min; laatikkoon 5–6 min esikeitto kokeiltavaksi). Coop-linssien täysi keitto 15–20 min, esikeitto 12–15 min ennen 190 °C uunia. Tarkasta valmiin ruoan kypsyys.
+- Tarkat päätösehdot: [V6-katselmointi](suomalaiset-klassikot-v6-kaksi-reseptia-2026-11-07.md). GK kaikilla edelleen HOLD.

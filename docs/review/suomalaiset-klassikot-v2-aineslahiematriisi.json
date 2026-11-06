@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "phase": "Finnish classics phase 4 WebP-bound draft consistency 2026-11-06",
+  "phase": "Finnish classics phase 6 two remaining recipes reviewed 2026-11-07",
   "state": "CANDIDATE_ONLY_NO_GK_OR_MACRO_APPROVAL",
   "foodRecords": {
     "path": "docs/nutrition/food-records.json",
@@ -14,7 +14,9 @@
     "Rye and wheat flour in Karelian pies require specific flour grade verification, despite food-level nutrition records being available.",
     "The SHA and item names were re-synced to five changed ingredient lists; product labels are proposals only, not accepted nutrient binding.",
     "De Cecco spaghetti n12 conflicting same-EAN public carbohydrate labels (69/72 g per 100 g) prevent publication until physical label reconciliation.",
-    "Photos and draft translation statuses were added to FI sources; updated recipeBlobSha values preserve exact evidence binding. Images do not imply real test cooking or macro/GK approval."
+    "Photos and draft translation statuses were added to FI sources; updated recipeBlobSha values preserve exact evidence binding. Images do not imply real test cooking or macro/GK approval.",
+    "Myllyn Paras macaroni EAN6417700050725 source is manufacturer nutrition 68g EU CHO/100g, not verified specific-lot composition or measured GI; product name/shape now match the draft. Coop lentils label full boiling time is 15–20 min, but pre-bake 12–15 min requires real test.",
+    "Valio cottage-cheese bagel uses a no-rise baking-powder dough. Its larger six-ring batch is not validated by the smaller published four-ring recipes. Physical test and retained egg-glaze measurement pending."
   ],
   "recipes": [
     {
@@ -503,7 +505,7 @@
     },
     {
       "recipeId": "raejuustobagelit-ilman-kohotusta",
-      "recipeBlobSha": "54a32bff718923fc3781b116f093e06c8b93879a",
+      "recipeBlobSha": "a3201d6e670f48439de082ed96cd577b858a1b05",
       "servings": 6,
       "ingredients": [
         {
