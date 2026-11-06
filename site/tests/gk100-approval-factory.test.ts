@@ -12,7 +12,7 @@ import { parsePointReviewVariant, type PointReviewCandidate } from '../scripts/g
 import { textHash } from '../scripts/gk149-model';
 import { applyDecisions, checkBatch, checkMixedReviewBatch, prepareRelease, type Batch, type Classification, type Decisions } from '../scripts/gk100-approval-factory';
 import { makeReleaseBundle, verifyReleaseBundle } from '../scripts/gk100-approval-release';
-import { recipeTextForApprovedSnapshot } from '../scripts/approved-recipe-note-edits';
+import { historicalFarinataForApprovedPanVersion } from '../scripts/gk100-farinata-sealed-source';
 
 const base = '1'.repeat(40);
 const original = 'original recipe';
@@ -614,7 +614,7 @@ test('reviewed farinata correction preserves its sealed pan variant and fails cl
   assert.notEqual(corrected, historical);
   assert.equal(textHash(historical), '1b15fd29f9d833b84289c2d1345e27a0110c4bda7044ed6939d581ede947d237');
   assert.equal(textHash(corrected), '1f065d830bd5f4018b69d2298cb4ef9a5286903866d85538aa5d4f3d66a5e90d');
-  assert.equal(recipeTextForApprovedSnapshot(recipePath, corrected), historical);
+  assert.equal(historicalFarinataForApprovedPanVersion(recipePath, corrected), historical);
 
   const { bundle, authorization } = JSON.parse(readRepo('docs/nutrition/gk100-approved-releases/eighteen.json'));
   const sealedRead = (file: string) => file === recipePath ? corrected : readRepo(file);
@@ -630,6 +630,6 @@ test('reviewed farinata correction preserves its sealed pan variant and fails cl
   assert.throws(() => verifyReleaseBundle(bundle, authorization,
     file => file === recipePath ? corrected + ' Unreviewed cooking modification' : readRepo(file)),
   /GK100_RELEASE_CANDIDATE_CHANGED/);
-  assert.equal(recipeTextForApprovedSnapshot(recipePath, corrected + ' Unreviewed cooking modification'),
+  assert.equal(historicalFarinataForApprovedPanVersion(recipePath, corrected + ' Unreviewed cooking modification'),
     corrected + ' Unreviewed cooking modification');
 });
