@@ -438,6 +438,9 @@ test("responsive image metadata reaches every route, SEO and matching preloads",
     const payloadText = await readFile(path.join(dist, "data", filename), "utf8");
     assert.equal(filename, `${createHash("sha256").update(payloadText).digest("hex").slice(0, 20)}.json`);
     const payload = JSON.parse(payloadText);
+    // Blog SVG illustrations are deliberately not recipe WebP/srcset variants.
+    // Their count, paths, alt text and BlogPosting metadata are tested in blog.test.ts.
+    if (route.startsWith("/ruokaopas/")) continue;
     const expected = recipe ? [recipe] : payload.recipes;
     assert.equal(imgs.length, expected.filter((r: {image: unknown}) => r.image).length);
     for (const r of expected) {
