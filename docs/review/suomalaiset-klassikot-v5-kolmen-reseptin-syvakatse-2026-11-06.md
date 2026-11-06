@@ -33,4 +33,4 @@ Lähde: [EU:n vuoden 2019 APT-muutosasiakirja](https://eur-lex.europa.eu/legal-c
 | Marry me -kanapasta | tuote- ja allergeenitiedot täsmennetty | 69 g/100g on vahva näyttöehdokas; valmistus/valutus/tuote-GI avoin | **HOLD, DRAFT** |
 | Uunifetapasta | täsmäpasta ja feta yksilöity | GI-täsmäys, valutettu massa ja lopullinen ravintolaskelma puuttuvat | **HOLD, DRAFT** |
 
-**Ei täyden ravintoarvon laskentatietueita, numeerista GK:ta, uutta julkaisua, READY-merkintää eikä ihmishyväksynnän väitettä.** 
+**Ei täyden ravintoarvon laskentatietueita, numeerista GK:ta, uutta julkaisua, READY-merkintää eikä ihmishyväksynnän väitettä.**
