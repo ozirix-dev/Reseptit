@@ -1,6 +1,6 @@
 # Suomalaiset suosikit – viiden reseptikuvan katselmointigalleria
 
-Päiväys 6.11.2026. PR #311, **DRAFT**. Kuvat ovat AI-generoituja ruokakuvia, eivät valokuvia tässä projektissa tehdystä koepaistosta. Tässä käytetään PR-haaraan talletettuja **JPEG-lähdekuvia** (2016 × 1152). Ne eivät vielä ole julkaisuputken WebP-kuvia.
+Päiväys 6.11.2026. PR #311, **DRAFT**. Kuvat ovat AI-generoituja ruokakuvia, eivät valokuvia tässä projektissa tehdystä koepaistosta. Tässä käytetään PR-haaraan talletettuja **JPEG-lähdekuvia** (2016 × 1152). Näistä lähteistä on nyt tehty viisi 1600 × 900 WebP-pääkuvaa, jotka sijaitsevat `kuvat/`-hakemistossa ja on kytketty vain Draft-resepteihin; yhtäkään ei ole julkaistu.
 
 ## 1. Karjalanpiirakat – punnittu perinneresepti
 
@@ -35,7 +35,17 @@ Päiväys 6.11.2026. PR #311, **DRAFT**. Kuvat ovat AI-generoituja ruokakuvia, e
 ## Hyväksyntärajat ja WebP-jatko
 
 - **Kuvat:** 5/5 JPEG lähdekuvaa GitHubissa. Vain alustava AI-avusteinen sisällöllinen tarkistus, ei vielä lopullinen omistajan kuvahyväksyntä.
-- **WebP:** 0/5 tuotanto-WebP:tä. Suorita repon juuressa `node docs/review/convert-finnish-classics-webp.mjs` (kun `site`-riippuvuudet on asennettu). Muunnos säilyttää yhden kanonisen kuvan per resepti ja tuottaa 1600 × 900 -WebP:t nykyisiin kansioihin. Tarkista tulokset kuvakohtaisesti ennen kytkentää.
+- **WebP:** 5/5 pääkuvaa GitHubin `kuvat/leivonnaiset/` ja `kuvat/paaruoat/` -kansioissa, kooltaan 1600 × 900. Kaikki 20 Draft-kieliversiota osoittavat oikeaan WebP-kuvaan. Komento `node docs/review/convert-finnish-classics-webp.mjs` säilyy lähdekuvista tehtävän muunnoksen toistamiseen. Lopullinen kuvien omistajahyväksyntä ja julkaisu ovat avoimia.
 - **SEO:** 1600 × 900 (16:9) sopii tulevaksi pääkuvaksi. Muut 4:3 ja 1:1 lähdekuvat ovat erillinen vasta suunniteltu vaihe; niitä ei ilmoiteta rakenteisessa datassa, ennen kuin oikeat tiedostot ja skeemat ovat käytössä.
 - **Lähteet:** AI-generointi on ilmoitettava johdonmukaisesti sivuston kuvaperiaatteen mukaisesti. Kuvia ei saa esittää fyysisen valmistuskokeen dokumentaationa.
 - **Julkaisu:** reseptit ja 15 käännöstä ovat `draft`, GK/makrot ratkaisematta. Tässä galleria ei avaa julkaisuporttia.
+
+## Valmiit WebP-tiedostot PR-haarassa
+
+- [Karjalanpiirakat](../../kuvat/leivonnaiset/karjalanpiirakat-riisipuurolla.webp)
+- [Marry me -kanapasta](../../kuvat/paaruoat/marry-me-kanapasta.webp)
+- [Uunifetapasta](../../kuvat/paaruoat/uunifetapasta-kirsikkatomaateilla.webp)
+- [Raejuustobagelit](../../kuvat/leivonnaiset/raejuustobagelit-ilman-kohotusta.webp)
+- [Linssimakaronilaatikko](../../kuvat/paaruoat/linssimakaronilaatikko.webp)
+
+Jokainen kuva on AI-generoitu havainnekuva. Kuvat eivät korvaa reseptien fyysistä testausvelvoitetta eikä julkaisematon PR ole tuotantovarmistus.
