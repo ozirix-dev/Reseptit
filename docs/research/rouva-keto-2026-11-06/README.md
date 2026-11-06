@@ -1,8 +1,8 @@
 # Rouva Keto – julkisten reseptien lähdekartoitus ja ensimmäiset neljä ehdokasta
 
-**Päivä:** 2026-11-06  
-**Tila:** KATSELMOINTI / RESEARCH_ONLY, ei mergeä, ei deployta  
-**Kohde:** Recipavo / `ozirix-dev/Reseptit`  
+**Päivä:** 2026-11-06
+**Tila:** KATSELMOINTI / RESEARCH_ONLY, ei mergeä, ei deployta
+**Kohde:** Recipavo / `ozirix-dev/Reseptit`
 **Rinnakkaiset työt:** blogi-PR #303, hero-PR #301 ja sämpylä-PR #302; tämän erän tiedostot eivät koske niiden navigaatiota, heroa tai tuotantoreseptejä.
 
 ## Rajaus ja lähdeluokat
