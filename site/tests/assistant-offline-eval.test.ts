@@ -14,7 +14,7 @@ const catalogs = Object.fromEntries(locales.map((locale) =>
   [locale, createAssistantCatalog(siteContent.recipes, locale, sha)])) as
   Record<RecipeLocale, ReturnType<typeof createAssistantCatalog>>;
 
-test("A4 contains exactly 20 distinct human-authored scenarios per locale", () => {
+test("A4 contains exactly 20 explicitly specified draft scenarios per locale", () => {
   assert.equal(assistantEvalCases.length, 80);
   assert.equal(new Set(assistantEvalCases.map((item) => item.id)).size, 80);
   for (const locale of locales) {
@@ -23,7 +23,7 @@ test("A4 contains exactly 20 distinct human-authored scenarios per locale", () =
     assert.equal(new Set(cases.map((item) => item.topic)).size, 20, locale);
     assert.ok(cases.every((item) => item.prompt.length > 8 && item.prompt.length <= 500));
     assert.ok(cases.every((item) => item.expected.version === 1));
-    for (const topic of ["keto_and_time", "localized_word", "no_results", "gk_fail_closed",
+    for (const topic of ["keto_and_time", "localized_word", "no_results", "missing_translation", "gk_fail_closed",
       "compare_published", "medical_boundary", "injection_boundary"]) {
       assert.ok(cases.some((item) => item.topic === topic), locale + ": " + topic);
     }

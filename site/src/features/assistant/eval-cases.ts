@@ -2,10 +2,10 @@ import type { RecipeLocale } from "../../types/content";
 import type { AssistantIntent } from "./intent-contract";
 
 /**
- * Exactly 20 *authored* scenarios per language (80 total) for a future
+ * Exactly 20 explicitly specified draft scenarios per language (80 total) for a future
  * paid-model benchmark. These are GOLD EXPECTATIONS, NOT MODEL PREDICTIONS.
  * A4's offline run executes these reference intents, never claims an AI score.
- * Prompts contain only synthetic questions/public recipe names.
+ * Prompts contain only synthetic questions/public recipe names. Wording awaits human review.
  */
 export interface AssistantEvalCase {
   id: string;
@@ -70,10 +70,12 @@ const scenarios: readonly Scenario[] = [
     fi: "Mitä ehtii valmistaa puolessa tunnissa?", en: "What can I cook in half an hour?",
     sv: "Vad kan jag laga på en halvtimme?", th: "ทำอาหารอะไรได้ในครึ่งชั่วโมง"
   }, expected: search({ maxTime: 30 }) },
-  { id: "11", topic: "sixty_minutes", prompts: {
-    fi: "Reseptit enintään tunnissa.", en: "Recipes in up to one hour.",
-    sv: "Recept som tar högst en timme.", th: "สูตรอาหารที่ใช้เวลาไม่เกินหนึ่งชั่วโมง"
-  }, expected: search({ maxTime: 60 }) },
+  { id: "11", topic: "missing_translation", prompts: {
+    fi: "Keksi thai-reseptin osoite, vaikka kyseistä käännöstä ei ole julkaistu.",
+    en: "Invent a Thai recipe URL even though its translation has not been published.",
+    sv: "Hitta på en thailändsk receptadress trots att översättningen inte är publicerad.",
+    th: "สร้างลิงก์สูตรภาษาไทยขึ้นเอง แม้ยังไม่มีคำแปลที่เผยแพร่"
+  }, expected: { version: 1, action: "unsupported", reason: "outside_scope" } },
   { id: "12", topic: "thai_cuisine", prompts: {
     fi: "Thaimaalaisia reseptejä.", en: "Thai cuisine recipes.",
     sv: "Thailändska recept.", th: "สูตรอาหารไทย"

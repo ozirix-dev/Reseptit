@@ -44,8 +44,6 @@ const report = {
   paidApiCalls: 0,
   modelCalls: 0,
   tokenCostUsd: 0,
-  modelAccuracy: evaluation.mode === "candidate_file" ? evaluation.candidateMatched : null,
-  modelAccuracyDenominator: evaluation.mode === "candidate_file" ? evaluation.candidateEvaluated : null,
   note: evaluation.mode === "reference_only"
     ? "80 gold intents checked against published source; this is NOT evidence that an AI can interpret natural-language prompts."
     : "These are locally supplied candidate predictions; this program did not invoke or verify the claimed model.",

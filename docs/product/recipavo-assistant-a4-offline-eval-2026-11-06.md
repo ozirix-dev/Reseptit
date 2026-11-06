@@ -6,7 +6,7 @@ Edeltävät: [A0 #320](https://github.com/ozirix-dev/Reseptit/pull/320), [A1 #32
 
 ## Toteutus
 
-A4:n **80 käsin kirjoitettua testikysymystä** muodostavat neljä 20 kysymyksen ryhmää (fi/en/sv/th). Jokaisella tapauksella on testitunniste, aihe, käyttäjän pyyntö ja ennakkoon kirjoitettu odotettu **AI-intentti**. Mukana keto, VHH, valmistusaika, luokat, thai-keittiö, ainesosaryhmät, kielikohtainen hakutermi, nollatulokset, GK-rajaus, puuttuva käyttötieto, kahden julkaistun reseptin vertailu, lääkehoitopyyntö sekä prompt-injektio. Nämä kysymykset eivät ole käyttötutkimus eivätkä vielä mallin vastauksia.
+A4:n **80 erikseen kirjoitettua, AI-avusteista testikysymysluonnosta** muodostavat neljä 20 kysymyksen ryhmää (fi/en/sv/th). Jokaisella tapauksella on testitunniste, aihe, käyttäjän pyyntö ja ennakkoon kirjoitettu odotettu **AI-intentti**. Mukana keto, VHH, valmistusaika, luokat, thai-keittiö, ainesosaryhmät, kielikohtainen hakutermi, nollatulokset, GK-rajaus, puuttuva käännös, puuttuva käyttötieto, kahden julkaistun reseptin vertailu, lääkehoitopyyntö sekä prompt-injektio. Nämä kysymykset eivät ole käyttötutkimus eivätkä vielä mallin vastauksia.
 
 Tiedostot:
 - `site/src/features/assistant/eval-cases.ts`: 80 kysymyksen versionoitu gold-aineisto.
