@@ -3,7 +3,7 @@ import { RecipePage } from "@/features/recipes/RecipePage";
 import { RecipeAbout } from "@/features/recipes/recipe-tools";
 import { RecipesPage } from "@/features/recipes/RecipesPage";
 import { GlycemicLoadPilotPage } from "@/features/glycemic-load/GlycemicLoadPilotPage";
-import { glycemicLoadPath, recipeIndexPath, recipeLocaleFromPath, recipeUi } from "@/features/recipes/recipe-i18n";
+import { recipeIndexPath, recipeLocaleFromPath, recipeUi } from "@/features/recipes/recipe-i18n";
 import { isRecipavoHeroPreviewEnabled, recipavoHeroCopy } from "@/features/recipes/recipavo-hero";
 import { useContent } from "@/lib/content";
 import { loadContent } from "@/lib/load-content";
