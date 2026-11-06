@@ -27,7 +27,7 @@ test("all locale indexes expose two separate semantic navigation groups", async 
     assert.equal((html.match(/class="site-primary-nav"/g) ?? []).length, 1, route);
     assert.equal((html.match(/class="site-language-nav"/g) ?? []).length, 1, route);
     assert.match(html, /href="\/Reseptit\/ruokaopas\/"/);
-    assert.match(html, /href="\/Reseptit\/glykeeminen-kuorma\/"/, route);
+    assert.match(html, /href="\\/Reseptit\\/(glykeeminen-kuorma|en\\/glycemic-load|sv\\/glykemisk-belastning|th\\/glycemic-load)\\/"/, route);
   }
 });
 
