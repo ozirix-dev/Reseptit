@@ -120,5 +120,6 @@ export function resolveAssistantIntent(catalog: AssistantCatalog, input: unknown
     if (!a || !b) throw new Error("Comparison requires two published recipes in the requested locale");
     return { action: "compare", status: "ok", results: [a, b] };
   }
-  return { action: intent.action, status: "ok", reason: intent.reason };
+  if (intent.action === "clarify") return { action: "clarify", status: "ok", reason: intent.reason };
+  return { action: "unsupported", status: "ok", reason: intent.reason };
 }
