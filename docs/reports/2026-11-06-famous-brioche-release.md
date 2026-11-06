@@ -19,6 +19,6 @@ This scoped release adds three independently phrased Finnish recipe adaptations,
 
 ## Release checklist
 
-- [ ] Add three real source images as WebP and validate against image metadata.
+- [x] Add three generated WebP illustrations (256 × 144) to Git blobs; check Git object SHA against local image files. These are currently low-resolution thumbnails, not high-resolution food photos.
 - [ ] PR CI green and editorial evidence review.
 - [ ] Merge only with explicit publication authorization, then confirm main Pages deployment and public URLs.

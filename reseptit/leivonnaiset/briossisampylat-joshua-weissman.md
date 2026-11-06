@@ -25,8 +25,8 @@ tags:
 image:
   src: leivonnaiset/briossisampylat-joshua-weissman.webp
   alt: "Kuohkeat briossisämpylät – Joshua Weissmanin tyyliin kuvitetut, kullanruskeat sämpylät"
-  width: 320
-  height: 180
+  width: 256
+  height: 144
 ingredients:
   - amount: 30
     unit: g

@@ -25,8 +25,8 @@ tags:
 image:
   src: leivonnaiset/kevyet-briossisampylat-clever-carrot.webp
   alt: "Kevyet briossisämpylät – The Clever Carrot kuvitetut, kullanruskeat sämpylät"
-  width: 320
-  height: 180
+  width: 256
+  height: 144
 ingredients:
   - amount: 405
     unit: g
