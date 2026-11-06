@@ -10,7 +10,7 @@ main_ingredient:
   - "oliivi"
   - "tomaatti"
 cooking_method:
-  - "paistaminen"
+  - "uuni"
 ingredients:
   - amount: 100
     unit: g
@@ -34,7 +34,7 @@ ingredients:
     unit: ""
     item: suolaa maun mukaan
 servings: 2
-time_total_min: 25
+time_total_min: 55
 difficulty: Helppo
 tags:
   - "aamupala"
@@ -64,7 +64,8 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 
 ## Valmistus
 
-1. Sekoita jauhot tai viljat ja muut kuivat ainekset kulhossa. Lisää neste vähitellen ja vatkaa tasaiseksi taikinaksi.
-2. Anna taikinan levätä 10 minuuttia. Jos käytät kokonaisia palkokasveja tai viljoja taikinapohjana, niiden tulee olla liotettuja ja hienonnettuja.
-3. Kuumenna öljytty pannu keskilämmölle. Paista taikina ohuina annoksina; käännä, kun reunat kuivuvat ja pinta alkaa asettua.
-4. Vatkaa kikhernejauho ja vesi tasaiseksi taikinaksi ja anna levätä 20 minuuttia. Lisää hienonnettu rosmariini ja kaada öljyttyyn vuokaan. Lisää viipaloidut oliivit ja tomaatti. Paista 220-asteisessa uunissa, kunnes pinta on kullanruskea ja keskusta hyytynyt.
+1. Kuumenna uuni 220 °C:seen (kiertoilmalla 200 °C). Voitele noin 20–22 cm:n matala uuninkestävä vuoka reseptin paistoöljyllä.
+2. Vatkaa kikhernejauho ja 150 ml vettä tasaiseksi taikinaksi. Anna taikinan turvota 20 minuuttia.
+3. Hienonna rosmariini ja sekoita se taikinaan. Viipaloi tomaatti ja oliivit. Lisää taikinaan suolaa maun mukaan.
+4. Kaada taikina vuokaan ja levitä tomaattiviipaleet sekä oliivit pinnalle. Paista uunin keskitasolla noin 20–25 minuuttia, kunnes pinta saa väriä ja keskusta on hyytynyt.
+5. Anna levätä noin 5 minuuttia ennen kuin leikkaat farinatan kahteen annokseen.
