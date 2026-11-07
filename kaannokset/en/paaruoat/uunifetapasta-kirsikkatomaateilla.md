@@ -8,6 +8,7 @@ status: published
 servings: 4
 time_total_min: 45
 difficulty: "easy"
+cooking_method: [uuni, keittäminen]
 source_language: fi
 source_recipe: reseptit/paaruoat/uunifetapasta-kirsikkatomaateilla.md
 translation_of: uunifetapasta-kirsikkatomaateilla

@@ -8,6 +8,7 @@ status: published
 servings: 4
 time_total_min: 40
 difficulty: "easy"
+cooking_method: [pannu, keittäminen]
 source_language: fi
 source_recipe: reseptit/paaruoat/marry-me-kanapasta.md
 translation_of: marry-me-kanapasta
