@@ -30,6 +30,13 @@ Päiväys: 2026-11-07. Tämä on lähdematriisiin perustuva **laskennan valmiste
 5. **Käsittele GK erillisenä porttina:** GI-täsmäosuma per olennainen hiilihydraattilähde tai näkyvä `GK ei laskettavissa` -tila, jos julkaisujärjestelmä ja toimituksellinen päätös sen sallivat. Ryhmä-GI-analogia, 0-GI-arvaus tai pastan pelkkä tavaramerkkiosuma eivät riitä.
 6. **Kielet, aitous ja julkaisu:** FI/EN/SV/TH merkityskatselmointi, allergeenit, karjalanpiirakan APT-eritelmä, luotettavasti merkitty AI-kuvitus sekä reseptikohtainen Ready/merge/deploy vasta soveltuvien porttien jälkeen.
 
+
+## Julkaisun tekninen tietomallitarkastus
+
+`site/scripts/build-content.ts` (buildRecipes) ohittaa `status: draft` -sisällöt, mutta käsittelee julkaistujen reseptien `carbs_net_per_serving_g`, `carbs_total_per_serving_g`, `protein_per_serving_g` ja `fat_per_serving_g` -kentät muodossa `?? null`. `site/src/types/content.ts` hyväksyy nämä neljä kenttää joko numerona tai `null`-arvona. **Sivuston sisältörakenne siis teknisesti tukee julkaistua reseptiä, jonka ravintoarvot puuttuvat.** Tämä on koodin lukemiseen perustuva havainto, **ei** tuotantotestin eikä toimituksellisen julkaisuportin hyväksyntä. Koodia, skeemaa ja historiallisia testejä ei muuteta tämän havainnon vuoksi.
+
+Toimituksellinen suositus: ensisijaisesti hyväksytään täydet makrot lähdetietueiden kautta, mutta jos lähteiden varmennus pitkittyy, erillinen reseptikohtainen päätös voi mahdollistaa julkaisun, jossa arvot ovat `null` ja GK näkyvästi laskematta. Mitään ravintoväitettä ei tehdä ilman näyttöä. Päätös on erotettava automaattisen teknisen läpimenon tuloksesta.
+
 ## Päätös
 
 Tässä vaiheessa **5/5 reseptiä jäävät DRAFT** ja **0/5 virallista GK-lukua hyväksytään**. Rakenteellinen lähdeportti ei ole valmis. Tavoite ei ole tekaista laboratoriokoetta tai pakkausmerkintää vaan valmistella julkaistavissa olevia reseptejä sitä mukaa kuin todelliset lähdetiedot ovat hyväksyttävissä.
