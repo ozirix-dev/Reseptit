@@ -1,0 +1,103 @@
+{
+  "schemaVersion": "GI_RECIPE_SOURCE_MATCHES_2026_11_05_V1",
+  "productionAuthorized": false,
+  "matchType": "REVIEW_TRIAGE_ONLY",
+  "matches": [
+    {
+      "recipeId": "intialainen-pesarattu-mungpavuista",
+      "path": "reseptit/aamupalat/intialainen-pesarattu-mungpavuista.md",
+      "blobSha": "5356f03ce2764e38563a95ede0e4373b8f50a65e",
+      "candidateStudy": "devindra-2022-south-indian-breakfasts",
+      "candidateFood": "Pesarattu",
+      "decision": "NEEDS_REVIEW",
+      "difference": "Our pesarattu uses dried mung beans and 100 g dry long-grain rice; compare rice fraction, soaking, chutney and pancake preparation with source.",
+      "approval": "NONE",
+      "numericGK": null,
+      "canIncreaseGKCoverage": false
+    },
+    {
+      "recipeId": "intialainen-masala-dosa",
+      "path": "reseptit/aamupalat/intialainen-masala-dosa.md",
+      "blobSha": "aa3d49118f4636964806a8733528a42b6c743e17",
+      "candidateStudy": "devindra-2022-south-indian-breakfasts",
+      "candidateFood": "Plain dosa",
+      "decision": "NOT_APPLICABLE_AS_WHOLE_RECIPE",
+      "difference": "Study plain dosa does not include recipe potato filling or sambar. May be an isolated component comparison only after component boundaries defined.",
+      "approval": "NONE",
+      "numericGK": null,
+      "canIncreaseGKCoverage": false
+    },
+    {
+      "recipeId": "intialainen-idli-kookoschutneylla",
+      "path": "reseptit/aamupalat/intialainen-idli-kookoschutneylla.md",
+      "blobSha": "e862e239cf56f33c27ea36e6a5311bf6d179364d",
+      "candidateStudy": "devindra-2022-south-indian-breakfasts",
+      "candidateFood": "Idly sambar",
+      "decision": "NOT_APPLICABLE_AS_WHOLE_RECIPE",
+      "difference": "Study idly+sambar is not our idli+coconut chutney. Compare idli-only separately if matched evidence is discovered.",
+      "approval": "NONE",
+      "numericGK": null,
+      "canIncreaseGKCoverage": false
+    },
+    {
+      "recipeId": "intialainen-mannasuurimoupma",
+      "path": "reseptit/aamupalat/intialainen-mannasuurimoupma.md",
+      "blobSha": "4f527aa3f3b7264dd1ae05dd5d905bc84ba26e42",
+      "candidateStudy": "shobana-2022-indian-traditional-foods",
+      "candidateFood": "Broken wheat upma",
+      "decision": "NOT_APPLICABLE_AS_WHOLE_RECIPE",
+      "difference": "Recipe uses semolina and peas/carrot; study tested broken wheat upma. Same dish family is insufficient for direct GI transfer.",
+      "approval": "NONE",
+      "numericGK": null,
+      "canIncreaseGKCoverage": false
+    },
+    {
+      "recipeId": "korealainen-yachaejuk-kasvisjuk",
+      "path": "reseptit/aamupalat/korealainen-yachaejuk-kasvisjuk.md",
+      "blobSha": "891bf34b06b77474d306297683eb221ff34693bd",
+      "candidateStudy": "kim-2019-korean-carbohydrate-foods",
+      "candidateFood": "Rice gruel",
+      "decision": "NEEDS_REVIEW",
+      "difference": "Rice gruel is a component analogue; recipe includes vegetables and sesame oil, and gruel consistency/variety/water ratio need verification.",
+      "approval": "NONE",
+      "numericGK": null,
+      "canIncreaseGKCoverage": false
+    },
+    {
+      "recipeId": "thai-jok-kanalla",
+      "path": "reseptit/aamupalat/thai-jok-kanalla.md",
+      "blobSha": "957326740f8e9236bbb1642a636118e9066f44d6",
+      "candidateStudy": "kim-2019-korean-carbohydrate-foods",
+      "candidateFood": "Rice gruel",
+      "decision": "NEEDS_REVIEW",
+      "difference": "Korean rice gruel is not Thai chicken jok; 100 g dry rice, chicken and egg are distinct recipe components, check grain/process applicability.",
+      "approval": "NONE",
+      "numericGK": null,
+      "canIncreaseGKCoverage": false
+    },
+    {
+      "recipeId": "thai-kookosriisi-mangolla",
+      "path": "reseptit/aamupalat/thai-kookosriisi-mangolla.md",
+      "blobSha": "206ef1ed945699d74c8c67500ec557a0952a0022",
+      "candidateStudy": "namjud-2024-eight-thai-desserts",
+      "candidateFood": "Chon Buri bamboo sticky rice",
+      "decision": "NOT_APPLICABLE_AS_WHOLE_RECIPE",
+      "difference": "Thai coconut jasmine rice with fresh mango is not bamboo-roasted glutinous rice; no direct GI binding.",
+      "approval": "NONE",
+      "numericGK": null,
+      "canIncreaseGKCoverage": false
+    },
+    {
+      "recipeId": "korealainen-gyeranbap-riisikulho",
+      "path": "reseptit/aamupalat/korealainen-gyeranbap-riisikulho.md",
+      "blobSha": "9955dbbce84566bb1967f86ab19c75eb3c3379af",
+      "candidateStudy": "kim-2019-korean-carbohydrate-foods",
+      "candidateFood": "Steamed white rice",
+      "decision": "NEEDS_REVIEW",
+      "difference": "Cooked rice component maybe comparable after variety/cooking ratio review, but paper's n=8 for this row and whole egg bowl GI is not measured.",
+      "approval": "NONE",
+      "numericGK": null,
+      "canIncreaseGKCoverage": false
+    }
+  ]
+}
