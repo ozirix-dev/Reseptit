@@ -109,7 +109,7 @@ export async function verifyFinnishClassicsReview() {
         filename + ": missing shared WebP image reference");
       assert(source.includes("  width: 1600\n  height: 900\n"),
         filename + ": incorrect WebP image dimensions");
-      assert(source.includes("status: draft"), filename + ": unexpected publish status");
+      assert(source.includes(locale === "fi" ? "status: draft" : "status: published"), filename + ": unexpected draft/archive or released translation status");
       assert(/AI|tekoälyllä/.test(source), filename + ": missing AI illustration disclosure");
       localizedImages++;
     }
