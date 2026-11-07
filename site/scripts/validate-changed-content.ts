@@ -11,6 +11,7 @@ import { verifyNutritionEvidence } from "./nutrition-evidence";
 import type { Calculation } from "./nutrition-model";
 import { recipeBindingHash } from "./glycemic-load-recipe-binding";
 import { assertChangedRecipeAuditIsClean, duplicateRoutesForChangedRecipes, type PublishedRoute } from "./changed-content-checks";
+import { assertSnackPublicationReady } from "../src/content/recipe-validation";
 import { parseMarkdown, renderInstructionSteps, renderSafeMarkdown } from "../src/content/markdown";
 import { recipeFrontmatterSchema } from "../src/content/schema";
 
@@ -80,6 +81,7 @@ for (const relativePath of recipePaths) {
   const parsed = parseMarkdown(markdown);
   assert(parsed, `${relativePath}: recipe frontmatter is missing or malformed`);
   const data = recipeFrontmatterSchema.parse(parsed.data);
+  assertSnackPublicationReady(data);
   if (data.status === "published") {
     const match = /^##\s+(?:Valmistus|Preparation|Instructions|Tillagning|Gör så här|การทำ|วิธีทำ)\s*$/im.exec(parsed.content);
     assert(match?.index !== undefined, `${relativePath}: published recipe has no instruction section`);
