@@ -28,8 +28,8 @@ test('exact seven new A versions form a distinct179-recipe candidate while the o
  assert.deepEqual(legacy,[...sixteen,...seven]);assert.deepEqual(report.gkOnlyVariants,gkOnlyVariants);
  const coverage=countGkVersions(report.results,legacy);
  assert.deepEqual(gkVersionCoverage,report.versionCoverage);
- assert.equal(coverage.numericRecipes,179);assert.equal(coverage.originalNumeric,156);assert.equal(coverage.additionalA,17);assert.equal(coverage.additionalB,6);assert.equal(coverage.missing,151);assert.equal(coverage.total,330);
- assert.deepEqual(report.coverageViews.originalRecipe,{total:330,numeric:156,missing:174});
+ assert.equal(coverage.numericRecipes,179);assert.equal(coverage.originalNumeric,156);assert.equal(coverage.additionalA,17);assert.equal(coverage.additionalB,6);assert.equal(coverage.missing,156);assert.equal(coverage.total,335);
+ assert.deepEqual(report.coverageViews.originalRecipe,{total:335,numeric:156,missing:179});
  assert.throws(()=>countGkVersions(report.results,[...gkOnlyVariants,seven[0]]),/distinct/);
  for(const v of seven){assert.equal(report.results.find((r:any)=>r.recipeId===v.recipeId).status,'INSUFFICIENT SOURCE DATA');assert.equal(v.macroScope,'NO_MACRO_PACKAGE_FOR_THIS_VERSION');assert.ok(!('nutrition' in v)&&!('macros' in v));}
 });
