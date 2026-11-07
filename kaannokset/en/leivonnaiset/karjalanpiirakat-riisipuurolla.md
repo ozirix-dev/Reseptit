@@ -1,0 +1,80 @@
+---
+title: "Traditional Karelian rice pies"
+recipe_id: karjalanpiirakat-riisipuurolla
+url_slug: karjalanpiirakat-riisipuurolla
+category: leivonnainen
+language: en
+status: published
+servings: 24
+time_total_min: 150
+difficulty: "easy"
+cooking_method: [uuni, keittäminen]
+source_language: fi
+source_recipe: reseptit/leivonnaiset/karjalanpiirakat-riisipuurolla.md
+translation_of: karjalanpiirakat-riisipuurolla
+carbs_total_per_serving_g: null
+carbs_net_per_serving_g: null
+protein_per_serving_g: null
+fat_per_serving_g: null
+tags: ["Finnish cuisine"]
+image:
+  src: leivonnaiset/karjalanpiirakat-riisipuurolla.webp
+  alt: "Traditional Karelian rice pies with thin crimped rye crusts and pale rice filling"
+  width: 1600
+  height: 900
+ingredients:
+  - amount: 210
+    unit: g
+    item: "wholegrain rye flour"
+  - amount: 70
+    unit: g
+    item: "semi-coarse wheat flour"
+  - amount: 20
+    unit: g
+    item: "rye flour reserved for dusting"
+  - amount: 200
+    unit: g
+    item: "water for dough"
+  - amount: 4
+    unit: g
+    item: "salt for dough"
+  - amount: 200
+    unit: g
+    item: "Pirkka pudding rice, dry"
+  - amount: 220
+    unit: g
+    item: "water for filling"
+  - amount: 800
+    unit: g
+    item: "whole milk, 3.5% fat"
+  - amount: 5
+    unit: g
+    item: "salt for filling"
+  - amount: 30
+    unit: g
+    item: "butter for brushing"
+---
+
+# Traditional Karelian rice pies
+
+## Description
+
+Thin crimped rye crusts filled with milk-cooked rice porridge. Makes 24 pies; one serving is one pie without egg butter.
+
+## Preparation
+
+1. Simmer 200 g pudding rice with 220 g water until absorbed.
+2. Gradually add 800 g whole milk; stir over low heat for 35–45 minutes until thick but spreadable. Add 5 g salt. Cool quickly in a shallow dish; never leave cooked rice standing at room temperature.
+3. Mix 200 g water, 4 g salt, 210 g wholegrain rye flour and 70 g semi-coarse wheat flour into a firm dough. Keep covered.
+4. Divide the dough into 24 equal pieces and roll thin ovals about 10–13 cm long. Use no more than 20 g separately weighed dusting flour; weigh the remainder.
+5. Divide the weighed rice filling equally across the 24 crusts. Fold and crimp the edges, keeping the centres open.
+6. Bake at 275 °C for 15–20 minutes, watching carefully until the crusts firm and brown.
+7. Brush the hot pies with melted butter from the 30 g portion; weigh what remains.
+8. Cover briefly with a cloth to soften. Egg butter is a separate optional accompaniment, not included in one serving.
+
+## Notes
+
+- **Allergens:** rye and wheat (gluten), milk. Egg butter is a separate topping.
+- **Nutrition and glycaemic load:** reliable recipe-specific values are not yet available. Missing values do not mean zero. Not classified as keto or low-carb.
+- This image is AI-generated illustration, not a photograph of the prepared dish.
+- **Background source:** https://www.martat.fi/reseptit/karjalanpiirakat/

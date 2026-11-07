@@ -1,0 +1,192 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-11-06",
+  "recipeCount": 5,
+  "status": "FIVE_REVIEWED_AI_WEBP_RECIPE_MASTERS_COMMITTED_DRAFT_ONLY",
+  "sourceImagePolicy": "docs/seo/recipavo-image-seo-v1.md",
+  "imageHandling": "Five actual WebP masters at kuvat/ are bound to the five Finnish recipes and all 15 unpublished EN/SV/TH drafts. AI illustration disclosure included in all 20 documents. No physical test cooking, human review, verified nutrient or GK result, or production publication is implied.",
+  "delivery": {
+    "publishPipeline": "current WebP original and generated 480/960/1440 width versions",
+    "proposedRatios": [
+      "16:9 1600x900",
+      "4:3 1600x1200",
+      "1:1 1600x1600"
+    ],
+    "note": "Three ratios are planned in SEO V1 but NOT currently supported by strict image.variants schema. For first PR use one high-quality supported image src only.",
+    "converter": "node docs/review/convert-finnish-classics-webp.mjs (reproducible from original JPEGs; no default build change)",
+    "sourceFormat": "JPEG (2016x1152)",
+    "actualOutputStatus": "FIVE_1600x900_WEBP_MASTERS_COMMITTED_NOT_PUBLISHED"
+  },
+  "recipes": [
+    {
+      "recipe_id": "karjalanpiirakat-riisipuurolla",
+      "category": "leivonnaiset",
+      "filename": "karjalanpiirakat-riisipuurolla",
+      "alt": {
+        "fi": "Perinteisiä karjalanpiirakoita, joissa on ohut rypytetty ruisreuna ja vaalea riisipuurotäyte",
+        "en": "Traditional Karelian rice pies with thin crimped rye crusts and pale rice filling",
+        "sv": "Traditionella karelska rispiroger med tunna veckade rågkanter och ljus risgrynsfyllning",
+        "th": "พายคาเรเลียนไส้ข้าวสีอ่อน มีขอบแป้งไรย์บางจับจีบ"
+      },
+      "prompt": "Editorial food photography of 5 genuine Finnish Karelian rice pies on a plain linen-lined wooden board. Very thin brown rye shells with closely crimped pleated edges and white, slightly textured rice porridge filling visible in open centres. No egg butter in the pies, no potato filling. Golden toasted rye edges; authentic hand-made rustic proportions. Warm Nordic window light, natural colours, realistic bakery detail, no props covering food. Absolutely no text, signage, people or graphic overlays.",
+      "checks": [
+        "24 small pies per batch; photo may show only five",
+        "thin rye crust, pale cooked rice",
+        "no potato or cheese topping",
+        "egg butter may appear separately only if clearly labelled accompaniment"
+      ],
+      "altReviewStatus": "MODEL_ASSISTED_VISUAL_CHECK_HUMAN_REVIEW_PENDING",
+      "imageStatus": "WEBP_COMMITTED_DRAFT_BOUND",
+      "originalFile": "docs/review/kuvat/suomalaiset-klassikot/karjalanpiirakat-riisipuurolla.jpg",
+      "generatedBy": "Adobe Firefly image generation",
+      "sourcePixels": {
+        "width": 2016,
+        "height": 1152
+      },
+      "sourceImageType": "AI-generated photorealistic recipe illustration, not evidence of physical cooking",
+      "expectedWebpPath": "kuvat/leivonnaiset/karjalanpiirakat-riisipuurolla.webp",
+      "sourceGitBlobSha": "52fc336520c3759159564cabe6fecab1c2a9468c",
+      "productionWebpGitBlobSha": "e6fd2406a97b081234eda11ea3458fe3c6af6d8f",
+      "targetWebpPixels": {
+        "width": 1600,
+        "height": 900
+      }
+    },
+    {
+      "recipe_id": "marry-me-kanapasta",
+      "category": "paaruoat",
+      "filename": "marry-me-kanapasta",
+      "alt": {
+        "fi": "Kermaista kanaspagettia aurinkokuivatuilla tomaateilla ja parmesaanilla",
+        "en": "Creamy chicken spaghetti with sun-dried tomatoes and Parmesan",
+        "sv": "Krämig kycklingspaghetti med soltorkade tomater och parmesan",
+        "th": "สปาเกตตีไก่ซอสครีมกับมะเขือเทศแห้งและพาร์เมซาน"
+      },
+      "prompt": "Realistic editorial photo of one plate of creamy Marry Me chicken spaghetti. Visible long De Cecco-style spaghetti strands, generous distinct pieces of fully cooked chicken breast, small strips of dark red oil-preserved sun-dried tomatoes, glossy pale cream sauce and light finely grated Parmesan. No penne, no fusilli, no cherry tomatoes, no leafy vegetable garnish not in ingredients. Four portions cooked, one serving plated. Calm Scandinavian kitchen setting, natural side lighting, no people, no text.",
+      "checks": [
+        "spaghetti strands, never penne",
+        "visible chicken pieces",
+        "sun-dried tomato strips instead of cherry tomatoes",
+        "no ingredients not listed in recipe"
+      ],
+      "altReviewStatus": "MODEL_ASSISTED_VISUAL_CHECK_HUMAN_REVIEW_PENDING",
+      "imageStatus": "WEBP_COMMITTED_DRAFT_BOUND",
+      "originalFile": "docs/review/kuvat/suomalaiset-klassikot/marry-me-kanapasta.jpg",
+      "generatedBy": "Adobe Firefly image generation",
+      "sourcePixels": {
+        "width": 2016,
+        "height": 1152
+      },
+      "sourceImageType": "AI-generated photorealistic recipe illustration, not evidence of physical cooking",
+      "expectedWebpPath": "kuvat/paaruoat/marry-me-kanapasta.webp",
+      "sourceGitBlobSha": "accd93615a91a6ab38c67953de013e24f7e85254",
+      "productionWebpGitBlobSha": "263178010240813a3da7690300fd8000cc9ae2ab",
+      "targetWebpPixels": {
+        "width": 1600,
+        "height": 900
+      }
+    },
+    {
+      "recipe_id": "uunifetapasta-kirsikkatomaateilla",
+      "category": "paaruoat",
+      "filename": "uunifetapasta-kirsikkatomaateilla",
+      "alt": {
+        "fi": "Uunifetapastaa, jossa on penneä, paahdettua fetaa ja kirsikkatomaatteja",
+        "en": "Baked feta penne with cherry tomatoes and fresh basil",
+        "sv": "Ugnsfetapasta med penne, körsbärstomater och färsk basilika",
+        "th": "เพนเนเฟตาชีสอบกับมะเขือเทศเชอร์รีและใบเบซิลสด"
+      },
+      "prompt": "Photorealistic food magazine image of Finnish baked feta pasta: ridged penne rigate tubes coated in creamy melted baked Greek feta, roasted blistered red cherry tomatoes, small visible basil leaves, little red chilli. Served in a shallow simple ceramic bowl with a baking dish blurred behind. No chicken, no spaghetti, no cheddar, no extra sauces. Natural daylight, accurate pasta texture, sophisticated but approachable Scandinavian food styling, no labels or graphics.",
+      "checks": [
+        "penne rigate tubes",
+        "feta and cherry tomatoes obvious",
+        "basil and subtle chilli",
+        "no meat or spaghetti"
+      ],
+      "altReviewStatus": "MODEL_ASSISTED_VISUAL_CHECK_HUMAN_REVIEW_PENDING",
+      "imageStatus": "WEBP_COMMITTED_DRAFT_BOUND",
+      "originalFile": "docs/review/kuvat/suomalaiset-klassikot/uunifetapasta-kirsikkatomaateilla.jpg",
+      "generatedBy": "Adobe Firefly image generation",
+      "sourcePixels": {
+        "width": 2016,
+        "height": 1152
+      },
+      "sourceImageType": "AI-generated photorealistic recipe illustration, not evidence of physical cooking",
+      "expectedWebpPath": "kuvat/paaruoat/uunifetapasta-kirsikkatomaateilla.webp",
+      "sourceGitBlobSha": "14c8717ffcc9fe32cbd06040d54c5c1528cf456a",
+      "productionWebpGitBlobSha": "1cebb235532f410cf6b23b5f40f1dec3b7a3a8e7",
+      "targetWebpPixels": {
+        "width": 1600,
+        "height": 900
+      }
+    },
+    {
+      "recipe_id": "raejuustobagelit-ilman-kohotusta",
+      "category": "leivonnaiset",
+      "filename": "raejuustobagelit-ilman-kohotusta",
+      "alt": {
+        "fi": "Kuusi kullanruskeaa raejuustobagelia, joiden keskellä on reikä",
+        "en": "Six golden cottage cheese bagel-style rolls with visible centre holes",
+        "sv": "Sex gyllenbruna kesobagels med hål i mitten",
+        "th": "ขนมปังวงแหวนคอตเทจชีสสีเหลืองทองหกชิ้นมีรูตรงกลาง"
+      },
+      "prompt": "Realistic culinary photograph of six homemade cottage-cheese bagel-style baked rolls on parchment paper and cooling rack. Golden matte egg-glazed surface, soft but slightly irregular round rings with clear holes, no seeds or sesame, no cheese filling, no slicing and no toppings. Appearance like simple rustic quick-bread rings, not supermarket boiled bagels. Natural Nordic window light, unretouched food textures, no typography or graphics.",
+      "checks": [
+        "six rings per recipe",
+        "no sesame or seeds",
+        "no visible yeast proofing or traditional boiled bagel look",
+        "baked surface, egg glaze only"
+      ],
+      "altReviewStatus": "MODEL_ASSISTED_VISUAL_CHECK_HUMAN_REVIEW_PENDING",
+      "imageStatus": "WEBP_COMMITTED_DRAFT_BOUND",
+      "originalFile": "docs/review/kuvat/suomalaiset-klassikot/raejuustobagelit-ilman-kohotusta.jpg",
+      "generatedBy": "Adobe Firefly image generation",
+      "sourcePixels": {
+        "width": 2016,
+        "height": 1152
+      },
+      "sourceImageType": "AI-generated photorealistic recipe illustration, not evidence of physical cooking",
+      "expectedWebpPath": "kuvat/leivonnaiset/raejuustobagelit-ilman-kohotusta.webp",
+      "sourceGitBlobSha": "591ec98d56c91d40f61aaeb7b89d46c458c63eb4",
+      "productionWebpGitBlobSha": "2d360afbd94e8d820883446658ac399ebc17ba26",
+      "targetWebpPixels": {
+        "width": 1600,
+        "height": 900
+      }
+    },
+    {
+      "recipe_id": "linssimakaronilaatikko",
+      "category": "paaruoat",
+      "filename": "linssimakaronilaatikko",
+      "alt": {
+        "fi": "Linssimakaronilaatikkoa uunivuoassa, pinnalla sulanutta emmentaljuustoa",
+        "en": "Finnish green lentil macaroni casserole with melted Emmental topping",
+        "sv": "Makaronilåda med gröna linser och smält emmentalost",
+        "th": "มักกะโรนีอบถั่วเลนทิลเขียวโรยชีสเอ็มเมนทาลละลาย"
+      },
+      "prompt": "Natural editorial photograph of a Finnish green lentil macaroni casserole in a rectangular white ceramic baking dish. Clearly visible short elbow macaroni and small cooked green-brown lentils bound in a pale baked egg-milk mixture, lightly golden melted Emmental topping. One clean-cut scoop served alongside. No minced beef, no tomato sauce, no tortilla chips, no colourful garnish absent from recipe. Rustic daylight kitchen environment, no typography.",
+      "checks": [
+        "short elbow macaroni not spaghetti or penne",
+        "green/brown lentils, no minced meat",
+        "melted cheese top",
+        "real casserole structure"
+      ],
+      "altReviewStatus": "MODEL_ASSISTED_VISUAL_CHECK_HUMAN_REVIEW_PENDING",
+      "imageStatus": "WEBP_COMMITTED_DRAFT_BOUND",
+      "originalFile": "docs/review/kuvat/suomalaiset-klassikot/linssimakaronilaatikko.jpg",
+      "generatedBy": "Adobe Firefly image generation",
+      "sourcePixels": {
+        "width": 2016,
+        "height": 1152
+      },
+      "sourceImageType": "AI-generated photorealistic recipe illustration, not evidence of physical cooking",
+      "expectedWebpPath": "kuvat/paaruoat/linssimakaronilaatikko.webp",
+      "sourceGitBlobSha": "605f211a6b427389f8b117a288b5b9b66d83b8d3",
+      "productionWebpGitBlobSha": "93edd618fed261786052fbeb1c84c273d2f000af",
+      "targetWebpPixels": {
+        "width": 1600,
+        "height": 900
+      }
+    }
+  ]
+}
