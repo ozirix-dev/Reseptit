@@ -48,3 +48,8 @@
 - Record the checked scope and results. Follow the
   [translation review policy](docs/translation-review-policy.md) for checks,
   severity levels and feedback handling.
+## Web/UI visual guidance
+
+- Read [Reseptit UI and accessibility guidance](docs/ulkoasu-ja-kaytettavyys.md) before changing layout, typography, content hierarchy or site-wide visuals.
+- Use the private `ozirix-dev/Ossi` web-design foundation as **background guidance**, not this project's source of truth; consult only relevant topics and do not copy Ossi research or assets into this public repository.
+- Preserve the site's existing styling by default; fix observed issues with narrowly scoped changes. Check concurrent PR file ownership before starting.
