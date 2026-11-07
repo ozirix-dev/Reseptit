@@ -4,18 +4,18 @@ recipe_id: marry-me-kanapasta
 url_slug: marry-me-kanapasta
 category: paaruoka
 language: sv
-status: draft
+status: published
 servings: 4
 time_total_min: 40
 difficulty: "lätt"
 source_language: fi
-source_recipe: reseptit/raakileet/marry-me-kanapasta.md
+source_recipe: reseptit/paaruoat/marry-me-kanapasta.md
 translation_of: marry-me-kanapasta
 carbs_total_per_serving_g: null
 carbs_net_per_serving_g: null
 protein_per_serving_g: null
 fat_per_serving_g: null
-tags: ["draft"]
+tags: ["finländsk mat"]
 image:
   src: paaruoat/marry-me-kanapasta.webp
   alt: "Krämig kycklingspaghetti med soltorkade tomater och parmesan"
@@ -76,10 +76,7 @@ Krämig kycklingspaghetti med soltorkade tomater och parmesan. Fyra portioner me
 
 ## Anteckningar
 
-Innehåller vetegluten och mjölk. Spagettins nätuppgifter om kolhydrater skiljer sig (69 respektive 72 g/100 g); kontrollera förpackningen. GI 50 är bara en kandidat och GK är HOLD.
-
-**Popularitetskälla:** [K-Ruokas favoriter 2025](https://www.k-ruoka.fi/artikkelit/arki/suomen-suosituimmat-reseptit). Recipavos variant är självständigt skriven och inte kopierad från ett annat recept.
-
-- Bilden är AI-genererad och inte ett fotografi från en verklig provlagning eller provbakning.
-
-- **Allergener och produktkontroll:** Royal soltorkade tomater innehåller **sulfiter** (kaliumdisulfit, E224). Rätten innehåller även vete (gluten) och mjölk. De Cecco-spagetti kan innehålla spår av soja och senap. Kontrollera förpackningarna och tomatproduktens avvikande GTIN.
+- **Allergener:** vete (gluten), mjölk och sulfiter (E224) i de soltorkade tomaterna. Pastan kan innehålla spår av soja och senap.
+- **Näringsvärden och glykemisk belastning:** tillförlitliga receptspecifika värden finns ännu inte. Saknat värde betyder inte noll. Receptet är inte märkt som keto eller lågkolhydrat.
+- Bilden är AI-genererad illustration, inte ett fotografi av en tillagad rätt.
+- **Bakgrundskälla:** https://www.k-ruoka.fi/artikkelit/arki/suomen-suosituimmat-reseptit

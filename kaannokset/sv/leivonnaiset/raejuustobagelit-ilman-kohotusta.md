@@ -4,18 +4,18 @@ recipe_id: raejuustobagelit-ilman-kohotusta
 url_slug: raejuustobagelit-ilman-kohotusta
 category: leivonnainen
 language: sv
-status: draft
+status: published
 servings: 6
 time_total_min: 50
 difficulty: "lätt"
 source_language: fi
-source_recipe: reseptit/raakileet/raejuustobagelit-ilman-kohotusta.md
+source_recipe: reseptit/leivonnaiset/raejuustobagelit-ilman-kohotusta.md
 translation_of: raejuustobagelit-ilman-kohotusta
 carbs_total_per_serving_g: null
 carbs_net_per_serving_g: null
 protein_per_serving_g: null
 fat_per_serving_g: null
-tags: ["draft"]
+tags: ["finländsk mat"]
 image:
   src: leivonnaiset/raejuustobagelit-ilman-kohotusta.webp
   alt: "Sex gyllenbruna kesobagels med hål i mitten"
@@ -55,8 +55,7 @@ Ringformade kesobröd med bakpulver, utan jäst eller jäsning. De kokas inte so
 
 ## Anteckningar
 
-Innehåller gluten, mjölk och ägg. Väg använd äggpensling och provbaka inkråmet. Passande GI saknas; GK är HOLD.
-
-**Inspiration:** [Kotonas populära nya salta bakverk 2025](https://www.meillakotona.fi/artikkelit/vuoden-2025-suosituimmat-suolaiset-leivonnaiset). Detta är en självständig, uppvägd bakpulvervariant.
-
-- Bilden är AI-genererad och inte ett fotografi från en verklig provlagning eller provbakning.
+- **Allergener:** vete (gluten), mjölk och ägg.
+- **Näringsvärden och glykemisk belastning:** tillförlitliga receptspecifika värden finns ännu inte. Saknat värde betyder inte noll. Receptet är inte märkt som keto eller lågkolhydrat.
+- Bilden är AI-genererad illustration, inte ett fotografi av en tillagad rätt.
+- **Bakgrundskälla:** https://www.meillakotona.fi/artikkelit/vuoden-2025-suosituimmat-suolaiset-leivonnaiset

@@ -4,18 +4,18 @@ recipe_id: uunifetapasta-kirsikkatomaateilla
 url_slug: uunifetapasta-kirsikkatomaateilla
 category: paaruoka
 language: sv
-status: draft
+status: published
 servings: 4
 time_total_min: 45
 difficulty: "lätt"
 source_language: fi
-source_recipe: reseptit/raakileet/uunifetapasta-kirsikkatomaateilla.md
+source_recipe: reseptit/paaruoat/uunifetapasta-kirsikkatomaateilla.md
 translation_of: uunifetapasta-kirsikkatomaateilla
 carbs_total_per_serving_g: null
 carbs_net_per_serving_g: null
 protein_per_serving_g: null
 fat_per_serving_g: null
-tags: ["draft"]
+tags: ["finländsk mat"]
 image:
   src: paaruoat/uunifetapasta-kirsikkatomaateilla.webp
   alt: "Ugnsfetapasta med penne, körsbärstomater och färsk basilika"
@@ -67,10 +67,7 @@ Feta och körsbärstomater rostas till en pastasås. Den ursprungliga finska id�
 
 ## Anteckningar
 
-Originalidén kommer från Jenni Häyrinen: https://liemessa.fi/2019/02/uunifetapasta/. Innehåller vetegluten och mjölk. GI för exakt denna penne är inte verifierat; GK är HOLD.
-
-**Ursprunglig idé:** [Jenni Häyrinen, Liemessä (2019)](https://liemessa.fi/2019/02/uunifetapasta/). Recipavo uppfann inte ugnsfetapasta.
-
-- Bilden är AI-genererad och inte ett fotografi från en verklig provlagning eller provbakning.
-
-- **Allergener:** innehåller vete (gluten) och mjölk; laktosfri feta är fortfarande en mjölkprodukt. Barilla Penne Rigate n°73 kan innehålla spår av soja och senap. Kontrollera förpackningen.
+- **Allergener:** vete (gluten) och mjölk. Pastan kan innehålla spår av soja och senap.
+- **Näringsvärden och glykemisk belastning:** tillförlitliga receptspecifika värden finns ännu inte. Saknat värde betyder inte noll. Receptet är inte märkt som keto eller lågkolhydrat.
+- Bilden är AI-genererad illustration, inte ett fotografi av en tillagad rätt.
+- **Bakgrundskälla:** https://liemessa.fi/2019/02/uunifetapasta/

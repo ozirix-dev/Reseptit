@@ -4,18 +4,18 @@ recipe_id: linssimakaronilaatikko
 url_slug: linssimakaronilaatikko
 category: paaruoka
 language: sv
-status: draft
+status: published
 servings: 6
 time_total_min: 80
 difficulty: "lätt"
 source_language: fi
-source_recipe: reseptit/raakileet/linssimakaronilaatikko.md
+source_recipe: reseptit/paaruoat/linssimakaronilaatikko.md
 translation_of: linssimakaronilaatikko
 carbs_total_per_serving_g: null
 carbs_net_per_serving_g: null
 protein_per_serving_g: null
 fat_per_serving_g: null
-tags: ["draft"]
+tags: ["finländsk mat"]
 image:
   src: paaruoat/linssimakaronilaatikko.webp
   alt: "Makaronilåda med gröna linser och smält emmentalost"
@@ -74,10 +74,7 @@ Finsk vegetarisk makaronilåda där gröna linser ersätter köttfärs. Inte en 
 
 ## Anteckningar
 
-Innehåller vetegluten, mjölk och ägg. Exakta GI-källor för makaroner och gröna linser saknas; GK är HOLD.
-
-**Popularitetskälla:** [K-Ruokas nya favoriter 2025](https://www.k-ruoka.fi/artikkelit/arki/suomen-suosituimmat-reseptit). Detta är Recipavos självständigt utvecklade vegetariska version.
-
-- Bilden är AI-genererad och inte ett fotografi från en verklig provlagning eller provbakning.
-
-- **Allergener:** innehåller vete (gluten), mjölk och ägg. Coop gröna linser kan innehålla spår av vete och korn. Kontrollera de använda förpackningarna.
+- **Allergener:** vete (gluten), mjölk och ägg. Linsprodukten kan innehålla korn.
+- **Näringsvärden och glykemisk belastning:** tillförlitliga receptspecifika värden finns ännu inte. Saknat värde betyder inte noll. Receptet är inte märkt som keto eller lågkolhydrat.
+- Bilden är AI-genererad illustration, inte ett fotografi av en tillagad rätt.
+- **Bakgrundskälla:** https://www.k-ruoka.fi/artikkelit/arki/suomen-suosituimmat-reseptit

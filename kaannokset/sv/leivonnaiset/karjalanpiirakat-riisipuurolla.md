@@ -4,18 +4,18 @@ recipe_id: karjalanpiirakat-riisipuurolla
 url_slug: karjalanpiirakat-riisipuurolla
 category: leivonnainen
 language: sv
-status: draft
+status: published
 servings: 24
 time_total_min: 150
 difficulty: "lätt"
 source_language: fi
-source_recipe: reseptit/raakileet/karjalanpiirakat-riisipuurolla.md
+source_recipe: reseptit/leivonnaiset/karjalanpiirakat-riisipuurolla.md
 translation_of: karjalanpiirakat-riisipuurolla
 carbs_total_per_serving_g: null
 carbs_net_per_serving_g: null
 protein_per_serving_g: null
 fat_per_serving_g: null
-tags: ["draft"]
+tags: ["finländsk mat"]
 image:
   src: leivonnaiset/karjalanpiirakat-riisipuurolla.webp
   alt: "Traditionella karelska rispiroger med tunna veckade rågkanter och ljus risgrynsfyllning"
@@ -73,8 +73,7 @@ Tunt rågskal med veckade kanter och fyllning av risgrynsgröt. Ger 24 piroger; 
 
 ## Anteckningar
 
-Det namnskyddade tillagningssättet måste kontrolleras. Tillräckliga GI-uppgifter för ris och gräddat rågskal saknas; GK är HOLD. Innehåller gluten och mjölk.
-
-**Källor för traditionen:** [Finlands livsmedelsverk](https://www.ruokavirasto.fi/yritykset/oppaat/nimisuojattujen-elintarvikkeiden-valvontaohje/nimisuojattujen-elintarvikkeiden-valvontaohje/) och [Martats bakråd](https://www.martat.fi/reseptit/karjalanpiirakat/).
-
-- Bilden är AI-genererad och inte ett fotografi från en verklig provlagning eller provbakning.
+- **Allergener:** råg och vete (gluten), mjölk. Äggsmör serveras separat.
+- **Näringsvärden och glykemisk belastning:** tillförlitliga receptspecifika värden finns ännu inte. Saknat värde betyder inte noll. Receptet är inte märkt som keto eller lågkolhydrat.
+- Bilden är AI-genererad illustration, inte ett fotografi av en tillagad rätt.
+- **Bakgrundskälla:** https://www.martat.fi/reseptit/karjalanpiirakat/
