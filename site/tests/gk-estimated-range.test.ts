@@ -81,7 +81,9 @@ test('real approved corpus counts eight studies including sealed manakish withou
  assert.equal(counts.studyComparisons,8);
  assert.equal(counts.studyComparisons,report.versionCoverage.studyServingRecipeIds.length);
  assert.equal(counts.exact+counts.range,235);
- assert.equal(counts.missing,95);
+ assert.equal(counts.total,report.results.length);
+ assert.equal(counts.missing,counts.total-counts.exact-counts.range);
+ assert.equal(counts.missing,100); // Five newly published classics are explicitly GK-incomplete.
  assert.equal(JSON.stringify(report.gkOnlyVariants),before);
  const changed=structuredClone(report.gkOnlyVariants);
  changed.find((v:any)=>v.recipeId===manakishStudyBinding.recipeId).inputSha256='changed';
