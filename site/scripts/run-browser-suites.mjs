@@ -5,7 +5,7 @@ import { fileURLToPath } from "node:url";
 
 const browserSuites = Object.freeze({
   smoke: ["tests/ci-essential.browser.test.ts"],
-  ui: ["tests/browser-smoke.test.ts"],
+  ui: ["tests/browser-smoke.test.ts", "tests/navigation.browser.test.ts"],
   routes: ["tests/route-loading.browser.test.ts"],
   images: ["tests/responsive-images.browser.test.ts"],
 });

@@ -183,6 +183,7 @@ function classifyPaths(paths, { forceFull = false, classificationFailed = false 
       const suiteByFile = new Map([
         ["tests/ci-essential.browser.test.ts", "smoke"],
         ["tests/browser-smoke.test.ts", "ui"],
+        ["tests/navigation.browser.test.ts", "ui"],
         ["tests/content-layout.browser.test.ts", "ui"],
         ["tests/route-loading.browser.test.ts", "routes"],
         ["tests/responsive-images.browser.test.ts", "images"],
@@ -257,7 +258,10 @@ function classifyPaths(paths, { forceFull = false, classificationFailed = false 
     }
     if (file.startsWith("site/src/") && /\.(?:tsx|css)$/.test(file)) {
       addBrowserSuite(plan, "smoke");
-      if (file === "site/src/router.tsx" || file === "site/src/SeoMeta.tsx") {
+      if (file === "site/src/SiteNavigation.tsx") {
+        addBrowserSuite(plan, "ui");
+        addBrowserSuite(plan, "routes");
+      } else if (file === "site/src/router.tsx" || file === "site/src/SeoMeta.tsx") {
         addBrowserSuite(plan, "ui");
         addBrowserSuite(plan, "routes");
       } else if (file.startsWith("site/src/features/glycemic-load/") ||

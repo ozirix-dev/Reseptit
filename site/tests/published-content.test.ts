@@ -36,6 +36,7 @@ test("site content contains every published recipe and no drafts", async () => {
   const repoDir = path.resolve(import.meta.dirname, "../..");
   const candidates = [
     ...await markdownFiles(path.join(repoDir, "reseptit", "aamupalat")),
+    ...await markdownFiles(path.join(repoDir, "reseptit", "valipalat")),
     ...await markdownFiles(path.join(repoDir, "reseptit", "alkuruoat")),
     ...await markdownFiles(path.join(repoDir, "reseptit", "paaruoat")),
     ...await markdownFiles(path.join(repoDir, "reseptit", "jalkiruoat")),

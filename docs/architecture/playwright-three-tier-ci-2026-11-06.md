@@ -44,7 +44,7 @@ Useat muutokset yhdistyvät ryhmien **unionina**: koskaan ei valita vain ensimm�
 ## Toteutettavat selainryhmät
 
 - `smoke`: `ci-essential.browser.test.ts`; neljä kielihakemistoa, yksi reseptin avaaminen, yksi hakutoiminto, blogin peruslataus, JavaScriptitön navigointi ja pageerror-havainnointi. Ei kiinteitä reseptimääriä.
-- `ui`: jo olemassa oleva `browser-smoke.test.ts` (sisältää `content-layout.browser.test.ts`). Näppäimistö, suodattimet, annosskaalaus, GK-näkymä, responsiiviset ruudukot ja SEO.
+- `ui`: jo olemassa oleva `browser-smoke.test.ts` (sisältää `content-layout.browser.test.ts`) sekä `navigation.browser.test.ts` (mainin #328:n navigaatio- ja vieritysregressio). Näppäimistö, suodattimet, annosskaalaus, GK-näkymä, responsiiviset ruudukot ja SEO.
 - `routes`: jo olemassa oleva `route-loading.browser.test.ts`; hydration, kielivaihdot, virhetilanteet ja reittien pyyntömäärät.
 - `images`: jo olemassa oleva `responsive-images.browser.test.ts`; 54 kombinaatiota, DPR ja JS-vapaa kuvien lataus.
 

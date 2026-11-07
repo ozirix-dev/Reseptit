@@ -254,6 +254,7 @@ test("UI and blog changes select the essential browser test", () => {
 test("riskier browser changes add only their relevant deep suites", () => {
   assert.deepEqual(classifyPaths(["site/src/features/recipes/RecipesPage.tsx"]).browserSuites, ["smoke", "ui"]);
   assert.deepEqual(classifyPaths(["site/src/router.tsx"]).browserSuites, ["smoke", "ui", "routes"]);
+  assert.deepEqual(classifyPaths(["site/src/SiteNavigation.tsx"]).browserSuites, ["smoke", "ui", "routes"]);
   assert.deepEqual(classifyPaths(["site/src/SeoMeta.tsx"]).browserSuites, ["smoke", "ui", "routes"]);
   assert.deepEqual(classifyPaths(["site/src/features/recipes/image-layout.ts"]).browserSuites, ["smoke", "images"]);
   const search = classifyPaths(["site/src/features/recipes/recipe-search.ts"]);
@@ -264,6 +265,7 @@ test("riskier browser changes add only their relevant deep suites", () => {
 test("test-file changes select relevant suite without running all browsers", () => {
   assert.deepEqual(classifyPaths(["site/tests/ci-essential.browser.test.ts"]).browserSuites, ["smoke"]);
   assert.deepEqual(classifyPaths(["site/tests/browser-smoke.test.ts"]).browserSuites, ["ui"]);
+  assert.deepEqual(classifyPaths(["site/tests/navigation.browser.test.ts"]).browserSuites, ["ui"]);
   assert.deepEqual(classifyPaths(["site/tests/route-loading.browser.test.ts"]).browserSuites, ["routes"]);
   assert.deepEqual(classifyPaths(["site/tests/responsive-images.browser.test.ts"]).browserSuites, ["images"]);
   assert.equal(classifyPaths(["site/tests/new-experimental.browser.test.ts"]).full, true);
