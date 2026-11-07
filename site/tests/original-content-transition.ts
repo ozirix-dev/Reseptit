@@ -14,6 +14,41 @@ export const postBaselineBriocheIds = [
 ] as const;
 const postBaselineBrioche = new Set<string>(postBaselineBriocheIds);
 
+// PR #311's five published classics are excluded only when reconstructing
+// the frozen GK history, never from the live site or calculation report.
+export const postBaselineClassicIds = [
+  "karjalanpiirakat-riisipuurolla",
+  "marry-me-kanapasta",
+  "uunifetapasta-kirsikkatomaateilla",
+  "raejuustobagelit-ilman-kohotusta",
+  "linssimakaronilaatikko",
+] as const;
+const postBaselineClassics = new Set<string>(postBaselineClassicIds);
+
+function omitNewClassicsForFrozenHistory(report: any) {
+  if (!report.results) return;
+  const added = report.results.filter((row: {recipeId: string}) => postBaselineClassics.has(row.recipeId));
+  if (!added.length) return;
+  assert.deepEqual(added.map((row: {recipeId: string}) => row.recipeId).sort(), [...postBaselineClassicIds].sort());
+  for (const row of added) {
+    assert.equal(row.status, "INSUFFICIENT SOURCE DATA", row.recipeId);
+    assert.equal(row.glycemicLoadPerServing, null, row.recipeId);
+    assert.equal(row.glycemicLoadRangePerServing, null, row.recipeId);
+  }
+  report.results = report.results.filter((row: {recipeId: string}) => !postBaselineClassics.has(row.recipeId));
+  if (report.calculationInputs) report.calculationInputs = report.calculationInputs.filter(
+    (row: {recipeId: string}) => !postBaselineClassics.has(row.recipeId));
+  if (report.summary) {
+    report.summary.recipes -= added.length;
+    report.summary.insufficientSourceData -= added.length;
+  }
+  if (report.autoIncludedRecipeIds) report.autoIncludedRecipeIds = report.autoIncludedRecipeIds.filter(
+    (id: string) => !postBaselineClassics.has(id));
+  for (const field of ["recipeBindingMismatches", "calculationInputMismatches", "calculationEvidenceMismatches"]) {
+    if (report[field]) report[field] = report[field].filter((id: string) => !postBaselineClassics.has(id));
+  }
+}
+
 function omitBriocheForFrozenHistory(report: any) {
   if (!report.results) return;
   const added = report.results.filter((row: {recipeId: string}) => postBaselineBrioche.has(row.recipeId));
@@ -61,6 +96,7 @@ function restoreRows(rows: any[], field: "results" | "calculationInputs") {
 }
 
 export function restoreBeforeOriginalContent(report: any) {
+  omitNewClassicsForFrozenHistory(report);
   omitBriocheForFrozenHistory(report);
   // This recipe was published on main after the historical 326-recipe baseline.
   if (report.results?.some((row: {recipeId: string}) => row.recipeId === mainAddition.recipeId)) {
@@ -110,7 +146,17 @@ export function originalContentSourceBefore(file: string, text: string): string 
 
 function assertMainAddition(report: any) {
   const id = mainAddition.recipeId;
-  assert.deepEqual((report.autoIncludedRecipeIds ?? []).filter((key: string) => !postBaselineBrioche.has(key)), [id]);
+  const classics = report.results.filter((row: {recipeId: string}) => postBaselineClassics.has(row.recipeId));
+  if (classics.length) {
+    assert.deepEqual(classics.map((row: {recipeId: string}) => row.recipeId).sort(), [...postBaselineClassicIds].sort());
+    for (const row of classics) {
+      assert.equal(row.status, "INSUFFICIENT SOURCE DATA", row.recipeId);
+      assert.equal(row.glycemicLoadPerServing, null, row.recipeId);
+      assert.equal(row.glycemicLoadRangePerServing, null, row.recipeId);
+    }
+  }
+  assert.deepEqual((report.autoIncludedRecipeIds ?? []).filter((key: string) =>
+    !postBaselineBrioche.has(key) && !postBaselineClassics.has(key)), [id]);
   assert.deepEqual(report.results.filter((row: {recipeId: string}) => row.recipeId === id), [mainAddition.result]);
   if (report.calculationInputs) {
     assert.deepEqual(report.calculationInputs.filter((row: {recipeId: string}) => row.recipeId === id), [mainAddition.input]);
@@ -144,6 +190,14 @@ function inventoryRowWithLfNotes<T extends {notes: string}>(row: T): T {
 
 // Inventory rows carry recipe text metadata even when the macro values are missing.
 export function originalContentInventoryBefore(rows: any[]) {
+  const classics = rows.filter(row => postBaselineClassics.has(row.recipe_id));
+  if (classics.length) {
+    assert.deepEqual(classics.map(row => row.recipe_id).sort(), [...postBaselineClassicIds].sort());
+    for (const row of classics) {
+      assert.equal(row.carbs_total_per_serving_g ?? null, null, row.recipe_id);
+    }
+  }
+  rows = rows.filter(row => !postBaselineClassics.has(row.recipe_id));
   const brioche = rows.filter(row => postBaselineBrioche.has(row.recipe_id));
   if (brioche.length) assert.deepEqual(brioche.map(row => row.recipe_id).sort(), [...postBaselineBriocheIds].sort());
   rows = rows.filter(row => !postBaselineBrioche.has(row.recipe_id));
