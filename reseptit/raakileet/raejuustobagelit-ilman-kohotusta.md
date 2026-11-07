@@ -67,4 +67,6 @@ Raejuustobagelit olivat Kotona-sivuston suosituin uusi suolainen leivonnainen vu
 
 ## Muistiinpanot
 
+- **Allergeenit:** sisältää vehnää (gluteeni), maitoa ja kananmunaa. Tarkista käytetyn raejuuston ja leivinjauheen pakkausmerkinnät mahdollisten muiden allergeenien tai jäämien varalta.
+
 - Kuva on tekoälyllä tuotettu havainnekuva ruoasta, ei kuva tässä projektissa valmistetusta koeruoasta.
