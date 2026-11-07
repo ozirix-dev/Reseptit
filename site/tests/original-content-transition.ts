@@ -4,6 +4,42 @@ import transition from "../../docs/nutrition/gk-original-content-transition.json
 const mainAddition = transition.mainAddition;
 export const mainAdditionFiles: Readonly<Record<string, string>> = mainAddition.addedFileHashes;
 
+// PR #302 introduced three new published recipes after the sealed 326-recipe
+// baselines (and after the separate #294 raejuustopizza transition).
+// Keep a closed allowlist: new future additions must still be reviewed.
+export const postBaselineBriocheIds = [
+  "briossisampylat-joshua-weissman",
+  "hampurilaissampylat-moomie",
+  "kevyet-briossisampylat-clever-carrot",
+] as const;
+const postBaselineBrioche = new Set<string>(postBaselineBriocheIds);
+
+function omitBriocheForFrozenHistory(report: any) {
+  if (!report.results) return;
+  const added = report.results.filter((row: {recipeId: string}) => postBaselineBrioche.has(row.recipeId));
+  if (!added.length) return;
+  // This is strictly a frozen-history projection, not a change to live GK.
+  // Every new recipe must remain explicitly INSUFFICIENT, not a fake zero.
+  assert.deepEqual(added.map((row: {recipeId: string}) => row.recipeId).sort(), [...postBaselineBriocheIds].sort());
+  for (const row of added) {
+    assert.equal(row.status, "INSUFFICIENT SOURCE DATA", row.recipeId);
+    assert.equal(row.glycemicLoadPerServing, null, row.recipeId);
+  }
+  report.results = report.results.filter((row: {recipeId: string}) => !postBaselineBrioche.has(row.recipeId));
+  if (report.calculationInputs) report.calculationInputs = report.calculationInputs.filter(
+    (row: {recipeId: string}) => !postBaselineBrioche.has(row.recipeId));
+  if (report.summary) {
+    report.summary.recipes -= added.length;
+    report.summary.insufficientSourceData -= added.length;
+  }
+  if (report.autoIncludedRecipeIds) report.autoIncludedRecipeIds = report.autoIncludedRecipeIds.filter(
+    (id: string) => !postBaselineBrioche.has(id));
+  for (const field of ["recipeBindingMismatches", "calculationInputMismatches", "calculationEvidenceMismatches"]) {
+    if (report[field]) report[field] = report[field].filter((id: string) => !postBaselineBrioche.has(id));
+  }
+}
+
+
 const changes = new Map(Object.entries(transition.changes));
 const bindingFields = {
   recipes: "sourceHashes",
@@ -25,6 +61,7 @@ function restoreRows(rows: any[], field: "results" | "calculationInputs") {
 }
 
 export function restoreBeforeOriginalContent(report: any) {
+  omitBriocheForFrozenHistory(report);
   // This recipe was published on main after the historical 326-recipe baseline.
   if (report.results?.some((row: {recipeId: string}) => row.recipeId === mainAddition.recipeId)) {
     assertMainAddition(report);
@@ -73,7 +110,7 @@ export function originalContentSourceBefore(file: string, text: string): string 
 
 function assertMainAddition(report: any) {
   const id = mainAddition.recipeId;
-  assert.deepEqual(report.autoIncludedRecipeIds, [id]);
+  assert.deepEqual((report.autoIncludedRecipeIds ?? []).filter((key: string) => !postBaselineBrioche.has(key)), [id]);
   assert.deepEqual(report.results.filter((row: {recipeId: string}) => row.recipeId === id), [mainAddition.result]);
   if (report.calculationInputs) {
     assert.deepEqual(report.calculationInputs.filter((row: {recipeId: string}) => row.recipeId === id), [mainAddition.input]);
@@ -107,6 +144,9 @@ function inventoryRowWithLfNotes<T extends {notes: string}>(row: T): T {
 
 // Inventory rows carry recipe text metadata even when the macro values are missing.
 export function originalContentInventoryBefore(rows: any[]) {
+  const brioche = rows.filter(row => postBaselineBrioche.has(row.recipe_id));
+  if (brioche.length) assert.deepEqual(brioche.map(row => row.recipe_id).sort(), [...postBaselineBriocheIds].sort());
+  rows = rows.filter(row => !postBaselineBrioche.has(row.recipe_id));
   const addition = rows.filter(row => row.recipe_id === mainAddition.recipeId);
   assert.deepEqual(addition.map(inventoryRowWithLfNotes), [inventoryRowWithLfNotes(mainAddition.inventory)]);
   return rows.filter(row => row.recipe_id !== mainAddition.recipeId).map(row => {

@@ -6,10 +6,10 @@ category: leivonnainen
 language: fi
 status: published
 servings: 9
-carbs_net_per_serving_g: 49.52
-carbs_total_per_serving_g: 52.02
-protein_per_serving_g: 10.1
-fat_per_serving_g: 11.14
+carbs_net_per_serving_g: 49.46
+carbs_total_per_serving_g: 51.86
+protein_per_serving_g: 9.88
+fat_per_serving_g: 10.59
 time_total_min: 300
 difficulty: "keskitaso"
 main_ingredient:
@@ -24,9 +24,9 @@ tags:
   - leivonta
 image:
   src: leivonnaiset/briossisampylat-joshua-weissman.webp
-  alt: "Kuohkeat briossisämpylät – Joshua Weissmanin tyyliin kuvitetut, kullanruskeat sämpylät"
-  width: 256
-  height: 144
+  alt: "Yhdeksän sileäpintaista, kiiltävän kullanruskeaa briossisämpylää leivinpaperilla pellillä, ilman seesaminsiemeniä"
+  width: 1600
+  height: 900
 ingredients:
   - amount: 30
     unit: g
@@ -76,10 +76,6 @@ ingredients:
     unit: g
     item: "kananmunaa ilman kuorta"
     note: "pinnalle vatkattuna; käytä koko määrä"
-  - amount: 9
-    unit: g
-    item: "seesaminsiemeniä"
-    note: "pinnalle"
   - amount: 12
     unit: g
     item: "voita"
@@ -101,15 +97,15 @@ Briossin ja japanilaisen maitoleivän yhdistelmä. Jauhojen ja maidon kuumentami
 3. Yhdistä maito-hiivaseos, esitaikina, 75 g kuoretonta kananmunaa ja 27 g keltuaista. Vaivaa muutama minuutti. Lisää 63 g pehmeää voita osissa ja jatka vaivaamista 8–12 minuuttia, kunnes taikina on sileä ja joustava.
 4. Peitä kulho ja kohota lämpimässä noin 60–90 minuuttia tai kunnes tilavuus on lähes kaksinkertainen.
 5. Jaa taikina yhdeksään samanpainoiseen palaan. Pyöräytä tiukoiksi palloiksi ja aseta leivinpaperille väljästi 3 × 3 -asetelmaan vain, jos pellillä on tarpeeksi tilaa. Käytä tarvittaessa kahta peltiä. Anna kohota vielä 60–120 minuuttia.
-6. Kuumenna uuni 190 °C:seen. Sivele pulliin ohut kerros 15 g:sta vatkattua kananmunaa ja ripottele pinnalle 9 g seesaminsiemeniä.
+6. Kuumenna uuni 190 °C:seen. Sivele pulliin ohut kerros 15 g:sta vatkattua kananmunaa.
 7. Paista keskitasolla noin 16–20 minuuttia, kunnes pinta on syvän kullankeltainen ja sisus kypsä. Sivele kuumat sämpylät 12 g:lla sulatettua voita ja jäähdytä ritilällä ennen halkaisemista.
 
 ## Muistiinpanot
 
 - Alkuperä: [Joshua Weissmanin *How To Make The Best Burger Buns Of All Time*](https://www.joshuaweissman.com/recipes/best-burger-buns-recipe), julkaistu vuonna 2019. Video on saanut miljoonia katselukertoja. [Katso valmistusvideo YouTubessa](https://www.youtube.com/watch?v=gTGSUYMu6Ns).
 - Tämä on itsenäisesti kirjoitettu yhdeksän sämpylän sovitus alkuperäisestä kuuden sämpylän ohjeesta. Punnittavat muna- ja keltuaismäärät välttävät epätarkan puolikkaan munan. Ohjeen toimivuutta juuri näillä määrillä ei ole koepaistettu.
-- Ainesosapohjaiset ravintoarviot sisältävät 15 g voitelumunaa, 12 g loppuvoiteluvoita ja 9 g seesaminsiemeniä koko erässä. Voitelun todellinen tarttunut määrä ja paistohävikki voivat muuttaa arviota.
+- Ainesosapohjaiset ravintoarviot sisältävät 15 g voitelumunaa ja 12 g loppuvoiteluvoita koko erässä. Voitelun todellinen tarttunut määrä ja paistohävikki voivat muuttaa arviota.
 - GK-lukua ei julkaista: taikinan paistetulle, voilla ja kananmunalla rikastetulle vehnäsämpylälle ei ole vahvistettua valmistusmuotoon soveltuvaa GI-sidosta. Täysjyväsämpylän tai leipäryhmän keskiarvo ei ole suora mittaus.
-- Kuva on tekoälyllä tehty kuvitus, ei tämän ohjeen koepaistosta. Sisältää vehnää, maitoa, kananmunaa ja seesamia.
+- Kuva on tekoälyllä tehty kuvitus, ei tämän ohjeen koepaistosta. Sisältää vehnää, maitoa ja kananmunaa. Kuva esittää alkuperäistä siemenetöntä viimeistelyä.
 
-- Arvio per sämpylä: imeytyvät hiilihydraatit 49,52 g, kokonais-CHO (sis. kuitu) 52,02 g, proteiini 10,10 g, rasva 11,14 g. Arvio perustuu Fineli Release 20- ja AFCD Release 3 -ainesosatietoihin; valmistetta ei ole analysoitu laboratoriossa.
+- Arvio per sämpylä: imeytyvät hiilihydraatit 49,46 g, kokonais-CHO (sis. kuitu) 51,86 g, proteiini 9,88 g, rasva 10,59 g. Arvio perustuu Fineli Release 20- ja AFCD Release 3 -ainesosatietoihin; valmistetta ei ole analysoitu laboratoriossa.

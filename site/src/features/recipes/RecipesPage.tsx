@@ -3,7 +3,10 @@ import { useEffect, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useContent } from "@/lib/content";
 import type { RecipeLocale } from "@/types/content";
-import { glycemicLoadPath, recipeUi } from "./recipe-i18n";
+import { glycemicLoadPath, recipeIndexPath, recipeUi } from "./recipe-i18n";
+import { homepageLabels, homepagePicks, homepageTopics } from "./home-preview";
+import "./home-preview.css";
+import { isRecipavoHeroPreviewEnabled, recipavoHeroCopy } from "./recipavo-hero";
 import { toolUi } from "./recipe-tools";
 import { cuisines, ingredientGroups } from "@/content/recipe-facets";
 import { emptyRecipeFilters, filterRecipes, parseRecipeFilters, recipeFiltersToSearch, type RecipeCategory, type RecipeDietFilter, type RecipeFilters, type GlycemicLoadFilterCategory } from "./recipe-search";
@@ -11,11 +14,13 @@ import { glycemicLoadFilterCategories } from "@/generated/glycemic-load-filters.
 
 import type { RecipeSummary } from "@/content/route-data";
 
-const categories: RecipeSummary["category"][] = ["aamupala", "alkuruoka", "paaruoka", "jalkiruoka", "leivonnainen"];
+const categories: RecipeSummary["category"][] = ["aamupala", "valipala", "alkuruoka", "paaruoka", "jalkiruoka", "leivonnainen"];
 
 export function RecipesPage({ locale }: { locale: RecipeLocale }) {
   const { recipes } = useContent();
   const labels = recipeUi[locale];
+  const homePreviewEnabled = isRecipavoHeroPreviewEnabled();
+  const heroCopy = homePreviewEnabled ? recipavoHeroCopy[locale] : null;
   const tools = toolUi[locale];
   const location = useLocation();
   const navigate = useNavigate();
@@ -40,7 +45,7 @@ export function RecipesPage({ locale }: { locale: RecipeLocale }) {
     const next = { ...filters, ...patch };
     setFilters(next);
     const search = recipeFiltersToSearch(next);
-    navigate(`${location.pathname}${search}`, { replace: true });
+    navigate(`${location.pathname}${search}`, { replace: true, preventScrollReset: true });
   }
 
   function removeFilter(patch: Partial<RecipeFilters>, button: HTMLButtonElement) {
@@ -54,7 +59,7 @@ export function RecipesPage({ locale }: { locale: RecipeLocale }) {
 
   function resetFilters() {
     setFilters(emptyRecipeFilters);
-    navigate(location.pathname, { replace: true });
+    navigate(location.pathname, { replace: true, preventScrollReset: true });
   }
 
   const filteredRecipes = filterRecipes(recipes, filters, locale, glycemicLoadFilterCategories);
@@ -70,9 +75,15 @@ export function RecipesPage({ locale }: { locale: RecipeLocale }) {
     activeFilters.push({ key: "gl", label: glLabels[filters.gl], clear: { gl: undefined } });
   }
   const hasActiveFilters = activeFilters.length > 0;
+  // The preview is intentionally opt-in; ordinary published builds retain the full index.
+  const homePreview = homePreviewEnabled && !hasActiveFilters;
+  const picks = homePreview ? homepagePicks(recipes) : [];
+  const pickedIds = new Set(picks.map((item) => item.recipeId));
+  const rest = homePreview ? recipes.filter((item) => !pickedIds.has(item.recipeId)) : [];
+  const homeText = homepageLabels[locale];
 
-  return <section className="page-section recipe-index"><div className="container recipe-index__container">
-    <div className="page-intro"><p className="eyebrow">{labels.eyebrow}</p><h1>{labels.indexTitle}</h1><p className="page-intro__description">{labels.intro}</p></div>
+  return <section className={homePreviewEnabled ? "page-section recipe-index recipe-index--home-preview" : "page-section recipe-index"}><div className="container recipe-index__container">
+    <div className={heroCopy ? "page-intro recipavo-hero" : "page-intro"}><p className="eyebrow">{heroCopy?.eyebrow ?? labels.eyebrow}</p><h1>{heroCopy?.title ?? labels.indexTitle}</h1><p className="page-intro__description">{heroCopy?.intro ?? labels.intro}</p></div>
     {hydrated ? <form className="recipe-filters" role="search" aria-label={labels.search} onSubmit={(event) => event.preventDefault()}>
       <div className="recipe-search-field">
         <label htmlFor="recipe-search">{labels.search}</label>
@@ -106,16 +117,32 @@ export function RecipesPage({ locale }: { locale: RecipeLocale }) {
     </form> : <div className="recipe-filters recipe-filters--placeholder" aria-hidden="true">{[labels.search, labels.categoryFilter, ...(hasDietClasses ? [labels.dietFilter] : [])].map((label) => <div className="recipe-filter-select" key={label}><span className="placeholder-label">{label}</span><span className="placeholder-input" /></div>)}<details className="recipe-more-filters"><summary>{tools.moreFilters}</summary></details></div>}
     {hydrated && filters.diet !== "all" ? <p className="recipe-disclosure">{tools.diet}</p> : null}
     {hydrated && filters.gl ? <p className="recipe-disclosure recipe-gl-disclosure">{tools.glNote} <Link to={glycemicLoadPath(locale)}>{labels.glycemicLoadMethod}</Link></p> : null}
-    {hydrated ? <p className="recipe-result-count" role="status" aria-live="polite" aria-atomic="true">{labels.results(filteredRecipes.length)}</p> : <p className="recipe-result-count recipe-result-placeholder" aria-hidden="true">{labels.results(recipes.length)}</p>}
+    {homePreview ? <section className="home-preview__topics" aria-labelledby="home-preview-topics-heading">
+      <h2 id="home-preview-topics-heading">{homeText.topics}</h2>
+      <ul className="home-preview__topic-list">{homepageTopics(recipes).map((topic) => {
+        const search = recipeFiltersToSearch({ ...emptyRecipeFilters, ...(topic.kind === "category" ? { category: topic.value } : { diet: topic.value }) });
+        const label = topic.kind === "category" ? labels.category[topic.value] : topic.value === "keto" ? labels.keto : labels.vhh;
+        return <li key={`${topic.kind}-${topic.value}`}><Link to={`${recipeIndexPath(locale)}${search}`}>{label}</Link></li>;
+      })}</ul>
+    </section> : null}
+    {!homePreview ? (hydrated ? <p className="recipe-result-count" role="status" aria-live="polite" aria-atomic="true">{labels.results(filteredRecipes.length)}</p> : <p className="recipe-result-count recipe-result-placeholder" aria-hidden="true">{labels.results(recipes.length)}</p>) : null}
     {hydrated && hasActiveFilters ? <div className="recipe-active-filters" aria-label={tools.activeFilters}>{activeFilters.map((chip) => <button key={chip.key} type="button" className="recipe-filter-chip" aria-label={`${tools.removeFilter}: ${chip.label}`} onClick={(event) => removeFilter(chip.clear, event.currentTarget)}>{chip.label}<span className="recipe-filter-chip__remove" aria-hidden="true">×</span></button>)}</div> : null}
-    {!hydrated || filteredRecipes.length ? <div className="recipe-card-grid">{(hydrated ? filteredRecipes : recipes).map((recipe, index) => <RecipeCard key={`${recipe.recipeId}-${recipe.locale}`} recipe={recipe} index={index} locale={locale} />)}</div>
-      : <div className="recipe-empty-state"><p>{labels.noResults}</p><button type="button" className="recipe-filter-reset" onClick={resetFilters}>{labels.resetFilters}</button></div>}
+    {homePreview ? <section className="home-preview__picks" aria-labelledby="home-preview-picks-heading">
+      <h2 id="home-preview-picks-heading">{homeText.picks}</h2>
+      <div className="recipe-card-grid">{picks.map((recipe, index) => <RecipeCard key={`${recipe.recipeId}-${recipe.locale}`} recipe={recipe} index={index} locale={locale} headingLevel={3} />)}</div>
+      {rest.length ? <details className="home-preview__more"><summary>{homeText.allRecipes(recipes.length)}</summary>
+        <div className="recipe-card-grid">{rest.map((recipe, index) => <RecipeCard key={`${recipe.recipeId}-${recipe.locale}`} recipe={recipe} index={index + picks.length} locale={locale} headingLevel={3} />)}</div>
+      </details> : null}
+    </section>
+      : (!hydrated || filteredRecipes.length ? <div className="recipe-card-grid">{(hydrated ? filteredRecipes : recipes).map((recipe, index) => <RecipeCard key={`${recipe.recipeId}-${recipe.locale}`} recipe={recipe} index={index} locale={locale} />)}</div>
+      : <div className="recipe-empty-state"><p>{labels.noResults}</p><button type="button" className="recipe-filter-reset" onClick={resetFilters}>{labels.resetFilters}</button></div>)}
   </div></section>;
 }
 
-function RecipeCard({ recipe, index, locale }: { recipe: RecipeSummary; index: number; locale: RecipeLocale }) {
+function RecipeCard({ recipe, index, locale, headingLevel = 2 }: { recipe: RecipeSummary; index: number; locale: RecipeLocale; headingLevel?: 2 | 3 }) {
   const [imageFailed, setImageFailed] = useState(false);
   const labels = recipeUi[locale];
+  const Heading = headingLevel === 3 ? "h3" : "h2";
   const dietLabel = recipe.dietClass === "keto" ? labels.keto : recipe.dietClass ? labels.vhh : null;
   const meta = [recipe.timeTotalMin ? `${recipe.timeTotalMin} ${labels.minutes}` : null, recipe.difficulty].filter(Boolean).join(" · ");
   return <article className="recipe-card">
@@ -125,7 +152,7 @@ function RecipeCard({ recipe, index, locale }: { recipe: RecipeSummary; index: n
       <span className="recipe-card__content">
         <span className="recipe-card__badges"><span className="recipe-card__category">{labels.category[recipe.category]}</span>{dietLabel ? <span className="recipe-card__diet">{dietLabel}</span> : null}</span>
         {meta ? <span className="recipe-card__meta">{meta}</span> : null}
-        <h2 className="recipe-card__title">{recipe.title}</h2>
+        <Heading className="recipe-card__title">{recipe.title}</Heading>
         <span className="recipe-card__description">{recipe.description}</span>
       </span>
     </Link>

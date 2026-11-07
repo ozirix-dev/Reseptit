@@ -3,12 +3,13 @@ import path from "node:path";
 import { pathToFileURL } from "node:url";
 import { isDeepStrictEqual } from "node:util";
 import { localeIndexes } from "../src/content/route-data";
+import { articles, articlePath, blogRoot, blogPosts, blogJsonLd } from "../src/features/blog/blog-data";
 import { glycemicLoadMeta, glycemicLoadPath, recipeUi } from "../src/features/recipes/recipe-i18n";
 import type { RecipeEntry, RecipeLocale } from "../src/types/content";
 
 export const siteBase = "https://ozirix-dev.github.io/Reseptit";
 export interface SeoFinding { route: string; code: string; detail: string }
-export interface ExpectedPage { route: string; locale: RecipeLocale; title: string; description: string; h1: string; alternates: Record<string, string>; recipe?: RecipeEntry }
+export interface ExpectedPage { route: string; locale: RecipeLocale; title: string; description: string; h1: string; alternates: Record<string, string>; recipe?: RecipeEntry; blog?: boolean }
 const names = { fi: "Reseptit", en: "Recipes", sv: "Recept", th: "สูตรอาหาร" };
 export const decodeHtml = (value: string) => value.replace(/&(?:amp|quot|apos|lt|gt|#\d+|#x[0-9a-f]+);/gi, (entity) => {
   const named: Record<string, string> = { "&amp;": "&", "&quot;": '"', "&apos;": "'", "&lt;": "<", "&gt;": ">" };
@@ -35,6 +36,8 @@ export function expectedPages(recipes: RecipeEntry[]): ExpectedPage[] {
   const indexes = locales.map((locale) => ({ locale, routePath: localeIndexes[locale] }));
   const glycemicPages = (Object.keys(glycemicLoadMeta) as RecipeLocale[]).map((locale) => ({ locale, routePath: glycemicLoadPath(locale) }));
   return [
+    { route: blogRoot, locale: "fi" as RecipeLocale, h1: "Ruokaopas", title: "Ruokaopas | Reseptit", description: "Ruoanlaiton tekniikoita ja luotettavaa ravitsemustietoa.", alternates: alternateMap([{locale:"fi",routePath:blogRoot}]), blog: true },
+    ...articles.map(post => ({ route: articlePath(post), locale: "fi" as RecipeLocale, h1: post.title, title: `${post.title} | Ruokaopas`, description: post.description, alternates: alternateMap([{locale:"fi",routePath:articlePath(post)}]), blog: true })),
     ...locales.map((locale) => ({ route: localeIndexes[locale], locale, h1: names[locale], title: `${names[locale]} | Ozirix`, description: recipeUi[locale].intro, alternates: alternateMap(indexes) })),
     ...glycemicPages.map(({ locale, routePath }) => ({
       route: routePath, locale, ...glycemicLoadMeta[locale], alternates: alternateMap(glycemicPages),
@@ -59,6 +62,15 @@ export function inspectPage(html: string, expected: ExpectedPage): SeoFinding[] 
   check(!metas.some((m) => ["robots", "googlebot"].includes(m.name) && /(?:noindex|none)/i.test(m.content)), "NOINDEX", "Published page blocks indexing");
   const scripts = activeScripts(html);
   const jsonScripts = scripts.filter((script) => script.attributes.type === "application/ld+json");
+  if (expected.blog) {
+    const post = articles.find(item => articlePath(item) === expected.route);
+    check(jsonScripts.length === (post ? 1 : 0), "BLOG_JSONLD_COUNT", "Blog article must declare BlogPosting exactly once");
+    if (post && jsonScripts.length === 1) {
+      try { const data = JSON.parse(jsonScripts[0].content); check(isDeepStrictEqual(data, blogJsonLd(blogPosts.find(item => item.slug === post.slug)!)), "BLOG_JSONLD_SOURCE", "BlogPosting must exactly match source"); }
+      catch { check(false, "BLOG_JSONLD_PARSE", "Invalid BlogPosting JSON-LD"); }
+    }
+    return issues;
+  }
   if (!expected.recipe) {
     check(jsonScripts.length === 0, "INDEX_JSONLD", "Index unexpectedly declares recipe data");
     return issues;
@@ -163,8 +175,8 @@ export async function auditSeo(dist: string, recipes: RecipeEntry[], manifestRou
     findings.push(...inspectPage(html, page));
     for (const img of tags(html, "img")) {
       if (!img.alt?.trim()) add("ALT", "Image lacks alternative text", page.route);
-      images.add(img.src);
-      for (const candidate of (img.srcset ?? "").split(",").filter(Boolean)) images.add(candidate.trim().split(/\s+/)[0]);
+      if (!page.blog) images.add(img.src);
+      if (!page.blog) for (const candidate of (img.srcset ?? "").split(",").filter(Boolean)) images.add(candidate.trim().split(/\s+/)[0]);
     }
   }
   for (const url of images) {

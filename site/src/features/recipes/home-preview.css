@@ -1,0 +1,51 @@
+/* Staging-only homepage sections. Scoped to the preview class: default site stays unchanged. */
+.recipe-index--home-preview .home-preview__topics { margin: 1.2rem 0 1.35rem; }
+.recipe-index--home-preview .home-preview__topics h2,
+.recipe-index--home-preview .home-preview__picks h2 {
+  margin: 0 0 .6rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.25rem, 3vw, 1.65rem);
+  line-height: 1.25;
+}
+.recipe-index--home-preview .home-preview__topic-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .6rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.recipe-index--home-preview .home-preview__topic-list a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: .45rem .85rem;
+  border: 1px solid var(--line);
+  border-radius: 1.5rem;
+  background: var(--surface);
+  color: var(--accent);
+  font-weight: 650;
+  text-decoration: none;
+}
+.recipe-index--home-preview .home-preview__topic-list a:hover { background: #e8f0e9; }
+.recipe-index--home-preview .home-preview__picks { margin-top: 1.2rem; }
+.recipe-index--home-preview .home-preview__more {
+  margin: 1.3rem 0 0;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  border-radius: .85rem;
+  padding: .45rem .9rem .9rem;
+}
+.recipe-index--home-preview .home-preview__more > summary {
+  min-height: 44px;
+  padding-block: .5rem;
+  cursor: pointer;
+  color: var(--accent);
+  font-weight: 700;
+}
+.recipe-index--home-preview .home-preview__more[open] > summary { border-bottom: 1px solid var(--line); }
+.recipe-index--home-preview .home-preview__more .recipe-card-grid { margin-top: 1rem; }
+.recipe-index--home-preview :is(.home-preview__more summary, .home-preview__topic-list a):focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 3px;
+}

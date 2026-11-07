@@ -1,0 +1,45 @@
+name: Recipavo Playwright extended (non-deploy)
+
+on:
+  schedule:
+    - cron: "17 2 * * 0"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: recipavo-playwright-extended-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  extended:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+      - name: Install dependencies
+        working-directory: site
+        run: npm ci
+      - name: Build local publishable site (no deployment)
+        working-directory: site
+        run: npm run build
+      - name: Run extended Playwright browser matrix
+        working-directory: site
+        env:
+          PLAYWRIGHT_BROWSER_CHANNEL: chrome
+          BROWSER_SUITES: "smoke ui routes images"
+        run: node scripts/run-browser-suites.mjs
+      - name: Preserve image evidence on failure, if present
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-extended-diagnostics
+          path: tmp/v15/
+          if-no-files-found: ignore
+          retention-days: 7

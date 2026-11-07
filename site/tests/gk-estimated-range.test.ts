@@ -81,7 +81,7 @@ test('real approved corpus counts eight studies including sealed manakish withou
  assert.equal(counts.studyComparisons,8);
  assert.equal(counts.studyComparisons,report.versionCoverage.studyServingRecipeIds.length);
  assert.equal(counts.exact+counts.range,235);
- assert.equal(counts.missing,92);
+ assert.equal(counts.missing,95);
  assert.equal(JSON.stringify(report.gkOnlyVariants),before);
  const changed=structuredClone(report.gkOnlyVariants);
  changed.find((v:any)=>v.recipeId===manakishStudyBinding.recipeId).inputSha256='changed';

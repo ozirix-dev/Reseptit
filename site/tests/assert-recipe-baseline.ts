@@ -1,13 +1,23 @@
-import {mainAdditionFiles} from "./original-content-transition";
+import {mainAdditionFiles, postBaselineBriocheIds} from "./original-content-transition";
 import assert from "node:assert/strict";
 import { execFileSync } from "node:child_process";
 import { readFileSync } from "node:fs";
 import path from "node:path";
 import { recipeTextForApprovedSnapshot } from "../scripts/approved-recipe-note-edits";
+import { historicalFarinataForApprovedPanVersion } from "../scripts/gk100-farinata-sealed-source";
 import { parseMarkdown } from "../src/content/markdown";
 import { textHash } from "../scripts/gk149-model";
 import approvedTranslations from "./approved-translation-baseline.json";
 import preparedTranslations from "./prepared-translation-baseline.json";
+
+// PR #302 introduced three recipes after the frozen 326-recipe GK baseline.
+// The separately approved P0 image/ingredient correction is pinned to one
+// exact commit without mutating any of the old 326 recipe calculation inputs.
+const briocheImageCorrectionSha = "992cf1f4f623da0d4ee596770ce7c211e8c31a89";
+const briochePublishedFiles = new Set(postBaselineBriocheIds.flatMap(id => [
+  `reseptit/leivonnaiset/${id}.md`,
+  `docs/nutrition/calculations/${id}.json`,
+]));
 
 const translationDraftCommits = new Map([
   ["kaannokset/en/jalkiruoat/keto-mutakakku.md", "d6531cd0592b01c0106a24bb6a3bd930dedbc504"],
@@ -41,6 +51,13 @@ export function assertRecipeBaseline(root: string, baseline: string, ...protecte
       assert.equal(textHash(readFileSync(path.join(root, file), "utf8")), mainAdditionFiles[file], change);
       continue;
     }
+    if (status === "A" && briochePublishedFiles.has(file)) {
+      // Prove that these are the *exact* approved P0-corrected files, not
+      // arbitrary new recipe additions admitted into historical baselines.
+      const published = execFileSync("git", ["show", `${briocheImageCorrectionSha}:${file}`], { cwd: root, encoding: "utf8" });
+      assert.equal(readFileSync(path.join(root, file), "utf8").replaceAll("\r\n", "\n"), published.replaceAll("\r\n", "\n"), change);
+      continue;
+    }
     const approved = recipeChanges.get(file);
     if (approved?.status === status) {
       assert.equal(textHash(readFileSync(path.join(root, file), "utf8")), approved.sha256, change);
@@ -48,7 +65,7 @@ export function assertRecipeBaseline(root: string, baseline: string, ...protecte
     }
     if (status === "M" && (file.startsWith("reseptit/") || file.startsWith("kaannokset/"))) {
       const current = readFileSync(path.join(root, file), "utf8").replaceAll("\r\n", "\n");
-      const snapshot = recipeTextForApprovedSnapshot(file, current);
+      const snapshot = recipeTextForApprovedSnapshot(file, historicalFarinataForApprovedPanVersion(file, current));
       if (snapshot !== current) {
         const original = execFileSync("git", ["show", baseline + ":" + file], { cwd: root, encoding: "utf8" });
         assert.equal(snapshot, original, change);
