@@ -1,4 +1,4 @@
-import {mainAdditionFiles, postBaselineBriocheIds} from "./original-content-transition";
+import {mainAdditionFiles, postBaselineBriocheIds, postBaselineClassicIds} from "./original-content-transition";
 import assert from "node:assert/strict";
 import { execFileSync } from "node:child_process";
 import { readFileSync } from "node:fs";
@@ -14,6 +14,18 @@ import preparedTranslations from "./prepared-translation-baseline.json";
 // The separately approved P0 image/ingredient correction is pinned to one
 // exact commit without mutating any of the old 326 recipe calculation inputs.
 const briocheImageCorrectionSha = "992cf1f4f623da0d4ee596770ce7c211e8c31a89";
+const classicsCommit = "068c8e540534a5177c2e4daa52dcf7357dab5693";
+const classicCategory: Record<string, string> = {
+  "karjalanpiirakat-riisipuurolla": "leivonnaiset",
+  "marry-me-kanapasta": "paaruoat",
+  "uunifetapasta-kirsikkatomaateilla": "paaruoat",
+  "raejuustobagelit-ilman-kohotusta": "leivonnaiset",
+  "linssimakaronilaatikko": "paaruoat",
+};
+const reviewedClassicFiles = new Set(postBaselineClassicIds.flatMap(id => [
+  `reseptit/${classicCategory[id]}/${id}.md`,
+  ...["en", "sv", "th"].map(locale => `kaannokset/${locale}/${classicCategory[id]}/${id}.md`),
+]));
 const briochePublishedFiles = new Set(postBaselineBriocheIds.flatMap(id => [
   `reseptit/leivonnaiset/${id}.md`,
   `docs/nutrition/calculations/${id}.json`,
@@ -49,6 +61,14 @@ export function assertRecipeBaseline(root: string, baseline: string, ...protecte
     const [status, file] = change.split("\t");
     if (status === "A" && Object.hasOwn(mainAdditionFiles, file)) {
       assert.equal(textHash(readFileSync(path.join(root, file), "utf8")), mainAdditionFiles[file], change);
+      continue;
+    }
+    if (status === "A" && reviewedClassicFiles.has(file)) {
+      // Only the exact published #311 file bytes qualify as post-baseline
+      // additions. This does not approve GK/macro values.
+      const approved = execFileSync("git", ["show", `${classicsCommit}:${file}`], { cwd: root, encoding: "utf8" });
+      assert.equal(readFileSync(path.join(root, file), "utf8").replaceAll("\r\n", "\n"),
+        approved.replaceAll("\r\n", "\n"), change);
       continue;
     }
     if (status === "A" && briochePublishedFiles.has(file)) {
