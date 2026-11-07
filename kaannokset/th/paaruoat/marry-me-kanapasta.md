@@ -4,18 +4,18 @@ recipe_id: marry-me-kanapasta
 url_slug: marry-me-kanapasta
 category: paaruoka
 language: th
-status: draft
+status: published
 servings: 4
 time_total_min: 40
 difficulty: "ง่าย"
 source_language: fi
-source_recipe: reseptit/raakileet/marry-me-kanapasta.md
+source_recipe: reseptit/paaruoat/marry-me-kanapasta.md
 translation_of: marry-me-kanapasta
 carbs_total_per_serving_g: null
 carbs_net_per_serving_g: null
 protein_per_serving_g: null
 fat_per_serving_g: null
-tags: ["draft"]
+tags: ["อาหารฟินแลนด์"]
 image:
   src: paaruoat/marry-me-kanapasta.webp
   alt: "สปาเกตตีไก่ซอสครีมกับมะเขือเทศแห้งและพาร์เมซาน"
@@ -76,10 +76,7 @@ ingredients:
 
 ## หมายเหตุ
 
-มีข้าวสาลี (กลูเตน) และนม ข้อมูลคาร์โบไฮเดรตของสปาเกตตีจากร้านค้าขัดแย้งกัน 69 และ 72 กรัมต่อ 100 กรัม ต้องตรวจฉลากจริง ค่า GI 50 ยังเป็นข้อมูลรอตรวจสอบ ไม่ใช่ GK ที่อนุมัติ
-
-**แหล่งข้อมูลความนิยม:** [สูตรยอดนิยมปี 2025 ของ K-Ruoka](https://www.k-ruoka.fi/artikkelit/arki/suomen-suosituimmat-reseptit) สูตร Recipavo นี้เขียนและกำหนดปริมาณขึ้นใหม่ ไม่คัดลอกวิธีทำของผู้เผยแพร่รายอื่น
-
-- ภาพประกอบนี้สร้างด้วย AI ไม่ใช่ภาพถ่ายจากการทดลองทำอาหารจริงในโครงการนี้
-
-- **สารก่อภูมิแพ้และการตรวจบรรจุภัณฑ์:** มะเขือเทศแห้ง Royal มี **ซัลไฟต์** (โพแทสเซียมเมตาไบซัลไฟต์ E224) อาหารนี้มีข้าวสาลี (กลูเตน) และนมด้วย เส้น De Cecco อาจมีร่องรอยถั่วเหลืองและมัสตาร์ด ต้องตรวจฉลากจริงและรหัส GTIN ของมะเขือเทศที่ไม่ตรงกัน
+- **สารก่อภูมิแพ้:** ข้าวสาลี (กลูเตน) นม และซัลไฟต์ (E224) ในมะเขือเทศตากแห้ง พาสต้าอาจมีถั่วเหลืองและมัสตาร์ดปน
+- **คุณค่าทางโภชนาการและดัชนีภาระน้ำตาล (GL/GK):** ยังไม่มีค่าที่ตรวจสอบได้สำหรับสูตรนี้ ช่องว่างไม่ได้หมายถึงศูนย์ และไม่จัดสูตรนี้เป็นคีโตหรือคาร์โบไฮเดรตต่ำ
+- ภาพประกอบสร้างด้วย AI ไม่ใช่ภาพถ่ายอาหารที่ปรุงจริง
+- **แหล่งข้อมูลอ้างอิง:** https://www.k-ruoka.fi/artikkelit/arki/suomen-suosituimmat-reseptit

@@ -4,18 +4,18 @@ recipe_id: linssimakaronilaatikko
 url_slug: linssimakaronilaatikko
 category: paaruoka
 language: th
-status: draft
+status: published
 servings: 6
 time_total_min: 80
 difficulty: "ง่าย"
 source_language: fi
-source_recipe: reseptit/raakileet/linssimakaronilaatikko.md
+source_recipe: reseptit/paaruoat/linssimakaronilaatikko.md
 translation_of: linssimakaronilaatikko
 carbs_total_per_serving_g: null
 carbs_net_per_serving_g: null
 protein_per_serving_g: null
 fat_per_serving_g: null
-tags: ["draft"]
+tags: ["อาหารฟินแลนด์"]
 image:
   src: paaruoat/linssimakaronilaatikko.webp
   alt: "มักกะโรนีอบถั่วเลนทิลเขียวโรยชีสเอ็มเมนทาลละลาย"
@@ -74,10 +74,7 @@ ingredients:
 
 ## หมายเหตุ
 
-มีข้าวสาลี (กลูเตน) นมและไข่ ยังไม่มีหลักฐาน GI ที่ตรงของมักกะโรนีและถั่วเลนทิลเขียว จึงยังไม่อนุมัติ GK
-
-**แหล่งข้อมูลความนิยม:** [สูตรใหม่ยอดนิยมปี 2025 ของ K-Ruoka](https://www.k-ruoka.fi/artikkelit/arki/suomen-suosituimmat-reseptit) สูตรมังสวิรัตินี้ Recipavo พัฒนาขึ้นใหม่
-
-- ภาพประกอบนี้สร้างด้วย AI ไม่ใช่ภาพถ่ายจากการทดลองทำอาหารจริงในโครงการนี้
-
-- **สารก่อภูมิแพ้:** มีข้าวสาลี (กลูเตน) นมและไข่ ถั่วเลนทิลเขียว Coop อาจมีข้าวสาลีและข้าวบาร์เลย์ปนอยู่เล็กน้อย ต้องตรวจฉลากของสินค้าที่ใช้จริง
+- **สารก่อภูมิแพ้:** ข้าวสาลี (กลูเตน) นม และไข่ ผลิตภัณฑ์ถั่วเลนทิลอาจมีข้าวบาร์เลย์ปน
+- **คุณค่าทางโภชนาการและดัชนีภาระน้ำตาล (GL/GK):** ยังไม่มีค่าที่ตรวจสอบได้สำหรับสูตรนี้ ช่องว่างไม่ได้หมายถึงศูนย์ และไม่จัดสูตรนี้เป็นคีโตหรือคาร์โบไฮเดรตต่ำ
+- ภาพประกอบสร้างด้วย AI ไม่ใช่ภาพถ่ายอาหารที่ปรุงจริง
+- **แหล่งข้อมูลอ้างอิง:** https://www.k-ruoka.fi/artikkelit/arki/suomen-suosituimmat-reseptit

@@ -4,18 +4,18 @@ recipe_id: raejuustobagelit-ilman-kohotusta
 url_slug: raejuustobagelit-ilman-kohotusta
 category: leivonnainen
 language: th
-status: draft
+status: published
 servings: 6
 time_total_min: 50
 difficulty: "ง่าย"
 source_language: fi
-source_recipe: reseptit/raakileet/raejuustobagelit-ilman-kohotusta.md
+source_recipe: reseptit/leivonnaiset/raejuustobagelit-ilman-kohotusta.md
 translation_of: raejuustobagelit-ilman-kohotusta
 carbs_total_per_serving_g: null
 carbs_net_per_serving_g: null
 protein_per_serving_g: null
 fat_per_serving_g: null
-tags: ["draft"]
+tags: ["อาหารฟินแลนด์"]
 image:
   src: leivonnaiset/raejuustobagelit-ilman-kohotusta.webp
   alt: "ขนมปังวงแหวนคอตเทจชีสสีเหลืองทองหกชิ้นมีรูตรงกลาง"
@@ -55,8 +55,7 @@ ingredients:
 
 ## หมายเหตุ
 
-มีแป้งกลูเตน นมและไข่ ต้องชั่งไข่ที่ทาจริงและตรวจเนื้อขนม ยังไม่มี GI ที่ตรงกับขนมอบ จึงยังไม่มี GK
-
-**แรงบันดาลใจ:** [ขนมอบคาวยอดนิยมปี 2025 ของ Kotona](https://www.meillakotona.fi/artikkelit/vuoden-2025-suosituimmat-suolaiset-leivonnaiset) สูตรนี้ชั่งส่วนผสมใหม่และใช้ผงฟู ไม่ใช้ยีสต์
-
-- ภาพประกอบนี้สร้างด้วย AI ไม่ใช่ภาพถ่ายจากการทดลองทำอาหารจริงในโครงการนี้
+- **สารก่อภูมิแพ้:** ข้าวสาลี (กลูเตน) นม และไข่
+- **คุณค่าทางโภชนาการและดัชนีภาระน้ำตาล (GL/GK):** ยังไม่มีค่าที่ตรวจสอบได้สำหรับสูตรนี้ ช่องว่างไม่ได้หมายถึงศูนย์ และไม่จัดสูตรนี้เป็นคีโตหรือคาร์โบไฮเดรตต่ำ
+- ภาพประกอบสร้างด้วย AI ไม่ใช่ภาพถ่ายอาหารที่ปรุงจริง
+- **แหล่งข้อมูลอ้างอิง:** https://www.meillakotona.fi/artikkelit/vuoden-2025-suosituimmat-suolaiset-leivonnaiset

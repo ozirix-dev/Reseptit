@@ -4,18 +4,18 @@ recipe_id: uunifetapasta-kirsikkatomaateilla
 url_slug: uunifetapasta-kirsikkatomaateilla
 category: paaruoka
 language: th
-status: draft
+status: published
 servings: 4
 time_total_min: 45
 difficulty: "ง่าย"
 source_language: fi
-source_recipe: reseptit/raakileet/uunifetapasta-kirsikkatomaateilla.md
+source_recipe: reseptit/paaruoat/uunifetapasta-kirsikkatomaateilla.md
 translation_of: uunifetapasta-kirsikkatomaateilla
 carbs_total_per_serving_g: null
 carbs_net_per_serving_g: null
 protein_per_serving_g: null
 fat_per_serving_g: null
-tags: ["draft"]
+tags: ["อาหารฟินแลนด์"]
 image:
   src: paaruoat/uunifetapasta-kirsikkatomaateilla.webp
   alt: "เพนเนเฟตาชีสอบกับมะเขือเทศเชอร์รีและใบเบซิลสด"
@@ -67,10 +67,7 @@ ingredients:
 
 ## หมายเหตุ
 
-ต้นฉบับโดย Jenni Häyrinen: https://liemessa.fi/2019/02/uunifetapasta/ มีข้าวสาลี (กลูเตน) และนม ยังไม่ได้ยืนยัน GI ของเพนเนรุ่นนี้ จึงยังไม่อนุมัติ GK
-
-**เจ้าของแนวคิดต้นฉบับ:** [Jenni Häyrinen, Liemessä (2019)](https://liemessa.fi/2019/02/uunifetapasta/) Recipavo ไม่ใช่ผู้คิดค้นพาสต้าเฟตาอบ
-
-- ภาพประกอบนี้สร้างด้วย AI ไม่ใช่ภาพถ่ายจากการทดลองทำอาหารจริงในโครงการนี้
-
-- **สารก่อภูมิแพ้:** มีข้าวสาลี (กลูเตน) และนม เฟตาชีสแบบปราศจากแลคโตสก็ยังทำจากนม พาสต้า Barilla Penne Rigate n°73 อาจมีร่องรอยถั่วเหลืองและมัสตาร์ด ต้องตรวจฉลากจริง
+- **สารก่อภูมิแพ้:** ข้าวสาลี (กลูเตน) และนม พาสต้าอาจมีถั่วเหลืองและมัสตาร์ดปน
+- **คุณค่าทางโภชนาการและดัชนีภาระน้ำตาล (GL/GK):** ยังไม่มีค่าที่ตรวจสอบได้สำหรับสูตรนี้ ช่องว่างไม่ได้หมายถึงศูนย์ และไม่จัดสูตรนี้เป็นคีโตหรือคาร์โบไฮเดรตต่ำ
+- ภาพประกอบสร้างด้วย AI ไม่ใช่ภาพถ่ายอาหารที่ปรุงจริง
+- **แหล่งข้อมูลอ้างอิง:** https://liemessa.fi/2019/02/uunifetapasta/

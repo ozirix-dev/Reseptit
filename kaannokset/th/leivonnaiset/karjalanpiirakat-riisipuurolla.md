@@ -4,18 +4,18 @@ recipe_id: karjalanpiirakat-riisipuurolla
 url_slug: karjalanpiirakat-riisipuurolla
 category: leivonnainen
 language: th
-status: draft
+status: published
 servings: 24
 time_total_min: 150
 difficulty: "ง่าย"
 source_language: fi
-source_recipe: reseptit/raakileet/karjalanpiirakat-riisipuurolla.md
+source_recipe: reseptit/leivonnaiset/karjalanpiirakat-riisipuurolla.md
 translation_of: karjalanpiirakat-riisipuurolla
 carbs_total_per_serving_g: null
 carbs_net_per_serving_g: null
 protein_per_serving_g: null
 fat_per_serving_g: null
-tags: ["draft"]
+tags: ["อาหารฟินแลนด์"]
 image:
   src: leivonnaiset/karjalanpiirakat-riisipuurolla.webp
   alt: "พายคาเรเลียนไส้ข้าวสีอ่อน มีขอบแป้งไรย์บางจับจีบ"
@@ -73,8 +73,7 @@ ingredients:
 
 ## หมายเหตุ
 
-ต้องตรวจสอบข้อกำหนดชื่ออาหารดั้งเดิม ยังไม่มีหลักฐาน GI ที่ตรงสำหรับข้าวและเปลือกไรย์อบ จึงยังไม่อนุมัติ GK มีแป้งกลูเตนและนม
-
-**แหล่งข้อมูลอาหารดั้งเดิม:** [สำนักงานความปลอดภัยอาหารฟินแลนด์](https://www.ruokavirasto.fi/yritykset/oppaat/nimisuojattujen-elintarvikkeiden-valvontaohje/nimisuojattujen-elintarvikkeiden-valvontaohje/) และ [วิธีทำของ Martat](https://www.martat.fi/reseptit/karjalanpiirakat/).
-
-- ภาพประกอบนี้สร้างด้วย AI ไม่ใช่ภาพถ่ายจากการทดลองทำอาหารจริงในโครงการนี้
+- **สารก่อภูมิแพ้:** ข้าวไรย์และข้าวสาลี (กลูเตน) และนม ส่วนเนยผสมไข่เป็นเครื่องเคียงแยกต่างหาก
+- **คุณค่าทางโภชนาการและดัชนีภาระน้ำตาล (GL/GK):** ยังไม่มีค่าที่ตรวจสอบได้สำหรับสูตรนี้ ช่องว่างไม่ได้หมายถึงศูนย์ และไม่จัดสูตรนี้เป็นคีโตหรือคาร์โบไฮเดรตต่ำ
+- ภาพประกอบสร้างด้วย AI ไม่ใช่ภาพถ่ายอาหารที่ปรุงจริง
+- **แหล่งข้อมูลอ้างอิง:** https://www.martat.fi/reseptit/karjalanpiirakat/
