@@ -206,6 +206,13 @@ for (const recipeId of recipeIds) {
 
 if (process.env.BASE_SHA && !/^0+$/.test(process.env.BASE_SHA)) {
   if (semanticallyChanged.size) {
+    // Temporary review diagnostics: current source/translation semantic hashes for release evidence.
+    for (const target of audit.publishedTranslations) {
+      if (!["karjalanpiirakat-riisipuurolla", "raejuustobagelit-ilman-kohotusta", "linssimakaronilaatikko", "marry-me-kanapasta", "uunifetapasta-kirsikkatomaateilla"].includes(target.data.recipe_id)) continue;
+      const source = audit.publishedSources.find((recipe) => recipe.data.recipe_id === target.data.recipe_id);
+      if (!source) continue;
+      console.log("CLASSICS_SEMANTIC_HASH " + JSON.stringify({ key: target.data.recipe_id + ":" + target.data.language, source_hash: semanticHash(source), translation_hash: semanticHash(target) }));
+    }
     const errors = changedSemanticReviewErrors(audit, semanticallyChanged, await loadSemanticEvidence(repoRoot));
     assert.deepEqual(errors, [], "Changed published translation pairs require current Codex source comparison evidence");
   }
