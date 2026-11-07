@@ -1,0 +1,518 @@
+{
+  "id": "rouva-keto-four-2026-11-06",
+  "calculatedAt": "2026-11-06",
+  "status": "REVIEW_ONLY_NOT_RELEASED",
+  "provenance": "Computed independently from per-100g composition records and editorially weighed ingredient variants, NOT Sulamo recipe macro totals.",
+  "method": {
+    "formulas": "Each ingredient: nutrient_per_100_g * weighed_grams / 100. Sum before dividing by servings; round only final output. EU-based estimated kcal: 4 kcal/g available carbohydrate + 4 kcal/g protein + 9 kcal/g fat + 2 kcal/g fibre + 2.4 kcal/g sourced polyols.",
+    "definitions": {
+      "carbs_net_g": "Available carbohydrate excluding fibre (after documented polyol adjustment where relevant)",
+      "carbs_total_g": "Available carbohydrate + fibre + sourced polyols"
+    },
+    "other": "Ingredient-input estimate; edible and retained fraction 1. Water, boiling and evaporation have zero assumed macro LOSS; product brands, cooking yield and exact weight must be confirmed before publishing. GI/GK are deliberately not claimed."
+  },
+  "recipes": [
+    {
+      "key": "ketopizza-pofiber-blogi-vertailu",
+      "title": "Rouva Keton Pofiber-pizzapohja: vertailulaskelma",
+      "servings": 2,
+      "scope": "pohja ilman kastiketta tai täytteitä; EI nykyisen Recipavo-pizzan ravintoarvo",
+      "ingredients": [
+        {
+          "name": "Edam-juustoraaste, 25–27 %",
+          "g": 200,
+          "record": {
+            "id": "fineli-643-release-20",
+            "name": "JUUSTO, KOVA PIENIKOLOINEN JUUSTO, RASVAA 24-27 %, EDAM",
+            "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/643",
+            "licence": "THL, Fineli Release 20, CC BY 4.0",
+            "per100g": {
+              "carbohydrate": 0,
+              "fibre": 0,
+              "polyols": 0,
+              "protein": 26.5,
+              "fat": 25.7
+            }
+          },
+          "contribution": {
+            "carbohydrate": 0,
+            "fibre": 0,
+            "polyols": 0,
+            "protein": 53,
+            "fat": 51.4
+          }
+        },
+        {
+          "name": "Tuorejuusto, 20 %",
+          "g": 50,
+          "record": {
+            "id": "fineli-34765-release-20",
+            "name": "TUOREJUUSTO, RASVAA 20 %, MAUSTAMATON",
+            "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/34765",
+            "licence": "THL, Fineli Release 20, CC BY 4.0",
+            "per100g": {
+              "carbohydrate": 3.735,
+              "fibre": 0,
+              "polyols": 0,
+              "protein": 4.09,
+              "fat": 20.032
+            }
+          },
+          "contribution": {
+            "carbohydrate": 1.87,
+            "fibre": 0,
+            "polyols": 0,
+            "protein": 2.05,
+            "fat": 10.02
+          }
+        },
+        {
+          "name": "Kananmuna, kuoreton",
+          "g": 110,
+          "record": {
+            "id": "fineli-858-release-20",
+            "name": "KANANMUNA, KUORETON",
+            "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/858",
+            "licence": "THL, Fineli Release 20, CC BY 4.0",
+            "per100g": {
+              "carbohydrate": 0.3,
+              "fibre": 0,
+              "polyols": 0,
+              "protein": 12.61,
+              "fat": 9.24
+            }
+          },
+          "contribution": {
+            "carbohydrate": 0.33,
+            "fibre": 0,
+            "polyols": 0,
+            "protein": 13.87,
+            "fat": 10.16
+          }
+        },
+        {
+          "name": "Semper Pofiber",
+          "g": 15,
+          "record": {
+            "id": "semper-pofiber-gtin-7310100857200-label-2026-10-25",
+            "name": "Semper Pofiber, dried potato fibre",
+            "sourceUrl": "https://www.semper.schaer.com/wp-content/uploads/fodmap_fi_02.25.pdf",
+            "licence": "Semper product label; values transcribed for a product-specific estimate",
+            "per100g": {
+              "carbohydrate": 17,
+              "fibre": 65,
+              "polyols": 0,
+              "protein": 5,
+              "fat": 0.3
+            }
+          },
+          "contribution": {
+            "carbohydrate": 2.55,
+            "fibre": 9.75,
+            "polyols": 0,
+            "protein": 0.75,
+            "fat": 0.05
+          }
+        }
+      ],
+      "notes": [
+        "Blogi: 200 g juustoa, 3 rkl tuorejuustoa, 2 isoa munaa, 5 rkl Pofiberia. 50 g tuorejuustoa ja 110 g munaa ovat punnittavan sovitteen toimitukselliset oletukset; blogi ei väitä näitä grammoiksi.",
+        "Edam on juuston tietueverrokki, ei todistetusti blogissa käytetty Oltermanni. Blogi ilmoittaa Pofiberille 3 g/rkl.",
+        "Vertailu EI korvaa olemassa olevan ketopizza-pofiber-pohjalla.md -reseptin täytepohjaista laskelmaa."
+      ],
+      "perServing": {
+        "energy_kcal": 480.89,
+        "carbs_net_g": 2.37,
+        "carbs_total_g": 7.25,
+        "protein_g": 34.83,
+        "fat_g": 35.81,
+        "fibre_g": 4.88,
+        "polyols_g": 0
+      },
+      "totals": {
+        "carbohydrate": 4.75,
+        "fibre": 9.75,
+        "polyols": 0,
+        "protein": 69.67,
+        "fat": 71.63
+      }
+    },
+    {
+      "key": "rasvakaakao-rouva-keto",
+      "title": "Rasvakaakao",
+      "servings": 1,
+      "scope": "punnittu perusresepti ilman valinnaisia makeutusaineita tai mausteita",
+      "ingredients": [
+        {
+          "name": "Makeuttamaton kaakaojauhe",
+          "g": 6,
+          "record": {
+            "id": "fineli-20-2026-10-24",
+            "name": "Kaakaojauhe, makeuttamaton",
+            "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/20",
+            "licence": "THL, Fineli, CC BY 4.0",
+            "per100g": {
+              "carbohydrate": 11,
+              "fibre": 30.4,
+              "polyols": 0,
+              "protein": 18.5,
+              "fat": 21.7
+            }
+          },
+          "contribution": {
+            "carbohydrate": 0.66,
+            "fibre": 1.82,
+            "polyols": 0,
+            "protein": 1.11,
+            "fat": 1.3
+          }
+        },
+        {
+          "name": "Voi",
+          "g": 12,
+          "record": {
+            "id": "fineli-500-release-20",
+            "name": "VOI",
+            "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/500",
+            "licence": "THL, Fineli Release 20, CC BY 4.0",
+            "per100g": {
+              "carbohydrate": 0.8,
+              "fibre": 0,
+              "polyols": 0,
+              "protein": 1.19,
+              "fat": 81.3
+            }
+          },
+          "contribution": {
+            "carbohydrate": 0.1,
+            "fibre": 0,
+            "polyols": 0,
+            "protein": 0.14,
+            "fat": 9.76
+          }
+        },
+        {
+          "name": "Kookosöljy",
+          "g": 12,
+          "record": {
+            "id": "usda-fdc-sr-legacy-171412",
+            "name": "Oil, coconut (USDA SR Legacy food 171412)",
+            "sourceUrl": "https://fdc.nal.usda.gov/food-details/171412/nutrients",
+            "corroboratingUrl": "https://whatyoueat.io/foods/171412-coconut-oil",
+            "licence": "USDA FoodData Central / US public domain; per-100g data, source revision to recheck",
+            "per100g": {
+              "carbohydrate": 0,
+              "fibre": 0,
+              "polyols": 0,
+              "protein": 0,
+              "fat": 99.06
+            }
+          },
+          "contribution": {
+            "carbohydrate": 0,
+            "fibre": 0,
+            "polyols": 0,
+            "protein": 0,
+            "fat": 11.89
+          }
+        },
+        {
+          "name": "Kuohukerma 38 %",
+          "g": 30,
+          "record": {
+            "id": "fineli-631-release-20",
+            "name": "KERMA, KUOHUKERMA, RASVAA 38 %",
+            "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/631",
+            "licence": "THL, Fineli Release 20, CC BY 4.0",
+            "per100g": {
+              "carbohydrate": 2.9,
+              "fibre": 0,
+              "polyols": 0,
+              "protein": 1.88,
+              "fat": 38
+            }
+          },
+          "contribution": {
+            "carbohydrate": 0.87,
+            "fibre": 0,
+            "polyols": 0,
+            "protein": 0.56,
+            "fat": 11.4
+          }
+        },
+        {
+          "name": "Vesi",
+          "g": 200,
+          "record": {
+            "id": "water-zero-macros",
+            "name": "Juomavesi",
+            "sourceUrl": null,
+            "licence": "no macronutrients",
+            "per100g": {
+              "carbohydrate": 0,
+              "fibre": 0,
+              "polyols": 0,
+              "protein": 0,
+              "fat": 0
+            }
+          },
+          "contribution": {
+            "carbohydrate": 0,
+            "fibre": 0,
+            "polyols": 0,
+            "protein": 0,
+            "fat": 0
+          }
+        }
+      ],
+      "notes": [
+        "Sulamo käyttää ruokalusikallisia ja 2 dl vettä. Recipavon 6/12/12/30 gramman sovite on erillinen, punnittavaksi tarkoitettu koekeittiöversio.",
+        "Kookosöljyn arvot tulevat USDA SR Legacy -merkinnästä 171412, ei Sulamon reseptikohtaisesta ravintotaulukosta.",
+        "Ei automaattista terveysväitettä tai rasvajuoman suositteluannosta."
+      ],
+      "perServing": {
+        "energy_kcal": 326.53,
+        "carbs_net_g": 1.63,
+        "carbs_total_g": 3.45,
+        "protein_g": 1.82,
+        "fat_g": 34.35,
+        "fibre_g": 1.82,
+        "polyols_g": 0
+      },
+      "totals": {
+        "carbohydrate": 1.63,
+        "fibre": 1.82,
+        "polyols": 0,
+        "protein": 1.82,
+        "fat": 34.35
+      }
+    },
+    {
+      "key": "lammin-chia-puuro-rouva-keto",
+      "title": "Lämmin chia-puuro",
+      "servings": 1,
+      "scope": "punnittu peruspuuro ilman valinnaista vaniljaa, voita tai lisäkkeitä",
+      "ingredients": [
+        {
+          "name": "Chiansiemen",
+          "g": 30,
+          "record": {
+            "id": "fineli-34847-2026-10-25",
+            "name": "CHIANSIEMEN",
+            "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/34847?c=2034&c2=2168",
+            "licence": "THL, Fineli Rel20, CC BY 4.0",
+            "per100g": {
+              "carbohydrate": 0.2,
+              "fibre": 34.4,
+              "polyols": 0,
+              "protein": 22.9,
+              "fat": 33.9
+            }
+          },
+          "contribution": {
+            "carbohydrate": 0.06,
+            "fibre": 10.32,
+            "polyols": 0,
+            "protein": 6.87,
+            "fat": 10.17
+          }
+        },
+        {
+          "name": "Kuohukerma 38 %",
+          "g": 100,
+          "record": {
+            "id": "fineli-631-release-20",
+            "name": "KERMA, KUOHUKERMA, RASVAA 38 %",
+            "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/631",
+            "licence": "THL, Fineli Release 20, CC BY 4.0",
+            "per100g": {
+              "carbohydrate": 2.9,
+              "fibre": 0,
+              "polyols": 0,
+              "protein": 1.88,
+              "fat": 38
+            }
+          },
+          "contribution": {
+            "carbohydrate": 2.9,
+            "fibre": 0,
+            "polyols": 0,
+            "protein": 1.88,
+            "fat": 38
+          }
+        },
+        {
+          "name": "Vesi",
+          "g": 150,
+          "record": {
+            "id": "water-zero-macros",
+            "name": "Juomavesi",
+            "sourceUrl": null,
+            "licence": "no macronutrients",
+            "per100g": {
+              "carbohydrate": 0,
+              "fibre": 0,
+              "polyols": 0,
+              "protein": 0,
+              "fat": 0
+            }
+          },
+          "contribution": {
+            "carbohydrate": 0,
+            "fibre": 0,
+            "polyols": 0,
+            "protein": 0,
+            "fat": 0
+          }
+        },
+        {
+          "name": "Suola",
+          "g": 0.5,
+          "record": {
+            "id": "pure-salt-zero-macros",
+            "name": "Ruokasuola (macro-zero reference)",
+            "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/30",
+            "licence": "THL Fineli CC BY 4.0",
+            "per100g": {
+              "carbohydrate": 0,
+              "fibre": 0,
+              "polyols": 0,
+              "protein": 0,
+              "fat": 0
+            }
+          },
+          "contribution": {
+            "carbohydrate": 0,
+            "fibre": 0,
+            "polyols": 0,
+            "protein": 0,
+            "fat": 0
+          }
+        }
+      ],
+      "notes": [
+        "Lähteessä on 3 rkl chiansiemeniä, 1 dl kuohukermaa, 1,5 dl vettä ja 1/2 tl suolaa. Tämä on grammoina punnittava sovite; suola pienennettiin 0,5 grammaan maku- ja turvallisuusarvion vuoksi.",
+        "Lähteen 1/2 tl vaniljajauhetta ei sisälly tähän laskentaversioon; lisääminen edellyttää tuotekohtaista määrää ja ravintokirjausta.",
+        "Recipavon kylmät chiavanukkaat eivät vastaa lämpimänä valmistettavaa puuroa."
+      ],
+      "perServing": {
+        "energy_kcal": 501.01,
+        "carbs_net_g": 2.96,
+        "carbs_total_g": 13.28,
+        "protein_g": 8.75,
+        "fat_g": 48.17,
+        "fibre_g": 10.32,
+        "polyols_g": 0
+      },
+      "totals": {
+        "carbohydrate": 2.96,
+        "fibre": 10.32,
+        "polyols": 0,
+        "protein": 8.75,
+        "fat": 48.17
+      }
+    },
+    {
+      "key": "suklaavaahto-tummasta-suklaasta",
+      "title": "Kahden aineksen suklaavaahto",
+      "servings": 4,
+      "scope": "Finelin tavallisen tumman suklaan mukaan; EI keto-väite",
+      "ingredients": [
+        {
+          "name": "Tumma suklaa, tavanomainen Fineli-keskiarvotietue",
+          "g": 100,
+          "record": {
+            "id": "fineli-32-2026-10-24",
+            "name": "SUKLAA, TUMMA",
+            "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/32",
+            "licence": "THL, Fineli Release 20, CC BY 4.0",
+            "per100g": {
+              "carbohydrate": 53.26,
+              "fibre": 7.904,
+              "polyols": 0,
+              "protein": 4.88,
+              "fat": 31
+            }
+          },
+          "contribution": {
+            "carbohydrate": 53.26,
+            "fibre": 7.9,
+            "polyols": 0,
+            "protein": 4.88,
+            "fat": 31
+          }
+        },
+        {
+          "name": "Pastöroitu kananmunankeltuainen, punnittu",
+          "g": 59,
+          "record": {
+            "id": "fineli-851-2026-10-24",
+            "name": "KANANMUNAN KELTUAINEN, 34 % KANANMUNAN MASSASTA",
+            "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/851",
+            "licence": "THL, Fineli Release 20, CC BY 4.0",
+            "per100g": {
+              "carbohydrate": 0.2,
+              "fibre": 0,
+              "polyols": 0,
+              "protein": 15.94,
+              "fat": 29.17
+            }
+          },
+          "contribution": {
+            "carbohydrate": 0.12,
+            "fibre": 0,
+            "polyols": 0,
+            "protein": 9.4,
+            "fat": 17.21
+          }
+        },
+        {
+          "name": "Pastöroitu kananmunanvalkuainen, punnittu",
+          "g": 115,
+          "record": {
+            "id": "fineli-852-2026-10-24",
+            "name": "KANANMUNAN VALKUAINEN, 66 % KANANMUNAN MASSASTA",
+            "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/852",
+            "licence": "THL, Fineli Release 20, CC BY 4.0",
+            "per100g": {
+              "carbohydrate": 0.4,
+              "fibre": 0,
+              "polyols": 0,
+              "protein": 10.79,
+              "fat": 0.03
+            }
+          },
+          "contribution": {
+            "carbohydrate": 0.46,
+            "fibre": 0,
+            "polyols": 0,
+            "protein": 12.41,
+            "fat": 0.03
+          }
+        }
+      ],
+      "notes": [
+        "Lähteessä 3 kuoretonta kananmunaa yhteensä 174 g; sovite jakaa ne 59 g keltuaiseen ja 115 g valkuaiseen, jotta keittiöohje on punnittava.",
+        "Finelin tumman suklaan hiilihydraatit ovat merkittäviä; tämä VERSIO ei ole automaattisesti keto. Ketoversio vaatisi erillisen tuotevalinnan ja uuden laskennan, mukaan lukien polyolit.",
+        "Kananmunan ravintoarvon lähde on raaka muna; pastöroitujen tuotteiden pakkausmerkinnät on tarkistettava ennen julkaisua. Käyttökelpoisuus vaahdotukseen testataan.",
+        "Repo sisältää vanhan pelkän otsikkotiedoston suklaamousse-keto.md; tämä luonnos ei saa julkaista päällekkäistä reseptiä."
+      ],
+      "perServing": {
+        "energy_kcal": 193.03,
+        "carbs_net_g": 13.46,
+        "carbs_total_g": 15.44,
+        "protein_g": 6.67,
+        "fat_g": 12.06,
+        "fibre_g": 1.98,
+        "polyols_g": 0
+      },
+      "totals": {
+        "carbohydrate": 53.84,
+        "fibre": 7.9,
+        "polyols": 0,
+        "protein": 26.69,
+        "fat": 48.24
+      }
+    }
+  ]
+}
