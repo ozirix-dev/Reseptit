@@ -23,6 +23,7 @@ const classicCategory: Record<string, string> = {
   "linssimakaronilaatikko": "paaruoat",
 };
 const reviewedClassicFiles = new Set(postBaselineClassicIds.flatMap(id => [
+  `reseptit/raakileet/${id}.md`,
   `reseptit/${classicCategory[id]}/${id}.md`,
   ...["en", "sv", "th"].map(locale => `kaannokset/${locale}/${classicCategory[id]}/${id}.md`),
 ]));
