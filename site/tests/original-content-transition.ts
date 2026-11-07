@@ -146,7 +146,17 @@ export function originalContentSourceBefore(file: string, text: string): string 
 
 function assertMainAddition(report: any) {
   const id = mainAddition.recipeId;
-  assert.deepEqual((report.autoIncludedRecipeIds ?? []).filter((key: string) => !postBaselineBrioche.has(key)), [id]);
+  const classics = report.results.filter((row: {recipeId: string}) => postBaselineClassics.has(row.recipeId));
+  if (classics.length) {
+    assert.deepEqual(classics.map((row: {recipeId: string}) => row.recipeId).sort(), [...postBaselineClassicIds].sort());
+    for (const row of classics) {
+      assert.equal(row.status, "INSUFFICIENT SOURCE DATA", row.recipeId);
+      assert.equal(row.glycemicLoadPerServing, null, row.recipeId);
+      assert.equal(row.glycemicLoadRangePerServing, null, row.recipeId);
+    }
+  }
+  assert.deepEqual((report.autoIncludedRecipeIds ?? []).filter((key: string) =>
+    !postBaselineBrioche.has(key) && !postBaselineClassics.has(key)), [id]);
   assert.deepEqual(report.results.filter((row: {recipeId: string}) => row.recipeId === id), [mainAddition.result]);
   if (report.calculationInputs) {
     assert.deepEqual(report.calculationInputs.filter((row: {recipeId: string}) => row.recipeId === id), [mainAddition.input]);
