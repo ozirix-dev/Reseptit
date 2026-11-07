@@ -8,6 +8,7 @@ status: published
 servings: 6
 time_total_min: 80
 difficulty: "ง่าย"
+cooking_method: [uuni, keittäminen]
 source_language: fi
 source_recipe: reseptit/paaruoat/linssimakaronilaatikko.md
 translation_of: linssimakaronilaatikko
