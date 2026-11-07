@@ -4,18 +4,18 @@ recipe_id: linssimakaronilaatikko
 url_slug: linssimakaronilaatikko
 category: paaruoka
 language: en
-status: draft
+status: published
 servings: 6
 time_total_min: 80
 difficulty: "easy"
 source_language: fi
-source_recipe: reseptit/raakileet/linssimakaronilaatikko.md
+source_recipe: reseptit/paaruoat/linssimakaronilaatikko.md
 translation_of: linssimakaronilaatikko
 carbs_total_per_serving_g: null
 carbs_net_per_serving_g: null
 protein_per_serving_g: null
 fat_per_serving_g: null
-tags: ["draft"]
+tags: ["Finnish cuisine"]
 image:
   src: paaruoat/linssimakaronilaatikko.webp
   alt: "Finnish green lentil macaroni casserole with melted Emmental topping"
@@ -74,10 +74,7 @@ A Finnish oven-baked macaroni casserole with green lentils in place of minced me
 
 ## Notes
 
-Contains wheat gluten, milk and egg. Exact macaroni and green-lentil GI matches are missing, so GK remains HOLD.
-
-**Popularity context:** [K-Ruoka's 2025 new favourites](https://www.k-ruoka.fi/artikkelit/arki/suomen-suosituimmat-reseptit). This is Recipavo's independently developed vegetarian version.
-
-- This AI-generated illustration is not a photograph of a physical test cook or bake.
-
-- **Allergens:** contains wheat (gluten), milk and egg. Coop green lentils may contain traces of wheat and barley. Check the actual packages.
+- **Allergens:** wheat (gluten), milk and egg. The lentil product may contain barley.
+- **Nutrition and glycaemic load:** reliable recipe-specific values are not yet available. Missing values do not mean zero. Not classified as keto or low-carb.
+- This image is AI-generated illustration, not a photograph of the prepared dish.
+- **Background source:** https://www.k-ruoka.fi/artikkelit/arki/suomen-suosituimmat-reseptit

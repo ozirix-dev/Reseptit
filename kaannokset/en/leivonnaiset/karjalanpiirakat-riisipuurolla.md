@@ -4,18 +4,18 @@ recipe_id: karjalanpiirakat-riisipuurolla
 url_slug: karjalanpiirakat-riisipuurolla
 category: leivonnainen
 language: en
-status: draft
+status: published
 servings: 24
 time_total_min: 150
 difficulty: "easy"
 source_language: fi
-source_recipe: reseptit/raakileet/karjalanpiirakat-riisipuurolla.md
+source_recipe: reseptit/leivonnaiset/karjalanpiirakat-riisipuurolla.md
 translation_of: karjalanpiirakat-riisipuurolla
 carbs_total_per_serving_g: null
 carbs_net_per_serving_g: null
 protein_per_serving_g: null
 fat_per_serving_g: null
-tags: ["draft"]
+tags: ["Finnish cuisine"]
 image:
   src: leivonnaiset/karjalanpiirakat-riisipuurolla.webp
   alt: "Traditional Karelian rice pies with thin crimped rye crusts and pale rice filling"
@@ -73,8 +73,7 @@ Thin crimped rye crusts filled with milk-cooked rice porridge. Makes 24 pies; on
 
 ## Notes
 
-Traditional-speciality name still requires verification. The rice and baked rye crust lack suitable GI evidence, so GK remains unavailable. Contains gluten and milk.
-
-**Traditional-speciality references:** [Finnish Food Authority](https://www.ruokavirasto.fi/yritykset/oppaat/nimisuojattujen-elintarvikkeiden-valvontaohje/nimisuojattujen-elintarvikkeiden-valvontaohje/) and [Martat's baking guidance](https://www.martat.fi/reseptit/karjalanpiirakat/).
-
-- This AI-generated illustration is not a photograph of a physical test cook or bake.
+- **Allergens:** rye and wheat (gluten), milk. Egg butter is a separate topping.
+- **Nutrition and glycaemic load:** reliable recipe-specific values are not yet available. Missing values do not mean zero. Not classified as keto or low-carb.
+- This image is AI-generated illustration, not a photograph of the prepared dish.
+- **Background source:** https://www.martat.fi/reseptit/karjalanpiirakat/

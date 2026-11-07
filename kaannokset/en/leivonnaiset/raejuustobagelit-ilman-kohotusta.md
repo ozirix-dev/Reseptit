@@ -4,18 +4,18 @@ recipe_id: raejuustobagelit-ilman-kohotusta
 url_slug: raejuustobagelit-ilman-kohotusta
 category: leivonnainen
 language: en
-status: draft
+status: published
 servings: 6
 time_total_min: 50
 difficulty: "easy"
 source_language: fi
-source_recipe: reseptit/raakileet/raejuustobagelit-ilman-kohotusta.md
+source_recipe: reseptit/leivonnaiset/raejuustobagelit-ilman-kohotusta.md
 translation_of: raejuustobagelit-ilman-kohotusta
 carbs_total_per_serving_g: null
 carbs_net_per_serving_g: null
 protein_per_serving_g: null
 fat_per_serving_g: null
-tags: ["draft"]
+tags: ["Finnish cuisine"]
 image:
   src: leivonnaiset/raejuustobagelit-ilman-kohotusta.webp
   alt: "Six golden cottage cheese bagel-style rolls with visible centre holes"
@@ -55,8 +55,7 @@ Ring-shaped cottage cheese rolls raised with baking powder, not yeast. Unlike tr
 
 ## Notes
 
-Contains gluten, milk and egg. Weigh the actual egg glaze and test the crumb. No matching GI for this baked food; GK is HOLD.
-
-**Inspiration:** [Kotona's popular new savoury bakes of 2025](https://www.meillakotona.fi/artikkelit/vuoden-2025-suosituimmat-suolaiset-leivonnaiset). This is an independently weighed, baking-powder-raised recipe.
-
-- This AI-generated illustration is not a photograph of a physical test cook or bake.
+- **Allergens:** wheat (gluten), milk and egg.
+- **Nutrition and glycaemic load:** reliable recipe-specific values are not yet available. Missing values do not mean zero. Not classified as keto or low-carb.
+- This image is AI-generated illustration, not a photograph of the prepared dish.
+- **Background source:** https://www.meillakotona.fi/artikkelit/vuoden-2025-suosituimmat-suolaiset-leivonnaiset

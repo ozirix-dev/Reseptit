@@ -4,18 +4,18 @@ recipe_id: uunifetapasta-kirsikkatomaateilla
 url_slug: uunifetapasta-kirsikkatomaateilla
 category: paaruoka
 language: en
-status: draft
+status: published
 servings: 4
 time_total_min: 45
 difficulty: "easy"
 source_language: fi
-source_recipe: reseptit/raakileet/uunifetapasta-kirsikkatomaateilla.md
+source_recipe: reseptit/paaruoat/uunifetapasta-kirsikkatomaateilla.md
 translation_of: uunifetapasta-kirsikkatomaateilla
 carbs_total_per_serving_g: null
 carbs_net_per_serving_g: null
 protein_per_serving_g: null
 fat_per_serving_g: null
-tags: ["draft"]
+tags: ["Finnish cuisine"]
 image:
   src: paaruoat/uunifetapasta-kirsikkatomaateilla.webp
   alt: "Baked feta penne with cherry tomatoes and fresh basil"
@@ -67,10 +67,7 @@ Feta and cherry tomatoes roast into a sauce for penne. The original Finnish bake
 
 ## Notes
 
-Original idea credited to Jenni Häyrinen: https://liemessa.fi/2019/02/uunifetapasta/. Contains wheat gluten and milk. Exact penne GI is not verified; GK remains HOLD.
-
-**Original idea:** [Jenni Häyrinen, Liemessä (2019)](https://liemessa.fi/2019/02/uunifetapasta/). Recipavo did not invent oven-baked feta pasta.
-
-- This AI-generated illustration is not a photograph of a physical test cook or bake.
-
-- **Allergen check:** contains wheat (gluten) and milk; lactose-free feta is still made from milk. Barilla Penne Rigate n°73 may contain traces of soy and mustard. Check the package.
+- **Allergens:** wheat (gluten) and milk; the pasta may contain traces of soy and mustard.
+- **Nutrition and glycaemic load:** reliable recipe-specific values are not yet available. Missing values do not mean zero. Not classified as keto or low-carb.
+- This image is AI-generated illustration, not a photograph of the prepared dish.
+- **Background source:** https://liemessa.fi/2019/02/uunifetapasta/

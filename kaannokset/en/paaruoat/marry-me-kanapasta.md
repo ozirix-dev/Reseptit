@@ -4,18 +4,18 @@ recipe_id: marry-me-kanapasta
 url_slug: marry-me-kanapasta
 category: paaruoka
 language: en
-status: draft
+status: published
 servings: 4
 time_total_min: 40
 difficulty: "easy"
 source_language: fi
-source_recipe: reseptit/raakileet/marry-me-kanapasta.md
+source_recipe: reseptit/paaruoat/marry-me-kanapasta.md
 translation_of: marry-me-kanapasta
 carbs_total_per_serving_g: null
 carbs_net_per_serving_g: null
 protein_per_serving_g: null
 fat_per_serving_g: null
-tags: ["draft"]
+tags: ["Finnish cuisine"]
 image:
   src: paaruoat/marry-me-kanapasta.webp
   alt: "Creamy chicken spaghetti with sun-dried tomatoes and Parmesan"
@@ -76,10 +76,7 @@ Creamy chicken spaghetti with sun-dried tomatoes and Parmesan. Four servings; re
 
 ## Notes
 
-Contains wheat gluten and milk. The EAN-matched spaghetti has conflicting online carbohydrate declarations (69 and 72 g/100 g); verify the physical package. GI 50 is a candidate only and GK is HOLD.
-
-**Popularity context:** [K-Ruoka's 2025 favourites](https://www.k-ruoka.fi/artikkelit/arki/suomen-suosituimmat-reseptit). This independently written Recipavo version is not copied from another publisher's instructions.
-
-- This AI-generated illustration is not a photograph of a physical test cook or bake.
-
-- **Allergen and pack check:** Royal sun-dried tomatoes contain **sulphites** (potassium metabisulphite, E224). The dish also contains wheat (gluten) and milk. De Cecco spaghetti may contain traces of soy and mustard. Verify the physical packaging and the potentially inconsistent tomato GTIN.
+- **Allergens:** wheat (gluten), milk and sulphites (E224) in sun-dried tomatoes; the pasta may contain traces of soy and mustard.
+- **Nutrition and glycaemic load:** reliable recipe-specific values are not yet available. Missing values do not mean zero. Not classified as keto or low-carb.
+- This image is AI-generated illustration, not a photograph of the prepared dish.
+- **Background source:** https://www.k-ruoka.fi/artikkelit/arki/suomen-suosituimmat-reseptit
