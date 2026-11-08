@@ -4,6 +4,7 @@ import path from "node:path";
 import test from "node:test";
 import { siteContent as currentSiteContent } from "../src/generated/content.generated";
 import { parseMarkdown } from "../src/content/markdown";
+import { glycemicLoadPilotResults } from "../src/generated/glycemic-load-pilot.generated";
 
 
 // These historical batch expectations retain the exact main nutrition snapshots.
@@ -230,6 +231,11 @@ test("three staged FI keto candidates have missing GK and do not invent total ca
     assert.ok(recipe,id);
     assert.equal(recipe.nutrition.carbsNetG,evidence.recipes.find((x:{key:string})=>x.key===id).perServing.carbs_net_g);
     assert.equal(recipe.nutrition.carbsTotalG,null);
+    const gk = glycemicLoadPilotResults.find(x => x.recipeId === id);
+    assert.ok(gk, `${id}: a GK audit result must exist`);
+    assert.equal(gk.status,"INSUFFICIENT SOURCE DATA",id);
+    assert.equal(gk.glycemicLoadPerServing,null,id);
+    assert.equal(gk.glycemicLoadRangePerServing,null,id);
     assert.ok(recipe.image);
   }
 });
