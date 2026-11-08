@@ -43,10 +43,10 @@ Täydensin nykyistä Fineli/AFCD-pohjaa yhdeksän yksilöidyn tuotteen saatavill
 | Resepti | Proteiini g/annos (ehdokas) | Rasva g/annos (ehdokas) | Luokitus |
 | --- | ---: | ---: | --- |
 | Karjalanpiirakat | 2,79–2,89 | 1,44–2,47 | Kaikki syöterivit katettu ehdokastietueilla; voin ja kaulintajauhon määrä oletusväli |
-| Marry me -kanapasta | vähintään lähdetietueiden summa 48,53 | vähintään lähdetietueiden summa 32,01 | Kuivatun timjamin (3 g/erä) P/F puuttuvat; Royalin ilmoitusperuste epäselvä |
+| Marry me -kanapasta | 48,60 | 32,07 | Kuivattu timjami täydennetty Fineli-johdannaisesta lähteestä; Royalin ilmoitusperuste epäselvä |
 | Uunifetapasta | 17,37 | 22,32 | Kaikki syöterivit katettu ehdokastietueilla; rasvassa Mevgal 24,5 g/100 g eikä aiempi yleisfetan 25 g |
 | Raejuustobagelit | 15,90–17,06 | 2,11–2,96 | Munavoitelun todellinen käyttö 0–55 g; täsmäjauho ja leivinjauhe avoinna |
-| Linssimakaronilaatikko | vähintään lähdetietueiden summa 20,48 | vähintään lähdetietueiden summa 9,33 | Kuivatun timjamin (1 g/erä) P/F puuttuvat; lähdevastaavuuksia tarkistettava |
+| Linssimakaronilaatikko | 20,49 | 9,34 | Kuivattu timjami täydennetty Fineli-johdannaisesta lähteestä; tuotetäsmäys yhä tarkistettava |
 
 **Vähintään** tarkoittaa osalaskentaa, ei todennettua ravintosisällön alarajaa. Epävarmat pakkaus- ja massatiedot voivat muuttaa lukuja kumpaankin suuntaan. De Cecco -pastan 72 g CHO/100 g -ristiriitaa ei ole ratkaistu: samaan tuotteeseen vahvistetun 69 g P/F-mallin rinnalla eri hiilihydraattiarvo on edelleen erillinen skenaario.
 
@@ -59,3 +59,16 @@ Uusina tarkistettuina tuotelähteinä lisäksi:
 - Royal aurinkokuivattu tomaatti: CHO 16 g, P 5,5 g, F 9,3 g / 100 g – https://www.s-kaupat.fi/tuote/royal-330200g-aurinkokuivattu-tomaattisuikale-oljyssa/5201194037031 (80 g:n valutetun tuotteen soveltuvuus edelleen HOLD).
 
 **Energia-arvoja ei julkaista** tässä erässä: joillakin yleisruokatietueilla energiatietue puuttuu, osa rasva-/proteiinitiedoista on osalaskentaa ja kuituosuus vaihtelee. Tarvitaan lähdekohtaisesti hyväksyttyjen kilokaloriarvojen/energian laskennan yhdenmukainen malli.
+
+## V11 – 8.11.2026: timjamin puuttuneet P/F-rivit täydennetty
+
+- Kuivatun timjamin ravintoarvoehdokkaat per 100 g: **9,1 g proteiinia, 7,4 g rasvaa, 26,94 g imeytyvää hiilihydraattia**. Fineli-tietueen 11194 ravintoarvoja toistava riippumaton vertailu: https://ravinto.ptjesse.fi/timjami-kuivattu/ . Nämä ovat tuotekohtaisesti varmentamattomia yleisiä elintarviketietueita, ei valitun maustepurkin analyysiä.
+- Marry me -kanapasta: 3 g timjamia erässä lisää **0,068 g proteiinia ja 0,0555 g rasvaa annokseen**. Uudet ehdokassummat: **48,60 g proteiinia, 32,07 g rasvaa / annos**.
+- Linssimakaronilaatikko: 1 g timjamia erässä lisää **0,015 g proteiinia ja 0,0123 g rasvaa annokseen**. Uudet ehdokassummat: **20,49 g proteiinia, 9,34 g rasvaa / annos**.
+- Näin kaikilla 47 ainesosarivillä on laskentaan ehdotettu CHO-, proteiini- ja rasvalähde tai eksplisiittinen nollarivi. **Kattavuus ei tarkoita lähdehyväksyntää.** Aiemmat tuotepakkauksen ja syödyn määrän ongelmat jäävät avoimiksi.
+- Valion valmistajasivu vahvistaa raejuuston **1,8 g CHO, 15 g proteiinia, 2 g rasvaa ja 85 kcal/100 g**: https://www.valio.fi/tuotteet/valio-raejuusto/ . Sivu luettelee 200 g ja 400 g pakkauskoot, mutta EAN-kandidaatti 6408430043019 liittyy nimenomaan 200 g pakkaukseen. Huomioitava tuotteen pakkauskohtainen jäljitettävyys.
+- Myllyn Paras -valmistaja vahvistaa makaronin **68 g CHO, 13 g proteiinia, 1,7 g rasvaa, 4 g kuitua ja 344 kcal / 100 g**: https://www.myllynparas.fi/tuotteet/makaroni-400-g .
+- Valion valmistaja vahvistaa 17 % Punaleima Emmentalin **0 g CHO, 33 g proteiinia, 17 g rasvaa ja 286 kcal / 100 g**: https://www.valio.fi/tuotteet/valio-emmental-punaleima-17-juusto/ . Tätä ei sekoiteta 30 %:n perus-Punaleimaan.
+- Royal aurinkokuivatun tomaattisuikaleen vähittäiskaupan EAN-sivu vahvistaa **16 g CHO, 5,5 g proteiinia, 9,3 g rasvaa ja 170 kcal / 100 g**: https://www.s-kaupat.fi/tuote/royal-330200g-aurinkokuivattu-tomaattisuikale-oljyssa/5201194037031 . Ravintoarvon peruste (valutettu vai öljyineen) jää avoimeksi.
+
+**Edelleen HOLD:** makrojen tuotantoarvot ja ruoan kcal, De Cecco 69/72 -ristiriita, mahdollinen paistossa/valutuksessa syötävien massojen vaihtelu, kaikkien pakkaus- ja yleislähteiden hyväksyntä sekä GI/GK. PR pysyy Draftina eikä mitään valmistuskoetta väitetä tehdyksi.
