@@ -42,3 +42,17 @@ https://www.fda.gov/food/people-risk-foodborne-illness/dairy-and-eggs-food-safet
 4. **Julkaisu:** uusi HEAD-CI, käännös-/kuva-/ravinto-/GK-audit, tarkka julkaisupäätös, onnistunut main-deploy ja tuotantosivujen erillinen selainkoe.
 
 **Ei fyysistä koevalmistusta tehty tässä katselmoinnissa. Ei uusia julkaistuja GK-numeroita, ravintoarvoja tai reseptireittejä.**
+
+
+## Täydennys 8.11.2026 – pastöroidun valkuaisen vaahtoutuvuuden tutkimus
+
+**Johtopäätös: tuoteturvallisuuden ja rakenteen portti ei ole vielä PASS.** Pastörointi ja sopivuus kylmään käyttöön eivät yksin todista, että kaupallinen valkuaismassa muodostaa reseptin vaatiman vaahdon.
+
+- [American Egg Board: whipping](https://www.incredibleegg.org/professionals/manufacturers/real-egg-functionality/whipping/) kuvaa munatuotteiden vaahtoamisominaisuudet, mutta tuotesuunnittelu on valmistuskohtaista.
+- [American Egg Board: egg handling](https://www.incredibleegg.org/egg-handling-storage-tips/) varoittaa, ettei jokainen nestemäinen pastöroitu valkuaisvalmiste tuota vakaata vaahtoa; ainesosat ja valmistustapa voivat muuttaa tulosta. Vaahtoutuvaan tuotteeseen tarvitaan valmistajan oma soveltuvuusnäyttö.
+- [Leipurin tuotetieto, Heti Valmis Valkuainen 5 kg, tuotekoodi 921019](https://productcard.leipurin.com/productspec/921019?lang=fin): *pastöroitu kananmunanvalkuaismassa*, leivontaan, 1 dl noin 3 valkuaista, kylmäsäilytys 0–4 °C. Tämä on **ammattikeittiön 5 kg raaka-aine-ehdokas**, ei käyttäjän reseptin hyväksytty vähittäismyynnin tuote; 5 kg pakkaus ja leivontakäyttö eivät yksin varmista turvallisuutta kuumentamattomassa suklaamoussessa tai sen vaahtoutuvuutta.
+- [FDA:n kananmunien turvallisuusohje](https://www.fda.gov/food/retail-food-industryregulatory-assistance-training/assuring-safety-eggs-and-menu-and-deli-items-made-raw-shell-eggs) käsittelee raakoja/kuumentamattomia kananmunaruokia. Täsmävalmisteen käyttötarkoitus ja säilytysohje tulee silti varmistaa pakkauksesta.
+- Kuumentamaton keltuainen vaatii oman **pastöroidun tuoteversion** ja pakkauksen ravintotiedon; yllä mainittu valkuaistuote ei ole keltuaislähde. Näiden ravintotietueiden vaihtuessa myös suklaavaahdon aiemmat makroarviot on laskettava uudestaan.
+- [K-Ruoan täsmä-Lindt 90 %](https://www.k-ruoka.fi/kauppa/tuote/lindt-excellence-tumma-suklaa-100g-90-3046920029759) vahvistaa EAN 3046920029759 ja 14 g CHO /100 g, mutta kuitu/polyolit puuttuvat ravintoilmoituksesta; niitä ei täytetä arvolla 0. Allergeenimerkinnöissä voi olla pähkinän, maidon ja soijan jäämiä.
+
+**Päätös:** rasvakaakao ja lämmin chia-puuro voidaan valmistella *omana teknisenä FI-first-julkaisueränä*, mutta niidenkin tuotetiedot ja valmistuksen dokumentointi ovat erilliset portit. Suklaavaahto jää itsenäiseksi HOLD-ehdokkaaksi, kunnes kylmään käyttöön hyväksytyn pastöroidun keltuaisen ja vaahtoutuvan valkuaisen tuotetunnukset, annosmassat, makrot ja valmistusnäyttö ovat saatavilla. Älä merkitse simuloitua valmistusta todelliseksi koekeittiöksi.
