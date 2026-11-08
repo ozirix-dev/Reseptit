@@ -371,7 +371,7 @@
       "perServing": {
         "carbohydrate": {
           "candidateMin": 47.49,
-          "candidateMax": 47.49,
+          "candidateMax": 49.29,
           "isComplete": true,
           "missingPositions": []
         },
@@ -425,12 +425,13 @@
           "macrosPer100g": {
             "carbohydrate": 69,
             "protein": 14,
-            "fat": 1.5
+            "fat": 1.5,
+            "carbohydrateAlternate": 72
           },
           "batchG": {
             "carbohydrate": {
               "min": 165.6,
-              "max": 165.6
+              "max": 172.8
             },
             "protein": {
               "min": 33.6,
@@ -1481,5 +1482,12 @@
       },
       "note": "Fineli-derived secondary source; confirm official record before publication"
     }
-  ]
+  ],
+  "reviewSemantics": {
+    "isComplete": "All ingredient rows have a candidate numeric source, NOT that product/batch identity, cooked retention, or publication evidence is approved",
+    "releaseApproval": false,
+    "glycemicLoadApproval": false,
+    "missingFieldMeans": "unknown, not zero",
+    "conflict": "De Cecco EAN 69 versus 72 g carbohydrate per 100 g; preserve as unresolved scenario; label-provenance requires review"
+  }
 }
