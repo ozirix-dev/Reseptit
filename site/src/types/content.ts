@@ -46,7 +46,7 @@ export interface RecipeEntry {
   slug: string;
   locale: RecipeLocale;
   title: string;
-  category: "alkuruoka" | "paaruoka" | "jalkiruoka" | "leivonnainen" | "aamupala";
+  category: "alkuruoka" | "paaruoka" | "jalkiruoka" | "leivonnainen" | "aamupala" | "valipala";
   dietClass: RecipeDietClass | null;
   routePath: string;
   image: RecipeImage | null;

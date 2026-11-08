@@ -72,7 +72,7 @@ test("bounded page data, navigation cache, failures, history and multilingual st
     await page.locator("#recipe-search").fill("kukkakaali");
     await page.waitForFunction(() => location.search.includes("kukkakaali"));
     assert.equal(dataRequests.length, requestsBeforeTyping);
-    await page.locator(".site-nav a[lang=en]").click();
+    await page.locator(".site-language-nav a[lang=en]").click();
     await page.getByRole("searchbox", { name: "Search recipes" }).waitFor();
     assert.equal(dataRequests.length, requestsBeforeTyping + 1);
     assert.deepEqual(errors, []);
@@ -83,7 +83,7 @@ test("bounded page data, navigation cache, failures, history and multilingual st
       await failing.goto(`${base}/`);
       await failing.locator(".recipe-filters").waitFor();
       await failing.route("**/data/*.json", (route) => route.fulfill({ status: body === "missing" ? 404 : 200, contentType: "application/json", body }));
-      await failing.locator(".site-nav a[lang=sv]").click();
+      await failing.locator(".site-language-nav a[lang=sv]").click();
       await failing.getByRole("heading", { name: "Sidan kunde inte laddas" }).waitFor();
       assert.equal(await failing.getByRole("link", { name: "Försök igen" }).getAttribute("href"), "/Reseptit/sv/recept/");
       await failing.close();

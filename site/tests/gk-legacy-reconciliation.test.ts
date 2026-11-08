@@ -9,6 +9,7 @@ import {prepareLegacyGkCandidates,verifyLegacyCandidateInput,verifyLegacyCandida
 import {reviewedSourceHashMatches} from '../scripts/afcd-column-correction';
 import {glycemicLoadEvidenceHash,glycemicLoadInputHash} from '../scripts/glycemic-load-recipe-binding';
 import {roundGlycemicLoadForDisplay} from '../scripts/glycemic-load-model';
+import {historicalFarinataForApprovedPanVersion} from '../scripts/gk100-farinata-sealed-source';
 import {fileURLToPath} from 'node:url';
 
 const root=fileURLToPath(new URL('../../',import.meta.url));
@@ -20,7 +21,7 @@ const before=json('docs/nutrition/gk-legacy-reconciliation/baseline.json');
 const report=json('tmp/nutrition/glycemic-load-pilot.json');
 
 test('Live original results preserve frozen history plus the exact reviewed transitions; all87 variants and macros stay identical',()=>{
- assert.equal(report.results.length,333);
+ assert.equal(report.results.length,338); // five post-baseline classics remain in live reporting
  assertOriginalContentTransition(report);
  const historical = restoreBeforeOriginalContent(structuredClone(report));
  const requiresP1=requiresP1SourceCorrection(root);
@@ -42,8 +43,24 @@ test('Live original results preserve frozen history plus the exact reviewed tran
  assert.equal(report.gkOnlyVariants.length,87);
  for(const v of report.gkOnlyVariants)assert.equal(sha(v),before.variantHashes[v.recipeId+'/'+v.versionId],v.recipeId);
  const inventory = json('tmp/nutrition/audit.json').inventory;
+ // The approved oven-farinata editorial correction changed the full-file
+ // SHA in nutrition audit provenance, but not its amounts or macro values.
+ // Reconstruct ONLY the exact reviewed source for the frozen inventory check.
+ const farinataPath='reseptit/aamupalat/valimerellinen-farinata-aamupalaksi.md';
+ const publishedFarinata=read(farinataPath).replaceAll('\r\n','\n');
+ const historicalFarinata=historicalFarinataForApprovedPanVersion(farinataPath,publishedFarinata);
+ const publishedFarinataHash=createHash('sha256').update(publishedFarinata).digest('hex');
+ const historicalFarinataHash=createHash('sha256').update(historicalFarinata).digest('hex');
  for (const lineEnding of ['\n', '\r\n']) {
-  const withLineEndings = inventory.map((row: any) => ({...row, notes: row.notes.replaceAll('\r\n', '\n').replaceAll('\n', lineEnding)}));
+  const withLineEndings = inventory.map((row: any) => {
+   const normalNotes=row.notes.replaceAll('\r\n', '\n').replaceAll('\n', lineEnding);
+   if(row.recipe_id!=='valimerellinen-farinata-aamupalaksi'||historicalFarinata===publishedFarinata){
+    return {...row,notes:normalNotes};
+   }
+   assert.equal(row.source_path,farinataPath);
+   assert.equal(row.source_content_hash,publishedFarinataHash,'only the reviewed farinata source may be normalized');
+   return {...row,notes:normalNotes,source_content_hash:historicalFarinataHash};
+  });
   assert.equal(sha(lf(originalContentInventoryBefore(withLineEndings))),before.macroInventorySha256);
  }
  assert.equal(sha(report.giSourcePolicy),before.currentSourcePolicySha256);
@@ -55,6 +72,17 @@ test('Live original results preserve frozen history plus the exact reviewed tran
  assert.equal(peach.unroundedGlycemicLoadPerServing,3.96885);
  assert.equal(roundGlycemicLoadForDisplay(peach.glycemicLoadPerServing),4);
  assert.equal(report.results.find((r:any)=>r.recipeId==='pellava-puuro-pahkinoilla').glycemicLoadPerServing,null);
+});
+
+test('reviewed farinata normalization remains restricted to the exact approved source bytes',()=>{
+ const file='reseptit/aamupalat/valimerellinen-farinata-aamupalaksi.md';
+ const current=read(file).replaceAll('\r\n','\n');
+ const historical=historicalFarinataForApprovedPanVersion(file,current);
+ assert.notEqual(historical,current,'the current reviewed oven instructions must differ from the signed history');
+ assert.equal(createHash('sha256').update(historical).digest('hex'),'1b15fd29f9d833b84289c2d1345e27a0110c4bda7044ed6939d581ede947d237');
+ assert.equal(historicalFarinataForApprovedPanVersion(file,current.replace('55','56')),current.replace('55','56'),
+  'any other text change must not acquire legacy approval');
+ assert.equal(historicalFarinataForApprovedPanVersion('reseptit/aamupalat/other.md',current),current);
 });
 
 test('the source transition accepts only the exact3 corrected columns, preserving unrelated source and engine seals',()=>{

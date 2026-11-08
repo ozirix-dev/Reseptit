@@ -1,0 +1,54 @@
+{
+  "recipeId": "fetavaahto-kasvistikuilla",
+  "recipePath": "docs/reviews/valipalat/katselmointi/fetavaahto-kasvistikuilla.md",
+  "calculatedAt": "2026-11-06",
+  "status": "REVIEW_CANDIDATE",
+  "approvedForPublication": false,
+  "gkStatus": "HOLD",
+  "nutritionInputBasis": "EU_AVAILABLE_EXCLUDING_FIBRE, all edible uncooked quantities, no imputed missing nutrient",
+  "ingredientRecords": [
+    {
+      "sourceId": "fineli-11211-release-20",
+      "amountG": 120,
+      "note": "Drained goat-milk feta 25% fat, edible weight"
+    },
+    {
+      "sourceId": "fineli-34611-release-20",
+      "amountG": 100,
+      "note": "Plain lactose-free Greek yogurt 7% fat"
+    },
+    {
+      "sourceId": "fineli-11557-release-20",
+      "amountG": 10,
+      "note": "Undiluted lemon juice, cold preparation"
+    },
+    {
+      "sourceId": "fineli-369-release-20",
+      "amountG": 5,
+      "note": "Fresh dill, edible stalks and leaves"
+    },
+    {
+      "sourceId": "fineli-346-release-20",
+      "amountG": 200,
+      "note": "Fresh raw cucumber, edible trimmed mass"
+    },
+    {
+      "sourceId": "fineli-386-release-20",
+      "amountG": 150,
+      "note": "Raw red pepper with seeds/stalk removed, edible mass"
+    }
+  ],
+  "expectedMacrosPerServing": {
+    "carbsNetG": 3.53,
+    "carbsTotalG": 4.83,
+    "proteinG": 8.15,
+    "fatG": 9.42
+  },
+  "limitations": [
+    "Human verification of exact products and raw inputs pending",
+    "Actual food photograph missing from GitHub images",
+    "GK has no approved recipe-specific GI evidence and remains HOLD",
+    "Do not move candidate to calculations/ without separate reviewed source recipe publication",
+    "Do not mark kitchen testing completed without actual test"
+  ]
+}

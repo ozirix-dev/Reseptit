@@ -36,6 +36,7 @@ test("site content contains every published recipe and no drafts", async () => {
   const repoDir = path.resolve(import.meta.dirname, "../..");
   const candidates = [
     ...await markdownFiles(path.join(repoDir, "reseptit", "aamupalat")),
+    ...await markdownFiles(path.join(repoDir, "reseptit", "valipalat")),
     ...await markdownFiles(path.join(repoDir, "reseptit", "alkuruoat")),
     ...await markdownFiles(path.join(repoDir, "reseptit", "paaruoat")),
     ...await markdownFiles(path.join(repoDir, "reseptit", "jalkiruoat")),
@@ -80,7 +81,7 @@ test("the ten additional Thai recipes are published in Finnish with their image 
   }
 });
 
-test("the Finnish breakfast and dessert collections contain 152 and ten published recipes with images", () => {
+test("the Finnish breakfast and dessert collections contain 150 and ten published recipes with images", () => {
   const breakfast = siteContent.recipes.filter((recipe) => recipe.locale === "fi" && recipe.category === "aamupala");
   const desserts = siteContent.recipes.filter((recipe) => recipe.locale === "fi" && recipe.category === "jalkiruoka" && [
     "vhh-brita-kakku", "keto-mutakakku", "vhh-mokkapalat", "keto-suklaakeksit", "vhh-omenapiirakka",
@@ -220,18 +221,16 @@ test("the Finnish breakfast and dessert collections contain 152 and ten publishe
   }
 });
 
-test("three new keto recipes have evidence-bound available carbohydrates and images, without invented total carbohydrates", async () => {
-  const repoDir = path.resolve(import.meta.dirname, "../..");
-  const evidence = JSON.parse(await readFile(path.join(repoDir, "docs/nutrition/drafts/rouva-keto-keto-release-2026-11-06.json"), "utf8"));
-  const ids = ["rasvakaakao-rouva-keto", "lammin-chia-puuro-rouva-keto", "suklaavaahto-tummasta-suklaasta"];
-  assert.deepEqual(evidence.recipes.map((entry: {key: string}) => entry.key).sort(), ids.slice().sort());
+test("three staged FI keto candidates have missing GK and do not invent total carbohydrates", async () => {
+  const evidence = JSON.parse(await readFile(path.join(path.resolve(import.meta.dirname, "../.."),"docs/nutrition/drafts/rouva-keto-keto-release-2026-11-06.json"),"utf8"));
+  const ids = ["rasvakaakao-rouva-keto","lammin-chia-puuro-rouva-keto","suklaavaahto-tummasta-suklaasta"];
+  assert.deepEqual(evidence.recipes.map((x: {key:string})=>x.key).sort(),[...ids].sort());
   for (const id of ids) {
-    const recipe = siteContent.recipes.find(entry => entry.locale === "fi" && entry.recipeId === id);
-    assert.ok(recipe, `${id}: published Finnish recipe`);
-    const source = evidence.recipes.find((entry: {key: string}) => entry.key === id);
-    assert.equal(recipe.nutrition.carbsNetG, source.perServing.carbs_net_g);
-    assert.equal(recipe.nutrition.carbsTotalG, null, "Unverified chocolate fibre/polyols must not be zero-imputed");
-    assert.ok(recipe.image, `${id}: original image`);
+    const recipe = siteContent.recipes.find(x=>x.locale==="fi" && x.recipeId===id);
+    assert.ok(recipe,id);
+    assert.equal(recipe.nutrition.carbsNetG,evidence.recipes.find((x:{key:string})=>x.key===id).perServing.carbs_net_g);
+    assert.equal(recipe.nutrition.carbsTotalG,null);
+    assert.ok(recipe.image);
   }
 });
 

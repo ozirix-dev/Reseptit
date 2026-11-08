@@ -55,6 +55,9 @@ jobs:
       - name: Verify changed-path selector
         run: node site/scripts/select-ci-checks.test.mjs
 
+      - name: Verify browser-suite allowlist
+        run: node --test site/scripts/run-browser-suites.test.mjs
+
       - name: Select risk-based checks
         id: select
         env:
@@ -107,6 +110,34 @@ jobs:
           & npm @npmArguments
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
         working-directory: site
+
+      - name: Check new recipes for semantic duplicates (advisory)
+        if: steps.select.outputs.run_content == 'true'
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before || github.sha }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+        run: |
+          npm run audit:similarity -- --changed --limit=20 --output=site/similarity-review.md
+          cat similarity-review.md >> "$GITHUB_STEP_SUMMARY"
+        working-directory: site
+
+      - name: Full duplicate inventory when detector changes
+        if: contains(steps.select.outputs.changed_paths, 'recipe-similarity')
+        run: |
+          npm run audit:similarity -- --all --limit=30 --output=site/similarity-inventory.md
+          cat similarity-inventory.md >> "$GITHUB_STEP_SUMMARY"
+        working-directory: site
+
+      - name: Upload full duplicate audit for editorial review
+        if: contains(steps.select.outputs.changed_paths, 'recipe-similarity')
+        uses: actions/upload-artifact@v4
+        with:
+          name: recipe-similarity-inventory
+          path: |
+            site/similarity-inventory.md
+            site/similarity-inventory.json
+          if-no-files-found: error
+          retention-days: 14
 
       - name: Build the publishable site
         if: steps.select.outputs.run_build == 'true'
@@ -162,12 +193,13 @@ jobs:
         run: npm run test:static
         working-directory: site
 
-      - name: Run browser checks for UI changes
+      - name: Run focused Playwright browser suites
         if: steps.select.outputs.run_browser == 'true'
-        run: npm run test:browser
+        run: node scripts/run-browser-suites.mjs
         working-directory: site
         env:
           PLAYWRIGHT_BROWSER_CHANNEL: chrome
+          BROWSER_SUITES: ${{ steps.select.outputs.browser_suites }}
 
       - uses: actions/configure-pages@v6
         if: steps.select.outputs.publish == 'true'

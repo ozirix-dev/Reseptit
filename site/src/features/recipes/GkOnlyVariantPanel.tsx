@@ -1,4 +1,5 @@
 import { EstimateConfidence } from "../glycemic-load/GlycemicLoadEvidence";
+import { publicGkOnlySourceNote } from "./gk-only-public-note";
 import { gkCopy } from "../glycemic-load/glycemic-load-copy";
 import {Link} from 'react-router-dom';
 import type {RecipeLocale, RecipeEntry} from '@/types/content';
@@ -107,7 +108,7 @@ export function GkOnlyVariantPanel({variant:v,locale,servings,compact=false,orig
       {source.url.startsWith('#')
         ? <Link to={`${glycemicLoadPath(locale)}${source.url}`}>{source.title}</Link>
         : <a href={source.url} rel="noopener noreferrer">{source.title}</a>}
-      {" · "}{source.note}
+      {" · "}{publicGkOnlySourceNote(source)}
       <small>{source.kind}</small>
     </li>)}</ul>
   </details>

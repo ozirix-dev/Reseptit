@@ -6,10 +6,10 @@ category: leivonnainen
 language: fi
 status: published
 servings: 9
-carbs_net_per_serving_g: 41.33
-carbs_total_per_serving_g: 43.39
-protein_per_serving_g: 7.61
-fat_per_serving_g: 5.89
+carbs_net_per_serving_g: 41.27
+carbs_total_per_serving_g: 43.22
+protein_per_serving_g: 7.38
+fat_per_serving_g: 5.33
 time_total_min: 275
 difficulty: "keskitaso"
 main_ingredient:
@@ -24,9 +24,9 @@ tags:
   - leivonta
 image:
   src: leivonnaiset/kevyet-briossisampylat-clever-carrot.webp
-  alt: "Kevyet briossisämpylät – The Clever Carrot kuvitetut, kullanruskeat sämpylät"
-  width: 256
-  height: 144
+  alt: "Yhdeksän vaaleankullanruskeaa siemenetöntä briossisämpylää ritilällä; yhden halkaistun sämpylän ilmava sisus näkyy"
+  width: 1600
+  height: 900
 ingredients:
   - amount: 405
     unit: g
@@ -68,10 +68,6 @@ ingredients:
     unit: g
     item: "kananmunaa ilman kuorta"
     note: "pinnalle vatkattuna"
-  - amount: 9
-    unit: g
-    item: "seesaminsiemeniä"
-    note: "pinnalle"
 ---
 
 # Kevyet briossisämpylät – The Clever Carrot
@@ -89,15 +85,15 @@ Taikina on niukemmin voilla rikastettu kuin klassinen briossi. Pehmeät sämpyl�
 3. Lisää jauhoihin hiivaneste ja 62 g vatkattua kananmunaa. Vaivaa 8–10 minuuttia pehmeäksi ja kimmoisaksi taikinaksi. Taikina voi olla hieman tahmea.
 4. Peitä kulho ja anna kohota noin 1–3 tuntia, kunnes taikina on lähes kaksinkertainen.
 5. Jaa taikina yhdeksään yhtä suureen osaan ja pyöritä sileiksi sämpylöiksi. Asettele väljästi leivinpaperille; käytä tarvittaessa kahta peltiä. Kohota 60–90 minuuttia, kunnes sämpylät ovat selvästi pulleita.
-6. Kuumenna uuni 205 °C:seen. Sivele pinnat 15 g:lla vatkattua kananmunaa ja ripottele 9 g seesaminsiemeniä.
+6. Kuumenna uuni 205 °C:seen. Sivele pinnat 15 g:lla vatkattua kananmunaa.
 7. Halutessasi lisää uunin alaosassa olevaan kuumuutta kestävään metallivuokaan pieni määrä kuumaa vettä paiston alussa höyryn muodostamiseksi. Älä kaada vettä uunin pohjalle tai lasille. Paista sämpylöitä noin 15–20 minuuttia ja jäähdytä ritilällä.
 
 ## Muistiinpanot
 
 - Tausta: Emilie Raffan *Light Brioche Hamburger Buns* on suosittu resepti, jolla on The Clever Carrot -sivustolla noin 4,9/5 tähtiarvio ja yli 200 käyttäjäarviota. Tekijä kertoo kehittäneensä ohjetta New York Timesin briossisämpylän pohjalta. [Alkuperäinen resepti](https://www.theclevercarrot.com/2013/05/light-brioche-hamburger-buns/).
 - Alkuperäinen ohje tuottaa kahdeksan sämpylää. Jauhojen cup-mitat on muunnettu tässä painoksi käyttäen 120 g/cup -arviota ennen yhdeksälle skaalausta; eri jauhojen tilavuuspaino voi vaihdella. Koepaisto tarvitaan lopulliseen reseptivarmennukseen.
-- Ravintoarvio sisältää punnitun 15 g:n voitelumunan ja 9 g:n seesaminsiemenet. Veden haihtuminen ei muuta yhden sämpylän koko taikinaerästä jaettua ainesosapohjaista ravintoaine-energiaa.
+- Ravintoarvio sisältää punnitun 15 g:n voitelumunan. Seesamia ei lisätä tähän kuvassa näkyvään versioon. Veden haihtuminen ei muuta yhden sämpylän koko taikinaerästä jaettua ainesosapohjaista ravintoaine-energiaa.
 - GK-lukua ei julkaista ennen hyväksyttyä GI-lähdesidosta vaaleaan, munaa ja voita sisältävään leivonnaiseen.
-- Kuva on tekoälyllä tehty kuvitus. Sisältää vehnää, maitoa, kananmunaa ja seesamia.
+- Kuva on tekoälyllä tehty kuvitus. Sisältää vehnää, maitoa ja kananmunaa. Kuvassa yhden halkaistun sämpylän vaalea sisus näkyy.
 
-- Arvio per sämpylä: imeytyvät hiilihydraatit 41,33 g, kokonais-CHO (sis. kuitu) 43,39 g, proteiini 7,61 g, rasva 5,89 g. Arvio perustuu Fineli Release 20- ja AFCD Release 3 -ainesosatietoihin; valmistetta ei ole analysoitu laboratoriossa.
+- Arvio per sämpylä: imeytyvät hiilihydraatit 41,27 g, kokonais-CHO (sis. kuitu) 43,22 g, proteiini 7,38 g, rasva 5,33 g. Arvio perustuu Fineli Release 20- ja AFCD Release 3 -ainesosatietoihin; valmistetta ei ole analysoitu laboratoriossa.

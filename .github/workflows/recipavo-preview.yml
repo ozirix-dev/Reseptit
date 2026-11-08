@@ -1,0 +1,41 @@
+name: Recipavo preview (non-deploy)
+
+on:
+  pull_request:
+    paths:
+      - "site/src/SeoMeta.tsx"
+      - "site/src/features/recipes/RecipesPage.tsx"
+      - "site/src/features/recipes/recipavo-hero.ts"
+      - "site/src/features/recipes/home-preview.ts"
+      - "site/src/features/recipes/home-preview.css"
+      - "site/tests/recipavo-preview.browser.test.ts"
+      - ".github/workflows/recipavo-preview.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  preview:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+      - name: Install dependencies
+        working-directory: site
+        run: npm ci
+      - name: Build preview with noindex
+        working-directory: site
+        env:
+          VITE_RECIPAVO_HERO_PREVIEW: "true"
+        run: npm run build
+      - name: Verify preview hydration and navigation (never deploy)
+        working-directory: site
+        env:
+          VITE_RECIPAVO_HERO_PREVIEW: "true"
+          PLAYWRIGHT_BROWSER_CHANNEL: chrome
+        run: npx tsx --test tests/recipavo-preview.browser.test.ts

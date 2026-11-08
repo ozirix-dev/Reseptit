@@ -24,9 +24,9 @@ tags:
   - leivonta
 image:
   src: leivonnaiset/hampurilaissampylat-moomie.webp
-  alt: "Moomien legendaariset hampurilaissämpylät kuvitetut, kullanruskeat sämpylät"
-  width: 256
-  height: 144
+  alt: "Yhdeksän leveää, seesaminsiemenillä koristeltua kullanruskeaa hampurilaissämpylää väljästi uunipellillä"
+  width: 1600
+  height: 900
 ingredients:
   - amount: 473
     unit: g

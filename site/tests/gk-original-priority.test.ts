@@ -40,14 +40,14 @@ function recipeMarkup(recipeId: string, locale: typeof locales[number]) {
 }
 
 test('original 156, variants 79, studies 8 and legacy 236 are disjoint scopes with a 106-recipe original target gap', () => {
-  assert.deepEqual([counts.total,counts.originalNumeric,counts.variantNumeric,counts.numericRecipes,counts.studyServingRecipeIds.length,counts.legacyNumericRecipes], [333,156,79,235,8,236]);
-  assert.deepEqual([counts.originalTarget,counts.originalTargetGap], [267,111]);
+  assert.deepEqual([counts.total,counts.originalNumeric,counts.variantNumeric,counts.numericRecipes,counts.studyServingRecipeIds.length,counts.legacyNumericRecipes], [338,156,79,235,8,236]);
+  assert.deepEqual([counts.originalTarget,counts.originalTargetGap], [271,115]);
   assert.equal(counts.originalRecipeIds.length,156);
   assert.equal(counts.variantRecipeIds.length,79);
   assert.ok(counts.studyServingRecipeIds.includes(manakishStudyBinding.recipeId));
   assert.ok(!counts.numericRecipeIds.includes(manakishStudyBinding.recipeId));
   assert.equal(new Set([...counts.originalRecipeIds,...counts.variantRecipeIds]).size,235);
-  assert.deepEqual(report.coverageViews.originalRecipe,{total:333,numeric:156,missing:177});
+  assert.deepEqual(report.coverageViews.originalRecipe,{total:338,numeric:156,missing:182});
   assert.equal(report.coverageViews.legacyMixed.historicalOnly,true);
 });
 
@@ -75,13 +75,13 @@ test('coverage copy shows original target and independent variant/study counts i
   for(const locale of locales){
     const html=renderToStaticMarkup(createElement(GkCoverageSummary,{coverage:counts,locale}));
     assert.ok(html.includes(coverageCopy[locale].title));
-    assert.ok(html.includes('156/333'));
+    assert.ok(html.includes('156/338'));
     assert.ok(html.includes('data-gk-coverage="VARIANT_COVERAGE"><strong>79'));
     assert.ok(html.includes('data-gk-coverage="STUDY_SERVINGS"><strong>8'));
-    assert.ok(html.includes('235/333'));
-    assert.ok(html.includes('267/333'));
-    assert.ok(html.includes('<strong>111</strong>'));
-    assert.ok(!html.includes('236/333'));
+    assert.ok(html.includes('235/338'));
+    assert.ok(html.includes('271/338'));
+    assert.ok(html.includes('<strong>115</strong>'));
+    assert.ok(!html.includes('236/338'));
   }
 });
 

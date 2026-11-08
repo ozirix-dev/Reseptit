@@ -1,0 +1,289 @@
+{
+  "createdAt": "2026-11-06",
+  "status": "DRAFT_SOURCE_MAPPING_ONLY",
+  "published": false,
+  "publicationAuthorized": false,
+  "glycemicLoadStatus": "HOLD_ALL",
+  "sourceDataset": "docs/nutrition/food-records.json",
+  "recipes": [
+    {
+      "id": "tonnikalatayte-kurkkukupeissa",
+      "status": "REVIEW_REQUIRED",
+      "gk": "HOLD",
+      "sourceFile": "docs/reviews/valipalat/katselmointi/tonnikalatayte-kurkkukupeissa.md",
+      "servings": 4,
+      "ingredients": [
+        {
+          "grams": 160,
+          "unit": "g",
+          "item": "tonnikalaa vedessä säilöttynä, valutettuna syötävää osaa",
+          "sourceId": "fineli-11067-2026-10-25",
+          "match": "REVIEW",
+          "note": "TONNIKALA VEDESSÄ on täsmäruokalaji, mutta valutetun tuotteen massa ja koostumustieto varmistettava"
+        },
+        {
+          "grams": 40,
+          "unit": "g",
+          "item": "täysrasvaista majoneesia (tuote määritetään ennen laskentaa)",
+          "sourceId": "afcd-F005441-release-3",
+          "match": "PROVISIONAL",
+          "note": "AFCD kaupallinen majoneesi ei ole valitun majoneesin tuotetieto"
+        },
+        {
+          "grams": 300,
+          "unit": "g",
+          "item": "kurkkua kuppien valmistamisen jälkeen, syötävää osaa",
+          "sourceId": "fineli-346-release-20",
+          "match": "EXACT",
+          "note": "Kurkku syötävä nettomassa kuppien koverruksen jälkeen"
+        },
+        {
+          "grams": 40,
+          "unit": "g",
+          "item": "raakaa varsiselleriä, hienonnettuna",
+          "sourceId": "fineli-339-release-20",
+          "match": "EXACT",
+          "note": "Raaka varsiselleri"
+        },
+        {
+          "grams": 10,
+          "unit": "g",
+          "item": "laimentamatonta sitruunamehua",
+          "sourceId": "fineli-11557-release-20",
+          "match": "EXACT",
+          "note": "Laimentamaton sitruunamehu"
+        },
+        {
+          "grams": 5,
+          "unit": "g",
+          "item": "tuoretta tilliä",
+          "sourceId": "fineli-369-release-20",
+          "match": "EXACT",
+          "note": "Tuore tilli"
+        }
+      ],
+      "nutritionStatus": "UNPUBLISHED",
+      "publicationAuthorized": false
+    },
+    {
+      "id": "rapeat-siemennakkarit",
+      "status": "REVIEW_REQUIRED",
+      "gk": "HOLD",
+      "sourceFile": "docs/reviews/valipalat/katselmointi/rapeat-siemennakkarit.md",
+      "servings": 12,
+      "ingredients": [
+        {
+          "grams": 80,
+          "unit": "g",
+          "item": "kuorittuja auringonkukansiemeniä",
+          "sourceId": "afcd-F008215-2026-10-24",
+          "match": "REVIEW",
+          "note": "Kuoritut auringonkukansiemenet: tarkista AFCD:n muoto ja tuotemerkki"
+        },
+        {
+          "grams": 60,
+          "unit": "g",
+          "item": "pellavansiemenrouhetta",
+          "sourceId": "afcd-F008210-release-3",
+          "match": "PROVISIONAL",
+          "note": "Kokonaisen pellavan koostumusvertailu ei välttämättä kata valittua rouhetta"
+        },
+        {
+          "grams": 40,
+          "unit": "g",
+          "item": "kuorittuja seesaminsiemeniä",
+          "sourceId": "fineli-34245-2026-10-24",
+          "match": "REVIEW",
+          "note": "Kuoritut valkoiset seesaminsiemenet; varmista tuote"
+        },
+        {
+          "grams": 25,
+          "unit": "g",
+          "item": "chiansiemeniä",
+          "sourceId": "fineli-34847-2026-10-25",
+          "match": "REVIEW",
+          "note": "Chiansiemenet, tuotteen muoto/tietueen soveltuvuus"
+        },
+        {
+          "grams": 10,
+          "unit": "g",
+          "item": "psylliumsiemenkuorijauhetta",
+          "sourceId": "fineli-31681-2026-10-25",
+          "match": "REVIEW",
+          "note": "Psylliumsiemenkuorijauhe"
+        },
+        {
+          "grams": 220,
+          "unit": "g",
+          "item": "vettä",
+          "sourceId": null,
+          "match": "NON_NUTRITIVE",
+          "note": "220 g puhdasta vettä, ravintoarvovaikutus 0 dokumentoitava"
+        },
+        {
+          "grams": 15,
+          "unit": "g",
+          "item": "oliiviöljyä",
+          "sourceId": "fineli-536-release-20",
+          "match": "EXACT",
+          "note": "Oliiviöljy, 15 g"
+        },
+        {
+          "grams": 3,
+          "unit": "g",
+          "item": "suolaa",
+          "sourceId": null,
+          "match": "NON_NUTRITIVE",
+          "note": "3 g suolaa: varmista paikallinen nollaravintoainelähde"
+        }
+      ],
+      "nutritionStatus": "UNPUBLISHED",
+      "publicationAuthorized": false
+    },
+    {
+      "id": "jalapeno-poppers-pekonilla",
+      "status": "REVIEW_REQUIRED",
+      "gk": "HOLD",
+      "sourceFile": "docs/reviews/valipalat/katselmointi/jalapeno-poppers-pekonilla.md",
+      "servings": 6,
+      "ingredients": [
+        {
+          "grams": 150,
+          "unit": "g",
+          "item": "tuoreiden jalapeñojen syötävää osaa, kanta ja siemenet poistettu",
+          "sourceId": "afcd-F002901-2026-10-25",
+          "match": "PROVISIONAL",
+          "note": "Punainen chili ei ole jalapeñon tarkka vastine"
+        },
+        {
+          "grams": 120,
+          "unit": "g",
+          "item": "maustamatonta tuorejuustoa, rasvaa noin 20 %",
+          "sourceId": "fineli-34765-release-20",
+          "match": "EXACT",
+          "note": "Tuorejuusto 20 %"
+        },
+        {
+          "grams": 60,
+          "unit": "g",
+          "item": "cheddarjuustoraastetta, rasvaa noin 34 %",
+          "sourceId": "fineli-698-release-20",
+          "match": "EXACT",
+          "note": "Cheddar 34 %"
+        },
+        {
+          "grams": 90,
+          "unit": "g",
+          "item": "pekonia, rasvaa noin 32 %, raakapaino",
+          "sourceId": "fineli-707-2026-10-24",
+          "match": "REVIEW",
+          "note": "Pekoni 32 %, raakasyöte, paistohävikki auki"
+        }
+      ],
+      "nutritionStatus": "UNPUBLISHED",
+      "publicationAuthorized": false
+    },
+    {
+      "id": "rapeat-kesakurpitsalastut",
+      "status": "REVIEW_REQUIRED",
+      "gk": "HOLD",
+      "sourceFile": "docs/reviews/valipalat/katselmointi/rapeat-kesakurpitsalastut.md",
+      "servings": 3,
+      "ingredients": [
+        {
+          "grams": 350,
+          "unit": "g",
+          "item": "kesäkurpitsan syötävää osaa, ohueksi viipaloituna",
+          "sourceId": "fineli-389-release-20",
+          "match": "EXACT",
+          "note": "Kesäkurpitsa 350 g raakaa syötävää osaa"
+        },
+        {
+          "grams": 10,
+          "unit": "g",
+          "item": "oliiviöljyä",
+          "sourceId": "fineli-536-release-20",
+          "match": "EXACT",
+          "note": "Oliiviöljy 10 g, mahdollinen paperihävikki tutkittava"
+        },
+        {
+          "grams": 30,
+          "unit": "g",
+          "item": "parmesaanijuustoa raasteena",
+          "sourceId": "afcd-F002479-release-3",
+          "match": "REVIEW",
+          "note": "AFCD parmesaani, rasvaisuus ja tuote"
+        },
+        {
+          "grams": 2,
+          "unit": "g",
+          "item": "savupaprikajauhetta",
+          "sourceId": "afcd-F006316-release-3",
+          "match": "PROVISIONAL",
+          "note": "Tavallinen paprika ei ole täsmä savupaprika"
+        }
+      ],
+      "nutritionStatus": "UNPUBLISHED",
+      "publicationAuthorized": false
+    },
+    {
+      "id": "keto-suklaapallot",
+      "status": "REVIEW_REQUIRED",
+      "gk": "HOLD",
+      "sourceFile": "docs/reviews/valipalat/katselmointi/keto-suklaapallot.md",
+      "servings": 12,
+      "ingredients": [
+        {
+          "grams": 120,
+          "unit": "g",
+          "item": "mantelijauhoa, täsmätuote valitaan ennen laskentaa",
+          "sourceId": "afcd-F006077-2026-10-24",
+          "match": "REVIEW",
+          "note": "Almond meal - jauhatuksen ja tuotteen soveltuvuus"
+        },
+        {
+          "grams": 50,
+          "unit": "g",
+          "item": "voita",
+          "sourceId": "fineli-500-2026-10-24",
+          "match": "EXACT",
+          "note": "Voi 50 g"
+        },
+        {
+          "grams": 20,
+          "unit": "g",
+          "item": "makeuttamatonta kaakaojauhetta",
+          "sourceId": "fineli-20-2026-10-24",
+          "match": "EXACT",
+          "note": "Makeuttamaton kaakao"
+        },
+        {
+          "grams": 30,
+          "unit": "g",
+          "item": "erytritolia (Foodin-tuote laskennan vertailuna)",
+          "sourceId": "foodin-erythritol-200g-label-2026-10-24",
+          "match": "REVIEW",
+          "note": "100 g hiilihydraattia / 100 g, joista 100 g polyoleja; EU_TOTAL_INCLUDING_POLYOLS - käsittele oikein"
+        },
+        {
+          "grams": 30,
+          "unit": "g",
+          "item": "kookoshiutaleita",
+          "sourceId": "fineli-382-2026-10-24",
+          "match": "REVIEW",
+          "note": "Kookoshiutaleet, tuote ja käyttämättä jäänyt kuorrute"
+        },
+        {
+          "grams": 20,
+          "unit": "g",
+          "item": "vettä",
+          "sourceId": null,
+          "match": "NON_NUTRITIVE",
+          "note": "20 g puhdasta vettä"
+        }
+      ],
+      "nutritionStatus": "UNPUBLISHED",
+      "publicationAuthorized": false
+    }
+  ]
+}

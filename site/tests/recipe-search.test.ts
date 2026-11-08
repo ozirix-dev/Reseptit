@@ -5,6 +5,7 @@ import { siteContent } from "../src/generated/content.generated";
 import { emptyRecipeFilters, filterRecipes, normalizeSearchText, parseRecipeFilters, recipeFiltersToSearch } from "../src/features/recipes/recipe-search";
 import { recipeFacets } from "../src/content/recipe-facets";
 import { isRecipavoHeroPreviewEnabled, recipavoHeroCopy } from "../src/features/recipes/recipavo-hero";
+import { homepageLabels, homepagePickLimit, homepagePicks, homepageTopics } from "../src/features/recipes/home-preview";
 import { glycemicLoadFilterCategories } from "../src/generated/glycemic-load-filters.generated";
 import { glycemicLoadPilotResults } from "../src/generated/glycemic-load-pilot.generated";
 
@@ -108,6 +109,13 @@ test("category and diet filters use structured recipe fields and combine with AN
   assert.ok(combined.every((recipe) => recipe.category === "paaruoka" && recipe.dietClass !== null));
 });
 
+test("valipala category survives URL filtering and combines with diet", () => {
+  const sample = { ...finnishRecipes[0], category: "valipala" as const, dietClass: "keto" as const };
+  const filters = parseRecipeFilters("?category=valipala&diet=keto", ["all", "valipala", "paaruoka"]);
+  assert.equal(recipeFiltersToSearch(filters), "?category=valipala&diet=keto");
+  assert.deepEqual(filterRecipes([sample, finnishRecipes[0]], filters, "fi").map(item => item.recipeId), [sample.recipeId]);
+});
+
 test("URL filters normalize whitespace and reject unknown categories and diet values", () => {
   const parsed = parseRecipeFilters("?q=%20lohi++kerma%20&category=unknown&diet=invalid", ["all", "paaruoka"]);
   assert.deepEqual(parsed, { query: "lohi kerma", category: "all", diet: "all" });
@@ -200,4 +208,34 @@ test("Recipavo phase-1 preview copy is localized and never promises unavailable 
   }
   // The feature must remain disabled in ordinary builds, including plain Node tests.
   if (!import.meta.env?.VITE_RECIPAVO_HERO_PREVIEW) assert.equal(isRecipavoHeroPreviewEnabled(), false);
+});
+
+test("Recipavo homepage preview examples are deterministic, localized and all link to published recipes", () => {
+  for (const locale of ["fi", "en", "sv", "th"] as const) {
+    const recipes = siteContent.recipes.filter((item) => item.locale === locale);
+    const originalOrder = recipes.map((item) => item.recipeId);
+    const picks = homepagePicks(recipes);
+    assert.equal(picks.length, Math.min(homepagePickLimit, recipes.length), locale);
+    assert.deepEqual(homepagePicks([...recipes].reverse()).map((item) => item.recipeId), picks.map((item) => item.recipeId), locale);
+    assert.equal(new Set(picks.map((item) => item.recipeId)).size, picks.length, locale);
+    assert.ok(picks.every((item) => item.locale === locale && item.routePath.startsWith("/") && recipes.includes(item)), locale);
+    assert.ok(new Set(picks.map((item) => item.category)).size >= 3, locale);
+    assert.deepEqual(recipes.map((item) => item.recipeId), originalOrder, "selection must not mutate the original order");
+    const topics = homepageTopics(recipes);
+    assert.ok(topics.length >= 4 && topics.length <= 6, locale);
+    assert.ok(topics.every((topic) => recipes.some((item) => topic.kind === "category"
+      ? item.category === topic.value : topic.value === "keto" ? item.dietClass === "keto" : item.dietClass !== null)), locale);
+    assert.ok(homepageLabels[locale].topics && homepageLabels[locale].picks && homepageLabels[locale].allRecipes(recipes.length), locale);
+  }
+});
+
+test("homepage preview keeps unillustrated recipes reachable when insufficient image picks exist", () => {
+  const illustrated = finnishRecipes.find((item) => item.image !== null)!;
+  const sample = [
+    { recipeId: "third", category: "aamupala" as const, image: null },
+    { recipeId: "first", category: "paaruoka" as const, image: illustrated.image },
+    { recipeId: "second", category: "jalkiruoka" as const, image: null },
+  ];
+  assert.deepEqual(homepagePicks(sample, 3).map((item) => item.recipeId), ["first", "third", "second"]);
+  assert.deepEqual(homepagePicks(sample, 0), []);
 });
