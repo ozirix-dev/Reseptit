@@ -35,3 +35,27 @@ Viiden julkaistun reseptin **ainesosakohtainen EU-imeytyvien hiilihydraattien al
 ## Julkaisuraja
 
 Tämä muutos on **pelkkä dokumentoitu tutkimuslaskenta**: viisi reseptiä pysyvät julkaistuina, niiden neljä makrokenttää `null`, eikä historia-GK-testien baselinea muuteta. Ei päivitystä tuotantosivuston numeroihin ennen lähde- ja laadunvarmistusta.
+
+## Proteiinin ja rasvan alustava erittely (V10-jatko)
+
+Täydensin nykyistä Fineli/AFCD-pohjaa yhdeksän yksilöidyn tuotteen saatavilla olevilla proteiini- ja rasvatiedoilla. Lähteet ja jokaisen 47 rivin laskentasyötteet löytyvät tiedostosta `docs/review/suomalaiset-klassikot-v10-makroehdokkaat-2026-11-08.json`. Arvot eivät ole mitattuja, eikä niiden näennäinen desimaalitarkkuus kuvaa todellista epävarmuutta.
+
+| Resepti | Proteiini g/annos (ehdokas) | Rasva g/annos (ehdokas) | Luokitus |
+| --- | ---: | ---: | --- |
+| Karjalanpiirakat | 2,79–2,89 | 1,44–2,47 | Kaikki syöterivit katettu ehdokastietueilla; voin ja kaulintajauhon määrä oletusväli |
+| Marry me -kanapasta | vähintään lähdetietueiden summa 48,53 | vähintään lähdetietueiden summa 32,01 | Kuivatun timjamin (3 g/erä) P/F puuttuvat; Royalin ilmoitusperuste epäselvä |
+| Uunifetapasta | 17,37 | 22,32 | Kaikki syöterivit katettu ehdokastietueilla; rasvassa Mevgal 24,5 g/100 g eikä aiempi yleisfetan 25 g |
+| Raejuustobagelit | 15,90–17,06 | 2,11–2,96 | Munavoitelun todellinen käyttö 0–55 g; täsmäjauho ja leivinjauhe avoinna |
+| Linssimakaronilaatikko | vähintään lähdetietueiden summa 20,48 | vähintään lähdetietueiden summa 9,33 | Kuivatun timjamin (1 g/erä) P/F puuttuvat; lähdevastaavuuksia tarkistettava |
+
+**Vähintään** tarkoittaa osalaskentaa, ei todennettua ravintosisällön alarajaa. Epävarmat pakkaus- ja massatiedot voivat muuttaa lukuja kumpaankin suuntaan. De Cecco -pastan 72 g CHO/100 g -ristiriitaa ei ole ratkaistu: samaan tuotteeseen vahvistetun 69 g P/F-mallin rinnalla eri hiilihydraattiarvo on edelleen erillinen skenaario.
+
+Uusina tarkistettuina tuotelähteinä lisäksi:
+- De Cecco Spaghetti n°12: CHO 69 g, P 14 g, F 1,5 g / 100 g – https://www.k-ruoka.fi/kauppa/tuote/de-cecco-spaghetti-n-12-500g-8001250120120
+- Barilla Penne Rigate n°73: CHO 71 g, P 13 g, F 2 g / 100 g – https://www.s-kaupat.fi/tuote/barilla-penne-rigate-no73-durumvehnasta-valmistettu-pasta-500g/8076802085738
+- Mevgal feta PDO: CHO 0,7 g, P 16,5 g, F 24,5 g / 100 g – https://www.filos.fi/tuote/mevgal-laktoositon-fetajuusto-pdo-200g/
+- Pirkka puuroriisi: CHO 77 g, P 7,4 g, F 0,7 g / 100 g – https://www.k-ruoka.fi/kauppa/tuote/pirkka-puuroriisi-1kg-6410405257864
+- Coop vihreät linssit: CHO 43 g, P 21 g, F 1,5 g / 100 g – https://www.s-kaupat.fi/tuote/coop-vihreat-linssit-400-g/7340191132238
+- Royal aurinkokuivattu tomaatti: CHO 16 g, P 5,5 g, F 9,3 g / 100 g – https://www.s-kaupat.fi/tuote/royal-330200g-aurinkokuivattu-tomaattisuikale-oljyssa/5201194037031 (80 g:n valutetun tuotteen soveltuvuus edelleen HOLD).
+
+**Energia-arvoja ei julkaista** tässä erässä: joillakin yleisruokatietueilla energiatietue puuttuu, osa rasva-/proteiinitiedoista on osalaskentaa ja kuituosuus vaihtelee. Tarvitaan lähdekohtaisesti hyväksyttyjen kilokaloriarvojen/energian laskennan yhdenmukainen malli.
