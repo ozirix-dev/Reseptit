@@ -80,6 +80,12 @@ Ensimmäinen toteutus sijoitti kolme uutta reseptiluonnosta `reseptit/raakileet/
 
 Tämän katselmointierän CI on punainen, samoin [samanaikainen main-CI #42199510115](https://github.com/ozirix-dev/Reseptit/actions/runs/42199510115). Molemmissa sama **20 GK-historialukittua testiä** epäonnistuu, mm. testin pysyvä odotus `92` vs toteutunut `95` sekä julkaistujen reseptien määrän `327` vs `330`. Ero vastaa viimeksi lisättyjä **kolmea briossireseptiä** mainissa; se ei ole tämän tutkimus-PR:n julkaisu tai oikeuta päivittämään historiaa ilman katselmusta. Tässä PR:ssä ei ole muutoksia `reseptit/`, `site/` eikä GK-lähdetietueisiin. CI-ongelman korjauksen omistaja on yleinen GK-regressiotestien ylläpito. **Ei Ready/mergeä ennen vihreää exact-HEAD-tarkastusta tai erikseen dokumentoitua, asianmukaisesti hyväksyttyä baseline-korjausta.**
 
+## Ajantasainen katselmointi 8.11.2026
+
+**[Tarkka julkaisuporttikatselmus ja valmistelun tulokset](julkaisuportit-2026-11-08.md)** täydentää alla olevaa 6.11. historiakirjausta. Tutkimus-PR:n HEAD `8001db15` läpäisi GitHub CI:n (ajo 42370488678) ennen tätä lisäystä. PR #351:n aiempi GK-historiatestiregressio on korjattu. Alla olevat vanhat punaisen CI:n merkinnät säilytetään tapahtumahistoriana, **eivät nykytilan väitteenä**.
+
+Tutkimusaineiston arkistointi ja valmiiden reseptien julkaisu ovat eri hyväksynnät. Vihreä CI ei vahvista koekeittiötä, pastöroitujen munatuotteiden vaahtoutuvuutta, pakkauksia, tekijänoikeuksia tai tuotteeseen ja valmistukseen sopivaa GI:tä.
+
 ## Portit ennen Ready/merge/julkaisua
 
 1. Hyväksy kolme punnittavaa keittiösovitetta ja pizzan vertailun rajaus; reseptit on koetehtävä. Chia-puuron suolamäärä on toimituksellisesti pienennetty.

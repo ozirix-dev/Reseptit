@@ -38,7 +38,7 @@ Tumma suklaa tekee rasvakaakaosta pehmeän ja runsaskaakaoisen. Tämä **oma ket
 
 ## Muistiinpanot
 
-- Punnittu versio; rasvaista kaakaota ei ole tarkoitus kuvata vähäkaloriseksi juomaksi.
+- Grammoina määritelty tutkimusversio, jota **ei ole vielä valmistettu eikä punnittu koekeittiössä**; rasvaista kaakaota ei ole tarkoitus kuvata vähäkaloriseksi juomaksi.
 - Makrot / iso kuppi (oma arvio): **350,08 kcal**, imeytyvä hiilihydraatti **3,69 g**, proteiini **3,27 g**, rasva **35,38 g**. Kokonaishiilihydraatti puuttuu suklaan kuitutiedon vuoksi.
 - **GK-tutkimusskenaario (EI julkaistava GK):** suklaan 29 GI -keskiarvolla **0,61**, lisäksi **1,59 g**/annos GI-tiedoltaan puuttuvia ainesosia. Arvion validointi ja sidokset kesken.
 - Idea: [Sulamo – Rasvakaakao, Rouva Keto](https://www.sulamo.fi/resepti/ohje/354018/rasvakaakao-rouva-keto). Tuote: [Lindt Suomen tiedot](https://www.lindt.fi/fi/lindt-excellence-dark-90-bar-100g-fi-fi-03046920029759).

@@ -39,7 +39,7 @@ Suklaa ja kananmuna ovat tämän yksinkertaisen vaahdon kaksi perusraaka-ainetta
 
 - Makrot / 1/4 erää (oma arvio): **209,19 kcal**, imeytyvä hiilihydraatti **3,64 g**, proteiini **7,95 g**, rasva **18,06 g**. Kokonaishiilihydraatti vaatii valmistajan kuitutiedon.
 - **GK-tutkimusskenaario (EI julkaistava GK):** suklaan GI 29 -keskiarvolla **1,02**, lisäksi **0,14 g**/annos GI-tiedoltaan puuttuvia munan pieniä osuuksia. Suklaa–muna-annosta ei ole mitattu.
-- Sisältää oikeaa sokeria, vaikka on runsaaskaakaoinen. Pastöroitujen munatuotteiden valmistaja ja pakkauksen ravintoluvut varmistettava ennen julkaisua.
+- Sisältää oikeaa sokeria, vaikka on runsaaskaakaoinen. Käytä vain nimenomaan **pastöroituja** keltuais- ja valkuaistuotteita, joiden pakkaus sallii käytön kuumentamattomassa jälkiruoassa; varmista myös valkuaisen vaahtoutuvuus ja käyttöpäivä. Tavallisia kuorimunia ei korvata niillä hiljaisesti. Noudata tuotteen kylmäsäilytysohjetta. Valmistaja, tuotetunnukset ja pakkauksen ravintoluvut varmistettava ennen julkaisua.
 - Idea: [Sulamo – Todellinen suklaaherkku (Rouva keto)](https://www.sulamo.fi/resepti/ohje/455804/todellinen-suklaaherkku-rouva-keto). Tuote: [Lindt Suomen tiedot](https://www.lindt.fi/fi/lindt-excellence-dark-90-bar-100g-fi-fi-03046920029759).
 - Oma ohje. Ei korvaa jo olemassa olevaa vanhaa otsikkotiedostoa `suklaamousse-keto.md` ennen päällekkäisyyskatselmusta.
 - [Ravinto- ja GK-katselmointipaketti](../keto-variants-2026-11-06.json).
