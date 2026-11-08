@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-11-08",
-  "status": "PRELIMINARY_MACROS_PARTIALLY_SUPPORTED_NOT_FOR_PUBLICATION",
+  "status": "PRELIMINARY_MACRO_COVERAGE_COMPLETE_BUT_PRODUCT_MATCHES_AND_MASSES_UNVERIFIED",
   "method": "sum dry/raw listed input masses per declared serving; amounts reserved for glazing/dusting bounded from 0 to recipe allotment; unavailable macronutrients remain unknown, not zero; sources as cited; do not substitute exact-product labels for a different variant",
   "productLabels": {
     "pirkka-puuroriisi-6410405257864": {
@@ -376,20 +376,16 @@
           "missingPositions": []
         },
         "protein": {
-          "candidateMin": 48.53,
-          "candidateMax": 48.53,
-          "isComplete": false,
-          "missingPositions": [
-            10
-          ]
+          "candidateMin": 48.6,
+          "candidateMax": 48.6,
+          "isComplete": true,
+          "missingPositions": []
         },
         "fat": {
-          "candidateMin": 32.01,
-          "candidateMax": 32.01,
-          "isComplete": false,
-          "missingPositions": [
-            10
-          ]
+          "candidateMin": 32.07,
+          "candidateMax": 32.07,
+          "isComplete": true,
+          "missingPositions": []
         }
       },
       "rows": [
@@ -640,20 +636,26 @@
           "position": 10,
           "item": "kuivattua timjamia",
           "listedMassG": 3,
-          "sourceKind": "FOOD_RECORD",
+          "sourceKind": "FOOD_RECORD_SUPPLEMENTAL_PROTEIN_FAT_FROM_FINELI_DERIVED_SECONDARY",
           "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11194",
           "macrosPer100g": {
             "carbohydrate": 26.94,
-            "protein": null,
-            "fat": null
+            "protein": 9.1,
+            "fat": 7.4
           },
           "batchG": {
             "carbohydrate": {
               "min": 0.8082,
               "max": 0.8082
             },
-            "protein": null,
-            "fat": null
+            "protein": {
+              "min": 0.273,
+              "max": 0.273
+            },
+            "fat": {
+              "min": 0.222,
+              "max": 0.222
+            }
           },
           "retentionUnknown": false
         },
@@ -1154,20 +1156,16 @@
           "missingPositions": []
         },
         "protein": {
-          "candidateMin": 20.48,
-          "candidateMax": 20.48,
-          "isComplete": false,
-          "missingPositions": [
-            11
-          ]
+          "candidateMin": 20.49,
+          "candidateMax": 20.49,
+          "isComplete": true,
+          "missingPositions": []
         },
         "fat": {
-          "candidateMin": 9.33,
-          "candidateMax": 9.33,
-          "isComplete": false,
-          "missingPositions": [
-            11
-          ]
+          "candidateMin": 9.34,
+          "candidateMax": 9.34,
+          "isComplete": true,
+          "missingPositions": []
         }
       },
       "rows": [
@@ -1445,24 +1443,43 @@
           "position": 11,
           "item": "kuivattua timjamia",
           "listedMassG": 1,
-          "sourceKind": "FOOD_RECORD",
+          "sourceKind": "FOOD_RECORD_SUPPLEMENTAL_PROTEIN_FAT_FROM_FINELI_DERIVED_SECONDARY",
           "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11194",
           "macrosPer100g": {
             "carbohydrate": 26.94,
-            "protein": null,
-            "fat": null
+            "protein": 9.1,
+            "fat": 7.4
           },
           "batchG": {
             "carbohydrate": {
               "min": 0.2694,
               "max": 0.2694
             },
-            "protein": null,
-            "fat": null
+            "protein": {
+              "min": 0.091,
+              "max": 0.091
+            },
+            "fat": {
+              "min": 0.074,
+              "max": 0.074
+            }
           },
           "retentionUnknown": false
         }
       ]
+    }
+  ],
+  "supplementalSources": [
+    {
+      "food": "timjami, kuivattu",
+      "source": "https://fineli.fi/fineli/fi/elintarvikkeet/11194",
+      "crossCheck": "https://ravinto.ptjesse.fi/timjami-kuivattu/",
+      "per100g": {
+        "carbohydrate": 26.94,
+        "protein": 9.1,
+        "fat": 7.4
+      },
+      "note": "Fineli-derived secondary source; confirm official record before publication"
     }
   ]
 }
