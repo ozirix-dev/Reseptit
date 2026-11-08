@@ -29,7 +29,7 @@ const reviewedClassicFiles = new Set(postBaselineClassicIds.flatMap(id => [
 ]));
 const ketoRecipeSourceSha = "8d4a73a43c76473a1b0985b7437f31bc23a365da";
 const ketoPublishedFiles = new Set(postBaselineKetoIds.map(id =>
-  `reseptit/${id === "suklaavaahto-tummasta-suklaasta" ? "jalkiruoat" : "aamupalat"}/${id}.md`
+  `reseptit/${"aamupalat"}/${id}.md`
 ));
 const briochePublishedFiles = new Set(postBaselineBriocheIds.flatMap(id => [
   `reseptit/leivonnaiset/${id}.md`,
