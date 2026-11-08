@@ -14,6 +14,37 @@ export const postBaselineBriocheIds = [
 ] as const;
 const postBaselineBrioche = new Set<string>(postBaselineBriocheIds);
 
+// FI keto candidates enter only the live 337-recipe preview. Historical
+// snapshots exclude exactly these two with explicit null-GK guards.
+export const postBaselineKetoIds = [
+  "rasvakaakao-rouva-keto",
+  "lammin-chia-puuro-rouva-keto",
+] as const;
+const postBaselineKeto = new Set<string>(postBaselineKetoIds);
+function omitKetoForFrozenHistory(report: any) {
+  if (!report.results) return;
+  const added = report.results.filter((row: {recipeId: string}) => postBaselineKeto.has(row.recipeId));
+  if (!added.length) return;
+  assert.deepEqual(added.map((row: {recipeId: string}) => row.recipeId).sort(), [...postBaselineKetoIds].sort());
+  for (const row of added) {
+    assert.equal(row.status, "INSUFFICIENT SOURCE DATA", row.recipeId);
+    assert.equal(row.glycemicLoadPerServing, null, row.recipeId);
+    assert.equal(row.glycemicLoadRangePerServing, null, row.recipeId);
+  }
+  report.results = report.results.filter((row: {recipeId: string}) => !postBaselineKeto.has(row.recipeId));
+  if (report.calculationInputs) report.calculationInputs = report.calculationInputs.filter(
+    (row: {recipeId: string}) => !postBaselineKeto.has(row.recipeId));
+  if (report.summary) {
+    report.summary.recipes -= added.length;
+    report.summary.insufficientSourceData -= added.length;
+  }
+  if (report.autoIncludedRecipeIds) report.autoIncludedRecipeIds = report.autoIncludedRecipeIds.filter(
+    (id: string) => !postBaselineKeto.has(id));
+  for (const field of ["recipeBindingMismatches","calculationInputMismatches","calculationEvidenceMismatches"]) {
+    if (report[field]) report[field] = report[field].filter((id: string) => !postBaselineKeto.has(id));
+  }
+}
+
 // PR #311's five published classics are excluded only when reconstructing
 // the frozen GK history, never from the live site or calculation report.
 export const postBaselineClassicIds = [
@@ -96,6 +127,7 @@ function restoreRows(rows: any[], field: "results" | "calculationInputs") {
 }
 
 export function restoreBeforeOriginalContent(report: any) {
+  omitKetoForFrozenHistory(report);
   omitNewClassicsForFrozenHistory(report);
   omitBriocheForFrozenHistory(report);
   // This recipe was published on main after the historical 326-recipe baseline.
@@ -156,7 +188,7 @@ function assertMainAddition(report: any) {
     }
   }
   assert.deepEqual((report.autoIncludedRecipeIds ?? []).filter((key: string) =>
-    !postBaselineBrioche.has(key) && !postBaselineClassics.has(key)), [id]);
+    !postBaselineBrioche.has(key) && !postBaselineClassics.has(key) && !postBaselineKeto.has(key)), [id]);
   assert.deepEqual(report.results.filter((row: {recipeId: string}) => row.recipeId === id), [mainAddition.result]);
   if (report.calculationInputs) {
     assert.deepEqual(report.calculationInputs.filter((row: {recipeId: string}) => row.recipeId === id), [mainAddition.input]);
@@ -190,6 +222,9 @@ function inventoryRowWithLfNotes<T extends {notes: string}>(row: T): T {
 
 // Inventory rows carry recipe text metadata even when the macro values are missing.
 export function originalContentInventoryBefore(rows: any[]) {
+  const keto = rows.filter(row => postBaselineKeto.has(row.recipe_id));
+  if (keto.length) assert.deepEqual(keto.map(row => row.recipe_id).sort(), [...postBaselineKetoIds].sort());
+  rows = rows.filter(row => !postBaselineKeto.has(row.recipe_id));
   const classics = rows.filter(row => postBaselineClassics.has(row.recipe_id));
   if (classics.length) {
     assert.deepEqual(classics.map(row => row.recipe_id).sort(), [...postBaselineClassicIds].sort());

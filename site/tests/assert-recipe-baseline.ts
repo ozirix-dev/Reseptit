@@ -1,4 +1,4 @@
-import {mainAdditionFiles, postBaselineBriocheIds, postBaselineClassicIds} from "./original-content-transition";
+import {mainAdditionFiles, postBaselineBriocheIds, postBaselineClassicIds, postBaselineKetoIds} from "./original-content-transition";
 import assert from "node:assert/strict";
 import { execFileSync } from "node:child_process";
 import { readFileSync } from "node:fs";
@@ -27,6 +27,10 @@ const reviewedClassicFiles = new Set(postBaselineClassicIds.flatMap(id => [
   `reseptit/${classicCategory[id]}/${id}.md`,
   ...["en", "sv", "th"].map(locale => `kaannokset/${locale}/${classicCategory[id]}/${id}.md`),
 ]));
+const ketoRecipeSourceSha = "8d4a73a43c76473a1b0985b7437f31bc23a365da";
+const ketoPublishedFiles = new Set(postBaselineKetoIds.map(id =>
+  `reseptit/${id === "suklaavaahto-tummasta-suklaasta" ? "jalkiruoat" : "aamupalat"}/${id}.md`
+));
 const briochePublishedFiles = new Set(postBaselineBriocheIds.flatMap(id => [
   `reseptit/leivonnaiset/${id}.md`,
   `docs/nutrition/calculations/${id}.json`,
@@ -70,6 +74,11 @@ export function assertRecipeBaseline(root: string, baseline: string, ...protecte
       const approved = execFileSync("git", ["show", `${classicsCommit}:${file}`], { cwd: root, encoding: "utf8" });
       assert.equal(readFileSync(path.join(root, file), "utf8").replaceAll("\r\n", "\n"),
         approved.replaceAll("\r\n", "\n"), change);
+      continue;
+    }
+    if (status === "A" && ketoPublishedFiles.has(file)) {
+      const approved = execFileSync("git", ["show", `${ketoRecipeSourceSha}:${file}`], {cwd:root,encoding:"utf8"});
+      assert.equal(readFileSync(path.join(root,file),"utf8").replaceAll("\r\n","\n"), approved.replaceAll("\r\n","\n"), change);
       continue;
     }
     if (status === "A" && briochePublishedFiles.has(file)) {

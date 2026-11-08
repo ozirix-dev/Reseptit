@@ -4,6 +4,7 @@ import path from "node:path";
 import test from "node:test";
 import { siteContent as currentSiteContent } from "../src/generated/content.generated";
 import { parseMarkdown } from "../src/content/markdown";
+import { glycemicLoadPilotResults } from "../src/generated/glycemic-load-pilot.generated";
 
 
 // These historical batch expectations retain the exact main nutrition snapshots.
@@ -87,7 +88,7 @@ test("the Finnish breakfast and dessert collections contain 150 and ten publishe
     "vhh-brita-kakku", "keto-mutakakku", "vhh-mokkapalat", "keto-suklaakeksit", "vhh-omenapiirakka",
     "vhh-juustokakku", "vhh-raparperipiirakka", "vhh-korvapuustit", "vhh-mansikkakakku", "vhh-letut",
   ].includes(recipe.recipeId));
-  assert.equal(breakfast.length, 150);
+  assert.equal(breakfast.length, 152);
   assert.equal(desserts.length, 10);
   const documentedBreakfastNetCarbs = new Map([
     ["indonesialainen-ketoprak-aamiaiskulho", 44.21], ["indonesialainen-pisang-goreng-aamiaiseksi", 63.85],
@@ -108,6 +109,8 @@ test("the Finnish breakfast and dessert collections contain 150 and ten publishe
     ["uunimunat-pinaatilla", 1.3],
     ["halloumimunakas", 3.42],
     ["kaakao-kookos-chia", 2.53],
+    ["rasvakaakao-rouva-keto", 3.69],
+    ["lammin-chia-puuro-rouva-keto", 3.11],
     ["kurkku-oliivi-aamiaiskulho", 2.07],
     ["raejuusto-pesto-kasviskulho", 2.99],
     ["marjainen-chiavanukas", 3.51],
@@ -216,6 +219,24 @@ test("the Finnish breakfast and dessert collections contain 150 and ten publishe
       documentedBreakfastNetCarbs.get(recipe.recipeId) ?? null,
       "only recipes with documented nutrition estimates have values",
     );
+  }
+});
+
+test("three staged FI keto candidates have missing GK and do not invent total carbohydrates", async () => {
+  const evidence = JSON.parse(await readFile(path.join(path.resolve(import.meta.dirname, "../.."),"docs/nutrition/drafts/rouva-keto-keto-release-2026-11-06.json"),"utf8"));
+  const ids = ["rasvakaakao-rouva-keto","lammin-chia-puuro-rouva-keto"];
+  assert.deepEqual(evidence.recipes.map((x: {key:string})=>x.key).sort(),[...ids].sort());
+  for (const id of ids) {
+    const recipe = siteContent.recipes.find(x=>x.locale==="fi" && x.recipeId===id);
+    assert.ok(recipe,id);
+    assert.equal(recipe.nutrition.carbsNetG,evidence.recipes.find((x:{key:string})=>x.key===id).perServing.carbs_net_g);
+    assert.equal(recipe.nutrition.carbsTotalG,null);
+    const gk = glycemicLoadPilotResults.find(x => x.recipeId === id);
+    assert.ok(gk, `${id}: a GK audit result must exist`);
+    assert.equal(gk.status,"INSUFFICIENT SOURCE DATA",id);
+    assert.equal(gk.glycemicLoadPerServing,null,id);
+    assert.equal(gk.glycemicLoadRangePerServing,null,id);
+    assert.ok(recipe.image);
   }
 });
 
