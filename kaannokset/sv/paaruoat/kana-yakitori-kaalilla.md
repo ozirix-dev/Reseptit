@@ -64,7 +64,7 @@ translation_of: kana-yakitori-kaalilla
 
 ## Beskrivning
 
-Kycklingspett glaserade med soja och mirin, serverade med vitkål som snabbt mjukats i en panna med sesamolja. **Skillnad i den finska källan:** beskrivningen säger tamari men den strukturerade ingredienslistan säger sojasås. Här följs ingredienslistan tills källan har korrigerats.
+Kycklingspett glaserade med soja och mirin, serverade med vitkål som snabbt mjukats i en panna med sesamolja.
 
 ## Ingredienser
 
@@ -73,11 +73,11 @@ Ingredienserna visas i portionskalkylatorn ovan.
 ## Tillagning
 
 1. Blötlägg träspett i vatten i 20 minuter. Skär kycklingen i munsbitar och trä upp på spett.
-2. Blanda den angivna sojasåsen med mirin och riven ingefära. Pensla kycklingen tunt med såsen.
-3. Grilla eller stek spetten på medelvärme i 10–12 minuter. Vänd och pensla med såsen tills kycklingen är helt genomstekt. Kontrollera att de tjockaste bitarna är genomlagade.
+2. Blanda den angivna sojasåsen med mirin och riven ingefära. Pensla kycklingen tunt med såsen. Använd inte sås som har vidrört rå kyckling till att avsluta den färdiga rätten.
+3. Grilla eller stek spetten på medelvärme i cirka 10–12 minuter och vänd dem tills kycklingens innertemperatur är minst 75 °C. Om du penslar med sås ska en del av såsen först läggas undan i en ren skål innan den råa kycklingen hanteras.
 4. Strimla vitkålen och stek i sesamolja i 4–5 minuter. Smaksätt med risvinäger.
 5. Servera yakitori med sesamfrön, salladslök och vitkål.
 
 ## Anteckningar
 
-Mirin innehåller socker. Den finska källan anger att det kan ersättas med lite vatten och risvinäger; då ändras receptet och den ursprungliga näringsberäkningen gäller inte oförändrad. Översättningen är ett utkast tills sojasås och tamari har stämts av i källan.
+Mirin innehåller socker. Om det ersätts med vatten och risvinäger ändras kolhydratmängden; bytet ingår inte i den här versionens näringsberäkning. Tamari är ett separat alternativ till sojasås, inte en ingrediens som används här.

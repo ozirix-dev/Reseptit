@@ -35,7 +35,7 @@ translation_of: pho-bo
 
 # Vietnamese phở bò beef noodle soup
 
-A home-kitchen adaptation of phở bò with long-simmered beef-bone broth, roasted onion and ginger and warm spices. The Finnish source describes pouring boiling-hot broth over very thin raw beef to cook it at serving; **safety depends on the meat being fully cooked**. For a safer preparation, cook the slices thoroughly in the simmering broth before serving.
+A home-kitchen adaptation of phở bò with long-simmered beef-bone broth, roasted onion and ginger and warm spices. In this home-kitchen version, cook the thin beef slices separately in hot broth before serving. Pouring boiling broth into a bowl does not by itself guarantee that the meat is safely cooked.
 
 ## Instructions
 
@@ -44,8 +44,8 @@ A home-kitchen adaptation of phở bò with long-simmered beef-bone broth, roast
 3. Return the bones to the pot with 4 litres of fresh water. Bring to a boil, skim off foam and simmer gently for about 2 hours.
 4. Toast the star anise, cinnamon and coriander seeds in a dry pan until fragrant. Add to the broth with the roasted onion and ginger. Simmer another 60 minutes.
 5. Strain the broth. Season with fish sauce and cane sugar. Cook the rice noodles according to the package instructions.
-6. Divide the noodles between bowls and place the very thin beef slices on top. The Finnish recipe pours boiling-hot broth over the slices; make sure the beef is cooked through before serving, or preferably cook the slices separately in the hot simmering broth. Serve with bean sprouts, Thai basil and lime.
+6. Bring the strained broth back to a boil and cook the beef slices in batches in it. Check with a food thermometer that the beef reaches at least 63 °C and allow it to rest for three minutes before serving. Divide the cooked noodles and beef among bowls, pour over the hot broth and serve with bean sprouts, Thai basil, coriander and lime.
 
 ## Notes
 
-- The broth takes several hours. Meat must be sliced very thinly if cooked in hot broth at serving, but thinness and hot broth alone do not guarantee safe doneness. Cooking the slices separately in simmering broth until fully cooked is the reliable alternative. **Source safety review required before publishing this translation.**
+- The broth takes several hours to prepare. Do not rely on the thinness of the meat or the heat of broth poured into a bowl. Cook the beef slices separately in broth and check the internal temperature with a food thermometer.

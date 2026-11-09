@@ -64,7 +64,7 @@ translation_of: kana-yakitori-kaalilla
 
 ## Description
 
-Chicken thigh skewers glazed with soy sauce and mirin, served with cabbage briefly softened in a pan with sesame oil. **Finnish-source discrepancy:** the prose calls the sauce tamari, while the structured ingredient list specifies soy sauce. This translation follows the ingredient list pending a source correction.
+Chicken thigh skewers glazed with soy sauce and mirin, served with cabbage briefly softened in a pan with sesame oil.
 
 ## Ingredients
 
@@ -73,11 +73,11 @@ The ingredients are listed in the serving calculator above.
 ## Instructions
 
 1. Soak wooden skewers in water for 20 minutes. Cut the chicken into bite-sized pieces and thread onto skewers.
-2. Mix the listed soy sauce with the mirin and grated ginger. Brush the chicken lightly with the sauce.
-3. Grill or pan-fry the skewers over medium heat for 10–12 minutes, turning and brushing with the sauce until the chicken is cooked through. Check that the thickest pieces are safely cooked throughout.
+2. Mix the listed soy sauce with the mirin and grated ginger. Brush the chicken lightly with the sauce; do not use sauce that has touched raw chicken to finish the cooked dish.
+3. Grill or pan-fry the skewers over medium heat for about 10–12 minutes, turning, until the chicken reaches an internal temperature of at least 75 °C. If brushing with sauce, reserve a separate portion in a clean container before handling raw chicken.
 4. Shred the cabbage and fry it in sesame oil for 4–5 minutes. Season with rice vinegar.
 5. Serve the yakitori with sesame seeds, spring onions and cabbage.
 
 ## Notes
 
-Mirin contains sugar. The Finnish source says it may be replaced with a little water and rice vinegar; this would be a changed recipe and the original nutrition calculation would no longer apply unchanged. This translation is a draft pending reconciliation of soy sauce versus tamari in the source.
+Mirin contains sugar. Replacing it with water and rice vinegar changes the carbohydrate content and is not included in this version's nutrition estimate. Tamari is a separate alternative to soy sauce, not an ingredient used in this version.

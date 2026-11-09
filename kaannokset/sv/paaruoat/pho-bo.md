@@ -35,7 +35,7 @@ translation_of: pho-bo
 
 # Vietnamesisk phở bò med nötkött och risnudlar
 
-En hemlagad phở bò med länge sjuden benbuljong, rostad lök, ingefära och varma kryddor. Den finska källan beskriver hur mycket tunt rått nötkött tillagas genom att kokhet buljong hälls över vid servering. **Säkerheten kräver att köttet blir helt genomtillagat.** Ett säkrare sätt är att tillaga köttskivorna ordentligt i sjudande buljong före servering.
+En hemlagad phở bò med länge sjuden benbuljong, rostad lök, ingefära och varma kryddor. I den här hemlagade versionen tillagas de tunna köttskivorna separat i het buljong innan de serveras. Att enbart hälla kokhet buljong i skålen garanterar inte säker tillagning av köttet.
 
 ## Tillagning
 
@@ -44,8 +44,8 @@ En hemlagad phở bò med länge sjuden benbuljong, rostad lök, ingefära och v
 3. Lägg tillbaka benen i kastrullen med 4 liter nytt vatten. Koka upp, skumma av och sjud försiktigt i cirka 2 timmar.
 4. Rosta stjärnanis, kanel och korianderfrön i en torr panna tills de doftar. Tillsätt kryddorna i buljongen med den rostade löken och ingefäran. Sjud ytterligare 60 minuter.
 5. Sila buljongen. Smaksätt med fisksås och rörsocker. Koka risnudlarna enligt förpackningen.
-6. Fördela nudlarna i skålar och lägg de mycket tunna köttskivorna ovanpå. I det finska receptet hälls kokhet buljong över dem; se till att köttet blir helt genomtillagat innan det serveras, eller tillaga hellre skivorna separat i het, sjudande buljong. Servera med böngroddar, thaibasilika och lime.
+6. Koka upp den silade buljongen igen och tillaga nötköttsskivorna i omgångar i den. Kontrollera med en matlagningstermometer att köttet når minst 63 °C och låt det vila i tre minuter före servering. Fördela de kokta nudlarna och köttet i skålar, häll över den heta buljongen och servera med böngroddar, thaibasilika, koriander och lime.
 
 ## Anteckningar
 
-- Buljongen kräver flera timmars sjudning. Om köttet tillagas vid servering måste det skivas mycket tunt, men tunt kött och het buljong garanterar inte i sig att det blir säkert genomlagat. Att tillaga skivorna separat i sjudande buljong tills de är helt genomkokta är ett pålitligare alternativ. **Källans säkerhetsanvisning måste granskas före publicering.**
+- Buljongen tar flera timmar att tillaga. Lita inte enbart på köttets tunnhet eller värmen från buljongen som hälls i skålen. Tillaga köttskivorna separat i buljongen och kontrollera innertemperaturen med en matlagningstermometer.

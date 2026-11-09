@@ -89,3 +89,10 @@ Työnjono on rajattu erilleen #357:stä. Kolme reseptiä / yhdeksän kieliversio
 - `kana-yakitori-kaalilla`: EN/SV/TH, 9 ainesosaa, 5 työvaihetta, 4 annosta, 35 min. FI:n ainesosissa **soijakastike**, mutta leipätekstissä **tamari**. Käännöksissä käytetään ainesosaluettelon soijakastiketta ja nostetaan ero esiin; julkaisu **FI HOLD**, myös mirinin korvaamisen vaikutus ravintolaskentaan muistettava.
 - `pho-bo`: EN/SV/TH, 15 ainesosaa, 6 valmistusvaihetta, 6 annosta, 240 min. 230 °C paahdus, luiden viiden minuutin esikiehautus, 4 l uutta vettä, 2 h + 60 min haudutus ja naudan ohuet viipaleet. FI:n raaka naudanliha kuumalla liemellä -kypsennys on turvallisuuden kannalta epävarma. Kieliluonnokset sisältävät turvallisemman erikseen liemessä kypsentämisen vaihtoehdon; **FI-turvallisuus-HOLD ennen julkaisua**.
 - **60/60 ovat draft**, ei vahvistettua koko erän semanttista QA:ta, thai-takaisinkäännöksiä tai hyväksyttyjä SHA-parisidoksia. Lähdekorjaukset kuuluvat laatu-PR:ään, eivät tähän käännöshaaraan. FI-GK-sinettiä ei kierretä.
+
+## #365:n jälkeen: FI-täsmennysten käännösten synkronointi
+
+- PR #359 ja #365 yhdistetty mainiin, vain yakitori ja phở bò lähdetekstimuutoksina #365:stä.
+- EN/SV/TH kaikissa kuudessa kieliluonnoksessa päivitetty vastaamaan korjattuja FI-valmistusohjeita: yakitori soijakastike (ei tamari), 75 °C, puhtaan kastikkeen erottelu, mirin-korvaus ei laskettuun versioon; phở bò erillinen naudan kypsennys liemessä 63 °C + kolme minuuttia, korianteri tarjoiluun.
+- Näiden kuuden kieliversion **vanha katselmointi on mitätön** lähdemuutoksen takia. Ei julkaistuja SHA-todisteita; kaikki pysyvät draft-tilassa, kunnes itsenäinen merkitystarkistus tehdään uudelle FI-lähteelle.
+- Munakasmuffinit, tonnikalamunakkaat ja harissashakshuka säilyvät GK80:n tarkassa lähdesidonnassa ja niiden korjaukset ovat HOLDissa. Ei muuta ravintolukuja, GK-laskelmaa eikä suljettuja evidence-tietueita.

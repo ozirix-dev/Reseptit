@@ -64,7 +64,8 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 
 ## Valmistus
 
-1. Sekoita jauhot, neste ja suola. Vaivaa pehmeäksi taikinaksi ja anna levätä 10 minuuttia. Jos reseptissä on valmis leipä tai taikina, siirry täyttöön.
-2. Jaa taikina osiin ja painele tai kauli ohuiksi leiviksi. Lisää taikinaan kuuluva täyte tai mausteöljy.
-3. Paista kuumalla pannulla molemmin puolin kypsäksi ja nosta liinan alle pysymään pehmeänä.
-4. Paista kerroksellinen pannukakku rapeaksi ja leikkaa lohkoiksi.
+1. Sekoita vehnäjauho, vesi ja ripaus luettelon suolaa joustavaksi taikinaksi. Vaivaa hetki ja peitä noin 15 minuutiksi.
+2. Hienonna kevätsipuli. Jaa taikina kahteen osaan ja kauli molemmat ohueksi levyksi. Sivele pinnoille luettelon seesamiöljy ja ripottele kevätsipulit päälle.
+3. Rullaa taikinalevyt, kierrä rullat kiepeiksi ja kauli varovasti takaisin litteiksi pannukakuiksi. Näin sipuli jää kerrosten sisään.
+4. Kuumenna luettelon neutraali paistoöljy pannulla keskilämmöllä. Paista molemmat pannukakut puolin ja toisin rapeiksi ja kypsiksi.
+5. Leikkaa lohkoiksi ja tarjoa luettelon soijakastike dippinä. Lisätäytettä ei tarvita.
