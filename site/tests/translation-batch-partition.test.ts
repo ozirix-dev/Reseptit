@@ -80,8 +80,8 @@ test("a source mark alone does not count as a completed semantic review", () => 
 
 test("missing third language cannot be promoted as a two-language partial", () => {
   const b = bundle(), e = proofs(b);
-  delete b.targets.th;
-  const decision = evaluateBatchEntry(b, e);
+  const withoutThai = {...b, targets: {en: b.targets.en, sv: b.targets.sv}};
+  const decision = evaluateBatchEntry(withoutThai, e);
   assert.equal(decision.group, "needs-review");
   assert.match(decision.reasons.join(" "), /th: translation missing/);
 });
@@ -99,8 +99,8 @@ test("P0 open means source may be unsafe even when all numerical checks pass", (
 });
 test("missing source cannot produce a candidate even with complete evidence", () => {
   const b = bundle(), e = proofs(b);
-  b.source = null;
-  assert.equal(evaluateBatchEntry(b, e).group, "source-hold");
+  const withoutSource = {...b, source: null};
+  assert.equal(evaluateBatchEntry(withoutSource, e).group, "source-hold");
 });
 
 test("bad FI source is isolated to source HOLD instead of aborting the whole batch", async () => {

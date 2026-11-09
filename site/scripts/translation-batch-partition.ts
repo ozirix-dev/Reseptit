@@ -162,7 +162,8 @@ export async function partitionFromLedger(root: string, raw: unknown, evidenceRa
       continue;
     }
     decisions.push(evaluateBatchEntry({ id, category, source, targets,
-      reviewState: record.review_state ?? "unreviewed", hashes: record }, evidence));
+      reviewState: record.review_state ?? "unreviewed",
+      hashes: {fi: record.fi, en: record.en, sv: record.sv, th: record.th} }, evidence));
   }
   return {
     version: 1, semantics: "candidate is an input to, not a substitute for, release CI/GK/route gates",
