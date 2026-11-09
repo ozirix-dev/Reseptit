@@ -4,7 +4,7 @@ recipe_id: thai-kai-jiao-yrteilla
 url_slug: thai-kai-jiao-yrteilla
 category: aamupala
 language: th
-status: draft
+status: published
 main_ingredient:
 - kananmuna
 - kalakastike

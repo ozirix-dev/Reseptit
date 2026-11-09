@@ -4,7 +4,7 @@ recipe_id: pho-bo
 url_slug: pho-bo
 category: paaruoka
 language: en
-status: draft
+status: published
 servings: 6
 time_total_min: 240
 difficulty: medium

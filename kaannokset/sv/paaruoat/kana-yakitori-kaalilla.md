@@ -4,7 +4,7 @@ recipe_id: kana-yakitori-kaalilla
 url_slug: kana-yakitori-kaalilla
 category: paaruoka
 language: sv
-status: draft
+status: published
 main_ingredient:
   - broileri
   - kaali

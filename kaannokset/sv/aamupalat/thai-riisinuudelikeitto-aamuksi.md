@@ -4,7 +4,7 @@ recipe_id: thai-riisinuudelikeitto-aamuksi
 url_slug: thai-riisinuudelikeitto-aamuksi
 category: aamupala
 language: sv
-status: draft
+status: published
 main_ingredient:
 - riisinuudeli
 - kana
