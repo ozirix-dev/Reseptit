@@ -31,8 +31,12 @@ test('recovery single approved proposal reproduces all three stable display scen
  assert.equal(result.unknownAggregatePolyols,null);assert.equal(result.wholeGkPoint,null);
  const text=readFileSync(path.join(root,'reseptit/paaruoat/uunikanapasta-kesakurpitsa.md'),'utf8'),parsed=parseMarkdown(text)!;
  assert.deepEqual(verifyNutritionEvidence(parsed.data as never,e).errors,[]);
- const live=siteContent.recipes.filter(r=>r.recipeId===recoveryRecipeId);assert.equal(live.length,1);assert.equal(live[0].locale,'fi');
- assert.deepEqual(live[0].nutrition,{carbsNetG:7.4,carbsTotalG:10.4,proteinG:39.53,fatG:23.91});
+ const live=siteContent.recipes.filter(r=>r.recipeId===recoveryRecipeId);
+ const fi=live.filter(r=>r.locale==='fi');assert.equal(fi.length,1);
+ assert.deepEqual(fi[0].nutrition,{carbsNetG:7.4,carbsTotalG:10.4,proteinG:39.53,fatG:23.91});
+ // Publishing translations must not change the FI recovery calculation.
+ for(const translated of live.filter(r=>r.locale!=='fi'))assert.deepEqual(translated.nutrition,fi[0].nutrition);
+ assert.deepEqual(new Set(live.map(r=>r.locale)),new Set(['fi','en','sv','th']));
 });
 test('recovery rejects changed IDs, portions, preparation, sources, GI, unknown polyols and display precision',()=>{
  for(const mutate of [

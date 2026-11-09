@@ -6,6 +6,8 @@ import path from "node:path";
 import { recipeTextForApprovedSnapshot } from "../scripts/approved-recipe-note-edits";
 import { historicalFarinataForApprovedPanVersion } from "../scripts/gk100-farinata-sealed-source";
 import { parseMarkdown } from "../src/content/markdown";
+import { recipeFrontmatterSchema } from "../src/content/schema";
+import { semanticHash, semanticStatus } from "../scripts/translation-semantic-review";
 import { textHash } from "../scripts/gk149-model";
 import approvedTranslations from "./approved-translation-baseline.json";
 import preparedTranslations from "./prepared-translation-baseline.json";
@@ -51,6 +53,41 @@ const recipeChanges = new Map([
   ...Object.entries(preparedTranslations.changes),
 ]);
 
+/**
+ * Historical GK baselines must reject arbitrary new published translations.
+ * The sole exception is an independently versioned language publication:
+ *  - translation is new (A), explicitly listed in the separate sidecar,
+ *  - Finnish original remains a published and independently sealed source,
+ *  - both exact current semantic hashes match a P0/P1-clear AI review.
+ * This never approves recipe ingredient, preparation or GI/GK input changes.
+ */
+function approvedNewTranslation(root: string, file: string, parsed: NonNullable<ReturnType<typeof parseMarkdown>>): boolean {
+  if (!/^kaannokset\/(en|sv|th)\/[a-z0-9/-]+\.md$/.test(file)) return false;
+  const target = recipeFrontmatterSchema.parse(parsed.data);
+  const locale = target.language;
+  if (target.status !== "published" || !["en", "sv", "th"].includes(locale)) return false;
+  const sourcePath = target.source_recipe;
+  if (!sourcePath || !/^reseptit\/(aamupalat|alkuruoat|paaruoat|jalkiruoat|leivonnaiset|valipalat)\/[a-z0-9-]+\.md$/.test(sourcePath)) return false;
+  if (target.source_language !== "fi" || target.translation_of !== target.recipe_id) return false;
+  const index = JSON.parse(readFileSync(path.join(root, "meta/kaannokset/published-translation-pairs.json"), "utf8"));
+  const declared = (index.sources as Array<{ recipe_id: string; locales: string[] }>).some(
+    (row) => row.recipe_id === target.recipe_id && row.locales.includes(locale)
+  );
+  if (index.schemaVersion !== 1 || !declared) return false;
+  const original = parseMarkdown(readFileSync(path.join(root, sourcePath), "utf8"));
+  if (!original) return false;
+  const fi = recipeFrontmatterSchema.parse(original.data);
+  if (fi.recipe_id !== target.recipe_id || fi.status !== "published" || fi.language !== "fi") return false;
+  const registry = JSON.parse(readFileSync(path.join(root, "meta/kaannokset/codex-review-evidence.json"), "utf8"));
+  const proof = registry[target.recipe_id + ":" + locale];
+  return semanticStatus(
+    semanticHash({ data: fi, content: original.content }),
+    semanticHash({ data: target, content: parsed.content }),
+    true,
+    proof
+  ) === "REVIEW CURRENT";
+}
+
 export function assertRecipeBaseline(root: string, baseline: string, ...protectedPaths: string[]) {
   const changes = execFileSync(
     "git",
@@ -90,6 +127,13 @@ export function assertRecipeBaseline(root: string, baseline: string, ...protecte
       if (snapshot !== current) {
         const original = execFileSync("git", ["show", baseline + ":" + file], { cwd: root, encoding: "utf8" });
         assert.equal(snapshot, original, change);
+        continue;
+      }
+    }
+    if (status === "A" && file.startsWith("kaannokset/")) {
+      const published = parseMarkdown(readFileSync(path.join(root, file), "utf8"));
+      if (published?.data.status === "published") {
+        assert.ok(approvedNewTranslation(root, file, published), "UNREVIEWED_PUBLISHED_TRANSLATION: " + change);
         continue;
       }
     }
