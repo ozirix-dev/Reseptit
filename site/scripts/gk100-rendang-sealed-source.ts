@@ -8,7 +8,7 @@ const correctedStep = "2. Laita maustetahna, kookosmaito, sitruunaruoho, kaffirl
 
 export function historicalRendangForApprovedVersion(path: string, current: string): string {
   if (path !== sourcePath) return current;
-  const normalized = current.replaceAll('\\r\\n', '\\n');
+  const normalized = current.replaceAll('\r\n', '\n');
   if (!normalized.includes(correctedStep)) return current;
   if (normalized.split(correctedStep).length !== 2) throw Error('GK100_RENDANG_AMBIGUOUS_CORRECTION');
   // No other edits can pass: checkBatch must reproduce the exact sealed
