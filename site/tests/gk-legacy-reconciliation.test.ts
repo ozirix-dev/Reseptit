@@ -75,7 +75,14 @@ test('Live original results preserve frozen history plus the exact reviewed tran
     const liveSha=createHash('sha256').update(published).digest('hex');
     const historicalSha=createHash('sha256').update(original).digest('hex');
     assert.equal(row.source_content_hash,liveSha,row.source_path+' pinned editorial source hash');
-    return {...row,notes:normalNotes,source_content_hash:historicalSha};
+    const historicallyReviewedChef = reviewedChefSafetyPaths.includes(row.source_path);
+    const expectedLiveNotes = published.split('## Muistiinpanot')[1]?.trim() ?? '';
+    assert.equal(normalNotes,expectedLiveNotes.replaceAll('\r\n','\n').replaceAll('\n',lineEnding),
+      row.source_path+' live chef notes must match published text');
+    const oldNotes = historicallyReviewedChef
+      ? (original.split('## Muistiinpanot')[1]?.trim() ?? '').replaceAll('\r\n','\n').replaceAll('\n',lineEnding)
+      : normalNotes;
+    return {...row,notes:oldNotes,source_content_hash:historicalSha};
    }
    if(row.recipe_id!=='valimerellinen-farinata-aamupalaksi'||historicalFarinata===publishedFarinata){
     return {...row,notes:normalNotes};
