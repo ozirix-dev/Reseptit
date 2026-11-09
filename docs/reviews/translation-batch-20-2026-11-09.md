@@ -111,12 +111,15 @@ Valmiit luonnokset (kolme kieltä kustakin):
 
 **Mikä on todennettu ja mikä ei:**
 
-- Neljän ensimmäisen reseptin 12 käännösparia verrattiin GitHubin
-  FI-lähteisiin määrien, yksiköiden, rivien ja valmistusvaiheiden lukumäärän,
-  kuva-/lähdepolkujen ja mittojen osalta; poikkeamia 0.
-- Lisäerät on kirjoitettu määrä- ja ainesosalistojen säilyttämiseksi;
-  niiden täydellistä rakenteellista ja semanttista auditointia
-  **ei vielä merkitä hyväksytyksi**.
+- **45/45 luonnosta:** GitHubin nykyisistä FI-lähteistä ja erähaaran
+  tiedostoista tarkistettu määrien ja yksiköiden vastaavuus ainesosittain,
+  annosmäärä, kokonaisaika, ravintolukujen muuttumattomuus (myös puuttuvat),
+  kuvan polku/mitat, valmistusvaiheiden lukumäärä, lähdeviite, kieli
+  ja `status: draft`. **Näillä rakenteellisilla tarkistuksilla 0 poikkeamaa.**
+- Tämä on erillinen **rajattu tekstistä tehty rakennetarkistus**,
+  ei todistus YAML:n täyden skeeman läpäisystä, kielen luontevuudesta
+  eikä valmistusohjeiden kaiken merkityksen vastaavuudesta. Kaikkien 45
+  kieliversion täydellinen merkitysvertailu ja SHA-sidonta on yhä auki.
 - PR-CI läpäisi erän edellisen julkaisua odottavan HEADin
   `0c13ac106e9f4d97b92cdc656bcc08eeec91040b`:
   [run 42646074570](https://github.com/ozirix-dev/Reseptit/actions/runs/42646074570).
