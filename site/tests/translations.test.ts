@@ -2,6 +2,9 @@ import assert from "node:assert/strict";
 import { test } from "node:test";
 import { auditTranslations, auditRecipePairs, sourceCategories } from "../scripts/translation-audit";
 import { semanticTermErrors, semanticProseErrors, semanticNoteErrors, semanticTagErrors } from "../scripts/semantic-terms";
+import { readFileSync } from "node:fs";
+import { parseMarkdown } from "../src/content/markdown";
+import { projectReviewedFiEditorialSource } from "../scripts/gk80-editorial-display";
 
 test("review backlog fixes stay aligned in all four recipe locales", async () => {
   const real = await auditTranslations();
@@ -30,6 +33,28 @@ test("review backlog fixes stay aligned in all four recipe locales", async () =>
   assert.match(somTam.content, /ถั่วแขก/);
   assert.ok(semanticNoteErrors(["tai juustokuminaa"], ["eller ostkummin"], "sv").length);
   assert.deepEqual(semanticNoteErrors(["tai juustokuminaa"], ["eller spiskummin"], "sv"), []);
+});
+
+
+test("sealed coconut FI metadata is compared with only the SHA-pinned public cooking method", async () => {
+  const id = "thai-kookosriisi-mangolla";
+  const relativePath = "reseptit/aamupalat/" + id + ".md";
+  const raw = readFileSync(new URL("../../" + relativePath, import.meta.url), "utf8");
+  const source = parseMarkdown(raw)!;
+  const projected = parseMarkdown(projectReviewedFiEditorialSource(relativePath, raw))!;
+  assert.deepEqual(source.data.cooking_method, ["paistaminen"], "historical GK80 source remains sealed");
+  assert.deepEqual(projected.data.cooking_method, ["keittäminen"], "public FI display cooks the rice");
+  assert.throws(() => projectReviewedFiEditorialSource(relativePath, raw + "\n# drift"), /EDITORIAL_FI_SOURCE_STALE/);
+  const checked = await auditTranslations([id]);
+  assert.deepEqual(checked.errors, []);
+  assert.equal(checked.publishedTranslations.length, 3);
+  assert.deepEqual(checked.publishedTranslations.map(x => x.data.language).sort(), ["en","sv","th"]);
+  assert.ok(checked.publishedTranslations.every(x => JSON.stringify(x.data.cooking_method) === JSON.stringify(["keittäminen"])));
+  const legacyMethod = structuredClone(checked.publishedTranslations[0]!);
+  legacyMethod.data.cooking_method = ["paistaminen"];
+  const others = checked.publishedTranslations.slice(1);
+  const invalid = auditRecipePairs(checked.publishedSources, [legacyMethod, ...others], new Map([[id, ["keittäminen"]]]));
+  assert.match(invalid.errors.join(" "), /cooking_method=paistaminen, expected keittäminen/);
 });
 
 test("all published translations match the source structure and known critical terms", async () => {
