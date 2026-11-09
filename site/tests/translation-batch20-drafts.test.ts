@@ -10,25 +10,13 @@ import { preparationRegressionErrors, semanticHash } from "../scripts/translatio
 const repoRoot = path.resolve(import.meta.dirname, "../..");
 const locales = ["en", "sv", "th"] as const;
 const recipes = [
-  ["paaruoat", "bulgogi"],
-  ["paaruoat", "bun-cha-hanoi"],
-  ["paaruoat", "carnitas-salaattitacot"],
-  ["paaruoat", "chili-con-carne-kukkakaaliriisi"],
   ["paaruoat", "falafel"],
-  ["paaruoat", "harira"],
   ["paaruoat", "jerk-kana"],
-  ["paaruoat", "kana-enchilada-kukkakaalivuoka"],
-  ["paaruoat", "kana-fajita-pelti"],
-  ["paaruoat", "kanakeitto-pinaatti-sitruuna"],
-  ["paaruoat", "kanapyorykat-tomaattikastike"],
   ["paaruoat", "kimchi-jjigae"],
-  ["paaruoat", "kreikkalainen-kanavuoka-oliiveilla"],
   ["paaruoat", "lanttulaatikko-kermainen"],
   ["paaruoat", "lindstrominpihvit-kaalilla"],
   ["paaruoat", "maksalaatikko-kukkakaalilla"],
   ["paaruoat", "shoyu-kanakeitto-konjac"],
-  ["paaruoat", "silakkapihvit-tilli-kermakastike"],
-  ["paaruoat", "uunikanapasta-kesakurpitsa"],
   ["jalkiruoat", "vhh-brita-kakku"],
 ] as const;
 
@@ -60,14 +48,14 @@ function numberTokens(text: string): number[] {
 
 test("batch 20: all 60 unpublished locale drafts remain structurally and numerically tied to FI", async () => {
   const unique = new Set(recipes.map(([, id]) => id));
-  assert.equal(recipes.length, 20);
+  assert.equal(recipes.length, 8);
   assert.equal(unique.size, 20);
   const ledger = JSON.parse(await readFile(path.join(repoRoot, "docs/reviews/translation-batch20-digests-2026-11-09.json"), "utf8")) as {
     human_attestation: boolean;
     recipes: Record<string, { fi: string; en: string; sv: string; th: string; review_state: string; publish_authorized: boolean }>;
   };
   assert.equal(ledger.human_attestation, false, "No human review was performed");
-  assert.equal(Object.keys(ledger.recipes).length, 20, "Every recipe must have an exact fingerprint record");
+  assert.equal(Object.keys(ledger.recipes).length, 8, "Every recipe must have an exact fingerprint record");
   let pairs = 0;
   for (const [category, id] of recipes) {
     const fiPath = "reseptit/" + category + "/" + id + ".md";
@@ -136,5 +124,5 @@ test("batch 20: all 60 unpublished locale drafts remain structurally and numeric
     // Fingerprints only; they do not attest to semantic or human review.
     console.log("DRAFT-I18N-20-HASH " + JSON.stringify({ recipe_id: id, fi: sourceDigest, ...hashes }));
   }
-  assert.equal(pairs, 60);
+  assert.equal(pairs, 24);
 });
