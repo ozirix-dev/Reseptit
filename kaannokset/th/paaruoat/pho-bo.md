@@ -11,7 +11,7 @@ difficulty: ปานกลาง
 main_ingredient: [naudanliha, riisinuudeli]
 cooking_method: [liedellä hauduttaminen]
 tags: [vietnamilainen, pho, naudanliha, keitto]
-image: {src: paaruoat/pho-bo.webp, alt: "Phở bò -kulhossa on naudanlihaa, litteitä riisinuudeleita, yrttejä ja kirkasta lientä", width: 1280, height: 853}
+image: {src: paaruoat/pho-bo.webp, alt: "ชามเฝอเนื้อใส่เนื้อวัว เส้นเฝอแบน สมุนไพร และน้ำซุปใส", width: 1280, height: 853}
 ingredients:
   - {amount: 1500, unit: g, item: "กระดูกวัวสำหรับต้มน้ำซุป"}
   - {amount: 4000, unit: ml, item: "น้ำเปล่า", note: "สำหรับน้ำซุป"}

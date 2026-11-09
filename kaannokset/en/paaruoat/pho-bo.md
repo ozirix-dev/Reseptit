@@ -11,7 +11,7 @@ difficulty: medium
 main_ingredient: [naudanliha, riisinuudeli]
 cooking_method: [liedellä hauduttaminen]
 tags: [vietnamilainen, pho, naudanliha, keitto]
-image: {src: paaruoat/pho-bo.webp, alt: "Phở bò -kulhossa on naudanlihaa, litteitä riisinuudeleita, yrttejä ja kirkasta lientä", width: 1280, height: 853}
+image: {src: paaruoat/pho-bo.webp, alt: "Phở bò bowl with beef, flat rice noodles, herbs and clear broth", width: 1280, height: 853}
 ingredients:
   - {amount: 1500, unit: g, item: "beef soup bones"}
   - {amount: 4000, unit: ml, item: "water", note: "for stock"}

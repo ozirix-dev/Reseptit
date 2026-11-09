@@ -11,7 +11,7 @@ difficulty: medel
 main_ingredient: [naudanliha, riisinuudeli]
 cooking_method: [liedellä hauduttaminen]
 tags: [vietnamilainen, pho, naudanliha, keitto]
-image: {src: paaruoat/pho-bo.webp, alt: "Phở bò -kulhossa on naudanlihaa, litteitä riisinuudeleita, yrttejä ja kirkasta lientä", width: 1280, height: 853}
+image: {src: paaruoat/pho-bo.webp, alt: "Skål med phở bò, nötkött, platta risnudlar, örter och klar buljong", width: 1280, height: 853}
 ingredients:
   - {amount: 1500, unit: g, item: "soppben av nötkött"}
   - {amount: 4000, unit: ml, item: "vatten", note: "till buljongen"}
