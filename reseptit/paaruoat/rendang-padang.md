@@ -39,7 +39,7 @@ Minangkabaulainen rendang kypsyy pitkään kookosmaidossa ja maustetahnassa. Nes
 ## Valmistus
 
 1. Hienonna salottisipuli, valkosipuli, inkivääri ja chili tasaiseksi tahnaksi.
-2. Laita maustetahna, kookosmaito, sitruunaruoho ja kaffirlimetinlehdet paksupohjaiseen kattilaan. Kuumenna sekoittaen lähes kiehuvaksi.
+2. Laita maustetahna, kookosmaito, sitruunaruoho, kaffirlimetinlehdet ja ainesluettelon 1 tl kurkumajauhetta paksupohjaiseen kattilaan. Kuumenna sekoittaen lähes kiehuvaksi.
 3. Lisää naudanliha ja suola. Hauduta ilman kantta hyvin miedolla lämmöllä 3–4 tuntia. Sekoita aluksi säännöllisesti ja sitä useammin, kun neste alkaa vähentyä.
 4. Jatka kypsennystä, kunnes kookosmaito on haihtunut lähes kokonaan, öljy alkaa erottua ja liha on tummaa ja mureaa. Varo polttamasta pohjaa.
 5. Sekoita joukkoon paahdettu kookos. Keitä riisi pakkauksen ohjeen mukaan ja tarjoa rendangin kanssa.

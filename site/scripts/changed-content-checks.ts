@@ -2,6 +2,28 @@ import assert from "node:assert/strict";
 
 type AuditedSource = { data: { recipe_id: string } };
 
+/**
+ * The existing GI/GK recipe binding fingerprint covers ONLY these fields.
+ * Editing prose cannot repair a historically stale binding; nor should such
+ * prose-only changes be mistaken for a new ingredient/yield calculation.
+ *
+ * Deliberately fail closed when no baseline is available. Method metadata
+ * and all ingredient properties (including note/preparation state) count.
+ */
+export function nutritionBindingInputsChanged(
+  previous: Record<string, unknown> | null | undefined,
+  current: Record<string, unknown>,
+): boolean {
+  if (!previous) return true;
+  const relevant = (data: Record<string, unknown>) => ({
+    recipe_id: data.recipe_id,
+    servings: data.servings,
+    ingredients: data.ingredients,
+    cooking_method: data.cooking_method ?? [],
+  });
+  return JSON.stringify(relevant(previous)) !== JSON.stringify(relevant(current));
+}
+
 export type PublishedRoute = {
   recipe_id: string;
   language: string;

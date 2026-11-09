@@ -61,7 +61,7 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 
 ## Valmistus
 
-1. Pilko täytteen kasvikset ja muut suuret ainekset pieniksi paloiksi. Kuullota ne pannulla tilkassa öljyä, kunnes ne ovat pehmenneet.
-2. Vatkaa kananmunat ja mausta ripauksella suolaa. Kaada munaseos pannulle ja laske lämpö miedoksi.
-3. Vedä hyytynyttä munaa reunoilta kohti keskustaa. Taita tai rullaa, kun pinta on juuri hyytynyt.
-4. Kypsennä tomaatti ja timjami ensin, lisää munat ja sekoita pehmeäksi kokkeliksi.
+1. Kuutioi tomaatti pieneksi, hienonna reseptin chili ja irrota timjamin lehdet. Käsittele tulista chiliä varovasti.
+2. Kuumenna luettelon paistoöljy pannulla. Kypsennä tomaattia ja chiliä pari minuuttia, kunnes tomaatti pehmenee. Lisää timjami.
+3. Vatkaa kananmunat kevyesti kulhossa ja mausta luettelon suolalla. Kaada munat pannulle ja laske lämpöä.
+4. Sekoita munaseosta rauhallisesti lastalla, kunnes se hyytyy pehmeäksi kokkeliksi eikä pannulla ole juoksevaa kananmunaa. Tarjoa heti.
