@@ -56,10 +56,10 @@ image:
 
 Punnitse yllä luetellut syötävät raaka-aineet grammoina, kananmunat ilman kuorta. Käytä vain lueteltu rasva ja mausteet.
 
-1. Lämmitä uuni 190 asteeseen. Käytä kuutta tarttumatonta silikonista muffinivuokakoloa tai paperisia muffinivuokia ilman lisättyä voitelurasvaa.
+1. Lämmitä uuni 190 asteeseen ja voitele kuusi muffinivuokaa.
 2. Valuta tonnikala hyvin ja murenna se kulhossa. Lisää munat, kerma, juusto ja tilli.
 3. Mausta pippurilla ja tarvittaessa suolalla. Jaa seos vuokiin.
-4. Paista 15–18 minuuttia, kunnes munakkaat ovat kohonneet, keskeltä hyytyneet ja sisälämpötila on vähintään 71 °C.
+4. Paista 15–18 minuuttia, kunnes munakkaat ovat kohonneet ja keskeltä hyytyneet.
 5. Anna jäähtyä muutama minuutti ennen irrottamista.
 
 Syö kaikki luetellut ainekset ja kastike/pannuneste ilmoitettuna annosmääränä. Raakojen ainesten koostumus toimii kypsän ruoan ravintoarvoproxyna; mittaamatonta kypsennyshävikkiä ei vähennetä.

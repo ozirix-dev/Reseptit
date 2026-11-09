@@ -1,9 +1,9 @@
 # FI-lähteiden kokkikorjaukset käännöserälle B
 
-Ei koepaistoa. Rajaus: neljä ohjetekstin lähdekorjausta, ei uusia ainesmääriä, ravintoarvoja eikä GK-hyväksyntöjä. Viides tapaus, shakshuka, on erillinen HOLD.
+Ei koepaistoa. Rajaus: kaksi FI-ohjetekstin lähdekorjausta (yakitori ja phở bò). Kolme GK80-sidottua FI-reseptiä ovat erillisessä HOLDissa; mitään GK80-lähdesidosta ei ohiteta.
 
 - Harissashakshuka: FI:n `kananmunaa kuoretta` näyttää kirjoitusvirheeltä (valmistusohjeessa kuoreton), mutta `ingredients.item`-muutos laukaisee perustellusti GK80 `STALE_INPUT` -suojan. **FI-lähdettä ei tässä PR:ssä muuteta**: korjaus odottaa kyseisen ravinto/GK-sidoksen nimenomaista uutta arviointia. Käännökset eivät saa siirtyä julkaisuun ennen sitä.
-- Munakasmuffinit ja tonnikalamunakkaat: tarttumattomat silikoni- tai paperivuoat ilman listaamatonta voitelurasvaa; pekoni paistetaan omassa rasvassaan.
+- Munakasmuffinit ja tonnikalamunakkaat: korjausehdotus on käyttää silikonisia/paperisia muffinivuokia ilman voitelurasvaa (pekoni omassa rasvassaan), mutta molemmat kuuluvat GK80 release-4 -paketin tarkkaan lähdetekstisidokseen. **FI-tiedostot palautettu muuttumattomiksi tässä PR:ssä**, jotta laskentatulosta ei hyväksytä vanhentuneella lähdesinetillä. Toteutus vaatii erillisen versionoidun, hyväksytyn lähtötiedon uudelleensidonnan tai uuden GK-laskentapaketin. Munaruoan 71 °C kuuluu ehdotettuun turvalliseen jatkoversioon.
 - Yakitori: soijakastike yhdenmukaistettu aineslistaan, tamari vain vaihtoehto; mirin pysyy laskettuna ainesosana, raa'an kanan kastike erillään ja kanan sisälämpö 75 °C.
 - Pho bo: naudanliha kypsennetään ensin liemessä ja varmennetaan lämpömittarilla; 63 °C ja 3 minuutin lepo kokonaiselle naudan lihalle, ennen annoksen kokoamista. Korianteri tarjoiluun aineslistan mukaisesti.
 
@@ -20,4 +20,4 @@ Ei koepaistoa. Rajaus: neljä ohjetekstin lähdekorjausta, ei uusia ainesmääri
 - PR #356:n EN/SV/TH-tekstit ja semanttiset SHA:t on päivitettävä FI-korjausten jälkeen. PR #359:n tiedostoihin ei koskettu.
 - Koko CI ja käännösvertailu vaaditaan ennen julkaisemista. Tämä on Draft-ehdotus, ei uusi GK-hyväksyntä.
 
-Munaruoille FoodSafety.gov ilmoittaa 71 °C, joka lisättiin tarkistettavaksi sisälämpötilaksi ilman muutoksia ainesosiin.
+Munaruoille FoodSafety.gov ilmoittaa 71 °C; lämpötilaa ei julkaista osana tätä PR:ää, koska molempien FI-muffinireseptien muutokset ovat GK80-HOLDissa.
