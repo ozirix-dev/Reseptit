@@ -1,42 +1,42 @@
 # Rinnakkainen käännöserä B — 9.11.2026
 
-Omistaja: ChatGPT / tämä keskustelu. Haara: `chatgpt/i18n-parallel-batch-b-20261109`.
-Tavoite: 20 erillistä FI-reseptiä × EN/SV/TH = 60 kieliversiota. Tämä on työnjono, ei väite 60 valmiista käännöksestä.
+**PR #356**: tämä keskustelu. **PR #357**: ensimmäinen keskustelu. Kumpikin omistaa vain omat reseptinsä. #357:n nimettyjä 20 reseptiä ei käsitellä tässä erässä. Aiemmat kuusi päällekkäistä bulgogi- ja kimchi-jjigae-luonnosta on poistettu #356:sta; ne kuuluvat #357:ään.
 
-Toisessa keskustelussa tehtävä 20 reseptin erä ei saa koskea alla olevia recipe_id-tunnuksia. Ennen seuraavia kirjoituksia tarkistetaan toisen erän muuttuneet polut ja mahdolliset uudet PR:t; päällekkäisyys pysäyttää kyseisen tiedoston käsittelyn.
+## Erän 20 FI-kohdetta (60 kieliversiota)
 
-| ID | EN | SV | TH |
+| Suomenkielinen lähde | EN | SV | TH |
 |---|---|---|---|
-| bulgogi | luonnos | luonnos | luonnos |
-| bun-cha-hanoi | odottaa | odottaa | odottaa |
-| carnitas-salaattitacot | odottaa | odottaa | odottaa |
-| chili-con-carne-kukkakaaliriisi | odottaa | odottaa | odottaa |
-| falafel | odottaa | odottaa | odottaa |
-| harira | odottaa | odottaa | odottaa |
-| jerk-kana | odottaa | odottaa | odottaa |
-| kana-enchilada-kukkakaalivuoka | odottaa | odottaa | odottaa |
-| kana-fajita-pelti | odottaa | odottaa | odottaa |
-| kana-yakitori-kaalilla | odottaa | odottaa | odottaa |
-| kanakeitto-pinaatti-sitruuna | odottaa | odottaa | odottaa |
-| kanapyorykat-tomaattikastike | odottaa | odottaa | odottaa |
-| kimchi-jjigae | luonnos | luonnos | luonnos |
-| kreikkalainen-kanavuoka-oliiveilla | odottaa | odottaa | odottaa |
-| lanttulaatikko-kermainen | odottaa | odottaa | odottaa |
-| pho-bo | odottaa | odottaa | odottaa |
-| rendang-padang | odottaa | odottaa | odottaa |
-| sate-ayam | odottaa | odottaa | odottaa |
-| silakkapihvit-tilli-kermakastike | odottaa | odottaa | odottaa |
-| uunilohi-voikastike | odottaa | odottaa | odottaa |
+| `reseptit/paaruoat/kana-yakitori-kaalilla.md` | odottaa | odottaa | odottaa |
+| `reseptit/paaruoat/pho-bo.md` | odottaa | odottaa | odottaa |
+| `reseptit/paaruoat/rendang-padang.md` | odottaa | odottaa | odottaa |
+| `reseptit/paaruoat/sate-ayam.md` | odottaa | odottaa | odottaa |
+| `reseptit/aamupalat/meksikolainen-huevos-a-la-mexicana.md` | odottaa | odottaa | odottaa |
+| `reseptit/aamupalat/karibia-callaloo-munakas.md` | odottaa | odottaa | odottaa |
+| `reseptit/aamupalat/meksikolainen-quesadilla-sienilla.md` | odottaa | odottaa | odottaa |
+| `reseptit/aamupalat/pohjoisafrikkalainen-harissa-shakshuka.md` | odottaa | odottaa | odottaa |
+| `reseptit/aamupalat/thai-riisinuudelikeitto-aamuksi.md` | odottaa | odottaa | odottaa |
+| `reseptit/aamupalat/valimerellinen-tortilla-espanola-aamupalaksi.md` | odottaa | odottaa | odottaa |
+| `reseptit/aamupalat/indonesialainen-bubur-ayam-kanariisipuuro.md` | odottaa | odottaa | odottaa |
+| `reseptit/aamupalat/vietnamilainen-chao-ga-kanapuuro.md` | odottaa | odottaa | odottaa |
+| `reseptit/aamupalat/thai-kai-jiao-yrteilla.md` | odottaa | odottaa | odottaa |
+| `reseptit/aamupalat/meksikolainen-kurpitsapuuro-piloncillolla.md` | odottaa | odottaa | odottaa |
+| `reseptit/aamupalat/kiinalainen-musta-seesamipuuro.md` | odottaa | odottaa | odottaa |
+| `reseptit/aamupalat/thai-kookosriisi-mangolla.md` | odottaa | odottaa | odottaa |
+| `reseptit/aamupalat/pohjoisafrikkalainen-lablabi.md` | odottaa | odottaa | odottaa |
+| `reseptit/aamupalat/munakasmuffinit.md` | odottaa | odottaa | odottaa |
+| `reseptit/aamupalat/tonnikalamunakkaat-uunissa.md` | odottaa | odottaa | odottaa |
+| `reseptit/aamupalat/valimerellinen-farinata-aamupalaksi.md` | odottaa | odottaa | odottaa |
 
-## Laatuportit
+## Laatu ja julkaisu
 
-- P0/P1 merkitysvirheitä ei saa jäädä. Kaikki ainesosat, määrät, yksiköt, ajankäyttö, lämpötilat, annokset ja turvallisuusohjeet peilataan lähteeseen.
-- Käännöksen vieraskielinen teksti ei saa muuttaa FI-reseptin ravintolukuja tai GI/GK-tietoja.
-- FI-lähteen täsmälliset semanttiset SHA-parit ja V2-katselmointinäyttö kirjataan ennen julkaisua rekisteriin `meta/kaannokset/codex-review-evidence.json`.
-- FI-metatiedon `translation_languages` ja `translation_status` päivitetään vasta katselmoinnissa.
-- Aja kohdistetut i18n-/schema-/build-testit ja varmista CI HEADille. Ei mergeä eikä deployta pelkän tekstiluonnoksen perusteella.
-- Käännösten kontrolli ei ole ihmisen käsin tehtävän tarkistuksen varassa; epävarmat vastineet HOLD.
+- Julkaistu FI-lähde, ei pelkkiä otsikko- tai draft-tiedostoja. Jos FI-sisältö on ristiriitainen, resepti jää HOLDiin.
+- Varmista ainesosarivi riviltä, määrät, yksiköt, aikamääreet, lämpötilat, kypsyys, eläin-/kasvilaji, allergeenit, kieltomuodot, lisukkeet ja huomautukset; TH-kieli takaisin suomeksi.
+- Säilytä lähteen ravintoarvot ja GK-puuttuvuudet täsmälleen. Älä muuta FI-lähteen reseptisisältöä käännöstyön yhteydessä.
+- Kirjaa todella tarkistettujen semanttisten FI/EN/SV/TH-parien SHA-256-tiivisteet ja havainnot `meta/kaannokset/codex-review-evidence.json`-rekisteriin. Ei ihmiskatselmointiväitettä.
+- Lisää FI-tiedostoon kielistatukset vasta kun käännös ja vertailut on hyväksytty.
+- Aja `docs/translation-review-policy.md`-mukaiset validoinnit ja tarkista nykyisen HEADin CI. P0/P1 tai epäonnistuva CI estää Ready/mergen. Ei auto-mergeä.
+- Tarkista PR #357:n tiedostot ja molempien HEAD ennen uusia muokkauksia; päällekkäisyys pysäyttää kirjoituksen.
 
 ## Tilanne
 
-Kaksi reseptiä (bulgogi ja kimchi-jjigae), kuusi kielitiedostoa on laadittu ensimmäisiksi luonnoksiksi. Ne eivät vielä ole julkaisuvalmiita: semanttiset katselmointihashit ja automaattiset testit puuttuvat. Loput 18 reseptiä / 54 kielitiedostoa odottavat.
+Työnjono on rajattu erilleen #357:stä. Kaikki tämän uuden listan kieliversiot odottavat. Aiempi #356:n CI kaatui käännösten metatiedon/vertailun tarkistuksessa; viimeistelemättömiä käännöksiä ei julkaistu.
