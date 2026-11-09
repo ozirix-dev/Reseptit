@@ -60,6 +60,15 @@ test("translation and draft are not counted as published Finnish originals", () 
   assert.equal(preparationSection("# Otsikko\n\n## Valmistus\n\n1. Tee ruokaa.\n\n## Muistiinpanot\n\nMuu."), "1. Tee ruokaa.");
 });
 
+test("title-only legacy placeholders are excluded without being reported as parse errors", () => {
+  const placeholder = inspectRecipe("\uFEFF# Vanha reseptiaihio\n\n", "old.md");
+  assert.equal(placeholder.stub, true);
+  assert.equal(placeholder.skipped, true);
+  assert.equal(placeholder.error, undefined);
+  const malformed = inspectRecipe("# Otsikko\n\n## Valmistus\n1. Lisää voita.", "broken.md");
+  assert.match(malformed.error, /YAML-frontmatter/);
+});
+
 test("full on-disk inventory counts published recipes, not drafts, and keeps all evidence", async () => {
   const root = await mkdtemp(path.join(os.tmpdir(), "recipe-ingredients-"));
   try {
