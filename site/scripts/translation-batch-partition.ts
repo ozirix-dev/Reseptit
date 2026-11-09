@@ -132,19 +132,34 @@ export async function partitionFromLedger(root: string, raw: unknown, evidenceRa
   for (const [id, record] of Object.entries(ledger.recipes).sort(([a],[b]) => a.localeCompare(b))) {
     if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(id) || !record || typeof record !== "object") throw Error("Malformed recipe entry: " + id);
     const matches: { category: string; source: Recipe }[] = [];
+    const sourceFailures: string[] = [];
     for (const category of sourceCategories) {
-      const source = await readRecipe(root, "reseptit/" + category + "/" + id + ".md");
-      if (source) matches.push({ category, source });
+      try {
+        const source = await readRecipe(root, "reseptit/" + category + "/" + id + ".md");
+        if (source) matches.push({ category, source });
+      } catch (error) {
+        sourceFailures.push(category + ": invalid FI source metadata or content: " + String(error));
+      }
     }
-    if (matches.length !== 1) {
+    if (sourceFailures.length || matches.length !== 1) {
       decisions.push({ recipe_id: id, group: "source-hold",
-        reasons: ["FI source missing, duplicated or unparseable across categories"], pairs: 0 }); continue;
+        reasons: sourceFailures.length ? sourceFailures :
+          ["FI source missing, duplicated or unparseable across categories"], pairs: 0 }); continue;
     }
     const { category, source } = matches[0]!;
     const targets: Partial<Record<Locale, Recipe>> = {};
+    const targetFailures: string[] = [];
     for (const locale of locales) {
-      const t = await readRecipe(root, "kaannokset/" + locale + "/" + category + "/" + id + ".md");
-      if (t) targets[locale] = t;
+      try {
+        const t = await readRecipe(root, "kaannokset/" + locale + "/" + category + "/" + id + ".md");
+        if (t) targets[locale] = t;
+      } catch (error) {
+        targetFailures.push(locale + ": invalid translation metadata or content: " + String(error));
+      }
+    }
+    if (targetFailures.length) {
+      decisions.push({ recipe_id: id, group: "needs-review", reasons: targetFailures, pairs: 0 });
+      continue;
     }
     decisions.push(evaluateBatchEntry({ id, category, source, targets,
       reviewState: record.review_state ?? "unreviewed", hashes: record }, evidence));

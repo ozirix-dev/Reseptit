@@ -102,3 +102,27 @@ test("missing source cannot produce a candidate even with complete evidence", ()
   b.source = null;
   assert.equal(evaluateBatchEntry(b, e).group, "source-hold");
 });
+
+test("bad FI source is isolated to source HOLD instead of aborting the whole batch", async () => {
+  const {mkdtemp, mkdir, writeFile, rm} = await import("node:fs/promises");
+  const {tmpdir} = await import("node:os");
+  const path = await import("node:path");
+  const {partitionFromLedger} = await import("../scripts/translation-batch-partition");
+  const root = await mkdtemp(path.join(tmpdir(), "recipe-partition-"));
+  try {
+    await mkdir(path.join(root, "reseptit/paaruoat"), {recursive:true});
+    await writeFile(path.join(root, "reseptit/paaruoat/good.md"),
+      "---\\ntitle: Good\\nrecipe_id: good\\nurl_slug: good\\ncategory: paaruoka\\nlanguage: fi\\nstatus: published\\nservings: 2\\ningredients:\\n- amount: 100\\n  unit: g\\n  item: kala\\n---\\n\\n# Good\\n\\n## Valmistus\\n\\n1. Kypsennä kala.");
+    await writeFile(path.join(root, "reseptit/paaruoat/bad.md"),
+      "---\\ntitle: Bad\\nrecipe_id: bad\\nurl_slug: bad\\ncategory: paaruoka\\nlanguage: fi\\nstatus: published\\nservings: 2\\ningredients: []\\n---\\n\\n# Bad");
+    const sample = {fi: "a".repeat(64), en: "b".repeat(64), sv: "c".repeat(64),
+      th: "d".repeat(64), review_state:"ai-compared-draft"};
+    const decision = await partitionFromLedger(root, {recipes:{good:sample,bad:sample}}, {});
+    assert.equal(decision.total, 2);
+    assert.deepEqual(decision.source_hold.map(x=>x.recipe_id), ["bad"]);
+    assert.deepEqual(decision.needs_review.map(x=>x.recipe_id), ["good"]);
+    assert.equal(decision.candidate.length, 0);
+  } finally {
+    await rm(root, {recursive:true,force:true});
+  }
+});
