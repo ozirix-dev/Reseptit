@@ -2,14 +2,14 @@
 
 **PR #356**: tämä keskustelu. **PR #357**: ensimmäinen keskustelu. Kumpikin omistaa vain omat reseptinsä. #357:n nimettyjä 20 reseptiä ei käsitellä tässä erässä. Aiemmat kuusi päällekkäistä bulgogi- ja kimchi-jjigae-luonnosta on poistettu #356:sta; ne kuuluvat #357:ään.
 
-## Erän 20 FI-kohdetta (60 kieliversiota, 9 lähdekatselmoitua GK-HOLD-luonnosta)
+## Erän 20 FI-kohdetta (60 kieliversiota, 15 tarkistettua luonnosta (9 GK-HOLD))
 
 | Suomenkielinen lähde | EN | SV | TH |
 |---|---|---|---|
 | `reseptit/paaruoat/kana-yakitori-kaalilla.md` | odottaa | odottaa | odottaa |
 | `reseptit/paaruoat/pho-bo.md` | odottaa | odottaa | odottaa |
-| `reseptit/paaruoat/rendang-padang.md` | odottaa | odottaa | odottaa |
-| `reseptit/paaruoat/sate-ayam.md` | odottaa | odottaa | odottaa |
+| `reseptit/paaruoat/rendang-padang.md` | luonnos / QA | luonnos / QA | luonnos / QA |
+| `reseptit/paaruoat/sate-ayam.md` | luonnos / QA | luonnos / QA | luonnos / QA |
 | `reseptit/aamupalat/meksikolainen-huevos-a-la-mexicana.md` | QA tehty / GK HOLD | QA tehty / GK HOLD | QA tehty / GK HOLD |
 | `reseptit/aamupalat/karibia-callaloo-munakas.md` | QA tehty / GK HOLD | QA tehty / GK HOLD | QA tehty / GK HOLD |
 | `reseptit/aamupalat/meksikolainen-quesadilla-sienilla.md` | odottaa | odottaa | odottaa |
@@ -39,4 +39,10 @@
 
 ## Tilanne
 
-Työnjono on rajattu erilleen #357:stä. Kolme reseptiä / yhdeksän kieliversiota on tehty ja verrattu FI-lähteeseen. Kaikki kolme reseptiä / 9 kieliversiota säilyvät draftina eikä FI-lähteiden kielimetatietoja julkaista tässä haarassa: Huevos ja Callaloo rikkoivat GK80-release-2:n raakatekstin SHA-sidonnan (CI 42644592927: STALE_INPUT), ja farinatan kielimetatiedon lisäys rikkoi erillisen GK100-owner-approved-eighteen-julkaisusinetin (CI 42645835154: GK100_RELEASE_CANDIDATE_CHANGED). Hyväksyttyjä GK80- tai GK100-tarkisteita ei avata kielistatusten vuoksi; julkaisua varten tarvitaan erikseen katselmoitu, testattu tuki metatietojen turvalliselle käsittelylle. Loput 17 reseptiä / 51 kieliversiota odottavat. PR on Draft eikä tätä sisältöä ole yhdistetty tuotantoon. Aiempi #356:n CI kaatui käännösten metatiedon/vertailun tarkistuksessa; viimeistelemättömiä käännöksiä ei julkaistu.
+Työnjono on rajattu erilleen #357:stä. Kolme reseptiä / yhdeksän kieliversiota on tehty ja verrattu FI-lähteeseen. Kaikki kolme reseptiä / 9 kieliversiota säilyvät draftina eikä FI-lähteiden kielimetatietoja julkaista tässä haarassa: Huevos ja Callaloo rikkoivat GK80-release-2:n raakatekstin SHA-sidonnan (CI 42644592927: STALE_INPUT), ja farinatan kielimetatiedon lisäys rikkoi erillisen GK100-owner-approved-eighteen-julkaisusinetin (CI 42645835154: GK100_RELEASE_CANDIDATE_CHANGED). Hyväksyttyjä GK80- tai GK100-tarkisteita ei avata kielistatusten vuoksi; julkaisua varten tarvitaan erikseen katselmoitu, testattu tuki metatietojen turvalliselle käsittelylle. Lisäksi kahden pääruoan (rendang ja sate ayam) kuusi kieliluonnosta ovat lisättyinä; niiden tarkat määrät, annokset, ainesosarivien lukumäärä, makrot ja vaiheiden lukumäärä vastaavat FI-lähteitä. Loput 15 reseptiä / 45 kieliversiota odottavat. PR on Draft eikä tätä sisältöä ole yhdistetty tuotantoon. Aiempi #356:n CI kaatui käännösten metatiedon/vertailun tarkistuksessa; viimeistelemättömiä käännöksiä ei julkaistu.
+
+## Toinen osanäyttö (9.11.2026)
+
+- `rendang-padang` (EN/SV/TH): 12 ainesosariviä, 5 valmistusvaihetta, 6 annosta; 3–4 tunnin haudutus, kookosmaidon haihduttaminen ja ettei vettä lisätä kuivan rendangin loppuvaiheessa, ovat kaikissa kielissä. Makrot säilyvät. Tila: draft, ei FI-metadataa.
+- `sate-ayam` (EN/SV/TH): 12 ainesosariviä, 5 valmistusvaihetta, 4 annosta; 30 minuutin kylmämarinointi, kanan kypsentäminen kauttaaltaan, maapähkinäallergian tarkistus ja kastikkeen erilliset soija/sokerimäärät säilyvät. Kuva-altissa mainitut kurkku ja punasipuli eivät kuulu ainesosalistaan, kuten FI-lähteessä. Makrot säilyvät. Tila: draft, ei FI-metadataa.
+- Näiden kuuden luonnoksen tarkat semanttiset SHA-tarkisteet ja julkaisuportit viimeistellään ennen `published`-muutosta. Hyväksyttyjä GI/GK-sidoksia ei muuteta.
