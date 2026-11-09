@@ -134,12 +134,12 @@ export function classifyPilotCase(caseData, recipe, translations = []) {
   };
 }
 
-async function publishedTranslationLocales(root, recipe) {
+async function publishedTranslationLocales(root, recipe, relativeSourcePath) {
   const statuses = recipe.data.translation_status ?? {};
   const reported = [];
   for (const locale of ["en", "sv", "th"]) {
     if (statuses[locale] !== "published") continue;
-    const targetPath = path.join(root, "kaannokset", locale, recipe.data.recipe_id + ".md");
+    const targetPath = path.join(root, "kaannokset", locale, relativeSourcePath.replace(/^reseptit\//, ""));
     // Check actual files rather than trusting only the source metadata.
     await access(targetPath);
     const target = parseRecipeMarkdownTranslations(await readFile(targetPath, "utf8"), targetPath);
@@ -183,7 +183,7 @@ export async function runPilot(pilot, root = ROOT) {
     assert.equal(recipe.data.recipe_id, row.recipe_id, row.path + ": wrong identity");
     assert.equal(recipe.data.language, "fi", row.path + ": must be FI source");
     assert.equal(recipe.data.status, "published", row.path + ": pilot expects published source");
-    const translated = await publishedTranslationLocales(root, recipe);
+    const translated = await publishedTranslationLocales(root, recipe, row.path);
     const probes = row.probes.map((p) => evaluateProbe(recipe, p, translated));
     const isFresh = actualSha === row.source_blob_sha;
     const allProbesPass = probes.every((p) => p.pass);
