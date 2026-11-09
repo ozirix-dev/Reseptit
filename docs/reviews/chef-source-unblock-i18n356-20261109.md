@@ -1,8 +1,8 @@
 # FI-lähteiden kokkikorjaukset käännöserälle B
 
-Ei koepaistoa. Rajaus: viisi lähdetiedostoa, ei uusia ainesmääriä, ravintoarvoja eikä GK-hyväksyntöjä.
+Ei koepaistoa. Rajaus: neljä ohjetekstin lähdekorjausta, ei uusia ainesmääriä, ravintoarvoja eikä GK-hyväksyntöjä. Viides tapaus, shakshuka, on erillinen HOLD.
 
-- Harissashakshuka: kuorettoman kananmunan ilmeinen tekstivirhe oikaistu; 110 g ennallaan.
+- Harissashakshuka: FI:n `kananmunaa kuoretta` näyttää kirjoitusvirheeltä (valmistusohjeessa kuoreton), mutta `ingredients.item`-muutos laukaisee perustellusti GK80 `STALE_INPUT` -suojan. **FI-lähdettä ei tässä PR:ssä muuteta**: korjaus odottaa kyseisen ravinto/GK-sidoksen nimenomaista uutta arviointia. Käännökset eivät saa siirtyä julkaisuun ennen sitä.
 - Munakasmuffinit ja tonnikalamunakkaat: tarttumattomat silikoni- tai paperivuoat ilman listaamatonta voitelurasvaa; pekoni paistetaan omassa rasvassaan.
 - Yakitori: soijakastike yhdenmukaistettu aineslistaan, tamari vain vaihtoehto; mirin pysyy laskettuna ainesosana, raa'an kanan kastike erillään ja kanan sisälämpö 75 °C.
 - Pho bo: naudanliha kypsennetään ensin liemessä ja varmennetaan lämpömittarilla; 63 °C ja 3 minuutin lepo kokonaiselle naudan lihalle, ennen annoksen kokoamista. Korianteri tarjoiluun aineslistan mukaisesti.
