@@ -4,7 +4,7 @@ recipe_id: valimerellinen-tortilla-espanola-aamupalaksi
 url_slug: valimerellinen-tortilla-espanola-aamupalaksi
 category: aamupala
 language: th
-status: draft
+status: published
 main_ingredient:
 - kananmuna
 - peruna

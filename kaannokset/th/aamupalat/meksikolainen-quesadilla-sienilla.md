@@ -4,7 +4,7 @@ recipe_id: meksikolainen-quesadilla-sienilla
 url_slug: meksikolainen-quesadilla-sienilla
 category: aamupala
 language: th
-status: draft
+status: published
 main_ingredient:
 - maissitortilla
 - juusto

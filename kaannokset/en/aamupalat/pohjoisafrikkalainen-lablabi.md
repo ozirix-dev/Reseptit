@@ -4,7 +4,7 @@ recipe_id: pohjoisafrikkalainen-lablabi
 url_slug: pohjoisafrikkalainen-lablabi
 category: aamupala
 language: en
-status: draft
+status: published
 main_ingredient:
 - kikherne
 - pita

@@ -1,26 +1,25 @@
-# Rinnakkainen käännöserä B — PR #356:n jäljellä olevat 15 reseptiä
+# Rinnakkainen käännöserä B — PR #356:n jäljellä olevat 10 reseptiä
 
 **PR #356**: tämä keskustelu. Julkaistu B05-osuus: [PR #370](https://github.com/ozirix-dev/Reseptit/pull/370) yhdistetty mainiin 9.11.2026 (5 reseptiä / 15 kieliversiota). **PR #357**: ensimmäinen keskustelu. Kumpikin omistaa vain omat reseptinsä. #357:n nimettyjä 20 reseptiä ei käsitellä tässä erässä. Aiemmat kuusi päällekkäistä bulgogi- ja kimchi-jjigae-luonnosta on poistettu #356:sta; ne kuuluvat #357:ään.
 
-**Nykyinen tilanne PR #370:n jälkeen:** 15 FI-reseptin 45 EN/SV/TH-käännöstä on edelleen `status: draft` tässä #356-haarassa. Viisi aiemmin tähän erään kuulunutta reseptiä (`meksikolainen-huevos-a-la-mexicana`, `karibia-callaloo-munakas`, `valimerellinen-farinata-aamupalaksi`, `rendang-padang`, `sate-ayam`) ja niiden 15 julkaistua kieliversiota ovat nyt mainissa PR #370:n kautta, eikä niitä pidä lisätä tähän PR:ään takaisin. Päähaaran GK80/GK100-lukot ja julkaisuindeksi säilytetään. Alla olevat työvaihekohtaiset merkinnät ovat 20 reseptin alkuperäisen työerän historiallista raportointia, eivät tämän PR:n tämänhetkistä 60 Draft-käännöksen väitettä.
+**9.11.2026 B10-julkaisun jälkeen:** [PR #371](https://github.com/ozirix-dev/Reseptit/pull/371) julkaisi seuraavat 5 reseptiä EN/SV/TH-käännöksineen: musta seesamiriisipuuro, tortilla española, lablabi, sieni-maissiquesadilla ja myskikurpitsa-kaurapuuro. Ne on poistettu tästä Draft-PR:n muutoksista, samoin kuin aiempi #370-erä. **Tähän PR:ään jää vain 10 reseptin 30 Draft-käännöstä.** Tämän otsikon alapuolella oleva aiempi B05/60-lukuja kuvaava teksti on historiallinen, ei voimassa olevan PR:n nykyinen tila.
 
-## PR #356:n 15 jäljellä olevaa FI-kohdetta (45 EN/SV/TH-luonnosta)
+**Uusi lähdelaadun triage:** `thai-kookosriisi-mangolla` FI `cooking_method: paistaminen` ei vastaa riisin keittämistä; vaatii FI-lähdekorjauksen tai dokumentoidun rajauksen ennen käännöksen julkaisua. `vietnamilainen-chao-ga-kanapuuro` ja `indonesialainen-bubur-ayam-kanariisipuuro` sisältävät noin 40 minuutin riisin haudutuksen ja sen jälkeen kanan kypsentämisen, vaikka `time_total_min: 45`; tarkista aika ruoanvalmistuksen realismia vasten ennen julkaisemista. Nämä ovat laatutriage-havaintoja, eivät automaattisesti vahvistettuja P0/P1-virheitä. #360:n kolme alkuperäistä FI-HOLDia ovat edelleen erikseen ratkaistavia.
+
+**Historiallinen B05-välitila:** 15 FI-reseptin 45 EN/SV/TH-käännöstä on edelleen `status: draft` tässä #356-haarassa. Viisi aiemmin tähän erään kuulunutta reseptiä (`meksikolainen-huevos-a-la-mexicana`, `karibia-callaloo-munakas`, `valimerellinen-farinata-aamupalaksi`, `rendang-padang`, `sate-ayam`) ja niiden 15 julkaistua kieliversiota ovat nyt mainissa PR #370:n kautta, eikä niitä pidä lisätä tähän PR:ään takaisin. Päähaaran GK80/GK100-lukot ja julkaisuindeksi säilytetään. Alla olevat työvaihekohtaiset merkinnät ovat 20 reseptin alkuperäisen työerän historiallista raportointia, eivät tämän PR:n tämänhetkistä 60 Draft-käännöksen väitettä.
+
+## PR #356:n 10 jäljellä olevaa FI-kohdetta (30 EN/SV/TH-luonnosta)
 
 | Suomenkielinen lähde | EN | SV | TH |
 |---|---|---|---|
 | `reseptit/paaruoat/kana-yakitori-kaalilla.md` | luonnos / FI HOLD | luonnos / FI HOLD | luonnos / FI HOLD |
 | `reseptit/paaruoat/pho-bo.md` | luonnos / FI HOLD | luonnos / FI HOLD | luonnos / FI HOLD |
-| `reseptit/aamupalat/meksikolainen-quesadilla-sienilla.md` | luonnos / QA odottaa | luonnos / QA odottaa | luonnos / QA odottaa |
 | `reseptit/aamupalat/pohjoisafrikkalainen-harissa-shakshuka.md` | luonnos / QA odottaa | luonnos / QA odottaa | luonnos / QA odottaa |
 | `reseptit/aamupalat/thai-riisinuudelikeitto-aamuksi.md` | luonnos / QA odottaa | luonnos / QA odottaa | luonnos / QA odottaa |
-| `reseptit/aamupalat/valimerellinen-tortilla-espanola-aamupalaksi.md` | luonnos / QA odottaa | luonnos / QA odottaa | luonnos / QA odottaa |
 | `reseptit/aamupalat/indonesialainen-bubur-ayam-kanariisipuuro.md` | luonnos / QA odottaa | luonnos / QA odottaa | luonnos / QA odottaa |
 | `reseptit/aamupalat/vietnamilainen-chao-ga-kanapuuro.md` | luonnos / QA odottaa | luonnos / QA odottaa | luonnos / QA odottaa |
 | `reseptit/aamupalat/thai-kai-jiao-yrteilla.md` | luonnos / QA odottaa | luonnos / QA odottaa | luonnos / QA odottaa |
-| `reseptit/aamupalat/meksikolainen-kurpitsapuuro-piloncillolla.md` | luonnos / QA odottaa | luonnos / QA odottaa | luonnos / QA odottaa |
-| `reseptit/aamupalat/kiinalainen-musta-seesamipuuro.md` | luonnos / QA odottaa | luonnos / QA odottaa | luonnos / QA odottaa |
 | `reseptit/aamupalat/thai-kookosriisi-mangolla.md` | luonnos / QA odottaa | luonnos / QA odottaa | luonnos / QA odottaa |
-| `reseptit/aamupalat/pohjoisafrikkalainen-lablabi.md` | luonnos / QA odottaa | luonnos / QA odottaa | luonnos / QA odottaa |
 | `reseptit/aamupalat/munakasmuffinit.md` | luonnos / FI HOLD | luonnos / FI HOLD | luonnos / FI HOLD |
 | `reseptit/aamupalat/tonnikalamunakkaat-uunissa.md` | luonnos / FI HOLD | luonnos / FI HOLD | luonnos / FI HOLD |
 

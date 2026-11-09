@@ -4,7 +4,7 @@ recipe_id: kiinalainen-musta-seesamipuuro
 url_slug: kiinalainen-musta-seesamipuuro
 category: aamupala
 language: sv
-status: draft
+status: published
 main_ingredient:
 - mustat seesaminsiemenet
 - riisi

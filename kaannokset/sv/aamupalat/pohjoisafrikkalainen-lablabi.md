@@ -4,7 +4,7 @@ recipe_id: pohjoisafrikkalainen-lablabi
 url_slug: pohjoisafrikkalainen-lablabi
 category: aamupala
 language: sv
-status: draft
+status: published
 main_ingredient:
 - kikherne
 - pita
@@ -64,7 +64,7 @@ Ingredienserna anges ovan i portionskalkylatorn.
 ## Tillagning
 
 1. Koka upp 700 g färdigblandad, utspädd kycklingbuljong och tillsätt 100 g kokta, avrunna kikärter samt 2 g malen spiskummin.
-2. Ångkoka 110 g ägg, vägt utan skal, i en liten behållare utan tillsatt fett. Tillaga ägget helt genomstekt och använd hela mängden.
+2. Ångkoka 110 g ägg, vägt utan skal, i en liten behållare utan tillsatt fett. Tillaga ägget tills det är helt genomlagat och använd hela mängden.
 3. Riv 100 g färdigt vitt pitabröd i serveringsskålar. Fördela hela den varma soppan och de tillagade äggen jämnt mellan två portioner. Tillsätt ingen annan olja eller harissa.
 
 ## Anteckningar

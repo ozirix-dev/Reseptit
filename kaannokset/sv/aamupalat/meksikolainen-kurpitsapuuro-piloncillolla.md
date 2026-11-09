@@ -4,7 +4,7 @@ recipe_id: meksikolainen-kurpitsapuuro-piloncillolla
 url_slug: meksikolainen-kurpitsapuuro-piloncillolla
 category: aamupala
 language: sv
-status: draft
+status: published
 main_ingredient:
 - kaurahiutale
 - kurpitsa
