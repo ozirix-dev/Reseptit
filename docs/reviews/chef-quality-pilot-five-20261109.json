@@ -1,0 +1,297 @@
+{
+  "schema_version": 1,
+  "title": "Chef quality gate – five distinct Finnish source recipe problems",
+  "source_baseline": "ozirix-dev/Reseptit main 2026-11-09 ade461048ea138cd4f6a34340e8a53df79532bd7",
+  "policy": "Culinary identity + reliable source check before any text editing; no automatic public approval.",
+  "cases": [
+    {
+      "recipe_id": "indonesialainen-serabi-kookospannukakku",
+      "path": "reseptit/aamupalat/indonesialainen-serabi-kookospannukakku.md",
+      "source_blob_sha": "4c2f2f2bab52211d7392e3eb63db9775eacfe101",
+      "summary": "Three generic instructions refer to soaking legumes and thin crepes, then a fourth repeats the real coconut-rice-flour pancake recipe. Ingredient quantities are currently all explicit; PR #362 proposes text-only repair, but its integration depends on #359's CI correction. Authentic serabi texture remains a chef-review question.",
+      "probes": [
+        {
+          "kind": "instruction_contains",
+          "text": "Jos käytät kokonaisia palkokasveja"
+        },
+        {
+          "kind": "ingredient_amount",
+          "item": "riisijauho",
+          "amount": 100,
+          "unit": "g"
+        },
+        {
+          "kind": "ingredient_amount",
+          "item": "kookosmaitoa",
+          "amount": 150,
+          "unit": "ml"
+        },
+        {
+          "kind": "ingredient_absent",
+          "item": "hiivaa"
+        }
+      ],
+      "findings": [
+        {
+          "kind": "generic_instruction",
+          "severity": "P1",
+          "status": "open",
+          "explanation": "Inapplicable conditional soaking step precedes the actual serabi method and invites incorrect handling."
+        }
+      ],
+      "references": [
+        {
+          "url": "https://www.sbs.com.au/food/recipe/serabe-manggarai-style-rice-pancakes/hpdt6skkd",
+          "relevance": "Indonesian chef recipe confirms the dish is a rice-flour and coconut pancake; variations use different leavening."
+        },
+        {
+          "url": "https://www.sichildrensmuseum.org/wp-content/uploads/2020/12/SICM-kidz-cook-April-2017_Serabi-1.pdf",
+          "relevance": "Alternative simplified coconut-rice-flour method suggests smaller cakes and covered pan; no single recipe is canonical."
+        }
+      ],
+      "proposed_change": {
+        "kind": "instruction_only",
+        "related_pr": 362,
+        "next_step": "Review exact PR #362 diff and integration after #359; do not infer authentic texture or CI pass from this pilot."
+      }
+    },
+    {
+      "recipe_id": "indonesialainen-bakwan-maissifritter",
+      "path": "reseptit/aamupalat/indonesialainen-bakwan-maissifritter.md",
+      "source_blob_sha": "f18fc5e261e0adbf944b7acd4f51f093df4f5d54",
+      "summary": "The ingredient list has 100 g wheat flour, corn and carrot but no batter liquid; the instruction says to add water until it holds together. This water is part of the edible fritter batter, not merely cooking or rinsing water. No justified exact quantity yet.",
+      "probes": [
+        {
+          "kind": "ingredient_amount",
+          "item": "vehnäjauho",
+          "amount": 100,
+          "unit": "g"
+        },
+        {
+          "kind": "ingredient_absent",
+          "item": "vettä"
+        },
+        {
+          "kind": "instruction_contains",
+          "text": "lisää vettä vain sen verran"
+        },
+        {
+          "kind": "instruction_contains",
+          "text": "Muotoile pieniksi pihveiksi"
+        }
+      ],
+      "findings": [
+        {
+          "kind": "unquantified_edible_liquid",
+          "severity": "P1",
+          "status": "open",
+          "explanation": "Water incorporated into a flour batter is not listed or quantified; cannot verify dough consistency or cooked yield."
+        },
+        {
+          "kind": "generic_instruction",
+          "severity": "P1",
+          "status": "open",
+          "explanation": "A generic vegetable-patty sequence precedes the specific bakwan instruction and omits reliable batter proportions."
+        }
+      ],
+      "references": [
+        {
+          "url": "https://www.cookmeindonesian.com/bakwan-jagung-udang-corn-shrimp-fritters/",
+          "relevance": "Indonesian recipe adds flour and water a little at a time; illustrates preparation method but not the right quantity for this different variant."
+        },
+        {
+          "url": "https://www.thejakartapost.com/life/2017/06/06/ramadhan-recipe-the-westin-jakartas-bakwan-jagung",
+          "relevance": "Westin Jakarta chef's corn tempura includes weighed flour and water; proportions cannot be copied into this recipe."
+        }
+      ],
+      "proposed_change": {
+        "kind": "ingredient_and_method",
+        "next_step": "Research this exact corn-carrot batter and establish a credible, measured water amount; then update nutrition/yield and GI/GL binding review before publication."
+      }
+    },
+    {
+      "recipe_id": "pohjoisafrikkalainen-bissara",
+      "path": "reseptit/aamupalat/pohjoisafrikkalainen-bissara.md",
+      "source_blob_sha": "f64ad230f209daf4c1125edd09ede4c734e4e620",
+      "summary": "150 g dried fava beans, 25 min total time and generic broth/noodles instructions cannot produce a reliably soft puréed bissara. Whole versus split peeled dried beans are not specified. Need ingredient-state and timing review, not a cosmetic rewrite.",
+      "probes": [
+        {
+          "kind": "time_equals",
+          "minutes": 25
+        },
+        {
+          "kind": "ingredient_amount",
+          "item": "kuivattuja härkäpapuja",
+          "amount": 150,
+          "unit": "g"
+        },
+        {
+          "kind": "instruction_contains",
+          "text": "Lisää nuudelit"
+        },
+        {
+          "kind": "ingredient_absent",
+          "item": "kanaliemi"
+        }
+      ],
+      "findings": [
+        {
+          "kind": "unrealistic_time",
+          "severity": "P1",
+          "status": "open",
+          "explanation": "Declared 25 minutes cannot generally cover dried fava soaking and simmering to a smooth puree; bean processing is unspecified."
+        },
+        {
+          "kind": "unsafe_or_incomplete_handling",
+          "severity": "P1",
+          "status": "open",
+          "explanation": "The bean type (split/peeled versus whole) and the fully-soft cooking endpoint are missing."
+        },
+        {
+          "kind": "generic_instruction",
+          "severity": "P1",
+          "status": "open",
+          "explanation": "Stock, noodles and leafy greens appear only in generic instructions, not in this bean soup's actual ingredient list."
+        }
+      ],
+      "references": [
+        {
+          "url": "https://tasteofmaroc.com/bessara-fava-bean-dip-or-soup/",
+          "relevance": "Moroccan culinary source explains dried fava soaking and over-one-hour cooking in one tested preparation."
+        },
+        {
+          "url": "https://www.cookingwithalia.com/858-moroccan-fava-beans-soup-bissara/",
+          "relevance": "Moroccan cook gives about 45 min simmering plus finishing; supports required soft bean endpoint, not an invented exact time."
+        }
+      ],
+      "proposed_change": {
+        "kind": "ingredients_method_time",
+        "next_step": "Choose peeled/split or whole fava bean form with source basis, define correct soft endpoint and time; update translations and GI/GL provenance as needed."
+      }
+    },
+    {
+      "recipe_id": "japanilainen-yaki-onigiri-misolla",
+      "path": "reseptit/aamupalat/japanilainen-yaki-onigiri-misolla.md",
+      "source_blob_sha": "bff8b38121a3af090dfd5b7559517ae4aeaa59c7",
+      "summary": "100 g rice with 150 g miso and 150 g nori is implausible for two small grilled rice-ball portions. Source does not say whether rice is cooked or raw, and generic 'vegetable patty' steps are incorrect. Rice temperature and miso glazing both matter.",
+      "probes": [
+        {
+          "kind": "ingredient_amount",
+          "item": "miso",
+          "amount": 150,
+          "unit": "g"
+        },
+        {
+          "kind": "ingredient_amount",
+          "item": "nori",
+          "amount": 150,
+          "unit": "g"
+        },
+        {
+          "kind": "ratio_at_least",
+          "numerator": "miso",
+          "denominator": "riisi",
+          "minimum": 1
+        },
+        {
+          "kind": "ratio_at_least",
+          "numerator": "nori",
+          "denominator": "riisi",
+          "minimum": 1
+        },
+        {
+          "kind": "instruction_contains",
+          "text": "Muotoile pieniksi pihveiksi"
+        }
+      ],
+      "findings": [
+        {
+          "kind": "implausible_quantity",
+          "severity": "P1",
+          "status": "open",
+          "explanation": "Miso and nori each outweigh the listed rice by 50%; do not substitute arbitrary smaller quantities without checking yield and nutrition."
+        },
+        {
+          "kind": "generic_instruction",
+          "severity": "P1",
+          "status": "open",
+          "explanation": "Instruction treats cooked rice like an unspecified grated and bound vegetable patty and omits rice preparation."
+        },
+        {
+          "kind": "unsafe_or_incomplete_handling",
+          "severity": "P1",
+          "status": "open",
+          "explanation": "Raw-versus-cooked rice state and reheating sequence are not specified; storage/cooking assumptions cannot be guessed."
+        }
+      ],
+      "references": [
+        {
+          "url": "https://www.justonecookbook.com/miso-yaki-onigiri/",
+          "relevance": "Japanese recipe uses a few tablespoons of miso glaze for several rice balls and warns miso can burn quickly."
+        },
+        {
+          "url": "https://www.justonecookbook.com/yaki-onigiri-grilled-rice-ball/",
+          "relevance": "Japanese cook specifies uncooked-to-cooked rice conversion and a formed, grilled rice-ball method."
+        }
+      ],
+      "proposed_change": {
+        "kind": "ingredient_and_method",
+        "next_step": "Clarify rice state, find ingredient proportions for the intended yield, recalculate macros and require GI/GL review, then correct instructions."
+      }
+    },
+    {
+      "recipe_id": "indialainen-poha-maapahkinoilla",
+      "path": "reseptit/aamupalat/indialainen-poha-maapahkinoilla.md",
+      "source_blob_sha": "f8b9cf8a82c6c0a04a1a3cdbc76f2599cb4f6258",
+      "summary": "The first three steps turn flattened rice into nonexistent dough and patties; only step four describes poha. FI shows published EN/SV/TH, so repairing the FI directions alone would leave incorrect foreign-language directions and stale semantic evidence.",
+      "probes": [
+        {
+          "kind": "instruction_contains",
+          "text": "Sekoita joukkoon taikinan ainekset"
+        },
+        {
+          "kind": "instruction_contains",
+          "text": "Muotoile pieniksi pihveiksi"
+        },
+        {
+          "kind": "ingredient_amount",
+          "item": "riisihiutale",
+          "amount": 100,
+          "unit": "g"
+        },
+        {
+          "kind": "translation_published",
+          "locales": [
+            "en",
+            "sv",
+            "th"
+          ]
+        }
+      ],
+      "findings": [
+        {
+          "kind": "generic_instruction",
+          "severity": "P1",
+          "status": "open",
+          "explanation": "Vegetable patty and dough-making instructions contradict the actual poha ingredients and dish identity."
+        },
+        {
+          "kind": "translation_dependency",
+          "severity": "P1",
+          "status": "open",
+          "explanation": "Three published translations must be checked after FI preparation semantics change; source-only text repair is not release-ready."
+        }
+      ],
+      "references": [
+        {
+          "url": "https://indiensupermarkt.com/poha/",
+          "relevance": "Poha reference uses a short rinse and gentle pan heating with peanuts, curry leaves and herbs, not patties."
+        }
+      ],
+      "proposed_change": {
+        "kind": "multilingual_instruction",
+        "next_step": "Repair FI steps against source recipe, then compare and repair EN/SV/TH with fresh meaning hashes in one coordinated PR; do not add consumed water from rinse."
+      }
+    }
+  ]
+}
