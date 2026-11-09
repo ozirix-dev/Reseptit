@@ -61,8 +61,7 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 
 ## Valmistus
 
-1. Valuta kypsennetyt maissinjyvät tarvittaessa kuiviksi. Hienonna thaibasilika.
-2. Vatkaa kananmunat kulhossa. Sekoita mukaan vehnäjauho, maissi, thaibasilika ja ripaus luettelon suolaa. Tuloksena on paksu, lusikoitava taikina; tähän versioon ei lisätä vettä.
-3. Kuumenna luettelon paistoöljy tarttumattomassa pannussa keskilämmöllä. Nostele taikinasta lusikalla pieniä, litteitä frittereitä pannulle.
-4. Paista molemmin puolin kullanruskeiksi. Käännä vasta, kun ensimmäinen puoli pysyy koossa, ja varmista, että jauho- ja kananmunataikina kypsyy keskeltäkin.
-5. Tarjoa lämpiminä. Limetti ja makea chilikastike eivät kuulu tämän version ainesmääriin eivätkä ravintolaskelmaan.
+1. Raasta, muussaa tai hienonna pääraaka-aine. Sekoita joukkoon taikinan ainekset ja lisää vettä vain sen verran, että seos pysyy koossa.
+2. Kuumenna pannulla ohut kerros öljyä. Muotoile pieniksi pihveiksi tai lusikoi taikina pannulle.
+3. Paista keskilämmöllä molemmin puolin kypsäksi ja rapeapintaiseksi. Paista erissä, jotta pannu ei jäähdy.
+4. Tarjoa limetillä ja makean chilikastikkeen pienellä tipalla.
