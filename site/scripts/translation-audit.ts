@@ -168,7 +168,7 @@ export async function auditTranslations(recipeIds?: string[]): Promise<Translati
         JSON.stringify(publicData.cooking_method) !== JSON.stringify(["keittäminen"])) {
       throw Error("EDITORIAL_COOKING_METHOD_NOT_REVIEWED");
     }
-    reviewedMethods.set(source.data.recipe_id, publicData.cooking_method);
+    reviewedMethods.set(source.data.recipe_id, publicData.cooking_method ?? []);
   }
   return auditRecipePairs(sources, publishedTranslations, reviewedMethods);
 }
