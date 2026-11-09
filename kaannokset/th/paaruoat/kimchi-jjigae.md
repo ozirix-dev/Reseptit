@@ -1,0 +1,45 @@
+---
+title: "กิมจิจิเก – สตูว์กิมจิสไตล์เกาหลี"
+recipe_id: kimchi-jjigae
+url_slug: kimchi-jjigae
+category: paaruoka
+language: th
+status: draft
+servings: 4
+time_total_min: 45
+difficulty: "ง่าย"
+main_ingredient: [kimchi, porsaanliha, tofu]
+cooking_method: [liedellä hauduttaminen]
+tags: ["เกาหลี","กิมจิ","สตูว์","เต้าหู้"]
+image: {src: paaruoat/kimchi-jjigae.webp, alt: "กิมจิจิเกเกาหลีใส่เต้าหู้ หมู และต้นหอม", width: 1280, height: 853}
+ingredients:
+  - {amount: 400, unit: g, item: "กิมจิหมักจนเปรี้ยวได้ที่", note: "หั่นเป็นเส้น"}
+  - {amount: 300, unit: g, item: "เนื้อสันคอหมู", note: "หั่นบาง"}
+  - {amount: 300, unit: g, item: "เต้าหู้แข็ง", note: "หั่นเต๋า"}
+  - {amount: 1, unit: kpl, item: "หอมหัวใหญ่สีเหลือง", note: "หั่นบาง"}
+  - {amount: 800, unit: ml, item: "น้ำสต็อกไก่หรือน้ำเปล่า"}
+  - {amount: 1, unit: rkl, item: "โคชูจัง (ซอสพริกเกาหลี)"}
+  - {amount: 1, unit: tl, item: "พริกเกาหลีป่นโกชูการู"}
+  - {amount: 1, unit: rkl, item: "ซีอิ๊วญี่ปุ่น"}
+  - {amount: 2, unit: kpl, item: "ต้นหอมญี่ปุ่น", note: "ซอย"}
+  - {amount: 1, unit: rkl, item: "น้ำมันรสกลาง"}
+source_language: fi
+source_recipe: reseptit/paaruoat/kimchi-jjigae.md
+translation_of: kimchi-jjigae
+---
+
+# กิมจิจิเก – สตูว์กิมจิสไตล์เกาหลี
+
+กิมจิจิเกเป็นสตูว์เกาหลีรสร้อน เปรี้ยว และเผ็ดเล็กน้อย ต้มกิมจิที่หมักได้ที่ เนื้อหมู และเต้าหู้ในน้ำซุปเดียวกัน เสิร์ฟคู่กับข้าว
+
+## วิธีทำ
+
+1. ตั้งน้ำมันในหม้อให้ร้อนแล้วผัดหมูจนผิวเริ่มเกรียม
+2. ใส่กิมจิและหอมหัวใหญ่ ผัดต่ออีกสองสามนาทีเพื่อให้รสกิมจิเข้มข้นขึ้น
+3. เติมโคชูจัง โกชูการู ซีอิ๊ว และน้ำสต็อก
+4. ต้มให้เดือด ปิดฝาแล้วเคี่ยว **ประมาณ 25 นาที**
+5. ใส่เต้าหู้ลงไปเคี่ยวต่อ **อีก 5–7 นาที** โรยต้นหอมก่อนเสิร์ฟ
+
+## หมายเหตุ
+
+- ใช้กิมจิที่หมักจนเปรี้ยวได้ที่ หากกิมจิและน้ำซุปมีรสเค็มอยู่แล้ว ให้ชิมก่อนเติมเกลือเพิ่ม.
