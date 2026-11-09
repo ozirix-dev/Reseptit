@@ -5,6 +5,8 @@ url_slug: chili-con-carne-kukkakaaliriisi
 category: paaruoka
 language: fi
 status: published
+translation_languages: [en, sv, th]
+translation_status: {en: published, sv: published, th: published}
 main_ingredient:
 - naudan jauheliha
 - kukkakaali
