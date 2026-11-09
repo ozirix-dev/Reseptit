@@ -112,9 +112,9 @@ test("bad FI source is isolated to source HOLD instead of aborting the whole bat
   try {
     await mkdir(path.join(root, "reseptit/paaruoat"), {recursive:true});
     await writeFile(path.join(root, "reseptit/paaruoat/good.md"),
-      "---\\ntitle: Good\\nrecipe_id: good\\nurl_slug: good\\ncategory: paaruoka\\nlanguage: fi\\nstatus: published\\nservings: 2\\ningredients:\\n- amount: 100\\n  unit: g\\n  item: kala\\n---\\n\\n# Good\\n\\n## Valmistus\\n\\n1. Kypsennä kala.");
+      "---\ntitle: Good\nrecipe_id: good\nurl_slug: good\ncategory: paaruoka\nlanguage: fi\nstatus: published\nservings: 2\ningredients:\n- amount: 100\n  unit: g\n  item: kala\n---\n\n# Good\n\n## Valmistus\n\n1. Kypsennä kala.");
     await writeFile(path.join(root, "reseptit/paaruoat/bad.md"),
-      "---\\ntitle: Bad\\nrecipe_id: bad\\nurl_slug: bad\\ncategory: paaruoka\\nlanguage: fi\\nstatus: published\\nservings: 2\\ningredients: []\\n---\\n\\n# Bad");
+      "---\ntitle: Bad\nrecipe_id: bad\nurl_slug: bad\ncategory: paaruoka\nlanguage: fi\nstatus: published\nservings: 2\ningredients: []\n---\n\n# Bad");
     const sample = {fi: "a".repeat(64), en: "b".repeat(64), sv: "c".repeat(64),
       th: "d".repeat(64), review_state:"ai-compared-draft"};
     const decision = await partitionFromLedger(root, {recipes:{good:sample,bad:sample}}, {});
