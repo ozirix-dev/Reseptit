@@ -10,7 +10,7 @@ const original = (): Recipe => ({
     language: "fi", status: "published", ingredients: [{amount: 100, unit: "g", item: "kana"}],
     servings: 2, main_ingredient: ["kana"], cooking_method: ["keittäminen"], tags: [],
     image: {src: "paaruoat/mock.webp", alt: "Keitto", width: 1280, height: 853} },
-  content: "# Soup\\n\\n## Valmistus\\n\\n1. Kypsennä 100 g kanaa vedessä.",
+  content: "# Soup\n\n## Valmistus\n\n1. Kypsennä 100 g kanaa vedessä.",
 });
 const translation = (locale: "en" | "sv" | "th"): Recipe => {
   const fi = original();
@@ -22,7 +22,7 @@ const translation = (locale: "en" | "sv" | "th"): Recipe => {
       source_recipe: fi.path, translation_of: "mock", ingredients: [{amount: 100, unit: "g",
         item: { en: "chicken", sv: "kyckling", th: "เนื้อไก่" }[locale]}],
       image: {...fi.data.image!, alt: titles[locale]} },
-    content: "# " + titles[locale] + "\\n\\n## " + headings[locale] + "\\n\\n1. " + steps[locale] };
+    content: "# " + titles[locale] + "\n\n## " + headings[locale] + "\n\n1. " + steps[locale] };
 };
 const bundle = () => {
   const source = original();
@@ -50,7 +50,7 @@ test("missing evidence, including only one missing locale, fails closed", () => 
 });
 test("hash drift is never approved by a green structural check", () => {
   const b = bundle(), e = proofs(b);
-  b.targets.th!.content += "\\nChanged critical note";
+  b.targets.th!.content += "\nChanged critical note";
   const result = evaluateBatchEntry(b, e);
   assert.equal(result.group, "needs-review");
   assert.match(result.reasons.join(" "), /stale|STALE/);

@@ -36,15 +36,15 @@ function normUnit(unit: string, locale: Locale): string {
   return localized[unit as keyof typeof localized]?.[locale] ?? unit;
 }
 function steps(content: string): string[] {
-  const m = /^##\\s+(?:Valmistus|Instructions|Tillagning|วิธีทำ)\\s*$/m.exec(content);
+  const m = /^##\s+(?:Valmistus|Instructions|Tillagning|วิธีทำ)\s*$/m.exec(content);
   if (!m) return [];
   const remainder = content.slice(m.index + m[0].length);
-  const end = remainder.search(/^##\\s+/m);
+  const end = remainder.search(/^##\s+/m);
   const body = remainder.slice(0, end < 0 ? undefined : end);
-  return body.split(/\\r?\\n/).filter(x => /^\\d+[.)]\\s/.test(x.trim()));
+  return body.split(/\r?\n/).filter(x => /^\d+[.)]\s/.test(x.trim()));
 }
 function numbers(text: string): number[] {
-  return [...text.matchAll(/(?<![\\p{L}\\d])\\d+(?:[.,]\\d+)?/gu)]
+  return [...text.matchAll(/(?<![\p{L}\d])\d+(?:[.,]\d+)?/gu)]
     .map(m => Number(m[0].replace(",", ".")));
 }
 function structuralErrors(source: Recipe, target: Recipe, locale: Locale): string[] {
@@ -69,8 +69,8 @@ function structuralErrors(source: Recipe, target: Recipe, locale: Locale): strin
   });
   const fiSteps = steps(source.content), translatedSteps = steps(target.content);
   if (!fiSteps.length || translatedSteps.length !== fiSteps.length) issues.push("instruction steps mismatch");
-  const remaining = numbers(translatedSteps.join("\\n"));
-  for (const number of numbers(fiSteps.join("\\n"))) {
+  const remaining = numbers(translatedSteps.join("\n"));
+  for (const number of numbers(fiSteps.join("\n"))) {
     const index = remaining.indexOf(number);
     if (index < 0) issues.push("missing preparation number " + number);
     else remaining.splice(index, 1);
@@ -171,7 +171,7 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
       const proofs = JSON.parse(await readFile(path.resolve(root, requested("--evidence") ??
         "meta/kaannokset/codex-review-evidence.json"), "utf8"));
       const result = await partitionFromLedger(root, input, proofs);
-      const output = JSON.stringify(result, null, 2) + "\\n";
+      const output = JSON.stringify(result, null, 2) + "\n";
       const destination = requested("--out");
       if (destination) await writeFile(path.resolve(root, destination), output, "utf8");
       else process.stdout.write(output);
