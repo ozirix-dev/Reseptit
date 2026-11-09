@@ -7,6 +7,8 @@ import {fingerprint} from '../scripts/gk80-candidate-model';
 import {calculateCandidate} from '../scripts/gk80-candidate-policy';
 
 import {parseMarkdown} from '../src/content/markdown';
+import {recipeFrontmatterSchema} from '../src/content/schema';
+import {semanticHash} from '../scripts/translation-semantic-review';
 import {verifyNutritionEvidence} from '../scripts/nutrition-evidence';
 import {normalizeCarbohydrate} from '../scripts/nutrition-model';
 const root=new URL('../../',import.meta.url),folder=new URL('docs/nutrition/gk80-release-7/',root),json=(n:string)=>JSON.parse(readFileSync(new URL(n,folder),'utf8'));
@@ -35,7 +37,27 @@ test('seven blocked proposals retain missing-polyol evidence and stay outside th
 
 test('all thirty existing translated pages preserve weighed masses, serving counts, macros and preparation structure',()=>{
  let checked=0;const historical=json('historical-source-text.json'),manifest=json('manifest.json');
- for(const r of recipes){const fi=parseMarkdown(readFileSync(new URL(r.sourcePath,root),'utf8'))!.data as any;const entries=siteContent.recipes.filter(x=>x.recipeId===r.recipeId);assert.deepEqual(entries.map(x=>x.locale).sort(),manifest.existingLocales[r.recipeId].sort());for(const e of entries)assert.equal(e.instructionsText.length,r.proposedPreparation.length);
+ const publicationIndex=json('meta/kaannokset/published-translation-pairs.json');
+ const reviewProofs=json('meta/kaannokset/codex-review-evidence.json');
+ for(const r of recipes){
+  const fiText=readFileSync(new URL(r.sourcePath,root),'utf8');
+  const fiParsed=parseMarkdown(fiText)!;
+  const fi=fiParsed.data as any;
+  const entries=siteContent.recipes.filter(x=>x.recipeId===r.recipeId);
+  const historicalLocales=manifest.existingLocales[r.recipeId] as string[];
+  const newLocales=(publicationIndex.sources.find((x:any)=>x.recipe_id===r.recipeId)?.locales??[]) as string[];
+  assert.deepEqual(entries.map(x=>x.locale).sort(),[...new Set([...historicalLocales,...newLocales])].sort(),r.recipeId+': only historically recorded or SHA-attested additions');
+  for(const locale of newLocales.filter(x=>!historicalLocales.includes(x))){
+   const translatedPath='kaannokset/'+locale+'/'+r.sourcePath.replace('reseptit/','');
+   const parsed=parseMarkdown(readFileSync(new URL(translatedPath,root),'utf8'))!;
+   const proof=reviewProofs[r.recipeId+':'+locale];
+   assert.ok(proof,r.recipeId+':'+locale+': missing publication proof');
+   assert.equal(proof.outcome,'pass',r.recipeId+':'+locale);
+   assert.deepEqual(proof.findings.filter((x:any)=>x.status==='open'&&['P0','P1'].includes(x.severity)),[]);
+   assert.equal(proof.source_hash,semanticHash({data:recipeFrontmatterSchema.parse(fiParsed.data),content:fiParsed.content}),r.recipeId+':'+locale+': source proof');
+   assert.equal(proof.translation_hash,semanticHash({data:recipeFrontmatterSchema.parse(parsed.data),content:parsed.content}),r.recipeId+':'+locale+': translation proof');
+  }
+  for(const e of entries)assert.equal(e.instructionsText.length,r.proposedPreparation.length);
   for(const file of Object.keys(historical).filter(f=>f.startsWith('kaannokset/')&&f.endsWith('/'+r.recipeId+'.md'))){const d=parseMarkdown(readFileSync(new URL(file,root),'utf8'))!.data as any;assert.deepEqual(d.ingredients.map((i:any)=>[i.amount,i.unit]),fi.ingredients.map((i:any)=>[i.amount,i.unit]),file);assert.equal(d.servings,fi.servings,file);assert.equal(d.time_total_min,fi.time_total_min,file);checked++;}
  }assert.equal(checked,30);
 });

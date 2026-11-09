@@ -19,6 +19,10 @@ Kuudessa julkisessa FI-reseptissä on toimituksellisia virheitä, mutta niiden t
 
 Molemmissa puuroissa 45 minuutin kokonaisaika jää ennalleen, mutta toteutuminen riippuu kanan koosta ja kypsymisestä. Jos 75 °C ei täyty, kypsennystä jatketaan. Kokonaisaikaa ei pidä tulkita kypsentämisturvallisuutta tärkeämmäksi. Reseptien 800 g keitinvesi ja kaikki kanasta irronnut neste pysyvät mukana. Tässä ei arvioida mitattua GI:tä eikä muuteta laskettuja makroja.
 
+## Historian kielitestin sovitus
+
+Täyden CI:n ensimmäisessä ajossa [#42708673724](https://github.com/ozirix-dev/Reseptit/actions/runs/42708673724) build onnistui ja 440/441 yksikkötestistä meni läpi. Ainoa FAIL oli Release 7:n historiallinen `existingLocales`-vaatimus, joka ei ottanut huomioon jo aiemmin julkaistuja EN/SV/TH-pareja (#370–372). Vanhaa sinettiä ei poisteta: testi hyväksyy nyt vain historiallisen kielijoukon ja julkaisusivurekisterin **ajantasaisella FI- ja käännös-SHA-todisteella** varmentamat lisäkieliversiot. Kaikki muut kielet hylätään edelleen. Tämä on yhden täsmäkorjauksen yritys, ei GK80-testirajojen yleinen höllennys.
+
 ## Turvaportti
 
 - Jokaisella kuudella on täsmällinen alkuperäinen FI-SHA; koodi ei käytä pelkkää reseptitunnistetta tai laajaa tekstikorvausta.
