@@ -1,0 +1,193 @@
+{
+  "version": "batch20-sha-snapshot-v1",
+  "checked_at": "2026-11-09",
+  "source_base_commit": "ade461048ea138cd4f6a34340e8a53df79532bd7",
+  "translation_commit": "3d10acf37101f414c189b3957a38a2700ee4d74d",
+  "checked_on_ci_run": 42657483743,
+  "reviewer": "ChatGPT AI source/translation comparison; not a human or independent native-speaker review",
+  "human_attestation": false,
+  "checked_scope": "Exact source/target normalized semantic digests plus side-by-side ingredient, method, notes, exclusions, and critical cooking words; CI structure and numeric facts independently checked. This snapshot is NOT publication approval.",
+  "limitation": "All translations remain draft. Source-HOLD groups cannot be published until corrected FI source is independently rechecked, with new digests. Existing GK seals and central semantic registry are untouched.",
+  "recipes": {
+    "bulgogi": {
+      "fi": "5ec91ee7853396b8d4150d5ed847f3c01044b192a3078f4e86a40e55ba1accc6",
+      "en": "f1d9d5f444e96f8c972e1a4c5598a09bfd9cb42eb221e6cc83d5698f80d930a2",
+      "sv": "a0d80354397abe433e7a6811089a0ee3e651eccc004bd0d53691d3492024ec65",
+      "th": "31d10522ff5eee6556ab6b12a44f4656554a82ef63829bcc695fdaf7fae7ce4e",
+      "review_state": "ai-compared-draft",
+      "comparison_note": "Beef sirloin and dry jasmine rice, soy/pear marinade, 20–30 min refrigerated and staged searing; generic sesame seeds not assumed white.",
+      "publish_authorized": false
+    },
+    "bun-cha-hanoi": {
+      "fi": "edcecd020182b4efc484e5940dccdba6096d993f83feabe4420c4995a0bbfa5d",
+      "en": "ce5888aa64fba50f102d36b51f4e78d9b3219dbf147e9d659a7499ff8130827e",
+      "sv": "4d7462fd3910cf6aa8a8e7a2df07673f80aa3d47435e733c4c0b23a4b1c9521d",
+      "th": "a69b635c0719ed1cce97cdc6254f76fa548037c5d72199ac1d6689ad8fe410a6",
+      "review_state": "ai-compared-draft",
+      "comparison_note": "Separate pork patty and belly marinades, distinct fish sauce amounts, 30 min refrigeration, cooked pork and dipping sauce.",
+      "publish_authorized": false
+    },
+    "carnitas-salaattitacot": {
+      "fi": "2a8215e3aeaddc4442b4b5b3ced2a0a7d57e8afe7c11b87b440aef3f5aa02275",
+      "en": "d248db1de83c79bb58197452842b12083573613bfcc45657beb0023df23cf2bf",
+      "sv": "519a7201e0ba88a8d4fa6ec2769e6cc6b70dc7d7743433419d16f58e79a37ebd",
+      "th": "a7f532259b69e8ed7a39273e271f5d458e801484cc8f85d4823b43b051082a37",
+      "review_state": "ai-compared-draft",
+      "comparison_note": "Pork neck, entire orange and lime liquids, 150°C for 2.5 h, crisped edges and lettuce-wrap serving.",
+      "publish_authorized": false
+    },
+    "chili-con-carne-kukkakaaliriisi": {
+      "fi": "87640ae2e78b74328346384d6c228b7e4097a9cf343e95f17c79c49097cd68f7",
+      "en": "ab5fb77aeee2b9dbee753ae19761e73a9fb9059fb00068db8fff6bc6f47b11f4",
+      "sv": "82a2ca233c2ec3eb4265309d439d8e2bee40535ed615f1278d802a96c5595b2f",
+      "th": "46c944b48ddf4b1ba6c6b57a744c9d143ea82ce518e2f1e59438cffdb264a1e6",
+      "review_state": "ai-compared-draft",
+      "comparison_note": "17% ground beef, cooked drained whole kidney beans, cauliflower steamed separately, no disposal of sauce or cooking fat.",
+      "publish_authorized": false
+    },
+    "falafel": {
+      "fi": "28b11be3af2c74ff40d1a30dd5819f49b6d52e482373965447e6fd7a86ef9daf",
+      "en": "6281253907f12947c0ae7d3e67b224c482ae40fe45502feab733cf4abf05b0ca",
+      "sv": "d2fc778b5145ab8125b99b1ad5732e0c84574ea2df02e73b8ba560f55b88dca2",
+      "th": "b5bf97c2dcd80401662eb0ed23e142c9ad37a5f0a4029e08fe3268e157c34977",
+      "review_state": "source-hold",
+      "comparison_note": "Pita bread and salad are prescribed at serving but absent from ingredient amounts/nutrition scope.",
+      "publish_authorized": false
+    },
+    "harira": {
+      "fi": "f720b221e1b70740afb7d6db8eaf7c2356c3a0fdcd773a5f7f349ff23e14d21e",
+      "en": "a30bad73835f326676c0bf483f121925ec647964930b67590fc67dcf7bdc4aeb",
+      "sv": "6bf4186895110af62b310c3379abdb32d2426a22560f612f02d4cc73455c729e",
+      "th": "7354db5d875c53ef0a6356a526b886719df78ea824ca3a6e7b6229f5a5caa29f",
+      "review_state": "ai-compared-draft",
+      "comparison_note": "Dry green/brown lentils versus cooked drained chickpeas, dry durum vermicelli, measured stock, no purée or drained broth.",
+      "publish_authorized": false
+    },
+    "jerk-kana": {
+      "fi": "ba57a87d82ae75cd8b7c39160d2567928eb6062dde4b5c0182fe6034081b3ed6",
+      "en": "3d08c2d4cfdb36c6321f54e131efe0dec58fdb0fcd878978334d750405c8b907",
+      "sv": "04baac28adee6208ff17a9bfad9b810a4a1dab4a50b26856a5e4696b2e068ac1",
+      "th": "5a5a002eeb40250e32c639ecc970fee8f88e4a72cda699a92bae1a36e1e14ac7",
+      "review_state": "source-hold",
+      "comparison_note": "FI total time 90 min contradicts at least 60 min marinade plus 45–55 min roasting.",
+      "publish_authorized": false
+    },
+    "kana-enchilada-kukkakaalivuoka": {
+      "fi": "4f5d19446afb4e190a941f85e1a748bdc796fa6b63ac6dbe3be4418e342cc59b",
+      "en": "bd70dff3e8eda0fd43287f4e8a005ea5e9c0418a68580c12eb0628272257762f",
+      "sv": "b9eb84587cbe3cbc167b743cdb1063a8132123820c0d3a43385a6758c1e57602",
+      "th": "fb3b6f4cfc318ca96510a9ca02d7b3acaa438c81dd8724d1efcb37230520ce9b",
+      "review_state": "ai-compared-draft",
+      "comparison_note": "500 g chicken weighed cooked, exactly 250 g four-ingredient homemade salsa, 50 g peeled lime including flesh, no tortilla.",
+      "publish_authorized": false
+    },
+    "kana-fajita-pelti": {
+      "fi": "bfec4d153dd11a1698bb1ee7089c81969ab2bc0531b9dcedbdb6ec1a4108ff98",
+      "en": "ed7474ab38b050abbcdf293d396c46036b38cc2d21cc17a436b1161e1c9b96f6",
+      "sv": "1264374de2fa609da77452a26ebee56190710a1f6cb4c6569aafa28a9cbdb176",
+      "th": "ec8664e8cc92c142c1ce86383212300e44eabf90005e23a568a009b854f57558",
+      "review_state": "ai-compared-draft",
+      "comparison_note": "Raw chicken, 200°C oven and minimum 75°C core, all cooking liquids retained, full avocado and peeled lime, no tortilla.",
+      "publish_authorized": false
+    },
+    "kanakeitto-pinaatti-sitruuna": {
+      "fi": "ba57d93c860b17c182ac52a31ec03ba66150fc6c7511ff31e239f0345ed0f6cb",
+      "en": "b875deb7e26337002f074530e0c8730eb3c8a8159a2501af0d68e9140d79f9a1",
+      "sv": "491379b35845172d44ba60cc2631c82a9e6b12ac54deab465128f5047c529079",
+      "th": "3828da99608a42f0cb9277e9311873e6922a56fbc819984c3487981fcdcc27af",
+      "review_state": "ai-compared-draft",
+      "comparison_note": "Raw chicken and ready-to-use stock, liquid whipping cream, peeled lemon flesh plus juice and 75°C internal temperature.",
+      "publish_authorized": false
+    },
+    "kanapyorykat-tomaattikastike": {
+      "fi": "d080d8be9f37844f76b09c4229100cf9594f4c93d3c50889666efe31d31ed784",
+      "en": "a8b70f83beb4244e29f4061e6f9f8897bdb61a24853b617e045f2e7093741a0e",
+      "sv": "5003510153fbd21cdc2cf414ebba47cbc97f7d9933e3a356c6620bfc434918cb",
+      "th": "f1dc58e833d8dc9c0ce1a71eeb73fccfc7dd190d6ceefab1e7a86744de93da7d",
+      "review_state": "ai-compared-draft",
+      "comparison_note": "Ground chicken with shell-free weighed egg, parmesan, liquid cream and complete cooking in tomato sauce.",
+      "publish_authorized": false
+    },
+    "kimchi-jjigae": {
+      "fi": "cca09981701e7d2f640750df0551491f116fdcc285d0979cdd0948286aea0670",
+      "en": "0d190ec7eb31f64e02c675ea88e9a77cf7b5f2ff7f74f4585e00ae8cbafcb744",
+      "sv": "2c675a94451238dd766370c561f0b45926afc2a7d37633b4aa2f6ff0b148f00a",
+      "th": "83b75aa25a84b66708abe1117d44ca1ba0731b63271ec13b048225b8ea2cd23a",
+      "review_state": "source-hold",
+      "comparison_note": "Rice is served in FI prose but absent from ingredients and nutrition boundaries.",
+      "publish_authorized": false
+    },
+    "kreikkalainen-kanavuoka-oliiveilla": {
+      "fi": "fdee64d9d2a062279afafd18dc17d9234a346abe7e4e5e1572ad104902c95e5c",
+      "en": "7120f7541a181170439c583e01c18702049be6a6abc6849603ec8f59fc6122a3",
+      "sv": "2c66596be24a190773573fe559f3e026d0633f705579303af999c95a33c86cd5",
+      "th": "e9af622235b63c812e9a0dd4e702a2cb6f750853304566d2f1a882e8b6fd1fca",
+      "review_state": "ai-compared-draft",
+      "comparison_note": "Boneless skinless chicken thighs, Kalamata olives, feta, 200°C oven and all juices divided among four servings.",
+      "publish_authorized": false
+    },
+    "lanttulaatikko-kermainen": {
+      "fi": "6284d12cff1fe83f6e134d7d49301d2f959215d2d6680cd871850618705a068f",
+      "en": "735e5f8ec7a4bc64e819f1187676a3b9a8c387ad29aa3c3b6b0f59c3f330e9fc",
+      "sv": "b89c469d0d6d72ca46300238b51700dd5659c8cedd0feccc9cc0e32ccca5f785",
+      "th": "14e6d4c4f30868ba097c155c6dcafc678eea2de60e6ce7e1e6d049b8c9f1378a",
+      "review_state": "source-hold",
+      "comparison_note": "FI 55 g egg line 'kananmunaa kuoretta' does not establish shell-free edible mass.",
+      "publish_authorized": false
+    },
+    "lindstrominpihvit-kaalilla": {
+      "fi": "f0c219c24b0147f8419dd96d16d82aa8f7a1871d32c4b0004e9795be8fd35736",
+      "en": "2c3f669504247e375061f732f33c2718aa77ac90de4090e5eabc582b3175dd26",
+      "sv": "1abd211b0cd5ba41ba78a30b9f72437bbfb9c8784271a0c46cfb04f43797354f",
+      "th": "4117c1beff13a38f594af780adf151adb772a1c69df0d08768a1a4acbcb3e3a3",
+      "review_state": "source-hold",
+      "comparison_note": "Single 2 tbsp butter allowance is used by two pans without a declared split.",
+      "publish_authorized": false
+    },
+    "maksalaatikko-kukkakaalilla": {
+      "fi": "ef27c9322f2f2b05564f7b19c4f969bee89fa479b47b2091caa27c25c758a20a",
+      "en": "138440c696605d0f6e48cc226d0efde5dec2f3af75e08be129ff62eec6a66d59",
+      "sv": "a17f654c05e89a05beec304baac2016b468cdee73d64f4a96afca79113580adf",
+      "th": "af1dc2e06c6a902c063471dfacd20306881b29d6c53e8fba1f989ac0f36f0261",
+      "review_state": "source-hold",
+      "comparison_note": "Single 2 tbsp butter allowance includes frying and dish greasing without a declared split.",
+      "publish_authorized": false
+    },
+    "shoyu-kanakeitto-konjac": {
+      "fi": "63c43851d439bfabf6940a66b360da2c1b89ba0f59326f3a03df65c36accc290",
+      "en": "f854b851a3a2c5d06f9bd758271562d895e5b0ce1adf43bdc563a44f83c59664",
+      "sv": "1cbaae9f66dc661cfee1b921becb5728ff54a10ed2df42a4e85ceb194e32580e",
+      "th": "122baa99f798c6670f16ff88583cadfb3aa8146ab7ad59a644dc0e29abcd5f61",
+      "review_state": "source-hold",
+      "comparison_note": "FI cooking_method says frying though instructions boil chicken in broth; quality-PR #358 notified.",
+      "publish_authorized": false
+    },
+    "silakkapihvit-tilli-kermakastike": {
+      "fi": "77a8dc586ae4e864a200abc3b41844467876524d2ddc12fe196376852fa1bb4e",
+      "en": "2104d3a1f008ec9eb8c3e60873086f79a2e21251568dd6938a7cb0939410a0be",
+      "sv": "c8d0f4ac0cb12b533b8f6560fc2473cdd75ea08dfdb785f51e4a288ce9ce7b18",
+      "th": "ade0907d205b508a6d1c92ba92b29242439b94a7cb4a7807fe6802f73ea57b02",
+      "review_state": "ai-compared-draft",
+      "comparison_note": "Baltic herring (not other fish), rye flour and gluten warning, 3–4 min per side, separate liquid cream/dill sauce.",
+      "publish_authorized": false
+    },
+    "uunikanapasta-kesakurpitsa": {
+      "fi": "cad1efe82f96aad7de81cbf5acf20b2a1993eed7191fcd2c11281fde9a879234",
+      "en": "d917ffa218b481500f24d326ec2aff0f737b5ac5b1b80c2b0a3d5b0f654f92ca",
+      "sv": "6f49c75eda782bbd67881c167de87eee8767e6328f77f095e01e0e7628f05171",
+      "th": "eac1a56cdc6569c75b7a8b9ea6cd88805e2fb0f5c060e9500cbc1d31dc8d2ad9",
+      "review_state": "ai-compared-draft",
+      "comparison_note": "No wheat pasta, 200°C initial oven phase of 20 min then zucchini and cheese, all sauces and low-confidence GL note.",
+      "publish_authorized": false
+    },
+    "vhh-brita-kakku": {
+      "fi": "f806f35cff641a8041938835acec0af3258ebbb0c3f07d2406834e30670067d7",
+      "en": "ec8dfa107e2c17332b3df2824228b63dcbf64316e976bc8022f45211b8e16aaf",
+      "sv": "a593e9228eafa00f2004c969b181058edad263922f71d569b2982fc4087c8eb9",
+      "th": "b9317caa24c7cc40e0fe6b6f51453ac5a7017810fda431f3950630540113bced",
+      "review_state": "source-hold",
+      "comparison_note": "FI instruction does not explicitly combine almond flour/baking powder with butter/yolk mixture before spreading.",
+      "publish_authorized": false
+    }
+  }
+}

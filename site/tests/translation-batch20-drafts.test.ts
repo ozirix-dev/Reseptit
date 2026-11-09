@@ -62,6 +62,12 @@ test("batch 20: all 60 unpublished locale drafts remain structurally and numeric
   const unique = new Set(recipes.map(([, id]) => id));
   assert.equal(recipes.length, 20);
   assert.equal(unique.size, 20);
+  const ledger = JSON.parse(await readFile(path.join(repoRoot, "docs/reviews/translation-batch20-digests-2026-11-09.json"), "utf8")) as {
+    human_attestation: boolean;
+    recipes: Record<string, { fi: string; en: string; sv: string; th: string; review_state: string; publish_authorized: boolean }>;
+  };
+  assert.equal(ledger.human_attestation, false, "No human review was performed");
+  assert.equal(Object.keys(ledger.recipes).length, 20, "Every recipe must have an exact fingerprint record");
   let pairs = 0;
   for (const [category, id] of recipes) {
     const fiPath = "reseptit/" + category + "/" + id + ".md";
@@ -70,6 +76,11 @@ test("batch 20: all 60 unpublished locale drafts remain structurally and numeric
     assert.equal(source.data.language, "fi", fiPath);
     const sourceNumbers = numberTokens(preparation(source.content));
     const sourceDigest = semanticHash(source);
+    const approvedSnapshot = ledger.recipes[id];
+    assert.ok(approvedSnapshot, "Missing snapshot: " + id);
+    assert.equal(approvedSnapshot.fi, sourceDigest, "Stale FI source fingerprint: " + id);
+    assert.equal(approvedSnapshot.publish_authorized, false, "Draft snapshot must not authorize publication");
+    assert.match(approvedSnapshot.review_state, /^(?:ai-compared-draft|source-hold)$/);
     const hashes: Record<string, string> = {};
     for (const locale of locales) {
       const targetPath = "kaannokset/" + locale + "/" + category + "/" + id + ".md";
@@ -119,6 +130,7 @@ test("batch 20: all 60 unpublished locale drafts remain structurally and numeric
         remaining.splice(found, 1);
       }
       hashes[locale] = semanticHash(target);
+      assert.equal(approvedSnapshot[locale], hashes[locale], targetPath + ": stale translation fingerprint");
       pairs++;
     }
     // Fingerprints only; they do not attest to semantic or human review.
