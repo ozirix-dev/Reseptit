@@ -67,7 +67,8 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 
 ## Valmistus
 
-1. Sekoita jauhot, neste ja suola. Vaivaa pehmeäksi taikinaksi ja anna levätä 10 minuuttia. Jos reseptissä on valmis leipä tai taikina, siirry täyttöön.
-2. Jaa taikina osiin ja painele tai kauli ohuiksi leiviksi. Lisää taikinaan kuuluva täyte tai mausteöljy.
-3. Paista kuumalla pannulla molemmin puolin kypsäksi ja nosta liinan alle pysymään pehmeänä.
-4. Vatkaa yksi kananmuna, kookosmaito ja sokeri. Kuumenna seosta varovasti vesihauteessa jatkuvasti sekoittaen, kunnes se sakenee hilloksi. Paahda hapanjuurileipä ja voitele ohuesti voilla. Levitä päälle mitattu määrä kotitekoista kaya-hilloa ja tarjoa toisen kananmunan kanssa.
+1. Valmista kaya: vatkaa yksi luettelon kananmunista kookosmaidon ja sokerin kanssa tasaiseksi pienessä kuumuutta kestävässä kulhossa.
+2. Kuumenna seosta varovasti vesihauteessa jatkuvasti sekoittaen, kunnes se sakenee levitettäväksi ja kananmuna on kypsää. Älä kuumenna liian kovaa, jotta seos ei juoksetu. Jäähdytä hetki.
+3. Paahda hapanjuurileipä ja levitä sen päälle luettelon voi sekä valmistettu kaya. Käytä leipiin koko reseptin tätä varten valmistettu määrä.
+4. Kuumenna luettelon neutraali paistoöljy pannulla ja kypsennä toinen kananmuna lisukkeeksi.
+5. Jaa kaya-paahtoleivät ja paistettu kananmuna kahteen aamiaisannokseen. Leipää ei vaivata eikä siihen lisätä taikinaa.
