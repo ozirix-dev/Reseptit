@@ -20,7 +20,7 @@ ingredients:
   item: "ground chicken"
 - amount: 55
   unit: g
-  item: "shelled egg"
+  item: "egg (without shell)"
 - amount: 30
   unit: g
   item: "Parmesan cheese"

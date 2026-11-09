@@ -1,8 +1,8 @@
 # Käännöserä 20 – tarkka FI → EN/SV/TH, 9.11.2026
 
-**Kohde:** 20 julkaistua suomenkielistä reseptiä, 60 puuttuvaa kieliversiota.  
-**Lähtöcommit:** `ade461048ea138cd4f6a34340e8a53df79532bd7` (main).  
-**Työhaara:** `feat/i18n-batch20-verified-20261109`.  
+**Kohde:** 20 julkaistua suomenkielistä reseptiä, 60 puuttuvaa kieliversiota.
+**Lähtöcommit:** `ade461048ea138cd4f6a34340e8a53df79532bd7` (main).
+**Työhaara:** `feat/i18n-batch20-verified-20261109`.
 **Julkaisutila:** Draft / STOP, kunnes kaikki vaaditut tarkistukset ovat todistetusti PASS.
 
 ## Rajaus (20 reseptiä)
@@ -70,6 +70,21 @@ Niitä **ei** oteta tähän erään ilman alkuperäisen lähteen erillistä korj
 
 ## Työtilanne
 
-Työ aloitetaan rajatusti tämän erän yhteisessä Draft-PR:ssä.
-Kirjaa toteutuneet käännökset, nykyisen GitHub-HEADin tarkistukset,
-avoimet havainnot ja julkaisupäätös vasta niiden toteuduttua.
+Toteutus 9.11.: 4/20 lähdereseptistä käännetty kaikille kolmelle kielelle,
+yhteensä **12 käännösluonnosta** (`status: draft`), ei julkaisua.
+
+- `chili-con-carne-kukkakaaliriisi`: EN/SV/TH draft
+- `kanapyorykat-tomaattikastike`: EN/SV/TH draft
+- `harira`: EN/SV/TH draft
+- `kana-fajita-pelti`: EN/SV/TH draft
+- 12/12: käännösrivin määrä ja yksikkö samat kuin lähteessä, valmistusvaiheiden
+  lukumäärä sama; kieli, `translation_of`, `source_recipe`, kuva ja mittasuhteet kunnossa
+  (GitHubin tiedostosisällöistä tehty erillinen tarkistus).
+- Kana-fajitan 200 °C ja vähintään 75 °C löytyvät kaikista kolmesta versiosta.
+- Nämä testit eivät ole kattava merkitystarkistus eivätkä CI-PASS.
+- Ensimmäinen CI pysähtyi vain tämän muistion kolmen rivin loppuvälilyönteihin.
+  Ne poistettiin; uuden HEADin tulos tarkistetaan erikseen.
+
+**Julkaisun portit edelleen auki:** 16 reseptiä/48 käännöstä,
+itsenäinen täydellinen AI-merkitysvertailu kaikille, nykyiset V2-SHA:t,
+suomenkieliset linkkimetat, full CI/build ja lopullinen julkaisuvaltuus.
