@@ -2,7 +2,7 @@
 
 **PR #356**: tämä keskustelu. **PR #357**: ensimmäinen keskustelu. Kumpikin omistaa vain omat reseptinsä. #357:n nimettyjä 20 reseptiä ei käsitellä tässä erässä. Aiemmat kuusi päällekkäistä bulgogi- ja kimchi-jjigae-luonnosta on poistettu #356:sta; ne kuuluvat #357:ään.
 
-## Erän 20 FI-kohdetta (60 kieliversiota, 33 luonnosta (9 GK-HOLD; 18 QA odottaa))
+## Erän 20 FI-kohdetta (60 kieliversiota, 39 luonnosta (9 GK-HOLD; 24 QA odottaa))
 
 | Suomenkielinen lähde | EN | SV | TH |
 |---|---|---|---|
@@ -17,10 +17,10 @@
 | `reseptit/aamupalat/thai-riisinuudelikeitto-aamuksi.md` | odottaa | odottaa | odottaa |
 | `reseptit/aamupalat/valimerellinen-tortilla-espanola-aamupalaksi.md` | luonnos / QA odottaa | luonnos / QA odottaa | luonnos / QA odottaa |
 | `reseptit/aamupalat/indonesialainen-bubur-ayam-kanariisipuuro.md` | luonnos / QA odottaa | luonnos / QA odottaa | luonnos / QA odottaa |
-| `reseptit/aamupalat/vietnamilainen-chao-ga-kanapuuro.md` | odottaa | odottaa | odottaa |
+| `reseptit/aamupalat/vietnamilainen-chao-ga-kanapuuro.md` | luonnos / QA odottaa | luonnos / QA odottaa | luonnos / QA odottaa |
 | `reseptit/aamupalat/thai-kai-jiao-yrteilla.md` | luonnos / QA odottaa | luonnos / QA odottaa | luonnos / QA odottaa |
 | `reseptit/aamupalat/meksikolainen-kurpitsapuuro-piloncillolla.md` | odottaa | odottaa | odottaa |
-| `reseptit/aamupalat/kiinalainen-musta-seesamipuuro.md` | odottaa | odottaa | odottaa |
+| `reseptit/aamupalat/kiinalainen-musta-seesamipuuro.md` | luonnos / QA odottaa | luonnos / QA odottaa | luonnos / QA odottaa |
 | `reseptit/aamupalat/thai-kookosriisi-mangolla.md` | luonnos / QA odottaa | luonnos / QA odottaa | luonnos / QA odottaa |
 | `reseptit/aamupalat/pohjoisafrikkalainen-lablabi.md` | luonnos / QA odottaa | luonnos / QA odottaa | luonnos / QA odottaa |
 | `reseptit/aamupalat/munakasmuffinit.md` | odottaa | odottaa | odottaa |
@@ -39,7 +39,7 @@
 
 ## Tilanne
 
-Työnjono on rajattu erilleen #357:stä. Kolme reseptiä / yhdeksän kieliversiota on tehty ja verrattu FI-lähteeseen. Kaikki kolme reseptiä / 9 kieliversiota säilyvät draftina eikä FI-lähteiden kielimetatietoja julkaista tässä haarassa: Huevos ja Callaloo rikkoivat GK80-release-2:n raakatekstin SHA-sidonnan (CI 42644592927: STALE_INPUT), ja farinatan kielimetatiedon lisäys rikkoi erillisen GK100-owner-approved-eighteen-julkaisusinetin (CI 42645835154: GK100_RELEASE_CANDIDATE_CHANGED). Hyväksyttyjä GK80- tai GK100-tarkisteita ei avata kielistatusten vuoksi; julkaisua varten tarvitaan erikseen katselmoitu, testattu tuki metatietojen turvalliselle käsittelylle. Lisäksi kahden pääruoan (rendang ja sate ayam) kuusi kieliluonnosta ovat lisättyinä; niiden tarkat määrät, annokset, ainesosarivien lukumäärä, makrot ja vaiheiden lukumäärä vastaavat FI-lähteitä. Loput 9 reseptiä / 27 kieliversiota odottavat. PR on Draft eikä tätä sisältöä ole yhdistetty tuotantoon. Aiempi #356:n CI kaatui käännösten metatiedon/vertailun tarkistuksessa; viimeistelemättömiä käännöksiä ei julkaistu.
+Työnjono on rajattu erilleen #357:stä. Kolme reseptiä / yhdeksän kieliversiota on tehty ja verrattu FI-lähteeseen. Kaikki kolme reseptiä / 9 kieliversiota säilyvät draftina eikä FI-lähteiden kielimetatietoja julkaista tässä haarassa: Huevos ja Callaloo rikkoivat GK80-release-2:n raakatekstin SHA-sidonnan (CI 42644592927: STALE_INPUT), ja farinatan kielimetatiedon lisäys rikkoi erillisen GK100-owner-approved-eighteen-julkaisusinetin (CI 42645835154: GK100_RELEASE_CANDIDATE_CHANGED). Hyväksyttyjä GK80- tai GK100-tarkisteita ei avata kielistatusten vuoksi; julkaisua varten tarvitaan erikseen katselmoitu, testattu tuki metatietojen turvalliselle käsittelylle. Lisäksi kahden pääruoan (rendang ja sate ayam) kuusi kieliluonnosta ovat lisättyinä; niiden tarkat määrät, annokset, ainesosarivien lukumäärä, makrot ja vaiheiden lukumäärä vastaavat FI-lähteitä. Loput 7 reseptiä / 21 kieliversiota odottavat. PR on Draft eikä tätä sisältöä ole yhdistetty tuotantoon. Aiempi #356:n CI kaatui käännösten metatiedon/vertailun tarkistuksessa; viimeistelemättömiä käännöksiä ei julkaistu.
 
 ## Toinen osanäyttö (9.11.2026)
 
@@ -63,3 +63,9 @@ Työnjono on rajattu erilleen #357:stä. Kolme reseptiä / yhdeksän kieliversio
 - `indonesialainen-bubur-ayam-kanariisipuuro` EN/SV/TH: 6 ainesosariviä, 3 valmistusvaihetta, 2 annosta ja 45 min. Kuivaa jasmiiniriisiä 100 g, broilerin nahatonta rintafileetä 150 g, inkivääriä 2 g, kevätsipulia 12 g ja vettä aluksi 800 g. Riisiä haudutetaan noin 40 min, kana kypsennetään kauttaaltaan puurossa ja syödään kaiken keittoliemen kanssa. Alkuperäisen ohjeen mahdollinen lisävesi ei ole numeerisesti määritelty: tämä ei lisää ravintoarvoja mutta vaikuttaa lopputuotteen määrään ja koostumukseen. Ei soijaa, sambalia eikä rapeaa sipulia. Luonnokset eivät ole merkitys-QA-hyväksyttyjä.
 
 - `pohjoisafrikkalainen-lablabi` EN/SV/TH: 6 ainesosariviä, 3 valmistusvaihetta, 2 annosta, 25 min. Kypsät kikherneet 100 g, valmista valkoista pitaa 100 g, juustokuminaa 2 g, ilman kuorta punnittu muna 110 g, laimennettua valmista kanalientä 700 g. Muna höyrykypsennetään erillisessä astiassa ilman rasvaa; ei ylimääräistä öljyä tai harissaa. Semanttinen julkaisu-QA odottaa. HUOM: alkuperäisessä metassa on `kananmuna` täsmentämättä kuoren poistoa, mutta valmistusosassa kuoretta punnittu; käännöksissä se ilmaistaan valmistuksen mukaisesti. FI-reseptiä ei muutettu.
+
+## Viides luonnoserä (9.11.2026)
+
+- `vietnamilainen-chao-ga-kanapuuro`: EN/SV/TH, 6 ainesosariviä, 3 työvaihetta, 2 annosta. 100 g kuivaa jasmiiniriisiä, 150 g nahatonta broileria, 2 g tuoretta inkivääriä, 12 g kevätsipulia ja 800 g vettä aluksi. Lisää tarvittaessa vettä koostumuksen säätämiseksi: tavanomainen ruoanvalmistus, **ei ravintolaskennan HOLD**. Kana kypsennetään kauttaaltaan, keitinliemi jää ruokaan; ei paahdettua sipulia tai muita ylimääräisiä lisukkeita.
+- `kiinalainen-musta-seesamipuuro`: EN/SV/TH, 6 ainesosariviä, 3 vaihetta, 2 annosta. 100 g kuivaa jasmiiniriisiä, 700 g vettä, 200 g makeuttamatonta soijajuomaa, 20 g hunajaa, 10 g **kokonaisia mustia seesaminsiemeniä**. Ei seesamitahnaa, jauhamista tai ylimääräisiä lisukkeita. FI:n soijajuoman makeuttamattomuus mainitaan valmistuksessa, vaikka metatieto ei erikseen sano sitä; käännösteksti säilyttää täsmennyksen. Huomioitavat allergeenit: soija ja seesami.
+- Nämä 6 kieliversiota ovat **draft**, riippumaton merkityskatselmointi, SHA-evidence, FI-kielimetat ja CI-julkaisunäyttö odottavat. Uusia ravintolukuja tai GK-arvoja ei laskettu.
