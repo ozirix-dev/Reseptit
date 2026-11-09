@@ -22,19 +22,19 @@ ingredients:
     unit: g
     item: "ดอกกะหล่ำ"
   - amount: 1
-    unit: kpl
+    unit: ""
     item: "หอมหัวใหญ่"
   - amount: 2
-    unit: rkl
+    unit: ช้อนโต๊ะ
     item: "เนย"
   - amount: 150
     unit: ml
     item: "วิปปิ้งครีมชนิดเหลวที่ยังไม่ตี"
   - amount: 1
-    unit: kpl
+    unit: ""
     item: "ไข่ไก่"
   - amount: 1
-    unit: tl
+    unit: ช้อนชา
     item: "มาร์จอแรม"
   - amount: null
     unit: ""

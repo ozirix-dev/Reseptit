@@ -14,19 +14,19 @@ tags: ["Middle Eastern", "falafel", "vegetarian", "chickpeas"]
 image: {src: paaruoat/falafel.webp, alt: "Herb falafel with tahini sauce, vegetables and pita bread", width: 1280, height: 853}
 ingredients:
   - {amount: 250, unit: g, item: "dried chickpeas"}
-  - {amount: 1, unit: kpl, item: "yellow onion", note: "cut into wedges"}
-  - {amount: 3, unit: kpl, item: "garlic cloves"}
+  - {amount: 1, unit: "", item: "yellow onion", note: "cut into wedges"}
+  - {amount: 3, unit: "", item: "garlic cloves"}
   - {amount: 25, unit: g, item: "flat-leaf parsley"}
   - {amount: 15, unit: g, item: "fresh coriander leaves"}
-  - {amount: 1, unit: tl, item: "ground cumin"}
-  - {amount: 1, unit: tl, item: "ground coriander seed"}
-  - {amount: 0.5, unit: tl, item: "baking powder"}
-  - {amount: 1, unit: tl, item: "salt"}
-  - {amount: 1, unit: rkl, item: "lemon juice"}
+  - {amount: 1, unit: tsp, item: "ground cumin"}
+  - {amount: 1, unit: tsp, item: "ground coriander seed"}
+  - {amount: 0.5, unit: tsp, item: "baking powder"}
+  - {amount: 1, unit: tsp, item: "salt"}
+  - {amount: 1, unit: tbsp, item: "lemon juice"}
   - {amount: 20, unit: g, item: "olive oil", note: "for brushing the falafel"}
   - {amount: 120, unit: g, item: "tahini (sesame paste)", note: "for the sauce"}
   - {amount: 100, unit: ml, item: "cold water", note: "for the sauce"}
-  - {amount: 1, unit: rkl, item: "lemon juice", note: "for the sauce"}
+  - {amount: 1, unit: tbsp, item: "lemon juice", note: "for the sauce"}
 carbs_net_per_serving_g: 26.33
 carbs_total_per_serving_g: 42.76
 protein_per_serving_g: 19.84

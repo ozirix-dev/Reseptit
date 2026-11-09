@@ -16,14 +16,14 @@ ingredients:
   - {amount: 400, unit: g, item: "หมูบด"}
   - {amount: 300, unit: g, item: "หมูสามชั้นลอกหนัง", note: "หั่นบาง"}
   - {amount: 300, unit: g, item: "เส้นหมี่ข้าวแห้งชนิดเล็ก (เวอร์มิเชลลี)"}
-  - {amount: 3, unit: rkl, item: "น้ำปลา", note: "สำหรับหมักหมู"}
-  - {amount: 2, unit: rkl, item: "น้ำตาลทรายแดง", note: "สำหรับหมักหมู"}
-  - {amount: 2, unit: kpl, item: "กลีบกระเทียม", note: "สับละเอียด"}
-  - {amount: 2, unit: kpl, item: "หอมแดง", note: "สับละเอียด"}
-  - {amount: 1, unit: tl, item: "พริกไทยดำ"}
+  - {amount: 3, unit: ช้อนโต๊ะ, item: "น้ำปลา", note: "สำหรับหมักหมู"}
+  - {amount: 2, unit: ช้อนโต๊ะ, item: "น้ำตาลทรายแดง", note: "สำหรับหมักหมู"}
+  - {amount: 2, unit: "", item: "กลีบกระเทียม", note: "สับละเอียด"}
+  - {amount: 2, unit: "", item: "หอมแดง", note: "สับละเอียด"}
+  - {amount: 1, unit: ช้อนชา, item: "พริกไทยดำ"}
   - {amount: 60, unit: ml, item: "น้ำปลา", note: "สำหรับน้ำจิ้ม"}
-  - {amount: 2, unit: rkl, item: "น้ำส้มสายชูหมักจากข้าว"}
-  - {amount: 2, unit: rkl, item: "น้ำตาลทราย", note: "สำหรับน้ำจิ้ม"}
+  - {amount: 2, unit: ช้อนโต๊ะ, item: "น้ำส้มสายชูหมักจากข้าว"}
+  - {amount: 2, unit: ช้อนโต๊ะ, item: "น้ำตาลทราย", note: "สำหรับน้ำจิ้ม"}
   - {amount: 250, unit: ml, item: "น้ำอุ่น", note: "สำหรับน้ำจิ้ม"}
   - {amount: 150, unit: g, item: "แครอต", note: "หั่นบาง"}
   - {amount: 20, unit: g, item: "ผักชีสด"}

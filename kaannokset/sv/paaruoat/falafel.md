@@ -14,19 +14,19 @@ tags: ["Mellanöstern", "falafel", "vegetariskt", "kikärter"]
 image: {src: paaruoat/falafel.webp, alt: "Örtiga falafel med tahinisås, grönsaker och pitabröd", width: 1280, height: 853}
 ingredients:
   - {amount: 250, unit: g, item: "torkade kikärter"}
-  - {amount: 1, unit: kpl, item: "gul lök", note: "skuren i klyftor"}
-  - {amount: 3, unit: kpl, item: "vitlöksklyftor"}
+  - {amount: 1, unit: "", item: "gul lök", note: "skuren i klyftor"}
+  - {amount: 3, unit: "", item: "vitlöksklyftor"}
   - {amount: 25, unit: g, item: "bladpersilja"}
   - {amount: 15, unit: g, item: "färsk koriander"}
-  - {amount: 1, unit: tl, item: "malen spiskummin"}
-  - {amount: 1, unit: tl, item: "malda korianderfrön"}
-  - {amount: 0.5, unit: tl, item: "bakpulver"}
-  - {amount: 1, unit: tl, item: "salt"}
-  - {amount: 1, unit: rkl, item: "citronsaft"}
+  - {amount: 1, unit: tsk, item: "malen spiskummin"}
+  - {amount: 1, unit: tsk, item: "malda korianderfrön"}
+  - {amount: 0.5, unit: tsk, item: "bakpulver"}
+  - {amount: 1, unit: tsk, item: "salt"}
+  - {amount: 1, unit: msk, item: "citronsaft"}
   - {amount: 20, unit: g, item: "olivolja", note: "för pensling av falafeln"}
   - {amount: 120, unit: g, item: "tahini (sesampasta)", note: "till såsen"}
   - {amount: 100, unit: ml, item: "kallt vatten", note: "till såsen"}
-  - {amount: 1, unit: rkl, item: "citronsaft", note: "till såsen"}
+  - {amount: 1, unit: msk, item: "citronsaft", note: "till såsen"}
 carbs_net_per_serving_g: 26.33
 carbs_total_per_serving_g: 42.76
 protein_per_serving_g: 19.84

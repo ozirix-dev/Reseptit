@@ -16,13 +16,13 @@ ingredients:
   - {amount: 400, unit: g, item: "mature fermented kimchi", note: "cut into strips"}
   - {amount: 300, unit: g, item: "pork neck (collar)", note: "thinly sliced"}
   - {amount: 300, unit: g, item: "firm tofu", note: "diced"}
-  - {amount: 1, unit: kpl, item: "yellow onion", note: "sliced"}
+  - {amount: 1, unit: "", item: "yellow onion", note: "sliced"}
   - {amount: 800, unit: ml, item: "chicken stock or water"}
-  - {amount: 1, unit: rkl, item: "gochujang paste"}
-  - {amount: 1, unit: tl, item: "gochugaru chilli flakes"}
-  - {amount: 1, unit: rkl, item: "soy sauce"}
-  - {amount: 2, unit: kpl, item: "spring onions", note: "sliced"}
-  - {amount: 1, unit: rkl, item: "neutral oil"}
+  - {amount: 1, unit: tbsp, item: "gochujang paste"}
+  - {amount: 1, unit: tsp, item: "gochugaru chilli flakes"}
+  - {amount: 1, unit: tbsp, item: "soy sauce"}
+  - {amount: 2, unit: "", item: "spring onions", note: "sliced"}
+  - {amount: 1, unit: tbsp, item: "neutral oil"}
 source_language: fi
 source_recipe: reseptit/paaruoat/kimchi-jjigae.md
 translation_of: kimchi-jjigae

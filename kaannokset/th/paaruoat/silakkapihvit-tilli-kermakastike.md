@@ -19,25 +19,25 @@ ingredients:
     unit: g
     item: "เนื้อปลาเฮร์ริงบอลติกแล่เป็นชิ้น"
   - amount: 2
-    unit: rkl
+    unit: ช้อนโต๊ะ
     item: "แป้งข้าวไรย์"
   - amount: 2
-    unit: rkl
+    unit: ช้อนโต๊ะ
     item: "เนยสำหรับทอด"
   - amount: 150
     unit: ml
     item: "วิปปิ้งครีมชนิดเหลว"
   - amount: 1
-    unit: rkl
+    unit: ช้อนโต๊ะ
     item: "น้ำเลมอน"
   - amount: 2
-    unit: rkl
+    unit: ช้อนโต๊ะ
     item: "ผักชีลาวสด"
   - amount: null
     unit: ""
     item: "เกลือและพริกไทยขาว"
   - amount: 1
-    unit: kpl
+    unit: ""
     item: "เลมอนสำหรับเสิร์ฟ"
 servings: 4
 time_total_min: 35

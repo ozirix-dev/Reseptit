@@ -11,10 +11,10 @@ cooking_method: [leivonta]
 ingredients:
   - { amount: 100, unit: g, item: "เนย"}
   - { amount: 70, unit: g, item: "อิริทริทอล"}
-  - { amount: 3, unit: kpl, item: "ไข่แดง"}
+  - { amount: 3, unit: "", item: "ไข่แดง"}
   - { amount: 100, unit: g, item: "แป้งอัลมอนด์"}
-  - { amount: 1, unit: tl, item: "ผงฟู"}
-  - { amount: 3, unit: kpl, item: "ไข่ขาว"}
+  - { amount: 1, unit: ช้อนชา, item: "ผงฟู"}
+  - { amount: 3, unit: "", item: "ไข่ขาว"}
   - { amount: 60, unit: g, item: "อิริทริทอลสำหรับเมอแรงก์"}
   - { amount: 2, unit: dl, item: "วิปปิ้งครีมชนิดเหลวที่ยังไม่ตี"}
   - { amount: 150, unit: g, item: "สตรอว์เบอร์รี"}

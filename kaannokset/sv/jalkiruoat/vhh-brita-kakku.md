@@ -11,10 +11,10 @@ cooking_method: [leivonta]
 ingredients:
   - { amount: 100, unit: g, item: "smör"}
   - { amount: 70, unit: g, item: "erytritol"}
-  - { amount: 3, unit: kpl, item: "äggulor"}
+  - { amount: 3, unit: "", item: "äggulor"}
   - { amount: 100, unit: g, item: "mandelmjöl"}
-  - { amount: 1, unit: tl, item: "bakpulver"}
-  - { amount: 3, unit: kpl, item: "äggvitor"}
+  - { amount: 1, unit: tsk, item: "bakpulver"}
+  - { amount: 3, unit: "", item: "äggvitor"}
   - { amount: 60, unit: g, item: "erytritol till marängen"}
   - { amount: 2, unit: dl, item: "flytande vispgrädde"}
   - { amount: 150, unit: g, item: "jordgubbar"}

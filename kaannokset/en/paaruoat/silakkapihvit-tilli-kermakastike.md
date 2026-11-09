@@ -19,25 +19,25 @@ ingredients:
     unit: g
     item: "Baltic herring fillets"
   - amount: 2
-    unit: rkl
+    unit: tbsp
     item: "rye flour"
   - amount: 2
-    unit: rkl
+    unit: tbsp
     item: "butter for frying"
   - amount: 150
     unit: ml
     item: "liquid whipping cream"
   - amount: 1
-    unit: rkl
+    unit: tbsp
     item: "lemon juice"
   - amount: 2
-    unit: rkl
+    unit: tbsp
     item: "fresh dill"
   - amount: null
     unit: ""
     item: "salt and white pepper"
   - amount: 1
-    unit: kpl
+    unit: ""
     item: "lemon to serve"
 servings: 4
 time_total_min: 35

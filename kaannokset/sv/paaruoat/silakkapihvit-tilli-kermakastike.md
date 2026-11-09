@@ -19,25 +19,25 @@ ingredients:
     unit: g
     item: "strömmingsfiléer"
   - amount: 2
-    unit: rkl
+    unit: msk
     item: "rågmjöl"
   - amount: 2
-    unit: rkl
+    unit: msk
     item: "smör för stekning"
   - amount: 150
     unit: ml
     item: "flytande vispgrädde"
   - amount: 1
-    unit: rkl
+    unit: msk
     item: "citronsaft"
   - amount: 2
-    unit: rkl
+    unit: msk
     item: "färsk dill"
   - amount: null
     unit: ""
     item: "salt och vitpeppar"
   - amount: 1
-    unit: kpl
+    unit: ""
     item: "citron till servering"
 servings: 4
 time_total_min: 35

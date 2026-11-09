@@ -15,15 +15,15 @@ image: {src: paaruoat/bulgogi.webp, alt: "บูลโกกิเนื้อ�
 ingredients:
   - {amount: 600, unit: g, item: "เนื้อสันนอกวัว", note: "หั่นเป็นชิ้นบาง"}
   - {amount: 300, unit: g, item: "ข้าวหอมมะลิ", note: "น้ำหนักข้าวแห้ง"}
-  - {amount: 60, unit: ml, item: "ซีอิ๊วญี่ปุ่น"}
-  - {amount: 1, unit: rkl, item: "น้ำตาลทรายแดง"}
-  - {amount: 1, unit: rkl, item: "น้ำมันงา"}
-  - {amount: 3, unit: kpl, item: "กลีบกระเทียม", note: "สับละเอียด"}
+  - {amount: 60, unit: ml, item: "ซีอิ๊ว"}
+  - {amount: 1, unit: ช้อนโต๊ะ, item: "น้ำตาลทรายแดง"}
+  - {amount: 1, unit: ช้อนโต๊ะ, item: "น้ำมันงา"}
+  - {amount: 3, unit: "", item: "กลีบกระเทียม", note: "สับละเอียด"}
   - {amount: 100, unit: g, item: "ลูกแพร์", note: "ขูดละเอียด"}
-  - {amount: 0.5, unit: kpl, item: "หอมหัวใหญ่สีเหลือง", note: "หั่นบาง"}
-  - {amount: 2, unit: kpl, item: "ต้นหอมญี่ปุ่น", note: "ซอย"}
-  - {amount: 1, unit: rkl, item: "งาขาว"}
-  - {amount: 0.25, unit: tl, item: "พริกไทยดำ"}
+  - {amount: 0.5, unit: "", item: "หอมหัวใหญ่สีเหลือง", note: "หั่นบาง"}
+  - {amount: 2, unit: "", item: "ต้นหอม", note: "ซอย"}
+  - {amount: 1, unit: ช้อนโต๊ะ, item: "งาขาว"}
+  - {amount: 0.25, unit: ช้อนชา, item: "พริกไทยดำ"}
 carbs_net_per_serving_g: 62.81
 carbs_total_per_serving_g: 64.98
 protein_per_serving_g: 43.15

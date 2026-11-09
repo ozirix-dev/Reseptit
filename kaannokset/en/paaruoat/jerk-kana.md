@@ -14,16 +14,16 @@ tags: ["Jamaican","Caribbean","jerk","chicken"]
 image: {src: paaruoat/jerk-kana.webp, alt: "Jamaican jerk chicken with a dark spice crust, served with rice and beans", width: 1280, height: 853}
 ingredients:
   - {amount: 1000, unit: g, item: "skinless boneless chicken thigh meat"}
-  - {amount: 4, unit: kpl, item: "spring onions", note: "finely chopped"}
-  - {amount: 3, unit: kpl, item: "garlic cloves"}
-  - {amount: 1, unit: kpl, item: "habanero chilli", note: "remove seeds for a milder version"}
-  - {amount: 2, unit: rkl, item: "lime juice"}
-  - {amount: 2, unit: rkl, item: "soy sauce"}
-  - {amount: 2, unit: tl, item: "ground allspice"}
-  - {amount: 1, unit: tl, item: "dried thyme"}
-  - {amount: 1, unit: tl, item: "ground ginger"}
-  - {amount: 1, unit: rkl, item: "brown sugar"}
-  - {amount: 2, unit: rkl, item: "oil"}
+  - {amount: 4, unit: "", item: "spring onions", note: "finely chopped"}
+  - {amount: 3, unit: "", item: "garlic cloves"}
+  - {amount: 1, unit: "", item: "habanero chilli", note: "remove seeds for a milder version"}
+  - {amount: 2, unit: tbsp, item: "lime juice"}
+  - {amount: 2, unit: tbsp, item: "soy sauce"}
+  - {amount: 2, unit: tsp, item: "ground allspice"}
+  - {amount: 1, unit: tsp, item: "dried thyme"}
+  - {amount: 1, unit: tsp, item: "ground ginger"}
+  - {amount: 1, unit: tbsp, item: "brown sugar"}
+  - {amount: 2, unit: tbsp, item: "oil"}
   - {amount: 300, unit: g, item: "rice", note: "to serve on the side"}
   - {amount: 240, unit: g, item: "drained red kidney beans", note: "to serve on the side"}
   - {amount: 150, unit: ml, item: "coconut milk", note: "for the rice and beans"}

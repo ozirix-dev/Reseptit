@@ -16,14 +16,14 @@ ingredients:
   - {amount: 600, unit: g, item: "ytterfilé av nöt", note: "tunt skivad"}
   - {amount: 300, unit: g, item: "jasminris", note: "torrvikt"}
   - {amount: 60, unit: ml, item: "sojasås"}
-  - {amount: 1, unit: rkl, item: "farinsocker"}
-  - {amount: 1, unit: rkl, item: "sesamolja"}
-  - {amount: 3, unit: kpl, item: "vitlöksklyftor", note: "finhackad"}
+  - {amount: 1, unit: msk, item: "farinsocker"}
+  - {amount: 1, unit: msk, item: "sesamolja"}
+  - {amount: 3, unit: "", item: "vitlöksklyftor", note: "finhackad"}
   - {amount: 100, unit: g, item: "päron", note: "finrivet"}
-  - {amount: 0.5, unit: kpl, item: "gul lök", note: "tunt skivad"}
-  - {amount: 2, unit: kpl, item: "salladslök", note: "skivad"}
-  - {amount: 1, unit: rkl, item: "sesamfrön"}
-  - {amount: 0.25, unit: tl, item: "svartpeppar"}
+  - {amount: 0.5, unit: "", item: "gul lök", note: "tunt skivad"}
+  - {amount: 2, unit: "", item: "salladslök", note: "skivad"}
+  - {amount: 1, unit: msk, item: "sesamfrön"}
+  - {amount: 0.25, unit: tsk, item: "svartpeppar"}
 carbs_net_per_serving_g: 62.81
 carbs_total_per_serving_g: 64.98
 protein_per_serving_g: 43.15

@@ -14,19 +14,19 @@ tags: ["ตะวันออกกลาง", "ฟาลาเฟล", "มั�
 image: {src: paaruoat/falafel.webp, alt: "ฟาลาเฟลใส่สมุนไพรเสิร์ฟกับซอสทาฮินี ผัก และขนมปังพิตา", width: 1280, height: 853}
 ingredients:
   - {amount: 250, unit: g, item: "ถั่วลูกไก่แห้ง"}
-  - {amount: 1, unit: kpl, item: "หอมหัวใหญ่สีเหลือง", note: "หั่นเป็นเสี้ยว"}
-  - {amount: 3, unit: kpl, item: "กลีบกระเทียม"}
+  - {amount: 1, unit: "", item: "หอมหัวใหญ่สีเหลือง", note: "หั่นเป็นเสี้ยว"}
+  - {amount: 3, unit: "", item: "กลีบกระเทียม"}
   - {amount: 25, unit: g, item: "ใบพาร์สลีย์แบน"}
   - {amount: 15, unit: g, item: "ผักชีสด"}
-  - {amount: 1, unit: tl, item: "ยี่หร่าฝรั่งป่น (คิวมิน)"}
-  - {amount: 1, unit: tl, item: "เมล็ดผักชีป่น"}
-  - {amount: 0.5, unit: tl, item: "ผงฟู"}
-  - {amount: 1, unit: tl, item: "เกลือ"}
-  - {amount: 1, unit: rkl, item: "น้ำเลมอน"}
+  - {amount: 1, unit: ช้อนชา, item: "ยี่หร่าฝรั่งป่น (คิวมิน)"}
+  - {amount: 1, unit: ช้อนชา, item: "เมล็ดผักชีป่น"}
+  - {amount: 0.5, unit: ช้อนชา, item: "ผงฟู"}
+  - {amount: 1, unit: ช้อนชา, item: "เกลือ"}
+  - {amount: 1, unit: ช้อนโต๊ะ, item: "น้ำเลมอน"}
   - {amount: 20, unit: g, item: "น้ำมันมะกอก", note: "สำหรับทาฟาลาเฟลก่อนอบ"}
   - {amount: 120, unit: g, item: "ทาฮินี (งาบด)", note: "สำหรับทำซอส"}
   - {amount: 100, unit: ml, item: "น้ำเย็น", note: "สำหรับทำซอส"}
-  - {amount: 1, unit: rkl, item: "น้ำเลมอน", note: "สำหรับทำซอส"}
+  - {amount: 1, unit: ช้อนโต๊ะ, item: "น้ำเลมอน", note: "สำหรับทำซอส"}
 carbs_net_per_serving_g: 26.33
 carbs_total_per_serving_g: 42.76
 protein_per_serving_g: 19.84

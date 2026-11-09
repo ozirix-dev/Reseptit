@@ -19,25 +19,25 @@ ingredients:
     unit: g
     item: "fläskkarré"
   - amount: 1
-    unit: kpl
+    unit: ""
     item: "apelsin"
   - amount: 1
-    unit: kpl
+    unit: ""
     item: "lime"
   - amount: 1
-    unit: tl
+    unit: tsk
     item: "malen spiskummin"
   - amount: 1
-    unit: tl
+    unit: tsk
     item: "oregano"
   - amount: 2
-    unit: kpl
+    unit: ""
     item: "vitlöksklyftor"
   - amount: 150
     unit: ml
     item: "vatten"
   - amount: 12
-    unit: kpl
+    unit: ""
     item: "romansalladsblad"
   - amount: 70
     unit: g

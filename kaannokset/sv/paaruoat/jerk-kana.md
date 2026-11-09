@@ -14,16 +14,16 @@ tags: ["jamaicansk","karibisk","jerk","kyckling"]
 image: {src: paaruoat/jerk-kana.webp, alt: "Jamaicansk jerkkyckling med mörk kryddyta, serverad med ris och bönor", width: 1280, height: 853}
 ingredients:
   - {amount: 1000, unit: g, item: "skinnfritt och benfritt kycklinglårkött"}
-  - {amount: 4, unit: kpl, item: "salladslök", note: "finhackad"}
-  - {amount: 3, unit: kpl, item: "vitlöksklyftor"}
-  - {amount: 1, unit: kpl, item: "habanerochili", note: "ta bort kärnorna för mildare smak"}
-  - {amount: 2, unit: rkl, item: "limesaft"}
-  - {amount: 2, unit: rkl, item: "sojasås"}
-  - {amount: 2, unit: tl, item: "malen kryddpeppar"}
-  - {amount: 1, unit: tl, item: "torkad timjan"}
-  - {amount: 1, unit: tl, item: "malen ingefära"}
-  - {amount: 1, unit: rkl, item: "farinsocker"}
-  - {amount: 2, unit: rkl, item: "olja"}
+  - {amount: 4, unit: "", item: "salladslök", note: "finhackad"}
+  - {amount: 3, unit: "", item: "vitlöksklyftor"}
+  - {amount: 1, unit: "", item: "habanerochili", note: "ta bort kärnorna för mildare smak"}
+  - {amount: 2, unit: msk, item: "limesaft"}
+  - {amount: 2, unit: msk, item: "sojasås"}
+  - {amount: 2, unit: tsk, item: "malen kryddpeppar"}
+  - {amount: 1, unit: tsk, item: "torkad timjan"}
+  - {amount: 1, unit: tsk, item: "malen ingefära"}
+  - {amount: 1, unit: msk, item: "farinsocker"}
+  - {amount: 2, unit: msk, item: "olja"}
   - {amount: 300, unit: g, item: "ris", note: "som tillbehör"}
   - {amount: 240, unit: g, item: "avrunna röda kidneybönor", note: "som tillbehör"}
   - {amount: 150, unit: ml, item: "kokosmjölk", note: "till riset och bönorna"}

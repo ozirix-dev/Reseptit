@@ -16,13 +16,13 @@ ingredients:
   - {amount: 400, unit: g, item: "välfermenterad kimchi", note: "strimlad"}
   - {amount: 300, unit: g, item: "fläskkarré", note: "tunt skivad"}
   - {amount: 300, unit: g, item: "fast tofu", note: "tärnad"}
-  - {amount: 1, unit: kpl, item: "gul lök", note: "skivad"}
+  - {amount: 1, unit: "", item: "gul lök", note: "skivad"}
   - {amount: 800, unit: ml, item: "kycklingbuljong eller vatten"}
-  - {amount: 1, unit: rkl, item: "gochujangpasta"}
-  - {amount: 1, unit: tl, item: "gochugaru-chiliflingor"}
-  - {amount: 1, unit: rkl, item: "sojasås"}
-  - {amount: 2, unit: kpl, item: "salladslök", note: "skivad"}
-  - {amount: 1, unit: rkl, item: "neutral olja"}
+  - {amount: 1, unit: msk, item: "gochujangpasta"}
+  - {amount: 1, unit: tsk, item: "gochugaru-chiliflingor"}
+  - {amount: 1, unit: msk, item: "sojasås"}
+  - {amount: 2, unit: "", item: "salladslök", note: "skivad"}
+  - {amount: 1, unit: msk, item: "neutral olja"}
 source_language: fi
 source_recipe: reseptit/paaruoat/kimchi-jjigae.md
 translation_of: kimchi-jjigae

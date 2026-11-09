@@ -19,25 +19,25 @@ ingredients:
     unit: g
     item: "เนื้อสันคอหมู"
   - amount: 1
-    unit: kpl
+    unit: ""
     item: "ส้ม"
   - amount: 1
-    unit: kpl
+    unit: ""
     item: "ไลม์"
   - amount: 1
-    unit: tl
+    unit: ช้อนชา
     item: "ยี่หร่าฝรั่งป่น (คิวมิน)"
   - amount: 1
-    unit: tl
+    unit: ช้อนชา
     item: "ออริกาโน"
   - amount: 2
-    unit: kpl
+    unit: ""
     item: "กลีบกระเทียม"
   - amount: 150
     unit: ml
     item: "น้ำเปล่า"
   - amount: 12
-    unit: kpl
+    unit: ""
     item: "ใบผักกาดโรเมน"
   - amount: 70
     unit: g

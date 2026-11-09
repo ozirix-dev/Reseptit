@@ -14,16 +14,16 @@ tags: ["จาเมกา","แคริบเบียน","เจิร์ก
 image: {src: paaruoat/jerk-kana.webp, alt: "ไก่เจิร์กจาเมกาผิวเครื่องเทศสีเข้มเสิร์ฟพร้อมข้าวและถั่ว", width: 1280, height: 853}
 ingredients:
   - {amount: 1000, unit: g, item: "เนื้อสะโพกไก่เลาะหนังและกระดูก"}
-  - {amount: 4, unit: kpl, item: "ต้นหอมญี่ปุ่น", note: "สับละเอียด"}
-  - {amount: 3, unit: kpl, item: "กลีบกระเทียม"}
-  - {amount: 1, unit: kpl, item: "พริกฮาบาเนโร", note: "เอาเมล็ดออกเพื่อลดความเผ็ด"}
-  - {amount: 2, unit: rkl, item: "น้ำไลม์"}
-  - {amount: 2, unit: rkl, item: "ซีอิ๊วญี่ปุ่น"}
-  - {amount: 2, unit: tl, item: "ผงออลสไปซ์ (allspice)"}
-  - {amount: 1, unit: tl, item: "ไธม์แห้ง"}
-  - {amount: 1, unit: tl, item: "ขิงป่น"}
-  - {amount: 1, unit: rkl, item: "น้ำตาลทรายแดง"}
-  - {amount: 2, unit: rkl, item: "น้ำมัน"}
+  - {amount: 4, unit: "", item: "ต้นหอม", note: "สับละเอียด"}
+  - {amount: 3, unit: "", item: "กลีบกระเทียม"}
+  - {amount: 1, unit: "", item: "พริกฮาบาเนโร", note: "เอาเมล็ดออกเพื่อลดความเผ็ด"}
+  - {amount: 2, unit: ช้อนโต๊ะ, item: "น้ำไลม์"}
+  - {amount: 2, unit: ช้อนโต๊ะ, item: "ซีอิ๊ว"}
+  - {amount: 2, unit: ช้อนชา, item: "ผงออลสไปซ์ (allspice)"}
+  - {amount: 1, unit: ช้อนชา, item: "ไธม์แห้ง"}
+  - {amount: 1, unit: ช้อนชา, item: "ขิงป่น"}
+  - {amount: 1, unit: ช้อนโต๊ะ, item: "น้ำตาลทรายแดง"}
+  - {amount: 2, unit: ช้อนโต๊ะ, item: "น้ำมัน"}
   - {amount: 300, unit: g, item: "ข้าว", note: "สำหรับเสิร์ฟเป็นเครื่องเคียง"}
   - {amount: 240, unit: g, item: "ถั่วแดงหลวงสะเด็ดน้ำ", note: "สำหรับเสิร์ฟเป็นเครื่องเคียง"}
   - {amount: 150, unit: ml, item: "กะทิ", note: "สำหรับหุงข้าวกับถั่ว"}

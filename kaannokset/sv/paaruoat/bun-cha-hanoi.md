@@ -16,14 +16,14 @@ ingredients:
   - {amount: 400, unit: g, item: "fläskfärs"}
   - {amount: 300, unit: g, item: "fläsksida utan svål", note: "tunt skivad"}
   - {amount: 300, unit: g, item: "torr risvermicelli"}
-  - {amount: 3, unit: rkl, item: "fisksås", note: "till köttmarinaden"}
-  - {amount: 2, unit: rkl, item: "farinsocker", note: "till köttmarinaden"}
-  - {amount: 2, unit: kpl, item: "vitlöksklyftor", note: "finhackade"}
-  - {amount: 2, unit: kpl, item: "schalottenlök", note: "finhackade"}
-  - {amount: 1, unit: tl, item: "svartpeppar"}
+  - {amount: 3, unit: msk, item: "fisksås", note: "till köttmarinaden"}
+  - {amount: 2, unit: msk, item: "farinsocker", note: "till köttmarinaden"}
+  - {amount: 2, unit: "", item: "vitlöksklyftor", note: "finhackade"}
+  - {amount: 2, unit: "", item: "schalottenlök", note: "finhackade"}
+  - {amount: 1, unit: tsk, item: "svartpeppar"}
   - {amount: 60, unit: ml, item: "fisksås", note: "till dipsåsen"}
-  - {amount: 2, unit: rkl, item: "risvinäger"}
-  - {amount: 2, unit: rkl, item: "socker", note: "till dipsåsen"}
+  - {amount: 2, unit: msk, item: "risvinäger"}
+  - {amount: 2, unit: msk, item: "socker", note: "till dipsåsen"}
   - {amount: 250, unit: ml, item: "varmt vatten", note: "till dipsåsen"}
   - {amount: 150, unit: g, item: "morötter", note: "tunt skivade"}
   - {amount: 20, unit: g, item: "färsk koriander"}

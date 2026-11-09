@@ -19,25 +19,25 @@ ingredients:
     unit: g
     item: "pork neck"
   - amount: 1
-    unit: kpl
+    unit: ""
     item: "orange"
   - amount: 1
-    unit: kpl
+    unit: ""
     item: "lime"
   - amount: 1
-    unit: tl
+    unit: tsp
     item: "ground cumin"
   - amount: 1
-    unit: tl
+    unit: tsp
     item: "oregano"
   - amount: 2
-    unit: kpl
+    unit: ""
     item: "garlic cloves"
   - amount: 150
     unit: ml
     item: "water"
   - amount: 12
-    unit: kpl
+    unit: ""
     item: "romaine lettuce leaves"
   - amount: 70
     unit: g

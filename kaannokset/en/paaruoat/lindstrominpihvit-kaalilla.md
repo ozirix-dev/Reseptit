@@ -22,19 +22,19 @@ ingredients:
     unit: g
     item: "pickled beetroot"
   - amount: 2
-    unit: rkl
+    unit: tbsp
     item: "beetroot pickling liquid"
   - amount: 1
-    unit: kpl
+    unit: ""
     item: "small onion"
   - amount: 1
-    unit: kpl
+    unit: ""
     item: "egg"
   - amount: 1
-    unit: rkl
+    unit: tbsp
     item: "Dijon mustard"
   - amount: 2
-    unit: rkl
+    unit: tbsp
     item: "butter"
   - amount: 500
     unit: g

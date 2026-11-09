@@ -22,19 +22,19 @@ ingredients:
     unit: g
     item: "blomkål"
   - amount: 1
-    unit: kpl
+    unit: ""
     item: "lök"
   - amount: 2
-    unit: rkl
+    unit: msk
     item: "smör"
   - amount: 150
     unit: ml
     item: "flytande vispgrädde"
   - amount: 1
-    unit: kpl
+    unit: ""
     item: "ägg"
   - amount: 1
-    unit: tl
+    unit: tsk
     item: "mejram"
   - amount: null
     unit: ""

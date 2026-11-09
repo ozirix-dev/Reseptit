@@ -22,19 +22,19 @@ ingredients:
     unit: g
     item: "inlagd rödbeta"
   - amount: 2
-    unit: rkl
+    unit: msk
     item: "rödbetsspad"
   - amount: 1
-    unit: kpl
+    unit: ""
     item: "liten lök"
   - amount: 1
-    unit: kpl
+    unit: ""
     item: "ägg"
   - amount: 1
-    unit: rkl
+    unit: msk
     item: "dijonsenap"
   - amount: 2
-    unit: rkl
+    unit: msk
     item: "smör"
   - amount: 500
     unit: g

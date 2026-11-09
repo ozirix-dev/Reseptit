@@ -11,10 +11,10 @@ cooking_method: [leivonta]
 ingredients:
   - { amount: 100, unit: g, item: "butter"}
   - { amount: 70, unit: g, item: "erythritol"}
-  - { amount: 3, unit: kpl, item: "egg yolks"}
+  - { amount: 3, unit: "", item: "egg yolks"}
   - { amount: 100, unit: g, item: "almond flour"}
-  - { amount: 1, unit: tl, item: "baking powder"}
-  - { amount: 3, unit: kpl, item: "egg whites"}
+  - { amount: 1, unit: tsp, item: "baking powder"}
+  - { amount: 3, unit: "", item: "egg whites"}
   - { amount: 60, unit: g, item: "erythritol for the meringue"}
   - { amount: 2, unit: dl, item: "liquid whipping cream"}
   - { amount: 150, unit: g, item: "strawberries"}

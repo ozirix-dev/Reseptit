@@ -16,14 +16,14 @@ ingredients:
   - {amount: 400, unit: g, item: "ground pork"}
   - {amount: 300, unit: g, item: "skinless pork belly", note: "thinly sliced"}
   - {amount: 300, unit: g, item: "dried rice vermicelli"}
-  - {amount: 3, unit: rkl, item: "fish sauce", note: "for the meat marinade"}
-  - {amount: 2, unit: rkl, item: "brown sugar", note: "for the meat marinade"}
-  - {amount: 2, unit: kpl, item: "garlic cloves", note: "finely chopped"}
-  - {amount: 2, unit: kpl, item: "shallots", note: "finely chopped"}
-  - {amount: 1, unit: tl, item: "black pepper"}
+  - {amount: 3, unit: tbsp, item: "fish sauce", note: "for the meat marinade"}
+  - {amount: 2, unit: tbsp, item: "brown sugar", note: "for the meat marinade"}
+  - {amount: 2, unit: "", item: "garlic cloves", note: "finely chopped"}
+  - {amount: 2, unit: "", item: "shallots", note: "finely chopped"}
+  - {amount: 1, unit: tsp, item: "black pepper"}
   - {amount: 60, unit: ml, item: "fish sauce", note: "for the dipping broth"}
-  - {amount: 2, unit: rkl, item: "rice vinegar"}
-  - {amount: 2, unit: rkl, item: "sugar", note: "for the dipping broth"}
+  - {amount: 2, unit: tbsp, item: "rice vinegar"}
+  - {amount: 2, unit: tbsp, item: "sugar", note: "for the dipping broth"}
   - {amount: 250, unit: ml, item: "warm water", note: "for the dipping broth"}
   - {amount: 150, unit: g, item: "carrots", note: "thinly sliced"}
   - {amount: 20, unit: g, item: "fresh coriander"}

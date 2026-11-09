@@ -22,19 +22,19 @@ ingredients:
     unit: g
     item: "บีตรูตดอง"
   - amount: 2
-    unit: rkl
+    unit: ช้อนโต๊ะ
     item: "น้ำดองบีตรูต"
   - amount: 1
-    unit: kpl
+    unit: ""
     item: "หอมหัวใหญ่หัวเล็ก"
   - amount: 1
-    unit: kpl
+    unit: ""
     item: "ไข่ไก่"
   - amount: 1
-    unit: rkl
+    unit: ช้อนโต๊ะ
     item: "มัสตาร์ดดิฌง"
   - amount: 2
-    unit: rkl
+    unit: ช้อนโต๊ะ
     item: "เนย"
   - amount: 500
     unit: g

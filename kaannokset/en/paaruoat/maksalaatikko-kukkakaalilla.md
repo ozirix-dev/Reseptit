@@ -22,19 +22,19 @@ ingredients:
     unit: g
     item: "cauliflower"
   - amount: 1
-    unit: kpl
+    unit: ""
     item: "onion"
   - amount: 2
-    unit: rkl
+    unit: tbsp
     item: "butter"
   - amount: 150
     unit: ml
     item: "liquid whipping cream"
   - amount: 1
-    unit: kpl
+    unit: ""
     item: "egg"
   - amount: 1
-    unit: tl
+    unit: tsp
     item: "marjoram"
   - amount: null
     unit: ""

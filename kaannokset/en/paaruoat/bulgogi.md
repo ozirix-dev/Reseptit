@@ -16,14 +16,14 @@ ingredients:
   - {amount: 600, unit: g, item: "beef sirloin", note: "thinly sliced"}
   - {amount: 300, unit: g, item: "jasmine rice", note: "dry weight"}
   - {amount: 60, unit: ml, item: "soy sauce"}
-  - {amount: 1, unit: rkl, item: "brown sugar"}
-  - {amount: 1, unit: rkl, item: "sesame oil"}
-  - {amount: 3, unit: kpl, item: "garlic cloves", note: "finely chopped"}
+  - {amount: 1, unit: tbsp, item: "brown sugar"}
+  - {amount: 1, unit: tbsp, item: "sesame oil"}
+  - {amount: 3, unit: "", item: "garlic cloves", note: "finely chopped"}
   - {amount: 100, unit: g, item: "pear", note: "finely grated"}
-  - {amount: 0.5, unit: kpl, item: "yellow onion", note: "thinly sliced"}
-  - {amount: 2, unit: kpl, item: "spring onions", note: "sliced"}
-  - {amount: 1, unit: rkl, item: "sesame seeds"}
-  - {amount: 0.25, unit: tl, item: "black pepper"}
+  - {amount: 0.5, unit: "", item: "yellow onion", note: "thinly sliced"}
+  - {amount: 2, unit: "", item: "spring onions", note: "sliced"}
+  - {amount: 1, unit: tbsp, item: "sesame seeds"}
+  - {amount: 0.25, unit: tsp, item: "black pepper"}
 carbs_net_per_serving_g: 62.81
 carbs_total_per_serving_g: 64.98
 protein_per_serving_g: 43.15

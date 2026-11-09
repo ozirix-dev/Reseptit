@@ -16,13 +16,13 @@ ingredients:
   - {amount: 400, unit: g, item: "กิมจิหมักจนเปรี้ยวได้ที่", note: "หั่นเป็นเส้น"}
   - {amount: 300, unit: g, item: "เนื้อสันคอหมู", note: "หั่นบาง"}
   - {amount: 300, unit: g, item: "เต้าหู้แข็ง", note: "หั่นเต๋า"}
-  - {amount: 1, unit: kpl, item: "หอมหัวใหญ่สีเหลือง", note: "หั่นบาง"}
+  - {amount: 1, unit: "", item: "หอมหัวใหญ่สีเหลือง", note: "หั่นบาง"}
   - {amount: 800, unit: ml, item: "น้ำสต็อกไก่หรือน้ำเปล่า"}
-  - {amount: 1, unit: rkl, item: "โคชูจัง (ซอสพริกเกาหลี)"}
-  - {amount: 1, unit: tl, item: "พริกเกาหลีป่นโกชูการู"}
-  - {amount: 1, unit: rkl, item: "ซีอิ๊วญี่ปุ่น"}
-  - {amount: 2, unit: kpl, item: "ต้นหอมญี่ปุ่น", note: "ซอย"}
-  - {amount: 1, unit: rkl, item: "น้ำมันรสกลาง"}
+  - {amount: 1, unit: ช้อนโต๊ะ, item: "โคชูจัง (ซอสพริกเกาหลี)"}
+  - {amount: 1, unit: ช้อนชา, item: "พริกเกาหลีป่นโกชูการู"}
+  - {amount: 1, unit: ช้อนโต๊ะ, item: "ซีอิ๊ว"}
+  - {amount: 2, unit: "", item: "ต้นหอม", note: "ซอย"}
+  - {amount: 1, unit: ช้อนโต๊ะ, item: "น้ำมันรสกลาง"}
 source_language: fi
 source_recipe: reseptit/paaruoat/kimchi-jjigae.md
 translation_of: kimchi-jjigae
