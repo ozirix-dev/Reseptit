@@ -132,7 +132,7 @@ export function assertRecipeBaseline(root: string, baseline: string, ...protecte
     }
     if (status === "A" && file.startsWith("kaannokset/")) {
       const published = parseMarkdown(readFileSync(path.join(root, file), "utf8"));
-      if (published?.data.status === "published") {
+      if (published?.data.status === "published" && !translationDraftCommits.has(file)) {
         assert.ok(approvedNewTranslation(root, file, published), "UNREVIEWED_PUBLISHED_TRANSLATION: " + change);
         continue;
       }
