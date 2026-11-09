@@ -76,7 +76,7 @@ Ingredient amounts are displayed in the serving calculator above.
 
 1. Cook 400 g raw chicken breast in 1000 g ready-to-use chicken stock. Add 150 g courgette and 100 g leek.
 2. Add 150 g spinach, 200 g liquid cream, 14 g butter and 0.5 g ground black pepper. Continue heating until the chicken is fully cooked throughout.
-3. Finely chop 65 g peeled lemon flesh and add it to the soup with **all** its juice. Divide the entire soup into four servings. Remove no peel from the serving mixture. The chicken's internal temperature must reach **at least 75 °C**.
+3. Finely chop 65 g peeled lemon flesh and add it to the soup with **all** its juice. Divide the entire soup into four servings. There is no lemon peel to remove. The chicken's internal temperature must reach **at least 75 °C**.
 
 ## Notes
 

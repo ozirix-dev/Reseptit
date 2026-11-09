@@ -22,7 +22,7 @@ ingredients:
   - {amount: 100, unit: g, item: "ลูกแพร์", note: "ขูดละเอียด"}
   - {amount: 0.5, unit: "", item: "หอมหัวใหญ่สีเหลือง", note: "หั่นบาง"}
   - {amount: 2, unit: "", item: "ต้นหอม", note: "ซอย"}
-  - {amount: 1, unit: ช้อนโต๊ะ, item: "งาขาว"}
+  - {amount: 1, unit: ช้อนโต๊ะ, item: "เมล็ดงา"}
   - {amount: 0.25, unit: ช้อนชา, item: "พริกไทยดำ"}
 carbs_net_per_serving_g: 62.81
 carbs_total_per_serving_g: 64.98
