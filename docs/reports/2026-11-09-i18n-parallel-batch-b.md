@@ -2,7 +2,7 @@
 
 **PR #356**: tämä keskustelu. **PR #357**: ensimmäinen keskustelu. Kumpikin omistaa vain omat reseptinsä. #357:n nimettyjä 20 reseptiä ei käsitellä tässä erässä. Aiemmat kuusi päällekkäistä bulgogi- ja kimchi-jjigae-luonnosta on poistettu #356:sta; ne kuuluvat #357:ään.
 
-## Erän 20 FI-kohdetta (60 kieliversiota, 24 luonnosta (9 GK-HOLD; 9 QA odottaa))
+## Erän 20 FI-kohdetta (60 kieliversiota, 27 luonnosta (9 GK-HOLD; 12 QA odottaa))
 
 | Suomenkielinen lähde | EN | SV | TH |
 |---|---|---|---|
@@ -15,7 +15,7 @@
 | `reseptit/aamupalat/meksikolainen-quesadilla-sienilla.md` | luonnos / QA odottaa | luonnos / QA odottaa | luonnos / QA odottaa |
 | `reseptit/aamupalat/pohjoisafrikkalainen-harissa-shakshuka.md` | odottaa | odottaa | odottaa |
 | `reseptit/aamupalat/thai-riisinuudelikeitto-aamuksi.md` | odottaa | odottaa | odottaa |
-| `reseptit/aamupalat/valimerellinen-tortilla-espanola-aamupalaksi.md` | odottaa | odottaa | odottaa |
+| `reseptit/aamupalat/valimerellinen-tortilla-espanola-aamupalaksi.md` | luonnos / QA odottaa | luonnos / QA odottaa | luonnos / QA odottaa |
 | `reseptit/aamupalat/indonesialainen-bubur-ayam-kanariisipuuro.md` | odottaa | odottaa | odottaa |
 | `reseptit/aamupalat/vietnamilainen-chao-ga-kanapuuro.md` | odottaa | odottaa | odottaa |
 | `reseptit/aamupalat/thai-kai-jiao-yrteilla.md` | luonnos / QA odottaa | luonnos / QA odottaa | luonnos / QA odottaa |
@@ -39,7 +39,7 @@
 
 ## Tilanne
 
-Työnjono on rajattu erilleen #357:stä. Kolme reseptiä / yhdeksän kieliversiota on tehty ja verrattu FI-lähteeseen. Kaikki kolme reseptiä / 9 kieliversiota säilyvät draftina eikä FI-lähteiden kielimetatietoja julkaista tässä haarassa: Huevos ja Callaloo rikkoivat GK80-release-2:n raakatekstin SHA-sidonnan (CI 42644592927: STALE_INPUT), ja farinatan kielimetatiedon lisäys rikkoi erillisen GK100-owner-approved-eighteen-julkaisusinetin (CI 42645835154: GK100_RELEASE_CANDIDATE_CHANGED). Hyväksyttyjä GK80- tai GK100-tarkisteita ei avata kielistatusten vuoksi; julkaisua varten tarvitaan erikseen katselmoitu, testattu tuki metatietojen turvalliselle käsittelylle. Lisäksi kahden pääruoan (rendang ja sate ayam) kuusi kieliluonnosta ovat lisättyinä; niiden tarkat määrät, annokset, ainesosarivien lukumäärä, makrot ja vaiheiden lukumäärä vastaavat FI-lähteitä. Loput 12 reseptiä / 36 kieliversiota odottavat. PR on Draft eikä tätä sisältöä ole yhdistetty tuotantoon. Aiempi #356:n CI kaatui käännösten metatiedon/vertailun tarkistuksessa; viimeistelemättömiä käännöksiä ei julkaistu.
+Työnjono on rajattu erilleen #357:stä. Kolme reseptiä / yhdeksän kieliversiota on tehty ja verrattu FI-lähteeseen. Kaikki kolme reseptiä / 9 kieliversiota säilyvät draftina eikä FI-lähteiden kielimetatietoja julkaista tässä haarassa: Huevos ja Callaloo rikkoivat GK80-release-2:n raakatekstin SHA-sidonnan (CI 42644592927: STALE_INPUT), ja farinatan kielimetatiedon lisäys rikkoi erillisen GK100-owner-approved-eighteen-julkaisusinetin (CI 42645835154: GK100_RELEASE_CANDIDATE_CHANGED). Hyväksyttyjä GK80- tai GK100-tarkisteita ei avata kielistatusten vuoksi; julkaisua varten tarvitaan erikseen katselmoitu, testattu tuki metatietojen turvalliselle käsittelylle. Lisäksi kahden pääruoan (rendang ja sate ayam) kuusi kieliluonnosta ovat lisättyinä; niiden tarkat määrät, annokset, ainesosarivien lukumäärä, makrot ja vaiheiden lukumäärä vastaavat FI-lähteitä. Loput 11 reseptiä / 33 kieliversiota odottavat. PR on Draft eikä tätä sisältöä ole yhdistetty tuotantoon. Aiempi #356:n CI kaatui käännösten metatiedon/vertailun tarkistuksessa; viimeistelemättömiä käännöksiä ei julkaistu.
 
 ## Toinen osanäyttö (9.11.2026)
 
@@ -55,3 +55,5 @@ Työnjono on rajattu erilleen #357:stä. Kolme reseptiä / yhdeksän kieliversio
 
 - `thai-kai-jiao-yrteilla` EN/SV/TH: 6 ainesosariviä, 4 valmistusvaihetta, 2 annosta, 25 min. Munat 110 g (ilman kuorta), kalakastike 15 g, basilika 5 g (thaibasilikan koostumusproxy), kevätsipuli 20 g ja rypsiöljy 10 g; kaikki ravintoarvot säilytetty. Kypsennys kauttaaltaan; kalan allergeeni ja tuotekohtaisen koostumuksen epävarmuus säilyvät. Lähteen teksti puhuu thaibasilikasta, metatieto tavallisesta basilikasta: käännökset avaavat proxy-eron, mutta FI-laatuarvio on edelleen tarpeen.
 - `thai-kookosriisi-mangolla` EN/SV/TH: 6 ainesosariviä, 3 valmistusvaihetta, 2 annosta, 25 min. Kuiva jasmiiniriisi 100 g, kookosmaito 184 g, mangon syötävä liha 150 g, seesami 6 g, keitinvesi 100 g. Ei riisin vaihtoa tahmariisiin, ei jäähdytettyä riisiä, ei lisättyä makeutusta. Kunkin kieliversion status draft; semanttinen julkaisu-QA ja SHA-parit puuttuvat.
+
+- `valimerellinen-tortilla-espanola-aamupalaksi` EN/SV/TH: 7 ainesosariviä, 3 valmistusvaihetta, 2 annosta, 25 min. Kuoritun raakan perunan 60 g esikeitto 500 g:ssa vedessä, veden poisvalutus, 55 g sipulia, 13,5 g oliiviöljyä, 13,5 g rypsiöljyä ja kuoreton muna 110 g. Kaikki paistoöljy sisältyy; ei alkuperäisen öljyssä pitkään kypsennetyn version GK-siirtoa. Draft / QA odottaa.
