@@ -41,7 +41,7 @@ translation_of: vhh-brita-kakku
 
 ## Beskrivning
 
-Maränglagret och mandelmjölsbottnen gör denna Britatårta till en lätt sommardessert. Fyllningen består av vispad grädde och jordgubbar.
+Maränglagret och mandelmjölsbottnen gör denna Britatårta till en lätt sommardessert. Till fyllningen vispas grädde som sedan varvas med jordgubbar.
 
 ## Ingredienser
 

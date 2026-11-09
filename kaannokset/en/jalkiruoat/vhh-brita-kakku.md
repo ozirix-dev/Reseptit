@@ -41,7 +41,7 @@ translation_of: vhh-brita-kakku
 
 ## Description
 
-A layer of meringue and an almond flour base make this Brita cake a light summer dessert. It is filled with whipped cream and strawberries.
+A layer of meringue and an almond flour base make this Brita cake a light summer dessert. For the filling, whip the cream and add strawberries.
 
 ## Ingredients
 
