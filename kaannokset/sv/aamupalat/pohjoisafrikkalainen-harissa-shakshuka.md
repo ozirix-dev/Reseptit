@@ -4,7 +4,7 @@ recipe_id: pohjoisafrikkalainen-harissa-shakshuka
 url_slug: pohjoisafrikkalainen-harissa-shakshuka
 category: aamupala
 language: sv
-status: draft
+status: published
 main_ingredient:
 - kananmuna
 - tomaatti
@@ -14,7 +14,7 @@ cooking_method:
 ingredients:
 - amount: 110
   unit: g
-  item: "ägg vägt utan skal (källans ingrediensetikett behöver korrigeras)"
+  item: "ägg vägt utan skal"
 - amount: 125
   unit: g
   item: "tomat"
@@ -91,5 +91,3 @@ Den modellerade glykemiska belastningen (GL) bygger på ingredienserna och angiv
 Bilden illustrerar servering. Näringsvärden och GL gäller endast de angivna ingredienserna, inte extra tillbehör i bilden.
 
 De 5 g färsk harissa består av ingredienserna ovan. Därutöver används 13,5 g olivolja vid stekning. Beräkningen gäller inte färdigköpt harissapasta.
-
-I den finska källans ingrediensmetadata finns ett oklart uttryck om äggskalet. Tillagningen anger uttryckligen ägg utan skal. Översättningen följer tillagningen; källan måste rättas före publicering.

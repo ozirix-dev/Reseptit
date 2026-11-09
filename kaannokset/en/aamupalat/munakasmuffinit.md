@@ -4,7 +4,7 @@ recipe_id: munakasmuffinit
 url_slug: munakasmuffinit
 category: aamupala
 language: en
-status: draft
+status: published
 diet_class: keto
 main_ingredient:
 - kananmuna
@@ -59,9 +59,9 @@ translation_of: munakasmuffinit
 
 Weigh the listed edible ingredients in grams, eggs without shells. Use only the listed cooking fat and seasonings.
 
-1. Preheat the oven to 190 °C. Grease six muffin tin cups. **Source clarification needed:** the Finnish ingredients do not specify any separate fat for greasing; do not introduce an unweighed ingredient into the nutritional calculation.
-2. Fry the bacon until crisp and transfer to kitchen paper. Finely chop the spinach and bacon.
-3. Whisk the eggs and cream together. Stir in the spinach, crumbled bacon, cheese and black pepper.
+1. Preheat the oven to 190 °C. Use six non-stick silicone muffin cups or six paper liners in a muffin tin. Do not add separate fat for greasing.
+2. Fry the bacon until crisp. Keep all rendered bacon fat for the egg mixture; do not discard it on kitchen paper. Finely chop the spinach and bacon.
+3. Whisk the eggs and cream together. Stir in the spinach, crumbled bacon, cheese, black pepper and all the reserved bacon fat.
 4. Divide among the six cups and bake for 16–20 minutes until set in the centre.
 5. Let the muffins rest for five minutes before serving.
 

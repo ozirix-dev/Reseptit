@@ -4,7 +4,7 @@ recipe_id: vietnamilainen-chao-ga-kanapuuro
 url_slug: vietnamilainen-chao-ga-kanapuuro
 category: aamupala
 language: en
-status: draft
+status: published
 main_ingredient:
 - riisi
 - kana
@@ -63,8 +63,8 @@ The ingredients are listed in the structured serving calculator above.
 
 ## Instructions
 
-1. Put the dry white jasmine rice and 800 g water into a saucepan. Bring to a boil, then simmer for about 40 minutes until soft and porridge-like. Stir occasionally and add only water if more liquid is needed.
-2. Cook the chicken breast thoroughly in the porridge. Remove it, shred it into small pieces, and return all the chicken and its cooking juices to the porridge.
+1. Put 100 g dry white jasmine rice and 800 g water into a saucepan. Bring to a boil, then simmer for about 40 minutes in total until soft and porridge-like. Stir occasionally and add only water if more liquid is needed.
+2. Cut 150 g skinless chicken breast into small pieces. Add it to the porridge when the rice has simmered for about 25 minutes, then cook together for approximately 15 more minutes. Check that the thickest chicken piece reaches an internal temperature of at least 75 °C; cook longer if necessary. Remove and shred the cooked chicken if desired, then return all the chicken and its cooking juices to the porridge.
 3. Add the grated fresh ginger and finely chopped spring onion. Season with salt. Divide all the porridge into two portions and serve hot.
 
 ## Notes

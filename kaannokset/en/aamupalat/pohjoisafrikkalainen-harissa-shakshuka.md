@@ -4,7 +4,7 @@ recipe_id: pohjoisafrikkalainen-harissa-shakshuka
 url_slug: pohjoisafrikkalainen-harissa-shakshuka
 category: aamupala
 language: en
-status: draft
+status: published
 main_ingredient:
 - kananmuna
 - tomaatti
@@ -14,7 +14,7 @@ cooking_method:
 ingredients:
 - amount: 110
   unit: g
-  item: "egg weighed without shell (source ingredient label needs correction)"
+  item: "egg weighed without shell"
 - amount: 125
   unit: g
   item: "tomato"
@@ -91,5 +91,3 @@ The modelled glycaemic load (GL) is based on the ingredients and specified calcu
 The image illustrates serving. Nutrition values and GL include only the listed ingredients, not additional sides in the image.
 
 The 5 g fresh harissa uses the ingredients specified above, with a further 13.5 g olive oil for frying. The calculation does not apply to commercial harissa paste.
-
-The Finnish ingredient metadata contains an unclear egg-shell expression; the cooking instructions expressly specify egg without shell. This translation follows the cooking instructions and requires a source correction before publication.

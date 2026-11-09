@@ -4,7 +4,7 @@ recipe_id: indonesialainen-bubur-ayam-kanariisipuuro
 url_slug: indonesialainen-bubur-ayam-kanariisipuuro
 category: aamupala
 language: sv
-status: draft
+status: published
 main_ingredient:
 - riisi
 - kana
@@ -63,8 +63,8 @@ Ingredienserna som används i portionskalkylatorn visas i den strukturerade info
 
 ## Tillagning
 
-1. Lägg det torra vita jasminriset och 800 g vatten i en kastrull. Sjud i cirka 40 minuter tills riset blir en mjuk gröt och rör om då och då. Om mer vätska behövs ska endast vatten tillsättas.
-2. Tillaga kycklingbröstet helt genomkokt i gröten. Riv den genomkokta kycklingen i strimlor och lägg tillbaka den och all kokvätska i gröten. Kontrollera att kycklingen är genomlagad.
+1. Lägg 100 g torrt vitt jasminris och 800 g vatten i en kastrull. Sjud i sammanlagt cirka 40 minuter tills riset blir en mjuk gröt och rör om då och då. Om mer vätska behövs ska endast vatten tillsättas.
+2. Skär 150 g skinnfri kycklingbröstfilé i små bitar. Tillsätt kycklingen när riset har sjudit i cirka 25 minuter och låt den koka med riset i ytterligare cirka 15 minuter. Kontrollera att kycklingens tjockaste bit når en innertemperatur på minst 75 °C; fortsätt tillagningen vid behov. Riv den tillagade kycklingen i strimlor om du vill och lägg tillbaka all kyckling och all kokvätska i gröten.
 3. Tillsätt finhackad ingefära och salladslök, smaka av med salt och servera varmt i två lika stora portioner. Den här enkla grundversionen innehåller ingen rostad lök, inga såser och inga andra tillbehör.
 
 ## Anteckningar

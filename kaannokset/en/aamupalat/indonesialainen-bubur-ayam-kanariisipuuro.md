@@ -4,7 +4,7 @@ recipe_id: indonesialainen-bubur-ayam-kanariisipuuro
 url_slug: indonesialainen-bubur-ayam-kanariisipuuro
 category: aamupala
 language: en
-status: draft
+status: published
 main_ingredient:
 - riisi
 - kana
@@ -63,8 +63,8 @@ The ingredients used by the serving calculator are listed in the structured info
 
 ## Instructions
 
-1. Put the dry white jasmine rice and 800 g water in a saucepan. Simmer for approximately 40 minutes until the rice becomes a soft porridge, stirring occasionally. If more liquid is needed, use only water.
-2. Cook the chicken breast thoroughly in the porridge. Shred the fully cooked chicken, then return it, along with all its cooking liquid, to the porridge. Check that the chicken is cooked throughout.
+1. Put 100 g dry white jasmine rice and 800 g water in a saucepan. Simmer for about 40 minutes in total until the rice becomes a soft porridge, stirring occasionally. If more liquid is needed, use only water.
+2. Cut 150 g skinless chicken breast into small pieces. Add the chicken after the rice has simmered for about 25 minutes, and cook it with the rice for approximately 15 more minutes. Check that the thickest chicken piece reaches an internal temperature of at least 75 °C; continue cooking if needed. Shred the cooked chicken if desired, and return all chicken and its cooking juices to the porridge.
 3. Add the finely chopped ginger and spring onion, season with salt and serve hot, divided equally into two portions. This simple basic version contains no crispy fried onions, sauces or other garnishes.
 
 ## Notes

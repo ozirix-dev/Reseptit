@@ -4,7 +4,7 @@ recipe_id: vietnamilainen-chao-ga-kanapuuro
 url_slug: vietnamilainen-chao-ga-kanapuuro
 category: aamupala
 language: sv
-status: draft
+status: published
 main_ingredient:
 - riisi
 - kana
@@ -63,8 +63,8 @@ Ingredienserna anges ovan i den strukturerade portionskalkylatorn.
 
 ## Tillagning
 
-1. Lägg det torra vita jasminriset och 800 g vatten i en kastrull. Koka upp och sjud sedan i cirka 40 minuter tills riset blivit en mjuk gröt. Rör om ibland och tillsätt endast vatten om det behövs mer vätska.
-2. Tillaga kycklingbröstet helt genomkokt i gröten. Lyft upp det, riv det i små bitar och lägg tillbaka all kyckling och kokvätska i gröten.
+1. Lägg 100 g torrt vitt jasminris och 800 g vatten i en kastrull. Koka upp och sjud sedan i sammanlagt cirka 40 minuter tills riset blivit en mjuk gröt. Rör om ibland och tillsätt endast vatten om det behövs mer vätska.
+2. Skär 150 g skinnfri kycklingbröstfilé i små bitar. Lägg i kycklingen när riset har sjudit i cirka 25 minuter och tillaga tillsammans i ytterligare cirka 15 minuter. Kontrollera att den tjockaste kycklingbiten når minst 75 °C innertemperatur; fortsätt tillagningen vid behov. Lyft upp och riv den tillagade kycklingen i små bitar om du vill, och lägg tillbaka all kyckling och kokvätska i gröten.
 3. Tillsätt riven färsk ingefära och finhackad salladslök. Smaka av med salt. Fördela hela gröten på två portioner och servera varm.
 
 ## Anteckningar

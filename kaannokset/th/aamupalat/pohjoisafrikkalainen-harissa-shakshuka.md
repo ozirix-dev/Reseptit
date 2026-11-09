@@ -4,7 +4,7 @@ recipe_id: pohjoisafrikkalainen-harissa-shakshuka
 url_slug: pohjoisafrikkalainen-harissa-shakshuka
 category: aamupala
 language: th
-status: draft
+status: published
 main_ingredient:
 - kananmuna
 - tomaatti
@@ -14,7 +14,7 @@ cooking_method:
 ingredients:
 - amount: 110
   unit: g
-  item: "ไข่ไก่ชั่งไม่รวมเปลือก (คำในรายการส่วนผสมต้นฉบับต้องแก้ไข)"
+  item: "ไข่ไก่ชั่งไม่รวมเปลือก"
 - amount: 125
   unit: g
   item: "มะเขือเทศ"
@@ -91,5 +91,3 @@ translation_of: pohjoisafrikkalainen-harissa-shakshuka
 ภาพเป็นเพียงภาพประกอบ คุณค่าทางโภชนาการและ GL ครอบคลุมเฉพาะส่วนผสมที่ระบุ ไม่รวมเครื่องเคียงเพิ่มเติมในภาพ
 
 ฮาริสซาสด 5 กรัมทำจากส่วนผสมที่ระบุข้างต้น และใช้น้ำมันมะกอกอีก 13.5 กรัมสำหรับผัด การคำนวณนี้ไม่ครอบคลุมฮาริสซาสำเร็จรูป
-
-รายการส่วนผสมภาษาฟินแลนด์ใช้คำเกี่ยวกับเปลือกไข่ที่ไม่ชัดเจน แต่ขั้นตอนการปรุงระบุชัดว่าชั่งไข่โดยไม่รวมเปลือก คำแปลนี้ยึดตามขั้นตอนการปรุง และต้องแก้คำในต้นฉบับก่อนเผยแพร่

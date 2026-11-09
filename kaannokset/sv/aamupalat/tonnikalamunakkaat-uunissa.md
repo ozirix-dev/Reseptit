@@ -4,7 +4,7 @@ recipe_id: tonnikalamunakkaat-uunissa
 url_slug: tonnikalamunakkaat-uunissa
 category: aamupala
 language: sv
-status: draft
+status: published
 diet_class: keto
 main_ingredient:
 - kananmuna
@@ -59,7 +59,7 @@ translation_of: tonnikalamunakkaat-uunissa
 
 Väg alla angivna ätbara ingredienser i gram, äggen utan skal. Använd bara det angivna fettet och kryddorna.
 
-1. Värm ugnen till 190 °C och smörj sex muffinsformar. **Källan måste förtydligas:** den finska ingredienslistan innehåller inget fett för smörjning; anta ingen olistad fettmängd i näringsberäkningen.
+1. Värm ugnen till 190 °C. Använd sex nonstick-muffinsformar av silikon eller sex pappersformar i en muffinsplåt. Tillsätt inget extra fett för smörjning.
 2. Låt tonfisken rinna av ordentligt och finfördela den i en skål. Tillsätt ägg, grädde, ost och dill.
 3. Krydda med svartpeppar och vid behov salt. Fördela smeten i de sex formarna.
 4. Grädda i 15–18 minuter tills omeletterna har rest sig och stelnat i mitten.

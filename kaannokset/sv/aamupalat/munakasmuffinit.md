@@ -4,7 +4,7 @@ recipe_id: munakasmuffinit
 url_slug: munakasmuffinit
 category: aamupala
 language: sv
-status: draft
+status: published
 diet_class: keto
 main_ingredient:
 - kananmuna
@@ -59,9 +59,9 @@ translation_of: munakasmuffinit
 
 Väg de angivna ätbara ingredienserna i gram, äggen utan skal. Använd endast det angivna matfettet och kryddorna.
 
-1. Värm ugnen till 190 °C. Smörj sex muffinsformar. **Källan måste förtydligas:** den finska ingredienslistan anger inget separat fett för smörjning. Lägg inte till en ovägd ingrediens i näringsberäkningen.
-2. Stek baconet knaprigt och lägg det på hushållspapper. Finhacka spenat och bacon.
-3. Vispa ägg och grädde. Blanda ner spenat, smulat bacon, ost och svartpeppar.
+1. Värm ugnen till 190 °C. Använd sex muffinsformar av silikon med nonstick-yta eller sex pappersformar i en muffinsplåt. Tillsätt inget extra fett för smörjning.
+2. Stek baconet knaprigt. Spara allt fett som smälter ur baconet till äggsmeten; låt det inte sugas upp av hushållspapper. Finhacka spenat och bacon.
+3. Vispa ägg och grädde. Blanda ner spenat, smulat bacon, ost, svartpeppar och allt sparat baconfett.
 4. Fördela smeten i de sex formarna och grädda i 16–20 minuter tills mitten har stelnat.
 5. Låt muffinsarna vila i fem minuter före servering.
 

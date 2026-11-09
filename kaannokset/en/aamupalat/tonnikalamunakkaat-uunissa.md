@@ -4,7 +4,7 @@ recipe_id: tonnikalamunakkaat-uunissa
 url_slug: tonnikalamunakkaat-uunissa
 category: aamupala
 language: en
-status: draft
+status: published
 diet_class: keto
 main_ingredient:
 - kananmuna
@@ -59,7 +59,7 @@ translation_of: tonnikalamunakkaat-uunissa
 
 Weigh the listed edible ingredients in grams, eggs without shells. Use only the specified fat and seasonings.
 
-1. Preheat the oven to 190 °C and grease six muffin tin cups. **Source clarification needed:** the Finnish ingredient list includes no fat for greasing; do not assume an unlisted fat quantity in nutrition calculations.
+1. Preheat the oven to 190 °C. Use six non-stick silicone muffin cups or six paper liners in a muffin tin. Do not add any separate greasing fat.
 2. Drain the tuna thoroughly and break it up in a bowl. Add the eggs, cream, cheese and dill.
 3. Season with pepper and, if needed, salt. Divide the mixture among the six cups.
 4. Bake for 15–18 minutes until the mini omelettes have risen and are set in the centre.
