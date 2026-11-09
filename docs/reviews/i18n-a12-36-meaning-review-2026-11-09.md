@@ -4,11 +4,11 @@
 
 - FI-lähtöcommit: `ade461048ea138cd4f6a34340e8a53df79532bd7`
 - Käännöslähde (Draft-PR #357): `3e0803e91e3e76d7dc9efa14c217b23a7f3a2047`
-- 12 julkaistua suomenkielistä reseptiä, kolme kieltä kustakin; 36 julkaisuun ehdotettua kieliversiota.
+- 11 julkaistua suomenkielistä reseptiä, kolme kieltä kustakin; 33 julkaisuun ehdotettua kieliversiota. Kahdestoista resepti on erillisessä GK80-lähdesinetin HOLDissa.
 - Valinta: vain `review_state: ai-compared-draft` versiolukitussa aineistossa `docs/reviews/translation-batch20-digests-2026-11-09.json` (PR #357).
-- Jokainen 36 kieliversioista säilyttää FI-ainesosat samassa järjestyksessä, määrät ja yksiköiden merkityksen, annokset, valmistusnumerot, ravintoarvot ja kuvan. Käännös on tehty FI:stä EN/SV/TH:ksi, myös thai-ohjeiden kypsyys- ja poissulkurajaukset.
+- Jokainen 33 kieliversioista säilyttää FI-ainesosat samassa järjestyksessä, määrät ja yksiköiden merkityksen, annokset, valmistusnumerot, ravintoarvot ja kuvan. Käännös on tehty FI:stä EN/SV/TH:ksi, myös thai-ohjeiden kypsyys- ja poissulkurajaukset.
 - Tarkistajamerkintä: **AI-lähdevertailu, ei ihmistarkistusta eikä väitettä syntyperäisestä kielikatselmoinnista**.
-- Uusien julkaisujen muodolliset `source_hash`/`translation_hash`-tietueet lisätty `meta/kaannokset/codex-review-evidence.json`-rekisteriin. Ne ovat version tarkisteita, eivät yksin semanttisen oikeellisuuden todiste; katso alla oleva rajattu merkitysyhteenveto.
+- Uusien 33 julkaisukäännöksen muodolliset `source_hash`/`translation_hash`-tietueet lisätty `meta/kaannokset/codex-review-evidence.json`-rekisteriin. Ne ovat version tarkisteita, eivät yksin semanttisen oikeellisuuden todiste; katso alla oleva rajattu merkitysyhteenveto.
 - FI-lähteisiin lisätty **vain** `translation_languages` ja `translation_status`. Reseptin ainekset, valmistus, ravintoarvot, GK ja kuva säilyvät.
 - Lopullinen julkaisu sallitaan vasta, kun muuttuneen sisällön, tiukan käännösauditoinnin, nutrition/GK-sinetin ja julkaisu-buildin CI on **vihreä tarkalleen tällä PR-HEADilla**.
 - Tämän PR:n perusteella ei saa julkaista toisen erän #356 tiedostoja eikä kahdeksaa #357:n `source-hold`-reseptiä.
@@ -35,7 +35,7 @@
 `falafel` (pita/salaatti), `jerk-kana` (kokonaisaika), `kimchi-jjigae` (riisilisuke),
 `lanttulaatikko-kermainen` (kuoren mukanaolo), `lindstrominpihvit-kaalilla` (voin jako),
 `maksalaatikko-kukkakaalilla` (voin jako), `shoyu-kanakeitto-konjac` (keittäminen vs paistaminen),
-`vhh-brita-kakku` (taikinan yhdistämisen ohje).
+`vhh-brita-kakku` (taikinan yhdistämisen ohje) sekä **`uunikanapasta-kesakurpitsa`** (GK80:n hyväksytyn `recoveryC.versionHashes`-tekstisnapshotin muuttuminen pelkkään FI-kielimetadataan).
 
 Kunkin lähde-HOLDin korjaus vaatii uuden AI-lähdevertailun ja SHA-kirjauksen. Yhteisen rekisterin integrointi
 muihin aktiivisiin PR:iin tapahtuu vain yhden nimettynä toimivan omistajan kautta; konfliktit ratkaistaan
@@ -46,8 +46,12 @@ lisäämällä kelvolliset avaimet, **ei ylikirjoittamalla** aiempia todisterive
 - [ ] Julkaisukäännökset läpäisevät strict auditoinnin (36/36)
 - [ ] Käännös- ja turvallisuustestit, mukaan lukien rakenne ja valmistusmenetelmät
 - [ ] FI-metadataa koskevat GK80/GK100-lukot, ravinto ja tarvittavat testit vihreinä
-- [ ] Sivustobuild tuottaa 36 oikeaa kielireittiä, eikä uusia reittiduplikaatteja
+- [ ] Sivustobuild tuottaa 33 oikeaa kielireittiä, eikä uusia reittiduplikaatteja
 - [ ] Ehdokkaan viimeisin commit ja PR-CI tarkistettu
 - [ ] Mahdollinen merkittävä semanttinen epäselvyys => takaisin Draftiin (fail closed)
 
 **Ei koepaisto- tai ihmiskatselmointiväitettä.** Ehdokas pysyy Draftina, kunnes kaikki yllä olevat ehdot on todennettu.
+
+## CI-portin havainto, 9.11.2026
+
+Alkuperäinen 12/36-kandidaatti epäonnistui [ajossa 42663685209](https://github.com/ozirix-dev/Reseptit/actions/runs/42663685209): `RECOVERY_STALE_PREPARATION` uunikanapastan koko FI-tiedoston SHA-256-sinetissä. Merkitystä ei muutettu, mutta **hyväksytty sopimus lukitsee raakatiedoston**. Emme heikennä lukkoa. Uunikanapasta, sen kolme käännöstä ja kolme V2-tietuetta siirrettiin pois tästä julkaisuehdokkaasta. Jatkuva tavoite 12/36; tämä PR testaa aluksi 11/33, mahdollinen uunikanapastan julkaisu käsitellään omassa hyväksytyssä metatieto-/sinettiyhteensovituksessa.
