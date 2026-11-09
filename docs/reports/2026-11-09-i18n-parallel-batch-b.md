@@ -2,7 +2,7 @@
 
 **PR #356**: tämä keskustelu. **PR #357**: ensimmäinen keskustelu. Kumpikin omistaa vain omat reseptinsä. #357:n nimettyjä 20 reseptiä ei käsitellä tässä erässä. Aiemmat kuusi päällekkäistä bulgogi- ja kimchi-jjigae-luonnosta on poistettu #356:sta; ne kuuluvat #357:ään.
 
-## Erän 20 FI-kohdetta (60 kieliversiota, 9 PR-ehdokkaana)
+## Erän 20 FI-kohdetta (60 kieliversiota, 3 PR-ehdokkaana ja 6 GK-HOLD-luonnosta)
 
 | Suomenkielinen lähde | EN | SV | TH |
 |---|---|---|---|
@@ -10,8 +10,8 @@
 | `reseptit/paaruoat/pho-bo.md` | odottaa | odottaa | odottaa |
 | `reseptit/paaruoat/rendang-padang.md` | odottaa | odottaa | odottaa |
 | `reseptit/paaruoat/sate-ayam.md` | odottaa | odottaa | odottaa |
-| `reseptit/aamupalat/meksikolainen-huevos-a-la-mexicana.md` | PR-ehdokas | PR-ehdokas | PR-ehdokas |
-| `reseptit/aamupalat/karibia-callaloo-munakas.md` | PR-ehdokas | PR-ehdokas | PR-ehdokas |
+| `reseptit/aamupalat/meksikolainen-huevos-a-la-mexicana.md` | QA tehty / GK HOLD | QA tehty / GK HOLD | QA tehty / GK HOLD |
+| `reseptit/aamupalat/karibia-callaloo-munakas.md` | QA tehty / GK HOLD | QA tehty / GK HOLD | QA tehty / GK HOLD |
 | `reseptit/aamupalat/meksikolainen-quesadilla-sienilla.md` | odottaa | odottaa | odottaa |
 | `reseptit/aamupalat/pohjoisafrikkalainen-harissa-shakshuka.md` | odottaa | odottaa | odottaa |
 | `reseptit/aamupalat/thai-riisinuudelikeitto-aamuksi.md` | odottaa | odottaa | odottaa |
@@ -39,4 +39,4 @@
 
 ## Tilanne
 
-Työnjono on rajattu erilleen #357:stä. Kolme reseptiä / yhdeksän kieliversiota on katselmoitu AI-merkitysvertailussa ja valmisteltu julkaisu-PR:n osaksi; 17 reseptiä / 51 kieliversiota odottaa. PR on Draft eikä tätä sisältöä ole yhdistetty tuotantoon. Aiempi #356:n CI kaatui käännösten metatiedon/vertailun tarkistuksessa; viimeistelemättömiä käännöksiä ei julkaistu.
+Työnjono on rajattu erilleen #357:stä. Kolme reseptiä / yhdeksän kieliversiota on tehty ja verrattu FI-lähteeseen. Yksi resepti / 3 versiota (farinata) on julkaisu-PR:n ehdokkaana. Kaksi reseptiä / 6 versiota (Huevos ja Callaloo) on säilytetty draftina, koska FI-lähteen käännösmetatieto muuttaa alkuperäisen reseptitiedoston SHA-256-tiivistettä ja rikkoo GK80-release-2:n varmennetun lähdesidoksen (CI 42644592927: STALE_INPUT). Pakettien hyväksyttyjä sidoksia ei kirjoiteta uudelleen kevyen kielistatusmuutoksen vuoksi. Loput 17 reseptiä / 51 kieliversiota odottavat. PR on Draft eikä tätä sisältöä ole yhdistetty tuotantoon. Aiempi #356:n CI kaatui käännösten metatiedon/vertailun tarkistuksessa; viimeistelemättömiä käännöksiä ei julkaistu.

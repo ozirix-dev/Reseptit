@@ -12,6 +12,8 @@ Tässä osajulkaisuehdokkaassa 3 FI-reseptiä ja 9 kieliversiota: `meksikolainen
 
 ## Tulokset ja portit
 
-FI/EN/SV/TH-rakenteen rivi-, annos-, kuva- ja makrovertailut: PASS (12 tiedostoa). AI-lähdevertailu: 9 paria, avoimia P0/P1-havaintoja ei tunnistettu. Ei oleteta ihmistarkistusta eikä riippumatonta kielentarkistajaa. FI-alkuperäisen sisältöä ei muokattu; lisättiin vain käännösmetatiedot. Lähde-/käännösmerkitystiivisteet kirjataan `meta/kaannokset/codex-review-evidence.json`-rekisteriin. Lähteen jo julkaistu ravintoarvo ja GK-taso jäävät muuttumattomiksi.
+FI/EN/SV/TH-rakenteen rivi-, annos-, kuva- ja makrovertailut: PASS (12 tiedostoa). AI-lähdevertailu: 9 paria, avoimia P0/P1-havaintoja ei tunnistettu. Ei oleteta ihmistarkistusta eikä riippumatonta kielentarkistajaa. FI-alkuperäisen ohjeita, aineita tai ravintolaskentaa ei muutettu. Kielimetatietojen lisäys jätettiin lopulliseen haaraan vain farinatassa. Lähde-/käännösmerkitystiivisteet kirjataan `meta/kaannokset/codex-review-evidence.json`-rekisteriin. Lähteen jo julkaistu ravintoarvo ja GK-taso jäävät muuttumattomiksi.
 
-**EI MERGEÄ ennen uuden HEADin koko CI PASS, V2-rekisterin tarkistus ja rinnakkaisen #357:n tiedostopolkujen konfliktittomuus.** Tämä on 3/20 reseptin osakokonaisuus, PR on edelleen Draft, ei live-julkaisu.
+**RISKIPÄÄTÖS 9.11.:** GK80-release-2 sitoo Huevos- ja Callaloo-FI-tiedostot täsmälliseen SHA-256-lähdesisältöön. Kun käännösten kielistatukset lisättiin, build pysähtyi `STALE_INPUT`-virheeseen (run 42644592927). Molempien kolmen kielen status palautettiin `draft`:iksi ja FI-käännösmetadata ennalleen. Semanttiset kielikatselmointitarkisteet säilyvät, mutta niitä ei väitetä julkaisuhyväksynnäksi. Farinata jää ainoaksi tämän osavaiheen julkaistavaksi kielikolmikoksi. Hyväksyttyjä GK-paketteja ei muuteta.**
+
+**EI MERGEÄ ennen uuden HEADin koko CI PASS, V2-rekisterin tarkistus ja rinnakkaisen #357:n tiedostopolkujen konfliktittomuus.** Tässä on 3/20 reseptin tarkistetut tekstit, joista vain 1/20 on julkaisu-PR:n kieliversioehdokas, PR on edelleen Draft, ei live-julkaisu.

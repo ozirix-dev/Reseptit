@@ -4,7 +4,7 @@ recipe_id: meksikolainen-huevos-a-la-mexicana
 url_slug: meksikolainen-huevos-a-la-mexicana
 category: aamupala
 language: en
-status: published
+status: draft
 main_ingredient:
 - kananmuna
 - tomaatti
