@@ -77,3 +77,28 @@ test("a source mark alone does not count as a completed semantic review", () => 
   b.reviewState = "unreviewed";
   assert.equal(evaluateBatchEntry(b, e).group, "needs-review");
 });
+
+test("missing third language cannot be promoted as a two-language partial", () => {
+  const b = bundle(), e = proofs(b);
+  delete b.targets.th;
+  const decision = evaluateBatchEntry(b, e);
+  assert.equal(decision.group, "needs-review");
+  assert.match(decision.reasons.join(" "), /th: translation missing/);
+});
+test("outcome human-required blocks automatic candidate promotion", () => {
+  const b = bundle(), e = proofs(b);
+  e["mock:en"]!.outcome = "human-required";
+  assert.equal(evaluateBatchEntry(b, e).group, "needs-review");
+});
+test("P0 open means source may be unsafe even when all numerical checks pass", () => {
+  const b = bundle(), e = proofs(b);
+  e["mock:th"]!.findings = [{severity: "P0", status: "open", summary: "food-safety error"}];
+  const result = evaluateBatchEntry(b, e);
+  assert.equal(result.group, "needs-review");
+  assert.match(result.reasons.join(" "), /BLOCKED/);
+});
+test("missing source cannot produce a candidate even with complete evidence", () => {
+  const b = bundle(), e = proofs(b);
+  b.source = null;
+  assert.equal(evaluateBatchEntry(b, e).group, "source-hold");
+});
