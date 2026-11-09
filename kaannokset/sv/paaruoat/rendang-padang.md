@@ -4,7 +4,7 @@ recipe_id: rendang-padang
 url_slug: rendang-padang
 category: paaruoka
 language: sv
-status: draft
+status: published
 servings: 6
 time_total_min: 300
 difficulty: "medel"

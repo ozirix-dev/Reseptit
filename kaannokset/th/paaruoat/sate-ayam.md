@@ -4,7 +4,7 @@ recipe_id: sate-ayam
 url_slug: sate-ayam
 category: paaruoka
 language: th
-status: draft
+status: published
 servings: 4
 time_total_min: 60
 difficulty: "ง่าย"

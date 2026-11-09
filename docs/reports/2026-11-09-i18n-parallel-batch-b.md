@@ -1,17 +1,15 @@
-# Rinnakkainen käännöserä B — 9.11.2026
+# Rinnakkainen käännöserä B — PR #356:n jäljellä olevat 15 reseptiä
 
-**PR #356**: tämä keskustelu. **PR #357**: ensimmäinen keskustelu. Kumpikin omistaa vain omat reseptinsä. #357:n nimettyjä 20 reseptiä ei käsitellä tässä erässä. Aiemmat kuusi päällekkäistä bulgogi- ja kimchi-jjigae-luonnosta on poistettu #356:sta; ne kuuluvat #357:ään.
+**PR #356**: tämä keskustelu. Julkaistu B05-osuus: [PR #370](https://github.com/ozirix-dev/Reseptit/pull/370) yhdistetty mainiin 9.11.2026 (5 reseptiä / 15 kieliversiota). **PR #357**: ensimmäinen keskustelu. Kumpikin omistaa vain omat reseptinsä. #357:n nimettyjä 20 reseptiä ei käsitellä tässä erässä. Aiemmat kuusi päällekkäistä bulgogi- ja kimchi-jjigae-luonnosta on poistettu #356:sta; ne kuuluvat #357:ään.
 
-## Erän 20 FI-kohdetta (60 kieliversiota, 60 luonnosta (21 FI/GK-HOLD; 33 QA odottaa))
+**Nykyinen tilanne PR #370:n jälkeen:** 15 FI-reseptin 45 EN/SV/TH-käännöstä on edelleen `status: draft` tässä #356-haarassa. Viisi aiemmin tähän erään kuulunutta reseptiä (`meksikolainen-huevos-a-la-mexicana`, `karibia-callaloo-munakas`, `valimerellinen-farinata-aamupalaksi`, `rendang-padang`, `sate-ayam`) ja niiden 15 julkaistua kieliversiota ovat nyt mainissa PR #370:n kautta, eikä niitä pidä lisätä tähän PR:ään takaisin. Päähaaran GK80/GK100-lukot ja julkaisuindeksi säilytetään. Alla olevat työvaihekohtaiset merkinnät ovat 20 reseptin alkuperäisen työerän historiallista raportointia, eivät tämän PR:n tämänhetkistä 60 Draft-käännöksen väitettä.
+
+## PR #356:n 15 jäljellä olevaa FI-kohdetta (45 EN/SV/TH-luonnosta)
 
 | Suomenkielinen lähde | EN | SV | TH |
 |---|---|---|---|
 | `reseptit/paaruoat/kana-yakitori-kaalilla.md` | luonnos / FI HOLD | luonnos / FI HOLD | luonnos / FI HOLD |
 | `reseptit/paaruoat/pho-bo.md` | luonnos / FI HOLD | luonnos / FI HOLD | luonnos / FI HOLD |
-| `reseptit/paaruoat/rendang-padang.md` | AI-QA / draft | AI-QA / draft | AI-QA / draft |
-| `reseptit/paaruoat/sate-ayam.md` | AI-QA / draft | AI-QA / draft | AI-QA / draft |
-| `reseptit/aamupalat/meksikolainen-huevos-a-la-mexicana.md` | QA tehty / GK HOLD | QA tehty / GK HOLD | QA tehty / GK HOLD |
-| `reseptit/aamupalat/karibia-callaloo-munakas.md` | QA tehty / GK HOLD | QA tehty / GK HOLD | QA tehty / GK HOLD |
 | `reseptit/aamupalat/meksikolainen-quesadilla-sienilla.md` | luonnos / QA odottaa | luonnos / QA odottaa | luonnos / QA odottaa |
 | `reseptit/aamupalat/pohjoisafrikkalainen-harissa-shakshuka.md` | luonnos / QA odottaa | luonnos / QA odottaa | luonnos / QA odottaa |
 | `reseptit/aamupalat/thai-riisinuudelikeitto-aamuksi.md` | luonnos / QA odottaa | luonnos / QA odottaa | luonnos / QA odottaa |
@@ -25,7 +23,6 @@
 | `reseptit/aamupalat/pohjoisafrikkalainen-lablabi.md` | luonnos / QA odottaa | luonnos / QA odottaa | luonnos / QA odottaa |
 | `reseptit/aamupalat/munakasmuffinit.md` | luonnos / FI HOLD | luonnos / FI HOLD | luonnos / FI HOLD |
 | `reseptit/aamupalat/tonnikalamunakkaat-uunissa.md` | luonnos / FI HOLD | luonnos / FI HOLD | luonnos / FI HOLD |
-| `reseptit/aamupalat/valimerellinen-farinata-aamupalaksi.md` | QA tehty / GK HOLD | QA tehty / GK HOLD | QA tehty / GK HOLD |
 
 ## Laatu ja julkaisu
 

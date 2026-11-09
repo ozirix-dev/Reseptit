@@ -5,6 +5,7 @@ import { parseMarkdown } from "../src/content/markdown";
 import { recipeFrontmatterSchema } from "../src/content/schema";
 import type { z } from "zod";
 import { semanticTermErrors, semanticProseErrors, semanticNoteErrors, semanticTagErrors } from "./semantic-terms";
+import { loadTranslationPublicationIndex, overlayTranslationPublicationIndex } from "./translation-publication-index";
 
 const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 export const sourceCategories = ["alkuruoat", "paaruoat", "jalkiruoat", "leivonnaiset", "aamupalat", "valipalat"] as const;
@@ -150,7 +151,7 @@ export function knownTermErrors(source: Frontmatter, target: Frontmatter, locale
 export async function auditTranslations(recipeIds?: string[]): Promise<TranslationAuditResult> {
   const filter = recipeIds ? new Set(recipeIds) : undefined;
   const sourcePaths = (await Promise.all(sourceCategories.map((category) => markdownFiles(path.join(repoRoot, "reseptit", category))))).flat();
-  const sources = await readRecipes(sourcePaths, filter);
+  const sources = overlayTranslationPublicationIndex(await readRecipes(sourcePaths, filter), await loadTranslationPublicationIndex(repoRoot), filter);
   const translations = (await Promise.all(locales.map((locale) => markdownFiles(path.join(repoRoot, "kaannokset", locale))))).flat();
   const publishedTranslations = await readRecipes(translations, filter);
   return auditRecipePairs(sources, publishedTranslations);
