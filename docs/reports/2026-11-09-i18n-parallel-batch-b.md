@@ -2,7 +2,7 @@
 
 **PR #356**: tämä keskustelu. **PR #357**: ensimmäinen keskustelu. Kumpikin omistaa vain omat reseptinsä. #357:n nimettyjä 20 reseptiä ei käsitellä tässä erässä. Aiemmat kuusi päällekkäistä bulgogi- ja kimchi-jjigae-luonnosta on poistettu #356:sta; ne kuuluvat #357:ään.
 
-## Erän 20 FI-kohdetta (60 kieliversiota, 42 luonnosta (9 GK-HOLD; 27 QA odottaa))
+## Erän 20 FI-kohdetta (60 kieliversiota, 48 luonnosta (9 GK-HOLD; 33 QA odottaa))
 
 | Suomenkielinen lähde | EN | SV | TH |
 |---|---|---|---|
@@ -13,8 +13,8 @@
 | `reseptit/aamupalat/meksikolainen-huevos-a-la-mexicana.md` | QA tehty / GK HOLD | QA tehty / GK HOLD | QA tehty / GK HOLD |
 | `reseptit/aamupalat/karibia-callaloo-munakas.md` | QA tehty / GK HOLD | QA tehty / GK HOLD | QA tehty / GK HOLD |
 | `reseptit/aamupalat/meksikolainen-quesadilla-sienilla.md` | luonnos / QA odottaa | luonnos / QA odottaa | luonnos / QA odottaa |
-| `reseptit/aamupalat/pohjoisafrikkalainen-harissa-shakshuka.md` | odottaa | odottaa | odottaa |
-| `reseptit/aamupalat/thai-riisinuudelikeitto-aamuksi.md` | odottaa | odottaa | odottaa |
+| `reseptit/aamupalat/pohjoisafrikkalainen-harissa-shakshuka.md` | luonnos / QA odottaa | luonnos / QA odottaa | luonnos / QA odottaa |
+| `reseptit/aamupalat/thai-riisinuudelikeitto-aamuksi.md` | luonnos / QA odottaa | luonnos / QA odottaa | luonnos / QA odottaa |
 | `reseptit/aamupalat/valimerellinen-tortilla-espanola-aamupalaksi.md` | luonnos / QA odottaa | luonnos / QA odottaa | luonnos / QA odottaa |
 | `reseptit/aamupalat/indonesialainen-bubur-ayam-kanariisipuuro.md` | luonnos / QA odottaa | luonnos / QA odottaa | luonnos / QA odottaa |
 | `reseptit/aamupalat/vietnamilainen-chao-ga-kanapuuro.md` | luonnos / QA odottaa | luonnos / QA odottaa | luonnos / QA odottaa |
@@ -39,7 +39,7 @@
 
 ## Tilanne
 
-Työnjono on rajattu erilleen #357:stä. Kolme reseptiä / yhdeksän kieliversiota on tehty ja verrattu FI-lähteeseen. Kaikki kolme reseptiä / 9 kieliversiota säilyvät draftina eikä FI-lähteiden kielimetatietoja julkaista tässä haarassa: Huevos ja Callaloo rikkoivat GK80-release-2:n raakatekstin SHA-sidonnan (CI 42644592927: STALE_INPUT), ja farinatan kielimetatiedon lisäys rikkoi erillisen GK100-owner-approved-eighteen-julkaisusinetin (CI 42645835154: GK100_RELEASE_CANDIDATE_CHANGED). Hyväksyttyjä GK80- tai GK100-tarkisteita ei avata kielistatusten vuoksi; julkaisua varten tarvitaan erikseen katselmoitu, testattu tuki metatietojen turvalliselle käsittelylle. Lisäksi kahden pääruoan (rendang ja sate ayam) kuusi kieliluonnosta ovat lisättyinä; niiden tarkat määrät, annokset, ainesosarivien lukumäärä, makrot ja vaiheiden lukumäärä vastaavat FI-lähteitä. Loput 6 reseptiä / 18 kieliversiota odottavat. PR on Draft eikä tätä sisältöä ole yhdistetty tuotantoon. Aiempi #356:n CI kaatui käännösten metatiedon/vertailun tarkistuksessa; viimeistelemättömiä käännöksiä ei julkaistu.
+Työnjono on rajattu erilleen #357:stä. Kolme reseptiä / yhdeksän kieliversiota on tehty ja verrattu FI-lähteeseen. Kaikki kolme reseptiä / 9 kieliversiota säilyvät draftina eikä FI-lähteiden kielimetatietoja julkaista tässä haarassa: Huevos ja Callaloo rikkoivat GK80-release-2:n raakatekstin SHA-sidonnan (CI 42644592927: STALE_INPUT), ja farinatan kielimetatiedon lisäys rikkoi erillisen GK100-owner-approved-eighteen-julkaisusinetin (CI 42645835154: GK100_RELEASE_CANDIDATE_CHANGED). Hyväksyttyjä GK80- tai GK100-tarkisteita ei avata kielistatusten vuoksi; julkaisua varten tarvitaan erikseen katselmoitu, testattu tuki metatietojen turvalliselle käsittelylle. Lisäksi kahden pääruoan (rendang ja sate ayam) kuusi kieliluonnosta ovat lisättyinä; niiden tarkat määrät, annokset, ainesosarivien lukumäärä, makrot ja vaiheiden lukumäärä vastaavat FI-lähteitä. Loput 4 reseptiä / 12 kieliversiota odottavat. PR on Draft eikä tätä sisältöä ole yhdistetty tuotantoon. Aiempi #356:n CI kaatui käännösten metatiedon/vertailun tarkistuksessa; viimeistelemättömiä käännöksiä ei julkaistu.
 
 ## Toinen osanäyttö (9.11.2026)
 
@@ -71,3 +71,9 @@ Työnjono on rajattu erilleen #357:stä. Kolme reseptiä / yhdeksän kieliversio
 - Nämä 6 kieliversiota ovat **draft**, riippumaton merkityskatselmointi, SHA-evidence, FI-kielimetat ja CI-julkaisunäyttö odottavat. Uusia ravintolukuja tai GK-arvoja ei laskettu.
 
 - `meksikolainen-kurpitsapuuro-piloncillolla`: EN/SV/TH luonnosteltu (6 ainesosaa, 3 työvaihetta, 2 annosta). 250 g kuorittua **myskikurpitsaa**, 100 g 0,5–0,6 mm kaurahiutaleita, 500 g vettä, 30 g **fariinisokeria** ja 2,6 g kanelia. Ei piloncillo-vaihtoa, vaikka slug/kuva viittaa siihen; tämä on täsmällinen fariinisokeriversio. Kurpitsa pidetään paloina, ei soseuteta. Erillinen AI-merkitys-QA edelleen tekemättä.
+
+## Kuudes luonnoserä
+
+- `thai-riisinuudelikeitto-aamuksi`: EN/SV/TH, 6 ainesosariviä, 3 valmistusvaihetta, 2 annosta. Broilerin 75 °C sisälämpötila, kuiva riisivermiselli 100 g, liemi 700 g, limetin hedelmäliha mehuineen 50 g ja korianteri 6 g säilytetty. Ei ylimääräisiä kastikkeita.
+- `pohjoisafrikkalainen-harissa-shakshuka`: EN/SV/TH, 11 ainesosariviä, 5 vaihetta, 2 annosta. Harissa 5 g eritelty tarkasti ja erillinen 13,5 g paistoöljy säilytetty. **FI-lähteen ainesosarivillä lukee 'kananmunaa kuoretta' mutta ohjeessa 'kuoretonta'.** Käännösluonnos tulkitsee valmistuksen mukaisesti kuorettomaksi; tämän lähderivin korjaus ja GK-sidosten arvio estävät julkaisun.
+- Kaikki kuusi kieliversiota ovat `status: draft`, eikä itsenäistä merkityskatselmointia tai SHA-evidence-julkaisutodistetta ole tehty.
