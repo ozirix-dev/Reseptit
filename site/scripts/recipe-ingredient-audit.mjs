@@ -97,7 +97,12 @@ function classifyReference(line, index) {
 
 export function inspectRecipe(source, filename = "fixture.md") {
   const frontmatter = source.match(/^---[ \t]*\r?\n([\s\S]*?)\r?\n---[ \t]*(?:\r?\n|$)/);
-  if (!frontmatter) return { path: filename, error: "YAML-frontmatter puuttuu" };
+  if (!frontmatter) {
+    // Legacy title-only placeholders are not malformed published recipes.
+    const titleOnly = /^\uFEFF?\s*#\s+[^\r\n]+\s*$/u.test(source.trim());
+    if (titleOnly) return { path: filename, status: "stub", skipped: true, stub: true, findings: [] };
+    return { path: filename, error: "YAML-frontmatter puuttuu" };
+  }
   let data;
   try {
     data = parseYaml(frontmatter[1]);
@@ -179,7 +184,8 @@ export async function auditRecipes(root = ROOT) {
   const summary = {
     scanned_files: records.length,
     published_fi: published.length,
-    unpublished_or_other: records.filter((r) => r.skipped).length,
+    unpublished_or_other: records.filter((r) => r.skipped && !r.stub).length,
+    title_only_stubs: records.filter((r) => r.stub).length,
     parse_errors: records.filter((r) => r.error).length,
     flagged_recipes: flagged.length,
     unlisted_addition_recipes: flagged.filter((r) => r.findings.some((f) => f.type === "luettelosta-puuttuva-lisäys")).length,
@@ -215,7 +221,8 @@ export function markdownReport(audit, maximumRows = 60) {
     "| Valmistusohjeessa lisäys, jota ei löydy ainesosaluettelosta | " + s.unlisted_addition_recipes + " |",
     "| Puuttuva tarjoilulisuke tai viimeistely | " + s.unlisted_serving_recipes + " |",
     "| Epäilyttävä yleisohjepohja | " + s.boilerplate_recipes + " |",
-    "| Jäsentämisvirheitä | " + s.parse_errors + " |",
+    "| Pelkän otsikon sisältävät vanhat julkaisemattomat aihiot | " + s.title_only_stubs + " |",
+    "| Jäsentämisvirheitä (ei lasketa mukaan julkaistuihin) | " + s.parse_errors + " |",
     "",
     "Luokat voivat mennä päällekkäin. Ainesosien taivutus, synonyymit, vapaaehtoiset lisukkeet ja keitinvesi voivat aiheuttaa sekä vääriä osumia että ohituksia. Ravintoarvoja tai GI/GK-sidoksia **ei saa muuttaa automaattisesti**.",
     "",
@@ -243,6 +250,7 @@ async function main() {
   const audit = await auditRecipes();
   console.log("INGREDIENT_AUDIT_SUMMARY " + JSON.stringify(audit.summary));
   if (audit.errors.length) console.log("INGREDIENT_AUDIT_UNREADABLE " + JSON.stringify(audit.errors));
+  if (audit.summary.title_only_stubs) console.log("INGREDIENT_AUDIT_STUBS " + audit.summary.title_only_stubs);
   const outArg = process.argv.find((arg) => arg.startsWith("--out="));
   if (outArg) {
     const prefix = path.resolve(process.cwd(), outArg.slice(6));
