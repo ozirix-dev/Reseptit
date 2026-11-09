@@ -91,4 +91,3 @@ The modelled glycaemic load (GL) is based on the ingredients and specified calcu
 The image illustrates serving. Nutrition values and GL include only the listed ingredients, not additional sides in the image.
 
 The 5 g fresh harissa uses the ingredients specified above, with a further 13.5 g olive oil for frying. The calculation does not apply to commercial harissa paste.
-

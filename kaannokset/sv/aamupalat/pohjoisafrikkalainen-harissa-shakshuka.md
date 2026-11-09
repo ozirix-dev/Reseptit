@@ -91,4 +91,3 @@ Den modellerade glykemiska belastningen (GL) bygger på ingredienserna och angiv
 Bilden illustrerar servering. Näringsvärden och GL gäller endast de angivna ingredienserna, inte extra tillbehör i bilden.
 
 De 5 g färsk harissa består av ingredienserna ovan. Därutöver används 13,5 g olivolja vid stekning. Beräkningen gäller inte färdigköpt harissapasta.
-
