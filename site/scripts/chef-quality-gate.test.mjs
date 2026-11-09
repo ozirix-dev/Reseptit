@@ -36,11 +36,15 @@ test("pilot routes all five observed cases without publishing anything automatic
     "indonesialainen-serabi-kookospannukakku": "TEXT_REPAIR_CANDIDATE",
     "indonesialainen-bakwan-maissifritter": "HOLD_MATERIAL_EVIDENCE",
     "pohjoisafrikkalainen-bissara": "HOLD_TIME_SAFETY",
-    "japanilainen-yaki-onigiri-misolla": "HOLD_TIME_SAFETY",
+    "japanilainen-yaki-onigiri-misolla": "HOLD_MULTI_AXIS",
     "indialainen-poha-maapahkinoilla": "HOLD_TRANSLATION_SYNC",
   });
   assert.equal(result.textRepairCandidates, 1);
   assert.equal(result.holdCases, 4);
+  const serabi = result.results.find((r) => r.recipe_id === "indonesialainen-serabi-kookospannukakku");
+  assert.ok(serabi.assessment.blockers.includes("EXTERNAL_PR_NOT_VERIFIED"));
+  assert.equal(serabi.assessment.requiresMethodMeaningReview, true);
+  assert.equal(serabi.assessment.requiresGlycemicReview, true);
   assert.ok(result.results.every((row) => row.releaseEligible === false));
   assert.match(markdownPilotReport(result), /Publication: \*\*NO\*\*/);
 });
@@ -67,6 +71,9 @@ test("confirmed amounts and stated times are checked from source, not guessed", 
   const onigiri = result.results.find((r) => r.recipe_id === "japanilainen-yaki-onigiri-misolla");
   assert.equal(onigiri.probes.filter((p) => p.probe === "ratio_at_least" && p.pass).length, 2);
   assert.ok(onigiri.probes.every((p) => p.pass));
+  assert.deepEqual(onigiri.assessment.blockers.slice(0,2), ["MATERIAL_QUANTITY_OR_LIQUID", "TIME_OR_HANDLING"]);
+  assert.equal(onigiri.assessment.requiresNutritionReview, true);
+  assert.equal(onigiri.assessment.requiresGlycemicReview, true);
 });
 
 test("changed source snapshot invalidates observations instead of silently passing", async () => {
