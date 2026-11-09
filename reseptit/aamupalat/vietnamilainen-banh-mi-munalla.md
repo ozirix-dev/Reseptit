@@ -61,7 +61,8 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 
 ## Valmistus
 
-1. Sekoita jauhot, neste ja suola. Vaivaa pehmeäksi taikinaksi ja anna levätä 10 minuuttia. Jos reseptissä on valmis leipä tai taikina, siirry täyttöön.
-2. Jaa taikina osiin ja painele tai kauli ohuiksi leiviksi. Lisää taikinaan kuuluva täyte tai mausteöljy.
-3. Paista kuumalla pannulla molemmin puolin kypsäksi ja nosta liinan alle pysymään pehmeänä.
-4. Täytä rapea patonki munalla, pikkelöidyllä porkkanalla, kurkulla ja korianterilla.
+1. Suikaloi kuorittu porkkana ja kurkku ohuiksi. Jaa patonki kahdeksi annokseksi ja halkaise palat pitkittäin.
+2. Kuumenna luettelon paistoöljy pannulla ja paista kananmunat kypsiksi. Mausta tarvittaessa luettelon suolalla.
+3. Lämmitä patongit nopeasti kuivalla pannulla tai uunissa, jotta kuori rapeutuu mutta sisus jää pehmeäksi.
+4. Täytä patongit paistetuilla kananmunilla, porkkanalla ja kurkulla. Tässä ainesosaluettelon mukaisessa versiossa porkkana käytetään tuoreena, ei pikkelöitynä; etikkaa tai korianteria ei lisätä.
+5. Tarjoa heti, kun leipä on lämmin ja kasvikset rapeita. Valmista patonkia ei vaivata tai paisteta uutena taikinana.

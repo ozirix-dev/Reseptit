@@ -10,6 +10,7 @@ import {reviewedSourceHashMatches} from '../scripts/afcd-column-correction';
 import {glycemicLoadEvidenceHash,glycemicLoadInputHash} from '../scripts/glycemic-load-recipe-binding';
 import {roundGlycemicLoadForDisplay} from '../scripts/glycemic-load-model';
 import {historicalFarinataForApprovedPanVersion} from '../scripts/gk100-farinata-sealed-source';
+import { chefCorrectionPaths, originalForChefHistoricalCheck } from "./chef-instruction-transition";
 import {fileURLToPath} from 'node:url';
 
 const root=fileURLToPath(new URL('../../',import.meta.url));
@@ -54,6 +55,17 @@ test('Live original results preserve frozen history plus the exact reviewed tran
  for (const lineEnding of ['\n', '\r\n']) {
   const withLineEndings = inventory.map((row: any) => {
    const normalNotes=row.notes.replaceAll('\r\n', '\n').replaceAll('\n', lineEnding);
+   // The live macro numbers and GI/GK inputs remain identical, but the audit
+   // records every source's full-file SHA. Undo ONLY exact proposed chef
+   // instruction-only changes when comparing to the frozen historical audit.
+   if(chefCorrectionPaths.includes(row.source_path)){
+    const published=read(row.source_path).replaceAll('\r\n','\n');
+    const original=originalForChefHistoricalCheck(root,row.source_path,published);
+    const liveSha=createHash('sha256').update(published).digest('hex');
+    const originalSha=createHash('sha256').update(original).digest('hex');
+    assert.equal(row.source_content_hash,liveSha,row.source_path+' reviewed chef source hash');
+    return {...row,notes:normalNotes,source_content_hash:originalSha};
+   }
    if(row.recipe_id!=='valimerellinen-farinata-aamupalaksi'||historicalFarinata===publishedFarinata){
     return {...row,notes:normalNotes};
    }
@@ -72,6 +84,19 @@ test('Live original results preserve frozen history plus the exact reviewed tran
  assert.equal(peach.unroundedGlycemicLoadPerServing,3.96885);
  assert.equal(roundGlycemicLoadForDisplay(peach.glycemicLoadPerServing),4);
  assert.equal(report.results.find((r:any)=>r.recipeId==='pellava-puuro-pahkinoilla').glycemicLoadPerServing,null);
+});
+
+test('chef correction reconstruction is limited to 12 exact, preparation-only sources',()=>{
+ assert.equal(chefCorrectionPaths.length,12);
+ for(const file of chefCorrectionPaths){
+  const current=read(file).replaceAll('\r\n','\n');
+  const frozen=originalForChefHistoricalCheck(root,file,current);
+  assert.notEqual(frozen,current,file+' must have a real preparation correction');
+  assert.throws(()=>originalForChefHistoricalCheck(root,file,current.replace('## Valmistus','## Tarjoilu')),
+    /unknown edit/,file+' unrelated changes must remain blocked');
+ }
+ const unrelated='reseptit/aamupalat/halloumimunakas.md';
+ assert.equal(originalForChefHistoricalCheck(root,unrelated,read(unrelated)),read(unrelated));
 });
 
 test('reviewed farinata normalization remains restricted to the exact approved source bytes',()=>{
