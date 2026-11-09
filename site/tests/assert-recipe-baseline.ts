@@ -5,6 +5,8 @@ import { readFileSync } from "node:fs";
 import path from "node:path";
 import { recipeTextForApprovedSnapshot } from "../scripts/approved-recipe-note-edits";
 import { originalForChefHistoricalCheck } from "./chef-instruction-transition";
+import { originalForReviewedChefSafety } from "./chef-safety-historical-transition";
+import { historicalRendangForApprovedVersion } from "../scripts/gk100-rendang-sealed-source";
 import { historicalFarinataForApprovedPanVersion } from "../scripts/gk100-farinata-sealed-source";
 import { parseMarkdown } from "../src/content/markdown";
 import { textHash } from "../scripts/gk149-model";
@@ -87,8 +89,9 @@ export function assertRecipeBaseline(root: string, baseline: string, ...protecte
     }
     if (status === "M" && (file.startsWith("reseptit/") || file.startsWith("kaannokset/"))) {
       const current = readFileSync(path.join(root, file), "utf8").replaceAll("\r\n", "\n");
-      const snapshot = originalForChefHistoricalCheck(root, file,
-        recipeTextForApprovedSnapshot(file, historicalFarinataForApprovedPanVersion(file, current)));
+      const snapshot = originalForReviewedChefSafety(root, file, originalForChefHistoricalCheck(root, file,
+        recipeTextForApprovedSnapshot(file,
+          historicalRendangForApprovedVersion(file, historicalFarinataForApprovedPanVersion(file, current)))));
       if (snapshot !== current) {
         const original = execFileSync("git", ["show", baseline + ":" + file], { cwd: root, encoding: "utf8" });
         assert.equal(snapshot, original, change);
