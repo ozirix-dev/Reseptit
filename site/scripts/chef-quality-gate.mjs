@@ -117,19 +117,32 @@ export function classifyPilotCase(caseData, recipe, translations = []) {
   const highRisk = openFindings.some((f) => f.severity === "P0" || f.severity === "P1");
   const material = kinds.has("unquantified_edible_liquid") || kinds.has("implausible_quantity");
   const timeOrSafety = kinds.has("unrealistic_time") || kinds.has("unsafe_or_incomplete_handling");
-  const changesDirections = kinds.has("generic_instruction") || timeOrSafety;
+  const instructions = kinds.has("generic_instruction");
+  const changesDirections = instructions || timeOrSafety;
   const translationRisk = translations.length > 0 && changesDirections;
+  // A single headline must not conceal independent blockers. Example:
+  // implausible miso/nori quantities AND unsafe/unclear rice preparation.
+  const blockers = [];
+  if (material) blockers.push("MATERIAL_QUANTITY_OR_LIQUID");
+  if (timeOrSafety) blockers.push("TIME_OR_HANDLING");
+  if (instructions) blockers.push("GENERIC_OR_WRONG_INSTRUCTIONS");
+  if (translationRisk || kinds.has("translation_dependency")) blockers.push("PUBLISHED_TRANSLATION_SYNC");
+  if (caseData.proposed_change?.related_pr) blockers.push("EXTERNAL_PR_NOT_VERIFIED");
+  if (highRisk && blockers.length === 0) blockers.push("UNRESOLVED_P0_P1");
   let decision = "EDITORIAL_REVIEW";
-  if (timeOrSafety) decision = "HOLD_TIME_SAFETY";
+  if (material && timeOrSafety) decision = "HOLD_MULTI_AXIS";
+  else if (timeOrSafety) decision = "HOLD_TIME_SAFETY";
   else if (material) decision = "HOLD_MATERIAL_EVIDENCE";
   else if (translationRisk || kinds.has("translation_dependency")) decision = "HOLD_TRANSLATION_SYNC";
-  else if (highRisk && kinds.has("generic_instruction")) decision = "TEXT_REPAIR_CANDIDATE";
+  else if (highRisk && instructions) decision = "TEXT_REPAIR_CANDIDATE";
   else if (highRisk) decision = "HOLD_UNRESOLVED";
   return {
     decision, releaseEligible: false, highRisk, material, timeOrSafety,
-    translatedLocales: translations, requiresTranslationSync: translationRisk,
+    blockers, translatedLocales: translations, requiresTranslationSync: translationRisk,
     requiresNutritionReview: material,
-    requiresGlycemicReview: material || timeOrSafety,
+    // Text-only change can still alter cooking, hydration or GI/GL meaning.
+    requiresMethodMeaningReview: instructions || timeOrSafety,
+    requiresGlycemicReview: material || timeOrSafety || instructions,
     requiresChefReview: highRisk,
   };
 }
@@ -230,6 +243,7 @@ export function markdownPilotReport(report) {
   for (const r of report.results) {
     lines.push("", "### " + r.recipe_id, "", r.summary,
       "", "Decision: **" + r.decision + "**. Publication: **NO**.",
+      "", "Independent blockers: " + (r.assessment.blockers.length ? r.assessment.blockers.join(", ") : "none recorded") + ".",
       "", "Claims measured: " + r.probes.map((p) => p.probe + "=" + (p.pass ? "PASS" : "FAIL")).join(", ") + ".",
       "", "Evidence: " + r.refs.map((x) => x.url).join(", "),
       "", "Required next step: " + String(r.proposed_change?.next_step ?? "Investigate and review before edits") + ".");
