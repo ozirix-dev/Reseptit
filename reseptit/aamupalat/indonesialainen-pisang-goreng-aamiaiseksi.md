@@ -64,7 +64,7 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 
 ## Valmistus
 
-1. Raasta, muussaa tai hienonna pääraaka-aine. Sekoita joukkoon taikinan ainekset ja lisää vettä vain sen verran, että seos pysyy koossa.
-2. Kuumenna pannulla ohut kerros öljyä. Muotoile pieniksi pihveiksi tai lusikoi taikina pannulle.
-3. Paista keskilämmöllä molemmin puolin kypsäksi ja rapeapintaiseksi. Paista erissä, jotta pannu ei jäähdy.
-4. Sekoita riisijauho, kookoshiutaleet, fariinisokeri ja vesi paksuksi taikinaksi. Viipaloi banaani, kääntele palat taikinassa ja paista öljytyssä pannussa kullanruskeiksi. Valuta talouspaperilla ja tarjoa lämpimänä.
+1. Sekoita riisijauho, kookoshiutaleet, fariinisokeri ja ripaus luettelon suolaa. Lisää luettelon vesi vähitellen ja sekoita tasaiseksi, banaaniin tarttuvaksi taikinaksi.
+2. Kuori banaani ja leikkaa pitkittäisiksi tai vinottaisiksi, tasapaksuiksi viipaleiksi. Kääntele viipaleet taikinassa.
+3. Kuumenna luettelon paistoöljy tarttumattomalla pannulla keskilämmöllä. Paista taikinoidut banaaniviipaleet molemmin puolin kullanruskeiksi. Paista tarvittaessa erissä, mutta käytä samaa luettelon öljymäärää.
+4. Tarkista, että taikina on kypsää myös paksuimmista kohdista. Valuta lyhyesti talouspaperilla ja tarjoa lämpimänä.

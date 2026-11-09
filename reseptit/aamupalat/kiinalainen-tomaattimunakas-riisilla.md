@@ -61,7 +61,8 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 
 ## Valmistus
 
-1. Pilko täytteen kasvikset ja muut suuret ainekset pieniksi paloiksi. Kuullota ne pannulla tilkassa öljyä, kunnes ne ovat pehmenneet.
-2. Vatkaa kananmunat ja mausta ripauksella suolaa. Kaada munaseos pannulle ja laske lämpö miedoksi.
-3. Vedä hyytynyttä munaa reunoilta kohti keskustaa. Taita tai rullaa, kun pinta on juuri hyytynyt.
-4. Tarjoa pehmeä tomaatti-kananmunaseos kuuman riisin päällä ja viimeistele kevätsipulilla.
+1. Keitä reseptin kuiva riisi pakkauksen ohjeen mukaan kypsäksi. Kuivapaino on luettelon 100 g; keitinvettä ei tarjoilla annoksen osana.
+2. Pilko tomaatti ja hienonna kevätsipuli. Vatkaa kananmunat kulhossa ja mausta kevyesti luettelon suolalla.
+3. Kuumenna osa luettelon paistoöljystä pannulla. Kypsennä munat nopeasti pehmeäksi munakokkeliksi ja siirrä syrjään.
+4. Lisää loput luettelon öljystä pannulle, paista tomaatteja, kunnes ne pehmenevät ja muodostavat mehevän kastikkeen. Sekoita munat takaisin mukaan ja kuumenna seos.
+5. Annostele kuuma tomaatti-kananmunaseos kypsän riisin päälle ja viimeistele kevätsipulilla.

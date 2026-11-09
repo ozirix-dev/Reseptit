@@ -63,7 +63,8 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 
 ## Valmistus
 
-1. Raasta, muussaa tai hienonna pääraaka-aine. Sekoita joukkoon taikinan ainekset ja lisää vettä vain sen verran, että seos pysyy koossa.
-2. Kuumenna pannulla ohut kerros öljyä. Muotoile pieniksi pihveiksi tai lusikoi taikina pannulle.
-3. Paista keskilämmöllä molemmin puolin kypsäksi ja rapeapintaiseksi. Paista erissä, jotta pannu ei jäähdy.
-4. Kypsennä vehnänuudelit pakkauksen ohjeen mukaan ja valuta. Paista tofu ja pavunidut öljyssä. Lisää nuudelit, kananmuna ja soijakastike; kääntele pannulla, kunnes muna on kypsää.
+1. Kypsennä vehnänuudelit pakkauksen ohjeen mukaan ja valuta huolellisesti. Leikkaa tofu suupaloiksi ja huuhdo pavunidut tarvittaessa.
+2. Kuumenna luettelon paistoöljy isolla pannulla tai wokissa. Ruskista tofu kevyesti.
+3. Lisää pavunidut ja paista kuumalla pannulla, kunnes ne ovat kauttaaltaan kuumia ja pehmenneet hieman.
+4. Lisää valutetut nuudelit ja luettelon soijakastike. Riko kananmunat pannulle ja kääntele, kunnes munat ovat täysin hyytyneet ja nuudelit kuumia.
+5. Tarkista suolaisuus ja lisää luettelon suolaa vain tarvittaessa. Jaa kahteen annokseen. Erillistä taikinaa tai pihvejä ei tehdä.

@@ -61,7 +61,8 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 
 ## Valmistus
 
-1. Pilko täytteen kasvikset ja muut suuret ainekset pieniksi paloiksi. Kuullota ne pannulla tilkassa öljyä, kunnes ne ovat pehmenneet.
-2. Vatkaa kananmunat ja mausta ripauksella suolaa. Kaada munaseos pannulle ja laske lämpö miedoksi.
-3. Vedä hyytynyttä munaa reunoilta kohti keskustaa. Taita tai rullaa, kun pinta on juuri hyytynyt.
-4. Tarjoa pehmeä munakokkeli tuoreen tomaatti-sipulisalsan ja lämpimien tortillojen kanssa.
+1. Kuutioi tomaatti pieneksi ja hienonna korianteri. Sekoita ne kulhossa tuoreeksi pico de gallo -henkiseksi lisukkeeksi. Tässä versiossa siihen ei tule sipulia tai muuta luettelon ulkopuolista ainesta.
+2. Lämmitä maissitortillat kuivalla pannulla ja pidä ne lämpiminä.
+3. Vatkaa kananmunat kulhossa kevyesti ja mausta ripauksella luettelon suolaa.
+4. Kuumenna luettelon paistoöljy pannulla miedolla lämmöllä. Kaada munat pannulle ja siirtele hyytyvää massaa lastalla rauhallisesti, kunnes munakokkeli on pehmeää mutta kypsää.
+5. Jaa munakokkeli ja tomaatti-korianterilisuke lämpimille tortilloille. Tarjoa heti.

@@ -60,7 +60,8 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 
 ## Valmistus
 
-1. Raasta, muussaa tai hienonna pääraaka-aine. Sekoita joukkoon taikinan ainekset ja lisää vettä vain sen verran, että seos pysyy koossa.
-2. Kuumenna pannulla ohut kerros öljyä. Muotoile pieniksi pihveiksi tai lusikoi taikina pannulle.
-3. Paista keskilämmöllä molemmin puolin kypsäksi ja rapeapintaiseksi. Paista erissä, jotta pannu ei jäähdy.
-4. Soseuta kypsä peruna mausteiden kanssa, muotoile pihveiksi ja paista molemmin puolin.
+1. Kuori peruna ja keitä se kypsäksi vedessä. Valuta huolellisesti ja muussaa. Keitinvettä ei lisätä taikinaan.
+2. Hienonna persilja. Sekoita perunamuusiin kananmunat, persilja, juustokumina ja ripaus luettelon suolaa.
+3. Kuumenna reseptin paistoöljy tarttumattomalla pannulla keskilämmöllä. Nostele perunaseosta lusikalla pieniksi, litteiksi pihveiksi; massa voi olla pehmeää.
+4. Paista pihvit rauhassa toiselta puolelta kiinteiksi ennen kääntämistä. Kypsennä myös toinen puoli kullanruskeaksi ja varmista, että kananmunaa sisältävä sisus on kypsä.
+5. Tarjoa lämpiminä. Erillistä jauho- tai vesitaikinaa ei tarvita.
