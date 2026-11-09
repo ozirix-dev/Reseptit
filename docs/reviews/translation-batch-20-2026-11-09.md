@@ -68,73 +68,44 @@ papu-/tofu-/lämpimän pohjan valmistusvaiheita. Esimerkiksi
 lisäämään oliiviöljyä, vaikka sitä ei ole ainesosalistassa.
 Niitä **ei** oteta tähän erään ilman alkuperäisen lähteen erillistä korjausta.
 
-## Työtilanne 9.11.2026 – jatkotarkistus
+## Työtilanne 9.11.2026 – erä A: 20/20 luonnosta
 
-**15/20 reseptiä; 45 EN/SV/TH-käännösluonnosta (`status: draft`).**
-Nämä ovat yksinomaan PR #357:n haarassa, eivät tuotannossa. Vain
-vastaavien suomenkielisten lähteiden julkaistu tila on `published`.
+**20 suomenkielistä lähdereseptiä, 60 EN/SV/TH-käännöstä. Kaikki 60 ovat edelleen `status: draft`, eivät tuotannossa.**
+Käännöserä on oma [PR #357](https://github.com/ozirix-dev/Reseptit/pull/357), toinen käännöserä omassa [PR #356](https://github.com/ozirix-dev/Reseptit/pull/356) ja FI-lähteen laatutarkistus [PR #358](https://github.com/ozirix-dev/Reseptit/pull/358). Eri PR:t eivät kirjoita toistensa haaroihin.
 
-Valmiit luonnokset (kolme kieltä kustakin):
+### Luonnosten toteutus
 
-- `chili-con-carne-kukkakaaliriisi`
-- `harira`
-- `kana-enchilada-kukkakaalivuoka`
-- `kana-fajita-pelti`
-- `kanakeitto-pinaatti-sitruuna`
-- `kanapyorykat-tomaattikastike`
-- `kreikkalainen-kanavuoka-oliiveilla`
-- `shoyu-kanakeitto-konjac`
-- `silakkapihvit-tilli-kermakastike`
-- `uunikanapasta-kesakurpitsa`
-- `bulgogi`
-- `bun-cha-hanoi`
-- `carnitas-salaattitacot`
-- `kimchi-jjigae`
-- `jerk-kana`
+- Aiemmat 15 FI-lähdettä / 45 EN/SV/TH-käännöstä säilyvät.
+- Viisi uutta FI-lähdettä / 15 EN/SV/TH-käännöstä on tehty: `lanttulaatikko-kermainen`, `lindstrominpihvit-kaalilla`, `maksalaatikko-kukkakaalilla`, `vhh-brita-kakku`, `falafel`.
+- Suomenkielisiä reseptejä, GK-/GI-lähteitä, annosmääriä, ravintoarvoja tai julkaisutietoja ei muuteta tässä PR:ssä.
 
-**Viisi lähde-HOLDia, 15 käännöstä aloittamatta ennen FI-korjausta:**
+### Käännösten erilliset tarkistukset
 
-- `lanttulaatikko-kermainen`: Ainesosarivillä `55 g kananmunaa kuoretta` on epäselvä kuoren mukanaolo; myös lähtötekstin valmistus on täsmennettävä ennen kieliversiota.
-- `lindstrominpihvit-kaalilla`: Ainoa 2 rkl voimäärä mainitaan sekä pihvien että kaalin paistossa; selvennä rasvan jakautuminen muuttamatta laskettuja määriä.
-- `maksalaatikko-kukkakaalilla`: Sama 2 rkl voita käy sipulin kuullotukseen ja vuoan voiteluun, mutta jakoa ei ole dokumentoitu; täsmennä toteutus.
-- `vhh-brita-kakku`: Vaihe 3 sekoittaa mantelijauhon ja leivinjauheen mutta ei sano, missä vaiheessa ne yhdistetään voin, makeutusaineen ja keltuaisten seokseen.
-- `falafel`: Ohje käskee tarjoamaan salaatin ja pitaleivän kanssa; näille ei ole ainesosarivejä eikä vahvistusta niiden osuudesta ravintolaskennassa.
+- **60/60 käännösluonnosta:** lähteen ja käännöksen `servings`, `time_total_min`, `recipe_id`, `url_slug`, `category`, kaikki neljä ravintoarvokenttää puuttuvine arvoineen, ainesosarivien järjestys, numeroarvot, merkitykseltään vastaavat yksiköt, valmistusvaiheiden määrä, kuva ja mitat sekä lähdeviite täsmäävät. Tarkistus tehty GitHubin muuttumattoman `main`-lähteen ja PR-haaran tiedostosisältöjen perusteella, havaittuja rakennepoikkeamia **0**.
+- **60/60 käännösluonnosta:** FI-lähteen valmistusohjeiden numeeriset tokenit esiintyvät myös vastaavan käännöksen valmistusohjeessa (monijoukkovertailu normalisoi desimaalipilkun ja -pisteen). **0 puuttuvaa numeerista tokenia.** Tämä ei todista lauseiden eikä kypsennyksen merkityksen täydellistä vastaavuutta.
+- **183 paikallista yksikkömuutosta:** kussakin kielessä 24 rkl-, 14 tl- ja 23 kpl-ilmausta lokalisoitu merkitykseltään vastaaviksi. Yhteensä 61 × 3. Mittalukuihin ei koskettu.
+- **TH-ainesosanimitäsmennykset:** viisi esiintymää `ต้นหอมญี่ปุ่น` → `ต้นหอม` (FI `kevätsipuli`), neljä `ซีอิ๊วญี่ปุ่น` → `ซีอิ๊ว` (FI tavallinen `soijakastike`).
+- Viimeisimmän sisältöcommitin `e3bc2f13ea0e5a2779333d2092d30f08c37da557` [rajattu PR-CI #42651882083](https://github.com/ozirix-dev/Reseptit/actions/runs/42651882083) **PASS**. Tämä CI ei osoita, että `draft`-käännöksillä olisi tehty loppuun asti julkaisun tiukka käännösauditointi tai koko reseptibuild.
 
-**Lisähuomiot jo käännetyistä, ennen julkaisua tarkennettavat:**
+### FI-lähde-HOLDit (ei julkaisuun ilman korjausta ja uutta merkitysvertailua)
 
-- `kimchi-jjigae` mainitsee tarjoamisen riisin kanssa mutta riisi puuttuu
-  ainesosaluettelosta. Käännösluonnoksissa kehotus on säilytetty,
-  mutta lähdetekstin annos-/ravintoarvoraja tarvitsee selvennyksen.
-- `jerk-kana`: lähteen `time_total_min: 90`, mutta vähintään tunnin marinointi
-  ja 45–55 minuutin uunikypsennys kestävät yhteensä yli 90 minuuttia.
-  Kieliversiot säilyttävät lähteen todelliset valmistusvaiheet.
+1. `lanttulaatikko-kermainen`: FI-aineksessa `55 g kananmunaa kuoretta`, kuoren kuuluminen syötävään massaan epäselvä. Käännösluonnoksessa epäselvyys kuvattu, ei arvattu.
+2. `lindstrominpihvit-kaalilla`: 2 rkl voita käytetään pihveihin ja kaaliin, mutta jako puuttuu. Käännökset eivät lisää rasvaa.
+3. `maksalaatikko-kukkakaalilla`: voin käyttö sipulin paistoon ja uunivuoan voiteluun vaatii jako-ohjeen.
+4. `vhh-brita-kakku`: kuivien aineiden yhdistäminen voin ja keltuaisten seokseen puuttuu FI-ohjevaiheesta.
+5. `falafel`: salaatti ja pitaleipä tarjoillaan, mutta niille ei ole ainesosarivejä; pitoisuus ja ravintoarvolaskennan rajaus on selvitettävä.
+6. `kimchi-jjigae` (jo käännetty): riisin kanssa tarjoilu ilman riisin määrää tai laskentarajaa.
+7. `jerk-kana` (jo käännetty): FI `time_total_min: 90`, mutta vähintään 60 min marinointi + 45–55 min paisto ylittävät 90 min.
 
-**Mikä on todennettu ja mikä ei:**
+Näiden seitsemän lähteen sisältöongelmia ei korjata kääntämällä, vaan toisessa työssä PR #358:ssa tai siitä syntyvissä erillisissä hyväksytyissä sisältö-PR:issä. Jos FI-lähde muuttuu, sen kaikki kolme käännöstä on verrattava uudelleen. Nykyiset luonnokset ovat keskeneräisiä eivätkä väite hyväksytystä sisällöstä.
 
-- **45/45 luonnosta:** GitHubin nykyisistä FI-lähteistä ja erähaaran
-  tiedostoista tarkistettu määrien ja yksiköiden vastaavuus ainesosittain,
-  annosmäärä, kokonaisaika, ravintolukujen muuttumattomuus (myös puuttuvat),
-  kuvan polku/mitat, valmistusvaiheiden lukumäärä, lähdeviite, kieli
-  ja `status: draft`. **Näillä rakenteellisilla tarkistuksilla 0 poikkeamaa.**
-- Tämä on erillinen **rajattu tekstistä tehty rakennetarkistus**,
-  ei todistus YAML:n täyden skeeman läpäisystä, kielen luontevuudesta
-  eikä valmistusohjeiden kaiken merkityksen vastaavuudesta. Kaikkien 45
-  kieliversion täydellinen merkitysvertailu ja SHA-sidonta on yhä auki.
-- PR-CI läpäisi erän edellisen julkaisua odottavan HEADin
-  `0c13ac106e9f4d97b92cdc656bcc08eeec91040b`:
-  [run 42646074570](https://github.com/ozirix-dev/Reseptit/actions/runs/42646074570).
-  Se oli **rajattu** CI-ajo. Viimeisimmän HEADin tulos tarkistetaan erikseen.
-- `status: draft` tarkoittaa, etteivät kaikki nykyiset julkaistujen
-  kieliversioiden auditointitarkistukset vielä kohdistu näihin tiedostoihin.
-  PASS ei siis tarkoita tarkistettua tai julkaisukelpoista käännöstä.
-- V2-merkitystiivisteitä ei ole kirjattu ilman todistettua lopullista
-  lähdevertailua; `human-review-evidence.json` pysyy koskemattomana.
-- Rinnakkaisessa PR #356:ssa on eri reseptilista; tämä PR ei kirjoita siihen
-  eikä erillisen FI-laatutarkistuksen tiedostoihin.
+### Julkaisuun vielä vaadittavat portit
 
-**Seuraava julkaisuportti:** ratkaise FI-lähteiden HOLDit omassa
-laatutarkistuksessa, täydennä puuttuvat 15 käännöstä ja tee kaikille 60
-lähde- ja kielipareille merkitysvertailu sekä hash-sidokset; sen jälkeen
-suomenkieliset linkkimetat, `status: published` ja täysi kohdennettu
-validointi, tavanomainen build ja täyden HEADin CI.
-P0/P1 tai punainen testi pysäyttää julkaisun.
+- Ensin ratkaistaan seitsemän FI-HOLDia sekä kaikki mahdolliset uudet olennaiset havainnot.
+- Jokaiselle 60 FI–kieliparille tehdään **todellinen** rivi-riviltä merkitysvertailu, erityisesti thai-takaisinkäännös ja turvallisuusohjeet. Rakenne- ja numerosäilyvyystestit eivät korvaa tätä.
+- Ajantasaiset `source_hash` ja `translation_hash` kirjataan `meta/kaannokset/codex-review-evidence.json`-rekisteriin **vasta** todistettujen merkitysvertailujen jälkeen. Ei vääriä `pass`-merkintöjä.
+- FI-lähteiden `translation_languages` / `translation_status` ja kohdekielten `status: published` asetetaan erillisen hyväksytyn julkaisuvaiheen yhteydessä, ei tämän Draftin perusteella.
+- Ennen Ready/mergeä: changed-content, `test:translations`, `translation-audit --strict`, täydellinen build, ravinto-/GK-sinetit ja PR-CI samalla HEADilla.
+- `human-review-evidence.json` pysyy koskemattomana. Ihmistarkistusta ei väitetä tehdyksi. Ei auto-mergeä tai tuotantodeployta.
+
+**Tämän vaiheen tulos: 60/60 luonnosta + rajattu rakenteellinen ja numeerinen QA PASS, koko julkaisuportti vielä HOLD.**
