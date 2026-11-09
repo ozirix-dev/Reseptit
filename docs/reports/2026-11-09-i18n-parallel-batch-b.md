@@ -2,12 +2,12 @@
 
 **PR #356**: tämä keskustelu. **PR #357**: ensimmäinen keskustelu. Kumpikin omistaa vain omat reseptinsä. #357:n nimettyjä 20 reseptiä ei käsitellä tässä erässä. Aiemmat kuusi päällekkäistä bulgogi- ja kimchi-jjigae-luonnosta on poistettu #356:sta; ne kuuluvat #357:ään.
 
-## Erän 20 FI-kohdetta (60 kieliversiota, 54 luonnosta (15 FI/GK-HOLD; 33 QA odottaa))
+## Erän 20 FI-kohdetta (60 kieliversiota, 60 luonnosta (21 FI/GK-HOLD; 33 QA odottaa))
 
 | Suomenkielinen lähde | EN | SV | TH |
 |---|---|---|---|
-| `reseptit/paaruoat/kana-yakitori-kaalilla.md` | odottaa | odottaa | odottaa |
-| `reseptit/paaruoat/pho-bo.md` | odottaa | odottaa | odottaa |
+| `reseptit/paaruoat/kana-yakitori-kaalilla.md` | luonnos / FI HOLD | luonnos / FI HOLD | luonnos / FI HOLD |
+| `reseptit/paaruoat/pho-bo.md` | luonnos / FI HOLD | luonnos / FI HOLD | luonnos / FI HOLD |
 | `reseptit/paaruoat/rendang-padang.md` | luonnos / QA | luonnos / QA | luonnos / QA |
 | `reseptit/paaruoat/sate-ayam.md` | luonnos / QA | luonnos / QA | luonnos / QA |
 | `reseptit/aamupalat/meksikolainen-huevos-a-la-mexicana.md` | QA tehty / GK HOLD | QA tehty / GK HOLD | QA tehty / GK HOLD |
@@ -39,7 +39,7 @@
 
 ## Tilanne
 
-Työnjono on rajattu erilleen #357:stä. Kolme reseptiä / yhdeksän kieliversiota on tehty ja verrattu FI-lähteeseen. Kaikki kolme reseptiä / 9 kieliversiota säilyvät draftina eikä FI-lähteiden kielimetatietoja julkaista tässä haarassa: Huevos ja Callaloo rikkoivat GK80-release-2:n raakatekstin SHA-sidonnan (CI 42644592927: STALE_INPUT), ja farinatan kielimetatiedon lisäys rikkoi erillisen GK100-owner-approved-eighteen-julkaisusinetin (CI 42645835154: GK100_RELEASE_CANDIDATE_CHANGED). Hyväksyttyjä GK80- tai GK100-tarkisteita ei avata kielistatusten vuoksi; julkaisua varten tarvitaan erikseen katselmoitu, testattu tuki metatietojen turvalliselle käsittelylle. Lisäksi kahden pääruoan (rendang ja sate ayam) kuusi kieliluonnosta ovat lisättyinä; niiden tarkat määrät, annokset, ainesosarivien lukumäärä, makrot ja vaiheiden lukumäärä vastaavat FI-lähteitä. Loput 2 reseptiä / 6 kieliversiota odottavat. PR on Draft eikä tätä sisältöä ole yhdistetty tuotantoon. Aiempi #356:n CI kaatui käännösten metatiedon/vertailun tarkistuksessa; viimeistelemättömiä käännöksiä ei julkaistu.
+Työnjono on rajattu erilleen #357:stä. Kolme reseptiä / yhdeksän kieliversiota on tehty ja verrattu FI-lähteeseen. Kaikki kolme reseptiä / 9 kieliversiota säilyvät draftina eikä FI-lähteiden kielimetatietoja julkaista tässä haarassa: Huevos ja Callaloo rikkoivat GK80-release-2:n raakatekstin SHA-sidonnan (CI 42644592927: STALE_INPUT), ja farinatan kielimetatiedon lisäys rikkoi erillisen GK100-owner-approved-eighteen-julkaisusinetin (CI 42645835154: GK100_RELEASE_CANDIDATE_CHANGED). Hyväksyttyjä GK80- tai GK100-tarkisteita ei avata kielistatusten vuoksi; julkaisua varten tarvitaan erikseen katselmoitu, testattu tuki metatietojen turvalliselle käsittelylle. Lisäksi kahden pääruoan (rendang ja sate ayam) kuusi kieliluonnosta ovat lisättyinä; niiden tarkat määrät, annokset, ainesosarivien lukumäärä, makrot ja vaiheiden lukumäärä vastaavat FI-lähteitä. Kaikki 20 reseptiä / 60 kieliversiota luonnosteltu; ei vielä hyväksytty julkaisuun. PR on Draft eikä tätä sisältöä ole yhdistetty tuotantoon. Aiempi #356:n CI kaatui käännösten metatiedon/vertailun tarkistuksessa; viimeistelemättömiä käännöksiä ei julkaistu.
 
 ## Toinen osanäyttö (9.11.2026)
 
@@ -83,3 +83,9 @@ Työnjono on rajattu erilleen #357:stä. Kolme reseptiä / yhdeksän kieliversio
 - `munakasmuffinit`: EN/SV/TH 7 ainesosaa, 5 vaihetta, 3 annosta, 190 °C / 16–20 min. Alkuperäisen ohjeen muffinivuokien voitelulle ei ole nimettyä rasvaa tai määrää. Ei uusia määriä eikä makroarvioita: **FI-lähdekorjausta vaativa HOLD**, ei julkaista.
 - `tonnikalamunakkaat-uunissa`: EN/SV/TH 7 ainesosaa, 5 vaihetta, 3 annosta, 190 °C / 15–18 min. Samoin puuttuva muffinivuokien voitelurasva, **FI HOLD**. Tonnikala vedessä valutettuna, emmental 50 g, kerma 30 g sekä dill 2,5 g säilyvät.
 - Kahden reseptin 6 kieliversiota ovat `draft`; lähdekorjaus on tehtävä erillisessä laadunhallinnassa, ei muokkaamalla GI/GK-sinetin tarkisteita eikä lisäämällä salaa ainesosia.
+
+## Kahdeksas luonnoserä — käännösrungot 60/60
+
+- `kana-yakitori-kaalilla`: EN/SV/TH, 9 ainesosaa, 5 työvaihetta, 4 annosta, 35 min. FI:n ainesosissa **soijakastike**, mutta leipätekstissä **tamari**. Käännöksissä käytetään ainesosaluettelon soijakastiketta ja nostetaan ero esiin; julkaisu **FI HOLD**, myös mirinin korvaamisen vaikutus ravintolaskentaan muistettava.
+- `pho-bo`: EN/SV/TH, 15 ainesosaa, 6 valmistusvaihetta, 6 annosta, 240 min. 230 °C paahdus, luiden viiden minuutin esikiehautus, 4 l uutta vettä, 2 h + 60 min haudutus ja naudan ohuet viipaleet. FI:n raaka naudanliha kuumalla liemellä -kypsennys on turvallisuuden kannalta epävarma. Kieliluonnokset sisältävät turvallisemman erikseen liemessä kypsentämisen vaihtoehdon; **FI-turvallisuus-HOLD ennen julkaisua**.
+- **60/60 ovat draft**, ei vahvistettua koko erän semanttista QA:ta, thai-takaisinkäännöksiä tai hyväksyttyjä SHA-parisidoksia. Lähdekorjaukset kuuluvat laatu-PR:ään, eivät tähän käännöshaaraan. FI-GK-sinettiä ei kierretä.
