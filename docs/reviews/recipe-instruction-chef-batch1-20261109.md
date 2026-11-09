@@ -1,7 +1,7 @@
 # Reseptien ohje–ainesosatarkistus: kokkikorjaukset, erä 1
 
-**Päiväys:** 2026-11-09  
-**Lähtötaso:** PR #358, automaattinen tarkistus 335 julkaistusta FI-lähdereseptistä.  
+**Päiväys:** 2026-11-09
+**Lähtötaso:** PR #358, automaattinen tarkistus 335 julkaistusta FI-lähdereseptistä.
 **Lähderaportti:** https://github.com/ozirix-dev/Reseptit/pull/358
 
 ## Lukitut korjausperiaatteet
