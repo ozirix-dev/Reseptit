@@ -149,6 +149,13 @@ test("generated-content tests prepare only their generated input", () => {
   assert.deepEqual(plan.unitTests, ["tests/published-content.test.ts"]);
 });
 
+test("GK80 translation history and presentation tests regenerate content before focused CI", () => {
+  const plan=classifyPaths(["site/tests/gk80-release6.test.ts","site/tests/gk80-editorial-translation-release.test.ts"]);
+  assert.equal(plan.runContentSync,true);
+  assert.equal(plan.runBuild,false);
+  assert.deepEqual(plan.unitTests,["tests/gk80-editorial-translation-release.test.ts","tests/gk80-release6.test.ts"]);
+});
+
 test("static and browser tests build the output before their focused runners", () => {
   const staticPlan = classifyPaths(["site/tests/static-output.test.ts"]);
   assert.equal(staticPlan.runBuild, true);

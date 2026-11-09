@@ -7,6 +7,8 @@ import {fingerprint} from '../scripts/gk80-candidate-model';
 import {calculateCandidate} from '../scripts/gk80-candidate-policy';
 
 import {parseMarkdown} from '../src/content/markdown';
+import {recipeFrontmatterSchema} from '../src/content/schema';
+import {semanticHash} from '../scripts/translation-semantic-review';
 import {verifyNutritionEvidence} from '../scripts/nutrition-evidence';
 import {normalizeCarbohydrate} from '../scripts/nutrition-model';
 const root=new URL('../../',import.meta.url),folder=new URL('docs/nutrition/gk80-release-6/',root),json=(n:string)=>JSON.parse(readFileSync(new URL(n,folder),'utf8'));
@@ -30,6 +32,29 @@ test('held paneer and bay records remain explicitly unverified, never invented z
  for(const entry of held){const target=entry.lockedResearchBundle.comps.find((c:any)=>['N01301-r6','U170917-r6'].includes(c.id));assert.equal(target.sourceRecord.polyolsSourceVerified,false);assert.equal(target.sourceRecord.polyolsValue,null);const isUs=target.id.startsWith('U');assert.equal(normalizeCarbohydrate({...target.sourceRecord,carbohydrateDefinition:isUs?'US_TOTAL_INCLUDING_FIBRE':'EU_AVAILABLE',per100g:{carbohydrate:isUs?target.sourceRecord.totalCarbohydratePer100g:target.per100g.availableCarbohydrate,fibre:target.per100g.fibre,polyols:null}}).net,null);}
  const registry=JSON.parse(readFileSync(new URL('docs/nutrition/gk80-release-registry.json',root),'utf8'));for(const id of ['palak-paneer','nakkikeitto-kukkakaalilla'])assert.equal(registry.requiredPacks.some((p:any)=>p.recipeIds.includes(id)),false);
 });
-test('all and only the existing nine translated pages match weighed ingredient masses and preparation counts',()=>{
- for(const r of recipes){const entries=siteContent.recipes.filter(x=>x.recipeId===r.recipeId);const manifest=json('manifest.json');assert.deepEqual(entries.map(x=>x.locale).sort(),manifest.existingLocales[r.recipeId].sort());for(const e of entries){assert.equal(e.instructionsText.length,r.proposedPreparation.length);}}
+test('release-6 historical locales and newly published SHA-attested translations stay distinct',()=>{
+ const fromRoot=(p:string)=>JSON.parse(readFileSync(new URL('../../'+p,import.meta.url),'utf8'));
+ const index=fromRoot('meta/kaannokset/published-translation-pairs.json');
+ const proofs=fromRoot('meta/kaannokset/codex-review-evidence.json');
+ const manifest=json('manifest.json');
+ for(const r of recipes){
+  const raw=readFileSync(new URL(r.sourcePath,root),'utf8');
+  const fi=parseMarkdown(raw)!;
+  const entries=siteContent.recipes.filter(x=>x.recipeId===r.recipeId);
+  const historical=manifest.existingLocales[r.recipeId] as string[];
+  const added=(index.sources.find((row:any)=>row.recipe_id===r.recipeId)?.locales??[]) as string[];
+  assert.deepEqual(entries.map(x=>x.locale).sort(),[...new Set([...historical,...added])].sort(),r.recipeId+': prevent unreviewed locale additions');
+  for(const lang of added.filter(l=>!historical.includes(l))){
+   const file='kaannokset/'+lang+'/'+r.sourcePath.replace('reseptit/','');
+   const target=parseMarkdown(readFileSync(new URL(file,root),'utf8'))!;
+   const proof=proofs[r.recipeId+':'+lang];
+   assert.ok(proof,r.recipeId+':'+lang+': missing semantic evidence');
+   assert.equal(proof.outcome,'pass');
+   assert.deepEqual(proof.findings.filter((finding:any)=>finding.status==='open'&&['P0','P1'].includes(finding.severity)),[]);
+   assert.equal(proof.source_hash,semanticHash({data:recipeFrontmatterSchema.parse(fi.data),content:fi.content}));
+   assert.equal(proof.translation_hash,semanticHash({data:recipeFrontmatterSchema.parse(target.data),content:target.content}));
+   assert.equal(target.data.status,'published');
+  }
+  for(const entry of entries)assert.equal(entry.instructionsText.length,r.proposedPreparation.length,r.recipeId+'/'+entry.locale);
+ }
 });

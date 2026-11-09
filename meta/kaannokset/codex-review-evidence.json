@@ -470,6 +470,48 @@
       }
     ]
   },
+  "indonesialainen-bubur-ayam-kanariisipuuro:en": {
+    "source_hash": "9d1276eadb63266835da8a51fb7e9611e3ce11cd667309d4e48d39d4da2b6994",
+    "translation_hash": "de3012f776554cb9d197a41906164c41ad65dec752d0a3e40ff2631ccf914687",
+    "reviewed_at": "2026-11-10",
+    "reference": "docs/reviews/2026-11-10-i18n-b15-15-fi-display-meaning.md; FI sealed raw main 9785a2eef8e0; public FI overlay PR #373; AI reviewed, not human",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "open",
+        "summary": "Raw FI source remains sealed by GK80, while public FI display is corrected by #373."
+      }
+    ]
+  },
+  "indonesialainen-bubur-ayam-kanariisipuuro:sv": {
+    "source_hash": "9d1276eadb63266835da8a51fb7e9611e3ce11cd667309d4e48d39d4da2b6994",
+    "translation_hash": "bd8a37164776313be7c8429b70163ae7baa48ce79d06e03a382e5a51fdc3222d",
+    "reviewed_at": "2026-11-10",
+    "reference": "docs/reviews/2026-11-10-i18n-b15-15-fi-display-meaning.md; FI sealed raw main 9785a2eef8e0; public FI overlay PR #373; AI reviewed, not human",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "open",
+        "summary": "Raw FI source remains sealed by GK80, while public FI display is corrected by #373."
+      }
+    ]
+  },
+  "indonesialainen-bubur-ayam-kanariisipuuro:th": {
+    "source_hash": "9d1276eadb63266835da8a51fb7e9611e3ce11cd667309d4e48d39d4da2b6994",
+    "translation_hash": "cccc78eb174e5e377f4d14f6a7a32371ef376d76c40725f32da582232d1390be",
+    "reviewed_at": "2026-11-10",
+    "reference": "docs/reviews/2026-11-10-i18n-b15-15-fi-display-meaning.md; FI sealed raw main 9785a2eef8e0; public FI overlay PR #373; AI reviewed, not human",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "open",
+        "summary": "Raw FI source remains sealed by GK80, while public FI display is corrected by #373."
+      }
+    ]
+  },
   "japanilainen-curry-tofulla:en": {
     "source_hash": "50fc764da52cd185c93f9cc1ffde228230ecd833635f5d76e04b57d8e969fe60",
     "translation_hash": "be6bccb1efa3f3fbb35b32f898d1a0254bd7855a2946bd8fd64ce1e74ea16b9a",
@@ -1687,6 +1729,48 @@
     "outcome": "pass",
     "findings": []
   },
+  "munakasmuffinit:en": {
+    "source_hash": "64d97905db548327068aae528c2dc6d247d8b82d0df791fcc7d0f9ce5c34e276",
+    "translation_hash": "5396c86570820de5fafc1d28d9c3ea63ea0c591bf15f65025cbf8fde65c872f8",
+    "reviewed_at": "2026-11-10",
+    "reference": "docs/reviews/2026-11-10-i18n-b15-15-fi-display-meaning.md; FI sealed raw main 9785a2eef8e0; public FI overlay PR #373; AI reviewed, not human",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "open",
+        "summary": "Raw FI source remains sealed by GK80, while public FI display is corrected by #373."
+      }
+    ]
+  },
+  "munakasmuffinit:sv": {
+    "source_hash": "64d97905db548327068aae528c2dc6d247d8b82d0df791fcc7d0f9ce5c34e276",
+    "translation_hash": "b89b005715a78cfb1f92334233f49924ac52c039aede522977ff8fee2ba74f4d",
+    "reviewed_at": "2026-11-10",
+    "reference": "docs/reviews/2026-11-10-i18n-b15-15-fi-display-meaning.md; FI sealed raw main 9785a2eef8e0; public FI overlay PR #373; AI reviewed, not human",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "open",
+        "summary": "Raw FI source remains sealed by GK80, while public FI display is corrected by #373."
+      }
+    ]
+  },
+  "munakasmuffinit:th": {
+    "source_hash": "64d97905db548327068aae528c2dc6d247d8b82d0df791fcc7d0f9ce5c34e276",
+    "translation_hash": "a9000fc92b7d3278303981d37feecadf5f2bb0b02e2bdbf95471d82f98aec9f4",
+    "reviewed_at": "2026-11-10",
+    "reference": "docs/reviews/2026-11-10-i18n-b15-15-fi-display-meaning.md; FI sealed raw main 9785a2eef8e0; public FI overlay PR #373; AI reviewed, not human",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "open",
+        "summary": "Raw FI source remains sealed by GK80, while public FI display is corrected by #373."
+      }
+    ]
+  },
   "munakasrulla-pinaatti-tuorejuustolla:en": {
     "source_hash": "83c73bd90b041a5502b3d7147f12ab09f28796571331bc5c65f7e40ffd6134e0",
     "translation_hash": "4bbe481f185ee283e5f3c282c3540eb76ee219932b2fecfae8841e04fe72a42d",
@@ -1884,6 +1968,48 @@
     "reference": "docs/reviews/i18n-b14-12-meaning-review-2026-11-09.md | FI main ec8d5e766bc4 | ChatGPT FI–EN/SV/TH review, no human review",
     "outcome": "pass",
     "findings": []
+  },
+  "pohjoisafrikkalainen-harissa-shakshuka:en": {
+    "source_hash": "71be487556d95054f0ac93d3c0685b7044bac1beaa6d3141d07c7f4615bc3afb",
+    "translation_hash": "cba39df7babd32677edea632a7056330f9090d08b15bfbe69ef3802d384ff9e6",
+    "reviewed_at": "2026-11-10",
+    "reference": "docs/reviews/2026-11-10-i18n-b15-15-fi-display-meaning.md; FI sealed raw main 9785a2eef8e0; public FI overlay PR #373; AI reviewed, not human",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "open",
+        "summary": "Historical GK80 FI raw ingredient label remains sealed; public #373 presentation specifies shell-free edible egg."
+      }
+    ]
+  },
+  "pohjoisafrikkalainen-harissa-shakshuka:sv": {
+    "source_hash": "71be487556d95054f0ac93d3c0685b7044bac1beaa6d3141d07c7f4615bc3afb",
+    "translation_hash": "0f035eccd9df262b4adb849389bf9788c3020db7b9278f6a2e343bb43f8df72a",
+    "reviewed_at": "2026-11-10",
+    "reference": "docs/reviews/2026-11-10-i18n-b15-15-fi-display-meaning.md; FI sealed raw main 9785a2eef8e0; public FI overlay PR #373; AI reviewed, not human",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "open",
+        "summary": "Historical GK80 FI raw ingredient label remains sealed; public #373 presentation specifies shell-free edible egg."
+      }
+    ]
+  },
+  "pohjoisafrikkalainen-harissa-shakshuka:th": {
+    "source_hash": "71be487556d95054f0ac93d3c0685b7044bac1beaa6d3141d07c7f4615bc3afb",
+    "translation_hash": "7c4e5c87993989c01651b7128fcf653f6ec68810edf0af82e8babdf1b2ba85db",
+    "reviewed_at": "2026-11-10",
+    "reference": "docs/reviews/2026-11-10-i18n-b15-15-fi-display-meaning.md; FI sealed raw main 9785a2eef8e0; public FI overlay PR #373; AI reviewed, not human",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "open",
+        "summary": "Historical GK80 FI raw ingredient label remains sealed; public #373 presentation specifies shell-free edible egg."
+      }
+    ]
   },
   "pohjoisafrikkalainen-kuskus-aamiaiskulho:en": {
     "source_hash": "dd8b6810e3adfb5573f475fb47a18209b54b73463afbcbb75eab6170a135c489",
@@ -2347,6 +2473,48 @@
       }
     ]
   },
+  "tonnikalamunakkaat-uunissa:en": {
+    "source_hash": "d7f840e34dbd7b8e2ff1964e3ef7f74bff7e2ab523bd3e152909f15dd6607385",
+    "translation_hash": "68a9eb7f53d16284026b8b19def58764350f3a874484910a5d57a77946faf93e",
+    "reviewed_at": "2026-11-10",
+    "reference": "docs/reviews/2026-11-10-i18n-b15-15-fi-display-meaning.md; FI sealed raw main 9785a2eef8e0; public FI overlay PR #373; AI reviewed, not human",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "open",
+        "summary": "Raw FI source remains sealed by GK80, while public FI display is corrected by #373."
+      }
+    ]
+  },
+  "tonnikalamunakkaat-uunissa:sv": {
+    "source_hash": "d7f840e34dbd7b8e2ff1964e3ef7f74bff7e2ab523bd3e152909f15dd6607385",
+    "translation_hash": "8a330011524d015cad213d8a1494d42e2504f06e2fdebf345f9fa748dc142c1d",
+    "reviewed_at": "2026-11-10",
+    "reference": "docs/reviews/2026-11-10-i18n-b15-15-fi-display-meaning.md; FI sealed raw main 9785a2eef8e0; public FI overlay PR #373; AI reviewed, not human",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "open",
+        "summary": "Raw FI source remains sealed by GK80, while public FI display is corrected by #373."
+      }
+    ]
+  },
+  "tonnikalamunakkaat-uunissa:th": {
+    "source_hash": "d7f840e34dbd7b8e2ff1964e3ef7f74bff7e2ab523bd3e152909f15dd6607385",
+    "translation_hash": "efd00a9e200ddc66a3655f6bd062e001fc86118ed7343b3a872c1931f893feb5",
+    "reviewed_at": "2026-11-10",
+    "reference": "docs/reviews/2026-11-10-i18n-b15-15-fi-display-meaning.md; FI sealed raw main 9785a2eef8e0; public FI overlay PR #373; AI reviewed, not human",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "open",
+        "summary": "Raw FI source remains sealed by GK80, while public FI display is corrected by #373."
+      }
+    ]
+  },
   "uunifetapasta-kirsikkatomaateilla:en": {
     "source_hash": "c65bb10175dc457e2cb2b48c54bc9f21c7096b972b9e6b862c23e09e51d75b3b",
     "translation_hash": "7a2cdaac3f7da4b2c00db5b64a19d778315bc175608fea5f7e8eece899d15474",
@@ -2634,6 +2802,48 @@
     "reference": "V2 / toinen 30 käännöksen erä / lähde 3de79f25",
     "outcome": "pass",
     "findings": []
+  },
+  "vietnamilainen-chao-ga-kanapuuro:en": {
+    "source_hash": "e1d5b8e26d2b0078335960e048c0fe42c906790fd18da73be8017b4fd477b5f9",
+    "translation_hash": "efaf2156f003b41dacddbf8a3888298344fd097f32a2b3014d0a8fb57661f07c",
+    "reviewed_at": "2026-11-10",
+    "reference": "docs/reviews/2026-11-10-i18n-b15-15-fi-display-meaning.md; FI sealed raw main 9785a2eef8e0; public FI overlay PR #373; AI reviewed, not human",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "open",
+        "summary": "FI raw steps retained in approved GK80 pack; public #373 projection specifies parallel chicken cooking and 75 C."
+      }
+    ]
+  },
+  "vietnamilainen-chao-ga-kanapuuro:sv": {
+    "source_hash": "e1d5b8e26d2b0078335960e048c0fe42c906790fd18da73be8017b4fd477b5f9",
+    "translation_hash": "6c5d0cc0dab3cddc27c3ead5143d4f9879da196963fca60f1bcbda02ca1a2ea0",
+    "reviewed_at": "2026-11-10",
+    "reference": "docs/reviews/2026-11-10-i18n-b15-15-fi-display-meaning.md; FI sealed raw main 9785a2eef8e0; public FI overlay PR #373; AI reviewed, not human",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "open",
+        "summary": "FI raw steps retained in approved GK80 pack; public #373 projection specifies parallel chicken cooking and 75 C."
+      }
+    ]
+  },
+  "vietnamilainen-chao-ga-kanapuuro:th": {
+    "source_hash": "e1d5b8e26d2b0078335960e048c0fe42c906790fd18da73be8017b4fd477b5f9",
+    "translation_hash": "b78819314ec061f3209b9895eb65003e1db483620eadb9facc12457ef3cf27f3",
+    "reviewed_at": "2026-11-10",
+    "reference": "docs/reviews/2026-11-10-i18n-b15-15-fi-display-meaning.md; FI sealed raw main 9785a2eef8e0; public FI overlay PR #373; AI reviewed, not human",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "open",
+        "summary": "FI raw steps retained in approved GK80 pack; public #373 projection specifies parallel chicken cooking and 75 C."
+      }
+    ]
   },
   "yangzhou-paistettu-riisi:en": {
     "source_hash": "2a06a52d3b6801aa7f533da6eabd063446c99e419e3943af225d13239115f2c9",
