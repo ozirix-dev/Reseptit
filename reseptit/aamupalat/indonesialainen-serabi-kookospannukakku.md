@@ -61,7 +61,7 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 
 ## Valmistus
 
-1. Sekoita jauhot tai viljat ja muut kuivat ainekset kulhossa. Lisää neste vähitellen ja vatkaa tasaiseksi taikinaksi.
-2. Anna taikinan levätä 10 minuuttia. Jos käytät kokonaisia palkokasveja tai viljoja taikinapohjana, niiden tulee olla liotettuja ja hienonnettuja.
-3. Kuumenna öljytty pannu keskilämmölle. Paista taikina ohuina annoksina; käännä, kun reunat kuivuvat ja pinta alkaa asettua.
-4. Sekoita riisijauho, kookosmaito ja kookoshiutaleet tasaiseksi taikinaksi. Anna levätä 10 minuuttia. Paista pieniksi paksuiksi pannukakuiksi öljytyssä pannussa miedolla lämmöllä. Ripottele fariinisokeri päälle ja kuumenna, kunnes se sulaa.
+1. Sekoita 100 g riisijauhoa, 20 g kookoshiutaleita ja ripaus luettelon suolaa kulhossa. Lisää 150 ml kookosmaitoa vähitellen ja sekoita tasaiseksi, melko paksuksi taikinaksi.
+2. Anna taikinan levätä noin 10 minuuttia, jotta riisijauho ehtii kostua. Taikinaan ei lisätä muita jauhoja tai nestettä.
+3. Kuumenna pannulla luettelon 1 rkl öljyä. Lusikoi taikina pieniksi, melko paksuiksi pannukakuiksi ja kypsennä miedolla tai keskilämmöllä, kunnes pohja saa väriä ja pinta alkaa hyytyä. Käännä varovasti ja kypsennä myös toinen puoli.
+4. Jaa kaikki 30 g fariinisokeria kypsien pannukakkujen pinnalle ja anna sen hieman sulaa pannun jälkilämmössä. Tarjoa pannukakut kahdelle ilman muita lisukkeita.
