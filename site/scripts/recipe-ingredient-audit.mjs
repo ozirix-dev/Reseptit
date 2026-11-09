@@ -100,7 +100,7 @@ function explicitlyExcluded(line, match) {
   const before = line.slice(Math.max(0, match.index - 70), match.index);
   const after = line.slice(match.index + match[0].length, match.index + match[0].length + 75);
   return /(?:ilman|älä lisää|ei lisätä|ei käytetä|ei tarvita|ei kuulu)[^.!?;]{0,35}$/iu.test(before) ||
-    /^\\s*(?:ei tarvita|ei lisätä|ei käytetä|ei kuulu|ei tule|jätetään pois|ei sisälly)\\b/iu.test(after);
+    /^\s*(?:ei tarvita|ei lisätä|ei käytetä|ei kuulu|ei tule|jätetään pois|ei sisälly)\b/iu.test(after);
 }
 
 export function inspectRecipe(source, filename = "fixture.md") {
