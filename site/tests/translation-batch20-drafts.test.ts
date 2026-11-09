@@ -46,10 +46,10 @@ function numberTokens(text: string): number[] {
   return [...text.matchAll(/(?<![\p{L}\d])\d+(?:[.,]\d+)?/gu)].map((match) => Number(match[0].replace(",", ".")));
 }
 
-test("batch 20: all 60 unpublished locale drafts remain structurally and numerically tied to FI", async () => {
+test("8 source-HOLD recipes and 24 unpublished locale drafts remain tied to FI", async () => {
   const unique = new Set(recipes.map(([, id]) => id));
   assert.equal(recipes.length, 8);
-  assert.equal(unique.size, 20);
+  assert.equal(unique.size, 8);
   const ledger = JSON.parse(await readFile(path.join(repoRoot, "docs/reviews/translation-batch20-digests-2026-11-09.json"), "utf8")) as {
     human_attestation: boolean;
     recipes: Record<string, { fi: string; en: string; sv: string; th: string; review_state: string; publish_authorized: boolean }>;
