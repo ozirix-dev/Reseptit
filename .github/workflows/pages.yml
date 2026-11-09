@@ -92,6 +92,24 @@ jobs:
         run: npm ci
         working-directory: site
 
+      - name: Audit FI recipe ingredients against instructions (advisory)
+        if: steps.select.outputs.needs_node == 'true' && (steps.select.outputs.run_content == 'true' || contains(steps.select.outputs.changed_paths, 'recipe-ingredient-audit'))
+        run: |
+          node --test site/scripts/recipe-ingredient-audit.test.mjs
+          node site/scripts/recipe-ingredient-audit.mjs --out=site/ingredient-audit
+          cat site/ingredient-audit.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload recipe ingredient audit evidence
+        if: steps.select.outputs.needs_node == 'true' && (steps.select.outputs.run_content == 'true' || contains(steps.select.outputs.changed_paths, 'recipe-ingredient-audit'))
+        uses: actions/upload-artifact@v4
+        with:
+          name: recipe-ingredient-audit
+          path: |
+            site/ingredient-audit.md
+            site/ingredient-audit.json
+          if-no-files-found: error
+          retention-days: 14
+
       - name: Generate content required by selected tests
         if: steps.select.outputs.run_content_sync == 'true' && steps.select.outputs.run_build != 'true'
         run: npm run content:sync
