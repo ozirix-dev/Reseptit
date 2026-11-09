@@ -6,6 +6,7 @@ import { recipeFrontmatterSchema } from "../src/content/schema";
 import type { z } from "zod";
 import { semanticTermErrors, semanticProseErrors, semanticNoteErrors, semanticTagErrors } from "./semantic-terms";
 import { loadTranslationPublicationIndex, overlayTranslationPublicationIndex } from "./translation-publication-index";
+import { projectReviewedFiEditorialSource } from "./gk80-editorial-display";
 
 const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 export const sourceCategories = ["alkuruoat", "paaruoat", "jalkiruoat", "leivonnaiset", "aamupalat", "valipalat"] as const;
@@ -51,13 +52,34 @@ async function markdownFiles(directory: string): Promise<string[]> {
 async function readRecipes(paths: string[], recipeIds?: Set<string>): Promise<{ path: string; data: Frontmatter; content: string }[]> {
   const result: { path: string; data: Frontmatter; content: string }[] = [];
   for (const filePath of paths) {
-    const parsed = parseMarkdown(await readFile(filePath, "utf8"));
+    const raw = await readFile(filePath, "utf8");
+    const parsed = parseMarkdown(raw);
     if (!parsed) continue; // Empty legacy placeholders are not published recipe versions.
     if (recipeIds && (typeof parsed.data.recipe_id !== "string" || !recipeIds.has(parsed.data.recipe_id))) continue;
     if (parsed.data.status === "draft") continue;
     const checked = recipeFrontmatterSchema.safeParse(parsed.data);
     if (!checked.success) throw new Error(`Invalid recipe metadata in ${filePath}: ${checked.error.message}`);
-    if (checked.data.status === "published") result.push({ path: path.relative(repoRoot, filePath).replaceAll("\\", "/"), data: checked.data, content: parsed.content });
+    if (checked.data.status === "published") {
+      const relativePath = path.relative(repoRoot, filePath).replaceAll("\\", "/");
+      let sourceData = checked.data;
+      if (relativePath.startsWith("reseptit/") && checked.data.language === "fi") {
+        // Only a known SHA-locked public FI method correction may change the
+        // method expected by translation audits. Other metadata and instructions
+        // remain the canonical raw source for sealed GK80 calculations.
+        const publicText = projectReviewedFiEditorialSource(relativePath, raw);
+        const publicParsed = parseMarkdown(publicText);
+        if (!publicParsed) throw Error("EDITORIAL_METHOD_PUBLIC_PARSE: " + relativePath);
+        const projected = recipeFrontmatterSchema.parse(publicParsed.data);
+        if (JSON.stringify(projected.cooking_method ?? []) !== JSON.stringify(checked.data.cooking_method ?? [])) {
+          const comparable = { ...projected, cooking_method: checked.data.cooking_method };
+          if (JSON.stringify(comparable) !== JSON.stringify(checked.data) || publicParsed.content !== parsed.content) {
+            throw Error("EDITORIAL_METHOD_UNREVIEWED_CHANGE: " + relativePath);
+          }
+          sourceData = { ...checked.data, cooking_method: projected.cooking_method };
+        }
+      }
+      result.push({ path: relativePath, data: sourceData, content: parsed.content });
+    }
   }
   return result;
 }
