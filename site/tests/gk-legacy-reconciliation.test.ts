@@ -69,7 +69,7 @@ test('Live original results preserve frozen history plus the exact reviewed tran
     return {...row,notes:normalNotes,source_content_hash:originalSha};
    }
    if(reviewedChefSafetyPaths.includes(row.source_path) || row.source_path==='reseptit/paaruoat/rendang-padang.md') {
-    const published=read(row.source_path).replaceAll('\\r\\n','\\n');
+    const published=read(row.source_path).replaceAll('\r\n','\n');
     const original=originalForReviewedChefSafety(root,row.source_path,
       historicalRendangForApprovedVersion(row.source_path,published));
     const liveSha=createHash('sha256').update(published).digest('hex');
@@ -116,7 +116,7 @@ test('reviewed #365 chef safety corrections restore only two exact source snapsh
   const live=read(file);
   const old=originalForReviewedChefSafety(root,file,live);
   assert.notEqual(old,live);
-  assert.throws(()=>originalForReviewedChefSafety(root,file,live+'\\nExtra unreviewed change'),/unreviewed source modification/);
+  assert.throws(()=>originalForReviewedChefSafety(root,file,live+'\nExtra unreviewed change'),/unreviewed source modification/);
  }
  const file='reseptit/paaruoat/rendang-padang.md';
  const current=read(file);
