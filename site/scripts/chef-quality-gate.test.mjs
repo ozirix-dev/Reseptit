@@ -119,9 +119,12 @@ test("text-only changes are not equivalent to a fully reviewed culinary method",
   assert.equal(delta.requiresCulinaryReview, true);
   assert.equal(delta.requiresGlycemicReview, true, "method meaning remains unverified");
   assert.equal(delta.approval, "NOT_AUTO_APPROVED");
-  const reviewed = compareRecipeVersions(before, after, { methodMeaningReviewed: true });
-  assert.equal(reviewed.requiresGlycemicReview, false);
-  assert.equal(reviewed.requiresTranslationReview, true);
+  // The review cannot be bypassed with a bare boolean. CI must not treat
+  // "text-only" as scientific evidence of equivalent preparation or GI/GL.
+  const claimedReviewed = compareRecipeVersions(before, after, { methodMeaningReviewed: true });
+  assert.equal(claimedReviewed.requiresGlycemicReview, true);
+  assert.equal(claimedReviewed.requiresMethodMeaningReview, true);
+  assert.equal(claimedReviewed.requiresTranslationReview, true);
 });
 
 test("added oil or changed servings can never pass as a text-only edit", () => {
