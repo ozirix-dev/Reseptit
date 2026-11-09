@@ -61,7 +61,7 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 
 ## Valmistus
 
-1. Sekoita jauhot, neste ja suola. Vaivaa pehmeäksi taikinaksi ja anna levätä 10 minuuttia. Jos reseptissä on valmis leipä tai taikina, siirry täyttöön.
-2. Jaa taikina osiin ja painele tai kauli ohuiksi leiviksi. Lisää taikinaan kuuluva täyte tai mausteöljy.
-3. Paista kuumalla pannulla molemmin puolin kypsäksi ja nosta liinan alle pysymään pehmeänä.
-4. Vaivaa pehmeä taikina, muotoile pieniksi sämpylöiksi ja paista kullanruskeiksi.
+1. Sekoita vehnäjauho, leivinjauhe ja ripaus luettelon suolaa kulhossa. Nypi joukkoon luettelon voi.
+2. Lisää luettelon maito vähitellen ja sekoita pehmeäksi, käsin muotoiltavaksi taikinaksi. Älä vaivaa pitkään; jos taikina tuntuu tahmealta, anna sen levätä hetki ennen muotoilua.
+3. Jaa taikina tasakokoisiin paloihin ja muotoile litteiksi, noin sormenpaksuisiksi kiekoiksi. Mitään täytettä ei tähän versioon lisätä.
+4. Kuumenna luettelon paistoöljy pannulla keskilämmöllä. Paista kiekot molemmin puolin kullanruskeiksi ja varmista, että sisus on kypsää. Tarjoa lämpiminä.
