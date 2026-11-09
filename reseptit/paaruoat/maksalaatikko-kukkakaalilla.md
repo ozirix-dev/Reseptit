@@ -68,9 +68,9 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 ## Valmistus
 
 1. Kuumenna uuni 180 asteeseen. Höyrytä kukkakaali pehmeäksi ja soseuta karkeaksi.
-2. Hienonna sipuli ja kuullota voissa. Ruskista pieniksi paloiksi leikattu maksa pannulla kypsäksi.
+2. Hienonna sipuli ja kuullota sitä 1,5 rkl:ssa voita. Lisää pieniksi paloiksi leikattu maksa samaan pannuun ja kypsennä kauttaaltaan. Säästä jäljelle jäävä 0,5 rkl voita vuoan voiteluun; älä lisää muuta paistorasvaa.
 3. Sekoita kukkakaali, maksa, sipuli, kerma ja kananmuna. Mausta meiramilla, suolalla ja maustepippurilla.
-4. Kaada voideltuun uunivuokaan ja paista 35–40 minuuttia, kunnes keskusta on asettunut.
+4. Voitele uunivuoka talteen otetulla 0,5 rkl:lla voita, kaada seos vuokaan ja paista 35–40 minuuttia, kunnes keskusta on asettunut. Varmista, että maksa ja muna ovat kauttaaltaan kypsiä.
 5. Anna vetäytyä 10 minuuttia ja tarjoa puolukoiden kanssa.
 
 ## Muistiinpanot

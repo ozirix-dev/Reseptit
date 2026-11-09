@@ -27,7 +27,7 @@ ingredients:
 
 # Korealainen kimchi-jjigae
 
-Kimchi-jjigae on lämmin, hapanmausteinen korealainen hauduke, jossa kypsä kimchi, porsaanliha ja tofu kypsyvät samassa liemessä. Tarjoa riisin kanssa.
+Kimchi-jjigae on lämmin, hapanmausteinen korealainen hauduke, jossa kypsä kimchi, porsaanliha ja tofu kypsyvät samassa liemessä. Tarjoa sellaisenaan. Riisi on haluttaessa erillinen lisuke, joka ei sisälly tämän reseptiversion ravintotietoihin.
 
 ## Valmistus
 

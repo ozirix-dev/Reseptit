@@ -6,7 +6,7 @@ category: paaruoka
 language: fi
 status: published
 servings: 4
-time_total_min: 90
+time_total_min: 130
 difficulty: helppo
 main_ingredient: [broileri]
 cooking_method: [uunissa paistaminen, grillaaminen]
@@ -43,10 +43,10 @@ Jerk-kanassa maustepippuri, timjami, chili, kevätsipuli ja lime muodostavat aro
 
 1. Soseuta kevätsipuli, valkosipuli, chili, limettimehu, soijakastike, maustepippuri, timjami, inkivääri, fariinisokeri ja öljy marinadiksi.
 2. Hiero marinadi broilerin reisilihaan ja anna maustua jääkaapissa vähintään 1 tunti.
-3. Kuumenna uuni 200 asteeseen. Nosta kana vuokaan ja paista 45–55 minuuttia, kunnes liha on täysin kypsää ja pinta saanut väriä. Voit viimeistellä pinnan grillivastuksen alla.
+3. Kuumenna uuni 200 asteeseen. Nosta kana vuokaan ja paista 45–55 minuuttia, kunnes liha on kauttaaltaan kypsää (sisälämpötila vähintään 75 °C) ja pinta saanut väriä. Voit viimeistellä pinnan grillivastuksen alla. Älä käytä raakaa kanaa koskettanutta marinadia kypsän ruoan viimeistelyyn.
 4. Huuhtele riisi. Laita kattilaan riisi, valutetut pavut, kookosmaito ja vesi. Kiehauta, peitä kannella ja hauduta miedolla lämmöllä pakkauksen ohjeen mukaan, kunnes riisi on kypsää ja neste imeytynyt.
 5. Tarjoa riisi ja pavut jerk-kanan kanssa.
 
 ## Muistiinpanot
 
-- Chili on tulinen; poista siemenet tai käytä vain osa chilistä miedompaa makua varten. Kypsennä kana kauttaaltaan.
+- Chili on tulinen; poista siemenet tai käytä vain osa chilistä miedompaa makua varten. Kokonaisaika noin 130 minuuttia sisältää vähintään tunnin marinoinnin, esivalmistelun sekä 45–55 minuutin paiston; riisi kypsennetään paiston aikana. Kypsennä kana kauttaaltaan.
