@@ -4,6 +4,7 @@ import path from "node:path";
 import test from "node:test";
 import { siteContent } from "../src/generated/content.generated";
 import { parseMarkdown } from "../src/content/markdown";
+import { recipeFrontmatterSchema } from "../src/content/schema";
 import { projectReviewedFiEditorialSource } from "../scripts/gk80-editorial-display";
 
 const root=path.resolve(import.meta.dirname,"../..");
@@ -25,7 +26,7 @@ test("fifteen published translations reflect the six-source GK80 FI public corre
    assert.equal(entry.servings,visibleFi.data.servings);
    assert.equal(entry.timeTotalMin,visibleFi.data.time_total_min);
    assert.deepEqual(entry.ingredients.map(item=>[item.amount,item.unit]),
-                    visibleFi.data.ingredients.map(item=>[item.amount,item.unit]));
+                    recipeFrontmatterSchema.parse(visibleFi.data).ingredients.map(item=>[item.amount,item.unit]));
    assert.deepEqual(entry.nutrition,fi.nutrition,id+":"+lang+": macros changed");
    const text=entry.instructionsText.join(" ");
    if(id.includes("kanariisipuuro")){

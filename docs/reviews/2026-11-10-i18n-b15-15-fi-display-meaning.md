@@ -25,6 +25,13 @@ Kaikissa 15:ssä ainesosamäärät, neljä annoskohtaista makroarvoa, kokonaisai
 
 **`thai-kookosriisi-mangolla` EN/SV/TH (3 kpl)** pysyvät Draftina PR #356:ssa. FI:n kanonisessa lukitussa metatiedossa `cooking_method: paistaminen`, mutta PR #373:n julkisessa esityksessä `keittäminen`. EN/SV/TH-luonnosten raw-metatiedoissa on edelleen vanha paistaminen. Ei julkaista tiedostoa, jonka toimituksellinen valmistustapametadata tunnetaan virheelliseksi, ennen yhteensovitettua lähde-/kieliversiota ja hyväksyntänäyttöä.
 
+
+## Julkaisuajon deterministinen korjaushistoria
+
+- Ensimmäinen PR-CI [#42716227557](https://github.com/ozirix-dev/Reseptit/actions/runs/42716227557) pysähtyi whitespace-porttiin: kolmessa shakshuka-käännöksessä oli vanhan lähdehuomautuksen poiston jäljiltä ylimääräinen loppurivi. Rivit poistettiin muuttamatta semanttisia SHA-tarkisteita.
+- Toinen PR-CI [#42716379173](https://github.com/ozirix-dev/Reseptit/actions/runs/42716379173) läpäisi muuttuneiden käännösten tarkistuksen mutta pysähtyi TypeScriptin `TS18046`/`TS7006`-virheeseen uuden näyttösovitusregressiotestin ainesosajäsennyksessä. Kenttä jäsennetään nyt eksplisiittisesti `recipeFrontmatterSchema.parse`-kutsulla ennen määrien vertailua. Ei FI-raakalähteen eikä käännöksen muutoksia.
+- Enintään yksi kolmas kokonaisajo tässä julkaisukierroksessa. Jos sekin epäonnistuu, tämä julkaisu pysyy Draft/HOLDissa; ei sokkoyrityksiä.
+
 ## Riippumattomat laatupolut
 
 - CI:n Changed-content ja strict Translation audit: 15 muutettua kielitiedostoa sekä 15 ajantasaista SHA-paria.
