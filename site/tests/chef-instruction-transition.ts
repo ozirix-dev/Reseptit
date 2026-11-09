@@ -34,11 +34,12 @@ function withoutPreparation(value: string): string {
   const at = value.indexOf(marker);
   assert(at >= 0, "Chef correction must have a preparation section");
   const start = at + marker.length;
-  const next = value.indexOf("\n## ", start);
-  assert(next >= 0, "Chef correction must keep its next section");
-  const instructions = value.slice(start, next);
+  const nextHeading = value.indexOf("\n## ", start);
+  const end = nextHeading < 0 ? value.length : nextHeading;
+  const instructions = value.slice(start, end);
   assert(/^\s*1\.\s/.test(instructions), "Chef correction must retain ordered steps");
-  return value.slice(0, start) + "\n<INSTRUCTIONS_ONLY>\n" + value.slice(next);
+  // Most older breakfast recipes end immediately after ## Valmistus.
+  return value.slice(0, start) + "\n<INSTRUCTIONS_ONLY>\n" + value.slice(end);
 }
 
 /** Undo only the exact pinned 12 FI preparation-only edits in frozen GK tests. */
