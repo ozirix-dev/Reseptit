@@ -61,7 +61,8 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 
 ## Valmistus
 
-1. Pilko täytteen kasvikset ja muut suuret ainekset pieniksi paloiksi. Kuullota ne pannulla tilkassa öljyä, kunnes ne ovat pehmenneet.
-2. Vatkaa kananmunat ja mausta ripauksella suolaa. Kaada munaseos pannulle ja laske lämpö miedoksi.
-3. Vedä hyytynyttä munaa reunoilta kohti keskustaa. Taita tai rullaa, kun pinta on juuri hyytynyt.
-4. Paista munaseos ohuina kerroksina, lisää hienonnetut kasvikset ja rullaa.
+1. Kuori ja raasta porkkana hyvin hienoksi. Hienonna kevätsipuli. Purista porkkanaraasteesta kevyesti ylimääräistä kosteutta, jotta munarulla pysyy koossa.
+2. Vatkaa kananmunat kulhossa, sekoita mukaan porkkana ja kevätsipuli sekä mausta luettelon suolalla.
+3. Kuumenna luettelon neutraali paistoöljy ja seesamiöljy pinnoitetussa pannussa miedolla lämmöllä.
+4. Kaada pannulle ohut kerros munaseosta. Kun pinta on lähes hyytynyt, rullaa munakas varovasti reunaan. Kaada seuraava kerros pannulle ja rullaa se ensimmäisen ympärille. Jatka, kunnes koko munaseos on käytetty.
+5. Kypsennä rulla läpikotaisin miedolla lämmöllä, nosta hetkeksi jäähtymään ja viipaloi. Taikinaa tai erillistä täytettä ei valmisteta.
