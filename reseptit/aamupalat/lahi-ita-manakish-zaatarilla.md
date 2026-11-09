@@ -67,8 +67,7 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 
 ## Valmistus
 
-1. Sekoita vehnäjauhot, jogurtti, luettelon vesi ja ripaus suolaa pehmeäksi taikinaksi. Vaivaa vain sen verran, että taikina pysyy koossa. Anna levätä peitettynä noin 10 minuuttia.
-2. Sekoita oliiviöljy, kuivattu timjami ja seesaminsiemenet pienessä kulhossa. Tämä on reseptin yksinkertainen za'atar-tyylinen päällyste; muita mausteita ei lisätä.
-3. Jaa taikina kahteen osaan ja painele tai kauli ohuiksi, pannulle mahtuviksi leiviksi. Levitä yrtti-seesamiseos leipien päälle.
-4. Kuumenna reseptin neutraali paistoöljy pannussa miedolla tai keskilämmöllä. Paista leivät ensin pohjapuolelta ja käännä varovasti. Kypsennä myös päällystetty puoli lyhyesti niin, että taikina kypsyy eikä päällyste pala.
-5. Tarjoa lämpiminä. Hiivaa, erillistä täytettä tai muuta kastiketta ei tähän versioon tarvita.
+1. Sekoita jauhot, neste ja suola. Vaivaa pehmeäksi taikinaksi ja anna levätä 10 minuuttia. Jos reseptissä on valmis leipä tai taikina, siirry täyttöön.
+2. Jaa taikina osiin ja painele tai kauli ohuiksi leiviksi. Lisää taikinaan kuuluva täyte tai mausteöljy.
+3. Paista kuumalla pannulla molemmin puolin kypsäksi ja nosta liinan alle pysymään pehmeänä.
+4. Sekoita vehnäjauho, jogurtti ja vesi pehmeäksi taikinaksi. Jaa kahdeksi litteäksi leiväksi. Sekoita oliiviöljy, kuivattu timjami ja seesaminsiemenet ja levitä leipien päälle. Paista kuumalla pannulla tai uunissa, kunnes reunat ovat kypsiä.
