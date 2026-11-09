@@ -2,7 +2,7 @@
 
 **PR #356**: tämä keskustelu. **PR #357**: ensimmäinen keskustelu. Kumpikin omistaa vain omat reseptinsä. #357:n nimettyjä 20 reseptiä ei käsitellä tässä erässä. Aiemmat kuusi päällekkäistä bulgogi- ja kimchi-jjigae-luonnosta on poistettu #356:sta; ne kuuluvat #357:ään.
 
-## Erän 20 FI-kohdetta (60 kieliversiota, 3 PR-ehdokkaana ja 6 GK-HOLD-luonnosta)
+## Erän 20 FI-kohdetta (60 kieliversiota, 9 lähdekatselmoitua GK-HOLD-luonnosta)
 
 | Suomenkielinen lähde | EN | SV | TH |
 |---|---|---|---|
@@ -25,7 +25,7 @@
 | `reseptit/aamupalat/pohjoisafrikkalainen-lablabi.md` | odottaa | odottaa | odottaa |
 | `reseptit/aamupalat/munakasmuffinit.md` | odottaa | odottaa | odottaa |
 | `reseptit/aamupalat/tonnikalamunakkaat-uunissa.md` | odottaa | odottaa | odottaa |
-| `reseptit/aamupalat/valimerellinen-farinata-aamupalaksi.md` | PR-ehdokas | PR-ehdokas | PR-ehdokas |
+| `reseptit/aamupalat/valimerellinen-farinata-aamupalaksi.md` | QA tehty / GK HOLD | QA tehty / GK HOLD | QA tehty / GK HOLD |
 
 ## Laatu ja julkaisu
 
@@ -39,4 +39,4 @@
 
 ## Tilanne
 
-Työnjono on rajattu erilleen #357:stä. Kolme reseptiä / yhdeksän kieliversiota on tehty ja verrattu FI-lähteeseen. Yksi resepti / 3 versiota (farinata) on julkaisu-PR:n ehdokkaana. Kaksi reseptiä / 6 versiota (Huevos ja Callaloo) on säilytetty draftina, koska FI-lähteen käännösmetatieto muuttaa alkuperäisen reseptitiedoston SHA-256-tiivistettä ja rikkoo GK80-release-2:n varmennetun lähdesidoksen (CI 42644592927: STALE_INPUT). Pakettien hyväksyttyjä sidoksia ei kirjoiteta uudelleen kevyen kielistatusmuutoksen vuoksi. Loput 17 reseptiä / 51 kieliversiota odottavat. PR on Draft eikä tätä sisältöä ole yhdistetty tuotantoon. Aiempi #356:n CI kaatui käännösten metatiedon/vertailun tarkistuksessa; viimeistelemättömiä käännöksiä ei julkaistu.
+Työnjono on rajattu erilleen #357:stä. Kolme reseptiä / yhdeksän kieliversiota on tehty ja verrattu FI-lähteeseen. Kaikki kolme reseptiä / 9 kieliversiota säilyvät draftina eikä FI-lähteiden kielimetatietoja julkaista tässä haarassa: Huevos ja Callaloo rikkoivat GK80-release-2:n raakatekstin SHA-sidonnan (CI 42644592927: STALE_INPUT), ja farinatan kielimetatiedon lisäys rikkoi erillisen GK100-owner-approved-eighteen-julkaisusinetin (CI 42645835154: GK100_RELEASE_CANDIDATE_CHANGED). Hyväksyttyjä GK80- tai GK100-tarkisteita ei avata kielistatusten vuoksi; julkaisua varten tarvitaan erikseen katselmoitu, testattu tuki metatietojen turvalliselle käsittelylle. Loput 17 reseptiä / 51 kieliversiota odottavat. PR on Draft eikä tätä sisältöä ole yhdistetty tuotantoon. Aiempi #356:n CI kaatui käännösten metatiedon/vertailun tarkistuksessa; viimeistelemättömiä käännöksiä ei julkaistu.
