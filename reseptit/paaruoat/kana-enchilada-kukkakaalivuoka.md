@@ -5,8 +5,6 @@ url_slug: kana-enchilada-kukkakaalivuoka
 category: paaruoka
 language: fi
 status: published
-translation_languages: [en, sv, th]
-translation_status: {en: published, sv: published, th: published}
 main_ingredient:
 - broileri
 - kukkakaali
