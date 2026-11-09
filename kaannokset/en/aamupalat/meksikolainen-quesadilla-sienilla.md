@@ -64,7 +64,7 @@ The ingredients are shown in the serving calculator above.
 ## Instructions
 
 1. Use 100 g of ready-made corn tortilla, not wheat tortilla or uncooked corn flour. Cook 75 g of button mushrooms in all 13.5 g of oil.
-2. Microwave the weighed 80 g of corn kernels until thoroughly cooked. The 1.5-minute duration from the human study is a preparation comparison, not a guarantee of safe cooking: also follow the product's cooking-safety instructions. Fill the tortillas with 80 g mozzarella, the mushrooms and all the corn.
+2. Microwave the weighed 80 g of corn kernels until thoroughly cooked. The duration of 1.5 minutes from the human study is a preparation comparison, not a guarantee of safe cooking: also follow the product's cooking-safety instructions. Fill the tortillas with 80 g mozzarella, the mushrooms and all the corn.
 3. Heat in a pan only until the cheese melts. Do not deep-fry or add more oil. Divide the entire dish, including the oil, into two servings.
 
 ## Notes
