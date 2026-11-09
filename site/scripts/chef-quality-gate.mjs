@@ -90,7 +90,7 @@ export function evaluateProbe(recipe, probe, publishedTranslations = []) {
   return { probe: probe.kind, expected: probe, observed: found, pass: ok };
 }
 
-export function compareRecipeVersions(before, after, { methodMeaningReviewed = false } = {}) {
+export function compareRecipeVersions(before, after) {
   const changedFields = RECIPE_FIELDS.filter((field) =>
     JSON.stringify(before.data[field] ?? null) !== JSON.stringify(after.data[field] ?? null));
   const instructionsChanged = before.instructions !== after.instructions;
@@ -103,10 +103,10 @@ export function compareRecipeVersions(before, after, { methodMeaningReviewed = f
   return {
     changedFields, instructionsChanged, textOnly, materialChanged,
     requiresNutritionEvidence: materialChanged,
-    requiresGlycemicReview: materialChanged || methodMetadataChanged || timeChanged ||
-      (instructionsChanged && !methodMeaningReviewed),
+    requiresGlycemicReview: materialChanged || methodMetadataChanged || timeChanged || instructionsChanged,
     requiresTranslationReview: instructionsChanged || changedFields.length > 0,
     requiresCulinaryReview: instructionsChanged || changedFields.length > 0,
+    requiresMethodMeaningReview: instructionsChanged || methodMetadataChanged || timeChanged,
     approval: "NOT_AUTO_APPROVED",
   };
 }
