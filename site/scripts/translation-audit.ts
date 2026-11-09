@@ -189,8 +189,19 @@ export function auditRecipePairs(allSources: TranslationAuditResult["publishedSo
       }
       const target = translation.data;
       const issues: string[] = [];
-      if (expectedStatus !== "published") issues.push(`source translation_status for ${locale} is ${expectedStatus ?? "missing"}, expected published`);
-      if (!source.data.translation_languages?.includes(locale)) issues.push(`source translation_languages does not list ${locale}`);
+      // A published translation file is the authoritative locale candidate. Some
+      // GK-sealed Finnish sources cannot acquire new translation-only YAML without
+      // invalidating their exact, independently reviewed preparation source hash.
+      // An *absent* declaration is allowed; an explicit draft/missing declaration
+      // is still a hard mismatch and must be reconciled before publication.
+      if (expectedStatus !== undefined && expectedStatus !== "published") {
+        issues.push(`source translation_status for ${locale} is ${expectedStatus}, expected published`);
+      }
+      // Retain the legacy invariant when a source explicitly declares published:
+      // the same source must list that locale. Omission alone is not a contradiction.
+      if (expectedStatus === "published" && !source.data.translation_languages?.includes(locale)) {
+        issues.push(`source translation_languages does not list ${locale}`);
+      }
       if (target.translation_of !== source.data.recipe_id) issues.push(`translation_of=${target.translation_of ?? "missing"}`);
       if (target.source_recipe !== source.path) issues.push(`source_recipe=${target.source_recipe ?? "missing"}, expected ${source.path}`);
       if (target.source_language !== source.data.language) issues.push(`source_language=${target.source_language ?? "missing"}, expected ${source.data.language}`);

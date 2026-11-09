@@ -36,8 +36,8 @@ test("all published translations match the source structure and known critical t
   const result = await auditTranslations();
   const translatedSources = result.publishedSources;
   const expectedCount = translatedSources.reduce((sum, recipe) => sum +
-    (["en", "sv", "th"] as const).filter((locale) => recipe.data.translation_status?.[locale] === "published").length, 0);
-  assert.equal(result.publishedTranslations.length, expectedCount, "published translations declared by source metadata");
+    result.publishedTranslations.filter((target) => target.data.recipe_id === recipe.data.recipe_id).length, 0);
+  assert.equal(result.publishedTranslations.length, expectedCount, "every published translation has a Finnish source, including GK-sealed sources without locale YAML changes");
   assert.equal(result.rows.length, result.publishedTranslations.length, "one audit row per published translation");
   assert.deepEqual(result.errors, []);
   for (const recipe of translatedSources) {
@@ -89,6 +89,31 @@ test("metadata-driven pairs allow new sources and drafts but reject missing or d
   assert.match(auditRecipePairs([source], [target, otherId]).errors.join(" "), /duplicate published route/);
   source.data.translation_status.en = "draft";
   assert.match(auditRecipePairs([source], [target]).errors.join(" "), /translation_status/);
+});
+
+test("source-sealed Finnish recipe may gain a reviewed locale without mutating its original YAML", async () => {
+  const existing = await auditTranslations();
+  const source = structuredClone(existing.publishedSources.find((item) =>
+    existing.publishedTranslations.some((target) => target.data.recipe_id === item.data.recipe_id && target.data.language === "en"))!);
+  const target = structuredClone(existing.publishedTranslations.find((item) =>
+    item.data.recipe_id === source.data.recipe_id && item.data.language === "en")!);
+  source.data.translation_languages = [];
+  source.data.translation_status = {};
+  assert.deepEqual(auditRecipePairs([source], [target]).errors, [],
+    "absence of translation-only metadata does not require rewriting a GK-sealed Finnish source");
+  source.data.translation_status = { en: "draft" };
+  assert.match(auditRecipePairs([source], [target]).errors.join(" "), /translation_status/,
+    "explicit draft must not silently become published");
+  source.data.translation_status = { en: "missing" };
+  assert.match(auditRecipePairs([source], [target]).errors.join(" "), /translation_status/,
+    "explicit missing must not silently become published");
+  source.data.translation_status = { en: "published" };
+  assert.match(auditRecipePairs([source], [target]).errors.join(" "), /translation_languages/,
+    "legacy declared-published status still requires matching locale list");
+  source.data.translation_languages = ["en"];
+  assert.deepEqual(auditRecipePairs([source], [target]).errors, []);
+  assert.match(auditRecipePairs([source], []).errors.join(" "), /no published file/,
+    "explicit published declaration still fails without actual target file");
 });
 
 test("pair audit detects changed servings, ingredient amounts, units and cooking method", async () => {
