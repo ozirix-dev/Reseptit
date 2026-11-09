@@ -42,7 +42,7 @@ Minangkabau-style rendang is slowly cooked in coconut milk and a spice paste. As
 ## Instructions
 
 1. Blend or finely chop the shallots, garlic, ginger and chillies to form a smooth paste.
-2. Put the spice paste, coconut milk, lemongrass and makrut lime leaves in a heavy-based pot. Heat while stirring until nearly boiling.
+2. Put the spice paste, coconut milk, lemongrass, makrut lime leaves and the listed 1 tsp ground turmeric in a heavy-based pot. Heat while stirring until nearly boiling.
 3. Add the beef and salt. Simmer uncovered over very low heat for 3–4 hours. Stir regularly at first and more frequently as the liquid reduces.
 4. Continue cooking until almost all the coconut liquid has evaporated, the oil begins to separate and the beef is dark and tender. Do not let the bottom burn.
 5. Stir in the toasted coconut. Cook the rice according to the package instructions and serve with the rendang.

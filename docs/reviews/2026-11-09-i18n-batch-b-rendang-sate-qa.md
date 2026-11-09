@@ -21,3 +21,9 @@
 ## Portti
 
 Kaikki kuusi kielitiedostoa pidetään `draft`. Älä muuta `codex-review-evidence.json`-rekisteriä tämän osaarvion perusteella. Päivitä rendangin FI-lähde oman GK-porttinsa kautta, käännä lähdemuutos kaikkiin kolmeen kieleen, uusi merkitysvertailu ja semanttiset SHA:t vasta lopuksi.
+
+## Rendangin korjauksen jälkitarkistus — PR #367 yhdistetty
+
+Korjattu FI-lähde main-commitissa `a1024389740b955ea2edb850ce6467fa51d8e533`: vaihe 2 lisää 1 tl jo lueteltua kurkumaa samaan kattilaan maustetahnan, kookosmaidon, sitruunaruohon ja makrutlimetinlehtien kanssa. Kaikissa EN/SV/TH-luonnoksissa sama lisäys; mitta, ainesosat, vaiheiden määrä, 3–4 tunnin haudutus ja lopun kuivakypsennys säilyvät. Thai-takaisinkäännös: lisää myös yksi teelusikallinen jauhettua kurkumaa maustepadan nesteeseen ennen lämmitystä. FI P1-lähdehavainto on **korjattu** eikä enää avoin näissä kolmessa luonnoksessa.
+
+**Rajoitus:** tämä on uusi tekstin AI-merkitysvertailu julkaistuun FI-lähteeseen, ei itsenäinen ihmistarkistus eikä automaattisesti julkaisuun hyväksytty SHA-evidence. Kaikki kolme pysyvät `draft`; lopullinen koko erän FI/kohdekielen semanttinen V2-tiivistevertailu ja nykyisen HEADin CI vaaditaan.

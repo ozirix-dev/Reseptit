@@ -2,6 +2,7 @@ import { readFileSync, readdirSync, realpathSync } from 'node:fs';
 import { join, relative } from 'node:path';
 import { fingerprint } from './gk80-candidate-model';
 import { historicalFarinataForApprovedPanVersion } from './gk100-farinata-sealed-source';
+import { historicalRendangForApprovedVersion } from './gk100-rendang-sealed-source';
 import { checkBatch, applyDecisions, type Batch, type Decisions, type prepareRelease } from './gk100-approval-factory';
 import type { GkOnlyVariant } from '../src/features/recipes/gk-only-types';
 import { gkVariantScope } from '../src/features/recipes/gk-estimate-scope';
@@ -53,9 +54,13 @@ export function verifyReleaseBundle(sealed: Bundle & { bundleSha256: string }, a
   // editorial correction. Unreviewed source changes still fail the manifest.
   const checked = checkBatch({ ...bundle.batch, candidates: entries }, (file) => {
     const source = read(file);
-    return bundle.batch.batchId === 'gk100-owner-approved-eighteen'
-      && bundle.recipeIds.includes('valimerellinen-farinata-aamupalaksi')
-      ? historicalFarinataForApprovedPanVersion(file, source)
+    if (bundle.batch.batchId !== 'gk100-owner-approved-eighteen') return source;
+    if (bundle.recipeIds.includes('valimerellinen-farinata-aamupalaksi')) {
+      const historical = historicalFarinataForApprovedPanVersion(file, source);
+      if (historical !== source) return historical;
+    }
+    return bundle.recipeIds.includes('rendang-padang')
+      ? historicalRendangForApprovedVersion(file, source)
       : source;
   });
   const decisions = bundle.decisions;

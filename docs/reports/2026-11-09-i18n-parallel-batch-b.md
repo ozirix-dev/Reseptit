@@ -8,7 +8,7 @@
 |---|---|---|---|
 | `reseptit/paaruoat/kana-yakitori-kaalilla.md` | luonnos / FI HOLD | luonnos / FI HOLD | luonnos / FI HOLD |
 | `reseptit/paaruoat/pho-bo.md` | luonnos / FI HOLD | luonnos / FI HOLD | luonnos / FI HOLD |
-| `reseptit/paaruoat/rendang-padang.md` | QA / FI P1 HOLD | QA / FI P1 HOLD | QA / FI P1 HOLD |
+| `reseptit/paaruoat/rendang-padang.md` | AI-QA / draft | AI-QA / draft | AI-QA / draft |
 | `reseptit/paaruoat/sate-ayam.md` | AI-QA / draft | AI-QA / draft | AI-QA / draft |
 | `reseptit/aamupalat/meksikolainen-huevos-a-la-mexicana.md` | QA tehty / GK HOLD | QA tehty / GK HOLD | QA tehty / GK HOLD |
 | `reseptit/aamupalat/karibia-callaloo-munakas.md` | QA tehty / GK HOLD | QA tehty / GK HOLD | QA tehty / GK HOLD |
@@ -100,3 +100,7 @@ Työnjono on rajattu erilleen #357:stä. Kolme reseptiä / yhdeksän kieliversio
 ## 9.11. — ensimmäinen itsenäinen kahden reseptin kielivertailu
 
 6/60 kieliparin sisältöä arvioitu suoraan FI-lähdettä vasten. Rendang: kolme kieliversiota **FI P1 HOLD**, lähde jättää 1 tl kurkumaa käyttämättä valmistuksessa. Sate ayam: kolmen kieliversion tekstin AI-merkitystarkistuksessa ei havaittu P0/P1-erhettä, mutta kuvatekstin kaksi laskennan ulkopuolista lisuketta kirjattu P2:ksi. Kaikki pysyvät draftina. Tarkka katselmointi: `docs/reviews/2026-11-09-i18n-batch-b-rendang-sate-qa.md`. Ei SHA-julkaisuhyväksyntää.
+
+## PR #367:n jälkeen — rendangin käännökset päivitetty
+
+FI-kurkumavaiheen puute korjattu mainissa `a1024389740b955ea2edb850ce6467fa51d8e533`. EN/SV/TH vaiheessa 2 lisätään sama jo lueteltu 1 tl kurkumajauhetta; koko annos, ravintoarvot ja GK-evidenssi ennallaan. Korjauksen FI-P1-havainto suljettu toimituksellisessa tarkastelussa. Kieliversioiden status edelleen draft ja julkaisuportit (semanttiset SHA:t, FI-kielimetatieto, GK-lähdelukot, CI) auki.

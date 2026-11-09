@@ -42,7 +42,7 @@ Rendang från Minangkabau långkokas i kokosmjölk och kryddpasta. Vätskan redu
 ## Tillagning
 
 1. Mixa eller finhacka schalottenlök, vitlök, ingefära och chili till en jämn pasta.
-2. Lägg kryddpastan, kokosmjölken, citrongräset och makrutlimebladen i en tjockbottnad gryta. Värm under omrörning tills det nästan kokar.
+2. Lägg kryddpastan, kokosmjölken, citrongräset, makrutlimebladen och 1 tsk malen gurkmeja från ingredienslistan i en tjockbottnad gryta. Värm under omrörning tills det nästan kokar.
 3. Tillsätt nötkött och salt. Sjud utan lock på mycket låg värme i 3–4 timmar. Rör om regelbundet i början och oftare när vätskan minskar.
 4. Fortsätt tills kokosvätskan nästan har kokat bort, oljan börjar skilja sig och köttet är mörkt och mört. Se upp så att det inte bränner fast.
 5. Rör ner de rostade kokosflingorna. Koka riset enligt anvisningarna på förpackningen och servera med rendangen.
