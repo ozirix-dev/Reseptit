@@ -35,7 +35,7 @@ const TERMS = [
   ["maito", /maitoa|maidon|maitoon|maito\b/iu, /maito|maid/iu],
   ["kerma", /\b(?:kermaa|kerman|kermaan|kermalla|kerma)\b/iu, /kerm/iu],
   ["etikka", /etikk/iu, /etikk/iu],
-  ["sipuli", /sipul/iu, /(?<!valko)sipul/iu],
+  ["sipuli", /(?<!valko)(?<!kevät)(?<!ruoho)sipul/iu, /(?<!valko)sipul/iu],
   ["valkosipuli", /valkosipul/iu, /valkosipul/iu],
   ["inkivääri", /inkiväär/iu, /inkiväär/iu],
   ["kaneli", /kanel/iu, /kanel/iu],
@@ -95,6 +95,14 @@ function classifyReference(line, index) {
   return "maininta-ilman-luetteloa";
 }
 
+/** Explicit exclusions in the same clause are not ingredient additions. */
+function explicitlyExcluded(line, match) {
+  const before = line.slice(Math.max(0, match.index - 70), match.index);
+  const after = line.slice(match.index + match[0].length, match.index + match[0].length + 75);
+  return /(?:ilman|älä lisää|ei lisätä|ei käytetä|ei tarvita|ei kuulu)[^.!?;]{0,35}$/iu.test(before) ||
+    /^\\s*(?:ei tarvita|ei lisätä|ei käytetä|ei kuulu|ei tule|jätetään pois|ei sisälly)\\b/iu.test(after);
+}
+
 export function inspectRecipe(source, filename = "fixture.md") {
   const frontmatter = source.match(/^---[ \t]*\r?\n([\s\S]*?)\r?\n---[ \t]*(?:\r?\n|$)/);
   if (!frontmatter) {
@@ -130,7 +138,10 @@ export function inspectRecipe(source, filename = "fixture.md") {
   const findings = [];
   for (const [term, stepPattern, ingredientPattern] of TERMS) {
     if (ingredients.some((item) => ingredientPattern.test(item))) continue;
-    const candidates = lines.filter((line) => stepPattern.test(line));
+    const candidates = lines.filter((line) => {
+      const match = stepPattern.exec(line);
+      return match && !explicitlyExcluded(line, match);
+    });
     if (!candidates.length) continue;
     // Cooking water is not automatically an ingredient. Count only water
     // explicitly added to a preparation, not water used for boiling or rinsing.
