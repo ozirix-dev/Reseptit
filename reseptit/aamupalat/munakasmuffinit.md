@@ -56,8 +56,8 @@ image:
 
 Punnitse yllä luetellut syötävät raaka-aineet grammoina, kananmunat ilman kuorta. Käytä vain lueteltu rasva ja mausteet.
 
-1. Lämmitä uuni 190 asteeseen. Voitele kuusi muffinivuokaa.
-2. Paista pekoni pannulla rapeaksi ja nosta talouspaperille. Hienonna pinaatti ja pekoni.
+1. Lämmitä uuni 190 asteeseen. Käytä kuutta tarttumatonta silikonista muffinivuokakoloa tai paperisia muffinivuokia ilman lisättyä voitelurasvaa.
+2. Paista pekoni kuivalla tarttumattomalla pannulla omassa rasvassaan rapeaksi ja nosta talouspaperille. Hienonna pinaatti ja pekoni; älä lisää paistorasvaa.
 3. Vatkaa munat ja kerma. Sekoita mukaan pinaatti, murennettu pekoni, juusto ja pippuri.
 4. Jaa seos vuokiin ja paista 16–20 minuuttia, kunnes keskusta on hyytynyt.
 5. Anna muffinien levätä viisi minuuttia ennen tarjoilua.
