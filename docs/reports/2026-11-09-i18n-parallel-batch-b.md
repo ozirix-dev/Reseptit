@@ -8,8 +8,8 @@
 |---|---|---|---|
 | `reseptit/paaruoat/kana-yakitori-kaalilla.md` | luonnos / FI HOLD | luonnos / FI HOLD | luonnos / FI HOLD |
 | `reseptit/paaruoat/pho-bo.md` | luonnos / FI HOLD | luonnos / FI HOLD | luonnos / FI HOLD |
-| `reseptit/paaruoat/rendang-padang.md` | luonnos / QA | luonnos / QA | luonnos / QA |
-| `reseptit/paaruoat/sate-ayam.md` | luonnos / QA | luonnos / QA | luonnos / QA |
+| `reseptit/paaruoat/rendang-padang.md` | QA / FI P1 HOLD | QA / FI P1 HOLD | QA / FI P1 HOLD |
+| `reseptit/paaruoat/sate-ayam.md` | AI-QA / draft | AI-QA / draft | AI-QA / draft |
 | `reseptit/aamupalat/meksikolainen-huevos-a-la-mexicana.md` | QA tehty / GK HOLD | QA tehty / GK HOLD | QA tehty / GK HOLD |
 | `reseptit/aamupalat/karibia-callaloo-munakas.md` | QA tehty / GK HOLD | QA tehty / GK HOLD | QA tehty / GK HOLD |
 | `reseptit/aamupalat/meksikolainen-quesadilla-sienilla.md` | luonnos / QA odottaa | luonnos / QA odottaa | luonnos / QA odottaa |
@@ -96,3 +96,7 @@ Työnjono on rajattu erilleen #357:stä. Kolme reseptiä / yhdeksän kieliversio
 - EN/SV/TH kaikissa kuudessa kieliluonnoksessa päivitetty vastaamaan korjattuja FI-valmistusohjeita: yakitori soijakastike (ei tamari), 75 °C, puhtaan kastikkeen erottelu, mirin-korvaus ei laskettuun versioon; phở bò erillinen naudan kypsennys liemessä 63 °C + kolme minuuttia, korianteri tarjoiluun.
 - Näiden kuuden kieliversion **vanha katselmointi on mitätön** lähdemuutoksen takia. Ei julkaistuja SHA-todisteita; kaikki pysyvät draft-tilassa, kunnes itsenäinen merkitystarkistus tehdään uudelle FI-lähteelle.
 - Munakasmuffinit, tonnikalamunakkaat ja harissashakshuka säilyvät GK80:n tarkassa lähdesidonnassa ja niiden korjaukset ovat HOLDissa. Ei muuta ravintolukuja, GK-laskelmaa eikä suljettuja evidence-tietueita.
+
+## 9.11. — ensimmäinen itsenäinen kahden reseptin kielivertailu
+
+6/60 kieliparin sisältöä arvioitu suoraan FI-lähdettä vasten. Rendang: kolme kieliversiota **FI P1 HOLD**, lähde jättää 1 tl kurkumaa käyttämättä valmistuksessa. Sate ayam: kolmen kieliversion tekstin AI-merkitystarkistuksessa ei havaittu P0/P1-erhettä, mutta kuvatekstin kaksi laskennan ulkopuolista lisuketta kirjattu P2:ksi. Kaikki pysyvät draftina. Tarkka katselmointi: `docs/reviews/2026-11-09-i18n-batch-b-rendang-sate-qa.md`. Ei SHA-julkaisuhyväksyntää.
