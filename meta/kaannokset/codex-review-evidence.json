@@ -2395,6 +2395,48 @@
     "outcome": "pass",
     "findings": []
   },
+  "thai-kookosriisi-mangolla:en": {
+    "source_hash": "f5f1b28f29bbaade6a59ad21cf4c25505415c7e5fe746e0ad9601748e4d7a745",
+    "translation_hash": "36b5c35b2c50f3bdb2375e7424dc683aa716e07d136d8cc16c6f870adcad2e7d",
+    "reviewed_at": "2026-11-10",
+    "reference": "docs/reviews/2026-11-10-i18n-final-coconut-source-meaning.md; source FI raw main 9b47b8dda290, SHA-pinned public FI method via PR #373; AI FI–EN/SV/TH semantic review, no human review",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "open",
+        "summary": "Historical GK80 FI source cooking_method is paistaminen; SHA-pinned public FI method is keittäminen. Metadata comparison bound to reviewed public source; numerical source seal unchanged."
+      }
+    ]
+  },
+  "thai-kookosriisi-mangolla:sv": {
+    "source_hash": "f5f1b28f29bbaade6a59ad21cf4c25505415c7e5fe746e0ad9601748e4d7a745",
+    "translation_hash": "86042df5aac23fb36a52b4099a51e0ce8e3d201405109876373911aa88f19096",
+    "reviewed_at": "2026-11-10",
+    "reference": "docs/reviews/2026-11-10-i18n-final-coconut-source-meaning.md; source FI raw main 9b47b8dda290, SHA-pinned public FI method via PR #373; AI FI–EN/SV/TH semantic review, no human review",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "open",
+        "summary": "Historical GK80 FI source cooking_method is paistaminen; SHA-pinned public FI method is keittäminen. Metadata comparison bound to reviewed public source; numerical source seal unchanged."
+      }
+    ]
+  },
+  "thai-kookosriisi-mangolla:th": {
+    "source_hash": "f5f1b28f29bbaade6a59ad21cf4c25505415c7e5fe746e0ad9601748e4d7a745",
+    "translation_hash": "dd79f13d0ce861d02841d62e9650c5118f02860787d06b040b21e2a7e5899315",
+    "reviewed_at": "2026-11-10",
+    "reference": "docs/reviews/2026-11-10-i18n-final-coconut-source-meaning.md; source FI raw main 9b47b8dda290, SHA-pinned public FI method via PR #373; AI FI–EN/SV/TH semantic review, no human review",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "open",
+        "summary": "Historical GK80 FI source cooking_method is paistaminen; SHA-pinned public FI method is keittäminen. Metadata comparison bound to reviewed public source; numerical source seal unchanged."
+      }
+    ]
+  },
   "thai-porsasjok:en": {
     "source_hash": "50188384a09db28d264fa086ba14a2d6c8761299f0fae1fb8ee9a96e6bc51f4d",
     "translation_hash": "876364b83e474c58b468f9b4385b447be260325c614183b2b257790bff1a3872",
