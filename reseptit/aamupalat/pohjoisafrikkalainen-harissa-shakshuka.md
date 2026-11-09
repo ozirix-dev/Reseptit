@@ -14,7 +14,7 @@ cooking_method:
 ingredients:
 - amount: 110
   unit: g
-  item: kananmunaa kuoretta
+  item: kananmunaa kuorettomana
 - amount: 125
   unit: g
   item: tomaattia

@@ -60,7 +60,7 @@ fat_per_serving_g: 6.23
 
 ## Kuvaus
 
-Tamari-mirin-kuorrutettu broileri kypsyy vartaissa ja tarjotaan nopeasti pannulla pehmennetyn seesamikaalin kanssa.
+Soijakastike-mirinkuorrutettu broileri kypsyy vartaissa ja tarjotaan nopeasti pannulla pehmennetyn seesamikaalin kanssa.
 
 ## Ainekset
 
@@ -69,11 +69,11 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 ## Valmistus
 
 1. Liota puisia vartaita vedessä 20 minuuttia. Leikkaa broileri suupaloiksi ja pujota vartaisiin.
-2. Sekoita tamari, mirin ja inkivääri. Sivele broileri ohuesti kastikkeella.
-3. Grillaa tai paista vartaita keskilämmöllä 10–12 minuuttia käännellen ja sivellen kastiketta, kunnes kana on kypsää.
+2. Sekoita soijakastike, mirin ja inkivääri. Jaa kastike kahteen puhtaaseen astiaan. Sivele broileri ensimmäisen astian kastikkeella ennen paistoa; säästä toinen osa kypsennyksen aikaiseen sivelyyn.
+3. Grillaa tai paista vartaita keskilämmöllä noin 10–12 minuuttia käännellen. Sivele vain puhtaana säästetyllä kastikkeella kypsennyksen aikana niin, että kaikki käytetty kastike kuumenee kunnolla. Tarkista broilerin paksuimmasta kohdasta vähintään 75 °C:n sisälämpötila. Älä sivele kypsiä vartaita raakaa kanaa koskettaneella kastikkeella.
 4. Suikaloi kaali ja paista seesamiöljyssä 4–5 minuuttia. Mausta riisiviinietikalla.
 5. Tarjoa yakitori seesaminsiementen, kevätsipulin ja kaalin kanssa.
 
 ## Muistiinpanot
 
-Mirin sisältää sokeria. Sen voi korvata pienellä määrällä vettä ja riisiviinietikkaa.
+Mirin sisältää sokeria. Jos korvaat sen vedellä ja riisiviinietikalla, syntyy eri reseptiversio eikä tämän version ravintolaskelmaa voi käyttää muuttumattomana.

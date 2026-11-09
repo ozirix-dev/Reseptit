@@ -32,7 +32,7 @@ ingredients:
 
 # Vietnamilainen phở bò -naudanlihanuudelikeitto
 
-Kotikeittiöön sovitettu phở bò rakentuu pitkään haudutetusta luuliemestä, paahdetusta sipulista ja inkivääristä sekä lämpimistä mausteista. Raaka ohut naudanliha kypsyy kuumassa liemessä tarjoiltaessa.
+Kotikeittiöön sovitettu phở bò rakentuu pitkään haudutetusta luuliemestä, paahdetusta sipulista ja inkivääristä sekä lämpimistä mausteista. Tässä kotikeittiöversiossa ohuet naudanviipaleet kypsennetään kiehuvassa liemessä ennen annostelua. Näin lopputulos ei riipu tarjoilukulhon tai liemen jäähtymisestä.
 
 ## Valmistus
 
@@ -41,8 +41,8 @@ Kotikeittiöön sovitettu phở bò rakentuu pitkään haudutetusta luuliemestä
 3. Lisää kattilaan luut ja 4 litraa vettä. Kiehauta, kuori pinnalle nouseva vaahto ja hauduta hiljaa noin 2 tuntia.
 4. Paahda tähtianis, kaneli ja korianterinsiemenet kuivalla pannulla tuoksuviksi. Lisää ne liemeen paahdetun sipulin ja inkiväärin kanssa. Hauduta vielä 60 minuuttia.
 5. Siivilöi liemi. Mausta kalakastikkeella ja ruokosokerilla. Keitä riisinuudelit pakkauksen ohjeen mukaan.
-6. Jaa nuudelit kulhoihin ja asettele päälle hyvin ohuet naudanviipaleet. Kaada päälle kiehuvan kuuma liemi. Tarjoa pavunitujen, basilikan ja limetin kanssa.
+6. Kuumenna siivilöity liemi uudelleen kiehuvaksi ja kypsennä ohuet naudanviipaleet siinä erissä kauttaaltaan kypsiksi (vähintään 70 °C). Jaa nuudelit kulhoihin, lisää kypsät lihaviipaleet ja kaada päälle kiehuvan kuuma liemi. Tarjoa pavunitujen, basilikan ja limetin kanssa.
 
 ## Muistiinpanot
 
-- Liemen hautumisaika on pitkä. Lihan tulee olla hyvin ohueksi leikattua, jotta kuuma liemi kypsentää sen turvallisesti tarjoilussa; vaihtoehtoisesti kypsennä viipaleet erikseen liemessä.
+- Perinteisessä phở bòssa raakaa, hyvin ohutta naudanlihaa voidaan kypsentää annoksessa kuumalla liemellä. Lämpö riippuu kuitenkin liemen, kulhon ja lihan olosuhteista. Tässä kotikeittiöohjeessa viipaleet kypsennetään turvallisesti erikseen kiehuvassa liemessä ennen tarjoilua. Raaka naudanliha ja välineet pidetään erillään valmiista ruoasta.
