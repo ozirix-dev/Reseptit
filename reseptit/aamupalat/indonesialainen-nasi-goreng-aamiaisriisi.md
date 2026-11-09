@@ -56,8 +56,7 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 
 ## Valmistus
 
-1. Kypsennä riisi pakkauksen ohjeen mukaan ja valuta tarvittaessa. Levitä riisi hetkeksi lautaselle, jotta se ei jää märäksi.
-2. Hienonna salottisipuli. Kuumenna reseptin paistoöljy pannussa ja kuullota salottisipulia hetki, mutta älä polta.
-3. Siirrä sipuli sivuun, riko kananmuna pannulle ja sekoita kypsäksi munakokkeliksi.
-4. Lisää riisi ja kecap manis. Paista ja kääntele kuumalla pannulla, kunnes riisi on kauttaaltaan kuumaa ja kastike jakautuu tasaisesti. Maista ja lisää luettelon suolaa tarvittaessa.
-5. Jaa aamiaisriisi kahteen annokseen. Valkosipulia tai muita lisukkeita ei tarvita tässä versiossa.
+1. Raasta, muussaa tai hienonna pääraaka-aine. Sekoita joukkoon taikinan ainekset ja lisää vettä vain sen verran, että seos pysyy koossa.
+2. Kuumenna pannulla ohut kerros öljyä. Muotoile pieniksi pihveiksi tai lusikoi taikina pannulle.
+3. Paista keskilämmöllä molemmin puolin kypsäksi ja rapeapintaiseksi. Paista erissä, jotta pannu ei jäähdy.
+4. Paista riisi valkosipulin ja kecap manisin kanssa, tarjoa paistetun munan päällä.
