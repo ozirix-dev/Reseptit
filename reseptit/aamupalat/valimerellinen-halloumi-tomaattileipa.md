@@ -61,8 +61,7 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 
 ## Valmistus
 
-1. Viipaloi halloumi ja tomaatti. Viipaloi tai puolita oliivit.
-2. Kuumenna luettelon paistoöljy pannussa ja paista halloumiviipaleet molemmin puolin kullanruskeiksi. Nosta hetkeksi sivuun.
-3. Paahda hapanjuurileivät kevyesti kuivalla pannulla tai leivänpaahtimessa.
-4. Jaa tomaatit ja oliivit leiville, nosta lämmin halloumi päälle ja tarjoa heti. Lisää luettelon suolaa vain tarvittaessa, sillä halloumi ja oliivit ovat jo suolaisia.
-5. Tässä reseptissä käytetään valmista hapanjuurileipää: leipätaikinaa ei valmisteta eikä kohoteta.
+1. Sekoita jauhot, neste ja suola. Vaivaa pehmeäksi taikinaksi ja anna levätä 10 minuuttia. Jos reseptissä on valmis leipä tai taikina, siirry täyttöön.
+2. Jaa taikina osiin ja painele tai kauli ohuiksi leiviksi. Lisää taikinaan kuuluva täyte tai mausteöljy.
+3. Paista kuumalla pannulla molemmin puolin kypsäksi ja nosta liinan alle pysymään pehmeänä.
+4. Viipaloi halloumi ja paista se kevyesti öljytyllä pannulla kullanruskeaksi. Paahda hapanjuurileipä, lisää viipaloitu tomaatti ja oliivit ja aseta lämmin halloumi päälle.
