@@ -2,7 +2,7 @@
 
 **PR #356**: tämä keskustelu. **PR #357**: ensimmäinen keskustelu. Kumpikin omistaa vain omat reseptinsä. #357:n nimettyjä 20 reseptiä ei käsitellä tässä erässä. Aiemmat kuusi päällekkäistä bulgogi- ja kimchi-jjigae-luonnosta on poistettu #356:sta; ne kuuluvat #357:ään.
 
-## Erän 20 FI-kohdetta (60 kieliversiota)
+## Erän 20 FI-kohdetta (60 kieliversiota, 9 PR-ehdokkaana)
 
 | Suomenkielinen lähde | EN | SV | TH |
 |---|---|---|---|
@@ -10,8 +10,8 @@
 | `reseptit/paaruoat/pho-bo.md` | odottaa | odottaa | odottaa |
 | `reseptit/paaruoat/rendang-padang.md` | odottaa | odottaa | odottaa |
 | `reseptit/paaruoat/sate-ayam.md` | odottaa | odottaa | odottaa |
-| `reseptit/aamupalat/meksikolainen-huevos-a-la-mexicana.md` | odottaa | odottaa | odottaa |
-| `reseptit/aamupalat/karibia-callaloo-munakas.md` | odottaa | odottaa | odottaa |
+| `reseptit/aamupalat/meksikolainen-huevos-a-la-mexicana.md` | PR-ehdokas | PR-ehdokas | PR-ehdokas |
+| `reseptit/aamupalat/karibia-callaloo-munakas.md` | PR-ehdokas | PR-ehdokas | PR-ehdokas |
 | `reseptit/aamupalat/meksikolainen-quesadilla-sienilla.md` | odottaa | odottaa | odottaa |
 | `reseptit/aamupalat/pohjoisafrikkalainen-harissa-shakshuka.md` | odottaa | odottaa | odottaa |
 | `reseptit/aamupalat/thai-riisinuudelikeitto-aamuksi.md` | odottaa | odottaa | odottaa |
@@ -25,7 +25,7 @@
 | `reseptit/aamupalat/pohjoisafrikkalainen-lablabi.md` | odottaa | odottaa | odottaa |
 | `reseptit/aamupalat/munakasmuffinit.md` | odottaa | odottaa | odottaa |
 | `reseptit/aamupalat/tonnikalamunakkaat-uunissa.md` | odottaa | odottaa | odottaa |
-| `reseptit/aamupalat/valimerellinen-farinata-aamupalaksi.md` | odottaa | odottaa | odottaa |
+| `reseptit/aamupalat/valimerellinen-farinata-aamupalaksi.md` | PR-ehdokas | PR-ehdokas | PR-ehdokas |
 
 ## Laatu ja julkaisu
 
@@ -39,4 +39,4 @@
 
 ## Tilanne
 
-Työnjono on rajattu erilleen #357:stä. Kaikki tämän uuden listan kieliversiot odottavat. Aiempi #356:n CI kaatui käännösten metatiedon/vertailun tarkistuksessa; viimeistelemättömiä käännöksiä ei julkaistu.
+Työnjono on rajattu erilleen #357:stä. Kolme reseptiä / yhdeksän kieliversiota on katselmoitu AI-merkitysvertailussa ja valmisteltu julkaisu-PR:n osaksi; 17 reseptiä / 51 kieliversiota odottaa. PR on Draft eikä tätä sisältöä ole yhdistetty tuotantoon. Aiempi #356:n CI kaatui käännösten metatiedon/vertailun tarkistuksessa; viimeistelemättömiä käännöksiä ei julkaistu.

@@ -4,7 +4,7 @@ recipe_id: valimerellinen-farinata-aamupalaksi
 url_slug: valimerellinen-farinata-aamupalaksi
 category: aamupala
 language: en
-status: draft
+status: published
 main_ingredient:
   - "kikhernejauho"
   - "oliivi"

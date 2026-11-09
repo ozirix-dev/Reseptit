@@ -4,7 +4,7 @@ recipe_id: karibia-callaloo-munakas
 url_slug: karibia-callaloo-munakas
 category: aamupala
 language: th
-status: draft
+status: published
 main_ingredient:
 - pinaatti
 - kananmuna
