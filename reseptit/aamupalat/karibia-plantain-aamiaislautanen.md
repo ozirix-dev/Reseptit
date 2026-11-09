@@ -56,7 +56,7 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 
 ## Valmistus
 
-1. Raasta, muussaa tai hienonna pääraaka-aine. Sekoita joukkoon taikinan ainekset ja lisää vettä vain sen verran, että seos pysyy koossa.
-2. Kuumenna pannulla ohut kerros öljyä. Muotoile pieniksi pihveiksi tai lusikoi taikina pannulle.
-3. Paista keskilämmöllä molemmin puolin kypsäksi ja rapeapintaiseksi. Paista erissä, jotta pannu ei jäähdy.
-4. Paista kypsä plantain viipaleina karamelliseksi ja tarjoa kananmunan kanssa.
+1. Kuori ruokabanaani ja viipaloi se vinottain noin puolen sentin paksuisiksi paloiksi. Halkaise avokado, poista kivi ja viipaloi hedelmäliha. Lohko lime.
+2. Kuumenna osa luettelon paistoöljystä pannulla ja paista ruokabanaaniviipaleet molemmin puolin kullanruskeiksi ja pehmeiksi. Siirrä sivuun lämpimään.
+3. Paista kananmunat saman luettelon öljymäärän loppuosassa haluamaasi kypsyyteen. Mausta tarvittaessa luettelon suolalla.
+4. Jaa ruokabanaani, kananmunat ja avokado kahdelle lautaselle. Purista päälle limen mehua juuri ennen tarjoilua. Taikinaa tai erillisiä pihvejä ei tehdä.
