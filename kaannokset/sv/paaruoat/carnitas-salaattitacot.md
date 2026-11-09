@@ -83,7 +83,7 @@ Ingrediensmängderna finns i portionskalkylatorn ovan.
 
 1. Skär fläskköttet i stora tärningar. Krydda med salt, peppar, spiskummin och oregano.
 2. Lägg köttet i en gryta med vitlök, **apelsinsaft och apelsinklyftor**, limesaft och vatten.
-3. Lägg på locket och bräsera i ugnen vid **150 °C i cirka 2½ timmar** tills köttet lätt faller isär med en gaffel.
+3. Lägg på locket och bräsera i ugnen vid **150 °C i cirka 2,5 timmar** tills köttet lätt faller isär med en gaffel.
 4. Dra isär köttet och bred ut det på en ugnsplåt. Grilla under ugnens grillelement i några minuter tills kanterna blir krispiga.
 5. Blanda tomat, rödlök och koriander till pico de gallo. Servera det varma köttet i sköljda salladsblad och lägg till den uppmätta mängden pico de gallo.
 

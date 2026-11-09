@@ -83,7 +83,7 @@ Ingredient amounts are listed in the serving calculator above.
 
 1. Cut the pork into large cubes. Season with salt, pepper, cumin and oregano.
 2. Put the pork in a pot with the garlic, **orange juice and orange wedges**, lime juice and water.
-3. Cover and braise in an oven at **150 °C for about 2½ hours**, until the meat falls apart with a fork.
+3. Cover and braise in an oven at **150 °C for about 2.5 hours**, until the meat falls apart with a fork.
 4. Shred the meat and spread it on a baking tray. Broil under the top grill element for a few minutes until the edges become crisp.
 5. Mix the tomato, red onion and coriander to make pico de gallo. Serve the warm meat inside washed lettuce leaves and add the measured pico de gallo.
 
