@@ -81,11 +81,17 @@ export function preparationSection(markdown) {
 }
 
 function classifyReference(line, index) {
-  const before = line.slice(Math.max(0, index - 115), index);
+  // Examine the current clause only: a previous sentence's "paista" must not
+  // reclassify "Tarjoa jogurtin kanssa" as an added cooking ingredient.
+  const prefix = line.slice(0, index);
+  const clauseStart = Math.max(prefix.lastIndexOf("."), prefix.lastIndexOf("!"),
+    prefix.lastIndexOf("?"), prefix.lastIndexOf(";"));
+  const before = prefix.slice(clauseStart + 1).slice(-115);
   const optional = OPTIONAL.test(line);
   if (optional) return "valinnainen-maininta";
+  if (SERVING.test(before) && !AMOUNT_NEAR.test(before)) return "luettelosta-puuttuva-tarjoilu";
   if (AMOUNT_NEAR.test(before) || ACTION.test(before)) return "luettelosta-puuttuva-lisäys";
-  if (SERVING.test(before) || SERVING.test(line)) return "luettelosta-puuttuva-tarjoilu";
+  if (SERVING.test(line)) return "luettelosta-puuttuva-tarjoilu";
   return "maininta-ilman-luetteloa";
 }
 
