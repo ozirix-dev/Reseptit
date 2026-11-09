@@ -61,7 +61,8 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 
 ## Valmistus
 
-1. Sekoita jauhot, neste ja suola. Vaivaa pehmeäksi taikinaksi ja anna levätä 10 minuuttia. Jos reseptissä on valmis leipä tai taikina, siirry täyttöön.
-2. Jaa taikina osiin ja painele tai kauli ohuiksi leiviksi. Lisää taikinaan kuuluva täyte tai mausteöljy.
-3. Paista kuumalla pannulla molemmin puolin kypsäksi ja nosta liinan alle pysymään pehmeänä.
-4. Muotoile mureneva taikina paksuiksi kiekoiksi ja paista pannulla kypsäksi.
+1. Sekoita mannasuurimoihin luettelon voi, kunnes seos on kauttaaltaan murumaista. Lisää luettelon maito ja ripaus suolaa.
+2. Sekoita taikinaksi ja anna mannasuurimoiden turvota noin 10 minuuttia. Taikina saa olla murenevaa, mutta sen pitää painua kokoon käsin muotoiltaessa.
+3. Jaa taikina kahdeksi paksuksi, litteäksi kiekoksi. Painele kiekot varovasti käsin tai kahden leivinpaperin välissä; niitä ei tarvitse kaulia ohuiksi leiviksi.
+4. Kuumenna luettelon paistoöljy pannulla keskilämpöä miedommalla lämmöllä. Paista kiekkoja rauhallisesti molemmin puolin, kunnes pinta on kullanruskea ja keskusta kypsä.
+5. Tarjoa lämpiminä luettelon maustamattoman tuorejuuston kanssa. Tuorejuusto on lisuke, ei taikinan täyte.
