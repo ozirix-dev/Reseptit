@@ -13,7 +13,7 @@
 5. Ei väitettä suoritetusta koepaistosta. Kokkijärkeen perustuva kirjoitus ei ole sama kuin mitattu koekeittiötulos.
 6. Korjauksille ei ole julkaistuja EN/SV/TH-käännöksiä tämän erän lähtötilanteessa; käännöksiin kohdistuvaa rinnakkaisen PR:n muokkausta vältetään.
 
-## Korjatut 17 reseptiä
+## Korjatut 15 reseptiä
 
 | Resepti | Olennainen korjaus |
 | --- | --- |
@@ -26,18 +26,16 @@
 | `kiinalainen-tomaattimunakas-riisilla` | Riisi keitetään; muna ja tomaatti pannulla; kevätsipuli lopuksi |
 | `korealainen-gyeran-mari-kasviksilla` | Hienonnetut kasvikset munaseokseen, rullaus vähitellen |
 | `lahi-ita-manakish-zaatarilla` | Täsmennetään reseptin timjami-seesamipäällyste ja jogurttitaikina |
-| `malesialainen-kaya-paahtoleipa` | Ensimmäinen muna kookoskayaan, toinen paistetaan lisukkeeksi |
 | `malesialainen-mee-goreng-aamunuudeleilla` | Kypsennetty nuudeli, tofu, pavunidut ja munat yhdessä pannulla |
 | `meksikolainen-munakokkeli-pico-de-gallolla` | Tomaatti-korianterilisuke ilman luettelosta puuttuvaa sipulia |
 | `pohjoisafrikkalainen-harcha-juustolla` | Mannasuurimoista paksu pannuleipä; tuorejuusto tarjoiluun |
 | `pohjoisafrikkalainen-maakouda` | Kypsä peruna, munat, persilja ja juustokumina pihviseokseksi |
-| `valimerellinen-halloumi-tomaattileipa` | Valmis hapanjuurileipä, paistettu halloumi, tomaatti ja oliivit |
 | `thai-maissifritterit` | Maissi-muna-jauhotaikinasta pienet pannufritterit ilman luetteloimattomia dippikastikkeita |
 | `vietnamilainen-banh-mi-munalla` | Valmis patonki, muna ja tuoreet porkkana-kurkkutäytteet; ei keksittyä pikkelöintiä |
 
-## Kahdeksan erilliseen selvitykseen jätettyä reseptiä
+## Kymmenen erilliseen selvitykseen jätettyä reseptiä
 
-Nämä olivat saman PR #358:n **25 geneerisen valmistusohjepohjan reseptin** jäljellä olevat kahdeksan. Ei kosketa sokkona aines- eikä ravintotietoihin:
+Kahdeksan alla olevista oli saman PR #358:n **25 geneerisen valmistusohjepohjan** jäljellä olevaa tapausta. Lisäksi kaksi GK149-menetelmäpakettiin sidottua lähdetekstiä jätettiin pois korjaus-PR:stä.  Ei kosketa sokkona aines- eikä ravintotietoihin:
 
 | ID | Miksi ei korjattu pelkällä tekstillä | Seuraava turvallinen ratkaisu |
 | --- | --- | --- |
@@ -49,10 +47,12 @@ Nämä olivat saman PR #358:n **25 geneerisen valmistusohjepohjan reseptin** jä
 | `karibia-saltfish-fritterit` | 1 tl suolakalaa sekä luettelosta puuttuva taikinaliemi; suolauksen poisto puutteellinen | Punnitse kala ja neste, määritä turvallinen liotus ja koko resepti uudelleen |
 | `malesialainen-roti-canai-dhalilla` | Taikinan neste ja dhalin valmistus puutteellisia suhteessa luetteloon | Koko taikinan ja linssimuhennoksen määrä- ja kypsennysarvio |
 | `pohjoisafrikkalainen-msemen-hunajalla` | Vehnäjauhoista ja mannasta tehtävään taiteltuun taikinaan ei ole nestettä | Määritä lisättävä neste ja tarkista sen vaikutus annoskohtaiseen laskentaan |
+| `malesialainen-kaya-paahtoleipa` | FI-lähdeteksti on lukitussa GK149-reseptisnapshotissa | Tee sisältökorjaus vain erillisessä GK149-hyväksyntä- ja uudelleensidontaprosessissa |
+| `valimerellinen-halloumi-tomaattileipa` | FI-lähdeteksti on lukitussa GK149-reseptisnapshotissa | Säilytä lähdesnapshot muuttumattomana, kunnes metodipaketin omistaja on hyväksynyt uuden sidonnan |
 
 ## Laajemman ainesosatarkistuksen jono
 
-PR #358 löysi yhteensä **109 mahdollisesti ristiriitaista reseptiä** (60:ssä puuttuvan lisäyksen epäily, 16:ssa tarjoilulisukkeen epäily, 25:ssä yleisohjepohja). Luokat ovat päällekkäisiä ja osa osumista on vääriä. Tämä PR korjaa vain 17 selkeää valmistusohjetapausta, ei kaikkia 109:ää.
+PR #358 löysi yhteensä **109 mahdollisesti ristiriitaista reseptiä** (60:ssä puuttuvan lisäyksen epäily, 16:ssa tarjoilulisukkeen epäily, 25:ssä yleisohjepohja). Luokat ovat päällekkäisiä ja osa osumista on vääriä. Tämä PR korjaa vain 15 selkeää valmistusohjetapausta, ei kaikkia 109:ää.
 
 **Erityinen tarkistinsääntö seuraavaan kierrokseen:** `valkosipuli`, `kevätsipuli` ja tavallinen `sipuli` on erotettava sanana tai täsmällisinä aliaspareina. Ei lisätä tavallista sipulia, jos reseptissä mainitaan vain valkosipuli.
 
