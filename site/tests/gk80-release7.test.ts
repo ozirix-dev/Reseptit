@@ -37,8 +37,9 @@ test('seven blocked proposals retain missing-polyol evidence and stay outside th
 
 test('all thirty existing translated pages preserve weighed masses, serving counts, macros and preparation structure',()=>{
  let checked=0;const historical=json('historical-source-text.json'),manifest=json('manifest.json');
- const publicationIndex=json('meta/kaannokset/published-translation-pairs.json');
- const reviewProofs=json('meta/kaannokset/codex-review-evidence.json');
+ const jsonFromRoot=(p:string)=>JSON.parse(readFileSync(new URL('../../'+p,import.meta.url),'utf8'));
+ const publicationIndex=jsonFromRoot('meta/kaannokset/published-translation-pairs.json');
+ const reviewProofs=jsonFromRoot('meta/kaannokset/codex-review-evidence.json');
  for(const r of recipes){
   const fiText=readFileSync(new URL(r.sourcePath,root),'utf8');
   const fiParsed=parseMarkdown(fiText)!;

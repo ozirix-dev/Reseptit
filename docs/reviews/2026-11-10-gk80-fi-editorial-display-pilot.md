@@ -23,6 +23,10 @@ Molemmissa puuroissa 45 minuutin kokonaisaika jää ennalleen, mutta toteutumine
 
 Täyden CI:n ensimmäisessä ajossa [#42708673724](https://github.com/ozirix-dev/Reseptit/actions/runs/42708673724) build onnistui ja 440/441 yksikkötestistä meni läpi. Ainoa FAIL oli Release 7:n historiallinen `existingLocales`-vaatimus, joka ei ottanut huomioon jo aiemmin julkaistuja EN/SV/TH-pareja (#370–372). Vanhaa sinettiä ei poisteta: testi hyväksyy nyt vain historiallisen kielijoukon ja julkaisusivurekisterin **ajantasaisella FI- ja käännös-SHA-todisteella** varmentamat lisäkieliversiot. Kaikki muut kielet hylätään edelleen. Tämä on yhden täsmäkorjauksen yritys, ei GK80-testirajojen yleinen höllennys.
 
+## Testin toisen ajon polkueste
+
+[CI #42709283276](https://github.com/ozirix-dev/Reseptit/actions/runs/42709283276) vahvisti jälleen buildin ja 440 yksikkötestin PASS-tuloksen. Ainoa FAIL oli korjatun historiatestin juuripolku: rekisteriä haettiin vahingossa `docs/nutrition/gk80-release-7/meta/...` eikä repon `meta/...`-kansiosta. Polku on korjattu lukemaan JSON suoraan repon juuresta. Ennakkotarkistuksessa Release 7 -joukon ainoa uusi kieliperhe oli quesadilla EN/SV/TH, ja kaikilla kolmella oli nykyisessä sivurekisterissä `outcome: pass` sekä ei avoimia P0/P1-merkintöjä. Muita suojauksia ei heikennetty.
+
 ## Turvaportti
 
 - Jokaisella kuudella on täsmällinen alkuperäinen FI-SHA; koodi ei käytä pelkkää reseptitunnistetta tai laajaa tekstikorvausta.
