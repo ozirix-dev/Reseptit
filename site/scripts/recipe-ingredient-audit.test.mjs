@@ -69,6 +69,27 @@ test("title-only legacy placeholders are excluded without being reported as pars
   assert.match(malformed.error, /YAML-frontmatter/);
 });
 
+test("garlic and spring onion do not masquerade as ordinary onion", () => {
+  const garlic = inspectRecipe(fixture(["valkosipulia"], "1. Hienonna valkosipuli."));
+  assert.deepEqual(typesOf(garlic, "sipuli"), []);
+  assert.deepEqual(typesOf(garlic, "valkosipuli"), []);
+  const spring = inspectRecipe(fixture(["kevätsipulia"], "1. Hienonna kevätsipuli."));
+  assert.deepEqual(typesOf(spring, "sipuli"), []);
+  const missing = inspectRecipe(fixture(["valkosipulia"], "1. Kuullota sipuli pehmeäksi."));
+  assert.ok(typesOf(missing, "sipuli").length, "ordinary onion used in directions is missing from garlic-only ingredients");
+  const shallot = inspectRecipe(fixture(["salottisipulia"], "1. Kuullota sipuli pehmeäksi."));
+  assert.deepEqual(typesOf(shallot, "sipuli"), []);
+});
+
+test("explicitly excluded ingredients do not create false recipe quality findings", () => {
+  const noGarlic = inspectRecipe(fixture(["riisiä"], "1. Kuumenna riisi. Valkosipulia ei tarvita tähän versioon."));
+  assert.deepEqual(typesOf(noGarlic, "valkosipuli"), []);
+  const noDip = inspectRecipe(fixture(["maissia"], "1. Paista maissi. Chilikastike ei kuulu tähän versioon."));
+  assert.deepEqual(typesOf(noDip, "chili"), []);
+  const noPickle = inspectRecipe(fixture(["porkkanaa"], "1. Lisää porkkanat. Etikkaa ei lisätä."));
+  assert.deepEqual(typesOf(noPickle, "etikka"), []);
+});
+
 test("full on-disk inventory counts published recipes, not drafts, and keeps all evidence", async () => {
   const root = await mkdtemp(path.join(os.tmpdir(), "recipe-ingredients-"));
   try {
