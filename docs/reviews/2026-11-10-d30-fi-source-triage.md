@@ -15,7 +15,7 @@
 - `uunimuna-avokadot`
 - `karibia-johnny-cake`
 
-22 FI-lähteen **SOURCE-HOLD** (66 suunniteltua kieliversiota jää kääntämättä tässä vaiheessa): 
+22 FI-lähteen **SOURCE-HOLD** (66 suunniteltua kieliversiota jää kääntämättä tässä vaiheessa):
 
 - `intialainen-besan-chilla`
 - `intialainen-pesarattu-mungpavuista`
