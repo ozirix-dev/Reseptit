@@ -41,3 +41,9 @@ Ensimmäisistä kuudesta on jo 18 EN/SV/TH-käännösluonnosta [PR #386](https:/
 5. Kokoa hyväksytyistä **yksi main-pohjainen julkaisu-PR**, jolla tavoite 20 FI / 60 kieliparia. Jos jokin rivi ei läpäise, pidä se HOLDissa eikä väkisin täytetä määrää. Yksi PR-CI per HEAD ja vain juurisyyhyn sidotut korjaukset; merge-SHA Pages build + deploy SUCCESS erillisenä varmistuksena.
 
 Tämä on **lähdevalinnan Draft**, ei 60 uuden käännöksen toimitus, eikä julkaisusivurekisterin tai kanonisen FI-/GI/GK-aineiston muutos. Edellinen Pages-palautus vahvistettu; kaikki tulevat main-merge-SHA:t on silti tarkistettava erikseen.
+
+## Konsolidointi yhteen E20 Draft-PR:ään 10.11.2026
+
+[PR #386](https://github.com/ozirix-dev/Reseptit/pull/386) (HEAD `9682b1022dc30958d7659e28ca3a68d29d655c46`) ja [PR #395](https://github.com/ozirix-dev/Reseptit/pull/395) (HEAD `96dc07a2e81e2828887316f16e289b869a414775`) sisälsivät yhteensä 18 ennestään laadittua EN/SV/TH **Draft**-tiedostoa. Ne on nyt kopioitu sanasta sanaan E20:n työhaaraan täsmälleen noista HEAD-versioista. Kinkkurullien, mee gorengin ja hu tieu -keiton 9 uutta Draft-käännöstä olivat jo tässä E20-haarassa.
+
+E20-haarassa on siis **9 FI-reseptin 27 kieliluonnosta**: 6 aiemmin kirjoitettua (18 kieliversiota) + 3 nyt kirjoitettua (9). **11 SOURCE-HOLDissa olevaa FI-lähdettä ei ole käännetty.** Kaikilla 27 kieliversiolla `status: draft` ja julkaisuvaltuus `false`. Aiemmat kaksi Draft-PR:ää ovat tämän kopion jälkeen vain historiallisia lähtöaineistoja; niitä ei pidä yhdistää mainiin E20:n rinnalla. Yhdistäminen edellyttää edelleen 20 lähteen laatuhyväksyntää, semanttisia SHA-evidenssejä ja puhdasta main-pohjaista release-PR:ää. Käännösten `Draft`-tila ei ole julkaisu.
