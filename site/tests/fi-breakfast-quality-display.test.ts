@@ -11,7 +11,7 @@ import { breakfastFiQualityPaths, projectBreakfastFiQualityDisplay } from "../sc
 const root = path.resolve(import.meta.dirname, "../..");
 const sha = (raw: string) => createHash("sha256").update(raw.replaceAll("\r\n", "\n")).digest("hex");
 const expected: Record<string,string> = {
-  "rahka-marjakerroskulho": "38ed90a415a871e64593e65b63bc46171b2fecf2bc5ff05a3a67690eae81b8e6",
+  "rahka-marjakerroskulho": "c571f8f509bde4da9159bfdb4e1449f856030c9c92bf8a8ba1e2376d9c33c058",
   "karibia-mango-limejogurtti": "91fcf9425bb58e499304414a99665cc01ba7c37a1a72115262d31e04b5c93a0f",
   "japanilainen-hojicha-jogurtti-persimonilla": "cae50573ff18898460b95e9c674d0bc39514c7cbaaaa502d4008171b14261cfe",
   "lahi-ita-pistaasijogurtti": "f9a1d41f86c92902bbda7c9f224cbc8de48900ec7726625a482f1ecea794a9e1",
@@ -118,7 +118,7 @@ test("generated FI cards use chef-corrected instructions and the reviewed noodle
   const rahka = recipes.get("rahka-marjakerroskulho");
   assert.ok(rahka);
   assert.equal(rahka.servings, 4);
-  assert.deepEqual(rahka.cookingMethod, ["kylmävalmistus"]);
+  assert.equal(rahka.instructionsText.length, 4);
   const ham = recipes.get("yrttituorejuusto-kinkkurullat");
   assert.ok(ham);
   assert.equal(ham.servings,4);

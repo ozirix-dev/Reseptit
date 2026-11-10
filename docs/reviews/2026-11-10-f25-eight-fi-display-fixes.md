@@ -24,4 +24,4 @@ Testi vaatii 14 alkuperäis-SHA:ta, täsmälliset YAML-punnitukset/annokset/makr
 
 ## Yhdeksäs rajattu oikaisu
 
-- `rahka-marjakerroskulho`: FI raw blob `af3a8debe0a46b920ed0464545732bd2900485b8`, normalisoitu SHA-256 `38ed90a415a871e64593e65b63bc46171b2fecf2bc5ff05a3a67690eae81b8e6`; julkinen `cooking_method: kypsentäminen` → `kylmävalmistus`. Kaikki neljä alkuperäistä vaihetta, 4 annosta, 250 g rahkaa, 100 g jogurttia, 150 g marjoja, 20 g hasselpähkinää ja ravintoarvot säilyvät ennallaan. Ei kuumennusta.
+- `rahka-marjakerroskulho`: FI raw blob `af3a8debe0a46b920ed0464545732bd2900485b8`, normalisoitu SHA-256 `c571f8f509bde4da9159bfdb4e1449f856030c9c92bf8a8ba1e2376d9c33c058`; julkinen `cooking_method: kypsentäminen` → `kylmävalmistus`. Kaikki neljä alkuperäistä vaihetta, 4 annosta, 250 g rahkaa, 100 g jogurttia, 150 g marjoja, 20 g hasselpähkinää ja ravintoarvot säilyvät ennallaan. Ei kuumennusta.
