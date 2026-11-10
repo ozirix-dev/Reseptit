@@ -60,5 +60,5 @@ Muita mahdollisia klassisia yhdistelmiä ovat vadelmahillo ja kermavaahto sekä 
 - Kiehuva vesi lisätään hitaasti vatkaten. Suuri kulho auttaa, sillä vaahto kasvaa selvästi.
 - Kakku on kuohkea mutta voi murentua halkaistaessa, jos sitä ei jäähdytetä kunnolla.
 - **Hiilihydraattipitoinen – GK ei laskettu.** Sokerin ja vehnäjauhon vuoksi pohjassa on runsaasti imeytyviä hiilihydraatteja. Glykeemistä kuormaa ei luokitella ilman tämän reseptin perusteltua GI-tietoa; sitä ei päätellä pelkistä hiilihydraateista. Täytettyjen kakkujen ravintoarvot arvioidaan kokonaiselle reseptille.
-- Ravintoarvot ovat 10 annoksen **laskennallinen arvio** (imeytyvä hiilihydraatti, proteiini ja rasva). Käytetyt tuotteet, raakapainot ja epävarmuudet: [ravintoarvojen laskentamuistio](../../docs/nutrition/sienikakkupohja-ja-mansikkataytekakku-2026-11-10.md). Kokonaishiilihydraatteja kuitu mukaan lukien ei ole arvioitu erikseen.
+- Ravintoarvot ovat 10 annoksen **laskennallinen arvio** (imeytyvä hiilihydraatti, proteiini ja rasva). Käytetyt tuotteet, raakapainot ja epävarmuudet: [ravintoarvojen laskentamuistio](https://github.com/ozirix-dev/Reseptit/blob/main/docs/nutrition/sienikakkupohja-ja-mansikkataytekakku-2026-11-10.md). Kokonaishiilihydraatteja kuitu mukaan lukien ei ole arvioitu erikseen.
 - Tämä on perinteinen resepti, ei keto- tai VHH-muunnelma.
