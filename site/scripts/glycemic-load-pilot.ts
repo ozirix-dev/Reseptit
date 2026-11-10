@@ -34,6 +34,7 @@ import {
 } from "./glycemic-load-model";
 import { glycemicLoadEvidenceHash, glycemicLoadInputHash, recipeBindingHash, recipeBindingMatches, exactRecipeTextBindingMatches } from "./glycemic-load-recipe-binding";
 import { siteContent } from "../src/generated/content.generated";
+import { isPublicRecipeQuarantined } from "./public-recipe-quarantine";
 import { parseMarkdown } from "../src/content/markdown";
 import { completePublishedRecipeInputs, type PublishedRecipeInputSource } from "./glycemic-load-pilot-input";
 
@@ -215,6 +216,9 @@ const publicResults = results.flatMap((result) => {
     // independent of the production-only GL pilot corpus, while still failing
     // a normal site build if any selected Finnish recipe disappears.
     if (isFixtureBuild) return [];
+    // The sealed legacy source/approved GK study stays in the internal audit,
+    // but its explicitly quarantined recipe must have no public route/GL card.
+    if (isPublicRecipeQuarantined(result.recipeId) && publishedRecipeSources.has(result.recipeId)) return [];
     throw new Error(`Finnish published recipe is missing for GL pilot item: ${result.recipeId}`);
   }
   const translations = siteContent.recipes.filter((entry) => entry.recipeId === result.recipeId);
