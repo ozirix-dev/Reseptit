@@ -13,6 +13,11 @@ servings: 13
 time_total_min: 85
 difficulty: helppo
 tags: [gluteeniton, pannukakku, jälkiruoka, kaura]
+image:
+  src: jalkiruoat/gluteeniton-uunipannukakku.webp
+  alt: "Piirros uunipannukakusta, marjoista ja kermavaahdosta"
+  width: 1500
+  height: 1000
 ingredients:
   - {amount: 8, unit: dl, item: Valio kevytmaitoa, note: "1,5 % rasvaa"}
   - {amount: 3, unit: kpl, item: kananmunaa}
