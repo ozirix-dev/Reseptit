@@ -17,17 +17,17 @@ ingredients:
   - {amount: 4, unit: kpl, item: kananmunaa, note: sienikakkupohjaan}
   - {amount: 2, unit: dl, item: sokeria, note: sienikakkupohjaan}
   - {amount: 1, unit: dl, item: vettä, note: kiehuvana sienikakkupohjaan}
-  - {amount: 3, unit: dl, item: vehnäjauhoja, note: sienikakkupohjaan}
+  - {amount: 3, unit: dl, item: puolikarkeita vehnäjauhoja, note: sienikakkupohjaan}
   - {amount: 1.5, unit: tl, item: leivinjauhetta, note: sienikakkupohjaan}
   - {amount: 4, unit: dl, item: kuohukermaa, note: täytteeseen ja kuorrutukseen}
   - {amount: 1, unit: rkl, item: vaniljasokeria, note: kermavaahtoon}
   - {amount: 150, unit: g, item: mansikkahilloa, note: täytteeseen}
   - {amount: 300, unit: g, item: tuoreita mansikoita, note: täytteeseen ja koristeluun}
   - {amount: 0.5, unit: dl, item: maitoa, note: kakkulevyjen kevyeen kostutukseen}
-carbs_net_per_serving_g: null
+carbs_net_per_serving_g: 41.84
 carbs_total_per_serving_g: null
-protein_per_serving_g: null
-fat_per_serving_g: null
+protein_per_serving_g: 6.03
+fat_per_serving_g: 16.33
 ---
 
 # Perinteinen mansikkatäytekakku sienikakkupohjalla
@@ -57,5 +57,5 @@ Kaikki pohjan, täytteen, kostutuksen ja kuorrutuksen ainekset ovat rakenteisess
 - Pohjasta löytyy myös itsenäinen resepti: [Sienikakkupohja](sienikakkupohja.md).
 - Kostutus pidetään kevyenä, sillä sienikakkupohja on luonnostaan pehmeä.
 - **GK: todennäköisesti korkea (sanallinen arvio, ei laskettu eikä vahvistettu).** GK riippuu palakoosta sekä käytetyn hillon ja muiden tuotteiden hiilihydraateista. Julkaisuun ei arvata tarkkaa GK-lukua.
-- Ravintoarvokentät jätetään tyhjiksi, kunnes tuotekohtainen ravintoarvolaskenta ja annoskoon tarkistus on tehty. Täytekakku ei ole VHH- eikä keto-resepti.
+- Ravintoarvot ovat 10 annoksen **laskennallinen arvio** (imeytyvä hiilihydraatti, proteiini ja rasva) tuotteiden oletusvalinnoilla. Kokonaishiilihydraatteja kuitu mukaan lukien ei ole laskettu. [Tuotekohtainen laskentamuistio](../../docs/nutrition/sienikakkupohja-ja-mansikkataytekakku-2026-11-10.md). Täytekakku ei ole VHH- eikä keto-resepti.
 - Tämä on uusi omatekoinen perinnereseptin toimituksellinen luonnos; sitä ei ole koepaistettu.
