@@ -206,6 +206,48 @@
     "outcome": "pass",
     "findings": []
   },
+  "falafel:en": {
+    "source_hash": "28b11be3af2c74ff40d1a30dd5819f49b6d52e482373965447e6fd7a86ef9daf",
+    "translation_hash": "f73be74ee67a97bc8c4c19ae22d3cd00965399b41466684a412b4333d232a52b",
+    "reviewed_at": "2026-11-10",
+    "reference": "docs/reviews/2026-11-10-a8-24-final-meaning-release.md | FI original main a90df8fa7698 + #361 SHA-pinned public FI overlay; ChatGPT AI FI-EN-SV-TH semantic comparison, no independent human review",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "open",
+        "summary": "GK/GK80-sealed original FI instructions are preserved byte-for-byte; translations follow verified SHA-pinned public FI presentation from PR #361, not the uncorrected historical source text."
+      }
+    ]
+  },
+  "falafel:sv": {
+    "source_hash": "28b11be3af2c74ff40d1a30dd5819f49b6d52e482373965447e6fd7a86ef9daf",
+    "translation_hash": "7dc46e84c3ffbf689ae431bb2697e7498d185cd5d43a4c2832201d553a1ff8a3",
+    "reviewed_at": "2026-11-10",
+    "reference": "docs/reviews/2026-11-10-a8-24-final-meaning-release.md | FI original main a90df8fa7698 + #361 SHA-pinned public FI overlay; ChatGPT AI FI-EN-SV-TH semantic comparison, no independent human review",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "open",
+        "summary": "GK/GK80-sealed original FI instructions are preserved byte-for-byte; translations follow verified SHA-pinned public FI presentation from PR #361, not the uncorrected historical source text."
+      }
+    ]
+  },
+  "falafel:th": {
+    "source_hash": "28b11be3af2c74ff40d1a30dd5819f49b6d52e482373965447e6fd7a86ef9daf",
+    "translation_hash": "2f11d18e797d1bfe7e83ee2fbca229cbbdeff55c03a861db8263f806ff044a98",
+    "reviewed_at": "2026-11-10",
+    "reference": "docs/reviews/2026-11-10-a8-24-final-meaning-release.md | FI original main a90df8fa7698 + #361 SHA-pinned public FI overlay; ChatGPT AI FI-EN-SV-TH semantic comparison, no independent human review",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "open",
+        "summary": "GK/GK80-sealed original FI instructions are preserved byte-for-byte; translations follow verified SHA-pinned public FI presentation from PR #361, not the uncorrected historical source text."
+      }
+    ]
+  },
   "gai-yang-vhh:en": {
     "source_hash": "cb57ce3fb2e6a50c91ed7e2898b2984c62833f069783e9a7ada355ec9a987e01",
     "translation_hash": "6d4b0295634729d44ec4e3bcbe5f29e97e9c50774fa8adb4f179407113afcbdc",
@@ -583,6 +625,48 @@
     "reference": "V2 riskierä 2, main 358bbadf9e8f28db254bcfc3bd68c4bdcc8f6e5c",
     "outcome": "pass",
     "findings": []
+  },
+  "jerk-kana:en": {
+    "source_hash": "ba57a87d82ae75cd8b7c39160d2567928eb6062dde4b5c0182fe6034081b3ed6",
+    "translation_hash": "2eaf15539c6680a22a8dbe41448fc2e77c7eb227df98ed6545c2a753aabd36ba",
+    "reviewed_at": "2026-11-10",
+    "reference": "docs/reviews/2026-11-10-a8-24-final-meaning-release.md | FI original main a90df8fa7698 + #361 SHA-pinned public FI overlay; ChatGPT AI FI-EN-SV-TH semantic comparison, no independent human review",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "open",
+        "summary": "GK/GK80-sealed original FI instructions are preserved byte-for-byte; translations follow verified SHA-pinned public FI presentation from PR #361, not the uncorrected historical source text."
+      }
+    ]
+  },
+  "jerk-kana:sv": {
+    "source_hash": "ba57a87d82ae75cd8b7c39160d2567928eb6062dde4b5c0182fe6034081b3ed6",
+    "translation_hash": "6e777cf8f768065f36952be1dcba7a96e0b34522a78c71030ae7fb26ae34c407",
+    "reviewed_at": "2026-11-10",
+    "reference": "docs/reviews/2026-11-10-a8-24-final-meaning-release.md | FI original main a90df8fa7698 + #361 SHA-pinned public FI overlay; ChatGPT AI FI-EN-SV-TH semantic comparison, no independent human review",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "open",
+        "summary": "GK/GK80-sealed original FI instructions are preserved byte-for-byte; translations follow verified SHA-pinned public FI presentation from PR #361, not the uncorrected historical source text."
+      }
+    ]
+  },
+  "jerk-kana:th": {
+    "source_hash": "ba57a87d82ae75cd8b7c39160d2567928eb6062dde4b5c0182fe6034081b3ed6",
+    "translation_hash": "173abdab731d7b86704f29dca836c7e9b37cf450df35d734654668c5d664a7af",
+    "reviewed_at": "2026-11-10",
+    "reference": "docs/reviews/2026-11-10-a8-24-final-meaning-release.md | FI original main a90df8fa7698 + #361 SHA-pinned public FI overlay; ChatGPT AI FI-EN-SV-TH semantic comparison, no independent human review",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "open",
+        "summary": "GK/GK80-sealed original FI instructions are preserved byte-for-byte; translations follow verified SHA-pinned public FI presentation from PR #361, not the uncorrected historical source text."
+      }
+    ]
   },
   "kaakao-kookos-chia:en": {
     "source_hash": "e2c4dfeae5b57e93456a85d9aa5e08b602f18d933dac58c596691a93a8f23c4e",
@@ -1264,6 +1348,48 @@
     "outcome": "pass",
     "findings": []
   },
+  "kimchi-jjigae:en": {
+    "source_hash": "cca09981701e7d2f640750df0551491f116fdcc285d0979cdd0948286aea0670",
+    "translation_hash": "3d46c06adea3b94e81b214f1a559bf898efd6caccf0b0a6de9f92a12be253559",
+    "reviewed_at": "2026-11-10",
+    "reference": "docs/reviews/2026-11-10-a8-24-final-meaning-release.md | FI original main a90df8fa7698 + #361 SHA-pinned public FI overlay; ChatGPT AI FI-EN-SV-TH semantic comparison, no independent human review",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "open",
+        "summary": "GK/GK80-sealed original FI instructions are preserved byte-for-byte; translations follow verified SHA-pinned public FI presentation from PR #361, not the uncorrected historical source text."
+      }
+    ]
+  },
+  "kimchi-jjigae:sv": {
+    "source_hash": "cca09981701e7d2f640750df0551491f116fdcc285d0979cdd0948286aea0670",
+    "translation_hash": "27f290e07e4cf9977dba887e14e45c95ef7892f29231dd8f9f10aac627c83ae3",
+    "reviewed_at": "2026-11-10",
+    "reference": "docs/reviews/2026-11-10-a8-24-final-meaning-release.md | FI original main a90df8fa7698 + #361 SHA-pinned public FI overlay; ChatGPT AI FI-EN-SV-TH semantic comparison, no independent human review",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "open",
+        "summary": "GK/GK80-sealed original FI instructions are preserved byte-for-byte; translations follow verified SHA-pinned public FI presentation from PR #361, not the uncorrected historical source text."
+      }
+    ]
+  },
+  "kimchi-jjigae:th": {
+    "source_hash": "cca09981701e7d2f640750df0551491f116fdcc285d0979cdd0948286aea0670",
+    "translation_hash": "6b6a51dd50a62c3abfd74d417c258dc4e284e5a3ecdea5a63557e1afc9830b99",
+    "reviewed_at": "2026-11-10",
+    "reference": "docs/reviews/2026-11-10-a8-24-final-meaning-release.md | FI original main a90df8fa7698 + #361 SHA-pinned public FI overlay; ChatGPT AI FI-EN-SV-TH semantic comparison, no independent human review",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "open",
+        "summary": "GK/GK80-sealed original FI instructions are preserved byte-for-byte; translations follow verified SHA-pinned public FI presentation from PR #361, not the uncorrected historical source text."
+      }
+    ]
+  },
   "kookos-lime-kanacurry:en": {
     "source_hash": "ee1e683b3a216af6af7b6d980f0b0c958d30f028370bddab777b3b1d485ee07c",
     "translation_hash": "eb230dd9b4c835f8585c96967a3043244c833aade874fd391a9d328641732eb4",
@@ -1408,6 +1534,90 @@
     "outcome": "pass",
     "findings": []
   },
+  "lanttulaatikko-kermainen:en": {
+    "source_hash": "6284d12cff1fe83f6e134d7d49301d2f959215d2d6680cd871850618705a068f",
+    "translation_hash": "3898af6ed375e1267b91ac2a46c463ef4993bcea067e5f0444a3d643c223f3cb",
+    "reviewed_at": "2026-11-10",
+    "reference": "docs/reviews/2026-11-10-a8-24-final-meaning-release.md | FI original main a90df8fa7698 + #361 SHA-pinned public FI overlay; ChatGPT AI FI-EN-SV-TH semantic comparison, no independent human review",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "open",
+        "summary": "GK/GK80-sealed original FI instructions are preserved byte-for-byte; translations follow verified SHA-pinned public FI presentation from PR #361, not the uncorrected historical source text."
+      }
+    ]
+  },
+  "lanttulaatikko-kermainen:sv": {
+    "source_hash": "6284d12cff1fe83f6e134d7d49301d2f959215d2d6680cd871850618705a068f",
+    "translation_hash": "eed95171f0e6b44a6b983a529c5259d60877a91cf5c8e5ccc5f2a891a0b3f728",
+    "reviewed_at": "2026-11-10",
+    "reference": "docs/reviews/2026-11-10-a8-24-final-meaning-release.md | FI original main a90df8fa7698 + #361 SHA-pinned public FI overlay; ChatGPT AI FI-EN-SV-TH semantic comparison, no independent human review",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "open",
+        "summary": "GK/GK80-sealed original FI instructions are preserved byte-for-byte; translations follow verified SHA-pinned public FI presentation from PR #361, not the uncorrected historical source text."
+      }
+    ]
+  },
+  "lanttulaatikko-kermainen:th": {
+    "source_hash": "6284d12cff1fe83f6e134d7d49301d2f959215d2d6680cd871850618705a068f",
+    "translation_hash": "6eee49a4188422fe1fcdb007d6f9c9fa79944dbb0998cf82e74d193befd1db72",
+    "reviewed_at": "2026-11-10",
+    "reference": "docs/reviews/2026-11-10-a8-24-final-meaning-release.md | FI original main a90df8fa7698 + #361 SHA-pinned public FI overlay; ChatGPT AI FI-EN-SV-TH semantic comparison, no independent human review",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "open",
+        "summary": "GK/GK80-sealed original FI instructions are preserved byte-for-byte; translations follow verified SHA-pinned public FI presentation from PR #361, not the uncorrected historical source text."
+      }
+    ]
+  },
+  "lindstrominpihvit-kaalilla:en": {
+    "source_hash": "f0c219c24b0147f8419dd96d16d82aa8f7a1871d32c4b0004e9795be8fd35736",
+    "translation_hash": "a5c43a879b7cdb02e9789b8c1aaa7bec746056e8833c12ca3405cae04dcf091f",
+    "reviewed_at": "2026-11-10",
+    "reference": "docs/reviews/2026-11-10-a8-24-final-meaning-release.md | FI original main a90df8fa7698 + #361 SHA-pinned public FI overlay; ChatGPT AI FI-EN-SV-TH semantic comparison, no independent human review",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "open",
+        "summary": "GK/GK80-sealed original FI instructions are preserved byte-for-byte; translations follow verified SHA-pinned public FI presentation from PR #361, not the uncorrected historical source text."
+      }
+    ]
+  },
+  "lindstrominpihvit-kaalilla:sv": {
+    "source_hash": "f0c219c24b0147f8419dd96d16d82aa8f7a1871d32c4b0004e9795be8fd35736",
+    "translation_hash": "1074dac92c5649c074f785ee10e391460a32f592771533b7a9a28f5d331a8848",
+    "reviewed_at": "2026-11-10",
+    "reference": "docs/reviews/2026-11-10-a8-24-final-meaning-release.md | FI original main a90df8fa7698 + #361 SHA-pinned public FI overlay; ChatGPT AI FI-EN-SV-TH semantic comparison, no independent human review",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "open",
+        "summary": "GK/GK80-sealed original FI instructions are preserved byte-for-byte; translations follow verified SHA-pinned public FI presentation from PR #361, not the uncorrected historical source text."
+      }
+    ]
+  },
+  "lindstrominpihvit-kaalilla:th": {
+    "source_hash": "f0c219c24b0147f8419dd96d16d82aa8f7a1871d32c4b0004e9795be8fd35736",
+    "translation_hash": "91bd666c4b99f899f7f1574c5cbb5986a2bbacb00bd383afa5c2649c4f4f76ed",
+    "reviewed_at": "2026-11-10",
+    "reference": "docs/reviews/2026-11-10-a8-24-final-meaning-release.md | FI original main a90df8fa7698 + #361 SHA-pinned public FI overlay; ChatGPT AI FI-EN-SV-TH semantic comparison, no independent human review",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "open",
+        "summary": "GK/GK80-sealed original FI instructions are preserved byte-for-byte; translations follow verified SHA-pinned public FI presentation from PR #361, not the uncorrected historical source text."
+      }
+    ]
+  },
   "linssimakaronilaatikko:en": {
     "source_hash": "088c374b48f1752db690afae3c329ba2cda0d42b722a0fcd8181bd3d5c006fba",
     "translation_hash": "b202f6144d8c8781140569acdc71d59b417d25e3624bd8a3fd1de68eafc66988",
@@ -1458,6 +1668,48 @@
     "reference": "V2 riskierä / lähdecommit 6034aa9880dbc774639e58c2926c05f6100e7fc6",
     "outcome": "pass",
     "findings": []
+  },
+  "maksalaatikko-kukkakaalilla:en": {
+    "source_hash": "ef27c9322f2f2b05564f7b19c4f969bee89fa479b47b2091caa27c25c758a20a",
+    "translation_hash": "469865ada753428b56cf22e8d2a5ec0292018513b70c2dd926a0e6c820274d74",
+    "reviewed_at": "2026-11-10",
+    "reference": "docs/reviews/2026-11-10-a8-24-final-meaning-release.md | FI original main a90df8fa7698 + #361 SHA-pinned public FI overlay; ChatGPT AI FI-EN-SV-TH semantic comparison, no independent human review",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "open",
+        "summary": "GK/GK80-sealed original FI instructions are preserved byte-for-byte; translations follow verified SHA-pinned public FI presentation from PR #361, not the uncorrected historical source text."
+      }
+    ]
+  },
+  "maksalaatikko-kukkakaalilla:sv": {
+    "source_hash": "ef27c9322f2f2b05564f7b19c4f969bee89fa479b47b2091caa27c25c758a20a",
+    "translation_hash": "5556204281d291fc403dfc0cebf5083fad926c8d6038d089a41167e6da992401",
+    "reviewed_at": "2026-11-10",
+    "reference": "docs/reviews/2026-11-10-a8-24-final-meaning-release.md | FI original main a90df8fa7698 + #361 SHA-pinned public FI overlay; ChatGPT AI FI-EN-SV-TH semantic comparison, no independent human review",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "open",
+        "summary": "GK/GK80-sealed original FI instructions are preserved byte-for-byte; translations follow verified SHA-pinned public FI presentation from PR #361, not the uncorrected historical source text."
+      }
+    ]
+  },
+  "maksalaatikko-kukkakaalilla:th": {
+    "source_hash": "ef27c9322f2f2b05564f7b19c4f969bee89fa479b47b2091caa27c25c758a20a",
+    "translation_hash": "bd9ae58f5a5809e1504dadf761daebdca22877042367f5ef26a830e6384ce66a",
+    "reviewed_at": "2026-11-10",
+    "reference": "docs/reviews/2026-11-10-a8-24-final-meaning-release.md | FI original main a90df8fa7698 + #361 SHA-pinned public FI overlay; ChatGPT AI FI-EN-SV-TH semantic comparison, no independent human review",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "open",
+        "summary": "GK/GK80-sealed original FI instructions are preserved byte-for-byte; translations follow verified SHA-pinned public FI presentation from PR #361, not the uncorrected historical source text."
+      }
+    ]
   },
   "malesialainen-congee-inkivaarilla:en": {
     "source_hash": "59e6bbb4ad92cc4ee3db46a9aa35ee7b50b0423d4c2d927e004e78c2fd9bd38e",
@@ -2251,6 +2503,48 @@
     "outcome": "pass",
     "findings": []
   },
+  "shoyu-kanakeitto-konjac:en": {
+    "source_hash": "63c43851d439bfabf6940a66b360da2c1b89ba0f59326f3a03df65c36accc290",
+    "translation_hash": "3e1821c493bd4c0ef3e3dc42423128e8bf450542d668cc4b727f9b736cce0a06",
+    "reviewed_at": "2026-11-10",
+    "reference": "docs/reviews/2026-11-10-a8-24-final-meaning-release.md | FI original main a90df8fa7698 + #361 SHA-pinned public FI overlay; ChatGPT AI FI-EN-SV-TH semantic comparison, no independent human review",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "open",
+        "summary": "GK/GK80-sealed original FI instructions are preserved byte-for-byte; translations follow verified SHA-pinned public FI presentation from PR #361, not the uncorrected historical source text."
+      }
+    ]
+  },
+  "shoyu-kanakeitto-konjac:sv": {
+    "source_hash": "63c43851d439bfabf6940a66b360da2c1b89ba0f59326f3a03df65c36accc290",
+    "translation_hash": "99a5077869cbb5b536df7697a8de39b059ae33be8e3bb9cceead78ca81de2203",
+    "reviewed_at": "2026-11-10",
+    "reference": "docs/reviews/2026-11-10-a8-24-final-meaning-release.md | FI original main a90df8fa7698 + #361 SHA-pinned public FI overlay; ChatGPT AI FI-EN-SV-TH semantic comparison, no independent human review",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "open",
+        "summary": "GK/GK80-sealed original FI instructions are preserved byte-for-byte; translations follow verified SHA-pinned public FI presentation from PR #361, not the uncorrected historical source text."
+      }
+    ]
+  },
+  "shoyu-kanakeitto-konjac:th": {
+    "source_hash": "63c43851d439bfabf6940a66b360da2c1b89ba0f59326f3a03df65c36accc290",
+    "translation_hash": "d954d70853aa14e8d4a5016c73ca4cd0fe242f245d04cbdf2dae7e44982bf53e",
+    "reviewed_at": "2026-11-10",
+    "reference": "docs/reviews/2026-11-10-a8-24-final-meaning-release.md | FI original main a90df8fa7698 + #361 SHA-pinned public FI overlay; ChatGPT AI FI-EN-SV-TH semantic comparison, no independent human review",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "open",
+        "summary": "GK/GK80-sealed original FI instructions are preserved byte-for-byte; translations follow verified SHA-pinned public FI presentation from PR #361, not the uncorrected historical source text."
+      }
+    ]
+  },
   "siemengranola-jogurtilla:en": {
     "source_hash": "66c5bad2af28482e019ebb7277d840d8cf0d063267e796dd9496743db28c4e03",
     "translation_hash": "f8b492a0703913abc5e1b521e64a592a5e98f93b638db75c02efce0669940336",
@@ -2706,6 +3000,48 @@
     "reference": "docs/reviews/i18n-b10-15-meaning-review-2026-11-09.md | FI source a7df722525de; ChatGPT AI comparison; no human review",
     "outcome": "pass",
     "findings": []
+  },
+  "vhh-brita-kakku:en": {
+    "source_hash": "f806f35cff641a8041938835acec0af3258ebbb0c3f07d2406834e30670067d7",
+    "translation_hash": "3449a8ef09c9753503bf839810f178d13ea3fd6c4479dda727b3e42d3f7de2bf",
+    "reviewed_at": "2026-11-10",
+    "reference": "docs/reviews/2026-11-10-a8-24-final-meaning-release.md | FI original main a90df8fa7698 + #361 SHA-pinned public FI overlay; ChatGPT AI FI-EN-SV-TH semantic comparison, no independent human review",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "open",
+        "summary": "GK/GK80-sealed original FI instructions are preserved byte-for-byte; translations follow verified SHA-pinned public FI presentation from PR #361, not the uncorrected historical source text."
+      }
+    ]
+  },
+  "vhh-brita-kakku:sv": {
+    "source_hash": "f806f35cff641a8041938835acec0af3258ebbb0c3f07d2406834e30670067d7",
+    "translation_hash": "ecd7a81d644e00ca15a70e8edb5b3d2846f25b45f050fc6469cc649cc7ec8805",
+    "reviewed_at": "2026-11-10",
+    "reference": "docs/reviews/2026-11-10-a8-24-final-meaning-release.md | FI original main a90df8fa7698 + #361 SHA-pinned public FI overlay; ChatGPT AI FI-EN-SV-TH semantic comparison, no independent human review",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "open",
+        "summary": "GK/GK80-sealed original FI instructions are preserved byte-for-byte; translations follow verified SHA-pinned public FI presentation from PR #361, not the uncorrected historical source text."
+      }
+    ]
+  },
+  "vhh-brita-kakku:th": {
+    "source_hash": "f806f35cff641a8041938835acec0af3258ebbb0c3f07d2406834e30670067d7",
+    "translation_hash": "668be705258ccc372018aedb2f7815c8a776fa8c257e04be3210b255ab06c610",
+    "reviewed_at": "2026-11-10",
+    "reference": "docs/reviews/2026-11-10-a8-24-final-meaning-release.md | FI original main a90df8fa7698 + #361 SHA-pinned public FI overlay; ChatGPT AI FI-EN-SV-TH semantic comparison, no independent human review",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "open",
+        "summary": "GK/GK80-sealed original FI instructions are preserved byte-for-byte; translations follow verified SHA-pinned public FI presentation from PR #361, not the uncorrected historical source text."
+      }
+    ]
   },
   "vhh-juustokakku:en": {
     "source_hash": "ccf9bc4d2bc8fa05cacae7b5435a52f5501432612192daf0a31d948045106c2a",

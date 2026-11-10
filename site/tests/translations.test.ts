@@ -5,6 +5,38 @@ import { semanticTermErrors, semanticProseErrors, semanticNoteErrors, semanticTa
 import { readFileSync } from "node:fs";
 import { parseMarkdown } from "../src/content/markdown";
 import { projectReviewedFiEditorialSource } from "../scripts/gk80-editorial-display";
+import { projectA8FiEditorialSource } from "../scripts/a8-editorial-display";
+
+test("A8 jerk and shoyu compare only to SHA-pinned public FI metadata", async () => {
+  const ids = ["jerk-kana", "shoyu-kanakeitto-konjac"];
+  const checked = await auditTranslations(ids);
+  assert.deepEqual(checked.errors, [], "source-projected published translations must pass strict audit");
+  assert.equal(checked.publishedTranslations.length, 6);
+  const jerk = checked.publishedSources.find(x => x.data.recipe_id === "jerk-kana")!;
+  const shoyu = checked.publishedSources.find(x => x.data.recipe_id === "shoyu-kanakeitto-konjac")!;
+  assert.equal(jerk.data.time_total_min, 90, "old GK-approved FI source must stay unchanged");
+  assert.deepEqual(shoyu.data.cooking_method, ["paistaminen"], "old GK80 source must stay sealed");
+  for (const source of [jerk, shoyu]) {
+    const raw = readFileSync(new URL("../../" + source.path, import.meta.url), "utf8");
+    const display = parseMarkdown(projectA8FiEditorialSource(source.path, raw))!;
+    assert.equal(display.data.recipe_id, source.data.recipe_id);
+    assert.throws(() => projectA8FiEditorialSource(source.path, raw + "\\n# drift"), /A8_EDITORIAL_SOURCE_STALE/);
+  }
+  for (const language of ["en","sv","th"]) {
+    const jerkTranslation = checked.publishedTranslations.find(x => x.data.recipe_id === "jerk-kana" && x.data.language === language)!;
+    const shoyuTranslation = checked.publishedTranslations.find(x => x.data.recipe_id === "shoyu-kanakeitto-konjac" && x.data.language === language)!;
+    assert.equal(jerkTranslation.data.time_total_min, 130);
+    assert.deepEqual(shoyuTranslation.data.cooking_method, ["keittäminen"]);
+    const badJerk = structuredClone(jerkTranslation);
+    badJerk.data.time_total_min = 90;
+    assert.ok(auditRecipePairs([jerk], [badJerk], new Map(), new Map([["jerk-kana",130]])).errors
+      .some(error => error.includes("time_total_min=90, expected 130")));
+    const badShoyu = structuredClone(shoyuTranslation);
+    badShoyu.data.cooking_method = ["paistaminen"];
+    assert.ok(auditRecipePairs([shoyu], [badShoyu], new Map([["shoyu-kanakeitto-konjac",["keittäminen"]]])).errors
+      .some(error => error.includes("cooking_method=paistaminen, expected keittäminen")));
+  }
+});
 
 test("review backlog fixes stay aligned in all four recipe locales", async () => {
   const real = await auditTranslations();
