@@ -5,6 +5,18 @@ import type { RecipeLocale } from "../src/types/content";
  * Remove a hold only when the repaired original, translations and nutrition are reviewed.
  */
 const holdReasons: Record<string, Record<RecipeLocale, string>> = {
+  "karibia-bammy-kassavaleipa": {
+    fi: "TURVALLISUUSVAROITUS: Reseptissä on 250 g tuoretta kassavaa, mutta kassavan lajiketta eikä syanogeenisten yhdisteiden poistamiseen riittävää, kyseiselle raaka-aineelle soveltuvaa käsittelyä ole varmennettu. Kuoriminen, raastaminen, puristaminen ja paistaminen eivät yksin osoita tämän ohjeen turvallisuutta. Reseptiä ei saa valmistaa tämän version mukaan.",
+    en: "FOOD SAFETY WARNING: This recipe calls for 250 g of fresh cassava without verifying the variety or a suitable processing method to reduce cyanogenic compounds. Peeling, grating, squeezing and pan-frying alone do not establish that these directions are safe. Do not cook from this version.",
+    sv: "LIVSMEDELSVARNING: Receptet innehåller 250 g färsk kassava utan verifierad sort eller lämplig behandling för att minska cyanogena ämnen. Skalning, rivning, pressning och stekning räcker inte som säkerhetsbevis för detta recept. Tillaga inte denna version.",
+    th: "คำเตือนด้านความปลอดภัยอาหาร: สูตรนี้ใช้มันสำปะหลังสด 250 กรัม แต่ยังไม่ได้ยืนยันชนิดและวิธีแปรรูปที่เหมาะสมเพื่อลดสารที่ปล่อยไซยาไนด์ การปอก ขูด บีบ และทอดตามข้อความเดิมยังไม่ใช่หลักฐานว่าปลอดภัย ห้ามทำตามสูตรฉบับนี้",
+  },
+  "kiinalainen-katkarapu-wontonkeitto": {
+    fi: "TURVALLISUUSVAROITUS: Katkarapuwontonien täytteen valmistaminen, nyyttien sulkeminen ja raakojen katkarapujen riittävä kypsennys puuttuvat tästä reseptistä. Yleisohje 'kuumenna öljy tai liemi' ei määritä turvallista keittoa. Älä valmista ruokaa tämän keskeneräisen ohjeen mukaan.",
+    en: "FOOD SAFETY WARNING: These directions omit how to prepare the shrimp filling, seal the wontons and thoroughly cook the raw shrimp. The generic 'heat oil or broth' step does not define safe cooking. Do not cook from this incomplete recipe.",
+    sv: "LIVSMEDELSVARNING: Receptet saknar anvisningar för räktfyllningen, hur wontonknytena försluts och hur råa räkor tillagas ordentligt. Det allmänna steget 'värm olja eller buljong' beskriver inte säker tillagning. Följ inte detta ofullständiga recept.",
+    th: "คำเตือนด้านความปลอดภัยอาหาร: สูตรนี้ยังขาดขั้นตอนเตรียมไส้กุ้ง ห่อเกี๊ยว และปรุงกุ้งดิบให้สุกทั่วถึง ข้อความทั่วไปให้ตั้งน้ำมันหรือน้ำซุปให้ร้อนไม่ใช่วิธีปรุงที่ปลอดภัย ห้ามทำตามสูตรฉบับนี้",
+  },
   "intialainen-idli-kookoschutneylla": {
     fi: "Ainesluettelossa on epäuskottava 150 g sinapinsiemeniä kahdelle. Riisin ja urad-linssien liotus sekä taikinan fermentointi puuttuvat, ja 25 minuutin kokonaisaika on väärä.",
     en: "The ingredient list specifies an implausible 150 g of mustard seeds for two. Rice/urad soaking and batter fermentation are missing; the 25-minute total time is incorrect.",
