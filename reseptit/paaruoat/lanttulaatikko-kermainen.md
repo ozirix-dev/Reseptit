@@ -26,7 +26,7 @@ ingredients:
   item: voita, myös vuokaan ja pinnalle tästä määrästä
 - amount: 55
   unit: g
-  item: kananmunaa kuorettomana
+  item: kananmunaa kuoretta
 - amount: 1
   unit: g
   item: jauhettua muskottipähkinää

@@ -48,7 +48,7 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 
 1. Lämmitä uuni 175 asteeseen. Vuoraa noin 20 × 30 cm uunivuoka leivinpaperilla.
 2. Vaahdota pehmeä voi ja erytritoli. Lisää keltuaiset yksitellen ja vatkaa tasaiseksi.
-3. Sekoita mantelijauho ja leivinjauhe keskenään. Kääntele jauhoseos voin, erytritolin ja keltuaisten seokseen tasaiseksi taikinaksi. Levitä taikina ohueksi levyksi vuoan pohjalle.
+3. Sekoita mantelijauho ja leivinjauhe. Levitä taikina ohueksi levyksi vuoan pohjalle.
 4. Vatkaa valkuaiset pehmeäksi vaahdoksi. Lisää erytritoli vähitellen ja jatka vatkaamista, kunnes marenki on kiiltävää.
 5. Levitä marenki pohjataikinan päälle ja paista 25–30 minuuttia. Jäähdytä täysin.
 6. Leikkaa jäähtynyt levy kahteen osaan. Vatkaa kerma pehmeäksi vaahdoksi, levitä toiselle levylle ja lisää viipaloidut mansikat.

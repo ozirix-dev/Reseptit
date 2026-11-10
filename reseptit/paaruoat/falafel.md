@@ -45,7 +45,7 @@ Falafelit tehdään yön yli liotetuista kuivatuista kikherneistä, yrteistä ja
 3. Peitä massa ja anna vetäytyä jääkaapissa 30 minuuttia. Muotoile noin 20 pientä palloa.
 4. Sekoita tahini ja sitruunamehu. Lisää kylmä vesi vähitellen, kunnes kastike on juoksevaa ja tasaista.
 5. Kuumenna uuni 220 asteeseen. Sivele falafelit kauttaaltaan mitatulla öljyllä ja paista leivinpaperilla 20–25 minuuttia, kunnes ne ovat kypsiä ja ruskistuneet. Käännä kerran paiston aikana.
-6. Tarjoa falafelit tässä ohjeessa valmistetun tahinikastikkeen kanssa. Salaatti ja pitaleipä voivat olla erillisiä valinnaisia lisukkeita, mutta ne eivät sisälly tämän version annoksiin tai ravintoarvoihin.
+6. Tarjoa tahinikastikkeen, salaatin ja pitaleivän kanssa.
 
 ## Muistiinpanot
 

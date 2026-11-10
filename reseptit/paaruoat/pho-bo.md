@@ -32,7 +32,7 @@ ingredients:
 
 # Vietnamilainen phở bò -naudanlihanuudelikeitto
 
-Kotikeittiöön sovitettu phở bò rakentuu pitkään haudutetusta luuliemestä, paahdetusta sipulista ja inkivääristä sekä lämpimistä mausteista. Raaka ohut naudanliha kypsyy kuumassa liemessä tarjoiltaessa.
+Kotikeittiöön sovitettu phở bò rakentuu pitkään haudutetusta luuliemestä, paahdetusta sipulista ja inkivääristä sekä lämpimistä mausteista. Tässä kotikeittiöversiossa ohuet naudanlihaviipaleet kypsennetään erikseen kuumassa liemessä ennen tarjoilua; pelkkä kiehuvan liemen kaataminen kulhoon ei takaa lihan turvallista kypsymistä.
 
 ## Valmistus
 
@@ -41,8 +41,8 @@ Kotikeittiöön sovitettu phở bò rakentuu pitkään haudutetusta luuliemestä
 3. Lisää kattilaan luut ja 4 litraa vettä. Kiehauta, kuori pinnalle nouseva vaahto ja hauduta hiljaa noin 2 tuntia.
 4. Paahda tähtianis, kaneli ja korianterinsiemenet kuivalla pannulla tuoksuviksi. Lisää ne liemeen paahdetun sipulin ja inkiväärin kanssa. Hauduta vielä 60 minuuttia.
 5. Siivilöi liemi. Mausta kalakastikkeella ja ruokosokerilla. Keitä riisinuudelit pakkauksen ohjeen mukaan.
-6. Jaa nuudelit kulhoihin ja asettele päälle hyvin ohuet naudanviipaleet. Kaada päälle kiehuvan kuuma liemi. Tarjoa pavunitujen, basilikan ja limetin kanssa.
+6. Kiehauta siivilöity liemi uudelleen ja kypsennä naudanviipaleet siinä erissä. Varmista lämpömittarilla, että liha saavuttaa vähintään 63 °C ja anna sen levätä kolme minuuttia ennen tarjoilua. Jaa kypsennetyt nuudelit ja naudanliha kulhoihin, kaada kuuma liemi päälle ja tarjoa pavunitujen, thaibasilikan, korianterin ja limetin kanssa.
 
 ## Muistiinpanot
 
-- Liemen hautumisaika on pitkä. Lihan tulee olla hyvin ohueksi leikattua, jotta kuuma liemi kypsentää sen turvallisesti tarjoilussa; vaihtoehtoisesti kypsennä viipaleet erikseen liemessä.
+- Liemen hautumisaika on pitkä. Älä luota pelkkään viipaleiden ohuuteen tai kulhoon kaadetun liemen lämpöön. Kypsennä naudanlihaviipaleet erikseen liemessä ja tarkista niiden kypsyys lämpömittarilla.

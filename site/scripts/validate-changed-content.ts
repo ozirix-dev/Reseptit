@@ -10,7 +10,7 @@ import { auditTranslations } from "./translation-audit";
 import { verifyNutritionEvidence } from "./nutrition-evidence";
 import type { Calculation } from "./nutrition-model";
 import { recipeBindingHash } from "./glycemic-load-recipe-binding";
-import { assertChangedRecipeAuditIsClean, duplicateRoutesForChangedRecipes, type PublishedRoute } from "./changed-content-checks";
+import { assertChangedRecipeAuditIsClean, duplicateRoutesForChangedRecipes, nutritionBindingInputsChanged, type PublishedRoute } from "./changed-content-checks";
 import { assertSnackPublicationReady } from "../src/content/recipe-validation";
 import { parseMarkdown, renderInstructionSteps, renderSafeMarkdown } from "../src/content/markdown";
 import { recipeFrontmatterSchema } from "../src/content/schema";
@@ -181,7 +181,11 @@ for (const recipeId of recipeIds) {
 
   const changedSource = changedRecipes.find((recipe) => recipe.data.recipe_id === recipeId && recipe.data.language === "fi");
   const boundRecipeHash = recipeBindings.recipes?.[recipeId];
-  if (changedSource && boundRecipeHash && semanticallyChanged.has(changedSource.path)) {
+  if (changedSource && boundRecipeHash && semanticallyChanged.has(changedSource.path) &&
+      nutritionBindingInputsChanged(previousRecipes.get(changedSource.path)?.data, changedSource.data)) {
+    // Do not silently approve a new ingredient, yield, or cooking-method
+    // fingerprint. For instruction-only edits, an already-stale historical
+    // fingerprint remains a separate audit issue, not a reason to block copy.
     const currentRecipeHash = recipeBindingHash(changedSource.markdown, recipeAliases.aliases ?? {});
     assert(currentRecipeHash === boundRecipeHash || await validateGk80Candidate(repoRoot, recipeId) || await validateRecovery(repoRoot,recipeId) || await validateScopedPolyolC(repoRoot,recipeId), `${recipeId}: GI/GK recipe binding is stale; review the related calculation before accepting this content change`);
   }

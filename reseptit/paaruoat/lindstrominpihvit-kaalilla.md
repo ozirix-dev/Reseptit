@@ -69,8 +69,8 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 ## Valmistus
 
 1. Raasta punajuuri ja hienonna sipuli. Sekoita jauhelihaan kananmuna, punajuuriliemi ja sinappi. Mausta.
-2. Muotoile seoksesta kahdeksan litteää pihviä. Paista ne 1 rkl:ssa voita keskilämmöllä noin 4 minuuttia per puoli, kunnes pihvit ovat kauttaaltaan kypsiä.
-3. Suikaloi kaali. Paista toisella pannulla jäljellä olevassa 1 rkl:ssa voita 10–12 minuuttia pehmeäksi ja kevyesti ruskistuneeksi. Käytä koko ohjeen 2 rkl voita, älä lisää ylimääräistä paistorasvaa.
+2. Muotoile seoksesta kahdeksan litteää pihviä. Paista voissa keskilämmöllä noin 4 minuuttia per puoli, kunnes pihvit ovat kypsiä.
+3. Suikaloi kaali. Paista toisella pannulla voissa 10–12 minuuttia pehmeäksi ja kevyesti ruskistuneeksi.
 4. Mausta kaali suolalla ja pippurilla ja tarjoa pihvien kanssa.
 
 ## Muistiinpanot

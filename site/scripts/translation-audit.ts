@@ -5,6 +5,8 @@ import { parseMarkdown } from "../src/content/markdown";
 import { recipeFrontmatterSchema } from "../src/content/schema";
 import type { z } from "zod";
 import { semanticTermErrors, semanticProseErrors, semanticNoteErrors, semanticTagErrors } from "./semantic-terms";
+import { loadTranslationPublicationIndex, overlayTranslationPublicationIndex } from "./translation-publication-index";
+import { projectReviewedFiEditorialSource } from "./gk80-editorial-display";
 
 const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 export const sourceCategories = ["alkuruoat", "paaruoat", "jalkiruoat", "leivonnaiset", "aamupalat", "valipalat"] as const;
@@ -150,13 +152,32 @@ export function knownTermErrors(source: Frontmatter, target: Frontmatter, locale
 export async function auditTranslations(recipeIds?: string[]): Promise<TranslationAuditResult> {
   const filter = recipeIds ? new Set(recipeIds) : undefined;
   const sourcePaths = (await Promise.all(sourceCategories.map((category) => markdownFiles(path.join(repoRoot, "reseptit", category))))).flat();
-  const sources = await readRecipes(sourcePaths, filter);
+  const sources = overlayTranslationPublicationIndex(await readRecipes(sourcePaths, filter), await loadTranslationPublicationIndex(repoRoot), filter);
   const translations = (await Promise.all(locales.map((locale) => markdownFiles(path.join(repoRoot, "kaannokset", locale))))).flat();
   const publishedTranslations = await readRecipes(translations, filter);
-  return auditRecipePairs(sources, publishedTranslations);
+  // Compare the coconut-rice preparation metadata to its SHA-pinned public FI
+  // version without ever changing the GK80-sealed raw source used by SHA review.
+  const reviewedMethods = new Map<string, readonly string[]>();
+  for (const source of sources) {
+    if (source.path !== "reseptit/aamupalat/thai-kookosriisi-mangolla.md") continue;
+    const raw = await readFile(path.join(repoRoot, source.path), "utf8");
+    const projected = parseMarkdown(projectReviewedFiEditorialSource(source.path, raw));
+    if (!projected) throw Error("EDITORIAL_COOKING_METHOD_NO_FRONTMATTER");
+    const publicData = recipeFrontmatterSchema.parse(projected.data);
+    if (publicData.recipe_id !== source.data.recipe_id ||
+        JSON.stringify(publicData.cooking_method) !== JSON.stringify(["keittäminen"])) {
+      throw Error("EDITORIAL_COOKING_METHOD_NOT_REVIEWED");
+    }
+    reviewedMethods.set(source.data.recipe_id, publicData.cooking_method ?? []);
+  }
+  return auditRecipePairs(sources, publishedTranslations, reviewedMethods);
 }
 
-export function auditRecipePairs(allSources: TranslationAuditResult["publishedSources"], allTranslations: TranslationAuditResult["publishedTranslations"]): TranslationAuditResult {
+export function auditRecipePairs(
+  allSources: TranslationAuditResult["publishedSources"],
+  allTranslations: TranslationAuditResult["publishedTranslations"],
+  reviewedMethods: ReadonlyMap<string, readonly string[]> = new Map(),
+): TranslationAuditResult {
   const sources = allSources.filter((r) => r.data.status === "published");
   const publishedTranslations = allTranslations.filter((r) => r.data.status === "published");
   const sourcesById = new Map(sources.map((recipe) => [recipe.data.recipe_id, recipe]));
@@ -197,7 +218,8 @@ export function auditRecipePairs(allSources: TranslationAuditResult["publishedSo
       if (target.language !== locale) issues.push(`language=${target.language}, expected ${locale}`);
       if (target.category !== source.data.category) issues.push(`category=${target.category}, expected ${source.data.category}`);
       if (target.servings !== source.data.servings) issues.push(`servings=${target.servings}, expected ${source.data.servings}`);
-      if (JSON.stringify(target.cooking_method ?? []) !== JSON.stringify(source.data.cooking_method ?? [])) issues.push(`cooking_method=${(target.cooking_method ?? []).join("|") || "missing"}, expected ${(source.data.cooking_method ?? []).join("|") || "missing"}`);
+      const expectedMethod = reviewedMethods.get(source.data.recipe_id) ?? source.data.cooking_method ?? [];
+      if (JSON.stringify(target.cooking_method ?? []) !== JSON.stringify(expectedMethod)) issues.push(`cooking_method=${(target.cooking_method ?? []).join("|") || "missing"}, expected ${expectedMethod.join("|") || "missing"}`);
       if (target.ingredients.length !== source.data.ingredients.length) issues.push(`ingredient count=${target.ingredients.length}, expected ${source.data.ingredients.length}`);
       const comparedCount = Math.min(source.data.ingredients.length, target.ingredients.length);
       for (let index = 0; index < comparedCount; index++) {
