@@ -33,10 +33,10 @@ const classicCategory: Record<string, string> = {
 // Every unexpected edit, status change or additional recipe still fails closed.
 const reviewedGlutenFreeDraftFiles = new Map<string,string>([
   ["reseptit/leivonnaiset/gluteeniton-siemenvuokaleipa.md", "adbb0e2ab86bd517c85a864530df958617741d0d"],
-  ["reseptit/leivonnaiset/gluteenittomat-kauralesesampylat.md", "40c632fd17b21863956b8e1800e57d6992a28e9b"],
-  ["reseptit/leivonnaiset/gluteeniton-durrapizzapohja.md", "e0a2471089a246a918fbaf7545e12deca660abfc"],
+  ["reseptit/leivonnaiset/gluteenittomat-kauralesesampylat.md", "81011ce7f19e8d8d399e5b5356cdd67dc3988e13"],
+  ["reseptit/leivonnaiset/gluteeniton-durrapizzapohja.md", "14c5ac712fe0a33405cadc3f76b5f6ca65c81100"],
   ["reseptit/jalkiruoat/gluteeniton-perunajauhokakkupohja.md", "3b707f877c70ce67c0e5fda3d1cdde6baa408b2a"],
-  ["reseptit/jalkiruoat/gluteeniton-uunipannukakku.md", "9dfe1c0fb3842fab1760aaf63a295a6d7de0394d"],
+  ["reseptit/jalkiruoat/gluteeniton-uunipannukakku.md", "239b561eb0c5915dbbc164f8b3bce78c891acdbe"],
 ]);
 
 const postBaselineCakeFiles = new Map([

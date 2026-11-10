@@ -1,5 +1,5 @@
 ---
-title: "Gluteeniton durrapizzapohja"
+title: "Gluteeniton durra-pizza tomaatilla ja mozzarellalla"
 recipe_id: gluteeniton-durrapizzapohja
 url_slug: gluteeniton-durrapizzapohja
 category: leivonnainen
@@ -21,6 +21,10 @@ ingredients:
   - {amount: 3, unit: tl, item: gluteenittomaksi merkittyä leivinjauhetta}
   - {amount: 2, unit: rkl, item: oliiviöljyä, note: taikinaan}
   - {amount: 2, unit: rkl, item: oliiviöljyä, note: leivinpaperin voiteluun}
+  - {amount: 150, unit: g, item: gluteenittomaksi merkittyä tomaattikastiketta, note: pizzan täytteeseen}
+  - {amount: 200, unit: g, item: mozzarellajuustoa, note: pizzan täytteeseen}
+  - {amount: 120, unit: g, item: kirsikkatomaatteja, note: pizzan täytteeseen}
+  - {amount: 10, unit: g, item: tuoretta basilikaa, note: pizzan pinnalle paiston jälkeen}
 carbs_net_per_serving_g: null
 carbs_total_per_serving_g: null
 protein_per_serving_g: null
@@ -31,11 +35,11 @@ fat_per_serving_g: null
 
 ## Kuvaus
 
-Jogurtista, gluteenittomasta durrajauhoseoksesta ja öljystä syntyvä taikinapohja yhdelle noin 30 × 40 cm:n pizzalle tai kahdelle pienemmälle. Tämä resepti sisältää vain pohjan: mahdolliset täytteet muodostavat erillisen, annosteltavan pizzareseptin.
+Jogurtista, gluteenittomasta durrajauhoseoksesta ja öljystä syntyvä taikinapohja yhdelle noin 30 × 40 cm:n pizzalle tai kahdelle pienemmälle. Mukana on mitoitettu tomaatti-mozzarellatäyte, sillä alkuperäinen pohjamenetelmä on tarkoitettu paistettavaksi täytteiden kanssa.
 
 ## Ainekset
 
-Kaikki taikinan ja leivinpaperin voitelun ainekset kuuluvat rakenteiseen ainesosaluetteloon. Täytteitä ei ole laskettu mukaan.
+Pohjan, leivinpaperin öljyn sekä tomaatti-mozzarellatäytteen kaikki ainekset kuuluvat rakenteiseen luetteloon. Pizzan annoslaskuri skaalaa ne yhdessä.
 
 ## Valmistus
 
@@ -44,11 +48,14 @@ Kaikki taikinan ja leivinpaperin voitelun ainekset kuuluvat rakenteiseen ainesos
 3. Vaivaa tai sekoita taikinaa noin minuutti ja lisää taikinaan tarkoitetut kaksi ruokalusikallista oliiviöljyä.
 4. Peitä pelti leivinpaperilla ja levitä sille erikseen mitatut kaksi ruokalusikallista oliiviöljyä. Taputtele taikinasta noin 30 × 40 cm:n levy; jätä reunat hieman keskustaa korkeammiksi.
 5. Peitä pohja kevyesti ja anna kohota lämpimässä paikassa noin 30 minuuttia. Kuumenna uuni 225–250 asteeseen.
-6. Paista pohja uunin alatasolla noin 12–15 minuuttia tai kunnes pinta ja reunat ovat saaneet väriä. Jos aiot paistaa täytteet yhdessä pohjan kanssa, niiden tarkat määrät ja paistoaika on määriteltävä erillisessä kokonaisessa pizzareseptissä.
+6. Levitä pohjalle mitattu gluteeniton tomaattikastike, paloiteltu mozzarella sekä puolitetut kirsikkatomaatit.
+7. Paista täytettyä pizzaa uunin alatasolla noin 15 minuuttia, kunnes pohja ja reunat ovat kullanruskeita sekä juusto on sulanut. Tarkista myös keskiosan kypsyys; älä tarjoa raakaa pohjaa.
+8. Lisää puhdistettu tuore basilika vasta paiston jälkeen, leikkaa neljään annokseen ja tarjoa.
 
 ## Muistiinpanot
 
-- **HOLD: pohjan paisto ilman täytteitä on toimituksellinen sovellus.** Vertailulähteessä pizza täytetään ennen noin 15 minuutin paistoa. Pelkän pohjan paistokypsyys ja kuivuminen on varmistettava ennen julkaisua.
+- **Paistotapa vastaa lähteen periaatetta:** pizza paistetaan täytteiden kanssa. Tomaatti-mozzarellatäyte on Recipavon oma mitoitettu ehdotus, ei Keliakialiiton reseptissä annettu täyteseos; gluteenittomuus ja kypsyys varmennetaan valituilla tuotteilla ennen julkaisua.
 - Jogurtti sisältää maitoa. Käytä gluteenittomaksi merkittyä durrajauhoseosta ja leivinjauhetta, puhtaita työvälineitä sekä täytteissä erikseen gluteenittomiksi todettuja tuotteita.
-- Ravintoarvot kuvaavat tulevassa laskennassa vain pohjaa, eivät pizzaa täytteineen. GK:ta ei ole laskettu.
+- Tulevassa ravintolaskennassa on oltava mukana myös tomaattikastike, mozzarella, kirsikkatomaatit, basilika ja leivinpaperiin käytettävä öljy. GK:ta ei ole laskettu.
+- Virtasalmen Viljatuotteen gluteeniton durrajauhoseos, 500 g (EAN 6430041081623): valmistajan mukaan 1 dl noin 65 g. Jauhoseoksessa on 70 % durraa sekä peruna- ja tapiokatärkkelystä ja psylliumia. Tuotesivun gluteeniton-merkintä on dokumentoitu, mutta tuotevalinta ja pakkaus tarkistetaan ennen julkaisemista.
 - Lähde ja rakennevertailu: [Keliakialiitto – durrainen pizzapohja](https://www.keliakialiitto.fi/ruoka/reseptit/durrainen-pizzapohja/).

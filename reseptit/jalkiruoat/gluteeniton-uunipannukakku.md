@@ -1,5 +1,5 @@
 ---
-title: "Gluteeniton uunipannukakku"
+title: "Gluteeniton uunipannukakku marjoilla"
 recipe_id: gluteeniton-uunipannukakku
 url_slug: gluteeniton-uunipannukakku
 category: jalkiruoka
@@ -20,6 +20,9 @@ ingredients:
   - {amount: 1.5, unit: dl, item: gluteenitonta tummaa jauhoseosta}
   - {amount: 2, unit: dl, item: gluteenittomaksi merkittyä kaurajauhoa}
   - {amount: 1, unit: dl, item: juoksevaa margariinia, note: valitse gluteeniton tuote}
+  - {amount: 200, unit: g, item: tuoreita marjoja, note: tarjoiluun}
+  - {amount: 1, unit: dl, item: kuohukermaa, note: tarjoiluun vaahdotettuna}
+  - {amount: 1, unit: rkl, item: gluteenittomaksi merkittyä tomusokeria, note: kermavaahtoon}
 carbs_net_per_serving_g: null
 carbs_total_per_serving_g: null
 protein_per_serving_g: null
@@ -30,11 +33,11 @@ fat_per_serving_g: null
 
 ## Kuvaus
 
-Uunipannukakku, jossa vehnäjauhojen tilalla käytetään gluteenitonta tummaa jauhoseosta ja gluteenittomaksi merkittyä kaurajauhoa. Taikina turpoaa ennen paistoa. Yhdestä syvästä uunipellillisestä tulee noin 13 palaa.
+Uunipannukakku, jossa vehnäjauhojen tilalla käytetään gluteenitonta tummaa jauhoseosta ja gluteenittomaksi merkittyä kaurajauhoa. Taikina turpoaa ennen paistoa. Yhdestä syvästä uunipellillisestä tulee noin 13 palaa; tässä omassa versiossa mukana ovat myös määrälliset marjat ja kermavaahto.
 
 ## Ainekset
 
-Kaikki pannukakkutaikinan ainekset löytyvät rakenteisesta listasta. Marjat, hillo ja kermavaahto ovat vain erillisiä tarjoiluehdotuksia, eivät tämän taikinan ainesosia tai ravintoarvojen osia.
+Taikinan sekä annosten päälle tulevien marjojen, kerman ja tomusokerin määrät ovat kaikki rakenteisessa listassa. Valmis yhdistelmä on 13 annosta; hilloa ei lisätä ilman erillistä mitoitusta.
 
 ## Valmistus
 
@@ -43,11 +46,13 @@ Kaikki pannukakkutaikinan ainekset löytyvät rakenteisesta listasta. Marjat, hi
 3. Vispaa gluteeniton tumma jauhoseos ja kaurajauho vähitellen nesteeseen. Sekoita lopuksi joukkoon juokseva margariini.
 4. Anna taikinan turvota huoneenlämmössä noin 30 minuuttia ja sekoita kevyesti kerran ennen pellille kaatamista.
 5. Kaada taikina leivinpaperilla vuoratulle syvälle pellille. Paista keskitasolla noin 30 minuuttia, kunnes pinta on ruskeapilkkuinen ja keskusta on hyytynyt.
-6. Anna pannukakun asettua noin 10 minuuttia. Leikkaa 13 palaan ja tarjoile.
+6. Anna pannukakun asettua noin 10 minuuttia. Vatkaa kerma vaahdoksi, sekoita joukkoon mitattu gluteenittomaksi merkitty tomusokeri ja pese marjat.
+7. Leikkaa pannukakku 13 palaan, jaa niiden päälle mitatut marjat ja kermavaahto. Tarjoa välittömästi ja säilytä ylimääräinen kermavaahto kylmässä.
 
 ## Muistiinpanot
 
 - Käytä gluteenittomaksi merkittyä kaurajauhoa ja jauhoseosta sekä puhdasta gluteenittomaan leivontaan soveltuvaa peltiä ja välineitä.
-- Sisältää maitoa ja kananmunaa. Lisukkeet on lisättävä erillisen yhdistelmäreseptin ainesosaluetteloon, jos niiden ravintoarvot halutaan mukaan.
+- Sisältää maitoa ja kananmunaa. Marjat, kermavaahto ja tomusokeri ovat jo rakenteisissa aineksissa ja ne on otettava mukaan tulevaan ravintolaskentaan; gluteenittomaksi merkittyä tomusokeria on käytettävä.
 - Ravintoarvot ja GK eivät ole vielä laskettuja eikä gluteenittomuutta ole hyväksytty tuotekohtaisesti.
+- Marjainen kermavaahtotarjoilu on Recipavon oma lisäys eikä alkuperäisen lähteen reseptimäärä. Muutos tarkistetaan ennen julkaisua.
 - Reseptin valmistusmenetelmän vertailulähde: [Keliakialiitto – gluteeniton pannukakku](https://www.keliakialiitto.fi/ruoka/reseptit/gluteeniton-pannukakku/).
