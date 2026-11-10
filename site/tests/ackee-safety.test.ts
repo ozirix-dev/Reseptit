@@ -1,15 +1,20 @@
 import assert from "node:assert/strict";
+import { readFile } from "node:fs/promises";
+import path from "node:path";
 import test from "node:test";
 import { siteContent } from "../src/generated/content.generated";
+import { parseMarkdown } from "../src/content/markdown";
+import { recipeFrontmatterSchema } from "../src/content/schema";
+import { isPublicRecipeQuarantined } from "../scripts/public-recipe-quarantine";
 
-test("published ackee page carries the safety hold without modifying nutrition-bound recipe source", () => {
-  const recipe = siteContent.recipes.find((entry) =>
-    entry.recipeId === "karibia-ackee-ja-suolakala" && entry.locale === "fi");
-  assert.ok(recipe, "published original ackee page must remain discoverable until reviewed");
-  assert.match(recipe.description, /TURVALLISUUSVAROITUS/);
-  assert.match(recipe.description, /Älä valmista ruokaa näillä ainesmäärillä/);
-  assert.match(recipe.description, /hypoglysiini A/i);
-  assert.match(recipe.instructionsText.join(" "), /Älä valmista tätä ruokalajia/);
-  assert.match(recipe.instructionsText.join(" "), /fda\.gov\/food\/natural-toxins-food\/hypoglycin-and-ackee-fruit/);
-  assert.doesNotMatch(recipe.instructionsText.join(" "), /kypsennä pavut tai liha/);
+test("unverified ackee recipe is withdrawn from all published routes, while sealed source remains published", async () => {
+  const recipe = siteContent.recipes.find((entry) => entry.recipeId === "karibia-ackee-ja-suolakala");
+  assert.equal(recipe, undefined, "uncertain ackee cannot be a public recipe");
+  const raw = parseMarkdown(await readFile(path.resolve(import.meta.dirname, "../../reseptit/aamupalat/karibia-ackee-ja-suolakala.md"), "utf8"));
+  assert.ok(raw);
+  assert.equal(raw.data.status, "published");
+  assert.ok(isPublicRecipeQuarantined("karibia-ackee-ja-suolakala"));
+  const ingredients = recipeFrontmatterSchema.parse(raw.data).ingredients;
+  assert.equal(ingredients[0]?.unit, "tl");
+  assert.equal(ingredients[1]?.item, "ackee");
 });
