@@ -36,7 +36,7 @@ export function extractRecipe(raw) {
   const content = raw.slice(match[0].length);
   const heading = /^## Valmistus\s*$/m.exec(content);
   const remainder = heading ? content.slice(heading.index + heading[0].length) : "";
-  const nextHeading = remainder.search(/^##\\s+/m);
+  const nextHeading = remainder.search(/^##\s+/m);
   const section = remainder.slice(0, nextHeading < 0 ? undefined : nextHeading);
   const steps = section.match(/^\s*\d+[.)]\s+\S.*$/gm) ?? [];
   return { data, content, section, steps };
