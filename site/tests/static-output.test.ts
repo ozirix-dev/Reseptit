@@ -155,6 +155,11 @@ test("GK values link to centralized recipe details on every published translatio
   const op146Ids=new Set(JSON.parse(await readFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-operation146/integration.json'),'utf8')).recipes.map((e:any)=>e.recipeId));
   for (const id of bakeryReview.withdrawnRecipeIds) {
     const result = glycemicLoadPilotResults.find(entry => entry.recipeId === id);
+    if (isPublicRecipeQuarantined(id)) {
+      assert.equal(result, undefined, `${id}: quarantined source must have no public GL row`);
+      assert.ok(audit.results.some(entry => entry.recipeId === id), `${id}: the historical GK audit must remain`);
+      continue;
+    }
     if(op146Ids.has(id)){assert.equal(result?.status,'CALCULATED',`${id}: fresh source-bound operation146 replacement`);continue;}
     assert.equal(result?.status, "INSUFFICIENT SOURCE DATA", `${id}: bakery source withdrawal is public`);
     assert.equal(result?.glycemicLoadPerServing, null);
