@@ -62,6 +62,6 @@ Kaikki pohjan, täytteen, kostutuksen ja kuorrutuksen ainekset ovat rakenteisess
 - Pohjasta löytyy myös itsenäinen resepti: [Sienikakkupohja](../sienikakkupohja/).
 - Kostutus pidetään kevyenä, sillä sienikakkupohja on luonnostaan pehmeä.
 - **Hiilihydraattipitoinen – GK ei laskettu.** Annos sisältää laskennallisesti runsaasti imeytyviä hiilihydraatteja, mutta GK:ta ei voi vahvistaa pelkästä hiilihydraattimäärästä. Annoskoko sekä hillo- ja tuotemerkki vaikuttavat arvioon.
-- Ravintoarvot ovat 10 annoksen **laskennallinen arvio** (imeytyvä hiilihydraatti, proteiini ja rasva) tuotteiden oletusvalinnoilla. Kokonaishiilihydraatteja kuitu mukaan lukien ei ole laskettu. [Tuotekohtainen laskentamuistio](../../docs/nutrition/sienikakkupohja-ja-mansikkataytekakku-2026-11-10.md). Täytekakku ei ole VHH- eikä keto-resepti.
+- Ravintoarvot ovat 10 annoksen **laskennallinen arvio** (imeytyvä hiilihydraatti, proteiini ja rasva) tuotteiden oletusvalinnoilla. Kokonaishiilihydraatteja kuitu mukaan lukien ei ole laskettu. [Tuotekohtainen laskentamuistio](https://github.com/ozirix-dev/Reseptit/blob/main/docs/nutrition/sienikakkupohja-ja-mansikkataytekakku-2026-11-10.md). Täytekakku ei ole VHH- eikä keto-resepti.
 - Kyseessä on toimituksellisesti koostettu perinneresepti, jota ei ole fyysisesti koepaistettu tässä julkaisutarkistuksessa. Kokonaisaika sisältää pohjan jäähtymisen sekä noin kahden tunnin vetäytymisen jääkaapissa.
 - Sisältää vehnää, kananmunaa ja maitotuotteita.
