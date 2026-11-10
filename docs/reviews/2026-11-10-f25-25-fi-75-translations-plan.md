@@ -25,3 +25,7 @@ Eri kielillä laadittu **6/75 Draft-tiedostoa kahdesta FI-lähteestä**: maakoud
 ## Iso käännöspäivitys: 36/75 Draftia
 
 Kymmenen FI-lähteen 30 kieliversiota lisättiin yhtenä commitina aiempien kuuden lisäksi: yhteensä **36/75**, 12 FI-reseptiä × 3 kieltä. Yksilöllinen [30 Draftin katselmointiraportti](2026-11-10-f25-thirty-new-language-drafts.md), CI:hin lisätty myös määrien ja makrojen rakennetarkistus. **21 SOURCE-HOLDia ei poistu; julkaistu 0.**
+
+## Täysi Draft-työjono: 75/75
+
+F25:n viimeiset 13 FI-lähdettä on nyt luonnosteltu EN/SV/TH-kielille (39 uutta Draftia), yhteensä **75/75 luonnosta / 25 reseptiä**. [Viimeisten 39:n tarkka työseloste](2026-11-10-f25-final-thirty-nine-language-drafts.md). Rakennetarkistimen odotetut luvut päivitetty 75/465/315/216. Julkaisu pysyy täysin estettynä, kunnes lähde-HOLDien sisältö ja ravintoarvot ovat hyväksyttyjä.

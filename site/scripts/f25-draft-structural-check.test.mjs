@@ -9,12 +9,12 @@ test("all three languages normalize quantity units without changing amounts",()=
  assert.equal(normalizeUnit("th","ช้อนชา"),"tl");
  assert.equal(normalizeUnit("en","g"),"g");
 });
-test("F25 36 draft file structure matches pinned Finnish sources",()=>{
+test("F25 75 draft file structure matches pinned Finnish sources",()=>{
  const r=checkF25();
  assert.deepEqual(r.errors,[]);
- assert.equal(r.sourceCount,12);
- assert.equal(r.files,36);
- assert.equal(r.ingredients,219);
- assert.equal(r.steps,153);
- assert.equal(r.macros,120);
+ assert.equal(r.sourceCount,25);
+ assert.equal(r.files,75);
+ assert.equal(r.ingredients,465);
+ assert.equal(r.steps,315);
+ assert.equal(r.macros,216);
 });
