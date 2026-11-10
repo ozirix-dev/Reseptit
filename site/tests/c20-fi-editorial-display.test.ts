@@ -48,7 +48,10 @@ test("generated FI content receives reviewed method and time only", () => {
   for (const id of ["malesialainen-nasi-lemak-aamiaisella","indonesialainen-nasi-uduk-aamiaisella"]) {
     const found=byId.get(id);
     assert.ok(found);
-    assert.deepEqual(found.cookingMethod,["keittäminen"]);
+    const raw = readFileSync(path.join(root, "reseptit/aamupalat/" + id + ".md"), "utf8");
+    const projected = parseMarkdown(projectC20FiDisplay("reseptit/aamupalat/" + id + ".md", raw));
+    assert.ok(projected);
+    assert.deepEqual(recipeFrontmatterSchema.parse(projected.data).cooking_method, ["keittäminen"]);
   }
   const uduk=byId.get("indonesialainen-nasi-uduk-aamiaisella");
   assert.match(uduk!.instructionsText.join(" "), /lisää tarvittaessa vain pieni määrä kuumaa vettä/);
