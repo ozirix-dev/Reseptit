@@ -1,30 +1,17 @@
-# Issue #404 – B21:n kolmen valmistusmenetelmän siirto kanoniseen FI-lähteeseen
+# Issue #404 – B21-kanonisten valmistusohjeiden rajattu siirto 11.11.2026
 
-Päiväys: 11.11.2026. Tämä on **valmistusohjeen lähdemigraatio**, ei ravinto-/GI/GK-hyväksyntä eikä alkuperäisen tutkimushistorian uudelleentulkinta.
+## Toteutettu
 
-## Mitä muuttui
+- **#02 Bakwan-fritterit:** PR #409:n tarkistettu FI-valmistusohje siirretty suoraan alkuperäiseen Markdown-reseptiin muuttamatta ainesmääriä tai makrokenttiä.
+- **#40 Huevos divorciados:** vastaava valmistusohjeen lähdesiirto; mustien papujen kypsä/kuiva-painoperusta jää ravinto-HOLDiin.
+- **#63 Labneh-kulho:** **EI siirretty** kanoniseen reseptiin, koska sen korjaaminen edellyttäisi rakenteisen `cooking_method`-kentän muuttamista `paistaminen` → `kylmävalmistus`. Ensimmäisen CI-ajon `validate-changed-content` pysäytti muutoksen: `GI/GK recipe binding is stale`. Tämä ei ole kosmetiikkavirhe. Labnehin alkuperäinen lähdetiedosto ja nykyinen täsmä-SHA-lukittu julkinen FI-näyttökorjaus palautettu ennalleen.
 
-| Kortti | FI-resepti | Korjaus |
-| --- | --- | --- |
-| #02 | indonesialainen-bakwan-maissifritter | Geneerinen pihvitaikina korvattiin maissin, porkkanan, jauhon ja luetellun paistoöljyn fritteriohjeella. |
-| #40 | meksikolainen-huevos-divorciados | Mustat pavut, tomaattipohjainen punainen kastike, valmis vihreä salsa ja paistetut munat kuvataan erikseen. |
-| #63 | lahi-ita-labneh-kulho-zaatarilla | Kylmä labneh-kulho; poistettiin luettelemattomat öljyt ja lämpimät proteiinit. Reseptin cooking_method korjattiin kylmävalmistukseksi. |
+## CI ja invarianssit
 
-Ohjetekstit on siirretty *sellaisinaan* aiemmin PR #409:n lähde-Git-blob-SHA-lukitulla näyttöprojektorilla julkaistuista teksteistä. Ainesosaluetteloita, annosmääriä, neljää ravintokenttää tai GI/GK-asiakirjoja ei muutettu. `site/scripts/material21-fi-public-display.ts` on nyt tyhjä yhteensopivuusadapteri; sitä ei saa kutsua uutena ravintotarkistuksena.
+Karanteeni- ja näyttösuojan 38 kohteen jakauma on tämän haaran jälkeen **21 karanteenissa + 15 näyttökorjattua + 2 kanonisen FI-valmistusohjeen tekstisiirtoa**. B21:n kaikki kolme lähde- ja ravintoarvo-HOLD-korttia pysyvät auki.
 
-## Julkiset ja laskennalliset portit erillään
+Ainesosien nimiä tai määriä, annosmääriä, tuotepohjia, neljää ravintokenttää, käännöksiä, GI/GK-sinettejä tai Cloudflare-tuotantoa ei ole muutettu. Bakwanin porkkanan syötävä paino sekä huevos divorciadosin mustien papujen painotila on edelleen selvitettävä.
 
-- **Bakwan:** porkkanan syötävä grammamassa ja käytetty taikinavesi dokumentoitava; erityisesti makroarvon lähtötiedot vahvistettava.
-- **Huevos divorciados:** mustien papujen kuivapaino/kypsäpaino ja tuotekohtainen ravintolähde vahvistettava ennen GK-päätöstä.
-- **Labneh:** oliivien ja kurkun syötävät grammapainot, labnehin tuote ja riippumaton ravintolaskenta vahvistettava. Kylmävalmistus ei ole paistaminen.
+Ensimmäinen CI-ajo https://github.com/ozirix-dev/Reseptit/actions/runs/42924125335 epäonnistui labnehin GI/GK-sidoksen vuoksi. Labneh palautettiin ja testien jako päivitettiin. **Älä yhdistä PR:ää ennen uuden täsmä-HEAD CI PASSia ja näyttö-/ravintoperustan tarkistusta.**
 
-**Kortit #02, #40 ja #63 jäävät issue #404:ssä auki ravinto/GK-varmennuksen vuoksi.** Niiden olemassa oleva julkinen näkyvyys pidetään ennallaan; lähdemigraatio ei oikeuta uutta numeerista hyväksyntää.
-
-## Testaus ja rollback
-
-- `site/tests/material21-fi-public-display.test.ts`: tarkista kanonisesta FI:stä valmistus, ainesluettelot, annokset ja ravintoarvojen muuttumattomuus julkisessa buildissä.
-- `site/tests/issue404-public-integrity.test.ts`: täsmällinen 38/38 jakauma on nyt **21 karanteenia + 14 SHA-lukittua näyttökorjausta + 3 kanonista menetelmäkorjausta**. Lähdekorjaukset eivät tarkoita ravinto/GK-hyväksyntää.
-- Tämän PR:n onnistuminen vaatii täsmä-HEAD CI PASSia. Jos vanhoja SHA-viitteitä tai ravinto-GK-sinettejä rikkoutuu, **älä ohita tarkistuksia**: selvitä alkuperäisversioiden arkistointi ja hyväksytty uudelleenlukitus tai palauta tämä PR käsittelyyn.
-- Erillinen EN/SV/TH-sisällöllinen vertailu vaaditaan, jos näille ID:ille julkaistaan käännöksiä.
-
-Ei Cloudflare-cutoveria eikä karanteeni-ID:n poistoa.
+Labnehin lopullinen lähdemigraatio tehdään omana tutkimustyönään, jossa muuttuva valmistustapafingerprint ja vastaavat ravinto/GK-lähdeviitteet käsitellään hyväksytyllä, auditoitavalla tavalla, ei pelkällä testin ohituksella.
