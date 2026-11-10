@@ -1,0 +1,41 @@
+name: PR412 one-time recipe illustrations
+on:
+  push:
+    branches:
+      - editorial/sienikakku-taytteet-gk-20261110
+    paths:
+      - ".github/workflows/pr412-media.yml"
+permissions:
+  contents: write
+jobs:
+  draw:
+    if: github.repository == 'ozirix-dev/Reseptit'
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+      - name: Install pinned image converter
+        run: npm ci
+        working-directory: site
+      - name: Generate two new WebP images from SVG
+        working-directory: site
+        run: node scripts/generate-pr412-media.mjs
+      - name: Commit only the two verified WebP files
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- kuvat/jalkiruoat/sienikakkupohja.webp kuvat/jalkiruoat/perinteinen-mansikkataytekakku-sienikakkupohjalla.webp
+          if git diff --staged --quiet; then
+            echo "Kuvat olivat jo repossa"
+            exit 0
+          fi
+          git commit -m "assets: add PR412 sponge and strawberry cake illustrations"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
