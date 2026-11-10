@@ -13,6 +13,11 @@ servings: 4
 time_total_min: 75
 difficulty: keskitaso
 tags: [gluteeniton, pizzapohja, durra, leivonta]
+image:
+  src: leivonnaiset/gluteeniton-durrapizzapohja.webp
+  alt: "Piirros tomaatti-mozzarellapizzasta, jossa on basilikaa ja gluteeniton durrapohja"
+  width: 1500
+  height: 1000
 ingredients:
   - {amount: 3.5, unit: dl, item: Valio turkkilaista ruokajogurttia, note: 10 % rasvaa}
   - {amount: 10, unit: g, item: kuivahiivaa, note: lähteen noin 1 rkl; tarkista tuotteen gluteenittomuus}
