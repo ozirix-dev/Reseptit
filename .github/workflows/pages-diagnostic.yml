@@ -1,0 +1,71 @@
+name: Pages server-side deployment diagnosis (read-only)
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/pages-diagnostic.yml"
+  workflow_dispatch:
+
+# This is intentionally a read-only Pages API probe.
+# It never invokes actions/deploy-pages and never uploads an artifact.
+permissions:
+  contents: read
+  pages: read
+  deployments: read
+
+jobs:
+  inspect:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - name: Inspect Pages site and deployment status without publishing
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          TARGET_SHA: a90df8fa7698a74c29b8afe67dc842af300d9ef2
+        run: |
+          set -euo pipefail
+          request() {
+            local label="$1" endpoint="$2" http
+            http="$(curl -sS -L --max-time 20 --retry 0 \
+              -o response.json -w '%{http_code}' \
+              -H "Authorization: Bearer ${GH_TOKEN}" \
+              -H "Accept: application/vnd.github+json" \
+              -H "X-GitHub-Api-Version: 2022-11-28" \
+              "https://api.github.com/repos/${REPO}/${endpoint}")"
+            echo "PROBE ${label}: HTTP ${http}"
+            if [ "${http}" != 200 ]; then
+              jq -c '{message,documentation_url,status}' response.json 2>/dev/null || true
+              return 0
+            fi
+            case "${label}" in
+              site)
+                jq -c '{status,build_type,html_url,source,https_enforced}' response.json
+                ;;
+              pages_deployment)
+                jq -c '{status,description,error,message}' response.json
+                ;;
+              environment_deployments)
+                jq -c '[.[] | {id,sha,environment,created_at,updated_at,description}]' response.json
+                jq -r '.[0:3][]?.id' response.json > recent_ids.txt
+                ;;
+              environment_status)
+                jq -c '[.[0:3][] | {state,created_at,description,log_url}]' response.json
+                ;;
+            esac
+          }
+          echo "Diagnostic only: ${REPO} at ${TARGET_SHA}"
+          request site "pages"
+          request pages_deployment "pages/deployments/${TARGET_SHA}"
+          request environment_deployments "deployments?environment=github-pages&per_page=5"
+          if [ -f recent_ids.txt ]; then
+            while IFS= read -r deployment_id; do
+              case "${deployment_id}" in
+                ''|*[!0-9]*) continue ;;
+              esac
+              request environment_status "deployments/${deployment_id}/statuses?per_page=3"
+            done < recent_ids.txt
+          fi
+          echo "PROBE DONE: no deployment has been created, retried, or cancelled."
