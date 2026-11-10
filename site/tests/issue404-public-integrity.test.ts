@@ -86,7 +86,11 @@ test("issue #404 quarantine is absent from every public locale and corrected con
     assert.ok(isPublicRecipeQuarantined(id));
     assert.equal(siteContent.recipes.some(recipe => recipe.recipeId === id), false, id);
   }
-  for (const id of canonicalMethodOnly) {\n    assert.equal(isPublicRecipeQuarantined(id), false, id);\n    assert.ok(siteContent.recipes.some(recipe => recipe.recipeId === id && recipe.locale === "fi"), id);\n  }\n  for (const entry of displayCorrections) {
+  for (const id of canonicalMethodOnly) {
+    assert.equal(isPublicRecipeQuarantined(id), false, id);
+    assert.ok(siteContent.recipes.some(recipe => recipe.recipeId === id && recipe.locale === "fi"), id);
+  }
+  for (const entry of displayCorrections) {
     assert.equal(isPublicRecipeQuarantined(recipeId(entry.relative)), false, entry.relative);
     assert.ok(siteContent.recipes.some(recipe => recipe.recipeId === recipeId(entry.relative) && recipe.locale === "fi"), entry.relative);
   }
