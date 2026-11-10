@@ -10,12 +10,11 @@ import { material21FiPaths, projectMaterial21FiDisplay } from "../scripts/materi
 const cases = [
   ["indonesialainen-bakwan-maissifritter", /100 g maissinjyviä/, /porkkanan syötävää grammapainoa/],
   ["meksikolainen-huevos-divorciados", /tomaattikastikkeeksi/, /papujen raaka\/kypsä-painon/],
-  ["lahi-ita-labneh-kulho-zaatarilla", /Älä lisää oliiviöljyä/, /kylmäannos/],
 ] as const;
 const root = path.resolve(import.meta.dirname, "../..");
 
-test("three B21 cooking methods now live in canonical FI and require no display SHA overlay", async () => {
-  assert.deepEqual(material21FiPaths, []);
+test("two B21 cooking methods now live in canonical FI; labneh retains SHA overlay", async () => {
+  assert.deepEqual(material21FiPaths, ["reseptit/aamupalat/lahi-ita-labneh-kulho-zaatarilla.md"]);
   for (const [id, step, note] of cases) {
     const relative = `reseptit/aamupalat/${id}.md`;
     const raw = await readFile(path.join(root, relative), "utf8");
@@ -37,4 +36,10 @@ test("three B21 cooking methods now live in canonical FI and require no display 
     assert.equal(publicFi.nutrition?.proteinG ?? null, data.protein_per_serving_g ?? null);
     assert.equal(publicFi.nutrition?.fatG ?? null, data.fat_per_serving_g ?? null);
   }
+  const relative = "reseptit/aamupalat/lahi-ita-labneh-kulho-zaatarilla.md";
+  const raw = await readFile(path.join(root, relative), "utf8");
+  const projected = projectMaterial21FiDisplay(relative, raw);
+  assert.notEqual(projected, raw);
+  assert.match(projected, /Älä lisää oliiviöljyä/);
+  assert.throws(() => projectMaterial21FiDisplay(relative, raw + "\\n# Unreviewed edit"), /MATERIAL21_FI_SOURCE_STALE/);
 });
