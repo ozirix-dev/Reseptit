@@ -8,6 +8,7 @@ import { semanticTermErrors, semanticProseErrors, semanticNoteErrors, semanticTa
 import { loadTranslationPublicationIndex, overlayTranslationPublicationIndex } from "./translation-publication-index";
 import { projectReviewedFiEditorialSource } from "./gk80-editorial-display";
 import { projectA8FiEditorialSource } from "./a8-editorial-display";
+import { projectC20FiDisplay, c20FiDisplayPaths } from "./c20-fi-editorial-display";
 
 const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 export const sourceCategories = ["alkuruoat", "paaruoat", "jalkiruoat", "leivonnaiset", "aamupalat", "valipalat"] as const;
@@ -206,6 +207,30 @@ export async function auditTranslations(recipeIds?: string[]): Promise<Translati
         throw new Error("A8_AUDIT_SHOYU_METHOD_NOT_REVIEWED");
       }
       reviewedMethods.set(source.data.recipe_id, publicData.cooking_method ?? []);
+    }
+  }
+  // Three narrowly reviewed, exact-raw-SHA C20 FI display corrections.
+  for (const source of sources) {
+    if (!c20FiDisplayPaths.includes(source.path)) continue;
+    const raw = await readFile(path.join(repoRoot, source.path), "utf8");
+    const displayed = parseMarkdown(projectC20FiDisplay(source.path, raw));
+    if (!displayed) throw Error("C20_FI_DISPLAY_NO_FRONTMATTER");
+    const d = recipeFrontmatterSchema.parse(displayed.data);
+    const original = source.data;
+    if (d.recipe_id !== original.recipe_id || d.language !== "fi" || d.status !== "published" ||
+        d.servings !== original.servings || d.category !== original.category ||
+        JSON.stringify(d.ingredients) !== JSON.stringify(original.ingredients) ||
+        JSON.stringify(d.image) !== JSON.stringify(original.image) ||
+        (["carbs_net_per_serving_g", "carbs_total_per_serving_g", "protein_per_serving_g", "fat_per_serving_g"] as const)
+          .some(key => d[key] !== original[key])) throw Error("C20_FI_DISPLAY_NUTRITION_DRIFT: " + source.path);
+    if (source.path.includes("kevatsipulipannukakku")) {
+      if (d.time_total_min !== 35 || original.time_total_min !== 25 ||
+          JSON.stringify(d.cooking_method) !== JSON.stringify(original.cooking_method)) throw Error("C20_FI_DISPLAY_TIME_REVIEW_FAIL");
+      reviewedTimes.set(original.recipe_id, 35);
+    } else {
+      if (original.cooking_method?.join("|") !== "paistaminen" || d.cooking_method?.join("|") !== "keittäminen" ||
+          d.time_total_min !== original.time_total_min) throw Error("C20_FI_DISPLAY_METHOD_REVIEW_FAIL");
+      reviewedMethods.set(original.recipe_id, d.cooking_method ?? []);
     }
   }
   return auditRecipePairs(sources, publishedTranslations, reviewedMethods, reviewedTimes);

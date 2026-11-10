@@ -2,6 +2,7 @@ import { createHash } from "node:crypto";
 import { publicRecipeQualityHold } from "./recipe-quality-holds";
 import { projectReviewedFiEditorialSource } from "./gk80-editorial-display";
 import { projectA8FiEditorialSource } from "./a8-editorial-display";
+import { projectC20FiDisplay } from "./c20-fi-editorial-display";
 import { recipeFacets } from "../src/content/recipe-facets";
 import { articles, articlePath, blogRoot } from "../src/features/blog/blog-data";
 import { contentForRoute } from "../src/content/route-data";
@@ -117,7 +118,7 @@ async function buildRecipes(): Promise<RecipeEntry[]> {
   const publishedImagePaths = new Set<string>();
   for (const filePath of paths) {
     const relativePath = path.relative(repoDir, filePath).replaceAll("\\", "/");
-    const parsed = parseMarkdown(projectA8FiEditorialSource(relativePath, projectReviewedFiEditorialSource(relativePath, await readFile(filePath, "utf8"))));
+    const parsed = parseMarkdown(projectC20FiDisplay(relativePath, projectA8FiEditorialSource(relativePath, projectReviewedFiEditorialSource(relativePath, await readFile(filePath, "utf8")))));
     if (!parsed) continue;
     if (parsed.data.status === "draft") continue;
     if (parsed.data.status !== "published") throw new Error(`Recipe status must be draft or published: ${filePath}`);

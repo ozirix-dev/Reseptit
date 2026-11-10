@@ -170,9 +170,12 @@ export function GlycemicLoadPilotPage() {
     ?? (result.recipeId === liverRecipeId ? text.liverTitle : result.title);
   const searchKey = (value: string) => value.normalize("NFC").toLocaleLowerCase(numberLocale);
   const query = searchKey(search.trim());
+  // Search both the published localized title and the established liver name:
+  // adding a translation must not make the existing search term disappear.
   const matching = glycemicLoadPilotResults.filter((result) =>
     (!showCalculatedOnly || result.status === "CALCULATED")
-    && searchKey(titleFor(result)).includes(query)
+    && (searchKey(titleFor(result)).includes(query)
+        || (result.recipeId === liverRecipeId && searchKey(text.liverTitle).includes(query)))
   );
   if (enhanced) {
     const collator = new Intl.Collator(numberLocale);
