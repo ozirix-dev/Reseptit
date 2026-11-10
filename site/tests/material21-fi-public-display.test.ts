@@ -8,33 +8,33 @@ import { recipeFrontmatterSchema } from "../src/content/schema";
 import { material21FiPaths, projectMaterial21FiDisplay } from "../scripts/material21-fi-public-display";
 
 const cases = [
-  ["indonesialainen-bakwan-maissifritter", /100 g maissinjyviä/, /pihvitaikinapohjasta/],
+  ["indonesialainen-bakwan-maissifritter", /100 g maissinjyviä/, /porkkanan syötävää grammapainoa/],
   ["meksikolainen-huevos-divorciados", /tomaattikastikkeeksi/, /papujen raaka\/kypsä-painon/],
   ["lahi-ita-labneh-kulho-zaatarilla", /Älä lisää oliiviöljyä/, /kylmäannos/],
 ] as const;
 const root = path.resolve(import.meta.dirname, "../..");
 
-test("three exact-Git-blob FI corrections preserve nutrition and source identity", async () => {
-  assert.equal(material21FiPaths.length, 3);
+test("three B21 cooking methods now live in canonical FI and require no display SHA overlay", async () => {
+  assert.deepEqual(material21FiPaths, []);
   for (const [id, step, note] of cases) {
     const relative = `reseptit/aamupalat/${id}.md`;
-    assert.ok(material21FiPaths.includes(relative));
     const raw = await readFile(path.join(root, relative), "utf8");
-    const shown = projectMaterial21FiDisplay(relative, raw);
-    assert.notEqual(raw, shown);
-    const source = parseMarkdown(raw), display = parseMarkdown(shown);
-    assert.ok(source && display);
-    const before = recipeFrontmatterSchema.parse(source.data);
-    const after = recipeFrontmatterSchema.parse(display.data);
-    assert.deepEqual(after.ingredients, before.ingredients);
-    assert.equal(after.servings, before.servings);
-    for (const key of ["carbs_net_per_serving_g", "carbs_total_per_serving_g", "protein_per_serving_g", "fat_per_serving_g"] as const)
-      assert.equal(after[key], before[key]);
-    assert.match(display.content, step);
-    assert.match(display.content, note);
+    assert.equal(projectMaterial21FiDisplay(relative, raw), raw);
+    const source = parseMarkdown(raw);
+    assert.ok(source);
+    const data = recipeFrontmatterSchema.parse(source.data);
+    assert.equal(data.language, "fi");
+    assert.equal(data.status, "published");
+    assert.equal(data.servings, 2);
+    assert.match(source.content, step);
+    assert.match(source.content, note);
     const publicFi = siteContent.recipes.find(r => r.recipeId === id && r.locale === "fi");
     assert.ok(publicFi, id);
     assert.match(publicFi.instructionsText.join(" "), step);
-    assert.throws(() => projectMaterial21FiDisplay(relative, raw + "\n# Unknown edit"), /MATERIAL21_FI_SOURCE_STALE/);
+    assert.deepEqual(publicFi.ingredients.map(x => x.item), data.ingredients.map(x => x.item));
+    assert.equal(publicFi.nutrition?.carbsNetG ?? null, data.carbs_net_per_serving_g ?? null);
+    assert.equal(publicFi.nutrition?.carbsTotalG ?? null, data.carbs_total_per_serving_g ?? null);
+    assert.equal(publicFi.nutrition?.proteinG ?? null, data.protein_per_serving_g ?? null);
+    assert.equal(publicFi.nutrition?.fatG ?? null, data.fat_per_serving_g ?? null);
   }
 });
