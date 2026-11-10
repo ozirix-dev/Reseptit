@@ -28,3 +28,9 @@ Päivä 10.11.2026. Tämä PR julkaisee vain kaksi olemassa olevaa FI-reseptiä 
 - Ennen mergeä vaaditaan juuri tämän release-PR:n **täsmä-HEADin CI SUCCESS**, mukaan lukien muuttuneiden reseptien validointi ja käännösten merkityshashien tarkistus. Tämän jälkeen merge, vastaavan merge-SHA:n Pages build+deploy SUCCESS ja erillinen live-reitti-HTTP-smoke vain jos sen voi todentaa.
 - Edeltävän #420:n oma Pages-ajo [#42904587902](https://github.com/ozirix-dev/Reseptit/actions/runs/42904587902) epäonnistui deploy-vaiheessa, mutta myöhempi `main`-ajon [#42904789813](https://github.com/ozirix-dev/Reseptit/actions/runs/42904789813) **build+deploy SUCCESS** sisältää saman julkisen FI-projektorin. Tämän PR:n julkaisussa on käytettävä aivan uutta merge-SHA:n käyttöönoton todistetta.
 - [F25 Draft #399](https://github.com/ozirix-dev/Reseptit/pull/399) **DO NOT MERGE**; muut 18 F25-reseptiä / 54 kieliversiota pysyvät tästä julkaisusta erillään. Rinnakkaisiin PR:iin ja uusiin resepteihin ei kosketa.
+
+## CI-löydös: Thai-sipulin kappaleyksikkö
+
+Ensimmäisen täsmä-HEADin CI [#42910391735](https://github.com/ozirix-dev/Reseptit/actions/runs/42910391735) pysähtyi yksikkötarkistukseen `intialainen-besan-chilla:th: ingredient 4 unit not recognized (kpl → หัว)`. **Thai `หัว` on sipulin luonnollinen kappalelaskuri**, ja F25:n oma rakennetarkistin jo normalisoi sen muotoon `kpl`. Virhe oli yleisessä `site/scripts/translation-audit.ts`-auditoinnissa, joka tunnisti kpl-vastineita `ลูก`, `ผล`, `ชิ้น`, `ฟอง` mutta ei `หัว`.
+
+Korjaus lisää vain `หัว` → `each`-vastineen olemassa olevaan sallittujen kappalemerkintöjen joukkoon ja kohdennetun auditointiregressiotestin. Suomenkieliset ainesmäärät, thainkielinen reseptiteksti, julkaisun kuusi semanttista SHA:ta ja ravintoarvot **eivät muutu**. Testi edellyttää, että julkaisuauditointi hyväksyy juuri tämän Thain besan-chillan julkaistuna kieliparina. Näin ei heikennetä muuten tuntemattomien yksiköiden fail-closed-käytöstä.
