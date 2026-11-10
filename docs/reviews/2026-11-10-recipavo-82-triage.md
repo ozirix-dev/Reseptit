@@ -161,3 +161,31 @@ Tämä PR omistaa **vain tämän dokumentin**. Ei kosketa reseptien Markdownia, 
 - **Jo korjatut auditointiongelmat:** #4 pisang goreng, #8 jamaikalainen munakokkeli, #9 johnny cake, #10 plantain, #12 kevätsipulipannukakku, #13 tomaattimunakas, #14 gyeran-mari, #17 mee goreng, #19 pico de gallo -munakokkeli ja #20 harcha. Erityisesti #12:n **näyttöprojektio** muuttaa raakareseptin 25 min → 35 min julkisen esityksen ajaksi.
 - **Työnjako:** tämä PR omistaa vain triagen. #359:n jo yhdistettyjen lähdekorjausten tulokset huomioitu; #401:n F25-korjaukset eivät oikeuta muuttamaan näiden 20:n raw-havaintoja itsenäisesti. Julkisen tuotannon Pages-deploy ja live-URL:t varmistettava erikseen ennen käyttäjäavausta.
 - **Jatkoseulonta:** seuraavat 20/82 versionlukittuina. Loput 62 ovat edelleen *käsittelemättä lopullisessa tarkistuksessa*; niiden aiempia 38/16/28 prioriteettiluokkia ei saa tulkita tämän varmennuksen lopputulokseksi.
+
+
+## Varmennuskierros V2 – kaikki loput 62 tapausta tarkistettu
+
+[Lue 62 rivin täsmällinen, main-SHA-lukittu loppuraportti](2026-11-10-recipavo-82-verification-21-82.md).
+
+**Yhteistulos 82/82 lähdereseptin auditointihavainnon ja lähteen kokkikelpoisuustarkistuksen jälkeen, main `6a59fb7a58e3b5659a8546aecddea42eea2493a0`:**
+
+| Luokka | 1–20 | 21–82 | Yhteensä |
+|---|---:|---:|---:|
+| Vahvistettu lähdetason BLOCK (sisältää turvallisuus- ja ravintoselvitysesteet) | 10 | 33 | **43** |
+| Auditissa kuvattu ongelma korjattu | 10 | 1 | **11** |
+| Väärä ainesosa-/sanahälytys ilman muuta tässä katselmoinnissa todettua estettä | 0 | 20 | **20** |
+| Julkinen SHA-lukittu näyttökorjaus, kanoninen FI edelleen vanha | 0 | 3 | **3** |
+| Toimituksellinen tai riippumaton ravintoevidenssi tarvitaan | 0 | 5 | **5** |
+| **Yhteensä** | **20** | **62** | **82** |
+
+**Tulkintaraja:** 43 on *lähdetason* BLOCK-luku, EI väite 43 tällä hetkellä käyttäjälle näkyvästä vaarallisesta reseptistä. Ackee (#30) esitetään jo erillisellä varoituksella, banh baolle (#67) ja idlille (#58) on erillinen quality-hold-mekanismi, ja näyttökorjausten #23/#33/#36 vaikutus arvioidaan buildissä. Käyttäjäavausta varten on vielä vahvistettava nykyinen deploy, jokaisen BLOCKin julkinen näkyvyys, ravintolukujen vastaavuus ja FI:n julkaistut EN/SV/TH-käännökset. Muutokset toisessa keskustelussa pitää verrata snapshotiin uudelleen, muuten tulos vanhenee.
+
+**Läpikäynti valmis tämän 82-osuman työjonon osalta.** Tämä EI ole koko 335 FI-reseptin riippumaton täysauditointi. Esimerkiksi alkuperäinen sanahaku teki joistakin tapauksista `FALSE_POSITIVE`, vaikka löytyi erillinen yleisohjevirhe: nämä on luokiteltu `BLOCK_OTHER_ISSUE` (8 kpl), eikä niitä ole haudattu väärien osumien koriin.
+
+### Korjaustyön toimintajärjestys
+
+1. Käsittele ensin viranomais- tai kypsennysturvallisuuteen liittyvät BLOCKit: bammy #7, ackee #30, banh xeo #48 (katkarapujen käsittely), banh cuon #68 (raaka porsaanjauheliha). Jos turvallista reseptiä ei voida todentaa, poista resepti käyttäjälle näkyvästä julkaisusta; pelkkä varoitus ei välttämättä korvaa sitä.
+2. Ratkaise poikkeavat ravinto-/ainesmäärät ja valmistusrakenne, erityisesti yaki-onigiri #6, maakouda #21, miso-paksoi #28, mandu #34, idli #58 ja xoi #70. Älä hyväksy lukuja muuttamatta niitä varten tarvittavia evidenssejä.
+3. Yhdistä vain toisen chatin valmiit reseptikorjaukset, katselmoi käännösten merkitysvastaavuudet ja aja tarvittavat valitut CI-testit. Ei uusia korjaus-PR:iä tästä raportista automaattisesti.
+4. Lopullinen `PUBLIC_READY`-koonti muodostetaan vasta ajantasaisen main-SHA:n julkaistun esityksen ja korjausten jälkeen.
+
