@@ -18,12 +18,12 @@ ingredients:
   - {amount: 4, unit: kpl, item: kananmunaa}
   - {amount: 2, unit: dl, item: sokeria}
   - {amount: 1, unit: dl, item: vettä, note: kiehuvana vaahdon joukkoon}
-  - {amount: 3, unit: dl, item: vehnäjauhoja}
+  - {amount: 3, unit: dl, item: puolikarkeita vehnäjauhoja}
   - {amount: 1.5, unit: tl, item: leivinjauhetta}
-carbs_net_per_serving_g: null
+carbs_net_per_serving_g: 30.35
 carbs_total_per_serving_g: null
-protein_per_serving_g: null
-fat_per_serving_g: null
+protein_per_serving_g: 4.89
+fat_per_serving_g: 2.15
 status: "draft"
 ---
 
@@ -57,4 +57,5 @@ Muita mahdollisia klassisia yhdistelmiä ovat vadelmahillo ja kermavaahto sekä 
 - Kiehuva vesi lisätään hitaasti vatkaten. Suuri kulho auttaa, sillä vaahto kasvaa selvästi.
 - Kakku on kuohkea mutta voi murentua halkaistaessa, jos sitä ei jäähdytetä kunnolla.
 - **GK: todennäköisesti korkea (sanallinen arvio, ei laskettu eikä vahvistettu).** Sokerin ja vehnäjauhon vuoksi pohja on hiilihydraattipitoinen. GK riippuu annoskoosta; täytettyjen kakkujen GK riippuu lisäksi täytteistä ja kuorrutteista. Numeerista GK-arvoa tai vahvistettua GK-luokkaa ei esitetä.
+- Ravintoarvot ovat 10 annoksen **laskennallinen arvio** (imeytyvä hiilihydraatti, proteiini ja rasva). Käytetyt tuotteet, raakapainot ja epävarmuudet: [ravintoarvojen laskentamuistio](../../docs/nutrition/sienikakkupohja-ja-mansikkataytekakku-2026-11-10.md). Kokonaishiilihydraatteja kuitu mukaan lukien ei ole arvioitu erikseen.
 - Tämä on perinteinen resepti, ei keto- tai VHH-muunnelma.
