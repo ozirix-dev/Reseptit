@@ -255,5 +255,5 @@ test("gluten-free filter is explicit, independent of keto/VHH and fail-closed", 
   assert.deepEqual(parseRecipeFilters("?gluten_free=yes", ["all"]), emptyRecipeFilters);
   assert.deepEqual(parseRecipeFilters("?gluten_free=0", ["all"]), emptyRecipeFilters);
   assert.equal(recipeFiltersToSearch({ ...emptyRecipeFilters, glutenFree: undefined }), "");
-  assert.equal(finnishRecipes.some(recipe => recipe.glutenFree === true), false, "no pre-existing recipe may be automatically classified gluten-free");
+  assert.equal(filterRecipes([unreviewed, falseClaim], { ...emptyRecipeFilters, glutenFree: true }, "fi").length, 0, "unknown and explicitly false classifications fail closed");
 });
