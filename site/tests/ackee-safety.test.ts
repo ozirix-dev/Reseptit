@@ -4,6 +4,7 @@ import path from "node:path";
 import test from "node:test";
 import { siteContent } from "../src/generated/content.generated";
 import { parseMarkdown } from "../src/content/markdown";
+import { recipeFrontmatterSchema } from "../src/content/schema";
 import { isPublicRecipeQuarantined } from "../scripts/public-recipe-quarantine";
 
 test("unverified ackee recipe is withdrawn from all published routes, while sealed source remains published", async () => {
@@ -13,6 +14,7 @@ test("unverified ackee recipe is withdrawn from all published routes, while seal
   assert.ok(raw);
   assert.equal(raw.data.status, "published");
   assert.ok(isPublicRecipeQuarantined("karibia-ackee-ja-suolakala"));
-  assert.equal(raw.data.ingredients[0]?.unit, "tl");
-  assert.equal(raw.data.ingredients[1]?.item, "ackee");
+  const ingredients = recipeFrontmatterSchema.parse(raw.data).ingredients;
+  assert.equal(ingredients[0]?.unit, "tl");
+  assert.equal(ingredients[1]?.item, "ackee");
 });
