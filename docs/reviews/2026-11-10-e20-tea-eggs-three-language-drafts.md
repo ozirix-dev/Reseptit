@@ -9,3 +9,7 @@ FI-julkinen valmistusohje tarkennettiin [PR #398](https://github.com/ozirix-dev/
 - Ei julkaisua, semanttista PASS-evidenssiä, ihmis-/koepaistokatselmointia eikä GI/GK-uusintalukitusta. SOURCE-HOLD-rivi pysyy lukittuna erilliseen hyväksyntään asti. Kaikki Draft-tekstit luodaan yhteen E20-PR:ään.
 
 E20:n työmäärä muuttuu 33 → **36/60 Draftiksi** (12 FI-lähdettä kolmella kielellä). SOURCE-HOLD-rivejä edelleen 11, kunnes kaikki hyväksynnät dokumentoitu.
+
+## Täsmärakennetarkistus yhdistetystä E20-HEAD-versiosta
+
+GitHubista luetuille EN/SV/TH-Draft-tiedostoille tehty määrien ja metatietojen tarkistus: yhteensä **15 ainesosariviä**, **12 neljän makron kenttää** ja **12 numeroitua valmistusvaihetta**. Kaikki kolme käyttävät `status: draft`, samaa FI-source-polkua, `servings: 2`, `time_total_min: 25`, alkuperäisiä makroarvoja ja ainesmääriä 2 kpl / 150 ml / 1 rkl / 1 tl / valinnainen suola. Rakenteellisia eroja tässä täsmätarkistuksessa **0**. Kielten natiivipuhujakatselmointi, ravintolaskennan riippumaton uusinta ja GI/GK-hyväksyntä ovat yhä avoimia.
