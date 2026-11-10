@@ -88,7 +88,7 @@ test("the Finnish breakfast and dessert collections exclude quarantined unsafe r
     "vhh-brita-kakku", "keto-mutakakku", "vhh-mokkapalat", "keto-suklaakeksit", "vhh-omenapiirakka",
     "vhh-juustokakku", "vhh-raparperipiirakka", "vhh-korvapuustit", "vhh-mansikkakakku", "vhh-letut",
   ].includes(recipe.recipeId));
-  assert.equal(breakfast.length, 132);
+  assert.equal(breakfast.length, 129);
   assert.equal(desserts.length, 10);
   const documentedBreakfastNetCarbs = new Map([
     ["indonesialainen-ketoprak-aamiaiskulho", 44.21], ["indonesialainen-pisang-goreng-aamiaiseksi", 63.85],
@@ -730,8 +730,8 @@ test("R1B corrected Koshari nutrition evidence is synchronized across published 
   }
 });
 
-test("eighteen source-sealed withdrawals never enter public recipes or sitemap", async () => {
-  assert.equal(publicRecipeQuarantineIds.length, 18);
+test("twenty-one source-sealed withdrawals never enter public recipes or sitemap", async () => {
+  assert.equal(publicRecipeQuarantineIds.length, 21);
   for (const id of publicRecipeQuarantineIds) {
     assert.equal(currentSiteContent.recipes.some(r => r.recipeId === id), false);
     const source = parseMarkdown(await readFile(path.resolve(import.meta.dirname, `../../reseptit/aamupalat/${id}.md`), "utf8"));
@@ -804,5 +804,20 @@ test("two C13 unreviewed meal designs stay out of public routes with immutable F
     const parsed = parseMarkdown(raw);
     assert.ok(parsed);
     assert.equal(parsed.data.status, "published", id + ": historical source metadata retained");
+  }
+});
+
+test("three B21 preparation-time HOLDs retain exact source bytes but no public pages", async () => {
+  const { createHash } = await import("node:crypto");
+  const expected = {"malesialainen-roti-canai-dhalilla":"d241c242192b66a6744a823e88e44c9fbed97c98","pohjoisafrikkalainen-msemen-hunajalla":"3ee0686e9b5435e8e1dbf09a7915e99fd5b3d082","intialainen-pesarattu-mungpavuista":"5356f03ce2764e38563a95ede0e4373b8f50a65e"};
+  for (const [id, gitSha] of Object.entries(expected)) {
+    const raw = await readFile(path.resolve(import.meta.dirname, "../../reseptit/aamupalat", id + ".md"), "utf8");
+    const actual = createHash("sha1").update("blob " + Buffer.byteLength(raw) + "\0").update(raw).digest("hex");
+    assert.equal(actual, gitSha, id + ": source must remain unchanged");
+    assert.ok(isPublicRecipeQuarantined(id), id);
+    assert.equal(currentSiteContent.recipes.some(r => r.recipeId === id), false, id + ": no public locale route");
+    const parsed = parseMarkdown(raw);
+    assert.ok(parsed);
+    assert.equal(parsed.data.status, "published", id + ": historical source retained");
   }
 });
