@@ -15,6 +15,7 @@ export interface RecipeFilters {
   cuisine?: string;
   ingredient?: string;
   gl?: GlycemicLoadFilterCategory;
+  glutenFree?: boolean;
 }
 
 export const emptyRecipeFilters: RecipeFilters = { query: "", category: "all", diet: "all" };
@@ -51,7 +52,8 @@ export function parseRecipeFilters(search: string, availableCategories: RecipeCa
     ...([30, 60, 90].includes(maxTime) ? { maxTime } : {}),
     ...(cuisines.includes(cuisine as typeof cuisines[number]) ? { cuisine: cuisine! } : {}),
     ...(ingredientGroups.includes(ingredient as typeof ingredientGroups[number]) ? { ingredient: ingredient! } : {}),
-    ...(gl === "low" || gl === "medium" || gl === "high" ? { gl } : {}) };
+    ...(gl === "low" || gl === "medium" || gl === "high" ? { gl } : {}),
+    ...(params.get("gluten_free") === "1" ? { glutenFree: true } : {}) };
 }
 
 export function recipeFiltersToSearch(filters: RecipeFilters): string {
@@ -64,6 +66,7 @@ export function recipeFiltersToSearch(filters: RecipeFilters): string {
   if (filters.cuisine) params.set("cuisine", filters.cuisine);
   if (filters.ingredient) params.set("ingredient", filters.ingredient);
   if (filters.gl) params.set("gl", filters.gl);
+  if (filters.glutenFree) params.set("gluten_free", "1");
   const search = params.toString();
   return search ? `?${search}` : "";
 }
@@ -75,6 +78,7 @@ export function filterRecipes<T extends RecipeSummary>(recipes: T[], filters: Re
     if (filters.cuisine && recipe.cuisine !== filters.cuisine) return false;
     if (filters.ingredient && !recipe.ingredientGroups?.includes(filters.ingredient)) return false;
     if (filters.gl && glCategories[recipe.recipeId] !== filters.gl) return false;
+    if (filters.glutenFree && recipe.glutenFree !== true) return false;
     if (filters.category !== "all" && recipe.category !== filters.category) return false;
     if (filters.diet === "keto" && recipe.dietClass !== "keto") return false;
     if (filters.diet === "vhh" && !recipe.dietClass) return false;

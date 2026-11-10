@@ -70,6 +70,7 @@ export function RecipesPage({ locale }: { locale: RecipeLocale }) {
   if (filters.maxTime) activeFilters.push({ key: "time", label: `${tools.time}: ${filters.maxTime} ${labels.minutes}`, clear: { maxTime: undefined } });
   if (filters.cuisine) activeFilters.push({ key: "cuisine", label: tools.cuisines[filters.cuisine as keyof typeof tools.cuisines], clear: { cuisine: undefined } });
   if (filters.ingredient) activeFilters.push({ key: "ingredient", label: tools.ingredients[filters.ingredient as keyof typeof tools.ingredients], clear: { ingredient: undefined } });
+  if (filters.glutenFree) activeFilters.push({ key: "gluten_free", label: labels.glutenFree, clear: { glutenFree: undefined } });
   if (filters.gl) {
     const glLabels: Record<GlycemicLoadFilterCategory, string> = { low: tools.lowGl, medium: tools.mediumGl, high: tools.highGl };
     activeFilters.push({ key: "gl", label: glLabels[filters.gl], clear: { gl: undefined } });
@@ -99,6 +100,7 @@ export function RecipesPage({ locale }: { locale: RecipeLocale }) {
           {availableCategories.map((category) => <option key={category} value={category}>{labels.category[category]}</option>)}
         </select>
       </div>
+      <div className="recipe-filter-select"><label htmlFor="recipe-gluten-free"><input id="recipe-gluten-free" type="checkbox" checked={!!filters.glutenFree} onChange={(event) => updateFilters({ glutenFree: event.currentTarget.checked || undefined })} /> {labels.glutenFree}</label></div>
       {hasDietClasses ? <div className="recipe-filter-select">
         <label htmlFor="recipe-diet">{labels.dietFilter}</label>
         <select id="recipe-diet" value={filters.diet} onChange={(event) => updateFilters({ diet: event.currentTarget.value as RecipeDietFilter })}>
@@ -114,8 +116,9 @@ export function RecipesPage({ locale }: { locale: RecipeLocale }) {
       {hasGlycemicLoad ? <div className="recipe-filter-select"><label htmlFor="recipe-gl">{tools.gl}</label><select id="recipe-gl" value={filters.gl ?? ""} onChange={(event) => updateFilters({ gl: (event.currentTarget.value || undefined) as GlycemicLoadFilterCategory | undefined })}><option value="">{tools.anyGl}</option><option value="low">{tools.lowGl}</option><option value="medium">{tools.mediumGl}</option><option value="high">{tools.highGl}</option></select></div> : null}
       </div></details>
       {hasActiveFilters && filteredRecipes.length > 0 ? <button type="button" className="recipe-filter-reset" onClick={resetFilters}>{labels.resetFilters}</button> : null}
-    </form> : <div className="recipe-filters recipe-filters--placeholder" aria-hidden="true">{[labels.search, labels.categoryFilter, ...(hasDietClasses ? [labels.dietFilter] : [])].map((label) => <div className="recipe-filter-select" key={label}><span className="placeholder-label">{label}</span><span className="placeholder-input" /></div>)}<details className="recipe-more-filters"><summary>{tools.moreFilters}</summary></details></div>}
+    </form> : <div className="recipe-filters recipe-filters--placeholder" aria-hidden="true">{[labels.search, labels.categoryFilter, labels.glutenFree, ...(hasDietClasses ? [labels.dietFilter] : [])].map((label) => <div className="recipe-filter-select" key={label}><span className="placeholder-label">{label}</span><span className="placeholder-input" /></div>)}<details className="recipe-more-filters"><summary>{tools.moreFilters}</summary></details></div>}
     {hydrated && filters.diet !== "all" ? <p className="recipe-disclosure">{tools.diet}</p> : null}
+    {hydrated && filters.glutenFree ? <p className="recipe-disclosure">{labels.glutenFreeNote}</p> : null}
     {hydrated && filters.gl ? <p className="recipe-disclosure recipe-gl-disclosure">{tools.glNote} <Link to={glycemicLoadPath(locale)}>{labels.glycemicLoadMethod}</Link></p> : null}
     {homePreview ? <section className="home-preview__topics" aria-labelledby="home-preview-topics-heading">
       <h2 id="home-preview-topics-heading">{homeText.topics}</h2>

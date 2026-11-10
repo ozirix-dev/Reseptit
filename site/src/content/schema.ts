@@ -13,6 +13,7 @@ export const recipeFrontmatterSchema = z.object({
   language: localeSchema,
   status: z.enum(["draft", "published"]),
   diet_class: z.enum(["keto", "vhh_tiukka", "vhh_valjempi"]).optional(),
+  gluten_free: z.boolean().optional(),
   main_ingredient: z.array(z.string()).optional(),
   cooking_method: z.array(z.string()).optional(),
   translation_languages: z.array(localeSchema).optional(),

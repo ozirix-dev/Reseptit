@@ -239,3 +239,21 @@ test("homepage preview keeps unillustrated recipes reachable when insufficient i
   assert.deepEqual(homepagePicks(sample, 3).map((item) => item.recipeId), ["first", "third", "second"]);
   assert.deepEqual(homepagePicks(sample, 0), []);
 });
+
+
+test("gluten-free filter is explicit, independent of keto/VHH and fail-closed", () => {
+  const baseline = finnishRecipes[0];
+  const verified = { ...baseline, recipeId: "gf-reviewed", glutenFree: true, dietClass: "keto" as const };
+  const unreviewed = { ...baseline, recipeId: "gf-unknown", glutenFree: undefined, dietClass: "keto" as const };
+  const falseClaim = { ...baseline, recipeId: "gf-rejected", glutenFree: false, dietClass: null };
+  const items = [verified, unreviewed, falseClaim];
+  const filter = { ...emptyRecipeFilters, glutenFree: true, diet: "keto" as const };
+  assert.equal(recipeFiltersToSearch(filter), "?diet=keto&gluten_free=1");
+  assert.deepEqual(parseRecipeFilters("?diet=keto&gluten_free=1", ["all"]), filter);
+  assert.deepEqual(filterRecipes(items, filter, "fi").map(item => item.recipeId), ["gf-reviewed"]);
+  assert.deepEqual(filterRecipes(items, { ...emptyRecipeFilters, glutenFree: true }, "fi").map(item => item.recipeId), ["gf-reviewed"]);
+  assert.deepEqual(parseRecipeFilters("?gluten_free=yes", ["all"]), emptyRecipeFilters);
+  assert.deepEqual(parseRecipeFilters("?gluten_free=0", ["all"]), emptyRecipeFilters);
+  assert.equal(recipeFiltersToSearch({ ...emptyRecipeFilters, glutenFree: undefined }), "");
+  assert.equal(finnishRecipes.some(recipe => recipe.glutenFree === true), false, "no pre-existing recipe may be automatically classified gluten-free");
+});
