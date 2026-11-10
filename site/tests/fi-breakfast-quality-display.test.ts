@@ -39,13 +39,13 @@ test("SHA-pinned FI overlays correct six dishes without nutrition changes", () =
     if (before.recipe_id === "kiinalainen-teehaudutetut-munat") {
       assert.deepEqual(before.cooking_method, ["paistaminen"]);
       assert.deepEqual(after.cooking_method, ["keittäminen"]);
-      assert.equal((afterMd.content.match(/^\\d+\\. /gm) ?? []).length, 4);
+      assert.equal((afterMd.content.match(/^\d+\. /gm) ?? []).length, 4);
       assert.match(afterMd.content, /kuoriin pieniä säröjä/);
       assert.match(afterMd.content, /Kuori munat vasta maustumisen jälkeen/);
       assert.doesNotMatch(afterMd.content, /Kuori ja puolita munat/);
     } else if (before.recipe_id === "japanilainen-onigiri-lohella") {
       assert.deepEqual(after.cooking_method, before.cooking_method);
-      assert.equal((afterMd.content.match(/^\\d+\\. /gm) ?? []).length, 4);
+      assert.equal((afterMd.content.match(/^\d+\. /gm) ?? []).length, 4);
       assert.match(afterMd.content, /100 g kuivaa valkoista riisiä/);
       assert.match(afterMd.content, /150 g raakaa lohta/);
       assert.match(afterMd.content, /5 g seesaminsiemeniä/);
