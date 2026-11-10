@@ -87,6 +87,15 @@ jobs:
           }
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 
+      - name: Pre-publication editorial evidence for new FI recipes
+        if: steps.select.outputs.run_content == 'true' || contains(steps.select.outputs.changed_paths, 'new-recipe-preflight')
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before || github.sha }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+        run: |
+          node --test site/scripts/new-recipe-preflight.test.mjs
+          node site/scripts/new-recipe-preflight.mjs
+
       - name: Install site dependencies
         if: steps.select.outputs.needs_node == 'true'
         run: npm ci
