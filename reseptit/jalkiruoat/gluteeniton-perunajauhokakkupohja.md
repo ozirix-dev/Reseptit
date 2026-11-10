@@ -16,7 +16,7 @@ tags: [gluteeniton, kakkupohja, täytekakku, perunajauho]
 ingredients:
   - {amount: 4, unit: kpl, item: kananmunaa}
   - {amount: 1.5, unit: dl, item: sokeria}
-  - {amount: 1.5, unit: dl, item: Finnamyl Helmi -perunajauhoa, note: gluteeniton tuote, 500 g pakkaus EAN 6430024961201}
+  - {amount: 1.5, unit: dl, item: Finnamyl Helmi -perunajauhoa, note: "gluteeniton tuote, 500 g pakkaus EAN 6430024961201"}
   - {amount: 1, unit: tl, item: gluteenittomaksi merkittyä Meira-leivinjauhetta, note: tarkista pakkauksen EAN 6414200210055}
 carbs_net_per_serving_g: 21.94
 carbs_total_per_serving_g: null

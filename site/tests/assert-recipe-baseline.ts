@@ -35,7 +35,7 @@ const reviewedGlutenFreeDraftFiles = new Map<string,string>([
   ["reseptit/leivonnaiset/gluteeniton-siemenvuokaleipa.md", "adbb0e2ab86bd517c85a864530df958617741d0d"],
   ["reseptit/leivonnaiset/gluteenittomat-kauralesesampylat.md", "dd20fa5372aff4f2a94a1f150fe824f360d47ea6"],
   ["reseptit/leivonnaiset/gluteeniton-durrapizzapohja.md", "14c5ac712fe0a33405cadc3f76b5f6ca65c81100"],
-  ["reseptit/jalkiruoat/gluteeniton-perunajauhokakkupohja.md", "1947dc6db75d906522531a0c596d40263237a8c4"],
+  ["reseptit/jalkiruoat/gluteeniton-perunajauhokakkupohja.md", "1671bafe17b6b4d84f4729ed8e4db068b5d0d6bf"],
   ["reseptit/jalkiruoat/gluteeniton-uunipannukakku.md", "239b561eb0c5915dbbc164f8b3bce78c891acdbe"],
 ]);
 
