@@ -18,6 +18,9 @@ export const publicRecipeQuarantineIds = Object.freeze([
   "malesialainen-kuih-seri-muka",
   "intialainen-aloo-paratha",
   "malesialainen-laksa-lemak-aamiaiseksi",
+  "malesialainen-roti-canai-dhalilla",
+  "pohjoisafrikkalainen-msemen-hunajalla",
+  "intialainen-pesarattu-mungpavuista",
 ] as const);
 export const isPublicRecipeQuarantined = (id: string): boolean =>
   (publicRecipeQuarantineIds as readonly string[]).includes(id);
