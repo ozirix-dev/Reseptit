@@ -8,6 +8,6 @@
 | 40 | `meksikolainen-huevos-divorciados` | Kaksi kastiketta: tomaatti sekä valmis vihreä salsa; munien paisto | Mustien papujen kuivapainon/kypsän massan ja GI/GK-laskennan vahvistus |
 | 63 | `lahi-ita-labneh-kulho-zaatarilla` | Kylmän annoksen resepti, lisättyä oliiviöljyä ja tekaistuja lämpimiä proteiineja ei ole | Oliivien ja kurkun punnitusperusta sekä riippumattomat makro- ja GI/GK-perusteet |
 
-**Toteutustapa:** `site/scripts/material21-fi-public-display.ts` toimii vain kolmella lähdepolulla ja täsmällisellä SHA-lukolla. Alkuperäisten `reseptit/aamupalat/*.md`-tiedostojen tavut, ravintoarvot ja olemassa olevat GI/GK-lukitukset pysyvät muuttumattomina. Sama oikaistu FI-esitys annetaan tulevien käännösten semanttisen tarkistuksen vertailupohjaksi.
+**Toteutustapa:** `site/scripts/material21-fi-public-display.ts` toimii vain kolmella lähdepolulla ja täsmällisellä SHA-lukolla. Alkuperäisten `reseptit/aamupalat/*.md`-tiedostojen tavut, ravintoarvot ja olemassa olevat GI/GK-lukitukset pysyvät muuttumattomina. Koska näillä kolmella ei ole julkaistuja käännöksiä, semanttinen käännösvertailu pysyy toistaiseksi alkuperäisen lähdeversion tarkistuksessa. Ennen ensimmäistä EN/SV/TH-julkaisua käännösten vertailu tulee erikseen sitoa täsmälleen tähän julkiseen FI-esitykseen ilman ravinto-/GI/GK-lukitusten muuttamista.
 
 **Ei hyväksytä laskentaa vain oikean ohjeen perusteella.** Kolme issue #404:n korjauskorttia jäävät avoimeksi. Muut 18 B21-tapausta jäävät erilliseen tarkistukseen; niille ei keksitä puuttuvia grammoja. Cloudflare-tuotantoon ei kosketa.
