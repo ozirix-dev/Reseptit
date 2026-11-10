@@ -6,6 +6,7 @@ import { siteContent } from "../src/generated/content.generated";
 import { parseMarkdown } from "../src/content/markdown";
 import { editorialHoldRecipeIds, publicRecipeQualityHold } from "../scripts/recipe-quality-holds";
 import { isPublicRecipeQuarantined } from "../scripts/public-recipe-quarantine";
+import { projectSafeWontonFiDisplay } from "../scripts/wonton-fi-public-display";
 
 const originals = {
   "intialainen-idli-kookoschutneylla": "reseptit/aamupalat/intialainen-idli-kookoschutneylla.md",
@@ -83,4 +84,21 @@ test("corrected shrimp wonton is published without an unfinished-recipe hold", a
   assert.deepEqual(recipe.ingredients, raw.data.ingredients);
   assert.equal(recipe.nutrition.carbsNetG, null);
   assert.equal(recipe.nutrition.carbsTotalG, null);
+});
+
+test("public wonton correction is exact-source-bound; original nutrition identity stays unchanged", async () => {
+  const file = "reseptit/aamupalat/kiinalainen-katkarapu-wontonkeitto.md";
+  const raw = await readFile(path.resolve(import.meta.dirname, "../../", file), "utf8");
+  const projected = projectSafeWontonFiDisplay(file, raw);
+  assert.notEqual(projected, raw);
+  const before = parseMarkdown(raw), after = parseMarkdown(projected);
+  assert.ok(before && after);
+  assert.deepEqual(after.data.ingredients, before.data.ingredients);
+  assert.equal(after.data.status, before.data.status);
+  assert.equal(after.data.servings, before.data.servings);
+  for (const key of ["carbs_net_per_serving_g", "carbs_total_per_serving_g", "protein_per_serving_g", "fat_per_serving_g"]) {
+    assert.equal(after.data[key], before.data[key], key);
+  }
+  assert.match(after.content, /kauttaaltaan helmiäisenvaaleita/);
+  assert.throws(() => projectSafeWontonFiDisplay(file, raw.replace("700", "701")), /WONTON_FI_SOURCE_STALE/);
 });
