@@ -1,0 +1,11 @@
+# C20 FI-näyttökorjaukset: kaksi keittämismenetelmää ja yksi aika
+
+**10.11.2026.** Julkisen näyttöversion SHA-lukittu korjaus, ei alkuperäisen GI/GK-reseptin tai ravintoarvojen hyväksyntä. Main-lähtö-SHA `ad0b922595aad6d7547fad37bae8c3fc11118f39`. Lähteet ovat C20 Draft #380:n 5 HOLDin joukosta.
+
+- `malesialainen-nasi-lemak-aamiaisella`: julkinen `cooking_method: keittäminen`, koska 100 g riisiä keitetään 184 g kookosmaidossa + 100 g vedessä, ja 110 g muna kypsennetään höyryssä. Raaka-FI ja makrot muuttumattomia.
+- `indonesialainen-nasi-uduk-aamiaisella`: julkinen `cooking_method: keittäminen`; 100 g riisi 200 g täysrasvaisessa kookosmaidossa, tarvittaessa lisätään pieni määrä **vain kuumaa vettä** riisin kypsymiseksi. Ei lisäöljyä, -suolaa, uusia raaka-aineita eikä automaattista GK-arvon muutosta. Veden tarkka lisätarve riippuu kookosmaidon koostumuksesta ja riisilajikkeesta; ohje on AI:n käytännöllinen sovitus, ei koepaiston mittaus. Kypsä valmisannos jää koostumukseltaan epävarmaksi, joten käännösten julkaisu vaatii erillisen katselmoinnin.
+- `kiinalainen-kevatsipulipannukakku`: julkisen reseptin kokonaisaika 25 → **35 min** (15 min taikinan lepo sekä erilliset sekoitus-, kaulinta-, kerrostus- ja paistovaiheet). 35 min on kokin arvio, ei mitattu koepaisto. Ainekset ja ravintoarvot ennallaan.
+
+Kolmen lähdereseptin alkuperäiset SHA-256:t on lukittu `site/scripts/c20-fi-editorial-display.ts`-korjaustiedostoon. Vain kolme yksilöityä sisältöä ja yksittäisiä ankkureita hyväksytään; muutosten jälkeen projekti pysäytetään, jos raaka-FI muuttuu odottamatta. `site/scripts/build-content.ts` käyttää näyttökerrosta, mutta GK-laskenta ja kanoniset FI-raakalähteet pysyvät alkuperäisinä. Käännösauditoinnin mahdollinen myöhempi julkaisu vertaa näiden kahden `cooking_method`-arvoa ja pannukakun 35 min aikaa näyttöversioon vain, jos lähde-SHA täsmää. Testit estävät annos-, aines-, kuva- ja makrodriftin.
+
+**Ei julkaisua kieliin tässä PR:ssä.** Kolmen reseptin EN/SV/TH Draftit PR #380:ssa ovat edelleen vanhan FI-metadatan mukaisia ja pitää korjata, arvioida semanttisesti sekä saada uudet source-/translation-SHA:t ennen julkaisua. Neljäs HOLD maakouda vaatii perunan punnitus-/ravintolähteen; pisang gorengin kolme kieliversiota julkaistiin erillisessä PR #382:ssa.
