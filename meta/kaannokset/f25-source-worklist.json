@@ -1,0 +1,214 @@
+{
+  "schemaVersion": 1,
+  "batch": "F25-20261110",
+  "status": "source-triage-only",
+  "sourceMainSha": "e1136a3fa94da8923b2d3f8d950c5416c8a3583f",
+  "expectedSources": 25,
+  "plannedPairs": 75,
+  "release_authorized": false,
+  "independentHumanReview": false,
+  "translations_created": 0,
+  "purpose": "25 previously untranslated FI sources across categories; strict FI-first review, no registration/production",
+  "recipeSources": [
+    {
+      "recipe_id": "rahka-marjakerroskulho",
+      "source_path": "reseptit/aamupalat/rahka-marjakerroskulho.md",
+      "source_blob_sha": "af3a8debe0a46b920ed0464545732bd2900485b8",
+      "review_state": "needs-chef-review",
+      "release_authorized": false,
+      "review_note": "Cold preparation incorrectly tagged as cooking; sweetener quantity optional"
+    },
+    {
+      "recipe_id": "pohjoisafrikkalainen-maakouda",
+      "source_path": "reseptit/aamupalat/pohjoisafrikkalainen-maakouda.md",
+      "source_blob_sha": "34574856132b429713948701c718b25dcd12776d",
+      "review_state": "needs-chef-review",
+      "release_authorized": false,
+      "review_note": "One unweighed potato and low reported CHO need nutrition-weight reconciliation"
+    },
+    {
+      "recipe_id": "karibia-plantain-aamiaislautanen",
+      "source_path": "reseptit/aamupalat/karibia-plantain-aamiaislautanen.md",
+      "source_blob_sha": "afb4242ce40db1e8eefb2dc654069008a403e41c",
+      "review_state": "source-hold",
+      "release_authorized": false,
+      "blocker": "Plantain avocado lime edible masses undefined; 4 macros absent"
+    },
+    {
+      "recipe_id": "munakoiso-kesakurpitsalasagne",
+      "source_path": "reseptit/paaruoat/munakoiso-kesakurpitsalasagne.md",
+      "source_blob_sha": "42167f96e8f448383e5db66dba57274bd235b87f",
+      "review_state": "needs-chef-review",
+      "release_authorized": false,
+      "review_note": "Specific method, but pasta 180/200g alternative and published nutrition/GK evidence must be checked"
+    },
+    {
+      "recipe_id": "intialainen-pinaatti-paneer-chilla",
+      "source_path": "reseptit/aamupalat/intialainen-pinaatti-paneer-chilla.md",
+      "source_blob_sha": "7c890fba7728a3eb5da20b57319ff67870e28252",
+      "review_state": "source-hold",
+      "release_authorized": false,
+      "blocker": "Specific steps but optional chutney and lemon not listed; four published macro fields absent"
+    },
+    {
+      "recipe_id": "karibia-mango-limejogurtti",
+      "source_path": "reseptit/aamupalat/karibia-mango-limejogurtti.md",
+      "source_blob_sha": "a0d8cdb2ae4aaa9733903b643941d984a788c260",
+      "review_state": "source-hold",
+      "release_authorized": false,
+      "blocker": "Generic warm bean/tofu instructions for cold mango yogurt"
+    },
+    {
+      "recipe_id": "japanilainen-hojicha-jogurtti-persimonilla",
+      "source_path": "reseptit/aamupalat/japanilainen-hojicha-jogurtti-persimonilla.md",
+      "source_blob_sha": "bba0051aba98ebf8ce1845a1df5bccc058394aba",
+      "review_state": "source-hold",
+      "release_authorized": false,
+      "blocker": "Generic warm bowl; 2g hojicha needs dry-tea vs brewed infusion interpretation"
+    },
+    {
+      "recipe_id": "lahi-ita-pistaasijogurtti",
+      "source_path": "reseptit/aamupalat/lahi-ita-pistaasijogurtti.md",
+      "source_blob_sha": "8d417c3c8972507895dbd91c325bcd480695e11a",
+      "review_state": "source-hold",
+      "release_authorized": false,
+      "blocker": "Generic warm bowl for cold yogurt; specific measured rose water in finishing"
+    },
+    {
+      "recipe_id": "vietnamilainen-kahvijogurtti-banaanilla",
+      "source_path": "reseptit/aamupalat/vietnamilainen-kahvijogurtti-banaanilla.md",
+      "source_blob_sha": "4f215df58a68fe86d5c03a7d11c7fc516f823d3f",
+      "review_state": "source-hold",
+      "release_authorized": false,
+      "blocker": "Generic hot bowl for cold coffee yogurt; 200 ml coffee and condensed milk method needs review"
+    },
+    {
+      "recipe_id": "vietnamilainen-papaija-kookospuuro",
+      "source_path": "reseptit/aamupalat/vietnamilainen-papaija-kookospuuro.md",
+      "source_blob_sha": "ecae7e7e302d8564a171955ef8e9117f69a6fb7d",
+      "review_state": "source-hold",
+      "release_authorized": false,
+      "blocker": "Generic grain/liha filler and unweighed extra-liquid instruction"
+    },
+    {
+      "recipe_id": "uunimuna-avokadot",
+      "source_path": "reseptit/aamupalat/uunimuna-avokadot.md",
+      "source_blob_sha": "0fa5b6be8f44f853f217bbf9169b7173b2612079",
+      "review_state": "needs-chef-review",
+      "release_authorized": false,
+      "review_note": "200 g edible egg weight can exceed avocado cavities; account for every egg, no spill discarded"
+    },
+    {
+      "recipe_id": "valimerellinen-jogurttikulho-hunajalla",
+      "source_path": "reseptit/aamupalat/valimerellinen-jogurttikulho-hunajalla.md",
+      "source_blob_sha": "283840ebf2620cf7e4ad684e7470b99ecf19fa21",
+      "review_state": "source-hold",
+      "release_authorized": false,
+      "blocker": "Generic hot bean/tofu preparation for a cold yogurt bowl"
+    },
+    {
+      "recipe_id": "kiinalainen-soijamaito-aamiaisella",
+      "source_path": "reseptit/aamupalat/kiinalainen-soijamaito-aamiaisella.md",
+      "source_blob_sha": "2eede161a4c9a8f3b42a6dced6eaf2e133ce96c2",
+      "review_state": "source-hold",
+      "release_authorized": false,
+      "blocker": "Generic warm bowl before soy curdling; 15ml vinegar usage and curdling need recipe-specific QA"
+    },
+    {
+      "recipe_id": "intialainen-besan-chilla",
+      "source_path": "reseptit/aamupalat/intialainen-besan-chilla.md",
+      "source_blob_sha": "fc2be49b7bde49f950dd24f1d3f3d38644bf7a8f",
+      "review_state": "source-hold",
+      "release_authorized": false,
+      "blocker": "Generic pancake instructions and unlisted tomato chutney"
+    },
+    {
+      "recipe_id": "korealainen-gyeranbap-riisikulho",
+      "source_path": "reseptit/aamupalat/korealainen-gyeranbap-riisikulho.md",
+      "source_blob_sha": "9955dbbce84566bb1967f86ab19c75eb3c3379af",
+      "review_state": "source-hold",
+      "release_authorized": false,
+      "blocker": "Generic rice/tofu filler and unlisted sesame oil in serving step"
+    },
+    {
+      "recipe_id": "lahi-ita-zaatar-munat",
+      "source_path": "reseptit/aamupalat/lahi-ita-zaatar-munat.md",
+      "source_blob_sha": "cf0c02b2b1ecd1200557271c2bc574f2ad1c2c71",
+      "review_state": "source-hold",
+      "release_authorized": false,
+      "blocker": "Generic bean/meat skillet for egg/pita yogurt"
+    },
+    {
+      "recipe_id": "thai-kananmunat-kookoscurryssa",
+      "source_path": "reseptit/aamupalat/thai-kananmunat-kookoscurryssa.md",
+      "source_blob_sha": "5782454a057ee280812cb155b23898e7c1d9f098",
+      "review_state": "source-hold",
+      "release_authorized": false,
+      "blocker": "Generic bean/meat skillet before curry; uncooked rice and egg preparation require coherent sequence"
+    },
+    {
+      "recipe_id": "vietnamilainen-banh-xeo-aamiaisletut",
+      "source_path": "reseptit/aamupalat/vietnamilainen-banh-xeo-aamiaisletut.md",
+      "source_blob_sha": "cb442ad22c02b9a894861dd7cdc740dd5b0417ef",
+      "review_state": "source-hold",
+      "release_authorized": false,
+      "blocker": "Generic pancakes and unlisted turmeric plus inadequate shrimp cooking detail"
+    },
+    {
+      "recipe_id": "vietnamilainen-banh-cuon-sienilla",
+      "source_path": "reseptit/aamupalat/vietnamilainen-banh-cuon-sienilla.md",
+      "source_blob_sha": "fa1d7e18602b14acfa397e4df5fa6747d8410b73",
+      "review_state": "source-hold",
+      "release_authorized": false,
+      "blocker": "Generic steaming template; pork filling/cooking safety and unlisted herbs"
+    },
+    {
+      "recipe_id": "pohjoisafrikkalainen-baghrir",
+      "source_path": "reseptit/aamupalat/pohjoisafrikkalainen-baghrir.md",
+      "source_blob_sha": "24722209acc0b5ca0eb45719248297b6c2a58f3a",
+      "review_state": "source-hold",
+      "release_authorized": false,
+      "blocker": "Generic pancake templates and unlisted honey butter"
+    },
+    {
+      "recipe_id": "thai-roti-munalla-banaanilla",
+      "source_path": "reseptit/aamupalat/thai-roti-munalla-banaanilla.md",
+      "source_blob_sha": "2468bc1a828c551978760af1a0e5be2ddc2b4848",
+      "review_state": "source-hold",
+      "release_authorized": false,
+      "blocker": "Generic pancake and unlisted condensed milk; banana/egg application unspecified"
+    },
+    {
+      "recipe_id": "meksikolainen-chilaquiles-verdes",
+      "source_path": "reseptit/aamupalat/meksikolainen-chilaquiles-verdes.md",
+      "source_blob_sha": "71abfa953914a080e2f180961864ba3dd3e3d35d",
+      "review_state": "source-hold",
+      "release_authorized": false,
+      "blocker": "Generic egg/bean skillet; missing four macro fields and salsa technique"
+    },
+    {
+      "recipe_id": "meksikolainen-paputostada-aamupalaksi",
+      "source_path": "reseptit/aamupalat/meksikolainen-paputostada-aamupalaksi.md",
+      "source_blob_sha": "e73d88c563f14a5ebbb33803206b9739fcbcea34",
+      "review_state": "source-hold",
+      "release_authorized": false,
+      "blocker": "Generic egg/bean skillet; beans cooking state and four macro values missing"
+    },
+    {
+      "recipe_id": "indonesialainen-nasi-goreng-aamiaisriisi",
+      "source_path": "reseptit/aamupalat/indonesialainen-nasi-goreng-aamiaisriisi.md",
+      "source_blob_sha": "731c7babbe7aa94c4e931a8224cec81bfe75b9fb",
+      "review_state": "source-hold",
+      "release_authorized": false,
+      "blocker": "Generic fritter filler, unlisted garlic, and 150g kecap manis require source and nutrition assessment"
+    },
+    {
+      "recipe_id": "korealainen-kimchi-jeon-aamiaiseksi",
+      "source_path": "reseptit/aamupalat/korealainen-kimchi-jeon-aamiaiseksi.md",
+      "source_blob_sha": "ed74bb3ddab0757a69402da47209b7bac0d51e9e",
+      "review_state": "source-hold",
+      "release_authorized": false,
+      "blocker": "Generic pancake preparation with missing liquid specification and macro values"
+    }
+  ]
+}
