@@ -324,7 +324,11 @@ const publicResults = results.flatMap((result) => {
     sourceReferences,
   };
 });
-const expectedPublicResultCount = expectedRecipeIds.length;
+// The internal, source-sealed GI/GK report retains all historical originals,
+// while deliberately quarantined recipes must not have public GL cards.
+const expectedPublicResultCount = expectedRecipeIds.filter(
+  (id) => !isPublicRecipeQuarantined(id),
+).length;
 if (!isFixtureBuild && publicResults.length !== expectedPublicResultCount) {
   throw new Error(`Production GL pilot page must include all ${expectedPublicResultCount} publishable entries.`);
 }
