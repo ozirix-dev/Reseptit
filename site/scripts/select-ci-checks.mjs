@@ -24,6 +24,7 @@ const generatedContentTests = new Set([
   "tests/recipe-search.test.ts",
   "tests/gk80-release6.test.ts",
   "tests/gk80-editorial-display.test.ts",
+  "tests/a8-editorial-display.test.ts",
   "tests/gk80-editorial-translation-release.test.ts",
 ]);
 
