@@ -46,7 +46,7 @@ test("SHA-pinned FI overlays correct fourteen dishes without nutrition changes",
     for(const k of macros) assert.equal(after[k],before[k]);
     if (new Set(["karibia-mango-limejogurtti","japanilainen-hojicha-jogurtti-persimonilla","lahi-ita-pistaasijogurtti","vietnamilainen-kahvijogurtti-banaanilla","valimerellinen-jogurttikulho-hunajalla","kiinalainen-soijamaito-aamiaisella","korealainen-gyeranbap-riisikulho","lahi-ita-zaatar-munat"]).has(before.recipe_id)) {
       assert.equal((afterMd.content.match(/^\d+\. /gm) ?? []).length, 4);
-      assert.doesNotMatch(afterMd.content, /Valmistele kulhon ainekset|Paloittele tuoreet kasvikset ja valmistele yrtit|Kypsennä riisi pakkauksen ohjeen mukaan\\. Paista tofu|kypsennä pavut tai liha tarvittaessa erikseen/);
+      assert.doesNotMatch(afterMd.content, /Valmistele kulhon ainekset|Paloittele tuoreet kasvikset ja valmistele yrtit|Kypsennä riisi pakkauksen ohjeen mukaan\. Paista tofu|kypsennä pavut tai liha tarvittaessa erikseen/);
       assert.notEqual(afterMd.content, beforeMd.content);
       assert.match(afterMd.content, /Jaa|jaa|annosta|annoksille|annokseen/);
     } else if (before.recipe_id === "kiinalainen-teehaudutetut-munat") {
@@ -106,7 +106,7 @@ test("generated FI cards use chef-corrected instructions and the reviewed noodle
     assert.ok(recipe, "FI generated missing: " + id);
     assert.equal(recipe.servings, 2);
     const fullText = recipe.instructionsText.join(" ");
-    assert.doesNotMatch(fullText, /Valmistele kulhon ainekset|Paloittele tuoreet kasvikset ja valmistele yrtit|Kypsennä riisi pakkauksen ohjeen mukaan\\. Paista tofu|kypsennä pavut tai liha tarvittaessa erikseen/);
+    assert.doesNotMatch(fullText, /Valmistele kulhon ainekset|Paloittele tuoreet kasvikset ja valmistele yrtit|Kypsennä riisi pakkauksen ohjeen mukaan\. Paista tofu|kypsennä pavut tai liha tarvittaessa erikseen/);
   }
   const ham = recipes.get("yrttituorejuusto-kinkkurullat");
   assert.ok(ham);
