@@ -20,7 +20,7 @@ ingredients:
   item: "fresh mint leaves, eaten with the porridge"
 - amount: 200
   unit: "g"
-  item: "milk"
+  item: "whole milk"
 - amount: 20
   unit: "g"
   item: "honey"
@@ -64,7 +64,7 @@ The structured ingredient list above supplies the amounts for the serving calcul
 ## Instructions
 
 1. Cook 100 g of fine 0.5–0.6 mm rolled oats in 500 g of water for 10 minutes.
-2. Add the milk, finely chopped fresh mint leaves and honey. Heat through and season with the listed salt.
+2. Add the whole milk, finely chopped fresh mint leaves and honey. Heat through and season with the listed salt.
 3. The mint leaves stay in the porridge and are eaten. Do not strain an infusion in this version. Divide the whole mixture into two servings and serve warm.
 
 ## Notes

@@ -20,7 +20,7 @@ ingredients:
   item: "färska myntablad som äts med gröten"
 - amount: 200
   unit: "g"
-  item: "mjölk"
+  item: "helmjölk"
 - amount: 20
   unit: "g"
   item: "honung"
@@ -64,7 +64,7 @@ Den strukturerade ingredienslistan ovan innehåller mängderna för portionsräk
 ## Tillagning
 
 1. Koka 100 g fina havregryn (0,5–0,6 mm) i 500 g vatten i 10 minuter.
-2. Tillsätt mjölken, finhackade färska myntablad och honungen. Värm upp och krydda med det angivna saltet.
+2. Tillsätt helmjölken, finhackade färska myntablad och honungen. Värm upp och krydda med det angivna saltet.
 3. Myntabladen ska vara kvar i gröten och ätas. Ingen infusion silas i den här versionen. Fördela hela mängden på två portioner och servera varm.
 
 ## Anteckningar
