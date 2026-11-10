@@ -4,15 +4,20 @@ recipe_id: "perinteinen-mansikkataytekakku-sienikakkupohjalla"
 url_slug: "perinteinen-mansikkataytekakku-sienikakkupohjalla"
 category: "jalkiruoka"
 language: "fi"
-status: "draft"
+status: "published"
 translation_languages: []
 translation_status: {}
 servings: 10
-time_total_min: 180
+time_total_min: 270
 difficulty: "keskitaso"
 main_ingredient: ["kananmuna", "vehnäjauho", "mansikka", "kuohukerma"]
 cooking_method: ["uunissa paistaminen", "täyttäminen"]
 tags: ["täytekakku", "mansikka", "perinneruoka", "jälkiruoka"]
+image:
+  src: jalkiruoat/perinteinen-mansikkataytekakku-sienikakkupohjalla.webp
+  alt: "Piirroskuva mansikoilla koristellusta kermakakusta, jonka leikkauspinnassa näkyy sienikakkupohja ja mansikkatäyte"
+  width: 1536
+  height: 1024
 ingredients:
   - {amount: 4, unit: kpl, item: kananmunaa, note: sienikakkupohjaan}
   - {amount: 2, unit: dl, item: sokeria, note: sienikakkupohjaan}
@@ -50,12 +55,13 @@ Kaikki pohjan, täytteen, kostutuksen ja kuorrutuksen ainekset ovat rakenteisess
 6. Vaahdota kuohukerma ja vaniljasokeri jämäkäksi mutta levittyväksi vaahdoksi. Jaa vaahto silmämääräisesti kahteen osaan: toinen täytteeseen, toinen pintaan ja reunoille.
 7. Kostuta kakkulevyjen leikkauspinnat kevyesti maidolla (yhteensä 0,5 dl). Levitä alemman levyn päälle mansikkahillo, viipaloidut mansikat ja täytteeseen varattu kermavaahto.
 8. Aseta päällimmäinen levy paikalleen. Kuorruta pinta ja reunat jäljellä olevalla kermavaahdolla sekä koristele säästetyillä mansikoilla.
-9. Säilytä valmis kakku jääkaapissa ja tarjoile viileänä. Anna täytteen asettua kylmässä ennen leikkaamista.
+9. Säilytä valmis kakku jääkaapissa ja tarjoile viileänä. Anna täytteen asettua kylmässä vähintään kaksi tuntia ennen leikkaamista. Pidä kylmässä myös tarjoiluun asti.
 
 ## Muistiinpanot
 
-- Pohjasta löytyy myös itsenäinen resepti: [Sienikakkupohja](sienikakkupohja.md).
+- Pohjasta löytyy myös itsenäinen resepti: [Sienikakkupohja](../sienikakkupohja/).
 - Kostutus pidetään kevyenä, sillä sienikakkupohja on luonnostaan pehmeä.
-- **GK: todennäköisesti korkea (sanallinen arvio, ei laskettu eikä vahvistettu).** GK riippuu palakoosta sekä käytetyn hillon ja muiden tuotteiden hiilihydraateista. Julkaisuun ei arvata tarkkaa GK-lukua.
+- **Hiilihydraattipitoinen – GK ei laskettu.** Annos sisältää laskennallisesti runsaasti imeytyviä hiilihydraatteja, mutta GK:ta ei voi vahvistaa pelkästä hiilihydraattimäärästä. Annoskoko sekä hillo- ja tuotemerkki vaikuttavat arvioon.
 - Ravintoarvot ovat 10 annoksen **laskennallinen arvio** (imeytyvä hiilihydraatti, proteiini ja rasva) tuotteiden oletusvalinnoilla. Kokonaishiilihydraatteja kuitu mukaan lukien ei ole laskettu. [Tuotekohtainen laskentamuistio](../../docs/nutrition/sienikakkupohja-ja-mansikkataytekakku-2026-11-10.md). Täytekakku ei ole VHH- eikä keto-resepti.
-- Tämä on uusi omatekoinen perinnereseptin toimituksellinen luonnos; sitä ei ole koepaistettu.
+- Kyseessä on toimituksellisesti koostettu perinneresepti, jota ei ole fyysisesti koepaistettu tässä julkaisutarkistuksessa. Kokonaisaika sisältää pohjan jäähtymisen sekä noin kahden tunnin vetäytymisen jääkaapissa.
+- Sisältää vehnää, kananmunaa ja maitotuotteita.
