@@ -16,6 +16,7 @@ import {verifyFoodinRecord,FOODIN_ORIGINAL_FILE_SHA256,FOODIN_RECORD_SHA256,FOOD
 import {textHash,digest} from '../scripts/gk149-model';
 import {countGkVersions} from '../src/features/recipes/gk-only-types';
 import {gkOnlyVariants,gkVersionCoverage} from '../src/generated/gk-only-variants.generated';
+import { isPublicRecipeQuarantined } from '../scripts/public-recipe-quarantine';
 import {GkOnlyVariantPanel,gkOnlyUi,gkScopeUi,gkOnlyValue,gkOnlyPreparation} from '../src/features/recipes/GkOnlyVariantPanel';
 const root=fileURLToPath(new URL('../../',import.meta.url));
 const read=(p:string)=>JSON.parse(readFileSync(path.join(root,p),'utf8'));
@@ -25,9 +26,14 @@ test('exact seven new A versions form a distinct179-recipe candidate while the o
  assert.equal(seven.length,7);assert.ok(seven.every(v=>v.level==='A'&&v.confidence==='LOW'));
  assert.deepEqual(Object.fromEntries(seven.map(v=>[v.recipeId,v.inputSha256])),manifest.approvedInputs);
  const legacy=gkOnlyVariants.filter(v=>[...sixteen,...seven].some(old=>old.inputSha256===v.inputSha256));
- assert.deepEqual(legacy,[...sixteen,...seven]);assert.deepEqual(report.gkOnlyVariants,gkOnlyVariants);
+ assert.deepEqual(legacy,[...sixteen,...seven]);
+ assert.deepEqual(gkOnlyVariants,report.gkOnlyVariants.filter((v:{recipeId:string})=>!isPublicRecipeQuarantined(v.recipeId)));
  const coverage=countGkVersions(report.results,legacy);
- assert.deepEqual(gkVersionCoverage,report.versionCoverage);
+ assert.deepEqual(report.versionCoverage,countGkVersions(report.results,report.gkOnlyVariants));
+ assert.deepEqual(gkVersionCoverage,countGkVersions(
+   report.results.filter((r:{recipeId:string})=>!isPublicRecipeQuarantined(r.recipeId)),
+   gkOnlyVariants,
+ ));
  assert.equal(coverage.numericRecipes,179);assert.equal(coverage.originalNumeric,156);assert.equal(coverage.additionalA,17);assert.equal(coverage.additionalB,6);assert.equal(coverage.missing,156);assert.equal(coverage.total,335);
  assert.deepEqual(report.coverageViews.originalRecipe,{total:335,numeric:156,missing:179});
  assert.throws(()=>countGkVersions(report.results,[...gkOnlyVariants,seven[0]]),/distinct/);

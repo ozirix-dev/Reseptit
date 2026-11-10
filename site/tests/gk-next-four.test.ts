@@ -18,6 +18,7 @@ import {digest,textHash} from '../scripts/gk149-model';
 import {countGkVersions,type GkOnlyVariant} from '../src/features/recipes/gk-only-types';
 import {GkOnlyVariantPanel,gkOnlyQuantity,gkOnlyPreparation,gkOnlyValue,gkOnlyUi,gkScopeUi} from '../src/features/recipes/GkOnlyVariantPanel';
 import {gkOnlyVariants,gkVersionCoverage} from '../src/generated/gk-only-variants.generated';
+import { isPublicRecipeQuarantined } from '../scripts/public-recipe-quarantine';
 
 const root=fileURLToPath(new URL('../../',import.meta.url)),folder='docs/nutrition/gk80-next-four/';
 const read=(p:string)=>JSON.parse(readFileSync(path.join(root,p),'utf8'));
@@ -32,15 +33,19 @@ test('the four A inputs and legacy coverage remain intact alongside authorized G
  assert.deepEqual(gkOnlyVariants.slice(0,27),[...old,...four]);
  for(const previous of baseline.legacyVariants){const v=old.find(v=>v.recipeId===previous.recipeId)!;assert.equal(digest(v),previous.variantSha256,previous.recipeId);}
  const report=read('tmp/nutrition/glycemic-load-pilot.json');
- assert.deepEqual(report.gkOnlyVariants,gkOnlyVariants);assert.deepEqual(report.versionCoverage,gkVersionCoverage);
+ assert.deepEqual(report.gkOnlyVariants.filter((v:GkOnlyVariant)=>!isPublicRecipeQuarantined(v.recipeId)),gkOnlyVariants);
  const releases=loadAuthorizedGk100Variants(root);
- const legacyVariants=gkOnlyVariants.slice(0,gkOnlyVariants.length-releases.length);
- assert.deepEqual(gkOnlyVariants.slice(legacyVariants.length),releases);
+ const legacyVariants=report.gkOnlyVariants.slice(0,report.gkOnlyVariants.length-releases.length);
+ assert.deepEqual(report.gkOnlyVariants.slice(legacyVariants.length),releases);
  const legacy=countGkVersions(report.results,legacyVariants);
  assert.deepEqual([legacy.numericRecipes,legacy.originalNumeric,legacy.additionalA,legacy.additionalB,legacy.total,legacy.missing],
   [207,156,41,10,335,128]);
- const coverage=countGkVersions(report.results,gkOnlyVariants);
- assert.deepEqual(gkVersionCoverage,coverage);
+ const coverage=countGkVersions(report.results,report.gkOnlyVariants);
+ assert.deepEqual(report.versionCoverage,coverage);
+ assert.deepEqual(gkVersionCoverage,countGkVersions(
+   report.results.filter((r:{recipeId:string})=>!isPublicRecipeQuarantined(r.recipeId)),
+   gkOnlyVariants,
+ ));
  assert.equal(coverage.legacyNumericRecipes,207+releases.filter(v=>!v.studyServing).length);
  assert.equal(coverage.numericRecipes,coverage.legacyNumericRecipes-1,"manakish study bread is excluded from home-recipe coverage");
  assert.equal(coverage.studyServingRecipeIds.length,8);
