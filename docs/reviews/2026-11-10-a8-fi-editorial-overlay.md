@@ -21,6 +21,10 @@ Tämä PR poistaa vanhasta #361:n diffistä *kaikki suorat FI-lähdetiedostomuut
 | shoyu-kanakeitto-konjac | `cooking_method` keittäminen, ei paistaminen; broilerin sisälämpö vähintään 75 °C | **GK80 release-3**, alkuperäinen raakatiedosto ja hyväksyntä-SHA ennallaan |
 | vhh-brita-kakku | Mantelijauho ja leivinjauhe sekoitetaan voi–erytritoli–keltuaisvaahtoon ennen taikinan levittämistä | Pohjan 70 g ja marengin 60 g erytritolia pysyvät erillisinä |
 
+## Testikierroksen havainto
+
+Ensimmäinen uusi PR-CI [#42730586760](https://github.com/ozirix-dev/Reseptit/actions/runs/42730586760): sivuston rakennus PASS ja 445/446 yksikkötestiä PASS. Ainoa FAIL oli vanha `gk80-editorial-translation-release.test.ts` -väite, että mangokookosriisin EN/SV/TH-sivut pysyvät Draftina. Ne julkaistiin jo [PR #375](https://github.com/ozirix-dev/Reseptit/pull/375), joten historiatesti päivitetty vaatimaan **kolme julkaistua kielisivua, `keittäminen`-metatiedot, laskennan määrien ennallaan pysymisen ja alkuperäisen FI-raakalähteen vanhan SHA-sidonnan**. Testin kattavuus kasvaa, kielitodisteita ei ohiteta. Tämä on yksi rajattu korjauskierros.
+
 ## Laatuportit ja rajoitukset
 
 - Kaikissa kahdeksassa vain version lukitsema näyttökorjaus, ei alkuperäisen Markdownin muutosta. Toisen reseptin polulla korjaus palauttaa datan muuttamattomana.
