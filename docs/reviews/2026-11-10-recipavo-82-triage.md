@@ -123,3 +123,41 @@ Tämä PR omistaa **vain tämän dokumentin**. Ei kosketa reseptien Markdownia, 
 5. Kun muut PR:t yhdistyvät, vain avoimet tapaukset katselmoidaan uudelleen. Tämä PR on **Draft** ja dokumentaatiota, ei julkaisun hyväksyntä.
 
 **Aineistolukitus:** lähtöaineistona #358 HEAD `b29335e06d0c310d7b18122115f9cfee9b30ab81` / artifact `13691537441`; rivien `blob/main`-linkit johtavat kulloinkin päivittyvään tiedostoon, eivät lukittuun versioon. Siksi PR:n hyväksynnässä tarvitaan uusimmat lähde-SHA:t eikä vanhaa luokittelua saa käsitellä ajantasaisena ilman tarkistusta.
+
+
+## Varmennuskierros V1: ensimmäiset 20 / 82 (10.11.2026)
+
+**Tarkistettu main-commit:** `6a59fb7a58e3b5659a8546aecddea42eea2493a0`. Jokaiselta 20 reseptiltä luettu GitHubista kanoninen `reseptit/aamupalat/<id>.md`, YAML:n ainesosat ja `## Valmistus` -osiot. Lyhyet blob-SHA:t ovat samasta commitista. Julkisen näyttölogiikan kannalta tarkistettu `site/scripts/build-content.ts`, `site/scripts/fi-breakfast-quality-display.ts`, `site/scripts/c20-fi-editorial-display.ts` sekä `site/scripts/recipe-quality-holds.ts`. **10/20 vahvistettua vielä korjausta edellyttävää, 10/20 alkuperäistä auditointiongelmaa korjattu.**
+
+**Tärkeä rajaus:** `RESOLVED_AUDIT` koskee vain mainittua ohje-/ainesosahavaintoa, ei ravintoarvojen, GI/GK:n, kaikkien käännösten, maistamisen tai tosiasiallisen Pages-live-HTTP-vastausten täydellistä hyväksyntää. `BLOCK` tarkoittaa perustellusti todettua lähdetason estettä; julkisessa näkymässä voidaan esittää erillinen laatuhold/varoitus, joka ei korjaa taustalla olevia ravintolukuja. Kun tiedosto tai projektori muuttuu, arvioidaan uudelleen.
+
+| # | Resepti | FI-blob SHA | Varmennettu päätös | Havainto ja seuraava toimi |
+|---:|---|---|---|---|
+| 1 | `indialainen-poha-maapahkinoilla` | `f8b9cf8a` | **BLOCK** | Riisihiutaleiden valmistusta edeltää väärän ruoan pihvitaikinan muotoilu; poistettava ennen julkaisukelpoisuutta. |
+| 2 | `indonesialainen-bakwan-maissifritter` | `f18fc5e2` | **BLOCK** | 100 g vehnäjauhoa, ei mitattua taikinaan jäävää vettä; pihvipohjan yleisohje ja puuttuva mittasuhde. |
+| 3 | `indonesialainen-nasi-goreng-aamiaisriisi` | `731c7bab` | **BLOCK** | Riisiruokaan on kopioitu pihvitaikinaohje, ohjeessa valkosipuli ilman ainesriviä; 150 g kecap manisia/100 g riisiä vaatii määrätarkistuksen. |
+| 4 | `indonesialainen-pisang-goreng-aamiaiseksi` | `8e1fd4aa` | **RESOLVED_AUDIT** | Oikea banaanitaikina, 75 ml vettä ja paistotapa on nyt määritelty; alkuperäinen yleispohjan ongelma korjattu. |
+| 5 | `intialainen-aloo-paratha` | `9ed1496a` | **BLOCK** | Perunatäytteen keittäminen/soseutus ja taittaminen taikinan sisään puuttuvat; tarjoilujogurtti ei sisälly aineslistaan. |
+| 6 | `japanilainen-yaki-onigiri-misolla` | `bff8b381` | **BLOCK** | Edelleen väärä pihvitaikinaohje sekä 100 g riisiin 150 g misoa ja 150 g noria; tarkista raaka/kypsä painot ja ravinto/GK. |
+| 7 | `karibia-bammy-kassavaleipa` | `beea3088` | **BLOCK_P0_SAFETY** | 250 g tuoretta kassavaa: ohjeessa vain kuoriminen, raastaminen, puristaminen ja pannulla paisto. Kassavan lajike ja riittävä toksiinien poisto eivät ole varmistettuja, joten turvallisuus-HOLD. |
+| 8 | `karibia-jamaikalainen-munakokkeli` | `f4e65cf9` | **RESOLVED_AUDIT** | Munakokkelin tomaatti/chili/timjami/munat -vaiheet täsmäävät aineslistaan; väärä yleispohja poistunut. |
+| 9 | `karibia-johnny-cake` | `ac958af2` | **RESOLVED_AUDIT** | Jauho/maito/voi/leivinjauhe -taikinan teko ja paisto kuvattu ruokalajikohtaisesti; yleinen valmisleipäehto poistettu. |
+| 10 | `karibia-plantain-aamiaislautanen` | `afb4242c` | **RESOLVED_AUDIT** | Ruokabanaanin, munan ja avokadon valmistus vastaa aineita; ei enää taikina- tai pihvivaiheita. |
+| 11 | `karibia-saltfish-fritterit` | `f197d405` | **BLOCK** | 1 tl suolakalaa/100 g jauhoa, lisättävä taikinavesi määräämätön ja suolakalan esikäsittely vain viitattu ('liotettu') ilman ohjetta. |
+| 12 | `kiinalainen-kevatsipulipannukakku` | `259cb208` | **RESOLVED_AUDIT** | Kerrospannukakun kaulinta, rullaus, seesamiöljy ja paistaminen kuvattu; 15 min lepo huomioidaan julkisessa C20-näyttöprojektorissa 35 min kokonaisaikana. |
+| 13 | `kiinalainen-tomaattimunakas-riisilla` | `33ab462e` | **RESOLVED_AUDIT** | Riisin keittäminen sekä tomaatti-munaseoksen valmistus korjattu; yleinen kasvistäyteohje ei enää esiinny. |
+| 14 | `korealainen-gyeran-mari-kasviksilla` | `61df56f5` | **RESOLVED_AUDIT** | Munakaskäärön rullaus vaiheittain ja kypsyys määritelty, aineet täsmäävät; väärä yleispohja poistettu. |
+| 15 | `lahi-ita-manakish-zaatarilla` | `1369126b` | **BLOCK** | Yleinen valmiin leivän ehto ja 'paista pannulla tai uunissa' ilman yksilöityä menetelmää; toistuva taikinan sekoitus, kypsymisraja epämääräinen. |
+| 16 | `malesialainen-kaya-paahtoleipa` | `04d0be90` | **BLOCK** | Ohje käskee vaivaamaan jauhoja, joita listassa ei ole, vaikka pohjana on valmis hapanjuurileipä; geneeriset taikinavaiheet ensin. |
+| 17 | `malesialainen-mee-goreng-aamunuudeleilla` | `e95d1fa6` | **RESOLVED_AUDIT** | Nuudeli/tofu/kananmuna/pavunidut valmistetaan ruokalajikohtaisesti; virheellinen pihvitaikinaohje poistunut. |
+| 18 | `malesialainen-roti-canai-dhalilla` | `d241c242` | **BLOCK** | 100 g kuiville linsseille ei valmistusvaihetta, jauhoille ei mitattua taikinanestettä ja roti kuvataan pelkällä yleisellä valmisleipävaiheella. |
+| 19 | `meksikolainen-munakokkeli-pico-de-gallolla` | `05324475` | **RESOLVED_AUDIT** | Ohje rajaa pico de gallo -henkisen lisukkeen tomaattiin ja korianteriin ilman sipulia; ei luetteloimatonta sipulia tai geneeristä ohjetta. |
+| 20 | `pohjoisafrikkalainen-harcha-juustolla` | `5cc4c803` | **RESOLVED_AUDIT** | Mannasuurimon, voin, maidon ja juustolisukkeen työnkulku täsmää; yleinen leipäehto poistunut. |
+
+### Riskit ja seuraava päätös
+
+- **P0-käsittelyturvallisuus:** `karibia-bammy-kassavaleipa` käyttää tuoretta kassavaa mutta ei yksilöi lajiketta tai riittävää turvallista prosessointia. [Food Standards Australia New Zealand](https://www.foodstandards.gov.au/consumer/prevention-of-foodborne-illness/cassava) ja [WHO](https://www.who.int/news-room/fact-sheets/detail/natural-toxins-in-food/) kuvaavat kassavan syanogeenisten yhdisteiden riskin; paistaminen sellaisenaan ei todista turvallisuutta. Älä hyväksy reseptiä ilman varmennettua, kyseiselle raaka-aineelle soveltuvaa käsittelyä tai turvallista prosessoitua tuotetta.
+- **Muut BLOCKit:** #1 poha, #2 bakwan, #3 nasi goreng, #5 aloo paratha, #6 yaki-onigiri, #11 saltfish-fritterit, #15 manakish, #16 kaya-paahtoleipä ja #18 roti canai. Muutokset pitää priorisoida toisessa kokki-keskustelussa; tässä PR:ssä ei muokata niitä.
+- **Jo korjatut auditointiongelmat:** #4 pisang goreng, #8 jamaikalainen munakokkeli, #9 johnny cake, #10 plantain, #12 kevätsipulipannukakku, #13 tomaattimunakas, #14 gyeran-mari, #17 mee goreng, #19 pico de gallo -munakokkeli ja #20 harcha. Erityisesti #12:n **näyttöprojektio** muuttaa raakareseptin 25 min → 35 min julkisen esityksen ajaksi.
+- **Työnjako:** tämä PR omistaa vain triagen. #359:n jo yhdistettyjen lähdekorjausten tulokset huomioitu; #401:n F25-korjaukset eivät oikeuta muuttamaan näiden 20:n raw-havaintoja itsenäisesti. Julkisen tuotannon Pages-deploy ja live-URL:t varmistettava erikseen ennen käyttäjäavausta.
+- **Jatkoseulonta:** seuraavat 20/82 versionlukittuina. Loput 62 ovat edelleen *käsittelemättä lopullisessa tarkistuksessa*; niiden aiempia 38/16/28 prioriteettiluokkia ei saa tulkita tämän varmennuksen lopputulokseksi.
