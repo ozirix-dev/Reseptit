@@ -1,6 +1,6 @@
 import { createHash } from "node:crypto";
 
-/** Two SHA-pinned FI public-presentation corrections.
+/** SHA-pinned FI public-presentation corrections for four breakfasts.
  * Canonical FI files, published nutrient/GK bindings and ingredient quantities
  * must remain byte-identical. Unexpected raw edits or ambiguous anchors fail closed.
  */
