@@ -2,6 +2,10 @@
 
 **Dokumentin tila:** reseptikohtaisen laskennan ja keliakiaturvallisuuden valmistelupaketti. Reseptit pysyvät `draft` eikä niihin liitetä `gluten_free: true`-merkintää tällä muistiolla. Tarkastaja: ChatGPT, julkiset valmistaja- ja myymälätiedot; **ei käytettyjen pakkausten fyysistä tarkistusta**.
 
+## Alkuperäinen tuotetilanne ennen 11.11. jatkolaskentaa (historiallinen tilannekuva)
+
+**Ajantasainen laskentapäätös on tämän dokumentin jäljempänä olevassa neljän reseptin lisäyksessä.** Alla oleva alkuperäinen taulukko kuvaa ennen jatkotarkistusta avoinna olleita tuotteita; osalle on sittemmin valittu tuotemerkit laskentaoletuksiksi. Pakkauksia ei edelleenkään ole tarkistettu fyysisesti.
+
 ## Tunnistettavat tuotteet ja lähteet
 
 | Käyttö | Tuote ja tunniste | Saatavilla oleva näyttö | Päätös |
@@ -49,7 +53,7 @@ Laskenta kullekin aineelle: raakapaino × tuotteen ravintoarvo / 100 g. Yhteens�
 
 **Epävarmuudet:** munien koko, 1 tl leivinjauheen paino, leivinpaperin käyttö ja valitun perunajauho-/sokeripakkauksen erä. Paiston veden haihtuminen muuttaa valmiin palan painoa mutta ei yksin muuta koko taikinan imeytyvien hiilihydraattien massaa. EU-pakkauksesta hiilihydraattia ei vähennetä kuitua uudelleen. `carbs_total_per_serving_g` on edelleen `null` – eri määritelmän mukaista kokonaishiilihydraattia ei ole laskettu. **GK ei laskettu eikä luokiteltu; 21,94 g hiilihydraattia ei itsessään riitä GK-luvuksi.**
 
-**Katselmointipäätös:** makrotietojen *laskentaperusta ehdollisesti hyväksyttävissä*, mutta resepti pysyy `draft` ja gluteenittomuuden tuotekohtainen/pakkaustarkistus sekä kuvan GitHub-siirto estävät edelleen julkaisun. Tätä laskelmaa ei saa siirtää muihin neljään reseptiin.
+**Katselmointipäätös:** makrotietojen *laskentaperusta ehdollisesti hyväksyttävissä*, mutta resepti pysyy `draft`; gluteenittomuuden tuotekohtainen/pakkaustarkistus estää edelleen julkaisun. Viisi erillistä, 1500 × 1000 WebP-piirroskuvitusta on myöhemmin lisätty PR #422 -haaraan ja liitetty luonnoksiin. Tätä laskelmaa ei saa siirtää muihin neljään reseptiin.
 
 ## Neljän jäljellä olevan reseptin suuntaa-antavat makrolaskelmat — 11.11.2026
 
@@ -84,4 +88,8 @@ Laskenta kullekin aineelle: raakapaino × tuotteen ravintoarvo / 100 g. Yhteens�
 
 **Epävarmuus:** Pirkka-jauhoseosten 60 g/dl on **yleinen oletus eikä tuotemerkin dokumentoitu tilavuuspaino**, joten punnitut grammapainot voivat muuttaa erityisesti leipien ja pannukakun hiilihydraatteja useilla grammoilla/annos. Eri jauhomerkki voi myös muuttaa taikinan toimivuutta. Schär Pofiber 17 g/dl on varmempi tuotekohtainen muunnos. Pizzassa 4 rkl öljyä oletetaan syödyksi kokonaan, mikä saattaa yliarvioida rasvaa. Marjat ym. tuoreet tuotteet on oletettu yleisillä lähdearvoilla. Ei hyväksyttyä GK-laskelmaa, koska GI-vastaavuuksia ei ole lukittu. Gluteeniton-tuotteen valinta ja pakkaus pitää vielä tarkistaa käyttäjän käyttämästä pakkauksesta; arvio ei todista gluteenittomuutta tai vehnäallergiaturvallisuutta.
 
-**Laatupäätös:** Nämä ovat julkaisemattomien FI-draftien *laskentaperustaa täydentäviä* arvioita. Tuote- ja määrätarkistus, yhden tuotteen vaihtokokeen toteutustekniikka, kuvien versionointi ja gluteeniton-suodattimen PR #417 ovat edelleen lopullisen julkaisuportin osia.
+**Laatupäätös:** Nämä ovat julkaisemattomien FI-draftien *laskentaperustaa täydentäviä* arvioita. Tuote- ja määrätarkistus, yhden tuotteen vaihtokokeen toteutustekniikka, kuvien vastaavuuden lopullinen toimituksellinen hyväksyntä sekä gluteeniton-suodattimen PR #417 ovat edelleen lopullisen julkaisuportin osia.
+
+## Kuvien toimitusstatus — 11.11.2026
+
+PR #422:n haaraan on GitHub Actions -ajossa 42924356218 tallennettu **viisi uutta alkuperäistä WebP-piirroskuvitusta** (1500 × 1000 px) ja lisätty niiden polut kaikkiin viiteen FI-luonnokseen. Ne ovat SVG:stä Sharpilla tuotettuja yksinkertaisia ruoka-aiheisia kuvituksia, **eivät** keskustelussa aiemmin annetun `gluteenittomat_viisi_kuvaa.zip`-paketin photorealistiset kuvat. AI-/kuvitusmerkintä on yksiselitteinen alt-teksteissä. Kuvan lisääminen ei myönnä gluteenittomuuden tai ravintolaskennan turvallisuushyväksyntää.
