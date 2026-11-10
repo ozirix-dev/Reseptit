@@ -88,7 +88,7 @@ test("the Finnish breakfast and dessert collections exclude quarantined unsafe r
     "vhh-brita-kakku", "keto-mutakakku", "vhh-mokkapalat", "keto-suklaakeksit", "vhh-omenapiirakka",
     "vhh-juustokakku", "vhh-raparperipiirakka", "vhh-korvapuustit", "vhh-mansikkakakku", "vhh-letut",
   ].includes(recipe.recipeId));
-  assert.equal(breakfast.length, 139);
+  assert.equal(breakfast.length, 134);
   assert.equal(desserts.length, 10);
   const documentedBreakfastNetCarbs = new Map([
     ["indonesialainen-ketoprak-aamiaiskulho", 44.21], ["indonesialainen-pisang-goreng-aamiaiseksi", 63.85],
@@ -725,8 +725,8 @@ test("R1B corrected Koshari nutrition evidence is synchronized across published 
   }
 });
 
-test("eleven source-sealed withdrawals never enter public recipes or sitemap", async () => {
-  assert.equal(publicRecipeQuarantineIds.length, 11);
+test("sixteen source-sealed withdrawals never enter public recipes or sitemap", async () => {
+  assert.equal(publicRecipeQuarantineIds.length, 16);
   for (const id of publicRecipeQuarantineIds) {
     assert.equal(currentSiteContent.recipes.some(r => r.recipeId === id), false);
     const source = parseMarkdown(await readFile(path.resolve(import.meta.dirname, `../../reseptit/aamupalat/${id}.md`), "utf8"));
@@ -761,5 +761,27 @@ test("eight B21 material-risk withdrawals keep exactly the sealed historical sou
     const parsed = parseMarkdown(raw);
     assert.ok(parsed);
     assert.equal(parsed.data.status, "published", id + ": preserve historical calculation provenance");
+  }
+});
+
+
+test("five GK100-associated raw-source HOLDs are hidden publicly while preserving all approved source bytes", async () => {
+  const { createHash } = await import("node:crypto");
+  const originalSources = {
+  "indonesialainen-nasi-goreng-aamiaisriisi": "731c7babbe7aa94c4e931a8224cec81bfe75b9fb",
+  "japanilainen-yaki-onigiri-misolla": "bff8b38121a3af090dfd5b7559517ae4aeaa59c7",
+  "karibia-saltfish-fritterit": "f197d405e1d1c9de9afcbfb2b5ce4def501de30f",
+  "intialainen-idli-kookoschutneylla": "e862e239cf56f33c27ea36e6a5311bf6d179364d",
+  "vietnamilainen-xoi-maapahkinalla": "424b60e50e95d2e216e9090333f4f89509ee61ad"
+};
+  for (const [id, expectedGitBlobSha] of Object.entries(originalSources)) {
+    const source = await readFile(path.resolve(import.meta.dirname, "../../reseptit/aamupalat", id + ".md"), "utf8");
+    const actual = createHash("sha1").update("blob " + Buffer.byteLength(source) + "\0").update(source).digest("hex");
+    assert.equal(actual, expectedGitBlobSha, id + ": immutable GK100 source has changed");
+    assert.ok(isPublicRecipeQuarantined(id), id);
+    assert.ok(!currentSiteContent.recipes.some(r => r.recipeId === id), id + ": public recipe must be absent");
+    const parsed = parseMarkdown(source);
+    assert.ok(parsed);
+    assert.equal(parsed.data.status, "published", "historical source receipt not rewritten");
   }
 });
