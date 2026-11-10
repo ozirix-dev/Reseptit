@@ -9,6 +9,7 @@ import { loadTranslationPublicationIndex, overlayTranslationPublicationIndex } f
 import { projectReviewedFiEditorialSource } from "./gk80-editorial-display";
 import { projectA8FiEditorialSource } from "./a8-editorial-display";
 import { projectC20FiDisplay, c20FiDisplayPaths } from "./c20-fi-editorial-display";
+import { breakfastFiQualityPaths, projectBreakfastFiQualityDisplay } from "./fi-breakfast-quality-display";
 
 const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 export const sourceCategories = ["alkuruoat", "paaruoat", "jalkiruoat", "leivonnaiset", "aamupalat", "valipalat"] as const;
@@ -154,7 +155,34 @@ export function knownTermErrors(source: Frontmatter, target: Frontmatter, locale
 export async function auditTranslations(recipeIds?: string[]): Promise<TranslationAuditResult> {
   const filter = recipeIds ? new Set(recipeIds) : undefined;
   const sourcePaths = (await Promise.all(sourceCategories.map((category) => markdownFiles(path.join(repoRoot, "reseptit", category))))).flat();
-  const sources = overlayTranslationPublicationIndex(await readRecipes(sourcePaths, filter), await loadTranslationPublicationIndex(repoRoot), filter);
+  const rawSources = await readRecipes(sourcePaths, filter);
+  // Use the exact SHA-locked public FI display when auditing meaning and
+  // generating source semantic hashes for translations. Raw FI files stay
+  // untouched for the separate nutrition/GK and source-blob validation.
+  // This is limited to the already-reviewed breakfast overlay allowlist.
+  const publicSources = await Promise.all(rawSources.map(async (source) => {
+    if (!breakfastFiQualityPaths.includes(source.path)) return source;
+    const raw = await readFile(path.join(repoRoot, source.path), "utf8");
+    const projected = parseMarkdown(projectBreakfastFiQualityDisplay(source.path, raw));
+    if (!projected) throw Error("FI_BREAKFAST_AUDIT_NO_FRONTMATTER: " + source.path);
+    const displayed = recipeFrontmatterSchema.parse(projected.data);
+    const original = source.data;
+    const stableImage = (image: typeof original.image) =>
+      image ? { ...image, alt: "" } : null;
+    if (displayed.recipe_id !== original.recipe_id || displayed.url_slug !== original.url_slug ||
+        displayed.category !== original.category || displayed.language !== "fi" ||
+        displayed.status !== "published" || displayed.servings !== original.servings ||
+        displayed.time_total_min !== original.time_total_min ||
+        displayed.diet_class !== original.diet_class ||
+        JSON.stringify(displayed.ingredients) !== JSON.stringify(original.ingredients) ||
+        JSON.stringify(stableImage(displayed.image)) !== JSON.stringify(stableImage(original.image)) ||
+        (["carbs_net_per_serving_g","carbs_total_per_serving_g","protein_per_serving_g","fat_per_serving_g"] as const)
+          .some(key => displayed[key] !== original[key])) {
+      throw Error("FI_BREAKFAST_AUDIT_SOURCE_DRIFT: " + source.path);
+    }
+    return { path: source.path, data: displayed, content: projected.content };
+  }));
+  const sources = overlayTranslationPublicationIndex(publicSources, await loadTranslationPublicationIndex(repoRoot), filter);
   const translations = (await Promise.all(locales.map((locale) => markdownFiles(path.join(repoRoot, "kaannokset", locale))))).flat();
   const publishedTranslations = await readRecipes(translations, filter);
   // Compare the coconut-rice preparation metadata to its SHA-pinned public FI

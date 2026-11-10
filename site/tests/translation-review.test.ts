@@ -2,6 +2,10 @@ import { changedSemanticReviewErrors, preparationRegressionErrors, semanticHash,
 import test from "node:test";
 import assert from "node:assert/strict";
 import { auditTranslations, auditRecipePairs } from "../scripts/translation-audit";
+import { readFile } from "node:fs/promises";
+import path from "node:path";
+import { parseMarkdown } from "../src/content/markdown";
+import { recipeFrontmatterSchema } from "../src/content/schema";
 import { buildRegistry, contentHash, humanStatus, scopes, escapeHtml, evidenceSchema, loadCurrentReview, reviewSummary, type ReviewEvidence } from "../scripts/translation-review";
 const proof: ReviewEvidence = { recipe_id: "synthetic-fixture", locale: "en", evidence_id: "synthetic-test-not-a-real-approval", source_content_hash: contentHash("source"), translation_content_hash: contentHash("translation"), reviewed_at: "2026-10-20", scope: [...scopes], status: "complete", human_attestation: true };
 test("checked-in evidence is validated against real current file hashes", async () => {
@@ -160,4 +164,42 @@ test("preparation regressions catch scoped wrong methods, ingredients and missin
   const targets = structuredClone(audit.publishedTranslations.filter((item) => item.data.recipe_id === source.data.recipe_id));
   targets[0].data.carbs_net_per_serving_g = null;
   assert.match(auditRecipePairs([source], targets).errors.join(" "), /carbs_net_per_serving_g=null/);
+});
+
+test("translation audit hashes the SHA-pinned public FI display for breakfast sources", async()=>{
+  const wanted = ["pohjoisafrikkalainen-baghrir","lahi-ita-pistaasijogurtti","uunimuna-avokadot","rahka-marjakerroskulho","korealainen-gyeranbap-riisikulho"];
+  const audit = await auditTranslations(wanted);
+  assert.deepEqual(audit.errors,[]);
+  assert.equal(audit.publishedSources.length,wanted.length);
+  const sources = new Map(audit.publishedSources.map(s=>[s.data.recipe_id,s]));
+  const baghrir = sources.get("pohjoisafrikkalainen-baghrir");
+  assert.ok(baghrir);
+  assert.equal(baghrir.data.title,"Marokkolainen baghrir hunajalla");
+  assert.match(baghrir.content,/Marokkolainen baghrir hunajalla/);
+  assert.doesNotMatch(baghrir.content,/hunajavoilla/);
+  assert.equal(baghrir.data.image?.alt,"Marokkolainen baghrir hunajalla tarjoiltuna aamiaisella");
+  const pistachio = sources.get("lahi-ita-pistaasijogurtti");
+  assert.ok(pistachio);
+  assert.deepEqual(pistachio.data.cooking_method,["kylmävalmistus"]);
+  assert.doesNotMatch(pistachio.content,/Valmistele kulhon ainekset/);
+  const eggs = sources.get("uunimuna-avokadot");
+  assert.ok(eggs);
+  assert.match(eggs.content,/mitatusta munasta ei jätetä pois/);
+  const quark = sources.get("rahka-marjakerroskulho");
+  assert.ok(quark);
+  assert.equal(quark.data.servings,4);
+  assert.deepEqual(quark.data.cooking_method,["kylmävalmistus"]);
+  const rice = sources.get("korealainen-gyeranbap-riisikulho");
+  assert.ok(rice);
+  assert.match(rice.content,/100 g kuivaa valkoista riisiä/);
+  assert.doesNotMatch(rice.content,/Paista tofu/);
+  const root=path.resolve(import.meta.dirname,"../..");
+  const raw=await readFile(path.join(root,"reseptit/aamupalat/pohjoisafrikkalainen-baghrir.md"),"utf8");
+  const parsed=parseMarkdown(raw);
+  assert.ok(parsed);
+  const rawSource={data:recipeFrontmatterSchema.parse(parsed.data),content:parsed.content};
+  assert.match(rawSource.content,/hunajavoilla/);
+  assert.notEqual(semanticHash(rawSource),semanticHash(baghrir));
+  assert.equal(baghrir.data.ingredients.length,7);
+  assert.equal(baghrir.data.carbs_net_per_serving_g,76.19);
 });
