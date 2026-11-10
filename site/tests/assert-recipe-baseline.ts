@@ -28,6 +28,17 @@ const classicCategory: Record<string, string> = {
   "raejuustobagelit-ilman-kohotusta": "leivonnaiset",
   "linssimakaronilaatikko": "paaruoat",
 };
+// PR #422: five exact, unpublished gluten-free recipe drafts.  These are
+// editorial candidates, never approved GK inputs or publication authority.
+// Every unexpected edit, status change or additional recipe still fails closed.
+const reviewedGlutenFreeDraftFiles = new Map<string,string>([
+  ["reseptit/leivonnaiset/gluteeniton-siemenvuokaleipa.md", "adbb0e2ab86bd517c85a864530df958617741d0d"],
+  ["reseptit/leivonnaiset/gluteenittomat-kauralesesampylat.md", "40c632fd17b21863956b8e1800e57d6992a28e9b"],
+  ["reseptit/leivonnaiset/gluteeniton-durrapizzapohja.md", "e0a2471089a246a918fbaf7545e12deca660abfc"],
+  ["reseptit/jalkiruoat/gluteeniton-perunajauhokakkupohja.md", "3b707f877c70ce67c0e5fda3d1cdde6baa408b2a"],
+  ["reseptit/jalkiruoat/gluteeniton-uunipannukakku.md", "9dfe1c0fb3842fab1760aaf63a295a6d7de0394d"],
+]);
+
 const postBaselineCakeFiles = new Map([
   ["reseptit/jalkiruoat/sienikakkupohja.md", "M"],
   ["reseptit/jalkiruoat/perinteinen-mansikkataytekakku-sienikakkupohjalla.md", "A"],
@@ -110,6 +121,13 @@ export function assertRecipeBaseline(root: string, baseline: string, ...protecte
 
   for (const change of changes) {
     const [status, file] = change.split("\t");
+    if (status === "A" && reviewedGlutenFreeDraftFiles.has(file)) {
+      const hash = execFileSync("git", ["hash-object", "--", file], { cwd: root, encoding: "utf8" }).trim();
+      assert.equal(hash, reviewedGlutenFreeDraftFiles.get(file), "Unreviewed gluten-free draft change: " + change);
+      const parsed = parseMarkdown(readFileSync(path.join(root, file), "utf8"));
+      assert.equal(parsed?.data.status, "draft", "Gluten-free draft cannot be published by historical GK exception: " + change);
+      continue;
+    }
     if (status === "A" && Object.hasOwn(mainAdditionFiles, file)) {
       assert.equal(textHash(readFileSync(path.join(root, file), "utf8")), mainAdditionFiles[file], change);
       continue;
