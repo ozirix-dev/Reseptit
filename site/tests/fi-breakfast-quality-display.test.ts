@@ -11,8 +11,8 @@ import { breakfastFiQualityPaths, projectBreakfastFiQualityDisplay } from "../sc
 const root = path.resolve(import.meta.dirname, "../..");
 const sha = (raw: string) => createHash("sha256").update(raw.replaceAll("\r\n", "\n")).digest("hex");
 const expected: Record<string,string> = {
-  "kiinalainen-teehaudutetut-munat": "bae898d991ed769ae2853f2860e1ebcd3629e292e0d5ca2901244c0377d640e1f",
-  "japanilainen-onigiri-lohella": "71de7695fefca8a5fe6d0d84e3343380ca06858b6cbdfdb539ff32296733cd",
+  "kiinalainen-teehaudutetut-munat": "bae898d991ed769ae2853f2860e1ebcd3629e292e0d5ca2901244c0377d640e1",
+  "japanilainen-onigiri-lohella": "71de7695fefca8a5fe6d0d84e3343380ca06858b6cbdfdb539ff32296733cdbf",
   "yrttituorejuusto-kinkkurullat": "e5649f6b71fb0131def0f4332f1522e4c96c4e90af5abeed947df8681ec25363",
   "malesialainen-mee-goreng-aamunuudeleilla": "0fe3c4d4d2a129da4bc8fda84df1c9b96c501f1fdd5ee6be2733edc9f69e515d",
   "valimerellinen-ricotta-persikkakulho": "da520f24684e3d1dfa2ed786b4e1200605b588a413591e852b568b59d3968d5c",
