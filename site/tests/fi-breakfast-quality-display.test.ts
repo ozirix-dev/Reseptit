@@ -218,3 +218,16 @@ test("generated FI cards use chef-corrected instructions and the reviewed noodle
   assert.match(onigiri.instructionsText.join(" "),/150 g raakaa lohta/);
   assert.doesNotMatch(onigiri.instructionsText.join(" "),/Paista tofu/);
 });
+
+test("F25 unsweetened rosewater keeps FI source and nutrition sealed", () => {
+  const relative = "reseptit/aamupalat/lahi-ita-pistaasijogurtti.md";
+  const raw = readFileSync(path.join(root, relative), "utf8");
+  const before = parseMarkdown(raw);
+  const after = parseMarkdown(projectBreakfastFiQualityDisplay(relative, raw));
+  assert.ok(before && after);
+  assert.deepEqual(after.data.ingredients, before.data.ingredients);
+  for (const key of macros) assert.equal(after.data[key], before.data[key], key);
+  assert.match(after.content, /3,9 % jogurttia/);
+  assert.match(after.content, /5 ml makeuttamatonta elintarvikekäyttöön tarkoitettua ruusuvettä/);
+  assert.match(after.content, /Al Wadi Rose Water, ei ruusisiirappia/);
+});
