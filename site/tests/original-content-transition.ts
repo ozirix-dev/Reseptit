@@ -25,6 +25,30 @@ export const postBaselineClassicIds = [
 ] as const;
 const postBaselineClassics = new Set<string>(postBaselineClassicIds);
 
+// PR #412: two individually reviewed cake additions after the frozen GK baselines.
+// They remain in the live 337-recipe report and cannot inherit a numeric GK.
+export const postBaselineCakeIds = ["perinteinen-mansikkataytekakku-sienikakkupohjalla","sienikakkupohja"] as const;
+const postBaselineCakes = new Set<string>(postBaselineCakeIds);
+
+function omitCakesForFrozenHistory(report: any) {
+  if (!report.results) return;
+  const added = report.results.filter((row: {recipeId:string}) => postBaselineCakes.has(row.recipeId));
+  if (!added.length) return;
+  assert.deepEqual(added.map((row: {recipeId:string}) => row.recipeId).sort(), [...postBaselineCakeIds].sort());
+  for (const row of added) {
+    assert.equal(row.status, 'INSUFFICIENT SOURCE DATA', row.recipeId);
+    assert.equal(row.glycemicLoadPerServing, null, row.recipeId);
+    assert.equal(row.glycemicLoadRangePerServing, null, row.recipeId);
+  }
+  report.results = report.results.filter((row: {recipeId:string}) => !postBaselineCakes.has(row.recipeId));
+  if (report.calculationInputs) report.calculationInputs = report.calculationInputs.filter((row: {recipeId:string}) => !postBaselineCakes.has(row.recipeId));
+  if (report.summary) { report.summary.recipes -= added.length; report.summary.insufficientSourceData -= added.length; }
+  if (report.autoIncludedRecipeIds) report.autoIncludedRecipeIds = report.autoIncludedRecipeIds.filter((id:string) => !postBaselineCakes.has(id));
+  for (const field of ['recipeBindingMismatches','calculationInputMismatches','calculationEvidenceMismatches'])
+    if (report[field]) report[field] = report[field].filter((id:string) => !postBaselineCakes.has(id));
+}
+
+
 function omitNewClassicsForFrozenHistory(report: any) {
   if (!report.results) return;
   const added = report.results.filter((row: {recipeId: string}) => postBaselineClassics.has(row.recipeId));
@@ -96,6 +120,7 @@ function restoreRows(rows: any[], field: "results" | "calculationInputs") {
 }
 
 export function restoreBeforeOriginalContent(report: any) {
+  omitCakesForFrozenHistory(report);
   omitNewClassicsForFrozenHistory(report);
   omitBriocheForFrozenHistory(report);
   // This recipe was published on main after the historical 326-recipe baseline.
@@ -156,7 +181,7 @@ function assertMainAddition(report: any) {
     }
   }
   assert.deepEqual((report.autoIncludedRecipeIds ?? []).filter((key: string) =>
-    !postBaselineBrioche.has(key) && !postBaselineClassics.has(key)), [id]);
+    !postBaselineBrioche.has(key) && !postBaselineClassics.has(key) && !postBaselineCakes.has(key)), [id]);
   assert.deepEqual(report.results.filter((row: {recipeId: string}) => row.recipeId === id), [mainAddition.result]);
   if (report.calculationInputs) {
     assert.deepEqual(report.calculationInputs.filter((row: {recipeId: string}) => row.recipeId === id), [mainAddition.input]);
@@ -190,6 +215,12 @@ function inventoryRowWithLfNotes<T extends {notes: string}>(row: T): T {
 
 // Inventory rows carry recipe text metadata even when the macro values are missing.
 export function originalContentInventoryBefore(rows: any[]) {
+  const addedCakes = rows.filter(row => postBaselineCakes.has(row.recipe_id));
+  if (addedCakes.length) {
+    assert.deepEqual(addedCakes.map(row => row.recipe_id).sort(), [...postBaselineCakeIds].sort());
+    for (const row of addedCakes) assert.equal(row.source_path, 'reseptit/jalkiruoat/' + row.recipe_id + '.md', row.recipe_id);
+  }
+  rows = rows.filter(row => !postBaselineCakes.has(row.recipe_id));
   const classics = rows.filter(row => postBaselineClassics.has(row.recipe_id));
   if (classics.length) {
     assert.deepEqual(classics.map(row => row.recipe_id).sort(), [...postBaselineClassicIds].sort());
