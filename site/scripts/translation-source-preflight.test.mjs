@@ -20,3 +20,13 @@ test("D30 ledger pins all FI raw sources and never authorizes publication",async
   assert.equal(out.ready_to_publish,false);
   assert.equal(out.translations_created,0);
 });
+
+test("F25 ledger SHA-pins all 25 untranslated FI sources and holds release", async () => {
+  const out = await auditSourceLedger({ledgerPath:"meta/kaannokset/f25-source-worklist.json"});
+  assert.deepEqual(out.errors,[]);
+  assert.equal(out.count,25);
+  assert.equal(out.needs_review,4);
+  assert.equal(out.source_hold,21);
+  assert.equal(out.ready_to_publish,false);
+  assert.equal(out.translations_created,0);
+});
