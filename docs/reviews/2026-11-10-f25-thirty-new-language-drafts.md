@@ -27,3 +27,13 @@ Kahdeksan aamiaisen väärät yleisohjeet korjattiin **erilliseen FI-kokkikorjau
 Erän automatisoitu `site/scripts/f25-draft-structural-check.mjs` vertaa kaikki olemassa olevat EN/SV/TH-Draftit FI-lähteeseen: annokset, ainemäärät, lokalisoidut yksiköt, note-kentän säilyminen, kokonaisaika, kuvat, makrot ja valmistusvaiheiden lukumäärä. Läpäisy **ei** ole itsenäistä natiivikielikatselmointia, ravintolaskennan uusintatarkistusta eikä GI/GK-hyväksyntää.
 
 **STOP:** Kaikkien 25 alkuperäisen lähteen `release_authorized: false`; 21 SOURCE-HOLDia ja 4 kokkikatselmointijonoa säilyvät, kunnes yksilölliset ravinto-/punnitus-/kielipäätökset valmistuvat. Ei `published-translation-pairs.json`-rekisteriä eikä hyväksymis-evidenssiä muutettu.
+
+## Julkaisulukon koneellinen laskentatavoite
+
+- Tarkistettava tiedostomäärä **36** (12 FI-reseptiä × 3 kieltä); uusia tässä muutoksessa 30.
+- Ainesosarivejä **219** ja numeroituja valmistusvaiheita **153** yhteensä.
+- FI-lähteisiin yhtäpitäviä neljän makron arvoja **120**. Puuttuvat makrot säilyvät puuttuvina, etenkin lasagne ja plantain.
+- 15 lasagnen aineosarivin `note`-kenttää säilyy kullakin kielellä (45 yhteensä).
+- Kaikki F25-työjonon lähteet ovat edelleen ilman julkaisuvaltuutta. Auditoinnissa vihreä tulos ei muuta SOURCE-HOLD-rivejä eikä merkitse käännöksiä julkaistuiksi.
+
+GitHub Actions -ajo hyväksytään vasta, jos tarkiste kuuluu **täsmälleen** viimeisimpään F25 PR-HEADiin. Vanhan HEADin onnistumista ei käytetä uuden työn julkaisuperusteena.
