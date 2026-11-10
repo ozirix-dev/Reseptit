@@ -519,9 +519,14 @@ test("batch fourteen publishes recalculated macronutrients for every recipe and 
     ["karibia-mango-limejogurtti", [15.12, 18.23, 2.65, 8.5]],
     ["vietnamilainen-banh-cuon-sienilla", [40.31, 42.76, 21.37, 9.05]],
   ]);
-  const recipes = siteContent.recipes.filter((recipe) => expected.has(recipe.recipeId));
-  assert.ok(recipes.length >= expected.size, "all batch recipes have published Finnish pages");
-  assert.deepEqual(new Set(recipes.map((recipe) => recipe.recipeId)), new Set(expected.keys()));
+  // Preserve all twenty historical nutrition rows. The one unfinished aloo
+  // paratha source must not be served publicly while it awaits a source review.
+  const visibleExpected = new Map([...expected].filter(([id]) => !isPublicRecipeQuarantined(id)));
+  const recipes = siteContent.recipes.filter((recipe) => visibleExpected.has(recipe.recipeId));
+  assert.ok(recipes.length >= visibleExpected.size, "all visible batch 14 recipes have published Finnish pages");
+  assert.deepEqual(new Set(recipes.map((recipe) => recipe.recipeId)), new Set(visibleExpected.keys()));
+  assert.ok(expected.has("intialainen-aloo-paratha"), "historical batch 14 evidence remains");
+  assert.ok(isPublicRecipeQuarantined("intialainen-aloo-paratha"));
   for (const recipe of recipes) {
     assert.deepEqual(
       [recipe.nutrition.carbsNetG, recipe.nutrition.carbsTotalG, recipe.nutrition.proteinG, recipe.nutrition.fatG],

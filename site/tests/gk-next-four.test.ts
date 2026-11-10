@@ -24,13 +24,16 @@ const root=fileURLToPath(new URL('../../',import.meta.url)),folder='docs/nutriti
 const read=(p:string)=>JSON.parse(readFileSync(path.join(root,p),'utf8'));
 const four=buildApprovedFourVariants(root),loaded=loadApprovedFour(root),manifest=verifyNextFourManifest(root),baseline=read(folder+'main-baseline.json');
 const old=[...buildGkOnlyVariants(root),...buildApprovedSevenVariants(root)];
+// Historical approval order belongs to the sealed internal study, not to a
+// public list that intentionally excludes unsafe, quarantined recipe pages.
+const historicalGkVariants: GkOnlyVariant[] = read('tmp/nutrition/glycemic-load-pilot.json').gkOnlyVariants;
 const yakiOnigiri = gkOnlyVariants.find(v => v.versionId === 'gk-operation80-review-aaceff8adf0d');
 const render=(v:GkOnlyVariant,locale:'fi'|'en'|'sv'|'th',servings=v.servings)=>renderToStaticMarkup(h(MemoryRouter,null,h(GkOnlyVariantPanel,{variant:v,locale,servings})));
 
 test('the four A inputs and legacy coverage remain intact alongside authorized GK100 releases',()=>{
  assert.equal(four.length,4);assert.deepEqual(Object.fromEntries(four.map(v=>[v.recipeId,v.inputSha256])),NEXT_FOUR_INPUTS);
  assert.ok(four.every(v=>v.level==='A'&&v.confidence==='LOW'&&v.codingKinds.length===0));
- assert.deepEqual(gkOnlyVariants.slice(0,27),[...old,...four]);
+ assert.deepEqual(historicalGkVariants.slice(0,27),[...old,...four]);
  for(const previous of baseline.legacyVariants){const v=old.find(v=>v.recipeId===previous.recipeId)!;assert.equal(digest(v),previous.variantSha256,previous.recipeId);}
  const report=read('tmp/nutrition/glycemic-load-pilot.json');
  assert.deepEqual(report.gkOnlyVariants.filter((v:GkOnlyVariant)=>!isPublicRecipeQuarantined(v.recipeId)),gkOnlyVariants);
@@ -64,7 +67,7 @@ test('only the approved B inputs appear with outward-rounded source ranges',()=>
   'intialainen-mannasuurimoupma': ['365f6eaff17867ea8fc415dd57af8d2ef91176e2c80239dfbc0d69ac2dc2d1cc','26–27'],
   'intialainen-ven-pongal': ['88400041451f8120facd3394a151f79639d901cc4c8359f36859fe9251bc1345','40–46'],
  };
- const added = gkOnlyVariants.slice(27,31);
+ const added = historicalGkVariants.slice(27,31);
  assert.deepEqual(added.map(v=>v.recipeId).sort(),Object.keys(expected).sort());
  for (const v of added) {
   const [input,range] = expected[v.recipeId as keyof typeof expected];
@@ -88,7 +91,7 @@ test('four product A versions preserve the approved calculated-part presentation
   'hernekeitto-savupotkalla': [16.22,'≈ 16,22',1.5628875],
   'uunimakkara-sipulipedilla': [0.26,gkScopeUi.fi.tiny,1.4763875],
  };
- const added = gkOnlyVariants.slice(31,35);
+ const added = historicalGkVariants.slice(31,35);
  assert.deepEqual(added.map(v=>v.recipeId).sort(),Object.keys(expected).sort());
  for (const v of added) {
   const [point,display,omitted] = expected[v.recipeId as keyof typeof expected];
@@ -106,7 +109,7 @@ test('four product A versions preserve the approved calculated-part presentation
 });
 
 test('Panang and tofu kimchi use the approved calculated portions and quantities',()=>{
- const [panang,kimchi]=gkOnlyVariants.slice(35,37);
+ const [panang,kimchi]=historicalGkVariants.slice(35,37);
  assert.equal(panang.recipeId,'panang-curry-kanalla-vhh');
  assert.equal(panang.point,1.89);
  assert.ok(Math.abs(panang.omittedCho-1.9328)<1e-10);
@@ -124,7 +127,7 @@ test('Panang and tofu kimchi use the approved calculated portions and quantities
 });
 
 test('approved curry variants retain the sealed calculation and native quantities',()=>{
- const [green,red,yellow]=gkOnlyVariants.slice(38,41);
+ const [green,red,yellow]=historicalGkVariants.slice(38,41);
  assert.deepEqual([green.point,red.point,yellow.point],[2.38,1.95,1.28]);
  assert.deepEqual(gkOnlyQuantity(green,6,8),{amount:60,unit:'ml'});
  assert.deepEqual(gkOnlyQuantity(red,5,8),{amount:30,unit:'g'});
