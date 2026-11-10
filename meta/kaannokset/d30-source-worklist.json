@@ -1,0 +1,252 @@
+{
+  "schemaVersion": 1,
+  "batch": "D30-20261110",
+  "status": "source-triage-only",
+  "sourceMainSha": "ad0b922595aad6d7547fad37bae8c3fc11118f39",
+  "expectedSources": 30,
+  "plannedPairs": 90,
+  "release_authorized": false,
+  "independentHumanReview": false,
+  "recipeSources": [
+    {
+      "recipe_id": "intialainen-pinaatti-paneer-chilla",
+      "source_path": "reseptit/aamupalat/intialainen-pinaatti-paneer-chilla.md",
+      "source_blob_sha": "7c890fba7728a3eb5da20b57319ff67870e28252",
+      "review_state": "needs-chef-review",
+      "release_authorized": false,
+      "review_note": "FI-ohje ruokalajikohtainen tässä tekstikarsinnassa; tarkista vielä ainesosat, annokset, ravinto/GK ja valmistusaika"
+    },
+    {
+      "recipe_id": "japanilainen-dashimaki-tamago-aamiaislautasella",
+      "source_path": "reseptit/aamupalat/japanilainen-dashimaki-tamago-aamiaislautasella.md",
+      "source_blob_sha": "fe5a29549269e89df653f059ebc486759c280dfd",
+      "review_state": "needs-chef-review",
+      "release_authorized": false,
+      "review_note": "FI-ohje ruokalajikohtainen tässä tekstikarsinnassa; tarkista vielä ainesosat, annokset, ravinto/GK ja valmistusaika"
+    },
+    {
+      "recipe_id": "karibia-plantain-aamiaislautanen",
+      "source_path": "reseptit/aamupalat/karibia-plantain-aamiaislautanen.md",
+      "source_blob_sha": "afb4242ce40db1e8eefb2dc654069008a403e41c",
+      "review_state": "needs-chef-review",
+      "release_authorized": false,
+      "review_note": "FI-ohje ruokalajikohtainen tässä tekstikarsinnassa; tarkista vielä ainesosat, annokset, ravinto/GK ja valmistusaika"
+    },
+    {
+      "recipe_id": "lahi-ita-taatelipuuro-tahinilla",
+      "source_path": "reseptit/aamupalat/lahi-ita-taatelipuuro-tahinilla.md",
+      "source_blob_sha": "f3b02513abd07eb53d3c370c4716d2f3ef157b0f",
+      "review_state": "needs-chef-review",
+      "release_authorized": false,
+      "review_note": "FI-ohje ruokalajikohtainen tässä tekstikarsinnassa; tarkista vielä ainesosat, annokset, ravinto/GK ja valmistusaika"
+    },
+    {
+      "recipe_id": "pohjoisafrikkalainen-minttutee-kaurapuuro",
+      "source_path": "reseptit/aamupalat/pohjoisafrikkalainen-minttutee-kaurapuuro.md",
+      "source_blob_sha": "1dccd27c6aeb5d88df437a358b6b52a01d37f25c",
+      "review_state": "needs-chef-review",
+      "release_authorized": false,
+      "review_note": "FI-ohje ruokalajikohtainen tässä tekstikarsinnassa; tarkista vielä ainesosat, annokset, ravinto/GK ja valmistusaika"
+    },
+    {
+      "recipe_id": "rahka-marjakerroskulho",
+      "source_path": "reseptit/aamupalat/rahka-marjakerroskulho.md",
+      "source_blob_sha": "af3a8debe0a46b920ed0464545732bd2900485b8",
+      "review_state": "needs-chef-review",
+      "release_authorized": false,
+      "review_note": "FI-ohje ruokalajikohtainen tässä tekstikarsinnassa; tarkista vielä ainesosat, annokset, ravinto/GK ja valmistusaika"
+    },
+    {
+      "recipe_id": "uunimuna-avokadot",
+      "source_path": "reseptit/aamupalat/uunimuna-avokadot.md",
+      "source_blob_sha": "0fa5b6be8f44f853f217bbf9169b7173b2612079",
+      "review_state": "needs-chef-review",
+      "release_authorized": false,
+      "review_note": "FI-ohje ruokalajikohtainen tässä tekstikarsinnassa; tarkista vielä ainesosat, annokset, ravinto/GK ja valmistusaika"
+    },
+    {
+      "recipe_id": "karibia-johnny-cake",
+      "source_path": "reseptit/aamupalat/karibia-johnny-cake.md",
+      "source_blob_sha": "ac958af27184f3b8ae532948b751fd5f20e721f9",
+      "review_state": "needs-chef-review",
+      "release_authorized": false,
+      "review_note": "FI-ohje ruokalajikohtainen tässä tekstikarsinnassa; tarkista vielä ainesosat, annokset, ravinto/GK ja valmistusaika"
+    },
+    {
+      "recipe_id": "intialainen-besan-chilla",
+      "source_path": "reseptit/aamupalat/intialainen-besan-chilla.md",
+      "source_blob_sha": "fc2be49b7bde49f950dd24f1d3f3d38644bf7a8f",
+      "review_state": "source-hold",
+      "release_authorized": false,
+      "blocker": "FI-ohjeessa geneerinen tai ruokalajille vieras valmistusmalli; korjaa ja katselmoi lähde ennen käännöstä"
+    },
+    {
+      "recipe_id": "intialainen-pesarattu-mungpavuista",
+      "source_path": "reseptit/aamupalat/intialainen-pesarattu-mungpavuista.md",
+      "source_blob_sha": "5356f03ce2764e38563a95ede0e4373b8f50a65e",
+      "review_state": "source-hold",
+      "release_authorized": false,
+      "blocker": "FI-ohjeessa geneerinen tai ruokalajille vieras valmistusmalli; korjaa ja katselmoi lähde ennen käännöstä"
+    },
+    {
+      "recipe_id": "japanilainen-hojicha-jogurtti-persimonilla",
+      "source_path": "reseptit/aamupalat/japanilainen-hojicha-jogurtti-persimonilla.md",
+      "source_blob_sha": "bba0051aba98ebf8ce1845a1df5bccc058394aba",
+      "review_state": "source-hold",
+      "release_authorized": false,
+      "blocker": "FI-ohjeessa geneerinen tai ruokalajille vieras valmistusmalli; korjaa ja katselmoi lähde ennen käännöstä"
+    },
+    {
+      "recipe_id": "japanilainen-kabocha-puuro",
+      "source_path": "reseptit/aamupalat/japanilainen-kabocha-puuro.md",
+      "source_blob_sha": "2a2dd718fedd591b8011601eaae89059336ff27b",
+      "review_state": "source-hold",
+      "release_authorized": false,
+      "blocker": "FI-ohjeessa geneerinen tai ruokalajille vieras valmistusmalli; korjaa ja katselmoi lähde ennen käännöstä"
+    },
+    {
+      "recipe_id": "japanilainen-natto-riisikulho",
+      "source_path": "reseptit/aamupalat/japanilainen-natto-riisikulho.md",
+      "source_blob_sha": "4678e7124adbd5da16f26861bd89365b15597903",
+      "review_state": "source-hold",
+      "release_authorized": false,
+      "blocker": "FI-ohjeessa geneerinen tai ruokalajille vieras valmistusmalli; korjaa ja katselmoi lähde ennen käännöstä"
+    },
+    {
+      "recipe_id": "japanilainen-okayu-umeboshipluumulla",
+      "source_path": "reseptit/aamupalat/japanilainen-okayu-umeboshipluumulla.md",
+      "source_blob_sha": "a69182b4d645a51db6b0f1d2806db3bad7cf73bc",
+      "review_state": "source-hold",
+      "release_authorized": false,
+      "blocker": "FI-ohjeessa geneerinen tai ruokalajille vieras valmistusmalli; korjaa ja katselmoi lähde ennen käännöstä"
+    },
+    {
+      "recipe_id": "karibia-mango-limejogurtti",
+      "source_path": "reseptit/aamupalat/karibia-mango-limejogurtti.md",
+      "source_blob_sha": "a0d8cdb2ae4aaa9733903b643941d984a788c260",
+      "review_state": "source-hold",
+      "release_authorized": false,
+      "blocker": "FI-ohjeessa geneerinen tai ruokalajille vieras valmistusmalli; korjaa ja katselmoi lähde ennen käännöstä"
+    },
+    {
+      "recipe_id": "kiinalainen-soijamaito-aamiaisella",
+      "source_path": "reseptit/aamupalat/kiinalainen-soijamaito-aamiaisella.md",
+      "source_blob_sha": "2eede161a4c9a8f3b42a6dced6eaf2e133ce96c2",
+      "review_state": "source-hold",
+      "release_authorized": false,
+      "blocker": "FI-ohjeessa geneerinen tai ruokalajille vieras valmistusmalli; korjaa ja katselmoi lähde ennen käännöstä"
+    },
+    {
+      "recipe_id": "korealainen-gyeranbap-riisikulho",
+      "source_path": "reseptit/aamupalat/korealainen-gyeranbap-riisikulho.md",
+      "source_blob_sha": "9955dbbce84566bb1967f86ab19c75eb3c3379af",
+      "review_state": "source-hold",
+      "release_authorized": false,
+      "blocker": "FI-ohjeessa geneerinen tai ruokalajille vieras valmistusmalli; korjaa ja katselmoi lähde ennen käännöstä"
+    },
+    {
+      "recipe_id": "korealainen-kimchi-jeon-aamiaiseksi",
+      "source_path": "reseptit/aamupalat/korealainen-kimchi-jeon-aamiaiseksi.md",
+      "source_blob_sha": "ed74bb3ddab0757a69402da47209b7bac0d51e9e",
+      "review_state": "source-hold",
+      "release_authorized": false,
+      "blocker": "FI-ohjeessa geneerinen tai ruokalajille vieras valmistusmalli; korjaa ja katselmoi lähde ennen käännöstä"
+    },
+    {
+      "recipe_id": "korealainen-mandu-keitto-aamiaiseksi",
+      "source_path": "reseptit/aamupalat/korealainen-mandu-keitto-aamiaiseksi.md",
+      "source_blob_sha": "0a24a7c6174076525bbbdbcbbdbb664b57ca647f",
+      "review_state": "source-hold",
+      "release_authorized": false,
+      "blocker": "FI-ohjeessa geneerinen tai ruokalajille vieras valmistusmalli; korjaa ja katselmoi lähde ennen käännöstä"
+    },
+    {
+      "recipe_id": "korealainen-jumeokbap-merilevalla",
+      "source_path": "reseptit/aamupalat/korealainen-jumeokbap-merilevalla.md",
+      "source_blob_sha": "6e2f037fa0f44c916de0ad8ba91d32ad2224c960",
+      "review_state": "source-hold",
+      "release_authorized": false,
+      "blocker": "FI-ohjeessa geneerinen tai ruokalajille vieras valmistusmalli; korjaa ja katselmoi lähde ennen käännöstä"
+    },
+    {
+      "recipe_id": "malesialainen-kookos-banaanikulho",
+      "source_path": "reseptit/aamupalat/malesialainen-kookos-banaanikulho.md",
+      "source_blob_sha": "e127ab5720becdce56c3e8676fdbc0b36f613061",
+      "review_state": "source-hold",
+      "release_authorized": false,
+      "blocker": "FI-ohjeessa geneerinen tai ruokalajille vieras valmistusmalli; korjaa ja katselmoi lähde ennen käännöstä"
+    },
+    {
+      "recipe_id": "malesialainen-kaya-paahtoleipa",
+      "source_path": "reseptit/aamupalat/malesialainen-kaya-paahtoleipa.md",
+      "source_blob_sha": "04d0be9051dd41645e08345990078260e374f6ca",
+      "review_state": "source-hold",
+      "release_authorized": false,
+      "blocker": "FI-ohjeessa geneerinen tai ruokalajille vieras valmistusmalli; korjaa ja katselmoi lähde ennen käännöstä"
+    },
+    {
+      "recipe_id": "meksikolainen-aamiais-tacot-mustapavuilla",
+      "source_path": "reseptit/aamupalat/meksikolainen-aamiais-tacot-mustapavuilla.md",
+      "source_blob_sha": "6ccf46d642816d129eabe08f041056801f73e445",
+      "review_state": "source-hold",
+      "release_authorized": false,
+      "blocker": "FI-ohjeessa geneerinen tai ruokalajille vieras valmistusmalli; korjaa ja katselmoi lähde ennen käännöstä"
+    },
+    {
+      "recipe_id": "meksikolainen-chilaquiles-verdes",
+      "source_path": "reseptit/aamupalat/meksikolainen-chilaquiles-verdes.md",
+      "source_blob_sha": "71abfa953914a080e2f180961864ba3dd3e3d35d",
+      "review_state": "source-hold",
+      "release_authorized": false,
+      "blocker": "FI-ohjeessa geneerinen tai ruokalajille vieras valmistusmalli; korjaa ja katselmoi lähde ennen käännöstä"
+    },
+    {
+      "recipe_id": "meksikolainen-molletes-pico-de-gallolla",
+      "source_path": "reseptit/aamupalat/meksikolainen-molletes-pico-de-gallolla.md",
+      "source_blob_sha": "3dc5b10cc41731bb02398ba0dbd73f1da6cc5673",
+      "review_state": "source-hold",
+      "release_authorized": false,
+      "blocker": "FI-ohjeessa geneerinen tai ruokalajille vieras valmistusmalli; korjaa ja katselmoi lähde ennen käännöstä"
+    },
+    {
+      "recipe_id": "meksikolainen-huevos-divorciados",
+      "source_path": "reseptit/aamupalat/meksikolainen-huevos-divorciados.md",
+      "source_blob_sha": "fa1a330ec03b9f61b3e882fd3e0b23fdf41c973a",
+      "review_state": "source-hold",
+      "release_authorized": false,
+      "blocker": "FI-ohjeessa geneerinen tai ruokalajille vieras valmistusmalli; korjaa ja katselmoi lähde ennen käännöstä"
+    },
+    {
+      "recipe_id": "thai-kananmunat-kookoscurryssa",
+      "source_path": "reseptit/aamupalat/thai-kananmunat-kookoscurryssa.md",
+      "source_blob_sha": "5782454a057ee280812cb155b23898e7c1d9f098",
+      "review_state": "source-hold",
+      "release_authorized": false,
+      "blocker": "FI-ohjeessa geneerinen tai ruokalajille vieras valmistusmalli; korjaa ja katselmoi lähde ennen käännöstä"
+    },
+    {
+      "recipe_id": "valimerellinen-halloumi-tomaattileipa",
+      "source_path": "reseptit/aamupalat/valimerellinen-halloumi-tomaattileipa.md",
+      "source_blob_sha": "253f6853afd71b5ffe17d338e45778bcbf0b1343",
+      "review_state": "source-hold",
+      "release_authorized": false,
+      "blocker": "FI-ohjeessa geneerinen tai ruokalajille vieras valmistusmalli; korjaa ja katselmoi lähde ennen käännöstä"
+    },
+    {
+      "recipe_id": "vietnamilainen-kahvijogurtti-banaanilla",
+      "source_path": "reseptit/aamupalat/vietnamilainen-kahvijogurtti-banaanilla.md",
+      "source_blob_sha": "4f215df58a68fe86d5c03a7d11c7fc516f823d3f",
+      "review_state": "source-hold",
+      "release_authorized": false,
+      "blocker": "FI-ohjeessa geneerinen tai ruokalajille vieras valmistusmalli; korjaa ja katselmoi lähde ennen käännöstä"
+    },
+    {
+      "recipe_id": "vietnamilainen-papaija-kookospuuro",
+      "source_path": "reseptit/aamupalat/vietnamilainen-papaija-kookospuuro.md",
+      "source_blob_sha": "ecae7e7e302d8564a171955ef8e9117f69a6fb7d",
+      "review_state": "source-hold",
+      "release_authorized": false,
+      "blocker": "FI-ohjeessa geneerinen tai ruokalajille vieras valmistusmalli; korjaa ja katselmoi lähde ennen käännöstä"
+    }
+  ]
+}
