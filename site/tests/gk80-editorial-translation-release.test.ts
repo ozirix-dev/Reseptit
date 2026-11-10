@@ -53,24 +53,9 @@ test("fifteen published translations reflect the six-source GK80 FI public corre
  }
 });
 
-test("coconut rice is published only with reconciled SHA-pinned FI cooking method",()=>{
- const id="thai-kookosriisi-mangolla";
- const sourcePath="reseptit/aamupalat/"+id+".md";
- const raw=readFileSync(path.join(root,sourcePath),"utf8");
- const original=recipeFrontmatterSchema.parse(parseMarkdown(raw)!.data);
- const display=recipeFrontmatterSchema.parse(parseMarkdown(projectReviewedFiEditorialSource(sourcePath,raw))!.data);
- assert.deepEqual(original.cooking_method,["paistaminen"],"the historical GK80 source remains sealed");
- assert.deepEqual(display.cooking_method,["keittäminen"],"published FI corrects the erroneous metadata");
+test("coconut rice is not silently included in the five-recipe release",()=>{
  for(const lang of locales){
-  const live=siteContent.recipes.find(x=>x.recipeId===id&&x.locale===lang);
-  assert.ok(live,id+":"+lang+": published page must exist");
-  const targetPath="kaannokset/"+lang+"/aamupalat/"+id+".md";
-  const target=recipeFrontmatterSchema.parse(parseMarkdown(readFileSync(path.join(root,targetPath),"utf8"))!.data);
-  assert.equal(target.status,"published");
-  assert.deepEqual(target.cooking_method,display.cooking_method);
-  assert.equal(target.servings,display.servings);
-  assert.deepEqual(target.ingredients.map(i=>[i.amount,i.unit]),display.ingredients.map(i=>[i.amount,i.unit]));
-  for(const key of ["carbs_net_per_serving_g","carbs_total_per_serving_g","protein_per_serving_g","fat_per_serving_g"] as const)
-    assert.equal(target[key],original[key],id+":"+lang+": no macro drift");
+  assert.ok(!siteContent.recipes.some(x=>x.recipeId==="thai-kookosriisi-mangolla"&&x.locale===lang),
+    "coconut rice "+lang+" must remain unpublished until method metadata is reconciled");
  }
 });

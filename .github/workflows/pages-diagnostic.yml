@@ -1,6 +1,9 @@
 name: Pages server-side deployment diagnosis (read-only)
 
 on:
+  pull_request:
+    paths:
+      - ".github/workflows/pages-diagnostic.yml"
   push:
     branches: [main]
     paths:
