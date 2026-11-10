@@ -28,6 +28,12 @@ const classicCategory: Record<string, string> = {
   "raejuustobagelit-ilman-kohotusta": "leivonnaiset",
   "linssimakaronilaatikko": "paaruoat",
 };
+const postBaselineCakeFiles = new Map([
+  ["reseptit/jalkiruoat/sienikakkupohja.md", "M"],
+  ["reseptit/jalkiruoat/perinteinen-mansikkataytekakku-sienikakkupohjalla.md", "A"],
+]);
+const reviewedCakePublicationSha = "004284fe72da0463295f1ac3bf2afaecf3f34895";
+
 const reviewedClassicFiles = new Set(postBaselineClassicIds.flatMap(id => [
   `reseptit/raakileet/${id}.md`,
   `reseptit/${classicCategory[id]}/${id}.md`,
@@ -106,6 +112,12 @@ export function assertRecipeBaseline(root: string, baseline: string, ...protecte
     const [status, file] = change.split("\t");
     if (status === "A" && Object.hasOwn(mainAdditionFiles, file)) {
       assert.equal(textHash(readFileSync(path.join(root, file), "utf8")), mainAdditionFiles[file], change);
+      continue;
+    }
+    if (postBaselineCakeFiles.get(file) === status) {
+      const approved = execFileSync("git", ["show", reviewedCakePublicationSha + ":" + file], { cwd: root, encoding: "utf8" });
+      assert.equal(readFileSync(path.join(root, file), "utf8").replaceAll("\r\n", "\n"),
+        approved.replaceAll("\r\n", "\n"), change);
       continue;
     }
     if (status === "A" && reviewedClassicFiles.has(file)) {
