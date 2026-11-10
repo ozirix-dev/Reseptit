@@ -554,9 +554,15 @@ test("batch fifteen publishes recalculated macronutrients for every recipe and a
     ["meksikolainen-kurpitsapuuro-piloncillolla", [44.63, 52.57, 7.12, 4.89]],
     ["lahi-ita-zaatar-munat", [24.91, 26.07, 12.18, 14.26]],
   ]);
-  const recipes = siteContent.recipes.filter((recipe) => expected.has(recipe.recipeId));
-  assert.ok(recipes.length >= expected.size, "all batch recipes have published Finnish pages");
-  assert.deepEqual(new Set(recipes.map((recipe) => recipe.recipeId)), new Set(expected.keys()));
+  // Historical batch 15 retains all 20 calculations; quarantine intentionally
+  // suppresses the unverified orange cake from the public recipe card set.
+  const visibleExpected = new Map([...expected].filter(([id]) => !isPublicRecipeQuarantined(id)));
+  const recipes = siteContent.recipes.filter((recipe) => visibleExpected.has(recipe.recipeId));
+  assert.ok(recipes.length >= visibleExpected.size, "all non-quarantined batch recipes have published Finnish pages");
+  assert.deepEqual(new Set(recipes.map((recipe) => recipe.recipeId)), new Set(visibleExpected.keys()));
+  assert.ok(expected.has("valimerellinen-appelsiini-aamiaiskakku"),
+    "keep historical calculated values; do not erase nutrition evidence");
+  assert.ok(isPublicRecipeQuarantined("valimerellinen-appelsiini-aamiaiskakku"));
   for (const recipe of recipes) {
     assert.deepEqual(
       [recipe.nutrition.carbsNetG, recipe.nutrition.carbsTotalG, recipe.nutrition.proteinG, recipe.nutrition.fatG],

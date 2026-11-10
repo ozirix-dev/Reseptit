@@ -74,7 +74,9 @@ test("time, cuisine and main ingredient filters combine and survive URL round tr
     assert.match(buns.notesHtml, /45/);
   }
   assert.equal(filterRecipes(finnishRecipes, { ...emptyRecipeFilters, cuisine: "mexican" }, "fi").length, 15);
-  assert.equal(filterRecipes(finnishRecipes, { ...emptyRecipeFilters, cuisine: "japanese" }, "fi").length, 15);
+  const japanese = filterRecipes(finnishRecipes, { ...emptyRecipeFilters, cuisine: "japanese" }, "fi");
+  assert.equal(japanese.length, 14, "one unverified miso-wakame recipe is deliberately quarantined");
+  assert.ok(!japanese.some(recipe => recipe.recipeId === "japanilainen-miso-tofu-paksoi"));
 });
 
 test("search normalization folds Finnish and Swedish diacritics while preserving Thai tone marks", () => {
