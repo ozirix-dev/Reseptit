@@ -14,8 +14,8 @@ Lähtötarkistus: Keliakialiiton reseptien määrät ja kriittiset valmistusvaih
 
 1. Gluteenittomuuden ehdot: jokaiselle yksilöidylle valmistuotteelle gluteeniton-pakkausmerkintä, kauratuotteiden erillinen gluteenittomuus ja puhtaiden välineiden vaatimus. EU:n `gluteeniton`-väitteen raja on 20 mg/kg. Ristikontaminaation esto on välttämätöntä.
 2. Kaikki ainekset, myös mahdollinen vuoan voitelurasva, oltava rakenteisissa metatiedoissa tai työvaihe muutettava leivinpaperille. Täytteet ja tarjoilulisäkkeet eivät kuulu pohjien ravintoarvoihin.
-3. Lukitse reseptien käytetyt jauho- ja valmisainesosatuotteet ennen ravintoarvojen laskentaa. `carbs_net_per_serving_g`, `carbs_total_per_serving_g`, `protein_per_serving_g`, `fat_per_serving_g` ovat `null`, eivät nollia; GK puuttuu.
-4. Valmis kuva jokaista reseptiä varten. Tämän keskustelun kuvagenerointikuvat toimitetaan erillisenä viiden WebP-kuvan pakettina; **niitä ei ole vielä siirretty GitHubiin**, eikä kuva-frontmatteria lisätä ennen tiedostojen versionointia ja mittojen tarkistusta.
+3. Tuote- ja tilavuuspainooletuksiin perustuvat arviot on nyt laskettu kaikille viidelle, lähteet ja epävarmuudet: [ravintoarviomuistio](../nutrition/gluteenittomat-5-tuote-evidenssi-2026-11-11.md). Arvioita ei esitetä mittauksina. `carbs_total_per_serving_g` pysyy `null`; GK puuttuu.
+4. Kaikille viidelle reseptille on lisätty oma **1500 × 1000 WebP-piirros** ja vastaava `image`-metatieto. Ne ovat Github Actionsissa tuotettuja uusia SVG-pohjaisia kuvia, eivät keskustelun erillisen ZIP-paketin valokuvia. Kuvat ovat kuvitusta, eivät koepaistokuvat.
 5. CI validoi luonnosten rakenteet. Vasta erillisessä rajatussa julkaisu-PR:ssä asetetaan `published` ja mahdollisesti `gluten_free:true` tarkistetuille resepteille; EN/SV/TH omien semanttisten tarkistusten jälkeen.
 
 Lähdekokoelma: https://www.keliakialiitto.fi/ruoka/reseptit/
@@ -25,9 +25,9 @@ Tuotetietojen jatkokatselmointi: [gluteenittomien viiden tuote-evidenssi](../nut
 
 Toteutus liittyy lähde-issueen #418. Reseptit eivät ole koeleivottuja; niitä ei saa markkinoida itsenäisesti testatuiksi.
 
-## Generoidun kuvapaketin tarkisteet (chatissa, ei vielä GitHubissa)
+## Alkuperäisen keskustelussa tuotetun valokuva-ZIP:n tarkisteet (ei GitHubissa)
 
-Kuvat on valmistettu erilliseen `gluteenittomat_viisi_kuvaa.zip`-pakettiin, 1500 × 1000 px, WebP. Nämä tarkisteet varmistavat myöhemmän siirron vastaavuuden; GitHubissa ei vielä ole näitä binäärejä, joten `image.src` jätettiin pois.
+Valokuvamaiset kuvat valmistettiin keskustelussa erilliseen `gluteenittomat_viisi_kuvaa.zip`-pakettiin, 1500 × 1000 px, WebP. Näitä **tarkkoja ZIP:n binäärejä ei ole lisätty GitHubiin**. Sen sijaan GitHubiin tuotettiin samasta reseptierästä viisi erillistä 1500 × 1000 WebP-piirroskuvaa, joihin `image.src` nyt osoittaa. Alla olevat SHA-256-tarkisteet koskevat alkuperäistä ZIP:iä, eivät GitHubin uusia kuvituksia.
 
 | Resepti-ID ja odotettu kuvatiedosto | SHA-256 |
 |---|---|
@@ -59,4 +59,4 @@ Kuvat on valmistettu erilliseen `gluteenittomat_viisi_kuvaa.zip`-pakettiin, 1500
 
 ### Testien ja väitteiden raja
 
-Vain historialliset GK-testit on tarkistettu täsmällisten viiden draft-sisällön hashien kautta. Julkaisuun pääsy vaatii reseptikohtaisen valmistuoteportin, ravintoarvojen tuotekohtaisen laskennan ja viiden varsinaisen WebP-omakuvan siirtämisen GitHubin `kuvat/`-hakemistoon. Kuva-frontmatter on vielä tyhjä, eikä `gluten_free: true` ole sallittu, kunnes PR #417 on tuotannossa ja jokainen yksilöity tuote hyväksytty.
+Historialliset GK-testit vartioivat viittä täsmälleen hash-sidottua draft-sisältöä, mukaan lukien nyt lisätyt kuvalinkit. Kaikille viidelle FI-reseptille on laskettu tuotteisiin ja paino-oletuksiin perustuvat suuntaa-antavat makrot, ja viisi SVG-pohjaisesti tuotettua WebP-kuvitusta on GitHubin `kuvat/`-hakemistossa. Julkaisu vaatii silti reseptikohtaisen valmistuote- ja gluteenittomuusportin; `gluten_free: true` ei ole sallittu ennen PR #417:n tuotantoa ja kunkin reseptin tarkistusta.
