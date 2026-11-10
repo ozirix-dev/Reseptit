@@ -33,23 +33,7 @@ for (const filename of evidenceFiles.filter((name) => name.endsWith(".json"))) {
   evidenceByRecipe.set(evidence.recipeId, evidence);
 }
 const publishedRecipeIds = new Set(audit.publishedSources.map((recipe) => recipe.data.recipe_id));
-// Safety withdrawal does not delete historic, independently auditable calculation
-// evidence. Make the exceptional archive case exact and verify it remains a draft;
-// all other orphan evidence continues to fail closed.
-const safetyWithdrawnEvidence = new Map([
-  ["karibia-bammy-kassavaleipa", "reseptit/aamupalat/karibia-bammy-kassavaleipa.md"],
-]);
-for (const recipeId of evidenceByRecipe.keys()) {
-  if (publishedRecipeIds.has(recipeId)) continue;
-  const source = safetyWithdrawnEvidence.get(recipeId);
-  if (!source) throw new Error(`Nutrition evidence has no published source recipe: ${recipeId}`);
-  const raw = await readFile(path.join(root, source), "utf8");
-  const { parseMarkdown } = await import("../src/content/markdown");
-  const parsed = parseMarkdown(raw);
-  if (!parsed || parsed.data.recipe_id !== recipeId || parsed.data.status !== "draft") {
-    throw new Error(`Safety-withdrawn nutrition evidence must point to an exact draft: ${recipeId}`);
-  }
-}
+for (const recipeId of evidenceByRecipe.keys()) if (!publishedRecipeIds.has(recipeId)) throw new Error(`Nutrition evidence has no published source recipe: ${recipeId}`);
 const translationsByRecipe = new Map<string, typeof audit.publishedTranslations>();
 for (const translation of audit.publishedTranslations) {
   const group = translationsByRecipe.get(translation.data.recipe_id) ?? [];

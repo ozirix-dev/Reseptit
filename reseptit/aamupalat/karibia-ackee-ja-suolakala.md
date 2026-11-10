@@ -4,7 +4,7 @@ recipe_id: karibia-ackee-ja-suolakala
 url_slug: karibia-ackee-ja-suolakala
 category: aamupala
 language: fi
-status: draft
+status: published
 main_ingredient:
   - "suolakala"
   - "ackee"

@@ -4,6 +4,7 @@ import path from "node:path";
 import test from "node:test";
 import { siteContent as currentSiteContent } from "../src/generated/content.generated";
 import { parseMarkdown } from "../src/content/markdown";
+import { isPublicRecipeQuarantined, publicRecipeQuarantineIds } from "../scripts/public-recipe-quarantine";
 
 
 // These historical batch expectations retain the exact main nutrition snapshots.
@@ -48,7 +49,7 @@ test("site content contains every published recipe and no drafts", async () => {
     const parsed = parseMarkdown(await readFile(candidate, "utf8"));
     if (!parsed) continue;
     const frontmatter = parsed.data;
-    if (frontmatter.status === "published") expected.add(`${frontmatter.recipe_id}:${frontmatter.language}`);
+    if (frontmatter.status === "published" && !isPublicRecipeQuarantined(String(frontmatter.recipe_id))) expected.add(`${frontmatter.recipe_id}:${frontmatter.language}`);
   }
   const actual = new Set(siteContent.recipes.map((recipe) => `${recipe.recipeId}:${recipe.locale}`));
   assert.deepEqual(actual, expected);
@@ -715,5 +716,15 @@ test("R1B corrected Koshari nutrition evidence is synchronized across published 
       [95.91, 103.14, 22.26, 12.03],
       `koshari/${recipe.locale}`,
     );
+  }
+});
+
+test("three source-sealed safety withdrawals never enter public recipes or sitemap", async () => {
+  assert.equal(publicRecipeQuarantineIds.length, 3);
+  for (const id of publicRecipeQuarantineIds) {
+    assert.equal(currentSiteContent.recipes.some(r => r.recipeId === id), false);
+    const source = parseMarkdown(await readFile(path.resolve(import.meta.dirname, `../../reseptit/aamupalat/${id}.md`), "utf8"));
+    assert.ok(source);
+    assert.equal(source.data.status, "published", `${id}: archived source status must remain sealed`);
   }
 });

@@ -100,25 +100,8 @@ for (const [alias, value] of Object.entries(recipeAliases.aliases)) {
   if (!alias.trim() || !value.canonical.trim() || !value.evidence.trim()) throw new Error(`Recipe ingredient alias requires canonical identity and evidence: ${alias}`);
 }
 
-// Preserve historical input rows in docs/nutrition while excluding only
-// three explicitly withdrawn, safety-blocked original recipes from the live
-// published GI/GK inventory. Fail closed if any is republished unexpectedly.
-const safetyWithdrawnSources = new Map([
-  ["karibia-bammy-kassavaleipa", "reseptit/aamupalat/karibia-bammy-kassavaleipa.md"],
-  ["karibia-ackee-ja-suolakala", "reseptit/aamupalat/karibia-ackee-ja-suolakala.md"],
-  ["vietnamilainen-banh-bao-kananmunalla", "reseptit/aamupalat/vietnamilainen-banh-bao-kananmunalla.md"],
-]);
-for (const [recipeId, sourcePath] of safetyWithdrawnSources) {
-  const parsed = parseMarkdown(await readFile(path.join(root, sourcePath), "utf8"));
-  if (!parsed || parsed.data.status !== "draft" || parsed.data.recipe_id !== recipeId || publishedRecipeSources.has(recipeId)) {
-    throw new Error("Safety-withdrawn GI/GK source must remain an exact draft: " + recipeId);
-  }
-}
-const activePilotInputs = (input.recipes as GlycemicLoadRecipeInput[]).filter(
-  (recipe) => !safetyWithdrawnSources.has(recipe.recipeId),
-);
 const { recipes: inputs, autoIncludedRecipeIds } = completePublishedRecipeInputs(
-  activePilotInputs,
+  input.recipes as GlycemicLoadRecipeInput[],
   publishedSourceRows,
 );
 

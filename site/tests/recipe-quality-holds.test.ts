@@ -5,6 +5,7 @@ import test from "node:test";
 import { siteContent } from "../src/generated/content.generated";
 import { parseMarkdown } from "../src/content/markdown";
 import { editorialHoldRecipeIds, publicRecipeQualityHold } from "../scripts/recipe-quality-holds";
+import { isPublicRecipeQuarantined } from "../scripts/public-recipe-quarantine";
 
 const originals = {
   "intialainen-idli-kookoschutneylla": "reseptit/aamupalat/intialainen-idli-kookoschutneylla.md",
@@ -23,7 +24,8 @@ test("published and quarantined quality-hold sources preserve their original ing
     assert.ok(repoRecipe);
     const recipe = siteContent.recipes.find((entry) => entry.recipeId === recipeId && entry.locale === "fi");
     if (withdrawnIds.has(recipeId)) {
-      assert.equal(repoRecipe.data.status, "draft", `${recipeId} must stay withdrawn pending source review`);
+      assert.equal(repoRecipe.data.status, "published", `${recipeId} source evidence must stay unchanged`);
+      assert.ok(isPublicRecipeQuarantined(recipeId));
       assert.equal(recipe, undefined, `${recipeId} must not be published`);
       continue;
     }

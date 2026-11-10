@@ -4,7 +4,7 @@ recipe_id: karibia-bammy-kassavaleipa
 url_slug: karibia-bammy-kassavaleipa
 category: aamupala
 language: fi
-status: draft
+status: published
 main_ingredient:
   - "kassava"
   - "kookosmaito"

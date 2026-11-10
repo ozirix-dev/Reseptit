@@ -1,5 +1,6 @@
 import { createHash } from "node:crypto";
 import { publicRecipeQualityHold } from "./recipe-quality-holds";
+import { isPublicRecipeQuarantined } from "./public-recipe-quarantine";
 import { projectReviewedFiEditorialSource } from "./gk80-editorial-display";
 import { projectA8FiEditorialSource } from "./a8-editorial-display";
 import { projectC20FiDisplay } from "./c20-fi-editorial-display";
@@ -123,6 +124,8 @@ async function buildRecipes(): Promise<RecipeEntry[]> {
     const parsed = parseMarkdown(projectBreakfastFiQualityDisplay(relativePath, projectMintWholeMilkFiDisplay(relativePath, projectC20FiDisplay(relativePath, projectA8FiEditorialSource(relativePath, projectReviewedFiEditorialSource(relativePath, await readFile(filePath, "utf8")))))));
     if (!parsed) continue;
     if (parsed.data.status === "draft") continue;
+    // Exact safety quarantine retains sealed source/GK evidence while suppressing public routes.
+    if (isPublicRecipeQuarantined(String(parsed.data.recipe_id ?? ""))) continue;
     if (parsed.data.status !== "published") throw new Error(`Recipe status must be draft or published: ${filePath}`);
     const data = recipeFrontmatterSchema.parse(parsed.data);
     assertSnackPublicationReady(data);
