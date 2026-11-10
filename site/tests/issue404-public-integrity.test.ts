@@ -10,7 +10,7 @@ import { c13PublicFiPaths, projectC13FiDisplay } from "../scripts/c13-fi-public-
 import { parseMarkdown } from "../src/content/markdown";
 import { siteContent } from "../src/generated/content.generated";
 
-/** Issue #404: 21 source-problem quarantine IDs + 17 source-sealed display repairs.
+/** Issue #404: 21 source-problem quarantine IDs + 14 source-sealed display repairs + 3 canonical FI method-only migrations.
  * This is NOT an approval of underlying nutrition, GK, translations or safety.
  * Update the inventory only alongside an audited release decision. */
 const issue404 = [
@@ -62,6 +62,11 @@ const displayCorrections = [
   { relative: "reseptit/aamupalat/kiinalainen-katkarapu-wontonkeitto.md", apply: projectSafeWontonFiDisplay },
 ];
 const recipeId = (relative: string) => path.basename(relative, ".md");
+const canonicalMethodOnly = [
+  "indonesialainen-bakwan-maissifritter",
+  "meksikolainen-huevos-divorciados",
+  "lahi-ita-labneh-kulho-zaatarilla",
+] as const;
 const sorted = (values: readonly string[]) => [...values].sort();
 
 test("issue #404 all 38 are either quarantined or protected by a source-sealed FI display correction", () => {
@@ -69,11 +74,12 @@ test("issue #404 all 38 are either quarantined or protected by a source-sealed F
   const corrected = displayCorrections.map(item => recipeId(item.relative));
   assert.equal(new Set(issue404).size, 38, "audit inventory must contain 38 distinct IDs");
   assert.equal(quarantined.length, 21, "unexpected change to quarantine: review release decision");
-  assert.equal(corrected.length, 17, "unexpected change to display corrections: review migration");
+  assert.equal(corrected.length, 14, "unexpected change to display corrections: review migration");
+  assert.equal(canonicalMethodOnly.length, 3);
   assert.equal(new Set(quarantined).size, quarantined.length, "duplicate quarantine");
   assert.equal(new Set(corrected).size, corrected.length, "duplicate display correction");
-  assert.equal(new Set([...quarantined, ...corrected]).size, 38, "quarantine and correction overlap");
-  assert.deepEqual(sorted([...quarantined, ...corrected]), sorted(issue404));
+  assert.equal(new Set([...quarantined, ...corrected, ...canonicalMethodOnly]).size, 38, "quarantine and correction overlap");
+  assert.deepEqual(sorted([...quarantined, ...corrected, ...canonicalMethodOnly]), sorted(issue404));
 });
 
 test("issue #404 quarantine is absent from every public locale and corrected content is present", () => {
@@ -81,7 +87,7 @@ test("issue #404 quarantine is absent from every public locale and corrected con
     assert.ok(isPublicRecipeQuarantined(id));
     assert.equal(siteContent.recipes.some(recipe => recipe.recipeId === id), false, id);
   }
-  for (const entry of displayCorrections) {
+  for (const id of canonicalMethodOnly) {\n    assert.equal(isPublicRecipeQuarantined(id), false, id);\n    assert.ok(siteContent.recipes.some(recipe => recipe.recipeId === id && recipe.locale === "fi"), id);\n  }\n  for (const entry of displayCorrections) {
     assert.equal(isPublicRecipeQuarantined(recipeId(entry.relative)), false, entry.relative);
     assert.ok(siteContent.recipes.some(recipe => recipe.recipeId === recipeId(entry.relative) && recipe.locale === "fi"), entry.relative);
   }
