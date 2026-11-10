@@ -11,6 +11,8 @@ import { breakfastFiQualityPaths, projectBreakfastFiQualityDisplay } from "../sc
 const root = path.resolve(import.meta.dirname, "../..");
 const sha = (raw: string) => createHash("sha256").update(raw.replaceAll("\r\n", "\n")).digest("hex");
 const expected: Record<string,string> = {
+  "kiinalainen-teehaudutetut-munat": "bae898d991ed769ae2853f2860e1ebcd3629e292e0d5ca2901244c0377d640e1",
+  "japanilainen-onigiri-lohella": "71de7695fefca8a5fe6d0d84e3343380ca06858b6cbdfdb539ff32296733cdbf",
   "yrttituorejuusto-kinkkurullat": "e5649f6b71fb0131def0f4332f1522e4c96c4e90af5abeed947df8681ec25363",
   "malesialainen-mee-goreng-aamunuudeleilla": "0fe3c4d4d2a129da4bc8fda84df1c9b96c501f1fdd5ee6be2733edc9f69e515d",
   "valimerellinen-ricotta-persikkakulho": "da520f24684e3d1dfa2ed786b4e1200605b588a413591e852b568b59d3968d5c",
@@ -18,8 +20,8 @@ const expected: Record<string,string> = {
 };
 const macros = ["carbs_net_per_serving_g","carbs_total_per_serving_g","protein_per_serving_g","fat_per_serving_g"] as const;
 
-test("SHA-pinned FI overlays correct four dishes without nutrition changes", () => {
-  assert.equal(breakfastFiQualityPaths.length, 4);
+test("SHA-pinned FI overlays correct six dishes without nutrition changes", () => {
+  assert.equal(breakfastFiQualityPaths.length, 6);
   for (const relative of breakfastFiQualityPaths) {
     const raw = readFileSync(path.join(root, relative), "utf8");
     const beforeMd = parseMarkdown(raw);
@@ -34,7 +36,21 @@ test("SHA-pinned FI overlays correct four dishes without nutrition changes", () 
     assert.deepEqual(after.ingredients, before.ingredients);
     assert.deepEqual(after.image, before.image);
     for(const k of macros) assert.equal(after[k],before[k]);
-    if (before.recipe_id === "yrttituorejuusto-kinkkurullat") {
+    if (before.recipe_id === "kiinalainen-teehaudutetut-munat") {
+      assert.deepEqual(before.cooking_method, ["paistaminen"]);
+      assert.deepEqual(after.cooking_method, ["keittäminen"]);
+      assert.equal((afterMd.content.match(/^\d+\. /gm) ?? []).length, 4);
+      assert.match(afterMd.content, /kuoriin pieniä säröjä/);
+      assert.match(afterMd.content, /Kuori munat vasta maustumisen jälkeen/);
+      assert.doesNotMatch(afterMd.content, /Kuori ja puolita munat/);
+    } else if (before.recipe_id === "japanilainen-onigiri-lohella") {
+      assert.deepEqual(after.cooking_method, before.cooking_method);
+      assert.equal((afterMd.content.match(/^\d+\. /gm) ?? []).length, 4);
+      assert.match(afterMd.content, /100 g kuivaa valkoista riisiä/);
+      assert.match(afterMd.content, /150 g raakaa lohta/);
+      assert.match(afterMd.content, /5 g seesaminsiemeniä/);
+      assert.doesNotMatch(afterMd.content, /Paista tofu|Paloittele tuoreet kasvikset/);
+    } else if (before.recipe_id === "yrttituorejuusto-kinkkurullat") {
       assert.equal(before.servings,4);
       assert.deepEqual(before.cooking_method, ["kypsentäminen"]);
       assert.deepEqual(after.cooking_method, ["kylmävalmistus"]);
@@ -70,7 +86,7 @@ test("SHA-pinned FI overlays correct four dishes without nutrition changes", () 
   assert.equal(projectBreakfastFiQualityDisplay("reseptit/aamupalat/unrelated.md","plain"),"plain");
 });
 
-test("generated FI cards use four servings and the reviewed noodle ingredient facet",()=>{
+test("generated FI cards use chef-corrected instructions and the reviewed noodle facet",()=>{
   const recipes = new Map(siteContent.recipes.filter(r=>r.locale==="fi").map(r=>[r.recipeId,r]));
   const ham = recipes.get("yrttituorejuusto-kinkkurullat");
   assert.ok(ham);
@@ -88,4 +104,14 @@ test("generated FI cards use four servings and the reviewed noodle ingredient fa
   assert.equal(corn.servings,2);
   assert.match(corn.instructionsText.join(" "),/kauttaaltaan kypsiksi/);
   assert.doesNotMatch(corn.instructionsText.join(" "),/Tarjoa limetillä/);
+  const eggs = recipes.get("kiinalainen-teehaudutetut-munat");
+  assert.ok(eggs);
+  assert.equal(eggs.servings,2);
+  assert.match(eggs.instructionsText.join(" "),/Kuori munat vasta maustumisen jälkeen/);
+  assert.doesNotMatch(eggs.instructionsText.join(" "),/Kuori ja puolita munat/);
+  const onigiri = recipes.get("japanilainen-onigiri-lohella");
+  assert.ok(onigiri);
+  assert.equal(onigiri.servings,2);
+  assert.match(onigiri.instructionsText.join(" "),/150 g raakaa lohta/);
+  assert.doesNotMatch(onigiri.instructionsText.join(" "),/Paista tofu/);
 });

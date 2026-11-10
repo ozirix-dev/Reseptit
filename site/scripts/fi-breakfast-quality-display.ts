@@ -1,6 +1,6 @@
 import { createHash } from "node:crypto";
 
-/** SHA-pinned FI public-presentation corrections for four breakfasts.
+/** SHA-pinned FI public-presentation corrections for six breakfasts.
  * Canonical FI files, published nutrient/GK bindings and ingredient quantities
  * must remain byte-identical. Unexpected raw edits or ambiguous anchors fail closed.
  */
@@ -8,6 +8,17 @@ const changes: Readonly<Record<string, {
   sourceSha256: string;
   edits: readonly (readonly [string, string])[];
 }>> = {
+  "reseptit/aamupalat/kiinalainen-teehaudutetut-munat.md": {
+    sourceSha256: "bae898d991ed769ae2853f2860e1ebcd3629e292e0d5ca2901244c0377d640e1",
+    edits: [
+      ["cooking_method:\n  - \"paistaminen\"\n", "cooking_method:\n  - \"keittäminen\"\n"],
+      ["1. Keitä kananmunat kiehuvassa vedessä haluttuun kypsyyteen ja jäähdytä hetki kylmässä vedessä.\n2. Kuumenna mausteliemi ja lisää pääraaka-aine. Hauduta miedosti, jotta maut ehtivät tarttua.\n3. Kuori ja puolita munat. Kokoa kulhot ja lusikoi päälle lämmin mausteliemi.\n4. Halkeile keitettyjen munien kuoret kevyesti ja hauduta mausteliemessä.", "1. Keitä 2 kananmunaa kuorineen vedessä 8–9 minuuttia. Jäähdytä hetki, jotta kuoria voi käsitellä; älä kuori munia vielä.\n2. Kuumenna mausteliemeksi luettelon 150 ml valmiiksi haudutettua mustaa teetä, 1 rkl soijakastiketta ja 1 tl tähtianista. Lisää luettelon suolaa vain tarvittaessa.\n3. Naputtele kovaksi keitettyjen munien kuoriin pieniä säröjä lusikalla poistamatta kuoria. Nosta munat pieneen kattilaan mausteliemeen ja kääntele niitä, jotta vähäinenkin liemi koskettaa kuoria tasaisesti.\n4. Hauduta kannen alla miedolla lämmöllä noin 10 minuuttia. Kuori munat vasta maustumisen jälkeen ja tarjoa yksi muna annosta kohti. Lientä ei tarvitse tarjoilla erillisenä kastikkeena."]
+    ]
+  },
+  "reseptit/aamupalat/japanilainen-onigiri-lohella.md": {
+    sourceSha256: "71de7695fefca8a5fe6d0d84e3343380ca06858b6cbdfdb539ff32296733cdbf",
+    edits: [["1. Kypsennä riisi pakkauksen ohjeen mukaan. Paista tofu, muna tai muu lämmin täyte tarvittaessa erikseen.\n2. Paloittele tuoreet kasvikset ja valmistele yrtit sekä kastikkeen ainekset.\n3. Jaa lämmin pohja kulhoihin, asettele muut ainekset päälle ja lisää kastike juuri ennen tarjoamista.\n4. Huuhtele riisi ja kypsennä se. Kypsennä lohi pannulla ja hiutaloi. Jaa lämmin riisi kahteen osaan, täytä lohella ja muotoile tiiviiksi kolmionmuotoisiksi riisipalloiksi. Kääri pienet norileväsuikaleet ympärille ja viimeistele seesaminsiemenillä.", "1. Huuhtele luettelon 100 g kuivaa valkoista riisiä ja keitä se pakkauksen ohjeen mukaisessa vesimäärässä kypsäksi. Anna kypsän riisin jäähtyä hieman, jotta sitä voi käsitellä.\n2. Kypsennä samalla luettelon 150 g raakaa lohta kuivalla tarttumattomalla pannulla ilman lisättyä rasvaa, kunnes kala on kauttaaltaan kypsää. Poista ruodot, hiutaloi lohi ja mausta luettelon suolalla tarvittaessa.\n3. Jaa kypsennetty riisi kahteen yhtä suureen osaan. Kostuta kädet vedellä, aseta kummankin riisiosuuden keskelle puolet lohesta ja purista riisi tiiviiksi kolmioksi täytteen ympärille.\n4. Leikkaa luettelon 3 g kuivattua norilevää suikaleiksi ja kääri niitä riisikolmioiden ympärille. Ripottele päälle yhteensä 5 g seesaminsiemeniä (2,5 g annosta kohti). Tarjoa ilman muita, luettelemattomia täytteitä tai kastikkeita."]]
+  },
   "reseptit/aamupalat/yrttituorejuusto-kinkkurullat.md": {
     sourceSha256: "e5649f6b71fb0131def0f4332f1522e4c96c4e90af5abeed947df8681ec25363",
     edits: [
