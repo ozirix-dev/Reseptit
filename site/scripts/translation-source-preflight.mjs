@@ -34,7 +34,10 @@ export function extractRecipe(raw) {
   const data = yamlParse(match[1]);
   if (!data || typeof data !== "object" || Array.isArray(data)) throw Error("Invalid YAML object");
   const content = raw.slice(match[0].length);
-  const section = content.match(/^## Valmistus\s*\r?\n([\s\S]*?)(?=^##\s+|$)/m)?.[1] ?? "";
+  const heading = /^## Valmistus\s*$/m.exec(content);
+  const remainder = heading ? content.slice(heading.index + heading[0].length) : "";
+  const nextHeading = remainder.search(/^##\\s+/m);
+  const section = remainder.slice(0, nextHeading < 0 ? undefined : nextHeading);
   const steps = section.match(/^\s*\d+[.)]\s+\S.*$/gm) ?? [];
   return { data, content, section, steps };
 }
