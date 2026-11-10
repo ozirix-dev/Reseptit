@@ -21,3 +21,7 @@ Työerä [F25 #399](https://github.com/ozirix-dev/Reseptit/pull/399) tarvitsee k
 Testi vaatii 14 alkuperäis-SHA:ta, täsmälliset YAML-punnitukset/annokset/makrot/kuvat sekä neljän vaiheen näyttöohjeet ja vanhojen geneeristen virheiden poistumisen. Odottamaton alkuperäistiedoston muutos pysäyttää tuotannon (fail closed).
 
 **Ei EN/SV/TH-kielijulkaisua tässä PR:ssä.** E20 ja F25 pysyvät erillisinä Draft-työjonoina, ja jokaisen lähteen julkaisuvaltuus vaatii erillisen hyväksynnän. Tämä on AI:n kirjallinen kokkikatselmointi; fyysistä koepaistoa tai ihmisarviointia ei väitetä.
+
+## Yhdeksäs rajattu oikaisu
+
+- `rahka-marjakerroskulho`: FI raw blob `af3a8debe0a46b920ed0464545732bd2900485b8`, normalisoitu SHA-256 `38ed90a415a871e64593e65b63bc46171b2fecf2bc5ff05a3a67690eae81b8e6`; julkinen `cooking_method: kypsentäminen` → `kylmävalmistus`. Kaikki neljä alkuperäistä vaihetta, 4 annosta, 250 g rahkaa, 100 g jogurttia, 150 g marjoja, 20 g hasselpähkinää ja ravintoarvot säilyvät ennallaan. Ei kuumennusta.

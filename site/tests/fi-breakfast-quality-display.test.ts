@@ -11,6 +11,7 @@ import { breakfastFiQualityPaths, projectBreakfastFiQualityDisplay } from "../sc
 const root = path.resolve(import.meta.dirname, "../..");
 const sha = (raw: string) => createHash("sha256").update(raw.replaceAll("\r\n", "\n")).digest("hex");
 const expected: Record<string,string> = {
+  "rahka-marjakerroskulho": "38ed90a415a871e64593e65b63bc46171b2fecf2bc5ff05a3a67690eae81b8e6",
   "karibia-mango-limejogurtti": "91fcf9425bb58e499304414a99665cc01ba7c37a1a72115262d31e04b5c93a0f",
   "japanilainen-hojicha-jogurtti-persimonilla": "cae50573ff18898460b95e9c674d0bc39514c7cbaaaa502d4008171b14261cfe",
   "lahi-ita-pistaasijogurtti": "f9a1d41f86c92902bbda7c9f224cbc8de48900ec7726625a482f1ecea794a9e1",
@@ -28,8 +29,8 @@ const expected: Record<string,string> = {
 };
 const macros = ["carbs_net_per_serving_g","carbs_total_per_serving_g","protein_per_serving_g","fat_per_serving_g"] as const;
 
-test("SHA-pinned FI overlays correct fourteen dishes without nutrition changes", () => {
-  assert.equal(breakfastFiQualityPaths.length, 14);
+test("SHA-pinned FI overlays correct fifteen dishes without nutrition changes", () => {
+  assert.equal(breakfastFiQualityPaths.length, 15);
   for (const relative of breakfastFiQualityPaths) {
     const raw = readFileSync(path.join(root, relative), "utf8");
     const beforeMd = parseMarkdown(raw);
@@ -44,7 +45,13 @@ test("SHA-pinned FI overlays correct fourteen dishes without nutrition changes",
     assert.deepEqual(after.ingredients, before.ingredients);
     assert.deepEqual(after.image, before.image);
     for(const k of macros) assert.equal(after[k],before[k]);
-    if (new Set(["karibia-mango-limejogurtti","japanilainen-hojicha-jogurtti-persimonilla","lahi-ita-pistaasijogurtti","vietnamilainen-kahvijogurtti-banaanilla","valimerellinen-jogurttikulho-hunajalla","kiinalainen-soijamaito-aamiaisella","korealainen-gyeranbap-riisikulho","lahi-ita-zaatar-munat"]).has(before.recipe_id)) {
+    if (before.recipe_id === "rahka-marjakerroskulho") {
+      assert.equal(before.servings, 4);
+      assert.deepEqual(before.cooking_method, ["kypsentäminen"]);
+      assert.deepEqual(after.cooking_method, ["kylmävalmistus"]);
+      assert.equal((afterMd.content.match(/^\d+\. /gm) ?? []).length, 4);
+      assert.equal(afterMd.content, beforeMd.content);
+    } else if (new Set(["karibia-mango-limejogurtti","japanilainen-hojicha-jogurtti-persimonilla","lahi-ita-pistaasijogurtti","vietnamilainen-kahvijogurtti-banaanilla","valimerellinen-jogurttikulho-hunajalla","kiinalainen-soijamaito-aamiaisella","korealainen-gyeranbap-riisikulho","lahi-ita-zaatar-munat"]).has(before.recipe_id)) {
       assert.equal((afterMd.content.match(/^\d+\. /gm) ?? []).length, 4);
       assert.doesNotMatch(afterMd.content, /Valmistele kulhon ainekset|Paloittele tuoreet kasvikset ja valmistele yrtit|Kypsennä riisi pakkauksen ohjeen mukaan\. Paista tofu|kypsennä pavut tai liha tarvittaessa erikseen/);
       assert.notEqual(afterMd.content, beforeMd.content);
@@ -108,6 +115,10 @@ test("generated FI cards use chef-corrected instructions and the reviewed noodle
     const fullText = recipe.instructionsText.join(" ");
     assert.doesNotMatch(fullText, /Valmistele kulhon ainekset|Paloittele tuoreet kasvikset ja valmistele yrtit|Kypsennä riisi pakkauksen ohjeen mukaan\. Paista tofu|kypsennä pavut tai liha tarvittaessa erikseen/);
   }
+  const rahka = recipes.get("rahka-marjakerroskulho");
+  assert.ok(rahka);
+  assert.equal(rahka.servings, 4);
+  assert.deepEqual(rahka.cookingMethod, ["kylmävalmistus"]);
   const ham = recipes.get("yrttituorejuusto-kinkkurullat");
   assert.ok(ham);
   assert.equal(ham.servings,4);

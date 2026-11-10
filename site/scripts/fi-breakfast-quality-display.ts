@@ -1,6 +1,6 @@
 import { createHash } from "node:crypto";
 
-/** SHA-pinned FI public-presentation corrections for fourteen breakfasts.
+/** SHA-pinned FI public-presentation corrections for fifteen breakfasts.
  * Canonical FI files, published nutrient/GK bindings and ingredient quantities
  * must remain byte-identical. Unexpected raw edits or ambiguous anchors fail closed.
  */
@@ -40,6 +40,7 @@ const changes: Readonly<Record<string, {
     sourceSha256: "2abaf61e4abd891bb20d3372d24fb45150566a7ff4b1750dd6db976fda0e4924",
     edits: [["1. Valmistele ainekset: paloittele kasvikset ja kypsennä pavut tai liha tarvittaessa erikseen. Kuumenna öljy pannulla.\n2. Lisää pannulle pisimpään kypsyvät ainekset ja kypsennä pehmeiksi. Lisää mausteet ja tilkka vettä, jos pannu uhkaa kuivua.\n3. Lisää lopuksi nopeasti kypsyvät ainekset, kuten muna tai lehtivihannekset. Kypsennä juuri valmiiksi ja maista suola.\n4. Paista kananmunat ja mausta za’atarilla; tarjoa jogurtin ja lämpimän pitan kanssa.","1. Punnitse 100 g valmista pitaa ja lämmitä sitä kuivalla pannulla tai uunissa ilman lisättyä rasvaa. Jaa pita kahteen annokseen.\n2. Kuumenna pannulla yhteensä luettelon 1 rkl neutraalia paistoöljyä. Riko pannulle 2 kananmunaa ja paista haluamaasi kypsyyteen siten, että valkuaiset hyytyvät.\n3. Ripottele luettelon 1 tl za’ataria tasaisesti kananmunille. Käytä suolaa vain luettelon mukaan, jos mausteseos ei jo ole suolaista.\n4. Jaa 100 g jogurttia kahteen pieneen annokseen. Tarjoa yksi za’atar-muna annosta kohti lämpimän pitan ja 50 g jogurtin kanssa. Älä lisää kastiketta, voita tai muita luettelemattomia aineksia."]]
   },
+  "reseptit/aamupalat/rahka-marjakerroskulho.md": { sourceSha256: "38ed90a415a871e64593e65b63bc46171b2fecf2bc5ff05a3a67690eae81b8e6", edits: [["  - kypsentäminen\n", "  - kylmävalmistus\n"]] },
   "reseptit/aamupalat/kiinalainen-teehaudutetut-munat.md": {
     sourceSha256: "bae898d991ed769ae2853f2860e1ebcd3629e292e0d5ca2901244c0377d640e1",
     edits: [
