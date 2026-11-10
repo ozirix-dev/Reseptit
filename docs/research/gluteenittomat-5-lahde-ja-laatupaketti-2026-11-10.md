@@ -22,3 +22,17 @@ Lähdekokoelma: https://www.keliakialiitto.fi/ruoka/reseptit/
 Gluteenittomuuden kriteerit: https://www.ruokavirasto.fi/elintarvikkeet/elintarvikeala/ainesosat-ja-sisalto/gluteenittomat-ja-erittain-vahagluteeniset-elintarvikkeet/
 
 Toteutus liittyy lähde-issueen #418. Reseptit eivät ole koeleivottuja; niitä ei saa markkinoida itsenäisesti testatuiksi.
+
+## Generoidun kuvapaketin tarkisteet (chatissa, ei vielä GitHubissa)
+
+Kuvat on valmistettu erilliseen `gluteenittomat_viisi_kuvaa.zip`-pakettiin, 1500 × 1000 px, WebP. Nämä tarkisteet varmistavat myöhemmän siirron vastaavuuden; GitHubissa ei vielä ole näitä binäärejä, joten `image.src` jätettiin pois.
+
+| Resepti-ID ja odotettu kuvatiedosto | SHA-256 |
+|---|---|
+| `gluteeniton-siemenvuokaleipa.webp` | `903cbd3252b22ba58cd03d7d0edcd4f61dda58cc4e3e76f4e4ce3a416cb0cc99` |
+| `gluteenittomat-kauralesesampylat.webp` | `251d501a36f7f78fe9501a864cd60e53f441a03bb63de51aab4afed38b350e25` |
+| `gluteeniton-durrapizzapohja.webp` | `ec6154968f21d7c690308daad623244c1dda66d154c46d6da9a4b5653eaf7c0f` |
+| `gluteeniton-perunajauhokakkupohja.webp` | `f9fa50e561f3803554829a6a6c1c77fcf1b609785a38a2d993d3d83e8e045637` |
+| `gluteeniton-uunipannukakku.webp` | `b28b2c7eff01ea475553b44205ed6d4c941d02afa12dbe8636be7473a6405b1b` |
+
+**Kuvien sisällöllinen auditointi:** pizzapohjan kuvituksessa näkyy juustoa, tomaattia ja basilikaa, joita ei ole pohjareseptissä; pannukakun kuvituksessa näkyy marjoja ja kermaa, jotka eivät kuulu taikinaan. Näitä kahta **ei saa tulkita ainesosaluetteloksi**, ja ne on korjattava ennen julkaisukuvaa tai merkittävä nimenomaisesti tarjoiluehdotukseksi. Sämpylöiden kuvan pinta muistuttaa kaurahiutaleita; varmistettava vastaavuus kauraleseseen. Kuvat eivät osoita gluteenittoman lopputuotteen mittausta tai tosiasiallista koepaistoa.
