@@ -16,3 +16,7 @@ Ensimmäisen osan seitsemässä korjauksessa ovat pinaatti-paneer-chilla (vain v
 Toisessa osassa baghrir, thai-roti, chilaquiles verdes, paputostada, nasi goreng ja kimchi-jeon. **Nasi gorengin 150 g kecap manis** säilyy, vaikka on poikkeava. Baghririn 150 ml nesteen ja lyhyen hiiva-ajan sekä Thai-rotin ohukaismaisen rakenteen autenttisuus on ratkaisematta. Paputostada koskee valmiiksi kypsiä mustia papuja.
 
 Jokainen F25-lähde pysyy ilman julkaisuvaltuutta. Nämä ovat AI:n tekemiä toimituksellisia oikaisuja, eivät riippumattomia ravintolaskennan tai kielentarkastajan hyväksyntöjä. CI-portti tarkistaa lähteiden 28 SHA:ta, ankkurit, määrät ja reseptin muodostuvan FI-näyttöversion.
+
+## Otsikon ruokalajikohtainen lisäoikaisu
+
+Baghririn julkinen FI-otsikko ja tekstin kuvaus: **hunajavoilla → hunajalla**. Lähde sisältää vain 1 rkl hunajaa, ei voita. Korjaus tehdään saman raaka-SHA-sinetin kautta eikä muuta ainesmääriä, makroja tai kanonista FI-raakatekstiä. Testi varmistaa että vanha hunajavoita lupaava otsikko poistuu kokonaan julkisesta FI-näkymästä.
