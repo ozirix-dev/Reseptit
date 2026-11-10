@@ -11,9 +11,11 @@ const originals = {
   "vietnamilainen-banh-bao-kananmunalla": "reseptit/aamupalat/vietnamilainen-banh-bao-kananmunalla.md",
   "intialainen-aloo-paratha": "reseptit/aamupalat/intialainen-aloo-paratha.md",
   jiaozi: "reseptit/alkuruoat/jiaozi.md",
+  "karibia-bammy-kassavaleipa": "reseptit/aamupalat/karibia-bammy-kassavaleipa.md",
+  "kiinalainen-katkarapu-wontonkeitto": "reseptit/aamupalat/kiinalainen-katkarapu-wontonkeitto.md",
 } as const;
 
-test("four known P1 originals are held visibly, without silently changing ingredients or nutrition", async () => {
+test("six known unsafe or unfit originals are held visibly without changing ingredients or nutrition", async () => {
   assert.deepEqual([...editorialHoldRecipeIds].sort(), Object.keys(originals).sort());
   const repo = path.resolve(import.meta.dirname, "../..");
   for (const [recipeId, filename] of Object.entries(originals)) {
@@ -50,4 +52,16 @@ test("the same quality-hold reasoning exists in every supported locale", () => {
   assert.equal(publicRecipeQualityHold("vhh-mustikkapiirakka", "fi"), null);
   assert.equal(publicRecipeQualityHold("karibia-ackee-ja-suolakala", "fi"), null,
     "ackee has its own stricter food-safety hold");
+});
+
+
+test("cassava and raw-shrimp recipes display a food-safety warning in all four languages", () => {
+  for (const recipeId of ["karibia-bammy-kassavaleipa", "kiinalainen-katkarapu-wontonkeitto"]) {
+    for (const locale of ["fi", "en", "sv", "th"] as const) {
+      const hold = publicRecipeQualityHold(recipeId, locale);
+      assert.ok(hold);
+      assert.match(hold.description, /TURVALLISUUSVAROITUS|FOOD SAFETY WARNING|LIVSMEDELSVARNING|คำเตือนด้านความปลอดภัยอาหาร/);
+      assert.match(hold.instructions, /^1\.[\s\S]*\n2\./);
+    }
+  }
 });
