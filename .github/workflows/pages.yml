@@ -111,6 +111,13 @@ jobs:
           node --test scripts/translation-source-preflight.test.mjs
         working-directory: site
 
+      - name: Verify F25 draft quantity and macro parity (non-release)
+        if: contains(steps.select.outputs.changed_paths, 'f25-source-worklist.json') || contains(steps.select.outputs.changed_paths, 'f25-draft-structural-check.mjs') || contains(steps.select.outputs.changed_paths, 'kaannokset/')
+        run: |
+          node scripts/f25-draft-structural-check.mjs
+          node --test scripts/f25-draft-structural-check.test.mjs
+        working-directory: site
+
       - name: Validate changed recipe, translation, and evidence records
         if: steps.select.outputs.run_content == 'true'
         shell: pwsh

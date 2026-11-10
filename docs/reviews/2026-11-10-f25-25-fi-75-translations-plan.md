@@ -21,3 +21,7 @@ F25-erässä ei julkaista nyt 75 uutta käännöstä. Laatutavoite on 25 hyväks
 ## Ensimmäinen Draft-erä
 
 Eri kielillä laadittu **6/75 Draft-tiedostoa kahdesta FI-lähteestä**: maakouda + karibialainen ruokabanaanilautanen. [Kieliversioiden sisältö ja riskit](2026-11-10-f25-two-source-six-language-drafts.md). 4 jatkokatselmointiin / 21 SOURCE-HOLD -tilaa ei muutu. Julkaistu F25:sta edelleen 0.
+
+## Iso käännöspäivitys: 36/75 Draftia
+
+Kymmenen FI-lähteen 30 kieliversiota lisättiin yhtenä commitina aiempien kuuden lisäksi: yhteensä **36/75**, 12 FI-reseptiä × 3 kieltä. Yksilöllinen [30 Draftin katselmointiraportti](2026-11-10-f25-thirty-new-language-drafts.md), CI:hin lisätty myös määrien ja makrojen rakennetarkistus. **21 SOURCE-HOLDia ei poistu; julkaistu 0.**
