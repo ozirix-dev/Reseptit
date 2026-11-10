@@ -4,7 +4,7 @@ recipe_id: vietnamilainen-banh-bao-kananmunalla
 url_slug: vietnamilainen-banh-bao-kananmunalla
 category: aamupala
 language: fi
-status: published
+status: draft
 main_ingredient:
   - "vehnäjauho"
   - "kananmuna"

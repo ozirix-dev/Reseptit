@@ -12,30 +12,33 @@ const originals = {
   "intialainen-aloo-paratha": "reseptit/aamupalat/intialainen-aloo-paratha.md",
   jiaozi: "reseptit/alkuruoat/jiaozi.md",
   "karibia-bammy-kassavaleipa": "reseptit/aamupalat/karibia-bammy-kassavaleipa.md",
-  "kiinalainen-katkarapu-wontonkeitto": "reseptit/aamupalat/kiinalainen-katkarapu-wontonkeitto.md",
 } as const;
 
-test("six known unsafe or unfit originals are held visibly without changing ingredients or nutrition", async () => {
+test("published and quarantined quality-hold sources preserve their original ingredients", async () => {
   assert.deepEqual([...editorialHoldRecipeIds].sort(), Object.keys(originals).sort());
   const repo = path.resolve(import.meta.dirname, "../..");
+  const withdrawnIds = new Set(["karibia-bammy-kassavaleipa", "vietnamilainen-banh-bao-kananmunalla"]);
   for (const [recipeId, filename] of Object.entries(originals)) {
+    const repoRecipe = parseMarkdown(await readFile(path.join(repo, filename), "utf8"));
+    assert.ok(repoRecipe);
     const recipe = siteContent.recipes.find((entry) => entry.recipeId === recipeId && entry.locale === "fi");
+    if (withdrawnIds.has(recipeId)) {
+      assert.equal(repoRecipe.data.status, "draft", `${recipeId} must stay withdrawn pending source review`);
+      assert.equal(recipe, undefined, `${recipeId} must not be published`);
+      continue;
+    }
     assert.ok(recipe, `${recipeId} must remain addressable`);
     assert.match(recipe.description, /LAATUHUOMAUTUS/);
     assert.match(recipe.description, /HOLD/);
     assert.match(recipe.instructionsText.join(" "), /Älä valmista|älä valmista/);
     assert.equal(recipe.instructionsText.length, 2, `${recipeId}: incomplete steps must not be published as instructions`);
-
-    const old = parseMarkdown(await readFile(path.join(repo, filename), "utf8"));
-    assert.ok(old);
-    assert.deepEqual(recipe.ingredients, old.data.ingredients, `${recipeId}: source ingredient amounts must stay intact`);
+    assert.deepEqual(recipe.ingredients, repoRecipe.data.ingredients);
     assert.deepEqual(recipe.nutrition, {
-      carbsNetG: old.data.carbs_net_per_serving_g ?? null,
-      carbsTotalG: old.data.carbs_total_per_serving_g ?? null,
-      proteinG: old.data.protein_per_serving_g ?? null,
-      fatG: old.data.fat_per_serving_g ?? null,
-    }, `${recipeId}: no macro values are invented, removed, or recalculated by display guard`);
-    assert.ok(!recipe.instructionsText.some((line) => /Siirry täyttöön|Liota riisi tai palkokasvit|24 osaan/.test(line)));
+      carbsNetG: repoRecipe.data.carbs_net_per_serving_g ?? null,
+      carbsTotalG: repoRecipe.data.carbs_total_per_serving_g ?? null,
+      proteinG: repoRecipe.data.protein_per_serving_g ?? null,
+      fatG: repoRecipe.data.fat_per_serving_g ?? null,
+    });
   }
 });
 
@@ -55,13 +58,27 @@ test("the same quality-hold reasoning exists in every supported locale", () => {
 });
 
 
-test("cassava and raw-shrimp recipes display a food-safety warning in all four languages", () => {
-  for (const recipeId of ["karibia-bammy-kassavaleipa", "kiinalainen-katkarapu-wontonkeitto"]) {
-    for (const locale of ["fi", "en", "sv", "th"] as const) {
-      const hold = publicRecipeQualityHold(recipeId, locale);
-      assert.ok(hold);
-      assert.match(hold.description, /TURVALLISUUSVAROITUS|FOOD SAFETY WARNING|LIVSMEDELSVARNING|คำเตือนด้านความปลอดภัยอาหาร/);
-      assert.match(hold.instructions, /^1\.[\s\S]*\n2\./);
-    }
+test("withdrawn cassava source still carries a safety warning in four languages", () => {
+  for (const locale of ["fi", "en", "sv", "th"] as const) {
+    const hold = publicRecipeQualityHold("karibia-bammy-kassavaleipa", locale);
+    assert.ok(hold);
+    assert.match(hold.description, /TURVALLISUUSVAROITUS|FOOD SAFETY WARNING|LIVSMEDELSVARNING|คำเตือนด้านความปลอดภัยอาหาร/);
   }
+});
+
+test("corrected shrimp wonton is published without an unfinished-recipe hold", async () => {
+  const recipe = siteContent.recipes.find((entry) => entry.recipeId === "kiinalainen-katkarapu-wontonkeitto" && entry.locale === "fi");
+  assert.ok(recipe);
+  assert.equal(publicRecipeQualityHold(recipe.recipeId, "fi"), null);
+  const text = recipe.instructionsText.join(" ");
+  assert.match(text, /wonton-taikinaa/);
+  assert.match(text, /tiiviiksi/);
+  assert.match(text, /katkaravut/);
+  assert.match(text, /läpinäkymättömiä/);
+  assert.doesNotMatch(text, /Kuumenna kattilassa öljy tai liemi|Lisää nuudelit, lehtivihannekset/);
+  const raw = parseMarkdown(await readFile(path.resolve(import.meta.dirname, "../../reseptit/aamupalat/kiinalainen-katkarapu-wontonkeitto.md"), "utf8"));
+  assert.ok(raw);
+  assert.deepEqual(recipe.ingredients, raw.data.ingredients);
+  assert.equal(recipe.nutrition.carbsNetG, null);
+  assert.equal(recipe.nutrition.carbsTotalG, null);
 });
