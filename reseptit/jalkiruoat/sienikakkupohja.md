@@ -5,15 +5,18 @@ url_slug: "sienikakkupohja"
 category: "jalkiruoka"
 language: "fi"
 translation_languages: []
-translation_status:
-  en: "draft"
-  th: "draft"
+translation_status: {}
 servings: 10
 main_ingredient: ["kananmuna", "vehnäjauho"]
 cooking_method: ["uunissa paistaminen"]
-time_total_min: 50
+time_total_min: 110
 difficulty: "helppo"
 tags: ["leivonta", "kakku", "pohja", "jalkiruoka", "perinneruoka"]
+image:
+  src: jalkiruoat/sienikakkupohja.webp
+  alt: "Piirroskuva perinteisestä kullanruskeasta, ilmavasta sienikakkupohjasta ja irrotetusta palasta"
+  width: 1536
+  height: 1024
 ingredients:
   - {amount: 4, unit: kpl, item: kananmunaa}
   - {amount: 2, unit: dl, item: sokeria}
@@ -24,7 +27,7 @@ carbs_net_per_serving_g: 30.35
 carbs_total_per_serving_g: null
 protein_per_serving_g: 4.89
 fat_per_serving_g: 2.15
-status: "draft"
+status: "published"
 ---
 
 # Sienikakkupohja
@@ -44,11 +47,11 @@ Pohjan ainekset ovat reseptin rakenteisissa metatiedoissa. Mahdolliset täytteet
 3. Kiehauta vesi juuri ennen lisäämistä. Kaada kiehuva vesi **hitaasti ohuena nauhana** vaahdon joukkoon samalla jatkuvasti vatkaten. Älä kaada vettä kerralla munien päälle.
 4. Sekoita vehnäjauhot ja leivinjauhe. Siivilöi ne vaahdon joukkoon ja kääntele taikina nuolijalla juuri tasaiseksi. Älä enää vatkaa.
 5. Kaada taikina vuokaan ja paista uunin ala- tai keskitasolla noin 30–35 minuuttia. Tarkista kypsyys kakun keskeltä tikulla.
-6. Anna kakun asettua vuoassa noin 10 minuuttia, irrota ja jäähdytä täysin ritilällä ennen halkaisemista ja täyttämistä.
+6. Anna kakun asettua vuoassa noin 10 minuuttia, irrota ja jäähdytä täysin ritilällä ennen halkaisemista ja täyttämistä. Jäähtymiseen kannattaa varata noin tunti.
 
 ## Täytteet ja kuorrutteet
 
-**Valmis täytekakku omana reseptinään:** [Perinteinen mansikkatäytekakku sienikakkupohjalla](perinteinen-mansikkataytekakku-sienikakkupohjalla.md). Siinä mansikkahillo, tuoreet mansikat, vaniljakerma ja kuorrutus on lueteltu omina rakenteisina ainesosinaan; niitä ei piiloteta pohjan ohjeeseen.
+**Valmis täytekakku omana reseptinään:** [Perinteinen mansikkatäytekakku sienikakkupohjalla](../perinteinen-mansikkataytekakku-sienikakkupohjalla/). Siinä mansikkahillo, tuoreet mansikat, vaniljakerma ja kuorrutus on lueteltu omina rakenteisina ainesosinaan; niitä ei piiloteta pohjan ohjeeseen.
 
 Muita mahdollisia klassisia yhdistelmiä ovat vadelmahillo ja kermavaahto sekä mustikat ja sitruunarahka. Niille on tehtävä omat määrälliset yhdistelmäreseptit ennen julkaisua, eikä niiden aineksia lasketa tähän pohjaan.
 
@@ -56,6 +59,6 @@ Muita mahdollisia klassisia yhdistelmiä ovat vadelmahillo ja kermavaahto sekä 
 
 - Kiehuva vesi lisätään hitaasti vatkaten. Suuri kulho auttaa, sillä vaahto kasvaa selvästi.
 - Kakku on kuohkea mutta voi murentua halkaistaessa, jos sitä ei jäähdytetä kunnolla.
-- **GK: todennäköisesti korkea (sanallinen arvio, ei laskettu eikä vahvistettu).** Sokerin ja vehnäjauhon vuoksi pohja on hiilihydraattipitoinen. GK riippuu annoskoosta; täytettyjen kakkujen GK riippuu lisäksi täytteistä ja kuorrutteista. Numeerista GK-arvoa tai vahvistettua GK-luokkaa ei esitetä.
+- **Hiilihydraattipitoinen – GK ei laskettu.** Sokerin ja vehnäjauhon vuoksi pohjassa on runsaasti imeytyviä hiilihydraatteja. Glykeemistä kuormaa ei luokitella ilman tämän reseptin perusteltua GI-tietoa; sitä ei päätellä pelkistä hiilihydraateista. Täytettyjen kakkujen ravintoarvot arvioidaan kokonaiselle reseptille.
 - Ravintoarvot ovat 10 annoksen **laskennallinen arvio** (imeytyvä hiilihydraatti, proteiini ja rasva). Käytetyt tuotteet, raakapainot ja epävarmuudet: [ravintoarvojen laskentamuistio](../../docs/nutrition/sienikakkupohja-ja-mansikkataytekakku-2026-11-10.md). Kokonaishiilihydraatteja kuitu mukaan lukien ei ole arvioitu erikseen.
 - Tämä on perinteinen resepti, ei keto- tai VHH-muunnelma.
