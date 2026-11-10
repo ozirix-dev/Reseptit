@@ -32,11 +32,11 @@ const classicCategory: Record<string, string> = {
 // editorial candidates, never approved GK inputs or publication authority.
 // Every unexpected edit, status change or additional recipe still fails closed.
 const reviewedGlutenFreeDraftFiles = new Map<string,string>([
-  ["reseptit/leivonnaiset/gluteeniton-siemenvuokaleipa.md", "adbb0e2ab86bd517c85a864530df958617741d0d"],
-  ["reseptit/leivonnaiset/gluteenittomat-kauralesesampylat.md", "dd20fa5372aff4f2a94a1f150fe824f360d47ea6"],
-  ["reseptit/leivonnaiset/gluteeniton-durrapizzapohja.md", "14c5ac712fe0a33405cadc3f76b5f6ca65c81100"],
-  ["reseptit/jalkiruoat/gluteeniton-perunajauhokakkupohja.md", "1671bafe17b6b4d84f4729ed8e4db068b5d0d6bf"],
-  ["reseptit/jalkiruoat/gluteeniton-uunipannukakku.md", "239b561eb0c5915dbbc164f8b3bce78c891acdbe"],
+  ["reseptit/leivonnaiset/gluteeniton-siemenvuokaleipa.md", "4b741b1104689f9b2863287a61140b62211e9a78"],
+  ["reseptit/leivonnaiset/gluteenittomat-kauralesesampylat.md", "0487b03a68024cc33bf4c7600a95b16bade2cc97"],
+  ["reseptit/leivonnaiset/gluteeniton-durrapizzapohja.md", "812bcb58086cb7b93801a787162e964f0dc80816"],
+  ["reseptit/jalkiruoat/gluteeniton-perunajauhokakkupohja.md", "4ea5dc5d0308cec8eac1bd6cdcafa41125fa24c5"],
+  ["reseptit/jalkiruoat/gluteeniton-uunipannukakku.md", "403b3f1a1d1e61146a7b8d1bf7e8d1298e702618"],
 ]);
 
 const postBaselineCakeFiles = new Map([
