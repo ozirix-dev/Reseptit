@@ -65,6 +65,12 @@ test("SHA-pinned FI overlays correct twenty-eight dishes without nutrition chang
       assert.equal(after.image?.alt,"Marokkolainen baghrir hunajalla tarjoiltuna aamiaisella");
     } else assert.deepEqual(after.image, before.image);
     for(const k of macros) assert.equal(after[k],before[k]);
+    if (before.recipe_id === "thai-kananmunat-kookoscurryssa") {
+      assert.match(afterMd.content,/Tuotetarkennus ja allergeenit/);
+      assert.match(afterMd.content,/sisältää katkaraputahnaa eli äyriäisallergeenin/);
+      assert.match(afterMd.content,/hiilihydraattia 24,2 g, proteiinia 6,1 g ja rasvaa 1,6 g/);
+      assert.doesNotMatch(beforeMd.content,/katkaraputahnaa eli äyriäisallergeenin/);
+    }
     if (new Set(["pohjoisafrikkalainen-baghrir","thai-roti-munalla-banaanilla","meksikolainen-chilaquiles-verdes","meksikolainen-paputostada-aamupalaksi","indonesialainen-nasi-goreng-aamiaisriisi","korealainen-kimchi-jeon-aamiaiseksi"]).has(before.recipe_id)) {
       assert.equal((afterMd.content.match(/^\d+\. /gm) ?? []).length, 4);
       assert.notEqual(afterMd.content, beforeMd.content);
