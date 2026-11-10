@@ -58,7 +58,12 @@ test("SHA-pinned FI overlays correct twenty-eight dishes without nutrition chang
     assert.equal(after.servings, before.servings);
     assert.equal(after.time_total_min, before.time_total_min);
     assert.deepEqual(after.ingredients, before.ingredients);
-    assert.deepEqual(after.image, before.image);
+    if (before.recipe_id === "pohjoisafrikkalainen-baghrir") {
+      assert.equal(after.image?.src,before.image?.src);
+      assert.equal(after.image?.width,before.image?.width);
+      assert.equal(after.image?.height,before.image?.height);
+      assert.equal(after.image?.alt,"Marokkolainen baghrir hunajalla tarjoiltuna aamiaisella");
+    } else assert.deepEqual(after.image, before.image);
     for(const k of macros) assert.equal(after[k],before[k]);
     if (new Set(["pohjoisafrikkalainen-baghrir","thai-roti-munalla-banaanilla","meksikolainen-chilaquiles-verdes","meksikolainen-paputostada-aamupalaksi","indonesialainen-nasi-goreng-aamiaisriisi","korealainen-kimchi-jeon-aamiaiseksi"]).has(before.recipe_id)) {
       assert.equal((afterMd.content.match(/^\d+\. /gm) ?? []).length, 4);

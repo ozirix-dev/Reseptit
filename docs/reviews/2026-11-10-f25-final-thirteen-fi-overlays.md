@@ -20,3 +20,7 @@ Jokainen F25-lähde pysyy ilman julkaisuvaltuutta. Nämä ovat AI:n tekemiä toi
 ## Otsikon ruokalajikohtainen lisäoikaisu
 
 Baghririn julkinen FI-otsikko ja tekstin kuvaus: **hunajavoilla → hunajalla**. Lähde sisältää vain 1 rkl hunajaa, ei voita. Korjaus tehdään saman raaka-SHA-sinetin kautta eikä muuta ainesmääriä, makroja tai kanonista FI-raakatekstiä. Testi varmistaa että vanha hunajavoita lupaava otsikko poistuu kokonaan julkisesta FI-näkymästä.
+
+## Saavutettavuuden kuvateksti
+
+Baghririn kuvatiedostoa, leveyttä tai korkeutta ei muuteta. Julkisen FI-esityksen `image.alt` korjataan samasta syystä kuin otsikko: `hunajavoilla` → `hunajalla`. Näin ruudunlukijan kuvaus ei mainitse listaamatonta voita. Täsmätesti sallii vain tämän yhden vaihtoehtoisen tekstin oikaisun, muiden kuvametatietojen pysyessä ennallaan.
