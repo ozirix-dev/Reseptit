@@ -63,8 +63,26 @@ test("SHA-pinned FI overlays correct twenty-eight dishes without nutrition chang
       assert.equal(after.image?.width,before.image?.width);
       assert.equal(after.image?.height,before.image?.height);
       assert.equal(after.image?.alt,"Marokkolainen baghrir hunajalla tarjoiltuna aamiaisella");
+    } else if (before.recipe_id === "intialainen-besan-chilla") {
+      assert.equal(after.image?.src,before.image?.src);
+      assert.equal(after.image?.width,before.image?.width);
+      assert.equal(after.image?.height,before.image?.height);
+      assert.equal(after.image?.alt,"Besan-chilla tomaatilla ja sipulilla tarjoiltuna aamiaisella");
+      assert.equal(after.title,"Besan-chilla tomaatilla ja sipulilla");
+      assert.doesNotMatch(afterMd.content,/tomaatti-chutneylla/);
+      assert.match(afterMd.content,/125 g syötävää osaa/);
+      assert.match(afterMd.content,/55 g syötävää osaa/);
     } else assert.deepEqual(after.image, before.image);
     for(const k of macros) assert.equal(after[k],before[k]);
+    if (before.recipe_id === "vietnamilainen-kahvijogurtti-banaanilla") {
+      assert.match(afterMd.content,/30 g makeutettua kondensoitua maitoa/);
+      assert.match(afterMd.content,/AFCD F005582/);
+      assert.match(afterMd.content,/Fineli 620/);
+      assert.match(afterMd.content,/Fineli 11049/);
+      assert.match(afterMd.content,/125 g syötävää hedelmää/);
+      assert.equal((afterMd.content.match(/^\d+\. /gm) ?? []).length,4);
+      assert.equal(after.title,before.title);
+    }
     if (before.recipe_id === "thai-kananmunat-kookoscurryssa") {
       assert.match(afterMd.content,/Tuotetarkennus ja allergeenit/);
       assert.match(afterMd.content,/sisältää katkaraputahnaa eli äyriäisallergeenin/);
