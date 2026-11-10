@@ -18,7 +18,7 @@ const expected: Record<string,string> = {
 };
 const macros = ["carbs_net_per_serving_g","carbs_total_per_serving_g","protein_per_serving_g","fat_per_serving_g"] as const;
 
-test("exact SHA-pinned FI overlays correct serving copy and noodle type, but never nutrition", () => {
+test("SHA-pinned FI overlays correct four dishes without nutrition changes", () => {
   assert.equal(breakfastFiQualityPaths.length, 4);
   for (const relative of breakfastFiQualityPaths) {
     const raw = readFileSync(path.join(root, relative), "utf8");
@@ -53,13 +53,13 @@ test("exact SHA-pinned FI overlays correct serving copy and noodle type, but nev
     } else if (before.recipe_id === "valimerellinen-ricotta-persikkakulho") {
       assert.deepEqual(before.cooking_method, ["paistaminen"]);
       assert.deepEqual(after.cooking_method, ["kylmävalmistus"]);
-      assert.equal((afterMd.content.match(/^\\d+\\. /gm) ?? []).length, 4);
+      assert.equal((afterMd.content.match(/^\d+\. /gm) ?? []).length, 4);
       assert.match(afterMd.content, /15 g annosta kohti/);
       assert.match(afterMd.content, /Älä lisää öljyä/);
       assert.doesNotMatch(afterMd.content, /kypsennä pavut|Paista tofu/);
     } else if (before.recipe_id === "thai-maissifritterit") {
       assert.deepEqual(after.cooking_method,before.cooking_method);
-      assert.equal((afterMd.content.match(/^\\d+\\. /gm) ?? []).length, 4);
+      assert.equal((afterMd.content.match(/^\d+\. /gm) ?? []).length, 4);
       assert.match(afterMd.content, /150 g jo kypsennettyjä maissinjyviä/);
       assert.match(afterMd.content, /yhteensä luettelon 1 rkl neutraalia paistoöljyä/);
       assert.match(afterMd.content, /lime ja makea chilikastike eivät sisälly/);
