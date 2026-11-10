@@ -44,5 +44,7 @@ Jokaiselle raaka-aineelle ja ravintotekijälle: määrä (g) × ravintosisältö
 - Punnitut painot ovat muunnoksia; munien koko, lusikkamitat ja paistoon mahdollisesti käytetty rasva vaikuttavat. Vuoan leivinpaperointi ei vaadi lisärasvaa. Koristelun muut raaka-aineet eivät kuulu reseptiin.
 - Vaniljasokerin ravintosisältö on Meiran merkintä. Punnitsematon 1 rkl/13 g vaikuttaa arvoon hieman.
 - Arvio sisältää **täytteet, hillon, marjat, maidon ja kuorrutuksen** täytetylle kakulle. Sienikakkupohjan arvo koskee vain pohjaa.
-- **GK:ta ei lasketa numerona.** Merkintä ”todennäköisesti korkea – ei laskettu eikä vahvistettu” on varovainen sanallinen arvio, ei lähdevahvistettu luokitus; annoskoko ja rasvan sekä täytteen vaikutus vaihtelevat. Tätä merkintää ei pidä syöttää numeeriseksi GK-arvoksi.
-- Julkaisuun tarvitaan edelleen oma, annosta vastaava WebP-kuva, käännös- ja laatutarkistus sekä uuden PR HEAD:n CI. Tämä laskentamuistio ei yksin myönnä julkaisulupaa.
+- **GK:ta ei lasketa eikä luokitella.** Näkyvä sanamuoto on ”Hiilihydraattipitoinen – GK ei laskettu”. Sokerin ja jauhon hiilihydraattipitoisuus on dokumentoitu; ilman juuri näihin resepteihin soveltuvaa GI-tietoa annoksen GK:ta ei voi luokitella luotettavasti. Tätä merkintää ei saa syöttää numeeriseksi GK-arvoksi.
+- Katselmointia varten luotiin kaksi omaa 1536 × 1024 WebP-piirroskuvitusta tiedostoihin `kuvat/jalkiruoat/sienikakkupohja.webp` ja `kuvat/jalkiruoat/perinteinen-mansikkataytekakku-sienikakkupohjalla.webp`. Kuvat ovat havainnollistavia piirroksia, eivät todellisia koepaistokuvia.
+- Julkaistava aineisto on tarkoituksella vain suomeksi tässä erässä. EN/SV/TH-käännökset tulevat erilliseen katselmointiin, eikä niitä merkitä julkaistuiksi ennen vertailua.
+- Lopullinen julkaisu vaatii muuttuneen HEAD:n CI:n ja PR:n erillisen merge-päätöksen. Tämä laskentamuistio ei itsessään myönnä julkaisulupaa.
