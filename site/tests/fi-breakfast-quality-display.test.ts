@@ -7,6 +7,7 @@ import { siteContent } from "../src/generated/content.generated";
 import { parseMarkdown } from "../src/content/markdown";
 import { recipeFrontmatterSchema } from "../src/content/schema";
 import { breakfastFiQualityPaths, projectBreakfastFiQualityDisplay } from "../scripts/fi-breakfast-quality-display";
+import { isPublicRecipeQuarantined } from "../scripts/public-recipe-quarantine";
 
 const root = path.resolve(import.meta.dirname, "../..");
 const sha = (raw: string) => createHash("sha256").update(raw.replaceAll("\r\n", "\n")).digest("hex");
@@ -179,6 +180,10 @@ test("generated FI cards use chef-corrected instructions and the reviewed noodle
   }
   for(const id of ["pohjoisafrikkalainen-baghrir","thai-roti-munalla-banaanilla","meksikolainen-chilaquiles-verdes","meksikolainen-paputostada-aamupalaksi","indonesialainen-nasi-goreng-aamiaisriisi","korealainen-kimchi-jeon-aamiaiseksi"]) {
     const rec=recipes.get(id);
+    if (isPublicRecipeQuarantined(id)) {
+      assert.equal(rec, undefined, id + ": sealed source still has overlay but is not a public recipe");
+      continue;
+    }
     assert.ok(rec,"Missing corrected FI recipe: "+id);
     assert.doesNotMatch(rec.instructionsText.join(" "),/Sekoita jauhot tai viljat ja muut kuivat ainekset|Raasta, muussaa tai hienonna pääraaka-aine|Valmistele ainekset: paloittele kasvikset/);
   }
