@@ -17,3 +17,7 @@ Päivä 10.11.2026. Lähtö-main `e1136a3fa94da8923b2d3f8d950c5416c8a3583f`. Lä
 5. Julkaisu erillisellä **main-pohjaisella release-PR:llä** vasta, kun täsmä-HEADin testit ja review-evidenssi ovat kunnossa. Merkitään aina erikseen merge-SHA:n Pages build/deploy.
 
 F25-erässä ei julkaista nyt 75 uutta käännöstä. Laatutavoite on 25 hyväksyttyä lähdettä, ei 25 väkisin täytettyä lähderiviä; jos lähde jää HOLDiin, sitä ei julkaista. Eräkoko koskee työjonoa, ei julkaisulupaa.
+
+## Ensimmäinen Draft-erä
+
+Eri kielillä laadittu **6/75 Draft-tiedostoa kahdesta FI-lähteestä**: maakouda + karibialainen ruokabanaanilautanen. [Kieliversioiden sisältö ja riskit](2026-11-10-f25-two-source-six-language-drafts.md). 4 jatkokatselmointiin / 21 SOURCE-HOLD -tilaa ei muutu. Julkaistu F25:sta edelleen 0.
