@@ -34,12 +34,12 @@ servings: 2
 time_total_min: 25
 difficulty: "ง่าย"
 tags:
-- aamupala
-- valimerellinen
-- puuro
+- "อาหารเช้า"
+- "เมดิเตอร์เรเนียน"
+- "โจ๊ก"
 image:
   src: aamupalat/valimerellinen-tahinipuuro.webp
-  alt: "โจ๊กข้าวโอ๊ตทาฮินีกับส้ม"
+  alt: "ภาพอาหาร โจ๊กข้าวโอ๊ตทาฮินีกับส้ม พร้อมเสิร์ฟ"
   width: 1536
   height: 1024
 carbs_net_per_serving_g: 40.34

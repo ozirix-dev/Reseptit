@@ -39,7 +39,7 @@ tags:
   - "breakfast dish"
 image:
   src: aamupalat/pohjoisafrikkalainen-harcha-juustolla.webp
-  alt: "North African harcha semolina flatbreads with cream cheese"
+  alt: "Photo of North African harcha semolina flatbreads with cream cheese served for breakfast"
   width: 1536
   height: 1024
 carbs_net_per_serving_g: 35.66

@@ -36,10 +36,10 @@ difficulty: "ง่าย"
 tags:
   - "อาหารเช้า"
   - "เกาหลี"
-  - "kananmuna"
+  - "ไข่ไก่"
 image:
   src: aamupalat/korealainen-gyeran-mari-kasviksilla.webp
-  alt: "ไข่ม้วนเกาหลีใส่ผัก (คเยรันมารี)"
+  alt: "ภาพอาหาร ไข่ม้วนเกาหลีใส่ผัก (คเยรันมารี) พร้อมเสิร์ฟ"
   width: 1536
   height: 1024
 carbs_net_per_serving_g: 2.11

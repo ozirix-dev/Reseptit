@@ -37,12 +37,12 @@ servings: 2
 time_total_min: 10
 difficulty: "Lätt"
 tags:
-- aamupala
-- kananmuna
-- munaruoka
+- "frukost"
+- "ägg"
+- "äggrätt"
 image:
   src: aamupalat/munakokkeli.webp
-  alt: "Krämig äggröra – uppvägd version"
+  alt: "Serverad Krämig äggröra – uppvägd version"
   width: 1536
   height: 1024
 source_language: fi

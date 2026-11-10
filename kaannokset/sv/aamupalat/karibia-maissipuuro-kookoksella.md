@@ -34,12 +34,12 @@ servings: 2
 time_total_min: 25
 difficulty: "Lätt"
 tags:
-- aamupala
-- karibia
-- puuro
+- "frukost"
+- "karibisk"
+- "gröt"
 image:
   src: aamupalat/karibia-maissipuuro-kookoksella.webp
-  alt: "Karibisk majsgröt med kokos"
+  alt: "Serverad Karibisk majsgröt med kokos"
   width: 1536
   height: 1024
 carbs_net_per_serving_g: 44.16

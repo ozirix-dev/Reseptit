@@ -37,12 +37,12 @@ servings: 2
 time_total_min: 30
 difficulty: "Easy"
 tags:
-- aamupala
-- kananmuna
-- munaruoka
+- "breakfast"
+- "eggs"
+- "egg dish"
 image:
   src: aamupalat/paprikauunimunakkaat.webp
-  alt: "Baked bell pepper omelets – weighed version"
+  alt: "Photo of Baked bell pepper omelets – weighed version served for breakfast"
   width: 1536
   height: 1024
 source_language: fi

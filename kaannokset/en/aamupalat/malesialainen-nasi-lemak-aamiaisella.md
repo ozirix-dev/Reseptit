@@ -34,12 +34,12 @@ servings: 2
 time_total_min: 30
 difficulty: "Easy"
 tags:
-- aamupala
-- malesialainen
-- aamiaisruoka
+- "breakfast"
+- "Malaysian"
+- "breakfast dish"
 image:
   src: aamupalat/malesialainen-nasi-lemak-aamiaisella.webp
-  alt: "Simplified Malaysian nasi lemak breakfast"
+  alt: "Photo of Simplified Malaysian nasi lemak breakfast served for breakfast"
   width: 1536
   height: 1024
 carbs_net_per_serving_g: 39.78

@@ -5,6 +5,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { parseMarkdown } from "../src/content/markdown";
 import { recipeFrontmatterSchema } from "../src/content/schema";
+import { semanticHash } from "./translation-semantic-review";
 
 type Locale = "en" | "sv" | "th";
 type Row = { recipe_id: string; source_path: string; source_blob_sha: string; release_authorized: boolean };
@@ -121,10 +122,26 @@ export async function auditC20(): Promise<{sources:number; pairs:number; drafts:
     errors.push("C20 count mismatch: " + seen.size + " FI / " + pairs + " pairs");
   return { sources: seen.size, pairs, drafts, errors };
 }
+async function emitCurrentHashRows(): Promise<void> {
+  const ledger = JSON.parse(await readFile(path.join(root, "meta/kaannokset/c20-translation-worklist.json"), "utf8")) as Ledger;
+  for (const entry of ledger.recipeSources) {
+    const source = await readRecipe(entry.source_path);
+    const sourceHash = semanticHash(source);
+    for (const locale of locales) {
+      const target = await readRecipe("kaannokset/" + locale + "/aamupalat/" + entry.recipe_id + ".md");
+      const hash = semanticHash(target);
+      console.log("C20_HASH_ROW=" + JSON.stringify({
+        recipe_id: entry.recipe_id, locale, source_hash: sourceHash, translation_hash: hash,
+      }));
+    }
+  }
+}
+
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
-  auditC20().then(result => {
+  auditC20().then(async result => {
     console.log("C20 preflight:", result.sources, "FI,", result.pairs, "EN/SV/TH,", result.drafts, "drafts");
     for (const error of result.errors) console.error("HOLD:", error);
     if (result.errors.length) process.exitCode = 1;
+    else if (process.env.C20_EMIT_HASHES === "1") await emitCurrentHashRows();
   }).catch(error => { console.error(error); process.exitCode = 1; });
 }

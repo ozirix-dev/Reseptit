@@ -39,7 +39,7 @@ tags:
   - "frukosträtt"
 image:
   src: aamupalat/pohjoisafrikkalainen-harcha-juustolla.webp
-  alt: "Nordafrikanska harcha-grynkakor med färskost"
+  alt: "Serverad Nordafrikanska harcha-grynkakor med färskost"
   width: 1536
   height: 1024
 carbs_net_per_serving_g: 35.66

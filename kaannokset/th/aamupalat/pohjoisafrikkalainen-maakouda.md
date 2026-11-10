@@ -43,7 +43,7 @@ tags:
   - "เมนูอาหารเช้า"
 image:
   src: aamupalat/pohjoisafrikkalainen-maakouda.webp
-  alt: "มาคูดาแอฟริกาเหนือ – ทอดมันมันฝรั่ง"
+  alt: "ภาพอาหาร มาคูดาแอฟริกาเหนือ – ทอดมันมันฝรั่ง พร้อมเสิร์ฟ"
   width: 1536
   height: 1024
 source_language: fi

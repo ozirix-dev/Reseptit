@@ -43,12 +43,12 @@ servings: 2
 time_total_min: 20
 difficulty: "Easy"
 tags:
-- aamupala
-- kananmuna
-- munaruoka
+- "breakfast"
+- "eggs"
+- "egg dish"
 image:
   src: aamupalat/uunimunat-pinaatilla.webp
-  alt: "Baked eggs with spinach – weighed version"
+  alt: "Photo of Baked eggs with spinach – weighed version served for breakfast"
   width: 1536
   height: 1024
 source_language: fi

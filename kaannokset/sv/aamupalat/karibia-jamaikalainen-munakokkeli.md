@@ -36,10 +36,10 @@ difficulty: "Lätt"
 tags:
   - "frukost"
   - "karibisk"
-  - "kananmuna"
+  - "ägg"
 image:
   src: aamupalat/karibia-jamaikalainen-munakokkeli.webp
-  alt: "Jamaicansk äggröra med tomat och timjan"
+  alt: "Serverad Jamaicansk äggröra med tomat och timjan"
   width: 1536
   height: 1024
 carbs_net_per_serving_g: 2.35

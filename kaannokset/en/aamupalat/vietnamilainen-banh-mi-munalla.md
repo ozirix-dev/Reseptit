@@ -39,7 +39,7 @@ tags:
   - "breakfast dish"
 image:
   src: aamupalat/vietnamilainen-banh-mi-munalla.webp
-  alt: "Vietnamese egg bánh mì with fresh vegetables"
+  alt: "Photo of Vietnamese egg bánh mì with fresh vegetables served for breakfast"
   width: 1536
   height: 1024
 carbs_net_per_serving_g: 30.55

@@ -42,7 +42,7 @@ tags:
   - "breakfast dish"
 image:
   src: aamupalat/kiinalainen-kevatsipulipannukakku.webp
-  alt: "Chinese scallion pancakes"
+  alt: "Photo of Chinese scallion pancakes served for breakfast"
   width: 1536
   height: 1024
 carbs_net_per_serving_g: 38.13

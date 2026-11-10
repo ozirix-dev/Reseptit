@@ -34,12 +34,12 @@ servings: 2
 time_total_min: 30
 difficulty: "Lätt"
 tags:
-- aamupala
-- malesialainen
-- aamiaisruoka
+- "frukost"
+- "malaysisk"
+- "frukosträtt"
 image:
   src: aamupalat/malesialainen-nasi-lemak-aamiaisella.webp
-  alt: "Förenklad malaysisk nasi lemak till frukost"
+  alt: "Serverad Förenklad malaysisk nasi lemak till frukost"
   width: 1536
   height: 1024
 carbs_net_per_serving_g: 39.78

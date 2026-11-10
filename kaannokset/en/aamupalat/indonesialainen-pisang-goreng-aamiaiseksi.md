@@ -42,7 +42,7 @@ tags:
   - "breakfast dish"
 image:
   src: aamupalat/indonesialainen-pisang-goreng-aamiaiseksi.webp
-  alt: "Indonesian pisang goreng banana fritters"
+  alt: "Photo of Indonesian pisang goreng banana fritters served for breakfast"
   width: 1536
   height: 1024
 carbs_net_per_serving_g: 63.85

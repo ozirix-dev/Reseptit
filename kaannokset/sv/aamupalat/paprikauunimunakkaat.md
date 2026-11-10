@@ -37,12 +37,12 @@ servings: 2
 time_total_min: 30
 difficulty: "Lätt"
 tags:
-- aamupala
-- kananmuna
-- munaruoka
+- "frukost"
+- "ägg"
+- "äggrätt"
 image:
   src: aamupalat/paprikauunimunakkaat.webp
-  alt: "Ugnsomeletter i paprika – uppvägd version"
+  alt: "Serverad Ugnsomeletter i paprika – uppvägd version"
   width: 1536
   height: 1024
 source_language: fi

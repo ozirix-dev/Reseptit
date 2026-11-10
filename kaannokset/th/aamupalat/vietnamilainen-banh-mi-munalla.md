@@ -39,7 +39,7 @@ tags:
   - "เมนูอาหารเช้า"
 image:
   src: aamupalat/vietnamilainen-banh-mi-munalla.webp
-  alt: "บั๋ญหมี่เวียดนามไส้ไข่กับผักสด"
+  alt: "ภาพอาหาร บั๋ญหมี่เวียดนามไส้ไข่กับผักสด พร้อมเสิร์ฟ"
   width: 1536
   height: 1024
 carbs_net_per_serving_g: 30.55

@@ -38,12 +38,12 @@ fat_per_serving_g: 13.28
 time_total_min: 25
 difficulty: "Lätt"
 tags:
-- aamupala
-- lähi-itä
-- aamiaisruoka
+- "frukost"
+- "mellanöstern"
+- "frukosträtt"
 image:
   src: aamupalat/lahi-ita-kikherne-shakshuka.webp
-  alt: "Shakshuka med kikärter, ägg och persilja"
+  alt: "Serverad Shakshuka med kikärter, ägg och persilja"
   width: 1536
   height: 1024
 source_language: fi

@@ -43,7 +43,7 @@ tags:
   - "frukosträtt"
 image:
   src: aamupalat/pohjoisafrikkalainen-maakouda.webp
-  alt: "Nordafrikanska maakouda-potatisbiffar"
+  alt: "Serverad Nordafrikanska maakouda-potatisbiffar"
   width: 1536
   height: 1024
 source_language: fi

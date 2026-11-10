@@ -38,12 +38,12 @@ fat_per_serving_g: 13.28
 time_total_min: 25
 difficulty: "ง่าย"
 tags:
-- aamupala
-- lähi-itä
-- aamiaisruoka
+- "อาหารเช้า"
+- "ตะวันออกกลาง"
+- "เมนูอาหารเช้า"
 image:
   src: aamupalat/lahi-ita-kikherne-shakshuka.webp
-  alt: "ชักชูกาถั่วลูกไก่ใส่ไข่และพาร์สลีย์"
+  alt: "ภาพอาหาร ชักชูกาถั่วลูกไก่ใส่ไข่และพาร์สลีย์ พร้อมเสิร์ฟ"
   width: 1536
   height: 1024
 source_language: fi

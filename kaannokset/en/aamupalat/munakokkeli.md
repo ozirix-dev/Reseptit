@@ -37,12 +37,12 @@ servings: 2
 time_total_min: 10
 difficulty: "Easy"
 tags:
-- aamupala
-- kananmuna
-- munaruoka
+- "breakfast"
+- "eggs"
+- "egg dish"
 image:
   src: aamupalat/munakokkeli.webp
-  alt: "Creamy scrambled eggs – weighed version"
+  alt: "Photo of Creamy scrambled eggs – weighed version served for breakfast"
   width: 1536
   height: 1024
 source_language: fi

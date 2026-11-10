@@ -34,12 +34,12 @@ servings: 2
 time_total_min: 25
 difficulty: "ง่าย"
 tags:
-- aamupala
-- thaimaalainen
-- aamiaisruoka
+- "อาหารเช้า"
+- "ไทย"
+- "เมนูอาหารเช้า"
 image:
   src: aamupalat/thai-khao-tom-katkaravuilla.webp
-  alt: "ข้าวต้มกุ้งแบบไทย"
+  alt: "ภาพอาหาร ข้าวต้มกุ้งแบบไทย พร้อมเสิร์ฟ"
   width: 1536
   height: 1024
 carbs_net_per_serving_g: 41.2

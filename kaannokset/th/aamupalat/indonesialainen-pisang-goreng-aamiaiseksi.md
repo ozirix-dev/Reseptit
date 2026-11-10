@@ -42,7 +42,7 @@ tags:
   - "เมนูอาหารเช้า"
 image:
   src: aamupalat/indonesialainen-pisang-goreng-aamiaiseksi.webp
-  alt: "กล้วยทอดอินโดนีเซีย (ปีซังกอเร็ง)"
+  alt: "ภาพอาหาร กล้วยทอดอินโดนีเซีย (ปีซังกอเร็ง) พร้อมเสิร์ฟ"
   width: 1536
   height: 1024
 carbs_net_per_serving_g: 63.85

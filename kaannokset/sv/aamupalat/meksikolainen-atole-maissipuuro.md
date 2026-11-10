@@ -34,12 +34,12 @@ servings: 2
 time_total_min: 25
 difficulty: "Lätt"
 tags:
-- aamupala
-- meksikolainen
-- puuro
+- "frukost"
+- "mexikansk"
+- "gröt"
 image:
   src: aamupalat/meksikolainen-atole-maissipuuro.webp
-  alt: "Mexikansk atole-majsgröt"
+  alt: "Serverad Mexikansk atole-majsgröt"
   width: 1536
   height: 1024
 carbs_net_per_serving_g: 47.4

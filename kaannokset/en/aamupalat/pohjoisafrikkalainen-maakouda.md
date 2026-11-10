@@ -43,7 +43,7 @@ tags:
   - "breakfast dish"
 image:
   src: aamupalat/pohjoisafrikkalainen-maakouda.webp
-  alt: "North African maakouda potato patties"
+  alt: "Photo of North African maakouda potato patties served for breakfast"
   width: 1536
   height: 1024
 source_language: fi

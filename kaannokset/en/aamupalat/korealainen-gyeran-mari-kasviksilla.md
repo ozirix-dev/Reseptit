@@ -36,10 +36,10 @@ difficulty: "Easy"
 tags:
   - "breakfast"
   - "Korean"
-  - "kananmuna"
+  - "eggs"
 image:
   src: aamupalat/korealainen-gyeran-mari-kasviksilla.webp
-  alt: "Korean vegetable egg roll (gyeran-mari)"
+  alt: "Photo of Korean vegetable egg roll (gyeran-mari) served for breakfast"
   width: 1536
   height: 1024
 carbs_net_per_serving_g: 2.11

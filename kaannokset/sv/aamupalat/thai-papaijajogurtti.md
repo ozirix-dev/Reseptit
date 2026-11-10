@@ -31,12 +31,12 @@ servings: 2
 time_total_min: 25
 difficulty: "Lätt"
 tags:
-- aamupala
-- thaimaalainen
-- aamiaisruoka
+- "frukost"
+- "thailändsk"
+- "frukosträtt"
 image:
   src: aamupalat/thai-papaijajogurtti.webp
-  alt: "Papayayoghurt med färsk kokos"
+  alt: "Serverad Papayayoghurt med färsk kokos"
   width: 1536
   height: 1024
 carbs_net_per_serving_g: 12.14

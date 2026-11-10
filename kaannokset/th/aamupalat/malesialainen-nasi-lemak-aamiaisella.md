@@ -34,12 +34,12 @@ servings: 2
 time_total_min: 30
 difficulty: "ง่าย"
 tags:
-- aamupala
-- malesialainen
-- aamiaisruoka
+- "อาหารเช้า"
+- "มาเลเซีย"
+- "เมนูอาหารเช้า"
 image:
   src: aamupalat/malesialainen-nasi-lemak-aamiaisella.webp
-  alt: "นาซีเลอมักมื้อเช้าแบบมาเลเซียสูตรเรียบง่าย"
+  alt: "ภาพอาหาร นาซีเลอมักมื้อเช้าแบบมาเลเซียสูตรเรียบง่าย พร้อมเสิร์ฟ"
   width: 1536
   height: 1024
 carbs_net_per_serving_g: 39.78

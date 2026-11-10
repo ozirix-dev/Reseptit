@@ -34,12 +34,12 @@ servings: 2
 time_total_min: 25
 difficulty: "Easy"
 tags:
-- aamupala
-- karibia
-- puuro
+- "breakfast"
+- "Caribbean"
+- "porridge"
 image:
   src: aamupalat/karibia-maissipuuro-kookoksella.webp
-  alt: "Caribbean coconut cornmeal porridge"
+  alt: "Photo of Caribbean coconut cornmeal porridge served for breakfast"
   width: 1536
   height: 1024
 carbs_net_per_serving_g: 44.16

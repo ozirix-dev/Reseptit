@@ -34,12 +34,12 @@ servings: 2
 time_total_min: 25
 difficulty: "Lätt"
 tags:
-- aamupala
-- valimerellinen
-- puuro
+- "frukost"
+- "medelhavsmat"
+- "gröt"
 image:
   src: aamupalat/valimerellinen-tahinipuuro.webp
-  alt: "Havregröt med tahini och apelsin"
+  alt: "Serverad Havregröt med tahini och apelsin"
   width: 1536
   height: 1024
 carbs_net_per_serving_g: 40.34

@@ -34,12 +34,12 @@ servings: 2
 time_total_min: 25
 difficulty: "Easy"
 tags:
-- aamupala
-- meksikolainen
-- puuro
+- "breakfast"
+- "Mexican"
+- "porridge"
 image:
   src: aamupalat/meksikolainen-atole-maissipuuro.webp
-  alt: "Mexican atole-style corn porridge"
+  alt: "Photo of Mexican atole-style corn porridge served for breakfast"
   width: 1536
   height: 1024
 carbs_net_per_serving_g: 47.4

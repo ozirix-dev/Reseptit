@@ -42,7 +42,7 @@ tags:
   - "frukosträtt"
 image:
   src: aamupalat/indonesialainen-pisang-goreng-aamiaiseksi.webp
-  alt: "Indonesiska pisang goreng – friterade bananer"
+  alt: "Serverad Indonesiska pisang goreng – friterade bananer"
   width: 1536
   height: 1024
 carbs_net_per_serving_g: 63.85

@@ -36,10 +36,10 @@ difficulty: "Lätt"
 tags:
   - "frukost"
   - "koreansk"
-  - "kananmuna"
+  - "ägg"
 image:
   src: aamupalat/korealainen-gyeran-mari-kasviksilla.webp
-  alt: "Koreansk äggrulle med grönsaker (gyeran-mari)"
+  alt: "Serverad Koreansk äggrulle med grönsaker (gyeran-mari)"
   width: 1536
   height: 1024
 carbs_net_per_serving_g: 2.11

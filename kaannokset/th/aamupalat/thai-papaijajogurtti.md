@@ -31,12 +31,12 @@ servings: 2
 time_total_min: 25
 difficulty: "ง่าย"
 tags:
-- aamupala
-- thaimaalainen
-- aamiaisruoka
+- "อาหารเช้า"
+- "ไทย"
+- "เมนูอาหารเช้า"
 image:
   src: aamupalat/thai-papaijajogurtti.webp
-  alt: "โยเกิร์ตมะละกอกับเนื้อมะพร้าวสด"
+  alt: "ภาพอาหาร โยเกิร์ตมะละกอกับเนื้อมะพร้าวสด พร้อมเสิร์ฟ"
   width: 1536
   height: 1024
 carbs_net_per_serving_g: 12.14

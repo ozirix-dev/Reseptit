@@ -42,7 +42,7 @@ tags:
   - "frukosträtt"
 image:
   src: aamupalat/kiinalainen-kevatsipulipannukakku.webp
-  alt: "Kinesiska pannkakor med salladslök"
+  alt: "Serverad Kinesiska pannkakor med salladslök"
   width: 1536
   height: 1024
 carbs_net_per_serving_g: 38.13

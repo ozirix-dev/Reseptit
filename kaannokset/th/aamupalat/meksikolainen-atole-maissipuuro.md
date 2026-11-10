@@ -34,12 +34,12 @@ servings: 2
 time_total_min: 25
 difficulty: "ง่าย"
 tags:
-- aamupala
-- meksikolainen
-- puuro
+- "อาหารเช้า"
+- "เม็กซิกัน"
+- "โจ๊ก"
 image:
   src: aamupalat/meksikolainen-atole-maissipuuro.webp
-  alt: "โจ๊กข้าวโพดอาโตเลแบบเม็กซิกัน"
+  alt: "ภาพอาหาร โจ๊กข้าวโพดอาโตเลแบบเม็กซิกัน พร้อมเสิร์ฟ"
   width: 1536
   height: 1024
 carbs_net_per_serving_g: 47.4

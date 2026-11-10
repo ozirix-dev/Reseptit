@@ -36,10 +36,10 @@ difficulty: "Easy"
 tags:
   - "breakfast"
   - "Chinese"
-  - "kananmuna"
+  - "eggs"
 image:
   src: aamupalat/kiinalainen-tomaattimunakas-riisilla.webp
-  alt: "Chinese tomato and egg stir-fry with rice"
+  alt: "Photo of Chinese tomato and egg stir-fry with rice served for breakfast"
   width: 1536
   height: 1024
 carbs_net_per_serving_g: 42.1

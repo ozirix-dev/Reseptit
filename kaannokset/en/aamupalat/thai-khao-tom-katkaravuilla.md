@@ -34,12 +34,12 @@ servings: 2
 time_total_min: 25
 difficulty: "Easy"
 tags:
-- aamupala
-- thaimaalainen
-- aamiaisruoka
+- "breakfast"
+- "Thai"
+- "breakfast dish"
 image:
   src: aamupalat/thai-khao-tom-katkaravuilla.webp
-  alt: "Thai khao tom rice soup with shrimp"
+  alt: "Photo of Thai khao tom rice soup with shrimp served for breakfast"
   width: 1536
   height: 1024
 carbs_net_per_serving_g: 41.2

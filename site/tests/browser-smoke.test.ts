@@ -96,7 +96,8 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
       assert.equal(await results.count(), 24);
       assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true, `${methodPage.locale} at ${width}px`);
 
-      const liverSearch = { fi: "Maksalaatikko", en: "Beef liver", sv: "Levergryta", th: "หม้อตับเนื้อ" }[methodPage.locale];
+      // Search uses localized recipe titles, not the ingredient names from the original FI recipe.
+      const liverSearch = { fi: "Maksalaatikko", en: "liver bake", sv: "Leverlåda", th: "ตับอบ" }[methodPage.locale];
       await search.fill(liverSearch);
       const liver = page.locator("#maksalaatikko-kukkakaalilla");
       assert.equal(await liver.isVisible(), true, `${methodPage.locale}: liver recipe is searchable`);

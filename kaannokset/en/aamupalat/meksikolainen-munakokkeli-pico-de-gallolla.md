@@ -36,10 +36,10 @@ difficulty: "Easy"
 tags:
   - "breakfast"
   - "Mexican"
-  - "kananmuna"
+  - "eggs"
 image:
   src: aamupalat/meksikolainen-munakokkeli-pico-de-gallolla.webp
-  alt: "Scrambled eggs with pico de gallo on corn tortillas"
+  alt: "Photo of Scrambled eggs with pico de gallo on corn tortillas served for breakfast"
   width: 1536
   height: 1024
 carbs_net_per_serving_g: 28.3

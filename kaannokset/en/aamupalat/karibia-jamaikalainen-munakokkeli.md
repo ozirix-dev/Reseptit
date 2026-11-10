@@ -36,10 +36,10 @@ difficulty: "Easy"
 tags:
   - "breakfast"
   - "Caribbean"
-  - "kananmuna"
+  - "eggs"
 image:
   src: aamupalat/karibia-jamaikalainen-munakokkeli.webp
-  alt: "Jamaican-style scrambled eggs with tomato and thyme"
+  alt: "Photo of Jamaican-style scrambled eggs with tomato and thyme served for breakfast"
   width: 1536
   height: 1024
 carbs_net_per_serving_g: 2.35

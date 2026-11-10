@@ -36,10 +36,10 @@ difficulty: "ง่าย"
 tags:
   - "อาหารเช้า"
   - "จีน"
-  - "kananmuna"
+  - "ไข่ไก่"
 image:
   src: aamupalat/kiinalainen-tomaattimunakas-riisilla.webp
-  alt: "ไข่ผัดมะเขือเทศจีนเสิร์ฟกับข้าว"
+  alt: "ภาพอาหาร ไข่ผัดมะเขือเทศจีนเสิร์ฟกับข้าว พร้อมเสิร์ฟ"
   width: 1536
   height: 1024
 carbs_net_per_serving_g: 42.1

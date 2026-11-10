@@ -36,10 +36,10 @@ difficulty: "Lätt"
 tags:
   - "frukost"
   - "kinesisk"
-  - "kananmuna"
+  - "ägg"
 image:
   src: aamupalat/kiinalainen-tomaattimunakas-riisilla.webp
-  alt: "Kinesisk tomat- och äggröra med ris"
+  alt: "Serverad Kinesisk tomat- och äggröra med ris"
   width: 1536
   height: 1024
 carbs_net_per_serving_g: 42.1

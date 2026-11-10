@@ -31,12 +31,12 @@ servings: 2
 time_total_min: 25
 difficulty: "Lätt"
 tags:
-- aamupala
-- indonesialainen
-- aamiaisruoka
+- "frukost"
+- "indonesisk"
+- "frukosträtt"
 image:
   src: aamupalat/indonesialainen-nasi-uduk-aamiaisella.webp
-  alt: "Indonesisk nasi uduk med ägg och gurka"
+  alt: "Serverad Indonesisk nasi uduk med ägg och gurka"
   width: 1536
   height: 1024
 carbs_net_per_serving_g: 39.57

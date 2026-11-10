@@ -34,12 +34,12 @@ servings: 2
 time_total_min: 25
 difficulty: "Lätt"
 tags:
-- aamupala
-- thaimaalainen
-- aamiaisruoka
+- "frukost"
+- "thailändsk"
+- "frukosträtt"
 image:
   src: aamupalat/thai-khao-tom-katkaravuilla.webp
-  alt: "Thailändsk khao tom-rissoppa med räkor"
+  alt: "Serverad Thailändsk khao tom-rissoppa med räkor"
   width: 1536
   height: 1024
 carbs_net_per_serving_g: 41.2

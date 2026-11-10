@@ -31,12 +31,12 @@ servings: 2
 time_total_min: 25
 difficulty: "Easy"
 tags:
-- aamupala
-- thaimaalainen
-- aamiaisruoka
+- "breakfast"
+- "Thai"
+- "breakfast dish"
 image:
   src: aamupalat/thai-papaijajogurtti.webp
-  alt: "Papaya yogurt with fresh coconut"
+  alt: "Photo of Papaya yogurt with fresh coconut served for breakfast"
   width: 1536
   height: 1024
 carbs_net_per_serving_g: 12.14

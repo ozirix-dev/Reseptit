@@ -42,7 +42,7 @@ tags:
   - "เมนูอาหารเช้า"
 image:
   src: aamupalat/kiinalainen-kevatsipulipannukakku.webp
-  alt: "แพนเค้กต้นหอมจีน"
+  alt: "ภาพอาหาร แพนเค้กต้นหอมจีน พร้อมเสิร์ฟ"
   width: 1536
   height: 1024
 carbs_net_per_serving_g: 38.13

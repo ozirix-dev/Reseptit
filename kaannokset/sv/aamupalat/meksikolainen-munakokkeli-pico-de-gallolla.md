@@ -36,10 +36,10 @@ difficulty: "Lätt"
 tags:
   - "frukost"
   - "mexikansk"
-  - "kananmuna"
+  - "ägg"
 image:
   src: aamupalat/meksikolainen-munakokkeli-pico-de-gallolla.webp
-  alt: "Äggröra med pico de gallo på majstortilla"
+  alt: "Serverad Äggröra med pico de gallo på majstortilla"
   width: 1536
   height: 1024
 carbs_net_per_serving_g: 28.3

@@ -39,7 +39,7 @@ tags:
   - "เมนูอาหารเช้า"
 image:
   src: aamupalat/pohjoisafrikkalainen-harcha-juustolla.webp
-  alt: "ฮาร์ชาแป้งเซโมลินาแอฟริกาเหนือเสิร์ฟครีมชีส"
+  alt: "ภาพอาหาร ฮาร์ชาแป้งเซโมลินาแอฟริกาเหนือเสิร์ฟครีมชีส พร้อมเสิร์ฟ"
   width: 1536
   height: 1024
 carbs_net_per_serving_g: 35.66

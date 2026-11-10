@@ -37,12 +37,12 @@ servings: 2
 time_total_min: 10
 difficulty: "ง่าย"
 tags:
-- aamupala
-- kananmuna
-- munaruoka
+- "อาหารเช้า"
+- "ไข่ไก่"
+- "เมนูไข่"
 image:
   src: aamupalat/munakokkeli.webp
-  alt: "ไข่คนเนื้อนุ่ม – สูตรชั่งน้ำหนัก"
+  alt: "ภาพอาหาร ไข่คนเนื้อนุ่ม – สูตรชั่งน้ำหนัก พร้อมเสิร์ฟ"
   width: 1536
   height: 1024
 source_language: fi

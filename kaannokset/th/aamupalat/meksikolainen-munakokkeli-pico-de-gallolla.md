@@ -36,10 +36,10 @@ difficulty: "ง่าย"
 tags:
   - "อาหารเช้า"
   - "เม็กซิกัน"
-  - "kananmuna"
+  - "ไข่ไก่"
 image:
   src: aamupalat/meksikolainen-munakokkeli-pico-de-gallolla.webp
-  alt: "ไข่คนกับพิโกเดกาโยบนแผ่นตอร์ติญาข้าวโพด"
+  alt: "ภาพอาหาร ไข่คนกับพิโกเดกาโยบนแผ่นตอร์ติญาข้าวโพด พร้อมเสิร์ฟ"
   width: 1536
   height: 1024
 carbs_net_per_serving_g: 28.3

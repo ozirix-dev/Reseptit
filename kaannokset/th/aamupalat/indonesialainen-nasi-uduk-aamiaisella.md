@@ -31,12 +31,12 @@ servings: 2
 time_total_min: 25
 difficulty: "ง่าย"
 tags:
-- aamupala
-- indonesialainen
-- aamiaisruoka
+- "อาหารเช้า"
+- "อินโดนีเซีย"
+- "เมนูอาหารเช้า"
 image:
   src: aamupalat/indonesialainen-nasi-uduk-aamiaisella.webp
-  alt: "นาซีอูดุกอินโดนีเซียกับไข่และแตงกวา"
+  alt: "ภาพอาหาร นาซีอูดุกอินโดนีเซียกับไข่และแตงกวา พร้อมเสิร์ฟ"
   width: 1536
   height: 1024
 carbs_net_per_serving_g: 39.57

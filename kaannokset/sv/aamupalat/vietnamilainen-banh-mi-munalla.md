@@ -39,7 +39,7 @@ tags:
   - "frukosträtt"
 image:
   src: aamupalat/vietnamilainen-banh-mi-munalla.webp
-  alt: "Vietnamesisk bánh mì med ägg och färska grönsaker"
+  alt: "Serverad Vietnamesisk bánh mì med ägg och färska grönsaker"
   width: 1536
   height: 1024
 carbs_net_per_serving_g: 30.55

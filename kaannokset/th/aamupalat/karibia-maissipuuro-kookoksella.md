@@ -34,12 +34,12 @@ servings: 2
 time_total_min: 25
 difficulty: "ง่าย"
 tags:
-- aamupala
-- karibia
-- puuro
+- "อาหารเช้า"
+- "แคริบเบียน"
+- "โจ๊ก"
 image:
   src: aamupalat/karibia-maissipuuro-kookoksella.webp
-  alt: "โจ๊กข้าวโพดกะทิแบบแคริบเบียน"
+  alt: "ภาพอาหาร โจ๊กข้าวโพดกะทิแบบแคริบเบียน พร้อมเสิร์ฟ"
   width: 1536
   height: 1024
 carbs_net_per_serving_g: 44.16

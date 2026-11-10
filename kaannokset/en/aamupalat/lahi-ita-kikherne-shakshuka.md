@@ -38,12 +38,12 @@ fat_per_serving_g: 13.28
 time_total_min: 25
 difficulty: "Easy"
 tags:
-- aamupala
-- lähi-itä
-- aamiaisruoka
+- "breakfast"
+- "Middle Eastern"
+- "breakfast dish"
 image:
   src: aamupalat/lahi-ita-kikherne-shakshuka.webp
-  alt: "Chickpea shakshuka with eggs and parsley"
+  alt: "Photo of Chickpea shakshuka with eggs and parsley served for breakfast"
   width: 1536
   height: 1024
 source_language: fi

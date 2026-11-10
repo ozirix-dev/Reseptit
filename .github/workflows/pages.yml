@@ -99,6 +99,8 @@ jobs:
 
       - name: Fail-closed C20 source and translation preflight
         if: steps.select.outputs.run_content == 'true' && contains(steps.select.outputs.changed_paths, 'kaannokset/')
+        env:
+          C20_EMIT_HASHES: '1'
         run: npm run preflight:translations:c20
         working-directory: site
 

@@ -36,10 +36,10 @@ difficulty: "ง่าย"
 tags:
   - "อาหารเช้า"
   - "แคริบเบียน"
-  - "kananmuna"
+  - "ไข่ไก่"
 image:
   src: aamupalat/karibia-jamaikalainen-munakokkeli.webp
-  alt: "ไข่คนสไตล์จาเมกาใส่มะเขือเทศและไทม์"
+  alt: "ภาพอาหาร ไข่คนสไตล์จาเมกาใส่มะเขือเทศและไทม์ พร้อมเสิร์ฟ"
   width: 1536
   height: 1024
 carbs_net_per_serving_g: 2.35

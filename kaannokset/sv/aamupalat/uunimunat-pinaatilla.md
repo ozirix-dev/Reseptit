@@ -43,12 +43,12 @@ servings: 2
 time_total_min: 20
 difficulty: "Lätt"
 tags:
-- aamupala
-- kananmuna
-- munaruoka
+- "frukost"
+- "ägg"
+- "äggrätt"
 image:
   src: aamupalat/uunimunat-pinaatilla.webp
-  alt: "Ugnsägg med spenat – uppvägd version"
+  alt: "Serverad Ugnsägg med spenat – uppvägd version"
   width: 1536
   height: 1024
 source_language: fi

@@ -34,12 +34,12 @@ servings: 2
 time_total_min: 25
 difficulty: "Easy"
 tags:
-- aamupala
-- valimerellinen
-- puuro
+- "breakfast"
+- "Mediterranean"
+- "porridge"
 image:
   src: aamupalat/valimerellinen-tahinipuuro.webp
-  alt: "Oat porridge with tahini and orange"
+  alt: "Photo of Oat porridge with tahini and orange served for breakfast"
   width: 1536
   height: 1024
 carbs_net_per_serving_g: 40.34

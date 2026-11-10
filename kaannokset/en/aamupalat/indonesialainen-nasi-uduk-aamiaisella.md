@@ -31,12 +31,12 @@ servings: 2
 time_total_min: 25
 difficulty: "Easy"
 tags:
-- aamupala
-- indonesialainen
-- aamiaisruoka
+- "breakfast"
+- "Indonesian"
+- "breakfast dish"
 image:
   src: aamupalat/indonesialainen-nasi-uduk-aamiaisella.webp
-  alt: "Indonesian nasi uduk with egg and cucumber"
+  alt: "Photo of Indonesian nasi uduk with egg and cucumber served for breakfast"
   width: 1536
   height: 1024
 carbs_net_per_serving_g: 39.57
