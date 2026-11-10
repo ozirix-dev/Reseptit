@@ -15,18 +15,18 @@ difficulty: keskitaso
 tags: [gluteeniton, leipä, vuokaleipä, siemenet]
 ingredients:
   - {amount: 6, unit: dl, item: vettä, note: kädenlämpöistä}
-  - {amount: 1, unit: rkl, item: gluteenittomaksi merkittyä psylliumkuorijauhetta}
+  - {amount: 1, unit: rkl, item: gluteenittomaksi merkittyä FiberHusk-psylliumkuorijauhetta}
   - {amount: 2, unit: rkl, item: pellavansiemeniä}
   - {amount: 3, unit: rkl, item: auringonkukansiemeniä}
   - {amount: 1.5, unit: tl, item: suolaa}
-  - {amount: 2, unit: dl, item: gluteenittomaksi merkittyjä kaurahiutaleita}
-  - {amount: 1, unit: pss, item: kuivahiivaa, note: tarkista pakkauksen gluteenittomuus ja annostelu}
-  - {amount: 3.5, unit: dl, item: gluteenitonta vaaleaa jauhoseosta}
-  - {amount: 3, unit: dl, item: gluteenitonta tummaa jauhoseosta}
-carbs_net_per_serving_g: null
+  - {amount: 2, unit: dl, item: Myllärin gluteenittomia kaurahiutaleita}
+  - {amount: 1, unit: pss, item: Sunnuntai-kuivahiivaa, note: 1 pussi = 11 g; tarkista pakkauksen ainesosat}
+  - {amount: 3.5, unit: dl, item: Pirkka vaaleaa gluteenitonta jauhoseosta}
+  - {amount: 3, unit: dl, item: Pirkka tummaa gluteenitonta jauhoseosta}
+carbs_net_per_serving_g: 27.45
 carbs_total_per_serving_g: null
-protein_per_serving_g: null
-fat_per_serving_g: null
+protein_per_serving_g: 3.98
+fat_per_serving_g: 3.08
 ---
 
 # Gluteeniton siemen-vuokaleipä
@@ -52,5 +52,5 @@ Kaikki ainesosat ovat rakenteisessa luettelossa. Vuoka vuorataan leivinpaperilla
 
 - Valitse gluteenittomiksi **merkittyjä** jauhoseoksia, kaurahiutaleita, psylliumia ja muita tarpeellisia valmistuotteita. Käytä puhtaita, gluteenittomaan valmistukseen soveltuvia välineitä.
 - Jauhoseoksen sitoma nestemäärä vaihtelee tuotteen mukaan; ohjetta ei ole vielä koeleivottu Recipavon tuotevalinnoilla.
-- Sisältää kauraa ja siemeniä. Ravintoarvot ja GK ovat vielä laskematta; tämä on toimituksellinen luonnos.
+- Sisältää kauraa ja siemeniä. Ravintoarvot ovat **tuotekohtaisiin ravintotietoihin ja arvioituihin tilavuuspainoihin perustuva suuntaa-antava laskelma**, eivät mittaustulos: 27,45 g imeytyvää hiilihydraattia, 3,98 g proteiinia ja 3,08 g rasvaa / viipale (12 viipaletta). Jauhoseosten 1 dl = 60 g on laskennallinen oletus, ei yksilöllisesti punnittu paino. [Laskentamuistio](https://github.com/ozirix-dev/Reseptit/blob/editorial/gf-five-drafts-20261110/docs/nutrition/gluteenittomat-5-tuote-evidenssi-2026-11-11.md). GK:ta ei ole laskettu eikä luokiteltu.
 - Inspiraatio ja tekniikan vertailulähde: [Keliakialiitto – Anna-Kaisan vuokaleipä](https://www.keliakialiitto.fi/ruoka/reseptit/anna-kaisan-vuokaleipa/). Ohjeteksti on Recipavon oma mukaelma.

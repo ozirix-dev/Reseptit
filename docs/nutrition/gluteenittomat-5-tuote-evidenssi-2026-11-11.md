@@ -50,3 +50,38 @@ Laskenta kullekin aineelle: raakapaino × tuotteen ravintoarvo / 100 g. Yhteens�
 **Epävarmuudet:** munien koko, 1 tl leivinjauheen paino, leivinpaperin käyttö ja valitun perunajauho-/sokeripakkauksen erä. Paiston veden haihtuminen muuttaa valmiin palan painoa mutta ei yksin muuta koko taikinan imeytyvien hiilihydraattien massaa. EU-pakkauksesta hiilihydraattia ei vähennetä kuitua uudelleen. `carbs_total_per_serving_g` on edelleen `null` – eri määritelmän mukaista kokonaishiilihydraattia ei ole laskettu. **GK ei laskettu eikä luokiteltu; 21,94 g hiilihydraattia ei itsessään riitä GK-luvuksi.**
 
 **Katselmointipäätös:** makrotietojen *laskentaperusta ehdollisesti hyväksyttävissä*, mutta resepti pysyy `draft` ja gluteenittomuuden tuotekohtainen/pakkaustarkistus sekä kuvan GitHub-siirto estävät edelleen julkaisun. Tätä laskelmaa ei saa siirtää muihin neljään reseptiin.
+
+## Neljän jäljellä olevan reseptin suuntaa-antavat makrolaskelmat — 11.11.2026
+
+**Tila:** LASKETTU TUOTE- JA PAINO-OLETUKSILLA / EI LOPULLINEN JULKAISUHYVÄKSYNTÄ. Fyysistä koeleivontaa, grammojen punnitusta tai yksittäisen ostetun pakkauksen analyysia ei ole tehty. Kaikki viisi reseptiä pysyvät `draft`-tilassa, `gluten_free`-väitettä ei hyväksytä tässä laskennassa.
+
+### Valitut tuotteet ja lähdetiedot (imeytyvä C / proteiini P / rasva R, g / 100 g)
+- **Pirkka vaalea gluteeniton jauhoseos 1 kg, EAN 6410405221858:** C 75 / P 5,3 / R 0,9. Tuote on gluteeniton ja vehnätön, mutta ei vaihdettavissa toiseen tuoteversioon automaattisesti. [K-Ruoka](https://www.k-ruoka.fi/kauppa/tuote/pirkka-vaalea-jauhoseos-1kg-gluteeniton-6410405221858).
+- **Pirkka tumma gluteeniton jauhoseos 1 kg, EAN 6410405221872:** C 70 / P 7 / R 4,3. [K-Ruoka](https://www.k-ruoka.fi/kauppa/tuote/pirkka-tumma-jauhoseos-1kg-gluteeniton-6410405221872).
+- **Myllärin gluteeniton kaurahiutale 500 g:** C 58 / P 14 / R 6,5. [Valmistaja](https://myllarin.fi/tuotteet/myllarin-gluteeniton-kaurahiutale-500-g/).
+- **Myllärin gluteeniton kauralese 450 g, EAN 6415000164739:** C 48 / P 18 / R 7,7. [Valmistaja](https://myllarin.fi/tuotteet/myllarin-gluteeniton-kauralese-450-g/).
+- **Myllärin gluteeniton kaurajauho 950 g, EAN 6415000163565:** C 58 / P 14 / R 6,5. [Valmistaja](https://myllarin.fi/tuotteet/myllarin-gluteeniton-kaurajauho-950-g/).
+- **Schär Pofiber perunakuitu 125 g, EAN 8008698049129:** C 20 / P 5 / R 0,3. [S-kaupat](https://www.s-kaupat.fi/tuote/schar-pofiber-perunakuitujauhe-gluteeniton-125g/8008698049129). **Vastaavan Semper Pofiberin 1 dl ~17 g**; tämä on tuotekohtainen poikkeus eikä muiden perunakuitujen yleinen muunnos. [Tuotetieto](https://www.scandinavianonlinestore.com/fi/food/semper-pofiber-125-grams).
+- **FiberHusk psyllium (gluteeniton):** C 0 / P 1,5 / R 0,6. [K-Ruoka](https://www.k-ruoka.fi/kauppa/tuote/fiber-husk-psylliumsiemenkuori-100g-jauh-7320880010146).
+- **Sunnuntai kuivahiiva, EAN 6416597816049:** pussi 11 g, C 19 / P 44 / R 5,7. [Valmistaja](https://sunnuntai.fi/tuotteet/sunnuntai-kuivahiiva/).
+- **Valio turkkilainen 10 % jogurtti:** C 4,1 / P 3,6 / R 10. [Valmistaja](https://www.valio.fi/tuotteet/valio-turkkilainen-ruokajogurtti-sanko/).
+- **Virtasalmen gluteeniton durrajauhoseos:** C 70,6 / P 7,4 / R 2,6. [Valmistaja](https://www.virtasalmenviljatuote.fi/tuote/gluteeniton-durrajauhoseos-3kg/).
+- **Hungry Chef pizzakastike, EAN 6426000005236:** C 7,8 / P 0,9 / R 2,9; **sisältää selleriä**. [K-Ruoka](https://www.k-ruoka.fi/kauppa/tuote/hungry-chef-pizzakastike-260g-6426000005236).
+- **Lactalis mozzarella:** C 2 / P 17 / R 16. [K-Ruoka](https://www.k-ruoka.fi/kauppa/tuote/mozzarella-125g-3228023050285).
+- **Valio kevytmaito:** C 4,8 / P 3,4 / R 1,5. [Valio](https://www.valio.fi/tuotteet/valio-kevytmaito/).
+- **Keiju juokseva rypsiöljyvalmiste, EAN 6438207019008:** C 0 / P 0 / R 80. [S-kaupat](https://www.s-kaupat.fi/tuote/keiju-juokseva-rypsioljyvalmiste-500-ml/6438207019008).
+- Kasvisten, siemenien, marjojen ja lisämakeutuksen yksittäiset makrot ovat yleisten ravintotietokanta-arvojen pyöristettyjä oletuksia. Nämä ovat pienempi, mutta eivät nollaksi huomaamatta pois jätetty, osa kokonaislaskentaa.
+
+### Raakapainot ja tulokset
+| Resepti | Avainoletukset koko erässä | Annoksia | C / annos | P / annos | R / annos |
+| --- | --- | ---: | ---: | ---: | ---: |
+| `gluteeniton-siemenvuokaleipa` | 3,5 dl Pirkka vaaleaa = **210 g**, 3 dl Pirkka tummaa = **180 g** (molemmat 60 g/dl **yleismuunnoksena**, ei punnittu), 2 dl kauraa 70 g, pellava 20 g, auringonkukka 27 g, psyllium 8 g, kuivahiiva 11 g | 12 | **27,45 g** | **3,98 g** | **3,08 g** |
+| `gluteenittomat-kauralesesampylat` | 2 dl Myllärin kauralese = 100 g, 2,5 dl Schär Pofiber = **42,5 g (17 g/dl)**, 2 dl tumma seos = 120 g arvio, 0,5 dl öljyä = 45 g, siirappi 1 rkl = 21 g, kaurahiutale pintaan 5,25 g, psyllium 4 g, kuivahiiva 11 g | 16 | **10,14 g** | **2,13 g** | **3,69 g** |
+| `gluteeniton-durrapizzapohja` | Jogurtti 3,5 dl = 350 g, durrajauhoseos 3 dl = 195 g (65 g/dl), oliiviöljy taikinaan + paperille 4 rkl = 54 g, hiiva 10 g, leivinjauhe 3 tl = 12 g, kastike 150 g, mozzarella syötävä valutettu osa 200 g, tomaatit 120 g, basilika 10 g | 4 | **44,05 g** | **17,07 g** | **32,83 g** |
+| `gluteeniton-uunipannukakku` | Kevytmaito 800 g, munat 150 g (50 g/kpl), Pirkka tumma 1,5 dl = 90 g (yleismuunnos), Myllärin kaurajauho 2 dl = 120 g (valmistajan 60 g/dl yleisohje), Keiju juokseva 1 dl = 90 g, marjat 200 g, kerma 100 g, tomusokeri 1 rkl ≈8,25 g | 13 | **15,13 g** | **5,63 g** | **11,19 g** |
+
+**Laskukaava:** kullekin aineelle arvioitu syötävä raakapaino g × tuotteen C/P/R per 100 g / 100; kaikkien ainesosien makrot summataan ja jaetaan annoksilla. Annoksen koko ei vastaa mitattua paistopainoa. Suuntaa-antavat arvot tallennettiin metatietoihin, ja epävarmuudet reseptien muistiinpanoihin.
+
+**Epävarmuus:** Pirkka-jauhoseosten 60 g/dl on **yleinen oletus eikä tuotemerkin dokumentoitu tilavuuspaino**, joten punnitut grammapainot voivat muuttaa erityisesti leipien ja pannukakun hiilihydraatteja useilla grammoilla/annos. Eri jauhomerkki voi myös muuttaa taikinan toimivuutta. Schär Pofiber 17 g/dl on varmempi tuotekohtainen muunnos. Pizzassa 4 rkl öljyä oletetaan syödyksi kokonaan, mikä saattaa yliarvioida rasvaa. Marjat ym. tuoreet tuotteet on oletettu yleisillä lähdearvoilla. Ei hyväksyttyä GK-laskelmaa, koska GI-vastaavuuksia ei ole lukittu. Gluteeniton-tuotteen valinta ja pakkaus pitää vielä tarkistaa käyttäjän käyttämästä pakkauksesta; arvio ei todista gluteenittomuutta tai vehnäallergiaturvallisuutta.
+
+**Laatupäätös:** Nämä ovat julkaisemattomien FI-draftien *laskentaperustaa täydentäviä* arvioita. Tuote- ja määrätarkistus, yhden tuotteen vaihtokokeen toteutustekniikka, kuvien versionointi ja gluteeniton-suodattimen PR #417 ovat edelleen lopullisen julkaisuportin osia.
