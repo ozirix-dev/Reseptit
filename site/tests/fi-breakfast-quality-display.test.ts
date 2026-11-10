@@ -11,6 +11,14 @@ import { breakfastFiQualityPaths, projectBreakfastFiQualityDisplay } from "../sc
 const root = path.resolve(import.meta.dirname, "../..");
 const sha = (raw: string) => createHash("sha256").update(raw.replaceAll("\r\n", "\n")).digest("hex");
 const expected: Record<string,string> = {
+  "karibia-mango-limejogurtti": "91fcf9425bb58e499304414a99665cc01ba7c37a1a72115262d31e04b5c93a0f",
+  "japanilainen-hojicha-jogurtti-persimonilla": "cae50573ff18898460b95e9c674d0bc39514c7cbaaaa502d4008171b14261cfe",
+  "lahi-ita-pistaasijogurtti": "f9a1d41f86c92902bbda7c9f224cbc8de48900ec7726625a482f1ecea794a9e1",
+  "vietnamilainen-kahvijogurtti-banaanilla": "73b5dbb717f3833c8354f1fcdfa0fdd86ca78a342d50625881133e44b3aba0e3",
+  "valimerellinen-jogurttikulho-hunajalla": "d3b3fa89bf9fe3a4b04e70d3a0d0f8f4fbd957dec2a57cd786cbe8a0af00e0bb",
+  "kiinalainen-soijamaito-aamiaisella": "e28b598683b1a561384eb300f6bd08d0a7603a8c2b7dc922b19ce569a51067cf",
+  "korealainen-gyeranbap-riisikulho": "e9ee2e939778d57fafd4b9015b88a7b59669638f522ae7253446f531861034e8",
+  "lahi-ita-zaatar-munat": "2abaf61e4abd891bb20d3372d24fb45150566a7ff4b1750dd6db976fda0e4924",
   "kiinalainen-teehaudutetut-munat": "bae898d991ed769ae2853f2860e1ebcd3629e292e0d5ca2901244c0377d640e1",
   "japanilainen-onigiri-lohella": "71de7695fefca8a5fe6d0d84e3343380ca06858b6cbdfdb539ff32296733cdbf",
   "yrttituorejuusto-kinkkurullat": "e5649f6b71fb0131def0f4332f1522e4c96c4e90af5abeed947df8681ec25363",
@@ -20,8 +28,8 @@ const expected: Record<string,string> = {
 };
 const macros = ["carbs_net_per_serving_g","carbs_total_per_serving_g","protein_per_serving_g","fat_per_serving_g"] as const;
 
-test("SHA-pinned FI overlays correct six dishes without nutrition changes", () => {
-  assert.equal(breakfastFiQualityPaths.length, 6);
+test("SHA-pinned FI overlays correct fourteen dishes without nutrition changes", () => {
+  assert.equal(breakfastFiQualityPaths.length, 14);
   for (const relative of breakfastFiQualityPaths) {
     const raw = readFileSync(path.join(root, relative), "utf8");
     const beforeMd = parseMarkdown(raw);
@@ -36,7 +44,12 @@ test("SHA-pinned FI overlays correct six dishes without nutrition changes", () =
     assert.deepEqual(after.ingredients, before.ingredients);
     assert.deepEqual(after.image, before.image);
     for(const k of macros) assert.equal(after[k],before[k]);
-    if (before.recipe_id === "kiinalainen-teehaudutetut-munat") {
+    if (new Set(["karibia-mango-limejogurtti","japanilainen-hojicha-jogurtti-persimonilla","lahi-ita-pistaasijogurtti","vietnamilainen-kahvijogurtti-banaanilla","valimerellinen-jogurttikulho-hunajalla","kiinalainen-soijamaito-aamiaisella","korealainen-gyeranbap-riisikulho","lahi-ita-zaatar-munat"]).has(before.recipe_id)) {
+      assert.equal((afterMd.content.match(/^\d+\. /gm) ?? []).length, 4);
+      assert.doesNotMatch(afterMd.content, /Valmistele kulhon ainekset|Paloittele tuoreet kasvikset ja valmistele yrtit|Kypsennä riisi pakkauksen ohjeen mukaan\\. Paista tofu|kypsennä pavut tai liha tarvittaessa erikseen/);
+      assert.notEqual(afterMd.content, beforeMd.content);
+      assert.match(afterMd.content, /Jaa|jaa|annosta|annoksille|annokseen/);
+    } else if (before.recipe_id === "kiinalainen-teehaudutetut-munat") {
       assert.deepEqual(before.cooking_method, ["paistaminen"]);
       assert.deepEqual(after.cooking_method, ["keittäminen"]);
       assert.equal((afterMd.content.match(/^\d+\. /gm) ?? []).length, 4);
@@ -88,6 +101,13 @@ test("SHA-pinned FI overlays correct six dishes without nutrition changes", () =
 
 test("generated FI cards use chef-corrected instructions and the reviewed noodle facet",()=>{
   const recipes = new Map(siteContent.recipes.filter(r=>r.locale==="fi").map(r=>[r.recipeId,r]));
+  for (const id of ["karibia-mango-limejogurtti","japanilainen-hojicha-jogurtti-persimonilla","lahi-ita-pistaasijogurtti","vietnamilainen-kahvijogurtti-banaanilla","valimerellinen-jogurttikulho-hunajalla","kiinalainen-soijamaito-aamiaisella","korealainen-gyeranbap-riisikulho","lahi-ita-zaatar-munat"]) {
+    const recipe = recipes.get(id);
+    assert.ok(recipe, "FI generated missing: " + id);
+    assert.equal(recipe.servings, 2);
+    const fullText = recipe.instructionsText.join(" ");
+    assert.doesNotMatch(fullText, /Valmistele kulhon ainekset|Paloittele tuoreet kasvikset ja valmistele yrtit|Kypsennä riisi pakkauksen ohjeen mukaan\\. Paista tofu|kypsennä pavut tai liha tarvittaessa erikseen/);
+  }
   const ham = recipes.get("yrttituorejuusto-kinkkurullat");
   assert.ok(ham);
   assert.equal(ham.servings,4);
