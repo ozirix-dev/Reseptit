@@ -56,11 +56,7 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 
 ## Valmistus
 
-1. Käytä 150 g valmiiksi kypsiä mustia papuja; jos pavut ovat kuivattuja, ne pitää käsitellä ja kypsentää erikseen ennen reseptin aloittamista. Pese luettelon yksi tomaatti ja hienonna se. Kuumenna 150 g valmista vihreää salsaa omassa pienessä kattilassaan.
-2. Kuumenna pienessä kattilassa tai pannussa hienonnettua tomaattia ja ripaus luettelon suolaa, kunnes tomaatti pehmenee punaiseksi tomaattikastikkeeksi. Älä lisää erillistä öljyä tai luettelemattomia chilejä kastikkeeseen.
-3. Kuumenna luettelon 1 rkl neutraalia paistoöljyä pannulla. Paista 2 kananmunaa niin, että valkuaiset hyytyvät kunnolla. Jaa munat kahdelle lautaselle.
-4. Lämmitä 150 g valmiiksi kypsiä mustia papuja ja jaa ne lautasille. Lusikoi toiselle munalle punaista tomaattikastiketta ja toiselle vihreää salsaa; käytä kummassakin annoksessa puolet kummastakin kastikkeesta. Lisää vain luettelon suolaa tarvittaessa.
-
-## Muistiinpanot
-
-Aineslistassa on yksi tomaatti punaisen kastikkeen valmistamiseen ja 150 g valmis vihreää salsaa. Mukaan ei kuulu tortilloita, sipulia tai muita luettelemattomia lisukkeita. Mustien papujen raaka/kypsä-painon laskentaperusta on vahvistettava ennen uusien ravintolukujen julkaisemista.
+1. Valmistele ainekset: paloittele kasvikset ja kypsennä pavut tai liha tarvittaessa erikseen. Kuumenna öljy pannulla.
+2. Lisää pannulle pisimpään kypsyvät ainekset ja kypsennä pehmeiksi. Lisää mausteet ja tilkka vettä, jos pannu uhkaa kuivua.
+3. Lisää lopuksi nopeasti kypsyvät ainekset, kuten muna tai lehtivihannekset. Kypsennä juuri valmiiksi ja maista suola.
+4. Tarjoa kaksi paistettua munaa, toinen punaisella ja toinen vihreällä salsalla.

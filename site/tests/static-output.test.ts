@@ -12,6 +12,7 @@ import { copyrightSourceUrl, copyrightUi } from "../src/features/recipes/recipe-
 import { toolUi } from "../src/features/recipes/recipe-tools";
 import { siteContent } from "../src/generated/content.generated";
 import { glycemicLoadPilotReviewedRecipeCount, glycemicLoadPilotResults } from "../src/generated/glycemic-load-pilot.generated";
+import { isPublicRecipeQuarantined, publicRecipeQuarantineIds } from "../scripts/public-recipe-quarantine";
 
 const dist = path.resolve(import.meta.dirname, "../dist");
 
@@ -122,18 +123,24 @@ test("GK values link to centralized recipe details on every published translatio
   const reviewedRecipeIds = new Set(audit.results.map((result) => result.recipeId));
   assert.equal(reviewedRecipeIds.size, audit.results.length, "reviewed recipes stay unique");
   assert.equal(glycemicLoadPilotReviewedRecipeCount, reviewedRecipeIds.size);
-  assert.ok([...reviewedRecipeIds].every((id) => sourceRecipeIds.has(id)), "every reviewed source is published");
-  assert.deepEqual([...sourceRecipeIds].filter((id) => !reviewedRecipeIds.has(id)), [], "every published source recipe has one GK row");
-  assert.deepEqual([...reviewedRecipeIds].filter((id) => !sourceRecipeIds.has(id)), [], "GK rows cannot outlive their published source");
+  assert.deepEqual([...reviewedRecipeIds].filter(id => !sourceRecipeIds.has(id)).sort(),
+    [...publicRecipeQuarantineIds].sort(), "only explicit quarantines lack public routes");
+  assert.deepEqual([...sourceRecipeIds].filter(id => !reviewedRecipeIds.has(id)), [],
+    "every visible FI recipe retains a historical GK review row");
+  assert.ok(glycemicLoadPilotResults.every(row => sourceRecipeIds.has(row.recipeId)),
+    "no quarantined recipe can leak through the public GL data");
   const lasagneAuditRows = audit.results.filter((result) => result.recipeId === "munakoiso-kesakurpitsalasagne");
   assert.equal(lasagneAuditRows.length, 1);
   assert.equal(lasagneAuditRows[0]?.status, "INSUFFICIENT SOURCE DATA");
   assert.equal(lasagneAuditRows[0]?.glycemicLoadPerServing, null);
   assert.equal(lasagneAuditRows[0]?.ingredients.length, 15);
   assert.ok(lasagneAuditRows[0]?.ingredients.every((ingredient) => ingredient.availableCarbohydratePerServingG === null && ingredient.gi === null && ingredient.fineliRecordId === null && ingredient.giRecordId === null));
-  assert.equal(glycemicLoadPilotResults.length, audit.results.length);
-  assert.equal(glycemicLoadPilotResults.filter((result) => result.status === "CALCULATED").length, audit.results.filter((result) => result.status === "CALCULATED").length);
-  assert.equal(glycemicLoadPilotResults.filter((result) => result.status === "INSUFFICIENT SOURCE DATA").length, audit.results.filter((result) => result.status === "INSUFFICIENT SOURCE DATA").length);
+  assert.equal(glycemicLoadPilotResults.length, sourceRecipeIds.size);
+  const visibleReviewed = audit.results.filter(result => !isPublicRecipeQuarantined(result.recipeId));
+  assert.equal(glycemicLoadPilotResults.filter(result => result.status === "CALCULATED").length,
+    visibleReviewed.filter(result => result.status === "CALCULATED").length);
+  assert.equal(glycemicLoadPilotResults.filter(result => result.status === "INSUFFICIENT SOURCE DATA").length,
+    visibleReviewed.filter(result => result.status === "INSUFFICIENT SOURCE DATA").length);
   for (const [id, expected] of [
     ["indonesialainen-ketoprak-aamiaiskulho", 26.67],
     ["japanilainen-onigiri-lohella", 26.47],
@@ -148,6 +155,11 @@ test("GK values link to centralized recipe details on every published translatio
   const op146Ids=new Set(JSON.parse(await readFile(path.resolve(import.meta.dirname,'../../docs/nutrition/gk80-operation146/integration.json'),'utf8')).recipes.map((e:any)=>e.recipeId));
   for (const id of bakeryReview.withdrawnRecipeIds) {
     const result = glycemicLoadPilotResults.find(entry => entry.recipeId === id);
+    if (isPublicRecipeQuarantined(id)) {
+      assert.equal(result, undefined, `${id}: quarantined source must have no public GL row`);
+      assert.ok(audit.results.some(entry => entry.recipeId === id), `${id}: the historical GK audit must remain`);
+      continue;
+    }
     if(op146Ids.has(id)){assert.equal(result?.status,'CALCULATED',`${id}: fresh source-bound operation146 replacement`);continue;}
     assert.equal(result?.status, "INSUFFICIENT SOURCE DATA", `${id}: bakery source withdrawal is public`);
     assert.equal(result?.glycemicLoadPerServing, null);
@@ -549,10 +561,12 @@ test('approved GK-only versions appear on each locale and home-recipe coverage i
  }
  const releases=loadAuthorizedGk100Variants(path.resolve(import.meta.dirname,'../..'));
  for(const release of releases){
-  assert.ok(gkOnlyVariants.some(variant=>variant.versionId===release.versionId),release.versionId);
+  assert.equal(gkOnlyVariants.some(variant=>variant.versionId===release.versionId),
+     !isPublicRecipeQuarantined(release.recipeId),
+     release.versionId + ": approval survives internally but cannot leak into public GK");
  }
  for(const p of ['glykeeminen-kuorma','en/glycemic-load','sv/glykemisk-belastning','th/glycemic-load']){
-  const html=await readFile(path.join(dist,p,'index.html'),'utf8');assert.ok(html.replaceAll('<!-- -->','').includes(`data-gk-coverage="version-aware"><li><strong>${gkVersionCoverage.numericRecipes}</strong> / ${gkVersionCoverage.total}`));assert.ok(html.includes(`<strong>${gkVersionCoverage.missing}</strong>`));assert.ok(html.includes('data-gk-coverage="version-aware"'));assert.ok(html.includes('data-gk-coverage="original"'));assert.ok(html.includes('<strong>156</strong>'));assert.ok(html.includes(`<strong>${gkVersionCoverage.total - gkVersionCoverage.originalNumeric}</strong>`));
+  const html=await readFile(path.join(dist,p,'index.html'),'utf8');assert.ok(html.replaceAll('<!-- -->','').includes(`data-gk-coverage="version-aware"><li><strong>${gkVersionCoverage.numericRecipes}</strong> / ${gkVersionCoverage.total}`));assert.ok(html.includes(`<strong>${gkVersionCoverage.missing}</strong>`));assert.ok(html.includes('data-gk-coverage="version-aware"'));assert.ok(html.includes('data-gk-coverage="original"'));assert.ok(html.includes(`<strong>${gkVersionCoverage.originalNumeric}</strong>`));assert.ok(html.includes(`<strong>${gkVersionCoverage.total - gkVersionCoverage.originalNumeric}</strong>`));
   for(const v of gkOnlyVariants)assert.ok(html.includes(`data-gk-version="${v.versionId}"`));
  }
 });

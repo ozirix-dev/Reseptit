@@ -61,11 +61,7 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 
 ## Valmistus
 
-1. Irrota ja punnitse 100 g maissinjyviä. Kuori ja raasta luettelon yksi porkkana hienoksi sekä hienonna 2 rkl kevätsipulia. Tarkista, ettei porkkanaraasteeseen jää isoja kovia paloja.
-2. Sekoita 100 g vehnäjauhoa, maissinjyvät, porkkanaraaste, kevätsipuli ja luettelon suolaa kulhossa. Lisää vettä ruokalusikallinen kerrallaan vain sen verran, että saat paksun lusikoitavan taikinan. Vesi on kypsennysapua, ei uusi energiaravintoaine; pysyvää taikinavettä ei ole punnittu tämän ravintomallin osaksi.
-3. Kuumenna pannulla yhteensä ainesluettelon 1 rkl neutraalia paistoöljyä. Lusikoi taikinasta pieniä litteitä frittereitä, jotta sisäosa ehtii kypsyä. Paista keskilämmöllä erissä käyttäen samaa punnittua öljymäärää.
-4. Käännä fritterit varovasti ja jatka paistamista molemmin puolin kullanruskeiksi, kunnes keskellä ei ole raakaa jauhoista taikinaa. Jaa koko taikina ja paistettu määrä kahdelle annokselle. Älä lisää luetteloimattomia kastikkeita.
-
-## Muistiinpanot
-
-Valmistusohjeen rakenne korjattu: frittereitä ei tehdä yleisestä pihvitaikinapohjasta. Veden lopullista määrää, yhden porkkanan syötävää grammapainoa tai riippumatonta laskentaa ei ole tässä todennettu. Reseptin ilmoitetut neljä makroarvoa säilyvät historiallisina eivätkä tämä tekstikorjaus yksin tee niistä varmennettuja.
+1. Raasta, muussaa tai hienonna pääraaka-aine. Sekoita joukkoon taikinan ainekset ja lisää vettä vain sen verran, että seos pysyy koossa.
+2. Kuumenna pannulla ohut kerros öljyä. Muotoile pieniksi pihveiksi tai lusikoi taikina pannulle.
+3. Paista keskilämmöllä molemmin puolin kypsäksi ja rapeapintaiseksi. Paista erissä, jotta pannu ei jäähdy.
+4. Sekoita vihannekset ohueen maustettuun taikinaan ja paista pieniksi rapeiksi frittereiksi.
