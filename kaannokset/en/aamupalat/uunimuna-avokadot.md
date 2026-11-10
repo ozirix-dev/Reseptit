@@ -5,6 +5,7 @@ url_slug: uunimuna-avokadot
 category: aamupala
 language: en
 status: draft
+diet_class: keto
 main_ingredient:
   - "avocado"
   - "eggs"

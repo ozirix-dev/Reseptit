@@ -1,0 +1,197 @@
+{
+  "schemaVersion": 1,
+  "batch": "F25-20261110",
+  "mainComparisonRevision": "11dfe877564255f4b8671101cc10f25b91f17772",
+  "screenedAt": "2026-11-10",
+  "assessmentType": "AI textual FI public-display vs EN/SV/TH draft comparison; unapproved",
+  "release_authorized": false,
+  "independentHumanReview": false,
+  "semanticHashEvidenceProvided": false,
+  "entries": [
+    {
+      "recipe_id": "uunimuna-avokadot",
+      "source_path": "reseptit/aamupalat/uunimuna-avokadot.md",
+      "fi_source_blob_sha": "0fa5b6be8f44f853f217bbf9169b7173b2612079",
+      "nutrition_input_blob_sha": "7997eb8c118a818207d30f4aff00a2e38536b7fa",
+      "outcome": "preliminary-meaning-pass",
+      "detail": "Keto-luokitus korjattu kaikille kielille. Vahvista 200 g kuorettoman munan kokonaan kypsennys (lisävuoka) ja 200 g avokadon syötävä massa ennen julkaisua.",
+      "pairs": [
+        {
+          "locale": "en",
+          "translation_path": "kaannokset/en/aamupalat/uunimuna-avokadot.md",
+          "translation_git_blob_sha": "e46f1a7e1695611f27bae74fea386e1c76eed8d6",
+          "translated_source_language": "fi",
+          "status": "draft",
+          "semantic_review_status": "ai-preliminary-only",
+          "release_authorized": false
+        },
+        {
+          "locale": "sv",
+          "translation_path": "kaannokset/sv/aamupalat/uunimuna-avokadot.md",
+          "translation_git_blob_sha": "4f18516e18cf1debdf13787d155f9170ffeb04b8",
+          "translated_source_language": "fi",
+          "status": "draft",
+          "semantic_review_status": "ai-preliminary-only",
+          "release_authorized": false
+        },
+        {
+          "locale": "th",
+          "translation_path": "kaannokset/th/aamupalat/uunimuna-avokadot.md",
+          "translation_git_blob_sha": "45126f00dd0654fcb8a374293fe4fc61537bb411",
+          "translated_source_language": "fi",
+          "status": "draft",
+          "semantic_review_status": "ai-preliminary-only",
+          "release_authorized": false
+        }
+      ]
+    },
+    {
+      "recipe_id": "karibia-mango-limejogurtti",
+      "source_path": "reseptit/aamupalat/karibia-mango-limejogurtti.md",
+      "fi_source_blob_sha": "a0d8cdb2ae4aaa9733903b643941d984a788c260",
+      "nutrition_input_blob_sha": "2ce66bed84c58ccfcac90d555d90eacdb6be6fe8",
+      "outcome": "preliminary-meaning-pass",
+      "detail": "Mango 200 g, jogurtti 100 g (laskennassa 3,9 %), limemehu 15 g, kookos 20 g; kuiva paahto valinnainen, ei rasvaa. Tuote ja paahdon vaikutus vahvistettava.",
+      "pairs": [
+        {
+          "locale": "en",
+          "translation_path": "kaannokset/en/aamupalat/karibia-mango-limejogurtti.md",
+          "translation_git_blob_sha": "ad6a2ed3f059e0d9de9a7f099f45a51e7e3f31a9",
+          "translated_source_language": "fi",
+          "status": "draft",
+          "semantic_review_status": "ai-preliminary-only",
+          "release_authorized": false
+        },
+        {
+          "locale": "sv",
+          "translation_path": "kaannokset/sv/aamupalat/karibia-mango-limejogurtti.md",
+          "translation_git_blob_sha": "bb784392d973bc29a17bfe051cf74b2535b164a9",
+          "translated_source_language": "fi",
+          "status": "draft",
+          "semantic_review_status": "ai-preliminary-only",
+          "release_authorized": false
+        },
+        {
+          "locale": "th",
+          "translation_path": "kaannokset/th/aamupalat/karibia-mango-limejogurtti.md",
+          "translation_git_blob_sha": "706241debc69dad091e54365f38c210e298bd6a7",
+          "translated_source_language": "fi",
+          "status": "draft",
+          "semantic_review_status": "ai-preliminary-only",
+          "release_authorized": false
+        }
+      ]
+    },
+    {
+      "recipe_id": "lahi-ita-pistaasijogurtti",
+      "source_path": "reseptit/aamupalat/lahi-ita-pistaasijogurtti.md",
+      "fi_source_blob_sha": "8d417c3c8972507895dbd91c325bcd480695e11a",
+      "nutrition_input_blob_sha": "5b47c11c5d784fab7f71ef9f7fa958d32aa1e023",
+      "outcome": "conditional-source-qa",
+      "detail": "Ruusuvettä 5 ml ruokalaatuista; laskentasyötteessä jätetty pois yläraja-arviolla. Varmista ettei kyseessä ole sokeroitu ruususiirappi ja että poikkeusraja perusteltu.",
+      "pairs": [
+        {
+          "locale": "en",
+          "translation_path": "kaannokset/en/aamupalat/lahi-ita-pistaasijogurtti.md",
+          "translation_git_blob_sha": "d9841b810cac280b34239f536189e38a7abaf324",
+          "translated_source_language": "fi",
+          "status": "draft",
+          "semantic_review_status": "source-review-required",
+          "release_authorized": false
+        },
+        {
+          "locale": "sv",
+          "translation_path": "kaannokset/sv/aamupalat/lahi-ita-pistaasijogurtti.md",
+          "translation_git_blob_sha": "76e94304d6a5924ef18c93c42912e9bf5b3cb083",
+          "translated_source_language": "fi",
+          "status": "draft",
+          "semantic_review_status": "source-review-required",
+          "release_authorized": false
+        },
+        {
+          "locale": "th",
+          "translation_path": "kaannokset/th/aamupalat/lahi-ita-pistaasijogurtti.md",
+          "translation_git_blob_sha": "e430c15a3d1f8386ba6355122662d59f3fe2b38f",
+          "translated_source_language": "fi",
+          "status": "draft",
+          "semantic_review_status": "source-review-required",
+          "release_authorized": false
+        }
+      ]
+    },
+    {
+      "recipe_id": "valimerellinen-jogurttikulho-hunajalla",
+      "source_path": "reseptit/aamupalat/valimerellinen-jogurttikulho-hunajalla.md",
+      "fi_source_blob_sha": "283840ebf2620cf7e4ad684e7470b99ecf19fa21",
+      "nutrition_input_blob_sha": "dc0af64be6f9e74e0f135eefbf78baef0c7adcb2",
+      "outcome": "preliminary-meaning-pass",
+      "detail": "Hunaja 1 rkl = laskentasyötteessä 20 g, kreikkalainen jogurtti 7 %, saksanpähkinät 30 g ja viikuna 50 g; tarkista tuotteiden ja lusikkamuunnoksen vastaavuus.",
+      "pairs": [
+        {
+          "locale": "en",
+          "translation_path": "kaannokset/en/aamupalat/valimerellinen-jogurttikulho-hunajalla.md",
+          "translation_git_blob_sha": "e3b8477dea96b1b20b5fc9dd0806affdee322e0c",
+          "translated_source_language": "fi",
+          "status": "draft",
+          "semantic_review_status": "ai-preliminary-only",
+          "release_authorized": false
+        },
+        {
+          "locale": "sv",
+          "translation_path": "kaannokset/sv/aamupalat/valimerellinen-jogurttikulho-hunajalla.md",
+          "translation_git_blob_sha": "25361264b73d9c53ec95a6a9c5340e09b0de56d2",
+          "translated_source_language": "fi",
+          "status": "draft",
+          "semantic_review_status": "ai-preliminary-only",
+          "release_authorized": false
+        },
+        {
+          "locale": "th",
+          "translation_path": "kaannokset/th/aamupalat/valimerellinen-jogurttikulho-hunajalla.md",
+          "translation_git_blob_sha": "b7d7f8bfbe0c3aa93d290a82de547883597bbcde",
+          "translated_source_language": "fi",
+          "status": "draft",
+          "semantic_review_status": "ai-preliminary-only",
+          "release_authorized": false
+        }
+      ]
+    },
+    {
+      "recipe_id": "korealainen-gyeranbap-riisikulho",
+      "source_path": "reseptit/aamupalat/korealainen-gyeranbap-riisikulho.md",
+      "fi_source_blob_sha": "9955dbbce84566bb1967f86ab19c75eb3c3379af",
+      "nutrition_input_blob_sha": "f9cf32ee078aaef71410a0183b30b73d7b09c678",
+      "outcome": "conditional-source-qa",
+      "detail": "100 g riisiä kuivana; kananmunat paistetaan ilman öljyä, nori 5 g ja soijakastike 1 rkl. Vahvista kuivan tarttumattoman pannun toteutettavuus ja munien yksikköpaino.",
+      "pairs": [
+        {
+          "locale": "en",
+          "translation_path": "kaannokset/en/aamupalat/korealainen-gyeranbap-riisikulho.md",
+          "translation_git_blob_sha": "a20570074dd95fff31fd6f3137b8cb3d8cd0c34d",
+          "translated_source_language": "fi",
+          "status": "draft",
+          "semantic_review_status": "source-review-required",
+          "release_authorized": false
+        },
+        {
+          "locale": "sv",
+          "translation_path": "kaannokset/sv/aamupalat/korealainen-gyeranbap-riisikulho.md",
+          "translation_git_blob_sha": "a5e0270ce13072b5d1798e0427555ce5627299d5",
+          "translated_source_language": "fi",
+          "status": "draft",
+          "semantic_review_status": "source-review-required",
+          "release_authorized": false
+        },
+        {
+          "locale": "th",
+          "translation_path": "kaannokset/th/aamupalat/korealainen-gyeranbap-riisikulho.md",
+          "translation_git_blob_sha": "b59be1891535b731051b64b75973640404ef26c4",
+          "translated_source_language": "fi",
+          "status": "draft",
+          "semantic_review_status": "source-review-required",
+          "release_authorized": false
+        }
+      ]
+    }
+  ]
+}

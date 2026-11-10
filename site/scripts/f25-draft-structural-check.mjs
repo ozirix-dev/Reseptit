@@ -41,6 +41,7 @@ export function checkF25(root=repo) {
    count++;ingredients+=b.ingredients?.length??0;steps+=draft.steps;
    if(b.status!=="draft"||b.recipe_id!==record.recipe_id||b.language!==locale||b.source_language!=="fi"||b.source_recipe!==record.source_path||b.translation_of!==record.recipe_id)errors.push(record.recipe_id+"/"+locale+": draft provenance/status mismatch");
    if(b.category!==a.category||b.servings!==a.servings||b.time_total_min!==a.time_total_min)errors.push(record.recipe_id+"/"+locale+": category/servings/time mismatch");
+   if((b.diet_class??null)!==(a.diet_class??null))errors.push(record.recipe_id+"/"+locale+": diet_class mismatch");
    if(JSON.stringify(b.image?.src)!==JSON.stringify(a.image?.src)||b.image?.width!==a.image?.width||b.image?.height!==a.image?.height)errors.push(record.recipe_id+"/"+locale+": image mismatch");
    if(!Array.isArray(b.ingredients)||b.ingredients.length!==a.ingredients.length){errors.push(record.recipe_id+"/"+locale+": ingredient row count");continue;}
    for(let j=0;j<a.ingredients.length;j++) {
