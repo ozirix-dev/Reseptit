@@ -1,20 +1,16 @@
-name: Pages server-side deployment diagnosis (read-only)
+name: Pages deployment diagnosis and guarded one-shot cleanup
 
 on:
   pull_request:
     paths:
       - ".github/workflows/pages-diagnostic.yml"
-  push:
-    branches: [main]
-    paths:
-      - ".github/workflows/pages-diagnostic.yml"
   workflow_dispatch:
 
-# This is intentionally a read-only Pages API probe.
-# It never invokes actions/deploy-pages and never uploads an artifact.
+# One supported cancel of an already failed, empty-status Pages deployment.
+# No deploy-pages invocation, artifact upload, source change or retry.
 permissions:
   contents: read
-  pages: read
+  pages: write
   deployments: read
 
 jobs:
@@ -71,4 +67,53 @@ jobs:
               request environment_status "deployments/${deployment_id}/statuses?per_page=3"
             done < recent_ids.txt
           fi
-          echo "PROBE DONE: no deployment has been created, retried, or cancelled."
+          echo "PROBE DONE: read-only inspection complete."
+
+      - name: One guarded cancel request only for failed empty-status Pages deployment
+        if: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository }}
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          TARGET_SHA: a90df8fa7698a74c29b8afe67dc842af300d9ef2
+        run: |
+          set -euo pipefail
+          get() {
+            curl -sS -L --max-time 20 --retry 0 \
+              -H "Authorization: Bearer ${GH_TOKEN}" \
+              -H "Accept: application/vnd.github+json" \
+              -H "X-GitHub-Api-Version: 2022-11-28" \
+              "https://api.github.com/repos/${REPO}/${1}"
+          }
+          get "pages/deployments/${TARGET_SHA}" > current.json
+          get "deployments?environment=github-pages&per_page=2" > environment.json
+          last_sha="$(jq -r '.[0].sha // ""' environment.json)"
+          last_id="$(jq -r '.[0].id // ""' environment.json)"
+          if [[ ! "${last_id}" =~ ^[0-9]+$ ]]; then
+            echo "STOP: no valid GitHub deployment ID"; exit 1
+          fi
+          get "deployments/${last_id}/statuses?per_page=1" > statuses.json
+          page_state="$(jq -r '.status // ""' current.json)"
+          environment_state="$(jq -r '.[0].state // ""' statuses.json)"
+          echo "GUARD Pages status: ${page_state:-<empty>}"
+          echo "GUARD last environment SHA: ${last_sha}"
+          echo "GUARD last environment status: ${environment_state}"
+          if [[ "${last_sha}" != "${TARGET_SHA}" || "${page_state}" != "" || "${environment_state}" != "failure" ]]; then
+            echo "SAFE STOP: state changed; no cancellation requested"
+            exit 0
+          fi
+          http="$(curl -sS -L --max-time 20 --retry 0 -X POST \
+            -o cancellation.json -w '%{http_code}' \
+            -H "Authorization: Bearer ${GH_TOKEN}" \
+            -H "Accept: application/vnd.github+json" \
+            -H "X-GitHub-Api-Version: 2022-11-28" \
+            "https://api.github.com/repos/${REPO}/pages/deployments/${TARGET_SHA}/cancel")"
+          echo "PAGES_CANCEL_REQUEST: HTTP ${http}"
+          if [[ "${http}" != "204" ]]; then
+            jq -c '{message,status,documentation_url}' cancellation.json 2>/dev/null || true
+            echo "Pages cancel was not accepted; do not retry automatically"
+            exit 0
+          fi
+          get "pages/deployments/${TARGET_SHA}" > after.json
+          jq -c '{status,description,message}' after.json
+          echo "DONE: exactly one cancel request; NO PAGES DEPLOYMENT WAS STARTED."
