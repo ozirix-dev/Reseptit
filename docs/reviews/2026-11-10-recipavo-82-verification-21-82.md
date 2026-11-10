@@ -88,3 +88,24 @@
 5. **Tätä päätöstä ei voi käyttää koko reseptikannan hyväksyntänä:** 82 on automaattitarkistimen otos 335 julkaistusta FI-reseptistä. Varmat vakavat virheet korjataan tai jätetään pois Recipavon käyttäjäavauksesta. Käännökset, merkittävästi muuttuvat ainesmäärät ja ravinto/GK-lähteet katselmoidaan erikseen.
 6. **Snapshot-ehto:** jos uusi `main`-SHA tai näyttöprojektori muuttuu, tarkista vaikutus ennen lopullista `RESOLVED`-merkintää. Nämä päätökset koskevat yksinomaan yllä lukittua `main`-versiota.
 
+
+
+## V3 – Uuden main-SHA:n vaikutus näyttöversioon (10.11.2026)
+
+**Vertailu:** `6a59fb7a58e3b5659a8546aecddea42eea2493a0` → `7498c6741cb19a21dfb419f1cbc7b1bf00423054`. Yksi lisäcommit muutti vain `site/scripts/fi-breakfast-quality-display.ts`, sen regressiotestiä sekä [F25-näyttökorjausraporttia](2026-11-10-f25-final-thirteen-fi-overlays.md). **Yksikään 82 kanonisesta FI-reseptitiedostosta ei muuttunut tässä siirtymässä.** Tämän vuoksi aiemmat lähdehavainnot ovat edelleen totta, mutta julkinen esitys on korjattu seuraavissa viidessä tapauksessa:
+
+| # | Resepti | Aiempi raakatekstin luokka | Uusin esitystason luokka |
+|---:|---|---|---|
+| 39 | `meksikolainen-chilaquiles-verdes` | `BLOCK_OTHER_ISSUE` | `PUBLIC_DISPLAY_FIXED`: tortillan rapeaksi paisto, salsa, muna ja queso fresco kirjoitettu ruokalajikohtaisesti |
+| 41 | `meksikolainen-paputostada-aamupalaksi` | `BLOCK_OTHER_ISSUE` | `PUBLIC_DISPLAY_FIXED`: kypsäksi ilmoitetut pavut, rapea tortilla ja muna punnituilla aineilla |
+| 43 | `thai-kananmunat-kookoscurryssa` | `BLOCK_OTHER_ISSUE` | `PUBLIC_DISPLAY_FIXED`: riisi, keitetyt munat ja kookoscurry yksilöity |
+| 48 | `vietnamilainen-banh-xeo-aamiaisletut` | `BLOCK_HANDLING` | `PUBLIC_DISPLAY_FIXED`: katkarapujen kypsennys ja taikina kuvattu; listaamaton kurkuma poistettu |
+| 68 | `vietnamilainen-banh-cuon-sienilla` | `BLOCK_HANDLING` | `PUBLIC_DISPLAY_FIXED`: porsaan jauheliha kypsennetään ennen täyttämistä; ylimääräinen öljy poistettu |
+
+**Osittain korjattu mutta edelleen BLOCK:** #3 `indonesialainen-nasi-goreng-aamiaisriisi` sai saman SHA-lukitun julkisen ohjeoikaisun, joka poistaa väärän pihvitaikinan ja valkosipulin. **150 g kecap manis** / 100 g riisiä säilyy kuitenkin epäuskottavana määränä ilman ravinto- ja reseptilähteen hyväksyntää. Se pysyy `BLOCK_MATERIAL_WITH_DISPLAY_FIX`-jonossa.
+
+**Kokonaiskoonnin uusin tulkinta** (82 auditin reseptiä): **38 edelleen muuta selvitystä tai lähdekorjausta vaativaa tapausta**, **8 julkisessa näyttöprojektorissa korjattua, mutta raakatiedostovelkaista**, **11 alkuperäisestä hälytyksestä korjattua**, **20 vahvistettua väärää hälytystä** ja **5 toimituksellista**. Nämä korvaavat V2:n luokkalaskelman uuden esitys-commitin osalta. Alkuperäisiä raakatekstin ongelmia on yhä 43 (38 + 5 julkisesti jo korjattua), mutta **43 ei ole julkisen sivuston todistettu esteluku**.
+
+**Lisävaraus:** [F25-muutosraportin](2026-11-10-f25-final-thirteen-fi-overlays.md) mukaan kaikki kyseisen käännöserän lähteet ovat edelleen SOURCE-HOLD-tilassa, eikä tämä esitysoikaisu todista riippumatonta ravinto-, GI/GK- tai kielihyväksyntää. Turvallisuusongelmien lopullinen poistuminen edellyttää myös rakenteen, kypsennysrajojen ja julkaistun tuotantoversion todentamista. Tämä PR ei muuta reseptejä.
+
+**Uusin main-HEAD nähty raporttia päivitettäessä:** `7498c6741cb19a21dfb419f1cbc7b1bf00423054`. Mikäli main muuttuu jälleen, rajataan uusi vertailu vain muuttuneisiin resepti- ja näyttökooditiedostoihin.
