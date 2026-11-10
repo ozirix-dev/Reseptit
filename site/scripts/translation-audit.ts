@@ -10,7 +10,6 @@ import { projectReviewedFiEditorialSource } from "./gk80-editorial-display";
 import { projectA8FiEditorialSource } from "./a8-editorial-display";
 import { projectC20FiDisplay, c20FiDisplayPaths } from "./c20-fi-editorial-display";
 import { breakfastFiQualityPaths, projectBreakfastFiQualityDisplay } from "./fi-breakfast-quality-display";
-import { material21FiPaths, projectMaterial21FiDisplay } from "./material21-fi-public-display";
 
 const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 export const sourceCategories = ["alkuruoat", "paaruoat", "jalkiruoat", "leivonnaiset", "aamupalat", "valipalat"] as const;
@@ -183,25 +182,7 @@ export async function auditTranslations(recipeIds?: string[]): Promise<Translati
     }
     return { path: source.path, data: displayed, content: projected.content };
   }));
-  // FI translation proof must use exactly the same chef-corrected public text.
-  // Original nutritional source and its existing GI/GK binding remain unmodified.
-  const materials = await Promise.all(publicSources.map(async (source) => {
-    if (!material21FiPaths.includes(source.path)) return source;
-    const raw = await readFile(path.join(repoRoot, source.path), "utf8");
-    const projected = parseMarkdown(projectMaterial21FiDisplay(source.path, raw));
-    if (!projected) throw new Error("MATERIAL21_FI_NO_FRONTMATTER: " + source.path);
-    const reviewed = recipeFrontmatterSchema.parse(projected.data);
-    const before = source.data;
-    const locked = ["carbs_net_per_serving_g", "carbs_total_per_serving_g", "protein_per_serving_g", "fat_per_serving_g"] as const;
-    if (reviewed.recipe_id !== before.recipe_id || reviewed.language !== "fi" ||
-        reviewed.status !== before.status || reviewed.servings !== before.servings ||
-        JSON.stringify(reviewed.ingredients) !== JSON.stringify(before.ingredients) ||
-        locked.some(key => reviewed[key] !== before[key])) {
-      throw new Error("MATERIAL21_FI_NUTRITION_SOURCE_DRIFT: " + source.path);
-    }
-    return { path: source.path, data: reviewed, content: projected.content };
-  }));
-  const sources = overlayTranslationPublicationIndex(materials, await loadTranslationPublicationIndex(repoRoot), filter);
+  const sources = overlayTranslationPublicationIndex(publicSources, await loadTranslationPublicationIndex(repoRoot), filter);
   const translations = (await Promise.all(locales.map((locale) => markdownFiles(path.join(repoRoot, "kaannokset", locale))))).flat();
   const publishedTranslations = await readRecipes(translations, filter);
   // Compare the coconut-rice preparation metadata to its SHA-pinned public FI
