@@ -9,6 +9,7 @@ import { originalForReviewedChefSafety } from "./chef-safety-historical-transiti
 import { historicalRendangForApprovedVersion } from "../scripts/gk100-rendang-sealed-source";
 import { historicalFarinataForApprovedPanVersion } from "../scripts/gk100-farinata-sealed-source";
 import { parseMarkdown } from "../src/content/markdown";
+import { projectBreakfastFiQualityDisplay } from "../scripts/fi-breakfast-quality-display";
 import { recipeFrontmatterSchema } from "../src/content/schema";
 import { semanticHash, semanticStatus } from "../scripts/translation-semantic-review";
 import { textHash } from "../scripts/gk149-model";
@@ -77,7 +78,10 @@ function approvedNewTranslation(root: string, file: string, parsed: NonNullable<
     (row) => row.recipe_id === target.recipe_id && row.locales.includes(locale)
   );
   if (index.schemaVersion !== 1 || !declared) return false;
-  const original = parseMarkdown(readFileSync(path.join(root, sourcePath), "utf8"));
+  const originalRaw = readFileSync(path.join(root, sourcePath), "utf8");
+  // Exact-SHA projection is the same visible FI source used by translation-audit.
+  // An unrelated or modified source fails at the projection's version gate.
+  const original = parseMarkdown(projectBreakfastFiQualityDisplay(sourcePath, originalRaw));
   if (!original) return false;
   const fi = recipeFrontmatterSchema.parse(original.data);
   if (fi.recipe_id !== target.recipe_id || fi.status !== "published" || fi.language !== "fi") return false;
