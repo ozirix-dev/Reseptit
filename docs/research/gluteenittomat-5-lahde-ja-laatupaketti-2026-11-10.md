@@ -21,6 +21,8 @@ Lähtötarkistus: Keliakialiiton reseptien määrät ja kriittiset valmistusvaih
 Lähdekokoelma: https://www.keliakialiitto.fi/ruoka/reseptit/
 Gluteenittomuuden kriteerit: https://www.ruokavirasto.fi/elintarvikkeet/elintarvikeala/ainesosat-ja-sisalto/gluteenittomat-ja-erittain-vahagluteeniset-elintarvikkeet/
 
+Tuotetietojen jatkokatselmointi: [gluteenittomien viiden tuote-evidenssi](../nutrition/gluteenittomat-5-tuote-evidenssi-2026-11-11.md). Erityisesti huomioitu gluteenittoman vehnätärkkelyksen ja vehnäallergian ero sekä tavallisen kauran kontaminaatioriski.
+
 Toteutus liittyy lähde-issueen #418. Reseptit eivät ole koeleivottuja; niitä ei saa markkinoida itsenäisesti testatuiksi.
 
 ## Generoidun kuvapaketin tarkisteet (chatissa, ei vielä GitHubissa)

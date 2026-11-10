@@ -17,7 +17,7 @@ ingredients:
   - {amount: 4, unit: kpl, item: kananmunaa}
   - {amount: 1.5, unit: dl, item: sokeria}
   - {amount: 1.5, unit: dl, item: gluteenittomaksi merkittyä perunajauhoa}
-  - {amount: 1, unit: tl, item: gluteenittomaksi merkittyä leivinjauhetta}
+  - {amount: 1, unit: tl, item: gluteenittomaksi merkittyä Meira-leivinjauhetta, note: tarkista pakkauksen EAN 6414200210055}
 carbs_net_per_serving_g: null
 carbs_total_per_serving_g: null
 protein_per_serving_g: null
@@ -46,7 +46,7 @@ Kaikki taikinaan käytettävät ainekset ovat rakenteisissa metatiedoissa. Vuoan
 ## Muistiinpanot
 
 - Tämä pohja ei sisällä kiehuvaa vettä, eikä sitä pidä kutsua vehnäiseksi sienikakuksi.
-- Gluteenittomiksi merkityt perunajauhot ja leivinjauhe sekä puhtaat valmistusvälineet ovat turvallisuusehto. Sisältää kananmunaa.
+- Gluteenittomiksi merkityt perunajauhot ja leivinjauhe sekä puhtaat valmistusvälineet ovat turvallisuusehto. Meira-leivinjauheen 50 g pakkauksen valmistusaineina on nostatusaineita ja maissitärkkelystä; gluteenittomuus ja erätiedot tarkistetaan aina käytetystä pakkauksesta. Sisältää kananmunaa.
 - Täytteet ja kuorrutteet eivät sisälly pohjan ainesosiin tai ravintoarvoihin. Niille tarvitaan oma kokonaisresepti.
 - Ravintoarvot ja GK ovat toistaiseksi laskematta.
 - Valmistusperiaatteen vertailulähde: [Keliakialiitto – gluteeniton täytekakku- tai kääretorttupohja](https://www.keliakialiitto.fi/ruoka/reseptit/taytekakku-tai-kaaretorttupohja/). Tässä versiossa käytetään leivinpaperilla vuorattua vuokaa.

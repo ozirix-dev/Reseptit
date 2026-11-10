@@ -19,7 +19,7 @@ ingredients:
   - {amount: 2, unit: tl, item: gluteenittomaksi merkittyä psylliumkuorijauhetta}
   - {amount: 1, unit: rkl, item: siirappia}
   - {amount: 1, unit: tl, item: suolaa}
-  - {amount: 2, unit: dl, item: gluteenittomaksi merkittyä kauralesettä}
+  - {amount: 2, unit: dl, item: Myllärin gluteenitonta kauralesettä}
   - {amount: 2.5, unit: dl, item: gluteenittomaksi merkittyä perunakuitua, note: ei perunajauhoa}
   - {amount: 2, unit: dl, item: gluteenitonta tummaa jauhoseosta}
   - {amount: 0.5, unit: dl, item: rypsiöljyä}
@@ -51,7 +51,7 @@ Ainekset ja niiden määrät on kirjattu reseptin rakenteisiin tietoihin. Peruna
 
 ## Muistiinpanot
 
-- Valitse erikseen gluteenittomiksi merkityt jauhoseokset, kauralese, perunakuitu ja psyllium. Vältä jauhopölyn ja työvälineiden kautta tapahtuvaa ristikontaminaatiota.
+- Käytä Myllärin gluteenitonta kauralesettä 450 g (EAN 6415000164739) tai muuta nimenomaisesti gluteenittomaksi hyväksyttyä kauralesettä. Tavallinen kauralese ei kelpaa automaattisesti, sillä se voi sisältää jäämiä vehnästä, ohrasta tai rukiista. Valitse lisäksi gluteenittomiksi merkityt jauhoseokset, perunakuitu ja psyllium. Vältä jauhopölyn ja työvälineiden kautta tapahtuvaa ristikontaminaatiota.
 - Itse tehdyt gluteenittomat sämpylät kuivuvat helposti; jäähtyneet sämpylät voi pakastaa.
 - Ravintoarvot ja GK eivät ole vielä laskettuja; tuotekohtainen katselmointi puuttuu. Pintaan lisätty kaurahiutalemäärä on Recipavon oma kuvavastaavuutta ja rakennetta tukeva muutos, ja se tulee ottaa ravintoarvoihin mukaan.
 - Inspiraatio ja valmistusvertailu: [Keliakialiitto – gluteenittomat kauralesesämpylät](https://www.keliakialiitto.fi/ruoka/reseptit/gluteenittomat-kauralesesampylat/).
