@@ -14,7 +14,7 @@ time_total_min: 85
 difficulty: helppo
 tags: [gluteeniton, pannukakku, jälkiruoka, kaura]
 ingredients:
-  - {amount: 8, unit: dl, item: Valio kevytmaitoa, note: 1,5 % rasvaa}
+  - {amount: 8, unit: dl, item: Valio kevytmaitoa, note: "1,5 % rasvaa"}
   - {amount: 3, unit: kpl, item: kananmunaa}
   - {amount: 0.667, unit: tl, item: suolaa}
   - {amount: 1.5, unit: dl, item: Pirkka tummaa gluteenitonta jauhoseosta}
