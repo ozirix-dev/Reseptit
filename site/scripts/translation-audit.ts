@@ -7,6 +7,7 @@ import type { z } from "zod";
 import { semanticTermErrors, semanticProseErrors, semanticNoteErrors, semanticTagErrors } from "./semantic-terms";
 import { loadTranslationPublicationIndex, overlayTranslationPublicationIndex } from "./translation-publication-index";
 import { projectReviewedFiEditorialSource } from "./gk80-editorial-display";
+import { projectA8FiEditorialSource } from "./a8-editorial-display";
 
 const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 export const sourceCategories = ["alkuruoat", "paaruoat", "jalkiruoat", "leivonnaiset", "aamupalat", "valipalat"] as const;
@@ -170,13 +171,51 @@ export async function auditTranslations(recipeIds?: string[]): Promise<Translati
     }
     reviewedMethods.set(source.data.recipe_id, publicData.cooking_method ?? []);
   }
-  return auditRecipePairs(sources, publishedTranslations, reviewedMethods);
+  // A8 contains two *known and version-locked* historical FI metadata faults.
+  // Validate the original source before comparing translations to the public FI
+  // projection. Never overwrite a canonical source hash or nutrition evidence.
+  const reviewedTimes = new Map<string, number>();
+  for (const source of sources) {
+    const isJerk = source.path === "reseptit/paaruoat/jerk-kana.md";
+    const isShoyu = source.path === "reseptit/paaruoat/shoyu-kanakeitto-konjac.md";
+    if (!isJerk && !isShoyu) continue;
+    const originalRaw = await readFile(path.join(repoRoot, source.path), "utf8");
+    const projected = parseMarkdown(projectA8FiEditorialSource(source.path, originalRaw));
+    if (!projected) throw new Error("A8_AUDIT_NO_PUBLIC_FI_FRONTMATTER: " + source.path);
+    const publicData = recipeFrontmatterSchema.parse(projected.data);
+    if (publicData.recipe_id !== source.data.recipe_id ||
+        publicData.language !== "fi" ||
+        publicData.servings !== source.data.servings ||
+        publicData.ingredients.length !== source.data.ingredients.length ||
+        publicData.ingredients.some((item, index) => item.amount !== source.data.ingredients[index].amount ||
+          item.unit !== source.data.ingredients[index].unit) ||
+        (["carbs_net_per_serving_g","carbs_total_per_serving_g","protein_per_serving_g","fat_per_serving_g"] as const)
+          .some((field) => publicData[field] !== source.data[field])) {
+      throw new Error("A8_AUDIT_PUBLIC_FI_NUTRITION_DRIFT: " + source.path);
+    }
+    if (isJerk) {
+      if (source.data.time_total_min !== 90 || publicData.time_total_min !== 130 ||
+          JSON.stringify(publicData.cooking_method) !== JSON.stringify(source.data.cooking_method)) {
+        throw new Error("A8_AUDIT_JERK_TIME_NOT_REVIEWED");
+      }
+      reviewedTimes.set(source.data.recipe_id, 130);
+    } else {
+      if (JSON.stringify(source.data.cooking_method) !== JSON.stringify(["paistaminen"]) ||
+          JSON.stringify(publicData.cooking_method) !== JSON.stringify(["keittäminen"]) ||
+          publicData.time_total_min !== source.data.time_total_min) {
+        throw new Error("A8_AUDIT_SHOYU_METHOD_NOT_REVIEWED");
+      }
+      reviewedMethods.set(source.data.recipe_id, publicData.cooking_method ?? []);
+    }
+  }
+  return auditRecipePairs(sources, publishedTranslations, reviewedMethods, reviewedTimes);
 }
 
 export function auditRecipePairs(
   allSources: TranslationAuditResult["publishedSources"],
   allTranslations: TranslationAuditResult["publishedTranslations"],
   reviewedMethods: ReadonlyMap<string, readonly string[]> = new Map(),
+  reviewedTimes: ReadonlyMap<string, number> = new Map(),
 ): TranslationAuditResult {
   const sources = allSources.filter((r) => r.data.status === "published");
   const publishedTranslations = allTranslations.filter((r) => r.data.status === "published");
@@ -231,7 +270,7 @@ export function auditRecipePairs(
         if (sourceUnit === null || translatedUnit === null) issues.push(`ingredient ${index + 1} unit not recognized (${original.unit || "∅"} → ${translated.unit || "∅"})`);
         else if (sourceUnit !== translatedUnit) issues.push(`ingredient ${index + 1} unit=${translated.unit || "∅"}, expected equivalent of ${original.unit || "∅"}`);
       }
-      const sourceTime = source.data.time_total_min ?? null;
+      const sourceTime = reviewedTimes.get(source.data.recipe_id) ?? source.data.time_total_min ?? null;
       const targetTime = target.time_total_min ?? null;
       if (sourceTime !== targetTime) issues.push(`time_total_min=${targetTime}, expected ${sourceTime}`);
       for (const key of ["carbs_net_per_serving_g", "carbs_total_per_serving_g", "protein_per_serving_g", "fat_per_serving_g"] as const) {
