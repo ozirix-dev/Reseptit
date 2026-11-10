@@ -189,3 +189,10 @@ Tämä PR omistaa **vain tämän dokumentin**. Ei kosketa reseptien Markdownia, 
 3. Yhdistä vain toisen chatin valmiit reseptikorjaukset, katselmoi käännösten merkitysvastaavuudet ja aja tarvittavat valitut CI-testit. Ei uusia korjaus-PR:iä tästä raportista automaattisesti.
 4. Lopullinen `PUBLIC_READY`-koonti muodostetaan vasta ajantasaisen main-SHA:n julkaistun esityksen ja korjausten jälkeen.
 
+
+
+## Uusin esitystason tilanne – main 7498c674
+
+[82 tapauksen **V3-esitysversiovertailu**](2026-11-10-recipavo-82-verification-21-82.md#v3--uuden-main-shan-vaikutus-näyttöversioon-10112026): viisi uuden näyttöprojektorin julkisen valmistusohjeen korjausta (#39, #41, #43, #48, #68), lisäksi #3:n valmistus korjattu mutta 150 g kecap manis -aineisto edelleen HOLD.
+
+**Uusin koonti 82/82:** 38 jäljellä olevaa muuta selvitystä tai lähdekorjausta vaativaa tapausta; 8 erillisessä julkisessa näyttöprojektorissa korjattua raakatekstin ongelmaa; 11 alkuperäistä havaintoa korjattu; 20 väärää hälytystä; 5 toimituksellista. Yhteensä 82. V2:n 43 `BLOCK` oli alkuperäisen main-snapshotin lähdetason luokka; V3 ei poista sitä tosiseikkaa, että viidessä niistä kanoninen raaka-Markdown on yhä virheellinen. **V3 ei ole 38 todistetun live-julkaisublokkerin määrä.**
