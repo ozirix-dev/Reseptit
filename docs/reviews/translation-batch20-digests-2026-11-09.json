@@ -1,0 +1,87 @@
+{
+  "version": "batch20-sha-snapshot-v1",
+  "checked_at": "2026-11-10",
+  "source_base_commit": "ade461048ea138cd4f6a34340e8a53df79532bd7",
+  "translation_commit": "2941978238f141282baa602d168e86bfd479a401",
+  "checked_on_ci_run": null,
+  "reviewer": "ChatGPT AI source/translation comparison; not a human or independent native-speaker review",
+  "human_attestation": false,
+  "checked_scope": "24 Draft EN/SV/TH versions re-aligned with SHA-pinned A8 FI public editorial projection (PR #361); 8 source semantic hashes still from unchanged canonical FI; ingredient quantities, servings and macros unchanged. Exact semantic digests recalculated; not publication permission or human review.",
+  "limitation": "All eight FI public display corrections are still in Draft PR #361. Pages issue #376 blocks a new production merge. All 24 locales remain status:draft; no independent human review or GK80 canonical migration.",
+  "recipes": {
+    "falafel": {
+      "fi": "28b11be3af2c74ff40d1a30dd5819f49b6d52e482373965447e6fd7a86ef9daf",
+      "en": "f73be74ee67a97bc8c4c19ae22d3cd00965399b41466684a412b4333d232a52b",
+      "sv": "7dc46e84c3ffbf689ae431bb2697e7498d185cd5d43a4c2832201d553a1ff8a3",
+      "th": "2f11d18e797d1bfe7e83ee2fbca229cbbdeff55c03a861db8263f806ff044a98",
+      "review_state": "ai-compared-draft",
+      "comparison_note": "Pita bread and salad are prescribed at serving but absent from ingredient amounts/nutrition scope. | 10.11.2026 A8 public FI overlay translation alignment; source remains canonical GK/GK80 version, release pending.",
+      "publish_authorized": false
+    },
+    "jerk-kana": {
+      "fi": "ba57a87d82ae75cd8b7c39160d2567928eb6062dde4b5c0182fe6034081b3ed6",
+      "en": "2eaf15539c6680a22a8dbe41448fc2e77c7eb227df98ed6545c2a753aabd36ba",
+      "sv": "6e777cf8f768065f36952be1dcba7a96e0b34522a78c71030ae7fb26ae34c407",
+      "th": "173abdab731d7b86704f29dca836c7e9b37cf450df35d734654668c5d664a7af",
+      "review_state": "ai-compared-draft",
+      "comparison_note": "FI total time 90 min contradicts at least 60 min marinade plus 45–55 min roasting. | 10.11.2026 A8 public FI overlay translation alignment; source remains canonical GK/GK80 version, release pending.",
+      "publish_authorized": false
+    },
+    "kimchi-jjigae": {
+      "fi": "cca09981701e7d2f640750df0551491f116fdcc285d0979cdd0948286aea0670",
+      "en": "3d46c06adea3b94e81b214f1a559bf898efd6caccf0b0a6de9f92a12be253559",
+      "sv": "27f290e07e4cf9977dba887e14e45c95ef7892f29231dd8f9f10aac627c83ae3",
+      "th": "6b6a51dd50a62c3abfd74d417c258dc4e284e5a3ecdea5a63557e1afc9830b99",
+      "review_state": "ai-compared-draft",
+      "comparison_note": "Rice is served in FI prose but absent from ingredients and nutrition boundaries. | 10.11.2026 A8 public FI overlay translation alignment; source remains canonical GK/GK80 version, release pending.",
+      "publish_authorized": false
+    },
+    "lanttulaatikko-kermainen": {
+      "fi": "6284d12cff1fe83f6e134d7d49301d2f959215d2d6680cd871850618705a068f",
+      "en": "3898af6ed375e1267b91ac2a46c463ef4993bcea067e5f0444a3d643c223f3cb",
+      "sv": "eed95171f0e6b44a6b983a529c5259d60877a91cf5c8e5ccc5f2a891a0b3f728",
+      "th": "6eee49a4188422fe1fcdb007d6f9c9fa79944dbb0998cf82e74d193befd1db72",
+      "review_state": "ai-compared-draft",
+      "comparison_note": "FI 55 g egg line 'kananmunaa kuoretta' does not establish shell-free edible mass. | 10.11.2026 A8 public FI overlay translation alignment; source remains canonical GK/GK80 version, release pending.",
+      "publish_authorized": false
+    },
+    "lindstrominpihvit-kaalilla": {
+      "fi": "f0c219c24b0147f8419dd96d16d82aa8f7a1871d32c4b0004e9795be8fd35736",
+      "en": "a5c43a879b7cdb02e9789b8c1aaa7bec746056e8833c12ca3405cae04dcf091f",
+      "sv": "1074dac92c5649c074f785ee10e391460a32f592771533b7a9a28f5d331a8848",
+      "th": "91bd666c4b99f899f7f1574c5cbb5986a2bbacb00bd383afa5c2649c4f4f76ed",
+      "review_state": "ai-compared-draft",
+      "comparison_note": "Single 2 tbsp butter allowance is used by two pans without a declared split. | 10.11.2026 A8 public FI overlay translation alignment; source remains canonical GK/GK80 version, release pending.",
+      "publish_authorized": false
+    },
+    "maksalaatikko-kukkakaalilla": {
+      "fi": "ef27c9322f2f2b05564f7b19c4f969bee89fa479b47b2091caa27c25c758a20a",
+      "en": "469865ada753428b56cf22e8d2a5ec0292018513b70c2dd926a0e6c820274d74",
+      "sv": "5556204281d291fc403dfc0cebf5083fad926c8d6038d089a41167e6da992401",
+      "th": "bd9ae58f5a5809e1504dadf761daebdca22877042367f5ef26a830e6384ce66a",
+      "review_state": "ai-compared-draft",
+      "comparison_note": "Single 2 tbsp butter allowance includes frying and dish greasing without a declared split. | 10.11.2026 A8 public FI overlay translation alignment; source remains canonical GK/GK80 version, release pending.",
+      "publish_authorized": false
+    },
+    "shoyu-kanakeitto-konjac": {
+      "fi": "63c43851d439bfabf6940a66b360da2c1b89ba0f59326f3a03df65c36accc290",
+      "en": "3e1821c493bd4c0ef3e3dc42423128e8bf450542d668cc4b727f9b736cce0a06",
+      "sv": "99a5077869cbb5b536df7697a8de39b059ae33be8e3bb9cceead78ca81de2203",
+      "th": "d954d70853aa14e8d4a5016c73ca4cd0fe242f245d04cbdf2dae7e44982bf53e",
+      "review_state": "ai-compared-draft",
+      "comparison_note": "FI cooking_method says frying though instructions boil chicken in broth; quality-PR #358 notified. | 10.11.2026 A8 public FI overlay translation alignment; source remains canonical GK/GK80 version, release pending.",
+      "publish_authorized": false
+    },
+    "vhh-brita-kakku": {
+      "fi": "f806f35cff641a8041938835acec0af3258ebbb0c3f07d2406834e30670067d7",
+      "en": "3449a8ef09c9753503bf839810f178d13ea3fd6c4479dda727b3e42d3f7de2bf",
+      "sv": "ecd7a81d644e00ca15a70e8edb5b3d2846f25b45f050fc6469cc649cc7ec8805",
+      "th": "668be705258ccc372018aedb2f7815c8a776fa8c257e04be3210b255ab06c610",
+      "review_state": "ai-compared-draft",
+      "comparison_note": "FI instruction does not explicitly combine almond flour/baking powder with butter/yolk mixture before spreading. | 10.11.2026 A8 public FI overlay translation alignment; source remains canonical GK/GK80 version, release pending.",
+      "publish_authorized": false
+    }
+  },
+  "recheck_parent_main": "a90df8fa7698a74c29b8afe67dc842af300d9ef2",
+  "recheck_a8_overlay_pr": 361
+}
