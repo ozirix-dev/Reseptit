@@ -13,6 +13,11 @@ servings: 16
 time_total_min: 85
 difficulty: keskitaso
 tags: [gluteeniton, sämpylät, kaura, psyllium]
+image:
+  src: leivonnaiset/gluteenittomat-kauralesesampylat.webp
+  alt: "Piirros viidestä kauraleseellä ja kaurahiutaleilla koristellusta sämpylästä"
+  width: 1500
+  height: 1000
 ingredients:
   - {amount: 5, unit: dl, item: vettä, note: noin 42-asteista kuivahiivalle}
   - {amount: 1, unit: pss, item: Sunnuntai-kuivahiivaa, note: 1 pussi = 11 g}
