@@ -33,3 +33,20 @@ Normitausta: [Ruokavirasto – gluteeniton enintään 20 mg/kg](https://www.ruok
 ## Työjonon päätös
 
 Jatka ensin kolmeen helpoimpaan (kakkupohja, pannukakku, pizza) lukitsemalla puuttuvat jauhot, hiiva, jogurtti, maito ja täytteiden tuotemerkit. Vuokaleipä ja kauralesesämpylät tarvitsevat erityisesti jauho- ja kuitutuotteen sitovuustarkistusta. **Tämä on tietopohjan valmistelu, ei fyysinen koeleivonta.**
+
+## Kakkupohjan ensimmäinen laskentahyväksyntä — arviot, 11.11.2026
+
+**Resepti:** `gluteeniton-perunajauhokakkupohja`. **Lähdeversio:** PR #422, alkuperäinen [Keliakialiiton 4 ainesosan ohje](https://www.keliakialiitto.fi/ruoka/reseptit/taytekakku-tai-kaaretorttupohja/). Annostus 10 yhtä suurta palaa. Vain **pohja**; ei täytteitä/kuorrutusta. Fyysistä koeleivontaa tai käytettyjen pakkausten laboratoriotarkistusta ei ole tehty.
+
+| Ainesosa | Määrä | Käytetty paino | Hiilihydraatti / proteiini / rasva per 100 g | Lähde |
+| --- | --- | --- | --- | --- |
+| Kananmuna ilman kuorta | 4 kpl | 200 g (oletus 50 g syötävää sisältöä/kpl) | 0,3 / 12,6 / 9,2 g | [Fineli-tietueen toisinto](https://www.kilokalori.net/ravinto/yleinen/kananmuna-kuoreton) |
+| Dansukker Taloussokeri | 1,5 dl | 132 g (88 g/dl) | 100 / 0 / 0 g | [Dansukker valmistaja](https://www.dansukker.fi/fi/tuotteet/kaikki-tuotteet/suomalainen-taloussokeri) |
+| Finnamyl Helmi perunajauho | 1,5 dl | 105 g (70 g/dl) | 82 / 0,1 / 0 g | [Finnamyl valmistaja](https://finnamyl.fi/tuotteet/perunajauhot-kuluttajille/) ja [EAN 6430024961201](https://www.s-kaupat.fi/tuote/finnamyl-helmi-perunajauho-500g/6430024961201) |
+| Meira leivinjauhe 50 g | 1 tl | 4 g (arvioitu paino, ei punnittu) | 17,6 / 0 / 0,1 g | [Meira](https://meira.fi/tuote/leivinjauhe/) ja [pakkaustiedot](https://www.s-kaupat.fi/tuote/meira-leivinjauhe-50g/6414200210055) |
+
+Laskenta kullekin aineelle: raakapaino × tuotteen ravintoarvo / 100 g. Yhteensä koko kakussa **219,404 g imeytyvää hiilihydraattia, 25,305 g proteiinia ja 18,404 g rasvaa**, jaettuna 10 annokseen. Metatietoon pyöristetty: **21,94 g C**, **2,53 g P**, **1,84 g R** per pala. Energian raaka-ainepohjainen laskennallinen suuntaa-antava arvo **noin 115 kcal/pala**, perustuen ilmoitettuihin 100 g:n kilokaloreihin.
+
+**Epävarmuudet:** munien koko, 1 tl leivinjauheen paino, leivinpaperin käyttö ja valitun perunajauho-/sokeripakkauksen erä. Paiston veden haihtuminen muuttaa valmiin palan painoa mutta ei yksin muuta koko taikinan imeytyvien hiilihydraattien massaa. EU-pakkauksesta hiilihydraattia ei vähennetä kuitua uudelleen. `carbs_total_per_serving_g` on edelleen `null` – eri määritelmän mukaista kokonaishiilihydraattia ei ole laskettu. **GK ei laskettu eikä luokiteltu; 21,94 g hiilihydraattia ei itsessään riitä GK-luvuksi.**
+
+**Katselmointipäätös:** makrotietojen *laskentaperusta ehdollisesti hyväksyttävissä*, mutta resepti pysyy `draft` ja gluteenittomuuden tuotekohtainen/pakkaustarkistus sekä kuvan GitHub-siirto estävät edelleen julkaisun. Tätä laskelmaa ei saa siirtää muihin neljään reseptiin.

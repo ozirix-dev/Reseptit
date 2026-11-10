@@ -16,12 +16,12 @@ tags: [gluteeniton, kakkupohja, täytekakku, perunajauho]
 ingredients:
   - {amount: 4, unit: kpl, item: kananmunaa}
   - {amount: 1.5, unit: dl, item: sokeria}
-  - {amount: 1.5, unit: dl, item: gluteenittomaksi merkittyä perunajauhoa}
+  - {amount: 1.5, unit: dl, item: Finnamyl Helmi -perunajauhoa, note: gluteeniton tuote, 500 g pakkaus EAN 6430024961201}
   - {amount: 1, unit: tl, item: gluteenittomaksi merkittyä Meira-leivinjauhetta, note: tarkista pakkauksen EAN 6414200210055}
-carbs_net_per_serving_g: null
+carbs_net_per_serving_g: 21.94
 carbs_total_per_serving_g: null
-protein_per_serving_g: null
-fat_per_serving_g: null
+protein_per_serving_g: 2.53
+fat_per_serving_g: 1.84
 ---
 
 # Gluteeniton perunajauhokakkupohja
@@ -48,5 +48,5 @@ Kaikki taikinaan käytettävät ainekset ovat rakenteisissa metatiedoissa. Vuoan
 - Tämä pohja ei sisällä kiehuvaa vettä, eikä sitä pidä kutsua vehnäiseksi sienikakuksi.
 - Gluteenittomiksi merkityt perunajauhot ja leivinjauhe sekä puhtaat valmistusvälineet ovat turvallisuusehto. Meira-leivinjauheen 50 g pakkauksen valmistusaineina on nostatusaineita ja maissitärkkelystä; gluteenittomuus ja erätiedot tarkistetaan aina käytetystä pakkauksesta. Sisältää kananmunaa.
 - Täytteet ja kuorrutteet eivät sisälly pohjan ainesosiin tai ravintoarvoihin. Niille tarvitaan oma kokonaisresepti.
-- Ravintoarvot ja GK ovat toistaiseksi laskematta.
+- Ravintoarvot ovat **tuotekohtainen laskennallinen arvio** kymmenesosalle pelkkää pohjaa: noin 115 kcal, 21,94 g imeytyvää hiilihydraattia, 2,53 g proteiinia ja 1,84 g rasvaa. Käytetyt pakkaukset, määrien painomuunnokset ja epävarmuudet on eritelty [ravintoarvojen laskentamuistiossa](https://github.com/ozirix-dev/Reseptit/blob/editorial/gf-five-drafts-20261110/docs/nutrition/gluteenittomat-5-tuote-evidenssi-2026-11-11.md). Kuitua sisältävää kokonaishiilihydraattia tai GK:ta ei ole laskettu.
 - Valmistusperiaatteen vertailulähde: [Keliakialiitto – gluteeniton täytekakku- tai kääretorttupohja](https://www.keliakialiitto.fi/ruoka/reseptit/taytekakku-tai-kaaretorttupohja/). Tässä versiossa käytetään leivinpaperilla vuorattua vuokaa.
