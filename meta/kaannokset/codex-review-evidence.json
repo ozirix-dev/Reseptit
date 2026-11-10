@@ -554,6 +554,36 @@
       }
     ]
   },
+  "indonesialainen-pisang-goreng-aamiaiseksi:en": {
+    "source_hash": "b30ed589c88cdd2108c6e9c34a6cf0329620b9a46f900ff2277356d1789a8316",
+    "translation_hash": "102f7bae68d757463a4c745e36b43d17b2817a60b74443e5f22a1bf11787f3d6",
+    "reviewed_at": "2026-11-10",
+    "reference": "docs/reviews/2026-11-10-pisang-goreng-c20-sv-pan-fried-release.md | C20 draft PR380 source SHA pinned and CI42749726980; Swedish title revised and semantic SHA computed against original verified hash; AI meaning review only",
+    "outcome": "pass",
+    "findings": []
+  },
+  "indonesialainen-pisang-goreng-aamiaiseksi:sv": {
+    "source_hash": "b30ed589c88cdd2108c6e9c34a6cf0329620b9a46f900ff2277356d1789a8316",
+    "translation_hash": "6fcda21fb9307147302801e5a4e3b83682073b4a854346b44337f3cbe5622629c",
+    "reviewed_at": "2026-11-10",
+    "reference": "docs/reviews/2026-11-10-pisang-goreng-c20-sv-pan-fried-release.md | C20 draft PR380 source SHA pinned and CI42749726980; Swedish title revised and semantic SHA computed against original verified hash; AI meaning review only",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "Swedish friterade bananer incorrectly suggested deep-frying; corrected title, image alt, H1 to pannstekta bananer for listed 1 tbsp pan oil."
+      }
+    ]
+  },
+  "indonesialainen-pisang-goreng-aamiaiseksi:th": {
+    "source_hash": "b30ed589c88cdd2108c6e9c34a6cf0329620b9a46f900ff2277356d1789a8316",
+    "translation_hash": "1bf31d23c8f4808f304d19562f04ed4d0697821f311f39dcaeb68a9e3f7418ae",
+    "reviewed_at": "2026-11-10",
+    "reference": "docs/reviews/2026-11-10-pisang-goreng-c20-sv-pan-fried-release.md | C20 draft PR380 source SHA pinned and CI42749726980; Swedish title revised and semantic SHA computed against original verified hash; AI meaning review only",
+    "outcome": "pass",
+    "findings": []
+  },
   "japanilainen-curry-tofulla:en": {
     "source_hash": "50fc764da52cd185c93f9cc1ffde228230ecd833635f5d76e04b57d8e969fe60",
     "translation_hash": "be6bccb1efa3f3fbb35b32f898d1a0254bd7855a2946bd8fd64ce1e74ea16b9a",
