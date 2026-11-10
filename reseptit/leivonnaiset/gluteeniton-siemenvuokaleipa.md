@@ -13,6 +13,11 @@ servings: 12
 time_total_min: 135
 difficulty: keskitaso
 tags: [gluteeniton, leipä, vuokaleipä, siemenet]
+image:
+  src: leivonnaiset/gluteeniton-siemenvuokaleipa.webp
+  alt: "Piirros siemenkuorrutetusta gluteenittomasta vuokaleivästä ja leikatusta viipaleesta"
+  width: 1500
+  height: 1000
 ingredients:
   - {amount: 6, unit: dl, item: vettä, note: kädenlämpöistä}
   - {amount: 1, unit: rkl, item: gluteenittomaksi merkittyä FiberHusk-psylliumkuorijauhetta}
