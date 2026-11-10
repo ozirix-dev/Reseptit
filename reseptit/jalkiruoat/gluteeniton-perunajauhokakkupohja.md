@@ -13,6 +13,11 @@ servings: 10
 time_total_min: 90
 difficulty: helppo
 tags: [gluteeniton, kakkupohja, täytekakku, perunajauho]
+image:
+  src: jalkiruoat/gluteeniton-perunajauhokakkupohja.webp
+  alt: "Piirros kullanruskeasta gluteenittomasta kakkupohjasta ja leikatusta palasta"
+  width: 1500
+  height: 1000
 ingredients:
   - {amount: 4, unit: kpl, item: kananmunaa}
   - {amount: 1.5, unit: dl, item: sokeria}
