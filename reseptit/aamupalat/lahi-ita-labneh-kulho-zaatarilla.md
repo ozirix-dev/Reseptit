@@ -10,7 +10,7 @@ main_ingredient:
   - "zaatar"
   - "oliivi"
 cooking_method:
-  - "paistaminen"
+  - "kylmävalmistus"
 ingredients:
   - amount: 100
     unit: "g"
@@ -53,7 +53,11 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 
 ## Valmistus
 
-1. Valmistele kulhon ainekset; kypsennä pavut tai proteiini, jos käytät niitä kuivina tai raakana. Paista tofu, muna tai muu lämmin täyte tarvittaessa erikseen.
-2. Paloittele tuoreet kasvikset ja valmistele yrtit sekä kastikkeen ainekset.
-3. Jaa lämmin pohja kulhoihin, asettele muut ainekset päälle ja lisää kastike juuri ennen tarjoamista.
-4. Levitä labneh kulhoon, pyöräytä päälle oliiviöljyä ja lisää za’ataria sekä kurkkua.
+1. Annostele 100 g valmista labnehia ja tarkista, että tuote on tarkoitettu syötäväksi sellaisenaan. Tätä kulhoa ei paisteta eikä lämmitetä.
+2. Viipaloi tai kuutioi luettelon yksi kurkku. Valuta 150 g syötäväksi tarkoitettuja oliiveja ja poista mahdolliset kivet ennen tarjoamista.
+3. Jaa labneh, kurkku ja oliivit kahteen kylmään kulhoon tasaisesti. Ripottele päälle yhteensä 1 tl za'ataria ja käytä luettelon suolaa vain tarvittaessa.
+4. Tarjoa heti. Älä lisää oliiviöljyä, papuja, tofua, kananmunaa, lämmintä pohjaa tai erillistä kastiketta, joita tämän punnitun version ainesluettelo ei sisällä.
+
+## Muistiinpanot
+
+Aiemman ohjeen puuttuva oliiviöljy ja väärän ruokalajin yleiset valmistusvaiheet poistettu. Tämä on kylmäannos; ravintoarvoja tai GK-arvoa ei ole tässä uudelleen laskettu.
