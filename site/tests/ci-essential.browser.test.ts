@@ -3,6 +3,7 @@ import { spawn } from "node:child_process";
 import path from "node:path";
 import test from "node:test";
 import { launchBrowser } from "./launch-browser";
+import { recipeUi } from "../src/features/recipes/recipe-i18n";
 
 const base = "http://127.0.0.1:4192/Reseptit";
 const routes = ["/", "/en/recipes/", "/sv/recept/", "/th/recipes/"];
@@ -35,6 +36,38 @@ test("essential UI smoke: locales, search, a recipe, blog and no-JS navigation",
       assert.ok(await page.locator(".recipe-card__link").count() > 0, route + " has recipes");
       assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true, route + " does not overflow");
     }
+    // Reviewed dietary pilot: direct links, four locales, independent checkbox,
+    // reset, keyboard activation, and no false carnivore menu promise.
+    for (const [index, route] of routes.entries()) {
+      const locale = (["fi", "en", "sv", "th"] as const)[index];
+      const labels = recipeUi[locale];
+      const width = [320, 360, 768, 1440][index];
+      await page.setViewportSize({ width, height: 844 });
+      await page.goto(base + route + "?diet=vegan");
+      await page.waitForFunction(() => document.querySelector<HTMLSelectElement>("#recipe-diet")?.value === "vegan");
+      assert.equal(await page.locator(".recipe-card-grid .recipe-card").count(), 2, locale + " has both reviewed vegan recipes");
+      assert.equal(await page.locator('#recipe-diet option[value="carnivore"]').count(), 0,
+        locale + " should not advertise unpublished carnivore recipes");
+      assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true,
+        locale + " dietary search must not overflow at " + width + "px");
+      await page.getByLabel(labels.dietFilter).selectOption("pescatarian");
+      await page.waitForFunction(() => new URL(location.href).searchParams.get("diet") === "pescatarian");
+      assert.equal(await page.locator(".recipe-card-grid .recipe-card").count(), 5, locale + " has five verified pescatarian recipes");
+      await page.getByLabel(labels.dietFilter).selectOption("vegan");
+      const glutenFree = page.locator("#recipe-gluten-free");
+      await glutenFree.focus();
+      await page.keyboard.press("Space");
+      assert.equal(await glutenFree.isChecked(), true, locale + " gluten checkbox keyboard toggles independently");
+      assert.ok(page.url().includes("gluten_free=1"), locale + " checkbox persists in URL");
+      await page.reload();
+      await page.waitForFunction(() => document.querySelector<HTMLSelectElement>("#recipe-diet")?.value === "vegan");
+      assert.equal(await page.locator("#recipe-gluten-free").isChecked(), true, locale + " URL restores both filters");
+      await page.getByRole("button", { name: labels.resetFilters }).last().click();
+      assert.equal(await page.locator("#recipe-diet").inputValue(), "all");
+      assert.equal(await page.locator("#recipe-gluten-free").isChecked(), false);
+    }
+    await page.setViewportSize({ width: 390, height: 844 });
+
     await page.goto(base + "/?q=lohi");
     await page.waitForFunction(() => document.querySelector<HTMLInputElement>("#recipe-search")?.value === "lohi");
     assert.ok(await page.locator(".recipe-card__link").count() > 0, "search has results");
