@@ -97,6 +97,10 @@ const newPublicGkPendingSources: Readonly<Record<string, string>> = Object.freez
   "karnivore-smashburger": "179b12d53d97c406c6f83d2b829173375583b5d4",
   "karnivore-rapea-porsaan-kylki": "01c618a195d706a2ed092695806421b4ed9369fb",
   "karnivore-meatza": "c5b3a778b25e79912c2ac657fc832ad0040d6088",
+  "karnivore-lammaskyljykset-voissa": "3169d975a4c32f87b95baeb7e2d8ebaf2bba2d4c",
+  "karnivore-rapeat-kananreisipalat": "b53cd03654bc15fbabb65fd4eac6112ca9b9fe8c",
+  "karnivore-naudan-lyhytkylki": "893457c7ecf47644ba987d114c339ab4d518620b",
+  "karnivore-maksa-ja-pekoni": "bb1111c11a24ec126cbfbf90989a517af2e600c7",
 });
 const separatelyTrackedPublishedGk = [...publishedRecipeSources.entries()]
   .filter(([id]) => Object.hasOwn(newPublicGkPendingSources, id))

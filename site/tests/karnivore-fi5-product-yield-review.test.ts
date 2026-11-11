@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { createHash } from "node:crypto";
-import { readFile, access } from "node:fs/promises";
+import { readFile } from "node:fs/promises";
 import path from "node:path";
 import { test } from "node:test";
 import { parseMarkdown } from "../src/content/markdown";
@@ -79,10 +79,40 @@ test("five original drafts stay pinned and separate FI releases need their own e
       const result = verifyNutritionEvidence(published, evidence);
       assert.equal(result.status, "ESTIMATE WITH EVIDENCE", result.errors.join("\n"));
       assert.equal(result.calculated?.perServing.kcal, 571.83);
+    } else if (row.recipeId === "karnivore-lammaskyljykset-voissa") {
+      const publicBytes = await readFile(path.join(root, "reseptit/paaruoat", row.recipeId + ".md"));
+      const publicHash = createHash("sha1").update("blob " + publicBytes.byteLength + "\0").update(publicBytes).digest("hex");
+      assert.equal(publicHash, "3169d975a4c32f87b95baeb7e2d8ebaf2bba2d4c");
+      const publicSource = publicBytes.toString("utf8");
+      const parsedPublic = parseMarkdown(publicSource);
+      assert(parsedPublic);
+      const published = recipeFrontmatterSchema.parse(parsedPublic.data);
+      assert.equal(published.status, "published");
+      assert.equal(published.image?.src, "paaruoat/karnivore-lammaskyljykset-voissa.webp");
+      assert.match(publicSource, /70,8 % syötävää lihaa ja rasvaa ennen kypsennystä/);
+      assert.match(publicSource, /GK: ei määritetty\./);
+      const evidence = JSON.parse(await readFile(path.join(root, "docs/nutrition/calculations/karnivore-lammaskyljykset-voissa.json"), "utf8"));
+      assert.equal(evidence.ingredients[0].edibleFraction, 0.708);
+      const result = verifyNutritionEvidence(published, evidence);
+      assert.equal(result.status, "ESTIMATE WITH EVIDENCE", result.errors.join("\n"));
+      assert.equal(result.calculated?.perServing.kcal, 586.4);
     } else {
-      await assert.rejects(access(path.join(root,"reseptit/paaruoat",row.recipeId+".md")),
-        (error: unknown) => (error as NodeJS.ErrnoException).code === "ENOENT",
-        row.recipeId+": publication requires its own release review");
+      const sourcePins: Readonly<Record<string, string>> = {
+        "karnivore-rapeat-kananreisipalat": "b53cd03654bc15fbabb65fd4eac6112ca9b9fe8c",
+        "karnivore-maksa-ja-pekoni": "bb1111c11a24ec126cbfbf90989a517af2e600c7"
+      };
+      const publicBytes = await readFile(path.join(root, "reseptit/paaruoat", row.recipeId + ".md"));
+      assert.equal(createHash("sha1").update("blob " + publicBytes.byteLength + "\0").update(publicBytes).digest("hex"), sourcePins[row.recipeId]);
+      const publicSource = publicBytes.toString("utf8");
+      const parsedPublic = parseMarkdown(publicSource);
+      assert(parsedPublic);
+      const published = recipeFrontmatterSchema.parse(parsedPublic.data);
+      assert.equal(published.status, "published");
+      assert.match(publicSource, /GK: ei määritetty\./);
+      if (row.recipeId === "karnivore-maksa-ja-pekoni") assert.match(publicSource, /Raskauden aikana maksaruokia tulee välttää/);
+      const evidence = JSON.parse(await readFile(path.join(root, "docs/nutrition/calculations", row.recipeId + ".json"), "utf8"));
+      const result = verifyNutritionEvidence(published, evidence);
+      assert.equal(result.status, "ESTIMATE WITH EVIDENCE", result.errors.join("\n"));
     }
     const mapped=sourceMap.recipes.find(x=>x.recipeId===row.recipeId);
     assert(mapped,row.recipeId+": missing source map");

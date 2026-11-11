@@ -1,0 +1,125 @@
+{
+  "recipeId": "karnivore-rapeat-kananreisipalat",
+  "sourceHash": "fc7c6afc62c2271810c84c8ca49b2a423399f49c7df728d1fc4a1170eaa75bca",
+  "calculatedAt": "2026-11-11",
+  "servings": 4,
+  "batchId": "batch-505",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "scope": "Four servings. AFCD F002809 raw edible fraction includes chicken skin and fat. All edible drippings are served separately and eaten; the recipe preserves a crisp skin. No measured cook yield.",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "item": "nahallisia, luullisia broilerin reisipaloja",
+      "amount": 900,
+      "unit": "g",
+      "state": "raw-bone-in-chicken-thigh-skin-on",
+      "matchEvidence": "Plain raw thigh with skin; thigh portion only. Source excludes drumstick, bones, gristle and dissection loss.",
+      "edibleFraction": 0.68,
+      "edibleEvidence": "AFCD Release 3 Food Details F002809 (https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/data-files): 68% raw lean flesh, skin and fat; 32% bone, gristle and dissection loss. The ratio describes raw cuts.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible meat, rendered fat and juices are divided evenly and assumed eaten, as stated in the serving instructions. This raw-input model does not describe a serving that discards fat.",
+      "record": {
+        "id": "afcd-release-3-F002809",
+        "name": "Chicken, thigh, lean flesh, skin & fat, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F002809",
+        "retrievedAt": "2026-11-11",
+        "licence": "FSANZ AFCD Release 3 CC BY-SA 3.0 Australia",
+        "state": "raw-bone-in-chicken-thigh-skin-on",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD Release 3 Nutrient Profiles F002809 reports fibre 0 and paired available carbohydrate with and without sugar alcohols both 0. Energy 898 kJ/100 g edible portion converted at 4.184 kJ/kcal.",
+        "per100g": {
+          "kcal": 214.63,
+          "protein": 16,
+          "fat": 16.9,
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0
+        }
+      }
+    },
+    {
+      "item": "voita",
+      "amount": 10,
+      "unit": "g",
+      "state": "butter-edible",
+      "matchEvidence": "Fineli Release 20 CHO 2034, FIBT 2168, POLYL 2260 verified Selected food item is weighed as listed.",
+      "edibleFraction": 1,
+      "edibleEvidence": "All 10 g are weighed as an edible ingredient.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible meat, rendered fat and juices are divided evenly and assumed eaten, as stated in the serving instructions. This raw-input model does not describe a serving that discards fat.",
+      "record": {
+        "id": "fineli-500-release-20",
+        "name": "VOI",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/500",
+        "retrievedAt": "2026-11-11",
+        "licence": "THL Fineli Release 20 CC BY 4.0",
+        "state": "butter-edible",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 CHO 2034, FIBT 2168, POLYL 2260 verified",
+        "per100g": {
+          "protein": 1.19,
+          "fat": 81.3,
+          "carbohydrate": 0.8,
+          "fibre": 0,
+          "polyols": 0,
+          "kcal": 727
+        },
+        "componentValues": {
+          "CHO": 0.8,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        }
+      }
+    },
+    {
+      "item": "suolaa",
+      "amount": 6,
+      "unit": "g",
+      "state": "table-salt-edible",
+      "matchEvidence": "Fineli 30 iodized table salt, direct composition record.",
+      "edibleFraction": 1,
+      "edibleEvidence": "All 6 g are weighed as an edible ingredient.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible meat, rendered fat and juices are divided evenly and assumed eaten, as stated in the serving instructions. This raw-input model does not describe a serving that discards fat.",
+      "record": {
+        "id": "fineli-30-release-20",
+        "name": "RUOKASUOLA, JODIOITU",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/30",
+        "retrievedAt": "2026-11-11",
+        "licence": "THL Fineli Release 20 CC BY 4.0",
+        "state": "table-salt-edible",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release20 components 2034/2168/2260",
+        "componentValues": {
+          "CHO": 0,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "per100g": {
+          "carbohydrate": 0,
+          "protein": 0.63,
+          "fat": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "kcal": 3
+        }
+      }
+    }
+  ]
+}
