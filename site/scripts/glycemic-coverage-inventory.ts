@@ -70,17 +70,17 @@ const [pilot, nutrition, inputs, giCatalog, historical, reviewStart] = await Pro
 ]);
 const separatelyPending = pilot.newPublicGkPendingSources ?? [];
 const pendingIds = new Set(separatelyPending.map((row) => row.recipeId));
-if (pendingIds.size !== separatelyPending.length || pendingIds.size !== 4 ||
+if (pendingIds.size !== separatelyPending.length || pendingIds.size !== 5 ||
     separatelyPending.some((row) => row.status !== "INSUFFICIENT SOURCE DATA" || row.glycemicLoadPerServing !== null ||
       !/^[a-f0-9]{40}$/.test(row.sourceBlobSha))) {
-  throw new Error("Separate new-public GK pending sources need four distinct, SHA-pinned NULL cases.");
+  throw new Error("Separate new-public GK pending sources need five distinct, SHA-pinned NULL cases.");
 }
 const pendingNutritionRows = nutrition.inventory.filter((row) => pendingIds.has(row.recipe_id));
 if (pendingNutritionRows.length !== pendingIds.size || pendingNutritionRows.some((row) => row.status !== "ESTIMATE WITH EVIDENCE")) {
   throw new Error("New-public GK pending records disagree with real published nutrition sources.");
 }
-// Historical GK inputs and results remain exact; the three genuinely public
-// new recipes are recorded separately as withheld GK, never omitted silently.
+// Historical GK inputs and results remain exact. Newly published recipes with
+// withheld GK are recorded separately.
 const legacyNutritionRows = nutrition.inventory.filter((row) => !pendingIds.has(row.recipe_id));
 const nutritionRecipeIds = legacyNutritionRows.map((row) => row.recipe_id);
 const rawInputIds = inputs.recipes.map((recipe) => recipe.recipeId);
