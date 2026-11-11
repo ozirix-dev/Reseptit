@@ -265,7 +265,7 @@ test("F25 batch A2 three real cooking method revisions are source-sealed and do 
   ];
   for(const [id, cooking, safety] of cases) {
     const path = "reseptit/aamupalat/" + id + ".md";
-    const raw = readFileSync(join(root, path), "utf8");
+    const raw = readFileSync(path.join(root, path), "utf8");
     const before = parseMarkdown(raw), after = parseMarkdown(projectBreakfastFiQualityDisplay(path, raw));
     assert.ok(before && after);
     assert.deepEqual(after.data.ingredients, before.data.ingredients, id + ": ingredient masses");
