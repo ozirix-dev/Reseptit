@@ -107,3 +107,49 @@ test("banh cuon V3 selects actual HK 10-percent pork label without losing Pirkka
   assert.equal(cuon.gk,null);
   assert.equal(cuon.releaseAuthorized,false);
 });
+
+test("banh cuon squid label salt and GI evidence remain product-specific and unpublished",()=>{
+  const audit=read("docs/reviews/2026-11-11-f25-a2-banh-cuon-squid-salt-gi-product-audit.json");
+  assert.equal(audit.recipeId,"vietnamilainen-banh-cuon-sienilla");
+  const cuon=evidence.recipes.find((r:any)=>r.recipeId===audit.recipeId);
+  assert.ok(cuon);
+  const fish=cuon.ingredients.find((row:any)=>row.ean==="8850620888203");
+  assert.ok(fish);
+  assert.equal(fish.amount,15);
+  assert.equal(fish.unit,"ml");
+  assert.equal(fish.basis,"100ml");
+  assert.equal(fish.macros.carbohydrate,3);
+  assert.equal(fish.macros.protein,11);
+  assert.equal(fish.saltPer100mlG,27.2);
+  assert.equal(cuon.ingredients.some((row:any)=>row.item==="suola"),false);
+  assert.equal(cuon.additionalSaltG,0);
+  const label=audit.fishProduct.selectedLabel;
+  assert.equal(audit.fishProduct.ean,"8850620888203");
+  assert.equal(audit.fishProduct.selectedUnit,"ml");
+  assert.equal(label.valuesPer100ml.carbohydrateG,fish.macros.carbohydrate);
+  assert.equal(label.valuesPer100ml.proteinG,fish.macros.protein);
+  for(const item of ["carbohydrateG","proteinG","fatG","saltG","fibreG"]){
+    assert.equal(label.perRecipe[item],Math.round(label.valuesPer100ml[item]*fish.amount/100*100000)/100000);
+    assert.equal(label.perServing[item],label.perRecipe[item]/audit.fishProduct.servings);
+  }
+  assert.equal(audit.fishProduct.saltCorrection.originalAddedSaltG,1);
+  assert.equal(audit.fishProduct.saltCorrection.updatedAddedSaltG,0);
+  assert.equal(audit.fishProduct.saltCorrection.oldTotalSaltFromSauceAndAdditionG,5.08);
+  assert.equal(audit.fishProduct.saltCorrection.newTotalSaltFromSauceAndAdditionG,4.08);
+  assert.equal(audit.fishProduct.saltCorrection.saltPerServingSauceAndAdditionG,2.04);
+  assert.equal(audit.fishProduct.sameEanNotSufficientForLabelVersion,true);
+  assert.ok(audit.fishProduct.otherMarketLabels.length>=2);
+  assert.equal(audit.fishProduct.polyolsG,null);
+  for(const source of audit.giReview.sources){
+    assert.equal(source.exactMatch,false);
+    assert.ok(source.humanParticipants>=10);
+  }
+  assert.equal(cuon.giEvidenceBoundary.transferToThisV3,false);
+  assert.equal(audit.giReview.eligibleTransfer,false);
+  assert.equal(audit.giReview.modeledGK,null);
+  for(const key of ["completeMacrosApproved","giApproved","gkApproved","nutritionApproved","translationApproved","photoApproved","publicationAuthorized"]){
+    assert.equal(audit.release[key],false,key);
+  }
+  const previousGate=read("meta/kaannokset/f25-release-gate.json");
+  assert.equal(previousGate.sources.find((row:any)=>row.recipe_id===cuon.recipeId)?.approval,null);
+});

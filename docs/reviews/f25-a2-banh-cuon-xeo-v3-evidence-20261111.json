@@ -12,7 +12,7 @@
       "oldNutritionGitBlob": "969e6696fecc2c57873604ad9bd4545647668c26",
       "oldNutritionInputHash": "72add279fc7ed90cdb365397eea4399da7f7058fbc6b6e0d6500a012221a8bb7",
       "candidatePath": "docs/reviews/f25-a2-banh-cuon-v3-20261111.md",
-      "candidateGitBlob": "1fc09bcec3493d0713aca57474a324c995bdd7c8",
+      "candidateGitBlob": "3138709f1bac7f1fe4f02b8ad06ec706d50bad0c",
       "timeEstimateMin": {
         "min": 60,
         "max": 75
@@ -95,14 +95,22 @@
           "unit": "ml",
           "ean": "8850620888203",
           "basis": "100ml",
-          "source": "https://ctfood.se/fish-sauce-glass-12x725ml-squid-brand/?language=en",
+          "source": "https://www.aasiamarket.fi/en/product/fish-sauce-725ml-squid/",
           "macros": {
             "carbohydrate": 3,
             "protein": 11,
             "fat": 0,
             "fibre": 0,
             "polyols": null
-          }
+          },
+          "corrobSources": [
+            "https://ctfood.se/fish-sauce-glass-12x725ml-squid-brand/?language=en",
+            "https://www.sainsburys.co.uk/groceries/product/squid-brand-fish-sauce-725ml"
+          ],
+          "nutrientUnit": "per100ml, not per100g",
+          "saltPer100mlG": 27.2,
+          "saltTotalForRecipeG": 4.08,
+          "saltPerServingG": 2.04
         },
         {
           "item": "paistoöljy",
@@ -118,30 +126,18 @@
             "polyols": 0
           },
           "retention": "scenario only: 0–100 %"
-        },
-        {
-          "item": "suola",
-          "amount": 1,
-          "unit": "g",
-          "macros": {
-            "carbohydrate": 0,
-            "protein": 0,
-            "fat": 0,
-            "fibre": 0,
-            "polyols": 0
-          }
         }
       ],
       "unknowns": [
         "RICE_FLOUR_POLYOLS",
         "FARINA_STARCH_POLYOLS",
-        "FISH_SAUCE_POLYOLS",
         "OIL_RETENTION",
         "PAN_RELEASE_METHOD",
         "GI_FOR_RICE_SHEET",
         "SEMANTIC_TRANSLATIONS",
         "V3_IMAGE",
-        "HK_PORK_PACK_LABEL_AND_EDIBLE_MASS_VERIFY"
+        "HK_PORK_PACK_LABEL_AND_EDIBLE_MASS_VERIFY",
+        "FISH_SAUCE_PACK_VERSION_AND_POLYOLS_UNVERIFIED"
       ],
       "physicalTrial": false,
       "nutritionApproved": false,
@@ -199,7 +195,20 @@
           "selected": false
         }
       ],
-      "porkSourceDecision": "HK 10% selected for V3 review. Pirkka 12% is alternative only; no canonical release, fat label varies with product and oil retained mass still unmeasured."
+      "porkSourceDecision": "HK 10% selected for V3 review. Pirkka 12% is alternative only; no canonical release, fat label varies with product and oil retained mass still unmeasured.",
+      "additionalSaltG": 0,
+      "fishSauceAllergen": "fish (anchovy extract 77%)",
+      "saltDecision": "No added salt: 15 ml Squid based on Finnish retail label already contributes 4.08 g salt to 2-serving recipe. Retail 100ml basis is not 100g and UK/German 3.4g carb/10g protein/24.4g salt profiles are different version candidates.",
+      "giEvidenceBoundary": {
+        "humanSource": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7791047/",
+        "hongKongPlainSteamedVermicelliRollGI": 90,
+        "hongKongSampleHealthyPeople": 15,
+        "vietnameseNoodleStudy": "https://pubmed.ncbi.nlm.nih.gov/11781674/",
+        "vietnameseNoodleGIObservedMin": 39,
+        "vietnameseNoodleGIObservedMax": 61,
+        "transferToThisV3": false,
+        "reason": "Different test foods, formulations, flour and tapioca content, cooking method and mixed meal; no categorical analogy"
+      }
     },
     {
       "recipeId": "vietnamilainen-banh-xeo-aamiaisletut",
