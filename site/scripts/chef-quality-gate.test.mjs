@@ -33,18 +33,17 @@ test("pilot routes all five observed cases without publishing anything automatic
   assert.equal(result.stale, 0);
   const states = Object.fromEntries(result.results.map((row) => [row.recipe_id, row.decision]));
   assert.deepEqual(states, {
-    "indonesialainen-serabi-kookospannukakku": "TEXT_REPAIR_CANDIDATE",
+    "indonesialainen-serabi-kookospannukakku": "EDITORIAL_REVIEW",
     "indonesialainen-bakwan-maissifritter": "HOLD_MATERIAL_EVIDENCE",
     "pohjoisafrikkalainen-bissara": "HOLD_TIME_SAFETY",
     "japanilainen-yaki-onigiri-misolla": "HOLD_MULTI_AXIS",
     "indialainen-poha-maapahkinoilla": "HOLD_TRANSLATION_SYNC",
   });
-  assert.equal(result.textRepairCandidates, 1);
+  assert.equal(result.textRepairCandidates, 0);
   assert.equal(result.holdCases, 4);
   const serabi = result.results.find((r) => r.recipe_id === "indonesialainen-serabi-kookospannukakku");
-  assert.ok(serabi.assessment.blockers.includes("EXTERNAL_PR_NOT_VERIFIED"));
-  assert.equal(serabi.assessment.requiresMethodMeaningReview, true);
-  assert.equal(serabi.assessment.requiresGlycemicReview, true);
+  assert.deepEqual(serabi.assessment.blockers, []);
+  assert.equal(serabi.findings.find((finding) => finding.kind === "generic_instruction").status, "fixed");
   assert.ok(result.results.every((row) => row.releaseEligible === false));
   assert.match(markdownPilotReport(result), /Publication: \*\*NO\*\*/);
 });
@@ -56,12 +55,16 @@ test("published translations are read from actual locale subdirectories", async 
   assert.equal(poha.assessment.requiresTranslationSync, true);
 });
 
-test("missing water in a flour batter is not treated like boiling or rinsing water", async () => {
+test("bakwan remains on HOLD for material evidence after its generic instructions were fixed", async () => {
   const result = await runPilot(await load(), root);
   const bakwan = result.results.find((r) => r.recipe_id === "indonesialainen-bakwan-maissifritter");
   assert.equal(bakwan.assessment.requiresNutritionReview, true);
   assert.equal(bakwan.decision, "HOLD_MATERIAL_EVIDENCE");
+  assert.deepEqual(bakwan.assessment.blockers, ["MATERIAL_QUANTITY_OR_LIQUID"]);
+  assert.equal(bakwan.findings.find((finding) => finding.kind === "generic_instruction").status, "fixed");
+  assert.equal(bakwan.findings.find((finding) => finding.kind === "unquantified_edible_liquid").status, "open");
   assert.ok(bakwan.probes.some((p) => p.probe === "ingredient_absent" && p.pass));
+  assert.ok(bakwan.probes.some((p) => p.expected.item === "porkkana" && p.expected.unit === "kpl" && p.pass));
 });
 
 test("confirmed amounts and stated times are checked from source, not guessed", async () => {
@@ -88,7 +91,8 @@ test("changed source snapshot invalidates observations instead of silently passi
 
 test("false observation invalidates pilot evidence even if review says it is open", async () => {
   const pilot = await load();
-  pilot.cases[1].probes[1].item = "maissinjyviä";
+  const waterProbe = pilot.cases[1].probes.find((probe) => probe.kind === "ingredient_absent");
+  waterProbe.item = "maissinjyviä";
   const result = await runPilot(pilot, root);
   assert.equal(result.stale, 1);
   assert.equal(result.results[1].decision, "STALE_EVIDENCE");

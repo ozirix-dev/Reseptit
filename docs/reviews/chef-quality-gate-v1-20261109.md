@@ -37,8 +37,8 @@ Lähtötilanteena `main`-haaran reseptit; lukittu Git-blob-SHA ja tarkat koneell
 
 | Resepti | Luokka | Ongelma | Pilotin sallima jatko |
 | --- | --- | --- | --- |
-| Serabi-kookospannukakku | A / ehdollinen | Valmistusohjeessa toistuva yleispohja | Vain ohjekorjauksen katselmointiehdokas, PR #362 tarkistettava |
-| Bakwan-maissifritter | B | Taikinaan jäävä, mutta luettelosta puuttuva nestemäärä | HOLD – selvitä oikea taikina ja laskennan vaikutus |
+| Serabi-kookospannukakku | A / toimituksellinen katselmointi | Yleisohje korjattu. Kotiohjeessa tehdään paksuhkoja pannukakkuja. | GK100-arvio kuuluu erilliseen ohueen versioon. [Ohjekorjaus #362](https://github.com/ozirix-dev/Reseptit/pull/362) |
+| Bakwan-maissifritter | B | Fritterikohtainen ohje on mainissa. Taikinaveden kokonaismäärä ja porkkanan syötävä paino ovat avoinna. | HOLD – mittaa vesi, porkkana ja saanto ja varmista ravintolaskennan perusteet |
 | Bissara-härkäpapukeitto | B/C | Kuivat pavut, 25 min ja olemattomat nuudelit/liemi | HOLD – paputyyppi, kypsennys ja kokonaisaika |
 | Yaki-onigiri misolla | B/C | 100 g riisiä + 150 g misoa + 150 g noria; riisin tila epäselvä | HOLD – mittasuhteet, raaka/kypsä ja GI/GK |
 | Poha maapähkinöillä | A + kieliriski | Pihvi-/taikinaohjeet ja kolme julkaistua käännöstä | HOLD – FI+EN/SV/TH yhteiskatselmointi |

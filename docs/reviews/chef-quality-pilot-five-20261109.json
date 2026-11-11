@@ -1,18 +1,18 @@
 {
   "schema_version": 1,
   "title": "Chef quality gate – five distinct Finnish source recipe problems",
-  "source_baseline": "ozirix-dev/Reseptit main 2026-11-09 ade461048ea138cd4f6a34340e8a53df79532bd7",
+  "source_baseline": "ozirix-dev/Reseptit main 2026-11-12 d759e222a3ad5dfed972962eb0ecc5e20d7cd9c7",
   "policy": "Culinary identity + reliable source check before any text editing; no automatic public approval.",
   "cases": [
     {
       "recipe_id": "indonesialainen-serabi-kookospannukakku",
       "path": "reseptit/aamupalat/indonesialainen-serabi-kookospannukakku.md",
-      "source_blob_sha": "4c2f2f2bab52211d7392e3eb63db9775eacfe101",
-      "summary": "Three generic instructions refer to soaking legumes and thin crepes, then a fourth repeats the real coconut-rice-flour pancake recipe. Ingredient quantities are currently all explicit; PR #362 proposes text-only repair, but its integration depends on #359's CI correction. Authentic serabi texture remains a chef-review question.",
+      "source_blob_sha": "f4aef2908ca6cbc72b06b1fd787669aaea8b1c43",
+      "summary": "The FI steps specify small, fairly thick coconut and rice-flour pancakes and use the listed brown sugar. PR #362 removed the generic soaking and thin-crepe instructions. The approved GK100 estimate remains specific to a separate thin version.",
       "probes": [
         {
           "kind": "instruction_contains",
-          "text": "Jos käytät kokonaisia palkokasveja"
+          "text": "pieniksi, melko paksuiksi pannukakuiksi"
         },
         {
           "kind": "ingredient_amount",
@@ -35,8 +35,8 @@
         {
           "kind": "generic_instruction",
           "severity": "P1",
-          "status": "open",
-          "explanation": "Inapplicable conditional soaking step precedes the actual serabi method and invites incorrect handling."
+          "status": "fixed",
+          "explanation": "The merged FI correction replaces the generic instructions with the recipe-specific coconut and rice-flour pancake preparation."
         }
       ],
       "references": [
@@ -51,15 +51,14 @@
       ],
       "proposed_change": {
         "kind": "instruction_only",
-        "related_pr": 362,
-        "next_step": "Review exact PR #362 diff and integration after #359; do not infer authentic texture or CI pass from this pilot."
+        "next_step": "Keep the corrected home instructions and separate thin GK100 version distinct. Texture has not been verified by a cooking trial."
       }
     },
     {
       "recipe_id": "indonesialainen-bakwan-maissifritter",
       "path": "reseptit/aamupalat/indonesialainen-bakwan-maissifritter.md",
-      "source_blob_sha": "f18fc5e261e0adbf944b7acd4f51f093df4f5d54",
-      "summary": "The ingredient list has 100 g wheat flour, corn and carrot but no batter liquid; the instruction says to add water until it holds together. This water is part of the edible fritter batter, not merely cooking or rinsing water. No justified exact quantity yet.",
+      "source_blob_sha": "e9316bc8ef79e073366653c7eb13d356ab109f8f",
+      "summary": "The current FI method specifies corn and carrot fritters, small flat portions and the listed oil. Water is added a tablespoon at a time to the edible batter without a measured total. The carrot is listed by count; its edible weight and the resulting yield remain unverified.",
       "probes": [
         {
           "kind": "ingredient_amount",
@@ -73,11 +72,17 @@
         },
         {
           "kind": "instruction_contains",
-          "text": "lisää vettä vain sen verran"
+          "text": "Lisää vettä ruokalusikallinen kerrallaan"
         },
         {
           "kind": "instruction_contains",
-          "text": "Muotoile pieniksi pihveiksi"
+          "text": "pieniä litteitä frittereitä"
+        },
+        {
+          "kind": "ingredient_amount",
+          "item": "porkkana",
+          "amount": 1,
+          "unit": "kpl"
         }
       ],
       "findings": [
@@ -85,13 +90,13 @@
           "kind": "unquantified_edible_liquid",
           "severity": "P1",
           "status": "open",
-          "explanation": "Water incorporated into a flour batter is not listed or quantified; cannot verify dough consistency or cooked yield."
+          "explanation": "Water remains in the batter, but the total is unmeasured. The edible carrot weight is also unverified; the existing instructions do not establish measured yield or independently verified nutrition."
         },
         {
           "kind": "generic_instruction",
           "severity": "P1",
-          "status": "open",
-          "explanation": "A generic vegetable-patty sequence precedes the specific bakwan instruction and omits reliable batter proportions."
+          "status": "fixed",
+          "explanation": "The FI method now describes small flat corn and carrot fritters, frying in batches and a cooked-through centre."
         }
       ],
       "references": [
@@ -106,7 +111,7 @@
       ],
       "proposed_change": {
         "kind": "ingredient_and_method",
-        "next_step": "Research this exact corn-carrot batter and establish a credible, measured water amount; then update nutrition/yield and GI/GL binding review before publication."
+        "next_step": "Measure the water used, the edible carrot weight and cooked yield for this version. Review the nutrition and GI/GL evidence before any material change is published."
       }
     },
     {
