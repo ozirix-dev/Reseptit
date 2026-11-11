@@ -341,3 +341,51 @@ test("diet review pins fail closed when Finnish source or a translation changes"
     await rm(dir, { recursive: true, force: true });
   }
 });
+
+
+test("batch 2 reviews 12 additional source recipes in all published languages", async () => {
+  const path = await import("node:path");
+  const { reviewedDietTagsForSource } = await import("../scripts/reviewed-diet-filters");
+  const root = path.resolve(import.meta.dirname, "../..");
+  const candidates = [
+    ["alkuruoat", "medu-vada", "vegan"],
+    ["alkuruoat", "tabbouleh", "vegan"],
+    ["paaruoat", "ratatouille", "vegan"],
+    ["aamupalat", "shakshuka", "vegetarian"],
+    ["aamupalat", "valimerellinen-farinata-aamupalaksi", "vegan"],
+    ["aamupalat", "kiinalainen-soijamaito-aamiaisella", "vegan"],
+    ["paaruoat", "lohikeitto-kuohukermalla", "pescatarian"],
+    ["paaruoat", "silakkapihvit-tilli-kermakastike", "pescatarian"],
+    ["aamupalat", "tonnikalamunakkaat-uunissa", "pescatarian"],
+    ["alkuruoat", "paneer-tikka", "vegetarian"],
+    ["alkuruoat", "gazpacho", "vegetarian"],
+    ["paaruoat", "palak-paneer", "vegetarian"],
+  ] as const;
+  for (const [directory, id, level] of candidates) {
+    const approvedTags = level === "vegan" ? ["vegetarian", "vegan", "pescatarian"]
+      : level === "vegetarian" ? ["vegetarian", "pescatarian"] : ["pescatarian"];
+    const fiFile = path.join(root, "reseptit", directory, id + ".md");
+    for (const locale of ["fi", "en", "sv", "th"] as const) {
+      const filename = locale === "fi" ? fiFile : path.join(root, "kaannokset", locale, directory, id + ".md");
+      assert.deepEqual(await reviewedDietTagsForSource(id, locale, filename, fiFile), approvedTags,
+        `${id}/${locale} must have exactly the reviewed source hash`);
+      const recipe = siteContent.recipes.find(item => item.recipeId === id && item.locale === locale);
+      assert.ok(recipe, `${id}/${locale} must already be published`);
+      assert.deepEqual(recipe.dietTags, approvedTags, `${id}/${locale} built classification`);
+      for (const diet of approvedTags) {
+        assert.equal(filterRecipes([recipe], { ...emptyRecipeFilters, diet: diet as "vegetarian" | "vegan" | "pescatarian" }, locale).length, 1);
+      }
+      assert.deepEqual(filterRecipes([recipe], { ...emptyRecipeFilters, diet: "carnivore" }, locale), [],
+        `${id}/${locale} not an animal-only recipe`);
+    }
+  }
+  for (const locale of ["fi", "en", "sv", "th"] as const) {
+    const recipes = siteContent.recipes.filter(item => item.locale === locale);
+    assert.ok(filterRecipes(recipes, { ...emptyRecipeFilters, diet: "vegan" }, locale).length >= 7, locale);
+    assert.ok(filterRecipes(recipes, { ...emptyRecipeFilters, diet: "pescatarian" }, locale).length >= 17, locale);
+    const neverAssumeVegan = ["gazpacho", "shakshuka", "paneer-tikka", "palak-paneer"];
+    assert.ok(neverAssumeVegan.every(id => !filterRecipes(recipes, { ...emptyRecipeFilters, diet: "vegan" }, locale).some(item => item.recipeId === id)), locale);
+    assert.ok(!filterRecipes(recipes, { ...emptyRecipeFilters, diet: "vegetarian" }, locale).some(item => item.recipeId === "pasta-alla-norma"),
+      "Animal-rennet Pecorino cannot be inferred vegetarian");
+  }
+});
