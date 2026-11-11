@@ -14,7 +14,7 @@ Tuloste: reseptitunnus, joko `HOLD` tai `CANDIDATE_REQUIRES_REVIEW`, sekä syyt.
 ## Nykyiset suojat
 
 - `GK149_FULL_SOURCE_SHA_REVIEW_REQUIRED`: alkuperäinen ID on GK149:n 70 valitun lähteen joukossa. Valmistustekstin kanoninen muuttaminen voisi vanhentaa tiivisteen, vaikka aineslistan ja makrojen sisältö pysyisi samana.
-- `PUBLISHED_TRANSLATION_SEMANTIC_REVIEW_REQUIRED:...`: julkaistuille EN/SV/TH-käännöksille on tarkistettava uusi FI-merkitystarkiste. Esim. poha (3 kieltä) ei saa automaattista hyväksyntää.
+- `PUBLISHED_TRANSLATION_SEMANTIC_REVIEW_REQUIRED:...`: julkaistuille EN/SV/TH-käännöksille on tarkistettava uusi FI-merkitystarkiste. Tarkistus käyttää sekä julkaisurekisteriä että varsinaisista julkaistuista Markdown-käännöstiedostoista tehtyä `auditTranslations`-havaintoa, koska pelkkä rekisteri ei sisällä esimerkiksi pohan kolmea julkaistua kieliversiota. Esim. poha (3 kieltä) ei saa automaattista hyväksyntää.
 - `PUBLIC_QUARANTINE_REQUIRES_SEPARATE_APPROVAL`: julkisesta sisällöstä poistettu resepti ei palaudu samalla valmistustekstin siirrolla.
 - `DUPLICATE_CANDIDATE` ja `INVALID_RECIPE_ID`: perusvirheet estetään ennen CI:tä.
 
