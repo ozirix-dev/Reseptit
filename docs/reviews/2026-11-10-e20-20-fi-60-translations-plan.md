@@ -46,4 +46,14 @@ Tämä on **lähdevalinnan Draft**, ei 60 uuden käännöksen toimitus, eikä ju
 
 [PR #386](https://github.com/ozirix-dev/Reseptit/pull/386) (HEAD `9682b1022dc30958d7659e28ca3a68d29d655c46`) ja [PR #395](https://github.com/ozirix-dev/Reseptit/pull/395) (HEAD `96dc07a2e81e2828887316f16e289b869a414775`) sisälsivät yhteensä 18 ennestään laadittua EN/SV/TH **Draft**-tiedostoa. Ne on nyt kopioitu sanasta sanaan E20:n työhaaraan täsmälleen noista HEAD-versioista. Kinkkurullien, mee gorengin ja hu tieu -keiton 9 uutta Draft-käännöstä olivat jo tässä E20-haarassa.
 
-E20-haarassa on siis **9 FI-reseptin 27 kieliluonnosta**: 6 aiemmin kirjoitettua (18 kieliversiota) + 3 nyt kirjoitettua (9). **11 SOURCE-HOLDissa olevaa FI-lähdettä ei ole käännetty.** Kaikilla 27 kieliversiolla `status: draft` ja julkaisuvaltuus `false`. Aiemmat kaksi Draft-PR:ää ovat tämän kopion jälkeen vain historiallisia lähtöaineistoja; niitä ei pidä yhdistää mainiin E20:n rinnalla. Yhdistäminen edellyttää edelleen 20 lähteen laatuhyväksyntää, semanttisia SHA-evidenssejä ja puhdasta main-pohjaista release-PR:ää. Käännösten `Draft`-tila ei ole julkaisu.
+E20-haarassa on siis **9 FI-reseptin 27 kieliluonnosta**: 6 aiemmin kirjoitettua (18 kieliversiota) + 3 nyt kirjoitettua (9). **11 SOURCE-HOLDissa olevaa FI-lähdettä ei ole käännetty.** Kaikilla 27 kieliversiolla `status: draft` ja julkaisuvaltuus `false`. Aiemmat kaksi Draft-PR:ää ovat tämän kopion jälkeen vain historiallisia lähtöaineistoja; niitä ei pidä yhdistää mainiin E20:n rinnalla. Käännösten julkaiseminen edellyttää edelleen 20 lähteen laatuhyväksyntää, semanttisia SHA-evidenssejä ja puhdasta main-pohjaista release-PR:ää. Käännösten `Draft`-tila ei ole julkaisu.
+
+## Lähdesidosten katselmointi 12.11.2026
+
+Mainin `5bdb0a4e1c04f8fb75db7cd5a32ba218483a08e8` sisältää tarkemmat FI-valmistusohjeet rava-uttapamille, feta-menemenille ja apam balikille. Aineslistat, annoskoot ja reseptien ravintoarvokentät ovat samat kuin aiemmissa lähteissä.
+
+- Rava-uttapamin ohje täsmentää mannasuurimotaikinan rakenteen, kasvisten käytön ja paiston. Sipulin ja tomaatin syötävät grammapainot odottavat ravintoarvovarmennusta.
+- Feta-menemenin ohje täsmentää tomaatti-paprikapohjan, munien kypsennyksen ja fetan tarjoilun. Tomaatin ja paprikan syötävät grammapainot ovat avoinna.
+- Apam balikin ohje täsmentää paksun täytetyn letun paiston. Hyväksytty GK100 koskee erillistä ohutta versiota, ja kotiohjeen GK jää määrittämättä. [Ohjekorjaus #362](https://github.com/ozirix-dev/Reseptit/pull/362)
+
+Työjonossa on edelleen 11 lähde-HOLDia ja 9 jatkokatselmointiin merkittyä FI-lähdettä. Kaikki 36 EN/SV/TH-käännöstä ovat luonnoksia. Työjonon kaikkien lähteiden julkaisuvaltuus on `false`.
