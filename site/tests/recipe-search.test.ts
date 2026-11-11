@@ -260,3 +260,45 @@ test("gluten-free filter is explicit, independent of keto/VHH and fail-closed", 
   assert.equal(recipeFiltersToSearch({ ...emptyRecipeFilters, glutenFree: undefined }), "");
   assert.equal(filterRecipes([unreviewed, falseClaim], { ...emptyRecipeFilters, glutenFree: true }, "fi").length, 0, "unknown and explicitly false classifications fail closed");
 });
+
+
+test("source-pinned dietary reviews are consistent across all four published language routes", () => {
+  const expected: Record<string, string[]> = {
+    hummus: ["vegetarian", "vegan", "pescatarian"],
+    caponata: ["vegetarian", "vegan", "pescatarian"],
+    munakokkeli: ["vegetarian", "pescatarian"],
+    bouillabaisse: ["pescatarian"],
+    "kermainen-lohipata": ["pescatarian"],
+  };
+  for (const locale of ["fi", "en", "sv", "th"] as const) {
+    const local = siteContent.recipes.filter((recipe) => recipe.locale === locale);
+    for (const [id, tags] of Object.entries(expected)) {
+      const recipe = local.find((recipe) => recipe.recipeId === id);
+      assert.ok(recipe, `${locale}/${id} must be published`);
+      assert.deepEqual(recipe.dietTags, tags, `${locale}/${id} has reviewed diet tags`);
+      for (const diet of tags) {
+        assert.equal(filterRecipes([recipe], { ...emptyRecipeFilters, diet: diet as "vegan" | "vegetarian" | "pescatarian" }, locale).length, 1);
+      }
+    }
+    assert.ok(filterRecipes(local, { ...emptyRecipeFilters, diet: "vegan" }, locale).some(recipe => recipe.recipeId === "hummus"));
+    assert.ok(!filterRecipes(local, { ...emptyRecipeFilters, diet: "vegan" }, locale).some(recipe => recipe.recipeId === "munakokkeli"));
+    assert.ok(!filterRecipes(local, { ...emptyRecipeFilters, diet: "carnivore" }, locale).some(recipe => recipe.recipeId === "munakokkeli"));
+  }
+  const hummus = siteContent.recipes.find(recipe => recipe.recipeId === "hummus" && recipe.locale === "fi")!;
+  assert.deepEqual(filterRecipes([hummus], { ...emptyRecipeFilters, category: "alkuruoka", diet: "vegan" }, "fi").map(x => x.recipeId), ["hummus"]);
+  assert.deepEqual(filterRecipes([hummus], { ...emptyRecipeFilters, category: "paaruoka", diet: "vegan" }, "fi"), []);
+  assert.deepEqual(filterRecipes([hummus], { ...emptyRecipeFilters, diet: "vegan", glutenFree: true }, "fi"), [],
+    "vegan reviews do not imply a reviewed gluten-free claim");
+});
+
+test("new diet URL values round-trip, preserve keto/VHH and reject unapproved options", () => {
+  const filters = { ...emptyRecipeFilters, diet: "pescatarian" as const, maxTime: 60, glutenFree: true };
+  assert.equal(recipeFiltersToSearch(filters), "?diet=pescatarian&time=60&gluten_free=1");
+  assert.deepEqual(parseRecipeFilters(recipeFiltersToSearch(filters), ["all"]), filters);
+  assert.deepEqual(parseRecipeFilters("?diet=pescatarian", ["all"], ["keto", "vhh"]), emptyRecipeFilters);
+  assert.deepEqual(parseRecipeFilters("?diet=carnivore", ["all"], ["carnivore"]), { ...emptyRecipeFilters, diet: "carnivore" });
+  assert.deepEqual(parseRecipeFilters("?diet=unknown", ["all"]), emptyRecipeFilters);
+  const base = siteContent.recipes.find(recipe => recipe.locale === "fi")!;
+  assert.equal(filterRecipes([{ ...base, recipeId: "animal-only-fixture", dietTags: ["carnivore"] }], { ...emptyRecipeFilters, diet: "carnivore" }, "fi").length, 1);
+  assert.equal(filterRecipes([{ ...base, recipeId: "not-reviewed", dietTags: undefined }], { ...emptyRecipeFilters, diet: "carnivore" }, "fi").length, 0);
+});
