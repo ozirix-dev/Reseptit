@@ -41,9 +41,13 @@ const approvedC5DraftBlobs = new Map<string, string>([
   ["reseptit/raakileet/meksikolainen-huevos-divorciados-kypsat-pavut-v2.md", "dca1c51653e98f8a8fc8ab71c1db1bca41d8ef90"],
 ]);
 // The first FI-only carnivore release is a separately audited new source set.
-// Exact blob-SHA pins admit only these ten new artifacts to the historical
+// Exact blob-SHA pins admit only these original release artifacts to the historical
 // change inspector. They DO NOT alter any of the frozen GK result approvals.
 const approvedKarnivoreFi3Files = new Map<string, string>([
+  ["reseptit/paaruoat/karnivore-smashburger.md", "179b12d53d97c406c6f83d2b829173375583b5d4"],
+  ["docs/nutrition/calculations/karnivore-smashburger.json", "8dd35e571cc21e4e5950d34d56b0b9d9d7afdd29"],
+  ["docs/nutrition/batches/batch-487.json", "f31a51f5fd117f18a6a3b75368878f02cf3e98da"],
+  ["kuvat/paaruoat/karnivore-smashburger.webp", "5247119ff8072851bab108e12128073018a375bb"],
   [
     "reseptit/paaruoat/karnivore-steak-and-eggs.md",
     "5e579c3a60b1835d2bd4895c377502139bb23b91"
