@@ -13,6 +13,7 @@ Tuloste: reseptitunnus, joko `HOLD` tai `CANDIDATE_REQUIRES_REVIEW`, sekä syyt.
 
 ## Nykyiset suojat
 
+- `GK100_APPROVED_SOURCE_SHA_REVIEW_REQUIRED`: resepti löytyy jostakin `docs/nutrition/gk100-approved-releases/*.json`-paketista. Esimerkiksi soba-aamiaiskeiton siirto pysähtyi GK100 first-five -lähdetarkisteeseen. Kaikki paketit luetaan dynaamisesti, ei käsin kirjoitettua ID-listaa. Paketin puuttuminen tai virheellinen rakenne pysäyttää ennakkotarkistuksen.
 - `GK149_FULL_SOURCE_SHA_REVIEW_REQUIRED`: alkuperäinen ID on GK149:n 70 valitun lähteen joukossa. Valmistustekstin kanoninen muuttaminen voisi vanhentaa tiivisteen, vaikka aineslistan ja makrojen sisältö pysyisi samana.
 - `PUBLISHED_TRANSLATION_SEMANTIC_REVIEW_REQUIRED:...`: julkaistuille EN/SV/TH-käännöksille on tarkistettava uusi FI-merkitystarkiste. Tarkistus käyttää sekä julkaisurekisteriä että varsinaisista julkaistuista Markdown-käännöstiedostoista tehtyä `auditTranslations`-havaintoa, koska pelkkä rekisteri ei sisällä esimerkiksi pohan kolmea julkaistua kieliversiota. Esim. poha (3 kieltä) ei saa automaattista hyväksyntää.
 - `PUBLIC_QUARANTINE_REQUIRES_SEPARATE_APPROVAL`: julkisesta sisällöstä poistettu resepti ei palaudu samalla valmistustekstin siirrolla.
@@ -25,3 +26,7 @@ Tuloste: reseptitunnus, joko `HOLD` tai `CANDIDATE_REQUIRES_REVIEW`, sekä syyt.
 `site/tests/source-migration-preflight.test.ts` lukee rekisterit suoraan reposta ja vahvistaa, että alkuperäisestä 10 C13-kohteen erästä **viisi olisi pysäytetty ennakkoon ja viisi olisi edennyt varsinaiseen lähdekatselmointiin**. Tämä on vastetesti eräkokojen kasvattamista varten.
 
 **Suositus:** älä vielä nosta eräkokoa 15:een, ennen kuin käännös-/GK149-preflight on CI-hyväksytty ja seuraava erä osoittaa, ettei se tuota turhia täysiä uusinta-ajoja.
+
+## GK100-jatkokorjauksen regressio
+
+PR #437:n 3 reseptin ensimmäinen CI löysi `GK100_RELEASE_CANDIDATE_CHANGED`-esteen soba-aamiaiskeitossa. Soba säilytettiin aiemmalla SHA-lukitulla näyttöprojektorilla. Uusi testi varmistaa, että `npm run preflight:source -- japanilainen-soba-aamiaiskeitto kiinalainen-jianbing-munaletty kiinalainen-katkarapu-wontonkeitto` luokittelee soban HOLDiksi, kaksi muuta ehdokkaiksi. Ehdokkuus ei yksin hyväksy turvallista valmistusta tai ravinto/GK-tutkimusta.
