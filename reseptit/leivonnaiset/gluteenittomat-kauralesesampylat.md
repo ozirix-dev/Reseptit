@@ -19,16 +19,16 @@ image:
   width: 1500
   height: 1000
 ingredients:
-  - {amount: 5, unit: dl, item: vettä, note: noin 42-asteista kuivahiivalle}
-  - {amount: 1, unit: pss, item: Sunnuntai-kuivahiivaa, note: 1 pussi = 11 g}
-  - {amount: 2, unit: tl, item: gluteenittomaksi merkittyä FiberHusk-psylliumkuorijauhetta}
-  - {amount: 1, unit: rkl, item: siirappia}
-  - {amount: 1, unit: tl, item: suolaa}
-  - {amount: 2, unit: dl, item: Myllärin gluteenitonta kauralesettä}
-  - {amount: 2.5, unit: dl, item: gluteenitonta Schär Pofiber -perunakuitua, note: ei perunajauhoa; noin 17 g/dl tuotteen mukaan}
-  - {amount: 2, unit: dl, item: Pirkka tummaa gluteenitonta jauhoseosta, note: "EAN 6410405221872; 1 dl:n todellinen massa tarkistettava"}
-  - {amount: 0.5, unit: dl, item: rypsiöljyä}
-  - {amount: 1, unit: rkl, item: Myllärin gluteenittomia kaurahiutaleita, note: pintaan ennen paistamista}
+  - {amount: 500, unit: g, item: vettä, note: noin 42-asteista kuivahiivalle; aiemmin 5 dl}
+  - {amount: 11, unit: g, item: Sunnuntai-kuivahiivaa, note: 1 pussi; tarkista erän gluteenittomuus}
+  - {amount: 4, unit: g, item: gluteenittomaksi merkittyä FiberHusk-psylliumkuorijauhetta, note: aiemmin noin 2 tl}
+  - {amount: 21, unit: g, item: siirappia, note: noin 1 rkl}
+  - {amount: 5, unit: g, item: suolaa, note: noin 1 tl}
+  - {amount: 100, unit: g, item: Myllärin gluteenitonta kauralesettä, note: oma punnittava reseptimäärä; aiemmin 2 dl}
+  - {amount: 43, unit: g, item: gluteenitonta Schär Pofiber -perunakuitua, note: ei perunajauhoa; vastaa likimain vanhaa 2,5 dl:n mallimäärää}
+  - {amount: 120, unit: g, item: Pirkka tummaa gluteenitonta jauhoseosta, note: "EAN 6410405221872; oma punnittava määrä"}
+  - {amount: 45, unit: g, item: rypsiöljyä, note: noin 0,5 dl}
+  - {amount: 5, unit: g, item: Myllärin gluteenittomia kaurahiutaleita, note: pintaan ennen paistamista}
 carbs_net_per_serving_g: 10.14
 carbs_total_per_serving_g: null
 protein_per_serving_g: 2.13
@@ -58,5 +58,6 @@ Ainekset ja niiden määrät on kirjattu reseptin rakenteisiin tietoihin. Peruna
 
 - Käytä Myllärin gluteenitonta kauralesettä 450 g (EAN 6415000164739) tai muuta nimenomaisesti gluteenittomaksi hyväksyttyä kauralesettä. Tavallinen kauralese ei kelpaa automaattisesti, sillä se voi sisältää jäämiä vehnästä, ohrasta tai rukiista. Valitse lisäksi gluteenittomiksi merkityt jauhoseokset, perunakuitu ja psyllium. Vältä jauhopölyn ja työvälineiden kautta tapahtuvaa ristikontaminaatiota.
 - Itse tehdyt gluteenittomat sämpylät kuivuvat helposti; jäähtyneet sämpylät voi pakastaa.
-- Ravintoarvot ovat **laskennallinen tuotevertailuarvio**, eivät mittaus: noin 10,14 g imeytyvää hiilihydraattia, 2,13 g proteiinia ja 3,69 g rasvaa / sämpylä (16 kpl). Schär Pofiberin 2,5 dl on noin **42,5 g** tuotteella 17 g/dl, ei 100–125 g. Mittaukseen perustuvia eräpainoja ei ole; [lähde- ja laskentamuistio](https://github.com/ozirix-dev/Reseptit/blob/main/docs/nutrition/gluteenittomat-kolme-2026-11-11.md). GK ei laskettu. Pintaan lisätty kaurahiutalemäärä on Recipavon oma lisäys ja sisältyy arvioon.
+- **Tämä on grammoihin määritelty oma toimituksellinen kokeiluversio, jota ei ole koeleivottu.** Se noudattaa alkuperäisen reseptin ainesosaryhmiä ja työjärjestystä, mutta grammaerä on määritelty itsenäisesti. Erityisesti Pofiberin ja psylliumin sitovuus sekä 16 sämpylän rakenne on varmennettava ennen julkaisua.
+- Ravintoarvot ovat **laskennallinen tuotevertailuarvio**, eivät mittaus: noin 10,14 g imeytyvää hiilihydraattia, 2,13 g proteiinia ja 3,69 g rasvaa / sämpylä (16 kpl). Schär Pofiberin 2,5 dl on noin **42,5 g** tuotteella 17 g/dl, ei 100–125 g. Mittaukseen perustuvia eräpainoja ei ole; [lähde- ja laskentamuistio](https://github.com/ozirix-dev/Reseptit/blob/main/docs/nutrition/gluteenittomat-kaksi-2026-11-11.md). GK ei laskettu. Pintaan lisätty kaurahiutalemäärä on Recipavon oma lisäys ja sisältyy arvioon.
 - Inspiraatio ja valmistusvertailu: [Keliakialiitto – gluteenittomat kauralesesämpylät](https://www.keliakialiitto.fi/ruoka/reseptit/gluteenittomat-kauralesesampylat/).
