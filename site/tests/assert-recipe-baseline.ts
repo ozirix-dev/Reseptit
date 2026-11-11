@@ -4,12 +4,12 @@ import { execFileSync } from "node:child_process";
 import { readFileSync } from "node:fs";
 import path from "node:path";
 import { recipeTextForApprovedSnapshot } from "../scripts/approved-recipe-note-edits";
-import { historicalBreakfastRecipe, reviewedBreakfastPaths } from "../scripts/gk100-breakfast-sealed-source";
 import { historicalFarinataForApprovedPanVersion } from "../scripts/gk100-farinata-sealed-source";
 import { parseMarkdown } from "../src/content/markdown";
 import { textHash } from "../scripts/gk149-model";
 import approvedTranslations from "./approved-translation-baseline.json";
 import preparedTranslations from "./prepared-translation-baseline.json";
+import { historicalBreakfastRecipe, reviewedBreakfastPaths } from "../scripts/gk100-breakfast-sealed-source";
 
 // PR #302 introduced three recipes after the frozen 326-recipe GK baseline.
 // The separately approved P0 image/ingredient correction is pinned to one
