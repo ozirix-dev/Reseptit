@@ -21,3 +21,14 @@ const held = new Set<string>(f25UnverifiedNutritionSourceIds);
 export function withholdF25Nutrition(recipeId: string, locale: RecipeLocale): boolean {
   return locale === "fi" && held.has(recipeId);
 }
+
+/** A held FI nutrition version must not be listed under a numerical GK class.
+ * Keep other locales and unaffected source classes unchanged.
+ */
+export function publicF25GkFilterCategories<T extends string>(
+  categories: Readonly<Record<string,T>>, locale: RecipeLocale,
+): Record<string,T> {
+  return Object.fromEntries(
+    Object.entries(categories).filter(([id]) => !withholdF25Nutrition(id, locale)),
+  );
+}
