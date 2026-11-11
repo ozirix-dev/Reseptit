@@ -3,6 +3,7 @@ import { createHash } from "node:crypto";
 import test from "node:test";
 import { siteContent } from "../src/generated/content.generated";
 import { createAssistantCatalog } from "../src/features/assistant/catalog";
+import {withholdF25Nutrition} from "../src/features/recipes/f25-nutrition-withhold";
 import { assistantEvalCases } from "../src/features/assistant/eval-cases";
 import { evaluateAssistantCases } from "../src/features/assistant/offline-evaluation";
 import { parseAssistantIntent, resolveAssistantIntent } from "../src/features/assistant/intent-contract";
@@ -58,8 +59,11 @@ test("A4 resolution only supplies source-verified recipe routes and nullable pub
         assert.ok(siteContent.recipes.some((row) => row.locale === fixture.locale &&
           row.recipeId === item.recipeId && row.routePath === item.routePath), fixture.id);
         assert.equal("glycemicLoadPerServing" in item, false);
+        const source=siteContent.recipes.find((row) => row.locale === fixture.locale && row.recipeId === item.recipeId)!;
         assert.deepEqual(item.nutritionPerServing,
-          siteContent.recipes.find((row) => row.locale === fixture.locale && row.recipeId === item.recipeId)!.nutrition);
+          withholdF25Nutrition(source.recipeId,source.locale)
+            ? {carbsNetG:null,carbsTotalG:null,proteinG:null,fatG:null}
+            : source.nutrition);
       }
     } else if (result.action === "compare") {
       assert.equal(result.results.length, 2);
