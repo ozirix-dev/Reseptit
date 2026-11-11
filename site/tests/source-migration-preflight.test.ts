@@ -51,3 +51,19 @@ test("preflight prevents known quarantines, malformed IDs and duplicates", async
   assert.equal(result[2].classification, "CANDIDATE_REQUIRES_REVIEW");
   assert.ok(result[3].blockers.includes("DUPLICATE_CANDIDATE"));
 });
+
+test("GK100 first-five soba is HOLD before a canonical edit, while the other two pass known-source screens", async () => {
+  const ids = [
+    "japanilainen-soba-aamiaiskeitto",
+    "kiinalainen-jianbing-munaletty",
+    "kiinalainen-katkarapu-wontonkeitto",
+  ];
+  const inputs = await loadSourceMigrationInputs(root, ids);
+  assert.ok(inputs.gk100ApprovedSourceIds.size >= 30, "GK100 release manifest unexpectedly empty");
+  const result = classifyCanonicalMethodMigration(ids, inputs);
+  assert.equal(result[0].classification, "HOLD");
+  assert.ok(result[0].blockers.includes("GK100_APPROVED_SOURCE_SHA_REVIEW_REQUIRED"));
+  assert.deepEqual(result.slice(1).map(x => x.classification),
+    ["CANDIDATE_REQUIRES_REVIEW", "CANDIDATE_REQUIRES_REVIEW"]);
+  for (const candidate of result.slice(1)) assert.deepEqual(candidate.blockers, []);
+});
