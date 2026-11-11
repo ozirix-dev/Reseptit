@@ -44,8 +44,8 @@ export const sourceReviewNotices: Readonly<Record<string, SourceReviewNotice>> =
     allergens: "Sisältää vehnää eli gluteenia. Hunajaa on vain 1 rkl koko reseptissä; voita ei ole ainesluettelossa.",
   },
   "vietnamilainen-banh-cuon-sienilla": {
-    heading: "Riisilevyjen valmistus ja täytteen turvallisuus",
-    details: "Sienistä huolimatta täytteessä on 150 g raakaa porsaan jauhelihaa: tämä ei ole kasvisruoka. Kypsennä jauheliha kauttaaltaan täysin kypsäksi. Ohuiden riisilevyjen höyryttämiseen ja irrottamiseen on varattu noin 40–50 minuuttia; julkisen sivun 50 minuutin kokonaisaika on toimituksellinen arvio, ei fyysisesti koepaistettu mittaus.",
+    heading: "Valmistusajan ja täytteen tarkistus kesken",
+    details: "Sienistä huolimatta täytteessä on 150 g raakaa porsaan jauhelihaa: tämä ei ole kasvisruoka. Kypsennä jauheliha kauttaaltaan täysin kypsäksi. Riisilevyjen höyryttämisen ja irrottamisen takia ilmoitettua 25 minuutin kokonaisaikaa ei ole varmistettu; varaa enemmän aikaa.",
     allergens: "Kalakastike sisältää kalaa. Tarkista muut allergeenit tuotepakkauksista.",
   },
 });
