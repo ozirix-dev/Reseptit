@@ -227,5 +227,74 @@
     "Select independently verified matching FI photo",
     "Establish exact GK unavailable disposition and bind all three GK hash keys to this new source",
     "Finalize FI macros and authorize only when release-gate check is true"
-  ]
+  ],
+  "productLabelDecision": {
+    "version": "2026-11-11_REVIEW_CURRENT_RETAIL_CANDIDATES",
+    "status": "CANDIDATES_CORROBORATED_NOT_PACK_PHOTO_CONFIRMED",
+    "riceFlour": {
+      "ean": "6430041080152",
+      "selectedPer100g": {
+        "carbohydrate": 74,
+        "protein": 8,
+        "fat": 1.8,
+        "fibre": 1,
+        "salt": 0.1
+      },
+      "corroboratingCurrent": [
+        "https://www.k-ruoka.fi/kauppa/tuote/viljatuote-hieno-riisijauho-500g-gton-6430041080152",
+        "https://www.s-kaupat.fi/tuote/virtasalmen-viljatuote-gluteeniton-hieno-riisijauho-500g/6430041080152",
+        "https://www.kespro.com/tuotteet/viljatuote-hieno-riisijauho-500g-gluteeniton-6430041080152"
+      ],
+      "historicalManufacturerCatalog": {
+        "url": "https://asiakas.kotisivukone.com/files/viljatuote.kotisivukone.com/TUOTELUETTELO_Virtasalmen_Viljatuote_Oy.pdf",
+        "age": "historical, roughly 2017 - NOT current package",
+        "per100g": {
+          "carbohydrate": 76,
+          "protein": 6.1,
+          "fat": 0.7,
+          "fibre": 2.3
+        },
+        "carbDifferencePerServingG": 1,
+        "treatment": "Historical package version only; do not merge nutrient values with current 74g retail records"
+      },
+      "productFibreDeclared": true,
+      "productPolyolsExplicit": null
+    },
+    "fishSauce": {
+      "ean": "8850620888203",
+      "selectedMarketLabel": "CT_FOOD_SWEDEN_2026_11",
+      "selectedPer100ml": {
+        "carbohydrate": 3,
+        "protein": 11,
+        "fat": 0,
+        "fibre": 0,
+        "salt": 27.2
+      },
+      "selectedSource": "https://ctfood.se/fish-sauce-glass-12x725ml-squid-brand/?language=en",
+      "independentCurrentRetailCorroboration": "https://www.aasiamarket.fi/en/product/fish-sauce-725ml-squid/",
+      "ambiguousRetailDenominator": "Aasia Market shows 'per 100g/ml', therefore CT Food is the unambiguous per-100ml anchor",
+      "alternateSameEanProfiles": [
+        {
+          "url": "https://edeka-foodservice.de/eigenmarken/produkte/710673002/squid-fischsauce-725ml",
+          "nutrientDenominator": "per100ml or per100g ambiguous",
+          "fatG": 0.5,
+          "carbohydrateG": 3,
+          "proteinG": 11,
+          "saltG": 27.2
+        },
+        {
+          "url": "https://asia.at/produkt/fischsauce-725ml/",
+          "nutrientDenominator": "per100ml",
+          "fatG": 0,
+          "carbohydrateG": 3.4,
+          "proteinG": 10,
+          "saltG": 24.4
+        }
+      ],
+      "physicalPackageVersionVerified": false,
+      "productPolyolsExplicit": null,
+      "treatment": "Never infer per 100g from 100ml; selected market version is a documented scenario, not confirmed user pack"
+    },
+    "publicationApproved": false
+  }
 }
