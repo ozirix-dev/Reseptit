@@ -30,7 +30,9 @@ export function auditF25A2FourDrafts(){
     const gate=f25SourceReleaseGate.sources.find(x=>x.recipe_id===record.recipeId);
     if(!gate||gate.approval!==null)throw Error("F25_A2_WRONG_RELEASE_AUTHORIZATION");
     if(!record.candidatePath.startsWith("docs/reviews/f25-a2-draft-recipes/")||record.candidatePath.startsWith("reseptit/"))throw Error("F25_A2_WRONG_DESTINATION");
-    const draft=readFileSync(path.join(root,record.candidatePath),"utf8");
+    const draftBytes=readFileSync(path.join(root,record.candidatePath));
+    if(gitBlob(draftBytes)!==record.candidateGitBlobSha)throw Error("F25_A2_DRAFT_CHANGED: "+record.recipeId);
+    const draft=draftBytes.toString("utf8");
     for(const needle of ["EI JULKAISUUN","## Ainekset","## Valmistus","Ei koepaistoa"])if(!draft.includes(needle))throw Error("F25_A2_INCOMPLETE_DRAFT: "+record.recipeId+": "+needle);
     for(const flag of ["nutritionApproved","gkApproved","translationApproved","physicalTrialCompleted"] as const)
       if(record[flag]!==false)throw Error("F25_A2_APPROVAL_FALSE_CLAIM: "+record.recipeId);

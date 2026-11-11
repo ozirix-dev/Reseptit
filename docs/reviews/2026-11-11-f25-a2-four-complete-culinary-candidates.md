@@ -22,7 +22,7 @@
 
 ## Koodin ja näyttöjen suoja
 
-- 4 raakaa FI-lähdettä Git-blob-SHA-lukittuja, niiden 4-kanonista makrokenttää tai GI/GK-mallia ei muokata.
+- 4 raakaa FI-lähdettä **ja neljä uutta kokonaista FI-luonnosta** Git-blob-SHA-lukittuja erikseen. Jokaisen luonnoksen sisällön muuttaminen ilman uuden lähde- ja päätöskatselmoinnin version päivitystä pysäyttää CI:n. Lähteiden 4-kanonista makrokenttää tai GI/GK-mallia ei muokata.
 - Ainesrivit, nimetyt uudet määrät, vanhat ja uudet kokonaisajat sekä varsinaiset valmistusvaiheet kirjataan koneelliseen päätösmanifestiin. Testi ajaa lähdeidentiteetin ja julkaisun fail-closed-tarkistuksen myös kohdennetussa käännös-CI:ssä.
 - 4/4 `nutritionApproved:false`, `gkApproved:false`, `translationApproved:false`, `physicalTrialCompleted:false`. Vanha #399 Draft ei ole julkaisukelpoinen eikä siitä yhdistetä kieliversioita ilman uutta hyväksyntää.
 - Seuraavassa erillisessä FI-hyväksyntä-PR:ssä päivitetään `reseptit/`-lähde, laskenta/tuotekoostumus, GI/GK:n uusi versiosidos, `f25-release-gate.json` ja EN/SV/TH merkitystarkisteet vain yksilöidyille hyväksytyille resepteille.
