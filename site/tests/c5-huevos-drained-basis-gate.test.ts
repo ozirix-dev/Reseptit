@@ -23,8 +23,8 @@ test("C5 current and legacy bean EANs stay independent and as-sold labels cannot
     assert.equal(r.releaseAuthorized,false);
     assert(r.packagingYieldRatio>0 && r.packagingYieldRatio<1);
   }
-  assert.equal(outputs[0].counterfactualPerServing.availableCarbohydrateG-
-      outputs[1].counterfactualPerServing.availableCarbohydrateG,4.12);
+  assert.equal(Number((outputs[0].counterfactualPerServing.availableCarbohydrateG-
+      outputs[1].counterfactualPerServing.availableCarbohydrateG).toFixed(2)),4.12);
 });
 test("C5 fails on invented drained evidence or invalid bean mass",()=>{
   const candidate=huevosV2ProductCandidates[0];
