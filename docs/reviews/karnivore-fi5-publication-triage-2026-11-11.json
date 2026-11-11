@@ -1,0 +1,204 @@
+{
+  "documentType": "KARNIVORE_FI5_PUBLICATION_EVIDENCE_HOLD",
+  "version": 1,
+  "reviewDate": "2026-11-11",
+  "imagePr": 488,
+  "publicationAuthorized": false,
+  "rawScenarioCanBePublished": false,
+  "foodFactsMayBeProxies": true,
+  "notes": "Image approval and CI are separate from product matching, edible yield, source-verified macro calculation and GK. A numeric zero derived from an ingredient proxy does not authorize recipe CHO=0 or GK=0.",
+  "recipes": [
+    {
+      "recipeId": "karnivore-smashburger",
+      "sourceBlobSha": "9d981f8eb3014dac2be3fcd004151356bba713f8",
+      "sourcePath": "tuonti/karnivore/paaruoat/karnivore-smashburger.md",
+      "imagePath": "kuvat/paaruoat/karnivore-smashburger.webp",
+      "imageDimensions": [
+        1280,
+        853
+      ],
+      "status": "HOLD_NO_PUBLICATION",
+      "priority": "NEXT_AFTER_EXACT_PRODUCT_AND_YIELD",
+      "gkStatus": "UNAVAILABLE_NOT_ZERO",
+      "rawScenarioStatus": "NONPUBLISHABLE_PROXY_INPUTS",
+      "sourceMatchCounts": {
+        "matched": 1,
+        "proxy": 2,
+        "unresolved": 0
+      },
+      "recipeServings": 2,
+      "disputedRawScenarioCarbsPerServingG": 0,
+      "blockers": [
+        "EXACT_BEEF_PRODUCT_NOT_SELECTED",
+        "EXACT_BEEF_TALLOW_PRODUCT_NOT_SELECTED",
+        "PAN_RENDERED_FAT_RETENTION_NOT_VERIFIED",
+        "FIBRE_POLYOL_SOURCE_MATCH_REVIEW"
+      ],
+      "productCandidates": [
+        {
+          "ingredient": "naudan jauhelihaa",
+          "url": "https://snellman.fi/fi/tuotteet/kunnon-naudan-jauheliha-20-400-g/",
+          "candidate": "Snellman Kunnon naudan jauheliha 20 % EAN 6409620011856",
+          "decision": "MATCH_IF_RECIPE_SELECTS_EXACT_PRODUCT"
+        },
+        {
+          "ingredient": "naudan talia",
+          "url": "https://ellinkeittio.fi/products/ellin-keittio-ellin-100-ruohoruokitun-naudan-tali-500-g",
+          "candidate": "Ellin 100 % ruohoruokitun naudan tali; label 99 g fat/100 g",
+          "decision": "ALTERNATE_CANDIDATE_NOT_AUTO_APPROVED"
+        }
+      ]
+    },
+    {
+      "recipeId": "karnivore-rapeat-kananreisipalat",
+      "sourceBlobSha": "287c3d9de8a6ef9393c907b7d362408ef3fbfe19",
+      "sourcePath": "tuonti/karnivore/paaruoat/karnivore-rapeat-kananreisipalat.md",
+      "imagePath": "kuvat/paaruoat/karnivore-rapeat-kananreisipalat.webp",
+      "imageDimensions": [
+        1280,
+        853
+      ],
+      "status": "HOLD_NO_PUBLICATION",
+      "priority": "LATER_AFTER_YIELD",
+      "gkStatus": "UNAVAILABLE_NOT_ZERO",
+      "rawScenarioStatus": "NONPUBLISHABLE_PROXY_INPUTS",
+      "sourceMatchCounts": {
+        "matched": 2,
+        "proxy": 1,
+        "unresolved": 0
+      },
+      "recipeServings": 4,
+      "disputedRawScenarioCarbsPerServingG": 0.02,
+      "blockers": [
+        "RAW_WEIGHT_INCLUDES_BONE",
+        "EDIBLE_SKIN_MEAT_YIELD_NOT_VERIFIED",
+        "FAT_RETENTION_NOT_VERIFIED",
+        "CUT_SPECIFIC_PRODUCT_DATA_NOT_APPROVED"
+      ],
+      "productCandidates": [
+        {
+          "ingredient": "nahallisia, luullisia broilerin reisipaloja",
+          "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/data-files",
+          "candidate": "AFCD F002809: edible skin and flesh, not bone-in sale mass",
+          "decision": "PROXY_HOLD"
+        }
+      ]
+    },
+    {
+      "recipeId": "karnivore-maksa-ja-pekoni",
+      "sourceBlobSha": "1462bfed866d9c18c4e7bf434e0abb9759d0efb6",
+      "sourcePath": "tuonti/karnivore/paaruoat/karnivore-maksa-ja-pekoni.md",
+      "imagePath": "kuvat/paaruoat/karnivore-maksa-ja-pekoni.webp",
+      "imageDimensions": [
+        1280,
+        853
+      ],
+      "status": "HOLD_NO_PUBLICATION",
+      "priority": "SECOND_AFTER_BACON_IDENTITY",
+      "gkStatus": "UNAVAILABLE_NOT_ZERO",
+      "rawScenarioStatus": "NONPUBLISHABLE_PROXY_INPUTS",
+      "sourceMatchCounts": {
+        "matched": 3,
+        "proxy": 1,
+        "unresolved": 0
+      },
+      "recipeServings": 3,
+      "disputedRawScenarioCarbsPerServingG": 6.707,
+      "blockers": [
+        "BACON_SPECIFIC_RECIPE_AND_NUTRITION_SOURCE_MISSING",
+        "BACON_RENDERED_FAT_RETENTION_NOT_VERIFIED",
+        "LIVER_VITAMIN_A_NOTICE_MUST_REMAIN",
+        "FIBRE_POLYOL_SOURCE_MATCH_REVIEW"
+      ],
+      "productCandidates": [
+        {
+          "ingredient": "naudanmaksaa",
+          "url": "https://fineli.fi/fineli/fi/elintarvikkeet/786",
+          "candidate": "Fineli 786: liver contains approx 5 g available carbohydrate/100 g",
+          "decision": "MATCHED_RAW"
+        },
+        {
+          "ingredient": "sokeritonta pekonia",
+          "url": "https://www.k-ruoka.fi/kauppa/tuote/pirkka-pekoni-140g-6410402012312",
+          "candidate": "Pirkka Pekoni 140g: ingredient label does not list sugar but contains additives and has 1 g CHO/100 g; DOES NOT match recipe requirement only pork and salt",
+          "decision": "COUNTEREXAMPLE_DO_NOT_USE_AS_EXACT"
+        }
+      ]
+    },
+    {
+      "recipeId": "karnivore-meatza",
+      "sourceBlobSha": "4119c278de5a80acbcb68c32f1772aeb22afdfc3",
+      "sourcePath": "tuonti/karnivore/paaruoat/karnivore-meatza.md",
+      "imagePath": "kuvat/paaruoat/karnivore-meatza.webp",
+      "imageDimensions": [
+        1280,
+        853
+      ],
+      "status": "HOLD_NO_PUBLICATION",
+      "priority": "LATER_AFTER_YIELD",
+      "gkStatus": "UNAVAILABLE_NOT_ZERO",
+      "rawScenarioStatus": "NONPUBLISHABLE_PROXY_INPUTS",
+      "sourceMatchCounts": {
+        "matched": 1,
+        "proxy": 3,
+        "unresolved": 0
+      },
+      "recipeServings": 3,
+      "disputedRawScenarioCarbsPerServingG": 0,
+      "blockers": [
+        "EXACT_BEEF_PRODUCT_NOT_SELECTED",
+        "BACON_SPECIFIC_NUTRITION_SOURCE_MISSING",
+        "MOZZARELLA_SPECIFIC_PRODUCT_CARBOHYDRATES_MISSING",
+        "RENDERED_FAT_EXPLICITLY_DRAINED_WITHOUT_MEASUREMENT"
+      ],
+      "productCandidates": [
+        {
+          "ingredient": "mozzarellajuustoa",
+          "url": "https://www.s-kaupat.fi/tuote/coop-mozzarella-220125-g/7340191148918",
+          "candidate": "Coop mozzarella 17% fat: 1g CHO/100g; non-zero compared with 0g/100g proxy record",
+          "decision": "COUNTEREXAMPLE_PRODUCT_SELECTION_REQUIRED"
+        },
+        {
+          "ingredient": "mozzarellajuustoa",
+          "url": "https://www.s-kaupat.fi/tuote/valio-mozzarella-juustoraaste-e400-g/6408430348237",
+          "candidate": "Valio mozzarella cheese shred: 0g CHO/100g rounded but ingredients include milk protein and E460 anti-caking agent",
+          "decision": "ALTERNATE_NOT_AUTO_APPROVED"
+        }
+      ]
+    },
+    {
+      "recipeId": "karnivore-lammaskyljykset-voissa",
+      "sourceBlobSha": "a39dc65be9456dfeba9b4c3ddda593f465b368e3",
+      "sourcePath": "tuonti/karnivore/paaruoat/karnivore-lammaskyljykset-voissa.md",
+      "imagePath": "kuvat/paaruoat/karnivore-lammaskyljykset-voissa.webp",
+      "imageDimensions": [
+        1280,
+        853
+      ],
+      "status": "HOLD_NO_PUBLICATION",
+      "priority": "LATER_AFTER_YIELD",
+      "gkStatus": "UNAVAILABLE_NOT_ZERO",
+      "rawScenarioStatus": "NONPUBLISHABLE_PROXY_INPUTS",
+      "sourceMatchCounts": {
+        "matched": 2,
+        "proxy": 1,
+        "unresolved": 0
+      },
+      "recipeServings": 2,
+      "disputedRawScenarioCarbsPerServingG": 0.1,
+      "blockers": [
+        "BONE_IN_RAW_WEIGHT_EDIBLE_YIELD_MISSING",
+        "CUT_SPECIFIC_RETAIL_MATCH_NOT_APPROVED",
+        "BUTTER_AND_RENDERED_FAT_RETENTION_NOT_VERIFIED"
+      ],
+      "productCandidates": [
+        {
+          "ingredient": "luullisia lammaskyljyksiä",
+          "url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/data-files",
+          "candidate": "AFCD F004923: lamb cutlet with bone, edible portion must still be determined",
+          "decision": "PROXY_HOLD"
+        }
+      ]
+    }
+  ]
+}

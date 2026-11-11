@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { createHash } from "node:crypto";
 import { readFile } from "node:fs/promises";
 import path from "node:path";
 import test from "node:test";
@@ -144,5 +145,55 @@ test("all ten isolated karnivore drafts remain validated and out of published co
     } else {
       assert.equal(publicFi, undefined, `${id}: remaining work-queue recipe must not be published`);
     }
+  }
+});
+
+test("FI5 carnivore evidence is version-pinned and none of the five drafts has implicit publication approval", async () => {
+  const root = path.resolve(import.meta.dirname, "../..");
+  const audit = JSON.parse(await readFile(path.join(root, "docs/reviews/karnivore-fi5-publication-triage-2026-11-11.json"), "utf8")) as {
+    publicationAuthorized: boolean;
+    recipes: Array<{recipeId:string;sourceBlobSha:string;sourcePath:string;status:string;sourceMatchCounts:{matched:number;proxy:number;unresolved:number};blockers:string[];gkStatus:string;rawScenarioStatus:string;productCandidates:Array<{url:string}>}>;
+  };
+  const sourceMap = JSON.parse(await readFile(path.join(root, "docs/reviews/karnivore-10-nutrition-source-map-2026-11-11.json"), "utf8")) as {
+    recipes: Array<{recipeId:string;inputs:Array<{sourceMatch:string}>;modelledCarbohydratePerServingFromMappedInputsG:number|null}>;
+  };
+  const expected = [
+    "karnivore-smashburger", "karnivore-rapeat-kananreisipalat", "karnivore-maksa-ja-pekoni",
+    "karnivore-meatza", "karnivore-lammaskyljykset-voissa"
+  ];
+  assert.equal(audit.publicationAuthorized, false);
+  assert.deepEqual(audit.recipes.map(r=>r.recipeId),expected);
+  for (const item of audit.recipes) {
+    assert.equal(item.status,"HOLD_NO_PUBLICATION");
+    assert.equal(item.gkStatus,"UNAVAILABLE_NOT_ZERO");
+    assert.equal(item.rawScenarioStatus,"NONPUBLISHABLE_PROXY_INPUTS");
+    assert(item.blockers.length>0);
+    assert(item.productCandidates.every(c=>c.url.startsWith("https://")));
+    const raw = await readFile(path.join(root,item.sourcePath));
+    const sha = createHash("sha1").update(`blob ${raw.byteLength}\\0`.replace("\\0","\0")).update(raw).digest("hex");
+    assert.equal(sha,item.sourceBlobSha,`${item.recipeId}: FI5 source changed without re-review`);
+    const front = parseMarkdown(raw.toString("utf8"));
+    assert(front);
+    const recipe=recipeFrontmatterSchema.parse(front.data);
+    assert.equal(recipe.status,"draft",`${item.recipeId}: publication is blocked`);
+    assert.equal(recipe.language,"fi");
+    assert.deepEqual(recipe.image?.src,`paaruoat/${item.recipeId}.webp`);
+    assert.deepEqual([recipe.image?.width,recipe.image?.height],[1280,853]);
+    const map = sourceMap.recipes.find(r=>r.recipeId===item.recipeId);
+    assert(map,`${item.recipeId}: expected source map entry`);
+    for(const status of ["matched","proxy","unresolved"] as const){
+      assert.equal(map.inputs.filter(x=>x.sourceMatch===status).length,item.sourceMatchCounts[status]);
+    }
+    assert(item.sourceMatchCounts.proxy>0,`${item.recipeId}: no silent proxy promotion`);
+    assert.equal(siteContent.recipes.some(r=>r.recipeId===item.recipeId&&r.locale==="fi"),false);
+  }
+  const liver=sourceMap.recipes.find(r=>r.recipeId==="karnivore-maksa-ja-pekoni");
+  assert(liver && liver.modelledCarbohydratePerServingFromMappedInputsG!==null && liver.modelledCarbohydratePerServingFromMappedInputsG>6.6,
+    "liver's naturally available carbohydrate cannot be zero");
+  const meatza=await readFile(path.join(root,"tuonti/karnivore/paaruoat/karnivore-meatza.md"),"utf8");
+  assert.match(meatza,/Valuta pellille irronnut rasva/i,"meatza drained fat requires its own yield model");
+  for (const id of ["karnivore-rapeat-kananreisipalat","karnivore-lammaskyljykset-voissa"]){
+    const row=audit.recipes.find(r=>r.recipeId===id)!;
+    assert(row.blockers.some(b=>/BONE|YIELD/.test(b)),`${id}: bone-to-edible yield must remain an explicit blocker`);
   }
 });
