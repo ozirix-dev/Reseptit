@@ -14,7 +14,6 @@ export const cFiveIds = Object.freeze([
   "meksikolainen-huevos-divorciados",
 ]);
 type Macro = "carbohydrate" | "fibre" | "protein" | "fat";
-const macros = ["carbohydrate","fibre","protein","fat"] as const;
 const round2=(n:number)=>Math.round((n+Number.EPSILON)*100)/100;
 const sha256=(s:string)=>createHash("sha256").update(s.replaceAll("\r\n","\n")).digest("hex");
 type StoredIngredient = {
@@ -46,7 +45,7 @@ function sourceMacro(e:StoredEvidence,key:Macro):number{
     const grams=ingredientGrams(item);
     if(!grams)return sum;
     const per100=item.record?.per100g[key];
-    assert.equal(typeof per100,"number",e.recipeId+": MISSING_SOURCE_COMPONENT:"+item.item+"/"+key);
+    assert(typeof per100==="number",e.recipeId+": MISSING_SOURCE_COMPONENT:"+item.item+"/"+key);
     return sum+grams*per100/100;
   },0)/e.servings;
 }
@@ -56,7 +55,7 @@ function sensitivity(e:StoredEvidence,itemName:string,weights:number[]){
   const baseline=sourceMacro(e,"carbohydrate");
   const oldGrams=ingredientGrams(original);
   const per100=original.record?.per100g.carbohydrate;
-  assert.equal(typeof per100,"number");
+  assert(typeof per100==="number");
   return weights.map(grams=>({
     ingredient:itemName,grams,
     carbsNetPerServingG:round2(baseline+(grams-oldGrams)*per100!/100/e.servings),
