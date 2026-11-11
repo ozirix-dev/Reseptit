@@ -15,3 +15,11 @@ Ainesosien nimiä tai määriä, annosmääriä, tuotepohjia, neljää ravintoke
 Ensimmäinen CI-ajo https://github.com/ozirix-dev/Reseptit/actions/runs/42924125335 epäonnistui labnehin GI/GK-sidoksen vuoksi. Labneh palautettiin ja testien jako päivitettiin. **Älä yhdistä PR:ää ennen uuden täsmä-HEAD CI PASSia ja näyttö-/ravintoperustan tarkistusta.**
 
 Labnehin lopullinen lähdemigraatio tehdään omana tutkimustyönään, jossa muuttuva valmistustapafingerprint ja vastaavat ravinto/GK-lähdeviitteet käsitellään hyväksytyllä, auditoitavalla tavalla, ei pelkällä testin ohituksella.
+
+## Jatkokatselmointi: jäädytetty GK-historia ja alkuperäisen version palautus
+
+CI-ajon [42924655911](https://github.com/ozirix-dev/Reseptit/actions/runs/42924655911) normaali muuttuneen reseptin validointi oli vihreä, mutta kolme vanhan GK:n historiatestiä esti bakwanin kanonisen tekstimuutoksen, koska alkuperäisen 326-reseptin Git-puu on jäädytetty. Historian tarkoitusta ei saa poistaa eikä laskentaa hyväksyä tekstikorjauksen seurauksena.
+
+Lisätty `site/tests/b21-canonical-historical-transition.ts` hyväksyy ainoastaan **kahden yksilöidyn FI-tiedoston täsmälleen commitissa `a0e5d7355fe2f74b74dfbd369729184344943aba` tarkistetut tavut**, vertaa ne ennen muutosta olleeseen `bac553e873410b66a2b5c69b41365618319265b6` -lähteeseen ja todistaa, että *kaikki valmistusosion ulkopuolinen sisältö on identtistä*. Vain jäädytettyjä historiatestejä varten rekonstruoidaan alkuperäinen teksti. Julkinen resepti käyttää edelleen korjattua kanonista FI-ohjetta. Tuntematon tuleva muutos epäonnistuu.
+
+Tätä historiallista sovitinta **ei käytetä GK-tulosten uuteen hyväksyntään**. Myöhempi ainesosien, valmistustavan metatietojen tai ravintoarvojen muutos pitää tutkia kokonaan uutena versiona. Raportin aiemmat ravinto-HOLDit pysyvät.
