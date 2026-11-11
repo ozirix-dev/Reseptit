@@ -86,14 +86,15 @@ for (const filename of await markdownFiles(path.join(root, "reseptit"))) {
     input: { recipeId, servings: Number(servings), ingredients },
   });
 }
-// The first FI-only carnivore release is public but its GI/GK input is unresolved.
+// The first FI-only carnivore releases are public but its GI/GK input is unresolved.
 // Keep the historically reviewed GK calculation corpus byte-for-byte comparable,
 // while reporting these exact, SHA-pinned new public sources separately.
 // No GI or zero-GL approval follows from this quarantine.
 const newPublicGkPendingSources: Readonly<Record<string, string>> = Object.freeze({
   "karnivore-steak-and-eggs": "5e579c3a60b1835d2bd4895c377502139bb23b91",
   "karnivore-voilohi-pannulla": "07f5b5670af65776209493cc4dce2b897f2635b0",
-  "karnivore-jauhelihakulho-munalla": "9f294f216ac4f94dacf745e197b3d6bd3cc96451"
+  "karnivore-jauhelihakulho-munalla": "9f294f216ac4f94dacf745e197b3d6bd3cc96451",
+  "karnivore-smashburger": "9aeef01b3fd8f907f1d0ffae3c0f9d7dbb75b737"
 });
 const separatelyTrackedPublishedGk = [...publishedRecipeSources.entries()]
   .filter(([id]) => Object.hasOwn(newPublicGkPendingSources, id))
