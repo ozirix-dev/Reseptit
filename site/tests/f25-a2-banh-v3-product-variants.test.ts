@@ -47,7 +47,7 @@ test("V3 ingredient-by-ingredient label and oil-retention scenarios cannot imput
           const portion=ingredient.basis==="100g"||ingredient.basis==="100ml"?ingredient.amount/100:1;
           sum+=value*portion*(metric==="fat"&&ingredient.retention?retention:1);
         }
-        assert.equal(target[metric],missing?null:round(sum/r.servings),r.recipeId+":"+label+":"+metric);
+        assert.equal(target[metric],missing?null:round(sum/evidence.servings),r.recipeId+":"+label+":"+metric);
       }
       assert.equal(target.polyols,null);
     }
