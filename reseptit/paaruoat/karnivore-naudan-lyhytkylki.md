@@ -38,7 +38,7 @@ Luulliset naudan lyhytkyljet kypsyvät kannellisessa padassa meheviksi matalassa
 
 1. Kuumenna uuni 150 °C:seen. Kuivaa kylkipalat ja hiero suola kaikkialle niiden pinnalle.
 2. Asettele kylkipalat tiiviisti kannelliseen uunipataan luupuoli alaspäin. Kaada vesi padan pohjalle siten, ettei liha peity kokonaan.
-3. Peitä pata tiiviillä kannella ja hauduta uunin keskitasolla noin 4–4,5 tuntia. 
+3. Peitä pata tiiviillä kannella ja hauduta uunin keskitasolla noin 4–4,5 tuntia.
 4. Tarkista kypsyys: liha on valmista, kun haarukka läpäisee sen helposti ja liha irtoaa luusta ilman voimakasta vetämistä. Jatka tarvittaessa 20–30 minuutin jaksoissa.
 5. Nosta kyljet padasta, anna levätä muutama minuutti ja tarjoa padasta erottuneen lihaliemen kanssa.
 
