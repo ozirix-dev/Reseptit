@@ -193,3 +193,22 @@ test("F25 A2 exact-label scenarios must not grant release", async () => {
     "pohjoisafrikkalainen-baghrir",
   ]);
 });
+
+test("F25 A2 GI evidence screens must not import food analogies into numeric GK", async () => {
+  const {readFileSync} = await import("node:fs");
+  const path = await import("node:path");
+  const root = path.resolve(import.meta.dirname, "../..");
+  const evidence = JSON.parse(readFileSync(path.join(root, "docs/reviews/2026-11-11-f25-a2-gi-evidence-matching.json"), "utf8"));
+  const gate = JSON.parse(readFileSync(path.join(root, "meta/kaannokset/f25-release-gate.json"), "utf8"));
+  assert.equal(evidence.schemaVersion, 1);
+  assert.equal(evidence.releaseStatus, "HOLD");
+  assert.equal(evidence.numericGkAuthorized, false);
+  assert.equal(evidence.recipes.length, 4);
+  for (const recipe of evidence.recipes) {
+    assert.equal(recipe.gk, null, recipe.recipeId);
+    assert.ok(recipe.evidence.length >= 1, recipe.recipeId);
+    assert.ok(recipe.evidence.every((e:any)=>e.match !== "EXACT"), recipe.recipeId);
+    assert.ok(recipe.evidence.every((e:any)=>/^https:/.test(e.url)), recipe.recipeId);
+    assert.equal(gate.sources.find((s:any)=>s.recipe_id === recipe.recipeId)?.approval, null);
+  }
+});
