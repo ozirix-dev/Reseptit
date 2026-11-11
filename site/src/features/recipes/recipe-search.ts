@@ -1,5 +1,6 @@
 import type { RecipeLocale } from "@/types/content";
 import { cuisines, ingredientGroups } from "@/content/recipe-facets";
+import {withholdF25Nutrition} from "./f25-nutrition-withhold";
 
 import type { RecipeSummary } from "@/content/route-data";
 
@@ -78,7 +79,7 @@ export function filterRecipes<T extends RecipeSummary>(recipes: T[], filters: Re
     if (filters.maxTime && (recipe.timeTotalMin === null || recipe.timeTotalMin > filters.maxTime)) return false;
     if (filters.cuisine && recipe.cuisine !== filters.cuisine) return false;
     if (filters.ingredient && !recipe.ingredientGroups?.includes(filters.ingredient)) return false;
-    if (filters.gl && glCategories[recipe.recipeId] !== filters.gl) return false;
+    if (filters.gl && (withholdF25Nutrition(recipe.recipeId, locale) || glCategories[recipe.recipeId] !== filters.gl)) return false;
     if (filters.glutenFree && recipe.glutenFree !== true) return false;
     if (filters.category !== "all" && recipe.category !== filters.category) return false;
     if (filters.diet === "keto" && recipe.dietClass !== "keto") return false;

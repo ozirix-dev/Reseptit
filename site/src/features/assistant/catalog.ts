@@ -1,6 +1,7 @@
 import type { RecipeEntry, RecipeLocale } from "../../types/content";
 import { localeIndexes, summarizeRecipe, type RecipeSummary } from "../../content/route-data";
 import { filterRecipes, type GlycemicLoadFilterCategory, type RecipeFilters } from "../recipes/recipe-search";
+import {withholdF25Nutrition} from "../recipes/f25-nutrition-withhold";
 
 /**
  * A1 is a read-only projection of the *already published* recipe build.
@@ -82,7 +83,9 @@ export function createAssistantCatalog(
         amount, unit, item, ...(note !== undefined ? { note } : {}),
       })),
       servings: recipe.servings,
-      nutritionPerServing: { ...recipe.nutrition }, // Null is unknown; never turn it into zero.
+      nutritionPerServing: withholdF25Nutrition(recipe.recipeId, recipe.locale)
+        ? {carbsNetG:null, carbsTotalG:null, proteinG:null, fatG:null}
+        : { ...recipe.nutrition }, // Withheld or unknown must stay null, never become zero.
       sourceVersion,
       publishedTranslations: { ...translations.get(recipe.recipeId) },
     };
