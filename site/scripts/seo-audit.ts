@@ -6,6 +6,7 @@ import { localeIndexes } from "../src/content/route-data";
 import { articles, articlePath, blogRoot, blogPosts, blogJsonLd } from "../src/features/blog/blog-data";
 import { glycemicLoadMeta, glycemicLoadPath, recipeUi } from "../src/features/recipes/recipe-i18n";
 import type { RecipeEntry, RecipeLocale } from "../src/types/content";
+import { withholdF25Nutrition } from "../src/features/recipes/f25-nutrition-withhold";
 
 export const siteBase = "https://ozirix-dev.github.io/Reseptit";
 export interface SeoFinding { route: string; code: string; detail: string }
@@ -80,7 +81,8 @@ export function inspectPage(html: string, expected: ExpectedPage): SeoFinding[] 
   if (jsonScripts.length !== 1) return issues;
   try {
     const data = JSON.parse(jsonScripts[0].content);
-    const nutrition = Object.fromEntries(Object.entries({ carbohydrateContent: recipe.nutrition.carbsTotalG, proteinContent: recipe.nutrition.proteinG, fatContent: recipe.nutrition.fatG }).filter(([, n]) => n !== null).map(([k, n]) => [k, `${n} g`]));
+    const withholding = withholdF25Nutrition(recipe.recipeId, recipe.locale);
+    const nutrition = Object.fromEntries(Object.entries({ carbohydrateContent: recipe.nutrition.carbsTotalG, proteinContent: recipe.nutrition.proteinG, fatContent: recipe.nutrition.fatG }).filter(([, n]) => !withholding && n !== null).map(([k, n]) => [k, `${n} g`]));
     const expectedData = JSON.parse(JSON.stringify({
       "@context": "https://schema.org", "@type": "Recipe", name: recipe.title, description: recipe.description || undefined,
       inLanguage: recipe.locale, recipeCategory: recipe.category, keywords: recipe.tags.length ? recipe.tags.join(", ") : undefined,

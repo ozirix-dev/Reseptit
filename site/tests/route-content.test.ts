@@ -4,6 +4,8 @@ import { readFile, readdir } from "node:fs/promises";
 import { siteContent } from "../src/generated/content.generated";
 import { contentForRoute, localeIndexes, serializeRouteContent } from "../src/content/route-data";
 import { parseRouteContent } from "../src/lib/load-content";
+import { recipeJsonLd } from "../src/features/recipes/schema";
+import { f25UnverifiedNutritionSourceIds, withholdF25Nutrition } from "../src/features/recipes/f25-nutrition-withhold";
 
 test("each index contains only its language's summaries and no instructions", () => {
   for (const [locale, route] of Object.entries(localeIndexes)) {
@@ -58,4 +60,22 @@ test("variant changes invalidate route JSON hashes without moving recipe routes"
   assert.notEqual(hash(original), hash(updated));
   assert.equal(updated.path, original.path);
   assert.equal(updated.recipes[0].routePath, original.recipes[0].routePath);
+});
+
+test("F25 four unverified nutrition sources never emit stale public JSON-LD nutrition", () => {
+  assert.equal(f25UnverifiedNutritionSourceIds.length, 4);
+  const blocked = new Set(f25UnverifiedNutritionSourceIds);
+  for(const id of blocked) {
+    assert.equal(withholdF25Nutrition(id,"fi"),true);
+    assert.equal(withholdF25Nutrition(id,"en"),false);
+    const recipe=siteContent.recipes.find(x=>x.locale==="fi" && x.recipeId===id);
+    assert.ok(recipe,"FI source missing: "+id);
+    const structured=recipeJsonLd(recipe);
+    assert.equal(Object.hasOwn(structured,"nutrition"),false,id+": stale NutritionInformation");
+    assert.equal(structured.recipeYield,String(recipe.servings));
+  }
+  const control=siteContent.recipes.find(x=>x.locale==="fi" && x.recipeId==="karibia-mango-limejogurtti");
+  assert.ok(control);
+  assert.equal(withholdF25Nutrition(control.recipeId,"fi"),false);
+  assert.ok(Object.hasOwn(recipeJsonLd(control),"nutrition"),"unaffected reviewed source keeps nutrition");
 });

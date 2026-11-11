@@ -1,9 +1,11 @@
 import type { RecipeEntry } from "../../types/content";
+import { withholdF25Nutrition } from "./f25-nutrition-withhold";
 
 export function recipeJsonLd(recipe: RecipeEntry): Record<string, unknown> {
+  const withholding = withholdF25Nutrition(recipe.recipeId,recipe.locale);
   const nutrition = Object.fromEntries(Object.entries({
     carbohydrateContent: recipe.nutrition.carbsTotalG, proteinContent: recipe.nutrition.proteinG, fatContent: recipe.nutrition.fatG,
-  }).filter(([, value]) => value !== null).map(([key, value]) => [key, `${value} g`]));
+  }).filter(([, value]) => !withholding && value !== null).map(([key, value]) => [key, `${value} g`]));
   return {
     "@context": "https://schema.org", "@type": "Recipe", name: recipe.title,
     description: recipe.description || undefined, inLanguage: recipe.locale, recipeCategory: recipe.category,
