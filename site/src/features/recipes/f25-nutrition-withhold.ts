@@ -21,3 +21,10 @@ const held = new Set<string>(f25UnverifiedNutritionSourceIds);
 export function withholdF25Nutrition(recipeId: string, locale: RecipeLocale): boolean {
   return locale === "fi" && held.has(recipeId);
 }
+
+/** Exact public label for an unavailable GK; never a numerical estimate or release approval. */
+export function f25ExplicitUndefinedGkLabel(recipeId: string, locale: RecipeLocale): string | null {
+  return locale === "fi" && recipeId === "vietnamilainen-banh-cuon-sienilla" && withholdF25Nutrition(recipeId,locale)
+    ? "GK: ei määritetty"
+    : null;
+}

@@ -662,3 +662,15 @@ test("copyright policy is unobtrusive, accessible and prerendered in all four la
     assert.ok(footer.includes('href="https://github.com/ozirix-dev/Reseptit/issues"'), `${locale}: correction channel`);
   }
 });
+
+test("FI bánh cuốn static page explicitly labels missing GK while keeping historical macros withheld", async () => {
+  const id="vietnamilainen-banh-cuon-sienilla";
+  const source=siteContent.recipes.find(r=>r.recipeId===id&&r.locale==="fi");
+  assert.ok(source);
+  const html=await readFile(path.join(dist,source.routePath.slice(1),"index.html"),"utf8");
+  const root=html.slice(html.indexOf('<div id="root">'));
+  assert.ok(root.includes("GK: ei määritetty"));
+  assert.ok(root.includes('data-gk-status="NOT_DEFINED"'));
+  assert.ok(root.includes('data-f25-nutrition-status="SOURCE_REVIEW_WITHHELD"'));
+  assert.ok(!root.includes('data-gk-status="CALCULATED"'));
+});
