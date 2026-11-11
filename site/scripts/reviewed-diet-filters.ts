@@ -56,11 +56,23 @@ export const reviewedDietFilters: Readonly<Record<string, {
   },
 };
 
-export async function reviewedDietTagsForSource(recipeId: string, locale: RecipeLocale, filePath: string): Promise<RecipeDietTag[]> {
+function gitBlobSha(buffer: Buffer): string {
+  return createHash("sha1").update(`blob ${buffer.byteLength}\0`).update(buffer).digest("hex");
+}
+
+/**
+ * Both the original Finnish source AND this locale's exact recipe must match
+ * their reviewed versions. Missing original => no review claim, even if the
+ * translation itself has not changed.
+ */
+export async function reviewedDietTagsForSource(
+  recipeId: string, locale: RecipeLocale, filePath: string, finnishSourcePath?: string,
+): Promise<RecipeDietTag[]> {
   const review = Object.hasOwn(reviewedDietFilters, recipeId) ? reviewedDietFilters[recipeId] : undefined;
-  if (!review) return [];
-  const buffer = await readFile(filePath);
-  const blobSha = createHash("sha1").update(`blob ${buffer.byteLength}\0`).update(buffer).digest("hex");
-  // Fail closed: changed source or translation loses its claim until re-reviewed.
-  return blobSha === review.sourceBlobShas[locale] ? [...review.tags] : [];
+  if (!review || !finnishSourcePath) return [];
+  const source = await readFile(finnishSourcePath);
+  if (gitBlobSha(source) !== review.sourceBlobShas.fi) return [];
+  if (locale === "fi" && filePath === finnishSourcePath) return [...review.tags];
+  const translation = await readFile(filePath);
+  return gitBlobSha(translation) === review.sourceBlobShas[locale] ? [...review.tags] : [];
 }
