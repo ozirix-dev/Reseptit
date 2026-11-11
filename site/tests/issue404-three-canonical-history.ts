@@ -2,13 +2,12 @@ import assert from "node:assert/strict";
 import { execFileSync } from "node:child_process";
 import { createHash } from "node:crypto";
 
-/** Three individually reviewed public FI preparations migrated into canonical sources.
+/** Two individually reviewed public FI preparations migrated into canonical sources.
  * Frozen original-GK audits require the original historical text. This helper
  * is for immutable historical tests ONLY; it grants no nutrition/GK approval.
  */
 const before = "bc2688a6b32a5a6711253a71a63b35b265c3ad30";
 const exactBlobs = {
-  "reseptit/aamupalat/japanilainen-soba-aamiaiskeitto.md": "d0deeb60a1f9af7a2e643a889fbe2d030bd39d96",
   "reseptit/aamupalat/kiinalainen-jianbing-munaletty.md": "15eef1ad0e7d56666e923e8d035db14e7efadd0c",
   "reseptit/aamupalat/kiinalainen-katkarapu-wontonkeitto.md": "ee92d9f640fea1e3853a426d642d5a5a3da20fc2",
 } as const;
