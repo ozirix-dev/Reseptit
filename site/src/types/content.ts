@@ -48,6 +48,8 @@ export interface RecipeEntry {
   title: string;
   category: "alkuruoka" | "paaruoka" | "jalkiruoka" | "leivonnainen" | "aamupala" | "valipala";
   dietClass: RecipeDietClass | null;
+  /** Explicit editorial verification only; absence never implies gluten-free. */
+  glutenFree?: boolean;
   routePath: string;
   image: RecipeImage | null;
   description: string;

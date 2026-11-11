@@ -13,6 +13,13 @@ export const recipeFrontmatterSchema = z.object({
   language: localeSchema,
   status: z.enum(["draft", "published"]),
   diet_class: z.enum(["keto", "vhh_tiukka", "vhh_valjempi"]).optional(),
+  gluten_free: z.boolean().optional(),
+  // Checked evidence is required whenever a recipe claims gluten-free status.
+  gluten_free_review: z.object({
+    evidence_ref: z.string().regex(/^docs\/reviews\/gluteeniton\/[a-z0-9-]+\.md$/),
+    reviewed_at: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
+    reviewer: z.string().min(2),
+  }).strict().optional(),
   main_ingredient: z.array(z.string()).optional(),
   cooking_method: z.array(z.string()).optional(),
   translation_languages: z.array(localeSchema).optional(),
@@ -42,4 +49,11 @@ export const recipeFrontmatterSchema = z.object({
     sizes: z.string().optional(),
     srcset: z.array(z.object({ src: imagePathSchema, width: z.number().int().positive() }).strict()).optional(),
   }).strict().optional(),
-}).strict();
+}).strict().superRefine((data, ctx) => {
+  if (data.gluten_free === true && !data.gluten_free_review) {
+    ctx.addIssue({ code: "custom", message: "Gluten-free claims need a recipe-specific reviewed evidence record", path: ["gluten_free_review"] });
+  }
+  if (data.gluten_free_review && data.gluten_free !== true) {
+    ctx.addIssue({ code: "custom", message: "Orphan gluten-free review metadata without an approved claim", path: ["gluten_free_review"] });
+  }
+});
