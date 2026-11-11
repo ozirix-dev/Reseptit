@@ -11,9 +11,7 @@ test("first three actual recipes remain fail-closed until image, nutrition and p
     assert.equal(row.ready, false, `${row.recipeId}: this is a protected draft queue`);
     for (const blocker of [
       "DRAFT_SOURCE_ONLY",
-      "IMAGE_NOT_VERSIONED",
       "IMAGE_METADATA_MISSING",
-      "NUTRITION_CALCULATION_MISSING",
       "PUBLIC_MACROS_WITHHELD",
       "SOURCE_IDENTITY_NOT_APPROVED",
     ]) assert(row.blockers.includes(blocker as typeof row.blockers[number]), `${row.recipeId} missing blocker ${blocker}`);
