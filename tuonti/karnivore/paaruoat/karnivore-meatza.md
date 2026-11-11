@@ -11,6 +11,11 @@ servings: 3
 time_total_min: 40
 difficulty: "helppo"
 tags: [carnivore, karnivore]
+image:
+  src: "paaruoat/karnivore-meatza.webp"
+  alt: "Pekonilla ja mozzarellalla päällystetty meatza, jonka irti leikatussa palassa näkyy jauhelihapohja."
+  width: 1280
+  height: 853
 ingredients:
   - amount: 500
     unit: "g"

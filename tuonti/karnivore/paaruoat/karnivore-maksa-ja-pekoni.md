@@ -11,6 +11,11 @@ servings: 3
 time_total_min: 25
 difficulty: "helppo"
 tags: [carnivore, karnivore]
+image:
+  src: "paaruoat/karnivore-maksa-ja-pekoni.webp"
+  alt: "Paistettuja naudanmaksaviipaleita ja rapeita pekonisuikaleita harmaalla lautasella."
+  width: 1280
+  height: 853
 ingredients:
   - amount: 400
     unit: "g"

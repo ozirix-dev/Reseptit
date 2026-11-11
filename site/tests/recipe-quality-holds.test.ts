@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import path from "node:path";
 import test from "node:test";
+import sharp from "sharp";
 import { siteContent } from "../src/generated/content.generated";
 import { parseMarkdown } from "../src/content/markdown";
 import { editorialHoldRecipeIds, publicRecipeQualityHold } from "../scripts/recipe-quality-holds";
@@ -106,6 +107,13 @@ test("canonical wonton correction retains reviewed source and original GK histor
 test("all ten isolated karnivore drafts remain validated and out of published content", async () => {
   const root = path.resolve(import.meta.dirname, "../..");
   assert.equal(Object.keys(karnivoreApprovedIngredients).length, 10);
+  const fi5ImageIds = new Set([
+    "karnivore-smashburger",
+    "karnivore-rapeat-kananreisipalat",
+    "karnivore-maksa-ja-pekoni",
+    "karnivore-meatza",
+    "karnivore-lammaskyljykset-voissa"
+  ]);
   for (const id of Object.keys(karnivoreApprovedIngredients)) {
     const file = path.join(root, "tuonti/karnivore/paaruoat", `${id}.md`);
     const raw = await readFile(file, "utf8");
@@ -113,6 +121,22 @@ test("all ten isolated karnivore drafts remain validated and out of published co
     assert.ok(parsed, `${id}: parse failed`);
     const recipe = recipeFrontmatterSchema.parse(parsed.data);
     assertKarnivoreDraftSafe(recipe, raw);
+    if (fi5ImageIds.has(id)) {
+      assert.equal(recipe.status, "draft");
+      assert.ok(recipe.image, id);
+      assert.equal(recipe.image.src, `paaruoat/${id}.webp`);
+      assert.ok(recipe.image.alt.trim(), `${id}: alt text is missing`);
+      const image = await sharp(path.join(root, "kuvat", recipe.image.src)).metadata();
+      assert.equal(image.format, "webp", id);
+      assert.equal(image.pages ?? 1, 1, id);
+      assert.equal(image.orientation ?? 1, 1, id);
+      assert.deepEqual([image.width, image.height], [1280, 853], id);
+      assert.deepEqual([recipe.image.width, recipe.image.height], [image.width, image.height], id);
+    }
+    if (id === "karnivore-naudan-lyhytkylki" || id === "karnivore-rapea-porsaan-kylki") {
+      assert.equal(recipe.status, "draft");
+      assert.equal(recipe.image, undefined, `${id}: excluded from this image batch`);
+    }
     const publicFi = siteContent.recipes.find((entry) => entry.recipeId === id && entry.locale === "fi");
     if (["karnivore-steak-and-eggs","karnivore-voilohi-pannulla","karnivore-jauhelihakulho-munalla"].includes(id)) {
       assert(publicFi, `${id}: reviewed first FI release is missing`);

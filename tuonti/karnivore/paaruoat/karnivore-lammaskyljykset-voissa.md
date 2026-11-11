@@ -11,6 +11,11 @@ servings: 2
 time_total_min: 25
 difficulty: "helppo"
 tags: [carnivore, karnivore]
+image:
+  src: "paaruoat/karnivore-lammaskyljykset-voissa.webp"
+  alt: "Kolme voissa ruskistettua luullista lammaskyljystä vaalealla lautasella."
+  width: 1280
+  height: 853
 ingredients:
   - amount: 600
     unit: "g"
