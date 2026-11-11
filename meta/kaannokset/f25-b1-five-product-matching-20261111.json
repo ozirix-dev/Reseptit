@@ -1,0 +1,234 @@
+{
+  "schemaVersion": 1,
+  "snapshotMainSha": "c8739e33ed5133ea4b62a6526aad889c0d3b2085",
+  "createdAt": "2026-11-11",
+  "status": "RESEARCH-CANDIDATES-NOT-APPROVAL",
+  "sources": [
+    {
+      "id": "meksikolainen-chilaquiles-verdes",
+      "source_path": "reseptit/aamupalat/meksikolainen-chilaquiles-verdes.md",
+      "source_blob_sha": "71abfa953914a080e2f180961864ba3dd3e3d35d",
+      "release_authorized": false,
+      "approval": null
+    },
+    {
+      "id": "meksikolainen-paputostada-aamupalaksi",
+      "source_path": "reseptit/aamupalat/meksikolainen-paputostada-aamupalaksi.md",
+      "source_blob_sha": "e73d88c563f14a5ebbb33803206b9739fcbcea34",
+      "release_authorized": false,
+      "approval": null
+    },
+    {
+      "id": "korealainen-kimchi-jeon-aamiaiseksi",
+      "source_path": "reseptit/aamupalat/korealainen-kimchi-jeon-aamiaiseksi.md",
+      "source_blob_sha": "ed74bb3ddab0757a69402da47209b7bac0d51e9e",
+      "release_authorized": false,
+      "approval": null
+    },
+    {
+      "id": "karibia-plantain-aamiaislautanen",
+      "source_path": "reseptit/aamupalat/karibia-plantain-aamiaislautanen.md",
+      "source_blob_sha": "afb4242ce40db1e8eefb2dc654069008a403e41c",
+      "release_authorized": false,
+      "approval": null
+    },
+    {
+      "id": "munakoiso-kesakurpitsalasagne",
+      "source_path": "reseptit/paaruoat/munakoiso-kesakurpitsalasagne.md",
+      "source_blob_sha": "42167f96e8f448383e5db66dba57274bd235b87f",
+      "release_authorized": false,
+      "approval": null
+    }
+  ],
+  "chilaquiles": {
+    "recipe_id": "meksikolainen-chilaquiles-verdes",
+    "models": [
+      {
+        "key": "EL_TACO_TRUCK",
+        "servings": 2,
+        "ingredients": [
+          {
+            "name": "EL_TACO_TRUCK",
+            "g": 100,
+            "carb100": 43,
+            "protein100": 5.3,
+            "fat100": 2.2,
+            "fibre100": null,
+            "sourceUrl": "https://eltacotruck.fi/tuotteet/corn-tortilla"
+          },
+          {
+            "name": "Santa Maria Mexican Salsa Verde",
+            "g": 150,
+            "carb100": 6.2,
+            "protein100": 0.7,
+            "fat100": 4.4,
+            "fibre100": 1,
+            "sourceUrl": "https://www.k-ruoka.fi/kauppa/tuote/santa-maria-mexican-salsa-verde-2200g-7311312008046"
+          },
+          {
+            "name": "Riverina Fresco (queso fresco substitute, NOT exact Mexican cheese)",
+            "g": 150,
+            "carb100": 6.7,
+            "protein100": 16.2,
+            "fat100": 21.4,
+            "fibre100": null,
+            "sourceUrl": "https://riverinadairy.com/food-service/fresco/fresco-traditional/"
+          },
+          {
+            "name": "Fineli raw shell-free egg 2pcs=110g",
+            "g": 110,
+            "carb100": 0.3,
+            "protein100": 12.61,
+            "fat100": 9.24,
+            "fibre100": 0,
+            "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/858"
+          },
+          {
+            "name": "Fineli 541 neutral oil 1tbsp=13.5g all retained",
+            "g": 13.5,
+            "carb100": 0,
+            "protein100": 0,
+            "fat100": 99.9,
+            "fibre100": 0,
+            "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/541"
+          }
+        ],
+        "perServing": {
+          "netCarbohydrate": 31.34,
+          "protein": 22.2605,
+          "fat": 32.27525,
+          "totalIncludingFibre": null
+        },
+        "release_authorized": false
+      },
+      {
+        "key": "FINELI_35554",
+        "servings": 2,
+        "ingredients": [
+          {
+            "name": "FINELI_35554",
+            "g": 100,
+            "carb100": 51.845,
+            "protein100": 3.49,
+            "fat100": 9.273,
+            "fibre100": 1.172,
+            "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/35554"
+          },
+          {
+            "name": "Santa Maria Mexican Salsa Verde",
+            "g": 150,
+            "carb100": 6.2,
+            "protein100": 0.7,
+            "fat100": 4.4,
+            "fibre100": 1,
+            "sourceUrl": "https://www.k-ruoka.fi/kauppa/tuote/santa-maria-mexican-salsa-verde-2200g-7311312008046"
+          },
+          {
+            "name": "Riverina Fresco (queso fresco substitute, NOT exact Mexican cheese)",
+            "g": 150,
+            "carb100": 6.7,
+            "protein100": 16.2,
+            "fat100": 21.4,
+            "fibre100": null,
+            "sourceUrl": "https://riverinadairy.com/food-service/fresco/fresco-traditional/"
+          },
+          {
+            "name": "Fineli raw shell-free egg 2pcs=110g",
+            "g": 110,
+            "carb100": 0.3,
+            "protein100": 12.61,
+            "fat100": 9.24,
+            "fibre100": 0,
+            "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/858"
+          },
+          {
+            "name": "Fineli 541 neutral oil 1tbsp=13.5g all retained",
+            "g": 13.5,
+            "carb100": 0,
+            "protein100": 0,
+            "fat100": 99.9,
+            "fibre100": 0,
+            "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/541"
+          }
+        ],
+        "perServing": {
+          "netCarbohydrate": 35.7625,
+          "protein": 21.3555,
+          "fat": 35.81175,
+          "totalIncludingFibre": null
+        },
+        "release_authorized": false
+      }
+    ],
+    "unresolved": [
+      "Queso fresco brand unknown; Riverina Fresco only comparison proxy",
+      "El Taco Truck fiber unreported, cannot claim total including fiber",
+      "Santa Maria salsa verde not guaranteed actual sauce",
+      "2 eggs=110g shell-free and 1tbsp oil=13.5g fully retained both assumptions",
+      "No four-macro approval/GK binding yet"
+    ]
+  },
+  "kimchiJeon": {
+    "recipe_id": "korealainen-kimchi-jeon-aamiaiseksi",
+    "models": [
+      {
+        "market": "FI",
+        "carb100": 2,
+        "sourceUrl": "https://finefoods.fi/tuotteet/sempio/sempio-kimchi-korealainen-kaalivalmiste-160-120g/",
+        "gtin": "08801005001267",
+        "g": 150,
+        "servings": 2,
+        "perServingCarbs": 1.5,
+        "fibre100": null,
+        "release_authorized": false
+      },
+      {
+        "market": "NL",
+        "carb100": 4.5,
+        "sourceUrl": "https://www.ah.nl/producten/product/wi553406/sempio-kimchi-original",
+        "gtin": "08801005001267",
+        "g": 150,
+        "servings": 2,
+        "perServingCarbs": 3.375,
+        "fibre100": null,
+        "release_authorized": false
+      },
+      {
+        "market": "CH",
+        "carb100": 7.1,
+        "sourceUrl": "https://www.coop.ch/en/food/pantry/canned-conserved/vegetables/mixed-vegetables/sempio-kimchi-original/p/7182617",
+        "gtin": null,
+        "g": 150,
+        "servings": 2,
+        "perServingCarbs": 5.325,
+        "fibre100": null,
+        "release_authorized": false
+      }
+    ],
+    "unresolved": [
+      "150g kimchi unknown drained/with liquid",
+      "2tbsp spring onion grams unknown",
+      "No new water may be assumed in flour batter",
+      "Product-specific protein fat fiber sources not all provided",
+      "Soy/wheat/egg and fish/shellfish allergens depend on brand"
+    ]
+  },
+  "otherBlockers": {
+    "meksikolainen-paputostada-aamupalaksi": [
+      "150g black beans dry vs cooked vs canned unknown",
+      "one avocado edible weight unknown",
+      "commercial corn tortilla exact product missing"
+    ],
+    "karibia-plantain-aamiaislautanen": [
+      "plantain and avocado 1pc must be edible grams",
+      "lime juice yield missing",
+      "1tbsp frying oil retention unknown"
+    ],
+    "munakoiso-kesakurpitsalasagne": [
+      "canonical 200g dry lasagne sheets, not 180g alternative",
+      "800g branded tomato sauce unknown",
+      "250g drained mozzarella and 80g parmesan or substitute unspecified",
+      "60g oil retention across preparation needs review"
+    ]
+  }
+}

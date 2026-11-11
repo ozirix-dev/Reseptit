@@ -225,3 +225,40 @@ test("F25 next15 product rebuilds recalculate 4 macro fields but cannot publish 
   assert.equal(Object.keys(byId["intialainen-pinaatti-paneer-chilla"].originalFiMacros).length,0);
   assert.notEqual(byId["rahka-marjakerroskulho"].candidatePerServing.netCarbohydrate, 6.32);
 });
+
+test("F25 B1 five source HOLDs and product sensitivity arithmetic are fail closed", async () => {
+  const {readFile}=await import("node:fs/promises");
+  const path=await import("node:path");
+  const root=path.resolve(import.meta.dirname,"../..");
+  const data=JSON.parse(await readFile(path.join(root,"meta/kaannokset/f25-b1-five-product-matching-20261111.json"),"utf8"));
+  const gate=JSON.parse(await readFile(path.join(root,"meta/kaannokset/f25-release-gate.json"),"utf8"));
+  const pub=JSON.parse(await readFile(path.join(root,"meta/kaannokset/published-translation-pairs.json"),"utf8"));
+  const released=new Set(pub.sources.map((x:any)=>x.recipe_id));
+  assert.equal(data.schemaVersion,1);
+  assert.equal(data.status,"RESEARCH-CANDIDATES-NOT-APPROVAL");
+  assert.equal(data.sources.length,5);
+  for(const row of data.sources) {
+    const source=gate.sources.find((x:any)=>x.recipe_id===row.id);
+    assert.ok(source && source.approval===null);
+    assert.equal(source.baseline_git_blob_sha,row.source_blob_sha);
+    assert.equal(row.release_authorized,false);
+    assert.equal(released.has(row.id),false);
+  }
+  assert.equal(data.chilaquiles.models.length,2);
+  for(const m of data.chilaquiles.models) {
+    for(const [field,source] of [["netCarbohydrate","carb100"],["protein","protein100"],["fat","fat100"]] as const){
+      const result=m.ingredients.reduce((n:number,x:any)=>n+x.g*x[source]/100/m.servings,0);
+      assert.ok(Math.abs(result-m.perServing[field])<0.000001,field);
+    }
+    assert.equal(m.perServing.totalIncludingFibre,null);
+    assert.equal(m.release_authorized,false);
+  }
+  assert.ok(Math.abs(data.chilaquiles.models[1].perServing.netCarbohydrate-data.chilaquiles.models[0].perServing.netCarbohydrate-4.4225)<0.000001);
+  for(const v of data.kimchiJeon.models){
+    assert.equal(v.perServingCarbs,Number((v.carb100*v.g/100/v.servings).toFixed(6)));
+    assert.equal(v.fibre100,null);
+    assert.equal(v.release_authorized,false);
+  }
+  assert.ok(Math.abs(data.kimchiJeon.models[2].perServingCarbs-data.kimchiJeon.models[0].perServingCarbs-3.825)<0.000001);
+  assert.ok(data.otherBlockers["munakoiso-kesakurpitsalasagne"].some((s:string)=>s.includes("200g")));
+});
