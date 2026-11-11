@@ -44,7 +44,7 @@ export function classifyCanonicalMethodMigration(
 export async function loadGk100ApprovedSourceIds(repoRoot: string): Promise<ReadonlySet<string>> {
   const folder = path.join(repoRoot, "docs/nutrition/gk100-approved-releases");
   const names = (await readdir(folder)).sort();
-  if (names.length === 0 || names.some(name => !/^[a-z0-9-]+\\.json$/.test(name)))
+  if (names.length === 0 || names.some(name => !name.endsWith(".json") || !/^[a-z0-9-]+$/.test(name.slice(0, -5))))
     throw new Error("SOURCE_MIGRATION_GK100_BUNDLE_LIST_MALFORMED");
   const bundles = await Promise.all(names.map(name => readFile(path.join(folder,name),"utf8")));
   const ids = new Set<string>();
