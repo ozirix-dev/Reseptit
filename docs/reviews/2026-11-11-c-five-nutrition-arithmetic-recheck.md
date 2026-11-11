@@ -7,7 +7,7 @@
 | #404 | Resepti | Laskenta-aineisto | Aritmetiikan tulos | Julkaisupäätös |
 |---:|---|---|---|---|
 | #02 | Bakwan-fritterit | `docs/nutrition/calculations/indonesialainen-bakwan-maissifritter.json` (AUTOMATED ONLY) | Neljä nykyistä makroarvoa täsmää tallennettujen syötteiden laskuun | Ravinto-/GK-HOLD |
-| #21 | Maakouda-perunafritterit | Ei omaa aineskohtaista calculation-JSONia | Ei laskettavissa luotettavasti; 1 kpl perunaa ei yksilöi syötävää massaa | Julkinen karanteeni, HOLD |
+| #21 | Maakouda-perunafritterit | Ei omaa aineskohtaista calculation-JSONia | **Lähdetiedostossa on numeeriset makrot ilman nykyistä aineskohtaista laskentatodistetta.** 1 kpl perunaa ei yksilöi syötävää massaa | Julkinen karanteeni, HOLD |
 | #29 | Soba-aamiaiskeitto | Ei omaa aineskohtaista calculation-JSONia | Ei laskettavissa; pinaattinipun massa, liemituotteet ja soban tila puuttuvat | GK100 first-five -lähde-SHA ennallaan, HOLD |
 | #31 | Jianbing-munalettu | `docs/nutrition/calculations/kiinalainen-jianbing-munaletty.json` (AUTOMATED ONLY) | Neljä nykyistä makroarvoa täsmää tallennettujen syötteiden laskuun | Ravinto-/GK-HOLD |
 | #40 | Huevos divorciados | Ei omaa aineskohtaista calculation-JSONia | Ei laskettavissa; 150 g mustia papuja ei yksilöi kuivaa/kypsää massaa | Ravinto-/GK-HOLD |
@@ -53,7 +53,7 @@ Myös *tuotekoostumuksen vaihtelu* voi muuttaa näitä arvoja; yllä olevat rivi
 
 ## Toteutettu valvonta
 
-`site/scripts/c-five-nutrition-recheck.ts` toistaa bakwanin ja jianbingin laskut suoraan nykyisistä aineskohtaisista JSON-syötteistä, tarkistaa makrojen vastaavuuden tämänhetkisiin kanonisiin FI-merkintöihin, tarkistaa viiden reseptin lähde-Git-blobit #442:n manifestia vasten ja raportoi kaikki viisi edelleen HOLDiin. Kolmelta muulta vaaditaan numeroiden puuttuminen, eikä niille luoda nollia tai laskenta-arvauksia.
+`site/scripts/c-five-nutrition-recheck.ts` toistaa bakwanin ja jianbingin laskut suoraan nykyisistä aineskohtaisista JSON-syötteistä, tarkistaa makrojen vastaavuuden tämänhetkisiin kanonisiin FI-merkintöihin, tarkistaa viiden reseptin lähde-Git-blobit #442:n manifestia vasten ja raportoi kaikki viisi edelleen HOLDiin. Kolmesta muusta soban ja huevos divorciadosin makrojen tulee edelleen puuttua. Maakoudalle merkitään eksplisiittinen `NUMERIC_MACROS_WITHOUT_INGREDIENT_LEVEL_EVIDENCE` -estekoodi; se on jo julkisessa karanteenissa ja lähteen historiallisia lukuja **ei hyväksytä**. Yhdellekään reseptille ei luoda nollia tai laskenta-arvauksia.
 
 `site/tests/c-five-nutrition-recheck.test.ts` suojaa laskennan tulokset, herkkyysparametrit ja sen, ettei tästä työstä synny GK-/ravintoarvohyväksyntää.
 
