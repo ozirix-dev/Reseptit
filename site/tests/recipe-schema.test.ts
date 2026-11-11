@@ -210,6 +210,8 @@ test("F25 consumer-facing review notices are separate from GK-sealed recipe Mark
   assert.match(sourceReviewNotice("vietnamilainen-banh-cuon-sienilla")!.details, /porsaan jauhelihaa/);
   assert.match(sourceReviewNotice("japanilainen-hojicha-jogurtti-persimonilla")!.details, /2 g/);
   assert.match(sourceReviewNotice("pohjoisafrikkalainen-baghrir")!.details, /150 ml vettä/);
+  assert.match(sourceReviewNotice("rahka-marjakerroskulho")!.details, /ravintoarvot on piilotettu/i);
+  assert.match(sourceReviewNotice("pohjoisafrikkalainen-baghrir")!.details, /ravintoarvot on piilotettu/i);
   assert.match(sourceReviewNotice("vietnamilainen-banh-xeo-aamiaisletut")!.allergens, /äyriäisiä/);
   assert.match(sourceReviewNotice("vietnamilainen-papaija-kookospuuro")!.details, /15–20 minuutissa/);
   assert.match(sourceReviewNotice("meksikolainen-chilaquiles-verdes")!.details,/51,845 g/);
