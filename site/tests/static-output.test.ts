@@ -692,7 +692,7 @@ test("FI bánh cuốn displays a realistic 50-minute editorial estimate without 
   const html=await readFile(path.join(dist,recipe.routePath.slice(1),"index.html"),"utf8");
   const root=html.slice(html.indexOf('<div id="root">'));
   assert.match(root,/50 min/);
-  assert.match(root,/Vaikeustaso: Keskitaso/);
+  assert.match(root,/Vaikeustaso(?:<!-- -->)?: ?(?:<!-- -->)?Keskitaso/);
   assert.match(root,/Riisilevyjen valmistus ja täytteen turvallisuus/);
   assert.match(root,/toimituksellinen arvio/);
   assert.doesNotMatch(root,/Valmistusajan ja täytteen tarkistus kesken/);
