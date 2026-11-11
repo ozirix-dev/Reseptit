@@ -26,7 +26,8 @@ const lf=(v:any):any=>typeof v==='string'?v.replaceAll('\r\n','\n'):Array.isArra
 const frozenKarnivoreFi3Blobs: Readonly<Record<string, string>> = Object.freeze({
   "karnivore-steak-and-eggs": "5e579c3a60b1835d2bd4895c377502139bb23b91",
   "karnivore-voilohi-pannulla": "07f5b5670af65776209493cc4dce2b897f2635b0",
-  "karnivore-jauhelihakulho-munalla": "9f294f216ac4f94dacf745e197b3d6bd3cc96451"
+  "karnivore-jauhelihakulho-munalla": "9f294f216ac4f94dacf745e197b3d6bd3cc96451",
+  "karnivore-smashburger": "179b12d53d97c406c6f83d2b829173375583b5d4"
 });
 
 const before=json('docs/nutrition/gk-legacy-reconciliation/baseline.json');
