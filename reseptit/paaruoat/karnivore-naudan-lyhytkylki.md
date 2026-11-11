@@ -46,4 +46,3 @@ Luulliset naudan lyhytkyljet kypsyvät kannellisessa padassa meheviksi matalassa
 
 - Luullisen raakapainon ja syötävän kypsän lihan suhde vaihtelee huomattavasti. Ravintoarvot edellyttävät mitattua syötävää saantoa.
 - Käytä tähän sopivan kokoista kannellista pataa. Liemeen ei lisätä vihanneksia eikä kaupallista kasvispohjaista fondia.
-

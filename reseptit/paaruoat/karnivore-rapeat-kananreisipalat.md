@@ -46,4 +46,3 @@ Käytä nahallisia reisipaloja, ei nahattomia rintafileitä. Tästä syntyy nelj
 
 - Pelkkä rapea nahka ei takaa kanan kypsyyttä. Jos paistinpannu kuumenee liikaa, alenna lämpöä.
 - Raakapaino sisältää luut ja nahkan; ravintoarvio vaatii syötävän osuuden saantomittauksen.
-

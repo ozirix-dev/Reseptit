@@ -46,4 +46,3 @@ Lihan omat aromit ja pannun ruskistumispinta riittävät, kun liha on hyvälaatu
 
 - Luullisen lihan syötävä osa vaihtelee; myöhempi ravintolaskenta tarvitsee todellisen syötävän saannon.
 - Älä päättele kypsyyttä vain paistoajan perusteella.
-

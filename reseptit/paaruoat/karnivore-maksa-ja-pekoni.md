@@ -51,4 +51,3 @@ Pekonin suolaisuus riittää usein mausteeksi, eikä sipulia tai kermaa tarvita.
 
 - Maksa sisältää luontaisesti hiilihydraatteja; reseptiä ei voi kutsua nollahiilihydraattiseksi. Valitse pekoni, jossa ei ole sokeria, tärkkelystä tai kasvismausteita.
 - Raskauden aikana maksaruokia tulee välttää Ruokaviraston suosituksen mukaisesti. Maksa ei myöskään ole jatkuvan runsaan käytön ruoka A-vitamiinipitoisuutensa vuoksi.
-
