@@ -4,7 +4,8 @@ import { cuisines, ingredientGroups } from "@/content/recipe-facets";
 import type { RecipeSummary } from "@/content/route-data";
 
 export type RecipeCategory = RecipeSummary["category"] | "all";
-export type RecipeDietFilter = "all" | "keto" | "vhh";
+export type RecipeDietFilter = "all" | "keto" | "vhh" | "carnivore" | "vegetarian" | "vegan" | "pescatarian";
+export const supportedRecipeDiets: readonly RecipeDietFilter[] = ["keto", "vhh", "carnivore", "vegetarian", "vegan", "pescatarian"];
 export type GlycemicLoadFilterCategory = "low" | "medium" | "high";
 
 export interface RecipeFilters {
@@ -34,15 +35,15 @@ export function normalizeSearchText(value: string, locale: RecipeLocale = "fi"):
   return normalized.toLocaleLowerCase(locale).replace(/\s+/gu, " ").trim();
 }
 
-export function parseRecipeFilters(search: string, availableCategories: RecipeCategory[], availableDiets: RecipeDietFilter[] = ["keto", "vhh"]): RecipeFilters {
+export function parseRecipeFilters(search: string, availableCategories: RecipeCategory[], availableDiets: RecipeDietFilter[] = [...supportedRecipeDiets]): RecipeFilters {
   const params = new URLSearchParams(search);
   const requestedCategory = params.get("category");
   const category = requestedCategory && availableCategories.includes(requestedCategory as RecipeCategory)
     ? requestedCategory as RecipeCategory
     : "all";
   const requestedDiet = params.get("diet");
-  const diet: RecipeDietFilter = (requestedDiet === "keto" || requestedDiet === "vhh") && availableDiets.includes(requestedDiet)
-    ? requestedDiet
+  const diet: RecipeDietFilter = requestedDiet && supportedRecipeDiets.includes(requestedDiet as RecipeDietFilter) && availableDiets.includes(requestedDiet as RecipeDietFilter)
+    ? requestedDiet as RecipeDietFilter
     : "all";
   const maxTime = Number(params.get("time"));
   const cuisine = params.get("cuisine");
@@ -82,6 +83,7 @@ export function filterRecipes<T extends RecipeSummary>(recipes: T[], filters: Re
     if (filters.category !== "all" && recipe.category !== filters.category) return false;
     if (filters.diet === "keto" && recipe.dietClass !== "keto") return false;
     if (filters.diet === "vhh" && !recipe.dietClass) return false;
+    if (filters.diet !== "all" && filters.diet !== "keto" && filters.diet !== "vhh" && !recipe.dietTags?.includes(filters.diet)) return false;
     if (!terms.length) return true;
     const haystack = normalizeSearchText([
       recipe.title,
