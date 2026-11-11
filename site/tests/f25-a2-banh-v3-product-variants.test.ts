@@ -129,7 +129,6 @@ test("banh cuon squid label salt and GI evidence remain product-specific and unp
   assert.equal(label.valuesPer100ml.carbohydrateG,fish.macros.carbohydrate);
   assert.equal(label.valuesPer100ml.proteinG,fish.macros.protein);
   for(const item of ["carbohydrateG","proteinG","fatG","saltG","fibreG"]){
-    const input=item.slice(0,-1)+"G";
     assert.equal(label.perRecipe[item],Math.round(label.valuesPer100ml[item]*fish.amount/100*100000)/100000);
     assert.equal(label.perServing[item],label.perRecipe[item]/audit.fishProduct.servings);
   }
