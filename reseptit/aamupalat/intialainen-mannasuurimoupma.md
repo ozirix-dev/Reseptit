@@ -61,11 +61,7 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 
 ## Valmistus
 
-1. Kuumenna kuiva, paksupohjainen pannu keskilämmölle. Lisää 100 g mannasuurimoita ja paahda niitä koko ajan sekoittaen kevyen tuoksuviksi, mutta älä ruskista tai polta. Siirrä mannasuurimot hetkeksi kulhoon.
-2. Kuori ja kuutioi ainesluettelon yksi porkkana pieniksi paloiksi. Huuhtele 150 g herneitä ja 5 g tuoreita currylehtiä. Kuumenna kattilassa koko luettelon 300 ml vettä ja lisää porkkana, herneet sekä currylehdet. Keitä, kunnes kasvikset ovat kypsyneet.
-3. Lisää paahdetut mannasuurimot vähitellen poreilevaan kasvisveteen samalla koko ajan sekoittaen, jotta kokkareita ei synny. Laske lämpöä ja hauduta, kunnes mannasuurimot ovat pehmenneet ja kaikki vesi on sitoutunut. Lisää vain listan suolaa tarvittaessa.
-4. Jaa kuuma upma kahteen annokseen ja tarjoa sellaisenaan. Älä lisää lihaa, kookoschutneyta, jogurttia, rasvaa tai muita listaamattomia lisukkeita.
-
-## Muistiinpanot
-
-Tämä on rasvaton perusupma ilmoitetuista aineksista. Yhden porkkanan syötävä grammapaino on vaihteleva; alkuperäistä makro-/GI/GK-perustaa ei hyväksytä pelkän valmistusohjeen muutoksen vuoksi.
+1. Mittaa mannasuurimo kattilaan ja lisää reseptin neste. Kuumenna kiehuvaksi samalla pohjaa myöten sekoittaen.
+2. Hauduta miedolla lämmöllä välillä sekoittaen, kunnes puuro on pehmeää ja sakeaa. Lisää nestettä vähän kerrallaan, jos rakenne tiivistyy liikaa.
+3. Kypsennä liha tai muut täytteet kypsiksi ja lisää puuroon. Tarkista suola ja mausteet.
+4. Tarjoa lämpimänä kookoschutneyn tai jogurtin kanssa.
