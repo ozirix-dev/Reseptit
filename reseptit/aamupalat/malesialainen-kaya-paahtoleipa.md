@@ -67,7 +67,11 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 
 ## Valmistus
 
-1. Sekoita jauhot, neste ja suola. Vaivaa pehmeäksi taikinaksi ja anna levätä 10 minuuttia. Jos reseptissä on valmis leipä tai taikina, siirry täyttöön.
-2. Jaa taikina osiin ja painele tai kauli ohuiksi leiviksi. Lisää taikinaan kuuluva täyte tai mausteöljy.
-3. Paista kuumalla pannulla molemmin puolin kypsäksi ja nosta liinan alle pysymään pehmeänä.
-4. Vatkaa yksi kananmuna, kookosmaito ja sokeri. Kuumenna seosta varovasti vesihauteessa jatkuvasti sekoittaen, kunnes se sakenee hilloksi. Paahda hapanjuurileipä ja voitele ohuesti voilla. Levitä päälle mitattu määrä kotitekoista kaya-hilloa ja tarjoa toisen kananmunan kanssa.
+1. Mittaa 100 ml kookosmaitoa ja 20 g sokeria kuumuutta kestävään kulhoon. Riko joukkoon ensimmäinen ainesluettelon kahdesta kananmunasta ja vatkaa tasaiseksi. Aseta kulho varovasti poreilevan vesikattilan päälle niin, ettei kulhon pohja kosketa vettä.
+2. Kuumenna kaya-seosta vesihauteessa jatkuvasti sekoittaen, kunnes se muuttuu tasaiseksi, selvästi sakeaksi ja kauttaaltaan kypsyneeksi. Vältä seoksen juoksettumista tai raakaa munakastiketta; tarvittaessa tarkista kuumimman massan turvallinen kypsyys ruokalämpömittarilla.
+3. Paahda yhteensä 100 g valmista hapanjuurileipää molemmilta puolilta. Levitä leiville koko 10 g voita ja jaa valmistettu kookos-kananmunalevite tasaisesti päälle. Älä vaivaa jauhoja tai valmista uutta leipätaikinaa.
+4. Kypsennä toinen kananmuna pannulla käyttäen yhteensä vain ainesluettelon 1 rkl neutraalia paistoöljyä, kunnes valkuainen on hyytynyt ja munan kypsyys vastaa turvallista tarjoilutapaa. Tarjoa kahdessa annoksessa leivän ja lämpimän munan kanssa; lisää luettelon suolaa tarvittaessa.
+
+## Muistiinpanot
+
+Ainesluettelon kaksi erillistä kananmunariviä käytetään kokonaan: yksi kaya-levitteeseen ja toinen lisukemunaan. Tässä ei ole pandania. Kokonaisaika 25 minuuttia on lähtöarvio eikä sitä ole koekeittiössä varmennettu; myös kypsennys ja tarjoilu on tehtävä turvallisesti.
