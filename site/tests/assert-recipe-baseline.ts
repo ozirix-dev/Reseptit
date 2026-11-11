@@ -35,8 +35,11 @@ const classicCategory: Record<string, string> = {
 // Blob SHA locks every ingredient, instruction, review link, source and macro.
 // One uniquely SHA-locked *draft-only* C5 version; cannot publish or mutate
 // the historic 326 recipes, and cannot grant nutrition/GK approval.
-const approvedC5DraftBlob = "b4344737daaeea38eb2ff76280c6a31d8c1b3c6d";
-const approvedC5DraftPath = "reseptit/raakileet/indonesialainen-bakwan-jagung-punnittu-v2.md";
+const approvedC5DraftBlobs = new Map<string, string>([
+  ["reseptit/raakileet/indonesialainen-bakwan-jagung-punnittu-v2.md", "b4344737daaeea38eb2ff76280c6a31d8c1b3c6d"],
+  ["reseptit/raakileet/kiinalainen-jianbing-soy-bean-sauce-punnittu-v2.md", "d3ffb96266b4a3a1adffcd1e2c3589bb31ec2d0e"],
+  ["reseptit/raakileet/meksikolainen-huevos-divorciados-kypsat-pavut-v2.md", "dca1c51653e98f8a8fc8ab71c1db1bca41d8ef90"],
+]);
 const approvedGlutenFreeFiFiles = new Map<string, string>([
   ["reseptit/jalkiruoat/gluteeniton-uunipannukakku.md", "060baa3ae58e0c9318a88451f1a8b72ea3c45de3"],
   ["reseptit/jalkiruoat/gluteeniton-perunajauhokakkupohja.md", "8de57cb20ad8aa888870a6f061a0aa5c7bfe73a6"],
@@ -126,14 +129,14 @@ export function assertRecipeBaseline(root: string, baseline: string, ...protecte
 
   for (const change of changes) {
     const [status, file] = change.split("\t");
-    if (status === "A" && file === approvedC5DraftPath) {
+    if (status === "A" && approvedC5DraftBlobs.has(file)) {
       const actualBlob = execFileSync("git", ["hash-object", file], { cwd: root, encoding: "utf8" }).trim();
-      assert.equal(actualBlob, approvedC5DraftBlob, "UNREVIEWED_C5_DRAFT: " + change);
+      assert.equal(actualBlob, approvedC5DraftBlobs.get(file), "UNREVIEWED_C5_DRAFT: " + change);
       const parsed = parseMarkdown(readFileSync(path.join(root, file), "utf8"));
       assert.ok(parsed, "C5 structured draft missing");
       const version = recipeFrontmatterSchema.parse(parsed.data);
       assert.equal(version.status, "draft", "C5 version cannot silently publish");
-      assert.equal(version.recipe_id, "indonesialainen-bakwan-jagung-punnittu-v2");
+      assert.equal(version.recipe_id, path.basename(file, ".md"), "C5 draft ID must match reviewed file");
       assert.equal(version.category, "aamupala");
       assert.equal(version.language, "fi");
       for (const nutrient of ["carbs_net_per_serving_g", "carbs_total_per_serving_g",
