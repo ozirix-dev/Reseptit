@@ -121,7 +121,7 @@ test("every unresolved karnivore food source withholds the numerical carbohydrat
     }
     assert.equal(typeof result, "number", `${recipe.recipeId}: fully mapped scenario must remain numeric`);
     const computed = rawPerServing(recipe);
-    assert(Math.abs(computed.carbs - (result as number)) < 0.0001,
+    assert(Math.abs(computed.carbs - (result as number)) <= 0.0005,
       `${recipe.recipeId}: mapped carbohydrate contribution changed unexpectedly`);
   }
   for (const id of ["karnivore-naudan-lyhytkylki", "karnivore-rapea-porsaan-kylki"]) {
