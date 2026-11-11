@@ -64,7 +64,11 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 
 ## Valmistus
 
-1. Sekoita jauhot tai viljat ja muut kuivat ainekset kulhossa. Lisää neste vähitellen ja vatkaa tasaiseksi taikinaksi.
-2. Anna taikinan levätä 10 minuuttia. Jos käytät kokonaisia palkokasveja tai viljoja taikinapohjana, niiden tulee olla liotettuja ja hienonnettuja.
-3. Kuumenna öljytty pannu keskilämmölle. Paista taikina ohuina annoksina; käännä, kun reunat kuivuvat ja pinta alkaa asettua.
-4. Lisää taikinan pinnalle sipulia, tomaattia ja korianteria ennen kääntämistä.
+1. Sekoita kulhossa 100 g mannasuurimoita, 100 g jogurttia ja 100 ml vettä. Vatkaa tasaiseksi, paksuhkoksi mutta lusikoitavaksi taikinaksi. Lisää vain listan suolaa tarvittaessa ja anna turvota noin 10 minuuttia.
+2. Hienonna ainesluettelon yksi tomaatti ja yksi sipuli. Pidä kaikki pilkotut kasvikset erillään, jotta ne voidaan jakaa tasaisesti lettujen päälle. Taikinaan ei lisätä kuivattuja papuja, korianteria tai listaamatonta maustetta.
+3. Kuumenna pannu keskilämmölle ja käytä kaikkien lettujen valmistamiseen yhteensä vain luettelon 1 rkl neutraalia paistoöljyä. Annostele taikina kahdeksi paksuksi pieneksi letuksi; levitä tomaatin ja sipulin koko määrä tasaisesti kostealle pinnalle.
+4. Paista alapuolelta kiinteäksi, käännä varovasti ja kypsennä myös kasvispuoli. Tarkista, ettei keskelle jää raakaa mannasuurimotaikinaa. Tarjoa molemmat letut heti kahtena annoksena.
+
+## Muistiinpanot
+
+Tämä rava-uttapam tehdään listatusta mannasuurimosta ja jogurtista ilman lisättyä riisiä tai fermentoituja palkokasveja. Sipulin ja tomaatin koko vaihtelee, joten syötävät grammapainot tarvitsevat erillisen ravintoarvovarmennuksen.

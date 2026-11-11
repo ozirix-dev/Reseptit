@@ -60,7 +60,11 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 
 ## Valmistus
 
-1. Valmistele ainekset: paloittele kasvikset ja kypsennä pavut tai liha tarvittaessa erikseen. Kuumenna öljy pannulla.
-2. Lisää pannulle pisimpään kypsyvät ainekset ja kypsennä pehmeiksi. Lisää mausteet ja tilkka vettä, jos pannu uhkaa kuivua.
-3. Lisää lopuksi nopeasti kypsyvät ainekset, kuten muna tai lehtivihannekset. Kypsennä juuri valmiiksi ja maista suola.
-4. Kypsennä munat tomaatti-paprikassa juuri hyytyneiksi ja murustele päälle fetaa.
+1. Pese ja hienonna ainesluettelon yksi tomaatti ja yksi vihreä paprika. Riko kaksi kananmunaa pieneen kulhoon ja sekoita ne haarukalla kevyesti; mittaa 150 g fetaa ja murustele se erikseen.
+2. Kuumenna pannulla luettelon koko 1 rkl neutraalia paistoöljyä. Kuullota paprikaa keskilämmöllä kunnes se pehmenee, lisää tomaatti ja jatka kypsentämistä, kunnes liika neste on haihtunut ja kastike on sakeaa.
+3. Laske lämpöä. Kaada kananmunat tomaatti-paprikaseokseen ja kääntele varovasti, kunnes ne ovat hyytyneet mutta eivät kuivahtaneet. Tarkista munan kypsyys ennen tarjoamista.
+4. Ota pannu pois liedeltä ja jaa ruoka kahteen annokseen. Murustele päälle kaikki 150 g fetaa ja lisää luettelon suolaa vain tarvittaessa. Älä lisää papuja, lihaa, sipulia tai listaamattomia mausteita.
+
+## Muistiinpanot
+
+Feta on alkuperäisen version oma lisäys. Tomaatti ja paprika on ilmoitettu kappalemäärinä, ei grammoina; niiden todellinen ravintokoostumus on vielä tarkistettava.
