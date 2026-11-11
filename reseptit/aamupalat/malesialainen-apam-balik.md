@@ -66,7 +66,7 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 
 ## Valmistus
 
-1. Sekoita jauhot tai viljat ja muut kuivat ainekset kulhossa. Lisää neste vähitellen ja vatkaa tasaiseksi taikinaksi.
-2. Anna taikinan levätä 10 minuuttia. Jos käytät kokonaisia palkokasveja tai viljoja taikinapohjana, niiden tulee olla liotettuja ja hienonnettuja.
-3. Kuumenna öljytty pannu keskilämmölle. Paista taikina ohuina annoksina; käännä, kun reunat kuivuvat ja pinta alkaa asettua.
-4. Vatkaa vehnäjauho, kananmuna ja vesi tasaiseksi taikinaksi. Anna levätä kymmenen minuuttia. Kypsennä öljytyllä pannulla paksuksi kuplivaksi letuksi, lisää maissi, maapähkinä ja sokeri, taita puolikuuksi ja kypsennä loppuun.
+1. Vatkaa 100 g vehnäjauhoa, yksi kananmuna ja 100 ml vettä tasaiseksi, paksuhkoksi lettutaikinaksi. Lisää luettelon suola ja anna seoksen levätä 10 minuuttia.
+2. Rouhi 20 g maapähkinöitä. Valuta 80 g maissinjyviä tarvittaessa ja varaa 25 g sokeria täytteeseen. Älä lisää taikinaan kohotusainetta, jota ei ole ainesluettelossa.
+3. Kuumenna pannulla luettelon 1 rkl neutraalia paistoöljyä. Levitä taikina yhdeksi paksuksi letuksi tai kahdeksi pienemmäksi. Kypsennä miedolla keskilämmöllä, kunnes pinta ei ole enää juokseva ja pohja on saanut väriä.
+4. Levitä maissinjyvät, maapähkinärouhe ja sokeri kypsyvän letun toiselle puolikkaalle. Taita toinen puoli täytteen päälle ja jatka kypsennystä kannen alla matalalla lämmöllä, kunnes taikina on kauttaaltaan kypsä. Jaa kahteen annokseen.

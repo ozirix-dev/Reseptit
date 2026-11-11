@@ -18,6 +18,7 @@ import { semanticHash, semanticStatus } from "../scripts/translation-semantic-re
 import { textHash } from "../scripts/gk149-model";
 import approvedTranslations from "./approved-translation-baseline.json";
 import preparedTranslations from "./prepared-translation-baseline.json";
+import { historicalBreakfastRecipe, reviewedBreakfastPaths } from "../scripts/gk100-breakfast-sealed-source";
 
 // PR #302 introduced three recipes after the frozen 326-recipe GK baseline.
 // The separately approved P0 image/ingredient correction is pinned to one
@@ -278,6 +279,15 @@ export function assertRecipeBaseline(root: string, baseline: string, ...protecte
       const published = execFileSync("git", ["show", `${briocheImageCorrectionSha}:${file}`], { cwd: root, encoding: "utf8" });
       assert.equal(readFileSync(path.join(root, file), "utf8").replaceAll("\r\n", "\n"), published.replaceAll("\r\n", "\n"), change);
       continue;
+    }
+    if (status === "M" && reviewedBreakfastPaths.includes(file)) {
+      const current = readFileSync(path.join(root, file), "utf8");
+      const historical = historicalBreakfastRecipe(file, current);
+      if (historical !== current) {
+        const original = execFileSync("git", ["show", baseline + ":" + file], { cwd: root, encoding: "utf8" });
+        assert.equal(historical, original.replaceAll("\r\n", "\n"), change);
+        continue;
+      }
     }
     const approved = recipeChanges.get(file);
     if (approved?.status === status) {
