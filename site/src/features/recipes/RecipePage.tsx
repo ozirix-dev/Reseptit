@@ -15,6 +15,7 @@ import { formatIngredientAmount, nextServingCount } from "./servings";
 import { toolUi } from "./recipe-tools";
 import { glycemicLoadPilotResults } from "@/generated/glycemic-load-pilot.generated";
 import { publishedGlycemicLoadForRecipe } from "./glycemic-load-display";
+import { sourceReviewNotice } from "./source-review-notices";
 
 export function RecipePage() {
   const { pathname } = useLocation();
@@ -27,6 +28,7 @@ export function RecipePage() {
   const tools = toolUi[locale];
   useEffect(() => { setHydrated(true); setServings(recipe?.servings ?? 1); setCompleted([]); }, [recipe?.recipeId, recipe?.locale]);
   if (!recipe) return <section className="page-section"><div className="container container--narrow"><h1>{labels.notFound}</h1><p><Link to={recipeIndexPath(locale)}>{labels.backToRecipes}</Link></p></div></section>;
+  const reviewNotice = recipe.locale === "fi" ? sourceReviewNotice(recipe.recipeId) : null;
   const gkVariants = gkOnlyVariants.filter(variant => variant.recipeId === recipe.recipeId);
   const hasGkVariant = gkVariants.length > 0;
   const numberLocale = { fi: "fi-FI", en: "en-GB", sv: "sv-SE", th: "th-TH" }[recipe.locale];
@@ -57,6 +59,7 @@ export function RecipePage() {
       <div className="recipe-facts">{recipe.timeTotalMin ? <span>{recipe.timeTotalMin} {labels.minutes}</span> : null}{recipe.difficulty ? <span>{labels.difficulty}: {recipe.difficulty}</span> : null}</div>
       {translations.length > 1 ? <nav className="recipe-languages" aria-label={labels.languages}>{translations.map((entry) => <Link key={entry.locale} hrefLang={entry.locale} aria-current={entry.locale === recipe.locale ? "page" : undefined} to={entry.routePath}>{recipeLocaleName(entry.locale)}</Link>)}</nav> : null}
     </header>
+    {reviewNotice ? <aside className="recipe-panel" role="note" data-f25-source-hold={recipe.recipeId}><h2>{reviewNotice.heading}</h2><p>{reviewNotice.details}</p><p>{reviewNotice.allergens}</p></aside> : null}
     {recipe.image ? <img className="recipe-image" src={recipe.image.src} srcSet={recipe.image.srcSet ?? undefined} sizes={recipeHeroSizes} alt={recipe.image.alt} width={recipe.image.width} height={recipe.image.height} fetchPriority="high" decoding="async" /> : null}
     <p className="print-servings">{tools.servings}: {servings}</p>
     <div className="recipe-layout">

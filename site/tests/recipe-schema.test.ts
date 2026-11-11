@@ -6,6 +6,7 @@ import { recipeFrontmatterSchema } from "../src/content/schema";
 import { assertGlutenFreeReviewRecord } from "../scripts/gluten-free-review";
 import { siteContent } from "../src/generated/content.generated";
 import { recipeJsonLd } from "../src/features/recipes/schema";
+import { sourceReviewNotice, sourceReviewNotices } from "../src/features/recipes/source-review-notices";
 
 test("Recipe yield is Schema.org Text and preserves the source serving count", () => {
   for (const recipe of siteContent.recipes) {
@@ -176,4 +177,28 @@ test("gluten-free source-evidence binding refuses missing, stale and incomplete 
   assert.throws(() => assertGlutenFreeReviewRecord(bind, evidence.replace("decision: approved", "decision: hold")), /GLUTEN_FREE_REVIEW_MISMATCH/);
   assert.throws(() => assertGlutenFreeReviewRecord(bind, evidence.replace("cross_contact: reviewed", "")), /GLUTEN_FREE_REVIEW_MISMATCH/);
   assert.throws(() => assertGlutenFreeReviewRecord(bind, ""), /GLUTEN_FREE_REVIEW_MISMATCH/);
+});
+
+
+test("F25 consumer-facing review notices are separate from GK-sealed recipe Markdown", () => {
+  const ids = [
+    "rahka-marjakerroskulho",
+    "intialainen-pinaatti-paneer-chilla",
+    "lahi-ita-zaatar-munat",
+    "japanilainen-hojicha-jogurtti-persimonilla",
+    "vietnamilainen-banh-cuon-sienilla",
+  ];
+  assert.deepEqual(Object.keys(sourceReviewNotices).sort(), [...ids].sort());
+  for (const id of ids) {
+    const notice = sourceReviewNotice(id);
+    assert.ok(notice, id);
+    assert.ok(notice.heading.length > 10 && notice.details.length > 35 && notice.allergens.length > 15);
+    const recipe = siteContent.recipes.find((x) => x.recipeId === id && x.locale === "fi");
+    assert.ok(recipe, id + " remains a FI source");
+    assert.equal(sourceReviewNotice("thai-roti-munalla-banaanilla"), null);
+    assert.ok(!JSON.stringify(recipe).includes(notice.heading), "separate UI notice must not rewrite recipe content");
+  }
+  assert.match(sourceReviewNotice("lahi-ita-zaatar-munat")!.allergens, /seesamia/);
+  assert.match(sourceReviewNotice("vietnamilainen-banh-cuon-sienilla")!.details, /porsaan jauhelihaa/);
+  assert.match(sourceReviewNotice("japanilainen-hojicha-jogurtti-persimonilla")!.details, /2 g/);
 });
