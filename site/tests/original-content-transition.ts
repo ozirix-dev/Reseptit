@@ -138,12 +138,15 @@ function omitBriocheForFrozenHistory(report: any) {
 }
 
 
-const reviewedCocoaId = "rasvakaakao-rouva-keto";
+const reviewedFiBreakfastIds = new Set([
+  "rasvakaakao-rouva-keto",
+  "lammin-chia-puuro-rouva-keto",
+]);
 
-function assertCocoaHasNoNumericGk(row: any) {
-  assert.equal(row.status, "INSUFFICIENT SOURCE DATA", reviewedCocoaId);
-  assert.equal(row.glycemicLoadPerServing, null, reviewedCocoaId);
-  assert.equal(row.glycemicLoadRangePerServing, null, reviewedCocoaId);
+function assertFiBreakfastHasNoNumericGk(row: any) {
+  assert.equal(row.status, "INSUFFICIENT SOURCE DATA", row.recipeId);
+  assert.equal(row.glycemicLoadPerServing, null, row.recipeId);
+  assert.equal(row.glycemicLoadRangePerServing, null, row.recipeId);
 }
 
 const changes = new Map(Object.entries(transition.changes));
@@ -167,19 +170,20 @@ function restoreRows(rows: any[], field: "results" | "calculationInputs") {
 }
 
 export function restoreBeforeOriginalContent(report: any) {
-  const cocoa = report.results?.find((row: { recipeId: string }) => row.recipeId === reviewedCocoaId);
-  if (cocoa) {
-    assertCocoaHasNoNumericGk(cocoa);
-    report.results = report.results.filter((row: { recipeId: string }) => row.recipeId !== reviewedCocoaId);
+  const isReviewedFiBreakfast = (row: { recipeId: string }) => reviewedFiBreakfastIds.has(row.recipeId);
+  const addedBreakfasts = report.results?.filter(isReviewedFiBreakfast) ?? [];
+  if (addedBreakfasts.length) {
+    addedBreakfasts.forEach(assertFiBreakfastHasNoNumericGk);
+    report.results = report.results.filter((row: { recipeId: string }) => !isReviewedFiBreakfast(row));
     if (report.calculationInputs) {
-      report.calculationInputs = report.calculationInputs.filter((row: { recipeId: string }) => row.recipeId !== reviewedCocoaId);
+      report.calculationInputs = report.calculationInputs.filter((row: { recipeId: string }) => !isReviewedFiBreakfast(row));
     }
     if (report.summary) {
-      report.summary.recipes -= 1;
-      report.summary.insufficientSourceData -= 1;
+      report.summary.recipes -= addedBreakfasts.length;
+      report.summary.insufficientSourceData -= addedBreakfasts.length;
     }
     for (const field of ["autoIncludedRecipeIds", "recipeBindingMismatches", "calculationInputMismatches", "calculationEvidenceMismatches"]) {
-      if (report[field]) report[field] = report[field].filter((id: string) => id !== reviewedCocoaId);
+      if (report[field]) report[field] = report[field].filter((id: string) => !reviewedFiBreakfastIds.has(id));
     }
   }
   omitGlutenFreeFiForFrozenHistory(report);
@@ -244,7 +248,7 @@ function assertMainAddition(report: any) {
     }
   }
   assert.deepEqual((report.autoIncludedRecipeIds ?? []).filter((key: string) =>
-    !postBaselineBrioche.has(key) && !postBaselineClassics.has(key) && !postBaselineCakes.has(key) && !postBaselineGlutenFreeFi.has(key) && key !== reviewedCocoaId), [id]);
+    !postBaselineBrioche.has(key) && !postBaselineClassics.has(key) && !postBaselineCakes.has(key) && !postBaselineGlutenFreeFi.has(key) && !reviewedFiBreakfastIds.has(key)), [id]);
   assert.deepEqual(report.results.filter((row: {recipeId: string}) => row.recipeId === id), [mainAddition.result]);
   if (report.calculationInputs) {
     assert.deepEqual(report.calculationInputs.filter((row: {recipeId: string}) => row.recipeId === id), [mainAddition.input]);
@@ -258,9 +262,9 @@ function assertMainAddition(report: any) {
 
 export function assertOriginalContentTransition(report: any) {
   assertMainAddition(report);
-  const cocoa = report.results.filter((row: { recipeId: string }) => row.recipeId === reviewedCocoaId);
-  assert.equal(cocoa.length, 1);
-  assertCocoaHasNoNumericGk(cocoa[0]);
+  const addedBreakfasts = report.results.filter((row: { recipeId: string }) => reviewedFiBreakfastIds.has(row.recipeId));
+  assert.deepEqual(addedBreakfasts.map((row: { recipeId: string }) => row.recipeId).sort(), [...reviewedFiBreakfastIds].sort());
+  addedBreakfasts.forEach(assertFiBreakfastHasNoNumericGk);
   for (const [id, change] of changes) {
     for (const field of ["results", "calculationInputs"] as const) {
       assert.deepEqual(report[field].filter((r: {recipeId: string}) => r.recipeId === id), [change.after[field]], id + " " + field);
@@ -281,14 +285,14 @@ function inventoryRowWithLfNotes<T extends {notes: string}>(row: T): T {
 
 // Inventory rows carry recipe text metadata even when the macro values are missing.
 export function originalContentInventoryBefore(rows: any[]) {
-  const cocoa = rows.filter(row => row.recipe_id === reviewedCocoaId);
-  if (cocoa.length) {
-    assert.equal(cocoa.length, 1);
-    assert.equal(cocoa[0].source_path, `reseptit/aamupalat/${reviewedCocoaId}.md`);
-    assert.equal(cocoa[0].status, "INSUFFICIENT SOURCE DATA");
-    assert.ok(Object.values(cocoa[0].values).every(value => value === null));
-    rows = rows.filter(row => row.recipe_id !== reviewedCocoaId);
+  const addedBreakfasts = rows.filter(row => reviewedFiBreakfastIds.has(row.recipe_id));
+  assert.deepEqual(addedBreakfasts.map(row => row.recipe_id).sort(), [...reviewedFiBreakfastIds].sort());
+  for (const row of addedBreakfasts) {
+    assert.equal(row.source_path, `reseptit/aamupalat/${row.recipe_id}.md`);
+    assert.equal(row.status, "INSUFFICIENT SOURCE DATA");
+    assert.ok(Object.values(row.values).every(value => value === null));
   }
+  rows = rows.filter(row => !reviewedFiBreakfastIds.has(row.recipe_id));
   const addedGlutenFree = rows.filter(row => postBaselineGlutenFreeFi.has(row.recipe_id));
   if (addedGlutenFree.length) {
     const present = addedGlutenFree.map(row => row.recipe_id).sort();
