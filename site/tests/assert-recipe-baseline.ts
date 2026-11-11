@@ -4,6 +4,7 @@ import { execFileSync } from "node:child_process";
 import { readFileSync } from "node:fs";
 import path from "node:path";
 import { recipeTextForApprovedSnapshot } from "../scripts/approved-recipe-note-edits";
+import { historicalBreakfastRecipe, reviewedBreakfastPaths } from "../scripts/gk100-breakfast-sealed-source";
 import { historicalFarinataForApprovedPanVersion } from "../scripts/gk100-farinata-sealed-source";
 import { parseMarkdown } from "../src/content/markdown";
 import { textHash } from "../scripts/gk149-model";
@@ -78,6 +79,15 @@ export function assertRecipeBaseline(root: string, baseline: string, ...protecte
       const published = execFileSync("git", ["show", `${briocheImageCorrectionSha}:${file}`], { cwd: root, encoding: "utf8" });
       assert.equal(readFileSync(path.join(root, file), "utf8").replaceAll("\r\n", "\n"), published.replaceAll("\r\n", "\n"), change);
       continue;
+    }
+    if (status === "M" && reviewedBreakfastPaths.includes(file)) {
+      const current = readFileSync(path.join(root, file), "utf8");
+      const historical = historicalBreakfastRecipe(file, current);
+      if (historical !== current) {
+        const original = execFileSync("git", ["show", baseline + ":" + file], { cwd: root, encoding: "utf8" });
+        assert.equal(historical, original.replaceAll("\r\n", "\n"), change);
+        continue;
+      }
     }
     const approved = recipeChanges.get(file);
     if (approved?.status === status) {

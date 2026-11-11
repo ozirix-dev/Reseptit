@@ -9,6 +9,8 @@ import {prepareLegacyGkCandidates,verifyLegacyCandidateInput,verifyLegacyCandida
 import {reviewedSourceHashMatches} from '../scripts/afcd-column-correction';
 import {glycemicLoadEvidenceHash,glycemicLoadInputHash} from '../scripts/glycemic-load-recipe-binding';
 import {roundGlycemicLoadForDisplay} from '../scripts/glycemic-load-model';
+import {historicalBreakfastRecipe, reviewedBreakfastPaths} from '../scripts/gk100-breakfast-sealed-source';
+import {verifyReleaseBundle} from '../scripts/gk100-approval-release';
 import {historicalFarinataForApprovedPanVersion} from '../scripts/gk100-farinata-sealed-source';
 import {fileURLToPath} from 'node:url';
 
@@ -19,6 +21,29 @@ const sha=(v:unknown)=>createHash('sha256').update(JSON.stringify(v)).digest('he
 const lf=(v:any):any=>typeof v==='string'?v.replaceAll('\r\n','\n'):Array.isArray(v)?v.map(lf):v&&typeof v==='object'?Object.fromEntries(Object.entries(v).map(([k,x])=>[k,lf(x)])):v;
 const before=json('docs/nutrition/gk-legacy-reconciliation/baseline.json');
 const report=json('tmp/nutrition/glycemic-load-pilot.json');
+
+test('serabi and apam balik retain only the sealed thin-version GK', () => {
+ for (const [bundleName, id] of [
+  ['first-five', 'indonesialainen-serabi-kookospannukakku'],
+  ['eighteen', 'malesialainen-apam-balik'],
+ ]) {
+  const file = `reseptit/aamupalat/${id}.md`;
+  const {bundle, authorization} = json(`docs/nutrition/gk100-approved-releases/${bundleName}.json`);
+  const live = read(file).replaceAll('\r\n','\n');
+  const historical = historicalBreakfastRecipe(file, live);
+  assert.notEqual(historical, live);
+  const historicalHash = createHash('sha256').update(historical).digest('hex');
+  const approved = bundle.manifest.candidates.find((row: any) => row.recipeId === id);
+  assert.equal(historicalHash, approved.originalSha256);
+  assert.equal(live.split('\n## Valmistus\n')[0], historical.split('\n## Valmistus\n')[0]);
+  const versions = verifyReleaseBundle(bundle, authorization, read);
+  assert.equal(versions.filter(version => version.recipeId === id).length, 1);
+  assert.equal(report.results.find((row: any) => row.recipeId === id).glycemicLoadPerServing, null);
+  assert.throws(() => verifyReleaseBundle(bundle, authorization,
+   source => source === file ? live + '\nUnreviewed change\n' : read(source)),
+  /GK100_RELEASE_CANDIDATE_CHANGED/);
+ }
+});
 
 test('Live original results preserve frozen history plus the exact reviewed transitions; all87 variants and macros stay identical',()=>{
  assert.equal(report.results.length,335); // five post-baseline classics remain in live reporting
@@ -51,8 +76,16 @@ test('Live original results preserve frozen history plus the exact reviewed tran
  const historicalFarinata=historicalFarinataForApprovedPanVersion(farinataPath,publishedFarinata);
  const publishedFarinataHash=createHash('sha256').update(publishedFarinata).digest('hex');
  const historicalFarinataHash=createHash('sha256').update(historicalFarinata).digest('hex');
+ const historicalInventory = inventory.map((row: any) => {
+  if (!reviewedBreakfastPaths.includes(row.source_path)) return row;
+  const live = read(row.source_path);
+  const historical = historicalBreakfastRecipe(row.source_path, live);
+  if (historical === live) return row;
+  assert.equal(row.source_content_hash, createHash('sha256').update(live.replaceAll('\r\n','\n')).digest('hex'));
+  return {...row, source_content_hash:createHash('sha256').update(historical).digest('hex')};
+ });
  for (const lineEnding of ['\n', '\r\n']) {
-  const withLineEndings = inventory.map((row: any) => {
+  const withLineEndings = historicalInventory.map((row: any) => {
    const normalNotes=row.notes.replaceAll('\r\n', '\n').replaceAll('\n', lineEnding);
    if(row.recipe_id!=='valimerellinen-farinata-aamupalaksi'||historicalFarinata===publishedFarinata){
     return {...row,notes:normalNotes};

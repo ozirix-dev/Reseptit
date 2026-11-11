@@ -25,3 +25,9 @@ Päiväys: 2026-11-09. Lähtöhaara: `main`. Ei muutoksia #359:n tiedostoihin, k
 3. Reseptin tunnistettava rakenne säilyy: serabi on kookos-riisijauhopannukakku; apam balik on täytetty maapähkinä-maissilettu.
 4. Ei väitetä fyysistä koepaistoa tai hyväksytä historiallisia GI/GK-sidoksia uudelleen.
 5. Ennen mergeä CI, lähdesidosten tarkistus ja mahdollinen uuden käännöstyön päällekkäisyys tarkistettava.
+
+## GK100-katselmointi
+
+Serabin hyväksytty GK100-arvio koskee ohutta pannulla paistettua riisi-kookoslettua. Korjattu kotiohje tekee pieniä paksuhkoja pannukakkuja. Apam balikin hyväksytty arvio koskee ohutta vehnälettua, jossa on erikseen kypsennetty ja valutettu maissi. Korjattu kotiohje tekee paksun täytetyn letun ja kypsentää taitetun letun kannen alla.
+
+Kummankin kotiohjeen GK jää määrittämättä. Sivuston erilliset ohuen letun GK100-versiot säilyttävät hyväksytyt ohjeensa, määränsä, lukunsa ja rajauksensa. Vain tarkalleen katselmoidusta uudesta kotiohjeesta palautetaan vanha lähdeteksti hyväksyntäpaketin tarkistukseen. Hyväksyntäpaketin oma tarkiste varmistaa palautetun tekstin, ja muu lähdemuutos tarvitsee uuden katselmoinnin.

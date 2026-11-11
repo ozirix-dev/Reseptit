@@ -1,5 +1,6 @@
 import { readFileSync, readdirSync, realpathSync } from 'node:fs';
 import { join, relative } from 'node:path';
+import { historicalBreakfastForApprovedThinVersion } from './gk100-breakfast-sealed-source';
 import { fingerprint } from './gk80-candidate-model';
 import { historicalFarinataForApprovedPanVersion } from './gk100-farinata-sealed-source';
 import { checkBatch, applyDecisions, type Batch, type Decisions, type prepareRelease } from './gk100-approval-factory';
@@ -37,13 +38,15 @@ export function makeReleaseBundle(checked: ReturnType<typeof checkBatch>, batch:
 }
 
 export function verifyReleaseBundle(sealed: Bundle & { bundleSha256: string }, authorization: Authorization,
-  read: (file: string) => string): GkOnlyVariant[] {
+  readCurrent: (file: string) => string): GkOnlyVariant[] {
   const { bundleSha256, ...bundle } = sealed;
   if (bundle.schemaVersion !== 1 || bundle.publicationAuthorized !== false
       || bundleSha256 !== fingerprint(bundle) || authorization.schemaVersion !== 1
       || authorization.bundleSha256 !== bundleSha256 || typeof authorization.evidence !== 'string'
       || !authorization.evidence.trim() || !Array.isArray(bundle.recipeIds) || bundle.recipeIds.length === 0
       || bundle.recipeIds.length !== new Set(bundle.recipeIds).size) throw Error('GK100_RELEASE_AUTHORIZATION');
+  const read = (file: string) =>
+    historicalBreakfastForApprovedThinVersion(bundle.batch.batchId, file, readCurrent(file));
   const { manifestSha256, ...manifest } = bundle.manifest;
   if (manifestSha256 !== fingerprint(manifest)) throw Error('GK100_RELEASE_MANIFEST_HASH');
   const entries = bundle.batch.candidates.filter(entry => bundle.recipeIds.includes(entry.recipeId));
