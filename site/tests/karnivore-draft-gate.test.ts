@@ -22,12 +22,19 @@ test("unapproved vegetable ingredient is blocked", () => {
   assert.throws(() => assertKarnivoreDraftSafe(candidate, prep), /ingredient identity changed/);
 });
 test("unreviewed recipe ID is blocked", () => {
-  assert.throws(() => assertKarnivoreDraftSafe(sample("karnivore-unknown"), prep), /Unreviewed karnivore recipe ID/);
+  const candidate = { ...sample(), recipe_id: "karnivore-unknown", url_slug: "karnivore-unknown" };
+  assert.throws(() => assertKarnivoreDraftSafe(candidate, prep), /Unreviewed karnivore recipe ID/);
 });
 test("published status cannot bypass the nutrition and image gate", () => {
-  const candidate = sample();
-  candidate.status = "published";
-  assert.throws(() => assertKarnivoreDraftSafe(candidate, prep), /publication blocked/);
+  const held = sample("karnivore-meatza");
+  held.status = "published";
+  assert.throws(() => assertKarnivoreDraftSafe(held, prep), /publication blocked/);
+
+  const approved = sample();
+  approved.status = "published";
+  assert.throws(() => assertKarnivoreDraftSafe(approved, prep), /published carnivore needs the scoped WebP and metadata/);
+  approved.image = { src: "paaruoat/karnivore-steak-and-eggs.webp", alt: "Steak and eggs", width: 1280, height: 853 };
+  assert.throws(() => assertKarnivoreDraftSafe(approved, prep), /published nutrition values require a calculation/);
 });
 test("unsupported nutrition, keto/VHH or gluten-free claims are blocked", () => {
   const macros = sample(); macros.carbs_net_per_serving_g = 0;

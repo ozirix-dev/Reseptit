@@ -6,12 +6,14 @@ import { test } from "node:test";
 import { parseMarkdown } from "../src/content/markdown";
 import { recipeFrontmatterSchema } from "../src/content/schema";
 
+type PublishedReview = { recipeId: string; releasePr: number; sourceBlobSha: string; state: string; gkStatus: string };
+
 test("five newly illustrated karnivore FI drafts stay source-pinned and nutrition HOLD", async () => {
   const root = path.resolve(import.meta.dirname, "../..");
   const audit = JSON.parse(await readFile(path.join(root, "docs/reviews/karnivore-fi5-publication-triage-2026-11-11.json"), "utf8")) as {
     publicationAuthorized: boolean;
     rawScenarioCanBePublished: boolean;
-    postReviewReleases?: Array<{recipeId:string;releasePr:number;sourceBlobSha:string;state:string;gkStatus:string}>;
+    postReviewReleases?: PublishedReview[];
     recipes: Array<{ recipeId: string; sourceBlobSha: string; sourcePath: string; status: string;
       sourceMatchCounts: {matched: number; proxy: number; unresolved: number};
       blockers: string[]; gkStatus: string; rawScenarioStatus: string; productCandidates: Array<{url:string}> }>;
@@ -45,7 +47,7 @@ test("five newly illustrated karnivore FI drafts stay source-pinned and nutritio
     assert.deepEqual([recipe.image?.width,recipe.image?.height],[1280,853]);
     if (row.recipeId === "karnivore-smashburger") {
       const publicBytes=await readFile(path.join(root,"reseptit/paaruoat",row.recipeId+".md"));
-      const sourcePin=audit.postReviewReleases?.find(x=>x.recipeId===row.recipeId);
+      const sourcePin: PublishedReview | undefined = audit.postReviewReleases?.find((release) => release.recipeId === row.recipeId);
       assert(sourcePin,"published Smashburger needs a separately reviewed source pin");
       const publicHash=createHash("sha1").update("blob "+publicBytes.byteLength+"\\0".replace("\\0","\0")).update(publicBytes).digest("hex");
       assert.equal(publicHash,sourcePin.sourceBlobSha,"published source changed without renewed review");
