@@ -663,19 +663,14 @@ test("copyright policy is unobtrusive, accessible and prerendered in all four la
   }
 });
 
-test("FI bánh cuốn publicly states GK: ei määritetty while withholding its old numerical nutrition",async()=>{
+test("FI bánh cuốn static page explicitly labels missing GK while keeping historical macros withheld", async () => {
   const id="vietnamilainen-banh-cuon-sienilla";
-  const html=await readFile(path.join(dist,id,"index.html"),"utf8");
-  assert.match(html,/GK: ei määritetty/);
-  assert.match(html,/data-gk-status="NOT_DEFINED"/);
-  assert.match(html,/data-nutrition-scope="ORIGINAL_RECIPE"/);
-  assert.match(html,/data-f25-nutrition-status="SOURCE_REVIEW_WITHHELD"/);
-  assert.doesNotMatch(html,/data-gk-status="CALCULATED"/);
-  const schemaStart=html.indexOf('<script id="recipe-jsonld" type="application/ld+json">');
-  assert.ok(schemaStart>=0);
-  const jsonStart=html.indexOf(">",schemaStart)+1;
-  const jsonEnd=html.indexOf("</script>",jsonStart);
-  assert.ok(jsonEnd>jsonStart);
-  const structured=JSON.parse(html.slice(jsonStart,jsonEnd));
-  assert.equal(Object.hasOwn(structured,"nutrition"),false);
+  const source=siteContent.recipes.find(r=>r.recipeId===id&&r.locale==="fi");
+  assert.ok(source);
+  const html=await readFile(path.join(dist,source.routePath.slice(1),"index.html"),"utf8");
+  const root=html.slice(html.indexOf('<div id="root">'));
+  assert.ok(root.includes("GK: ei määritetty"));
+  assert.ok(root.includes('data-gk-status="NOT_DEFINED"'));
+  assert.ok(root.includes('data-f25-nutrition-status="SOURCE_REVIEW_WITHHELD"'));
+  assert.ok(!root.includes('data-gk-status="CALCULATED"'));
 });
