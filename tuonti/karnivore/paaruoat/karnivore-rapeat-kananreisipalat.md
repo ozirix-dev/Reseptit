@@ -11,6 +11,11 @@ servings: 4
 time_total_min: 45
 difficulty: "helppo"
 tags: [carnivore, karnivore]
+image:
+  src: "paaruoat/karnivore-rapeat-kananreisipalat.webp"
+  alt: "Neljä paistettua broilerin reisipalaa kullanruskea nahkapuoli ylöspäin."
+  width: 1280
+  height: 853
 ingredients:
   - amount: 900
     unit: "g"

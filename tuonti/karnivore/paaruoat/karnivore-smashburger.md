@@ -11,6 +11,11 @@ servings: 2
 time_total_min: 20
 difficulty: "helppo"
 tags: [carnivore, karnivore]
+image:
+  src: "paaruoat/karnivore-smashburger.webp"
+  alt: "Kaksi ohueksi painettua naudan jauhelihapihviä, joissa on rapeat paistoreunat."
+  width: 1280
+  height: 853
 ingredients:
   - amount: 500
     unit: "g"
