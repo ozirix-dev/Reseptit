@@ -1,0 +1,314 @@
+{
+  "date": "2026-11-11",
+  "method": "Independent deterministic cross-check from current main docs/nutrition/calculations JSON ingredient records; source candidate changed but the recorded input data are not replaced or approved.",
+  "macrosDefinition": "Carbohydrate is already available carbohydrate in the source files. Fibre is separate. No additional subtraction of fibre or polyols. Approximate energy 4*available carbohydrate+4*protein+9*fat+2*fibre, not the canonical site calculate() result.",
+  "status": "RESEARCH_ONLY_HOLD",
+  "recipes": [
+    {
+      "id": "vietnamilainen-papaija-kookospuuro",
+      "servings": 2,
+      "legacySourceHash": "d6aff10dfa2f840dddb2062e337221fa49776f6ac18ac92ec696e44c91fd784a",
+      "legacyNutritionFileBlob": "46c0590ba9cbc3554f04d5e00846e586982bea9a",
+      "scenario": "Existing food-record and original retained-fraction assumptions only",
+      "perServing": {
+        "carbohydrate": 49.7,
+        "fibre": 2.37,
+        "polyols": 0,
+        "protein": 1.85,
+        "fat": 14.28,
+        "approxKcalAtwater": 339.43
+      },
+      "ingredients": [
+        {
+          "item": "tapiokahelmiä",
+          "grams": 100,
+          "source": "afcd-F009090-release-3",
+          "carbohydrate": 79.3,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0.2,
+          "fat": 0.2
+        },
+        {
+          "item": "kookosmaito",
+          "grams": 184,
+          "source": "afcd-F002991-release-3",
+          "carbohydrate": 3.128,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 2.5759999999999996,
+          "fat": 28.336
+        },
+        {
+          "item": "papaija",
+          "grams": 200,
+          "source": "afcd-F006528-release-3",
+          "carbohydrate": 16.8,
+          "fibre": 4.2,
+          "polyols": 0,
+          "protein": 0.8,
+          "fat": 0
+        },
+        {
+          "item": "limettimehua",
+          "grams": 15,
+          "source": "afcd-F004729-release-3",
+          "carbohydrate": 0.18,
+          "fibre": 0.54,
+          "polyols": 0,
+          "protein": 0.12,
+          "fat": 0.015
+        },
+        {
+          "item": "vettä",
+          "grams": 700,
+          "source": "fineli-922-release-20",
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 0
+        }
+      ],
+      "blockers": [
+        "Cock tapioca pearls EAN 0084909007087 has 86 g carbohydrates per 100g vs AFCD baseline 79.3; delta +3.35 g per two-serving recipe serving, but total ingredient/product recomputation is pending",
+        "K-Ruoka product page does not provide verifiable fibre/polyols and asks to check the actual package; no approval of complete product label",
+        "200 ml coconut milk model uses 0.92 g/ml with generic AFCD composition, exact product unverified; technique and cooking time untested"
+      ]
+    },
+    {
+      "id": "vietnamilainen-banh-cuon-sienilla",
+      "servings": 2,
+      "legacySourceHash": "72add279fc7ed90cdb365397eea4399da7f7058fbc6b6e0d6500a012221a8bb7",
+      "legacyNutritionFileBlob": "969e6696fecc2c57873604ad9bd4545647668c26",
+      "scenario": "Existing food-record and original retained-fraction assumptions only",
+      "perServing": {
+        "carbohydrate": 40.31,
+        "fibre": 1.85,
+        "polyols": 0.6,
+        "protein": 21.37,
+        "fat": 9.05,
+        "approxKcalAtwater": 331.85
+      },
+      "ingredients": [
+        {
+          "item": "riisijauho",
+          "grams": 100,
+          "source": "fineli-182-release-20",
+          "carbohydrate": 79.3,
+          "fibre": 2.3,
+          "polyols": 0,
+          "protein": 7.69,
+          "fat": 1.4
+        },
+        {
+          "item": "vettä",
+          "grams": 250,
+          "source": "fineli-922-release-20",
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 0
+        },
+        {
+          "item": "tuoreita herkkusieniä",
+          "grams": 100,
+          "source": "afcd-F005946-release-3",
+          "carbohydrate": 0.8,
+          "fibre": 1.4,
+          "polyols": 1.2,
+          "protein": 2.2,
+          "fat": 0.8
+        },
+        {
+          "item": "porsaan jauheliha",
+          "grams": 150,
+          "source": "afcd-F007057-release-3",
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 31.35,
+          "fat": 15.9
+        },
+        {
+          "item": "kalakastike",
+          "grams": 15,
+          "source": "off-13692210-squid-brand-fish-sauce-2026-10-24",
+          "carbohydrate": 0.51,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 1.5,
+          "fat": 0
+        }
+      ],
+      "blockers": [
+        "Source Open Food Facts Squid product model has 3.4 g carbohydrate and 10g protein /100g; Finland retailer shows 3.0g carbohydrate and 11g protein /100g for EAN 8850620888203, and a Dutch market product sheet reports 17g protein /100g. Same brand is not exact product-label identity.",
+        "One tablespoon assumed 15 g in old model, but some regional packages list values per 100ml; density and package identity must be verified before swapping nutrition input.",
+        "Pan-based oil-free rice sheet method not tested for release, pork and fish-allergen handling must remain explicit."
+      ]
+    },
+    {
+      "id": "vietnamilainen-banh-xeo-aamiaisletut",
+      "servings": 2,
+      "legacySourceHash": "dde4c5edfda11bb470d1bc5f9da072ac457b79f6c3d474807d87a018866daf20",
+      "legacyNutritionFileBlob": "cce0d1060a066b208a3713b59a1cb9ed12bf684c",
+      "scenario": "Existing food-record and original retained-fraction assumptions only",
+      "perServing": {
+        "carbohydrate": 42.55,
+        "fibre": 2.13,
+        "polyols": 0,
+        "protein": 17.47,
+        "fat": 23.37,
+        "approxKcalAtwater": 454.64
+      },
+      "ingredients": [
+        {
+          "item": "riisijauho",
+          "grams": 100,
+          "source": "fineli-182-release-20",
+          "carbohydrate": 79.3,
+          "fibre": 2.3,
+          "polyols": 0,
+          "protein": 7.69,
+          "fat": 1.4
+        },
+        {
+          "item": "täysrasvaista kookosmaitoa",
+          "grams": 200,
+          "source": "afcd-F002991-release-3",
+          "carbohydrate": 3.4,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 2.8,
+          "fat": 30.8
+        },
+        {
+          "item": "katkarapu",
+          "grams": 150,
+          "source": "afcd-F007422-release-3",
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 19.8,
+          "fat": 0.9
+        },
+        {
+          "item": "pavunitu",
+          "grams": 150,
+          "source": "afcd-F008806-release-3",
+          "carbohydrate": 2.4,
+          "fibre": 1.95,
+          "polyols": 0,
+          "protein": 4.65,
+          "fat": 0.15
+        },
+        {
+          "item": "neutraalia paistoöljyä",
+          "grams": 13.5,
+          "source": "fineli-541-release-20",
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 13.486500000000001
+        }
+      ],
+      "blockers": [
+        "Old record assumes 100% retention of 13.5g oil, but new cooking method explicitly requires measuring oil left in pan",
+        "Coconut milk assumed 1g/ml; branded product not verified"
+      ]
+    },
+    {
+      "id": "pohjoisafrikkalainen-baghrir",
+      "servings": 2,
+      "legacySourceHash": "77bbe9d82b6aa9a446c591614ed1e08580a4262ccf31da5cc56100b14c896e47",
+      "legacyNutritionFileBlob": "6044f97b27203168c278fd16bbabfa9abcac426d",
+      "scenario": "Existing food-record and original retained-fraction assumptions only",
+      "perServing": {
+        "carbohydrate": 76.19,
+        "fibre": 4.17,
+        "polyols": 0,
+        "protein": 12.49,
+        "fat": 8.2,
+        "approxKcalAtwater": 436.84
+      },
+      "ingredients": [
+        {
+          "item": "mannasuurimo",
+          "grams": 100,
+          "source": "fineli-112-release-20",
+          "carbohydrate": 63.6,
+          "fibre": 3.5,
+          "polyols": 0,
+          "protein": 11.5,
+          "fat": 1.1
+        },
+        {
+          "item": "vehnäjauho",
+          "grams": 100,
+          "source": "fineli-110-release-20",
+          "carbohydrate": 73.998,
+          "fibre": 3.5,
+          "polyols": 0,
+          "protein": 11.6,
+          "fat": 1.56
+        },
+        {
+          "item": "kuivahiivaa",
+          "grams": 5,
+          "source": "afcd-F009606-release-3",
+          "carbohydrate": 0.315,
+          "fibre": 1.345,
+          "polyols": 0,
+          "protein": 1.82,
+          "fat": 0.25
+        },
+        {
+          "item": "hunaja",
+          "grams": 20,
+          "source": "afcd-F004380-release-3",
+          "carbohydrate": 14.46,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0.06,
+          "fat": 0
+        },
+        {
+          "item": "neutraalia paistoöljyä",
+          "grams": 13.5,
+          "source": "fineli-541-release-20",
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 13.486500000000001
+        },
+        {
+          "item": "lämmintä vettä",
+          "grams": 150,
+          "source": "fineli-922-release-20",
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 0
+        }
+      ],
+      "blockers": [
+        "Old nutrition source uses 150ml water; new candidate 300ml invalidates source fingerprint",
+        "Oil retention and preparation quality unresolved"
+      ]
+    }
+  ],
+  "decision": "0/4 release authorized; new FI source, recorded product matching, GK input hash and EN/SV/TH review required.",
+  "notes": {
+    "labelVerification": "Public retailer pages are research candidates only; actual package label remains source of truth",
+    "verifiedLinks": [
+      "https://www.k-ruoka.fi/kauppa/tuote/cock-tapioca-pearl-400g-0084909007087",
+      "https://www.aasiamarket.fi/en/product/fish-sauce-725ml-squid/",
+      "https://psinfoodservice.com/en/product/3896121-squid-fish-sauce-725ml/"
+    ],
+    "waterVersioning": "Zero macro contribution of added water is not a license to reuse old FI/GK/source identity, nor to imply measured prepared yield."
+  }
+}

@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 1,
+  "reviewDate": "2026-11-11",
+  "stage": "RESEARCH_ONLY_HOLD",
+  "purpose": "Product-identity and ingredient-retention scenarios; no production nutrition, GK or release approval",
+  "arithmetic": "EU available carbohydrate as already recorded; do not subtract fibre again. Energy sensitivity uses 9 kcal per g retained fat only. All calculations are two-serving scenario contrasts, not lab results.",
+  "scenarios": [
+    {
+      "recipeId": "vietnamilainen-papaija-kookospuuro",
+      "product": "Cock small tapioca pearls 400 g",
+      "ean": "0084909007087",
+      "retailer": "https://www.k-ruoka.fi/kauppa/tuote/cock-tapioca-pearl-400g-0084909007087",
+      "baseline": {
+        "carbohydratePer100g": 79.3,
+        "source": "AFCD F009090"
+      },
+      "labelCandidate": {
+        "carbohydratePer100g": 86,
+        "ingredientBasis": "100 g dry pearls; 2 servings",
+        "fibrePer100g": null,
+        "polyolsPer100g": null
+      },
+      "availableCarbDeltaPerServingG": 3.35,
+      "baselineRecipeCarbGPerServing": 49.7,
+      "partialCarbScenarioGPerServing": 53.05,
+      "explanation": "Arithmetic substitution of only the pearls. Not a complete alternate-recipe macro approval; coconut milk remains generic and package fibre/polyols are unknown.",
+      "status": "HOLD_LABEL_AND_PRODUCT"
+    },
+    {
+      "recipeId": "vietnamilainen-banh-cuon-sienilla",
+      "product": "Squid fish sauce 725 ml Finland / other markets",
+      "brandCandidateEan": "8850620888203",
+      "retailer": "https://www.aasiamarket.fi/en/product/fish-sauce-725ml-squid/",
+      "alternateSheet": "https://psinfoodservice.com/en/product/3896121-squid-fish-sauce-725ml/",
+      "oldModel": {
+        "carbohydratePer100g": 3.4,
+        "proteinPer100g": 10,
+        "gramsPerTablespoon": 15
+      },
+      "finlandRetailModel": {
+        "carbohydratePer100g": 3,
+        "proteinPer100g": 11
+      },
+      "alternateMarketProteinPer100g": 17,
+      "labelModelIf15gMass": {
+        "carbohydrateDeltaGPerServing": -0.03,
+        "proteinDeltaGPerServing": 0.075,
+        "alternateProteinDeltaGPerServing": 0.525
+      },
+      "explanation": "Retail nutrition declaration per 100g/ml must not be silently equated to 100g before liquid density and label units are confirmed. Per-serving differences are conditional on 15g total fish sauce and two servings.",
+      "status": "HOLD_EXACT_PACK_AND_DENSITY"
+    },
+    {
+      "recipeId": "vietnamilainen-banh-xeo-aamiaisletut",
+      "panOilInputG": 13.5,
+      "servings": 2,
+      "baselineFatGPerServing": 23.37,
+      "oilFatAt100PercentRetentionGPerServing": 6.74325,
+      "retentionScenarios": [
+        {
+          "fractionOfOilRetained": 0,
+          "approxTotalFatGPerServing": 16.63,
+          "approxEnergyChangeVs100PercentKcalPerServing": -60.69
+        },
+        {
+          "fractionOfOilRetained": 0.5,
+          "approxTotalFatGPerServing": 20,
+          "approxEnergyChangeVs100PercentKcalPerServing": -30.34
+        },
+        {
+          "fractionOfOilRetained": 1,
+          "approxTotalFatGPerServing": 23.37,
+          "approxEnergyChangeVs100PercentKcalPerServing": 0
+        }
+      ],
+      "explanation": "Only the oil-retention fraction is varied; all other food-record assumptions stay constant. 0% is a theoretical lower bound, not a measured realistic cook loss. Water +120ml changes source fingerprint but not macros on its own.",
+      "status": "HOLD_OIL_RETENTION_AND_PRODUCT"
+    },
+    {
+      "recipeId": "pohjoisafrikkalainen-baghrir",
+      "panOilInputG": 13.5,
+      "servings": 2,
+      "baselineFatGPerServing": 8.2,
+      "oilFatAt100PercentRetentionGPerServing": 6.74325,
+      "retentionScenarios": [
+        {
+          "fractionOfOilRetained": 0,
+          "approxTotalFatGPerServing": 1.46,
+          "approxEnergyChangeVs100PercentKcalPerServing": -60.69
+        },
+        {
+          "fractionOfOilRetained": 0.5,
+          "approxTotalFatGPerServing": 4.83,
+          "approxEnergyChangeVs100PercentKcalPerServing": -30.34
+        },
+        {
+          "fractionOfOilRetained": 1,
+          "approxTotalFatGPerServing": 8.2,
+          "approxEnergyChangeVs100PercentKcalPerServing": 0
+        }
+      ],
+      "oldWaterMl": 150,
+      "candidateWaterMl": 300,
+      "explanation": "Only pan oil retention changes macros in this simple sensitivity calculation; modified water, yeast activity, surface holes, yield and GI version remain unresolved. Historical nutrition evidence is source-locked to 150ml water.",
+      "status": "HOLD_SOURCE_AND_GI_GK"
+    }
+  ],
+  "gk": {
+    "approvedCount": 0,
+    "recipeCount": 4,
+    "rule": "GK = Σ of available carbohydrate of GI-assigned ingredients * ingredient-specific GI/100 per serving, subject to recipe source version, credible GI sources, and documented LOW omission tolerance. No group analogy or invented GI.",
+    "sourcesVerifiedForCurrentCandidate": false,
+    "numericGKPerRecipe": [
+      {
+        "recipeId": "vietnamilainen-papaija-kookospuuro",
+        "gk": null
+      },
+      {
+        "recipeId": "vietnamilainen-banh-cuon-sienilla",
+        "gk": null
+      },
+      {
+        "recipeId": "vietnamilainen-banh-xeo-aamiaisletut",
+        "gk": null
+      },
+      {
+        "recipeId": "pohjoisafrikkalainen-baghrir",
+        "gk": null
+      }
+    ],
+    "nextGates": [
+      "Approve exact products and ingredient masses including oil retention",
+      "Create new FI canonical source version for approved candidate",
+      "Re-run calculate() with product-matched source records",
+      "Get ingredient-specific GI evidence and compute GK with source hash bound to new FI/nutrition version",
+      "Review translated semantics and publish in a distinct release PR only after exact-HEAD CI"
+    ]
+  }
+}
