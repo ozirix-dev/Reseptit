@@ -3,7 +3,7 @@ import {test} from "node:test";
 import {createHash} from "node:crypto";
 import {readFileSync} from "node:fs";
 import path from "node:path";
-import {f25UnverifiedNutritionSourceIds, withholdF25Nutrition} from "../src/features/recipes/f25-nutrition-withhold";
+import {f25UnverifiedNutritionSourceIds, withholdF25Nutrition, publicF25GkFilterCategories} from "../src/features/recipes/f25-nutrition-withhold";
 import {recipeJsonLd} from "../src/features/recipes/schema";
 
 const a2 = [
@@ -49,4 +49,20 @@ test("unrelated FI recipes retain nutrition, and locale check does not silently 
     proteinContent:"12 g",
     fatContent:"8 g",
   });
+});
+
+test("FI GK filter does not assign a held macro source to misleading low/medium/high classes",()=>{
+  const sample:Record<string,"low"|"medium"|"high"> = {
+    "vietnamilainen-papaija-kookospuuro":"high",
+    "vietnamilainen-banh-cuon-sienilla":"high",
+    "vietnamilainen-banh-xeo-aamiaisletut":"medium",
+    "pohjoisafrikkalainen-baghrir":"high",
+    "gluteeniton-uunipannukakku":"low",
+  };
+  const fi=publicF25GkFilterCategories(sample,"fi");
+  assert.deepEqual(Object.keys(fi),["gluteeniton-uunipannukakku"]);
+  assert.equal(fi["gluteeniton-uunipannukakku"],"low");
+  assert.equal(fi["pohjoisafrikkalainen-baghrir"],undefined);
+  assert.deepEqual(publicF25GkFilterCategories(sample,"en"),sample);
+  assert.equal(sample["vietnamilainen-papaija-kookospuuro"],"high","historical data stays byte-identical");
 });
