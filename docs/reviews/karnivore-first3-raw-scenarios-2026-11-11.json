@@ -1,0 +1,210 @@
+{
+  "documentType": "KARNIVORE_FI3_RAW_INGREDIENT_SCENARIO_NONPUBLISHABLE",
+  "calculatedAt": "2026-11-11",
+  "sourcePullRequest": "https://github.com/ozirix-dev/Reseptit/pull/448",
+  "sourcePRHead": "221f9cc4cf4c061675fff1f5f19aec2e16d2aed5",
+  "metadataPublicationBlocked": true,
+  "giGkPublicationBlocked": true,
+  "photoPublicationBlocked": true,
+  "status": "HOLD_DO_NOT_PUBLISH",
+  "dataSemantics": "Raw pre-cooking ingredient nutrient budget assuming 100% of listed product mass is edible and all nutrient-bearing material is consumed. These are NOT estimates of actually consumed cooked portions, declared product labels for the finished dish or conservative bounds. No yield or retention defaults are authorized.",
+  "carbohydrateWarning": "Product-label zero is a rounded value; do not assert chemically zero carbohydrate, or GK=0, or derive GI=0.",
+  "sourceRecords": {
+    "hkEntrecote": {
+      "record": "HK Naudan entrecote",
+      "sourceUrl": "https://www.hk.fi/tuotteet/hk-naudan-entrecote-/",
+      "id": "HK 1824",
+      "per100g": {
+        "protein": 20,
+        "fat": 12,
+        "carbsAvailable": 0
+      },
+      "kind": "product_scenario_only"
+    },
+    "kalaneuvosLohi": {
+      "record": "Kalaneuvos Lohifilee nahallinen C/D-leikkuu",
+      "sourceUrl": "https://kalaneuvos.fi/tuotteet/tuoreet-kalat/lohifilee/",
+      "id": "Kalaneuvos lohifilee (C/D leikkuu)",
+      "per100g": {
+        "protein": 18.7,
+        "fat": 13.5,
+        "carbsAvailable": 0
+      },
+      "kind": "product_type_scenario_only"
+    },
+    "snellman20": {
+      "record": "Snellman Kunnon naudan jauheliha 20% 400g",
+      "sourceUrl": "https://snellman.fi/fi/tuotteet/kunnon-naudan-jauheliha-20-400-g/",
+      "id": "EAN 6409620011856",
+      "per100g": {
+        "protein": 18,
+        "fat": 20,
+        "carbsAvailable": 0
+      },
+      "kind": "exact_product_scenario_only"
+    },
+    "fineliEgg": {
+      "record": "Fineli kananmuna kuoreton, tietue 858",
+      "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/858",
+      "id": "Fineli Release 20:858",
+      "per100g": {
+        "protein": 12.61,
+        "fat": 9.24,
+        "carbsAvailable": 0.3
+      },
+      "kind": "source_map_matched"
+    },
+    "fineliButter": {
+      "record": "Fineli voi, tietue 500",
+      "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/500",
+      "id": "Fineli Release 20:500",
+      "per100g": {
+        "protein": 1.19,
+        "fat": 81.3,
+        "carbsAvailable": 0.8
+      },
+      "kind": "source_map_matched"
+    },
+    "fineliSalt": {
+      "record": "Fineli jodioitu ruokasuola, tietue 30",
+      "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/30?c=2034&c2=2168",
+      "id": "Fineli Release 20:30",
+      "per100g": {
+        "protein": 0.63,
+        "fat": 0,
+        "carbsAvailable": 0
+      },
+      "kind": "source_map_matched"
+    }
+  },
+  "recipes": [
+    {
+      "recipeId": "karnivore-steak-and-eggs",
+      "blobSha": "46d3a0939f656102ac4828629cd7cc77e79df51d",
+      "servings": 2,
+      "ingredients": [
+        {
+          "sourceKey": "hkEntrecote",
+          "grams": 360,
+          "item": "entrecôte-pihviä"
+        },
+        {
+          "sourceKey": "fineliEgg",
+          "grams": 220,
+          "item": "kananmunaa ilman kuoria"
+        },
+        {
+          "sourceKey": "fineliButter",
+          "grams": 20,
+          "item": "voita"
+        },
+        {
+          "sourceKey": "fineliSalt",
+          "grams": 3,
+          "item": "suolaa"
+        }
+      ],
+      "openChecks": [
+        "Määritä Suomessa saatavan entrecôten täsmätuote tai hyväksy perusteltu tuotevaihtelu; reseptin nykyinen lähde on geneerinen.",
+        "Mittaa/arvioi dokumentoidusti kypsennyksessä ruoasta ulos valunut rasva ja tarjoiltu paistovoi.",
+        "Yksi oma täsmälleen ainesosia vastaava kuva tiedostoon kuvat/paaruoat/ ja metatiedot.",
+        "GK erillisen portin kautta; älä päättele glykeemistä indeksiä."
+      ],
+      "imageGitPath": "kuvat/paaruoat/karnivore-steak-and-eggs.webp",
+      "rawInputPerServing": {
+        "protein": 49.999,
+        "fat": 39.894,
+        "carbsAvailable": 0.41
+      },
+      "rawInputAtwaterKcalPerServing": 560.7,
+      "cookedServingNutrition": null,
+      "gi": null,
+      "gk": null,
+      "retentionEvidence": null,
+      "photoVerified": false,
+      "releaseApproved": false
+    },
+    {
+      "recipeId": "karnivore-voilohi-pannulla",
+      "blobSha": "787d45399ee6b40d46696c28eb9025fc3c5b100c",
+      "servings": 2,
+      "ingredients": [
+        {
+          "sourceKey": "kalaneuvosLohi",
+          "grams": 400,
+          "item": "nahallista lohifileetä"
+        },
+        {
+          "sourceKey": "fineliButter",
+          "grams": 35,
+          "item": "voita"
+        },
+        {
+          "sourceKey": "fineliSalt",
+          "grams": 3,
+          "item": "suolaa"
+        }
+      ],
+      "openChecks": [
+        "Varmista valittu Kalaneuvos C/D -leikkuinen tuote on nahallinen, ruodoton ja 400 g punnitus vastaa syötävää osaa.",
+        "Vahvista paistoon käytetyn ja syödyn voin sekä kalan oman paistorasvan osuus.",
+        "Oma kuva ilman kasvikoristeita; nahka näkyy.",
+        "GK erillisen portin kautta, ei julkaistua nollaa."
+      ],
+      "imageGitPath": "kuvat/paaruoat/karnivore-voilohi-pannulla.webp",
+      "rawInputPerServing": {
+        "protein": 37.618,
+        "fat": 41.228,
+        "carbsAvailable": 0.14
+      },
+      "rawInputAtwaterKcalPerServing": 522.1,
+      "cookedServingNutrition": null,
+      "gi": null,
+      "gk": null,
+      "retentionEvidence": null,
+      "photoVerified": false,
+      "releaseApproved": false
+    },
+    {
+      "recipeId": "karnivore-jauhelihakulho-munalla",
+      "blobSha": "f06c92bb7bc0e73bd8c13476b8cbb90cf42ea8c1",
+      "servings": 2,
+      "ingredients": [
+        {
+          "sourceKey": "snellman20",
+          "grams": 400,
+          "item": "naudan jauhelihaa"
+        },
+        {
+          "sourceKey": "fineliEgg",
+          "grams": 110,
+          "item": "kananmunaa ilman kuoria"
+        },
+        {
+          "sourceKey": "fineliSalt",
+          "grams": 4,
+          "item": "suolaa"
+        }
+      ],
+      "openChecks": [
+        "Sido pääraaka-aine täsmätuotteeseen Snellman 20 % EAN 6409620011856 tai dokumentoi erillinen geneerinen vaihteluväli.",
+        "Varmista kaikki pannulta irronnut rasva todella jaetaan annoksiin ja syödään; ei oletettua 100 % retentiota.",
+        "Kuvassa nimenomaan kypsä paistettu kananmuna, ei kahta raakaa keltuaista.",
+        "GK erillisen portin kautta; ei keksittyä arvoa."
+      ],
+      "imageGitPath": "kuvat/paaruoat/karnivore-jauhelihakulho-munalla.webp",
+      "rawInputPerServing": {
+        "protein": 42.948,
+        "fat": 45.082,
+        "carbsAvailable": 0.165
+      },
+      "rawInputAtwaterKcalPerServing": 578.2,
+      "cookedServingNutrition": null,
+      "gi": null,
+      "gk": null,
+      "retentionEvidence": null,
+      "photoVerified": false,
+      "releaseApproved": false
+    }
+  ]
+}
