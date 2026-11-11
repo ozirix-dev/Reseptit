@@ -45,8 +45,8 @@ const approvedC5DraftBlobs = new Map<string, string>([
 // change inspector. They DO NOT alter any of the frozen GK result approvals.
 const approvedKarnivoreFi3Files = new Map<string, string>([
   ["reseptit/paaruoat/karnivore-smashburger.md", "55a2ccf705c4cc1906736e71f2ee1bbad69752e9"],
-  ["docs/nutrition/calculations/karnivore-smashburger.json", "db64d78e31efb1e7a8e8524a492a533d9aa633f2"],
-  ["docs/nutrition/batches/batch-karnivore-smashburger-fi-v1.json", "206ba6999e1d44796c6fc478494111300de20987"],
+  ["docs/nutrition/calculations/karnivore-smashburger.json", "aaa720a939b17505c1161021a50c32a288310970"],
+  ["docs/nutrition/batches/batch-493.json", "8627ad6223b5bccd1c2bccde337435efbc58408b"],
   [
     "reseptit/paaruoat/karnivore-steak-and-eggs.md",
     "5e579c3a60b1835d2bd4895c377502139bb23b91"

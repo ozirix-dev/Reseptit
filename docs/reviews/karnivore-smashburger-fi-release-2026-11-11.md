@@ -20,3 +20,5 @@ Lähteet: https://snellman.fi/fi/tuotteet/kunnon-naudan-jauheliha-20-400-g/ , ht
 2. Valmista `docs/nutrition/calculations/karnivore-smashburger.json` vastaava `sourceHash` ja neljän makron ravintotarkiste.
 3. Hyväksy vain yksi FI-julkaisu. Maksa ja pekoni, Meatza, broilerin reisipalat ja lammaskyljykset pysyvät odottamassa omia tuotekohtaisia saantoratkaisuja.
 4. Testaa `main`-historian muuttumattomuus, valittu GK-kattavuus, kuvan metadata, suodatin ja koko sivuston CI. Älä merkitse Ready/julkaistuksi ilman viimeisen commitin vihreää CI:tä.
+
+**Laskentapaketti:** `docs/nutrition/batches/batch-493.json`; laskennan lähdehash `3e5409df1c589166e8f8950486c6bd0025a1b65c0fe72cadc5be95e2e7e11c42`.
