@@ -31,7 +31,7 @@ node --test site/scripts/new-recipe-preflight.test.mjs
 node site/scripts/new-recipe-preflight.mjs --recipe=reseptit/aamupalat/uusi-resepti.md
 ```
 
-PR:ssä `BASE_SHA` ja `HEAD_SHA` määrittävät vertailun. CI tunnistaa sekä juuri lisätyt julkaistut FI-tiedostot että jo haarassa olleen luonnoksen vaihtamisen `published`-tilaan. Vanha `published -> published` -korjaus ei laukaise uutta todistusvaatimusta, mutta muut CI-tarkistukset pysyvät voimassa.
+PR:n CI vertaa GitHubin testiyhdistämistä sen main-pohjaan. Portti tunnistaa uudet julkaistut FI-tiedostot ja luonnosten julkaisun myös silloin, kun tiedosto siirretään tai nimetään uudelleen. Hyväksyntä sidotaan lopulliseen polkuun ja tiedostosisältöön. Saman jo julkaistun reseptin siirto säilyttää nykyisen tarkistusmenettelyn.
 
 **HUOM:** tämä on *evidenssin olemassaoloa ja versionmukaisuutta* tarkistava pakollinen portti. Menetelmä-/ainesosakysymysten semanttista totuutta ei voi vahvistaa pelkällä JSON-tarkistimella; PR #366:n kokkikelpoisuusmenetelmästä ja #358:n ainesosaristiriita-auditoinnista on tarkoitus rakentaa seuraava automaattinen varoitus-/HOLD-vaihe. Tätä PR:ää ei saa esittää noiden pilotin tulosten korvaajana.
 

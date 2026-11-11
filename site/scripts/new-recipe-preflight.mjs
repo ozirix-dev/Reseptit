@@ -11,7 +11,8 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const ROOT = path.resolve(fileURLToPath(new URL('../..', import.meta.url)));
-const RECIPE_PATH = /^reseptit\/(?:alkuruoat|paaruoat|jalkiruoat|leivonnaiset|aamupalat|valipalat)\/[a-z0-9-]+\.md$/;
+const RECIPE_PATH = /^reseptit\/(?:alkuruoat|paaruoat|jalkiruoat|leivonnaiset|aamupalat|valipalat)\/(?:[^/\\]+\/)*[^/\\]+\.md$/;
+const isRecipePath = (file) => RECIPE_PATH.test(file) && path.posix.normalize(file) === file;
 const ID = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 const REQUIRED_CHECKS = ['duplicates', 'ingredients', 'method', 'food_safety', 'servings_and_time', 'nutrition', 'glycemic'];
 
@@ -33,27 +34,24 @@ export function readRecipeIdentity(source) {
 }
 
 export function isNewPublication(current, previous) {
-  return current?.status === 'published' && (!previous || previous.status !== 'published');
+  return current?.status === 'published' && (previous?.status !== 'published' ||
+    previous.recipe_id !== current.recipe_id || previous.language !== current.language);
 }
 
 function listRecipes(root) {
-  const paths = [];
   const base = path.join(root, 'reseptit');
-  if (!existsSync(base)) return paths;
-  for (const category of readdirSync(base, { withFileTypes: true })) {
-    if (!category.isDirectory() || category.name.startsWith('_')) continue;
-    for (const entry of readdirSync(path.join(base, category.name), { withFileTypes: true })) {
-      if (entry.isFile() && entry.name.endsWith('.md')) paths.push('reseptit/' + category.name + '/' + entry.name);
-    }
-  }
-  return paths;
+  if (!existsSync(base)) return [];
+  return readdirSync(base, { withFileTypes: true, recursive: true })
+    .filter(entry => entry.isFile())
+    .map(entry => path.relative(root, path.join(entry.parentPath, entry.name)).split(path.sep).join('/'))
+    .filter(isRecipePath);
 }
 
 export function validateReview(recipePath, source, review, allRecipes = []) {
   const errors = [];
   let identity;
   try { identity = readRecipeIdentity(source); } catch (error) { return [String(error.message)]; }
-  if (!RECIPE_PATH.test(recipePath) || !ID.test(identity.recipe_id)) errors.push('invalid canonical FI recipe path or ID');
+  if (!isRecipePath(recipePath) || !ID.test(identity.recipe_id)) errors.push('invalid canonical FI recipe path or ID');
   if (identity.language !== 'fi' || identity.status !== 'published') errors.push('expected published Finnish source');
   const occurrences = allRecipes.filter((row) => row.path !== recipePath &&
     (row.recipe_id === identity.recipe_id || row.url_slug === identity.url_slug));
@@ -90,14 +88,23 @@ export function makeTemplate(recipePath, source) {
 }
 
 function git(args, root = ROOT) {
-  return execFileSync('git', args, { cwd: root, encoding: 'utf8', maxBuffer: 8 * 1024 * 1024 }).trim();
+  return execFileSync('git', args, { cwd: root, encoding: 'utf8', maxBuffer: 8 * 1024 * 1024 });
 }
 
 export function changesFromDiff(diff) {
-  return diff.split(/\r?\n/).filter(Boolean).map((line) => {
-    const fields = line.split('\t');
-    return { action: fields[0], file: fields[fields.length - 1] };
-  }).filter(({ action, file }) => /^[AM]/.test(action) && RECIPE_PATH.test(file));
+  const fields = diff.split('\0');
+  const changes = [];
+  for (let i = 0; i < fields.length - 1;) {
+    const status = fields[i++];
+    const action = status[0];
+    const firstPath = fields[i++];
+    const renamed = action === 'R';
+    const file = renamed || action === 'C' ? fields[i++] : firstPath;
+    if (/^[ACMR]$/.test(action) && isRecipePath(file)) {
+      changes.push({ file, previousFile: renamed || action === 'M' ? firstPath : null });
+    }
+  }
+  return changes;
 }
 
 function previousSource(root, base, file) {
@@ -124,7 +131,7 @@ export function runCli(root = ROOT, argv = process.argv.slice(2), env = process.
   const argValue = (name) => argv.find((arg) => arg.startsWith(name + '='))?.slice(name.length + 1);
   const templatePath = argValue('--template');
   if (templatePath) {
-    assert(RECIPE_PATH.test(templatePath), 'Provide a canonical FI recipe path');
+    assert(isRecipePath(templatePath), 'Provide a canonical FI recipe path');
     const source = readFileSync(path.join(root, templatePath), 'utf8');
     console.log(JSON.stringify(makeTemplate(templatePath, source), null, 2));
     return { checked: 0, candidates: 0 };
@@ -133,16 +140,17 @@ export function runCli(root = ROOT, argv = process.argv.slice(2), env = process.
   const base = argValue('--base') || env.BASE_SHA;
   const head = argValue('--head') || env.HEAD_SHA || 'HEAD';
   if (!single && !base) throw new Error('BASE_SHA is required (or use --recipe=path / --template=path)');
-  if (single && !RECIPE_PATH.test(single)) throw new Error('Invalid recipe path');
-  const candidates = single ? [{ file: single, action: 'A' }] :
-    changesFromDiff(git(['diff', '--name-status', '--find-renames', base, head, '--', 'reseptit/'], root));
+  if (single && !isRecipePath(single)) throw new Error('Invalid recipe path');
+  const candidates = single ? [{ file: single, previousFile: null }] :
+    changesFromDiff(git(['diff', '--name-status', '-z', '--find-renames', base, head, '--', 'reseptit/'], root));
   let checked = 0;
   let blocked = 0;
   const all = inventory(root);
-  for (const { file, action } of candidates) {
+  for (const { file, previousFile } of candidates) {
     const source = readFileSync(path.join(root, file), 'utf8');
     const current = readRecipeIdentity(source);
-    const previous = single || action === 'A' ? null : previousSource(root, base, file);
+    // A draft directory is outside the published recipe tree, regardless of its metadata.
+    const previous = previousFile && isRecipePath(previousFile) ? previousSource(root, base, previousFile) : null;
     const oldIdentity = previous ? readRecipeIdentity(previous) : null;
     if (!single && !isNewPublication(current, oldIdentity)) continue;
     if (current.status !== 'published') continue;
