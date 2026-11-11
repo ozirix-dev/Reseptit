@@ -1,0 +1,338 @@
+{
+  "schemaVersion": 1,
+  "scope": "issue404-B21-fifteen",
+  "createdDate": "2026-11-11",
+  "rule": "Never infer missing weights or treat safety/display overlays as nutrition approval.",
+  "cases": [
+    {
+      "issue404_card": 2,
+      "recipe_id": "indonesialainen-bakwan-maissifritter",
+      "source_path": "reseptit/aamupalat/indonesialainen-bakwan-maissifritter.md",
+      "source_git_blob_sha1": "e9316bc8ef79e073366653c7eb13d356ab109f8f",
+      "public_disposition": "VISIBLE_METHOD_ONLY",
+      "review_status": "HOLD_EVIDENCE",
+      "blocker_axis": "EDIBLE_MASS",
+      "source_observation": {
+        "item": "porkkana",
+        "amount": 1,
+        "unit": "kpl"
+      },
+      "required_independent_evidence": "Porkkanan syötävä grammapaino ja käytetyn taikinaveden määrä; ravintotietojen lähde",
+      "approval": {
+        "nutrition": false,
+        "gi_gk": false,
+        "canonical_ingredient_change": false,
+        "public_quarantine_release": false
+      },
+      "next_action": "Verify physical food-state/edible-grams and product records; calculate independently; review exact FI + EN/SV/TH before any release."
+    },
+    {
+      "issue404_card": 3,
+      "recipe_id": "indonesialainen-nasi-goreng-aamiaisriisi",
+      "source_path": "reseptit/aamupalat/indonesialainen-nasi-goreng-aamiaisriisi.md",
+      "source_git_blob_sha1": "731c7babbe7aa94c4e931a8224cec81bfe75b9fb",
+      "public_disposition": "QUARANTINE",
+      "review_status": "HOLD_EVIDENCE",
+      "blocker_axis": "PRODUCT_RATIO",
+      "source_observation": {
+        "item": "kecap manis",
+        "amount": 150,
+        "unit": "g"
+      },
+      "required_independent_evidence": "Kecap manisin tuotekoostumus ja 150 g / 100 g riisiä -mittasuhteen alkuperäinen lähde; riisin kuiva/kypsä-tila",
+      "approval": {
+        "nutrition": false,
+        "gi_gk": false,
+        "canonical_ingredient_change": false,
+        "public_quarantine_release": false
+      },
+      "next_action": "Verify physical food-state/edible-grams and product records; calculate independently; review exact FI + EN/SV/TH before any release."
+    },
+    {
+      "issue404_card": 6,
+      "recipe_id": "japanilainen-yaki-onigiri-misolla",
+      "source_path": "reseptit/aamupalat/japanilainen-yaki-onigiri-misolla.md",
+      "source_git_blob_sha1": "bff8b38121a3af090dfd5b7559517ae4aeaa59c7",
+      "public_disposition": "QUARANTINE",
+      "review_status": "HOLD_EVIDENCE",
+      "blocker_axis": "PRODUCT_RATIO",
+      "source_observation": {
+        "item": "miso",
+        "amount": 150,
+        "unit": "g"
+      },
+      "required_independent_evidence": "150 g mison ja 150 g norin oikeellisuus suhteessa 100 g riisiin; norin kuiva/valmis tila",
+      "approval": {
+        "nutrition": false,
+        "gi_gk": false,
+        "canonical_ingredient_change": false,
+        "public_quarantine_release": false
+      },
+      "next_action": "Verify physical food-state/edible-grams and product records; calculate independently; review exact FI + EN/SV/TH before any release."
+    },
+    {
+      "issue404_card": 11,
+      "recipe_id": "karibia-saltfish-fritterit",
+      "source_path": "reseptit/aamupalat/karibia-saltfish-fritterit.md",
+      "source_git_blob_sha1": "f197d405e1d1c9de9afcbfb2b5ce4def501de30f",
+      "public_disposition": "QUARANTINE",
+      "review_status": "HOLD_EVIDENCE",
+      "blocker_axis": "PROCESS_MASS",
+      "source_observation": {
+        "item": "suolakala",
+        "amount": 1,
+        "unit": "tl"
+      },
+      "required_independent_evidence": "Suolakalan syötävä grammamassa ja turvallinen suolanpoisto; taikinaan jäävä neste",
+      "approval": {
+        "nutrition": false,
+        "gi_gk": false,
+        "canonical_ingredient_change": false,
+        "public_quarantine_release": false
+      },
+      "next_action": "Verify physical food-state/edible-grams and product records; calculate independently; review exact FI + EN/SV/TH before any release."
+    },
+    {
+      "issue404_card": 18,
+      "recipe_id": "malesialainen-roti-canai-dhalilla",
+      "source_path": "reseptit/aamupalat/malesialainen-roti-canai-dhalilla.md",
+      "source_git_blob_sha1": "d241c242192b66a6744a823e88e44c9fbed97c98",
+      "public_disposition": "QUARANTINE",
+      "review_status": "HOLD_EVIDENCE",
+      "blocker_axis": "DRY_PREPARATION",
+      "source_observation": {
+        "item": "kuivia punaisia linssejä",
+        "amount": 100,
+        "unit": "g"
+      },
+      "required_independent_evidence": "Kuivan linssin liotus/keittäminen, roti-taikinan vesimäärä ja realistinen kokonaisaika",
+      "approval": {
+        "nutrition": false,
+        "gi_gk": false,
+        "canonical_ingredient_change": false,
+        "public_quarantine_release": false
+      },
+      "next_action": "Verify physical food-state/edible-grams and product records; calculate independently; review exact FI + EN/SV/TH before any release."
+    },
+    {
+      "issue404_card": 21,
+      "recipe_id": "pohjoisafrikkalainen-maakouda",
+      "source_path": "reseptit/aamupalat/pohjoisafrikkalainen-maakouda.md",
+      "source_git_blob_sha1": "34574856132b429713948701c718b25dcd12776d",
+      "public_disposition": "QUARANTINE",
+      "review_status": "HOLD_EVIDENCE",
+      "blocker_axis": "EDIBLE_MASS",
+      "source_observation": {
+        "item": "peruna",
+        "amount": 1,
+        "unit": "kpl"
+      },
+      "required_independent_evidence": "Perunan kuorittu syötävä grammapaino ja makro/GK-syötemassan tarkistus",
+      "approval": {
+        "nutrition": false,
+        "gi_gk": false,
+        "canonical_ingredient_change": false,
+        "public_quarantine_release": false
+      },
+      "next_action": "Verify physical food-state/edible-grams and product records; calculate independently; review exact FI + EN/SV/TH before any release."
+    },
+    {
+      "issue404_card": 22,
+      "recipe_id": "pohjoisafrikkalainen-msemen-hunajalla",
+      "source_path": "reseptit/aamupalat/pohjoisafrikkalainen-msemen-hunajalla.md",
+      "source_git_blob_sha1": "3ee0686e9b5435e8e1dbf09a7915e99fd5b3d082",
+      "public_disposition": "QUARANTINE",
+      "review_status": "HOLD_EVIDENCE",
+      "blocker_axis": "DOUGH_WATER",
+      "source_observation": {
+        "item": "mannasuurimo",
+        "amount": 100,
+        "unit": "g"
+      },
+      "required_independent_evidence": "Taikinan mitattu vesimäärä, kerrostusmenetelmä ja annoksiin päätyvä voi",
+      "approval": {
+        "nutrition": false,
+        "gi_gk": false,
+        "canonical_ingredient_change": false,
+        "public_quarantine_release": false
+      },
+      "next_action": "Verify physical food-state/edible-grams and product records; calculate independently; review exact FI + EN/SV/TH before any release."
+    },
+    {
+      "issue404_card": 26,
+      "recipe_id": "indonesialainen-lontong-sayur-aamiaiseksi",
+      "source_path": "reseptit/aamupalat/indonesialainen-lontong-sayur-aamiaiseksi.md",
+      "source_git_blob_sha1": "99891cc348f3eb0e9baa3c30095f0c61ce0af569",
+      "public_disposition": "QUARANTINE",
+      "review_status": "HOLD_EVIDENCE",
+      "blocker_axis": "EDIBLE_MASS",
+      "source_observation": {
+        "item": "kaali",
+        "amount": 1,
+        "unit": "kpl"
+      },
+      "required_independent_evidence": "Kaalin syötävä grammamassa sekä riisikakun tuotetieto ja valmiiksi kypsän/kuivan raaka-aineen raja",
+      "approval": {
+        "nutrition": false,
+        "gi_gk": false,
+        "canonical_ingredient_change": false,
+        "public_quarantine_release": false
+      },
+      "next_action": "Verify physical food-state/edible-grams and product records; calculate independently; review exact FI + EN/SV/TH before any release."
+    },
+    {
+      "issue404_card": 28,
+      "recipe_id": "japanilainen-miso-tofu-paksoi",
+      "source_path": "reseptit/aamupalat/japanilainen-miso-tofu-paksoi.md",
+      "source_git_blob_sha1": "bf84422ea3cc7c2f16f5b2b95a643bfa9109f5bb",
+      "public_disposition": "QUARANTINE",
+      "review_status": "HOLD_EVIDENCE",
+      "blocker_axis": "PRODUCT_STATE",
+      "source_observation": {
+        "item": "wakame",
+        "amount": 150,
+        "unit": "g"
+      },
+      "required_independent_evidence": "Wakamen kuivapainon/rehydratoidun painon sekä mison tuotekoostumuksen varmennus",
+      "approval": {
+        "nutrition": false,
+        "gi_gk": false,
+        "canonical_ingredient_change": false,
+        "public_quarantine_release": false
+      },
+      "next_action": "Verify physical food-state/edible-grams and product records; calculate independently; review exact FI + EN/SV/TH before any release."
+    },
+    {
+      "issue404_card": 29,
+      "recipe_id": "japanilainen-soba-aamiaiskeitto",
+      "source_path": "reseptit/aamupalat/japanilainen-soba-aamiaiskeitto.md",
+      "source_git_blob_sha1": "1dfb8be5bfdc6e09080610bc9191505f9175cf25",
+      "public_disposition": "VISIBLE_METHOD_ONLY",
+      "review_status": "HOLD_EVIDENCE",
+      "blocker_axis": "EDIBLE_MASS",
+      "source_observation": {
+        "item": "pinaatti",
+        "amount": 1,
+        "unit": "kpl"
+      },
+      "required_independent_evidence": "Pinaattinipun syötävä grammapaino sekä kahden liemen tuotekohtainen suola/CHO ja soban kuiva/kypsä-painoraja",
+      "approval": {
+        "nutrition": false,
+        "gi_gk": false,
+        "canonical_ingredient_change": false,
+        "public_quarantine_release": false
+      },
+      "next_action": "Verify physical food-state/edible-grams and product records; calculate independently; review exact FI + EN/SV/TH before any release."
+    },
+    {
+      "issue404_card": 31,
+      "recipe_id": "kiinalainen-jianbing-munaletty",
+      "source_path": "reseptit/aamupalat/kiinalainen-jianbing-munaletty.md",
+      "source_git_blob_sha1": "15eef1ad0e7d56666e923e8d035db14e7efadd0c",
+      "public_disposition": "VISIBLE_CANONICAL_METHOD",
+      "review_status": "HOLD_EVIDENCE",
+      "blocker_axis": "PRODUCT_COMPOSITION",
+      "source_observation": {
+        "item": "soijapaputahnaa",
+        "amount": 1,
+        "unit": "rkl"
+      },
+      "required_independent_evidence": "Soijapaputahnan tarkka tuote, ravintoarvot ja tilavuus/grammapaino; taikinavesi dokumentoitava",
+      "approval": {
+        "nutrition": false,
+        "gi_gk": false,
+        "canonical_ingredient_change": false,
+        "public_quarantine_release": false
+      },
+      "next_action": "Verify physical food-state/edible-grams and product records; calculate independently; review exact FI + EN/SV/TH before any release."
+    },
+    {
+      "issue404_card": 34,
+      "recipe_id": "korealainen-mandu-keitto-aamiaiseksi",
+      "source_path": "reseptit/aamupalat/korealainen-mandu-keitto-aamiaiseksi.md",
+      "source_git_blob_sha1": "0a24a7c6174076525bbbdbcbbdbb664b57ca647f",
+      "public_disposition": "QUARANTINE",
+      "review_status": "HOLD_EVIDENCE",
+      "blocker_axis": "PRODUCT_STATE",
+      "source_observation": {
+        "item": "merilevä",
+        "amount": 150,
+        "unit": "g"
+      },
+      "required_independent_evidence": "Merilevän tuore/kuiva/rehydratoitu tila ja mandu-tuotteen ravintovastaavuus",
+      "approval": {
+        "nutrition": false,
+        "gi_gk": false,
+        "canonical_ingredient_change": false,
+        "public_quarantine_release": false
+      },
+      "next_action": "Verify physical food-state/edible-grams and product records; calculate independently; review exact FI + EN/SV/TH before any release."
+    },
+    {
+      "issue404_card": 40,
+      "recipe_id": "meksikolainen-huevos-divorciados",
+      "source_path": "reseptit/aamupalat/meksikolainen-huevos-divorciados.md",
+      "source_git_blob_sha1": "7559395cbb0d66229b7b964fb034bbcf3f9edd0b",
+      "public_disposition": "VISIBLE_CANONICAL_METHOD",
+      "review_status": "HOLD_EVIDENCE",
+      "blocker_axis": "COOKED_DRY_STATE",
+      "source_observation": {
+        "item": "musta papu",
+        "amount": 150,
+        "unit": "g"
+      },
+      "required_independent_evidence": "Mustien papujen 150 g kypsä- vai kuivamassa sekä salsojen tuotetiedot ja GK",
+      "approval": {
+        "nutrition": false,
+        "gi_gk": false,
+        "canonical_ingredient_change": false,
+        "public_quarantine_release": false
+      },
+      "next_action": "Verify physical food-state/edible-grams and product records; calculate independently; review exact FI + EN/SV/TH before any release."
+    },
+    {
+      "issue404_card": 44,
+      "recipe_id": "valimerellinen-appelsiini-aamiaiskakku",
+      "source_path": "reseptit/aamupalat/valimerellinen-appelsiini-aamiaiskakku.md",
+      "source_git_blob_sha1": "8bd991e2ae73d894233abfd3caf76d48315a7088",
+      "public_disposition": "QUARANTINE",
+      "review_status": "HOLD_EVIDENCE",
+      "blocker_axis": "RECIPE_STRUCTURE",
+      "source_observation": {
+        "item": "vehnäjauho",
+        "amount": 100,
+        "unit": "g"
+      },
+      "required_independent_evidence": "Leivonnan nostatus-/sidonta-aineiden ja määrien dokumentoitu ratkaisu; ei ruokalajia muuteta sokkona",
+      "approval": {
+        "nutrition": false,
+        "gi_gk": false,
+        "canonical_ingredient_change": false,
+        "public_quarantine_release": false
+      },
+      "next_action": "Verify physical food-state/edible-grams and product records; calculate independently; review exact FI + EN/SV/TH before any release."
+    },
+    {
+      "issue404_card": 45,
+      "recipe_id": "valimerellinen-kikherne-yrttiaamiainen",
+      "source_path": "reseptit/aamupalat/valimerellinen-kikherne-yrttiaamiainen.md",
+      "source_git_blob_sha1": "33923cc854eabc27c7905db024c3b2e7d9ca44ab",
+      "public_disposition": "QUARANTINE",
+      "review_status": "HOLD_EVIDENCE",
+      "blocker_axis": "COOKED_DRY_STATE",
+      "source_observation": {
+        "item": "kikherne",
+        "amount": 100,
+        "unit": "g"
+      },
+      "required_independent_evidence": "Kikherneen kuiva/kypsä paino ja ohjeen listaamattoman munan/öljyn poisto tai punnittu uusi versio",
+      "approval": {
+        "nutrition": false,
+        "gi_gk": false,
+        "canonical_ingredient_change": false,
+        "public_quarantine_release": false
+      },
+      "next_action": "Verify physical food-state/edible-grams and product records; calculate independently; review exact FI + EN/SV/TH before any release."
+    }
+  ]
+}
