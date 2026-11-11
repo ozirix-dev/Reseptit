@@ -5,7 +5,7 @@ import { parseMarkdown } from "../src/content/markdown";
 import { recipeFrontmatterSchema } from "../src/content/schema";
 import type { z } from "zod";
 import { semanticTermErrors, semanticProseErrors, semanticNoteErrors, semanticTagErrors } from "./semantic-terms";
-import { loadTranslationPublicationIndex, overlayTranslationPublicationIndex } from "./translation-publication-index";
+import { assertTranslationSourceIsNotQuarantined, loadTranslationPublicationIndex, overlayTranslationPublicationIndex } from "./translation-publication-index";
 import { projectReviewedFiEditorialSource } from "./gk80-editorial-display";
 import { projectA8FiEditorialSource } from "./a8-editorial-display";
 import { projectC20FiDisplay, c20FiDisplayPaths } from "./c20-fi-editorial-display";
@@ -185,6 +185,11 @@ export async function auditTranslations(recipeIds?: string[]): Promise<Translati
   const sources = overlayTranslationPublicationIndex(publicSources, await loadTranslationPublicationIndex(repoRoot), filter);
   const translations = (await Promise.all(locales.map((locale) => markdownFiles(path.join(repoRoot, "kaannokset", locale))))).flat();
   const publishedTranslations = await readRecipes(translations, filter);
+  // Fail closed even for standalone published language files absent from the sidecar.
+  // Raw FI status: published does not override the public recipe quarantine.
+  for (const translation of publishedTranslations) {
+    assertTranslationSourceIsNotQuarantined(translation.data.recipe_id);
+  }
   // Compare the coconut-rice preparation metadata to its SHA-pinned public FI
   // version without ever changing the GK80-sealed raw source used by SHA review.
   const reviewedMethods = new Map<string, readonly string[]>();
