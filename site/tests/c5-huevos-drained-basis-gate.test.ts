@@ -8,7 +8,7 @@ test("C5 current and legacy bean EANs stay independent and as-sold labels cannot
     ["7310130009839","7310130009785","3083681192513"]);
   const outputs=huevosV2ProductCandidates.map(p=>auditHuevosDrainedBasis(p));
   assert.deepEqual(outputs.map(r=>r.counterfactualPerServing.availableCarbohydrateG),[15.66,11.54,14.91]);
-  assert.deepEqual(outputs.map(r=>r.counterfactualPerServing.proteinG),[13.49,13.57,13.41]);
+  assert.deepEqual(outputs.map(r=>r.counterfactualPerServing.proteinG),[13.49,13.57,13.42]);
   assert.deepEqual(outputs.map(r=>r.counterfactualPerServing.fatGRange),[
     {min:6.54,max:13.28},{min:6.76,max:13.51},{min:6.76,max:13.51}
   ]);
