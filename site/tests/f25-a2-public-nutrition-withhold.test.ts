@@ -3,7 +3,9 @@ import {test} from "node:test";
 import {createHash} from "node:crypto";
 import {readFileSync} from "node:fs";
 import path from "node:path";
-import {f25UnverifiedNutritionSourceIds, withholdF25Nutrition, publicF25GkFilterCategories} from "../src/features/recipes/f25-nutrition-withhold";
+import {f25UnverifiedNutritionSourceIds, withholdF25Nutrition} from "../src/features/recipes/f25-nutrition-withhold";
+import {filterRecipes,emptyRecipeFilters} from "../src/features/recipes/recipe-search";
+import type {RecipeSummary} from "../src/content/route-data";
 import {recipeJsonLd} from "../src/features/recipes/schema";
 
 const a2 = [
@@ -59,10 +61,13 @@ test("FI GK filter does not assign a held macro source to misleading low/medium/
     "pohjoisafrikkalainen-baghrir":"high",
     "gluteeniton-uunipannukakku":"low",
   };
-  const fi=publicF25GkFilterCategories(sample,"fi");
-  assert.deepEqual(Object.keys(fi),["gluteeniton-uunipannukakku"]);
-  assert.equal(fi["gluteeniton-uunipannukakku"],"low");
-  assert.equal(fi["pohjoisafrikkalainen-baghrir"],undefined);
-  assert.deepEqual(publicF25GkFilterCategories(sample,"en"),sample);
+  const recipes=Object.keys(sample).map(recipeId=>({recipeId,title:recipeId,description:"",tags:[],ingredients:[]})) as unknown as RecipeSummary[];
+  const high={...emptyRecipeFilters,gl:"high" as const};
+  const low={...emptyRecipeFilters,gl:"low" as const};
+  assert.deepEqual(filterRecipes(recipes,high,"fi",sample).map(x=>x.recipeId),[]);
+  assert.deepEqual(filterRecipes(recipes,low,"fi",sample).map(x=>x.recipeId),["gluteeniton-uunipannukakku"]);
+  assert.deepEqual(filterRecipes(recipes,high,"en",sample).map(x=>x.recipeId),[
+    "vietnamilainen-papaija-kookospuuro","vietnamilainen-banh-cuon-sienilla","pohjoisafrikkalainen-baghrir"
+  ]);
   assert.equal(sample["vietnamilainen-papaija-kookospuuro"],"high","historical data stays byte-identical");
 });
