@@ -6,7 +6,8 @@ import {fileURLToPath} from "node:url";
 
 export const c5MarketManifest = "docs/reviews/2026-11-11-c5-market-label-variants.json";
 const sha=(raw:string)=>createHash("sha1").update("blob "+Buffer.byteLength(raw,"utf8")+"\0").update(raw).digest("hex");
-const round=(value:number)=>Math.round((value+Number.EPSILON)*100)/100;
+// Positive food masses; avoid binary 9.824999... rounding 9.825 downward.
+const round=(value:number)=>Math.round((value+1e-10)*100)/100;
 type Values={carbohydrateG:number;proteinG:number;fatG:number;fibreG:number|null;polyolsG?:number|null};
 type Product={id:string;source:string;per100:Values;packageConfirmed:false;basis?:string;labelBasis?:string};
 type Manifest={
