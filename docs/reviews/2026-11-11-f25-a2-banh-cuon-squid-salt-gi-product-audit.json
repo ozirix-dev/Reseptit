@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-11",
+  "recipeId": "vietnamilainen-banh-cuon-sienilla",
+  "status": "PRODUCT_COMPOSITION_MATCHED_RETAIL_VERSION_ONLY__GK_HOLD",
+  "fiCandidate": "docs/reviews/f25-a2-banh-cuon-v3-20261111.md",
+  "canonicalSource": "reseptit/aamupalat/vietnamilainen-banh-cuon-sienilla.md",
+  "fishProduct": {
+    "brand": "Squid Brand",
+    "sizeMl": 725,
+    "ean": "8850620888203",
+    "selectedUnit": "ml",
+    "amountMlRecipe": 15,
+    "servings": 2,
+    "selectedLabel": {
+      "source": "https://www.aasiamarket.fi/en/product/fish-sauce-725ml-squid/",
+      "supportingSources": [
+        "https://ctfood.se/fish-sauce-glass-12x725ml-squid-brand/?language=en",
+        "https://www.sainsburys.co.uk/groceries/product/squid-brand-fish-sauce-725ml"
+      ],
+      "valuesPer100ml": {
+        "carbohydrateG": 3,
+        "proteinG": 11,
+        "fatG": 0,
+        "saltG": 27.2,
+        "fibreG": 0
+      },
+      "perRecipe": {
+        "carbohydrateG": 0.45,
+        "proteinG": 1.65,
+        "fatG": 0,
+        "saltG": 4.08,
+        "fibreG": 0
+      },
+      "perServing": {
+        "carbohydrateG": 0.225,
+        "proteinG": 0.825,
+        "fatG": 0,
+        "saltG": 2.04,
+        "fibreG": 0
+      },
+      "allergen": "anchovy / fish",
+      "ingredients": "anchovy extract 77%, salt 20%, sugar 3%"
+    },
+    "otherMarketLabels": [
+      {
+        "source": "https://www.gourmet-versand.com/en/article2489/fish-sauce-dark-squid-brand-725ml.html",
+        "valuesPer100ml": {
+          "carbohydrateG": 3.4,
+          "proteinG": 10,
+          "fatG": 0.5,
+          "saltG": 24.4
+        },
+        "conditionalPerServing": {
+          "carbohydrateG": 0.255,
+          "proteinG": 0.75,
+          "fatG": 0.0375,
+          "saltG": 1.83
+        }
+      },
+      {
+        "source": "https://asia.at/produkt/fischsauce-725ml/",
+        "valuesPer100ml": {
+          "carbohydrateG": 3.4,
+          "proteinG": 10,
+          "fatG": 0,
+          "saltG": 24.4
+        },
+        "conditionalPerServing": {
+          "carbohydrateG": 0.255,
+          "proteinG": 0.75,
+          "fatG": 0,
+          "saltG": 1.83
+        }
+      }
+    ],
+    "sameEanNotSufficientForLabelVersion": true,
+    "polyolsG": null,
+    "needsPackagePhotoOrManufacturerVersionConfirmation": true,
+    "measurement": "Volume 15ml matches per-100ml label. Do not multiply label by 15g without measured density.",
+    "saltCorrection": {
+      "originalAddedSaltG": 1,
+      "updatedAddedSaltG": 0,
+      "fishSauceSaltRecipeG": 4.08,
+      "oldTotalSaltFromSauceAndAdditionG": 5.08,
+      "newTotalSaltFromSauceAndAdditionG": 4.08,
+      "saltPerServingSauceAndAdditionG": 2.04,
+      "otherIngredientsSaltNotQuantified": true
+    }
+  },
+  "giReview": {
+    "sources": [
+      {
+        "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7791047/",
+        "food": "Hong Kong plain steamed vermicelli roll",
+        "humanParticipants": 15,
+        "gi": 90,
+        "exactMatch": false,
+        "reason": "No tapioca/pork/mushroom matching; different product and steam preparation."
+      },
+      {
+        "source": "https://pubmed.ncbi.nlm.nih.gov/11781674/",
+        "food": "Vietnamese rice noodle products",
+        "humanParticipants": 12,
+        "giRange": [
+          39,
+          61
+        ],
+        "exactMatch": false,
+        "reason": "Cooked noodles, not mixed rice-tapioca sheets; not interchangeable with rolls."
+      }
+    ],
+    "eligibleTransfer": false,
+    "modeledGK": null
+  },
+  "release": {
+    "candidateReadyForIndependentCookingReview": true,
+    "completeMacrosApproved": false,
+    "giApproved": false,
+    "gkApproved": false,
+    "nutritionApproved": false,
+    "translationApproved": false,
+    "photoApproved": false,
+    "publicationAuthorized": false
+  },
+  "nextReleaseBlocks": [
+    "Exact 5g oil eaten fraction must be reconciled or bound with justified retention",
+    "Rice flour and starch polyols or defensible documented negligible treatment",
+    "Actual pork and fish packaging version confirmed; fish allergen declared",
+    "Rice-tapioca sheet source-consistent human GI evidence or approved unavailability policy",
+    "Candidate source and nutrition input versioned with independent review, FI image and EN/SV/TH semantics"
+  ]
+}
