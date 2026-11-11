@@ -79,7 +79,7 @@ test('coverage copy shows original target and independent variant/study counts i
     assert.ok(html.includes('data-gk-coverage="VARIANT_COVERAGE"><strong>79'));
     assert.ok(html.includes('data-gk-coverage="STUDY_SERVINGS"><strong>8'));
     assert.ok(html.includes('235/342'));
-    assert.ok(html.includes('272/342'));
+    assert.ok(html.includes('274/342'));
     assert.ok(html.includes('<strong>118</strong>'));
     assert.ok(!html.includes('236/342'));
   }
