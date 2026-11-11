@@ -10,7 +10,7 @@ export interface SourceReviewNotice {
 export const sourceReviewNotices: Readonly<Record<string, SourceReviewNotice>> = Object.freeze({
   "rahka-marjakerroskulho": {
     heading: "Ravintoarvojen lähdetarkistus kesken",
-    details: "Näytetyt makrot ovat alustavia. Maitorahkan, turkkilaisen jogurtin, metsämustikan, hasselpähkinän, sitruunankuoren teelusikkapainon ja valinnaisen makeutuksen tuotevastaavuutta ei ole vielä kokonaan varmennettu. Tuotteen vaihto voi muuttaa hiilihydraatteja ja rasvaa.",
+    details: "Aiemmat ravintoarvot on piilotettu lähdetarkistuksen ajaksi. Maitorahkan, turkkilaisen jogurtin, metsämustikan, hasselpähkinän, sitruunankuoren teelusikkapainon ja valinnaisen makeutuksen tuotevastaavuutta ei ole vielä kokonaan varmennettu. Tuotteen vaihto voi muuttaa hiilihydraatteja ja rasvaa.",
     allergens: "Sisältää maitoa ja hasselpähkinää. Tarkista käyttämiesi tuotteiden pakkaukset.",
   },
   "intialainen-pinaatti-paneer-chilla": {
@@ -40,7 +40,7 @@ export const sourceReviewNotices: Readonly<Record<string, SourceReviewNotice>> =
   },
   "pohjoisafrikkalainen-baghrir": {
     heading: "Baghririn nestemäärä ei vastaa perinteistä ohutta taikinaa",
-    details: "Nykyisessä lähteessä on 200 g manna- ja vehnäjauhoja mutta vain 150 ml vettä. Seoksesta tulee selvästi paksumpi kuin perinteisestä toiselta puolelta paistettavasta reikäisestä baghrirista. Näytetyt makrot perustuvat tähän vanhaan punnittuun versioon. Korjausehdotuksen noin 300 ml vettä ja uusi valmistusaika tarvitsevat vielä FI- ja GK-versiohyväksynnän.",
+    details: "Nykyisessä lähteessä on 200 g manna- ja vehnäjauhoja mutta vain 150 ml vettä. Seoksesta tulee selvästi paksumpi kuin perinteisestä toiselta puolelta paistettavasta reikäisestä baghrirista. Aiempi ravintolaskelma perustui tähän punnittuun versioon. Ravintoarvot on piilotettu lähdetarkistuksen ajaksi. Korjausehdotuksen noin 300 ml vettä ja uusi valmistusaika tarvitsevat vielä FI- ja GK-versiohyväksynnän.",
     allergens: "Sisältää vehnää eli gluteenia. Hunajaa on vain 1 rkl koko reseptissä; voita ei ole ainesluettelossa.",
   },
   "meksikolainen-chilaquiles-verdes": {
