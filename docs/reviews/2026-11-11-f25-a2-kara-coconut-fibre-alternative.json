@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "reviewDate": "2026-11-11",
+  "status": "HOLD_PRODUCT_SUBSTITUTION_ONLY",
+  "scope": "A2 two V3 review-only candidates; alternative labeled coconut milk with explicitly reported fibre; no canonical FI edit, no published recipe approval",
+  "product": {
+    "name": "Kara kookosmaito 17% 200 ml",
+    "ean": "8886303210238",
+    "url": "https://www.s-kaupat.fi/tuote/kara-200ml-kookosmaito-17/8886303210238",
+    "declaredBasis": "per100ml",
+    "per100ml": {
+      "carbohydrate": 1.7,
+      "protein": 1.7,
+      "fat": 18,
+      "fibre": 0.3,
+      "polyols": null
+    },
+    "packSizeMl": 200
+  },
+  "replacedProduct": {
+    "name": "Thai Choice kookosmaito 400 ml",
+    "ean": "8851978804068",
+    "url": "https://www.k-ruoka.fi/kauppa/tuote/thai-choice-kookosmaito-400ml-8851978804068",
+    "declaredBasis": "per100ml",
+    "per100ml": {
+      "carbohydrate": 2,
+      "protein": 1,
+      "fat": 18,
+      "fibre": null,
+      "polyols": null
+    }
+  },
+  "recipes": [
+    {
+      "recipeId": "vietnamilainen-papaija-kookospuuro",
+      "basedOn": "docs/reviews/f25-a2-tapioca-v3-product-ledger-20261111.json",
+      "servings": 2,
+      "coconutVolumeMl": 200,
+      "oldPartial": {
+        "carbohydrate": 53.49,
+        "proteinLowerBound": 1.46,
+        "proteinUpperBoundExclusive": 1.71,
+        "fatLowerBound": 18.0075,
+        "fatUpperBoundExclusive": 18.2575,
+        "fibreLowerBound": 2.37,
+        "fibreTotal": null,
+        "polyolsTotal": null
+      },
+      "newPartial": {
+        "carbohydrate": 53.19,
+        "proteinLowerBound": 2.16,
+        "proteinUpperBoundExclusive": 2.41,
+        "fatLowerBound": 18.0075,
+        "fatUpperBoundExclusive": 18.2575,
+        "fibreLowerBound": 2.67,
+        "fibreTotal": null,
+        "polyolsTotal": null
+      },
+      "remainingBlockers": [
+        "Cock tapioca pearls label does not state fibre/polyols",
+        "Cock protein and fat are <0.5 g/100g rather than measured values",
+        "No direct GI for cooked un-sweetened Cock pearls, papaya product and other carbs",
+        "Proposed water retention and 45-minute cooking unverified physically",
+        "New FI/nutrition version cannot inherit historic GK hash"
+      ]
+    },
+    {
+      "recipeId": "vietnamilainen-banh-xeo-aamiaisletut",
+      "basedOn": "docs/reviews/f25-a2-banh-cuon-xeo-v3-evidence-20261111.json",
+      "servings": 2,
+      "coconutVolumeMl": 200,
+      "oldPartial": {
+        "carbohydrate": 40.871,
+        "protein": 17.322,
+        "fatAtZeroOilRetention": 19.458,
+        "fatAtFullOilRetention": 26.2012,
+        "fibreTotal": null,
+        "polyolsTotal": null
+      },
+      "newPartial": {
+        "carbohydrate": 40.571,
+        "protein": 18.022,
+        "fatAtZeroOilRetention": 19.458,
+        "fatAtFullOilRetention": 26.2012,
+        "fibreTotal": 2.002,
+        "polyolsTotal": null
+      },
+      "newFibreComponentsTotalG": {
+        "fineRiceFlour": 1,
+        "meiraTurmeric": 0.454,
+        "beanSprouts": 1.95,
+        "karaCoconutMilk": 0.6,
+        "shrimp": 0
+      },
+      "remainingBlockers": [
+        "Polyols missing for fine rice flour, turmeric and Kara product; cannot convert null to 0",
+        "Pan oil retained fraction not measured (0-13.5g input)",
+        "Human GI evidence for exact prepared rice-crepe version is missing",
+        "No yellow V3 production-photo comparison, trial or semantic translation verification",
+        "New FI/nutrition version cannot inherit historic GK hash"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "type": "humanGI",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/11781674/",
+      "decision": "Vietnamese rice/noodle GI data exist, but no EXACT match to V3 pancakes"
+    },
+    {
+      "type": "humanGI",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2846258/",
+      "decision": "Plain steamed vermicelli roll GI measured; not exact Banh cuon rice-sheet and pork composition and no group analogy"
+    },
+    {
+      "type": "productLabel",
+      "url": "https://www.s-kaupat.fi/tuote/kara-200ml-kookosmaito-17/8886303210238",
+      "decision": "100 ml carbohydrate/protein/fat/fibre declared; polyols not declared"
+    }
+  ],
+  "release": {
+    "nutritionApproved": false,
+    "gkApproved": false,
+    "translationApproved": false,
+    "sourceApproved": false,
+    "sourceStatus": "HOLD",
+    "gk": null,
+    "publicationAuthorized": false
+  }
+}
