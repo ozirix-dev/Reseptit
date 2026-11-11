@@ -4,10 +4,11 @@
   "sourceBranch": "feat/karnivore-10-fi-main-dishes-20261111",
   "sourceHeadBeforeAudit": "4db630221148c43c3f2cce4be57e3020ad7ebe3b",
   "publicationStatus": "DRAFT_ONLY_HOLD",
-  "caveat": "Mapped-source contributions are incomplete/conditional, NOT a complete recipe nutrition value, lower bound, GK result or zero-carbohydrate claim; no recipe metadata is changed.",
+  "caveat": "Mapped-source contributions are incomplete/conditional, NOT a complete recipe nutrition value, lower bound, GK result or zero-carbohydrate claim; no recipe metadata is changed. 20 % beef entries now have one manufacturer-specific candidate; generic recipes still require verification before any macro publication.",
   "sourceLicences": [
     "THL Fineli Release 20 CC BY 4.0 (existing repo food-records.json)",
-    "Food Standards Australia New Zealand AFCD Release 3 CC BY-SA 3.0 Australia (existing repo reference data)"
+    "Food Standards Australia New Zealand AFCD Release 3 CC BY-SA 3.0 Australia (existing repo reference data)",
+    "Snellman Oy: valmistajan julkinen tuotekoostumus ja pakkausarvomerkintä, tarkistettu 11.11.2026; käyttö vain tuotekohtaisena ehdokkaana."
   ],
   "recipes": [
     {
@@ -101,9 +102,20 @@
           "grams": 500,
           "item": "naudan jauhelihaa",
           "unit": "g",
-          "sourceMatch": "unresolved",
-          "source": null,
-          "nutritionLimitation": "20 % naudan jauhelihalle ei ole samaa rasvapitoisuutta vahvistavaa tietuetta; Fineli 11562 on 17 %"
+          "sourceMatch": "proxy",
+          "source": {
+            "dataset": "Snellman, valmistajan tuotepakkaus-/verkkotiedot (tarkistettu 2026-11-11)",
+            "sourceId": "snellman-6409620011856",
+            "foodName": "Kunnon naudan jauheliha 20 % 400 g",
+            "per100g": {
+              "availableCarbohydrates": 0,
+              "protein": 18,
+              "fat": 20
+            },
+            "energyKcalPer100g": 252,
+            "sourceUrl": "https://snellman.fi/fi/tuotteet/kunnon-naudan-jauheliha-20-400-g/"
+          },
+          "nutritionLimitation": "Vain Snellman Kunnon naudan jauheliha 20 %, EAN 6409620011856; geneerinen 20 % ei automaattisesti vastaa tuotetta, käyttäjän pakkaus on varmistettava."
         },
         {
           "grams": 10,
@@ -143,8 +155,8 @@
         }
       ],
       "modelledCarbohydratePerServingFromMappedInputsG": 0,
-      "unresolvedInputs": 1,
-      "proxyInputs": 1
+      "unresolvedInputs": 0,
+      "proxyInputs": 2
     },
     {
       "recipeId": "karnivore-voilohi-pannulla",
@@ -337,9 +349,20 @@
           "grams": 400,
           "item": "naudan jauhelihaa",
           "unit": "g",
-          "sourceMatch": "unresolved",
-          "source": null,
-          "nutritionLimitation": "Reseptissä noin 20 % jauheliha; Finelin 17 % ei ole täsmällinen tuotematch"
+          "sourceMatch": "proxy",
+          "source": {
+            "dataset": "Snellman, valmistajan tuotepakkaus-/verkkotiedot (tarkistettu 2026-11-11)",
+            "sourceId": "snellman-6409620011856",
+            "foodName": "Kunnon naudan jauheliha 20 % 400 g",
+            "per100g": {
+              "availableCarbohydrates": 0,
+              "protein": 18,
+              "fat": 20
+            },
+            "energyKcalPer100g": 252,
+            "sourceUrl": "https://snellman.fi/fi/tuotteet/kunnon-naudan-jauheliha-20-400-g/"
+          },
+          "nutritionLimitation": "Vain Snellman Kunnon naudan jauheliha 20 %, EAN 6409620011856; geneerinen 20 % ei automaattisesti vastaa tuotetta, käyttäjän pakkaus on varmistettava."
         },
         {
           "grams": 110,
@@ -379,8 +402,8 @@
         }
       ],
       "modelledCarbohydratePerServingFromMappedInputsG": 0.165,
-      "unresolvedInputs": 1,
-      "proxyInputs": 0
+      "unresolvedInputs": 0,
+      "proxyInputs": 1
     },
     {
       "recipeId": "karnivore-rapea-porsaan-kylki",
@@ -509,9 +532,20 @@
           "grams": 500,
           "item": "naudan jauhelihaa",
           "unit": "g",
-          "sourceMatch": "unresolved",
-          "source": null,
-          "nutritionLimitation": "20 % jauhelihan tuotekohtainen vastaavuus puuttuu"
+          "sourceMatch": "proxy",
+          "source": {
+            "dataset": "Snellman, valmistajan tuotepakkaus-/verkkotiedot (tarkistettu 2026-11-11)",
+            "sourceId": "snellman-6409620011856",
+            "foodName": "Kunnon naudan jauheliha 20 % 400 g",
+            "per100g": {
+              "availableCarbohydrates": 0,
+              "protein": 18,
+              "fat": 20
+            },
+            "energyKcalPer100g": 252,
+            "sourceUrl": "https://snellman.fi/fi/tuotteet/kunnon-naudan-jauheliha-20-400-g/"
+          },
+          "nutritionLimitation": "Vain Snellman Kunnon naudan jauheliha 20 %, EAN 6409620011856; geneerinen 20 % ei automaattisesti vastaa tuotetta, käyttäjän pakkaus on varmistettava."
         },
         {
           "grams": 90,
@@ -569,8 +603,8 @@
         }
       ],
       "modelledCarbohydratePerServingFromMappedInputsG": 0,
-      "unresolvedInputs": 1,
-      "proxyInputs": 2
+      "unresolvedInputs": 0,
+      "proxyInputs": 3
     },
     {
       "recipeId": "karnivore-lammaskyljykset-voissa",

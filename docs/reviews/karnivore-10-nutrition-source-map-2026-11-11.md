@@ -7,6 +7,7 @@
 - `docs/reviews/karnivore-10-nutrition-source-map-2026-11-11.json` sisältää raakapainot, annosmäärät, ainekohtaiset lähde-ID:t, 100 g:n lähdearvot, luottamusluokan ja esteet.
 - `docs/nutrition/food-records.json`: THL Fineli Release 20, CC BY 4.0.
 - `docs/nutrition/afcd-release-3-reference.json`: Food Standards Australia New Zealand AFCD Release 3, CC BY-SA 3.0 Australia.
+- [Snellman 20 % naudan jauheliha, EAN 6409620011856](https://snellman.fi/fi/tuotteet/kunnon-naudan-jauheliha-20-400-g/): valmistajan ilmoittama rasva 20, proteiini 18, hiilihydraatit 0 g / 100 g. Tämä on tuotekohtainen ehdokas kolmeen jauhelihareseptiin, **ei** kaikkien 20 % jauhelihojen ravintolupaus.
 - Elintarvikkeiden koostumusarvot koskevat tiettyjä tuotetyyppejä. Matriisin `proxy` ei ole lupa käyttää arvoa reseptin metatiedoissa ilman vastaavuuspäätöstä.
 
 ## Esteet (automaattinen kymmenen reseptin läpikäynti)
@@ -14,15 +15,21 @@
 | Resepti | Puuttuvia tietueita | Välillisiä vastineita | Tarkistettava |
 | --- | ---: | ---: | --- |
 | `karnivore-steak-and-eggs` | 0 | 1 | entrecôte-pihviä |
-| `karnivore-smashburger` | 1 | 1 | naudan jauhelihaa, naudan talia |
+| `karnivore-smashburger` | 0 | 2 | naudan jauhelihaa, naudan talia |
 | `karnivore-voilohi-pannulla` | 0 | 1 | nahallista lohifileetä |
 | `karnivore-naudan-lyhytkylki` | 1 | 0 | luullisia naudan short ribs -kylkipaloja |
 | `karnivore-rapeat-kananreisipalat` | 0 | 1 | nahallisia, luullisia broilerin reisipaloja |
-| `karnivore-jauhelihakulho-munalla` | 1 | 0 | naudan jauhelihaa |
+| `karnivore-jauhelihakulho-munalla` | 0 | 1 | naudan jauhelihaa |
 | `karnivore-rapea-porsaan-kylki` | 1 | 0 | nahallista porsaan kylkeä |
 | `karnivore-maksa-ja-pekoni` | 0 | 1 | sokeritonta pekonia |
-| `karnivore-meatza` | 1 | 2 | naudan jauhelihaa, sokeritonta pekonia, mozzarellajuustoa |
+| `karnivore-meatza` | 0 | 3 | naudan jauhelihaa, sokeritonta pekonia, mozzarellajuustoa |
 | `karnivore-lammaskyljykset-voissa` | 0 | 1 | luullisia lammaskyljyksiä |
+
+## Päivitetty 20 % naudan jauhelihan lähdevastaavuus
+
+Kolme aiemmin täysin vailla 20 % jauhelihan tietuetta ollutta reseptiä (smashburger, jauhelihakulho ja meatza) saivat valmistajan dokumentoiman täsmätuote-ehdokkaan. Tuotteen rasvapitoisuus näkyy pakkauksen laskennallisissa ravintoarvoissa 20 g/100 g, proteiinia 18 g/100 g ja hiilihydraatteja 0 g/100 g. Koska FI-reseptit eivät määrää merkkiä, kolme tapausta ovat edelleen **proxy**-tilassa ja tuotevalinta sekä paistohävikki tarkistetaan ennen julkaisua.
+
+Yhteenveto: **2 puuttuvaa lähdevastinetta ja 11 välillistä vastinetta** (aiemmin 5 ja 8). Nämä ovat ainesosakohdistusten lukuja, eivät 10 reseptin hyväksyttyjä makrolaskelmia.
 
 ## Laskennan esimerkit – EIVÄT ole julkaistavia ravintoarvoja
 
