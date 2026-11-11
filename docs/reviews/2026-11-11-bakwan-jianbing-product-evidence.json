@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "createdDate": "2026-11-11",
+  "scope": "issue404 C5 source-identity gate",
+  "status": "HOLD_PRODUCT_AND_MASS",
+  "publicationAuthorized": false,
+  "reviewedSources": {
+    "carrot": "https://fineli.fi/fineli/fi/elintarvikkeet/300",
+    "fineliMethod": "https://fineli.fi/fineli/content/file/7",
+    "afcdSoybean": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F005702",
+    "soybeanNutrientLookup": "https://www.weightloss.com.au/food-nutrition-tables/food/paste-soybean-f005702/",
+    "jianbingSauces": "https://redhousespice.com/jian-bing/",
+    "sauceDistinctions": "https://thewoksoflife.com/sweet-bean-sauce-tian-mian-jiang/"
+  },
+  "records": [
+    {
+      "recipeId": "indonesialainen-bakwan-maissifritter",
+      "recipeBlobSha1": "e9316bc8ef79e073366653c7eb13d356ab109f8f",
+      "calculationBlobSha1": "61b631baff9293ffaff7fa87134725c6cfd4d0c0",
+      "ingredientItem": "porkkana",
+      "recipeAmount": 1,
+      "recipeUnit": "kpl",
+      "modeledMassG": 60,
+      "referenceFoodId": "fineli-300",
+      "referenceAvailableChoPer100G": 5.56,
+      "referenceKind": "AVERAGE_FOOD_COMPOSITION",
+      "ingredientIdentification": "CARROT_KNOWN",
+      "portionMassStatus": "STANDARD_PORTION_NOT_RECIPE_MEASUREMENT",
+      "neededEvidence": [
+        "One carrot weighed as an edible, peeled portion in grams for a specified recipe version",
+        "Evidence for the batter water quantity as prepared",
+        "Documentation of the actual retained pan oil and nutrient source compatibility"
+      ],
+      "status": "HOLD",
+      "authorizedMacro": false,
+      "authorizedGk": false,
+      "publicSourceModification": false,
+      "finding": "Fineli raw carrot is an appropriate composition category, but 60 g is a modelled medium serving, not a recorded kitchen weight."
+    },
+    {
+      "recipeId": "kiinalainen-jianbing-munaletty",
+      "recipeBlobSha1": "15eef1ad0e7d56666e923e8d035db14e7efadd0c",
+      "calculationBlobSha1": "bbfad9646dfb43c794e2211b1ecaca5cfd2a1789",
+      "ingredientItem": "soijapaputahnaa",
+      "recipeAmount": 1,
+      "recipeUnit": "rkl",
+      "modeledMassG": 15,
+      "referenceFoodId": "afcd-F005702",
+      "referenceAvailableChoPer100G": 19.7,
+      "referenceKind": "GENERIC_ANALYSED_FOOD_COMPOSITION",
+      "ingredientIdentification": "UNRESOLVED_SAUCE_PRODUCT",
+      "portionMassStatus": "SPOON_CONVERSION_NOT_WEIGHED",
+      "neededEvidence": [
+        "Specific sauce identity: fermented soybean paste (huangdoujiang) vs sweet wheat sauce (tianmianjiang) vs another sauce",
+        "Manufacturer/label per-100g nutrition and ingredients, including sugars/polyols for available carbohydrate",
+        "Actually weighed grams of the used spoon amount, independent from the generic 15 g model",
+        "Review GI of exact product/preparation or retain unavailable GK"
+      ],
+      "status": "HOLD",
+      "authorizedMacro": false,
+      "authorizedGk": false,
+      "publicSourceModification": false,
+      "finding": "AFCD generic fermented soy paste may describe soybean paste, but cannot automatically be assigned to every jianbing sauce; tianmianjiang can be fermented wheat."
+    }
+  ]
+}
