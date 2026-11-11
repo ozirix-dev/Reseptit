@@ -126,3 +126,54 @@ test("bad FI source is isolated to source HOLD instead of aborting the whole bat
     await rm(root, {recursive:true,force:true});
   }
 });
+
+test("F25 remaining 17 nutrition scenarios stay HOLD and recalculate from ingredient evidence", async () => {
+  const {readFile} = await import("node:fs/promises");
+  const path = await import("node:path");
+  const file = path.resolve(import.meta.dirname, "../../meta/kaannokset/f25-remaining-17-evidence-20261111.json");
+  const evidence = JSON.parse(await readFile(file, "utf8"));
+  assert.equal(evidence.schemaVersion, 1);
+  assert.equal(evidence.release_authorized, false);
+  assert.equal(evidence.counts.remainingFi, 17);
+  assert.equal(evidence.publishedAtSnapshot.f25PairsHeld, 51);
+  assert.equal(evidence.worklist.length, 17);
+  assert.equal(new Set(evidence.worklist.map((r: any) => r.recipe_id)).size, 17);
+  assert.equal(evidence.worklist.filter((r: any) => r.nutrition_input === "missing").length, 9);
+  assert.equal(evidence.worklist.filter((r: any) => r.nutrition_input === "present-unapproved").length, 8);
+  assert.equal(evidence.worklist.filter((r: any) => r.public_quarantine).length, 2);
+  for (const row of evidence.worklist) {
+    assert.equal(row.release_authorized, false);
+    assert.equal(row.human_review_complete, false);
+    assert.match(row.source_blob_sha, /^[0-9a-f]{40}$/);
+    assert.match(row.decision, /HOLD/);
+    assert.ok(row.blockers.length > 20);
+  }
+  const recalculate = (v: any, servings: number) => {
+    const fields = ["netCarbohydrate","totalCarbohydrateInclFibre","protein","fat"] as const;
+    const values = v.ingredients.map((x: any) => ({
+      netCarbohydrate:x.g*x.carbohydrate/100/servings,
+      totalCarbohydrateInclFibre:x.fibre === null ? null : x.g*(x.carbohydrate+x.fibre)/100/servings,
+      protein:x.g*x.protein/100/servings,
+      fat:x.g*x.fat/100/servings
+    }));
+    for (const field of fields) {
+      const calculated = values.some((x: any) => x[field] === null) && field === "totalCarbohydrateInclFibre"
+        ? null : Number(values.reduce((sum: number,x: any) => sum+(x[field]??0),0).toFixed(4));
+      assert.equal(v.modelPerServing[field], calculated, v.id + ":" + field);
+    }
+  };
+  for (const batch of Object.values(evidence.nutritionScenarios) as any[]) {
+    assert.match(batch.outcome, /^hold:/);
+    for (const variant of batch.variants) recalculate(variant,batch.servings);
+  }
+  const zaatar = evidence.nutritionScenarios.zaatar;
+  for (const model of zaatar.variants) {
+    assert.ok(model.modelPerServing.netCarbohydrate > zaatar.originalOmissionBoundPerServing.netCarbohydrate,
+      model.id + " invalidates the unverified carb omission bound");
+  }
+  assert.notEqual(
+    evidence.nutritionScenarios.rahka.variants[0].modelPerServing.netCarbohydrate,
+    evidence.nutritionScenarios.rahka.declaredPerServing.netCarbohydrate,
+  );
+  assert.equal(evidence.nutritionScenarios.paneer.declaredPerServing, null);
+});
