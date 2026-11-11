@@ -34,7 +34,7 @@ test("Kara alternative has exact volume basis, fills coconut fibre evidence but 
     const carbDelta=(kara.per100ml.carbohydrate-thai.per100ml.carbohydrate)*candidate.coconutVolumeMl/100/candidate.servings;
     const proteinDelta=(kara.per100ml.protein-thai.per100ml.protein)*candidate.coconutVolumeMl/100/candidate.servings;
     const fatDelta=(kara.per100ml.fat-thai.per100ml.fat)*candidate.coconutVolumeMl/100/candidate.servings;
-    assert.ok(near(newer.carbohydrate,old.carbohydrate+carbDelta));
+    if(candidate.recipeId==="vietnamilainen-papaija-kookospuuro") assert.ok(near(newer.carbohydrate,old.carbohydrate+carbDelta));
     if(candidate.recipeId==="vietnamilainen-papaija-kookospuuro"){
       const prior=read(candidate.basedOn);
       assert.equal(prior.status,"HOLD");
@@ -48,13 +48,24 @@ test("Kara alternative has exact volume basis, fills coconut fibre evidence but 
     } else {
       const prior=read(candidate.basedOn).recipes.find((r:any)=>r.recipeId===candidate.recipeId);
       assert.ok(prior);
-      assert.ok(near(old.carbohydrate,prior.scenarios.oilRetained100Percent.carbohydrate));
+      assert.equal(old.carbohydrate,null);
+      assert.equal(newer.carbohydrate,null);
+      assert.equal(prior.scenarios.oilRetained100Percent.carbohydrate,null);
+      assert.ok(near(candidate.conditionalEuDefinitionComparison.oldThaiChoiceCarbohydrateGPerServing,40.644));
+      assert.ok(near(candidate.conditionalEuDefinitionComparison.newKaraCarbohydrateGPerServing,40.344));
+      assert.ok(near(candidate.conditionalEuDefinitionComparison.newKaraCarbohydrateGPerServing-
+        candidate.conditionalEuDefinitionComparison.oldThaiChoiceCarbohydrateGPerServing,carbDelta));
+      assert.equal(candidate.conditionalEuDefinitionComparison.publishedNutritionAuthorized,false);
       assert.ok(near(newer.protein,old.protein+proteinDelta));
       assert.ok(near(newer.fatAtZeroOilRetention,old.fatAtZeroOilRetention+fatDelta));
       assert.ok(near(newer.fatAtFullOilRetention,old.fatAtFullOilRetention+fatDelta));
       assert.equal(old.fibreTotal,null);
-      const total=Object.values(candidate.newFibreComponentsTotalG).reduce((sum:number,value:unknown)=>sum+Number(value),0);
-      assert.ok(near(newer.fibreTotal,total/candidate.servings));
+      assert.equal(candidate.newFibreComponentsTotalG.meiraTurmeric,null);
+      assert.equal(newer.fibreTotal,null,"retailer turmeric values are internally inconsistent");
+      const reliableFibre=["fineRiceFlour","beanSprouts","karaCoconutMilk","shrimp"]
+        .map(key=>candidate.newFibreComponentsTotalG[key])
+        .reduce((sum:number,value:number)=>sum+value,0);
+      assert.ok(near(newer.fibreLowerBoundG,reliableFibre/candidate.servings));
     }
   }
 });
