@@ -11,6 +11,7 @@ import { projectC20FiDisplay } from "./c20-fi-editorial-display";
 import { projectMintWholeMilkFiDisplay } from "./d30-fi-mint-milk-display";
 import { projectBreakfastFiQualityDisplay } from "./fi-breakfast-quality-display";
 import { recipeFacets } from "../src/content/recipe-facets";
+import { reviewedDietTagsForSource } from "./reviewed-diet-filters";
 import { articles, articlePath, blogRoot } from "../src/features/blog/blog-data";
 import { contentForRoute } from "../src/content/route-data";
 import { createAssistantCatalog } from "../src/features/assistant/catalog";
@@ -157,10 +158,11 @@ async function buildRecipes(): Promise<RecipeEntry[]> {
     if (!instructions) throw new Error(`Published recipe has no instructions: ${filePath}`);
     const descriptionSection = section(parsed.content, ["Kuvaus", "Description", "Beskrivning", "คำอธิบาย"]);
     const notes = section(parsed.content, ["Muistiinpanot", "Notes", "Anteckningar", "หมายเหตุ"]);
+    const dietTags = await reviewedDietTagsForSource(data.recipe_id, data.language, filePath);
     const instructionSteps = [...publicInstructions.matchAll(/^\s*\d+[.)]\s+(.+)$/gm)].map((match) => match[1].trim());
     recipes.push({
       kind: "recipe", recipeId: data.recipe_id, slug: data.url_slug, locale: data.language,
-      title: data.title, category: data.category, dietClass: data.diet_class ?? null, ...(data.gluten_free === true ? { glutenFree: true } : {}), routePath: routeForRecipe(data.language, data.url_slug),
+      title: data.title, category: data.category, dietClass: data.diet_class ?? null, ...(dietTags.length ? { dietTags } : {}), ...(data.gluten_free === true ? { glutenFree: true } : {}), routePath: routeForRecipe(data.language, data.url_slug),
       description: visibleHold?.description ?? recipeDescription(parsed.content, descriptionSection, data.language, data.ingredients), ingredients: data.ingredients,
       instructionsHtml: await renderSafeMarkdown(publicInstructions),
       instructionStepsHtml: await renderInstructionSteps(publicInstructions),
