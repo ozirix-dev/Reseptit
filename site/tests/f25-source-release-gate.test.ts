@@ -60,3 +60,24 @@ test("false claims of independent nutrition approval cannot substitute for exact
   };
   assert.match(sourceReleaseGateDecision(sample.recipe_id,cloned).reason,/nutrition calculation missing/);
 });
+
+
+test("four F25 A1 catalogue checks never treat missing product, polyol or teaspoon as zero",async()=>{
+  const {runF25A1FoodCatalogPreflight}=await import("../scripts/f25-a1-food-catalog-preflight");
+  const result=runF25A1FoodCatalogPreflight();
+  assert.equal(result.recipes,4);
+  assert.equal(result.authorized,0);
+  assert.deepEqual(result.rows.map(x=>x.recipeId),[
+    "rahka-marjakerroskulho","intialainen-pinaatti-paneer-chilla",
+    "lahi-ita-zaatar-munat","japanilainen-hojicha-jogurtti-persimonilla"
+  ]);
+  for(const row of result.rows){
+    assert.equal(row.status,"INSUFFICIENT SOURCE DATA",row.recipeId);
+    assert.ok(row.gaps.length>0,row.recipeId);
+    assert.ok(row.macroFieldsAvailable<4,row.recipeId);
+  }
+  assert.ok(result.rows[0]?.gaps.some(x=>x.ingredient==="mustikoita"&&x.reason.includes("polyol")));
+  assert.ok(result.rows[1]?.gaps.some(x=>x.ingredient==="juustokumina"));
+  assert.ok(result.rows[2]?.gaps.some(x=>x.ingredient==="zaatar"));
+  assert.ok(result.rows[3]?.gaps.some(x=>x.ingredient==="hojicha-teetä"));
+});
