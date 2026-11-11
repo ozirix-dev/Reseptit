@@ -1,0 +1,660 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-08",
+  "status": "PRELIMINARY_NOT_PUBLICATION_APPROVED",
+  "carbohydrateDefinition": "EU available carbohydrates; not glycemic load or necessarily net_carbs",
+  "ingredientEvidence": "docs/review/suomalaiset-klassikot-v2-aineslahiematriisi.json",
+  "productEvidence": "docs/review/suomalaiset-klassikot-v3-tuote-gikandidaatit.json",
+  "method": "grams*carbohydrate_per_100g/100 divided by stated servings; for reserved dusting flour / butter glaze / egg glaze model 0..reserved mass; label conflicts model the known alternatives only, not total uncertainty",
+  "recipes": [
+    {
+      "id": "karjalanpiirakat-riisipuurolla",
+      "servings": 24,
+      "carbohydratePerServingG": {
+        "min": 15.37,
+        "max": 15.88
+      },
+      "carbohydratePerBatchG": {
+        "min": 368.92,
+        "max": 381.04
+      },
+      "rows": [
+        {
+          "position": 1,
+          "item": "täysjyväruisjauhoa, kuivapaino",
+          "gramsListed": 210,
+          "carbsPer100gCandidate": 59.391,
+          "carbsPer100gAlternate": null,
+          "carbsBatchMinG": 124.7211,
+          "carbsBatchMaxG": 124.7211,
+          "status": "PRODUCT_EXACT_MATCH_MISSING",
+          "source": "https://fineli.fi/fineli/api/v1/foods/100",
+          "productId": null
+        },
+        {
+          "position": 2,
+          "item": "puolikarkeaa vehnäjauhoa, kuivapaino",
+          "gramsListed": 70,
+          "carbsPer100gCandidate": 73.998,
+          "carbsPer100gAlternate": null,
+          "carbsBatchMinG": 51.7986,
+          "carbsBatchMaxG": 51.7986,
+          "status": "PRODUCT_EXACT_MATCH_MISSING",
+          "source": "https://fineli.fi/fineli/api/v1/foods/110",
+          "productId": null
+        },
+        {
+          "position": 3,
+          "item": "täysjyväruisjauhoa, kaulintaan varattu erä",
+          "gramsListed": 20,
+          "carbsPer100gCandidate": 59.391,
+          "carbsPer100gAlternate": null,
+          "carbsBatchMinG": 0,
+          "carbsBatchMaxG": 11.8782,
+          "status": "RETAINED_MASS_UNKNOWN",
+          "source": "https://fineli.fi/fineli/api/v1/foods/100",
+          "productId": null
+        },
+        {
+          "position": 4,
+          "item": "vettä",
+          "gramsListed": 200,
+          "carbsPer100gCandidate": 0,
+          "carbsPer100gAlternate": null,
+          "carbsBatchMinG": 0,
+          "carbsBatchMaxG": 0,
+          "status": "WATER_OR_SALT_ZERO",
+          "source": null,
+          "productId": null
+        },
+        {
+          "position": 5,
+          "item": "suolaa",
+          "gramsListed": 4,
+          "carbsPer100gCandidate": 0,
+          "carbsPer100gAlternate": null,
+          "carbsBatchMinG": 0,
+          "carbsBatchMaxG": 0,
+          "status": "WATER_OR_SALT_ZERO",
+          "source": null,
+          "productId": null
+        },
+        {
+          "position": 6,
+          "item": "Pirkka puuroriisiä, kuivapaino",
+          "gramsListed": 200,
+          "carbsPer100gCandidate": 77,
+          "carbsPer100gAlternate": null,
+          "carbsBatchMinG": 154,
+          "carbsBatchMaxG": 154,
+          "status": "NUTRITION_CANDIDATE",
+          "source": "https://www.k-ruoka.fi/kauppa/tuote/pirkka-puuroriisi-1kg-6410405257864",
+          "productId": "pirkka-puuroriisi-6410405257864"
+        },
+        {
+          "position": 7,
+          "item": "vettä",
+          "gramsListed": 220,
+          "carbsPer100gCandidate": 0,
+          "carbsPer100gAlternate": null,
+          "carbsBatchMinG": 0,
+          "carbsBatchMaxG": 0,
+          "status": "WATER_OR_SALT_ZERO",
+          "source": null,
+          "productId": null
+        },
+        {
+          "position": 8,
+          "item": "tavallista täysmaitoa, noin 3,5 % rasvaa",
+          "gramsListed": 800,
+          "carbsPer100gCandidate": 4.8,
+          "carbsPer100gAlternate": null,
+          "carbsBatchMinG": 38.4,
+          "carbsBatchMaxG": 38.4,
+          "status": "NUTRITION_CANDIDATE",
+          "source": "https://fineli.fi/fineli/api/v1/foods/689",
+          "productId": null
+        },
+        {
+          "position": 9,
+          "item": "suolaa",
+          "gramsListed": 5,
+          "carbsPer100gCandidate": 0,
+          "carbsPer100gAlternate": null,
+          "carbsBatchMinG": 0,
+          "carbsBatchMaxG": 0,
+          "status": "WATER_OR_SALT_ZERO",
+          "source": null,
+          "productId": null
+        },
+        {
+          "position": 10,
+          "item": "voita",
+          "gramsListed": 30,
+          "carbsPer100gCandidate": 0.8,
+          "carbsPer100gAlternate": null,
+          "carbsBatchMinG": 0,
+          "carbsBatchMaxG": 0.24,
+          "status": "RETAINED_MASS_UNKNOWN",
+          "source": "https://fineli.fi/fineli/api/v1/foods/500",
+          "productId": null
+        }
+      ],
+      "releaseApproval": false,
+      "macroApproval": false,
+      "giApproval": false
+    },
+    {
+      "id": "marry-me-kanapasta",
+      "servings": 4,
+      "carbohydratePerServingG": {
+        "min": 47.49,
+        "max": 49.29
+      },
+      "carbohydratePerBatchG": {
+        "min": 189.98,
+        "max": 197.18
+      },
+      "rows": [
+        {
+          "position": 1,
+          "item": "broilerin fileetä, raakapaino",
+          "gramsListed": 600,
+          "carbsPer100gCandidate": 0,
+          "carbsPer100gAlternate": null,
+          "carbsBatchMinG": 0,
+          "carbsBatchMaxG": 0,
+          "status": "NUTRITION_CANDIDATE",
+          "source": "https://fineli.fi/fineli/api/v1/foods/11565",
+          "productId": null
+        },
+        {
+          "position": 2,
+          "item": "De Cecco Spaghetti n°12 -pastaa, kuivapaino",
+          "gramsListed": 240,
+          "carbsPer100gCandidate": 69,
+          "carbsPer100gAlternate": 72,
+          "carbsBatchMinG": 165.6,
+          "carbsBatchMaxG": 172.8,
+          "status": "PRODUCT_EXACT_MATCH_MISSING",
+          "source": "https://www.k-ruoka.fi/kauppa/tuote/de-cecco-spaghetti-n-12-500g-8001250120120",
+          "productId": "dececco-spaghetti-12-8001250120120"
+        },
+        {
+          "position": 3,
+          "item": "kuohukermaa, 38 % rasvaa",
+          "gramsListed": 200,
+          "carbsPer100gCandidate": 2.9,
+          "carbsPer100gAlternate": null,
+          "carbsBatchMinG": 5.8,
+          "carbsBatchMaxG": 5.8,
+          "status": "PRODUCT_EXACT_MATCH_MISSING",
+          "source": "https://fineli.fi/fineli/api/v1/foods/631",
+          "productId": null
+        },
+        {
+          "position": 4,
+          "item": "Royal aurinkokuivattua tomaattisuikaletta öljyssä, valutettu paino",
+          "gramsListed": 80,
+          "carbsPer100gCandidate": 16,
+          "carbsPer100gAlternate": null,
+          "carbsBatchMinG": 12.8,
+          "carbsBatchMaxG": 12.8,
+          "status": "PRODUCT_EXACT_MATCH_MISSING",
+          "source": "https://www.s-kaupat.fi/tuote/royal-330200g-aurinkokuivattu-tomaattisuikale-oljyssa/5201194037031",
+          "productId": "royal-tomato-5201194037031"
+        },
+        {
+          "position": 5,
+          "item": "parmesaania, raastettu syötävä massa",
+          "gramsListed": 50,
+          "carbsPer100gCandidate": 0,
+          "carbsPer100gAlternate": null,
+          "carbsBatchMinG": 0,
+          "carbsBatchMaxG": 0,
+          "status": "NUTRITION_CANDIDATE",
+          "source": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+          "productId": null
+        },
+        {
+          "position": 6,
+          "item": "keltasipulia, kuorittu paino",
+          "gramsListed": 70,
+          "carbsPer100gCandidate": 4.8,
+          "carbsPer100gAlternate": null,
+          "carbsBatchMinG": 3.36,
+          "carbsBatchMaxG": 3.36,
+          "status": "NUTRITION_CANDIDATE",
+          "source": "https://fineli.fi/fineli/api/v1/foods/335",
+          "productId": null
+        },
+        {
+          "position": 7,
+          "item": "valkosipulia, kuorittu paino",
+          "gramsListed": 12,
+          "carbsPer100gCandidate": 10.2,
+          "carbsPer100gAlternate": null,
+          "carbsBatchMinG": 1.224,
+          "carbsBatchMaxG": 1.224,
+          "status": "NUTRITION_CANDIDATE",
+          "source": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+          "productId": null
+        },
+        {
+          "position": 8,
+          "item": "oliiviöljyä",
+          "gramsListed": 15,
+          "carbsPer100gCandidate": 0,
+          "carbsPer100gAlternate": null,
+          "carbsBatchMinG": 0,
+          "carbsBatchMaxG": 0,
+          "status": "NUTRITION_CANDIDATE",
+          "source": "https://fineli.fi/fineli/api/v1/foods/536",
+          "productId": null
+        },
+        {
+          "position": 9,
+          "item": "vettä",
+          "gramsListed": 150,
+          "carbsPer100gCandidate": 0,
+          "carbsPer100gAlternate": null,
+          "carbsBatchMinG": 0,
+          "carbsBatchMaxG": 0,
+          "status": "WATER_OR_SALT_ZERO",
+          "source": null,
+          "productId": null
+        },
+        {
+          "position": 10,
+          "item": "kuivattua timjamia",
+          "gramsListed": 3,
+          "carbsPer100gCandidate": 26.94,
+          "carbsPer100gAlternate": null,
+          "carbsBatchMinG": 0.8082,
+          "carbsBatchMaxG": 0.8082,
+          "status": "NUTRITION_CANDIDATE",
+          "source": "https://fineli.fi/fineli/fi/elintarvikkeet/11194",
+          "productId": null
+        },
+        {
+          "position": 11,
+          "item": "suolaa",
+          "gramsListed": 4,
+          "carbsPer100gCandidate": 0,
+          "carbsPer100gAlternate": null,
+          "carbsBatchMinG": 0,
+          "carbsBatchMaxG": 0,
+          "status": "WATER_OR_SALT_ZERO",
+          "source": null,
+          "productId": null
+        },
+        {
+          "position": 12,
+          "item": "jauhettua mustapippuria",
+          "gramsListed": 1,
+          "carbsPer100gCandidate": 38.31,
+          "carbsPer100gAlternate": null,
+          "carbsBatchMinG": 0.3831,
+          "carbsBatchMaxG": 0.3831,
+          "status": "NUTRITION_CANDIDATE",
+          "source": "https://fineli.fi/fineli/api/v1/foods/11177?c=2034&c2=2168",
+          "productId": null
+        }
+      ],
+      "releaseApproval": false,
+      "macroApproval": false,
+      "giApproval": false
+    },
+    {
+      "id": "uunifetapasta-kirsikkatomaateilla",
+      "servings": 4,
+      "carbohydratePerServingG": {
+        "min": 47.39,
+        "max": 47.39
+      },
+      "carbohydratePerBatchG": {
+        "min": 189.55,
+        "max": 189.55
+      },
+      "rows": [
+        {
+          "position": 1,
+          "item": "Barilla Penne Rigate n°73 -pastaa, kuivapaino",
+          "gramsListed": 240,
+          "carbsPer100gCandidate": 71,
+          "carbsPer100gAlternate": null,
+          "carbsBatchMinG": 170.4,
+          "carbsBatchMaxG": 170.4,
+          "status": "PRODUCT_EXACT_MATCH_MISSING",
+          "source": "https://www.s-kaupat.fi/tuote/barilla-penne-rigate-no73-durumvehnasta-valmistettu-pasta-500g/8076802085738",
+          "productId": "barilla-penne-73-8076802085738"
+        },
+        {
+          "position": 2,
+          "item": "Mevgal kreikkalaista fetajuustoa PDO, valutettu syötävä massa",
+          "gramsListed": 200,
+          "carbsPer100gCandidate": 0.7,
+          "carbsPer100gAlternate": null,
+          "carbsBatchMinG": 1.4,
+          "carbsBatchMaxG": 1.4,
+          "status": "PRODUCT_EXACT_MATCH_MISSING",
+          "source": "https://www.k-ruoka.fi/kauppa/tuote/mevgal-aito-kreikkalainen-feta-200g-lakt-5201083349023",
+          "productId": "mevgal-feta-5201083349023"
+        },
+        {
+          "position": 3,
+          "item": "kirsikkatomaatteja, syötävä paino",
+          "gramsListed": 450,
+          "carbsPer100gCandidate": 3.5,
+          "carbsPer100gAlternate": null,
+          "carbsBatchMinG": 15.75,
+          "carbsBatchMaxG": 15.75,
+          "status": "NUTRITION_CANDIDATE",
+          "source": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+          "productId": null
+        },
+        {
+          "position": 4,
+          "item": "ekstra-neitsytoliiviöljyä",
+          "gramsListed": 35,
+          "carbsPer100gCandidate": 0,
+          "carbsPer100gAlternate": null,
+          "carbsBatchMinG": 0,
+          "carbsBatchMaxG": 0,
+          "status": "NUTRITION_CANDIDATE",
+          "source": "https://fineli.fi/fineli/api/v1/foods/536",
+          "productId": null
+        },
+        {
+          "position": 5,
+          "item": "valkosipulia, kuorittu paino",
+          "gramsListed": 12,
+          "carbsPer100gCandidate": 10.2,
+          "carbsPer100gAlternate": null,
+          "carbsBatchMinG": 1.224,
+          "carbsBatchMaxG": 1.224,
+          "status": "NUTRITION_CANDIDATE",
+          "source": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+          "productId": null
+        },
+        {
+          "position": 6,
+          "item": "punaista tuoretta chiliä, syötävä paino",
+          "gramsListed": 6,
+          "carbsPer100gCandidate": 4.8,
+          "carbsPer100gAlternate": null,
+          "carbsBatchMinG": 0.288,
+          "carbsBatchMaxG": 0.288,
+          "status": "NUTRITION_CANDIDATE",
+          "source": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd",
+          "productId": null
+        },
+        {
+          "position": 7,
+          "item": "tuoretta basilikaa, syötävä paino",
+          "gramsListed": 10,
+          "carbsPer100gCandidate": 1.06,
+          "carbsPer100gAlternate": null,
+          "carbsBatchMinG": 0.106,
+          "carbsBatchMaxG": 0.106,
+          "status": "NUTRITION_CANDIDATE",
+          "source": "https://fineli.fi/fineli/api/v1/foods/11134?c=2034&c2=2168",
+          "productId": null
+        },
+        {
+          "position": 8,
+          "item": "mustapippuria",
+          "gramsListed": 1,
+          "carbsPer100gCandidate": 38.31,
+          "carbsPer100gAlternate": null,
+          "carbsBatchMinG": 0.3831,
+          "carbsBatchMaxG": 0.3831,
+          "status": "NUTRITION_CANDIDATE",
+          "source": "https://fineli.fi/fineli/api/v1/foods/11177?c=2034&c2=2168",
+          "productId": null
+        },
+        {
+          "position": 9,
+          "item": "suolaa",
+          "gramsListed": 2,
+          "carbsPer100gCandidate": 0,
+          "carbsPer100gAlternate": null,
+          "carbsBatchMinG": 0,
+          "carbsBatchMaxG": 0,
+          "status": "WATER_OR_SALT_ZERO",
+          "source": null,
+          "productId": null
+        }
+      ],
+      "releaseApproval": false,
+      "macroApproval": false,
+      "giApproval": false
+    },
+    {
+      "id": "raejuustobagelit-ilman-kohotusta",
+      "servings": 6,
+      "carbohydratePerServingG": {
+        "min": 38.96,
+        "max": 38.98
+      },
+      "carbohydratePerBatchG": {
+        "min": 233.73,
+        "max": 233.9
+      },
+      "rows": [
+        {
+          "position": 1,
+          "item": "Valio raejuustoa, 2 % rasvaa",
+          "gramsListed": 400,
+          "carbsPer100gCandidate": 1.8,
+          "carbsPer100gAlternate": null,
+          "carbsBatchMinG": 7.2,
+          "carbsBatchMaxG": 7.2,
+          "status": "PRODUCT_EXACT_MATCH_MISSING",
+          "source": "https://www.valio.fi/tuotteet/valio-raejuusto/",
+          "productId": "valio-raejuusto-6408430043019"
+        },
+        {
+          "position": 2,
+          "item": "puolikarkeita vehnäjauhoja, kuivapaino",
+          "gramsListed": 300,
+          "carbsPer100gCandidate": 73.998,
+          "carbsPer100gAlternate": null,
+          "carbsBatchMinG": 221.994,
+          "carbsBatchMaxG": 221.994,
+          "status": "NUTRITION_CANDIDATE",
+          "source": "https://fineli.fi/fineli/api/v1/foods/110",
+          "productId": null
+        },
+        {
+          "position": 3,
+          "item": "leivinjauhetta",
+          "gramsListed": 12,
+          "carbsPer100gCandidate": 37.8,
+          "carbsPer100gAlternate": null,
+          "carbsBatchMinG": 4.536,
+          "carbsBatchMaxG": 4.536,
+          "status": "NUTRITION_CANDIDATE",
+          "source": "https://fineli.fi/fineli/api/v1/foods/74?c=2034&c2=2168",
+          "productId": null
+        },
+        {
+          "position": 4,
+          "item": "suolaa",
+          "gramsListed": 4,
+          "carbsPer100gCandidate": 0,
+          "carbsPer100gAlternate": null,
+          "carbsBatchMinG": 0,
+          "carbsBatchMaxG": 0,
+          "status": "WATER_OR_SALT_ZERO",
+          "source": null,
+          "productId": null
+        },
+        {
+          "position": 5,
+          "item": "kananmunaa, kuoretonta massaa",
+          "gramsListed": 55,
+          "carbsPer100gCandidate": 0.3,
+          "carbsPer100gAlternate": null,
+          "carbsBatchMinG": 0,
+          "carbsBatchMaxG": 0.165,
+          "status": "RETAINED_MASS_UNKNOWN",
+          "source": "https://fineli.fi/fineli/api/v1/foods/858",
+          "productId": null
+        }
+      ],
+      "releaseApproval": false,
+      "macroApproval": false,
+      "giApproval": false
+    },
+    {
+      "id": "linssimakaronilaatikko",
+      "servings": 6,
+      "carbohydratePerServingG": {
+        "min": 40.23,
+        "max": 40.23
+      },
+      "carbohydratePerBatchG": {
+        "min": 241.38,
+        "max": 241.38
+      },
+      "rows": [
+        {
+          "position": 1,
+          "item": "Myllyn Paras Makaroni -sarvimakaronia, kuivapaino",
+          "gramsListed": 220,
+          "carbsPer100gCandidate": 68,
+          "carbsPer100gAlternate": null,
+          "carbsBatchMinG": 149.6,
+          "carbsBatchMaxG": 149.6,
+          "status": "PRODUCT_EXACT_MATCH_MISSING",
+          "source": "https://www.myllynparas.fi/tuotteet/makaroni-400-g",
+          "productId": "myllyn-paras-makaroni-6417700050725"
+        },
+        {
+          "position": 2,
+          "item": "Coop vihreitä kuivattuja linssejä, kuivapaino",
+          "gramsListed": 150,
+          "carbsPer100gCandidate": 43,
+          "carbsPer100gAlternate": null,
+          "carbsBatchMinG": 64.5,
+          "carbsBatchMaxG": 64.5,
+          "status": "PRODUCT_EXACT_MATCH_MISSING",
+          "source": "https://www.s-kaupat.fi/tuote/coop-vihreat-linssit-400-g/7340191132238",
+          "productId": "coop-lentils-7340191132238"
+        },
+        {
+          "position": 3,
+          "item": "kevytmaitoa, 1,5 % rasvaa",
+          "gramsListed": 500,
+          "carbsPer100gCandidate": 4.8,
+          "carbsPer100gAlternate": null,
+          "carbsBatchMinG": 24,
+          "carbsBatchMaxG": 24,
+          "status": "NUTRITION_CANDIDATE",
+          "source": "https://fineli.fi/fineli/api/v1/foods/684",
+          "productId": null
+        },
+        {
+          "position": 4,
+          "item": "kananmunaa, kuoretonta massaa",
+          "gramsListed": 110,
+          "carbsPer100gCandidate": 0.3,
+          "carbsPer100gAlternate": null,
+          "carbsBatchMinG": 0.33,
+          "carbsBatchMaxG": 0.33,
+          "status": "NUTRITION_CANDIDATE",
+          "source": "https://fineli.fi/fineli/api/v1/foods/858",
+          "productId": null
+        },
+        {
+          "position": 5,
+          "item": "Valio Emmental punaleima 17 % -juustoa, itse raastettuna",
+          "gramsListed": 100,
+          "carbsPer100gCandidate": 0,
+          "carbsPer100gAlternate": null,
+          "carbsBatchMinG": 0,
+          "carbsBatchMaxG": 0,
+          "status": "PRODUCT_EXACT_MATCH_MISSING",
+          "source": "https://www.valio.fi/tuotteet/valio-emmental-punaleima-17-juusto/",
+          "productId": "valio-emmental-6408430031221"
+        },
+        {
+          "position": 6,
+          "item": "keltasipulia, kuorittu paino",
+          "gramsListed": 40,
+          "carbsPer100gCandidate": 4.8,
+          "carbsPer100gAlternate": null,
+          "carbsBatchMinG": 1.92,
+          "carbsBatchMaxG": 1.92,
+          "status": "NUTRITION_CANDIDATE",
+          "source": "https://fineli.fi/fineli/api/v1/foods/335",
+          "productId": null
+        },
+        {
+          "position": 7,
+          "item": "oliiviöljyä",
+          "gramsListed": 15,
+          "carbsPer100gCandidate": 0,
+          "carbsPer100gAlternate": null,
+          "carbsBatchMinG": 0,
+          "carbsBatchMaxG": 0,
+          "status": "NUTRITION_CANDIDATE",
+          "source": "https://fineli.fi/fineli/api/v1/foods/536",
+          "productId": null
+        },
+        {
+          "position": 8,
+          "item": "suolaa",
+          "gramsListed": 5,
+          "carbsPer100gCandidate": 0,
+          "carbsPer100gAlternate": null,
+          "carbsBatchMinG": 0,
+          "carbsBatchMaxG": 0,
+          "status": "WATER_OR_SALT_ZERO",
+          "source": null,
+          "productId": null
+        },
+        {
+          "position": 9,
+          "item": "paprikajauhetta",
+          "gramsListed": 2,
+          "carbsPer100gCandidate": 19.1,
+          "carbsPer100gAlternate": null,
+          "carbsBatchMinG": 0.382,
+          "carbsBatchMaxG": 0.382,
+          "status": "NUTRITION_CANDIDATE",
+          "source": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+          "productId": null
+        },
+        {
+          "position": 10,
+          "item": "jauhettua mustapippuria",
+          "gramsListed": 1,
+          "carbsPer100gCandidate": 38.31,
+          "carbsPer100gAlternate": null,
+          "carbsBatchMinG": 0.3831,
+          "carbsBatchMaxG": 0.3831,
+          "status": "NUTRITION_CANDIDATE",
+          "source": "https://fineli.fi/fineli/api/v1/foods/11177?c=2034&c2=2168",
+          "productId": null
+        },
+        {
+          "position": 11,
+          "item": "kuivattua timjamia",
+          "gramsListed": 1,
+          "carbsPer100gCandidate": 26.94,
+          "carbsPer100gAlternate": null,
+          "carbsBatchMinG": 0.2694,
+          "carbsBatchMaxG": 0.2694,
+          "status": "NUTRITION_CANDIDATE",
+          "source": "https://fineli.fi/fineli/fi/elintarvikkeet/11194",
+          "productId": null
+        }
+      ],
+      "releaseApproval": false,
+      "macroApproval": false,
+      "giApproval": false
+    }
+  ]
+}

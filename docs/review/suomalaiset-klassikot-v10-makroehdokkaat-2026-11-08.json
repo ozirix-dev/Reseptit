@@ -1,0 +1,1493 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-08",
+  "status": "PRELIMINARY_MACRO_COVERAGE_COMPLETE_BUT_PRODUCT_MATCHES_AND_MASSES_UNVERIFIED",
+  "method": "sum dry/raw listed input masses per declared serving; amounts reserved for glazing/dusting bounded from 0 to recipe allotment; unavailable macronutrients remain unknown, not zero; sources as cited; do not substitute exact-product labels for a different variant",
+  "productLabels": {
+    "pirkka-puuroriisi-6410405257864": {
+      "carbohydrate": 77,
+      "protein": 7.4,
+      "fat": 0.7,
+      "fibre": 0.8,
+      "url": "https://www.k-ruoka.fi/kauppa/tuote/pirkka-puuroriisi-1kg-6410405257864"
+    },
+    "dececco-spaghetti-12-8001250120120": {
+      "carbohydrate": 69,
+      "protein": 14,
+      "fat": 1.5,
+      "fibre": 2.9,
+      "url": "https://www.k-ruoka.fi/kauppa/tuote/de-cecco-spaghetti-n-12-500g-8001250120120"
+    },
+    "royal-tomato-5201194037031": {
+      "carbohydrate": 16,
+      "protein": 5.5,
+      "fat": 9.3,
+      "fibre": 6.3,
+      "url": "https://www.s-kaupat.fi/tuote/royal-330200g-aurinkokuivattu-tomaattisuikale-oljyssa/5201194037031"
+    },
+    "barilla-penne-73-8076802085738": {
+      "carbohydrate": 71,
+      "protein": 13,
+      "fat": 2,
+      "fibre": 3,
+      "url": "https://www.s-kaupat.fi/tuote/barilla-penne-rigate-no73-durumvehnasta-valmistettu-pasta-500g/8076802085738"
+    },
+    "mevgal-feta-5201083349023": {
+      "carbohydrate": 0.7,
+      "protein": 16.5,
+      "fat": 24.5,
+      "fibre": 0,
+      "url": "https://www.filos.fi/tuote/mevgal-laktoositon-fetajuusto-pdo-200g/"
+    },
+    "valio-raejuusto-6408430043019": {
+      "carbohydrate": 1.8,
+      "protein": 15,
+      "fat": 2,
+      "fibre": 0,
+      "url": "https://www.valio.fi/tuotteet/valio-raejuusto/"
+    },
+    "coop-lentils-7340191132238": {
+      "carbohydrate": 43,
+      "protein": 21,
+      "fat": 1.5,
+      "fibre": 18,
+      "url": "https://www.s-kaupat.fi/tuote/coop-vihreat-linssit-400-g/7340191132238"
+    },
+    "valio-emmental-6408430031221": {
+      "carbohydrate": 0,
+      "protein": 33,
+      "fat": 17,
+      "fibre": 0,
+      "url": "https://www.valio.fi/tuotteet/valio-emmental-punaleima-17-juusto/"
+    },
+    "myllyn-paras-makaroni-6417700050725": {
+      "carbohydrate": 68,
+      "protein": 13,
+      "fat": 1.7,
+      "fibre": 4,
+      "url": "https://www.myllynparas.fi/tuotteet/makaroni-400-g"
+    }
+  },
+  "recipes": [
+    {
+      "id": "karjalanpiirakat-riisipuurolla",
+      "servings": 24,
+      "perServing": {
+        "carbohydrate": {
+          "candidateMin": 15.37,
+          "candidateMax": 15.88,
+          "isComplete": true,
+          "missingPositions": []
+        },
+        "protein": {
+          "candidateMin": 2.79,
+          "candidateMax": 2.89,
+          "isComplete": true,
+          "missingPositions": []
+        },
+        "fat": {
+          "candidateMin": 1.44,
+          "candidateMax": 2.47,
+          "isComplete": true,
+          "missingPositions": []
+        }
+      },
+      "rows": [
+        {
+          "position": 1,
+          "item": "täysjyväruisjauhoa, kuivapaino",
+          "listedMassG": 210,
+          "sourceKind": "FOOD_RECORD",
+          "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/100",
+          "macrosPer100g": {
+            "carbohydrate": 59.391,
+            "protein": 9.56,
+            "fat": 1.93
+          },
+          "batchG": {
+            "carbohydrate": {
+              "min": 124.7211,
+              "max": 124.7211
+            },
+            "protein": {
+              "min": 20.076,
+              "max": 20.076
+            },
+            "fat": {
+              "min": 4.053,
+              "max": 4.053
+            }
+          },
+          "retentionUnknown": false
+        },
+        {
+          "position": 2,
+          "item": "puolikarkeaa vehnäjauhoa, kuivapaino",
+          "listedMassG": 70,
+          "sourceKind": "FOOD_RECORD",
+          "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/110",
+          "macrosPer100g": {
+            "carbohydrate": 73.998,
+            "protein": 11.6,
+            "fat": 1.56
+          },
+          "batchG": {
+            "carbohydrate": {
+              "min": 51.7986,
+              "max": 51.7986
+            },
+            "protein": {
+              "min": 8.12,
+              "max": 8.12
+            },
+            "fat": {
+              "min": 1.092,
+              "max": 1.092
+            }
+          },
+          "retentionUnknown": false
+        },
+        {
+          "position": 3,
+          "item": "täysjyväruisjauhoa, kaulintaan varattu erä",
+          "listedMassG": 20,
+          "sourceKind": "FOOD_RECORD",
+          "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/100",
+          "macrosPer100g": {
+            "carbohydrate": 59.391,
+            "protein": 9.56,
+            "fat": 1.93
+          },
+          "batchG": {
+            "carbohydrate": {
+              "min": 0,
+              "max": 11.8782
+            },
+            "protein": {
+              "min": 0,
+              "max": 1.912
+            },
+            "fat": {
+              "min": 0,
+              "max": 0.386
+            }
+          },
+          "retentionUnknown": true
+        },
+        {
+          "position": 4,
+          "item": "vettä",
+          "listedMassG": 200,
+          "sourceKind": "NO_MACRO_SOURCE",
+          "sourceUrl": null,
+          "macrosPer100g": {
+            "carbohydrate": null,
+            "protein": null,
+            "fat": null
+          },
+          "batchG": {
+            "carbohydrate": {
+              "min": 0,
+              "max": 0
+            },
+            "protein": {
+              "min": 0,
+              "max": 0
+            },
+            "fat": {
+              "min": 0,
+              "max": 0
+            }
+          },
+          "retentionUnknown": false
+        },
+        {
+          "position": 5,
+          "item": "suolaa",
+          "listedMassG": 4,
+          "sourceKind": "NO_MACRO_SOURCE",
+          "sourceUrl": null,
+          "macrosPer100g": {
+            "carbohydrate": null,
+            "protein": null,
+            "fat": null
+          },
+          "batchG": {
+            "carbohydrate": {
+              "min": 0,
+              "max": 0
+            },
+            "protein": {
+              "min": 0,
+              "max": 0
+            },
+            "fat": {
+              "min": 0,
+              "max": 0
+            }
+          },
+          "retentionUnknown": false
+        },
+        {
+          "position": 6,
+          "item": "Pirkka puuroriisiä, kuivapaino",
+          "listedMassG": 200,
+          "sourceKind": "PRODUCT_LABEL",
+          "sourceUrl": "https://www.k-ruoka.fi/kauppa/tuote/pirkka-puuroriisi-1kg-6410405257864",
+          "macrosPer100g": {
+            "carbohydrate": 77,
+            "protein": 7.4,
+            "fat": 0.7
+          },
+          "batchG": {
+            "carbohydrate": {
+              "min": 154,
+              "max": 154
+            },
+            "protein": {
+              "min": 14.8,
+              "max": 14.8
+            },
+            "fat": {
+              "min": 1.4,
+              "max": 1.4
+            }
+          },
+          "retentionUnknown": false
+        },
+        {
+          "position": 7,
+          "item": "vettä",
+          "listedMassG": 220,
+          "sourceKind": "NO_MACRO_SOURCE",
+          "sourceUrl": null,
+          "macrosPer100g": {
+            "carbohydrate": null,
+            "protein": null,
+            "fat": null
+          },
+          "batchG": {
+            "carbohydrate": {
+              "min": 0,
+              "max": 0
+            },
+            "protein": {
+              "min": 0,
+              "max": 0
+            },
+            "fat": {
+              "min": 0,
+              "max": 0
+            }
+          },
+          "retentionUnknown": false
+        },
+        {
+          "position": 8,
+          "item": "tavallista täysmaitoa, noin 3,5 % rasvaa",
+          "listedMassG": 800,
+          "sourceKind": "FOOD_RECORD",
+          "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/689",
+          "macrosPer100g": {
+            "carbohydrate": 4.8,
+            "protein": 3,
+            "fat": 3.5
+          },
+          "batchG": {
+            "carbohydrate": {
+              "min": 38.4,
+              "max": 38.4
+            },
+            "protein": {
+              "min": 24,
+              "max": 24
+            },
+            "fat": {
+              "min": 28,
+              "max": 28
+            }
+          },
+          "retentionUnknown": false
+        },
+        {
+          "position": 9,
+          "item": "suolaa",
+          "listedMassG": 5,
+          "sourceKind": "NO_MACRO_SOURCE",
+          "sourceUrl": null,
+          "macrosPer100g": {
+            "carbohydrate": null,
+            "protein": null,
+            "fat": null
+          },
+          "batchG": {
+            "carbohydrate": {
+              "min": 0,
+              "max": 0
+            },
+            "protein": {
+              "min": 0,
+              "max": 0
+            },
+            "fat": {
+              "min": 0,
+              "max": 0
+            }
+          },
+          "retentionUnknown": false
+        },
+        {
+          "position": 10,
+          "item": "voita",
+          "listedMassG": 30,
+          "sourceKind": "FOOD_RECORD",
+          "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/500",
+          "macrosPer100g": {
+            "carbohydrate": 0.8,
+            "protein": 1.19,
+            "fat": 81.3
+          },
+          "batchG": {
+            "carbohydrate": {
+              "min": 0,
+              "max": 0.24
+            },
+            "protein": {
+              "min": 0,
+              "max": 0.357
+            },
+            "fat": {
+              "min": 0,
+              "max": 24.39
+            }
+          },
+          "retentionUnknown": true
+        }
+      ]
+    },
+    {
+      "id": "marry-me-kanapasta",
+      "servings": 4,
+      "perServing": {
+        "carbohydrate": {
+          "candidateMin": 47.49,
+          "candidateMax": 49.29,
+          "isComplete": true,
+          "missingPositions": []
+        },
+        "protein": {
+          "candidateMin": 48.6,
+          "candidateMax": 48.6,
+          "isComplete": true,
+          "missingPositions": []
+        },
+        "fat": {
+          "candidateMin": 32.07,
+          "candidateMax": 32.07,
+          "isComplete": true,
+          "missingPositions": []
+        }
+      },
+      "rows": [
+        {
+          "position": 1,
+          "item": "broilerin fileetä, raakapaino",
+          "listedMassG": 600,
+          "sourceKind": "FOOD_RECORD",
+          "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/11565",
+          "macrosPer100g": {
+            "carbohydrate": 0,
+            "protein": 22.44,
+            "fat": 2.01
+          },
+          "batchG": {
+            "carbohydrate": {
+              "min": 0,
+              "max": 0
+            },
+            "protein": {
+              "min": 134.64,
+              "max": 134.64
+            },
+            "fat": {
+              "min": 12.06,
+              "max": 12.06
+            }
+          },
+          "retentionUnknown": false
+        },
+        {
+          "position": 2,
+          "item": "De Cecco Spaghetti n°12 -pastaa, kuivapaino",
+          "listedMassG": 240,
+          "sourceKind": "PRODUCT_LABEL",
+          "sourceUrl": "https://www.k-ruoka.fi/kauppa/tuote/de-cecco-spaghetti-n-12-500g-8001250120120",
+          "macrosPer100g": {
+            "carbohydrate": 69,
+            "protein": 14,
+            "fat": 1.5,
+            "carbohydrateAlternate": 72
+          },
+          "batchG": {
+            "carbohydrate": {
+              "min": 165.6,
+              "max": 172.8
+            },
+            "protein": {
+              "min": 33.6,
+              "max": 33.6
+            },
+            "fat": {
+              "min": 3.6,
+              "max": 3.6
+            }
+          },
+          "retentionUnknown": false
+        },
+        {
+          "position": 3,
+          "item": "kuohukermaa, 38 % rasvaa",
+          "listedMassG": 200,
+          "sourceKind": "FOOD_RECORD",
+          "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/631",
+          "macrosPer100g": {
+            "carbohydrate": 2.9,
+            "protein": 1.88,
+            "fat": 38
+          },
+          "batchG": {
+            "carbohydrate": {
+              "min": 5.8,
+              "max": 5.8
+            },
+            "protein": {
+              "min": 3.76,
+              "max": 3.76
+            },
+            "fat": {
+              "min": 76,
+              "max": 76
+            }
+          },
+          "retentionUnknown": false
+        },
+        {
+          "position": 4,
+          "item": "Royal aurinkokuivattua tomaattisuikaletta öljyssä, valutettu paino",
+          "listedMassG": 80,
+          "sourceKind": "PRODUCT_LABEL",
+          "sourceUrl": "https://www.s-kaupat.fi/tuote/royal-330200g-aurinkokuivattu-tomaattisuikale-oljyssa/5201194037031",
+          "macrosPer100g": {
+            "carbohydrate": 16,
+            "protein": 5.5,
+            "fat": 9.3
+          },
+          "batchG": {
+            "carbohydrate": {
+              "min": 12.8,
+              "max": 12.8
+            },
+            "protein": {
+              "min": 4.4,
+              "max": 4.4
+            },
+            "fat": {
+              "min": 7.44,
+              "max": 7.44
+            }
+          },
+          "retentionUnknown": false
+        },
+        {
+          "position": 5,
+          "item": "parmesaania, raastettu syötävä massa",
+          "listedMassG": 50,
+          "sourceKind": "FOOD_RECORD",
+          "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+          "macrosPer100g": {
+            "carbohydrate": 0,
+            "protein": 32,
+            "fat": 27
+          },
+          "batchG": {
+            "carbohydrate": {
+              "min": 0,
+              "max": 0
+            },
+            "protein": {
+              "min": 16,
+              "max": 16
+            },
+            "fat": {
+              "min": 13.5,
+              "max": 13.5
+            }
+          },
+          "retentionUnknown": false
+        },
+        {
+          "position": 6,
+          "item": "keltasipulia, kuorittu paino",
+          "listedMassG": 70,
+          "sourceKind": "FOOD_RECORD",
+          "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/335",
+          "macrosPer100g": {
+            "carbohydrate": 4.8,
+            "protein": 1.25,
+            "fat": 0.1
+          },
+          "batchG": {
+            "carbohydrate": {
+              "min": 3.36,
+              "max": 3.36
+            },
+            "protein": {
+              "min": 0.875,
+              "max": 0.875
+            },
+            "fat": {
+              "min": 0.07,
+              "max": 0.07
+            }
+          },
+          "retentionUnknown": false
+        },
+        {
+          "position": 7,
+          "item": "valkosipulia, kuorittu paino",
+          "listedMassG": 12,
+          "sourceKind": "FOOD_RECORD",
+          "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+          "macrosPer100g": {
+            "carbohydrate": 10.2,
+            "protein": 6.1,
+            "fat": 2.8
+          },
+          "batchG": {
+            "carbohydrate": {
+              "min": 1.224,
+              "max": 1.224
+            },
+            "protein": {
+              "min": 0.732,
+              "max": 0.732
+            },
+            "fat": {
+              "min": 0.336,
+              "max": 0.336
+            }
+          },
+          "retentionUnknown": false
+        },
+        {
+          "position": 8,
+          "item": "oliiviöljyä",
+          "listedMassG": 15,
+          "sourceKind": "FOOD_RECORD",
+          "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/536",
+          "macrosPer100g": {
+            "carbohydrate": 0,
+            "protein": 0,
+            "fat": 100
+          },
+          "batchG": {
+            "carbohydrate": {
+              "min": 0,
+              "max": 0
+            },
+            "protein": {
+              "min": 0,
+              "max": 0
+            },
+            "fat": {
+              "min": 15,
+              "max": 15
+            }
+          },
+          "retentionUnknown": false
+        },
+        {
+          "position": 9,
+          "item": "vettä",
+          "listedMassG": 150,
+          "sourceKind": "NO_MACRO_SOURCE",
+          "sourceUrl": null,
+          "macrosPer100g": {
+            "carbohydrate": null,
+            "protein": null,
+            "fat": null
+          },
+          "batchG": {
+            "carbohydrate": {
+              "min": 0,
+              "max": 0
+            },
+            "protein": {
+              "min": 0,
+              "max": 0
+            },
+            "fat": {
+              "min": 0,
+              "max": 0
+            }
+          },
+          "retentionUnknown": false
+        },
+        {
+          "position": 10,
+          "item": "kuivattua timjamia",
+          "listedMassG": 3,
+          "sourceKind": "FOOD_RECORD_SUPPLEMENTAL_PROTEIN_FAT_FROM_FINELI_DERIVED_SECONDARY",
+          "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11194",
+          "macrosPer100g": {
+            "carbohydrate": 26.94,
+            "protein": 9.1,
+            "fat": 7.4
+          },
+          "batchG": {
+            "carbohydrate": {
+              "min": 0.8082,
+              "max": 0.8082
+            },
+            "protein": {
+              "min": 0.273,
+              "max": 0.273
+            },
+            "fat": {
+              "min": 0.222,
+              "max": 0.222
+            }
+          },
+          "retentionUnknown": false
+        },
+        {
+          "position": 11,
+          "item": "suolaa",
+          "listedMassG": 4,
+          "sourceKind": "NO_MACRO_SOURCE",
+          "sourceUrl": null,
+          "macrosPer100g": {
+            "carbohydrate": null,
+            "protein": null,
+            "fat": null
+          },
+          "batchG": {
+            "carbohydrate": {
+              "min": 0,
+              "max": 0
+            },
+            "protein": {
+              "min": 0,
+              "max": 0
+            },
+            "fat": {
+              "min": 0,
+              "max": 0
+            }
+          },
+          "retentionUnknown": false
+        },
+        {
+          "position": 12,
+          "item": "jauhettua mustapippuria",
+          "listedMassG": 1,
+          "sourceKind": "FOOD_RECORD",
+          "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/11177?c=2034&c2=2168",
+          "macrosPer100g": {
+            "carbohydrate": 38.31,
+            "protein": 10.9,
+            "fat": 3.3
+          },
+          "batchG": {
+            "carbohydrate": {
+              "min": 0.3831,
+              "max": 0.3831
+            },
+            "protein": {
+              "min": 0.109,
+              "max": 0.109
+            },
+            "fat": {
+              "min": 0.033,
+              "max": 0.033
+            }
+          },
+          "retentionUnknown": false
+        }
+      ]
+    },
+    {
+      "id": "uunifetapasta-kirsikkatomaateilla",
+      "servings": 4,
+      "perServing": {
+        "carbohydrate": {
+          "candidateMin": 47.39,
+          "candidateMax": 47.39,
+          "isComplete": true,
+          "missingPositions": []
+        },
+        "protein": {
+          "candidateMin": 17.37,
+          "candidateMax": 17.37,
+          "isComplete": true,
+          "missingPositions": []
+        },
+        "fat": {
+          "candidateMin": 22.32,
+          "candidateMax": 22.32,
+          "isComplete": true,
+          "missingPositions": []
+        }
+      },
+      "rows": [
+        {
+          "position": 1,
+          "item": "Barilla Penne Rigate n°73 -pastaa, kuivapaino",
+          "listedMassG": 240,
+          "sourceKind": "PRODUCT_LABEL",
+          "sourceUrl": "https://www.s-kaupat.fi/tuote/barilla-penne-rigate-no73-durumvehnasta-valmistettu-pasta-500g/8076802085738",
+          "macrosPer100g": {
+            "carbohydrate": 71,
+            "protein": 13,
+            "fat": 2
+          },
+          "batchG": {
+            "carbohydrate": {
+              "min": 170.4,
+              "max": 170.4
+            },
+            "protein": {
+              "min": 31.2,
+              "max": 31.2
+            },
+            "fat": {
+              "min": 4.8,
+              "max": 4.8
+            }
+          },
+          "retentionUnknown": false
+        },
+        {
+          "position": 2,
+          "item": "Mevgal kreikkalaista fetajuustoa PDO, valutettu syötävä massa",
+          "listedMassG": 200,
+          "sourceKind": "PRODUCT_LABEL",
+          "sourceUrl": "https://www.filos.fi/tuote/mevgal-laktoositon-fetajuusto-pdo-200g/",
+          "macrosPer100g": {
+            "carbohydrate": 0.7,
+            "protein": 16.5,
+            "fat": 24.5
+          },
+          "batchG": {
+            "carbohydrate": {
+              "min": 1.4,
+              "max": 1.4
+            },
+            "protein": {
+              "min": 33,
+              "max": 33
+            },
+            "fat": {
+              "min": 49,
+              "max": 49
+            }
+          },
+          "retentionUnknown": false
+        },
+        {
+          "position": 3,
+          "item": "kirsikkatomaatteja, syötävä paino",
+          "listedMassG": 450,
+          "sourceKind": "FOOD_RECORD",
+          "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+          "macrosPer100g": {
+            "carbohydrate": 3.5,
+            "protein": 0.9,
+            "fat": 0
+          },
+          "batchG": {
+            "carbohydrate": {
+              "min": 15.75,
+              "max": 15.75
+            },
+            "protein": {
+              "min": 4.05,
+              "max": 4.05
+            },
+            "fat": {
+              "min": 0,
+              "max": 0
+            }
+          },
+          "retentionUnknown": false
+        },
+        {
+          "position": 4,
+          "item": "ekstra-neitsytoliiviöljyä",
+          "listedMassG": 35,
+          "sourceKind": "FOOD_RECORD",
+          "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/536",
+          "macrosPer100g": {
+            "carbohydrate": 0,
+            "protein": 0,
+            "fat": 100
+          },
+          "batchG": {
+            "carbohydrate": {
+              "min": 0,
+              "max": 0
+            },
+            "protein": {
+              "min": 0,
+              "max": 0
+            },
+            "fat": {
+              "min": 35,
+              "max": 35
+            }
+          },
+          "retentionUnknown": false
+        },
+        {
+          "position": 5,
+          "item": "valkosipulia, kuorittu paino",
+          "listedMassG": 12,
+          "sourceKind": "FOOD_RECORD",
+          "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+          "macrosPer100g": {
+            "carbohydrate": 10.2,
+            "protein": 6.1,
+            "fat": 2.8
+          },
+          "batchG": {
+            "carbohydrate": {
+              "min": 1.224,
+              "max": 1.224
+            },
+            "protein": {
+              "min": 0.732,
+              "max": 0.732
+            },
+            "fat": {
+              "min": 0.336,
+              "max": 0.336
+            }
+          },
+          "retentionUnknown": false
+        },
+        {
+          "position": 6,
+          "item": "punaista tuoretta chiliä, syötävä paino",
+          "listedMassG": 6,
+          "sourceKind": "FOOD_RECORD",
+          "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd",
+          "macrosPer100g": {
+            "carbohydrate": 4.8,
+            "protein": 1.4,
+            "fat": 0.7
+          },
+          "batchG": {
+            "carbohydrate": {
+              "min": 0.288,
+              "max": 0.288
+            },
+            "protein": {
+              "min": 0.084,
+              "max": 0.084
+            },
+            "fat": {
+              "min": 0.042,
+              "max": 0.042
+            }
+          },
+          "retentionUnknown": false
+        },
+        {
+          "position": 7,
+          "item": "tuoretta basilikaa, syötävä paino",
+          "listedMassG": 10,
+          "sourceKind": "FOOD_RECORD",
+          "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/11134?c=2034&c2=2168",
+          "macrosPer100g": {
+            "carbohydrate": 1.06,
+            "protein": 3.13,
+            "fat": 0.65
+          },
+          "batchG": {
+            "carbohydrate": {
+              "min": 0.106,
+              "max": 0.106
+            },
+            "protein": {
+              "min": 0.313,
+              "max": 0.313
+            },
+            "fat": {
+              "min": 0.065,
+              "max": 0.065
+            }
+          },
+          "retentionUnknown": false
+        },
+        {
+          "position": 8,
+          "item": "mustapippuria",
+          "listedMassG": 1,
+          "sourceKind": "FOOD_RECORD",
+          "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/11177?c=2034&c2=2168",
+          "macrosPer100g": {
+            "carbohydrate": 38.31,
+            "protein": 10.9,
+            "fat": 3.3
+          },
+          "batchG": {
+            "carbohydrate": {
+              "min": 0.3831,
+              "max": 0.3831
+            },
+            "protein": {
+              "min": 0.109,
+              "max": 0.109
+            },
+            "fat": {
+              "min": 0.033,
+              "max": 0.033
+            }
+          },
+          "retentionUnknown": false
+        },
+        {
+          "position": 9,
+          "item": "suolaa",
+          "listedMassG": 2,
+          "sourceKind": "NO_MACRO_SOURCE",
+          "sourceUrl": null,
+          "macrosPer100g": {
+            "carbohydrate": null,
+            "protein": null,
+            "fat": null
+          },
+          "batchG": {
+            "carbohydrate": {
+              "min": 0,
+              "max": 0
+            },
+            "protein": {
+              "min": 0,
+              "max": 0
+            },
+            "fat": {
+              "min": 0,
+              "max": 0
+            }
+          },
+          "retentionUnknown": false
+        }
+      ]
+    },
+    {
+      "id": "raejuustobagelit-ilman-kohotusta",
+      "servings": 6,
+      "perServing": {
+        "carbohydrate": {
+          "candidateMin": 38.95,
+          "candidateMax": 38.98,
+          "isComplete": true,
+          "missingPositions": []
+        },
+        "protein": {
+          "candidateMin": 15.9,
+          "candidateMax": 17.06,
+          "isComplete": true,
+          "missingPositions": []
+        },
+        "fat": {
+          "candidateMin": 2.11,
+          "candidateMax": 2.96,
+          "isComplete": true,
+          "missingPositions": []
+        }
+      },
+      "rows": [
+        {
+          "position": 1,
+          "item": "Valio raejuustoa, 2 % rasvaa",
+          "listedMassG": 400,
+          "sourceKind": "PRODUCT_LABEL",
+          "sourceUrl": "https://www.valio.fi/tuotteet/valio-raejuusto/",
+          "macrosPer100g": {
+            "carbohydrate": 1.8,
+            "protein": 15,
+            "fat": 2
+          },
+          "batchG": {
+            "carbohydrate": {
+              "min": 7.2,
+              "max": 7.2
+            },
+            "protein": {
+              "min": 60,
+              "max": 60
+            },
+            "fat": {
+              "min": 8,
+              "max": 8
+            }
+          },
+          "retentionUnknown": false
+        },
+        {
+          "position": 2,
+          "item": "puolikarkeita vehnäjauhoja, kuivapaino",
+          "listedMassG": 300,
+          "sourceKind": "FOOD_RECORD",
+          "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/110",
+          "macrosPer100g": {
+            "carbohydrate": 73.998,
+            "protein": 11.6,
+            "fat": 1.56
+          },
+          "batchG": {
+            "carbohydrate": {
+              "min": 221.994,
+              "max": 221.994
+            },
+            "protein": {
+              "min": 34.8,
+              "max": 34.8
+            },
+            "fat": {
+              "min": 4.68,
+              "max": 4.68
+            }
+          },
+          "retentionUnknown": false
+        },
+        {
+          "position": 3,
+          "item": "leivinjauhetta",
+          "listedMassG": 12,
+          "sourceKind": "FOOD_RECORD",
+          "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/74?c=2034&c2=2168",
+          "macrosPer100g": {
+            "carbohydrate": 37.8,
+            "protein": 5.2,
+            "fat": 0
+          },
+          "batchG": {
+            "carbohydrate": {
+              "min": 4.536,
+              "max": 4.536
+            },
+            "protein": {
+              "min": 0.624,
+              "max": 0.624
+            },
+            "fat": {
+              "min": 0,
+              "max": 0
+            }
+          },
+          "retentionUnknown": false
+        },
+        {
+          "position": 4,
+          "item": "suolaa",
+          "listedMassG": 4,
+          "sourceKind": "NO_MACRO_SOURCE",
+          "sourceUrl": null,
+          "macrosPer100g": {
+            "carbohydrate": null,
+            "protein": null,
+            "fat": null
+          },
+          "batchG": {
+            "carbohydrate": {
+              "min": 0,
+              "max": 0
+            },
+            "protein": {
+              "min": 0,
+              "max": 0
+            },
+            "fat": {
+              "min": 0,
+              "max": 0
+            }
+          },
+          "retentionUnknown": false
+        },
+        {
+          "position": 5,
+          "item": "kananmunaa, kuoretonta massaa",
+          "listedMassG": 55,
+          "sourceKind": "FOOD_RECORD",
+          "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/858",
+          "macrosPer100g": {
+            "carbohydrate": 0.3,
+            "protein": 12.61,
+            "fat": 9.24
+          },
+          "batchG": {
+            "carbohydrate": {
+              "min": 0,
+              "max": 0.165
+            },
+            "protein": {
+              "min": 0,
+              "max": 6.9355
+            },
+            "fat": {
+              "min": 0,
+              "max": 5.082
+            }
+          },
+          "retentionUnknown": true
+        }
+      ]
+    },
+    {
+      "id": "linssimakaronilaatikko",
+      "servings": 6,
+      "perServing": {
+        "carbohydrate": {
+          "candidateMin": 40.23,
+          "candidateMax": 40.23,
+          "isComplete": true,
+          "missingPositions": []
+        },
+        "protein": {
+          "candidateMin": 20.49,
+          "candidateMax": 20.49,
+          "isComplete": true,
+          "missingPositions": []
+        },
+        "fat": {
+          "candidateMin": 9.34,
+          "candidateMax": 9.34,
+          "isComplete": true,
+          "missingPositions": []
+        }
+      },
+      "rows": [
+        {
+          "position": 1,
+          "item": "Myllyn Paras Makaroni -sarvimakaronia, kuivapaino",
+          "listedMassG": 220,
+          "sourceKind": "PRODUCT_LABEL",
+          "sourceUrl": "https://www.myllynparas.fi/tuotteet/makaroni-400-g",
+          "macrosPer100g": {
+            "carbohydrate": 68,
+            "protein": 13,
+            "fat": 1.7
+          },
+          "batchG": {
+            "carbohydrate": {
+              "min": 149.6,
+              "max": 149.6
+            },
+            "protein": {
+              "min": 28.6,
+              "max": 28.6
+            },
+            "fat": {
+              "min": 3.74,
+              "max": 3.74
+            }
+          },
+          "retentionUnknown": false
+        },
+        {
+          "position": 2,
+          "item": "Coop vihreitä kuivattuja linssejä, kuivapaino",
+          "listedMassG": 150,
+          "sourceKind": "PRODUCT_LABEL",
+          "sourceUrl": "https://www.s-kaupat.fi/tuote/coop-vihreat-linssit-400-g/7340191132238",
+          "macrosPer100g": {
+            "carbohydrate": 43,
+            "protein": 21,
+            "fat": 1.5
+          },
+          "batchG": {
+            "carbohydrate": {
+              "min": 64.5,
+              "max": 64.5
+            },
+            "protein": {
+              "min": 31.5,
+              "max": 31.5
+            },
+            "fat": {
+              "min": 2.25,
+              "max": 2.25
+            }
+          },
+          "retentionUnknown": false
+        },
+        {
+          "position": 3,
+          "item": "kevytmaitoa, 1,5 % rasvaa",
+          "listedMassG": 500,
+          "sourceKind": "FOOD_RECORD",
+          "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/684",
+          "macrosPer100g": {
+            "carbohydrate": 4.8,
+            "protein": 3,
+            "fat": 1.5
+          },
+          "batchG": {
+            "carbohydrate": {
+              "min": 24,
+              "max": 24
+            },
+            "protein": {
+              "min": 15,
+              "max": 15
+            },
+            "fat": {
+              "min": 7.5,
+              "max": 7.5
+            }
+          },
+          "retentionUnknown": false
+        },
+        {
+          "position": 4,
+          "item": "kananmunaa, kuoretonta massaa",
+          "listedMassG": 110,
+          "sourceKind": "FOOD_RECORD",
+          "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/858",
+          "macrosPer100g": {
+            "carbohydrate": 0.3,
+            "protein": 12.61,
+            "fat": 9.24
+          },
+          "batchG": {
+            "carbohydrate": {
+              "min": 0.33,
+              "max": 0.33
+            },
+            "protein": {
+              "min": 13.871,
+              "max": 13.871
+            },
+            "fat": {
+              "min": 10.164,
+              "max": 10.164
+            }
+          },
+          "retentionUnknown": false
+        },
+        {
+          "position": 5,
+          "item": "Valio Emmental punaleima 17 % -juustoa, itse raastettuna",
+          "listedMassG": 100,
+          "sourceKind": "PRODUCT_LABEL",
+          "sourceUrl": "https://www.valio.fi/tuotteet/valio-emmental-punaleima-17-juusto/",
+          "macrosPer100g": {
+            "carbohydrate": 0,
+            "protein": 33,
+            "fat": 17
+          },
+          "batchG": {
+            "carbohydrate": {
+              "min": 0,
+              "max": 0
+            },
+            "protein": {
+              "min": 33,
+              "max": 33
+            },
+            "fat": {
+              "min": 17,
+              "max": 17
+            }
+          },
+          "retentionUnknown": false
+        },
+        {
+          "position": 6,
+          "item": "keltasipulia, kuorittu paino",
+          "listedMassG": 40,
+          "sourceKind": "FOOD_RECORD",
+          "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/335",
+          "macrosPer100g": {
+            "carbohydrate": 4.8,
+            "protein": 1.25,
+            "fat": 0.1
+          },
+          "batchG": {
+            "carbohydrate": {
+              "min": 1.92,
+              "max": 1.92
+            },
+            "protein": {
+              "min": 0.5,
+              "max": 0.5
+            },
+            "fat": {
+              "min": 0.04,
+              "max": 0.04
+            }
+          },
+          "retentionUnknown": false
+        },
+        {
+          "position": 7,
+          "item": "oliiviöljyä",
+          "listedMassG": 15,
+          "sourceKind": "FOOD_RECORD",
+          "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/536",
+          "macrosPer100g": {
+            "carbohydrate": 0,
+            "protein": 0,
+            "fat": 100
+          },
+          "batchG": {
+            "carbohydrate": {
+              "min": 0,
+              "max": 0
+            },
+            "protein": {
+              "min": 0,
+              "max": 0
+            },
+            "fat": {
+              "min": 15,
+              "max": 15
+            }
+          },
+          "retentionUnknown": false
+        },
+        {
+          "position": 8,
+          "item": "suolaa",
+          "listedMassG": 5,
+          "sourceKind": "NO_MACRO_SOURCE",
+          "sourceUrl": null,
+          "macrosPer100g": {
+            "carbohydrate": null,
+            "protein": null,
+            "fat": null
+          },
+          "batchG": {
+            "carbohydrate": {
+              "min": 0,
+              "max": 0
+            },
+            "protein": {
+              "min": 0,
+              "max": 0
+            },
+            "fat": {
+              "min": 0,
+              "max": 0
+            }
+          },
+          "retentionUnknown": false
+        },
+        {
+          "position": 9,
+          "item": "paprikajauhetta",
+          "listedMassG": 2,
+          "sourceKind": "FOOD_RECORD",
+          "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+          "macrosPer100g": {
+            "carbohydrate": 19.1,
+            "protein": 14.1,
+            "fat": 12.9
+          },
+          "batchG": {
+            "carbohydrate": {
+              "min": 0.382,
+              "max": 0.382
+            },
+            "protein": {
+              "min": 0.282,
+              "max": 0.282
+            },
+            "fat": {
+              "min": 0.258,
+              "max": 0.258
+            }
+          },
+          "retentionUnknown": false
+        },
+        {
+          "position": 10,
+          "item": "jauhettua mustapippuria",
+          "listedMassG": 1,
+          "sourceKind": "FOOD_RECORD",
+          "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/11177?c=2034&c2=2168",
+          "macrosPer100g": {
+            "carbohydrate": 38.31,
+            "protein": 10.9,
+            "fat": 3.3
+          },
+          "batchG": {
+            "carbohydrate": {
+              "min": 0.3831,
+              "max": 0.3831
+            },
+            "protein": {
+              "min": 0.109,
+              "max": 0.109
+            },
+            "fat": {
+              "min": 0.033,
+              "max": 0.033
+            }
+          },
+          "retentionUnknown": false
+        },
+        {
+          "position": 11,
+          "item": "kuivattua timjamia",
+          "listedMassG": 1,
+          "sourceKind": "FOOD_RECORD_SUPPLEMENTAL_PROTEIN_FAT_FROM_FINELI_DERIVED_SECONDARY",
+          "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11194",
+          "macrosPer100g": {
+            "carbohydrate": 26.94,
+            "protein": 9.1,
+            "fat": 7.4
+          },
+          "batchG": {
+            "carbohydrate": {
+              "min": 0.2694,
+              "max": 0.2694
+            },
+            "protein": {
+              "min": 0.091,
+              "max": 0.091
+            },
+            "fat": {
+              "min": 0.074,
+              "max": 0.074
+            }
+          },
+          "retentionUnknown": false
+        }
+      ]
+    }
+  ],
+  "supplementalSources": [
+    {
+      "food": "timjami, kuivattu",
+      "source": "https://fineli.fi/fineli/fi/elintarvikkeet/11194",
+      "crossCheck": "https://ravinto.ptjesse.fi/timjami-kuivattu/",
+      "per100g": {
+        "carbohydrate": 26.94,
+        "protein": 9.1,
+        "fat": 7.4
+      },
+      "note": "Fineli-derived secondary source; confirm official record before publication"
+    }
+  ],
+  "reviewSemantics": {
+    "isComplete": "All ingredient rows have a candidate numeric source, NOT that product/batch identity, cooked retention, or publication evidence is approved",
+    "releaseApproval": false,
+    "glycemicLoadApproval": false,
+    "missingFieldMeans": "unknown, not zero",
+    "conflict": "De Cecco EAN 69 versus 72 g carbohydrate per 100 g; preserve as unresolved scenario; label-provenance requires review"
+  }
+}
