@@ -33,6 +33,14 @@ const classicCategory: Record<string, string> = {
 };
 // Release: precisely two source-reviewed, published gluten-free recipes.
 // Blob SHA locks every ingredient, instruction, review link, source and macro.
+// Follow-on review: exactly three new, unpublished GF recipe drafts.
+// Exact Git blob identities prohibit hidden changes to ingredients, nutrition or status.
+const reviewedGlutenFreeThreeDrafts = new Map<string, string>([
+  ["reseptit/leivonnaiset/gluteeniton-siemenvuokaleipa.md", "96550632f0a3ced61068ddad7f5fc7273987f69c"],
+  ["reseptit/leivonnaiset/gluteenittomat-kauralesesampylat.md", "a956ae726abef888ceff4dd13bce2186e224b279"],
+  ["reseptit/jalkiruoat/gluteeniton-uunipannukakku.md", "86679f90b75c160c923c8c75209f7779e0038092"],
+]);
+
 const approvedGlutenFreeFiFiles = new Map<string, string>([
   ["reseptit/jalkiruoat/gluteeniton-perunajauhokakkupohja.md", "8de57cb20ad8aa888870a6f061a0aa5c7bfe73a6"],
   ["reseptit/leivonnaiset/gluteeniton-durrapizzapohja.md", "284f68dacbdae1d2d5ca5c969c697e85a84f2708"],
@@ -119,6 +127,14 @@ export function assertRecipeBaseline(root: string, baseline: string, ...protecte
 
   for (const change of changes) {
     const [status, file] = change.split("\t");
+    if (status === "A" && reviewedGlutenFreeThreeDrafts.has(file)) {
+      const blob = execFileSync("git", ["hash-object", file], { cwd: root, encoding: "utf8" }).trim();
+      assert.equal(blob, reviewedGlutenFreeThreeDrafts.get(file), "UNREVIEWED_GF_DRAFT_CHANGE: " + change);
+      const recipe = parseMarkdown(readFileSync(path.join(root, file), "utf8"));
+      assert.equal(recipe?.data.status, "draft", "GF draft cannot be published from this baseline exception: " + change);
+      assert.notEqual(recipe?.data.gluten_free, true, "Draft is not approved for gluten-free listing: " + change);
+      continue;
+    }
     if (status === "A" && approvedGlutenFreeFiFiles.has(file)) {
       const actualBlob = execFileSync("git", ["hash-object", file], { cwd: root, encoding: "utf8" }).trim();
       assert.equal(actualBlob, approvedGlutenFreeFiFiles.get(file), "UNREVIEWED_GF_FI_RECIPE: " + change);
