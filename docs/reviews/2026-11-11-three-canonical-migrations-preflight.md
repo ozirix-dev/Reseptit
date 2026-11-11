@@ -1,32 +1,26 @@
-# Issue #404 – esiseulonta ja kolmen FI-valmistusohjeen kanoninen erä (11.11.2026)
+# Issue #404 – kymmenen näyttökorjauksen esiseulonta ja kaksi lähdemigraatiota
 
-## Valinta: miksi ei 15:tä?
+Päiväys 11.11.2026. Tämä on valmistusohjeen kanoninen siirto, EI ravinto-/GK- tai ruoan turvallisuushyväksyntä.
 
-Mainissa oli tarkistuksen alkaessa kymmenen #404:n SHA-lukittua julkista FI-näyttökorjausta. GK149:n 70 lähde-ID:n joukkoon kuuluvat poha, kaya-paahtoleipä, halloumi-tomaattileipä, pho ga ja mannasuurimoupma. Niitä ei siirretä alkuperäiseen tiedostoon ilman GK149:n täyslähde-SHA-sidoksen erillistä tutkimusversiokäsittelyä. Pohan EN/SV/TH-merkitystarkisteet ovat lisäksi aiemmassa katselmoinnissa vanhentuneet.
+## Esiseulonnan todellinen lopputulos
 
-Manakish jätetään ruokalajin identiteetti-/jogurttipannuleipä-vs.-hiivataikina-HOLDiin. Labneh jätetään rakenteisen `cooking_method`-kentän sekä ravinto-/GK-sidoksen HOLDiin. **Kolme muuta** ovat johdonmukaisia valmistustekstin lähdemigraatioehdokkaita, joilla ei ole tunnettua GK149-sidosta. Kaikista kolmesta tarkistettiin myös, ettei tavallisissa `kaannokset/en|sv|th/aamupalat`-poluissa ole julkaistua kieliversiota; lopullinen semantiikan auditointi kuuluu CI:lle.
+Kymmenen SHA-lukittua julkista FI-näyttökorjausta kartoitettiin. **Kahdeksaa ei voitu siirtää kanoniseen Markdowniin** ilman lisäselvityksiä: poha, kaya-paahtoleipä, halloumi-tomaattileipä, pho ga ja mannasuurimoupma ovat GK149:n lähde-SHA-sidoksissa; poha on lisäksi EN/SV/TH-merkitystarkistusten HOLDissa. Soba-aamiaiskeitto on *GK100 first-five* -hyväksyntäpaketissa, jonka reseptilähteen koko SHA-sidos estää muutoksen. Labneh tarvitsee erillisen `cooking_method`- ja ravinto/GK-katselmoinnin. Manakish tarvitsee jogurttipannuleivän ja perinteisen hiivalla kohotetun ruokalajin identiteetin katselmoinnin.
 
-## Varsinaiset lähdesiirrot
+## Lähdemigraatiot, kaksi valmistusohjetta
 
-| Kortti | Resepti | Muutos | Avoin tutkimus-/laatuvelka |
+| Kortti | Resepti | Valmistus | Jäljellä avoimena |
 | --- | --- | --- | --- |
-| B21 #29 | japanilainen-soba-aamiaiskeitto | 200 ml dashi + 700 ml toinen liemi, soba erikseen, kaksi uppomunaa | Pinaatin syötävä kappalepaino, dashi-tuote, ravinto/GK |
-| B21 #31 | kiinalainen-jianbing-munaletty | 100 g jauhoista vedellä kaksi lettua, muna, seesami, soijapaputahna | Soijapaputahnan koostumus, taikinaveden dokumentointi, ravinto/GK |
-| A #32 | kiinalainen-katkarapu-wontonkeitto | Katkarapujen käsittely, nyyttien täyttö, sulku ja kypsennys liemessä | Katkarapu-/taikinatuotteen ravintovastaavuus, ruoan turvallinen käytännön valmistus |
+| B21 #31 | kiinalainen-jianbing-munaletty | Vesi-vehnäjauhotaikina, munien ja sesamin paistaminen sekä soijapaputahna | Tuotekohtainen soijapaputahna, kokonaisravintoarvot, GK |
+| A #32 | kiinalainen-katkarapu-wontonkeitto | Katkaravun käsittely, wontonnyyttien täyttö ja sulkeminen sekä kypsennys liemessä | Katkarapu-/taikinatuotteen ravintoarvot ja riippumaton turvallisuusvarmennus |
 
-Kaikki uudet tekstit kopioitiin **täsmälleen** aiemmin PR #421:n / PR #407:n täsmä-SHA-lukituista julkisista FI-projektioista. Ei uutta kaloria, GK-lukua, ainesosaa, annosmäärää, rakennettua ruokareittiä, käännöstä eikä Cloudflare-muutosta.
+Aiemmin PR #421:n ja #407:n tarkistettuja julkisia näyttötekstejä käytettiin **täsmälleen** kanonisissa FI-tiedostoissa. Kumpaankaan ei lisätty ainesmääriä, annoksia, `cooking_method`-muutosta, makrolukuja eikä uutta GI/GK-arvoa. Menetelmäprojektori `material21-methods-public-display.ts` suojaa edelleen sobaa lähde-SHA:lla; wontonin projektori on yhteensopivuusadapteri, joka palauttaa jo korjatun lähteen.
 
-Julkiset projektorit `material21-methods-public-display.ts` ja `wonton-fi-public-display.ts` palauttavat nyt lähteen sellaisenaan; kanoninen FI sisältää jo aiemmin näytetyn ohjeen.
+Historiatesti `site/tests/issue404-three-canonical-history.ts` hyväksyy ainoastaan kahden uuden reseptitiedoston täsmä-Git-blob-SHA:n, varmistaa koko valmistusosion edeltävän lähdeosan muuttumattomuuden ja rekonstruoi vanhan lähteen vain jäädytettyyn GK-/makrohistorian vertailuun. Tuntematon muutos epäonnistuu eikä historiallista laskentaa kirjoiteta uusiksi.
 
-## Turvallisuuden ja historian portit
+## Mitä pilotista opittiin?
 
-- `site/tests/issue404-three-canonical-history.ts` sallii vain kolmen yksilöidyn lähdetiedoston täsmälliset uudet Git-blob-SHA:t. Se rekonstruoi alkuperäisen ennen muutosta olleen reseptin **vain GK:n jäädytettyjen historiatestien vertailuun**.
-- Reseptin ennen `## Valmistus` -otsikkoa oleva sisältö ja kaikki frontmatter-, annos-, aines- ja makroarvot täytyy säilyä muuttumattomina.
-- Historiallisen makroinventaarion koko lähde-SHA sekä tarkistetut muistiinpanot verrataan täsmällisesti; vanha tulos ei muutu uudeksi GK-hyväksynnäksi.
-- `site/tests/issue404-public-integrity.test.ts` seuraa tavoitetilaa **21 karanteenia + 7 SHA-näyttökorjausta + 10 kanonista FI-valmistusmenetelmää = 38**. Tämä kuvaa teknistä näkyvyys- ja menetelmäsuojausta, ei 38 lopullista ravinto/GK-kortin hyväksyntää.
-- Wontonin turvallinen valmistus edellyttää edelleen todellisen tuotteen, katkarapujen kypsyyden ja ristikontaminaation hallintaa. Reseptin tekstinsiirto ei ole riippumaton koekeittiö-/turvallisuushyväksyntä.
-- **Draft / DO NOT MERGE**, kunnes tämän HEADin CI PASS ja tuotannon erillinen tarkistus on saatu. Karanteeneja ei pureta.
+Käytössä ollut ennakkotarkistin #436 tunnisti GK149:n ja julkaistut kieliparit, **muttei GK100:n neljän hyväksyntäpaketin lähde-ID:itä**. Ensimmäinen CI pysähtyi virheeseen `GK100_RELEASE_CANDIDATE_CHANGED`, ja lähderiippuvuus jäljitettiin `docs/nutrition/gk100-approved-releases/first-five.json` -paketin soba-aamiaiskeittoon. Soba palautettiin alkuperäiseen lähdetiedostoon, joten hyväksyttyä GK100-bundlea ei muuteta. **Ennakkotarkistinta tulee laajentaa GK100-paketteihin ennen seuraavaa suurta erää.**
 
-## Seuraavat erät
+Issue #404:n tekninen tavoite vasta CI-hyväksytyn yhdistämisen jälkeen: **21 karanteenia + 8 SHA-lukittua FI-näyttökorjausta + 9 kanonista FI-menetelmää = 38**. Tämä on työvaihejako, ei 38 lopullista ravinto-/GK-hyväksyntää.
 
-Älä kasvata kanonista lähdemigraatiota 15 reseptiin pelkän määrätavoitteen vuoksi. Seuraava oikea työ on ensin seitsemän jäljelle jääneen SHA-näyttökorjauksen erillisten käännös-/GK-sidosten ratkaiseminen tai etsiä uusia **muista laadunvarmistusjonoista** sellaisia tekstitason korjauksia, joita uuden ennakkotarkistimen ja muiden historiallisten porttien ei tarvitse pysäyttää.
+**Draft / DO NOT MERGE** ennen täsmä-HEAD CI PASSia. Ei uutta käännöstä, Cloudflare-julkaisua tai karanteenista vapautusta.
