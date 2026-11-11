@@ -53,7 +53,7 @@ function rawPerServing(recipe: MappedRecipe) {
     for (const [key, sourceKey] of [
       ["protein", "protein"], ["fat", "fat"], ["carbs", "availableCarbohydrates"],
     ] as const) {
-      const value = input.source.per100g[sourceKey];
+      const value: number | undefined = input.source.per100g[sourceKey];
       assert(typeof value === "number" && Number.isFinite(value) && value >= 0,
         `missing/invalid ${sourceKey} for ${input.item}`);
       result[key] += input.grams * value / 100 / recipe.servings;
