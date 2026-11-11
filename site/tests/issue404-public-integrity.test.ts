@@ -3,7 +3,6 @@ import { readFile } from "node:fs/promises";
 import path from "node:path";
 import test from "node:test";
 import { publicRecipeQuarantineIds, isPublicRecipeQuarantined } from "../scripts/public-recipe-quarantine";
-import { projectSafeWontonFiDisplay } from "../scripts/wonton-fi-public-display";
 import { material21FiPaths, projectMaterial21FiDisplay } from "../scripts/material21-fi-public-display";
 import { material21MethodPaths, projectMaterial21MethodsFi } from "../scripts/material21-methods-public-display";
 import { c13PublicFiPaths, projectC13FiDisplay } from "../scripts/c13-fi-public-display";
@@ -61,7 +60,6 @@ const displayCorrections = [
   ...material21FiPaths.map(relative => ({ relative, apply: projectMaterial21FiDisplay })),
   ...material21MethodPaths.map(relative => ({ relative, apply: projectMaterial21MethodsFi })),
   ...c13PublicFiPaths.map(relative => ({ relative, apply: projectC13FiDisplay })),
-  { relative: "reseptit/aamupalat/kiinalainen-katkarapu-wontonkeitto.md", apply: projectSafeWontonFiDisplay },
 ];
 const recipeId = (relative: string) => path.basename(relative, ".md");
 const canonicalMethodOnly = [
