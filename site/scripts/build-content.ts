@@ -3,6 +3,7 @@ import { publicRecipeQualityHold } from "./recipe-quality-holds";
 import { projectSafeWontonFiDisplay } from "./wonton-fi-public-display";
 import { projectMaterial21FiDisplay } from "./material21-fi-public-display";
 import { projectMaterial21MethodsFi } from "./material21-methods-public-display";
+import { projectC13FiDisplay } from "./c13-fi-public-display";
 import { isPublicRecipeQuarantined } from "./public-recipe-quarantine";
 import { projectReviewedFiEditorialSource } from "./gk80-editorial-display";
 import { projectA8FiEditorialSource } from "./a8-editorial-display";
@@ -124,7 +125,7 @@ async function buildRecipes(): Promise<RecipeEntry[]> {
   const publishedImagePaths = new Set<string>();
   for (const filePath of paths) {
     const relativePath = path.relative(repoDir, filePath).replaceAll("\\", "/");
-    const parsed = parseMarkdown(projectMaterial21MethodsFi(relativePath, projectMaterial21FiDisplay(relativePath, projectSafeWontonFiDisplay(relativePath, projectBreakfastFiQualityDisplay(relativePath, projectMintWholeMilkFiDisplay(relativePath, projectC20FiDisplay(relativePath, projectA8FiEditorialSource(relativePath, projectReviewedFiEditorialSource(relativePath, await readFile(filePath, "utf8"))))))))));
+    const parsed = parseMarkdown(projectC13FiDisplay(relativePath, projectMaterial21MethodsFi(relativePath, projectMaterial21FiDisplay(relativePath, projectSafeWontonFiDisplay(relativePath, projectBreakfastFiQualityDisplay(relativePath, projectMintWholeMilkFiDisplay(relativePath, projectC20FiDisplay(relativePath, projectA8FiEditorialSource(relativePath, projectReviewedFiEditorialSource(relativePath, await readFile(filePath, "utf8")))))))))));
     if (!parsed) continue;
     if (parsed.data.status === "draft") continue;
     // Exact safety quarantine retains sealed source/GK evidence while suppressing public routes.

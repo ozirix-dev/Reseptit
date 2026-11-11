@@ -203,3 +203,11 @@ test("translation audit hashes the SHA-pinned public FI display for breakfast so
   assert.equal(baghrir.data.ingredients.length,7);
   assert.equal(baghrir.data.carbs_net_per_serving_g,76.19);
 });
+
+test("Thai onion bulb counter is a valid FI kpl translation in besan-chilla", async () => {
+  const audit = await auditTranslations(["intialainen-besan-chilla"]);
+  const thai = audit.rows.find(row => row.recipe_id === "intialainen-besan-chilla" && row.locale === "th");
+  assert.ok(thai, "The published Thai besan-chilla row must exist");
+  assert.equal(audit.errors.length, 0, audit.errors.join(" | "));
+  assert.doesNotMatch(thai.issues, /unit not recognized|ingredient 4 unit/);
+});

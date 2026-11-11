@@ -25,7 +25,7 @@ const render=(v:typeof seven[number],locale:'fi'|'en'|'sv'|'th',servings=v.servi
 test('exact seven new A versions form a distinct179-recipe candidate while the original16 stay intact',()=>{
  assert.equal(seven.length,7);assert.ok(seven.every(v=>v.level==='A'&&v.confidence==='LOW'));
  assert.deepEqual(Object.fromEntries(seven.map(v=>[v.recipeId,v.inputSha256])),manifest.approvedInputs);
- const legacy=gkOnlyVariants.filter(v=>[...sixteen,...seven].some(old=>old.inputSha256===v.inputSha256));
+ const legacy=report.gkOnlyVariants.filter((v:{inputSha256:string})=>[...sixteen,...seven].some(old=>old.inputSha256===v.inputSha256));
  assert.deepEqual(legacy,[...sixteen,...seven]);
  assert.deepEqual(gkOnlyVariants,report.gkOnlyVariants.filter((v:{recipeId:string})=>!isPublicRecipeQuarantined(v.recipeId)));
  const coverage=countGkVersions(report.results,legacy);

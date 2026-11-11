@@ -7,6 +7,7 @@ import { siteContent } from "../src/generated/content.generated";
 import { parseMarkdown } from "../src/content/markdown";
 import { recipeFrontmatterSchema } from "../src/content/schema";
 import { breakfastFiQualityPaths, projectBreakfastFiQualityDisplay } from "../scripts/fi-breakfast-quality-display";
+import { isPublicRecipeQuarantined } from "../scripts/public-recipe-quarantine";
 
 const root = path.resolve(import.meta.dirname, "../..");
 const sha = (raw: string) => createHash("sha256").update(raw.replaceAll("\r\n", "\n")).digest("hex");
@@ -179,6 +180,10 @@ test("generated FI cards use chef-corrected instructions and the reviewed noodle
   }
   for(const id of ["pohjoisafrikkalainen-baghrir","thai-roti-munalla-banaanilla","meksikolainen-chilaquiles-verdes","meksikolainen-paputostada-aamupalaksi","indonesialainen-nasi-goreng-aamiaisriisi","korealainen-kimchi-jeon-aamiaiseksi"]) {
     const rec=recipes.get(id);
+    if (isPublicRecipeQuarantined(id)) {
+      assert.equal(rec, undefined, id + ": sealed source still has overlay but is not a public recipe");
+      continue;
+    }
     assert.ok(rec,"Missing corrected FI recipe: "+id);
     assert.doesNotMatch(rec.instructionsText.join(" "),/Sekoita jauhot tai viljat ja muut kuivat ainekset|Raasta, muussaa tai hienonna pääraaka-aine|Valmistele ainekset: paloittele kasvikset/);
   }
@@ -212,4 +217,17 @@ test("generated FI cards use chef-corrected instructions and the reviewed noodle
   assert.equal(onigiri.servings,2);
   assert.match(onigiri.instructionsText.join(" "),/150 g raakaa lohta/);
   assert.doesNotMatch(onigiri.instructionsText.join(" "),/Paista tofu/);
+});
+
+test("F25 unsweetened rosewater keeps FI source and nutrition sealed", () => {
+  const relative = "reseptit/aamupalat/lahi-ita-pistaasijogurtti.md";
+  const raw = readFileSync(path.join(root, relative), "utf8");
+  const before = parseMarkdown(raw);
+  const after = parseMarkdown(projectBreakfastFiQualityDisplay(relative, raw));
+  assert.ok(before && after);
+  assert.deepEqual(after.data.ingredients, before.data.ingredients);
+  for (const key of macros) assert.equal(after.data[key], before.data[key], key);
+  assert.match(after.content, /3,9 % jogurttia/);
+  assert.match(after.content, /5 ml makeuttamatonta elintarvikekäyttöön tarkoitettua ruusuvettä/);
+  assert.match(after.content, /Al Wadi Rose Water, ei ruusisiirappia/);
 });

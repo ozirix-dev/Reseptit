@@ -19,7 +19,7 @@ const originals = {
 test("published and quarantined quality-hold sources preserve their original ingredients", async () => {
   assert.deepEqual([...editorialHoldRecipeIds].sort(), Object.keys(originals).sort());
   const repo = path.resolve(import.meta.dirname, "../..");
-  const withdrawnIds = new Set(["karibia-bammy-kassavaleipa", "vietnamilainen-banh-bao-kananmunalla"]);
+  const withdrawnIds = new Set(["karibia-bammy-kassavaleipa", "vietnamilainen-banh-bao-kananmunalla", "intialainen-idli-kookoschutneylla", "intialainen-aloo-paratha"]);
   for (const [recipeId, filename] of Object.entries(originals)) {
     const repoRecipe = parseMarkdown(await readFile(path.join(repo, filename), "utf8"));
     assert.ok(repoRecipe);

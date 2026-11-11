@@ -608,6 +608,30 @@
     "outcome": "pass",
     "findings": []
   },
+  "intialainen-besan-chilla:en": {
+    "source_hash": "68fdaf8b2b5125be987b2bc186bc08efde5916f51c41d9d5ba24a92e4eb6ea9c",
+    "translation_hash": "b94b2b1a94dfc93523e3d3422026c80ad4a8f86a35df359314573178ce697052",
+    "reviewed_at": "2026-11-10",
+    "reference": "docs/reviews/2026-11-10-f25-besan-coffee-six-language-release.md | AI review against SHA-locked public Finnish source and nutrition input; no human attestation",
+    "outcome": "pass",
+    "findings": []
+  },
+  "intialainen-besan-chilla:sv": {
+    "source_hash": "68fdaf8b2b5125be987b2bc186bc08efde5916f51c41d9d5ba24a92e4eb6ea9c",
+    "translation_hash": "41cdd2d49c3b185a3d6fe3de57821b93e2f6757512eafe73d22b4a4e228a1ca4",
+    "reviewed_at": "2026-11-10",
+    "reference": "docs/reviews/2026-11-10-f25-besan-coffee-six-language-release.md | AI review against SHA-locked public Finnish source and nutrition input; no human attestation",
+    "outcome": "pass",
+    "findings": []
+  },
+  "intialainen-besan-chilla:th": {
+    "source_hash": "68fdaf8b2b5125be987b2bc186bc08efde5916f51c41d9d5ba24a92e4eb6ea9c",
+    "translation_hash": "a635b59853033b1f4f97dfbb623409aaef7936a666fd3fa54bc55930b04d3b71",
+    "reviewed_at": "2026-11-10",
+    "reference": "docs/reviews/2026-11-10-f25-besan-coffee-six-language-release.md | AI review against SHA-locked public Finnish source and nutrition input; no human attestation",
+    "outcome": "pass",
+    "findings": []
+  },
   "japanilainen-curry-tofulla:en": {
     "source_hash": "50fc764da52cd185c93f9cc1ffde228230ecd833635f5d76e04b57d8e969fe60",
     "translation_hash": "be6bccb1efa3f3fbb35b32f898d1a0254bd7855a2946bd8fd64ce1e74ea16b9a",
@@ -3805,6 +3829,30 @@
       }
     ]
   },
+  "vietnamilainen-kahvijogurtti-banaanilla:en": {
+    "source_hash": "870928eb42eb8661b05e96d6f3aef55410bbed21961dd52306c3fd9ff3408268",
+    "translation_hash": "8f54b00f426948b6b60018570dd13357dfb8ae74006d2b8d30477dcaa908d1ae",
+    "reviewed_at": "2026-11-10",
+    "reference": "docs/reviews/2026-11-10-f25-besan-coffee-six-language-release.md | AI review against SHA-locked public Finnish source and nutrition input; no human attestation",
+    "outcome": "pass",
+    "findings": []
+  },
+  "vietnamilainen-kahvijogurtti-banaanilla:sv": {
+    "source_hash": "870928eb42eb8661b05e96d6f3aef55410bbed21961dd52306c3fd9ff3408268",
+    "translation_hash": "8147b94e4901627ef57001d78d7eed8e0058f589c3b1bdedd722211622bd6a8d",
+    "reviewed_at": "2026-11-10",
+    "reference": "docs/reviews/2026-11-10-f25-besan-coffee-six-language-release.md | AI review against SHA-locked public Finnish source and nutrition input; no human attestation",
+    "outcome": "pass",
+    "findings": []
+  },
+  "vietnamilainen-kahvijogurtti-banaanilla:th": {
+    "source_hash": "870928eb42eb8661b05e96d6f3aef55410bbed21961dd52306c3fd9ff3408268",
+    "translation_hash": "838803a1eb49493308585cc85bf438120ba4006fb761b18ae227a1d21a971fe8",
+    "reviewed_at": "2026-11-10",
+    "reference": "docs/reviews/2026-11-10-f25-besan-coffee-six-language-release.md | AI review against SHA-locked public Finnish source and nutrition input; no human attestation",
+    "outcome": "pass",
+    "findings": []
+  },
   "yangzhou-paistettu-riisi:en": {
     "source_hash": "2a06a52d3b6801aa7f533da6eabd063446c99e419e3943af225d13239115f2c9",
     "translation_hash": "9a5bf3bd3e7aa65b49b1766996b4ad331557c7262f5a65057252453212f03676",
@@ -3826,6 +3874,30 @@
     "translation_hash": "96e4b87552d3ac66b0cc3ee83c5a518b514971e3f9181a44f00fe3e80ad207a0",
     "reviewed_at": "2026-11-04",
     "reference": "V2 riskierä / lähdecommit 6034aa9880dbc774639e58c2926c05f6100e7fc6",
+    "outcome": "pass",
+    "findings": []
+  },
+  "lahi-ita-pistaasijogurtti:en": {
+    "source_hash": "9db5753953ff3cc703e69d05d306141f569da8602118dc1de80ae6d457287e26",
+    "translation_hash": "7d218d15f5de5ecf72baae19df3a1f568749cba40d4294c3e656632295a2b209",
+    "reviewed_at": "2026-11-11",
+    "reference": "docs/reviews/2026-11-11-f25-rosewater-release.md | AI review FI-public vs translated text, no human attestation",
+    "outcome": "pass",
+    "findings": []
+  },
+  "lahi-ita-pistaasijogurtti:sv": {
+    "source_hash": "9db5753953ff3cc703e69d05d306141f569da8602118dc1de80ae6d457287e26",
+    "translation_hash": "a00e99b07c7b651c39e7b09e71f81818df4e100a2d02bd53a786ccb24d00c389",
+    "reviewed_at": "2026-11-11",
+    "reference": "docs/reviews/2026-11-11-f25-rosewater-release.md | AI review FI-public vs translated text, no human attestation",
+    "outcome": "pass",
+    "findings": []
+  },
+  "lahi-ita-pistaasijogurtti:th": {
+    "source_hash": "9db5753953ff3cc703e69d05d306141f569da8602118dc1de80ae6d457287e26",
+    "translation_hash": "54bfe5e817b3c9fc9fe91193f9739803e6ee26b49806ef8426ff0dc96703a35b",
+    "reviewed_at": "2026-11-11",
+    "reference": "docs/reviews/2026-11-11-f25-rosewater-release.md | AI review FI-public vs translated text, no human attestation",
     "outcome": "pass",
     "findings": []
   }
