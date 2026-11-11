@@ -1,0 +1,192 @@
+{
+  "recipeId": "lammin-chia-puuro-rouva-keto",
+  "sourceHash": "a613bbe7c2bf79197ac2f7bf9d1e8fe3b904fe259b34f3dae338e7654eae35e8",
+  "calculatedAt": "2026-11-11",
+  "batchId": "batch-299",
+  "servings": 2,
+  "scope": "Ingredient-based estimates for two equal adult portions. All listed edible ingredients are included. Optional extra plain water changes texture without adding nutrients.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "publicationStatus": "WITHHELD_SOURCE_INCOMPLETE",
+  "withholdingReason": "Chia polyols and chocolate fibre and polyols are unconfirmed. The public macro fields require a complete source-backed carbohydrate calculation.",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "item": "chiansiemeniä",
+      "amount": 24,
+      "unit": "g",
+      "state": "dry whole chia seeds",
+      "matchEvidence": "Foodin Chia-siemen, Luomu 250 g matches the weighed ingredient.",
+      "edibleFraction": 1,
+      "edibleEvidence": "The weighed amount is added directly to the pan.",
+      "retainedFraction": 1,
+      "retentionEvidence": "The entire mixture is served. No solids or fat are discarded.",
+      "record": {
+        "id": "foodin-chia-250g",
+        "name": "Foodin Chia-siemen, Luomu 250 g",
+        "sourceUrl": "https://foodin.fi/tuote/chia-siemen-luomu-raaka-250g/",
+        "retrievedAt": "2026-11-11",
+        "licence": "Manufacturer's published product information",
+        "state": "dry whole chia seeds",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "kcal": 459,
+          "carbohydrate": 0.2,
+          "protein": 22.9,
+          "fat": 32.6,
+          "fibre": 34.4,
+          "polyols": null
+        }
+      }
+    },
+    {
+      "item": "kuohukermaa (35 % rasvaa)",
+      "amount": 30,
+      "unit": "g",
+      "state": "dairy whipping cream, 35% fat",
+      "matchEvidence": "Valio Keittiön kuohukerma laktoositon matches the weighed ingredient.",
+      "edibleFraction": 1,
+      "edibleEvidence": "The weighed amount is added directly to the pan.",
+      "retainedFraction": 1,
+      "retentionEvidence": "The entire mixture is served. No solids or fat are discarded.",
+      "record": {
+        "id": "valio-6408430001538",
+        "name": "Valio Keittiön kuohukerma laktoositon",
+        "sourceUrl": "https://www.valio.fi/tuotteet/valio-keittion-kuohukerma-laktoositon/2-dl-tolkki/",
+        "retrievedAt": "2026-11-11",
+        "licence": "Manufacturer's published product information",
+        "state": "dairy whipping cream, 35% fat",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "kcal": 336,
+          "carbohydrate": 3,
+          "protein": 2.2,
+          "fat": 35,
+          "fibre": 0,
+          "polyols": null
+        }
+      }
+    },
+    {
+      "item": "suolatonta voita",
+      "amount": 10,
+      "unit": "g",
+      "state": "unsalted dairy butter",
+      "matchEvidence": "Valio voi suolaamaton matches the weighed ingredient.",
+      "edibleFraction": 1,
+      "edibleEvidence": "The weighed amount is added directly to the pan.",
+      "retainedFraction": 1,
+      "retentionEvidence": "The entire mixture is served. No solids or fat are discarded.",
+      "record": {
+        "id": "valio-6408430030026",
+        "name": "Valio voi suolaamaton",
+        "sourceUrl": "https://www.valio.fi/tuotteet/valio-voi-suolaamaton/",
+        "retrievedAt": "2026-11-11",
+        "licence": "Manufacturer's published product information",
+        "state": "unsalted dairy butter",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "kcal": 731,
+          "carbohydrate": 0.8,
+          "protein": 0.6,
+          "fat": 82,
+          "fibre": null,
+          "polyols": null
+        }
+      }
+    },
+    {
+      "item": "Lindt Excellence 90 % -tummaa suklaata",
+      "amount": 15,
+      "unit": "g",
+      "state": "90% dark chocolate",
+      "matchEvidence": "Lindt Excellence Dark 90% matches the weighed ingredient.",
+      "edibleFraction": 1,
+      "edibleEvidence": "The weighed amount is added directly to the pan.",
+      "retainedFraction": 1,
+      "retentionEvidence": "The entire mixture is served. No solids or fat are discarded.",
+      "record": {
+        "id": "lindt-3046920029759",
+        "name": "Lindt Excellence Dark 90%",
+        "sourceUrl": "https://www.lindt.fi/fi/lindt-excellence-dark-90-bar-100g-fi-fi-03046920029759",
+        "retrievedAt": "2026-11-11",
+        "licence": "Manufacturer's published product information",
+        "state": "90% dark chocolate",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "kcal": 592,
+          "carbohydrate": 14,
+          "protein": 10,
+          "fat": 55,
+          "fibre": null,
+          "polyols": null
+        }
+      }
+    },
+    {
+      "item": "vettä",
+      "amount": 160,
+      "unit": "g",
+      "state": "plain drinking water",
+      "matchEvidence": "Water, tap, drinking matches the weighed ingredient.",
+      "edibleFraction": 1,
+      "edibleEvidence": "The weighed amount is added directly to the pan.",
+      "retainedFraction": 1,
+      "retentionEvidence": "The entire mixture is served. No solids or fat are discarded.",
+      "record": {
+        "id": "usda-sr-173647",
+        "name": "Water, tap, drinking",
+        "sourceUrl": "https://fdc.nal.usda.gov/food-details/173647/nutrients",
+        "retrievedAt": "2026-11-11",
+        "licence": "USDA FoodData Central public domain",
+        "state": "plain drinking water",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Plain unflavoured drinking water has no carbohydrate or added sweeteners.",
+        "per100g": {
+          "kcal": 0,
+          "carbohydrate": 0,
+          "protein": 0,
+          "fat": 0,
+          "fibre": 0,
+          "polyols": 0
+        }
+      }
+    },
+    {
+      "item": "jodioitua ruokasuolaa",
+      "amount": 0.5,
+      "unit": "g",
+      "state": "iodized table salt",
+      "matchEvidence": "Ruokasuola, jodioitu matches the weighed ingredient.",
+      "edibleFraction": 1,
+      "edibleEvidence": "The weighed amount is added directly to the pan.",
+      "retainedFraction": 1,
+      "retentionEvidence": "The entire mixture is served. No solids or fat are discarded.",
+      "record": {
+        "id": "fineli-30",
+        "name": "Ruokasuola, jodioitu",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/30",
+        "retrievedAt": "2026-11-11",
+        "licence": "THL Fineli food composition data",
+        "state": "iodized table salt",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli food 30 explicitly reports 0 g sugar alcohols, logically inferred by THL.",
+        "per100g": {
+          "kcal": 3,
+          "carbohydrate": 0,
+          "protein": 0.6,
+          "fat": 0,
+          "fibre": 0,
+          "polyols": 0
+        }
+      }
+    }
+  ]
+}

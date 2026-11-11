@@ -34,8 +34,8 @@ test('exact seven new A versions form a distinct179-recipe candidate while the o
    report.results.filter((r:{recipeId:string})=>!isPublicRecipeQuarantined(r.recipeId)),
    gkOnlyVariants,
  ));
- assert.equal(coverage.numericRecipes,179);assert.equal(coverage.originalNumeric,156);assert.equal(coverage.additionalA,17);assert.equal(coverage.additionalB,6);assert.equal(coverage.missing,164);assert.equal(coverage.total,343);
- assert.deepEqual(report.coverageViews.originalRecipe,{total:343,numeric:156,missing:187});
+ assert.equal(coverage.numericRecipes,179);assert.equal(coverage.originalNumeric,156);assert.equal(coverage.additionalA,17);assert.equal(coverage.additionalB,6);assert.equal(coverage.missing,165);assert.equal(coverage.total,344);
+ assert.deepEqual(report.coverageViews.originalRecipe,{total:344,numeric:156,missing:188});
  assert.throws(()=>countGkVersions(report.results,[...gkOnlyVariants,seven[0]]),/distinct/);
  for(const v of seven){assert.equal(report.results.find((r:any)=>r.recipeId===v.recipeId).status,'INSUFFICIENT SOURCE DATA');assert.equal(v.macroScope,'NO_MACRO_PACKAGE_FOR_THIS_VERSION');assert.ok(!('nutrition' in v)&&!('macros' in v));}
 });

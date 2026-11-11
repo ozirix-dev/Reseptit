@@ -27,7 +27,7 @@ const before=json('docs/nutrition/gk-legacy-reconciliation/baseline.json');
 const report=json('tmp/nutrition/glycemic-load-pilot.json');
 
 test('Live original results preserve frozen history plus the exact reviewed transitions; all87 variants and macros stay identical',()=>{
- assert.equal(report.results.length,343); // Includes the Finnish cocoa outside the 326 frozen inputs.
+ assert.equal(report.results.length,344); // Includes Finnish cocoa and chia porridge outside the 326 frozen inputs.
  assertOriginalContentTransition(report);
  const historical = restoreBeforeOriginalContent(structuredClone(report));
  const requiresP1=requiresP1SourceCorrection(root);
