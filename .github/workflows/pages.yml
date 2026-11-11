@@ -107,7 +107,12 @@ jobs:
         working-directory: site
 
       - name: Chef correctness-first pilot (five pinned source cases)
-        if: steps.select.outputs.needs_node == 'true' && (contains(steps.select.outputs.changed_paths, 'chef-quality-gate') || contains(steps.select.outputs.changed_paths, 'chef-quality-pilot'))
+        id: chef_pilot
+        if: >-
+          steps.select.outputs.needs_node == 'true' &&
+          (contains(steps.select.outputs.changed_paths, 'chef-quality-gate') ||
+           contains(steps.select.outputs.changed_paths, 'chef-quality-pilot') ||
+           (github.event_name == 'pull_request' && contains(steps.select.outputs.changed_paths, '.github/workflows/pages.yml')))
         working-directory: site
         run: |
           node --test scripts/chef-quality-gate.test.mjs
@@ -115,8 +120,8 @@ jobs:
           cat chef-quality-pilot.md >> "$GITHUB_STEP_SUMMARY"
 
       - name: Save chef quality pilot evidence
-        if: steps.select.outputs.needs_node == 'true' && (contains(steps.select.outputs.changed_paths, 'chef-quality-gate') || contains(steps.select.outputs.changed_paths, 'chef-quality-pilot'))
-        uses: actions/upload-artifact@v4
+        if: steps.chef_pilot.outcome == 'success'
+        uses: actions/upload-artifact@v7
         with:
           name: chef-quality-pilot-five
           path: |
