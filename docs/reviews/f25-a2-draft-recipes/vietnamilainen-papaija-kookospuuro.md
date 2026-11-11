@@ -10,7 +10,7 @@
 - 200 g papaija
 - 15 g limettimehua
 - 700 ml vettä
-- Maun mukaan suolaa maun mukaan
+- suolaa maun mukaan
 
 ## Valmistus
 1. Valitse nimenomaan pienet kuivat, nopeasti kypsyvät tapiokahelmet; punnitse 100 g. Kaada kattilaan kaikki 700 ml vettä, kuumenna kiehuvaksi ja sekoita helmien joukkoon, ettei tärkkelys tartu pohjaan.
@@ -19,7 +19,7 @@
 4. Punnitse 200 g papaijan kuorittua syötävää hedelmälihaa ja 15 g limettimehua. Jaa puuro kahteen annokseen, lisää kumpaankin 100 g papaijaa ja 7,5 g limettimehua. Tarjoa lämpimänä.
 
 ## Lähde- ja ravintopäätöksen esteet
-- No unique small dry tapioca-pearl product matched to the AFCD 100-g uncooked data
+- Kauppapakkauksen hiilihydraatti 86 g/100 g vs AFCD-viitteen 79,3 g/100 g tuottaa vertailussa +3,35 g/annos (100 g kuivaa tuotetta / 2 annosta). Kuitu- ja polyolitietojen sekä täsmätuotteen puute estää luvun hyväksymisen.
 - 40 min total works only for no-presoak small dry pearls; other pearls may need longer
 - Retaining all 700 ml water is a model assumption; water evaporation changes texture/yield
 - Papuja, lihaa, syrup or sweetened tapioca are not ingredient-list substitutions
