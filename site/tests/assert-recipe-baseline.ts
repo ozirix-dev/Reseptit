@@ -44,6 +44,19 @@ const approvedC5DraftBlobs = new Map<string, string>([
 // Exact blob-SHA pins admit only these original release artifacts to the historical
 // change inspector. They DO NOT alter any of the frozen GK result approvals.
 const approvedKarnivoreFi3Files = new Map<string, string>([
+  ["reseptit/paaruoat/karnivore-rapeat-kananreisipalat.md", "b53cd03654bc15fbabb65fd4eac6112ca9b9fe8c"],
+  ["docs/nutrition/calculations/karnivore-rapeat-kananreisipalat.json", "51a9179f8d552388022ade833d315780b97075f7"],
+  ["kuvat/paaruoat/karnivore-rapeat-kananreisipalat.webp", "ffc8d8601f106372604d46e5f8c336f7fe5b7410"],
+  ["reseptit/paaruoat/karnivore-naudan-lyhytkylki.md", "893457c7ecf47644ba987d114c339ab4d518620b"],
+  ["docs/nutrition/calculations/karnivore-naudan-lyhytkylki.json", "d15aeda7ccf5a369f9e59044d8b57ba14ef24449"],
+  ["kuvat/paaruoat/karnivore-naudan-lyhytkylki.webp", "9d40277225a2113ad4b90db3b9f8be4b99192111"],
+  ["reseptit/paaruoat/karnivore-maksa-ja-pekoni.md", "bb1111c11a24ec126cbfbf90989a517af2e600c7"],
+  ["docs/nutrition/calculations/karnivore-maksa-ja-pekoni.json", "c39c965601b10fc578562b53f86b76c95fd51c17"],
+  ["kuvat/paaruoat/karnivore-maksa-ja-pekoni.webp", "e0a9cf0de80c95899e79eaaec16e444efdc97794"],
+  ["reseptit/paaruoat/karnivore-lammaskyljykset-voissa.md", "3169d975a4c32f87b95baeb7e2d8ebaf2bba2d4c"],
+  ["docs/nutrition/calculations/karnivore-lammaskyljykset-voissa.json", "d8b84ec5a93f4d4c17e74f0fdde7ca0622724bef"],
+  ["docs/nutrition/batches/batch-505.json", "daf146e69926529d824fd266b32f734b470eae65"],
+  ["kuvat/paaruoat/karnivore-lammaskyljykset-voissa.webp", "6190b1f9554daceaf7a8a41ad32d1d037dca01ca"],
   ["reseptit/paaruoat/karnivore-meatza.md", "c5b3a778b25e79912c2ac657fc832ad0040d6088"],
   ["docs/nutrition/calculations/karnivore-meatza.json", "cee4b6dfb799b3a226c503501a73f7078b33b290"],
   ["docs/nutrition/batches/batch-503.json", "e2b45bf6758217cf1fd0de57b410b7fefdb58260"],

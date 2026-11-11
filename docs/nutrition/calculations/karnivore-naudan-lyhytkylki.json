@@ -1,0 +1,115 @@
+{
+  "recipeId": "karnivore-naudan-lyhytkylki",
+  "sourceHash": "3422f85a0c1e8f8516d57ff11b67946763e37e3876e49ca4b06212244da5ce9c",
+  "calculatedAt": "2026-11-11",
+  "servings": 4,
+  "batchId": "batch-505",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "scope": "Four servings. SR28 13147 raw bone refuse 27%; includes all edible lean, attached fat and drippings. All edible broth and fat are served and eaten. No measured cooked yield or actual lot composition.",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "item": "luullisia naudan short ribs -kylkipaloja",
+      "amount": 1200,
+      "unit": "g",
+      "state": "raw-bone-in-beef-rib-short-ribs-choice",
+      "matchEvidence": "USDA SR28 row 13147, URMIS 2074, Choice bone-in rib short ribs, separable lean and fat; use a comparably fatty rib-section cut including attached fat. Not a boneless chuck cut or a lean retail substitute.",
+      "edibleFraction": 0.73,
+      "edibleEvidence": "USDA SR28 FOOD_DES row 13147 (https://fdc.nal.usda.gov/download-datasets/) lists bone as 27% refuse from the raw cut, so the model uses 73% edible raw weight. This is not a cooked yield.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible meat, rendered fat and juices are divided evenly and assumed eaten, as stated in the serving instructions. This raw-input model does not describe a serving that discards fat.",
+      "record": {
+        "id": "usda-sr28-13147-fdc-169439",
+        "name": "Beef, rib, shortribs, separable lean and fat, choice, raw",
+        "sourceUrl": "https://fdc.nal.usda.gov/food-details/169439/nutrients",
+        "retrievedAt": "2026-11-11",
+        "licence": "USDA SR28/USDA FoodData Central public domain",
+        "state": "raw-bone-in-beef-rib-short-ribs-choice",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "US_TOTAL_INCLUDING_FIBRE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "SR28 row 13147 reports zero carbohydrate by difference and zero dietary fibre. Plain unseasoned beef has no added polyols; AFCD raw higher-fat plain beef mince is not used for energy or macros. The zero is composition-based.",
+        "per100g": {
+          "kcal": 388,
+          "protein": 14.4,
+          "fat": 36.23,
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0
+        }
+      }
+    },
+    {
+      "item": "vettä",
+      "amount": 400,
+      "unit": "g",
+      "state": "tap-water",
+      "matchEvidence": "Plain tap water added to the braising liquid.",
+      "edibleFraction": 1,
+      "edibleEvidence": "All of the specified raw weight is edible.",
+      "retainedFraction": 1,
+      "retentionEvidence": "The broth is served. Any evaporated water contains no tracked macronutrients or energy.",
+      "record": {
+        "id": "fineli-922-release-20",
+        "name": "Vesi, vesijohtovesi",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/922",
+        "retrievedAt": "2026-11-11",
+        "licence": "THL Fineli Release 20 CC BY 4.0",
+        "state": "tap-water",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli 922 specifies zero available carbohydrate, fibre and sugar alcohols.",
+        "per100g": {
+          "kcal": 0,
+          "protein": 0,
+          "fat": 0,
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0
+        }
+      }
+    },
+    {
+      "item": "suolaa",
+      "amount": 7,
+      "unit": "g",
+      "state": "table-salt-edible",
+      "matchEvidence": "Fineli 30 iodized table salt, direct composition record.",
+      "edibleFraction": 1,
+      "edibleEvidence": "All 7 g are weighed as an edible ingredient.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible meat, rendered fat and juices are divided evenly and assumed eaten, as stated in the serving instructions. This raw-input model does not describe a serving that discards fat.",
+      "record": {
+        "id": "fineli-30-release-20",
+        "name": "RUOKASUOLA, JODIOITU",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/30",
+        "retrievedAt": "2026-11-11",
+        "licence": "THL Fineli Release 20 CC BY 4.0",
+        "state": "table-salt-edible",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release20 components 2034/2168/2260",
+        "componentValues": {
+          "CHO": 0,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "per100g": {
+          "carbohydrate": 0,
+          "protein": 0.63,
+          "fat": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "kcal": 3
+        }
+      }
+    }
+  ]
+}

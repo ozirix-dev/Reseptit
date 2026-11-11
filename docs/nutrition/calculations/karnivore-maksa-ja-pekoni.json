@@ -1,0 +1,156 @@
+{
+  "recipeId": "karnivore-maksa-ja-pekoni",
+  "sourceHash": "f5ab5129d3a6c794c9ee6089eddae16fa21336148bb87b37c1a293a8167d81f2",
+  "calculatedAt": "2026-11-11",
+  "servings": 3,
+  "batchId": "batch-505",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "scope": "Three servings. Fineli trimmed raw beef liver and exact dry-salted bacon package benchmark before cooking. All edible butter, drippings and juices are served and eaten. The package is Canadian; other pork-and-salt bacon can differ. No measured cooking yield.",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "item": "naudanmaksaa",
+      "amount": 400,
+      "unit": "g",
+      "state": "raw-beef-liver-trimmed",
+      "matchEvidence": "Raw beef liver. Weigh 400 g after removing membranes; available carbohydrates include the liver's naturally occurring carbohydrate.",
+      "edibleFraction": 1,
+      "edibleEvidence": "All of the specified raw weight is edible.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible meat, rendered fat and juices are divided evenly and assumed eaten, as stated in the serving instructions. This raw-input model does not describe a serving that discards fat.",
+      "record": {
+        "id": "fineli-786-release-20",
+        "name": "Maksa, naudan",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/786",
+        "retrievedAt": "2026-11-11",
+        "licence": "THL Fineli Release 20 CC BY 4.0",
+        "state": "raw-beef-liver-trimmed",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli 786 reports available carbohydrate 5.0 g, dietary fibre 0 and sugar alcohols 0 per 100 g. Also matches Votkins public raw beef-liver label for energy and macros.",
+        "per100g": {
+          "kcal": 137,
+          "protein": 20.3,
+          "fat": 3.8,
+          "carbohydrate": 5,
+          "fibre": 0,
+          "polyols": 0
+        }
+      }
+    },
+    {
+      "item": "sokeritonta pekonia",
+      "amount": 180,
+      "unit": "g",
+      "state": "dry-salted-smoked-bacon-as-sold",
+      "matchEvidence": "Manufacturer label (https://d1uly267wt5wjn.cloudfront.net/OldCountry/products/Bacon/back-label.jpg), weighed as sold before frying: per 54 g energy 312 kcal, protein 6 g, fat 32 g, total carbohydrate 0 g. Normalized to 100 g. Exact reference product has pork and sea salt, naturally smoked, and is sold in Alberta. Other bacon products can vary considerably.",
+      "edibleFraction": 1,
+      "edibleEvidence": "All of the specified raw weight is edible.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible meat, rendered fat and juices are divided evenly and assumed eaten, as stated in the serving instructions. This raw-input model does not describe a serving that discards fat.",
+      "record": {
+        "id": "old-country-dry-salted-bacon-990312324966",
+        "name": "Old Country Dry Salted Bacon, 325 g",
+        "sourceUrl": "https://oldcountrysausages.com/product/dry-salted-bacon",
+        "retrievedAt": "2026-11-11",
+        "licence": "Manufacturer's public product label; AFCD food-category corroboration",
+        "state": "dry-salted-smoked-bacon-as-sold",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "US_TOTAL_INCLUDING_FIBRE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Canadian label total carbohydrate 0 g and dietary fibre 0 g per 54 g as sold. Ingredients pork and sea salt, naturally smoked; no sugar alcohol ingredients. AFCD F000228 plain bacon fibre 0 and paired available carbohydrate with/without polyols equal, supporting only the plain bacon fibre/polyol inference.",
+        "per100g": {
+          "kcal": 577.7778,
+          "protein": 11.1111,
+          "fat": 59.2593,
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0
+        }
+      }
+    },
+    {
+      "item": "voita",
+      "amount": 15,
+      "unit": "g",
+      "state": "butter-edible",
+      "matchEvidence": "Fineli Release 20 CHO 2034, FIBT 2168, POLYL 2260 verified Selected food item is weighed as listed.",
+      "edibleFraction": 1,
+      "edibleEvidence": "All 15 g are weighed as an edible ingredient.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible meat, rendered fat and juices are divided evenly and assumed eaten, as stated in the serving instructions. This raw-input model does not describe a serving that discards fat.",
+      "record": {
+        "id": "fineli-500-release-20",
+        "name": "VOI",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/500",
+        "retrievedAt": "2026-11-11",
+        "licence": "THL Fineli Release 20 CC BY 4.0",
+        "state": "butter-edible",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 CHO 2034, FIBT 2168, POLYL 2260 verified",
+        "per100g": {
+          "protein": 1.19,
+          "fat": 81.3,
+          "carbohydrate": 0.8,
+          "fibre": 0,
+          "polyols": 0,
+          "kcal": 727
+        },
+        "componentValues": {
+          "CHO": 0.8,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        }
+      }
+    },
+    {
+      "item": "suolaa",
+      "amount": 1,
+      "unit": "g",
+      "state": "table-salt-edible",
+      "matchEvidence": "Fineli 30 iodized table salt, direct composition record.",
+      "edibleFraction": 1,
+      "edibleEvidence": "All 1 g are weighed as an edible ingredient.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible meat, rendered fat and juices are divided evenly and assumed eaten, as stated in the serving instructions. This raw-input model does not describe a serving that discards fat.",
+      "record": {
+        "id": "fineli-30-release-20",
+        "name": "RUOKASUOLA, JODIOITU",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/30",
+        "retrievedAt": "2026-11-11",
+        "licence": "THL Fineli Release 20 CC BY 4.0",
+        "state": "table-salt-edible",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release20 components 2034/2168/2260",
+        "componentValues": {
+          "CHO": 0,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "per100g": {
+          "carbohydrate": 0,
+          "protein": 0.63,
+          "fat": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "kcal": 3
+        }
+      }
+    }
+  ]
+}

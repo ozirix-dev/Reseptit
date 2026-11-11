@@ -13,6 +13,22 @@ export interface ReviewedDietSource {
 }
 
 export const reviewedDietFilters: Readonly<Record<string, ReviewedDietSource>> = {
+  "karnivore-rapeat-kananreisipalat": {
+    tags: ["carnivore"],
+    sourceBlobShas: { fi: "b53cd03654bc15fbabb65fd4eac6112ca9b9fe8c" },
+  },
+  "karnivore-naudan-lyhytkylki": {
+    tags: ["carnivore"],
+    sourceBlobShas: { fi: "893457c7ecf47644ba987d114c339ab4d518620b" },
+  },
+  "karnivore-maksa-ja-pekoni": {
+    tags: ["carnivore"],
+    sourceBlobShas: { fi: "bb1111c11a24ec126cbfbf90989a517af2e600c7" },
+  },
+  "karnivore-lammaskyljykset-voissa": {
+    tags: ["carnivore"],
+    sourceBlobShas: { fi: "3169d975a4c32f87b95baeb7e2d8ebaf2bba2d4c" },
+  },
   "karnivore-meatza": {
     tags: ["carnivore"],
     sourceBlobShas: { fi: "c5b3a778b25e79912c2ac657fc832ad0040d6088" },
