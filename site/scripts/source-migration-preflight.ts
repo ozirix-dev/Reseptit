@@ -2,6 +2,7 @@ import { readFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { isPublicRecipeQuarantined } from "./public-recipe-quarantine";
+import { auditTranslations } from "./translation-audit";
 
 export type PreflightDecision = {
   recipeId: string;
@@ -37,10 +38,11 @@ export function classifyCanonicalMethodMigration(
   });
 }
 
-export async function loadSourceMigrationInputs(repoRoot: string): Promise<PreflightInputs> {
-  const [gk149Raw, translationsRaw] = await Promise.all([
+export async function loadSourceMigrationInputs(repoRoot: string, recipeIds?: string[]): Promise<PreflightInputs> {
+  const [gk149Raw, translationsRaw, publishedAudit] = await Promise.all([
     readFile(path.join(repoRoot, "docs/nutrition/gk80-operation149/cases.json"), "utf8"),
     readFile(path.join(repoRoot, "meta/kaannokset/published-translation-pairs.json"), "utf8"),
+    auditTranslations(recipeIds),
   ]);
   const gk149 = JSON.parse(gk149Raw) as { selectedRecipeIds?: unknown };
   const registry = JSON.parse(translationsRaw) as {
@@ -61,9 +63,22 @@ export async function loadSourceMigrationInputs(repoRoot: string): Promise<Prefl
   });
   if (new Set(registryEntries.map(entry => entry[0])).size !== registryEntries.length)
     throw new Error("SOURCE_MIGRATION_DUPLICATE_PUBLISHED_REGISTRY");
+  // The sidecar alone is not authoritative: the poha translations are
+  // published Markdown files even though they are absent from this index.
+  const actualLocales = new Map<string, Set<string>>(
+    registryEntries.map(([id, locales]) => [id, new Set(locales)]),
+  );
+  for (const translation of publishedAudit.publishedTranslations) {
+    const id = translation.data.recipe_id;
+    const locale = translation.data.language;
+    if (!["en", "sv", "th"].includes(locale)) throw new Error("INVALID_PUBLISHED_TRANSLATION_LOCALE");
+    if (!actualLocales.has(id)) actualLocales.set(id, new Set());
+    actualLocales.get(id)!.add(locale);
+  }
   return {
     gk149SourceIds: new Set(gk149.selectedRecipeIds as string[]),
-    publishedTranslationLocales: new Map(registryEntries),
+    publishedTranslationLocales: new Map([...actualLocales].map(([id, locales]) =>
+      [id, [...locales].sort()] as const)),
     quarantined: isPublicRecipeQuarantined,
   };
 }
@@ -74,7 +89,7 @@ if (calledDirectly) {
   const ids = process.argv.slice(2);
   if (!ids.length) throw new Error("Usage: npx tsx scripts/source-migration-preflight.ts recipe-id [...]");
   const root = path.resolve(import.meta.dirname, "../..");
-  const classifications = classifyCanonicalMethodMigration(ids, await loadSourceMigrationInputs(root));
+  const classifications = classifyCanonicalMethodMigration(ids, await loadSourceMigrationInputs(root, ids));
   for (const result of classifications) {
     console.log([result.recipeId, result.classification, result.blockers.join("|") || "NO_KNOWN_EARLY_BLOCKER"].join("\t"));
   }
