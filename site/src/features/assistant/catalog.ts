@@ -1,7 +1,7 @@
 import type { RecipeEntry, RecipeLocale } from "../../types/content";
 import { localeIndexes, summarizeRecipe, type RecipeSummary } from "../../content/route-data";
 import { filterRecipes, type GlycemicLoadFilterCategory, type RecipeFilters } from "../recipes/recipe-search";
-import {withholdF25Nutrition, publicF25GkFilterCategories} from "../recipes/f25-nutrition-withhold";
+import {withholdF25Nutrition} from "../recipes/f25-nutrition-withhold";
 
 /**
  * A1 is a read-only projection of the *already published* recipe build.
@@ -111,8 +111,7 @@ export function searchAssistantCatalog(
   if (filters.gl && !approvedGlCategories) return { status: "requires_gk_evidence", recipes: [] };
   return {
     status: "ok",
-    recipes: filterRecipes(catalog.recipes, filters, catalog.locale,
-      publicF25GkFilterCategories(approvedGlCategories ?? {}, catalog.locale)),
+    recipes: filterRecipes(catalog.recipes, filters, catalog.locale, approvedGlCategories ?? {}),
   };
 }
 
