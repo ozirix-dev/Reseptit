@@ -152,3 +152,63 @@ test("F25 A2 four gram-specific recipe candidates stay source-locked and unpubli
   assert.ok(rows["pohjoisafrikkalainen-baghrir"].addedOrChangedItems.some(
     x=>x.item==="lämmintä vettä"&&x.amount===300&&x.unit==="ml"));
 });
+
+test("F25 A2 exact-label scenarios must not grant release", async () => {
+  const {readFileSync} = await import("node:fs");
+  const path = await import("node:path");
+  const root = path.resolve(import.meta.dirname, "../..");
+  const study = JSON.parse(readFileSync(path.join(root, "docs/reviews/2026-11-11-f25-a2-specific-label-models.json"), "utf8"));
+  const manifest = JSON.parse(readFileSync(path.join(root, "meta/kaannokset/f25-a2-four-fi-draft-manifest-20261111.json"), "utf8"));
+  assert.equal(study.schemaVersion, 1);
+  assert.equal(study.status, "HOLD_NOT_PUBLISHABLE");
+  assert.deepEqual(study.releaseApproval, {nutrition:false,gk:false,i18n:false,physicalCookTest:false});
+  assert.equal(manifest.sources.length, 4);
+  assert.ok(manifest.sources.every((x:any) => !x.nutritionApproved && !x.gkApproved && !x.translationApproved));
+  const pearl = study.ingredients.pearls;
+  assert.equal(pearl.ean, "0084909007087");
+  assert.equal(pearl.per100g.carb, 86);
+  for(const key of ["protein", "fat", "fibre", "polyols"]) assert.equal(pearl.per100g[key], null);
+  const candidates = study.ingredients.coconutMilkCandidates;
+  assert.equal(candidates.length, 3);
+  assert.equal(new Set(candidates.map((c:any)=>c.ean)).size, 3);
+  assert.ok(candidates.every((c:any)=>c.fibre === null && c.polyols === null));
+  const old = 49.704, oldCoconut = 3.128, oldFat = 14.2755, oldCoconutFat = 28.336;
+  for (const candidate of candidates) {
+    assert.equal(candidate.volumeMl, 200);
+    const carb = old+(86-79.3)/2+(candidate.per100ml.carb*2-oldCoconut)/2;
+    const fat = oldFat+(candidate.per100ml.fat*2-oldCoconutFat)/2;
+    assert.ok(Math.abs(candidate.perServingPartial.carb-carb) < 0.001);
+    assert.ok(Math.abs(candidate.perServingPartial.fat-fat) < 0.001);
+    assert.equal(candidate.perServingPartial.protein >= 0, true);
+  }
+  const rice = study.ingredients.riceFlour;
+  assert.equal(rice.ean, "6430041080152");
+  assert.equal(rice.recipe100gTwoServings.onlyRiceFlourSubstitution.carb, 37.655);
+  assert.equal(study.ingredients.fishSauce.ean, "8850620888203");
+  assert.notEqual(study.ingredients.fishSauce.publishedPer100ml.protein, study.ingredients.fishSauce.anomalousPublishedPer100g.protein);
+  assert.deepEqual(manifest.sources.map((x:any)=>x.recipeId), [
+    "vietnamilainen-papaija-kookospuuro",
+    "vietnamilainen-banh-cuon-sienilla",
+    "vietnamilainen-banh-xeo-aamiaisletut",
+    "pohjoisafrikkalainen-baghrir",
+  ]);
+});
+
+test("F25 A2 GI evidence screens must not import food analogies into numeric GK", async () => {
+  const {readFileSync} = await import("node:fs");
+  const path = await import("node:path");
+  const root = path.resolve(import.meta.dirname, "../..");
+  const evidence = JSON.parse(readFileSync(path.join(root, "docs/reviews/2026-11-11-f25-a2-gi-evidence-matching.json"), "utf8"));
+  const gate = JSON.parse(readFileSync(path.join(root, "meta/kaannokset/f25-release-gate.json"), "utf8"));
+  assert.equal(evidence.schemaVersion, 1);
+  assert.equal(evidence.releaseStatus, "HOLD");
+  assert.equal(evidence.numericGkAuthorized, false);
+  assert.equal(evidence.recipes.length, 4);
+  for (const recipe of evidence.recipes) {
+    assert.equal(recipe.gk, null, recipe.recipeId);
+    assert.ok(recipe.evidence.length >= 1, recipe.recipeId);
+    assert.ok(recipe.evidence.every((e:any)=>e.match !== "EXACT"), recipe.recipeId);
+    assert.ok(recipe.evidence.every((e:any)=>/^https:/.test(e.url)), recipe.recipeId);
+    assert.equal(gate.sources.find((s:any)=>s.recipe_id === recipe.recipeId)?.approval, null);
+  }
+});
