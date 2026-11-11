@@ -56,7 +56,11 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 
 ## Valmistus
 
-1. Valmistele ainekset: paloittele kasvikset ja kypsennä pavut tai liha tarvittaessa erikseen. Kuumenna öljy pannulla.
-2. Lisää pannulle pisimpään kypsyvät ainekset ja kypsennä pehmeiksi. Lisää mausteet ja tilkka vettä, jos pannu uhkaa kuivua.
-3. Lisää lopuksi nopeasti kypsyvät ainekset, kuten muna tai lehtivihannekset. Kypsennä juuri valmiiksi ja maista suola.
-4. Täytä lämpimät tortillat munalla ja pavuilla, lisää avokadoa ja limettiä.
+1. Varmista, että ainesluettelon 150 g mustia papuja on jo kypsennetty syömäkelpoisiksi. Jos lähtöaineena on kuiva papu, tarvitaan erillinen liotus ja kypsennys eivätkä ne mahdu tämän aterian 25 minuutin valmistukseen. Kuumenna kypsät pavut pannulla tai pienessä kattilassa.
+2. Halkaise ainesluettelon yksi avokado, poista kivi ja leikkaa hedelmäliha viipaleiksi. Kuumenna 100 g valmista maissitortillaa kuivalla pannulla, kunnes tortillat ovat lämpimiä ja taipuisia.
+3. Kuumenna erillisellä pannulla yhteensä 1 rkl neutraalia paistoöljyä ja paista kaksi kananmunaa, kunnes valkuaiset ovat kunnolla hyytyneet. Älä käytä muita ruokaöljyjä.
+4. Jaa lämmitetyt tortillat, kuumat mustat pavut, paistetut munat ja koko avokado kahdelle annokselle. Lisää luettelon suolaa tarvittaessa. Älä lisää limettiä tai muita kastikkeita, joita ainesluettelossa ei ole.
+
+## Muistiinpanot
+
+Julkisessa valmistuksessa käytetään kypsiä papuja; alkuperäinen 'musta papu 150 g' ei erottele kuivaa ja kypsää massaa. Ravinto- ja GI/GK-perusta pysyy tämän vuoksi HOLDissa, eikä ohjetta pidä pitää määrien lopullisena hyväksyntänä.
