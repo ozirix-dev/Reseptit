@@ -74,7 +74,10 @@ test("time, cuisine and main ingredient filters combine and survive URL round tr
     assert.match(buns.notesHtml, /45/);
   }
   assert.equal(filterRecipes(finnishRecipes, { ...emptyRecipeFilters, cuisine: "mexican" }, "fi").length, 15);
-  assert.equal(filterRecipes(finnishRecipes, { ...emptyRecipeFilters, cuisine: "japanese" }, "fi").length, 15);
+  const japanese = filterRecipes(finnishRecipes, { ...emptyRecipeFilters, cuisine: "japanese" }, "fi");
+  assert.equal(japanese.length, 13, "miso-wakame and yaki-onigiri are both held outside the public menu");
+  assert.ok(!japanese.some(recipe => recipe.recipeId === "japanilainen-yaki-onigiri-misolla"));
+  assert.ok(!japanese.some(recipe => recipe.recipeId === "japanilainen-miso-tofu-paksoi"));
 });
 
 test("search normalization folds Finnish and Swedish diacritics while preserving Thai tone marks", () => {

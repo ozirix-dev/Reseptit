@@ -88,7 +88,7 @@ test("the Finnish breakfast and dessert collections exclude quarantined unsafe r
     "vhh-brita-kakku", "keto-mutakakku", "vhh-mokkapalat", "keto-suklaakeksit", "vhh-omenapiirakka",
     "vhh-juustokakku", "vhh-raparperipiirakka", "vhh-korvapuustit", "vhh-mansikkakakku", "vhh-letut",
   ].includes(recipe.recipeId));
-  assert.equal(breakfast.length, 147);
+  assert.equal(breakfast.length, 129);
   assert.equal(desserts.length, 10);
   const documentedBreakfastNetCarbs = new Map([
     ["indonesialainen-ketoprak-aamiaiskulho", 44.21], ["indonesialainen-pisang-goreng-aamiaiseksi", 63.85],
@@ -519,9 +519,14 @@ test("batch fourteen publishes recalculated macronutrients for every recipe and 
     ["karibia-mango-limejogurtti", [15.12, 18.23, 2.65, 8.5]],
     ["vietnamilainen-banh-cuon-sienilla", [40.31, 42.76, 21.37, 9.05]],
   ]);
-  const recipes = siteContent.recipes.filter((recipe) => expected.has(recipe.recipeId));
-  assert.ok(recipes.length >= expected.size, "all batch recipes have published Finnish pages");
-  assert.deepEqual(new Set(recipes.map((recipe) => recipe.recipeId)), new Set(expected.keys()));
+  // Preserve all twenty historical nutrition rows. The one unfinished aloo
+  // paratha source must not be served publicly while it awaits a source review.
+  const visibleExpected = new Map([...expected].filter(([id]) => !isPublicRecipeQuarantined(id)));
+  const recipes = siteContent.recipes.filter((recipe) => visibleExpected.has(recipe.recipeId));
+  assert.ok(recipes.length >= visibleExpected.size, "all visible batch 14 recipes have published Finnish pages");
+  assert.deepEqual(new Set(recipes.map((recipe) => recipe.recipeId)), new Set(visibleExpected.keys()));
+  assert.ok(expected.has("intialainen-aloo-paratha"), "historical batch 14 evidence remains");
+  assert.ok(isPublicRecipeQuarantined("intialainen-aloo-paratha"));
   for (const recipe of recipes) {
     assert.deepEqual(
       [recipe.nutrition.carbsNetG, recipe.nutrition.carbsTotalG, recipe.nutrition.proteinG, recipe.nutrition.fatG],
@@ -554,9 +559,15 @@ test("batch fifteen publishes recalculated macronutrients for every recipe and a
     ["meksikolainen-kurpitsapuuro-piloncillolla", [44.63, 52.57, 7.12, 4.89]],
     ["lahi-ita-zaatar-munat", [24.91, 26.07, 12.18, 14.26]],
   ]);
-  const recipes = siteContent.recipes.filter((recipe) => expected.has(recipe.recipeId));
-  assert.ok(recipes.length >= expected.size, "all batch recipes have published Finnish pages");
-  assert.deepEqual(new Set(recipes.map((recipe) => recipe.recipeId)), new Set(expected.keys()));
+  // Historical batch 15 retains all 20 calculations; quarantine intentionally
+  // suppresses the unverified orange cake from the public recipe card set.
+  const visibleExpected = new Map([...expected].filter(([id]) => !isPublicRecipeQuarantined(id)));
+  const recipes = siteContent.recipes.filter((recipe) => visibleExpected.has(recipe.recipeId));
+  assert.ok(recipes.length >= visibleExpected.size, "all non-quarantined batch recipes have published Finnish pages");
+  assert.deepEqual(new Set(recipes.map((recipe) => recipe.recipeId)), new Set(visibleExpected.keys()));
+  assert.ok(expected.has("valimerellinen-appelsiini-aamiaiskakku"),
+    "keep historical calculated values; do not erase nutrition evidence");
+  assert.ok(isPublicRecipeQuarantined("valimerellinen-appelsiini-aamiaiskakku"));
   for (const recipe of recipes) {
     assert.deepEqual(
       [recipe.nutrition.carbsNetG, recipe.nutrition.carbsTotalG, recipe.nutrition.proteinG, recipe.nutrition.fatG],
@@ -719,12 +730,94 @@ test("R1B corrected Koshari nutrition evidence is synchronized across published 
   }
 });
 
-test("three source-sealed safety withdrawals never enter public recipes or sitemap", async () => {
-  assert.equal(publicRecipeQuarantineIds.length, 3);
+test("twenty-one source-sealed withdrawals never enter public recipes or sitemap", async () => {
+  assert.equal(publicRecipeQuarantineIds.length, 21);
   for (const id of publicRecipeQuarantineIds) {
     assert.equal(currentSiteContent.recipes.some(r => r.recipeId === id), false);
     const source = parseMarkdown(await readFile(path.resolve(import.meta.dirname, `../../reseptit/aamupalat/${id}.md`), "utf8"));
     assert.ok(source);
     assert.equal(source.data.status, "published", `${id}: archived source status must remain sealed`);
+  }
+});
+
+
+test("eight B21 material-risk withdrawals keep exactly the sealed historical source blobs", async () => {
+  const { createHash } = await import("node:crypto");
+  const expected = {
+  "pohjoisafrikkalainen-maakouda": "34574856132b429713948701c718b25dcd12776d",
+  "indonesialainen-lontong-sayur-aamiaiseksi": "99891cc348f3eb0e9baa3c30095f0c61ce0af569",
+  "japanilainen-miso-tofu-paksoi": "bf84422ea3cc7c2f16f5b2b95a643bfa9109f5bb",
+  "korealainen-mandu-keitto-aamiaiseksi": "0a24a7c6174076525bbbdbcbbdbb664b57ca647f",
+  "valimerellinen-appelsiini-aamiaiskakku": "8bd991e2ae73d894233abfd3caf76d48315a7088",
+  "valimerellinen-kikherne-yrttiaamiainen": "33923cc854eabc27c7905db024c3b2e7d9ca44ab",
+  "kiinalainen-bao-munalla": "7865e9409880638b8fe5bdeacbcb5ae2c1d356a2",
+  "malesialainen-kuih-seri-muka": "4c565331c9e3a6322cd97989a9ad6fac38167284"
+};
+  for (const [id, gitBlobSha] of Object.entries(expected)) {
+    const relative = `reseptit/aamupalat/${id}.md`;
+    const raw = await readFile(path.resolve(import.meta.dirname, "../..", relative), "utf8");
+    const actual = createHash("sha1")
+      .update("blob " + Buffer.byteLength(raw, "utf8") + "\0")
+      .update(raw)
+      .digest("hex");
+    assert.equal(actual, gitBlobSha, id + ": no unreviewed source edits can be passed as an approved quarantine");
+    assert.ok(isPublicRecipeQuarantined(id), id);
+    assert.equal(currentSiteContent.recipes.some(r => r.recipeId === id), false, id + ": no public locale may leak");
+    const parsed = parseMarkdown(raw);
+    assert.ok(parsed);
+    assert.equal(parsed.data.status, "published", id + ": preserve historical calculation provenance");
+  }
+});
+
+
+test("five GK100-associated raw-source HOLDs are hidden publicly while preserving all approved source bytes", async () => {
+  const { createHash } = await import("node:crypto");
+  const originalSources = {
+  "indonesialainen-nasi-goreng-aamiaisriisi": "731c7babbe7aa94c4e931a8224cec81bfe75b9fb",
+  "japanilainen-yaki-onigiri-misolla": "bff8b38121a3af090dfd5b7559517ae4aeaa59c7",
+  "karibia-saltfish-fritterit": "f197d405e1d1c9de9afcbfb2b5ce4def501de30f",
+  "intialainen-idli-kookoschutneylla": "e862e239cf56f33c27ea36e6a5311bf6d179364d",
+  "vietnamilainen-xoi-maapahkinalla": "424b60e50e95d2e216e9090333f4f89509ee61ad"
+};
+  for (const [id, expectedGitBlobSha] of Object.entries(originalSources)) {
+    const source = await readFile(path.resolve(import.meta.dirname, "../../reseptit/aamupalat", id + ".md"), "utf8");
+    const actual = createHash("sha1").update("blob " + Buffer.byteLength(source) + "\0").update(source).digest("hex");
+    assert.equal(actual, expectedGitBlobSha, id + ": immutable GK100 source has changed");
+    assert.ok(isPublicRecipeQuarantined(id), id);
+    assert.ok(!currentSiteContent.recipes.some(r => r.recipeId === id), id + ": public recipe must be absent");
+    const parsed = parseMarkdown(source);
+    assert.ok(parsed);
+    assert.equal(parsed.data.status, "published", "historical source receipt not rewritten");
+  }
+});
+
+
+test("two C13 unreviewed meal designs stay out of public routes with immutable FI source receipts", async () => {
+  const { createHash } = await import("node:crypto");
+  const sourceGitBlobs = {"intialainen-aloo-paratha":"9ed1496a047c04668a6b219a99e22feb9146c721","malesialainen-laksa-lemak-aamiaiseksi":"a3e9bb17e9100d9cd3feec91745bd321f50ad89e"};
+  for (const [id, expectedBlob] of Object.entries(sourceGitBlobs)) {
+    const raw = await readFile(path.resolve(import.meta.dirname, "../../reseptit/aamupalat", id + ".md"), "utf8");
+    const gitBlob = createHash("sha1").update("blob " + Buffer.byteLength(raw) + "\0").update(raw).digest("hex");
+    assert.equal(gitBlob, expectedBlob, id + ": source evidence must remain byte identical");
+    assert.ok(isPublicRecipeQuarantined(id));
+    assert.equal(currentSiteContent.recipes.some(r => r.recipeId === id), false, id);
+    const parsed = parseMarkdown(raw);
+    assert.ok(parsed);
+    assert.equal(parsed.data.status, "published", id + ": historical source metadata retained");
+  }
+});
+
+test("three B21 preparation-time HOLDs retain exact source bytes but no public pages", async () => {
+  const { createHash } = await import("node:crypto");
+  const expected = {"malesialainen-roti-canai-dhalilla":"d241c242192b66a6744a823e88e44c9fbed97c98","pohjoisafrikkalainen-msemen-hunajalla":"3ee0686e9b5435e8e1dbf09a7915e99fd5b3d082","intialainen-pesarattu-mungpavuista":"5356f03ce2764e38563a95ede0e4373b8f50a65e"};
+  for (const [id, gitSha] of Object.entries(expected)) {
+    const raw = await readFile(path.resolve(import.meta.dirname, "../../reseptit/aamupalat", id + ".md"), "utf8");
+    const actual = createHash("sha1").update("blob " + Buffer.byteLength(raw) + "\0").update(raw).digest("hex");
+    assert.equal(actual, gitSha, id + ": source must remain unchanged");
+    assert.ok(isPublicRecipeQuarantined(id), id);
+    assert.equal(currentSiteContent.recipes.some(r => r.recipeId === id), false, id + ": no public locale route");
+    const parsed = parseMarkdown(raw);
+    assert.ok(parsed);
+    assert.equal(parsed.data.status, "published", id + ": historical source retained");
   }
 });
