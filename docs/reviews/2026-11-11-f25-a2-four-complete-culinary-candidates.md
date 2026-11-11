@@ -13,6 +13,12 @@
 
 **Tärkeä ravintoraja:** Vesi on makroiltaan nolla, mutta `recipeNutritionInputHash` ja GI/GK-sidokset sisältävät myös sen määrän. Ehdokasta ei saa merkitä samaksi reseptiversioksi eikä sen neljää nykyistä makroa hyväksytyiksi ilman uuden FI-lähteen ja laskentaversion tarkastusta.
 
+## Tapiokahelmien tuotekohtainen, laskentaa muuttava ero
+
+Suomessa [K-Ruoan Cock pienet tapiokahelmet 400 g](https://www.k-ruoka.fi/kauppa/tuote/cock-tapioca-pearl-400g-0084909007087) (suomalaisen myyntilistan EAN 0084909007087) ilmoittaa **86 g imeytyvää hiilihydraattia / 100 g**. Alkuperäisen FI:n nykyisessä [AFCD:n laskentasyötteessä](../../docs/nutrition/calculations/vietnamilainen-papaija-kookospuuro.json) 100 g kuivia helmiä vastaa **79,3 g / 100 g**. **Erotus: (86−79,3) × 100/100 ÷ 2 = 3,35 g netto-HH per annos** jo ennen muita aineita. Veden 700 ml säilyttäminen puurossa ei korjaa tätä tuote-eroa. Myyntietiketin kuitu- ja polyolitiedot eivät ole tässä lähdetodisteessa täydelliset, joten uutta neljän makron lukua ei voida hyväksyä.
+
+Tämä poikkeama on lukittu myös A2-manifestiin ja regressiotestiin, jolloin tuotteen vaihtaminen vaatii ravinto-/GK-lähdearvion eikä ainoastaan valmistusohjeen muutosta. K-Ruoka antaa samalle tuotteelle noin 30 minuutin kypsennysohjeen omassa tapiokavanukkaassaan; 40 minuutin ehdotettu kokonaisaika ei ole fyysisesti mitattu eikä joka tuotteella taattu.
+
 ## Riippumattomat valmistuslähteet
 
 - [The Woks of Life: kuivien tapiokahelmien keitto](https://thewoksoflife.com/how-to-cook-tapioca-pearls/) käyttää noin 15 minuutin keittoa, 15 minuutin lepoa ja valuttamista **eri menetelmällä**. Tässä puurossa vettä ei valuteta; älä väitä lähteen vahvistavan tiettyä 700ml:n puuromallia tai 40 min valmistusta yleispätevästi.

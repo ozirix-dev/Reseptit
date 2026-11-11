@@ -144,6 +144,8 @@ test("F25 A2 four gram-specific recipe candidates stay source-locked and unpubli
     assert.ok(r.candidateTime>r.oldTime);
   }
   assert.deepEqual(rows["vietnamilainen-papaija-kookospuuro"].addedOrChangedItems,[]);
+  assert.equal(rows["vietnamilainen-papaija-kookospuuro"].productContrast?.netCarbDifferenceGPerServing,3.35);
+  assert.equal(rows["vietnamilainen-papaija-kookospuuro"].productContrast?.fibreAndPolyolsVerified,false);
   assert.deepEqual(rows["vietnamilainen-banh-cuon-sienilla"].addedOrChangedItems,[]);
   assert.ok(rows["vietnamilainen-banh-xeo-aamiaisletut"].addedOrChangedItems.some(
     x=>x.item==="vettä"&&x.amount===120&&x.unit==="ml"));

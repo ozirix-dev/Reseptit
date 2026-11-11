@@ -40,8 +40,13 @@ export function auditF25A2FourDrafts(){
     const changed=record.proposedIngredients.filter(x=>!record.oldIngredients.some(y=>equal(x,y)));
     if(!equal(changed,record.sourceChanges))throw Error("F25_A2_CHANGE_LIST_STALE");
     if(record.candidateTimeTotalMin<record.oldTimeTotalMin)throw Error("F25_A2_SHORTER_THAN_LEGACY_TIME");
+    const productContrast=record.productContrast;
+    if(productContrast){
+      const computed=(productContrast.brandLabelCarbGPer100-productContrast.oldSourceAvailableCarbGPer100)*productContrast.usedDryPearlsG/100/productContrast.servings;
+      if(Math.abs(computed-productContrast.netCarbDifferenceGPerServing)>1e-9 || productContrast.fibreAndPolyolsVerified!==false || productContrast.approval!=="HOLD_BRAND_AND_FIBRE")throw Error("F25_A2_BRANDED_PRODUCT_MISMATCH: "+record.recipeId);
+    }
     rows.push({recipeId:record.recipeId,status:"HOLD",sourceSha:record.sourceGitBlobSha,oldTime:record.oldTimeTotalMin,
-      candidateTime:record.candidateTimeTotalMin,addedOrChangedItems:changed,approval:false});
+      candidateTime:record.candidateTimeTotalMin,addedOrChangedItems:changed,productContrast,approval:false});
   }
   return {total:rows.length,approved:0,rows,disposition:"HOLD: candidate recipes are not cooked, nutritionally approved, or GK/i18n-authorized"};
 }
