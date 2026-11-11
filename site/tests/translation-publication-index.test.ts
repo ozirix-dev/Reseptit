@@ -126,7 +126,7 @@ test("F25 A1 four recipe candidate files stay out of production and retain expli
     assert.deepEqual(gate.sources.find((row:any)=>row.recipe_id===c.recipeId)?.approval,null);
   }
 });
- 
+
 test("F25 A2 four gram-specific recipe candidates stay source-locked and unpublished", async () => {
   const {auditF25A2FourDrafts}=await import("../scripts/f25-a2-four-fi-draft-gate");
   const result=auditF25A2FourDrafts();
