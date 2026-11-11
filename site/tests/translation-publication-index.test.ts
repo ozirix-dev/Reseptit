@@ -212,3 +212,27 @@ test("F25 A2 GI evidence screens must not import food analogies into numeric GK"
     assert.equal(gate.sources.find((s:any)=>s.recipe_id === recipe.recipeId)?.approval, null);
   }
 });
+
+test("F25 A2 product-matched scenarios replay from SHA-sealed nutrition records but cannot authorize release", async () => {
+  const {auditF25A2ProductRecalculation}=await import("../scripts/f25-a2-product-recalculation");
+  const r=auditF25A2ProductRecalculation();
+  assert.equal(r.status,"HOLD");
+  assert.equal(r.checked,4);
+  assert.equal(r.nutritionApproval,false);
+  assert.equal(r.gkApproval,false);
+  assert.equal(r.rows.length,4);
+  for(const row of r.rows){
+    assert.equal(row.approval,null);
+    assert.equal(row.gk,null);
+    assert.ok(row.oldNutritionPerServing.carbohydrate>0);
+    assert.ok(row.oldNutritionPerServing.protein>0);
+  }
+  const tapi=r.rows.find(x=>x.recipeId==="vietnamilainen-papaija-kookospuuro");
+  assert.equal(tapi?.productCandidates.length,3);
+  assert.deepEqual(tapi?.productCandidates.map(x=>x.perServingPartial.carbohydrate),[53.49,54.49,53.49]);
+  assert.ok(tapi?.productCandidates.every(x=>x.missing.includes("pearl_fibre")&&x.approval===null));
+  const cuon=r.rows.find(x=>x.recipeId==="vietnamilainen-banh-cuon-sienilla");
+  assert.equal(cuon?.productCandidates.length,1);
+  assert.equal(cuon?.productCandidates[0].perServingPartial.carbohydrate,37.655);
+  assert.ok(cuon?.productCandidates[0].missing.includes("fish_sauce_density"));
+});
