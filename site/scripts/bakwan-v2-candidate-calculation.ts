@@ -87,9 +87,9 @@ export async function auditBakwanV2Candidate(root:string) {
       assert.equal(originalGrams,entry.grams,"OLD_CONVERSION_NOT_EQUAL_TO_V2_DESIGN:"+entry.reference);
       const fraction=entry.name==="neutraalia paistoöljyä"?oilFraction:1;
       for(const nutrient of macroNames){
-        const n=oldRow.record.per100g[nutrient];
-        assert.equal(typeof n,"number","MISSING_NUTRIENT_"+nutrient+":"+entry.reference);
-        sums[nutrient]+=entry.grams*fraction*n!/100;
+        const value: number | undefined = oldRow.record.per100g[nutrient];
+        assert(typeof value==="number","MISSING_NUTRIENT_"+nutrient+":"+entry.reference);
+        sums[nutrient]+=entry.grams*fraction*value/100;
       }
       rows.push({ingredient:entry.name,designedGrams:entry.grams,
         referenceRecord:oldRow.record.id,
