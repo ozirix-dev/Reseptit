@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-11",
+  "source": "Independent current retailer label scenario screening for F25 A2. References are seller pages; check actual packaging before release.",
+  "status": "HOLD_NOT_PUBLISHABLE",
+  "ingredients": {
+    "pearls": {
+      "product": "Cock Tapioca Pearls 400g",
+      "ean": "0084909007087",
+      "url": "https://www.k-ruoka.fi/kauppa/tuote/cock-tapioca-pearl-400g-0084909007087",
+      "per100g": {
+        "carb": 86,
+        "protein": null,
+        "fat": null,
+        "fibre": null,
+        "polyols": null
+      },
+      "lowerBound": "Fat and protein <0.5g per 100g, not zero",
+      "review": "Do not set nutritionApproved; labelled fibre/polyols absent"
+    },
+    "coconutMilkCandidates": [
+      {
+        "product": "Thai Choice Coconut Milk 400ml",
+        "ean": "8851978804068",
+        "url": "https://www.k-ruoka.fi/kauppa/tuote/thai-choice-kookosmaito-400ml-8851978804068",
+        "per100ml": {
+          "carb": 2,
+          "fat": 18,
+          "protein": 1
+        },
+        "fibre": null,
+        "polyols": null,
+        "volumeMl": 200,
+        "scope": "Tapioca recipe: swap 100 g pearls 79.3->86 carbohydrate and 200ml generic coconut milk to named label while holding every other ingredient constant",
+        "perServingPartial": {
+          "carb": 53.49,
+          "fat": 18.108,
+          "protein": 1.56
+        },
+        "note": "Protein retains legacy tapioca protein of 0.2g/100g because Cock label says <0.5g, not a specified exact number. Fibre/polyols cannot be inferred."
+      },
+      {
+        "product": "Bioasia Organic Coconut Milk 400ml",
+        "ean": "4316734098197",
+        "url": "https://www.k-ruoka.fi/kauppa/tuote/bio-asia-kookosmaito-luomu-400ml-4316734098197",
+        "per100ml": {
+          "carb": 3,
+          "fat": 17,
+          "protein": 1.6
+        },
+        "fibre": null,
+        "polyols": null,
+        "volumeMl": 200,
+        "scope": "Tapioca recipe: swap 100 g pearls 79.3->86 carbohydrate and 200ml generic coconut milk to named label while holding every other ingredient constant",
+        "perServingPartial": {
+          "carb": 54.49,
+          "fat": 17.108,
+          "protein": 2.16
+        },
+        "note": "Protein retains legacy tapioca protein of 0.2g/100g because Cock label says <0.5g, not a specified exact number. Fibre/polyols cannot be inferred."
+      },
+      {
+        "product": "Aroy-D Coconut Milk 400ml",
+        "ean": "0016229005115",
+        "url": "https://www.aasiamarket.fi/tuote/coconut-milk-17-fat-fi1178/",
+        "per100ml": {
+          "carb": 2,
+          "fat": 19,
+          "protein": 1.6
+        },
+        "fibre": null,
+        "polyols": null,
+        "volumeMl": 200,
+        "scope": "Tapioca recipe: swap 100 g pearls 79.3->86 carbohydrate and 200ml generic coconut milk to named label while holding every other ingredient constant",
+        "perServingPartial": {
+          "carb": 53.49,
+          "fat": 19.108,
+          "protein": 2.16
+        },
+        "note": "Protein retains legacy tapioca protein of 0.2g/100g because Cock label says <0.5g, not a specified exact number. Fibre/polyols cannot be inferred."
+      }
+    ],
+    "riceFlour": {
+      "product": "Virtasalmen Viljatuote fine gluten-free rice flour 500g",
+      "ean": "6430041080152",
+      "url": "https://www.k-ruoka.fi/kauppa/tuote/viljatuote-hieno-riisijauho-500g-gton-6430041080152",
+      "per100g": {
+        "carb": 74,
+        "protein": 8,
+        "fat": 1.8,
+        "fibre": 1
+      },
+      "recipe100gTwoServings": {
+        "baselineBanhCuon": {
+          "carb": 40.305,
+          "protein": 21.37,
+          "fat": 9.05,
+          "fibre": 1.85,
+          "rice": {
+            "carb": 79.3,
+            "protein": 7.69,
+            "fat": 1.4,
+            "fibre": 2.3
+          }
+        },
+        "onlyRiceFlourSubstitution": {
+          "carb": 37.655,
+          "protein": 21.525,
+          "fat": 9.25,
+          "fibre": 1.2
+        }
+      },
+      "decision": "Fine rice flour useful texture candidate, but rice-sheet release without oil requires equipment verification and other ingredient label reconciliation"
+    },
+    "fishSauce": {
+      "product": "Squid Brand 725ml",
+      "ean": "8850620888203",
+      "urls": [
+        "https://www.aasiamarket.fi/en/product/fish-sauce-725ml-squid/",
+        "https://ctfood.se/fish-sauce-glass-12x725ml-squid-brand/?language=en",
+        "https://www.nevejan.eu/en/fish-sauce-725ml-squid-brand.html"
+      ],
+      "publishedPer100ml": {
+        "carb": 3,
+        "protein": 11,
+        "fat": 0,
+        "fibre": 0
+      },
+      "anomalousPublishedPer100g": {
+        "carb": 3,
+        "protein": 17
+      },
+      "risk": "Per-100-ml vs per-100-g confusion, and inconsistent 17g protein listing; do not replace 15g tablespoon model without mass/volume verified. Fish allergen mandatory."
+    }
+  },
+  "critical": "Three named coconut-milk labels yield different fat estimates, none make the full four-component recipe accurate without pearls fibre/polyols and packaged edible mass. For baguhrir, water change 150->300ml changes source hash; no product scenario can grant numeric GK.",
+  "releaseApproval": {
+    "nutrition": false,
+    "gk": false,
+    "i18n": false,
+    "physicalCookTest": false
+  },
+  "nextProductChecks": [
+    "Read or independently verify pack label for Cock pearl fibre/polyols; if not available use source-approved alternative exact tapioca product",
+    "Pick only one specific coconut-milk product and record label version and 200ml mass or per100ml basis",
+    "Select fine rice flour and one specific fish sauce label; verify sauce tablespoon mass and nutrition denominator",
+    "Calculate new nutrition inputs with calculate() and attach revised source fingerprint",
+    "Reconstruct GI/GK evidence for exact ingredient states; keep GK null if no valid GI research",
+    "Reconfirm proposed cook method and semantic translation before release"
+  ]
+}
