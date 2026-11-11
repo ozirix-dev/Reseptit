@@ -73,6 +73,13 @@ test("SHA-pinned FI overlays correct twenty-eight dishes without nutrition chang
       assert.doesNotMatch(afterMd.content,/tomaatti-chutneylla/);
       assert.match(afterMd.content,/125 g syötävää osaa/);
       assert.match(afterMd.content,/55 g syötävää osaa/);
+    } else if (before.recipe_id === "thai-roti-munalla-banaanilla") {
+      // Only the inaccurate old "roti" alt is editorially corrected; pixels and dimensions stay identical.
+      assert.equal(after.image?.src, before.image?.src);
+      assert.equal(after.image?.width, before.image?.width);
+      assert.equal(after.image?.height, before.image?.height);
+      assert.equal(after.image?.alt, "Thaityyliset kookos-banaanimunaletut tarjoiltuna aamiaisella");
+      assert.equal(after.title, "Thaityyliset kookos-banaanimunaletut");
     } else assert.deepEqual(after.image, before.image);
     for(const k of macros) assert.equal(after[k],before[k]);
     if (before.recipe_id === "vietnamilainen-kahvijogurtti-banaanilla") {
