@@ -1,0 +1,112 @@
+{
+  "recipeId": "karnivore-smashburger",
+  "sourceHash": "fe84e85b1ecf4c5728e65e8df03c9192c46dc61902e850879a10eaa7949cbe49",
+  "calculatedAt": "2026-11-11",
+  "servings": 2,
+  "batchId": "batch-487",
+  "scope": "Raw edible ingredient composition estimate, 500g Snellman 20% beef + 10g rendered tallow + 4g salt for two servings. Every gram of added and rendered fat is served and eaten; no bun, cheese or vegetables. Not a prepared-product measurement.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "item": "naudan jauhelihaa",
+      "amount": 500,
+      "unit": "g",
+      "state": "raw-beef-mince-20-percent",
+      "matchEvidence": "Snellman Kunnon naudan jauheliha 20 % EAN 6409620011856; label 18 g protein, 20 g fat, 0 g EU carbohydrate /100 g. AFCD raw beef mince fibre/polyols correspondence is separately noted; not a prepared-patty measurement.",
+      "edibleFraction": 1,
+      "edibleEvidence": "All 500 g is raw edible mince.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All cooked beef, rendered juices and fat must be served and eaten in this raw-input composition scenario.",
+      "record": {
+        "id": "snellman-6409620011856-with-afcd-fibre-polyol",
+        "name": "Snellman Kunnon naudan jauheliha 20% + AFCD raw beef fibre/polyol correspondence",
+        "sourceUrl": "https://snellman.fi/fi/tuotteet/kunnon-naudan-jauheliha-20-400-g/",
+        "retrievedAt": "2026-11-11",
+        "licence": "Manufacturer public nutrition label; FSANZ AFCD Release 3 CC BY-SA 3.0 Australia reference",
+        "state": "raw-beef-mince-20-percent",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Published AFCD raw unprocessed beef composition reported with zero fibre/polyol and available carbohydrate; cross-source composition correspondence, not branded laboratory analysis.",
+        "per100g": {
+          "carbohydrate": 0,
+          "protein": 18,
+          "fat": 20,
+          "fibre": 0,
+          "polyols": 0
+        }
+      }
+    },
+    {
+      "item": "naudan talia",
+      "amount": 10,
+      "unit": "g",
+      "state": "rendered-beef-tallow",
+      "matchEvidence": "USDA FoodData Central SR Legacy 171400 beef tallow rendered fat 100 g fat per100 g; no sugars or fibres. The pure rendered fat is a different food from raw beef fat (Fineli 553).",
+      "edibleFraction": 1,
+      "edibleEvidence": "10 g of edible rendered beef tallow weighed before frying.",
+      "retainedFraction": 1,
+      "retentionEvidence": "The recipe requires serving all added tallow and pan fat. Actual loss to pan lowers intake.",
+      "record": {
+        "id": "usda-fdc-171400-beef-tallow",
+        "name": "Fat, beef tallow",
+        "sourceUrl": "https://fdc.nal.usda.gov/food-details/171400/nutrients",
+        "retrievedAt": "2026-11-11",
+        "licence": "USDA FoodData Central, public domain",
+        "state": "rendered-beef-tallow",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "A 100%-fat rendered beef tallow matrix contains no available carbohydrate, fibre or sugar alcohol; assignment is composition-based and not a branded tallow analysis.",
+        "per100g": {
+          "carbohydrate": 0,
+          "protein": 0,
+          "fat": 100,
+          "fibre": 0,
+          "polyols": 0
+        }
+      }
+    },
+    {
+      "item": "suolaa",
+      "amount": 4,
+      "unit": "g",
+      "state": "table-salt-edible",
+      "matchEvidence": "Fineli 30 iodized table salt, direct composition record.",
+      "edibleFraction": 1,
+      "edibleEvidence": "All 4 g salt included.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Entire listed salt used, no brine discarded.",
+      "record": {
+        "id": "fineli-30-release-20",
+        "name": "RUOKASUOLA, JODIOITU",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/30",
+        "retrievedAt": "2026-11-11",
+        "licence": "THL Fineli Release 20 CC BY 4.0",
+        "state": "table-salt-edible",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release20 components 2034/2168/2260",
+        "componentValues": {
+          "CHO": 0,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "per100g": {
+          "carbohydrate": 0,
+          "protein": 0.63,
+          "fat": 0,
+          "fibre": 0,
+          "polyols": 0
+        }
+      }
+    }
+  ]
+}
