@@ -54,7 +54,18 @@ test('Live original results preserve frozen history plus the exact reviewed tran
  }
  assert.equal(report.gkOnlyVariants.length,87);
  for(const v of report.gkOnlyVariants)assert.equal(sha(v),before.variantHashes[v.recipeId+'/'+v.versionId],v.recipeId);
- const inventory = json('tmp/nutrition/audit.json').inventory;
+ const completePublishedInventory = json('tmp/nutrition/audit.json').inventory as Array<{recipe_id:string;source_path:string;status:string}>;
+ const inventory = completePublishedInventory.filter((row) => {
+   const reviewedPin = frozenKarnivoreFi3Blobs[row.recipe_id];
+   if (!reviewedPin) return true;
+   const file = `reseptit/paaruoat/${row.recipe_id}.md`;
+   assert.equal(row.source_path, file, `${row.recipe_id}: exact FI source path`);
+   const actualBlob = execFileSync('git',['hash-object',file],{cwd:root,encoding:'utf8'}).trim();
+   assert.equal(actualBlob, reviewedPin, `${row.recipe_id}: reviewed source blob changed`);
+   assert.equal(row.status, 'ESTIMATE WITH EVIDENCE', `${row.recipe_id}: nutrition evidence must pass`);
+   return false;
+ });
+ assert.equal(completePublishedInventory.length, inventory.length + Object.keys(frozenKarnivoreFi3Blobs).length);
  // The approved oven-farinata editorial correction changed the full-file
  // SHA in nutrition audit provenance, but not its amounts or macro values.
  // Reconstruct ONLY the exact reviewed source for the frozen inventory check.
