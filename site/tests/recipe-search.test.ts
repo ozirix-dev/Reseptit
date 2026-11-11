@@ -389,3 +389,35 @@ test("batch 2 reviews 12 additional source recipes in all published languages", 
       "Animal-rennet Pecorino cannot be inferred vegetarian");
   }
 });
+
+
+test("FI-only dietary approvals require a valid FI source and never fabricate EN/SV/TH approval", async () => {
+  const { reviewedDietTagsForVersion } = await import("../scripts/reviewed-diet-filters");
+  const path = await import("node:path");
+  const root = path.resolve(import.meta.dirname, "../..");
+  const fi = path.join(root, "reseptit/alkuruoat/hummus.md");
+  const en = path.join(root, "kaannokset/en/alkuruoat/hummus.md");
+  // This test uses an existing reviewed vegetarian FI source as an exemplar;
+  // it does NOT classify hummus as carnivore or publish any new recipe.
+  const fiOnly = {
+    tags: ["vegetarian"] as const,
+    sourceBlobShas: { fi: "cd792d70d50753a5f8f93eeca030ec3743cfb209" },
+  };
+  assert.deepEqual(await reviewedDietTagsForVersion(fiOnly, "fi", fi, fi), ["vegetarian"]);
+  assert.deepEqual(await reviewedDietTagsForVersion(fiOnly, "en", en, fi), [],
+    "a published English version without an explicit reviewed SHA must fail closed");
+  assert.deepEqual(await reviewedDietTagsForVersion(fiOnly, "sv", en, fi), []);
+  assert.deepEqual(await reviewedDietTagsForVersion(fiOnly, "th", en, fi), []);
+  assert.deepEqual(await reviewedDietTagsForVersion(fiOnly, "fi", en, fi), [],
+    "Finnish approval cannot be used for the wrong file path");
+  assert.deepEqual(await reviewedDietTagsForVersion(fiOnly, "fi", fi), [],
+    "missing canonical source is not an approval");
+  const withEnglishReview = {
+    ...fiOnly,
+    sourceBlobShas: {
+      ...fiOnly.sourceBlobShas,
+      en: "226fcc49b596963b806566d7d303f065b49ba257",
+    },
+  };
+  assert.deepEqual(await reviewedDietTagsForVersion(withEnglishReview, "en", en, fi), ["vegetarian"]);
+});

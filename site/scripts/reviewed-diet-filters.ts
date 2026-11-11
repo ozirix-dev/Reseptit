@@ -5,10 +5,14 @@ import type { RecipeDietTag, RecipeLocale } from "../src/types/content";
 // Explicit editorial whitelist; never infer diet compatibility from nutrition,
 // primary ingredients, text tags or existing keto/VHH labels.
 // A vegan recipe is also vegetarian and compatible with pescatarian eating.
-export const reviewedDietFilters: Readonly<Record<string, {
+export interface ReviewedDietSource {
   tags: readonly RecipeDietTag[];
-  sourceBlobShas: Readonly<Record<RecipeLocale, string>>;
-}>> = {
+  // FI is mandatory. Only published, individually reviewed translations
+  // receive optional EN/SV/TH SHA pins. Missing pins never imply approval.
+  sourceBlobShas: Readonly<{ fi: string } & Partial<Record<RecipeLocale, string>>>;
+}
+
+export const reviewedDietFilters: Readonly<Record<string, ReviewedDietSource>> = {
   hummus: {
     tags: ["vegetarian", "vegan", "pescatarian"],
     sourceBlobShas: {
@@ -113,14 +117,23 @@ function gitBlobSha(buffer: Buffer): string {
  * their reviewed versions. Missing original => no review claim, even if the
  * translation itself has not changed.
  */
+/** Independently testable source-pin gate; does not infer diets. */
+export async function reviewedDietTagsForVersion(
+  review: ReviewedDietSource, locale: RecipeLocale, filePath: string, finnishSourcePath?: string,
+): Promise<RecipeDietTag[]> {
+  if (!finnishSourcePath) return [];
+  const expectedLocaleSha = review.sourceBlobShas[locale];
+  if (!expectedLocaleSha) return [];
+  const source = await readFile(finnishSourcePath);
+  if (gitBlobSha(source) !== review.sourceBlobShas.fi) return [];
+  if (locale === "fi") return filePath === finnishSourcePath ? [...review.tags] : [];
+  const translation = await readFile(filePath);
+  return gitBlobSha(translation) === expectedLocaleSha ? [...review.tags] : [];
+}
+
 export async function reviewedDietTagsForSource(
   recipeId: string, locale: RecipeLocale, filePath: string, finnishSourcePath?: string,
 ): Promise<RecipeDietTag[]> {
   const review = Object.hasOwn(reviewedDietFilters, recipeId) ? reviewedDietFilters[recipeId] : undefined;
-  if (!review || !finnishSourcePath) return [];
-  const source = await readFile(finnishSourcePath);
-  if (gitBlobSha(source) !== review.sourceBlobShas.fi) return [];
-  if (locale === "fi" && filePath === finnishSourcePath) return [...review.tags];
-  const translation = await readFile(filePath);
-  return gitBlobSha(translation) === review.sourceBlobShas[locale] ? [...review.tags] : [];
+  return review ? reviewedDietTagsForVersion(review, locale, filePath, finnishSourcePath) : [];
 }
