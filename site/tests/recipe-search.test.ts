@@ -302,3 +302,42 @@ test("new diet URL values round-trip, preserve keto/VHH and reject unapproved op
   assert.equal(filterRecipes([{ ...base, recipeId: "animal-only-fixture", dietTags: ["carnivore"] }], { ...emptyRecipeFilters, diet: "carnivore" }, "fi").length, 1);
   assert.equal(filterRecipes([{ ...base, recipeId: "not-reviewed", dietTags: undefined }], { ...emptyRecipeFilters, diet: "carnivore" }, "fi").length, 0);
 });
+
+
+test("diet review pins fail closed when Finnish source or a translation changes", async () => {
+  const { reviewedDietTagsForSource } = await import("../scripts/reviewed-diet-filters");
+  const { appendFile, copyFile, mkdtemp, rm } = await import("node:fs/promises");
+  const { tmpdir } = await import("node:os");
+  const path = await import("node:path");
+  const root = path.resolve(import.meta.dirname, "../..");
+  const fi = path.join(root, "reseptit/alkuruoat/hummus.md");
+  const byLocale = {
+    fi,
+    en: path.join(root, "kaannokset/en/alkuruoat/hummus.md"),
+    sv: path.join(root, "kaannokset/sv/alkuruoat/hummus.md"),
+    th: path.join(root, "kaannokset/th/alkuruoat/hummus.md"),
+  };
+  const expected = ["vegetarian", "vegan", "pescatarian"];
+  for (const locale of ["fi", "en", "sv", "th"] as const) {
+    assert.deepEqual(await reviewedDietTagsForSource("hummus", locale, byLocale[locale], fi), expected, locale);
+    assert.deepEqual(await reviewedDietTagsForSource("hummus", locale, byLocale[locale]), [], `${locale}: no verified FI source`);
+  }
+  assert.deepEqual(await reviewedDietTagsForSource("__proto__", "fi", fi, fi), [], "unknown recipe must never use an inherited entry");
+  const dir = await mkdtemp(path.join(tmpdir(), "reviewed-diets-"));
+  try {
+    const changedFi = path.join(dir, "hummus-fi.md");
+    const changedSv = path.join(dir, "hummus-sv.md");
+    await copyFile(fi, changedFi);
+    await copyFile(byLocale.sv, changedSv);
+    assert.deepEqual(await reviewedDietTagsForSource("hummus", "sv", changedSv, changedFi), expected);
+    await appendFile(changedFi, "\n<!-- Simulated canonical source edit -->\n");
+    assert.deepEqual(await reviewedDietTagsForSource("hummus", "sv", changedSv, changedFi), [],
+      "a changed Finnish original invalidates even an unchanged translation");
+    await copyFile(fi, changedFi);
+    await appendFile(changedSv, "\n<!-- Simulated translation edit -->\n");
+    assert.deepEqual(await reviewedDietTagsForSource("hummus", "sv", changedSv, changedFi), [],
+      "a changed translation cannot keep its old review");
+  } finally {
+    await rm(dir, { recursive: true, force: true });
+  }
+});
