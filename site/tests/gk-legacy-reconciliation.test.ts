@@ -23,6 +23,12 @@ const read=(p:string)=>readFileSync(new URL('../../'+p,import.meta.url),'utf8');
 const json=(p:string)=>JSON.parse(read(p));
 const sha=(v:unknown)=>createHash('sha256').update(JSON.stringify(v)).digest('hex');
 const lf=(v:any):any=>typeof v==='string'?v.replaceAll('\r\n','\n'):Array.isArray(v)?v.map(lf):v&&typeof v==='object'?Object.fromEntries(Object.entries(v).map(([k,x])=>[k,lf(x)])):v;
+const frozenKarnivoreFi3Blobs: Readonly<Record<string, string>> = Object.freeze({
+  "karnivore-steak-and-eggs": "5e579c3a60b1835d2bd4895c377502139bb23b91",
+  "karnivore-voilohi-pannulla": "07f5b5670af65776209493cc4dce2b897f2635b0",
+  "karnivore-jauhelihakulho-munalla": "9f294f216ac4f94dacf745e197b3d6bd3cc96451"
+});
+
 const before=json('docs/nutrition/gk-legacy-reconciliation/baseline.json');
 const report=json('tmp/nutrition/glycemic-load-pilot.json');
 

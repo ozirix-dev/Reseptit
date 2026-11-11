@@ -40,6 +40,52 @@ const approvedC5DraftBlobs = new Map<string, string>([
   ["reseptit/raakileet/kiinalainen-jianbing-soy-bean-sauce-punnittu-v2.md", "d3ffb96266b4a3a1adffcd1e2c3589bb31ec2d0e"],
   ["reseptit/raakileet/meksikolainen-huevos-divorciados-kypsat-pavut-v2.md", "dca1c51653e98f8a8fc8ab71c1db1bca41d8ef90"],
 ]);
+// The first FI-only carnivore release is a separately audited new source set.
+// Exact blob-SHA pins admit only these ten new artifacts to the historical
+// change inspector. They DO NOT alter any of the frozen GK result approvals.
+const approvedKarnivoreFi3Files = new Map<string, string>([
+  [
+    "reseptit/paaruoat/karnivore-steak-and-eggs.md",
+    "5e579c3a60b1835d2bd4895c377502139bb23b91"
+  ],
+  [
+    "reseptit/paaruoat/karnivore-voilohi-pannulla.md",
+    "07f5b5670af65776209493cc4dce2b897f2635b0"
+  ],
+  [
+    "reseptit/paaruoat/karnivore-jauhelihakulho-munalla.md",
+    "9f294f216ac4f94dacf745e197b3d6bd3cc96451"
+  ],
+  [
+    "docs/nutrition/calculations/karnivore-steak-and-eggs.json",
+    "704318a12128a8cf1fcdbaa0522f46472dc59f45"
+  ],
+  [
+    "docs/nutrition/calculations/karnivore-voilohi-pannulla.json",
+    "124a8c4fd77cddccc35cfa4df60f52264dbc0eae"
+  ],
+  [
+    "docs/nutrition/calculations/karnivore-jauhelihakulho-munalla.json",
+    "443fce0b7f397edcf0ff9301300086f5ac2a43d1"
+  ],
+  [
+    "docs/nutrition/batches/batch-476.json",
+    "5a32c1ee9b0f249811b8394c921e53de03357e2e"
+  ],
+  [
+    "kuvat/paaruoat/karnivore-steak-and-eggs.webp",
+    "edd20a1b1c389c8effb0c0d5a2bec64282ab8ed2"
+  ],
+  [
+    "kuvat/paaruoat/karnivore-voilohi-pannulla.webp",
+    "d8221f785e9e5d04bd2fdaa35e8122f040d2b43f"
+  ],
+  [
+    "kuvat/paaruoat/karnivore-jauhelihakulho-munalla.webp",
+    "c41889d23890eecd4ae2c1353144658fbcbee675"
+  ]
+]);
+
 const approvedGlutenFreeFiFiles = new Map<string, string>([
   ["reseptit/jalkiruoat/gluteeniton-uunipannukakku.md", "060baa3ae58e0c9318a88451f1a8b72ea3c45de3"],
   ["reseptit/jalkiruoat/gluteeniton-perunajauhokakkupohja.md", "8de57cb20ad8aa888870a6f061a0aa5c7bfe73a6"],
@@ -134,6 +180,23 @@ export function assertRecipeBaseline(root: string, baseline: string, ...protecte
 
   for (const change of changes) {
     const [status, file] = change.split("\t");
+    if (status === "A" && approvedKarnivoreFi3Files.has(file)) {
+      const expectedBlob = approvedKarnivoreFi3Files.get(file)!;
+      const actualBlob = execFileSync("git", ["hash-object", file], { cwd: root, encoding: "utf8" }).trim();
+      assert.equal(actualBlob, expectedBlob, "UNREVIEWED_KARNIVORE_FI3_ARTIFACT: " + change);
+      if (file.startsWith("reseptit/paaruoat/")) {
+        const parsed = parseMarkdown(readFileSync(path.join(root, file), "utf8"));
+        assert.ok(parsed, "Karnivore FI3 source missing frontmatter");
+        const recipe = recipeFrontmatterSchema.parse(parsed.data);
+        assert.equal(recipe.status, "published", change);
+        assert.equal(recipe.language, "fi", change);
+        assert.equal(recipe.recipe_id, path.basename(file, ".md"), change);
+        assert.ok(recipe.image, change);
+        for (const key of ["carbs_net_per_serving_g", "carbs_total_per_serving_g", "protein_per_serving_g", "fat_per_serving_g"] as const)
+          assert.equal(typeof recipe[key], "number", change);
+      }
+      continue;
+    }
     if (status === "A" && approvedC5DraftBlobs.has(file)) {
       const actualBlob = execFileSync("git", ["hash-object", file], { cwd: root, encoding: "utf8" }).trim();
       assert.equal(actualBlob, approvedC5DraftBlobs.get(file), "UNREVIEWED_C5_DRAFT: " + change);
