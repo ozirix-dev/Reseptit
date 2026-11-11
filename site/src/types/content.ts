@@ -21,6 +21,8 @@ export interface ArticleEntry {
 
 export type RecipeLocale = "fi" | "en" | "sv" | "th";
 export type RecipeDietClass = "keto" | "vhh_tiukka" | "vhh_valjempi";
+/** Independently reviewed dietary compatibility, never inferred from keto or VHH. */
+export type RecipeDietTag = "carnivore" | "vegetarian" | "vegan" | "pescatarian";
 
 export interface RecipeIngredient {
   amount: number | null;
@@ -48,6 +50,8 @@ export interface RecipeEntry {
   title: string;
   category: "alkuruoka" | "paaruoka" | "jalkiruoka" | "leivonnainen" | "aamupala" | "valipala";
   dietClass: RecipeDietClass | null;
+  /** Only source-pinned recipe-level reviews populate this field. */
+  dietTags?: RecipeDietTag[];
   /** Explicit editorial verification only; absence never implies gluten-free. */
   glutenFree?: boolean;
   routePath: string;
