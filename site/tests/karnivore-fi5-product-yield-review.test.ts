@@ -79,6 +79,23 @@ test("five original drafts stay pinned and separate FI releases need their own e
       const result = verifyNutritionEvidence(published, evidence);
       assert.equal(result.status, "ESTIMATE WITH EVIDENCE", result.errors.join("\n"));
       assert.equal(result.calculated?.perServing.kcal, 571.83);
+    } else if (row.recipeId === "karnivore-lammaskyljykset-voissa") {
+      const publicBytes = await readFile(path.join(root, "reseptit/paaruoat", row.recipeId + ".md"));
+      const publicHash = createHash("sha1").update("blob " + publicBytes.byteLength + "\0").update(publicBytes).digest("hex");
+      assert.equal(publicHash, "3169d975a4c32f87b95baeb7e2d8ebaf2bba2d4c");
+      const publicSource = publicBytes.toString("utf8");
+      const parsedPublic = parseMarkdown(publicSource);
+      assert(parsedPublic);
+      const published = recipeFrontmatterSchema.parse(parsedPublic.data);
+      assert.equal(published.status, "published");
+      assert.equal(published.image?.src, "paaruoat/karnivore-lammaskyljykset-voissa.webp");
+      assert.match(publicSource, /70,8 % syötävää lihaa ja rasvaa ennen kypsennystä/);
+      assert.match(publicSource, /GK: ei määritetty\./);
+      const evidence = JSON.parse(await readFile(path.join(root, "docs/nutrition/calculations/karnivore-lammaskyljykset-voissa.json"), "utf8"));
+      assert.equal(evidence.ingredients[0].edibleFraction, 0.708);
+      const result = verifyNutritionEvidence(published, evidence);
+      assert.equal(result.status, "ESTIMATE WITH EVIDENCE", result.errors.join("\n"));
+      assert.equal(result.calculated?.perServing.kcal, 586.4);
     } else {
       await assert.rejects(access(path.join(root,"reseptit/paaruoat",row.recipeId+".md")),
         (error: unknown) => (error as NodeJS.ErrnoException).code === "ENOENT",

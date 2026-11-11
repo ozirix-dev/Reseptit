@@ -53,7 +53,7 @@ test("essential UI smoke: locales, search, a recipe, blog and no-JS navigation",
       assert.equal(await page.locator('#recipe-diet option[value="carnivore"]').count(), expectedCarnivore ? 1 : 0,
         locale + " only advertises published, source-reviewed carnivore recipes");
       if (locale === "fi") {
-        assert.equal(expectedCarnivore,6,"exactly the six reviewed FI carnivore recipes are published");
+        assert.equal(expectedCarnivore,7,"exactly the seven reviewed FI carnivore recipes are published");
         await page.getByLabel(labels.dietFilter).selectOption("carnivore");
         await page.waitForFunction(() => new URL(location.href).searchParams.get("diet") === "carnivore");
         assert.equal(await page.locator(".recipe-card-grid .recipe-card").count(),expectedCarnivore);
