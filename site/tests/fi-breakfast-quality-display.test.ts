@@ -231,3 +231,21 @@ test("F25 unsweetened rosewater keeps FI source and nutrition sealed", () => {
   assert.match(after.content, /5 ml makeuttamatonta elintarvikekäyttöön tarkoitettua ruusuvettä/);
   assert.match(after.content, /Al Wadi Rose Water, ei ruusisiirappia/);
 });
+
+test("F25 doujiang and Thai coconut-pancake public corrections preserve source nutrition and all ingredient masses", () => {
+  const targets = [
+    ["kiinalainen-soijamaito-aamiaisella", /Lee Kum Kee Rice Vinegar/, /Sisältää soijaa ja seesamia/],
+    ["thai-roti-munalla-banaanilla", /Thaityyliset kookos-banaanimunaletut/, /125 g syötävää osaa/],
+  ] as const;
+  for (const [id, titleOrIngredient, prep] of targets) {
+    const relative = "reseptit/aamupalat/" + id + ".md";
+    const raw = readFileSync(path.join(root, relative), "utf8");
+    const original = parseMarkdown(raw), shown = parseMarkdown(projectBreakfastFiQualityDisplay(relative, raw));
+    assert.ok(original && shown);
+    assert.deepEqual(shown.data.ingredients, original.data.ingredients);
+    assert.equal(shown.data.servings, original.data.servings);
+    for (const macro of macros) assert.equal(shown.data[macro], original.data[macro]);
+    assert.match(JSON.stringify(shown), titleOrIngredient);
+    assert.match(shown.content, prep);
+  }
+});
