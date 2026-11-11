@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
 import { assertTranslationSourceIsNotQuarantined, overlayTranslationPublicationIndex } from "../scripts/translation-publication-index";
+import { assertF25SourceReleaseAuthorized, f25SourceReleaseGate, f25SourceGatePreflight } from "../scripts/f25-source-release-gate";
 import type { TranslationAuditResult } from "../scripts/translation-audit";
 
 const source = () => ({
@@ -73,4 +74,26 @@ test("quarantine index rejection is global, including in a targeted translation 
     () => overlayTranslationPublicationIndex([source()], index("pohjoisafrikkalainen-maakouda"), new Set(["sample"])),
     /TRANSLATION_QUARANTINED_FI/,
   );
+});
+
+
+test("F25 next15 protected even though their historical FI markdown says published", () => {
+  const gate = f25SourceGatePreflight();
+  assert.equal(gate.total,15);
+  assert.equal(gate.held,15);
+  assert.equal(gate.authorized,0);
+  assert.equal(gate.rows.filter(row=>row.quarantine).length,2);
+  const ids = f25SourceReleaseGate.sources.map(x=>x.recipe_id);
+  assert.equal(new Set(ids).size,15);
+  for (const id of ids) {
+    assert.throws(()=>assertF25SourceReleaseAuthorized(id),/F25_SOURCE_HOLD/);
+    const sample=source();
+    sample.data.recipe_id=id;
+    sample.data.url_slug=id;
+    assert.equal(sample.data.status,"published");
+    assert.throws(()=>overlayTranslationPublicationIndex([sample],index(id)),/F25_SOURCE_HOLD|TRANSLATION_QUARANTINED_FI/);
+  }
+  // A targeted audit cannot ignore a forbidden registry entry.
+  assert.throws(()=>overlayTranslationPublicationIndex([source()],index("rahka-marjakerroskulho"),new Set(["sample"])),/F25_SOURCE_HOLD/);
+  assert.doesNotThrow(()=>assertF25SourceReleaseAuthorized("kiinalainen-soijamaito-aamiaisella"));
 });
