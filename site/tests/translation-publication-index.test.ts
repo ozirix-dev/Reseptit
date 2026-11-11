@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import { overlayTranslationPublicationIndex } from "../scripts/translation-publication-index";
+import { assertTranslationSourceIsNotQuarantined, overlayTranslationPublicationIndex } from "../scripts/translation-publication-index";
 import type { TranslationAuditResult } from "../scripts/translation-audit";
 
 const source = () => ({
@@ -45,4 +45,32 @@ test("targeted audits preserve unrelated sources but still reject duplicate inde
   const original = source();
   assert.equal(overlayTranslationPublicationIndex([original], index(), new Set(["other"]))[0], original);
   assert.throws(() => overlayTranslationPublicationIndex([original], {schemaVersion:1,sources:[index().sources[0],index().sources[0]]}, new Set(["other"])), /DUPLICATE_SOURCE/);
+});
+
+
+test("quarantined FI cannot gain a translation index entry despite raw published metadata", () => {
+  const quarantinedId = "pohjoisafrikkalainen-maakouda";
+  const rawPublished = source();
+  rawPublished.data.recipe_id = quarantinedId;
+  rawPublished.data.url_slug = quarantinedId;
+  assert.equal(rawPublished.data.status, "published");
+  assert.throws(
+    () => overlayTranslationPublicationIndex([rawPublished], index(quarantinedId)),
+    /TRANSLATION_QUARANTINED_FI: pohjoisafrikkalainen-maakouda/,
+  );
+});
+
+test("a standalone published language file cannot bypass the quarantine guard", () => {
+  assert.throws(
+    () => assertTranslationSourceIsNotQuarantined("indonesialainen-nasi-goreng-aamiaisriisi"),
+    /TRANSLATION_QUARANTINED_FI: indonesialainen-nasi-goreng-aamiaisriisi/,
+  );
+  assert.doesNotThrow(() => assertTranslationSourceIsNotQuarantined("rahka-marjakerroskulho"));
+});
+
+test("quarantine index rejection is global, including in a targeted translation audit", () => {
+  assert.throws(
+    () => overlayTranslationPublicationIndex([source()], index("pohjoisafrikkalainen-maakouda"), new Set(["sample"])),
+    /TRANSLATION_QUARANTINED_FI/,
+  );
 });
