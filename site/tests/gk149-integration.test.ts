@@ -13,11 +13,11 @@ test('shared-source queue is deduplicated and the new pending proposal cannot ex
  const p=JSON.parse(execFileSync(process.platform==='win32'?'python':'python3',['-I',path.join(root,folder+'verify_strategy.py')],{encoding:'utf8'}));assert.equal(p.status,'PASS');assert.equal(p.approvedPublicScope,16);assert.equal(p.pendingNumericProposal,1);assert.equal(p.queueDistinct,154);assert.equal(p.writes,0);
 });
 test('16 explicitly approved exact versions raise distinct numeric recipe coverage156→172',()=>{
- const coverage=countGkVersions(report.results,variants);assert.equal(variants.length,16);assert.equal(coverage.numericRecipes,172);assert.equal(coverage.additionalA,10);assert.equal(coverage.additionalB,6);assert.equal(coverage.classOnly,0);assert.equal(coverage.missing,170);assert.equal(coverage.total,342);assert.deepEqual(
+ const coverage=countGkVersions(report.results,variants);assert.equal(variants.length,16);assert.equal(coverage.numericRecipes,172);assert.equal(coverage.additionalA,10);assert.equal(coverage.additionalB,6);assert.equal(coverage.classOnly,0);assert.equal(coverage.missing,171);assert.equal(coverage.total,343);assert.deepEqual(
     gkOnlyVariants.filter(v=>approval.approvedInputs[v.recipeId]===v.inputSha256),
     variants.filter(v=>!isPublicRecipeQuarantined(v.recipeId)),
     "public GK149 variants omit only explicitly quarantined recipe IDs"
-  );assert.deepEqual(variants,report.gkOnlyVariants.filter((v:any)=>approval.approvedInputs[v.recipeId]===v.inputSha256));assert.equal(new Set(coverage.numericRecipeIds).size,172);assert.deepEqual(report.coverageViews.originalRecipe,{total:342,numeric:156,missing:186});
+  );assert.deepEqual(variants,report.gkOnlyVariants.filter((v:any)=>approval.approvedInputs[v.recipeId]===v.inputSha256));assert.equal(new Set(coverage.numericRecipeIds).size,172);assert.deepEqual(report.coverageViews.originalRecipe,{total:343,numeric:156,missing:187});
  const input=read(folder+'cases.json').cases,gold=read(folder+'golden.json').results;
  for(const v of variants){const c=input.find((c:any)=>c.recipeId===v.recipeId),g=gold.find((g:any)=>g.recipeId===v.recipeId);assert.equal(v.inputSha256,approval.approvedInputs[v.recipeId]);assert.equal(v.inputSha256,c.inputSha256);assert.equal(v.point,g.point);assert.deepEqual(v.scenarioRange,g.scenarioRange);assert.equal(v.omittedCho,g.omittedCho);assert.equal(v.confidence,'LOW');assert.equal(v.ingredients.length,c.candidateIngredients.length);assert.ok(v.sources.length>0);assert.ok(v.sources.every(s=>s.url.startsWith('https://')||s.url==='#gk-only-method'));}
 });

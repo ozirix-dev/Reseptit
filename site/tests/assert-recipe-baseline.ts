@@ -47,6 +47,11 @@ const approvedGlutenFreeFiFiles = new Map<string, string>([
   ["reseptit/leivonnaiset/gluteeniton-siemenvuokaleipa.md", "c988c1b6e749f7848c99b999b1fcee46256a951f"],
   ["reseptit/leivonnaiset/gluteenittomat-kauralesesampylat.md", "45e9bfe04897eaee8ed7c01590d88f33c663b124"],
 ]);
+// Exact source and incomplete nutrition evidence admitted after the frozen GK baseline.
+const reviewedCocoaFiles = new Map([
+  ["reseptit/aamupalat/rasvakaakao-rouva-keto.md", "73ec1919b0038f2479837583081a4d3662f49c7bb4d81d301a75505b8749e32d"],
+  ["docs/nutrition/calculations/rasvakaakao-rouva-keto.json", "ac1a88c6fdc720330ffb50858a90e76ae846a0e4c884494d3189659ee8154af5"],
+]);
 const postBaselineCakeFiles = new Map([
   ["reseptit/jalkiruoat/sienikakkupohja.md", "M"],
   ["reseptit/jalkiruoat/perinteinen-mansikkataytekakku-sienikakkupohjalla.md", "A"],
@@ -153,6 +158,10 @@ export function assertRecipeBaseline(root: string, baseline: string, ...protecte
       assert.equal(recipe?.data.status, "published", change);
       assert.equal(recipe?.data.gluten_free, true, change);
       assert.ok(recipe?.data.gluten_free_review, change);
+      continue;
+    }
+    if (status === "A" && reviewedCocoaFiles.has(file)) {
+      assert.equal(textHash(readFileSync(path.join(root, file), "utf8")), reviewedCocoaFiles.get(file), change);
       continue;
     }
     if (status === "A" && Object.hasOwn(mainAdditionFiles, file)) {

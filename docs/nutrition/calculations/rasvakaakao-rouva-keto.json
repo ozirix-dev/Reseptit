@@ -1,0 +1,190 @@
+{
+  "recipeId": "rasvakaakao-rouva-keto",
+  "sourceHash": "63045dfc0df6a5cea2f5ebd3b6f18926beefc90c594c59767c03833ffa320853",
+  "calculatedAt": "2026-11-11",
+  "batchId": "batch-298",
+  "servings": 1,
+  "scope": "Ingredient-label estimates for a single cup. All weighed edible ingredients are included. The chocolate is cross-checked against the Finnish-market GTIN and Lindt's EU nutrition declaration.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "publicationStatus": "WITHHELD_SOURCE_INCOMPLETE",
+  "withholdingReason": "The published product labels do not provide the fibre and polyol evidence needed for a complete carbohydrate calculation. No public macro or GK value is supplied.",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "item": "makeuttamatonta kaakaojauhetta",
+      "amount": 6,
+      "unit": "g",
+      "state": "plain unsweetened cocoa powder",
+      "matchEvidence": "The calculation uses Foodin raakakaakaojauhe on the weighed ingredient basis.",
+      "edibleFraction": 1,
+      "edibleEvidence": "The quantity is the edible ingredient added to the saucepan.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All added nutrients stay in the drink. No solids or fat are discarded.",
+      "record": {
+        "id": "foodin-raw-cocoa-250g",
+        "name": "Foodin raakakaakaojauhe",
+        "sourceUrl": "https://foodin.fi/tuote/kaakaojauhe-luomu-raaka-250g/",
+        "retrievedAt": "2026-11-11",
+        "licence": "Manufacturer's published product information",
+        "state": "plain unsweetened cocoa powder",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "kcal": 358,
+          "carbohydrate": 22,
+          "protein": 28,
+          "fat": 12,
+          "fibre": 28,
+          "polyols": null
+        }
+      }
+    },
+    {
+      "item": "suolatonta voita",
+      "amount": 8,
+      "unit": "g",
+      "state": "unsalted dairy butter",
+      "matchEvidence": "The calculation uses Valio voi suolaamaton on the weighed ingredient basis.",
+      "edibleFraction": 1,
+      "edibleEvidence": "The quantity is the edible ingredient added to the saucepan.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All added nutrients stay in the drink. No solids or fat are discarded.",
+      "record": {
+        "id": "valio-6408430030026",
+        "name": "Valio voi suolaamaton",
+        "sourceUrl": "https://www.valio.fi/tuotteet/valio-voi-suolaamaton/",
+        "retrievedAt": "2026-11-11",
+        "licence": "Manufacturer's published product information",
+        "state": "unsalted dairy butter",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "kcal": 731,
+          "carbohydrate": 0.8,
+          "protein": 0.6,
+          "fat": 82,
+          "fibre": null,
+          "polyols": null
+        }
+      }
+    },
+    {
+      "item": "neitsytkookosöljyä",
+      "amount": 8,
+      "unit": "g",
+      "state": "virgin coconut oil",
+      "matchEvidence": "The calculation uses Foodin neitsytkookosöljy on the weighed ingredient basis.",
+      "edibleFraction": 1,
+      "edibleEvidence": "The quantity is the edible ingredient added to the saucepan.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All added nutrients stay in the drink. No solids or fat are discarded.",
+      "record": {
+        "id": "foodin-virgin-coconut-oil-1l",
+        "name": "Foodin neitsytkookosöljy",
+        "sourceUrl": "https://foodin.fi/tuote/kylmapuristettu-neitsytkookosoljy-1l/",
+        "retrievedAt": "2026-11-11",
+        "licence": "Manufacturer's published product information",
+        "state": "virgin coconut oil",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "kcal": 900,
+          "carbohydrate": 0,
+          "protein": 0,
+          "fat": 100,
+          "fibre": null,
+          "polyols": null
+        }
+      }
+    },
+    {
+      "item": "kuohukermaa (35 % rasvaa)",
+      "amount": 30,
+      "unit": "g",
+      "state": "dairy whipping cream, 35% fat",
+      "matchEvidence": "The calculation uses Valio Keittiön kuohukerma laktoositon on the weighed ingredient basis.",
+      "edibleFraction": 1,
+      "edibleEvidence": "The quantity is the edible ingredient added to the saucepan.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All added nutrients stay in the drink. No solids or fat are discarded.",
+      "record": {
+        "id": "valio-6408430001538",
+        "name": "Valio Keittiön kuohukerma laktoositon",
+        "sourceUrl": "https://www.valio.fi/tuotteet/valio-keittion-kuohukerma-laktoositon/2-dl-tolkki/",
+        "retrievedAt": "2026-11-11",
+        "licence": "Manufacturer's published product information",
+        "state": "dairy whipping cream, 35% fat",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "kcal": 336,
+          "carbohydrate": 3,
+          "protein": 2.2,
+          "fat": 35,
+          "fibre": 0,
+          "polyols": null
+        }
+      }
+    },
+    {
+      "item": "Lindt Excellence 90 % -tummaa suklaata",
+      "amount": 15,
+      "unit": "g",
+      "state": "90% dark chocolate",
+      "matchEvidence": "The calculation uses Lindt Excellence Dark 90% on the weighed ingredient basis.",
+      "edibleFraction": 1,
+      "edibleEvidence": "The quantity is the edible ingredient added to the saucepan.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All added nutrients stay in the drink. No solids or fat are discarded.",
+      "record": {
+        "id": "lindt-3046920029759",
+        "name": "Lindt Excellence Dark 90%",
+        "sourceUrl": "https://www.lindt.fi/fi/lindt-excellence-dark-90-bar-100g-fi-fi-03046920029759",
+        "retrievedAt": "2026-11-11",
+        "licence": "Manufacturer's published product information",
+        "state": "90% dark chocolate",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "kcal": 592,
+          "carbohydrate": 14,
+          "protein": 10,
+          "fat": 55,
+          "fibre": null,
+          "polyols": null
+        }
+      }
+    },
+    {
+      "item": "vettä",
+      "amount": 200,
+      "unit": "g",
+      "state": "plain drinking water",
+      "matchEvidence": "The calculation uses Water, tap, drinking on the weighed ingredient basis.",
+      "edibleFraction": 1,
+      "edibleEvidence": "The quantity is the edible ingredient added to the saucepan.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All added nutrients stay in the drink. No solids or fat are discarded.",
+      "record": {
+        "id": "usda-sr-173647",
+        "name": "Water, tap, drinking",
+        "sourceUrl": "https://fdc.nal.usda.gov/food-details/173647/nutrients",
+        "retrievedAt": "2026-11-11",
+        "licence": "USDA FoodData Central public domain",
+        "state": "plain drinking water",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Plain unflavoured drinking water has no carbohydrate or added sweeteners.",
+        "per100g": {
+          "kcal": 0,
+          "carbohydrate": 0,
+          "protein": 0,
+          "fat": 0,
+          "fibre": 0,
+          "polyols": 0
+        }
+      }
+    }
+  ]
+}
