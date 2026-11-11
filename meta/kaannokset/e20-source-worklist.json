@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 1,
+  "batch": "E20-20261110",
+  "status": "source-triage-only",
+  "sourceMainSha": "5bdb0a4e1c04f8fb75db7cd5a32ba218483a08e8",
+  "expectedSources": 20,
+  "plannedPairs": 60,
+  "release_authorized": false,
+  "independentHumanReview": false,
+  "recipeSources": [
+    {
+      "recipe_id": "lahi-ita-taatelipuuro-tahinilla",
+      "source_path": "reseptit/aamupalat/lahi-ita-taatelipuuro-tahinilla.md",
+      "source_blob_sha": "f3b02513abd07eb53d3c370c4716d2f3ef157b0f",
+      "review_state": "needs-chef-review",
+      "release_authorized": false,
+      "review_note": "PR386 draft triple; review nutrition and semantics"
+    },
+    {
+      "recipe_id": "pohjoisafrikkalainen-minttutee-kaurapuuro",
+      "source_path": "reseptit/aamupalat/pohjoisafrikkalainen-minttutee-kaurapuuro.md",
+      "source_blob_sha": "1dccd27c6aeb5d88df437a358b6b52a01d37f25c",
+      "review_state": "needs-chef-review",
+      "release_authorized": false,
+      "review_note": "PR386 draft triple; whole milk FI display now main"
+    },
+    {
+      "recipe_id": "karibia-johnny-cake",
+      "source_path": "reseptit/aamupalat/karibia-johnny-cake.md",
+      "source_blob_sha": "ac958af27184f3b8ae532948b751fd5f20e721f9",
+      "review_state": "needs-chef-review",
+      "release_authorized": false,
+      "review_note": "PR386 draft triple; review cooking and macros"
+    },
+    {
+      "recipe_id": "briossisampylat-joshua-weissman",
+      "source_path": "reseptit/leivonnaiset/briossisampylat-joshua-weissman.md",
+      "source_blob_sha": "19df7d047fcf39053d30fdd14fb4570d3c1a7541",
+      "review_state": "needs-chef-review",
+      "release_authorized": false,
+      "review_note": "PR395 draft triple; attribution retained, GK not approved"
+    },
+    {
+      "recipe_id": "hampurilaissampylat-moomie",
+      "source_path": "reseptit/leivonnaiset/hampurilaissampylat-moomie.md",
+      "source_blob_sha": "04c276b09130be2b3caaab76cf7cf6217c980b95",
+      "review_state": "needs-chef-review",
+      "release_authorized": false,
+      "review_note": "PR395 draft triple; attribution retained, GK not approved"
+    },
+    {
+      "recipe_id": "kevyet-briossisampylat-clever-carrot",
+      "source_path": "reseptit/leivonnaiset/kevyet-briossisampylat-clever-carrot.md",
+      "source_blob_sha": "ebc0cfeb56ac1226905c4522e0ff39052bf7e5e0",
+      "review_state": "needs-chef-review",
+      "release_authorized": false,
+      "review_note": "PR395 draft triple; attribution retained, GK not approved"
+    },
+    {
+      "recipe_id": "yrttituorejuusto-kinkkurullat",
+      "source_path": "reseptit/aamupalat/yrttituorejuusto-kinkkurullat.md",
+      "source_blob_sha": "886ec36b1e24d1864c9b442d64b14c602c2852c7",
+      "review_state": "needs-chef-review",
+      "release_authorized": false,
+      "review_note": "FI public overlay PR394 corrected 4 servings/cold cooking, new translations needed"
+    },
+    {
+      "recipe_id": "malesialainen-mee-goreng-aamunuudeleilla",
+      "source_path": "reseptit/aamupalat/malesialainen-mee-goreng-aamunuudeleilla.md",
+      "source_blob_sha": "e95d1fa6320a7351006fae04180a839f93cbe301",
+      "review_state": "needs-chef-review",
+      "release_authorized": false,
+      "review_note": "FI public overlay PR394 corrected wheat noodle facet, translations needed"
+    },
+    {
+      "recipe_id": "vietnamilainen-hu-tieu-aamiaiskeitto",
+      "source_path": "reseptit/aamupalat/vietnamilainen-hu-tieu-aamiaiskeitto.md",
+      "source_blob_sha": "b5eca7502f5f067c345a6076117d6366007f1b70",
+      "review_state": "needs-chef-review",
+      "release_authorized": false,
+      "review_note": "Specific FI steps; meat fully cooked and 20 minute time review"
+    },
+    {
+      "recipe_id": "kiinalainen-teehaudutetut-munat",
+      "source_path": "reseptit/aamupalat/kiinalainen-teehaudutetut-munat.md",
+      "source_blob_sha": "75e4f307e7caa387802c2959596f7731bd3c0dbe",
+      "review_state": "source-hold",
+      "release_authorized": false,
+      "blocker": "Cooked eggs peeled before cracked-shell tea marinade: contradiction"
+    },
+    {
+      "recipe_id": "karibia-kookosriisi-pavuilla",
+      "source_path": "reseptit/aamupalat/karibia-kookosriisi-pavuilla.md",
+      "source_blob_sha": "74a8778bba54781d639311df8a1a8959017b0182",
+      "review_state": "source-hold",
+      "release_authorized": false,
+      "blocker": "100g dry rice with 184g coconut milk needs water/cooking evaluation"
+    },
+    {
+      "recipe_id": "japanilainen-onigiri-lohella",
+      "source_path": "reseptit/aamupalat/japanilainen-onigiri-lohella.md",
+      "source_blob_sha": "b538651f6bcae3abb2e987549a85fc5589588e4c",
+      "review_state": "source-hold",
+      "release_authorized": false,
+      "blocker": "Generic rice and tofu/egg text, not salmon onigiri preparation"
+    },
+    {
+      "recipe_id": "intialainen-aloo-paratha",
+      "source_path": "reseptit/aamupalat/intialainen-aloo-paratha.md",
+      "source_blob_sha": "9ed1496a047c04668a6b219a99e22feb9146c721",
+      "review_state": "source-hold",
+      "release_authorized": false,
+      "blocker": "Generic bread preparation missing potato filling"
+    },
+    {
+      "recipe_id": "lahi-ita-labneh-kulho-zaatarilla",
+      "source_path": "reseptit/aamupalat/lahi-ita-labneh-kulho-zaatarilla.md",
+      "source_blob_sha": "c9651cac25fa6fd639ad08892cdd2f3aa5355978",
+      "review_state": "source-hold",
+      "release_authorized": false,
+      "blocker": "Generic warm bean/tofu bowl instructions for cold labneh"
+    },
+    {
+      "recipe_id": "valimerellinen-ricotta-persikkakulho",
+      "source_path": "reseptit/aamupalat/valimerellinen-ricotta-persikkakulho.md",
+      "source_blob_sha": "1217327105b00f62f6601ac347ce61ffd393923a",
+      "review_state": "source-hold",
+      "release_authorized": false,
+      "blocker": "Generic warm bowl for cold ricotta and peach"
+    },
+    {
+      "recipe_id": "intialainen-rava-uttapam",
+      "source_path": "reseptit/aamupalat/intialainen-rava-uttapam.md",
+      "source_blob_sha": "65998ff2f37885f556fe28b82c6598fd70d17371",
+      "review_state": "source-hold",
+      "release_authorized": false,
+      "blocker": "Revised semolina-yogurt batter and pan instructions; edible onion and tomato weights and E20 source review remain open"
+    },
+    {
+      "recipe_id": "valimerellinen-menemen-fetalla",
+      "source_path": "reseptit/aamupalat/valimerellinen-menemen-fetalla.md",
+      "source_blob_sha": "84773d28d400fd8dee6226f245e32476913485cf",
+      "review_state": "source-hold",
+      "release_authorized": false,
+      "blocker": "Revised egg, tomato and pepper preparation; edible tomato and pepper weights and E20 source review remain open"
+    },
+    {
+      "recipe_id": "malesialainen-apam-balik",
+      "source_path": "reseptit/aamupalat/malesialainen-apam-balik.md",
+      "source_blob_sha": "67ecdd8fc0ce88026b25779c7e43202cf435bda0",
+      "review_state": "source-hold",
+      "release_authorized": false,
+      "blocker": "Revised thick folded home pancake; approved GK100 applies to a separate thin version; E20 source review remains open"
+    },
+    {
+      "recipe_id": "japanilainen-soba-aamiaiskeitto",
+      "source_path": "reseptit/aamupalat/japanilainen-soba-aamiaiskeitto.md",
+      "source_blob_sha": "1dfb8be5bfdc6e09080610bc9191505f9175cf25",
+      "review_state": "source-hold",
+      "release_authorized": false,
+      "blocker": "Generic soup, soba cooking times not specific"
+    },
+    {
+      "recipe_id": "thai-maissifritterit",
+      "source_path": "reseptit/aamupalat/thai-maissifritterit.md",
+      "source_blob_sha": "c6f441e1e006d7792c23d9274c76b32159332b41",
+      "review_state": "source-hold",
+      "release_authorized": false,
+      "blocker": "Generic mashed-item fritters, corn technique unclear"
+    }
+  ]
+}
