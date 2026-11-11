@@ -229,8 +229,8 @@ test("F25 A2 product-matched scenarios replay from SHA-sealed nutrition records 
   }
   const tapi=r.rows.find(x=>x.recipeId==="vietnamilainen-papaija-kookospuuro");
   assert.equal(tapi?.productCandidates.length,3);
-  assert.deepEqual(tapi?.productCandidates.map(x=>x.perServingPartial.carbohydrate),[53.49,54.49,53.49]);
-  assert.ok(tapi?.productCandidates.every(x=>x.missing.includes("pearl_fibre")&&x.approval===null));
+  assert.deepEqual(tapi?.productCandidates.map((x:any)=>x.perServingPartial.carbohydrate),[53.49,54.49,53.49]);
+  assert.ok(tapi?.productCandidates.every((x:any)=>x.missing.includes("pearl_fibre")&&x.approval===null));
   const cuon=r.rows.find(x=>x.recipeId==="vietnamilainen-banh-cuon-sienilla");
   assert.equal(cuon?.productCandidates.length,1);
   assert.equal(cuon?.productCandidates[0].perServingPartial.carbohydrate,37.655);
