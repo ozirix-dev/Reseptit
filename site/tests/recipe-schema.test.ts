@@ -190,6 +190,11 @@ test("F25 consumer-facing review notices are separate from GK-sealed recipe Mark
     "vietnamilainen-banh-xeo-aamiaisletut",
     "pohjoisafrikkalainen-baghrir",
     "vietnamilainen-banh-cuon-sienilla",
+    "meksikolainen-chilaquiles-verdes",
+    "meksikolainen-paputostada-aamupalaksi",
+    "korealainen-kimchi-jeon-aamiaiseksi",
+    "karibia-plantain-aamiaislautanen",
+    "munakoiso-kesakurpitsalasagne",
   ];
   assert.deepEqual(Object.keys(sourceReviewNotices).sort(), [...ids].sort());
   for (const id of ids) {
@@ -207,4 +212,7 @@ test("F25 consumer-facing review notices are separate from GK-sealed recipe Mark
   assert.match(sourceReviewNotice("pohjoisafrikkalainen-baghrir")!.details, /150 ml vettä/);
   assert.match(sourceReviewNotice("vietnamilainen-banh-xeo-aamiaisletut")!.allergens, /äyriäisiä/);
   assert.match(sourceReviewNotice("vietnamilainen-papaija-kookospuuro")!.details, /15–20 minuutissa/);
+  assert.match(sourceReviewNotice("meksikolainen-chilaquiles-verdes")!.details,/51,845 g/);
+  assert.match(sourceReviewNotice("korealainen-kimchi-jeon-aamiaiseksi")!.details,/4,5 g/);
+  assert.match(sourceReviewNotice("munakoiso-kesakurpitsalasagne")!.details,/200 g kuivia/);
 });
