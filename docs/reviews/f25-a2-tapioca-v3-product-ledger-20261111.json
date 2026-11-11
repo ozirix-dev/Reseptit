@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-11",
+  "recipeId": "vietnamilainen-papaija-kookospuuro",
+  "version": "V3_RESEARCH_ONLY",
+  "status": "HOLD",
+  "sourceBaseline": {
+    "fiPath": "reseptit/aamupalat/vietnamilainen-papaija-kookospuuro.md",
+    "gitBlobSha": "ecae7e7e302d8564a171955ef8e9117f69a6fb7d",
+    "nutritionInput": "docs/nutrition/calculations/vietnamilainen-papaija-kookospuuro.json",
+    "oldWaterMl": 700,
+    "newWaterMl": 425
+  },
+  "servings": 2,
+  "waterDiscarded": false,
+  "physicalTrialCompleted": false,
+  "products": {
+    "pearls": {
+      "name": "Cock small white tapioca pearls 400g",
+      "ean": "0084909007087",
+      "dryMassG": 100,
+      "url": "https://www.k-ruoka.fi/kauppa/tuote/cock-tapioca-pearl-400g-0084909007087",
+      "per100g": {
+        "carbohydrate": 86,
+        "fat": null,
+        "protein": null,
+        "fibre": null,
+        "polyols": null
+      },
+      "upperBoundFatGPer100g": 0.5,
+      "upperBoundProteinGPer100g": 0.5
+    },
+    "coconut": {
+      "name": "Thai Choice full-fat coconut milk 400ml",
+      "ean": "8851978804068",
+      "volumeMl": 200,
+      "url": "https://www.k-ruoka.fi/kauppa/tuote/thai-choice-kookosmaito-400ml-8851978804068",
+      "per100ml": {
+        "carbohydrate": 2,
+        "fat": 18,
+        "protein": 1,
+        "fibre": null,
+        "polyols": null
+      }
+    },
+    "papaya": {
+      "massG": 200,
+      "per100g": {
+        "carbohydrate": 8.4,
+        "protein": 0.4,
+        "fat": 0,
+        "fibre": 2.1
+      },
+      "source": "afcd-F006528-release-3"
+    },
+    "lime": {
+      "massG": 15,
+      "per100g": {
+        "carbohydrate": 1.2,
+        "protein": 0.8,
+        "fat": 0.1,
+        "fibre": 3.6
+      },
+      "source": "afcd-F004729-release-3"
+    },
+    "water": {
+      "volumeMl": 425,
+      "source": "fineli-922-release-20"
+    },
+    "salt": {
+      "massG": 1,
+      "contributionToDisplayedMacros": 0
+    }
+  },
+  "perServingPartial": {
+    "availableCarbohydrateG": 53.49,
+    "fatLowerBoundG": 18.0075,
+    "fatUpperBoundExclusiveG": 18.2575,
+    "proteinLowerBoundG": 1.46,
+    "proteinUpperBoundExclusiveG": 1.71,
+    "fibreLowerBoundG": 2.37,
+    "fibreTotalG": null,
+    "polyolsTotalG": null,
+    "kcalTotal": null
+  },
+  "sourceDecision": {
+    "nutritionApproval": false,
+    "gkApproval": false,
+    "translationApproval": false,
+    "physicalTrial": false,
+    "gk": null,
+    "sourceHashApproved": false
+  },
+  "warnings": [
+    "The coconut label lists values per100ml; do not apply AFCD density 0.92g/ml to the brand's per-volume label.",
+    "The Cock pearls say fat and protein LESS THAN 0.5g/100g; bounds are not equalities.",
+    "Fibre/polyols are missing for Cock pearls and Thai Choice milk; total fibre and polyols are null.",
+    "This candidate retains 425ml water (zero macros), not the previous 700ml, requiring new source SHA and method review.",
+    "Cook time is a documented suggestion from the manufacturer's retail recipe, not a physical trial.",
+    "Potential coconut and tree nut traces in specified coconut milk; check package and actual allergens."
+  ]
+}
