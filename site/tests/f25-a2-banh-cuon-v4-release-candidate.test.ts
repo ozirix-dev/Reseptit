@@ -117,7 +117,7 @@ test("Banh cuon V4 replays exact per100ml label without density, unknown polyols
 test("Banh cuon GK-unavailable review documents major unmatched starch instead of inventing numeric GI",async()=>{
   const {MAX_UNMATCHED_GI_INGREDIENT_CARBOHYDRATE_G,CUMULATIVE_OMITTED_CARBOHYDRATE_TOLERANCE_G}
     =await import("../scripts/glycemic-load-model");
-  const gk=read("docs/reviews/f25-a2-release/banh-cuon-v4-gk-unavailable-evidence.json");
+  const gk=load("docs/reviews/f25-a2-release/banh-cuon-v4-gk-unavailable-evidence.json");
   const fi=readFileSync(path.join(root,gk.sourcePath));
   assert.equal(b(fi),gk.sourceGitBlob);
   assert.equal(gk.recipeId,ledger.recipeId);
