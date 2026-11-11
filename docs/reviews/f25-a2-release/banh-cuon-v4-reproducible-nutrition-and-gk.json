@@ -1,0 +1,231 @@
+{
+  "schemaVersion": 1,
+  "reviewDate": "2026-11-11",
+  "recipeId": "vietnamilainen-banh-cuon-sienilla",
+  "stage": "RELEASE_CANDIDATE__NOT_AUTHORIZED",
+  "sourcePath": "docs/reviews/f25-a2-release/vietnamilainen-banh-cuon-sienilla-fi-v4.md",
+  "candidateSourceGitBlob": "49f07c0e60a0657c3cafaa8ec41a6b4ce6b7ba19",
+  "historicCanonicalPath": "reseptit/aamupalat/vietnamilainen-banh-cuon-sienilla.md",
+  "historicCanonicalGitBlob": "fa1d7e18602b14acfa397e4df5fa6747d8410b73",
+  "servings": 2,
+  "ingredientUnits": "Direct per100g and per100ml label arithmetic. No density conversion (15ml sauce * 100ml label exactly). This is a raw ingredient scenario, not an approved nutrition-model calculate() result.",
+  "ingredients": [
+    {
+      "item": "Virtasalmen Viljatuote hienoa riisijauhoa",
+      "amount": 100,
+      "unit": "g",
+      "source": "https://www.k-ruoka.fi/kauppa/tuote/viljatuote-hieno-riisijauho-500g-gton-6430041080152",
+      "ean": "6430041080152",
+      "basis": "per100g",
+      "nutrition": {
+        "carbohydrate": 74,
+        "protein": 8,
+        "fat": 1.8,
+        "fibre": 1,
+        "polyols": null,
+        "salt": 0.1
+      },
+      "polyolsEvidence": "NOT_VERIFIED_ON_PRODUCT_LABEL"
+    },
+    {
+      "item": "Farina tapiokatärkkelystä",
+      "amount": 20,
+      "unit": "g",
+      "source": "https://www.k-ruoka.fi/kauppa/tuote/farina-tapiokatarkkelys-400g-gton-6418513014119",
+      "ean": "6418513014119",
+      "basis": "per100g",
+      "nutrition": {
+        "carbohydrate": 86,
+        "protein": 0,
+        "fat": 0.1,
+        "fibre": 0,
+        "polyols": null,
+        "salt": 0.03
+      },
+      "polyolsEvidence": "NOT_VERIFIED_ON_PRODUCT_LABEL"
+    },
+    {
+      "item": "vettä",
+      "amount": 300,
+      "unit": "ml",
+      "source": "https://fineli.fi/fineli/api/v1/foods/922",
+      "basis": "per100ml",
+      "nutrition": {
+        "carbohydrate": 0,
+        "protein": 0,
+        "fat": 0,
+        "fibre": 0,
+        "polyols": 0,
+        "salt": 0
+      }
+    },
+    {
+      "item": "HK Viljaporsaan jauhelihaa 10 %",
+      "amount": 150,
+      "unit": "g",
+      "source": "https://www.hk.fi/tuotteet/hk-viljaporsaan-jauheliha-10/",
+      "ean": "6409100037192",
+      "basis": "per100g",
+      "nutrition": {
+        "carbohydrate": 0,
+        "protein": 20,
+        "fat": 10,
+        "fibre": 0,
+        "polyols": 0,
+        "salt": 0.16
+      }
+    },
+    {
+      "item": "tuoreita herkkusieniä",
+      "amount": 100,
+      "unit": "g",
+      "source": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+      "sourceId": "afcd-F005946-release-3",
+      "basis": "per100g",
+      "nutrition": {
+        "carbohydrate": 0.8,
+        "protein": 2.2,
+        "fat": 0.8,
+        "fibre": 1.4,
+        "polyols": 1.2,
+        "salt": null
+      },
+      "polyolsEvidence": "AFCD paired carbohydrate with/without sugar alcohols"
+    },
+    {
+      "item": "Squid Brand -kalakastiketta",
+      "amount": 15,
+      "unit": "ml",
+      "source": "https://ctfood.se/fish-sauce-glass-12x725ml-squid-brand/?language=en",
+      "ean": "8850620888203",
+      "basis": "per100ml",
+      "nutrition": {
+        "carbohydrate": 3,
+        "protein": 11,
+        "fat": 0,
+        "fibre": 0,
+        "polyols": null,
+        "salt": 27.2
+      },
+      "polyolsEvidence": "Product label omits polyols; cannot infer exact zero",
+      "productVersion": "FI_SQUID_725ML_2026-11-11",
+      "marketConflict": "Same EAN elsewhere 3.4g CHO,10g P,24.4g salt per100ml; verify actual package"
+    },
+    {
+      "item": "neutraalia paistoöljyä",
+      "amount": 5,
+      "unit": "g",
+      "source": "https://fineli.fi/fineli/api/v1/foods/541",
+      "sourceId": "fineli-541-release-20",
+      "basis": "per100g",
+      "nutrition": {
+        "carbohydrate": 0,
+        "protein": 0,
+        "fat": 99.9,
+        "fibre": 0,
+        "polyols": 0,
+        "salt": 0
+      },
+      "retentionRange": [
+        0,
+        1
+      ],
+      "retentionReview": "Whole 5 g input counted at maximum; actual consumed mass unmeasured"
+    }
+  ],
+  "scenarioCalculations": [
+    {
+      "retentionOf5gCookingOil": 0,
+      "perServing": {
+        "carbohydrate": 46.225,
+        "protein": 20.925,
+        "fat": 8.81,
+        "fibre": 1.2,
+        "polyols": null,
+        "salt": null
+      }
+    },
+    {
+      "retentionOf5gCookingOil": 0.5,
+      "perServing": {
+        "carbohydrate": 46.225,
+        "protein": 20.925,
+        "fat": 10.05875,
+        "fibre": 1.2,
+        "polyols": null,
+        "salt": null
+      }
+    },
+    {
+      "retentionOf5gCookingOil": 1,
+      "perServing": {
+        "carbohydrate": 46.225,
+        "protein": 20.925,
+        "fat": 11.3075,
+        "fibre": 1.2,
+        "polyols": null,
+        "salt": null
+      }
+    }
+  ],
+  "maxOilRetainedConservativeScenario": {
+    "carbohydrate": 46.225,
+    "protein": 20.925,
+    "fat": 11.3075,
+    "fibre": 1.2,
+    "polyols": null,
+    "salt": null
+  },
+  "availableCarbOutputBasis": "EU_AVAILABLE_EXCLUDING_FIBRE",
+  "knownPolyolsPerServingG": 0.6,
+  "totalPolyolsPerServingG": null,
+  "totalCarbohydratePerServingG": null,
+  "fishSauceSaltPerServingG": 2.04,
+  "minimumIdentifiedSaltPerServingG": 2.213,
+  "otherSaltSourcesNotFullyQuantified": true,
+  "gi": {
+    "humanStudies": [
+      {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7791047/",
+        "food": "Plain steamed vermicelli roll",
+        "gi": 90,
+        "exactSourceMatch": false
+      },
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/11781674/",
+        "food": "Vietnamese rice noodles",
+        "range": [
+          39,
+          61
+        ],
+        "exactSourceMatch": false
+      }
+    ],
+    "gk": null,
+    "dispositionCandidate": "GK_UNAVAILABLE_EXPLICITLY_REVIEWED",
+    "dispositionGranted": false,
+    "reason": "No directly matched human GI for this exact rice/tapioca preparation; unrelated foods not transferable"
+  },
+  "independentGate": {
+    "imageVersionVerified": false,
+    "cookingMethodPhysicallyTrialled": false,
+    "cookingMethodEditoriallyReviewed": true,
+    "fishLabelSkuReviewed": true,
+    "fishPackagePhotoVerified": false,
+    "productLevelPolyolsResolved": false,
+    "oilRetentionApproved": false,
+    "sourceNutritionHashBound": false,
+    "gkThreeHashesVersionBound": false,
+    "translationSemanticsReviewed": false,
+    "completeFourMacroRecalculationApproved": false,
+    "sourceReleaseAuthorized": false
+  },
+  "nextActions": [
+    "Find product-label-backed polyols or valid component source for the rice flour/starch/fish sauce rather than forcing zeros",
+    "Use an approved exact-input nutrition calculation, preserving per100ml label provenance",
+    "Decide conservative all-oil-consumed scenario editorially and make preparation match",
+    "Select independently verified matching FI photo",
+    "Establish exact GK unavailable disposition and bind all three GK hash keys to this new source",
+    "Finalize FI macros and authorize only when release-gate check is true"
+  ]
+}

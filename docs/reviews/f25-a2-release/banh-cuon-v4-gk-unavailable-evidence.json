@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "recipeId": "vietnamilainen-banh-cuon-sienilla",
+  "sourcePath": "docs/reviews/f25-a2-release/vietnamilainen-banh-cuon-sienilla-fi-v4.md",
+  "sourceGitBlob": "49f07c0e60a0657c3cafaa8ec41a6b4ce6b7ba19",
+  "status": "GK_UNAVAILABLE_EVIDENCE_PREPARED_NOT_AUTHORIZED",
+  "servings": 2,
+  "carbohydrateComponentBasis": "EU_AVAILABLE; exact branded volumes and masses; no fibre double subtraction",
+  "sourceCarbohydrateContributions": [
+    {
+      "item": "Virtasalmen hieno riisijauho 100g",
+      "availableCarbohydratePerServingG": 37,
+      "matchedHumanGiId": null,
+      "reason": "No human GI for same flour product cooked as this pan-steamed rice/tapioca sheet",
+      "releaseStatus": "MATERIAL_UNMATCHED"
+    },
+    {
+      "item": "Farina tapiokatärkkelys 20g",
+      "availableCarbohydratePerServingG": 8.6,
+      "matchedHumanGiId": null,
+      "reason": "No human GI for this tapioca starch used in this sheet composition and cooking method",
+      "releaseStatus": "MATERIAL_UNMATCHED"
+    },
+    {
+      "item": "tuore herkkusieni 100g",
+      "availableCarbohydratePerServingG": 0.4,
+      "matchedHumanGiId": null,
+      "reason": "Minor source-backed upper bound; no numeric source GI assumed",
+      "releaseStatus": "LOW_OMISSION_CANDIDATE_NOT_APPROVED"
+    },
+    {
+      "item": "Squid kalakastike 15ml",
+      "availableCarbohydratePerServingG": 0.225,
+      "matchedHumanGiId": null,
+      "reason": "Exact 3g/100ml multiplied by 15ml, two servings; no density conversion",
+      "releaseStatus": "LOW_OMISSION_CANDIDATE_NOT_APPROVED"
+    },
+    {
+      "item": "HK porsaan jauheliha 150g; öljy 5g; vesi 300ml",
+      "availableCarbohydratePerServingG": 0,
+      "matchedHumanGiId": null,
+      "reason": "Product label net available carbs 0 for pork and oil/water",
+      "releaseStatus": "NO_AVAILABLE_CARBOHYDRATE"
+    }
+  ],
+  "materialCarbohydrateWithNoExactGiPerServingG": 45.6,
+  "documentedMinorCarbohydrateNoGiPerServingG": 0.625,
+  "totalAvailableCarbohydratePerServingG": 46.225,
+  "humanEvidence": [
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7791047/",
+      "testFood": "Hong Kong plain steamed vermicelli roll",
+      "gi": 90,
+      "match": "NOT_EXACT"
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/11781674/",
+      "testFood": "Vietnamese rice noodles",
+      "giRange": [
+        39,
+        61
+      ],
+      "match": "NOT_EXACT"
+    }
+  ],
+  "gk": null,
+  "reviewDisposition": "GK_UNAVAILABLE_EXPLICITLY_REVIEWED",
+  "dispositionAuthorized": false,
+  "recipeHashAuthorized": false,
+  "nutritionEvidenceAuthorized": false,
+  "gkBindingAuthorized": false,
+  "explicitReason": "45.6g per-serving high-carbohydrate rice and tapioca remain without source/preparation-matched human GI; cannot omit as minor GI-missing ingredient or impute GI from other dishes. Numeric GK withheld.",
+  "approvalPreconditions": [
+    "New exact published FI source hash, not draft-only",
+    "New source-consistent nutrition evidence with four rounded macros and verified polyol handling",
+    "Reviewed GK unavailable disposition and exact three GK binding fingerprints",
+    "Independent safety/allergen and translation semantic evidence; matching approved image"
+  ],
+  "published": false
+}
