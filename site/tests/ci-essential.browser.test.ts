@@ -4,6 +4,7 @@ import path from "node:path";
 import test from "node:test";
 import { launchBrowser } from "./launch-browser";
 import { recipeUi } from "../src/features/recipes/recipe-i18n";
+import { siteContent } from "../src/generated/content.generated";
 
 const base = "http://127.0.0.1:4192/Reseptit";
 const routes = ["/", "/en/recipes/", "/sv/recept/", "/th/recipes/"];
@@ -45,14 +46,18 @@ test("essential UI smoke: locales, search, a recipe, blog and no-JS navigation",
       await page.setViewportSize({ width, height: 844 });
       await page.goto(base + route + "?diet=vegan");
       await page.waitForFunction(() => document.querySelector<HTMLSelectElement>("#recipe-diet")?.value === "vegan");
-      assert.equal(await page.locator(".recipe-card-grid .recipe-card").count(), 2, locale + " has both reviewed vegan recipes");
+      const expectedVegan = siteContent.recipes.filter(item => item.locale === locale && item.dietTags?.includes("vegan")).length;
+      assert.ok(expectedVegan >= 2, locale + " retains the pilot vegan recipes");
+      assert.equal(await page.locator(".recipe-card-grid .recipe-card").count(), expectedVegan, locale + " lists only reviewed vegan recipes");
       assert.equal(await page.locator('#recipe-diet option[value="carnivore"]').count(), 0,
         locale + " should not advertise unpublished carnivore recipes");
       assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true,
         locale + " dietary search must not overflow at " + width + "px");
       await page.getByLabel(labels.dietFilter).selectOption("pescatarian");
       await page.waitForFunction(() => new URL(location.href).searchParams.get("diet") === "pescatarian");
-      assert.equal(await page.locator(".recipe-card-grid .recipe-card").count(), 5, locale + " has five verified pescatarian recipes");
+      const expectedPescatarian = siteContent.recipes.filter(item => item.locale === locale && item.dietTags?.includes("pescatarian")).length;
+      assert.ok(expectedPescatarian >= 5, locale + " retains the five verified pescatarian recipes");
+      assert.equal(await page.locator(".recipe-card-grid .recipe-card").count(), expectedPescatarian, locale + " lists only reviewed pescatarian recipes");
       await page.getByLabel(labels.dietFilter).selectOption("vegan");
       const glutenFree = page.locator("#recipe-gluten-free");
       await glutenFree.focus();
