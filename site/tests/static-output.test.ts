@@ -135,8 +135,9 @@ test("GK values link to centralized recipe details on every published translatio
     "karnivore-steak-and-eggs":"5e579c3a60b1835d2bd4895c377502139bb23b91",
     "karnivore-voilohi-pannulla":"07f5b5670af65776209493cc4dce2b897f2635b0",
     "karnivore-jauhelihakulho-munalla":"9f294f216ac4f94dacf745e197b3d6bd3cc96451",
-  },"only the three verified FI3 sources may bypass the legacy GK corpus");
-  assert.equal(new Set(pending.map(row=>row.recipeId)).size,3,"pending sources must be unique");
+    "karnivore-smashburger":"9aeef01b3fd8f907f1d0ffae3c0f9d7dbb75b737",
+  },"only the four verified FI sources may bypass the legacy GK corpus");
+  assert.equal(new Set(pending.map(row=>row.recipeId)).size,4,"pending sources must be unique");
   for(const row of pending){
     assert.equal(row.status,"INSUFFICIENT SOURCE DATA");
     assert.equal(row.glycemicLoadPerServing,null);
