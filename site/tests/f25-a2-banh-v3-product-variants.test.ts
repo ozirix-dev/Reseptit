@@ -59,6 +59,14 @@ test("V3 ingredient-by-ingredient label and oil-retention scenarios cannot imput
   assert.equal(cuon.ingredients.find((a:any)=>a.item.includes("kalakastike")).basis,"100ml");
   assert.equal(cuon.scenarios.oilRetained100Percent.carbohydrate,46.225);
   assert.equal(xeo.ingredients.find((a:any)=>a.item.includes("kurkuma")).ean,"6420101882864");
-  assert.equal(xeo.scenarios.oilRetained100Percent.carbohydrate,40.871);
+  assert.equal(xeo.scenarios.oilRetained100Percent.carbohydrate,null);
+  const turmeric=xeo.ingredients.find((a:any)=>a.item.includes("kurkuma"));
+  assert.ok(turmeric);
+  assert.equal(turmeric.macros.carbohydrate,null,"unverified retail total carbohydrate cannot be treated as EU available carbohydrate");
+  assert.equal(turmeric.labelMassBalance.subtotalGPer100g,102.8);
+  assert.ok(turmeric.labelMassBalance.subtotalGPer100g>100);
+  assert.equal(turmeric.labelMassBalance.passesEuAvailableCarbPlusSeparateFibre,false);
+  assert.equal(xeo.conditionalComparison.alternativeWholeRecipePartialGPerServing,40.644);
+  assert.equal(xeo.conditionalComparison.fullCarbohydrateApproved,false);
   assert.equal(xeo.scenarios.oilRetained0.fibre,null);
 });
