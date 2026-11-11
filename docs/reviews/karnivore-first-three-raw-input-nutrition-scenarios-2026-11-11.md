@@ -38,7 +38,7 @@ Jauheliha kauttaaltaan kypsäksi: Ruokaviraston kuluttajaohjeen mukaan nauta/sik
 
 ## Täsmälliset julkaisun jäljellä olevat esteet
 
-1. Päätä, sidotaanko jauhelihakulho eksplisiittisesti Snellmanin EAN-tuotteeseen vai hyväksytäänkö muu täsmäkoostumus dokumentoidusti. 
+1. Päätä, sidotaanko jauhelihakulho eksplisiittisesti Snellmanin EAN-tuotteeseen vai hyväksytäänkö muu täsmäkoostumus dokumentoidusti.
 2. Valitse pihvin ja nahallisen lohen lopullinen tuotekoostumus; älä hyväksy proxy-arvoa automaattisesti.
 3. Lukitse valmistuksen rasvansaanto ja syötävät osuudet; jos arvio on perusteltu mutta ei mitattu, merkitse epävarmuus ja käytä projektin laatukriteerejä.
 4. Laske **energia, proteiini, rasva, hiilihydraatit ja kuitu** jokaiselle annokselle lähteistetyssä täydellisessä ravintolaskelmassa.
