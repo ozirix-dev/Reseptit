@@ -9,12 +9,13 @@ import { c13PublicFiPaths, projectC13FiDisplay } from "../scripts/c13-fi-public-
 import { c13CanonicalHistoryPaths, originalForC13CanonicalHistory } from "./c13-canonical-historical-transition";
 
 const root = path.resolve(import.meta.dirname, "../..");
-const manakish = "reseptit/aamupalat/lahi-ita-manakish-zaatarilla.md";
+const overlays = ["reseptit/aamupalat/indialainen-poha-maapahkinoilla.md", "reseptit/aamupalat/lahi-ita-manakish-zaatarilla.md"];
 
-test("C13 retains only the source SHA-locked manakish display correction", async () => {
-  assert.deepEqual(c13PublicFiPaths, [manakish]);
-  const raw = await readFile(path.join(root, manakish), "utf8");
-  const shown = projectC13FiDisplay(manakish, raw);
+test("C13 retains source SHA-locked poha and manakish display corrections", async () => {
+  assert.deepEqual([...c13PublicFiPaths].sort(), [...overlays].sort());
+  for (const file of overlays) {
+  const raw = await readFile(path.join(root, file), "utf8");
+  const shown = projectC13FiDisplay(file, raw);
   const before = parseMarkdown(raw), after = parseMarkdown(shown);
   assert.ok(before && after);
   const oldData = recipeFrontmatterSchema.parse(before.data);
@@ -23,11 +24,12 @@ test("C13 retains only the source SHA-locked manakish display correction", async
   assert.equal(newData.servings, oldData.servings);
   assert.equal(newData.cooking_method?.join("|"), oldData.cooking_method?.join("|"));
   assert.notEqual(shown, raw);
-  assert.throws(() => projectC13FiDisplay(manakish, raw + "\n# unreviewed"), /C13_FI_SOURCE_STALE/);
+  assert.throws(() => projectC13FiDisplay(file, raw + "\n# unreviewed"), /C13_FI_SOURCE_STALE/);
+  }
 });
 
-test("C13 ten original FI recipes contain canonical chef instructions while frozen GK history is unchanged", async () => {
-  assert.equal(c13CanonicalHistoryPaths.length, 10);
+test("C13 nine original FI recipes contain canonical chef instructions while frozen GK history is unchanged", async () => {
+  assert.equal(c13CanonicalHistoryPaths.length, 9);
   for (const relative of c13CanonicalHistoryPaths) {
     const id = path.basename(relative, ".md");
     const raw = await readFile(path.join(root, relative), "utf8");
