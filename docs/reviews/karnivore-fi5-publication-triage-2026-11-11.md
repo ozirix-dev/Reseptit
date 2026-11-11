@@ -1,6 +1,6 @@
 # Karnivore FI5: kuvien jälkeen vaaditut ravintotarkistukset (11.11.2026)
 
-**Päätös:** 5/5 kuvat versionhallinnassa (PR #488), **0/5 uutta FI-reseptiä julkaisuun hyväksytty**. Kuvien 1280 × 853 -metatiedot ovat tarkistettuja, mutta kokonaisten annosten ravintoarvot eivät ole. Tämä on tuotekohtaisten ehdokkaiden ja puuttuvien saantoperusteiden katselmointi, ei mittaus eikä ravintoarvojen julkaisu.
+**Alkuperäinen kuvituserän katselmointi 11.11.2026:** 5/5 kuvat versionhallinnassa (PR #488), 0/5 julkaisuun hyväksytty tuossa tarkistuspisteessä. **Päivitys PR #492:n jälkeen: Smashburger 1/5 julkaistu erillisellä ravintoaineistolla; muut neljä ovat HOLDissa.** Kuvien 1280 × 853 -metatiedot ovat tarkistettuja, mutta kokonaisten annosten ravintoarvot eivät ole. Tämä on tuotekohtaisten ehdokkaiden ja puuttuvien saantoperusteiden katselmointi, ei mittaus eikä ravintoarvojen julkaisu.
 
 | Resepti | Proxy-lähteitä | Ennen julkaisua tarvittava täsmäpäätös |
 | --- | ---: | --- |
@@ -29,3 +29,11 @@
 5. **Naudan lyhytkylki ja rapea porsaan kylki** pysyvät erillisessä HOLDissa, eivät tämän FI5-erän osia.
 
 **GK:** Tuntematon pysyy tuntemattomana. Ainesosatietueen `availableCarbohydrates: 0` ei anna koko reseptille mitattua GK=0-lukua. Tuote- ja annoskohtainen hyväksyntä on erotettava kuvan julkaisusta.
+
+## Päivitys – Smashburgerin erillinen FI-julkaisu PR #492
+
+Smashburger on julkaistu [PR #492:ssa](https://github.com/ozirix-dev/Reseptit/pull/492), tuotantolähteen Git-blob `179b12d53d97c406c6f83d2b829173375583b5d4`, lähdekohtainen laskenta `docs/nutrition/calculations/karnivore-smashburger.json`. Julkaistu resepti ilmoittaa proteiinia 45,01 g, rasvaa 55 g ja pakkausarvojen perusteella laskettua hiilihydraattia 0 g / annos. Naudantali perustuu julkaistussa lähteessä USDA FDC 171400 -tietueeseen, **ei** tämän raportin Ellin keittiön vaihtoehtoiseen tuote-ehdokkaaseen. Nämä koostumusarviot ovat eri lähtötilanteita eivätkä sama mittaustulos. Pannurasvan syöminen kokonaan on yhä nimenomainen valmistus- ja tarjoiluoletus.
+
+PR #492:n [CI](https://github.com/ozirix-dev/Reseptit/actions/runs/43069939043) ja sen jälkeinen [main-julkaisuajo](https://github.com/ozirix-dev/Reseptit/actions/runs/43070804014) olivat SUCCESS. Julkisen verkkosivun avautumista ei varmennettu riippumattomalla HTTP-luennalla tässä raportissa.
+
+Alkuperäisen viiden luonnoksen raaka-ainelähdekartta säilyy omana dokumentoituna historiallisena tarkistuspisteenään. **Jäljelle jäävät neljä**: `karnivore-rapeat-kananreisipalat`, `karnivore-maksa-ja-pekoni`, `karnivore-meatza`, `karnivore-lammaskyljykset-voissa`. Näiden julkaisu vaatii edelleen tässä raportissa määritellyt omat tuote- ja saantopäätökset.
