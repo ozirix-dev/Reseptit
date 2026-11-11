@@ -35,7 +35,7 @@ export function RecipesPage({ locale }: { locale: RecipeLocale }) {
   const hasKetoRecipes = recipes.some((recipe) => recipe.dietClass === "keto");
   const hasGlycemicLoad = recipes.some((recipe) => glycemicLoadFilterCategories[recipe.recipeId] !== undefined);
   const reviewedDiets: RecipeDietTag[] = ["carnivore", "vegetarian", "vegan", "pescatarian"];
-  const availableDiets: RecipeDietFilter[] = [
+  const availableDiets: Exclude<RecipeDietFilter, "all">[] = [
     ...(hasKetoRecipes ? ["keto" as const] : []),
     ...(hasDietClasses ? ["vhh" as const] : []),
     ...reviewedDiets.filter((diet) => recipes.some((recipe) => recipe.dietTags?.includes(diet))),
