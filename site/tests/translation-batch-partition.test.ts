@@ -177,3 +177,51 @@ test("F25 remaining 17 nutrition scenarios stay HOLD and recalculate from ingred
   );
   assert.equal(evidence.nutritionScenarios.paneer.declaredPerServing, null);
 });
+
+
+test("F25 next15 product rebuilds recalculate 4 macro fields but cannot publish HOLD sources", async () => {
+  const {readFile} = await import("node:fs/promises");
+  const {createHash} = await import("node:crypto");
+  const path = await import("node:path");
+  const root = path.resolve(import.meta.dirname, "../..");
+  const decisions = JSON.parse(await readFile(path.join(root, "meta/kaannokset/f25-next15-four-product-rebuilds-20261111.json"), "utf8"));
+  const published = JSON.parse(await readFile(path.join(root, "meta/kaannokset/published-translation-pairs.json"), "utf8"));
+  const indexed = new Set(published.sources.map((source: any) => source.recipe_id));
+  assert.equal(decisions.schemaVersion, 1);
+  assert.equal(decisions.status, "RESEARCH-CANDIDATES-NOT-APPROVAL");
+  assert.deepEqual(decisions.summary, {remainingSources:15,missingCalculationInputs:9,existingUnapprovedCalculationInputs:6,quarantinedSources:2});
+  assert.equal(decisions.publicationCounts.f25PublishedPairs, 30);
+  assert.equal(decisions.publicationCounts.f25RemainingPairs, 45);
+  assert.equal(decisions.heldSources.length, 15);
+  assert.equal(new Set(decisions.heldSources.map((x: any) => x.recipe_id)).size, 15);
+  assert.equal(decisions.heldSources.filter((x: any) => x.public_quarantine).length, 2);
+  for (const row of decisions.heldSources) {
+    assert.equal(row.release_authorized, false, row.recipe_id);
+    assert.ok(!indexed.has(row.recipe_id), row.recipe_id + " is HOLD but appears in published translations");
+    const raw = await readFile(path.join(root, row.source_path));
+    const actualGitBlob = createHash("sha1").update("blob " + raw.length + "\0").update(raw).digest("hex");
+    assert.equal(actualGitBlob, row.source_blob_sha, row.recipe_id + " changed: review must be repeated");
+  }
+  const fields = ["netCarbohydrate","totalCarbohydrateInclFibre","protein","fat"] as const;
+  assert.equal(decisions.calculationCandidates.length, 4);
+  for (const c of decisions.calculationCandidates) {
+    assert.equal(c.sourceStatus,"HOLD");
+    assert.equal(c.release_authorized,false);
+    assert.equal(c.human_nutrition_review,false);
+    assert.ok(c.assumptionsToResolve.length >= 4, c.recipe_id);
+    assert.ok(c.ingredients.every((i: any) => i.sourceUrl.startsWith("https://")));
+    const values = {
+      netCarbohydrate: c.ingredients.reduce((s: number,i: any) => s+i.g*i.availableCarbGPer100/100/c.servings, 0),
+      totalCarbohydrateInclFibre:c.ingredients.reduce((s: number,i: any) => s+i.g*(i.availableCarbGPer100+i.fibreGPer100)/100/c.servings, 0),
+      protein:c.ingredients.reduce((s: number,i: any) => s+i.g*i.proteinGPer100/100/c.servings, 0),
+      fat:c.ingredients.reduce((s: number,i: any) => s+i.g*i.fatGPer100/100/c.servings, 0),
+    };
+    for (const field of fields) assert.ok(Math.abs(values[field]-c.candidatePerServing[field])<0.000001, c.recipe_id+" "+field);
+    assert.ok(decisions.heldSources.some((x: any) => x.recipe_id===c.recipe_id));
+  }
+  const byId = Object.fromEntries(decisions.calculationCandidates.map((c: any) => [c.recipe_id,c])) as Record<string,any>;
+  assert.ok(byId["lahi-ita-zaatar-munat"].candidatePerServing.netCarbohydrate>24.91+0.2);
+  assert.ok(byId["japanilainen-hojicha-jogurtti-persimonilla"].candidatePerServing.totalCarbohydrateInclFibre>19.34+0.7);
+  assert.equal(Object.keys(byId["intialainen-pinaatti-paneer-chilla"].originalFiMacros).length,0);
+  assert.notEqual(byId["rahka-marjakerroskulho"].candidatePerServing.netCarbohydrate, 6.32);
+});

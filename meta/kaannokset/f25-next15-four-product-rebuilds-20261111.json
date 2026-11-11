@@ -1,0 +1,493 @@
+{
+  "schemaVersion": 1,
+  "snapshotMainSha": "f0e3a4dbb23eba7dc11d0dbdb495132faa8c958d",
+  "createdAt": "2026-11-11",
+  "scope": "F25: after 30/75 pairs published; next 15 source worklist",
+  "sourceDraftPr": 399,
+  "referencePrevious": "meta/kaannokset/f25-remaining-17-evidence-20261111.json",
+  "status": "RESEARCH-CANDIDATES-NOT-APPROVAL",
+  "publicationCounts": {
+    "publishedFiSources": 69,
+    "publishedLanguagePairs": 207,
+    "f25PublishedPairs": 30,
+    "f25RemainingPairs": 45
+  },
+  "summary": {
+    "remainingSources": 15,
+    "missingCalculationInputs": 9,
+    "existingUnapprovedCalculationInputs": 6,
+    "quarantinedSources": 2
+  },
+  "heldSources": [
+    {
+      "recipe_id": "rahka-marjakerroskulho",
+      "source_path": "reseptit/aamupalat/rahka-marjakerroskulho.md",
+      "source_blob_sha": "af3a8debe0a46b920ed0464545732bd2900485b8",
+      "priority": 1,
+      "nutrition_input": "missing",
+      "source_decision": "HOLD-PRODUCT-MACROS",
+      "public_quarantine": false,
+      "release_authorized": false,
+      "reason": "Choose exact quark, 10% yogurt, berries, nuts; bound teaspoon zest and sweetener; recalculate 4 macros, FI-display + EN/SV/TH"
+    },
+    {
+      "recipe_id": "intialainen-pinaatti-paneer-chilla",
+      "source_path": "reseptit/aamupalat/intialainen-pinaatti-paneer-chilla.md",
+      "source_blob_sha": "7c890fba7728a3eb5da20b57319ff67870e28252",
+      "priority": 2,
+      "nutrition_input": "missing",
+      "source_decision": "HOLD-INPUT-AND-METHOD",
+      "public_quarantine": false,
+      "release_authorized": false,
+      "reason": "Choose exact besan, Apetina Paneer, cooking oil, spinach, cumin grams; remove unlisted chutney/lemon; add independent 4-macro calculation"
+    },
+    {
+      "recipe_id": "lahi-ita-zaatar-munat",
+      "source_path": "reseptit/aamupalat/lahi-ita-zaatar-munat.md",
+      "source_blob_sha": "cf0c02b2b1ecd1200557271c2bc574f2ad1c2c71",
+      "priority": 3,
+      "nutrition_input": "present-unapproved",
+      "source_decision": "HOLD-OMISSION-BOUND",
+      "public_quarantine": false,
+      "release_authorized": false,
+      "reason": "Pin labelled zaatar brand + measured tsp grams; rebuild 4 macro source, include sesame allergen, then FI + 3 translations"
+    },
+    {
+      "recipe_id": "japanilainen-hojicha-jogurtti-persimonilla",
+      "source_path": "reseptit/aamupalat/japanilainen-hojicha-jogurtti-persimonilla.md",
+      "source_blob_sha": "bba0051aba98ebf8ce1845a1df5bccc058394aba",
+      "priority": 5,
+      "nutrition_input": "present-unapproved",
+      "source_decision": "HOLD-EDIBLE-TEA",
+      "public_quarantine": false,
+      "release_authorized": false,
+      "reason": "Match edible hojicha powder 2 g and all four macro values or model discard infusion explicitly"
+    },
+    {
+      "recipe_id": "vietnamilainen-papaija-kookospuuro",
+      "source_path": "reseptit/aamupalat/vietnamilainen-papaija-kookospuuro.md",
+      "source_blob_sha": "ecae7e7e302d8564a171955ef8e9117f69a6fb7d",
+      "priority": 6,
+      "nutrition_input": "present-unapproved",
+      "source_decision": "HOLD-PEARL-COOK-TIME",
+      "public_quarantine": false,
+      "release_authorized": false,
+      "reason": "Specify dry small tapioca pearls and preparation time, keep all 700 ml cooking water retained or re-model drain"
+    },
+    {
+      "recipe_id": "vietnamilainen-banh-cuon-sienilla",
+      "source_path": "reseptit/aamupalat/vietnamilainen-banh-cuon-sienilla.md",
+      "source_blob_sha": "fa1d7e18602b14acfa397e4df5fa6747d8410b73",
+      "priority": 7,
+      "nutrition_input": "present-unapproved",
+      "source_decision": "HOLD-STEAM-AND-PORK",
+      "public_quarantine": false,
+      "release_authorized": false,
+      "reason": "Verify steamer/wrapper release, measured fish sauce and pork minced safely cooked, realistic 25 min preparation"
+    },
+    {
+      "recipe_id": "vietnamilainen-banh-xeo-aamiaisletut",
+      "source_path": "reseptit/aamupalat/vietnamilainen-banh-xeo-aamiaisletut.md",
+      "source_blob_sha": "cb442ad22c02b9a894861dd7cdc740dd5b0417ef",
+      "priority": 8,
+      "nutrition_input": "present-unapproved",
+      "source_decision": "HOLD-UNLISTED-TURMERIC",
+      "public_quarantine": false,
+      "release_authorized": false,
+      "reason": "Decide turmeric in ingredient list vs remove from title/method, cook raw prawn fully; macro retest"
+    },
+    {
+      "recipe_id": "pohjoisafrikkalainen-baghrir",
+      "source_path": "reseptit/aamupalat/pohjoisafrikkalainen-baghrir.md",
+      "source_blob_sha": "24722209acc0b5ca0eb45719248297b6c2a58f3a",
+      "priority": 9,
+      "nutrition_input": "present-unapproved",
+      "source_decision": "HOLD-BATTER-AND-NAME",
+      "public_quarantine": false,
+      "release_authorized": false,
+      "reason": "Check 150 ml water/200 g dry flour and one-sided cook, correct unlisted butter claim, 25 min fermentation"
+    },
+    {
+      "recipe_id": "meksikolainen-chilaquiles-verdes",
+      "source_path": "reseptit/aamupalat/meksikolainen-chilaquiles-verdes.md",
+      "source_blob_sha": "71abfa953914a080e2f180961864ba3dd3e3d35d",
+      "priority": 11,
+      "nutrition_input": "missing",
+      "source_decision": "HOLD-NUTRITION",
+      "public_quarantine": false,
+      "release_authorized": false,
+      "reason": "Product-match salsa verde and queso fresco, list edible corn tortilla and oil; supply all four macros"
+    },
+    {
+      "recipe_id": "meksikolainen-paputostada-aamupalaksi",
+      "source_path": "reseptit/aamupalat/meksikolainen-paputostada-aamupalaksi.md",
+      "source_blob_sha": "e73d88c563f14a5ebbb33803206b9739fcbcea34",
+      "priority": 12,
+      "nutrition_input": "missing",
+      "source_decision": "HOLD-NUTRITION-AND-MASS",
+      "public_quarantine": false,
+      "release_authorized": false,
+      "reason": "Specify cooked 150 g black beans, avocado flesh grams and tortilla model; supply all four macros"
+    },
+    {
+      "recipe_id": "korealainen-kimchi-jeon-aamiaiseksi",
+      "source_path": "reseptit/aamupalat/korealainen-kimchi-jeon-aamiaiseksi.md",
+      "source_blob_sha": "ed74bb3ddab0757a69402da47209b7bac0d51e9e",
+      "priority": 13,
+      "nutrition_input": "missing",
+      "source_decision": "HOLD-WATER-AND-NUTRITION",
+      "public_quarantine": false,
+      "release_authorized": false,
+      "reason": "Product-match kimchi 150 g, water in batter from kimchi plus separately added water, compute four macros"
+    },
+    {
+      "recipe_id": "karibia-plantain-aamiaislautanen",
+      "source_path": "reseptit/aamupalat/karibia-plantain-aamiaislautanen.md",
+      "source_blob_sha": "afb4242ce40db1e8eefb2dc654069008a403e41c",
+      "priority": 14,
+      "nutrition_input": "missing",
+      "source_decision": "HOLD-EDIBLE-WEIGHTS",
+      "public_quarantine": false,
+      "release_authorized": false,
+      "reason": "Weigh peeled plantain, avocado flesh, lime juice, eggs and oil retention; all four macros absent"
+    },
+    {
+      "recipe_id": "munakoiso-kesakurpitsalasagne",
+      "source_path": "reseptit/paaruoat/munakoiso-kesakurpitsalasagne.md",
+      "source_blob_sha": "42167f96e8f448383e5db66dba57274bd235b87f",
+      "priority": 15,
+      "nutrition_input": "missing",
+      "source_decision": "HOLD-ALTERNATIVE-PASTA",
+      "public_quarantine": false,
+      "release_authorized": false,
+      "reason": "Select 180 g or 200 g pasta and dry/cooked state, cheeses and sauce, recalc all four macros; GI/GK remains separate"
+    },
+    {
+      "recipe_id": "pohjoisafrikkalainen-maakouda",
+      "source_path": "reseptit/aamupalat/pohjoisafrikkalainen-maakouda.md",
+      "source_blob_sha": "34574856132b429713948701c718b25dcd12776d",
+      "priority": 16,
+      "nutrition_input": "missing",
+      "source_decision": "QUARANTINE-HOLD",
+      "public_quarantine": true,
+      "release_authorized": false,
+      "reason": "Public quarantine; potato edible grams & published CHO 4.84 g/serving inconsistent without source. New recipe and full nutrition/GK before unquarantine"
+    },
+    {
+      "recipe_id": "indonesialainen-nasi-goreng-aamiaisriisi",
+      "source_path": "reseptit/aamupalat/indonesialainen-nasi-goreng-aamiaisriisi.md",
+      "source_blob_sha": "731c7babbe7aa94c4e931a8224cec81bfe75b9fb",
+      "priority": 17,
+      "nutrition_input": "missing",
+      "source_decision": "QUARANTINE-HOLD",
+      "public_quarantine": true,
+      "release_authorized": false,
+      "reason": "Public quarantine; 150 g kecap manis and ambiguous 100 g rice dry/cooked require new recipe, macro and GK"
+    }
+  ],
+  "calculationCandidates": [
+    {
+      "recipe_id": "rahka-marjakerroskulho",
+      "source_path": "reseptit/aamupalat/rahka-marjakerroskulho.md",
+      "source_blob_sha": "af3a8debe0a46b920ed0464545732bd2900485b8",
+      "servings": 4,
+      "recipeModel": "tuotevalittu rahka-marjakerroskulho, 1 tl kuorta = oletus 2g; ilman valinnaista makeutusta",
+      "sourceStatus": "HOLD",
+      "release_authorized": false,
+      "human_nutrition_review": false,
+      "assumptionsToResolve": [
+        "Varmista 1 tl raastetun sitruunankuoren todellinen grammamassa, tässä mallissa 2 g",
+        "Metsämustikan nykyinen koostumus pitää sidota yhteen tunnistettavaan tietueeseen",
+        "Makeutusainetta maun mukaan on rajattava: tässä skenaariossa 0 g, mahdolliset sokeri-/polyoliannokset eivät saa tulla hiljaisesti mukaan",
+        "Valittu Valio-rahka ja Salakis-jogurtti on nimettävä FI-aineslistan julkisessa versionsidoksessa, ei universaali geneerinen tuote",
+        "Luo uusi hyväksytty ravintolaskentasyöte ja arvioi GK-lukko ennen julkaisemista"
+      ],
+      "originalFiMacros": {
+        "carbs_net_per_serving_g": 6.32,
+        "carbs_total_per_serving_g": 8.09,
+        "protein_per_serving_g": 8.05,
+        "fat_per_serving_g": 6.01
+      },
+      "ingredients": [
+        {
+          "name": "Valio pehmeä maitorahka maustamaton",
+          "g": 250,
+          "availableCarbGPer100": 3.7,
+          "fibreGPer100": 0,
+          "proteinGPer100": 10,
+          "fatGPer100": 0.1,
+          "sourceUrl": "https://www.valio.fi/tuotteet/valio-pehmea-maitorahka/"
+        },
+        {
+          "name": "Salakis Turkkilainen jogurtti 10%",
+          "g": 100,
+          "availableCarbGPer100": 5.1,
+          "fibreGPer100": 0,
+          "proteinGPer100": 4.2,
+          "fatGPer100": 10,
+          "sourceUrl": "https://salakis.fi/tuotteet/turkkilainen-jogurtti-10/"
+        },
+        {
+          "name": "AFCD strawberry raw",
+          "g": 100,
+          "availableCarbGPer100": 5.6,
+          "fibreGPer100": 2.1,
+          "proteinGPer100": 0.7,
+          "fatGPer100": 0.2,
+          "sourceUrl": "https://github.com/ozirix-dev/Reseptit/blob/main/docs/nutrition/calculations/vhh-mansikkakakku.json"
+        },
+        {
+          "name": "wild blueberry / provisional Fineli derived",
+          "g": 50,
+          "availableCarbGPer100": 10.2,
+          "fibreGPer100": 3.3,
+          "proteinGPer100": 0.8,
+          "fatGPer100": 1.1,
+          "sourceUrl": "https://www.arktisetaromit.fi/luonnontuotteet/luonnonmarjat/ravintosisalto/ravintosisaltotaulukoita/"
+        },
+        {
+          "name": "Salliselta hasselpähkinä",
+          "g": 20,
+          "availableCarbGPer100": 8.2,
+          "fibreGPer100": 9.4,
+          "proteinGPer100": 15,
+          "fatGPer100": 62,
+          "sourceUrl": "https://salliselta.fi/tuotteet/pahkinat-ja-mantelit/pahkinat/hasselpahkina"
+        },
+        {
+          "name": "lemon zest / Swedish Food Agency",
+          "g": 2,
+          "availableCarbGPer100": 11.9,
+          "fibreGPer100": 3.7,
+          "proteinGPer100": 1.5,
+          "fatGPer100": 0.3,
+          "sourceUrl": "https://matdata.se/en/foods/lemon-zest-602/"
+        }
+      ],
+      "candidatePerServing": {
+        "netCarbohydrate": 6.732,
+        "totalCarbohydrateInclFibre": 8.158,
+        "protein": 8.3325,
+        "fat": 5.8515
+      },
+      "rounding": "display to 2 decimals only after full unrounded sum; upper/label uncertainty not measurement"
+    },
+    {
+      "recipe_id": "intialainen-pinaatti-paneer-chilla",
+      "source_path": "reseptit/aamupalat/intialainen-pinaatti-paneer-chilla.md",
+      "source_blob_sha": "7c890fba7728a3eb5da20b57319ff67870e28252",
+      "servings": 2,
+      "recipeModel": "100g besan, 50g spinach, 100g Apetina Paneer, 140ml water (0 macros), 2g cumin, 13.5g pan oil fully retained",
+      "sourceStatus": "HOLD",
+      "release_authorized": false,
+      "human_nutrition_review": false,
+      "assumptionsToResolve": [
+        "1 tl jauhettua juustokuminaa = 2 g tässä vain malliolettama, varmista massamuunnos",
+        "Paneer nimenomaan Arla Apetina 225g -tuotetta; muut paneerit muuttavat arvot",
+        "Öljyn syöty osuus on 100%; arvioi pannu- ja paistohävikki sekä mahdollinen reseptimuutos",
+        "FI-raakatekstistä neljä makroa puuttuvat ja kanoninen alkuperäinen valmistus mainitsee listasta puuttuvan chutneyn/sitruunan",
+        "Varmista laskennan GI/GK-lukko ja uuden laskennan tuotekohtaiset lähdekentät"
+      ],
+      "originalFiMacros": {},
+      "ingredients": [
+        {
+          "name": "AFCD chickpea flour F003986",
+          "g": 100,
+          "availableCarbGPer100": 38.5,
+          "fibreGPer100": 20.8,
+          "proteinGPer100": 19.7,
+          "fatGPer100": 5.5,
+          "sourceUrl": "https://github.com/ozirix-dev/Reseptit/blob/main/docs/nutrition/calculations/intialainen-besan-chilla.json"
+        },
+        {
+          "name": "AFCD raw spinach F008761",
+          "g": 50,
+          "availableCarbGPer100": 0.6,
+          "fibreGPer100": 2.5,
+          "proteinGPer100": 2.4,
+          "fatGPer100": 0.3,
+          "sourceUrl": "https://github.com/ozirix-dev/Reseptit/blob/main/docs/nutrition/calculations/valimerellinen-pinaatti-fetashakshuka.json"
+        },
+        {
+          "name": "Arla Apetina Paneer 225g",
+          "g": 100,
+          "availableCarbGPer100": 3.2,
+          "fibreGPer100": 0,
+          "proteinGPer100": 22,
+          "fatGPer100": 8,
+          "sourceUrl": "https://www.arla.fi/tuotteet/arla-apetina/paneer-225g-69940/"
+        },
+        {
+          "name": "Salliselta ground cumin",
+          "g": 2,
+          "availableCarbGPer100": 34,
+          "fibreGPer100": 10.5,
+          "proteinGPer100": 18,
+          "fatGPer100": 22,
+          "sourceUrl": "https://salliselta.fi/tuotteet/mausteet/juustokumina-jauhettu"
+        },
+        {
+          "name": "Fineli neutral cooking oil 541",
+          "g": 13.5,
+          "availableCarbGPer100": 0,
+          "fibreGPer100": 0,
+          "proteinGPer100": 0,
+          "fatGPer100": 99.9,
+          "sourceUrl": "https://github.com/ozirix-dev/Reseptit/blob/main/docs/nutrition/calculations/intialainen-besan-chilla.json"
+        }
+      ],
+      "candidatePerServing": {
+        "netCarbohydrate": 21.34,
+        "totalCarbohydrateInclFibre": 32.47,
+        "protein": 21.63,
+        "fat": 13.78825
+      },
+      "rounding": "display to 2 decimals only after full unrounded sum; upper/label uncertainty not measurement"
+    },
+    {
+      "recipe_id": "lahi-ita-zaatar-munat",
+      "source_path": "reseptit/aamupalat/lahi-ita-zaatar-munat.md",
+      "source_blob_sha": "cf0c02b2b1ecd1200557271c2bc574f2ad1c2c71",
+      "servings": 2,
+      "recipeModel": "all listed ingredients, plus Salliselta zaatar 1 tl = assumed 2.5g, sesame present; no extra butter or sauce",
+      "sourceStatus": "HOLD",
+      "release_authorized": false,
+      "human_nutrition_review": false,
+      "assumptionsToResolve": [
+        "1 tl Salliselta za'ataria oletettu 2,5 g, ei punnittu: pakkauskohtainen tilavuusmassa varmistettava",
+        "Seesami on allergeeni, oltava FI:n ja EN/SV/TH:n varoituksessa",
+        "Osa nykyisistä hiilihydraateista puuttuu, koska nykyinen 0.1 g/annos yläraja ei pidä",
+        "Valmistus ei saa lisätä salaa voita, kastiketta, makeutettua pitaa tai öljyä",
+        "Uusi ravinto- ja GK-tarkiste sekä kielikohtaiset hashit ennen julkaisua"
+      ],
+      "originalFiMacros": {
+        "carbs_net_per_serving_g": 24.91,
+        "carbs_total_per_serving_g": 26.07,
+        "protein_per_serving_g": 12.18,
+        "fat_per_serving_g": 14.26
+      },
+      "ingredients": [
+        {
+          "name": "Fineli egg 858 edible",
+          "g": 110,
+          "availableCarbGPer100": 0.3,
+          "fibreGPer100": 0,
+          "proteinGPer100": 12.61,
+          "fatGPer100": 9.24,
+          "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/858"
+        },
+        {
+          "name": "Fineli plain pita 1056",
+          "g": 100,
+          "availableCarbGPer100": 46.08,
+          "fibreGPer100": 2.322,
+          "proteinGPer100": 7.49,
+          "fatGPer100": 0.979,
+          "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/1056"
+        },
+        {
+          "name": "Fineli yogurt 620",
+          "g": 100,
+          "availableCarbGPer100": 3.4,
+          "fibreGPer100": 0,
+          "proteinGPer100": 3,
+          "fatGPer100": 3.9,
+          "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/620"
+        },
+        {
+          "name": "Fineli cooking oil 541",
+          "g": 13.5,
+          "availableCarbGPer100": 0,
+          "fibreGPer100": 0,
+          "proteinGPer100": 0,
+          "fatGPer100": 99.9,
+          "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/541"
+        },
+        {
+          "name": "Salliselta zaatar, contains sesame",
+          "g": 2.5,
+          "availableCarbGPer100": 31,
+          "fibreGPer100": 21,
+          "proteinGPer100": 13,
+          "fatGPer100": 16,
+          "sourceUrl": "https://salliselta.fi/tuotteet/mausteet/zaatar"
+        }
+      ],
+      "candidatePerServing": {
+        "netCarbohydrate": 25.2925,
+        "totalCarbohydrateInclFibre": 26.716,
+        "protein": 12.343,
+        "fat": 14.46475
+      },
+      "rounding": "display to 2 decimals only after full unrounded sum; upper/label uncertainty not measurement"
+    },
+    {
+      "recipe_id": "japanilainen-hojicha-jogurtti-persimonilla",
+      "source_path": "reseptit/aamupalat/japanilainen-hojicha-jogurtti-persimonilla.md",
+      "source_blob_sha": "bba0051aba98ebf8ce1845a1df5bccc058394aba",
+      "servings": 2,
+      "recipeModel": "200g plain 2.5% yogurt, 150g persimmon, 5g sesame, 2g edible fine hojicha powder all retained",
+      "sourceStatus": "HOLD",
+      "release_authorized": false,
+      "human_nutrition_review": false,
+      "assumptionsToResolve": [
+        "Varmista Renée Voltaire -jauhetun hojichan tarkka tuote; muun merkin makrot poikkeavat",
+        "2 g jauhetta syödään kokonaan; ei sama asia kuin uuttamalla pois siivilöidyt teelehdet",
+        "Kuidun 64 g/100g lisääminen muuttaa HH kuidun kanssa -arvoa noin 0.64 g/annos",
+        "Sisällytä 2g teejauheen ravinto laskennan raaka-aineisiin; tarkista rasva/proteiini/HH ja annosten pyöristys",
+        "Allergeenivaroitus koskee myös seesaminsiemeniä; päivitä FI/EN/SV/TH ja mahdollinen GK"
+      ],
+      "originalFiMacros": {
+        "carbs_net_per_serving_g": 17.03,
+        "carbs_total_per_serving_g": 19.34,
+        "protein_per_serving_g": 4.26,
+        "fat_per_serving_g": 4.07
+      },
+      "ingredients": [
+        {
+          "name": "Fineli plain yogurt 2.5% 619",
+          "g": 200,
+          "availableCarbGPer100": 5,
+          "fibreGPer100": 0,
+          "proteinGPer100": 3.19,
+          "fatGPer100": 2.5,
+          "sourceUrl": "https://github.com/ozirix-dev/Reseptit/blob/main/docs/nutrition/calculations/japanilainen-hojicha-jogurtti-persimonilla.json"
+        },
+        {
+          "name": "AFCD persimmon raw",
+          "g": 150,
+          "availableCarbGPer100": 16,
+          "fibreGPer100": 2.7,
+          "proteinGPer100": 0.6,
+          "fatGPer100": 0.1,
+          "sourceUrl": "https://github.com/ozirix-dev/Reseptit/blob/main/docs/nutrition/calculations/japanilainen-hojicha-jogurtti-persimonilla.json"
+        },
+        {
+          "name": "Fineli sesame seeds",
+          "g": 5,
+          "availableCarbGPer100": 1.171,
+          "fibreGPer100": 11.3,
+          "proteinGPer100": 24.6,
+          "fatGPer100": 59.7,
+          "sourceUrl": "https://github.com/ozirix-dev/Reseptit/blob/main/docs/nutrition/calculations/japanilainen-hojicha-jogurtti-persimonilla.json"
+        },
+        {
+          "name": "Renee Voltaire Hojicha powder, edible",
+          "g": 2,
+          "availableCarbGPer100": 13,
+          "fibreGPer100": 64,
+          "proteinGPer100": 16,
+          "fatGPer100": 0.7,
+          "sourceUrl": "https://reneevoltaire.se/en/products/hojicha-rostad"
+        }
+      ],
+      "candidatePerServing": {
+        "netCarbohydrate": 17.159275,
+        "totalCarbohydrateInclFibre": 20.106775,
+        "protein": 4.415,
+        "fat": 4.0745
+      },
+      "rounding": "display to 2 decimals only after full unrounded sum; upper/label uncertainty not measurement"
+    }
+  ]
+}
