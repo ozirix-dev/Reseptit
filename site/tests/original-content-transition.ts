@@ -138,6 +138,14 @@ function omitBriocheForFrozenHistory(report: any) {
 }
 
 
+const reviewedCocoaId = "rasvakaakao-rouva-keto";
+
+function assertCocoaHasNoNumericGk(row: any) {
+  assert.equal(row.status, "INSUFFICIENT SOURCE DATA", reviewedCocoaId);
+  assert.equal(row.glycemicLoadPerServing, null, reviewedCocoaId);
+  assert.equal(row.glycemicLoadRangePerServing, null, reviewedCocoaId);
+}
+
 const changes = new Map(Object.entries(transition.changes));
 const bindingFields = {
   recipes: "sourceHashes",
@@ -159,6 +167,21 @@ function restoreRows(rows: any[], field: "results" | "calculationInputs") {
 }
 
 export function restoreBeforeOriginalContent(report: any) {
+  const cocoa = report.results?.find((row: { recipeId: string }) => row.recipeId === reviewedCocoaId);
+  if (cocoa) {
+    assertCocoaHasNoNumericGk(cocoa);
+    report.results = report.results.filter((row: { recipeId: string }) => row.recipeId !== reviewedCocoaId);
+    if (report.calculationInputs) {
+      report.calculationInputs = report.calculationInputs.filter((row: { recipeId: string }) => row.recipeId !== reviewedCocoaId);
+    }
+    if (report.summary) {
+      report.summary.recipes -= 1;
+      report.summary.insufficientSourceData -= 1;
+    }
+    for (const field of ["autoIncludedRecipeIds", "recipeBindingMismatches", "calculationInputMismatches", "calculationEvidenceMismatches"]) {
+      if (report[field]) report[field] = report[field].filter((id: string) => id !== reviewedCocoaId);
+    }
+  }
   omitGlutenFreeFiForFrozenHistory(report);
   omitCakesForFrozenHistory(report);
   omitNewClassicsForFrozenHistory(report);
@@ -221,7 +244,7 @@ function assertMainAddition(report: any) {
     }
   }
   assert.deepEqual((report.autoIncludedRecipeIds ?? []).filter((key: string) =>
-    !postBaselineBrioche.has(key) && !postBaselineClassics.has(key) && !postBaselineCakes.has(key) && !postBaselineGlutenFreeFi.has(key)), [id]);
+    !postBaselineBrioche.has(key) && !postBaselineClassics.has(key) && !postBaselineCakes.has(key) && !postBaselineGlutenFreeFi.has(key) && key !== reviewedCocoaId), [id]);
   assert.deepEqual(report.results.filter((row: {recipeId: string}) => row.recipeId === id), [mainAddition.result]);
   if (report.calculationInputs) {
     assert.deepEqual(report.calculationInputs.filter((row: {recipeId: string}) => row.recipeId === id), [mainAddition.input]);
@@ -235,6 +258,9 @@ function assertMainAddition(report: any) {
 
 export function assertOriginalContentTransition(report: any) {
   assertMainAddition(report);
+  const cocoa = report.results.filter((row: { recipeId: string }) => row.recipeId === reviewedCocoaId);
+  assert.equal(cocoa.length, 1);
+  assertCocoaHasNoNumericGk(cocoa[0]);
   for (const [id, change] of changes) {
     for (const field of ["results", "calculationInputs"] as const) {
       assert.deepEqual(report[field].filter((r: {recipeId: string}) => r.recipeId === id), [change.after[field]], id + " " + field);
@@ -255,6 +281,14 @@ function inventoryRowWithLfNotes<T extends {notes: string}>(row: T): T {
 
 // Inventory rows carry recipe text metadata even when the macro values are missing.
 export function originalContentInventoryBefore(rows: any[]) {
+  const cocoa = rows.filter(row => row.recipe_id === reviewedCocoaId);
+  if (cocoa.length) {
+    assert.equal(cocoa.length, 1);
+    assert.equal(cocoa[0].source_path, `reseptit/aamupalat/${reviewedCocoaId}.md`);
+    assert.equal(cocoa[0].status, "INSUFFICIENT SOURCE DATA");
+    assert.ok(Object.values(cocoa[0].values).every(value => value === null));
+    rows = rows.filter(row => row.recipe_id !== reviewedCocoaId);
+  }
   const addedGlutenFree = rows.filter(row => postBaselineGlutenFreeFi.has(row.recipe_id));
   if (addedGlutenFree.length) {
     const present = addedGlutenFree.map(row => row.recipe_id).sort();

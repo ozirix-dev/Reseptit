@@ -42,7 +42,7 @@ test('the four A inputs and legacy coverage remain intact alongside authorized G
  assert.deepEqual(report.gkOnlyVariants.slice(legacyVariants.length),releases);
  const legacy=countGkVersions(report.results,legacyVariants);
  assert.deepEqual([legacy.numericRecipes,legacy.originalNumeric,legacy.additionalA,legacy.additionalB,legacy.total,legacy.missing],
-  [207,156,41,10,342,135]);
+  [207,156,41,10,343,136]);
  const coverage=countGkVersions(report.results,report.gkOnlyVariants);
  assert.deepEqual(report.versionCoverage,coverage);
  assert.deepEqual(gkVersionCoverage,countGkVersions(
@@ -52,8 +52,8 @@ test('the four A inputs and legacy coverage remain intact alongside authorized G
  assert.equal(coverage.legacyNumericRecipes,207+releases.filter(v=>!v.studyServing).length);
  assert.equal(coverage.numericRecipes,coverage.legacyNumericRecipes-1,"manakish study bread is excluded from home-recipe coverage");
  assert.equal(coverage.studyServingRecipeIds.length,8);
- assert.deepEqual(report.coverageViews,{originalRecipe:{total:342,numeric:156,missing:186},
-  atLeastOneExactVersion:{total:342,numeric:coverage.numericRecipes,missing:coverage.missing,additionalApprovedVersions:coverage.additionalA+coverage.additionalB},
+ assert.deepEqual(report.coverageViews,{originalRecipe:{total:343,numeric:156,missing:187},
+  atLeastOneExactVersion:{total:343,numeric:coverage.numericRecipes,missing:coverage.missing,additionalApprovedVersions:coverage.additionalA+coverage.additionalB},
   separateVariants:{numeric:coverage.variantNumeric,recipeIds:coverage.variantRecipeIds},
   studyComparisons:{numeric:coverage.studyServingRecipeIds.length,recipeIds:coverage.studyServingRecipeIds},
   legacyMixed:{numeric:coverage.legacyNumericRecipes,historicalOnly:true}});
