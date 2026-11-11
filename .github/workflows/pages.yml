@@ -137,7 +137,7 @@ jobs:
 
       - name: Upload full duplicate audit for editorial review
         if: contains(steps.select.outputs.changed_paths, 'recipe-similarity')
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: recipe-similarity-inventory
           path: |
