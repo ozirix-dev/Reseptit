@@ -2,7 +2,7 @@
 
 ## Rajaus
 
-- Oma, erillinen sisältö-PR: 10 pääruokaa kansioon `reseptit/paaruoat/`.
+- Oma, erillinen sisältö-PR: 10 pääruokaluonnosta eristettyyn `tuonti/karnivore/paaruoat/`-jonoon; julkaisuun hyväksytyt reseptit siirretään myöhemmin `reseptit/paaruoat/`-kansioon.
 - Kaikille `status: draft`, `language: fi`, `category: paaruoka`.
 - Kanoninen tunniste `carnivore` ja FI-hakusynonyymi `karnivore`. Nykyisen skeeman `diet_class` hyväksyy vain `keto`, `vhh_tiukka` ja `vhh_valjempi`; siksi `diet_class` jätetään kokonaan pois tämän PR:n tiedostoista. Suodattimen toteutus on erillisessä PR:ssä, eikä tätä luokitusta pidä hiljaisesti tulkita sen valmiiksi integraatioksi.
 - Ainesosat on punnittu grammoina. Oletukseen sisältyvät liha, kala, kananmunat, voirasva, naudan tali, juusto, suola sekä tarvittaessa vesi. Juusto kelpaa tässä nimenomaisesti sallittuun maitotuotteita käyttävään carnivore-muunnelmaan.
@@ -28,6 +28,10 @@
 - `paistettu-maksa-pekonilla` sisältää sipulin, kerman ja mustapippurin. Uusi ohje on tiukka eläinperäinen vaihtoehto, ei tämän reseptin korvaaminen.
 - `uunilohi-voikastike`, `voissa-paistetut-kanareidet` ja `hitaasti-haudutettu-nauta` on tunnistettu samantyyppisiksi nimikkeiksi. Uusien sisältöjen erot ovat paistotavassa, raaka-aineissa ja carnivore-rajauksessa; ennen julkaisua tehdään vielä sisällöllinen duplikaattitarkistus.
 - Vastaavasti `jauhelihapihvit-vhh-kermakastikkeella` on eri tuote: sisältää muita VHH-ainesosia ja kastikkeen.
+
+## GK-historian tiedostoraja
+
+Historialliset GK-baasitestit vaativat, ettei niiden hyväksyttyyn `reseptit/`-puuhun lisätä automaattisesti uusia reseptitiedostoja. Nämä kymmenen Draftia on siksi eristetty `tuonti/karnivore/paaruoat/`-hakemistoon. Tämä ei ole julkaisulähde. Muiden GK- tai CI-testien sääntöjä ei muuteta eikä kiertotietä julkaisulle käytetä. Lopullinen siirto vaatii erillisen lähde- ja baseline-hyväksynnän.
 
 ## Miksi ei vielä published?
 
