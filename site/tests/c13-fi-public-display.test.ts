@@ -9,9 +9,9 @@ import { c13PublicFiPaths, projectC13FiDisplay } from "../scripts/c13-fi-public-
 import { c13CanonicalHistoryPaths, originalForC13CanonicalHistory } from "./c13-canonical-historical-transition";
 
 const root = path.resolve(import.meta.dirname, "../..");
-const overlays = ["reseptit/aamupalat/indialainen-poha-maapahkinoilla.md", "reseptit/aamupalat/lahi-ita-manakish-zaatarilla.md"];
+const overlays = ["reseptit/aamupalat/indialainen-poha-maapahkinoilla.md","reseptit/aamupalat/lahi-ita-manakish-zaatarilla.md","reseptit/aamupalat/malesialainen-kaya-paahtoleipa.md","reseptit/aamupalat/valimerellinen-halloumi-tomaattileipa.md","reseptit/aamupalat/vietnamilainen-pho-ga-aamuksi.md","reseptit/aamupalat/intialainen-mannasuurimoupma.md"];
 
-test("C13 retains source SHA-locked poha and manakish display corrections", async () => {
+test("C13 retains six exact SHA-bound display corrections", async () => {
   assert.deepEqual([...c13PublicFiPaths].sort(), [...overlays].sort());
   for (const file of overlays) {
   const raw = await readFile(path.join(root, file), "utf8");
@@ -28,8 +28,8 @@ test("C13 retains source SHA-locked poha and manakish display corrections", asyn
   }
 });
 
-test("C13 nine original FI recipes contain canonical chef instructions while frozen GK history is unchanged", async () => {
-  assert.equal(c13CanonicalHistoryPaths.length, 9);
+test("C13 five canonical FI recipes contain canonical chef instructions while frozen GK history is unchanged", async () => {
+  assert.equal(c13CanonicalHistoryPaths.length, 5);
   for (const relative of c13CanonicalHistoryPaths) {
     const id = path.basename(relative, ".md");
     const raw = await readFile(path.join(root, relative), "utf8");
