@@ -97,3 +97,32 @@ test("F25 next15 protected even though their historical FI markdown says publish
   assert.throws(()=>overlayTranslationPublicationIndex([source()],index("rahka-marjakerroskulho"),new Set(["sample"])),/F25_SOURCE_HOLD/);
   assert.doesNotThrow(()=>assertF25SourceReleaseAuthorized("kiinalainen-soijamaito-aamiaisella"));
 });
+
+test("F25 A1 four recipe candidate files stay out of production and retain explicit HOLD",async()=>{
+  const {readFileSync}=await import("node:fs");
+  const {createHash}=await import("node:crypto");
+  const path=await import("node:path");
+  const root=path.resolve(import.meta.dirname,"../..");
+  const manifest=JSON.parse(readFileSync(path.join(root,"meta/kaannokset/f25-a1-four-fi-recipe-drafts-20261111.json"),"utf8"));
+  const gate=JSON.parse(readFileSync(path.join(root,"meta/kaannokset/f25-release-gate.json"),"utf8"));
+  assert.equal(manifest.schemaVersion,1);
+  assert.equal(manifest.stage,"HOLD");
+  assert.equal(manifest.candidates.length,4);
+  for(const c of manifest.candidates){
+    assert.equal(c.status,"HOLD");
+    for(const key of ["nutritionApproved","gkApproved","physicalTrialCompleted","translationReleaseAuthorized"])assert.equal(c[key],false);
+    const source=readFileSync(path.join(root,c.sourcePath));
+    const hash=createHash("sha1").update("blob "+source.byteLength+"\0").update(source).digest("hex");
+    assert.equal(hash,c.sourceGitBlobSha,c.recipeId);
+    assert.ok(c.draftPath.startsWith("docs/reviews/f25-a1-draft-recipes/"));
+    assert.ok(!c.draftPath.startsWith("reseptit/"));
+    const draft=readFileSync(path.join(root,c.draftPath),"utf8");
+    assert.match(draft,/EI julkaisuun/);
+    assert.match(draft,/Koepaistoa ei ole tehty/);
+    assert.match(draft,/Ravintoarvon kandidaattilaskelma/);
+    assert.match(draft,/## Ainekset/);
+    assert.match(draft,/## Valmistus/);
+    assert.ok(c.blockers.length>=4);
+    assert.deepEqual(gate.sources.find((row:any)=>row.recipe_id===c.recipeId)?.approval,null);
+  }
+});

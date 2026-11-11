@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-11-11",
+  "purpose": "Four fully written FI candidate recipes for F25 A1, not publication",
+  "stage": "HOLD",
+  "candidates": [
+    {
+      "recipeId": "rahka-marjakerroskulho",
+      "sourcePath": "reseptit/aamupalat/rahka-marjakerroskulho.md",
+      "sourceGitBlobSha": "af3a8debe0a46b920ed0464545732bd2900485b8",
+      "draftPath": "docs/reviews/f25-a1-draft-recipes/rahka-marjakerroskulho.md",
+      "servings": 4,
+      "macroCandidate": [
+        6.732,
+        8.158,
+        8.3325,
+        5.8515
+      ],
+      "status": "HOLD",
+      "nutritionApproved": false,
+      "gkApproved": false,
+      "physicalTrialCompleted": false,
+      "translationReleaseAuthorized": false,
+      "blockers": [
+        "Valion täsmämerkin kattava polyoli- ja kuitukomponentti puuttuu hyväksytystä ravintokatalogista",
+        "Salakiksen tavallisen 10 % tuotteen nimenomainen pakkauksen ja koostumustiedon vahvistus",
+        "Metsämustikan Fineli 442 polyolitiedossa on NULL, ei hyväksytty nolla",
+        "Pähkinän syötävän osan soveltuva per-100-g-tietue, sitruunankuoren 2 g:n tuotemalli ja säilytysohje",
+        "Uudet neljä makroa ja GI/GK-versiosidokset hyväksyttävä ennen EN/SV/TH-julkaisua"
+      ]
+    },
+    {
+      "recipeId": "intialainen-pinaatti-paneer-chilla",
+      "sourcePath": "reseptit/aamupalat/intialainen-pinaatti-paneer-chilla.md",
+      "sourceGitBlobSha": "7c890fba7728a3eb5da20b57319ff67870e28252",
+      "draftPath": "docs/reviews/f25-a1-draft-recipes/intialainen-pinaatti-paneer-chilla.md",
+      "servings": 2,
+      "macroCandidate": [
+        21.34,
+        32.47,
+        21.63,
+        13.78825
+      ],
+      "status": "HOLD",
+      "nutritionApproved": false,
+      "gkApproved": false,
+      "physicalTrialCompleted": false,
+      "translationReleaseAuthorized": false,
+      "blockers": [
+        "Apetina Paneerin valmistajamerkinnän koko kuitu/polyolisidonta ja ravintokatalogin täsmärecord puuttuvat",
+        "2 g jauhettua juustokuminaa on uusi suunniteltu grammapaino, ei mitattu vanhan 1 tl tilavuusmassaksi",
+        "13,5 g öljyn käytetty määrä on mallissa 100 %, pannu- ja syöntihävikki ei ole mitattu",
+        "Alkuperäisessä FI:ssä neljä makrokenttää puuttuvat; vaatii uuden hyväksytyn laskentatiedoston",
+        "FI/GI/GK-versio ja kolme käännöstä pidettävä HOLDissa kunnes luvut hyväksytty"
+      ]
+    },
+    {
+      "recipeId": "lahi-ita-zaatar-munat",
+      "sourcePath": "reseptit/aamupalat/lahi-ita-zaatar-munat.md",
+      "sourceGitBlobSha": "cf0c02b2b1ecd1200557271c2bc574f2ad1c2c71",
+      "draftPath": "docs/reviews/f25-a1-draft-recipes/lahi-ita-zaatar-munat.md",
+      "servings": 2,
+      "macroCandidate": [
+        25.2925,
+        26.716,
+        12.343,
+        14.46475
+      ],
+      "status": "HOLD",
+      "nutritionApproved": false,
+      "gkApproved": false,
+      "physicalTrialCompleted": false,
+      "translationReleaseAuthorized": false,
+      "blockers": [
+        "Salliselta-mauste sisältää seesamia: allergiaerottelu FI/EN/SV/TH",
+        "2,5 g on punnittava tietoisena uutena reseptimääränä, ei todistettu alkuperäisen 1 tl:n massaksi",
+        "Valmistajan 100 g etiketti sisältää kuitu- ja makrotiedon, mutta master food-record puuttuu",
+        "Pita/öljy/jogurtti merkkikohtainen vaihtelu ja kokonaissäilytys todentamatta",
+        "Vanhoja FI-makroja ei saa näyttää hyväksyttyinä ilman uutta laskentaa/GK-lukkoa"
+      ]
+    },
+    {
+      "recipeId": "japanilainen-hojicha-jogurtti-persimonilla",
+      "sourcePath": "reseptit/aamupalat/japanilainen-hojicha-jogurtti-persimonilla.md",
+      "sourceGitBlobSha": "bba0051aba98ebf8ce1845a1df5bccc058394aba",
+      "draftPath": "docs/reviews/f25-a1-draft-recipes/japanilainen-hojicha-jogurtti-persimonilla.md",
+      "servings": 2,
+      "macroCandidate": [
+        17.159275,
+        20.106775,
+        4.415,
+        4.0745
+      ],
+      "status": "HOLD",
+      "nutritionApproved": false,
+      "gkApproved": false,
+      "physicalTrialCompleted": false,
+      "translationReleaseAuthorized": false,
+      "blockers": [
+        "Renée Voltaire -valmistajan 100g arvoista tunnetaan 13g HH, 64g kuitu, 16g proteiini, 0,7g rasva, mutta master-recordin polyolien lähdesidonta puuttuu",
+        "AFCD persimonin täsmätietue puuttuu master-listasta, vaikka se on vanhassa laskenta-aineistossa",
+        "Sekä jogurtin että seesamin tuoteversio tarkistettava, maito- ja seesamiallergeenit",
+        "Nykyinen FI-GK ja alkuperäiset makrot eivät sisällä 2 g syötävää jauhetta",
+        "Kaksi annosta ja kylmävalmistuksen aikamalli hyväksyttävä ennen uutta käännöstä"
+      ]
+    }
+  ]
+}
