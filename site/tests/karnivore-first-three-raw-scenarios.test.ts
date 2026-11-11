@@ -22,7 +22,7 @@ type MappedRecipe = {
   servings: number;
   status: string;
   inputs: MappedInput[];
-  modelledCarbohydratePerServingFromMappedInputsG?: number;
+  modelledCarbohydratePerServingFromMappedInputsG?: number | null;
 };
 type SourceMap = {
   evidenceType: string;
@@ -107,4 +107,27 @@ test("source gaps cannot become zero during raw-input scenario calculations", ()
   assert.throws(() => rawPerServing(example), /missing\/invalid availableCarbohydrates/);
   example.inputs[0].source = undefined;
   assert.throws(() => rawPerServing(example), /missing per100g source/);
+});
+
+test("every unresolved karnivore food source withholds the numerical carbohydrate scenario", async () => {
+  const sourceMap = JSON.parse(await readFile(sourceMapPath, "utf8")) as SourceMap;
+  for (const recipe of sourceMap.recipes) {
+    const unresolved = recipe.inputs.filter((input) => input.sourceMatch === "unresolved" || !input.source?.per100g);
+    const result = recipe.modelledCarbohydratePerServingFromMappedInputsG;
+    if (unresolved.length > 0) {
+      assert.equal(result, null, `${recipe.recipeId}: unresolved input must produce null, not misleading zero`);
+      assert.equal(recipe.status, "HOLD", `${recipe.recipeId}: unresolved input cannot be approved`);
+      continue;
+    }
+    assert.equal(typeof result, "number", `${recipe.recipeId}: fully mapped scenario must remain numeric`);
+    const computed = rawPerServing(recipe);
+    assert(Math.abs(computed.carbs - (result as number)) < 0.0001,
+      `${recipe.recipeId}: mapped carbohydrate contribution changed unexpectedly`);
+  }
+  for (const id of ["karnivore-naudan-lyhytkylki", "karnivore-rapea-porsaan-kylki"]) {
+    const recipe = sourceMap.recipes.find((r) => r.recipeId === id);
+    assert(recipe, `${id}: expected unresolved draft absent`);
+    assert(recipe.inputs.some((row) => row.sourceMatch === "unresolved"), `${id}: unresolved raw ingredient missing`);
+    assert.equal(recipe.modelledCarbohydratePerServingFromMappedInputsG, null);
+  }
 });
