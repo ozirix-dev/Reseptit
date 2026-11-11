@@ -8,10 +8,11 @@ import { execFileSync } from "node:child_process";
  */
 const before = "bac553e873410b66a2b5c69b41365618319265b6"; // main before #430
 const reviewed = "a0e5d7355fe2f74b74dfbd369729184344943aba"; // exact reviewed PR head
-const paths = new Set([
+export const b21CanonicalHistoryPaths = Object.freeze([
   "reseptit/aamupalat/indonesialainen-bakwan-maissifritter.md",
   "reseptit/aamupalat/meksikolainen-huevos-divorciados.md",
-]);
+] as const);
+const paths = new Set<string>(b21CanonicalHistoryPaths);
 
 const lf = (s: string) => s.replaceAll("\r\n", "\n");
 const gitText = (root: string, commit: string, file: string) =>
@@ -24,7 +25,13 @@ function withoutPreparation(s: string) {
   const after = start + marker.length;
   const endIndex = s.indexOf("\n## ", after);
   const end = endIndex === -1 ? s.length : endIndex;
-  return s.slice(0, after) + "\n<REVIEWED_PREPARATION>\n" + s.slice(end);
+  const tail = s.slice(end);
+  // The approved public method appends a review note; it is not a calculation input.
+  // It must not be mistaken for a pre-existing historical source section.
+  const hasNewReviewNote = tail.startsWith("\n## Muistiinpanot\n");
+  if (hasNewReviewNote) assert.match(tail, /ravinto|GK|grammapaino/i);
+  return s.slice(0, after) + "\n<REVIEWED_PREPARATION>\n" +
+    (hasNewReviewNote ? "" : tail);
 }
 
 export function originalForB21CanonicalHistory(root: string, file: string, text: string): string {
