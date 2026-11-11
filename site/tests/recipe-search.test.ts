@@ -260,3 +260,84 @@ test("gluten-free filter is explicit, independent of keto/VHH and fail-closed", 
   assert.equal(recipeFiltersToSearch({ ...emptyRecipeFilters, glutenFree: undefined }), "");
   assert.equal(filterRecipes([unreviewed, falseClaim], { ...emptyRecipeFilters, glutenFree: true }, "fi").length, 0, "unknown and explicitly false classifications fail closed");
 });
+
+
+test("source-pinned dietary reviews are consistent across all four published language routes", () => {
+  const expected: Record<string, string[]> = {
+    hummus: ["vegetarian", "vegan", "pescatarian"],
+    caponata: ["vegetarian", "vegan", "pescatarian"],
+    munakokkeli: ["vegetarian", "pescatarian"],
+    bouillabaisse: ["pescatarian"],
+    "kermainen-lohipata": ["pescatarian"],
+  };
+  for (const locale of ["fi", "en", "sv", "th"] as const) {
+    const local = siteContent.recipes.filter((recipe) => recipe.locale === locale);
+    for (const [id, tags] of Object.entries(expected)) {
+      const recipe = local.find((recipe) => recipe.recipeId === id);
+      assert.ok(recipe, `${locale}/${id} must be published`);
+      assert.deepEqual(recipe.dietTags, tags, `${locale}/${id} has reviewed diet tags`);
+      for (const diet of tags) {
+        assert.equal(filterRecipes([recipe], { ...emptyRecipeFilters, diet: diet as "vegan" | "vegetarian" | "pescatarian" }, locale).length, 1);
+      }
+    }
+    assert.ok(filterRecipes(local, { ...emptyRecipeFilters, diet: "vegan" }, locale).some(recipe => recipe.recipeId === "hummus"));
+    assert.ok(!filterRecipes(local, { ...emptyRecipeFilters, diet: "vegan" }, locale).some(recipe => recipe.recipeId === "munakokkeli"));
+    assert.ok(!filterRecipes(local, { ...emptyRecipeFilters, diet: "carnivore" }, locale).some(recipe => recipe.recipeId === "munakokkeli"));
+  }
+  const hummus = siteContent.recipes.find(recipe => recipe.recipeId === "hummus" && recipe.locale === "fi")!;
+  assert.deepEqual(filterRecipes([hummus], { ...emptyRecipeFilters, category: "alkuruoka", diet: "vegan" }, "fi").map(x => x.recipeId), ["hummus"]);
+  assert.deepEqual(filterRecipes([hummus], { ...emptyRecipeFilters, category: "paaruoka", diet: "vegan" }, "fi"), []);
+  assert.deepEqual(filterRecipes([hummus], { ...emptyRecipeFilters, diet: "vegan", glutenFree: true }, "fi"), [],
+    "vegan reviews do not imply a reviewed gluten-free claim");
+});
+
+test("new diet URL values round-trip, preserve keto/VHH and reject unapproved options", () => {
+  const filters = { ...emptyRecipeFilters, diet: "pescatarian" as const, maxTime: 60, glutenFree: true };
+  assert.equal(recipeFiltersToSearch(filters), "?diet=pescatarian&time=60&gluten_free=1");
+  assert.deepEqual(parseRecipeFilters(recipeFiltersToSearch(filters), ["all"]), filters);
+  assert.deepEqual(parseRecipeFilters("?diet=pescatarian", ["all"], ["keto", "vhh"]), emptyRecipeFilters);
+  assert.deepEqual(parseRecipeFilters("?diet=carnivore", ["all"], ["carnivore"]), { ...emptyRecipeFilters, diet: "carnivore" });
+  assert.deepEqual(parseRecipeFilters("?diet=unknown", ["all"]), emptyRecipeFilters);
+  const base = siteContent.recipes.find(recipe => recipe.locale === "fi")!;
+  assert.equal(filterRecipes([{ ...base, recipeId: "animal-only-fixture", dietTags: ["carnivore"] }], { ...emptyRecipeFilters, diet: "carnivore" }, "fi").length, 1);
+  assert.equal(filterRecipes([{ ...base, recipeId: "not-reviewed", dietTags: undefined }], { ...emptyRecipeFilters, diet: "carnivore" }, "fi").length, 0);
+});
+
+
+test("diet review pins fail closed when Finnish source or a translation changes", async () => {
+  const { reviewedDietTagsForSource } = await import("../scripts/reviewed-diet-filters");
+  const { appendFile, copyFile, mkdtemp, rm } = await import("node:fs/promises");
+  const { tmpdir } = await import("node:os");
+  const path = await import("node:path");
+  const root = path.resolve(import.meta.dirname, "../..");
+  const fi = path.join(root, "reseptit/alkuruoat/hummus.md");
+  const byLocale = {
+    fi,
+    en: path.join(root, "kaannokset/en/alkuruoat/hummus.md"),
+    sv: path.join(root, "kaannokset/sv/alkuruoat/hummus.md"),
+    th: path.join(root, "kaannokset/th/alkuruoat/hummus.md"),
+  };
+  const expected = ["vegetarian", "vegan", "pescatarian"];
+  for (const locale of ["fi", "en", "sv", "th"] as const) {
+    assert.deepEqual(await reviewedDietTagsForSource("hummus", locale, byLocale[locale], fi), expected, locale);
+    assert.deepEqual(await reviewedDietTagsForSource("hummus", locale, byLocale[locale]), [], `${locale}: no verified FI source`);
+  }
+  assert.deepEqual(await reviewedDietTagsForSource("__proto__", "fi", fi, fi), [], "unknown recipe must never use an inherited entry");
+  const dir = await mkdtemp(path.join(tmpdir(), "reviewed-diets-"));
+  try {
+    const changedFi = path.join(dir, "hummus-fi.md");
+    const changedSv = path.join(dir, "hummus-sv.md");
+    await copyFile(fi, changedFi);
+    await copyFile(byLocale.sv, changedSv);
+    assert.deepEqual(await reviewedDietTagsForSource("hummus", "sv", changedSv, changedFi), expected);
+    await appendFile(changedFi, "\n<!-- Simulated canonical source edit -->\n");
+    assert.deepEqual(await reviewedDietTagsForSource("hummus", "sv", changedSv, changedFi), [],
+      "a changed Finnish original invalidates even an unchanged translation");
+    await copyFile(fi, changedFi);
+    await appendFile(changedSv, "\n<!-- Simulated translation edit -->\n");
+    assert.deepEqual(await reviewedDietTagsForSource("hummus", "sv", changedSv, changedFi), [],
+      "a changed translation cannot keep its old review");
+  } finally {
+    await rm(dir, { recursive: true, force: true });
+  }
+});
