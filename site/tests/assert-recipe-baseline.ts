@@ -33,6 +33,10 @@ const classicCategory: Record<string, string> = {
 };
 // Release: precisely two source-reviewed, published gluten-free recipes.
 // Blob SHA locks every ingredient, instruction, review link, source and macro.
+// One uniquely SHA-locked *draft-only* C5 version; cannot publish or mutate
+// the historic 326 recipes, and cannot grant nutrition/GK approval.
+const approvedC5DraftBlob = "b4344737daaeea38eb2ff76280c6a31d8c1b3c6d";
+const approvedC5DraftPath = "reseptit/raakileet/indonesialainen-bakwan-jagung-punnittu-v2.md";
 const approvedGlutenFreeFiFiles = new Map<string, string>([
   ["reseptit/jalkiruoat/gluteeniton-uunipannukakku.md", "060baa3ae58e0c9318a88451f1a8b72ea3c45de3"],
   ["reseptit/jalkiruoat/gluteeniton-perunajauhokakkupohja.md", "8de57cb20ad8aa888870a6f061a0aa5c7bfe73a6"],
@@ -122,6 +126,23 @@ export function assertRecipeBaseline(root: string, baseline: string, ...protecte
 
   for (const change of changes) {
     const [status, file] = change.split("\t");
+    if (status === "A" && file === approvedC5DraftPath) {
+      const actualBlob = execFileSync("git", ["hash-object", file], { cwd: root, encoding: "utf8" }).trim();
+      assert.equal(actualBlob, approvedC5DraftBlob, "UNREVIEWED_C5_DRAFT: " + change);
+      const parsed = parseMarkdown(readFileSync(path.join(root, file), "utf8"));
+      assert.ok(parsed, "C5 structured draft missing");
+      const version = recipeFrontmatterSchema.parse(parsed.data);
+      assert.equal(version.status, "draft", "C5 version cannot silently publish");
+      assert.equal(version.recipe_id, "indonesialainen-bakwan-jagung-punnittu-v2");
+      assert.equal(version.category, "aamupala");
+      assert.equal(version.language, "fi");
+      for (const nutrient of ["carbs_net_per_serving_g", "carbs_total_per_serving_g",
+        "protein_per_serving_g", "fat_per_serving_g"] as const) {
+        assert.equal(version[nutrient], null, "C5 V2 nutrition must remain withheld");
+      }
+      continue;
+    }
+
     if (status === "A" && approvedGlutenFreeFiFiles.has(file)) {
       const actualBlob = execFileSync("git", ["hash-object", file], { cwd: root, encoding: "utf8" }).trim();
       assert.equal(actualBlob, approvedGlutenFreeFiFiles.get(file), "UNREVIEWED_GF_FI_RECIPE: " + change);
