@@ -7,7 +7,7 @@ import { projectSafeWontonFiDisplay } from "../scripts/wonton-fi-public-display"
 import { material21FiPaths, projectMaterial21FiDisplay } from "../scripts/material21-fi-public-display";
 import { material21MethodPaths, projectMaterial21MethodsFi } from "../scripts/material21-methods-public-display";
 import { c13PublicFiPaths, projectC13FiDisplay } from "../scripts/c13-fi-public-display";
-import { c13CanonicalHistoryPaths, originalForC13CanonicalHistory } from "./c13-canonical-historical-transition";
+import { c13CanonicalHistoryPaths } from "./c13-canonical-historical-transition";
 import { parseMarkdown } from "../src/content/markdown";
 import { siteContent } from "../src/generated/content.generated";
 
