@@ -113,3 +113,35 @@ test("Banh cuon V4 replays exact per100ml label without density, unknown polyols
   assert.throws(()=>replayBanhCuonV4({sauceUnit:"g"}),/F25_A2_V4_LABEL_BASIS_MISMATCH/);
   assert.equal(r.gk,null);
 });
+
+test("Banh cuon GK-unavailable review documents major unmatched starch instead of inventing numeric GI",async()=>{
+  const {MAX_UNMATCHED_GI_INGREDIENT_CARBOHYDRATE_G,CUMULATIVE_OMITTED_CARBOHYDRATE_TOLERANCE_G}
+    =await import("../scripts/glycemic-load-model");
+  const gk=load("docs/reviews/f25-a2-release/banh-cuon-v4-gk-unavailable-evidence.json");
+  const fi=readFileSync(path.join(root,gk.sourcePath));
+  assert.equal(b(fi),gk.sourceGitBlob);
+  assert.equal(gk.recipeId,ledger.recipeId);
+  assert.equal(gk.servings,2);
+  assert.equal(gk.gk,null);
+  assert.equal(gk.reviewDisposition,"GK_UNAVAILABLE_EXPLICITLY_REVIEWED");
+  assert.equal(gk.dispositionAuthorized,false);
+  assert.equal(gk.gkBindingAuthorized,false);
+  assert.equal(gk.published,false);
+  const components=gk.sourceCarbohydrateContributions;
+  const high=components.filter((x:any)=>x.releaseStatus==="MATERIAL_UNMATCHED");
+  const small=components.filter((x:any)=>x.releaseStatus==="LOW_OMISSION_CANDIDATE_NOT_APPROVED");
+  assert.equal(high.length,2);
+  assert.equal(small.length,2);
+  assert.ok(high.every((x:any)=>x.availableCarbohydratePerServingG>MAX_UNMATCHED_GI_INGREDIENT_CARBOHYDRATE_G));
+  assert.ok(small.every((x:any)=>x.availableCarbohydratePerServingG<MAX_UNMATCHED_GI_INGREDIENT_CARBOHYDRATE_G));
+  const sum=(xs:any[])=>xs.reduce((n,x)=>n+x.availableCarbohydratePerServingG,0);
+  assert.equal(sum(high),37+8.6);
+  assert.equal(sum(small),0.4+0.225);
+  assert.ok(sum(small)<CUMULATIVE_OMITTED_CARBOHYDRATE_TOLERANCE_G);
+  assert.equal(gk.materialCarbohydrateWithNoExactGiPerServingG,45.6);
+  assert.equal(gk.documentedMinorCarbohydrateNoGiPerServingG,0.625);
+  assert.equal(gk.totalAvailableCarbohydratePerServingG,46.225);
+  assert.equal(sum(components),46.225);
+  assert.ok(gk.humanEvidence.every((x:any)=>x.match==="NOT_EXACT"));
+  assert.ok(gk.approvalPreconditions.length>=4);
+});
