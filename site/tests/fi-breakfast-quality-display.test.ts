@@ -264,9 +264,9 @@ test("F25 batch A2 three real cooking method revisions are source-sealed and do 
     ["vietnamilainen-banh-xeo-aamiaisletut", /yhdeltä puolelta/, /kuumenna idut kauttaaltaan läpikuumiksi/],
   ];
   for(const [id, cooking, safety] of cases) {
-    const path = "reseptit/aamupalat/" + id + ".md";
-    const raw = readFileSync(path.join(root, path), "utf8");
-    const before = parseMarkdown(raw), after = parseMarkdown(projectBreakfastFiQualityDisplay(path, raw));
+    const relative = "reseptit/aamupalat/" + id + ".md";
+    const raw = readFileSync(path.join(root, relative), "utf8");
+    const before = parseMarkdown(raw), after = parseMarkdown(projectBreakfastFiQualityDisplay(relative, raw));
     assert.ok(before && after);
     assert.deepEqual(after.data.ingredients, before.data.ingredients, id + ": ingredient masses");
     assert.equal(after.data.servings, before.data.servings, id + ": servings");
