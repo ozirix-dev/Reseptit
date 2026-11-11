@@ -17,9 +17,9 @@ protein_per_serving_g: 42.95
 fat_per_serving_g: 45.08
 image:
   src: "paaruoat/karnivore-jauhelihakulho-munalla.webp"
-  alt: "Ruskistettua naudan jauhelihaa sekä paistettuja kananmunia tummassa kulhossa."
-  width: 640
-  height: 427
+  alt: "Ruskistettua naudan jauhelihaa ja yksi paistettu kananmuna harmaassa kulhossa."
+  width: 1280
+  height: 853
 ingredients:
   - amount: 400
     unit: "g"
@@ -60,7 +60,7 @@ Tässä ensiversiossa raakojen keltuaisten sijasta käytetään kypsiä paistett
 ## Ravintoarvojen laskentaperuste
 
 - Numeeriset arvot ovat **lähteistettyjä raaka-ainepanoksen arvioita per annos**, eivät laboratoriomittauksia kypsästä ruoasta.
-- Arvio käyttää täsmälleen Snellman Kunnon naudan jauhelihaa 20 % (EAN 6409620011856), muita jauhelihoja ei ole automaattisesti hyväksytty. Jaa pannulle irronnut rasva annoksiin. Kuvassa munankeltuainen näyttää pehmeältä; kypsennä muna turvallisesti ohjeen mukaisesti.
+- Arvio käyttää täsmälleen Snellman Kunnon naudan jauhelihaa 20 % (EAN 6409620011856), muita jauhelihoja ei ole automaattisesti hyväksytty. Jaa pannulle irronnut rasva annoksiin.
 - Tämän annoksen laskentaan on käytetty: Snellman Kunnon naudan jauheliha 20 % EAN 6409620011856; Fineli 858 ja 30. Kuitu ja sokerialkoholit perustuvat dokumentoituun Fineli-/AFCD-vertailuun. Muut tuotteet ja paistorasvan jääminen pannulle muuttavat tulosta.
 - Glykeemistä indeksiä tai glykeemistä kuormaa **ei ole määritetty**. Eläinperäisyydestä ei päätellä GK=0:aa.
 - Kuva on havainnekuva. Ainesosaluettelon ulkopuolisia mausteita tai lisukkeita ei tule lisätä valmistukseen.

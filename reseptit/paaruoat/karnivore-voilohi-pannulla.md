@@ -17,9 +17,9 @@ protein_per_serving_g: 37.62
 fat_per_serving_g: 41.23
 image:
   src: "paaruoat/karnivore-voilohi-pannulla.webp"
-  alt: "Paistettua nahallista lohifileetä sulaneessa voissa tummalla pannulla."
-  width: 640
-  height: 427
+  alt: "Paistettu lohifilee rapea nahka ylöspäin sulassa voissa vaalealla lautasella."
+  width: 1280
+  height: 853
 ingredients:
   - amount: 400
     unit: "g"
