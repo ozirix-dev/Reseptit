@@ -82,3 +82,35 @@ test("Banh cuon label replay respects actual 15ml and keeps unverified full macr
   for(const [key,value] of Object.entries(ledger.independentGate)) assert.equal(value,key==="cookingMethodEditoriallyReviewed"||key==="fishLabelSkuReviewed",key);
   assert.ok(ledger.nextActions.length>=5);
 });
+
+test("Banh cuon V4 calculator replays exact per100ml label without invented density or publishing unknown polyols",async()=>{
+  const {replayBanhCuonV4}=await import("../scripts/f25-a2-banh-cuon-v4-review");
+  const {calculate}=await import("../scripts/nutrition-model");
+  const r=replayBanhCuonV4();
+  assert.equal(r.status,"INSUFFICIENT SOURCE DATA");
+  assert.equal(r.publicationStatus,"WITHHELD_SOURCE_INCOMPLETE");
+  assert.equal(r.servings,2);
+  assert.equal(r.rows.length,7);
+  const sauce=r.rows.find((x:any)=>x.item==="Squid Brand -kalakastiketta");
+  assert.ok(sauce);
+  assert.equal(sauce.millilitres,15);
+  assert.equal(sauce.grams,null,"Direct 100ml nutrient label must never pretend measured gram mass");
+  assert.equal(r.edibleInputGrams,null,"Mixed units cannot report bogus all-grams total");
+  assert.equal(r.perServing.carbohydrate,46.23);
+  assert.equal(r.perServing.protein,20.93);
+  assert.equal(r.perServing.fat,11.31);
+  assert.equal(r.perServing.fibre,1.2);
+  assert.equal(r.perServing.polyols,null);
+  assert.equal(r.perServing.netCarbohydrate,null);
+  assert.equal(r.totalCarbohydratePerServingG,null);
+  assert.equal(r.omissionWithinTolerance,true);
+  assert.ok(sauce.issues.some(x=>x.includes("Unknown nutrient polyols")));
+  const wrongUnit=structuredClone(r);
+  const fish=wrongUnit.ingredients.find((x:any)=>x.item==="Squid Brand -kalakastiketta");
+  assert.ok(fish);
+  fish.unit="g";
+  const bad=calculate(wrongUnit);
+  assert.equal(bad.status,"INSUFFICIENT SOURCE DATA");
+  const badSauce=bad.rows.find((x:any)=>x.item===fish.item);
+  assert.ok(badSauce?.issues.some(x=>x.includes("Per100ml label requires ml ingredient")));
+});
