@@ -60,7 +60,11 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 
 ## Valmistus
 
-1. Kuumenna kattilassa öljy tai liemi. Lisää aromit ja hitaammin kypsyvät ainekset; paista tai hauduta muutama minuutti.
-2. Kaada kattilaan liemi ja keitä miedosti, kunnes pääraaka-aineet ovat kypsiä.
-3. Lisää nuudelit, lehtivihannekset tai muut nopeasti kypsyvät ainekset niiden kypsymisajan mukaan.
-4. Keitä inkivääriä ja tähtianista vedessä miedolla lämmöllä. Kypsennä kananrinta vedessä, nosta se ja viipaloi. Kypsennä riisinuudelit pakkauksen ajan ja tarjoa kuumassa liemessä kanan kanssa.
+1. Kuumenna ainesluettelon 700 ml vettä kiehuvaksi. Lisää 2 g tuoretta inkivääriä sekä 1 g tähtianista. Laske lämpöä ja hauduta kannen alla hetki, jotta aromit liukenevat veteen. Älä lisää keittoon öljyä tai valmista lihalientä, joita ei ole luettelossa.
+2. Laita koko 150 g nahatonta raakaa broilerinrintafileetä aromiveteen. Kuumenna kevyesti poreillen, kunnes kanan paksuimman kohdan sisälämpö on vähintään 74 °C. Tarkista ruokalämpömittarilla. Nosta kana puhtaalle leikkuulaudalle, anna hetki vetäytyä ja leikkaa ohuiksi paloiksi.
+3. Keitä 100 g riisinuudeleita erillisessä kattilassa pakkauksen ohjeen mukaan, valuta ja jaa kahteen annoskulhoon. Kanan kanssa kosketuksissa olleet välineet pestään ennen kypsän ruoan käsittelyä.
+4. Kaada kuumaa maustettua keitinvettä nuudelien päälle ja jaa koko kypsä kana tasaisesti kumpaankin kulhoon. Lisää luettelon suolaa tarvittaessa. Tarjoa heti ilman listaamattomia yrttejä, chiliä, ituja tai muita lisukkeita.
+
+## Muistiinpanot
+
+Tämä on 700 ml vedestä valmistettu nopea pho ga -henkinen keitto, ei perinteinen pitkään haudutettu kanaliemi. Raakan kanan riittävä kuumentaminen on pakollinen turvallisuusvaihe. Riisinuudelin kuiva/kypsä-massan tarkennus ja ravintolähteet tarkistetaan erikseen.
