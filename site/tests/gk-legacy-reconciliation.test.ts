@@ -13,6 +13,7 @@ import {historicalFarinataForApprovedPanVersion} from '../scripts/gk100-farinata
 import {historicalRendangForApprovedVersion} from '../scripts/gk100-rendang-sealed-source';
 import {reviewedChefSafetyPaths,originalForReviewedChefSafety} from './chef-safety-historical-transition';
 import { chefCorrectionPaths, originalForChefHistoricalCheck } from "./chef-instruction-transition";
+import { b21CanonicalHistoryPaths, originalForB21CanonicalHistory } from "./b21-canonical-historical-transition";
 import {fileURLToPath} from 'node:url';
 
 const root=fileURLToPath(new URL('../../',import.meta.url));
@@ -60,6 +61,18 @@ test('Live original results preserve frozen history plus the exact reviewed tran
    // The live macro numbers and GI/GK inputs remain identical, but the audit
    // records every source's full-file SHA. Undo ONLY exact proposed chef
    // instruction-only changes when comparing to the frozen historical audit.
+   if (b21CanonicalHistoryPaths.some(file => file === row.source_path)) {
+    const published=read(row.source_path).replaceAll('\r\n','\n');
+    const frozen=originalForB21CanonicalHistory(root,row.source_path,published);
+    const publishedSha=createHash('sha256').update(published).digest('hex');
+    const frozenSha=createHash('sha256').update(frozen).digest('hex');
+    assert.equal(row.source_content_hash,publishedSha,row.source_path+' B21 live inventory binding');
+    const liveNotes=published.split('## Muistiinpanot')[1]?.trim() ?? '';
+    assert.equal(normalNotes,liveNotes.replaceAll('\r\n','\n').replaceAll('\n',lineEnding),
+      row.source_path+' B21 inventory notes must equal reviewed source');
+    const frozenNotes=(frozen.split('## Muistiinpanot')[1]?.trim() ?? '').replaceAll('\n',lineEnding);
+    return {...row,notes:frozenNotes,source_content_hash:frozenSha};
+   }
    if(chefCorrectionPaths.includes(row.source_path)){
     const published=read(row.source_path).replaceAll('\r\n','\n');
     const original=originalForChefHistoricalCheck(root,row.source_path,published);
