@@ -199,7 +199,7 @@ test("F25 next15 product rebuilds recalculate 4 macro fields but cannot publish 
     assert.equal(row.release_authorized, false, row.recipe_id);
     assert.ok(!indexed.has(row.recipe_id), row.recipe_id + " is HOLD but appears in published translations");
     const raw = await readFile(path.join(root, row.source_path));
-    const actualGitBlob = createHash("sha1").update("blob " + raw.length + "\\0").update(raw).digest("hex");
+    const actualGitBlob = createHash("sha1").update("blob " + raw.length + "\0").update(raw).digest("hex");
     assert.equal(actualGitBlob, row.source_blob_sha, row.recipe_id + " changed: review must be repeated");
   }
   const fields = ["netCarbohydrate","totalCarbohydrateInclFibre","protein","fat"] as const;
