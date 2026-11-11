@@ -1,0 +1,54 @@
+name: Stage three karnivore recipe images (one-time)
+
+on:
+  push:
+    branches: [feat/karnivore-fi3-image-staging-20261111]
+    paths: [.github/workflows/stage-karnivore-fi3-images.yml]
+
+permissions:
+  contents: write
+
+jobs:
+  import:
+    if: github.repository == 'ozirix-dev/Reseptit'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: true
+      - name: Import exact reviewed WebP candidates
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p kuvat/paaruoat
+          # Temporary public, expiring download links to images created by the project.
+          curl --fail --show-error --silent --location --retry 2 --max-time 60 \
+            "https://at.adobe.com/P1Y7vtI2yXhZymKO" -o kuvat/paaruoat/karnivore-jauhelihakulho-munalla.webp
+          curl --fail --show-error --silent --location --retry 2 --max-time 60 \
+            "https://at.adobe.com/XXWywlMoOgjuMeCY" -o kuvat/paaruoat/karnivore-steak-and-eggs.webp
+          curl --fail --show-error --silent --location --retry 2 --max-time 60 \
+            "https://at.adobe.com/5XMGxoqT2fRSqhWd" -o kuvat/paaruoat/karnivore-voilohi-pannulla.webp
+          echo "9a2c89cb5213083283ef1a3fc353a600f56f2c82febe0a5db3034514244fba4a  kuvat/paaruoat/karnivore-jauhelihakulho-munalla.webp" | sha256sum --check
+          echo "ab65ab774eeee4d6449ce1315b4c95e59fddd34fc1f5cc75769ab3d9203fc466  kuvat/paaruoat/karnivore-steak-and-eggs.webp" | sha256sum --check
+          echo "ca6c805fbbf834a0b42f1d94b256f4583f618481998286323eca315449cba6fe  kuvat/paaruoat/karnivore-voilohi-pannulla.webp" | sha256sum --check
+          python3 - <<'PY'
+          from pathlib import Path
+          for f in Path('kuvat/paaruoat').glob('karnivore-*.webp'):
+              data = f.read_bytes()
+              assert data[:4] == b'RIFF' and data[8:12] == b'WEBP', f
+              print(f, len(data))
+          PY
+      - name: Commit exact image candidates to this staging branch only
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add kuvat/paaruoat/karnivore-jauhelihakulho-munalla.webp \
+            kuvat/paaruoat/karnivore-steak-and-eggs.webp \
+            kuvat/paaruoat/karnivore-voilohi-pannulla.webp
+          git diff --cached --quiet || {
+            git commit -m "assets(karnivore): stage three SHA-verified WebP photo candidates"
+            git push origin HEAD:feat/karnivore-fi3-image-staging-20261111
+          }
