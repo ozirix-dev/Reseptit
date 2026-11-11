@@ -21,7 +21,7 @@ const pilotIds = [
 ];
 
 test("issue404 10-recipe pilot preflight predicts the five recorded blocks before CI", async () => {
-  const inputs = await loadSourceMigrationInputs(root);
+  const inputs = await loadSourceMigrationInputs(root, pilotIds);
   const actual = classifyCanonicalMethodMigration(pilotIds, inputs);
   assert.equal(actual.length, 10);
   assert.deepEqual(actual.filter(x => x.classification === "HOLD").map(x => x.recipeId), [
