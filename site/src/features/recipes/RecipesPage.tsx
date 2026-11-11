@@ -11,6 +11,7 @@ import { toolUi } from "./recipe-tools";
 import { cuisines, ingredientGroups } from "@/content/recipe-facets";
 import { emptyRecipeFilters, filterRecipes, parseRecipeFilters, recipeFiltersToSearch, type RecipeCategory, type RecipeDietFilter, type RecipeFilters, type GlycemicLoadFilterCategory } from "./recipe-search";
 import { glycemicLoadFilterCategories } from "@/generated/glycemic-load-filters.generated";
+import { publicF25GkFilterCategories } from "./f25-nutrition-withhold";
 
 import type { RecipeSummary } from "@/content/route-data";
 
@@ -33,7 +34,8 @@ export function RecipesPage({ locale }: { locale: RecipeLocale }) {
   const availableCategories = categories.filter((category) => recipes.some((recipe) => recipe.category === category));
   const hasDietClasses = recipes.some((recipe) => recipe.dietClass !== null);
   const hasKetoRecipes = recipes.some((recipe) => recipe.dietClass === "keto");
-  const hasGlycemicLoad = recipes.some((recipe) => glycemicLoadFilterCategories[recipe.recipeId] !== undefined);
+  const visibleGlycemicLoadCategories = publicF25GkFilterCategories(glycemicLoadFilterCategories, locale);
+  const hasGlycemicLoad = recipes.some((recipe) => visibleGlycemicLoadCategories[recipe.recipeId] !== undefined);
   const reviewedDiets: RecipeDietTag[] = ["carnivore", "vegetarian", "vegan", "pescatarian"];
   const availableDiets: Exclude<RecipeDietFilter, "all">[] = [
     ...(hasKetoRecipes ? ["keto" as const] : []),
@@ -68,7 +70,7 @@ export function RecipesPage({ locale }: { locale: RecipeLocale }) {
     navigate(location.pathname, { replace: true, preventScrollReset: true });
   }
 
-  const filteredRecipes = filterRecipes(recipes, filters, locale, glycemicLoadFilterCategories);
+  const filteredRecipes = filterRecipes(recipes, filters, locale, visibleGlycemicLoadCategories);
   const activeFilters: Array<{ key: string; label: string; clear: Partial<RecipeFilters> }> = [];
   if (filters.query) activeFilters.push({ key: "query", label: `“${filters.query}”`, clear: { query: "" } });
   if (filters.category !== "all") activeFilters.push({ key: "category", label: labels.category[filters.category], clear: { category: "all" } });
