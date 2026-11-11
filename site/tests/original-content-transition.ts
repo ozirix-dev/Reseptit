@@ -30,16 +30,20 @@ const postBaselineClassics = new Set<string>(postBaselineClassicIds);
 export const postBaselineCakeIds = ["perinteinen-mansikkataytekakku-sienikakkupohjalla","sienikakkupohja"] as const;
 const postBaselineCakes = new Set<string>(postBaselineCakeIds);
 
-// Exactly two FI gluten-free source recipes in the separately reviewed first release.
-// GK history remains frozen; these additions have NO approved numeric GK.
-export const postBaselineGlutenFreeFiIds = ["gluteeniton-perunajauhokakkupohja", "gluteeniton-durrapizzapohja"] as const;
+// Two previously released gluten-free recipes and one exact reviewed follow-up.
+// GK history remains frozen; NONE has an approved numeric GK. Earlier historical
+// snapshots may legitimately contain only the first two, never an arbitrary subset.
+export const postBaselineGlutenFreeFiIds = ["gluteeniton-perunajauhokakkupohja", "gluteeniton-durrapizzapohja", "gluteeniton-uunipannukakku"] as const;
+const originalGlutenFreeFiIds = postBaselineGlutenFreeFiIds.slice(0, 2);
 const postBaselineGlutenFreeFi = new Set<string>(postBaselineGlutenFreeFiIds);
 
 function omitGlutenFreeFiForFrozenHistory(report: any) {
   if (!report.results) return;
   const added = report.results.filter((row: {recipeId: string}) => postBaselineGlutenFreeFi.has(row.recipeId));
   if (!added.length) return;
-  assert.deepEqual(added.map((row: {recipeId: string}) => row.recipeId).sort(), [...postBaselineGlutenFreeFiIds].sort());
+  const present = added.map((row: {recipeId: string}) => row.recipeId).sort();
+  assert.ok([originalGlutenFreeFiIds, postBaselineGlutenFreeFiIds].some(ids => JSON.stringify(present) === JSON.stringify([...ids].sort())),
+    "Only the original 2 or exact approved 3 gluten-free recipes may enter historical projection");
   for (const row of added) {
     assert.equal(row.status, "INSUFFICIENT SOURCE DATA", row.recipeId);
     assert.equal(row.glycemicLoadPerServing, null, row.recipeId);
@@ -244,9 +248,11 @@ function inventoryRowWithLfNotes<T extends {notes: string}>(row: T): T {
 export function originalContentInventoryBefore(rows: any[]) {
   const addedGlutenFree = rows.filter(row => postBaselineGlutenFreeFi.has(row.recipe_id));
   if (addedGlutenFree.length) {
-    assert.deepEqual(addedGlutenFree.map(row => row.recipe_id).sort(), [...postBaselineGlutenFreeFiIds].sort());
+    const present = addedGlutenFree.map(row => row.recipe_id).sort();
+    assert.ok([originalGlutenFreeFiIds, postBaselineGlutenFreeFiIds].some(ids => JSON.stringify(present) === JSON.stringify([...ids].sort())),
+      "Inventory may contain original 2 or reviewed 3 gluten-free recipes only");
     for (const row of addedGlutenFree) {
-      const expectedCategory = row.recipe_id === "gluteeniton-perunajauhokakkupohja" ? "jalkiruoat" : "leivonnaiset";
+      const expectedCategory = row.recipe_id === "gluteeniton-perunajauhokakkupohja" || row.recipe_id === "gluteeniton-uunipannukakku" ? "jalkiruoat" : "leivonnaiset";
       assert.equal(row.source_path, `reseptit/${expectedCategory}/${row.recipe_id}.md`, row.recipe_id);
       assert.equal(row.carbs_total_per_serving_g ?? null, null, row.recipe_id);
     }
