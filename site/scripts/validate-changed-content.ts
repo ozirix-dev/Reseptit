@@ -14,11 +14,12 @@ import { assertChangedRecipeAuditIsClean, duplicateRoutesForChangedRecipes, nutr
 import { assertSnackPublicationReady } from "../src/content/recipe-validation";
 import { parseMarkdown, renderInstructionSteps, renderSafeMarkdown } from "../src/content/markdown";
 import { recipeFrontmatterSchema } from "../src/content/schema";
+import { assertKarnivoreDraftSafe } from "./karnivore-draft-gate";
 
 const siteDir = path.resolve(import.meta.dirname, "..");
 const repoRoot = path.resolve(siteDir, "..");
 const suppliedPaths = process.argv.slice(2);
-const recipePaths = suppliedPaths.filter((file) => /^(?:reseptit|kaannokset)\/.+\.md$/i.test(file) && !file.includes("/_mallipohjat/"));
+const recipePaths = suppliedPaths.filter((file) => /^(?:(?:reseptit|kaannokset)\/.+|tuonti\/karnivore\/paaruoat\/[^/]+)\.md$/i.test(file) && !file.includes("/_mallipohjat/"));
 const evidencePaths = suppliedPaths.filter((file) => /^docs\/nutrition\/calculations\/[a-z0-9-]+\.json$/i.test(file));
 const sourceCategories = ["alkuruoat", "paaruoat", "jalkiruoat", "leivonnaiset", "aamupalat", "valipalat"];
 const translationLocales = ["en", "sv", "th"];
@@ -82,6 +83,7 @@ for (const relativePath of recipePaths) {
   assert(parsed, `${relativePath}: recipe frontmatter is missing or malformed`);
   const data = recipeFrontmatterSchema.parse(parsed.data);
   assertSnackPublicationReady(data);
+  assertKarnivoreDraftSafe(data, markdown);
   if (data.status === "published") {
     const match = /^##\s+(?:Valmistus|Preparation|Instructions|Tillagning|Gör så här|การทำ|วิธีทำ)\s*$/im.exec(parsed.content);
     assert(match?.index !== undefined, `${relativePath}: published recipe has no instruction section`);
