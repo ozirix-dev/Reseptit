@@ -29,7 +29,17 @@ export function RecipePage() {
   const tools = toolUi[locale];
   useEffect(() => { setHydrated(true); setServings(recipe?.servings ?? 1); setCompleted([]); }, [recipe?.recipeId, recipe?.locale]);
   if (!recipe) return <section className="page-section"><div className="container container--narrow"><h1>{labels.notFound}</h1><p><Link to={recipeIndexPath(locale)}>{labels.backToRecipes}</Link></p></div></section>;
-  const reviewNotice = recipe.locale === "fi" ? sourceReviewNotice(recipe.recipeId) : null;
+  const originalReviewNotice = recipe.locale === "fi" ? sourceReviewNotice(recipe.recipeId) : null;
+  // Keep the SHA-sealed historic FI recipe and the shared F25 B1 notice source
+  // unchanged. The editorial time estimate belongs to this public view only.
+  const reviewNotice = originalReviewNotice && recipe.locale === "fi"
+    && recipe.recipeId === "vietnamilainen-banh-cuon-sienilla"
+    ? {
+        ...originalReviewNotice,
+        heading: "Riisilevyjen valmistus ja täytteen turvallisuus",
+        details: "Sienistä huolimatta täytteessä on 150 g raakaa porsaan jauhelihaa: tämä ei ole kasvisruoka. Kypsennä jauheliha kauttaaltaan täysin kypsäksi. Ohuiden riisilevyjen valmistamiseen ja irrottamiseen on varattu noin 40–50 minuuttia. Sivun 50 minuutin kokonaisaika on toimituksellinen arvio, ei koepaistossa mitattu aika.",
+      }
+    : originalReviewNotice;
   const withholdNutrition = withholdF25Nutrition(recipe.recipeId,recipe.locale);
   const undefinedGkLabel = f25ExplicitUndefinedGkLabel(recipe.recipeId,recipe.locale);
   const gkVariants = gkOnlyVariants.filter(variant => variant.recipeId === recipe.recipeId);
