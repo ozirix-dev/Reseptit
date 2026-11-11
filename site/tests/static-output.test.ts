@@ -682,3 +682,21 @@ test("FI bánh cuốn static page explicitly labels missing GK while keeping his
   assert.ok(root.includes('data-f25-nutrition-status="SOURCE_REVIEW_WITHHELD"'));
   assert.ok(!root.includes('data-gk-status="CALCULATED"'));
 });
+
+test("FI bánh cuốn displays a realistic 50-minute editorial estimate without changing sealed original", async () => {
+  const recipe=siteContent.recipes.find(r=>r.recipeId==="vietnamilainen-banh-cuon-sienilla"&&r.locale==="fi");
+  assert.ok(recipe);
+  assert.equal(recipe.timeTotalMin,50);
+  assert.equal(recipe.difficulty,"Keskitaso");
+  assert.match(recipe.instructionsText.join(" "),/40–50 minuuttia/);
+  const html=await readFile(path.join(dist,recipe.routePath.slice(1),"index.html"),"utf8");
+  const root=html.slice(html.indexOf('<div id="root">'));
+  assert.match(root,/50 min/);
+  assert.match(root,/Vaikeustaso(?:<!-- -->)?: ?(?:<!-- -->)?Keskitaso/);
+  assert.match(root,/Riisilevyjen valmistus ja täytteen turvallisuus/);
+  assert.match(root,/toimituksellinen arvio/);
+  assert.doesNotMatch(root,/Valmistusajan ja täytteen tarkistus kesken/);
+  assert.match(root,/GK: ei määritetty/);
+  assert.match(root,/data-f25-nutrition-status="SOURCE_REVIEW_WITHHELD"/);
+  assert.doesNotMatch(root,/data-gk-status="CALCULATED"/);
+});
