@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-11",
+  "scope": "issue404-C5-proposed-versions-only",
+  "status": "PROPOSAL_ONLY_NO_PUBLICATION",
+  "approved": false,
+  "sourceFiles": {
+    "indonesialainen-bakwan-maissifritter": "e9316bc8ef79e073366653c7eb13d356ab109f8f",
+    "kiinalainen-jianbing-munaletty": "15eef1ad0e7d56666e923e8d035db14e7efadd0c",
+    "meksikolainen-huevos-divorciados": "7559395cbb0d66229b7b964fb034bbcf3f9edd0b"
+  },
+  "baselines": {
+    "kiinalainen-jianbing-munaletty": {
+      "calculationBlob": "bbfad9646dfb43c794e2211b1ecaca5cfd2a1789",
+      "ingredient": "soijapaputahnaa",
+      "modeledMassG": 15,
+      "servings": 2,
+      "oldPer100": {
+        "availableCarbohydratesG": 19.7,
+        "proteinG": 12.9,
+        "fatG": 5.1,
+        "fibreG": 4.3
+      },
+      "oldPerServing": {
+        "availableCarbohydratesG": 38.96,
+        "proteinG": 14.79,
+        "fatG": 15.39,
+        "carbohydratesPlusFibreG": 41.6
+      },
+      "reviewerStatus": "AUTOMATED ONLY"
+    }
+  },
+  "variants": [
+    {
+      "key": "bakwan-carrot-edible-60g",
+      "recipeId": "indonesialainen-bakwan-maissifritter",
+      "versionType": "DESIGNED_EXACT_AMOUNT_NOT_MEASURED",
+      "proposal": "Replace original '1 kpl porkkana' with a weighed recipe specification '60 g kuorittua porkkanaa'. Keep all other listed amounts and make batter water a documented, repeatable measured preparation step; do not claim the 60g was weighed in a physical test.",
+      "proposedQuantityG": 60,
+      "source": "https://fineli.fi/fineli/fi/elintarvikkeet/300",
+      "evidenceGap": [
+        "Porkkana must be measured for actual reference preparation or specified as a new designed mass",
+        "Final batter water volume needs recipe-level specification",
+        "Retained oil and any moisture/yield assumptions require review"
+      ],
+      "technicalDisposition": "HOLD_CANDIDATE"
+    },
+    {
+      "key": "jianbing-lee-kum-kee-soy-bean-sauce-15g",
+      "recipeId": "kiinalainen-jianbing-munaletty",
+      "versionType": "BRANDED_PRODUCT_DESIGN_NOT_COOKED",
+      "proposal": "Specify Lee Kum Kee Soy Bean Sauce 240g, EAN 078895151473, and 15 g measured as the recipe-design target (not a previously weighed tablespoon); soybean and wheat allergen disclosure required.",
+      "productName": "Lee Kum Kee Soy Bean Sauce 240 g",
+      "productIdentifier": "EAN 078895151473",
+      "proposedQuantityG": 15,
+      "productPer100": {
+        "labelCarbohydratesG": 22,
+        "proteinG": 6.5,
+        "fatG": 5.2,
+        "fibreG": null,
+        "polyolsG": null
+      },
+      "source": "https://www.piccantino.de/lee-kum-kee/sojabohnen-sauce",
+      "additionalSource": "https://hiyou.co/products/lee-kum-kee-soy-bean-sauce-240g",
+      "evidenceGap": [
+        "Product label must be confirmed on the actual package/batch",
+        "15g should be weighed for adopted recipe version",
+        "EU carbohydrate meaning, polyols and fibre basis needs explicit review before net/total carbohydrate approval",
+        "No sauce-specific measured GI; do not publish glycemic load",
+        "Contains soy and wheat: allergen notices and translations require review"
+      ],
+      "technicalDisposition": "HOLD_CANDIDATE"
+    },
+    {
+      "key": "huevos-black-beans-canned-150g",
+      "recipeId": "meksikolainen-huevos-divorciados",
+      "versionType": "STATE_SPECIFIED_INGREDIENT_PROPOSAL",
+      "proposal": "A future version could specify 150 g canned black beans in brine (confirm exact drained edible mass and product label) rather than an unspecified 150 g black beans.",
+      "proposedQuantityG": 150,
+      "fineliBasis": "black beans canned in brine",
+      "sourcePer100": {
+        "availableCarbohydratesG": 9.65,
+        "proteinG": 6.03,
+        "fibreG": 6.9
+      },
+      "source": "https://ravinto.ptjesse.fi/papu-musta-mustapapu-suolaliemessa-sailyke/",
+      "evidenceGap": [
+        "Reference may not match drained weight/product; verify product, drained edible mass and serving basis",
+        "Full recipe requires one tomato mass and actual green salsa composition",
+        "No independently validated GI for the specified product/preparation"
+      ],
+      "technicalDisposition": "HOLD_CANDIDATE"
+    },
+    {
+      "key": "huevos-black-beans-dry-150g",
+      "recipeId": "meksikolainen-huevos-divorciados",
+      "versionType": "STATE_COMPARISON_NOT_SAME_FINISHED_SERVING",
+      "proposal": "Counterfactual only: 150 g dried black beans BEFORE cooking. This is not interchangeable with 150 g cooked/canned beans, and requires soaking/boiling and yield measurement.",
+      "proposedQuantityG": 150,
+      "fineliBasis": "black beans dried",
+      "sourcePer100": {
+        "availableCarbohydratesG": 47.8,
+        "proteinG": 21.3,
+        "fibreG": 15.5
+      },
+      "source": "https://fittifrendi.fi/ainesosa/papu-musta-mustapapu-kuivattu/",
+      "evidenceGap": [
+        "Cooking yield and food safety are not specified",
+        "Not the same cooked serving size as canned comparison",
+        "No extrapolation to total recipe or GK without validated preparation"
+      ],
+      "technicalDisposition": "COMPARISON_ONLY"
+    }
+  ],
+  "rules": [
+    "Do not edit canonical ingredient lists, any macro or GK claims from this scenario exercise",
+    "Never label the proposed quantities as measured or test-cooked",
+    "Missing product fibre and polyol values must remain null",
+    "No quarantine release or publication authority"
+  ]
+}
