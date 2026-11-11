@@ -1,4 +1,4 @@
-import { readFile } from "node:fs/promises";
+import { readFile, readdir } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { isPublicRecipeQuarantined } from "./public-recipe-quarantine";
@@ -11,6 +11,7 @@ export type PreflightDecision = {
 };
 export type PreflightInputs = {
   gk149SourceIds: ReadonlySet<string>;
+  gk100ApprovedSourceIds: ReadonlySet<string>;
   publishedTranslationLocales: ReadonlyMap<string, readonly string[]>;
   quarantined: (id: string) => boolean;
 };
@@ -32,17 +33,42 @@ export function classifyCanonicalMethodMigration(
     seen.add(recipeId);
     if (inputs.quarantined(recipeId)) blockers.push("PUBLIC_QUARANTINE_REQUIRES_SEPARATE_APPROVAL");
     if (inputs.gk149SourceIds.has(recipeId)) blockers.push("GK149_FULL_SOURCE_SHA_REVIEW_REQUIRED");
+    if (inputs.gk100ApprovedSourceIds.has(recipeId)) blockers.push("GK100_APPROVED_SOURCE_SHA_REVIEW_REQUIRED");
     const locales = inputs.publishedTranslationLocales.get(recipeId) ?? [];
     if (locales.length) blockers.push("PUBLISHED_TRANSLATION_SEMANTIC_REVIEW_REQUIRED:" + locales.join(","));
     return { recipeId, classification: blockers.length ? "HOLD" : "CANDIDATE_REQUIRES_REVIEW", blockers };
   });
 }
 
+/** Read every exact owner-approved GK100 bundle; never rely on hand-picked IDs. */
+export async function loadGk100ApprovedSourceIds(repoRoot: string): Promise<ReadonlySet<string>> {
+  const folder = path.join(repoRoot, "docs/nutrition/gk100-approved-releases");
+  const names = (await readdir(folder)).sort();
+  if (names.length === 0 || names.some(name => !/^[a-z0-9-]+\\.json$/.test(name)))
+    throw new Error("SOURCE_MIGRATION_GK100_BUNDLE_LIST_MALFORMED");
+  const bundles = await Promise.all(names.map(name => readFile(path.join(folder,name),"utf8")));
+  const ids = new Set<string>();
+  for (const raw of bundles) {
+    const stored = JSON.parse(raw) as {
+      bundle?: { schemaVersion?: number; recipeIds?: unknown };
+      authorization?: { schemaVersion?: number; bundleSha256?: string };
+    };
+    if (stored.bundle?.schemaVersion !== 1 || stored.authorization?.schemaVersion !== 1 ||
+        typeof stored.authorization?.bundleSha256 !== "string" ||
+        !Array.isArray(stored.bundle.recipeIds) || stored.bundle.recipeIds.length === 0 ||
+        !stored.bundle.recipeIds.every(id => typeof id === "string" && /^[a-z0-9-]+$/.test(id)))
+      throw new Error("SOURCE_MIGRATION_GK100_BUNDLE_MALFORMED");
+    for (const id of stored.bundle.recipeIds as string[]) ids.add(id);
+  }
+  return ids;
+}
+
 export async function loadSourceMigrationInputs(repoRoot: string, recipeIds?: string[]): Promise<PreflightInputs> {
-  const [gk149Raw, translationsRaw, publishedAudit] = await Promise.all([
+  const [gk149Raw, translationsRaw, publishedAudit, gk100Ids] = await Promise.all([
     readFile(path.join(repoRoot, "docs/nutrition/gk80-operation149/cases.json"), "utf8"),
     readFile(path.join(repoRoot, "meta/kaannokset/published-translation-pairs.json"), "utf8"),
     auditTranslations(recipeIds),
+    loadGk100ApprovedSourceIds(repoRoot),
   ]);
   const gk149 = JSON.parse(gk149Raw) as { selectedRecipeIds?: unknown };
   const registry = JSON.parse(translationsRaw) as {
@@ -77,6 +103,7 @@ export async function loadSourceMigrationInputs(repoRoot: string, recipeIds?: st
   }
   return {
     gk149SourceIds: new Set(gk149.selectedRecipeIds as string[]),
+    gk100ApprovedSourceIds: gk100Ids,
     publishedTranslationLocales: new Map([...actualLocales].map(([id, locales]) =>
       [id, [...locales].sort()] as const)),
     quarantined: isPublicRecipeQuarantined,
