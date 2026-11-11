@@ -32,13 +32,13 @@ Luulliset naudan lyhytkyljet kypsyvät kannellisessa padassa meheviksi matalassa
 
 ## Kuvaus
 
-Alkuperäisen 300 °C:n sijasta käytetään 150 °C:n uunia, jolloin pitkä haudutus on hallittava eikä liha kuivu yhtä helposti.
+150 °C:n uunissa kannen alla pitkä haudutus pehmentää kylkilihan ja pitää nesteen padassa.
 
 ## Valmistus
 
 1. Kuumenna uuni 150 °C:seen. Kuivaa kylkipalat ja hiero suola kaikkialle niiden pinnalle.
 2. Asettele kylkipalat tiiviisti kannelliseen uunipataan luupuoli alaspäin. Kaada vesi padan pohjalle siten, ettei liha peity kokonaan.
-3. Peitä pata tiiviillä kannella ja hauduta uunin keskitasolla noin 4–4,5 tuntia. Älä käytä tässä ohjeessa 300 °C:n uunilämpötilaa.
+3. Peitä pata tiiviillä kannella ja hauduta uunin keskitasolla noin 4–4,5 tuntia. 
 4. Tarkista kypsyys: liha on valmista, kun haarukka läpäisee sen helposti ja liha irtoaa luusta ilman voimakasta vetämistä. Jatka tarvittaessa 20–30 minuutin jaksoissa.
 5. Nosta kyljet padasta, anna levätä muutama minuutti ja tarjoa padasta erottuneen lihaliemen kanssa.
 
@@ -47,4 +47,3 @@ Alkuperäisen 300 °C:n sijasta käytetään 150 °C:n uunia, jolloin pitkä hau
 - Luullisen raakapainon ja syötävän kypsän lihan suhde vaihtelee huomattavasti. Ravintoarvot edellyttävät mitattua syötävää saantoa.
 - Käytä tähän sopivan kokoista kannellista pataa. Liemeen ei lisätä vihanneksia eikä kaupallista kasvispohjaista fondia.
 
-- Tämä on FI-luonnos: ravintoarvot, GK ja ruokavalioluokitus vaativat reseptikohtaisen lähteistetyn laskelman ennen julkaisemista.

@@ -46,6 +46,5 @@ Rapeus tulee lihan kuumasta kosketuksesta pannuun, ei korppujauhoista eikä kasv
 ## Muistiinpanot
 
 - Jauhelihan voi syödä turvallisesti vain riittävästi kypsennettynä. Paistoaika muuttuu pihvien paksuuden mukaan.
-- Halutessasi juustoversion lisää juusto vasta uuteen ainesosaluetteloon ja ravintolaskelmaan; tämän perusversion ainesosissa juustoa ei ole.
+- Jos haluat juustoversion, tarkista valitsemasi juuston sopivuus ruokavalioon ja huomioi sen ravintoarvot erikseen.
 
-- Tämä on FI-luonnos: ravintoarvot, GK ja ruokavalioluokitus vaativat reseptikohtaisen lähteistetyn laskelman ennen julkaisemista.

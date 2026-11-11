@@ -52,4 +52,3 @@ Pihvi paistetaan ensin ja sen levätessä valmistuvat munat samassa pannussa. Ka
 - Raakapunnitus koskee syötävää pihvilihaa ja kananmunia ilman kuoria. Paistorasvan pannuun jäävä osuus vaikuttaa lopullisiin ravintoarvoihin.
 - Älä päättele kypsyyttä pelkästään paistoajasta; käytä paistomittaria.
 
-- Tämä on FI-luonnos: ravintoarvot, GK ja ruokavalioluokitus vaativat reseptikohtaisen lähteistetyn laskelman ennen julkaisemista.

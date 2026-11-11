@@ -47,4 +47,3 @@ Resepti tehdään nimenomaan pannulla paistamalla, ei pitkällä haudutuksella.
 - Jos kala on hyvin paksu, jatka kypsennystä pienemmällä lämmöllä lämpömittaria seuraten.
 - Voissa on pieni määrä luonnostaan esiintyviä hiilihydraatteja; annosta ei pidä merkitä automaattisesti nollahiilihydraattiseksi.
 
-- Tämä on FI-luonnos: ravintoarvot, GK ja ruokavalioluokitus vaativat reseptikohtaisen lähteistetyn laskelman ennen julkaisemista.

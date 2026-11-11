@@ -49,7 +49,6 @@ Lihapohja kypsennetään ensin täysin kypsäksi, jolloin täytteet eivät jää
 
 ## Muistiinpanot
 
-- Juustoa käyttävä versio ei sovi maidottomaan tiukkaan carnivore-rajaukseen, mutta sopii käyttäjän sallimaan eläinperäiseen juustoversioon.
+- Juustoa sisältävä versio sopii maitotuotteita sallivaan carnivore-ruokavalioon, mutta ei maidottomaan muunnelmaan.
 - Varmista tuoteselosteesta, ettei pekonissa ole sokeria tai kasvipohjaisia mausteita. Valutettu rasva vaikuttaa ravintoarvoihin.
 
-- Tämä on FI-luonnos: ravintoarvot, GK ja ruokavalioluokitus vaativat reseptikohtaisen lähteistetyn laskelman ennen julkaisemista.

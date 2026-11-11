@@ -48,4 +48,3 @@ Tässä ensiversiossa raakojen keltuaisten sijasta käytetään kypsiä paistett
 - Raakojen keltuaisten käyttäminen on mahdollista vain erikseen harkittuna vaihtoehtona; tässä yleisölle tarkoitetussa ohjeessa munat kypsennetään.
 - Ruokaviraston mukaan kotimaisia kananmunia voi myös syödä raakana, mutta kypsennys pienentää mikrobiriskiä; elintarvikkeen alkuperä ja ruokailijan riskit on huomioitava.
 
-- Tämä on FI-luonnos: ravintoarvot, GK ja ruokavalioluokitus vaativat reseptikohtaisen lähteistetyn laskelman ennen julkaisemista.

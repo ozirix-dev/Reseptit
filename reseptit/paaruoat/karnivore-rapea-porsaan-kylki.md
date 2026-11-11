@@ -44,4 +44,3 @@ Matala lämpö pehmentää lihakerrokset; loppurapeutus tehdään erillisenä va
 - Nahka ei välttämättä rapeutu matalassa lämpötilassa yksinään; siksi reseptissä on erillinen kuuma viimeistely.
 - Rasvaa sulaa vuokaan vaihteleva määrä, joten syötävän rasvan määrä on punnittava ravintolaskelmassa.
 
-- Tämä on FI-luonnos: ravintoarvot, GK ja ruokavalioluokitus vaativat reseptikohtaisen lähteistetyn laskelman ennen julkaisemista.
