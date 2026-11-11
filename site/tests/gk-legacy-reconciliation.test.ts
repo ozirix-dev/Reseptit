@@ -14,6 +14,7 @@ import {historicalRendangForApprovedVersion} from '../scripts/gk100-rendang-seal
 import {reviewedChefSafetyPaths,originalForReviewedChefSafety} from './chef-safety-historical-transition';
 import { chefCorrectionPaths, originalForChefHistoricalCheck } from "./chef-instruction-transition";
 import { b21CanonicalHistoryPaths, originalForB21CanonicalHistory } from "./b21-canonical-historical-transition";
+import { c13CanonicalHistoryPaths, originalForC13CanonicalHistory } from "./c13-canonical-historical-transition";
 import {fileURLToPath} from 'node:url';
 
 const root=fileURLToPath(new URL('../../',import.meta.url));
@@ -61,6 +62,17 @@ test('Live original results preserve frozen history plus the exact reviewed tran
    // The live macro numbers and GI/GK inputs remain identical, but the audit
    // records every source's full-file SHA. Undo ONLY exact proposed chef
    // instruction-only changes when comparing to the frozen historical audit.
+   if (c13CanonicalHistoryPaths.includes(row.source_path as (typeof c13CanonicalHistoryPaths)[number])) {
+    const published=read(row.source_path).replaceAll('\r\n','\n');
+    const frozen=originalForC13CanonicalHistory(root,row.source_path,published);
+    assert.equal(row.source_content_hash,createHash('sha256').update(published).digest('hex'),
+      row.source_path+' C13 reviewed live inventory binding');
+    const expectedLiveNotes=published.split('## Muistiinpanot')[1]?.trim() ?? '';
+    assert.equal(normalNotes,expectedLiveNotes.replaceAll('\r\n','\n').replaceAll('\n',lineEnding),
+      row.source_path+' reviewed C13 notes must match source');
+    return {...row,notes:(frozen.split('## Muistiinpanot')[1]?.trim() ?? '').replaceAll('\n',lineEnding),
+      source_content_hash:createHash('sha256').update(frozen).digest('hex')};
+   }
    if (b21CanonicalHistoryPaths.some(file => file === row.source_path)) {
     const published=read(row.source_path).replaceAll('\r\n','\n');
     const frozen=originalForB21CanonicalHistory(root,row.source_path,published);
