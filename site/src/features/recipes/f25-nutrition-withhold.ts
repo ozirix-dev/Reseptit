@@ -10,6 +10,10 @@ export const f25UnverifiedNutritionSourceIds = Object.freeze([
   "intialainen-pinaatti-paneer-chilla",
   "lahi-ita-zaatar-munat",
   "japanilainen-hojicha-jogurtti-persimonilla",
+  "vietnamilainen-papaija-kookospuuro",
+  "vietnamilainen-banh-cuon-sienilla",
+  "vietnamilainen-banh-xeo-aamiaisletut",
+  "pohjoisafrikkalainen-baghrir",
 ] as const);
 
 const held = new Set<string>(f25UnverifiedNutritionSourceIds);
