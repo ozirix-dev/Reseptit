@@ -1,0 +1,398 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-11-11",
+  "sourceMainSha": "70a22b66da4a90b138022ca63340b4667ae9cac2",
+  "purpose": "F25 A2 four fully specified candidate recipes; not source, nutrition or GK publication approval",
+  "stage": "HOLD",
+  "sources": [
+    {
+      "recipeId": "vietnamilainen-papaija-kookospuuro",
+      "sourcePath": "reseptit/aamupalat/vietnamilainen-papaija-kookospuuro.md",
+      "sourceGitBlobSha": "ecae7e7e302d8564a171955ef8e9117f69a6fb7d",
+      "candidatePath": "docs/reviews/f25-a2-draft-recipes/vietnamilainen-papaija-kookospuuro.md",
+      "oldTimeTotalMin": 25,
+      "candidateTimeTotalMin": 40,
+      "servings": 2,
+      "oldIngredients": [
+        {
+          "amount": 100,
+          "unit": "g",
+          "item": "tapiokahelmiä"
+        },
+        {
+          "amount": 200,
+          "unit": "ml",
+          "item": "kookosmaito"
+        },
+        {
+          "amount": 200,
+          "unit": "g",
+          "item": "papaija"
+        },
+        {
+          "amount": 15,
+          "unit": "g",
+          "item": "limettimehua"
+        },
+        {
+          "amount": 700,
+          "unit": "ml",
+          "item": "vettä"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "suolaa maun mukaan"
+        }
+      ],
+      "proposedIngredients": [
+        {
+          "amount": 100,
+          "unit": "g",
+          "item": "tapiokahelmiä"
+        },
+        {
+          "amount": 200,
+          "unit": "ml",
+          "item": "kookosmaito"
+        },
+        {
+          "amount": 200,
+          "unit": "g",
+          "item": "papaija"
+        },
+        {
+          "amount": 15,
+          "unit": "g",
+          "item": "limettimehua"
+        },
+        {
+          "amount": 700,
+          "unit": "ml",
+          "item": "vettä"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "suolaa maun mukaan"
+        }
+      ],
+      "sourceChanges": [],
+      "nutritionEvidencePath": "docs/nutrition/calculations/vietnamilainen-papaija-kookospuuro.json",
+      "methodReferences": [
+        "https://thewoksoflife.com/how-to-cook-tapioca-pearls/"
+      ],
+      "productAndMethodBlockers": [
+        "No unique small dry tapioca-pearl product matched to the AFCD 100-g uncooked data",
+        "40 min total works only for no-presoak small dry pearls; other pearls may need longer",
+        "Retaining all 700 ml water is a model assumption; water evaporation changes texture/yield",
+        "Papuja, lihaa, syrup or sweetened tapioca are not ingredient-list substitutions",
+        "Full FI source/GK rebind and new EN/SV/TH semantic validation required"
+      ],
+      "sourceStatus": "HOLD",
+      "nutritionApproved": false,
+      "gkApproved": false,
+      "translationApproved": false,
+      "physicalTrialCompleted": false
+    },
+    {
+      "recipeId": "vietnamilainen-banh-cuon-sienilla",
+      "sourcePath": "reseptit/aamupalat/vietnamilainen-banh-cuon-sienilla.md",
+      "sourceGitBlobSha": "fa1d7e18602b14acfa397e4df5fa6747d8410b73",
+      "candidatePath": "docs/reviews/f25-a2-draft-recipes/vietnamilainen-banh-cuon-sienilla.md",
+      "oldTimeTotalMin": 25,
+      "candidateTimeTotalMin": 50,
+      "servings": 2,
+      "oldIngredients": [
+        {
+          "amount": 100,
+          "unit": "g",
+          "item": "riisijauho"
+        },
+        {
+          "amount": 250,
+          "unit": "ml",
+          "item": "vettä"
+        },
+        {
+          "amount": 100,
+          "unit": "g",
+          "item": "tuoreita herkkusieniä"
+        },
+        {
+          "amount": 150,
+          "unit": "g",
+          "item": "porsaan jauheliha"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "kalakastike"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "suolaa maun mukaan"
+        }
+      ],
+      "proposedIngredients": [
+        {
+          "amount": 100,
+          "unit": "g",
+          "item": "riisijauho"
+        },
+        {
+          "amount": 250,
+          "unit": "ml",
+          "item": "vettä"
+        },
+        {
+          "amount": 100,
+          "unit": "g",
+          "item": "tuoreita herkkusieniä"
+        },
+        {
+          "amount": 150,
+          "unit": "g",
+          "item": "porsaan jauheliha"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "kalakastike"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "suolaa maun mukaan"
+        }
+      ],
+      "sourceChanges": [],
+      "nutritionEvidencePath": "docs/nutrition/calculations/vietnamilainen-banh-cuon-sienilla.json",
+      "methodReferences": [
+        "https://www.bonappetit.com/recipe/banh-cuon"
+      ],
+      "productAndMethodBlockers": [
+        "Nonstick oil-free rice sheet release requires utensil and pan verification",
+        "Fish sauce model 1 tablespoon = 15g but branded product/allergen remains a variable",
+        "Ground pork must be fully cooked; no raw or partly cooked pork acceptable",
+        "Old recipe 25 minutes does not cover reliable wrapper production and pork cooking",
+        "FI source time/title changes require GK and semantic translation reapproval"
+      ],
+      "sourceStatus": "HOLD",
+      "nutritionApproved": false,
+      "gkApproved": false,
+      "translationApproved": false,
+      "physicalTrialCompleted": false
+    },
+    {
+      "recipeId": "vietnamilainen-banh-xeo-aamiaisletut",
+      "sourcePath": "reseptit/aamupalat/vietnamilainen-banh-xeo-aamiaisletut.md",
+      "sourceGitBlobSha": "cb442ad22c02b9a894861dd7cdc740dd5b0417ef",
+      "candidatePath": "docs/reviews/f25-a2-draft-recipes/vietnamilainen-banh-xeo-aamiaisletut.md",
+      "oldTimeTotalMin": 25,
+      "candidateTimeTotalMin": 45,
+      "servings": 2,
+      "oldIngredients": [
+        {
+          "amount": 100,
+          "unit": "g",
+          "item": "riisijauho"
+        },
+        {
+          "amount": 200,
+          "unit": "ml",
+          "item": "täysrasvaista kookosmaitoa"
+        },
+        {
+          "amount": 150,
+          "unit": "g",
+          "item": "katkarapu"
+        },
+        {
+          "amount": 150,
+          "unit": "g",
+          "item": "pavunitu"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "neutraalia paistoöljyä"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "suolaa maun mukaan"
+        }
+      ],
+      "proposedIngredients": [
+        {
+          "amount": 100,
+          "unit": "g",
+          "item": "riisijauho"
+        },
+        {
+          "amount": 200,
+          "unit": "ml",
+          "item": "täysrasvaista kookosmaitoa"
+        },
+        {
+          "amount": 150,
+          "unit": "g",
+          "item": "katkarapu"
+        },
+        {
+          "amount": 150,
+          "unit": "g",
+          "item": "pavunitu"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "neutraalia paistoöljyä"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "suolaa maun mukaan"
+        },
+        {
+          "amount": 120,
+          "unit": "ml",
+          "item": "vettä"
+        }
+      ],
+      "sourceChanges": [
+        {
+          "amount": 120,
+          "unit": "ml",
+          "item": "vettä"
+        }
+      ],
+      "nutritionEvidencePath": "docs/nutrition/calculations/vietnamilainen-banh-xeo-aamiaisletut.json",
+      "methodReferences": [
+        "https://www.kingarthurbaking.com/recipes/banh-xeo-vietnamese-crispy-crepes-recipe",
+        "https://www.sbs.com.au/food/recipe/vietnamese-banh-xeo/0cngr6ab1"
+      ],
+      "productAndMethodBlockers": [
+        "Adds 120ml zero-calorie water not in old source; changes GK source fingerprint despite nominal macros unchanged",
+        "Cooked prawn fully opaque; sprouts thoroughly heated; cross-contact prevention",
+        "100g rice flour/200ml coconut milk/120ml water needs pan-release and texture verification",
+        "This is not an authentic turmeric-yellow banh xeo; image must represent pale preparation if released",
+        "Oil retention and coconut-milk density require source-specific reviewed macros/GK"
+      ],
+      "sourceStatus": "HOLD",
+      "nutritionApproved": false,
+      "gkApproved": false,
+      "translationApproved": false,
+      "physicalTrialCompleted": false
+    },
+    {
+      "recipeId": "pohjoisafrikkalainen-baghrir",
+      "sourcePath": "reseptit/aamupalat/pohjoisafrikkalainen-baghrir.md",
+      "sourceGitBlobSha": "24722209acc0b5ca0eb45719248297b6c2a58f3a",
+      "candidatePath": "docs/reviews/f25-a2-draft-recipes/pohjoisafrikkalainen-baghrir.md",
+      "oldTimeTotalMin": 25,
+      "candidateTimeTotalMin": 45,
+      "servings": 2,
+      "oldIngredients": [
+        {
+          "amount": 100,
+          "unit": "g",
+          "item": "mannasuurimo"
+        },
+        {
+          "amount": 100,
+          "unit": "g",
+          "item": "vehnäjauho"
+        },
+        {
+          "amount": 5,
+          "unit": "g",
+          "item": "kuivahiivaa"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "hunaja"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "neutraalia paistoöljyä"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "suolaa maun mukaan"
+        },
+        {
+          "amount": 150,
+          "unit": "ml",
+          "item": "lämmintä vettä"
+        }
+      ],
+      "proposedIngredients": [
+        {
+          "amount": 100,
+          "unit": "g",
+          "item": "mannasuurimo"
+        },
+        {
+          "amount": 100,
+          "unit": "g",
+          "item": "vehnäjauho"
+        },
+        {
+          "amount": 5,
+          "unit": "g",
+          "item": "kuivahiivaa"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "hunaja"
+        },
+        {
+          "amount": 1,
+          "unit": "rkl",
+          "item": "neutraalia paistoöljyä"
+        },
+        {
+          "amount": null,
+          "unit": "",
+          "item": "suolaa maun mukaan"
+        },
+        {
+          "amount": 300,
+          "unit": "ml",
+          "item": "lämmintä vettä"
+        }
+      ],
+      "sourceChanges": [
+        {
+          "amount": 300,
+          "unit": "ml",
+          "item": "lämmintä vettä"
+        }
+      ],
+      "nutritionEvidencePath": "docs/nutrition/calculations/pohjoisafrikkalainen-baghrir.json",
+      "methodReferences": [
+        "https://marokkanisch.com/en/recipes/baghrir-with-semolina-and-flour/",
+        "https://marokkanisch.com/en/recipes/baghrir/"
+      ],
+      "productAndMethodBlockers": [
+        "Dough water changes from 150ml to 300ml, requiring new canonical FI source/GK input fingerprint",
+        "Nominal carbohydrate and fat ingredients unchanged, but actual yield and evaporation can affect portion data",
+        "Lack of baking powder can prevent the usual thousand-hole honeycomb; documented technique trial needed",
+        "Single-side cook and 45-minute total time differ from current 25-min source and historical copy",
+        "Image must show a one-sided honeycomb pancake; all FI/EN/SV/TH links to updated FI semantic hash required"
+      ],
+      "sourceStatus": "HOLD",
+      "nutritionApproved": false,
+      "gkApproved": false,
+      "translationApproved": false,
+      "physicalTrialCompleted": false
+    }
+  ]
+}
