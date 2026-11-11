@@ -3,7 +3,7 @@ import {test} from "node:test";
 import {createHash} from "node:crypto";
 import {readFileSync} from "node:fs";
 import path from "node:path";
-import {f25UnverifiedNutritionSourceIds, withholdF25Nutrition} from "../src/features/recipes/f25-nutrition-withhold";
+import {f25UnverifiedNutritionSourceIds, withholdF25Nutrition, f25ExplicitUndefinedGkLabel} from "../src/features/recipes/f25-nutrition-withhold";
 import {filterRecipes,emptyRecipeFilters} from "../src/features/recipes/recipe-search";
 import type {RecipeSummary} from "../src/content/route-data";
 import {recipeJsonLd} from "../src/features/recipes/schema";
@@ -70,4 +70,17 @@ test("FI GK filter does not assign a held macro source to misleading low/medium/
     "vietnamilainen-papaija-kookospuuro","vietnamilainen-banh-cuon-sienilla","pohjoisafrikkalainen-baghrir"
   ]);
   assert.equal(sample["vietnamilainen-papaija-kookospuuro"],"high","historical data stays byte-identical");
+});
+
+test("banh cuon gets exact GK: ei määritetty label only on the FI held version",()=>{
+  const id="vietnamilainen-banh-cuon-sienilla";
+  assert.equal(withholdF25Nutrition(id,"fi"),true);
+  assert.equal(gate.sources.find(x=>x.recipe_id===id)?.approval,null);
+  assert.equal(f25ExplicitUndefinedGkLabel(id,"fi"),"GK: ei määritetty");
+  assert.equal(f25ExplicitUndefinedGkLabel(id,"en"),null);
+  assert.equal(f25ExplicitUndefinedGkLabel(id,"sv"),null);
+  assert.equal(f25ExplicitUndefinedGkLabel("vietnamilainen-banh-xeo-aamiaisletut","fi"),null);
+  assert.equal(f25ExplicitUndefinedGkLabel("gluteeniton-uunipannukakku","fi"),null);
+  const ld=recipeJsonLd(fixture(id,"fi"));
+  assert.equal(Object.hasOwn(ld,"nutrition"),false,"label must never authorize historical nutrition");
 });
