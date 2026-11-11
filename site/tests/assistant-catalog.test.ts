@@ -7,6 +7,7 @@ import { siteContent } from "../src/generated/content.generated";
 import { summarizeRecipe } from "../src/content/route-data";
 import { createAssistantCatalog, findAssistantRecipe, searchAssistantCatalog } from "../src/features/assistant/catalog";
 import { emptyRecipeFilters, filterRecipes, type RecipeFilters } from "../src/features/recipes/recipe-search";
+import {withholdF25Nutrition} from "../src/features/recipes/f25-nutrition-withhold";
 import type { RecipeEntry, RecipeLocale } from "../src/types/content";
 
 const locales = ["fi", "en", "sv", "th"] as const;
@@ -27,7 +28,9 @@ test("A1 catalogs use only the published, schema-validated content build", () =>
       assert.equal(row.routePath, recipe.routePath);
       assert.equal(row.sourceVersion, version(recipe), "each result is bound to the full published recipe version");
       assert.equal(row.servings, recipe.servings);
-      assert.deepEqual(row.nutritionPerServing, recipe.nutrition);
+      assert.deepEqual(row.nutritionPerServing, withholdF25Nutrition(recipe.recipeId,recipe.locale)
+        ? {carbsNetG:null, carbsTotalG:null, proteinG:null, fatG:null}
+        : recipe.nutrition);
       assert.deepEqual(row.ingredients, recipe.ingredients);
       assert.equal(row.image, null);
       assert.equal("instructionsHtml" in row, false);
@@ -129,5 +132,26 @@ test("build publishes per-locale content-addressed JSON with a verifiable manife
     assert.deepEqual(parsed, createAssistantCatalog(siteContent.recipes, locale, version));
     assert.equal(meta.count, parsed.recipes.length);
     assert.ok(parsed.recipes.every((recipe: { locale: string; image: unknown }) => recipe.locale === locale && recipe.image === null));
+  }
+});
+
+test("F25 A2 historical FI nutrition is withheld from assistant results and GK search",()=>{
+  const catalog=createAssistantCatalog(siteContent.recipes,"fi",version);
+  const blocked=[
+    "vietnamilainen-papaija-kookospuuro",
+    "vietnamilainen-banh-cuon-sienilla",
+    "vietnamilainen-banh-xeo-aamiaisletut",
+    "pohjoisafrikkalainen-baghrir",
+  ];
+  for(const id of blocked){
+    const row=findAssistantRecipe(catalog,id);
+    assert.ok(row,id);
+    assert.deepEqual(row.nutritionPerServing,{carbsNetG:null,carbsTotalG:null,proteinG:null,fatG:null});
+    const original=siteContent.recipes.find(x=>x.recipeId===id&&x.locale==="fi");
+    assert.ok(original,id);
+    assert.equal(row.sourceVersion,version(original),"full source hash is not rewritten by display masking");
+    const result=searchAssistantCatalog(catalog,{...emptyRecipeFilters,gl:"high"},{[id]:"high"});
+    assert.equal(result.status,"ok");
+    assert.equal(result.recipes.some(x=>x.recipeId===id),false,"held source cannot appear in GK search");
   }
 });
