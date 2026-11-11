@@ -53,7 +53,6 @@ test("Kara alternative has exact volume basis, fills coconut fibre evidence but 
       assert.ok(near(newer.fatAtZeroOilRetention,old.fatAtZeroOilRetention+fatDelta));
       assert.ok(near(newer.fatAtFullOilRetention,old.fatAtFullOilRetention+fatDelta));
       assert.equal(old.fibreTotal,null);
-      const c=newer.fibreComponentsTotalG??candidate.newFibreComponentsTotalG;
       const total=Object.values(candidate.newFibreComponentsTotalG).reduce((sum:number,value:unknown)=>sum+Number(value),0);
       assert.ok(near(newer.fibreTotal,total/candidate.servings));
     }
