@@ -51,6 +51,6 @@ test("baghrir V3 product macro arithmetic removes 13.5g oil and adds 4g baking p
   const approx=x=>4*x.carbohydrate+4*x.protein+9*x.fat+2*x.fibre;
   assert.ok(Math.abs(approx(old)-d.macroScenarioPerServing.approxEnergyLegacyKcal)<1e-8);
   assert.ok(Math.abs(approx(next)-d.macroScenarioPerServing.approxEnergyV3Kcal)<1e-8);
-  assert.equal(next.polyols,0); // historical ingredients only; leavener's polyols remain explicitly unknown below
+  assert.equal(next.polyols,null); // missing powder polyols remain unknown
   assert.equal(d.constraints.powderPolyolsVerified,false);
 });
