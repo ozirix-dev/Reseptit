@@ -256,3 +256,26 @@ test("F25 doujiang and Thai coconut-pancake public corrections preserve source n
     assert.match(shown.content, prep);
   }
 });
+
+test("F25 batch A2 three real cooking method revisions are source-sealed and do not alter nutrients", () => {
+  const cases: Array<[string, RegExp, RegExp]> = [
+    ["vietnamilainen-papaija-kookospuuro", /100 g kuivia pieniä tapiokahelmiä/, /Älä.*valuta|älä valuta|älä valuta tai huuhtele/],
+    ["vietnamilainen-banh-cuon-sienilla", /75 °C/, /40–50 minuuttia/],
+    ["vietnamilainen-banh-xeo-aamiaisletut", /yhdeltä puolelta/, /kuumenna idut kauttaaltaan läpikuumiksi/],
+  ];
+  for(const [id, cooking, safety] of cases) {
+    const relative = "reseptit/aamupalat/" + id + ".md";
+    const raw = readFileSync(path.join(root, relative), "utf8");
+    const before = parseMarkdown(raw), after = parseMarkdown(projectBreakfastFiQualityDisplay(relative, raw));
+    assert.ok(before && after);
+    assert.deepEqual(after.data.ingredients, before.data.ingredients, id + ": ingredient masses");
+    assert.equal(after.data.servings, before.data.servings, id + ": servings");
+    assert.equal(after.data.time_total_min, before.data.time_total_min, id + ": historical time metadata remains sealed");
+    assert.deepEqual(after.data.image, before.data.image, id + ": image");
+    for(const key of macros) assert.equal(after.data[key],before.data[key],id + ":" + key);
+    assert.equal((after.content.match(/^\d+\. /gm)??[]).length,4);
+    assert.match(after.content,cooking,id);
+    assert.match(after.content,safety,id);
+    assert.doesNotMatch(after.content,/Sekoita jauhot tai viljat ja muut kuivat ainekset|Kypsennä liha tai muut täytteet/);
+  }
+});

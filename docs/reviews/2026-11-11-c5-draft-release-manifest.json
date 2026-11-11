@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "releaseAuthorized": false,
+  "macroApproved": false,
+  "gkApproved": false,
+  "physicalTrialCompleted": false,
+  "sourceBaseline": {
+    "indonesialainen-bakwan-maissifritter": "e9316bc8ef79e073366653c7eb13d356ab109f8f",
+    "kiinalainen-jianbing-munaletty": "15eef1ad0e7d56666e923e8d035db14e7efadd0c",
+    "meksikolainen-huevos-divorciados": "7559395cbb0d66229b7b964fb034bbcf3f9edd0b"
+  },
+  "variants": [
+    {
+      "recipeId": "indonesialainen-bakwan-maissifritter",
+      "path": "docs/reviews/c5-variants/bakwan-maissifritter-60g-porkkana.md",
+      "gitBlobSha1": "1df014e76e31fdd27086b4c493ec8456faee95fb",
+      "expectedTerms": [
+        "60 g kuorittua porkkanaa",
+        "100 ml vettä",
+        "13,5 g neutraalia paistoöljyä"
+      ],
+      "status": "HOLD",
+      "remaining": [
+        "Water amount not test-cooked",
+        "Oil retention unknown",
+        "Raw ingredient nutrient sources and GK need independent validation"
+      ]
+    },
+    {
+      "recipeId": "kiinalainen-jianbing-munaletty",
+      "path": "docs/reviews/c5-variants/jianbing-soy-bean-sauce-15g.md",
+      "gitBlobSha1": "f0dc28a7411fbcd1e985f92f42e96c5418e26b7a",
+      "expectedTerms": [
+        "180 ml kylmää vettä",
+        "15 g Lee Kum Kee Soy Bean Sauce",
+        "soijaa ja vehnää"
+      ],
+      "status": "HOLD",
+      "remaining": [
+        "Actual branded product label not independently checked on package",
+        "Measured sauce amount and fat retention missing",
+        "Fibre, polyols and GI/GK unverified"
+      ]
+    },
+    {
+      "recipeId": "meksikolainen-huevos-divorciados",
+      "path": "docs/reviews/c5-variants/huevos-divorciados-cooked-beans-150g.md",
+      "gitBlobSha1": "0c9dbda9cc5416d30f81927833f7ac9c6b50b45f",
+      "expectedTerms": [
+        "150 g valmiiksi kypsiä, valutettuja mustia papuja",
+        "120 g tuoretta tomaattia",
+        "150 g valmista vihreää salsaa"
+      ],
+      "status": "HOLD",
+      "remaining": [
+        "Product and drained edible mass unidentified",
+        "Salsa composition and fat retention unknown",
+        "Tomato portion designed not measured",
+        "Complete nutrition and GK unapproved"
+      ]
+    }
+  ]
+}

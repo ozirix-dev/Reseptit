@@ -37,6 +37,8 @@ const approvedGlutenFreeFiFiles = new Map<string, string>([
   ["reseptit/jalkiruoat/gluteeniton-uunipannukakku.md", "060baa3ae58e0c9318a88451f1a8b72ea3c45de3"],
   ["reseptit/jalkiruoat/gluteeniton-perunajauhokakkupohja.md", "8de57cb20ad8aa888870a6f061a0aa5c7bfe73a6"],
   ["reseptit/leivonnaiset/gluteeniton-durrapizzapohja.md", "284f68dacbdae1d2d5ca5c969c697e85a84f2708"],
+  ["reseptit/leivonnaiset/gluteeniton-siemenvuokaleipa.md", "c988c1b6e749f7848c99b999b1fcee46256a951f"],
+  ["reseptit/leivonnaiset/gluteenittomat-kauralesesampylat.md", "45e9bfe04897eaee8ed7c01590d88f33c663b124"],
 ]);
 const postBaselineCakeFiles = new Map([
   ["reseptit/jalkiruoat/sienikakkupohja.md", "M"],

@@ -13,6 +13,7 @@ import { toolUi } from "../src/features/recipes/recipe-tools";
 import { siteContent } from "../src/generated/content.generated";
 import { glycemicLoadPilotReviewedRecipeCount, glycemicLoadPilotResults } from "../src/generated/glycemic-load-pilot.generated";
 import { isPublicRecipeQuarantined, publicRecipeQuarantineIds } from "../scripts/public-recipe-quarantine";
+import { withholdF25Nutrition } from "../src/features/recipes/f25-nutrition-withhold";
 
 const dist = path.resolve(import.meta.dirname, "../dist");
 
@@ -182,6 +183,14 @@ test("GK values link to centralized recipe details on every published translatio
     assert.ok(translations.some((recipe) => recipe.locale === "fi"), `${result.recipeId}: Finnish recipe exists`);
     for (const recipe of translations) {
       const html = await readFile(path.join(dist, recipe.routePath.slice(1), "index.html"), "utf8");
+      if (withholdF25Nutrition(result.recipeId, recipe.locale)) {
+        assert.ok(html.includes('data-gk-status="WITHHELD_SOURCE_REVIEW"'), result.recipeId + ": explicitly withheld GK");
+        assert.ok(!html.includes('data-gk-status="CALCULATED"'), result.recipeId + ": no stale original GK");
+        assert.ok(!html.includes('data-gk-status="UNAVAILABLE"'), result.recipeId + ": explicitly withheld, not historically unavailable");
+        assert.ok(html.includes('data-f25-nutrition-status="SOURCE_REVIEW_WITHHELD"'), result.recipeId + ": four old macros withheld");
+        assert.ok(html.includes("GK-arviota ei näytetä"), result.recipeId + ": reason for withholding visible");
+        continue;
+      }
       if (result.status === "CALCULATED" && result.glycemicLoadPerServing !== null) {
         assert.ok(html.includes(recipeUi[recipe.locale].glycemicLoad));
         assert.ok(html.includes(gkCopy[recipe.locale].see));
@@ -552,9 +561,12 @@ test('approved GK-only versions appear on each locale and home-recipe coverage i
    assert.ok(html.includes(gkScopeUi[recipe.locale].macroNotice));assert.ok(html.includes('data-nutrition-scope="ORIGINAL_RECIPE"'));assert.ok(html.includes('data-macro-separation="gk-only"'));assert.ok(html.includes(gkOnlyValue(variant,recipe.locale)));
    const originalHasGk = glycemicLoadPilotResults.some(result => result.recipeId === variant.recipeId
      && result.status === 'CALCULATED' && result.glycemicLoadPerServing !== null);
-   assert.equal(html.includes('data-gk-status="CALCULATED"'), originalHasGk, recipe.routePath);
-   assert.equal(html.includes('data-gk-status="UNAVAILABLE"'), !originalHasGk, recipe.routePath);
-   if (!originalHasGk) assert.ok(html.includes(gkCopy[recipe.locale].missing), recipe.routePath);
+   const withheld = withholdF25Nutrition(variant.recipeId, recipe.locale);
+   assert.equal(html.includes('data-gk-status="CALCULATED"'), originalHasGk && !withheld, recipe.routePath);
+   assert.equal(html.includes('data-gk-status="UNAVAILABLE"'), !originalHasGk && !withheld, recipe.routePath);
+   assert.equal(html.includes('data-gk-status="WITHHELD_SOURCE_REVIEW"'), withheld, recipe.routePath);
+   if (!originalHasGk && !withheld) assert.ok(html.includes(gkCopy[recipe.locale].missing), recipe.routePath);
+   if (withheld) assert.ok(html.includes('data-f25-nutrition-status="SOURCE_REVIEW_WITHHELD"'), recipe.routePath);
    if(variant.scenarioRange)assert.ok(html.includes(t.range));if(variant.sensitivity)assert.ok(html.includes(t.sensitivityNote));
 
   }

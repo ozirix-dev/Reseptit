@@ -16,6 +16,7 @@ import { toolUi } from "./recipe-tools";
 import { glycemicLoadPilotResults } from "@/generated/glycemic-load-pilot.generated";
 import { publishedGlycemicLoadForRecipe } from "./glycemic-load-display";
 import { sourceReviewNotice } from "./source-review-notices";
+import { withholdF25Nutrition } from "./f25-nutrition-withhold";
 
 export function RecipePage() {
   const { pathname } = useLocation();
@@ -29,13 +30,14 @@ export function RecipePage() {
   useEffect(() => { setHydrated(true); setServings(recipe?.servings ?? 1); setCompleted([]); }, [recipe?.recipeId, recipe?.locale]);
   if (!recipe) return <section className="page-section"><div className="container container--narrow"><h1>{labels.notFound}</h1><p><Link to={recipeIndexPath(locale)}>{labels.backToRecipes}</Link></p></div></section>;
   const reviewNotice = recipe.locale === "fi" ? sourceReviewNotice(recipe.recipeId) : null;
+  const withholdNutrition = withholdF25Nutrition(recipe.recipeId,recipe.locale);
   const gkVariants = gkOnlyVariants.filter(variant => variant.recipeId === recipe.recipeId);
   const hasGkVariant = gkVariants.length > 0;
   const numberLocale = { fi: "fi-FI", en: "en-GB", sv: "sv-SE", th: "th-TH" }[recipe.locale];
-  const nutritionItems = Object.entries(recipe.nutrition).filter(([, value]) => value !== null) as [keyof typeof recipe.nutrition, number][];
+  const nutritionItems = (withholdNutrition ? [] : Object.entries(recipe.nutrition).filter(([, value]) => value !== null)) as [keyof typeof recipe.nutrition, number][];
   const glApprox = { fi: "noin ", en: "about ", sv: "cirka ", th: "ประมาณ " }[recipe.locale];
   const glUnit = { fi: "/ annos", en: "/ serving", sv: "/ portion", th: "/ หนึ่งที่" }[recipe.locale];
-  const glycemicLoad = publishedGlycemicLoadForRecipe(recipe.recipeId, glycemicLoadPilotResults);
+  const glycemicLoad = withholdNutrition ? null : publishedGlycemicLoadForRecipe(recipe.recipeId, glycemicLoadPilotResults);
   const glFormat=(value:number)=>formatGlycemicLoadNumber(value,numberLocale,!!glycemicLoad?.assessmentType);
   const modelledLabel = { fi: "Mallinnettu", en: "Modeled", sv: "Modellerad", th: "ค่าประมาณจากแบบจำลอง" }[recipe.locale];
   const modelledNote = glycemicLoad && glycemicLoad.omittedAvailableCarbohydratePerServingG > 0
@@ -70,8 +72,8 @@ export function RecipePage() {
         {servings !== recipe.servings ? <p className="recipe-disclosure recipe-scaled-note">{tools.scaled(recipe.servings)}</p> : null}
         {hydrated && recipe.instructionStepsHtml?.length ? <><div className="step-controls"><p aria-live="polite">{tools.progress}: {completed.length}/{recipe.instructionStepsHtml.length}</p><button type="button" onClick={() => setCompleted([])}>{tools.reset}</button></div><div className="rich-text"><ol className="recipe-steps">{recipe.instructionStepsHtml.map((step, index) => <li key={index} data-complete={completed.includes(index)}><div><label className="recipe-step-toggle"><input type="checkbox" aria-label={`${tools.completed}: ${index + 1}`} checked={completed.includes(index)} onChange={(event) => { const checked = event.currentTarget.checked; setCompleted(values => checked ? [...values, index] : values.filter(value => value !== index)); }} /></label><div className="recipe-step-text" dangerouslySetInnerHTML={{ __html: step }} /></div></li>)}</ol></div></> : <div className="rich-text" dangerouslySetInnerHTML={{ __html: recipe.instructionsHtml }} />}
       </section>
-      <section className="recipe-panel" data-nutrition-scope="ORIGINAL_RECIPE"><h2>{hasGkVariant?gkScopeUi[locale].originalNutrition:labels.nutrition}</h2>{hasGkVariant?<p className="recipe-disclosure" data-macro-separation="gk-only"><strong>{gkScopeUi[locale].macroNotice}</strong></p>:null}<p className="recipe-disclosure">{nutritionItems.length ? tools.nutrition : tools.missing}</p>{nutritionItems.length ? <dl className="nutrition-list">{nutritionItems.map(([key, value]) => <div key={key}><dt>{labels.nutrients[key]}</dt><dd>{formatIngredientAmount(value, 1, 1, numberLocale)} g</dd></div>)}</dl> : null}
-        {glycemicLoad ? <div className="recipe-glycemic-load" data-gk-scope="ORIGINAL_RECIPE" data-gk-status="CALCULATED">
+      <section className="recipe-panel" data-nutrition-scope="ORIGINAL_RECIPE"><h2>{hasGkVariant?gkScopeUi[locale].originalNutrition:labels.nutrition}</h2>{hasGkVariant?<p className="recipe-disclosure" data-macro-separation="gk-only"><strong>{gkScopeUi[locale].macroNotice}</strong></p>:null}<p className="recipe-disclosure" data-f25-nutrition-status={withholdNutrition ? "SOURCE_REVIEW_WITHHELD" : undefined}>{withholdNutrition ? "Ravintoarvojen julkaisu on keskeytetty, koska annoksen ainesosakohtainen laskenta tai tuotematch ei ole vielä hyväksyttävä. Lähtöarvoja ei näytetä virheellisen tarkkoina. Katso reseptin lähdehuomautus." : nutritionItems.length ? tools.nutrition : tools.missing}</p>{nutritionItems.length ? <dl className="nutrition-list">{nutritionItems.map(([key, value]) => <div key={key}><dt>{labels.nutrients[key]}</dt><dd>{formatIngredientAmount(value, 1, 1, numberLocale)} g</dd></div>)}</dl> : null}
+        {withholdNutrition ? <div className="recipe-glycemic-load" data-gk-scope="ORIGINAL_RECIPE" data-gk-status="WITHHELD_SOURCE_REVIEW"><p className="recipe-disclosure">GK-arviota ei näytetä ennen tämän reseptin raaka-aine- ja ravintoarvoperustan uudelleentarkistusta.</p></div> : glycemicLoad ? <div className="recipe-glycemic-load" data-gk-scope="ORIGINAL_RECIPE" data-gk-status="CALCULATED">
           <dl className="nutrition-list"><div>
             <dt>{glycemicLoad.assessmentType ? `${modelledLabel} ${labels.glycemicLoad}` : labels.glycemicLoad}</dt>
             <dd>{glValue} {glUnit}</dd>
