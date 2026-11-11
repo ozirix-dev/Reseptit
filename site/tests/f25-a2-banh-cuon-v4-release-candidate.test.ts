@@ -145,3 +145,32 @@ test("Banh cuon GK-unavailable review documents major unmatched starch instead o
   assert.ok(gk.humanEvidence.every((x:any)=>x.match==="NOT_EXACT"));
   assert.ok(gk.approvalPreconditions.length>=4);
 });
+
+test("FI V4 product version pins current rice flour and CT Food per100ml; historical and foreign data cannot silently replace them",()=>{
+  const versions=ledger.productLabelDecision;
+  assert.equal(versions.publicationApproved,false);
+  assert.equal(versions.status,"CANDIDATES_CORROBORATED_NOT_PACK_PHOTO_CONFIRMED");
+  const rice=ledger.ingredients.find((i:any)=>i.ean===versions.riceFlour.ean);
+  const sauce=ledger.ingredients.find((i:any)=>i.ean===versions.fishSauce.ean);
+  assert.ok(rice&&sauce);
+  assert.equal(rice.basis,"per100g");
+  assert.equal(sauce.basis,"per100ml");
+  for(const n of ["carbohydrate","protein","fat","fibre","salt"] as const){
+    assert.equal(rice.nutrition[n],versions.riceFlour.selectedPer100g[n]);
+    assert.equal(sauce.nutrition[n],versions.fishSauce.selectedPer100ml[n]);
+  }
+  assert.equal(versions.riceFlour.corroboratingCurrent.length,3);
+  assert.ok(versions.riceFlour.corroboratingCurrent.every((u:string)=>u.startsWith("https://")));
+  assert.equal(versions.riceFlour.selectedPer100g.carbohydrate,74);
+  assert.equal(versions.riceFlour.historicalManufacturerCatalog.per100g.carbohydrate,76);
+  assert.equal(versions.riceFlour.historicalManufacturerCatalog.carbDifferencePerServingG,1);
+  assert.equal(versions.riceFlour.productPolyolsExplicit,null);
+  assert.equal(versions.fishSauce.selectedPer100ml.carbohydrate,3);
+  assert.equal(versions.fishSauce.selectedPer100ml.protein,11);
+  assert.equal(versions.fishSauce.selectedPer100ml.salt,27.2);
+  assert.equal(versions.fishSauce.alternateSameEanProfiles.length,2);
+  assert.equal(versions.fishSauce.physicalPackageVersionVerified,false);
+  assert.equal(versions.fishSauce.productPolyolsExplicit,null);
+  assert.equal(ledger.independentGate.completeFourMacroRecalculationApproved,false);
+  assert.equal(ledger.independentGate.sourceReleaseAuthorized,false);
+});
