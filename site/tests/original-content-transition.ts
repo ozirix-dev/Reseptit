@@ -30,6 +30,32 @@ const postBaselineClassics = new Set<string>(postBaselineClassicIds);
 export const postBaselineCakeIds = ["perinteinen-mansikkataytekakku-sienikakkupohjalla","sienikakkupohja"] as const;
 const postBaselineCakes = new Set<string>(postBaselineCakeIds);
 
+// Exactly two FI gluten-free source recipes in the separately reviewed first release.
+// GK history remains frozen; these additions have NO approved numeric GK.
+export const postBaselineGlutenFreeFiIds = ["gluteeniton-perunajauhokakkupohja", "gluteeniton-durrapizzapohja"] as const;
+const postBaselineGlutenFreeFi = new Set<string>(postBaselineGlutenFreeFiIds);
+
+function omitGlutenFreeFiForFrozenHistory(report: any) {
+  if (!report.results) return;
+  const added = report.results.filter((row: {recipeId: string}) => postBaselineGlutenFreeFi.has(row.recipeId));
+  if (!added.length) return;
+  assert.deepEqual(added.map((row: {recipeId: string}) => row.recipeId).sort(), [...postBaselineGlutenFreeFiIds].sort());
+  for (const row of added) {
+    assert.equal(row.status, "INSUFFICIENT SOURCE DATA", row.recipeId);
+    assert.equal(row.glycemicLoadPerServing, null, row.recipeId);
+    assert.equal(row.glycemicLoadRangePerServing, null, row.recipeId);
+  }
+  report.results = report.results.filter((row: {recipeId: string}) => !postBaselineGlutenFreeFi.has(row.recipeId));
+  if (report.calculationInputs) report.calculationInputs = report.calculationInputs.filter((row: {recipeId: string}) => !postBaselineGlutenFreeFi.has(row.recipeId));
+  if (report.summary) {
+    report.summary.recipes -= added.length;
+    report.summary.insufficientSourceData -= added.length;
+  }
+  if (report.autoIncludedRecipeIds) report.autoIncludedRecipeIds = report.autoIncludedRecipeIds.filter((id: string) => !postBaselineGlutenFreeFi.has(id));
+  for (const field of ["recipeBindingMismatches", "calculationInputMismatches", "calculationEvidenceMismatches"])
+    if (report[field]) report[field] = report[field].filter((id: string) => !postBaselineGlutenFreeFi.has(id));
+}
+
 function omitCakesForFrozenHistory(report: any) {
   if (!report.results) return;
   const added = report.results.filter((row: {recipeId:string}) => postBaselineCakes.has(row.recipeId));
@@ -120,6 +146,7 @@ function restoreRows(rows: any[], field: "results" | "calculationInputs") {
 }
 
 export function restoreBeforeOriginalContent(report: any) {
+  omitGlutenFreeFiForFrozenHistory(report);
   omitCakesForFrozenHistory(report);
   omitNewClassicsForFrozenHistory(report);
   omitBriocheForFrozenHistory(report);
@@ -181,7 +208,7 @@ function assertMainAddition(report: any) {
     }
   }
   assert.deepEqual((report.autoIncludedRecipeIds ?? []).filter((key: string) =>
-    !postBaselineBrioche.has(key) && !postBaselineClassics.has(key) && !postBaselineCakes.has(key)), [id]);
+    !postBaselineBrioche.has(key) && !postBaselineClassics.has(key) && !postBaselineCakes.has(key) && !postBaselineGlutenFreeFi.has(key)), [id]);
   assert.deepEqual(report.results.filter((row: {recipeId: string}) => row.recipeId === id), [mainAddition.result]);
   if (report.calculationInputs) {
     assert.deepEqual(report.calculationInputs.filter((row: {recipeId: string}) => row.recipeId === id), [mainAddition.input]);
@@ -215,6 +242,16 @@ function inventoryRowWithLfNotes<T extends {notes: string}>(row: T): T {
 
 // Inventory rows carry recipe text metadata even when the macro values are missing.
 export function originalContentInventoryBefore(rows: any[]) {
+  const addedGlutenFree = rows.filter(row => postBaselineGlutenFreeFi.has(row.recipe_id));
+  if (addedGlutenFree.length) {
+    assert.deepEqual(addedGlutenFree.map(row => row.recipe_id).sort(), [...postBaselineGlutenFreeFiIds].sort());
+    for (const row of addedGlutenFree) {
+      const expectedCategory = row.recipe_id === "gluteeniton-perunajauhokakkupohja" ? "jalkiruoat" : "leivonnaiset";
+      assert.equal(row.source_path, `reseptit/${expectedCategory}/${row.recipe_id}.md`, row.recipe_id);
+      assert.equal(row.carbs_total_per_serving_g ?? null, null, row.recipe_id);
+    }
+  }
+  rows = rows.filter(row => !postBaselineGlutenFreeFi.has(row.recipe_id));
   const addedCakes = rows.filter(row => postBaselineCakes.has(row.recipe_id));
   if (addedCakes.length) {
     assert.deepEqual(addedCakes.map(row => row.recipe_id).sort(), [...postBaselineCakeIds].sort());
