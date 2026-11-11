@@ -106,6 +106,25 @@ jobs:
         run: npm ci
         working-directory: site
 
+      - name: Chef correctness-first pilot (five pinned source cases)
+        if: steps.select.outputs.needs_node == 'true' && (contains(steps.select.outputs.changed_paths, 'chef-quality-gate') || contains(steps.select.outputs.changed_paths, 'chef-quality-pilot'))
+        working-directory: site
+        run: |
+          node --test scripts/chef-quality-gate.test.mjs
+          node scripts/chef-quality-gate.mjs --out=site/chef-quality-pilot
+          cat chef-quality-pilot.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Save chef quality pilot evidence
+        if: steps.select.outputs.needs_node == 'true' && (contains(steps.select.outputs.changed_paths, 'chef-quality-gate') || contains(steps.select.outputs.changed_paths, 'chef-quality-pilot'))
+        uses: actions/upload-artifact@v4
+        with:
+          name: chef-quality-pilot-five
+          path: |
+            site/chef-quality-pilot.md
+            site/chef-quality-pilot.json
+          if-no-files-found: error
+          retention-days: 14
+
       - name: Generate content required by selected tests
         if: steps.select.outputs.run_content_sync == 'true' && steps.select.outputs.run_build != 'true'
         run: npm run content:sync
