@@ -39,15 +39,15 @@ function recipeMarkup(recipeId: string, locale: typeof locales[number]) {
   finally { router.dispose(); }
 }
 
-test('original 156, variants 79, studies 8 and legacy 236 are disjoint scopes with a 106-recipe original target gap', () => {
-  assert.deepEqual([counts.total,counts.originalNumeric,counts.variantNumeric,counts.numericRecipes,counts.studyServingRecipeIds.length,counts.legacyNumericRecipes], [337,156,79,235,8,236]);
-  assert.deepEqual([counts.originalTarget,counts.originalTargetGap], [270,114]);
+test('original 156, variants 79, studies 8 and legacy 236 are disjoint scopes after two added GF recipes', () => {
+  assert.deepEqual([counts.total,counts.originalNumeric,counts.variantNumeric,counts.numericRecipes,counts.studyServingRecipeIds.length,counts.legacyNumericRecipes], [339,156,79,235,8,236]);
+  assert.deepEqual([counts.originalTarget,counts.originalTargetGap], [272,116]); // 80% of 339, unchanged 156 original numeric GK
   assert.equal(counts.originalRecipeIds.length,156);
   assert.equal(counts.variantRecipeIds.length,79);
   assert.ok(counts.studyServingRecipeIds.includes(manakishStudyBinding.recipeId));
   assert.ok(!counts.numericRecipeIds.includes(manakishStudyBinding.recipeId));
   assert.equal(new Set([...counts.originalRecipeIds,...counts.variantRecipeIds]).size,235);
-  assert.deepEqual(report.coverageViews.originalRecipe,{total:337,numeric:156,missing:181});
+  assert.deepEqual(report.coverageViews.originalRecipe,{total:339,numeric:156,missing:183});
   assert.equal(report.coverageViews.legacyMixed.historicalOnly,true);
 });
 
@@ -75,13 +75,13 @@ test('coverage copy shows original target and independent variant/study counts i
   for(const locale of locales){
     const html=renderToStaticMarkup(createElement(GkCoverageSummary,{coverage:counts,locale}));
     assert.ok(html.includes(coverageCopy[locale].title));
-    assert.ok(html.includes('156/337'));
+    assert.ok(html.includes('156/339'));
     assert.ok(html.includes('data-gk-coverage="VARIANT_COVERAGE"><strong>79'));
     assert.ok(html.includes('data-gk-coverage="STUDY_SERVINGS"><strong>8'));
-    assert.ok(html.includes('235/337'));
-    assert.ok(html.includes('270/337'));
-    assert.ok(html.includes('<strong>114</strong>'));
-    assert.ok(!html.includes('236/337'));
+    assert.ok(html.includes('235/339'));
+    assert.ok(html.includes('272/339'));
+    assert.ok(html.includes('<strong>116</strong>'));
+    assert.ok(!html.includes('236/339'));
   }
 });
 
