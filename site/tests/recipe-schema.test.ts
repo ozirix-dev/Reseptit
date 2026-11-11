@@ -148,3 +148,17 @@ test("new published snacks fail closed without photo and nutrition evidence", ()
     .some(error => error.includes("kuvat/valipalat/")));
   assert.doesNotThrow(() => assertSnackPublicationReady({ ...proposed, category: "paaruoka" }));
 });
+
+test("gluten-free metadata fails closed without dated recipe-level evidence", () => {
+  const base = {
+    title: "Gluteeniton laatutesti", recipe_id: "gluteeniton-laatutesti",
+    url_slug: "gluteeniton-laatutesti", language: "fi", category: "leivonnainen",
+    status: "draft", servings: 4, ingredients: [{ amount: 150, unit: "g", item: "perunajauhoa" }],
+  };
+  assert.equal(recipeFrontmatterSchema.safeParse({ ...base, gluten_free: true }).success, false);
+  assert.equal(recipeFrontmatterSchema.safeParse({ ...base, gluten_free: false }).success, true);
+  const review = { evidence_ref: "docs/reviews/gluteeniton/gluteeniton-laatutesti.md", reviewed_at: "2026-11-11", reviewer: "Resepti katselmoija" };
+  assert.equal(recipeFrontmatterSchema.safeParse({ ...base, gluten_free: true, gluten_free_review: review }).success, true);
+  assert.equal(recipeFrontmatterSchema.safeParse({ ...base, gluten_free: true, gluten_free_review: { ...review, evidence_ref: "../other.md" } }).success, false);
+  assert.equal(recipeFrontmatterSchema.safeParse({ ...base, gluten_free_review: review }).success, false);
+});

@@ -12,7 +12,7 @@ Julkaisukenttä on `gluten_free: true` suomen tai käännöksen reseptin etumeta
 2. Tarkista gluteenittomuus pakkausmerkinnästä varsinkin jauhoseoksille, kauralle, kauravalmisteille, leivinjauheelle, kastikkeille, mausteseoksille ja valmistuotteille. Pelkkä sana `kaura` tai `maissi` ei todista tuotteen turvallisuutta.
 3. Lisää olennaiset raaka-aineiden valintaehdot reseptin ainesosiin tai huomautuksiin (esim. **gluteenittomaksi merkitty kaurajauho**). Tarkista myös yhteiskeittiön ristikontaminaation vaara.
 4. Varmista ettei kuvassa, ohjeessa tai tarjoiluehdotuksessa lisätä gluteenia sisältäviä osia ilman varoitusta ja määrää.
-5. Kirjaa tarkastettu `recipe_id`, kieli, lähdecommit, tuotteet/pakkausmerkinnät, päivä ja katselmointitulos erilliseen tarkastusmuistioon. Käännösten gluteenittomuutta ei päätellä automaattisesti FI-version hyväksynnästä.
+5. Kirjaa tarkastettu `recipe_id`, kieli, lähdecommit, tuotteet/pakkausmerkinnät, päivä ja katselmointitulos erilliseen tarkastusmuistioon polussa `docs/reviews/gluteeniton/<recipe_id>.md`. Kun `gluten_free: true` asetetaan, reseptin metatietoihin vaaditaan `gluten_free_review: {evidence_ref, reviewed_at, reviewer}`. Tämä on katselmointilukko, ei laboratorion sertifikaatti. Käännösten gluteenittomuutta ei päätellä automaattisesti FI-version hyväksynnästä.
 6. Suorita CI, automaattiset resepti- ja käännöstarkistukset sekä merkitysarvio ennen julkaisua. Testi `gluten-free filter is explicit...` varmistaa fail-closed-oletuksen.
 
 Väite koskee reseptin ohjeellisesti gluteenittomiksi valittavia aineksia ja valmistusta, ei laboratoriossa mitattua lopputuotetta eikä automaattista keliakiaturvallisuuden takuuta.
@@ -30,4 +30,4 @@ Lähteet:
 - Gluteenittomat sämpylät
 - Gluteeniton kakkupohja (oma ohje, ei vehnäisen sienikakun uudelleennimeäminen)
 
-Tämä on ainoastaan idea- ja tarkistusjono. Zoe Mitchellin `The Bread Rebuild Method`-myyntikuvauksen kategorioita voi käyttää inspiraationa, mutta hänen videonsa ja kaupalliset lupauksensa eivät ole todennettuja reseptilähteitä. Ohjeita tai kuvia ei kopioida hänen tuotteestaan.
+Tämä on ainoastaan idea- ja tarkistusjono. Resepteihin käytetään ensisijaisesti Keliakialiiton alkuperäisiä valmistusohjeita, valmistajien tuotetietoja ja muuta riippumatonta näyttöä. Ulkoisten tekijöiden alkuperäisiä kuvia ja ohjetekstejä ei kopioida.
