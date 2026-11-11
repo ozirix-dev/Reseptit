@@ -38,7 +38,7 @@ export function RecipesPage({ locale }: { locale: RecipeLocale }) {
   const availableDiets: Exclude<RecipeDietFilter, "all">[] = [
     ...(hasKetoRecipes ? ["keto" as const] : []),
     ...(hasDietClasses ? ["vhh" as const] : []),
-    ...reviewedDiets.filter((diet) => recipes.some((recipe) => recipe.dietTags?.includes(diet))),
+    ...reviewedDiets.filter((diet) => recipes.some((recipe) => recipe.locale === locale && recipe.dietTags?.includes(diet))),
   ];
 
   // Start from the prerendered default state, then read query parameters after hydration.

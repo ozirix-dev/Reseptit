@@ -23,6 +23,7 @@ import {withdrawQ09Tea} from './gk80-q09-withdrawal';
 import {applyGk80Release} from './gk80-release';
 import { mkdir, readFile, readdir, writeFile } from "node:fs/promises";
 import path from "node:path";
+import { createHash } from "node:crypto";
 
 import type { FoodRecord } from "./nutrition-model";
 import {
@@ -85,8 +86,33 @@ for (const filename of await markdownFiles(path.join(root, "reseptit"))) {
     input: { recipeId, servings: Number(servings), ingredients },
   });
 }
-const publishedSourceRows = [...publishedRecipeSources.values()].map((source) => source.input);
-const expectedRecipeIds = [...publishedRecipeSources.keys()].sort((left, right) => left.localeCompare(right));
+// The first FI-only carnivore release is public but its GI/GK input is unresolved.
+// Keep the historically reviewed GK calculation corpus byte-for-byte comparable,
+// while reporting these exact, SHA-pinned new public sources separately.
+// No GI or zero-GL approval follows from this quarantine.
+const newPublicGkPendingSources: Readonly<Record<string, string>> = Object.freeze({
+  "karnivore-steak-and-eggs": "5e579c3a60b1835d2bd4895c377502139bb23b91",
+  "karnivore-voilohi-pannulla": "07f5b5670af65776209493cc4dce2b897f2635b0",
+  "karnivore-jauhelihakulho-munalla": "9f294f216ac4f94dacf745e197b3d6bd3cc96451"
+});
+const separatelyTrackedPublishedGk = [...publishedRecipeSources.entries()]
+  .filter(([id]) => Object.hasOwn(newPublicGkPendingSources, id))
+  .map(([id, source]) => {
+    const bytes = Buffer.from(source.markdown, "utf8");
+    const actual = createHash("sha1").update(`blob ${bytes.byteLength}\0`).update(bytes).digest("hex");
+    if (actual !== newPublicGkPendingSources[id]) throw new Error(`${id}: new public GK HOLD source bytes changed; explicit re-review required`);
+    return { recipeId: id, status: "INSUFFICIENT SOURCE DATA" as const, glycemicLoadPerServing: null,
+      reason: "NEW_PUBLIC_RECIPE_GI_SOURCE_UNREVIEWED", sourceBlobSha: actual };
+  });
+if (separatelyTrackedPublishedGk.length !== Object.keys(newPublicGkPendingSources).length) {
+  throw new Error("Incomplete FI3 GK HOLD source inventory");
+}
+const publishedSourceRows = [...publishedRecipeSources.entries()]
+  .filter(([id]) => !Object.hasOwn(newPublicGkPendingSources, id))
+  .map(([,source]) => source.input);
+const expectedRecipeIds = [...publishedRecipeSources.keys()]
+  .filter((id) => !Object.hasOwn(newPublicGkPendingSources, id))
+  .sort((left, right) => left.localeCompare(right));
 const recipeBindings = JSON.parse(await readFile(path.join(root, "docs/nutrition/glycemic-load-recipe-bindings.json"), "utf8")) as {
   baselineCommit: string;
   exactRecipeText?: Record<string, { sourceSha256: string; locales: Record<string, {path: string; sha256: string}> }>;
@@ -181,6 +207,9 @@ const report = {
   giSourcePolicy: `Published, traceable glucose-scale GI values may support a public ingredient estimate as a direct match, justified analogue, or category mean. Match quality is separate from study quality: analogues and category means force LOW confidence. A missing GI match for an individual contribution below ${MAX_UNMATCHED_GI_INGREDIENT_CARBOHYDRATE_G} g available carbohydrate per serving may be omitted only while all such recipe contributions sum to less than ${CUMULATIVE_OMITTED_CARBOHYDRATE_TOLERANCE_G} g per serving; larger known carbohydrate contributions require GI evidence. An assigned but invalid or mismatched GI record remains blocking regardless of contribution size, and unknown carbohydrate remains blocking. The cumulative value is a user-centered editorial tolerance, not a clinical precision threshold.`,
   recipeBindingBaseline: recipeBindings.baselineCommit,
   autoIncludedRecipeIds,
+  newPublicGkPendingSources: separatelyTrackedPublishedGk,
+  newPublicGkPendingCount: separatelyTrackedPublishedGk.length,
+  publicRecipeCountIncludingPending: results.length + separatelyTrackedPublishedGk.length,
   calculationInputs: inputs,
   recipeBindingMismatches: expectedRecipeIds.filter((recipeId) => !recipeBindingMatches(recipeBindings.recipes[recipeId], sourceHashes[recipeId]) || exactTextMismatches.has(recipeId)),
   calculationInputMismatches: expectedRecipeIds.filter((recipeId) => !recipeBindingMatches(recipeBindings.calculationInputs[recipeId], calculationInputHashes[recipeId])),

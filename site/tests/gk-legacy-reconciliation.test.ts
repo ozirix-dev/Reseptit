@@ -23,6 +23,12 @@ const read=(p:string)=>readFileSync(new URL('../../'+p,import.meta.url),'utf8');
 const json=(p:string)=>JSON.parse(read(p));
 const sha=(v:unknown)=>createHash('sha256').update(JSON.stringify(v)).digest('hex');
 const lf=(v:any):any=>typeof v==='string'?v.replaceAll('\r\n','\n'):Array.isArray(v)?v.map(lf):v&&typeof v==='object'?Object.fromEntries(Object.entries(v).map(([k,x])=>[k,lf(x)])):v;
+const frozenKarnivoreFi3Blobs: Readonly<Record<string, string>> = Object.freeze({
+  "karnivore-steak-and-eggs": "5e579c3a60b1835d2bd4895c377502139bb23b91",
+  "karnivore-voilohi-pannulla": "07f5b5670af65776209493cc4dce2b897f2635b0",
+  "karnivore-jauhelihakulho-munalla": "9f294f216ac4f94dacf745e197b3d6bd3cc96451"
+});
+
 const before=json('docs/nutrition/gk-legacy-reconciliation/baseline.json');
 const report=json('tmp/nutrition/glycemic-load-pilot.json');
 
@@ -48,7 +54,18 @@ test('Live original results preserve frozen history plus the exact reviewed tran
  }
  assert.equal(report.gkOnlyVariants.length,87);
  for(const v of report.gkOnlyVariants)assert.equal(sha(v),before.variantHashes[v.recipeId+'/'+v.versionId],v.recipeId);
- const inventory = json('tmp/nutrition/audit.json').inventory;
+ const completePublishedInventory = json('tmp/nutrition/audit.json').inventory as Array<{recipe_id:string;source_path:string;status:string}>;
+ const inventory = completePublishedInventory.filter((row) => {
+   const reviewedPin = frozenKarnivoreFi3Blobs[row.recipe_id];
+   if (!reviewedPin) return true;
+   const file = `reseptit/paaruoat/${row.recipe_id}.md`;
+   assert.equal(row.source_path, file, `${row.recipe_id}: exact FI source path`);
+   const actualBlob = execFileSync('git',['hash-object',file],{cwd:root,encoding:'utf8'}).trim();
+   assert.equal(actualBlob, reviewedPin, `${row.recipe_id}: reviewed source blob changed`);
+   assert.equal(row.status, 'ESTIMATE WITH EVIDENCE', `${row.recipe_id}: nutrition evidence must pass`);
+   return false;
+ });
+ assert.equal(completePublishedInventory.length, inventory.length + Object.keys(frozenKarnivoreFi3Blobs).length);
  // The approved oven-farinata editorial correction changed the full-file
  // SHA in nutrition audit provenance, but not its amounts or macro values.
  // Reconstruct ONLY the exact reviewed source for the frozen inventory check.

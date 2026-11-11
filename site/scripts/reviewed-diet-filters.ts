@@ -13,6 +13,18 @@ export interface ReviewedDietSource {
 }
 
 export const reviewedDietFilters: Readonly<Record<string, ReviewedDietSource>> = {
+  "karnivore-steak-and-eggs": {
+    tags: ["carnivore"],
+    sourceBlobShas: { fi: "5e579c3a60b1835d2bd4895c377502139bb23b91" },
+  },
+  "karnivore-voilohi-pannulla": {
+    tags: ["carnivore"],
+    sourceBlobShas: { fi: "07f5b5670af65776209493cc4dce2b897f2635b0" },
+  },
+  "karnivore-jauhelihakulho-munalla": {
+    tags: ["carnivore"],
+    sourceBlobShas: { fi: "9f294f216ac4f94dacf745e197b3d6bd3cc96451" },
+  },
   hummus: {
     tags: ["vegetarian", "vegan", "pescatarian"],
     sourceBlobShas: {

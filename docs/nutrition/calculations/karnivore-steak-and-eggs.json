@@ -1,0 +1,162 @@
+{
+  "recipeId": "karnivore-steak-and-eggs",
+  "sourceHash": "b0603ec7071993e72bc82da336e63d84f86309dd1c0d94095f7f1f6d78523ca6",
+  "calculatedAt": "2026-11-11",
+  "servings": 2,
+  "scope": "Raw-edible-ingredient mass balance: one full batch is divided into two servings. All edible ingredients, melted butter and rendered cooking fat are explicitly served in the finished dish. No side dishes. This is a composition-based estimate, not a laboratory measurement of the cooked food; animal fat content and package-label rounding vary.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "item": "entrecôte-pihviä",
+      "amount": 360,
+      "unit": "g",
+      "state": "raw-boneless-beef-entrecote",
+      "matchEvidence": "AFCD F000851 scotch fillet raw has fibre 0 and matched paired available carbohydrate with/without sugar alcohols 0; HK original product label provides 20 g protein and 12 g fat. Exact chosen product is used for raw intake; alternate products require recalculation.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient raw grams refer to the edible portion being used.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Recipe protocol keeps and serves all drained pan fat, melted butter and edible cooking juices. Ingredient-input mass balance; only water evaporation is excluded from nutrition amounts; actual residue on utensils or pan can change the estimate.",
+      "record": {
+        "id": "hk-1824-with-afcd-fibre-polyol",
+        "name": "HK Naudan entrecôte 1824 (raaka) + AFCD F000851 kuitu/polyoli",
+        "sourceUrl": "https://www.hk.fi/tuotteet/hk-naudan-entrecote-/",
+        "retrievedAt": "2026-11-11",
+        "licence": "Manufacturer public product-label facts; FSANZ AFCD Release 3 CC BY-SA 3.0 Australia for fibre and sugar alcohol reference",
+        "state": "raw-boneless-beef-entrecote",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD F000851 scotch fillet raw has fibre 0 and matched paired available carbohydrate with/without sugar alcohols 0; HK original product label provides 20 g protein and 12 g fat.",
+        "per100g": {
+          "protein": 20,
+          "fat": 12,
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0
+        }
+      }
+    },
+    {
+      "item": "kananmunaa ilman kuoria",
+      "amount": 220,
+      "unit": "g",
+      "state": "raw-egg-edible",
+      "matchEvidence": "Fineli Release 20 CHO 2034, FIBT 2168, POLYL 2260 verified Selected food item is weighed as listed.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Egg weight is shell-free, as weighed.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Recipe protocol keeps and serves all drained pan fat, melted butter and edible cooking juices. Ingredient-input mass balance; only water evaporation is excluded from nutrition amounts; actual residue on utensils or pan can change the estimate.",
+      "record": {
+        "id": "fineli-858-release-20",
+        "name": "KANANMUNA, KUORETON",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/858",
+        "retrievedAt": "2026-11-11",
+        "licence": "THL Fineli Release 20 CC BY 4.0",
+        "state": "raw-egg-edible",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 CHO 2034, FIBT 2168, POLYL 2260 verified",
+        "per100g": {
+          "protein": 12.61,
+          "fat": 9.24,
+          "carbohydrate": 0.3,
+          "fibre": 0,
+          "polyols": 0
+        },
+        "componentValues": {
+          "CHO": 0.3,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        }
+      }
+    },
+    {
+      "item": "voita",
+      "amount": 20,
+      "unit": "g",
+      "state": "butter-edible",
+      "matchEvidence": "Fineli Release 20 CHO 2034, FIBT 2168, POLYL 2260 verified Selected food item is weighed as listed.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient raw grams refer to the edible portion being used.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Recipe protocol keeps and serves all drained pan fat, melted butter and edible cooking juices. Ingredient-input mass balance; only water evaporation is excluded from nutrition amounts; actual residue on utensils or pan can change the estimate.",
+      "record": {
+        "id": "fineli-500-release-20",
+        "name": "VOI",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/500",
+        "retrievedAt": "2026-11-11",
+        "licence": "THL Fineli Release 20 CC BY 4.0",
+        "state": "butter-edible",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 CHO 2034, FIBT 2168, POLYL 2260 verified",
+        "per100g": {
+          "protein": 1.19,
+          "fat": 81.3,
+          "carbohydrate": 0.8,
+          "fibre": 0,
+          "polyols": 0
+        },
+        "componentValues": {
+          "CHO": 0.8,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        }
+      }
+    },
+    {
+      "item": "suolaa",
+      "amount": 3,
+      "unit": "g",
+      "state": "table-salt-edible",
+      "matchEvidence": "Fineli Release 20 CHO 2034, FIBT 2168, POLYL 2260 verified Selected food item is weighed as listed.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Ingredient raw grams refer to the edible portion being used.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Recipe protocol keeps and serves all drained pan fat, melted butter and edible cooking juices. Ingredient-input mass balance; only water evaporation is excluded from nutrition amounts; actual residue on utensils or pan can change the estimate.",
+      "record": {
+        "id": "fineli-30-release-20",
+        "name": "RUOKASUOLA, JODIOITU",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/30",
+        "retrievedAt": "2026-11-11",
+        "licence": "THL Fineli Release 20 CC BY 4.0",
+        "state": "table-salt-edible",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 CHO 2034, FIBT 2168, POLYL 2260 verified",
+        "per100g": {
+          "protein": 0.63,
+          "fat": 0,
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0
+        },
+        "componentValues": {
+          "CHO": 0,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        }
+      }
+    }
+  ],
+  "batchId": "batch-476"
+}

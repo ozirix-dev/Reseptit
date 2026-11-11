@@ -16,6 +16,8 @@ export const karnivoreApprovedIngredients: Readonly<Record<string, readonly stri
   "karnivore-lammaskyljykset-voissa": ["luullisia lammaskyljyksiä","voita","suolaa"],
 });
 
+const approvedFiPublished = new Set(["karnivore-steak-and-eggs","karnivore-voilohi-pannulla","karnivore-jauhelihakulho-munalla"]);
+
 type RecipeData = ReturnType<typeof recipeFrontmatterSchema.parse>;
 
 export function assertKarnivoreDraftSafe(recipe: RecipeData, markdown: string): void {
@@ -25,7 +27,17 @@ export function assertKarnivoreDraftSafe(recipe: RecipeData, markdown: string): 
   assert.equal(recipe.url_slug, recipe.recipe_id, `${recipe.recipe_id}: slug must match locked ID`);
   assert.equal(recipe.language, "fi", `${recipe.recipe_id}: translations need their own review`);
   assert.equal(recipe.category, "paaruoka", `${recipe.recipe_id}: scope is main dishes`);
-  assert.equal(recipe.status, "draft", `${recipe.recipe_id}: publication blocked until images, nutrition and diet classification have passed review`);
+  if (recipe.status === "published") {
+    assert(approvedFiPublished.has(recipe.recipe_id), `${recipe.recipe_id}: publication blocked without separately reviewed FI evidence`);
+    assert(recipe.image?.src === `paaruoat/${recipe.recipe_id}.webp` && recipe.image.width >= 480 && recipe.image.height >= 320 && recipe.image.alt.trim(),
+      `${recipe.recipe_id}: published carnivore needs the scoped WebP and metadata`);
+    for (const key of ["carbs_net_per_serving_g", "carbs_total_per_serving_g", "protein_per_serving_g", "fat_per_serving_g"] as const) {
+      assert(typeof recipe[key] === "number" && Number.isFinite(recipe[key]) && recipe[key]! >= 0,
+        `${recipe.recipe_id}: published nutrition values require a calculation`);
+    }
+  } else {
+    assert.equal(recipe.status, "draft", `${recipe.recipe_id}: publication blocked until images, nutrition and diet classification have passed review`);
+  }
   assert.deepEqual(recipe.ingredients.map((ingredient) => ingredient.item), approved,
     `${recipe.recipe_id}: ingredient identity changed; explicit animal-origin review needed`);
   assert(recipe.ingredients.every((ingredient) => ingredient.unit === "g" && typeof ingredient.amount === "number" && ingredient.amount > 0),
@@ -37,7 +49,7 @@ export function assertKarnivoreDraftSafe(recipe: RecipeData, markdown: string): 
   assert.equal(recipe.gluten_free_review, undefined, `${recipe.recipe_id}: unsupported gluten-free review`);
   assert.deepEqual(recipe.translation_languages ?? [], [], `${recipe.recipe_id}: translations are outside this PR`);
   assert.deepEqual(recipe.translation_status ?? {}, {}, `${recipe.recipe_id}: translations are outside this PR`);
-  for (const key of ["carbs_net_per_serving_g", "carbs_total_per_serving_g", "protein_per_serving_g", "fat_per_serving_g"] as const) {
+  if (recipe.status === "draft") for (const key of ["carbs_net_per_serving_g", "carbs_total_per_serving_g", "protein_per_serving_g", "fat_per_serving_g"] as const) {
     assert.equal(recipe[key], undefined, `${recipe.recipe_id}: nutrition fields require an approved calculation`);
   }
   const steps = markdown.match(/^\d+\.\s+.+$/gm) ?? [];

@@ -120,14 +120,32 @@ test("GK values link to centralized recipe details on every published translatio
   const sourceRecipeIds = new Set(siteContent.recipes.filter((recipe) => recipe.locale === "fi").map((recipe) => recipe.recipeId));
   const audit = JSON.parse(await readFile(path.resolve(import.meta.dirname, "../../tmp/nutrition/glycemic-load-pilot.json"), "utf8")) as {
     results: Array<{ recipeId: string; status: "CALCULATED" | "INSUFFICIENT SOURCE DATA"; glycemicLoadPerServing: number | null; omittedAvailableCarbohydratePerServingG: number; ingredients: Array<{ availableCarbohydratePerServingG: number | null; gi: number | null; fineliRecordId: string | null; giRecordId: string | null }> }>;
+    newPublicGkPendingSources?: Array<{recipeId:string;status:"INSUFFICIENT SOURCE DATA";glycemicLoadPerServing:null;sourceBlobSha:string}>;
   };
   const reviewedRecipeIds = new Set(audit.results.map((result) => result.recipeId));
   assert.equal(reviewedRecipeIds.size, audit.results.length, "reviewed recipes stay unique");
   assert.equal(glycemicLoadPilotReviewedRecipeCount, reviewedRecipeIds.size);
   assert.deepEqual([...reviewedRecipeIds].filter(id => !sourceRecipeIds.has(id)).sort(),
     [...publicRecipeQuarantineIds].sort(), "only explicit quarantines lack public routes");
-  assert.deepEqual([...sourceRecipeIds].filter(id => !reviewedRecipeIds.has(id)), [],
-    "every visible FI recipe retains a historical GK review row");
+  // The first three public carnivore sources are separately source-SHA-locked
+  // with explicitly withheld GK. They are not allowed to acquire a fake legacy row.
+  const pending = audit.newPublicGkPendingSources ?? [];
+  const pendingPins = Object.fromEntries(pending.map(row => [row.recipeId,row.sourceBlobSha]));
+  assert.deepEqual(pendingPins,{
+    "karnivore-steak-and-eggs":"5e579c3a60b1835d2bd4895c377502139bb23b91",
+    "karnivore-voilohi-pannulla":"07f5b5670af65776209493cc4dce2b897f2635b0",
+    "karnivore-jauhelihakulho-munalla":"9f294f216ac4f94dacf745e197b3d6bd3cc96451",
+  },"only the three verified FI3 sources may bypass the legacy GK corpus");
+  assert.equal(new Set(pending.map(row=>row.recipeId)).size,3,"pending sources must be unique");
+  for(const row of pending){
+    assert.equal(row.status,"INSUFFICIENT SOURCE DATA");
+    assert.equal(row.glycemicLoadPerServing,null);
+    assert.ok(sourceRecipeIds.has(row.recipeId));
+    assert.ok(!reviewedRecipeIds.has(row.recipeId),"pending GK must not inherit a historical approval");
+  }
+  const allAccountedFor = new Set([...reviewedRecipeIds,...pending.map(row=>row.recipeId)]);
+  assert.deepEqual([...sourceRecipeIds].filter(id => !allAccountedFor.has(id)), [],
+    "every visible FI recipe needs legacy GK evidence or exact SHA-pinned pending status");
   assert.ok(glycemicLoadPilotResults.every(row => sourceRecipeIds.has(row.recipeId)),
     "no quarantined recipe can leak through the public GL data");
   const lasagneAuditRows = audit.results.filter((result) => result.recipeId === "munakoiso-kesakurpitsalasagne");
@@ -136,7 +154,8 @@ test("GK values link to centralized recipe details on every published translatio
   assert.equal(lasagneAuditRows[0]?.glycemicLoadPerServing, null);
   assert.equal(lasagneAuditRows[0]?.ingredients.length, 15);
   assert.ok(lasagneAuditRows[0]?.ingredients.every((ingredient) => ingredient.availableCarbohydratePerServingG === null && ingredient.gi === null && ingredient.fineliRecordId === null && ingredient.giRecordId === null));
-  assert.equal(glycemicLoadPilotResults.length, sourceRecipeIds.size);
+  assert.equal(glycemicLoadPilotResults.length, sourceRecipeIds.size-pending.length,
+    "new public FI3 GK-HOLD cases are tracked separately, never shown as approved GK");
   const visibleReviewed = audit.results.filter(result => !isPublicRecipeQuarantined(result.recipeId));
   assert.equal(glycemicLoadPilotResults.filter(result => result.status === "CALCULATED").length,
     visibleReviewed.filter(result => result.status === "CALCULATED").length);

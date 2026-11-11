@@ -113,7 +113,12 @@ test("all ten isolated karnivore drafts remain validated and out of published co
     assert.ok(parsed, `${id}: parse failed`);
     const recipe = recipeFrontmatterSchema.parse(parsed.data);
     assertKarnivoreDraftSafe(recipe, raw);
-    assert.equal(siteContent.recipes.find((entry) => entry.recipeId === id), undefined,
-      `${id}: work-queue recipe must not be published`);
+    const publicFi = siteContent.recipes.find((entry) => entry.recipeId === id && entry.locale === "fi");
+    if (["karnivore-steak-and-eggs","karnivore-voilohi-pannulla","karnivore-jauhelihakulho-munalla"].includes(id)) {
+      assert(publicFi, `${id}: reviewed first FI release is missing`);
+      assert(publicFi.image, `${id}: reviewed first FI release is missing its photo`);
+    } else {
+      assert.equal(publicFi, undefined, `${id}: remaining work-queue recipe must not be published`);
+    }
   }
 });

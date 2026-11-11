@@ -49,8 +49,17 @@ test("essential UI smoke: locales, search, a recipe, blog and no-JS navigation",
       const expectedVegan = siteContent.recipes.filter(item => item.locale === locale && item.dietTags?.includes("vegan")).length;
       assert.ok(expectedVegan >= 2, locale + " retains the pilot vegan recipes");
       assert.equal(await page.locator(".recipe-card-grid .recipe-card").count(), expectedVegan, locale + " lists only reviewed vegan recipes");
-      assert.equal(await page.locator('#recipe-diet option[value="carnivore"]').count(), 0,
-        locale + " should not advertise unpublished carnivore recipes");
+      const expectedCarnivore = siteContent.recipes.filter(item => item.locale === locale && item.dietTags?.includes("carnivore")).length;
+      assert.equal(await page.locator('#recipe-diet option[value="carnivore"]').count(), expectedCarnivore ? 1 : 0,
+        locale + " only advertises published, source-reviewed carnivore recipes");
+      if (locale === "fi") {
+        assert.equal(expectedCarnivore,3,"exactly the first three reviewed FI carnivore recipes are published");
+        await page.getByLabel(labels.dietFilter).selectOption("carnivore");
+        await page.waitForFunction(() => new URL(location.href).searchParams.get("diet") === "carnivore");
+        assert.equal(await page.locator(".recipe-card-grid .recipe-card").count(),expectedCarnivore);
+        await page.getByLabel(labels.dietFilter).selectOption("vegan");
+        await page.waitForFunction(() => new URL(location.href).searchParams.get("diet") === "vegan");
+      }
       assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true,
         locale + " dietary search must not overflow at " + width + "px");
       await page.getByLabel(labels.dietFilter).selectOption("pescatarian");

@@ -139,9 +139,9 @@ test("first three cannot be mislabelled release-ready by raw macro scenarios alo
   for (const row of rows) {
     assert.equal(row.ready, false);
     assert(row.blockers.includes("DRAFT_SOURCE_ONLY"));
-    assert(row.blockers.includes("IMAGE_NOT_VERSIONED"));
+    assert(!row.blockers.includes("IMAGE_NOT_VERSIONED"));
     assert(row.blockers.includes("IMAGE_METADATA_MISSING"));
-    assert(row.blockers.includes("NUTRITION_CALCULATION_MISSING"));
+    assert(!row.blockers.includes("NUTRITION_CALCULATION_MISSING"));
     assert(row.blockers.includes("PUBLIC_MACROS_WITHHELD"));
     assert(row.blockers.includes("SOURCE_IDENTITY_NOT_APPROVED"));
   }
