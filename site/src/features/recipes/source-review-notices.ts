@@ -28,6 +28,21 @@ export const sourceReviewNotices: Readonly<Record<string, SourceReviewNotice>> =
     details: "Tämän ohjeen 2 g hienoa hojicha-jauhetta syödään kokonaan, mutta nykyiset ravintoarvot eivät sisällä jauheen hiilihydraatteja, kuitua, proteiinia ja rasvaa. Teetä ei tässä versiossa hauduteta ja siivilöidä pois.",
     allergens: "Sisältää maitoa (jogurtti) ja seesamia. Tarkista myös hojicha-tuotteen pakkaus.",
   },
+  "vietnamilainen-papaija-kookospuuro": {
+    heading: "Tapiokahelmen tuotteen ja kypsennysajan tarkistus kesken",
+    details: "Ohje on tarkoitettu kuivalle pienikokoiselle tapiokahelmelle, joka kypsyy pehmeäksi noin 15–20 minuutissa. Liotusta tai pidempää keittoa vaativilla tuotteilla 25 minuutin kokonaisaika ei riitä. Käytetty 700 ml keitinvettä pidetään puurossa, eikä helmiä huuhdella tai valuteta. Älä vaihda esikeitettyihin tai siirapissa oleviin kuplateehelmiin ilman uutta ravintolaskentaa.",
+    allergens: "Tarkista kookosmaidon ja tapiokahelmien pakkausmerkinnät, lisäaineet ja mahdolliset allergiat.",
+  },
+  "vietnamilainen-banh-xeo-aamiaisletut": {
+    heading: "Vaalea bánh xèo -sovellus vaatii rakennevarmennuksen",
+    details: "Nykyinen punnittu taikina sisältää 100 g riisijauhoa ja 200 ml kookosmaitoa, mutta ei vettä eikä kurkumaa. Se ei ole perinteisen keltaisen ohuen bánh xèon tarkka vastine. Paista katkaravut täysin kypsiksi, kuumenna pavunidut läpikotaisin ja paista letut yhdeltä puolelta. Rapeus ja taikinan levittyvyys on vielä varmistettava.",
+    allergens: "Sisältää katkarapuja eli äyriäisiä. Tarkista myös kookosmaidon ja muiden tuotteiden pakkausmerkinnät.",
+  },
+  "pohjoisafrikkalainen-baghrir": {
+    heading: "Baghririn nestemäärä ei vastaa perinteistä ohutta taikinaa",
+    details: "Nykyisessä lähteessä on 200 g manna- ja vehnäjauhoja mutta vain 150 ml vettä. Seoksesta tulee selvästi paksumpi kuin perinteisestä toiselta puolelta paistettavasta reikäisestä baghrirista. Näytetyt makrot perustuvat tähän vanhaan punnittuun versioon. Korjausehdotuksen noin 300 ml vettä ja uusi valmistusaika tarvitsevat vielä FI- ja GK-versiohyväksynnän.",
+    allergens: "Sisältää vehnää eli gluteenia. Hunajaa on vain 1 rkl koko reseptissä; voita ei ole ainesluettelossa.",
+  },
   "vietnamilainen-banh-cuon-sienilla": {
     heading: "Valmistusajan ja täytteen tarkistus kesken",
     details: "Sienistä huolimatta täytteessä on 150 g raakaa porsaan jauhelihaa: tämä ei ole kasvisruoka. Kypsennä jauheliha kauttaaltaan täysin kypsäksi. Riisilevyjen höyryttämisen ja irrottamisen takia ilmoitettua 25 minuutin kokonaisaikaa ei ole varmistettu; varaa enemmän aikaa.",

@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "reviewDate": "2026-11-11",
+  "sourceId": "pohjoisafrikkalainen-baghrir",
+  "status": "UNAPPROVED_RECIPE_VERSION_CANDIDATE",
+  "existingSourceBlob": "24722209acc0b5ca0eb45719248297b6c2a58f3a",
+  "proposedIngredients": [
+    {
+      "item": "mannasuurimo",
+      "amount": 100,
+      "unit": "g",
+      "status": "unchanged"
+    },
+    {
+      "item": "vehnäjauho",
+      "amount": 100,
+      "unit": "g",
+      "status": "unchanged"
+    },
+    {
+      "item": "kuivahiivaa",
+      "amount": 5,
+      "unit": "g",
+      "status": "unchanged"
+    },
+    {
+      "item": "hunaja",
+      "amount": 1,
+      "unit": "rkl",
+      "gramsInNutritionModel": 20,
+      "status": "unchanged total topping"
+    },
+    {
+      "item": "neutraalia paistoöljyä",
+      "amount": 1,
+      "unit": "rkl",
+      "gramsInNutritionModel": 13.5,
+      "status": "unchanged, fully retained"
+    },
+    {
+      "item": "suolaa maun mukaan",
+      "amount": null,
+      "unit": "",
+      "status": "unchanged"
+    },
+    {
+      "item": "lämmintä vettä",
+      "amount": 300,
+      "unit": "ml",
+      "status": "PROPOSED 150=>300, non-caloric but GK source fingerprint changes"
+    }
+  ],
+  "proposedTimeTotalMin": 40,
+  "proposedMethod": [
+    "Sekoita 100 g mannasuurimoita, 100 g vehnäjauhoa ja 5 g kuivahiivaa sekä halutessasi suola.",
+    "Lisää 300 ml kädenlämpöistä vettä vähitellen ja sekoita sauvasekoittimella tasaiseksi ohuen kerman kaltaiseksi taikinaksi. Jos taikina on edelleen liian paksua, merkitse määrä uudelleen eikä muuta nestettä lisätä julkaistuun malliin.",
+    "Anna taikinan levätä lämpimässä noin 15–20 minuuttia ja odota kuplia.",
+    "Paista lämpimällä tarttumattomalla pannulla yksipuolisesti, kunnes pinnalla on runsaasti pieniä reikiä eikä päällä näy raakaa taikinaa. Käytä vain reseptin 1 rkl öljyä koko erässä.",
+    "Jaa kypsät letut kahteen annokseen ja valuta päälle yhteensä 1 rkl hunajaa. Voita ei käytetä."
+  ],
+  "nutritionImpact": "Water adds zero macro nutrients, but changes source metadata and GK source hash and cooking yield; old source/calc/GK checks must be updated before approval.",
+  "requires": [
+    "Recreate and review exact FI ingredients and prep, source hash, 4 macros evidence unchanged only after independent check",
+    "Review new GK input and version binding due to ingredient amount change",
+    "Update EN/SV/TH meaning hashes from new public FI",
+    "Image must show one-sided honeycomb not thick pancake or be replaced",
+    "No forced claim of a physical trial"
+  ]
+}
