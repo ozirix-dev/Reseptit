@@ -1,0 +1,146 @@
+{
+  "recipeId": "karnivore-meatza",
+  "sourceHash": "7ad36f160d0fe2a85f360db1b0239199c2d285e67e9bd1906addca516410540d",
+  "calculatedAt": "2026-11-11",
+  "servings": 3,
+  "batchId": "batch-503",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "scope": "Conditional raw-input estimate for three servings. Bacon-pan and all oven-stage edible drippings and juices are retained, shared evenly and eaten. Mozzarella is weighed after draining the brine. No cooked weight, fat loss or cook-test result is inferred.",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "item": "naudan jauhelihaa",
+      "amount": 500,
+      "unit": "g",
+      "state": "raw-beef-mince-20-percent",
+      "matchEvidence": "Snellman Kunnon naudan jauheliha 20 % EAN 6409620011856; label 18 g protein, 20 g fat, 0 g EU carbohydrate /100 g. AFCD raw beef mince fibre/polyols correspondence is separately noted; not a prepared-patty measurement.",
+      "edibleFraction": 1,
+      "edibleEvidence": "All 500 g is raw edible mince.",
+      "retainedFraction": 1,
+      "retentionEvidence": "The base is portioned evenly; all edible rendered fat and meat juices from both oven stages are collected, served separately and assumed eaten.",
+      "record": {
+        "id": "snellman-6409620011856-with-afcd-fibre-polyol",
+        "name": "Snellman Kunnon naudan jauheliha 20% + AFCD raw beef fibre/polyol correspondence",
+        "sourceUrl": "https://snellman.fi/fi/tuotteet/kunnon-naudan-jauheliha-20-400-g/",
+        "retrievedAt": "2026-11-11",
+        "licence": "Manufacturer public nutrition label; FSANZ AFCD Release 3 CC BY-SA 3.0 Australia reference",
+        "state": "raw-beef-mince-20-percent",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Published AFCD raw unprocessed beef composition reported with zero fibre/polyol and available carbohydrate; cross-source composition correspondence, not branded laboratory analysis.",
+        "per100g": {
+          "carbohydrate": 0,
+          "protein": 18,
+          "fat": 20,
+          "fibre": 0,
+          "polyols": 0,
+          "kcal": 252
+        }
+      }
+    },
+    {
+      "item": "sokeritonta pekonia",
+      "amount": 90,
+      "unit": "g",
+      "state": "sliced-bacon-uncooked",
+      "matchEvidence": "Kesko private-label product EAN 6410402012312. Pork, water, salt and specified acidity regulators, antioxidants and preservatives; no sugar or plant-based seasoning listed. Declared available carbohydrate remains 1 g per 100 g.",
+      "edibleFraction": 1,
+      "edibleEvidence": "All 90 g of bacon is weighed before cooking; no rind or trimming is discarded.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All bacon and the edible drippings from the bacon pan are included and apportioned equally.",
+      "record": {
+        "id": "pirkka-6410402012312-raw-bacon",
+        "name": "Pirkka pekoni 140 g",
+        "sourceUrl": "https://www.k-ruoka.fi/kauppa/tuote/pirkka-pekoni-140g-6410402012312",
+        "retrievedAt": "2026-11-11",
+        "licence": "Public product label data and AFCD Release 3 food-category composition correspondence.",
+        "state": "sliced-bacon-uncooked",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "The exact product ingredient declaration contains no fibre or sugar-alcohol ingredient. AFCD F000228 (https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/data-files) reports zero fibre and identical available carbohydrate with and without sugar alcohols (0.2 g/100 g) for raw plain bacon. This supports the fibre/polyol composition only; the Pirkka label supplies the macronutrients and energy.",
+        "per100g": {
+          "kcal": 280,
+          "protein": 14,
+          "fat": 24,
+          "carbohydrate": 1,
+          "fibre": 0,
+          "polyols": 0
+        }
+      }
+    },
+    {
+      "item": "mozzarellajuustoa",
+      "amount": 90,
+      "unit": "g",
+      "state": "drained-fresh-cow-milk-mozzarella",
+      "matchEvidence": "SOK product EAN 7340191148918 specifies 17% fat mozzarella in brine, reports 17 g fat and 1 g carbohydrate per 100 g, and lists milk, salt, citric acid and microbial rennet for the cheese. The 90 g is weighed after the brine is removed.",
+      "edibleFraction": 1,
+      "edibleEvidence": "All 90 g of drained cheese is edible; the brine is excluded before weighing.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All cheese is served, and edible liquid released from the topped base is included.",
+      "record": {
+        "id": "coop-7340191148918-drained-mozzarella",
+        "name": "Coop mozzarella 220/125 g, 17 %",
+        "sourceUrl": "https://www.s-kaupat.fi/tuote/coop-mozzarella-220125-g/7340191148918",
+        "retrievedAt": "2026-11-11",
+        "licence": "Public product label data and AFCD Release 3 food-category composition correspondence.",
+        "state": "drained-fresh-cow-milk-mozzarella",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "The exact product ingredient declaration contains no fibre or sugar-alcohol ingredient. AFCD F002472 (https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/data-files) reports zero fibre and equal available carbohydrate with and without sugar alcohols (0 g/100 g) for mozzarella. This supports the fibre/polyol composition only; the Coop label supplies the macronutrients and energy.",
+        "per100g": {
+          "kcal": 226,
+          "protein": 17,
+          "fat": 17,
+          "carbohydrate": 1,
+          "fibre": 0,
+          "polyols": 0
+        }
+      }
+    },
+    {
+      "item": "suolaa",
+      "amount": 3,
+      "unit": "g",
+      "state": "table-salt-edible",
+      "matchEvidence": "Fineli 30 iodized table salt, direct composition record.",
+      "edibleFraction": 1,
+      "edibleEvidence": "The full 3 g added iodized salt is part of the meat base.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible meat base, drippings and juices are included, with no salt-containing liquid from the base discarded.",
+      "record": {
+        "id": "fineli-30-release-20",
+        "name": "RUOKASUOLA, JODIOITU",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/30",
+        "retrievedAt": "2026-11-11",
+        "licence": "THL Fineli Release 20 CC BY 4.0",
+        "state": "table-salt-edible",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release20 components 2034/2168/2260",
+        "componentValues": {
+          "CHO": 0,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "per100g": {
+          "carbohydrate": 0,
+          "protein": 0.63,
+          "fat": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "kcal": 3
+        }
+      }
+    }
+  ]
+}

@@ -13,6 +13,10 @@ export interface ReviewedDietSource {
 }
 
 export const reviewedDietFilters: Readonly<Record<string, ReviewedDietSource>> = {
+  "karnivore-meatza": {
+    tags: ["carnivore"],
+    sourceBlobShas: { fi: "c5b3a778b25e79912c2ac657fc832ad0040d6088" },
+  },
   "karnivore-rapea-porsaan-kylki": {
     tags: ["carnivore"],
     sourceBlobShas: { fi: "01c618a195d706a2ed092695806421b4ed9369fb" },
