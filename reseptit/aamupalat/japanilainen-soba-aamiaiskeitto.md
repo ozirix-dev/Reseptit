@@ -56,11 +56,7 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 
 ## Valmistus
 
-1. Pese luettelon yksi pinaattinippu ja poista huonot lehdet. Kuumenna kattilassa 200 ml dashi-lientä ja erikseen lueteltu 700 ml kasvis- tai kanalientä yhdessä kiehuviksi. Näitä kahta liemimäärää ei korvata vedellä tai öljyllä.
-2. Keitä 100 g soba-nuudeleita toisessa kattilassa vedessä pakkauksen ajan mukaan, kunnes ne ovat kypsiä mutta eivät pehmeäksi hajonneita. Valuta ja jaa nuudelit kahteen annoskulhoon. Nuudelien keitinvesi ei ole erillinen ravintoaines.
-3. Laske liemikattilan lämpöä niin, että pinta poreilee hiljaa. Riko kananmunat yksitellen kuppiin ja valuta ne varovasti liemeen. Kypsennä, kunnes valkuaiset ovat kauttaaltaan hyytyneet; täysin kypsästä keltuaisesta huolehditaan tarvittaessa jatkamalla kypsennystä. Nosta kananmunat reikäkauhalla sivuun.
-4. Lisää pesty pinaatti kuumaan liemeen ja kuumenna se pehmeäksi. Jaa kaikki pinaatti ja koko 900 ml alkuperäistä lientä kahteen kulhoon nuudelien päälle. Lisää kummankin kulhon pinnalle yksi kypsennetty kananmuna ja vain luettelon suolaa tarvittaessa. Älä lisää öljyä, tofua, merilevää tai muita listaamattomia aineita.
-
-## Muistiinpanot
-
-Soba keitetään erikseen ja tarjotaan kahden liemikomponentin yhteismäärässä. Pinaatti on alkuperäisluettelossa vain kappaleena ilman syötävää grammapainoa; tätä näyttökorjausta ei pidä tulkita uudeksi ravinto- tai GK-hyväksynnäksi.
+1. Kuumenna kattilassa öljy tai liemi. Lisää aromit ja hitaammin kypsyvät ainekset; paista tai hauduta muutama minuutti.
+2. Kaada kattilaan liemi ja keitä miedosti, kunnes pääraaka-aineet ovat kypsiä.
+3. Lisää nuudelit, lehtivihannekset tai muut nopeasti kypsyvät ainekset niiden kypsymisajan mukaan.
+4. Kypsennä soba erikseen ja tarjoa dashi-liemessä pinaatin ja uppomunan kanssa.
