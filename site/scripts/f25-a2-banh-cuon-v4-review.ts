@@ -23,6 +23,24 @@ export function replayBanhCuonV4(override?:{sauceUnit?:string}) {
   if(source.recipe_id!==ledger.recipeId||source.language!=="fi"||source.status!=="draft"
     ||source.ingredients.length!==7||ledger.ingredients.length!==7)
     throw Error("F25_A2_V4_IDENTITY_OR_STATUS_MISMATCH");
+  const versions=ledger.productLabelDecision;
+  if(versions?.status!=="CANDIDATES_CORROBORATED_NOT_PACK_PHOTO_CONFIRMED"||versions.publicationApproved!==false)
+    throw Error("F25_A2_V4_PRODUCT_LABEL_VERSION_NOT_REVIEWED");
+  const rice=ledger.ingredients.find((x:{ean?:string})=>x.ean===versions.riceFlour.ean);
+  const fishLabel=ledger.ingredients.find((x:{ean?:string})=>x.ean===versions.fishSauce.ean);
+  if(!rice||!fishLabel||rice.basis!=="per100g"||fishLabel.basis!=="per100ml")
+    throw Error("F25_A2_V4_PRODUCT_BASIS_CHANGED");
+  for(const [record,selected,keys] of [
+    [rice,versions.riceFlour.selectedPer100g,["carbohydrate","protein","fat","fibre","salt"]],
+    [fishLabel,versions.fishSauce.selectedPer100ml,["carbohydrate","protein","fat","fibre","salt"]],
+  ] as const){
+    for(const key of keys)
+      if(record.nutrition[key]!==selected[key])
+        throw Error("F25_A2_V4_LABEL_VALUE_CHANGED:"+key);
+  }
+  if(versions.riceFlour.productPolyolsExplicit!==null||versions.fishSauce.productPolyolsExplicit!==null
+     ||versions.fishSauce.physicalPackageVersionVerified!==false)
+    throw Error("F25_A2_V4_UNDOCUMENTED_PRODUCT_APPROVAL");
   const rows=source.ingredients.map((ingredient,index)=>{
     const data=ledger.ingredients[index];
     if(!data||ingredient.item!==data.item||ingredient.amount!==data.amount||ingredient.unit!==data.unit)
