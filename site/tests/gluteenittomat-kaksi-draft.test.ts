@@ -37,6 +37,13 @@ test("the two gluten-free bread drafts preserve exact quantified ingredients and
     }
   }
   const buns = readFileSync(path.join(root, sample[1].file), "utf8");
-  assert.match(buns, /Ripottele ainesosaluettelon 5 g gluteenittomia kaurahiutaleita/);
+  assert.match(buns, /Ripottele ainesosaluettelosta mitatut gluteenittomat kaurahiutaleet/);
+  const preparation = buns.split("## Valmistus")[1]?.split("## Muistiinpanot")[0] ?? "";
+  assert.doesNotMatch(preparation, /\\b5\\s*g\\b/, "A fixed 5 g instruction would not scale with serving count");
+  assert.doesNotMatch(preparation, /yhteen desilitraan/, "Preparation must use the already weighed flour, not an extra volume measure");
+  assert.match(preparation, /3–5 minuuttia/, "Mixing stage must follow gluten-free yeast dough guidance");
+  const loafSource = readFileSync(path.join(root, sample[0].file), "utf8");
+  assert.match(loafSource, /3–5 minuuttia/);
+  assert.match(loafSource, /Jätä vuokaan taikinan kohoamiselle riittävästi tilaa/);
   assert.doesNotMatch(buns, /annosteltu ruokalusikallinen gluteenittomia kaurahiutaleita/);
 });

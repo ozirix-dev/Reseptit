@@ -36,8 +36,8 @@ const classicCategory: Record<string, string> = {
 // Exactly two approved-as-prepare-only recipes: no status elevation or GF classification.
 // Every edit to ingredients, instructions or figures requires a new pinned blob.
 const reviewedGlutenFreeTwoDrafts = new Map<string, string>([
-  ["reseptit/leivonnaiset/gluteeniton-siemenvuokaleipa.md", "17301a9d40f137af9bb5cc7ab5992f16551f21a9"],
-  ["reseptit/leivonnaiset/gluteenittomat-kauralesesampylat.md", "cf922324ca22c2c66cfb75047407d6fdafc63bc2"],
+  ["reseptit/leivonnaiset/gluteeniton-siemenvuokaleipa.md", "6a3fb53935d305fb3f763c186a268f85e629fa5f"],
+  ["reseptit/leivonnaiset/gluteenittomat-kauralesesampylat.md", "95b420eea68bb52e8f818e9b1032efaa7c23d4b3"],
 ]);
 
 const approvedGlutenFreeFiFiles = new Map<string, string>([

@@ -48,8 +48,8 @@ Kaikki ainesosat ovat rakenteisessa luettelossa. Vuoka vuorataan leivinpaperilla
 
 1. Vuoraa noin 1,5 litran leipävuoka leivinpaperilla. Mittaa kulhoon kädenlämpöinen vesi ja sekoita siihen psyllium sekä pellavan- ja auringonkukansiemenet.
 2. Anna seoksen sakeutua noin 10 minuuttia. Sekoita joukkoon suola ja gluteenittomat kaurahiutaleet.
-3. Yhdistä kuivahiiva vaaleaan ja tummaan gluteenittomaan jauhoseokseen. Lisää kuivat ainekset kulhoon ja sekoita napakasti, kunnes koko massa on tasainen. Taikinan kuuluu olla tavallista vehnätaikinaa pehmeämpi; älä korjaa rakennetta summittaisella lisäjauholla.
-4. Siirrä taikina leivinpaperilla vuorattuun vuokaan, ripottele pinnalle ainesosaluettelon auringonkukansiemenistä varattu pieni osa ja tasoita pinta kevyesti kostealla lusikalla. Kohota vedottomassa paikassa noin 20 minuuttia.
+3. Yhdistä kuivahiiva vaaleaan ja tummaan gluteenittomaan jauhoseokseen. Lisää kuivat ainekset kulhoon vähitellen ja sekoita alkuvaiheessa sähkövatkaimen taikinakoukuilla tai yleiskoneella noin 3–5 minuuttia, kunnes massa on tasainen. Taikinan kuuluu olla tavallista vehnätaikinaa pehmeämpi; älä korjaa rakennetta summittaisella lisäjauholla.
+4. Siirrä taikina leivinpaperilla vuorattuun vuokaan, ripottele pinnalle ainesosaluettelon auringonkukansiemenistä varattu pieni osa ja tasoita pinta kevyesti kostealla lusikalla. Jätä vuokaan taikinan kohoamiselle riittävästi tilaa ja kohota vedottomassa paikassa noin 20 minuuttia. Jos taikina on jo ennen kohotusta vuoan reunaan asti, käytä isompaa vuokaa.
 5. Kuumenna uuni 180 asteeseen. Paista leipää uunin keskitasolla noin 60 minuuttia. Jos pinta tummuu voimakkaasti, suojaa se loppupaiston ajaksi foliolla.
 6. Anna leivän asettua hetki vuoassa. Siirrä ritilälle ja jäähdytä kunnolla ennen viipalointia.
 
@@ -57,6 +57,6 @@ Kaikki ainesosat ovat rakenteisessa luettelossa. Vuoka vuorataan leivinpaperilla
 
 - Valitse gluteenittomiksi **merkittyjä** jauhoseoksia, kaurahiutaleita, psylliumia ja muita tarpeellisia valmistuotteita. Käytä puhtaita, gluteenittomaan valmistukseen soveltuvia välineitä.
 - **Tämä on omilla grammoilla määritelty, koeleipomaton toimituksellinen versio:** Keliakialiiton alkuperäinen määrää jauhot desilitroina. Recipavon 210 g vaaleaa, 180 g tummaa ja 70 g gluteenitonta kauraa ovat nyt punnittavia *reseptimääriä*, eivät alkuperäislähteen mitattuja tilavuusvastaavuuksia. Näillä grammoilla jauhojen sitovuus, kohotus ja viipalointirakenne on tarkistettava ennen julkaisemista.
-- Jauhoseoksen sitoma nestemäärä vaihtelee tuotteen mukaan; ohjetta ei ole vielä koeleivottu Recipavon tuotevalinnoilla.
+- Jauhoseoksen sitoma nestemäärä vaihtelee tuotteen mukaan. Alkuvaiheen pidempi sekoitus seuraa [Keliakialiiton gluteenittoman hiivataikinan valmistusvinkkejä](https://www.keliakialiitto.fi/ajankohtaista/uutiset/miksi-gluteenittomat-sampylat-eivat-kohoa/); ohjetta ei ole fyysisesti koeleivottu Recipavon grammoitetuilla tuotevalinnoilla.
 - Sisältää kauraa ja siemeniä. Ravintoarvot ovat **tuotekohtaisiin ravintotietoihin ja arvioituihin tilavuuspainoihin perustuva suuntaa-antava laskelma**, eivät mittaustulos: 27,45 g imeytyvää hiilihydraattia, 3,98 g proteiinia ja 3,08 g rasvaa / viipale (12 viipaletta). Jauhoseosten 1 dl = 60 g on laskennallinen oletus, ei yksilöllisesti punnittu paino. [Laskentamuistio](https://github.com/ozirix-dev/Reseptit/blob/main/docs/nutrition/gluteenittomat-kaksi-2026-11-11.md). GK:ta ei ole laskettu eikä luokiteltu.
 - Inspiraatio ja tekniikan vertailulähde: [Keliakialiitto – Anna-Kaisan vuokaleipä](https://www.keliakialiitto.fi/ruoka/reseptit/anna-kaisan-vuokaleipa/). Ohjeteksti on Recipavon oma mukaelma.
