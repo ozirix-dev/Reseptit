@@ -16,7 +16,7 @@ export const karnivoreApprovedIngredients: Readonly<Record<string, readonly stri
   "karnivore-lammaskyljykset-voissa": ["luullisia lammaskyljyksiä","voita","suolaa"],
 });
 
-const approvedFiPublished = new Set(["karnivore-steak-and-eggs","karnivore-voilohi-pannulla","karnivore-jauhelihakulho-munalla"]);
+const approvedFiPublished = new Set(["karnivore-smashburger","karnivore-steak-and-eggs","karnivore-voilohi-pannulla","karnivore-jauhelihakulho-munalla"]);
 
 type RecipeData = ReturnType<typeof recipeFrontmatterSchema.parse>;
 

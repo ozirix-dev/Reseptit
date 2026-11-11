@@ -41,9 +41,15 @@ test("five newly illustrated karnivore FI drafts stay source-pinned and nutritio
     assert.equal(recipe.language,"fi");
     assert.equal(recipe.image?.src,"paaruoat/"+row.recipeId+".webp");
     assert.deepEqual([recipe.image?.width,recipe.image?.height],[1280,853]);
-    await assert.rejects(access(path.join(root,"reseptit/paaruoat",row.recipeId+".md")),
-      (error: unknown) => (error as NodeJS.ErrnoException).code === "ENOENT",
-      row.recipeId+": cannot publish without a new release review");
+    // This ledger records the original draft-review state. Smashburger now has
+    // a separate, explicit source-matched FI publication package.
+    if(row.recipeId==="karnivore-smashburger") {
+      await access(path.join(root,"reseptit/paaruoat",row.recipeId+".md"));
+    } else {
+      await assert.rejects(access(path.join(root,"reseptit/paaruoat",row.recipeId+".md")),
+        (error: unknown) => (error as NodeJS.ErrnoException).code === "ENOENT",
+        row.recipeId+": cannot publish without its own release review");
+    }
     const mapped=sourceMap.recipes.find(x=>x.recipeId===row.recipeId);
     assert(mapped,row.recipeId+": missing source map");
     for(const kind of ["matched","proxy","unresolved"] as const)

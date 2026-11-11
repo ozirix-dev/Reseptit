@@ -132,11 +132,12 @@ test("GK values link to centralized recipe details on every published translatio
   const pending = audit.newPublicGkPendingSources ?? [];
   const pendingPins = Object.fromEntries(pending.map(row => [row.recipeId,row.sourceBlobSha]));
   assert.deepEqual(pendingPins,{
+    "karnivore-smashburger":"55a2ccf705c4cc1906736e71f2ee1bbad69752e9",
     "karnivore-steak-and-eggs":"5e579c3a60b1835d2bd4895c377502139bb23b91",
     "karnivore-voilohi-pannulla":"07f5b5670af65776209493cc4dce2b897f2635b0",
     "karnivore-jauhelihakulho-munalla":"9f294f216ac4f94dacf745e197b3d6bd3cc96451",
-  },"only the three verified FI3 sources may bypass the legacy GK corpus");
-  assert.equal(new Set(pending.map(row=>row.recipeId)).size,3,"pending sources must be unique");
+  },"only source-pinned carnivore FI published sources may bypass the legacy GK corpus");
+  assert.equal(new Set(pending.map(row=>row.recipeId)).size,4,"pending sources must be unique and exactly source-pinned");
   for(const row of pending){
     assert.equal(row.status,"INSUFFICIENT SOURCE DATA");
     assert.equal(row.glycemicLoadPerServing,null);
