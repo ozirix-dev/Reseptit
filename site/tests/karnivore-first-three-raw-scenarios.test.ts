@@ -4,6 +4,7 @@ import { readFile } from "node:fs/promises";
 import path from "node:path";
 import { parseMarkdown } from "../src/content/markdown";
 import { recipeFrontmatterSchema } from "../src/content/schema";
+import { auditKarnivoreFi3Readiness, karnivoreFi3Ids } from "../scripts/karnivore-fi3-release-readiness";
 
 const repoRoot = path.resolve(import.meta.dirname, "../..");
 const sourceMapPath = path.join(repoRoot, "docs/reviews/karnivore-10-nutrition-source-map-2026-11-11.json");
@@ -22,7 +23,7 @@ type MappedRecipe = {
   servings: number;
   status: string;
   inputs: MappedInput[];
-  modelledCarbohydratePerServingFromMappedInputsG?: number;
+  modelledCarbohydratePerServingFromMappedInputsG?: number | null;
 };
 type SourceMap = {
   evidenceType: string;
@@ -107,4 +108,41 @@ test("source gaps cannot become zero during raw-input scenario calculations", ()
   assert.throws(() => rawPerServing(example), /missing\/invalid availableCarbohydrates/);
   example.inputs[0].source = undefined;
   assert.throws(() => rawPerServing(example), /missing per100g source/);
+});
+
+test("every unresolved karnivore food source withholds the numerical carbohydrate scenario", async () => {
+  const sourceMap = JSON.parse(await readFile(sourceMapPath, "utf8")) as SourceMap;
+  for (const recipe of sourceMap.recipes) {
+    const unresolved = recipe.inputs.filter((input) => input.sourceMatch === "unresolved" || !input.source?.per100g);
+    const result = recipe.modelledCarbohydratePerServingFromMappedInputsG;
+    if (unresolved.length > 0) {
+      assert.equal(result, null, `${recipe.recipeId}: unresolved input must produce null, not misleading zero`);
+      assert.equal(recipe.status, "HOLD", `${recipe.recipeId}: unresolved input cannot be approved`);
+      continue;
+    }
+    assert.equal(typeof result, "number", `${recipe.recipeId}: fully mapped scenario must remain numeric`);
+    const computed = rawPerServing(recipe);
+    assert(Math.abs(computed.carbs - (result as number)) <= 0.0005,
+      `${recipe.recipeId}: mapped carbohydrate contribution changed unexpectedly`);
+  }
+  for (const id of ["karnivore-naudan-lyhytkylki", "karnivore-rapea-porsaan-kylki"]) {
+    const recipe = sourceMap.recipes.find((r) => r.recipeId === id);
+    assert(recipe, `${id}: expected unresolved draft absent`);
+    assert(recipe.inputs.some((row) => row.sourceMatch === "unresolved"), `${id}: unresolved raw ingredient missing`);
+    assert.equal(recipe.modelledCarbohydratePerServingFromMappedInputsG, null);
+  }
+});
+
+test("first three cannot be mislabelled release-ready by raw macro scenarios alone", async () => {
+  const rows = await auditKarnivoreFi3Readiness(repoRoot);
+  assert.deepEqual(rows.map((row) => row.recipeId), [...karnivoreFi3Ids]);
+  for (const row of rows) {
+    assert.equal(row.ready, false);
+    assert(row.blockers.includes("DRAFT_SOURCE_ONLY"));
+    assert(row.blockers.includes("IMAGE_NOT_VERSIONED"));
+    assert(row.blockers.includes("IMAGE_METADATA_MISSING"));
+    assert(row.blockers.includes("NUTRITION_CALCULATION_MISSING"));
+    assert(row.blockers.includes("PUBLIC_MACROS_WITHHELD"));
+    assert(row.blockers.includes("SOURCE_IDENTITY_NOT_APPROVED"));
+  }
 });

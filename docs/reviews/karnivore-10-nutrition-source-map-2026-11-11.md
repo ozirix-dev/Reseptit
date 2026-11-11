@@ -39,6 +39,12 @@ Yhteenveto: **2 puuttuvaa lähdevastinetta ja 11 välillistä vastinetta** (aiem
 
 Näitä lukuja ei kirjata reseptien `carbs_*`-kenttiin, koska koko reseptin ravintoarvojen laskentaperusta ja paiston saanto eivät ole vielä hyväksyttyjä.
 
+## Puuttuva pääraaka-aine ei ole nolla (11.11.2026)
+
+Short ribs- ja nahallisen porsaan kyljen pääraaka-aineilta puuttuu edelleen hyväksytty ravintotietue. Niiden `modelledCarbohydratePerServingFromMappedInputsG` on siksi eksplisiittisesti **`null`**, ei nolla. Vesirivin tai suolarivin 0 g ei ole koko reseptin hiilihydraattiarvo. Muita lähdekartan numeroita ei nosteta julkaisuarvoiksi; `status: HOLD` ja `publicationStatus: DRAFT_ONLY_HOLD` ovat voimassa.
+
+`site/tests/karnivore-first-three-raw-scenarios.test.ts` tarkistaa jatkossa, että jokainen lähteetön ainesosa estää numeerisen tuloksen ja että jo täysin kohdistettujen rivien välisummat pysyvät aritmeettisesti samana. Tämä on datan eheyskorjaus, ei lupa julkaista GK=0-arvoa.
+
 ## GK:n käsittely
 
 - Eläinperäinen koostumus ei yksin todista GK=0:aa tai validia GI-arvoa.
