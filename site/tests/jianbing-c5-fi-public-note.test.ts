@@ -26,6 +26,6 @@ test("Jianbing source-locked FI caveat keeps original nutrition evidence and met
 test("Jianbing production FI page has caveat, and V2 remains unpublished",()=>{
   const entry=siteContent.recipes.find(r=>r.recipeId==="kiinalainen-jianbing-munaletty"&&r.locale==="fi");
   assert.ok(entry);
-  assert.match(entry.notesText??"",/AFCD F005702/);
+  assert.match(entry.notesHtml??"",/AFCD F005702/);
   assert.equal(siteContent.recipes.some(r=>r.recipeId==="kiinalainen-jianbing-soy-bean-sauce-punnittu-v2"),false);
 });
