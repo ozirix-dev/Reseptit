@@ -122,7 +122,8 @@ export async function auditCFive(repoRoot:string):Promise<CCase[]> {
         report.blockers.push("SOYBEAN_PASTE_PRODUCT_NOT_IDENTIFIED","SPOON_TO_GRAMS_UNVERIFIED");
       }
     }else{
-      assert.equal(Object.values(displayed).every(value=>value===null),true,id+": NUMERIC_MACROS_WITHOUT_EVIDENCE");
+      if(Object.values(displayed).some(value=>value!==null))
+        report.blockers.push("NUMERIC_MACROS_WITHOUT_INGREDIENT_LEVEL_EVIDENCE");
       report.blockers.push("NO_INGREDIENT_LEVEL_NUTRITION_CALCULATION");
       if(id==="pohjoisafrikkalainen-maakouda")report.blockers.push("POTATO_EDIBLE_MASS_UNKNOWN","PUBLIC_QUARANTINE");
       if(id==="japanilainen-soba-aamiaiskeitto")report.blockers.push("SPINACH_BUNCH_MASS_UNKNOWN","DASHI_AND_BROTH_PRODUCT_UNKNOWN","GK100_SOURCE_SEALED");
