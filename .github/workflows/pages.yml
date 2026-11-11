@@ -87,6 +87,20 @@ jobs:
           }
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 
+      - name: Pre-publication editorial evidence for new FI recipes
+        if: steps.select.outputs.full == 'true' || contains(steps.select.outputs.changed_paths, 'reseptit/') || contains(steps.select.outputs.changed_paths, 'new-recipe-preflight')
+        env:
+          BASE_SHA: ${{ github.event.before }}
+          EVENT_NAME: ${{ github.event_name }}
+        run: |
+          # For a PR, checkout points to GitHub's test merge. Compare with its
+          # first parent so changes already on main do not become candidates.
+          if [[ "$EVENT_NAME" == "pull_request" || "$EVENT_NAME" == "workflow_dispatch" || -z "$BASE_SHA" || "$BASE_SHA" =~ ^0+$ ]]; then
+            export BASE_SHA="$(git rev-parse HEAD^1)"
+          fi
+          node --test site/scripts/new-recipe-preflight.test.mjs
+          node site/scripts/new-recipe-preflight.mjs
+
       - name: Install site dependencies
         if: steps.select.outputs.needs_node == 'true'
         run: npm ci
