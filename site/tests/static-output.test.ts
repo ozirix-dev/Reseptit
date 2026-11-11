@@ -662,3 +662,17 @@ test("copyright policy is unobtrusive, accessible and prerendered in all four la
     assert.ok(footer.includes('href="https://github.com/ozirix-dev/Reseptit/issues"'), `${locale}: correction channel`);
   }
 });
+
+test("FI bánh cuốn publicly states GK: ei määritetty while withholding its old numerical nutrition",async()=>{
+  const id="vietnamilainen-banh-cuon-sienilla";
+  const html=await readFile(path.join(dist,id,"index.html"),"utf8");
+  assert.match(html,/GK: ei määritetty/);
+  assert.match(html,/data-gk-status="NOT_DEFINED"/);
+  assert.match(html,/data-nutrition-scope="ORIGINAL_RECIPE"/);
+  assert.match(html,/data-f25-nutrition-status="SOURCE_REVIEW_WITHHELD"/);
+  assert.doesNotMatch(html,/data-gk-status="CALCULATED"/);
+  const schemaMatch=html.match(/<script id="recipe-jsonld" type="application\\/ld\\+json">([\\s\\S]*?)<\\/script>/);
+  assert.ok(schemaMatch);
+  const structured=JSON.parse(schemaMatch[1]);
+  assert.equal(Object.hasOwn(structured,"nutrition"),false);
+});
