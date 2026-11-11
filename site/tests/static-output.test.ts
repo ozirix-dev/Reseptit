@@ -671,8 +671,11 @@ test("FI bánh cuốn publicly states GK: ei määritetty while withholding its 
   assert.match(html,/data-nutrition-scope="ORIGINAL_RECIPE"/);
   assert.match(html,/data-f25-nutrition-status="SOURCE_REVIEW_WITHHELD"/);
   assert.doesNotMatch(html,/data-gk-status="CALCULATED"/);
-  const schemaMatch=html.match(/<script id="recipe-jsonld" type="application\\/ld\\+json">([\\s\\S]*?)<\\/script>/);
-  assert.ok(schemaMatch);
-  const structured=JSON.parse(schemaMatch[1]);
+  const schemaStart=html.indexOf('<script id="recipe-jsonld" type="application/ld+json">');
+  assert.ok(schemaStart>=0);
+  const jsonStart=html.indexOf(">",schemaStart)+1;
+  const jsonEnd=html.indexOf("</script>",jsonStart);
+  assert.ok(jsonEnd>jsonStart);
+  const structured=JSON.parse(html.slice(jsonStart,jsonEnd));
   assert.equal(Object.hasOwn(structured,"nutrition"),false);
 });
