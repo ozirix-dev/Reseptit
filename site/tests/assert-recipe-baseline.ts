@@ -50,15 +50,15 @@ const approvedKarnivoreFi3Files = new Map<string, string>([
   ["kuvat/paaruoat/karnivore-smashburger.webp", "5247119ff8072851bab108e12128073018a375bb"],
   [
     "reseptit/paaruoat/karnivore-steak-and-eggs.md",
-    "5e579c3a60b1835d2bd4895c377502139bb23b91"
+    "c46f783cd6c4fe63ac62b5e163b13ffc5b8a8ed7"
   ],
   [
     "reseptit/paaruoat/karnivore-voilohi-pannulla.md",
-    "07f5b5670af65776209493cc4dce2b897f2635b0"
+    "12b564ce9c49f0a09d4c1ae8734e1b720be530a0"
   ],
   [
     "reseptit/paaruoat/karnivore-jauhelihakulho-munalla.md",
-    "9f294f216ac4f94dacf745e197b3d6bd3cc96451"
+    "acb7a784af286cbdf42d44a229cafe0742c0fc2e"
   ],
   [
     "docs/nutrition/calculations/karnivore-steak-and-eggs.json",
@@ -78,15 +78,15 @@ const approvedKarnivoreFi3Files = new Map<string, string>([
   ],
   [
     "kuvat/paaruoat/karnivore-steak-and-eggs.webp",
-    "edd20a1b1c389c8effb0c0d5a2bec64282ab8ed2"
+    "7a060d62fe52123780392d0e2895f09b1819fe4a"
   ],
   [
     "kuvat/paaruoat/karnivore-voilohi-pannulla.webp",
-    "d8221f785e9e5d04bd2fdaa35e8122f040d2b43f"
+    "a0e315c78baa85a3a328c8671b1bd9fc493f86ff"
   ],
   [
     "kuvat/paaruoat/karnivore-jauhelihakulho-munalla.webp",
-    "c41889d23890eecd4ae2c1353144658fbcbee675"
+    "0ec49fd5a9f6308b31c9048b4051b6d97088a1b8"
   ]
 ]);
 

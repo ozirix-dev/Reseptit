@@ -19,15 +19,15 @@ export const reviewedDietFilters: Readonly<Record<string, ReviewedDietSource>> =
   },
   "karnivore-steak-and-eggs": {
     tags: ["carnivore"],
-    sourceBlobShas: { fi: "5e579c3a60b1835d2bd4895c377502139bb23b91" },
+    sourceBlobShas: { fi: "c46f783cd6c4fe63ac62b5e163b13ffc5b8a8ed7" },
   },
   "karnivore-voilohi-pannulla": {
     tags: ["carnivore"],
-    sourceBlobShas: { fi: "07f5b5670af65776209493cc4dce2b897f2635b0" },
+    sourceBlobShas: { fi: "12b564ce9c49f0a09d4c1ae8734e1b720be530a0" },
   },
   "karnivore-jauhelihakulho-munalla": {
     tags: ["carnivore"],
-    sourceBlobShas: { fi: "9f294f216ac4f94dacf745e197b3d6bd3cc96451" },
+    sourceBlobShas: { fi: "acb7a784af286cbdf42d44a229cafe0742c0fc2e" },
   },
   hummus: {
     tags: ["vegetarian", "vegan", "pescatarian"],

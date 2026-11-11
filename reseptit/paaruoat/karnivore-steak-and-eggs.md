@@ -17,9 +17,9 @@ protein_per_serving_g: 50
 fat_per_serving_g: 39.89
 image:
   src: "paaruoat/karnivore-steak-and-eggs.webp"
-  alt: "Viipaloitua voissa paistettua entrecôtea ja kaksi paistettua kananmunaa tummalla lautasella."
-  width: 640
-  height: 427
+  alt: "Viipaloitua entrecôtea ja kaksi paistettua kananmunaa vaalealla lautasella."
+  width: 1280
+  height: 853
 ingredients:
   - amount: 360
     unit: "g"
