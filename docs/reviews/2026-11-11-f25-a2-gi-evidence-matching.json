@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-11",
+  "purpose": "Evidence screening for glycemic load recomputation on changed F25 A2 recipes. Matched human GI methodology only; no ingredient category analogy.",
+  "releaseStatus": "HOLD",
+  "recipes": [
+    {
+      "recipeId": "vietnamilainen-papaija-kookospuuro",
+      "candidateMainCarb": "Cock dry tapioca pearls; cooked in 700ml water, then coconut milk, papaya, lime",
+      "evidence": [
+        {
+          "url": "https://ajcn.nutrition.org/article/S0002-9165%25252823%25252905840-9/fulltext",
+          "reportedItem": "Steamed tapioca root, 1h; 70 ± 10 GI",
+          "match": "NOT_EXACT",
+          "reason": "Root differs from processed tapioca pearls and cooking context"
+        },
+        {
+          "url": "https://www.maljnutr.org.my/publication/28-3/Vol%2028%283%29%205.mjn.2021.0091%20Henry%20%28final%29.pdf",
+          "reportedItem": "Glycaemic response of tapioca-based boba in bubble tea versus other pearls",
+          "match": "NOT_EXACT",
+          "reason": "Bubble tea and sweetened boba are not unsweetened cooked dry pearls; no exact validated GI numeric match documented"
+        }
+      ],
+      "gk": null,
+      "decision": "HOLD_GI_TAPIOCA_PEARLS_AND_PRODUCT_LABEL"
+    },
+    {
+      "recipeId": "vietnamilainen-banh-cuon-sienilla",
+      "candidateMainCarb": "100g finely milled white rice flour, thin oil-free sheets with pork/mushrooms",
+      "evidence": [
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10572933/",
+          "reportedItem": "Rice flour varieties and rice-pancake in-vitro GI values",
+          "match": "NOT_EXACT",
+          "reason": "In vitro GI is not human measured ingredient GI, flour varieties and cooking process differ"
+        },
+        {
+          "url": "https://glycemicindex.com/gi-search/",
+          "reportedItem": "Sydney University human GI database",
+          "match": "NOT_YET_MATCHED",
+          "reason": "No exact product and rice sheet preparation source identified"
+        }
+      ],
+      "gk": null,
+      "decision": "HOLD_GI_COOKED_RICE_SHEET_AND_PRODUCT"
+    },
+    {
+      "recipeId": "vietnamilainen-banh-xeo-aamiaisletut",
+      "candidateMainCarb": "Rice flour coconut milk thin pancake, pale no turmeric, bean sprouts and prawn",
+      "evidence": [
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10572933/",
+          "reportedItem": "In vitro rice pancake GI about 60.8 in a different Jasmine rice model",
+          "match": "NOT_EXACT",
+          "reason": "Different prepared flour pancake and in-vitro rather than human GI; no transfer permitted"
+        }
+      ],
+      "gk": null,
+      "decision": "HOLD_GI_RICE_PANCAKE_AND_COCONUT_SOURCE"
+    },
+    {
+      "recipeId": "pohjoisafrikkalainen-baghrir",
+      "candidateMainCarb": "100g semolina + 100g wheat flour, 300ml water and honey; yeast, no baking powder",
+      "evidence": [
+        {
+          "url": "https://ajcn.nutrition.org/article/S0002-9165%25252823%25252905840-9/fulltext",
+          "reportedItem": "Steamed semolina GI 55 ± 9, preroasted GI 76 ± 6",
+          "match": "NOT_EXACT",
+          "reason": "Steam/preroast semolina is not yeast-fermented pan-cooked baghrir; wheat flour and honey contribution additional"
+        },
+        {
+          "url": "https://marokkanisch.com/en/recipes/baghrir/",
+          "reportedItem": "Baghrir method with baking powder and honey butter",
+          "match": "METHOD_ONLY",
+          "reason": "Valid cultural method reference but not a measured ingredient GI source"
+        }
+      ],
+      "gk": null,
+      "decision": "HOLD_GI_MIXTURE_AND_RECIPE_METHOD"
+    }
+  ],
+  "globalRules": {
+    "gk": "Do not multiply recipe total CHO by GI from one other food. Require source-consistent ingredient GI measurement and reviewed method, or explicit bound omission per project GK policy.",
+    "lowOmission": "1g max per serving for eligible low GI-missing minor ingredient, subject to evidence; never guess high-carbohydrate starch GI.",
+    "noImputation": true,
+    "sourceVersion": "Current historical nutrition/GK input hashes are not automatically valid for water, product and cooking method changes."
+  },
+  "numericGkAuthorized": false,
+  "nextAction": "Candidate product selection -> new source and food-record evidence -> cooking technique consistency -> exact human GI literature matching -> calculate source version -> independent review -> new release PR"
+}
