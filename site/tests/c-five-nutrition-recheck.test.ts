@@ -19,7 +19,11 @@ test("C five: two reported macro sets reproduce exactly; three remain evidence-H
   }
   const other=results.filter(x=>x.calculationStatus==="NO_INDEPENDENT_CALCULATION");
   assert.equal(other.length,3);
-  for(const item of other)assert.ok(Object.values(item.sourceDisplayedPerServing).every(x=>x===null));
+  const unsupported=other.find(x=>x.recipeId==="pohjoisafrikkalainen-maakouda")!;
+  assert.ok(Object.values(unsupported.sourceDisplayedPerServing).some(x=>x!==null));
+  assert.ok(unsupported.blockers.includes("NUMERIC_MACROS_WITHOUT_INGREDIENT_LEVEL_EVIDENCE"));
+  for(const item of other.filter(x=>x!==unsupported))
+    assert.ok(Object.values(item.sourceDisplayedPerServing).every(x=>x===null));
 });
 
 test("C five: carrot sensitivity is explicitly modeled, never counted as measured",async()=>{
