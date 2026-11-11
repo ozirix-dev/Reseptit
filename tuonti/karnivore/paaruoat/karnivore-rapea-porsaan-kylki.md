@@ -11,6 +11,11 @@ servings: 4
 time_total_min: 210
 difficulty: "helppo"
 tags: [carnivore, karnivore]
+image:
+  src: "paaruoat/karnivore-rapea-porsaan-kylki.webp"
+  alt: "Viipaloitua porsaan kylkeä vaalealla lautasella, rapea nahka ja lihakerrokset näkyvissä."
+  width: 1280
+  height: 853
 ingredients:
   - amount: 800
     unit: "g"

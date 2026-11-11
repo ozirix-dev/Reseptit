@@ -107,12 +107,14 @@ test("canonical wonton correction retains reviewed source and original GK histor
 test("all ten isolated karnivore drafts remain validated and out of published content", async () => {
   const root = path.resolve(import.meta.dirname, "../..");
   assert.equal(Object.keys(karnivoreApprovedIngredients).length, 10);
-  const fi5ImageIds = new Set([
+  const illustratedDraftIds = new Set([
     "karnivore-smashburger",
     "karnivore-rapeat-kananreisipalat",
     "karnivore-maksa-ja-pekoni",
     "karnivore-meatza",
-    "karnivore-lammaskyljykset-voissa"
+    "karnivore-lammaskyljykset-voissa",
+    "karnivore-naudan-lyhytkylki",
+    "karnivore-rapea-porsaan-kylki"
   ]);
   for (const id of Object.keys(karnivoreApprovedIngredients)) {
     const file = path.join(root, "tuonti/karnivore/paaruoat", `${id}.md`);
@@ -121,7 +123,7 @@ test("all ten isolated karnivore drafts remain validated and out of published co
     assert.ok(parsed, `${id}: parse failed`);
     const recipe = recipeFrontmatterSchema.parse(parsed.data);
     assertKarnivoreDraftSafe(recipe, raw);
-    if (fi5ImageIds.has(id)) {
+    if (illustratedDraftIds.has(id)) {
       assert.equal(recipe.status, "draft");
       assert.ok(recipe.image, id);
       assert.equal(recipe.image.src, `paaruoat/${id}.webp`);
@@ -132,10 +134,6 @@ test("all ten isolated karnivore drafts remain validated and out of published co
       assert.equal(image.orientation ?? 1, 1, id);
       assert.deepEqual([image.width, image.height], [1280, 853], id);
       assert.deepEqual([recipe.image.width, recipe.image.height], [image.width, image.height], id);
-    }
-    if (id === "karnivore-naudan-lyhytkylki" || id === "karnivore-rapea-porsaan-kylki") {
-      assert.equal(recipe.status, "draft");
-      assert.equal(recipe.image, undefined, `${id}: excluded from this image batch`);
     }
     const publicFi = siteContent.recipes.find((entry) => entry.recipeId === id && entry.locale === "fi");
     if (["karnivore-steak-and-eggs","karnivore-voilohi-pannulla","karnivore-jauhelihakulho-munalla","karnivore-smashburger"].includes(id)) {

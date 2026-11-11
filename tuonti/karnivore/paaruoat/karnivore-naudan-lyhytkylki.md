@@ -11,6 +11,11 @@ servings: 4
 time_total_min: 300
 difficulty: "helppo"
 tags: [carnivore, karnivore]
+image:
+  src: "paaruoat/karnivore-naudan-lyhytkylki.webp"
+  alt: "Kaksi haudutettua naudan luullista lyhytkylkeä omassa liemessään vaalealla lautasella."
+  width: 1280
+  height: 853
 ingredients:
   - amount: 1200
     unit: "g"
