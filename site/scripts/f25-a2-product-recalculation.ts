@@ -65,13 +65,15 @@ export function auditF25A2ProductRecalculation(){
   const tapiInput=baseline(read(manifest.sources.find((x:any)=>x.recipeId===tapi.recipeId).nutritionEvidencePath));
   const tapiPearl=tapiInput.rows.find(x=>x.item==="tapiokahelmiä");
   const tapiCoconut=tapiInput.rows.find(x=>x.item==="kookosmaito");
-  if(!tapiPearl||!tapiCoconut||brands.ingredients.pearls.per100g.carb!==86)fail("unknown tapioca source");
+  if(!tapiPearl||!tapiCoconut||brands.ingredients.pearls.per100g.carb!==86)throw Error("F25_A2_PRODUCT_PRECHECK: unknown tapioca source");
+  const sourcePearlCarbsPer100G=tapiPearl.amounts.carbohydrate/tapiPearl.massG*100;
+  if(!Number.isFinite(sourcePearlCarbsPer100G)||Math.abs(sourcePearlCarbsPer100G-79.3)>1e-9)throw Error("F25_A2_PRODUCT_PRECHECK: pearl source carbohydrate changed");
   for(const product of brands.ingredients.coconutMilkCandidates){
     if(product.volumeMl!==200||product.fibre!==null||product.polyols!==null)
       fail("incorrect coconut label completeness");
     const perServing:any={};
     for(const [k,labelKey] of [["carbohydrate","carb"],["protein","protein"],["fat","fat"]] as const){
-      const sourceDiff=(brands.ingredients.pearls.per100g.carb-79.3)*tapiPearl.massG/100;
+      const sourceDiff=(brands.ingredients.pearls.per100g.carb-sourcePearlCarbsPer100G)*tapiPearl.massG/100;
       const changeCoconut=product.per100ml[labelKey]*product.volumeMl/100-tapiCoconut.amounts[k];
       perServing[k]=round((tapiInput.totals[k]+changeCoconut+(k==="carbohydrate"?sourceDiff:0))/tapiInput.servings);
     }
@@ -80,7 +82,7 @@ export function auditF25A2ProductRecalculation(){
   const cuon=rows.find(x=>x.recipeId==="vietnamilainen-banh-cuon-sienilla");
   const flour=brands.ingredients.riceFlour, cuonInput=baseline(read(manifest.sources.find((x:any)=>x.recipeId===cuon.recipeId).nutritionEvidencePath));
   const oldFlour=cuonInput.rows.find(x=>x.item==="riisijauho");
-  if(!oldFlour||oldFlour.massG!==100||flour.per100g.fibre===null)fail("flour amount or model");
+  if(!oldFlour||oldFlour.massG!==100||flour.per100g.fibre===null)throw Error("F25_A2_PRODUCT_PRECHECK: flour amount or model");
   const partial:any={};
   for(const [key,label] of [["carbohydrate","carb"],["protein","protein"],["fat","fat"],["fibre","fibre"]] as const)
     partial[key]=round((cuonInput.totals[key]-oldFlour.amounts[key]+flour.per100g[label]*oldFlour.massG/100)/cuonInput.servings);
