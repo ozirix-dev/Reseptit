@@ -149,7 +149,7 @@ export function calculate(input: Calculation) {
     if (!record?.id || !/^https:\/\//.test(record.sourceUrl) || !record.retrievedAt || !record.licence) fail("Missing source reference");
     if (!ingredient.matchEvidence || !record || record.state !== ingredient.state || !["per100g-edible", "per100g-as-sold", "per100g-prepared", "per100ml-as-sold"].includes(record.basis)) fail("Unresolved food/state/edible basis match");
     const isVolumeLabel = record?.basis === "per100ml-as-sold";
-    if (isVolumeLabel && (ingredient.unit !== "ml" || !record?.per100ml || Object.keys(record.per100g).length !== 0))
+    if (isVolumeLabel && (ingredient.unit !== "ml" || !record?.per100ml || Object.keys(record?.per100g ?? {}).length !== 0))
       fail("Per100ml label requires ml ingredient and per100ml values only");
     const factor = isVolumeLabel ? 1 : ingredient.unit === "g" ? 1 : ingredient.unit === "kg" ? 1000 : ingredient.gramsPerUnit;
     if (!valid(factor) || factor === 0 || (!["g", "kg"].includes(ingredient.unit) && !ingredient.conversionEvidence)) fail("Missing ingredient-specific unit conversion");
