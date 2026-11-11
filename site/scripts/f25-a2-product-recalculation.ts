@@ -44,6 +44,8 @@ export function auditF25A2ProductRecalculation(){
   const manifest=read("meta/kaannokset/f25-a2-four-fi-draft-manifest-20261111.json");
   const brands=read("docs/reviews/2026-11-11-f25-a2-specific-label-models.json");
   const gate=read("meta/kaannokset/f25-release-gate.json");
+  const sealedNutrition=read("docs/reviews/2026-11-11-f25-a2-four-nutrition-independent-crosscheck.json");
+  if(sealedNutrition.status!=="RESEARCH_ONLY_HOLD"||sealedNutrition.recipes.length!==4)fail("unsealed nutrition crosscheck");
   if(manifest.stage!=="HOLD"||manifest.sources.length!==4||brands.status!=="HOLD_NOT_PUBLISHABLE")
     fail("unlocked base manifest");
   const rows=[] as any[];
@@ -55,8 +57,11 @@ export function auditF25A2ProductRecalculation(){
     if(entry.sourceStatus!=="HOLD"||entry.nutritionApproved!==false||entry.gkApproved!==false||entry.translationApproved!==false||
        gate.sources.find((x:any)=>x.recipe_id===entry.recipeId)?.approval!==null)
       fail("invalid release authorization "+entry.recipeId);
-    const input=read(entry.nutritionEvidencePath);
-    if(input.recipeId!==entry.recipeId||input.servings!==entry.servings)fail("source version mismatch");
+    const nutritionBytes=readFileSync(path.join(root,entry.nutritionEvidencePath));
+    const evidence=sealedNutrition.recipes.find((x:any)=>x.id===entry.recipeId);
+    if(!evidence||blob(nutritionBytes)!==evidence.legacyNutritionFileBlob)fail("nutrition blob changed "+entry.recipeId);
+    const input=JSON.parse(nutritionBytes.toString("utf8"));
+    if(input.recipeId!==entry.recipeId||input.servings!==entry.servings||input.sourceHash!==evidence.legacySourceHash)fail("source version mismatch");
     const base=baseline(input);
     const perServing=Object.fromEntries(metrics.map(k=>[k,round(base.totals[k]/base.servings)]));
     rows.push({recipeId:entry.recipeId,oldNutritionPerServing:perServing,productCandidates:[],approval:null,gk:null});
