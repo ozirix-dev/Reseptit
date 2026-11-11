@@ -61,7 +61,11 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 
 ## Valmistus
 
-1. Valmistele ainekset: paloittele kasvikset ja kypsennä pavut tai liha tarvittaessa erikseen. Kuumenna öljy pannulla.
-2. Lisää pannulle pisimpään kypsyvät ainekset ja kypsennä pehmeiksi. Lisää mausteet ja tilkka vettä, jos pannu uhkaa kuivua.
-3. Lisää lopuksi nopeasti kypsyvät ainekset, kuten muna tai lehtivihannekset. Kypsennä juuri valmiiksi ja maista suola.
-4. Hauduta tomaatti ja pinaatti pannulla, kypsennä munat kastikkeessa ja lisää feta.
+1. Pese ja hienonna ainesluettelon yksi tomaatti ja huuhtele 100 g pinaattia. Riko kaksi kananmunaa erillisiin pieniin kuppeihin ja mittaa 150 g fetaa.
+2. Kuumenna pannulla yhteensä 1 rkl neutraalia paistoöljyä ja pehmennä tomaattia keskilämmöllä. Lisää koko 100 g pinaattia ja kuumenna, kunnes se on pehmennyt ja ylimääräinen kosteus osittain haihtunut.
+3. Tee tomaatti-pinaattiseokseen kaksi syvennystä ja valuta kumpaankin yksi kananmuna. Peitä pannu kannella ja hauduta miedolla lämmöllä, kunnes valkuaiset ovat kauttaaltaan hyytyneet ja munat turvallisesti kypsyneet. Älä sekoita munia yleiseksi kasvispannuksi.
+4. Murustele kaikki 150 g fetaa annoksen päälle ja jaa ruoka kahteen osaan. Lisää vain listan suolaa tarvittaessa. Tarjoa kuumana ilman listaamattomia leipiä tai lisukkeita.
+
+## Muistiinpanot
+
+Tämä on pinnalla kypsennettävä shakshuka, ei papu- tai lihapata. Tomaatin kappalepaino ja feta-tuote vaativat vielä ravintoarvojen tarkastuksen.
