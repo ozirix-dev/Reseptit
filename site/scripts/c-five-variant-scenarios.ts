@@ -14,7 +14,6 @@ const recipeIds = [
   "kiinalainen-jianbing-munaletty",
   "meksikolainen-huevos-divorciados",
 ] as const;
-type Nutrition = { availableCarbohydratesG: number; proteinG: number; fatG: number };
 type Variant = {
   key: string; recipeId: string; technicalDisposition: "HOLD_CANDIDATE" | "COMPARISON_ONLY";
   proposedQuantityG: number; source: string; versionType: string;
