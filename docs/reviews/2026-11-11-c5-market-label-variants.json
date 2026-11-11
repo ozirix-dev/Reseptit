@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-11",
+  "scope": "C5_MARKET_LABEL_COMPARISON_NO_PUBLICATION",
+  "status": "HOLD_MARKET_AND_PREPARATION_BASIS",
+  "approvedNutrition": false,
+  "approvedGk": false,
+  "selectedProduct": null,
+  "sourceBlobs": {
+    "reseptit/raakileet/kiinalainen-jianbing-soy-bean-sauce-punnittu-v2.md": "d3ffb96266b4a3a1adffcd1e2c3589bb31ec2d0e",
+    "reseptit/raakileet/meksikolainen-huevos-divorciados-kypsat-pavut-v2.md": "dca1c51653e98f8a8fc8ab71c1db1bca41d8ef90",
+    "docs/nutrition/calculations/kiinalainen-jianbing-munaletty.json": "bbfad9646dfb43c794e2211b1ecaca5cfd2a1789"
+  },
+  "selectedRecipeQuantities": {
+    "jianbingSauceG": 15,
+    "huevosDrainedBlackBeansG": 150,
+    "huevosSalsaG": 150,
+    "servings": 2
+  },
+  "jianbingProductVariants": [
+    {
+      "id": "lkk-eu",
+      "market": "EU retail",
+      "brand": "Lee Kum Kee",
+      "product": "Soy Bean Sauce 240 g",
+      "source": "https://aashop.ee/en/products/lkk-soy-bean-sauce-240g",
+      "per100": {
+        "carbohydrateG": 22,
+        "proteinG": 6.5,
+        "fatG": 5.2,
+        "fibreG": null,
+        "polyolsG": null
+      },
+      "basis": "retailer_per_100g",
+      "packageConfirmed": false
+    },
+    {
+      "id": "lkk-au",
+      "market": "Australia retail",
+      "brand": "Lee Kum Kee",
+      "product": "Soy Bean Sauce 240 g",
+      "source": "https://www.coles.com.au/product/lee-kum-kee-soy-bean-sauce-240g-3631686",
+      "per100": {
+        "carbohydrateG": 15.8,
+        "proteinG": 7.8,
+        "fatG": 5.7,
+        "fibreG": null,
+        "polyolsG": null
+      },
+      "basis": "retailer_per_100g",
+      "packageConfirmed": false
+    },
+    {
+      "id": "lkk-hk",
+      "market": "Hong Kong brand webshop",
+      "brand": "Lee Kum Kee",
+      "product": "Soy Bean Sauce 240 g",
+      "source": "https://shop.lkk.com/en/collections/basic-cooking-ingredients/products/soy-bean-sauce-240g",
+      "per100": {
+        "carbohydrateG": 16,
+        "proteinG": 9,
+        "fatG": 6,
+        "fibreG": null,
+        "polyolsG": null
+      },
+      "basis": "manufacturer_10g_serving_scaled_to_100g",
+      "packageConfirmed": false
+    }
+  ],
+  "huevosBeanVariants": [
+    {
+      "id": "gogreen-se",
+      "product": "GoGreen mustapavut 380g/230g",
+      "ean": "7310130009785",
+      "source": "https://www.k-ruoka.fi/kauppa/tuote/gogreen-mustapavut-380230g-ruotsal-7310130009785",
+      "per100": {
+        "carbohydrateG": 8.5,
+        "proteinG": 7.5,
+        "fatG": 1.1,
+        "fibreG": 8.5
+      },
+      "labelBasis": "at_sale_not_verified_drained",
+      "packageConfirmed": false
+    },
+    {
+      "id": "bonduelle",
+      "product": "Bonduelle mustapavut 200g/130g",
+      "ean": "3083681132496",
+      "source": "https://www.k-ruoka.fi/kauppa/tuote/bonduelle-mustapavut-200130g-3083681132496",
+      "per100": {
+        "carbohydrateG": 13.1,
+        "proteinG": 7.3,
+        "fatG": 1.1,
+        "fibreG": 7.2
+      },
+      "labelBasis": "at_sale_not_verified_drained",
+      "packageConfirmed": false
+    },
+    {
+      "id": "coop",
+      "product": "Coop mustapavut suolaliemessä 390g/230g",
+      "ean": "7340191171664",
+      "source": "https://www.s-kaupat.fi/tuote/coop-mustapavut-suolaliemessa-390230-g/7340191171664",
+      "per100": {
+        "carbohydrateG": 13,
+        "proteinG": 7,
+        "fatG": 0.7,
+        "fibreG": 8
+      },
+      "labelBasis": "label_per100g_drained_basis_unconfirmed",
+      "packageConfirmed": false
+    },
+    {
+      "id": "menu",
+      "product": "Menu mustapavut suolaliemessä 2500g/1500g",
+      "ean": "6410405172457",
+      "source": "https://www.k-ruoka.fi/kauppa/tuote/menu-mustapapu-suolaliemessa-25001500g-6410405172457",
+      "per100": {
+        "carbohydrateG": 15,
+        "proteinG": 7.1,
+        "fatG": 0.6,
+        "fibreG": 5.6
+      },
+      "labelBasis": "at_sale_not_verified_drained",
+      "packageConfirmed": false
+    }
+  ],
+  "huevosSalsaCandidate": {
+    "id": "la-costena-verde",
+    "product": "La Costeña Salsa Verde 250 g",
+    "ean": "7501017005925",
+    "source": "https://www.k-ruoka.fi/kauppa/tuote/la-costena-salsa-250g-verde-7501017005925",
+    "per100": {
+      "carbohydrateG": 3.9,
+      "proteinG": 0.9,
+      "fatG": 0.9,
+      "fibreG": null,
+      "polyolsG": null
+    },
+    "labelBasis": "product_per100g",
+    "packageConfirmed": false
+  },
+  "gates": [
+    "Same 240g sauce name does not guarantee same marketed formulation or per100g labeling",
+    "Actual package EAN/lot/region and ingredients must match chosen nutrition label",
+    "EU carbohydrate basis vs other jurisdictions must be assessed before combining as nutrition claims",
+    "Beans must be weighed drained and edible; per100g label basis may represent sale state rather than drained edible state",
+    "No combined huevos macro sum until tomato, eggs, oil retention and salsa sources are verified",
+    "Fibre/polyols null are not zero; do not publish GL without product-specific GI mapping"
+  ]
+}
