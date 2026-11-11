@@ -1,0 +1,341 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-11",
+  "stage": "HOLD",
+  "purpose": "Independent ingredient-level product substitutions and preparation candidates; none are a published FI nutrition or GK release.",
+  "servings": 2,
+  "recipes": [
+    {
+      "recipeId": "vietnamilainen-banh-cuon-sienilla",
+      "sourcePath": "reseptit/aamupalat/vietnamilainen-banh-cuon-sienilla.md",
+      "sourceGitBlob": "fa1d7e18602b14acfa397eea4399da7f7058fbc6be0a012221a8bb7",
+      "oldNutritionGitBlob": "969e6696fecc2c57873604ad9bd4545647668c26",
+      "oldNutritionInputHash": "72add279fc7ed90cdb365397eea4399da7f7058fbc6b6e0d6500a012221a8bb7",
+      "candidatePath": "docs/reviews/f25-a2-banh-cuon-v3-20261111.md",
+      "candidateGitBlob": "332b43705fc5c4f22dc89de8a8e0a88ddd9be316",
+      "timeEstimateMin": {
+        "min": 60,
+        "max": 75
+      },
+      "ingredients": [
+        {
+          "item": "hieno riisijauho",
+          "amount": 100,
+          "unit": "g",
+          "ean": "6430041080152",
+          "basis": "100g",
+          "macros": {
+            "carbohydrate": 74,
+            "protein": 8,
+            "fat": 1.8,
+            "fibre": 1,
+            "polyols": null
+          },
+          "source": "https://www.k-ruoka.fi/kauppa/tuote/viljatuote-hieno-riisijauho-500g-gton-6430041080152"
+        },
+        {
+          "item": "tapiokatärkkelys Farina",
+          "amount": 20,
+          "unit": "g",
+          "ean": "6418513014119",
+          "basis": "100g",
+          "macros": {
+            "carbohydrate": 86,
+            "protein": 0,
+            "fat": 0.1,
+            "fibre": 0,
+            "polyols": null
+          },
+          "source": "https://www.k-ruoka.fi/kauppa/tuote/farina-tapiokatarkkelys-400g-gton-6418513014119"
+        },
+        {
+          "item": "vesi",
+          "amount": 300,
+          "unit": "ml",
+          "macros": {
+            "carbohydrate": 0,
+            "protein": 0,
+            "fat": 0,
+            "fibre": 0,
+            "polyols": 0
+          }
+        },
+        {
+          "item": "herkkusieni",
+          "amount": 100,
+          "unit": "g",
+          "sourceRecord": "afcd-F005946-release-3",
+          "basis": "100g",
+          "macros": {
+            "carbohydrate": 0.8,
+            "protein": 2.2,
+            "fat": 0.8,
+            "fibre": 1.4,
+            "polyols": 1.2
+          }
+        },
+        {
+          "item": "porsaan jauheliha, untrimmed raaka",
+          "amount": 150,
+          "unit": "g",
+          "sourceRecord": "afcd-F007057-release-3",
+          "basis": "100g",
+          "macros": {
+            "carbohydrate": 0,
+            "protein": 20.9,
+            "fat": 10.6,
+            "fibre": 0,
+            "polyols": 0
+          }
+        },
+        {
+          "item": "Squid kalakastike",
+          "amount": 15,
+          "unit": "ml",
+          "ean": "8850620888203",
+          "basis": "100ml",
+          "source": "https://ctfood.se/fish-sauce-glass-12x725ml-squid-brand/?language=en",
+          "macros": {
+            "carbohydrate": 3,
+            "protein": 11,
+            "fat": 0,
+            "fibre": 0,
+            "polyols": null
+          }
+        },
+        {
+          "item": "paistoöljy",
+          "amount": 5,
+          "unit": "g",
+          "basis": "100g",
+          "sourceRecord": "fineli-541-release-20",
+          "macros": {
+            "carbohydrate": 0,
+            "protein": 0,
+            "fat": 99.9,
+            "fibre": 0,
+            "polyols": 0
+          },
+          "retention": "scenario only: 0–100 %"
+        },
+        {
+          "item": "suola",
+          "amount": 1,
+          "unit": "g",
+          "macros": {
+            "carbohydrate": 0,
+            "protein": 0,
+            "fat": 0,
+            "fibre": 0,
+            "polyols": 0
+          }
+        }
+      ],
+      "unknowns": [
+        "RICE_FLOUR_POLYOLS",
+        "FARINA_STARCH_POLYOLS",
+        "FISH_SAUCE_POLYOLS",
+        "EXACT_PORK_FAT_PERCENT",
+        "OIL_RETENTION",
+        "PAN_RELEASE_METHOD",
+        "GI_FOR_RICE_SHEET",
+        "SEMANTIC_TRANSLATIONS",
+        "V3_IMAGE"
+      ],
+      "physicalTrial": false,
+      "nutritionApproved": false,
+      "gkApproved": false,
+      "gk": null,
+      "releaseAuthorized": false,
+      "scenarios": {
+        "oilRetained0": {
+          "carbohydrate": 46.225,
+          "protein": 21.6,
+          "fat": 9.26,
+          "fibre": 1.2,
+          "polyols": null
+        },
+        "oilRetained50Percent": {
+          "carbohydrate": 46.225,
+          "protein": 21.6,
+          "fat": 10.5087,
+          "fibre": 1.2,
+          "polyols": null
+        },
+        "oilRetained100Percent": {
+          "carbohydrate": 46.225,
+          "protein": 21.6,
+          "fat": 11.7575,
+          "fibre": 1.2,
+          "polyols": null
+        }
+      }
+    },
+    {
+      "recipeId": "vietnamilainen-banh-xeo-aamiaisletut",
+      "sourcePath": "reseptit/aamupalat/vietnamilainen-banh-xeo-aamiaisletut.md",
+      "sourceGitBlob": "cb442ad22c02b9a894861dd7cdc740dd5b0417ef",
+      "oldNutritionGitBlob": "cce0d1060a066b208a3713b59a1cb9ed12bf684c",
+      "oldNutritionInputHash": "dde4c5edfda11bb470d1bc5f9da072ac457b79f6c3d474807d87a018866daf20",
+      "candidatePath": "docs/reviews/f25-a2-banh-xeo-v3-20261111.md",
+      "candidateGitBlob": "b426f9e505ad2ab4b80c4e576e413828ccdd588c",
+      "timeEstimateMin": {
+        "min": 50,
+        "max": 60
+      },
+      "ingredients": [
+        {
+          "item": "hieno riisijauho",
+          "amount": 100,
+          "unit": "g",
+          "ean": "6430041080152",
+          "basis": "100g",
+          "macros": {
+            "carbohydrate": 74,
+            "protein": 8,
+            "fat": 1.8,
+            "fibre": 1,
+            "polyols": null
+          },
+          "source": "https://www.k-ruoka.fi/kauppa/tuote/viljatuote-hieno-riisijauho-500g-gton-6430041080152"
+        },
+        {
+          "item": "Thai Choice kookosmaito",
+          "amount": 200,
+          "unit": "ml",
+          "ean": "8851978804068",
+          "basis": "100ml",
+          "macros": {
+            "carbohydrate": 2,
+            "protein": 1,
+            "fat": 18,
+            "fibre": null,
+            "polyols": null
+          },
+          "source": "https://www.k-ruoka.fi/kauppa/tuote/thai-choice-kookosmaito-400ml-8851978804068"
+        },
+        {
+          "item": "vesi",
+          "amount": 120,
+          "unit": "ml",
+          "macros": {
+            "carbohydrate": 0,
+            "protein": 0,
+            "fat": 0,
+            "fibre": 0,
+            "polyols": 0
+          }
+        },
+        {
+          "item": "Meira kurkuma",
+          "amount": 2,
+          "unit": "g",
+          "ean": "6420101882864",
+          "basis": "100g",
+          "macros": {
+            "carbohydrate": 67.1,
+            "protein": 9.7,
+            "fat": 3.3,
+            "fibre": 22.7,
+            "polyols": null
+          },
+          "source": "https://www.k-ruoka.fi/kauppa/tuote/meira-kurkuma-24g-6420101882864"
+        },
+        {
+          "item": "katkaravun liha",
+          "amount": 150,
+          "unit": "g",
+          "sourceRecord": "afcd-F007422-release-3",
+          "basis": "100g",
+          "macros": {
+            "carbohydrate": 0,
+            "protein": 13.2,
+            "fat": 0.6,
+            "fibre": 0,
+            "polyols": 0
+          }
+        },
+        {
+          "item": "pavunidut",
+          "amount": 150,
+          "unit": "g",
+          "sourceRecord": "afcd-F008806-release-3",
+          "basis": "100g",
+          "macros": {
+            "carbohydrate": 1.6,
+            "protein": 3.1,
+            "fat": 0.1,
+            "fibre": 1.3,
+            "polyols": 0
+          }
+        },
+        {
+          "item": "paistoöljy",
+          "amount": 13.5,
+          "unit": "g",
+          "basis": "100g",
+          "sourceRecord": "fineli-541-release-20",
+          "macros": {
+            "carbohydrate": 0,
+            "protein": 0,
+            "fat": 99.9,
+            "fibre": 0,
+            "polyols": 0
+          },
+          "retention": "scenario only 0–100 %"
+        },
+        {
+          "item": "suola",
+          "amount": 1,
+          "unit": "g",
+          "macros": {
+            "carbohydrate": 0,
+            "protein": 0,
+            "fat": 0,
+            "fibre": 0,
+            "polyols": 0
+          }
+        }
+      ],
+      "unknowns": [
+        "RICE_FLOUR_POLYOLS",
+        "COCONUT_FIBRE_POLYOLS",
+        "TURMERIC_POLYOLS",
+        "OIL_RETENTION",
+        "GI_FOR_PREPARED_RICE_CREPE",
+        "SEMANTIC_TRANSLATIONS",
+        "YELLOW_IMAGE"
+      ],
+      "physicalTrial": false,
+      "nutritionApproved": false,
+      "gkApproved": false,
+      "gk": null,
+      "releaseAuthorized": false,
+      "scenarios": {
+        "oilRetained0": {
+          "carbohydrate": 40.871,
+          "protein": 17.322,
+          "fat": 19.458,
+          "fibre": null,
+          "polyols": null
+        },
+        "oilRetained50Percent": {
+          "carbohydrate": 40.871,
+          "protein": 17.322,
+          "fat": 22.8296,
+          "fibre": null,
+          "polyols": null
+        },
+        "oilRetained100Percent": {
+          "carbohydrate": 40.871,
+          "protein": 17.322,
+          "fat": 26.2012,
+          "fibre": null,
+          "polyols": null
+        }
+      }
+    }
+  ],
+  "crossRecipeRule": "All product values are label scenarios, subject to EAN, declared per100g vs per100ml units. Totals with null unknown macro fields remain null. Never infer GK from another food category or in vitro tests.",
+  "releaseDecision": "0/2 approved; original source hash and F25 gate stay immutable; no FI or EN/SV/TH publication."
+}
