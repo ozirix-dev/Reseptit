@@ -178,7 +178,7 @@
       "oldNutritionGitBlob": "cce0d1060a066b208a3713b59a1cb9ed12bf684c",
       "oldNutritionInputHash": "dde4c5edfda11bb470d1bc5f9da072ac457b79f6c3d474807d87a018866daf20",
       "candidatePath": "docs/reviews/f25-a2-banh-xeo-v3-20261111.md",
-      "candidateGitBlob": "b426f9e505ad2ab4b80c4e576e413828ccdd588c",
+      "candidateGitBlob": "a27947573ab468c6f0bf8dad158bd275914e52f5",
       "timeEstimateMin": {
         "min": 50,
         "max": 60
@@ -233,13 +233,24 @@
           "ean": "6420101882864",
           "basis": "100g",
           "macros": {
-            "carbohydrate": 67.1,
+            "carbohydrate": null,
             "protein": 9.7,
             "fat": 3.3,
             "fibre": 22.7,
             "polyols": null
           },
-          "source": "https://www.k-ruoka.fi/kauppa/tuote/meira-kurkuma-24g-6420101882864"
+          "source": "https://www.k-ruoka.fi/kauppa/tuote/meira-kurkuma-24g-6420101882864",
+          "declaredRetailTotalCarbohydratePer100g": 67.1,
+          "approxAvailableCarbohydratePer100gAlternative": 44.4,
+          "labelMassBalance": {
+            "retailListedTotalCarb": 67.1,
+            "fibre": 22.7,
+            "protein": 9.7,
+            "fat": 3.3,
+            "subtotalGPer100g": 102.8,
+            "passesEuAvailableCarbPlusSeparateFibre": false,
+            "explanation": "67.1g mirrors a US total-carbohydrate (incl fibre) value, not a reliable EU available-carbohydrate number. Do not publish derived 44.4g as brand-confirmed."
+          }
         },
         {
           "item": "katkaravun liha",
@@ -304,7 +315,8 @@
         "OIL_RETENTION",
         "GI_FOR_PREPARED_RICE_CREPE",
         "SEMANTIC_TRANSLATIONS",
-        "YELLOW_IMAGE"
+        "YELLOW_IMAGE",
+        "TURMERIC_US_TOTAL_CARB_VS_EU_AVAILABLE_MISMATCH"
       ],
       "physicalTrial": false,
       "nutritionApproved": false,
@@ -313,29 +325,37 @@
       "releaseAuthorized": false,
       "scenarios": {
         "oilRetained0": {
-          "carbohydrate": 40.871,
+          "carbohydrate": null,
           "protein": 17.322,
           "fat": 19.458,
           "fibre": null,
           "polyols": null
         },
         "oilRetained50Percent": {
-          "carbohydrate": 40.871,
+          "carbohydrate": null,
           "protein": 17.322,
           "fat": 22.8296,
           "fibre": null,
           "polyols": null
         },
         "oilRetained100Percent": {
-          "carbohydrate": 40.871,
+          "carbohydrate": null,
           "protein": 17.322,
           "fat": 26.2012,
           "fibre": null,
           "polyols": null
         }
+      },
+      "conditionalComparison": {
+        "turmericDryMassG": 2,
+        "oldRetailListedCarbohydrateGPerServing": 0.671,
+        "alternativeEuAvailableCarbohydrateGPerServing": 0.444,
+        "oldWholeRecipePartialGPerServing": 40.871,
+        "alternativeWholeRecipePartialGPerServing": 40.644,
+        "fullCarbohydrateApproved": false
       }
     }
   ],
-  "crossRecipeRule": "All product values are label scenarios, subject to EAN, declared per100g vs per100ml units. Totals with null unknown macro fields remain null. Never infer GK from another food category or in vitro tests.",
+  "crossRecipeRule": "All product values are label scenarios, subject to EAN, declared per100g vs per100ml units. Totals with null unknown macro fields remain null. Never infer GK from another food category or in vitro tests. Meira turmeric retail carbohydrate label 67.1g plus 22.7g fibre, 9.7g protein and 3.3g fat totals 102.8g/100g; because this is incompatible with separate EU available-carbohydrate reporting, Xeo carbohydrate totals are null until a verified pack or trustworthy comparable ingredient source is approved.",
   "releaseDecision": "0/2 approved; original source hash and F25 gate stay immutable; no FI or EN/SV/TH publication."
 }

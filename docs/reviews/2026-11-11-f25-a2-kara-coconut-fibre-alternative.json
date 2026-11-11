@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "reviewDate": "2026-11-11",
   "status": "HOLD_PRODUCT_SUBSTITUTION_ONLY",
-  "scope": "A2 two V3 review-only candidates; alternative labeled coconut milk with explicitly reported fibre; no canonical FI edit, no published recipe approval",
+  "scope": "A2 two V3 review-only candidates; alternative labeled coconut milk with explicitly reported fibre; no canonical FI edit, no published recipe approval Turmeric retail-label inconsistency supersedes previous 40.571g/serving and 2.002g fibre/serving Xeo numerical claims; full value null, conditional scenario only.",
   "product": {
     "name": "Kara kookosmaito 17% 200 ml",
     "ean": "8886303210238",
@@ -70,35 +70,47 @@
       "servings": 2,
       "coconutVolumeMl": 200,
       "oldPartial": {
-        "carbohydrate": 40.871,
+        "carbohydrate": null,
         "protein": 17.322,
         "fatAtZeroOilRetention": 19.458,
         "fatAtFullOilRetention": 26.2012,
         "fibreTotal": null,
-        "polyolsTotal": null
+        "polyolsTotal": null,
+        "historicalRetailListedCarbohydrateG": 40.871
       },
       "newPartial": {
-        "carbohydrate": 40.571,
+        "carbohydrate": null,
         "protein": 18.022,
         "fatAtZeroOilRetention": 19.458,
         "fatAtFullOilRetention": 26.2012,
-        "fibreTotal": 2.002,
-        "polyolsTotal": null
+        "fibreTotal": null,
+        "polyolsTotal": null,
+        "historicalRetailListedCarbohydrateG": 40.571,
+        "fibreLowerBoundG": 1.775
       },
       "newFibreComponentsTotalG": {
         "fineRiceFlour": 1,
-        "meiraTurmeric": 0.454,
+        "meiraTurmeric": null,
         "beanSprouts": 1.95,
         "karaCoconutMilk": 0.6,
         "shrimp": 0
       },
       "remainingBlockers": [
+        "2.002g whole-recipe fibre scenario not approved because turmeric label has incompatible nutrient definitions; 1.775g/serving is a known lower bound from rice flour, sprouts and Kara only.",
+        "Meira retail page appears to copy USDA 67.1g total carbohydrate (incl 22.7g fibre); mass-balance 102.8g/100g excluding water. EU available carbohydrate must not be reported until resolved.",
         "Polyols missing for fine rice flour, turmeric and Kara product; cannot convert null to 0",
         "Pan oil retained fraction not measured (0-13.5g input)",
         "Human GI evidence for exact prepared rice-crepe version is missing",
         "No yellow V3 production-photo comparison, trial or semantic translation verification",
         "New FI/nutrition version cannot inherit historic GK hash"
-      ]
+      ],
+      "conditionalEuDefinitionComparison": {
+        "oldThaiChoiceCarbohydrateGPerServing": 40.644,
+        "newKaraCarbohydrateGPerServing": 40.344,
+        "estimatedTurmericAvailableCarbohydratePer100g": 44.4,
+        "estimatedTurmericContributionPerServingG": 0.444,
+        "publishedNutritionAuthorized": false
+      }
     }
   ],
   "sources": [
@@ -116,6 +128,16 @@
       "type": "productLabel",
       "url": "https://www.s-kaupat.fi/tuote/kara-200ml-kookosmaito-17/8886303210238",
       "decision": "100 ml carbohydrate/protein/fat/fibre declared; polyols not declared"
+    },
+    {
+      "type": "EU-label-interpretation",
+      "url": "https://europa.eu/youreurope/business/product-rules-compliance/food/nutrition-declaration/index_en.htm",
+      "decision": "Carbohydrate and fibre must be separate in EU nutrition declaration; no double counting."
+    },
+    {
+      "type": "reference-composition",
+      "url": "https://www.matvaretabellen.no/en/turmeric-ground/",
+      "decision": "Turmeric ground 44.4g available carbohydrate/100g, ~23g fibre: conditional cross-check, NOT Meira-specific label confirmation."
     }
   ],
   "release": {
