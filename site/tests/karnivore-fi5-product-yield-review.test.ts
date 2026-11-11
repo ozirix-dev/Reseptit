@@ -11,6 +11,7 @@ test("five newly illustrated karnivore FI drafts stay source-pinned and nutritio
   const audit = JSON.parse(await readFile(path.join(root, "docs/reviews/karnivore-fi5-publication-triage-2026-11-11.json"), "utf8")) as {
     publicationAuthorized: boolean;
     rawScenarioCanBePublished: boolean;
+    postReviewReleases?: Array<{recipeId:string;releasePr:number;sourceBlobSha:string;state:string;gkStatus:string}>;
     recipes: Array<{ recipeId: string; sourceBlobSha: string; sourcePath: string; status: string;
       sourceMatchCounts: {matched: number; proxy: number; unresolved: number};
       blockers: string[]; gkStatus: string; rawScenarioStatus: string; productCandidates: Array<{url:string}> }>;
@@ -22,6 +23,7 @@ test("five newly illustrated karnivore FI drafts stay source-pinned and nutritio
   const expected = ["karnivore-smashburger","karnivore-rapeat-kananreisipalat","karnivore-maksa-ja-pekoni","karnivore-meatza","karnivore-lammaskyljykset-voissa"];
   assert.equal(audit.publicationAuthorized, false);
   assert.equal(audit.rawScenarioCanBePublished, false);
+  assert.deepEqual(audit.postReviewReleases?.map(x=>x.recipeId),["karnivore-smashburger"]);
   assert.deepEqual(audit.recipes.map(x=>x.recipeId), expected);
   for(const row of audit.recipes) {
     assert.equal(row.status,"HOLD_NO_PUBLICATION");
@@ -41,9 +43,28 @@ test("five newly illustrated karnivore FI drafts stay source-pinned and nutritio
     assert.equal(recipe.language,"fi");
     assert.equal(recipe.image?.src,"paaruoat/"+row.recipeId+".webp");
     assert.deepEqual([recipe.image?.width,recipe.image?.height],[1280,853]);
-    await assert.rejects(access(path.join(root,"reseptit/paaruoat",row.recipeId+".md")),
-      (error: unknown) => (error as NodeJS.ErrnoException).code === "ENOENT",
-      row.recipeId+": cannot publish without a new release review");
+    if (row.recipeId === "karnivore-smashburger") {
+      const publicBytes=await readFile(path.join(root,"reseptit/paaruoat",row.recipeId+".md"));
+      const sourcePin=audit.postReviewReleases?.find(x=>x.recipeId===row.recipeId);
+      assert(sourcePin,"published Smashburger needs a separately reviewed source pin");
+      const publicHash=createHash("sha1").update("blob "+publicBytes.byteLength+"\\0".replace("\\0","\0")).update(publicBytes).digest("hex");
+      assert.equal(publicHash,sourcePin.sourceBlobSha,"published source changed without renewed review");
+      assert.equal(sourcePin.releasePr,492);
+      assert.equal(sourcePin.state,"PUBLISHED_WITH_INDEPENDENT_SOURCE_EVIDENCE");
+      assert.equal(sourcePin.gkStatus,"UNAVAILABLE_NOT_ZERO");
+      const pub=parseMarkdown(publicBytes.toString("utf8"));
+      assert(pub);
+      const published=recipeFrontmatterSchema.parse(pub.data);
+      assert.equal(published.status,"published");
+      assert.equal(published.image?.src,"paaruoat/karnivore-smashburger.webp");
+      assert.deepEqual([published.image?.width,published.image?.height],[1280,853]);
+      assert.deepEqual([published.protein_per_serving_g,published.fat_per_serving_g,published.carbs_net_per_serving_g],
+        [45.01,55,0]);
+    } else {
+      await assert.rejects(access(path.join(root,"reseptit/paaruoat",row.recipeId+".md")),
+        (error: unknown) => (error as NodeJS.ErrnoException).code === "ENOENT",
+        row.recipeId+": publication requires its own release review");
+    }
     const mapped=sourceMap.recipes.find(x=>x.recipeId===row.recipeId);
     assert(mapped,row.recipeId+": missing source map");
     for(const kind of ["matched","proxy","unresolved"] as const)

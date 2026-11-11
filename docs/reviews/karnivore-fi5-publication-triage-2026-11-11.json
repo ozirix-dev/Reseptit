@@ -6,7 +6,7 @@
   "publicationAuthorized": false,
   "rawScenarioCanBePublished": false,
   "foodFactsMayBeProxies": true,
-  "notes": "Image approval and CI are separate from product matching, edible yield, source-verified macro calculation and GK. A numeric zero derived from an ingredient proxy does not authorize recipe CHO=0 or GK=0.",
+  "notes": "Image approval and CI are separate from product matching, edible yield, source-verified macro calculation and GK. A numeric zero derived from an ingredient proxy does not authorize recipe CHO=0 or GK=0. This document preserves the original five-draft image-stage HOLD. A separately authorized public Smashburger version was later merged in PR #492; the remaining four cannot inherit its authorization.",
   "recipes": [
     {
       "recipeId": "karnivore-smashburger",
@@ -199,6 +199,16 @@
           "decision": "PROXY_HOLD"
         }
       ]
+    }
+  ],
+  "postReviewReleases": [
+    {
+      "recipeId": "karnivore-smashburger",
+      "releasePr": 492,
+      "sourceBlobSha": "179b12d53d97c406c6f83d2b829173375583b5d4",
+      "calculationPath": "docs/nutrition/calculations/karnivore-smashburger.json",
+      "state": "PUBLISHED_WITH_INDEPENDENT_SOURCE_EVIDENCE",
+      "gkStatus": "UNAVAILABLE_NOT_ZERO"
     }
   ]
 }
