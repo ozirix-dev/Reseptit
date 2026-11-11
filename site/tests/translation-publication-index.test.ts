@@ -126,3 +126,29 @@ test("F25 A1 four recipe candidate files stay out of production and retain expli
     assert.deepEqual(gate.sources.find((row:any)=>row.recipe_id===c.recipeId)?.approval,null);
   }
 });
+
+test("F25 A2 four gram-specific recipe candidates stay source-locked and unpublished", async () => {
+  const {auditF25A2FourDrafts}=await import("../scripts/f25-a2-four-fi-draft-gate");
+  const result=auditF25A2FourDrafts();
+  assert.equal(result.total,4);
+  assert.equal(result.approved,0);
+  const rows=Object.fromEntries(result.rows.map(r=>[r.recipeId,r]));
+  assert.equal(rows["vietnamilainen-papaija-kookospuuro"].candidateTime,40);
+  assert.equal(rows["vietnamilainen-banh-cuon-sienilla"].candidateTime,50);
+  assert.equal(rows["vietnamilainen-banh-xeo-aamiaisletut"].candidateTime,45);
+  assert.equal(rows["pohjoisafrikkalainen-baghrir"].candidateTime,45);
+  for (const r of result.rows) {
+    assert.equal(r.status,"HOLD");
+    assert.equal(r.approval,false);
+    assert.equal(r.sourceSha.length,40);
+    assert.ok(r.candidateTime>r.oldTime);
+  }
+  assert.deepEqual(rows["vietnamilainen-papaija-kookospuuro"].addedOrChangedItems,[]);
+  assert.equal(rows["vietnamilainen-papaija-kookospuuro"].productContrast?.netCarbDifferenceGPerServing,3.35);
+  assert.equal(rows["vietnamilainen-papaija-kookospuuro"].productContrast?.fibreAndPolyolsVerified,false);
+  assert.deepEqual(rows["vietnamilainen-banh-cuon-sienilla"].addedOrChangedItems,[]);
+  assert.ok(rows["vietnamilainen-banh-xeo-aamiaisletut"].addedOrChangedItems.some(
+    x=>x.item==="vettä"&&x.amount===120&&x.unit==="ml"));
+  assert.ok(rows["pohjoisafrikkalainen-baghrir"].addedOrChangedItems.some(
+    x=>x.item==="lämmintä vettä"&&x.amount===300&&x.unit==="ml"));
+});
