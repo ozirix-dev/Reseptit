@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "reviewDate": "2026-11-11",
+  "recipeId": "pohjoisafrikkalainen-baghrir",
+  "variant": "V3_UNPUBLISHED",
+  "status": "HOLD",
+  "servings": 2,
+  "sourceBaseline": {
+    "fiPath": "reseptit/aamupalat/pohjoisafrikkalainen-baghrir.md",
+    "gitBlobSha": "24722209acc0b5ca0eb45719248297b6c2a58f3a",
+    "nutritionInput": "docs/nutrition/calculations/pohjoisafrikkalainen-baghrir.json",
+    "sourceOldWaterMl": 150,
+    "originalOilG": 13.5,
+    "oldOilRetainedFraction": 1
+  },
+  "ingredients": [
+    {
+      "item": "mannasuurimo",
+      "amountG": 100,
+      "source": "fineli-112-release-20"
+    },
+    {
+      "item": "vehnäjauho",
+      "amountG": 100,
+      "source": "fineli-110-release-20"
+    },
+    {
+      "item": "kuivahiiva",
+      "amountG": 5,
+      "source": "afcd-F009606-release-3"
+    },
+    {
+      "item": "Meira-leivinjauhe",
+      "amountG": 4,
+      "ean": "6414200210017",
+      "source": "https://www.s-kaupat.fi/tuote/meira-leivinjauhe-100g/6414200210017",
+      "per100g": {
+        "carbohydrate": 17.6,
+        "protein": 0,
+        "fat": 0.1,
+        "fibre": 0,
+        "polyols": null
+      }
+    },
+    {
+      "item": "vesi",
+      "amountMl": 300,
+      "source": "fineli-922-release-20"
+    },
+    {
+      "item": "suola",
+      "amountG": 1,
+      "macroOmitted": "Pure sodium chloride has zero displayed macros; sodium is not estimated"
+    },
+    {
+      "item": "hunaja",
+      "amountG": 20,
+      "source": "afcd-F004380-release-3"
+    }
+  ],
+  "removedPanOil": {
+    "source": "fineli-541-release-20",
+    "amountG": 13.5,
+    "perServingFatRemovedG": 6.74325,
+    "reason": "no oil in revised method, no absorption assumption"
+  },
+  "macroScenarioPerServing": {
+    "legacy": {
+      "carbohydrate": 76.1865,
+      "protein": 12.49,
+      "fat": 8.19825,
+      "fibre": 4.1725,
+      "polyols": 0
+    },
+    "v3Nominal": {
+      "carbohydrate": 76.5385,
+      "protein": 12.49,
+      "fat": 1.457,
+      "fibre": 4.1725,
+      "polyols": null
+    },
+    "approxEnergyLegacyKcal": 436.83525,
+    "approxEnergyV3Kcal": 377.572,
+    "carbohydrateDeltaG": 0.35200000000000004,
+    "fatDeltaG": -6.74125,
+    "note": "New powder polyols not verified; partial scenario is not approved complete macros"
+  },
+  "constraints": {
+    "powderPolyolsVerified": false,
+    "gk": null,
+    "nutritionApproved": false,
+    "gkApproved": false,
+    "sourceApproved": false,
+    "physicalCookTrial": false,
+    "translationsApproved": false,
+    "sourceVersionChanged": true
+  },
+  "notes": [
+    "Meira product page provides no verified polyol label. Do not silently treat null as zero.",
+    "The V3 scenario assumes all 200g of flour blend, 5g dry yeast and 20g honey is served to 2 people; no discarded dough.",
+    "The old 150ml water baseline is not the new 300ml source. Water is zero-energy but changes source hash and physical yield.",
+    "A dry non-stick pan is a technique proposal; no physical cook trial conducted.",
+    "Atwater 4-4-9-2 approximate energy only. Use repository calculate() to approve actual macros.",
+    "No exact human GI for baghrir obtained. GK remains null."
+  ]
+}
