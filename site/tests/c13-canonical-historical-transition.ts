@@ -2,13 +2,12 @@ import assert from "node:assert/strict";
 import { execFileSync } from "node:child_process";
 import { createHash } from "node:crypto";
 
-/** C13: only 10 specifically reviewed FI method+note migrations, never a general GK waiver.
+/** C13: only 9 specifically reviewed FI method+note migrations, never a general GK waiver.
  * The original historical recipe is reconstructed solely inside frozen GK tests.
  * Changing any approved source bytes rejects this exceptional transition.
  */
 const historicalMain = "9e6a00c33b1ee2c1cf0de2f086b257da8d3c8f50";
 const approvedBlobById = {
-  "indialainen-poha-maapahkinoilla": "a8b504d12ef75dc62e65d5d59b8acca7b783d020",
   "malesialainen-kaya-paahtoleipa": "0e91a495e41ce5a52a5f5ccec4365be7b11f62fd",
   "valimerellinen-halloumi-tomaattileipa": "d9fd81fe8863f7957dd8c673738c223956faf493",
   "intialainen-rava-uttapam": "65998ff2f37885f556fe28b82c6598fd70d17371",
