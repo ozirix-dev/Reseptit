@@ -3,6 +3,7 @@ import path from "node:path";
 import { z } from "zod";
 import type { TranslationAuditResult } from "./translation-audit";
 import { isPublicRecipeQuarantined } from "./public-recipe-quarantine";
+import { assertF25SourceReleaseAuthorized } from "./f25-source-release-gate";
 
 type Source = TranslationAuditResult["publishedSources"][number];
 const localeSchema = z.enum(["en", "sv", "th"]);
@@ -38,6 +39,7 @@ export function overlayTranslationPublicationIndex(
   const seen = new Set<string>();
   for (const row of index.sources) {
     assertTranslationSourceIsNotQuarantined(row.recipe_id);
+    assertF25SourceReleaseAuthorized(row.recipe_id);
     if (seen.has(row.recipe_id)) throw Error("TRANSLATION_INDEX_DUPLICATE_SOURCE: " + row.recipe_id);
     seen.add(row.recipe_id);
     if (new Set(row.locales).size !== row.locales.length) throw Error("TRANSLATION_INDEX_DUPLICATE_LOCALE: " + row.recipe_id);

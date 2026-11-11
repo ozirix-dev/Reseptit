@@ -6,6 +6,7 @@ import { recipeFrontmatterSchema } from "../src/content/schema";
 import type { z } from "zod";
 import { semanticTermErrors, semanticProseErrors, semanticNoteErrors, semanticTagErrors } from "./semantic-terms";
 import { assertTranslationSourceIsNotQuarantined, loadTranslationPublicationIndex, overlayTranslationPublicationIndex } from "./translation-publication-index";
+import { assertF25SourceReleaseAuthorized } from "./f25-source-release-gate";
 import { projectReviewedFiEditorialSource } from "./gk80-editorial-display";
 import { projectA8FiEditorialSource } from "./a8-editorial-display";
 import { projectC20FiDisplay, c20FiDisplayPaths } from "./c20-fi-editorial-display";
@@ -189,6 +190,7 @@ export async function auditTranslations(recipeIds?: string[]): Promise<Translati
   // Raw FI status: published does not override the public recipe quarantine.
   for (const translation of publishedTranslations) {
     assertTranslationSourceIsNotQuarantined(translation.data.recipe_id);
+    assertF25SourceReleaseAuthorized(translation.data.recipe_id);
   }
   // Compare the coconut-rice preparation metadata to its SHA-pinned public FI
   // version without ever changing the GK80-sealed raw source used by SHA review.

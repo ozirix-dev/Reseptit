@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "purpose": "F25: remaining 15 source-level approvals. Initial state is HOLD. A published FI raw status is not publication authorization for EN/SV/TH.",
+  "originalScopeMain": "36f2d6874ed1c659ebe4d03a4e036d78432a04e0",
+  "publishedF25PairsAtCreation": 30,
+  "sources": [
+    {
+      "recipe_id": "rahka-marjakerroskulho",
+      "source_path": "reseptit/aamupalat/rahka-marjakerroskulho.md",
+      "baseline_git_blob_sha": "af3a8debe0a46b920ed0464545732bd2900485b8",
+      "source_risk": "HOLD-PRODUCT-MACROS",
+      "nutrition_input_at_baseline": "missing",
+      "public_quarantine_at_baseline": false,
+      "approval": null
+    },
+    {
+      "recipe_id": "intialainen-pinaatti-paneer-chilla",
+      "source_path": "reseptit/aamupalat/intialainen-pinaatti-paneer-chilla.md",
+      "baseline_git_blob_sha": "7c890fba7728a3eb5da20b57319ff67870e28252",
+      "source_risk": "HOLD-INPUT-AND-METHOD",
+      "nutrition_input_at_baseline": "missing",
+      "public_quarantine_at_baseline": false,
+      "approval": null
+    },
+    {
+      "recipe_id": "lahi-ita-zaatar-munat",
+      "source_path": "reseptit/aamupalat/lahi-ita-zaatar-munat.md",
+      "baseline_git_blob_sha": "cf0c02b2b1ecd1200557271c2bc574f2ad1c2c71",
+      "source_risk": "HOLD-OMISSION-BOUND",
+      "nutrition_input_at_baseline": "present-unapproved",
+      "public_quarantine_at_baseline": false,
+      "approval": null
+    },
+    {
+      "recipe_id": "japanilainen-hojicha-jogurtti-persimonilla",
+      "source_path": "reseptit/aamupalat/japanilainen-hojicha-jogurtti-persimonilla.md",
+      "baseline_git_blob_sha": "bba0051aba98ebf8ce1845a1df5bccc058394aba",
+      "source_risk": "HOLD-EDIBLE-TEA",
+      "nutrition_input_at_baseline": "present-unapproved",
+      "public_quarantine_at_baseline": false,
+      "approval": null
+    },
+    {
+      "recipe_id": "vietnamilainen-papaija-kookospuuro",
+      "source_path": "reseptit/aamupalat/vietnamilainen-papaija-kookospuuro.md",
+      "baseline_git_blob_sha": "ecae7e7e302d8564a171955ef8e9117f69a6fb7d",
+      "source_risk": "HOLD-PEARL-COOK-TIME",
+      "nutrition_input_at_baseline": "present-unapproved",
+      "public_quarantine_at_baseline": false,
+      "approval": null
+    },
+    {
+      "recipe_id": "vietnamilainen-banh-cuon-sienilla",
+      "source_path": "reseptit/aamupalat/vietnamilainen-banh-cuon-sienilla.md",
+      "baseline_git_blob_sha": "fa1d7e18602b14acfa397e4df5fa6747d8410b73",
+      "source_risk": "HOLD-STEAM-AND-PORK",
+      "nutrition_input_at_baseline": "present-unapproved",
+      "public_quarantine_at_baseline": false,
+      "approval": null
+    },
+    {
+      "recipe_id": "vietnamilainen-banh-xeo-aamiaisletut",
+      "source_path": "reseptit/aamupalat/vietnamilainen-banh-xeo-aamiaisletut.md",
+      "baseline_git_blob_sha": "cb442ad22c02b9a894861dd7cdc740dd5b0417ef",
+      "source_risk": "HOLD-UNLISTED-TURMERIC",
+      "nutrition_input_at_baseline": "present-unapproved",
+      "public_quarantine_at_baseline": false,
+      "approval": null
+    },
+    {
+      "recipe_id": "pohjoisafrikkalainen-baghrir",
+      "source_path": "reseptit/aamupalat/pohjoisafrikkalainen-baghrir.md",
+      "baseline_git_blob_sha": "24722209acc0b5ca0eb45719248297b6c2a58f3a",
+      "source_risk": "HOLD-BATTER-AND-NAME",
+      "nutrition_input_at_baseline": "present-unapproved",
+      "public_quarantine_at_baseline": false,
+      "approval": null
+    },
+    {
+      "recipe_id": "meksikolainen-chilaquiles-verdes",
+      "source_path": "reseptit/aamupalat/meksikolainen-chilaquiles-verdes.md",
+      "baseline_git_blob_sha": "71abfa953914a080e2f180961864ba3dd3e3d35d",
+      "source_risk": "HOLD-NUTRITION",
+      "nutrition_input_at_baseline": "missing",
+      "public_quarantine_at_baseline": false,
+      "approval": null
+    },
+    {
+      "recipe_id": "meksikolainen-paputostada-aamupalaksi",
+      "source_path": "reseptit/aamupalat/meksikolainen-paputostada-aamupalaksi.md",
+      "baseline_git_blob_sha": "e73d88c563f14a5ebbb33803206b9739fcbcea34",
+      "source_risk": "HOLD-NUTRITION-AND-MASS",
+      "nutrition_input_at_baseline": "missing",
+      "public_quarantine_at_baseline": false,
+      "approval": null
+    },
+    {
+      "recipe_id": "korealainen-kimchi-jeon-aamiaiseksi",
+      "source_path": "reseptit/aamupalat/korealainen-kimchi-jeon-aamiaiseksi.md",
+      "baseline_git_blob_sha": "ed74bb3ddab0757a69402da47209b7bac0d51e9e",
+      "source_risk": "HOLD-WATER-AND-NUTRITION",
+      "nutrition_input_at_baseline": "missing",
+      "public_quarantine_at_baseline": false,
+      "approval": null
+    },
+    {
+      "recipe_id": "karibia-plantain-aamiaislautanen",
+      "source_path": "reseptit/aamupalat/karibia-plantain-aamiaislautanen.md",
+      "baseline_git_blob_sha": "afb4242ce40db1e8eefb2dc654069008a403e41c",
+      "source_risk": "HOLD-EDIBLE-WEIGHTS",
+      "nutrition_input_at_baseline": "missing",
+      "public_quarantine_at_baseline": false,
+      "approval": null
+    },
+    {
+      "recipe_id": "munakoiso-kesakurpitsalasagne",
+      "source_path": "reseptit/paaruoat/munakoiso-kesakurpitsalasagne.md",
+      "baseline_git_blob_sha": "42167f96e8f448383e5db66dba57274bd235b87f",
+      "source_risk": "HOLD-ALTERNATIVE-PASTA",
+      "nutrition_input_at_baseline": "missing",
+      "public_quarantine_at_baseline": false,
+      "approval": null
+    },
+    {
+      "recipe_id": "pohjoisafrikkalainen-maakouda",
+      "source_path": "reseptit/aamupalat/pohjoisafrikkalainen-maakouda.md",
+      "baseline_git_blob_sha": "34574856132b429713948701c718b25dcd12776d",
+      "source_risk": "QUARANTINE-HOLD",
+      "nutrition_input_at_baseline": "missing",
+      "public_quarantine_at_baseline": true,
+      "approval": null
+    },
+    {
+      "recipe_id": "indonesialainen-nasi-goreng-aamiaisriisi",
+      "source_path": "reseptit/aamupalat/indonesialainen-nasi-goreng-aamiaisriisi.md",
+      "baseline_git_blob_sha": "731c7babbe7aa94c4e931a8224cec81bfe75b9fb",
+      "source_risk": "QUARANTINE-HOLD",
+      "nutrition_input_at_baseline": "missing",
+      "public_quarantine_at_baseline": true,
+      "approval": null
+    }
+  ]
+}
