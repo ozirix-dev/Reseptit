@@ -61,7 +61,11 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 
 ## Valmistus
 
-1. Valmistele ainekset: paloittele kasvikset ja kypsennä pavut tai liha tarvittaessa erikseen. Kuumenna öljy pannulla.
-2. Lisää pannulle pisimpään kypsyvät ainekset ja kypsennä pehmeiksi. Lisää mausteet ja tilkka vettä, jos pannu uhkaa kuivua.
-3. Lisää lopuksi nopeasti kypsyvät ainekset, kuten muna tai lehtivihannekset. Kypsennä juuri valmiiksi ja maista suola.
-4. Murskaa lämpimät pavut kevyesti ja mausta sitruunalla, juustokuminalla ja oliiviöljyllä.
+1. Käytä 150 g valmiiksi kypsiä ja valutettuja härkäpapuja. Huuhtele ne tarvittaessa ja siirrä pieneen kattilaan. Kuivia härkäpapuja ei voi kypsentää tämän reseptin 25 minuutin kokonaisajassa.
+2. Kuumenna pavut miedolla lämmöllä pienessä tilkassa vettä vain sen verran, etteivät ne tartu pohjaan. Lisää 1 tl juustokuminaa ja sekoita. Murskaa osa kuumista pavuista haarukalla, mutta jätä loput ehjiksi.
+3. Lisää koko ainesluettelon 1 rkl neutraalia paistoöljyä ja 30 g sitruunamehua. Sekoita tasaiseksi. Hienonna 2 rkl persiljaa ja lisää se joukkoon; suolaa vain tarvittaessa.
+4. Jaa lämmin papuseos kahteen annokseen ja tarjoa heti. Tähän punnittuun annokseen ei lisätä kananmuna-, tomaatti- tai leipälisuketta eikä oliiviöljyä neutraalin öljyn lisäksi.
+
+## Muistiinpanot
+
+Tässä versiossa käytetään valmiiksi kypsennettyjä papuja. Jos käytetään kuivaa raaka-ainetta, ruokalajin aika ja ravintolaskennan syötemassa on tehtävä uudelleen. Valmistusohjeen oikaisu ei ole GI/GK-hyväksyntä.
