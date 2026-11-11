@@ -37,7 +37,7 @@ const classicCategory: Record<string, string> = {
 // Every edit to ingredients, instructions or figures requires a new pinned blob.
 const reviewedGlutenFreeTwoDrafts = new Map<string, string>([
   ["reseptit/leivonnaiset/gluteeniton-siemenvuokaleipa.md", "17301a9d40f137af9bb5cc7ab5992f16551f21a9"],
-  ["reseptit/leivonnaiset/gluteenittomat-kauralesesampylat.md", "7fab256c606fc26d9ca05b1daf50421f45164c06"],
+  ["reseptit/leivonnaiset/gluteenittomat-kauralesesampylat.md", "cf922324ca22c2c66cfb75047407d6fdafc63bc2"],
 ]);
 
 const approvedGlutenFreeFiFiles = new Map<string, string>([

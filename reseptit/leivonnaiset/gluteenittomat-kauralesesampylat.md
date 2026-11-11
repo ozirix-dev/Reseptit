@@ -50,7 +50,7 @@ Ainekset ja niiden määrät on kirjattu reseptin rakenteisiin tietoihin. Peruna
 1. Mittaa noin 42-asteinen vesi suureen kulhoon. Ripottele psyllium pinnalle, sekoita kunnolla ja anna nesteen sakeutua 5–10 minuuttia.
 2. Lisää siirappi, suola ja gluteeniton kauralese. Sekoita kuivahiiva noin yhteen desilitraan gluteenitonta jauhoseosta ja lisää se kulhoon.
 3. Lisää perunakuitu ja loput tummasta jauhoseoksesta. Sekoita tasaiseksi ja lisää öljy viimeisenä. Taikina jää pehmeäksi ja muotoiltavaksi lusikalla.
-4. Peitä pelti leivinpaperilla. Jaa taikina 16 nokareeksi ja muotoile kostealla kädellä pyöreiksi sämpylöiksi. Ripottele annosteltu ruokalusikallinen gluteenittomia kaurahiutaleita sämpylöiden pinnalle. Älä käytä tavallista vehnäjauhoa työpinnalla.
+4. Peitä pelti leivinpaperilla. Jaa taikina 16 nokareeksi ja muotoile kostealla kädellä pyöreiksi sämpylöiksi. Ripottele ainesosaluettelon 5 g gluteenittomia kaurahiutaleita tasaisesti kaikkien sämpylöiden pinnalle. Älä käytä tavallista vehnäjauhoa työpinnalla.
 5. Kohota vedottomassa paikassa noin 15–20 minuuttia. Kuumenna uuni 225 asteeseen.
 6. Paista uunin keskitasolla 15–20 minuuttia, kunnes sämpylät ovat pinnalta ruskeita ja tuntuvat kypsiltä. Anna jäähtyä ritilällä ennen halkaisemista.
 
