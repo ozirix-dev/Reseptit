@@ -19,11 +19,11 @@ image:
   width: 1500
   height: 1000
 ingredients:
-  - {amount: 600, unit: g, item: vettä, note: kädenlämpöistä, noin 6 dl}
+  - {amount: 600, unit: g, item: vettä, note: "kädenlämpöistä, noin 6 dl"}
   - {amount: 8, unit: g, item: gluteenittomaksi merkittyä FiberHusk-psylliumkuorijauhetta, note: aiemmin noin 1 rkl}
   - {amount: 20, unit: g, item: pellavansiemeniä, note: noin 2 rkl}
   - {amount: 27, unit: g, item: auringonkukansiemeniä, note: noin 3 rkl; varaa pieni määrä pinnalle}
-  - {amount: 8, unit: g, item: suolaa, note: noin 1,5 tl}
+  - {amount: 8, unit: g, item: suolaa, note: "noin 1,5 tl"}
   - {amount: 70, unit: g, item: Myllärin gluteenittomia kaurahiutaleita, note: oma punnittava määrä}
   - {amount: 11, unit: g, item: Sunnuntai-kuivahiivaa, note: 1 pussi; tarkista pakkauksen gluteenittomuus}
   - {amount: 210, unit: g, item: Pirkka vaaleaa gluteenitonta jauhoseosta, note: "EAN 6410405221858; oma punnittava määrä"}

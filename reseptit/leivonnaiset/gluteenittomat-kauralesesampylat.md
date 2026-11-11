@@ -25,9 +25,9 @@ ingredients:
   - {amount: 21, unit: g, item: siirappia, note: noin 1 rkl}
   - {amount: 5, unit: g, item: suolaa, note: noin 1 tl}
   - {amount: 100, unit: g, item: Myllärin gluteenitonta kauralesettä, note: oma punnittava reseptimäärä; aiemmin 2 dl}
-  - {amount: 43, unit: g, item: gluteenitonta Schär Pofiber -perunakuitua, note: ei perunajauhoa; vastaa likimain vanhaa 2,5 dl:n mallimäärää}
+  - {amount: 43, unit: g, item: gluteenitonta Schär Pofiber -perunakuitua, note: "ei perunajauhoa; vastaa likimain vanhaa 2,5 dl:n mallimäärää"}
   - {amount: 120, unit: g, item: Pirkka tummaa gluteenitonta jauhoseosta, note: "EAN 6410405221872; oma punnittava määrä"}
-  - {amount: 45, unit: g, item: rypsiöljyä, note: noin 0,5 dl}
+  - {amount: 45, unit: g, item: rypsiöljyä, note: "noin 0,5 dl"}
   - {amount: 5, unit: g, item: Myllärin gluteenittomia kaurahiutaleita, note: pintaan ennen paistamista}
 carbs_net_per_serving_g: 10.14
 carbs_total_per_serving_g: null
