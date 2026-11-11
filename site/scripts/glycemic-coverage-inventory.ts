@@ -17,6 +17,7 @@ type PilotReport = JsonRecord & {
   calculationEvidenceHashes: Record<string, string>;
   calculationInputs: GlycemicLoadRecipeInput[];
   autoIncludedRecipeIds: string[];
+  newPublicGkPendingSources?: Array<{recipeId: string; status: "INSUFFICIENT SOURCE DATA"; glycemicLoadPerServing: null; sourceBlobSha: string}>;
 };
 type NutritionReport = JsonRecord & {
   counts: Record<string, number>;
@@ -67,7 +68,21 @@ const [pilot, nutrition, inputs, giCatalog, historical, reviewStart] = await Pro
   readJson<HistoricalInventory>("docs/nutrition/glycemic-coverage-inventory-2026-10-25.json"),
   readJson<ReviewStartSnapshot>("docs/nutrition/glycemic-coverage-batch-2a-review-start.json"),
 ]);
-const nutritionRecipeIds = nutrition.inventory.map((row) => row.recipe_id);
+const separatelyPending = pilot.newPublicGkPendingSources ?? [];
+const pendingIds = new Set(separatelyPending.map((row) => row.recipeId));
+if (pendingIds.size !== separatelyPending.length || pendingIds.size !== 3 ||
+    separatelyPending.some((row) => row.status !== "INSUFFICIENT SOURCE DATA" || row.glycemicLoadPerServing !== null ||
+      !/^[a-f0-9]{40}$/.test(row.sourceBlobSha))) {
+  throw new Error("Separate new-public GK pending sources need three distinct, SHA-pinned NULL cases.");
+}
+const pendingNutritionRows = nutrition.inventory.filter((row) => pendingIds.has(row.recipe_id));
+if (pendingNutritionRows.length !== pendingIds.size || pendingNutritionRows.some((row) => row.status !== "ESTIMATE WITH EVIDENCE")) {
+  throw new Error("New-public GK pending records disagree with real published nutrition sources.");
+}
+// Historical GK inputs and results remain exact; the three genuinely public
+// new recipes are recorded separately as withheld GK, never omitted silently.
+const legacyNutritionRows = nutrition.inventory.filter((row) => !pendingIds.has(row.recipe_id));
+const nutritionRecipeIds = legacyNutritionRows.map((row) => row.recipe_id);
 const rawInputIds = inputs.recipes.map((recipe) => recipe.recipeId);
 const calculationInputs = pilot.calculationInputs;
 const calculationInputIds = calculationInputs.map((recipe) => recipe.recipeId);
@@ -101,8 +116,8 @@ if (pilot.summary.recipes !== pilot.results.length
 }
 const sourceCommit = execFileSync("git", ["rev-parse", "HEAD"], { cwd: root, encoding: "utf8" }).trim();
 const calculationInputHashes = Object.fromEntries(calculationInputs.map((recipe) => [recipe.recipeId, glycemicLoadInputHash(recipe)]));
-const nutritionStatuses = Object.fromEntries(nutrition.inventory.map((row) => [row.recipe_id, row.status]));
-const currentRecipeStructures = Object.fromEntries(await Promise.all(nutrition.inventory.map(async (row) => {
+const nutritionStatuses = Object.fromEntries(legacyNutritionRows.map((row) => [row.recipe_id, row.status]));
+const currentRecipeStructures = Object.fromEntries(await Promise.all(legacyNutritionRows.map(async (row) => {
   const source = await readFile(path.join(root, row.source_path), "utf8");
   const parsed = parseMarkdown(source);
   if (!parsed) throw new Error(`Recipe has no frontmatter: ${row.recipe_id}`);
@@ -458,6 +473,12 @@ const inventory = buildCurrentCoverageInventory({
 });
 
 const summary = inventory.currentSummary;
+const allPublishedSummary = {
+  recipeCount: summary.recipeCount + separatelyPending.length,
+  calculated: summary.calculated,
+  incomplete: summary.incomplete + separatelyPending.length,
+  explicitNewPublicGkPending: separatelyPending.length,
+};
 // Parent-version inventory remains intact; independent GK-only versions have their own coverage.
 const versionCoverage = pilot.versionCoverage;
 const newlyAddedRecipeIds = inventory.recipes.filter((row) => row.newlyAdded).map((row) => row.recipeId);
@@ -470,7 +491,10 @@ const reportLines = [
     ? ["", "Erän 2A lähtösnapshot on historiallinen vertailupohja, ei tämän ajon nykytila. Ajantasainen laskentatila ja nykyiset GK-luvut esitetään alla."]
     : []),
   "",
-  `Nykyinen ajo kattaa ${summary.recipeCount} reseptiä: ${summary.calculated} laskettua, ${summary.incomplete} keskeneräistä. GI-katalogissa on ${summary.giRecordCount} tietuetta (${Object.entries(summary.giTierCounts).map(([tier, count]) => `${count} ${tier}`).join(", ")}).`,
+  `Julkisia FI-reseptejä yhteensä ${allPublishedSummary.recipeCount}: ${allPublishedSummary.calculated} hyväksyttyä GK-tulosta ja ${allPublishedSummary.incomplete} GK:n osalta keskeneräistä. Näistä ${separatelyPending.length} uutta FI-reseptiä seurataan erillisessä SHA-lukitussa GK-HOLD-julkaisujonossa.`,
+  ...(separatelyPending.length ? ["", "Uudet julkaistut reseptit, joilla GK puuttuu: "+separatelyPending.map(row=>row.recipeId).join(", ") + ". Niille ei ole GI-sidosta eikä julkaistavaa GK=0-arvoa."] : []),
+  "",
+  `Historiallinen GK-laskenta kattaa ${summary.recipeCount} reseptiä: ${summary.calculated} laskettua, ${summary.incomplete} keskeneräistä. GI-katalogissa on ${summary.giRecordCount} tietuetta (${Object.entries(summary.giTierCounts).map(([tier, count]) => `${count} ${tier}`).join(", ")}).`,
   ...(newlyAddedRecipeIds.length === 0
     ? []
     : ["", newlyAddedRecipeIds.length === 1
@@ -522,6 +546,6 @@ const reportLines = [
   "- Eräkohtainen vertailusnapshot käyttää sille nimettyä 325 reseptin lähtötilaa; historiallisia erä 1:n ja erän 2A tiedostoja ei korvata.",
   "",
 ];
-await writeFile(currentOutputPath, `${JSON.stringify({...inventory,versionCoverage}, null, 2)}\n`, "utf8");
+await writeFile(currentOutputPath, `${JSON.stringify({...inventory,versionCoverage,allPublishedSummary,newPublicGkPendingSources:separatelyPending}, null, 2)}\n`, "utf8");
 await writeFile(markdownOutputPath, `${reportLines.join("\n").trimEnd()}\n`, "utf8");
 console.log(JSON.stringify({ sourceCommit, ...summary, historicalStructuralBindingCount: structural.rows.length, withOtherBlockersAtReviewStart: structural.withOtherBlockersAtReviewStart, potentiallyResolvableByBindingOnlyAtReviewStart: structural.potentiallyResolvableByBindingOnlyAtReviewStart, output: currentOutputPath, markdown: markdownOutputPath }, null, 2));
