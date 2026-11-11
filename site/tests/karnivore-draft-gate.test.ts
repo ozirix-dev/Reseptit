@@ -26,7 +26,7 @@ test("unreviewed recipe ID is blocked", () => {
   assert.throws(() => assertKarnivoreDraftSafe(candidate, prep), /Unreviewed karnivore recipe ID/);
 });
 test("published status cannot bypass the nutrition and image gate", () => {
-  const held = sample("karnivore-meatza");
+  const held = sample("karnivore-maksa-ja-pekoni");
   held.status = "published";
   assert.throws(() => assertKarnivoreDraftSafe(held, prep), /publication blocked/);
 

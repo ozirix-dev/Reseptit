@@ -5,10 +5,11 @@ import path from "node:path";
 import { test } from "node:test";
 import { parseMarkdown } from "../src/content/markdown";
 import { recipeFrontmatterSchema } from "../src/content/schema";
+import { verifyNutritionEvidence } from "../scripts/nutrition-evidence";
 
 type PublishedReview = { recipeId: string; releasePr: number; sourceBlobSha: string; state: string; gkStatus: string };
 
-test("five newly illustrated karnivore FI drafts stay source-pinned and nutrition HOLD", async () => {
+test("five original drafts stay pinned and separate FI releases need their own evidence", async () => {
   const root = path.resolve(import.meta.dirname, "../..");
   const audit = JSON.parse(await readFile(path.join(root, "docs/reviews/karnivore-fi5-publication-triage-2026-11-11.json"), "utf8")) as {
     publicationAuthorized: boolean;
@@ -62,6 +63,22 @@ test("five newly illustrated karnivore FI drafts stay source-pinned and nutritio
       assert.deepEqual([published.image?.width,published.image?.height],[1280,853]);
       assert.deepEqual([published.protein_per_serving_g,published.fat_per_serving_g,published.carbs_net_per_serving_g],
         [45.01,55,0]);
+    } else if (row.recipeId === "karnivore-meatza") {
+      const publicBytes = await readFile(path.join(root, "reseptit/paaruoat", row.recipeId + ".md"));
+      const publicHash = createHash("sha1").update("blob " + publicBytes.byteLength + "\0").update(publicBytes).digest("hex");
+      assert.equal(publicHash, "c5b3a778b25e79912c2ac657fc832ad0040d6088");
+      const publicSource = publicBytes.toString("utf8");
+      const parsedPublic = parseMarkdown(publicSource);
+      assert(parsedPublic);
+      const published = recipeFrontmatterSchema.parse(parsedPublic.data);
+      assert.equal(published.status, "published");
+      assert.equal(published.image?.src, "paaruoat/karnivore-meatza.webp");
+      assert.match(publicSource, /Jaa kaikki talteen otettu paistorasva ja paistoneste/);
+      assert.match(publicSource, /GK: ei määritetty\./);
+      const evidence = JSON.parse(await readFile(path.join(root, "docs/nutrition/calculations/karnivore-meatza.json"), "utf8"));
+      const result = verifyNutritionEvidence(published, evidence);
+      assert.equal(result.status, "ESTIMATE WITH EVIDENCE", result.errors.join("\n"));
+      assert.equal(result.calculated?.perServing.kcal, 571.83);
     } else {
       await assert.rejects(access(path.join(root,"reseptit/paaruoat",row.recipeId+".md")),
         (error: unknown) => (error as NodeJS.ErrnoException).code === "ENOENT",
