@@ -3,15 +3,15 @@ import { readFile } from "node:fs/promises";
 import path from "node:path";
 import test from "node:test";
 import { publicRecipeQuarantineIds, isPublicRecipeQuarantined } from "../scripts/public-recipe-quarantine";
-import { projectSafeWontonFiDisplay } from "../scripts/wonton-fi-public-display";
 import { material21FiPaths, projectMaterial21FiDisplay } from "../scripts/material21-fi-public-display";
 import { material21MethodPaths, projectMaterial21MethodsFi } from "../scripts/material21-methods-public-display";
 import { c13PublicFiPaths, projectC13FiDisplay } from "../scripts/c13-fi-public-display";
 import { c13CanonicalHistoryPaths } from "./c13-canonical-historical-transition";
+import { reviewedThreeCanonicalPaths } from "./issue404-three-canonical-history";
 import { parseMarkdown } from "../src/content/markdown";
 import { siteContent } from "../src/generated/content.generated";
 
-/** Issue #404: 21 quarantine + 10 source-sealed FI overlays + 7 canonical FI method migrations.
+/** Issue #404: 21 quarantine + 8 source-sealed FI overlays + 9 canonical FI method migrations.
  * This is NOT an approval of underlying nutrition, GK, translations or safety.
  * Update the inventory only alongside an audited release decision. */
 const issue404 = [
@@ -60,13 +60,13 @@ const displayCorrections = [
   ...material21FiPaths.map(relative => ({ relative, apply: projectMaterial21FiDisplay })),
   ...material21MethodPaths.map(relative => ({ relative, apply: projectMaterial21MethodsFi })),
   ...c13PublicFiPaths.map(relative => ({ relative, apply: projectC13FiDisplay })),
-  { relative: "reseptit/aamupalat/kiinalainen-katkarapu-wontonkeitto.md", apply: projectSafeWontonFiDisplay },
 ];
 const recipeId = (relative: string) => path.basename(relative, ".md");
 const canonicalMethodOnly = [
   "indonesialainen-bakwan-maissifritter",
   "meksikolainen-huevos-divorciados",
   ...c13CanonicalHistoryPaths.map(p => recipeId(p)),
+  ...reviewedThreeCanonicalPaths.map(p => recipeId(p)),
 ] as const;
 const sorted = (values: readonly string[]) => [...values].sort();
 
@@ -75,8 +75,8 @@ test("issue #404 all 38 are either quarantined or protected by a source-sealed F
   const corrected = displayCorrections.map(item => recipeId(item.relative));
   assert.equal(new Set(issue404).size, 38, "audit inventory must contain 38 distinct IDs");
   assert.equal(quarantined.length, 21, "unexpected change to quarantine: review release decision");
-  assert.equal(corrected.length, 10, "unexpected change to display corrections: review migration");
-  assert.equal(canonicalMethodOnly.length, 7);
+  assert.equal(corrected.length, 8, "unexpected change to display corrections: review migration");
+  assert.equal(canonicalMethodOnly.length, 9);
   assert.equal(new Set(quarantined).size, quarantined.length, "duplicate quarantine");
   assert.equal(new Set(corrected).size, corrected.length, "duplicate display correction");
   assert.equal(new Set([...quarantined, ...corrected, ...canonicalMethodOnly]).size, 38, "quarantine and correction overlap");

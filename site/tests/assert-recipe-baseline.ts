@@ -2,6 +2,7 @@ import {mainAdditionFiles, postBaselineBriocheIds, postBaselineClassicIds} from 
 import assert from "node:assert/strict";
 import { originalForB21CanonicalHistory } from "./b21-canonical-historical-transition";
 import { originalForC13CanonicalHistory } from "./c13-canonical-historical-transition";
+import { originalForThreeCanonicalHistory } from "./issue404-three-canonical-history";
 import { execFileSync } from "node:child_process";
 import { readFileSync } from "node:fs";
 import path from "node:path";
@@ -159,9 +160,9 @@ export function assertRecipeBaseline(root: string, baseline: string, ...protecte
     }
     if (status === "M" && (file.startsWith("reseptit/") || file.startsWith("kaannokset/"))) {
       const current = readFileSync(path.join(root, file), "utf8").replaceAll("\r\n", "\n");
-      const snapshot = originalForC13CanonicalHistory(root, file, originalForB21CanonicalHistory(root, file, originalForReviewedChefSafety(root, file, originalForChefHistoricalCheck(root, file,
+      const snapshot = originalForThreeCanonicalHistory(root, file, originalForC13CanonicalHistory(root, file, originalForB21CanonicalHistory(root, file, originalForReviewedChefSafety(root, file, originalForChefHistoricalCheck(root, file,
         recipeTextForApprovedSnapshot(file,
-          historicalRendangForApprovedVersion(file, historicalFarinataForApprovedPanVersion(file, current)))))));
+          historicalRendangForApprovedVersion(file, historicalFarinataForApprovedPanVersion(file, current))))))));
       if (snapshot !== current) {
         const original = execFileSync("git", ["show", baseline + ":" + file], { cwd: root, encoding: "utf8" });
         assert.equal(snapshot, original, change);

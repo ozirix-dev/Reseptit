@@ -7,6 +7,7 @@ import { parseMarkdown } from "../src/content/markdown";
 import { editorialHoldRecipeIds, publicRecipeQualityHold } from "../scripts/recipe-quality-holds";
 import { isPublicRecipeQuarantined } from "../scripts/public-recipe-quarantine";
 import { projectSafeWontonFiDisplay } from "../scripts/wonton-fi-public-display";
+import { originalForThreeCanonicalHistory } from "./issue404-three-canonical-history";
 
 const originals = {
   "intialainen-idli-kookoschutneylla": "reseptit/aamupalat/intialainen-idli-kookoschutneylla.md",
@@ -86,19 +87,16 @@ test("corrected shrimp wonton is published without an unfinished-recipe hold", a
   assert.equal(recipe.nutrition.carbsTotalG, null);
 });
 
-test("public wonton correction is exact-source-bound; original nutrition identity stays unchanged", async () => {
+test("canonical wonton correction retains reviewed source and original GK history", async () => {
   const file = "reseptit/aamupalat/kiinalainen-katkarapu-wontonkeitto.md";
-  const raw = await readFile(path.resolve(import.meta.dirname, "../../", file), "utf8");
-  const projected = projectSafeWontonFiDisplay(file, raw);
-  assert.notEqual(projected, raw);
-  const before = parseMarkdown(raw), after = parseMarkdown(projected);
+  const root = path.resolve(import.meta.dirname, "../..");
+  const raw = await readFile(path.join(root, file), "utf8");
+  assert.equal(projectSafeWontonFiDisplay(file, raw), raw);
+  const historical = originalForThreeCanonicalHistory(root,file,raw);
+  const before = parseMarkdown(historical), after = parseMarkdown(raw);
   assert.ok(before && after);
-  assert.deepEqual(after.data.ingredients, before.data.ingredients);
-  assert.equal(after.data.status, before.data.status);
-  assert.equal(after.data.servings, before.data.servings);
-  for (const key of ["carbs_net_per_serving_g", "carbs_total_per_serving_g", "protein_per_serving_g", "fat_per_serving_g"]) {
-    assert.equal(after.data[key], before.data[key], key);
-  }
+  assert.deepEqual(after.data, before.data);
   assert.match(after.content, /kauttaaltaan helmiäisenvaaleita/);
-  assert.throws(() => projectSafeWontonFiDisplay(file, raw.replace("700", "701")), /WONTON_FI_SOURCE_STALE/);
+  assert.throws(() => originalForThreeCanonicalHistory(root,file,raw.replace("700", "701")),
+    /unreviewed canonical source mutation/);
 });
