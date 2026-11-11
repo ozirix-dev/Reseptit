@@ -31,3 +31,22 @@ Lähteet:
 - Gluteeniton kakkupohja (oma ohje, ei vehnäisen sienikakun uudelleennimeäminen)
 
 Tämä on ainoastaan idea- ja tarkistusjono. Resepteihin käytetään ensisijaisesti Keliakialiiton alkuperäisiä valmistusohjeita, valmistajien tuotetietoja ja muuta riippumatonta näyttöä. Ulkoisten tekijöiden alkuperäisiä kuvia ja ohjetekstejä ei kopioida.
+
+## Koneellinen katselmointilukko
+
+Lisäksi julkaistavan `gluten_free: true` -reseptin lähdemuistio pitää tallentaa polkuun `docs/reviews/gluteeniton/<recipe_id>.md`. Reseptin frontmatterissa on kenttä `gluten_free_review`, joka sitoo muistion katselmoijaan ja tarkistuspäivään.
+
+Muistion tarkistettavat rivit ovat:
+
+```text
+recipe_id: gluteeniton-esimerkki
+language: fi
+reviewed_at: 2026-11-11
+reviewer: Toimitus
+source_sha256: <SHA-256 alkuperäisestä reseptitiedostosta>
+decision: approved
+ingredient_checks: complete
+cross_contact: reviewed
+```
+
+Build tarkistaa, että tiedosto on olemassa, että siinä on juuri oikea reseptitunniste, kieli, katselmointiaika ja katselmoija, sekä että alkuperäisen reseptitiedoston SHA-256 vastaa muistion tarkistetta. Muutos ainesosiin, ohjeeseen tai muistiinpanoihin mitätöi hyväksynnän, kunnes lähde katselmoidaan uudelleen. Käännöksillä on oma kielikohtainen muistionsa. Pelkkä muistio ei osoita elintarvikkeen gluteenittomuutta laboratoriossa; tuotepakkaukset ja valmistusympäristö pitää edelleen tarkistaa.

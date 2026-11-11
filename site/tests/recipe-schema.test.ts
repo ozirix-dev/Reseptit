@@ -3,6 +3,7 @@ import test from "node:test";
 import { parseMarkdown } from "../src/content/markdown";
 import { assertQuantifiedCriticalIngredients, assertUniqueRecipes, assertSnackPublicationReady, snackPublicationErrors } from "../src/content/recipe-validation";
 import { recipeFrontmatterSchema } from "../src/content/schema";
+import { assertGlutenFreeReviewRecord } from "../scripts/gluten-free-review";
 import { siteContent } from "../src/generated/content.generated";
 import { recipeJsonLd } from "../src/features/recipes/schema";
 
@@ -161,4 +162,18 @@ test("gluten-free metadata fails closed without dated recipe-level evidence", ()
   assert.equal(recipeFrontmatterSchema.safeParse({ ...base, gluten_free: true, gluten_free_review: review }).success, true);
   assert.equal(recipeFrontmatterSchema.safeParse({ ...base, gluten_free: true, gluten_free_review: { ...review, evidence_ref: "../other.md" } }).success, false);
   assert.equal(recipeFrontmatterSchema.safeParse({ ...base, gluten_free_review: review }).success, false);
+});
+
+test("gluten-free source-evidence binding refuses missing, stale and incomplete approvals", () => {
+  const bind = { recipeId: "gf-demo", language: "fi" as const, reviewedAt: "2026-11-11", reviewer: "Toimitus", sourceSha256: "a".repeat(64) };
+  const evidence = [
+    "recipe_id: gf-demo", "language: fi", "reviewed_at: 2026-11-11",
+    "reviewer: Toimitus", `source_sha256: ${"a".repeat(64)}`,
+    "decision: approved", "ingredient_checks: complete", "cross_contact: reviewed",
+  ].join("\n");
+  assert.doesNotThrow(() => assertGlutenFreeReviewRecord(bind, evidence));
+  assert.throws(() => assertGlutenFreeReviewRecord({ ...bind, sourceSha256: "b".repeat(64) }, evidence), /GLUTEN_FREE_REVIEW_MISMATCH/);
+  assert.throws(() => assertGlutenFreeReviewRecord(bind, evidence.replace("decision: approved", "decision: hold")), /GLUTEN_FREE_REVIEW_MISMATCH/);
+  assert.throws(() => assertGlutenFreeReviewRecord(bind, evidence.replace("cross_contact: reviewed", "")), /GLUTEN_FREE_REVIEW_MISMATCH/);
+  assert.throws(() => assertGlutenFreeReviewRecord(bind, ""), /GLUTEN_FREE_REVIEW_MISMATCH/);
 });

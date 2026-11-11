@@ -19,6 +19,7 @@ import path from "node:path";
 import { parseMarkdown, renderSafeMarkdown, renderInstructionSteps } from "../src/content/markdown";
 import { assertQuantifiedCriticalIngredients, assertUniqueRecipes, assertSnackPublicationReady } from "../src/content/recipe-validation";
 import { recipeFrontmatterSchema } from "../src/content/schema";
+import { assertGlutenFreeReviewRecord } from "./gluten-free-review";
 import { rebuildPublishedImages } from "../src/content/published-images";
 import type { RecipeEntry, RecipeLocale, SiteContentIndex } from "../src/types/content";
 
@@ -132,6 +133,17 @@ async function buildRecipes(): Promise<RecipeEntry[]> {
     if (isPublicRecipeQuarantined(String(parsed.data.recipe_id ?? ""))) continue;
     if (parsed.data.status !== "published") throw new Error(`Recipe status must be draft or published: ${filePath}`);
     const data = recipeFrontmatterSchema.parse(parsed.data);
+    if (data.gluten_free === true) {
+      const review = data.gluten_free_review!;
+      // A fabricated, missing or stale review record cannot turn a recipe into a gluten-free listing.
+      const reviewedText = await readFile(path.resolve(repoDir, review.evidence_ref), "utf8");
+      const originalText = await readFile(filePath);
+      const sourceSha256 = createHash("sha256").update(originalText).digest("hex");
+      assertGlutenFreeReviewRecord({
+        recipeId: data.recipe_id, language: data.language,
+        reviewedAt: review.reviewed_at, reviewer: review.reviewer, sourceSha256,
+      }, reviewedText);
+    }
     assertSnackPublicationReady(data);
     if (data.language === "fi") sourceFacets.set(data.recipe_id, recipeFacets(data.main_ingredient ?? [], data.tags));
     const imagePaths = data.image
