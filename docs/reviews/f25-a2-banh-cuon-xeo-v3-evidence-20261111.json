@@ -12,7 +12,7 @@
       "oldNutritionGitBlob": "969e6696fecc2c57873604ad9bd4545647668c26",
       "oldNutritionInputHash": "72add279fc7ed90cdb365397eea4399da7f7058fbc6b6e0d6500a012221a8bb7",
       "candidatePath": "docs/reviews/f25-a2-banh-cuon-v3-20261111.md",
-      "candidateGitBlob": "332b43705fc5c4f22dc89de8a8e0a88ddd9be316",
+      "candidateGitBlob": "1fc09bcec3493d0713aca57474a324c995bdd7c8",
       "timeEstimateMin": {
         "min": 60,
         "max": 75
@@ -75,18 +75,19 @@
           }
         },
         {
-          "item": "porsaan jauheliha, untrimmed raaka",
+          "item": "HK Viljaporsaan jauheliha 10 %",
           "amount": 150,
           "unit": "g",
-          "sourceRecord": "afcd-F007057-release-3",
           "basis": "100g",
           "macros": {
             "carbohydrate": 0,
-            "protein": 20.9,
-            "fat": 10.6,
+            "protein": 20,
+            "fat": 10,
             "fibre": 0,
             "polyols": 0
-          }
+          },
+          "ean": "6409100037192",
+          "source": "https://www.k-ruoka.fi/kauppa/tuote/hk-viljaporsaan-jauheliha-400g-10-6409100037192"
         },
         {
           "item": "Squid kalakastike",
@@ -135,12 +136,12 @@
         "RICE_FLOUR_POLYOLS",
         "FARINA_STARCH_POLYOLS",
         "FISH_SAUCE_POLYOLS",
-        "EXACT_PORK_FAT_PERCENT",
         "OIL_RETENTION",
         "PAN_RELEASE_METHOD",
         "GI_FOR_RICE_SHEET",
         "SEMANTIC_TRANSLATIONS",
-        "V3_IMAGE"
+        "V3_IMAGE",
+        "HK_PORK_PACK_LABEL_AND_EDIBLE_MASS_VERIFY"
       ],
       "physicalTrial": false,
       "nutritionApproved": false,
@@ -150,26 +151,55 @@
       "scenarios": {
         "oilRetained0": {
           "carbohydrate": 46.225,
-          "protein": 21.6,
-          "fat": 9.26,
+          "protein": 20.925,
+          "fat": 8.81,
           "fibre": 1.2,
           "polyols": null
         },
         "oilRetained50Percent": {
           "carbohydrate": 46.225,
-          "protein": 21.6,
-          "fat": 10.5087,
+          "protein": 20.925,
+          "fat": 10.0588,
           "fibre": 1.2,
           "polyols": null
         },
         "oilRetained100Percent": {
           "carbohydrate": 46.225,
-          "protein": 21.6,
-          "fat": 11.7575,
+          "protein": 20.925,
+          "fat": 11.3075,
           "fibre": 1.2,
           "polyols": null
         }
-      }
+      },
+      "porkProductAlternatives": [
+        {
+          "name": "HK Viljaporsaan jauheliha 10%",
+          "ean": "6409100037192",
+          "url": "https://www.k-ruoka.fi/kauppa/tuote/hk-viljaporsaan-jauheliha-400g-10-6409100037192",
+          "proteinPer100g": 20,
+          "fatPer100g": 10,
+          "carbohydratePer100g": 0,
+          "rawMassG": 150,
+          "proteinPerServingG": 20.925,
+          "fatPerServingGAtZeroOilRetention": 8.81,
+          "fatPerServingGAtFullOilRetention": 11.3075,
+          "selected": true
+        },
+        {
+          "name": "Pirkka suomalainen porsaan jauheliha 12%",
+          "ean": "6410405086532",
+          "url": "https://www.k-ruoka.fi/kauppa/tuote/pirkka-porsaa-jauheliha-12-400g-suom-tk-6410405086532",
+          "proteinPer100g": 19,
+          "fatPer100g": 12,
+          "carbohydratePer100g": 0,
+          "rawMassG": 150,
+          "proteinPerServingG": 20.175,
+          "fatPerServingGAtZeroOilRetention": 10.31,
+          "fatPerServingGAtFullOilRetention": 12.8075,
+          "selected": false
+        }
+      ],
+      "porkSourceDecision": "HK 10% selected for V3 review. Pirkka 12% is alternative only; no canonical release, fat label varies with product and oil retained mass still unmeasured."
     },
     {
       "recipeId": "vietnamilainen-banh-xeo-aamiaisletut",
