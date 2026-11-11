@@ -68,11 +68,7 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 
 ## Valmistus
 
-1. Mittaa 100 g riisihiutaleita, huuhtele nopeasti siivilässä kylmällä vedellä ja valuta huolellisesti. Hiutaleiden tulee pehmetä mutta pysyä irtonaisina; älä keitä niitä puuroksi.
-2. Kuumenna pannulla koko reseptin 1 rkl neutraalia öljyä. Lisää 20 g maapähkinöitä ja 3 g currylehtiä. Paahda sekoittaen varovasti niin, etteivät pähkinät pala. Lisää 50 g herneitä ja kuumenna ne kunnolla kypsiksi.
-3. Lisää valutetut riisihiutaleet pannulle ja kääntele varovasti maapähkinöiden ja herneiden kanssa. Kypsennä miedolla lämmöllä vain sen verran, että kaikki on kuumaa, ja lisää listan suolaa tarvittaessa.
-4. Ota pois liedeltä. Jaa kahteen annokseen ja viimeistele yhteensä 1 rkl silputtua tuoretta korianteria ja 1 rkl sitruunamehua. Älä lisää sipulia, sokeria tai muita listaamattomia aineksia.
-
-## Muistiinpanot
-
-Tämä on pelkistetty poha nykyisillä punnituilla raaka-aineilla. Huuhteluvesi valutetaan pois. Ravinto- ja GI/GK-lähteet tarvitsevat erillisen hyväksynnän; valmistusvaiheiden korjaus ei muuta historiallisia tuloksia.
+1. Raasta, muussaa tai hienonna pääraaka-aine. Sekoita joukkoon taikinan ainekset ja lisää vettä vain sen verran, että seos pysyy koossa.
+2. Kuumenna pannulla ohut kerros öljyä. Muotoile pieniksi pihveiksi tai lusikoi taikina pannulle.
+3. Paista keskilämmöllä molemmin puolin kypsäksi ja rapeapintaiseksi. Paista erissä, jotta pannu ei jäähdy.
+4. Huuhtele riisihiutaleet nopeasti ja valuta. Kuullota maapähkinät, herneet ja curry-lehdet öljyssä; lisää hiutaleet ja kypsennä sekoittaen. Viimeistele korianterilla ja sitruunamehulla.
