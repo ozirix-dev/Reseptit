@@ -71,8 +71,9 @@
         }
       ],
       "blockers": [
-        "Pan-based rice sheet variant not tested for release",
-        "Fish sauce product/density assumption 15g per tablespoon and labelled allergen need exact match"
+        "Cock tapioca pearls EAN 0084909007087 has 86 g carbohydrates per 100g vs AFCD baseline 79.3; delta +3.35 g per two-serving recipe serving, but total ingredient/product recomputation is pending",
+        "K-Ruoka product page does not provide verifiable fibre/polyols and asks to check the actual package; no approval of complete product label",
+        "200 ml coconut milk model uses 0.92 g/ml with generic AFCD composition, exact product unverified; technique and cooking time untested"
       ]
     },
     {
@@ -142,8 +143,9 @@
         }
       ],
       "blockers": [
-        "Pan-based rice sheet variant not tested for release",
-        "Fish sauce product/density assumption 15g per tablespoon and labelled allergen need exact match"
+        "Source Open Food Facts Squid product model has 3.4 g carbohydrate and 10g protein /100g; Finland retailer shows 3.0g carbohydrate and 11g protein /100g for EAN 8850620888203, and a Dutch market product sheet reports 17g protein /100g. Same brand is not exact product-label identity.",
+        "One tablespoon assumed 15 g in old model, but some regional packages list values per 100ml; density and package identity must be verified before swapping nutrition input.",
+        "Pan-based oil-free rice sheet method not tested for release, pork and fish-allergen handling must remain explicit."
       ]
     },
     {
@@ -299,5 +301,14 @@
       ]
     }
   ],
-  "decision": "0/4 release authorized; new FI source, recorded product matching, GK input hash and EN/SV/TH review required."
+  "decision": "0/4 release authorized; new FI source, recorded product matching, GK input hash and EN/SV/TH review required.",
+  "notes": {
+    "labelVerification": "Public retailer pages are research candidates only; actual package label remains source of truth",
+    "verifiedLinks": [
+      "https://www.k-ruoka.fi/kauppa/tuote/cock-tapioca-pearl-400g-0084909007087",
+      "https://www.aasiamarket.fi/en/product/fish-sauce-725ml-squid/",
+      "https://psinfoodservice.com/en/product/3896121-squid-fish-sauce-725ml/"
+    ],
+    "waterVersioning": "Zero macro contribution of added water is not a license to reuse old FI/GK/source identity, nor to imply measured prepared yield."
+  }
 }
