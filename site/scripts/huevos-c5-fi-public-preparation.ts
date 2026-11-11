@@ -28,7 +28,7 @@ export function projectHuevosFiPublicPreparation(relative: string, raw: string):
   assert.equal(blob,sourceBlob,"HUEVOS_C5_SOURCE_STALE");
   const start=lf.indexOf(heading), end=lf.indexOf(note,start+heading.length);
   assert(start>=0 && end>start && lf.indexOf(heading,start+1)<0,"HUEVOS_C5_METHOD_ANCHOR");
-  const visible = lf.slice(0,start) + method + lf.slice(end + note.length);
+  const visible = lf.slice(0,start) + method;
   assert(visible.includes("## Muistiinpanot"));
   return visible;
 }
