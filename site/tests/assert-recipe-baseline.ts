@@ -44,6 +44,10 @@ const approvedC5DraftBlobs = new Map<string, string>([
 // Exact blob-SHA pins admit only these original release artifacts to the historical
 // change inspector. They DO NOT alter any of the frozen GK result approvals.
 const approvedKarnivoreFi3Files = new Map<string, string>([
+  ["reseptit/paaruoat/karnivore-rapea-porsaan-kylki.md", "01c618a195d706a2ed092695806421b4ed9369fb"],
+  ["docs/nutrition/calculations/karnivore-rapea-porsaan-kylki.json", "df6be530c7f5f8cb16afc9b3fe44bc39f0bdeff5"],
+  ["docs/nutrition/batches/batch-502.json", "a83adfcdaf4a923796e67543c7988664a05785d5"],
+  ["kuvat/paaruoat/karnivore-rapea-porsaan-kylki.webp", "b34bf73ec5b16b56b6cfa89197f63cf93736a41d"],
   ["reseptit/paaruoat/karnivore-smashburger.md", "179b12d53d97c406c6f83d2b829173375583b5d4"],
   ["docs/nutrition/calculations/karnivore-smashburger.json", "8dd35e571cc21e4e5950d34d56b0b9d9d7afdd29"],
   ["docs/nutrition/batches/batch-487.json", "f31a51f5fd117f18a6a3b75368878f02cf3e98da"],
