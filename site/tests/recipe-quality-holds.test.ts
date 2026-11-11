@@ -8,6 +8,8 @@ import { editorialHoldRecipeIds, publicRecipeQualityHold } from "../scripts/reci
 import { isPublicRecipeQuarantined } from "../scripts/public-recipe-quarantine";
 import { projectSafeWontonFiDisplay } from "../scripts/wonton-fi-public-display";
 import { originalForThreeCanonicalHistory } from "./issue404-three-canonical-history";
+import { recipeFrontmatterSchema } from "../src/content/schema";
+import { assertKarnivoreDraftSafe, karnivoreApprovedIngredients } from "../scripts/karnivore-draft-gate";
 
 const originals = {
   "intialainen-idli-kookoschutneylla": "reseptit/aamupalat/intialainen-idli-kookoschutneylla.md",
@@ -99,4 +101,19 @@ test("canonical wonton correction retains reviewed source and original GK histor
   assert.match(after.content, /kauttaaltaan helmiäisenvaaleita/);
   assert.throws(() => originalForThreeCanonicalHistory(root,file,raw.replace("700", "701")),
     /unreviewed canonical source mutation/);
+});
+
+test("all ten isolated karnivore drafts remain validated and out of published content", async () => {
+  const root = path.resolve(import.meta.dirname, "../..");
+  assert.equal(Object.keys(karnivoreApprovedIngredients).length, 10);
+  for (const id of Object.keys(karnivoreApprovedIngredients)) {
+    const file = path.join(root, "tuonti/karnivore/paaruoat", `${id}.md`);
+    const raw = await readFile(file, "utf8");
+    const parsed = parseMarkdown(raw);
+    assert.ok(parsed, `${id}: parse failed`);
+    const recipe = recipeFrontmatterSchema.parse(parsed.data);
+    assertKarnivoreDraftSafe(recipe, raw);
+    assert.equal(siteContent.recipes.find((entry) => entry.recipeId === id), undefined,
+      `${id}: work-queue recipe must not be published`);
+  }
 });
