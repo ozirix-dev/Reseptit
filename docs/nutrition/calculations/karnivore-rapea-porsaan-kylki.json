@@ -1,0 +1,84 @@
+{
+  "recipeId": "karnivore-rapea-porsaan-kylki",
+  "sourceHash": "2b0425f794e6c0a745d8966143d118c9a0b38b1d9891d277e0fadcb098994c3f",
+  "calculatedAt": "2026-11-11",
+  "servings": 4,
+  "batchId": "batch-502",
+  "scope": "Raw-input composition for four servings. All edible pork skin, rendered fat and cooking juices are served and eaten. The model does not describe a version that discards drippings.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "item": "nahallista porsaan kylkeä",
+      "amount": 800,
+      "unit": "g",
+      "state": "raw-skin-on-boneless-pork-belly",
+      "matchEvidence": "HK Viljaporsaan luuton kylki nahalla, EAN 2391119000004; manufacturer's raw-product label. AFCD F006862 corroborates only fibre/polyol for plain pork belly, not this product's fat or protein.",
+      "edibleFraction": 1,
+      "edibleEvidence": "The exact product is boneless and the rind is eaten; no trimming is specified.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Conditional raw-input estimate. Recipe apportions all edible skin, rendered fat and cooking juices to the four servings, with juices served separately to keep the rind crisp.",
+      "record": {
+        "id": "hk-2391119000004-raw-skin-on-boneless-pork-belly",
+        "name": "HK Viljaporsaan luuton kylki nahalla (1190)",
+        "sourceUrl": "https://www.hkfoodservice.fi/tuotteet/hk-viljaporsaan-luuton-kylki-nahalla/",
+        "retrievedAt": "2026-11-11",
+        "licence": "Manufacturer's public label; FSANZ AFCD Release 3 reference for fibre/polyols.",
+        "state": "raw-skin-on-boneless-pork-belly",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD F006862 (https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/data-files) reports fibre 0 and paired available carbohydrate with and without sugar alcohols both 0 for plain raw belly without rind. The HK product is only pork, with unseasoned edible rind; this is an ingredient-composition correspondence, not a brand assay.",
+        "per100g": {
+          "kcal": 210,
+          "protein": 19,
+          "fat": 15,
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0
+        }
+      }
+    },
+    {
+      "item": "suolaa",
+      "amount": 6,
+      "unit": "g",
+      "state": "table-salt-edible",
+      "matchEvidence": "Fineli 30 iodized table salt, direct composition record.",
+      "edibleFraction": 1,
+      "edibleEvidence": "All 6 g of iodized salt is edible.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Recipe serves the cooking juices and all edible rendered fat, with no brine discarded.",
+      "record": {
+        "id": "fineli-30-release-20",
+        "name": "RUOKASUOLA, JODIOITU",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/30",
+        "retrievedAt": "2026-11-11",
+        "licence": "THL Fineli Release 20 CC BY 4.0",
+        "state": "table-salt-edible",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release20 components 2034/2168/2260",
+        "componentValues": {
+          "CHO": 0,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "per100g": {
+          "carbohydrate": 0,
+          "protein": 0.63,
+          "fat": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "kcal": 3
+        }
+      }
+    }
+  ]
+}
