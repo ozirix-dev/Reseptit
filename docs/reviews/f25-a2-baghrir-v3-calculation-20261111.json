@@ -77,12 +77,13 @@
       "protein": 12.49,
       "fat": 1.457,
       "fibre": 4.1725,
-      "polyols": 0
+      "polyols": null
     },
     "approxEnergyLegacyKcal": 436.83525,
     "approxEnergyV3Kcal": 377.572,
     "carbohydrateDeltaG": 0.35200000000000004,
-    "fatDeltaG": -6.74125
+    "fatDeltaG": -6.74125,
+    "note": "New powder polyols not verified; partial scenario is not approved complete macros"
   },
   "constraints": {
     "powderPolyolsVerified": false,
