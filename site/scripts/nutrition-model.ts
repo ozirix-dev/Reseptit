@@ -6,7 +6,7 @@ export type Values = Record<Nutrient, number | null>;
 export type CarbDefinition = "EU_AVAILABLE" | "EU_TOTAL_INCLUDING_POLYOLS" | "US_TOTAL_INCLUDING_FIBRE" | "UNKNOWN";
 export interface FoodRecord {
   id: string; name: string; sourceUrl: string; retrievedAt: string; licence: string;
-  state: string; basis: "per100g-edible" | "per100g-as-sold" | "per100g-prepared" | "per100ml-as-sold" | "unresolved"; carbohydrateDefinition: CarbDefinition;
+  state: string; basis: "per100g-edible" | "per100g-as-sold" | "per100g-prepared" | "unresolved"; carbohydrateDefinition: CarbDefinition;
   componentValues?: Partial<Record<"CHO" | "FIBT" | "POLYL", number | null>>;
   componentIds?: Partial<Record<"CHO" | "FIBT" | "POLYL", number>>;
   /** True only when the polyol value is explicitly reported by this source. */
@@ -14,8 +14,6 @@ export interface FoodRecord {
   /** Source text explaining how the polyol value, including an explicit zero, was established. */
   polyolsEvidence?: string;
   per100g: Partial<Omit<Values, "netCarbohydrate">>;
-  /** Product labels measured per 100 ml; never convert to grams using invented density. */
-  per100ml?: Partial<Omit<Values, "netCarbohydrate">>;
 }
 export interface IngredientInput {
   item: string; amount: number | null; unit: string; record?: FoodRecord;
@@ -67,18 +65,15 @@ export function round(value: number, decimals = 2): number {
   if (!valid(value) || !Number.isInteger(decimals) || decimals < 0 || decimals > 6) throw Error("Invalid rounding input");
   return roundFraction(decimal(value), decimals);
 }
-function activeNutrientValues(record: FoodRecord): Partial<Omit<Values, "netCarbohydrate">> {
-  return record.basis === "per100ml-as-sold" ? (record.per100ml ?? {}) : record.per100g;
-}
 function nutrientValue(record: FoodRecord, nutrient: "carbohydrate" | "fibre" | "polyols"): number | null | undefined {
   const component = ({ carbohydrate: "CHO", fibre: "FIBT", polyols: "POLYL" } as const)[nutrient];
-  if (!record.componentValues) return activeNutrientValues(record)[nutrient];
+  if (!record.componentValues) return record.per100g[nutrient];
   const expectedId = { CHO: 2034, FIBT: 2168, POLYL: 2260 }[component];
   if (record.componentIds?.[component] !== expectedId || !Object.hasOwn(record.componentValues, component)) {
     throw Error(`Missing or mismatched Fineli component mapping for ${component}`);
   }
   const componentValue = record.componentValues[component];
-  const summaryValue = activeNutrientValues(record)[nutrient];
+  const summaryValue = record.per100g[nutrient];
   if (componentValue !== null && summaryValue !== componentValue) throw Error(`Fineli ${component} does not match its normalized value`);
   return componentValue;
 }
@@ -147,16 +142,13 @@ export function calculate(input: Calculation) {
     if (!valid(ingredient.amount)) fail("Missing/invalid amount");
     const record = ingredient.record;
     if (!record?.id || !/^https:\/\//.test(record.sourceUrl) || !record.retrievedAt || !record.licence) fail("Missing source reference");
-    if (!ingredient.matchEvidence || !record || record.state !== ingredient.state || !["per100g-edible", "per100g-as-sold", "per100g-prepared", "per100ml-as-sold"].includes(record.basis)) fail("Unresolved food/state/edible basis match");
-    const isVolumeLabel = record?.basis === "per100ml-as-sold";
-    if (isVolumeLabel && (ingredient.unit !== "ml" || !record?.per100ml || Object.keys(record?.per100g ?? {}).length !== 0))
-      fail("Per100ml label requires ml ingredient and per100ml values only");
-    const factor = isVolumeLabel ? 1 : ingredient.unit === "g" ? 1 : ingredient.unit === "kg" ? 1000 : ingredient.gramsPerUnit;
+    if (!ingredient.matchEvidence || !record || record.state !== ingredient.state || !["per100g-edible", "per100g-as-sold", "per100g-prepared"].includes(record.basis)) fail("Unresolved food/state/edible basis match");
+    const factor = ingredient.unit === "g" ? 1 : ingredient.unit === "kg" ? 1000 : ingredient.gramsPerUnit;
     if (!valid(factor) || factor === 0 || (!["g", "kg"].includes(ingredient.unit) && !ingredient.conversionEvidence)) fail("Missing ingredient-specific unit conversion");
     if (!valid(ingredient.edibleFraction) || ingredient.edibleFraction > 1 || !ingredient.edibleEvidence) fail("Unknown edible fraction");
     if (!valid(ingredient.retainedFraction) || ingredient.retainedFraction > 1 || !ingredient.retentionEvidence) fail("Unknown preparation retention/loss");
     const values = emptyValues();
-    if (record) for (const [key, value] of Object.entries(activeNutrientValues(record))) {
+    if (record) for (const [key, value] of Object.entries(record.per100g)) {
       if (!(nutrients as readonly string[]).includes(key) || key === "netCarbohydrate" || (value !== null && !valid(value))) fail(`Invalid nutrient ${key}`);
     }
     if (record?.componentValues) {
@@ -166,13 +158,12 @@ export function calculate(input: Calculation) {
       }
     }
     const exactMass = issues.length ? null : [ingredient.amount!, factor!, ingredient.edibleFraction!].map(decimal).reduce(multiply);
-    exactMasses.push(isVolumeLabel ? null : exactMass);
-    const grams = !isVolumeLabel && exactMass ? numeric(exactMass) : null;
-    const millilitres = isVolumeLabel && exactMass ? numeric(exactMass) : null;
-    if (exactMass !== null && record) {
+    exactMasses.push(exactMass);
+    const grams = exactMass ? numeric(exactMass) : null;
+    if (grams !== null && record) {
       const weight = multiply(multiply(exactMass!, decimal(ingredient.retainedFraction!)), { n: 1n, d: 100n });
       for (const key of nutrients) if (key !== "netCarbohydrate") {
-        const nutrient = key === "carbohydrate" || key === "fibre" || key === "polyols" ? nutrientValue(record, key) : activeNutrientValues(record)[key];
+        const nutrient = key === "carbohydrate" || key === "fibre" || key === "polyols" ? nutrientValue(record, key) : record.per100g[key];
         if (valid(nutrient)) exact[key] = multiply(decimal(nutrient), weight);
       }
       try {
@@ -186,7 +177,7 @@ export function calculate(input: Calculation) {
       // the four published macros or the carbohydrate calculation.
       for (const key of requiredEstimateNutrients) if (values[key] === null) fail(`Unknown nutrient ${key}`);
     }
-    return { item: ingredient.item, recordId: record?.id ?? null, grams, ...(millilitres !== null ? {millilitres} : {}), values, issues };
+    return { item: ingredient.item, recordId: record?.id ?? null, grams, values, issues };
   });
   const total = emptyValues(), perServing = emptyValues();
   for (const key of nutrients) {
