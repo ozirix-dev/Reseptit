@@ -1,30 +1,36 @@
-# Issue #404 / C13 – yhdeksän kanonista FI-ohjetta ja yksi käännös-HOLD
+# Issue #404 – kymmenen tapauksen pilotti, viisi hyväksyttyä lähdemigraatioehdokasta
 
-Päiväys 11.11.2026. **Valmistusmenetelmän tekstisiirto, EI ravinto- tai GI/GK-hyväksyntä.**
+11.11.2026. **Valmistustekstin siirto ei ole ravinto-, GI/GK- eikä käännöshyväksyntä.**
 
-## Lähdemigraation kohteet (9)
+## Viisi FI-ohjetta, jotka siirretään kanonisiin lähteisiin
 
-| FI-resepti | Julkisessa näyttöoikaisussa jo käytetty menetelmä | Avoin ravinto-/laatuvelka |
-| --- | --- | --- |
-| malesialainen-kaya-paahtoleipa | Kaya-vesihaude ja valmiin leivän paahto | Turvallinen munakypsyys ja todellinen 25 min valmistusaika; ei koepaistoa |
-| valimerellinen-halloumi-tomaattileipa | Halloumin paisto ja valmiin leivän paahto | Hapanjuurileivän tuotekohtainen ravinto/GK |
-| intialainen-rava-uttapam | Mannasuurimo-jogurttitaikina ja kasvisletut | Tomaatti- ja sipulipainot |
-| lahi-ita-ful-medames | Kypsien härkäpapujen lämmitys ja murskaus | Valmiiksi kypsä / kuiva papupohja |
-| meksikolainen-aamiais-tacot-mustapavuilla | Kypsät pavut, munat ja tortilla | Papujen kuiva/kypsä-painon evidenssi |
-| valimerellinen-menemen-fetalla | Muna kypsennetään tomaatti-paprikaseoksessa | Kappalepainot, feta-tuotetiedot |
-| valimerellinen-pinaatti-fetashakshuka | Munat haudutetaan tomaatti-pinaattikastikkeessa | Tomaatin kappalepaino, fetan tuotetieto |
-| vietnamilainen-pho-ga-aamuksi | Kana kypsennetään vähintään 74 °C:seen ja riisinuudelit keitetään erikseen | Nuudelien kuiva/kypsä-massa, laskennan lähteet |
-| intialainen-mannasuurimoupma | Mannasuurimoiden kuivapaahto ja kasvisten keitto | Porkkanan kappalepaino |
+| Kortti | Resepti | Tekstikorjauksen sisältö | Avoin ravintoperusta |
+|---|---|---|---|
+| C13 #27 | intialainen-rava-uttapam | Mannasuurimo-jogurttitaikina, sipuli ja tomaatti pannulle | Kappalepainot |
+| C13 #35 | lahi-ita-ful-medames | Valmiiksi kypsien härkäpapujen lämmitys ja maustaminen | Papujen tuote-/painoperusta |
+| C13 #38 | meksikolainen-aamiais-tacot-mustapavuilla | Kypsät pavut, tortillat, munat, avokado | Papujen kuiva-/kypsäpainon makro/GK |
+| C13 #46 | valimerellinen-menemen-fetalla | Tomaatti-paprikaseoksen ja munien kypsennys, feta | Tomaatin/paprikan massa, feta-tuote |
+| C13 #47 | valimerellinen-pinaatti-fetashakshuka | Munat haudutetaan pinaatti-tomaattiseoksessa | Tomaatin massa, feta-tuote |
 
-Yhdeksän uuden kanonisen FI-ohjeen teksti vastaa **samaa reseptiä jo aiemmin PR #425:ssä palvellutta lähde-SHA-lukittua julkista näyttöoikaisua**; julkaistujen ainesosarivien, annosten, valmistustavan metatietojen ja ravintoarvokenttien muokkaus ei kuulu tähän PR:ään. Uudet muistiinpanot ilmaisevat keskeneräisen ravintoperustan, eivät hyväksy sitä.
+Jokainen kanoninen ohje käyttää **aiemmin PR #425:n SHA-lukitussa julkisessa FI-näyttökerroksessa julkaistua valmistustekstiä**, eikä muuta aineslistaa, annoksia, valmistustavan rakenteista metatietoa, makrokenttiä tai GK-sidoksia. Erä ei ole koepaistettu.
 
-## Tekniset portit ja rajaukset
+## Viisi pois kymmenen tapauksen pilotista
 
-- C13:n **poha-maapahkinoilla** jätettiin erästä pois: ensimmäinen CI-ajo #42932727708 vahvisti kolmen julkaistun EN/SV/TH-käännöksen `REVIEW STALE`-esteen. Poha säilyy aiemmin jo käytetyllä SHA-lukitulla julkisella FI-ohjekorjauksella eikä sen lähdetekstiä tässä erässä muuteta. Käännösten merkitystarkisteita ei saa ohittaa eikä hyväksyä ilman tuoretta katselmointia.
-- C13:n **manakish-zaatarilla** jätetään eri PR:ään: oikea perinteinen hiivataikina vs. nykyinen nopea jogurttipannuleipä ja GK-laskennan rajaus tarvitsevat erillisen katselmoinnin.
-- `site/scripts/c13-fi-public-display.ts` jää täsmä-SHA-lukittuna vain manakishille.
-- Uusi `site/tests/c13-canonical-historical-transition.ts` lukitsee yhdeksän uutta Git-blob SHA-1:tä, tarkistaa vanhaan `main`-commit `9e6a00c33b1ee2c1cf0de2f086b257da8d3c8f50` -lähteeseen nähden koko frontmatterin ja muun valmistusta edeltävän tekstin muuttumattomuuden sekä antaa jäädytetyille GK-testeille vain alkuperäisen laskenta-ajankohdan reseptitekstin. Tuntematon muutos hylätään.
-- Historiallinen GK-auditin `source_content_hash` ja `notes` rekonstruoidaan vain edellä mainituille yhdeksälle täsmäversiolle; julkinen sivusto lukee uutta kanonista FI-ohjetta. Ei vanhan numeerisen GK:n uudelleenhyväksyntää.
-- Issue #404:n tekninen tilajako vasta CI-hyväksytyn yhdistämisen jälkeen: **21 karanteenia + 6 SHA-lukittua näyttökorjausta + 11 kanonista FI-valmistusohjetta = 38**. Kaikki 38 lähde-/ravintotutkimuksen seurantakorttia pidetään edelleen avoimina.
-- Ei uusia käännöksiä eikä Cloudflare-tuotantodomainin muutosta.
-- **Draft / DO NOT MERGE ennen täsmä-HEAD CI PASSia**, historiallisten tiivisteiden regressiota ja rinnakkaisten PR:ien konfliktitarkistusta.
+| Resepti | Tarkistuksessa löytynyt este | Päätös |
+|---|---|---|
+| indialainen-poha-maapahkinoilla | Kolme julkaistua EN/SV/TH-merkitystarkistetta `REVIEW STALE`; CI #42932727708 | Jätä erilliseen käännöskatselmointiin |
+| malesialainen-kaya-paahtoleipa | GK149 `cases.json` sisältää koko FI-reseptin tiivisteen | Säilytä lähde ja julkinen näyttöoikaisu |
+| valimerellinen-halloumi-tomaattileipa | GK149-tarkiste sidottu koko reseptitekstiin | Erillinen tutkimusversion lähdekatselmointi |
+| vietnamilainen-pho-ga-aamuksi | Build epäonnistui `GK149: recipe changed .../fi` CI #42933067703 | Säilytä alkuperäinen tutkimuslähde |
+| intialainen-mannasuurimoupma | GK149-tarkiste sidottu koko reseptitekstiin | Erillinen tutkimusversion lähdekatselmointi |
+
+Lisäksi **manakish-zaatarilla** jätetään alkuperäiseen C13-näyttökorjaukseen; perinteisen leivän ja nopean jogurttitaikinamuunnelman valmistus- ja GK-soveltuvuus vaativat erillistä tarkastusta. Manakish ei sisältynyt pilottierän kymmeneen.
+
+## Julkaisuportit
+
+- `site/scripts/c13-fi-public-display.ts` pysyy toiminnassa kuudelle edelleen SHA-lukitulle C13-reseptille. Viisi korjattua lähdettä eivät enää tarvitse sitä.
+- `site/tests/c13-canonical-historical-transition.ts` hyväksyy vain viisi uutta täsmällistä Git-blob-SHA-tunnistetta. Se rekonstruoi vanhan tekstin **vain historiallisiin GK-regressiotesteihin** ja hylkää muissa kentissä olevat erot ja tuntemattomat lähdemuutokset.
+- `site/tests/gk-legacy-reconciliation.test.ts` säilyttää alkuperäisen makroinventaarion täsmätiivisteet historiallisessa vertailussa. Tämä ei hyväksy mitään GK-numeerista tulosta uudelleen.
+- Issue #404:n tekninen jakauma, **vasta PR:n yhdistämisen jälkeen:** 21 karanteenissa + 10 SHA-lukittua näyttökorjausta + 7 kanonisen FI-menetelmän tekstisiirtoa = 38. Jokainen lähde-/ravintovarmennuksen työkortti jää edelleen avoimeksi.
+- EN/SV/TH-synkronointi, tuote-/painovarmistus, koekeittiö ja Cloudflare-cutover eivät kuulu tähän erään.
+- **Draft / DO NOT MERGE**, kunnes täsmä-HEAD CI PASS ja konkreettinen main/deploy-varmennus.
