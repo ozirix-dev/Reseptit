@@ -11,10 +11,10 @@ difficulty: "helppo"
 main_ingredient: ["omena", "kaura"]
 cooking_method: ["uuni"]
 tags: []
-carbs_net_per_serving_g: null
-carbs_total_per_serving_g: null
-protein_per_serving_g: null
-fat_per_serving_g: null
+carbs_net_per_serving_g: 45
+carbs_total_per_serving_g: 52.02
+protein_per_serving_g: 4.39
+fat_per_serving_g: 23.4
 image:
   src: "jalkiruoat/omena-kaurapaistos.webp"
   alt: "Kullanruskea kauramuru omenalohkojen päällä uunivuoassa"
@@ -41,6 +41,7 @@ Kanelilla maustetut omenat pehmenevät uunissa voisen kauramurun alla. Tarjoa pa
 
 ## Muistiinpanot
 
+- Ravintoarvot ovat ainesosista laskettu arvio annosta kohti. Finelin ja AFCD:n koostumustiedot voivat poiketa käytetystä tuotteesta.
 - Sisältää maitoa ja kauraa. Omenat punnitaan siistittyinä. Resepti kattaa itse paistoksen.
 - Kuva on tekoälyllä tehty kuvitus.
 - Sovitus: [K-Ruoan resepti](https://www.k-ruoka.fi/reseptit/omena-kaurapaistos-ja-vaniljakastike).

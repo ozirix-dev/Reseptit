@@ -42,8 +42,31 @@
       "amount": 250,
       "unit": "g",
       "item": "kuivaa täysjyväspagettia",
-      "state": "Lähde tai vastaavuus vahvistamatta",
-      "matchEvidence": "Täsmällistä, valmistustapaa ja ainesmuotoa vastaavaa ravintotietuetta ei vahvistettu."
+      "state": "dry wholemeal wheat pasta",
+      "matchEvidence": "FSANZ AFCD Release 3 F006465. Same flour type and dry input state. The dataset represents generic wholemeal pasta rather than a brand or pasta shape.",
+      "record": {
+        "id": "afcd-F006465-release-3",
+        "name": "Pasta, wholemeal wheat flour, dry",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/data-files",
+        "retrievedAt": "2026-11-12",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "dry wholemeal wheat pasta",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with and without its reported sugar alcohols. This is the dataset's difference, not a laboratory finding for the recipe product.",
+        "per100g": {
+          "carbohydrate": 60.6,
+          "fibre": 9.9,
+          "polyols": 0,
+          "protein": 12.5,
+          "fat": 2.2
+        }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "The recorded dry pasta or grated cheese weight is already the edible quantity.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Recipe divides the full input batch. This is an ingredient-input estimate with no claim of measured cooking loss."
     },
     {
       "amount": 1,
@@ -81,30 +104,30 @@
       "amount": 2,
       "unit": "kpl",
       "item": "valkosipulinkynttä",
-      "state": "RAW",
-      "matchEvidence": "Fineli Release 20 #393 VALKOSIPULI. Ainesosan yleinen koostumus.",
+      "state": "raw peeled garlic",
+      "matchEvidence": "FSANZ AFCD Release 3 F004193. A peeled raw clove is the edible ingredient. The existing clove mass estimate is retained.",
       "edibleFraction": 1,
       "edibleEvidence": "Määrä kuvaa syötävää tai reseptissä käytettävää osaa.",
       "retainedFraction": 1,
       "retentionEvidence": "Laskennassa annoksiin jaetaan käytetty aines; haihtuva vesi ei muuta annoskohtaisia makroja.",
       "record": {
-        "id": "fineli-393-release-20",
-        "name": "VALKOSIPULI",
-        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/393",
+        "id": "afcd-F004193-release-3",
+        "name": "Garlic, peeled, fresh, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/data-files",
         "retrievedAt": "2026-11-12",
-        "licence": "THL Fineli Release 20, CC BY 4.0",
-        "state": "RAW",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "raw peeled garlic",
         "basis": "per100g-edible",
         "carbohydrateDefinition": "EU_AVAILABLE",
-        "per100g": {
-          "carbohydrate": 16.3,
-          "fibre": null,
-          "polyols": 0,
-          "protein": 7.9,
-          "fat": 0.6
-        },
         "polyolsSourceVerified": true,
-        "polyolsEvidence": "Fineli Release 20 SUGOH -arvo kiinnitetyssä lähdepoiminnassa."
+        "polyolsEvidence": "AFCD paired available carbohydrate with and without its reported sugar alcohols. This is the dataset's difference, not a laboratory finding for the recipe product.",
+        "per100g": {
+          "carbohydrate": 10.2,
+          "fibre": 16.9,
+          "polyols": 0,
+          "protein": 6.1,
+          "fat": 2.8
+        }
       },
       "gramsPerUnit": 3.5,
       "conversionEvidence": "Fineli Release 20 #393, portion_mass_g KPL_M."
@@ -177,29 +200,30 @@
       "amount": 0.25,
       "unit": "tl",
       "item": "jauhettua mustapippuria",
-      "state": "DRIE",
-      "matchEvidence": "Fineli Release 20 #11177 MUSTAPIPPURI. Ainesosan yleinen koostumus.",
+      "state": "ground black pepper",
+      "matchEvidence": "FSANZ AFCD Release 3 F006618. Ground black pepper in the same dry state.",
       "edibleFraction": 1,
       "edibleEvidence": "Määrä kuvaa syötävää tai reseptissä käytettävää osaa.",
       "retainedFraction": 1,
       "retentionEvidence": "Laskennassa annoksiin jaetaan käytetty aines; haihtuva vesi ei muuta annoskohtaisia makroja.",
       "record": {
-        "id": "fineli-11177-release-20",
-        "name": "MUSTAPIPPURI",
-        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11177",
+        "id": "afcd-F006618-release-3",
+        "name": "Pepper, black, ground",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/data-files",
         "retrievedAt": "2026-11-12",
-        "licence": "THL Fineli Release 20, CC BY 4.0",
-        "state": "DRIE",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "ground black pepper",
         "basis": "per100g-edible",
         "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with and without its reported sugar alcohols. This is the dataset's difference, not a laboratory finding for the recipe product.",
         "per100g": {
-          "carbohydrate": 38.31,
-          "fibre": null,
-          "polyols": null,
-          "protein": 10.9,
+          "carbohydrate": 38.6,
+          "fibre": 25.3,
+          "polyols": 0,
+          "protein": 10.4,
           "fat": 3.3
-        },
-        "polyolsSourceVerified": false
+        }
       },
       "gramsPerUnit": 2,
       "conversionEvidence": "Fineli Release 20 #11177, portion_mass_g TL."
@@ -208,10 +232,31 @@
       "amount": 40,
       "unit": "g",
       "item": "parmesaania raastettuna",
-      "state": "Lähde tai vastaavuus vahvistamatta",
-      "matchEvidence": "Täsmällistä, valmistustapaa ja ainesmuotoa vastaavaa ravintotietuetta ei vahvistettu."
+      "state": "regular-fat Parmesan grated for use",
+      "matchEvidence": "FSANZ AFCD Release 3 F002479. Regular-fat Parmesan, grated for use, not dehydrated Parmesan powder.",
+      "record": {
+        "id": "afcd-F002479-release-3",
+        "name": "Cheese, parmesan, fresh, regular fat",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/data-files",
+        "retrievedAt": "2026-11-12",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "regular-fat Parmesan grated for use",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with and without its reported sugar alcohols. This is the dataset's difference, not a laboratory finding for the recipe product.",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 32,
+          "fat": 27
+        }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "The recorded dry pasta or grated cheese weight is already the edible quantity.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Recipe divides the full input batch. This is an ingredient-input estimate with no claim of measured cooking loss."
     }
-  ],
-  "publicationStatus": "WITHHELD_SOURCE_INCOMPLETE",
-  "withholdingReason": "kuivaa täysjyväspagettia: lähde puuttuu. valkosipulinkynttä: kuitu puuttuu Finelin tietueesta 393. jauhettua mustapippuria: kuitu, polyolit puuttuu Finelin tietueesta 11177. parmesaania raastettuna: lähde puuttuu."
+  ]
 }

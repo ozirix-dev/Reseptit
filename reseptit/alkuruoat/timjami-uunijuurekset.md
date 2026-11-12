@@ -11,10 +11,10 @@ difficulty: "helppo"
 main_ingredient: ["porkkana", "palsternakka", "peruna"]
 cooking_method: ["uuni"]
 tags: ["arkiruoka"]
-carbs_net_per_serving_g: null
-carbs_total_per_serving_g: null
-protein_per_serving_g: null
-fat_per_serving_g: null
+carbs_net_per_serving_g: 25.05
+carbs_total_per_serving_g: 31.98
+protein_per_serving_g: 2.91
+fat_per_serving_g: 7.48
 image:
   src: "alkuruoat/timjami-uunijuurekset.webp"
   alt: "Paahdettuja porkkana-, palsternakka- ja perunatikkuja vadilla"
@@ -42,6 +42,7 @@ Porkkana, palsternakka ja peruna paahdetaan samalla pellillä. Tasapaksut tikut 
 
 ## Muistiinpanot
 
+- Ravintoarvot ovat ainesosista laskettu arvio annosta kohti. Finelin ja AFCD:n koostumustiedot voivat poiketa käytetystä tuotteesta.
 - Punnitse juurekset kuorimisen jälkeen. Valitse hyväkuntoiset, vihertymättömät perunat.
 - Kuva on tekoälyllä tehty kuvitus.
 - Sovitus: [K-Ruoan resepti](https://www.k-ruoka.fi/reseptit/uunijuurekset).
