@@ -11,10 +11,10 @@ difficulty: "helppo"
 main_ingredient: ["parsakaali","spagetti","cashewpähkinä"]
 cooking_method: ["uunissa paistaminen","keittäminen"]
 tags: []
-carbs_net_per_serving_g: null
-carbs_total_per_serving_g: null
-protein_per_serving_g: null
-fat_per_serving_g: null
+carbs_net_per_serving_g: 56.48
+carbs_total_per_serving_g: 68.78
+protein_per_serving_g: 23.4
+fat_per_serving_g: 28.89
 image:
   src: "paaruoat/parsakaali-cashewpasta.webp"
   alt: "Täysjyväspagettia, paahdettuja parsakaalinuppuja, cashewpähkinöitä ja juustoraastetta"
@@ -44,6 +44,7 @@ Uunissa paahdettu parsakaali ja pannulla ruskistetut cashewpähkinät tuovat spa
 
 ## Muistiinpanot
 
+- Ravintoarvot ovat ainesosista laskettu arvio annosta kohti. Finelin ja AFCD:n koostumustiedot voivat poiketa käytetystä tuotteesta.
 - Sisältää vehnää, cashewpähkinää ja maitoa.
 - Kuva on tekoälyllä tehty kuvitus.
 - Sovitus [K-Ruoan resepti](https://www.k-ruoka.fi/reseptit/parsakaalipasta).

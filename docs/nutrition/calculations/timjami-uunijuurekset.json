@@ -4,7 +4,7 @@
   "calculatedAt": "2026-11-12",
   "batchId": "batch-518",
   "servings": 4,
-  "scope": "Ainesosien laskennallinen arvio, 4 annosta. Lähdeaineisto on Fineli Release 20. Lisukkeet ja valinnaiset tarjoilut eivät kuulu laskentaan.",
+  "scope": "Ainesosien laskennallinen arvio, 4 annosta. Lähteet ovat Fineli Release 20 ja AFCD Release 3. AFCD:n vertailuarvot kuvaavat aineksia, eivät suomalaisen täsmätuotteen mittausta. Lisukkeet ja valinnaiset tarjoilut eivät kuulu laskentaan.",
   "reviewerStatus": "AUTOMATED ONLY",
   "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
   "ingredients": [
@@ -30,7 +30,7 @@
         "per100g": {
           "carbohydrate": 5.56,
           "fibre": 2.4,
-          "polyols": 0.0,
+          "polyols": 0,
           "protein": 0.63,
           "fat": 0.2
         },
@@ -60,7 +60,7 @@
         "per100g": {
           "carbohydrate": 10.31,
           "fibre": 4.5,
-          "polyols": 0.0,
+          "polyols": 0,
           "protein": 1.1,
           "fat": 0.57
         },
@@ -90,7 +90,7 @@
         "per100g": {
           "carbohydrate": 15.5,
           "fibre": 1.4,
-          "polyols": 0.0,
+          "polyols": 0,
           "protein": 1.88,
           "fat": 0.114
         },
@@ -118,11 +118,11 @@
         "basis": "per100g-edible",
         "carbohydrateDefinition": "EU_AVAILABLE",
         "per100g": {
-          "carbohydrate": 0.0,
-          "fibre": 0.0,
-          "polyols": 0.0,
-          "protein": 0.0,
-          "fat": 100.0
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 100
         },
         "polyolsSourceVerified": true,
         "polyolsEvidence": "Fineli Release 20 SUGOH field in the pinned source snapshot."
@@ -138,25 +138,26 @@
       "edibleEvidence": "Quantities describe the added edible ingredient unless a whole weight is explicitly marked.",
       "retainedFraction": 1,
       "retentionEvidence": "Ingredient estimate per divided batch. Volatile water is not treated as macro loss. No cooking yield is represented.",
-      "state": "dried ingredient",
-      "matchEvidence": "Fineli Release 20 food 11194, TIMJAMI, KUIVATTU. Generic composition for the named ingredient and state, without a brand-specific claim.",
+      "state": "dried ground thyme",
+      "matchEvidence": "FSANZ AFCD Release 3 F009160. Ground dried thyme matches the dry herb composition. The existing dried-thyme teaspoon mass estimate is retained.",
       "record": {
-        "id": "fineli-11194-release-20",
-        "name": "TIMJAMI, KUIVATTU",
-        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11194",
+        "id": "afcd-F009160-release-3",
+        "name": "Thyme, dried, ground",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/data-files",
         "retrievedAt": "2026-11-12",
-        "licence": "THL Fineli Release 20, CC BY 4.0",
-        "state": "dried ingredient",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "dried ground thyme",
         "basis": "per100g-edible",
         "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with and without its reported sugar alcohols. This is the dataset's difference, not a laboratory finding for the recipe product.",
         "per100g": {
-          "carbohydrate": 26.94,
-          "fibre": null,
-          "polyols": null,
+          "carbohydrate": 26.9,
+          "fibre": 37,
+          "polyols": 0,
           "protein": 9.1,
           "fat": 7.4
-        },
-        "polyolsSourceVerified": false
+        }
       },
       "gramsPerUnit": 0.5,
       "conversionEvidence": "Fineli Release 20 food 11194 portion_mass_g TL."
@@ -181,11 +182,11 @@
         "basis": "per100g-edible",
         "carbohydrateDefinition": "EU_AVAILABLE",
         "per100g": {
-          "carbohydrate": 0.0,
-          "fibre": 0.0,
-          "polyols": 0.0,
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
           "protein": 0.63,
-          "fat": 0.0
+          "fat": 0
         },
         "polyolsSourceVerified": true,
         "polyolsEvidence": "Fineli Release 20 SUGOH field in the pinned source snapshot."
@@ -201,30 +202,29 @@
       "edibleEvidence": "Quantities describe the added edible ingredient unless a whole weight is explicitly marked.",
       "retainedFraction": 1,
       "retentionEvidence": "Ingredient estimate per divided batch. Volatile water is not treated as macro loss. No cooking yield is represented.",
-      "state": "dried ingredient",
-      "matchEvidence": "Fineli Release 20 food 11177, MUSTAPIPPURI. Generic composition for the named ingredient and state, without a brand-specific claim.",
+      "state": "ground black pepper",
+      "matchEvidence": "FSANZ AFCD Release 3 F006618. Ground black pepper in the same dry state.",
       "record": {
-        "id": "fineli-11177-release-20",
-        "name": "MUSTAPIPPURI",
-        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11177",
+        "id": "afcd-F006618-release-3",
+        "name": "Pepper, black, ground",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/data-files",
         "retrievedAt": "2026-11-12",
-        "licence": "THL Fineli Release 20, CC BY 4.0",
-        "state": "dried ingredient",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "ground black pepper",
         "basis": "per100g-edible",
         "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with and without its reported sugar alcohols. This is the dataset's difference, not a laboratory finding for the recipe product.",
         "per100g": {
-          "carbohydrate": 38.31,
-          "fibre": null,
-          "polyols": null,
-          "protein": 10.9,
+          "carbohydrate": 38.6,
+          "fibre": 25.3,
+          "polyols": 0,
+          "protein": 10.4,
           "fat": 3.3
-        },
-        "polyolsSourceVerified": false
+        }
       },
-      "gramsPerUnit": 2.0,
+      "gramsPerUnit": 2,
       "conversionEvidence": "Fineli Release 20 food 11177 portion_mass_g TL."
     }
-  ],
-  "publicationStatus": "WITHHELD_SOURCE_INCOMPLETE",
-  "withholdingReason": "Kuivatun timjamin ja mustapippurin kuitu- ja polyolitiedot puuttuvat lähteistä."
+  ]
 }

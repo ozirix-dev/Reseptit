@@ -132,30 +132,30 @@
       "amount": 3,
       "unit": "kpl",
       "item": "valkosipulinkynttä",
-      "state": "RAW",
-      "matchEvidence": "Fineli Release 20 #393 VALKOSIPULI. Ainesosan yleinen koostumus.",
+      "state": "raw peeled garlic",
+      "matchEvidence": "FSANZ AFCD Release 3 F004193. A peeled raw clove is the edible ingredient. The existing clove mass estimate is retained.",
       "edibleFraction": 1,
       "edibleEvidence": "Määrä kuvaa syötävää tai reseptissä käytettävää osaa.",
       "retainedFraction": 1,
       "retentionEvidence": "Laskennassa annoksiin jaetaan käytetty aines; haihtuva vesi ei muuta annoskohtaisia makroja.",
       "record": {
-        "id": "fineli-393-release-20",
-        "name": "VALKOSIPULI",
-        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/393",
+        "id": "afcd-F004193-release-3",
+        "name": "Garlic, peeled, fresh, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/data-files",
         "retrievedAt": "2026-11-12",
-        "licence": "THL Fineli Release 20, CC BY 4.0",
-        "state": "RAW",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "raw peeled garlic",
         "basis": "per100g-edible",
         "carbohydrateDefinition": "EU_AVAILABLE",
-        "per100g": {
-          "carbohydrate": 16.3,
-          "fibre": null,
-          "polyols": 0,
-          "protein": 7.9,
-          "fat": 0.6
-        },
         "polyolsSourceVerified": true,
-        "polyolsEvidence": "Fineli Release 20 SUGOH -arvo kiinnitetyssä lähdepoiminnassa."
+        "polyolsEvidence": "AFCD paired available carbohydrate with and without its reported sugar alcohols. This is the dataset's difference, not a laboratory finding for the recipe product.",
+        "per100g": {
+          "carbohydrate": 10.2,
+          "fibre": 16.9,
+          "polyols": 0,
+          "protein": 6.1,
+          "fat": 2.8
+        }
       },
       "gramsPerUnit": 3.5,
       "conversionEvidence": "Fineli Release 20 #393, portion_mass_g KPL_M."
@@ -256,29 +256,30 @@
       "amount": 0.5,
       "unit": "tl",
       "item": "jauhettua mustapippuria",
-      "state": "DRIE",
-      "matchEvidence": "Fineli Release 20 #11177 MUSTAPIPPURI. Ainesosan yleinen koostumus.",
+      "state": "ground black pepper",
+      "matchEvidence": "FSANZ AFCD Release 3 F006618. Ground black pepper in the same dry state.",
       "edibleFraction": 1,
       "edibleEvidence": "Määrä kuvaa syötävää tai reseptissä käytettävää osaa.",
       "retainedFraction": 1,
       "retentionEvidence": "Laskennassa annoksiin jaetaan käytetty aines; haihtuva vesi ei muuta annoskohtaisia makroja.",
       "record": {
-        "id": "fineli-11177-release-20",
-        "name": "MUSTAPIPPURI",
-        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11177",
+        "id": "afcd-F006618-release-3",
+        "name": "Pepper, black, ground",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/data-files",
         "retrievedAt": "2026-11-12",
-        "licence": "THL Fineli Release 20, CC BY 4.0",
-        "state": "DRIE",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "ground black pepper",
         "basis": "per100g-edible",
         "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with and without its reported sugar alcohols. This is the dataset's difference, not a laboratory finding for the recipe product.",
         "per100g": {
-          "carbohydrate": 38.31,
-          "fibre": null,
-          "polyols": null,
-          "protein": 10.9,
+          "carbohydrate": 38.6,
+          "fibre": 25.3,
+          "polyols": 0,
+          "protein": 10.4,
           "fat": 3.3
-        },
-        "polyolsSourceVerified": false
+        }
       },
       "gramsPerUnit": 2,
       "conversionEvidence": "Fineli Release 20 #11177, portion_mass_g TL."
@@ -317,30 +318,30 @@
       "amount": 15,
       "unit": "g",
       "item": "tuoretta korianteria",
-      "state": "RAW",
-      "matchEvidence": "Fineli Release 20 #34238 KORIANTERI, TUORE. Ainesosan yleinen koostumus.",
+      "state": "fresh raw coriander",
+      "matchEvidence": "FSANZ AFCD Release 3 F003192. Fresh coriander leaves, not ground coriander seed.",
       "edibleFraction": 1,
       "edibleEvidence": "Määrä kuvaa syötävää tai reseptissä käytettävää osaa.",
       "retainedFraction": 1,
       "retentionEvidence": "Laskennassa annoksiin jaetaan käytetty aines; haihtuva vesi ei muuta annoskohtaisia makroja.",
       "record": {
-        "id": "fineli-34238-release-20",
-        "name": "KORIANTERI, TUORE",
-        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/34238",
+        "id": "afcd-F003192-release-3",
+        "name": "Coriander, fresh, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/data-files",
         "retrievedAt": "2026-11-12",
-        "licence": "THL Fineli Release 20, CC BY 4.0",
-        "state": "RAW",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "fresh raw coriander",
         "basis": "per100g-edible",
         "carbohydrateDefinition": "EU_AVAILABLE",
-        "per100g": {
-          "carbohydrate": 0.505,
-          "fibre": null,
-          "polyols": 0,
-          "protein": 2.444,
-          "fat": 0.403
-        },
         "polyolsSourceVerified": true,
-        "polyolsEvidence": "Fineli Release 20 SUGOH -arvo kiinnitetyssä lähdepoiminnassa."
+        "polyolsEvidence": "AFCD paired available carbohydrate with and without its reported sugar alcohols. This is the dataset's difference, not a laboratory finding for the recipe product.",
+        "per100g": {
+          "carbohydrate": 1.9,
+          "fibre": 3.2,
+          "polyols": 0,
+          "protein": 3.1,
+          "fat": 0.6
+        }
       }
     },
     {
@@ -407,7 +408,5 @@
       "gramsPerUnit": 100,
       "conversionEvidence": "Fineli Release 20 #922, portion_mass_g DL."
     }
-  ],
-  "publicationStatus": "WITHHELD_SOURCE_INCOMPLETE",
-  "withholdingReason": "valkosipulinkynttä: kuitu puuttuu Finelin tietueesta 393. jauhettua mustapippuria: kuitu, polyolit puuttuu Finelin tietueesta 11177. tuoretta korianteria: kuitu puuttuu Finelin tietueesta 34238."
+  ]
 }

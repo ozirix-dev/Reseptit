@@ -11,10 +11,10 @@ difficulty: "helppo"
 main_ingredient: ["kesäkurpitsa","peruna","tomaatti"]
 cooking_method: ["hauduttaminen"]
 tags: []
-carbs_net_per_serving_g: null
-carbs_total_per_serving_g: null
-protein_per_serving_g: null
-fat_per_serving_g: null
+carbs_net_per_serving_g: 31.26
+carbs_total_per_serving_g: 36.74
+protein_per_serving_g: 16.3
+fat_per_serving_g: 10.1
 image:
   src: "paaruoat/kesakurpitsa-perunapata.webp"
   alt: "Haudutettua kesäkurpitsaa, perunaa, tomaattia ja nyhtökauraa kerroksina"
@@ -49,6 +49,7 @@ Ohuet peruna-, tomaatti- ja kesäkurpitsaviipaleet pehmenevät kannen alla. Maus
 
 ## Muistiinpanot
 
+- Ravintoarvot ovat ainesosista laskettu arvio annosta kohti. Finelin ja AFCD:n koostumustiedot voivat poiketa käytetystä tuotteesta.
 - Tarkista nyhtökauran ainesosat ja allergeenit pakkauksesta. Käytä ehjiä perunoita ja jätä vihertyneet perunat käyttämättä.
 - Kuva on tekoälyllä tehty kuvitus.
 - Sovitus [K-Ruoan resepti](https://www.k-ruoka.fi/reseptit/kesakurpitsapaistos-liedella).
