@@ -1,5 +1,38 @@
 export type CoverageStatus = "CALCULATED" | "INSUFFICIENT SOURCE DATA";
 
+export type PendingGkRow = {
+  recipeId: string;
+  status: CoverageStatus;
+  glycemicLoadPerServing: number | null;
+  sourceBlobSha: string;
+};
+
+type PendingNutritionRow = {
+  recipe_id: string;
+  status: string;
+  calculationEvidence?: string | null;
+  evidenceErrors?: string[];
+  values?: Record<string, number | null>;
+};
+
+const publicMacroKeys = ["carbs_net_per_serving_g", "carbs_total_per_serving_g", "protein_per_serving_g", "fat_per_serving_g"];
+
+export function assertPendingGkSources(pending: PendingGkRow[], nutrition: PendingNutritionRow[]): Set<string> {
+  const ids = new Set(pending.map(row => row.recipeId));
+  if (ids.size !== pending.length || pending.some(row => row.status !== "INSUFFICIENT SOURCE DATA" ||
+      row.glycemicLoadPerServing !== null || !/^[a-f0-9]{40}$/.test(row.sourceBlobSha))) {
+    throw new Error("Separate new-public GK pending sources must be distinct, SHA-pinned NULL cases.");
+  }
+  const matching = nutrition.filter(row => ids.has(row.recipe_id));
+  if (matching.length !== ids.size || new Set(matching.map(row => row.recipe_id)).size !== ids.size ||
+      matching.some(row => row.status !== "ESTIMATE WITH EVIDENCE" &&
+        !(row.status === "INSUFFICIENT SOURCE DATA" && row.calculationEvidence &&
+          row.evidenceErrors?.length === 0 && publicMacroKeys.every(key => row.values?.[key] === null)))) {
+    throw new Error("New-public GK pending records disagree with real published nutrition sources.");
+  }
+  return ids;
+}
+
 export interface CoverageBaselineRow {
   recipeId: string;
   status: CoverageStatus;
