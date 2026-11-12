@@ -1,0 +1,401 @@
+{
+  "recipeId": "proteiinivihannes-sose",
+  "sourceHash": "651fd58c6556328114560c78fe6b661497ad76ed60c8676f7ca7b0c72e35dcc2",
+  "calculatedAt": "2026-11-12",
+  "servings": 4,
+  "scope": "Syötävistä ainesmääristä laskettu yleinen arvio annosta kohti. Fineli Release 20 ja AFCD Release 3. Ei valmistetun ruoan mittausta.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "amount": 400,
+      "unit": "g",
+      "item": "kuorittua, suolattomassa vedessä keitettyä perunaa",
+      "edibleFraction": 1,
+      "edibleEvidence": "Punnitse ohjeen mukainen syötävä ainesosa ilmoitetussa muodossa.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Pannun koko sisältö siirretään vuokaan. Arvio laskee myös vuoan voiteluun käytetyn voin. Keitinvesi valutetaan pois eikä se kuulu syötävään massaan.",
+      "state": "BOIL",
+      "matchEvidence": "Fineli Release 20 11511: PERUNA, KUORITTU, KEITETTY, SUOLATON. Yleinen koostumusarvio ilmoitetulle ainesmuodolle.",
+      "record": {
+        "id": "fineli-11511-release-20",
+        "name": "PERUNA, KUORITTU, KEITETTY, SUOLATON",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11511",
+        "retrievedAt": "2026-11-12",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "BOIL",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 15.5,
+          "protein": 1.88,
+          "fat": 0.114,
+          "fibre": 1.4,
+          "polyols": 0
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Kiinnitetyn Fineli Release 20 -poiminnan SUGOH."
+      }
+    },
+    {
+      "amount": 400,
+      "unit": "g",
+      "item": "kukkakaalin nuppuja ja pehmeää vartta",
+      "edibleFraction": 1,
+      "edibleEvidence": "Punnitse ohjeen mukainen syötävä ainesosa ilmoitetussa muodossa.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Pannun koko sisältö siirretään vuokaan. Arvio laskee myös vuoan voiteluun käytetyn voin. Keitinvesi valutetaan pois eikä se kuulu syötävään massaan.",
+      "state": "RAW",
+      "matchEvidence": "Fineli Release 20 322: KUKKAKAALI. Yleinen koostumusarvio ilmoitetulle ainesmuodolle.",
+      "record": {
+        "id": "fineli-322-release-20",
+        "name": "KUKKAKAALI",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/322",
+        "retrievedAt": "2026-11-12",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "RAW",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 2.35,
+          "protein": 2,
+          "fat": 0.21,
+          "fibre": 1.9,
+          "polyols": 0
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Kiinnitetyn Fineli Release 20 -poiminnan SUGOH."
+      }
+    },
+    {
+      "amount": 100,
+      "unit": "g",
+      "item": "kuorittua porkkanaa",
+      "edibleFraction": 1,
+      "edibleEvidence": "Punnitse ohjeen mukainen syötävä ainesosa ilmoitetussa muodossa.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Pannun koko sisältö siirretään vuokaan. Arvio laskee myös vuoan voiteluun käytetyn voin. Keitinvesi valutetaan pois eikä se kuulu syötävään massaan.",
+      "state": "RAW",
+      "matchEvidence": "Fineli Release 20 300: PORKKANA. Yleinen koostumusarvio ilmoitetulle ainesmuodolle.",
+      "record": {
+        "id": "fineli-300-release-20",
+        "name": "PORKKANA",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/300",
+        "retrievedAt": "2026-11-12",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "RAW",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 5.56,
+          "protein": 0.63,
+          "fat": 0.2,
+          "fibre": 2.4,
+          "polyols": 0
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Kiinnitetyn Fineli Release 20 -poiminnan SUGOH."
+      }
+    },
+    {
+      "amount": 150,
+      "unit": "g",
+      "item": "tomaattia",
+      "edibleFraction": 1,
+      "edibleEvidence": "Punnitse ohjeen mukainen syötävä ainesosa ilmoitetussa muodossa.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Pannun koko sisältö siirretään vuokaan. Arvio laskee myös vuoan voiteluun käytetyn voin. Keitinvesi valutetaan pois eikä se kuulu syötävään massaan.",
+      "state": "RAW",
+      "matchEvidence": "Fineli Release 20 352: TOMAATTI. Yleinen koostumusarvio ilmoitetulle ainesmuodolle.",
+      "record": {
+        "id": "fineli-352-release-20",
+        "name": "TOMAATTI",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/352",
+        "retrievedAt": "2026-11-12",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "RAW",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 3.45,
+          "protein": 0.55,
+          "fat": 0.3,
+          "fibre": 0.4,
+          "polyols": 0
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Kiinnitetyn Fineli Release 20 -poiminnan SUGOH."
+      }
+    },
+    {
+      "amount": 100,
+      "unit": "g",
+      "item": "sianjauhelihaa, rasvaa noin 10 %",
+      "edibleFraction": 1,
+      "edibleEvidence": "Punnitse ohjeen mukainen syötävä ainesosa ilmoitetussa muodossa.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Pannun koko sisältö siirretään vuokaan. Arvio laskee myös vuoan voiteluun käytetyn voin. Keitinvesi valutetaan pois eikä se kuulu syötävään massaan.",
+      "state": "Pork, mince, untrimmed, raw",
+      "matchEvidence": "AFCD Release 3 F007057: Pork, mince, untrimmed, raw. Yleinen koostumusarvio ilmoitetulle ainesmuodolle.",
+      "record": {
+        "id": "afcd-F007057-release-3",
+        "name": "Pork, mince, untrimmed, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F007057",
+        "retrievedAt": "2026-11-12",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia",
+        "state": "Pork, mince, untrimmed, raw",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 0,
+          "protein": 20.9,
+          "fat": 10.6,
+          "fibre": 0,
+          "polyols": 0
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD:n paritetut saatavilla olevan hiilihydraatin arvot sokerialkoholit mukana ja ilman niitä."
+      }
+    },
+    {
+      "amount": 200,
+      "unit": "g",
+      "item": "raejuustoa, rasvaa 2–5 %",
+      "edibleFraction": 1,
+      "edibleEvidence": "Punnitse ohjeen mukainen syötävä ainesosa ilmoitetussa muodossa.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Pannun koko sisältö siirretään vuokaan. Arvio laskee myös vuoan voiteluun käytetyn voin. Keitinvesi valutetaan pois eikä se kuulu syötävään massaan.",
+      "state": "IND",
+      "matchEvidence": "Fineli Release 20 649: RAEJUUSTO, RASVAA 2-5 %. Yleinen koostumusarvio ilmoitetulle ainesmuodolle.",
+      "record": {
+        "id": "fineli-649-release-20",
+        "name": "RAEJUUSTO, RASVAA 2-5 %",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/649",
+        "retrievedAt": "2026-11-12",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "IND",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 2.5,
+          "protein": 15.81,
+          "fat": 2,
+          "fibre": 0,
+          "polyols": 0
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Kiinnitetyn Fineli Release 20 -poiminnan SUGOH."
+      }
+    },
+    {
+      "amount": 165,
+      "unit": "g",
+      "item": "kuoretonta kananmunaa (noin 3 kpl)",
+      "edibleFraction": 1,
+      "edibleEvidence": "Punnitse ohjeen mukainen syötävä ainesosa ilmoitetussa muodossa.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Pannun koko sisältö siirretään vuokaan. Arvio laskee myös vuoan voiteluun käytetyn voin. Keitinvesi valutetaan pois eikä se kuulu syötävään massaan.",
+      "state": "RAW",
+      "matchEvidence": "Fineli Release 20 858: KANANMUNA, KUORETON. Yleinen koostumusarvio ilmoitetulle ainesmuodolle.",
+      "record": {
+        "id": "fineli-858-release-20",
+        "name": "KANANMUNA, KUORETON",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/858",
+        "retrievedAt": "2026-11-12",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "RAW",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 0.3,
+          "protein": 12.61,
+          "fat": 9.24,
+          "fibre": 0,
+          "polyols": 0
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Kiinnitetyn Fineli Release 20 -poiminnan SUGOH."
+      }
+    },
+    {
+      "amount": 200,
+      "unit": "g",
+      "item": "35-prosenttista kuohukermaa",
+      "edibleFraction": 1,
+      "edibleEvidence": "Punnitse ohjeen mukainen syötävä ainesosa ilmoitetussa muodossa.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Pannun koko sisältö siirretään vuokaan. Arvio laskee myös vuoan voiteluun käytetyn voin. Keitinvesi valutetaan pois eikä se kuulu syötävään massaan.",
+      "state": "IND",
+      "matchEvidence": "Fineli Release 20 29066: KERMA, KUOHUKERMA, RASVAA 35 %. Yleinen koostumusarvio ilmoitetulle ainesmuodolle.",
+      "record": {
+        "id": "fineli-29066-release-20",
+        "name": "KERMA, KUOHUKERMA, RASVAA 35 %",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/29066",
+        "retrievedAt": "2026-11-12",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "IND",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 3,
+          "protein": 2,
+          "fat": 35,
+          "fibre": 0,
+          "polyols": 0
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Kiinnitetyn Fineli Release 20 -poiminnan SUGOH."
+      }
+    },
+    {
+      "amount": 50,
+      "unit": "g",
+      "item": "voita",
+      "edibleFraction": 1,
+      "edibleEvidence": "Punnitse ohjeen mukainen syötävä ainesosa ilmoitetussa muodossa.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Pannun koko sisältö siirretään vuokaan. Arvio laskee myös vuoan voiteluun käytetyn voin. Keitinvesi valutetaan pois eikä se kuulu syötävään massaan.",
+      "state": "IND",
+      "matchEvidence": "Fineli Release 20 500: VOI. Yleinen koostumusarvio ilmoitetulle ainesmuodolle.",
+      "record": {
+        "id": "fineli-500-release-20",
+        "name": "VOI",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/500",
+        "retrievedAt": "2026-11-12",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "IND",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 0.8,
+          "protein": 1.19,
+          "fat": 81.3,
+          "fibre": 0,
+          "polyols": 0
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Kiinnitetyn Fineli Release 20 -poiminnan SUGOH."
+      }
+    },
+    {
+      "amount": 8,
+      "unit": "g",
+      "item": "suolaa",
+      "edibleFraction": 1,
+      "edibleEvidence": "Punnitse ohjeen mukainen syötävä ainesosa ilmoitetussa muodossa.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Pannun koko sisältö siirretään vuokaan. Arvio laskee myös vuoan voiteluun käytetyn voin. Keitinvesi valutetaan pois eikä se kuulu syötävään massaan.",
+      "state": "IND",
+      "matchEvidence": "Fineli Release 20 30: RUOKASUOLA, JODIOITU. Yleinen koostumusarvio ilmoitetulle ainesmuodolle.",
+      "record": {
+        "id": "fineli-30-release-20",
+        "name": "RUOKASUOLA, JODIOITU",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/30",
+        "retrievedAt": "2026-11-12",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "IND",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 0,
+          "protein": 0.63,
+          "fat": 0,
+          "fibre": 0,
+          "polyols": 0
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Kiinnitetyn Fineli Release 20 -poiminnan SUGOH."
+      }
+    },
+    {
+      "amount": 1,
+      "unit": "g",
+      "item": "jauhettua mustapippuria",
+      "edibleFraction": 1,
+      "edibleEvidence": "Punnitse ohjeen mukainen syötävä ainesosa ilmoitetussa muodossa.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Pannun koko sisältö siirretään vuokaan. Arvio laskee myös vuoan voiteluun käytetyn voin. Keitinvesi valutetaan pois eikä se kuulu syötävään massaan.",
+      "state": "Pepper, black, ground",
+      "matchEvidence": "AFCD Release 3 F006618: Pepper, black, ground. Yleinen koostumusarvio ilmoitetulle ainesmuodolle.",
+      "record": {
+        "id": "afcd-F006618-release-3",
+        "name": "Pepper, black, ground",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F006618",
+        "retrievedAt": "2026-11-12",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia",
+        "state": "Pepper, black, ground",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 38.6,
+          "protein": 10.4,
+          "fat": 3.3,
+          "fibre": 25.3,
+          "polyols": 0
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD:n paritetut saatavilla olevan hiilihydraatin arvot sokerialkoholit mukana ja ilman niitä."
+      }
+    },
+    {
+      "amount": 0.5,
+      "unit": "g",
+      "item": "jauhettua muskottipähkinää",
+      "edibleFraction": 1,
+      "edibleEvidence": "Punnitse ohjeen mukainen syötävä ainesosa ilmoitetussa muodossa.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Pannun koko sisältö siirretään vuokaan. Arvio laskee myös vuoan voiteluun käytetyn voin. Keitinvesi valutetaan pois eikä se kuulu syötävään massaan.",
+      "state": "Nutmeg, dried, ground",
+      "matchEvidence": "AFCD Release 3 F006118: Nutmeg, dried, ground. Yleinen koostumusarvio ilmoitetulle ainesmuodolle.",
+      "record": {
+        "id": "afcd-F006118-release-3",
+        "name": "Nutmeg, dried, ground",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F006118",
+        "retrievedAt": "2026-11-12",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia",
+        "state": "Nutmeg, dried, ground",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 28.5,
+          "protein": 5.8,
+          "fat": 36.3,
+          "fibre": 20.8,
+          "polyols": 0
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD:n paritetut saatavilla olevan hiilihydraatin arvot sokerialkoholit mukana ja ilman niitä."
+      }
+    },
+    {
+      "amount": 15,
+      "unit": "g",
+      "item": "sitruunamehua",
+      "edibleFraction": 1,
+      "edibleEvidence": "Punnitse ohjeen mukainen syötävä ainesosa ilmoitetussa muodossa.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Pannun koko sisältö siirretään vuokaan. Arvio laskee myös vuoan voiteluun käytetyn voin. Keitinvesi valutetaan pois eikä se kuulu syötävään massaan.",
+      "state": "MASH",
+      "matchEvidence": "Fineli Release 20 11557: TÄYSMEHU, SITRUUNATÄYSMEHU, LAIMENTAMATON. Yleinen koostumusarvio ilmoitetulle ainesmuodolle.",
+      "record": {
+        "id": "fineli-11557-release-20",
+        "name": "TÄYSMEHU, SITRUUNATÄYSMEHU, LAIMENTAMATON",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11557",
+        "retrievedAt": "2026-11-12",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "MASH",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 1.6,
+          "protein": 0.31,
+          "fat": 0,
+          "fibre": 0.1,
+          "polyols": 0
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Kiinnitetyn Fineli Release 20 -poiminnan SUGOH."
+      }
+    }
+  ]
+}

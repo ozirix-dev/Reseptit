@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "recipe_id": "belgialainen-proteiini-vohveli",
+  "source_path": "reseptit/jalkiruoat/belgialainen-proteiini-vohveli.md",
+  "source_sha256": "edd5cf3c2e3aedb4cc1dbf0ad11e3ccc7336590991979897d0fdf03b139feb8b",
+  "decision": "approved",
+  "reviewed_by": "Codex – kirjallinen toimituksellinen katselmointi",
+  "reviewed_at": "2026-11-12",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://github.com/ozirix-dev/Reseptit/blob/c5b76dc589e0a4169a2fadc568ae29eca7c95a94/reseptit/jalkiruoat/belgialainen-proteiini-vohveli.md"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/belgialainen-proteiini-vohveli.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Kaurajauhoon painottuva kerma–kivennäisvesitaikina ja vohveliraudalla paistaminen erottavat vanhan ohjeen letuista ja uunipannukakuista. Vertaileva proteiiniväite ja alkuperää kuvaava nimitys poistettu."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "9 syötävää ainesmäärää tarkistettu ohjeen ja lähdetietueiden kanssa."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Kaurahiutaleiden jauhatuksen tilalle valittu samaan käyttötarkoitukseen tavallinen kaurajauho. Tarttumaton rauta, taikinaan lisättävä voisula, turvotus ja sisältä kypsän vohvelin tarkistus määritelty."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Sisältää vehnää, kauraa, maitoa ja kananmunaa. Paista taikina läpikypsäksi. Älä anna hunajaa sisältävää ruokaa alle yksivuotiaalle."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Kaksi annosta riippumatta vohveliraudan koosta. Aika sisältää turvotuksen ja paiston erissä."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Täsmäsyötteen tarkistus laski kaikki neljä makroarvoa Fineli- ja AFCD-tietueista ja vertasi ne reseptin arvoihin."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Tälle versiolle ei ole hyväksyttyä GI/GK-sidosta. Täsmälähdeversio on GK-pending-rekisterissä."
+    }
+  },
+  "supplementary_evidence": {
+    "prior_draft_path": "reseptit/jalkiruoat/belgialainen-proteiini-vohveli.md",
+    "prior_draft_blob": "762ab047233f2164b0795aac67a6e16ce9d8cf5e",
+    "safety_source": "https://www.ruokavirasto.fi/globalassets/elintarvikkeet/ohjeita-kuluttajille/turvallisen-kayton-ohjeet/turvallisenkaytonohjeet_2025.pdf",
+    "physical_cook_test": false,
+    "image_path": "kuvat/jalkiruoat/kauravohvelit.webp",
+    "image_sha256": "dc31b45c80b8f5a399de79c5c7a838208484c2ad28bdf392dbdce2b67f4b53e1",
+    "image_review": "Kaksi kullanruskeaa ruudullista kauravohvelia lautasella",
+    "image_method": "Built-in ImageGen",
+    "image_prompt": "Create one original realistic Finnish cookbook photograph of two golden thick-grid oat and wheat waffles with crisp browned squares, served plain on a ceramic plate with no accompaniments. Wide landscape cover framing with natural window light, warm neutral linen, accurate home-cooked texture, and the dish fully recognizable in the middle of the frame. No text, people, branding, packaging, or unlisted garnishes.",
+    "nutrition_calculation_sha256": "50c1b8ab3e73c9873f30c97829880289397f768d8eb4c8b8934f5d7ea01902e2"
+  }
+}
