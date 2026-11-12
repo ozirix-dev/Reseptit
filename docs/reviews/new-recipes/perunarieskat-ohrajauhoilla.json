@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "recipe_id": "perunarieskat-ohrajauhoilla",
+  "source_path": "reseptit/leivonnaiset/perunarieskat-ohrajauhoilla.md",
+  "source_sha256": "fe401704b42c0dc265be26ebe8f99398f67c9b32b76f8a5860dac0568ec85beb",
+  "decision": "approved",
+  "reviewed_by": "Codex – kirjallinen toimituksellinen katselmointi",
+  "reviewed_at": "2026-11-12",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.k-ruoka.fi/reseptit/pikkuiset-perunarieskat"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/perunarieskat-ohrajauhoilla.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Ohuet ohra-perunarieskat paistetaan pellillä. Resepti eroaa julkaistuista kohotetuista sämpylöistä ja täytetyistä piirakoista. Koko kirjaston samankaltaisuusraportissa ei ollut tälle tunnisteelle tarkistettavaa ehdokasosumaa."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "4 ainesriviä. Määrät ja yksiköt on kirjattu valmistusvaiheissa käytettävään muotoon ja verrattu vertailuohjeeseen."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistusjärjestys, annos ja kypsyyden tunnusmerkit on tarkistettu vertailuohjeesta. Paista uunin alaosassa noin 15 minuuttia, kunnes pinnassa on ruskeita pilkkuja ja rieskat irtoavat paperista. Nosta ritilälle jäähtymään."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Sisältää ohraa, maitoa ja kananmunaa. Käytä tuoretta tai nopeasti jäähdytettyä ja jääkaapissa säilytettyä sosetta. Kokonaisaika alkaa valmiista soseesta."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Yksi annos on yksi rieska. Noin 30 minuuttia, kun perunasose on valmiina."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Fineli Release 20 -sidokset kattavat reseptin ainesrivit ja yksiköt. Julkinen neljän makron arvio on laskettu reseptin annosmäärälle."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Tälle versiolle ei ole hyväksyttyä GI- ja GK-sidosta. Nykyinen lähde on kiinnitetty GK-pending-rekisteriin. Numeerista GK-arvoa ei julkaista."
+    }
+  },
+  "supplementary_evidence": {
+    "physical_cook_test": false,
+    "image_path": "kuvat/leivonnaiset/perunarieskat-ohrajauhoilla.webp",
+    "image_sha256": "d7a7200125a40c4396bb46130bb4e04af3f7730d049d7501aef5c2155b28a612",
+    "image_review": "Ohuita, ruskeapilkkuisia perunarieskoja lautasella",
+    "image_method": "Built-in ImageGen",
+    "image_prompt": "Create one original, realistic Finnish cookbook food photograph of small flat Finnish potato barley flatbreads, about half a centimeter thick, uneven round edges, lightly freckled and browned, some fork marks, on a stoneware plate. Wide landscape hero composition with dish centered in the middle 75%, modest natural window light, warm neutral linen background, accurate home-cooked texture, clean edge framing, no text, graphics, hands, people, packages, branding, or unlisted garnishes. Show only the described finished recipe, suitable for a recipe site's landscape cover.",
+    "nutrition_calculation_sha256": "d2a9d127a33f00daba65ea4fb8a6adf36243b9ca7b47b4b1034d481837a36027"
+  }
+}

@@ -1,0 +1,170 @@
+{
+  "recipeId": "ruis-puolukkapuuro",
+  "sourceHash": "a84717d9c25b2d1996762d660fe1950a7272e9f23b3085e792324f816be854be",
+  "calculatedAt": "2026-11-12",
+  "batchId": "batch-518",
+  "servings": 4,
+  "scope": "Ainesosien laskennallinen arvio, 4 annosta. Lähdeaineisto on Fineli Release 20. Lisukkeet ja valinnaiset tarjoilut eivät kuulu laskentaan.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "amount": 10,
+      "unit": "dl",
+      "item": "vettä",
+      "edibleFraction": 1,
+      "edibleEvidence": "Quantities describe the added edible ingredient unless a whole weight is explicitly marked.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Ingredient estimate per divided batch. Volatile water is not treated as macro loss. No cooking yield is represented.",
+      "state": "as listed",
+      "matchEvidence": "Fineli Release 20 food 922, VESI, VESIJOHTOVESI. Generic composition for the named ingredient and state, without a brand-specific claim.",
+      "record": {
+        "id": "fineli-922-release-20",
+        "name": "VESI, VESIJOHTOVESI",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/922",
+        "retrievedAt": "2026-11-12",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "as listed",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 0.0,
+          "fibre": 0.0,
+          "polyols": 0.0,
+          "protein": 0.0,
+          "fat": 0.0
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 SUGOH field in the pinned source snapshot."
+      },
+      "gramsPerUnit": 100.0,
+      "conversionEvidence": "Fineli Release 20 food 922 portion_mass_g DL."
+    },
+    {
+      "amount": 0.75,
+      "unit": "dl",
+      "item": "sokeria",
+      "edibleFraction": 1,
+      "edibleEvidence": "Quantities describe the added edible ingredient unless a whole weight is explicitly marked.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Ingredient estimate per divided batch. Volatile water is not treated as macro loss. No cooking yield is represented.",
+      "state": "ingredient as sold",
+      "matchEvidence": "Fineli Release 20 food 1, SOKERI. Generic composition for the named ingredient and state, without a brand-specific claim.",
+      "record": {
+        "id": "fineli-1-release-20",
+        "name": "SOKERI",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/1",
+        "retrievedAt": "2026-11-12",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "ingredient as sold",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 99.9,
+          "fibre": 0.0,
+          "polyols": 0.0,
+          "protein": 0.0,
+          "fat": 0.0
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 SUGOH field in the pinned source snapshot."
+      },
+      "gramsPerUnit": 85.0,
+      "conversionEvidence": "Fineli Release 20 food 1 portion_mass_g DL."
+    },
+    {
+      "amount": 0.25,
+      "unit": "tl",
+      "item": "suolaa",
+      "edibleFraction": 1,
+      "edibleEvidence": "Quantities describe the added edible ingredient unless a whole weight is explicitly marked.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Ingredient estimate per divided batch. Volatile water is not treated as macro loss. No cooking yield is represented.",
+      "state": "ingredient as sold",
+      "matchEvidence": "Fineli Release 20 food 30, RUOKASUOLA, JODIOITU. Generic composition for the named ingredient and state, without a brand-specific claim.",
+      "record": {
+        "id": "fineli-30-release-20",
+        "name": "RUOKASUOLA, JODIOITU",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/30",
+        "retrievedAt": "2026-11-12",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "ingredient as sold",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 0.0,
+          "fibre": 0.0,
+          "polyols": 0.0,
+          "protein": 0.63,
+          "fat": 0.0
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 SUGOH field in the pinned source snapshot."
+      },
+      "gramsPerUnit": 6.5,
+      "conversionEvidence": "Fineli Release 20 food 30 portion_mass_g TL."
+    },
+    {
+      "amount": 210,
+      "unit": "g",
+      "item": "puolukoita",
+      "edibleFraction": 1,
+      "edibleEvidence": "Quantities describe the added edible ingredient unless a whole weight is explicitly marked.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Ingredient estimate per divided batch. Volatile water is not treated as macro loss. No cooking yield is represented.",
+      "state": "raw or dry before cooking",
+      "matchEvidence": "Fineli Release 20 food 440, PUOLUKKA. Generic composition for the named ingredient and state, without a brand-specific claim.",
+      "record": {
+        "id": "fineli-440-release-20",
+        "name": "PUOLUKKA",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/440",
+        "retrievedAt": "2026-11-12",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "raw or dry before cooking",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 8.858,
+          "fibre": 2.5,
+          "polyols": 0.0,
+          "protein": 0.531,
+          "fat": 0.657
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 SUGOH field in the pinned source snapshot."
+      }
+    },
+    {
+      "amount": 2.75,
+      "unit": "dl",
+      "item": "täysjyväruisjauhoja",
+      "edibleFraction": 1,
+      "edibleEvidence": "Quantities describe the added edible ingredient unless a whole weight is explicitly marked.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Ingredient estimate per divided batch. Volatile water is not treated as macro loss. No cooking yield is represented.",
+      "state": "raw or dry before cooking",
+      "matchEvidence": "Fineli Release 20 food 100, JAUHO, RUISJAUHO, TÄYSJYVÄJAUHO. Generic composition for the named ingredient and state, without a brand-specific claim.",
+      "record": {
+        "id": "fineli-100-release-20",
+        "name": "JAUHO, RUISJAUHO, TÄYSJYVÄJAUHO",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/100",
+        "retrievedAt": "2026-11-12",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "raw or dry before cooking",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 59.391,
+          "fibre": 13.6,
+          "polyols": 0.0,
+          "protein": 9.56,
+          "fat": 1.93
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 SUGOH field in the pinned source snapshot."
+      },
+      "gramsPerUnit": 55.0,
+      "conversionEvidence": "Fineli Release 20 food 100 portion_mass_g DL."
+    }
+  ]
+}

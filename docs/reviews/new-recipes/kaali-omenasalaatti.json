@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "recipe_id": "kaali-omenasalaatti",
+  "source_path": "reseptit/alkuruoat/kaali-omenasalaatti.md",
+  "source_sha256": "380933c7a8c794e44ec95d6d6717c2bf2392d6fd20654097c55c879b61366e9b",
+  "decision": "approved",
+  "reviewed_by": "Codex – kirjallinen toimituksellinen katselmointi",
+  "reviewed_at": "2026-11-12",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.k-ruoka.fi/reseptit/meheva-kaalisalaatti"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/kaali-omenasalaatti.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Valkokaali, raastettu omena ja porkkana muodostavat kylmän lisukkeen, jossa ei ole muiden salaattien viljapohjaa tai lämmintä proteiinia. Koko kirjaston samankaltaisuusraportissa ei ollut tälle tunnisteelle tarkistettavaa ehdokasosumaa."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "4 ainesriviä. Määrät ja yksiköt on kirjattu valmistusvaiheissa käytettävään muotoon ja verrattu vertailuohjeeseen."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistusjärjestys, annos ja kypsyyden tunnusmerkit on tarkistettu vertailuohjeesta. Tarjoa heti tai pidä peitettynä jääkaapissa tarjoiluhetkeen asti."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Kastikkeen ainesosat ja allergeenit vaihtelevat. Tarkista pakkauksesta erityisesti kala, maito, kananmuna ja sinappi."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Kuusi lisukeannosta. Noin 15 minuuttia käsittelyyn ja sekoittamiseen."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Valmiin caesarkastikkeen koostumus vaihtelee tuotteen mukaan. Täsmätuotetta ei ole sidottu laskentaan."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Tälle versiolle ei ole hyväksyttyä GI- ja GK-sidosta. Nykyinen lähde on kiinnitetty GK-pending-rekisteriin. Numeerista GK-arvoa ei julkaista."
+    }
+  },
+  "supplementary_evidence": {
+    "physical_cook_test": false,
+    "image_path": "kuvat/alkuruoat/kaali-omenasalaatti.webp",
+    "image_sha256": "36e2d19c15c782adb41b6a4dad74eec33acc30aeab6afc475d4bffd68ffe9dc4",
+    "image_review": "Kaali-, omena- ja porkkanasuikaleita vaaleassa kastikkeessa",
+    "image_method": "Built-in ImageGen",
+    "image_prompt": "Create one original, realistic Finnish cookbook food photograph of Finnish fresh slaw of thin white cabbage ribbons, grated orange carrot and pale apple shreds with a light creamy dressing in a shallow bowl. Wide landscape hero composition with dish centered in the middle 75%, modest natural window light, warm neutral linen background, accurate home-cooked texture, clean edge framing, no text, graphics, hands, people, packages, branding, or unlisted garnishes. Show only the described finished recipe, suitable for a recipe site's landscape cover.",
+    "nutrition_calculation_sha256": "48feeebabd57625bbb4ed92649d159435d7fcf2b727084514c96b7ceba21ec34"
+  }
+}

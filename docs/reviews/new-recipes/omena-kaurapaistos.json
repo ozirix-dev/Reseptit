@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "recipe_id": "omena-kaurapaistos",
+  "source_path": "reseptit/jalkiruoat/omena-kaurapaistos.md",
+  "source_sha256": "a7eb8822517ee1b472af35889b6ad5dad1f45ee771f7b663c230d3248a8ff890",
+  "decision": "approved",
+  "reviewed_by": "Codex – kirjallinen toimituksellinen katselmointi",
+  "reviewed_at": "2026-11-12",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.k-ruoka.fi/reseptit/omena-kaurapaistos-ja-vaniljakastike"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/omena-kaurapaistos.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Paistetut omenalohkot ja niiden päällä oleva kauramuru erottavat paistoksen kauralastuista sekä kaurapohjaisista kakuista. Koko kirjaston samankaltaisuusraportissa ei ollut tälle tunnisteelle tarkistettavaa ehdokasosumaa."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "5 ainesriviä. Määrät ja yksiköt on kirjattu valmistusvaiheissa käytettävään muotoon ja verrattu vertailuohjeeseen."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistusjärjestys, annos ja kypsyyden tunnusmerkit on tarkistettu vertailuohjeesta. Paista keskitasolla noin 20–25 minuuttia. Paistos on valmis, kun veitsi uppoaa omenaan helposti ja muru on saanut väriä. Anna vetäytyä hetki ennen annostelua."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Sisältää maitoa ja kauraa. Omenat punnitaan siistittyinä. Resepti kattaa itse paistoksen."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Neljän jälkiruoka-annoksen 40 minuutin kokonaisaika sisältää omenoiden käsittelyn ja paiston."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Kanelin teelusikan massaa ja kaurahiutaleiden polyoleja ei ole vahvistettu."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Tälle versiolle ei ole hyväksyttyä GI- ja GK-sidosta. Nykyinen lähde on kiinnitetty GK-pending-rekisteriin. Numeerista GK-arvoa ei julkaista."
+    }
+  },
+  "supplementary_evidence": {
+    "physical_cook_test": false,
+    "image_path": "kuvat/jalkiruoat/omena-kaurapaistos.webp",
+    "image_sha256": "50da64815ace445467c967b1f6446d7c47e52321fe880d6dd1ef07764cda6d8b",
+    "image_review": "Kullanruskea kauramuru omenalohkojen päällä uunivuoassa",
+    "image_method": "Built-in ImageGen",
+    "image_prompt": "Create one original, realistic Finnish cookbook food photograph of an oven-baked apple oat crumble, visible thin soft apple wedges under golden rolled oat crumble in a white baking dish. Wide landscape hero composition with dish centered in the middle 75%, modest natural window light, warm neutral linen background, accurate home-cooked texture, clean edge framing, no text, graphics, hands, people, packages, branding, or unlisted garnishes. Show only the described finished recipe, suitable for a recipe site's landscape cover.",
+    "nutrition_calculation_sha256": "28f55a6fa8967eaaca850838591959df43264738f7a76036c1790f6a4d35198b"
+  }
+}

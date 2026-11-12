@@ -1,4 +1,8 @@
 import assert from "node:assert/strict";
+import { createHash } from "node:crypto";
+import { recipeFrontmatterSchema } from "../src/content/schema";
+import { verifyNutritionEvidence } from "../scripts/nutrition-evidence";
+import { frozenOriginalRecipeIds } from "./original-content-transition";
 import { readdir, readFile } from "node:fs/promises";
 import path from "node:path";
 import test from "node:test";
@@ -82,7 +86,7 @@ test("the ten additional Thai recipes are published in Finnish with their image 
   }
 });
 
-test("the Finnish breakfast and dessert collections exclude quarantined unsafe recipes", () => {
+test("the Finnish breakfast and dessert collections exclude quarantined unsafe recipes", async () => {
   const breakfast = siteContent.recipes.filter((recipe) => recipe.locale === "fi" && recipe.category === "aamupala");
   const desserts = siteContent.recipes.filter((recipe) => recipe.locale === "fi" && recipe.category === "jalkiruoka" && [
     "vhh-brita-kakku", "keto-mutakakku", "vhh-mokkapalat", "keto-suklaakeksit", "vhh-omenapiirakka",
@@ -224,11 +228,32 @@ test("the Finnish breakfast and dessert collections exclude quarantined unsafe r
   documentedBreakfastNetCarbs.delete("keto-mutakakku");
   for (const recipe of [...breakfast, ...desserts]) {
     assert.ok(recipe.image, `${recipe.recipeId} has an image`);
-    assert.equal(
-      recipe.nutrition.carbsNetG,
-      documentedBreakfastNetCarbs.get(recipe.recipeId) ?? null,
-      "only recipes with documented nutrition estimates have values",
-    );
+    if (documentedBreakfastNetCarbs.has(recipe.recipeId) || recipe.nutrition.carbsNetG === null) {
+      assert.equal(recipe.nutrition.carbsNetG, documentedBreakfastNetCarbs.get(recipe.recipeId) ?? null, recipe.recipeId);
+      continue;
+    }
+    // New FI publications are checked against their own reviewed input and output.
+    // The frozen breakfast expectations above still govern the original recipes.
+    assert.ok(!frozenOriginalRecipeIds.has(recipe.recipeId), recipe.recipeId);
+    const root = path.resolve(import.meta.dirname, "../..");
+    const calcFile = "docs/nutrition/calculations/" + recipe.recipeId + ".json";
+    const receipt = JSON.parse(await readFile(path.join(root, "docs/reviews/new-recipes", recipe.recipeId + ".json"), "utf8"));
+    assert.equal(receipt.recipe_id, recipe.recipeId);
+    assert.equal(receipt.decision, "approved");
+    assert.equal(receipt.nutrition_evidence, calcFile);
+    assert.equal(receipt.source_path, "reseptit/aamupalat/" + recipe.recipeId + ".md");
+    const source = await readFile(path.join(root, receipt.source_path), "utf8");
+    assert.equal(createHash("sha256").update(source).digest("hex"), receipt.source_sha256);
+    const data = recipeFrontmatterSchema.parse(parseMarkdown(source)?.data);
+    const calc = JSON.parse(await readFile(path.join(root, calcFile), "utf8"));
+    const checked = verifyNutritionEvidence(data, calc);
+    assert.equal(checked.status, "ESTIMATE WITH EVIDENCE", checked.errors.join("; "));
+    assert.deepEqual(recipe.nutrition, {
+      carbsNetG: data.carbs_net_per_serving_g,
+      carbsTotalG: data.carbs_total_per_serving_g,
+      proteinG: data.protein_per_serving_g,
+      fatG: data.fat_per_serving_g,
+    }, recipe.recipeId);
   }
 });
 

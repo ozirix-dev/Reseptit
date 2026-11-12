@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "recipe_id": "ruis-puolukkapuuro",
+  "source_path": "reseptit/aamupalat/ruis-puolukkapuuro.md",
+  "source_sha256": "ee164c6edfd5d450511a1aa9ff1ded91eb6f506cd3d3416167a8b75a0daafc9e",
+  "decision": "approved",
+  "reviewed_by": "Codex – kirjallinen toimituksellinen katselmointi",
+  "reviewed_at": "2026-11-12",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.martat.fi/reseptit/ruis-puolukkapuuro/",
+      "https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/turvallisen-kayton-ohjeet/ulkomaiset-pakastemarjat/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/ruis-puolukkapuuro.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Pitkään haudutettu ruisjauhopuuro eroaa perunajauhoilla suurustetusta kiisselistä ja muista aamupalapuuroista. Koko kirjaston samankaltaisuusraportissa ei ollut tälle tunnisteelle tarkistettavaa ehdokasosumaa."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "5 ainesriviä. Määrät ja yksiköt on kirjattu valmistusvaiheissa käytettävään muotoon ja verrattu vertailuohjeeseen."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistusjärjestys, annos ja kypsyyden tunnusmerkit on tarkistettu vertailuohjeesta. Sekoita puolukat kypsään puuroon. Kun koko seos taas poreilee, keitä vielä vähintään 2 minuuttia. Jaa neljään kulhoon."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Sisältää ruista. Jos tarjoat puuron kylmänä, jäähdytä se nopeasti pienissä astioissa ja siirrä jääkaappiin."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Neljä annosta. Noin 70 minuuttia sisältää haudutuksen ja puolukoiden loppukiehautuksen."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Fineli Release 20 -sidokset kattavat reseptin ainesrivit ja yksiköt. Julkinen neljän makron arvio on laskettu reseptin annosmäärälle."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Tälle versiolle ei ole hyväksyttyä GI- ja GK-sidosta. Nykyinen lähde on kiinnitetty GK-pending-rekisteriin. Numeerista GK-arvoa ei julkaista."
+    }
+  },
+  "supplementary_evidence": {
+    "physical_cook_test": false,
+    "image_path": "kuvat/aamupalat/ruis-puolukkapuuro.webp",
+    "image_sha256": "c79e5dd9ce16129fd7f727ab7847810e40509723f4514967c3c6afca73ca0707",
+    "image_review": "Punertavaa ruis-puolukkapuuroa vaaleassa kulhossa",
+    "image_method": "Built-in ImageGen",
+    "image_prompt": "Create one original, realistic Finnish cookbook food photograph of Finnish slow-cooked rye and lingonberry porridge, soft spoonable thick reddish brown with crushed berry specks in a pale Nordic stoneware bowl. Wide landscape hero composition with dish centered in the middle 75%, modest natural window light, warm neutral linen background, accurate home-cooked texture, clean edge framing, no text, graphics, hands, people, packages, branding, or unlisted garnishes. Show only the described finished recipe, suitable for a recipe site's landscape cover.",
+    "nutrition_calculation_sha256": "1ebb2831f91cf4c947d9dba5f92ba93e64f39b58e57642a69f82eb2787933201"
+  }
+}

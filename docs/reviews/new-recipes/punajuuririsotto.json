@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "recipe_id": "punajuuririsotto",
+  "source_path": "reseptit/paaruoat/punajuuririsotto.md",
+  "source_sha256": "72f1044762cdf14df4861cc665f2b34236f4868766fad8a5f917b05700b176eb",
+  "decision": "approved",
+  "reviewed_by": "Codex – kirjallinen toimituksellinen katselmointi",
+  "reviewed_at": "2026-11-12",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.k-ruoka.fi/reseptit/punajuuririsotto"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/punajuuririsotto.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Punajuurisose ja kuutiot määrittävät tämän risoton. Kaurahiutalepohjaisista paistoksista ja muista riisiruoista poikkeaa myös liemen asteittainen imeytys. Koko kirjaston samankaltaisuusraportissa ei ollut tälle tunnisteelle tarkistettavaa ehdokasosumaa."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "12 ainesriviä. Määrät ja yksiköt on kirjattu valmistusvaiheissa käytettävään muotoon ja verrattu vertailuohjeeseen."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistusjärjestys, annos ja kypsyyden tunnusmerkit on tarkistettu vertailuohjeesta. Lisää punajuurikuutiot ja kuumenna. Nosta kattila liedeltä, sekoita joukkoon parmesaani ja mausta suolalla sekä pippurilla. Tarjoa heti."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Sisältää maitoa. Tarkista kasvisfondin allergeenit, esimerkiksi selleri. Jäähdytä mahdollinen tähde nopeasti pienessä astiassa ja siirrä jääkaappiin."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Viisi annosta. Noin 85 minuuttia sisältää kokonaisten punajuurten kypsentämisen ja 25 minuutin risottovaiheen."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Punajuuren kuorintahävikkiä, riisin polyoleja ja kasvisfondin sekä parmesaanin täsmätuotetta ei ole vahvistettu."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Tälle versiolle ei ole hyväksyttyä GI- ja GK-sidosta. Nykyinen lähde on kiinnitetty GK-pending-rekisteriin. Numeerista GK-arvoa ei julkaista."
+    }
+  },
+  "supplementary_evidence": {
+    "physical_cook_test": false,
+    "image_path": "kuvat/paaruoat/punajuuririsotto.webp",
+    "image_sha256": "61eaac9b915b67155dfd51e85fbb918e5abbc3e981c51097c80ccff06f8fe70c",
+    "image_review": "Punajuuririsottoa parmesaanin ja timjamin kanssa",
+    "image_method": "Built-in ImageGen",
+    "image_prompt": "Create one original, realistic Finnish cookbook food photograph of creamy deep magenta beetroot risotto with visible rice grains and small roasted beetroot pieces, finished with grated Parmesan and thyme, in a shallow stoneware bowl. Wide landscape hero composition with dish centered in the middle 75%, modest natural window light, warm neutral linen background, accurate home-cooked texture, clean edge framing, no text, graphics, hands, people, packages, branding, or unlisted garnishes. Show only the described finished recipe, suitable for a recipe site's landscape cover.",
+    "nutrition_calculation_sha256": "7c0a5f5332501e10d8f16442bc05c4ada8f2372ec778cc865d0a5971f4815aa7"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "recipe_id": "uunibataatit-fetalla",
+  "source_path": "reseptit/paaruoat/uunibataatit-fetalla.md",
+  "source_sha256": "9d89db1c65a765a7705f0d1c64a136435de7e5dece15822d7b315ddd8ffb38bd",
+  "decision": "approved",
+  "reviewed_by": "Codex – kirjallinen toimituksellinen katselmointi",
+  "reviewed_at": "2026-11-12",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.k-ruoka.fi/reseptit/uunibataatit"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/uunibataatit-fetalla.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Uunibataatit tarjoillaan täytettyinä puolikkaina, toisin kuin sekoitetut timjamijuurekset. Koko kirjaston samankaltaisuusraportissa ei ollut tälle tunnisteelle tarkistettavaa ehdokasosumaa."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "7 ainesriviä. Määrät ja yksiköt on kirjattu valmistusvaiheissa käytettävään muotoon ja verrattu vertailuohjeeseen."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistusjärjestys, annos ja kypsyyden tunnusmerkit on tarkistettu vertailuohjeesta. Murustele feta kuumille puolikkaille. Jaa chili, kevätsipuli ja seesami päälle. Tarjoa kaksi puolikasta annosta kohti."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Sisältää maitoa ja seesamia. Suurten bataattien kypsyminen voi viedä yli arvioidun ajan."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Neljä annosta, yksi pieni kokonainen bataatti annosta kohti. Tyypillinen kokonaisaika enintään noin tunti."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Kuorellisen bataatin syötävä saanto sekä chilin ja kevätsipulin täsmällinen koostumus eivät ole varmistuneet."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Tälle versiolle ei ole hyväksyttyä GI- ja GK-sidosta. Nykyinen lähde on kiinnitetty GK-pending-rekisteriin. Numeerista GK-arvoa ei julkaista."
+    }
+  },
+  "supplementary_evidence": {
+    "physical_cook_test": false,
+    "image_path": "kuvat/paaruoat/uunibataatit-fetalla.webp",
+    "image_sha256": "93c7ea67c362dc073b2425d432079c05427f52e0c8daa4d973d00a5ce238af31",
+    "image_review": "Paahdettuja bataatinpuolikkaita fetan, chilin ja kevätsipulin kanssa",
+    "image_method": "Built-in ImageGen",
+    "image_prompt": "Create one original, realistic Finnish cookbook food photograph of roasted sweet potato halves with orange flesh and cooked skins, sprinkled with crumbled feta, sliced red chili, green spring onion and black sesame, on a plain plate. Wide landscape hero composition with dish centered in the middle 75%, modest natural window light, warm neutral linen background, accurate home-cooked texture, clean edge framing, no text, graphics, hands, people, packages, branding, or unlisted garnishes. Show only the described finished recipe, suitable for a recipe site's landscape cover.",
+    "nutrition_calculation_sha256": "b4f8bbef7240614ba667e9b0a2f66aa2e07f71d6b58226cf1f9d9d5120368478"
+  }
+}
