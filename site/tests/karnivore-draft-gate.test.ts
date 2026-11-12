@@ -1,7 +1,8 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { assertKarnivoreDraftSafe, karnivoreApprovedIngredients } from "../scripts/karnivore-draft-gate";
+import { assertKarnivoreDraftSafe, assertKarnivoreTranslationReady, karnivoreApprovedIngredients } from "../scripts/karnivore-draft-gate";
 import type { recipeFrontmatterSchema } from "../src/content/schema";
+import { semanticHash } from "../scripts/translation-semantic-review";
 
 type RecipeData = ReturnType<typeof recipeFrontmatterSchema.parse>;
 const sample = (id = "karnivore-steak-and-eggs"): RecipeData => ({
@@ -40,6 +41,23 @@ test("unsupported nutrition, keto/VHH or gluten-free claims are blocked", () => 
   const gluten = sample(); gluten.gluten_free = true;
   assert.throws(() => assertKarnivoreDraftSafe(gluten, prep), /gluten-free/);
 });
+test("published translations need current review against the approved Finnish recipe", () => {
+  const data: RecipeData = { ...sample(), status: "published",
+    image: { src: "paaruoat/karnivore-steak-and-eggs.webp", alt: "Steak and eggs", width: 1280, height: 853 },
+    carbs_net_per_serving_g: 0, carbs_total_per_serving_g: 0, protein_per_serving_g: 10, fat_per_serving_g: 5,
+  };
+  const source = { data, content: prep };
+  const translated = { data: { ...data, language: "en" as const, source_recipe: "reseptit/paaruoat/karnivore-steak-and-eggs.md" }, content: prep };
+  const evidence = { source_hash: semanticHash(source), translation_hash: semanticHash(translated),
+    reviewed_at: "2026-11-12", reference: "test fixture", outcome: "pass" as const, findings: [],
+  };
+  assert.doesNotThrow(() => assertKarnivoreTranslationReady(translated, source, evidence));
+  assert.throws(() => assertKarnivoreTranslationReady(translated, source), /current source-bound semantic review/);
+  assert.throws(() => assertKarnivoreTranslationReady({ ...translated, content: prep.replace("75", "40") }, source, evidence), /current source-bound semantic review/);
+  assert.throws(() => assertKarnivoreTranslationReady(translated, { ...source, data: { ...data, status: "draft" } }, evidence), /published Finnish source/);
+  assert.throws(() => assertKarnivoreTranslationReady(translated, { ...source, data: { ...data, ingredients: [{ amount: 100, unit: "g", item: "sipuli" }] } }, evidence), /ingredient identity changed/);
+});
+
 test("no cooking temperature cannot pass", () => {
   assert.throws(() => assertKarnivoreDraftSafe(sample(), prep.replace("75 °C", "riittävän kuumaksi")), /no measurable cooking temperature/);
 });
