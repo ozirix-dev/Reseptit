@@ -77,7 +77,7 @@ Purerad kall tomatsoppa är smaksatt med gurka, paprika, vitlök och olivolja. S
 ## Tillagning
 
 1. Lägg tomater, gurka, paprika, vitlök, vinäger och salt i en mixer. Lägg till bröd om du vill.
-2. Puré tills den är slät. Tillsätt oljan medan maskinen är igång och fortsätt mosa tills soppan är slät.
+2. Mixa grönsakerna. Tillsätt oljan medan mixern går och fortsätt tills soppan är slät.
 3. Justera konsistensen med kallt vatten och kolla smaken.
 4. Täck över och ställ i kylen i minst en timme. Servera kall, garnerad med små grönsakstärningar.
 
