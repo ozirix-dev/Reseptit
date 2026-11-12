@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "recipe_id": "porkkanaletut",
+  "source_path": "reseptit/paaruoat/porkkanaletut.md",
+  "source_sha256": "638f5460fffb94d98c3f4d6697772a855cfcd57930300f6ec53545ea56ff3eaa",
+  "decision": "approved",
+  "reviewed_by": "Codex – kirjallinen toimituksellinen katselmointi",
+  "reviewed_at": "2026-11-12",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.martat.fi/reseptit/porkkanaletut/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/porkkanaletut.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Porkkanasoseinen vehnä-kaurataikina eroaa jauhelihapihveistä sekä maissi- ja kikherneletuista."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "8 ainesriviä tarkistettu. Käyttömuoto ja määrä täsmäävät valmistusvaiheisiin. Vispaa kananmunat, porkkanasose ja kaurajuoma tasaiseksi. Lisää kaurajauhot, vehnäjauhot ja suola ja sekoita paakuttomaksi."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Kypsennysjärjestys ja kypsyyden tai valmiuden tunnusmerkit arvioitu vertailuohjeesta. Käännä, kun reuna on hyytynyt ja pohja ruskistunut. Paista toinenkin puoli, kunnes lettu on keskeltä kypsä. Toista lopulla taikinalla ja lisää paistorasvaa erien välissä."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Sisältää kananmunaa, kauraa ja vehnää. Tarkista margariinin ainesosat pakkauksesta."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Aikaan sisältyy 30 minuutin turvotus ja usean lettupannullisen paisto."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "maustamatonta porkkanasosetta: lähde puuttuu. juoksevaa margariinia paistamiseen: ruokaan jäävää osuutta ei ole vahvistettu."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Reseptille ei ole hyväksyttyä GI- ja GK-sidosta. Lähdeversio on kiinnitetty GK-pending-rekisteriin."
+    }
+  },
+  "supplementary_evidence": {
+    "physical_cook_test": false,
+    "image_path": "kuvat/paaruoat/porkkanaletut.webp",
+    "image_sha256": "2b30968a0e34df1b6c03618e379077c6e6c0c5de035b46b92c6a97370dc463a6",
+    "image_review": "Pino pieniä oransseja porkkanalettuja keraamisella lautasella",
+    "image_method": "Built-in ImageGen",
+    "image_prompt": "Create one original realistic Finnish cookbook photograph of a stack of small thin Finnish skillet pancakes made with carrot puree, golden orange with brown mottling, plain on a ceramic plate. Wide landscape hero framing, dish centered with clear edges, natural window light on a warm neutral surface, accurate home-cooked texture. Show only this finished recipe with no text, graphics, branding, people, hands or unlisted garnishes.",
+    "nutrition_calculation_sha256": "aa6657109a51b114f9d8aeb1de0d8845884f5722ce14fcf5ff996c6a40317136"
+  }
+}

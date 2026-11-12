@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "recipe_id": "papu-myskikurpitsapelti",
+  "source_path": "reseptit/paaruoat/papu-myskikurpitsapelti.md",
+  "source_sha256": "a481fe9a2506376d8b673dd79eb69b60085ad9e07affbf56e49e14b832a043c8",
+  "decision": "approved",
+  "reviewed_by": "Codex – kirjallinen toimituksellinen katselmointi",
+  "reviewed_at": "2026-11-12",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.k-ruoka.fi/reseptit/papu-kasvispelti"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/papu-myskikurpitsapelti.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Pääruokapellissä on kurpitsaa, ruusukaalia, papuja ja soijakastiketta. Timjamijuurekset ovat erillinen juureslisäke."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "10 ainesriviä tarkistettu. Käyttömuoto ja määrä täsmäävät valmistusvaiheisiin. Kuumenna uuni 200 asteeseen. Leikkaa puhdistettu kurpitsa vajaan sentin viipaleiksi. Poista ruusukaalien kannan kova osa ja halkaise kaalit."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Kypsennysjärjestys ja kypsyyden tai valmiuden tunnusmerkit arvioitu vertailuohjeesta. Sekoita soijajogurtti, sitruunamehu ja pestyn sitruunan kuoriraaste. Tarjoa kastike kasvispellin kanssa."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Käytä kypsiä säilykepapuja. Sisältää soijaa ja pekaanipähkinää."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Neljän annoksen 50 minuuttiin mahtuu pellin valmistelu, 30–33 minuutin paahto ja kastike."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "myskikurpitsaa ilman kuorta ja siemeniä: lähde puuttuu. jauhettua mustapippuria: kuitu, polyolit puuttuu Finelin tietueesta 11177. pekaanipähkinöitä: polyolit puuttuu Finelin tietueesta 33095. maustamatonta soijajogurttia: lähde puuttuu. hienoksi raastettua sitruunankuorta: lähde puuttuu."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Reseptille ei ole hyväksyttyä GI- ja GK-sidosta. Lähdeversio on kiinnitetty GK-pending-rekisteriin."
+    }
+  },
+  "supplementary_evidence": {
+    "physical_cook_test": false,
+    "image_path": "kuvat/paaruoat/papu-myskikurpitsapelti.webp",
+    "image_sha256": "8927cd7e1933563b4a47b3eb748598a1504c6ac824d10f2170d2e4c0d66d8f43",
+    "image_review": "Paahdettua myskikurpitsaa, ruusukaalia, valkopapuja ja pekaanipähkinöitä pellillä, vaalea kastike vieressä",
+    "image_method": "Built-in ImageGen",
+    "image_prompt": "Create one original realistic Finnish cookbook photograph of oven roasted crescent slices of orange butternut squash, halved browned Brussels sprouts, white butter beans and pecans on a baking tray with lemon soy yogurt sauce served alongside. Wide landscape hero framing, dish centered with clear edges, natural window light on a warm neutral surface, accurate home-cooked texture. Show only this finished recipe with no text, graphics, branding, people, hands or unlisted garnishes.",
+    "nutrition_calculation_sha256": "67ea9742e0765682a9fc66283f14c89cc477d28636c003c286e1ca63494cf0a0"
+  }
+}

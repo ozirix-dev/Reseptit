@@ -1,0 +1,203 @@
+{
+  "recipeId": "herne-auringonkukkalevite",
+  "sourceHash": "85f125acdceb6dad3d22606cedfa62b612a847c5af17948cc603ffb5c1ae874f",
+  "calculatedAt": "2026-11-12",
+  "batchId": "batch-519",
+  "servings": 4,
+  "scope": "Annoksen laskennallinen makroarvio reseptin raaka-aineista. Yleiset koostumustiedot ovat Fineli Release 20 -poiminnasta.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "amount": 200,
+      "unit": "g",
+      "item": "pakasteherneitä",
+      "state": "FROZ",
+      "matchEvidence": "Fineli Release 20 #34229 HERNE, VIHREÄ, PAKASTE. Ainesosan yleinen koostumus.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Määrä kuvaa syötävää tai reseptissä käytettävää osaa.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Laskennassa annoksiin jaetaan käytetty aines; haihtuva vesi ei muuta annoskohtaisia makroja.",
+      "record": {
+        "id": "fineli-34229-release-20",
+        "name": "HERNE, VIHREÄ, PAKASTE",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/34229",
+        "retrievedAt": "2026-11-12",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "FROZ",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 9.36,
+          "fibre": 3.1,
+          "polyols": 0,
+          "protein": 5.06,
+          "fat": 0.864
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 SUGOH -arvo kiinnitetyssä lähdepoiminnassa."
+      }
+    },
+    {
+      "amount": 2,
+      "unit": "rkl",
+      "item": "kuorittuja auringonkukansiemeniä",
+      "state": "DRIE",
+      "matchEvidence": "Fineli Release 20 #11212 AURINGONKUKANSIEMEN, KUORITTU. Ainesosan yleinen koostumus.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Määrä kuvaa syötävää tai reseptissä käytettävää osaa.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Laskennassa annoksiin jaetaan käytetty aines; haihtuva vesi ei muuta annoskohtaisia makroja.",
+      "record": {
+        "id": "fineli-11212-release-20",
+        "name": "AURINGONKUKANSIEMEN, KUORITTU",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11212",
+        "retrievedAt": "2026-11-12",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "DRIE",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 2.72,
+          "fibre": 6.8,
+          "polyols": 0,
+          "protein": 24.3,
+          "fat": 56.1
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 SUGOH -arvo kiinnitetyssä lähdepoiminnassa."
+      },
+      "gramsPerUnit": 10,
+      "conversionEvidence": "Fineli Release 20 #11212, portion_mass_g RKL."
+    },
+    {
+      "amount": 1,
+      "unit": "rkl",
+      "item": "sitruunamehua",
+      "state": "MASH",
+      "matchEvidence": "Fineli Release 20 #11557 TÄYSMEHU, SITRUUNATÄYSMEHU, LAIMENTAMATON. Ainesosan yleinen koostumus.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Määrä kuvaa syötävää tai reseptissä käytettävää osaa.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Laskennassa annoksiin jaetaan käytetty aines; haihtuva vesi ei muuta annoskohtaisia makroja.",
+      "record": {
+        "id": "fineli-11557-release-20",
+        "name": "TÄYSMEHU, SITRUUNATÄYSMEHU, LAIMENTAMATON",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11557",
+        "retrievedAt": "2026-11-12",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "MASH",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 1.6,
+          "fibre": 0.1,
+          "polyols": 0,
+          "protein": 0.31,
+          "fat": 0
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 SUGOH -arvo kiinnitetyssä lähdepoiminnassa."
+      },
+      "gramsPerUnit": 15,
+      "conversionEvidence": "Fineli Release 20 #11557, portion_mass_g RKL."
+    },
+    {
+      "amount": 2,
+      "unit": "rkl",
+      "item": "rypsiöljyä",
+      "state": "IND",
+      "matchEvidence": "Fineli Release 20 #535 RYPSIÖLJY. Ainesosan yleinen koostumus.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Määrä kuvaa syötävää tai reseptissä käytettävää osaa.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Laskennassa annoksiin jaetaan käytetty aines; haihtuva vesi ei muuta annoskohtaisia makroja.",
+      "record": {
+        "id": "fineli-535-release-20",
+        "name": "RYPSIÖLJY",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/535",
+        "retrievedAt": "2026-11-12",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "IND",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 100
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 SUGOH -arvo kiinnitetyssä lähdepoiminnassa."
+      },
+      "gramsPerUnit": 13.5,
+      "conversionEvidence": "Fineli Release 20 #535, portion_mass_g RKL."
+    },
+    {
+      "amount": 0.25,
+      "unit": "tl",
+      "item": "suolaa",
+      "state": "IND",
+      "matchEvidence": "Fineli Release 20 #30 RUOKASUOLA, JODIOITU. Ainesosan yleinen koostumus.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Määrä kuvaa syötävää tai reseptissä käytettävää osaa.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Laskennassa annoksiin jaetaan käytetty aines; haihtuva vesi ei muuta annoskohtaisia makroja.",
+      "record": {
+        "id": "fineli-30-release-20",
+        "name": "RUOKASUOLA, JODIOITU",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/30",
+        "retrievedAt": "2026-11-12",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "IND",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0.63,
+          "fat": 0
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 SUGOH -arvo kiinnitetyssä lähdepoiminnassa."
+      },
+      "gramsPerUnit": 6.5,
+      "conversionEvidence": "Fineli Release 20 #30, portion_mass_g TL."
+    },
+    {
+      "amount": 0.125,
+      "unit": "tl",
+      "item": "jauhettua mustapippuria",
+      "state": "DRIE",
+      "matchEvidence": "Fineli Release 20 #11177 MUSTAPIPPURI. Ainesosan yleinen koostumus.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Määrä kuvaa syötävää tai reseptissä käytettävää osaa.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Laskennassa annoksiin jaetaan käytetty aines; haihtuva vesi ei muuta annoskohtaisia makroja.",
+      "record": {
+        "id": "fineli-11177-release-20",
+        "name": "MUSTAPIPPURI",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11177",
+        "retrievedAt": "2026-11-12",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "DRIE",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 38.31,
+          "fibre": null,
+          "polyols": null,
+          "protein": 10.9,
+          "fat": 3.3
+        },
+        "polyolsSourceVerified": false
+      },
+      "gramsPerUnit": 2,
+      "conversionEvidence": "Fineli Release 20 #11177, portion_mass_g TL."
+    }
+  ],
+  "publicationStatus": "WITHHELD_SOURCE_INCOMPLETE",
+  "withholdingReason": "jauhettua mustapippuria: kuitu, polyolit puuttuu Finelin tietueesta 11177."
+}

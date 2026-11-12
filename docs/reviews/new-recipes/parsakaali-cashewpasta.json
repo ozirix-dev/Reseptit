@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "recipe_id": "parsakaali-cashewpasta",
+  "source_path": "reseptit/paaruoat/parsakaali-cashewpasta.md",
+  "source_sha256": "5605fc1bc15bc7222587b4cccbe5da79c5bcde4baca3360a398526276f201ecd",
+  "decision": "approved",
+  "reviewed_by": "Codex – kirjallinen toimituksellinen katselmointi",
+  "reviewed_at": "2026-11-12",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.k-ruoka.fi/reseptit/parsakaalipasta"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/parsakaali-cashewpasta.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Täysjyväpasta, uuniparsakaali ja cashewpähkinä eroavat parsapastan tuorepastasta, parsasta ja pinjansiemenistä."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "8 ainesriviä tarkistettu. Käyttömuoto ja määrä täsmäävät valmistusvaiheisiin. Kuumenna uuni 200 asteeseen. Irrota parsakaalin nuput. Kuori varren kova pinta ja leikkaa pehmeä sisus ohuiksi viipaleiksi."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Kypsennysjärjestys ja kypsyyden tai valmiuden tunnusmerkit arvioitu vertailuohjeesta. Sekoita kuumaan pastaan parsakaali, cashewpähkinät, loppu öljy, pippuri ja puolet parmesaanista. Lisää keitinvettä vähän kerrallaan, kunnes pasta sekoittuu helposti. Jaa annoksiin ja ripottele loppu juusto päälle."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Sisältää vehnää, cashewpähkinää ja maitoa."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Kolme annosta. Paahda kasvikset samalla kun keität spagetin ja paahdat pähkinät."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "kuivaa täysjyväspagettia: lähde puuttuu. valkosipulinkynttä: kuitu puuttuu Finelin tietueesta 393. jauhettua mustapippuria: kuitu, polyolit puuttuu Finelin tietueesta 11177. parmesaania raastettuna: lähde puuttuu."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Reseptille ei ole hyväksyttyä GI- ja GK-sidosta. Lähdeversio on kiinnitetty GK-pending-rekisteriin."
+    }
+  },
+  "supplementary_evidence": {
+    "physical_cook_test": false,
+    "image_path": "kuvat/paaruoat/parsakaali-cashewpasta.webp",
+    "image_sha256": "a4e35da2cb529ecf0c2530f8c21efc07115d79c6d4e9cc5538d49643412df45f",
+    "image_review": "Täysjyväspagettia, paahdettuja parsakaalinuppuja, cashewpähkinöitä ja juustoraastetta",
+    "image_method": "Built-in ImageGen",
+    "image_prompt": "Create one original realistic Finnish cookbook photograph of whole wheat spaghetti tossed with oven-roasted small broccoli florets, toasted cashews and finely grated hard cheese. Wide landscape hero framing, dish centered with clear edges, natural window light on a warm neutral surface, accurate home-cooked texture. Show only this finished recipe with no text, graphics, branding, people, hands or unlisted garnishes.",
+    "nutrition_calculation_sha256": "9a251192d9afc70d4b2ec72342251ac148977fb73fee438ae2fc79038b0acc76"
+  }
+}

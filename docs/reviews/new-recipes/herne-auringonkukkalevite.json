@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "recipe_id": "herne-auringonkukkalevite",
+  "source_path": "reseptit/alkuruoat/herne-auringonkukkalevite.md",
+  "source_sha256": "6d21174f64ed0107311f089d606470dcca5571c15b4b4d4613ac82a436d83839",
+  "decision": "approved",
+  "reviewed_by": "Codex – kirjallinen toimituksellinen katselmointi",
+  "reviewed_at": "2026-11-12",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.martat.fi/reseptit/hernelevite-2/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/herne-auringonkukkalevite.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Vihreistä herneistä ja auringonkukansiemenistä tehty levite eroaa tahinia ja kikherneitä sisältävästä hummuksesta."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "6 ainesriviä tarkistettu. Käyttömuoto ja määrä täsmäävät valmistusvaiheisiin. Kuumenna herneet pakkauksen ohjeen mukaan. Valuta ne, jäähdytä nopeasti kylmällä juoksevalla vedellä ja valuta uudelleen huolellisesti."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Kypsennysjärjestys ja kypsyyden tai valmiuden tunnusmerkit arvioitu vertailuohjeesta. Soseuta herneet ja siemenet kapeassa kulhossa. Lisää sitruunamehu ja öljy, soseuta vielä hetki ja mausta suolalla ja pippurilla."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Säilytä valmis levite jääkaapissa. Huomioi auringonkukansiemenet, jos tarjoat levitettä siemenallergiselle."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Neljän hengen levite. Siementen paahto ja herneiden kuumennus onnistuvat rinnakkain."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "jauhettua mustapippuria: kuitu, polyolit puuttuu Finelin tietueesta 11177."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Reseptille ei ole hyväksyttyä GI- ja GK-sidosta. Lähdeversio on kiinnitetty GK-pending-rekisteriin."
+    }
+  },
+  "supplementary_evidence": {
+    "physical_cook_test": false,
+    "image_path": "kuvat/alkuruoat/herne-auringonkukkalevite.webp",
+    "image_sha256": "05f6619ed83057ebf8396972e5f26f8137c9196f0f1c50766ed422ac2cd6f05a",
+    "image_review": "Vihreää herne-auringonkukkalevitettä pienessä kulhossa",
+    "image_method": "Built-in ImageGen",
+    "image_prompt": "Create one original realistic Finnish cookbook photograph of a small bowl of thick vivid green pea and sunflower seed spread, gently coarse from blending. Wide landscape hero framing, dish centered with clear edges, natural window light on a warm neutral surface, accurate home-cooked texture. Show only this finished recipe with no text, graphics, branding, people, hands or unlisted garnishes.",
+    "nutrition_calculation_sha256": "cc9f657da94148e4522259dfd647824284379150b74c65b29718b56c280dff5c"
+  }
+}

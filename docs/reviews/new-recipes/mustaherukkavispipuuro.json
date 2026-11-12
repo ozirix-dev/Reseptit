@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "recipe_id": "mustaherukkavispipuuro",
+  "source_path": "reseptit/aamupalat/mustaherukkavispipuuro.md",
+  "source_sha256": "0568c5c9892650610947e1a8034a28baaed2bd2376ec75058421ad7098ca82ac",
+  "decision": "approved",
+  "reviewed_by": "Codex – kirjallinen toimituksellinen katselmointi",
+  "reviewed_at": "2026-11-12",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.martat.fi/reseptit/mustaherukkavispipuuro-2/",
+      "https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/turvallisen-kayton-ohjeet/ulkomaiset-pakastemarjat/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/mustaherukkavispipuuro.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Kylmäksi jäähdytetty ja vatkattu mustaherukkamannapuuro eroaa ruisjauhoista keitetystä lämpimästä puolukkapuurosta."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "5 ainesriviä tarkistettu. Käyttömuoto ja määrä täsmäävät valmistusvaiheisiin. Soseuta herukat. Siirrä 1 dl vedestä ja marjasose pieneen kattilaan ja keitä seosta vähintään 2 minuuttia."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Kypsennysjärjestys ja kypsyyden tai valmiuden tunnusmerkit arvioitu vertailuohjeesta. Vatkaa puuroa sähkövatkaimella muutama minuutti, kunnes puuro vaalenee ja kuohkeutuu. Jaa annoksiin."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Sisältää vehnää. Marjasose keitetään vähintään kaksi minuuttia, jotta myös ulkomaiset pakastemarjat käsitellään Ruokaviraston ohjeen mukaisesti."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Kahdeksan pientä kulhollista. Arvio sisältää nopean jäähdytyksen kylmässä vesihauteessa ja vatkauksen."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "tummia mannasuurimoita: polyolit puuttuu Finelin tietueesta 113. mustaherukoita: polyolit puuttuu Finelin tietueesta 444."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Reseptille ei ole hyväksyttyä GI- ja GK-sidosta. Lähdeversio on kiinnitetty GK-pending-rekisteriin."
+    }
+  },
+  "supplementary_evidence": {
+    "physical_cook_test": false,
+    "image_path": "kuvat/aamupalat/mustaherukkavispipuuro.webp",
+    "image_sha256": "7d32cfa03edf5728ff8bd7fd86931573a683674eff04c2d1bf54c88f4bbcbce4",
+    "image_review": "Kuohkeaa violettia mustaherukkavispipuuroa jälkiruokakulhossa",
+    "image_method": "Built-in ImageGen",
+    "image_prompt": "Create one original realistic Finnish cookbook photograph of airy Finnish blackcurrant whipped semolina pudding in a small ceramic dessert bowl, fluffy lavender-purple mousse with soft ridges. Wide landscape hero framing, dish centered with clear edges, natural window light on a warm neutral surface, accurate home-cooked texture. Show only this finished recipe with no text, graphics, branding, people, hands or unlisted garnishes.",
+    "nutrition_calculation_sha256": "c585b98cca34196f22b428a6a77e4cc12ac7c80cd2b5c0bae2a9c5ef3529bd48"
+  }
+}
