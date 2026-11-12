@@ -75,7 +75,7 @@ Mjukt vetebröd döljer en potatisfyllning kryddad med spiskummin och chili. Ste
 1. Blanda mjöl, salt och vatten. Knåda ihop till en mjuk deg och täck i 20 minuter.
 2. Koka potatisen tills den är kokt. Skala och mosa. Blanda i spiskummin, chili, garam masala och koriander.
 3. Dela degen i 12 bitar och fyllningen i 6 portioner. Kavla ut degbitarna till små rundlar.
-4. Lägg fyllningen i mitten av en cirkel, täck med den andra degen och nyp ihop kanterna. Rulla försiktigt till en tunn limpa.
+4. Lägg fyllningen i mitten av en cirkel, täck med den andra degen och nyp ihop kanterna. Kavla försiktigt ut till ett tunt tunnbröd.
 5. Stek i het panna på båda sidor. Tillsätt lite ghee i pannan och stek tills gyllenbruna fläckar syns på ytan.
 6. Servera med yoghurt, inlagd mango eller raita.
 

@@ -12,6 +12,8 @@ import { projectA8FiEditorialSource } from "./a8-editorial-display";
 import { projectC20FiDisplay, c20FiDisplayPaths } from "./c20-fi-editorial-display";
 import { breakfastFiQualityPaths, projectBreakfastFiQualityDisplay } from "./fi-breakfast-quality-display";
 
+import { projectC13FiDisplay } from "./c13-fi-public-display";
+
 const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 export const sourceCategories = ["alkuruoat", "paaruoat", "jalkiruoat", "leivonnaiset", "aamupalat", "valipalat"] as const;
 const locales = ["en", "sv", "th"] as const;
@@ -153,6 +155,13 @@ export function knownTermErrors(source: Frontmatter, target: Frontmatter, locale
   return [...new Set(issues)];
 }
 
+export function projectTranslationAuditSource(file: string, raw: string): string {
+  if (file === "reseptit/aamupalat/lahi-ita-manakish-zaatarilla.md" ||
+      file === "reseptit/aamupalat/valimerellinen-halloumi-tomaattileipa.md")
+    return projectC13FiDisplay(file, raw);
+  return projectBreakfastFiQualityDisplay(file, raw);
+}
+
 export async function auditTranslations(recipeIds?: string[]): Promise<TranslationAuditResult> {
   const filter = recipeIds ? new Set(recipeIds) : undefined;
   const sourcePaths = (await Promise.all(sourceCategories.map((category) => markdownFiles(path.join(repoRoot, "reseptit", category))))).flat();
@@ -160,11 +169,13 @@ export async function auditTranslations(recipeIds?: string[]): Promise<Translati
   // Use the exact SHA-locked public FI display when auditing meaning and
   // generating source semantic hashes for translations. Raw FI files stay
   // untouched for the separate nutrition/GK and source-blob validation.
-  // This is limited to the already-reviewed breakfast overlay allowlist.
+  // C13 is used for the two newly translated sources with reviewed public methods.
   const publicSources = await Promise.all(rawSources.map(async (source) => {
-    if (!breakfastFiQualityPaths.includes(source.path)) return source;
+    const useC13Display = source.path === "reseptit/aamupalat/lahi-ita-manakish-zaatarilla.md" ||
+      source.path === "reseptit/aamupalat/valimerellinen-halloumi-tomaattileipa.md";
+    if (!useC13Display && !breakfastFiQualityPaths.includes(source.path)) return source;
     const raw = await readFile(path.join(repoRoot, source.path), "utf8");
-    const projected = parseMarkdown(projectBreakfastFiQualityDisplay(source.path, raw));
+    const projected = parseMarkdown(projectTranslationAuditSource(source.path, raw));
     if (!projected) throw Error("FI_BREAKFAST_AUDIT_NO_FRONTMATTER: " + source.path);
     const displayed = recipeFrontmatterSchema.parse(projected.data);
     const original = source.data;

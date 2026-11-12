@@ -75,9 +75,9 @@ Kantonilaistyylinen makeansuolainen porsas saa punaruskean pinnan soijasta, huna
 
 ## Valmistus
 
-1. Sekoita hoisinkastike, soijakastike, hunaja, riisiviinietikka, viismauste ja valkosipuli. Säästä ruokalusikallinen marinadia.
+1. Sekoita hoisinkastike, soijakastike, hunaja, riisiviinietikka, viismauste ja valkosipuli. Siirrä ruokalusikallinen marinadia puhtaaseen astiaan ennen kuin lisäät raa'an lihan.
 2. Kääntele porsas marinadissa ja anna maustua jääkaapissa vähintään 30 minuuttia.
-3. Kuumenna uuni 220 asteeseen. Nosta liha ritilälle uunipellin päälle ja paista 25–35 minuuttia. Käännä kerran ja valele marinadilla.
+3. Kuumenna uuni 220 asteeseen. Nosta liha ritilälle uunipellin päälle ja paista 25–35 minuuttia. Käännä kerran ja valele puhtaaseen astiaan siirretyllä marinadilla.
 4. Sivele pinta hunajalla ja paista vielä 3–5 minuuttia, kunnes pinta kiiltää. Varmista, että sisälämpötila on vähintään 70 °C.
 5. Anna lihan levätä 5 minuuttia ja leikkaa viipaleiksi. Tarjoa riisin kanssa.
 

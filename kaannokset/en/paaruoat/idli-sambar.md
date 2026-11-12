@@ -94,7 +94,7 @@ The South Indian classic serves fermented, steamed rice cakes with a tangy lenti
 4. Mix the tamarind and sambar spices into the soup. Simmer until the vegetables are soft.
 5. Heat the oil in a small pan. Add mustard seeds and curry leaves. Pour the spice oil into the sambar soup.
 6. Spoon the idli batter into greased idli moulds or silicone muffin moulds. Steam for 10–12 minutes; a skewer inserted into a cooked idli should come out without raw batter.
-7. Let the idlis rest for a while, remove from the pan and serve with warm sambar soup.
+7. Let the idlis rest for a while, remove from the moulds and serve with warm sambar soup.
 
 ## Notes
 

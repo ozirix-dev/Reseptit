@@ -94,7 +94,7 @@ Den sydindiska klassikern serverar jästa, ångade riskakor med en syrlig linsgr
 4. Blanda ner tamarind och sambarkryddor i soppan. Sjud tills grönsakerna är mjuka.
 5. Hetta upp oljan i en liten panna. Tillsätt senapsfrön och curryblad. Häll kryddoljan i sambarsoppan.
 6. Fördela idlismeten i smorda idliformar eller silikonmuffinsformar. Ångkoka i 10–12 minuter; en provsticka i en färdig idli ska komma ut utan rå smet.
-7. Låt idlisen vila en stund, ta ur pannan och servera med varm sambarsoppa.
+7. Låt idlisen vila en stund, lossa ur formarna och servera med varm sambarsoppa.
 
 ## Anteckningar
 

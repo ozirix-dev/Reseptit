@@ -69,7 +69,7 @@ Servera med hastigt stekta zucchiniremsor i stället för pasta.
 
 1. Bryn köttfärsen och hackad lök i smör.
 2. Blanda i tomatpurén och grädden. Krydda och låt sjuda i 10 minuter.
-3. Skär zucchinin i strimlor med en skalkniv eller en spiralskärare.
+3. Skär zucchinin i strimlor med en potatisskalare eller en spiralskärare.
 4. Stek remsorna i en panna i 2–3 minuter och servera med såsen.
 
 ## Anteckningar

@@ -85,7 +85,7 @@ Nudlar i Sichuan-stil serveras med fläsksås kryddad med sesam, chili och soja.
 
 1. Koka nudlarna enligt förpackningen. Tillsätt pak choi i kokvattnet den sista minuten om du använder det. Spara en deciliter kokvatten.
 2. Bryn köttfärsen i olja. Tillsätt vitlök och soja och fräs tills det är genomstekt.
-3. Blanda sesampasta, chiliolja, vinäger och kokande vatten i en skål för att få en slät sås.
+3. Blanda sesampasta, chiliolja, svart risvinäger och det sparade nudelvattnet i en skål för att få en slät sås.
 4. Dela såsen i skålar. Tillsätt nudlarna och malet fläsk.
 5. Avsluta med krossade jordnötter och vårlök. Rör om innan du äter.
 

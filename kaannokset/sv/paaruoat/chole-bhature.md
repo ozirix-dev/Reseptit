@@ -98,10 +98,10 @@ Punjabi chole bhature kombinerar en aromatisk kikärtscurrysås med luftigt stek
 
 1. Koka de blötlagda kikärtorna i rent vatten med salt och eventuellt en tepåse tills de är mjuka, ca 45-60 minuter. Låt rinna av och spara buljongen.
 2. Fräs löken i olja. Tillsätt vitlök och ingefära, fräs en stund. Tillsätt tomat, chole masala och spiskummin. Sjud i 10 minuter.
-3. Tillsätt kikärtorna och en skvätt matlagningsfond. Sjud i 15 minuter och krossa några kikärtor för att tjockna såsen.
+3. Tillsätt kikärtorna och en skvätt av kikärternas kokvatten. Sjud i 15 minuter och krossa några kikärtor för att tjockna såsen.
 4. Blanda mjöl, yoghurt, bakpulver och salt. Tillsätt vatten gradvis och knåda till en mjuk deg. Täck över och låt vila i 30 minuter.
 5. Dela degen i 6 delar och rulla till ovala bröd. Hetta upp frityroljan till ca 180 grader.
-6. Stek bötturen en i taget, tryck till lätt med en hålslev för att få dem att jäsa. Vänd och stek tills de är gyllenbruna.
+6. Fritera ett bhaturebröd i taget. Tryck till lätt med en hålslev så att brödet puffar upp. Vänd och stek tills de är gyllenbruna.
 7. Servera bröden varma med kikärtscurryn.
 
 ## Anteckningar

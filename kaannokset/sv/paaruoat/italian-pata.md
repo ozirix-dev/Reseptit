@@ -76,7 +76,7 @@ De vägda ingredienserna visas ovan.
 
 1. Bryn 500 g nötfärs med 17 % fett i 12 g olivolja. Tillsätt 3,5 g vitlök, 120 g röd paprika och 400 g zucchini.
 2. Tillsätt 200 g krossade tomater, 2 g oregano och 1 g svartpeppar. Tillaga köttet och grönsakerna helt.
-3. Rör ner 150 g mozzarella med 20 % fett i den varma maten. Fördela hela pannan och all vätska på fyra portioner. Vanlig pasta ingår inte i denna version.
+3. Rör ner 150 g mozzarella med 20 % fett i den varma maten. Fördela allt innehåll i pannan, inklusive vätskan, på fyra portioner. Vanlig pasta ingår inte i denna version.
 
 ## Anteckningar
 

@@ -57,9 +57,9 @@ export const reviewedDietFilters: Readonly<Record<string, ReviewedDietSource>> =
     tags: ["vegetarian", "vegan", "pescatarian"],
     sourceBlobShas: {
       fi: "cd792d70d50753a5f8f93eeca030ec3743cfb209",
-      en: "226fcc49b596963b806566d7d303f065b49ba257",
-      sv: "82048ac89eb3ad107f3e1c76eab9d3a74a5d5aa5",
-      th: "17cfb4760fec649a73ee27226a6ea6cddeff5249",
+      en: "cdf5c01a82e3b2e0180fe655c817af1f26c76433",
+      sv: "726acb81b821bd42962cd169dab3227eac8ca6a0",
+      th: "ecd6f325344988af9ab6242ee57d49714937b32f",
     },
   },
   caponata: {
@@ -140,7 +140,7 @@ export const reviewedDietFilters: Readonly<Record<string, ReviewedDietSource>> =
   },
   "gazpacho": {
     tags: ["vegetarian","pescatarian"],
-    sourceBlobShas: { fi: "61b92f37817a09c4d04bdaba1acc378c1918f0a3", en: "b3a4626ab133b5d6e4d21a8948297b655dd6d9b6", sv: "81a34db194bd6ea97cfe0a9e2082a135f0d7042b", th: "0f484839ef2cba58912eb1b5bf808695c5720fe3" },
+    sourceBlobShas: { fi: "61b92f37817a09c4d04bdaba1acc378c1918f0a3", en: "ceab50d7bd11dac188c93a02564415920061ae2a", sv: "3cfcd586c9777924e8e7edd1842ece128343a707", th: "853306ba95c59d523b2d4111438ab56d9e6530e8" },
   },
   "palak-paneer": {
     tags: ["vegetarian","pescatarian"],

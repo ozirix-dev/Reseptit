@@ -76,11 +76,11 @@ translation_of: gulab-jamun
 
 # Gulab Jamun – sweet balls simmered in cardamom syrup
 
-The soft milk flour balls are slowly fried until golden brown and soaked in a syrup flavored with rose water and cardamom.
+The soft milk-powder dumplings are slowly fried until golden brown and soaked in a syrup flavored with rose water and cardamom.
 
 ## Description
 
-The soft milk flour balls are slowly fried until golden brown and soaked in a syrup flavored with rose water and cardamom.
+The soft milk-powder dumplings are slowly fried until golden brown and soaked in a syrup flavored with rose water and cardamom.
 
 ## Preparation
 

@@ -69,7 +69,7 @@ Serve it with briefly fried courgette ribbons instead of pasta.
 
 1. Brown the minced meat and chopped onion in butter.
 2. Mix in the tomato puree and cream. Season and simmer for 10 minutes.
-3. Cut the zucchini into strips with a paring knife or a spiral cutter.
+3. Cut the zucchini into strips with a vegetable peeler or a spiral cutter.
 4. Fry the strips in a pan for 2–3 minutes and serve with the sauce.
 
 ## Notes

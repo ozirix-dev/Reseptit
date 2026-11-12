@@ -98,7 +98,7 @@ Punjabi chole bhature combines an aromatic chickpea curry sauce with airy fried 
 
 1. Boil the soaked chickpeas in clean water with salt and, if desired, a tea bag until they are soft, about 45-60 minutes. Drain and save the broth.
 2. Saute the onion in oil. Add garlic and ginger, fry for a while. Add tomato, chole masala and cumin. Simmer for 10 minutes.
-3. Add the chickpeas and a splash of cooking stock. Simmer for 15 minutes and crush a few chickpeas to thicken the sauce.
+3. Add the chickpeas and a splash of the chickpea cooking liquid. Simmer for 15 minutes and crush a few chickpeas to thicken the sauce.
 4. Mix flour, yogurt, baking powder and salt. Add water gradually and knead into a soft dough. Cover and let rest for 30 minutes.
 5. Divide the dough into 6 parts and roll into oval loaves. Heat the frying oil to about 180 degrees.
 6. Fry the bhature one at a time, press lightly with a slotted spoon to make them rise. Turn and fry until golden brown.

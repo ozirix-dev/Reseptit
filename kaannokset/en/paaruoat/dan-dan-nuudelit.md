@@ -85,7 +85,7 @@ Sichuan-style noodles are served with pork sauce seasoned with sesame, chili and
 
 1. Cook the noodles according to the packet instructions. If using pak choi, add it to the cooking water for the final minute. Reserve a decilitre of cooking water.
 2. Brown the minced meat in oil. Add garlic and soy sauce and fry until cooked.
-3. Mix sesame paste, chili oil, vinegar and boiling water in a bowl to make a smooth sauce.
+3. Mix sesame paste, chili oil, black rice vinegar and the reserved noodle cooking water in a bowl to make a smooth sauce.
 4. Divide the sauce into bowls. Add the noodles and ground pork.
 5. Finish with crushed peanuts and spring onions. Stir before eating.
 
