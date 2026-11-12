@@ -71,8 +71,8 @@ Varven fylls med nötfärs, tomat och grädde och toppas med ost.
 
 1. Skär zucchinin i långa tunna skivor och torka torrt.
 2. Bryn köttfärsen och löken. Tillsätt krossade tomater och kryddor, låt sjuda i 10 minuter.
-3. Varva zucchinin, såsen och grädden i pannan. Avsluta med ost.
-4. Grädda i 200 °C i ca 35 minuter. Låt det sitta i 10 minuter.
+3. Varva zucchini, sås och grädde i en ugnsform. Toppa med osten.
+4. Grädda i 200 °C i cirka 35 minuter. Låt lasagnen vila i 10 minuter.
 
 ## Anteckningar
 

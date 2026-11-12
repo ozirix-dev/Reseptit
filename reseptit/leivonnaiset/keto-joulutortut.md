@@ -61,10 +61,10 @@ Keskelle lisätään luumuhilloa, jonka hiilihydraattipitoisuus riippuu tuottees
 
 ## Valmistus
 
-1. Kuumenna uuni 200 °C:seen. Sekoita mantelijauho, pehmeä voi, tuorejuusto ja kananmuna taikinaksi.
-2. Kauli taikina leivinpaperien välissä ja leikkaa neliöiksi. Tee kulmiin viillot ja käännä sakarat keskelle.
-3. Lisää jokaisen tortun keskelle teelusikallinen luumuhilloa.
-4. Sekoita mantelijauho, pehmeä voi, tuorejuusto ja kananmuna tasaiseksi taikinaksi. Jäähdytä, kauli kahden leivinpaperin välissä ja leikkaa kahdeksaksi neliöksi. Leikkaa kulmiin viillot, taita joka toinen kärki keskelle ja lisää keskelle mitattu luumuhillo. Paista 200-asteisessa uunissa, kunnes tortut ovat kullanruskeita.
+1. Kuumenna uuni 200 °C:seen. Sekoita mantelijauho, pehmeä voi, tuorejuusto ja kananmuna tasaiseksi taikinaksi.
+2. Jäähdytä taikina, kauli se kahden leivinpaperin välissä ja leikkaa kahdeksaksi neliöksi. Viillä kulmat ja taita joka toinen kärki keskelle.
+3. Jaa 40 g luumuhilloa tasan torttujen keskelle.
+4. Paista 12–15 minuuttia, kunnes tortut ovat kullanruskeita. Anna jäähtyä pellillä ennen siirtämistä.
 
 ## Muistiinpanot
 

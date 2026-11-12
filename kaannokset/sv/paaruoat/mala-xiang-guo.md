@@ -82,7 +82,7 @@ Eldig och aromatisk wok, där kött, tofu och grönsaker smaksätts med chiliolj
 ## Tillagning
 
 1. Koka broccoli och lotusrot i 2 minuter. Dränera väl.
-2. Hetta upp woken och oljan. Stek kycklingen tills den är genomstekt i omgångar.
+2. Hetta upp oljan i en wok. Stek kycklingen i omgångar tills den är genomstekt.
 3. Tillsätt chilipasta, Sichuanpeppar och vitlök. Fräs i 30 sekunder.
 4. Tillsätt tofu, svamp, broccoli och lotusrot. Stek i några minuter tills grönsakerna är kokta men krispiga.
 5. Smaksätt med sojasås och sesamolja. Avsluta med vårlök.

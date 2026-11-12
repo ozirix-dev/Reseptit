@@ -85,12 +85,12 @@ En tunn, frasig dosa av jäst smet med ris och urad dal fylls med kryddig potati
 
 ## Tillagning
 
-1. Skölj riset och linserna separat. Blötlägg dem med bockhornsklöver i 4 timmar. Dränera.
+1. Skölj riset och linserna var för sig. Blötlägg dem med bockhornsklöver i 4 timmar. Låt rinna av.
 2. Mixa ris och urad dal separat. Tillsätt lite vatten i taget, bara så mycket att blandningen går att mixa. Mixa urad dal slät och luftig och riset finkornigt. Blanda till en tjock men hällbar smet.
 3. Täck över smeten och jäs på en varm plats i 8–12 timmar. Blanda i saltet.
 4. Koka potatisen tills den är kokt och tärna den. Fräs senapsfrön, lök, ingefära, gurkmeja och curryblad i olja. Tillsätt potatisen och koriandern.
 5. Rör om den jästa smeten och tillsätt vid behov lite vatten i taget tills den går att breda ut tunt med en slev. Hetta upp en stekpanna med non-stick-beläggning och bred ut en slev smet till en tunn cirkel.
-6. Stek på medelvärme tills ytan torkar och undersidan brunnar. Tillsätt lite olja i kanterna.
+6. Stek på medelvärme tills ytan torkar och undersidan får färg. Tillsätt lite olja längs kanterna.
 7. Skeda potatisfyllningen i mitten, vik ihop dosan och servera genast.
 
 ## Anteckningar

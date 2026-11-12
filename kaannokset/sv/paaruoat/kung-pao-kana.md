@@ -88,7 +88,7 @@ Wokad kyckling, jordnötter och chili serveras med kokt vitt ris.
 
 2. Blanda soja, risvinäger, socker och vatten till såsen.
 
-3. Hetta upp en wok, tillsätt olja och stek kycklingen i omgångar. Lägg åt sidan.
+3. Hetta upp en wok, tillsätt oljan och stek kycklingen i omgångar tills den är genomstekt. Lägg åt sidan.
 
 4. Stek chili, vitlök och ingefära hastigt. Lägg tillbaka kycklingen, tillsätt såsen och rör tills den blir glansig.
 

@@ -82,7 +82,7 @@ Mjuk spenatsås och stekta paneerkuber är en klassisk vegetarisk rätt. Servera
 
 1. Skölj spenaten och blanchera i kokande vatten i en minut. Kyl snabbt och låt rinna av.
 2. Purea spenaten till en grov puré.
-3. Bryn paneerkuberna i en panna i en matsked olja. Avsätta.
+3. Bryn paneerkuberna i en matsked olja och lägg dem åt sidan.
 4. Fräs löken mjuk i resten av oljan. Tillsätt vitlök, ingefära, spiskummin och gurkmeja. Fräs i en minut.
 5. Tillsätt spenatpuré, salt och en halv deciliter vatten. Sjud i 8 minuter.
 6. Tillsätt grädde, garam masala och paneer. Värm försiktigt i 5 minuter. Smaksätt med citronsaft.

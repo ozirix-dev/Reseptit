@@ -73,7 +73,7 @@ An airy batter made from urad dal lentils is fried into rings and served with sa
 2. Puree the lentils in small batches with very little water into a thick, spongy paste.
 3. Mix in chili, ginger, curry leaves, salt and rice flour.
 4. Wet your hands. Shape the dough into balls and make a hole in the middle.
-5. Heat the oil to 170 degrees. Fry the vado a few at a time for 3-4 minutes per side until they are golden brown.
+5. Heat the deep-frying oil to 170 °C. Fry a few vadas at a time for 3–4 minutes per side, until golden and cooked through.
 6. Remove to paper towels to drain. Serve hot with chutney or sambar soup.
 
 ## Notes

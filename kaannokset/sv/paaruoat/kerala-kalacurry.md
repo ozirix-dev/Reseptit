@@ -92,7 +92,7 @@ Sydindisk fiskcurry kombinerar de aromatiska smakerna av kokosmjölk, tamarind o
 2. Hetta upp oljan i en gryta. Tillsätt senapsfrön och curryblad. Tillsätt lök, vitlök och ingefära, fräs tills det är mjukt.
 3. Tillsätt gurkmeja, chili, tamarindvatten och salt. Sjud i 5 minuter.
 4. Häll kokosmjölken i grytan och värm långsamt. Koka inte kraftigt.
-5. Tillsätt fisken och låt koka på låg värme i 8–10 minuter, tills fisken spricker när den tillagas.
+5. Tina sejen enligt anvisningen på förpackningen före tillagning. Lägg fisken i såsen och låt sjuda i 8–10 minuter, tills den är genomkokt och lätt delar sig i flagor med en gaffel.
 6. Smaka av och justera saltet. Servera med ris.
 
 ## Anteckningar

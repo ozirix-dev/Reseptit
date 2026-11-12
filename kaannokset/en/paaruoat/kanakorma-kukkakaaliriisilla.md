@@ -68,7 +68,7 @@ Coarsely grated cauliflower is fried as an alternative to rice.
 ## Preparation
 
 1. Saute the chopped onion in butter. Add the diced chicken and brown.
-2. Mix in the korma seasoning, cream and yogurt. Simmer under the lid for about 20 minutes.
+2. Stir in the korma seasoning, cream and yoghurt. Cover and simmer for about 20 minutes, continuing as needed until the chicken is cooked through.
 3. Grate the cauliflower into coarse rice and fry in a pan for 4–5 minutes. Season with salt.
 4. Serve the korma with cauliflower rice.
 

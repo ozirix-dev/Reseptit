@@ -181,7 +181,12 @@ test('Live original results preserve frozen history plus the exact reviewed tran
     const oldNotes = historicallyReviewedChef
       ? (original.split('## Muistiinpanot')[1]?.trim() ?? '').replaceAll('\r\n','\n').replaceAll('\n',lineEnding)
       : normalNotes;
-    return {...row,notes:oldNotes,source_content_hash:historicalSha};
+    const ingredients = row.source_path === 'reseptit/alkuruoat/pani-puri.md'
+      ? row.ingredients.map((item: {note?: string}) => item.note === 'Täytteeseen ja yrttiveteen.'
+        ? {...item, note: 'Noin 1/2 tl; säädä kalafondin suolaisuuden mukaan.'}
+        : item)
+      : row.ingredients;
+    return {...row,ingredients,notes:oldNotes,source_content_hash:historicalSha};
    }
    if (row.source_path === 'reseptit/aamupalat/lahi-ita-manakish-zaatarilla.md' ||
        row.source_path === 'reseptit/aamupalat/valimerellinen-halloumi-tomaattileipa.md') {

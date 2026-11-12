@@ -77,11 +77,11 @@ Chicken and short-grain rice cook together with green beans in a saffron broth.
 
 2. Add green beans and fry briefly. Stir in tomatoes and smoked paprika.
 
-3. Add dry rice and hot broth with saffron. Season with salt and add the rosemary sprig.
+3. Add the dry rice and stir to coat the grains. Pour in the hot saffron-infused stock, season with salt and add the rosemary sprig if using.
 
 4. Cook over medium heat for 8 minutes, then low heat for 12–15 minutes. Do not stir after adding broth.
 
-5. Remove from heat when rice is tender and liquid is absorbed. Cover and rest for 5 minutes; remove rosemary before serving.
+5. Once the rice is tender, the liquid is absorbed and the thickest pieces of chicken reach 75 °C, remove from the heat. Cover loosely, rest for 5 minutes and remove any rosemary before serving.
 
 ## Notes
 

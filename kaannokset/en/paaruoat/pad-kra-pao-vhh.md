@@ -79,7 +79,7 @@ Holy basil, fish sauce and chili bring a recognizable flavor to the dish. Caulif
 ## Preparation
 
 1. Chop the garlic and chili. Heat up a wok or a large frying pan.
-2. Add oil and brown the minced meat until crumbly.
+2. Add the oil and fry the ground pork, breaking it up, until cooked through.
 3. Add garlic and chili. Fry for about 30 seconds.
 4. Mix in fish sauce, soy sauce and erythritol. Add the basil and toss until the leaves soften.
 5. Heat the cauliflower rice in a pan until cooked but crisp.

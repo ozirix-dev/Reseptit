@@ -78,7 +78,7 @@ Helig basilika, fisksås och chili ger en igenkännlig smak till rätten. Blomk�
 ## Tillagning
 
 1. Hacka vitlöken och chilin. Hetta upp en wok eller en stor stekpanna.
-2. Tillsätt olja och bryn köttfärsen smulig.
+2. Tillsätt oljan och stek fläskfärsen smulig och genomstekt.
 3. Tillsätt vitlök och chili. Stek i ca 30 sekunder.
 4. Blanda i fisksås, soja och erytritol. Tillsätt basilikan och rör tills bladen mjuknat.
 5. Värm blomkålsriset i en panna tills det är kokt men knaprigt.

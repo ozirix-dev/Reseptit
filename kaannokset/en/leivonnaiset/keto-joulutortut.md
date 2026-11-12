@@ -56,9 +56,9 @@ Plum jam fills the centres; its carbohydrate content depends on the product.
 ## Preparation
 
 1. Heat the oven to 200 °C. Mix almond flour, soft butter, cream cheese and egg into a dough.
-2. Roll the dough between baking papers and cut into squares. Make incisions in the corners and turn the branches to the center.
-3. Add a teaspoon of plum jam to the center of each tart.
-4. Bake for 12–15 minutes. Allow to cool on the tray before transferring.
+2. Chill the dough, roll it between two sheets of baking paper and cut eight squares. Make a slit at each corner and fold every other point into the centre.
+3. Divide all 40 g of the plum jam evenly among the centres.
+4. Bake for 12–15 minutes, until golden. Leave the pastries to cool on the tray before moving them.
 
 ## Notes
 

@@ -93,7 +93,7 @@ In this low-carb version, the breadcrumbs have been replaced with a small amount
 
 ## Preparation
 
-1. Mix the almond flour and the meatball dough cream. Let it swell for 5 minutes.
+1. Mix the almond flour with the cream reserved for the meatballs. Let the flour hydrate for 5 minutes.
 2. Chop the onion. Add minced meat, egg, onion, salt, black pepper and allspice to the bowl. Mix just enough to combine the ingredients.
 3. Roll the dough into small meatballs. Fry them in butter in a pan in several batches until brown and cooked all over. Transfer to a plate.
 4. Pour the meat broth and whipping cream into the pan. Bring to a boil and cook slowly for 5-8 minutes until the sauce thickens. Return the meatballs to the pan to warm up.

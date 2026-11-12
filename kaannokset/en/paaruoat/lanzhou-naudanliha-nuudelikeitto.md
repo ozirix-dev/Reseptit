@@ -82,7 +82,7 @@ Warm noodle soup in a clear beef broth, with spicy meat slices, spring onions an
 ## Preparation
 
 1. Put the beef in a pot and cover with water. Boil, skim off the foam and pour off the water.
-2. Add 2 liters of clean water, onion, ginger, cinnamon, star anise and salt to the pot. Simmer under the lid quietly for about 2 hours until the meat is tender.
+2. Add 2 litres of fresh water, onion, ginger, cinnamon, star anise and salt to the pot. Cover and simmer gently for about 2 hours, until the beef is tender.
 3. Remove the meat from the broth and strain the broth. Cut the meat into slices.
 4. Cook the noodles according to the instructions on the package. Add the radish to the broth and cook for 5 minutes.
 5. Divide the noodles into bowls, add the meat and hot broth. Finish with spring onions, coriander and chili oil.

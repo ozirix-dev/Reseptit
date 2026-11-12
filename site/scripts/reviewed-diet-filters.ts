@@ -95,12 +95,12 @@ export const reviewedDietFilters: Readonly<Record<string, ReviewedDietSource>> =
       fi: "b22e39b5d034debf7203b7a7129a021970cba925",
       en: "4a0eb25207e102e5a2bbb9535eb3d9aff4dd5782",
       sv: "93557e26d465775c70933afcc244e93b2bd4c9c9",
-      th: "d30fda0a0b247164feff37614cc9b51bf42da639",
+      th: "cad8468700cf5afc7a5d17d4038fe645542be1ba",
     },
   },
   "medu-vada": {
     tags: ["vegetarian","vegan","pescatarian"],
-    sourceBlobShas: { fi: "7fac16fe748bfd12ad0ffe169cd70a7e7e850ce7", en: "88615c82096087e7c16e73604bf7820c792f8fca", sv: "663b5c18a7cac5fe2c2875bd2c65855cd9b96b80", th: "d32281e4689cd12ca5368ad70e333e6882a811ca" },
+    sourceBlobShas: { fi: "9dbe56bc2ca4389cdd1924796e2e65c550018a42", en: "ae71ae2dcca513006efad6d183585786fe43d0bb", sv: "c1a091c8496875536577f34a62264b8c616a4942", th: "d343e434d76415dcdf5ae4d6975aff7a70b3f399" },
   },
   "tabbouleh": {
     tags: ["vegetarian","vegan","pescatarian"],
@@ -136,7 +136,7 @@ export const reviewedDietFilters: Readonly<Record<string, ReviewedDietSource>> =
   },
   "paneer-tikka": {
     tags: ["vegetarian","pescatarian"],
-    sourceBlobShas: { fi: "3ea73d0d275bc53355bdd705fc3a076ccd8099b0", en: "0db3e9fb6e9ba258cb0ec46b38add63175483aef", sv: "9037586927abd14f8c3c82a9379f44c4da345530", th: "09c5fb7fee9c9fcbe7941ba895ac0d5e7680271d" },
+    sourceBlobShas: { fi: "3ea73d0d275bc53355bdd705fc3a076ccd8099b0", en: "0db3e9fb6e9ba258cb0ec46b38add63175483aef", sv: "9037586927abd14f8c3c82a9379f44c4da345530", th: "45086a5249b67df6401c8f3653319fd1fdab9401" },
   },
   "gazpacho": {
     tags: ["vegetarian","pescatarian"],
@@ -144,7 +144,7 @@ export const reviewedDietFilters: Readonly<Record<string, ReviewedDietSource>> =
   },
   "palak-paneer": {
     tags: ["vegetarian","pescatarian"],
-    sourceBlobShas: { fi: "765a16654e1700caf257e5a959e8724f630d8177", en: "5ade01c716c84c9a6e524ba8056a5b6965303e54", sv: "bc019f27d50bc0a797a8718b0e13473e02096955", th: "3272fec5e812dab58ca9a66c55dd63ed0ca1790c" },
+    sourceBlobShas: { fi: "765a16654e1700caf257e5a959e8724f630d8177", en: "5ade01c716c84c9a6e524ba8056a5b6965303e54", sv: "98f6a1cc2a50bc51a99e38e9427bf858d57a8105", th: "90c15c4448789b1096d72236ae4b710fe0a89832" },
   },
 };
 

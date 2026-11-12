@@ -85,7 +85,7 @@ Beef and pork are slowly braised with onion, allspice and bay leaf until tender.
 2. Add water, salt, allspice and bay leaves. The liquid should reach almost to the level of the meat.
 3. Cook, covered, on the lower oven rack for about 2.5–3 hours, until the meat is tender. Check occasionally that there is enough liquid in the casserole.
 4. Cut the cabbage into wedges and place on a lined baking tray. Brush with oil and season with pepper. Roast at 225°C for 20–25 minutes, until the edges are browned.
-5. Serve Karelian roast with roasted cabbage.
+5. Serve the Karelian stew with the roasted cabbage.
 
 ## Notes
 

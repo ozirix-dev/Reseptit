@@ -11,6 +11,7 @@ import {buildThreeCurryVariants} from './gk-three-curries';
 import {buildApprovedFourVariants} from './gk-next-four';
 import {buildApprovedBVariants} from './gk-four-approved-b';
 import {buildProductAVariants} from './gk-four-product-a';
+import {recipeTextForApprovedSnapshot} from './approved-recipe-note-edits';
 import {buildBlueberryPieVariant} from './gk-blueberry-pie';
 import {buildPanangKimchiVariants} from './gk-panang-kimchi';
 import {buildGkOnlyVariants} from './gk149-integration';
@@ -158,7 +159,8 @@ for (const [recipeId, binding] of Object.entries(recipeBindings.exactRecipeText 
       exactTextMismatches.add(recipeId); continue;
     }
     const text = await readFile(path.join(root, item.path), "utf8").catch((error:NodeJS.ErrnoException) => { if(error.code==="ENOENT")return null;throw error; });
-    if (text === null || !exactRecipeTextBindingMatches(item.sha256, text)) exactTextMismatches.add(recipeId);
+    if (text === null || !exactRecipeTextBindingMatches(item.sha256,
+      recipeTextForApprovedSnapshot(item.path, text.replaceAll("\r\n", "\n")))) exactTextMismatches.add(recipeId);
   }
 }
 

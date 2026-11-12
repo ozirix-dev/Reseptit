@@ -73,7 +73,7 @@ Lisukkeeksi paistetaan karkeaksi raastettua kukkakaalia riisin sijaan.
 ## Valmistus
 
 1. Kuullota hienonnettu sipuli voissa. Lisää kuutioitu broileri ja ruskista.
-2. Sekoita joukkoon kormamauste, kerma ja jogurtti. Hauduta kannen alla noin 20 minuuttia.
+2. Sekoita joukkoon kormamauste, kerma ja jogurtti. Hauduta kannen alla noin 20 minuuttia ja jatka tarvittaessa, kunnes broileri on kauttaaltaan kypsää.
 3. Raasta kukkakaali karkeaksi riisiksi ja paista pannulla 4–5 minuuttia. Mausta suolalla.
 4. Tarjoa korma kukkakaaliriisin kanssa.
 

@@ -61,7 +61,7 @@ Baking browns the topping while the cauliflower sits in the creamy sauce.
 ## Preparation
 
 1. Divide the cauliflower into florets and boil in salted water for 5 minutes. Drain well.
-2. Fry the bacon until crispy and spread it in the pan with the cauliflower.
+2. Fry the bacon until crisp and spread it and the cauliflower in an ovenproof dish.
 3. Pour the cream on top, season with pepper and sprinkle the cheese on top.
 4. Bake at 200 °C for about 20 minutes until the surface takes on color.
 

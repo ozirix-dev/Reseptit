@@ -56,7 +56,7 @@ Pyhä basilika, kalakastike ja chili tuovat annokseen tunnistettavan maun. Kukka
 ## Valmistus
 
 1. Hienonna valkosipuli ja chili. Kuumenna wokki tai iso paistinpannu kuumaksi.
-2. Lisää öljy ja ruskista jauheliha murumaiseksi.
+2. Lisää öljy ja paista porsaan jauheliha murumaiseksi ja kauttaaltaan kypsäksi.
 3. Lisää valkosipuli ja chili. Paista noin 30 sekuntia.
 4. Sekoita joukkoon kalakastike, soijakastike ja erytritoli. Lisää basilika ja kääntele, kunnes lehdet pehmenevät.
 5. Kuumenna kukkakaaliriisi pannulla kypsäksi mutta napakaksi.

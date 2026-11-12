@@ -91,8 +91,8 @@ Rinse the noodles well and fry them dry before adding them to the wok. This way 
 3. Heat half the oil in a wok. Fry the tofu until golden and set aside.
 4. Add the shrimps and fry until almost cooked. Move them aside, add the rest of the oil and stir-fry the eggs.
 5. Add the noodles and sauce. Turn in a hot pan for a couple of minutes.
-6. Return the prawns and tofu to the pan. Add the sprouts and half the peanuts. Stir-fry for about a minute, continuing as needed until the prawns are fully cooked.
-7. Serve with spring onions, cilantro, remaining peanuts and lime wedges.
+6. Return the prawns and tofu to the pan. Add the sprouts and half the peanuts. Stir-fry for about a minute and continue as needed until the prawns are cooked through and the sprouts are hot throughout.
+7. Serve with coriander, the remaining peanuts and lime wedges.
 
 ## Notes
 

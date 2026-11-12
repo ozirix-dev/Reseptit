@@ -56,9 +56,9 @@ I mitten läggs plommonsylt, vars kolhydratinnehåll varierar mellan produkter.
 ## Gör så här
 
 1. Värm ugnen till 200 °C. Blanda mandelmjöl, mjukt smör, färskost och ägg till en deg.
-2. Rulla degen mellan bakplåtspapper och skär i rutor. Gör snitt i hörnen och vrid grenarna till mitten.
-3. Tillsätt en tesked plommonsylt i mitten av varje tårta.
-4. Grädda i 12–15 minuter. Låt svalna på plåten innan du överför.
+2. Kyl degen, kavla den mellan två ark bakplåtspapper och skär ut åtta rutor. Skär ett snitt i varje hörn och vik in varannan spets mot mitten.
+3. Fördela hela mängden plommonsylt, 40 g, jämnt i mitten av bakverken.
+4. Grädda i 12–15 minuter tills bakverken är gyllenbruna. Låt svalna på plåten innan du flyttar dem.
 
 ## Anteckningar
 

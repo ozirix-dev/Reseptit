@@ -84,7 +84,7 @@ Lågkolhydratsoppa korv tillagas i en kastrull. Korven tillsätts först efter a
 
 1. Hacka löken, skiva sellerin och purjolöken och dela blomkålen i små buketter.
 2. Koka upp köttbuljongen. Tillsätt lök, selleri, purjolök, lagerblad och svartpeppar. Koka på låg värme i 5 minuter.
-3. Tillsätt blomkålen och koka ytterligare 8 minuter tills den är väldigt mjuk.
+3. Tillsätt blomkålen och koka i cirka 8 minuter till, tills den är mjuk med lite tuggmotstånd.
 4. Skiva korvarna och lägg i soppan. Värm i 3-4 minuter utan att koka kraftigt.
 5. Ta bort lagerbladet, smaka av buljongen och salt vid behov. Avsluta med persilja.
 

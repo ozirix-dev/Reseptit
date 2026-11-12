@@ -86,7 +86,7 @@ Roasted rice powder brings traditional roastiness and texture. A small amount is
 
 1. Heat water in a pan. Add the minced meat and cook over low heat, crumbling until the meat is completely cooked.
 2. Remove the pan from the stove. Mix in the fish sauce, lime juice and chili.
-3. If desired, add rice powder. Stir in the shallot, mint and coriander.
+3. Add the toasted rice powder if using. Toss with the shallot, mint and coriander.
 4. Taste and adjust saltiness, acidity and hotness.
 5. Serve warm with cabbage wedges and cucumber slices.
 

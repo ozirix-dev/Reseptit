@@ -93,7 +93,7 @@ I denna lågkolhydrat-version har ströbrödet ersatts med en liten mängd mande
 
 ## Gör så här
 
-1. Blanda mandelmjölet och köttbullsdegens grädde. Låt det svälla i 5 minuter.
+1. Blanda mandelmjölet med den grädde som är avsedd för köttbullarna. Låt svälla i 5 minuter.
 2. Hacka löken. Tillsätt köttfärs, ägg, lök, salt, svartpeppar och kryddpeppar i skålen. Blanda precis tillräckligt för att blanda ingredienserna.
 3. Rulla degen till små köttbullar. Stek dem i smör i en panna i flera omgångar tills de är bruna och genomstekta. Överför till en tallrik.
 4. Häll köttbuljongen och vispgrädden i pannan. Koka upp och koka sakta i 5-8 minuter tills såsen tjocknar. Lägg tillbaka köttbullarna i pannan för att värma upp.

@@ -68,22 +68,22 @@ fat_per_serving_g: 16.69
 
 ---
 
-# Valencialainen paella kanalla ja jäniksellä
+# Valencialainen paella kanalla
 
-Valencialaistyylisessä paellassa lyhytjyväinen riisi kypsyy pannulla sahramiliemessä kanan, jäniksen ja vihreiden papujen kanssa.
+Valencialaistyylisessä paellassa lyhytjyväinen riisi kypsyy pannulla sahramiliemessä broilerin ja vihreiden papujen kanssa.
 
 ## Kuvaus
 
-Valencialaistyylisessä paellassa lyhytjyväinen riisi kypsyy pannulla sahramiliemessä kanan, jäniksen ja vihreiden papujen kanssa.
+Valencialaistyylisessä paellassa lyhytjyväinen riisi kypsyy pannulla sahramiliemessä broilerin ja vihreiden papujen kanssa.
 
 ## Valmistus
 
-1. Kuumenna öljy leveässä pannussa. Ruskista broileri ja jäniksenpalat kauttaaltaan.
+1. Kuumenna öljy leveässä pannussa. Ruskista broilerin reisilihapalat kauttaaltaan.
 2. Lisää pavut ja paista muutama minuutti. Sekoita joukkoon tomaatti ja savupaprika.
 3. Lisää riisi ja sekoita, jotta jyvät peittyvät öljyyn. Kaada pannulle kuuma liemi, johon sahrami on liotettu. Mausta suolalla. Lisää halutessasi rosmariinin oksa liemeen; poista oksa ennen tarjoamista.
 4. Levitä ainekset tasaisesti pannulle. Keitä keskilämmöllä noin 8 minuuttia ja jatka miedommalla lämmöllä 12–15 minuuttia. Älä sekoita riisiä enää liemen lisäämisen jälkeen.
-5. Kun riisi on kypsää ja neste imeytynyt, nosta pannu liedeltä. Peitä kevyesti ja anna vetäytyä 5 minuuttia.
+5. Varmista, että riisi on kypsää, neste on imeytynyt ja paksuimpien broileripalojen sisälämpö on vähintään 75 °C. Nosta pannu liedeltä, peitä kevyesti ja anna vetäytyä 5 minuuttia.
 
 ## Muistiinpanot
 
-- Jos käytät vain broileria, valitse koipilihaa, joka pysyy mehevänä pitkän kypsennyksen ajan.
+- Luuton broilerin reisiliha pysyy mehevänä haudutuksen aikana.
