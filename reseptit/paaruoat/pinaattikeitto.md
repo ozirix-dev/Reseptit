@@ -11,10 +11,10 @@ difficulty: "helppo"
 main_ingredient: ["pinaatti", "maito"]
 cooking_method: ["keittäminen"]
 tags: ["arkiruoka"]
-carbs_net_per_serving_g: null
-carbs_total_per_serving_g: null
-protein_per_serving_g: null
-fat_per_serving_g: null
+carbs_net_per_serving_g: 21.82
+carbs_total_per_serving_g: 22.76
+protein_per_serving_g: 9.69
+fat_per_serving_g: 14.22
 image:
   src: "paaruoat/pinaattikeitto.webp"
   alt: "Pinaatin vihreitä hiutaleita vaaleassa keitossa"

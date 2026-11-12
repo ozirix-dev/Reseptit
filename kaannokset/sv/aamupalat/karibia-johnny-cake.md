@@ -4,7 +4,7 @@ recipe_id: karibia-johnny-cake
 url_slug: karibia-johnny-cake
 category: aamupala
 language: sv
-status: draft
+status: published
 main_ingredient:
   - "vehnäjauho"
   - "maito"
@@ -71,3 +71,5 @@ Den strukturerade ingredienslistan ovan innehåller mängderna för portionsräk
 ## Anteckningar
 
 Använd bara det angivna smöret, mjölken och stekoljan. Ingen separat fyllning ingår i den här uppmätta versionen.
+
+Innehåller vete och mjölk. Näringsberäkningen använder helmjölk och räknar med all angiven stekolja.

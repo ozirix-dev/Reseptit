@@ -4,7 +4,7 @@ recipe_id: yrttituorejuusto-kinkkurullat
 url_slug: yrttituorejuusto-kinkkurullat
 category: aamupala
 language: en
-status: draft
+status: published
 main_ingredient:
   - "ham"
   - "cream cheese"
@@ -75,3 +75,5 @@ The structured ingredient list above supplies the weighed quantities for serving
 ## Notes
 
 The modeled glycemic load is ingredient-based with low confidence, not an individual blood-glucose prediction. All listed food makes four portions.
+
+Contains milk. Use cooked ham and keep the rolls chilled until serving.

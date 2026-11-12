@@ -2,7 +2,7 @@
   "schema_version": 1,
   "recipe_id": "herne-auringonkukkalevite",
   "source_path": "reseptit/alkuruoat/herne-auringonkukkalevite.md",
-  "source_sha256": "6d21174f64ed0107311f089d606470dcca5571c15b4b4d4613ac82a436d83839",
+  "source_sha256": "d7bbebfa72985d62be3c2742c718cc8b8a737200fba788114443392cfed80ac0",
   "decision": "approved",
   "reviewed_by": "Codex – kirjallinen toimituksellinen katselmointi",
   "reviewed_at": "2026-11-12",
@@ -36,7 +36,7 @@
     },
     "nutrition": {
       "status": "pass",
-      "notes": "jauhettua mustapippuria: kuitu, polyolit puuttuu Finelin tietueesta 11177."
+      "notes": "Neljä makroarvoa laskettu annosta kohti. Fineli Release 20 sekä AFCD Release 3:n afcd-F006618-release-3. Ainesmäärät ja laskennan annosjako säilyvät."
     },
     "glycemic": {
       "status": "unavailable",
@@ -50,6 +50,6 @@
     "image_review": "Vihreää herne-auringonkukkalevitettä pienessä kulhossa",
     "image_method": "Built-in ImageGen",
     "image_prompt": "Create one original realistic Finnish cookbook photograph of a small bowl of thick vivid green pea and sunflower seed spread, gently coarse from blending. Wide landscape hero framing, dish centered with clear edges, natural window light on a warm neutral surface, accurate home-cooked texture. Show only this finished recipe with no text, graphics, branding, people, hands or unlisted garnishes.",
-    "nutrition_calculation_sha256": "cc9f657da94148e4522259dfd647824284379150b74c65b29718b56c280dff5c"
+    "nutrition_calculation_sha256": "a2d6b2e51bc8d62b4c013107a610682f01d5c80cf05e7a5e041baca7953c9ee1"
   }
 }

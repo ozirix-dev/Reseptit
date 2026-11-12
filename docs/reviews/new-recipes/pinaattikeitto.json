@@ -2,7 +2,7 @@
   "schema_version": 1,
   "recipe_id": "pinaattikeitto",
   "source_path": "reseptit/paaruoat/pinaattikeitto.md",
-  "source_sha256": "5152fffb2d603989178c30a8a3dbecdd0569f9197d35307eb28ce58ed461e207",
+  "source_sha256": "c1540fa1ae5ca1decf9c68d8e00e3104259fb06d17b6c16900cd58f91c354c86",
   "decision": "approved",
   "reviewed_by": "Codex – kirjallinen toimituksellinen katselmointi",
   "reviewed_at": "2026-11-12",
@@ -36,7 +36,7 @@
     },
     "nutrition": {
       "status": "pass",
-      "notes": "Mustapippurin Fineli-tietueesta puuttuvat kuitu ja polyolit."
+      "notes": "Neljä makroarvoa laskettu annosta kohti. Fineli Release 20 sekä AFCD Release 3:n afcd-F006618-release-3. Ainesmäärät ja laskennan annosjako säilyvät."
     },
     "glycemic": {
       "status": "unavailable",
@@ -50,6 +50,6 @@
     "image_review": "Pinaatin vihreitä hiutaleita vaaleassa keitossa",
     "image_method": "Built-in ImageGen",
     "image_prompt": "Create one original, realistic Finnish cookbook food photograph of a Finnish creamy pale green spinach soup, fine visible dark green chopped spinach flecks throughout, in a ceramic bowl. Wide landscape hero composition with dish centered in the middle 75%, modest natural window light, warm neutral linen background, accurate home-cooked texture, clean edge framing, no text, graphics, hands, people, packages, branding, or unlisted garnishes. Show only the described finished recipe, suitable for a recipe site's landscape cover.",
-    "nutrition_calculation_sha256": "3f3dc259eca4841c1c80977d878528b29e395fdbcb7ded5d3a67ebfcab655163"
+    "nutrition_calculation_sha256": "c679c19eeb6a1b5a8a5dd3e24d214e64921dc5d2ce8c4c6e230176e40c4032ce"
   }
 }

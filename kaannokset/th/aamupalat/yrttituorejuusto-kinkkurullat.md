@@ -4,7 +4,7 @@ recipe_id: yrttituorejuusto-kinkkurullat
 url_slug: yrttituorejuusto-kinkkurullat
 category: aamupala
 language: th
-status: draft
+status: published
 main_ingredient:
   - "แฮม"
   - "ครีมชีส"
@@ -75,3 +75,5 @@ translation_of: yrttituorejuusto-kinkkurullat
 ## หมายเหตุ
 
 ค่าโหลดน้ำตาลจากแบบจำลองวัตถุดิบมีความเชื่อมั่นต่ำ ไม่ใช่การทำนายน้ำตาลในเลือดรายบุคคล วัตถุดิบทั้งหมดแบ่งเป็น 4 ที่
+
+มีนม ใช้แฮมสุกและแช่เย็นแฮมม้วนไว้จนกว่าจะเสิร์ฟ

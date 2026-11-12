@@ -170,34 +170,33 @@
       "amount": 0.125,
       "unit": "tl",
       "item": "jauhettua mustapippuria",
-      "state": "DRIE",
-      "matchEvidence": "Fineli Release 20 #11177 MUSTAPIPPURI. Ainesosan yleinen koostumus.",
+      "state": "ground black pepper",
+      "matchEvidence": "FSANZ AFCD Release 3 afcd-F006618-release-3; same ingredient and state as the recipe. Full nutrient profile from one record.",
       "edibleFraction": 1,
       "edibleEvidence": "Määrä kuvaa syötävää tai reseptissä käytettävää osaa.",
       "retainedFraction": 1,
       "retentionEvidence": "Laskennassa annoksiin jaetaan käytetty aines; haihtuva vesi ei muuta annoskohtaisia makroja.",
       "record": {
-        "id": "fineli-11177-release-20",
-        "name": "MUSTAPIPPURI",
-        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11177",
-        "retrievedAt": "2026-11-12",
-        "licence": "THL Fineli Release 20, CC BY 4.0",
-        "state": "DRIE",
-        "basis": "per100g-edible",
+        "id": "afcd-F006618-release-3",
+        "name": "Pepper, black, ground",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "ground black pepper",
+        "basis": "per100g-as-sold",
         "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
         "per100g": {
-          "carbohydrate": 38.31,
-          "fibre": null,
-          "polyols": null,
-          "protein": 10.9,
+          "carbohydrate": 38.6,
+          "fibre": 25.3,
+          "polyols": 0,
+          "protein": 10.4,
           "fat": 3.3
-        },
-        "polyolsSourceVerified": false
+        }
       },
       "gramsPerUnit": 2,
       "conversionEvidence": "Fineli Release 20 #11177, portion_mass_g TL."
     }
-  ],
-  "publicationStatus": "WITHHELD_SOURCE_INCOMPLETE",
-  "withholdingReason": "jauhettua mustapippuria: kuitu, polyolit puuttuu Finelin tietueesta 11177."
+  ]
 }

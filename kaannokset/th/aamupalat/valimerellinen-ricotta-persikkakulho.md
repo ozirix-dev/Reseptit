@@ -4,7 +4,7 @@ recipe_id: valimerellinen-ricotta-persikkakulho
 url_slug: valimerellinen-ricotta-persikkakulho
 category: aamupala
 language: th
-status: draft
+status: published
 main_ingredient:
   - "ริคอตตา"
   - "ลูกพีช"
@@ -70,3 +70,5 @@ translation_of: valimerellinen-ricotta-persikkakulho
 ## หมายเหตุ
 
 สูตรชั่งน้ำหนักสำหรับ 2 ที่นี้ไม่มีน้ำมันมะกอกหรือเครื่องโรยอื่น ค่าสารอาหารและโหลดน้ำตาลเป็นค่าประมาณจากวัตถุดิบ ไม่ใช่ผลวัดระดับน้ำตาลในเลือดรายบุคคล
+
+มีนมและถั่วพิสตาชิโอ ใช้ริคอตตาที่แช่เย็นแล้วและเสิร์ฟแบบเย็น

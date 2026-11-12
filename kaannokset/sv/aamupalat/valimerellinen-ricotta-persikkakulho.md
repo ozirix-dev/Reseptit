@@ -4,7 +4,7 @@ recipe_id: valimerellinen-ricotta-persikkakulho
 url_slug: valimerellinen-ricotta-persikkakulho
 category: aamupala
 language: sv
-status: draft
+status: published
 main_ingredient:
   - "ricotta"
   - "persika"
@@ -70,3 +70,5 @@ Ingrediensmängderna finns i den strukturerade listan ovan.
 ## Anteckningar
 
 Detta uppvägda recept för två portioner innehåller ingen olivolja eller extra topping. Näringsvärden och glykemisk belastning är ingrediensbaserade uppskattningar, inte personliga blodsockermätningar.
+
+Innehåller mjölk och pistagenötter. Använd kylskåpskall ricotta och servera skålarna kalla.
