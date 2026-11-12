@@ -1,5 +1,16 @@
 import assert from "node:assert/strict";
 import transition from "../../docs/nutrition/gk-original-content-transition.json";
+import historicalBaseline from "../../docs/nutrition/gk-legacy-reconciliation/baseline.json";
+
+// Membership belongs to the sealed history, independent of the live inventory.
+export const frozenOriginalRecipeIds: ReadonlySet<string> = new Set(Object.keys(historicalBaseline.resultHashes));
+
+export function frozenOriginalRows<T>(rows: readonly T[], recipeId: (row: T) => string): T[] {
+  const scoped = rows.filter(row => frozenOriginalRecipeIds.has(recipeId(row)));
+  assert.deepEqual(scoped.map(recipeId).sort(), [...frozenOriginalRecipeIds].sort(),
+    "The historical corpus must contain each pinned recipe exactly once");
+  return scoped;
+}
 
 const mainAddition = transition.mainAddition;
 export const mainAdditionFiles: Readonly<Record<string, string>> = mainAddition.addedFileHashes;
@@ -207,7 +218,17 @@ export function restoreBeforeOriginalContent(report: any) {
     }
   }
   for (const field of ["results", "calculationInputs"] as const) {
-    if (report[field]) report[field] = restoreRows(report[field], field);
+    if (report[field]) {
+      report[field] = restoreRows(frozenOriginalRows(report[field], (row: { recipeId: string }) => row.recipeId), field);
+    }
+  }
+  if (report.summary && report.results) {
+    report.summary.recipes = report.results.length;
+    report.summary.calculated = report.results.filter((row: { status: string }) => row.status === "CALCULATED").length;
+    report.summary.insufficientSourceData = report.results.filter((row: { status: string }) => row.status === "INSUFFICIENT SOURCE DATA").length;
+  }
+  for (const field of ["autoIncludedRecipeIds", "recipeBindingMismatches", "calculationInputMismatches", "calculationEvidenceMismatches"]) {
+    if (report[field]) report[field] = report[field].filter((id: string) => frozenOriginalRecipeIds.has(id));
   }
   for (const field of Object.values(bindingFields)) {
     if (!report[field]) continue;
@@ -247,8 +268,7 @@ function assertMainAddition(report: any) {
       assert.equal(row.glycemicLoadRangePerServing, null, row.recipeId);
     }
   }
-  assert.deepEqual((report.autoIncludedRecipeIds ?? []).filter((key: string) =>
-    !postBaselineBrioche.has(key) && !postBaselineClassics.has(key) && !postBaselineCakes.has(key) && !postBaselineGlutenFreeFi.has(key) && !reviewedFiBreakfastIds.has(key)), [id]);
+  assert.deepEqual((report.autoIncludedRecipeIds ?? []).filter((key: string) => key === id), [id]);
   assert.deepEqual(report.results.filter((row: {recipeId: string}) => row.recipeId === id), [mainAddition.result]);
   if (report.calculationInputs) {
     assert.deepEqual(report.calculationInputs.filter((row: {recipeId: string}) => row.recipeId === id), [mainAddition.input]);

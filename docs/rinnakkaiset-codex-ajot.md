@@ -83,6 +83,13 @@ haaraan kirjoittamisen. Oma työ säilytetään omassa haarassa ja ristiriita
 tuodaan käyttäjälle. Toisen työn palautus tai ylimääräinen julkaisuajo ei
 ole automaattinen korjauskeino.
 
+Vertaa tulevan PR:n muuttuvia polkuja ajantasaiseen mainiin ja avoimiin
+PR:iin ennen yhteisten workflow-, paketti- tai hyväksyntärekisterien
+muuttamista. Sovi näiden tiedostojen integrointi yhden kirjoittajan
+kautta. Tee paikallinen kohdennettu tarkistus ennen ensimmäistä pushia
+ja mahdollisen CI-korjauksen jälkeen. Varmista uudelle HEADille oma
+tarkistustulos sekä testatun yhdistelmän base ennen mergeä.
+
 ## Tutkimuksesta integraatioon
 
 Tutkimusajo toimittaa yhden tarkistettavan luovutuspaketin:

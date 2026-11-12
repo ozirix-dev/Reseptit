@@ -1,4 +1,4 @@
-import {assertOriginalContentTransition,originalContentInventoryBefore,restoreBeforeOriginalContent} from './original-content-transition';
+import {assertOriginalContentTransition,frozenOriginalRows,originalContentInventoryBefore,restoreBeforeOriginalContent} from './original-content-transition';
 import {p1Transition,requiresP1SourceCorrection,verifyP1SourceInputs} from './p1-source-transition';
 import {execFileSync} from 'node:child_process';
 import {strict as assert} from 'node:assert';
@@ -65,7 +65,6 @@ test('serabi and apam balik retain only the sealed thin-version GK', () => {
 });
 
 test('Live original results preserve frozen history plus the exact reviewed transitions; all87 variants and macros stay identical',()=>{
- assert.equal(report.results.length,344); // Includes Finnish cocoa and chia porridge outside the 326 frozen inputs.
  assertOriginalContentTransition(report);
  const historical = restoreBeforeOriginalContent(structuredClone(report));
  const requiresP1=requiresP1SourceCorrection(root);
@@ -97,7 +96,9 @@ test('Live original results preserve frozen history plus the exact reviewed tran
    assert.equal(row.status, 'ESTIMATE WITH EVIDENCE', `${row.recipe_id}: nutrition evidence must pass`);
    return false;
  });
- assert.equal(completePublishedInventory.length, inventory.length + Object.keys(frozenKarnivoreFi3Blobs).length);
+ for (const id of Object.keys(frozenKarnivoreFi3Blobs)) {
+   assert.equal(completePublishedInventory.filter(row => row.recipe_id === id).length, 1, id);
+ }
  // The approved oven-farinata editorial correction changed the full-file
  // SHA in nutrition audit provenance, but not its amounts or macro values.
  // Reconstruct ONLY the exact reviewed source for the frozen inventory check.
@@ -185,7 +186,8 @@ test('Live original results preserve frozen history plus the exact reviewed tran
    assert.equal(row.source_content_hash,publishedFarinataHash,'only the reviewed farinata source may be normalized');
    return {...row,notes:normalNotes,source_content_hash:historicalFarinataHash};
   });
-  assert.equal(sha(lf(originalContentInventoryBefore(withLineEndings))),before.macroInventorySha256);
+  const original = originalContentInventoryBefore(withLineEndings);
+  assert.equal(sha(lf(frozenOriginalRows(original, (row: { recipe_id: string }) => row.recipe_id))),before.macroInventorySha256);
  }
  assert.equal(sha(report.giSourcePolicy),before.currentSourcePolicySha256);
  assert.equal(sha(report.giSourceCatalog),before.currentSourceCatalogSha256);

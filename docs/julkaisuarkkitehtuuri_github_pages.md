@@ -30,7 +30,34 @@ npm audit --audit-level=low
 npm run preview
 ```
 
-GitHub Actions ajaa yksikkötestit, buildin ja esirenderöityjen tiedostojen tarkistukset pull requesteissa. `main`-haaraan yhdistetyt muutokset julkaistaan GitHub Pagesiin. Sivuston base path on `/Reseptit/`, koska julkaisu käyttää GitHub Pagesin projektisivustoa.
+GitHub Actions valitsee tarkistukset GitHubin muodostaman PR-yhdistelmän ja
+sen ensimmäisen parentin erosta. Ajosta jäävät talteen testattu commit sekä
+PR:n head- ja base-SHA. TypeScript-testimuutos ajaa sisällön generoinnin,
+tyyppitarkistuksen ja kohdennetun testin. Laajempi julkaisu- tai
+rakennemuutos ajaa myös tarvittavat tuotantobuildin, staattisen tulosteen
+ja selaimen tarkistukset. Dokumentaatiomuutos voi käyttää kevyttä polkua.
+Julkaisu GitHub Pagesiin tehdään `main`-haarasta. Sivuston base path on
+`/Reseptit/`.
+
+### Reseptiversion julkaisu
+
+- Tarkista uuden FI-lähteen kirjattu toimituksellinen näyttö ajamalla
+  juuresta `node site/scripts/new-recipe-preflight.mjs --recipe=<polku> --json`.
+  HOLD palauttaa virhekoodin ja reseptikohtaiset syyt. Käytä samaa porttia
+  ennen ensimmäistä pushia.
+- Valmistuksen, ruokaturvallisuuden, ainesosien ja ravinnon katselmointi
+  kiinnitetään lähdeversioon. Ravinnon todiste tarkastaa laskentasyötteen
+  erikseen. GK voi olla perustellusti määrittämätön. Erikseen käsiteltävän
+  julkaistun GK-pending-lähteen Git-blob on
+  [GK-pending-rekisterissä](nutrition/new-public-gk-pending-sources.json).
+- Merkitykseen vaikuttava muutos edellyttää julkaistujen kieliparien
+  ajantasaista vertailua. Varmista lisäksi kuvan vastaavuus ja julkaistun
+  sivun toimivuus Pages-jakelusta.
+- GK80:n ja GK149:n alkuperäisversion regressio käyttää jäädytettyä
+  resepti-ID-joukkoa. Uusi riippumaton FI-luonnos ei muuta joukkoa.
+  Julkaistun nykyversion esityssovitukset tehdään järjestyksessä
+  sisältöbuildissa. Yksittäisen sovituksen lähtöversion ja laskennan
+  tarkisteet säilyvät kunkin sovituksen ja hyväksynnän omissa tiedoissa.
 
 Pages otetaan käyttöön kerran repon Settings → Pages -asetuksissa valitsemalla
 Source: GitHub Actions. Julkaisuworkflow käyttää jo käyttöön otettua Pages-sivustoa;

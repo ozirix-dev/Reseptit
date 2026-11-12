@@ -159,3 +159,15 @@ test("no release verdict is possible even with no high-priority findings", async
   assert.equal(result.releaseEligible, false);
   assert.equal(result.decision, "EDITORIAL_REVIEW");
 });
+
+test("onion probes distinguish ordinary, garlic and spring onion", () => {
+  const recipe = modelRecipe([
+    { item: "hienonnettua kevätsipulia", amount: 12, unit: "g" },
+    { item: "valkosipulia", amount: 4, unit: "g" },
+  ], "1. Hienonna ainekset.");
+  assert.ok(evaluateProbe(recipe, { kind: "ingredient_absent", item: "sipuli" }).pass);
+  assert.ok(evaluateProbe(recipe, { kind: "ingredient_amount", item: "valkosipuli", amount: 4, unit: "g" }).pass);
+  assert.ok(evaluateProbe(recipe, { kind: "ingredient_amount", item: "kevätsipuli", amount: 12, unit: "g" }).pass);
+  recipe.data.ingredients.push({ item: "sipulia", amount: 24, unit: "g" });
+  assert.ok(!evaluateProbe(recipe, { kind: "ingredient_absent", item: "sipuli" }).pass);
+});

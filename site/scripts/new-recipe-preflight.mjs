@@ -143,8 +143,8 @@ export function runCli(root = ROOT, argv = process.argv.slice(2), env = process.
   if (single && !isRecipePath(single)) throw new Error('Invalid recipe path');
   const candidates = single ? [{ file: single, previousFile: null }] :
     changesFromDiff(git(['diff', '--name-status', '-z', '--find-renames', base, head, '--', 'reseptit/'], root));
-  let checked = 0;
-  let blocked = 0;
+  const json = argv.includes('--json');
+  const assessments = [];
   const all = inventory(root);
   for (const { file, previousFile } of candidates) {
     const source = readFileSync(path.join(root, file), 'utf8');
@@ -154,17 +154,22 @@ export function runCli(root = ROOT, argv = process.argv.slice(2), env = process.
     const oldIdentity = previous ? readRecipeIdentity(previous) : null;
     if (!single && !isNewPublication(current, oldIdentity)) continue;
     if (current.status !== 'published') continue;
-    checked++;
     const review = reviewFile(root, file, current.recipe_id);
     const errors = validateReview(file, source, review, all);
-    if (errors.length) {
-      blocked++;
-      console.error('HOLD ' + file + ':\n  - ' + errors.join('\n  - '));
-    } else console.log('PASS ' + file + ': SHA-bound editorial approval verified');
+    const code = errors.length ? 'HOLD_NEW_RECIPE_EVIDENCE' : 'EDITORIAL_EVIDENCE_CURRENT';
+    assessments.push({ recipeId: current.recipe_id, path: file, code, reasons: errors });
+    if (!json) {
+      if (errors.length) console.error('HOLD ' + file + ':\n  - ' + errors.join('\n  - '));
+      else console.log('PASS ' + file + ': SHA-bound editorial approval verified');
+    }
   }
-  console.log('New-recipe gate: ' + checked + ' published candidate(s), ' + blocked + ' HOLD; untouched published recipes and drafts unaffected.');
+  const checked = assessments.length;
+  const blocked = assessments.filter(row => row.reasons.length > 0).length;
+  const result = { checked, candidates: candidates.length, blocked, assessments };
+  if (json) console.log(JSON.stringify(result));
+  else console.log('New-recipe gate: ' + checked + ' published candidate(s), ' + blocked + ' HOLD; untouched published recipes and drafts unaffected.');
   if (blocked) throw new Error('New recipe publication blocked pending documented review');
-  return { checked, candidates: candidates.length, blocked };
+  return result;
 }
 
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
