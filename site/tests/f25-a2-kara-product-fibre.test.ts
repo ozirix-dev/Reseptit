@@ -1,3 +1,4 @@
+import { readF25GateAtCreation } from "../scripts/f25-history";
 import assert from "node:assert/strict";
 import {test} from "node:test";
 import {readFileSync} from "node:fs";
@@ -24,7 +25,7 @@ test("Kara alternative has exact volume basis, fills coconut fibre evidence but 
   assert.equal(data.release.sourceApproved,false);
   assert.equal(data.release.publicationAuthorized,false);
   assert.equal(data.release.gk,null);
-  const gate=read("meta/kaannokset/f25-release-gate.json");
+  const gate=readF25GateAtCreation(root);
   for(const candidate of data.recipes) {
     assert.equal(candidate.coconutVolumeMl,200);
     assert.equal(gate.sources.find((s:any)=>s.recipe_id===candidate.recipeId)?.approval,null);

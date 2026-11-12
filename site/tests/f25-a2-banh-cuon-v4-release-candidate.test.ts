@@ -1,3 +1,4 @@
+import { readF25GateAtCreation, readF25HistoricalBlob } from "../scripts/f25-history";
 import assert from "node:assert/strict";
 import test from "node:test";
 import {readFileSync} from "node:fs";
@@ -17,7 +18,7 @@ const metrics=["carbohydrate","protein","fat","fibre","polyols","salt"] as const
 test("Banh cuon V4 is valid draft source with one-to-one punnittu food data; historical FI unchanged",()=>{
   assert.equal(ledger.recipeId,"vietnamilainen-banh-cuon-sienilla");
   const candidate=readFileSync(path.join(root,ledger.sourcePath));
-  const source=readFileSync(path.join(root,ledger.historicCanonicalPath));
+  const source=readF25HistoricalBlob(root,ledger.historicCanonicalGitBlob);
   assert.equal(b(candidate),ledger.candidateSourceGitBlob);
   assert.equal(b(source),ledger.historicCanonicalGitBlob);
   const parsed=parseMarkdown(candidate.toString("utf8"));
@@ -34,7 +35,7 @@ test("Banh cuon V4 is valid draft source with one-to-one punnittu food data; his
   assert.match(parsed.content,/GK: ei saatavilla/);
   assert.match(parsed.content,/EI JULKAISUUN/);
   assert.match(parsed.content,/kala-allergeeni/);
-  const current=sourceReleaseGateDecision(ledger.recipeId);
+  const current=sourceReleaseGateDecision(ledger.recipeId,readF25GateAtCreation(root));
   assert.equal(current.authorized,false);
   assert.match(current.reason,/F25_SOURCE_HOLD/);
 });

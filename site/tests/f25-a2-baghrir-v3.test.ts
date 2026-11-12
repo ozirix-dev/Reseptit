@@ -1,3 +1,4 @@
+import { readF25GateAtCreation, readF25HistoricalBlob } from "../scripts/f25-history";
 import assert from "node:assert/strict";
 import {test} from "node:test";
 import {readFileSync} from "node:fs";
@@ -9,10 +10,10 @@ const read=(name:string)=>JSON.parse(readFileSync(path.join(root,name),"utf8"));
 const d=read("docs/reviews/f25-a2-baghrir-v3-calculation-20261111.json");
 
 test("baghrir V3 stays outside production and uses new method not historical GK",()=>{
-  const fi=readFileSync(path.join(root,d.sourceBaseline.fiPath));
+  const fi=readF25HistoricalBlob(root,d.sourceBaseline.gitBlobSha);
   const computed=createHash("sha1").update("blob "+fi.byteLength+"\0").update(fi).digest("hex");
   assert.equal(computed,d.sourceBaseline.gitBlobSha);
-  const gate=read("meta/kaannokset/f25-release-gate.json");
+  const gate=readF25GateAtCreation(root);
   assert.equal(gate.sources.find((x:any)=>x.recipe_id===d.recipeId)?.approval,null);
   assert.equal(d.status,"HOLD");
   assert.equal(d.variant,"V3_UNPUBLISHED");

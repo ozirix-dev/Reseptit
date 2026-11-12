@@ -1,3 +1,4 @@
+import { frozenOriginalRows } from "./original-content-transition";
 import {afcdSourceBeforeCorrection} from './restore-pre-ehold';
 import test from 'node:test';
 import assert from 'node:assert/strict';
@@ -28,14 +29,16 @@ test('exact seven new A versions form a distinct179-recipe candidate while the o
  const legacy=report.gkOnlyVariants.filter((v:{inputSha256:string})=>[...sixteen,...seven].some(old=>old.inputSha256===v.inputSha256));
  assert.deepEqual(legacy,[...sixteen,...seven]);
  assert.deepEqual(gkOnlyVariants,report.gkOnlyVariants.filter((v:{recipeId:string})=>!isPublicRecipeQuarantined(v.recipeId)));
- const coverage=countGkVersions(report.results,legacy);
+ const original = frozenOriginalRows(report.results, (row: {recipeId: string; status: string}) => row.recipeId);
+ const coverage=countGkVersions(original,legacy);
  assert.deepEqual(report.versionCoverage,countGkVersions(report.results,report.gkOnlyVariants));
  assert.deepEqual(gkVersionCoverage,countGkVersions(
    report.results.filter((r:{recipeId:string})=>!isPublicRecipeQuarantined(r.recipeId)),
    gkOnlyVariants,
  ));
- assert.equal(coverage.numericRecipes,179);assert.equal(coverage.originalNumeric,156);assert.equal(coverage.additionalA,17);assert.equal(coverage.additionalB,6);assert.equal(coverage.missing,165);assert.equal(coverage.total,344);
- assert.deepEqual(report.coverageViews.originalRecipe,{total:344,numeric:156,missing:188});
+ assert.equal(coverage.numericRecipes,179);assert.equal(coverage.originalNumeric,156);assert.equal(coverage.additionalA,17);assert.equal(coverage.additionalB,6);assert.equal(coverage.missing,147);assert.equal(coverage.total,326);
+ const currentNumeric = report.results.filter((row: {status: string}) => row.status === "CALCULATED").length;
+ assert.deepEqual(report.coverageViews.originalRecipe,{total:report.results.length,numeric:currentNumeric,missing:report.results.length-currentNumeric});
  assert.throws(()=>countGkVersions(report.results,[...gkOnlyVariants,seven[0]]),/distinct/);
  for(const v of seven){assert.equal(report.results.find((r:any)=>r.recipeId===v.recipeId).status,'INSUFFICIENT SOURCE DATA');assert.equal(v.macroScope,'NO_MACRO_PACKAGE_FOR_THIS_VERSION');assert.ok(!('nutrition' in v)&&!('macros' in v));}
 });

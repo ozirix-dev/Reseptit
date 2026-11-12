@@ -7,7 +7,7 @@ import path from "node:path";
 import {fileURLToPath} from "node:url";
 import {parseMarkdown} from "../src/content/markdown";
 import {recipeFrontmatterSchema} from "../src/content/schema";
-import {f25SourceReleaseGate} from "./f25-source-release-gate";
+import {readF25GateAtCreation, readF25HistoricalBlob} from "./f25-history";
 import a2 from "../../meta/kaannokset/f25-a2-four-fi-draft-manifest-20261111.json";
 
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),"../..");
@@ -16,18 +16,19 @@ const equal=(x:unknown,y:unknown)=>JSON.stringify(x)===JSON.stringify(y);
 
 export function auditF25A2FourDrafts(){
   if(a2.schemaVersion!==1||a2.stage!=="HOLD"||a2.sources.length!==4)throw Error("F25_A2_INVALID_MANIFEST");
+  const originalGate=readF25GateAtCreation(root);
   const ids=new Set<string>();
   const rows=[];
   for(const record of a2.sources){
     if(ids.has(record.recipeId))throw Error("F25_A2_DUPLICATE");ids.add(record.recipeId);
-    const old=readFileSync(path.join(root,record.sourcePath));
+    const old=readF25HistoricalBlob(root,record.sourceGitBlobSha);
     if(gitBlob(old)!==record.sourceGitBlobSha)throw Error("F25_A2_SOURCE_CHANGED: "+record.recipeId);
     const parsed=parseMarkdown(old.toString("utf8"));
     if(!parsed)throw Error("F25_A2_NO_MARKDOWN");
     const data=recipeFrontmatterSchema.parse(parsed.data);
     const baseline=data.ingredients.map(x=>({amount:x.amount,unit:x.unit,item:x.item}));
     if(data.recipe_id!==record.recipeId||data.language!=="fi"||data.servings!==record.servings||!equal(baseline,record.oldIngredients))throw Error("F25_A2_BASELINE_STALE: "+record.recipeId);
-    const gate=f25SourceReleaseGate.sources.find(x=>x.recipe_id===record.recipeId);
+    const gate=originalGate.sources.find(x=>x.recipe_id===record.recipeId);
     if(!gate||gate.approval!==null)throw Error("F25_A2_WRONG_RELEASE_AUTHORIZATION");
     if(!record.candidatePath.startsWith("docs/reviews/f25-a2-draft-recipes/")||record.candidatePath.startsWith("reseptit/"))throw Error("F25_A2_WRONG_DESTINATION");
     const draftBytes=readFileSync(path.join(root,record.candidatePath));

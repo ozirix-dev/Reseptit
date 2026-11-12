@@ -1,3 +1,4 @@
+import { readF25GateAtCreation, readF25HistoricalBlob } from "../scripts/f25-history";
 import assert from "node:assert/strict";
 import test from "node:test";
 import {createHash} from "node:crypto";
@@ -14,11 +15,11 @@ test("both V3 alternatives are separate from exact-blob historical FI sources an
   assert.equal(evidence.schemaVersion,1);
   assert.equal(evidence.stage,"HOLD");
   assert.equal(evidence.recipes.length,2);
-  const gate=read("meta/kaannokset/f25-release-gate.json");
+  const gate=readF25GateAtCreation(root);
   for(const r of evidence.recipes){
-    assert.equal(gitBlob(readFileSync(path.join(root,r.sourcePath))),r.sourceGitBlob,r.recipeId);
+    assert.equal(gitBlob(readF25HistoricalBlob(root,r.sourceGitBlob)),r.sourceGitBlob,r.recipeId);
     assert.equal(gitBlob(readFileSync(path.join(root,r.candidatePath))),r.candidateGitBlob,r.recipeId);
-    assert.equal(gitBlob(readFileSync(path.join(root,"docs/nutrition/calculations/"+r.recipeId+".json"))),r.oldNutritionGitBlob,r.recipeId);
+    assert.equal(gitBlob(readF25HistoricalBlob(root,r.oldNutritionGitBlob)),r.oldNutritionGitBlob,r.recipeId);
     const old=read("docs/nutrition/calculations/"+r.recipeId+".json");
     assert.equal(old.sourceHash,r.oldNutritionInputHash);
     assert.equal(gate.sources.find((x:any)=>x.recipe_id===r.recipeId)?.approval,null);
@@ -150,6 +151,6 @@ test("banh cuon squid label salt and GI evidence remain product-specific and unp
   for(const key of ["completeMacrosApproved","giApproved","gkApproved","nutritionApproved","translationApproved","photoApproved","publicationAuthorized"]){
     assert.equal(audit.release[key],false,key);
   }
-  const previousGate=read("meta/kaannokset/f25-release-gate.json");
+  const previousGate=readF25GateAtCreation(root);
   assert.equal(previousGate.sources.find((row:any)=>row.recipe_id===cuon.recipeId)?.approval,null);
 });

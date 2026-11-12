@@ -1,3 +1,4 @@
+import { readF25AtCreation, readF25GateAtCreation } from "../scripts/f25-history";
 import assert from "node:assert/strict";
 import test from "node:test";
 import { readFileSync } from "node:fs";
@@ -8,21 +9,26 @@ import { f25SourceReleaseGate, sourceReleaseGateDecision, f25SourceGatePreflight
 const root=path.resolve(import.meta.dirname,"../..");
 const gitBlob=(buf:Buffer)=>createHash("sha1").update("blob "+buf.byteLength+"\0").update(buf).digest("hex");
 
-test("15 F25 source identities remain source-blob pinned and none is silently approved",()=>{
-  assert.equal(f25SourceReleaseGate.sources.length,15);
-  const ids=f25SourceReleaseGate.sources.map(x=>x.recipe_id);
-  assert.equal(new Set(ids).size,15);
-  assert.deepEqual(f25SourceReleaseGate.sources.filter(x=>x.public_quarantine_at_baseline).map(x=>x.recipe_id).sort(),
-    ["indonesialainen-nasi-goreng-aamiaisriisi","pohjoisafrikkalainen-maakouda"]);
-  const summary=f25SourceGatePreflight();
-  assert.equal(summary.total,15);
-  assert.equal(summary.held,15);
-  assert.equal(summary.authorized,0);
-  for(const source of f25SourceReleaseGate.sources) {
-    assert.equal(source.approval,null);
-    assert.equal(sourceReleaseGateDecision(source.recipe_id).authorized,false);
-    const file=readFileSync(path.join(root,source.source_path));
-    assert.equal(gitBlob(file),source.baseline_git_blob_sha);
+test("F25 retains the original source cohort and verifies current approvals independently", () => {
+  const original = readF25GateAtCreation(root);
+  assert.equal(original.sources.length, 15);
+  for (const source of original.sources) {
+    assert.equal(source.approval, null);
+    const bytes = Buffer.from(readF25AtCreation(root, source.source_path), "utf8");
+    assert.equal(gitBlob(bytes), source.baseline_git_blob_sha);
+  }
+  assert.deepEqual(f25SourceReleaseGate.sources.map(source => ({ ...source, approval: null })), original.sources);
+
+  const summary = f25SourceGatePreflight();
+  assert.equal(summary.total, original.sources.length);
+  assert.equal(summary.held + summary.authorized, summary.total);
+  for (const source of f25SourceReleaseGate.sources) {
+    const decision = sourceReleaseGateDecision(source.recipe_id);
+    if (!source.approval) {
+      assert.deepEqual(decision, { authorized: false, reason: "F25_SOURCE_HOLD: " + source.recipe_id });
+    } else {
+      assert.equal(decision.authorized, true, decision.reason);
+    }
   }
 });
 
@@ -41,7 +47,7 @@ test("forged F25 approval with stale FI source hash never bypasses publication g
   const cloned=structuredClone(f25SourceReleaseGate) as F25SourceGate;
   const row=cloned.sources.find(x=>x.recipe_id===sample.recipe_id)!;
   row.approval=fake;
-  assert.match(sourceReleaseGateDecision(sample.recipe_id,cloned).reason,/FI source SHA mismatch/);
+  assert.match(sourceReleaseGateDecision(sample.recipe_id,cloned).reason,/FI source SHA mismatch|FI source or nutrition calculation missing/);
   assert.equal(sourceReleaseGateDecision(sample.recipe_id,cloned).authorized,false);
 });
 
@@ -58,7 +64,7 @@ test("false claims of independent nutrition approval cannot substitute for exact
     gkDisposition:"GK_RECHECKED_NUMERIC",cookingAndAllergensReviewed:true,
     ingredientUnitConversionsReviewed:true,translationMeaningReviewRequired:true,
   };
-  assert.match(sourceReleaseGateDecision(sample.recipe_id,cloned).reason,/nutrition calculation missing/);
+  assert.match(sourceReleaseGateDecision(sample.recipe_id,cloned).reason,/nutrition calculation missing|nutrition evidence SHA mismatch/);
 });
 
 

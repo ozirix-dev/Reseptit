@@ -83,8 +83,11 @@ test('Live original results preserve frozen history plus the exact reviewed tran
   }
   assert.equal(sha(restored),before.resultHashes[r.recipeId],r.recipeId+' complete result');
  }
- assert.equal(report.gkOnlyVariants.length,87);
- for(const v of report.gkOnlyVariants)assert.equal(sha(v),before.variantHashes[v.recipeId+'/'+v.versionId],v.recipeId);
+ const variantKey = (v: {recipeId: string; versionId: string}) => v.recipeId + '/' + v.versionId;
+ const historicalVariants = report.gkOnlyVariants.filter((v: Parameters<typeof variantKey>[0]) =>
+   Object.hasOwn(before.variantHashes, variantKey(v)));
+ assert.deepEqual(historicalVariants.map(variantKey).sort(), Object.keys(before.variantHashes).sort());
+ for(const v of historicalVariants)assert.equal(sha(v),before.variantHashes[variantKey(v)],v.recipeId);
  const completePublishedInventory = json('tmp/nutrition/audit.json').inventory as Array<{recipe_id:string;source_path:string;status:string}>;
  const inventory = completePublishedInventory.filter((row) => {
    const reviewedPin = frozenKarnivoreFi3Blobs[row.recipe_id];

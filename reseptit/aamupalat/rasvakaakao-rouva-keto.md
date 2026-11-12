@@ -17,7 +17,7 @@ protein_per_serving_g: null
 fat_per_serving_g: null
 image:
   src: aamupalat/rasvakaakao-rouva-keto.webp
-  alt: "Kupillinen tummaa kaakaota, digitaalinen ruokakuvitus"
+  alt: "Kuvitus höyryävästä tummasta kaakaosta vaaleassa kupissa lautasella"
   width: 1536
   height: 864
 ingredients:
