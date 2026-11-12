@@ -4,7 +4,7 @@ recipe_id: pohjoisafrikkalainen-minttutee-kaurapuuro
 url_slug: pohjoisafrikkalainen-minttutee-kaurapuuro
 category: aamupala
 language: th
-status: draft
+status: published
 main_ingredient:
 - kaurahiutale
 - minttu
@@ -70,3 +70,5 @@ translation_of: pohjoisafrikkalainen-minttutee-kaurapuuro
 ## หมายเหตุ
 
 ค่าโหลดน้ำตาลโดยประมาณใช้กับสูตรที่กินใบสะระแหน่ไปพร้อมกับโจ๊ก ไม่ใช่ชาที่กรองใบออก ยังไม่มีการคำนวณค่าโหลดน้ำตาลสำหรับสูตรที่กรองใบออก จึงห้ามนำค่านี้ไปใช้แทน
+
+มีข้าวโอ๊ตและนม ค่าจากแบบจำลองมีความเชื่อมั่นต่ำ ไม่ได้มาจากการวัดการตอบสนองต่ออาหารมื้อนี้ และไม่ใช้กำหนดขนาดอินซูลิน

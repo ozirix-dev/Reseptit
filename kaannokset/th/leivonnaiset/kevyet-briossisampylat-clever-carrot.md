@@ -4,7 +4,7 @@ recipe_id: kevyet-briossisampylat-clever-carrot
 url_slug: kevyet-briossisampylat-clever-carrot
 category: leivonnainen
 language: th
-status: draft
+status: published
 servings: 9
 carbs_net_per_serving_g: 41.27
 carbs_total_per_serving_g: 43.22
@@ -97,3 +97,5 @@ translation_of: kevyet-briossisampylat-clever-carrot
 
 - ดัดแปลงจาก [Light Brioche Hamburger Buns ของ Emilie Raffa](https://www.theclevercarrot.com/2013/05/light-brioche-hamburger-buns/) ต้นฉบับได้ 8 ชิ้น ฉบับนี้ได้ 9 ชิ้น
 - แป้งในต้นฉบับที่ใช้ถ้วยตวงแปลงโดยประมาณ 120 กรัมต่อถ้วย ซึ่งอาจต่างกัน เวลารวม 275 นาทีเป็นค่าประมาณ ค่าสารอาหารรวมไข่ทาหน้า 15 กรัม ไม่มีงา ไม่มีค่า GI/GK ที่ยืนยันหรือการทดลองอบ
+
+มีข้าวสาลี นม และไข่ ภาพประกอบสร้างด้วยปัญญาประดิษฐ์ สูตรดัดแปลงนี้ยังต้องทดลองอบเพื่อยืนยันผล

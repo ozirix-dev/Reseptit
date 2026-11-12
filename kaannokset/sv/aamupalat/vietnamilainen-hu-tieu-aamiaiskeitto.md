@@ -4,7 +4,7 @@ recipe_id: vietnamilainen-hu-tieu-aamiaiskeitto
 url_slug: vietnamilainen-hu-tieu-aamiaiskeitto
 category: aamupala
 language: sv
-status: draft
+status: published
 main_ingredient:
   - "risnudlar"
   - "fläsk"
@@ -70,3 +70,5 @@ Den strukturerade ingredienslistan ovan anger mängderna för portionsberäkning
 ## Anteckningar
 
 De två portionerna omfattar allt 700 g kokvatten. Risnudlarna vägs torra; ingen extra olja eller buljong ingår. Totaltiden 20 minuter är en uppskattning i källan.
+
+Den modellerade glykemiska belastningen bygger på angivna GI-jämförelser och ett antagande om växtingredienserna. Tillförlitligheten är låg. Uppskattningen mäter inte måltidens blodsockerrespons och ska inte användas för insulindosering.

@@ -4,7 +4,7 @@ recipe_id: malesialainen-mee-goreng-aamunuudeleilla
 url_slug: malesialainen-mee-goreng-aamunuudeleilla
 category: aamupala
 language: sv
-status: draft
+status: published
 main_ingredient:
   - "vetenuudlar"
   - "tofu"
@@ -70,8 +70,10 @@ Den strukturerade ingredienslistan ovan anger mängderna för portionsberäkning
 2. Värm den angivna matskeden stekolja i en stor stekpanna eller wok. Bryn tofun lätt.
 3. Tillsätt böngroddarna och stek på hög värme tills de är varma rakt igenom och har mjuknat lite.
 4. Tillsätt de avrunna vetenuudlarna och den angivna matskeden sojasås. Knäck båda äggen i pannan och vänd runt tills äggen har stelnat helt och nudlarna är heta.
-5. Smaka av med salt och tillsätt endast den angivna mängden salt vid behov. Dela hela rätten i två portioner. Ingen extra deg, inga biffar eller tillbehör.
+5. Smaka av och tillsätt det angivna saltet vid behov. Dela hela rätten i två portioner.
 
 ## Anteckningar
 
 Samtliga nudlar är 100 g torra vetenuudlar enligt näringsberäkningen, tillsammans med två ägg. Ingen extra sås ingår; näringsvärdena är ingrediensbaserade.
+
+Innehåller vete, ägg och soja.
