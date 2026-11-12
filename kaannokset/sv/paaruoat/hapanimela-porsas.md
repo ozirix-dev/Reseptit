@@ -92,10 +92,10 @@ Krispigt stekt fläsk och färgglada grönsaker får en syrlig söt sås gjord p
 ## Tillagning
 
 1. Blanda fläsktärningarna med ägg, majsstärkelse och salt.
-2. Hetta upp oljan i en panna och stek fläsket i omgångar tills det är gyllenbrunt och genomstekt. Avsätta.
+2. Hetta upp oljan i en panna och stek fläsket i omgångar tills det är gyllenbrunt och genomstekt. Ställ åt sidan.
 3. Fräs paprikan och löken i 3–4 minuter. Tillsätt ananas.
-4. Blanda ketchup, vinäger, socker, sojasås och vatten. Häll upp i en kastrull och låt koka upp.
-5. Lägg tillbaka fläsket i pannan och vänd ner såsen. Servera med ris.
+4. Blanda ketchup, vinäger, socker, sojasås och vatten. Häll blandningen i stekpannan och koka upp.
+5. Lägg tillbaka fläsket i pannan och vänd runt köttet i såsen. Servera med ris.
 
 ## Anteckningar
 

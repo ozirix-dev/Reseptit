@@ -78,11 +78,11 @@ The Punjabi Amritsari fish gets its crispy crust from chickpea flour, yogurt and
 
 ## Preparation
 
-1. Cut the fish into bite-sized pieces and pat dry.
+1. Thaw the pollock in the refrigerator. Cut into bite-sized pieces and pat dry.
 2. Mix yogurt, chickpea flour, lemon juice, ajwain, paprika, chili, salt and garlic into a smooth dough.
 3. Roll the fish pieces in the dough and leave to marinate in the refrigerator for 20 minutes.
 4. Heat a thin layer of oil in a frying pan over medium heat.
-5. Fry the fish pieces in batches for 3–4 minutes per side until the skin is crispy and the fish is cooked.
+5. Fry the fish pieces in batches for 3–4 minutes per side until the coating is crisp and the fish is cooked.
 6. Serve with lemon wedges and mint chutney.
 
 ## Notes

@@ -72,9 +72,9 @@ Sött och salt fläsk i kantonesisk stil får en rödbrun yta av soja, honung oc
 
 ## Tillagning
 
-1. Blanda hoisinsås, sojasås, honung, risvinäger, kinesisk femkrydda och vitlök. Spara en matsked marinad.
+1. Blanda hoisinsås, sojasås, honung, risvinäger, kinesisk femkrydda och vitlök. Häll en matsked marinad i en ren skål innan det råa köttet läggs i.
 2. Vänd fläsket i marinaden och låt det marinera i kylen i minst 30 minuter.
-3. Värm ugnen till 220 grader. Lägg köttet på gallret på plåten och grädda i 25–35 minuter. Vänd en gång och pensla med marinad.
+3. Värm ugnen till 220 grader. Lägg köttet på gallret på plåten och grädda i 25–35 minuter. Vänd en gång och pensla med marinaden som sparades separat.
 4. Pensla ytan med honung och grädda i ytterligare 3–5 minuter tills ytan är blank. Se till att den inre temperaturen är minst 70 °C.
 5. Låt köttet vila i 5 minuter och skär i skivor. Servera med ris.
 

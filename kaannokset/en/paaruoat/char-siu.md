@@ -72,9 +72,9 @@ Cantonese-style sweet and salty pork gets a red-brown surface from soy, honey an
 
 ## Preparation
 
-1. Mix hoisin sauce, soy sauce, honey, rice vinegar, Chinese five-spice powder and garlic. Reserve a tablespoon of marinade.
+1. Mix hoisin sauce, soy sauce, honey, rice vinegar, Chinese five-spice powder and garlic. Set aside a tablespoon of marinade in a clean bowl before adding the raw meat.
 2. Turn the pork in the marinade and let it marinate in the fridge for at least 30 minutes.
-3. Heat the oven to 220 degrees. Put the meat on the rack on the baking sheet and bake for 25–35 minutes. Turn once and baste with marinade.
+3. Heat the oven to 220 degrees. Put the meat on the rack on the baking sheet and bake for 25–35 minutes. Turn once and baste with the reserved marinade.
 4. Brush the surface with honey and bake for another 3–5 minutes until the surface is shiny. Make sure the internal temperature is at least 70 °C.
 5. Let the meat rest for 5 minutes and cut into slices. Serve with rice.
 

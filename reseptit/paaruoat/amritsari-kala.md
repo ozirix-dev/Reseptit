@@ -79,7 +79,7 @@ Punjabilainen Amritsari-kala saa rapean kuorensa kikhernejauhosta, jogurtista ja
 
 ## Valmistus
 
-1. Leikkaa kala reiluiksi suupaloiksi ja taputtele kuivaksi.
+1. Sulata seiti jääkaapissa. Leikkaa reiluiksi suupaloiksi ja taputtele kuivaksi.
 2. Sekoita jogurtti, kikhernejauho, sitruunamehu, ajwain, paprika, chili, suola ja valkosipuli tasaiseksi taikinaksi.
 3. Kääntele kalapalat taikinassa ja anna marinoitua jääkaapissa 20 minuuttia.
 4. Kuumenna ohut kerros öljyä paistinpannulla keskilämmöllä.

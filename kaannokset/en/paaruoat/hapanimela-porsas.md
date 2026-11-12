@@ -93,7 +93,7 @@ Crispy fried pork and colorful vegetables get a tangy sweet sauce made from vine
 
 1. Mix the pork cubes with egg, cornstarch and salt.
 2. Heat the oil in a pan and fry the pork in batches until golden brown and cooked. Set aside.
-3. Fry the paprika and onion for 3–4 minutes. Add pineapple.
+3. Fry the red bell pepper and onion for 3–4 minutes. Add pineapple.
 4. Mix ketchup, vinegar, sugar, soy sauce and water. Pour into a pan and bring to a boil.
 5. Return the pork to the pan and turn in the sauce. Serve with rice.
 

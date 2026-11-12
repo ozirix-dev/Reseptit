@@ -58,7 +58,11 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 
 ## Valmistus
 
-1. Valmistele kulhon ainekset; kypsennä pavut tai proteiini, jos käytät niitä kuivina tai raakana. Paista tofu, muna tai muu lämmin täyte tarvittaessa erikseen.
-2. Paloittele tuoreet kasvikset ja valmistele yrtit sekä kastikkeen ainekset.
-3. Jaa lämmin pohja kulhoihin, asettele muut ainekset päälle ja lisää kastike juuri ennen tarjoamista.
-4. Kokoa paahdettu pita, lämpimät kikherneet ja tahini-jogurtti kerroksittain.
+1. Revi 100 g pitaleipää suupaloiksi ja paahda palat kuivalla pannulla rapeiksi.
+2. Kuumenna 100 g kypsiä, valutettuja kikherneitä pienessä kattilassa, kunnes ne ovat kauttaaltaan kuumia.
+3. Sekoita 1 rkl tahinia 100 g:aan maustamatonta jogurttia. Lisää luettelon suolaa maun mukaan.
+4. Jaa paahdettu pita kahteen kulhoon. Lisää lämpimät kikherneet ja lusikoi tahinijogurtti päälle juuri ennen tarjoilua.
+
+## Muistiinpanot
+
+Kuvan muut lisukkeet ovat tarjoiluehdotuksia. Ravintolaskenta kattaa ainesluettelon.

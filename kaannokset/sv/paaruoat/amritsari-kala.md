@@ -78,11 +78,11 @@ Punjabi Amritsari-fisken får sin krispiga skorpa från kikärtsmjöl, yoghurt o
 
 ## Tillagning
 
-1. Skär fisken i lagom stora bitar och torka den.
+1. Tina sejen i kylskåp. Skär fisken i munsbitar och torka dem.
 2. Blanda yoghurt, kikärtsmjöl, citronsaft, ajwain, paprika, chili, salt och vitlök till en smidig deg.
 3. Rulla in fiskbitarna i degen och låt marinera i kylen i 20 minuter.
 4. Hetta upp ett tunt lager olja i en stekpanna på medelvärme.
-5. Stek fiskbitarna i omgångar 3–4 minuter per sida tills skinnet är knaprigt och fisken genomstekt.
+5. Stek fiskbitarna i omgångar 3–4 minuter per sida tills paneringen är frasig och fisken genomstekt.
 6. Servera med citronklyftor och mintchutney.
 
 ## Anteckningar

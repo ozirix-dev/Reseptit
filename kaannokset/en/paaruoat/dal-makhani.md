@@ -83,10 +83,10 @@ A hearty dal makhani is stewed with black lentils and beans, and finished with b
 
 ## Preparation
 
-1. Rinse the soaked lentils and beans. Boil them in water until soft, about 60-75 minutes. Add water if necessary.
+1. Rinse the soaked lentils and beans. Discard the soaking water. Boil vigorously in fresh water for at least 30 minutes and continue until the beans are tender. Total boiling time is about 60–75 minutes. Add water if necessary.
 2. Melt the butter in a saucepan. Saute the onion until soft. Add garlic and ginger.
 3. Mix in crushed tomatoes, cumin and salt. Simmer for 10 minutes.
-4. Add the cooked lentils and beans and a few deciliters of cooking stock. Crush some of the lentils with a spoon.
+4. Add the cooked lentils and beans and a few decilitres of the bean cooking liquid. Crush some of the lentils with a spoon.
 5. Simmer on very low heat for at least 45 minutes, stirring occasionally.
 6. Add garam masala and cream. Heat for another 5 minutes and finish with cilantro.
 

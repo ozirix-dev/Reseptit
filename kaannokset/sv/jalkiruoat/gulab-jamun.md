@@ -76,11 +76,11 @@ translation_of: gulab-jamun
 
 # Gulab jamun – söta bollar i kardemummalag
 
-De mjuka mjölkmjölsbollarna steks långsamt tills de är gyllenbruna och blötläggs i en sirap smaksatt med rosenvatten och kardemumma.
+De mjuka bollarna av mjölkpulverdeg steks långsamt tills de är gyllenbruna och blötläggs i en sirap smaksatt med rosenvatten och kardemumma.
 
 ## Beskrivning
 
-De mjuka mjölkmjölsbollarna steks långsamt tills de är gyllenbruna och blötläggs i en sirap smaksatt med rosenvatten och kardemumma.
+De mjuka bollarna av mjölkpulverdeg steks långsamt tills de är gyllenbruna och blötläggs i en sirap smaksatt med rosenvatten och kardemumma.
 
 ## Tillagning
 

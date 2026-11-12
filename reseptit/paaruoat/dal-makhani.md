@@ -85,7 +85,7 @@ Täyteläinen dal makhani haudutetaan mustista linsseistä ja pavuista, ja viime
 
 ## Valmistus
 
-1. Huuhtele liotetut linssit ja pavut. Keitä ne vedessä pehmeiksi, noin 60–75 minuuttia. Lisää vettä tarvittaessa.
+1. Huuhtele liotetut linssit ja pavut. Heitä liotusvesi pois. Keitä puhtaassa vedessä reippaasti kiehuen vähintään 30 minuuttia ja jatka, kunnes pavut ovat pehmeitä. Kokonaiskeittoaika on noin 60–75 minuuttia. Lisää vettä tarvittaessa.
 2. Sulata voi kattilassa. Kuullota sipuli pehmeäksi. Lisää valkosipuli ja inkivääri.
 3. Sekoita joukkoon tomaattimurska, juustokumina ja suola. Hauduta 10 minuuttia.
 4. Lisää kypsät linssit ja pavut sekä muutama desilitra keitinlientä. Murskaa osa linsseistä lusikalla.
