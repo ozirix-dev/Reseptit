@@ -11,7 +11,6 @@ for (const page of pages) {
   checked++;
   if (response.status !== 200) findings.push({ route: page.route, status: response.status });
   else findings.push(...inspectPage(await response.text(), page));
-  if (/noindex|none/i.test(response.headers.get("x-robots-tag") ?? "")) findings.push({ route: page.route, error: "HTTP header blocks indexing" });
 }
 for (const file of ["robots.txt", "sitemap.xml", "google0c6f9c0486376f0f.html", "v16-deliberately-missing-route/"]) {
   const response = await fetch(`${siteBase}/${file}`, { redirect: "manual", signal: AbortSignal.timeout(20000) });

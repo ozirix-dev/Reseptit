@@ -59,6 +59,10 @@ GitHub Pages -stagingin nykyinen `main`-pohjainen deploy ei ole *ennakkotesti* s
 - Varmista, ettei `pages.dev`-preview indeksoidu (noindex ja tarvittaessa Cloudflare Access). Tarkista, että salaisuudet eivät tallennu GitHubiin.
 - Vältä kallista kaksinkertaista CI:tä: uudelleenkäytä jo todettu build/asset-artifact, jos turvallisesti toteutettavissa. Testaa vain muuttuvat julkaisu- ja reittiasiat.
 
+GitHub Pagesin oletusbuild säilyttää `/Reseptit/`-polun ja lisää sisältösivuille
+robots-metatiedon `noindex, nofollow`. Crawleri saa lukea metatiedon.
+Stagingin robots.txt ei ilmoita sitemapia.
+
 Nykyinen build tukee Cloudflare-esikatselua asettamalla ennen buildia
 RECIPAVO_PREVIEW_ORIGIN-muuttujaksi oman preview-haaran HTTPS pages.dev-osoitteen.
 Build käyttää juuripolkua, tuottaa kyseisen esikatselun SEO-osoitteet ja lisää

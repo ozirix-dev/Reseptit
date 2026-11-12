@@ -3,12 +3,14 @@ import path from "node:path";
 import { pathToFileURL } from "node:url";
 import { isDeepStrictEqual } from "node:util";
 import { localeIndexes } from "../src/content/route-data";
+import { resolveSiteTarget } from "../src/content/site-target";
 import { articles, articlePath, blogRoot, blogPosts, blogJsonLd } from "../src/features/blog/blog-data";
 import { glycemicLoadMeta, glycemicLoadPath, recipeUi } from "../src/features/recipes/recipe-i18n";
 import type { RecipeEntry, RecipeLocale } from "../src/types/content";
 import { withholdF25Nutrition } from "../src/features/recipes/f25-nutrition-withhold";
 
-export const siteBase = "https://ozirix-dev.github.io/Reseptit";
+const staging = resolveSiteTarget();
+export const siteBase = staging.baseUrl;
 export interface SeoFinding { route: string; code: string; detail: string }
 export interface ExpectedPage { route: string; locale: RecipeLocale; title: string; description: string; h1: string; alternates: Record<string, string>; recipe?: RecipeEntry; blog?: boolean }
 const names = { fi: "Reseptit", en: "Recipes", sv: "Recept", th: "สูตรอาหาร" };
@@ -60,7 +62,8 @@ export function inspectPage(html: string, expected: ExpectedPage): SeoFinding[] 
   check(isDeepStrictEqual(links.filter((l) => l.rel === "canonical").map((l) => l.href), [siteBase + expected.route]), "CANONICAL", "Canonical is missing, duplicated or incorrect");
   const alternateLinks = links.filter((l) => l.rel === "alternate" && l.hreflang);
   check(alternateLinks.length === Object.keys(expected.alternates).length && isDeepStrictEqual(Object.fromEntries(alternateLinks.map((l) => [l.hreflang, l.href])), expected.alternates), "HREFLANG", "Published alternates/x-default must match both ways; no extra, duplicate or missing locale");
-  check(!metas.some((m) => ["robots", "googlebot"].includes(m.name) && /(?:noindex|none)/i.test(m.content)), "NOINDEX", "Published page blocks indexing");
+  const robots = metas.filter((m) => m.name?.toLowerCase() === "robots");
+  check(robots.length === 1 && robots[0].content?.toLowerCase().split(/[,\s]+/).includes("noindex"), "NOINDEX", "Staging page must declare robots noindex once");
   const scripts = activeScripts(html);
   const jsonScripts = scripts.filter((script) => script.attributes.type === "application/ld+json");
   if (expected.blog) {
@@ -146,9 +149,11 @@ export function inspectDiscovery(sitemap: string, robots: string, routes: string
   const document = /^\s*<\?xml version="1\.0" encoding="UTF-8"\?>\s*<urlset xmlns="http:\/\/www\.sitemaps\.org\/schemas\/sitemap\/0\.9">([\s\S]*)<\/urlset>\s*$/.exec(sitemap);
   const body = document?.[1].replace(/<url>\s*<loc>(?:[^<&]|&amp;|&lt;|&gt;|&quot;|&apos;)*<\/loc>\s*<\/url>/g, "").trim();
   if (!document || body !== "" || !isDeepStrictEqual([...urls].sort(), routes.map((r) => siteBase + r).sort())) issues.push({ route: "/sitemap.xml", code: "SITEMAP", detail: "Malformed/unsupported sitemap XML or missing, extra or duplicate URLs" });
-  const blocked = routes.some((r) => ["*", "googlebot", "googlebot-image"].some((agent) => blockedByRobots(robots, "/Reseptit" + r, agent)));
-  const sitemapDirective = robots.split(/\r?\n/).map((line) => line.split("#")[0].trim()).some((line) => /^sitemap\s*:/i.test(line) && line.slice(line.indexOf(":") + 1).trim() === `${siteBase}/sitemap.xml`);
-  if (!sitemapDirective || blocked) issues.push({ route: "/robots.txt", code: "ROBOTS", detail: "Project robots blocks published paths or lacks sitemap reference" });
+  const blocked = routes.some((r) => ["*", "googlebot", "googlebot-image"].some((agent) => blockedByRobots(robots, staging.basePath.slice(0, -1) + r, agent)));
+  const directives = robots.split(/\r?\n/).map((line) => line.split("#")[0].trim());
+  if (blocked || !directives.some((line) => /^user-agent\s*:\s*\*$/i.test(line)) || directives.some((line) => /^sitemap\s*:/i.test(line))) {
+    issues.push({ route: "/robots.txt", code: "ROBOTS", detail: "Project robots must allow crawlers to read noindex without advertising the staging sitemap" });
+  }
   return issues;
 }
 

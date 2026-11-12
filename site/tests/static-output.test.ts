@@ -283,7 +283,7 @@ test("localized central GL pages render complete SEO metadata with canonical and
     assert.ok(html.includes('<meta name="twitter:card" content="summary"'));
     assert.ok(html.includes(`<meta name="twitter:title" content="${page.title}"`));
     assert.ok(html.includes(`<meta name="twitter:description" content="${page.description}"`));
-    assert.doesNotMatch(html, /<meta name="robots" content="noindex,follow">/);
+    assert.match(html, /name="robots" content="noindex, nofollow"/);
     assert.match(html, new RegExp(`<html lang="${page.locale}">`));
     assert.match(html, /<h1/);
     assert.match(html, /hreflang="fi"/);
@@ -398,12 +398,12 @@ test("localized 404 pages never hydrate a recipe or emit indexable metadata", as
     assert.ok(html.includes("<h1>" + recipeUi[locale].notFound + "</h1>"));
     assert.ok(html.includes('<p><a href="/Reseptit' + indexPath + '"'));
     assert.ok(html.includes('>' + recipeUi[locale].backToRecipes + '</a></p>'));
-    assert.match(html, /name="robots" content="noindex,follow"/);
+    assert.match(html, /name="robots" content="noindex, nofollow"/);
     assert.doesNotMatch(html, /rel="canonical"|recipe-jsonld|"@type":"Recipe"|hreflang=|x-default|<script type="module"/);
   }
 });
 
-test("sitemap and project robots reference the real Pages path", async () => {
+test("staging sitemap keeps the Pages paths and robots lets crawlers read noindex", async () => {
   const sitemap = await readFile(path.join(dist, "sitemap.xml"), "utf8");
   const robots = await readFile(path.join(dist, "robots.txt"), "utf8");
   assert.match(sitemap, /https:\/\/ozirix-dev\.github\.io\/Reseptit\/kermainen-lohipata\//);
@@ -415,7 +415,8 @@ test("sitemap and project robots reference the real Pages path", async () => {
   assert.doesNotMatch(sitemap, /raakileet|\.md/);
   assert.doesNotMatch(sitemap, /\?(?:q|category|diet)=/);
   assert.match(robots, /Project-path robots\.txt/);
-  assert.match(robots, /Sitemap: https:\/\/ozirix-dev\.github\.io\/Reseptit\/sitemap\.xml/);
+  assert.match(robots, /Allow: \/Reseptit\//);
+  assert.doesNotMatch(robots, /^Sitemap:/mi);
 });
 
 test("Google Search Console ownership verification file is published at the Pages root", async () => {

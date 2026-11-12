@@ -13,7 +13,7 @@ export function resolveSiteTarget(previewOrigin?: string, buildTarget?: string):
     return { basePath: "/", baseUrl: "https://www.recipavo.com", noIndex: false, production: true };
   }
   if (previewOrigin === undefined) {
-    return { basePath: "/Reseptit/", baseUrl: "https://ozirix-dev.github.io/Reseptit", noIndex: false, production: false };
+    return { basePath: "/Reseptit/", baseUrl: "https://ozirix-dev.github.io/Reseptit", noIndex: true, production: false };
   }
   // The root-path preview cannot emit a production domain.
   if (!/^https:\/\/(?:[a-z0-9-]+\.)+pages\.dev$/i.test(previewOrigin)) {

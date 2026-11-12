@@ -15,6 +15,7 @@ test("recipe route normalization follows the deployment base", () => {
   assert.equal(normalizePath("/Reseptit/en/recipes/?q=rice", legacy.basePath), "/en/recipes/");
   assert.equal(normalizePath("/en/recipes/?q=rice", preview.basePath), "/en/recipes/");
   assert.equal(normalizePath("/Reseptit/en/recipes/", preview.basePath), "/Reseptit/en/recipes/");
+  assert.equal(legacy.noIndex, true);
   assert.equal(preview.noIndex, true);
   assert.throws(() => resolveSiteTarget("https://www.recipavo.com"));
   assert.deepEqual(resolveSiteTarget(undefined, "production"), {
