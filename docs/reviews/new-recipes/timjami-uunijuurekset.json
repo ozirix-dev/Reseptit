@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "recipe_id": "timjami-uunijuurekset",
+  "source_path": "reseptit/alkuruoat/timjami-uunijuurekset.md",
+  "source_sha256": "72608220fb07e582a2c9514ff862eab8c66d94ef09595a145a2d9719c3876f89",
+  "decision": "approved",
+  "reviewed_by": "Codex – kirjallinen toimituksellinen katselmointi",
+  "reviewed_at": "2026-11-12",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.k-ruoka.fi/reseptit/uunijuurekset"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/timjami-uunijuurekset.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Kolmen juureksen pellillinen erottuu täytetyistä bataatinpuolikkaista ja kasvissoseista. Koko kirjaston samankaltaisuusraportissa ei ollut tälle tunnisteelle tarkistettavaa ehdokasosumaa."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "7 ainesriviä. Määrät ja yksiköt on kirjattu valmistusvaiheissa käytettävään muotoon ja verrattu vertailuohjeeseen."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistusjärjestys, annos ja kypsyyden tunnusmerkit on tarkistettu vertailuohjeesta. Paahda keskitasolla noin 25 minuuttia. Käännä juurekset puolivälissä ja jatka, kunnes peruna ja porkkana ovat keskeltä pehmeitä ja reunoilla näkyy paistoväriä."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Punnitse juurekset kuorimisen jälkeen. Valitse hyväkuntoiset, vihertymättömät perunat."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Neljä lisukeannosta. Noin 40 minuuttiin sisältyvät kuoriminen, paloittelu ja paahto."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Kuivatun timjamin ja mustapippurin kuitu- ja polyolitiedot puuttuvat lähteistä."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Tälle versiolle ei ole hyväksyttyä GI- ja GK-sidosta. Nykyinen lähde on kiinnitetty GK-pending-rekisteriin. Numeerista GK-arvoa ei julkaista."
+    }
+  },
+  "supplementary_evidence": {
+    "physical_cook_test": false,
+    "image_path": "kuvat/alkuruoat/timjami-uunijuurekset.webp",
+    "image_sha256": "918da99c3a52682db4acae3a526d634dd7c61b27ce9304c3168d9bb49179ae65",
+    "image_review": "Paahdettuja porkkana-, palsternakka- ja perunatikkuja vadilla",
+    "image_method": "Built-in ImageGen",
+    "image_prompt": "Create one original, realistic Finnish cookbook food photograph of oven-roasted batons of carrot, parsnip and potato, light brown edges and visible dried thyme, in a shallow matte dish. Wide landscape hero composition with dish centered in the middle 75%, modest natural window light, warm neutral linen background, accurate home-cooked texture, clean edge framing, no text, graphics, hands, people, packages, branding, or unlisted garnishes. Show only the described finished recipe, suitable for a recipe site's landscape cover.",
+    "nutrition_calculation_sha256": "193d24c5d82c594e885f884b1b24c45ed7afe6218bb15a649f2c32fe2ca75b71"
+  }
+}

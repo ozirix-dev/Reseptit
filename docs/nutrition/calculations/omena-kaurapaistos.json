@@ -1,0 +1,167 @@
+{
+  "recipeId": "omena-kaurapaistos",
+  "sourceHash": "39c3aa6b619ae37dfa385787872eb8b8eb0b25a8e9c57f27a5daebf64cacba65",
+  "calculatedAt": "2026-11-12",
+  "batchId": "batch-518",
+  "servings": 4,
+  "scope": "Ainesosien laskennallinen arvio, 4 annosta. Lähdeaineisto on Fineli Release 20. Lisukkeet ja valinnaiset tarjoilut eivät kuulu laskentaan.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "amount": 850,
+      "unit": "g",
+      "item": "hapokkaita omenoita kuorittuna ja ilman siemenkotaa",
+      "edibleFraction": 1,
+      "edibleEvidence": "Quantities describe the added edible ingredient unless a whole weight is explicitly marked.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Ingredient estimate per divided batch. Volatile water is not treated as macro loss. No cooking yield is represented.",
+      "state": "raw or dry before cooking",
+      "matchEvidence": "Fineli Release 20 food 11060, OMENA, KOTIMAINEN, KUORITTU. Generic composition for the named ingredient and state, without a brand-specific claim.",
+      "record": {
+        "id": "fineli-11060-release-20",
+        "name": "OMENA, KOTIMAINEN, KUORITTU",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11060",
+        "retrievedAt": "2026-11-12",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "raw or dry before cooking",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 8.31,
+          "fibre": 1.8,
+          "polyols": 0.0,
+          "protein": 0.19,
+          "fat": 0.1
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 SUGOH field in the pinned source snapshot."
+      }
+    },
+    {
+      "amount": 1,
+      "unit": "tl",
+      "item": "jauhettua kanelia",
+      "edibleFraction": 1,
+      "edibleEvidence": "Quantities describe the added edible ingredient unless a whole weight is explicitly marked.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Ingredient estimate per divided batch. Volatile water is not treated as macro loss. No cooking yield is represented.",
+      "state": "dried ingredient",
+      "matchEvidence": "Fineli Release 20 food 11184, KANELI. Generic composition for the named ingredient and state, without a brand-specific claim.",
+      "record": {
+        "id": "fineli-11184-release-20",
+        "name": "KANELI",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11184",
+        "retrievedAt": "2026-11-12",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "dried ingredient",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": null,
+          "fibre": null,
+          "polyols": null,
+          "protein": null,
+          "fat": null
+        },
+        "polyolsSourceVerified": false
+      },
+      "conversionEvidence": "Ingredient-specific unit mass is not verified; no teaspoon density is inferred."
+    },
+    {
+      "amount": 100,
+      "unit": "g",
+      "item": "voita",
+      "edibleFraction": 1,
+      "edibleEvidence": "Quantities describe the added edible ingredient unless a whole weight is explicitly marked.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Ingredient estimate per divided batch. Volatile water is not treated as macro loss. No cooking yield is represented.",
+      "state": "ingredient as sold",
+      "matchEvidence": "Fineli Release 20 food 500, VOI. Generic composition for the named ingredient and state, without a brand-specific claim.",
+      "record": {
+        "id": "fineli-500-release-20",
+        "name": "VOI",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/500",
+        "retrievedAt": "2026-11-12",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "ingredient as sold",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 0.8,
+          "fibre": 0.0,
+          "polyols": 0.0,
+          "protein": 1.19,
+          "fat": 81.3
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 SUGOH field in the pinned source snapshot."
+      }
+    },
+    {
+      "amount": 0.5,
+      "unit": "dl",
+      "item": "sokeria",
+      "edibleFraction": 1,
+      "edibleEvidence": "Quantities describe the added edible ingredient unless a whole weight is explicitly marked.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Ingredient estimate per divided batch. Volatile water is not treated as macro loss. No cooking yield is represented.",
+      "state": "ingredient as sold",
+      "matchEvidence": "Fineli Release 20 food 1, SOKERI. Generic composition for the named ingredient and state, without a brand-specific claim.",
+      "record": {
+        "id": "fineli-1-release-20",
+        "name": "SOKERI",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/1",
+        "retrievedAt": "2026-11-12",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "ingredient as sold",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 99.9,
+          "fibre": 0.0,
+          "polyols": 0.0,
+          "protein": 0.0,
+          "fat": 0.0
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 SUGOH field in the pinned source snapshot."
+      },
+      "gramsPerUnit": 85.0,
+      "conversionEvidence": "Fineli Release 20 food 1 portion_mass_g DL."
+    },
+    {
+      "amount": 3,
+      "unit": "dl",
+      "item": "kaurahiutaleita",
+      "edibleFraction": 1,
+      "edibleEvidence": "Quantities describe the added edible ingredient unless a whole weight is explicitly marked.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Ingredient estimate per divided batch. Volatile water is not treated as macro loss. No cooking yield is represented.",
+      "state": "raw or dry before cooking",
+      "matchEvidence": "Fineli Release 20 food 153, KAURAHIUTALE. Generic composition for the named ingredient and state, without a brand-specific claim.",
+      "record": {
+        "id": "fineli-153-release-20",
+        "name": "KAURAHIUTALE",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/153",
+        "retrievedAt": "2026-11-12",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "raw or dry before cooking",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 59.99,
+          "fibre": 5.7,
+          "polyols": null,
+          "protein": 13.6,
+          "fat": 7.24
+        },
+        "polyolsSourceVerified": false
+      },
+      "gramsPerUnit": 40.0,
+      "conversionEvidence": "Fineli Release 20 food 153 portion_mass_g DL."
+    }
+  ],
+  "publicationStatus": "WITHHELD_SOURCE_INCOMPLETE",
+  "withholdingReason": "Kanelin teelusikan massaa ja kaurahiutaleiden polyoleja ei ole vahvistettu."
+}

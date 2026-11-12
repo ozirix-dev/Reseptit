@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "recipe_id": "puolukkakiisseli",
+  "source_path": "reseptit/jalkiruoat/puolukkakiisseli.md",
+  "source_sha256": "a475beec15614face0f6778d4bc119d301942755f1ba979d2c6a84e59d3f7691",
+  "decision": "approved",
+  "reviewed_by": "Codex – kirjallinen toimituksellinen katselmointi",
+  "reviewed_at": "2026-11-12",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.k-ruoka.fi/reseptit/puolukkakiisseli-ja-valkosuklaakerma",
+      "https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/turvallisen-kayton-ohjeet/ulkomaiset-pakastemarjat/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/puolukkakiisseli.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Puolukka suurustetaan perunatärkkelyksellä. Ruis-puolukkapuuro hautuu jauhoista eikä kiisselinä. Koko kirjaston samankaltaisuusraportissa ei ollut tälle tunnisteelle tarkistettavaa ehdokasosumaa."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "5 ainesriviä. Määrät ja yksiköt on kirjattu valmistusvaiheissa käytettävään muotoon ja verrattu vertailuohjeeseen."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistusjärjestys, annos ja kypsyyden tunnusmerkit on tarkistettu vertailuohjeesta. Palauta kattila liedelle. Kun kiisseli pulpahtaa ja sakenee, ota se heti liedeltä. Jaa kuuteen kulhoon ja anna jäähtyä."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Myös mahdolliset ulkomaiset pakastepuolukat kiehuvat koko erässä ennen suurustamista. Tarjoa haaleana tai jäähdytä nopeasti jääkaappiin."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Kuusi annosta. Noin 30 minuuttia valmistukseen ja lyhyeen jäähtymiseen. Kylmänä tarjoaminen vaatii lisäaikaa."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Fineli Release 20 -sidokset kattavat reseptin ainesrivit ja yksiköt. Julkinen neljän makron arvio on laskettu reseptin annosmäärälle."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Tälle versiolle ei ole hyväksyttyä GI- ja GK-sidosta. Nykyinen lähde on kiinnitetty GK-pending-rekisteriin. Numeerista GK-arvoa ei julkaista."
+    }
+  },
+  "supplementary_evidence": {
+    "physical_cook_test": false,
+    "image_path": "kuvat/jalkiruoat/puolukkakiisseli.webp",
+    "image_sha256": "182315271a9b295a3f190b7eeab1b02bc83795d66d28c366757ddef2a7d8bbcb",
+    "image_review": "Punainen puolukkakiisseli lasikulhossa",
+    "image_method": "Built-in ImageGen",
+    "image_prompt": "Create one original, realistic Finnish cookbook food photograph of Finnish lingonberry kissel, translucent deep ruby spoonable berry dessert with cooked whole lingonberries visible in a clear glass serving cup. Wide landscape hero composition with dish centered in the middle 75%, modest natural window light, warm neutral linen background, accurate home-cooked texture, clean edge framing, no text, graphics, hands, people, packages, branding, or unlisted garnishes. Show only the described finished recipe, suitable for a recipe site's landscape cover.",
+    "nutrition_calculation_sha256": "68b1e6871c0f0f7db24e26954f9b7e49b3cd9c077964ec004e9add2b4dd9a2e6"
+  }
+}

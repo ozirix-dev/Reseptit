@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "recipe_id": "pinaattikeitto",
+  "source_path": "reseptit/paaruoat/pinaattikeitto.md",
+  "source_sha256": "5152fffb2d603989178c30a8a3dbecdd0569f9197d35307eb28ce58ed461e207",
+  "decision": "approved",
+  "reviewed_by": "Codex – kirjallinen toimituksellinen katselmointi",
+  "reviewed_at": "2026-11-12",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.k-ruoka.fi/reseptit/pinaattikeitto"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/pinaattikeitto.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Pinaattikeiton vaalea vehnäjauhosuurus ja hienonnettu pinaatti erottavat sen paahteisista sosekeitoista. Koko kirjaston samankaltaisuusraportissa ei ollut tälle tunnisteelle tarkistettavaa ehdokasosumaa."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "7 ainesriviä. Määrät ja yksiköt on kirjattu valmistusvaiheissa käytettävään muotoon ja verrattu vertailuohjeeseen."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Valmistusjärjestys, annos ja kypsyyden tunnusmerkit on tarkistettu vertailuohjeesta. Mausta suolalla, sokerilla ja mustapippurilla. Jaa keitto neljään kulhoon."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Sisältää maitoa ja vehnää. Varmista, että jäinen pinaatti kuumenee läpi ennen tarjoilua."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Neljä keittoannosta. Noin 25 minuuttiin mahtuvat suurustus, pinaatin sulaminen ja loppukiehutus."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Mustapippurin Fineli-tietueesta puuttuvat kuitu ja polyolit."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Tälle versiolle ei ole hyväksyttyä GI- ja GK-sidosta. Nykyinen lähde on kiinnitetty GK-pending-rekisteriin. Numeerista GK-arvoa ei julkaista."
+    }
+  },
+  "supplementary_evidence": {
+    "physical_cook_test": false,
+    "image_path": "kuvat/paaruoat/pinaattikeitto.webp",
+    "image_sha256": "14b0d0dedfedc49466a40f904283222e7492633bf656b5528b22f2188d7bdb5c",
+    "image_review": "Pinaatin vihreitä hiutaleita vaaleassa keitossa",
+    "image_method": "Built-in ImageGen",
+    "image_prompt": "Create one original, realistic Finnish cookbook food photograph of a Finnish creamy pale green spinach soup, fine visible dark green chopped spinach flecks throughout, in a ceramic bowl. Wide landscape hero composition with dish centered in the middle 75%, modest natural window light, warm neutral linen background, accurate home-cooked texture, clean edge framing, no text, graphics, hands, people, packages, branding, or unlisted garnishes. Show only the described finished recipe, suitable for a recipe site's landscape cover.",
+    "nutrition_calculation_sha256": "3f3dc259eca4841c1c80977d878528b29e395fdbcb7ded5d3a67ebfcab655163"
+  }
+}
