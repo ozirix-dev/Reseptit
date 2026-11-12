@@ -215,7 +215,11 @@ function checkedPostBaselineRelease(root: string, baseline: string, recipeId: st
   const historicalPath = execFileSync("git", ["--literal-pathspecs", "ls-tree", "-r", "--name-only", baseline, "--", file], {
     cwd: root, encoding: "utf8",
   });
-  if (historicalPath.trim()) return false;
+  if (historicalPath.trim()) {
+    const old = parseMarkdown(execFileSync("git", ["show", baseline + ":" + file], { cwd: root, encoding: "utf8" }));
+    // Promoting the same historical FI draft does not mutate a published baseline recipe.
+    if (old?.data.status !== "draft" || old.data.language !== "fi" || old.data.recipe_id !== recipeId) return false;
+  }
   execFileSync(process.execPath, [path.join(root, "site/scripts/new-recipe-preflight.mjs"), "--recipe=" + file], {
     cwd: root, encoding: "utf8",
   });
@@ -355,11 +359,14 @@ export function assertRecipeBaseline(root: string, baseline: string, ...protecte
         continue;
       }
     }
-    if (status === "A" && /^reseptit\/(?:alkuruoat|paaruoat|jalkiruoat|leivonnaiset|aamupalat|valipalat)\/.+\.md$/.test(file)) {
+    if ((status === "A" || status === "M") && /^reseptit\/(?:alkuruoat|paaruoat|jalkiruoat|leivonnaiset|aamupalat|valipalat)\/.+\.md$/.test(file)) {
       const parsed = parseMarkdown(readFileSync(path.join(root, file), "utf8"));
       if (parsed?.data.status === "published") {
-        const source = recipeFrontmatterSchema.parse(parsed.data);
-        if (checkedPostBaselineRelease(root, baseline, source.recipe_id, file)) continue;
+        const id = parsed.data.recipe_id;
+        if (typeof id === "string" && checkedPostBaselineRelease(root, baseline, id, file)) {
+          recipeFrontmatterSchema.parse(parsed.data);
+          continue;
+        }
       }
     }
     if (status === "A" && /^docs\/nutrition\/calculations\/[a-z0-9-]+\.json$/.test(file)) {

@@ -1,59 +1,54 @@
 ---
 title: "Rapeat kauralastut"
-recipe_id: "kaurakeksit"
-url_slug: "rapeat-kauralastut"
-category: "jalkiruoka"
-language: "fi"
-diet_class: "vhh_valjempi"
-carbs_net_per_serving_g:
-carbs_total_per_serving_g:
-protein_per_serving_g:
-fat_per_serving_g:
-servings: 24
-main_ingredient: ["kaura"]
-cooking_method: ["uuni"]
-time_total_min: 15
-difficulty: "helppo"
-tags: ["leivonta", "rapeat", "kahvipoyta", "jalkiruoka"]
+recipe_id: kaurakeksit
+url_slug: rapeat-kauralastut
+category: jalkiruoka
+language: fi
+status: published
+servings: 30
+time_total_min: 30
+difficulty: helppo
+main_ingredient: [kaura]
+cooking_method: [uuni]
+tags: [leivonta, keksit]
 translation_languages: []
 translation_status:
-  en: "draft"
-  th: "draft"
-status: "draft"
+  en: draft
+  th: draft
+carbs_net_per_serving_g: null
+carbs_total_per_serving_g: null
+protein_per_serving_g: null
+fat_per_serving_g: null
+image:
+  src: jalkiruoat/rapeat-kauralastut.webp
+  alt: "Kuvitus ohuista kauralastuista vaalealla lautasella"
+  width: 1536
+  height: 864
+ingredients:
+  - { amount: 100, unit: g, item: "voita" }
+  - { amount: 170, unit: g, item: "sokeria" }
+  - { amount: 100, unit: g, item: "kananmunaa ilman kuorta", note: "noin 2 keskikokoista kananmunaa" }
+  - { amount: 140, unit: g, item: "kaurahiutaleita" }
+  - { amount: 1, unit: rkl, item: "puolikarkeita vehnäjauhoja" }
+  - { amount: 1, unit: tl, item: "leivinjauhetta" }
+  - { amount: 1, unit: tl, item: "vanilliinisokeria" }
 ---
 
 # Rapeat kauralastut
 
-Nopeat ja rapeat kauralastut kahvin tai jaatelon seuraksi.
-
-## Kuvaus
-
-Rapeat kauralastut ovat nopeita, helppoja ja ohuita kaurakekseja, jotka sopivat tarjottavaksi sellaisenaan, kahvin kanssa tai jaatelon paalla.
-
-## Ainekset
-
-- 4 dl kaurahiutaleita
-- 2 dl sokeria
-- 1 tl vaniljasokeria
-- 2 rkl vehnajauhoja
-- 2 tl leivinjauhetta
-- 100 g voita
-- 2 kananmunaa
+Nämä ohuet kaurakeksit leviävät pellillä ja rapeutuvat jäähtyessään. Yhdestä taikinasta tulee noin 30 lastua.
 
 ## Valmistus
 
-1. Lammita uuni 200 asteeseen.
-2. Yhdista kulhossa kaurahiutaleet, sokeri, vaniljasokeri, vehnajauhot ja leivinjauhe.
-3. Lisaa sulatettu ja jaahdytetty voi. Sekoita.
-4. Lisaa kananmunat ja sekoita tasaiseksi taikinaksi.
-5. Nostele taikinaa noin 2/3 rkl:n nokareina leivinpaperin paalle. Jata reilusti leviamisvaraa.
-6. Paista uunin keskitasolla 6-7 minuuttia, kunnes lastut ovat ruskeita ja ohuita.
-7. Anna jaahtya pellilla, jotta ne rapeutuvat loppuun.
-
-## Ravintoarvio per annos
-
-- Reseptin ravintosisalto on suuntaa-antava.
+1. Lämmitä uuni 200 °C:seen ylä- ja alalämmöllä. Peitä kaksi peltiä leivinpaperilla.
+2. Sulata voi ja anna sen jäähtyä haaleaksi. Sekoita toisessa kulhossa kaurahiutaleet, vehnäjauhot, leivinjauhe ja vanilliinisokeri.
+3. Sekoita kananmunat ja sokeri voisulaan. Lisää kuiva seos ja sekoita, kunnes koko taikina on tasaisen kosteaa.
+4. Jaa taikina noin 30 pieneksi nokareeksi peltien leivinpapereille. Käytä apuna kahta teelusikkaa ja jätä nokareiden väliin reilusti tilaa.
+5. Paista pelti kerrallaan uunin keskitasolla 5–7 minuuttia. Ota pelti pois, kun reunat ovat kullanruskeat ja keskusta on asettunut eikä näytä raa'alta.
+6. Anna lastujen jäähtyä pellillä ennen irrottamista. Ne kovettuvat jäähtyessään.
 
 ## Muistiinpanot
 
-- Sopii tarjottavaksi sellaisenaan, jaatelon kanssa tai kahvin kera.
+- Sisältää kauraa, vehnää, maitoa ja kananmunaa. Älä maista raakaa taikinaa.
+- Yksi annos tarkoittaa yhtä lastua. Saanto ja kokonaisaika ovat arvioita.
+- Ohje on sovitettu [K-Ruoan kauralastuohjeesta](https://www.k-ruoka.fi/reseptit/kauralastut). Kuva on kuvitus.

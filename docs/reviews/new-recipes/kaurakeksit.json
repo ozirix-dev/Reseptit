@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "recipe_id": "kaurakeksit",
+  "source_path": "reseptit/jalkiruoat/kaurakeksit.md",
+  "source_sha256": "c517333c0e43431d2e803ac2cba2df41b2046af95011cda59e82b3a515aa3a00",
+  "decision": "approved",
+  "reviewed_by": "Codex – kirjallinen toimituksellinen katselmointi",
+  "reviewed_at": "2026-11-12",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.k-ruoka.fi/reseptit/kauralastut"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/kaurakeksit.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Alkuperäinen ID ja polku säilyvät, julkinen reitti antoi HTTP 404:n. Samankaltaisuusauditoinnin osumat ovat sienikakkupohja, briossisämpylät ja suklaakakku; yksikään ei ole ohut kauralastu."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Lähdeohjeen seitsemän ainesta ja suhteet täsmäävät punnitussovitukseen. K-Ruoka: kaurahiutale 35 g/dl, sokeri 85 g/dl. Kananmuna punnitaan kuoretta. Fineli 110/74/11188 tukevat lusikkamäärien laskentaa."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Jokaiselle ainekselle on käyttövaihe. Lähde tukee pieniä nokareita, 200 °C:ta, 5–7 minuutin paistoa ja pellillä jäähdytystä. Peltien vuorottelu ja näkyvä kypsyysmerkki on kirjoitettu auki. Paikallista koepaistoa ei tehty."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Kananmunataikinaa ei maisteta raakana. Ohje edellyttää asettunutta keskustaa, ei raakaa taikinaa. Kaura, vehnä, maito ja kananmuna on nimetty."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Lähde ilmoittaa noin 30 kappaletta ja 15–30 minuuttia. Erä jaetaan noin 30 kappaleeseen; kokonaisarvio 30 minuuttia sisältää kahden pellin paiston ja jäähtymisen."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Aineskohtainen Fineli-laskentasyöte on sidottu annosmäärään ja ainesriveihin. Kauran ja leivinjauheen polyoleja ei ole varmennettu, joten kaikki neljä julkista kenttää ja ruokavalioluokitus on jätetty tyhjiksi."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Paistetulle kaura-, sokeri- ja vehnäseokselle ei ole hyväksyttyä laskentasyötettä tai GI-osumaa. GK-pending-rekisteri sitoo lähteen Git-blobin; mitään numeerista arvoa ei julkaista."
+    }
+  },
+  "supplementary_evidence": {
+    "measurements": "https://www.k-ruoka.fi/artikkelit/arki/mitat-ja-muunnokset-haltuun",
+    "egg_mass": "https://www.martat.fi/ruoka/ruoanvalmistus/ruoka-aineet/kananmuna/",
+    "image_path": "kuvat/jalkiruoat/rapeat-kauralastut.webp",
+    "image_sha256": "8e345ed2348f99ed2c6bc801647c8406597adb4afb3926025995dfee8e52c341",
+    "image_review": "Oma kuvitus viidestä ohuesta kauralastusta vaalealla lautasella. Kuvan alt-teksti kuvaa sitä, eikä kuvaa esitetä koepaistona.",
+    "translation_scope": "FI-only. EN and TH remain drafts.",
+    "physical_cook_test": false
+  }
+}
