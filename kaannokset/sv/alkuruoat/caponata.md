@@ -70,7 +70,7 @@ fat_per_serving_g: 10.49
 
 ## Tillagning
 
-1. Tärna 800 g aubergine, 55 g lök och 80 g stjälkselleri. Låt grönsakerna mjukna under lock i hela mängden olivolja, 27 g.
+1. Tärna 800 g aubergine, 55 g lök och 80 g stjälkselleri. Mjukna under lock i hela mängden 27 g olivolja.
 2. Tillsätt 400 g krossade tomater, 80 g avrunna urkärnade gröna oliver i saltlake, 9 g avrunnen kapris, 30 g vinäger och 12,5 g socker. Sjud tills grönsakerna är mjuka.
 3. Tillsätt 15 g basilika och 6,5 g salt. Fördela hela rätten med all sås på fyra portioner; bröd ingår inte i denna version.
 
