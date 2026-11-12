@@ -71,8 +71,8 @@ Långkokt risgrynsgröt är en mjuk och mild vardagsrätt som kan serveras med i
 ## Tillagning
 
 1. Skölj riset med kallt vatten.
-2. Lägg riset, vattnet eller buljongen och salt i grytan. Koka upp och sjud på mycket låg värme med locket på glänt i cirka 60 minuter. Rör om då och då.
-3. När riskornen har kokat sönder till en mjuk gröt, rör ner ingefäran och koka i ytterligare 5 minuter.
+2. Lägg riset, vattnet eller fonden och salt i grytan. Koka upp och koka på mycket låg värme i lockets springa i ca 60 minuter. Rör om då och då.
+3. När riset har brutit ner till en mjuk gröt, rör ner ingefäran och koka i ytterligare 5 minuter.
 4. Dela gröten i skålar. Tillsätt vårlök, soja och sesamolja. Servera med ett ägg om så önskas.
 
 ## Anteckningar
