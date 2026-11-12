@@ -20,7 +20,7 @@ tags:
   - "cucumber"
 image:
   src: paaruoat/gazpacho.webp
-  alt: Cold Andalusian gazpacho with tomatoes, cucumber and paprika
+  alt: Cold Andalusian gazpacho with tomatoes, cucumber and red bell pepper
   width: 1279
   height: 853
 ingredients:

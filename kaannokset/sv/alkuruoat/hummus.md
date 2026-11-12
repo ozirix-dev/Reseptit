@@ -31,7 +31,7 @@ ingredients:
   - amount: 400
     unit: g
     item: kokta kikärtor
-    note: sköljd
+    note: sköljda
   - amount: 3
     unit: msk
     item: tahini
@@ -71,9 +71,9 @@ Smidig hummus är gjord av kikärter, tahini, citron och vitlök. Servera som br
 ## Tillagning
 
 1. Lägg kikärtorna, tahinin, citronsaften, vitlöken och saltet i en matberedare.
-2. Puré och tillsätt kallt vatten en sked i taget tills hummusen är slät och fluffig.
+2. Mixa kikärterna och tillsätt kallt vatten en sked i taget tills hummusen är slät och luftig.
 3. Smaka av och justera citron eller salt.
-4. Bred ut i ett serveringsfat och häll olivolja ovanpå. Strö paprika på toppen.
+4. Bred ut i ett serveringsfat och häll olivolja ovanpå. Strö över paprikapulver.
 
 ## Anteckningar
 

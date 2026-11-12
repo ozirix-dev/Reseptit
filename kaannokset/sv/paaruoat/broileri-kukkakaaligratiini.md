@@ -66,7 +66,7 @@ Vitlökspulver och svartpeppar smaksätter gratängen.
 1. Skär kycklingen i lagom stora bitar och bryn i en panna.
 2. Koka blomkål i 4 minuter och låt rinna av. Lägg över kycklingen och blomkålen i en ugnsform.
 3. Krydda, häll grädde ovanpå och strö ost över.
-4. Grädda i 200 °C i ca 25 minuter tills kycklingen är genomstekt.
+4. Grädda i 200 °C i ca 25 minuter tills kycklingen är genomstekt. Kontrollera att den tjockaste biten har en innertemperatur på minst 75 °C.
 
 ## Anteckningar
 

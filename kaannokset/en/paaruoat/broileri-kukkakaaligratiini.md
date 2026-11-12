@@ -66,7 +66,7 @@ Garlic powder and black pepper season the gratin.
 1. Cut the chicken into bite-sized pieces and brown in a pan.
 2. Boil cauliflower for 4 minutes and drain. Transfer the chicken and cauliflower to the baking dish.
 3. Season, pour cream on top and sprinkle cheese on top.
-4. Bake at 200 °C for about 25 minutes until the chicken is cooked.
+4. Bake at 200 °C for about 25 minutes until the chicken is cooked through. Check that the thickest piece reaches at least 75 °C.
 
 ## Notes
 

@@ -71,7 +71,7 @@ Valkosipulijauhe ja mustapippuri maustavat gratiinin.
 1. Leikkaa broileri suupaloiksi ja ruskista pannulla.
 2. Keitä kukkakaalia 4 minuuttia ja valuta. Siirrä broileri ja kukkakaali uunivuokaan.
 3. Mausta, kaada kerma päälle ja ripottele juusto pinnalle.
-4. Paista 200 °C:ssa noin 25 minuuttia, kunnes broileri on kypsää.
+4. Paista 200 °C:ssa noin 25 minuuttia, kunnes broileri on kauttaaltaan kypsää. Varmista paksuimmasta palasta vähintään 75 °C:n sisälämpötila.
 
 ## Muistiinpanot
 

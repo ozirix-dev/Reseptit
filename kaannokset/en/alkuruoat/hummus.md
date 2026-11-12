@@ -24,7 +24,7 @@ tags:
   - "Tahini"
 image:
   src: paaruoat/hummus.webp
-  alt: Hummus with olive oil, chickpeas and paprika finished with pita bread
+  alt: Hummus topped with olive oil, chickpeas and paprika, pictured with pita bread
   width: 1279
   height: 853
 ingredients:
