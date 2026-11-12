@@ -4,7 +4,7 @@ recipe_id: thai-maissifritterit
 url_slug: thai-maissifritterit
 category: aamupala
 language: sv
-status: draft
+status: published
 main_ingredient:
   - "majs"
   - "ägg"
@@ -72,3 +72,5 @@ Ingrediensmängderna finns i den strukturerade listan ovan.
 ## Anteckningar
 
 Använd hela de angivna mängderna ägg, majs, mjöl, basilika och olja. Näringsvärdena omfattar inte extra vatten, lime eller chilisås, och GI/GK har inte godkänts på nytt.
+
+Innehåller vete och ägg. Näringsberäkningen räknar med hela den uppmätta mängden olja och använder färsk sötbasilika som jämförelse för thaibasilika.

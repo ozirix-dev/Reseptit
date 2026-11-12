@@ -2,7 +2,7 @@
   "schema_version": 1,
   "recipe_id": "palsternakkasosekeitto",
   "source_path": "reseptit/alkuruoat/palsternakkasosekeitto.md",
-  "source_sha256": "3c8bf78c4df4909e8bca6231a640b6e5adfb1d4babca7f9dce9c552ee490c9c5",
+  "source_sha256": "957d105c0bd98a7d7a732c6f7276420753cf9c2d90ab66bfd439b33d549e1e74",
   "decision": "approved",
   "reviewed_by": "Codex – kirjallinen toimituksellinen katselmointi",
   "reviewed_at": "2026-11-12",
@@ -36,7 +36,7 @@
     },
     "nutrition": {
       "status": "pass",
-      "notes": "Valkosipulin kuitutieto ja pippurin kuitu- ja polyolitiedot puuttuvat valituista lähteistä."
+      "notes": "Neljä makroarvoa laskettu annosta kohti. Fineli Release 20 sekä AFCD Release 3:n afcd-F004193-release-3 ja afcd-F006618-release-3. Ainesmäärät ja laskennan annosjako säilyvät."
     },
     "glycemic": {
       "status": "unavailable",
@@ -50,6 +50,6 @@
     "image_review": "Vaalea palsternakkasosekeitto, jonka pinnalla on mustapippuria",
     "image_method": "Built-in ImageGen",
     "image_prompt": "Create one original, realistic Finnish cookbook food photograph of silky pale ivory Finnish parsnip and potato soup in a stoneware bowl, subtle black pepper specks. Wide landscape hero composition with dish centered in the middle 75%, modest natural window light, warm neutral linen background, accurate home-cooked texture, clean edge framing, no text, graphics, hands, people, packages, branding, or unlisted garnishes. Show only the described finished recipe, suitable for a recipe site's landscape cover.",
-    "nutrition_calculation_sha256": "3923ba4cb59e56d4d09f9dc3ae3789835a927086ebcbf5937151173984fa25ac"
+    "nutrition_calculation_sha256": "aa32fab7281f3ef6d72cf9e0167229b4e07790ae25b96ffdd1ed96579f2a052f"
   }
 }

@@ -4,7 +4,7 @@ recipe_id: thai-maissifritterit
 url_slug: thai-maissifritterit
 category: aamupala
 language: th
-status: draft
+status: published
 main_ingredient:
   - "ข้าวโพด"
   - "ไข่"
@@ -72,3 +72,5 @@ translation_of: thai-maissifritterit
 ## หมายเหตุ
 
 ใช้ไข่ ข้าวโพด แป้ง โหระพาและน้ำมันตามรายการทั้งหมด ค่าสารอาหารไม่รวมการเติมน้ำ มะนาวหรือซอสพริก และยังไม่ได้ตรวจยืนยัน GI/GK ใหม่
+
+มีข้าวสาลีและไข่ ค่าประมาณสารอาหารนับน้ำมันตามปริมาณที่ชั่งไว้ทั้งหมด และใช้ข้อมูลของโหระพาฝรั่งสดเป็นข้อมูลอ้างอิงสำหรับโหระพาไทย

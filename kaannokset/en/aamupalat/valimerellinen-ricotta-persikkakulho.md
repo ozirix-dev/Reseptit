@@ -4,7 +4,7 @@ recipe_id: valimerellinen-ricotta-persikkakulho
 url_slug: valimerellinen-ricotta-persikkakulho
 category: aamupala
 language: en
-status: draft
+status: published
 main_ingredient:
   - "ricotta"
   - "peach"
@@ -70,3 +70,5 @@ Ingredient quantities are in the structured list above.
 ## Notes
 
 The measured two-serving recipe includes no olive oil or separate toppings. The nutrient and glycemic-load figures are ingredient-based estimates, not personal blood-glucose measurements.
+
+Contains milk and pistachios. Use chilled ricotta and serve cold.

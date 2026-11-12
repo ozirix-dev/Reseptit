@@ -11,10 +11,10 @@ difficulty: "helppo"
 main_ingredient: ["palsternakka", "peruna"]
 cooking_method: ["keittäminen", "soseutus"]
 tags: ["arkiruoka"]
-carbs_net_per_serving_g: null
-carbs_total_per_serving_g: null
-protein_per_serving_g: null
-fat_per_serving_g: null
+carbs_net_per_serving_g: 30.59
+carbs_total_per_serving_g: 38.5
+protein_per_serving_g: 4.55
+fat_per_serving_g: 18.44
 image:
   src: "alkuruoat/palsternakkasosekeitto.webp"
   alt: "Vaalea palsternakkasosekeitto, jonka pinnalla on mustapippuria"

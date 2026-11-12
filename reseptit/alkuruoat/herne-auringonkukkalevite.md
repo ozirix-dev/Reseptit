@@ -11,10 +11,10 @@ difficulty: "helppo"
 main_ingredient: ["herne","auringonkukansiemen"]
 cooking_method: ["keittäminen"]
 tags: []
-carbs_net_per_serving_g: null
-carbs_total_per_serving_g: null
-protein_per_serving_g: null
-fat_per_serving_g: null
+carbs_net_per_serving_g: 4.9
+carbs_total_per_serving_g: 6.81
+protein_per_serving_g: 3.77
+fat_per_serving_g: 9.99
 image:
   src: "alkuruoat/herne-auringonkukkalevite.webp"
   alt: "Vihreää herne-auringonkukkalevitettä pienessä kulhossa"

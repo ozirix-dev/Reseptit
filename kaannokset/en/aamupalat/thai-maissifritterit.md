@@ -4,7 +4,7 @@ recipe_id: thai-maissifritterit
 url_slug: thai-maissifritterit
 category: aamupala
 language: en
-status: draft
+status: published
 main_ingredient:
   - "corn"
   - "eggs"
@@ -72,3 +72,5 @@ Ingredient quantities are in the structured list above.
 ## Notes
 
 Use the entire listed egg, corn, flour, basil and oil amounts. The nutrient estimates do not include extra water, lime or chili sauce, and GI/GK approval has not been independently renewed.
+
+Contains wheat and egg. The nutrient estimate counts the entire measured quantity of oil and uses fresh sweet basil as the composition reference for Thai basil.

@@ -4,7 +4,7 @@ recipe_id: karibia-johnny-cake
 url_slug: karibia-johnny-cake
 category: aamupala
 language: en
-status: draft
+status: published
 main_ingredient:
   - "vehnäjauho"
   - "maito"
@@ -71,3 +71,5 @@ The structured ingredient list above supplies the amounts for the serving calcul
 ## Notes
 
 Use only the listed butter, milk and frying oil. No separate filling is included in this measured version.
+
+Contains wheat and milk. The nutrition estimate uses whole milk and counts all the listed frying oil.

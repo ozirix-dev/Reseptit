@@ -4,7 +4,7 @@ recipe_id: yrttituorejuusto-kinkkurullat
 url_slug: yrttituorejuusto-kinkkurullat
 category: aamupala
 language: sv
-status: draft
+status: published
 main_ingredient:
   - "skinka"
   - "färskost"
@@ -75,3 +75,5 @@ Den strukturerade ingredienslistan ovan anger mängderna för portionsberäkning
 ## Anteckningar
 
 Den beräknade glykemiska belastningen är ingrediensbaserad med låg säkerhet och är ingen personlig blodsockerprognos. Alla ingredienser räcker till fyra portioner.
+
+Innehåller mjölk. Använd kokt skinka och håll rullarna kylda fram till servering.

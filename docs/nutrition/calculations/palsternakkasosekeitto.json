@@ -4,7 +4,7 @@
   "calculatedAt": "2026-11-12",
   "batchId": "batch-518",
   "servings": 4,
-  "scope": "Ainesosien laskennallinen arvio, 4 annosta. Lähdeaineisto on Fineli Release 20. Lisukkeet ja valinnaiset tarjoilut eivät kuulu laskentaan.",
+  "scope": "Ainesosien laskennallinen arvio, 4 annosta. Lähdeaineisto on Fineli Release 20 ja täsmällisesti kohdistettu AFCD Release 3 -tietue. Lisukkeet ja valinnaiset tarjoilut eivät kuulu laskentaan.",
   "reviewerStatus": "AUTOMATED ONLY",
   "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
   "ingredients": [
@@ -30,7 +30,7 @@
         "per100g": {
           "carbohydrate": 10.31,
           "fibre": 4.5,
-          "polyols": 0.0,
+          "polyols": 0,
           "protein": 1.1,
           "fat": 0.57
         },
@@ -60,7 +60,7 @@
         "per100g": {
           "carbohydrate": 15.5,
           "fibre": 1.4,
-          "polyols": 0.0,
+          "polyols": 0,
           "protein": 1.88,
           "fat": 0.114
         },
@@ -90,7 +90,7 @@
         "per100g": {
           "carbohydrate": 4.8,
           "fibre": 1.2,
-          "polyols": 0.0,
+          "polyols": 0,
           "protein": 1.25,
           "fat": 0.1
         },
@@ -106,26 +106,26 @@
       "edibleEvidence": "Quantities describe the added edible ingredient unless a whole weight is explicitly marked.",
       "retainedFraction": 1,
       "retentionEvidence": "Ingredient estimate per divided batch. Volatile water is not treated as macro loss. No cooking yield is represented.",
-      "state": "raw or dry before cooking",
-      "matchEvidence": "Fineli Release 20 food 393, VALKOSIPULI. Generic composition for the named ingredient and state, without a brand-specific claim.",
+      "state": "raw garlic",
+      "matchEvidence": "FSANZ AFCD Release 3 afcd-F004193-release-3; same ingredient and state as the recipe. Full nutrient profile from one record.",
       "record": {
-        "id": "fineli-393-release-20",
-        "name": "VALKOSIPULI",
-        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/393",
-        "retrievedAt": "2026-11-12",
-        "licence": "THL Fineli Release 20, CC BY 4.0",
-        "state": "raw or dry before cooking",
-        "basis": "per100g-edible",
+        "id": "afcd-F004193-release-3",
+        "name": "Garlic, peeled, fresh, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "raw garlic",
+        "basis": "per100g-as-sold",
         "carbohydrateDefinition": "EU_AVAILABLE",
-        "per100g": {
-          "carbohydrate": 16.3,
-          "fibre": null,
-          "polyols": 0.0,
-          "protein": 7.9,
-          "fat": 0.6
-        },
         "polyolsSourceVerified": true,
-        "polyolsEvidence": "Fineli Release 20 SUGOH field in the pinned source snapshot."
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 10.2,
+          "fibre": 16.9,
+          "polyols": 0,
+          "protein": 6.1,
+          "fat": 2.8
+        }
       }
     },
     {
@@ -148,16 +148,16 @@
         "basis": "per100g-edible",
         "carbohydrateDefinition": "EU_AVAILABLE",
         "per100g": {
-          "carbohydrate": 0.0,
-          "fibre": 0.0,
-          "polyols": 0.0,
-          "protein": 0.0,
-          "fat": 0.0
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 0
         },
         "polyolsSourceVerified": true,
         "polyolsEvidence": "Fineli Release 20 SUGOH field in the pinned source snapshot."
       },
-      "gramsPerUnit": 100.0,
+      "gramsPerUnit": 100,
       "conversionEvidence": "Fineli Release 20 food 922 portion_mass_g DL."
     },
     {
@@ -180,11 +180,11 @@
         "basis": "per100g-edible",
         "carbohydrateDefinition": "EU_AVAILABLE",
         "per100g": {
-          "carbohydrate": 0.0,
-          "fibre": 0.0,
-          "polyols": 0.0,
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
           "protein": 0.63,
-          "fat": 0.0
+          "fat": 0
         },
         "polyolsSourceVerified": true,
         "polyolsEvidence": "Fineli Release 20 SUGOH field in the pinned source snapshot."
@@ -212,16 +212,16 @@
         "basis": "per100g-edible",
         "carbohydrateDefinition": "EU_AVAILABLE",
         "per100g": {
-          "carbohydrate": 3.0,
-          "fibre": 0.0,
-          "polyols": 0.0,
-          "protein": 2.0,
-          "fat": 35.0
+          "carbohydrate": 3,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 2,
+          "fat": 35
         },
         "polyolsSourceVerified": true,
         "polyolsEvidence": "Fineli Release 20 SUGOH field in the pinned source snapshot."
       },
-      "gramsPerUnit": 100.0,
+      "gramsPerUnit": 100,
       "conversionEvidence": "Fineli Release 20 food 29066 portion_mass_g DL."
     },
     {
@@ -232,30 +232,29 @@
       "edibleEvidence": "Quantities describe the added edible ingredient unless a whole weight is explicitly marked.",
       "retainedFraction": 1,
       "retentionEvidence": "Ingredient estimate per divided batch. Volatile water is not treated as macro loss. No cooking yield is represented.",
-      "state": "dried ingredient",
-      "matchEvidence": "Fineli Release 20 food 11177, MUSTAPIPPURI. Generic composition for the named ingredient and state, without a brand-specific claim.",
+      "state": "ground black pepper",
+      "matchEvidence": "FSANZ AFCD Release 3 afcd-F006618-release-3; same ingredient and state as the recipe. Full nutrient profile from one record.",
       "record": {
-        "id": "fineli-11177-release-20",
-        "name": "MUSTAPIPPURI",
-        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11177",
-        "retrievedAt": "2026-11-12",
-        "licence": "THL Fineli Release 20, CC BY 4.0",
-        "state": "dried ingredient",
-        "basis": "per100g-edible",
+        "id": "afcd-F006618-release-3",
+        "name": "Pepper, black, ground",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "ground black pepper",
+        "basis": "per100g-as-sold",
         "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
         "per100g": {
-          "carbohydrate": 38.31,
-          "fibre": null,
-          "polyols": null,
-          "protein": 10.9,
+          "carbohydrate": 38.6,
+          "fibre": 25.3,
+          "polyols": 0,
+          "protein": 10.4,
           "fat": 3.3
-        },
-        "polyolsSourceVerified": false
+        }
       },
-      "gramsPerUnit": 2.0,
+      "gramsPerUnit": 2,
       "conversionEvidence": "Fineli Release 20 food 11177 portion_mass_g TL."
     }
-  ],
-  "publicationStatus": "WITHHELD_SOURCE_INCOMPLETE",
-  "withholdingReason": "Valkosipulin kuitutieto ja pippurin kuitu- ja polyolitiedot puuttuvat valituista lähteistä."
+  ]
 }
