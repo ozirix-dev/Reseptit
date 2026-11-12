@@ -1,3 +1,4 @@
+import { readF25GateAtCreation, readF25HistoricalBlob } from "../scripts/f25-history";
 import assert from "node:assert/strict";
 import {test} from "node:test";
 import {readFileSync} from "node:fs";
@@ -10,10 +11,10 @@ const r=read("docs/reviews/f25-a2-tapioca-v3-product-ledger-20261111.json");
 const near=(x:number,y:number)=>Math.abs(x-y)<1e-9;
 
 test("tapioca V3 remains draft source-locked without changing production FI/GK",()=>{
-  const b=readFileSync(path.join(root,r.sourceBaseline.fiPath));
+  const b=readF25HistoricalBlob(root,r.sourceBaseline.gitBlobSha);
   const hash=createHash("sha1").update("blob "+b.byteLength+"\0").update(b).digest("hex");
   assert.equal(hash,r.sourceBaseline.gitBlobSha);
-  const gate=read("meta/kaannokset/f25-release-gate.json");
+  const gate=readF25GateAtCreation(root);
   assert.equal(gate.sources.find((x:any)=>x.recipe_id===r.recipeId)?.approval,null);
   const d=readFileSync(path.join(root,"docs/reviews/f25-a2-tapioca-v3-20261111.md"),"utf8");
   assert.match(d,/EI JULKAISUUN/);

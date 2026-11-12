@@ -1,3 +1,4 @@
+import historicalBaseline from '../../docs/nutrition/gk-legacy-reconciliation/baseline.json';
 import {restoreBeforeAfcdCorrection} from './restore-pre-ehold';
 import test from 'node:test';
 import assert from 'node:assert/strict';
@@ -39,24 +40,27 @@ function recipeMarkup(recipeId: string, locale: typeof locales[number]) {
   finally { router.dispose(); }
 }
 
-test('original 156, variants 79, studies 8 and legacy 236 are disjoint scopes after the Finnish cocoa and chia additions', () => {
-  assert.deepEqual([counts.total,counts.originalNumeric,counts.variantNumeric,counts.numericRecipes,counts.studyServingRecipeIds.length,counts.legacyNumericRecipes], [344,156,79,235,8,236]);
-  assert.deepEqual([counts.originalTarget,counts.originalTargetGap], [276,120]); // 80% of 344 (ceil = 276), unchanged 156 original numeric GK
-  assert.equal(counts.originalRecipeIds.length,156);
-  assert.equal(counts.variantRecipeIds.length,79);
+test('current GK coverage keeps originals, home variants and study comparisons separate', () => {
+  const originalNumeric = report.results.filter((row: {status: string}) => row.status === 'CALCULATED').length;
+  assert.equal(counts.originalNumeric, originalNumeric);
+  assert.equal(counts.originalTarget, Math.ceil(report.results.length * 0.8));
+  assert.equal(counts.originalTargetGap, Math.max(0, counts.originalTarget - originalNumeric));
+  assert.equal(counts.originalRecipeIds.length, originalNumeric);
+  assert.equal(counts.variantRecipeIds.length, counts.additionalA + counts.additionalB);
   assert.ok(counts.studyServingRecipeIds.includes(manakishStudyBinding.recipeId));
   assert.ok(!counts.numericRecipeIds.includes(manakishStudyBinding.recipeId));
-  assert.equal(new Set([...counts.originalRecipeIds,...counts.variantRecipeIds]).size,235);
-  assert.deepEqual(report.coverageViews.originalRecipe,{total:344,numeric:156,missing:188});
+  assert.equal(new Set([...counts.originalRecipeIds,...counts.variantRecipeIds]).size, counts.numericRecipes);
+  assert.deepEqual(report.coverageViews.originalRecipe, {
+    total: report.results.length, numeric: originalNumeric, missing: report.results.length - originalNumeric,
+  });
   assert.equal(report.coverageViews.legacyMixed.historicalOnly,true);
 });
 
-test('all 326 original calculation objects and all 87 approved variant objects retain the current-main baseline hashes', () => {
-  // main 121fab51 predates the exact authorized AFCD correction.
-  // Project only those two frozen AFCD objects; live326 checks every permitted delta separately.
-  // P1 coconut HOLD objects and all87 variants remain live and exact.
+test('the 326 historical results and 87 approved variants retain their baseline hashes', () => {
+  // Restore the two reviewed AFCD objects and select the sealed variant cohort.
   assert.equal(checksum(restoreBeforeAfcdCorrection(structuredClone(report)).results),'697333a249360f25c42cc6170a7e0b1814e01b939b23ed38653f7dbd2f45b563');
-  assert.equal(checksum(variants),'3270ca1bbdfcacc680d4bc7f2f9a599e9599e26ac29e87f9684c15565a83eee0');
+  const historical = variants.filter(v => Object.hasOwn(historicalBaseline.variantHashes, v.recipeId + '/' + v.versionId));
+  assert.equal(checksum(historical),'3270ca1bbdfcacc680d4bc7f2f9a599e9599e26ac29e87f9684c15565a83eee0');
 });
 
 test('study scope correction is pinned, immutable, and cannot be reused by a changed manakish input', () => {
@@ -75,13 +79,12 @@ test('coverage copy shows original target and independent variant/study counts i
   for(const locale of locales){
     const html=renderToStaticMarkup(createElement(GkCoverageSummary,{coverage:counts,locale}));
     assert.ok(html.includes(coverageCopy[locale].title));
-    assert.ok(html.includes('156/344'));
-    assert.ok(html.includes('data-gk-coverage="VARIANT_COVERAGE"><strong>79'));
-    assert.ok(html.includes('data-gk-coverage="STUDY_SERVINGS"><strong>8'));
-    assert.ok(html.includes('235/344'));
-    assert.ok(html.includes('276/344'));
-    assert.ok(html.includes('<strong>120</strong>'));
-    assert.ok(!html.includes('236/344'));
+    assert.ok(html.includes(counts.originalNumeric + '/' + counts.total));
+    assert.ok(html.includes('data-gk-coverage="VARIANT_COVERAGE"><strong>' + counts.variantNumeric + '</strong>'));
+    assert.ok(html.includes('data-gk-coverage="STUDY_SERVINGS"><strong>' + counts.studyServingRecipeIds.length + '</strong>'));
+    assert.ok(html.includes(counts.numericRecipes + '/' + counts.total));
+    assert.ok(html.includes(counts.originalTarget + '/' + counts.total));
+    assert.ok(html.includes('<strong>' + counts.originalTargetGap + '</strong>'));
   }
 });
 

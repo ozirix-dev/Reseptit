@@ -2,24 +2,30 @@
  * masses must never become zero or a published four-macro nutrition record.
  */
 import {createHash} from "node:crypto";
-import {readFileSync} from "node:fs";
+import {execFileSync} from "node:child_process";
 import path from "node:path";
 import {fileURLToPath} from "node:url";
 import {parseMarkdown} from "../src/content/markdown";
 import {recipeFrontmatterSchema} from "../src/content/schema";
 import {calculate, type Calculation, type FoodRecord, type IngredientInput} from "./nutrition-model";
 import {recipeNutritionInputHash} from "./nutrition-evidence";
-import manifest from "../../meta/kaannokset/f25-a1-food-catalog-preflight-20261111.json";
+import {readF25HistoricalBlob} from "./f25-history";
+import type Manifest from "../../meta/kaannokset/f25-a1-food-catalog-preflight-20261111.json";
 
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),"../..");
+const auditCommit="d5406c9a3b9c57254ec8a043b4d81977a9a46312";
+const historicalFile=(file:string)=>execFileSync("git",["show",auditCommit+":"+file],{
+  cwd:root,encoding:"utf8",maxBuffer:32*1024*1024,
+});
 const salt=(s:string)=>s==="suolaa maun mukaan";
 export function runF25A1FoodCatalogPreflight() {
-  const foods=JSON.parse(readFileSync(path.join(root,"docs/nutrition/food-records.json"),"utf8")) as FoodRecord[];
+  const manifest=JSON.parse(historicalFile("meta/kaannokset/f25-a1-food-catalog-preflight-20261111.json")) as typeof Manifest;
+  const foods=JSON.parse(historicalFile("docs/nutrition/food-records.json")) as FoodRecord[];
   const catalog=new Map(foods.map(f=>[f.id,f]));
   if(manifest.schemaVersion!==1||manifest.releaseAuthorized!==false||manifest.items.length!==4) throw Error("F25_A1_MANIFEST_INVALID");
   const rows=[];
   for(const item of manifest.items){
-    const buf=readFileSync(path.join(root,item.path));
+    const buf=readF25HistoricalBlob(root,item.gitBlobSha);
     const sha=createHash("sha1").update("blob "+buf.byteLength+"\0").update(buf).digest("hex");
     if(sha!==item.gitBlobSha) throw Error("F25_A1_SOURCE_CHANGED: "+item.recipeId);
     const md=parseMarkdown(buf.toString("utf8"));

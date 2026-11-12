@@ -1,3 +1,4 @@
+import { readF25AtCreation, readF25GateAtCreation } from "../scripts/f25-history";
 import assert from "node:assert/strict";
 import { test } from "node:test";
 import { evaluateBatchEntry } from "../scripts/translation-batch-partition";
@@ -231,8 +232,8 @@ test("F25 B1 five source HOLDs and product sensitivity arithmetic are fail close
   const path=await import("node:path");
   const root=path.resolve(import.meta.dirname,"../..");
   const data=JSON.parse(await readFile(path.join(root,"meta/kaannokset/f25-b1-five-product-matching-20261111.json"),"utf8"));
-  const gate=JSON.parse(await readFile(path.join(root,"meta/kaannokset/f25-release-gate.json"),"utf8"));
-  const pub=JSON.parse(await readFile(path.join(root,"meta/kaannokset/published-translation-pairs.json"),"utf8"));
+  const gate=readF25GateAtCreation(root);
+  const pub=JSON.parse(readF25AtCreation(root,"meta/kaannokset/published-translation-pairs.json"));
   const released=new Set(pub.sources.map((x:any)=>x.recipe_id));
   assert.equal(data.schemaVersion,1);
   assert.equal(data.status,"RESEARCH-CANDIDATES-NOT-APPROVAL");

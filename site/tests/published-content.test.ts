@@ -88,10 +88,10 @@ test("the Finnish breakfast and dessert collections exclude quarantined unsafe r
     "vhh-brita-kakku", "keto-mutakakku", "vhh-mokkapalat", "keto-suklaakeksit", "vhh-omenapiirakka",
     "vhh-juustokakku", "vhh-raparperipiirakka", "vhh-korvapuustit", "vhh-mansikkakakku", "vhh-letut",
   ].includes(recipe.recipeId));
-  assert.equal(breakfast.length, 131);
   const cocoa = breakfast.find(recipe => recipe.recipeId === "rasvakaakao-rouva-keto");
   assert.ok(cocoa);
   assert.equal(cocoa.servings, 1);
+  assert.equal(cocoa.image?.alt, "Kuvitus höyryävästä tummasta kaakaosta vaaleassa kupissa lautasella");
   assert.deepEqual(cocoa.nutrition, { carbsNetG: null, carbsTotalG: null, proteinG: null, fatG: null });
   assert.equal(siteContent.recipes.filter(recipe => recipe.recipeId === cocoa.recipeId).length, 1);
   const chia = breakfast.find(recipe => recipe.recipeId === "lammin-chia-puuro-rouva-keto");

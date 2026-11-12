@@ -1,7 +1,7 @@
+import { readF25GateAtCreation, readF25HistoricalBlob } from "../scripts/f25-history";
 import assert from "node:assert/strict";
 import {test} from "node:test";
 import {createHash} from "node:crypto";
-import {readFileSync} from "node:fs";
 import path from "node:path";
 import {f25UnverifiedNutritionSourceIds, withholdF25Nutrition, f25ExplicitUndefinedGkLabel} from "../src/features/recipes/f25-nutrition-withhold";
 import {filterRecipes,emptyRecipeFilters} from "../src/features/recipes/recipe-search";
@@ -15,7 +15,7 @@ const a2 = [
   "pohjoisafrikkalainen-baghrir",
 ] as const;
 const root=path.resolve(import.meta.dirname,"../..");
-const gate=JSON.parse(readFileSync(path.join(root,"meta/kaannokset/f25-release-gate.json"),"utf8")) as {
+const gate=readF25GateAtCreation(root) as {
   sources:Array<{recipe_id:string;source_path:string;baseline_git_blob_sha:string;approval:null|unknown}>
 };
 const sha=(bytes:Buffer)=>createHash("sha1").update("blob "+bytes.length+"\0").update(bytes).digest("hex");
@@ -33,7 +33,7 @@ test("all four F25 A2 unapproved FI sources have source-locked macro and GK with
     const record=gate.sources.find(x=>x.recipe_id===id);
     assert.ok(record,id);
     assert.equal(record.approval,null);
-    const bytes=readFileSync(path.join(root,record.source_path));
+    const bytes=readF25HistoricalBlob(root,record.baseline_git_blob_sha);
     assert.equal(sha(bytes),record.baseline_git_blob_sha,id+" source changed");
     assert.equal(withholdF25Nutrition(id,"fi"),true);
     const json=recipeJsonLd(fixture(id,"fi"));

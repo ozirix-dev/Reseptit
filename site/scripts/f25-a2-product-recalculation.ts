@@ -5,6 +5,7 @@ import {readFileSync} from "node:fs";
 import {createHash} from "node:crypto";
 import path from "node:path";
 import {fileURLToPath} from "node:url";
+import {readF25GateAtCreation, readF25HistoricalBlob} from "./f25-history";
 
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),"../..");
 const read=(p:string)=>JSON.parse(readFileSync(path.join(root,p),"utf8"));
@@ -43,31 +44,33 @@ function baseline(input:any) {
 export function auditF25A2ProductRecalculation(){
   const manifest=read("meta/kaannokset/f25-a2-four-fi-draft-manifest-20261111.json");
   const brands=read("docs/reviews/2026-11-11-f25-a2-specific-label-models.json");
-  const gate=read("meta/kaannokset/f25-release-gate.json");
+  const gate=readF25GateAtCreation(root);
   const sealedNutrition=read("docs/reviews/2026-11-11-f25-a2-four-nutrition-independent-crosscheck.json");
   if(sealedNutrition.status!=="RESEARCH_ONLY_HOLD"||sealedNutrition.recipes.length!==4)fail("unsealed nutrition crosscheck");
   if(manifest.stage!=="HOLD"||manifest.sources.length!==4||brands.status!=="HOLD_NOT_PUBLISHABLE")
     fail("unlocked base manifest");
   const rows=[] as any[];
+  const baselines=new Map<string, ReturnType<typeof baseline>>();
   for(const entry of manifest.sources){
-    const source=readFileSync(path.join(root,entry.sourcePath));
+    const source=readF25HistoricalBlob(root,entry.sourceGitBlobSha);
     const draft=readFileSync(path.join(root,entry.candidatePath));
     if(blob(source)!==entry.sourceGitBlobSha||blob(draft)!==entry.candidateGitBlobSha)
       fail("source/draft hash mismatch "+entry.recipeId);
     if(entry.sourceStatus!=="HOLD"||entry.nutritionApproved!==false||entry.gkApproved!==false||entry.translationApproved!==false||
-       gate.sources.find((x:any)=>x.recipe_id===entry.recipeId)?.approval!==null)
+       gate.sources.find(x=>x.recipe_id===entry.recipeId)?.approval!==null)
       fail("invalid release authorization "+entry.recipeId);
-    const nutritionBytes=readFileSync(path.join(root,entry.nutritionEvidencePath));
-    const evidence=sealedNutrition.recipes.find((x:any)=>x.id===entry.recipeId);
-    if(!evidence||blob(nutritionBytes)!==evidence.legacyNutritionFileBlob)fail("nutrition blob changed "+entry.recipeId);
+    const evidence=sealedNutrition.recipes.find((x:any)=>x.id===entry.recipeId) ?? fail("missing nutrition evidence "+entry.recipeId);
+    const nutritionBytes=readF25HistoricalBlob(root,evidence.legacyNutritionFileBlob);
+    if(blob(nutritionBytes)!==evidence.legacyNutritionFileBlob)fail("nutrition blob changed "+entry.recipeId);
     const input=JSON.parse(nutritionBytes.toString("utf8"));
     if(input.recipeId!==entry.recipeId||input.servings!==entry.servings||input.sourceHash!==evidence.legacySourceHash)fail("source version mismatch");
     const base=baseline(input);
+    baselines.set(entry.recipeId,base);
     const perServing=Object.fromEntries(metrics.map(k=>[k,round(base.totals[k]/base.servings)]));
     rows.push({recipeId:entry.recipeId,oldNutritionPerServing:perServing,productCandidates:[],approval:null,gk:null});
   }
   const tapi=rows.find(x=>x.recipeId==="vietnamilainen-papaija-kookospuuro");
-  const tapiInput=baseline(read(manifest.sources.find((x:any)=>x.recipeId===tapi.recipeId).nutritionEvidencePath));
+  const tapiInput=baselines.get(tapi.recipeId)!;
   const tapiPearl=tapiInput.rows.find(x=>x.item==="tapiokahelmiä");
   const tapiCoconut=tapiInput.rows.find(x=>x.item==="kookosmaito");
   if(!tapiPearl||!tapiCoconut||brands.ingredients.pearls.per100g.carb!==86)throw Error("F25_A2_PRODUCT_PRECHECK: unknown tapioca source");
@@ -85,7 +88,7 @@ export function auditF25A2ProductRecalculation(){
     tapi.productCandidates.push({ean:product.ean,perServingPartial:perServing,missing:["pearl_protein","pearl_fat","pearl_fibre","pearl_polyols","coconut_fibre","coconut_polyols"],approval:null});
   }
   const cuon=rows.find(x=>x.recipeId==="vietnamilainen-banh-cuon-sienilla");
-  const flour=brands.ingredients.riceFlour, cuonInput=baseline(read(manifest.sources.find((x:any)=>x.recipeId===cuon.recipeId).nutritionEvidencePath));
+  const flour=brands.ingredients.riceFlour, cuonInput=baselines.get(cuon.recipeId)!;
   const oldFlour=cuonInput.rows.find(x=>x.item==="riisijauho");
   if(!oldFlour||oldFlour.massG!==100||flour.per100g.fibre===null)throw Error("F25_A2_PRODUCT_PRECHECK: flour amount or model");
   const partial:any={};

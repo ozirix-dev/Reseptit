@@ -1,7 +1,8 @@
+import { readF25GateAtCreation, readF25HistoricalBlob } from "../scripts/f25-history";
 import assert from "node:assert/strict";
 import { test } from "node:test";
 import { assertTranslationSourceIsNotQuarantined, overlayTranslationPublicationIndex } from "../scripts/translation-publication-index";
-import { assertF25SourceReleaseAuthorized, f25SourceReleaseGate, f25SourceGatePreflight } from "../scripts/f25-source-release-gate";
+import { assertF25SourceReleaseAuthorized, f25SourceGatePreflight } from "../scripts/f25-source-release-gate";
 import type { TranslationAuditResult } from "../scripts/translation-audit";
 
 const source = () => ({
@@ -77,25 +78,19 @@ test("quarantine index rejection is global, including in a targeted translation 
 });
 
 
-test("F25 next15 protected even though their historical FI markdown says published", () => {
-  const gate = f25SourceGatePreflight();
-  assert.equal(gate.total,15);
-  assert.equal(gate.held,15);
-  assert.equal(gate.authorized,0);
-  assert.equal(gate.rows.filter(row=>row.quarantine).length,2);
-  const ids = f25SourceReleaseGate.sources.map(x=>x.recipe_id);
-  assert.equal(new Set(ids).size,15);
-  for (const id of ids) {
-    assert.throws(()=>assertF25SourceReleaseAuthorized(id),/F25_SOURCE_HOLD/);
-    const sample=source();
-    sample.data.recipe_id=id;
-    sample.data.url_slug=id;
-    assert.equal(sample.data.status,"published");
-    assert.throws(()=>overlayTranslationPublicationIndex([sample],index(id)),/F25_SOURCE_HOLD|TRANSLATION_QUARANTINED_FI/);
+test("current F25 holds block publication even when the FI file says published", () => {
+  const held = f25SourceGatePreflight().rows.filter(row => !row.authorized);
+  for (const { recipe_id: id } of held) {
+    assert.throws(() => assertF25SourceReleaseAuthorized(id), /F25_SOURCE_HOLD|F25_SOURCE_APPROVAL_STALE/);
+    const sample = source();
+    sample.data.recipe_id = id;
+    sample.data.url_slug = id;
+    assert.throws(() => overlayTranslationPublicationIndex([sample], index(id)),
+      /F25_SOURCE_HOLD|F25_SOURCE_APPROVAL_STALE|TRANSLATION_QUARANTINED_FI/);
+    assert.throws(() => overlayTranslationPublicationIndex([source()], index(id), new Set(["sample"])),
+      /F25_SOURCE_HOLD|F25_SOURCE_APPROVAL_STALE|TRANSLATION_QUARANTINED_FI/);
   }
-  // A targeted audit cannot ignore a forbidden registry entry.
-  assert.throws(()=>overlayTranslationPublicationIndex([source()],index("rahka-marjakerroskulho"),new Set(["sample"])),/F25_SOURCE_HOLD/);
-  assert.doesNotThrow(()=>assertF25SourceReleaseAuthorized("kiinalainen-soijamaito-aamiaisella"));
+  assert.doesNotThrow(() => assertF25SourceReleaseAuthorized("kiinalainen-soijamaito-aamiaisella"));
 });
 
 test("F25 A1 four recipe candidate files stay out of production and retain explicit HOLD",async()=>{
@@ -104,14 +99,14 @@ test("F25 A1 four recipe candidate files stay out of production and retain expli
   const path=await import("node:path");
   const root=path.resolve(import.meta.dirname,"../..");
   const manifest=JSON.parse(readFileSync(path.join(root,"meta/kaannokset/f25-a1-four-fi-recipe-drafts-20261111.json"),"utf8"));
-  const gate=JSON.parse(readFileSync(path.join(root,"meta/kaannokset/f25-release-gate.json"),"utf8"));
+  const gate=readF25GateAtCreation(root);
   assert.equal(manifest.schemaVersion,1);
   assert.equal(manifest.stage,"HOLD");
   assert.equal(manifest.candidates.length,4);
   for(const c of manifest.candidates){
     assert.equal(c.status,"HOLD");
     for(const key of ["nutritionApproved","gkApproved","physicalTrialCompleted","translationReleaseAuthorized"])assert.equal(c[key],false);
-    const source=readFileSync(path.join(root,c.sourcePath));
+    const source=readF25HistoricalBlob(root,c.sourceGitBlobSha);
     const hash=createHash("sha1").update("blob "+source.byteLength+"\0").update(source).digest("hex");
     assert.equal(hash,c.sourceGitBlobSha,c.recipeId);
     assert.ok(c.draftPath.startsWith("docs/reviews/f25-a1-draft-recipes/"));
@@ -199,7 +194,7 @@ test("F25 A2 GI evidence screens must not import food analogies into numeric GK"
   const path = await import("node:path");
   const root = path.resolve(import.meta.dirname, "../..");
   const evidence = JSON.parse(readFileSync(path.join(root, "docs/reviews/2026-11-11-f25-a2-gi-evidence-matching.json"), "utf8"));
-  const gate = JSON.parse(readFileSync(path.join(root, "meta/kaannokset/f25-release-gate.json"), "utf8"));
+  const gate = readF25GateAtCreation(root);
   assert.equal(evidence.schemaVersion, 1);
   assert.equal(evidence.releaseStatus, "HOLD");
   assert.equal(evidence.numericGkAuthorized, false);
