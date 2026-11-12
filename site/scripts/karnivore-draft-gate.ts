@@ -1,5 +1,6 @@
 import assert from "node:assert/strict";
 import type { recipeFrontmatterSchema } from "../src/content/schema";
+import { semanticHash, semanticStatus, type SemanticEvidence } from "./translation-semantic-review";
 
 // Scope-locked fail-closed gate for the 10 animal-ingredient FI drafts.
 // Every publication or ingredient-set change must be deliberately reviewed.
@@ -55,4 +56,28 @@ export function assertKarnivoreDraftSafe(recipe: RecipeData, markdown: string): 
   const steps = markdown.match(/^\d+\.\s+.+$/gm) ?? [];
   assert(steps.length >= 4, `${recipe.recipe_id}: missing or too-short numbered cooking instructions`);
   assert(/\d+\s*°C/.test(markdown), `${recipe.recipe_id}: no measurable cooking temperature in text`);
+}
+
+type ReviewInput = { data: RecipeData; content: string };
+
+export function assertKarnivoreTranslationReady(
+  translation: ReviewInput,
+  source: ReviewInput,
+  evidence?: SemanticEvidence[string],
+): void {
+  const { data: recipe } = translation;
+  const id = recipe.recipe_id;
+  assert(["en", "sv", "th"].includes(recipe.language), `${id}: unsupported translation language`);
+  assert(recipe.status === "published" && source.data.status === "published", `${id}: translation requires a published Finnish source and review`);
+  assert.equal(source.data.recipe_id, id, `${id}: translation source identity mismatch`);
+  assert.equal(recipe.source_recipe, `reseptit/paaruoat/${id}.md`, `${id}: translation source path mismatch`);
+  assertKarnivoreDraftSafe(source.data, source.content);
+  assert.equal(recipe.url_slug, source.data.url_slug, `${id}: translation slug differs from approved source`);
+  assert.equal(recipe.diet_class, undefined, `${id}: do not apply unsupported keto/VHH class`);
+  assert.notEqual(recipe.gluten_free, true, `${id}: gluten-free needs separate evidence`);
+  assert.equal(recipe.gluten_free_review, undefined, `${id}: unsupported gluten-free review`);
+  // Changed-content validation also checks locale, quantities, units, image,
+  // preparation facts and nutrition against the source in auditTranslations.
+  assert.equal(semanticStatus(semanticHash(source), semanticHash(translation), true, evidence), "REVIEW CURRENT",
+    `${id}: translation requires current source-bound semantic review`);
 }

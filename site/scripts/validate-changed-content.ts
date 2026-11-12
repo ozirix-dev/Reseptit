@@ -14,7 +14,7 @@ import { assertChangedRecipeAuditIsClean, duplicateRoutesForChangedRecipes, nutr
 import { assertSnackPublicationReady } from "../src/content/recipe-validation";
 import { parseMarkdown, renderInstructionSteps, renderSafeMarkdown } from "../src/content/markdown";
 import { recipeFrontmatterSchema } from "../src/content/schema";
-import { assertKarnivoreDraftSafe } from "./karnivore-draft-gate";
+import { assertKarnivoreDraftSafe, assertKarnivoreTranslationReady } from "./karnivore-draft-gate";
 
 const siteDir = path.resolve(import.meta.dirname, "..");
 const repoRoot = path.resolve(siteDir, "..");
@@ -69,6 +69,7 @@ function previousRecipe(relativePath: string): ReturnType<typeof parseMarkdown> 
 
 const previousRecipes = new Map(recipePaths.map((file) => [file, previousRecipe(file)]));
 const changedRecipes: { path: string; data: ReturnType<typeof recipeFrontmatterSchema.parse>; markdown: string }[] = [];
+let semanticEvidence: Awaited<ReturnType<typeof loadSemanticEvidence>> | undefined;
 for (const relativePath of recipePaths) {
   const fullPath = resolveRepoFile(relativePath);
   try {
@@ -83,7 +84,19 @@ for (const relativePath of recipePaths) {
   assert(parsed, `${relativePath}: recipe frontmatter is missing or malformed`);
   const data = recipeFrontmatterSchema.parse(parsed.data);
   assertSnackPublicationReady(data);
-  assertKarnivoreDraftSafe(data, markdown);
+  if (data.recipe_id.startsWith("karnivore-") && data.language !== "fi") {
+    const sourcePath = `reseptit/paaruoat/${data.recipe_id}.md`;
+    const source = parseMarkdown(await readFile(resolveRepoFile(sourcePath), "utf8"));
+    assert(source, `${sourcePath}: missing Finnish recipe source`);
+    semanticEvidence ??= await loadSemanticEvidence(repoRoot);
+    assertKarnivoreTranslationReady(
+      { data, content: parsed.content },
+      { data: recipeFrontmatterSchema.parse(source.data), content: source.content },
+      semanticEvidence[`${data.recipe_id}:${data.language}`],
+    );
+  } else {
+    assertKarnivoreDraftSafe(data, markdown);
+  }
   if (data.status === "published") {
     const match = /^##\s+(?:Valmistus|Preparation|Instructions|Tillagning|Gör så här|การทำ|วิธีทำ)\s*$/im.exec(parsed.content);
     assert(match?.index !== undefined, `${relativePath}: published recipe has no instruction section`);
@@ -214,7 +227,7 @@ for (const recipeId of recipeIds) {
 
 if (process.env.BASE_SHA && !/^0+$/.test(process.env.BASE_SHA)) {
   if (semanticallyChanged.size) {
-    const errors = changedSemanticReviewErrors(audit, semanticallyChanged, await loadSemanticEvidence(repoRoot));
+    const errors = changedSemanticReviewErrors(audit, semanticallyChanged, semanticEvidence ??= await loadSemanticEvidence(repoRoot));
     assert.deepEqual(errors, [], "Changed published translation pairs require current Codex source comparison evidence");
   }
 }
