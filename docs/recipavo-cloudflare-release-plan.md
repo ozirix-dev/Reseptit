@@ -69,6 +69,11 @@ kielikohtaista 404.html-sivua virhevastauksessa.
 
 ### Vaihe 3 – tuotantojulkaisu ja DNS-cutover (VAATII ERILLISEN LUVAN)
 
+Rakenna tuotantoehdokas site-hakemistossa komennolla npm run build, kun
+RECIPAVO_BUILD_TARGET on production ja RECIPAVO_PREVIEW_ORIGIN on poistettu
+ympäristöstä. Build käyttää Recipavo-brändiä, juuripolkua, varsinaista www-osoitetta
+ja indeksoitavaa sitemapia. Varmenna artefakti paikallisesti Pages-ajoympäristössä.
+
 **Stop/go-portti ennen toimia:** omistaja hyväksyy nimenomaisesti tuotantocommitin, kohteen, domain-siirron, reitit, SEO-asetukset ja palautussuunnitelman. Mikään tämä Draft-PR ei ole lupa.
 
 - Jäädytä julkaistava commit-SHA, tee varmennettu Cloudflare-preview ja dokumentoi odotettu sisältö/GK-kattavuus.

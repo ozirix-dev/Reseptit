@@ -1,7 +1,7 @@
 import { siteTarget } from "../src/content/site-target";
 import { recipeCardSizes } from "../src/features/recipes/image-layout";
 import { contentForRoute, serializeRouteContent } from "../src/content/route-data";
-import { mkdir, readFile, writeFile } from "node:fs/promises";
+import { mkdir, readFile, rm, writeFile } from "node:fs/promises";
 import path from "node:path";
 import React from "react";
 import { renderToString } from "react-dom/server";
@@ -41,10 +41,10 @@ function routeMetadata(route: string) {
     locale === "fi" ? route === "/" : route === `${localeBase[locale]}/` || route === localeBase[locale]);
   if (!recipe && !pilotPage && !isBlog && indexLocale !== "fi" && (!indexLocale || !siteContent.recipes.some((item) => item.locale === indexLocale))) return null;
   const locale = recipe?.locale ?? methodLocale ?? indexLocale ?? "fi";
-  // Preview output is never an authorized production or SEO migration build.
-  const preview = process.env.VITE_RECIPAVO_HERO_PREVIEW === "true";
-  const title = blogPost ? `${blogPost.title} | Ruokaopas` : blogIndex ? "Ruokaopas | Reseptit" : preview && indexLocale ? `${recipavoHeroCopy[locale].title} | Recipavo` : pilotPage ? glycemicLoadMeta[locale].title : recipe ? `${recipe.title} | ${indexNames[locale]}` : `${indexNames[locale]} | Ozirix`;
-  const description = blogPost?.description ?? (blogIndex ? "Ruoanlaiton tekniikoita ja luotettavaa ravitsemustietoa." : undefined) ?? (preview && indexLocale ? recipavoHeroCopy[locale].intro : pilotPage ? glycemicLoadMeta[locale].description : recipe?.description || recipeUi[locale].intro);
+  const preview = !siteTarget.production && process.env.VITE_RECIPAVO_HERO_PREVIEW === "true";
+  const branded = siteTarget.production || preview;
+  const title = blogPost ? `${blogPost.title} | Ruokaopas` : blogIndex ? "Ruokaopas | Reseptit" : branded && indexLocale ? `${recipavoHeroCopy[locale].title} | Recipavo` : pilotPage ? glycemicLoadMeta[locale].title : recipe ? `${recipe.title} | ${indexNames[locale]}` : `${indexNames[locale]} | Ozirix`;
+  const description = blogPost?.description ?? (blogIndex ? "Ruoanlaiton tekniikoita ja luotettavaa ravitsemustietoa." : undefined) ?? (branded && indexLocale ? recipavoHeroCopy[locale].intro : pilotPage ? glycemicLoadMeta[locale].description : recipe?.description || recipeUi[locale].intro);
   const url = `${baseUrl}${route}`;
   const translations = recipe ? siteContent.recipes.filter((item) => item.recipeId === recipe.recipeId) : [];
   const publishedLocales = isBlog ? [{locale: "fi" as RecipeLocale, path: route}] : pilotPage ? (Object.keys(methodRoutes) as RecipeLocale[]).map((itemLocale) => ({ locale: itemLocale, path: methodRoutes[itemLocale] })) : recipe
@@ -146,6 +146,10 @@ try {
     const folder = path.join(distDir, directory);
     await mkdir(folder, { recursive: true });
     await writeFile(path.join(folder, "404.html"), html, "utf8");
+  }
+  if (siteTarget.basePath === "/") {
+    // The legacy Search Console verification belongs to GitHub Pages.
+    await rm(path.join(distDir, "google0c6f9c0486376f0f.html"), { force: true });
   }
   if (siteTarget.noIndex) {
     await writeFile(path.join(distDir, "_headers"), "/*\n  X-Robots-Tag: noindex, nofollow\n", "utf8");

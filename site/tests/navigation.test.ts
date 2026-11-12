@@ -17,6 +17,11 @@ test("recipe route normalization follows the deployment base", () => {
   assert.equal(normalizePath("/Reseptit/en/recipes/", preview.basePath), "/Reseptit/en/recipes/");
   assert.equal(preview.noIndex, true);
   assert.throws(() => resolveSiteTarget("https://www.recipavo.com"));
+  assert.deepEqual(resolveSiteTarget(undefined, "production"), {
+    basePath: "/", baseUrl: "https://www.recipavo.com", noIndex: false, production: true,
+  });
+  assert.throws(() => resolveSiteTarget(preview.baseUrl, "production"));
+  assert.throws(() => resolveSiteTarget(undefined, "invalid"));
 });
 
 test("language switching preserves translated content and keeps Finnish-only blog honest", () => {
