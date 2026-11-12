@@ -10,7 +10,7 @@ on:
       - "site/**"
       - "docs/nutrition/**"
       - "docs/research/**"
-      - "meta/kaannokset/human-review-evidence.json"
+      - "meta/kaannokset/**"
       - ".github/dependabot.yml"
       - ".github/workflows/pages.yml"
   pull_request:
@@ -58,21 +58,39 @@ jobs:
       - name: Verify browser-suite allowlist
         run: node --test site/scripts/run-browser-suites.test.mjs
 
+      - name: Verify the tested revision
+        shell: bash
+        env:
+          PR_HEAD: ${{ github.event.pull_request.head.sha }}
+          PR_BASE: ${{ github.event.pull_request.base.sha }}
+          TESTED_SHA: ${{ github.sha }}
+        run: |
+          test "$(git rev-parse HEAD)" = "$TESTED_SHA"
+          if [[ "$GITHUB_EVENT_NAME" == "pull_request" ]]; then
+            test "$(git rev-parse HEAD^1)" = "$PR_BASE"
+            test "$(git rev-parse HEAD^2)" = "$PR_HEAD"
+          fi
+          printf 'Tested commit: %s\nPR head: %s\nPR base: %s\n' "$TESTED_SHA" "$PR_HEAD" "$PR_BASE" >> "$GITHUB_STEP_SUMMARY"
+
       - name: Select risk-based checks
         id: select
         env:
           BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before || github.sha }}
-          HEAD_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+          HEAD_SHA: ${{ github.sha }}
           EVENT_NAME: ${{ github.event_name }}
           FORCE_FULL: ${{ inputs.full_suite || false }}
           DEPLOY: ${{ inputs.deploy || false }}
         run: node site/scripts/select-ci-checks.mjs
 
+      - name: Require changed-path evidence
+        if: steps.select.outputs.classification_error == 'true'
+        run: exit 1
+
       - name: Check Git whitespace
         shell: pwsh
         env:
           BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before || github.sha }}
-          HEAD_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+          HEAD_SHA: ${{ github.sha }}
           EVENT_NAME: ${{ github.event_name }}
         run: |
           $head = $env:HEAD_SHA
@@ -106,6 +124,12 @@ jobs:
         run: npm ci
         working-directory: site
 
+      - name: Verify that a new test's type error fails the compiler
+        if: steps.select.outputs.full == 'true'
+        env:
+          VERIFY_TYPECHECK: 'true'
+        run: node --test --test-name-pattern="an added TypeScript test" site/scripts/select-ci-checks.test.mjs
+
       - name: Chef correctness-first pilot (five pinned source cases)
         id: chef_pilot
         if: >-
@@ -135,6 +159,11 @@ jobs:
         run: npm run content:sync
         working-directory: site
 
+      - name: Typecheck site source, scripts and tests
+        if: steps.select.outputs.run_typecheck == 'true'
+        run: npm run typecheck
+        working-directory: site
+
       - name: Fail-closed source SHA / generic instructions preflight for D30
         if: contains(steps.select.outputs.changed_paths, 'd30-source-worklist.json') || contains(steps.select.outputs.changed_paths, 'translation-source-preflight.mjs')
         run: |
@@ -153,7 +182,7 @@ jobs:
         env:
           CHANGED_PATHS: ${{ steps.select.outputs.changed_paths }}
           BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before || github.sha }}
-          HEAD_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+          HEAD_SHA: ${{ github.sha }}
         run: |
           $paths = @($env:CHANGED_PATHS -split "`n" | Where-Object { $_ })
           $npmArguments = @('run', 'validate:changed-content', '--') + $paths
@@ -165,7 +194,7 @@ jobs:
         if: steps.select.outputs.run_content == 'true'
         env:
           BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before || github.sha }}
-          HEAD_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+          HEAD_SHA: ${{ github.sha }}
         run: |
           npm run audit:similarity -- --changed --limit=20 --output=site/similarity-review.md
           cat similarity-review.md >> "$GITHUB_STEP_SUMMARY"

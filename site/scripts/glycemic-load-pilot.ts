@@ -90,18 +90,7 @@ for (const filename of await markdownFiles(path.join(root, "reseptit"))) {
 // Keep the historically reviewed GK calculation corpus byte-for-byte comparable,
 // while reporting these exact, SHA-pinned new public sources separately.
 // No GI or zero-GL approval follows from this quarantine.
-const newPublicGkPendingSources: Readonly<Record<string, string>> = Object.freeze({
-  "karnivore-steak-and-eggs": "c46f783cd6c4fe63ac62b5e163b13ffc5b8a8ed7",
-  "karnivore-voilohi-pannulla": "12b564ce9c49f0a09d4c1ae8734e1b720be530a0",
-  "karnivore-jauhelihakulho-munalla": "acb7a784af286cbdf42d44a229cafe0742c0fc2e",
-  "karnivore-smashburger": "179b12d53d97c406c6f83d2b829173375583b5d4",
-  "karnivore-rapea-porsaan-kylki": "01c618a195d706a2ed092695806421b4ed9369fb",
-  "karnivore-meatza": "c5b3a778b25e79912c2ac657fc832ad0040d6088",
-  "karnivore-lammaskyljykset-voissa": "3169d975a4c32f87b95baeb7e2d8ebaf2bba2d4c",
-  "karnivore-rapeat-kananreisipalat": "b53cd03654bc15fbabb65fd4eac6112ca9b9fe8c",
-  "karnivore-naudan-lyhytkylki": "893457c7ecf47644ba987d114c339ab4d518620b",
-  "karnivore-maksa-ja-pekoni": "bb1111c11a24ec126cbfbf90989a517af2e600c7",
-});
+const newPublicGkPendingSources = JSON.parse(await readFile(path.join(root, "docs/nutrition/new-public-gk-pending-sources.json"), "utf8")) as Record<string, string>;
 const separatelyTrackedPublishedGk = [...publishedRecipeSources.entries()]
   .filter(([id]) => Object.hasOwn(newPublicGkPendingSources, id))
   .map(([id, source]) => {
@@ -112,7 +101,7 @@ const separatelyTrackedPublishedGk = [...publishedRecipeSources.entries()]
       reason: "NEW_PUBLIC_RECIPE_GI_SOURCE_UNREVIEWED", sourceBlobSha: actual };
   });
 if (separatelyTrackedPublishedGk.length !== Object.keys(newPublicGkPendingSources).length) {
-  throw new Error("Incomplete FI3 GK HOLD source inventory");
+  throw new Error("Incomplete new-public GK HOLD source inventory");
 }
 const publishedSourceRows = [...publishedRecipeSources.entries()]
   .filter(([id]) => !Object.hasOwn(newPublicGkPendingSources, id))

@@ -1,5 +1,5 @@
-import {execFileSync} from 'node:child_process';
-import {mkdtempSync, readFileSync, rmSync} from 'node:fs';
+import {execFileSync, spawnSync} from 'node:child_process';
+import {copyFileSync, mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync} from 'node:fs';
 import {tmpdir} from 'node:os';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
@@ -295,4 +295,36 @@ test("browser-specific output is absent from docs-only and present on UI changes
   const changed = classifyPaths(["site/src/styles.css"]);
   assert.equal(changed.runBrowser, true);
   assert.deepEqual(changed.browserSuites, ["smoke"]);
+});
+
+test("an added TypeScript test requires typechecking without a browser build", () => {
+  const plan = classifyPaths(["site/tests/new-test-regression.test.ts"]);
+  assert.equal(plan.runTypecheck, true);
+  assert.equal(plan.runContentSync, true);
+  assert.equal(plan.runBuild, false);
+  assert.equal(plan.runBrowser, false);
+  assert.deepEqual(plan.unitTests, ["tests/new-test-regression.test.ts"]);
+
+  // The early selector check also runs on docs-only PRs without dependencies.
+  // Run the compiler proof separately after npm ci.
+  if (process.env.VERIFY_TYPECHECK !== "true") return;
+  const tsc = fileURLToPath(new URL("../node_modules/typescript/bin/tsc", import.meta.url));
+  const fixture = mkdtempSync(path.join(tmpdir(), "recipe-typecheck-"));
+  try {
+    copyFileSync(new URL("../tsconfig.json", import.meta.url), path.join(fixture, "tsconfig.json"));
+    mkdirSync(path.join(fixture, "tests"));
+    const source = path.join(fixture, "tests/new-test-regression.test.ts");
+    writeFileSync(source, 'const value: number = 1;\nvoid value;\n');
+    const run = () => spawnSync(process.execPath, [tsc, "--pretty", "false", "-p", "tsconfig.json"], {
+      cwd: fixture, encoding: "utf8",
+    });
+    const valid = run();
+    assert.equal(valid.status, 0, valid.stdout || valid.stderr);
+    writeFileSync(source, 'const value: number = "oops";\nvoid value;\n');
+    const invalid = run();
+    assert.ok(invalid.status > 0, invalid.stdout || invalid.stderr);
+    assert.match(invalid.stdout, /new-test-regression\.test\.ts.+TS2322/);
+  } finally {
+    rmSync(fixture, { recursive: true, force: true });
+  }
 });

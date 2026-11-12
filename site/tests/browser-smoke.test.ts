@@ -1,5 +1,4 @@
 import { gkCopy } from "../src/features/glycemic-load/glycemic-load-copy";
-import "./content-layout.browser.test";
 import assert from "node:assert/strict";
 import { spawn, type ChildProcess } from "node:child_process";
 import path from "node:path";

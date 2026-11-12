@@ -1,3 +1,9 @@
 # Keep source bytes stable for the build's recipe and translation review hashes.
 /reseptit/**/*.md text eol=lf
 /kaannokset/**/*.md text eol=lf
+
+# Raw Git-blob checks also cover draft sources, calculations and sealed fixtures.
+/tuonti/**/*.md text eol=lf
+/docs/nutrition/**/*.json text eol=lf
+/site/tests/fixtures/**/*.md text eol=lf
+/docs/reviews/**/*.md text eol=lf

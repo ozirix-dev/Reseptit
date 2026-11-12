@@ -70,10 +70,10 @@ const [pilot, nutrition, inputs, giCatalog, historical, reviewStart] = await Pro
 ]);
 const separatelyPending = pilot.newPublicGkPendingSources ?? [];
 const pendingIds = new Set(separatelyPending.map((row) => row.recipeId));
-if (pendingIds.size !== separatelyPending.length || pendingIds.size !== 10 ||
+if (pendingIds.size !== separatelyPending.length ||
     separatelyPending.some((row) => row.status !== "INSUFFICIENT SOURCE DATA" || row.glycemicLoadPerServing !== null ||
       !/^[a-f0-9]{40}$/.test(row.sourceBlobSha))) {
-  throw new Error("Separate new-public GK pending sources need ten distinct, SHA-pinned NULL cases.");
+  throw new Error("Separate new-public GK pending sources must be distinct, SHA-pinned NULL cases.");
 }
 const pendingNutritionRows = nutrition.inventory.filter((row) => pendingIds.has(row.recipe_id));
 if (pendingNutritionRows.length !== pendingIds.size || pendingNutritionRows.some((row) => row.status !== "ESTIMATE WITH EVIDENCE")) {
