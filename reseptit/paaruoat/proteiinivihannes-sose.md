@@ -1,65 +1,53 @@
 ---
-title: "Proteiinivihannes-sose"
+title: "Jauheliha-kasvissosevuoka"
 recipe_id: "proteiinivihannes-sose"
-url_slug: "proteiinivihannes-sose"
+url_slug: "jauheliha-kasvissosevuoka"
 category: "paaruoka"
 language: "fi"
-diet_class: "vhh_valjempi"
-carbs_net_per_serving_g:
-carbs_total_per_serving_g: 14
-protein_per_serving_g: 24
-fat_per_serving_g: 19
+status: "published"
 servings: 4
-main_ingredient: ["kukkakaali", "raejuusto", "jauheliha"]
-cooking_method: ["uuni", "soseutus"]
-time_total_min: 60
-difficulty: "keskitaso"
-tags: ["paaruoka", "uuniruoka", "sose", "proteiinipitoinen"]
-translation_languages: []
-translation_status: {}
-status: "draft"
+time_total_min: 75
+difficulty: "helppo"
+main_ingredient: ["kukkakaali","peruna","porsaan jauheliha","raejuusto"]
+cooking_method: ["keittäminen","uunissa paistaminen"]
+tags: []
+carbs_net_per_serving_g: 23.7
+carbs_total_per_serving_g: 27.84
+protein_per_serving_g: 23.78
+fat_per_serving_g: 35.66
+image:
+  src: "paaruoat/jauheliha-kasvissosevuoka.webp"
+  alt: "Ruskistunutta kasvissosevuokaa ja annos lautasella"
+  width: 1536
+  height: 1024
+ingredients:
+  - {"amount":400,"unit":"g","item":"kuorittua, suolattomassa vedessä keitettyä perunaa"}
+  - {"amount":400,"unit":"g","item":"kukkakaalin nuppuja ja pehmeää vartta"}
+  - {"amount":100,"unit":"g","item":"kuorittua porkkanaa"}
+  - {"amount":150,"unit":"g","item":"tomaattia"}
+  - {"amount":100,"unit":"g","item":"sianjauhelihaa, rasvaa noin 10 %"}
+  - {"amount":200,"unit":"g","item":"raejuustoa, rasvaa 2–5 %"}
+  - {"amount":165,"unit":"g","item":"kuoretonta kananmunaa (noin 3 kpl)"}
+  - {"amount":200,"unit":"g","item":"35-prosenttista kuohukermaa"}
+  - {"amount":50,"unit":"g","item":"voita"}
+  - {"amount":8,"unit":"g","item":"suolaa"}
+  - {"amount":1,"unit":"g","item":"jauhettua mustapippuria"}
+  - {"amount":0.5,"unit":"g","item":"jauhettua muskottipähkinää"}
+  - {"amount":15,"unit":"g","item":"sitruunamehua"}
 ---
 
-# Proteiinivihannes-sose
+# Jauheliha-kasvissosevuoka
 
-Samettinen ja proteiinipitoinen vihannessose, joka toimii paaruokana tai lisakkeena.
-
-## Kuvaus
-
-Resepti yhdistaa kasviksia, raejuustoa, kananmunaa ja jauhelihaa uunissa kypsytettavaksi pehmeaksi sosemaiseksi ruoaksi.
-
-## Ainekset
-
-- 400 g perunaa, kuorittuna ja keitettyna
-- 400 g kukkakaalia
-- 100 g porkkanaa
-- 150 g tomaattia
-- 100 g possun jauhelihaa
-- 200 g raejuustoa
-- 3 kananmunaa
-- 2 dl kuohukermaa
-- 50 g voita
-- 1 1/2 tl suolaa
-- 1/2 tl mustapippuria
-- muskottipahkinaa tai valkosipulijauhetta maun mukaan
-- 1 rkl omenaviinietikkaa tai sitruunamehua
+Peruna, kukkakaali ja porkkana muodostavat pehmeän uunivuoan pohjan. Raejuusto, kerma ja ruskistettu sianjauheliha sekoitetaan soseeseen ennen paistamista.
 
 ## Valmistus
 
-1. Keita perunat, kukkakaali ja porkkanat kypsiksi.
-2. Ruskista jauheliha voissa ja mausta kevyesti.
-3. Soseuta kasvikset ja sekoita joukkoon raejuusto, kerma, voi, happo ja mausteet.
-4. Lisaa joukkoon jauheliha ja kananmunat.
-5. Kaada seos voideltuun uunivuokaan ja paista 180 asteessa noin 25-30 minuuttia.
-
-## Ravintoarvio per annos
-
-- Energia noin 320 kcal
-- Proteiini noin 23-25 g
-- Rasva noin 18-20 g
-- Hiilihydraatit noin 12-14 g
+1. Kuumenna uuni 180 asteeseen. Keitä perunat suolattomassa vedessä ja valuta ne. Punnitse kypsää perunaa 400 g. Paloittele kukkakaali ja porkkana, keitä ne pehmeiksi ja valuta huolellisesti. Kuutioi pesty tomaatti.
+2. Voitele leveä noin 2,5 litran uunivuoka 5 grammalla voita. Kuumenna pannulla 15 g voita ja ruskista sianjauheliha muruksi. Lisää tomaatti ja kypsennä pari minuuttia. Siirrä koko pannun sisältö nesteineen kulhoon.
+3. Survo perunat, kukkakaali ja porkkana. Sekoita joukkoon loput 30 g voita, raejuusto, kerma, sitruunamehu, suola, pippuri ja muskottipähkinä. Sekoita joukkoon jauheliha ja tomaatti. Anna seoksen jäähtyä kädenlämpöiseksi ja sekoita siihen vatkatut munat.
+4. Levitä seos vuokaan. Paista noin 35–45 minuuttia, kunnes keskusta on hyytynyt ja paksuimman kohdan lämpötila on vähintään 75 °C. Anna vetäytyä 5 minuuttia ja jaa neljään annokseen.
 
 ## Muistiinpanot
 
-- Toimii paaruokana tai lisakkeena.
-- Sopii hyvin kalan, kanan tai salaatin kanssa.
+- Pidä raaka jauheliha erillään kypsistä kasviksista. Kypsennä vuoka keskeltä vähintään 75 °C:seen. Sisältää maitoa ja kananmunaa. Jäähdytä tähteet nopeasti ja säilytä jääkaapissa.
+- Kuva on tekoälyllä tehty kuvitus.

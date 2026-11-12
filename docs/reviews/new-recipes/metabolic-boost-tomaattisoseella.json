@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "recipe_id": "metabolic-boost-tomaattisoseella",
+  "source_path": "reseptit/alkuruoat/metabolic-boost-tomaattisoseella.md",
+  "source_sha256": "d46a3c20971d5a9af6fd43fbdc8d673eebedaad11227b702954989e9d510686d",
+  "decision": "approved",
+  "reviewed_by": "Codex – kirjallinen toimituksellinen katselmointi",
+  "reviewed_at": "2026-11-12",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://github.com/ozirix-dev/Reseptit/blob/c5b76dc589e0a4169a2fadc568ae29eca7c95a94/reseptit/raakileet/metabolic-boost-tomaattisoseella.md"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/metabolic-boost-tomaattisoseella.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Tomaattiin pohjautuva oma vanha raakile säilyttää sipuli-inkivääri-sitruunapohjansa. Vettä käyttävä rinnakkainen boost-raakile on eri valmistuspohja. Väite metabolisesta vaikutuksesta ja siihen liitetty valkosipulin seisotus poistettu."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "11 syötävää ainesmäärää tarkistettu ohjeen ja lähdetietueiden kanssa."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Kylmäsekoitus. Ohut öljynauha lisätään lopuksi, jotta juoma sekoittuu tasaisesti. Sipuli ja inkivääri pilkotaan ennen soseutusta."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Käytä puhdasta tehosekoitinta ja kylmiä nesteitä. Säilytä juoma jääkaapissa, jos sitä ei tarjoilla heti."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Kahteen lasiin jaettava juoma. Punnitus, pilkkominen ja soseutus mahtuvat 15 minuuttiin."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Täsmäsyötteen tarkistus laski kaikki neljä makroarvoa Fineli- ja AFCD-tietueista ja vertasi ne reseptin arvoihin."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Tälle versiolle ei ole hyväksyttyä GI/GK-sidosta. Täsmälähdeversio on GK-pending-rekisterissä."
+    }
+  },
+  "supplementary_evidence": {
+    "prior_draft_path": "reseptit/raakileet/metabolic-boost-tomaattisoseella.md",
+    "prior_draft_blob": "8432081a91b2ad2a9813faf0f6a23c5c8503c7fe",
+    "safety_source": "https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/kasittely-ja-sailyttaminen/hygienia-kotikeittiossa/kasvikset-ja-hedelmat/",
+    "physical_cook_test": false,
+    "image_path": "kuvat/alkuruoat/tomaatti-inkivaarijuoma.webp",
+    "image_sha256": "7e33ea2e95d50417d123fb161303000251573a9bfecc3ee7ceb8c410293321db",
+    "image_review": "Kaksi lasia punaista tomaatti-inkiväärijuomaa",
+    "image_method": "Built-in ImageGen",
+    "image_prompt": "Create one original realistic Finnish cookbook photograph of a single clear tumbler of deep muted red blended tomato and fresh ginger savory drink, opaque and smooth with very fine flecks, with a second smaller matching glass behind. Wide landscape cover framing with natural window light, warm neutral linen, accurate home-cooked texture, and the dish fully recognizable in the middle of the frame. No text, people, branding, packaging, or unlisted garnishes.",
+    "nutrition_calculation_sha256": "fb3265c47240705487909bbbc2bb6d2ce9712273f1b43565fa93ec0c0e55f49a"
+  }
+}

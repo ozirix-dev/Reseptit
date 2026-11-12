@@ -1,60 +1,49 @@
 ---
-title: "Belgialainen proteiini-vohveli"
+title: "Kauravohvelit vohveliraudalla"
 recipe_id: "belgialainen-proteiini-vohveli"
-url_slug: "belgialainen-proteiini-vohveli"
+url_slug: "kauravohvelit"
 category: "jalkiruoka"
 language: "fi"
-diet_class: "vhh_valjempi"
-carbs_net_per_serving_g:
-carbs_total_per_serving_g: 19
-protein_per_serving_g: 14
-fat_per_serving_g: 16
+status: "published"
 servings: 2
-main_ingredient: ["kaura", "muna", "kerma"]
-cooking_method: ["vohvelirauta"]
-time_total_min: 15
+time_total_min: 25
 difficulty: "helppo"
-tags: ["leivonta", "vohveli", "jalkiruoka", "proteiinipitoinen"]
-translation_languages: []
-translation_status: {}
-status: "draft"
+main_ingredient: ["kaurajauho","kananmuna","kuohukerma"]
+cooking_method: ["vohveliraudalla paistaminen"]
+tags: []
+carbs_net_per_serving_g: 40.39
+carbs_total_per_serving_g: 43.26
+protein_per_serving_g: 17.97
+fat_per_serving_g: 25.16
+image:
+  src: "jalkiruoat/kauravohvelit.webp"
+  alt: "Kaksi kullanruskeaa ruudullista kauravohvelia lautasella"
+  width: 1536
+  height: 1024
+ingredients:
+  - {"amount":80,"unit":"g","item":"kaurajauhoja"}
+  - {"amount":33,"unit":"g","item":"puolikarkeita vehnäjauhoja"}
+  - {"amount":165,"unit":"g","item":"kuoretonta kananmunaa (noin 3 kpl)"}
+  - {"amount":50,"unit":"g","item":"35-prosenttista kuohukermaa"}
+  - {"amount":50,"unit":"g","item":"maustamatonta hiilihapotettua kivennäisvettä"}
+  - {"amount":14,"unit":"g","item":"voita"}
+  - {"amount":5,"unit":"g","item":"leivinjauhetta"}
+  - {"amount":3,"unit":"g","item":"hunajaa"}
+  - {"amount":1,"unit":"g","item":"suolaa"}
 ---
 
-# Belgialainen proteiini-vohveli
+# Kauravohvelit vohveliraudalla
 
-Kaurapohjainen vohveli, jossa on tavallista enemman proteiinia ja pehmea mutta rapeaksi paistuva rakenne.
-
-## Kuvaus
-
-Tama versio on herkkupaivan kompromissi: maku pysyy runsaana, mutta pohja on kaurapainotteinen ja proteiinia tulee enemman kuin tavallisessa belgialaisessa vohvelissa.
-
-## Ainekset
-
-- 2 dl hienoksi jauhettuja kaurahiutaleita
-- 1/2 dl vehnajauhoa
-- 3 kananmunaa
-- 1/2 dl kuohukermaa
-- 1/2 dl vichyveta
-- 1 rkl voisulaa
-- 1 tl leivinjauhetta
-- makeutusta maun mukaan, esimerkiksi erytritolia tai 1/2 tl hunajaa
-- ripaus suolaa
-- halutessa vaniljaa tai kanelia
+Kaurajauho tuo vohveleihin pähkinäisen maun. Anna taikinan turvota ennen paistamista ja nosta vohvelit hetkeksi ritilälle, jotta pinta pysyy rapeana.
 
 ## Valmistus
 
-1. Sekoita kaikki ainekset tasaiseksi taikinaksi.
-2. Anna taikinan turvota 5-10 minuuttia.
-3. Paista vohveliraudassa kevyesti voideltuna, kunnes pinta on kullanruskea.
-
-## Ravintoarvio per annos
-
-- Energia noin 270 kcal
-- Proteiini noin 14 g
-- Hiilihydraatit noin 19 g
-- Rasva noin 16 g
+1. Sulata voi ja anna sen jäähtyä kädenlämpöiseksi. Sekoita kaura- ja vehnäjauhot, leivinjauhe sekä suola kulhossa.
+2. Vispaa kananmunat, kerma ja hunaja toisessa kulhossa. Lisää voisula ja kivennäisvesi. Sekoita nesteseos jauhoihin tasaiseksi taikinaksi. Anna turvota noin 8 minuuttia.
+3. Kuumenna tarttumaton vohvelirauta valmistajan ohjeen mukaan. Annostele taikinaa kerralla raudan koon mukaan siten, että taikina saa hieman levitä. Paista, kunnes vohveli irtoaa helposti, on molemmin puolin kullanruskea ja sisältä täysin kypsä.
+4. Nosta valmiit vohvelit ritilälle. Paista loppu taikina ja jaa kaikki vohvelit kahteen annokseen.
 
 ## Muistiinpanot
 
-- Tarjoile voin, marjojen ja taydellisen jogurtin kanssa.
-- Sopii myos aamiaiseksi tai valipalaksi.
+- Sisältää vehnää, kauraa, maitoa ja kananmunaa. Paista taikina läpikypsäksi. Älä anna hunajaa sisältävää ruokaa alle yksivuotiaalle.
+- Kuva on tekoälyllä tehty kuvitus.

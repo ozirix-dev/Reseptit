@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "recipe_id": "proteiinivihannes-sose",
+  "source_path": "reseptit/paaruoat/proteiinivihannes-sose.md",
+  "source_sha256": "601ecf6e516ed33915ff9d6d6e5767b1a37ad9a8ce9462e03b4934baa18afe23",
+  "decision": "approved",
+  "reviewed_by": "Codex – kirjallinen toimituksellinen katselmointi",
+  "reviewed_at": "2026-11-12",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://github.com/ozirix-dev/Reseptit/blob/c5b76dc589e0a4169a2fadc568ae29eca7c95a94/reseptit/paaruoat/proteiinivihannes-sose.md"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/proteiinivihannes-sose.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Perunaa, kukkakaalia ja porkkanaa, sianjauhelihaa, raejuustoa ja kananmunaa yhdistävä sosevuoka eroaa nykyisistä paahdetuista sosekeitoista ja kukkakaali-pekonigratiinista."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "13 syötävää ainesmäärää tarkistettu ohjeen ja lähdetietueiden kanssa."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Peruna punnitaan kypsänä ja suolattomana, muut kasvikset raakana syötävänä. Tomaatti käyttää pannuvaiheen. Pannun rasva ja paistoneste käytetään kokonaan. Muna lisätään jäähtyneeseen seokseen, joka kypsennetään mittarin avulla."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Pidä raaka jauheliha erillään kypsistä kasviksista. Kypsennä vuoka keskeltä vähintään 75 °C:seen. Sisältää maitoa ja kananmunaa. Jäähdytä tähteet nopeasti ja säilytä jääkaapissa."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Neljä pääruoka-annosta. Perunoiden kypsennys, vuoan 35–45 minuutin paisto ja vetäytyminen sisältyvät arvioon."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Täsmäsyötteen tarkistus laski kaikki neljä makroarvoa Fineli- ja AFCD-tietueista ja vertasi ne reseptin arvoihin."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Tälle versiolle ei ole hyväksyttyä GI/GK-sidosta. Täsmälähdeversio on GK-pending-rekisterissä."
+    }
+  },
+  "supplementary_evidence": {
+    "prior_draft_path": "reseptit/paaruoat/proteiinivihannes-sose.md",
+    "prior_draft_blob": "7f26fd7e94e6d471bac1fa9e19f956e0773e37b9",
+    "safety_source": "https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/kasittely-ja-sailyttaminen/hygienia-kotikeittiossa/liha/",
+    "physical_cook_test": false,
+    "image_path": "kuvat/paaruoat/jauheliha-kasvissosevuoka.webp",
+    "image_sha256": "cd4aa7877c5750b58d598a852d1f27c00ca12588470bbe9e152b49c6c49fe02e",
+    "image_review": "Ruskistunutta kasvissosevuokaa ja annos lautasella",
+    "image_method": "Built-in ImageGen",
+    "image_prompt": "Create one original realistic Finnish cookbook photograph of a shallow oven casserole of pale mashed potato, cauliflower, carrot and cottage cheese with a lightly browned set surface, a spoonful on a simple plate showing light orange interior and very small cooked pork mince flecks. Wide landscape cover framing with natural window light, warm neutral linen, accurate home-cooked texture, and the dish fully recognizable in the middle of the frame. No text, people, branding, packaging, or unlisted garnishes.",
+    "nutrition_calculation_sha256": "16d976fe8a9c8b62f98991f03694dfd924514ce25cd45caa648f3d4369735995"
+  }
+}
