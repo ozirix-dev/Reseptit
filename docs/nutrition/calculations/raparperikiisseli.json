@@ -1,0 +1,138 @@
+{
+  "recipeId": "raparperikiisseli",
+  "sourceHash": "881137c145fc8828296cc3b435b6a0410f56325ea8f5e5809cbf5dd1d595a673",
+  "calculatedAt": "2026-11-12",
+  "batchId": "batch-519",
+  "servings": 8,
+  "scope": "Annoksen laskennallinen makroarvio reseptin raaka-aineista. Yleiset koostumustiedot ovat Fineli Release 20 -poiminnasta.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "amount": 500,
+      "unit": "g",
+      "item": "raparperin varsia",
+      "state": "RAW",
+      "matchEvidence": "Fineli Release 20 #338 RAPARPERI. Ainesosan yleinen koostumus.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Määrä kuvaa syötävää tai reseptissä käytettävää osaa.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Laskennassa annoksiin jaetaan käytetty aines; haihtuva vesi ei muuta annoskohtaisia makroja.",
+      "record": {
+        "id": "fineli-338-release-20",
+        "name": "RAPARPERI",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/338",
+        "retrievedAt": "2026-11-12",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "RAW",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 5.5,
+          "fibre": 1.4,
+          "polyols": 0,
+          "protein": 0.69,
+          "fat": 0.1
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 SUGOH -arvo kiinnitetyssä lähdepoiminnassa."
+      }
+    },
+    {
+      "amount": 8,
+      "unit": "dl",
+      "item": "vettä",
+      "state": "X",
+      "matchEvidence": "Fineli Release 20 #922 VESI, VESIJOHTOVESI. Ainesosan yleinen koostumus.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Määrä kuvaa syötävää tai reseptissä käytettävää osaa.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Laskennassa annoksiin jaetaan käytetty aines; haihtuva vesi ei muuta annoskohtaisia makroja.",
+      "record": {
+        "id": "fineli-922-release-20",
+        "name": "VESI, VESIJOHTOVESI",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/922",
+        "retrievedAt": "2026-11-12",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "X",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 0
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 SUGOH -arvo kiinnitetyssä lähdepoiminnassa."
+      },
+      "gramsPerUnit": 100,
+      "conversionEvidence": "Fineli Release 20 #922, portion_mass_g DL."
+    },
+    {
+      "amount": 2,
+      "unit": "dl",
+      "item": "sokeria",
+      "state": "IND",
+      "matchEvidence": "Fineli Release 20 #1 SOKERI. Ainesosan yleinen koostumus.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Määrä kuvaa syötävää tai reseptissä käytettävää osaa.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Laskennassa annoksiin jaetaan käytetty aines; haihtuva vesi ei muuta annoskohtaisia makroja.",
+      "record": {
+        "id": "fineli-1-release-20",
+        "name": "SOKERI",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/1",
+        "retrievedAt": "2026-11-12",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "IND",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 99.9,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 0
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 SUGOH -arvo kiinnitetyssä lähdepoiminnassa."
+      },
+      "gramsPerUnit": 85,
+      "conversionEvidence": "Fineli Release 20 #1, portion_mass_g DL."
+    },
+    {
+      "amount": 4,
+      "unit": "rkl",
+      "item": "perunajauhoja",
+      "state": "RAW",
+      "matchEvidence": "Fineli Release 20 #162 JAUHO, PERUNAJAUHO TAI -SUURIMO, PERUNATÄRKKELYS. Ainesosan yleinen koostumus.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Määrä kuvaa syötävää tai reseptissä käytettävää osaa.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Laskennassa annoksiin jaetaan käytetty aines; haihtuva vesi ei muuta annoskohtaisia makroja.",
+      "record": {
+        "id": "fineli-162-release-20",
+        "name": "JAUHO, PERUNAJAUHO TAI -SUURIMO, PERUNATÄRKKELYS",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/162",
+        "retrievedAt": "2026-11-12",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "RAW",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 81.6,
+          "fibre": 1.4,
+          "polyols": 0,
+          "protein": 0.06,
+          "fat": 0.05
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 SUGOH -arvo kiinnitetyssä lähdepoiminnassa."
+      },
+      "gramsPerUnit": 9.5,
+      "conversionEvidence": "Fineli Release 20 #162, portion_mass_g RKL."
+    }
+  ]
+}

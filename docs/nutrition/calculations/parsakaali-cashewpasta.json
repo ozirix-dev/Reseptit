@@ -1,0 +1,217 @@
+{
+  "recipeId": "parsakaali-cashewpasta",
+  "sourceHash": "dcfca114c7c76c127125ed5a200a00cf2dbb37ec50b7b7ff7fd18812092ad28e",
+  "calculatedAt": "2026-11-12",
+  "batchId": "batch-519",
+  "servings": 3,
+  "scope": "Annoksen laskennallinen makroarvio reseptin raaka-aineista. Yleiset koostumustiedot ovat Fineli Release 20 -poiminnasta.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "amount": 350,
+      "unit": "g",
+      "item": "parsakaalia",
+      "state": "RAW",
+      "matchEvidence": "Fineli Release 20 #324 PARSAKAALI, BROKKOLI. Ainesosan yleinen koostumus.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Määrä kuvaa syötävää tai reseptissä käytettävää osaa.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Laskennassa annoksiin jaetaan käytetty aines; haihtuva vesi ei muuta annoskohtaisia makroja.",
+      "record": {
+        "id": "fineli-324-release-20",
+        "name": "PARSAKAALI, BROKKOLI",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/324",
+        "retrievedAt": "2026-11-12",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "RAW",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 1.64,
+          "fibre": 2.5,
+          "polyols": 0,
+          "protein": 3.9,
+          "fat": 0.53
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 SUGOH -arvo kiinnitetyssä lähdepoiminnassa."
+      }
+    },
+    {
+      "amount": 250,
+      "unit": "g",
+      "item": "kuivaa täysjyväspagettia",
+      "state": "Lähde tai vastaavuus vahvistamatta",
+      "matchEvidence": "Täsmällistä, valmistustapaa ja ainesmuotoa vastaavaa ravintotietuetta ei vahvistettu."
+    },
+    {
+      "amount": 1,
+      "unit": "dl",
+      "item": "suolaamattomia cashewpähkinöitä",
+      "state": "RAW",
+      "matchEvidence": "Fineli Release 20 #11086 PÄHKINÄ, CASHEWPÄHKINÄ. Ainesosan yleinen koostumus.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Määrä kuvaa syötävää tai reseptissä käytettävää osaa.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Laskennassa annoksiin jaetaan käytetty aines; haihtuva vesi ei muuta annoskohtaisia makroja.",
+      "record": {
+        "id": "fineli-11086-release-20",
+        "name": "PÄHKINÄ, CASHEWPÄHKINÄ",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11086",
+        "retrievedAt": "2026-11-12",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "RAW",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 18.8,
+          "fibre": 3.5,
+          "polyols": 0,
+          "protein": 20,
+          "fat": 46.35
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 SUGOH -arvo kiinnitetyssä lähdepoiminnassa."
+      },
+      "gramsPerUnit": 60,
+      "conversionEvidence": "Fineli Release 20 #11086, portion_mass_g DL."
+    },
+    {
+      "amount": 2,
+      "unit": "kpl",
+      "item": "valkosipulinkynttä",
+      "state": "RAW",
+      "matchEvidence": "Fineli Release 20 #393 VALKOSIPULI. Ainesosan yleinen koostumus.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Määrä kuvaa syötävää tai reseptissä käytettävää osaa.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Laskennassa annoksiin jaetaan käytetty aines; haihtuva vesi ei muuta annoskohtaisia makroja.",
+      "record": {
+        "id": "fineli-393-release-20",
+        "name": "VALKOSIPULI",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/393",
+        "retrievedAt": "2026-11-12",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "RAW",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 16.3,
+          "fibre": null,
+          "polyols": 0,
+          "protein": 7.9,
+          "fat": 0.6
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 SUGOH -arvo kiinnitetyssä lähdepoiminnassa."
+      },
+      "gramsPerUnit": 3.5,
+      "conversionEvidence": "Fineli Release 20 #393, portion_mass_g KPL_M."
+    },
+    {
+      "amount": 3,
+      "unit": "rkl",
+      "item": "oliiviöljyä",
+      "state": "IND",
+      "matchEvidence": "Fineli Release 20 #536 OLIIVIÖLJY. Ainesosan yleinen koostumus.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Määrä kuvaa syötävää tai reseptissä käytettävää osaa.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Laskennassa annoksiin jaetaan käytetty aines; haihtuva vesi ei muuta annoskohtaisia makroja.",
+      "record": {
+        "id": "fineli-536-release-20",
+        "name": "OLIIVIÖLJY",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/536",
+        "retrievedAt": "2026-11-12",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "IND",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 100
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 SUGOH -arvo kiinnitetyssä lähdepoiminnassa."
+      },
+      "gramsPerUnit": 13.5,
+      "conversionEvidence": "Fineli Release 20 #536, portion_mass_g RKL."
+    },
+    {
+      "amount": 0.5,
+      "unit": "tl",
+      "item": "suolaa",
+      "state": "IND",
+      "matchEvidence": "Fineli Release 20 #30 RUOKASUOLA, JODIOITU. Ainesosan yleinen koostumus.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Määrä kuvaa syötävää tai reseptissä käytettävää osaa.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Laskennassa annoksiin jaetaan käytetty aines; haihtuva vesi ei muuta annoskohtaisia makroja.",
+      "record": {
+        "id": "fineli-30-release-20",
+        "name": "RUOKASUOLA, JODIOITU",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/30",
+        "retrievedAt": "2026-11-12",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "IND",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0.63,
+          "fat": 0
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 SUGOH -arvo kiinnitetyssä lähdepoiminnassa."
+      },
+      "gramsPerUnit": 6.5,
+      "conversionEvidence": "Fineli Release 20 #30, portion_mass_g TL."
+    },
+    {
+      "amount": 0.25,
+      "unit": "tl",
+      "item": "jauhettua mustapippuria",
+      "state": "DRIE",
+      "matchEvidence": "Fineli Release 20 #11177 MUSTAPIPPURI. Ainesosan yleinen koostumus.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Määrä kuvaa syötävää tai reseptissä käytettävää osaa.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Laskennassa annoksiin jaetaan käytetty aines; haihtuva vesi ei muuta annoskohtaisia makroja.",
+      "record": {
+        "id": "fineli-11177-release-20",
+        "name": "MUSTAPIPPURI",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11177",
+        "retrievedAt": "2026-11-12",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "DRIE",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 38.31,
+          "fibre": null,
+          "polyols": null,
+          "protein": 10.9,
+          "fat": 3.3
+        },
+        "polyolsSourceVerified": false
+      },
+      "gramsPerUnit": 2,
+      "conversionEvidence": "Fineli Release 20 #11177, portion_mass_g TL."
+    },
+    {
+      "amount": 40,
+      "unit": "g",
+      "item": "parmesaania raastettuna",
+      "state": "Lähde tai vastaavuus vahvistamatta",
+      "matchEvidence": "Täsmällistä, valmistustapaa ja ainesmuotoa vastaavaa ravintotietuetta ei vahvistettu."
+    }
+  ],
+  "publicationStatus": "WITHHELD_SOURCE_INCOMPLETE",
+  "withholdingReason": "kuivaa täysjyväspagettia: lähde puuttuu. valkosipulinkynttä: kuitu puuttuu Finelin tietueesta 393. jauhettua mustapippuria: kuitu, polyolit puuttuu Finelin tietueesta 11177. parmesaania raastettuna: lähde puuttuu."
+}

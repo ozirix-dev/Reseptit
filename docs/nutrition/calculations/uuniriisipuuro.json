@@ -1,0 +1,139 @@
+{
+  "recipeId": "uuniriisipuuro",
+  "sourceHash": "b4e2daab545c7f9e5e3e4421e220331c7d0ed5be8cfe8dba838ede834ea5a0de",
+  "calculatedAt": "2026-11-12",
+  "batchId": "batch-519",
+  "servings": 4,
+  "scope": "Annoksen laskennallinen makroarvio reseptin raaka-aineista. Yleiset koostumustiedot ovat Fineli Release 20 -poiminnasta.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "amount": 10,
+      "unit": "dl",
+      "item": "täysmaitoa",
+      "state": "IND",
+      "matchEvidence": "Fineli Release 20 #689 MAITO, TÄYSMAITO, D-VITAMIINIA 1 UG. Ainesosan yleinen koostumus.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Määrä kuvaa syötävää tai reseptissä käytettävää osaa.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Laskennassa annoksiin jaetaan käytetty aines; haihtuva vesi ei muuta annoskohtaisia makroja.",
+      "record": {
+        "id": "fineli-689-release-20",
+        "name": "MAITO, TÄYSMAITO, D-VITAMIINIA 1 UG",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/689",
+        "retrievedAt": "2026-11-12",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "IND",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 4.8,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 3,
+          "fat": 3.5
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 SUGOH -arvo kiinnitetyssä lähdepoiminnassa."
+      },
+      "gramsPerUnit": 100,
+      "conversionEvidence": "Fineli Release 20 #689, portion_mass_g DL."
+    },
+    {
+      "amount": 2,
+      "unit": "dl",
+      "item": "puuroriisiä",
+      "state": "RAW",
+      "matchEvidence": "Fineli Release 20 #156 RIISI PUUROUTUVA. Ainesosan yleinen koostumus.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Määrä kuvaa syötävää tai reseptissä käytettävää osaa.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Laskennassa annoksiin jaetaan käytetty aines; haihtuva vesi ei muuta annoskohtaisia makroja.",
+      "record": {
+        "id": "fineli-156-release-20",
+        "name": "RIISI PUUROUTUVA",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/156",
+        "retrievedAt": "2026-11-12",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "RAW",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 75.6,
+          "fibre": 2.3,
+          "polyols": null,
+          "protein": 6.06,
+          "fat": 0.7
+        },
+        "polyolsSourceVerified": false
+      },
+      "gramsPerUnit": 85,
+      "conversionEvidence": "Fineli Release 20 #156, portion_mass_g DL."
+    },
+    {
+      "amount": 1,
+      "unit": "tl",
+      "item": "suolaa",
+      "state": "IND",
+      "matchEvidence": "Fineli Release 20 #30 RUOKASUOLA, JODIOITU. Ainesosan yleinen koostumus.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Määrä kuvaa syötävää tai reseptissä käytettävää osaa.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Laskennassa annoksiin jaetaan käytetty aines; haihtuva vesi ei muuta annoskohtaisia makroja.",
+      "record": {
+        "id": "fineli-30-release-20",
+        "name": "RUOKASUOLA, JODIOITU",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/30",
+        "retrievedAt": "2026-11-12",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "IND",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0.63,
+          "fat": 0
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 SUGOH -arvo kiinnitetyssä lähdepoiminnassa."
+      },
+      "gramsPerUnit": 6.5,
+      "conversionEvidence": "Fineli Release 20 #30, portion_mass_g TL."
+    },
+    {
+      "amount": 10,
+      "unit": "g",
+      "item": "voita vuoan voiteluun",
+      "state": "IND",
+      "matchEvidence": "Fineli Release 20 #500 VOI. Ainesosan yleinen koostumus.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Määrä kuvaa syötävää tai reseptissä käytettävää osaa.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Laskennassa annoksiin jaetaan käytetty aines; haihtuva vesi ei muuta annoskohtaisia makroja.",
+      "record": {
+        "id": "fineli-500-release-20",
+        "name": "VOI",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/500",
+        "retrievedAt": "2026-11-12",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "IND",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 0.8,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 1.19,
+          "fat": 81.3
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 SUGOH -arvo kiinnitetyssä lähdepoiminnassa."
+      }
+    }
+  ],
+  "publicationStatus": "WITHHELD_SOURCE_INCOMPLETE",
+  "withholdingReason": "puuroriisiä: polyolit puuttuu Finelin tietueesta 156."
+}

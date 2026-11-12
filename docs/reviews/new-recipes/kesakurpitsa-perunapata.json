@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "recipe_id": "kesakurpitsa-perunapata",
+  "source_path": "reseptit/paaruoat/kesakurpitsa-perunapata.md",
+  "source_sha256": "e7dc75c8830a3cb7d1857afa63d53221bd851c97fcf32b7d42afa668f9cb72e2",
+  "decision": "approved",
+  "reviewed_by": "Codex – kirjallinen toimituksellinen katselmointi",
+  "reviewed_at": "2026-11-12",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.k-ruoka.fi/reseptit/kesakurpitsapaistos-liedella"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/kesakurpitsa-perunapata.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Liedellä haudutettu peruna-tomaatti-nyhtökaurapata erottuu uunissa paistettavista lasagneista ja täytetyistä kesäkurpitsoista."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "13 ainesriviä tarkistettu. Käyttömuoto ja määrä täsmäävät valmistusvaiheisiin. Leikkaa perunat ja kesäkurpitsa noin 3 mm:n viipaleiksi. Kuutioi puolet tomaateista ja viipaloi loput. Hienonna sipuli, valkosipuli ja yrtit."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Kypsennysjärjestys ja kypsyyden tai valmiuden tunnusmerkit arvioitu vertailuohjeesta. Kuumenna poreilevaksi ja sulje kansi. Hauduta miedolla lämmöllä 35–45 minuuttia, kunnes veitsi uppoaa perunakerrokseen vaivatta. Anna vetäytyä 5 minuuttia."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Tarkista nyhtökauran ainesosat ja allergeenit pakkauksesta. Käytä ehjiä perunoita ja jätä vihertyneet perunat käyttämättä."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Kuuden annoksen pataan on varattu aikaa viipalointiin, kastikkeeseen, jopa 45 minuutin haudutukseen ja vetäytymiseen."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "valkosipulinkynttä: kuitu puuttuu Finelin tietueesta 393. jauhettua mustapippuria: kuitu, polyolit puuttuu Finelin tietueesta 11177. tuoretta korianteria: kuitu puuttuu Finelin tietueesta 34238."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Reseptille ei ole hyväksyttyä GI- ja GK-sidosta. Lähdeversio on kiinnitetty GK-pending-rekisteriin."
+    }
+  },
+  "supplementary_evidence": {
+    "physical_cook_test": false,
+    "image_path": "kuvat/paaruoat/kesakurpitsa-perunapata.webp",
+    "image_sha256": "99d9c407e847f9a3dd99e005901d2087789687637a7644796f1682c5f72ac218",
+    "image_review": "Haudutettua kesäkurpitsaa, perunaa, tomaattia ja nyhtökauraa kerroksina",
+    "image_method": "Built-in ImageGen",
+    "image_prompt": "Create one original realistic Finnish cookbook photograph of rustic covered-skillet vegetable casserole served with tender layered slices of potato, zucchini and tomato, bits of pulled oat crumble and cooked herbs in a shallow dish, no cheese. Wide landscape hero framing, dish centered with clear edges, natural window light on a warm neutral surface, accurate home-cooked texture. Show only this finished recipe with no text, graphics, branding, people, hands or unlisted garnishes.",
+    "nutrition_calculation_sha256": "44c1ea3db5464fa9e3c4860e9d14e1b85e8d40ef19cdc76babfbcd1cbf6cd3c7"
+  }
+}

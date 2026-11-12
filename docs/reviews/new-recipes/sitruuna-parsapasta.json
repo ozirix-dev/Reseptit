@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "recipe_id": "sitruuna-parsapasta",
+  "source_path": "reseptit/paaruoat/sitruuna-parsapasta.md",
+  "source_sha256": "7ffb454b194eab5be351e136c0c76bf99f2f53acca5d6286e3a23b2d4785f44d",
+  "decision": "approved",
+  "reviewed_by": "Codex – kirjallinen toimituksellinen katselmointi",
+  "reviewed_at": "2026-11-12",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.k-ruoka.fi/reseptit/parsapasta"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/sitruuna-parsapasta.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Vihreä parsa ja sitruuna yhdistetään tuorepastaan. Parsakaali-cashewpastassa käytetään erilaista kasvista, kuivapastaa ja paahtamista."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "10 ainesriviä tarkistettu. Käyttömuoto ja määrä täsmäävät valmistusvaiheisiin. Huuhtele parsat ja poista puumaiset tyvet ennen punnitsemista. Leikkaa varret pitkiksi nauhoiksi kuorimaveitsellä. Halkaise nuput tarvittaessa."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Kypsennysjärjestys ja kypsyyden tai valmiuden tunnusmerkit arvioitu vertailuohjeesta. Sekoita pasta ja parsa keskenään. Lisää sitruunamehu, pestyn sitruunan kuoriraaste, öljy ja pippuri. Jaa lautasille ja lisää parmesaani ja pinjansiemenet."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Sisältää vehnää ja maitoa. Tarkista tuorepastan pakkauksesta, sisältääkö se kananmunaa."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Kolmen hengen pasta valmistuu noin 25 minuutissa, kun pasta ja parsa kypsennetään rinnakkain."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "vettä parsalle: ruokaan jäävää osuutta ei ole vahvistettu. hienoksi raastettua sitruunankuorta: lähde puuttuu. parmesaania raastettuna: lähde puuttuu. jauhettua mustapippuria: kuitu, polyolit puuttuu Finelin tietueesta 11177."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Reseptille ei ole hyväksyttyä GI- ja GK-sidosta. Lähdeversio on kiinnitetty GK-pending-rekisteriin."
+    }
+  },
+  "supplementary_evidence": {
+    "physical_cook_test": false,
+    "image_path": "kuvat/paaruoat/sitruuna-parsapasta.webp",
+    "image_sha256": "166deb6a243a5cef15cd7d8210487d2e8a7c94ca785a7697bf77e7752f96f269",
+    "image_review": "Nauhapastaa, ohuita parsasuikaleita, pinjansiemeniä ja parmesaania",
+    "image_method": "Built-in ImageGen",
+    "image_prompt": "Create one original realistic Finnish cookbook photograph of fettuccine ribbons tossed with thin green asparagus strips, pine nuts and grated parmesan with faint lemon zest. Wide landscape hero framing, dish centered with clear edges, natural window light on a warm neutral surface, accurate home-cooked texture. Show only this finished recipe with no text, graphics, branding, people, hands or unlisted garnishes.",
+    "nutrition_calculation_sha256": "411f235d2e16a9b7acbe47fe112603f294872cb7287fcb1575427c3a68ea01b8"
+  }
+}

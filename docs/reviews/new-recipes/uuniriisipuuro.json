@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "recipe_id": "uuniriisipuuro",
+  "source_path": "reseptit/aamupalat/uuniriisipuuro.md",
+  "source_sha256": "9cffc4dea21badb4af89606209ae1c329eba3cf51a5e91788cde0da9be33deea",
+  "decision": "approved",
+  "reviewed_by": "Codex – kirjallinen toimituksellinen katselmointi",
+  "reviewed_at": "2026-11-12",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.martat.fi/reseptit/uuniriisipuuro/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/uuniriisipuuro.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Uunissa maidossa kypsyvä riisi eroaa liemeen keitetyistä congee- ja aamiaisriisiohjeista."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "4 ainesriviä tarkistettu. Käyttömuoto ja määrä täsmäävät valmistusvaiheisiin. Lämmitä uuni 175 asteeseen. Voitele noin kahden litran uunivuoka voilla."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Kypsennysjärjestys ja kypsyyden tai valmiuden tunnusmerkit arvioitu vertailuohjeesta. Anna puuron vetäytyä 10 minuuttia ennen tarjoilua."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Sisältää maitoa. Jäähdytä yli jäänyt puuro nopeasti matalissa astioissa ja säilytä jääkaapissa."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Neljään kulhoon jaettava annos. Aika sisältää uunin lämmityksen, 90 minuutin kypsennyksen ja vetäytymisen."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "puuroriisiä: polyolit puuttuu Finelin tietueesta 156."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Reseptille ei ole hyväksyttyä GI- ja GK-sidosta. Lähdeversio on kiinnitetty GK-pending-rekisteriin."
+    }
+  },
+  "supplementary_evidence": {
+    "physical_cook_test": false,
+    "image_path": "kuvat/aamupalat/uuniriisipuuro.webp",
+    "image_sha256": "bc1ca4b9f75e0d213cb3fc570d57b9d454ae6286e54c58349c494d1df69e0e0f",
+    "image_review": "Vaalea riisipuuro uunivuoassa, pinnalla kullanruskeita kohtia",
+    "image_method": "Built-in ImageGen",
+    "image_prompt": "Create one original realistic Finnish cookbook photograph of Finnish baked rice pudding, creamy ivory short-grain rice with a few golden browned milk spots and soft grain texture, in a simple baking dish. Wide landscape hero framing, dish centered with clear edges, natural window light on a warm neutral surface, accurate home-cooked texture. Show only this finished recipe with no text, graphics, branding, people, hands or unlisted garnishes.",
+    "nutrition_calculation_sha256": "0ef1a88e198d96edbd5ce02e3b90235006255db76bbdf4774540356c0f55ff92"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "recipe_id": "raparperikiisseli",
+  "source_path": "reseptit/jalkiruoat/raparperikiisseli.md",
+  "source_sha256": "7494ef979397235c4c47318ba3971307a6889880ba5f5031c31f4b947d8d0b58",
+  "decision": "approved",
+  "reviewed_by": "Codex – kirjallinen toimituksellinen katselmointi",
+  "reviewed_at": "2026-11-12",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.martat.fi/reseptit/raparperikiisseli/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/raparperikiisseli.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Raparperin varsi antaa eri raaka-aineen, maun ja rakenteen kuin edellisen erän puolukkakiisseli."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "4 ainesriviä tarkistettu. Käyttömuoto ja määrä täsmäävät valmistusvaiheisiin. Huuhtele raparperin varret, poista mahdolliset lehdet ja leikkaa varret noin sentin paloiksi."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Kypsennysjärjestys ja kypsyyden tai valmiuden tunnusmerkit arvioitu vertailuohjeesta. Palauta kattila levylle. Kun pintaan nousee ensimmäinen kupla, ota kattila pois liedeltä. Jaa kiisseli kulhoihin."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Käytä vain raparperin varsia. Jos tarjoat kiisselin kylmänä, jäähdytä se ja siirrä jääkaappiin."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Noin kahdeksan jälkiruoka-annosta. Valmistusaika on 25 minuuttia. Kylmänä tarjoiluun tarvitaan lisäksi jäähdytysaika."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Kaikille ainesosille on Fineli-tietue ja tarvittava grammamuunnos. Neljä annoskohtaista arvoa on laskettu."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Reseptille ei ole hyväksyttyä GI- ja GK-sidosta. Lähdeversio on kiinnitetty GK-pending-rekisteriin."
+    }
+  },
+  "supplementary_evidence": {
+    "physical_cook_test": false,
+    "image_path": "kuvat/jalkiruoat/raparperikiisseli.webp",
+    "image_sha256": "4efd4fa1a98f524550d5db2d2ebce9981a77039be937c1f4bd0232419f4c670d",
+    "image_review": "Vaaleanpunainen raparperikiisseli lasikulhossa",
+    "image_method": "Built-in ImageGen",
+    "image_prompt": "Create one original realistic Finnish cookbook photograph of Finnish rhubarb kissel, translucent blush-pink softly thickened rhubarb dessert with a few tender pale pink rhubarb pieces in a glass bowl. Wide landscape hero framing, dish centered with clear edges, natural window light on a warm neutral surface, accurate home-cooked texture. Show only this finished recipe with no text, graphics, branding, people, hands or unlisted garnishes.",
+    "nutrition_calculation_sha256": "e9cbf02151e7f4af55176b676cdf183170215116b9924974e466c1061a9cfe89"
+  }
+}

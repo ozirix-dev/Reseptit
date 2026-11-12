@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "recipe_id": "kookos-linssikeitto",
+  "source_path": "reseptit/paaruoat/kookos-linssikeitto.md",
+  "source_sha256": "a70f612d38a9e14860da0fbdefb67aeeaf551fb0d5f037161c3bb74be3195fe9",
+  "decision": "approved",
+  "reviewed_by": "Codex – kirjallinen toimituksellinen katselmointi",
+  "reviewed_at": "2026-11-12",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.k-ruoka.fi/reseptit/linssikeitto"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/kookos-linssikeitto.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Soseutettu kookos-tomaattikeitto erottuu linssimakaronilaatikosta ja curryruoista."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "15 ainesriviä tarkistettu. Käyttömuoto ja määrä täsmäävät valmistusvaiheisiin. Hienonna sipuli ja valkosipuli. Kuullota niitä öljyssä kattilassa noin 4 minuuttia. Lisää curry, juustokumina ja inkivääri ja sekoita vielä hetki."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Kypsennysjärjestys ja kypsyyden tai valmiuden tunnusmerkit arvioitu vertailuohjeesta. Ota kattila liedeltä ja soseuta sauvasekoittimella. Sekoita joukkoon sitruunamehu ja sokeri."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Tarkista curryseoksen allergeenit pakkauksesta. Huuhtele linssit ja kypsennä pehmeiksi. Pidä sauvasekoittimen terä kuuman keiton pinnan alla roiskeiden välttämiseksi."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Neljän keittoannoksen aika kattaa pilkkomisen, kuullotuksen, 20–25 minuutin keiton ja soseutuksen."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "valkosipulinkynttä: kuitu puuttuu Finelin tietueesta 393. curryjauhetta: lähde puuttuu. jauhettua juustokuminaa: lähde puuttuu. jauhettua inkivääriä: hiilihydraatit, kuitu, polyolit, proteiini, rasva puuttuu Finelin tietueesta 11186. jauhettua inkivääriä: Finelistä puuttuu määrän grammamuunnos. kuivattuja punaisia linssejä: polyolit puuttuu Finelin tietueesta 31219. täysrasvaista säilykekookosmaitoa: lähde puuttuu. kuorittuja säilyketomaatteja mehuineen: lähde puuttuu. jauhettua mustapippuria: kuitu, polyolit puuttuu Finelin tietueesta 11177."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Reseptille ei ole hyväksyttyä GI- ja GK-sidosta. Lähdeversio on kiinnitetty GK-pending-rekisteriin."
+    }
+  },
+  "supplementary_evidence": {
+    "physical_cook_test": false,
+    "image_path": "kuvat/paaruoat/kookos-linssikeitto.webp",
+    "image_sha256": "43606b87d421ad3ef91dfb46ee6d17046e08d072814c9dcbb766d6cb836e2543",
+    "image_review": "Tasaiseksi soseutettu oranssi kookos-linssikeitto kulhossa",
+    "image_method": "Built-in ImageGen",
+    "image_prompt": "Create one original realistic Finnish cookbook photograph of a smooth blended rust-orange soup of red lentils, tomato and coconut milk in a simple bowl, silky surface and no topping. Wide landscape hero framing, dish centered with clear edges, natural window light on a warm neutral surface, accurate home-cooked texture. Show only this finished recipe with no text, graphics, branding, people, hands or unlisted garnishes.",
+    "nutrition_calculation_sha256": "edc699a471a2ef8794f8daca64a1f610c423c815135f483c31c703b0153fb382"
+  }
+}
