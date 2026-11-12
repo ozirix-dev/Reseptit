@@ -49,14 +49,19 @@ test("essential UI smoke: locales, search, a recipe, blog and no-JS navigation",
       const expectedVegan = siteContent.recipes.filter(item => item.locale === locale && item.dietTags?.includes("vegan")).length;
       assert.ok(expectedVegan >= 2, locale + " retains the pilot vegan recipes");
       assert.equal(await page.locator(".recipe-card-grid .recipe-card").count(), expectedVegan, locale + " lists only reviewed vegan recipes");
-      const expectedCarnivore = siteContent.recipes.filter(item => item.locale === locale && item.dietTags?.includes("carnivore")).length;
-      assert.equal(await page.locator('#recipe-diet option[value="carnivore"]').count(), expectedCarnivore ? 1 : 0,
+      const expectedCarnivore = siteContent.recipes
+        .filter(item => item.locale === locale && item.dietTags?.includes("carnivore"))
+        .map(item => new URL(base + item.routePath).pathname)
+        .sort();
+      assert.equal(await page.locator('#recipe-diet option[value="carnivore"]').count(), expectedCarnivore.length ? 1 : 0,
         locale + " only advertises published, source-reviewed carnivore recipes");
-      if (locale === "fi") {
-        assert.equal(expectedCarnivore,10,"exactly the ten reviewed FI carnivore recipes are published");
+      if (locale === "fi") assert.ok(expectedCarnivore.length > 0, "FI retains reviewed carnivore recipes");
+      if (expectedCarnivore.length > 0) {
         await page.getByLabel(labels.dietFilter).selectOption("carnivore");
         await page.waitForFunction(() => new URL(location.href).searchParams.get("diet") === "carnivore");
-        assert.equal(await page.locator(".recipe-card-grid .recipe-card").count(),expectedCarnivore);
+        const actualRoutes = await page.locator(".recipe-card-grid .recipe-card__link")
+          .evaluateAll(links => links.map(link => (link as HTMLAnchorElement).pathname).sort());
+        assert.deepEqual(actualRoutes, expectedCarnivore, locale + " lists exactly the reviewed public routes");
         await page.getByLabel(labels.dietFilter).selectOption("vegan");
         await page.waitForFunction(() => new URL(location.href).searchParams.get("diet") === "vegan");
       }

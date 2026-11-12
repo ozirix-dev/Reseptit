@@ -1,35 +1,10 @@
 import { randomUUID } from "node:crypto";
-import { appendFileSync } from "node:fs";
+import { appendFileSync, existsSync } from "node:fs";
 import { execFileSync } from "node:child_process";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
-const allUnitTests = [
-  "tests/servings.test.ts",
-  "tests/published-content.test.ts",
-  "tests/markdown-safety.test.ts",
-  "tests/recipe-schema.test.ts",
-  "tests/recipe-search.test.ts",
-  "tests/route-content.test.ts",
-  "tests/nutrition-model.test.ts",
-  "tests/nutrition-evidence.test.ts",
-  "tests/glycemic-load.test.ts",
-  "tests/glycemic-coverage-inventory.test.ts",
-];
-
-const generatedContentTests = new Set([
-  "tests/published-content.test.ts",
-  "tests/route-content.test.ts",
-  "tests/recipe-schema.test.ts",
-  "tests/recipe-search.test.ts",
-  "tests/gk80-release6.test.ts",
-  "tests/gk80-editorial-display.test.ts",
-  "tests/a8-editorial-display.test.ts",
-  "tests/c20-fi-editorial-display.test.ts",
-  "tests/d30-fi-mint-milk-display.test.ts",
-  "tests/fi-breakfast-quality-display.test.ts",
-  "tests/gk80-editorial-translation-release.test.ts",
-]);
+import { browserSuites, previewBrowserTest } from "./run-browser-suites.mjs";
 
 const glycemicDataFiles = new Set([
   "docs/nutrition/glycemic-index-records.json",
@@ -93,6 +68,7 @@ function fullPlan(paths) {
     browserSuites: ["smoke", "ui", "routes", "images"],
     runBuild: true,
     runContentSync: false,
+    runTypecheck: false,
     needsNode: true,
     unitTests: ["*"],
     publish: false,
@@ -117,6 +93,7 @@ function classifyPaths(paths, { forceFull = false, classificationFailed = false 
     browserSuites: new Set(),
     runBuild: false,
     runContentSync: false,
+    runTypecheck: false,
     needsNode: false,
     unitTests: new Set(),
     publish: false,
@@ -175,6 +152,7 @@ function classifyPaths(paths, { forceFull = false, classificationFailed = false 
       plan.needsNode = true;
       continue;
     }
+    if (file.startsWith("meta/kaannokset/")) return fallback();
     if (file.startsWith("kuvat/")) {
       plan.runImages = true;
       plan.needsNode = true;
@@ -187,18 +165,12 @@ function classifyPaths(paths, { forceFull = false, classificationFailed = false 
     }
     if (file.startsWith("site/tests/")) {
       const testPath = file.slice("site/".length);
-      const suiteByFile = new Map([
-        ["tests/ci-essential.browser.test.ts", "smoke"],
-        ["tests/browser-smoke.test.ts", "ui"],
-        ["tests/navigation.browser.test.ts", "ui"],
-        ["tests/content-layout.browser.test.ts", "ui"],
-        ["tests/route-loading.browser.test.ts", "routes"],
-        ["tests/responsive-images.browser.test.ts", "images"],
-        // The preview-specific workflow runs its own feature-flagged browser test.
-        ["tests/recipavo-preview.browser.test.ts", "smoke"],
-      ]);
-      if (suiteByFile.has(testPath)) {
-        addBrowserSuite(plan, suiteByFile.get(testPath));
+      const suite = Object.keys(browserSuites).find(name => browserSuites[name].includes(testPath));
+      if (suite) {
+        addBrowserSuite(plan, suite);
+      } else if (testPath === previewBrowserTest) {
+        // The dedicated preview workflow runs this feature-flagged test.
+        addBrowserSuite(plan, "smoke");
       } else if (/\.browser\.test\.ts$/.test(file)) {
         return fallback();
       } else if (testPath === "tests/static-output.test.ts" || testPath === "tests/seo-audit.test.ts") {
@@ -209,7 +181,7 @@ function classifyPaths(paths, { forceFull = false, classificationFailed = false 
         if (testPath === "tests/recipe-search.test.ts") {
           plan.runBuild = true;
           plan.runStatic = true;
-        } else if (generatedContentTests.has(testPath)) plan.runContentSync = true;
+        }
       } else {
         return fallback();
       }
@@ -293,6 +265,8 @@ function classifyPaths(paths, { forceFull = false, classificationFailed = false 
   }
 
   if (plan.runBuild) plan.runStatic = true;
+  plan.runTypecheck = !plan.runBuild && normalized.some(file => /^site\/(?:src|scripts|tests)\/.+\.(?:[cm]?ts|tsx)$/.test(file));
+  plan.runContentSync = plan.runTypecheck;
   if (plan.runContent || plan.runNutrition || plan.runGlycemic || plan.runTranslationReview ||
       plan.runImages || plan.runStatic || plan.runBrowser || plan.unitTests.size > 0) {
     plan.needsNode = true;
@@ -314,7 +288,11 @@ function applyEventPolicy(plan, eventName, { deploy = false } = {}) {
     plan.needsNode = true;
     plan.publish = true;
   }
-  if (plan.runBuild) plan.runStatic = true;
+  if (plan.runBuild) {
+    plan.runStatic = true;
+    plan.runTypecheck = false;
+    plan.runContentSync = false;
+  }
   return plan;
 }
 
@@ -325,8 +303,8 @@ function getChangedPaths() {
     base = execFileSync("git", ["rev-parse", `${head}^`], { encoding: "utf8" }).trim();
   }
   if (!base || /^0+$/.test(base)) throw new Error("Base revision is unavailable.");
-  return execFileSync("git", ["diff", "--name-only", "--no-renames", "--diff-filter=ACDMRT", base, head], { encoding: "utf8" })
-    .split(/\r?\n/).map((line) => line.trim()).filter(Boolean);
+  return execFileSync("git", ["diff", "--name-only", "-z", "--no-renames", "--diff-filter=ACDMRT", base, head], { encoding: "utf8" })
+    .split("\0").filter(Boolean);
 }
 
 function writeGithubOutputs(plan, paths, classificationError) {
@@ -349,6 +327,7 @@ function writeGithubOutputs(plan, paths, classificationError) {
         runBuild: "run_build",
         needsNode: "needs_node",
         runContentSync: "run_content_sync",
+        runTypecheck: "run_typecheck",
         publish: "publish",
       }[key]}=${String(value)}`),
     `unit_tests=${Array.isArray(plan.unitTests) ? plan.unitTests.join(" ") : "*"}`,
@@ -368,8 +347,10 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
     classificationError = error instanceof Error ? error.message : String(error);
     paths = [];
   }
+  const deletedTest = !process.env.CHANGED_PATHS_JSON && paths.some(file =>
+    /^site\/tests\/.+\.test\.ts$/.test(file) && !existsSync(file));
   const plan = applyEventPolicy(classifyPaths(paths, {
-    forceFull: process.env.FORCE_FULL === "true",
+    forceFull: process.env.FORCE_FULL === "true" || deletedTest,
     classificationFailed: Boolean(classificationError),
   }), process.env.EVENT_NAME, { deploy: process.env.DEPLOY === "true" });
   writeGithubOutputs(plan, paths, classificationError);
@@ -377,4 +358,4 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
   console.log(JSON.stringify({ ...plan, unitTests: Array.isArray(plan.unitTests) ? plan.unitTests : ["all unit tests"], changedPaths: paths.length }, null, 2));
 }
 
-export { applyEventPolicy, classifyPaths, allUnitTests };
+export { applyEventPolicy, classifyPaths };
