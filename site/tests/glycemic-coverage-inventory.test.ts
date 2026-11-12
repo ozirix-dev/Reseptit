@@ -6,6 +6,7 @@ import test from "node:test";
 
 import {
   assertCoverageConsistency,
+  assertPendingGkSources,
   buildBaselineSnapshot,
   buildCurrentCoverageInventory,
   type CoverageResult,
@@ -25,6 +26,24 @@ test("current inventory consistency requires every recipe exactly once", () => {
   assert.doesNotThrow(() => assertCoverageConsistency([sampleResult("a"), sampleResult("b")], ["a", "b"]));
   assert.throws(() => assertCoverageConsistency([sampleResult("a"), sampleResult("a")], ["a", "b"]), /duplicate recipe IDs/);
   assert.throws(() => assertCoverageConsistency([sampleResult("a")], ["a", "b"]), /Expected 2 current GK results/);
+});
+
+test("GK pending accepts documented withheld macros and rejects missing, conflicting or public values", () => {
+  const pending = {recipeId:"new-fi", status:"INSUFFICIENT SOURCE DATA" as const,
+    glycemicLoadPerServing:null, sourceBlobSha:"a".repeat(40)};
+  const reviewed = {recipe_id:pending.recipeId, status:"INSUFFICIENT SOURCE DATA",
+    calculationEvidence:"docs/nutrition/calculations/new-fi.json", evidenceErrors:[],
+    values:{carbs_net_per_serving_g:null, carbs_total_per_serving_g:null, protein_per_serving_g:null, fat_per_serving_g:null}};
+  assert.deepEqual([...assertPendingGkSources([pending], [reviewed])], [pending.recipeId]);
+  for (const rejected of [
+    {...reviewed, calculationEvidence:null},
+    {...reviewed, evidenceErrors:["mismatch"]},
+    {...reviewed, values:{...reviewed.values, fat_per_serving_g:0}},
+    {...reviewed, status:"CONFLICT REQUIRES REVIEW"},
+  ]) assert.throws(() => assertPendingGkSources([pending], [rejected]), /disagree/);
+  assert.throws(() => assertPendingGkSources([pending], []), /disagree/);
+  assert.throws(() => assertPendingGkSources([pending, {...pending, recipeId:"another-fi"}], [reviewed, reviewed]), /disagree/);
+  assert.throws(() => assertPendingGkSources([{...pending, glycemicLoadPerServing:0}], [reviewed]), /NULL cases/);
 });
 
 test("baseline snapshots capture the approved source revision and all recipe states", () => {

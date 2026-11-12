@@ -37,46 +37,56 @@ test("growing live coverage preserves the complete sealed GK projection", () => 
   assert.throws(() => frozenOriginalRows([history[0], ...history], recipeId), /pinned recipe exactly once/);
 });
 
-test("a post-baseline publication must pass the same SHA-bound editorial gate", () => {
-  const root = mkdtempSync(path.join(tmpdir(), "recipe-baseline-release-"));
-  const git = (...args: string[]) => execFileSync("git", args, { cwd: root, encoding: "utf8" }).trim();
-  const added = "reseptit/aamupalat/history-scope-fixture.md";
-  const source = readFileSync(new URL("../../reseptit/raakileet/indonesialainen-bakwan-jagung-punnittu-v2.md", import.meta.url), "utf8")
-    .replaceAll("indonesialainen-bakwan-jagung-punnittu-v2", "history-scope-fixture")
-    .replace("status: draft", "status: published");
-  try {
-    git("init", "--quiet");
-    git("-c", "user.email=fixture@example.test", "-c", "user.name=Fixture", "commit", "--quiet", "--allow-empty", "-m", "Historical fixture");
-    const baseline = git("rev-parse", "HEAD");
-    mkdirSync(path.dirname(path.join(root, added)), { recursive: true });
-    writeFileSync(path.join(root, added), source);
-    git("add", "--", added);
-    assert.throws(() => assertRecipeBaseline(root, baseline), /history-scope-fixture/);
+for (const historicalStatus of [null, "draft", "published"] as const) {
+  test("new publication gate with historical status " + historicalStatus, () => {
+    const root = mkdtempSync(path.join(tmpdir(), "recipe-baseline-release-"));
+    const git = (...args: string[]) => execFileSync("git", args, { cwd: root, encoding: "utf8" }).trim();
+    const added = "reseptit/aamupalat/history-scope-fixture.md";
+    const source = readFileSync(new URL("../../reseptit/raakileet/indonesialainen-bakwan-jagung-punnittu-v2.md", import.meta.url), "utf8")
+      .replaceAll("indonesialainen-bakwan-jagung-punnittu-v2", "history-scope-fixture")
+      .replace("status: draft", "status: published");
+    try {
+      git("init", "--quiet");
+      mkdirSync(path.dirname(path.join(root, added)), { recursive: true });
+      if (historicalStatus) {
+        writeFileSync(path.join(root, added), source.replace("status: published", "status: " + historicalStatus) + "\nHistorical source.\n");
+        git("add", "--", added);
+      }
+      git("-c", "user.email=fixture@example.test", "-c", "user.name=Fixture", "commit", "--quiet", "--allow-empty", "-m", "Historical fixture");
+      const baseline = git("rev-parse", "HEAD");
+      writeFileSync(path.join(root, added), source);
+      git("add", "--", added);
+      assert.throws(() => assertRecipeBaseline(root, baseline), /history-scope-fixture/);
 
-    const gate = path.join(root, "site/scripts/new-recipe-preflight.mjs");
-    mkdirSync(path.dirname(gate), { recursive: true });
-    copyFileSync(new URL("../scripts/new-recipe-preflight.mjs", import.meta.url), gate);
-    const receipt = JSON.parse(execFileSync(process.execPath, [gate, "--template=" + added], { encoding: "utf8" }));
-    Object.assign(receipt, {
-      decision: "approved",
-      reviewed_by: "Editorial fixture",
-      reviewed_at: "2026-11-12",
-      origin: { kind: "original" },
-      nutrition_evidence: "A synthetic evidence reference for this test",
-    });
-    for (const check of Object.values(receipt.checks) as Array<{status: string; notes: string}>) {
-      check.status = "pass";
-      check.notes = "The synthetic recipe's individual review passes.";
+      const gate = path.join(root, "site/scripts/new-recipe-preflight.mjs");
+      mkdirSync(path.dirname(gate), { recursive: true });
+      copyFileSync(new URL("../scripts/new-recipe-preflight.mjs", import.meta.url), gate);
+      const receipt = JSON.parse(execFileSync(process.execPath, [gate, "--template=" + added], { encoding: "utf8" }));
+      Object.assign(receipt, {
+        decision: "approved",
+        reviewed_by: "Editorial fixture",
+        reviewed_at: "2026-11-12",
+        origin: { kind: "original" },
+        nutrition_evidence: "A synthetic evidence reference for this test",
+      });
+      for (const check of Object.values(receipt.checks) as Array<{status: string; notes: string}>) {
+        check.status = "pass";
+        check.notes = "The synthetic recipe's individual review passes.";
+      }
+      receipt.checks.glycemic.status = "unavailable";
+      const receipts = path.join(root, "docs/reviews/new-recipes");
+      mkdirSync(receipts, { recursive: true });
+      writeFileSync(path.join(receipts, "history-scope-fixture.json"), JSON.stringify(receipt));
+
+      if (historicalStatus === "published") {
+        assert.throws(() => assertRecipeBaseline(root, baseline), /history-scope-fixture/);
+        return;
+      }
+      assert.doesNotThrow(() => assertRecipeBaseline(root, baseline));
+      writeFileSync(path.join(root, added), source + "\nUnreviewed preparation change.\n");
+      assert.throws(() => assertRecipeBaseline(root, baseline), /source_sha256 stale/);
+    } finally {
+      rmSync(root, { recursive: true, force: true });
     }
-    receipt.checks.glycemic.status = "unavailable";
-    const receipts = path.join(root, "docs/reviews/new-recipes");
-    mkdirSync(receipts, { recursive: true });
-    writeFileSync(path.join(receipts, "history-scope-fixture.json"), JSON.stringify(receipt));
-
-    assert.doesNotThrow(() => assertRecipeBaseline(root, baseline));
-    writeFileSync(path.join(root, added), source + "\nUnreviewed preparation change.\n");
-    assert.throws(() => assertRecipeBaseline(root, baseline), /source_sha256 stale/);
-  } finally {
-    rmSync(root, { recursive: true, force: true });
-  }
-});
+  });
+}

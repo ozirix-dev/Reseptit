@@ -1,0 +1,282 @@
+{
+  "recipeId": "kaurakeksit",
+  "sourceHash": "cca8d4dc8e1edf37408cd2d26528e0458c0c5fd1193201d9a0241bfed38b9082",
+  "calculatedAt": "2026-11-12",
+  "batchId": "batch-506",
+  "servings": 30,
+  "scope": "Ingredient accounting per one of 30 oat crisps. Pinned Fineli raw ingredients and portion conversions, no lab result or measured yield.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "publicationStatus": "WITHHELD_SOURCE_INCOMPLETE",
+  "withholdingReason": "The Fineli oat and baking powder rows do not verify polyols. Do not turn missing composition into zero or publish a partial macro package.",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "item": "voita",
+      "record": {
+        "id": "fineli-500-release-20",
+        "name": "VOI",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/500",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "butter",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0.8,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0.8,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 1.19,
+          "fat": 81.3
+        }
+      },
+      "state": "butter",
+      "matchEvidence": "Named generic ingredient matched to the pinned THL Fineli Release 20 composition; no manufacturer-specific result claimed.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Added ingredient mass; egg weighed without shell.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Ingredient accounting assumes all edible dough is portioned; no measured cooked weight or retention."
+    },
+    {
+      "amount": 170,
+      "unit": "g",
+      "item": "sokeria",
+      "record": {
+        "id": "fineli-1-release-20",
+        "name": "SOKERI",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/1",
+        "retrievedAt": "2026-10-25",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "granulated sugar",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 99.9,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Rel20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 99.9,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 0
+        }
+      },
+      "state": "granulated sugar",
+      "matchEvidence": "Named generic ingredient matched to the pinned THL Fineli Release 20 composition; no manufacturer-specific result claimed.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Added ingredient mass; egg weighed without shell.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Ingredient accounting assumes all edible dough is portioned; no measured cooked weight or retention."
+    },
+    {
+      "amount": 100,
+      "unit": "g",
+      "item": "kananmunaa ilman kuorta",
+      "record": {
+        "id": "fineli-858-release-20",
+        "name": "KANANMUNA, KUORETON",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/858",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "raw edible egg, shell removed",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0.3,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0.3,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 12.61,
+          "fat": 9.24
+        }
+      },
+      "state": "raw edible egg, shell removed",
+      "matchEvidence": "Named generic ingredient matched to the pinned THL Fineli Release 20 composition; no manufacturer-specific result claimed.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Added ingredient mass; egg weighed without shell.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Ingredient accounting assumes all edible dough is portioned; no measured cooked weight or retention."
+    },
+    {
+      "amount": 140,
+      "unit": "g",
+      "item": "kaurahiutaleita",
+      "record": {
+        "id": "fineli-153-release-20",
+        "name": "KAURAHIUTALE",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/153",
+        "retrievedAt": "2026-10-25",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "dry rolled oats",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 59.99,
+          "FIBT": 5.7,
+          "POLYL": null
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": false,
+        "polyolsEvidence": "Fineli Rel20 does not report a polyol value for this food.",
+        "per100g": {
+          "carbohydrate": 59.99,
+          "fibre": 5.7,
+          "polyols": null,
+          "protein": 13.6,
+          "fat": 7.24
+        },
+        "portionMassG": {
+          "DL": 40,
+          "RKL": 6
+        }
+      },
+      "state": "dry rolled oats",
+      "matchEvidence": "Named generic ingredient matched to the pinned THL Fineli Release 20 composition; no manufacturer-specific result claimed.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Added ingredient mass; egg weighed without shell.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Ingredient accounting assumes all edible dough is portioned; no measured cooked weight or retention."
+    },
+    {
+      "amount": 1,
+      "unit": "rkl",
+      "item": "puolikarkeita vehnäjauhoja",
+      "record": {
+        "id": "fineli-110-release-20",
+        "name": "JAUHO, VEHNÄJAUHO, PUOLIKARKEA",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/110",
+        "retrievedAt": "2026-10-25",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "semi-coarse wheat flour",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 73.998,
+          "FIBT": 3.5,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 73.998,
+          "fibre": 3.5,
+          "polyols": 0,
+          "protein": 11.6,
+          "fat": 1.56
+        }
+      },
+      "state": "semi-coarse wheat flour",
+      "matchEvidence": "Named generic ingredient matched to the pinned THL Fineli Release 20 composition; no manufacturer-specific result claimed.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Added ingredient mass; egg weighed without shell.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Ingredient accounting assumes all edible dough is portioned; no measured cooked weight or retention.",
+      "gramsPerUnit": 10,
+      "conversionEvidence": "THL Fineli Release 20 portion_mass_g RKL for the same food."
+    },
+    {
+      "amount": 1,
+      "unit": "tl",
+      "item": "leivinjauhetta",
+      "record": {
+        "id": "fineli-74-2026-10-25",
+        "name": "LEIVINJAUHE",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/74?c=2034&c2=2168",
+        "retrievedAt": "2026-10-25",
+        "licence": "THL, Fineli Rel20, CC BY 4.0",
+        "state": "DRIE",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 37.8,
+          "fibre": 0.5,
+          "polyols": null,
+          "protein": 5.2,
+          "fat": 0
+        },
+        "polyolsSourceVerified": false
+      },
+      "state": "DRIE",
+      "matchEvidence": "Named generic ingredient matched to the pinned THL Fineli Release 20 composition; no manufacturer-specific result claimed.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Added ingredient mass; egg weighed without shell.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Ingredient accounting assumes all edible dough is portioned; no measured cooked weight or retention.",
+      "gramsPerUnit": 5,
+      "conversionEvidence": "THL Fineli Release 20 portion_mass_g TL for the same food."
+    },
+    {
+      "amount": 1,
+      "unit": "tl",
+      "item": "vanilliinisokeria",
+      "record": {
+        "id": "fineli-11188-release-20",
+        "name": "VANILLIINISOKERI",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11188",
+        "retrievedAt": "2026-10-25",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "vanillin sugar, dry",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 99.9,
+          "protein": 0.0,
+          "fat": 0.0,
+          "fibre": 0.0,
+          "polyols": 0.0
+        },
+        "polyolsSourceVerified": true
+      },
+      "state": "vanillin sugar, dry",
+      "matchEvidence": "Named generic ingredient matched to the pinned THL Fineli Release 20 composition; no manufacturer-specific result claimed.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Added ingredient mass; egg weighed without shell.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Ingredient accounting assumes all edible dough is portioned; no measured cooked weight or retention.",
+      "gramsPerUnit": 4,
+      "conversionEvidence": "THL Fineli Release 20 portion_mass_g TL for the same food."
+    }
+  ]
+}

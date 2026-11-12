@@ -5,7 +5,7 @@ import type { GlycemicLoadRecipeInput } from "./glycemic-load-model";
 import { glycemicLoadInputHash } from "./glycemic-load-recipe-binding";
 import { writeImmutableBaselineFile } from "./glycemic-coverage-baseline-file";
 import { parseMarkdown } from "../src/content/markdown";
-import { assertCoverageConsistency, buildBaselineSnapshot, buildCurrentCoverageInventory, type CoverageBaseline, type CoverageResult, type CurrentCoverageInput } from "./glycemic-coverage-inventory-model";
+import { assertCoverageConsistency, assertPendingGkSources, buildBaselineSnapshot, buildCurrentCoverageInventory, type CoverageBaseline, type CoverageResult, type CurrentCoverageInput, type PendingGkRow } from "./glycemic-coverage-inventory-model";
 
 type JsonRecord = Record<string, unknown>;
 type PilotReport = JsonRecord & {
@@ -17,11 +17,12 @@ type PilotReport = JsonRecord & {
   calculationEvidenceHashes: Record<string, string>;
   calculationInputs: GlycemicLoadRecipeInput[];
   autoIncludedRecipeIds: string[];
-  newPublicGkPendingSources?: Array<{recipeId: string; status: "INSUFFICIENT SOURCE DATA"; glycemicLoadPerServing: null; sourceBlobSha: string}>;
+  newPublicGkPendingSources?: PendingGkRow[];
 };
 type NutritionReport = JsonRecord & {
   counts: Record<string, number>;
-  inventory: Array<{ recipe_id: string; status: string; source_path: string; servings: number; ingredients: Array<Record<string, unknown>> }>;
+  inventory: Array<{ recipe_id: string; status: string; source_path: string; servings: number; ingredients: Array<Record<string, unknown>>;
+    calculationEvidence?: string | null; evidenceErrors?: string[]; values?: Record<string, number | null> }>;
 };
 type InputReport = { recipes: GlycemicLoadRecipeInput[] };
 type GICatalog = { records: Array<{ qualityTier: string }> };
@@ -69,16 +70,7 @@ const [pilot, nutrition, inputs, giCatalog, historical, reviewStart] = await Pro
   readJson<ReviewStartSnapshot>("docs/nutrition/glycemic-coverage-batch-2a-review-start.json"),
 ]);
 const separatelyPending = pilot.newPublicGkPendingSources ?? [];
-const pendingIds = new Set(separatelyPending.map((row) => row.recipeId));
-if (pendingIds.size !== separatelyPending.length ||
-    separatelyPending.some((row) => row.status !== "INSUFFICIENT SOURCE DATA" || row.glycemicLoadPerServing !== null ||
-      !/^[a-f0-9]{40}$/.test(row.sourceBlobSha))) {
-  throw new Error("Separate new-public GK pending sources must be distinct, SHA-pinned NULL cases.");
-}
-const pendingNutritionRows = nutrition.inventory.filter((row) => pendingIds.has(row.recipe_id));
-if (pendingNutritionRows.length !== pendingIds.size || pendingNutritionRows.some((row) => row.status !== "ESTIMATE WITH EVIDENCE")) {
-  throw new Error("New-public GK pending records disagree with real published nutrition sources.");
-}
+const pendingIds = assertPendingGkSources(separatelyPending, nutrition.inventory);
 // Historical GK inputs and results remain exact. Newly published recipes with
 // withheld GK are recorded separately.
 const legacyNutritionRows = nutrition.inventory.filter((row) => !pendingIds.has(row.recipe_id));
