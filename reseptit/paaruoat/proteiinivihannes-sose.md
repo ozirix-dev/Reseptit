@@ -8,7 +8,7 @@ status: "published"
 servings: 4
 time_total_min: 75
 difficulty: "helppo"
-main_ingredient: ["kukkakaali","peruna","sian jauheliha","raejuusto"]
+main_ingredient: ["kukkakaali","peruna","porsaan jauheliha","raejuusto"]
 cooking_method: ["keittäminen","uunissa paistaminen"]
 tags: []
 carbs_net_per_serving_g: 23.7
