@@ -21,7 +21,17 @@ test('nine new results preserve all147 prior numbers and every other full result
 test('all36 exact locale versions bind complete recalculated macros and fresh source/evidence',()=>{
  const bindings=json('docs/nutrition/glycemic-load-recipe-bindings.json'),foods=json('docs/nutrition/food-records.json'),gis=json('docs/nutrition/glycemic-index-records.json').records;
  for(const e of pack.recipes){const text=readFileSync(new URL(e.originalPublishedPath,root),'utf8'),fi=parseMarkdown(text)!.data as any,calc=json('docs/nutrition/calculations/'+e.recipeId+'.json');assert.equal(fileHash(e.originalPublishedPath),e.sourceLfSha256);assert.equal(fileHash('docs/nutrition/calculations/'+e.recipeId+'.json'),e.macroEvidenceSha256);assert.equal(calc.publicationStatus,undefined);
- const translations=['en','sv','th'].map(locale=>{const p='kaannokset/'+locale+'/'+e.originalPublishedPath.replace('reseptit/',''),data=parseMarkdown(readFileSync(new URL(p,root),'utf8'))!.data as any;assert.equal(fileHash(p),e.localeLfSha256[locale]);assert.equal(fileHash(p),bindings.exactRecipeText[e.recipeId].locales[locale].sha256);assert.deepEqual(data.ingredients.map((i:any)=>[i.amount,i.unit]),fi.ingredients.map((i:any)=>[i.amount,i.unit]));return {path:p,data};});
+ const translations=['en','sv','th'].map(locale=>{
+  const p='kaannokset/'+locale+'/'+e.originalPublishedPath.replace('reseptit/','');
+  const current=readFileSync(new URL(p,root),'utf8').replaceAll('\r\n','\n');
+  const snapshot=recipeTextForApprovedSnapshot(p,current);
+  assert.equal(hash(snapshot),e.localeLfSha256[locale],p);
+  assert.equal(hash(snapshot),bindings.exactRecipeText[e.recipeId].locales[locale].sha256,p);
+  const data=parseMarkdown(current)!.data as any;
+  assert.deepEqual(data.ingredients,parseMarkdown(snapshot)!.data.ingredients,p);
+  assert.deepEqual(data.ingredients.map((i:any)=>[i.amount,i.unit]),fi.ingredients.map((i:any)=>[i.amount,i.unit]));
+  return {path:p,data};
+ });
  const verified=verifyNutritionEvidence(fi,calc,translations);assert.deepEqual(verified.errors,[],e.recipeId);assert.equal(verified.status,'ESTIMATE WITH EVIDENCE');const computed=calculateGlycemicLoad(e.newInput,foods,gis);assert.equal(computed.status,'CALCULATED');assert.equal(computed.glycemicLoadPerServing,e.gk);assert.equal(recipeBindingHash(text,json('docs/nutrition/glycemic-load-recipe-aliases.json').aliases),bindings.recipes[e.recipeId]);assert.equal(glycemicLoadInputHash(e.newInput),bindings.calculationInputs[e.recipeId]);assert.equal(glycemicLoadEvidenceHash(e.newInput,foods,gis),bindings.calculationEvidence[e.recipeId]);
  for(const key of ['carbs_net_per_serving_g','carbs_total_per_serving_g','protein_per_serving_g','fat_per_serving_g'])assert.equal(fi[key],e.newMacros[key]);
  for(const locale of ['fi','en','sv','th']){const generated=currentSiteContent.recipes.find(r=>r.recipeId===e.recipeId&&r.locale===locale);assert.ok(generated);assert.deepEqual([generated.nutrition.carbsNetG,generated.nutrition.carbsTotalG,generated.nutrition.proteinG,generated.nutrition.fatG],[e.newMacros.carbs_net_per_serving_g,e.newMacros.carbs_total_per_serving_g,e.newMacros.protein_per_serving_g,e.newMacros.fat_per_serving_g]);}
