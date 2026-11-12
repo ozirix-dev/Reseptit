@@ -1,3 +1,4 @@
+import { manakishStudyBinding } from '../src/features/recipes/gk-estimate-scope';
 import { frozenOriginalRows } from "./original-content-transition";
 import {restoreBeforeAfcdCorrection,afcdSourceBeforeCorrection} from './restore-pre-ehold';
 import {isP1CoconutHold,assertP1CoconutHold,assertOnlyP1CoconutInputChanges} from './p1-coconut-hold-guard';
@@ -52,8 +53,8 @@ test('the four A inputs and legacy coverage remain intact alongside authorized G
    report.results.filter((r:{recipeId:string})=>!isPublicRecipeQuarantined(r.recipeId)),
    gkOnlyVariants,
  ));
- assert.ok(coverage.studyServingRecipeIds.includes('lahi-ita-manakish-zaatar'));
- assert.ok(!coverage.numericRecipeIds.includes('lahi-ita-manakish-zaatar'), "manakish study bread is excluded from home-recipe coverage");
+ assert.ok(coverage.studyServingRecipeIds.includes(manakishStudyBinding.recipeId));
+ assert.ok(!coverage.numericRecipeIds.includes(manakishStudyBinding.recipeId), "manakish study bread is excluded from home-recipe coverage");
  assert.deepEqual(report.coverageViews,{originalRecipe:{total:report.results.length,numeric:originalNumeric,missing:report.results.length-originalNumeric},
   atLeastOneExactVersion:{total:report.results.length,numeric:coverage.numericRecipes,missing:coverage.missing,additionalApprovedVersions:coverage.additionalA+coverage.additionalB},
   separateVariants:{numeric:coverage.variantNumeric,recipeIds:coverage.variantRecipeIds},
