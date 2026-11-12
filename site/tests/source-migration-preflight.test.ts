@@ -20,7 +20,7 @@ const pilotIds = [
   "intialainen-mannasuurimoupma",
 ];
 
-test("issue404 10-recipe pilot preflight predicts the five recorded blocks before CI", async () => {
+test("issue404 10-recipe pilot preflight detects the original blocks and the newly published ful medames translations before CI", async () => {
   const inputs = await loadSourceMigrationInputs(root, pilotIds);
   const actual = classifyCanonicalMethodMigration(pilotIds, inputs);
   assert.equal(actual.length, 10);
@@ -28,10 +28,13 @@ test("issue404 10-recipe pilot preflight predicts the five recorded blocks befor
     "indialainen-poha-maapahkinoilla",
     "malesialainen-kaya-paahtoleipa",
     "valimerellinen-halloumi-tomaattileipa",
+    "lahi-ita-ful-medames",
     "vietnamilainen-pho-ga-aamuksi",
     "intialainen-mannasuurimoupma",
   ]);
-  assert.equal(actual.filter(x => x.classification === "CANDIDATE_REQUIRES_REVIEW").length, 5);
+  assert.equal(actual.filter(x => x.classification === "CANDIDATE_REQUIRES_REVIEW").length, 4);
+  assert.deepEqual(actual.find(x => x.recipeId === "lahi-ita-ful-medames")?.blockers,
+    ["PUBLISHED_TRANSLATION_SEMANTIC_REVIEW_REQUIRED:en,sv,th"]);
   assert.ok(actual[0].blockers.some(x => x.startsWith("PUBLISHED_TRANSLATION_SEMANTIC_REVIEW_REQUIRED:")));
   assert.ok(actual[0].blockers.includes("GK149_FULL_SOURCE_SHA_REVIEW_REQUIRED"));
   for (const candidate of actual.filter(x => x.classification === "CANDIDATE_REQUIRES_REVIEW"))

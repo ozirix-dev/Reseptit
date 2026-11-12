@@ -155,6 +155,13 @@ export function knownTermErrors(source: Frontmatter, target: Frontmatter, locale
   return [...new Set(issues)];
 }
 
+export function projectTranslationAuditSource(file: string, raw: string): string {
+  if (file === "reseptit/aamupalat/lahi-ita-manakish-zaatarilla.md" ||
+      file === "reseptit/aamupalat/valimerellinen-halloumi-tomaattileipa.md")
+    return projectC13FiDisplay(file, raw);
+  return projectBreakfastFiQualityDisplay(file, raw);
+}
+
 export async function auditTranslations(recipeIds?: string[]): Promise<TranslationAuditResult> {
   const filter = recipeIds ? new Set(recipeIds) : undefined;
   const sourcePaths = (await Promise.all(sourceCategories.map((category) => markdownFiles(path.join(repoRoot, "reseptit", category))))).flat();
@@ -168,8 +175,7 @@ export async function auditTranslations(recipeIds?: string[]): Promise<Translati
       source.path === "reseptit/aamupalat/valimerellinen-halloumi-tomaattileipa.md";
     if (!useC13Display && !breakfastFiQualityPaths.includes(source.path)) return source;
     const raw = await readFile(path.join(repoRoot, source.path), "utf8");
-    const project = useC13Display ? projectC13FiDisplay : projectBreakfastFiQualityDisplay;
-    const projected = parseMarkdown(project(source.path, raw));
+    const projected = parseMarkdown(projectTranslationAuditSource(source.path, raw));
     if (!projected) throw Error("FI_BREAKFAST_AUDIT_NO_FRONTMATTER: " + source.path);
     const displayed = recipeFrontmatterSchema.parse(projected.data);
     const original = source.data;

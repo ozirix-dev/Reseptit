@@ -13,12 +13,13 @@ import {historicalBreakfastRecipe, reviewedBreakfastPaths} from '../scripts/gk10
 import {verifyReleaseBundle} from '../scripts/gk100-approval-release';
 import {historicalFarinataForApprovedPanVersion} from '../scripts/gk100-farinata-sealed-source';
 import {historicalRendangForApprovedVersion} from '../scripts/gk100-rendang-sealed-source';
-import {reviewedChefSafetyPaths,originalForReviewedChefSafety} from './chef-safety-historical-transition';
+import {editorialMethodHistoryPaths,reviewedChefSafetyPaths,originalForReviewedChefSafety} from './chef-safety-historical-transition';
 import { chefCorrectionPaths, originalForChefHistoricalCheck } from "./chef-instruction-transition";
 import { b21CanonicalHistoryPaths, originalForB21CanonicalHistory } from "./b21-canonical-historical-transition";
 import { c13CanonicalHistoryPaths, originalForC13CanonicalHistory } from "./c13-canonical-historical-transition";
 import { reviewedThreeCanonicalPaths, originalForThreeCanonicalHistory } from "./issue404-three-canonical-history";
 import {fileURLToPath} from 'node:url';
+import {projectTranslationAuditSource} from '../scripts/translation-audit';
 
 const root=fileURLToPath(new URL('../../',import.meta.url));
 const read=(p:string)=>readFileSync(new URL('../../'+p,import.meta.url),'utf8');
@@ -166,14 +167,14 @@ test('Live original results preserve frozen history plus the exact reviewed tran
     assert.equal(row.source_content_hash,liveSha,row.source_path+' reviewed chef source hash');
     return {...row,notes:normalNotes,source_content_hash:originalSha};
    }
-   if(reviewedChefSafetyPaths.includes(row.source_path) || row.source_path==='reseptit/paaruoat/rendang-padang.md') {
+   if(editorialMethodHistoryPaths.includes(row.source_path) || reviewedChefSafetyPaths.includes(row.source_path) || row.source_path==='reseptit/paaruoat/rendang-padang.md') {
     const published=read(row.source_path).replaceAll('\r\n','\n');
     const original=originalForReviewedChefSafety(root,row.source_path,
       historicalRendangForApprovedVersion(row.source_path,published));
     const liveSha=createHash('sha256').update(published).digest('hex');
     const historicalSha=createHash('sha256').update(original).digest('hex');
     assert.equal(row.source_content_hash,liveSha,row.source_path+' pinned editorial source hash');
-    const historicallyReviewedChef = reviewedChefSafetyPaths.includes(row.source_path);
+    const historicallyReviewedChef = editorialMethodHistoryPaths.includes(row.source_path) || reviewedChefSafetyPaths.includes(row.source_path);
     const expectedLiveNotes = published.split('## Muistiinpanot')[1]?.trim() ?? '';
     assert.equal(normalNotes,expectedLiveNotes.replaceAll('\r\n','\n').replaceAll('\n',lineEnding),
       row.source_path+' live chef notes must match published text');
@@ -181,6 +182,15 @@ test('Live original results preserve frozen history plus the exact reviewed tran
       ? (original.split('## Muistiinpanot')[1]?.trim() ?? '').replaceAll('\r\n','\n').replaceAll('\n',lineEnding)
       : normalNotes;
     return {...row,notes:oldNotes,source_content_hash:historicalSha};
+   }
+   if (row.source_path === 'reseptit/aamupalat/lahi-ita-manakish-zaatarilla.md' ||
+       row.source_path === 'reseptit/aamupalat/valimerellinen-halloumi-tomaattileipa.md') {
+    const raw = read(row.source_path).replaceAll('\r\n','\n');
+    const displayed = projectTranslationAuditSource(row.source_path,raw);
+    const notesOf = (text: string) => (text.split('## Muistiinpanot')[1]?.trim() ?? '').replaceAll('\n',lineEnding);
+    assert.equal(row.source_content_hash,createHash('sha256').update(raw).digest('hex'));
+    assert.equal(normalNotes,notesOf(displayed),row.source_path+' audited public notes');
+    return {...row,notes:notesOf(raw)};
    }
    if(row.recipe_id!=='valimerellinen-farinata-aamupalaksi'||historicalFarinata===publishedFarinata){
     return {...row,notes:normalNotes};

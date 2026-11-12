@@ -414,7 +414,7 @@ test("FI-only dietary approvals require a valid FI source and never fabricate EN
     ...fiOnly,
     sourceBlobShas: {
       ...fiOnly.sourceBlobShas,
-      en: "226fcc49b596963b806566d7d303f065b49ba257",
+      en: "cdf5c01a82e3b2e0180fe655c817af1f26c76433",
     },
   };
   assert.deepEqual(await reviewedDietTagsForVersion(withEnglishReview, "en", en, fi), ["vegetarian"]);
