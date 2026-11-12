@@ -53,10 +53,22 @@ export function parseRecipeMarkdown(source, sourcePath = "<memory>") {
   return { data, content: sections, instructions };
 }
 
-const ingredientName = (row) => String(row?.item ?? "").toLocaleLowerCase("fi").trim();
-const ingredientMatches = (recipe, fragment) => recipe.data.ingredients.filter(
-  (row) => ingredientName(row).includes(String(fragment).toLocaleLowerCase("fi")),
-);
+const ingredientWords = (text) => String(text ?? "").normalize("NFC").toLocaleLowerCase("fi")
+  .match(/[\p{L}\p{N}]+/gu)?.join(" ") ?? "";
+const onionForms = {
+  sipuli: ["sipuli", "sipulia", "sipulit", "sipuleita"],
+  valkosipuli: ["valkosipuli", "valkosipulia", "valkosipulit", "valkosipuleita"],
+  kevätsipuli: ["kevätsipuli", "kevätsipulia", "kevätsipulit", "kevätsipuleita"],
+};
+function ingredientMatches(recipe, ingredient) {
+  const query = ingredientWords(ingredient);
+  if (!query) return [];
+  const alternatives = Object.hasOwn(onionForms, query) ? onionForms[query] : [query];
+  return recipe.data.ingredients.filter(row => {
+    const item = " " + ingredientWords(row?.item) + " ";
+    return alternatives.some(form => item.includes(" " + form + " "));
+  });
+}
 
 export function evaluateProbe(recipe, probe, publishedTranslations = []) {
   assert.ok(VALID_PROBES.has(probe.kind), "Unknown probe: " + probe.kind);

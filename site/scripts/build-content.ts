@@ -114,6 +114,24 @@ function publicSafetyHold(recipeId: string, locale: RecipeLocale): { description
   return copy[locale];
 }
 
+const editorialProjections = [
+  projectHuevosFiPublicPreparation,
+  projectJianbingC5FiPublicNote,
+  projectReviewedFiEditorialSource,
+  projectA8FiEditorialSource,
+  projectC20FiDisplay,
+  projectMintWholeMilkFiDisplay,
+  projectBreakfastFiQualityDisplay,
+  projectSafeWontonFiDisplay,
+  projectMaterial21FiDisplay,
+  projectMaterial21MethodsFi,
+  projectC13FiDisplay,
+];
+
+function projectPublishedMarkdown(relativePath: string, canonical: string): string {
+  return editorialProjections.reduce((text, project) => project(relativePath, text), canonical);
+}
+
 async function buildRecipes(): Promise<RecipeEntry[]> {
   const paths = [
     ...await markdownFiles(path.join(repoDir, "reseptit", "aamupalat")),
@@ -132,7 +150,7 @@ async function buildRecipes(): Promise<RecipeEntry[]> {
   const publishedImagePaths = new Set<string>();
   for (const filePath of paths) {
     const relativePath = path.relative(repoDir, filePath).replaceAll("\\", "/");
-    const parsed = parseMarkdown(projectC13FiDisplay(relativePath, projectMaterial21MethodsFi(relativePath, projectMaterial21FiDisplay(relativePath, projectSafeWontonFiDisplay(relativePath, projectBreakfastFiQualityDisplay(relativePath, projectMintWholeMilkFiDisplay(relativePath, projectC20FiDisplay(relativePath, projectA8FiEditorialSource(relativePath, projectReviewedFiEditorialSource(relativePath, projectJianbingC5FiPublicNote(relativePath, projectHuevosFiPublicPreparation(relativePath, await readFile(filePath, "utf8")))))))))))));
+    const parsed = parseMarkdown(projectPublishedMarkdown(relativePath, await readFile(filePath, "utf8")));
     if (!parsed) continue;
     if (parsed.data.status === "draft") continue;
     // Exact safety quarantine retains sealed source/GK evidence while suppressing public routes.

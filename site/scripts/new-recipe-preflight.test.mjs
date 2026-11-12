@@ -110,7 +110,11 @@ test('CLI skips drafts and existing publications but blocks newly published cont
     mkdirSync(reviewDir, { recursive: true });
     writeFileSync(path.join(reviewDir, 'omena-puuro.json'), JSON.stringify(review));
     exec('add', '.'); exec('commit', '-qm', 'approve new recipe');
-    assert.equal(runCli(root, ['--base=' + base, '--head=HEAD']).checked, 1);
+    const approved = runCli(root, ['--base=' + base, '--head=HEAD']);
+    assert.equal(approved.checked, 1);
+    assert.deepEqual(approved.assessments, [{
+      recipeId: 'omena-puuro', path: recipePath, code: 'EDITORIAL_EVIDENCE_CURRENT', reasons: [],
+    }]);
   } finally { rmSync(root, { recursive: true, force: true }); }
 });
 

@@ -4,7 +4,7 @@ import { originalForB21CanonicalHistory } from "./b21-canonical-historical-trans
 import { originalForC13CanonicalHistory } from "./c13-canonical-historical-transition";
 import { originalForThreeCanonicalHistory } from "./issue404-three-canonical-history";
 import { execFileSync } from "node:child_process";
-import { readFileSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
 import path from "node:path";
 import { recipeTextForApprovedSnapshot } from "../scripts/approved-recipe-note-edits";
 import { originalForChefHistoricalCheck } from "./chef-instruction-transition";
@@ -199,6 +199,27 @@ function approvedNewTranslation(root: string, file: string, parsed: NonNullable<
   ) === "REVIEW CURRENT";
 }
 
+function checkedPostBaselineRelease(root: string, baseline: string, recipeId: string, sourcePath?: string): boolean {
+  if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(recipeId)) return false;
+  const receipt = path.join(root, "docs/reviews/new-recipes", recipeId + ".json");
+  if (!existsSync(receipt)) return false;
+  const approval = JSON.parse(readFileSync(receipt, "utf8")) as { recipe_id?: string; source_path?: string };
+  const file = approval.source_path;
+  if (approval.recipe_id !== recipeId || typeof file !== "string" ||
+      !/^reseptit\/(?:alkuruoat|paaruoat|jalkiruoat|leivonnaiset|aamupalat|valipalat)\/[^\\]+\.md$/.test(file) ||
+      path.posix.normalize(file) !== file || (sourcePath && sourcePath !== file)) return false;
+  const source = parseMarkdown(readFileSync(path.join(root, file), "utf8"));
+  if (source?.data.recipe_id !== recipeId || source.data.status !== "published" || source.data.language !== "fi") return false;
+  const historicalPath = execFileSync("git", ["--literal-pathspecs", "ls-tree", "-r", "--name-only", baseline, "--", file], {
+    cwd: root, encoding: "utf8",
+  });
+  if (historicalPath.trim()) return false;
+  execFileSync(process.execPath, [path.join(root, "site/scripts/new-recipe-preflight.mjs"), "--recipe=" + file], {
+    cwd: root, encoding: "utf8",
+  });
+  return true;
+}
+
 export function assertRecipeBaseline(root: string, baseline: string, ...protectedPaths: string[]) {
   const changes = execFileSync(
     "git",
@@ -240,6 +261,17 @@ export function assertRecipeBaseline(root: string, baseline: string, ...protecte
         assert.equal(version[nutrient], null, "C5 V2 nutrition must remain withheld");
       }
       continue;
+    }
+
+    // This path did not exist in the historical source tree. Its current
+    // structure is checked independently and draft status cannot grant release.
+    if (status === "A" && /^reseptit\/(?:raakileet|alkuruoat|paaruoat|jalkiruoat|leivonnaiset|aamupalat|valipalat)\/.+\.md$/.test(file)) {
+      const parsed = parseMarkdown(readFileSync(path.join(root, file), "utf8"));
+      if (parsed?.data.status === "draft") {
+        const draft = recipeFrontmatterSchema.parse(parsed.data);
+        assert.equal(draft.language, "fi", change);
+        continue;
+      }
     }
 
     if (status === "A" && approvedGlutenFreeFiFiles.has(file)) {
@@ -304,6 +336,16 @@ export function assertRecipeBaseline(root: string, baseline: string, ...protecte
         assert.equal(snapshot, original, change);
         continue;
       }
+    }
+    if (status === "A" && /^reseptit\/(?:alkuruoat|paaruoat|jalkiruoat|leivonnaiset|aamupalat|valipalat)\/.+\.md$/.test(file)) {
+      const parsed = parseMarkdown(readFileSync(path.join(root, file), "utf8"));
+      if (parsed?.data.status === "published") {
+        const source = recipeFrontmatterSchema.parse(parsed.data);
+        if (checkedPostBaselineRelease(root, baseline, source.recipe_id, file)) continue;
+      }
+    }
+    if (status === "A" && /^docs\/nutrition\/calculations\/[a-z0-9-]+\.json$/.test(file)) {
+      if (checkedPostBaselineRelease(root, baseline, path.basename(file, ".json"))) continue;
     }
     if (status === "A" && file.startsWith("kaannokset/")) {
       const published = parseMarkdown(readFileSync(path.join(root, file), "utf8"));
