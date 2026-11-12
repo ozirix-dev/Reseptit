@@ -391,13 +391,16 @@ test("published keto bun page includes its content and omitted amounts remain om
   assert.match(html, /"image":\["https:\/\/ozirix-dev\.github\.io\/Reseptit\/kuvat\/leivonnaiset\/keto-kauralesesampylat\.webp"\]/);
 });
 
-test("unknown route output has no canonical or recipe structured data", async () => {
-  const html = await readFile(path.join(dist, "404.html"), "utf8");
-  assert.match(html, /<h1>Sivua ei löytynyt<\/h1>/);
-  assert.match(html, /name="robots" content="noindex,follow"/);
-  assert.doesNotMatch(html, /rel="canonical"|recipe-jsonld|"@type":"Recipe"/);
-  assert.doesNotMatch(html, /hreflang=|x-default/);
-  assert.doesNotMatch(html, /<script type="module"/);
+test("localized 404 pages never hydrate a recipe or emit indexable metadata", async () => {
+  for (const [locale, directory, indexPath] of [["fi", "", "/"], ["en", "en", "/en/recipes/"], ["sv", "sv", "/sv/recept/"], ["th", "th", "/th/recipes/"]] as const) {
+    const html = await readFile(path.join(dist, directory, "404.html"), "utf8");
+    assert.ok(html.includes('<html lang="' + locale + '">'));
+    assert.ok(html.includes("<h1>" + recipeUi[locale].notFound + "</h1>"));
+    assert.ok(html.includes('<p><a href="/Reseptit' + indexPath + '"'));
+    assert.ok(html.includes('>' + recipeUi[locale].backToRecipes + '</a></p>'));
+    assert.match(html, /name="robots" content="noindex,follow"/);
+    assert.doesNotMatch(html, /rel="canonical"|recipe-jsonld|"@type":"Recipe"|hreflang=|x-default|<script type="module"/);
+  }
 });
 
 test("sitemap and project robots reference the real Pages path", async () => {

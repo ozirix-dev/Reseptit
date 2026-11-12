@@ -1,4 +1,5 @@
 import { moreBlogPosts } from "./blog-more";
+import { siteTarget } from "../../content/site-target";
 
 export interface BlogSection {
   heading: string;
@@ -26,7 +27,7 @@ export interface BlogPost {
 export const blogIndexPath = "/ruokaopas/";
 export const blogIndexTitle = "Ruokaopas | Reseptit";
 export const blogIndexDescription = "Ruoanlaiton tekniikoita, reseptien taustoja ja ymmärrettävää ravitsemustietoa. Lähteistetyt artikkelit täydentävät reseptejä.";
-const siteBase = "https://ozirix-dev.github.io/Reseptit";
+const siteBase = siteTarget.baseUrl;
 export const blogPosts: BlogPost[] = [
   {
     slug: "briossisampylan-onnistuminen",

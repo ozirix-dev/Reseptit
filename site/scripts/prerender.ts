@@ -1,3 +1,4 @@
+import { siteTarget } from "../src/content/site-target";
 import { recipeCardSizes } from "../src/features/recipes/image-layout";
 import { contentForRoute, serializeRouteContent } from "../src/content/route-data";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
@@ -15,7 +16,7 @@ import type { RecipeLocale } from "../src/types/content";
 
 const siteDir = path.resolve(import.meta.dirname, "..");
 const distDir = path.join(siteDir, "dist");
-const baseUrl = "https://ozirix-dev.github.io/Reseptit";
+const baseUrl = siteTarget.baseUrl;
 const localeBase: Record<RecipeLocale, string> = { fi: "", en: "/en/recipes", sv: "/sv/recept", th: "/th/recipes" };
 const indexNames: Record<RecipeLocale, string> = { fi: "Reseptit", en: "Recipes", sv: "Recept", th: "สูตรอาหาร" };
 const openGraphLocale: Record<RecipeLocale, string> = { fi: "fi_FI", en: "en_GB", sv: "sv_SE", th: "th_TH" };
@@ -72,7 +73,7 @@ function routeMetadata(route: string) {
     head: [
       `<title>${escapeHtml(title)}</title>`,
       `<meta name="description" content="${escapeHtml(description)}" />`,
-      ...(preview ? ['<meta name="robots" content="noindex, nofollow" />'] : []),
+      ...(preview || siteTarget.noIndex ? ['<meta name="robots" content="noindex, nofollow" />'] : []),
       `<link rel="canonical" href="${escapeHtml(url)}" />`,
       `<meta property="og:type" content="${recipe || blogPost ? "article" : "website"}" />`,
       `<meta property="og:title" content="${escapeHtml(title)}" />`,
@@ -130,16 +131,25 @@ try {
     }
   }
 
-  const notFoundRouter = createStaticRouter("/404", contentForRoute(siteContent.recipes, "/404"));
-  const notFoundBody = renderToString(React.createElement(RouterProvider, { router: notFoundRouter }));
-  const notFoundHead = [
-    "<title>Sivua ei löytynyt | Reseptit</title>",
-    '<meta name="robots" content="noindex,follow" />',
-    '<meta name="description" content="Pyytämääsi sivua ei löytynyt." />',
-  ].join("\n    ");
-  const notFoundHtml = replaceDocument(shell, notFoundHead, "fi", notFoundBody)
-    .replace(/\s*<script type="module"[^>]*><\/script>/i, "");
-  await writeFile(path.join(distDir, "404.html"), notFoundHtml, "utf8");
+  for (const [locale, directory] of [["fi", ""], ["en", "en"], ["sv", "sv"], ["th", "th"]] as const) {
+    const route = directory ? "/" + directory + "/404" : "/404";
+    const router = createStaticRouter(route, contentForRoute(siteContent.recipes, route));
+    const body = renderToString(React.createElement(RouterProvider, { router }));
+    const title = recipeUi[locale].notFound;
+    const head = [
+      "<title>" + escapeHtml(title + " | " + indexNames[locale]) + "</title>",
+      siteTarget.noIndex ? '<meta name="robots" content="noindex, nofollow" />' : '<meta name="robots" content="noindex,follow" />',
+      '<meta name="description" content="' + escapeHtml(title) + '" />',
+    ].join("\n    ");
+    const html = replaceDocument(shell, head, locale, body)
+      .replace(/\s*<script type="module"[^>]*><\/script>/i, "");
+    const folder = path.join(distDir, directory);
+    await mkdir(folder, { recursive: true });
+    await writeFile(path.join(folder, "404.html"), html, "utf8");
+  }
+  if (siteTarget.noIndex) {
+    await writeFile(path.join(distDir, "_headers"), "/*\n  X-Robots-Tag: noindex, nofollow\n", "utf8");
+  }
   console.log(`Prerendered ${routes.length} routes with visible content, metadata, and a not-found page.`);
 } finally {
   await vite.close();

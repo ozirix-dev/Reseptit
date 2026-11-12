@@ -59,6 +59,14 @@ GitHub Pages -stagingin nykyinen `main`-pohjainen deploy ei ole *ennakkotesti* s
 - Varmista, ettei `pages.dev`-preview indeksoidu (noindex ja tarvittaessa Cloudflare Access). Tarkista, että salaisuudet eivät tallennu GitHubiin.
 - Vältä kallista kaksinkertaista CI:tä: uudelleenkäytä jo todettu build/asset-artifact, jos turvallisesti toteutettavissa. Testaa vain muuttuvat julkaisu- ja reittiasiat.
 
+Nykyinen build tukee Cloudflare-esikatselua asettamalla ennen buildia
+RECIPAVO_PREVIEW_ORIGIN-muuttujaksi oman preview-haaran HTTPS pages.dev-osoitteen.
+Build käyttää juuripolkua, tuottaa kyseisen esikatselun SEO-osoitteet ja lisää
+noindex-merkinnät HTML:ään ja HTTP-otsakkeisiin. VITE_RECIPAVO_HERO_PREVIEW=true
+ottaa Recipavo-etusivun käyttöön. Aja site-hakemistossa npm run build ja lataa
+ainoastaan syntynyt dist esikatseluhaaraan. Cloudflare Pages käyttää lähintä
+kielikohtaista 404.html-sivua virhevastauksessa.
+
 ### Vaihe 3 – tuotantojulkaisu ja DNS-cutover (VAATII ERILLISEN LUVAN)
 
 **Stop/go-portti ennen toimia:** omistaja hyväksyy nimenomaisesti tuotantocommitin, kohteen, domain-siirron, reitit, SEO-asetukset ja palautussuunnitelman. Mikään tämä Draft-PR ei ole lupa.

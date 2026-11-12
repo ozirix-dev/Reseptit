@@ -12,9 +12,13 @@ export interface RouteContent {
   translations: TranslationLink[];
 }
 export const localeIndexes: Record<RecipeLocale, string> = { fi: "/", en: "/en/recipes/", sv: "/sv/recept/", th: "/th/recipes/" };
-export function normalizePath(value: string): string {
-  const pathname = value.split(/[?#]/)[0].replace(/^\/Reseptit(?=\/|$)/, "");
-  return `${pathname.replace(/\/+$/, "")}/`;
+export function normalizePath(value: string, basePath = "/"): string {
+  const pathname = value.split(/[?#]/)[0];
+  const prefix = basePath.replace(/\/$/, "");
+  const route = prefix && (pathname === prefix || pathname.startsWith(prefix + "/"))
+    ? pathname.slice(prefix.length)
+    : pathname;
+  return route.replace(/\/+$/, "") + "/";
 }
 export function summarizeRecipe(recipe: RecipeEntry): RecipeSummary {
   const { recipeId, locale, title, category, dietClass, dietTags, glutenFree, routePath, image, description, timeTotalMin, difficulty, tags, ingredients } = recipe;

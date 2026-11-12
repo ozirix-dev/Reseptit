@@ -6,9 +6,9 @@ import { glycemicLoadMeta, recipeLocaleFromPath, recipeUi } from "@/features/rec
 import { useContent } from "@/lib/content";
 import { articles, articlePath, blogRoot, blogPosts, blogJsonLd } from "@/features/blog/blog-data";
 import type { RecipeLocale } from "@/types/content";
+import { siteTarget } from "@/content/site-target";
 
-const siteBase = "https://ozirix-dev.github.io/Reseptit";
-const sitePath = "/Reseptit";
+const siteBase = siteTarget.baseUrl;
 const baseByLocale: Record<RecipeLocale, string> = { fi: "", en: "/en/recipes", sv: "/sv/recept", th: "/th/recipes" };
 const titleByLocale: Record<RecipeLocale, string> = { fi: "Reseptit", en: "Recipes", sv: "Recept", th: "สูตรอาหาร" };
 const openGraphLocale: Record<RecipeLocale, string> = { fi: "fi_FI", en: "en_GB", sv: "sv_SE", th: "th_TH" };
@@ -38,10 +38,9 @@ export function SeoMeta() {
   const { recipe, translations, locales } = useContent();
 
   useEffect(() => {
-    const strippedPath = pathname.replace(new RegExp(`^${sitePath}(?=/|$)`), "") || "/";
-    const normalizedPath = normalizeRoutePath(strippedPath);
+    const normalizedPath = normalizeRoutePath(pathname);
     const routeLocale = (Object.keys(baseByLocale) as RecipeLocale[]).find((locale) =>
-      locale === "fi" ? strippedPath === "/" : strippedPath === `${baseByLocale[locale]}/` || strippedPath === baseByLocale[locale]);
+      locale === "fi" ? pathname === "/" : pathname === `${baseByLocale[locale]}/` || pathname === baseByLocale[locale]);
     const indexExists = routeLocale === "fi" || (routeLocale !== undefined && locales.includes(routeLocale));
     const methodLocale = (Object.keys(methodPaths) as RecipeLocale[]).find((item) => normalizedPath === normalizeRoutePath(methodPaths[item]));
     const isPilotPage = methodLocale !== undefined;
@@ -51,7 +50,7 @@ export function SeoMeta() {
     const known = recipe !== null || indexExists || isPilotPage || isBlog;
     const preview = isRecipavoHeroPreviewEnabled();
     // Keep unknown deep links' metadata in the same locale as the visible not-found page.
-    const locale = recipe?.locale ?? methodLocale ?? (isBlog ? "fi" : routeLocale) ?? recipeLocaleFromPath(strippedPath);
+    const locale = recipe?.locale ?? methodLocale ?? (isBlog ? "fi" : routeLocale) ?? recipeLocaleFromPath(pathname);
     const title = preview && indexExists ? `${recipavoHeroCopy[locale].title} | Recipavo` : blogPost ? `${blogPost.title} | Ruokaopas` : blogIndex ? "Ruokaopas | Reseptit" : isPilotPage ? glycemicLoadMeta[locale].title : known
       ? recipe ? `${recipe.title} | ${titleByLocale[locale]}` : `${titleByLocale[locale]} | Ozirix`
       : `${recipeUi[locale].notFound} | ${titleByLocale[locale]}`;
@@ -69,7 +68,7 @@ export function SeoMeta() {
     upsertMeta("name", "twitter:title", title);
     upsertMeta("name", "twitter:description", description);
     document.head.querySelectorAll('link[rel="canonical"], link[rel="alternate"][hreflang], meta[property="og:image"], meta[name="twitter:image"], script#recipe-jsonld, script#blog-jsonld, meta[name="robots"]').forEach((element) => element.remove());
-    if (preview) upsertMeta("name", "robots", "noindex,nofollow");
+    if (preview || siteTarget.noIndex) upsertMeta("name", "robots", "noindex,nofollow");
     else if (!known) upsertMeta("name", "robots", "noindex,follow");
     if (canonical) {
       const canonicalLink = document.createElement("link");

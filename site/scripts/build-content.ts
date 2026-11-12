@@ -1,3 +1,4 @@
+import { siteTarget } from "../src/content/site-target";
 import { createHash } from "node:crypto";
 import { publicRecipeQualityHold } from "./recipe-quality-holds";
 import { projectSafeWontonFiDisplay } from "./wonton-fi-public-display";
@@ -29,7 +30,7 @@ import type { RecipeEntry, RecipeLocale, SiteContentIndex } from "../src/types/c
 const siteDir = path.resolve(import.meta.dirname, "..");
 const repoDir = path.resolve(process.env.RECIPE_SOURCE_ROOT ?? path.resolve(siteDir, ".."));
 const outputDir = path.join(siteDir, "src", "generated");
-const baseUrl = "https://ozirix-dev.github.io/Reseptit";
+const baseUrl = siteTarget.baseUrl;
 const imageSourceDir = path.join(repoDir, "kuvat");
 const localeBase: Record<RecipeLocale, string> = { fi: "", en: "/en/recipes", sv: "/sv/recept", th: "/th/recipes" };
 
@@ -285,7 +286,10 @@ export const contentManifest: Record<string, string> = ${JSON.stringify(manifest
   const publicDir = path.join(siteDir, "public");
   await mkdir(publicDir, { recursive: true });
   await writeFile(path.join(publicDir, "sitemap.xml"), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>\n`, "utf8");
-  await writeFile(path.join(publicDir, "robots.txt"), `# Project-path robots.txt; host-wide crawling policy is controlled at /robots.txt.\nUser-agent: *\nAllow: /Reseptit/\n\nSitemap: ${baseUrl}/sitemap.xml\n`, "utf8");
+  const robots = siteTarget.noIndex
+    ? "User-agent: *\nAllow: /\n"
+    : "# Project-path robots.txt; host-wide crawling policy is controlled at /robots.txt.\nUser-agent: *\nAllow: /Reseptit/\n\nSitemap: " + baseUrl + "/sitemap.xml\n";
+  await writeFile(path.join(publicDir, "robots.txt"), robots, "utf8");
   await writeFile(path.join(publicDir, ".nojekyll"), "", "utf8");
   console.log(`Built ${recipes.length} published recipe translations from local Markdown.`);
 }

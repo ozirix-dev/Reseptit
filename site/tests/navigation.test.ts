@@ -4,7 +4,20 @@ import { readFile } from "node:fs/promises";
 import path from "node:path";
 import { languageDestination } from "../src/SiteNavigation";
 
+import { normalizePath } from "../src/content/route-data";
+import { resolveSiteTarget } from "../src/content/site-target";
+
 const dist = path.resolve(import.meta.dirname, "../dist");
+
+test("recipe route normalization follows the deployment base", () => {
+  const legacy = resolveSiteTarget();
+  const preview = resolveSiteTarget("https://v1.recipavo-v1-preview.pages.dev");
+  assert.equal(normalizePath("/Reseptit/en/recipes/?q=rice", legacy.basePath), "/en/recipes/");
+  assert.equal(normalizePath("/en/recipes/?q=rice", preview.basePath), "/en/recipes/");
+  assert.equal(normalizePath("/Reseptit/en/recipes/", preview.basePath), "/Reseptit/en/recipes/");
+  assert.equal(preview.noIndex, true);
+  assert.throws(() => resolveSiteTarget("https://www.recipavo.com"));
+});
 
 test("language switching preserves translated content and keeps Finnish-only blog honest", () => {
   const translations = [

@@ -1,10 +1,11 @@
 import { contentManifest, publishedLocales } from "../generated/routes.generated";
 import { normalizePath, type RouteContent } from "../content/route-data";
+import { siteTarget } from "../content/site-target";
 
 const cache = new Map<string, RouteContent>();
 export function parseRouteContent(value: unknown, route: string): RouteContent {
   const data = value as RouteContent | null;
-  if (!data || data.path !== normalizePath(route) || !Array.isArray(data.locales) ||
+  if (!data || data.path !== normalizePath(route, siteTarget.basePath) || !Array.isArray(data.locales) ||
       !data.locales.every((locale) => ["fi", "en", "sv", "th"].includes(locale)) ||
       !Array.isArray(data.recipes) || !Array.isArray(data.translations) ||
       !data.translations.every((item) => typeof item.routePath === "string" && data.locales.includes(item.locale)) ||
@@ -21,12 +22,13 @@ export function rememberContent(data: RouteContent): RouteContent {
   return data;
 }
 export async function loadContent({ request }: { request: Request }): Promise<RouteContent> {
-  const path = normalizePath(new URL(request.url).pathname);
+  const route = new URL(request.url).pathname;
+  const path = normalizePath(route, siteTarget.basePath);
   const cached = cache.get(path);
   if (cached) return cached;
   const file = contentManifest[path];
   if (!file) return { path, locales: publishedLocales, recipes: [], recipe: null, translations: [] };
   const response = await fetch(`${import.meta.env.BASE_URL}data/${file}`, { signal: request.signal });
   if (!response.ok) throw new Error(`Recipe page data: HTTP ${response.status}`);
-  return rememberContent(parseRouteContent(await response.json(), path));
+  return rememberContent(parseRouteContent(await response.json(), route));
 }
