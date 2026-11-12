@@ -94,7 +94,7 @@ Moussaka is baked in layers where eggplant and potato alternate with ground meat
 1. Heat the oven to 200 degrees. Brush the eggplant and potato slices with oil and roast on a baking sheet for 20 minutes.
 2. Brown the minced meat and onion in a pan. Add crushed tomatoes, cinnamon, salt and pepper. Simmer for 15 minutes.
 3. Melt the butter in a saucepan. Mix in the flour and gradually add the milk while whisking. Cook until the sauce thickens. Remove from the stove, cool for a while and mix in the egg and half of the cheese.
-4. Put the potatoes, half of the eggplants, the minced meat sauce and the rest of the eggplants in the pan. Pour the béchamel on top and sprinkle the rest of the cheese.
+4. Layer the potatoes, half the aubergine slices, the minced meat sauce and the remaining aubergine in an ovenproof dish. Pour over the béchamel and sprinkle with the remaining cheese.
 5. Bake at 190 degrees for about 35 minutes until the surface is golden brown. Let set for 15 minutes before cutting.
 
 ## Notes

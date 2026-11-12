@@ -84,7 +84,7 @@ Low-carbohydrate sausage soup is prepared in one pot. The sausages are added onl
 
 1. Chop the onion, slice the celery and leek and divide the cauliflower into small florets.
 2. Heat the meat broth to a boil. Add onion, celery, leek, bay leaf and black pepper. Cook on low heat for 5 minutes.
-3. Add the cauliflower and cook for another 8 minutes until it is very soft.
+3. Add the cauliflower and cook for another 8 minutes, until tender but still firm.
 4. Slice the frankfurter sausages and add to the soup. Heat for 3-4 minutes without boiling strongly.
 5. Remove the bay leaf, taste the broth and add salt if necessary. Finish with parsley.
 

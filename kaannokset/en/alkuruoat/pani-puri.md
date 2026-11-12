@@ -73,7 +73,7 @@ ingredients:
   - unit: g
     item: salt
     amount: 6
-    note: "About 1/2 tsp; adjust for stock saltiness."
+    note: "For the filling and spiced water."
 source_language: fi
 source_recipe: reseptit/alkuruoat/pani-puri.md
 translation_of: pani-puri
@@ -91,7 +91,7 @@ Crispy puri shells are filled with potato and chickpeas, and finished with tangy
 
 1. Mix semolina, wheat flour and water into a firm dough. Cover and let rest for 20 minutes.
 2. Roll the dough into a very thin disc and cut into small circles.
-3. Fry the circles in 180 degree oil. Press lightly to make them rise into a ball. Drain and cool.
+3. Heat the deep-frying oil to 180 °C. Fry the discs in batches, pressing gently with a slotted spoon to help them puff. Drain and cool.
 4. Boil the potatoes until cooked and dice them. Mix the potato and chickpeas with salt and a pinch of cumin.
 5. Purée mint, coriander, tamarind, lime juice, cumin, chili and 4 dl cold water. Season with salt.
 6. Make a small opening in the top of the puri, fill with potatoes and chickpeas and serve with herbal water.

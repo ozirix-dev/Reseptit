@@ -94,7 +94,7 @@ Eteläintialainen kalacurry yhdistää kookosmaidon, tamarindin ja curry-lehtien
 2. Kuumenna öljy kattilassa. Lisää sinapinsiemenet ja currylehdet. Lisää sipuli, valkosipuli ja inkivääri, kuullota pehmeiksi.
 3. Lisää kurkuma, chili, tamarindivesi ja suola. Hauduta 5 minuuttia.
 4. Kaada kookosmaito kattilaan ja kuumenna hiljalleen. Älä anna kiehua voimakkaasti.
-5. Lisää kala ja kypsennä miedolla lämmöllä 8–10 minuuttia, kunnes kala lohkeaa kypsänä.
+5. Sulata seiti pakkauksen ohjeen mukaan ennen kypsennystä. Lisää kala kastikkeeseen ja kypsennä miedolla lämmöllä 8–10 minuuttia, kunnes se on kauttaaltaan kypsää ja lohkeaa helposti haarukalla.
 6. Maista ja säädä suola. Tarjoa riisin kanssa.
 
 ## Muistiinpanot

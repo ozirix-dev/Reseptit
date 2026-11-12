@@ -91,8 +91,8 @@ Skölj nudlarna väl och stek dem torra innan du lägger dem i woken. På så s�
 3. Hetta upp hälften av oljan i en wok. Stek tofun tills den är gyllene och ställ åt sidan.
 4. Tillsätt räkorna och stek tills de nästan är genomstekta. Flytta dem åt sidan, tillsätt resten av oljan och fräs äggen.
 5. Tillsätt nudlarna och såsen. Vänd i en het panna ett par minuter.
-6. Lägg tillbaka räkor och tofu i pannan. Tillsätt böngroddarna och hälften av jordnötterna. Stek under omrörning i ungefär en minut och vid behov längre, tills räkorna är helt tillagade.
-7. Servera med vårlök, koriander, resterande jordnötter och limeklyftor.
+6. Lägg tillbaka räkor och tofu i pannan. Tillsätt böngroddarna och hälften av jordnötterna. Stek under omrörning i ungefär en minut och vid behov längre, tills räkorna är genomstekta och groddarna genomvarma.
+7. Servera med koriander, resten av jordnötterna och limeklyftor.
 
 ## Anteckningar
 

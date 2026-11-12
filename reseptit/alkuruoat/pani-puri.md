@@ -73,7 +73,7 @@ ingredients:
   - unit: g
     item: suolaa
     amount: 6
-    note: "Noin 1/2 tl; säädä kalafondin suolaisuuden mukaan."
+    note: "Täytteeseen ja yrttiveteen."
 translation_languages:
   - en
   - sv
@@ -93,7 +93,7 @@ Rapeat puri-kuoret täytetään perunalla ja kikherneillä, ja viimeistellään 
 
 1. Sekoita mannasuurimot, vehnäjauho ja vesi napakaksi taikinaksi. Peitä ja anna levätä 20 minuuttia.
 2. Kauli taikina hyvin ohueksi levyksi ja leikkaa pieniksi ympyröiksi.
-3. Paista ympyrät 180-asteisessa öljyssä. Paina kevyesti, jotta ne kohoavat pallomaisiksi. Valuta ja jäähdytä.
+3. Kuumenna friteerausöljy 180 °C:seen. Paista taikinakiekot erissä ja paina niitä kevyesti reikäkauhalla, jotta ne pullistuvat. Valuta ja jäähdytä.
 4. Keitä perunat kypsiksi ja kuutioi. Sekoita peruna ja kikherneet suolalla sekä ripauksella juustokuminaa.
 5. Soseuta minttu, korianteri, tamarindi, limettimehu, juustokumina, chili ja 4 dl kylmää vettä. Mausta suolalla.
 6. Tee purin yläosaan pieni aukko, täytä peruna-kikherneillä ja tarjoa yrttiveden kanssa.

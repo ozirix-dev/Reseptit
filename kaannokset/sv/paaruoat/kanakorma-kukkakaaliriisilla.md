@@ -68,7 +68,7 @@ Grovriven blomkål steks som tillbehör i stället för ris.
 ## Gör så här
 
 1. Fräs den hackade löken i smör. Tillsätt den tärnade kycklingen och bryn.
-2. Blanda i kormakrydda, grädde och yoghurt. Sjud under lock i ca 20 minuter.
+2. Rör ner kormakrydda, grädde och yoghurt. Sjud under lock i cirka 20 minuter och fortsätt vid behov tills kycklingen är genomstekt.
 3. Riv blomkålen till grovt ris och stek i panna i 4–5 minuter. Krydda med salt.
 4. Servera korman med blomkålsris.
 

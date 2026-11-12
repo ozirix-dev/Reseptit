@@ -63,7 +63,7 @@ Erytritol sötar fyllningen av smör och kanel.
 ## Gör så här
 
 1. Värm ugnen till 200 °C. Smält försiktigt mozzarellan och färskosten tillsammans.
-2. Blanda i mandelmjöl och ägg. Rulla ihop degen mellan bakplåtspapper till en skiva.
+2. Blanda i mandelmjöl och ägg. Kavla ut degen till en platta mellan två ark bakplåtspapper.
 3. Bred ut mjukt smör, erytritol och kanel på ytan. Rulla ihop och skär i bitar.
 4. Grädda i ca 15 minuter tills bullarna är gyllenbruna.
 

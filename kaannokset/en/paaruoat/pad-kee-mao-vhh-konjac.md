@@ -92,8 +92,8 @@ Prepare the ingredients before frying: food cooks quickly in a wok. Dry fry the 
 2. Mix fish sauce, soy sauce, oyster sauce and erythritol.
 3. Heat the oil in a wok. Fry the chicken until cooked and set it aside for a while.
 4. Add garlic and chili to the pan. Fry for about 30 seconds, add the beans and paprika and fry for a few minutes.
-5. Add the noodles, chicken and sauce. Turn on the hot pan until everything is hot.
-6. Remove the pan from the stove and stir in the Thai basil. Offer now.
+5. Add the noodles, chicken and sauce. Toss in the hot wok until heated through.
+6. Take the wok off the heat and toss in the Thai basil. Serve immediately.
 
 ## Notes
 

@@ -73,7 +73,7 @@ ingredients:
   - unit: g
     item: salt
     amount: 6
-    note: "Cirka 1/2 tsk; anpassa efter fondens salthalt."
+    note: "Till fyllningen och kryddvattnet."
 source_language: fi
 source_recipe: reseptit/alkuruoat/pani-puri.md
 translation_of: pani-puri
@@ -91,7 +91,7 @@ Krispiga puriskal är fyllda med potatis och kikärter och avslutas med syrligt 
 
 1. Blanda mannagryn, vetemjöl och vatten till en fast deg. Täck över och låt vila i 20 minuter.
 2. Rulla degen till en mycket tunn skiva och skär i små cirklar.
-3. Stek cirklarna i 180 graders olja. Tryck lätt för att få dem att jäsa till en boll. Låt rinna av och svalna.
+3. Värm friteringsoljan till 180 °C. Fritera rundlarna i omgångar och tryck lätt med en hålslev så att de blåser upp sig. Låt rinna av och svalna.
 4. Koka potatisen tills den är kokt och tärna den. Blanda potatisen och kikärtorna med salt och en nypa spiskummin.
 5. Puré mynta, koriander, tamarind, limejuice, spiskummin, chili och 4 dl kallt vatten. Krydda med salt.
 6. Gör en liten öppning i toppen av purin, fyll med potatis och kikärter och servera med örtvatten.

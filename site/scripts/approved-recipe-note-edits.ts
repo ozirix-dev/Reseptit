@@ -25,6 +25,125 @@ const editorialSnapshots: Readonly<Record<string, {
   currentSha256: string;
   inverseEdits: ReadonlyArray<readonly [start: number, count: number, historical: string]>;
 }>> = {
+  "kaannokset/sv/paaruoat/kana-tagine-sitruunalla.md": {
+    currentSha256: "eb12c7980f69684ab8a45eb9c2701e58db6e8b5a4382fae0360d6a372c7f91dc",
+    inverseEdits: [
+      [83, 1, "3. Lägg tillbaka kycklingen i grytan. Tillsätt skal av konserverad citron och kycklingfond. Täck över och låt sjuda på låg värme i ca 45 minuter.\n"],
+    ],
+  },
+  "kaannokset/th/paaruoat/kana-tagine-sitruunalla.md": {
+    currentSha256: "9d61684174c776e0f2846100874152ab79f5117c843930669b97c936b388921f",
+    inverseEdits: [
+      [85, 1, "5. ชิมเกลือแล้วปิดท้ายด้วยผักชี เสิร์ฟพร้อมคูสคูสหรือขนมปัง\n"],
+      [81, 1, "1. ตั้งน้ำมันให้ร้อนในกระทะที่มีก้นหนา ทอดไก่ให้เหลืองทุกด้านแล้วพักไว้\n"],
+    ],
+  },
+  "kaannokset/en/leivonnaiset/keto-korvapuustit.md": {
+    currentSha256: "bbec9a4ee4f4111001cb0c75a8d6dc45890c7ab553e8ad304dce19b74a20f6d9",
+    inverseEdits: [
+      [65, 1, "2. Mix in almond flour and egg. Roll the dough between baking papers into a disk.\n"],
+    ],
+  },
+  "kaannokset/sv/leivonnaiset/keto-korvapuustit.md": {
+    currentSha256: "111ad9e5e82ae37b5de9df85da16b57dfd8da9f53c21a756d02dacbeb570c83c",
+    inverseEdits: [
+      [65, 1, "2. Blanda i mandelmjöl och ägg. Rulla ihop degen mellan bakplåtspapper till en skiva.\n"],
+    ],
+  },
+  "kaannokset/th/leivonnaiset/keto-korvapuustit.md": {
+    currentSha256: "5dfa9ac825ee531fdec74d11a54f71ba1d62e282660b928c07f1f8578e4d3ebd",
+    inverseEdits: [
+      [65, 1, "2. ผสมแป้งอัลมอนด์และไข่เข้าด้วยกัน ม้วนแป้งระหว่างกระดาษรองอบลงในดิสก์\n"],
+    ],
+  },
+  "kaannokset/en/paaruoat/nakkikeitto-kukkakaalilla.md": {
+    currentSha256: "a80234550b11e63504665b965f4a7f47517f17f5b989dacb09744be9fe1623da",
+    inverseEdits: [
+      [86, 1, "3. Add the cauliflower and cook for another 8 minutes until it is very soft.\n"],
+    ],
+  },
+  "kaannokset/sv/paaruoat/nakkikeitto-kukkakaalilla.md": {
+    currentSha256: "b07c4f32ab48ccfdb233ee20289b8737e2e1c547c0fccde646e1ca10dfb4f4be",
+    inverseEdits: [
+      [86, 1, "3. Tillsätt blomkålen och koka ytterligare 8 minuter tills den är väldigt mjuk.\n"],
+    ],
+  },
+  "kaannokset/th/paaruoat/nakkikeitto-kukkakaalilla.md": {
+    currentSha256: "04880bf3de02f307662b24ee9abf31552d67e005028ffb91d18eb74392fb764a",
+    inverseEdits: [
+      [85, 1, "2. ตั้งน้ำซุปเนื้อให้เดือด ใส่หัวหอม คื่นฉ่าย ต้นหอม ใบกระวาน และพริกไทยดำ ปรุงอาหารด้วยไฟอ่อนเป็นเวลา 5 นาที\n"],
+    ],
+  },
+  "kaannokset/en/paaruoat/pad-kee-mao-vhh-konjac.md": {
+    currentSha256: "cd2cf093bad55f99bd32e65a7165f4f7a58ebc9c0fc21b9af48c105fc2783304",
+    inverseEdits: [
+      [94, 2, "5. Add the noodles, chicken and sauce. Turn on the hot pan until everything is hot.\n6. Remove the pan from the stove and stir in the Thai basil. Offer now.\n"],
+    ],
+  },
+  "kaannokset/sv/paaruoat/pad-kee-mao-vhh-konjac.md": {
+    currentSha256: "888e0f9315c4cd48b212ae550a1f3d1895d740f25f4b087d043c8e4ee0b82740",
+    inverseEdits: [
+      [94, 2, "5. Tillsätt nudlarna, kycklingen och såsen. Slå på den varma pannan tills allt är varmt.\n6. Ta av kastrullen från spisen och rör ner thaibasilikan. Erbjud nu.\n"],
+    ],
+  },
+  "kaannokset/th/paaruoat/pad-kee-mao-vhh-konjac.md": {
+    currentSha256: "217d5b2c805f45200d074c6b0aea1ada1903e569b68cf74ccb31424f526db51b",
+    inverseEdits: [
+      [94, 2, "5. ใส่บะหมี่ ไก่ และซอส เปิดกระทะร้อนจนทุกอย่างร้อน\n6. นำกระทะออกจากเตาแล้วใส่ใบโหระพาลงไปผัด เสนอตอนนี้.\n"],
+    ],
+  },
+  "reseptit/paaruoat/paella-valenciana.md": {
+    currentSha256: "9a12394a5c2e7d556fc9216667a5b9bfffbe1124745f4cdad7c5db0df2dfa35c",
+    inverseEdits: [
+      [88, 1, "- Jos käytät vain broileria, valitse koipilihaa, joka pysyy mehevänä pitkän kypsennyksen ajan.\n"],
+      [84, 1, "5. Kun riisi on kypsää ja neste imeytynyt, nosta pannu liedeltä. Peitä kevyesti ja anna vetäytyä 5 minuuttia.\n"],
+      [80, 1, "1. Kuumenna öljy leveässä pannussa. Ruskista broileri ja jäniksenpalat kauttaaltaan.\n"],
+      [76, 1, "Valencialaistyylisessä paellassa lyhytjyväinen riisi kypsyy pannulla sahramiliemessä kanan, jäniksen ja vihreiden papujen kanssa.\n"],
+      [72, 1, "Valencialaistyylisessä paellassa lyhytjyväinen riisi kypsyy pannulla sahramiliemessä kanan, jäniksen ja vihreiden papujen kanssa.\n"],
+      [70, 1, "# Valencialainen paella kanalla ja jäniksellä\n"],
+    ],
+  },
+  "kaannokset/en/paaruoat/paella-valenciana.md": {
+    currentSha256: "7aa2354d95f3110703089f1b95c3f5e51fa4c1fecbce7466b4ef3ba4bd0475fd",
+    inverseEdits: [
+      [83, 1, "5. Remove from heat when rice is tender and liquid is absorbed. Cover and rest for 5 minutes; remove rosemary before serving.\n"],
+      [79, 1, "3. Add dry rice and hot broth with saffron. Season with salt and add the rosemary sprig.\n"],
+    ],
+  },
+  "kaannokset/sv/paaruoat/paella-valenciana.md": {
+    currentSha256: "a24d38e1c0a21ef5e56c2666ef8a3d9283e45004e5b832e9531886b8d90c1674",
+    inverseEdits: [
+      [83, 1, "5. Ta av från värmen när riset är mjukt och vätskan absorberad. Täck och vila i 5 minuter; ta bort rosmarinen före servering.\n"],
+      [79, 1, "3. Tillsätt torrt ris och varm buljong med saffran. Salta och lägg i rosmarinkvisten.\n"],
+    ],
+  },
+  "kaannokset/th/paaruoat/paella-valenciana.md": {
+    currentSha256: "37185c6a21002288e3eddbbfa6da32e76998dac3772bd8956810af043ae6b12e",
+    inverseEdits: [
+      [83, 1, "5. ยกลงเมื่อข้าวนุ่มและน้ำแห้ง ปิดฝาพัก 5 นาที แล้วนำโรสแมรี่ออกก่อนเสิร์ฟ\n"],
+      [79, 1, "3. ใส่ข้าวดิบและน้ำสต๊อกร้อนที่แช่หญ้าฝรั่น ปรุงเกลือและใส่กิ่งโรสแมรี่\n"],
+    ],
+  },
+  "kaannokset/sv/paaruoat/palak-paneer.md": {
+    currentSha256: "d94751a3f65f8d5a6a0b5bf28b3de8a1ab2c67d0881e2b0294d299c9bb43e804",
+    inverseEdits: [
+      [84, 1, "3. Bryn paneerkuberna i en panna i en matsked olja. Avsätta.\n"],
+    ],
+  },
+  "kaannokset/th/paaruoat/palak-paneer.md": {
+    currentSha256: "ec75ffb50073277a15803ee95e064c13881a43cf0ea5226dd39df017bd4e6872",
+    inverseEdits: [
+      [86, 1, "5. ใส่ผักโขมบด เกลือ และน้ำครึ่งเดซิลิตร หลนเป็นเวลา 8 นาที\n"],
+      [82, 2, "1. ล้างผักขมและลวกในน้ำเดือดสักครู่ เย็นอย่างรวดเร็วและสะเด็ดน้ำ\n2. บดผักโขมให้เป็นน้ำซุปข้นหยาบ\n"],
+    ],
+  },
+  "kaannokset/th/alkuruoat/paneer-tikka.md": {
+    currentSha256: "b8e51f81ef02e9266a6bc85b3d52afb935052c9ee9e5c2f13e8b4315a8861179",
+    inverseEdits: [
+      [77, 1, "4. ย่างบนไฟร้อนปานกลาง หรืออบด้วยไฟต้านทานการย่างของเตาอบที่ 230 องศา นาน 10–14 นาที หมุนหนึ่งครั้ง\n"],
+      [74, 1, "1. ผสมโยเกิร์ต น้ำเลมอน เครื่องเทศ เกลือ และน้ำมันเพื่อทำน้ำดอง\n"],
+    ],
+  },
   "reseptit/aamupalat/indialainen-poha-maapahkinoilla.md": {
     currentSha256: "5fc1ccc4d6c48268325313fa6e5075d9a9bcf5d8f97943758aba6da8ab906dbd",
     inverseEdits: [[7, 2, ""]],

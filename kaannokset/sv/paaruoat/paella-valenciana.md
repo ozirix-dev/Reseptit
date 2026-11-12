@@ -77,11 +77,11 @@ Kyckling och kortkornigt ris tillagas med gröna bönor i saffransbuljong.
 
 2. Tillsätt gröna bönor och fräs kort. Rör ner tomater och rökt paprika.
 
-3. Tillsätt torrt ris och varm buljong med saffran. Salta och lägg i rosmarinkvisten.
+3. Tillsätt det torra riset och rör om så att kornen täcks av oljan. Häll på den varma saffransbuljongen, salta och lägg i rosmarinkvisten om du använder den.
 
 4. Koka på medelvärme i 8 minuter och därefter på låg värme i 12–15 minuter. Rör inte efter att buljongen tillsatts.
 
-5. Ta av från värmen när riset är mjukt och vätskan absorberad. Täck och vila i 5 minuter; ta bort rosmarinen före servering.
+5. Ta av från värmen när riset är mjukt, vätskan har absorberats och kycklingens tjockaste bitar nått 75 °C. Täck löst, låt vila i 5 minuter och ta bort eventuell rosmarin före servering.
 
 ## Notes
 

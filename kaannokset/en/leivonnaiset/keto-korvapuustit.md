@@ -63,7 +63,7 @@ Erythritol sweetens the butter and cinnamon filling.
 ## Preparation
 
 1. Heat the oven to 200 °C. Gently melt the mozzarella and cream cheese together.
-2. Mix in almond flour and egg. Roll the dough between baking papers into a disk.
+2. Mix in the almond flour and egg. Roll the dough out into a flat sheet between two sheets of baking paper.
 3. Spread soft butter, erythritol and cinnamon on the surface. Roll up and cut into pieces.
 4. Bake for about 15 minutes until the buns are golden brown.
 

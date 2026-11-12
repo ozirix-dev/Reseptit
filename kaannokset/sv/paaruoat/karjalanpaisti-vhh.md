@@ -85,7 +85,7 @@ Kombinationen av nötkött och fläsk kokas tills den är mjuk med lök, kryddpe
 2. Tillsätt vatten, salt, kryddpeppar och lagerblad. Vätskan ska nå nästan upp till köttets nivå.
 3. Tillaga under lock på nedre delen av ugnen i ca 2,5-3 timmar tills köttet är mjukt. Kontrollera då och då att det finns tillräckligt med vätska i pannan.
 4. Skär kålen i klyftor och lägg på bakplåtspapper. Pensla med olja och krydda med peppar. Rosta i 225 grader i 20-25 minuter, tills kanterna tar färg.
-5. Servera karelsk stek med rostad kål.
+5. Servera den karelska köttgrytan med den rostade kålen.
 
 ## Anteckningar
 

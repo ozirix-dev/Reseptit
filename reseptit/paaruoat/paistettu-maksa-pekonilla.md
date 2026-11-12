@@ -71,9 +71,10 @@ Kerma kokoaa pannulle kastikkeen.
 
 1. Leikkaa maksa ohuiksi viipaleiksi ja kuivaa pinta. Paloittele pekoni.
 2. Paista pekoni rapeaksi ja siirrä sivuun. Ruskista sipuli pannurasvassa.
-3. Ruskista maksaviipaleet kuumalla pannulla, aluksi noin 1–2 minuuttia puoleltaan. Tämä aika ei yksin takaa kypsyyttä.
+3. Kuumenna luettelon voi pannulla ja ruskista maksaviipaleet, aluksi noin 1–2 minuuttia puoleltaan. Tämä aika ei yksin takaa kypsyyttä.
 4. Lisää kerma, pekoni ja mausteet. Jatka kypsennystä kastikkeessa, kunnes maksan sisälämpötila on vähintään 72 °C paksuimmasta kohdasta mitattuna. Tarjoa kuumana.
 
 ## Muistiinpanot
 
 - Käytä ruokalämpömittaria. Tarvittava aika riippuu viipaleiden paksuudesta ja pannun lämmöstä.
+- Vältä tätä maksaruokaa raskauden aikana Ruokaviraston ohjeen mukaan.

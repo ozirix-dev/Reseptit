@@ -60,8 +60,8 @@ I ugnen får ytan färg medan blomkålen ligger i den krämiga såsen.
 
 ## Gör så här
 
-1. Dela blomkålen i buketter och koka i saltat vatten i 5 minuter. Dränera väl.
-2. Stek baconet knaprigt och bred ut det i pannan med blomkålen.
+1. Dela blomkålen i buketter och koka i saltat vatten i 5 minuter. Låt rinna av ordentligt.
+2. Stek baconet knaprigt och fördela det och blomkålen i en ugnsform.
 3. Häll grädden ovanpå, krydda med peppar och strö osten ovanpå.
 4. Grädda i 200 °C i ca 20 minuter tills ytan tar färg.
 

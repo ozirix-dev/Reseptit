@@ -82,7 +82,7 @@ Fiery and aromatic wok, where meat, tofu and vegetables are seasoned with chili 
 ## Preparation
 
 1. Boil broccoli and lotus root for 2 minutes. Drain well.
-2. Heat the wok and oil. Fry the chicken until cooked in batches.
+2. Heat the oil in a wok. Fry the chicken in batches until cooked through.
 3. Add chili paste, Sichuan pepper and garlic. Stir-fry for 30 seconds.
 4. Add tofu, mushrooms, broccoli and lotus root. Fry for a few minutes until the vegetables are cooked but crunchy.
 5. Season with soy sauce and sesame oil. Finish with spring onions.

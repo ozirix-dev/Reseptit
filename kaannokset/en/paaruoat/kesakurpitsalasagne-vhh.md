@@ -71,7 +71,7 @@ The layers contain beef mince, tomato and cream, with cheese on top.
 
 1. Cut the zucchini into long thin slices and pat dry.
 2. Brown the minced meat and onion. Add crushed tomatoes and spices, simmer for 10 minutes.
-3. Layer the zucchini, sauce and cream in the pan. Finish with cheese.
+3. Layer the zucchini, sauce and cream in an ovenproof dish. Top with the cheese.
 4. Bake at 200 °C for about 35 minutes. Let it sit for 10 minutes.
 
 ## Notes

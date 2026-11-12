@@ -92,7 +92,7 @@ South Indian fish curry combines the aromatic flavors of coconut milk, tamarind 
 2. Heat the oil in a pot. Add mustard seeds and curry leaves. Add onion, garlic and ginger, saute until soft.
 3. Add turmeric, chili, tamarind water and salt. Simmer for 5 minutes.
 4. Pour the coconut milk into the pot and heat slowly. Do not boil vigorously.
-5. Add the fish and cook on a low heat for 8–10 minutes, until the fish splits when cooked.
+5. Thaw the pollock according to the packet instructions before cooking. Add the fish to the sauce and cook over low heat for 8–10 minutes, until cooked through and it flakes easily with a fork.
 6. Taste and adjust the salt. Serve with rice.
 
 ## Notes

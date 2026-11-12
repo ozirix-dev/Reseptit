@@ -88,7 +88,7 @@ Stir-fried chicken, peanuts and chilies are served with cooked white rice.
 
 2. Mix soy sauce, rice vinegar, sugar and water for the sauce.
 
-3. Heat a wok, add oil and fry the chicken in batches until browned. Set aside.
+3. Heat a wok, add the oil and fry the chicken in batches until cooked through. Set aside.
 
 4. Fry chilies, garlic and ginger briefly. Return chicken, add sauce and stir until glossy.
 

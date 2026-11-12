@@ -75,7 +75,7 @@ Urad-dal-linsseistä valmistettu ilmava taikina paistetaan renkaiksi ja tarjotaa
 2. Soseuta linssit pienissä erissä hyvin vähällä vedellä paksuksi, kuohkeaksi tahnaksi.
 3. Sekoita joukkoon chili, inkivääri, currylehdet, suola ja riisijauho.
 4. Kostuta kädet. Muotoile taikinasta palloja ja tee keskelle reikä.
-5. Kuumenna öljy 170 asteeseen. Paista vadoja muutama kerrallaan 3–4 minuuttia per puoli, kunnes ne ovat kullanruskeita.
+5. Kuumenna friteerausöljy 170 °C:seen. Friteeraa vadoja muutama kerrallaan 3–4 minuuttia per puoli, kunnes ne ovat kullanruskeita ja kypsiä myös sisältä.
 6. Nosta talouspaperille valumaan. Tarjoa kuumina chutneyn tai sambar-keiton kanssa.
 
 ## Muistiinpanot

@@ -82,7 +82,7 @@ Varm nudelsoppa i klar nötbuljong, med kryddiga köttskivor, vårlök och koria
 ## Tillagning
 
 1. Lägg köttet i en gryta och täck med vatten. Koka upp, skumma av skummet och häll av vattnet.
-2. Tillsätt 2 liter rent vatten, lök, ingefära, kanel, stjärnanis och salt i grytan. Sjud under lock tyst i ca 2 timmar tills köttet är mört.
+2. Tillsätt 2 liter nytt vatten, lök, ingefära, kanel, stjärnanis och salt i grytan. Sjud försiktigt under lock i cirka 2 timmar tills köttet är mört.
 3. Ta bort köttet från buljongen och sila av buljongen. Skär köttet i skivor.
 4. Koka nudlarna enligt anvisningarna på förpackningen. Tillsätt rättikan i buljongen och koka i 5 minuter.
 5. Dela nudlarna i skålar, tillsätt köttet och het buljong. Avsluta med vårlök, koriander och chiliolja.

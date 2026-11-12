@@ -92,8 +92,8 @@ Förbered ingredienserna före stekning: maten tillagas snabbt i en wok. Torrste
 2. Blanda fisksås, sojasås, ostronsås och erytritol.
 3. Hetta upp oljan i en wok. Stek kycklingen tills den är genomstekt och ställ den åt sidan en stund.
 4. Tillsätt vitlök och chili i pannan. Stek i ca 30 sekunder, tillsätt bönorna och paprikan och stek i några minuter.
-5. Tillsätt nudlarna, kycklingen och såsen. Slå på den varma pannan tills allt är varmt.
-6. Ta av kastrullen från spisen och rör ner thaibasilikan. Erbjud nu.
+5. Tillsätt nudlarna, kycklingen och såsen. Vänd runt i den heta woken tills allt är genomvarmt.
+6. Ta woken från värmen och vänd ner thaibasilikan. Servera genast.
 
 ## Anteckningar
 

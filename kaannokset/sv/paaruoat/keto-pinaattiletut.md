@@ -60,7 +60,7 @@ De här plättarna med spenat, färskost och mandelmjöl steks i panna. Receptet
 
 1. Mixa ägg, färskost, spenat, mandelmjöl och salt till en jämn smet.
 2. Stek små plättar i smör på medelvärme i 2–3 minuter per sida.
-3. Servera som den är eller med en välsmakande fyllning.
+3. Servera plättarna som de är eller med en salt fyllning.
 
 ## Anteckningar
 

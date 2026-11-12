@@ -86,7 +86,7 @@ Rostat rispulver ger traditionell rostighet och konsistens. En liten mängd är 
 
 1. Hetta upp vatten i en kastrull. Tillsätt köttfärsen och koka på svag värme, smula tills köttet är helt genomstekt.
 2. Ta bort kastrullen från spisen. Blanda i fisksås, limejuice och chili.
-3. Om så önskas, tillsätt rispulver. Rör ner schalottenlök, mynta och koriander.
+3. Tillsätt rostat rispulver om du vill. Vänd ner schalottenlök, mynta och koriander.
 4. Smaka av och justera sälta, syra och hetta.
 5. Servera varm med kålklyftor och gurkskivor.
 

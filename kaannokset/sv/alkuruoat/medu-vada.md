@@ -73,7 +73,7 @@ En luftig smet gjord på urad dal-linser steks till ringar och serveras med samb
 2. Purea linserna i små omgångar med väldigt lite vatten till en tjock, svampig pasta.
 3. Blanda i chili, ingefära, curryblad, salt och rismjöl.
 4. Blöt dina händer. Forma degen till bollar och gör ett hål i mitten.
-5. Värm oljan till 170 grader. Stek vadon några åt gången i 3-4 minuter per sida tills de är gyllenbruna.
+5. Värm friteringsoljan till 170 °C. Fritera några vada i taget i 3–4 minuter per sida tills de är gyllenbruna och genomstekta.
 6. Ta bort till hushållspapper för att rinna av. Servera varm med chutney eller sambarsoppa.
 
 ## Anteckningar
