@@ -4,7 +4,7 @@ recipe_id: hampurilaissampylat-moomie
 url_slug: hampurilaissampylat-moomie
 category: leivonnainen
 language: th
-status: draft
+status: published
 servings: 9
 carbs_net_per_serving_g: 45.33
 carbs_total_per_serving_g: 47.57
@@ -88,3 +88,5 @@ translation_of: hampurilaissampylat-moomie
 
 - ดัดแปลงจาก [Beautiful Burger Buns ของ Ellen Dorsey (Moomie)](https://www.kingarthurbaking.com/recipes/beautiful-burger-buns-recipe) และ [วิดีโอ](https://www.youtube.com/watch?v=QHvjvpVdBxw) ต้นฉบับได้ 8 ชิ้น ฉบับนี้ได้ 9 ชิ้น
 - ค่าสารอาหารนับเนยทั้งหมด 48 กรัมและงา 9 กรัม เวลารวม 165 นาทีเป็นค่าประมาณ อาจใช้เวลานานกว่าเมื่อพักแป้งนาน ไม่มีค่า GI/GK ที่ยืนยันหรือการทดลองอบ
+
+มีข้าวสาลี นม ไข่ และงา ภาพประกอบสร้างด้วยปัญญาประดิษฐ์

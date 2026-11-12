@@ -4,7 +4,7 @@ recipe_id: lahi-ita-taatelipuuro-tahinilla
 url_slug: lahi-ita-taatelipuuro-tahinilla
 category: aamupala
 language: th
-status: draft
+status: published
 main_ingredient:
 - kaurahiutale
 - taateli
@@ -70,3 +70,5 @@ translation_of: lahi-ita-taatelipuuro-tahinilla
 ## หมายเหตุ
 
 ค่าโหลดน้ำตาลเป็นค่าประมาณจากวัตถุดิบและสมมติฐาน GI ที่ระบุ มีความเชื่อมั่นต่ำ ไม่ใช่ผลวัดจริงหรือการทำนายน้ำตาลในเลือดรายบุคคล คำนวณเฉพาะวัตถุดิบที่ระบุ
+
+มีข้าวโอ๊ต นม และงา ภาพประกอบอาจมีเครื่องโรยหน้าเพิ่มเติม ซึ่งไม่รวมในค่าประมาณสารอาหารและภาระน้ำตาล

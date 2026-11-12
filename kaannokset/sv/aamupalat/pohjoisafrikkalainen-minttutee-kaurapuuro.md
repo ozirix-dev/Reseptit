@@ -4,7 +4,7 @@ recipe_id: pohjoisafrikkalainen-minttutee-kaurapuuro
 url_slug: pohjoisafrikkalainen-minttutee-kaurapuuro
 category: aamupala
 language: sv
-status: draft
+status: published
 main_ingredient:
 - kaurahiutale
 - minttu
@@ -70,3 +70,5 @@ Den strukturerade ingredienslistan ovan innehåller mängderna för portionsräk
 ## Anteckningar
 
 Den beräknade glykemiska belastningen gäller myntablad som äts tillsammans med gröten, inte silat myntte. Det finns ingen beräknad belastning för det silade alternativet; använd inte detta värde för det.
+
+Innehåller havre och mjölk. Den modellerade skattningen har låg tillförlitlighet. Den bygger inte på mätning av måltidens blodsockerrespons och ska inte användas för insulindosering.

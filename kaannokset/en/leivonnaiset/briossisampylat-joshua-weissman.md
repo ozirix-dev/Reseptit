@@ -4,7 +4,7 @@ recipe_id: briossisampylat-joshua-weissman
 url_slug: briossisampylat-joshua-weissman
 category: leivonnainen
 language: en
-status: draft
+status: published
 servings: 9
 carbs_net_per_serving_g: 49.46
 carbs_total_per_serving_g: 51.86
@@ -102,10 +102,12 @@ The structured list above supplies weighed amounts for the serving calculator.
 3. Add the yeast milk, tangzhong, 75 g shelled egg and 27 g egg yolk. Knead briefly, add 63 g softened butter in portions and knead another 8–12 minutes until elastic.
 4. Cover and rise in a warm place for 60–90 minutes, until nearly doubled.
 5. Divide into nine equal weighed pieces and shape tight balls. Arrange 3 × 3 on parchment only if the tray has room; otherwise use two trays. Proof another 60–120 minutes.
-6. Preheat the oven to 190 °C and brush the tops with all 15 g beaten egg measured for the glaze.
+6. Preheat the oven to 190 °C. Use the measured 15 g of beaten egg to brush a thin coat onto the buns.
 7. Bake in the middle of the oven for about 16–20 minutes, until deeply golden and cooked through. Brush the hot buns with all 12 g melted butter and cool on a rack before slicing.
 
 ## Notes
 
 - [Original Joshua Weissman burger-bun recipe](https://www.joshuaweissman.com/recipes/best-burger-buns-recipe) and [video](https://www.youtube.com/watch?v=gTGSUYMu6Ns). This is an independently worded nine-bun adaptation.
 - The ingredient-based nutrition counts all 15 g egg wash and 12 g finishing butter; actual adhesion and baking losses are not measured. No supported GI/GK for this bun and no physical test bake.
+
+Contains wheat, milk and egg. The image is an AI-generated illustration.

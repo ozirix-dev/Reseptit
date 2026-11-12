@@ -4,7 +4,7 @@ recipe_id: pohjoisafrikkalainen-minttutee-kaurapuuro
 url_slug: pohjoisafrikkalainen-minttutee-kaurapuuro
 category: aamupala
 language: en
-status: draft
+status: published
 main_ingredient:
 - kaurahiutale
 - minttu
@@ -70,3 +70,5 @@ The structured ingredient list above supplies the amounts for the serving calcul
 ## Notes
 
 The modeled glycemic load covers mint leaves eaten with the porridge, not strained mint tea. A strained-infusion alternative has not been assigned a glycemic-load estimate; do not reuse this value for it.
+
+Contains oats and milk. The modeled estimate has low confidence and is not a measured meal response or a basis for insulin dosing.

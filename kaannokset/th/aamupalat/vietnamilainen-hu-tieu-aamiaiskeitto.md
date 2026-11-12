@@ -1,10 +1,10 @@
 ---
-title: "ก๋วยเตี๋ยวฮủ tiếu เวียดนามใส่หมูและถั่วงอก"
+title: "ก๋วยเตี๋ยวหูเตี๊ยว เวียดนามใส่หมูและถั่วงอก"
 recipe_id: vietnamilainen-hu-tieu-aamiaiskeitto
 url_slug: vietnamilainen-hu-tieu-aamiaiskeitto
 category: aamupala
 language: th
-status: draft
+status: published
 main_ingredient:
   - "เส้นข้าว"
   - "หมู"
@@ -39,7 +39,7 @@ tags:
   - "ก๋วยเตี๋ยว"
 image:
   src: aamupalat/vietnamilainen-hu-tieu-aamiaiskeitto.webp
-  alt: "ก๋วยเตี๋ยวฮủ tiếu ใส่หมูและถั่วงอก"
+  alt: "ก๋วยเตี๋ยวหูเตี๊ยว ใส่หมูและถั่วงอก"
   width: 1536
   height: 1024
 carbs_net_per_serving_g: 42.08
@@ -51,11 +51,11 @@ source_recipe: reseptit/aamupalat/vietnamilainen-hu-tieu-aamiaiskeitto.md
 translation_of: vietnamilainen-hu-tieu-aamiaiskeitto
 ---
 
-# ก๋วยเตี๋ยวฮủ tiếu เวียดนามใส่หมูและถั่วงอก
+# ก๋วยเตี๋ยวหูเตี๊ยว เวียดนามใส่หมูและถั่วงอก
 
 ## คำอธิบาย
 
-สูตรก๋วยเตี๋ยวฮủ tiếu แบบเรียบง่ายที่ชั่งวัตถุดิบ ใช้หมูสันนอก เส้นข้าว ถั่วงอก ผักชี และเสิร์ฟพร้อมน้ำต้มทั้งหมด
+สูตรก๋วยเตี๋ยวหูเตี๊ยว แบบเรียบง่ายที่ชั่งวัตถุดิบ ใช้หมูสันนอก เส้นข้าว ถั่วงอก ผักชี และเสิร์ฟพร้อมน้ำต้มทั้งหมด
 
 ## วัตถุดิบ
 
@@ -70,3 +70,5 @@ translation_of: vietnamilainen-hu-tieu-aamiaiskeitto
 ## หมายเหตุ
 
 ทั้ง 2 ที่รวมน้ำต้มทั้งหมด 700 กรัม ชั่งเส้นข้าวขณะแห้ง ไม่รวมการเติมน้ำมันหรือน้ำซุปอื่น เวลารวม 20 นาทีเป็นค่าประมาณจากต้นฉบับ ไม่ใช่เวลาที่วัดจริง
+
+ค่าภาระน้ำตาลจากแบบจำลองอ้างอิงค่า GI ของอาหารที่นำมาเปรียบเทียบและใช้สมมติฐานสำหรับวัตถุดิบจากพืช ค่าประมาณนี้มีความเชื่อมั่นต่ำ ไม่ได้มาจากการวัดการตอบสนองต่ออาหารมื้อนี้ และไม่ใช้กำหนดขนาดอินซูลิน

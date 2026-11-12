@@ -4,7 +4,7 @@ recipe_id: hampurilaissampylat-moomie
 url_slug: hampurilaissampylat-moomie
 category: leivonnainen
 language: en
-status: draft
+status: published
 servings: 9
 carbs_net_per_serving_g: 45.33
 carbs_total_per_serving_g: 47.57
@@ -88,3 +88,5 @@ The structured list above supplies weighed amounts for the serving calculator.
 
 - Based on Ellen Dorsey's (Moomie's) [Beautiful Burger Buns at King Arthur Baking](https://www.kingarthurbaking.com/recipes/beautiful-burger-buns-recipe) and [video](https://www.youtube.com/watch?v=QHvjvpVdBxw). Original yields eight buns; this version yields nine.
 - Nutrition counts all 48 g butter and 9 g sesame seeds. The 165-minute total is an estimate; longer proofing can exceed it. No approved GI/GK value and this nine-bun version has not been test-baked.
+
+Contains wheat, milk, egg and sesame. The image is an AI-generated illustration.

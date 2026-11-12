@@ -4,7 +4,7 @@ recipe_id: malesialainen-mee-goreng-aamunuudeleilla
 url_slug: malesialainen-mee-goreng-aamunuudeleilla
 category: aamupala
 language: en
-status: draft
+status: published
 main_ingredient:
   - "wheat noodles"
   - "tofu"
@@ -70,8 +70,10 @@ The structured ingredient list above supplies the weighed quantities for serving
 2. Heat the listed 1 tablespoon frying oil in a large frying pan or wok. Lightly brown the tofu.
 3. Add the bean sprouts and stir-fry over high heat until hot throughout and slightly softened.
 4. Add the drained wheat noodles and listed 1 tablespoon soy sauce. Crack both eggs into the pan and toss until the eggs are fully set and the noodles hot.
-5. Taste for salt and add only the listed optional salt if necessary. Divide everything into two servings. No separate dough, patties or unlisted accompaniments.
+5. Taste for salt and add only the listed optional salt if necessary. Divide everything into two servings.
 
 ## Notes
 
 All noodles are the 100 g dry wheat noodles recorded in the nutrition calculation, with two separate eggs. No additional sauce is included; nutrition is ingredient-based.
+
+Contains wheat, egg and soy.

@@ -4,7 +4,7 @@ recipe_id: kevyet-briossisampylat-clever-carrot
 url_slug: kevyet-briossisampylat-clever-carrot
 category: leivonnainen
 language: sv
-status: draft
+status: published
 servings: 9
 carbs_net_per_serving_g: 41.27
 carbs_total_per_serving_g: 43.22
@@ -97,3 +97,5 @@ Den strukturerade ingredienslistan ovan ger de uppvägda mängderna för portion
 
 - Emilie Raffas [Light Brioche Hamburger Buns hos The Clever Carrot](https://www.theclevercarrot.com/2013/05/light-brioche-hamburger-buns/). Originalet ger åtta bröd; den uppvägda versionen nio.
 - Mjölmåtten omvandlades med ungefär 120 g per kopp; volymvikten kan variera. Totaltiden 275 minuter är uppskattad. Näringen inkluderar 15 g penslingsägg. Ingen sesam, inget godkänt GI/GK eller provbakning.
+
+Innehåller vete, mjölk och ägg. Bilden är en AI-genererad illustration. En provbakning behövs för att slutligt verifiera den här versionen.

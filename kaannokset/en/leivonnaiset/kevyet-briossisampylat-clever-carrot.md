@@ -4,7 +4,7 @@ recipe_id: kevyet-briossisampylat-clever-carrot
 url_slug: kevyet-briossisampylat-clever-carrot
 category: leivonnainen
 language: en
-status: draft
+status: published
 servings: 9
 carbs_net_per_serving_g: 41.27
 carbs_total_per_serving_g: 43.22
@@ -97,3 +97,5 @@ The structured list above supplies weighed amounts for the serving calculator.
 
 - Adapted from Emilie Raffa's [Light Brioche Hamburger Buns at The Clever Carrot](https://www.theclevercarrot.com/2013/05/light-brioche-hamburger-buns/). Original yields eight buns; this weighed adaptation yields nine.
 - Source flour cups were converted using about 120 g per cup, which varies by flour. The 275-minute total is an estimate. Nutrition counts all 15 g egg wash; no sesame, accepted GI/GK value or test bake.
+
+Contains wheat, milk and egg. The image is an AI-generated illustration. A test bake is still needed to verify this adaptation.

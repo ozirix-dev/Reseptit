@@ -4,7 +4,7 @@ recipe_id: vietnamilainen-hu-tieu-aamiaiskeitto
 url_slug: vietnamilainen-hu-tieu-aamiaiskeitto
 category: aamupala
 language: en
-status: draft
+status: published
 main_ingredient:
   - "rice noodles"
   - "pork"
@@ -70,3 +70,5 @@ The structured ingredient list above supplies the weighed quantities for serving
 ## Notes
 
 The two servings include all 700 g cooking water. The rice noodles are dry before cooking; no extra oil or broth is counted. The 20-minute total is a source estimate, not measured.
+
+The modeled glycemic load uses named GI comparisons and a modeling assumption for plant ingredients. Confidence is low. It does not measure the response to this meal and should not be used to determine insulin doses.

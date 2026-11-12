@@ -4,7 +4,7 @@ recipe_id: lahi-ita-taatelipuuro-tahinilla
 url_slug: lahi-ita-taatelipuuro-tahinilla
 category: aamupala
 language: en
-status: draft
+status: published
 main_ingredient:
 - kaurahiutale
 - taateli
@@ -70,3 +70,5 @@ The structured ingredient list above supplies the amounts for the serving calcul
 ## Notes
 
 The modeled glycemic load is based on the listed foods and stated GI assumptions. Its confidence is low; it is not a measured or personal blood-glucose response. Only the ingredients listed here are included.
+
+Contains oats, milk and sesame. The serving illustration may show extra toppings that are excluded from the nutrient and glycemic-load estimates.

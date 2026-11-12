@@ -130,14 +130,12 @@ test("URL filters normalize whitespace and reject unknown categories and diet va
 });
 
 test("a search in a translated directory stays within that locale", () => {
-  const english = siteContent.recipes.filter((recipe) => recipe.locale === "en");
-  const results = filterRecipes(english, { ...emptyRecipeFilters, query: "beef macaroni" }, "en");
-  assert.equal(results.length, 1);
-  assert.equal(results[0].locale, "en");
-  const thai = siteContent.recipes.filter((recipe) => recipe.locale === "th");
-  const thaiResults = filterRecipes(thai, { ...emptyRecipeFilters, query: "โปรตีนสูง" }, "th");
-  assert.equal(thaiResults.length, 1);
-  assert.equal(thaiResults[0].locale, "th");
+  for (const [locale, query] of [["en", "beef macaroni"], ["th", "โปรตีนสูง"]] as const) {
+    const directory = siteContent.recipes.filter((recipe) => recipe.locale === locale);
+    const results = filterRecipes(directory, { ...emptyRecipeFilters, query }, locale);
+    assert.ok(results.some((recipe) => recipe.recipeId === "jauheliha-makaronilaatikko"), locale);
+    assert.ok(results.every((recipe) => recipe.locale === locale), locale);
+  }
 });
 
 test("GK URL parameter is strict, composable and round-trippable", () => {

@@ -4,7 +4,7 @@ recipe_id: lahi-ita-taatelipuuro-tahinilla
 url_slug: lahi-ita-taatelipuuro-tahinilla
 category: aamupala
 language: sv
-status: draft
+status: published
 main_ingredient:
 - kaurahiutale
 - taateli
@@ -70,3 +70,5 @@ Den strukturerade ingredienslistan ovan innehåller mängderna för portionsräk
 ## Anteckningar
 
 Den beräknade glykemiska belastningen bygger på de angivna råvarorna och GI-antaganden. Säkerheten är låg; värdet är varken uppmätt eller en personlig blodsockerprognos. Endast de angivna ingredienserna ingår.
+
+Innehåller havre, mjölk och sesam. Serveringsbilden kan visa extra tillbehör som inte ingår i närings- eller GL-beräkningen.

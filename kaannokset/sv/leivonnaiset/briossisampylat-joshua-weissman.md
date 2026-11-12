@@ -4,7 +4,7 @@ recipe_id: briossisampylat-joshua-weissman
 url_slug: briossisampylat-joshua-weissman
 category: leivonnainen
 language: sv
-status: draft
+status: published
 servings: 9
 carbs_net_per_serving_g: 49.46
 carbs_total_per_serving_g: 51.86
@@ -102,10 +102,12 @@ Den strukturerade ingredienslistan ovan ger de uppvägda mängderna för portion
 3. Tillsätt jästmjölken, tangzhongen, 75 g ägg vägt utan skal och 27 g äggula. Knåda kort, arbeta in 63 g mjukt smör i omgångar och knåda ytterligare 8–12 minuter tills degen är elastisk.
 4. Täck och låt jäsa varmt i cirka 60–90 minuter tills degen nästan fördubblats.
 5. Dela i nio lika tunga bitar och forma fasta bollar. Lägg glest i en 3 × 3-uppställning endast om plåten är stor nog, annars på två plåtar. Jäs ytterligare 60–120 minuter.
-6. Värm ugnen till 190 °C och pensla bröden med samtliga 15 g uppvägt uppvispat ägg.
+6. Värm ugnen till 190 °C. Pensla ett tunt lager på bröden med de uppvägda 15 g uppvispat ägg.
 7. Grädda mitt i ugnen cirka 16–20 minuter tills bröden är djupt gyllene och genomgräddade. Pensla de varma bröden med alla 12 g smält smör och låt svalna på galler före delning.
 
 ## Anteckningar
 
 - Efter [Joshua Weissmans originalrecept](https://www.joshuaweissman.com/recipes/best-burger-buns-recipe) och [video](https://www.youtube.com/watch?v=gTGSUYMu6Ns). Detta är en självständig, uppvägd nio-brödsversion.
 - Näringsberäkningen omfattar 15 g penslingsägg och 12 g smör efter gräddningen. Verkliga förluster har inte mätts. Inget godkänt GI/GK och ingen provbakning för denna version.
+
+Innehåller vete, mjölk och ägg. Bilden är en AI-genererad illustration.

@@ -4,7 +4,7 @@ recipe_id: hampurilaissampylat-moomie
 url_slug: hampurilaissampylat-moomie
 category: leivonnainen
 language: sv
-status: draft
+status: published
 servings: 9
 carbs_net_per_serving_g: 45.33
 carbs_total_per_serving_g: 47.57
@@ -88,3 +88,5 @@ Den strukturerade ingredienslistan ovan ger de uppvägda mängderna för portion
 
 - Ellen Dorseys (Moomies) [Beautiful Burger Buns hos King Arthur Baking](https://www.kingarthurbaking.com/recipes/beautiful-burger-buns-recipe) och [video](https://www.youtube.com/watch?v=QHvjvpVdBxw). Originalet ger åtta bröd; denna version ger nio.
 - Näringsberäkningen omfattar alla 48 g smör och 9 g sesam. Totaltiden 165 minuter är uppskattad och lång jäsning kan överskrida den. Inget godkänt GI/GK och ingen provbakning.
+
+Innehåller vete, mjölk, ägg och sesam. Bilden är en AI-genererad illustration.
