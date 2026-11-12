@@ -1,6 +1,8 @@
 # Rouva Keto -tutkimuserän julkaisuportit: katselmointi 8.11.2026
 
-**Tila: RESEARCH REVIEW / HOLD for publishing.** Tämä on PR #305:n täsmällinen jatko-ohje, ei lupa julkaista reseptejä, hyväksyä numeerista GK:ta tai muuttaa suljettua GI-historiaa.
+## Tilanne 12.11.2026
+
+Rasvakaakao ja lämmin suklaa-chia-puuro julkaistiin erillisissä FI-PR:issä. Suklaavaahto pysyy **HOLDissa**. Tämä muistio säilyttää 8.11. tehdyn katselmoinnin ja suklaavaahdon avoimet julkaisuportit. [Julkaisutilanne ja reseptisivut](README.md#julkaisutilanne-12112026) · [Rasvakaakao #473](https://github.com/ozirix-dev/Reseptit/pull/473) · [Chia-puuro #478](https://github.com/ozirix-dev/Reseptit/pull/478)
 
 ## Varmennetut osat
 
@@ -11,7 +13,7 @@
 - GitHubin PR #305 vanhan HEADin `8001db15` CI 42370488678 oli **SUCCESS**. Tässä 8.11. tehty dokumenttimuutos vaatii oman uuden CI-vahvistuksen.
 - PR #313 on **erillinen FI-julkaisuhaara**, joka on nykyistä mainia jäljessä ja sisältää historialukituksiin liittyviä testimuutoksia. Sen aiempi 330 → 333 -laskelma ei vastaa mainissa julkaistuja viittä lisäreseptiä: nykyinen lähtöjoukko on 335, jolloin kolmen uuden reseptin julkaisu kasvattaisi määrän 338:aan. Historialukituksia ei päivitetä sokkona.
 
-## Reseptikohtainen päätösmatriisi
+## Reseptikohtainen päätösmatriisi 8.11.2026
 
 | Ehdokas | Työ, joka voidaan hyväksyä ilman koekeittiötä | Edelleen estävä näyttö |
 | --- | --- | --- |
@@ -34,7 +36,7 @@ https://www.fda.gov/food/people-risk-foodborne-illness/dairy-and-eggs-food-safet
 - PR #305:n kolme SVG:tä ovat **tutkimusluonnoksia**, eivät kuvauskokeen valokuvia. PR #313:n erilliset WebP:t tulee tarkistaa suhteessa juuri sen kolmelle reseptille tarkoitetun ohjeen ulkonäköön. Älä nimeä kuvia koevalmistuksen kuviksi.
 - PR #313:n FI-first-rajauksessa EN/SV/TH-käännöksiä ei julkaista. Myöhemmät yhdeksän käännöstä vaativat itsenäisen kieli- ja merkitysvertailun. `status: draft` ei yksin korvaa tätä hyväksyntää.
 
-## Päätös ja työjärjestys
+## Alkuperäinen työjärjestys 8.11.2026
 
 1. **#305 / tutkimusarkistointi:** validoi uuden HEADin CI, alkuperäisviitteet ja käyttöoikeusrajat. Tutkimusdokumentti voidaan katselmoida omana toimituksellisena eränään; **se ei anna julkaisulupaa #313:lle**.
 2. **#313 / koodijulkaisu:** sovita erillinen haara nykyiseen mainiin säilyttäen kaikki nykyiset testit ja aiemmat historiatarkisteet. Älä julkaise, ennen kuin tuotemäärät, allergeenit, pastöroidun valkuaisen soveltuvuus ja koekeittiön lopputulos on todennettu.
@@ -55,4 +57,4 @@ https://www.fda.gov/food/people-risk-foodborne-illness/dairy-and-eggs-food-safet
 - Kuumentamaton keltuainen vaatii oman **pastöroidun tuoteversion** ja pakkauksen ravintotiedon; yllä mainittu valkuaistuote ei ole keltuaislähde. Näiden ravintotietueiden vaihtuessa myös suklaavaahdon aiemmat makroarviot on laskettava uudestaan.
 - [K-Ruoan täsmä-Lindt 90 %](https://www.k-ruoka.fi/kauppa/tuote/lindt-excellence-tumma-suklaa-100g-90-3046920029759) vahvistaa EAN 3046920029759 ja 14 g CHO /100 g, mutta kuitu/polyolit puuttuvat ravintoilmoituksesta; niitä ei täytetä arvolla 0. Allergeenimerkinnöissä voi olla pähkinän, maidon ja soijan jäämiä.
 
-**Päätös:** rasvakaakao ja lämmin chia-puuro voidaan valmistella *omana teknisenä FI-first-julkaisueränä*, mutta niidenkin tuotetiedot ja valmistuksen dokumentointi ovat erilliset portit. Suklaavaahto jää itsenäiseksi HOLD-ehdokkaaksi, kunnes kylmään käyttöön hyväksytyn pastöroidun keltuaisen ja vaahtoutuvan valkuaisen tuotetunnukset, annosmassat, makrot ja valmistusnäyttö ovat saatavilla. Älä merkitse simuloitua valmistusta todelliseksi koekeittiöksi.
+**Suklaavaahto pysyy HOLDissa.** Avoinna ovat kylmään käyttöön soveltuvan pastöroidun keltuaisen ja vaahtoutuvan valkuaisen tuotetiedot, annosmassat, tuoteperusteinen ravintolaskenta ja valmistusnäyttö.

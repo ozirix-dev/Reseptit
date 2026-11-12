@@ -1,9 +1,17 @@
 # Rouva Keto – julkisten reseptien lähdekartoitus ja ensimmäiset neljä ehdokasta
 
 **Päivä:** 2026-11-06
-**Tila:** KATSELMOINTI / RESEARCH_ONLY, ei mergeä, ei deployta
+**Tila:** RESEARCH_ONLY
 **Kohde:** Recipavo / `ozirix-dev/Reseptit`
 **Rinnakkaiset työt:** blogi-PR #303, hero-PR #301 ja sämpylä-PR #302; tämän erän tiedostot eivät koske niiden navigaatiota, heroa tai tuotantoreseptejä.
+
+## Julkaisutilanne 12.11.2026
+
+- **Rasvakaakao tummalla suklaalla on julkaistu** suomeksi omassa PR:ssä. [Reseptisivu](https://ozirix-dev.github.io/Reseptit/rasvakaakao-rouva-keto/) · [Julkaisu-PR #473](https://github.com/ozirix-dev/Reseptit/pull/473)
+- **Lämmin suklaa-chia-puuro on julkaistu** suomeksi omassa PR:ssä. [Reseptisivu](https://ozirix-dev.github.io/Reseptit/lammin-chia-puuro-rouva-keto/) · [Julkaisu-PR #478](https://github.com/ozirix-dev/Reseptit/pull/478)
+- **Kahden aineksen suklaavaahto pysyy HOLDissa** tutkimusluonnoksena. Tuotekohtainen näyttö, annosmassat, ravintolaskenta ja valmistusnäyttö ovat vielä avoinna. [Tutkimusluonnos](luonnokset/suklaavaahto-tummasta-suklaasta.md) · [Julkaisuportit](julkaisuportit-2026-11-08.md)
+
+Alla olevat vertailulaskelmat, GK-skenaariot ja luonnoskuvat kuuluvat alkuperäiseen tutkimusaineistoon. Ajantasaiset reseptit, kuvat ja ravintotiedot löytyvät julkaistuista reseptisivuista.
 
 ## Rajaus ja lähdeluokat
 
@@ -12,7 +20,7 @@
 - Muistilähteet: käyttäjän kokoama julkisten reseptinimien lista ja Rouva Keton Top 20 -e-kirjan nimiluettelo. **Pelkkä nimi ei todista maksuttoman täyden ohjeen löytymistä.** Maksullista e-kirjaa ei käytetä reseptien sisällön lähteenä.
 - Käytämme vain ruoan ideaa, tosiseikkoina esitettyjä ainesosia ja omaa tekstiä. Kuvien tulee olla omia tai lisensoituja. Lähdemerkintä ei anna oikeutta kopioida valokuvaa tai omaperäistä blogitekstiä eikä ilmaise yhteistyötä.
 
-## Neljän reseptin deduplikointi
+## Neljän reseptin deduplikointi 6.11.2026
 
 | Ehdokas | Nykyinen Recipavo | Päätös / sisältö |
 | --- | --- | --- |
@@ -86,7 +94,7 @@ Tämän katselmointierän CI on punainen, samoin [samanaikainen main-CI #4219951
 
 Tutkimusaineiston arkistointi ja valmiiden reseptien julkaisu ovat eri hyväksynnät. Vihreä CI ei vahvista koekeittiötä, pastöroitujen munatuotteiden vaahtoutuvuutta, pakkauksia, tekijänoikeuksia tai tuotteeseen ja valmistukseen sopivaa GI:tä.
 
-## Portit ennen Ready/merge/julkaisua
+## Alkuperäiset julkaisuportit 6.11.2026
 
 1. Hyväksy kolme punnittavaa keittiösovitetta ja pizzan vertailun rajaus; reseptit on koetehtävä. Chia-puuron suolamäärä on toimituksellisesti pienennetty.
 2. Tarkista erityisesti kuohukerman rasvaprosentti, tuorejuusto, kookosöljy, Pofiber, tumma suklaa sekä pastöroidut munaerät tuotepakkausten ja ravintotietueiden tasolla. Jos tuote muuttuu, laske uudelleen.
@@ -95,4 +103,4 @@ Tutkimusaineiston arkistointi ja valmiiden reseptien julkaisu ovat eri hyväksyn
 5. Tarkista suomenkieliset tekstit, tee EN/SV/TH-käännökset tarvittaessa, ja aja `cd site && npm ci && npm test && npm run build && npm run test:static && npm run audit:nutrition`. Tässä tutkimus-PR:ssä ei ole tehty paikallista buildiä connector-ympäristössä.
 6. GK pysyy julkaisematta, kunnes sekä mittauslähde- ja tuotekohtainen soveltuvuus että puuttuvien GI-osuuksien rajat on katselmoitu. Suklaan 29 on vasta kategorinen skenaario, ei hyväksytty piste. Draft-tila ei synnytä julkaistavia reittejä.
 
-**Julkaisupäätöstä tai yhteistyöväitettä Rouva Keton kanssa ei ole tehty.**
+Katselmointi 6.11. ei sisältänyt julkaisupäätöstä. Toteutuneet erilliset julkaisut on kirjattu tämän muistion alkuun.
