@@ -151,7 +151,7 @@ try {
     // The legacy Search Console verification belongs to GitHub Pages.
     await rm(path.join(distDir, "google0c6f9c0486376f0f.html"), { force: true });
   }
-  if (siteTarget.noIndex) {
+  if (siteTarget.basePath === "/" && siteTarget.noIndex) {
     await writeFile(path.join(distDir, "_headers"), "/*\n  X-Robots-Tag: noindex, nofollow\n", "utf8");
   }
   console.log(`Prerendered ${routes.length} routes with visible content, metadata, and a not-found page.`);

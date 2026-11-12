@@ -286,10 +286,11 @@ export const contentManifest: Record<string, string> = ${JSON.stringify(manifest
   const publicDir = path.join(siteDir, "public");
   await mkdir(publicDir, { recursive: true });
   await writeFile(path.join(publicDir, "sitemap.xml"), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>\n`, "utf8");
-  const robots = siteTarget.noIndex
-    ? "User-agent: *\nAllow: /\n"
-    : (siteTarget.production ? "" : "# Project-path robots.txt; host-wide crawling policy is controlled at /robots.txt.\n")
-      + "User-agent: *\nAllow: " + siteTarget.basePath + "\n\nSitemap: " + baseUrl + "/sitemap.xml\n";
+  const robots = (siteTarget.basePath === "/Reseptit/"
+    ? "# Project-path robots.txt; host-wide crawling policy is controlled at /robots.txt.\n"
+    : "")
+    + "User-agent: *\nAllow: " + siteTarget.basePath + "\n"
+    + (siteTarget.noIndex ? "" : "\nSitemap: " + baseUrl + "/sitemap.xml\n");
   await writeFile(path.join(publicDir, "robots.txt"), robots, "utf8");
   await writeFile(path.join(publicDir, ".nojekyll"), "", "utf8");
   console.log(`Built ${recipes.length} published recipe translations from local Markdown.`);

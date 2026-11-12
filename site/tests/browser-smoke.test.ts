@@ -78,7 +78,7 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
       assert.equal(await page.locator('meta[name="twitter:card"]').getAttribute("content"), "summary");
       assert.equal(await page.locator('meta[name="twitter:title"]').getAttribute("content"), methodPage.title);
       assert.equal(await page.locator('meta[name="twitter:description"]').getAttribute("content"), methodPage.description);
-      assert.equal(await page.locator('meta[name="robots"]').count(), 0);
+      assert.match(await page.locator('meta[name="robots"]').getAttribute("content") ?? "", /noindex\s*,\s*nofollow/);
       assert.equal(await page.locator('link[rel="canonical"]').count(), 1);
       assert.equal(await page.locator('link[rel="alternate"][hreflang]').count(), 5);
       assert.equal(await page.locator('link[rel="alternate"][hreflang="x-default"]').count(), 1);
@@ -152,7 +152,7 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
       await page.evaluate((path) => { history.pushState(null, "", path); dispatchEvent(new PopStateEvent("popstate")); }, noSlashPath);
       await page.waitForFunction((title) => document.title === title && Boolean(document.querySelector('link[rel="canonical"]')), methodPage.title);
       assert.equal(await page.locator('link[rel="canonical"]').getAttribute("href"), canonical, `${methodPage.locale}: no-slash route keeps slash canonical`);
-      assert.equal(await page.locator('meta[name="robots"]').count(), 0, `${methodPage.locale}: no-slash route remains indexable`);
+      assert.match(await page.locator('meta[name="robots"]').getAttribute("content") ?? "", /noindex\s*,\s*nofollow/, `${methodPage.locale}: no-slash route keeps staging noindex`);
     }
 
     await page.goto(`${base}/kermainen-lohipata/`);
@@ -314,7 +314,7 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
       dispatchEvent(new PopStateEvent("popstate"));
     });
     await page.getByRole("heading", { name: "Sivua ei löytynyt" }).waitFor();
-    await page.waitForFunction(() => document.querySelector<HTMLMetaElement>('meta[name="robots"]')?.content === "noindex,follow");
+    await page.waitForFunction(() => document.querySelector<HTMLMetaElement>('meta[name="robots"]')?.content === "noindex,nofollow");
     assert.equal(await page.locator('link[rel="canonical"]').count(), 0);
     assert.equal(await page.locator('script#recipe-jsonld').count(), 0);
     assert.equal(await page.locator('link[rel="alternate"][hreflang]').count(), 0);
@@ -332,7 +332,7 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
       await page.getByRole("heading", { name: missingPage.heading }).waitFor();
       assert.equal(await page.locator("html").getAttribute("lang"), missingPage.locale);
       assert.equal(await page.title(), missingPage.title);
-      assert.equal(await page.locator('meta[name="robots"]').getAttribute("content"), "noindex,follow");
+      assert.equal(await page.locator('meta[name="robots"]').getAttribute("content"), "noindex,nofollow");
       assert.equal(await page.locator('link[rel="canonical"]').count(), 0);
       assert.equal(await page.locator('link[rel="alternate"][hreflang]').count(), 0);
     }
