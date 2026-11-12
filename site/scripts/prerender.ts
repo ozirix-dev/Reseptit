@@ -1,6 +1,7 @@
+import { siteTarget } from "../src/content/site-target";
 import { recipeCardSizes } from "../src/features/recipes/image-layout";
 import { contentForRoute, serializeRouteContent } from "../src/content/route-data";
-import { mkdir, readFile, writeFile } from "node:fs/promises";
+import { mkdir, readFile, rm, writeFile } from "node:fs/promises";
 import path from "node:path";
 import React from "react";
 import { renderToString } from "react-dom/server";
@@ -15,7 +16,7 @@ import type { RecipeLocale } from "../src/types/content";
 
 const siteDir = path.resolve(import.meta.dirname, "..");
 const distDir = path.join(siteDir, "dist");
-const baseUrl = "https://ozirix-dev.github.io/Reseptit";
+const baseUrl = siteTarget.baseUrl;
 const localeBase: Record<RecipeLocale, string> = { fi: "", en: "/en/recipes", sv: "/sv/recept", th: "/th/recipes" };
 const indexNames: Record<RecipeLocale, string> = { fi: "Reseptit", en: "Recipes", sv: "Recept", th: "สูตรอาหาร" };
 const openGraphLocale: Record<RecipeLocale, string> = { fi: "fi_FI", en: "en_GB", sv: "sv_SE", th: "th_TH" };
@@ -40,10 +41,10 @@ function routeMetadata(route: string) {
     locale === "fi" ? route === "/" : route === `${localeBase[locale]}/` || route === localeBase[locale]);
   if (!recipe && !pilotPage && !isBlog && indexLocale !== "fi" && (!indexLocale || !siteContent.recipes.some((item) => item.locale === indexLocale))) return null;
   const locale = recipe?.locale ?? methodLocale ?? indexLocale ?? "fi";
-  // Preview output is never an authorized production or SEO migration build.
-  const preview = process.env.VITE_RECIPAVO_HERO_PREVIEW === "true";
-  const title = blogPost ? `${blogPost.title} | Ruokaopas` : blogIndex ? "Ruokaopas | Reseptit" : preview && indexLocale ? `${recipavoHeroCopy[locale].title} | Recipavo` : pilotPage ? glycemicLoadMeta[locale].title : recipe ? `${recipe.title} | ${indexNames[locale]}` : `${indexNames[locale]} | Ozirix`;
-  const description = blogPost?.description ?? (blogIndex ? "Ruoanlaiton tekniikoita ja luotettavaa ravitsemustietoa." : undefined) ?? (preview && indexLocale ? recipavoHeroCopy[locale].intro : pilotPage ? glycemicLoadMeta[locale].description : recipe?.description || recipeUi[locale].intro);
+  const preview = !siteTarget.production && process.env.VITE_RECIPAVO_HERO_PREVIEW === "true";
+  const branded = siteTarget.production || preview;
+  const title = blogPost ? `${blogPost.title} | Ruokaopas` : blogIndex ? "Ruokaopas | Reseptit" : branded && indexLocale ? `${recipavoHeroCopy[locale].title} | Recipavo` : pilotPage ? glycemicLoadMeta[locale].title : recipe ? `${recipe.title} | ${indexNames[locale]}` : `${indexNames[locale]} | Ozirix`;
+  const description = blogPost?.description ?? (blogIndex ? "Ruoanlaiton tekniikoita ja luotettavaa ravitsemustietoa." : undefined) ?? (branded && indexLocale ? recipavoHeroCopy[locale].intro : pilotPage ? glycemicLoadMeta[locale].description : recipe?.description || recipeUi[locale].intro);
   const url = `${baseUrl}${route}`;
   const translations = recipe ? siteContent.recipes.filter((item) => item.recipeId === recipe.recipeId) : [];
   const publishedLocales = isBlog ? [{locale: "fi" as RecipeLocale, path: route}] : pilotPage ? (Object.keys(methodRoutes) as RecipeLocale[]).map((itemLocale) => ({ locale: itemLocale, path: methodRoutes[itemLocale] })) : recipe
@@ -72,7 +73,7 @@ function routeMetadata(route: string) {
     head: [
       `<title>${escapeHtml(title)}</title>`,
       `<meta name="description" content="${escapeHtml(description)}" />`,
-      ...(preview ? ['<meta name="robots" content="noindex, nofollow" />'] : []),
+      ...(preview || siteTarget.noIndex ? ['<meta name="robots" content="noindex, nofollow" />'] : []),
       `<link rel="canonical" href="${escapeHtml(url)}" />`,
       `<meta property="og:type" content="${recipe || blogPost ? "article" : "website"}" />`,
       `<meta property="og:title" content="${escapeHtml(title)}" />`,
@@ -130,16 +131,29 @@ try {
     }
   }
 
-  const notFoundRouter = createStaticRouter("/404", contentForRoute(siteContent.recipes, "/404"));
-  const notFoundBody = renderToString(React.createElement(RouterProvider, { router: notFoundRouter }));
-  const notFoundHead = [
-    "<title>Sivua ei löytynyt | Reseptit</title>",
-    '<meta name="robots" content="noindex,follow" />',
-    '<meta name="description" content="Pyytämääsi sivua ei löytynyt." />',
-  ].join("\n    ");
-  const notFoundHtml = replaceDocument(shell, notFoundHead, "fi", notFoundBody)
-    .replace(/\s*<script type="module"[^>]*><\/script>/i, "");
-  await writeFile(path.join(distDir, "404.html"), notFoundHtml, "utf8");
+  for (const [locale, directory] of [["fi", ""], ["en", "en"], ["sv", "sv"], ["th", "th"]] as const) {
+    const route = directory ? "/" + directory + "/404" : "/404";
+    const router = createStaticRouter(route, contentForRoute(siteContent.recipes, route));
+    const body = renderToString(React.createElement(RouterProvider, { router }));
+    const title = recipeUi[locale].notFound;
+    const head = [
+      "<title>" + escapeHtml(title + " | " + indexNames[locale]) + "</title>",
+      siteTarget.noIndex ? '<meta name="robots" content="noindex, nofollow" />' : '<meta name="robots" content="noindex,follow" />',
+      '<meta name="description" content="' + escapeHtml(title) + '" />',
+    ].join("\n    ");
+    const html = replaceDocument(shell, head, locale, body)
+      .replace(/\s*<script type="module"[^>]*><\/script>/i, "");
+    const folder = path.join(distDir, directory);
+    await mkdir(folder, { recursive: true });
+    await writeFile(path.join(folder, "404.html"), html, "utf8");
+  }
+  if (siteTarget.basePath === "/") {
+    // The legacy Search Console verification belongs to GitHub Pages.
+    await rm(path.join(distDir, "google0c6f9c0486376f0f.html"), { force: true });
+  }
+  if (siteTarget.noIndex) {
+    await writeFile(path.join(distDir, "_headers"), "/*\n  X-Robots-Tag: noindex, nofollow\n", "utf8");
+  }
   console.log(`Prerendered ${routes.length} routes with visible content, metadata, and a not-found page.`);
 } finally {
   await vite.close();

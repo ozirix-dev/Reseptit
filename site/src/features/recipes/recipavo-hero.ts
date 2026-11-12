@@ -1,4 +1,5 @@
 import type { RecipeLocale } from "@/types/content";
+import { siteTarget } from "../../content/site-target";
 
 /**
  * Phase 1 preview copy. Not production launch permission.
@@ -58,5 +59,9 @@ export const recipavoHeroCopy: Record<RecipeLocale, RecipavoHeroCopy> = {
  * Absence of the flag MUST leave the existing Reseptit UI unchanged.
  */
 export function isRecipavoHeroPreviewEnabled(): boolean {
-  return import.meta.env?.VITE_RECIPAVO_HERO_PREVIEW === "true";
+  return !siteTarget.production && import.meta.env?.VITE_RECIPAVO_HERO_PREVIEW === "true";
+}
+
+export function isRecipavoHeroEnabled(): boolean {
+  return siteTarget.production || isRecipavoHeroPreviewEnabled();
 }

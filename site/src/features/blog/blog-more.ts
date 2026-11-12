@@ -1,6 +1,8 @@
 import type { BlogPost } from './blog-data';
 
 /** Lähteistetty 10 artikkelin erä 6.11.2026; ei reseptivarmennus, mittaus tai koepaistoväite. */
+import { siteTarget } from "../../content/site-target";
+
 export const moreBlogPosts: BlogPost[] = [
   {
     "slug": "hiivataikina-ei-kohoa",
@@ -12,7 +14,7 @@ export const moreBlogPosts: BlogPost[] = [
     "datePublished": "2026-11-06",
     "dateModified": "2026-11-06",
     "author": "Reseptit-toimitus",
-    "image": "https://ozirix-dev.github.io/Reseptit/ruokaopas/kuvitus/hiivataikina-ei-kohoa.svg",
+    "image": siteTarget.baseUrl + "/ruokaopas/kuvitus/hiivataikina-ei-kohoa.svg",
     "imageAlt": "Havainnekuva hiivataikinasta ja kohoavasta leivästä",
     "readingMinutes": 5,
     "sections": [
@@ -72,7 +74,7 @@ export const moreBlogPosts: BlogPost[] = [
     "datePublished": "2026-11-06",
     "dateModified": "2026-11-06",
     "author": "Reseptit-toimitus",
-    "image": "https://ozirix-dev.github.io/Reseptit/ruokaopas/kuvitus/pad-thai-ainesosat.svg",
+    "image": siteTarget.baseUrl + "/ruokaopas/kuvitus/pad-thai-ainesosat.svg",
     "imageAlt": "Havainnekuva thaimaalaisesta nuudeliannoksesta ja limetistä",
     "readingMinutes": 5,
     "sections": [
@@ -132,7 +134,7 @@ export const moreBlogPosts: BlogPost[] = [
     "datePublished": "2026-11-06",
     "dateModified": "2026-11-06",
     "author": "Reseptit-toimitus",
-    "image": "https://ozirix-dev.github.io/Reseptit/ruokaopas/kuvitus/riisin-keitto-eri-lajikkeet.svg",
+    "image": siteTarget.baseUrl + "/ruokaopas/kuvitus/riisin-keitto-eri-lajikkeet.svg",
     "imageAlt": "Havainnekuva kahdesta erityyppisestä riisikulhosta",
     "readingMinutes": 5,
     "sections": [
@@ -192,7 +194,7 @@ export const moreBlogPosts: BlogPost[] = [
     "datePublished": "2026-11-06",
     "dateModified": "2026-11-06",
     "author": "Reseptit-toimitus",
-    "image": "https://ozirix-dev.github.io/Reseptit/ruokaopas/kuvitus/annoskoon-mittaaminen.svg",
+    "image": siteTarget.baseUrl + "/ruokaopas/kuvitus/annoskoon-mittaaminen.svg",
     "imageAlt": "Havainnekuva keittiövaa'asta, kulhosta ja mitta-astioista",
     "readingMinutes": 5,
     "sections": [
@@ -252,7 +254,7 @@ export const moreBlogPosts: BlogPost[] = [
     "datePublished": "2026-11-06",
     "dateModified": "2026-11-06",
     "author": "Reseptit-toimitus",
-    "image": "https://ozirix-dev.github.io/Reseptit/ruokaopas/kuvitus/ravintoarvolaskurit-eri-tulokset.svg",
+    "image": siteTarget.baseUrl + "/ruokaopas/kuvitus/ravintoarvolaskurit-eri-tulokset.svg",
     "imageAlt": "Havainnekuva kahdesta ravintolaskelman tuloskortista ja raaka-aineista",
     "readingMinutes": 5,
     "sections": [
@@ -312,7 +314,7 @@ export const moreBlogPosts: BlogPost[] = [
     "datePublished": "2026-11-06",
     "dateModified": "2026-11-06",
     "author": "Reseptit-toimitus",
-    "image": "https://ozirix-dev.github.io/Reseptit/ruokaopas/kuvitus/airfryer-vai-uuni.svg",
+    "image": siteTarget.baseUrl + "/ruokaopas/kuvitus/airfryer-vai-uuni.svg",
     "imageAlt": "Havainnekuva kiertoilmakypsentimestä ja uunista",
     "readingMinutes": 5,
     "sections": [
@@ -372,7 +374,7 @@ export const moreBlogPosts: BlogPost[] = [
     "datePublished": "2026-11-06",
     "dateModified": "2026-11-06",
     "author": "Reseptit-toimitus",
-    "image": "https://ozirix-dev.github.io/Reseptit/ruokaopas/kuvitus/keto-vhh-ero.svg",
+    "image": siteTarget.baseUrl + "/ruokaopas/kuvitus/keto-vhh-ero.svg",
     "imageAlt": "Havainnekuva avokadosta, kananmunasta, kasviksista ja muista ruoista",
     "readingMinutes": 5,
     "sections": [
@@ -432,7 +434,7 @@ export const moreBlogPosts: BlogPost[] = [
     "datePublished": "2026-11-06",
     "dateModified": "2026-11-06",
     "author": "Reseptit-toimitus",
-    "image": "https://ozirix-dev.github.io/Reseptit/ruokaopas/kuvitus/pizzapohjien-vertailu.svg",
+    "image": siteTarget.baseUrl + "/ruokaopas/kuvitus/pizzapohjien-vertailu.svg",
     "imageAlt": "Havainnekuva kolmesta erilaisesta pizzapohjasta",
     "readingMinutes": 5,
     "sections": [
@@ -492,7 +494,7 @@ export const moreBlogPosts: BlogPost[] = [
     "datePublished": "2026-11-06",
     "dateModified": "2026-11-06",
     "author": "Reseptit-toimitus",
-    "image": "https://ozirix-dev.github.io/Reseptit/ruokaopas/kuvitus/thaimaalaiset-raaka-aineet-suomessa.svg",
+    "image": siteTarget.baseUrl + "/ruokaopas/kuvitus/thaimaalaiset-raaka-aineet-suomessa.svg",
     "imageAlt": "Havainnekuva sitruunaruohosta, galangalista, chilistä ja limetistä",
     "readingMinutes": 5,
     "sections": [
@@ -552,7 +554,7 @@ export const moreBlogPosts: BlogPost[] = [
     "datePublished": "2026-11-06",
     "dateModified": "2026-11-06",
     "author": "Reseptit-toimitus",
-    "image": "https://ozirix-dev.github.io/Reseptit/ruokaopas/kuvitus/ravintoarvio-epavarmuus.svg",
+    "image": siteTarget.baseUrl + "/ruokaopas/kuvitus/ravintoarvio-epavarmuus.svg",
     "imageAlt": "Havainnekuva ravintoarvomerkinnästä ja keittiövaa'asta",
     "readingMinutes": 5,
     "sections": [

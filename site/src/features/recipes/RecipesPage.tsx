@@ -6,7 +6,7 @@ import type { RecipeDietTag, RecipeLocale } from "@/types/content";
 import { glycemicLoadPath, recipeIndexPath, recipeUi } from "./recipe-i18n";
 import { homepageLabels, homepagePicks, homepageTopics } from "./home-preview";
 import "./home-preview.css";
-import { isRecipavoHeroPreviewEnabled, recipavoHeroCopy } from "./recipavo-hero";
+import { isRecipavoHeroEnabled, recipavoHeroCopy } from "./recipavo-hero";
 import { toolUi } from "./recipe-tools";
 import { cuisines, ingredientGroups } from "@/content/recipe-facets";
 import { emptyRecipeFilters, filterRecipes, parseRecipeFilters, recipeFiltersToSearch, type RecipeCategory, type RecipeDietFilter, type RecipeFilters, type GlycemicLoadFilterCategory } from "./recipe-search";
@@ -19,7 +19,7 @@ const categories: RecipeSummary["category"][] = ["aamupala", "valipala", "alkuru
 export function RecipesPage({ locale }: { locale: RecipeLocale }) {
   const { recipes } = useContent();
   const labels = recipeUi[locale];
-  const homePreviewEnabled = isRecipavoHeroPreviewEnabled();
+  const homePreviewEnabled = isRecipavoHeroEnabled();
   const heroCopy = homePreviewEnabled ? recipavoHeroCopy[locale] : null;
   const tools = toolUi[locale];
   const dietLabels: Record<Exclude<RecipeDietFilter, "all">, string> = {

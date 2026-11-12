@@ -4,7 +4,7 @@ import { RecipeAbout } from "@/features/recipes/recipe-tools";
 import { RecipesPage } from "@/features/recipes/RecipesPage";
 import { GlycemicLoadPilotPage } from "@/features/glycemic-load/GlycemicLoadPilotPage";
 import { recipeIndexPath, recipeLocaleFromPath, recipeUi } from "@/features/recipes/recipe-i18n";
-import { isRecipavoHeroPreviewEnabled, recipavoHeroCopy } from "@/features/recipes/recipavo-hero";
+import { isRecipavoHeroEnabled, recipavoHeroCopy } from "@/features/recipes/recipavo-hero";
 import { useContent } from "@/lib/content";
 import { loadContent } from "@/lib/load-content";
 import type { RouteContent } from "@/content/route-data";
@@ -16,7 +16,7 @@ function SiteLayout() {
   const { pathname } = useLocation();
   const locale = recipeLocaleFromPath(pathname);
   const labels = recipeUi[locale];
-  const previewCopy = isRecipavoHeroPreviewEnabled() ? recipavoHeroCopy[locale] : null;
+  const previewCopy = isRecipavoHeroEnabled() ? recipavoHeroCopy[locale] : null;
   const brand = previewCopy?.brand ?? labels.brand;
   const { locales: availableLocales, translations } = useContent();
   return (
