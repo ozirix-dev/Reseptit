@@ -1,0 +1,172 @@
+{
+  "recipeId": "taytetyt-kananmunat-yrteilla",
+  "sourceHash": "82450fe6cad26adb2a5679dbcef4301092f36e7fde0b2be3e30da442aa18c31f",
+  "calculatedAt": "2026-11-13",
+  "batchId": "batch-550",
+  "servings": 6,
+  "scope": "Six medium eggs at the Fineli 8513 edible portion of 55 g each give a 330 g reference batch. Use all six eggs for twelve filled halves. Use commercial full-fat mayonnaise and prepared mustard rather than brand-specific products whose fibre or polyol values are unavailable. The seasoning uses fresh chives. No physical preparation trial was performed.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "item": "kovaksi keitettyä, kuorittua kananmunaa (noin 6 keskikokoista munaa)",
+      "amount": 330,
+      "unit": "g",
+      "state": "hard-boiled, peeled whole chicken egg",
+      "matchEvidence": "Source 8513 (hard-boiled, peeled whole chicken egg). The edible input is weighed directly.",
+      "edibleFraction": 1,
+      "edibleEvidence": "All quantities refer to the weighed edible ingredient.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All listed edible inputs are used. Egg quantity is measured after boiling and peeling.",
+      "record": {
+        "id": "fineli-8513-release-20",
+        "name": "KANANMUNA, KEITETTY",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/8513",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "hard-boiled, peeled whole chicken egg",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "componentValues": {
+          "CHO": 0.3,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "per100g": {
+          "carbohydrate": 0.3,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 12.61,
+          "fat": 9.24
+        }
+      }
+    },
+    {
+      "item": "täysrasvaista majoneesia (rasvaa noin 80 %)",
+      "amount": 55,
+      "unit": "g",
+      "state": "commercial full-fat mayonnaise, about 80 percent fat",
+      "matchEvidence": "Source 30925 (commercial full-fat mayonnaise, about 80 percent fat). The edible input is weighed directly.",
+      "edibleFraction": 1,
+      "edibleEvidence": "All quantities refer to the weighed edible ingredient.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All listed edible inputs are used. Egg quantity is measured after boiling and peeling.",
+      "record": {
+        "id": "fineli-30925-release-20",
+        "name": "MAJONEESI, RASVAA 80 %",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/30925",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "commercial full-fat mayonnaise, about 80 percent fat",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "componentValues": {
+          "CHO": 1.029,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "per100g": {
+          "carbohydrate": 1.029,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 1.12,
+          "fat": 81.042
+        }
+      }
+    },
+    {
+      "item": "valmista sinappia",
+      "amount": 10,
+      "unit": "g",
+      "state": "prepared mustard condiment as sold",
+      "matchEvidence": "Source 28 (prepared mustard condiment as sold). The edible input is weighed directly.",
+      "edibleFraction": 1,
+      "edibleEvidence": "All quantities refer to the weighed edible ingredient.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All listed edible inputs are used. Egg quantity is measured after boiling and peeling.",
+      "record": {
+        "id": "fineli-28-release-20",
+        "name": "SINAPPI",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/28",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "prepared mustard condiment as sold",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "componentValues": {
+          "CHO": 14.1,
+          "FIBT": 1.7,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "per100g": {
+          "carbohydrate": 14.1,
+          "fibre": 1.7,
+          "polyols": 0,
+          "protein": 4.38,
+          "fat": 6
+        }
+      }
+    },
+    {
+      "item": "tuoretta ruohosipulia",
+      "amount": 5,
+      "unit": "g",
+      "state": "raw fresh chives",
+      "matchEvidence": "Source 392 (raw fresh chives). The edible input is weighed directly.",
+      "edibleFraction": 1,
+      "edibleEvidence": "All quantities refer to the weighed edible ingredient.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All listed edible inputs are used. Egg quantity is measured after boiling and peeling.",
+      "record": {
+        "id": "fineli-392-release-20",
+        "name": "RUOHOSIPULI",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/392",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "raw fresh chives",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "componentValues": {
+          "CHO": 0.73,
+          "FIBT": 2.1,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "per100g": {
+          "carbohydrate": 0.73,
+          "fibre": 2.1,
+          "polyols": 0,
+          "protein": 2.2,
+          "fat": 0.92
+        }
+      }
+    }
+  ]
+}

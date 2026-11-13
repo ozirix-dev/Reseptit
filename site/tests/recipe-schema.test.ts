@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { createHash } from "node:crypto";
 import test from "node:test";
 import { parseMarkdown } from "../src/content/markdown";
 import { assertQuantifiedCriticalIngredients, assertUniqueRecipes, assertSnackPublicationReady, snackPublicationErrors } from "../src/content/recipe-validation";
@@ -112,8 +113,24 @@ test("second snack review batch matches its source ledger and cannot publish dup
       const id = recipe.ingredients[i].sourceId;
       if (id !== null) assert.ok(knownIds.has(id), `${recipe.id} unknown food source: ${id}`);
     }
-    assert.ok(!siteContent.recipes.some(item => item.recipeId === recipe.id),
-      `${recipe.id} unexpectedly already published`);
+    const published = siteContent.recipes.filter(item => item.recipeId === recipe.id);
+    if (published.length > 0) {
+      const sourcePath = `reseptit/valipalat/${recipe.id}.md`;
+      const source = readFileSync(path.join(root, sourcePath), "utf8");
+      const document = parseMarkdown(source);
+      assert.ok(document, sourcePath);
+      const canonical = recipeFrontmatterSchema.parse(document.data);
+      const review = JSON.parse(readFileSync(
+        path.join(root, "docs/reviews/new-recipes", `${recipe.id}.json`), "utf8",
+      ));
+      assert.notEqual(sourcePath, recipe.sourceFile);
+      assert.equal(canonical.recipe_id, recipe.id);
+      assert.equal(canonical.status, "published");
+      assert.equal(review.source_path, sourcePath);
+      assert.equal(review.source_sha256, createHash("sha256").update(source.replace(/\r\n/g, "\n")).digest("hex"));
+      assert.equal(review.decision, "approved");
+      assert.equal(published.filter(item => item.locale === "fi").length, 1);
+    }
   }
   assert.ok(siteContent.recipes.some(item => item.recipeId === "munakasmuffinit" && item.locale === "fi"),
     "existing muffins must be reused, not duplicated");

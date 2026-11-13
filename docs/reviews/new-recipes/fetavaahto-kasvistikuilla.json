@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "recipe_id": "fetavaahto-kasvistikuilla",
+  "source_path": "reseptit/valipalat/fetavaahto-kasvistikuilla.md",
+  "source_sha256": "09cfda83537b072f2592f8bde7d8ac97196a8e295e332b65f70899852c565879",
+  "decision": "approved",
+  "reviewed_by": "AI editorial reviewer (GPT-6)",
+  "reviewed_at": "2026-11-13",
+  "origin": {
+    "kind": "original",
+    "sources": []
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/fetavaahto-kasvistikuilla.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "No matching published feta whip with cucumber and red pepper sticks was found in the public recipe tree."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Six measured ingredients match the internal review; 25% drained goat-milk feta and plain lactose-free 7% Greek yogurt are specified. The illustration shows the dip, dill, cucumber and red pepper."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Blend feta, yogurt and lemon juice, stir in dill, and prepare the listed washed vegetables; all six quantities match the four portions."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Milk allergen disclosed. Wash raw produce and refrigerate covered if preparing before serving."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Fifteen minutes for a cold preparation. Four portions each use about 59 g dip, 50 g cucumber and 37.5 g red pepper."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Current ingredients verified against Fineli Release 20 food records 11211, 34611, 11557, 369, 346 and 386 and recalculated against the public source hash."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "No preparation-matched glycemic load calculation is approved for this recipe. The recipe displays GK as undetermined."
+    }
+  }
+}
