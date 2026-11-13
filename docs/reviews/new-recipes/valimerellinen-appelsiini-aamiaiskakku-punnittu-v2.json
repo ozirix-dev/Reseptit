@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "recipe_id": "valimerellinen-appelsiini-aamiaiskakku-punnittu-v2",
+  "source_path": "reseptit/aamupalat/valimerellinen-appelsiini-aamiaiskakku-punnittu-v2.md",
+  "source_sha256": "a52a2b2bca636160b3b464b217679fe05439543352bf6617003aa8163965f284",
+  "decision": "approved",
+  "reviewed_by": "AI editorial reviewer (GPT-6)",
+  "reviewed_at": "2026-11-13",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.kingarthurbaking.com/recipes/orange-and-greek-yogurt-cake-recipe"
+    ]
+  },
+  "supersedes_quarantined": {
+    "recipe_id": "valimerellinen-appelsiini-aamiaiskakku",
+    "source_path": "reseptit/aamupalat/valimerellinen-appelsiini-aamiaiskakku.md",
+    "source_git_blob_sha": "8bd991e2ae73d894233abfd3caf76d48315a7088"
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/valimerellinen-appelsiini-aamiaiskakku-punnittu-v2.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "The sole historical slug owner is the quarantined predecessor with the exact registered Git blob."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "All ingredients use edible gram weights. Allergen disclosures and the new illustration were checked against the ingredient list."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Adapted from Julia Turshen's yogurt and olive oil cake, with roughly half the wet ingredients for a small round tin and peeled orange purée in place of the juice. The cake is baked until fully set with no raw batter on a skewer. Six slices, with resting and cooling included in total time."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "The whole cake is baked until the centre is set and the tester comes out without raw batter."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "6 portions with 90 minutes including the specified cooking and resting or cooling periods."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Fineli and AFCD edible mass calculation verified against the current recipe input SHA-256. Adapted from Julia Turshen's yogurt and olive oil cake, with roughly half the wet ingredients for a small round tin and peeled orange purée in place of the juice. The cake is baked until fully set with no raw batter on a skewer. Six slices, with resting and cooling included in total time."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "No preparation-matched glycemic load approval exists for the successor; the original is retained in historical quarantine."
+    }
+  }
+}
