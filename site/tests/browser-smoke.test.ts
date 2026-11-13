@@ -209,10 +209,14 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
     await page.getByText("Reseptejä ei löytynyt hakuehdoilla.").waitFor();
     assert.equal(await page.locator(".recipe-card-grid").count(), 0);
     await page.getByRole("button", { name: "Tyhjennä haku ja suodattimet" }).last().click();
-    await page.locator(".recipe-card__image[loading=eager]").waitFor();
-    assert.equal(await page.locator(".recipe-card__image[loading=eager]").count(), 1);
-    assert.equal(await page.locator(".recipe-card__image").evaluateAll((images) => images.filter((image) => image.getAttribute("fetchpriority") === "high").length), 1);
-    assert.equal(await page.locator(".recipe-card__image[loading=lazy]").count(), await page.locator(".recipe-card__image").count() - 1);
+    const cardImages = page.locator("img.recipe-card__image");
+    const imagePlaceholders = page.locator(".recipe-card__image--placeholder");
+    assert.equal(await imagePlaceholders.count(), 3);
+    assert.equal(await cardImages.count() + await imagePlaceholders.count(), await page.locator(".recipe-card").count());
+    await page.locator("img.recipe-card__image[loading=eager]").waitFor();
+    assert.equal(await page.locator("img.recipe-card__image[loading=eager]").count(), 1);
+    assert.equal(await cardImages.evaluateAll((images) => images.filter((image) => image.getAttribute("fetchpriority") === "high").length), 1);
+    assert.equal(await page.locator("img.recipe-card__image[loading=lazy]").count(), await cardImages.count() - 1);
     assert.equal(await page.locator(".recipe-card h2").count(), await page.locator(".recipe-card").count());
 
     for (const [width, columns] of [[320, 1], [375, 1], [390, 1], [768, 2], [1024, 2], [1440, 3]]) {
