@@ -2,7 +2,7 @@ import type { RecipeEntry } from "../../types/content";
 import { withholdF25Nutrition } from "./f25-nutrition-withhold";
 
 export function recipeJsonLd(recipe: RecipeEntry): Record<string, unknown> {
-  const withholding = withholdF25Nutrition(recipe.recipeId,recipe.locale);
+  const withholding = withholdF25Nutrition(recipe.recipeId,recipe.locale) || recipe.recipeId === "rapeat-juustonaksut";
   const nutrition = Object.fromEntries(Object.entries({
     carbohydrateContent: recipe.nutrition.carbsTotalG, proteinContent: recipe.nutrition.proteinG, fatContent: recipe.nutrition.fatG,
   }).filter(([, value]) => !withholding && value !== null).map(([key, value]) => [key, `${value} g`]));

@@ -48,6 +48,6 @@ Punnitse 140 g cheddarraastetta ja 1 g savupaprikaa.
 
 ## Muistiinpanot
 
-**Allergeeni on maito.** Ravintoarvio perustuu cheddarjuustoon ja sisältää juuston koko rasvamäärän. Leivinpaperille jäävä rasva pienentää annoksen rasvamäärää. Savupaprika on jätetty laskelmasta, koska sen polyolimäärää ei ole ilmoitettu. Yhdessä annoksessa sitä on 0,25 g.
+**Allergeeni on maito.** Cheddarista laskettu nettohiilihydraattiarvio on 0,04 g annosta kohti. Laskelmassa on mukana juuston koko rasvamäärä. Leivinpaperille jäävä rasva pienentää annoksen rasvamäärää. Savupaprika on jätetty laskelmasta, koska sen polyolimäärää ei ole ilmoitettu. Yhdessä annoksessa sitä on 0,25 g.
 
 **GK: ei määritetty.** Kuva on ohjeen mukaan tehty kuvituskuva.

@@ -83,7 +83,7 @@ export function createAssistantCatalog(
         amount, unit, item, ...(note !== undefined ? { note } : {}),
       })),
       servings: recipe.servings,
-      nutritionPerServing: withholdF25Nutrition(recipe.recipeId, recipe.locale)
+      nutritionPerServing: withholdF25Nutrition(recipe.recipeId, recipe.locale) || recipe.recipeId === "rapeat-juustonaksut"
         ? {carbsNetG:null, carbsTotalG:null, proteinG:null, fatG:null}
         : { ...recipe.nutrition }, // Withheld or unknown must stay null, never become zero.
       sourceVersion,
