@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "recipe_id": "indonesialainen-nasi-goreng-aamiaisriisi-punnittu-v2",
+  "source_path": "reseptit/aamupalat/indonesialainen-nasi-goreng-aamiaisriisi-punnittu-v2.md",
+  "source_sha256": "e08ac48f6edb3878616a902a2fdd4a13ebb196a5ba30dc9aa749ec50900e12e5",
+  "decision": "approved",
+  "reviewed_by": "AI editorial reviewer (GPT-6)",
+  "reviewed_at": "2026-11-13",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.rempapa.com/recipes/nasi-goreng",
+      "https://apa.si.edu/picklesandtea/kecap-manis/",
+      "https://www.gov.uk/government/publications/home-food-fact-checker/home-food-fact-checker",
+      "https://ask.fsis.usda.gov/article/How-do-you-handle-and-store-eggs-safely"
+    ]
+  },
+  "supersedes_quarantined": {
+    "recipe_id": "indonesialainen-nasi-goreng-aamiaisriisi",
+    "source_path": "reseptit/aamupalat/indonesialainen-nasi-goreng-aamiaisriisi.md",
+    "source_git_blob_sha": "731c7babbe7aa94c4e931a8224cec81bfe75b9fb"
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/indonesialainen-nasi-goreng-aamiaisriisi-punnittu-v2.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "The sole historical slug owner is the quarantined predecessor with the exact registered Git blob."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "All ingredients use edible gram weights. Allergen disclosures and the new illustration were checked against the ingredient list."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "The 300 g cooked rice and two fried eggs are supported by Shu Han Lee. The sweet soy seasoning uses regular soy sauce, brown sugar and water. All sauce and listed oil are counted. The 20 minutes start with cooked rice. The historic GL refers to a separate study serving. No physical trial was performed."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Use rice chilled within one hour and stored for up to 24 hours. Reheat once until steaming throughout. Cook egg whites and yolks until set."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "2 portions with 20 minutes including the specified cooking and resting or cooling periods."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Fineli and AFCD edible mass calculation verified against the current recipe input SHA-256. The 300 g cooked rice and two fried eggs are supported by Shu Han Lee. The sweet soy seasoning uses regular soy sauce, brown sugar and water. All sauce and listed oil are counted. The 20 minutes start with cooked rice. The historic GL refers to a separate study serving. No physical trial was performed."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "No preparation-matched glycemic load approval exists for the successor; the original is retained in historical quarantine."
+    }
+  }
+}
