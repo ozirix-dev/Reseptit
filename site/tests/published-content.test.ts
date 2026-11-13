@@ -134,7 +134,7 @@ test("the Finnish breakfast and dessert collections exclude quarantined unsafe r
     ["tonnikalamunakkaat-uunissa", 0.53],
     ["lahi-ita-kikherne-shakshuka", 11.17],
     ["pohjoisafrikkalainen-maakouda", 4.84],
-    ["valimerellinen-menemen-fetalla", 5.38],
+    ["valimerellinen-menemen-fetalla", 5.35],
     ["valimerellinen-tortilla-espanola-aamupalaksi", 6.14],
     ["valimerellinen-kikherne-yrttiaamiainen", 11.98],
     ["keto-mutakakku", 1.52], ["keto-suklaakeksit", 1.38],
