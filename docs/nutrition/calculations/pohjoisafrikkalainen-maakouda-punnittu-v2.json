@@ -1,0 +1,282 @@
+{
+  "recipeId": "pohjoisafrikkalainen-maakouda-punnittu-v2",
+  "sourceHash": "3766530596722ea5616ab57d8ad60b948d162f8f334d56d487002a8c3ded92f0",
+  "calculatedAt": "2026-11-13",
+  "batchId": "batch-546",
+  "servings": 2,
+  "scope": "Potato-to-egg ratio follows the reference range. Wheat flour is measured as binder and coating, and six thin patties are cooked with weighed oil and a 71 °C endpoint. Full oil retention is modelled as an upper estimate, with 75% and 50% giving 2.25 g and 4.5 g less fat per serving.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "item": "kuorittua jauhoista perunaa",
+      "amount": 400,
+      "unit": "g",
+      "state": "raw peeled potato",
+      "matchEvidence": "Source 205 (raw peeled potato). Edible raw quantity weighed directly.",
+      "edibleFraction": 1,
+      "edibleEvidence": "All quantities refer to the weighed edible ingredient.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible input nutrients counted. Water evaporation and minor cooking losses are not measured.",
+      "record": {
+        "id": "fineli-205-release-20",
+        "name": "PERUNA, VANHA, KUORITTU",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/205",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "raw peeled potato",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "componentValues": {
+          "CHO": 15.5,
+          "FIBT": 1.4,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "per100g": {
+          "carbohydrate": 15.5,
+          "fibre": 1.4,
+          "polyols": 0,
+          "protein": 1.88,
+          "fat": 0.114
+        }
+      }
+    },
+    {
+      "item": "vatkattua kananmunaa",
+      "amount": 45,
+      "unit": "g",
+      "state": "raw shelled egg",
+      "matchEvidence": "Source 858 (raw shelled egg). Edible raw quantity weighed directly.",
+      "edibleFraction": 1,
+      "edibleEvidence": "All quantities refer to the weighed edible ingredient.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible input nutrients counted. Water evaporation and minor cooking losses are not measured.",
+      "record": {
+        "id": "fineli-858-release-20",
+        "name": "KANANMUNA, KUORETON",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/858",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "raw shelled egg",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "componentValues": {
+          "CHO": 0.3,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "per100g": {
+          "carbohydrate": 0.3,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 12.61,
+          "fat": 9.24
+        }
+      }
+    },
+    {
+      "item": "puolikarkeaa vehnäjauhoa",
+      "amount": 18,
+      "unit": "g",
+      "state": "all-purpose wheat flour",
+      "matchEvidence": "Source 110 (all-purpose wheat flour). Edible raw quantity weighed directly.",
+      "edibleFraction": 1,
+      "edibleEvidence": "All quantities refer to the weighed edible ingredient.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible input nutrients counted. Water evaporation and minor cooking losses are not measured.",
+      "record": {
+        "id": "fineli-110-release-20",
+        "name": "JAUHO, VEHNÄJAUHO, PUOLIKARKEA",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/110",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "all-purpose wheat flour",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "componentValues": {
+          "CHO": 73.998,
+          "FIBT": 3.5,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "per100g": {
+          "carbohydrate": 73.998,
+          "fibre": 3.5,
+          "polyols": 0,
+          "protein": 11.6,
+          "fat": 1.56
+        }
+      }
+    },
+    {
+      "item": "tuoretta persiljaa",
+      "amount": 8,
+      "unit": "g",
+      "state": "raw parsley",
+      "matchEvidence": "Source 333 (raw parsley). Edible raw quantity weighed directly.",
+      "edibleFraction": 1,
+      "edibleEvidence": "All quantities refer to the weighed edible ingredient.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible input nutrients counted. Water evaporation and minor cooking losses are not measured.",
+      "record": {
+        "id": "fineli-333-release-20",
+        "name": "PERSILJA",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/333",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "raw parsley",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "componentValues": {
+          "CHO": 1.1,
+          "FIBT": 2.9,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "per100g": {
+          "carbohydrate": 1.1,
+          "fibre": 2.9,
+          "polyols": 0,
+          "protein": 1.38,
+          "fat": 0.2
+        }
+      }
+    },
+    {
+      "item": "jauhettua juustokuminaa",
+      "amount": 2,
+      "unit": "g",
+      "state": "ground cumin",
+      "matchEvidence": "Source F003327 (ground cumin). Edible raw quantity weighed directly.",
+      "edibleFraction": 1,
+      "edibleEvidence": "All quantities refer to the weighed edible ingredient.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible input nutrients counted. Water evaporation and minor cooking losses are not measured.",
+      "record": {
+        "id": "afcd-F003327-release-3",
+        "name": "Cumin (cummin) seed, dried, ground",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia",
+        "state": "ground cumin",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrates with and without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 33.7,
+          "fibre": 10.5,
+          "polyols": 0,
+          "protein": 17.8,
+          "fat": 22.3
+        }
+      }
+    },
+    {
+      "item": "rypsiöljyä",
+      "amount": 18,
+      "unit": "g",
+      "state": "rapeseed oil",
+      "matchEvidence": "Source 535 (rapeseed oil). Edible raw quantity weighed directly.",
+      "edibleFraction": 1,
+      "edibleEvidence": "All quantities refer to the weighed edible ingredient.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All cooking oil counted. Oil left in the pan is an unmeasured loss.",
+      "record": {
+        "id": "fineli-535-release-20",
+        "name": "RYPSIÖLJY",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/535",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "rapeseed oil",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "componentValues": {
+          "CHO": 0,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 100
+        }
+      }
+    },
+    {
+      "item": "suolaa",
+      "amount": 2,
+      "unit": "g",
+      "state": "table salt",
+      "matchEvidence": "Source 30 (table salt). Edible raw quantity weighed directly.",
+      "edibleFraction": 1,
+      "edibleEvidence": "All quantities refer to the weighed edible ingredient.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible input nutrients counted. Water evaporation and minor cooking losses are not measured.",
+      "record": {
+        "id": "fineli-30-release-20",
+        "name": "RUOKASUOLA, JODIOITU",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/30",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "table salt",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "componentValues": {
+          "CHO": 0,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0.63,
+          "fat": 0
+        }
+      }
+    }
+  ]
+}
