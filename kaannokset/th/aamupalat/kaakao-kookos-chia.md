@@ -9,7 +9,7 @@ main_ingredient:
   - chia
   - kookos
 cooking_method:
-  - kypsentäminen
+  - kylmävalmistus
 tags:
   - อาหารเช้า
   - เมล็ดเจีย

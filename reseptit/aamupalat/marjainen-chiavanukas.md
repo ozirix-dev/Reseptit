@@ -11,7 +11,7 @@ main_ingredient:
   - chia
   - marjat
 cooking_method:
-  - kypsentäminen
+  - kylmävalmistus
 tags:
   - aamupala
   - marjat

@@ -9,7 +9,7 @@ main_ingredient:
   - chia
   - marjat
 cooking_method:
-  - kypsentäminen
+  - kylmävalmistus
 tags:
   - frukost
   - bär

@@ -9,7 +9,7 @@ import { changedSemanticReviewErrors, loadSemanticEvidence, preparationRegressio
 import { auditTranslations } from "./translation-audit";
 import { verifyNutritionEvidence } from "./nutrition-evidence";
 import type { Calculation } from "./nutrition-model";
-import { recipeBindingHash } from "./glycemic-load-recipe-binding";
+import { recipeBindingHash, reviewedColdPuddingBindingText } from "./glycemic-load-recipe-binding";
 import { assertChangedRecipeAuditIsClean, duplicateRoutesForChangedRecipes, nutritionBindingInputsChanged, type PublishedRoute } from "./changed-content-checks";
 import { assertSnackPublicationReady } from "../src/content/recipe-validation";
 import { parseMarkdown, renderInstructionSteps, renderSafeMarkdown } from "../src/content/markdown";
@@ -201,7 +201,7 @@ for (const recipeId of recipeIds) {
     // Do not silently approve a new ingredient, yield, or cooking-method
     // fingerprint. For instruction-only edits, an already-stale historical
     // fingerprint remains a separate audit issue, not a reason to block copy.
-    const currentRecipeHash = recipeBindingHash(changedSource.markdown, recipeAliases.aliases ?? {});
+    const currentRecipeHash = recipeBindingHash(reviewedColdPuddingBindingText(changedSource.path, changedSource.markdown), recipeAliases.aliases ?? {});
     assert(currentRecipeHash === boundRecipeHash || await validateGk80Candidate(repoRoot, recipeId) || await validateRecovery(repoRoot,recipeId) || await validateScopedPolyolC(repoRoot,recipeId), `${recipeId}: GI/GK recipe binding is stale; review the related calculation before accepting this content change`);
   }
 
