@@ -29,12 +29,6 @@ const holdReasons: Record<string, Record<RecipeLocale, string>> = {
     sv: "Tillagning och mosning av potatisfyllningen samt hur den sluts in i degen saknas. Serveringsyoghurten finns inte i ingredienslistan eller näringsberäkningen.",
     th: "ขาดขั้นตอนต้มและบดมันฝรั่งรวมถึงการห่อไส้ในแป้ง ส่วนโยเกิร์ตที่แนะนำให้เสิร์ฟไม่ได้อยู่ในรายการวัตถุดิบหรือการคำนวณโภชนาการ",
   },
-  "tunisialainen-brik": {
-    fi: "Nykyinen friteerausaika jättää kananmunan valuvaksi. Täysin kypsän munan valmistus ja taikinan kestävyys on varmennettava ennen ohjeen palauttamista.",
-    en: "The current frying time leaves the egg runny. A method that cooks the egg through while keeping the pastry intact needs to be tested.",
-    sv: "Den nuvarande friteringstiden lämnar ägget rinnigt. En metod där ägget blir genomstekt och degen håller ihop måste provas.",
-    th: "เวลาทอดบริกในสูตรเดิมทำให้ไข่ยังเยิ้มอยู่ ต้องทดสอบวิธีที่ทำให้ไข่สุกทั่วโดยที่แผ่นแป้งไม่แตกก่อนเผยแพร่วิธีทำอีกครั้ง",
-  },
   "hyderabadi-kanabiryani": {
     fi: "Ohje käyttää sahramimaitoa, jonka maito ja määrä puuttuvat ainesluettelosta. Korjattu ainesluettelo, valmistus ja annoksen ravintoarvot on varmennettava.",
     en: "The directions use saffron milk, but the ingredients list gives neither milk nor its quantity. The ingredients, method and nutrition per serving need review.",

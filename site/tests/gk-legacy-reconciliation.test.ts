@@ -212,6 +212,11 @@ test('Live original results preserve frozen history plus the exact reviewed tran
     assert.equal(row.source_content_hash, createHash("sha256").update(live).digest("hex"));
     return {...row, notes: normalNotes, source_content_hash: createHash("sha256").update(historical).digest("hex")};
    }
+   if (row.source_path === 'reseptit/alkuruoat/tunisialainen-brik.md' && row.source_content_hash === 'ba717dc99f3f78b6001fdcea43afb0e06002e6c40df2f96428e13c9008b80dfa') {
+    const baseline = execFileSync('git', ['show', 'e68d31d7321666f173ff3caf438c3f111285f275:' + row.source_path],
+      {cwd:root,encoding:'utf8'});
+    return {...row, notes:(baseline.split('## Muistiinpanot')[1]?.trim() ?? '').replaceAll('\n',lineEnding), source_content_hash:createHash('sha256').update(baseline).digest('hex')};
+   }
    if (row.source_path === 'reseptit/alkuruoat/jiaozi.md') {
     const live = read(row.source_path).replaceAll('\r\n', '\n');
     const original = historicalJiaoziForApprovedVersion(row.source_path, live);

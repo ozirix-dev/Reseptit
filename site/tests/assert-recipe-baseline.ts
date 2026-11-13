@@ -159,6 +159,10 @@ const translationDraftCommits = new Map([
 // Exact recipe snapshots protect historical GK tests during translation preparation.
 // Production approval records remain in approvedTranslations.
 const recipeChanges = new Map([
+  ["reseptit/alkuruoat/tunisialainen-brik.md", { status: "M", sha256: "ba717dc99f3f78b6001fdcea43afb0e06002e6c40df2f96428e13c9008b80dfa" }],
+  ["kaannokset/en/alkuruoat/tunisialainen-brik.md", { status: "M", sha256: "439931c68cd671cf761139217777528852a4f3e3efd056cc53fde52c62997922" }],
+  ["kaannokset/sv/alkuruoat/tunisialainen-brik.md", { status: "M", sha256: "633a9155951e4b7f1e88ffc234c09313b6026b1b9cfb6f3bf5970e88d3a61668" }],
+  ["kaannokset/th/alkuruoat/tunisialainen-brik.md", { status: "M", sha256: "aa2b3944cedb66d12a82089b7333b4ea7b668836302d8196ca5bc0dba94688ec" }],
   ["reseptit/alkuruoat/jiaozi.md", { status: "M", sha256: "3ca732e55e989dd81361ed6284a1bf742b781421e37b7f952854a98179315fb5" }],
   ["kaannokset/en/alkuruoat/jiaozi.md", { status: "M", sha256: "a182dceb7b7bbfa887ff298943354d58d5251648af3cc0d2cb1b51924b91651c" }],
   ["kaannokset/sv/alkuruoat/jiaozi.md", { status: "M", sha256: "e34adfa421aaadd646c897f319ba6076cdf26585337bc5ef1dd9949a8feb358f" }],
