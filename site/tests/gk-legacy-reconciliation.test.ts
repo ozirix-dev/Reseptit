@@ -13,6 +13,7 @@ import {roundGlycemicLoadForDisplay} from '../scripts/glycemic-load-model';
 import {historicalBreakfastRecipe, reviewedBreakfastPaths} from '../scripts/gk100-breakfast-sealed-source';
 import {verifyReleaseBundle} from '../scripts/gk100-approval-release';
 import {historicalFarinataForApprovedPanVersion} from '../scripts/gk100-farinata-sealed-source';
+import {historicalJiaoziForApprovedVersion} from '../scripts/gk100-jiaozi-sealed-source';
 import {historicalRendangForApprovedVersion} from '../scripts/gk100-rendang-sealed-source';
 import {editorialMethodHistoryPaths,reviewedChefSafetyPaths,originalForReviewedChefSafety} from './chef-safety-historical-transition';
 import { chefCorrectionPaths, originalForChefHistoricalCheck } from "./chef-instruction-transition";
@@ -210,6 +211,12 @@ test('Live original results preserve frozen history plus the exact reviewed tran
     const historical = recipeTextForApprovedSnapshot(row.source_path, live);
     assert.equal(row.source_content_hash, createHash("sha256").update(live).digest("hex"));
     return {...row, notes: normalNotes, source_content_hash: createHash("sha256").update(historical).digest("hex")};
+   }
+   if (row.source_path === 'reseptit/alkuruoat/jiaozi.md') {
+    const live = read(row.source_path).replaceAll('\r\n', '\n');
+    const original = historicalJiaoziForApprovedVersion(row.source_path, live);
+    assert.equal(row.source_content_hash, createHash('sha256').update(live).digest('hex'));
+    return {...row, notes:normalNotes, source_content_hash:createHash('sha256').update(original).digest('hex')};
    }
    if(row.recipe_id!=='valimerellinen-farinata-aamupalaksi'||historicalFarinata===publishedFarinata){
     return {...row,notes:normalNotes};

@@ -159,6 +159,10 @@ const translationDraftCommits = new Map([
 // Exact recipe snapshots protect historical GK tests during translation preparation.
 // Production approval records remain in approvedTranslations.
 const recipeChanges = new Map([
+  ["reseptit/alkuruoat/jiaozi.md", { status: "M", sha256: "3ca732e55e989dd81361ed6284a1bf742b781421e37b7f952854a98179315fb5" }],
+  ["kaannokset/en/alkuruoat/jiaozi.md", { status: "M", sha256: "a182dceb7b7bbfa887ff298943354d58d5251648af3cc0d2cb1b51924b91651c" }],
+  ["kaannokset/sv/alkuruoat/jiaozi.md", { status: "M", sha256: "e34adfa421aaadd646c897f319ba6076cdf26585337bc5ef1dd9949a8feb358f" }],
+  ["kaannokset/th/alkuruoat/jiaozi.md", { status: "M", sha256: "7cedbc9b10b15e597d78d6bf5d0024f08f35a45d3979eeefd2e68e1ca7907c50" }],
   ...Object.entries(preparedTranslations.changes),
   ...Object.entries(approvedTranslations.changes),
 ]);
