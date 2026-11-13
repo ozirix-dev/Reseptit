@@ -14,6 +14,7 @@ import { breakfastFiQualityPaths, projectBreakfastFiQualityDisplay } from "./fi-
 
 import { material21FiPaths, projectMaterial21FiDisplay } from "./material21-fi-public-display";
 import { projectC13FiDisplay } from "./c13-fi-public-display";
+import { isPublicRecipeQuarantined } from "./public-recipe-quarantine";
 
 const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 export const sourceCategories = ["alkuruoat", "paaruoat", "jalkiruoat", "leivonnaiset", "aamupalat", "valipalat"] as const;
@@ -303,13 +304,15 @@ export function auditRecipePairs(
   const routes = new Map<string, number>();
   for (const entry of entries) {
     const key = `${entry.data.recipe_id}:${entry.data.language}`, route = `${entry.data.language}:${entry.data.url_slug}`;
-    ids.set(key, (ids.get(key) ?? 0) + 1); routes.set(route, (routes.get(route) ?? 0) + 1);
+    ids.set(key, (ids.get(key) ?? 0) + 1);
+    // Quarantined source is retained for history but has no public route.
+    if (!isPublicRecipeQuarantined(entry.data.recipe_id)) routes.set(route, (routes.get(route) ?? 0) + 1);
   }
   for (const entry of entries) {
     const key = `${entry.data.recipe_id}:${entry.data.language}`;
     const route = `${entry.data.language}:${entry.data.url_slug}`;
     if (ids.get(key)! > 1) errors.push(`${key}: duplicate published recipe locale`);
-    if (routes.get(route)! > 1) errors.push(`${key}: duplicate published route ${route}`);
+    if (!isPublicRecipeQuarantined(entry.data.recipe_id) && routes.get(route)! > 1) errors.push(`${key}: duplicate published route ${route}`);
     if (sources.includes(entry) && entry.data.language !== "fi") errors.push(`${key}: source language must be fi`);
     if (publishedTranslations.includes(entry) && !locales.includes(entry.data.language as Locale)) errors.push(`${key}: unexpected translation language`);
   }

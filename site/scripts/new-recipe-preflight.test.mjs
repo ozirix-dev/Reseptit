@@ -161,3 +161,28 @@ for (const [label, from, status, needsReview, target = recipePath] of [
     } finally { rmSync(root, { recursive: true, force: true }); }
   });
 }
+
+test('only the exact SHA-frozen chickpea successor may reuse a quarantined legacy slug', () => {
+  const newId = 'valimerellinen-kikherne-yrttiaamiainen-punnittu-v2';
+  const oldId = 'valimerellinen-kikherne-yrttiaamiainen';
+  const oldPath = 'reseptit/aamupalat/' + oldId + '.md';
+  const newPath = 'reseptit/aamupalat/' + newId + '.md';
+  const sourceText = source('published', newId).replace('url_slug: ' + newId, 'url_slug: ' + oldId);
+  const reviewed = approval(sourceText, newPath);
+  const oldRow = {
+    path: oldPath,
+    recipe_id: oldId,
+    url_slug: oldId,
+    status: 'published',
+    language: 'fi',
+    source_git_blob_sha: '33923cc854eabc27c7905db024c3b2e7d9ca44ab',
+  };
+  reviewed.supersedes_quarantined = {
+    recipe_id: oldId, source_path: oldPath, source_git_blob_sha: oldRow.source_git_blob_sha,
+  };
+  assert.deepEqual(validateReview(newPath, sourceText, reviewed, [oldRow]), []);
+  assert(validateReview(newPath, sourceText, { ...reviewed, supersedes_quarantined: null }, [oldRow]).some(x => x.includes('recipe_id/url_slug already exists')));
+  assert(validateReview(newPath, sourceText, reviewed, [{ ...oldRow, source_git_blob_sha: '0'.repeat(40) }]).some(x => x.includes('recipe_id/url_slug already exists')));
+  const foreignRow = { ...oldRow, path: 'reseptit/aamupalat/unrelated.md', recipe_id: 'unrelated' };
+  assert(validateReview(newPath, sourceText, reviewed, [oldRow, foreignRow]).some(x => x.includes('recipe_id/url_slug already exists')));
+});

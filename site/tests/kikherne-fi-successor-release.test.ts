@@ -1,0 +1,42 @@
+import { strict as assert } from "node:assert";
+import test from "node:test";
+import { readFileSync } from "node:fs";
+import { createHash } from "node:crypto";
+import path from "node:path";
+import { parseMarkdown } from "../src/content/markdown";
+import { recipeFrontmatterSchema } from "../src/content/schema";
+import { recipeNutritionInputHash, verifyNutritionEvidence } from "../scripts/nutrition-evidence";
+import { isPublicRecipeQuarantined } from "../scripts/public-recipe-quarantine";
+import { calculate, type Calculation } from "../scripts/nutrition-model";
+
+const root = path.resolve(import.meta.dirname, "../..");
+const read = (p: string) => readFileSync(path.join(root, p), "utf8");
+const oldId = "valimerellinen-kikherne-yrttiaamiainen";
+const id = "valimerellinen-kikherne-yrttiaamiainen-punnittu-v2";
+const sourceFile = "reseptit/aamupalat/valimerellinen-kikherne-yrttiaamiainen-punnittu-v2.md";
+
+test("FI chickpea successor keeps old URL and quarantined history while publishing exact V2", () => {
+ const original = read("reseptit/aamupalat/" + oldId + ".md");
+ const gitBlob = createHash("sha1").update("blob " + Buffer.byteLength(original, "utf8") + "\0").update(original).digest("hex");
+ assert.equal(gitBlob, "33923cc854eabc27c7905db024c3b2e7d9ca44ab");
+ assert.equal(isPublicRecipeQuarantined(oldId), true);
+ assert.equal(isPublicRecipeQuarantined(id), false);
+ const parsed = parseMarkdown(read(sourceFile));
+ assert.ok(parsed);
+ const recipe = recipeFrontmatterSchema.parse(parsed.data);
+ assert.equal(recipe.status, "published");
+ assert.equal(recipe.language, "fi");
+ assert.equal(recipe.recipe_id, id);
+ assert.equal(recipe.url_slug, oldId);
+ assert.equal(recipe.image?.src, "aamupalat/" + oldId + ".webp");
+ assert.deepEqual([recipe.carbs_net_per_serving_g,recipe.carbs_total_per_serving_g,recipe.protein_per_serving_g,recipe.fat_per_serving_g],[10.2,13.66,11.1,10.95]);
+ const evidence=JSON.parse(read("docs/nutrition/calculations/"+id+".json")) as Calculation;
+ assert.equal(recipeNutritionInputHash(recipe), evidence.sourceHash);
+ assert.equal(evidence.recipeId,id);
+ const calc=calculate(evidence);
+ assert.equal(calc.status,"ESTIMATE WITH EVIDENCE");
+ assert.deepEqual([calc.perServing.netCarbohydrate,calc.totalCarbohydratePerServingG,calc.perServing.protein,calc.perServing.fat],[10.2,13.66,11.1,10.95]);
+ assert.equal(verifyNutritionEvidence(recipe,evidence).status,"ESTIMATE WITH EVIDENCE");
+ const missingGk=JSON.parse(read("docs/nutrition/new-public-gk-pending-sources.json"));
+ assert.equal(missingGk[id], "172af458934dce456a54ccaacee8a2fb0c6f4b64");
+});
