@@ -20,7 +20,7 @@ const pilotIds = [
   "intialainen-mannasuurimoupma",
 ];
 
-test("issue404 10-recipe pilot preflight detects the original blocks and the newly published ful medames translations before CI", async () => {
+test("issue404 pilot protects published translations before a canonical method migration", async () => {
   const inputs = await loadSourceMigrationInputs(root, pilotIds);
   const actual = classifyCanonicalMethodMigration(pilotIds, inputs);
   assert.equal(actual.length, 10);
@@ -29,12 +29,15 @@ test("issue404 10-recipe pilot preflight detects the original blocks and the new
     "malesialainen-kaya-paahtoleipa",
     "valimerellinen-halloumi-tomaattileipa",
     "lahi-ita-ful-medames",
+    "meksikolainen-aamiais-tacot-mustapavuilla",
     "vietnamilainen-pho-ga-aamuksi",
     "intialainen-mannasuurimoupma",
   ]);
-  assert.equal(actual.filter(x => x.classification === "CANDIDATE_REQUIRES_REVIEW").length, 4);
-  assert.deepEqual(actual.find(x => x.recipeId === "lahi-ita-ful-medames")?.blockers,
-    ["PUBLISHED_TRANSLATION_SEMANTIC_REVIEW_REQUIRED:en,sv,th"]);
+  assert.equal(actual.filter(x => x.classification === "CANDIDATE_REQUIRES_REVIEW").length, 3);
+  for (const id of ["lahi-ita-ful-medames", "meksikolainen-aamiais-tacot-mustapavuilla"]) {
+    assert.deepEqual(actual.find(x => x.recipeId === id)?.blockers,
+      ["PUBLISHED_TRANSLATION_SEMANTIC_REVIEW_REQUIRED:en,sv,th"]);
+  }
   assert.ok(actual[0].blockers.some(x => x.startsWith("PUBLISHED_TRANSLATION_SEMANTIC_REVIEW_REQUIRED:")));
   assert.ok(actual[0].blockers.includes("GK149_FULL_SOURCE_SHA_REVIEW_REQUIRED"));
   for (const candidate of actual.filter(x => x.classification === "CANDIDATE_REQUIRES_REVIEW"))
@@ -55,7 +58,7 @@ test("preflight prevents known quarantines, malformed IDs and duplicates", async
   assert.ok(result[3].blockers.includes("DUPLICATE_CANDIDATE"));
 });
 
-test("GK100 first-five soba is HOLD before a canonical edit, while the other two pass known-source screens", async () => {
+test("soba retains its GK100 gate and all three recipes require translation review before a canonical edit", async () => {
   const ids = [
     "japanilainen-soba-aamiaiskeitto",
     "kiinalainen-jianbing-munaletty",
@@ -66,7 +69,11 @@ test("GK100 first-five soba is HOLD before a canonical edit, while the other two
   const result = classifyCanonicalMethodMigration(ids, inputs);
   assert.equal(result[0].classification, "HOLD");
   assert.ok(result[0].blockers.includes("GK100_APPROVED_SOURCE_SHA_REVIEW_REQUIRED"));
-  assert.deepEqual(result.slice(1).map(x => x.classification),
-    ["CANDIDATE_REQUIRES_REVIEW", "CANDIDATE_REQUIRES_REVIEW"]);
-  for (const candidate of result.slice(1)) assert.deepEqual(candidate.blockers, []);
+  for (const candidate of result) {
+    assert.equal(candidate.classification, "HOLD");
+    assert.ok(candidate.blockers.includes("PUBLISHED_TRANSLATION_SEMANTIC_REVIEW_REQUIRED:en,sv,th"));
+  }
+  for (const candidate of result.slice(1)) {
+    assert.deepEqual(candidate.blockers, ["PUBLISHED_TRANSLATION_SEMANTIC_REVIEW_REQUIRED:en,sv,th"]);
+  }
 });
