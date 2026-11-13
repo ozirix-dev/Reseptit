@@ -51,6 +51,11 @@ carbs_net_per_serving_g: 11.28
 carbs_total_per_serving_g: 16.23
 protein_per_serving_g: 11.32
 fat_per_serving_g: 36.39
+image:
+  src: paaruoat/okonomiyaki-kaaliletut-v2.webp
+  alt: "Paistetut kaaliletut, kevätsipulia ja srirachamajoneesia"
+  width: 1536
+  height: 1024
 
 ---
 # Okonomiyaki-tyyliset kaaliletut

@@ -43,12 +43,12 @@ const editorialMethods: Readonly<Record<string, readonly [string, string]>> = {
   'reseptit/aamupalat/marjainen-chiavanukas.md': ['26ef2fb244908290048b9e050dd54868f1c15b2c', 'b02c4d4613f83fd3d045b5c72a7f5a07ae0cdfcea5691c386c5fe0c5d828d954'],
   'reseptit/jalkiruoat/marjakiisseli-vaniljakastikkeella.md': ['26ef2fb244908290048b9e050dd54868f1c15b2c', '42e3765032750d1cc35b8172f6bd25439de69cd421c64223aefa6112b2800e9c'],
   'reseptit/paaruoat/miso-lohi-paksoi.md': ['26ef2fb244908290048b9e050dd54868f1c15b2c', 'caa41d5bd1f929406cfc0d7da2590e98ec624a85a68eaede35732966b066a270'],
-  'reseptit/paaruoat/okonomiyaki-kaaliletut.md': ['26ef2fb244908290048b9e050dd54868f1c15b2c', '30fdeacf128ff01beaa3df7fe991ee2547cdd6761f94a98cc6f294afe940d567'],
+  'reseptit/paaruoat/okonomiyaki-kaaliletut.md': ['26ef2fb244908290048b9e050dd54868f1c15b2c', 'b00a19917b8fe8deb778b101090009b2578a9111c26f76456ea1a318176d2ebb'],
   'reseptit/jalkiruoat/pannacotta-marjakastikkeella.md': ['26ef2fb244908290048b9e050dd54868f1c15b2c', 'e40c29b6f1e30daad9231ad833376cc64d8d4080d54dc59c7a6722b4bfc4e89b'],
   'reseptit/aamupalat/savulohi-avokadokulho.md': ['26ef2fb244908290048b9e050dd54868f1c15b2c', 'f93a416a19143264ad1c2d36c7cdaef456309d2a958c2b20a137360e6a3413c2'],
-  'reseptit/paaruoat/tacokulho-nauta-avokado.md': ['26ef2fb244908290048b9e050dd54868f1c15b2c', '3a5735d1348748d901a258a7498d87e825950f96ce66cfa48d434dcdc287863b'],
+  'reseptit/paaruoat/tacokulho-nauta-avokado.md': ['26ef2fb244908290048b9e050dd54868f1c15b2c', '4a5f2fc6b4af3d1fb79e64d29f55622ec555b2742ca29b89e83ea969adc62622'],
   'reseptit/jalkiruoat/vhh-juustokakku.md': ['26ef2fb244908290048b9e050dd54868f1c15b2c', 'd6d79e6e9dace0348cc7cd8d3d935ca9c5040dd08864a12a429bbd9491873573'],
-  'reseptit/paaruoat/carnitas-salaattitacot.md': ['26ef2fb244908290048b9e050dd54868f1c15b2c', '100008a32d28768f59401b356d3d76a026275119f274256282e2e1019d8ec2e1'],
+  'reseptit/paaruoat/carnitas-salaattitacot.md': ['26ef2fb244908290048b9e050dd54868f1c15b2c', 'b970133d0265652fd666780b977af158fed3eda7060f91c94e97907b76332e61'],
 };
 export const editorialMethodHistoryPaths = Object.freeze(Object.keys(editorialMethods));
 const accepted = new Set<string>(reviewedChefSafetyPaths);

@@ -52,6 +52,12 @@ fat_per_serving_g: 36.39
 source_language: fi
 source_recipe: reseptit/paaruoat/okonomiyaki-kaaliletut.md
 translation_of: okonomiyaki-kaaliletut
+image:
+  src: paaruoat/okonomiyaki-kaaliletut-v2.webp
+  alt: "Stekta kålpannkakor med salladslök och srirachamajonnäs"
+  width: 1536
+  height: 1024
+
 ---
 
 # Kålpannkakor i okonomiyakistil

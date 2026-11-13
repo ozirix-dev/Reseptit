@@ -55,6 +55,12 @@ fat_per_serving_g: 26.41
 source_language: fi
 source_recipe: reseptit/paaruoat/tacokulho-nauta-avokado.md
 translation_of: tacokulho-nauta-avokado
+image:
+  src: paaruoat/tacokulho-nauta-avokado-v2.webp
+  alt: "Tacobowl med nötfärs, avokado, tomat och limeyoghurt"
+  width: 1536
+  height: 1024
+
 ---
 
 # Tacobowl med nötfärs och avokado

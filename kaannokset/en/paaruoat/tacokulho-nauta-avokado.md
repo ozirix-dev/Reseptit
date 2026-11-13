@@ -55,6 +55,12 @@ fat_per_serving_g: 26.41
 source_language: fi
 source_recipe: reseptit/paaruoat/tacokulho-nauta-avokado.md
 translation_of: tacokulho-nauta-avokado
+image:
+  src: paaruoat/tacokulho-nauta-avokado-v2.webp
+  alt: "Taco bowl with ground beef, avocado, tomato and lime yogurt"
+  width: 1536
+  height: 1024
+
 ---
 
 # Beef and avocado taco bowl
