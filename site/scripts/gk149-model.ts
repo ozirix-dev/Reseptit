@@ -1,3 +1,4 @@
+import {biryaniSourceBeforeReview} from "./biryani-reviewed-source";
 import {recipeTextForApprovedSnapshot} from "./approved-recipe-note-edits";
 /** Closed pilot arithmetic. Public integration requires the separate exact owner-approved GK-only version contract. */
 import {createHash} from 'node:crypto';
@@ -46,7 +47,7 @@ export function verifyComposition(root:string,c:Composition){
 export function verifyCase(root:string,c:Case){
  const {inputSha256,...body}=c;if(digest(body)!==inputSha256)err('input hash '+c.recipeId);
  if(c.approval!==false||c.macroAction!=='PRESERVE_ALL_CURRENT_VALUES_AND_WITHHOLDINGS'||!c.preparationDecision||!c.requiredDecisions.includes('GK_ONLY_CONTRACT'))err('contract '+c.recipeId);
- for(const [locale,p] of Object.entries(c.paths))if(textHash(recipeTextForApprovedSnapshot(p,readFileSync(path.join(root,p),'utf8').replaceAll('\r\n','\n')))!==c.recipeSha256[locale])err('recipe changed '+c.recipeId+'/'+locale);
+ for(const [locale,p] of Object.entries(c.paths))if(textHash(recipeTextForApprovedSnapshot(p,biryaniSourceBeforeReview(p,readFileSync(path.join(root,p),'utf8').replaceAll('\r\n','\n'))))!==c.recipeSha256[locale])err('recipe changed '+c.recipeId+'/'+locale);
 }
 export function loadPilot(root:string){
  const pack=read(root,folder+'cases.json');

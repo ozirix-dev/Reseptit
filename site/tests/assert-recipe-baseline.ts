@@ -159,6 +159,11 @@ const translationDraftCommits = new Map([
 // Exact recipe snapshots protect historical GK tests during translation preparation.
 // Production approval records remain in approvedTranslations.
 const recipeChanges = new Map([
+  ["reseptit/paaruoat/hyderabadi-kanabiryani.md", { status: "M", sha256: "591ff23b6543b9f9c4893a332598cf0b79e3e6dd1b4f8790319c43934b196159" }],
+  ["kaannokset/en/paaruoat/hyderabadi-kanabiryani.md", { status: "M", sha256: "5ee35c7a201b30b2bb74270729a0764444f8c1e15d9bf5b25f416f7937da69a2" }],
+  ["kaannokset/sv/paaruoat/hyderabadi-kanabiryani.md", { status: "M", sha256: "ff8332953ef806e04462987107bcdb348f9ecb1abd309bc296e666af4213d015" }],
+  ["kaannokset/th/paaruoat/hyderabadi-kanabiryani.md", { status: "M", sha256: "91abb4513fa3dcb7b301e6b0b2f53768603569764943218d90fecacf2c3a5147" }],
+  ["docs/nutrition/calculations/hyderabadi-kanabiryani.json", { status: "M", sha256: "2f2f4f0b9d25f336d3bebdef21046de5dcab9f7c54d7b6337842f1d95cd42abd" }],
   ["reseptit/alkuruoat/tunisialainen-brik.md", { status: "M", sha256: "ba717dc99f3f78b6001fdcea43afb0e06002e6c40df2f96428e13c9008b80dfa" }],
   ["kaannokset/en/alkuruoat/tunisialainen-brik.md", { status: "M", sha256: "439931c68cd671cf761139217777528852a4f3e3efd056cc53fde52c62997922" }],
   ["kaannokset/sv/alkuruoat/tunisialainen-brik.md", { status: "M", sha256: "633a9155951e4b7f1e88ffc234c09313b6026b1b9cfb6f3bf5970e88d3a61668" }],

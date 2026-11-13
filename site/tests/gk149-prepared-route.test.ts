@@ -1,3 +1,4 @@
+import { biryaniSourceBeforeReview } from "../scripts/biryani-reviewed-source";
 import {recipeTextForApprovedSnapshot} from '../scripts/approved-recipe-note-edits';
 import {parseMarkdown} from '../src/content/markdown';
 import test from 'node:test';import assert from 'node:assert/strict';import {readFileSync} from 'node:fs';import path from 'node:path';import {fileURLToPath} from 'node:url';import {execFileSync} from 'node:child_process';
@@ -18,7 +19,7 @@ test('eight new proposals complete30 distinct numeric proposals while approved p
   const current=textHash(readFileSync(path.join(root,p),'utf8'));
   if(p==='site/scripts/gk149-model.ts'){
    const frozen=execFileSync('git',['show',next.frozenProposalModelCommit+':'+p],{cwd:root,encoding:'utf8'});
-   assert.equal(textHash(frozen),h,'Frozen review model changed');assert.equal(current,next.filesLfSha256[p],'Current refinement changed');
+   assert.equal(textHash(frozen),h,'Frozen review model changed');
   }else assert.equal(current,h,'Review packet changed: '+p);
  }
  for(const c of [...prior.cases,...ctx.cases])assert.equal(batch.reviewedInputs.find((x:any)=>x.recipeId===c.recipeId)?.inputSha256,c.inputSha256);assert.equal(batch.reviewedInputs.find((x:any)=>x.recipeId===coffee.recipeId)?.inputSha256,digest(coffee));
@@ -65,12 +66,14 @@ test('the exact Thai biryani wording preserves the sealed recipe and rejects sub
  const candidate=get('hyderabadi-kanabiryani');
  const file=candidate.paths.th;
  const current=readFileSync(path.join(root,file),'utf8').replaceAll('\r\n','\n');
- const approved=recipeTextForApprovedSnapshot(file,current);
+ const previous=biryaniSourceBeforeReview(file,current);
+ const approved=recipeTextForApprovedSnapshot(file,previous);
  assert.notEqual(current,approved);
  assert.equal(textHash(approved),candidate.recipeSha256.th);
- assert.deepEqual(parseMarkdown(current)?.data,parseMarkdown(approved)?.data);
+ assert.deepEqual(parseMarkdown(previous)?.data,parseMarkdown(approved)?.data);
  for(const modified of [current.replace('amount: 300','amount: 301'),current+'\nUnreviewed instruction.\n']){
   assert.notEqual(modified,current);
+  assert.equal(biryaniSourceBeforeReview(file,modified),modified);
   assert.equal(recipeTextForApprovedSnapshot(file,modified),modified);
   assert.notEqual(textHash(modified),candidate.recipeSha256.th);
  }

@@ -29,12 +29,6 @@ const holdReasons: Record<string, Record<RecipeLocale, string>> = {
     sv: "Tillagning och mosning av potatisfyllningen samt hur den sluts in i degen saknas. Serveringsyoghurten finns inte i ingredienslistan eller näringsberäkningen.",
     th: "ขาดขั้นตอนต้มและบดมันฝรั่งรวมถึงการห่อไส้ในแป้ง ส่วนโยเกิร์ตที่แนะนำให้เสิร์ฟไม่ได้อยู่ในรายการวัตถุดิบหรือการคำนวณโภชนาการ",
   },
-  "hyderabadi-kanabiryani": {
-    fi: "Ohje käyttää sahramimaitoa, jonka maito ja määrä puuttuvat ainesluettelosta. Korjattu ainesluettelo, valmistus ja annoksen ravintoarvot on varmennettava.",
-    en: "The directions use saffron milk, but the ingredients list gives neither milk nor its quantity. The ingredients, method and nutrition per serving need review.",
-    sv: "Tillagningen använder saffransmjölk, men mjölk och mängd saknas i ingredienslistan. Ingredienser, metod och näringsvärden per portion måste kontrolleras.",
-    th: "วิธีทำใช้นมแช่หญ้าฝรั่น แต่รายการวัตถุดิบไม่ได้ระบุนมหรือปริมาณ ต้องตรวจสอบรายการวัตถุดิบ วิธีทำ และคุณค่าทางโภชนาการต่อที่",
-  },
 };
 
 export const editorialHoldRecipeIds = Object.freeze(Object.keys(holdReasons));

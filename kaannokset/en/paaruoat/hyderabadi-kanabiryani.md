@@ -68,7 +68,10 @@ ingredients:
   - amount: 1
     unit: g
     item: saffron
-    note: soaked in 2 tbsp warm milk
+  - amount: 30
+    unit: g
+    item: whole milk
+    note: for soaking the saffron
   - amount: 20
     unit: g
     item: fresh coriander
@@ -80,10 +83,10 @@ ingredients:
 source_language: fi
 source_recipe: reseptit/paaruoat/hyderabadi-kanabiryani.md
 translation_of: hyderabadi-kanabiryani
-carbs_net_per_serving_g: 60.47
-carbs_total_per_serving_g: 62.73
-protein_per_serving_g: 37.41
-fat_per_serving_g: 20.64
+carbs_net_per_serving_g: 60.83
+carbs_total_per_serving_g: 63.09
+protein_per_serving_g: 37.63
+fat_per_serving_g: 20.9
 
 ---
 
@@ -97,14 +100,14 @@ Spicy chicken biryani is cooked in layers of seasoned chicken and fragrant basma
 
 ## Preparation
 
-1. Rinse the rice and soak in cold water for 20 minutes. Drain.
-2. Mix the chicken with yogurt, garam masala, cumin, coriander, turmeric and salt. Leave to season for 20 minutes.
+1. Rinse the rice and soak in cold water for 20 minutes. Drain. Warm 30 g of whole milk and steep the saffron in it while the rice soaks.
+2. Mix the chicken with yogurt, garam masala, ground cumin, ground coriander seed, turmeric and salt. Leave to season for 20 minutes.
 3. Brown the onions in oil until golden. Set half aside. Add the whole cinnamon stick and all the cardamom pods to the pot.
 4. Add the chicken and brown the surface. Cover and cook over a low heat for 15 minutes.
 5. Cook the rice in salted water for 5–6 minutes until partly cooked. Drain.
-6. Spread the rice over the chicken. Add saffron milk, ghee, fried onion, mint and coriander.
+6. Spread the rice over the chicken. Add saffron milk, ghee, fried onion, mint and fresh coriander.
 7. Close the lid tightly and cook on very low heat for 20–25 minutes. Leave for 10 minutes and gently fluff.
 
 ## Notes
 
-- Check the doneness of the chicken in the thickest part before serving.
+- Before serving, check that the chicken reaches at least 74 °C in the thickest part. Continue cooking if needed.

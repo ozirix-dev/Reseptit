@@ -68,7 +68,10 @@ ingredients:
   - amount: 1
     unit: g
     item: saffran
-    note: blötlagd i 2 msk varm mjölk
+  - amount: 30
+    unit: g
+    item: standardmjölk
+    note: till saffranet
   - amount: 20
     unit: g
     item: färsk koriander
@@ -80,10 +83,10 @@ ingredients:
 source_language: fi
 source_recipe: reseptit/paaruoat/hyderabadi-kanabiryani.md
 translation_of: hyderabadi-kanabiryani
-carbs_net_per_serving_g: 60.47
-carbs_total_per_serving_g: 62.73
-protein_per_serving_g: 37.41
-fat_per_serving_g: 20.64
+carbs_net_per_serving_g: 60.83
+carbs_total_per_serving_g: 63.09
+protein_per_serving_g: 37.63
+fat_per_serving_g: 20.9
 
 ---
 
@@ -97,14 +100,14 @@ Kryddig kyckling biryani tillagas i lager av kryddad kyckling och doftande basma
 
 ## Tillagning
 
-1. Skölj riset och blötlägg i kallt vatten i 20 minuter. Dränera.
-2. Blanda kycklingen med yoghurt, garam masala, spiskummin, koriander, gurkmeja och salt. Låt krydda i 20 minuter.
+1. Skölj riset och blötlägg det i kallt vatten i 20 minuter. Låt rinna av. Värm 30 g standardmjölk och låt saffranet dra i den medan riset ligger i blöt.
+2. Blanda kycklingen med yoghurt, garam masala, malen spiskummin, malda korianderfrön, gurkmeja och salt. Låt krydda i 20 minuter.
 3. Bryn löken i olja tills den är gyllenbrun. Lägg hälften åt sidan. Tillsätt hela kanelstången och alla kardemummakapslar i grytan.
 4. Tillsätt kycklingen och bryn ytan. Lägg på lock och tillaga på låg värme i 15 minuter.
 5. Koka riset i saltat vatten i 5–6 minuter tills det är halvkokt. Häll av vattnet.
-6. Fördela riset över kycklingen. Tillsätt saffransmjölk, ghee, stekt lök, mynta och koriander.
+6. Fördela riset över kycklingen. Tillsätt saffransmjölk, ghee, stekt lök, mynta och färsk koriander.
 7. Stäng locket tätt och koka på mycket låg värme i 20–25 minuter. Låt stå i 10 minuter och fluffa försiktigt.
 
 ## Anteckningar
 
-- Kontrollera att kycklingen är klar i den tjockaste delen innan servering.
+- Kontrollera före servering att kycklingen är minst 74 °C i den tjockaste delen. Fortsätt tillaga vid behov.

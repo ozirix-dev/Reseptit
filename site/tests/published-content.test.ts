@@ -495,7 +495,7 @@ test("batch twelve publishes recalculated macronutrients for every recipe and av
     ["nakkikastike-kukkakaalimuusi", [7.88, 10.96, 15.69, 45.87]],
     ["amritsari-kala", [10.74, 16.33, 32.17, 10.81]],
     ["kantonilainen-hoyrytetty-kala", [3.13, 4.58, 31.99, 9.04]],
-    ["hyderabadi-kanabiryani", [60.47, 62.73, 37.41, 20.64]],
+    ["hyderabadi-kanabiryani", [60.83, 63.09, 37.63, 20.9]],
     ["kana-yakitori-kaalilla", [9.16, 12.35, 27.52, 6.23]],
     ["ropa-vieja", [7.67, 9.77, 34.06, 6.77]],
     ["kerala-kalacurry", [5.54, 6.67, 28.28, 22.7]],
