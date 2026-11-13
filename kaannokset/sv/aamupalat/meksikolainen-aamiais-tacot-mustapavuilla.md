@@ -62,5 +62,5 @@ Varma majstortillas med stekta ägg, avokado och kokta svarta bönor.
 
 ## Anteckningar
 
-- Tillagningen använder kokta bönor. Den ursprungliga mängden på 150 g skilde inte mellan torr och kokt vikt. Underlaget för näringsvärden, GI och glykemisk belastning är fortfarande inte godkänt.
+- Tillagningen använder kokta bönor. Den ursprungliga mängden på 150 g skilde inte mellan torr och kokt vikt. Det ursprungliga underlaget bekräftar inte näringsvärdena. Webbplatsen visar den befintliga uppskattningen av glykemisk belastning med låg tillförlitlighet. Den är inte ett uppmätt svar och bekräftar inte bönornas näringsvärden.
 - Serveringsbilden är illustrativ. Följ ingredienslistan och tillagningen ovan.

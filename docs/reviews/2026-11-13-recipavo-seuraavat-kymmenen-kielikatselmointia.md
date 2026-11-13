@@ -11,7 +11,7 @@ Katselmointi sitoo jokaisen EN-, SV- ja TH-version nykyiseen julkaistuun FI-ohje
 | Wonton | Jääkaappisulatus, 150 g katkarapua ja taikinaa, 700 ml lientä ja paksuimman nyytin kypsyystarkistus. Ravintoarvoja ei julkaistu. |
 | Apam balik | Maapähkinä-, maissi- ja sokeritäyte. Pannukakku kypsyy kauttaaltaan kannen alla, ilman kohotusainetta. |
 | Kaya | Kaksi erillistä munaa. Käännöksissä lämpömittaritarkistus koko levitteelle 71 °C ja lisukemuna kypsäksi. Koekeittiön 25 minuutin varmennus puuttuu. |
-| Aamiaistacot | 150 g valmiiksi kypsiä mustapapuja ja 100 g maissitortillaa. Käännöksissä muna kypsäksi. Ravinto- ja GK-lukko säilyy. |
+| Aamiaistacot | 150 g valmiiksi kypsiä mustapapuja ja 100 g maissitortillaa. Käännöksissä muna kypsäksi. Pavun ravintoperusta on edelleen avoin. Sivuston olemassa oleva matalan luottamuksen GK-arvio erotetaan todentamattomista ravintoarvoista. |
 | Huevos divorciados | Valmista tölkkipapua punnitaan valutettuna 150 g. Kastikkeet pidetään erillään, muna kypsennetään, tuotetiedot tarkistetaan pakkauksesta. V2 pysyy lukittuna. |
 | Siemenvuokaleipä | Täsmälliset tuotteet ja EANit, pakkaus- ja kontaminaatioehdot, paisto 180 °C noin 60 minuuttia. Jokaisella kielellä on erillinen tiedostotiivisteeseen sidottu gluteenittomuuskatselmointi. |
 

@@ -62,5 +62,5 @@ Warm corn tortillas with fried eggs, avocado and cooked black beans.
 
 ## Notes
 
-- The preparation uses cooked beans. The original 150 g entry did not distinguish dry from cooked weight. Nutrition, GI and glycaemic load remain unapproved, and the original quantities are not a confirmed nutrition calculation.
+- The preparation uses cooked beans. The original 150 g entry did not distinguish dry from cooked weight. The original quantities are not a confirmed nutrition calculation. The site displays its existing glycaemic-load estimate with low confidence. The estimate is not a measured response and does not validate the bean nutrition data.
 - The serving image is illustrative. Follow the ingredient list and preparation above.
