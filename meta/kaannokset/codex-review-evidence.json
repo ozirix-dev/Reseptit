@@ -8922,49 +8922,46 @@
     "correction_pr": 539
   },
   "jiaozi:th": {
-    "source_hash": "d1a2e01df957a51e8531c580c108155f378b54218748cb4dc54592492e62b96b",
-    "translation_hash": "2d66579104a775116256cb72a82edceebe6512ca6d9ae41d7a45a785573d74e9",
+    "source_hash": "c816d34dd9a98ae4f6c833088350b124d050a9906e64c0323c86666ba22d9da3",
+    "translation_hash": "eb5bf27da13353f7c1395a0937b45fbb9ff98302af41b53054e639783f42e76c",
     "reviewed_at": "2026-11-13",
-    "reference": "docs/reviews/2026-11-13-recipavo-kymmenen-kielikatselmointia.md",
-    "outcome": "human-required",
+    "reference": "docs/reviews/2026-11-13-jiaozi-hold-korjaus.md",
+    "outcome": "pass",
     "findings": [
       {
         "severity": "P1",
-        "status": "open",
-        "summary": "Noin 500 g liha-kaalitäytettä ja mausteet eivät mahdu 24 kuoreen teelusikallisina. Punnitse täyte kuorta kohden ja varmista kuorten määrä, kypsennys ja annosperuste ennen uutta katselmointia."
+        "status": "fixed",
+        "summary": "Corrected wrapper and filling yield; verified four servings and the 71 °C ground-pork endpoint against the Finnish source."
       }
-    ],
-    "correction_pr": 539
+    ]
   },
   "jiaozi:en": {
-    "source_hash": "d1a2e01df957a51e8531c580c108155f378b54218748cb4dc54592492e62b96b",
-    "translation_hash": "1aae3adda0441e12c34f02358d2d8e42aa9bc77e2c8b2df69ee55c857377aa17",
+    "source_hash": "c816d34dd9a98ae4f6c833088350b124d050a9906e64c0323c86666ba22d9da3",
+    "translation_hash": "ae5dcff5392b556c9de5088c8d3dcbab04593874d0dbf640703a5916bae20ea6",
     "reviewed_at": "2026-11-13",
-    "reference": "docs/reviews/2026-11-13-recipavo-kymmenen-kielikatselmointia.md",
-    "outcome": "human-required",
+    "reference": "docs/reviews/2026-11-13-jiaozi-hold-korjaus.md",
+    "outcome": "pass",
     "findings": [
       {
         "severity": "P1",
-        "status": "open",
-        "summary": "Noin 500 g liha-kaalitäytettä ja mausteet eivät mahdu 24 kuoreen teelusikallisina. Punnitse täyte kuorta kohden ja varmista kuorten määrä, kypsennys ja annosperuste ennen uutta katselmointia."
+        "status": "fixed",
+        "summary": "Corrected wrapper and filling yield; verified four servings and the 71 °C ground-pork endpoint against the Finnish source."
       }
-    ],
-    "correction_pr": 539
+    ]
   },
   "jiaozi:sv": {
-    "source_hash": "d1a2e01df957a51e8531c580c108155f378b54218748cb4dc54592492e62b96b",
-    "translation_hash": "338d146815ae5ce5a2c46c5184ef77f9288a3cb7e81b6dba6aeeef047904e429",
+    "source_hash": "c816d34dd9a98ae4f6c833088350b124d050a9906e64c0323c86666ba22d9da3",
+    "translation_hash": "d4c2f637d2474e2182ca736ee4637e36d11f4edc51b6a2b185a21cc8a1a9eb93",
     "reviewed_at": "2026-11-13",
-    "reference": "docs/reviews/2026-11-13-recipavo-kymmenen-kielikatselmointia.md",
-    "outcome": "human-required",
+    "reference": "docs/reviews/2026-11-13-jiaozi-hold-korjaus.md",
+    "outcome": "pass",
     "findings": [
       {
         "severity": "P1",
-        "status": "open",
-        "summary": "Noin 500 g liha-kaalitäytettä ja mausteet eivät mahdu 24 kuoreen teelusikallisina. Punnitse täyte kuorta kohden ja varmista kuorten määrä, kypsennys ja annosperuste ennen uutta katselmointia."
+        "status": "fixed",
+        "summary": "Corrected wrapper and filling yield; verified four servings and the 71 °C ground-pork endpoint against the Finnish source."
       }
-    ],
-    "correction_pr": 539
+    ]
   },
   "mustaherukkavispipuuro:en": {
     "source_hash": "f9c87f0d3e502a409363e363a64dd803f33e80cf89fe99a834e45f1ae0fe92c3",

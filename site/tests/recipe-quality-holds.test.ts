@@ -18,7 +18,6 @@ const originals = {
   "intialainen-aloo-paratha": "reseptit/aamupalat/intialainen-aloo-paratha.md",
   "tunisialainen-brik": "reseptit/alkuruoat/tunisialainen-brik.md",
   "hyderabadi-kanabiryani": "reseptit/paaruoat/hyderabadi-kanabiryani.md",
-  jiaozi: "reseptit/alkuruoat/jiaozi.md",
   "karibia-bammy-kassavaleipa": "reseptit/aamupalat/karibia-bammy-kassavaleipa.md",
 } as const;
 
@@ -66,6 +65,16 @@ test("the same quality-hold reasoning exists in every supported locale", () => {
     "ackee has its own stricter food-safety hold");
 });
 
+
+test("jiaozi publishes the corrected yield and cooking endpoint in all four languages", () => {
+  for (const locale of ["fi", "en", "sv", "th"] as const) {
+    const recipe = siteContent.recipes.find((entry) => entry.recipeId === "jiaozi" && entry.locale === locale);
+    assert.ok(recipe, locale);
+    assert.equal(publicRecipeQualityHold("jiaozi", locale), null);
+    assert.match(recipe.instructionsText.join(" "), /40/);
+    assert.match(recipe.instructionsText.join(" "), /71 °C/);
+  }
+});
 
 test("withdrawn cassava source still carries a safety warning in four languages", () => {
   for (const locale of ["fi", "en", "sv", "th"] as const) {

@@ -6,7 +6,7 @@ category: alkuruoka
 language: sv
 status: published
 servings: 4
-time_total_min: 75
+time_total_min: 90
 main_ingredient:
   - sianliha
   - kaali
@@ -19,8 +19,8 @@ tags:
   - fläsk
   - kål
 image:
-  src: paaruoat/jiaozi.webp
-  alt: Jiaozi dumplings, gyllenbruna bottnar och sojadippsås
+  src: paaruoat/jiaozi-keitetty.webp
+  alt: Kokta jiaozi med sojadippsås
   width: 1279
   height: 853
 ingredients:
@@ -70,11 +70,11 @@ fat_per_serving_g: 14.24
 
 # Jiaozi med fläsk och kål
 
-Hemgjorda dumplings fyllda med fläsk, kål och ingefära kokas tills fyllningen är klar.
+Hemgjorda kinesiska dumplings med fläsk, kinakål och ingefära. Receptet ger cirka 40 kokta dumplings, ungefär 10 per portion.
 
 ## Description
 
-Hemgjorda dumplings fyllda med fläsk, kål och ingefära kokas tills fyllningen är klar.
+Hemgjorda kinesiska dumplings med fläsk, kinakål och ingefära. Receptet ger cirka 40 kokta dumplings, ungefär 10 per portion.
 
 ## Preparation
 
@@ -82,9 +82,9 @@ Hemgjorda dumplings fyllda med fläsk, kål och ingefära kokas tills fyllningen
 
 2. Krama ur vätskan från kålen. Blanda kål, fläskfärs, vårlök, soja, sesamolja, ingefära och salt.
 
-3. Dela degen i 24 bitar och kavla tunt. Lägg på fyllning, fukta kanterna, vik och förslut.
+3. Dela degen i 40 bitar på cirka 12 g. Kavla ut rundlar, cirka 9 cm i diameter, med tunnare kanter. Fördela fyllningen jämnt, cirka 13 g per rundel. Fukta kanten vid behov, vik till en halvmåne och nyp ihop ordentligt.
 
-4. Koka i omgångar i 6–8 minuter tills dumplingarna flyter upp och fyllningen är genomkokt. Lyft upp med hålslev.
+4. Koka dumplingarna i omgångar i rikligt med vatten. När vattnet kokar upp igen, låt det koka försiktigt i cirka 6–8 minuter. Kontrollera att fyllningen i den största dumplingen är minst 71 °C i mitten. Fortsätt koka vid behov och lyft upp de färdiga dumplingarna med hålslev.
 
 5. Blanda soja och risvinäger till dippsås. Servera med dumplingarna.
 
