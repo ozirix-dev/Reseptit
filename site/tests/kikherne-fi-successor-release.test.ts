@@ -28,7 +28,7 @@ test("FI chickpea successor keeps old URL and quarantined history while publishi
  assert.equal(recipe.language, "fi");
  assert.equal(recipe.recipe_id, id);
  assert.equal(recipe.url_slug, oldId);
- assert.equal(recipe.image?.src, "aamupalat/" + oldId + ".webp");
+ assert.equal(recipe.image?.src, "aamupalat/" + oldId + "-v2.webp");
  assert.deepEqual([recipe.carbs_net_per_serving_g,recipe.carbs_total_per_serving_g,recipe.protein_per_serving_g,recipe.fat_per_serving_g],[10.2,13.66,11.1,10.95]);
  const evidence=JSON.parse(read("docs/nutrition/calculations/"+id+".json")) as Calculation;
  assert.equal(recipeNutritionInputHash(recipe), evidence.sourceHash);
@@ -38,5 +38,5 @@ test("FI chickpea successor keeps old URL and quarantined history while publishi
  assert.deepEqual([calc.perServing.netCarbohydrate,calc.totalCarbohydratePerServingG,calc.perServing.protein,calc.perServing.fat],[10.2,13.66,11.1,10.95]);
  assert.equal(verifyNutritionEvidence(recipe,evidence).status,"ESTIMATE WITH EVIDENCE");
  const missingGk=JSON.parse(read("docs/nutrition/new-public-gk-pending-sources.json"));
- assert.equal(missingGk[id], "172af458934dce456a54ccaacee8a2fb0c6f4b64");
+ assert.equal(missingGk[id], "81707cb321c504a0765f29933ab4f6049dcd53ea");
 });
