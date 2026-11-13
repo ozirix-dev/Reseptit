@@ -33,6 +33,7 @@
     "audit:glycemic-load": "tsx scripts/glycemic-load-pilot.ts",
     "audit:glycemic-coverage": "tsx scripts/glycemic-coverage-inventory.ts",
     "review:translations": "tsx scripts/translation-review.ts",
+    "queue:translations": "tsx scripts/translation-queue-cli.ts",
     "pilot:gk149": "tsx scripts/gk149-pilot.ts",
     "pilot:gk149-recovery": "tsx scripts/gk149-recovery.ts",
     "pilot:gk149-prepared-route": "tsx scripts/gk149-prepared-route.ts",

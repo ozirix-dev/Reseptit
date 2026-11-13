@@ -56,6 +56,27 @@ lajit, yrtit ja mausteet, kypsennysverbit, astiat, yksiköt ja kieltomuodot.
 Korjaa luontevalla thailla ja vertaa korjatun valmistusohjeen merkitys vielä
 kerran. Käytä suomea lähteenä. Takaisinkäännös täydentää vertailua.
 
+## Käännösjono ja julkaisuportti
+
+Aja hakemistossa `site/` komento `npm run queue:translations -- --limit=10`.
+Repon juureen syntyy `tmp/translation-review/queue.json`, jossa ovat FI/EN/SV/TH-kattavuus,
+kieliparien syyt, polut, merkitystiivisteet ja seuraavan rajatun erän työ.
+Karanteenit näkyvät omassa luettelossaan. F25-lähteen julkaisulukko ja toimituksellinen
+HOLD näkyvät kieliparin esteenä. Luonnos, puuttuva käännös tai katselmointitarve näkyy
+jonossa. Puuttuvat kielet eivät estä uuden FI-lähteen julkaisua.
+
+CI tallentaa saman JSONin tarkastettavaksi. Nykyinen muuttuneen sisällön
+tarkistus edellyttää merkitystiivisteeseen sidottua kuittausta uusilta ja
+muuttuneilta julkaistuilta käännöksiltä. Jonoajo tarkistaa lisäksi
+Git-vertailusta muuttuneet hyväksyntätietueet ja hylkää julkaistun
+kieliparin puuttuvan tai vanhentuneen hyväksynnän, jos hyväksyntätietuetta
+muutetaan. Julkaistu käännös ilman julkaisukelpoista FI-lähdettä on virhe.
+Toimituksellisessa HOLDissa saa kirjata ajantasaisen ihmiskatselmointitarpeen.
+
+Käytä seuraavan erän polkuja ja tiivisteitä erillisessä Codex-ajossa.
+Käännösteksti, merkitysvertailu ja mahdollinen ihmispäätös tehdään siinä
+työnkulussa. CI ei kutsu käännöspalvelua.
+
 ## Havaintojen vakavuus
 
 - **BLOCKER** estää julkaisun. Esimerkiksi automaattinen pakollinen
