@@ -71,9 +71,9 @@ Slow-cooked rice porridge is a soft and mild everyday dish that can be served wi
 ## Preparation
 
 1. Rinse the rice with cold water.
-2. Put the rice, water or stock and salt in the pot. Bring to a boil and cook on very low heat in the crack of the lid for about 60 minutes. Stir occasionally.
+2. Put the rice, chicken stock and salt in the pot. Bring to a boil and simmer over very low heat with the lid ajar for about 60 minutes. Stir occasionally.
 3. When the rice has broken down into a soft porridge, stir in the ginger and cook for another 5 minutes.
-4. Divide the porridge into bowls. Add spring onions, soy sauce and sesame oil. Serve with an egg if desired.
+4. Divide the porridge into bowls. Add spring onions, soy sauce and sesame oil. Serve with halved boiled eggs if desired.
 
 ## Notes
 

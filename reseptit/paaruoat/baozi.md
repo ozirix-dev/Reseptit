@@ -84,7 +84,7 @@ Pehmeät hiivataikinasta tehdyt sämpylät täytetään mehukkaalla porsaanlihal
 2. Purista kaalista neste. Sekoita kaali, jauheliha, kevätsipuli, soijakastike, seesamiöljy, inkivääri ja maissitärkkelys.
 3. Jaa taikina 12 osaan ja pyöritä palloiksi. Kauli jokainen levyksi niin, että keskusta jää hieman paksummaksi.
 4. Laita täytettä keskelle ja poimuta reunat kiinni sämpyläksi. Aseta leivinpaperineliön päälle.
-5. Kohota 15 minuuttia ja höyrytä erissä 12–15 minuuttia. Sammuta lämpö ja odota 3 minuuttia ennen kannen avaamista.
+5. Kohota 15 minuuttia ja höyrytä erissä 12–15 minuuttia. Tarkista, että porsastäytteen sisälämpötila on vähintään 70 °C. Jatka höyrytystä tarvittaessa. Sammuta lämpö ja odota 3 minuuttia ennen kannen avaamista.
 
 ## Muistiinpanot
 

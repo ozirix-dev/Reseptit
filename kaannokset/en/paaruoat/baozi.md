@@ -79,10 +79,10 @@ Soft rolls made of yeast dough are filled with juicy pork, cabbage and spring on
 ## Preparation
 
 1. Mix warm water, yeast and sugar. Let stand for 5 minutes. Add the flour and knead into an elastic dough. Cover and let rise for 45 minutes.
-2. Squeeze the liquid from the cabbage. Mix the cabbage, minced meat, spring onion, soy sauce, sesame oil, ginger and cornstarch.
+2. Squeeze the liquid from the cabbage. Mix the cabbage, ground pork, spring onion, soy sauce, sesame oil, ginger and cornstarch.
 3. Divide the dough into 12 parts and roll into balls. Roll each into a disk so that the center is slightly thicker.
 4. Put the filling in the middle and fold the edges to form a bun. Place on a square of baking paper.
-5. Rise for 15 minutes and steam in batches for 12–15 minutes. Turn off the heat and wait 3 minutes before opening the lid.
+5. Let the buns rise for 15 minutes and steam in batches for 12–15 minutes. Check that the centre of the pork filling reaches at least 70 °C. Steam longer if needed. Turn off the heat and wait 3 minutes before opening the lid.
 
 ## Notes
 

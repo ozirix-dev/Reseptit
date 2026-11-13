@@ -36,7 +36,7 @@ ingredients:
   - amount: 2
     unit: st
     item: en vitlöksklyfta
-    note: strimlad
+    note: hackad
   - amount: 200
     unit: g
     item: vitkål
@@ -70,15 +70,15 @@ fat_per_serving_g: 12.09
 
 # Chow mein med kyckling
 
-Quick chow mein kombinerar wokfriterade nudlar, kyckling och knapriga grönsaker med en enkel sojasås.
+Snabb chow mein kombinerar wokade nudlar, kyckling och knapriga grönsaker med en enkel sojasås.
 
 ## Beskrivning
 
-Quick chow mein kombinerar wokfriterade nudlar, kyckling och knapriga grönsaker med en enkel sojasås.
+Snabb chow mein kombinerar wokade nudlar, kyckling och knapriga grönsaker med en enkel sojasås.
 
 ## Tillagning
 
-1. Koka nudlarna enligt anvisningarna på förpackningen tills de precis är kokta. Dränera.
+1. Koka nudlarna enligt anvisningarna på förpackningen tills de precis är kokta. Häll av kokvattnet.
 2. Blanda soja, ostronsås och sesamolja.
 3. Värm woken tills den är varm och tillsätt olja. Stek kycklingen tills den är genomstekt och ställ åt sidan.
 4. Fräs vitlök, vitkål och morot snabbt i en wok. Tillsätt nudlar och sås.

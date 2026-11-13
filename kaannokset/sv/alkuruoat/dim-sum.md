@@ -26,7 +26,7 @@ image:
 ingredients:
   - amount: 12
     unit: st
-    item: dumpling deg ark
+    item: degark till dumplings
   - amount: 200
     unit: g
     item: räkor
@@ -66,19 +66,19 @@ translation_of: dim-sum
 
 # Kantonesisk variation av dim sum
 
-Enkel hembrunch dim sum är gjord av färdiga knödelskal, räkor och fläskfyllning och ångade bullar.
+Enkel hembrunch dim sum är gjord av färdiga degark till dumplings, räkor och fläskfyllning och ångade bullar.
 
 ## Beskrivning
 
-Enkel hembrunch dim sum är gjord av färdiga knödelskal, räkor och fläskfyllning och ångade bullar.
+Enkel hembrunch dim sum är gjord av färdiga degark till dumplings, räkor och fläskfyllning och ångade bullar.
 
 ## Tillagning
 
-1. Blanda räkor, köttfärs, sojasås, sesamolja, majsstärkelse och vårlök.
+1. Blanda räkor, fläskfärs, 1 msk sojasås, sesamolja, majsstärkelse och vårlök.
 2. Fördela fyllningen mellan degarken. Vik kanterna uppåt till öppna dumplings och tryck fast fyllningen ordentligt.
 3. Lägg dumplingsna på bakplåtspapper i ångkorgen. Ånga över kokande vatten i 8-10 minuter tills fyllningen är kokt.
 4. Ånga baobullarna enligt anvisningarna på förpackningen.
-5. Blanda sojasås och risvinsvinäger som dippsås. Servera dumplings och rullar varma.
+5. Blanda 3 msk sojasås och 1 msk risvinäger som dippsås. Servera dumplings och baobullar varma.
 
 ## Anteckningar
 
