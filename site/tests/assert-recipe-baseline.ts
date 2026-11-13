@@ -3,6 +3,7 @@ import assert from "node:assert/strict";
 import { originalForB21CanonicalHistory } from "./b21-canonical-historical-transition";
 import { originalForC13CanonicalHistory } from "./c13-canonical-historical-transition";
 import { originalForThreeCanonicalHistory } from "./issue404-three-canonical-history";
+import { originalForJumeokbapHistory } from "./jumeokbap-history";
 import { execFileSync } from "node:child_process";
 import { existsSync, readFileSync } from "node:fs";
 import path from "node:path";
@@ -366,9 +367,10 @@ export function assertRecipeBaseline(root: string, baseline: string, ...protecte
       const snapshot = originalForThreeCanonicalHistory(root, file, originalForC13CanonicalHistory(root, file, originalForB21CanonicalHistory(root, file, originalForReviewedChefSafety(root, file, originalForChefHistoricalCheck(root, file,
         recipeTextForApprovedSnapshot(file,
           historicalRendangForApprovedVersion(file, historicalFarinataForApprovedPanVersion(file, current))))))));
-      if (snapshot !== current) {
+      const reviewedSnapshot = originalForJumeokbapHistory(root, file, snapshot);
+      if (reviewedSnapshot !== current) {
         const original = execFileSync("git", ["show", baseline + ":" + file], { cwd: root, encoding: "utf8" });
-        assert.equal(snapshot, original, change);
+        assert.equal(reviewedSnapshot, original, change);
         continue;
       }
     }

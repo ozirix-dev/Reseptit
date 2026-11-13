@@ -23,6 +23,7 @@ import { b21CanonicalHistoryPaths, originalForB21CanonicalHistory } from "./b21-
 import { c13CanonicalHistoryPaths, originalForC13CanonicalHistory } from "./c13-canonical-historical-transition";
 import { reviewedThreeCanonicalPaths, originalForThreeCanonicalHistory } from "./issue404-three-canonical-history";
 import {fileURLToPath} from 'node:url';
+import { jumeokbapSourcePath, originalForJumeokbapHistory } from "./jumeokbap-history";
 import {projectTranslationAuditSource} from '../scripts/translation-audit';
 
 const root=fileURLToPath(new URL('../../',import.meta.url));
@@ -140,6 +141,14 @@ test('Live original results preserve frozen history plus the exact reviewed tran
       row.source_path+' current notes');
     return {...row,notes:(frozen.split('## Muistiinpanot')[1]?.trim() ?? '').replaceAll('\n',lineEnding),
       source_content_hash:createHash('sha256').update(frozen).digest('hex')};
+   }
+   if (row.source_path === jumeokbapSourcePath) {
+    const published = read(row.source_path).replaceAll('\r\n', '\n');
+    const frozen = originalForJumeokbapHistory(root, row.source_path, published);
+    assert.equal(row.source_content_hash, createHash('sha256').update(published).digest('hex'));
+    assert.equal(normalNotes, (published.split('## Muistiinpanot')[1]?.trim() ?? '').replaceAll('\n', lineEnding));
+    return {...row, notes: (frozen.split('## Muistiinpanot')[1]?.trim() ?? '').replaceAll('\n', lineEnding),
+      source_content_hash: createHash('sha256').update(frozen).digest('hex')};
    }
    if (c13CanonicalHistoryPaths.includes(row.source_path as (typeof c13CanonicalHistoryPaths)[number])) {
     const published=read(row.source_path).replaceAll('\r\n','\n');
