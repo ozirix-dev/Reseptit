@@ -12,6 +12,7 @@ import { projectA8FiEditorialSource } from "./a8-editorial-display";
 import { projectC20FiDisplay, c20FiDisplayPaths } from "./c20-fi-editorial-display";
 import { breakfastFiQualityPaths, projectBreakfastFiQualityDisplay } from "./fi-breakfast-quality-display";
 
+import { material21FiPaths, projectMaterial21FiDisplay } from "./material21-fi-public-display";
 import { projectC13FiDisplay } from "./c13-fi-public-display";
 
 const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
@@ -42,7 +43,7 @@ export interface TranslationAuditResult {
   errors: string[];
 }
 
-async function markdownFiles(directory: string): Promise<string[]> {
+export async function markdownFiles(directory: string): Promise<string[]> {
   const entries = await readdir(directory, { withFileTypes: true }).catch((error: NodeJS.ErrnoException) => {
     if (error.code === "ENOENT") return [];
     throw error;
@@ -160,7 +161,7 @@ export function projectTranslationAuditSource(file: string, raw: string): string
       file === "reseptit/aamupalat/lahi-ita-manakish-zaatarilla.md" ||
       file === "reseptit/aamupalat/valimerellinen-halloumi-tomaattileipa.md")
     return projectC13FiDisplay(file, raw);
-  return projectBreakfastFiQualityDisplay(file, raw);
+  return projectMaterial21FiDisplay(file, projectBreakfastFiQualityDisplay(file, raw));
 }
 
 export async function auditTranslations(recipeIds?: string[]): Promise<TranslationAuditResult> {
@@ -175,10 +176,11 @@ export async function auditTranslations(recipeIds?: string[]): Promise<Translati
     const useC13Display = source.path === "reseptit/aamupalat/indialainen-poha-maapahkinoilla.md" ||
       source.path === "reseptit/aamupalat/lahi-ita-manakish-zaatarilla.md" ||
       source.path === "reseptit/aamupalat/valimerellinen-halloumi-tomaattileipa.md";
-    if (!useC13Display && !breakfastFiQualityPaths.includes(source.path)) return source;
+    const useMaterial21Display = material21FiPaths.includes(source.path);
+    if (!useC13Display && !useMaterial21Display && !breakfastFiQualityPaths.includes(source.path)) return source;
     const raw = await readFile(path.join(repoRoot, source.path), "utf8");
     const projected = parseMarkdown(projectTranslationAuditSource(source.path, raw));
-    if (!projected) throw Error("FI_BREAKFAST_AUDIT_NO_FRONTMATTER: " + source.path);
+    if (!projected) throw Error("FI_PROJECTED_AUDIT_NO_FRONTMATTER: " + source.path);
     const displayed = recipeFrontmatterSchema.parse(projected.data);
     const original = source.data;
     const stableImage = (image: typeof original.image) =>
@@ -192,7 +194,7 @@ export async function auditTranslations(recipeIds?: string[]): Promise<Translati
         JSON.stringify(stableImage(displayed.image)) !== JSON.stringify(stableImage(original.image)) ||
         (["carbs_net_per_serving_g","carbs_total_per_serving_g","protein_per_serving_g","fat_per_serving_g"] as const)
           .some(key => displayed[key] !== original[key])) {
-      throw Error("FI_BREAKFAST_AUDIT_SOURCE_DRIFT: " + source.path);
+      throw Error("FI_PROJECTED_AUDIT_SOURCE_DRIFT: " + source.path);
     }
     return { path: source.path, data: displayed, content: projected.content };
   }));
