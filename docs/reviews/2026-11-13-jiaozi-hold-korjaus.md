@@ -14,6 +14,8 @@ Ainesmäärät ja neljän annoksen ravintolaskennan syötteet säilyvät.
 [Laskentatiedosto](../nutrition/calculations/jiaozi.json) kattaa alun perin
 keitetyt, kotitekoiset nyytit. GK jää määrittämättä. Vanhan GK-aineiston
 valmiit kuoret ja paistoöljy eivät kuvaa keitettyä ohjetta.
+Erillinen GK-versio pysyy oman hyväksytyn laskentansa ja historiallisen
+lähdetiivisteensä varassa.
 
 Kuvassa on keitettyjä nyyttejä, porsas-kaalitäyte ja soijadippi. Kuva on
 tehty ImageGenillä ja tarkistettu visuaalisesti. EN-, SV- ja TH-versioissa

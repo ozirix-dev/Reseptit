@@ -3,6 +3,7 @@ import { join, relative } from 'node:path';
 import { historicalBreakfastForApprovedThinVersion } from './gk100-breakfast-sealed-source';
 import { fingerprint } from './gk80-candidate-model';
 import { historicalFarinataForApprovedPanVersion } from './gk100-farinata-sealed-source';
+import { historicalJiaoziForApprovedVersion } from './gk100-jiaozi-sealed-source';
 import { historicalRendangForApprovedVersion } from './gk100-rendang-sealed-source';
 import { checkBatch, applyDecisions, type Batch, type Decisions, type prepareRelease } from './gk100-approval-factory';
 import type { GkOnlyVariant } from '../src/features/recipes/gk-only-types';
@@ -57,6 +58,9 @@ export function verifyReleaseBundle(sealed: Bundle & { bundleSha256: string }, a
   // editorial correction. Unreviewed source changes still fail the manifest.
   const checked = checkBatch({ ...bundle.batch, candidates: entries }, (file) => {
     const source = read(file);
+    if (bundle.batch.batchId === 'gk100-pr233-content-decisions') {
+      return historicalJiaoziForApprovedVersion(file, source);
+    }
     if (bundle.batch.batchId !== 'gk100-owner-approved-eighteen') return source;
     if (bundle.recipeIds.includes('valimerellinen-farinata-aamupalaksi')) {
       const historical = historicalFarinataForApprovedPanVersion(file, source);
