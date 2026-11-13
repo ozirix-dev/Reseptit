@@ -147,6 +147,8 @@ function classifyPaths(paths, { forceFull = false, classificationFailed = false 
         file === "site/scripts/translation-semantic-review.ts" ||
         file === "site/scripts/validate-changed-content.ts" ||
         file === "site/scripts/translation-review.ts" ||
+        file === "site/scripts/translation-queue.ts" ||
+        file === "site/scripts/translation-queue-cli.ts" ||
         file === "site/scripts/translation-audit.ts") {
       plan.runTranslationReview = true;
       plan.needsNode = true;
