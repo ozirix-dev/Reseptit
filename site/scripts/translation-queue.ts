@@ -159,4 +159,3 @@ export async function runQueue() {
   console.log(JSON.stringify({file: out, published: report.published, errors: report.errors}, null, 2));
   if (report.errors.length || report.invalid_sources.length) process.exitCode = 1;
 }
-

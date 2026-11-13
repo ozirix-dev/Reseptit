@@ -48,4 +48,3 @@ test("CI rejects a removed or invalid review and preserves required human review
   const source = review.audit.publishedSources.find(s => s.data.recipe_id === row.recipe_id)!;
   assert.equal(proof.source_hash, semanticHash(source));
 });
-
