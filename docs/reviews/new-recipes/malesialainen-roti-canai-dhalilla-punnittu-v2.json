@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "recipe_id": "malesialainen-roti-canai-dhalilla-punnittu-v2",
+  "source_path": "reseptit/aamupalat/malesialainen-roti-canai-dhalilla-punnittu-v2.md",
+  "source_sha256": "a9c88bd752c52e17a78574fa7123205afeb6b5d64e429a39f9206408d169f104",
+  "decision": "approved",
+  "reviewed_by": "AI editorial reviewer (GPT-6)",
+  "reviewed_at": "2026-11-13",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.tourism.gov.my/files/uploads/SFJ3_MOMC_eMag_Dec2021.pdf",
+      "https://www.mfm.com.my/malaysian-roti-canai-recipe-and-ingredients/",
+      "https://www.sbs.com.au/food/recipe/tony-tans-dhal/9a2dkkou5"
+    ]
+  },
+  "supersedes_quarantined": {
+    "recipe_id": "malesialainen-roti-canai-dhalilla",
+    "source_path": "reseptit/aamupalat/malesialainen-roti-canai-dhalilla.md",
+    "source_git_blob_sha": "d241c242192b66a6744a823e88e44c9fbed97c98"
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/malesialainen-roti-canai-dhalilla-punnittu-v2.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "The sole historical slug owner is the quarantined predecessor with the exact registered Git blob."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "All ingredients use edible gram weights. Allergen disclosures and the new illustration were checked against the ingredient list."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Elias Morad provides a tested chef precedent for an oil-based vegan roti, a 30-minute first rest and at least 4 hours after balling. This home adaptation uses 52% hydration by weight and 15 g oil allocated to dough, coating, stretching and cooking, 5 + 4 + 4 + 2 g. The dhal uses Tony Tan's coconut-milk method and Morad's red lentils and tomato; tomato is added once the lentils soften. Exact weights match the checked-in Fineli and AFCD rows. Two rotis and two servings of dhal. Full measured oil retention is an upper estimate. No physical trial."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Simmer split red lentils until soft before adding tomatoes, cook the roti through and serve the dhal hot. Check the curry powder for allergens."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "2 portions with 310 minutes including the specified cooking and resting or cooling periods."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Fineli and AFCD edible mass calculation verified against the current recipe input SHA-256. Elias Morad provides a tested chef precedent for an oil-based vegan roti, a 30-minute first rest and at least 4 hours after balling. This home adaptation uses 52% hydration by weight and 15 g oil allocated to dough, coating, stretching and cooking, 5 + 4 + 4 + 2 g. The dhal uses Tony Tan's coconut-milk method and Morad's red lentils and tomato; tomato is added once the lentils soften. Exact weights match the checked-in Fineli and AFCD rows. Two rotis and two servings of dhal. Full measured oil retention is an upper estimate. No physical trial."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "No preparation-matched glycemic load approval exists for the successor; the original is retained in historical quarantine."
+    }
+  }
+}
