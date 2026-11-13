@@ -1,3 +1,4 @@
+import { biryaniSourceBeforeReview, biryaniSourcePath } from "./biryani-reviewed-source";
 import {countPublishedGkEstimates} from '../src/features/recipes/gk-estimate';
 import {publicGiSourceNote} from "./gk-source-copy";
 import {originalGlycemicLoadCategory} from './glycemic-load-filter';
@@ -142,10 +143,18 @@ for (const record of giRecords) {
     throw new Error(`Strong GI record must be published and ISO 26642-confirmed: ${record.id}`);
   }
 }
+const biryaniMarkdown = publishedRecipeSources.get("hyderabadi-kanabiryani")?.markdown;
+const biryaniUsesReviewedMilk = biryaniMarkdown !== undefined &&
+  biryaniSourceBeforeReview(biryaniSourcePath, biryaniMarkdown) !== biryaniMarkdown;
+
 const sourceHashes = Object.fromEntries(expectedRecipeIds.map((recipeId) => {
   const source = publishedRecipeSources.get(recipeId);
   if (!source) throw new Error("Published source recipe is missing from the current GK set: " + recipeId);
-  return [recipeId, recipeBindingHash(reviewedColdPuddingBindingText(`reseptit/aamupalat/${recipeId}.md`, source.markdown), recipeAliases.aliases)];
+  // The legacy inputs still describe the historical biryani recipe.
+  const markdown = recipeId === "hyderabadi-kanabiryani"
+    ? biryaniSourceBeforeReview(biryaniSourcePath, source.markdown)
+    : source.markdown;
+  return [recipeId, recipeBindingHash(reviewedColdPuddingBindingText(`reseptit/aamupalat/${recipeId}.md`, markdown), recipeAliases.aliases)];
 }));
 
 // Only explicitly bound new versions require whole preparation/translation text.
@@ -256,7 +265,8 @@ const publicResults = results.flatMap((result) => {
     localeRoutes: Object.fromEntries(translations.map((entry) => [entry.locale, { title: entry.title, routePath: entry.routePath }])),
   };
   // Include this recipe in search while keeping its ingredient audit internal.
-  if (result.recipeId === "maksalaatikko-kukkakaalilla") return {
+  if (result.recipeId === "maksalaatikko-kukkakaalilla" ||
+      (result.recipeId === "hyderabadi-kanabiryani" && biryaniUsesReviewedMilk)) return {
     ...recipeIdentity,
     status: "INSUFFICIENT SOURCE DATA",
     glycemicLoadPerServing: null,

@@ -1,3 +1,4 @@
+import { biryaniSourceBeforeReview } from './biryani-reviewed-source';
 import { readFileSync, readdirSync, realpathSync } from 'node:fs';
 import { join, relative } from 'node:path';
 import { historicalBreakfastForApprovedThinVersion } from './gk100-breakfast-sealed-source';
@@ -61,6 +62,7 @@ export function verifyReleaseBundle(sealed: Bundle & { bundleSha256: string }, a
     if (bundle.batch.batchId === 'gk100-pr233-content-decisions') {
       return historicalJiaoziForApprovedVersion(file, source);
     }
+    if (bundle.batch.batchId === 'gk100-v3-eight-preparation') return biryaniSourceBeforeReview(file, source);
     if (bundle.batch.batchId !== 'gk100-owner-approved-eighteen') return source;
     if (bundle.recipeIds.includes('valimerellinen-farinata-aamupalaksi')) {
       const historical = historicalFarinataForApprovedPanVersion(file, source);

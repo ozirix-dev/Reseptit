@@ -1,3 +1,5 @@
+import {biryaniSourceBeforeReview, biryaniSourcePath} from "../scripts/biryani-reviewed-source";
+import {parseMarkdown} from "../src/content/markdown";
 import {assertOriginalContentTransition,frozenOriginalRows,originalContentInventoryBefore,restoreBeforeOriginalContent} from './original-content-transition';
 import {p1Transition,requiresP1SourceCorrection,verifyP1SourceInputs} from './p1-source-transition';
 import {recipeTextForApprovedSnapshot} from '../scripts/approved-recipe-note-edits';
@@ -216,6 +218,20 @@ test('Live original results preserve frozen history plus the exact reviewed tran
     const baseline = execFileSync('git', ['show', 'e68d31d7321666f173ff3caf438c3f111285f275:' + row.source_path],
       {cwd:root,encoding:'utf8'});
     return {...row, notes:(baseline.split('## Muistiinpanot')[1]?.trim() ?? '').replaceAll('\n',lineEnding), source_content_hash:createHash('sha256').update(baseline).digest('hex')};
+   }
+   if (row.source_path === biryaniSourcePath) {
+    const live = read(row.source_path).replaceAll('\r\n','\n');
+    const original = biryaniSourceBeforeReview(row.source_path,live);
+    if (original !== live) {
+     const beforeBiryani = parseMarkdown(original)!;
+     assert.equal(row.source_content_hash, createHash('sha256').update(live).digest('hex'));
+     assert.deepEqual(Object.values(row.values),[60.83,63.09,37.63,20.9]);
+     const values=Object.fromEntries(Object.keys(row.values).map(key=>[key,beforeBiryani.data[key]]));
+     return {...row,values,ingredients:beforeBiryani.data.ingredients,
+       recalculatedValues:{carbs_net_per_serving_g:60.47,carbs_total_per_serving_g:62.73,protein_per_serving_g:37.41,fat_per_serving_g:20.64},
+       notes:(beforeBiryani.content.split('## Muistiinpanot')[1]?.trim() ?? '').replaceAll('\n',lineEnding),
+       source_content_hash:createHash('sha256').update(original).digest('hex')};
+    }
    }
    if (row.source_path === 'reseptit/alkuruoat/jiaozi.md') {
     const live = read(row.source_path).replaceAll('\r\n', '\n');

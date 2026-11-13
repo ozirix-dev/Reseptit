@@ -1,10 +1,10 @@
 {
   "recipeId": "hyderabadi-kanabiryani",
-  "sourceHash": "e85c334fe024d1895e371ca7b7f03109bf73f4367f0c3df8a9bfd843d707af3a",
-  "calculatedAt": "2026-10-24",
+  "sourceHash": "640cd59f4ca8d4248dbf64864f3e5482da036861ce744d6b5e1d323c6053c5ad",
+  "calculatedAt": "2026-11-13",
   "batchId": "batch-12",
   "servings": 4,
-  "scope": "Complete recipe divided by listed servings. Product choices and minor omission bounds are explicit in ingredient mappings. Added fats are counted as fully retained; no cooking-liquid or fat loss is assumed. These are practical estimates, not laboratory analyses.",
+  "scope": "Four servings. Fineli 689 whole milk, 30 g, is included in the saffron infusion. All the infusion is added to the rice.",
   "reviewerStatus": "AUTOMATED ONLY",
   "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
   "ingredients": [
@@ -463,6 +463,36 @@
         "fat": 0.1
       },
       "omissionImpactEvidence": "Low-dose seasoning or garnish omitted; per-serving upper bound is conservatively budgeted below the project limits."
+    },
+    {
+      "amount": 30,
+      "unit": "g",
+      "item": "täysmaitoa",
+      "state": "IND",
+      "matchEvidence": "Fineli Release 20 #689 MAITO, TÄYSMAITO, D-VITAMIINIA 1 UG. Ainesosan yleinen koostumus.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Määrä kuvaa syötävää tai reseptissä käytettävää osaa.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All weighed milk is added to the rice; evaporation changes water only.",
+      "record": {
+        "id": "fineli-689-release-20",
+        "name": "MAITO, TÄYSMAITO, D-VITAMIINIA 1 UG",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/689",
+        "retrievedAt": "2026-11-12",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "IND",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 4.8,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 3,
+          "fat": 3.5
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 SUGOH -arvo kiinnitetyssä lähdepoiminnassa."
+      }
     },
     {
       "item": "tuoretta korianteria",

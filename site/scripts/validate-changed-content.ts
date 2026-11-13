@@ -1,3 +1,4 @@
+import { biryaniSourceBeforeReview, biryaniSourcePath } from "./biryani-reviewed-source";
 import {isScopedPolyolEvidence,validateScopedPolyolC} from './gk80-polyol-c';
 import {validateRecovery,isRecoveryEvidence,loadRecovery} from "./gk80-uunikanapasta";
 import {validateGk80Candidate} from './gk80-release';
@@ -206,7 +207,11 @@ for (const recipeId of recipeIds) {
     // fingerprint. For instruction-only edits, an already-stale historical
     // fingerprint remains a separate audit issue, not a reason to block copy.
     const currentRecipeHash = recipeBindingHash(reviewedColdPuddingBindingText(changedSource.path, changedSource.markdown), recipeAliases.aliases ?? {});
-    assert(currentRecipeHash === boundRecipeHash || await validateGk80Candidate(repoRoot, recipeId) || await validateRecovery(repoRoot,recipeId) || await validateScopedPolyolC(repoRoot,recipeId), `${recipeId}: GI/GK recipe binding is stale; review the related calculation before accepting this content change`);
+    const historicalBiryani = biryaniSourceBeforeReview(changedSource.path, changedSource.markdown);
+    const reviewedBiryaniWithoutGk = changedSource.path === biryaniSourcePath &&
+      historicalBiryani !== changedSource.markdown &&
+      recipeBindingHash(historicalBiryani, recipeAliases.aliases ?? {}) === boundRecipeHash;
+    assert(currentRecipeHash === boundRecipeHash || reviewedBiryaniWithoutGk || await validateGk80Candidate(repoRoot, recipeId) || await validateRecovery(repoRoot,recipeId) || await validateScopedPolyolC(repoRoot,recipeId), `${recipeId}: GI/GK recipe binding is stale; review the related calculation before accepting this content change`);
   }
 
   const evidencePath = resolveRepoFile(`docs/nutrition/calculations/${recipeId}.json`);

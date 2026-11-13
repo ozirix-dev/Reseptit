@@ -1,3 +1,4 @@
+import {biryaniSourceBeforeReview} from "../scripts/biryani-reviewed-source";
 import {originalContentSourceBefore,restoreBeforeOriginalContent} from './original-content-transition';
 const afcdBefore=JSON.parse(readFileSync(new URL('../../docs/nutrition/afcd-field-bindings/before.json',import.meta.url),'utf8'));
 import {readFileSync} from 'node:fs';
@@ -12,7 +13,7 @@ export function restorePreEHold(report:any){restoreBeforeCouscous(report);report
 
 /** Frozen-release view only. Live326/87/macros are independently checked in gk-legacy-reconciliation.test.ts. */
 export function afcdSourceBeforeCorrection(file:string,text:string):string {
- text=originalContentSourceBefore(file,text);
+ text=originalContentSourceBefore(file,biryaniSourceBeforeReview(file,text));
  if(file==='docs/nutrition/food-records.json'){
   const rows=JSON.parse(text);
   for(const fix of afcdBefore.fixes){const row=rows.find((r:any)=>r.id===fix.id);if(!row)throw Error('Missing AFCD record');row.per100g.carbohydrate=fix.before;}
