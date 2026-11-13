@@ -43,6 +43,19 @@ test("explicit draft source metadata cannot be silently upgraded by the sidecar"
   assert.throws(() => overlayTranslationPublicationIndex([original], index("sample", ["en"])), /FI_STATUS_CONFLICT/);
 });
 
+test("draft publication requires the exact Finnish source and explicit locales", () => {
+  const original = source();
+  original.sourceSha256 = "a".repeat(64);
+  original.data.translation_status = { en: "draft", th: "draft" };
+  const promotion = { sourceSha256: original.sourceSha256, locales: ["en"] };
+  const published = {schemaVersion:1, sources:[{recipe_id:"sample", locales:["en", "sv"], draftPromotion:promotion}]};
+  assert.deepEqual(overlayTranslationPublicationIndex([original], published)[0].data.translation_status,
+    {en:"published", sv:"published", th:"draft"});
+  assert.equal(original.data.translation_status.en, "draft");
+  assert.throws(() => overlayTranslationPublicationIndex([{...original,sourceSha256:"b".repeat(64)}], published), /STALE_DRAFT_PROMOTION/);
+  assert.throws(() => overlayTranslationPublicationIndex([original], {...published, sources:[{...published.sources[0], locales:["sv"]}]}), /INVALID_DRAFT_PROMOTION/);
+});
+
 test("targeted audits preserve unrelated sources but still reject duplicate index entries", () => {
   const original = source();
   assert.equal(overlayTranslationPublicationIndex([original], index(), new Set(["other"]))[0], original);

@@ -8,12 +8,14 @@ import {semanticHash} from "../scripts/translation-semantic-review";
 const review = await loadCurrentReview();
 
 test("queue identifies missing and draft languages and keeps quarantines out of actionable work", () => {
-  const queue = translationQueue(review, [
-    {recipe_id:"kaurakeksit",locale:"en",path:"kaannokset/en/jalkiruoat/kaurakeksit.md"},
+  const source = review.audit.publishedSources.find(entry => entry.data.recipe_id === "kaurakeksit")!;
+  const draftSource = {...source, data:{...source.data, recipe_id:"draft-queue-fixture", translation_status:{en:"draft" as const}}};
+  const queue = translationQueue({...review, audit:{...review.audit, publishedSources:[...review.audit.publishedSources,draftSource]}}, [
+    {recipe_id:"draft-queue-fixture",locale:"en",path:"kaannokset/en/jalkiruoat/draft-queue-fixture.md"},
   ], 2);
-  assert.equal(queue.published.fi, review.audit.publishedSources.filter(source => !queue.quarantined_recipe_ids.some(id => id === source.data.recipe_id)).length);
-  assert.ok(queue.queue.some(entry => entry.recipe_id === "kaurakeksit" && entry.locale === "en" && entry.reasons.includes("draft")));
-  assert.ok(queue.queue.some(entry => entry.recipe_id === "kaurakeksit" && entry.locale === "sv" && entry.reasons.includes("missing")));
+  assert.equal(queue.published.fi, review.audit.publishedSources.filter(source => !queue.quarantined_recipe_ids.some(id => id === source.data.recipe_id)).length + 1);
+  assert.ok(queue.queue.some(entry => entry.recipe_id === "draft-queue-fixture" && entry.locale === "en" && entry.reasons.includes("draft")));
+  assert.ok(queue.queue.some(entry => entry.recipe_id === "draft-queue-fixture" && entry.locale === "sv" && entry.reasons.includes("missing")));
   assert.ok(!queue.queue.some(entry => queue.quarantined_recipe_ids.some(id => id === entry.recipe_id)));
   assert.ok(queue.queue.some(entry => entry.recipe_id === "vietnamilainen-banh-cuon-sienilla" && entry.hold?.startsWith("F25_SOURCE_HOLD")));
   assert.ok(!queue.next_batch.some(entry => entry.hold));
