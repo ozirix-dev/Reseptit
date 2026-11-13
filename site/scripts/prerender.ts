@@ -60,7 +60,7 @@ function routeMetadata(route: string) {
     `<meta property="og:image" content="${escapeHtml(recipe.image.src)}" />`,
     `<meta name="twitter:image" content="${escapeHtml(recipe.image.src)}" />`,
   ] : [];
-  const jsonLd = blogPost ? `<script id="blog-jsonld" type="application/ld+json">${JSON.stringify(blogJsonLd(blogPosts.find(post => post.slug === blogPost.slug)!)).replaceAll("<", "\\u003c")}</script>` : recipe
+  const jsonLd = blogPost ? `<script id="blog-jsonld" type="application/ld+json">${JSON.stringify(blogJsonLd(blogPosts.find(post => post.slug === blogPost.slug)!)).replaceAll("<", "\\u003c")}</script>` : recipe?.image
     ? `<script id="recipe-jsonld" type="application/ld+json">${JSON.stringify(recipeJsonLd(recipe)).replaceAll("<", "\\u003c")}</script>`
     : "";
   // Match the card grid breakpoints. Do not eagerly fetch three cards on mobile.
