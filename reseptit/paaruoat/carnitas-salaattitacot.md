@@ -58,6 +58,11 @@ carbs_net_per_serving_g: 4.9
 carbs_total_per_serving_g: 7.4
 protein_per_serving_g: 36.94
 fat_per_serving_g: 30.6
+image:
+  src: paaruoat/carnitas-salaattitacot-v2.webp
+  alt: "Revittyä porsasta ja tomaattisalsaa salaatinlehdillä"
+  width: 1536
+  height: 1024
 
 ---
 # Hitaasti haudutetut carnitas-salaattitacot

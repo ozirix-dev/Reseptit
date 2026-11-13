@@ -52,6 +52,12 @@ fat_per_serving_g: 36.39
 source_language: fi
 source_recipe: reseptit/paaruoat/okonomiyaki-kaaliletut.md
 translation_of: okonomiyaki-kaaliletut
+image:
+  src: paaruoat/okonomiyaki-kaaliletut-v2.webp
+  alt: "แพนเค้กกะหล่ำปลีทอดกระทะ โรยต้นหอม เสิร์ฟกับมายองเนสศรีราชา"
+  width: 1536
+  height: 1024
+
 ---
 
 # แพนเค้กกะหล่ำปลีสไตล์โอโคโนมิยากิ

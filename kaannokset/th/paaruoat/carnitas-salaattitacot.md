@@ -62,6 +62,12 @@ fat_per_serving_g: 30.6
 source_language: fi
 source_recipe: reseptit/paaruoat/carnitas-salaattitacot.md
 translation_of: carnitas-salaattitacot
+image:
+  src: paaruoat/carnitas-salaattitacot-v2.webp
+  alt: "หมูฉีกกับซัลซามะเขือเทศสดในใบผักกาดหอม"
+  width: 1536
+  height: 1024
+
 ---
 
 # คาร์นิตัสหมูตุ๋นห่อผักกาดโรเมน

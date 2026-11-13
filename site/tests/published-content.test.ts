@@ -272,10 +272,19 @@ test("the 40 recipe cards are unique and show their reviewed image bindings", as
   assert.equal(recipes.length, 40);
   assert.deepEqual(recipes.map(recipe => recipe.recipeId).sort(), [...expectedIds].sort());
   assert.equal(new Set(recipes.map(recipe => recipe.recipeId)).size, 40);
-  const withheldImages = ["carnitas-salaattitacot", "okonomiyaki-kaaliletut", "tacokulho-nauta-avokado"];
-  assert.deepEqual(recipes.filter(recipe => !recipe.image).map(recipe => recipe.recipeId).sort(), withheldImages);
-  const images = recipes.flatMap(recipe => recipe.image ? [recipe.image.src] : []);
-  assert.equal(new Set(images).size, recipes.length - withheldImages.length);
+  const restoredImages = ["carnitas-salaattitacot", "okonomiyaki-kaaliletut", "tacokulho-nauta-avokado"];
+  for (const id of restoredImages) {
+    const localized = siteContent.recipes.filter(recipe => recipe.recipeId === id);
+    assert.deepEqual(localized.map(recipe => recipe.locale).sort(), ["en", "fi", "sv", "th"]);
+    for (const recipe of localized) {
+      assert.ok(recipe.image);
+      assert.ok(recipe.image.src.endsWith("/" + id + "-v2.webp"), id + "/" + recipe.locale);
+      assert.ok(recipe.image.alt.trim());
+      assert.equal(recipe.image.width, 1536);
+      assert.equal(recipe.image.height, 1024);
+    }
+  }
+  assert.equal(new Set(recipes.map(recipe => recipe.image?.src)).size, recipes.length);
   assert.ok(recipes.find(recipe => recipe.recipeId === "miso-lohi-paksoi")?.image?.src.endsWith("/carnitas-salaattitacot.webp"));
   assert.ok(recipes.find(recipe => recipe.recipeId === "japanilainen-curry-tofulla")?.image?.src.endsWith("/okonomiyaki-kaaliletut.webp"));
   assert.equal(recipes.filter(recipe => recipe.category === "aamupala").length, 10);

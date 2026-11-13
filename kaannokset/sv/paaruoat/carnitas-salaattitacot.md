@@ -62,6 +62,12 @@ fat_per_serving_g: 30.6
 source_language: fi
 source_recipe: reseptit/paaruoat/carnitas-salaattitacot.md
 translation_of: carnitas-salaattitacot
+image:
+  src: paaruoat/carnitas-salaattitacot-v2.webp
+  alt: "Trådat fläskkött och färsk tomatsalsa i salladsblad"
+  width: 1536
+  height: 1024
+
 ---
 
 # Långkokta carnitas i salladsblad

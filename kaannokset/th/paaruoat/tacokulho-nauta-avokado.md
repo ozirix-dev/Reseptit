@@ -55,6 +55,12 @@ fat_per_serving_g: 26.41
 source_language: fi
 source_recipe: reseptit/paaruoat/tacokulho-nauta-avokado.md
 translation_of: tacokulho-nauta-avokado
+image:
+  src: paaruoat/tacokulho-nauta-avokado-v2.webp
+  alt: "ทาโก้โบวล์ใส่เนื้อวัวบด อะโวคาโด มะเขือเทศ และโยเกิร์ตมะนาว"
+  width: 1536
+  height: 1024
+
 ---
 
 # ทาโก้โบวล์เนื้อวัวกับอะโวคาโด
