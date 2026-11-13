@@ -1,0 +1,182 @@
+{
+  "recipeId": "japanilainen-yaki-onigiri-misolla-punnittu-v2",
+  "sourceHash": "9dc243ee5e9da7d29f09689f06d89f7285a969e4f7b3e99aff39adfe323be9ab",
+  "calculatedAt": "2026-11-13",
+  "batchId": "batch-549",
+  "servings": 2,
+  "scope": "Stovetop rice ratio scaled from 300 g dry Japanese rice and 400 ml water. Pan-crisped plain onigiri are finished briefly with a thin light-miso coating. Four triangles, two per serving. AFCD F007682 is a white long-grain rice proxy for Japanese short-grain rice. The Japanese MEXT 01083 starch-and-sugar total of 75.6 g per 100 g bounds the difference from the 74.0 g AFCD estimate. AFCD F005702 is a light-miso proxy. The estimate counts all pan oil and makes no measured-loss adjustment.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "item": "japanilaista lyhytjyväistä valkoista riisiä (kuivapaino)",
+      "amount": 120,
+      "unit": "g",
+      "state": "uncooked white long-grain rice used as a composition proxy for Japanese short-grain white rice",
+      "matchEvidence": "Source F007682 (uncooked white long-grain rice used as a composition proxy for Japanese short-grain white rice). The edible input is weighed directly.",
+      "edibleFraction": 1,
+      "edibleEvidence": "All quantities refer to the weighed edible ingredient.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible input nutrients counted. Water evaporation and minor cooking losses are not measured.",
+      "record": {
+        "id": "afcd-F007682-release-3",
+        "name": "Rice, white, uncooked",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia",
+        "state": "uncooked white long-grain rice used as a composition proxy for Japanese short-grain white rice",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrates with and without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 74,
+          "fibre": 0.8,
+          "polyols": 0,
+          "protein": 7,
+          "fat": 0.9
+        }
+      }
+    },
+    {
+      "item": "vettä riisin keittoon",
+      "amount": 160,
+      "unit": "g",
+      "state": "tap water for cooking rice",
+      "matchEvidence": "Source 922 (tap water for cooking rice). The edible input is weighed directly.",
+      "edibleFraction": 1,
+      "edibleEvidence": "All quantities refer to the weighed edible ingredient.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible input nutrients counted. Water evaporation and minor cooking losses are not measured.",
+      "record": {
+        "id": "fineli-922-release-20",
+        "name": "VESI, VESIJOHTOVESI",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/922",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "tap water for cooking rice",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "componentValues": {
+          "CHO": 0,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 0
+        }
+      }
+    },
+    {
+      "item": "vettä mison ohentamiseen",
+      "amount": 5,
+      "unit": "g",
+      "state": "tap water to thin the miso",
+      "matchEvidence": "Source 922 (tap water to thin the miso). The edible input is weighed directly.",
+      "edibleFraction": 1,
+      "edibleEvidence": "All quantities refer to the weighed edible ingredient.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible input nutrients counted. Water evaporation and minor cooking losses are not measured.",
+      "record": {
+        "id": "fineli-922-release-20",
+        "name": "VESI, VESIJOHTOVESI",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/922",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "tap water to thin the miso",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "componentValues": {
+          "CHO": 0,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 0
+        }
+      }
+    },
+    {
+      "item": "vaaleaa misotahnaa",
+      "amount": 16,
+      "unit": "g",
+      "state": "fermented soybean paste as sold, used as a proxy for light miso",
+      "matchEvidence": "Source F005702 (fermented soybean paste as sold, used as a proxy for light miso). The edible input is weighed directly.",
+      "edibleFraction": 1,
+      "edibleEvidence": "All quantities refer to the weighed edible ingredient.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible input nutrients counted. Water evaporation and minor cooking losses are not measured.",
+      "record": {
+        "id": "afcd-F005702-release-3",
+        "name": "Paste, soybean",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia",
+        "state": "fermented soybean paste as sold, used as a proxy for light miso",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrates with and without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 19.7,
+          "fibre": 4.3,
+          "polyols": 0,
+          "protein": 12.9,
+          "fat": 5.1
+        }
+      }
+    },
+    {
+      "item": "seesamiöljyä paistamiseen",
+      "amount": 7,
+      "unit": "g",
+      "state": "sesame oil as sold",
+      "matchEvidence": "Source F006187 (sesame oil as sold). The edible input is weighed directly.",
+      "edibleFraction": 1,
+      "edibleEvidence": "All quantities refer to the weighed edible ingredient.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All cooking oil counted. Oil left in the pan is an unmeasured loss.",
+      "record": {
+        "id": "afcd-F006187-release-3",
+        "name": "Oil, sesame",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia",
+        "state": "sesame oil as sold",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrates with and without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 100
+        }
+      }
+    }
+  ]
+}

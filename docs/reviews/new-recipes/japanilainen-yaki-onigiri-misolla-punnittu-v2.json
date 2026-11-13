@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "recipe_id": "japanilainen-yaki-onigiri-misolla-punnittu-v2",
+  "source_path": "reseptit/aamupalat/japanilainen-yaki-onigiri-misolla-punnittu-v2.md",
+  "source_sha256": "ab722bd854203d167f6790494c20cb8a38f9fc1279b2b7f770cb03dcba689ee1",
+  "decision": "approved",
+  "reviewed_by": "AI editorial reviewer (GPT-6)",
+  "reviewed_at": "2026-11-13",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.justonecookbook.com/miso-yaki-onigiri/",
+      "https://www.justonecookbook.com/yaki-onigiri-grilled-rice-ball/",
+      "https://www.justonecookbook.com/how-to-cook-rice/",
+      "https://www.gov.uk/government/publications/home-food-fact-checker/home-food-fact-checker",
+      "https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=1_01083_7&MODE=7"
+    ]
+  },
+  "supersedes_quarantined": {
+    "recipe_id": "japanilainen-yaki-onigiri-misolla",
+    "source_path": "reseptit/aamupalat/japanilainen-yaki-onigiri-misolla.md",
+    "source_git_blob_sha": "bff8b38121a3af090dfd5b7559517ae4aeaa59c7"
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/japanilainen-yaki-onigiri-misolla-punnittu-v2.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "The sole historical slug owner is the quarantined predecessor with the exact registered Git blob."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "All ingredients use edible gram weights. Allergen disclosures and the new illustration were checked against the ingredient list."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Stovetop rice ratio scaled from 300 g dry Japanese rice and 400 ml water. Pan-crisped plain onigiri are finished briefly with a thin light-miso coating. Four triangles, two per serving. AFCD F007682 is a white long-grain rice proxy for Japanese short-grain rice. The Japanese MEXT 01083 starch-and-sugar total of 75.6 g per 100 g bounds the difference from the 74.0 g AFCD estimate. AFCD F005702 is a light-miso proxy. The estimate counts all pan oil and makes no measured-loss adjustment."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Cook the rice through and serve promptly. Chill leftovers within one hour and use within 24 hours."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "2 portions with 60 minutes including the specified cooking and resting or cooling periods."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Fineli and AFCD edible mass calculation verified against the current recipe input SHA-256. Stovetop rice ratio scaled from 300 g dry Japanese rice and 400 ml water. Pan-crisped plain onigiri are finished briefly with a thin light-miso coating. Four triangles, two per serving. AFCD F007682 is a white long-grain rice proxy for Japanese short-grain rice. The Japanese MEXT 01083 starch-and-sugar total of 75.6 g per 100 g bounds the difference from the 74.0 g AFCD estimate. AFCD F005702 is a light-miso proxy. The estimate counts all pan oil and makes no measured-loss adjustment."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "No preparation-matched glycemic load approval exists for the successor; the original is retained in historical quarantine."
+    }
+  }
+}
