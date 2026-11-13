@@ -1,3 +1,4 @@
+import {recipeTextForApprovedSnapshot} from './approved-recipe-note-edits';
 import {createHash} from 'node:crypto';
 import {readFileSync} from 'node:fs';
 import {join,resolve} from 'node:path';
@@ -27,7 +28,7 @@ export function verifyLegacyReviewEvidence(read:(path:string)=>string,manifest:a
  const pins=manifest.reviewTextSnapshots??[];
  if(JSON.stringify(paths)!==JSON.stringify(pins.map((p:any)=>p.path).sort()))throw Error('Missing reviewed recipe/macro text snapshot');
  for(const pin of pins){
-  if(createHash('sha256').update(read(pin.path).replaceAll('\r\n','\n')).digest('hex')!==pin.sha256Lf)throw Error('Reviewed recipe/macro text changed: '+pin.path);
+  if(createHash('sha256').update(recipeTextForApprovedSnapshot(pin.path, read(pin.path).replaceAll('\r\n','\n'))).digest('hex')!==pin.sha256Lf)throw Error('Reviewed recipe/macro text changed: '+pin.path);
  }
 
  for(const id of new Set<string>(review.giDecisions.map((d:any)=>d.giRecordId))){

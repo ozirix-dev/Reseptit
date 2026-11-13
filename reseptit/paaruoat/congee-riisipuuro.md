@@ -74,9 +74,9 @@ Hitaasti kypsennetty riisipuuro on pehmeä ja mieto arkiruoka, jonka voi tarjota
 ## Valmistus
 
 1. Huuhtele riisi kylmällä vedellä.
-2. Laita riisi, vesi tai liemi ja suola kattilaan. Kiehauta ja keitä hyvin miedolla lämmöllä kannen raossa noin 60 minuuttia. Sekoita välillä.
+2. Laita riisi, kanaliemi ja suola kattilaan. Kiehauta ja keitä hyvin miedolla lämmöllä kannen raossa noin 60 minuuttia. Sekoita välillä.
 3. Kun riisi on hajonnut pehmeäksi puuroksi, sekoita joukkoon inkivääri ja kypsennä vielä 5 minuuttia.
-4. Jaa puuro kulhoihin. Lisää kevätsipulia, soijakastiketta ja seesamiöljyä. Tarjoa halutessasi kananmunan kanssa.
+4. Jaa puuro kulhoihin. Lisää kevätsipulia, soijakastiketta ja seesamiöljyä. Tarjoa halutessasi puolitetun keitetyn kananmunan kanssa.
 
 ## Muistiinpanot
 

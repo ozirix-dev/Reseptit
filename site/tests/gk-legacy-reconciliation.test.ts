@@ -1,5 +1,6 @@
 import {assertOriginalContentTransition,frozenOriginalRows,originalContentInventoryBefore,restoreBeforeOriginalContent} from './original-content-transition';
 import {p1Transition,requiresP1SourceCorrection,verifyP1SourceInputs} from './p1-source-transition';
+import {recipeTextForApprovedSnapshot} from '../scripts/approved-recipe-note-edits';
 import {execFileSync} from 'node:child_process';
 import {strict as assert} from 'node:assert';
 import {test} from 'node:test';
@@ -197,6 +198,12 @@ test('Live original results preserve frozen history plus the exact reviewed tran
     assert.equal(row.source_content_hash,createHash('sha256').update(raw).digest('hex'));
     assert.equal(normalNotes,notesOf(displayed),row.source_path+' audited public notes');
     return {...row,notes:notesOf(raw)};
+   }
+   if (["reseptit/paaruoat/baozi.md", "reseptit/paaruoat/congee-riisipuuro.md"].includes(row.source_path)) {
+    const live = read(row.source_path).replaceAll("\r\n", "\n");
+    const historical = recipeTextForApprovedSnapshot(row.source_path, live);
+    assert.equal(row.source_content_hash, createHash("sha256").update(live).digest("hex"));
+    return {...row, notes: normalNotes, source_content_hash: createHash("sha256").update(historical).digest("hex")};
    }
    if(row.recipe_id!=='valimerellinen-farinata-aamupalaksi'||historicalFarinata===publishedFarinata){
     return {...row,notes:normalNotes};

@@ -74,11 +74,11 @@ Easy home brunch dim sum is made from ready-made dumpling shells, shrimp and por
 
 ## Preparation
 
-1. Mix shrimp, minced meat, soy sauce, sesame oil, corn starch and spring onion.
+1. Mix shrimp, ground pork, 1 tbsp soy sauce, sesame oil, corn starch and spring onion.
 2. Divide the filling among the dough sheets. Fold the edges upwards into open dumplings and firmly press the filling into place.
 3. Place the dumplings on baking paper in the steaming basket. Steam over boiling water for 8-10 minutes until the filling is cooked.
 4. Steam the bao buns according to the instructions on the package.
-5. Mix soy sauce and rice wine vinegar as a dipping sauce. Serve the dumplings and rolls warm.
+5. Mix 3 tbsp soy sauce and 1 tbsp rice vinegar as a dipping sauce. Serve the dumplings and bao buns warm.
 
 ## Notes
 
