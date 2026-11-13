@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "recipe_id": "tonnikalatayte-kurkkukupeissa",
+  "source_path": "reseptit/valipalat/tonnikalatayte-kurkkukupeissa.md",
+  "source_sha256": "cd92d95566a7a6785e439435be7dd83abf41404a7f908798990f0c538c5ba2c1",
+  "decision": "approved",
+  "reviewed_by": "AI editorial reviewer (GPT-6)",
+  "reviewed_at": "2026-11-13",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://simpleseasonal.com/recipes/cucumber-tuna-bites",
+      "https://peasandcrayons.com/tuna-salad-cucumber-cups/",
+      "https://www.abba.fi/tuote/abba-tonnikalaa-vedessa-msc-200-150-g/",
+      "https://www.foodsafety.gov/food-safety-charts/cold-food-storage-charts",
+      "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F009300"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/tonnikalatayte-kurkkukupeissa.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "The source slug is new. The prior same-name text is in the editorial review directory."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "All ingredients use edible gram weights. Allergen disclosures and the new illustration were checked against the ingredient list."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Four servings of three cups. Twelve cups use an estimated 25 g of cucumber and 20 g filling each. The tuna is weighed drained, and the cucumber is weighed after hollowing. AFCD F009300 matches the drained water-packed tuna type; fat content varies by brand. AFCD F003320 is a raw unpeeled cucumber composition proxy for cups after the centres are removed. Preparation was reviewed against two independent cucumber cup recipes. The exact mass and number were not physically tested."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Drain commercially canned tuna, wash produce, keep the filling refrigerated, assemble just before serving and promptly refrigerate leftovers."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "4 portions with 20 minutes including the specified cooking and resting or cooling periods."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Fineli and AFCD edible mass calculation verified against the current recipe input SHA-256. Four servings of three cups. Twelve cups use an estimated 25 g of cucumber and 20 g filling each. The tuna is weighed drained, and the cucumber is weighed after hollowing. AFCD F009300 matches the drained water-packed tuna type; fat content varies by brand. AFCD F003320 is a raw unpeeled cucumber composition proxy for cups after the centres are removed. Preparation was reviewed against two independent cucumber cup recipes. The exact mass and number were not physically tested."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "No approved glycemic load estimate exists for this recipe."
+    }
+  }
+}
