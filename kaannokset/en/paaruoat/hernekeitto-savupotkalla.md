@@ -40,7 +40,7 @@ ingredients:
     unit: tbsp
     item: mustard, to serve
 servings: 4
-time_total_min: 750
+time_total_min: 840
 difficulty: easy
 image:
   src: paaruoat/hernekeitto-savupotkalla.webp

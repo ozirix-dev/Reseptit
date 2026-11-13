@@ -64,7 +64,7 @@ Mix this chia pudding the night before. Berries add freshness and yogurt gives i
 1. Mix the chia seeds, almond milk and vanilla in a bowl. Leave for 10 minutes, then stir again to prevent lumps.
 2. Cover and refrigerate for at least four hours, preferably overnight.
 3. Stir the yogurt into the pudding and add sweetener if desired.
-4. Divide into serving bowls and add the berries just before serving.
+4. Divide into bowls and add the berries just before serving. If using imported frozen berries, boil them for 2 minutes first and let them cool.
 
 ## Notes
 

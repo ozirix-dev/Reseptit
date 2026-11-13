@@ -77,7 +77,7 @@ Bärkräm är en välbekant finländsk dessert. Servera den sval med len hemgjor
 
 ## Tillagning
 
-1. Värm vattnet och sockret till krämen i en kastrull. Lägg i bären och koka i några minuter.
+1. Värm vattnet och sockret till krämen i en kastrull. Lägg i de frysta bären, koka upp på nytt och låt koka i minst 2 minuter.
 2. Rör ut potatismjölet i det kalla vattnet. Ta kastrullen från plattan och häll i redningen i en tunn stråle under omrörning.
 3. Värm krämen tills de första bubblorna stiger. Låt den inte stormkoka. Häll upp i en serveringsskål och strö över lite socker så att ytan inte får skinn. Låt svalna.
 4. Vispa äggulorna och sockret ljust. Värm grädde och mjölk med vaniljsockret tills blandningen nästan kokar.

@@ -45,7 +45,7 @@ servings: 4
 time_total_min: 30
 difficulty: Helppo
 image:
-  src: paaruoat/miso-lohi-paksoi.webp
+  src: paaruoat/carnitas-salaattitacot.webp
   alt: Miso-lohi paistetuilla paksoilla tarjoiltuna
   width: 1536
   height: 1024

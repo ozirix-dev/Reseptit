@@ -67,7 +67,7 @@ En matig frukost med kallrökt lax, avokado och en frisk yoghurtdressing med cit
 1. Blanda yoghurt, citronsaft, finhackad dill och svartpeppar till en dressing.
 2. Dela avokadon, ta bort kärnan och skiva fruktköttet. Skiva gurkan.
 3. Fördela rucola, gurka, avokado och kallrökt lax i fyra skålar eller på fyra tallrikar.
-4. Tillsätt dressingen och servera genast.
+4. Tillsätt dressingen och servera genast. Servera kallrökt lax till gravida, äldre och personer med nedsatt immunförsvar bara om den har hettats upp ordentligt.
 
 ## Anteckningar
 

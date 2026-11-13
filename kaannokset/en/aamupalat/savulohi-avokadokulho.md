@@ -66,8 +66,8 @@ This savoury breakfast brings together cold-smoked salmon, avocado and a fresh l
 
 1. Mix the yogurt, lemon juice, finely chopped dill and black pepper to make the dressing.
 2. Halve and pit the avocado, then slice the flesh. Slice the cucumber.
-3. Divide the rocket, cucumber, avocado and smoked salmon among four bowls or plates.
-4. Add the dressing and serve immediately.
+3. Divide the rocket, cucumber, avocado and cold-smoked salmon among four bowls or plates.
+4. Add the dressing and serve immediately. For pregnant people, older adults and people with weakened immune systems, serve the cold-smoked salmon only after heating it through.
 
 ## Notes
 

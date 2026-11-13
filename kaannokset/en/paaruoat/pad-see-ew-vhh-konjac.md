@@ -82,7 +82,7 @@ Pad see ew is best fried in a hot pan in small batches. Dry the konjac noodles w
 
 ## Preparation
 
-1. Rinse the noodles thoroughly and drain. Dry fry them in a hot pan for 3–4 minutes. Move aside.
+1. Rinse and drain the konjac noodles thoroughly. Stir-fry them in a hot pan without oil for 3–4 minutes, then transfer them to a bowl.
 2. Mix the soy sauces, oyster sauce and erythritol in a small bowl.
 3. Heat half the oil in a wok. Fry the chicken strips until cooked and set aside.
 4. Add the rest of the oil and garlic. Crack the eggs into the pan and mix quickly.

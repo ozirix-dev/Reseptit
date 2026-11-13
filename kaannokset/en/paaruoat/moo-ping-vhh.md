@@ -22,7 +22,7 @@ tags:
 - VHH
 image:
   src: paaruoat/moo-ping-vhh.webp
-  alt: Grilled moo ping pork skewers, cucumber and hot dipping sauce
+  alt: Grilled moo ping pork skewers, cucumber and spicy dipping sauce
   width: 1280
   height: 853
 carbs_net_per_serving_g: 2.16

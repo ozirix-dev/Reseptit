@@ -37,7 +37,7 @@ Riisipaperiin kääritään katkarapuja, porsasta, nuudeleita ja tuoreita yrttej
 1. Keitä porsaanviipaleita hiljaa vedessä 15–20 minuuttia, kunnes ne ovat kypsiä. Nosta jäähtymään ja viipaloi ohuiksi.
 2. Keitä katkaravut kypsiksi, jäähdytä ja halkaise pituussuunnassa. Kypsennä riisinuudelit pakkauksen ohjeen mukaan ja huuhtele kylmällä vedellä.
 3. Sekoita maapähkinävoi, hoisinkastike, lämmin vesi ja limettimehu tasaiseksi dipiksi. Lisää vettä tarvittaessa.
-4. Kasta riisipaperi nopeasti haaleaan veteen ja nosta kostealle alustalle. Aseta keskelle salaatti, nuudeleita, pavunituja, minttua ja porsasta.
+4. Kypsennä pavunidut kauttaaltaan kiehuvassa vedessä, valuta ja jäähdytä nopeasti. Kasta riisipaperi nopeasti haaleaan veteen ja nosta kostealle alustalle. Aseta keskelle salaatti, nuudelit, kypsät idut, minttu ja porsas.
 5. Taita riisipaperin sivut täytteen päälle, rullaa kerran ja aseta katkaravunpuolikkaat näkyviin. Jatka rullaamista napakasti.
 6. Tarjoa rullat tuoreina maapähkinädipin kanssa.
 

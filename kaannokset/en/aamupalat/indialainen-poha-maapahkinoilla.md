@@ -64,7 +64,7 @@ This home-style poha combines rice flakes, peanuts, curry leaves and peas. Adjus
 
 ## Instructions
 
-1. Quickly rinse the rice flakes. Let them drain.
-2. Heat the oil in a pan.
-3. Sauté the peanuts, peas and curry leaves in the oil.
-4. Add the rice flakes and cook, stirring. Finish with coriander and lemon juice.
+1. Measure 100 g rice flakes. Rinse them briefly in a sieve under cold water and drain well. The flakes should soften and stay separate.
+2. Heat the full tablespoon of neutral oil in a pan. Add 20 g peanuts and 3 g curry leaves and toast gently, stirring so the peanuts do not burn. Add 50 g peas and cook through.
+3. Add the drained rice flakes and fold them gently into the peanuts and peas. Heat over low heat just until everything is hot. Add the listed salt if needed.
+4. Take the pan off the heat. Divide into two portions and finish with a total of 1 tbsp chopped fresh coriander and 1 tbsp lemon juice. Use only the listed ingredients.

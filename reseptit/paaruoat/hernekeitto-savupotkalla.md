@@ -42,7 +42,7 @@ ingredients:
     unit: rkl
     item: sinappia tarjoiluun
 servings: 4
-time_total_min: 750
+time_total_min: 840
 difficulty: Helppo
 image:
   src: paaruoat/hernekeitto-savupotkalla.webp

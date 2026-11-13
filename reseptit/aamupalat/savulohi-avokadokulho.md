@@ -69,7 +69,7 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 1. Sekoita jogurtti, sitruunamehu, hienonnettu tilli ja mustapippuri kastikkeeksi.
 2. Puolita avokado, poista kivi ja leikkaa hedelmäliha viipaleiksi. Viipaloi kurkku.
 3. Jaa rucola, kurkku, avokado ja savulohi neljään kulhoon tai lautaselle.
-4. Lisää kastike ja tarjoa heti.
+4. Lisää kastike ja tarjoa heti. Raskaana oleville, ikääntyneille ja henkilöille, joiden vastustuskyky on heikentynyt, tarjoa kylmäsavulohi vain kauttaaltaan kuumennettuna.
 
 ## Muistiinpanot
 

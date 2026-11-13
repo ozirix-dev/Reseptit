@@ -45,11 +45,6 @@ ingredients:
 servings: 4
 time_total_min: 35
 difficulty: lätt
-image:
-  src: paaruoat/okonomiyaki-kaaliletut.webp
-  alt: Kålpannkakor i okonomiyakistil färdiga att serveras
-  width: 1536
-  height: 1024
 carbs_net_per_serving_g: 11.28
 carbs_total_per_serving_g: 16.23
 protein_per_serving_g: 11.32

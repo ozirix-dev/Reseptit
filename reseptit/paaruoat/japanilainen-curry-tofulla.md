@@ -48,7 +48,7 @@ servings: 4
 time_total_min: 45
 difficulty: Helppo
 image:
-  src: paaruoat/japanilainen-curry-tofulla.webp
+  src: paaruoat/okonomiyaki-kaaliletut.webp
   alt: Japanilainen curry tofulla ja kukkakaaliriisillä tarjoiltuna
   width: 1536
   height: 1024
@@ -69,7 +69,7 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 2. Kuullota viipaloitu sipuli. Lisää porkkana ja kesäkurpitsa kuutioina sekä kasvisliemi. Hauduta 15 minuuttia.
 3. Sekoita curryroux joukkoon ja keitä pakkauksen ohjeen mukaan, kunnes liemi sakenee. Lisää tofu ja kuumenna.
 4. Raasta kukkakaali riisimäiseksi ja höyrytä tai paista pannulla 5 minuuttia.
-5. Tarjoa tofu-curry kukkakaaliriisin kanssa.
+5. Sekoita ainesluettelon seesamiöljy kypsään kukkakaaliriisiin. Tarjoa tofu-curry kukkakaaliriisin kanssa.
 
 ## Muistiinpanot
 

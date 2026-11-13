@@ -80,7 +80,7 @@ Rispapper fylls med räkor, fläsk, nudlar och färska örter. Servera rullarna 
 1. Sjud fläskskivorna i vatten i 15–20 minuter tills de är genomkokta. Ta upp dem, låt svalna och skär i tunna skivor.
 2. Koka räkorna tills de är färdiga, låt svalna och dela dem på längden. Tillaga risvermicellin enligt förpackningen och skölj den i kallt vatten.
 3. Blanda jordnötssmör, hoisinsås, varmt vatten och limesaft till en slät dipp. Späd med mer vatten vid behov.
-4. Doppa ett rispapper snabbt i ljummet vatten och lägg det på en fuktig yta. Lägg sallad, nudlar, böngroddar, mynta och fläsk i mitten.
+4. Koka böngroddarna tills de är genomkokta, låt dem rinna av och kyl dem snabbt. Doppa ett rispapper kort i ljummet vatten och lägg det på en fuktig yta. Lägg på sallad, nudlar, kokta groddar, mynta och fläsk.
 5. Vik in sidorna över fyllningen, rulla ett varv och lägg räkhalvorna så att de syns genom rispapperet. Rulla sedan ihop ordentligt.
 6. Servera rullarna nygjorda med jordnötsdippen.
 

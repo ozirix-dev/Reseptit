@@ -40,7 +40,7 @@ Len vaniljpannacotta görs med några få ingredienser och får stelna i kylen. 
 2. Värm grädde, mjölk, socker och vaniljsocker i en kastrull tills blandningen ångar. Låt den inte koka.
 3. Ta kastrullen från plattan. Krama ur gelatinbladen och lös upp dem i den varma grädd- och mjölkblandningen.
 4. Fördela blandningen i sex serveringsformar och låt svalna. Täck över och låt stelna i kylen i minst 4 timmar.
-5. Värm bären och sockret i en liten kastrull. Låt sjuda i 5 minuter, smaksätt med citronsaft och låt svalna.
+5. Koka upp de frysta bären och sockret i en liten kastrull. Koka i minst 2 minuter och låt sedan sjuda i ytterligare 3 minuter. Smaksätt med citronsaft och låt svalna.
 6. Skeda bärsåsen över pannacottan före servering.
 
 ## Anteckningar

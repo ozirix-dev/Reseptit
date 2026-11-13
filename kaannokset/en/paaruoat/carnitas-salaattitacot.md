@@ -54,11 +54,6 @@ ingredients:
 servings: 4
 time_total_min: 180
 difficulty: "Easy"
-image:
-  src: paaruoat/carnitas-salaattitacot.webp
-  alt: "Slow-braised carnitas served as lettuce tacos"
-  width: 1536
-  height: 1024
 carbs_net_per_serving_g: 4.9
 carbs_total_per_serving_g: 7.4
 protein_per_serving_g: 36.94

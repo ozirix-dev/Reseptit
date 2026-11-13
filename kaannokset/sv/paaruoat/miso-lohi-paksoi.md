@@ -43,7 +43,7 @@ servings: 4
 time_total_min: 30
 difficulty: lätt
 image:
-  src: paaruoat/miso-lohi-paksoi.webp
+  src: paaruoat/carnitas-salaattitacot.webp
   alt: Misolax serverad med stekt pak choi
   width: 1536
   height: 1024

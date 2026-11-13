@@ -64,7 +64,7 @@ I den här poha-rätten blandas risflingor med jordnötter, curryblad och ärter
 
 ## Gör så här
 
-1. Skölj risflingorna snabbt och låt dem rinna av.
-2. Hetta upp oljan i en stekpanna.
-3. Fräs jordnötterna, ärterna och currybladen i oljan.
-4. Tillsätt risflingorna och tillaga under omrörning. Avsluta med koriander och citronsaft.
+1. Mät upp 100 g risflingor. Skölj dem snabbt i en sil under kallt vatten och låt dem rinna av ordentligt. Flingorna ska mjukna och förbli lösa.
+2. Hetta upp hela matskeden neutral olja i en stekpanna. Tillsätt 20 g jordnötter och 3 g curryblad och rosta varsamt under omrörning så att nötterna inte bränns. Tillsätt 50 g ärter och koka dem mjuka.
+3. Tillsätt de avrunna risflingorna och vänd försiktigt ihop dem med jordnötterna och ärterna. Värm på låg värme tills allt är genomvarmt. Smaka av med salt vid behov.
+4. Ta pannan från plattan. Fördela i två portioner och toppa med sammanlagt 1 msk hackad färsk koriander och 1 msk citronsaft. Använd bara de angivna ingredienserna.

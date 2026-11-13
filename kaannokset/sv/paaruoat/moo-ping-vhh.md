@@ -22,7 +22,7 @@ tags:
 - VHH
 image:
   src: paaruoat/moo-ping-vhh.webp
-  alt: Grillade moo ping fläskspett, gurka och varm dippsås
+  alt: Grillade moo ping fläskspett, gurka och stark dippsås
   width: 1280
   height: 853
 carbs_net_per_serving_g: 2.16

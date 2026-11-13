@@ -36,7 +36,7 @@ ingredients:
     unit: ช้อนโต๊ะ
     item: น้ำเลมอน
 servings: 10
-time_total_min: 90
+time_total_min: 330
 difficulty: ปานกลาง
 tags:
   - ของหวาน

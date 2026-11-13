@@ -20,7 +20,7 @@ ingredients:
   - { amount: 1, unit: tl, item: vaniljauutetta }
   - { amount: 1, unit: rkl, item: sitruunamehua }
 servings: 10
-time_total_min: 90
+time_total_min: 330
 difficulty: Keskitaso
 tags: [jälkiruoka, kakku, juusto]
 image:

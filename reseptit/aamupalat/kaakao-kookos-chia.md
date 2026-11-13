@@ -63,7 +63,7 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 
 ## Valmistus
 
-1. Vatkaa kaakaojauhe pieneen tilkkaan kookosjuomaa tasaiseksi. Lisää loput juomasta, kerma, chia ja vanilja.
+1. Vatkaa kaakaojauhe pieneen tilkkaan kookosjuomaa tasaiseksi. Lisää loput juomasta, kerma, chia, vanilja ja halutessasi makeutusaine.
 2. Sekoita huolellisesti, odota 10 minuuttia ja sekoita vielä kerran.
 3. Peitä ja hyydytä jääkaapissa vähintään neljä tuntia.
 4. Viimeistele paahdetuilla kookoshiutaleilla ja tarjoa kylmänä.

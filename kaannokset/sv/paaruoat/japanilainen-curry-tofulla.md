@@ -46,7 +46,7 @@ servings: 4
 time_total_min: 45
 difficulty: lätt
 image:
-  src: paaruoat/japanilainen-curry-tofulla.webp
+  src: paaruoat/okonomiyaki-kaaliletut.webp
   alt: Japansk tofucurry med blomkålsris
   width: 1536
   height: 1024
@@ -67,7 +67,7 @@ Den varma, kryddiga japanska currybuljongen förenar tofu och grönsaker. Server
 2. Fräs den skivade löken. Tillsätt tärnad morot och zucchini samt grönsaksbuljongen. Låt sjuda i 15 minuter.
 3. Rör ner curryrouxen och koka enligt anvisningarna på förpackningen tills buljongen tjocknar. Tillsätt tofun och värm upp.
 4. Riv blomkålen till risliknande korn och ångkoka eller stek den i panna i 5 minuter.
-5. Servera tofucurryn med blomkålsriset.
+5. Rör ner den angivna sesamoljan i det tillagade blomkålsriset. Servera med tofucurryn.
 
 ## Anteckningar
 

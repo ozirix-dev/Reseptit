@@ -48,11 +48,6 @@ ingredients:
 servings: 4
 time_total_min: 25
 difficulty: ง่าย
-image:
-  src: paaruoat/tacokulho-nauta-avokado.webp
-  alt: ทาโก้โบวล์เนื้อวัวกับอะโวคาโด
-  width: 1536
-  height: 1024
 carbs_net_per_serving_g: 2.71
 carbs_total_per_serving_g: 5.28
 protein_per_serving_g: 31.27

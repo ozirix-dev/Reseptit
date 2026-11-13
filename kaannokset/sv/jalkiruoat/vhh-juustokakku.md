@@ -36,7 +36,7 @@ ingredients:
     unit: msk
     item: citronsaft
 servings: 10
-time_total_min: 90
+time_total_min: 330
 difficulty: medel
 tags:
   - dessert

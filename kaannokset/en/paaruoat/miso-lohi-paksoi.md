@@ -43,7 +43,7 @@ servings: 4
 time_total_min: 30
 difficulty: easy
 image:
-  src: paaruoat/miso-lohi-paksoi.webp
+  src: paaruoat/carnitas-salaattitacot.webp
   alt: Miso salmon served with pan-fried bok choy
   width: 1536
   height: 1024

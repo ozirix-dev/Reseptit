@@ -38,7 +38,7 @@ Marjakiisseli on suomalainen tuttu jälkiruoka. Tarjoile se viileänä pehmeän,
 
 ## Valmistus
 
-1. Kuumenna vesi ja kiisselin sokeri kattilassa. Lisää marjat ja keitä muutama minuutti.
+1. Kuumenna vesi ja kiisselin sokeri kattilassa. Lisää pakastemarjat, kuumenna uudelleen kiehuvaksi ja keitä vähintään 2 minuuttia.
 2. Sekoita perunajauhot kylmään veteen. Nosta kattila liedeltä ja valuta suurus ohuena nauhana kiisseliin samalla sekoittaen.
 3. Kuumenna kiisseliä, kunnes ensimmäiset kuplat nousevat. Älä enää keitä voimakkaasti. Kaada tarjoiluastiaan ja ripottele pinnalle hieman sokeria kuorettumisen estämiseksi. Jäähdytä.
 4. Vatkaa keltuaiset ja sokeri vaaleaksi. Kuumenna kerma ja maito vaniljasokerin kanssa lähes kiehuvaksi.
