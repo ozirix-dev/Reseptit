@@ -455,7 +455,7 @@ test("translation self-review corrections are present in static HTML and recipe 
     ["lihapullat-kermakastikkeessa-vhh", "en", "for the mash", "to muse"],
     ["nakkikeitto-kukkakaalilla", "sv", "varmkorv", "smycke"],
     ["rogan-josh", "en", "curdling", "does not run"],
-    ["tunisialainen-brik", "th", "ต้องทดสอบวิธีที่ทำให้ไข่สุกทั่ว", "ตามแบบดั้งเดิม ไข่ด้านในยังเยิ้มอยู่"],
+    ["tunisialainen-brik", "th", "ต้มไข่จนทั้งไข่ขาวและไข่แดงแข็ง", "ตามแบบดั้งเดิม ไข่ด้านในยังเยิ้มอยู่"],
   ] as const;
   for (const [id, locale, expected, rejected] of cases) {
     const recipe = siteContent.recipes.find((r) => r.recipeId === id && r.locale === locale)!;

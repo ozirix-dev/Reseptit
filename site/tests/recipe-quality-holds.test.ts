@@ -16,7 +16,6 @@ const originals = {
   "intialainen-idli-kookoschutneylla": "reseptit/aamupalat/intialainen-idli-kookoschutneylla.md",
   "vietnamilainen-banh-bao-kananmunalla": "reseptit/aamupalat/vietnamilainen-banh-bao-kananmunalla.md",
   "intialainen-aloo-paratha": "reseptit/aamupalat/intialainen-aloo-paratha.md",
-  "tunisialainen-brik": "reseptit/alkuruoat/tunisialainen-brik.md",
   "hyderabadi-kanabiryani": "reseptit/paaruoat/hyderabadi-kanabiryani.md",
   "karibia-bammy-kassavaleipa": "reseptit/aamupalat/karibia-bammy-kassavaleipa.md",
 } as const;
