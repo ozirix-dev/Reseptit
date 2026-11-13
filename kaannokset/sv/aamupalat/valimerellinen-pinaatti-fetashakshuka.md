@@ -35,8 +35,8 @@ time_total_min: 25
 difficulty: lätt
 tags:
   - frukost
-  - marockanskt
-  - soppa
+  - medelhavsmat
+  - frukosträtt
 image:
   src: aamupalat/valimerellinen-pinaatti-fetashakshuka.webp
   alt: Shakshuka med spenat, feta och serveringstillbehör.
