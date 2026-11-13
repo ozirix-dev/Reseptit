@@ -1,0 +1,68 @@
+{
+  "recipeId": "rapeat-juustonaksut",
+  "sourceHash": "ed43065dbf7a87052e31f2b1f62e6e6bbdadc9f68135f7f491aa6a44a91fa14b",
+  "calculatedAt": "2026-11-13",
+  "batchId": "batch-548",
+  "servings": 4,
+  "scope": "Twelve crisps from 140 g cheddar. Full fat retention is an upper estimate. The 1 g paprika is a documented bounded omission.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "amount": 140,
+      "unit": "g",
+      "item": "cheddarjuustoa raasteena, rasvaa noin 34 %",
+      "state": "regular-fat cheddar cheese",
+      "matchEvidence": "Fineli 698 is cheddar with 34.4 g fat per 100 g.",
+      "record": {
+        "id": "fineli-698-release-20",
+        "name": "JUUSTO, CHEDDAR, RASVAA 34 %",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/698",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "regular-fat cheddar cheese",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0.1,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0.1,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 25.63,
+          "fat": 34.4
+        }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Cheddar weighed as edible grated cheese.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All fat modelled as retained. At 95% retention cheddar fat is 11.438 g per serving and at 90% it is 10.836 g."
+    },
+    {
+      "amount": 1,
+      "unit": "g",
+      "item": "savupaprikajauhetta",
+      "state": "dry smoked paprika powder",
+      "matchEvidence": "Santa Maria EAN 7311311015243 is smoked paprika. https://www.s-kaupat.fi/tuote/santa-maria-37g-paprika-smoked-savupaprikajauhe/7311311015243",
+      "excludedReason": "The label declares fibre and macros but no polyols. Use a mass-bound omission for the 1 g batch rather than assign zero polyols.",
+      "omissionImpactEvidence": "1 g across 4 servings is 0.25 g ingredient per serving. Each individual macro contribution is physically capped at 0.25 g; energy <=2.25 kcal at 9 kcal/g.",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 2.25,
+        "netCarbohydrate": 0.25,
+        "totalCarbohydrate": 0.25,
+        "protein": 0.25,
+        "fat": 0.25
+      }
+    }
+  ]
+}
