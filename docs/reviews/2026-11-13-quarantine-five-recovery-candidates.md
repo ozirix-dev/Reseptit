@@ -40,7 +40,8 @@ Ulkoiset reseptit auttavat arvioimaan rakennetta, mutta niiden arvoilla ei korva
 ## Seuranta
 
 - 21 karanteenissa työn alussa; 5 uutta FI-draftia eivät vähennä karanteenimäärää.
-- Vaihe 2: 7 taikina-/menetelmätapausta (bánh bao, roti canai, msemen, pesarattu, laksa lemak, kuih seri muka, idli).
+- Vaihe 2: 6 taikina- tai menetelmätapausta (bánh bao, roti canai, msemen, laksa lemak, kuih seri muka, idli).
+- Pesarattu on poistettu julkaisu- ja palautusjonosta omistajan pyynnöstä. Alkuperäinen lähde kuuluu edelleen julkaisukaranteeniin.
 - Vaihe 3: 7 vaativaa tuote-/ravintotapausta (nasi goreng, yaki-onigiri, xôi, lontong sayur, miso-tofu-paksoi, mandu-keitto, saltfish-fritterit).
 - Vaihe 4: kassava-bammy ja ackee-suolakala jäävät erilliseen turvallisuuskaranteeniin, kunnes turvallinen raaka-aineen hankinta ja valmistusprosessi voidaan osoittaa.
 
