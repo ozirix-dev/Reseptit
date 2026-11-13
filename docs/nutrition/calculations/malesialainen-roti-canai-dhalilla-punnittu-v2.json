@@ -1,0 +1,532 @@
+{
+  "recipeId": "malesialainen-roti-canai-dhalilla-punnittu-v2",
+  "sourceHash": "a658fec9814d1912663ba19f534837e1fca1907c5349672d0470712a81f0d0db",
+  "calculatedAt": "2026-11-13",
+  "batchId": "batch-556",
+  "servings": 2,
+  "scope": "Elias Morad provides a tested chef precedent for an oil-based vegan roti, a 30-minute first rest and at least 4 hours after balling. This home adaptation uses 52% hydration by weight and 15 g oil allocated to dough, coating, stretching and cooking, 5 + 4 + 4 + 2 g. The dhal uses Tony Tan's coconut-milk method and Morad's red lentils and tomato; tomato is added once the lentils soften. Exact weights match the checked-in Fineli and AFCD rows. Two rotis and two servings of dhal. Full measured oil retention is an upper estimate. No physical trial.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "item": "puolikarkeita vehnäjauhoja rotiin",
+      "amount": 125,
+      "unit": "g",
+      "state": "all-purpose wheat flour",
+      "matchEvidence": "Source 110 (all-purpose wheat flour). The edible input is weighed directly.",
+      "edibleFraction": 1,
+      "edibleEvidence": "All quantities refer to the weighed edible ingredient.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible input nutrients counted. Water evaporation and minor cooking losses are not measured.",
+      "record": {
+        "id": "fineli-110-release-20",
+        "name": "JAUHO, VEHNÄJAUHO, PUOLIKARKEA",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/110",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "all-purpose wheat flour",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "componentValues": {
+          "CHO": 73.998,
+          "FIBT": 3.5,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "per100g": {
+          "carbohydrate": 73.998,
+          "fibre": 3.5,
+          "polyols": 0,
+          "protein": 11.6,
+          "fat": 1.56
+        }
+      }
+    },
+    {
+      "item": "vettä rotiin",
+      "amount": 65,
+      "unit": "g",
+      "state": "water for the roti dough",
+      "matchEvidence": "Source 922 (water for the roti dough). The edible input is weighed directly.",
+      "edibleFraction": 1,
+      "edibleEvidence": "All quantities refer to the weighed edible ingredient.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible input nutrients counted. Water evaporation and minor cooking losses are not measured.",
+      "record": {
+        "id": "fineli-922-release-20",
+        "name": "VESI, VESIJOHTOVESI",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/922",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "water for the roti dough",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "componentValues": {
+          "CHO": 0,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 0
+        }
+      }
+    },
+    {
+      "item": "sokeria rotiin",
+      "amount": 3,
+      "unit": "g",
+      "state": "white sugar",
+      "matchEvidence": "Source 1 (white sugar). The edible input is weighed directly.",
+      "edibleFraction": 1,
+      "edibleEvidence": "All quantities refer to the weighed edible ingredient.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible input nutrients counted. Water evaporation and minor cooking losses are not measured.",
+      "record": {
+        "id": "fineli-1-release-20",
+        "name": "SOKERI",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/1",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "white sugar",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "componentValues": {
+          "CHO": 99.9,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "per100g": {
+          "carbohydrate": 99.9,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 0
+        }
+      }
+    },
+    {
+      "item": "suolaa rotiin",
+      "amount": 1,
+      "unit": "g",
+      "state": "table salt",
+      "matchEvidence": "Source 35555 (table salt). The edible input is weighed directly.",
+      "edibleFraction": 1,
+      "edibleEvidence": "All quantities refer to the weighed edible ingredient.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible input nutrients counted. Water evaporation and minor cooking losses are not measured.",
+      "record": {
+        "id": "fineli-35555-release-20",
+        "name": "RUOKASUOLA, KESKIARVO, JODIOITU 50% JA JODIOIMATON 50%",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/35555",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "table salt",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "componentValues": {
+          "CHO": 0,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0.31,
+          "fat": 0
+        }
+      }
+    },
+    {
+      "item": "rypsiöljyä rotiin ja paistamiseen",
+      "amount": 15,
+      "unit": "g",
+      "state": "canola oil for roti, full retention assumed",
+      "matchEvidence": "Source 535 (canola oil for roti, full retention assumed). The edible input is weighed directly.",
+      "edibleFraction": 1,
+      "edibleEvidence": "All quantities refer to the weighed edible ingredient.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All cooking oil counted. Oil left in the pan is an unmeasured loss.",
+      "record": {
+        "id": "fineli-535-release-20",
+        "name": "RYPSIÖLJY",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/535",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "canola oil for roti, full retention assumed",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "componentValues": {
+          "CHO": 0,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 100
+        }
+      }
+    },
+    {
+      "item": "kuivia halkaistuja punaisia linssejä",
+      "amount": 100,
+      "unit": "g",
+      "state": "dry hulled red lentils",
+      "matchEvidence": "Source F005184 (dry hulled red lentils). The edible input is weighed directly.",
+      "edibleFraction": 1,
+      "edibleEvidence": "All quantities refer to the weighed edible ingredient.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible input nutrients counted. Water evaporation and minor cooking losses are not measured.",
+      "record": {
+        "id": "afcd-F005184-release-3",
+        "name": "Lentil, red, hulled, dry",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia",
+        "state": "dry hulled red lentils",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrates with and without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 45.7,
+          "fibre": 13.7,
+          "polyols": 0,
+          "protein": 23,
+          "fat": 1.9
+        }
+      }
+    },
+    {
+      "item": "vettä dhaliin",
+      "amount": 200,
+      "unit": "g",
+      "state": "water for the dhal",
+      "matchEvidence": "Source 922 (water for the dhal). The edible input is weighed directly.",
+      "edibleFraction": 1,
+      "edibleEvidence": "All quantities refer to the weighed edible ingredient.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible input nutrients counted. Water evaporation and minor cooking losses are not measured.",
+      "record": {
+        "id": "fineli-922-release-20",
+        "name": "VESI, VESIJOHTOVESI",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/922",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "water for the dhal",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "componentValues": {
+          "CHO": 0,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 0
+        }
+      }
+    },
+    {
+      "item": "täysrasvaista säilykekookosmaitoa",
+      "amount": 150,
+      "unit": "g",
+      "state": "regular-fat canned coconut milk",
+      "matchEvidence": "Source F002991 (regular-fat canned coconut milk). The edible input is weighed directly.",
+      "edibleFraction": 1,
+      "edibleEvidence": "All quantities refer to the weighed edible ingredient.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible input nutrients counted. Water evaporation and minor cooking losses are not measured.",
+      "record": {
+        "id": "afcd-F002991-release-3",
+        "name": "Coconut, milk, canned, regular fat",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia",
+        "state": "regular-fat canned coconut milk",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrates with and without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 1.7,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 1.4,
+          "fat": 15.4
+        }
+      }
+    },
+    {
+      "item": "tomaattimurskaa",
+      "amount": 75,
+      "unit": "g",
+      "state": "crushed tomatoes",
+      "matchEvidence": "Source 398 (crushed tomatoes). The edible input is weighed directly.",
+      "edibleFraction": 1,
+      "edibleEvidence": "All quantities refer to the weighed edible ingredient.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible input nutrients counted. Water evaporation and minor cooking losses are not measured.",
+      "record": {
+        "id": "fineli-398-release-20",
+        "name": "TOMAATTIMURSKA",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/398",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "crushed tomatoes",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "componentValues": {
+          "CHO": 3.45,
+          "FIBT": 0.4,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "per100g": {
+          "carbohydrate": 3.45,
+          "fibre": 0.4,
+          "polyols": 0,
+          "protein": 0.55,
+          "fat": 0.2
+        }
+      }
+    },
+    {
+      "item": "keltaista sipulia, kuorittuna",
+      "amount": 50,
+      "unit": "g",
+      "state": "raw peeled yellow onion",
+      "matchEvidence": "Source 335 (raw peeled yellow onion). The edible input is weighed directly.",
+      "edibleFraction": 1,
+      "edibleEvidence": "All quantities refer to the weighed edible ingredient.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible input nutrients counted. Water evaporation and minor cooking losses are not measured.",
+      "record": {
+        "id": "fineli-335-release-20",
+        "name": "SIPULI, KELTASIPULI",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/335",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "raw peeled yellow onion",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "componentValues": {
+          "CHO": 4.8,
+          "FIBT": 1.2,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "per100g": {
+          "carbohydrate": 4.8,
+          "fibre": 1.2,
+          "polyols": 0,
+          "protein": 1.25,
+          "fat": 0.1
+        }
+      }
+    },
+    {
+      "item": "valkosipulia, kuorittuna",
+      "amount": 5,
+      "unit": "g",
+      "state": "raw peeled garlic",
+      "matchEvidence": "Source F004193 (raw peeled garlic). The edible input is weighed directly.",
+      "edibleFraction": 1,
+      "edibleEvidence": "All quantities refer to the weighed edible ingredient.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible input nutrients counted. Water evaporation and minor cooking losses are not measured.",
+      "record": {
+        "id": "afcd-F004193-release-3",
+        "name": "Garlic, peeled, fresh, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia",
+        "state": "raw peeled garlic",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrates with and without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 10.2,
+          "fibre": 16.9,
+          "polyols": 0,
+          "protein": 6.1,
+          "fat": 2.8
+        }
+      }
+    },
+    {
+      "item": "mietoa curryjauhetta",
+      "amount": 5,
+      "unit": "g",
+      "state": "curry powder composite; blend varies",
+      "matchEvidence": "Source F003337 (curry powder composite; blend varies). The edible input is weighed directly.",
+      "edibleFraction": 1,
+      "edibleEvidence": "All quantities refer to the weighed edible ingredient.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible input nutrients counted. Water evaporation and minor cooking losses are not measured.",
+      "record": {
+        "id": "afcd-F003337-release-3",
+        "name": "Curry powder",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia",
+        "state": "curry powder composite; blend varies",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrates with and without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 2.8,
+          "fibre": 53.2,
+          "polyols": 0,
+          "protein": 14.3,
+          "fat": 14
+        }
+      }
+    },
+    {
+      "item": "rypsiöljyä dhaliin",
+      "amount": 5,
+      "unit": "g",
+      "state": "canola oil for the dhal",
+      "matchEvidence": "Source 535 (canola oil for the dhal). The edible input is weighed directly.",
+      "edibleFraction": 1,
+      "edibleEvidence": "All quantities refer to the weighed edible ingredient.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All cooking oil counted. Oil left in the pan is an unmeasured loss.",
+      "record": {
+        "id": "fineli-535-release-20",
+        "name": "RYPSIÖLJY",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/535",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "canola oil for the dhal",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "componentValues": {
+          "CHO": 0,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 100
+        }
+      }
+    },
+    {
+      "item": "suolaa dhaliin",
+      "amount": 1,
+      "unit": "g",
+      "state": "table salt",
+      "matchEvidence": "Source 35555 (table salt). The edible input is weighed directly.",
+      "edibleFraction": 1,
+      "edibleEvidence": "All quantities refer to the weighed edible ingredient.",
+      "retainedFraction": 1,
+      "retentionEvidence": "All edible input nutrients counted. Water evaporation and minor cooking losses are not measured.",
+      "record": {
+        "id": "fineli-35555-release-20",
+        "name": "RUOKASUOLA, KESKIARVO, JODIOITU 50% JA JODIOIMATON 50%",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/35555",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "table salt",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "componentValues": {
+          "CHO": 0,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0.31,
+          "fat": 0
+        }
+      }
+    }
+  ]
+}
