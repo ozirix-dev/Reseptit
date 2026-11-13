@@ -23,10 +23,10 @@ ingredients:
   item: skalad lök
 - amount: 250
   unit: g
-  item: vispgrädde,38% fett
+  item: vispgrädde, 38 % fett
 - amount: 100
   unit: g
-  item: helmjölk,3,5% fett
+  item: helmjölk, 3,5 % fett
 - amount: 28
   unit: g
   item: smör
@@ -62,7 +62,7 @@ translation_of: janssoninkiusaus-juuriselleri
 ## Tillagning
 
 1. Värm ugnen till 200 °C. Strimla 700 g skalad rotselleri och 55 g lök. Smörj formen med en del av 28 g smör.
-2. Varva rotselleri,lök och 125 g avrunna europeiska sardellfiléer i olja i formen. Tillsätt 250 g vispgrädde med38% fett,100 g helmjölk med3,5% fett,0,5 g svartpeppar och resten av smöret i klickar.
+2. Varva rotselleri, lök och 125 g europeiska sardellfiléer som har lagts in i olja och fått rinna av i formen. Tillsätt 250 g vispgrädde med 38 % fett, 100 g helmjölk med 3,5 % fett, 0,5 g svartpeppar och resten av smöret i klickar.
 3. Grädda i 50–60 min tills rotsellerin är mjuk. Låt vila i 10 min. Tillsätt 8 g dill och dela hela formen med vätskan i fyra portioner.
 
 ## Anteckningar

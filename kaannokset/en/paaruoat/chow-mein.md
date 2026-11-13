@@ -80,9 +80,9 @@ Quick chow mein combines wok-fried noodles, chicken and crunchy vegetables with 
 
 1. Cook the noodles according to the instructions on the package until just cooked. Drain.
 2. Mix soy sauce, oyster sauce and sesame oil.
-3. Heat the wok until hot and add oil. Fry the chicken until cooked and set aside.
+3. Heat the wok until hot and add oil. Stir-fry the chicken until cooked through and set aside.
 4. Fry the garlic, cabbage and carrot quickly in a wok. Add noodles and sauce.
-5. Return the chicken to the wok and turn everything until hot. Finish with spring onions.
+5. Return the chicken to the wok and toss until everything is hot. Finish with spring onions.
 
 ## Notes
 

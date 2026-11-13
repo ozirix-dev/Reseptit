@@ -23,10 +23,10 @@ ingredients:
   item: peeled onion
 - amount: 250
   unit: g
-  item: double cream,38% fat
+  item: whipping cream, 38% fat
 - amount: 100
   unit: g
-  item: whole milk,3.5% fat
+  item: whole milk, 3.5% fat
 - amount: 28
   unit: g
   item: butter
@@ -62,7 +62,7 @@ translation_of: janssoninkiusaus-juuriselleri
 ## Instructions
 
 1. Heat the oven to 200 °C. Cut 700 g peeled celeriac and 55 g onion into strips. Grease a dish with part of the 28 g butter.
-2. Layer the celeriac, onion and 125 g drained European anchovy fillets in oil in the dish. Add 250 g 38%-fat cream,100 g 3.5%-fat whole milk,0.5 g black pepper and the remaining butter in pieces.
+2. Layer the celeriac, onion and 125 g European anchovy fillets packed in oil and drained. Add 250 g 38%-fat whipping cream, 100 g 3.5%-fat whole milk, 0.5 g black pepper and the remaining butter in pieces.
 3. Bake for 50–60 min until the celeriac is tender. Rest for 10 min. Add 8 g dill and divide the whole dish and liquid into four portions.
 
 ## Notes

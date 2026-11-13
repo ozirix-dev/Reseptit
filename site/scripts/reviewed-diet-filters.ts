@@ -67,7 +67,7 @@ export const reviewedDietFilters: Readonly<Record<string, ReviewedDietSource>> =
     sourceBlobShas: {
       fi: "f8ed686e1e15fce50c36c1cfa2995ef25485819d",
       en: "117262c6b9c396ad4dc9a01d246627f9dbed377a",
-      sv: "2b1534fcb425b4df56472a89df36be6f7d5d3a72",
+      sv: "ab3ad3edcceffd4a0965f0a437f72d0178e53550",
       th: "def8d4f0777e97006590034d6bd3c36c0f59fae2",
     },
   },

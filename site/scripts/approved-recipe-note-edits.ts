@@ -25,6 +25,106 @@ const editorialSnapshots: Readonly<Record<string, {
   currentSha256: string;
   inverseEdits: ReadonlyArray<readonly [start: number, count: number, historical: string]>;
 }>> = {
+  "kaannokset/en/paaruoat/baozi.md": {
+    currentSha256: "e5eae99171166ac81cf07fd5866ebb5649524fa4da3d1f783406a50d83f6934c",
+    inverseEdits: [
+      [84, 1, "5. Rise for 15 minutes and steam in batches for 12–15 minutes. Turn off the heat and wait 3 minutes before opening the lid.\n"],
+      [81, 1, "2. Squeeze the liquid from the cabbage. Mix the cabbage, minced meat, spring onion, soy sauce, sesame oil, ginger and cornstarch.\n"],
+    ],
+  },
+  "kaannokset/en/paaruoat/congee-riisipuuro.md": {
+    currentSha256: "a612619f4c425adae78299a113964080d29d52dd590eca17fa66bc1a96bd3ed7",
+    inverseEdits: [
+      [75, 1, "4. Divide the porridge into bowls. Add spring onions, soy sauce and sesame oil. Serve with an egg if desired.\n"],
+      [73, 1, "2. Put the rice, water or stock and salt in the pot. Bring to a boil and cook on very low heat in the crack of the lid for about 60 minutes. Stir occasionally.\n"],
+    ],
+  },
+  "kaannokset/en/paaruoat/janssoninkiusaus-juuriselleri.md": {
+    currentSha256: "a2c2f2daf62a4fc87e76c032fc352a35738e6099429ee405e78cac55c2cf45e4",
+    inverseEdits: [
+      [64, 1, "2. Layer the celeriac, onion and 125 g drained European anchovy fillets in oil in the dish. Add 250 g 38%-fat cream,100 g 3.5%-fat whole milk,0.5 g black pepper and the remaining butter in pieces.\n"],
+      [28, 1, "  item: whole milk,3.5% fat\n"],
+      [25, 1, "  item: double cream,38% fat\n"],
+    ],
+  },
+  "kaannokset/sv/alkuruoat/caponata.md": {
+    currentSha256: "8b4d99962d96b045e82cf661c649dcbadea5cab8070c64e28538e31210c4af8c",
+    inverseEdits: [
+      [72, 1, "1. Tärna 800 g aubergine, 55 g lök och 80 g stjälkselleri. Mjukna under lock i hela mängden 27 g olivolja.\n"],
+    ],
+  },
+  "kaannokset/sv/paaruoat/baozi.md": {
+    currentSha256: "6b76bd87fc6730763e145d473b7567dcf38e4143f85e3f24485d6f77ae68990b",
+    inverseEdits: [
+      [84, 1, "5. Låt jäsa i 15 minuter och ånga i omgångar i 12–15 minuter. Stäng av värmen och vänta 3 minuter innan du öppnar locket.\n"],
+      [81, 2, "2. Krama ur vätskan från kålen. Blanda kål, köttfärs, vårlök, sojasås, sesamolja, ingefära och majsstärkelse.\n3. Dela degen i 12 delar och rulla till bollar. Rulla var och en till en skiva så att mitten blir något tjockare.\n"],
+    ],
+  },
+  "kaannokset/sv/paaruoat/congee-riisipuuro.md": {
+    currentSha256: "d0222ebd8a09f53e0b6dc01d93ac72bdd44fa2ccf444d2d973be0bda7841ec73",
+    inverseEdits: [
+      [75, 1, "4. Dela gröten i skålar. Tillsätt vårlök, soja och sesamolja. Servera med ett ägg om så önskas.\n"],
+      [73, 1, "2. Lägg riset, vattnet eller fonden och salt i grytan. Koka upp och koka på mycket låg värme i lockets springa i ca 60 minuter. Rör om då och då.\n"],
+    ],
+  },
+  "kaannokset/sv/paaruoat/janssoninkiusaus-juuriselleri.md": {
+    currentSha256: "61339c23fecc52b5a0945480dfc0a157acf10e0b43e414c284cedade77759ed7",
+    inverseEdits: [
+      [64, 1, "2. Varva rotselleri,lök och 125 g avrunna europeiska sardellfiléer i olja i formen. Tillsätt 250 g vispgrädde med38% fett,100 g helmjölk med3,5% fett,0,5 g svartpeppar och resten av smöret i klickar.\n"],
+      [28, 1, "  item: helmjölk,3,5% fett\n"],
+      [25, 1, "  item: vispgrädde,38% fett\n"],
+    ],
+  },
+  "kaannokset/th/paaruoat/baozi.md": {
+    currentSha256: "b52643527358a97c05c0d4b920d8a873efae194891c8625c0f94852ef0900054",
+    inverseEdits: [
+      [88, 1, "- อย่าเติมหม้อนึ่งให้เต็มเกินไป เพราะม้วนจะโตขึ้นขณะปรุง\n"],
+      [80, 5, "1. ผสมน้ำอุ่น ยีสต์ และน้ำตาลเข้าด้วยกัน ให้ยืนเป็นเวลา 5 นาที เพิ่มแป้งและนวดเป็นแป้งยืดหยุ่น ปิดฝาและพักไว้ 45 นาที\n2. บีบของเหลวออกจากกะหล่ำปลี ผสมกะหล่ำปลี เนื้อสับ ต้นหอม ซีอิ๊ว น้ำมันงา ขิง และแป้งข้าวโพด\n3. แบ่งแป้งออกเป็น 12 ส่วนแล้วปั้นเป็นก้อนกลม ม้วนแต่ละอันลงในดิสก์เพื่อให้ตรงกลางหนาขึ้นเล็กน้อย\n4. ใส่ไส้ตรงกลางแล้วพับขอบให้เป็นขนมปัง วางบนกระดาษรองอบสี่เหลี่ยม\n5. พักไว้ 15 นาที และนึ่งเป็นชุดประมาณ 12-15 นาที ปิดไฟและรอ 3 นาทีก่อนเปิดฝา\n"],
+      [76, 1, "ซอฟท์โรลที่ทำจากแป้งยีสต์สอดไส้หมูฉ่ำ กะหล่ำปลี และต้นหอม\n"],
+      [72, 1, "ซอฟท์โรลที่ทำจากแป้งยีสต์สอดไส้หมูฉ่ำ กะหล่ำปลี และต้นหอม\n"],
+      [21, 1, "  alt: ซาลาเปานึ่งเปาซี ซึ่งหนึ่งในนั้นถูกแยกออกและมองเห็นไส้ได้\n"],
+    ],
+  },
+  "kaannokset/th/paaruoat/chettinad-kana.md": {
+    currentSha256: "bfc5e5424de397d2440cebae3c44aa3fe12daecbbc8af31a44b331bc6d314bd3",
+    inverseEdits: [
+      [98, 1, "- ปรับปริมาณพริกไทยดำหากต้องการซอสที่นุ่มนวลขึ้น\n"],
+      [91, 3, "3. ใส่ไก่และเป็นสีน้ำตาลอ่อนทุกด้าน\n4. ผสมส่วนผสมเครื่องเทศและใบแกงลงไป เพิ่มมะเขือเทศและเกลือ\n5. เทน้ำลงไป ปิดฝาและเคี่ยวประมาณ 25-30 นาที จนไก่สุกและซอสข้น\n"],
+      [85, 1, "ไก่เชตตินัดของรัฐทมิฬนาฑูขึ้นชื่อในเรื่องเครื่องเทศทั้งตัวย่าง พริกไทยดำ และซอสมะเขือเทศเข้มข้น\n"],
+      [81, 1, "ไก่เชตตินัดของรัฐทมิฬนาฑูขึ้นชื่อในเรื่องเครื่องเทศทั้งตัวย่าง พริกไทยดำ และซอสมะเขือเทศเข้มข้น\n"],
+      [79, 1, "# ไก่ Chettinad กับเครื่องเทศย่าง\n"],
+      [61, 2, "    item: ใบแกงสด\n    note: ไม่จำเป็น\n"],
+      [22, 1, "  alt: ไก่เชตตินาดในซอสเครื่องเทศเข้มคั่วพร้อมใบแกง\n"],
+      [1, 1, "title: ไก่ Chettinad กับเครื่องเทศย่าง\n"],
+    ],
+  },
+  "kaannokset/th/paaruoat/congee-riisipuuro.md": {
+    currentSha256: "5d169682cb09779ab68842dfe37dea1b3681d9ab47e4d81e6cd6b55f1609eea5",
+    inverseEdits: [
+      [73, 3, "2. ใส่ข้าว น้ำหรือน้ำสต๊อก และเกลือลงในหม้อ นำไปต้มและปรุงด้วยไฟอ่อนมากในรอยแตกของฝาประมาณ 60 นาที ผัดเป็นครั้งคราว\n3. เมื่อข้าวแตกเป็นโจ๊กเนื้อนุ่ม ใส่ขิงลงไปผัดต่ออีก 5 นาที\n4. แบ่งโจ๊กออกเป็นชาม ใส่ต้นหอม ซีอิ๊ว และน้ำมันงา เสิร์ฟพร้อมไข่หากต้องการ\n"],
+    ],
+  },
+  "kaannokset/th/paaruoat/janssoninkiusaus-juuriselleri.md": {
+    currentSha256: "92a1429ed2e3b0310d929cd5bed41de3cb43e9cd8e5e16930805fcb28a415ad3",
+    inverseEdits: [
+      [63, 3, "1. อุ่นเตาอบที่200 °C หั่นเซเลอรีแอคปอกเปลือก700 กรัมและหัวหอม55 กรัมเป็นเส้น ทาถาดด้วยเนยส่วนหนึ่งจากทั้งหมด28 กรัม\n2. เรียงเซเลอรีแอค หัวหอมและปลาแอนโชวียุโรปในน้ำมันที่สะเด็ดแล้ว125 กรัมในถาด ใส่ครีมไขมัน38% 250 กรัม นมไขมัน3.5% 100 กรัม พริกไทยดำ0.5 กรัมและเนยที่เหลือเป็นชิ้น\n3. อบ 50–60 นาทีจนเซเลอรีแอคนุ่ม พัก 10 นาที ใส่ผักชีลาว8 กรัม แบ่งอาหารและน้ำในถาดทั้งหมดเป็นสี่ที่\n"],
+      [28, 1, "  item: นมไขมันเต็ม3.5%\n"],
+      [25, 1, "  item: ครีมไขมัน38%\n"],
+    ],
+  },
+  "reseptit/paaruoat/baozi.md": {
+    currentSha256: "ea030b320459bf4f52b89cc822f032c691d39a35f987d05b66bb7a274cac02e4",
+    inverseEdits: [
+      [86, 1, "5. Kohota 15 minuuttia ja höyrytä erissä 12–15 minuuttia. Sammuta lämpö ja odota 3 minuuttia ennen kannen avaamista.\n"],
+    ],
+  },
+  "reseptit/paaruoat/congee-riisipuuro.md": {
+    currentSha256: "e101880277a5f061115291cca696943b48d351ffe814e77cf5072b2a7151984a",
+    inverseEdits: [
+      [78, 1, "4. Jaa puuro kulhoihin. Lisää kevätsipulia, soijakastiketta ja seesamiöljyä. Tarjoa halutessasi kananmunan kanssa.\n"],
+      [76, 1, "2. Laita riisi, vesi tai liemi ja suola kattilaan. Kiehauta ja keitä hyvin miedolla lämmöllä kannen raossa noin 60 minuuttia. Sekoita välillä.\n"],
+    ],
+  },
   "kaannokset/sv/paaruoat/kana-tagine-sitruunalla.md": {
     currentSha256: "eb12c7980f69684ab8a45eb9c2701e58db6e8b5a4382fae0360d6a372c7f91dc",
     inverseEdits: [
