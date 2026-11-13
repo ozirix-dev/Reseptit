@@ -28,13 +28,14 @@ test("issue404 pilot protects published translations before a canonical method m
     "indialainen-poha-maapahkinoilla",
     "malesialainen-kaya-paahtoleipa",
     "valimerellinen-halloumi-tomaattileipa",
+    "intialainen-rava-uttapam",
     "lahi-ita-ful-medames",
     "meksikolainen-aamiais-tacot-mustapavuilla",
     "vietnamilainen-pho-ga-aamuksi",
     "intialainen-mannasuurimoupma",
   ]);
-  assert.equal(actual.filter(x => x.classification === "CANDIDATE_REQUIRES_REVIEW").length, 3);
-  for (const id of ["lahi-ita-ful-medames", "meksikolainen-aamiais-tacot-mustapavuilla"]) {
+  assert.equal(actual.filter(x => x.classification === "CANDIDATE_REQUIRES_REVIEW").length, 2);
+  for (const id of ["intialainen-rava-uttapam", "lahi-ita-ful-medames", "meksikolainen-aamiais-tacot-mustapavuilla"]) {
     assert.deepEqual(actual.find(x => x.recipeId === id)?.blockers,
       ["PUBLISHED_TRANSLATION_SEMANTIC_REVIEW_REQUIRED:en,sv,th"]);
   }
@@ -54,7 +55,7 @@ test("preflight prevents known quarantines, malformed IDs and duplicates", async
   ], inputs);
   assert.ok(result[0].blockers.includes("PUBLIC_QUARANTINE_REQUIRES_SEPARATE_APPROVAL"));
   assert.deepEqual(result[1].blockers, ["INVALID_RECIPE_ID"]);
-  assert.equal(result[2].classification, "CANDIDATE_REQUIRES_REVIEW");
+  assert.deepEqual(result[2].blockers, ["PUBLISHED_TRANSLATION_SEMANTIC_REVIEW_REQUIRED:en,sv,th"]);
   assert.ok(result[3].blockers.includes("DUPLICATE_CANDIDATE"));
 });
 

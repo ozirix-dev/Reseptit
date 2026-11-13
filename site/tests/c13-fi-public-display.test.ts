@@ -6,7 +6,7 @@ import { siteContent } from "../src/generated/content.generated";
 import { parseMarkdown } from "../src/content/markdown";
 import { recipeFrontmatterSchema } from "../src/content/schema";
 import { c13PublicFiPaths, projectC13FiDisplay } from "../scripts/c13-fi-public-display";
-import { c13CanonicalHistoryPaths, originalForC13CanonicalHistory } from "./c13-canonical-historical-transition";
+import { c13CanonicalHistoryPaths, originalForC13CanonicalHistory, reviewedRavaPath } from "./c13-canonical-historical-transition";
 
 const root = path.resolve(import.meta.dirname, "../..");
 const overlays = ["reseptit/aamupalat/indialainen-poha-maapahkinoilla.md","reseptit/aamupalat/lahi-ita-manakish-zaatarilla.md","reseptit/aamupalat/malesialainen-kaya-paahtoleipa.md","reseptit/aamupalat/valimerellinen-halloumi-tomaattileipa.md","reseptit/aamupalat/vietnamilainen-pho-ga-aamuksi.md","reseptit/aamupalat/intialainen-mannasuurimoupma.md"];
@@ -40,7 +40,15 @@ test("C13 five canonical FI recipes contain canonical chef instructions while fr
     assert.ok(current && previous, id);
     const data = recipeFrontmatterSchema.parse(current.data);
     const old = recipeFrontmatterSchema.parse(previous.data);
-    assert.deepEqual(current.data, previous.data, id + ": no input/metadata changes");
+    if (relative === reviewedRavaPath) {
+      const { title, image, ...metadata } = current.data;
+      const { title: previousTitle, image: previousImage, ...previousMetadata } = previous.data;
+      assert.notEqual(title, previousTitle);
+      assert.notDeepEqual(image, previousImage);
+      assert.deepEqual(metadata, previousMetadata, id + ": only title and image metadata may change");
+    } else {
+      assert.deepEqual(current.data, previous.data, id + ": no input/metadata changes");
+    }
     assert.deepEqual(data.ingredients, old.ingredients);
     assert.equal(data.servings, old.servings);
     assert.match(current.content, /## Valmistus\n\n1\. /);
