@@ -45,8 +45,8 @@ tags:
   - valimerellinen
   - sitruunainen
 image:
-  src: aamupalat/valimerellinen-kikherne-yrttiaamiainen.webp
-  alt: "Kikherne-yrttiaamiaisen havainnekuva; kuvan yksityiskohdat voivat poiketa muna-annoksesta"
+  src: aamupalat/valimerellinen-kikherne-yrttiaamiainen-v2.webp
+  alt: "Kikherne- ja kurkkusalaattia persiljalla, päällä kovaksi keitetyn kananmunan puolikkaat"
   width: 1536
   height: 1024
 carbs_net_per_serving_g: 10.2
@@ -79,4 +79,4 @@ Ainekset ja määrät ovat yllä olevassa annoslaskurin käyttämässä rakentei
 
 **GK: ei määritetty.** Tälle uudelle versiolle ei ole hyväksyttyä tuotemuodon mukaista glykeemisen kuorman laskentaa. Puuttuva GK ei tarkoita nollaa.
 
-**Kuva on havainnollistava**, eikä sen yksityiskohtia ole hyväksytty tämän munallisen V2-version raaka-aineiden täsmälliseksi visuaaliseksi todisteeksi. Noudata aina kirjallista ainesluetteloa.
+**Kuva on reseptin mukaisista raaka-aineista laadittu kuvituskuva**, ei valokuva fyysisestä koepaistosta. Annosten koko ja ulkonäkö voivat vaihdella; noudata kirjallista ainesluetteloa.
