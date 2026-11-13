@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "auditStatus": "READ_ONLY; NO IMPLEMENTATION, MIGRATION OR DEPLOYMENT AUTHORIZED",
+  "asOf": "2026-11-13",
+  "sourceRepo": "ozirix-dev/Reseptit",
+  "sourceMainSha": "2293fd1851bad0574ae89430cb9ba1b184df6b8b",
+  "concurrentContentPr": 532,
+  "facts": {
+    "gi": {
+      "sourceRecords": 11,
+      "giRows": 64,
+      "qualityTier": {
+        "STRONG": 6,
+        "SUPPLEMENTARY": 58
+      },
+      "matchKind": {
+        "ANALOG": 34,
+        "CATEGORY_MEAN": 17,
+        "EXACT": 3,
+        "UNSPECIFIED": 10
+      },
+      "evidenceKind": {
+        "HUMAN_GI": 7,
+        "PUBLISHED_IMPUTATION": 12,
+        "UNSPECIFIED": 45
+      },
+      "calculationUse": {
+        "REFERENCE_ONLY": 4,
+        "UNSPECIFIED": 60
+      },
+      "uniqueFoodPreparationPairs": 60,
+      "duplicateKeyCandidates": [
+        {
+          "key": "tomato::whole-raw",
+          "rows": 3
+        },
+        {
+          "key": "potato::boiled-unspecified",
+          "rows": 3
+        }
+      ],
+      "strongMatchKind": {
+        "ANALOG": 3,
+        "CATEGORY_MEAN": 1,
+        "UNSPECIFIED": 2
+      },
+      "note": "Each count describes records or fields, not necessarily independent human GI measurements or per-recipe approval."
+    },
+    "composition": {
+      "usedFoodRecords": 604,
+      "origin": "docs/nutrition/food-records.json; a working subset of larger source references"
+    },
+    "historical": {
+      "recipeBindings": 326,
+      "inputBindings": 326,
+      "evidenceBindings": 326,
+      "exactRecipeTextBindings": 23,
+      "originalNumericReported": 156,
+      "originalMissingReported": 170,
+      "versionSnapshotCountReported": 87,
+      "countVerification": "Previous tests and reports, NOT recomputed by this audit"
+    },
+    "newPublicGkPendingSources": 34,
+    "historicalMacroAudit": {
+      "file": "docs/nutrition/audit.json",
+      "calculatedAt": "2026-10-25",
+      "inventoryRows": 325,
+      "notCurrent": true
+    },
+    "scriptDirectoryEntriesAtCheck": 134
+  },
+  "publicArtifact": {
+    "staticSiteBuild": true,
+    "internalReport": "tmp/nutrition/glycemic-load-pilot.json",
+    "publicProjection": [
+      "site/src/generated/glycemic-load-pilot.generated.ts",
+      "site/src/generated/gk-only-variants.generated.ts",
+      "site/src/generated/glycemic-load-filters.generated.ts",
+      "site/public/data/"
+    ],
+    "sqliteUsedForLiveRuntime": false,
+    "distFileListMeasuredHere": false,
+    "cloudflareLiveBindingsInspectedHere": false,
+    "domainChanged": false
+  },
+  "futureChecks": [
+    "Byte-level dist manifest for staging and Cloudflare preview",
+    "Absent raw source / approvals / SQLite from published files and JS bundles",
+    "Preserve original/variant/study separate scope and historical SHA values",
+    "Check quarantined routes, empty GK not 0",
+    "Measure SHA transition adapter growth and CI cost",
+    "Only consider D1 following a separate approved business case"
+  ],
+  "files": {
+    "docs/nutrition/glycemic-index-records.json": {
+      "gitBlobSha": "719328765182a5058a513381bf5fc1cd0fd31651"
+    },
+    "docs/nutrition/food-records.json": {
+      "gitBlobSha": "d7d6b83b45ed6b048582850f39425d08eb8d1ec6"
+    },
+    "docs/nutrition/glycemic-load-recipe-bindings.json": {
+      "gitBlobSha": "681a4294885c7983fb84df2ebb33c6b4bff91739"
+    },
+    "docs/nutrition/new-public-gk-pending-sources.json": {
+      "gitBlobSha": "c97f0a3dcabeed771e875165384e80739b6974d1"
+    },
+    "docs/nutrition/audit.json": {
+      "gitBlobSha": "e93773a9124535f10fc337ec4581f4441fa38410"
+    },
+    "docs/nutrition/gk-original-recipe-method.md": {
+      "gitBlobSha": "9d0dd3c28d3124e284ca6d7e032018b020a95a14"
+    },
+    "docs/architecture/nutrition-core-vision.md": {
+      "gitBlobSha": "c9f5bd3665edf9e3b3ce1ebd4987a662b6e3b7d4"
+    },
+    "site/scripts/glycemic-load-pilot.ts": {
+      "gitBlobSha": "4325819daf576dc5b181a2f8dc911b1f61eb4e8b"
+    },
+    "site/scripts/build-content.ts": {
+      "gitBlobSha": "0f37b121c9bb005527550810cbe98fc46393ba46"
+    },
+    "site/scripts/gi_sqlite_evidence.py": {
+      "gitBlobSha": "220c9b138791db5e735c24cf5dcdf9d77402c4d5"
+    },
+    "site/scripts/gi_sqlite_index.py": {
+      "gitBlobSha": "959873470eee87abecb071dbf4e175008cfd4d58"
+    },
+    "site/scripts/approved-recipe-note-edits.ts": {
+      "gitBlobSha": "fbe3dc0aec0726d1d486150ec83f7f097cbfe106"
+    },
+    "site/src/content/route-data.ts": {
+      "gitBlobSha": "6f94a3dc192c7dd5f88fd5541a6f35b9d716f99e"
+    },
+    "site/scripts/prerender.ts": {
+      "gitBlobSha": "6676b2367c4c846a54166a093111d2bc6eefe014"
+    },
+    ".gitignore": {
+      "gitBlobSha": "d3796cb0912bf6f7cfef8ce9adb56f898556e939"
+    }
+  }
+}
