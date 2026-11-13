@@ -131,7 +131,8 @@ test('Live original results preserve frozen history plus the exact reviewed tran
     const frozen=originalForThreeCanonicalHistory(root,row.source_path,published);
     assert.equal(row.source_content_hash,createHash('sha256').update(published).digest('hex'),
       row.source_path+' reviewed canonical source hash');
-    const reviewedNotes=published.split('## Muistiinpanot')[1]?.trim() ?? '';
+    const displayed = projectTranslationAuditSource(row.source_path, published);
+    const reviewedNotes=displayed.split('## Muistiinpanot')[1]?.trim() ?? '';
     assert.equal(normalNotes,reviewedNotes.replaceAll('\r\n','\n').replaceAll('\n',lineEnding),
       row.source_path+' current notes');
     return {...row,notes:(frozen.split('## Muistiinpanot')[1]?.trim() ?? '').replaceAll('\n',lineEnding),
@@ -154,7 +155,8 @@ test('Live original results preserve frozen history plus the exact reviewed tran
     const publishedSha=createHash('sha256').update(published).digest('hex');
     const frozenSha=createHash('sha256').update(frozen).digest('hex');
     assert.equal(row.source_content_hash,publishedSha,row.source_path+' B21 live inventory binding');
-    const liveNotes=published.split('## Muistiinpanot')[1]?.trim() ?? '';
+    const displayed = projectTranslationAuditSource(row.source_path, published);
+    const liveNotes=displayed.split('## Muistiinpanot')[1]?.trim() ?? '';
     assert.equal(normalNotes,liveNotes.replaceAll('\r\n','\n').replaceAll('\n',lineEnding),
       row.source_path+' B21 inventory notes must equal reviewed source');
     const frozenNotes=(frozen.split('## Muistiinpanot')[1]?.trim() ?? '').replaceAll('\n',lineEnding);
@@ -192,6 +194,9 @@ test('Live original results preserve frozen history plus the exact reviewed tran
    if (row.source_path === 'reseptit/aamupalat/lahi-ita-labneh-kulho-zaatarilla.md' ||
        row.source_path === 'reseptit/aamupalat/indialainen-poha-maapahkinoilla.md' ||
        row.source_path === 'reseptit/aamupalat/lahi-ita-manakish-zaatarilla.md' ||
+       row.source_path === 'reseptit/aamupalat/intialainen-mannasuurimoupma.md' ||
+       row.source_path === 'reseptit/aamupalat/japanilainen-soba-aamiaiskeitto.md' ||
+       row.source_path === 'reseptit/aamupalat/malesialainen-kaya-paahtoleipa.md' ||
        row.source_path === 'reseptit/aamupalat/valimerellinen-halloumi-tomaattileipa.md') {
     const raw = read(row.source_path).replaceAll('\r\n','\n');
     const displayed = projectTranslationAuditSource(row.source_path,raw);
