@@ -1,3 +1,4 @@
+import { createHash } from "node:crypto";
 import { readdir, readFile, mkdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -38,7 +39,7 @@ export interface TranslationAuditRow {
 }
 
 export interface TranslationAuditResult {
-  publishedSources: { path: string; data: Frontmatter; content: string }[];
+  publishedSources: { path: string; data: Frontmatter; content: string; sourceSha256?: string }[];
   publishedTranslations: { path: string; data: Frontmatter; content: string }[];
   rows: TranslationAuditRow[];
   errors: string[];
@@ -57,16 +58,17 @@ export async function markdownFiles(directory: string): Promise<string[]> {
   return nested.flat().sort();
 }
 
-async function readRecipes(paths: string[], recipeIds?: Set<string>): Promise<{ path: string; data: Frontmatter; content: string }[]> {
-  const result: { path: string; data: Frontmatter; content: string }[] = [];
+async function readRecipes(paths: string[], recipeIds?: Set<string>): Promise<TranslationAuditResult["publishedSources"]> {
+  const result: TranslationAuditResult["publishedSources"] = [];
   for (const filePath of paths) {
-    const parsed = parseMarkdown(await readFile(filePath, "utf8"));
+    const raw = await readFile(filePath, "utf8");
+    const parsed = parseMarkdown(raw);
     if (!parsed) continue; // Empty legacy placeholders are not published recipe versions.
     if (recipeIds && (typeof parsed.data.recipe_id !== "string" || !recipeIds.has(parsed.data.recipe_id))) continue;
     if (parsed.data.status === "draft") continue;
     const checked = recipeFrontmatterSchema.safeParse(parsed.data);
     if (!checked.success) throw new Error(`Invalid recipe metadata in ${filePath}: ${checked.error.message}`);
-    if (checked.data.status === "published") result.push({ path: path.relative(repoRoot, filePath).replaceAll("\\", "/"), data: checked.data, content: parsed.content });
+    if (checked.data.status === "published") result.push({ path: path.relative(repoRoot, filePath).replaceAll("\\", "/"), data: checked.data, content: parsed.content, sourceSha256: createHash("sha256").update(raw.replaceAll("\r\n", "\n")).digest("hex") });
   }
   return result;
 }
@@ -197,7 +199,7 @@ export async function auditTranslations(recipeIds?: string[]): Promise<Translati
           .some(key => displayed[key] !== original[key])) {
       throw Error("FI_PROJECTED_AUDIT_SOURCE_DRIFT: " + source.path);
     }
-    return { path: source.path, data: displayed, content: projected.content };
+    return { ...source, data: displayed, content: projected.content };
   }));
   const sources = overlayTranslationPublicationIndex(publicSources, await loadTranslationPublicationIndex(repoRoot), filter);
   const translations = (await Promise.all(locales.map((locale) => markdownFiles(path.join(repoRoot, "kaannokset", locale))))).flat();

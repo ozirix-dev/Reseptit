@@ -12,6 +12,10 @@ const indexSchema = z.object({
   sources: z.array(z.object({
     recipe_id: z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/),
     locales: z.array(localeSchema).min(1),
+    draftPromotion: z.object({
+      sourceSha256: z.string().regex(/^[a-f0-9]{64}$/),
+      locales: z.array(localeSchema).min(1),
+    }).strict().optional(),
   }).strict()),
 }).strict();
 
@@ -43,6 +47,9 @@ export function overlayTranslationPublicationIndex(
     if (seen.has(row.recipe_id)) throw Error("TRANSLATION_INDEX_DUPLICATE_SOURCE: " + row.recipe_id);
     seen.add(row.recipe_id);
     if (new Set(row.locales).size !== row.locales.length) throw Error("TRANSLATION_INDEX_DUPLICATE_LOCALE: " + row.recipe_id);
+    const promoted = row.draftPromotion?.locales ?? [];
+    if (new Set(promoted).size !== promoted.length || promoted.some(locale => !row.locales.includes(locale)))
+      throw Error("TRANSLATION_INDEX_INVALID_DRAFT_PROMOTION: " + row.recipe_id);
   }
   for (const row of index.sources) {
     // A targeted audit reads only requested sources; full audit checks every row.
@@ -52,8 +59,13 @@ export function overlayTranslationPublicationIndex(
       throw Error("TRANSLATION_INDEX_MISSING_PUBLISHED_FI: " + row.recipe_id);
     const statuses = { ...(source.data.translation_status ?? {}) };
     const languages = new Set(source.data.translation_languages ?? []);
+    const promotion = row.draftPromotion;
+    if (promotion && (promotion.sourceSha256 !== source.sourceSha256 ||
+        promotion.locales.some(locale => statuses[locale] !== "draft"))) {
+      throw Error("TRANSLATION_INDEX_STALE_DRAFT_PROMOTION: " + row.recipe_id);
+    }
     for (const locale of row.locales) {
-      if (statuses[locale] !== undefined && statuses[locale] !== "published")
+      if (statuses[locale] !== undefined && statuses[locale] !== "published" && !promotion?.locales.includes(locale))
         throw Error("TRANSLATION_INDEX_FI_STATUS_CONFLICT: " + row.recipe_id + ":" + locale);
       statuses[locale] = "published";
       languages.add(locale);
