@@ -154,9 +154,12 @@ jobs:
           if-no-files-found: error
           retention-days: 14
 
-      - name: Generate content required by selected tests
+      - name: Generate nutrition and GK outputs required by isolated TypeScript checks
         if: steps.select.outputs.run_content_sync == 'true' && steps.select.outputs.run_build != 'true'
-        run: npm run content:sync
+        run: |
+          npm run content:sync
+          npm run audit:nutrition -- --strict
+          npm run audit:glycemic-load
         working-directory: site
 
       - name: Typecheck site source, scripts and tests
