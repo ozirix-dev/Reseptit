@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "recipe_id": "kiinalainen-bao-munalla-punnittu-v2",
+  "source_path": "reseptit/aamupalat/kiinalainen-bao-munalla-punnittu-v2.md",
+  "source_sha256": "578cc562873e1c43094bfc3ef57b293e32e7b884c1779e591c076c174870aeb5",
+  "decision": "approved",
+  "reviewed_by": "AI editorial reviewer (GPT-6)",
+  "reviewed_at": "2026-11-13",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://chinasichuanfood.com/bao-buns-asian-steamed-buns/",
+      "https://blog.themalamarket.com/chengdu-challenge-9-bao-steamed-sandwich-buns/"
+    ]
+  },
+  "supersedes_quarantined": {
+    "recipe_id": "kiinalainen-bao-munalla",
+    "source_path": "reseptit/aamupalat/kiinalainen-bao-munalla.md",
+    "source_git_blob_sha": "7865e9409880638b8fe5bdeacbcb5ae2c1d356a2"
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/kiinalainen-bao-munalla-punnittu-v2.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "The sole historical slug owner is the quarantined predecessor with the exact registered Git blob."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "All ingredients use edible gram weights. Allergen disclosures and the new illustration were checked against the ingredient list."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Two folded steamed yeast buns using 55% water, a first rise followed by a shaped proof and 12–14 minutes steaming. The filling uses weighed hard-boiled egg and cucumber. The sauce is generic commercial hoisin with FSANZ AFCD F008008 as a composition estimate, not a branded label claim."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "The buns are steamed until cooked through at the fold, and the egg white and yolk are fully set."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "2 portions with 160 minutes including the specified cooking and resting or cooling periods."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Fineli and AFCD edible mass calculation verified against the current recipe input SHA-256. Two folded steamed yeast buns using 55% water, a first rise followed by a shaped proof and 12–14 minutes steaming. The filling uses weighed hard-boiled egg and cucumber. The sauce is generic commercial hoisin with FSANZ AFCD F008008 as a composition estimate, not a branded label claim."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "No preparation-matched glycemic load approval exists for the successor; the original is retained in historical quarantine."
+    }
+  }
+}
