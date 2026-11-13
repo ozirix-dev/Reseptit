@@ -104,7 +104,7 @@ test("the Finnish breakfast and dessert collections exclude quarantined unsafe r
   assert.equal(chia.ingredients.find(ingredient => ingredient.item === "chiansiemeniä")?.amount, 24);
   assert.equal(chia.ingredients.find(ingredient => ingredient.item === "vettä")?.amount, 160);
   assert.deepEqual(chia.nutrition, { carbsNetG: null, carbsTotalG: null, proteinG: null, fatG: null });
-  assert.equal(siteContent.recipes.filter(recipe => recipe.recipeId === chia.recipeId).length, 1);
+  assert.deepEqual(siteContent.recipes.filter(recipe => recipe.recipeId === chia.recipeId).map(recipe => recipe.locale).sort(), ["en", "fi", "sv", "th"]);
   assert.equal(desserts.length, 10);
   const documentedBreakfastNetCarbs = new Map([
     ["indonesialainen-ketoprak-aamiaiskulho", 44.21], ["indonesialainen-pisang-goreng-aamiaiseksi", 63.85],

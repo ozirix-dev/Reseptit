@@ -189,7 +189,8 @@ test('Live original results preserve frozen history plus the exact reviewed tran
       : row.ingredients;
     return {...row,ingredients,notes:oldNotes,source_content_hash:historicalSha};
    }
-   if (row.source_path === 'reseptit/aamupalat/indialainen-poha-maapahkinoilla.md' ||
+   if (row.source_path === 'reseptit/aamupalat/lahi-ita-labneh-kulho-zaatarilla.md' ||
+       row.source_path === 'reseptit/aamupalat/indialainen-poha-maapahkinoilla.md' ||
        row.source_path === 'reseptit/aamupalat/lahi-ita-manakish-zaatarilla.md' ||
        row.source_path === 'reseptit/aamupalat/valimerellinen-halloumi-tomaattileipa.md') {
     const raw = read(row.source_path).replaceAll('\r\n','\n');
