@@ -7,7 +7,7 @@ import { resolveSiteTarget } from "../src/content/site-target";
 import { articles, articlePath, blogRoot, blogPosts, blogJsonLd } from "../src/features/blog/blog-data";
 import { glycemicLoadMeta, glycemicLoadPath, recipeUi } from "../src/features/recipes/recipe-i18n";
 import type { RecipeEntry, RecipeLocale } from "../src/types/content";
-import { withholdF25Nutrition } from "../src/features/recipes/f25-nutrition-withhold";
+import { recipeNutritionPresentation } from "../src/features/recipes/nutrition-presentation";
 
 const staging = resolveSiteTarget();
 export const siteBase = staging.baseUrl;
@@ -83,7 +83,7 @@ export function inspectPage(html: string, expected: ExpectedPage): SeoFinding[] 
   check(jsonScripts.length === (recipe.image ? 1 : 0), "JSONLD_COUNT", "Recipe JSON-LD requires a recipe image");
   if (recipe.image && jsonScripts.length === 1) try {
     const data = JSON.parse(jsonScripts[0].content);
-    const withholding = withholdF25Nutrition(recipe.recipeId, recipe.locale) || recipe.recipeId === "rapeat-juustonaksut";
+    const withholding = !recipeNutritionPresentation(recipe.recipeId, recipe.locale).includeStructuredNutrition;
     const nutrition = Object.fromEntries(Object.entries({ carbohydrateContent: recipe.nutrition.carbsTotalG, proteinContent: recipe.nutrition.proteinG, fatContent: recipe.nutrition.fatG }).filter(([, n]) => !withholding && n !== null).map(([k, n]) => [k, `${n} g`]));
     const expectedData = JSON.parse(JSON.stringify({
       "@context": "https://schema.org", "@type": "Recipe", name: recipe.title, description: recipe.description || undefined,

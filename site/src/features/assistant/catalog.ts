@@ -1,7 +1,7 @@
 import type { RecipeEntry, RecipeLocale } from "../../types/content";
 import { localeIndexes, summarizeRecipe, type RecipeSummary } from "../../content/route-data";
 import { filterRecipes, type GlycemicLoadFilterCategory, type RecipeFilters } from "../recipes/recipe-search";
-import {withholdF25Nutrition} from "../recipes/f25-nutrition-withhold";
+import {recipeNutritionPresentation} from "../recipes/nutrition-presentation";
 
 /**
  * A1 is a read-only projection of the *already published* recipe build.
@@ -83,7 +83,7 @@ export function createAssistantCatalog(
         amount, unit, item, ...(note !== undefined ? { note } : {}),
       })),
       servings: recipe.servings,
-      nutritionPerServing: withholdF25Nutrition(recipe.recipeId, recipe.locale) || recipe.recipeId === "rapeat-juustonaksut"
+      nutritionPerServing: !recipeNutritionPresentation(recipe.recipeId, recipe.locale).includeStructuredNutrition
         ? {carbsNetG:null, carbsTotalG:null, proteinG:null, fatG:null}
         : { ...recipe.nutrition }, // Withheld or unknown must stay null, never become zero.
       sourceVersion,
