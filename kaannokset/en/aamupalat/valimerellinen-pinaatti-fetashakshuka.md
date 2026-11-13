@@ -35,8 +35,8 @@ time_total_min: 25
 difficulty: easy
 tags:
   - breakfast
-  - Moroccan
-  - soup
+  - Mediterranean
+  - breakfast dish
 image:
   src: aamupalat/valimerellinen-pinaatti-fetashakshuka.webp
   alt: Spinach and feta shakshuka with serving accompaniments.

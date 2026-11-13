@@ -35,8 +35,8 @@ time_total_min: 25
 difficulty: ง่าย
 tags:
   - อาหารเช้า
-  - อาหารโมร็อกโก
-  - ซุป
+  - เมดิเตอร์เรเนียน
+  - เมนูอาหารเช้า
 image:
   src: aamupalat/valimerellinen-pinaatti-fetashakshuka.webp
   alt: ชักชูกาใส่ผักโขมและเฟตาพร้อมเครื่องเคียง
