@@ -1,71 +1,61 @@
 ---
-title: "Kinesiska teägg med svart te och stjärnanis"
+title: Kinesiska teägg
 recipe_id: kiinalainen-teehaudutetut-munat
 url_slug: kiinalainen-teehaudutetut-munat
 category: aamupala
 language: sv
-status: draft
+status: published
 main_ingredient:
-  - "ägg"
-  - "svart te"
-  - "sojasås"
+- kananmuna
+- musta tee
+- soijakastike
 cooking_method:
-  - "keittäminen"
+- keittäminen
 ingredients:
-  - amount: 2
-    unit: "st"
-    item: "kycklingägg"
-  - amount: 150
-    unit: "ml"
-    item: "bryggt svart te"
-  - amount: 1
-    unit: "msk"
-    item: "sojasås"
-  - amount: 1
-    unit: "tsk"
-    item: "stjärnanis"
-  - amount: null
-    unit: ""
-    item: "salt efter smak"
+- amount: 2
+  unit: st
+  item: ägg
+- amount: 150
+  unit: ml
+  item: bryggt svart te
+- amount: 1
+  unit: msk
+  item: sojasås
+- amount: 1
+  unit: tsk
+  item: stjärnanis
+- amount: null
+  unit: ''
+  item: salt efter smak
 servings: 2
 time_total_min: 25
-difficulty: "Lätt"
+difficulty: lätt
 tags:
-  - "frukost"
-  - "kinesisk"
-  - "teägg"
+- frukost
+- kinesiskt
 image:
   src: aamupalat/kiinalainen-teehaudutetut-munat.webp
-  alt: "Två kinesiska teägg kryddade med svart te, sojasås och stjärnanis"
+  alt: Kinesiska teägg serverade till frukost
   width: 1536
   height: 1024
 carbs_net_per_serving_g: 1.02
 carbs_total_per_serving_g: 1.02
 protein_per_serving_g: 7.48
 fat_per_serving_g: 5.09
-
 source_language: fi
-source_recipe: reseptit/aamupalat/kiinalainen-teehaudutetut-munat.md
 translation_of: kiinalainen-teehaudutetut-munat
+source_recipe: reseptit/aamupalat/kiinalainen-teehaudutetut-munat.md
 ---
 
-# Kinesiska teägg med svart te och stjärnanis
+# Kinesiska teägg
 
 ## Beskrivning
 
-En snabb hemmaversion av kinesiska teägg. Skalen spräcks före kryddningen; äggen skalas först efter att de sjudit i teblandningen.
-
-## Ingredienser
-
-Ingrediensmängderna finns i den strukturerade listan ovan.
+Hårdkokta ägg får sjuda med spruckna skal i svart te och stjärnanis.
 
 ## Tillagning
 
-1. Koka de 2 äggen med skalen på i vatten i 8–9 minuter. Låt svalna en kort stund så att de går att hantera; skala dem ännu inte.
-2. Värm alla 150 ml bryggt svart te med 1 matsked sojasås och 1 tesked stjärnanis i en liten kastrull. Tillsätt endast saltet i ingredienslistan efter smak om det behövs.
-3. Knacka försiktigt med en sked så att skalen spricker runtom utan att tas bort. Lägg äggen i teblandningen och vänd dem så att den lilla mängden vätska når skalen jämnt.
-4. Låt sjuda försiktigt under lock i cirka 10 minuter. Skala äggen först efter kryddningen och servera 1 ägg per portion. Teblandningen är kryddningsvätska, inte en extra sås.
-
-## Anteckningar
-
-Den här versionen på 25 minuter får mildare tesmak än en längre traditionell blötläggning. Hela satsen använder bara de uppmätta 150 ml te och ingredienserna ovan.
+1. Koka 2 ägg med skal i vatten i 8–9 minuter. Kyl dem kort så att skalen kan hanteras. Skala inte äggen än.
+2. Värm 150 ml bryggt svart te, 1 msk sojasås och 1 tsk stjärnanis till spadet. Tillsätt saltet i listan bara vid behov.
+3. Knacka små sprickor i de hårdkokta äggens skal med en sked utan att ta bort skalen. Lägg äggen i spadet i en liten kastrull och vänd dem så att spadet kommer åt hela skalet trots den lilla mängden vätska.
+4. Sjud under lock på svag värme i cirka 10 minuter. Skala äggen efter att de tagit smak och servera ett per portion. Spadet behöver inte serveras som en separat sås.
