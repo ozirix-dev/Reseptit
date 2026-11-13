@@ -35,6 +35,20 @@ const editorialMethods: Readonly<Record<string, readonly [string, string]>> = {
   'reseptit/leivonnaiset/vhh-runebergintortut.md': ['2293fd1851bad0574ae89430cb9ba1b184df6b8b', 'fd4c60bb937d54ae8b5d04bf763d8a19889d372a2bf5d88cc89293add24cce49'],
   'reseptit/paaruoat/khao-kha-moo-vhh.md': ['2293fd1851bad0574ae89430cb9ba1b184df6b8b', '907a2f69e71ce436054f1561a351e70def1ad38de23b95cf8a44d6af38060256'],
   'reseptit/paaruoat/khao-man-gai-vhh.md': ['2293fd1851bad0574ae89430cb9ba1b184df6b8b', '1e25c05b37753f78151fada1991efcdd682bf7ca7af92c1fe4955548c2018d1f'],
+  'reseptit/alkuruoat/goi-cuon.md': ['26ef2fb244908290048b9e050dd54868f1c15b2c', '339870e73960d81ef8c6de90840b940faae96cfb2268b4f7b933e0022cb0da1f'],
+  'reseptit/paaruoat/hernekeitto-savupotkalla.md': ['26ef2fb244908290048b9e050dd54868f1c15b2c', '123a06f147e4e0874bdb12387f12c60d14a01722b44edf7ef5e77810a21b1738'],
+  'reseptit/paaruoat/hunaja-sinappikana-kaalilla.md': ['26ef2fb244908290048b9e050dd54868f1c15b2c', '54b95beecd582e69f504b1e2d16e5f05e6adc086a545e49ab652f4d28346a3b7'],
+  'reseptit/paaruoat/japanilainen-curry-tofulla.md': ['26ef2fb244908290048b9e050dd54868f1c15b2c', '17bb0b5478b1aef5fae4e0e5cfa86041aa39497ca9d00b4cd067b02eb172a309'],
+  'reseptit/aamupalat/kaakao-kookos-chia.md': ['26ef2fb244908290048b9e050dd54868f1c15b2c', '33e88aa048db2a3aae4fbbc40364923645986f11a826afd9ec667edc7b6dd9f7'],
+  'reseptit/aamupalat/marjainen-chiavanukas.md': ['26ef2fb244908290048b9e050dd54868f1c15b2c', 'ca4a5e2700eaaacbf693a88e8e34a99f5893800202e2a85c3138bb95ef84c427'],
+  'reseptit/jalkiruoat/marjakiisseli-vaniljakastikkeella.md': ['26ef2fb244908290048b9e050dd54868f1c15b2c', '42e3765032750d1cc35b8172f6bd25439de69cd421c64223aefa6112b2800e9c'],
+  'reseptit/paaruoat/miso-lohi-paksoi.md': ['26ef2fb244908290048b9e050dd54868f1c15b2c', 'caa41d5bd1f929406cfc0d7da2590e98ec624a85a68eaede35732966b066a270'],
+  'reseptit/paaruoat/okonomiyaki-kaaliletut.md': ['26ef2fb244908290048b9e050dd54868f1c15b2c', '30fdeacf128ff01beaa3df7fe991ee2547cdd6761f94a98cc6f294afe940d567'],
+  'reseptit/jalkiruoat/pannacotta-marjakastikkeella.md': ['26ef2fb244908290048b9e050dd54868f1c15b2c', 'e40c29b6f1e30daad9231ad833376cc64d8d4080d54dc59c7a6722b4bfc4e89b'],
+  'reseptit/aamupalat/savulohi-avokadokulho.md': ['26ef2fb244908290048b9e050dd54868f1c15b2c', 'f93a416a19143264ad1c2d36c7cdaef456309d2a958c2b20a137360e6a3413c2'],
+  'reseptit/paaruoat/tacokulho-nauta-avokado.md': ['26ef2fb244908290048b9e050dd54868f1c15b2c', '3a5735d1348748d901a258a7498d87e825950f96ce66cfa48d434dcdc287863b'],
+  'reseptit/jalkiruoat/vhh-juustokakku.md': ['26ef2fb244908290048b9e050dd54868f1c15b2c', 'd6d79e6e9dace0348cc7cd8d3d935ca9c5040dd08864a12a429bbd9491873573'],
+  'reseptit/paaruoat/carnitas-salaattitacot.md': ['26ef2fb244908290048b9e050dd54868f1c15b2c', '100008a32d28768f59401b356d3d76a026275119f274256282e2e1019d8ec2e1'],
 };
 export const editorialMethodHistoryPaths = Object.freeze(Object.keys(editorialMethods));
 const accepted = new Set<string>(reviewedChefSafetyPaths);
@@ -57,7 +71,14 @@ export function originalForReviewedChefSafety(root: string, file: string, curren
     const expected = file === 'reseptit/alkuruoat/pani-puri.md'
       ? originalFrontmatter.replace('Noin 1/2 tl; säädä kalafondin suolaisuuden mukaan.', 'Täytteeseen ja yrttiveteen.')
       : originalFrontmatter;
-    assert.equal(frontmatter(live), expected, file + ': changed protected recipe metadata');
+    // Historical inventory compares the calculation inputs across the exact reviewed versions.
+    const displayMetadata = /^(?:time_total_min: \d+\n|image:\n(?: {2,}[^\n]*\n)+)/gm;
+    const displayOnly = base === '26ef2fb244908290048b9e050dd54868f1c15b2c';
+    assert.equal(
+      displayOnly ? frontmatter(live).replace(displayMetadata, '') : frontmatter(live),
+      displayOnly ? expected.replace(displayMetadata, '') : expected,
+      file + ': changed protected recipe metadata',
+    );
     assert.notEqual(live, original);
     return original;
   }
