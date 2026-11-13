@@ -1,0 +1,81 @@
+---
+title: "Höyrytetyt bao-sämpylät munalla – punnittu koetaikina"
+recipe_id: kiinalainen-bao-munalla-punnittu-v2
+url_slug: kiinalainen-bao-munalla-punnittu-v2
+category: aamupala
+language: fi
+status: draft
+main_ingredient:
+  - vehnäjauho
+  - kananmuna
+  - kurkku
+cooking_method:
+  - höyrytetty
+ingredients:
+  - amount: 100
+    unit: g
+    item: vehnäjauhoa
+  - amount: 55
+    unit: ml
+    item: kädenlämpöistä vettä
+    note: koetaikinan nestetavoite, ei koetestattu
+  - amount: 2
+    unit: g
+    item: kuivahiivaa
+  - amount: 5
+    unit: g
+    item: sokeria
+  - amount: 4
+    unit: g
+    item: neutraalia kasviöljyä
+    note: koko määrä taikinaan; höyrytyspaperi ei vaadi ylimääräistä öljyä
+  - amount: 1
+    unit: g
+    item: suolaa
+  - amount: 2
+    unit: kpl
+    item: kananmunaa
+    note: noin 100 g kuorettomina, kypsennetään täysin
+  - amount: 150
+    unit: g
+    item: tuoretta kurkkua
+    note: pestyä, syötävää viipaloitavaa osaa
+  - amount: 15
+    unit: g
+    item: hoisin-kastiketta
+    note: tuote ja allergeenit vahvistettava pakkauksesta; koko erälle
+servings: 2
+time_total_min: 125
+difficulty: Keskitaso
+tags:
+  - aamupala
+  - kiinalainen
+  - koeversio
+carbs_net_per_serving_g: null
+carbs_total_per_serving_g: null
+protein_per_serving_g: null
+fat_per_serving_g: null
+---
+
+# Höyrytetyt bao-sämpylät munalla – koetaikina
+
+## Kuvaus
+
+**DRAFT / EI JULKAISTU / EI KOEPAISTETTU.** Vanhan version 100 g vehnäjauhoa ei voi höyryttää bao-leiväksi ilman nestettä ja kohotusmenetelmää. Tässä ehdokkaassa on lisätty punnittu hiivataikina, oikea kohotus ja kaksi mitoitettua täytettyä sämpylää. Vanhat ravintoarvot tai GK eivät siirry.
+
+## Ainekset
+
+Kaikki taikinan ja täytteen ainekset on määritelty rakenteisessa luettelossa.
+
+## Valmistus
+
+1. Sekoita 100 g vehnäjauhoa, 2 g kuivahiivaa, 5 g sokeria ja 1 g suolaa. Lisää 55 ml kädenlämpöistä vettä ja 4 g öljyä; vaivaa tasaiseksi, joustavaksi taikinaksi noin 8 minuuttia.
+2. Peitä taikina ja kohota vedottomassa paikassa noin 60–90 minuuttia, kunnes se on selvästi kuohkea. Kohotusaika riippuu lämpötilasta eikä ole varmistettu kokeellisesti.
+3. Jaa taikina kahteen osaan. Kauli pieniksi ovaaleiksi, taita väljästi leivinpaperin avulla kahtia ja aseta kumpikin omalle höyrytykseen sopivalle leivinpaperipalalle. Anna levätä noin 15 minuuttia.
+4. Kuumenna höyrytin tasaisesti höyryäväksi. Höyrytä sämpylöitä kannen alla alustavasti 10–12 minuuttia ilman että sämpylät koskettavat vettä. Tarkista, että taikina on kypsää myös taitoksesta.
+5. Keitä kaksi kananmunaa kauttaaltaan kypsiksi, kuori ja viipaloi. Pese ja viipaloi 150 g kurkkua.
+6. Avaa kypsät bao-sämpylät varoen höyryä. Täytä kumpikin yhdellä munalla ja puolella kurkusta. Annostele yhteensä 15 g hoisin-kastiketta, 7,5 g kummallekin. Tarjoa heti.
+
+## Muistiinpanot
+
+**HOLD: ei julkaisulupaa.** Sisältää vehnää ja kananmunaa; hoisin-tuote voi sisältää soijaa ja vehnää, ja pakkaus tarkistetaan ennen julkaisua. Taikinan vesi, kohotus ja höyrytys ovat uuden koeversion määriä, eivät mittaustodisteita. Täytteiden syötävät painot ja kastikkeen tarkka ravintoarvotuote vaaditaan laskentaan. Makrot null; **GK: ei määritetty**. Kuvien ja käännösten vastaavuus tarkistetaan vasta hyväksytyn FI-lähteen jälkeen.
