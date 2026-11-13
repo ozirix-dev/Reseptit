@@ -6,7 +6,7 @@ category: alkuruoka
 language: en
 status: published
 servings: 4
-time_total_min: 75
+time_total_min: 90
 main_ingredient:
   - sianliha
   - kaali
@@ -19,8 +19,8 @@ tags:
   - pork
   - cabbage
 image:
-  src: paaruoat/jiaozi.webp
-  alt: Jiaozi dumplings, golden brown bases and soy dipping sauce
+  src: paaruoat/jiaozi-keitetty.webp
+  alt: Boiled jiaozi dumplings with soy dipping sauce
   width: 1279
   height: 853
 ingredients:
@@ -70,11 +70,11 @@ fat_per_serving_g: 14.24
 
 # Jiaozi dumplings with pork and cabbage
 
-Homemade dumplings filled with pork, cabbage and ginger are boiled until cooked.
+Homemade Chinese dumplings filled with pork, napa cabbage and ginger. The recipe makes about 40 boiled dumplings, or about 10 per serving.
 
 ## Description
 
-Homemade dumplings filled with pork, cabbage and ginger are boiled until cooked.
+Homemade Chinese dumplings filled with pork, napa cabbage and ginger. The recipe makes about 40 boiled dumplings, or about 10 per serving.
 
 ## Preparation
 
@@ -82,9 +82,9 @@ Homemade dumplings filled with pork, cabbage and ginger are boiled until cooked.
 
 2. Squeeze excess liquid from cabbage. Mix cabbage, pork, spring onion, soy sauce, sesame oil, ginger and salt.
 
-3. Divide dough into 24 pieces and roll thin. Fill, wet the edges, fold and seal each dumpling.
+3. Divide the dough into 40 pieces, about 12 g each. Roll into rounds about 9 cm across, with thinner edges. Divide the filling evenly, about 13 g per wrapper. Moisten the rim if needed, fold into a half-moon and pinch firmly to seal.
 
-4. Boil in batches for 6–8 minutes until the dumplings float and the filling is cooked. Lift out with a slotted spoon.
+4. Boil the dumplings in batches in plenty of water. Once the water returns to a boil, cook at a gentle boil for about 6–8 minutes. Check that the center of the filling in the largest dumpling reaches at least 71 °C. Cook longer if needed, then lift out with a slotted spoon.
 
 5. Mix soy sauce and rice vinegar for dipping. Serve with the dumplings.
 

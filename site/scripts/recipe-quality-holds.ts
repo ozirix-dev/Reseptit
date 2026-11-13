@@ -41,12 +41,6 @@ const holdReasons: Record<string, Record<RecipeLocale, string>> = {
     sv: "Tillagningen använder saffransmjölk, men mjölk och mängd saknas i ingredienslistan. Ingredienser, metod och näringsvärden per portion måste kontrolleras.",
     th: "วิธีทำใช้นมแช่หญ้าฝรั่น แต่รายการวัตถุดิบไม่ได้ระบุนมหรือปริมาณ ต้องตรวจสอบรายการวัตถุดิบ วิธีทำ และคุณค่าทางโภชนาการต่อที่",
   },
-  "jiaozi": {
-    fi: "Noin 500 g liha-kaalitäytettä sekä mausteet eivät mahdu ilmoitettuun 24 nyyttiin teelusikallisina. Täytteen ja kuorten lopullinen tuotto on tarkistettava.",
-    en: "Roughly 500 g of pork and cabbage plus seasoning cannot fit the stated 24 wrappers at one teaspoon per dumpling. Filling and wrapper yields require verification.",
-    sv: "Cirka 500 g fläsk- och kålfyllning plus kryddor ryms inte i 24 degknyten med en tesked fyllning vardera. Antal och mängder måste kontrolleras.",
-    th: "ไส้หมูและผักกาดราว 500 กรัมพร้อมเครื่องปรุงไม่สอดคล้องกับแผ่นเกี๊ยว 24 ชิ้นที่ใส่ไส้ชิ้นละหนึ่งช้อนชา ต้องตรวจสอบน้ำหนักไส้และจำนวนชิ้น",
-  },
 };
 
 export const editorialHoldRecipeIds = Object.freeze(Object.keys(holdReasons));

@@ -6,7 +6,7 @@ category: alkuruoka
 language: fi
 status: published
 servings: 4
-time_total_min: 75
+time_total_min: 90
 main_ingredient:
   - sianliha
   - kaali
@@ -19,8 +19,8 @@ tags:
   - sianliha
   - kaali
 image:
-  src: paaruoat/jiaozi.webp
-  alt: Jiaozi-dumplingit, kullanruskeat pohjat ja soijainen dippikastike
+  src: paaruoat/jiaozi-keitetty.webp
+  alt: Keitettyjä jiaozi-nyyttejä ja soijadippiä
   width: 1279
   height: 853
 ingredients:
@@ -75,18 +75,18 @@ fat_per_serving_g: 14.24
 
 # Jiaozi-dumplingit porsas-kaalitäytteellä
 
-Kotitekoiset kiinalaiset dumplingit täytetään porsaanlihalla, kaalilla ja inkiväärillä. Ne voi keittää tai paistaa rapeapohjaisiksi.
+Kotitekoiset kiinalaiset nyytit täytetään porsaanlihalla, kiinankaalilla ja inkiväärillä. Ohjeesta tulee noin 40 keitettyä nyyttiä eli noin 10 annosta kohti.
 
 ## Kuvaus
 
-Kotitekoiset kiinalaiset dumplingit täytetään porsaanlihalla, kaalilla ja inkiväärillä. Ne voi keittää tai paistaa rapeapohjaisiksi.
+Kotitekoiset kiinalaiset nyytit täytetään porsaanlihalla, kiinankaalilla ja inkiväärillä. Ohjeesta tulee noin 40 keitettyä nyyttiä eli noin 10 annosta kohti.
 
 ## Valmistus
 
 1. Sekoita jauhoihin vesi ja vaivaa tasaiseksi taikinaksi. Peitä ja anna levätä 30 minuuttia.
 2. Purista hienonnetusta kaalista ylimääräinen neste. Sekoita kaali, jauheliha, kevätsipuli, soijakastike, seesamiöljy, inkivääri ja suola.
-3. Jaa taikina 24 osaan ja kauli ohuiksi levyiksi. Laita kunkin keskelle teelusikallinen täytettä, kostuta reuna, taita puolikuuksi ja sulje tiiviisti.
-4. Keitä nyytit erissä kiehuvassa vedessä 6–8 minuuttia, kunnes ne nousevat pintaan ja täyte on kypsä. Nosta reikäkauhalla.
+3. Jaa taikina 40 palaan, noin 12 g pala. Kauli palat noin 9 cm:n levyiksi, reunat keskustaa ohuemmiksi. Jaa täyte tasan kuorille, noin 13 g kuorta kohti. Kostuta reuna tarvittaessa, taita puolikuuksi ja nipistä tiiviisti kiinni.
+4. Keitä nyytit väljässä vedessä erissä. Kun vesi kiehuu uudelleen, keitä maltillisesti noin 6–8 minuuttia. Mittaa isoimman nyytin täytteen keskeltä vähintään 71 °C. Jatka tarvittaessa kypsennystä ja nosta kypsät nyytit reikäkauhalla.
 5. Sekoita dippikastikkeeksi soijakastike ja riisiviinietikka. Tarjoa dumplingien kanssa.
 
 ## Muistiinpanot
