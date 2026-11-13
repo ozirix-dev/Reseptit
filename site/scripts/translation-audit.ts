@@ -42,7 +42,7 @@ export interface TranslationAuditResult {
   errors: string[];
 }
 
-async function markdownFiles(directory: string): Promise<string[]> {
+export async function markdownFiles(directory: string): Promise<string[]> {
   const entries = await readdir(directory, { withFileTypes: true }).catch((error: NodeJS.ErrnoException) => {
     if (error.code === "ENOENT") return [];
     throw error;
