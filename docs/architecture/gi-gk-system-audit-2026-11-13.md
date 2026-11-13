@@ -1,6 +1,6 @@
 # GI/GK-arkkitehtuurin riippumaton tilanneauditointi — 13.11.2026
 
-> **Tila: KATSELMOITAVA TUTKIMUS / EI TOTEUTUSPÄÄTÖSTÄ.** Tämä tiedosto on suunnittelun ja myöhemmän siivouksen päätösaineisto. Ei laskenta-, lähde-, tietokanta-, hyväksyntä-, julkaisu- tai Cloudflare-muutoksia. Aikataulu tarkoituksella avoin ("joskus tai jouluna").  
+> **Tila: KATSELMOITAVA TUTKIMUS / EI TOTEUTUSPÄÄTÖSTÄ.** Tämä tiedosto on suunnittelun ja myöhemmän siivouksen päätösaineisto. Ei laskenta-, lähde-, tietokanta-, hyväksyntä-, julkaisu- tai Cloudflare-muutoksia. Aikataulu tarkoituksella avoin ("joskus tai jouluna").
 > **Lähtömain:** `2293fd1851bad0574ae89430cb9ba1b184df6b8b`. **Rinnakkainen sisältö-PR:** #532; tähän PR:ään kuuluu vain uusia `docs/architecture/`-tiedostoja.
 
 ## 1. Tutkimuskysymys ja vastaus
