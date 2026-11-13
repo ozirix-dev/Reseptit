@@ -16,7 +16,7 @@ Tämä raportti on uutta V2-reseptiversiota varten tehty **uusi aritmeettinen la
 
 Taulukon luvut ovat **alustavia laskentaehdokkaita**. Esitetty total = available carbohydrate + fibre (polyolit oletettu kyseisissä Fineli/AFCD-tietueissa 0 g, kuten tuotekohtaisissa aiemmissa laskelmissa). Suolatietueen Fineli 30 lievä proteiiniarvo on huomioitu. Laskennan sääntö on `summa(raaka-ainetta g × tietueen per100g-arvo / 100) / annoksia`. 1 muna = **50 g kuorettomana** on ehdotettu punnitusoletus; 1 ml vettä = 1 g. Valmistushävikkiä ei ole mitattu; laskennassa kaikki mitatut syötävät ainekset pysyvät mukana, paitsi paistoöljyn erikseen esitetyissä ääriskenaarioissa.
 
-**Bao pidetään koko reseptin neljän makron osalta estettynä.** Tuotteeksi valittiin Lee Kum Kee Hoisin Sauce 397 g, UPC `078895700022` (EAN-13 `0078895700022`). Suomalaiset kauppatiedot: 51 g saatavilla olevaa hiilihydraattia, 1,7 g proteiinia ja 1,6 g rasvaa / 100 g sekä allergeenit **soija, vehnä ja seesami**. Kuitu ja polyolit puuttuvat ja käyttöpakkauksen erä on tarkistamatta. Kokonais-HH kuitu mukaan lukien jää puuttumaan. Taulukossa baon koko reseptin luvut jätetään tarkoituksella julkaisukelvottomiksi. <https://www.aasiamarket.fi/tuote/hoisin-sauce-fi99/>
+**Bao pidetään koko reseptin neljän makron osalta estettynä.** Tuotteeksi valittiin Lee Kum Kee Hoisin Sauce 397 g, UPC `078895700022` (EAN-13 `0078895700022`). Suomalaiset kauppatiedot: 51 g EU-merkinnän mukaista hiilihydraattia, 1,7 g proteiinia ja 1,6 g rasvaa / 100 g sekä allergeenit **soija, vehnä ja seesami**. Kuitu ja polyolit puuttuvat ja käyttöpakkauksen erä on tarkistamatta. Kokonais-HH kuitu mukaan lukien jää puuttumaan. Taulukossa baon koko reseptin luvut jätetään tarkoituksella julkaisukelvottomiksi. <https://www.aasiamarket.fi/tuote/hoisin-sauce-fi99/>
 
 ## Raaka-aineiden täsmällinen ravintolähdepohja
 
@@ -110,7 +110,7 @@ Ravintolähteet ovat [THL Fineli, API](https://fineli.fi/fineli/api/v1/foods/205
 - cucumber: 150 g — Fineli 346
 - Lee Kum Kee Hoisin Sauce: 15 g — UPC `078895700022` / EAN-13 `0078895700022`; alustavat suomalaisen jälleenmyyjän etiketin ravintoarvot.
 
-**Osittainen laskentatarkistus:** 15 g hoisinia sisältää 7,65 g saatavilla olevia hiilihydraatteja, 0,255 g proteiinia ja 0,24 g rasvaa. Kun se yhdistetään yllä lueteltuihin muihin ravintotietueisiin, on annosta kohti laskennallinen **saatavilla oleva HH 44,58 g, proteiini 13,09 g ja rasva 7,64 g**. Kokonais-HH kuitu mukaan lukien jää **tuntemattomaksi**, koska hoisinin kuitu/polyolit puuttuvat. Nämä kolme laskennan osalukua eivät ole julkaistuja hyväksyttyjä makroja; frontmatterin kaikki neljä kenttää pysyvät `null`.
+**Osittainen laskentatarkistus:** 15 g hoisinia sisältää 7,65 g EU-etiketin hiilihydraattia, 0,255 g proteiinia ja 0,24 g rasvaa. Kun se yhdistetään yllä lueteltuihin muihin ravintotietueisiin, on annosta kohti **EU-etiketin hiilihydraatit yhdistettynä muiden tietueiden saatavilla oleviin hiilihydraatteihin 44,58 g**, proteiini 13,09 g ja rasva 7,64 g. **Varmennettu netto-HH ja kokonais-HH kuitu mukaan lukien jäävät tuntemattomiksi**, koska hoisinin polyoli-/kuitutiedot puuttuvat eikä hiilihydraattimääritelmiä saa yhdistää ilman tulkintaa. Nämä kolme laskennan osalukua eivät ole julkaistuja hyväksyttyjä makroja; frontmatterin kaikki neljä kenttää pysyvät `null`.
 
 ## Kriittinen virhe alkuperäisessä aloo parathassa
 
