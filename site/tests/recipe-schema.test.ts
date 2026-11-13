@@ -117,7 +117,9 @@ test("second snack review batch matches its source ledger and cannot publish dup
     if (published.length > 0) {
       const sourcePath = `reseptit/valipalat/${recipe.id}.md`;
       const source = readFileSync(path.join(root, sourcePath), "utf8");
-      const canonical = recipeFrontmatterSchema.parse(parseMarkdown(source).data);
+      const document = parseMarkdown(source);
+      assert.ok(document, sourcePath);
+      const canonical = recipeFrontmatterSchema.parse(document.data);
       const review = JSON.parse(readFileSync(
         path.join(root, "docs/reviews/new-recipes", `${recipe.id}.json`), "utf8",
       ));
