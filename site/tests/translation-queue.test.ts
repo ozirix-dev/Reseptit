@@ -45,6 +45,7 @@ test("CI rejects a removed or invalid review and preserves required human review
   assert.deepEqual(changedReviewLedgerErrors(review.audit, {}, previous), []);
   const human = {[key]:{...proof,outcome:"human-required" as const}};
   assert.match(changedReviewLedgerErrors(review.audit,human,previous)[0], /required human review/);
+  assert.deepEqual(changedReviewLedgerErrors(review.audit,human,previous,new Set([key])), []);
   const source = review.audit.publishedSources.find(s => s.data.recipe_id === row.recipe_id)!;
   assert.equal(proof.source_hash, semanticHash(source));
 });

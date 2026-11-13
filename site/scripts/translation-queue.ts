@@ -102,7 +102,10 @@ export function translationQueue({audit, rows}: Pick<Review, "audit" | "rows">, 
   };
 }
 
-export function changedReviewLedgerErrors(audit: Audit, previous: SemanticEvidence, current: SemanticEvidence) {
+export function changedReviewLedgerErrors(
+  audit: Audit, previous: SemanticEvidence, current: SemanticEvidence,
+  humanReviewed: ReadonlySet<string> = new Set(),
+) {
   const sources = new Map(audit.publishedSources.map(source => [source.data.recipe_id, source]));
   const targets = new Map(audit.publishedTranslations.map(target => [keyOf(target.data.recipe_id, target.data.language), target]));
   const keys = new Set([...Object.keys(previous), ...Object.keys(current)]);
@@ -116,7 +119,7 @@ export function changedReviewLedgerErrors(audit: Audit, previous: SemanticEviden
     const editorialHold = editorialHoldRecipeIds.includes(target.data.recipe_id);
     if (editorialHold && status === "HUMAN REVIEW REQUIRED") return [];
     if (editorialHold && status === "REVIEW CURRENT") return [key + ": FI source has an editorial HOLD"];
-    if (previous[key]?.outcome === "human-required" && current[key]?.outcome === "pass" &&
+    if (previous[key]?.outcome === "human-required" && current[key]?.outcome === "pass" && !humanReviewed.has(key) &&
         previous[key].source_hash === current[key].source_hash && previous[key].translation_hash === current[key].translation_hash)
       return [key + ": unchanged recipe cannot supersede a required human review with a Codex pass"];
     return status === "REVIEW CURRENT" ? [] : [key + ": " + status];
@@ -143,7 +146,9 @@ export async function runQueue() {
     report = translationQueue(review, files.drafts, limit);
     if (base && !/^0+$/.test(base)) {
       const current = await loadSemanticEvidence(root);
-      report.errors.push(...changedReviewLedgerErrors(review.audit, priorLedger(base), current));
+      const humanReviewed = new Set(review.rows.filter(row => row.human_review_status === "HUMAN REVIEW COMPLETE")
+        .map(row => keyOf(row.recipe_id, row.locale)));
+      report.errors.push(...changedReviewLedgerErrors(review.audit, priorLedger(base), current, humanReviewed));
     }
   } catch (error) {
     const message = error instanceof Error ? error.message : String(error);
