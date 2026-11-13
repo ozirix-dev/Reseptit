@@ -35,6 +35,14 @@ PR:n CI vertaa GitHubin testiyhdistämistä sen main-pohjaan. Portti tunnistaa u
 
 **HUOM:** tämä on *evidenssin olemassaoloa ja versionmukaisuutta* tarkistava pakollinen portti. Menetelmä-/ainesosakysymysten semanttista totuutta ei voi vahvistaa pelkällä JSON-tarkistimella; PR #366:n kokkikelpoisuusmenetelmästä ja #358:n ainesosaristiriita-auditoinnista on tarkoitus rakentaa seuraava automaattinen varoitus-/HOLD-vaihe. Tätä PR:ää ei saa esittää noiden pilotin tulosten korvaajana.
 
+## Karanteenista palautettavan reseptin osoite
+
+Lisää seuraajan ID ja vanha slug sekä edeltäjän ID, polku ja Git-blob-SHA
+[seuraajarekisteriin](../../meta/recipe-successors.json). Edeltäjän ID säilyy
+julkisessa karanteeniluettelossa. Uuden reseptin arvioon kirjataan sama
+edeltäjä kentässä `supersedes_quarantined`. Uuden reseptin oma SHA,
+ravintolaskenta ja GK-päätös tarkistetaan sen julkaisuversion perusteella.
+
 ## Regressio ja kustannusten hallinta
 
 - Uusi resepti ilman hyväksyntää -> **HOLD**.

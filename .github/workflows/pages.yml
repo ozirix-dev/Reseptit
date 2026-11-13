@@ -11,6 +11,7 @@ on:
       - "docs/nutrition/**"
       - "docs/research/**"
       - "meta/kaannokset/**"
+      - "meta/recipe-successors.json"
       - ".github/dependabot.yml"
       - ".github/workflows/pages.yml"
   pull_request:
@@ -106,7 +107,7 @@ jobs:
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 
       - name: Pre-publication editorial evidence for new FI recipes
-        if: steps.select.outputs.full == 'true' || contains(steps.select.outputs.changed_paths, 'reseptit/') || contains(steps.select.outputs.changed_paths, 'new-recipe-preflight')
+        if: steps.select.outputs.full == 'true' || contains(steps.select.outputs.changed_paths, 'reseptit/') || contains(steps.select.outputs.changed_paths, 'new-recipe-preflight') || contains(steps.select.outputs.changed_paths, 'recipe-successors.json')
         env:
           BASE_SHA: ${{ github.event.before }}
           EVENT_NAME: ${{ github.event_name }}
