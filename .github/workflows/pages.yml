@@ -193,6 +193,22 @@ jobs:
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
         working-directory: site
 
+      - name: Check translation approvals and generate the work queue
+        if: steps.select.outputs.run_content == 'true' || steps.select.outputs.run_translation_review == 'true'
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before || github.sha }}
+        run: npm run queue:translations -- --base="$BASE_SHA"
+        working-directory: site
+
+      - name: Upload the translation work queue
+        if: ${{ !cancelled() && (steps.select.outputs.run_content == 'true' || steps.select.outputs.run_translation_review == 'true') }}
+        uses: actions/upload-artifact@v7
+        with:
+          name: translation-queue
+          path: tmp/translation-review/queue.json
+          if-no-files-found: ignore
+          retention-days: 14
+
       - name: Check new recipes for semantic duplicates (advisory)
         if: steps.select.outputs.run_content == 'true'
         env:
