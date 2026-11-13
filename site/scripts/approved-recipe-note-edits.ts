@@ -373,17 +373,19 @@ const editorialSnapshots: Readonly<Record<string, {
     ],
   },
   "reseptit/aamupalat/kaakao-kookos-chia.md": {
-    currentSha256: "33e88aa048db2a3aae4fbbc40364923645986f11a826afd9ec667edc7b6dd9f7",
+    currentSha256: "d0a2d87fa49b2bdb9448b4f7b4d09cd259f70d36723f933aeeef85a0f0f4ef4b",
     inverseEdits: [
-      [65, 1, "1. Vatkaa kaakaojauhe pieneen tilkkaan kookosjuomaa tasaiseksi. Lisää loput juomasta, kerma, chia ja vanilja.\n"],
-      [7, 2, ""],
+      [65,1,"1. Vatkaa kaakaojauhe pieneen tilkkaan kookosjuomaa tasaiseksi. Lisää loput juomasta, kerma, chia ja vanilja.\n"],
+      [13,1,"  - kypsentäminen\n"],
+      [7,2,""],
     ],
   },
   "reseptit/aamupalat/marjainen-chiavanukas.md": {
-    currentSha256: "ca4a5e2700eaaacbf693a88e8e34a99f5893800202e2a85c3138bb95ef84c427",
+    currentSha256: "b02c4d4613f83fd3d045b5c72a7f5a07ae0cdfcea5691c386c5fe0c5d828d954",
     inverseEdits: [
-      [68, 1, "4. Jaa annoskulhoihin ja lisää marjat juuri ennen tarjoamista.\n"],
-      [7, 2, ""],
+      [68,1,"4. Jaa annoskulhoihin ja lisää marjat juuri ennen tarjoamista.\n"],
+      [13,1,"  - kypsentäminen\n"],
+      [7,2,""],
     ],
   },
   "reseptit/jalkiruoat/marjakiisseli-vaniljakastikkeella.md": {

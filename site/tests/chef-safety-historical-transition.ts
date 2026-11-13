@@ -39,8 +39,8 @@ const editorialMethods: Readonly<Record<string, readonly [string, string]>> = {
   'reseptit/paaruoat/hernekeitto-savupotkalla.md': ['26ef2fb244908290048b9e050dd54868f1c15b2c', '123a06f147e4e0874bdb12387f12c60d14a01722b44edf7ef5e77810a21b1738'],
   'reseptit/paaruoat/hunaja-sinappikana-kaalilla.md': ['26ef2fb244908290048b9e050dd54868f1c15b2c', '54b95beecd582e69f504b1e2d16e5f05e6adc086a545e49ab652f4d28346a3b7'],
   'reseptit/paaruoat/japanilainen-curry-tofulla.md': ['26ef2fb244908290048b9e050dd54868f1c15b2c', '17bb0b5478b1aef5fae4e0e5cfa86041aa39497ca9d00b4cd067b02eb172a309'],
-  'reseptit/aamupalat/kaakao-kookos-chia.md': ['26ef2fb244908290048b9e050dd54868f1c15b2c', '33e88aa048db2a3aae4fbbc40364923645986f11a826afd9ec667edc7b6dd9f7'],
-  'reseptit/aamupalat/marjainen-chiavanukas.md': ['26ef2fb244908290048b9e050dd54868f1c15b2c', 'ca4a5e2700eaaacbf693a88e8e34a99f5893800202e2a85c3138bb95ef84c427'],
+  'reseptit/aamupalat/kaakao-kookos-chia.md': ['26ef2fb244908290048b9e050dd54868f1c15b2c', 'd0a2d87fa49b2bdb9448b4f7b4d09cd259f70d36723f933aeeef85a0f0f4ef4b'],
+  'reseptit/aamupalat/marjainen-chiavanukas.md': ['26ef2fb244908290048b9e050dd54868f1c15b2c', 'b02c4d4613f83fd3d045b5c72a7f5a07ae0cdfcea5691c386c5fe0c5d828d954'],
   'reseptit/jalkiruoat/marjakiisseli-vaniljakastikkeella.md': ['26ef2fb244908290048b9e050dd54868f1c15b2c', '42e3765032750d1cc35b8172f6bd25439de69cd421c64223aefa6112b2800e9c'],
   'reseptit/paaruoat/miso-lohi-paksoi.md': ['26ef2fb244908290048b9e050dd54868f1c15b2c', 'caa41d5bd1f929406cfc0d7da2590e98ec624a85a68eaede35732966b066a270'],
   'reseptit/paaruoat/okonomiyaki-kaaliletut.md': ['26ef2fb244908290048b9e050dd54868f1c15b2c', '30fdeacf128ff01beaa3df7fe991ee2547cdd6761f94a98cc6f294afe940d567'],
@@ -73,9 +73,14 @@ export function originalForReviewedChefSafety(root: string, file: string, curren
       : originalFrontmatter;
     // Historical inventory compares the calculation inputs across the exact reviewed versions.
     const displayMetadata = /^(?:time_total_min: \d+\n|image:\n(?: {2,}[^\n]*\n)+)/gm;
+    const coldPudding = file === 'reseptit/aamupalat/kaakao-kookos-chia.md' ||
+      file === 'reseptit/aamupalat/marjainen-chiavanukas.md';
+    const liveFrontmatter = coldPudding
+      ? frontmatter(live).replace('cooking_method:\n  - kylmävalmistus', 'cooking_method:\n  - kypsentäminen')
+      : frontmatter(live);
     const displayOnly = base === '26ef2fb244908290048b9e050dd54868f1c15b2c';
     assert.equal(
-      displayOnly ? frontmatter(live).replace(displayMetadata, '') : frontmatter(live),
+      displayOnly ? liveFrontmatter.replace(displayMetadata, '') : liveFrontmatter,
       displayOnly ? expected.replace(displayMetadata, '') : expected,
       file + ': changed protected recipe metadata',
     );

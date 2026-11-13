@@ -11,7 +11,7 @@ main_ingredient:
   - chia
   - kookos
 cooking_method:
-  - kypsentäminen
+  - kylmävalmistus
 tags:
   - aamupala
   - chia

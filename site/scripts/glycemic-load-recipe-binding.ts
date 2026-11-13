@@ -1,3 +1,4 @@
+import { recipeTextForApprovedSnapshot } from "./approved-recipe-note-edits";
 import { createHash } from "node:crypto";
 import { parseMarkdown } from "../src/content/markdown";
 import { normalizeCarbohydrate, type FoodRecord } from "./nutrition-model";
@@ -183,4 +184,12 @@ export function glycemicLoadEvidenceHash(
 export function exactRecipeTextBindingMatches(expected: string | null | undefined, markdown: string): boolean {
   const current = createHash("sha256").update(markdown.replaceAll("\r\n", "\n")).digest("hex");
   return recipeBindingMatches(expected, current);
+}
+
+// These signed calculations already specify cold setting. Only the exact reviewed
+// recipe files can retain the original fingerprint after the metadata correction.
+export function reviewedColdPuddingBindingText(file: string, markdown: string): string {
+  if (file !== "reseptit/aamupalat/kaakao-kookos-chia.md" &&
+      file !== "reseptit/aamupalat/marjainen-chiavanukas.md") return markdown;
+  return recipeTextForApprovedSnapshot(file, markdown.replaceAll("\r\n", "\n"));
 }

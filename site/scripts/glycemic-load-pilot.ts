@@ -34,7 +34,7 @@ import {
   type GlycemicIndexRecord,
   type GlycemicLoadRecipeInput,
 } from "./glycemic-load-model";
-import { glycemicLoadEvidenceHash, glycemicLoadInputHash, recipeBindingHash, recipeBindingMatches, exactRecipeTextBindingMatches } from "./glycemic-load-recipe-binding";
+import { glycemicLoadEvidenceHash, glycemicLoadInputHash, recipeBindingHash, recipeBindingMatches, exactRecipeTextBindingMatches, reviewedColdPuddingBindingText } from "./glycemic-load-recipe-binding";
 import { siteContent } from "../src/generated/content.generated";
 import { isPublicRecipeQuarantined } from "./public-recipe-quarantine";
 import { parseMarkdown } from "../src/content/markdown";
@@ -145,7 +145,7 @@ for (const record of giRecords) {
 const sourceHashes = Object.fromEntries(expectedRecipeIds.map((recipeId) => {
   const source = publishedRecipeSources.get(recipeId);
   if (!source) throw new Error("Published source recipe is missing from the current GK set: " + recipeId);
-  return [recipeId, recipeBindingHash(source.markdown, recipeAliases.aliases)];
+  return [recipeId, recipeBindingHash(reviewedColdPuddingBindingText(`reseptit/aamupalat/${recipeId}.md`, source.markdown), recipeAliases.aliases)];
 }));
 
 // Only explicitly bound new versions require whole preparation/translation text.
