@@ -52,5 +52,5 @@ test("kikherne V2 nutrition is bound to exact draft ingredients without changing
   }
   assert.equal(isPublicRecipeQuarantined("valimerellinen-kikherne-yrttiaamiainen"), true);
   const old = read(originalPath);
-  assert.equal(createHash("sha1").update(`blob ${Buffer.byteLength(old)}\\0`).update(old).digest("hex"), "33923cc854eabc27c7905db024c3b2e7d9ca44ab");
+  assert.equal(createHash("sha1").update(`blob ${Buffer.byteLength(old)}\0`).update(old).digest("hex"), "33923cc854eabc27c7905db024c3b2e7d9ca44ab");
 });
