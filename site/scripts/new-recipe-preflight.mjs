@@ -16,6 +16,32 @@ const isRecipePath = (file) => RECIPE_PATH.test(file) && path.posix.normalize(fi
 const ID = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 const REQUIRED_CHECKS = ['duplicates', 'ingredients', 'method', 'food_safety', 'servings_and_time', 'nutrition', 'glycemic'];
 
+// A single, exact successor of an existing historical quarantine. Both the
+// predecessor identity and original blob SHA must match; all other duplicate
+// URL slugs remain forbidden.
+const allowedHistoricalSuccessor = Object.freeze({
+  recipe_id: 'valimerellinen-kikherne-yrttiaamiainen-punnittu-v2',
+  url_slug: 'valimerellinen-kikherne-yrttiaamiainen',
+  predecessor_id: 'valimerellinen-kikherne-yrttiaamiainen',
+  predecessor_path: 'reseptit/aamupalat/valimerellinen-kikherne-yrttiaamiainen.md',
+  predecessor_blob_sha: '33923cc854eabc27c7905db024c3b2e7d9ca44ab',
+});
+
+function reviewedHistoricalSuccessor(identity, previous, review) {
+  const fixed = allowedHistoricalSuccessor;
+  const claim = review?.supersedes_quarantined;
+  return identity.recipe_id === fixed.recipe_id &&
+    identity.url_slug === fixed.url_slug &&
+    previous.path === fixed.predecessor_path &&
+    previous.recipe_id === fixed.predecessor_id &&
+    previous.url_slug === fixed.url_slug &&
+    previous.status === 'published' &&
+    previous.source_git_blob_sha === fixed.predecessor_blob_sha &&
+    claim?.recipe_id === fixed.predecessor_id &&
+    claim?.source_path === fixed.predecessor_path &&
+    claim?.source_git_blob_sha === fixed.predecessor_blob_sha;
+}
+
 export function hashContent(value) {
   return createHash('sha256').update(value).digest('hex');
 }
@@ -54,7 +80,8 @@ export function validateReview(recipePath, source, review, allRecipes = []) {
   if (!isRecipePath(recipePath) || !ID.test(identity.recipe_id)) errors.push('invalid canonical FI recipe path or ID');
   if (identity.language !== 'fi' || identity.status !== 'published') errors.push('expected published Finnish source');
   const occurrences = allRecipes.filter((row) => row.path !== recipePath &&
-    (row.recipe_id === identity.recipe_id || row.url_slug === identity.url_slug));
+    (row.recipe_id === identity.recipe_id || row.url_slug === identity.url_slug) &&
+    !reviewedHistoricalSuccessor(identity, row, review));
   if (occurrences.length) errors.push('recipe_id/url_slug already exists: ' + occurrences.map((r) => r.path).join(', '));
   if (!review || typeof review !== 'object' || Array.isArray(review)) return [...errors, 'review evidence missing'];
   if (review.schema_version !== 1 || review.decision !== 'approved') errors.push('review decision is not approved (schema_version=1)');
@@ -121,7 +148,11 @@ function reviewFile(root, recipePath, id) {
 function inventory(root) {
   const items = [];
   for (const file of listRecipes(root)) {
-    try { items.push({ path: file, ...readRecipeIdentity(readFileSync(path.join(root, file), 'utf8')) }); }
+    try {
+      const source = readFileSync(path.join(root, file), 'utf8');
+      const sha = createHash('sha1').update('blob ' + Buffer.byteLength(source, 'utf8') + '\0').update(source).digest('hex');
+      items.push({ path: file, ...readRecipeIdentity(source), source_git_blob_sha: sha });
+    }
     catch { /* The existing content validator reports malformed legacy files. */ }
   }
   return items;

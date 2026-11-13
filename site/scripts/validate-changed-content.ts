@@ -15,6 +15,7 @@ import { assertSnackPublicationReady } from "../src/content/recipe-validation";
 import { parseMarkdown, renderInstructionSteps, renderSafeMarkdown } from "../src/content/markdown";
 import { recipeFrontmatterSchema } from "../src/content/schema";
 import { assertKarnivoreDraftSafe, assertKarnivoreTranslationReady } from "./karnivore-draft-gate";
+import { isPublicRecipeQuarantined } from "./public-recipe-quarantine";
 
 const siteDir = path.resolve(import.meta.dirname, "..");
 const repoRoot = path.resolve(siteDir, "..");
@@ -174,6 +175,9 @@ if (changedRoutes.length > 0) {
   for (const filename of collectionFiles) {
     const parsed = parseMarkdown(await readFile(filename, "utf8"));
     if (parsed?.data.status !== "published") continue;
+    // Match the real public route builder: a quarantined historical FI source
+    // has no public URL and cannot collide with a reviewed published successor.
+    if (isPublicRecipeQuarantined(String(parsed.data.recipe_id ?? ""))) continue;
     const { recipe_id, language, url_slug } = parsed.data;
     if (typeof recipe_id !== "string" || typeof language !== "string" || typeof url_slug !== "string") continue;
     publishedRoutes.push({

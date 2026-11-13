@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "recipe_id": "valimerellinen-kikherne-yrttiaamiainen-punnittu-v2",
+  "source_path": "reseptit/aamupalat/valimerellinen-kikherne-yrttiaamiainen-punnittu-v2.md",
+  "source_sha256": "ef97508a8d279cb8866e4c9c20fdf54038daa60dc97138c1a8730336906daf86",
+  "decision": "approved",
+  "reviewed_by": "AI editorial reviewer (GPT-6)",
+  "reviewed_at": "2026-11-13",
+  "origin": {
+    "kind": "original",
+    "sources": []
+  },
+  "supersedes_quarantined": {
+    "recipe_id": "valimerellinen-kikherne-yrttiaamiainen",
+    "source_path": "reseptit/aamupalat/valimerellinen-kikherne-yrttiaamiainen.md",
+    "source_git_blob_sha": "33923cc854eabc27c7905db024c3b2e7d9ca44ab"
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/valimerellinen-kikherne-yrttiaamiainen-punnittu-v2.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "The predecessor alone holds the same slug, and its exact original blob SHA is sealed in public quarantine; no other recipe ID or visible URL collision is permitted."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Seven quantified rows checked against the exact V2 recipe: 100 g cooked drained chickpeas, 150 g cucumber, 8 g parsley, 20 g lemon juice, 10 g olive oil, two peeled eggs at 50 g each, 1 g salt."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Beans must be cooked before the 20-minute recipe starts; eggs are fully boiled, the lemon-oil dressing is fully consumed, and no unlisted topping is introduced."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Dried chickpeas require separate proper soaking and cooking before use. Eggs are hard-boiled throughout. No raw legume or runny egg consumption is instructed."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Two plated bowls, one fully boiled egg per bowl. The 20-minute duration applies only to pre-cooked chickpeas; egg mass is explicitly a model assumption."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "The independent Fineli 11089/346/333/11557/536/858/30 calculation is bound to the exact V2 ingredient source hash; published four macros are reproducible and variation disclosed."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "No exact source- and preparation-matched GI calculation has been approved for this version; GK is explicitly unavailable, not zero or an analogical estimate."
+    }
+  }
+}
