@@ -54,11 +54,6 @@ ingredients:
 servings: 4
 time_total_min: 180
 difficulty: Helppo
-image:
-  src: paaruoat/carnitas-salaattitacot.webp
-  alt: Hitaasti haudutetut carnitas-salaattitacot tarjoiltuna
-  width: 1536
-  height: 1024
 carbs_net_per_serving_g: 4.9
 carbs_total_per_serving_g: 7.4
 protein_per_serving_g: 36.94

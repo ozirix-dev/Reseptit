@@ -40,7 +40,7 @@ Pehmeä vaniljapannacotta valmistuu muutamasta aineksesta ja hyytyy jääkaapiss
 2. Kuumenna kerma, maito, sokeri ja vaniljasokeri kattilassa höyryäväksi. Älä keitä.
 3. Nosta kattila liedeltä. Purista liivatelehdistä vesi ja liuota ne kuumaan kerma-maitoseokseen.
 4. Jaa seos kuuteen tarjoiluastiaan ja jäähdytä. Peitä ja anna hyytyä jääkaapissa vähintään 4 tuntia.
-5. Kuumenna marjat ja sokeri pienessä kattilassa. Hauduta 5 minuuttia, mausta sitruunamehulla ja jäähdytä.
+5. Kuumenna pakastemarjat ja sokeri pienessä kattilassa kiehuviksi. Keitä vähintään 2 minuuttia ja anna sitten poreilla miedolla lämmöllä vielä 3 minuuttia. Mausta sitruunamehulla ja jäähdytä.
 6. Lusikoi kastike pannacottien päälle ennen tarjoilua.
 
 ## Muistiinpanot

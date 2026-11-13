@@ -156,7 +156,8 @@ export function knownTermErrors(source: Frontmatter, target: Frontmatter, locale
 }
 
 export function projectTranslationAuditSource(file: string, raw: string): string {
-  if (file === "reseptit/aamupalat/lahi-ita-manakish-zaatarilla.md" ||
+  if (file === "reseptit/aamupalat/indialainen-poha-maapahkinoilla.md" ||
+      file === "reseptit/aamupalat/lahi-ita-manakish-zaatarilla.md" ||
       file === "reseptit/aamupalat/valimerellinen-halloumi-tomaattileipa.md")
     return projectC13FiDisplay(file, raw);
   return projectBreakfastFiQualityDisplay(file, raw);
@@ -169,9 +170,10 @@ export async function auditTranslations(recipeIds?: string[]): Promise<Translati
   // Use the exact SHA-locked public FI display when auditing meaning and
   // generating source semantic hashes for translations. Raw FI files stay
   // untouched for the separate nutrition/GK and source-blob validation.
-  // C13 is used for the two newly translated sources with reviewed public methods.
+  // C13 is used for the recipes whose translations follow the reviewed public methods.
   const publicSources = await Promise.all(rawSources.map(async (source) => {
-    const useC13Display = source.path === "reseptit/aamupalat/lahi-ita-manakish-zaatarilla.md" ||
+    const useC13Display = source.path === "reseptit/aamupalat/indialainen-poha-maapahkinoilla.md" ||
+      source.path === "reseptit/aamupalat/lahi-ita-manakish-zaatarilla.md" ||
       source.path === "reseptit/aamupalat/valimerellinen-halloumi-tomaattileipa.md";
     if (!useC13Display && !breakfastFiQualityPaths.includes(source.path)) return source;
     const raw = await readFile(path.join(repoRoot, source.path), "utf8");

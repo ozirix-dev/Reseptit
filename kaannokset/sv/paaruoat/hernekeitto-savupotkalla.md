@@ -40,7 +40,7 @@ ingredients:
     unit: msk
     item: senap till servering
 servings: 4
-time_total_min: 750
+time_total_min: 840
 difficulty: lätt
 image:
   src: paaruoat/hernekeitto-savupotkalla.webp

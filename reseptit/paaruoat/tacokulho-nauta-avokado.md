@@ -50,11 +50,6 @@ ingredients:
 servings: 4
 time_total_min: 25
 difficulty: Helppo
-image:
-  src: paaruoat/tacokulho-nauta-avokado.webp
-  alt: Taco-kulho naudanlihalla ja avokadolla tarjoiltuna
-  width: 1536
-  height: 1024
 carbs_net_per_serving_g: 2.71
 carbs_total_per_serving_g: 5.28
 protein_per_serving_g: 31.27

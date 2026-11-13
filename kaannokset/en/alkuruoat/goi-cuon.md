@@ -80,7 +80,7 @@ Rice paper holds shrimp, pork, noodles and fresh herbs. Serve the rolls with a p
 1. Gently simmer the pork slices in water for 15–20 minutes, until cooked through. Lift them out, let them cool and slice thinly.
 2. Boil the shrimp until cooked, cool them and halve them lengthways. Cook the rice vermicelli according to the package directions, then rinse with cold water.
 3. Mix the peanut butter, hoisin sauce, warm water and lime juice into a smooth dip. Add water if needed.
-4. Quickly dip a rice-paper wrapper in lukewarm water and lay it on a damp surface. Put lettuce, noodles, bean sprouts, mint and pork in the centre.
+4. Cook the bean sprouts through in boiling water, drain and cool them quickly. Dip a rice-paper wrapper briefly in lukewarm water and lay it on a damp surface. Add lettuce, noodles, cooked sprouts, mint and pork.
 5. Fold the sides over the filling, roll once and position the shrimp halves so they will show through. Finish rolling snugly.
 6. Serve the rolls fresh with the peanut dip.
 

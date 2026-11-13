@@ -36,7 +36,7 @@ ingredients:
     unit: tbsp
     item: lemon juice
 servings: 10
-time_total_min: 90
+time_total_min: 330
 difficulty: medium
 tags:
   - dessert

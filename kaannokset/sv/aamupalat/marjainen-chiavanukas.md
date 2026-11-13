@@ -64,7 +64,7 @@ Blanda chiapuddingen kvällen före. Bären ger friskhet och yoghurten ger en le
 1. Blanda chiafrön, mandeldryck och vanilj i en skål. Låt stå i 10 minuter och rör sedan om igen så att det inte bildas klumpar.
 2. Täck skålen och ställ den i kylen i minst fyra timmar, helst över natten.
 3. Rör ner yoghurten i puddingen och söta om du vill.
-4. Fördela i portionsskålar och lägg på bären precis före servering.
+4. Fördela i portionsskålar och lägg på bären precis före servering. Om du använder importerade frysta bär, koka dem först i 2 minuter och låt dem svalna.
 
 ## Anteckningar
 

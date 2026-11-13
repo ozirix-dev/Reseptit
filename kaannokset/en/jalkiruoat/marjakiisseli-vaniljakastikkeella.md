@@ -77,7 +77,7 @@ Berry kissel is a familiar Finnish dessert. Serve it chilled with silky homemade
 
 ## Preparation
 
-1. Heat the water and the sugar for the kissel in a saucepan. Add the berries and boil for a few minutes.
+1. Heat the water and sugar for the kissel in a saucepan. Add the frozen berries, bring back to the boil and boil for at least 2 minutes.
 2. Mix the potato starch with the cold water. Remove the saucepan from the heat and pour in the starch slurry in a thin stream, stirring as you pour.
 3. Heat the kissel until the first bubbles rise. Do not let it boil vigorously. Pour into a serving dish and sprinkle a little sugar on top to prevent a skin from forming. Let cool.
 4. Whisk the yolks and sugar until pale. Heat the cream and milk with the vanilla sugar until almost boiling.

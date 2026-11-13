@@ -82,7 +82,7 @@ Pad see ew steks bäst i het panna i små omgångar. Torka konjaknudlarna väl s
 
 ## Tillagning
 
-1. Skölj nudlarna noga och låt rinna av. Stek dem torra i het panna i 3–4 minuter. Flytta åt sidan.
+1. Skölj konjaknudlarna noga och låt dem rinna av. Stek dem i en het panna utan olja i 3–4 minuter och lägg dem sedan i en skål.
 2. Blanda sojasåserna, ostronsåsen och erytritolen i en liten skål.
 3. Hetta upp hälften av oljan i en wok. Stek kycklingstrimlorna tills de är genomstekta och ställ åt sidan.
 4. Tillsätt resten av oljan och vitlöken. Knäck äggen i pannan och blanda snabbt.

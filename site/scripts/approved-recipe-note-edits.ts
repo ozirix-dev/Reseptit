@@ -324,12 +324,121 @@ const editorialSnapshots: Readonly<Record<string, {
       [23, 1, "  alt: ข้าวซอยเส้นบุกในน้ำแกงกะทิ ใส่เนื้อไก่ไม่มีกระดูก หอมแดงสด และผักกาดดอง\n"],
     ],
   },
-  "reseptit/aamupalat/indialainen-poha-maapahkinoilla.md": {
-    currentSha256: "5fc1ccc4d6c48268325313fa6e5075d9a9bcf5d8f97943758aba6da8ab906dbd",
-    inverseEdits: [[7, 2, ""]],
+  "kaannokset/en/paaruoat/pad-see-ew-vhh-konjac.md": {
+    currentSha256: "4ea70ab91951cc3d4551821dbf3ee35507447a7aacfabefae65a0ae8fe9d23d5",
+    inverseEdits: [
+      [84, 1, "1. Rinse the noodles thoroughly and drain. Dry fry them in a hot pan for 3–4 minutes. Move aside.\n"],
+    ],
+  },
+  "kaannokset/sv/paaruoat/pad-see-ew-vhh-konjac.md": {
+    currentSha256: "c152f6ff421c9ce20ad335f30818b87f8cb8d1681987519977cabd955446fd1b",
+    inverseEdits: [
+      [84, 1, "1. Skölj nudlarna noga och låt rinna av. Stek dem torra i het panna i 3–4 minuter. Flytta åt sidan.\n"],
+    ],
+  },
+  "kaannokset/th/paaruoat/pad-see-ew-vhh-konjac.md": {
+    currentSha256: "98a43cd4a08ba152b81aacc4d89fe194ea05f7f69c4a734ddc3ce976154becc1",
+    inverseEdits: [
+      [86, 1, "3. ตั้งน้ำมันให้ร้อนครึ่งหนึ่งในกระทะ ทอดไก่จนสุกแล้วพักไว้\n"],
+      [84, 1, "1. ล้างเส้นให้สะอาดแล้วสะเด็ดน้ำ ทอดให้แห้งในกระทะร้อนประมาณ 3-4 นาที ย้ายกัน.\n"],
+    ],
+  },
+  "reseptit/alkuruoat/goi-cuon.md": {
+    currentSha256: "339870e73960d81ef8c6de90840b940faae96cfb2268b4f7b933e0022cb0da1f",
+    inverseEdits: [
+      [39, 1, "4. Kasta riisipaperi nopeasti haaleaan veteen ja nosta kostealle alustalle. Aseta keskelle salaatti, nuudeleita, pavunituja, minttua ja porsasta.\n"],
+      [7, 2, ""],
+    ],
+  },
+  "reseptit/paaruoat/hernekeitto-savupotkalla.md": {
+    currentSha256: "123a06f147e4e0874bdb12387f12c60d14a01722b44edf7ef5e77810a21b1738",
+    inverseEdits: [
+      [44, 1, "time_total_min: 750\n"],
+      [7, 2, ""],
+    ],
+  },
+  "reseptit/paaruoat/hunaja-sinappikana-kaalilla.md": {
+    currentSha256: "54b95beecd582e69f504b1e2d16e5f05e6adc086a545e49ab652f4d28346a3b7",
+    inverseEdits: [
+      [69, 4, "1. Kuumenna uuni 210 asteeseen. Leikkaa kaali lohkoiksi ja aseta pellille broilerin kanssa.\n2. Sekoita sinappi, hunaja, öljy, valkosipulijauhe ja paprika. Valele broileri ja kaali.\n3. Mausta suolalla ja pippurilla. Paahda 35–40 minuuttia ja käännä kaali kerran.\n4. Sekoita dijonsinappi, hunaja, oliiviöljy, valkosipulijauhe ja paprikajauhe. Leikkaa broileri suupaloiksi ja kaali lohkoiksi, kääntele mausteseoksessa ja paahda uunissa, kunnes broileri on läpikypsää ja kaali pehmeää.\n"],
+      [7, 2, ""],
+    ],
+  },
+  "reseptit/paaruoat/japanilainen-curry-tofulla.md": {
+    currentSha256: "17bb0b5478b1aef5fae4e0e5cfa86041aa39497ca9d00b4cd067b02eb172a309",
+    inverseEdits: [
+      [71, 1, "5. Tarjoa tofu-curry kukkakaaliriisin kanssa.\n"],
+      [50, 1, "  src: paaruoat/japanilainen-curry-tofulla.webp\n"],
+      [7, 2, ""],
+    ],
   },
   "reseptit/aamupalat/kaakao-kookos-chia.md": {
-    currentSha256: "18f096352da86a56eebc5f14fcbf62918c400a8b1b76521a4c84ddb134358fa9",
+    currentSha256: "33e88aa048db2a3aae4fbbc40364923645986f11a826afd9ec667edc7b6dd9f7",
+    inverseEdits: [
+      [65, 1, "1. Vatkaa kaakaojauhe pieneen tilkkaan kookosjuomaa tasaiseksi. Lisää loput juomasta, kerma, chia ja vanilja.\n"],
+      [7, 2, ""],
+    ],
+  },
+  "reseptit/aamupalat/marjainen-chiavanukas.md": {
+    currentSha256: "ca4a5e2700eaaacbf693a88e8e34a99f5893800202e2a85c3138bb95ef84c427",
+    inverseEdits: [
+      [68, 1, "4. Jaa annoskulhoihin ja lisää marjat juuri ennen tarjoamista.\n"],
+      [7, 2, ""],
+    ],
+  },
+  "reseptit/jalkiruoat/marjakiisseli-vaniljakastikkeella.md": {
+    currentSha256: "42e3765032750d1cc35b8172f6bd25439de69cd421c64223aefa6112b2800e9c",
+    inverseEdits: [
+      [40, 1, "1. Kuumenna vesi ja kiisselin sokeri kattilassa. Lisää marjat ja keitä muutama minuutti.\n"],
+    ],
+  },
+  "reseptit/paaruoat/miso-lohi-paksoi.md": {
+    currentSha256: "caa41d5bd1f929406cfc0d7da2590e98ec624a85a68eaede35732966b066a270",
+    inverseEdits: [
+      [47, 1, "  src: paaruoat/miso-lohi-paksoi.webp\n"],
+    ],
+  },
+  "reseptit/paaruoat/okonomiyaki-kaaliletut.md": {
+    currentSha256: "30fdeacf128ff01beaa3df7fe991ee2547cdd6761f94a98cc6f294afe940d567",
+    inverseEdits: [
+      [49, 0, "image:\n  src: paaruoat/okonomiyaki-kaaliletut.webp\n  alt: Okonomiyaki-tyyliset kaaliletut tarjoiltuna\n  width: 1536\n  height: 1024\n"],
+    ],
+  },
+  "reseptit/jalkiruoat/pannacotta-marjakastikkeella.md": {
+    currentSha256: "e40c29b6f1e30daad9231ad833376cc64d8d4080d54dc59c7a6722b4bfc4e89b",
+    inverseEdits: [
+      [42, 1, "5. Kuumenna marjat ja sokeri pienessä kattilassa. Hauduta 5 minuuttia, mausta sitruunamehulla ja jäähdytä.\n"],
+    ],
+  },
+  "reseptit/aamupalat/savulohi-avokadokulho.md": {
+    currentSha256: "f93a416a19143264ad1c2d36c7cdaef456309d2a958c2b20a137360e6a3413c2",
+    inverseEdits: [
+      [71, 1, "4. Lisää kastike ja tarjoa heti.\n"],
+      [7, 2, ""],
+    ],
+  },
+  "reseptit/paaruoat/tacokulho-nauta-avokado.md": {
+    currentSha256: "3a5735d1348748d901a258a7498d87e825950f96ce66cfa48d434dcdc287863b",
+    inverseEdits: [
+      [52, 0, "image:\n  src: paaruoat/tacokulho-nauta-avokado.webp\n  alt: Taco-kulho naudanlihalla ja avokadolla tarjoiltuna\n  width: 1536\n  height: 1024\n"],
+      [7, 2, ""],
+    ],
+  },
+  "reseptit/jalkiruoat/vhh-juustokakku.md": {
+    currentSha256: "d6d79e6e9dace0348cc7cd8d3d935ca9c5040dd08864a12a429bbd9491873573",
+    inverseEdits: [
+      [22, 1, "time_total_min: 90\n"],
+      [7, 2, ""],
+    ],
+  },
+  "reseptit/paaruoat/carnitas-salaattitacot.md": {
+    currentSha256: "100008a32d28768f59401b356d3d76a026275119f274256282e2e1019d8ec2e1",
+    inverseEdits: [
+      [56, 0, "image:\n  src: paaruoat/carnitas-salaattitacot.webp\n  alt: Hitaasti haudutetut carnitas-salaattitacot tarjoiltuna\n  width: 1536\n  height: 1024\n"],
+    ],
+  },
+  "reseptit/aamupalat/indialainen-poha-maapahkinoilla.md": {
+    currentSha256: "5fc1ccc4d6c48268325313fa6e5075d9a9bcf5d8f97943758aba6da8ab906dbd",
     inverseEdits: [[7, 2, ""]],
   },
   "reseptit/aamupalat/kiinalainen-riisipuuro-kananmunalla.md": {
@@ -352,10 +461,6 @@ const editorialSnapshots: Readonly<Record<string, {
     currentSha256: "4d4a7197991bde1cc03541052c83d45be15f9b9ba81954c539ceaf1b684dcf91",
     inverseEdits: [[7, 2, ""]],
   },
-  "reseptit/aamupalat/marjainen-chiavanukas.md": {
-    currentSha256: "f8603ab9d3d0d5aff3e4a215da3df5fd30ae59ac881c512fd108878b436fb7dd",
-    inverseEdits: [[7, 2, ""]],
-  },
   "reseptit/aamupalat/munakasrulla-pinaatti-tuorejuustolla.md": {
     currentSha256: "a612d8075e162818968800c4393a93b693cda16290035342ca189a08bd0f8cfd",
     inverseEdits: [[7, 2, ""]],
@@ -376,10 +481,6 @@ const editorialSnapshots: Readonly<Record<string, {
     currentSha256: "946db111ae676e3f9b34986434f6e87575c4af1066de36f078a18b06f616bb1a",
     inverseEdits: [[7, 2, ""]],
   },
-  "reseptit/aamupalat/savulohi-avokadokulho.md": {
-    currentSha256: "107b89c5657e76dc24066f590925ef49437ae28238e2871f65b9ed461d3f82d8",
-    inverseEdits: [[7, 2, ""]],
-  },
   "reseptit/aamupalat/siemengranola-jogurtilla.md": {
     currentSha256: "8100f920ba654edf84b847336d90899c6d6613d01e8dee20af7c913ea7eb474e",
     inverseEdits: [[7, 2, ""]],
@@ -390,14 +491,6 @@ const editorialSnapshots: Readonly<Record<string, {
   },
   "reseptit/aamupalat/thai-porsasjok.md": {
     currentSha256: "11a68c3326993ecb61b2b04bf80da614c3717edfb12507f377278c02d720e73b",
-    inverseEdits: [[7, 2, ""]],
-  },
-  "reseptit/alkuruoat/goi-cuon.md": {
-    currentSha256: "2ac5dff950a37121b81380f4cdc7980e6fb595a8ac6b49ec1afc401b5746dfb7",
-    inverseEdits: [[7, 2, ""]],
-  },
-  "reseptit/jalkiruoat/vhh-juustokakku.md": {
-    currentSha256: "a3b484c62fd468d2ef37e679592f089f3f096172317161efb5d818625e9715a7",
     inverseEdits: [[7, 2, ""]],
   },
   "reseptit/jalkiruoat/vhh-mansikkakakku.md": {
@@ -416,18 +509,6 @@ const editorialSnapshots: Readonly<Record<string, {
     currentSha256: "e9ec69c8a0da92f6da888936fde52b65e3a0382c351b76d910f4e8ae9dff92a0",
     inverseEdits: [[7, 2, ""]],
   },
-  "reseptit/paaruoat/hernekeitto-savupotkalla.md": {
-    currentSha256: "6bff45d3ceb0c81c7c29e296c5628245a5fea11aedd6a89f96dae48fb6116378",
-    inverseEdits: [[7, 2, ""]],
-  },
-  "reseptit/paaruoat/hunaja-sinappikana-kaalilla.md": {
-    currentSha256: "8d49514be7f1938671f3c9ce074be4674e7f766e9229ac94c1b80a1f6ea1cdbe",
-    inverseEdits: [[7, 2, ""]],
-  },
-  "reseptit/paaruoat/japanilainen-curry-tofulla.md": {
-    currentSha256: "c3687678ca5f563200a54578ceec423bb4955abd13e8ca930b39ee3889a232e4",
-    inverseEdits: [[7, 2, ""]],
-  },
   "reseptit/paaruoat/kana-parmesaanipannu-parsakaali.md": {
     currentSha256: "b944bdb86c952ac1cc89f4f4a4571d048895553fb9af9dded9329c4dde3c75bd",
     inverseEdits: [[7, 2, ""]],
@@ -442,10 +523,6 @@ const editorialSnapshots: Readonly<Record<string, {
   },
   "reseptit/paaruoat/nasi-lemak.md": {
     currentSha256: "1dc92af8929f09f1e7798bb846f61b43d083f6104a6dd07b36819f636f9beed1",
-    inverseEdits: [[7, 2, ""]],
-  },
-  "reseptit/paaruoat/tacokulho-nauta-avokado.md": {
-    currentSha256: "f6ada74011e561cbad5d99cb691b66770ed4287b1ef92ccf67184680d7ccda55",
     inverseEdits: [[7, 2, ""]],
   },
   "reseptit/paaruoat/uunimakkara-sipulipedilla.md": {

@@ -40,7 +40,7 @@ Silky vanilla panna cotta takes just a few ingredients and sets in the fridge. S
 2. Heat the cream, milk, sugar and vanilla sugar in a saucepan until steaming. Do not boil.
 3. Take the saucepan off the heat. Squeeze the water from the gelatin sheets and dissolve them in the hot cream and milk mixture.
 4. Divide the mixture among six serving dishes and let it cool. Cover and refrigerate for at least 4 hours to set.
-5. Heat the berries and sugar in a small saucepan. Simmer for 5 minutes, add the lemon juice and let cool.
+5. Bring the frozen berries and sugar to a boil in a small saucepan. Boil for at least 2 minutes, then simmer for another 3 minutes. Add the lemon juice and let cool.
 6. Spoon the berry sauce over the panna cotta before serving.
 
 ## Notes

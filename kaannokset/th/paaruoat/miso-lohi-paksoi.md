@@ -43,7 +43,7 @@ servings: 4
 time_total_min: 30
 difficulty: ง่าย
 image:
-  src: paaruoat/miso-lohi-paksoi.webp
+  src: paaruoat/carnitas-salaattitacot.webp
   alt: แซลมอนอบมิโซะเสิร์ฟกับผักกวางตุ้งฮ่องเต้จี่กระทะ
   width: 1536
   height: 1024

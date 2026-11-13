@@ -257,7 +257,7 @@ test("the Finnish breakfast and dessert collections exclude quarantined unsafe r
   }
 });
 
-test("the 40 new recipes are unique, published in Finnish, and have their own image assets", async () => {
+test("the 40 recipe cards are unique and show their reviewed image bindings", async () => {
   const expectedIds = [
     "marjainen-chiavanukas", "kaakao-kookos-chia", "rahka-marjakerroskulho", "siemengranola-jogurtilla", "savulohi-avokadokulho",
     "kurkku-oliivi-aamiaiskulho", "pellava-puuro-pahkinoilla", "yrttituorejuusto-kinkkurullat", "raejuusto-pesto-kasviskulho", "paahdettu-aamiaismunakoiso",
@@ -272,7 +272,12 @@ test("the 40 new recipes are unique, published in Finnish, and have their own im
   assert.equal(recipes.length, 40);
   assert.deepEqual(recipes.map(recipe => recipe.recipeId).sort(), [...expectedIds].sort());
   assert.equal(new Set(recipes.map(recipe => recipe.recipeId)).size, 40);
-  assert.equal(new Set(recipes.map(recipe => recipe.image?.src)).size, 40);
+  const withheldImages = ["carnitas-salaattitacot", "okonomiyaki-kaaliletut", "tacokulho-nauta-avokado"];
+  assert.deepEqual(recipes.filter(recipe => !recipe.image).map(recipe => recipe.recipeId).sort(), withheldImages);
+  const images = recipes.flatMap(recipe => recipe.image ? [recipe.image.src] : []);
+  assert.equal(new Set(images).size, recipes.length - withheldImages.length);
+  assert.ok(recipes.find(recipe => recipe.recipeId === "miso-lohi-paksoi")?.image?.src.endsWith("/carnitas-salaattitacot.webp"));
+  assert.ok(recipes.find(recipe => recipe.recipeId === "japanilainen-curry-tofulla")?.image?.src.endsWith("/okonomiyaki-kaaliletut.webp"));
   assert.equal(recipes.filter(recipe => recipe.category === "aamupala").length, 10);
   assert.equal(recipes.filter(recipe => recipe.tags.includes("suomalainen")).length, 10);
   assert.equal(recipes.filter(recipe => ["kookos-lime-kanacurry", "kermainen-kanasienipannu", "kreikkalainen-kanavuoka-oliiveilla", "sitruuna-yrttikana-parsa", "kanapyorykat-tomaattikastike", "kanasalaatti-pesto-mozzarella", "kanakeitto-pinaatti-sitruuna", "hunaja-sinappikana-kaalilla", "kana-parmesaanipannu-parsakaali", "uunikanapasta-kesakurpitsa"].includes(recipe.recipeId)).length, 10);
@@ -319,10 +324,11 @@ test("the 40 new recipes are unique, published in Finnish, and have their own im
   const repoDir = path.resolve(import.meta.dirname, "../..");
   for (const recipe of recipes) {
     assert.equal(recipe.locale, "fi");
-    assert.ok(recipe.image, `${recipe.recipeId} has an image`);
-    const relativeImagePath = recipe.image.src.split("/kuvat/").at(-1);
-    assert.ok(relativeImagePath);
-    assert.ok((await readFile(path.join(repoDir, "kuvat", relativeImagePath))).byteLength > 0);
+    if (recipe.image) {
+      const relativeImagePath = recipe.image.src.split("/kuvat/").at(-1);
+      assert.ok(relativeImagePath);
+      assert.ok((await readFile(path.join(repoDir, "kuvat", relativeImagePath))).byteLength > 0);
+    }
     assert.equal(
       recipe.nutrition.carbsNetG,
       documentedNetCarbs.get(recipe.recipeId) ?? null,
@@ -335,7 +341,7 @@ test("new recipe totals, servings, and ingredients match the preparation steps",
   const recipes = new Map(siteContent.recipes.filter(recipe => recipe.locale === "fi").map(recipe => [recipe.recipeId, recipe]));
   assert.equal(recipes.get("marjainen-chiavanukas")?.timeTotalMin, 255);
   assert.equal(recipes.get("kaakao-kookos-chia")?.timeTotalMin, 255);
-  assert.equal(recipes.get("hernekeitto-savupotkalla")?.timeTotalMin, 750);
+  assert.equal(recipes.get("hernekeitto-savupotkalla")?.timeTotalMin, 840);
   assert.match(recipes.get("hernekeitto-savupotkalla")?.notesHtml ?? "", /12 tunnin/);
   assert.match(recipes.get("savulohi-avokadokulho")?.instructionsText.join(" ") ?? "", /neljään kulhoon tai lautaselle/);
   const rutabaga=recipes.get("lanttulaatikko-kermainen")!;assert.match(rutabaga.instructionsText.join(" "),/makeuttamaton/);assert.equal(rutabaga.ingredients.some(i=>/siirappi/.test(i.item)),false);

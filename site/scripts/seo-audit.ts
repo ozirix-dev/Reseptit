@@ -80,9 +80,8 @@ export function inspectPage(html: string, expected: ExpectedPage): SeoFinding[] 
     return issues;
   }
   const recipe = expected.recipe;
-  check(jsonScripts.length === 1, "JSONLD_COUNT", "Expected one Recipe JSON-LD block");
-  if (jsonScripts.length !== 1) return issues;
-  try {
+  check(jsonScripts.length === (recipe.image ? 1 : 0), "JSONLD_COUNT", "Recipe JSON-LD requires a recipe image");
+  if (recipe.image && jsonScripts.length === 1) try {
     const data = JSON.parse(jsonScripts[0].content);
     const withholding = withholdF25Nutrition(recipe.recipeId, recipe.locale);
     const nutrition = Object.fromEntries(Object.entries({ carbohydrateContent: recipe.nutrition.carbsTotalG, proteinContent: recipe.nutrition.proteinG, fatContent: recipe.nutrition.fatG }).filter(([, n]) => !withholding && n !== null).map(([k, n]) => [k, `${n} g`]));
@@ -102,6 +101,8 @@ export function inspectPage(html: string, expected: ExpectedPage): SeoFinding[] 
     const images = tags(html, "img");
     check(images.some((img) => img.src === recipe.image!.src && img.alt === recipe.image!.alt), "RECIPE_IMAGE", "Visible recipe image/alt differs from source");
     check(metas.some((m) => m.property === "og:image" && m.content === recipe.image!.src), "OG_IMAGE", "Open Graph image differs from source");
+  } else {
+    check(!metas.some((m) => m.property === "og:image" || m.name === "twitter:image"), "RECIPE_IMAGE_METADATA", "Image-free recipe must not advertise an image");
   }
   const payload = scripts.find((script) => script.attributes.id === "page-content");
   try { check(!!payload && isDeepStrictEqual(JSON.parse(payload!.content).recipe, recipe), "PAGE_CONTENT", "Hydration content differs from audited source"); }

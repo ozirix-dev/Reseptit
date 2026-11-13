@@ -518,10 +518,14 @@ test("responsive image metadata reaches every route, SEO and matching preloads",
     assert.ok(html.includes(`rel="canonical" href="https://ozirix-dev.github.io/Reseptit${route}"`));
     if (recipe) {
       assert.deepEqual(payload.recipe.image, recipe.image);
-      const schema = JSON.parse(html.match(/<script id="recipe-jsonld" type="application\/ld\+json">([\s\S]*?)<\/script>/)![1]);
+      const structured = html.match(/<script id="recipe-jsonld" type="application\/ld\+json">([\s\S]*?)<\/script>/);
       if (recipe.image) {
-        assert.deepEqual(schema.image, [recipe.image.src]);
+        assert.ok(structured, route);
+        assert.deepEqual(JSON.parse(structured[1]).image, [recipe.image.src]);
         assert.ok(html.includes(`property="og:image" content="${recipe.image.src}"`));
+      } else {
+        assert.equal(structured, null, route);
+        assert.doesNotMatch(html, /property="og:image"|name="twitter:image"/);
       }
       for (const translation of siteContent.recipes.filter((r) => r.recipeId === recipe.recipeId)) {
         assert.ok(html.includes(`hreflang="${translation.locale}" href="https://ozirix-dev.github.io/Reseptit${translation.routePath}"`));

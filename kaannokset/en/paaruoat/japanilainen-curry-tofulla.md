@@ -46,7 +46,7 @@ servings: 4
 time_total_min: 45
 difficulty: easy
 image:
-  src: paaruoat/japanilainen-curry-tofulla.webp
+  src: paaruoat/okonomiyaki-kaaliletut.webp
   alt: Japanese tofu curry with cauliflower rice
   width: 1536
   height: 1024
@@ -67,7 +67,7 @@ A warm, spiced Japanese curry broth brings together tofu and vegetables. Serve w
 2. Sauté the sliced onion. Add the diced carrot and courgette and the vegetable stock. Simmer for 15 minutes.
 3. Stir in the curry roux and cook according to the package directions until the broth thickens. Add the tofu and heat through.
 4. Grate the cauliflower to resemble rice and steam or pan-fry for 5 minutes.
-5. Serve the tofu curry with the cauliflower rice.
+5. Stir the listed sesame oil into the cooked cauliflower rice. Serve with the tofu curry.
 
 ## Notes
 

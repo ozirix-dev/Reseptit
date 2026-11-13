@@ -50,9 +50,8 @@ test("published image pipeline copies only safe, referenced images and removes s
     await assert.rejects(readFile(path.join(siteDir, "public", "kuvat", "paaruoat", "test.webp")));
     const noImageHtml = await readFile(path.join(siteDir, "dist", "testiresepti", "index.html"), "utf8");
     assert.doesNotMatch(noImageHtml, /class="recipe-image"/);
-    const noImageJson = noImageHtml.match(/<script id="recipe-jsonld" type="application\/ld\+json">([\s\S]*?)<\/script>/);
-    assert.ok(noImageJson);
-    assert.equal("image" in JSON.parse(noImageJson[1]), false);
+    assert.doesNotMatch(noImageHtml, /id="recipe-jsonld"|property="og:image"|name="twitter:image"/);
+    assert.match(noImageHtml, /<h1>Testiresepti<\/h1>/);
   } finally {
     try {
       await rm(path.join(siteDir, "public", "kuvat"), { recursive: true, force: true });

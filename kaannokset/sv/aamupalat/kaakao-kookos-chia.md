@@ -61,7 +61,7 @@ Den fylliga kakao- och kokospuddingen stelnar i kylen utan kokning eller ägg.
 
 ## Tillagning
 
-1. Vispa ut kakaopulvret i lite kokosdryck tills det är slätt. Tillsätt resten av drycken, grädden, chiafröna och vaniljen.
+1. Vispa ut kakaopulvret i lite kokosdryck tills det är slätt. Tillsätt resten av drycken, grädden, chiafröna, vaniljen och eventuellt sötningsmedel efter smak.
 2. Rör om ordentligt, vänta 10 minuter och rör om igen.
 3. Täck och låt stelna i kylen i minst fyra timmar.
 4. Toppa med rostade kokosflingor och servera kall.

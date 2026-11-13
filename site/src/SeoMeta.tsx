@@ -109,7 +109,7 @@ export function SeoMeta() {
       script.textContent = JSON.stringify(blogJsonLd(blogPosts.find(post => post.slug === blogPost.slug)!));
       document.head.append(script);
     }
-    if (recipe) {
+    if (recipe?.image) {
       const script = document.createElement("script");
       script.id = "recipe-jsonld";
       script.type = "application/ld+json";

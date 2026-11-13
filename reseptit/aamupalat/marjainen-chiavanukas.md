@@ -66,7 +66,7 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 1. Sekoita chia-siemenet, mantelimaito ja vanilja kulhossa. Anna seistä 10 minuuttia ja sekoita uudelleen paakkujen estämiseksi.
 2. Peitä ja nosta jääkaappiin vähintään neljäksi tunniksi, mieluiten yön yli.
 3. Sekoita jogurtti vanukkaaseen ja mausta halutessasi makeutusaineella.
-4. Jaa annoskulhoihin ja lisää marjat juuri ennen tarjoamista.
+4. Jaa annoskulhoihin ja lisää marjat juuri ennen tarjoamista. Jos käytät ulkomaisia pakastemarjoja, keitä niitä ensin 2 minuuttia ja jäähdytä.
 
 ## Muistiinpanot
 

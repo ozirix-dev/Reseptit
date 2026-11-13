@@ -61,7 +61,7 @@ This rich cocoa and coconut pudding sets in the fridge without cooking or eggs.
 
 ## Preparation
 
-1. Whisk the cocoa powder into a small splash of the coconut drink until smooth. Add the rest of the drink, cream, chia seeds and vanilla.
+1. Whisk the cocoa powder into a little coconut drink until smooth. Add the rest of the drink, cream, chia seeds, vanilla and sweetener to taste if desired.
 2. Stir well, wait 10 minutes and stir again.
 3. Cover and chill in the fridge for at least four hours to set.
 4. Finish with toasted coconut flakes and serve cold.

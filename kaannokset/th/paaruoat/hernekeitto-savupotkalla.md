@@ -40,7 +40,7 @@ ingredients:
     unit: ช้อนโต๊ะ
     item: มัสตาร์ดสำหรับเสิร์ฟ
 servings: 4
-time_total_min: 750
+time_total_min: 840
 difficulty: ง่าย
 image:
   src: paaruoat/hernekeitto-savupotkalla.webp

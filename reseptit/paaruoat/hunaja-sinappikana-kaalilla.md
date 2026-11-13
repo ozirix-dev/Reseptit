@@ -67,10 +67,10 @@ Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
 
 ## Valmistus
 
-1. Kuumenna uuni 210 asteeseen. Leikkaa kaali lohkoiksi ja aseta pellille broilerin kanssa.
-2. Sekoita sinappi, hunaja, öljy, valkosipulijauhe ja paprika. Valele broileri ja kaali.
-3. Mausta suolalla ja pippurilla. Paahda 35–40 minuuttia ja käännä kaali kerran.
-4. Sekoita dijonsinappi, hunaja, oliiviöljy, valkosipulijauhe ja paprikajauhe. Leikkaa broileri suupaloiksi ja kaali lohkoiksi, kääntele mausteseoksessa ja paahda uunissa, kunnes broileri on läpikypsää ja kaali pehmeää.
+1. Kuumenna uuni 210 °C:seen.
+2. Leikkaa broileri suupaloiksi ja kaali lohkoiksi. Aseta ne uunipellille.
+3. Sekoita Dijon-sinappi, hunaja, oliiviöljy, valkosipulijauhe ja paprikajauhe. Kääntele broileri ja kaali seoksessa. Mausta suolalla ja pippurilla.
+4. Paahda 35–40 minuuttia ja käännä kaali kerran. Jatka tarvittaessa, kunnes broileri on kauttaaltaan kypsää ja kaali pehmeää.
 
 ## Muistiinpanot
 

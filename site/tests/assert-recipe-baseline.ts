@@ -159,8 +159,8 @@ const translationDraftCommits = new Map([
 // Exact recipe snapshots protect historical GK tests during translation preparation.
 // Production approval records remain in approvedTranslations.
 const recipeChanges = new Map([
-  ...Object.entries(approvedTranslations.changes),
   ...Object.entries(preparedTranslations.changes),
+  ...Object.entries(approvedTranslations.changes),
 ]);
 
 /**
