@@ -36,6 +36,11 @@ export function originalForC13CanonicalHistory(root: string, file: string, text:
     const previous = lf(execFileSync("git", ["cat-file", "blob", approvedBlobById[id]], {cwd: root, encoding: "utf8"}));
     return originalForC13CanonicalHistory(root, file, previous);
   }
+  if (id === "valimerellinen-pinaatti-fetashakshuka" && liveBlob === "3e2882523e98b4ab681c97d8a95a5e6c59f5a7bb") {
+    const previous = lf(execFileSync("git", ["cat-file", "blob", approvedBlobById[id]], {cwd: root, encoding: "utf8"}));
+    assert.equal(live.split(marker)[0], previous.split(marker)[0], file + ": changed protected recipe inputs");
+    return originalForC13CanonicalHistory(root, file, previous);
+  }
   assert.equal(liveBlob, approvedBlobById[id], file + ": unreviewed C13 source mutation");
   const frozen = original(root, file);
   const cut = live.indexOf(marker), originalCut = frozen.indexOf(marker);
