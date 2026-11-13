@@ -152,6 +152,22 @@ test('Live original results preserve frozen history plus the exact reviewed tran
     return {...row, notes: (frozen.split('## Muistiinpanot')[1]?.trim() ?? '').replaceAll('\n', lineEnding),
       source_content_hash: createHash('sha256').update(frozen).digest('hex')};
    }
+   if (row.recipe_id === "valimerellinen-menemen-fetalla") {
+    const published = read(row.source_path).replaceAll("\r\n", "\n");
+    const frozen = originalForC13CanonicalHistory(root, row.source_path, published);
+    const previous = parseMarkdown(frozen);
+    assert.ok(previous);
+    assert.equal(row.source_content_hash, "3bde94c1717fc9b09e442f4252bcad5ae1d1c8672e13e87dd83ccd4396789d8b");
+    assert.equal(row.status, "ESTIMATE WITH EVIDENCE");
+    assert.deepEqual(row.values, row.recalculatedValues);
+    assert.equal(row.calculationEvidence, "docs/nutrition/calculations/valimerellinen-menemen-fetalla.json");
+    const errors = ["Calculation evidence file is missing"];
+    return {...row, source_content_hash: createHash("sha256").update(frozen).digest("hex"),
+      values: Object.fromEntries(Object.keys(row.values).map(key => [key, previous.data[key]])),
+      status: "INSUFFICIENT SOURCE DATA", calculationEvidence: null, recalculatedValues: null,
+      evidenceErrors: errors, totalCarbohydrateDefinition: "NOT VERIFIED",
+      brandAndRawWeightEvidence: "NOT VERIFIED", notes: "", uncertainties: errors};
+   }
    if (c13CanonicalHistoryPaths.includes(row.source_path as (typeof c13CanonicalHistoryPaths)[number])) {
     const published=read(row.source_path).replaceAll('\r\n','\n');
     const frozen=originalForC13CanonicalHistory(root,row.source_path,published);

@@ -31,12 +31,13 @@ test("issue404 pilot protects published translations before a canonical method m
     "intialainen-rava-uttapam",
     "lahi-ita-ful-medames",
     "meksikolainen-aamiais-tacot-mustapavuilla",
+    "valimerellinen-menemen-fetalla",
     "valimerellinen-pinaatti-fetashakshuka",
     "vietnamilainen-pho-ga-aamuksi",
     "intialainen-mannasuurimoupma",
   ]);
-  assert.equal(actual.filter(x => x.classification === "CANDIDATE_REQUIRES_REVIEW").length, 1);
-  for (const id of ["intialainen-rava-uttapam", "lahi-ita-ful-medames", "meksikolainen-aamiais-tacot-mustapavuilla", "valimerellinen-pinaatti-fetashakshuka"]) {
+  assert.equal(actual.filter(x => x.classification === "CANDIDATE_REQUIRES_REVIEW").length, 0);
+  for (const id of ["intialainen-rava-uttapam", "lahi-ita-ful-medames", "meksikolainen-aamiais-tacot-mustapavuilla", "valimerellinen-menemen-fetalla", "valimerellinen-pinaatti-fetashakshuka"]) {
     assert.deepEqual(actual.find(x => x.recipeId === id)?.blockers,
       ["PUBLISHED_TRANSLATION_SEMANTIC_REVIEW_REQUIRED:en,sv,th"]);
   }

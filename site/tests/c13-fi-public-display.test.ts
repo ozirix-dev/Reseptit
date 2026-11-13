@@ -46,6 +46,12 @@ test("C13 five canonical FI recipes contain canonical chef instructions while fr
       assert.notEqual(title, previousTitle);
       assert.notDeepEqual(image, previousImage);
       assert.deepEqual(metadata, previousMetadata, id + ": only title and image metadata may change");
+    } else if (id === "valimerellinen-menemen-fetalla") {
+      const { carbs_net_per_serving_g, carbs_total_per_serving_g, protein_per_serving_g, fat_per_serving_g, ...metadata } = data;
+      const { carbs_net_per_serving_g: oldNet, carbs_total_per_serving_g: oldTotal, protein_per_serving_g: oldProtein, fat_per_serving_g: oldFat, ...previousMetadata } = old;
+      assert.deepEqual(metadata, previousMetadata);
+      assert.deepEqual([carbs_net_per_serving_g, carbs_total_per_serving_g, protein_per_serving_g, fat_per_serving_g], [5.35, 7.13, 21.58, 31.02]);
+      assert.deepEqual([oldNet, oldTotal, oldProtein, oldFat], [5.38, 7.87, 21.57, 31]);
     } else {
       assert.deepEqual(current.data, previous.data, id + ": no input/metadata changes");
     }

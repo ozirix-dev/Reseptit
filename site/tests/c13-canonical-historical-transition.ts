@@ -41,6 +41,12 @@ export function originalForC13CanonicalHistory(root: string, file: string, text:
     assert.equal(live.split(marker)[0], previous.split(marker)[0], file + ": changed protected recipe inputs");
     return originalForC13CanonicalHistory(root, file, previous);
   }
+  if (id === "valimerellinen-menemen-fetalla" && liveBlob === "6a767558edc1ee37372f9029ca4ea88c6f129746") {
+    const previous = lf(execFileSync("git", ["cat-file", "blob", approvedBlobById[id]], {cwd: root, encoding: "utf8"}));
+    const withoutMacros = (markdown: string) => markdown.split(marker)[0].replace(/^((?:carbs_\w+|protein_per_serving_g|fat_per_serving_g):).*\n/gm, "");
+    assert.equal(withoutMacros(live), withoutMacros(previous), file + ": changed protected recipe inputs");
+    return originalForC13CanonicalHistory(root, file, previous);
+  }
   assert.equal(liveBlob, approvedBlobById[id], file + ": unreviewed C13 source mutation");
   const frozen = original(root, file);
   const cut = live.indexOf(marker), originalCut = frozen.indexOf(marker);

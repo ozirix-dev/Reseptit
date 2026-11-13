@@ -126,6 +126,7 @@ const approvedGlutenFreeFiFiles = new Map<string, string>([
 const cocoaPath = "reseptit/aamupalat/rasvakaakao-rouva-keto.md";
 const cocoaPublication = "8cb015878ab09339275851ce31ac421e5ac5288d";
 const reviewedFiBreakfastFiles = new Map([
+  ["docs/nutrition/calculations/valimerellinen-menemen-fetalla.json", "aa88cc61405a5db8771f84a0b25df9bd038846b4a1c252caa7248cb5010db57c"],
   [cocoaPath, "73ec1919b0038f2479837583081a4d3662f49c7bb4d81d301a75505b8749e32d"],
   ["docs/nutrition/calculations/rasvakaakao-rouva-keto.json", "ac1a88c6fdc720330ffb50858a90e76ae846a0e4c884494d3189659ee8154af5"],
   ["reseptit/aamupalat/lammin-chia-puuro-rouva-keto.md", "6ac411019efca3965bc614a8d73f43655a66be8f0cfaf74fdbe90f7655217717"],
