@@ -24,7 +24,7 @@ Nämä ovat **uusia reseptiversioita**, eivät todistuksia historiallisten mää
 - Aloo paratha: King Arthur Baking, https://www.kingarthurbaking.com/recipes/aloo-paratha-spiced-potato-stuffed-flatbread-recipe . Peruna kypsennetään ja suljetaan taikinaan; jogurtti on vertailuohjeessa valinnainen tarjoilulisuke. Tässä koeehdokkaassa siitä tehdään mitattu mukana syötävä lisä.
 - Kikherne-yrttikulho: University of Kentucky, https://foodashealthalliance.mgcafe.uky.edu/sites/foodashealthalliance.ca.uky.edu/files/Chickpea%20Salad_0.pdf . Kypsät valutetut kikherneet ja punnittu sitruuna-/öljykastike. Tässä omassa aamiaismuunnelmassa käytetään lisäksi läpikypsiä munia.
 - Appelsiinikakku: King Arthur Baking, https://www.kingarthurbaking.com/recipes/orange-and-greek-yogurt-cake-recipe . Kakkutaikina tarvitsee oikean munan, nostatusaineen ja uunivaiheen. Uusi koetaikina ei kopioi lähteen mittasuhteita eikä ole fyysisesti testattu.
-- Bao: Good Food, https://www.bbcgoodfood.com/recipes/steamed-bao-buns ja Wolf Ovens https://www.subzero-wolf.com/owners/recipes/steamed-bao-buns . Hiivataikinan veden, kohotuksen ja höyrytyksen tulee olla määritelty.
+- Bao: Good Food, https://www.bbcgoodfood.com/recipes/steamed-bao-buns ja Wolf Ovens https://www.subzero-wolf.com/owners/recipes/steamed-bao-buns . Hiivataikinan veden, kohotuksen ja höyrytyksen tulee olla määritelty. Yksilöity hoisin-tuote: https://www.aasiamarket.fi/tuote/hoisin-sauce-fi99/ (Lee Kum Kee 397 g, UPC 078895700022); kuitu ja polyolit yhä selvittämättä.
 
 Ulkoiset reseptit auttavat arvioimaan rakennetta, mutta niiden arvoilla ei korvata omia tuotekohtaisia ravintoarvoja.
 

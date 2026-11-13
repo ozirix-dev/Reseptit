@@ -16,7 +16,7 @@ Tämä raportti on uutta V2-reseptiversiota varten tehty **uusi aritmeettinen la
 
 Taulukon luvut ovat **alustavia laskentaehdokkaita**. Esitetty total = available carbohydrate + fibre (polyolit oletettu kyseisissä Fineli/AFCD-tietueissa 0 g, kuten tuotekohtaisissa aiemmissa laskelmissa). Suolatietueen Fineli 30 lievä proteiiniarvo on huomioitu. Laskennan sääntö on `summa(raaka-ainetta g × tietueen per100g-arvo / 100) / annoksia`. 1 muna = **50 g kuorettomana** on ehdotettu punnitusoletus; 1 ml vettä = 1 g. Valmistushävikkiä ei ole mitattu; laskennassa kaikki mitatut syötävät ainekset pysyvät mukana, paitsi paistoöljyn erikseen esitetyissä ääriskenaarioissa.
 
-**Bao pidetään numeerisesti estettynä**, koska 15 gramman hoisin-kastikkeen täsmällinen tuote on ratkaisematta. Sen tunnetut muut rivit on tarkistettu, mutta koko ruoan numeroa ei julkaista eikä epätarkkaa proxy-kastiketta lisätä.
+**Bao pidetään koko reseptin neljän makron osalta estettynä.** Tuotteeksi valittiin Lee Kum Kee Hoisin Sauce 397 g, UPC `078895700022` (EAN-13 `0078895700022`). Suomalaiset kauppatiedot: 51 g saatavilla olevaa hiilihydraattia, 1,7 g proteiinia ja 1,6 g rasvaa / 100 g sekä allergeenit **soija, vehnä ja seesami**. Kuitu ja polyolit puuttuvat ja käyttöpakkauksen erä on tarkistamatta. Kokonais-HH kuitu mukaan lukien jää puuttumaan. Taulukossa baon koko reseptin luvut jätetään tarkoituksella julkaisukelvottomiksi. <https://www.aasiamarket.fi/tuote/hoisin-sauce-fi99/>
 
 ## Raaka-aineiden täsmällinen ravintolähdepohja
 
@@ -108,9 +108,9 @@ Ravintolähteet ovat [THL Fineli, API](https://fineli.fi/fineli/api/v1/foods/205
 - salt: 1 g — Fineli 30
 - egg: 100 g — Fineli 858
 - cucumber: 150 g — Fineli 346
-- hoisin: 15 g — PUUTTUVA TUOTETIETO
+- Lee Kum Kee Hoisin Sauce: 15 g — UPC `078895700022` / EAN-13 `0078895700022`; alustavat suomalaisen jälleenmyyjän etiketin ravintoarvot.
 
-**Laskenta:** Vain osittainen rivien tarkistus; koko annoksen tulosta ei saa laskea ilman hoisin-tietoa.
+**Osittainen laskentatarkistus:** 15 g hoisinia sisältää 7,65 g saatavilla olevia hiilihydraatteja, 0,255 g proteiinia ja 0,24 g rasvaa. Kun se yhdistetään yllä lueteltuihin muihin ravintotietueisiin, on annosta kohti laskennallinen **saatavilla oleva HH 44,58 g, proteiini 13,09 g ja rasva 7,64 g**. Kokonais-HH kuitu mukaan lukien jää **tuntemattomaksi**, koska hoisinin kuitu/polyolit puuttuvat. Nämä kolme laskennan osalukua eivät ole julkaistuja hyväksyttyjä makroja; frontmatterin kaikki neljä kenttää pysyvät `null`.
 
 ## Kriittinen virhe alkuperäisessä aloo parathassa
 
@@ -121,7 +121,7 @@ Historiallisen `docs/nutrition/calculations/intialainen-aloo-paratha.json`-laske
 1. Vahvista valitut kaupalliset tuotteet ja raaka/kypsä/valutettu grammamassa (erityisesti kikherneet ja jogurtti).
 2. Varmista käytännön valmistusrakenne kirjatulla keittiökelpoisuuden arviolla; ei väitettä tehdystä fyysisestä kokeesta.
 3. Paistoöljyn syöty osuus määrää todellisen rasvan; yllä vain ääriskenaariot, ei arvattua imeytymää.
-4. Bao: tarkka hoisin-tuote ja sen allergia-/ravintotiedot; muille resepteille makroarvio on vasta alustava.
+4. Bao: kaupallisen hoisin-tuotteen UPC ja allergeenit on yksilöity, mutta kuitu/polyolit ja käyttöpakkauksen vastaavuus puuttuvat edelleen; muutkin makroarviot ovat alustavia.
 5. GI/GK uudelle versiolle täsmällisellä ravintoaine- ja elintarvikemääräpohjalla; puuttuva GK merkitään **ei määritetty**, ei nollaksi.
 6. Julkaisu vasta vanhan FI-lähteen tarkastetun migraation, EN/SV/TH-versioiden, kuvavastaavuuden, CI:n ja mainin Pages-testin jälkeen.
 
