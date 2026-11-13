@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "recipe_id": "korealainen-mandu-keitto-aamiaiseksi-punnittu-v2",
+  "source_path": "reseptit/aamupalat/korealainen-mandu-keitto-aamiaiseksi-punnittu-v2.md",
+  "source_sha256": "5de9b7433c55acb76bb7218cc0eba25f1565251533c66498af27fd7de3ba23ac",
+  "decision": "approved",
+  "reviewed_by": "AI editorial reviewer (GPT-6)",
+  "reviewed_at": "2026-11-13",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.koreanbapsang.com/manduguk-korean-dumpling-soup/",
+      "https://www.koreanbapsang.com/mandu-korean-dumplings_20/",
+      "https://www.koreanbapsang.com/how-to-make-dumpling-wrappers/",
+      "https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/kasittely-ja-sailyttaminen/hygienia-kotikeittiossa/liha/",
+      "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
+    ]
+  },
+  "supersedes_quarantined": {
+    "recipe_id": "korealainen-mandu-keitto-aamiaiseksi",
+    "source_path": "reseptit/aamupalat/korealainen-mandu-keitto-aamiaiseksi.md",
+    "source_git_blob_sha": "0a24a7c6174076525bbbdbcbbdbb664b57ca647f"
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/korealainen-mandu-keitto-aamiaiseksi-punnittu-v2.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "The sole historical slug owner is the quarantined predecessor with the exact registered Git blob."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "All ingredients use edible gram weights. Allergen disclosures and the new illustration were checked against the ingredient list."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Homemade mandu makes the edible filling and wrapper masses auditable. Dough hydration is 55% against all flour; twelve roughly 13 g wrappers contain approximately 14 g filling each. Raw minced pork is cooked to 71 °C and measured in the centre of the largest dumpling. Egg ribbons are cooked through after the dumplings. Seaweed omitted because the predecessor has no meaningful product identity or iodine basis. All cooking liquid and sesame oil are counted in the estimate. No physical trial."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Keep raw pork cold, avoid cross-contamination, measure 71 °C in the largest filling, and cook the egg ribbons through."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "2 portions with 65 minutes including the specified cooking and resting or cooling periods."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Fineli and AFCD edible mass calculation verified against the current recipe input SHA-256. Homemade mandu makes the edible filling and wrapper masses auditable. Dough hydration is 55% against all flour; twelve roughly 13 g wrappers contain approximately 14 g filling each. Raw minced pork is cooked to 71 °C and measured in the centre of the largest dumpling. Egg ribbons are cooked through after the dumplings. Seaweed omitted because the predecessor has no meaningful product identity or iodine basis. All cooking liquid and sesame oil are counted in the estimate. No physical trial."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "No preparation-matched glycemic load approval exists for the successor; the original is retained in historical quarantine."
+    }
+  }
+}
