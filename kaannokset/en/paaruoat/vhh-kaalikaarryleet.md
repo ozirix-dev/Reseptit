@@ -72,8 +72,8 @@ This version of cabbage rolls is made without rice.
 1. Boil the cabbage until the leaves come off easily. Remove the leaves and save the cooking water.
 2. Mix minced meat, cauliflower, chopped onion, egg, cream and spices.
 3. Dose the filling on the leaves and roll into tight rolls.
-4. Place in a greased pan, pour melted butter on top and a splash of cabbage boiling water.
-5. Bake at 200 °C for about 45–55 minutes. Baste with the cooking broth once.
+4. Set the rolls in a greased ovenproof dish. Pour over the melted butter and a splash of the cabbage cooking water.
+5. Bake at 200 °C for about 45–55 minutes, basting once with the juices in the dish. Continue as needed until the mince filling is cooked through in the centre.
 
 ## Notes
 

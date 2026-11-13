@@ -85,7 +85,7 @@ The hotness and sugar content of curry pastes vary. Add the paste sparingly at f
 2. Add a few tablespoons of coconut milk and mix into a paste.
 3. Add the chicken and fry until the pieces are completely covered with the paste.
 4. Add the rest of the coconut milk. Simmer on low heat for about 15 minutes until the chicken is cooked.
-5. Add bamboo shoots and paprika. Simmer for another 5 minutes. Season with fish sauce and, if desired, erythritol.
+5. Add the bamboo shoots and red pepper. Simmer for another 5 minutes. Season with fish sauce and, if desired, erythritol.
 6. Heat the cauliflower rice in a pan. Finish the curry with Thai basil and serve with lime.
 
 ## Notes

@@ -86,7 +86,7 @@ Chicken skewers marinated with lemon, garlic and oregano are served with pita br
 ## Preparation
 
 1. Mix oil, lemon juice, crushed garlic, oregano and salt. Add the chicken and let it marinate in the fridge for at least 20 minutes.
-2. Grate the cucumber and squeeze out the excess liquid. Mix with yogurt and crushed garlic. Cool down.
+2. Grate the cucumber and squeeze out the excess liquid. Mix with the yoghurt and crushed garlic. Keep refrigerated until serving.
 3. Thread the chicken onto the skewers. Grill or fry in a hot pan for 10-12 minutes, turning, until the chicken is cooked.
 4. Heat the pita bread and serve the skewers with tomato and tzatziki.
 

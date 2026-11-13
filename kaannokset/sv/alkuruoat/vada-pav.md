@@ -88,8 +88,8 @@ Mumbais populära street food-rätt kombinerar en kryddig, krispig friterad pota
 2. Hetta upp oljan, tillsätt senapsfröna. När de poppar, tillsätt vitlök och gurkmeja. Blanda med potatismos och koriander.
 3. Forma potatisblandningen till 4 runda biffar.
 4. Blanda kikärtsmjöl, vatten, chili och salt till en tjock deg.
-5. Doppa biffarna i smeten och fritera i 170 graders olja tills de är gyllenbruna, ca 4 minuter.
-6. Dela frallorna och bred chutney inuti. Lägg potatisbiffen emellan och servera genast.
+5. Doppa biffarna i smeten och fritera i omgångar vid 170 °C i cirka 4 minuter, tills höljet är genomstekt och gyllenbrunt. Låt överflödig olja rinna av.
+6. Dela bröden och lägg en potatisbiff i varje. Servera genast med chutney vid sidan om du vill.
 
 ## Anteckningar
 

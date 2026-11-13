@@ -90,7 +90,7 @@ Biffar får sin struktur från ägg och köttfärs. Såsen tjocknar långsamt ge
 
 1. Blanda köttfärs, ägg, grädde, riven lök, salt och svartpeppar i en skål. Forma till fyra biffar.
 2. Hetta upp smöret i en panna och stek biffarna på medelvärme tills de är genomstekta, ca 4–5 minuter på varje sida. Ställ biffarna åt sidan.
-3. Häll köttbuljongen i pannan och skrapa stekytan med såsen. Tillsätt grädde, senap och peppar.
+3. Häll köttbuljongen i stekpannan och skrapa loss stekresterna från botten. Tillsätt grädde, senap och peppar.
 4. Koka såsen långsamt i 5–8 minuter tills den tjocknar lite. Lägg tillbaka biffarna i pannan och värm i ytterligare ett par minuter.
 5. Servera med mosad blomkål eller gröna grönsaker.
 

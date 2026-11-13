@@ -86,7 +86,7 @@ Ojja on mausteinen tomaatti-paprikapannu, johon kananmunat kypsennetään kastik
 1. Kuumenna öljy pannulla. Kuullota sipuli ja paprika pehmeiksi noin 6 minuuttia.
 2. Lisää valkosipuli, juustokumina ja harissa. Paista minuutti.
 3. Kaada pannulle tomaattimurska ja suola. Hauduta 12–15 minuuttia, kunnes kastike sakenee.
-4. Kuullota hienonnettu sipuli ja paprika oliiviöljyssä. Lisää murskattu valkosipuli, tomaattimurska, harissa ja juustokumina. Hauduta, kunnes kastike sakenee. Riko kananmunat kastikkeeseen ja kypsennä kannen alla, kunnes valkuaiset ovat hyytyneet. Tarjoa persiljan ja maalaisleivän kanssa.
+4. Tee kastikkeeseen neljä syvennystä ja riko kuhunkin yksi muna. Peitä pannu kannella ja kypsennä, kunnes sekä valkuaiset että keltuaiset ovat hyytyneet.
 5. Viimeistele persiljalla ja tarjoa leivän kanssa.
 
 ## Muistiinpanot

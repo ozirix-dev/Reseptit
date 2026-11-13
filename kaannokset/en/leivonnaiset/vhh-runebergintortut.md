@@ -69,7 +69,7 @@ Each baked cake is finished with a raspberry.
 
 1. Preheat the oven to 175°C. Mix the dry ingredients together.
 2. Add melted butter, eggs and quark. Divide the batter into six greased muffin tins.
-3. Bake for 18–20 minutes and cool. Make a small well in the center and add a raspberry.
+3. Bake for 18–20 minutes, then cool. Make a small well in the centre of each tart and divide all 6 tsp raspberries among the tarts.
 
 ## Notes
 

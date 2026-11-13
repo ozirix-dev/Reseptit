@@ -84,8 +84,8 @@ Limejuice tillsätts i slutet för att bevara dess fräscha smak. Du kan uteläm
 
 1. Hetta upp vattnet och lös upp den smulade fiskbuljongtärningen i det. Tillsätt citrongräs, färsk ingefära, kaffirlimeblad och chili. Sjud i 8 minuter.
 2. Tillsätt svamp och tomater. Koka i 3 minuter.
-3. Lägg i räkorna och koka i 2-3 minuter tills de blir rosa.
-4. Ta bort grytan från spisen. Smaka av med fisksås och limejuice.
+3. Lägg i räkorna och koka i cirka 2–3 minuter, eller längre vid behov, tills köttet är pärlemorskimrande och ogenomskinligt rakt igenom.
+4. Ta kastrullen från värmen. Ta upp citrongräset och limebladen. Smaksätt med fisksås och limejuice.
 5. Kontrollera smaken, avsluta med koriander och servera direkt.
 
 ## Anteckningar

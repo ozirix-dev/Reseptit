@@ -75,9 +75,9 @@ Spenat, fetaost, dill och vårlök gömmer sig inuti de krispiga filolagren. Paj
 
 1. Värm ugnen till 190 grader. Förväll spenaten hastigt eller låt den mjukna i en stekpanna. Låt svalna och krama ur vätskan ordentligt.
 2. Blanda spenat, vårlök, fetaost, ägg, dill och peppar.
-3. Olja in ugnsformen. Lägg fyra filodegsark ett i taget i pannan, pensla var och en lätt med olja.
-4. Bred ut fyllningen i pannan. Täck med resterande filoark, smörj in lagren med olja och vik in kanterna.
-5. Skiva portionsbitarna på ytan och grädda i 35–40 minuter tills ytan är krispig och gyllenbrun. Låt vila i 10 minuter.
+3. Olja ugnsformen. Lägg i fyra filodegsark, ett i taget, och pensla varje ark lätt med olja.
+4. Bred ut fyllningen i formen. Täck med resten av filodegen, pensla varje ark med olja och vik in kanterna.
+5. Skåra ytan i portionsbitar och grädda i 35–40 minuter tills ytan är frasig och gyllenbrun och äggfyllningen har stelnat i mitten. Låt vila i 10 minuter.
 
 ## Anteckningar
 

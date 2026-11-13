@@ -70,7 +70,7 @@ Mjuka risdegsbollar fylls med söt sesampasta och serveras i en varm ingefärsbu
 2. Blanda klibbigt rismjöl (glutinous rice flour) med varmt vatten. Knåda till en mjuk, slät deg.
 3. Dela degen i 16 bitar. Platta till biten, lägg en liten klick fyllning i mitten och förslut degen till en boll.
 4. Koka upp vatten, socker och skivad ingefära i en gryta. Sjud i 10 minuter.
-5. Koka risbollar i omgångar i lätt bubblande vatten i 5-6 minuter tills de stiger till ytan. Lägg över i skålar och häll över ingefärsfonden.
+5. Koka risbollarna i omgångar i en separat kastrull med sjudande vatten i 5–6 minuter tills de flyter upp. Lägg dem i skålar och häll över den söta ingefärslagen.
 
 ## Anteckningar
 

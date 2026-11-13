@@ -55,7 +55,7 @@ Mieto haudutus tekee porsaan lavasta mureaa ja antaa mausteiden maustaa koko lie
 
 1. Ruskista porsaanpalat padassa joka puolelta. Nosta hetkeksi sivuun.
 2. Lisää pataan valkosipuli, viismauste, kaneli ja tähtianis. Paista noin 30 sekuntia.
-3. Kaada joukkoon kanaliemi. Lisää soijakastikkeet, kalakastike ja erytritoli. Nosta porsas takaisin pataan.
+3. Kaada joukkoon kanaliemi. Lisää vaalea soijakastike, molemmat kalakastikeannokset ja erytritoli. Nosta porsas takaisin pataan.
 4. Peitä kannella ja hauduta hyvin miedolla lämmöllä noin 2,5 tuntia tai kunnes liha on pehmeää.
 5. Lisää kuoritut keitetyt kananmunat viimeiseksi 20 minuutiksi. Nosta porsas ja munat liemestä.
 6. Keitä tai höyrytä kiinankaali nopeasti. Kuumenna kukkakaaliriisi pannulla.

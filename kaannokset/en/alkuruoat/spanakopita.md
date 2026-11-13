@@ -76,8 +76,8 @@ Spinach, feta, dill and spring onion are hidden inside the crispy phyllo layers.
 1. Heat the oven to 190 degrees. Briefly blanch the spinach or wilt it in a frying pan. Cool and squeeze out the liquid thoroughly.
 2. Mix spinach, spring onion, feta, eggs, dill and pepper.
 3. Oil the baking dish. Place four filo pastry sheets one at a time in the pan, brush each one lightly with oil.
-4. Spread the filling in the pan. Cover with the remaining filo sheets, grease the layers with oil and fold the edges in.
-5. Slice the portion pieces on the surface and bake for 35–40 minutes until the surface is crispy and golden brown. Let rest for 10 minutes.
+4. Spread the filling in the baking dish. Cover with the remaining filo sheets, brushing each layer with oil. Tuck the edges in.
+5. Score portions in the top layer and bake for 35–40 minutes until crisp and golden and the egg filling has set in the centre. Rest for 10 minutes.
 
 ## Notes
 

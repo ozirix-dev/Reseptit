@@ -69,7 +69,7 @@ Cauliflower mashed with cream replaces the usual mashed potatoes.
 ## Preparation
 
 1. Brown the thinly sliced reindeer meat in butter in a frying pan. Add the onion and soften it.
-2. Add water and simmer under the lid for about 25 minutes. Taste.
+2. Add the water, cover and simmer for about 25 minutes. Season with the salt and pepper.
 3. Boil the cauliflower until soft, drain carefully and puree with cream.
 4. Serve with cauliflower mash.
 

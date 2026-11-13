@@ -88,7 +88,7 @@ The cooking broth makes a light, clear broth for serving. The ginger sauce is sa
 2. Cook under the lid for 15–20 minutes until the internal temperature of the broiler is at least 75 °C. Remove the meat from the broth and let it rest.
 3. Mix ginger, soybean paste, fish sauce, lime juice and garlic into a sauce. If necessary, thin with a spoonful of stock.
 4. Heat the cauliflower rice in a pan until soft and season lightly.
-5. Slice the chicken and serve with rice, cucumber, sauce and coriander. If you wish, serve the broth separately.
+5. Slice the chicken and serve with cauliflower rice, cucumber, the sauce and coriander. Serve the broth separately if desired.
 
 ## Notes
 

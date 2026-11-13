@@ -62,8 +62,8 @@ Limettimehu lisätään lopuksi, jotta sen raikas maku säilyy. Liemen mausteet 
 
 1. Kuumenna vesi ja liuota siihen murskattu kalaliemikuutio. Lisää sitruunaruoho, inkivääri, kaffirlimetinlehdet ja chili. Keitä hiljalleen 8 minuuttia.
 2. Lisää sienet ja tomaatit. Keitä 3 minuuttia.
-3. Lisää katkaravut ja kypsennä 2–3 minuuttia, kunnes ne muuttuvat vaaleanpunaisiksi.
-4. Nosta kattila liedeltä. Mausta kalakastikkeella ja limettimehulla.
+3. Lisää katkaravut ja kypsennä noin 2–3 minuuttia tai tarvittaessa pidempään, kunnes liha on kauttaaltaan helmenvaaleaa ja läpikuultamatonta.
+4. Nosta kattila liedeltä. Poista sitruunaruoho ja limetinlehdet. Mausta kalakastikkeella ja limettimehulla.
 5. Tarkista maku, viimeistele korianterilla ja tarjoa heti.
 
 ## Muistiinpanot

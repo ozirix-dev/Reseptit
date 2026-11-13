@@ -89,9 +89,9 @@ Steaks get their structure from egg and minced meat. The sauce thickens slowly b
 ## Preparation
 
 1. Mix minced meat, egg, cream, grated onion, salt and black pepper in a bowl. Shape into four patties.
-2. Heat the butter in a pan and fry the steaks on medium heat until cooked, about 4–5 minutes on each side. Set the steaks aside.
-3. Pour the meat broth into the pan and scrape the frying surface with the sauce. Add cream, mustard and pepper.
-4. Cook the sauce slowly for 5–8 minutes until it thickens a little. Return the steaks to the pan and heat for another couple of minutes.
+2. Heat the butter in a frying pan. Cook the patties over medium heat for about 4–5 minutes per side, until cooked through. Set them aside.
+3. Pour the beef stock into the pan and scrape up the browned bits. Add the cream, mustard and pepper.
+4. Simmer the sauce for 5–8 minutes, until slightly thickened. Return the patties to the pan and heat for another couple of minutes.
 5. Serve with mashed cauliflower or green vegetables.
 
 ## Notes

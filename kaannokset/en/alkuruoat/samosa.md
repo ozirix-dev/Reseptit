@@ -80,10 +80,10 @@ Crispy triangular pastries are filled with potato and peas seasoned with cumin, 
 
 ## Preparation
 
-1. Mix flour and salt. Pour in the oil. Add water and knead into a firm dough. Cover and let rest for 30 minutes.
+1. Mix the flour and salt. Rub in the dough oil with your fingertips. Add the water and knead to a firm dough. Cover and rest for 30 minutes.
 2. Boil the potatoes until cooked and dice them. Heat a splash of oil in a pan and toast the cumin.
 3. Add potatoes, peas, garam masala and chili powder. Fry for a few minutes. Stir in coriander and cool.
-4. Divide the dough into 8 parts and roll into thin ovals. Cut in half and shape the half cones by wetting the seam with water.
+4. Divide the dough into 8 pieces and roll each one into a thin oval. Cut each oval in half, then fold each half into a cone and seal the seam with water.
 5. Fill the cones with the potato mixture and close the edges carefully.
 6. Fry the samosas in 170-degree oil in batches for 6-8 minutes until they are crispy and golden brown. Drain with paper towels.
 

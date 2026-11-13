@@ -85,7 +85,7 @@ Jogurtissa ja mausteissa marinoitu kana paistuu kuumassa uunissa tai grillissä 
 1. Sekoita jogurtti, sitruunamehu, mausteet, valkosipuli, inkivääri, suola ja öljy.
 2. Pyörittele broileri marinadissa ja anna maustua jääkaapissa vähintään tunnin, mielellään yön yli.
 3. Kuumenna uuni 230 asteeseen. Nosta kana ritilälle uunipellin päälle.
-4. Sekoita jogurtti, sitruunamehu, garam masala, paprikajauhe, juustokumina, korianteri, murskattu valkosipuli, inkivääri, suola ja öljy. Kääntele broileri marinadissa ja anna maustua jääkaapissa vähintään tunnin. Paahda uunissa tai grillissä, kunnes liha on täysin kypsää.
+4. Paahda broileria 35–45 minuuttia ja käännä kerran paiston aikana. Ruskista pinta lopuksi grillivastuksen alla.
 5. Tarkista, että broilerin sisälämpötila on vähintään 75 °C. Anna levätä 5 minuuttia ennen tarjoamista.
 
 ## Muistiinpanot

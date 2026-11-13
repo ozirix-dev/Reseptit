@@ -63,7 +63,7 @@ Psyllium binder smeten utan vetemjöl.
 
 1. Värm ugnen till 220 °C och smält smöret på en plåt eller i en form.
 2. Vispa ägg, grädde, färskost, mandelmjöl, psyllium och salt till en jämn smet.
-3. Häll degen på det varma smöret och grädda i 20-25 minuter tills ytan är jäst och gyllenbrun.
+3. Häll smeten över det varma smöret och grädda i 20–25 minuter tills pannkakan har puffat upp och fått gyllenbrun färg.
 
 ## Anteckningar
 

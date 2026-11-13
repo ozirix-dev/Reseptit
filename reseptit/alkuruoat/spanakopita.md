@@ -80,7 +80,7 @@ Rapeiden filokerrosten sisään kätkeytyy pinaattia, fetaa, tilliä ja kevätsi
 2. Sekoita pinaatti, kevätsipuli, feta, kananmunat, tilli ja pippuri.
 3. Öljyä uunivuoka. Aseta vuokaan neljä filotaikina-arkkia yksi kerrallaan, sivele jokainen kevyesti öljyllä.
 4. Levitä täyte vuokaan. Peitä lopuilla filoarkeilla, voitele kerrokset öljyllä ja taita reunat sisään.
-5. Viillä pintaan annospalat ja paista 35–40 minuuttia, kunnes pinta on rapea ja kullanruskea. Anna levätä 10 minuuttia.
+5. Viillä pintaan annospalat ja paista 35–40 minuuttia, kunnes pinta on rapea ja kullanruskea ja munatäyte on hyytynyt keskeltä. Anna levätä 10 minuuttia.
 
 ## Muistiinpanot
 

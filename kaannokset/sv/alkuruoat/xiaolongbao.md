@@ -81,7 +81,7 @@ Hemgjorda soppdumplings har en fläskfyllning med kyld buljonggelé som smälter
 
 2. Blanda fläskfärs, vårlök, soja, sesamolja, ingefära och salt. Vänd försiktigt ner buljonggelén.
 
-3. Dela degen i 24 bitar, kavla tunt och lägg lite fyllning i varje. Vik ihop kanterna och nyp till.
+3. Blanda mjöl och vatten och knåda till en slät deg. Täck och låt vila i 30 minuter. Dela i 24 bitar, kavla till tunna rundlar, lägg i fyllningen, vecka kanterna och nyp ihop.
 
 4. Lägg dumplingarna på bakplåtspapper eller kålblad i ångkorgen, utan att de rör vid varandra.
 

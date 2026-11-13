@@ -85,7 +85,7 @@ Season the broth according to the fish stock concentrate's package directions. C
 
 1. Chop the onion. Rinse the leek thoroughly and slice. Cut the cauliflower into small florets.
 2. Heat the butter in a pot according to your taste. Sauté the onion and leek for a few minutes until soft.
-3. Add water, fish stock and whole black peppercorns. Bring to a boil.
+3. Add the water, fish stock concentrate and whole black peppercorns. Bring to a boil.
 4. Add the cauliflower and cook slowly for about 6-8 minutes until just tender.
 5. Cut the salmon into large cubes and add to the pot. Pour in the whipping cream and simmer on low heat for a few minutes until the salmon is cooked.
 6. Taste and add salt if necessary. Stir in the chopped dill and serve immediately.

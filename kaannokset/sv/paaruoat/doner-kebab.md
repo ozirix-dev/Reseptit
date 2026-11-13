@@ -1,5 +1,5 @@
 ---
-title: Hemlagad biff döner kebab
+title: Hemlagad dönerkebab på nötfärs
 recipe_id: doner-kebab
 url_slug: doner-kebab
 category: paaruoka
@@ -21,7 +21,7 @@ tags:
   - yoghurt
 image:
   src: paaruoat/doner-kebab.webp
-  alt: Kryddad döner kebabbiff med pitabröd, sallad och yoghurtsås
+  alt: Kryddad dönerkebab på nötfärs i pitabröd med kålsallad och yoghurtsås
   width: 1279
   height: 853
 ingredients:
@@ -72,7 +72,7 @@ carbs_total_per_serving_g: 34.37
 protein_per_serving_g: 34.92
 fat_per_serving_g: 31.09
 ---
-# Hemlagad biff döner kebab
+# Hemlagad dönerkebab på nötfärs
 
 Fyra bröd väger totalt 240 g. Kålsalladen på 200 g består av 180 g kål,10 g vinäger och 10 g olivolja. All steksky och allt stekfett ingår i portionerna.
 

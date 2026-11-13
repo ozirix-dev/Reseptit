@@ -74,7 +74,7 @@ Valmiit tortut viimeistellään vadelmalla.
 
 1. Kuumenna uuni 175 °C:seen. Sekoita kuivat aineet keskenään.
 2. Lisää sulatettu voi, kananmunat ja rahka. Jaa taikina kuuteen voideltuun muffinivuokaan.
-3. Paista 18–20 minuuttia ja jäähdytä. Paina keskelle pieni kuoppa ja lisää vadelma.
+3. Paista 18–20 minuuttia ja jäähdytä. Paina keskelle pieni kuoppa ja jaa kaikki 6 tl vadelmia tortuille.
 
 ## Muistiinpanot
 

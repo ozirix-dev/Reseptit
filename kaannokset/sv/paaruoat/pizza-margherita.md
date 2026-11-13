@@ -72,7 +72,7 @@ Den enkla fyllningen av en napolitansk pizza är tomat, mozzarella, basilika och
 1. Blanda vatten och jäst. Tillsätt mjöl och salt och knåda ihop till en deg i ca 8 minuter. Täck över och jäs på en varm plats i cirka en timme.
 2. Värm ugnen med pizzastenen så varm som möjligt, gärna 250 grader eller varmare.
 3. Dela degen i två delar och sträck ut med händerna till tunna bottnar. Lämna kanterna lite tjockare.
-4. Bred ut tomatsmulet på bottnarna och lägg i den rivna mozzarellan.
+4. Bred ut de krossade tomaterna på pizzabottnarna och fördela mozzarellan som rivits i bitar för hand.
 5. Grädda pizzorna en i taget på en het plåt eller sten i 7-10 minuter tills kanterna fått färg. Tillsätt basilika och olivolja efter stekning.
 
 ## Anteckningar

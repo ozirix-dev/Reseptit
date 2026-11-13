@@ -66,9 +66,9 @@ The home kitchen's version of Peking duck: crisply roasted duck served in thin s
 
 ## Preparation
 
-1. Dry the duck thoroughly. Mix honey, vinegar and salt in a splash of hot water and brush the mixture over the surface of the duck.
-2. Put the duck on a rack in the refrigerator without a cover for at least 6 hours to dry the skin.
-3. Heat the oven to 220 degrees. Roast the duck on the grill for about 20 minutes, turn the heat to 170 degrees and continue cooking for about 90 minutes until the internal temperature is at least 74 °C.
+1. Pat the duck dry. Mix the honey, vinegar and salt with a splash of hot water and brush the mixture over the duck.
+2. Set the duck on a rack over a rimmed tray. Refrigerate uncovered on the bottom shelf for at least 6 hours, away from ready-to-eat foods.
+3. Heat the oven to 220 °C. Roast the duck on an oven rack over a rimmed tray for about 20 minutes. Reduce to 170 °C and roast for about 90 minutes or until the thickest part of the breast and the inner thigh both reach at least 74 °C. Keep the thermometer clear of bone.
 4. Let the duck rest for 15 minutes. Cut the meat and crispy skin into thin pieces.
 5. Heat the wheat pancakes according to the packet instructions. Serve the duck with cucumber, spring onion and hoisin sauce.
 

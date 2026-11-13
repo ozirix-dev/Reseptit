@@ -91,7 +91,7 @@ Den milda bräseringen gör fläskbogen mör och låter kryddorna krydda hela bu
 
 1. Bryn fläskbitarna i en gryta på alla sidor. Ställ åt sidan en stund.
 2. Lägg vitlök, kinesisk femkrydda, kanel och stjärnanis i grytan. Fräs i cirka 30 sekunder.
-3. Häll i kycklingbuljongen. Tillsätt sojasås, fisksås och erytritol. Lägg tillbaka fläsket i grytan.
+3. Häll i kycklingbuljongen. Tillsätt ljus soja, båda angivna mängderna fisksås och erytritol. Lägg tillbaka fläsket i grytan.
 4. Täck med lock och låt sjuda på mycket låg värme i ca 2,5 timme eller tills köttet är mjukt.
 5. Tillsätt de skalade kokta äggen de sista 20 minuterna. Ta bort fläsket och äggen från buljongen.
 6. Koka eller ånga kinakål snabbt. Hetta upp blomkålsriset i en panna.

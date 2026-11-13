@@ -75,7 +75,7 @@ Täytteeksi tulee sipulilla maustettua naudan jauhelihaa.
 1. Kuumenna uuni 200 °C:seen. Sulata juusto ja tuorejuusto varovasti ja sekoita mantelijauho sekä yksi kananmuna joukkoon.
 2. Painele taikina leivinpaperilla vuoratun piirakkavuoan pohjalle ja reunoille.
 3. Ruskista jauheliha ja sipuli ja mausta.
-4. Sekoita toinen kananmuna täytteeseen, kaada vuokaan ja paista noin 30 minuuttia.
+4. Sekoita toinen kananmuna täytteeseen. Levitä täyte piirakkapohjalle ja paista noin 30 minuuttia, kunnes täyte on kauttaaltaan kypsää ja hyytynyt.
 
 ## Muistiinpanot
 

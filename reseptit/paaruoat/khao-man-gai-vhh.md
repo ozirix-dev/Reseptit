@@ -60,7 +60,7 @@ Kypsennysliemestä saa kevyen kirkkaan liemen tarjoiluun. Inkiväärikastike on 
 2. Kypsennä kannen alla 15–20 minuuttia, kunnes broilerin sisälämpö on vähintään 75 °C. Nosta liha liemestä ja anna levätä.
 3. Sekoita inkivääri, soijapaputahna, kalakastike, limettimehu ja valkosipuli kastikkeeksi. Ohenna tarvittaessa lusikallisella lientä.
 4. Kuumenna kukkakaaliriisi pannulla pehmeäksi ja mausta kevyesti.
-5. Viipaloi broileri ja tarjoa riisin, kurkun, kastikkeen ja korianterin kanssa. Tarjoa halutessasi lientä erikseen.
+5. Viipaloi broileri ja tarjoa kukkakaaliriisin, kurkun, kastikkeen ja korianterin kanssa. Tarjoa halutessasi lientä erikseen.
 
 ## Muistiinpanot
 

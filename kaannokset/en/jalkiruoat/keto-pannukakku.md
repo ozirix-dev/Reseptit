@@ -63,7 +63,7 @@ Psyllium binds the batter without wheat flour.
 
 1. Heat the oven to 220 °C and melt the butter on a baking sheet or in a pan.
 2. Beat the eggs, cream, cream cheese, almond flour, psyllium and salt until smooth.
-3. Pour the dough onto the hot butter and bake for 20-25 minutes until the surface is risen and golden brown.
+3. Pour the batter onto the hot butter and bake for 20–25 minutes, until puffed and golden.
 
 ## Notes
 
