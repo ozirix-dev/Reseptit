@@ -25,6 +25,7 @@ import { reviewedThreeCanonicalPaths, originalForThreeCanonicalHistory } from ".
 import {fileURLToPath} from 'node:url';
 import { jumeokbapSourcePath, originalForJumeokbapHistory } from "./jumeokbap-history";
 import { bissaraSourcePath, originalForBissaraHistory } from "./bissara-history";
+import { ketoprakSourcePath, originalForKetoprakHistory } from "./ketoprak-history";
 import {projectTranslationAuditSource} from '../scripts/translation-audit';
 
 const root=fileURLToPath(new URL('../../',import.meta.url));
@@ -143,9 +144,9 @@ test('Live original results preserve frozen history plus the exact reviewed tran
     return {...row,notes:(frozen.split('## Muistiinpanot')[1]?.trim() ?? '').replaceAll('\n',lineEnding),
       source_content_hash:createHash('sha256').update(frozen).digest('hex')};
    }
-   if (row.source_path === jumeokbapSourcePath || row.source_path === bissaraSourcePath) {
+   if (row.source_path === jumeokbapSourcePath || row.source_path === bissaraSourcePath || row.source_path === ketoprakSourcePath) {
     const published = read(row.source_path).replaceAll('\r\n', '\n');
-    const frozen = originalForBissaraHistory(root, row.source_path, originalForJumeokbapHistory(root, row.source_path, published));
+    const frozen = originalForKetoprakHistory(root, row.source_path, originalForBissaraHistory(root, row.source_path, originalForJumeokbapHistory(root, row.source_path, published)));
     assert.equal(row.source_content_hash, createHash('sha256').update(published).digest('hex'));
     assert.equal(normalNotes, (published.split('## Muistiinpanot')[1]?.trim() ?? '').replaceAll('\n', lineEnding));
     return {...row, notes: (frozen.split('## Muistiinpanot')[1]?.trim() ?? '').replaceAll('\n', lineEnding),
