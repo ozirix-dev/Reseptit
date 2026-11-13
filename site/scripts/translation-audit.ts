@@ -15,6 +15,9 @@ import { breakfastFiQualityPaths, projectBreakfastFiQualityDisplay } from "./fi-
 
 import { material21FiPaths, projectMaterial21FiDisplay } from "./material21-fi-public-display";
 import { projectC13FiDisplay } from "./c13-fi-public-display";
+import { projectMaterial21MethodsFi, material21MethodPaths } from "./material21-methods-public-display";
+import { projectHuevosFiPublicPreparation } from "./huevos-c5-fi-public-preparation";
+import { projectJianbingC5FiPublicNote } from "./jianbing-c5-fi-public-note";
 import { isPublicRecipeQuarantined } from "./public-recipe-quarantine";
 
 const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
@@ -159,13 +162,33 @@ export function knownTermErrors(source: Frontmatter, target: Frontmatter, locale
   return [...new Set(issues)];
 }
 
+const c13AuditPaths = [
+  "reseptit/aamupalat/indialainen-poha-maapahkinoilla.md",
+  "reseptit/aamupalat/lahi-ita-manakish-zaatarilla.md",
+  "reseptit/aamupalat/valimerellinen-halloumi-tomaattileipa.md",
+  "reseptit/aamupalat/intialainen-mannasuurimoupma.md",
+  "reseptit/aamupalat/malesialainen-kaya-paahtoleipa.md",
+];
+
 export function projectTranslationAuditSource(file: string, raw: string): string {
-  if (file === "reseptit/aamupalat/indialainen-poha-maapahkinoilla.md" ||
-      file === "reseptit/aamupalat/lahi-ita-manakish-zaatarilla.md" ||
-      file === "reseptit/aamupalat/valimerellinen-halloumi-tomaattileipa.md")
-    return projectC13FiDisplay(file, raw);
-  return projectMaterial21FiDisplay(file, projectBreakfastFiQualityDisplay(file, raw));
+  if (c13AuditPaths.includes(file)) return projectC13FiDisplay(file, raw);
+  return [
+    projectHuevosFiPublicPreparation,
+    projectJianbingC5FiPublicNote,
+    projectBreakfastFiQualityDisplay,
+    projectMaterial21FiDisplay,
+    projectMaterial21MethodsFi,
+  ].reduce((text, project) => project(file, text), raw);
 }
+
+const projectedAuditPaths = new Set([
+  ...c13AuditPaths,
+  ...material21FiPaths,
+  ...material21MethodPaths,
+  ...breakfastFiQualityPaths,
+  "reseptit/aamupalat/kiinalainen-jianbing-munaletty.md",
+  "reseptit/aamupalat/meksikolainen-huevos-divorciados.md",
+]);
 
 export async function auditTranslations(recipeIds?: string[]): Promise<TranslationAuditResult> {
   const filter = recipeIds ? new Set(recipeIds) : undefined;
@@ -174,13 +197,8 @@ export async function auditTranslations(recipeIds?: string[]): Promise<Translati
   // Use the exact SHA-locked public FI display when auditing meaning and
   // generating source semantic hashes for translations. Raw FI files stay
   // untouched for the separate nutrition/GK and source-blob validation.
-  // C13 is used for the recipes whose translations follow the reviewed public methods.
   const publicSources = await Promise.all(rawSources.map(async (source) => {
-    const useC13Display = source.path === "reseptit/aamupalat/indialainen-poha-maapahkinoilla.md" ||
-      source.path === "reseptit/aamupalat/lahi-ita-manakish-zaatarilla.md" ||
-      source.path === "reseptit/aamupalat/valimerellinen-halloumi-tomaattileipa.md";
-    const useMaterial21Display = material21FiPaths.includes(source.path);
-    if (!useC13Display && !useMaterial21Display && !breakfastFiQualityPaths.includes(source.path)) return source;
+    if (!projectedAuditPaths.has(source.path)) return source;
     const raw = await readFile(path.join(repoRoot, source.path), "utf8");
     const projected = parseMarkdown(projectTranslationAuditSource(source.path, raw));
     if (!projected) throw Error("FI_PROJECTED_AUDIT_NO_FRONTMATTER: " + source.path);
