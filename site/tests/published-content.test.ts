@@ -97,7 +97,7 @@ test("the Finnish breakfast and dessert collections exclude quarantined unsafe r
   assert.equal(cocoa.servings, 1);
   assert.equal(cocoa.image?.alt, "Kuvitus höyryävästä tummasta kaakaosta vaaleassa kupissa lautasella");
   assert.deepEqual(cocoa.nutrition, { carbsNetG: null, carbsTotalG: null, proteinG: null, fatG: null });
-  assert.equal(siteContent.recipes.filter(recipe => recipe.recipeId === cocoa.recipeId).length, 1);
+  assert.deepEqual(siteContent.recipes.filter(recipe => recipe.recipeId === cocoa.recipeId).map(recipe => recipe.locale).sort(), ["en", "fi", "sv", "th"]);
   const chia = breakfast.find(recipe => recipe.recipeId === "lammin-chia-puuro-rouva-keto");
   assert.ok(chia);
   assert.equal(chia.servings, 2);
