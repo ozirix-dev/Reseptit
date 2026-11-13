@@ -84,8 +84,8 @@ Lime juice is added at the end to preserve its fresh taste. You can leave out th
 
 1. Heat the water and dissolve the crushed fish stock cube in it. Add lemongrass, fresh ginger, kaffir lime leaves and chili. Simmer for 8 minutes.
 2. Add mushrooms and tomatoes. Cook for 3 minutes.
-3. Add the prawns and cook for 2-3 minutes until they turn pink.
-4. Remove the pot from the stove. Season with fish sauce and lime juice.
+3. Add the prawns and cook for about 2–3 minutes, or longer if needed, until the flesh is pearly and opaque throughout.
+4. Take the pot off the heat. Remove the lemongrass and lime leaves. Season with fish sauce and lime juice.
 5. Check the taste, finish with cilantro and serve immediately.
 
 ## Notes

@@ -69,7 +69,7 @@ Varje färdig tårta garneras med ett hallon.
 
 1. Värm ugnen till 175°C. Blanda ihop de torra ingredienserna.
 2. Tillsätt smält smör, ägg och kvarg. Fördela smeten i sex smorda muffinsformar.
-3. Grädda i 18–20 minuter och svalna. Gör en liten brunn i mitten och tillsätt ett hallon.
+3. Grädda i 18–20 minuter och låt svalna. Gör en liten grop mitt i varje bakelse och fördela alla 6 tsk hallon i groparna.
 
 ## Anteckningar
 

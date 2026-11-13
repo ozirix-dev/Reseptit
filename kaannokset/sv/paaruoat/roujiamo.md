@@ -79,11 +79,11 @@ Roujiamo är känd för Xi'an street food och fyller en krispig pannkaka med lå
 
 ## Tillagning
 
-1. Lägg fläsk, vatten, sojasås, kanel, stjärnanis, spiskummin och salt i en kastrull. Koka upp och låt puttra under lock i ca 2 timmar tills köttet lätt faller isär.
+1. Lägg fläsket, vattnet, båda sojasåserna, kanelen, stjärnanisen, spiskumminen och saltet i en kastrull. Koka upp och sjud under lock i cirka 2 timmar tills köttet lätt faller isär.
 2. Blanda mjöl, varmt vatten och jäst. Knåda ihop till en smidig deg och låt jäsa övertäckt i ca 45 minuter.
-3. Dela degen i fyra delar. Rulla till runda bröd, cirka en centimeter tjocka.
+3. Dela degen i fyra delar. Kavla ut varje del till ett runt bröd, cirka en centimeter tjockt.
 4. Stek bröden i torr panna på medelvärme ca 4-5 minuter på varje sida, tills de är genomstekta och fått bruna fläckar.
-5. Hacka det stuvade köttet och blanda i lite matlagningsfond och vårlök. Dela bröden och fyll med kött.
+5. Hacka det bräserade köttet och blanda det med lite kokspad och vårlök. Dela bröden och fyll dem med köttet.
 
 ## Anteckningar
 

@@ -69,8 +69,8 @@ Soft rice dough balls are filled with sweet sesame paste and served in a warm gi
 1. Grind sesame seeds finely and mix with sugar and soft butter. Refrigerate the filling to set.
 2. Mix the glutinous rice flour with the warm water. Knead to a soft, smooth dough.
 3. Divide the dough into 16 pieces. Flatten the piece, add a small dollop of filling in the middle and close the dough into a ball.
-4. Boil water, sugar and sliced ​​ginger in a pot. Simmer for 10 minutes.
-5. Cook rice balls in batches in gently bubbling water for 5-6 minutes until they rise to the surface. Transfer to bowls and pour over the ginger stock.
+4. Bring the water, sugar and sliced ginger to a boil in a pot. Simmer for 10 minutes.
+5. Cook the rice balls in batches in a separate pot of gently simmering water for 5–6 minutes, until they float. Lift into bowls and pour over the sweet ginger syrup.
 
 ## Notes
 

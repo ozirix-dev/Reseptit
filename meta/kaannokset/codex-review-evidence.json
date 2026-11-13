@@ -186,15 +186,20 @@
   },
   "doner-kebab:sv": {
     "source_hash": "39a40f23281bd75526d364d63f970f8a41d88a885fe6de448cf13edb3afadc82",
-    "translation_hash": "1a746ce3d16c765ad145a759a91d55e0e84d35f06f1a4786e9f653efae7574ea",
-    "reviewed_at": "2026-11-04",
-    "reference": "V2 riskierä / lähdecommit 6034aa9880dbc774639e58c2926c05f6100e7fc6",
+    "translation_hash": "2a22fe718e464187d58356334db03015a5446331f329bd233537673d9b9a7df9",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Ruotsin otsikko kertoo naudan jauhelihasta. Jauhelihalevy paistetaan läpikypsäksi, ja koko paistoliemi sekä kaalisalaatti jaetaan neljään nimettyyn pitaleipään.",
     "outcome": "pass",
     "findings": [
       {
         "severity": "P2",
-        "status": "open",
+        "status": "fixed",
         "summary": "Otsikon biff voi antaa mielikuvan pihvistä. Ainesluettelo ja valmistus yksilöivät naudan jauhelihan."
+      },
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "Ruotsin otsikko kertoo naudan jauhelihasta. Jauhelihalevy paistetaan läpikypsäksi, ja koko paistoliemi sekä kaalisalaatti jaetaan neljään nimettyyn pitaleipään."
       }
     ]
   },
@@ -266,15 +271,20 @@
   },
   "gai-yang-vhh:th": {
     "source_hash": "cb57ce3fb2e6a50c91ed7e2898b2984c62833f069783e9a7ada355ec9a987e01",
-    "translation_hash": "8c37211eee65e66f8f178befb58ea524d50ae61c8952e158a0a8e5a222c2a7fc",
-    "reviewed_at": "2026-11-04",
-    "reference": "V2 riskierä 2, main 358bbadf9e8f28db254bcfc3bd68c4bdcc8f6e5c",
+    "translation_hash": "623331c38cb80ccaf6bcca4772d4bdd4f496cbbc05d5b39c1293f70d1933cc14",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Thai-ohjeessa broileri marinoidaan jääkaapissa, erotetaan uuni ja grilli ja tarkistetaan kypsyys paksuimmasta kohdasta. Kuvatekstin toisto poistettiin.",
     "outcome": "pass",
     "findings": [
       {
         "severity": "P2",
-        "status": "open",
+        "status": "fixed",
         "summary": "Grillivastuksen termi ja alt-tekstin toisto tarvitsevat kielenhuoltoa."
+      },
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "Thai-ohjeessa broileri marinoidaan jääkaapissa, erotetaan uuni ja grilli ja tarkistetaan kypsyys paksuimmasta kohdasta. Kuvatekstin toisto poistettiin."
       }
     ]
   },
@@ -437,26 +447,37 @@
   "hyderabadi-kanabiryani:en": {
     "source_hash": "aa55df3398aaa1aef6a453675f91db9944bcf522979cf9f5ce54433f554637fe",
     "translation_hash": "ec9e71e532bae5403e83bbfb0d7c0e7eaea7022d0ef112d47cc7c43d7fe08854",
-    "reviewed_at": "2026-11-04",
-    "reference": "https://github.com/ozirix-dev/Reseptit/pull/262",
-    "outcome": "pass",
-    "findings": []
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Ohje käyttää sahramimaitoa kaikilla kielillä, mutta maitoa tai sen määrää ei ole alkuperäisen reseptin ainesluettelossa. Erillinen GK-versio ei ratkaise alkuperäisen raaka-ainemäärää.",
+    "outcome": "human-required",
+    "findings": [
+      {
+        "severity": "P1",
+        "status": "open",
+        "summary": "Ohje käyttää sahramimaitoa kaikilla kielillä, mutta maitoa tai sen määrää ei ole alkuperäisen reseptin ainesluettelossa. Erillinen GK-versio ei ratkaise alkuperäisen raaka-ainemäärää."
+      }
+    ]
   },
   "hyderabadi-kanabiryani:sv": {
     "source_hash": "aa55df3398aaa1aef6a453675f91db9944bcf522979cf9f5ce54433f554637fe",
     "translation_hash": "56be2b703a41d9b16cbe786be0b48577f55c8dc42fa3ec4d22baf30a1f4da58a",
-    "reviewed_at": "2026-11-04",
-    "reference": "https://github.com/ozirix-dev/Reseptit/pull/262",
-    "outcome": "pass",
-    "findings": []
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Ohje käyttää sahramimaitoa kaikilla kielillä, mutta maitoa tai sen määrää ei ole alkuperäisen reseptin ainesluettelossa. Erillinen GK-versio ei ratkaise alkuperäisen raaka-ainemäärää.",
+    "outcome": "human-required",
+    "findings": [
+      {
+        "severity": "P1",
+        "status": "open",
+        "summary": "Ohje käyttää sahramimaitoa kaikilla kielillä, mutta maitoa tai sen määrää ei ole alkuperäisen reseptin ainesluettelossa. Erillinen GK-versio ei ratkaise alkuperäisen raaka-ainemäärää."
+      }
+    ]
   },
   "hyderabadi-kanabiryani:th": {
     "source_hash": "aa55df3398aaa1aef6a453675f91db9944bcf522979cf9f5ce54433f554637fe",
     "translation_hash": "58248898574d41a60b0c875c1f3153463571fdf24e9781e427db69abdc8099a3",
-    "reviewed_at": "2026-11-04",
-    "reference": "https://github.com/ozirix-dev/Reseptit/pull/262",
-    "correction_pr": 262,
-    "outcome": "pass",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Ohje käyttää sahramimaitoa kaikilla kielillä, mutta maitoa tai sen määrää ei ole alkuperäisen reseptin ainesluettelossa. Erillinen GK-versio ei ratkaise alkuperäisen raaka-ainemäärää.",
+    "outcome": "human-required",
     "findings": [
       {
         "severity": "P1",
@@ -467,6 +488,11 @@
         "severity": "P1",
         "status": "fixed",
         "summary": "Jauhettu korianterinsiemen erotetaan tuoreesta korianterista."
+      },
+      {
+        "severity": "P1",
+        "status": "open",
+        "summary": "Ohje käyttää sahramimaitoa kaikilla kielillä, mutta maitoa tai sen määrää ei ole alkuperäisen reseptin ainesluettelossa. Erillinen GK-versio ei ratkaise alkuperäisen raaka-ainemäärää."
       }
     ]
   },
@@ -676,33 +702,50 @@
   },
   "jauhelihapihvit-vhh-kermakastikkeella:en": {
     "source_hash": "767add5ba3226bbcd4a240b0a2f6336bb9bafa575b461899441c5f3cbc38b5a2",
-    "translation_hash": "f3a83aa2d3d98813856467d29f16cc63df8101f6a8d2bd8f0c4cb8f120c88be1",
-    "reviewed_at": "2026-11-04",
-    "reference": "V2 riskierä 2, main 358bbadf9e8f28db254bcfc3bd68c4bdcc8f6e5c",
+    "translation_hash": "204d48e52c195badeb32ba46d93d4d4c716e0022f4d055a5bc71a73ac1288c23",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Käännökset kuvaavat jauhelihapihvit ja paistopinnan irrottamisen liemellä. Pihvit kypsennetään läpi ennen kastiketta.",
     "outcome": "pass",
     "findings": [
       {
         "severity": "P2",
-        "status": "open",
+        "status": "fixed",
         "summary": "Ohje puhuu pihvilihasta (steaks) jauhelihapihvien sijaan ja pannun paistopinnan irrotus on kömpelö."
+      },
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "Käännökset kuvaavat jauhelihapihvit ja paistopinnan irrottamisen liemellä. Pihvit kypsennetään läpi ennen kastiketta."
       }
     ]
   },
   "jauhelihapihvit-vhh-kermakastikkeella:sv": {
     "source_hash": "767add5ba3226bbcd4a240b0a2f6336bb9bafa575b461899441c5f3cbc38b5a2",
-    "translation_hash": "055d402e969cb1e43b30e8a48bf4ec3f8693730ab06445d1d68626d2d916b128",
-    "reviewed_at": "2026-11-04",
-    "reference": "V2 riskierä 2, main 358bbadf9e8f28db254bcfc3bd68c4bdcc8f6e5c",
+    "translation_hash": "2a1cc8136619feecbebc2acc8240095738dbb2247481f9c5db95d5b2cb5cbed2",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Käännökset kuvaavat jauhelihapihvit ja paistopinnan irrottamisen liemellä. Pihvit kypsennetään läpi ennen kastiketta.",
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "Käännökset kuvaavat jauhelihapihvit ja paistopinnan irrottamisen liemellä. Pihvit kypsennetään läpi ennen kastiketta."
+      }
+    ]
   },
   "jauhelihapihvit-vhh-kermakastikkeella:th": {
     "source_hash": "767add5ba3226bbcd4a240b0a2f6336bb9bafa575b461899441c5f3cbc38b5a2",
-    "translation_hash": "4b15b5bd25d62349172cc47e0aab6826a484451c43347d12c2737491f56a06d3",
-    "reviewed_at": "2026-11-04",
-    "reference": "V2 riskierä 2, main 358bbadf9e8f28db254bcfc3bd68c4bdcc8f6e5c",
+    "translation_hash": "469780f016cced0e4347d409d97f244872eb43e96c464d8b0dbf1a6c1cf6043e",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Käännökset kuvaavat jauhelihapihvit ja paistopinnan irrottamisen liemellä. Pihvit kypsennetään läpi ennen kastiketta.",
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "Käännökset kuvaavat jauhelihapihvit ja paistopinnan irrottamisen liemellä. Pihvit kypsennetään läpi ennen kastiketta."
+      }
+    ]
   },
   "jerk-kana:en": {
     "source_hash": "ba57a87d82ae75cd8b7c39160d2567928eb6062dde4b5c0182fe6034081b3ed6",
@@ -1171,43 +1214,58 @@
   },
   "keltainen-kanacurry-vhh:en": {
     "source_hash": "ef0e01433ec55e40f3f122c551c2dfe0eac5e7caadaeb13e66911ed1b20092ac",
-    "translation_hash": "bac9d7f8f5e23f09cd2f95197df504e4a7dc4f42bbb06b43d3aa954f9d04d330",
-    "reviewed_at": "2026-11-04",
-    "reference": "V2 riskierä 2, main 358bbadf9e8f28db254bcfc3bd68c4bdcc8f6e5c",
+    "translation_hash": "3f7cf9278d31752df20209b126adb7c8c9a018e8f09d8b349ab8eb5d605096b7",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Kuvauksessa kukkakaali imee kastiketta. Thai-ohjeessa tahnaa paistetaan minuutti ja kukkakaali kypsennetään samassa curryliemessä.",
     "outcome": "pass",
     "findings": [
       {
         "severity": "P2",
-        "status": "open",
+        "status": "fixed",
         "summary": "Kuvauksesta voi lukea, että peruna imee kastiketta, vaikka tässä reseptissä käytetään kukkakaalia."
+      },
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "Kuvauksessa kukkakaali imee kastiketta. Thai-ohjeessa tahnaa paistetaan minuutti ja kukkakaali kypsennetään samassa curryliemessä."
       }
     ]
   },
   "keltainen-kanacurry-vhh:sv": {
     "source_hash": "ef0e01433ec55e40f3f122c551c2dfe0eac5e7caadaeb13e66911ed1b20092ac",
-    "translation_hash": "ea451bbcdbbe8f4ae0bcdfd5ac87ba42f7d8a68b433fe66b252975e000a8976c",
-    "reviewed_at": "2026-11-04",
-    "reference": "V2 riskierä 2, main 358bbadf9e8f28db254bcfc3bd68c4bdcc8f6e5c",
+    "translation_hash": "30488ec16f7b6e1e564e3dbaadc6eccc2375430662d193ca0a915ca7dbcd2112",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Kuvauksessa kukkakaali imee kastiketta. Thai-ohjeessa tahnaa paistetaan minuutti ja kukkakaali kypsennetään samassa curryliemessä.",
     "outcome": "pass",
     "findings": [
       {
         "severity": "P2",
-        "status": "open",
+        "status": "fixed",
         "summary": "Kuvauksesta voi lukea, että peruna imee kastiketta, vaikka tässä reseptissä käytetään kukkakaalia."
+      },
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "Kuvauksessa kukkakaali imee kastiketta. Thai-ohjeessa tahnaa paistetaan minuutti ja kukkakaali kypsennetään samassa curryliemessä."
       }
     ]
   },
   "keltainen-kanacurry-vhh:th": {
     "source_hash": "ef0e01433ec55e40f3f122c551c2dfe0eac5e7caadaeb13e66911ed1b20092ac",
-    "translation_hash": "ce51072d90c01423ef553f8c1be4a93486a6497a7e32e1bcb871ab14740d58fe",
-    "reviewed_at": "2026-11-04",
-    "reference": "V2 riskierä 2, main 358bbadf9e8f28db254bcfc3bd68c4bdcc8f6e5c",
+    "translation_hash": "e6b9c3a32cf4362e7ae9fdd2c0194fb57bb464fa9d0f53cd065801086e45e557",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Kuvauksessa kukkakaali imee kastiketta. Thai-ohjeessa tahnaa paistetaan minuutti ja kukkakaali kypsennetään samassa curryliemessä.",
     "outcome": "pass",
     "findings": [
       {
         "severity": "P2",
-        "status": "open",
+        "status": "fixed",
         "summary": "Täsmennä tahnan paistoaika yhteen minuuttiin ja kuvaa kukkakaalin kypsyminen samassa curryliemessä. Käännöstiedosto on sidottu hyväksyttyyn GK-versioon."
+      },
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "Kuvauksessa kukkakaali imee kastiketta. Thai-ohjeessa tahnaa paistetaan minuutti ja kukkakaali kypsennetään samassa curryliemessä."
       }
     ]
   },
@@ -1261,19 +1319,31 @@
   },
   "keto-pannukakku:en": {
     "source_hash": "5f32373aab6aebf510a12dff72bbf512923143e25b6229e55da15a0633ca8d01",
-    "translation_hash": "2645470a08624809319f294feec58ae419bef7c84c0d462450a6a5e6d7a4c2ac",
-    "reviewed_at": "2026-11-04",
-    "reference": "V2 riskierä 2, main 358bbadf9e8f28db254bcfc3bd68c4bdcc8f6e5c",
+    "translation_hash": "51d7a9f586ed85700d0fa1d8171becdfc78061906661b6b90dac04a1e1d7a760",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Käännöksissä juokseva taikina kaadetaan kuumalle voille ja paistetaan 20–25 minuuttia.",
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "Käännöksissä juokseva taikina kaadetaan kuumalle voille ja paistetaan 20–25 minuuttia."
+      }
+    ]
   },
   "keto-pannukakku:sv": {
     "source_hash": "5f32373aab6aebf510a12dff72bbf512923143e25b6229e55da15a0633ca8d01",
-    "translation_hash": "62f72b16ea9448fa77b5e1bb034a0652dbf60d0b4dc73e81d0ce9e739e6ed5bf",
-    "reviewed_at": "2026-11-04",
-    "reference": "V2 riskierä 2, main 358bbadf9e8f28db254bcfc3bd68c4bdcc8f6e5c",
+    "translation_hash": "c18c59fc5cd7a16e7b5c5905b3f1c4ff7cf8f510510c0742656bf3befa93c50b",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Käännöksissä juokseva taikina kaadetaan kuumalle voille ja paistetaan 20–25 minuuttia.",
     "outcome": "pass",
-    "findings": []
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "Käännöksissä juokseva taikina kaadetaan kuumalle voille ja paistetaan 20–25 minuuttia."
+      }
+    ]
   },
   "keto-pannukakku:th": {
     "source_hash": "5f32373aab6aebf510a12dff72bbf512923143e25b6229e55da15a0633ca8d01",
@@ -1314,80 +1384,111 @@
     "findings": []
   },
   "khao-kha-moo-vhh:en": {
-    "source_hash": "f4a084d763bd69b1d9ac214d1d80d16e5d2ec2d41d14a0c90ea7aeb3d82845ba",
-    "translation_hash": "170d4366cc711338660fd52dd0ff9216f0fdc16a443bdd887d89964dbec8d59c",
-    "reviewed_at": "2026-11-04",
-    "reference": "V2 riskierä 2, main 358bbadf9e8f28db254bcfc3bd68c4bdcc8f6e5c",
+    "source_hash": "4aac5d1df526ef6186a26aa4e5c18326732b10459dd233ec6435d44f24c97cf1",
+    "translation_hash": "ae97a22dffb25fac99106611d98ca40923330f35fb4e497463cf232e95b239da",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Kahden luetteloidun kalakastikerivin käyttö selvennettiin. Soijakastike on ainesluettelon vaalea soija, ja jo keitetyt munat lisätään viimeiseksi 20 minuutiksi.",
     "outcome": "pass",
     "findings": [
       {
         "severity": "P1",
         "status": "fixed",
         "summary": "Kuvaus käyttää porsaan lapaa ja ohje ruskistaa padassa."
+      },
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "Kahden luetteloidun kalakastikerivin käyttö selvennettiin. Soijakastike on ainesluettelon vaalea soija, ja jo keitetyt munat lisätään viimeiseksi 20 minuutiksi."
       }
     ]
   },
   "khao-kha-moo-vhh:sv": {
-    "source_hash": "f4a084d763bd69b1d9ac214d1d80d16e5d2ec2d41d14a0c90ea7aeb3d82845ba",
-    "translation_hash": "cc560ed61d10b3bd1f93699afcaf67d7fcce0d2279478fb372c15e3ba72c067a",
-    "reviewed_at": "2026-11-04",
-    "reference": "V2 riskierä 2, main 358bbadf9e8f28db254bcfc3bd68c4bdcc8f6e5c",
+    "source_hash": "4aac5d1df526ef6186a26aa4e5c18326732b10459dd233ec6435d44f24c97cf1",
+    "translation_hash": "10f6ed620b43705dc05f50f045a2e6bbd1c6586b244317d31dfa46f3283462c9",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Kahden luetteloidun kalakastikerivin käyttö selvennettiin. Soijakastike on ainesluettelon vaalea soija, ja jo keitetyt munat lisätään viimeiseksi 20 minuutiksi.",
     "outcome": "pass",
     "findings": [
       {
         "severity": "P1",
         "status": "fixed",
         "summary": "Kuvaus käyttää porsaan lapaa, ruskistus tapahtuu padassa ja liemi on kanalientä."
+      },
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "Kahden luetteloidun kalakastikerivin käyttö selvennettiin. Soijakastike on ainesluettelon vaalea soija, ja jo keitetyt munat lisätään viimeiseksi 20 minuutiksi."
       }
     ]
   },
   "khao-kha-moo-vhh:th": {
-    "source_hash": "f4a084d763bd69b1d9ac214d1d80d16e5d2ec2d41d14a0c90ea7aeb3d82845ba",
-    "translation_hash": "77451c9dad7be69b986b16251ab2818ad327c5407f1b5905a5da7ec9a6a671d0",
-    "reviewed_at": "2026-11-04",
-    "reference": "V2 riskierä 2, main 358bbadf9e8f28db254bcfc3bd68c4bdcc8f6e5c",
+    "source_hash": "4aac5d1df526ef6186a26aa4e5c18326732b10459dd233ec6435d44f24c97cf1",
+    "translation_hash": "7c6f586a2262112f3dbbc1a095c89a23993e345443fde6e6df2d1b40e512494e",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Kahden luetteloidun kalakastikerivin käyttö selvennettiin. Soijakastike on ainesluettelon vaalea soija, ja jo keitetyt munat lisätään viimeiseksi 20 minuutiksi.",
     "outcome": "pass",
     "findings": [
       {
         "severity": "P1",
         "status": "fixed",
         "summary": "Kuvaus käyttää porsaan lapaa ja ohje ruskistaa padassa."
+      },
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "Kahden luetteloidun kalakastikerivin käyttö selvennettiin. Soijakastike on ainesluettelon vaalea soija, ja jo keitetyt munat lisätään viimeiseksi 20 minuutiksi."
       }
     ]
   },
   "khao-man-gai-vhh:en": {
-    "source_hash": "5e61aec53a36e7a45fb07bbdd27d09307937178fb691e37753480e0d63bb6fe2",
-    "translation_hash": "f2b486c2d7455ac723d6932c55ff17e39c1bd827eb9a793ae7da7978d3eb6121",
-    "reviewed_at": "2026-11-04",
-    "reference": "V2 riskierä / lähdecommit 6034aa9880dbc774639e58c2926c05f6100e7fc6",
-    "outcome": "pass",
-    "findings": []
-  },
-  "khao-man-gai-vhh:sv": {
-    "source_hash": "5e61aec53a36e7a45fb07bbdd27d09307937178fb691e37753480e0d63bb6fe2",
-    "translation_hash": "8d820428c9cf7dfd2f39ff73d3085993ac17fdab0133a05af72e8d296bd5eb34",
-    "reviewed_at": "2026-11-04",
-    "reference": "V2 riskierä / lähdecommit 6034aa9880dbc774639e58c2926c05f6100e7fc6",
+    "source_hash": "48b61b2ec3841fcdbda84f1a612e228350611d2f5514ebd07e0475af0846b1e4",
+    "translation_hash": "0d7bf63e2f8abc36ccc4c3521fb7f78e244cd5a0a691fa672b69980e08d2e6bd",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Tarjoiluvaiheessa nimetään kukkakaaliriisi ja ruotsin ohjeessa kastiketta ohennetaan keitinliemellä. Broileri kypsennetään vähintään 75 °C:een, ja kastikkeessa käytetään nimettyä soijapaputahnaa.",
     "outcome": "pass",
     "findings": [
       {
         "severity": "P2",
-        "status": "open",
+        "status": "fixed",
+        "summary": "Tarjoiluvaiheessa nimetään kukkakaaliriisi ja ruotsin ohjeessa kastiketta ohennetaan keitinliemellä. Broileri kypsennetään vähintään 75 °C:een, ja kastikkeessa käytetään nimettyä soijapaputahnaa."
+      }
+    ]
+  },
+  "khao-man-gai-vhh:sv": {
+    "source_hash": "48b61b2ec3841fcdbda84f1a612e228350611d2f5514ebd07e0475af0846b1e4",
+    "translation_hash": "f2f04f60ca97418064b6aa4413b65d6d19bc468c3794cdfbfdfbf6e954ae18fb",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Tarjoiluvaiheessa nimetään kukkakaaliriisi ja ruotsin ohjeessa kastiketta ohennetaan keitinliemellä. Broileri kypsennetään vähintään 75 °C:een, ja kastikkeessa käytetään nimettyä soijapaputahnaa.",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
         "summary": "Kypsennysohjeen broilern on suomesta siirtynyt termi. Kastiketta ohennetaan kypsennysliemellä, vaikka ruotsi puhuu fondista."
+      },
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "Tarjoiluvaiheessa nimetään kukkakaaliriisi ja ruotsin ohjeessa kastiketta ohennetaan keitinliemellä. Broileri kypsennetään vähintään 75 °C:een, ja kastikkeessa käytetään nimettyä soijapaputahnaa."
       }
     ]
   },
   "khao-man-gai-vhh:th": {
-    "source_hash": "5e61aec53a36e7a45fb07bbdd27d09307937178fb691e37753480e0d63bb6fe2",
-    "translation_hash": "2f00b24d48d45d886bb5c450a9c3a5680674ed548dec01178db2a9045e175524",
-    "reviewed_at": "2026-11-04",
-    "reference": "V2 riskierä / lähdecommit 6034aa9880dbc774639e58c2926c05f6100e7fc6",
+    "source_hash": "48b61b2ec3841fcdbda84f1a612e228350611d2f5514ebd07e0475af0846b1e4",
+    "translation_hash": "ee7b5dc2ee3f7e8bbca2aeb6c7ed78e19aae5bfc1c473f0d1aa9b148f86e9c1a",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Tarjoiluvaiheessa nimetään kukkakaaliriisi ja ruotsin ohjeessa kastiketta ohennetaan keitinliemellä. Broileri kypsennetään vähintään 75 °C:een, ja kastikkeessa käytetään nimettyä soijapaputahnaa.",
     "outcome": "pass",
     "findings": [
       {
         "severity": "P2",
-        "status": "open",
+        "status": "fixed",
         "summary": "Tarjoiluvaiheen riisi kannattaa nimetä kukkakaaliriisiksi, kuten ainesluettelossa ja kuvauksessa."
+      },
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "Tarjoiluvaiheessa nimetään kukkakaaliriisi ja ruotsin ohjeessa kastiketta ohennetaan keitinliemellä. Broileri kypsennetään vähintään 75 °C:een, ja kastikkeessa käytetään nimettyä soijapaputahnaa."
       }
     ]
   },
@@ -1409,9 +1510,9 @@
   },
   "khao-soi-vhh-konjac:th": {
     "source_hash": "e29d789c529b285bc62c7ea9078841b6655695e161294e3f4e853c24dd5fa69b",
-    "translation_hash": "0d14fb840f8379bb510a808e07616adef5ff2a9e75d635447007dff57a3ba368",
-    "reviewed_at": "2026-11-04",
-    "reference": "V2 riskierä 2, main 358bbadf9e8f28db254bcfc3bd68c4bdcc8f6e5c",
+    "translation_hash": "e45d46a8ad8034d995974dac91c98fd35264cd1661fe77d8356301e1e7cc95df",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Käännöksissä broileri kypsyy liemessä ja valmis konjaknuudeli kuivapaistetaan. Thaissa pikkelöity sinappikaali nimetään yhdenmukaisesti kuvassa, kuvauksessa, ainesluettelossa ja tarjoilussa.",
     "outcome": "pass",
     "findings": [
       {
@@ -1421,8 +1522,13 @@
       },
       {
         "severity": "P2",
-        "status": "open",
+        "status": "fixed",
         "summary": "Sinappikaalin termi vaihtelee ainesosissa ja kuvauksessa."
+      },
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "Käännöksissä broileri kypsyy liemessä ja valmis konjaknuudeli kuivapaistetaan. Thaissa pikkelöity sinappikaali nimetään yhdenmukaisesti kuvassa, kuvauksessa, ainesluettelossa ja tarjoilussa."
       }
     ]
   },
@@ -6856,6 +6962,1422 @@
         "severity": "P2",
         "status": "fixed",
         "summary": "Suolan virheellinen kalaliemiviittaus poistettiin ja annettu määrä jaetaan täytteeseen ja yrttiveteen. Friteerausöljyn määrä ja ravintoarviossa käytetty imeytymä erotettiin."
+      }
+    ]
+  },
+  "paprikainen-vhh-gulassi:en": {
+    "source_hash": "f74e4286ebb3ff59537bc24203ed11125b597a82d97b81a3233dcaaef132b445",
+    "translation_hash": "a65f312b8e9e0377df7492fa2a15bff0ca76ca6a8a6c0c86e5a9b160b29ba2e4",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Punnittu lihaliemi, smetana ja koko padan jakaminen neljään vastaavat kaikilla kielillä. Alkuperäisen makrot puuttuvat.",
+    "outcome": "pass",
+    "findings": []
+  },
+  "paprikainen-vhh-gulassi:sv": {
+    "source_hash": "f74e4286ebb3ff59537bc24203ed11125b597a82d97b81a3233dcaaef132b445",
+    "translation_hash": "19fb665caa574568db874507cd9b3ef4f838820bc6401b3969ef351c7493b1ca",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Punnittu lihaliemi, smetana ja koko padan jakaminen neljään vastaavat kaikilla kielillä. Alkuperäisen makrot puuttuvat.",
+    "outcome": "pass",
+    "findings": []
+  },
+  "paprikainen-vhh-gulassi:th": {
+    "source_hash": "f74e4286ebb3ff59537bc24203ed11125b597a82d97b81a3233dcaaef132b445",
+    "translation_hash": "22a842b00fc62de6b6cf2235f0e1f80111891404e0c3a76ed75d721ea731dc93",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Punnittu lihaliemi, smetana ja koko padan jakaminen neljään vastaavat kaikilla kielillä. Alkuperäisen makrot puuttuvat.",
+    "outcome": "pass",
+    "findings": []
+  },
+  "parsakaali-sinihomejuustofrittata:en": {
+    "source_hash": "9c58dbeb45b5b550e0c80242acce7b90a97c166b0511a5698f448681ba7c7b23",
+    "translation_hash": "6f7e1a33cc039433f7d1368e929b58953105026df745a24d121fcd83add931b4",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Parsakaali pehmennetään ennen 200 °C:n uunivaihetta ja munaseos kypsennetään hyytyneeksi. Punnitut kerma ja sinihomejuusto täsmäävät.",
+    "outcome": "pass",
+    "findings": []
+  },
+  "parsakaali-sinihomejuustofrittata:sv": {
+    "source_hash": "9c58dbeb45b5b550e0c80242acce7b90a97c166b0511a5698f448681ba7c7b23",
+    "translation_hash": "eaa86596c8ed64a9954115d934bdccb1542f1c5a99a719bd4f1233bf42990478",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Parsakaali pehmennetään ennen 200 °C:n uunivaihetta ja munaseos kypsennetään hyytyneeksi. Punnitut kerma ja sinihomejuusto täsmäävät.",
+    "outcome": "pass",
+    "findings": []
+  },
+  "parsakaali-sinihomejuustofrittata:th": {
+    "source_hash": "9c58dbeb45b5b550e0c80242acce7b90a97c166b0511a5698f448681ba7c7b23",
+    "translation_hash": "329454f3beb5441271eff7b0e5b5aa270fd8115c9d331e20c841c1ea8688dd0b",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Parsakaali pehmennetään ennen 200 °C:n uunivaihetta ja munaseos kypsennetään hyytyneeksi. Punnitut kerma ja sinihomejuusto täsmäävät.",
+    "outcome": "pass",
+    "findings": []
+  },
+  "pasta-alla-norma:en": {
+    "source_hash": "209ca3061176ba7d5ca2115c4baeb716c3988745c9bc34fbca890ef59b5966fd",
+    "translation_hash": "7fefa73bf67b703a94a38163bc66b4a4f2eba89dadb41e1ab8363f563f550458",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Nimetyt pasta ja pecorino, 11 minuutin keitto ja 100 ml:n talteen otettava keitinvesi vastaavat kaikilla kielillä. Makrot puuttuvat.",
+    "outcome": "pass",
+    "findings": []
+  },
+  "pasta-alla-norma:sv": {
+    "source_hash": "209ca3061176ba7d5ca2115c4baeb716c3988745c9bc34fbca890ef59b5966fd",
+    "translation_hash": "9c61b7f83938b7c52f3c9e613da0b3e5004e8e73b02a91d93690b1a7328627b0",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Nimetyt pasta ja pecorino, 11 minuutin keitto ja 100 ml:n talteen otettava keitinvesi vastaavat kaikilla kielillä. Makrot puuttuvat.",
+    "outcome": "pass",
+    "findings": []
+  },
+  "pasta-alla-norma:th": {
+    "source_hash": "209ca3061176ba7d5ca2115c4baeb716c3988745c9bc34fbca890ef59b5966fd",
+    "translation_hash": "6b2158c90715594e0190f34dc67bdabfdd03d3b5ac373438d152fd29bda1ec9b",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Nimetyt pasta ja pecorino, 11 minuutin keitto ja 100 ml:n talteen otettava keitinvesi vastaavat kaikilla kielillä. Makrot puuttuvat.",
+    "outcome": "pass",
+    "findings": []
+  },
+  "pav-bhaji:en": {
+    "source_hash": "f80f741104a71066c6c1b1c9c01346a1aa05916bf0605278a5f0aaa7eb461659",
+    "translation_hash": "487a0a5b65e78d11e9feb32bdaf5f7c52c1d3d9254a8b61e0acfa3b50094159b",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Kasvikset keitetään, sose ohennetaan keitinvedellä ja punnittu voi jaetaan kasvissoseen ja sämpylöiden kesken.",
+    "outcome": "pass",
+    "findings": []
+  },
+  "pav-bhaji:sv": {
+    "source_hash": "f80f741104a71066c6c1b1c9c01346a1aa05916bf0605278a5f0aaa7eb461659",
+    "translation_hash": "99c65718d91c4c947e616cd09e37917014b95100e4e54d0ac8ba0a3120b3b53c",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Kasvikset keitetään, sose ohennetaan keitinvedellä ja punnittu voi jaetaan kasvissoseen ja sämpylöiden kesken.",
+    "outcome": "pass",
+    "findings": []
+  },
+  "pav-bhaji:th": {
+    "source_hash": "f80f741104a71066c6c1b1c9c01346a1aa05916bf0605278a5f0aaa7eb461659",
+    "translation_hash": "f532981d6007c5095ed573d27e0167151ffac71056cbaf612450698c29bf945b",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Kasvikset keitetään, sose ohennetaan keitinvedellä ja punnittu voi jaetaan kasvissoseen ja sämpylöiden kesken.",
+    "outcome": "pass",
+    "findings": []
+  },
+  "pekingin-ankka:en": {
+    "source_hash": "de3ff5454550072ef7230250b24a5166e1954a85502b08474da9a67ae1497e1c",
+    "translation_hash": "be9a2bb2b94a57ae95f8044ea5bcddb96262aaa8d566b6472f84fb0b85531ed8",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Käännökset ohjaavat paahtamaan uuniritilällä ja suojaamaan muut elintarvikkeet jääkaappikuivauksen aikana. Mittauskohdat ja 74 °C:n sisälämpö täsmennettiin.",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "Käännökset ohjaavat paahtamaan uuniritilällä ja suojaamaan muut elintarvikkeet jääkaappikuivauksen aikana. Mittauskohdat ja 74 °C:n sisälämpö täsmennettiin."
+      }
+    ]
+  },
+  "pekingin-ankka:sv": {
+    "source_hash": "de3ff5454550072ef7230250b24a5166e1954a85502b08474da9a67ae1497e1c",
+    "translation_hash": "d8b0b51fc8aebdf7fb085f9338dfa5d578946411dab942789f98586ba948f07b",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Käännökset ohjaavat paahtamaan uuniritilällä ja suojaamaan muut elintarvikkeet jääkaappikuivauksen aikana. Mittauskohdat ja 74 °C:n sisälämpö täsmennettiin.",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "Käännökset ohjaavat paahtamaan uuniritilällä ja suojaamaan muut elintarvikkeet jääkaappikuivauksen aikana. Mittauskohdat ja 74 °C:n sisälämpö täsmennettiin."
+      }
+    ]
+  },
+  "pekingin-ankka:th": {
+    "source_hash": "de3ff5454550072ef7230250b24a5166e1954a85502b08474da9a67ae1497e1c",
+    "translation_hash": "d57f945c08e2b751863ef3ff885ddf5b3216efd405412ea66fe46ad9594846d4",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Käännökset ohjaavat paahtamaan uuniritilällä ja suojaamaan muut elintarvikkeet jääkaappikuivauksen aikana. Mittauskohdat ja 74 °C:n sisälämpö täsmennettiin.",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "Käännökset ohjaavat paahtamaan uuniritilällä ja suojaamaan muut elintarvikkeet jääkaappikuivauksen aikana. Mittauskohdat ja 74 °C:n sisälämpö täsmennettiin."
+      }
+    ]
+  },
+  "pizza-margherita:en": {
+    "source_hash": "b1430fed53ac278b0022a625806a04bc418c17d75103f2b61403f0c012b6c03d",
+    "translation_hash": "7beb3a716558ec5172fb4cb7c1ee88ff8c9e0aa5411092ce6f394bc8a49a0efb",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Ruotsin tomaattimurska ja revitty mozzarella sekä thain levitys taikinapohjalle korjattiin. Kahden pizzan paistoaika säilyy.",
+    "outcome": "pass",
+    "findings": []
+  },
+  "pizza-margherita:sv": {
+    "source_hash": "b1430fed53ac278b0022a625806a04bc418c17d75103f2b61403f0c012b6c03d",
+    "translation_hash": "739bbb815d85a57dcaae075b491992a4e60f72a960b2a3b87755b69f12242388",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Ruotsin tomaattimurska ja revitty mozzarella sekä thain levitys taikinapohjalle korjattiin. Kahden pizzan paistoaika säilyy.",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "Ruotsin tomaattimurska ja revitty mozzarella sekä thain levitys taikinapohjalle korjattiin. Kahden pizzan paistoaika säilyy."
+      }
+    ]
+  },
+  "pizza-margherita:th": {
+    "source_hash": "b1430fed53ac278b0022a625806a04bc418c17d75103f2b61403f0c012b6c03d",
+    "translation_hash": "5dfb9c4ee3728fe3cba626ba6339aa05cf8005abfe1a656e59a1dba82855b558",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Ruotsin tomaattimurska ja revitty mozzarella sekä thain levitys taikinapohjalle korjattiin. Kahden pizzan paistoaika säilyy.",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "Ruotsin tomaattimurska ja revitty mozzarella sekä thain levitys taikinapohjalle korjattiin. Kahden pizzan paistoaika säilyy."
+      }
+    ]
+  },
+  "poronkaristys-kukkakaalimuusilla:en": {
+    "source_hash": "e5b1cd02b5e3c3787b32eaff22642c69ad63c9a9999ed255cdee4576826e608f",
+    "translation_hash": "8db3ac2fe82ef20de486b08f61996e4034e11e3e7acd42b65607788161fd17e7",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Ohjeissa ruskistetaan poro erissä, haudutetaan kannen alla ja valutetaan kukkakaali ennen muusia.",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "Ohjeissa ruskistetaan poro erissä, haudutetaan kannen alla ja valutetaan kukkakaali ennen muusia."
+      }
+    ]
+  },
+  "poronkaristys-kukkakaalimuusilla:sv": {
+    "source_hash": "e5b1cd02b5e3c3787b32eaff22642c69ad63c9a9999ed255cdee4576826e608f",
+    "translation_hash": "7a95e4ed9a60f2b067fe5658788e52431d3dda0be6928943c82e7a54e82cb8a5",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Ohjeissa ruskistetaan poro erissä, haudutetaan kannen alla ja valutetaan kukkakaali ennen muusia.",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "Ohjeissa ruskistetaan poro erissä, haudutetaan kannen alla ja valutetaan kukkakaali ennen muusia."
+      }
+    ]
+  },
+  "poronkaristys-kukkakaalimuusilla:th": {
+    "source_hash": "e5b1cd02b5e3c3787b32eaff22642c69ad63c9a9999ed255cdee4576826e608f",
+    "translation_hash": "eb64795385a28acf516bef2628fbcbb9d94ee0ba371e2e74ec7701bd47e5281b",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Ohjeissa ruskistetaan poro erissä, haudutetaan kannen alla ja valutetaan kukkakaali ennen muusia.",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "Ohjeissa ruskistetaan poro erissä, haudutetaan kannen alla ja valutetaan kukkakaali ennen muusia."
+      }
+    ]
+  },
+  "punainen-kanacurry-vhh:en": {
+    "source_hash": "bf7f4d9bbbecf188007d815807d46260c8beea845285581eca0a43e5fc151dbf",
+    "translation_hash": "9978899822e0115bd894ff76bcb6868bf9995e13e7fb2bdbe94379ac413d5bcf",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Käännöksissä punainen paprika nimetään vihannekseksi ja bambunversot lisätään vasta broilerin haudutuksen jälkeen.",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "Käännöksissä punainen paprika nimetään vihannekseksi ja bambunversot lisätään vasta broilerin haudutuksen jälkeen."
+      }
+    ]
+  },
+  "punainen-kanacurry-vhh:sv": {
+    "source_hash": "bf7f4d9bbbecf188007d815807d46260c8beea845285581eca0a43e5fc151dbf",
+    "translation_hash": "a12e27f095ec7efcc24906cd430102a05dfc1d3060f6c6b72d08b7b3b04f951a",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Käännöksissä punainen paprika nimetään vihannekseksi ja bambunversot lisätään vasta broilerin haudutuksen jälkeen.",
+    "outcome": "pass",
+    "findings": []
+  },
+  "punainen-kanacurry-vhh:th": {
+    "source_hash": "bf7f4d9bbbecf188007d815807d46260c8beea845285581eca0a43e5fc151dbf",
+    "translation_hash": "db9839437d90b2e7097ffac0a1da217f2858df17ed8b9ebdbde2b029ad9b1249",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Käännöksissä punainen paprika nimetään vihannekseksi ja bambunversot lisätään vasta broilerin haudutuksen jälkeen.",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "Käännöksissä punainen paprika nimetään vihannekseksi ja bambunversot lisätään vasta broilerin haudutuksen jälkeen."
+      }
+    ]
+  },
+  "raejuusto-uunimunakas:en": {
+    "source_hash": "bb2013312b9c55a1df4adc4f8fc5196725e3902f66b519460fc79725128ac5db",
+    "translation_hash": "27b91adf2e968c028f80bb0299e2b98211541e7366d5168a7eba93834d047ddd",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. 550 g kuoretonta munaa, 2-prosenttinen raejuusto ja koko vuokavoi vastaavat lähdettä. Uunimunakas kypsennetään kokonaan hyytyneeksi.",
+    "outcome": "pass",
+    "findings": []
+  },
+  "raejuusto-uunimunakas:sv": {
+    "source_hash": "bb2013312b9c55a1df4adc4f8fc5196725e3902f66b519460fc79725128ac5db",
+    "translation_hash": "47ae0e95072e55813eb8e5706dea1b5bca7de406237bada04e82dd1344a62825",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. 550 g kuoretonta munaa, 2-prosenttinen raejuusto ja koko vuokavoi vastaavat lähdettä. Uunimunakas kypsennetään kokonaan hyytyneeksi.",
+    "outcome": "pass",
+    "findings": []
+  },
+  "raejuusto-uunimunakas:th": {
+    "source_hash": "bb2013312b9c55a1df4adc4f8fc5196725e3902f66b519460fc79725128ac5db",
+    "translation_hash": "b84a51f1c4323830a705e808e49e0091cf53bfd931c916c66b71aa94ebd13673",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. 550 g kuoretonta munaa, 2-prosenttinen raejuusto ja koko vuokavoi vastaavat lähdettä. Uunimunakas kypsennetään kokonaan hyytyneeksi.",
+    "outcome": "pass",
+    "findings": []
+  },
+  "rahkapiirakka-vhh:en": {
+    "source_hash": "1e0bbe0847b03f7888075011c5356cc95662ca116cc04fdbfb3e216513740f31",
+    "translation_hash": "b573e20ca6264e690236d3289d931391c35f10862b7edf635e6c901b8720e143",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Thai-ohjeessa vaalea rahkatäyte kaadetaan mantelipohjalle. Paisto ja jäähdytys säilyvät kaikilla kielillä.",
+    "outcome": "pass",
+    "findings": []
+  },
+  "rahkapiirakka-vhh:sv": {
+    "source_hash": "1e0bbe0847b03f7888075011c5356cc95662ca116cc04fdbfb3e216513740f31",
+    "translation_hash": "f1c24636b3574f651c2b736de548d1381acc05c68c76155598a6825fbfdb4bf4",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Thai-ohjeessa vaalea rahkatäyte kaadetaan mantelipohjalle. Paisto ja jäähdytys säilyvät kaikilla kielillä.",
+    "outcome": "pass",
+    "findings": []
+  },
+  "rahkapiirakka-vhh:th": {
+    "source_hash": "1e0bbe0847b03f7888075011c5356cc95662ca116cc04fdbfb3e216513740f31",
+    "translation_hash": "0e6a78f837c3e0d307ecfeb62bb5ca15107071e73a06f3aa0e683658086da11f",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Thai-ohjeessa vaalea rahkatäyte kaadetaan mantelipohjalle. Paisto ja jäähdytys säilyvät kaikilla kielillä.",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "Thai-ohjeessa vaalea rahkatäyte kaadetaan mantelipohjalle. Paisto ja jäähdytys säilyvät kaikilla kielillä."
+      }
+    ]
+  },
+  "ratatouille:en": {
+    "source_hash": "02069a10af7507cd6c170c89ef2232a87e0b1fb45b4da844ac169985879dfd03",
+    "translation_hash": "a2d546faa5192803f9fd0dc4bd4d683b14d7f8d87a2d5bc28ec3e9610a58a003",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Kaikki 54 g oliiviöljyä käytetään ja kasvikset sekä kypsennysneste jaetaan neljään annokseen.",
+    "outcome": "pass",
+    "findings": []
+  },
+  "ratatouille:sv": {
+    "source_hash": "02069a10af7507cd6c170c89ef2232a87e0b1fb45b4da844ac169985879dfd03",
+    "translation_hash": "fb4f9d3840a854e3bafe6f21508ae796508f4bda654f43c0d19ddd1590caabc8",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Kaikki 54 g oliiviöljyä käytetään ja kasvikset sekä kypsennysneste jaetaan neljään annokseen.",
+    "outcome": "pass",
+    "findings": []
+  },
+  "ratatouille:th": {
+    "source_hash": "02069a10af7507cd6c170c89ef2232a87e0b1fb45b4da844ac169985879dfd03",
+    "translation_hash": "69a7cb1953a545cd2eda1ac6a04348142c30f72f3149e7b8005a105016b1f33f",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Kaikki 54 g oliiviöljyä käytetään ja kasvikset sekä kypsennysneste jaetaan neljään annokseen.",
+    "outcome": "pass",
+    "findings": []
+  },
+  "rogan-josh:en": {
+    "source_hash": "7d3820b58a8c10de1dddb0cf546ebea3406e0b19f952f2aee8d7bdfa5cef33f1",
+    "translation_hash": "427181155cd3a88ba888040918e2c15b7ae39573a97b5ad7e175b9030b5f4e32",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Jogurtti lisätään miedolla lämmöllä ja kokonaiset kaneli sekä kardemummakodat poistetaan. Alkuperäisen makrot puuttuvat.",
+    "outcome": "pass",
+    "findings": []
+  },
+  "rogan-josh:sv": {
+    "source_hash": "7d3820b58a8c10de1dddb0cf546ebea3406e0b19f952f2aee8d7bdfa5cef33f1",
+    "translation_hash": "4eb59e45005a4b8b1c1d2a3d280a96491d4ff2704f1425222ad0a30e5074be8f",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Jogurtti lisätään miedolla lämmöllä ja kokonaiset kaneli sekä kardemummakodat poistetaan. Alkuperäisen makrot puuttuvat.",
+    "outcome": "pass",
+    "findings": []
+  },
+  "rogan-josh:th": {
+    "source_hash": "7d3820b58a8c10de1dddb0cf546ebea3406e0b19f952f2aee8d7bdfa5cef33f1",
+    "translation_hash": "ad485304921b6aa4c8e5acc44f3eb132f4e42b632e8aeb4e89fa158085534206",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Jogurtti lisätään miedolla lämmöllä ja kokonaiset kaneli sekä kardemummakodat poistetaan. Alkuperäisen makrot puuttuvat.",
+    "outcome": "pass",
+    "findings": []
+  },
+  "ropa-vieja:en": {
+    "source_hash": "474905ffd8d0425d62f67d1ebbf18fc709f6abbdcaa9f8af26f7849b0f3540a0",
+    "translation_hash": "b3ca311aa28c645504cc4a5ff7c7e7175ad09ddbd66b7bad6e29d3beb2058b46",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Naudanpaisti haudutetaan revittäväksi ja palautetaan oliivien ja viinietikan kanssa samaan kastikkeeseen.",
+    "outcome": "pass",
+    "findings": []
+  },
+  "ropa-vieja:sv": {
+    "source_hash": "474905ffd8d0425d62f67d1ebbf18fc709f6abbdcaa9f8af26f7849b0f3540a0",
+    "translation_hash": "0d2dc12911e4ddd519e1f564be04979a186ee56df4e327a7492d2d09110d6578",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Naudanpaisti haudutetaan revittäväksi ja palautetaan oliivien ja viinietikan kanssa samaan kastikkeeseen.",
+    "outcome": "pass",
+    "findings": []
+  },
+  "ropa-vieja:th": {
+    "source_hash": "474905ffd8d0425d62f67d1ebbf18fc709f6abbdcaa9f8af26f7849b0f3540a0",
+    "translation_hash": "69f72293248ced3e2adce251709ad3a73797b404cbd9013418933141c71f96c5",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Naudanpaisti haudutetaan revittäväksi ja palautetaan oliivien ja viinietikan kanssa samaan kastikkeeseen.",
+    "outcome": "pass",
+    "findings": []
+  },
+  "roujiamo:en": {
+    "source_hash": "dd6eff2abbeb94dbf7d69d639ca650eb2ce596229ff9a0f1bdce52b3de9b82f8",
+    "translation_hash": "83a7d930038fa0281b736da330c8d5d543c878947bd81669e3552b7327c1f461",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Ohjeissa erotetaan kaksi soijakastiketta, kaulitaan neljä leipää ja kostutetaan täyte keitinliemellä. Makrot puuttuvat.",
+    "outcome": "pass",
+    "findings": []
+  },
+  "roujiamo:sv": {
+    "source_hash": "dd6eff2abbeb94dbf7d69d639ca650eb2ce596229ff9a0f1bdce52b3de9b82f8",
+    "translation_hash": "2923446abf914d41af9e81da1581799bdeb87b23ed5a42886566fe2d232ec872",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Ohjeissa erotetaan kaksi soijakastiketta, kaulitaan neljä leipää ja kostutetaan täyte keitinliemellä. Makrot puuttuvat.",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "Ohjeissa erotetaan kaksi soijakastiketta, kaulitaan neljä leipää ja kostutetaan täyte keitinliemellä. Makrot puuttuvat."
+      }
+    ]
+  },
+  "roujiamo:th": {
+    "source_hash": "dd6eff2abbeb94dbf7d69d639ca650eb2ce596229ff9a0f1bdce52b3de9b82f8",
+    "translation_hash": "aa5c893d8ed7d74c527360240fd777c5ac3eeaf37573379ff8e76ebc4d7d44f7",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Ohjeissa erotetaan kaksi soijakastiketta, kaulitaan neljä leipää ja kostutetaan täyte keitinliemellä. Makrot puuttuvat.",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "Ohjeissa erotetaan kaksi soijakastiketta, kaulitaan neljä leipää ja kostutetaan täyte keitinliemellä. Makrot puuttuvat."
+      }
+    ]
+  },
+  "samosa:en": {
+    "source_hash": "d4c50a32cbae66926b312fe2338325adf9193efa1144c8ab11ee50ce6304f451",
+    "translation_hash": "986e101366f81cd7bb26b01f705726b4212d997e7deac605949f849d12bb14c3",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Ohjeet erottavat taikinaöljyn ja friteerausöljyn sekä näyttävät, miten kahdeksasta soikiosta syntyy 16 kartiota.",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "Ohjeet erottavat taikinaöljyn ja friteerausöljyn sekä näyttävät, miten kahdeksasta soikiosta syntyy 16 kartiota."
+      }
+    ]
+  },
+  "samosa:sv": {
+    "source_hash": "d4c50a32cbae66926b312fe2338325adf9193efa1144c8ab11ee50ce6304f451",
+    "translation_hash": "3956aba10d29903f8e76fbfefea0ace453db950a52ca950e46bae796ce301ed6",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Ohjeet erottavat taikinaöljyn ja friteerausöljyn sekä näyttävät, miten kahdeksasta soikiosta syntyy 16 kartiota.",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "Ohjeet erottavat taikinaöljyn ja friteerausöljyn sekä näyttävät, miten kahdeksasta soikiosta syntyy 16 kartiota."
+      }
+    ]
+  },
+  "samosa:th": {
+    "source_hash": "d4c50a32cbae66926b312fe2338325adf9193efa1144c8ab11ee50ce6304f451",
+    "translation_hash": "611b8a55385ad5f13df4cbb6c64cbd7d04ed98d5153ca118433a37e8d323727d",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Ohjeet erottavat taikinaöljyn ja friteerausöljyn sekä näyttävät, miten kahdeksasta soikiosta syntyy 16 kartiota.",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "Ohjeet erottavat taikinaöljyn ja friteerausöljyn sekä näyttävät, miten kahdeksasta soikiosta syntyy 16 kartiota."
+      }
+    ]
+  },
+  "shakshuka:en": {
+    "source_hash": "4c2176d980ddaed9d8feabd39dd058aff8762ab44609c35b4ab82361a216972c",
+    "translation_hash": "b06e76ffbf159b33eb25dc5277dafdffc98c46b55e475771377eaa090ee53582",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Punnittu paprika, Santa Maria -savupaprika ja kahden annoksen jako vastaavat kastikkeessa kypsennettyä munaa.",
+    "outcome": "pass",
+    "findings": []
+  },
+  "shakshuka:sv": {
+    "source_hash": "4c2176d980ddaed9d8feabd39dd058aff8762ab44609c35b4ab82361a216972c",
+    "translation_hash": "2369b37e7b2c9ced801a54a3351474156de30dff846aa3f1fa56de828a57937e",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Punnittu paprika, Santa Maria -savupaprika ja kahden annoksen jako vastaavat kastikkeessa kypsennettyä munaa.",
+    "outcome": "pass",
+    "findings": []
+  },
+  "shakshuka:th": {
+    "source_hash": "4c2176d980ddaed9d8feabd39dd058aff8762ab44609c35b4ab82361a216972c",
+    "translation_hash": "38e9258a4ae165cc1a0454191eeaaa3ea6b567ca7f2aaddecb88ad8c9e264be6",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Punnittu paprika, Santa Maria -savupaprika ja kahden annoksen jako vastaavat kastikkeessa kypsennettyä munaa.",
+    "outcome": "pass",
+    "findings": []
+  },
+  "sichuan-hot-pot:en": {
+    "source_hash": "67f811c58c74d08d84c5819eb9f778c656dc520479beaa85cddd4817605c31d0",
+    "translation_hash": "a12e53df5b7c71ccbe25b0fe7307b9893603fa9c36bc7608565a2c8ffbda21fa",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Ruotsin ja thain ohjeissa liha kypsennetään läpi. Raaka liha käsitellään eri välineillä ja dippiin käytetään kiehuvaa lientä.",
+    "outcome": "pass",
+    "findings": []
+  },
+  "sichuan-hot-pot:sv": {
+    "source_hash": "67f811c58c74d08d84c5819eb9f778c656dc520479beaa85cddd4817605c31d0",
+    "translation_hash": "3095bcb5c4459ef94f42c5a5f088ea92064dc7786be647596ab4ed312dc8b668",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Ruotsin ja thain ohjeissa liha kypsennetään läpi. Raaka liha käsitellään eri välineillä ja dippiin käytetään kiehuvaa lientä.",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "Ruotsin ja thain ohjeissa liha kypsennetään läpi. Raaka liha käsitellään eri välineillä ja dippiin käytetään kiehuvaa lientä."
+      }
+    ]
+  },
+  "sichuan-hot-pot:th": {
+    "source_hash": "67f811c58c74d08d84c5819eb9f778c656dc520479beaa85cddd4817605c31d0",
+    "translation_hash": "77fe193480b4bd076a0d01a7d3bb3684285c83784905cabf5b815271e5a679cf",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Ruotsin ja thain ohjeissa liha kypsennetään läpi. Raaka liha käsitellään eri välineillä ja dippiin käytetään kiehuvaa lientä.",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "Ruotsin ja thain ohjeissa liha kypsennetään läpi. Raaka liha käsitellään eri välineillä ja dippiin käytetään kiehuvaa lientä."
+      }
+    ]
+  },
+  "siskonmakkarakeitto-juurekset:en": {
+    "source_hash": "754e131b47f9a725a2a3b8439d78e976e8160391452c0996c73d0d6367b91c5b",
+    "translation_hash": "af284fcb1eca37ef7b1372d8b8c4f43efbe849c3ca56a96efb472b4b9b819c19",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Lanttu, porkkana ja juuriselleri esikypsennetään. Tuoremakkara puristetaan kiehuvaan liemeen ja kypsennetään kauttaaltaan.",
+    "outcome": "pass",
+    "findings": []
+  },
+  "siskonmakkarakeitto-juurekset:sv": {
+    "source_hash": "754e131b47f9a725a2a3b8439d78e976e8160391452c0996c73d0d6367b91c5b",
+    "translation_hash": "86be4739dd0ffb004289b08de5c89dd707c27e7b8588ff7f7796ed0c328bda14",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Lanttu, porkkana ja juuriselleri esikypsennetään. Tuoremakkara puristetaan kiehuvaan liemeen ja kypsennetään kauttaaltaan.",
+    "outcome": "pass",
+    "findings": []
+  },
+  "siskonmakkarakeitto-juurekset:th": {
+    "source_hash": "754e131b47f9a725a2a3b8439d78e976e8160391452c0996c73d0d6367b91c5b",
+    "translation_hash": "56e1d0f6fd0661606ea237d714ba3107fd66b5368a090c5e5399841b28d90e73",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Lanttu, porkkana ja juuriselleri esikypsennetään. Tuoremakkara puristetaan kiehuvaan liemeen ja kypsennetään kauttaaltaan.",
+    "outcome": "pass",
+    "findings": []
+  },
+  "sitruuna-yrttikana-parsa:en": {
+    "source_hash": "238468ae1c970857812b2b19843e1446b9cfe99a4e309db6995dcd3d3be64a5b",
+    "translation_hash": "41b9f3e0868e87eb89747549f30222d3f058b3d86e7cce31fe4ec5902bcb313a",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Punnittu sitruunan ulkokuori, kaikki vuokaneste ja broilerin läpikypsyys vastaavat FI-ohjetta. Makrot puuttuvat.",
+    "outcome": "pass",
+    "findings": []
+  },
+  "sitruuna-yrttikana-parsa:sv": {
+    "source_hash": "238468ae1c970857812b2b19843e1446b9cfe99a4e309db6995dcd3d3be64a5b",
+    "translation_hash": "6c20980427f1c50c379788cd41569a5190533501f8e7cf24572f7bb736e0f273",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Punnittu sitruunan ulkokuori, kaikki vuokaneste ja broilerin läpikypsyys vastaavat FI-ohjetta. Makrot puuttuvat.",
+    "outcome": "pass",
+    "findings": []
+  },
+  "sitruuna-yrttikana-parsa:th": {
+    "source_hash": "238468ae1c970857812b2b19843e1446b9cfe99a4e309db6995dcd3d3be64a5b",
+    "translation_hash": "ddd0a92e1c8114eac0d16854ccaedb8fd349f76464059ac14a7f07c38221f727",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Punnittu sitruunan ulkokuori, kaikki vuokaneste ja broilerin läpikypsyys vastaavat FI-ohjetta. Makrot puuttuvat.",
+    "outcome": "pass",
+    "findings": []
+  },
+  "souvlaki:en": {
+    "source_hash": "b061864ca1662898353cb10c46d5a778560b6bc8f60e93d8156b4c1856bc6f3f",
+    "translation_hash": "ff3942696202e3f2f30dcc83e7d289e57825e9877181eda7e2f2673f2e803af3",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Marinointi tehdään jääkaapissa, tzatziki pidetään kylmänä ja vartaat kypsennetään kauttaaltaan.",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "Marinointi tehdään jääkaapissa, tzatziki pidetään kylmänä ja vartaat kypsennetään kauttaaltaan."
+      }
+    ]
+  },
+  "souvlaki:sv": {
+    "source_hash": "b061864ca1662898353cb10c46d5a778560b6bc8f60e93d8156b4c1856bc6f3f",
+    "translation_hash": "e121962be600d86ac7a9dc628d56aa0dcc3a316a8c55279e7ce11ca87487d641",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Marinointi tehdään jääkaapissa, tzatziki pidetään kylmänä ja vartaat kypsennetään kauttaaltaan.",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "Marinointi tehdään jääkaapissa, tzatziki pidetään kylmänä ja vartaat kypsennetään kauttaaltaan."
+      }
+    ]
+  },
+  "souvlaki:th": {
+    "source_hash": "b061864ca1662898353cb10c46d5a778560b6bc8f60e93d8156b4c1856bc6f3f",
+    "translation_hash": "d886e78a025e33a57c7d77f0f8dfa9830ae68eaa29de8aa251fb191bb6982c85",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Marinointi tehdään jääkaapissa, tzatziki pidetään kylmänä ja vartaat kypsennetään kauttaaltaan.",
+    "outcome": "pass",
+    "findings": []
+  },
+  "spanakopita:en": {
+    "source_hash": "cb5e5b32e22ff435df61be40bf82dbf44547fa9d1ed5731ba35562bdd4d5dcb5",
+    "translation_hash": "2684bcec7e503fc11c94e2b645519df0283ed891f87ef3078afb91bce7d0ad68",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Käännökset ohjaavat kokoamaan piirakan uunivuokaan ja viiltämään pinnan ennen paistoa. Munatäyte kypsennetään.",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "Käännökset ohjaavat kokoamaan piirakan uunivuokaan ja viiltämään pinnan ennen paistoa. Munatäyte kypsennetään."
+      }
+    ]
+  },
+  "spanakopita:sv": {
+    "source_hash": "cb5e5b32e22ff435df61be40bf82dbf44547fa9d1ed5731ba35562bdd4d5dcb5",
+    "translation_hash": "f0f64513e70505ea66f19f8a2c725592dc512b1821c566bc984dc5a4eee2cd33",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Käännökset ohjaavat kokoamaan piirakan uunivuokaan ja viiltämään pinnan ennen paistoa. Munatäyte kypsennetään.",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "Käännökset ohjaavat kokoamaan piirakan uunivuokaan ja viiltämään pinnan ennen paistoa. Munatäyte kypsennetään."
+      }
+    ]
+  },
+  "spanakopita:th": {
+    "source_hash": "cb5e5b32e22ff435df61be40bf82dbf44547fa9d1ed5731ba35562bdd4d5dcb5",
+    "translation_hash": "c867bb92988d149f3a73441d7842eb3d511954e5b3dfa551ba2a137ce0feb368",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Käännökset ohjaavat kokoamaan piirakan uunivuokaan ja viiltämään pinnan ennen paistoa. Munatäyte kypsennetään.",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "Käännökset ohjaavat kokoamaan piirakan uunivuokaan ja viiltämään pinnan ennen paistoa. Munatäyte kypsennetään."
+      }
+    ]
+  },
+  "tabbouleh:en": {
+    "source_hash": "bb4d78a63256f585e1ec653fe24429ae0939f1188e8e820c0d24a113946604e8",
+    "translation_hash": "16f96abbc82b70b99225ad1db3faf3a4ff6d04e1f7815f2bde242fa5418a2528",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. 50 g kuivaa bulguria keitetään mitatussa vedessä. Lämmin bulgur, vihannesmehut ja kastike jaetaan neljään ilman jäähdytysoletusta.",
+    "outcome": "pass",
+    "findings": []
+  },
+  "tabbouleh:sv": {
+    "source_hash": "bb4d78a63256f585e1ec653fe24429ae0939f1188e8e820c0d24a113946604e8",
+    "translation_hash": "14ef4b099cd588d57117ba61719727bae1dbad3389f38e0ce8d3e67e0e7b7867",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. 50 g kuivaa bulguria keitetään mitatussa vedessä. Lämmin bulgur, vihannesmehut ja kastike jaetaan neljään ilman jäähdytysoletusta.",
+    "outcome": "pass",
+    "findings": []
+  },
+  "tabbouleh:th": {
+    "source_hash": "bb4d78a63256f585e1ec653fe24429ae0939f1188e8e820c0d24a113946604e8",
+    "translation_hash": "3b5c5167d214803d0de85672030b51e8d2744930308c02fd72e06f7c9c5b7b9b",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. 50 g kuivaa bulguria keitetään mitatussa vedessä. Lämmin bulgur, vihannesmehut ja kastike jaetaan neljään ilman jäähdytysoletusta.",
+    "outcome": "pass",
+    "findings": []
+  },
+  "tandoorikana:en": {
+    "source_hash": "49b338142b7264a5f3cd03486aee34e7180fa2c9c6b1ebc3853a42907ea87688",
+    "translation_hash": "890acd0449f1d84f59878414c2e07b3f3652a2d76c67fc34b32cf05eb2fd679a",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Poistin FI-ohjeesta toistetun marinoinnin ja palautin kieliversioiden paistojärjestyksen. Thai-ohje käyttää nahatonta reisilihaa ja jokainen kieli säilyttää 75 °C:n tarkistuksen.",
+    "outcome": "pass",
+    "findings": []
+  },
+  "tandoorikana:sv": {
+    "source_hash": "49b338142b7264a5f3cd03486aee34e7180fa2c9c6b1ebc3853a42907ea87688",
+    "translation_hash": "ee98ee5efe11702eb0bc36ee05f4f235620cf51864cd9951b1b65e939b4484c8",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Poistin FI-ohjeesta toistetun marinoinnin ja palautin kieliversioiden paistojärjestyksen. Thai-ohje käyttää nahatonta reisilihaa ja jokainen kieli säilyttää 75 °C:n tarkistuksen.",
+    "outcome": "pass",
+    "findings": []
+  },
+  "tandoorikana:th": {
+    "source_hash": "49b338142b7264a5f3cd03486aee34e7180fa2c9c6b1ebc3853a42907ea87688",
+    "translation_hash": "f1b7bf7c6905bf56fb5528afa9b76663ff6769931e32ec0a31078ffa6fe6a68d",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Poistin FI-ohjeesta toistetun marinoinnin ja palautin kieliversioiden paistojärjestyksen. Thai-ohje käyttää nahatonta reisilihaa ja jokainen kieli säilyttää 75 °C:n tarkistuksen.",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "Poistin FI-ohjeesta toistetun marinoinnin ja palautin kieliversioiden paistojärjestyksen. Thai-ohje käyttää nahatonta reisilihaa ja jokainen kieli säilyttää 75 °C:n tarkistuksen."
+      }
+    ]
+  },
+  "tangyuan:en": {
+    "source_hash": "2803533be0f8bcf887145750221865f7eb94761909e805d70786d5ca51e3b473",
+    "translation_hash": "42e9c77c17b61ab106ca0b9368709d3b4204417b5d938356ef3a8e32957f7ca7",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Käännöksissä makea inkivääriliemi erotetaan pallojen keitinvedestä. Glutinous tarkoittaa tahmeaa riisiä. Alkuperäisen makrot puuttuvat.",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "Käännöksissä makea inkivääriliemi erotetaan pallojen keitinvedestä. Glutinous tarkoittaa tahmeaa riisiä. Alkuperäisen makrot puuttuvat."
+      }
+    ]
+  },
+  "tangyuan:sv": {
+    "source_hash": "2803533be0f8bcf887145750221865f7eb94761909e805d70786d5ca51e3b473",
+    "translation_hash": "7bb8d3d3bb60853b0490077c1cdb679efeadf18165b590840c5a4c3971c0a74e",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Käännöksissä makea inkivääriliemi erotetaan pallojen keitinvedestä. Glutinous tarkoittaa tahmeaa riisiä. Alkuperäisen makrot puuttuvat.",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "Käännöksissä makea inkivääriliemi erotetaan pallojen keitinvedestä. Glutinous tarkoittaa tahmeaa riisiä. Alkuperäisen makrot puuttuvat."
+      }
+    ]
+  },
+  "tangyuan:th": {
+    "source_hash": "2803533be0f8bcf887145750221865f7eb94761909e805d70786d5ca51e3b473",
+    "translation_hash": "04b9160001b89f0bfb6bdcd77b1813ba02e1e3ca6595aa95655abdf62505df69",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Käännöksissä makea inkivääriliemi erotetaan pallojen keitinvedestä. Glutinous tarkoittaa tahmeaa riisiä. Alkuperäisen makrot puuttuvat.",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "Käännöksissä makea inkivääriliemi erotetaan pallojen keitinvedestä. Glutinous tarkoittaa tahmeaa riisiä. Alkuperäisen makrot puuttuvat."
+      }
+    ]
+  },
+  "taytetyt-paprikat-vhh:en": {
+    "source_hash": "0345fa0b4102efca46dd9445b34a60b0c5298a782877703107de637eb042f0bc",
+    "translation_hash": "537c7536bb221aa43f97ed0622dea9768064a1090c3d4edae619b2cd421db8e6",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Jauheliha ja paprikat kypsennetään kokonaan. Kaikki täyte ja juusto kuuluvat neljään annokseen, erillinen salaatti on tarjoiluehdotus.",
+    "outcome": "pass",
+    "findings": []
+  },
+  "taytetyt-paprikat-vhh:sv": {
+    "source_hash": "0345fa0b4102efca46dd9445b34a60b0c5298a782877703107de637eb042f0bc",
+    "translation_hash": "741357395b4b13a8ebf16d63f105667b7169e859f4c17697c5d0825c6200ec2c",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Jauheliha ja paprikat kypsennetään kokonaan. Kaikki täyte ja juusto kuuluvat neljään annokseen, erillinen salaatti on tarjoiluehdotus.",
+    "outcome": "pass",
+    "findings": []
+  },
+  "taytetyt-paprikat-vhh:th": {
+    "source_hash": "0345fa0b4102efca46dd9445b34a60b0c5298a782877703107de637eb042f0bc",
+    "translation_hash": "ec6fb58d212db0ee72c3742306cc39faaf43b129dd2c4646cadb6c7f6f4efbc1",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Jauheliha ja paprikat kypsennetään kokonaan. Kaikki täyte ja juusto kuuluvat neljään annokseen, erillinen salaatti on tarjoiluehdotus.",
+    "outcome": "pass",
+    "findings": []
+  },
+  "thai-vihrea-curry-kanalla-vhh:en": {
+    "source_hash": "5fdd95833d49fe9a5b1f2855ba7a8685791b1356ab5aaa8bc1e77de06f4998a6",
+    "translation_hash": "c5f8d55a38365dfb4cfeadd9b78522d1c3b55f6645c6c74c79ffe13ec708994b",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Thai-ohje täsmentää broilerin kääntelyn, thaibasilikan ja kukkakaaliriisin. Käännöksissä kana kypsyy kokonaan.",
+    "outcome": "pass",
+    "findings": []
+  },
+  "thai-vihrea-curry-kanalla-vhh:sv": {
+    "source_hash": "5fdd95833d49fe9a5b1f2855ba7a8685791b1356ab5aaa8bc1e77de06f4998a6",
+    "translation_hash": "42b9a8e755b025f035a0055b66ae99b05365daa172974392c24814fca86476da",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Thai-ohje täsmentää broilerin kääntelyn, thaibasilikan ja kukkakaaliriisin. Käännöksissä kana kypsyy kokonaan.",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "Thai-ohje täsmentää broilerin kääntelyn, thaibasilikan ja kukkakaaliriisin. Käännöksissä kana kypsyy kokonaan."
+      }
+    ]
+  },
+  "thai-vihrea-curry-kanalla-vhh:th": {
+    "source_hash": "5fdd95833d49fe9a5b1f2855ba7a8685791b1356ab5aaa8bc1e77de06f4998a6",
+    "translation_hash": "de06182f43f625ef849b8793ddf084744e11f54dbeb6ed89f1445af184185e34",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Thai-ohje täsmentää broilerin kääntelyn, thaibasilikan ja kukkakaaliriisin. Käännöksissä kana kypsyy kokonaan.",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "Thai-ohje täsmentää broilerin kääntelyn, thaibasilikan ja kukkakaaliriisin. Käännöksissä kana kypsyy kokonaan."
+      }
+    ]
+  },
+  "tom-yum-goong-vhh:en": {
+    "source_hash": "3fda152cc4078487eb8081fd652936f292e41319bf54f476b9b7153869cd5d79",
+    "translation_hash": "7be52844c963708ceb9348fc9ece8c379ff087d359eb8879843d0e704f8b3a9c",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Katkarapujen ohjeessa kypsyys arvioidaan myös lihan läpikuultamattomuudesta. Sitruunaruoho ja limetinlehdet poistetaan ennen tarjoilua.",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "Katkarapujen ohjeessa kypsyys arvioidaan myös lihan läpikuultamattomuudesta. Sitruunaruoho ja limetinlehdet poistetaan ennen tarjoilua."
+      }
+    ]
+  },
+  "tom-yum-goong-vhh:sv": {
+    "source_hash": "3fda152cc4078487eb8081fd652936f292e41319bf54f476b9b7153869cd5d79",
+    "translation_hash": "ef7a80eab853767dcd9900535b8b2b6f1661e987d478f3f9c56ddf4b25c28a4f",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Katkarapujen ohjeessa kypsyys arvioidaan myös lihan läpikuultamattomuudesta. Sitruunaruoho ja limetinlehdet poistetaan ennen tarjoilua.",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "Katkarapujen ohjeessa kypsyys arvioidaan myös lihan läpikuultamattomuudesta. Sitruunaruoho ja limetinlehdet poistetaan ennen tarjoilua."
+      }
+    ]
+  },
+  "tom-yum-goong-vhh:th": {
+    "source_hash": "3fda152cc4078487eb8081fd652936f292e41319bf54f476b9b7153869cd5d79",
+    "translation_hash": "eec76768c5b61bef2a44d9da9fe31130b7c82a002219a73fa567fa5473a86bdc",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Katkarapujen ohjeessa kypsyys arvioidaan myös lihan läpikuultamattomuudesta. Sitruunaruoho ja limetinlehdet poistetaan ennen tarjoilua.",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "Katkarapujen ohjeessa kypsyys arvioidaan myös lihan läpikuultamattomuudesta. Sitruunaruoho ja limetinlehdet poistetaan ennen tarjoilua."
+      }
+    ]
+  },
+  "tomaatti-kananmuna-wokki:en": {
+    "source_hash": "f2aa407f7b62b326a60714aee75e6eb073d3c00996b35f540a2d1c40636c01d8",
+    "translation_hash": "8cd39e9bbe59cbf3670dc28e7a0e5eb12d6fcd6857a497e5d9934e609203b5a2",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Punnittu jasmiiniriisi valmistetaan riisinkeittimessä ja jaetaan koko kastikkeen kanssa heti kolmeen annokseen.",
+    "outcome": "pass",
+    "findings": []
+  },
+  "tomaatti-kananmuna-wokki:sv": {
+    "source_hash": "f2aa407f7b62b326a60714aee75e6eb073d3c00996b35f540a2d1c40636c01d8",
+    "translation_hash": "ae1724815f6d73ca6bb29762689f7d96c7abf94cae3cd6257ab105239a1243b3",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Punnittu jasmiiniriisi valmistetaan riisinkeittimessä ja jaetaan koko kastikkeen kanssa heti kolmeen annokseen.",
+    "outcome": "pass",
+    "findings": []
+  },
+  "tomaatti-kananmuna-wokki:th": {
+    "source_hash": "f2aa407f7b62b326a60714aee75e6eb073d3c00996b35f540a2d1c40636c01d8",
+    "translation_hash": "02da41de4ed5e8816c5973d70e5b5a756ca3a214714febbb4e2805242bafaf68",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Punnittu jasmiiniriisi valmistetaan riisinkeittimessä ja jaetaan koko kastikkeen kanssa heti kolmeen annokseen.",
+    "outcome": "pass",
+    "findings": []
+  },
+  "tortilla-de-patatas:en": {
+    "source_hash": "d3fff5a8844b19533c7fff1e849fada32a8bb6bc072d5b933066c1d94aad6468",
+    "translation_hash": "4ffd25423ffceb83e484fb6ba3e585f524723c3d3b3cc8a5759d8712f0ef0a6c",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Peruna keitetään ensin vedessä ja valutetaan. Munaseos kypsennetään juuri hyytyneeksi ja kaikki öljy jaetaan annoksiin.",
+    "outcome": "pass",
+    "findings": []
+  },
+  "tortilla-de-patatas:sv": {
+    "source_hash": "d3fff5a8844b19533c7fff1e849fada32a8bb6bc072d5b933066c1d94aad6468",
+    "translation_hash": "96ff16e7da907b4f29f6145ffa4b5cd44317649025952d549bfccc04d391e8cb",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Peruna keitetään ensin vedessä ja valutetaan. Munaseos kypsennetään juuri hyytyneeksi ja kaikki öljy jaetaan annoksiin.",
+    "outcome": "pass",
+    "findings": []
+  },
+  "tortilla-de-patatas:th": {
+    "source_hash": "d3fff5a8844b19533c7fff1e849fada32a8bb6bc072d5b933066c1d94aad6468",
+    "translation_hash": "188168af8192e16e5a56eecc011aeca447728a1c72597309857a3d3e9a28040d",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Peruna keitetään ensin vedessä ja valutetaan. Munaseos kypsennetään juuri hyytyneeksi ja kaikki öljy jaetaan annoksiin.",
+    "outcome": "pass",
+    "findings": []
+  },
+  "tunisialainen-ojja:en": {
+    "source_hash": "39adb9d47a9b7e016133e8cfaceeea4092d9c6083b47b0fc86583dd7dc086799",
+    "translation_hash": "a49066bf1dc7164e4ef2417de70665529c58a9e0ca39bc1e401874c3df1ad0e0",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. FI-ohjeessa tomaattikastike valmistetaan kerran. Neljän munan kypsennys kannen alla erotetaan persiljan ja leivän tarjoilusta.",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "FI-ohjeessa tomaattikastike valmistetaan kerran. Neljän munan kypsennys kannen alla erotetaan persiljan ja leivän tarjoilusta."
+      }
+    ]
+  },
+  "tunisialainen-ojja:sv": {
+    "source_hash": "39adb9d47a9b7e016133e8cfaceeea4092d9c6083b47b0fc86583dd7dc086799",
+    "translation_hash": "a4f084ac09b90411de7a2b0f08820027b490499123c4c71f7f7c82290f1f07de",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. FI-ohjeessa tomaattikastike valmistetaan kerran. Neljän munan kypsennys kannen alla erotetaan persiljan ja leivän tarjoilusta.",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "FI-ohjeessa tomaattikastike valmistetaan kerran. Neljän munan kypsennys kannen alla erotetaan persiljan ja leivän tarjoilusta."
+      }
+    ]
+  },
+  "tunisialainen-ojja:th": {
+    "source_hash": "39adb9d47a9b7e016133e8cfaceeea4092d9c6083b47b0fc86583dd7dc086799",
+    "translation_hash": "1d50a8c821cab2c6e1afbde45b2473796dd8ca04133955ebc44c9f29f6ec350d",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. FI-ohjeessa tomaattikastike valmistetaan kerran. Neljän munan kypsennys kannen alla erotetaan persiljan ja leivän tarjoilusta.",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "FI-ohjeessa tomaattikastike valmistetaan kerran. Neljän munan kypsennys kannen alla erotetaan persiljan ja leivän tarjoilusta."
+      }
+    ]
+  },
+  "uuniporsas-kermakastikkeessa-vhh:en": {
+    "source_hash": "82a39f94b698b79bb1a9e91c7e107f09b83ed18ea626e18910e261b752f874f4",
+    "translation_hash": "dfc51df9a6350c43bef0b5cb3ecd7d47784c3c885d2b0f614a50e2d2c1a2a30f",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Ohjeissa koko paistoliemi, sipuli ja jauhetut mausteet jäävät kastikkeeseen, ja voi lisätään pois liedeltä.",
+    "outcome": "pass",
+    "findings": []
+  },
+  "uuniporsas-kermakastikkeessa-vhh:sv": {
+    "source_hash": "82a39f94b698b79bb1a9e91c7e107f09b83ed18ea626e18910e261b752f874f4",
+    "translation_hash": "b10e7d9532f6f0f604325aad3b906d0023be157b01727db72e1bae5ac13ab981",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Ohjeissa koko paistoliemi, sipuli ja jauhetut mausteet jäävät kastikkeeseen, ja voi lisätään pois liedeltä.",
+    "outcome": "pass",
+    "findings": []
+  },
+  "uuniporsas-kermakastikkeessa-vhh:th": {
+    "source_hash": "82a39f94b698b79bb1a9e91c7e107f09b83ed18ea626e18910e261b752f874f4",
+    "translation_hash": "9d86dee2ba3dd45657d628e81b9f7e1138da18fd05fe58f014cb0748486cf046",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Ohjeissa koko paistoliemi, sipuli ja jauhetut mausteet jäävät kastikkeeseen, ja voi lisätään pois liedeltä.",
+    "outcome": "pass",
+    "findings": []
+  },
+  "vada-pav:en": {
+    "source_hash": "3130c5676803ec5a44a2c1bbbfa66e5f08c58ba027c59737b9926ceb98584e8a",
+    "translation_hash": "310893cf5227534756b7820d006e9cc9b7d3b978e895313c75b1068e01a3e102",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Chutney merkitään valinnaiseksi lisukkeeksi. Taikinakuori paistetaan kypsäksi, ja friteerausöljyn käyttö erotetaan arvioidusta imeytymästä.",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "Chutney merkitään valinnaiseksi lisukkeeksi. Taikinakuori paistetaan kypsäksi, ja friteerausöljyn käyttö erotetaan arvioidusta imeytymästä."
+      }
+    ]
+  },
+  "vada-pav:sv": {
+    "source_hash": "3130c5676803ec5a44a2c1bbbfa66e5f08c58ba027c59737b9926ceb98584e8a",
+    "translation_hash": "8a4a4b02241b5ead48408afc658d7cf4f3c530f19b5c96a5de4b155105856693",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Chutney merkitään valinnaiseksi lisukkeeksi. Taikinakuori paistetaan kypsäksi, ja friteerausöljyn käyttö erotetaan arvioidusta imeytymästä.",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "Chutney merkitään valinnaiseksi lisukkeeksi. Taikinakuori paistetaan kypsäksi, ja friteerausöljyn käyttö erotetaan arvioidusta imeytymästä."
+      }
+    ]
+  },
+  "vada-pav:th": {
+    "source_hash": "3130c5676803ec5a44a2c1bbbfa66e5f08c58ba027c59737b9926ceb98584e8a",
+    "translation_hash": "3155b223d62858ca1d86dcdc06606b5ffa83e5c25080e8ccaaac6a00e75bf531",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Chutney merkitään valinnaiseksi lisukkeeksi. Taikinakuori paistetaan kypsäksi, ja friteerausöljyn käyttö erotetaan arvioidusta imeytymästä.",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "Chutney merkitään valinnaiseksi lisukkeeksi. Taikinakuori paistetaan kypsäksi, ja friteerausöljyn käyttö erotetaan arvioidusta imeytymästä."
+      }
+    ]
+  },
+  "vhh-kaalikaarryleet:en": {
+    "source_hash": "cf6c397445aa75b8fdddd4f0d9b6a4091e13718455d13657f6540c6664743e47",
+    "translation_hash": "f19d43c39f39cc3f9fa3b5c436acad36beaa85708be6eb210752ba71cfd6a82d",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Käännökset erottavat kaalin keitinveden vuoan paistoliemestä. Jauhelihatäytteen läpikypsyys tarkistetaan ennen tarjoilua.",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "Käännökset erottavat kaalin keitinveden vuoan paistoliemestä. Jauhelihatäytteen läpikypsyys tarkistetaan ennen tarjoilua."
+      }
+    ]
+  },
+  "vhh-kaalikaarryleet:sv": {
+    "source_hash": "cf6c397445aa75b8fdddd4f0d9b6a4091e13718455d13657f6540c6664743e47",
+    "translation_hash": "f44805605c7f6eee6346cce6cf456258c1d3979aa1a2b2f37b604aa8f6c8fb4a",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Käännökset erottavat kaalin keitinveden vuoan paistoliemestä. Jauhelihatäytteen läpikypsyys tarkistetaan ennen tarjoilua.",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "Käännökset erottavat kaalin keitinveden vuoan paistoliemestä. Jauhelihatäytteen läpikypsyys tarkistetaan ennen tarjoilua."
+      }
+    ]
+  },
+  "vhh-kaalikaarryleet:th": {
+    "source_hash": "cf6c397445aa75b8fdddd4f0d9b6a4091e13718455d13657f6540c6664743e47",
+    "translation_hash": "a39a06edd02c64e346d4c7c829bc75f5fe3d91bb20866f860bec0cc760fbb931",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Käännökset erottavat kaalin keitinveden vuoan paistoliemestä. Jauhelihatäytteen läpikypsyys tarkistetaan ennen tarjoilua.",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "Käännökset erottavat kaalin keitinveden vuoan paistoliemestä. Jauhelihatäytteen läpikypsyys tarkistetaan ennen tarjoilua."
+      }
+    ]
+  },
+  "vhh-kaalilaatikko:en": {
+    "source_hash": "19b107ff847cf01ca877ffc6ea96a4b98767d9cbdc977c9f5bbe7f7c7de082d6",
+    "translation_hash": "abb2d7c7ad7960bc960378b723ced461d7cc8156530b1aba882168dd681613ed",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Punnitut kaali ja jauheliha sekä kerman ja munan kypsyys vastaavat lähdettä. Koko vuoka nesteineen jaetaan kuuteen.",
+    "outcome": "pass",
+    "findings": []
+  },
+  "vhh-kaalilaatikko:sv": {
+    "source_hash": "19b107ff847cf01ca877ffc6ea96a4b98767d9cbdc977c9f5bbe7f7c7de082d6",
+    "translation_hash": "76b0f7439d41faa78a9f8bb87623de1bf247b1b2d7414d7ebc91fda0a50a11d9",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Punnitut kaali ja jauheliha sekä kerman ja munan kypsyys vastaavat lähdettä. Koko vuoka nesteineen jaetaan kuuteen.",
+    "outcome": "pass",
+    "findings": []
+  },
+  "vhh-kaalilaatikko:th": {
+    "source_hash": "19b107ff847cf01ca877ffc6ea96a4b98767d9cbdc977c9f5bbe7f7c7de082d6",
+    "translation_hash": "2be0e5a71f230834d1e08b49fcb70b75ad31a51d446526afc74d99d026151600",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Punnitut kaali ja jauheliha sekä kerman ja munan kypsyys vastaavat lähdettä. Koko vuoka nesteineen jaetaan kuuteen.",
+    "outcome": "pass",
+    "findings": []
+  },
+  "vhh-korvapuustit:en": {
+    "source_hash": "70f6bdae3ff48b0f121dce9903f81f81a4d3cfc9a9a861e93805792673417dfb",
+    "translation_hash": "f764593272ded5908f55578df876ddc2dfc7e931264c4f543009b6dd8e3757dd",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Puolen senttimetrin paksuus, kahdeksan palaa ja toinen muna voiteluun täsmäävät. Punnittu makeutus säilyy.",
+    "outcome": "pass",
+    "findings": []
+  },
+  "vhh-korvapuustit:sv": {
+    "source_hash": "70f6bdae3ff48b0f121dce9903f81f81a4d3cfc9a9a861e93805792673417dfb",
+    "translation_hash": "5838fd4565df87de2938ce3ded9d98b717487ba50509d2c0f482888ae2dec66b",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Puolen senttimetrin paksuus, kahdeksan palaa ja toinen muna voiteluun täsmäävät. Punnittu makeutus säilyy.",
+    "outcome": "pass",
+    "findings": []
+  },
+  "vhh-korvapuustit:th": {
+    "source_hash": "70f6bdae3ff48b0f121dce9903f81f81a4d3cfc9a9a861e93805792673417dfb",
+    "translation_hash": "4c4da7ebc23c7be6c5b8d74e34f690568a946cb70f2fd659b80cd5aff510024e",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Puolen senttimetrin paksuus, kahdeksan palaa ja toinen muna voiteluun täsmäävät. Punnittu makeutus säilyy.",
+    "outcome": "pass",
+    "findings": []
+  },
+  "vhh-letut:en": {
+    "source_hash": "70a0db4086b38c84e5ce38fe4e25ac4331a2a0dff8790180d7b154daa8181ec0",
+    "translation_hash": "79d44b6d9e5725396043a9e2f315fbaca269eb43983131159b6b6bb38b6817a0",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Taikina lepää viisi minuuttia ja letut paistetaan molemmin puolin. Marjat ovat valinnainen tarjoiluehdotus.",
+    "outcome": "pass",
+    "findings": []
+  },
+  "vhh-letut:sv": {
+    "source_hash": "70a0db4086b38c84e5ce38fe4e25ac4331a2a0dff8790180d7b154daa8181ec0",
+    "translation_hash": "8e80ca42385d572f85f622a22c0543d45740215c447b2032e7b52196031943d6",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Taikina lepää viisi minuuttia ja letut paistetaan molemmin puolin. Marjat ovat valinnainen tarjoiluehdotus.",
+    "outcome": "pass",
+    "findings": []
+  },
+  "vhh-letut:th": {
+    "source_hash": "70a0db4086b38c84e5ce38fe4e25ac4331a2a0dff8790180d7b154daa8181ec0",
+    "translation_hash": "c5ffb5ba2d03f2acc998648732d6c467f747b4853bc969366f0b6c5260a169a4",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Taikina lepää viisi minuuttia ja letut paistetaan molemmin puolin. Marjat ovat valinnainen tarjoiluehdotus.",
+    "outcome": "pass",
+    "findings": []
+  },
+  "vhh-lihamureke:en": {
+    "source_hash": "793037237465dc917ec512195b2b8d3dd1e3189f745efc9dc05b5e70e24a7141",
+    "translation_hash": "007f9e81393528ecc0b39075c7563067d24cfa2f07df3bfb7c77e16b08ff9d79",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Kesäkurpitsaa ei puristeta, koko mitattu määrä käytetään. Mureke paistetaan kauttaaltaan kypsäksi.",
+    "outcome": "pass",
+    "findings": []
+  },
+  "vhh-lihamureke:sv": {
+    "source_hash": "793037237465dc917ec512195b2b8d3dd1e3189f745efc9dc05b5e70e24a7141",
+    "translation_hash": "05a9a9f39da8ce503c203be671609c9331d5e5672416a91c522d883691147822",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Kesäkurpitsaa ei puristeta, koko mitattu määrä käytetään. Mureke paistetaan kauttaaltaan kypsäksi.",
+    "outcome": "pass",
+    "findings": []
+  },
+  "vhh-lihamureke:th": {
+    "source_hash": "793037237465dc917ec512195b2b8d3dd1e3189f745efc9dc05b5e70e24a7141",
+    "translation_hash": "d3f99e4532ab78a180a8cd8a3833ade745cc92c7a852b22430ef4bbab4a2f2b8",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Kesäkurpitsaa ei puristeta, koko mitattu määrä käytetään. Mureke paistetaan kauttaaltaan kypsäksi.",
+    "outcome": "pass",
+    "findings": []
+  },
+  "vhh-lihapiirakka:en": {
+    "source_hash": "184e910af9b9b949f3fbcbc626fc7883f02598b69745381ef59a3d5575728e41",
+    "translation_hash": "e90e5aaa1ccceaf89eb0c3fe42b3fbbb02ae408e36d13d833e3dd1cc3ee74ee5",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Avoimen piirakan täyte kaadetaan piirakkapohjalle eikä paistinpannuun. Paisto ja jauhelihan sekä munan kypsyys on ilmaistu kaikilla kielillä.",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "Avoimen piirakan täyte kaadetaan piirakkapohjalle eikä paistinpannuun. Paisto ja jauhelihan sekä munan kypsyys on ilmaistu kaikilla kielillä."
+      }
+    ]
+  },
+  "vhh-lihapiirakka:sv": {
+    "source_hash": "184e910af9b9b949f3fbcbc626fc7883f02598b69745381ef59a3d5575728e41",
+    "translation_hash": "154b5b05e1b9953bdea49b334d4997328c6547cb40ca44cd7816da1e74eac5dc",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Avoimen piirakan täyte kaadetaan piirakkapohjalle eikä paistinpannuun. Paisto ja jauhelihan sekä munan kypsyys on ilmaistu kaikilla kielillä.",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "Avoimen piirakan täyte kaadetaan piirakkapohjalle eikä paistinpannuun. Paisto ja jauhelihan sekä munan kypsyys on ilmaistu kaikilla kielillä."
+      }
+    ]
+  },
+  "vhh-lihapiirakka:th": {
+    "source_hash": "184e910af9b9b949f3fbcbc626fc7883f02598b69745381ef59a3d5575728e41",
+    "translation_hash": "f9036c9fc6d06fff2c3c9f7897e272eaf2adfa7e671cca51c0f122eecc967968",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Avoimen piirakan täyte kaadetaan piirakkapohjalle eikä paistinpannuun. Paisto ja jauhelihan sekä munan kypsyys on ilmaistu kaikilla kielillä.",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "Avoimen piirakan täyte kaadetaan piirakkapohjalle eikä paistinpannuun. Paisto ja jauhelihan sekä munan kypsyys on ilmaistu kaikilla kielillä."
+      }
+    ]
+  },
+  "vhh-lohikeitto-kukkakaalilla:en": {
+    "source_hash": "f5e654db357742ccdd121f800c964f78a6e83a52ba784e3ef9e3f0396f9edae2",
+    "translation_hash": "a7a934678dfbd34ce7f307b2bb3ee8f1f4470afa998abda4fba3749e81926db7",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Vesi ja tiivistetty kalafondi erotetaan. Lohipalat kypsennetään miedolla lämmöllä ja tilli lisätään viimeiseksi.",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "Vesi ja tiivistetty kalafondi erotetaan. Lohipalat kypsennetään miedolla lämmöllä ja tilli lisätään viimeiseksi."
+      }
+    ]
+  },
+  "vhh-lohikeitto-kukkakaalilla:sv": {
+    "source_hash": "f5e654db357742ccdd121f800c964f78a6e83a52ba784e3ef9e3f0396f9edae2",
+    "translation_hash": "2c6da3b6025182361ea1af9e8d48e1f0eae616bf12a12333d7e8abdf2a2dc537",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Vesi ja tiivistetty kalafondi erotetaan. Lohipalat kypsennetään miedolla lämmöllä ja tilli lisätään viimeiseksi.",
+    "outcome": "pass",
+    "findings": []
+  },
+  "vhh-lohikeitto-kukkakaalilla:th": {
+    "source_hash": "f5e654db357742ccdd121f800c964f78a6e83a52ba784e3ef9e3f0396f9edae2",
+    "translation_hash": "2d0d85c8655f9d0f0bd919f780f2bfad9106713d1cd71751029be6215d1b095a",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Vesi ja tiivistetty kalafondi erotetaan. Lohipalat kypsennetään miedolla lämmöllä ja tilli lisätään viimeiseksi.",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "Vesi ja tiivistetty kalafondi erotetaan. Lohipalat kypsennetään miedolla lämmöllä ja tilli lisätään viimeiseksi."
+      }
+    ]
+  },
+  "vhh-mustikkapiirakka:en": {
+    "source_hash": "3fa493bd0cb2bd8079be4cea9afde4f1b1f862cd93ddf8a87a4015d8d537cb9b",
+    "translation_hash": "1333974a060b8b25ac58154b97616421d151af812dd31d2433cfbb5188a4a7a7",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Rahkatäyte ja mustikat levitetään mantelipohjalle. Piirakka paistetaan 180 °C:ssa ja jäähdytetään ennen leikkaamista.",
+    "outcome": "pass",
+    "findings": []
+  },
+  "vhh-mustikkapiirakka:sv": {
+    "source_hash": "3fa493bd0cb2bd8079be4cea9afde4f1b1f862cd93ddf8a87a4015d8d537cb9b",
+    "translation_hash": "e5e25864d31f44b40db925fffa425f3e3ad2139c08541bf78d22caef0fee97e4",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Rahkatäyte ja mustikat levitetään mantelipohjalle. Piirakka paistetaan 180 °C:ssa ja jäähdytetään ennen leikkaamista.",
+    "outcome": "pass",
+    "findings": []
+  },
+  "vhh-mustikkapiirakka:th": {
+    "source_hash": "3fa493bd0cb2bd8079be4cea9afde4f1b1f862cd93ddf8a87a4015d8d537cb9b",
+    "translation_hash": "62c8d453640f31204c8045e26d3bb8cd9104993edee7008111a315aad0ab4151",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Rahkatäyte ja mustikat levitetään mantelipohjalle. Piirakka paistetaan 180 °C:ssa ja jäähdytetään ennen leikkaamista.",
+    "outcome": "pass",
+    "findings": []
+  },
+  "vhh-pyttipannu:en": {
+    "source_hash": "3f7851f0a841a816a146c76c53bc8ca76bbbb70b4cd485f9b64d5af2f831f7a9",
+    "translation_hash": "f35f349c113ef9e758ac585d615e02bc18d45cbedd15729e194de4f3e845e3eb",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Käännökset tunnistavat lantun, kesäkurpitsan ja makkaran erikseen. Määrät ja valmistusjärjestys säilyvät. Alkuperäisen makrot puuttuvat.",
+    "outcome": "pass",
+    "findings": []
+  },
+  "vhh-pyttipannu:sv": {
+    "source_hash": "3f7851f0a841a816a146c76c53bc8ca76bbbb70b4cd485f9b64d5af2f831f7a9",
+    "translation_hash": "3a4ef78206f079bdba08efe9c4a2f6de7501fc1a084305559b9a13a6a54da923",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Käännökset tunnistavat lantun, kesäkurpitsan ja makkaran erikseen. Määrät ja valmistusjärjestys säilyvät. Alkuperäisen makrot puuttuvat.",
+    "outcome": "pass",
+    "findings": []
+  },
+  "vhh-pyttipannu:th": {
+    "source_hash": "3f7851f0a841a816a146c76c53bc8ca76bbbb70b4cd485f9b64d5af2f831f7a9",
+    "translation_hash": "3f43405b58816b473b95729679821ee70d3813a81b207cbc955c30e3bea5314c",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Käännökset tunnistavat lantun, kesäkurpitsan ja makkaran erikseen. Määrät ja valmistusjärjestys säilyvät. Alkuperäisen makrot puuttuvat.",
+    "outcome": "pass",
+    "findings": []
+  },
+  "vhh-runebergintortut:en": {
+    "source_hash": "fb8828adeda49a953c916075c99953eeb4d8ccd42bf189bce6b2ce15511b657b",
+    "translation_hash": "903b7ef3e238b26714268dd3f72fc7508142dca2c5cfa1c51c1aef81104d9ba8",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Kuudelle tortulle jaetaan kaikki vadelmat. Kuvassa on tuore vadelma, ja ohjeessa käytetään ainesluettelon vadelmia.",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "Kuudelle tortulle jaetaan kaikki vadelmat. Kuvassa on tuore vadelma, ja ohjeessa käytetään ainesluettelon vadelmia."
+      }
+    ]
+  },
+  "vhh-runebergintortut:sv": {
+    "source_hash": "fb8828adeda49a953c916075c99953eeb4d8ccd42bf189bce6b2ce15511b657b",
+    "translation_hash": "2c302b62c0518e096fbf038320dcb0a4db51ff84fa321e26f03dfc0b1897c592",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Kuudelle tortulle jaetaan kaikki vadelmat. Kuvassa on tuore vadelma, ja ohjeessa käytetään ainesluettelon vadelmia.",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "Kuudelle tortulle jaetaan kaikki vadelmat. Kuvassa on tuore vadelma, ja ohjeessa käytetään ainesluettelon vadelmia."
+      }
+    ]
+  },
+  "vhh-runebergintortut:th": {
+    "source_hash": "fb8828adeda49a953c916075c99953eeb4d8ccd42bf189bce6b2ce15511b657b",
+    "translation_hash": "c2a8c7d1046dbb5bc174be80ca0061e5bf49de79a2524902d6ece8cfbc5ea4a4",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Kuudelle tortulle jaetaan kaikki vadelmat. Kuvassa on tuore vadelma, ja ohjeessa käytetään ainesluettelon vadelmia.",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "Kuudelle tortulle jaetaan kaikki vadelmat. Kuvassa on tuore vadelma, ja ohjeessa käytetään ainesluettelon vadelmia."
+      }
+    ]
+  },
+  "xiaolongbao:en": {
+    "source_hash": "80e5644452f25baa67294a10eaa218f5f52fbf44a7313477147e9b3e3104f461",
+    "translation_hash": "f16d0c64bc0d5f95bdd1f5f780a2ed98a159a996b09959e348d344244e59d8c4",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Käännöksiin lisättiin puuttunut taikinan valmistus ja 30 minuutin lepo. Täyte kypsennetään höyryssä, ja kuumasta liemestä varoitetaan.",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "Käännöksiin lisättiin puuttunut taikinan valmistus ja 30 minuutin lepo. Täyte kypsennetään höyryssä, ja kuumasta liemestä varoitetaan."
+      }
+    ]
+  },
+  "xiaolongbao:sv": {
+    "source_hash": "80e5644452f25baa67294a10eaa218f5f52fbf44a7313477147e9b3e3104f461",
+    "translation_hash": "e17cefec4d048376cc29c9e068988a80b5b71aef08cc922ff9e17dcbdf58e825",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Käännöksiin lisättiin puuttunut taikinan valmistus ja 30 minuutin lepo. Täyte kypsennetään höyryssä, ja kuumasta liemestä varoitetaan.",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "Käännöksiin lisättiin puuttunut taikinan valmistus ja 30 minuutin lepo. Täyte kypsennetään höyryssä, ja kuumasta liemestä varoitetaan."
+      }
+    ]
+  },
+  "xiaolongbao:th": {
+    "source_hash": "80e5644452f25baa67294a10eaa218f5f52fbf44a7313477147e9b3e3104f461",
+    "translation_hash": "32fb023792ff4917b73c78a8ee25ba6a354ba59655b514da9608073a1c9a48b8",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Käännöksiin lisättiin puuttunut taikinan valmistus ja 30 minuutin lepo. Täyte kypsennetään höyryssä, ja kuumasta liemestä varoitetaan.",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "Käännöksiin lisättiin puuttunut taikinan valmistus ja 30 minuutin lepo. Täyte kypsennetään höyryssä, ja kuumasta liemestä varoitetaan."
+      }
+    ]
+  },
+  "yum-woon-sen-vhh:en": {
+    "source_hash": "9361c3ef860ea4b11be979d9040e5340e9c677545f68f2a2d0f75187ea1553da",
+    "translation_hash": "b1c730024f1a176b5b1b72ad0756d6310ff37c41a0ee7714d3d02f5db71bb785",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Thai-ohjeessa kuivapaistetaan konjaknuudelit ilman öljyä. Porsas ja katkaravut kypsennetään erikseen.",
+    "outcome": "pass",
+    "findings": []
+  },
+  "yum-woon-sen-vhh:sv": {
+    "source_hash": "9361c3ef860ea4b11be979d9040e5340e9c677545f68f2a2d0f75187ea1553da",
+    "translation_hash": "342e5580021ce5a680e3d97c2a4c2d45d9627cda7d58e357e8fa3ca2c76094af",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Thai-ohjeessa kuivapaistetaan konjaknuudelit ilman öljyä. Porsas ja katkaravut kypsennetään erikseen.",
+    "outcome": "pass",
+    "findings": []
+  },
+  "yum-woon-sen-vhh:th": {
+    "source_hash": "9361c3ef860ea4b11be979d9040e5340e9c677545f68f2a2d0f75187ea1553da",
+    "translation_hash": "9572d3f845f3aba62744516ad19b0bbc195e46c431756e268d182f033caf5591",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Thai-ohjeessa kuivapaistetaan konjaknuudelit ilman öljyä. Porsas ja katkaravut kypsennetään erikseen.",
+    "outcome": "pass",
+    "findings": [
+      {
+        "severity": "P2",
+        "status": "fixed",
+        "summary": "Thai-ohjeessa kuivapaistetaan konjaknuudelit ilman öljyä. Porsas ja katkaravut kypsennetään erikseen."
+      }
+    ]
+  },
+  "tunisialainen-brik:en": {
+    "source_hash": "24bddaf297f96cb46b0d091418e228b3bf2794f00a838fb09c78996644247784",
+    "translation_hash": "44d78fbaed1571ace3e0ceb3c683f16526408b2705851a8bd8693b3f953a3a79",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Kahden minuutin friteeraus per puoli on tarkoitettu valuvalle munalle. Kypsälle munalle sopiva menetelmä ja filotaikinan tai malsoukan kestävyys tarvitsevat koekeittiötestin.",
+    "outcome": "human-required",
+    "findings": [
+      {
+        "severity": "P1",
+        "status": "open",
+        "summary": "Kahden minuutin friteeraus per puoli on tarkoitettu valuvalle munalle. Kypsälle munalle sopiva menetelmä ja filotaikinan tai malsoukan kestävyys tarvitsevat koekeittiötestin."
+      }
+    ]
+  },
+  "tunisialainen-brik:sv": {
+    "source_hash": "24bddaf297f96cb46b0d091418e228b3bf2794f00a838fb09c78996644247784",
+    "translation_hash": "fa52a0b27702cbae29c591e57e647edf35f2b56c959c58f20f0b9210550654b9",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Kahden minuutin friteeraus per puoli on tarkoitettu valuvalle munalle. Kypsälle munalle sopiva menetelmä ja filotaikinan tai malsoukan kestävyys tarvitsevat koekeittiötestin.",
+    "outcome": "human-required",
+    "findings": [
+      {
+        "severity": "P1",
+        "status": "open",
+        "summary": "Kahden minuutin friteeraus per puoli on tarkoitettu valuvalle munalle. Kypsälle munalle sopiva menetelmä ja filotaikinan tai malsoukan kestävyys tarvitsevat koekeittiötestin."
+      }
+    ]
+  },
+  "tunisialainen-brik:th": {
+    "source_hash": "24bddaf297f96cb46b0d091418e228b3bf2794f00a838fb09c78996644247784",
+    "translation_hash": "dbfdab8b17072d946dfa501378511a923f25a9c35088c8695572accd06784102",
+    "reviewed_at": "2026-11-13",
+    "reference": "docs/reviews/2026-11-13-reseptit-seuraavat-60-kielikatselmointi.md. Kahden minuutin friteeraus per puoli on tarkoitettu valuvalle munalle. Kypsälle munalle sopiva menetelmä ja filotaikinan tai malsoukan kestävyys tarvitsevat koekeittiötestin.",
+    "outcome": "human-required",
+    "findings": [
+      {
+        "severity": "P1",
+        "status": "open",
+        "summary": "Kahden minuutin friteeraus per puoli on tarkoitettu valuvalle munalle. Kypsälle munalle sopiva menetelmä ja filotaikinan tai malsoukan kestävyys tarvitsevat koekeittiötestin."
       }
     ]
   }

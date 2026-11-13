@@ -74,7 +74,7 @@ translation_of: keltainen-kanacurry-vhh
 
 # low-carb yellow chicken curry with cauliflower
 
-Gaeng garee or yellow curry is a mildly spicy coconut curry. In this low-carb version, cauliflower is used instead of potato, which absorbs the aromatic sauce.
+Gaeng garee or yellow curry is a mildly spicy coconut curry. In this low-carb version, cauliflower replaces the potato and soaks up the aromatic sauce.
 
 ## Description
 
@@ -86,7 +86,7 @@ Cauliflower cooks soft in curry but keeps its shape. If you like a firmer textur
 2. Add the chicken and stir in the paste for a few minutes.
 3. Pour in the coconut milk. Add the onion and simmer on low heat for 15 minutes.
 4. Add the cauliflower and continue cooking for 8-10 minutes until the chicken and cauliflower are cooked through.
-5. Season with fish sauce and, if desired, erythritol. Serve with cilantro on its own or as an addition to cauliflower rice.
+5. Season with the fish sauce and erythritol if using. Finish with coriander and serve on its own or with cauliflower rice.
 
 ## Notes
 

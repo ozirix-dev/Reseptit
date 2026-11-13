@@ -70,7 +70,7 @@ Fyllningen består av nötfärs och lök.
 1. Värm ugnen till 200 °C. Smält försiktigt osten och färskosten och blanda i mandelmjölet och ett ägg.
 2. Tryck ut degen på botten och sidorna av en pajform klädd med bakplåtspapper.
 3. Bryn nötfärsen och löken och krydda.
-4. Blanda ner det andra ägget i fyllningen, häll i pannan och grädda i ca 30 minuter.
+4. Rör ner det andra ägget i fyllningen. Bred ut den i pajskalet och grädda i cirka 30 minuter tills fyllningen är genomstekt och har stelnat.
 
 ## Anteckningar
 

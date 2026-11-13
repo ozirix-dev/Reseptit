@@ -1,5 +1,6 @@
 import {isP1CoconutHold,assertP1CoconutHold} from './p1-coconut-hold-guard';
 import {restoreBeforeCouscous} from './restore-pre-ehold';
+import {recipeTextForApprovedSnapshot} from '../scripts/approved-recipe-note-edits';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
@@ -30,7 +31,20 @@ test('exact FI/EN/SV/TH versions have fresh macro and calculation-source binding
  const aliases=json('docs/nutrition/glycemic-load-recipe-aliases.json').aliases;let complete=0,withheld=0;
  for(const entry of pack.recipes){const rel=entry.originalPublishedPath,text=readFileSync(new URL(rel,root),'utf8'),fi=parseMarkdown(text)!.data as any,evidence=json('docs/nutrition/calculations/'+entry.recipeId+'.json');
   assert.equal(hash(rel),entry.sourceLfSha256);assert.equal(hash('docs/nutrition/calculations/'+entry.recipeId+'.json'),entry.macroEvidenceSha256);assert.equal(recipeBindingHash(text,aliases),bindings.recipes[entry.recipeId]);assert.equal(glycemicLoadInputHash(entry.newInput),bindings.calculationInputs[entry.recipeId]);assert.equal(glycemicLoadEvidenceHash(entry.newInput,foods,gis),bindings.calculationEvidence[entry.recipeId]);
-  const targets=['en','sv','th'].map(loc=>{const p='kaannokset/'+loc+'/'+rel.replace('reseptit/','');assert.equal(hash(p),entry.localeLfSha256[loc]);assert.equal(hash(p),bindings.exactRecipeText[entry.recipeId].locales[loc].sha256);const d=parseMarkdown(readFileSync(new URL(p,root),'utf8'))!.data as any;assert.deepEqual(d.ingredients.map((i:any)=>[i.amount,i.unit]),fi.ingredients.map((i:any)=>[i.amount,i.unit]));assert.equal(d.servings,fi.servings);assert.equal(d.time_total_min,fi.time_total_min);return {path:p,data:d};});
+  const targets=['en','sv','th'].map(loc=>{
+   const p='kaannokset/'+loc+'/'+rel.replace('reseptit/','');
+   const current=readFileSync(new URL(p,root),'utf8').replaceAll('\r\n','\n');
+   const snapshot=recipeTextForApprovedSnapshot(p,current);
+   const snapshotHash=createHash('sha256').update(snapshot).digest('hex');
+   assert.equal(snapshotHash,entry.localeLfSha256[loc],p);
+   assert.equal(snapshotHash,bindings.exactRecipeText[entry.recipeId].locales[loc].sha256,p);
+   const d=parseMarkdown(current)!.data as any;
+   assert.deepEqual(d.ingredients,parseMarkdown(snapshot)!.data.ingredients,p);
+   assert.deepEqual(d.ingredients.map((i:any)=>[i.amount,i.unit]),fi.ingredients.map((i:any)=>[i.amount,i.unit]));
+   assert.equal(d.servings,fi.servings);
+   assert.equal(d.time_total_min,fi.time_total_min);
+   return {path:p,data:d};
+  });
   const checked=verifyNutritionEvidence(fi,evidence,targets);assert.deepEqual(checked.errors,[],entry.recipeId);assert.equal(checked.status,entry.macroStatus);
   if(checked.status==='ESTIMATE WITH EVIDENCE')complete++;else{withheld++;assert.equal(evidence.publicationStatus,'WITHHELD_SOURCE_INCOMPLETE');assert.ok(Object.values(checked.values).every(v=>v===null));assert.equal(evidence.ingredients[6].record.per100g.polyols,null);}
  }

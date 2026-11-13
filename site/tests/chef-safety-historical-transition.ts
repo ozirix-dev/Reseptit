@@ -24,6 +24,17 @@ const editorialMethods: Readonly<Record<string, readonly [string, string]>> = {
   'reseptit/paaruoat/paella-valenciana.md': ['bbe443ea57f40d5f0903300e3e10b0dede68d2fb', '9a12394a5c2e7d556fc9216667a5b9bfffbe1124745f4cdad7c5db0df2dfa35c'],
   'reseptit/paaruoat/paistettu-maksa-pekonilla.md': ['bbe443ea57f40d5f0903300e3e10b0dede68d2fb', 'dc54fa69f2425530f3a75dadc617c01a27c7f55e0f2ebcfc0585eb5eeaf640db'],
   'reseptit/alkuruoat/pani-puri.md': ['bbe443ea57f40d5f0903300e3e10b0dede68d2fb', '7ad741915553b5bee21fef0558df3ad3e9228928ff8d194110f249d0601873c8'],
+  'reseptit/paaruoat/pekingin-ankka.md': ['2293fd1851bad0574ae89430cb9ba1b184df6b8b', '0ef958ff673e255a04ccb5b3830f2d39e6df89d6896cdf293e15ba5534216f99'],
+  'reseptit/alkuruoat/spanakopita.md': ['2293fd1851bad0574ae89430cb9ba1b184df6b8b', 'dd0dc6fcbab81621d5f476611d15f8c40cb9e7c206a1bed2a7750a779909648d'],
+  'reseptit/paaruoat/tandoorikana.md': ['2293fd1851bad0574ae89430cb9ba1b184df6b8b', '17ca72d9868bb2104cfa80b8f4a72ed74df3529eef47527fa97f95f8cdaf5e4d'],
+  'reseptit/paaruoat/tom-yum-goong-vhh.md': ['2293fd1851bad0574ae89430cb9ba1b184df6b8b', '94b45150aac60adedee5a08cefa1a096765c99905f8523dc8ec502b6eabfeef2'],
+  'reseptit/paaruoat/tunisialainen-ojja.md': ['2293fd1851bad0574ae89430cb9ba1b184df6b8b', 'c66cd12d202ae9f95e400ff01c29aecb2f22297b3f7f81c374c9ca74ea51f40f'],
+  'reseptit/alkuruoat/vada-pav.md': ['2293fd1851bad0574ae89430cb9ba1b184df6b8b', 'c101da821a7a49507259bbd104f1cdb9932585996b9f258a4862e5d4684c3d7d'],
+  'reseptit/paaruoat/vhh-kaalikaarryleet.md': ['2293fd1851bad0574ae89430cb9ba1b184df6b8b', '3dbc9d0a8817f2f427afc704d3e007857424767d6eef6de32f10d4c5cc91949c'],
+  'reseptit/leivonnaiset/vhh-lihapiirakka.md': ['2293fd1851bad0574ae89430cb9ba1b184df6b8b', 'd12574a7923d38585d882379983a1d465dec9fd8a9a1e4ea5ae63a832d76dcd6'],
+  'reseptit/leivonnaiset/vhh-runebergintortut.md': ['2293fd1851bad0574ae89430cb9ba1b184df6b8b', 'fd4c60bb937d54ae8b5d04bf763d8a19889d372a2bf5d88cc89293add24cce49'],
+  'reseptit/paaruoat/khao-kha-moo-vhh.md': ['2293fd1851bad0574ae89430cb9ba1b184df6b8b', '907a2f69e71ce436054f1561a351e70def1ad38de23b95cf8a44d6af38060256'],
+  'reseptit/paaruoat/khao-man-gai-vhh.md': ['2293fd1851bad0574ae89430cb9ba1b184df6b8b', '1e25c05b37753f78151fada1991efcdd682bf7ca7af92c1fe4955548c2018d1f'],
 };
 export const editorialMethodHistoryPaths = Object.freeze(Object.keys(editorialMethods));
 const accepted = new Set<string>(reviewedChefSafetyPaths);

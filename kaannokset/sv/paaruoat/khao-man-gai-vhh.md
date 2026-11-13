@@ -84,10 +84,10 @@ Kokbuljongen ger en lätt, klar buljong för servering. Ingefärssåsen är salt
 ## Tillagning
 
 1. Koka upp vattnet och kycklingbuljongen. Tillsätt kycklingen och sänk värmen så att buljongen precis bubblar.
-2. Koka under lock i 15–20 minuter tills innertemperaturen i broilern är minst 75 °C. Ta bort köttet från buljongen och låt det vila.
-3. Blanda ingefära, sojabönpasta, fisksås, limejuice och vitlök till en sås. Späd eventuellt med en sked fond.
+2. Sjud under lock i 15–20 minuter tills kycklingens innertemperatur är minst 75 °C. Lyft kycklingen ur buljongen och låt den vila.
+3. Blanda ingefära, sojabönspasta, fisksås, limejuice och vitlök till en sås. Späd vid behov med en sked av kokbuljongen.
 4. Värm blomkålsriset i en panna tills det är mjukt och krydda lätt.
-5. Skiva kycklingen och servera med ris, gurka, sås och koriander. Om du vill, servera buljongen separat.
+5. Skiva kycklingen och servera med blomkålsris, gurka, sås och koriander. Servera gärna buljongen vid sidan av.
 
 ## Anteckningar
 

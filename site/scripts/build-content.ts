@@ -202,7 +202,7 @@ async function buildRecipes(): Promise<RecipeEntry[]> {
       instructionsHtml: await renderSafeMarkdown(publicInstructions),
       instructionStepsHtml: await renderInstructionSteps(publicInstructions),
       instructionsText: instructionSteps.length ? instructionSteps : publicInstructions.split(/\n\s*\n/).filter(Boolean),
-      notesHtml: await renderSafeMarkdown(notes), servings: data.servings,
+      notesHtml: await renderSafeMarkdown(!safetyHold && visibleHold ? "" : notes), servings: data.servings,
       timeTotalMin: banhCuonFiTimeReview ? 50 : data.time_total_min ?? null,
       difficulty: banhCuonFiTimeReview ? "Keskitaso" : data.difficulty ?? null, tags: data.tags,
       image: data.image ? {

@@ -81,7 +81,7 @@ Homemade soup dumplings have a pork filling with chilled stock jelly that melts 
 
 2. Mix pork, spring onion, soy sauce, sesame oil, ginger and salt. Gently fold in the stock jelly.
 
-3. Divide the dough into 24 pieces, roll thin and place a small spoonful of filling in each. Pleat and pinch closed.
+3. Mix the flour and water and knead until smooth. Cover and let the dough rest for 30 minutes. Divide into 24 pieces, roll each into a thin circle, then spoon in the filling, pleat the edges and pinch closed.
 
 4. Set dumplings on baking paper or cabbage leaves in the steamer, without touching.
 

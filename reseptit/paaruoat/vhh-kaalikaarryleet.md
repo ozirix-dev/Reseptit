@@ -78,7 +78,7 @@ Tämä kaalikääryleiden muunnelma valmistetaan ilman riisiä.
 2. Sekoita jauheliha, kukkakaalirouhe, hienonnettu sipuli, kananmuna, kerma ja mausteet.
 3. Annostele täytettä lehdille ja kääri tiiviiksi rulliksi.
 4. Asettele voideltuun vuokaan, valuta päälle voisulaa ja tilkka kaalin keitinvettä.
-5. Paista 200 °C:ssa noin 45–55 minuuttia. Valele paistoliemellä kerran.
+5. Paista 200 °C:ssa noin 45–55 minuuttia ja valele kerran vuoan paistoliemellä. Jatka tarvittaessa, kunnes jauhelihatäyte on kypsää myös keskeltä.
 
 ## Muistiinpanot
 

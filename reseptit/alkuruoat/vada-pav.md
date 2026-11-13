@@ -90,8 +90,8 @@ Mumbain suosittu katukeittiöannos yhdistää mausteisen, rapeaksi friteeratun p
 2. Kuumenna öljy, lisää sinapinsiemenet. Kun ne poksahtelevat, lisää valkosipuli ja kurkuma. Sekoita perunamuusiin ja korianteriin.
 3. Muotoile perunaseoksesta 4 pyöreää pihviä.
 4. Sekoita kikhernejauhot, vesi, chili ja suola paksuksi taikinaksi.
-5. Kasta pihvit taikinaan ja friteeraa 170-asteisessa öljyssä kullanruskeiksi, noin 4 minuuttia.
-6. Halkaise sämpylät ja levitä sisään chutneyta. Laita perunapihvi väliin ja tarjoa heti.
+5. Kasta pihvit taikinaan ja friteeraa erissä 170 °C:ssa noin 4 minuuttia tai kunnes taikinakuori on kypsä ja kullanruskea. Valuta ylimääräinen öljy pois.
+6. Halkaise sämpylät ja laita perunapihvi väliin. Lisää halutessasi chutneyta erillisenä lisukkeena ja tarjoa heti.
 
 ## Muistiinpanot
 

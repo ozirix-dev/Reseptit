@@ -67,8 +67,8 @@ Hemkökets version av Pekinganka: knaperstekt anka serverad i tunna strimlor med
 ## Tillagning
 
 1. Torka ankan ordentligt. Blanda honung, vinäger och salt i en skvätt varmt vatten och pensla blandningen över ytan på ankan.
-2. Lägg ankan på galler i kylen utan lock i minst 6 timmar för att torka skinnet.
-3. Värm ugnen till 220 grader. Rosta ankan på grillen i cirka 20 minuter, vrid värmen till 170 grader och fortsätt tillagningen i cirka 90 minuter tills innertemperaturen är minst 74 °C.
+2. Lägg ankan på galler över en plåt med kant. Låt torka utan lock längst ner i kylen i minst 6 timmar, skild från mat som äts direkt.
+3. Värm ugnen till 220 °C. Stek ankan på ugnsgaller över en plåt med kant i cirka 20 minuter. Sänk till 170 °C och fortsätt i cirka 90 minuter eller tills den tjockaste delen av bröstet och insidan av låret båda når minst 74 °C. Låt inte termometern vidröra benet.
 4. Låt ankan vila i 15 minuter. Skär köttet och det knapriga skinnet i tunna bitar.
 5. Värm vetepannkakorna enligt anvisningarna på förpackningen. Servera ankan med gurka, vårlök och hoisinsås.
 

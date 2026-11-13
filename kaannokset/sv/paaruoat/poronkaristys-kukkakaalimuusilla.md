@@ -69,8 +69,8 @@ Blomkål som mosas med grädde ersätter det vanliga potatismoset.
 ## Gör så här
 
 1. Bryn renskav och lök i smör i en panna i omgångar.
-2. Tillsätt vatten och låt sjuda under lock i ca 25 minuter. Smak.
-3. Koka blomkålen mjuk, låt rinna av försiktigt och puré med grädde.
+2. Tillsätt vattnet och sjud under lock i cirka 25 minuter. Smaksätt med salt och peppar.
+3. Koka blomkålen mjuk, låt den rinna av ordentligt och mixa den med grädden.
 4. Servera med blomkålspuré.
 
 ## Anteckningar

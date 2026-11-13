@@ -69,8 +69,8 @@ Kotikeittiön versio Pekingin ankasta: rapeaksi paistettu ankka tarjoillaan ohui
 ## Valmistus
 
 1. Kuivaa ankka huolellisesti. Sekoita hunaja, etikka ja suola tilkkaan kuumaa vettä ja sivele seos ankan pinnalle.
-2. Nosta ankka ritilälle jääkaappiin ilman peitettä vähintään 6 tunniksi, jotta nahka kuivuu.
-3. Kuumenna uuni 220 asteeseen. Paahda ankkaa ritilällä noin 20 minuuttia, käännä lämpö 170 asteeseen ja jatka kypsennystä noin 90 minuuttia, kunnes sisälämpö on vähintään 74 °C.
+2. Nosta ankka ritilälle reunallisen astian päälle. Kuivata jääkaapin alimmalla tasolla ilman peitettä vähintään 6 tuntia erillään sellaisenaan syötävistä ruoista.
+3. Kuumenna uuni 220 °C:seen. Paahda ankkaa uuniritilällä reunallisen pellin päällä noin 20 minuuttia. Laske lämpö 170 °C:seen ja jatka noin 90 minuuttia tai kunnes sisälämpö on vähintään 74 °C rinnan paksuimmasta kohdasta ja reiden sisäosasta mitattuna. Älä kosketa luuta mittarilla.
 4. Anna ankan levätä 15 minuuttia. Leikkaa liha ja rapea nahka ohuiksi paloiksi.
 5. Lämmitä letut pakkauksen ohjeen mukaan. Tarjoa ankka kurkun, kevätsipulin ja hoisinkastikkeen kanssa.
 

@@ -91,7 +91,7 @@ The mild braising makes the pork shoulder tender and allows the spices to season
 
 1. Brown the pork pieces on all sides in a pot. Set aside for a moment.
 2. Add the garlic, Chinese five-spice powder, cinnamon and star anise to the pot. Fry for about 30 seconds.
-3. Pour in the chicken stock. Add soy sauces, fish sauce and erythritol. Return the pork to the pot.
+3. Pour in the chicken stock. Add the light soy sauce, both listed amounts of fish sauce and the erythritol. Return the pork to the pot.
 4. Cover with a lid and simmer on very low heat for about 2.5 hours or until the meat is soft.
 5. Add the peeled boiled eggs for the last 20 minutes. Remove the pork and eggs from the broth.
 6. Boil or steam Chinese cabbage quickly. Heat the cauliflower rice in a pan.

@@ -74,7 +74,7 @@ translation_of: keltainen-kanacurry-vhh
 
 # lågkolhydrat gul kycklingcurry med blomkål
 
-Gaeng garee eller gul curry är en milt kryddig kokoscurry. I denna lågkolhydrat-version används blomkål istället för potatis som absorberar den aromatiska såsen.
+Gaeng garee eller gul curry är en milt kryddig kokoscurry. I den här varianten ersätter blomkål potatisen och suger upp den kryddiga såsen.
 
 ## Beskrivning
 
@@ -86,7 +86,7 @@ Blomkål kokar mjuk i curry men håller formen. Om du gillar en fastare konsiste
 2. Tillsätt kycklingen och rör i pastan i några minuter.
 3. Häll i kokosmjölken. Tillsätt löken och låt sjuda på svag värme i 15 minuter.
 4. Tillsätt blomkålen och fortsätt koka i 8-10 minuter tills kycklingen och blomkålen är genomstekt.
-5. Smaksätt med fisksås och, om så önskas, erytritol. Servera med koriander för sig eller som tillsats till blomkålsris.
+5. Smaksätt med fisksås och eventuellt erytritol. Toppa med koriander och servera curryn som den är eller med blomkålsris.
 
 ## Anteckningar
 

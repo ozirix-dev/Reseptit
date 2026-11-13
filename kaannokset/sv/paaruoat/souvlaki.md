@@ -86,7 +86,7 @@ Kycklingspett marinerade med citron, vitlök och oregano serveras med pitabröd,
 ## Tillagning
 
 1. Blanda olja, citronsaft, pressad vitlök, oregano och salt. Lägg i kycklingen och låt den marinera i kylen i minst 20 minuter.
-2. Riv gurkan och krama ur överflödig vätska. Blanda med yoghurt och pressad vitlök. Svalna.
+2. Riv gurkan och krama ur vätskan. Blanda med yoghurt och pressad vitlök. Förvara i kylen fram till servering.
 3. Trä upp kycklingen på spetten. Grilla eller stek i het panna i 10-12 minuter, vänd, tills kycklingen är genomstekt.
 4. Hetta upp pitabrödet och servera spetten med tomat och tzatziki.
 

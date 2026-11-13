@@ -144,6 +144,186 @@ const editorialSnapshots: Readonly<Record<string, {
       [74, 1, "1. ผสมโยเกิร์ต น้ำเลมอน เครื่องเทศ เกลือ และน้ำมันเพื่อทำน้ำดอง\n"],
     ],
   },
+  "kaannokset/sv/paaruoat/pizza-margherita.md": {
+    currentSha256: "989f223f9c991a3338ff6c29f47f16144c3659f53edee04f62b72da2a39dcc11",
+    inverseEdits: [
+      [74, 1, "4. Bred ut tomatsmulet på bottnarna och lägg i den rivna mozzarellan.\n"],
+    ],
+  },
+  "kaannokset/th/paaruoat/pizza-margherita.md": {
+    currentSha256: "bb331f3dd0ff84eea2f697ca00f377c42da6d611ba406c94621cd8884d7b99a3",
+    inverseEdits: [
+      [74, 1, "4. ทามะเขือเทศบดหยาบลงไปที่ก้นถาด แล้วใส่มอสซาเรลลาที่ฉีกไว้ลงไป\n"],
+    ],
+  },
+  "kaannokset/en/paaruoat/punainen-kanacurry-vhh.md": {
+    currentSha256: "c313404b434f679097d36a30bcece0a24ceb118d45258f34c82a6e8aaf3b9220",
+    inverseEdits: [
+      [87, 1, "5. Add bamboo shoots and paprika. Simmer for another 5 minutes. Season with fish sauce and, if desired, erythritol.\n"],
+    ],
+  },
+  "kaannokset/th/paaruoat/punainen-kanacurry-vhh.md": {
+    currentSha256: "123f0b817c6603bc04a5b4ca31fd5cee9ec3ca9fa3b0942c9dbfaf9c30b01e68",
+    inverseEdits: [
+      [87, 1, "5. ใส่หน่อไม้และปาปริก้า หลนต่อไปอีก 5 นาที ปรุงรสด้วยน้ำปลา และอิริทริทอลหากต้องการ\n"],
+      [85, 1, "3. เพิ่มไก่และทอดจนชิ้นส่วนถูกปิดด้วยส่วนผสมทั้งหมด\n"],
+    ],
+  },
+  "kaannokset/th/jalkiruoat/rahkapiirakka-vhh.md": {
+    currentSha256: "2a11e18a59b2a5d1aed04ca6b8e70c19e4677163b7c567b9ac8c020f5b4868c2",
+    inverseEdits: [
+      [71, 1, "3. เทไส้ด้านล่างแล้วอบที่อุณหภูมิ 175 °C ประมาณ 35 นาที\n"],
+    ],
+  },
+  "kaannokset/sv/paaruoat/thai-vihrea-curry-kanalla-vhh.md": {
+    currentSha256: "8b5ea1c3f16df8d0f0b527a54776e75cc1fad35702e28e794f595768924b0b00",
+    inverseEdits: [
+      [85, 1, "3. Tillsätt ungefär en deciliter kokosmjölk och blanda. Tillsätt kycklingen och koka, vänd.\n"],
+    ],
+  },
+  "kaannokset/th/paaruoat/thai-vihrea-curry-kanalla-vhh.md": {
+    currentSha256: "43ebe1788ce4266d2ddb8cf88933e0632c6c4741fa24a4e4a89e6bb19867257a",
+    inverseEdits: [
+      [88, 1, "6. ใส่ใบโหระพาลงไป อุ่นข้าวดอกกะหล่ำในกระทะแล้วเสิร์ฟพร้อมกับแกง\n"],
+      [85, 2, "3. เติมกะทิประมาณหนึ่งเดซิลิตรแล้วผสม เพิ่มไก่และปรุงอาหารพลิก\n4. ใส่กะทิที่เหลือ น้ำปลา อิริทริทอล และใบมะกรูดลงไป หลนเป็นเวลา 10 นาที\n"],
+    ],
+  },
+  "reseptit/leivonnaiset/vhh-lihapiirakka.md": {
+    currentSha256: "d12574a7923d38585d882379983a1d465dec9fd8a9a1e4ea5ae63a832d76dcd6",
+    inverseEdits: [
+      [77, 1, "4. Sekoita toinen kananmuna täytteeseen, kaada vuokaan ja paista noin 30 minuuttia.\n"],
+    ],
+  },
+  "kaannokset/en/leivonnaiset/vhh-lihapiirakka.md": {
+    currentSha256: "ab233171f3f57464cf19d2724e56610068c3bbc5be396209b8f625a93094517e",
+    inverseEdits: [
+      [72, 1, "4. Mix the second egg into the filling, pour into the pan and bake for about 30 minutes.\n"],
+    ],
+  },
+  "kaannokset/sv/leivonnaiset/vhh-lihapiirakka.md": {
+    currentSha256: "7046deabcaa227cf0c79d85e49e87f37901951e2eab1d57e48f85633bce0f27b",
+    inverseEdits: [
+      [72, 1, "4. Blanda ner det andra ägget i fyllningen, häll i pannan och grädda i ca 30 minuter.\n"],
+    ],
+  },
+  "kaannokset/th/leivonnaiset/vhh-lihapiirakka.md": {
+    currentSha256: "e39dd7bb71b17ed3c17f76e62da66fec769310702c40fa3ca69303269a6a49a1",
+    inverseEdits: [
+      [72, 1, "4. ผสมไข่ใบที่สองลงในไส้ เทลงในกระทะ แล้วอบประมาณ 30 นาที\n"],
+    ],
+  },
+  "kaannokset/sv/paaruoat/doner-kebab.md": {
+    currentSha256: "adb595f0d63f04dccece20f5be458e4b4233f5f6a1eb256652398620d3b0b419",
+    inverseEdits: [
+      [74, 1, "# Hemlagad biff döner kebab\n"],
+      [23, 1, "  alt: Kryddad döner kebabbiff med pitabröd, sallad och yoghurtsås\n"],
+      [1, 1, "title: Hemlagad biff döner kebab\n"],
+    ],
+  },
+  "kaannokset/en/paaruoat/jauhelihapihvit-vhh-kermakastikkeella.md": {
+    currentSha256: "4b90d05377ef2853c96139b90139fa8182fd20a2bde46c5a95bdd174fa08b700",
+    inverseEdits: [
+      [91, 3, "2. Heat the butter in a pan and fry the steaks on medium heat until cooked, about 4–5 minutes on each side. Set the steaks aside.\n3. Pour the meat broth into the pan and scrape the frying surface with the sauce. Add cream, mustard and pepper.\n4. Cook the sauce slowly for 5–8 minutes until it thickens a little. Return the steaks to the pan and heat for another couple of minutes.\n"],
+    ],
+  },
+  "kaannokset/sv/paaruoat/jauhelihapihvit-vhh-kermakastikkeella.md": {
+    currentSha256: "6f5b2c5907884bc96ae980b4f9d3011d83400432081997c1d0995aea6d77ad8f",
+    inverseEdits: [
+      [92, 1, "3. Häll köttbuljongen i pannan och skrapa stekytan med såsen. Tillsätt grädde, senap och peppar.\n"],
+    ],
+  },
+  "kaannokset/th/paaruoat/jauhelihapihvit-vhh-kermakastikkeella.md": {
+    currentSha256: "db866f763f4321343d64d22bcb113a15fbafbcc721af124c32370d08bfc05571",
+    inverseEdits: [
+      [91, 3, "2. ตั้งเนยในกระทะแล้วทอดสเต็กด้วยไฟปานกลางจนสุกประมาณ 4-5 นาทีในแต่ละด้าน วางสเต็กไว้ข้างๆ.\n3. เทน้ำซุปเนื้อลงในกระทะแล้วขูดพื้นผิวทอดด้วยซอส ใส่ครีม มัสตาร์ด และพริกไทย\n4. ปรุงซอสช้าๆ ประมาณ 5-8 นาทีจนข้นเล็กน้อย นำสเต็กกลับเข้าไปในกระทะแล้วตั้งไฟต่ออีกสองสามนาที\n"],
+    ],
+  },
+  "kaannokset/en/paaruoat/keltainen-kanacurry-vhh.md": {
+    currentSha256: "61b61f9527469bbb5838a0f333284f79d7fee75dd2616306bfa27994be97c54b",
+    inverseEdits: [
+      [88, 1, "5. Season with fish sauce and, if desired, erythritol. Serve with cilantro on its own or as an addition to cauliflower rice.\n"],
+      [76, 1, "Gaeng garee or yellow curry is a mildly spicy coconut curry. In this low-carb version, cauliflower is used instead of potato, which absorbs the aromatic sauce.\n"],
+    ],
+  },
+  "kaannokset/sv/paaruoat/keltainen-kanacurry-vhh.md": {
+    currentSha256: "091a27be9f73e2b91bcf55077bbdfe6e1dd360c9d5cec7b5f00c25679ee64923",
+    inverseEdits: [
+      [88, 1, "5. Smaksätt med fisksås och, om så önskas, erytritol. Servera med koriander för sig eller som tillsats till blomkålsris.\n"],
+      [76, 1, "Gaeng garee eller gul curry är en milt kryddig kokoscurry. I denna lågkolhydrat-version används blomkål istället för potatis som absorberar den aromatiska såsen.\n"],
+    ],
+  },
+  "kaannokset/th/paaruoat/keltainen-kanacurry-vhh.md": {
+    currentSha256: "fb02b5167b62045ea2387bf10f54ced9ec36370fe599383ab9f2c825f28167d6",
+    inverseEdits: [
+      [87, 2, "4. ใส่ดอกกะหล่ำลงไปผัดต่อประมาณ 8-10 นาที จนไก่และดอกกะหล่ำสุก\n5. ปรุงรสด้วยน้ำปลา และอิริทริทอลหากต้องการ เสิร์ฟพร้อมผักชีเพียงอย่างเดียวหรือนอกเหนือจากข้าวดอกกะหล่ำ\n"],
+      [84, 1, "1. ตั้งน้ำมันมะพร้าวให้ร้อนในหม้อ ใส่พริกแกงเหลืองและขมิ้น ผัดสักครู่\n"],
+      [76, 1, "แกงการีหรือแกงเหลืองเป็นแกงกะทิรสเผ็ดเล็กน้อย ในเวอร์ชัน คาร์โบไฮเดรตต่ำ นี้ จะใช้ดอกกะหล่ำแทนมันฝรั่ง ซึ่งจะดูดซับซอสที่มีกลิ่นหอม\n"],
+    ],
+  },
+  "reseptit/paaruoat/khao-kha-moo-vhh.md": {
+    currentSha256: "907a2f69e71ce436054f1561a351e70def1ad38de23b95cf8a44d6af38060256",
+    inverseEdits: [
+      [57, 1, "3. Kaada joukkoon kanaliemi. Lisää soijakastikkeet, kalakastike ja erytritoli. Nosta porsas takaisin pataan.\n"],
+    ],
+  },
+  "kaannokset/en/paaruoat/khao-kha-moo-vhh.md": {
+    currentSha256: "fdc870ccc6c7f51687c14470d3a0b9bece636dcff962ef2bdf2ebf1cdd482137",
+    inverseEdits: [
+      [93, 1, "3. Pour in the chicken stock. Add soy sauces, fish sauce and erythritol. Return the pork to the pot.\n"],
+      [91, 1, "1. Brown the pork pieces in a pan on all sides. Set aside for a moment.\n"],
+      [87, 1, "The mild braising makes the pork belly tender and allows the spices to season the entire broth. The food is suitable for preparation the day before.\n"],
+    ],
+  },
+  "kaannokset/sv/paaruoat/khao-kha-moo-vhh.md": {
+    currentSha256: "5b19816ca02f912ed29ddb808fff3fdd8dbba55c493a90c406797dc6a3b1eec1",
+    inverseEdits: [
+      [93, 1, "3. Häll i kycklingfonden. Tillsätt sojasås, fisksås och erytritol. Lägg tillbaka fläsket i grytan.\n"],
+      [91, 1, "1. Bryn fläskbitarna i en panna på alla sidor. Ställ åt sidan en stund.\n"],
+      [87, 1, "Den milda bräseringen gör fläskmagen mör och låter kryddorna krydda hela buljongen. Maten är lämplig att laga dagen innan.\n"],
+    ],
+  },
+  "kaannokset/th/paaruoat/khao-kha-moo-vhh.md": {
+    currentSha256: "d66dd59200f05d349c5792002b1f0ae5a9f2ef3a39f69b93de36b51131e26dba",
+    inverseEdits: [
+      [93, 1, "3. ใส่น้ำสต๊อกไก่ลงไป ใส่ซีอิ๊วขาว น้ำปลา และอิริทริทอล นำหมูกลับลงหม้อ\n"],
+      [91, 1, "1. ผัดชิ้นหมูในกระทะทุกด้าน พักไว้สักครู่\n"],
+      [87, 1, "การตุ๋นอย่างอ่อนจะทำให้เนื้อสันในหมูนุ่มและช่วยให้เครื่องเทศปรุงรสน้ำซุปทั้งหมดได้ สามารถเตรียมอาหารได้ล่วงหน้าหนึ่งวัน\n"],
+    ],
+  },
+  "reseptit/paaruoat/khao-man-gai-vhh.md": {
+    currentSha256: "1e25c05b37753f78151fada1991efcdd682bf7ca7af92c1fe4955548c2018d1f",
+    inverseEdits: [
+      [62, 1, "5. Viipaloi broileri ja tarjoa riisin, kurkun, kastikkeen ja korianterin kanssa. Tarjoa halutessasi lientä erikseen.\n"],
+    ],
+  },
+  "kaannokset/en/paaruoat/khao-man-gai-vhh.md": {
+    currentSha256: "80ff3fbe537bd2d12c03a15d326573d3e6bedee28b38327f0e87e9da246fc090",
+    inverseEdits: [
+      [90, 1, "5. Slice the chicken and serve with rice, cucumber, sauce and coriander. If you wish, serve the broth separately.\n"],
+    ],
+  },
+  "kaannokset/sv/paaruoat/khao-man-gai-vhh.md": {
+    currentSha256: "2725e963d0e0617f491e417d1cd97f9504d71b43fd0d95dea02a1571be02ebcb",
+    inverseEdits: [
+      [89, 1, "5. Skiva kycklingen och servera med ris, gurka, sås och koriander. Om du vill, servera buljongen separat.\n"],
+      [86, 2, "2. Koka under lock i 15–20 minuter tills innertemperaturen i broilern är minst 75 °C. Ta bort köttet från buljongen och låt det vila.\n3. Blanda ingefära, sojabönpasta, fisksås, limejuice och vitlök till en sås. Späd eventuellt med en sked fond.\n"],
+    ],
+  },
+  "kaannokset/th/paaruoat/khao-man-gai-vhh.md": {
+    currentSha256: "c9f8b20bcf23ac8c2e9738f718f16d3b9c7356f802faed9598809398fb8fdbbe",
+    inverseEdits: [
+      [89, 1, "5. หั่นไก่แล้วเสิร์ฟพร้อมข้าว แตงกวา ซอส และผักชี หากต้องการ ให้เสิร์ฟน้ำซุปแยกกัน\n"],
+    ],
+  },
+  "kaannokset/th/paaruoat/khao-soi-vhh-konjac.md": {
+    currentSha256: "b2da8bd0471d0684ef3634ea6ebcff35f9815489e46e21674fc2e8357f695648",
+    inverseEdits: [
+      [91, 2, "5. ล้างเส้นและสะเด็ดน้ำ ทอดในกระทะให้แห้งสักครู่แล้วแบ่งเป็นชาม\n6. ใส่ไก่ลงบนเส้นแล้วราดน้ำซุปร้อนๆ ปิดท้ายด้วยหอมแดงและกะหล่ำปลีมัสตาร์ด\n"],
+      [79, 1, "ข้าวซอยเป็นก๋วยเตี๋ยวแกงภาคเหนือของไทย รูปแบบ คาร์โบไฮเดรตต่ำ นี้ทำจากบะหมี่บุกแทนบะหมี่แบบดั้งเดิม น้ำซุปมะพร้าวเข้มข้น ไก่ และผักกาดดองมัสตาร์ดยังคงรักษารสชาติที่คุ้นเคยไว้\n"],
+      [64, 1, "    item: กะหล่ำปลีมัสตาร์ดดอง\n"],
+      [23, 1, "  alt: ข้าวซอยเส้นบุกในน้ำแกงกะทิ ใส่เนื้อไก่ไม่มีกระดูก หอมแดงสด และผักกาดดอง\n"],
+    ],
+  },
   "reseptit/aamupalat/indialainen-poha-maapahkinoilla.md": {
     currentSha256: "5fc1ccc4d6c48268325313fa6e5075d9a9bcf5d8f97943758aba6da8ab906dbd",
     inverseEdits: [[7, 2, ""]],
@@ -338,21 +518,6 @@ const editorialSnapshots: Readonly<Record<string, {
       [79, 1, ""],
     ],
   },
-  "kaannokset/en/paaruoat/khao-kha-moo-vhh.md": {
-    currentSha256: "53b6883173604aa7218c367a36ae1d073bbb5f00a8bcf83916611325f5649c6b",
-    inverseEdits: [
-      [91, 1, "1. Brown the pork pieces in a pan on all sides. Set aside for a moment.\n"],
-      [87, 1, "The mild braising makes the pork belly tender and allows the spices to season the entire broth. The food is suitable for preparation the day before.\n"],
-    ],
-  },
-  "kaannokset/sv/paaruoat/khao-kha-moo-vhh.md": {
-    currentSha256: "755c54c7495d77961fee44576197488ec70458bcf6ba5438b7c413132af8df0f",
-    inverseEdits: [
-      [93, 1, "3. Häll i kycklingfonden. Tillsätt sojasås, fisksås och erytritol. Lägg tillbaka fläsket i grytan.\n"],
-      [91, 1, "1. Bryn fläskbitarna i en panna på alla sidor. Ställ åt sidan en stund.\n"],
-      [87, 1, "Den milda bräseringen gör fläskmagen mör och låter kryddorna krydda hela buljongen. Maten är lämplig att laga dagen innan.\n"],
-    ],
-  },
   "kaannokset/th/jalkiruoat/keto-pannukakku.md": {
     currentSha256: "d66ff0b49dbfacdeeb1ab693778197851a481cb1df4e880a95fd5650620bc5dd",
     inverseEdits: [
@@ -364,19 +529,6 @@ const editorialSnapshots: Readonly<Record<string, {
     inverseEdits: [
       [73, 1, "3. เทส่วนผสมไข่ลงในกระทะ ทอดด้วยไฟปานกลางจนขอบกรอบและอยู่ตรงกลาง\n"],
       [63, 1, "ไก่เจียวเป็นไข่เจียวกรอบฟูกรอบปรุงรสด้วยน้ำปลา จัดเตรียมได้อย่างรวดเร็วและเหมาะเป็นอาหารว่างหรือเป็นส่วนหนึ่งของโต๊ะรับประทานอาหารขนาดใหญ่\n"],
-    ],
-  },
-  "kaannokset/th/paaruoat/khao-kha-moo-vhh.md": {
-    currentSha256: "a9fe38edf1999523f938385ec38f93624901779036a6fd6d29a83e2427879772",
-    inverseEdits: [
-      [91, 1, "1. ผัดชิ้นหมูในกระทะทุกด้าน พักไว้สักครู่\n"],
-      [87, 1, "การตุ๋นอย่างอ่อนจะทำให้เนื้อสันในหมูนุ่มและช่วยให้เครื่องเทศปรุงรสน้ำซุปทั้งหมดได้ สามารถเตรียมอาหารได้ล่วงหน้าหนึ่งวัน\n"],
-    ],
-  },
-  "kaannokset/th/paaruoat/khao-soi-vhh-konjac.md": {
-    currentSha256: "65676e5f2607aeb5f85dac4cd702b165e217e8ea642c5ad0c2d6ae938802ba81",
-    inverseEdits: [
-      [91, 1, "5. ล้างเส้นและสะเด็ดน้ำ ทอดในกระทะให้แห้งสักครู่แล้วแบ่งเป็นชาม\n"],
     ],
   },
   "reseptit/aamupalat/intialainen-pinaatti-paneer-chilla.md": {

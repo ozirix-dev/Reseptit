@@ -72,8 +72,8 @@ Den här varianten av kåldolmar görs utan ris.
 1. Koka kålen tills bladen lätt lossnar. Ta bort bladen och spara kokvattnet.
 2. Blanda köttfärs, blomkål, hackad lök, ägg, grädde och kryddor.
 3. Dosera fyllningen på bladen och rulla till täta rullar.
-4. Lägg i en smord form, häll smält smör ovanpå och en skvätt kål kokande vatten.
-5. Grädda i 200 °C i ca 45–55 minuter. Pensla med matlagningsbuljongen en gång.
+4. Lägg rullarna i en smord ugnsform. Häll över det smälta smöret och en skvätt av kålens kokvatten.
+5. Grädda vid 200 °C i cirka 45–55 minuter och ös med skyn från formen en gång. Fortsätt vid behov tills färsfyllningen är genomstekt även i mitten.
 
 ## Anteckningar
 

@@ -83,7 +83,7 @@ Hettan och sockerhalten i currypastor varierar. Börja med en måttlig mängd oc
 
 1. Skär kycklingen i lagom stora bitar. Skär zucchinin och auberginen i klyftor.
 2. Hetta upp oljan i en gryta. Stek currypastan på låg värme i någon minut.
-3. Tillsätt ungefär en deciliter kokosmjölk och blanda. Tillsätt kycklingen och koka, vänd.
+3. Rör ner cirka en deciliter kokosmjölk. Lägg i kycklingen och vänd runt bitarna under tillagningen.
 4. Tillsätt resterande kokosmjölk, fisksås, erytritol och kaffirlimeblad. Sjud i 10 minuter.
 5. Tillsätt grönsakerna och låt puttra ytterligare 8–10 minuter tills kycklingen är genomstekt och grönsakerna mjuka.
 6. Rör ner basilikan. Hetta upp blomkålsriset i en panna och servera med curryn.

@@ -80,10 +80,10 @@ Krispiga trekantiga bakverk är fyllda med potatis och ärtor kryddade med spisk
 
 ## Tillagning
 
-1. Blanda mjöl och salt. Häll i oljan. Tillsätt vatten och knåda till en fast deg. Täck över och låt vila i 30 minuter.
+1. Blanda mjöl och salt. Nyp in oljan som hör till degen. Tillsätt vatten och knåda till en fast deg. Täck och låt vila i 30 minuter.
 2. Koka potatisen tills den är kokt och tärna den. Hetta upp en skvätt olja i en panna och rosta spiskumminen.
 3. Tillsätt potatis, ärtor, garam masala och chilipulver. Stek i några minuter. Rör ner koriander och svalna.
-4. Dela degen i 8 delar och kavla till tunna ovaler. Skär på mitten och forma halvkottarna genom att blöta skarven med vatten.
+4. Dela degen i 8 delar och kavla varje del till en tunn oval. Dela varje oval på mitten, vik varje halva till en strut och förslut skarven med vatten.
 5. Fyll kottarna med potatisblandningen och stäng kanterna försiktigt.
 6. Stek samosorna i 170-gradig olja i omgångar i 6-8 minuter tills de är krispiga och gyllenbruna. Låt rinna av med hushållspapper.
 
