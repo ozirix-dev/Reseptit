@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "recipe_id": "malesialainen-roti-jala-currykanalla-punnittu-v2",
+  "source_path": "reseptit/aamupalat/malesialainen-roti-jala-currykanalla-punnittu-v2.md",
+  "source_sha256": "bc1e304de377ae623151a5d66328cb538575b166e3c14e9c8961c4790459b28b",
+  "decision": "approved",
+  "reviewed_by": "Codex, kirjallinen lähde- ja reseptikatselmointi",
+  "reviewed_at": "2026-11-14",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.mccormickasia.com/recipes/curried-roti-jala",
+      "https://www.ajinomoto.com.my/recipes/roti-jala-with-chicken-curry",
+      "https://salliselta.fi/tuotteet/mausteet/curryjauhe",
+      "https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/kasittely-ja-sailyttaminen/hygienia-kotikeittiossa/liha/"
+    ]
+  },
+  "supersedes_quarantined": {
+    "recipe_id": "malesialainen-roti-jala-currykanalla",
+    "source_path": "reseptit/aamupalat/malesialainen-roti-jala-currykanalla.md",
+    "source_git_blob_sha": "ef557fd9211a6ea627f018d05380bd33161ce768"
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/malesialainen-roti-jala-currykanalla-punnittu-v2.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "One public route per locale. The registry replaces only the exact predecessor with the same public slug."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Twelve edible inputs are weighed, with separate coconut-milk amounts for batter and curry. Batter oil is weighed and fully accounted for."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "The published McCormick batter ratio is halved and uses pure turmeric instead of its spice blend; Ajinomoto supports the straining and net technique. No physical cooking test was performed."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Minimum 75 °C throughout the chicken; separate raw chicken from cooked crepes. Cook egg and flour batter until set; declare wheat and egg and check the curry label."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Two equal portions of all cooked crepes and curry; 75 minutes estimated. No measured crepe count."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "The four modeled macros are 50.27, 52.61, 28.12, 40.39 g per serving. The total spice mass bounds any omitted macro to 1 g and energy to 9 kcal per serving."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "GI 49 in GK149 applies to a specific tested net crepe only. It is not a match to this new batter or the chicken curry meal."
+    }
+  },
+  "supplementary_evidence": {
+    "review": "docs/reviews/2026-11-14-roti-jala-v2.md",
+    "physical_cook_test": false,
+    "image_method": "Built-in ImageGen",
+    "image_sha256": "89f04af7249fa8a5cb82c363af2527be3b555cafce461d09fe44abe99052cec7"
+  }
+}
