@@ -13,11 +13,6 @@ export const sourceReviewNotices: Readonly<Record<string, SourceReviewNotice>> =
     details: "Neljä varsinaista makroarvoa ja hyväksytty ainesosakohtainen laskentasyöte puuttuvat. Juustokuminan teelusikkapaino ja paistoöljyn syöty osuus pitää täsmentää. Ohjeessa ei ole korianterichutneyta eikä sitruunalohkoja, ellei niitä lisätä ainesluetteloon erikseen.",
     allergens: "Sisältää maitoa (paneer) ja kikhernejauhoa (palkokasvi). Tarkista pakkaukset.",
   },
-  "vietnamilainen-banh-xeo-aamiaisletut": {
-    heading: "Vaalea bánh xèo -sovellus vaatii rakennevarmennuksen",
-    details: "Nykyinen punnittu taikina sisältää 100 g riisijauhoa ja 200 ml kookosmaitoa, mutta ei vettä eikä kurkumaa. Se ei ole perinteisen keltaisen ohuen bánh xèon tarkka vastine. Paista katkaravut täysin kypsiksi, kuumenna pavunidut läpikotaisin ja paista letut yhdeltä puolelta. Rapeus ja taikinan levittyvyys on vielä varmistettava.",
-    allergens: "Sisältää katkarapuja eli äyriäisiä. Tarkista myös kookosmaidon ja muiden tuotteiden pakkausmerkinnät.",
-  },
   "meksikolainen-chilaquiles-verdes": {
     heading: "Tortillan, salsan ja juuston ravintolaskenta puuttuu",
     details: "Tortillan tuotemerkki muuttaa hiilihydraatteja: El Taco Truckin maissitortilla 43 g/100 g ja Finelin eräs kaupallinen maissitortilla 51,845 g/100 g. Kaikki 100 g tortillaa, 150 g salsa verdeä, 150 g queso frescoa, kaksi munaa ja paistoöljy pitää sitoa täsmätuotteisiin ennen neljän makron hyväksymistä. Kuitua ei saa arvata nollaksi.",

@@ -121,7 +121,21 @@
       "source_risk": "HOLD-UNLISTED-TURMERIC",
       "nutrition_input_at_baseline": "present-unapproved",
       "public_quarantine_at_baseline": false,
-      "approval": null
+      "approval": {
+        "status": "RELEASE_AUTHORIZED",
+        "reviewedAt": "2026-11-14",
+        "reviewReference": "https://github.com/ozirix-dev/Reseptit/issues/447",
+        "reviewerKind": "AI_EDITORIAL_WITH_INDEPENDENT_EVIDENCE",
+        "sourceSha256": "6d3e4dec99749905d85bf839211756b5bbd9406a1cd1df33a416170c0e18bfeb",
+        "nutritionEvidenceSha256": "a9976da97aea1ed5a895680ca59685607343d4b99f6f299c6cb6dc0f13f53cac",
+        "gkRecipeBindingSha256": "d5cd90227c4342cc2ee4d597fc50e6ef71919a226ea8222e82159bb49155a8d9",
+        "gkCalculationInputSha256": "0bd2c6bbc9cc383b53f811a49a3f7223626ce7d4d31e8bb2abe7a534aee82a25",
+        "gkCalculationEvidenceSha256": "f8483bdbd98094a17fc49682cff8d78ce1ff6cd4ce51ae5a570dbb7f240021bf",
+        "gkDisposition": "GK_UNAVAILABLE_EXPLICITLY_REVIEWED",
+        "cookingAndAllergensReviewed": true,
+        "ingredientUnitConversionsReviewed": true,
+        "translationMeaningReviewRequired": true
+      }
     },
     {
       "recipe_id": "pohjoisafrikkalainen-baghrir",

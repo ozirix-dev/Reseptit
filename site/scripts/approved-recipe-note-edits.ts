@@ -75,6 +75,16 @@ const editorialSnapshots: Readonly<Record<string, {
       ]
     ]
   },
+  "reseptit/aamupalat/vietnamilainen-banh-xeo-aamiaisletut.md": {
+    "currentSha256": "6d3e4dec99749905d85bf839211756b5bbd9406a1cd1df33a416170c0e18bfeb",
+    "inverseEdits": [
+      [
+        0,
+        80,
+        "---\ntitle: \"Banh xeo -rapeat aamiaisletut\"\nrecipe_id: vietnamilainen-banh-xeo-aamiaisletut\nurl_slug: vietnamilainen-banh-xeo-aamiaisletut\ncategory: aamupala\nlanguage: fi\nstatus: published\nmain_ingredient:\n  - \"riisijauho\"\n  - \"kookosmaito\"\n  - \"katkarapu\"\ncooking_method:\n  - \"paistaminen\"\ningredients:\n  - amount: 100\n    unit: \"g\"\n    item: \"riisijauho\"\n  - amount: 200\n    unit: \"ml\"\n    item: \"täysrasvaista kookosmaitoa\"\n  - amount: 150\n    unit: \"g\"\n    item: \"katkarapu\"\n  - amount: 150\n    unit: \"g\"\n    item: \"pavunitu\"\n  - amount: 1\n    unit: \"rkl\"\n    item: \"neutraalia paistoöljyä\"\n  - amount: null\n    unit: \"\"\n    item: \"suolaa maun mukaan\"\nservings: 2\ntime_total_min: 25\ndifficulty: Helppo\ntags:\n  - \"aamupala\"\n  - \"vietnamilainen\"\n  - \"aamiaisruoka\"\nimage:\n  src: aamupalat/vietnamilainen-banh-xeo-aamiaisletut.webp\n  alt: \"Banh xeo -rapeat aamiaisletut tarjoiltuna aamiaisella\"\n  width: 1536\n  height: 1024\ncarbs_net_per_serving_g: 42.55\ncarbs_total_per_serving_g: 44.68\nprotein_per_serving_g: 17.47\nfat_per_serving_g: 23.37\n\n---\n\n# Banh xeo -rapeat aamiaisletut\n\n## Kuvaus\n\nTässä kotikeittiöön sovitetussa ohjeessa valmistetaan banh xeo -rapeat aamiaisletut. Mausteisuutta ja lisukkeita voi säätää oman maun mukaan.\n\n## Ainekset\n\nAinekset ovat annoslaskurin käytössä rakenteisista metatiedoista.\n\n## Valmistus\n\n1. Sekoita jauhot tai viljat ja muut kuivat ainekset kulhossa. Lisää neste vähitellen ja vatkaa tasaiseksi taikinaksi.\n2. Anna taikinan levätä 10 minuuttia. Jos käytät kokonaisia palkokasveja tai viljoja taikinapohjana, niiden tulee olla liotettuja ja hienonnettuja.\n3. Kuumenna öljytty pannu keskilämmölle. Paista taikina ohuina annoksina; käännä, kun reunat kuivuvat ja pinta alkaa asettua.\n4. Paista ohut kurkumalla värjätty lettu rapeaksi ja täytä katkaravulla sekä iduilla.\n"
+      ]
+    ]
+  },
   "reseptit/aamupalat/intialainen-ven-pongal.md": {
     currentSha256: "77eea5fe9f4183fd5fda93b0a0c5e5fd346535d0cffbd0399a84d8a2887d2bd8",
     inverseEdits: [
@@ -942,6 +952,7 @@ export function recipeTextForApprovedSnapshot(file: string, text: string): strin
 
 // These corrected FI versions retain their old source only for GK verification.
 export const reviewedRecipesWithHistoricalGk = new Set([
+  "reseptit/aamupalat/vietnamilainen-banh-xeo-aamiaisletut.md",
   "reseptit/aamupalat/vietnamilainen-papaija-kookospuuro.md",
   "reseptit/aamupalat/japanilainen-hojicha-jogurtti-persimonilla.md",
   "reseptit/aamupalat/rahka-marjakerroskulho.md",

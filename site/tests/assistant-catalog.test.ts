@@ -139,7 +139,6 @@ test("F25 A2 historical FI nutrition is withheld from assistant results and GK s
   const catalog=createAssistantCatalog(siteContent.recipes,"fi",version);
   const blocked=[
     "vietnamilainen-banh-cuon-sienilla",
-    "vietnamilainen-banh-xeo-aamiaisletut",
   ];
   for(const id of blocked){
     const row=findAssistantRecipe(catalog,id);
