@@ -1,3 +1,4 @@
+import {coconutBananaHistoricalBindingText, coconutBananaRecipeId, coconutBananaSourcePath} from "../scripts/coconut-banana-reviewed-source";
 import {biryaniSourceBeforeReview, biryaniSourcePath} from "../scripts/biryani-reviewed-source";
 import {parseMarkdown} from "../src/content/markdown";
 import {assertOriginalContentTransition,frozenOriginalRows,originalContentInventoryBefore,restoreBeforeOriginalContent} from './original-content-transition';
@@ -238,6 +239,15 @@ test('Live original results preserve frozen history plus the exact reviewed tran
     assert.equal(normalNotes,notesOf(displayed),row.source_path+' audited public notes');
     return {...row,notes:notesOf(raw)};
    }
+   if (row.source_path === coconutBananaSourcePath) {
+    const live = read(row.source_path).replaceAll("\r\n", "\n");
+    const old = execFileSync("git", ["show", "e127ab5720becdce56c3e8676fdbc0b36f613061"], {cwd:root,encoding:"utf8"});
+    const before = parseMarkdown(old)!;
+    const sourceHash = (text: string) => createHash("sha256").update(text).digest("hex");
+    assert.equal(row.source_content_hash, sourceHash(live));
+    assert.deepEqual(parseMarkdown(coconutBananaHistoricalBindingText(live))!.data.ingredients, before.data.ingredients);
+    return {...row, ingredients: before.data.ingredients, notes: "", source_content_hash: sourceHash(old)};
+   }
    if (row.source_path === "reseptit/aamupalat/japanilainen-natto-riisikulho.md") {
     const live = read(row.source_path).replaceAll("\r\n", "\n");
     const historical = recipeTextForApprovedSnapshot(row.source_path, live);
@@ -447,4 +457,18 @@ test('the reviewed P1 main profile forbids restoring cow-milk coconut inputs aft
  assert.doesNotThrow(()=>verifyP1SourceInputs(old,false));
  const mutated=structuredClone(old);mutated[0].ingredients[0].grams=999;
  assert.throws(()=>verifyP1SourceInputs(mutated,false),/changed/);
+});
+
+test("the new coconut banana recipe keeps the legacy GI/GK binding out of the public estimate", async () => {
+ const live = read(coconutBananaSourcePath).replaceAll("\r\n", "\n");
+ const changed = live.replace("amount: 40", "amount: 41");
+ assert.equal(coconutBananaHistoricalBindingText(changed), changed);
+ const historical = report.results.find((result: any) => result.recipeId === coconutBananaRecipeId);
+ assert.equal(historical.glycemicLoadPerServing, null);
+ const {glycemicLoadPilotResults} = await import("../src/generated/glycemic-load-pilot.generated");
+ const published = glycemicLoadPilotResults.find(result => result.recipeId === coconutBananaRecipeId)!;
+ assert.equal(published.status, "INSUFFICIENT SOURCE DATA");
+ assert.equal(published.glycemicLoadPerServing, null);
+ assert.deepEqual(published.carbohydrateSources, []);
+ assert.deepEqual(published.incompleteReasons, []);
 });
