@@ -6,7 +6,6 @@
 import type { RecipeLocale } from "@/types/content";
 
 export const f25UnverifiedNutritionSourceIds = Object.freeze([
-  "intialainen-pinaatti-paneer-chilla",
 ] as const);
 
 const held = new Set<string>(f25UnverifiedNutritionSourceIds);

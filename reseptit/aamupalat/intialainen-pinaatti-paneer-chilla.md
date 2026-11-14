@@ -1,70 +1,75 @@
 ---
-title: "Pinaatti-paneer-chilla"
+title: "Pinaatti-chilla kotijuustolla"
 recipe_id: intialainen-pinaatti-paneer-chilla
 url_slug: intialainen-pinaatti-paneer-chilla
 category: aamupala
 language: fi
 status: published
+translation_languages: [en, sv, th]
+translation_status: {en: published, sv: published, th: published}
 main_ingredient:
-  - "kikhernejauho"
-  - "pinaatti"
-  - "paneer"
+  - kikhernejauho
+  - pinaatti
+  - kotijuusto
 cooking_method:
-  - "paistaminen"
+  - paistaminen
 ingredients:
   - amount: 100
-    unit: "g"
-    item: "kikhernejauho"
-  - amount: 50
-    unit: "g"
-    item: "tuoretta pinaattia"
-  - amount: 140
-    unit: "ml"
+    unit: g
+    item: "kikhernejauhoa (besan)"
+  - amount: 170
+    unit: g
     item: "vettä"
+  - amount: 45
+    unit: g
+    item: "tuoretta pinaattia"
   - amount: 100
-    unit: "g"
-    item: "paneer"
-  - amount: 1
-    unit: "tl"
-    item: "juustokumina"
-  - amount: 1
-    unit: "rkl"
-    item: "neutraalia paistoöljyä"
-  - amount: null
-    unit: ""
-    item: "suolaa maun mukaan"
+    unit: g
+    item: "pastöroidusta maidosta tehtyä kiinteää kotijuustoa (9–14 % rasvaa)"
+  - amount: 2
+    unit: g
+    item: "jauhettua juustokuminaa"
+  - amount: 8
+    unit: g
+    item: "rypsiöljyä taikinaan"
+  - amount: 2
+    unit: g
+    item: "hienoa suolaa"
 servings: 2
-time_total_min: 25
+time_total_min: 30
 difficulty: Helppo
 tags:
   - "aamupala"
   - "intialainen"
-  - "aamiaisruoka"
 image:
-  src: aamupalat/intialainen-pinaatti-paneer-chilla.webp
-  alt: "Pinaatti-paneer-chilla tarjoiltuna aamiaisella"
+  src: aamupalat/intialainen-pinaatti-paneer-chilla-kotiversio.webp
+  alt: "Taitettuja pinaattikikhernelettuja, joiden välissä näkyy murennettua kotijuustoa."
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 21.79
+carbs_total_per_serving_g: 32.59
+protein_per_serving_g: 20.6
+fat_per_serving_g: 12.6
 ---
 
-# Pinaatti-paneer-chilla
+# Pinaatti-chilla kotijuustolla
 
 ## Kuvaus
 
-Tässä kotikeittiöön sovitetussa ohjeessa valmistetaan pinaatti-paneer-chilla. Mausteisuutta ja lisukkeita voi säätää oman maun mukaan.
+Ohuet intialaistyyliset kikherneletut täytetään murennetulla kotijuustolla. Ohjeesta tulee noin neljä lettua kahdelle.
 
 ## Ainekset
 
-Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
+Punnitse huuhdeltu ja kuivattu pinaatti ilman kovia varsia.
 
 ## Valmistus
 
-1. Vatkaa kikhernejauho, juustokumina, suola ja vesi tasaiseksi taikinaksi. Anna levätä 10 minuuttia.
-2. Huuhtele ja kuivaa pinaatti. Hienonna se ja sekoita taikinaan. Murusta paneer täytteeksi.
-3. Kuumenna öljy pannulla keskilämmöllä. Levitä taikinaa ohuiksi letuiksi ja paista molemmin puolin.
-4. Jaa paneer lettujen päälle, taita letut ja lämmitä täytettä pannulla, kunnes se on lämmin.
-5. Tarjoa halutessasi korianterichutney ja sitruunalohkot erikseen.
+1. Sekoita jauhot, juustokumina ja suola. Vatkaa vesi joukkoon vähitellen. Lisää kaikki rypsiöljy taikinaan ja anna levätä 10 minuuttia.
+2. Hienonna pinaatti ja sekoita se taikinaan. Murenna kotijuusto erilliseen kulhoon.
+3. Kuumenna tarttumaton pannu keskilämmöllä. Sekoita taikina ennen jokaista lettua. Levitä neljäsosa taikinasta ohueksi letuksi ja paista ilman lisäöljyä 2–3 minuuttia, kunnes pinta asettuu ja reuna irtoaa.
+4. Käännä ja paista vielä noin 2 minuuttia, kunnes lettu on kypsä läpi eikä keskellä ole märkää raakaa taikinaa. Toista lopulla taikinalla.
+5. Jaa kotijuusto kuumille letuille, taita letut ja tarjoa.
 
 ## Muistiinpanot
 
-Täsmennettyä ohjetta ei ole vielä koepaistettu.
+Sisältää maitoa ja kikhernettä. Älä maista raakaa taikinaa. Ravintoarvot ovat arvioita. GK: ei määritetty. Kuva on kuvituskuva.

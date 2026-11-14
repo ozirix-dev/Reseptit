@@ -1,0 +1,208 @@
+{
+  "recipeId": "meksikolainen-paputostada-aamupalaksi",
+  "sourceHash": "dcf47a95c13a8517996cf990da967a59ede721fceefb448eb1b8c007b2d73b79",
+  "calculatedAt": "2026-11-14",
+  "batchId": "batch-570",
+  "servings": 2,
+  "scope": "Two servings. Count the full tortilla input before dry baking and all mashed beans and eggs. Oil is mixed into the beans.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "amount": 100,
+      "unit": "g",
+      "item": "pehmeitä maissitortilloja",
+      "state": "soft plain corn tortillas as sold",
+      "matchEvidence": "AFCD Release 3: Bread, flat wrap or tortilla, corn, commercial",
+      "record": {
+        "id": "afcd-F009854-release-3",
+        "name": "Bread, flat wrap or tortilla, corn, commercial",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F009854",
+        "retrievedAt": "2026-11-14",
+        "licence": "FSANZ AFCD Release 3 CC BY-SA 3.0 Australia",
+        "state": "soft plain corn tortillas as sold",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with and without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 44.8,
+          "fibre": 5,
+          "polyols": 0,
+          "protein": 4.8,
+          "fat": 3.2
+        }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible input after the listed preparation",
+      "retainedFraction": 1,
+      "retentionEvidence": "Whole weighed input enters the served dish without deliberate draining or discarded oil"
+    },
+    {
+      "amount": 150,
+      "unit": "g",
+      "item": "valutettuja punaisia kidneypapuja säilykkeestä",
+      "state": "canned red kidney beans drained of packing liquid",
+      "matchEvidence": "AFCD Release 3: Bean, red kidney, canned, drained",
+      "record": {
+        "id": "afcd-F000448-release-3",
+        "name": "Bean, red kidney, canned, drained",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F000448",
+        "retrievedAt": "2026-11-14",
+        "licence": "FSANZ AFCD Release 3 CC BY-SA 3.0 Australia",
+        "state": "canned red kidney beans drained of packing liquid",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with and without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 14,
+          "fibre": 6.5,
+          "polyols": 0,
+          "protein": 6.6,
+          "fat": 0.6
+        }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible input after the listed preparation",
+      "retainedFraction": 1,
+      "retentionEvidence": "Whole weighed input enters the served dish without deliberate draining or discarded oil"
+    },
+    {
+      "amount": 100,
+      "unit": "g",
+      "item": "kananmunaa ilman kuorta (noin 2 kpl)",
+      "state": "raw whole egg without shell",
+      "matchEvidence": "Fineli Release 20 KANANMUNA, KUORETON",
+      "record": {
+        "id": "fineli-858-release-20",
+        "name": "KANANMUNA, KUORETON",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/858",
+        "retrievedAt": "2026-11-14",
+        "licence": "THL Fineli Release 20 CC BY 4.0",
+        "state": "raw whole egg without shell",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0.3,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0.3,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 12.61,
+          "fat": 9.24
+        }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible input after the listed preparation",
+      "retainedFraction": 1,
+      "retentionEvidence": "Whole weighed input enters the served dish without deliberate draining or discarded oil"
+    },
+    {
+      "amount": 80,
+      "unit": "g",
+      "item": "avokadon hedelmälihaa",
+      "state": "raw avocado flesh without skin or pit",
+      "matchEvidence": "Fineli Release 20 AVOKADO, KUORITTU, KIVETÖN",
+      "record": {
+        "id": "fineli-11057-release-20",
+        "name": "AVOKADO, KUORITTU, KIVETÖN",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/11057",
+        "retrievedAt": "2026-11-14",
+        "licence": "THL Fineli Release 20 CC BY 4.0",
+        "state": "raw avocado flesh without skin or pit",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0.77,
+          "FIBT": 3.6,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0.77,
+          "fibre": 3.6,
+          "polyols": 0,
+          "protein": 2.63,
+          "fat": 19.4
+        }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible input after the listed preparation",
+      "retainedFraction": 1,
+      "retentionEvidence": "Whole weighed input enters the served dish without deliberate draining or discarded oil"
+    },
+    {
+      "amount": 8,
+      "unit": "g",
+      "item": "rypsiöljyä papuseokseen",
+      "state": "rapeseed oil in mashed beans",
+      "matchEvidence": "Fineli Release 20 RYPSIÖLJY",
+      "record": {
+        "id": "fineli-535-release-20",
+        "name": "RYPSIÖLJY",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/535",
+        "retrievedAt": "2026-11-14",
+        "licence": "THL Fineli Release 20 CC BY 4.0",
+        "state": "rapeseed oil in mashed beans",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 100
+        }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible input after the listed preparation",
+      "retainedFraction": 1,
+      "retentionEvidence": "Whole weighed input enters the served dish without deliberate draining or discarded oil"
+    },
+    {
+      "amount": 1,
+      "unit": "g",
+      "item": "hienoa suolaa",
+      "state": "fine salt",
+      "matchEvidence": "Plain water and fine salt do not contribute to the modeled nutrients.",
+      "excludedReason": "Plain water and fine salt do not contribute to the modeled nutrients.",
+      "omissionImpactEvidence": "Plain water and fine salt do not contribute to the modeled nutrients.",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 0,
+        "netCarbohydrate": 0,
+        "totalCarbohydrate": 0,
+        "protein": 0,
+        "fat": 0
+      }
+    }
+  ]
+}
