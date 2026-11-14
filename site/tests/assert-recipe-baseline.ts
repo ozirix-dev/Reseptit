@@ -5,6 +5,7 @@ import { originalForC13CanonicalHistory } from "./c13-canonical-historical-trans
 import { originalForThreeCanonicalHistory } from "./issue404-three-canonical-history";
 import { originalForJumeokbapHistory } from "./jumeokbap-history";
 import { originalForBissaraHistory } from "./bissara-history";
+import { originalForBindaetteokHistory } from "./bindaetteok-history";
 import { originalForTamagoKakeGohanHistory } from "./tamago-kake-gohan-history";
 import { originalForKetoprakHistory } from "./ketoprak-history";
 import { execFileSync } from "node:child_process";
@@ -372,7 +373,7 @@ export function assertRecipeBaseline(root: string, baseline: string, ...protecte
         recipeTextForApprovedSnapshot(file,
           historicalRendangForApprovedVersion(file, historicalFarinataForApprovedPanVersion(file, current))))))));
       const reviewedSnapshot = originalForKetoprakHistory(root, file, originalForBissaraHistory(root, file, originalForJumeokbapHistory(root, file, snapshot)));
-      const historicalSnapshot = originalForTamagoKakeGohanHistory(root, file, reviewedSnapshot);
+      const historicalSnapshot = originalForBindaetteokHistory(root, file, originalForTamagoKakeGohanHistory(root, file, reviewedSnapshot));
       if (historicalSnapshot !== current) {
         const original = execFileSync("git", ["show", baseline + ":" + file], { cwd: root, encoding: "utf8" });
         assert.equal(historicalSnapshot, original, change);
