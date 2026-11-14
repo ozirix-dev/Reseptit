@@ -138,7 +138,6 @@ test("build publishes per-locale content-addressed JSON with a verifiable manife
 test("F25 A2 historical FI nutrition is withheld from assistant results and GK search",()=>{
   const catalog=createAssistantCatalog(siteContent.recipes,"fi",version);
   const blocked=[
-    "vietnamilainen-papaija-kookospuuro",
     "vietnamilainen-banh-cuon-sienilla",
     "vietnamilainen-banh-xeo-aamiaisletut",
   ];

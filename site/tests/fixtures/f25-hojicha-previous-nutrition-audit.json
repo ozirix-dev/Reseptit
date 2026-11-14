@@ -1,0 +1,55 @@
+{
+  "recipe_id": "japanilainen-hojicha-jogurtti-persimonilla",
+  "source_path": "reseptit/aamupalat/japanilainen-hojicha-jogurtti-persimonilla.md",
+  "source_content_hash": "cae50573ff18898460b95e9c674d0bc39514c7cbaaaa502d4008171b14261cfe",
+  "values": {
+    "carbs_net_per_serving_g": 17.03,
+    "carbs_total_per_serving_g": 19.34,
+    "protein_per_serving_g": 4.26,
+    "fat_per_serving_g": 4.07
+  },
+  "servings": 2,
+  "status": "ESTIMATE WITH EVIDENCE",
+  "calculationEvidence": "docs/nutrition/calculations/japanilainen-hojicha-jogurtti-persimonilla.json",
+  "recalculatedValues": {
+    "carbs_net_per_serving_g": 17.03,
+    "carbs_total_per_serving_g": 19.34,
+    "protein_per_serving_g": 4.26,
+    "fat_per_serving_g": 4.07
+  },
+  "evidenceErrors": [],
+  "carbohydrateDefinition": "AVAILABLE_EXCLUDING_FIBRE",
+  "totalCarbohydrateDefinition": "AVAILABLE_PLUS_FIBRE_PLUS_POLYOLS",
+  "portionBasis": "metadata fields per serving",
+  "brandAndRawWeightEvidence": "docs/nutrition/calculations/japanilainen-hojicha-jogurtti-persimonilla.json",
+  "missingFields": [],
+  "ingredients": [
+    {
+      "amount": 200,
+      "unit": "g",
+      "item": "jogurttia"
+    },
+    {
+      "amount": 150,
+      "unit": "g",
+      "item": "persimon"
+    },
+    {
+      "amount": 2,
+      "unit": "g",
+      "item": "hojicha-teetä"
+    },
+    {
+      "amount": 5,
+      "unit": "g",
+      "item": "seesaminsiemeniä"
+    },
+    {
+      "amount": null,
+      "unit": "",
+      "item": "suolaa maun mukaan"
+    }
+  ],
+  "notes": "",
+  "uncertainties": []
+}

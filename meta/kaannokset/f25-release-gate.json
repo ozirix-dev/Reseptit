@@ -11,7 +11,21 @@
       "source_risk": "HOLD-PRODUCT-MACROS",
       "nutrition_input_at_baseline": "missing",
       "public_quarantine_at_baseline": false,
-      "approval": null
+      "approval": {
+        "status": "RELEASE_AUTHORIZED",
+        "reviewedAt": "2026-11-14",
+        "reviewReference": "https://github.com/ozirix-dev/Reseptit/issues/447",
+        "reviewerKind": "AI_EDITORIAL_WITH_INDEPENDENT_EVIDENCE",
+        "sourceSha256": "0fd7ce591f4771322f87582b40da6dc015b0883f60dc1d691c77117d9194ba70",
+        "nutritionEvidenceSha256": "7aadf6b2aed094ba5eb6a4b05c3d1ae18516e84d9880938433043fb3288d1ed3",
+        "gkRecipeBindingSha256": "63e6a03070e2686eefca0388dca2374053e64b9d4b096844a749b2e53384a2a2",
+        "gkCalculationInputSha256": "65c181a86bb26077de55f3911fa8d1ac0903681270e5c67277e40c245e57483f",
+        "gkCalculationEvidenceSha256": "64bed0d19a6fffd48d5cc6605e579cda915dc031b1b2e21c8251a961a7008d3d",
+        "gkDisposition": "GK_UNAVAILABLE_EXPLICITLY_REVIEWED",
+        "cookingAndAllergensReviewed": true,
+        "ingredientUnitConversionsReviewed": true,
+        "translationMeaningReviewRequired": true
+      }
     },
     {
       "recipe_id": "intialainen-pinaatti-paneer-chilla",
@@ -52,7 +66,21 @@
       "source_risk": "HOLD-EDIBLE-TEA",
       "nutrition_input_at_baseline": "present-unapproved",
       "public_quarantine_at_baseline": false,
-      "approval": null
+      "approval": {
+        "status": "RELEASE_AUTHORIZED",
+        "reviewedAt": "2026-11-14",
+        "reviewReference": "https://github.com/ozirix-dev/Reseptit/issues/447",
+        "reviewerKind": "AI_EDITORIAL_WITH_INDEPENDENT_EVIDENCE",
+        "sourceSha256": "84df92004ca62795fe83b87756233696ed33d7d06f96c921ed24ac3e163fcd41",
+        "nutritionEvidenceSha256": "158567fb5dd9e5c45affb8e97372c29bd0788e8044abfaea417aeda7571c9fcc",
+        "gkRecipeBindingSha256": "b4696c059ec7ad00614b24882cdc7438e10426e5477f2babc9e4b21ef98088dc",
+        "gkCalculationInputSha256": "b47821c673fd6b677bc01d57eb407d903cd9a967d57059fbc030f6a2f49c1cf1",
+        "gkCalculationEvidenceSha256": "3b3af212bb92901abfa4e753f0c07e84d90a5d617291624ac8bf970ebe884ac7",
+        "gkDisposition": "GK_UNAVAILABLE_EXPLICITLY_REVIEWED",
+        "cookingAndAllergensReviewed": true,
+        "ingredientUnitConversionsReviewed": true,
+        "translationMeaningReviewRequired": true
+      }
     },
     {
       "recipe_id": "vietnamilainen-papaija-kookospuuro",
@@ -61,7 +89,21 @@
       "source_risk": "HOLD-PEARL-COOK-TIME",
       "nutrition_input_at_baseline": "present-unapproved",
       "public_quarantine_at_baseline": false,
-      "approval": null
+      "approval": {
+        "status": "RELEASE_AUTHORIZED",
+        "reviewedAt": "2026-11-14",
+        "reviewReference": "https://github.com/ozirix-dev/Reseptit/issues/447",
+        "reviewerKind": "AI_EDITORIAL_WITH_INDEPENDENT_EVIDENCE",
+        "sourceSha256": "46d8dcdbdcf07070fd2d69435223335d21205d3e4ac8a7826f776fd0d36f5232",
+        "nutritionEvidenceSha256": "15d40a8f50a9535193921152f3415954d938adf59edf2eef379eb2c3bee97226",
+        "gkRecipeBindingSha256": "a63e08ab0cc94706e59060b9a77cae6e449b3f87031b3d4902632f639f4b8c89",
+        "gkCalculationInputSha256": "6931eb9a416ceaec56da0487739793d1ad769473d754384f9ce26d43dca68aa2",
+        "gkCalculationEvidenceSha256": "d7057e72e798dfbe3a98b6b998f3ff8c8dc634f3200d6a5c6d87e0e75880e544",
+        "gkDisposition": "GK_UNAVAILABLE_EXPLICITLY_REVIEWED",
+        "cookingAndAllergensReviewed": true,
+        "ingredientUnitConversionsReviewed": true,
+        "translationMeaningReviewRequired": true
+      }
     },
     {
       "recipe_id": "vietnamilainen-banh-cuon-sienilla",

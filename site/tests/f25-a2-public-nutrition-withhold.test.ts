@@ -29,7 +29,7 @@ const fixture=(recipeId:string,locale:"fi"|"en") => ({
 
 test("F25 A2 preserves historical holds and exposes current nutrition only after the source gate",()=>{
   assert.equal(new Set(f25UnverifiedNutritionSourceIds).size,f25UnverifiedNutritionSourceIds.length);
-  assert.equal(f25UnverifiedNutritionSourceIds.length,6);
+  assert.equal(f25UnverifiedNutritionSourceIds.length,3);
   for(const id of a2){
     const record=gate.sources.find(x=>x.recipe_id===id);
     assert.ok(record,id);
@@ -57,7 +57,6 @@ test("unrelated FI recipes retain nutrition, and locale check does not silently 
 
 test("FI GK filter does not assign a held macro source to misleading low/medium/high classes",()=>{
   const sample:Record<string,"low"|"medium"|"high"> = {
-    "vietnamilainen-papaija-kookospuuro":"high",
     "vietnamilainen-banh-cuon-sienilla":"high",
     "vietnamilainen-banh-xeo-aamiaisletut":"medium",
     "gluteeniton-uunipannukakku":"low",
@@ -68,9 +67,9 @@ test("FI GK filter does not assign a held macro source to misleading low/medium/
   assert.deepEqual(filterRecipes(recipes,high,"fi",sample).map(x=>x.recipeId),[]);
   assert.deepEqual(filterRecipes(recipes,low,"fi",sample).map(x=>x.recipeId),["gluteeniton-uunipannukakku"]);
   assert.deepEqual(filterRecipes(recipes,high,"en",sample).map(x=>x.recipeId),[
-    "vietnamilainen-papaija-kookospuuro","vietnamilainen-banh-cuon-sienilla"
+    "vietnamilainen-banh-cuon-sienilla"
   ]);
-  assert.equal(sample["vietnamilainen-papaija-kookospuuro"],"high","historical data stays byte-identical");
+  assert.equal(sample["vietnamilainen-banh-cuon-sienilla"],"high","historical data stays byte-identical");
 });
 
 test("banh cuon gets exact GK: ei määritetty label only on the FI held version",()=>{

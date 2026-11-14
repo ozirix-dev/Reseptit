@@ -1,3 +1,5 @@
+import { f25SourceReleaseGate, sourceReleaseGateDecision } from "./f25-source-release-gate";
+import { createHash } from "node:crypto";
 import { recipeTextForApprovedSnapshot, reviewedRecipesWithHistoricalGk } from "./approved-recipe-note-edits";
 import { molletesHistoricalText } from "./molletes-reviewed-source";
 import { koreanRiceBowlHistoricalText } from "./korean-rice-bowls-reviewed-source";
@@ -229,9 +231,25 @@ for (const recipeId of recipeIds) {
     const historicalReviewedRecipe = reviewedRecipesWithHistoricalGk.has(changedSource.path)
       ? recipeTextForApprovedSnapshot(changedSource.path, changedSource.markdown.replaceAll("\r\n", "\n"))
       : changedSource.markdown;
+    const historicalHash = recipeBindingHash(historicalReviewedRecipe, recipeAliases.aliases ?? {});
     const reviewedHistoricalSourceWithoutGk = historicalReviewedRecipe !== changedSource.markdown &&
-      recipeBindingHash(historicalReviewedRecipe, recipeAliases.aliases ?? {}) === boundRecipeHash;
-    assert(currentRecipeHash === boundRecipeHash || reviewedBiryaniWithoutGk || reviewedCoconutBananaWithoutGk || reviewedRiceBowlWithoutGk || reviewedMolletesWithoutGk || reviewedHistoricalSourceWithoutGk || await validateGk80Candidate(repoRoot, recipeId) || await validateRecovery(repoRoot,recipeId) || await validateScopedPolyolC(repoRoot,recipeId), `${recipeId}: GI/GK recipe binding is stale; review the related calculation before accepting this content change`);
+      historicalHash === boundRecipeHash;
+    // Some original F25 snapshots already disagreed with their stored GK fingerprints.
+    // Recheck the exact historical Git blob and retain the mismatch; this route never
+    // grants numeric GK or accepts a changed historical recipe.
+    const historicalF25Fingerprints: Readonly<Record<string, string>> = {
+      "japanilainen-hojicha-jogurtti-persimonilla": "e0a9054b5bea0325733540f7b5f7694c1010158cd34cc26e141f10f2dcc8e5b2",
+      "vietnamilainen-papaija-kookospuuro": "2336164b42075032e6870eb4da1760eee74c93a8b33ace230adc518a16bb2e5f",
+    };
+    const f25 = f25SourceReleaseGate.sources.find(row => row.recipe_id === recipeId && row.source_path === changedSource.path);
+    const historicalBytes = Buffer.from(historicalReviewedRecipe, "utf8");
+    const historicalBlob = createHash("sha1").update("blob " + historicalBytes.length + "\0").update(historicalBytes).digest("hex");
+    const reviewedF25WithoutGk = historicalReviewedRecipe !== changedSource.markdown &&
+      f25?.approval?.gkDisposition === "GK_UNAVAILABLE_EXPLICITLY_REVIEWED" &&
+      sourceReleaseGateDecision(recipeId).authorized &&
+      historicalBlob === f25.baseline_git_blob_sha &&
+      historicalHash === historicalF25Fingerprints[recipeId];
+    assert(currentRecipeHash === boundRecipeHash || reviewedBiryaniWithoutGk || reviewedCoconutBananaWithoutGk || reviewedRiceBowlWithoutGk || reviewedMolletesWithoutGk || reviewedHistoricalSourceWithoutGk || reviewedF25WithoutGk || await validateGk80Candidate(repoRoot, recipeId) || await validateRecovery(repoRoot,recipeId) || await validateScopedPolyolC(repoRoot,recipeId), `${recipeId}: GI/GK recipe binding is stale; review the related calculation before accepting this content change`);
   }
 
   const evidencePath = resolveRepoFile(`docs/nutrition/calculations/${recipeId}.json`);

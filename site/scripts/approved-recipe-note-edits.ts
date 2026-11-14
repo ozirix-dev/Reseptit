@@ -45,6 +45,36 @@ const editorialSnapshots: Readonly<Record<string, {
       ]
     ]
   },
+  "reseptit/aamupalat/vietnamilainen-papaija-kookospuuro.md": {
+    "currentSha256": "46d8dcdbdcf07070fd2d69435223335d21205d3e4ac8a7826f776fd0d36f5232",
+    "inverseEdits": [
+      [
+        0,
+        71,
+        "---\ntitle: \"Vietnamilainen papaija-kookospuuro\"\nrecipe_id: vietnamilainen-papaija-kookospuuro\nurl_slug: vietnamilainen-papaija-kookospuuro\ncategory: aamupala\nlanguage: fi\nstatus: published\nmain_ingredient:\n  - \"tapioka\"\n  - \"kookosmaito\"\n  - \"papaija\"\ncooking_method:\n  - \"keittäminen\"\ningredients:\n  - amount: 100\n    unit: g\n    item: tapiokahelmiä\n  - amount: 200\n    unit: ml\n    item: kookosmaito\n  - amount: 200\n    unit: g\n    item: papaija\n  - amount: 15\n    unit: g\n    item: limettimehua\n  - amount: 700\n    unit: ml\n    item: vettä\n  - amount: null\n    unit: \"\"\n    item: suolaa maun mukaan\nservings: 2\ntime_total_min: 25\ndifficulty: Helppo\ntags:\n  - \"aamupala\"\n  - \"vietnamilainen\"\n  - \"puuro\"\nimage:\n  src: aamupalat/vietnamilainen-papaija-kookospuuro.webp\n  alt: \"Vietnamilainen papaija-kookospuuro tarjoiltuna aamiaisella\"\n  width: 1536\n  height: 1024\ncarbs_net_per_serving_g: 49.7\ncarbs_total_per_serving_g: 52.07\nprotein_per_serving_g: 1.85\nfat_per_serving_g: 14.28\n---\n\n# Vietnamilainen papaija-kookospuuro\n\n## Kuvaus\n\nTässä kotikeittiöön sovitetussa ohjeessa valmistetaan vietnamilainen papaija-kookospuuro. Mausteisuutta ja lisukkeita voi säätää oman maun mukaan.\n\n## Ainekset\n\nAinekset ovat annoslaskurin käytössä rakenteisista metatiedoista.\n\n## Valmistus\n\n1. Mittaa tapioka kattilaan ja lisää reseptin neste. Kuumenna kiehuvaksi samalla pohjaa myöten sekoittaen.\n2. Hauduta miedolla lämmöllä välillä sekoittaen, kunnes puuro on pehmeää ja sakeaa. Lisää nestettä vähän kerrallaan, jos rakenne tiivistyy liikaa.\n3. Kypsennä liha tai muut täytteet kypsiksi ja lisää puuroon. Tarkista suola ja mausteet.\n4. Keitä tapiokahelmiä vedessä, kunnes ne alkavat muuttua läpikuultaviksi. Lisää kookosmaito ja hauduta kypsiksi. Tarjoa papaijan ja limettimehun kanssa.\n"
+      ]
+    ]
+  },
+  "reseptit/aamupalat/japanilainen-hojicha-jogurtti-persimonilla.md": {
+    "currentSha256": "84df92004ca62795fe83b87756233696ed33d7d06f96c921ed24ac3e163fcd41",
+    "inverseEdits": [
+      [
+        0,
+        64,
+        "---\ntitle: \"Hojicha-jogurtti persimonilla\"\nrecipe_id: japanilainen-hojicha-jogurtti-persimonilla\nurl_slug: japanilainen-hojicha-jogurtti-persimonilla\ncategory: aamupala\nlanguage: fi\nstatus: published\nmain_ingredient:\n  - \"jogurtti\"\n  - \"persimon\"\n  - \"hojicha\"\ncooking_method:\n  - \"paistaminen\"\ningredients:\n  - amount: 200\n    unit: g\n    item: jogurttia\n  - amount: 150\n    unit: g\n    item: persimon\n  - amount: 2\n    unit: g\n    item: hojicha-teetä\n  - amount: 5\n    unit: g\n    item: seesaminsiemeniä\n  - amount: null\n    unit: \"\"\n    item: suolaa maun mukaan\nservings: 2\ntime_total_min: 25\ndifficulty: Helppo\ntags:\n  - \"aamupala\"\n  - \"japanilainen\"\n  - \"aamiaisruoka\"\nimage:\n  src: aamupalat/japanilainen-hojicha-jogurtti-persimonilla.webp\n  alt: \"Hojicha-jogurtti persimonilla tarjoiltuna aamiaisella\"\n  width: 1536\n  height: 1024\ncarbs_net_per_serving_g: 17.03\ncarbs_total_per_serving_g: 19.34\nprotein_per_serving_g: 4.26\nfat_per_serving_g: 4.07\n\n---\n\n# Hojicha-jogurtti persimonilla\n\n## Kuvaus\n\nTässä kotikeittiöön sovitetussa ohjeessa valmistetaan hojicha-jogurtti persimonilla. Mausteisuutta ja lisukkeita voi säätää oman maun mukaan.\n\n## Ainekset\n\nAinekset ovat annoslaskurin käytössä rakenteisista metatiedoista.\n\n## Valmistus\n\n1. Valmistele kulhon ainekset; kypsennä pavut tai proteiini, jos käytät niitä kuivina tai raakana. Paista tofu, muna tai muu lämmin täyte tarvittaessa erikseen.\n2. Paloittele tuoreet kasvikset ja valmistele yrtit sekä kastikkeen ainekset.\n3. Jaa lämmin pohja kulhoihin, asettele muut ainekset päälle ja lisää kastike juuri ennen tarjoamista.\n4. Jauha hojicha hienoksi tai hauduta siitä vahva tee ja jäähdytä. Annostele jogurtti kulhoihin, lisää viipaloitu persimon, hojicha ja seesaminsiemenet. Tarjoa heti.\n"
+      ]
+    ]
+  },
+  "reseptit/aamupalat/rahka-marjakerroskulho.md": {
+    "currentSha256": "0fd7ce591f4771322f87582b40da6dc015b0883f60dc1d691c77117d9194ba70",
+    "inverseEdits": [
+      [
+        0,
+        69,
+        "---\ntitle: Rahka-marjakerroskulho\nrecipe_id: rahka-marjakerroskulho\nurl_slug: rahka-marjakerroskulho\ncategory: aamupala\nlanguage: fi\nstatus: published\nmain_ingredient:\n  - rahka\n  - marjat\ncooking_method:\n  - kypsentäminen\ntags:\n  - aamupala\n  - rahka\n  - marjat\ningredients:\n  - amount: 250\n    unit: g\n    item: maitorahkaa\n  - amount: 100\n    unit: g\n    item: maustamatonta turkkilaista jogurttia\n  - amount: 100\n    unit: g\n    item: mansikoita\n  - amount: 50\n    unit: g\n    item: mustikoita\n  - amount: 20\n    unit: g\n    item: hasselpähkinöitä\n  - amount: 1\n    unit: tl\n    item: sitruunankuorta\n  - amount: null\n    unit: \"\"\n    item: makeutusainetta maun mukaan\ncarbs_net_per_serving_g: 6.32\ncarbs_total_per_serving_g: 8.09\nprotein_per_serving_g: 8.05\nfat_per_serving_g: 6.01\nservings: 4\ntime_total_min: 10\ndifficulty: Helppo\nimage:\n  src: aamupalat/rahka-marjakerroskulho.webp\n  alt: Rahka-marjakerroskulho tarjoiltuna\n  width: 1536\n  height: 1024\n---\n# Rahka-marjakerroskulho\n\n## Kuvaus\n\nKerrostettu rahka-aamiainen yhdistää raikkaat marjat, sitruunan ja pähkinöiden rapeuden.\n\n## Ainekset\n\nAinekset ovat annoslaskurin käytössä rakenteisista metatiedoista.\n\n## Valmistus\n\n1. Sekoita rahka, jogurtti ja sitruunankuori tasaiseksi. Makeuta halutessasi.\n2. Viipaloi mansikat ja rouhi hasselpähkinät.\n3. Lusikoi lasiin vuorotellen rahkaa ja marjoja.\n4. Ripottele pähkinät pinnalle juuri ennen tarjoamista.\n\n## Muistiinpanot\n\nJos haluat kulhosta vähähiilihydraattisemman, vaihda mansikat vadelmiin ja vähennä marjojen määrää.\n"
+      ]
+    ]
+  },
   "reseptit/aamupalat/intialainen-ven-pongal.md": {
     currentSha256: "77eea5fe9f4183fd5fda93b0a0c5e5fd346535d0cffbd0399a84d8a2887d2bd8",
     inverseEdits: [
@@ -912,6 +942,9 @@ export function recipeTextForApprovedSnapshot(file: string, text: string): strin
 
 // These corrected FI versions retain their old source only for GK verification.
 export const reviewedRecipesWithHistoricalGk = new Set([
+  "reseptit/aamupalat/vietnamilainen-papaija-kookospuuro.md",
+  "reseptit/aamupalat/japanilainen-hojicha-jogurtti-persimonilla.md",
+  "reseptit/aamupalat/rahka-marjakerroskulho.md",
   "reseptit/aamupalat/pohjoisafrikkalainen-baghrir.md",
   "reseptit/aamupalat/lahi-ita-zaatar-munat.md",
   "reseptit/aamupalat/intialainen-masala-dosa.md",
