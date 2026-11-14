@@ -83,8 +83,8 @@ export async function verifyMaterialFifteen(repoRoot: string, manifest?: Manifes
       visible++;
     }
   }
-  assert.equal(quarantine,11);
-  assert.equal(visible,4);
+  assert.equal(quarantine,12);
+  assert.equal(visible,3);
   return {checked:source.cases.length,quarantine,visible,ids:[...ids]};
 }
 

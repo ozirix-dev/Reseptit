@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "recipe_id": "indonesialainen-bakwan-jagung-kotiversio",
+  "source_path": "reseptit/aamupalat/indonesialainen-bakwan-jagung-kotiversio.md",
+  "source_sha256": "292f5afc3ceb2a0e656fdbaa79b26e4f5d0478872e4f139a76e8b58ff97c863f",
+  "decision": "approved",
+  "reviewed_by": "Codex, kirjallinen lähde- ja reseptikatselmointi",
+  "reviewed_at": "2026-11-14",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.heloindonesia.com/makanan/24839/resep-cara-membuat-bakwan-jagung-renyah-tanpa-telur",
+      "https://coventmarket.com/wp-content/uploads/2021/08/Bakwan-Jagung-Indonesian-Corn-Fritter-Kimi-Abdullah-Aug-2021.pdf",
+      "https://www.fda.gov/food/buy-store-serve-safe-food/handling-flour-safely-what-you-need-know"
+    ]
+  },
+  "supersedes_quarantined": {
+    "recipe_id": "indonesialainen-bakwan-maissifritter",
+    "source_path": "reseptit/aamupalat/indonesialainen-bakwan-maissifritter.md",
+    "source_git_blob_sha": "e9316bc8ef79e073366653c7eb13d356ab109f8f"
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/indonesialainen-bakwan-jagung-kotiversio.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "The same slug identifies the weighed successor. The historical predecessor is quarantined."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Corn, plain wheat flour and water preserve the 250:100:100 ratio of Helo Indonesia at 80%. Spring onion and salt are weighed. Pan oil is 30 g."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Rasa Indonesia independently supports the pan method and thin roughly quarter-cup portions. The public recipe gives an estimated time and a doneness cue."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Wheat (gluten) declared in each locale. Cook the flour batter all the way through before serving and avoid tasting it raw."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "About six thin fritters for two servings. This is a portioning estimate. No physical cooking trial."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Reviewed the raw edible sources. Unknown retention of the 30 g of pan oil requires withholding all four numeric macros."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "The new batter and preparation lack a traceable matching measured GI for a numerical GK calculation."
+    }
+  },
+  "supplementary_evidence": {
+    "review": "docs/reviews/2026-11-14-bakwan-jagung-kotiversio.md",
+    "physical_cook_test": false,
+    "image_method": "Built-in ImageGen",
+    "image_sha256": "c5feafcf1b3de37dc1bf478215ac6e40debb3af61fbb44f809dd275bc503bdb3"
+  }
+}

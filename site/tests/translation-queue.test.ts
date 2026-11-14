@@ -24,15 +24,12 @@ test("queue identifies missing and draft languages and keeps quarantines out of 
 
 test("queue holds the remaining unresolved sources in each translation language", () => {
   const queue = translationQueue(review, [], 10);
-  const holds = [
-    ["indonesialainen-bakwan-maissifritter", "bakwan_v2_frying_yield_oil_and_nutrition_review"],
-  ];
-  for (const [id, reason] of holds) {
-    const rows = queue.queue.filter(row => row.recipe_id === id);
-    assert.deepEqual(rows.map(row => row.locale), ["en", "sv", "th"]);
-    assert.ok(rows.every(row => row.hold === reason));
-    assert.ok(!queue.next_batch.some(row => row.recipe_id === id));
-  }
+  const bakwan = "indonesialainen-bakwan-maissifritter";
+  const homeVersion = "indonesialainen-bakwan-jagung-kotiversio";
+  assert.ok(queue.quarantined_recipe_ids.includes(bakwan));
+  assert.ok(!queue.queue.some(row => row.recipe_id === bakwan || row.recipe_id === homeVersion));
+  assert.deepEqual(review.audit.publishedTranslations.filter(entry => entry.data.recipe_id === homeVersion)
+    .map(entry => entry.data.language).sort(), ["en", "sv", "th"]);
 
   const roti = "malesialainen-roti-jala-currykanalla";
   assert.ok(queue.quarantined_recipe_ids.includes(roti));
