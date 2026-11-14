@@ -1,62 +1,118 @@
 import assert from "node:assert/strict";
-import { mkdtemp, mkdir, readFile, readdir, rm, symlink, writeFile } from "node:fs/promises";
+import { cp, mkdtemp, mkdir, readFile, readdir, realpath, rm, symlink, writeFile } from "node:fs/promises";
 import os from "node:os";
 import path from "node:path";
-import { spawnSync } from "node:child_process";
-import test from "node:test";
+import { execFileSync, spawnSync } from "node:child_process";
+import { pathToFileURL } from "node:url";
+import test, { after, before } from "node:test";
 import sharp from "sharp";
 import { createHash } from "node:crypto";
 import { rebuildPublishedImages } from "../src/content/published-images";
+import type { SiteContentIndex } from "../src/types/content";
 
 const siteDir = path.resolve(import.meta.dirname, "..");
 const fixtureWebp = Buffer.from("UklGRiIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEAAUAmJaQAA3AA/v89WAAAAA==", "base64");
 const npmCli = process.env.npm_execpath;
 
-function run(script: string, sourceRoot?: string) {
+function run(cwd: string, script: string, sourceRoot?: string) {
   const env = { ...process.env };
   if (sourceRoot) env.RECIPE_SOURCE_ROOT = sourceRoot;
   else delete env.RECIPE_SOURCE_ROOT;
   const result = spawnSync(npmCli ? process.execPath : process.platform === "win32" ? "npm.cmd" : "npm", npmCli ? [npmCli, "run", script] : ["run", script], {
-    cwd: siteDir, encoding: "utf8", env,
+    cwd, encoding: "utf8", env,
   });
-  if (result.status !== 0) throw new Error(`${script} failed:\n${result.stdout}\n${result.stderr}`);
+  if (result.error) throw result.error;
+  return result;
 }
+
+function runBuild(cwd: string, sourceRoot?: string) {
+  const result = run(cwd, "build", sourceRoot);
+  assert.equal(result.status, 0, `Build failed:\n${result.stdout}\n${result.stderr}`);
+}
+
+const repoDir = path.resolve(siteDir, "..");
+
+async function copyBuildCheckout(root: string) {
+  const checkout = path.join(root, "checkout");
+  const git = (cwd: string, ...args: string[]) =>
+    execFileSync("git", ["-C", cwd, ...args], { encoding: "utf8" });
+  const head = git(repoDir, "rev-parse", "HEAD").trim();
+  // Keep historical Git blobs available to the build without sharing a checkout or index.
+  git(repoDir, "clone", "--quiet", "--shared", "--no-checkout", "--", repoDir, checkout);
+  git(checkout, "checkout", "--quiet", "--detach", head);
+  // Exercise the caller's tracked edits and new build inputs, including unstaged images.
+  const tracked = git(repoDir, "diff", "--name-only", "-z", "--no-renames", "HEAD");
+  const untracked = git(repoDir, "ls-files", "--others", "--exclude-standard", "-z", "--",
+    "site", "reseptit", "kaannokset", "kuvat", "docs", "meta", "tuonti", "tools");
+  for (const file of new Set((tracked + untracked).split("\0").filter(Boolean))) {
+    const target = path.join(checkout, file);
+    try {
+      await mkdir(path.dirname(target), { recursive: true });
+      await cp(path.join(repoDir, file), target, { verbatimSymlinks: true });
+    } catch (error) {
+      if ((error as NodeJS.ErrnoException).code !== "ENOENT") throw error;
+      await rm(target, { force: true });
+    }
+  }
+  const buildSite = path.join(checkout, "site");
+  const dependencies = path.join(siteDir, "node_modules");
+  await cp(dependencies, path.join(buildSite, "node_modules"), {
+    recursive: true,
+    verbatimSymlinks: true,
+    filter: (file) => ![".vite", ".vite-temp", ".cache"].includes(path.relative(dependencies, file)),
+  });
+  return buildSite;
+}
+
+let productionSite = siteDir;
+let productionScratch: string | undefined;
+
+before(async () => {
+  // CI supplies a fresh publication; standalone runs build one in scratch.
+  if (process.env.GITHUB_ACTIONS === "true") return;
+  productionScratch = await mkdtemp(path.join(await realpath(os.tmpdir()), "reseptit-image-production-"));
+  productionSite = await copyBuildCheckout(productionScratch);
+  runBuild(productionSite);
+});
+
+after(async () => {
+  if (productionScratch) await rm(productionScratch, { recursive: true, force: true });
+});
 
 function recipe(image: string | null) {
   return `---\ntitle: Testiresepti\nrecipe_id: testiresepti\nurl_slug: testiresepti\ncategory: paaruoka\nlanguage: fi\nstatus: published\nservings: 2\ningredients:\n  - amount: 1\n    unit: kpl\n    item: sipuli\n${image ? `image:\n  src: ${image}\n  alt: Testikuva\n  width: 1\n  height: 1\n` : ""}---\n# Testiresepti\n\nKuvaa testaava resepti.\n\n## Valmistus\n1. Valmista.\n`;
 }
 
 test("published image pipeline copies only safe, referenced images and removes stale output", async () => {
-  const root = await mkdtemp(path.join(os.tmpdir(), "reseptit-image-test-"));
+  const root = await mkdtemp(path.join(await realpath(os.tmpdir()), "reseptit-image-test-"));
   try {
+    const buildSite = await copyBuildCheckout(root);
     await mkdir(path.join(root, "reseptit", "paaruoat"), { recursive: true });
     await mkdir(path.join(root, "kuvat", "paaruoat"), { recursive: true });
     await writeFile(path.join(root, "kuvat", "paaruoat", "test.webp"), fixtureWebp);
     await writeFile(path.join(root, "reseptit", "paaruoat", "test.md"), recipe("paaruoat/test.webp"));
-    run("build", root);
-    const copied = await readFile(path.join(siteDir, "public", "kuvat", "paaruoat", "test.webp"));
+    runBuild(buildSite, root);
+    const copied = await readFile(path.join(buildSite, "public", "kuvat", "paaruoat", "test.webp"));
     assert.deepEqual(copied, fixtureWebp);
-    const html = await readFile(path.join(siteDir, "dist", "testiresepti", "index.html"), "utf8");
+    const html = await readFile(path.join(buildSite, "dist", "testiresepti", "index.html"), "utf8");
     assert.match(html, /src="https:\/\/ozirix-dev\.github\.io\/Reseptit\/kuvat\/paaruoat\/test\.webp"/);
     const json = html.match(/<script id="recipe-jsonld" type="application\/ld\+json">([\s\S]*?)<\/script>/);
     assert.ok(json);
     assert.deepEqual(JSON.parse(json[1]).image, ["https://ozirix-dev.github.io/Reseptit/kuvat/paaruoat/test.webp"]);
 
     await writeFile(path.join(root, "reseptit", "paaruoat", "test.md"), recipe("paaruoat/missing.webp"));
-    const missing = spawnSync(npmCli ? process.execPath : process.platform === "win32" ? "npm.cmd" : "npm", npmCli ? [npmCli, "run", "content:sync"] : ["run", "content:sync"], { cwd: siteDir, encoding: "utf8", env: { ...process.env, RECIPE_SOURCE_ROOT: root } });
+    const missing = run(buildSite, "content:sync", root);
     assert.notEqual(missing.status, 0, "missing published image must fail build");
+    assert.match(missing.stderr, /Recipe image file does not exist: .*missing\.webp/);
     await writeFile(path.join(root, "reseptit", "paaruoat", "test.md"), recipe(null));
-    run("build", root);
-    await assert.rejects(readFile(path.join(siteDir, "public", "kuvat", "paaruoat", "test.webp")));
-    const noImageHtml = await readFile(path.join(siteDir, "dist", "testiresepti", "index.html"), "utf8");
+    runBuild(buildSite, root);
+    await assert.rejects(readFile(path.join(buildSite, "public", "kuvat", "paaruoat", "test.webp")));
+    const noImageHtml = await readFile(path.join(buildSite, "dist", "testiresepti", "index.html"), "utf8");
     assert.doesNotMatch(noImageHtml, /class="recipe-image"/);
     assert.doesNotMatch(noImageHtml, /id="recipe-jsonld"|property="og:image"|name="twitter:image"/);
     assert.match(noImageHtml, /<h1>Testiresepti<\/h1>/);
   } finally {
-    try {
-      await rm(path.join(siteDir, "public", "kuvat"), { recursive: true, force: true });
-      run("build");
-    } finally { await rm(root, { recursive: true, force: true }); }
+    await rm(root, { recursive: true, force: true });
   }
 });
 
@@ -80,8 +136,6 @@ test("image rebuild rejects traversal and external symlinks without touching sou
 });
 
 test("visually reviewed V1.4 replacements match the correction manifest", async () => {
-  const { createHash } = await import("node:crypto");
-  const repoDir = path.resolve(siteDir, "..");
   const manifest = JSON.parse(await readFile(path.join(repoDir, "docs/reports/2026-10-22-v1-4-image-corrections.json"), "utf8"));
   assert.equal(manifest.images.length, 15);
   assert.equal(new Set(manifest.images.map((entry: {path: string}) => entry.path)).size, 15);
@@ -90,7 +144,7 @@ test("visually reviewed V1.4 replacements match the correction manifest", async 
     assert.equal(createHash("sha256").update(bytes).digest("hex"), entry.sha256, entry.path);
     assert.notEqual(entry.sha256, entry.old_sha256, entry.path);
     assert.equal(bytes.toString("ascii", 8, 12), "WEBP", entry.path);
-    assert.deepEqual(await readFile(path.join(siteDir, "dist", entry.path)), bytes, `published ${entry.path}`);
+    assert.deepEqual(await readFile(path.join(productionSite, "dist", entry.path)), bytes, `published ${entry.path}`);
   }
 });
 
@@ -147,18 +201,19 @@ test("responsive variants are deterministic, deduplicated, bounded, reusable and
 });
 
 test("all published source bytes and responsive dimensions match the generated manifest", async () => {
-  const { siteContent } = await import("../src/generated/content.generated");
-  const manifest = JSON.parse(await readFile(path.join(siteDir, "dist/kuvat/_variants/manifest.json"), "utf8"));
+  const contentUrl = pathToFileURL(path.join(productionSite, "src/generated/content.generated.ts"));
+  const { siteContent }: { siteContent: SiteContentIndex } = await import(contentUrl.href);
+  const manifest = JSON.parse(await readFile(path.join(productionSite, "dist/kuvat/_variants/manifest.json"), "utf8"));
   const expected = new Set(siteContent.recipes.flatMap((r) => r.image ? [r.image.src.split("/kuvat/")[1]] : []));
   assert.deepEqual(new Set(manifest.images.map((image: {path: string}) => image.path)), expected);
   const unique = new Set<string>();
   for (const image of manifest.images) {
-    const source = await readFile(path.join(siteDir, "../kuvat", image.path));
+    const source = await readFile(path.join(repoDir, "kuvat", image.path));
     assert.equal(createHash("sha256").update(source).digest("hex"), image.sha256);
-    assert.deepEqual(await readFile(path.join(siteDir, "dist/kuvat", image.path)), source);
+    assert.deepEqual(await readFile(path.join(productionSite, "dist/kuvat", image.path)), source);
     for (const v of image.variants) {
       unique.add(v.path);
-      const buffer = await readFile(path.join(siteDir, "dist/kuvat", v.path));
+      const buffer = await readFile(path.join(productionSite, "dist/kuvat", v.path));
       const meta = await sharp(buffer).metadata();
       assert.equal(meta.format, "webp");
       assert.equal(meta.width, v.width);
@@ -168,7 +223,7 @@ test("all published source bytes and responsive dimensions match the generated m
       assert.equal(createHash("sha256").update(buffer).digest("hex"), v.sha256);
     }
   }
-  assert.equal((await readdir(path.join(siteDir, "dist/kuvat/_variants"))).length, unique.size + 1);
+  assert.equal((await readdir(path.join(productionSite, "dist/kuvat/_variants"))).length, unique.size + 1);
 });
 
 test("output and cache junctions cannot escape the generated directory", async () => {

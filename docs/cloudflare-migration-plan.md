@@ -651,25 +651,14 @@ säilytys, vanhojen reseptisivujen ohjaus heti onnistuneessa julkaisuikkunassa j
 5 USD/kk lisäkulutavoite nykyisen Workers Paidin päälle. GSC:n datattomuus on käyttäjän
 ilmoittama lähtötieto, ei odotusjakson vaatimus tai osoitus vanhojen URL:ien tarpeettomuudesta.
 
-## 12. Dokumentaatioajon tallennus ja rajatut tarkistukset
+## 12. PR #172:n dokumentaatioajo (historiallinen)
 
-Jatketaan PR #172:n omassa worktreessä
-`D:/Projects/tmp/reseptit-cloudflare-images-plan-20261102`.
-Repo-guard tarkistaa identiteetin ja tekee kirjoitukset, commitin ja pushin.
-Sama yhteensovitus päivittää omissa worktreeissään myös PR #176:n ja #178:n suunnitelmat.
-Ei uutta PR:ää, main-synkronointia, SOURCE-01-/GK80-työpuiden muutoksia, Readya tai mergeä.
+Aiempi merkintä `[skip ci]` ja paikallisiin tarkistuksiin rajattu työnkulku
+kuvasivat PR #172:n valmistelua. PR on yhdistetty. Sen
+[kuvausteksti](https://github.com/ozirix-dev/Reseptit/blob/721e22716c312afb4f1634240012fac7a69570c0/docs/cloudflare-migration/pr-172-description.md) säilyy yhdistämiscommitissa.
 
-Sallitut tarkistukset: Markdown-rakenne, paikalliset dokumenttilinkit, sisäinen
-johdonmukaisuus ja `git diff --check`. Commitissa `[skip ci]`; nykyiset workflow-
-käynnistimet luetaan ennen pushia, HEAD ja Actions-ajojen puuttuminen jälkeenpäin.
-Ei buildia, testisarjaa, kuvagenerointia, tietokantatuontia tai Actions-ajoa.
-
-PR-kuvauksessa on päivitettävä vanhentunut väite tarkistamattomista Cloudflare-
-asetuksista. [Päivitetty kuvausteksti](cloudflare-migration/pr-172-description.md) tallennetaan
-valmiina dokumentaationa. Jos repo-guard ei tue
-olemassa olevan PR:n kuvauksen päivitystä, sitä ei ohiteta suoralla GitHub-
-kirjoituksella ilman nimenomaista tähän päivitykseen rajattua käyttäjän poikkeusta.
-Repo-guardia ei muuteta toisessa repossa tämän tehtävän sivuvaikutuksena.
+Nykyisin `main`-haaran dokumentaatiomuutokset viedään PR:n kautta ja
+yhdistäminen edellyttää hyväksyttyä `Recipe site / build` -tarkistusta.
 
 ## Liite A. Päivätty kuvainventaario ja rajaukset
 
