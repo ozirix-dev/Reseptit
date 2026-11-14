@@ -34,7 +34,21 @@
       "source_risk": "HOLD-INPUT-AND-METHOD",
       "nutrition_input_at_baseline": "missing",
       "public_quarantine_at_baseline": false,
-      "approval": null
+      "approval": {
+        "status": "RELEASE_AUTHORIZED",
+        "reviewedAt": "2026-11-14",
+        "reviewReference": "https://github.com/ozirix-dev/Reseptit/issues/447",
+        "reviewerKind": "AI_EDITORIAL_WITH_INDEPENDENT_EVIDENCE",
+        "sourceSha256": "9a1e86b4033a2bd2b89ead309010bea0275a6b5d84a52db88260781439b14016",
+        "nutritionEvidenceSha256": "53ecfc1b88165c488b378c5581938aea9825d2f8a317bae6f0ce88aff1c24def",
+        "gkRecipeBindingSha256": "d7d85eb95a5e64a9a377a05cc4cfe779db6cfb02dad69dfe93d8ee90b9135724",
+        "gkCalculationInputSha256": "2d3873acac0adce3a509d46701eee1497caa22ea33d58a59e795bcfde0918367",
+        "gkCalculationEvidenceSha256": "1781e99f5d11e7e06e4064d99044fb308ff0b4b9b4508b6e6121726e512be8cd",
+        "gkDisposition": "GK_UNAVAILABLE_EXPLICITLY_REVIEWED",
+        "cookingAndAllergensReviewed": true,
+        "ingredientUnitConversionsReviewed": true,
+        "translationMeaningReviewRequired": true
+      }
     },
     {
       "recipe_id": "lahi-ita-zaatar-munat",
@@ -181,7 +195,21 @@
       "source_risk": "HOLD-NUTRITION",
       "nutrition_input_at_baseline": "missing",
       "public_quarantine_at_baseline": false,
-      "approval": null
+      "approval": {
+        "status": "RELEASE_AUTHORIZED",
+        "reviewedAt": "2026-11-14",
+        "reviewReference": "https://github.com/ozirix-dev/Reseptit/issues/447",
+        "reviewerKind": "AI_EDITORIAL_WITH_INDEPENDENT_EVIDENCE",
+        "sourceSha256": "99e5a40a65bc44160956a08deb399a870c241bc084ef161b1be4d1d15a31f4d1",
+        "nutritionEvidenceSha256": "0959597a53507ec11abf7d7abf5422cf72e0beafa439dc1da20e061312b35cc0",
+        "gkRecipeBindingSha256": "9b4c3e5c608128d1d16e42d882aa94bf228e7c3cf86283bc8cfa60efac09b1fa",
+        "gkCalculationInputSha256": "99d476289450254d34206583434dfbd651684997f54b20ceb5a7a1537f90fdc0",
+        "gkCalculationEvidenceSha256": "6386d101e89f640dca820b977449fdd8b75ab456d837f79df846d41f0a730a6a",
+        "gkDisposition": "GK_UNAVAILABLE_EXPLICITLY_REVIEWED",
+        "cookingAndAllergensReviewed": true,
+        "ingredientUnitConversionsReviewed": true,
+        "translationMeaningReviewRequired": true
+      }
     },
     {
       "recipe_id": "meksikolainen-paputostada-aamupalaksi",
@@ -190,7 +218,21 @@
       "source_risk": "HOLD-NUTRITION-AND-MASS",
       "nutrition_input_at_baseline": "missing",
       "public_quarantine_at_baseline": false,
-      "approval": null
+      "approval": {
+        "status": "RELEASE_AUTHORIZED",
+        "reviewedAt": "2026-11-14",
+        "reviewReference": "https://github.com/ozirix-dev/Reseptit/issues/447",
+        "reviewerKind": "AI_EDITORIAL_WITH_INDEPENDENT_EVIDENCE",
+        "sourceSha256": "aad031c9696d6a3b12876a688514a1a545b22aeac40ae0d4852142adeb3c5b7d",
+        "nutritionEvidenceSha256": "0ed8238f3dc423cc5bbab8a0c6331262ea49c93be41a7cb6d4f9eff01c15ee8a",
+        "gkRecipeBindingSha256": "c2a84a3be449279f0ca55c077dbebc5436d6c714d43906a7a60457f0fdf4f38b",
+        "gkCalculationInputSha256": "7d4ff400c6afdf77585accb1b32ff59431f04baf9eee0408757e5b62ac8034c3",
+        "gkCalculationEvidenceSha256": "694bf41a05920e41139d0a2b9d1c7a8a1e825e9ecbe2b4abc38dc68277fa7f13",
+        "gkDisposition": "GK_UNAVAILABLE_EXPLICITLY_REVIEWED",
+        "cookingAndAllergensReviewed": true,
+        "ingredientUnitConversionsReviewed": true,
+        "translationMeaningReviewRequired": true
+      }
     },
     {
       "recipe_id": "korealainen-kimchi-jeon-aamiaiseksi",

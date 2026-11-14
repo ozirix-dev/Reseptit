@@ -182,9 +182,6 @@ test("gluten-free source-evidence binding refuses missing, stale and incomplete 
 
 test("F25 consumer-facing review notices are separate from GK-sealed recipe Markdown", () => {
   const ids = [
-    "intialainen-pinaatti-paneer-chilla",
-    "meksikolainen-chilaquiles-verdes",
-    "meksikolainen-paputostada-aamupalaksi",
     "korealainen-kimchi-jeon-aamiaiseksi",
     "karibia-plantain-aamiaislautanen",
   ];
@@ -198,6 +195,5 @@ test("F25 consumer-facing review notices are separate from GK-sealed recipe Mark
     assert.equal(sourceReviewNotice("thai-roti-munalla-banaanilla"), null);
     assert.ok(!JSON.stringify(recipe).includes(notice.heading), "separate UI notice must not rewrite recipe content");
   }
-  assert.match(sourceReviewNotice("meksikolainen-chilaquiles-verdes")!.details,/51,845 g/);
   assert.match(sourceReviewNotice("korealainen-kimchi-jeon-aamiaiseksi")!.details,/4,5 g/);
 });

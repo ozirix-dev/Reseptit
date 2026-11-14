@@ -229,7 +229,7 @@ for (const recipeId of recipeIds) {
     const reviewedMolletesWithoutGk = historicalMolletes !== changedSource.markdown &&
       recipeBindingHash(historicalMolletes, recipeAliases.aliases ?? {}) === boundRecipeHash;
     const historicalReviewedRecipe = reviewedRecipesWithHistoricalGk.has(changedSource.path)
-      ? recipeTextForApprovedSnapshot(changedSource.path, changedSource.markdown.replaceAll("\r\n", "\n"))
+      ? recipeTextForApprovedSnapshot(changedSource.path, changedSource.markdown.replaceAll("\r\n", "\n"), "original-gk")
       : changedSource.markdown;
     const historicalHash = recipeBindingHash(historicalReviewedRecipe, recipeAliases.aliases ?? {});
     const reviewedHistoricalSourceWithoutGk = historicalReviewedRecipe !== changedSource.markdown &&

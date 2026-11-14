@@ -23,6 +23,7 @@ const englishPublicationSources = new Set([
 // inverse edit. Other changes must go through the normal snapshot review.
 const editorialSnapshots: Readonly<Record<string, {
   currentSha256: string;
+  historicalGkText?: string;
   inverseEdits: ReadonlyArray<readonly [start: number, count: number, historical: string]>;
 }>> = {
   "reseptit/aamupalat/pohjoisafrikkalainen-baghrir.md": {
@@ -102,6 +103,26 @@ const editorialSnapshots: Readonly<Record<string, {
         0,
         78,
         "---\ntitle: \"Banh cuon sienitäytteellä\"\nrecipe_id: vietnamilainen-banh-cuon-sienilla\nurl_slug: vietnamilainen-banh-cuon-sienilla\ncategory: aamupala\nlanguage: fi\nstatus: published\nmain_ingredient:\n  - \"riisijauho\"\n  - \"sieni\"\n  - \"porsaan jauheliha\"\ncooking_method:\n  - \"höyrytetty\"\ningredients:\n  - amount: 100\n    unit: \"g\"\n    item: \"riisijauho\"\n  - amount: 250\n    unit: \"ml\"\n    item: \"vettä\"\n  - amount: 100\n    unit: \"g\"\n    item: \"tuoreita herkkusieniä\"\n  - amount: 150\n    unit: \"g\"\n    item: \"porsaan jauheliha\"\n  - amount: 1\n    unit: \"rkl\"\n    item: \"kalakastike\"\n  - amount: null\n    unit: \"\"\n    item: \"suolaa maun mukaan\"\nservings: 2\ntime_total_min: 25\ndifficulty: Helppo\ntags:\n  - \"aamupala\"\n  - \"vietnamilainen\"\n  - \"aamiaisruoka\"\nimage:\n  src: aamupalat/vietnamilainen-banh-cuon-sienilla.webp\n  alt: \"Banh cuon sienitäytteellä tarjoiltuna aamiaisella\"\n  width: 1536\n  height: 1024\ncarbs_net_per_serving_g: 40.31\ncarbs_total_per_serving_g: 42.76\nprotein_per_serving_g: 21.37\nfat_per_serving_g: 9.05\n\n---\n\n# Banh cuon sienitäytteellä\n\n## Kuvaus\n\nTässä kotikeittiöön sovitetussa ohjeessa valmistetaan banh cuon sienitäytteellä. Mausteisuutta ja lisukkeita voi säätää oman maun mukaan.\n\n## Ainekset\n\nAinekset ovat annoslaskurin käytössä rakenteisista metatiedoista.\n\n## Valmistus\n\n1. Valmistele täyte ja taikina. Liota riisi tai palkokasvit etukäteen, jos käytät niitä kuivina.\n2. Muotoile annokset tai lusikoi seos kevyesti öljyttyihin vuokiin. Jätä väliin tilaa höyryn kiertämiselle.\n3. Höyrytä kannen alla kypsäksi. Tarkista paksuimman kohdan kypsyys ennen tarjoamista.\n4. Höyrytä ohuet riisijauholevyt, täytä sienillä ja tarjoa yrttien kanssa.\n"
+      ]
+    ]
+  },
+  "reseptit/aamupalat/meksikolainen-paputostada-aamupalaksi.md": {
+    "currentSha256": "aad031c9696d6a3b12876a688514a1a545b22aeac40ae0d4852142adeb3c5b7d",
+    "inverseEdits": [
+      [
+        0,
+        72,
+        "---\ntitle: \"Musta papu ja paistettu muna tostadan päällä\"\nrecipe_id: meksikolainen-paputostada-aamupalaksi\nurl_slug: meksikolainen-paputostada-aamupalaksi\ncategory: aamupala\nlanguage: fi\nstatus: published\nmain_ingredient:\n  - \"musta papu\"\n  - \"kananmuna\"\n  - \"maissitortilla\"\ncooking_method:\n  - \"paistaminen\"\ningredients:\n  - amount: 150\n    unit: \"g\"\n    item: \"musta papu\"\n  - amount: 2\n    unit: \"kpl\"\n    item: \"kananmuna\"\n  - amount: 100\n    unit: \"g\"\n    item: \"maissitortilla\"\n  - amount: 1\n    unit: \"kpl\"\n    item: \"avokado\"\n  - amount: 1\n    unit: \"rkl\"\n    item: \"neutraalia paistoöljyä\"\n  - amount: null\n    unit: \"\"\n    item: \"suolaa maun mukaan\"\nservings: 2\ntime_total_min: 25\ndifficulty: Helppo\ntags:\n  - \"aamupala\"\n  - \"meksikolainen\"\n  - \"aamiaisruoka\"\nimage:\n  src: aamupalat/meksikolainen-paputostada-aamupalaksi.webp\n  alt: \"Musta papu ja paistettu muna tostadan päällä tarjoiltuna aamiaisella\"\n  width: 1536\n  height: 1024\n---\n\n# Musta papu ja paistettu muna tostadan päällä\n\n## Kuvaus\n\nTässä kotikeittiöön sovitetussa ohjeessa valmistetaan musta papu ja paistettu muna tostadan päällä. Mausteisuutta ja lisukkeita voi säätää oman maun mukaan.\n\n## Ainekset\n\nAinekset ovat annoslaskurin käytössä rakenteisista metatiedoista.\n\n## Valmistus\n\n1. Valmistele ainekset: paloittele kasvikset ja kypsennä pavut tai liha tarvittaessa erikseen. Kuumenna öljy pannulla.\n2. Lisää pannulle pisimpään kypsyvät ainekset ja kypsennä pehmeiksi. Lisää mausteet ja tilkka vettä, jos pannu uhkaa kuivua.\n3. Lisää lopuksi nopeasti kypsyvät ainekset, kuten muna tai lehtivihannekset. Kypsennä juuri valmiiksi ja maista suola.\n4. Levitä maustetut pavut rapealle tostada-pohjalle ja lisää muna sekä avokado.\n"
+      ]
+    ]
+  },
+  "reseptit/aamupalat/meksikolainen-chilaquiles-verdes.md": {
+    "currentSha256": "99e5a40a65bc44160956a08deb399a870c241bc084ef161b1be4d1d15a31f4d1",
+    "inverseEdits": [
+      [
+        0,
+        88,
+        "---\ntitle: \"Chilaquiles verdes paistetulla munalla\"\nrecipe_id: meksikolainen-chilaquiles-verdes\nurl_slug: meksikolainen-chilaquiles-verdes\ncategory: aamupala\nlanguage: fi\nstatus: published\nmain_ingredient:\n  - \"maissitortilla\"\n  - \"salsa verde\"\n  - \"kananmuna\"\ncooking_method:\n  - \"paistaminen\"\ningredients:\n  - amount: 100\n    unit: \"g\"\n    item: \"maissitortilla\"\n  - amount: 150\n    unit: \"g\"\n    item: \"salsa verde\"\n  - amount: 2\n    unit: \"kpl\"\n    item: \"kananmuna\"\n  - amount: 150\n    unit: \"g\"\n    item: \"queso fresco\"\n  - amount: 1\n    unit: \"rkl\"\n    item: \"neutraalia paistoöljyä\"\n  - amount: null\n    unit: \"\"\n    item: \"suolaa maun mukaan\"\nservings: 2\ntime_total_min: 25\ndifficulty: Helppo\ntags:\n  - \"aamupala\"\n  - \"meksikolainen\"\n  - \"aamiaisruoka\"\nimage:\n  src: aamupalat/meksikolainen-chilaquiles-verdes.webp\n  alt: \"Chilaquiles verdes paistetulla munalla tarjoiltuna aamiaisella\"\n  width: 1536\n  height: 1024\n---\n\n# Chilaquiles verdes paistetulla munalla\n\n## Kuvaus\n\nTässä kotikeittiöön sovitetussa ohjeessa valmistetaan chilaquiles verdes paistetulla munalla. Mausteisuutta ja lisukkeita voi säätää oman maun mukaan.\n\n## Ainekset\n\nAinekset ovat annoslaskurin käytössä rakenteisista metatiedoista.\n\n## Valmistus\n\n1. Valmistele ainekset: paloittele kasvikset ja kypsennä pavut tai liha tarvittaessa erikseen. Kuumenna öljy pannulla.\n2. Lisää pannulle pisimpään kypsyvät ainekset ja kypsennä pehmeiksi. Lisää mausteet ja tilkka vettä, jos pannu uhkaa kuivua.\n3. Lisää lopuksi nopeasti kypsyvät ainekset, kuten muna tai lehtivihannekset. Kypsennä juuri valmiiksi ja maista suola.\n4. Pyöräytä tortillapalat kuumassa salsassa ja lisää päälle paistettu muna sekä queso fresco.\n"
       ]
     ]
   },
@@ -911,10 +932,16 @@ const editorialSnapshots: Readonly<Record<string, {
     ],
   },
   "reseptit/aamupalat/intialainen-pinaatti-paneer-chilla.md": {
-    currentSha256: "c4c77740d96d341f6530dc32275426bbf5fd6ed971dcad69d7f7d4e8de46fcd2",
-    inverseEdits: [[61, 9, "1. Sekoita jauhot tai viljat ja muut kuivat ainekset kulhossa. Lisää neste vähitellen ja vatkaa tasaiseksi taikinaksi.\n2. Anna taikinan levätä 10 minuuttia. Jos käytät kokonaisia palkokasveja tai viljoja taikinapohjana, niiden tulee olla liotettuja ja hienonnettuja.\n3. Kuumenna öljytty pannu keskilämmölle. Paista taikina ohuina annoksina; käännä, kun reunat kuivuvat ja pinta alkaa asettua.\n4. Tarjoa korianterichutneyn ja sitruunalohkon kanssa.\n"], [17, 6, "  - amount: 1\n    unit: \"kpl\"\n    item: \"pinaatti\"\n"]],
-  },
-  "reseptit/paaruoat/mapo-tofu.md": {
+    historicalGkText: "---\ntitle: \"Pinaatti-paneer-chilla\"\nrecipe_id: intialainen-pinaatti-paneer-chilla\nurl_slug: intialainen-pinaatti-paneer-chilla\ncategory: aamupala\nlanguage: fi\nstatus: published\nmain_ingredient:\n  - \"kikhernejauho\"\n  - \"pinaatti\"\n  - \"paneer\"\ncooking_method:\n  - \"paistaminen\"\ningredients:\n  - amount: 100\n    unit: \"g\"\n    item: \"kikhernejauho\"\n  - amount: 50\n    unit: \"g\"\n    item: \"tuoretta pinaattia\"\n  - amount: 140\n    unit: \"ml\"\n    item: \"vettä\"\n  - amount: 100\n    unit: \"g\"\n    item: \"paneer\"\n  - amount: 1\n    unit: \"tl\"\n    item: \"juustokumina\"\n  - amount: 1\n    unit: \"rkl\"\n    item: \"neutraalia paistoöljyä\"\n  - amount: null\n    unit: \"\"\n    item: \"suolaa maun mukaan\"\nservings: 2\ntime_total_min: 25\ndifficulty: Helppo\ntags:\n  - \"aamupala\"\n  - \"intialainen\"\n  - \"aamiaisruoka\"\nimage:\n  src: aamupalat/intialainen-pinaatti-paneer-chilla.webp\n  alt: \"Pinaatti-paneer-chilla tarjoiltuna aamiaisella\"\n  width: 1536\n  height: 1024\n---\n\n# Pinaatti-paneer-chilla\n\n## Kuvaus\n\nTässä kotikeittiöön sovitetussa ohjeessa valmistetaan pinaatti-paneer-chilla. Mausteisuutta ja lisukkeita voi säätää oman maun mukaan.\n\n## Ainekset\n\nAinekset ovat annoslaskurin käytössä rakenteisista metatiedoista.\n\n## Valmistus\n\n1. Vatkaa kikhernejauho, juustokumina, suola ja vesi tasaiseksi taikinaksi. Anna levätä 10 minuuttia.\n2. Huuhtele ja kuivaa pinaatti. Hienonna se ja sekoita taikinaan. Murusta paneer täytteeksi.\n3. Kuumenna öljy pannulla keskilämmöllä. Levitä taikinaa ohuiksi letuiksi ja paista molemmin puolin.\n4. Jaa paneer lettujen päälle, taita letut ja lämmitä täytettä pannulla, kunnes se on lämmin.\n5. Tarjoa halutessasi korianterichutney ja sitruunalohkot erikseen.\n\n## Muistiinpanot\n\nTäsmennettyä ohjetta ei ole vielä koepaistettu.\n",
+    "currentSha256": "9a1e86b4033a2bd2b89ead309010bea0275a6b5d84a52db88260781439b14016",
+    "inverseEdits": [
+      [
+        0,
+        75,
+        "---\ntitle: \"Pinaatti-paneer-chilla\"\nrecipe_id: intialainen-pinaatti-paneer-chilla\nurl_slug: intialainen-pinaatti-paneer-chilla\ncategory: aamupala\nlanguage: fi\nstatus: published\nmain_ingredient:\n  - \"kikhernejauho\"\n  - \"pinaatti\"\n  - \"paneer\"\ncooking_method:\n  - \"paistaminen\"\ningredients:\n  - amount: 100\n    unit: \"g\"\n    item: \"kikhernejauho\"\n  - amount: 1\n    unit: \"kpl\"\n    item: \"pinaatti\"\n  - amount: 100\n    unit: \"g\"\n    item: \"paneer\"\n  - amount: 1\n    unit: \"tl\"\n    item: \"juustokumina\"\n  - amount: 1\n    unit: \"rkl\"\n    item: \"neutraalia paistoöljyä\"\n  - amount: null\n    unit: \"\"\n    item: \"suolaa maun mukaan\"\nservings: 2\ntime_total_min: 25\ndifficulty: Helppo\ntags:\n  - \"aamupala\"\n  - \"intialainen\"\n  - \"aamiaisruoka\"\nimage:\n  src: aamupalat/intialainen-pinaatti-paneer-chilla.webp\n  alt: \"Pinaatti-paneer-chilla tarjoiltuna aamiaisella\"\n  width: 1536\n  height: 1024\n---\n\n# Pinaatti-paneer-chilla\n\n## Kuvaus\n\nTässä kotikeittiöön sovitetussa ohjeessa valmistetaan pinaatti-paneer-chilla. Mausteisuutta ja lisukkeita voi säätää oman maun mukaan.\n\n## Ainekset\n\nAinekset ovat annoslaskurin käytössä rakenteisista metatiedoista.\n\n## Valmistus\n\n1. Sekoita jauhot tai viljat ja muut kuivat ainekset kulhossa. Lisää neste vähitellen ja vatkaa tasaiseksi taikinaksi.\n2. Anna taikinan levätä 10 minuuttia. Jos käytät kokonaisia palkokasveja tai viljoja taikinapohjana, niiden tulee olla liotettuja ja hienonnettuja.\n3. Kuumenna öljytty pannu keskilämmölle. Paista taikina ohuina annoksina; käännä, kun reunat kuivuvat ja pinta alkaa asettua.\n4. Tarjoa korianterichutneyn ja sitruunalohkon kanssa.\n"
+      ]
+    ]
+  },  "reseptit/paaruoat/mapo-tofu.md": {
     currentSha256: "341342cef1ea3ff375deb9504bb47e56f3837ed3991956a27ce490fb759ae433",
     inverseEdits: [[90, 1, "5. Ripottele päälle sichuaninpippuri ja kevätsipuli. Tarjoa riisin kanssa.\n"], [66, 3, "  - amount: 4\n    unit: annosta\n    item: keitettyä riisiä\n"]],
   },
@@ -932,9 +959,10 @@ const editorialSnapshots: Readonly<Record<string, {
   },
 };
 
-export function recipeTextForApprovedSnapshot(file: string, text: string): string {
+export function recipeTextForApprovedSnapshot(file: string, text: string, purpose: "historical-comparison" | "original-gk" = "historical-comparison"): string {
   const editorial = editorialSnapshots[file];
   if (editorial && createHash("sha256").update(text).digest("hex") === editorial.currentSha256) {
+    if (purpose === "original-gk" && editorial.historicalGkText) return editorial.historicalGkText;
     const lines = text.split("\n");
     for (const [start, count, historical] of editorial.inverseEdits) {
       const restored = historical ? historical.slice(0, -1).split("\n") : [];
@@ -972,6 +1000,9 @@ export function recipeTextForApprovedSnapshot(file: string, text: string): strin
 
 // These corrected FI versions retain their old source only for GK verification.
 export const reviewedRecipesWithHistoricalGk = new Set([
+  "reseptit/aamupalat/intialainen-pinaatti-paneer-chilla.md",
+  "reseptit/aamupalat/meksikolainen-paputostada-aamupalaksi.md",
+  "reseptit/aamupalat/meksikolainen-chilaquiles-verdes.md",
   "reseptit/aamupalat/vietnamilainen-banh-cuon-sienilla.md",
   "reseptit/paaruoat/munakoiso-kesakurpitsalasagne.md",
   "reseptit/aamupalat/vietnamilainen-banh-xeo-aamiaisletut.md",

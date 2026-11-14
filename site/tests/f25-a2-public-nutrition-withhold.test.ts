@@ -27,7 +27,7 @@ const fixture=(recipeId:string,locale:"fi"|"en") => ({
 
 test("F25 A2 preserves historical holds and exposes current nutrition only after the source gate",()=>{
   assert.equal(new Set(f25UnverifiedNutritionSourceIds).size,f25UnverifiedNutritionSourceIds.length);
-  assert.equal(f25UnverifiedNutritionSourceIds.length,1);
+  assert.equal(f25UnverifiedNutritionSourceIds.length,0);
   for(const id of a2){
     const record=gate.sources.find(x=>x.recipe_id===id);
     assert.ok(record,id);

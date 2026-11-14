@@ -171,7 +171,7 @@ const sourceHashes = Object.fromEntries(expectedRecipeIds.map((recipeId) => {
     : recipeId === coconutBananaRecipeId
       ? coconutBananaHistoricalBindingText(source.markdown)
       : reviewedRecipesWithHistoricalGk.has(file)
-        ? recipeTextForApprovedSnapshot(file, source.markdown)
+        ? recipeTextForApprovedSnapshot(file, source.markdown, "original-gk")
       : recipeId === molletesRecipeId
         ? molletesHistoricalText(molletesSourcePath, source.markdown)
         : koreanRiceBowlHistoricalText(`reseptit/aamupalat/${recipeId}.md`, source.markdown);

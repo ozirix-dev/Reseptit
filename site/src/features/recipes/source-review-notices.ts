@@ -8,21 +8,6 @@ export interface SourceReviewNotice {
 }
 
 export const sourceReviewNotices: Readonly<Record<string, SourceReviewNotice>> = Object.freeze({
-  "intialainen-pinaatti-paneer-chilla": {
-    heading: "Ravintoarvojen laskenta kesken",
-    details: "Neljä varsinaista makroarvoa ja hyväksytty ainesosakohtainen laskentasyöte puuttuvat. Juustokuminan teelusikkapaino ja paistoöljyn syöty osuus pitää täsmentää. Ohjeessa ei ole korianterichutneyta eikä sitruunalohkoja, ellei niitä lisätä ainesluetteloon erikseen.",
-    allergens: "Sisältää maitoa (paneer) ja kikhernejauhoa (palkokasvi). Tarkista pakkaukset.",
-  },
-  "meksikolainen-chilaquiles-verdes": {
-    heading: "Tortillan, salsan ja juuston ravintolaskenta puuttuu",
-    details: "Tortillan tuotemerkki muuttaa hiilihydraatteja: El Taco Truckin maissitortilla 43 g/100 g ja Finelin eräs kaupallinen maissitortilla 51,845 g/100 g. Kaikki 100 g tortillaa, 150 g salsa verdeä, 150 g queso frescoa, kaksi munaa ja paistoöljy pitää sitoa täsmätuotteisiin ennen neljän makron hyväksymistä. Kuitua ei saa arvata nollaksi.",
-    allergens: "Sisältää kananmunaa ja maitoa. Tarkista tortillan ja salsa verden pakkauksista allergeenit ja mahdolliset jäämät.",
-  },
-  "meksikolainen-paputostada-aamupalaksi": {
-    heading: "Papujen ja avokadon punnitus puuttuu",
-    details: "150 g mustapapuja tarkoittaa tässä vielä määrittämätöntä kuiva-, säilyke- tai kypsäpainoa. Käytä papuja vain täysin kypsinä. Yhden avokadon kuorittu syötävä massa sekä 100 g tortillan valmistaja ja 1 rkl öljyn syöty määrä on selvitettävä ennen makrolaskentaa.",
-    allergens: "Sisältää kananmunaa. Tarkista tortillan ja muiden tuotteiden pakkausmerkinnät.",
-  },
   "korealainen-kimchi-jeon-aamiaiseksi": {
     heading: "Kimchin tuote ja lettutaikinan kosteus vielä tarkistuksessa",
     details: "150 g kimchiä ei vielä kerro tuoteversiota tai valutettua painoa. Sempio-kimchin eri markkinaetiketeissä on ilmoitettu 2 ja 4,5 g hiilihydraattia/100 g. Myös 2 rkl kevätsipulia ja kimchistä taikinaan tuleva neste tarvitsevat punnituksen. Uutta vettä ei lisätä ilman erillistä ohje- ja ravintolaskentapäätöstä.",
