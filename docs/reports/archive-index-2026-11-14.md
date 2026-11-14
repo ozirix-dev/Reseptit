@@ -105,4 +105,3 @@ Generoitu, nykyhetkeä kuvaava raportti kuuluu `tmp/`-hakemistoon tai
 GitHub Actionsin väliaikaiseksi artefaktiksi. Historialliset, hyväksynnälle
 merkitykselliset lähtötiedot tai tarkisteet säilytetään versionoituna
 erikseen — niiden poistamista ei päätellä vain tiedostokoosta.
-
