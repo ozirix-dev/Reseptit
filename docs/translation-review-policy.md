@@ -151,9 +151,9 @@ merkitystiivistettä Gitin base-versioon. Uusi käännös ja merkitysmuutos
 edellyttävät ajantasaista rekisteritietuetta. Suomen lähteen merkitysmuutos
 vaatii kaikkien sen julkaistujen käännösten uudelleenvertailun. Paikallisessa
 ennakkotarkistuksessa aseta `BASE_SHA` PR:n vertailucommitiin. Valitse tarkistukset muutoksen
-mukaan. Lisää auditointikomentoon `--write-reports` vain, kun haluat päivittää
-inventaarion `docs/reports/translation-audit-current.csv` ja
-`docs/reports/recipe-inventory-current.csv`. Nykyisen työjonon käyttöohje
+mukaan. Auditointikomennon `--write-reports` kirjoittaa raportit repon juuren
+`tmp/translation-review/`-hakemistoon tiedostoina `translation-audit-current.csv`
+ja `recipe-inventory-current.csv`. Nykyisen työjonon käyttöohje
 on [ihmistarkistuksen työjonossa](translation-human-review.md).
 
 Aiemmat havainnot ja regressioesimerkit ovat
