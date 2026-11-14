@@ -180,18 +180,9 @@ test("gluten-free source-evidence binding refuses missing, stale and incomplete 
 });
 
 
-test("F25 consumer-facing review notices are separate from GK-sealed recipe Markdown", () => {
-  const ids = [
-    "karibia-plantain-aamiaislautanen",
-  ];
-  assert.deepEqual(Object.keys(sourceReviewNotices).sort(), [...ids].sort());
-  for (const id of ids) {
-    const notice = sourceReviewNotice(id);
-    assert.ok(notice, id);
-    assert.ok(notice.heading.length > 10 && notice.details.length > 35 && notice.allergens.length > 15);
-    const recipe = siteContent.recipes.find((x) => x.recipeId === id && x.locale === "fi");
-    assert.ok(recipe, id + " remains a FI source");
-    assert.equal(sourceReviewNotice("thai-roti-munalla-banaanilla"), null);
-    assert.ok(!JSON.stringify(recipe).includes(notice.heading), "separate UI notice must not rewrite recipe content");
-  }
+test("a retired F25 recipe has no public review notice or recipe page", () => {
+  const id = "karibia-plantain-aamiaislautanen";
+  assert.equal(sourceReviewNotice(id), null);
+  assert.equal(Object.hasOwn(sourceReviewNotices, id), false);
+  assert.ok(!siteContent.recipes.some(recipe => recipe.recipeId === id));
 });
