@@ -25,6 +25,22 @@ const editorialSnapshots: Readonly<Record<string, {
   currentSha256: string;
   inverseEdits: ReadonlyArray<readonly [start: number, count: number, historical: string]>;
 }>> = {
+  "reseptit/aamupalat/japanilainen-kabocha-puuro.md": {
+    currentSha256: "50e95cecf334bbff0d8c7b7725a02aaeafcacaa571b7a8b8cbbd8258a073774a",
+    inverseEdits: [
+      [62, 8, "1. Mittaa riisi kattilaan ja lisää reseptin neste. Kuumenna kiehuvaksi samalla pohjaa myöten sekoittaen.\n2. Hauduta miedolla lämmöllä välillä sekoittaen, kunnes puuro on pehmeää ja sakeaa. Lisää nestettä vähän kerrallaan, jos rakenne tiivistyy liikaa.\n3. Kypsennä liha tai muut täytteet kypsiksi ja lisää puuroon. Tarkista suola ja mausteet.\n4. Huuhtele riisi ja kuutioi kuorittu myskikurpitsa. Keitä riisiä ja kurpitsaa vedessä, kunnes riisi on pehmeää ja kurpitsa hajoaa puuroon. Lisää kookosmaito ja hauduta hetki. Tarjoa mustien seesaminsiementen kanssa.\n"],
+      [58, 1, "Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.\n"],
+      [54, 1, "Tässä kotikeittiöön sovitetussa ohjeessa valmistetaan japanilainen kurpitsapuuro kabocha. Mausteisuutta ja lisukkeita voi säätää oman maun mukaan.\n"],
+      [50, 1, "# Japanilainen kurpitsapuuro kabocha\n"],
+      [48, 0, "\n"],
+      [41, 1, "  alt: \"Japanilainen kurpitsapuuro kabocha tarjoiltuna aamiaisella\"\n"],
+      [36, 3, "  - \"aamupala\"\n  - \"japanilainen\"\n  - \"puuro\"\n"],
+      [33, 1, "time_total_min: 25\n"],
+      [12, 1, "  - \"keittäminen\"\n"],
+      [8, 3, "  - \"kurpitsa\"\n  - \"riisi\"\n  - \"kookosmaito\"\n"],
+      [1, 1, "title: \"Japanilainen kurpitsapuuro kabocha\"\n"],
+    ],
+  },
   "reseptit/aamupalat/japanilainen-dashimaki-tamago-aamiaislautasella.md": {
     currentSha256: "2c1550984e2d193fb0a460ed5dde549b7ae94245b474a5c8ec98216548d3ef1f",
     inverseEdits: [[0, 60, "---\ntitle: \"Dashimaki tamago aamiaislautasella\"\nrecipe_id: japanilainen-dashimaki-tamago-aamiaislautasella\nurl_slug: japanilainen-dashimaki-tamago-aamiaislautasella\ncategory: aamupala\nlanguage: fi\nstatus: published\nmain_ingredient:\n  - \"kananmuna\"\n  - \"dashi\"\n  - \"soijakastike\"\ncooking_method:\n  - \"paistaminen\"\ningredients:\n  - amount: 2\n    unit: \"kpl\"\n    item: \"kananmuna\"\n  - amount: 200\n    unit: \"ml\"\n    item: \"dashi\"\n  - amount: 1\n    unit: \"rkl\"\n    item: \"soijakastike\"\n  - amount: 100\n    unit: \"g\"\n    item: \"riisi\"\n  - amount: 1\n    unit: \"rkl\"\n    item: \"neutraalia paistoöljyä\"\n  - amount: null\n    unit: \"\"\n    item: \"suolaa maun mukaan\"\nservings: 2\ntime_total_min: 25\ndifficulty: Helppo\ntags:\n  - \"aamupala\"\n  - \"japanilainen\"\n  - \"kananmuna\"\nimage:\n  src: aamupalat/japanilainen-dashimaki-tamago-aamiaislautasella.webp\n  alt: \"Dashimaki tamago aamiaislautasella tarjoiltuna aamiaisella\"\n  width: 1536\n  height: 1024\n---\n\n# Dashimaki tamago aamiaislautasella\n\n## Kuvaus\n\nTässä kotikeittiöön sovitetussa ohjeessa valmistetaan dashimaki tamago aamiaislautasella. Mausteisuutta ja lisukkeita voi säätää oman maun mukaan.\n\n## Ainekset\n\nAinekset ovat annoslaskurin käytössä rakenteisista metatiedoista.\n\n## Valmistus\n\n1. Vatkaa kananmunat dashi-liemen kanssa. Mausta soijakastikkeella.\n2. Kuumenna pieni paistinpannu miedolla lämmöllä ja sipaise siihen öljyä. Kaada pannulle ohut kerros munaseosta.\n3. Kun pohja alkaa hyytyä, rullaa munakas pannun reunaan. Lisää pannulle uusi kerros seosta ja jatka rullaamista kerros kerrallaan.\n4. Paista maustettu munaseos ohuina kerroksina ja rullaa; tarjoa riisin kanssa.\n"]],
