@@ -16,6 +16,68 @@ test("docs-only changes select no site build or test suite", () => {
   assert.equal(plan.runBuild, false);
 });
 
+test("only the exact local Wrangler cache rule gets lightweight Git-based selection", () => {
+  const root = mkdtempSync(path.join(tmpdir(), "recipe-ci-ignore-"));
+  const git = (...args) => execFileSync("git", ["-C", root, ...args], { encoding: "utf8" }).trim();
+  const selector = fileURLToPath(new URL("./select-ci-checks.mjs", import.meta.url));
+  const write = (contents) => writeFileSync(path.join(root, ".gitignore"), contents);
+  const original = "/site/public/data/\n";
+  const cacheRule = "/.wrangler/cache/\n";
+  try {
+    git("init", "--quiet");
+    git("config", "core.autocrlf", "false");
+    git("config", "user.name", "CI selector test");
+    git("config", "user.email", "selector@example.invalid");
+    git("config", "commit.gpgsign", "false");
+    write(original);
+    git("add", ".gitignore");
+    git("commit", "--quiet", "-m", "base");
+    const base = git("rev-parse", "HEAD");
+    const plan = (contents, extra = {}) => {
+      write(contents);
+      git("add", ".gitignore");
+      const head = git("write-tree");
+      return JSON.parse(execFileSync(process.execPath, [selector], {
+        cwd: root, encoding: "utf8",
+        env: {
+          ...process.env, CHANGED_PATHS_JSON: "", GITHUB_OUTPUT: "",
+          EVENT_NAME: "pull_request", BASE_SHA: base, HEAD_SHA: head,
+          FORCE_FULL: "false", DEPLOY: "false", ...extra,
+        },
+      }));
+    };
+    const allowed = plan(original + cacheRule);
+    assert.equal(allowed.full, false);
+    assert.equal(allowed.needsNode, false);
+    assert.equal(allowed.publish, false);
+    assert.equal(plan(original + cacheRule, { FORCE_FULL: "true" }).full, true);
+    assert.equal(plan(original + cacheRule, { CHANGED_PATHS_JSON: '[".gitignore"]' }).full, true);
+    for (const contents of [cacheRule, original + ".wrangler/\n", original + cacheRule.repeat(2), original + cacheRule + "/dist/\n"]) {
+      assert.equal(plan(contents).full, true);
+    }
+  } finally {
+    rmSync(root, { recursive: true, force: true });
+  }
+});
+
+test("lightweight cache ignore changes retain mixed-change gates", () => {
+  for (const file of [
+    "reseptit/paaruoat/example.md",
+    "kaannokset/th/example.md",
+    "meta/kaannokset/f25-release-gate.json",
+    "docs/nutrition/glycemic-load-recipe-bindings.json",
+    "docs/nutrition/calculations/example.json",
+    ".github/workflows/pages.yml",
+    "site/new-unknown-config.toml",
+  ]) {
+    for (const event of ["pull_request", "push"]) {
+      const expected = applyEventPolicy(classifyPaths([file]), event);
+      const actual = applyEventPolicy(classifyPaths([".gitignore", file], { cacheIgnoreOnly: true }), event);
+      assert.deepEqual(actual, expected, `${event}: ${file}`);
+    }
+  }
+});
+
 test("image checks reuse a fresh site build and run in their dedicated suite", () => {
   for (const file of ["kuvat/paaruoat/kana.webp", "site/tests/image-pipeline.test.ts"]) {
     const plan = classifyPaths([file]);
