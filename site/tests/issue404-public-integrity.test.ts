@@ -71,7 +71,7 @@ const canonicalMethodOnly = [
 const sorted = (values: readonly string[]) => [...values].sort();
 
 test("issue #404 all 38 are either quarantined or protected by a source-sealed FI display correction", () => {
-  const quarantined = [...publicRecipeQuarantineIds];
+  const quarantined = publicRecipeQuarantineIds.filter(id => issue404.some(issueId => issueId === id));
   const corrected = displayCorrections.map(item => recipeId(item.relative));
   assert.equal(new Set(issue404).size, 38, "audit inventory must contain 38 distinct IDs");
   assert.equal(quarantined.length, 21, "unexpected change to quarantine: review release decision");

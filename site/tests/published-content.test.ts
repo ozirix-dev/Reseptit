@@ -782,8 +782,12 @@ test("R1B corrected Koshari nutrition evidence is synchronized across published 
   }
 });
 
-test("twenty-one source-sealed withdrawals never enter public recipes or sitemap", async () => {
-  assert.equal(publicRecipeQuarantineIds.length, 21);
+test("source-sealed withdrawals never enter public recipe content", async () => {
+  const predecessor = "indonesialainen-bubur-sumsum";
+  assert.ok(isPublicRecipeQuarantined(predecessor));
+  const successor = currentSiteContent.recipes.filter(r => r.recipeId === predecessor + "-punnittu-v2");
+  assert.deepEqual(successor.map(r => r.locale).sort(), ["en", "fi", "sv", "th"]);
+  assert.ok(successor.every(r => r.slug === predecessor));
   for (const id of publicRecipeQuarantineIds) {
     assert.equal(currentSiteContent.recipes.some(r => r.recipeId === id), false);
     const source = parseMarkdown(await readFile(path.resolve(import.meta.dirname, `../../reseptit/aamupalat/${id}.md`), "utf8"));

@@ -24,7 +24,6 @@ const isLocale = (value: unknown): value is Locale => locales.includes(value as 
 // The source remains public in Finnish while the listed recipe work is pending.
 const translationSourceHolds = new Map([
   ["indonesialainen-bakwan-maissifritter", "bakwan_v2_frying_yield_oil_and_nutrition_review"],
-  ["indonesialainen-bubur-sumsum", "bubur_sumsum_pandan_source_owner_decision"],
   ["malesialainen-roti-jala-currykanalla", "roti_jala_batter_yield_curry_oil_and_nutrition_review"],
 ]);
 
