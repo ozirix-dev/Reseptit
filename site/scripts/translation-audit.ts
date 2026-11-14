@@ -426,7 +426,7 @@ function csv(value: unknown): string {
 }
 
 export async function writeAuditReports(result: TranslationAuditResult): Promise<void> {
-  const reportDir = path.join(repoRoot, "docs", "reports");
+  const reportDir = path.join(repoRoot, "tmp", "translation-review");
   await mkdir(reportDir, { recursive: true });
   const auditColumns: (keyof TranslationAuditRow)[] = ["recipe_id", "locale", "source_path", "translation_path", "ingredient_check", "instruction_check", "metadata_check", "image_check", "language_review", "issues", "risk_level", "review_status"];
   const auditCsv = [auditColumns.map(csv).join(","), ...result.rows.map((row) => auditColumns.map((key) => csv(row[key])).join(","))].join("\n");

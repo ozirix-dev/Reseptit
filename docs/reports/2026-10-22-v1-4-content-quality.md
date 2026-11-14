@@ -19,9 +19,9 @@ asiantuntija tai reseptejä koekeittiössä testaava kokki.
 
 - [Koneellinen puuteluettelo ja korjausluettelo](2026-10-22-v1-4-content-audit.json)
   sisältää jokaisen lähteen, P0–P3-havainnot ja muuttuneiden kieliversioiden polut.
-- [Inventaario](recipe-inventory-current.csv) sisältää kaikki julkaistut
+- [Inventaario](https://github.com/ozirix-dev/Reseptit/blob/93d74174f2374cbdc60d897e1cb99700fc381d15/docs/reports/recipe-inventory-current.csv) sisältää kaikki julkaistut
   versiot, määrät, ajat, menetelmät, luokat, kuvat ja ravintokentät.
-- [Käännösauditointi](translation-audit-current.csv) sisältää jokaisen
+- [Käännösauditointi](https://github.com/ozirix-dev/Reseptit/blob/93d74174f2374cbdc60d897e1cb99700fc381d15/docs/reports/translation-audit-current.csv) sisältää jokaisen
   lähde–käännösparin automaattituloksen ja ihmistarkistuksen tilan.
 
 `STRUCTURE PASS` ja `AUTOMATED SEMANTIC REVIEW` eivät tarkoita
