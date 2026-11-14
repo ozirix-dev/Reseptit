@@ -1,4 +1,4 @@
-import { readF25AtCreation, readF25GateAtCreation } from "../scripts/f25-history";
+import { readF25AtCreation, readF25GateAtCreation, readF25HistoricalBlob } from "../scripts/f25-history";
 import assert from "node:assert/strict";
 import { test } from "node:test";
 import { evaluateBatchEntry } from "../scripts/translation-batch-partition";
@@ -186,7 +186,7 @@ test("F25 next15 product rebuilds recalculate 4 macro fields but cannot publish 
   const path = await import("node:path");
   const root = path.resolve(import.meta.dirname, "../..");
   const decisions = JSON.parse(await readFile(path.join(root, "meta/kaannokset/f25-next15-four-product-rebuilds-20261111.json"), "utf8"));
-  const published = JSON.parse(await readFile(path.join(root, "meta/kaannokset/published-translation-pairs.json"), "utf8"));
+  const published = JSON.parse(readF25AtCreation(root, "meta/kaannokset/published-translation-pairs.json"));
   const indexed = new Set(published.sources.map((source: any) => source.recipe_id));
   assert.equal(decisions.schemaVersion, 1);
   assert.equal(decisions.status, "RESEARCH-CANDIDATES-NOT-APPROVAL");
@@ -199,7 +199,7 @@ test("F25 next15 product rebuilds recalculate 4 macro fields but cannot publish 
   for (const row of decisions.heldSources) {
     assert.equal(row.release_authorized, false, row.recipe_id);
     assert.ok(!indexed.has(row.recipe_id), row.recipe_id + " is HOLD but appears in published translations");
-    const raw = await readFile(path.join(root, row.source_path));
+    const raw = readF25HistoricalBlob(root, row.source_blob_sha);
     const actualGitBlob = createHash("sha1").update("blob " + raw.length + "\0").update(raw).digest("hex");
     assert.equal(actualGitBlob, row.source_blob_sha, row.recipe_id + " changed: review must be repeated");
   }
