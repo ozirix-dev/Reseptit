@@ -157,6 +157,7 @@ function classifyPaths(paths, { forceFull = false, classificationFailed = false 
     if (file.startsWith("meta/kaannokset/")) return fallback();
     if (file.startsWith("kuvat/")) {
       plan.runImages = true;
+      plan.runBuild = true;
       plan.needsNode = true;
       continue;
     }
@@ -175,6 +176,9 @@ function classifyPaths(paths, { forceFull = false, classificationFailed = false 
         addBrowserSuite(plan, "smoke");
       } else if (/\.browser\.test\.ts$/.test(file)) {
         return fallback();
+      } else if (testPath === "tests/image-pipeline.test.ts") {
+        plan.runImages = true;
+        plan.runBuild = true;
       } else if (testPath === "tests/static-output.test.ts" || testPath === "tests/seo-audit.test.ts") {
         plan.runStatic = true;
         plan.runBuild = true;
