@@ -86,6 +86,26 @@ const editorialSnapshots: Readonly<Record<string, {
       [1, 1, "title: \"Okayu-riisipuuro umeboshipluumulla\"\n"],
     ],
   },
+  "reseptit/aamupalat/intialainen-masala-dosa.md": {
+    currentSha256: "17aa56605dc1342ea04073ae0d4e45a1d91772ab93a2eb3d9156aa0fb3a3942b",
+    inverseEdits: [
+      [60, 8, "1. Sekoita jauhot tai viljat ja muut kuivat ainekset kulhossa. Lisää neste vähitellen ja vatkaa tasaiseksi taikinaksi.\n2. Anna taikinan levätä 10 minuuttia. Jos käytät kokonaisia palkokasveja tai viljoja taikinapohjana, niiden tulee olla liotettuja ja hienonnettuja.\n3. Kuumenna öljytty pannu keskilämmölle. Paista taikina ohuina annoksina; käännä, kun reunat kuivuvat ja pinta alkaa asettua.\n4. Täytä rapea dosa maustetulla perunalla ja tarjoa sambar-kastikkeen kanssa.\n"],
+      [56, 1, "Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.\n"],
+      [52, 1, "Tässä kotikeittiöön sovitetussa ohjeessa valmistetaan masala dosa perunatäytteellä. Mausteisuutta ja lisukkeita voi säätää oman maun mukaan.\n"],
+      [48, 1, "# Masala dosa perunatäytteellä\n"],
+      [43, 1, "  alt: \"Masala dosa perunatäytteellä tarjoiltuna aamiaisella\"\n"],
+      [39, 2, "  - \"intialainen\"\n  - \"aamiaisruoka\"\n"],
+      [35, 1, "time_total_min: 25\n"],
+      [26, 8, "    unit: \"rkl\"\n    item: \"neutraalia paistoöljyä\"\n  - amount: null\n    unit: \"\"\n    item: \"suolaa maun mukaan\"\n"],
+      [21, 4, "    item: \"sinapinsiemen\"\n"],
+      [18, 2, "    item: \"urad-linssi\"\n  - amount: 1\n    unit: \"kpl\"\n    item: \"peruna\"\n  - amount: 150\n"],
+      [15, 2, "    item: \"riisi\"\n  - amount: 100\n"],
+      [13, 1, "  - amount: 100\n"],
+      [11, 1, "  - \"paistaminen\"\n"],
+      [8, 2, "  - \"riisi\"\n  - \"urad-linssi\"\n  - \"peruna\"\n"],
+      [1, 1, "title: \"Masala dosa perunatäytteellä\"\n"],
+    ],
+  },
   "reseptit/aamupalat/japanilainen-kabocha-puuro.md": {
     currentSha256: "50e95cecf334bbff0d8c7b7725a02aaeafcacaa571b7a8b8cbbd8258a073774a",
     inverseEdits: [
@@ -871,6 +891,7 @@ export function recipeTextForApprovedSnapshot(file: string, text: string): strin
 
 // These corrected FI versions retain their old source only for GK verification.
 export const reviewedRecipesWithHistoricalGk = new Set([
+  "reseptit/aamupalat/intialainen-masala-dosa.md",
   "reseptit/aamupalat/indonesialainen-tempeh-munakulho.md",
   "reseptit/aamupalat/japanilainen-okayu-umeboshipluumulla.md",
   "reseptit/aamupalat/japanilainen-dashimaki-tamago-aamiaislautasella.md",
