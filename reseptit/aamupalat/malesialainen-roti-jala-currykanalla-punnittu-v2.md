@@ -11,7 +11,7 @@ main_ingredient:
   - vehnäjauho
   - riisijauho
   - kananmuna
-  - broilerin reisiliha
+  - kana
 cooking_method:
   - paistaminen
 ingredients:
