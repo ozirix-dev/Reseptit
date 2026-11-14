@@ -25,6 +25,24 @@ const editorialSnapshots: Readonly<Record<string, {
   currentSha256: string;
   inverseEdits: ReadonlyArray<readonly [start: number, count: number, historical: string]>;
 }>> = {
+  "reseptit/aamupalat/japanilainen-natto-riisikulho.md": {
+    currentSha256: "dd33d40c6a885904359ea14d2fd7e3f94bbc6d1e249e7753a1a9f297ecbda03e",
+    inverseEdits: [
+      [51, 8, "1. Kypsennä riisi pakkauksen ohjeen mukaan. Paista tofu, muna tai muu lämmin täyte tarvittaessa erikseen.\n2. Paloittele tuoreet kasvikset ja valmistele yrtit sekä kastikkeen ainekset.\n3. Jaa lämmin pohja kulhoihin, asettele muut ainekset päälle ja lisää kastike juuri ennen tarjoamista.\n4. Sekoita natto mausteineen ja lusikoi kuuman riisin sekä pehmeän munan päälle.\n"],
+      [47, 1, "Tässä kotikeittiöön sovitetussa ohjeessa valmistetaan natto-riisikulho pehmeällä munalla. Mausteisuutta ja lisukkeita voi säätää oman maun mukaan.\n\n## Ainekset\n\nAinekset ovat annoslaskurin käytössä rakenteisista metatiedoista.\n"],
+      [43, 1, "# Natto-riisikulho pehmeällä munalla\n"],
+      [37, 2, "  src: aamupalat/japanilainen-natto-riisikulho.webp\n  alt: \"Natto-riisikulho pehmeällä munalla tarjoiltuna aamiaisella\"\n"],
+      [33, 3, "  - \"aamupala\"\n  - \"japanilainen\"\n  - \"aamiaisruoka\"\n"],
+      [28, 1, "    item: \"suolaa maun mukaan\"\n"],
+      [24, 2, "    unit: \"rkl\"\n    item: \"kevätsipuli\"\n"],
+      [21, 2, "    unit: \"kpl\"\n    item: \"kananmuna\"\n"],
+      [18, 2, "    unit: \"g\"\n    item: \"riisi\"\n"],
+      [15, 2, "    unit: \"g\"\n    item: \"natto\"\n"],
+      [12, 1, "  - \"paistaminen\"\n"],
+      [8, 3, "  - \"natto\"\n  - \"riisi\"\n  - \"kananmuna\"\n"],
+      [1, 1, "title: \"Natto-riisikulho pehmeällä munalla\"\n"],
+    ],
+  },
   "kaannokset/en/paaruoat/baozi.md": {
     currentSha256: "e5eae99171166ac81cf07fd5866ebb5649524fa4da3d1f783406a50d83f6934c",
     inverseEdits: [
