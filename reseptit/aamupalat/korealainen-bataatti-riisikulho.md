@@ -1,59 +1,64 @@
 ---
-title: "Korealainen bataatti- ja riisikulho"
+title: "Bataatti-riisikulho gochujangilla"
 recipe_id: korealainen-bataatti-riisikulho
 url_slug: korealainen-bataatti-riisikulho
 category: aamupala
 language: fi
 status: published
 main_ingredient:
-  - "bataatti"
-  - "riisi"
-  - "kananmuna"
+  - bataatti
+  - riisi
+  - kananmuna
 cooking_method:
-  - "paistaminen"
+  - paahtaminen
+  - keittäminen
+  - paistaminen
 ingredients:
-  - amount: 1
-    unit: "kpl"
-    item: "bataatti"
+  - amount: 250
+    unit: g
+    item: "kuorittu oranssi bataatti"
   - amount: 100
-    unit: "g"
-    item: "riisi"
+    unit: g
+    item: "kuiva valkoinen lyhytjyväinen riisi"
   - amount: 2
-    unit: "kpl"
-    item: "kananmuna"
-  - amount: 150
-    unit: "g"
-    item: "gochujang"
-  - amount: null
-    unit: ""
-    item: "suolaa maun mukaan"
+    unit: kpl
+    item: "keskikokoinen kananmuna"
+  - amount: 20
+    unit: g
+    item: "gochujang-tahna"
+  - amount: 15
+    unit: g
+    item: "vesi"
+  - amount: 10
+    unit: g
+    item: "rypsiöljy"
 servings: 2
-time_total_min: 25
+time_total_min: 40
 difficulty: Helppo
 tags:
   - "aamupala"
   - "korealainen"
   - "aamiaisruoka"
 image:
-  src: aamupalat/korealainen-bataatti-riisikulho.webp
-  alt: "Korealainen bataatti- ja riisikulho tarjoiltuna aamiaisella"
+  src: aamupalat/korealainen-bataatti-riisikulho-punnittu.webp
+  alt: "Riisiä, paahdettua bataattia ja paistettu muna gochujang-kastikkeella"
   width: 1536
   height: 1024
 ---
 
-# Korealainen bataatti- ja riisikulho
+# Bataatti-riisikulho gochujangilla
 
 ## Kuvaus
 
-Tässä kotikeittiöön sovitetussa ohjeessa valmistetaan korealainen bataatti- ja riisikulho. Mausteisuutta ja lisukkeita voi säätää oman maun mukaan.
-
-## Ainekset
-
-Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
+Paahdettu bataatti, valkoinen riisi ja paistettu muna saavat makua korealaisesta gochujang-chilitahnasta.
 
 ## Valmistus
 
-1. Kypsennä riisi pakkauksen ohjeen mukaan. Paista tofu, muna tai muu lämmin täyte tarvittaessa erikseen.
-2. Paloittele tuoreet kasvikset ja valmistele yrtit sekä kastikkeen ainekset.
-3. Jaa lämmin pohja kulhoihin, asettele muut ainekset päälle ja lisää kastike juuri ennen tarjoamista.
-4. Tarjoa paahdettu bataatti ja paistettu muna riisillä, mausta gochujang-kastikkeella.
+1. Kuumenna uuni 220 °C:seen. Leikkaa bataatti noin 2 cm:n kuutioiksi. Sekoita kuutioihin 7 g öljyä ja levitä ne pellille yhteen kerrokseen. Paahda 20–25 minuuttia ja käännä kerran. Bataatti on kypsää, kun haarukka uppoaa kuutioihin helposti.
+2. Huuhtele riisi ja keitä se pakkauksen ohjeen mukaan sillä aikaa, kun bataatti paahtuu.
+3. Sekoita gochujang ja 15 g vettä. Kuumenna loput 3 g öljyä tarttumattomalla pannulla. Paista munat miedolla lämmöllä kannen alla, kunnes valkuaiset ja keltuaiset ovat kokonaan kiinteitä.
+4. Jaa riisi ja bataatti kahteen kulhoon. Nosta kumpaankin muna, lusikoi päälle kastiketta ja tarjoa heti.
+
+## Muistiinpanot
+
+Sisältää kananmunaa. Gochujang voi sisältää vehnää ja soijaa. Tarkista tahnan allergeenit pakkauksesta.

@@ -1,3 +1,4 @@
+import { koreanRiceBowlHistoricalText } from "./korean-rice-bowls-reviewed-source";
 import {reviewedSourceHashMatches} from './afcd-column-correction';
 import {createHash} from 'node:crypto';
 import {readFileSync} from 'node:fs';
@@ -43,7 +44,7 @@ export function buildPanangKimchiVariants(root:string): GkOnlyVariant[] {
     check(c.recipeId===approval.recipeId && inputSha256===approval.inputSha256
       && sha(JSON.stringify(input))===inputSha256,'input seal');
     for (const [locale,file] of Object.entries(c.paths)) {
-      check(sha(text(file as string))===c.recipeSha256Lf[locale],'recipe seal: '+file);
+      check(sha(koreanRiceBowlHistoricalText(file as string, text(file as string)))===c.recipeSha256Lf[locale],'recipe seal: '+file);
     }
     const gi = nativeGi.find(row=>row.id===sources.giBinding.nativeId);
     check(gi && gi.calculationUse!=='REFERENCE_ONLY','GI record');

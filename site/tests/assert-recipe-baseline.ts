@@ -1,3 +1,4 @@
+import { koreanRiceBowlHistoricalText } from "../scripts/korean-rice-bowls-reviewed-source";
 import { originalForCoconutBananaHistory } from "./coconut-banana-history";
 import {mainAdditionFiles, postBaselineBriocheIds, postBaselineClassicIds} from "./original-content-transition";
 import assert from "node:assert/strict";
@@ -375,9 +376,10 @@ export function assertRecipeBaseline(root: string, baseline: string, ...protecte
           historicalRendangForApprovedVersion(file, historicalFarinataForApprovedPanVersion(file, current))))))));
       const reviewedSnapshot = originalForKetoprakHistory(root, file, originalForBissaraHistory(root, file, originalForJumeokbapHistory(root, file, snapshot)));
       const historicalSnapshot = originalForCoconutBananaHistory(root, file, originalForBindaetteokHistory(root, file, originalForTamagoKakeGohanHistory(root, file, reviewedSnapshot)));
-      if (historicalSnapshot !== current) {
+      const recipeBeforeReview = koreanRiceBowlHistoricalText(file, historicalSnapshot);
+      if (recipeBeforeReview !== current) {
         const original = execFileSync("git", ["show", baseline + ":" + file], { cwd: root, encoding: "utf8" });
-        assert.equal(historicalSnapshot, original, change);
+        assert.equal(recipeBeforeReview, original, change);
         continue;
       }
     }

@@ -1,3 +1,4 @@
+import { koreanRiceBowlHistoricalText } from "../scripts/korean-rice-bowls-reviewed-source";
 import { originalForCoconutBananaHistory } from "./coconut-banana-history";
 import {coconutBananaHistoricalBindingText, coconutBananaRecipeId, coconutBananaSourcePath} from "../scripts/coconut-banana-reviewed-source";
 import {biryaniSourceBeforeReview, biryaniSourcePath} from "../scripts/biryani-reviewed-source";
@@ -240,6 +241,13 @@ test('Live original results preserve frozen history plus the exact reviewed tran
     assert.equal(normalNotes,notesOf(displayed),row.source_path+' audited public notes');
     return {...row,notes:notesOf(raw)};
    }
+   if (["reseptit/aamupalat/korealainen-bataatti-riisikulho.md", "reseptit/aamupalat/korealainen-tofu-kimchi-aamiaiskulho.md"].includes(row.source_path)) {
+    const live = read(row.source_path).replaceAll("\r\n", "\n");
+    const old = koreanRiceBowlHistoricalText(row.source_path, live);
+    assert.notEqual(live, old);
+    assert.equal(row.source_content_hash, createHash("sha256").update(live).digest("hex"));
+    return {...row, ingredients: parseMarkdown(old)!.data.ingredients, notes: "", source_content_hash: createHash("sha256").update(old).digest("hex")};
+   }
    if (row.source_path === coconutBananaSourcePath) {
     const live = read(row.source_path).replaceAll("\r\n", "\n");
     const old = originalForCoconutBananaHistory(root, row.source_path, live);
@@ -472,4 +480,25 @@ test("the new coconut banana recipe keeps the legacy GI/GK binding out of the pu
  assert.equal(published.glycemicLoadPerServing, null);
  assert.deepEqual(published.carbohydrateSources, []);
  assert.deepEqual(published.incompleteReasons, []);
+});
+
+test("the two new rice bowls withhold an original GK number and keep the separate tofu-kimchi estimate", async () => {
+ const {glycemicLoadPilotResults} = await import("../src/generated/glycemic-load-pilot.generated");
+ const {gkOnlyVariants} = await import("../src/generated/gk-only-variants.generated");
+ const ids = ["korealainen-bataatti-riisikulho", "korealainen-tofu-kimchi-aamiaiskulho"];
+ for (const id of ids) {
+  const file = "reseptit/aamupalat/" + id + ".md";
+  const live = read(file);
+  assert.notEqual(koreanRiceBowlHistoricalText(file, live), live);
+  const unreviewed = live.replace("amount: 100", "amount: 101");
+  assert.notEqual(unreviewed, live);
+  assert.equal(koreanRiceBowlHistoricalText(file, unreviewed), unreviewed);
+  const published = glycemicLoadPilotResults.find(result => result.recipeId === id)!;
+  assert.equal(published.status, "INSUFFICIENT SOURCE DATA");
+  assert.equal(published.glycemicLoadPerServing, null);
+  assert.deepEqual(published.carbohydrateSources, []);
+  assert.deepEqual(published.incompleteReasons, []);
+  assert.deepEqual(Object.keys(published.localeRoutes).sort(), ["en", "fi", "sv", "th"]);
+ }
+ assert.equal(gkOnlyVariants.find(variant => variant.recipeId === ids[1])?.point, 25.16);
 });
