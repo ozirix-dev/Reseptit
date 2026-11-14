@@ -45,30 +45,30 @@
 - Detailed project workflow and handoff format:
   [Rinnakkaisten Codex-ajojen toimintatapa](docs/rinnakkaiset-codex-ajot.md).
 
-## Continuous repository hygiene
+## Continuous Repository Hygiene
 
-- Keep repository hygiene as a continuous, separately scoped maintenance lane
-  alongside recipe, translation and feature development. Before each cleanup,
-  inspect the latest `main`, active PRs and file owners; do not duplicate work
-  already in progress or expand another session's write scope.
-- At the end of each development task, check for newly generated artifacts,
-  obsolete temporary outputs and possible branch/worktree leftovers **read-only**.
-  Record out-of-scope follow-ups rather than silently changing other files.
-- Prefer small, auditable cleanup PRs. Preserve recipe data, F25 gates, GK
-  evidence/history, approvals and review fixtures unless they are the explicitly
-  authorized scope of a separate reviewed change.
+- Keep repository hygiene part of ongoing recipe, translation and feature
+  development. Before a separate cleanup task, inspect the latest `main`,
+  active PRs and file ownership. Coordinate with the existing owners.
+- As part of each task, perform a read-only check for cleanup needs in the
+  touched area, such as generated artifacts, temporary outputs and worktrees.
+  Record findings outside the task scope for separate follow-up.
+- Make cleanup changes in separate, narrowly scoped, auditable tasks.
+  Preserve recipe data, F25 gates, GK evidence and history, nutrition
+  calculations, existing approvals, and review and publication safeguards.
 - A clean Git status alone never proves a worktree safe to remove. Check tracked,
   untracked and ignored files, locks, active use, open PRs and the relevant
-  `main` ancestry. Unknown evidence means **KEEP**; `MANUAL_REVIEW` is only a
-  candidate for human verification, not deletion permission.
+  `main` ancestry. Missing or uncertain evidence means `KEEP`.
+  `MANUAL_REVIEW` is a suggestion for separate verification and carries no
+  deletion authority.
 - Scheduled GitHub hygiene and local worktree inventories are **read-only**.
   Do not automatically delete branches/worktrees, use force deletion, rewrite
   history or clear caches containing uncertain local state. Any deletion needs
   separate explicit authorization, ownership checks and a guarded procedure.
+  Follow the [worktree lifecycle](docs/worktree-lifecycle.md).
 - CI optimizations must preserve the required `Recipe site / build`, tested-SHA
-  verification and applicable F25, GK, translation and publication safeguards.
-  Compare like-for-like timings; a narrower test selection is not proof of a
-  faster full test run.
+  verification, and applicable F25, GK, nutrition, translation and publication
+  safeguards. Measure timings for equivalent check sets.
 
 ## Recipe translation quality
 
