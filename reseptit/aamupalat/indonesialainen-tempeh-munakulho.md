@@ -6,37 +6,37 @@ category: aamupala
 language: fi
 status: published
 main_ingredient:
-  - "tempeh"
-  - "kananmuna"
-  - "riisi"
+  - riisi
+  - tempeh
+  - kananmuna
 cooking_method:
-  - "paistaminen"
+  - paistaminen
 ingredients:
   - amount: 100
     unit: "g"
-    item: "tempeh"
-  - amount: 2
-    unit: "kpl"
-    item: "kananmuna"
+    item: "kuivaa valkoista jasmiiniriisiä"
   - amount: 100
     unit: "g"
-    item: "riisi"
-  - amount: 150
+    item: "soijatempehiä"
+  - amount: 2
+    unit: "kpl"
+    item: "kananmunaa"
+  - amount: 10
     unit: "g"
-    item: "sambal"
-  - amount: null
-    unit: ""
-    item: "suolaa maun mukaan"
+    item: "sambal oelekia"
+  - amount: 5
+    unit: "g"
+    item: "rypsiöljyä"
 servings: 2
-time_total_min: 25
+time_total_min: 35
 difficulty: Helppo
 tags:
   - "aamupala"
+  - "riisi"
   - "indonesialainen"
-  - "aamiaisruoka"
 image:
   src: aamupalat/indonesialainen-tempeh-munakulho.webp
-  alt: "Tempeh- ja munakulho sambalilla tarjoiltuna aamiaisella"
+  alt: "Riisikulho, tempehiä ja kananmunaa tarjoilulisukkeineen."
   width: 1536
   height: 1024
 ---
@@ -45,15 +45,19 @@ image:
 
 ## Kuvaus
 
-Tässä kotikeittiöön sovitetussa ohjeessa valmistetaan tempeh- ja munakulho sambalilla. Mausteisuutta ja lisukkeita voi säätää oman maun mukaan.
+Rapeaksi paistettua soijatempehiä, kypsää kananmunaa ja sambalia lämpimällä jasmiiniriisillä.
 
 ## Ainekset
 
-Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
+Mittaa riisi kuivana. Käytä sambal oelekia ja tarkista pakkauksesta allergeenit. Kuvan lisukkeet ovat tarjoiluehdotus.
 
 ## Valmistus
 
-1. Kypsennä riisi pakkauksen ohjeen mukaan. Paista tofu, muna tai muu lämmin täyte tarvittaessa erikseen.
-2. Paloittele tuoreet kasvikset ja valmistele yrtit sekä kastikkeen ainekset.
-3. Jaa lämmin pohja kulhoihin, asettele muut ainekset päälle ja lisää kastike juuri ennen tarjoamista.
-4. Paista tempeh rapeaksi ja tarjoa riisin sekä kananmunan kanssa; lisää sambalia maun mukaan.
+1. Huuhtele riisi ja kypsennä pakkauksen ohjeen mukaan. Varaa keittämiseen pakkauksen ilmoittama määrä vettä.
+2. Leikkaa tempeh ohuiksi viipaleiksi. Kuumenna rypsiöljy tarttumattomalla pannulla ja paista tempeh molemmin puolin kullanruskeaksi ja kuumaksi pakkauksen ohjetta noudattaen.
+3. Nosta tempeh lautaselle. Paista munat samalla pannulla, kunnes sekä valkuaiset että keltuaiset ovat hyytyneet.
+4. Jaa riisi, tempeh ja munat kahteen kulhoon. Jaa 10 g sambalia tasan kulhoihin ja tarjoa lämpimänä.
+
+## Muistiinpanot
+
+Sisältää soijaa ja kananmunaa. Jäähdytä ylijäänyt riisi nopeasti matalassa astiassa tunnin kuluessa, säilytä jääkaapissa ja käytä 24 tunnin kuluessa. Kuumenna vain kerran kauttaaltaan höyryävän kuumaksi.

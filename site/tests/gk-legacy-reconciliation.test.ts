@@ -6,7 +6,7 @@ import {biryaniSourceBeforeReview, biryaniSourcePath} from "../scripts/biryani-r
 import {parseMarkdown} from "../src/content/markdown";
 import {assertOriginalContentTransition,frozenOriginalRows,originalContentInventoryBefore,restoreBeforeOriginalContent} from './original-content-transition';
 import {p1Transition,requiresP1SourceCorrection,verifyP1SourceInputs} from './p1-source-transition';
-import {recipeTextForApprovedSnapshot} from '../scripts/approved-recipe-note-edits';
+import {recipeTextForApprovedSnapshot,reviewedRecipesWithHistoricalGk} from '../scripts/approved-recipe-note-edits';
 import {execFileSync} from 'node:child_process';
 import {strict as assert} from 'node:assert';
 import {test} from 'node:test';
@@ -250,7 +250,7 @@ test('Live original results preserve frozen history plus the exact reviewed tran
     assert.equal(row.source_content_hash, createHash("sha256").update(live).digest("hex"));
     return {...row, ingredients: parseMarkdown(old)!.data.ingredients, notes: "", source_content_hash: createHash("sha256").update(old).digest("hex")};
    }
-   if (row.source_path === "reseptit/aamupalat/japanilainen-dashimaki-tamago-aamiaislautasella.md") {
+   if (reviewedRecipesWithHistoricalGk.has(row.source_path)) {
     const live = read(row.source_path).replaceAll("\r\n", "\n");
     const historical = recipeTextForApprovedSnapshot(row.source_path, live);
     assert.notEqual(live, historical);

@@ -15,7 +15,7 @@ import {buildThreeCurryVariants} from './gk-three-curries';
 import {buildApprovedFourVariants} from './gk-next-four';
 import {buildApprovedBVariants} from './gk-four-approved-b';
 import {buildProductAVariants} from './gk-four-product-a';
-import {recipeTextForApprovedSnapshot} from './approved-recipe-note-edits';
+import {recipeTextForApprovedSnapshot, reviewedRecipesWithHistoricalGk} from './approved-recipe-note-edits';
 import {buildBlueberryPieVariant} from './gk-blueberry-pie';
 import {buildPanangKimchiVariants} from './gk-panang-kimchi';
 import {buildGkOnlyVariants} from './gk149-integration';
@@ -159,22 +159,17 @@ const molletesNeedsGkReview = molletesMarkdown !== undefined &&
   molletesHistoricalText(molletesSourcePath, molletesMarkdown) !== molletesMarkdown;
 
 const koreanRiceBowlsNeedingGkReview = new Set<string>();
-const dashimakiId = "japanilainen-dashimaki-tamago-aamiaislautasella";
-const dashimakiSourcePath = "reseptit/aamupalat/japanilainen-dashimaki-tamago-aamiaislautasella.md";
-const dashimakiMarkdown = publishedRecipeSources.get(dashimakiId)?.markdown;
-const dashimakiNeedsGkReview = dashimakiMarkdown !== undefined &&
-  recipeTextForApprovedSnapshot(dashimakiSourcePath, dashimakiMarkdown) !== dashimakiMarkdown;
-
 const sourceHashes = Object.fromEntries(expectedRecipeIds.map((recipeId) => {
   const source = publishedRecipeSources.get(recipeId);
   if (!source) throw new Error("Published source recipe is missing from the current GK set: " + recipeId);
+  const file = `reseptit/aamupalat/${recipeId}.md`;
   // The legacy inputs still describe the historical biryani recipe.
   const markdown = recipeId === "hyderabadi-kanabiryani"
     ? biryaniSourceBeforeReview(biryaniSourcePath, source.markdown)
     : recipeId === coconutBananaRecipeId
       ? coconutBananaHistoricalBindingText(source.markdown)
-      : recipeId === dashimakiId
-        ? recipeTextForApprovedSnapshot(dashimakiSourcePath, source.markdown)
+      : reviewedRecipesWithHistoricalGk.has(file)
+        ? recipeTextForApprovedSnapshot(file, source.markdown)
       : recipeId === molletesRecipeId
         ? molletesHistoricalText(molletesSourcePath, source.markdown)
         : koreanRiceBowlHistoricalText(`reseptit/aamupalat/${recipeId}.md`, source.markdown);
@@ -296,8 +291,7 @@ const publicResults = results.flatMap((result) => {
       (result.recipeId === "hyderabadi-kanabiryani" && biryaniUsesReviewedMilk) ||
       (result.recipeId === coconutBananaRecipeId && coconutBananaNeedsGkReview) ||
       koreanRiceBowlsNeedingGkReview.has(result.recipeId) ||
-      (result.recipeId === molletesRecipeId && molletesNeedsGkReview) ||
-      (result.recipeId === dashimakiId && dashimakiNeedsGkReview)) return {
+      (result.recipeId === molletesRecipeId && molletesNeedsGkReview)) return {
     ...recipeIdentity,
     status: "INSUFFICIENT SOURCE DATA",
     glycemicLoadPerServing: null,
