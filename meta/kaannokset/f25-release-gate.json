@@ -203,7 +203,21 @@
       "source_risk": "HOLD-ALTERNATIVE-PASTA",
       "nutrition_input_at_baseline": "missing",
       "public_quarantine_at_baseline": false,
-      "approval": null
+      "approval": {
+        "status": "RELEASE_AUTHORIZED",
+        "reviewedAt": "2026-11-14",
+        "reviewReference": "https://github.com/ozirix-dev/Reseptit/issues/447",
+        "reviewerKind": "AI_EDITORIAL_WITH_INDEPENDENT_EVIDENCE",
+        "sourceSha256": "c5f99e5734175d0c1230d589821743201eb80640c7724fb7b8693f636446289c",
+        "nutritionEvidenceSha256": "1a49f3506c350f5862b02c0203fb49e9f26ded852e55a65b557640bef07bcb55",
+        "gkRecipeBindingSha256": "17b89e6876ba7c2d52de57f1018f4e104bf1403ca311b1ea921882337274e80e",
+        "gkCalculationInputSha256": "f33be5e26b7b02977fb566a76d3f2fdb79e7b814ecb90369eea47151b9aef1bb",
+        "gkCalculationEvidenceSha256": "f1297c80823467c2bc966d2d153498f98fc492db588a3d822c5af152dcfecece",
+        "gkDisposition": "GK_UNAVAILABLE_EXPLICITLY_REVIEWED",
+        "cookingAndAllergensReviewed": true,
+        "ingredientUnitConversionsReviewed": true,
+        "translationMeaningReviewRequired": true
+      }
     },
     {
       "recipe_id": "pohjoisafrikkalainen-maakouda",

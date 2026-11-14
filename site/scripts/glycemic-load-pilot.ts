@@ -162,7 +162,9 @@ const koreanRiceBowlsNeedingGkReview = new Set<string>();
 const sourceHashes = Object.fromEntries(expectedRecipeIds.map((recipeId) => {
   const source = publishedRecipeSources.get(recipeId);
   if (!source) throw new Error("Published source recipe is missing from the current GK set: " + recipeId);
-  const file = `reseptit/aamupalat/${recipeId}.md`;
+  const file = recipeId === "munakoiso-kesakurpitsalasagne"
+    ? "reseptit/paaruoat/munakoiso-kesakurpitsalasagne.md"
+    : `reseptit/aamupalat/${recipeId}.md`;
   // The legacy inputs still describe the historical biryani recipe.
   const markdown = recipeId === "hyderabadi-kanabiryani"
     ? biryaniSourceBeforeReview(biryaniSourcePath, source.markdown)

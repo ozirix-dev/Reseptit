@@ -188,7 +188,6 @@ test("F25 consumer-facing review notices are separate from GK-sealed recipe Mark
     "meksikolainen-paputostada-aamupalaksi",
     "korealainen-kimchi-jeon-aamiaiseksi",
     "karibia-plantain-aamiaislautanen",
-    "munakoiso-kesakurpitsalasagne",
   ];
   assert.deepEqual(Object.keys(sourceReviewNotices).sort(), [...ids].sort());
   for (const id of ids) {
@@ -203,5 +202,4 @@ test("F25 consumer-facing review notices are separate from GK-sealed recipe Mark
   assert.match(sourceReviewNotice("vietnamilainen-banh-cuon-sienilla")!.details, /porsaan jauhelihaa/);
   assert.match(sourceReviewNotice("meksikolainen-chilaquiles-verdes")!.details,/51,845 g/);
   assert.match(sourceReviewNotice("korealainen-kimchi-jeon-aamiaiseksi")!.details,/4,5 g/);
-  assert.match(sourceReviewNotice("munakoiso-kesakurpitsalasagne")!.details,/200 g kuivia/);
 });
