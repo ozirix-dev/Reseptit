@@ -95,6 +95,16 @@ const editorialSnapshots: Readonly<Record<string, {
       ]
     ]
   },
+  "reseptit/aamupalat/vietnamilainen-banh-cuon-sienilla.md": {
+    "currentSha256": "1e1db19b878be1d1460628b6b0e480a229e743b8d4da6418326fdee07740ea0f",
+    "inverseEdits": [
+      [
+        0,
+        78,
+        "---\ntitle: \"Banh cuon sienitäytteellä\"\nrecipe_id: vietnamilainen-banh-cuon-sienilla\nurl_slug: vietnamilainen-banh-cuon-sienilla\ncategory: aamupala\nlanguage: fi\nstatus: published\nmain_ingredient:\n  - \"riisijauho\"\n  - \"sieni\"\n  - \"porsaan jauheliha\"\ncooking_method:\n  - \"höyrytetty\"\ningredients:\n  - amount: 100\n    unit: \"g\"\n    item: \"riisijauho\"\n  - amount: 250\n    unit: \"ml\"\n    item: \"vettä\"\n  - amount: 100\n    unit: \"g\"\n    item: \"tuoreita herkkusieniä\"\n  - amount: 150\n    unit: \"g\"\n    item: \"porsaan jauheliha\"\n  - amount: 1\n    unit: \"rkl\"\n    item: \"kalakastike\"\n  - amount: null\n    unit: \"\"\n    item: \"suolaa maun mukaan\"\nservings: 2\ntime_total_min: 25\ndifficulty: Helppo\ntags:\n  - \"aamupala\"\n  - \"vietnamilainen\"\n  - \"aamiaisruoka\"\nimage:\n  src: aamupalat/vietnamilainen-banh-cuon-sienilla.webp\n  alt: \"Banh cuon sienitäytteellä tarjoiltuna aamiaisella\"\n  width: 1536\n  height: 1024\ncarbs_net_per_serving_g: 40.31\ncarbs_total_per_serving_g: 42.76\nprotein_per_serving_g: 21.37\nfat_per_serving_g: 9.05\n\n---\n\n# Banh cuon sienitäytteellä\n\n## Kuvaus\n\nTässä kotikeittiöön sovitetussa ohjeessa valmistetaan banh cuon sienitäytteellä. Mausteisuutta ja lisukkeita voi säätää oman maun mukaan.\n\n## Ainekset\n\nAinekset ovat annoslaskurin käytössä rakenteisista metatiedoista.\n\n## Valmistus\n\n1. Valmistele täyte ja taikina. Liota riisi tai palkokasvit etukäteen, jos käytät niitä kuivina.\n2. Muotoile annokset tai lusikoi seos kevyesti öljyttyihin vuokiin. Jätä väliin tilaa höyryn kiertämiselle.\n3. Höyrytä kannen alla kypsäksi. Tarkista paksuimman kohdan kypsyys ennen tarjoamista.\n4. Höyrytä ohuet riisijauholevyt, täytä sienillä ja tarjoa yrttien kanssa.\n"
+      ]
+    ]
+  },
   "reseptit/aamupalat/intialainen-ven-pongal.md": {
     currentSha256: "77eea5fe9f4183fd5fda93b0a0c5e5fd346535d0cffbd0399a84d8a2887d2bd8",
     inverseEdits: [
@@ -962,6 +972,7 @@ export function recipeTextForApprovedSnapshot(file: string, text: string): strin
 
 // These corrected FI versions retain their old source only for GK verification.
 export const reviewedRecipesWithHistoricalGk = new Set([
+  "reseptit/aamupalat/vietnamilainen-banh-cuon-sienilla.md",
   "reseptit/paaruoat/munakoiso-kesakurpitsalasagne.md",
   "reseptit/aamupalat/vietnamilainen-banh-xeo-aamiaisletut.md",
   "reseptit/aamupalat/vietnamilainen-papaija-kookospuuro.md",

@@ -251,6 +251,7 @@ function checkedPostBaselineRelease(root: string, baseline: string, recipeId: st
 // Exact old calculation blobs stay in Git. Admitting the independently
 // approved current package here does not alter the historical GK calculation.
 const f25HistoricalNutrition = new Map([
+  ["vietnamilainen-banh-cuon-sienilla", "969e6696fecc2c57873604ad9bd4545647668c26"],
   ["vietnamilainen-banh-xeo-aamiaisletut", "cce0d1060a066b208a3713b59a1cb9ed12bf684c"],
   ["vietnamilainen-papaija-kookospuuro", "46c0590ba9cbc3554f04d5e00846e586982bea9a"],
   ["japanilainen-hojicha-jogurtti-persimonilla", "0a07d2eec8383faf45779fb5278daf4464f1d3de"],

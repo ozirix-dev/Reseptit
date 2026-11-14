@@ -187,14 +187,6 @@ async function buildRecipes(): Promise<RecipeEntry[]> {
     const notes = section(parsed.content, ["Muistiinpanot", "Notes", "Anteckningar", "หมายเหตุ"]);
     const dietTags = await reviewedDietTagsForSource(data.recipe_id, data.language, filePath, finnishSources.get(data.recipe_id));
     const instructionSteps = [...publicInstructions.matchAll(/^\s*\d+[.)]\s+(.+)$/gm)].map((match) => match[1].trim());
-    // Historical F25 FI source remains SHA/GK-locked. Its projected four-step cooking
-    // method needs 40–50 minutes, not the historical 25-minute source metadata.
-    // This overrides public display facts only; no nutrient or GK approval.
-    const banhCuonFiTimeReview = data.language === "fi"
-      && data.recipe_id === "vietnamilainen-banh-cuon-sienilla";
-    if(banhCuonFiTimeReview && (data.time_total_min !== 25 || data.difficulty !== "Helppo"
-      || !publicInstructions.includes("40–50 minuuttia")))
-      throw Error("F25_BANH_CUON_PUBLIC_TIME_SOURCE_DRIFT");
     recipes.push({
       kind: "recipe", recipeId: data.recipe_id, slug: data.url_slug, locale: data.language,
       title: data.title, category: data.category, dietClass: data.diet_class ?? null, ...(dietTags.length ? { dietTags } : {}), ...(data.gluten_free === true ? { glutenFree: true } : {}), routePath: routeForRecipe(data.language, data.url_slug),
@@ -203,8 +195,8 @@ async function buildRecipes(): Promise<RecipeEntry[]> {
       instructionStepsHtml: await renderInstructionSteps(publicInstructions),
       instructionsText: instructionSteps.length ? instructionSteps : publicInstructions.split(/\n\s*\n/).filter(Boolean),
       notesHtml: await renderSafeMarkdown(!safetyHold && visibleHold ? "" : notes), servings: data.servings,
-      timeTotalMin: banhCuonFiTimeReview ? 50 : data.time_total_min ?? null,
-      difficulty: banhCuonFiTimeReview ? "Keskitaso" : data.difficulty ?? null, tags: data.tags,
+      timeTotalMin: data.time_total_min ?? null,
+      difficulty: data.difficulty ?? null, tags: data.tags,
       image: data.image ? {
         src: `${baseUrl}/kuvat/${data.image.src}`,
         alt: data.image.alt, width: data.image.width, height: data.image.height,

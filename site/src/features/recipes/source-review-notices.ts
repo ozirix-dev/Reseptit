@@ -33,11 +33,6 @@ export const sourceReviewNotices: Readonly<Record<string, SourceReviewNotice>> =
     details: "Yksi ruokabanaani, yksi avokado ja yksi lime eivät riitä ravintoarvojen laskentaan ilman kuorittuja syötäviä grammapainoja ja limemehun määrää. Kypsennä ruokabanaani kunnolla; 1 rkl paistoöljyn syöty osuus täytyy arvioida ja kaksi munaa punnita ilman kuorta.",
     allergens: "Sisältää kananmunaa. Tarkista muiden käytettyjen tuotteiden allergeenit.",
   },
-  "vietnamilainen-banh-cuon-sienilla": {
-    heading: "Valmistusajan ja täytteen tarkistus kesken",
-    details: "Sienistä huolimatta täytteessä on 150 g raakaa porsaan jauhelihaa: tämä ei ole kasvisruoka. Kypsennä jauheliha kauttaaltaan täysin kypsäksi. Riisilevyjen höyryttämisen ja irrottamisen takia ilmoitettua 25 minuutin kokonaisaikaa ei ole varmistettu; varaa enemmän aikaa.",
-    allergens: "Kalakastike sisältää kalaa. Tarkista muut allergeenit tuotepakkauksista.",
-  },
 });
 
 export function sourceReviewNotice(recipeId: string): SourceReviewNotice | null {
