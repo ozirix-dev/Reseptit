@@ -43,7 +43,8 @@ export function verifyNextSevenManifest(root:string){
     || actual === 'afd3d05e9b3ea35c5a5a4080210f1df5c082f69f6e3b86a2a651c51bd7316348'
     || actual === '6b845abc4a9670cec62ee9e7c2daaad51276114f28de38dfc7df5963c558d0ab'
     || actual === 'c6005f1b038b2eecda65a26ecce6e5b7c6cba9c71c1a076bdb1ab1d961b811cd'
-    || actual === 'de0aa67bb0e402c852fcda748f5f3e4c2a3212e10e789c58a3815da9e78a78fc')) continue;
+    || actual === 'de0aa67bb0e402c852fcda748f5f3e4c2a3212e10e789c58a3815da9e78a78fc'
+    || actual === '3da760eba1024f55beae98b244a43f92a015973d93cbdd2b1ca9baf56978c241')) continue;
   throw Error('Next-seven file changed: '+file);
  }
  return m;

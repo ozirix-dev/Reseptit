@@ -49,6 +49,43 @@ const editorialSnapshots: Readonly<Record<string, {
       [1, 1, "title: \"Kongjuk soijapapu-riisipuuro\"\n"],
     ],
   },
+  "reseptit/aamupalat/indonesialainen-tempeh-munakulho.md": {
+    currentSha256: "f01f19e9bd317775ca2302592d707041385c679393cb763b0dac44c0462461ab",
+    inverseEdits: [
+      [55, 8, "1. Kypsennä riisi pakkauksen ohjeen mukaan. Paista tofu, muna tai muu lämmin täyte tarvittaessa erikseen.\n2. Paloittele tuoreet kasvikset ja valmistele yrtit sekä kastikkeen ainekset.\n3. Jaa lämmin pohja kulhoihin, asettele muut ainekset päälle ja lisää kastike juuri ennen tarjoamista.\n4. Paista tempeh rapeaksi ja tarjoa riisin sekä kananmunan kanssa; lisää sambalia maun mukaan.\n"],
+      [51, 1, "Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.\n"],
+      [47, 1, "Tässä kotikeittiöön sovitetussa ohjeessa valmistetaan tempeh- ja munakulho sambalilla. Mausteisuutta ja lisukkeita voi säätää oman maun mukaan.\n"],
+      [38, 1, "  alt: \"Tempeh- ja munakulho sambalilla tarjoiltuna aamiaisella\"\n"],
+      [36, 0, "  - \"aamiaisruoka\"\n"],
+      [34, 1, ""],
+      [30, 1, "time_total_min: 25\n"],
+      [25, 4, "    item: \"sambal\"\n  - amount: null\n    unit: \"\"\n    item: \"suolaa maun mukaan\"\n"],
+      [19, 5, "    item: \"riisi\"\n  - amount: 150\n"],
+      [16, 1, "    item: \"tempeh\"\n  - amount: 2\n    unit: \"kpl\"\n    item: \"kananmuna\"\n"],
+      [12, 1, "  - \"paistaminen\"\n"],
+      [8, 3, "  - \"tempeh\"\n  - \"kananmuna\"\n  - \"riisi\"\n"],
+    ],
+  },
+  "reseptit/aamupalat/japanilainen-okayu-umeboshipluumulla.md": {
+    currentSha256: "fee550f519ca1160300ed6a49f7952a34b910679bb11a94127974018aaf59b6a",
+    inverseEdits: [
+      [55, 7, "1. Mittaa riisi kattilaan ja lisää reseptin neste. Kuumenna kiehuvaksi samalla pohjaa myöten sekoittaen.\n2. Hauduta miedolla lämmöllä välillä sekoittaen, kunnes puuro on pehmeää ja sakeaa. Lisää nestettä vähän kerrallaan, jos rakenne tiivistyy liikaa.\n3. Kypsennä liha tai muut täytteet kypsiksi ja lisää puuroon. Tarkista suola ja mausteet.\n4. Keitä riisi runsaassa vedessä hyvin pehmeäksi ja lisää päälle umeboshi.\n"],
+      [51, 1, "Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.\n"],
+      [47, 1, "Tässä kotikeittiöön sovitetussa ohjeessa valmistetaan okayu-riisipuuro umeboshipluumulla. Mausteisuutta ja lisukkeita voi säätää oman maun mukaan.\n"],
+      [43, 1, "# Okayu-riisipuuro umeboshipluumulla\n"],
+      [38, 1, "  alt: \"Okayu-riisipuuro umeboshipluumulla tarjoiltuna aamiaisella\"\n"],
+      [36, 0, "  - \"puuro\"\n"],
+      [34, 1, ""],
+      [30, 1, "time_total_min: 25\n"],
+      [28, 1, "    item: \"vettä tai mietoa lientä\"\n  - amount: null\n    unit: \"\"\n    item: \"suolaa maun mukaan\"\n"],
+      [22, 4, "    item: \"seesaminsiemen\"\n"],
+      [19, 2, "    item: \"umeboshi\"\n  - amount: 2\n    unit: \"rkl\"\n    item: \"kevätsipuli\"\n  - amount: 100\n"],
+      [16, 2, "    item: \"riisi\"\n  - amount: 150\n"],
+      [12, 1, "  - \"keittäminen\"\n"],
+      [8, 3, "  - \"riisi\"\n  - \"umeboshi\"\n  - \"kevätsipuli\"\n"],
+      [1, 1, "title: \"Okayu-riisipuuro umeboshipluumulla\"\n"],
+    ],
+  },
   "reseptit/aamupalat/japanilainen-kabocha-puuro.md": {
     currentSha256: "50e95cecf334bbff0d8c7b7725a02aaeafcacaa571b7a8b8cbbd8258a073774a",
     inverseEdits: [
@@ -831,3 +868,10 @@ export function recipeTextForApprovedSnapshot(file: string, text: string): strin
   const [historical, current] = edit;
   return text.split("\n").map(line => line === current ? historical : line).join("\n");
 }
+
+// These corrected FI versions retain their old source only for GK verification.
+export const reviewedRecipesWithHistoricalGk = new Set([
+  "reseptit/aamupalat/indonesialainen-tempeh-munakulho.md",
+  "reseptit/aamupalat/japanilainen-okayu-umeboshipluumulla.md",
+  "reseptit/aamupalat/japanilainen-dashimaki-tamago-aamiaislautasella.md",
+]);

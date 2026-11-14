@@ -1,62 +1,62 @@
 ---
-title: "Okayu-riisipuuro umeboshipluumulla"
+title: "Okayu-riisipuuro umeboshilla"
 recipe_id: japanilainen-okayu-umeboshipluumulla
 url_slug: japanilainen-okayu-umeboshipluumulla
 category: aamupala
 language: fi
 status: published
 main_ingredient:
-  - "riisi"
-  - "umeboshi"
-  - "kevätsipuli"
+  - riisi
+  - umeboshi
+  - kevätsipuli
 cooking_method:
-  - "keittäminen"
+  - keittäminen
 ingredients:
   - amount: 100
     unit: "g"
-    item: "riisi"
-  - amount: 150
+    item: "kuivaa valkoista riisiä"
+  - amount: 10
     unit: "g"
-    item: "umeboshi"
-  - amount: 2
-    unit: "rkl"
-    item: "kevätsipuli"
-  - amount: 100
+    item: "kivetöntä suolattua umeboshia"
+  - amount: 20
     unit: "g"
-    item: "seesaminsiemen"
+    item: "kevätsipulia"
+  - amount: 8
+    unit: "g"
+    item: "seesaminsiemeniä"
   - amount: 700
     unit: "ml"
-    item: "vettä tai mietoa lientä"
-  - amount: null
-    unit: ""
-    item: "suolaa maun mukaan"
+    item: "vettä"
 servings: 2
-time_total_min: 25
+time_total_min: 55
 difficulty: Helppo
 tags:
   - "aamupala"
+  - "riisi"
   - "japanilainen"
-  - "puuro"
 image:
   src: aamupalat/japanilainen-okayu-umeboshipluumulla.webp
-  alt: "Okayu-riisipuuro umeboshipluumulla tarjoiltuna aamiaisella"
+  alt: "Japanilaista riisipuuroa umeboshin kanssa."
   width: 1536
   height: 1024
 ---
 
-# Okayu-riisipuuro umeboshipluumulla
+# Okayu-riisipuuro umeboshilla
 
 ## Kuvaus
 
-Tässä kotikeittiöön sovitetussa ohjeessa valmistetaan okayu-riisipuuro umeboshipluumulla. Mausteisuutta ja lisukkeita voi säätää oman maun mukaan.
+Japanilainen okayu on vedessä haudutettua pehmeää riisipuuroa. Suolainen umeboshi, kevätsipuli ja seesami lisätään annoksiin.
 
 ## Ainekset
 
-Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
+Käytä kuivaa valkoista riisiä. Punnitse umeboshi ilman kiviä.
 
 ## Valmistus
 
-1. Mittaa riisi kattilaan ja lisää reseptin neste. Kuumenna kiehuvaksi samalla pohjaa myöten sekoittaen.
-2. Hauduta miedolla lämmöllä välillä sekoittaen, kunnes puuro on pehmeää ja sakeaa. Lisää nestettä vähän kerrallaan, jos rakenne tiivistyy liikaa.
-3. Kypsennä liha tai muut täytteet kypsiksi ja lisää puuroon. Tarkista suola ja mausteet.
-4. Keitä riisi runsaassa vedessä hyvin pehmeäksi ja lisää päälle umeboshi.
+1. Huuhtele riisi ja valuta. Pane se kattilaan ja lisää 700 ml vettä.
+2. Kiehauta ja hauduta kannen alla miedolla lämmöllä noin 45 minuuttia, kunnes riisinjyvät ovat hyvin pehmeitä. Sekoita välillä pohjaa myöten.
+3. Hienonna kevätsipuli ja pilko kivetön umeboshi. Jaa puuro kahteen kulhoon ja jaa umeboshi, kevätsipuli ja seesaminsiemenet tasan annoksiin.
+
+## Muistiinpanot
+
+Sisältää seesamia. Jäähdytä ylijäänyt puuro nopeasti matalassa astiassa tunnin kuluessa, säilytä jääkaapissa ja käytä 24 tunnin kuluessa. Kuumenna vain kerran kauttaaltaan höyryävän kuumaksi. Kuvassa on tarjoiluehdotus.
