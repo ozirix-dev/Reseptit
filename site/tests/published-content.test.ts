@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { emptyRecipeFilters, filterRecipes } from "../src/features/recipes/recipe-search";
 import { createHash } from "node:crypto";
 import { recipeFrontmatterSchema } from "../src/content/schema";
 import { verifyNutritionEvidence } from "../scripts/nutrition-evidence";
@@ -876,4 +877,11 @@ test("three B21 preparation-time HOLDs retain exact source bytes but no public p
     assert.ok(parsed);
     assert.equal(parsed.data.status, "published", id + ": historical source retained");
   }
+});
+
+test("roti jala successor remains visible with the chicken filter in all locales", () => {
+  const id = "malesialainen-roti-jala-currykanalla-punnittu-v2";
+  const chicken = filterRecipes(currentSiteContent.recipes, { ...emptyRecipeFilters, ingredient: "chicken" }, "fi");
+  assert.deepEqual(chicken.filter(recipe => recipe.recipeId === id).map(recipe => recipe.locale).sort(),
+    ["en", "fi", "sv", "th"]);
 });
