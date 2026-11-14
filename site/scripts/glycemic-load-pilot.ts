@@ -159,6 +159,12 @@ const molletesNeedsGkReview = molletesMarkdown !== undefined &&
   molletesHistoricalText(molletesSourcePath, molletesMarkdown) !== molletesMarkdown;
 
 const koreanRiceBowlsNeedingGkReview = new Set<string>();
+const dashimakiId = "japanilainen-dashimaki-tamago-aamiaislautasella";
+const dashimakiSourcePath = "reseptit/aamupalat/japanilainen-dashimaki-tamago-aamiaislautasella.md";
+const dashimakiMarkdown = publishedRecipeSources.get(dashimakiId)?.markdown;
+const dashimakiNeedsGkReview = dashimakiMarkdown !== undefined &&
+  recipeTextForApprovedSnapshot(dashimakiSourcePath, dashimakiMarkdown) !== dashimakiMarkdown;
+
 const sourceHashes = Object.fromEntries(expectedRecipeIds.map((recipeId) => {
   const source = publishedRecipeSources.get(recipeId);
   if (!source) throw new Error("Published source recipe is missing from the current GK set: " + recipeId);
@@ -167,6 +173,8 @@ const sourceHashes = Object.fromEntries(expectedRecipeIds.map((recipeId) => {
     ? biryaniSourceBeforeReview(biryaniSourcePath, source.markdown)
     : recipeId === coconutBananaRecipeId
       ? coconutBananaHistoricalBindingText(source.markdown)
+      : recipeId === dashimakiId
+        ? recipeTextForApprovedSnapshot(dashimakiSourcePath, source.markdown)
       : recipeId === molletesRecipeId
         ? molletesHistoricalText(molletesSourcePath, source.markdown)
         : koreanRiceBowlHistoricalText(`reseptit/aamupalat/${recipeId}.md`, source.markdown);
@@ -288,7 +296,8 @@ const publicResults = results.flatMap((result) => {
       (result.recipeId === "hyderabadi-kanabiryani" && biryaniUsesReviewedMilk) ||
       (result.recipeId === coconutBananaRecipeId && coconutBananaNeedsGkReview) ||
       koreanRiceBowlsNeedingGkReview.has(result.recipeId) ||
-      (result.recipeId === molletesRecipeId && molletesNeedsGkReview)) return {
+      (result.recipeId === molletesRecipeId && molletesNeedsGkReview) ||
+      (result.recipeId === dashimakiId && dashimakiNeedsGkReview)) return {
     ...recipeIdentity,
     status: "INSUFFICIENT SOURCE DATA",
     glycemicLoadPerServing: null,

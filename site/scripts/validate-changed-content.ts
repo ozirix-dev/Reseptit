@@ -1,3 +1,4 @@
+import { recipeTextForApprovedSnapshot } from "./approved-recipe-note-edits";
 import { molletesHistoricalText } from "./molletes-reviewed-source";
 import { koreanRiceBowlHistoricalText } from "./korean-rice-bowls-reviewed-source";
 import { coconutBananaHistoricalBindingText, coconutBananaSourcePath } from "./coconut-banana-reviewed-source";
@@ -225,7 +226,12 @@ for (const recipeId of recipeIds) {
     const historicalMolletes = molletesHistoricalText(changedSource.path, changedSource.markdown);
     const reviewedMolletesWithoutGk = historicalMolletes !== changedSource.markdown &&
       recipeBindingHash(historicalMolletes, recipeAliases.aliases ?? {}) === boundRecipeHash;
-    assert(currentRecipeHash === boundRecipeHash || reviewedBiryaniWithoutGk || reviewedCoconutBananaWithoutGk || reviewedRiceBowlWithoutGk || reviewedMolletesWithoutGk || await validateGk80Candidate(repoRoot, recipeId) || await validateRecovery(repoRoot,recipeId) || await validateScopedPolyolC(repoRoot,recipeId), `${recipeId}: GI/GK recipe binding is stale; review the related calculation before accepting this content change`);
+    const historicalDashimaki = changedSource.path === "reseptit/aamupalat/japanilainen-dashimaki-tamago-aamiaislautasella.md"
+      ? recipeTextForApprovedSnapshot(changedSource.path, changedSource.markdown.replaceAll("\r\n", "\n"))
+      : changedSource.markdown;
+    const reviewedDashimakiWithoutGk = historicalDashimaki !== changedSource.markdown &&
+      recipeBindingHash(historicalDashimaki, recipeAliases.aliases ?? {}) === boundRecipeHash;
+    assert(currentRecipeHash === boundRecipeHash || reviewedBiryaniWithoutGk || reviewedCoconutBananaWithoutGk || reviewedRiceBowlWithoutGk || reviewedMolletesWithoutGk || reviewedDashimakiWithoutGk || await validateGk80Candidate(repoRoot, recipeId) || await validateRecovery(repoRoot,recipeId) || await validateScopedPolyolC(repoRoot,recipeId), `${recipeId}: GI/GK recipe binding is stale; review the related calculation before accepting this content change`);
   }
 
   const evidencePath = resolveRepoFile(`docs/nutrition/calculations/${recipeId}.json`);

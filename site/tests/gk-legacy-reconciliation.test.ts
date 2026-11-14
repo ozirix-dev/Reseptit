@@ -249,6 +249,13 @@ test('Live original results preserve frozen history plus the exact reviewed tran
     assert.equal(row.source_content_hash, createHash("sha256").update(live).digest("hex"));
     return {...row, ingredients: parseMarkdown(old)!.data.ingredients, notes: "", source_content_hash: createHash("sha256").update(old).digest("hex")};
    }
+   if (row.source_path === "reseptit/aamupalat/japanilainen-dashimaki-tamago-aamiaislautasella.md") {
+    const live = read(row.source_path).replaceAll("\r\n", "\n");
+    const historical = recipeTextForApprovedSnapshot(row.source_path, live);
+    assert.notEqual(live, historical);
+    assert.equal(row.source_content_hash, createHash("sha256").update(live).digest("hex"));
+    return {...row, ingredients: parseMarkdown(historical)!.data.ingredients, notes: "", source_content_hash: createHash("sha256").update(historical).digest("hex")};
+   }
    if (row.source_path === molletesSourcePath) {
     const live = read(row.source_path).replaceAll("\r\n", "\n");
     const old = molletesHistoricalText(row.source_path, live);

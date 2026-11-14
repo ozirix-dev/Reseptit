@@ -1,37 +1,35 @@
 ---
-title: "Dashimaki tamago aamiaislautasella"
+title: "Dashimaki tamago riisin kanssa"
 recipe_id: japanilainen-dashimaki-tamago-aamiaislautasella
 url_slug: japanilainen-dashimaki-tamago-aamiaislautasella
 category: aamupala
 language: fi
 status: published
 main_ingredient:
-  - "kananmuna"
-  - "dashi"
-  - "soijakastike"
+  - kananmuna
+  - dashi
+  - soijakastike
 cooking_method:
-  - "paistaminen"
+  - paistaminen
+  - keittäminen
 ingredients:
   - amount: 2
-    unit: "kpl"
-    item: "kananmuna"
-  - amount: 200
-    unit: "ml"
-    item: "dashi"
-  - amount: 1
-    unit: "rkl"
-    item: "soijakastike"
+    unit: kpl
+    item: "keskikokoinen kananmuna"
+  - amount: 30
+    unit: ml
+    item: "valmis dashiliemi"
+  - amount: 5
+    unit: ml
+    item: "vaalea japanilainen soijakastike"
   - amount: 100
-    unit: "g"
-    item: "riisi"
-  - amount: 1
-    unit: "rkl"
-    item: "neutraalia paistoöljyä"
-  - amount: null
-    unit: ""
-    item: "suolaa maun mukaan"
+    unit: g
+    item: "kuiva valkoinen lyhytjyväinen riisi"
+  - amount: 5
+    unit: ml
+    item: "rypsiöljy"
 servings: 2
-time_total_min: 25
+time_total_min: 30
 difficulty: Helppo
 tags:
   - "aamupala"
@@ -39,24 +37,24 @@ tags:
   - "kananmuna"
 image:
   src: aamupalat/japanilainen-dashimaki-tamago-aamiaislautasella.webp
-  alt: "Dashimaki tamago aamiaislautasella tarjoiltuna aamiaisella"
+  alt: "Viipaloitua dashimaki-munakasta ja kulhollinen riisiä"
   width: 1536
   height: 1024
 ---
 
-# Dashimaki tamago aamiaislautasella
+# Dashimaki tamago riisin kanssa
 
 ## Kuvaus
 
-Tässä kotikeittiöön sovitetussa ohjeessa valmistetaan dashimaki tamago aamiaislautasella. Mausteisuutta ja lisukkeita voi säätää oman maun mukaan.
-
-## Ainekset
-
-Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
+Japanilainen kerrosmunakas maustetaan dashilla ja soijalla ja tarjoillaan lämpimän riisin kanssa.
 
 ## Valmistus
 
-1. Vatkaa kananmunat dashi-liemen kanssa. Mausta soijakastikkeella.
-2. Kuumenna pieni paistinpannu miedolla lämmöllä ja sipaise siihen öljyä. Kaada pannulle ohut kerros munaseosta.
-3. Kun pohja alkaa hyytyä, rullaa munakas pannun reunaan. Lisää pannulle uusi kerros seosta ja jatka rullaamista kerros kerrallaan.
-4. Paista maustettu munaseos ohuina kerroksina ja rullaa; tarjoa riisin kanssa.
+1. Huuhtele riisi ja keitä se pakkauksen ohjeen mukaan. Valmista munakas sillä välin.
+2. Sekoita munat, valmis dashi ja soijakastike haarukalla tasaiseksi. Kuumenna pieni tarttumaton pannu miedolla keskilämmöllä ja sipaise sille ohut kerros öljyä.
+3. Kaada noin kolmasosa munaseoksesta pannulle. Kun pohja on hyytynyt, kääri levy lastalla pannun reunaan. Öljyä vapaa pinta kevyesti ja kaada sille seuraava ohut kerros. Nosta rullan reunaa, jotta seos valuu sen alle. Anna kerroksen hyytyä ja rullaa se ensimmäisen ympärille. Toista jäljellä olevalla seoksella.
+4. Kypsennä rulla miedolla lämmöllä. Leikkaa paksuimmasta kohdasta ja varmista, että sisus on täysin hyytynyt. Viipaloi, jaa kahdelle ja tarjoa lämpimän riisin kanssa.
+
+## Muistiinpanot
+
+Sisältää kananmunaa ja soijaa. Dashi voi sisältää kalaa ja soijakastike vehnää. Tarkista pakkaukset. Kuvan muut lisukkeet ovat tarjoiluehdotus.
