@@ -425,7 +425,7 @@ export function assertRecipeBaseline(root: string, baseline: string, ...protecte
     }
     if (status === "A" && /^docs\/nutrition\/calculations\/[a-z0-9-]+\.json$/.test(file)) {
       const id = path.basename(file, ".json");
-      if (id === "rahka-marjakerroskulho" && sourceReleaseGateDecision(id, undefined, root).authorized) continue;
+      if (["rahka-marjakerroskulho", "munakoiso-kesakurpitsalasagne"].includes(id) && sourceReleaseGateDecision(id, undefined, root).authorized) continue;
       if (checkedPostBaselineRelease(root, baseline, id)) continue;
     }
     if (status === "A" && file.startsWith("kaannokset/")) {

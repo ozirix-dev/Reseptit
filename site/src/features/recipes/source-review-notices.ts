@@ -33,11 +33,6 @@ export const sourceReviewNotices: Readonly<Record<string, SourceReviewNotice>> =
     details: "Yksi ruokabanaani, yksi avokado ja yksi lime eivät riitä ravintoarvojen laskentaan ilman kuorittuja syötäviä grammapainoja ja limemehun määrää. Kypsennä ruokabanaani kunnolla; 1 rkl paistoöljyn syöty osuus täytyy arvioida ja kaksi munaa punnita ilman kuorta.",
     allergens: "Sisältää kananmunaa. Tarkista muiden käytettyjen tuotteiden allergeenit.",
   },
-  "munakoiso-kesakurpitsalasagne": {
-    heading: "Lasagnen valmistetuotteiden ravintoarvot vielä avoimia",
-    details: "Tässä FI-reseptissä on 200 g kuivia lasagnelevyjä, ei erillisessä kokeilussa mainittua 180 g vaihtoehtoa. Lisäksi 800 g tomaattikastiketta, 250 g mozzarellaa, 80 g parmesaania tai muuta kovaa juustoa sekä 60 g oliiviöljyä tarvitsevat lopulliset tuote- ja ravintoarvovastaavuudet. Nykyisen version neljä makroa ja GK puuttuvat.",
-    allergens: "Sisältää tavallisista lasagnelevyistä vehnää ja juustoista maitoa. Tarkista mahdolliset tuotekohtaiset lisäallergeenit.",
-  },
   "vietnamilainen-banh-cuon-sienilla": {
     heading: "Valmistusajan ja täytteen tarkistus kesken",
     details: "Sienistä huolimatta täytteessä on 150 g raakaa porsaan jauhelihaa: tämä ei ole kasvisruoka. Kypsennä jauheliha kauttaaltaan täysin kypsäksi. Riisilevyjen höyryttämisen ja irrottamisen takia ilmoitettua 25 minuutin kokonaisaikaa ei ole varmistettu; varaa enemmän aikaa.",

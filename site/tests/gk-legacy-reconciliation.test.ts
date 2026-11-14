@@ -260,7 +260,9 @@ test('Live original results preserve frozen history plus the exact reviewed tran
     if (sourceReleaseGateDecision(row.recipe_id).reason === "REVIEWED_SOURCE_AND_EXACT_NUTRITION_AND_GK_BINDINGS") {
       const baseline = row.recipe_id === "japanilainen-hojicha-jogurtti-persimonilla"
         ? json("site/tests/fixtures/f25-hojicha-previous-nutrition-audit.json")
-        : json("docs/nutrition/audit.json").inventory.find((entry: {recipe_id:string}) => entry.recipe_id === row.recipe_id);
+        : row.recipe_id === "munakoiso-kesakurpitsalasagne"
+          ? json("site/tests/fixtures/f25-lasagne-previous-nutrition-audit.json")
+          : json("docs/nutrition/audit.json").inventory.find((entry: {recipe_id:string}) => entry.recipe_id === row.recipe_id);
       assert.equal(baseline?.source_content_hash, historicalHash, "sealed historical nutrition inventory");
       assert.equal(row.status, "ESTIMATE WITH EVIDENCE");
       return baseline;

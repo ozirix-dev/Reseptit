@@ -93,12 +93,12 @@ test("recipe index is prerendered and links only published languages", async () 
   assert.match(preloads[1][0], /media="\(min-width: 1100px\)"/);
 });
 
-test("vegetable lasagne publishes its supplied image and notes without unsupported nutrition or GK", async () => {
+test("vegetable lasagne publishes its supplied image and reviewed macros without unsupported GK", async () => {
   const recipe = siteContent.recipes.find((recipe) => recipe.recipeId === "munakoiso-kesakurpitsalasagne" && recipe.locale === "fi");
   assert.ok(recipe);
   assert.equal(recipe.title, "Munakoiso-kesäkurpitsalasagne");
   assert.equal(recipe.timeTotalMin, 110);
-  assert.deepEqual(recipe.nutrition, { carbsNetG: null, carbsTotalG: null, proteinG: null, fatG: null });
+  assert.deepEqual(recipe.nutrition, { carbsNetG: 48.32, carbsTotalG: 56.24, proteinG: 27.24, fatG: 35.18 });
   const lasagneResults = glycemicLoadPilotResults.filter((result) => result.recipeId === recipe.recipeId);
   assert.equal(lasagneResults.length, 1);
   assert.equal(lasagneResults[0]?.status, "INSUFFICIENT SOURCE DATA");
@@ -108,7 +108,7 @@ test("vegetable lasagne publishes its supplied image and notes without unsupport
   assert.equal(recipe.image.width, 1448);
   assert.equal(recipe.image.height, 1086);
   const html = await readFile(path.join(dist, recipe.routePath.slice(1), "index.html"), "utf8");
-  for (const note of ["havainnekuva", "ei ole koekeitetty", "Allergeenit", "Hans Välimäki", "kaupalliseksi yhteistyöksi", "ei ole hyväksyttyä GK-arvoa"]) {
+  for (const note of ["havainnekuva", "ei ole koekeitetty", "Allergeenit", "kaupalliseksi yhteistyöksi", "ei ole hyväksyttyä GK-arvoa"]) {
     assert.ok(html.includes(note), `lasagne: ${note} is visible`);
   }
   assert.ok(!html.includes('data-gk-status="CALCULATED"'), "an unsupported numeric GK result is not displayed");
@@ -159,7 +159,7 @@ test("GK values link to centralized recipe details on every published translatio
   ]);
   const visibleReviewed = audit.results.filter(result => !isPublicRecipeQuarantined(result.recipeId)).map(result =>
     historicalOnly.has(result.recipeId) ? { ...result, status: "INSUFFICIENT SOURCE DATA" } : result);
-  for (const id of ["lahi-ita-zaatar-munat", "pohjoisafrikkalainen-baghrir", "rahka-marjakerroskulho", "japanilainen-hojicha-jogurtti-persimonilla", "vietnamilainen-papaija-kookospuuro", "vietnamilainen-banh-xeo-aamiaisletut"]) {
+  for (const id of ["lahi-ita-zaatar-munat", "pohjoisafrikkalainen-baghrir", "rahka-marjakerroskulho", "japanilainen-hojicha-jogurtti-persimonilla", "vietnamilainen-papaija-kookospuuro", "vietnamilainen-banh-xeo-aamiaisletut", "munakoiso-kesakurpitsalasagne"]) {
     const current = glycemicLoadPilotResults.find(result => result.recipeId === id);
     assert.equal(current?.glycemicLoadPerServing, null, id + ": old GK is never the current estimate");
     const locales = siteContent.recipes.filter(recipe => recipe.recipeId === id);
