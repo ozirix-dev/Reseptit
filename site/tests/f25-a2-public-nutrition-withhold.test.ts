@@ -1,3 +1,4 @@
+import { sourceReleaseGateDecision } from "../scripts/f25-source-release-gate";
 import { readF25GateAtCreation, readF25HistoricalBlob } from "../scripts/f25-history";
 import assert from "node:assert/strict";
 import {test} from "node:test";
@@ -26,18 +27,19 @@ const fixture=(recipeId:string,locale:"fi"|"en") => ({
   nutrition:{carbsTotalG:80,carbsNetG:77,proteinG:12,fatG:8}
 }) as unknown as Parameters<typeof recipeJsonLd>[0];
 
-test("all four F25 A2 unapproved FI sources have source-locked macro and GK withholding",()=>{
+test("F25 A2 preserves historical holds and exposes current nutrition only after the source gate",()=>{
   assert.equal(new Set(f25UnverifiedNutritionSourceIds).size,f25UnverifiedNutritionSourceIds.length);
-  assert.equal(f25UnverifiedNutritionSourceIds.length,8);
+  assert.equal(f25UnverifiedNutritionSourceIds.length,6);
   for(const id of a2){
     const record=gate.sources.find(x=>x.recipe_id===id);
     assert.ok(record,id);
     assert.equal(record.approval,null);
     const bytes=readF25HistoricalBlob(root,record.baseline_git_blob_sha);
     assert.equal(sha(bytes),record.baseline_git_blob_sha,id+" source changed");
-    assert.equal(withholdF25Nutrition(id,"fi"),true);
+    const authorized=sourceReleaseGateDecision(id).authorized;
+    assert.equal(withholdF25Nutrition(id,"fi"),!authorized);
     const json=recipeJsonLd(fixture(id,"fi"));
-    assert.ok(!Object.hasOwn(json,"nutrition"),id+" must not leak Schema.org macros");
+    assert.equal(Object.hasOwn(json,"nutrition"),authorized,id);
   }
 });
 
@@ -58,7 +60,6 @@ test("FI GK filter does not assign a held macro source to misleading low/medium/
     "vietnamilainen-papaija-kookospuuro":"high",
     "vietnamilainen-banh-cuon-sienilla":"high",
     "vietnamilainen-banh-xeo-aamiaisletut":"medium",
-    "pohjoisafrikkalainen-baghrir":"high",
     "gluteeniton-uunipannukakku":"low",
   };
   const recipes=Object.keys(sample).map(recipeId=>({recipeId,title:recipeId,description:"",tags:[],ingredients:[]})) as unknown as RecipeSummary[];
@@ -67,7 +68,7 @@ test("FI GK filter does not assign a held macro source to misleading low/medium/
   assert.deepEqual(filterRecipes(recipes,high,"fi",sample).map(x=>x.recipeId),[]);
   assert.deepEqual(filterRecipes(recipes,low,"fi",sample).map(x=>x.recipeId),["gluteeniton-uunipannukakku"]);
   assert.deepEqual(filterRecipes(recipes,high,"en",sample).map(x=>x.recipeId),[
-    "vietnamilainen-papaija-kookospuuro","vietnamilainen-banh-cuon-sienilla","pohjoisafrikkalainen-baghrir"
+    "vietnamilainen-papaija-kookospuuro","vietnamilainen-banh-cuon-sienilla"
   ]);
   assert.equal(sample["vietnamilainen-papaija-kookospuuro"],"high","historical data stays byte-identical");
 });

@@ -141,7 +141,6 @@ test("F25 A2 historical FI nutrition is withheld from assistant results and GK s
     "vietnamilainen-papaija-kookospuuro",
     "vietnamilainen-banh-cuon-sienilla",
     "vietnamilainen-banh-xeo-aamiaisletut",
-    "pohjoisafrikkalainen-baghrir",
   ];
   for(const id of blocked){
     const row=findAssistantRecipe(catalog,id);

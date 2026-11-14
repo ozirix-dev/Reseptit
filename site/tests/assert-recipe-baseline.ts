@@ -1,3 +1,4 @@
+import { sourceReleaseGateDecision } from "../scripts/f25-source-release-gate";
 import { molletesHistoricalText } from "../scripts/molletes-reviewed-source";
 import { koreanRiceBowlHistoricalText } from "../scripts/korean-rice-bowls-reviewed-source";
 import { originalForCoconutBananaHistory } from "./coconut-banana-history";
@@ -247,6 +248,23 @@ function checkedPostBaselineRelease(root: string, baseline: string, recipeId: st
   return true;
 }
 
+// Exact old calculation blobs stay in Git. Admitting the independently
+// approved current package here does not alter the historical GK calculation.
+const f25HistoricalNutrition = new Map([
+  ["pohjoisafrikkalainen-baghrir", "6044f97b27203168c278fd16bbabfa9abcac426d"],
+  ["lahi-ita-zaatar-munat", "1bee339db200140d66db8dbe49bd3e4b4adfdc72"],
+]);
+
+export function isReviewedF25NutritionTransition(root: string, baseline: string, file: string): boolean {
+  if (!/^docs\/nutrition\/calculations\/[a-z0-9-]+\.json$/.test(file)) return false;
+  const id = path.basename(file, ".json");
+  const old = f25HistoricalNutrition.get(id);
+  if (!old || sourceReleaseGateDecision(id, undefined, root).reason !== "REVIEWED_SOURCE_AND_EXACT_NUTRITION_AND_GK_BINDINGS") return false;
+  const baselineBlob = execFileSync("git", ["rev-parse", baseline + ":" + file], {cwd:root, encoding:"utf8"}).trim();
+  assert.equal(baselineBlob, old, file + ": frozen nutrition blob");
+  return true;
+}
+
 export function assertRecipeBaseline(root: string, baseline: string, ...protectedPaths: string[]) {
   const changes = execFileSync(
     "git",
@@ -256,6 +274,7 @@ export function assertRecipeBaseline(root: string, baseline: string, ...protecte
 
   for (const change of changes) {
     const [status, file] = change.split("\t");
+    if (status === "M" && isReviewedF25NutritionTransition(root, baseline, file)) continue;
     if (status === "A" && approvedKarnivoreFi3Files.has(file)) {
       const expectedBlob = approvedKarnivoreFi3Files.get(file)!;
       const actualBlob = execFileSync("git", ["hash-object", file], { cwd: root, encoding: "utf8" }).trim();

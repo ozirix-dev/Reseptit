@@ -18,13 +18,33 @@ const englishPublicationSources = new Set([
   "reseptit/jalkiruoat/meheva-suklaakakku.md",
 ]);
 
-// These entries contain reviewed editorial corrections only. Reconstruct the sealed
+// Reconstruct the sealed versions after reviewed source and editorial changes. The sealed
 // versions for GK verification; the exact current hash is required before any
 // inverse edit. Other changes must go through the normal snapshot review.
 const editorialSnapshots: Readonly<Record<string, {
   currentSha256: string;
   inverseEdits: ReadonlyArray<readonly [start: number, count: number, historical: string]>;
 }>> = {
+  "reseptit/aamupalat/pohjoisafrikkalainen-baghrir.md": {
+    "currentSha256": "e8608b647a266f666074be274774143c284c7b4e8667bfe095032fe6926e2205",
+    "inverseEdits": [
+      [
+        0,
+        74,
+        "---\ntitle: \"Marokkolainen baghrir hunajavoilla\"\nrecipe_id: pohjoisafrikkalainen-baghrir\nurl_slug: pohjoisafrikkalainen-baghrir\ncategory: aamupala\nlanguage: fi\nstatus: published\nmain_ingredient:\n  - \"mannasuurimo\"\n  - \"vehnäjauho\"\n  - \"hiiva\"\ncooking_method:\n  - \"paistaminen\"\ningredients:\n  - amount: 100\n    unit: \"g\"\n    item: \"mannasuurimo\"\n  - amount: 100\n    unit: \"g\"\n    item: \"vehnäjauho\"\n  - amount: 5\n    unit: \"g\"\n    item: \"kuivahiivaa\"\n  - amount: 1\n    unit: \"rkl\"\n    item: \"hunaja\"\n  - amount: 1\n    unit: \"rkl\"\n    item: \"neutraalia paistoöljyä\"\n  - amount: null\n    unit: \"\"\n    item: \"suolaa maun mukaan\"\n  - amount: 150\n    unit: ml\n    item: lämmintä vettä\nservings: 2\ntime_total_min: 25\ndifficulty: Helppo\ntags:\n  - \"aamupala\"\n  - \"pohjoisafrikkalainen\"\n  - \"aamiaisruoka\"\nimage:\n  src: aamupalat/pohjoisafrikkalainen-baghrir.webp\n  alt: \"Marokkolainen baghrir hunajavoilla tarjoiltuna aamiaisella\"\n  width: 1536\n  height: 1024\ncarbs_net_per_serving_g: 76.19\ncarbs_total_per_serving_g: 80.36\nprotein_per_serving_g: 12.49\nfat_per_serving_g: 8.2\n\n---\n\n# Marokkolainen baghrir hunajavoilla\n\n## Kuvaus\n\nTässä kotikeittiöön sovitetussa ohjeessa valmistetaan marokkolainen baghrir hunajavoilla. Mausteisuutta ja lisukkeita voi säätää oman maun mukaan.\n\n## Ainekset\n\nAinekset ovat annoslaskurin käytössä rakenteisista metatiedoista.\n\n## Valmistus\n\n1. Sekoita jauhot tai viljat ja muut kuivat ainekset kulhossa. Lisää neste vähitellen ja vatkaa tasaiseksi taikinaksi.\n2. Anna taikinan levätä 10 minuuttia. Jos käytät kokonaisia palkokasveja tai viljoja taikinapohjana, niiden tulee olla liotettuja ja hienonnettuja.\n3. Kuumenna öljytty pannu keskilämmölle. Paista taikina ohuina annoksina; käännä, kun reunat kuivuvat ja pinta alkaa asettua.\n4. Paista taikina toiselta puolelta, kunnes pintaan muodostuu reikiä, ja tarjoa hunajavoilla.\n"
+      ]
+    ]
+  },
+  "reseptit/aamupalat/lahi-ita-zaatar-munat.md": {
+    "currentSha256": "6ac1341514c02869749ec7f86c4cc8a046331fb19050bb31a7154bed6267d370",
+    "inverseEdits": [
+      [
+        0,
+        76,
+        "---\ntitle: \"Za’atar-munat ja paahdettu pita\"\nrecipe_id: lahi-ita-zaatar-munat\nurl_slug: lahi-ita-zaatar-munat\ncategory: aamupala\nlanguage: fi\nstatus: published\nmain_ingredient:\n  - \"kananmuna\"\n  - \"pita\"\n  - \"zaatar\"\ncooking_method:\n  - \"paistaminen\"\ningredients:\n  - amount: 2\n    unit: \"kpl\"\n    item: \"kananmuna\"\n  - amount: 100\n    unit: \"g\"\n    item: \"pita\"\n  - amount: 1\n    unit: \"tl\"\n    item: \"zaatar\"\n  - amount: 100\n    unit: \"g\"\n    item: \"jogurtti\"\n  - amount: 1\n    unit: \"rkl\"\n    item: \"neutraalia paistoöljyä\"\n  - amount: null\n    unit: \"\"\n    item: \"suolaa maun mukaan\"\nservings: 2\ntime_total_min: 25\ndifficulty: Helppo\ntags:\n  - \"aamupala\"\n  - \"lähi-itä\"\n  - \"aamiaisruoka\"\nimage:\n  src: aamupalat/lahi-ita-zaatar-munat.webp\n  alt: \"Za’atar-munat ja paahdettu pita tarjoiltuna aamiaisella\"\n  width: 1536\n  height: 1024\ncarbs_net_per_serving_g: 24.91\ncarbs_total_per_serving_g: 26.07\nprotein_per_serving_g: 12.18\nfat_per_serving_g: 14.26\n\n---\n\n# Za’atar-munat ja paahdettu pita\n\n## Kuvaus\n\nTässä kotikeittiöön sovitetussa ohjeessa valmistetaan za’atar-munat ja paahdettu pita. Mausteisuutta ja lisukkeita voi säätää oman maun mukaan.\n\n## Ainekset\n\nAinekset ovat annoslaskurin käytössä rakenteisista metatiedoista.\n\n## Valmistus\n\n1. Valmistele ainekset: paloittele kasvikset ja kypsennä pavut tai liha tarvittaessa erikseen. Kuumenna öljy pannulla.\n2. Lisää pannulle pisimpään kypsyvät ainekset ja kypsennä pehmeiksi. Lisää mausteet ja tilkka vettä, jos pannu uhkaa kuivua.\n3. Lisää lopuksi nopeasti kypsyvät ainekset, kuten muna tai lehtivihannekset. Kypsennä juuri valmiiksi ja maista suola.\n4. Paista kananmunat ja mausta za’atarilla; tarjoa jogurtin ja lämpimän pitan kanssa.\n"
+      ]
+    ]
+  },
   "reseptit/aamupalat/intialainen-ven-pongal.md": {
     currentSha256: "77eea5fe9f4183fd5fda93b0a0c5e5fd346535d0cffbd0399a84d8a2887d2bd8",
     inverseEdits: [
@@ -892,6 +912,8 @@ export function recipeTextForApprovedSnapshot(file: string, text: string): strin
 
 // These corrected FI versions retain their old source only for GK verification.
 export const reviewedRecipesWithHistoricalGk = new Set([
+  "reseptit/aamupalat/pohjoisafrikkalainen-baghrir.md",
+  "reseptit/aamupalat/lahi-ita-zaatar-munat.md",
   "reseptit/aamupalat/intialainen-masala-dosa.md",
   "reseptit/aamupalat/indonesialainen-tempeh-munakulho.md",
   "reseptit/aamupalat/japanilainen-okayu-umeboshipluumulla.md",

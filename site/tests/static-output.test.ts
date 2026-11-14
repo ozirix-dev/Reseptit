@@ -154,8 +154,22 @@ test("GK values link to centralized recipe details on every published translatio
     "new public FI3 GK-HOLD cases are tracked separately, never shown as approved GK");
   const historicalMolletes = audit.results.find(result => result.recipeId === "meksikolainen-molletes-pico-de-gallolla");
   assert.equal(historicalMolletes?.glycemicLoadPerServing, 20.01, "historical molletes audit remains exact");
+  const historicalOnly = new Set([
+    historicalMolletes?.recipeId, "lahi-ita-zaatar-munat", "pohjoisafrikkalainen-baghrir",
+  ]);
   const visibleReviewed = audit.results.filter(result => !isPublicRecipeQuarantined(result.recipeId)).map(result =>
-    result === historicalMolletes ? { ...result, status: "INSUFFICIENT SOURCE DATA" } : result);
+    historicalOnly.has(result.recipeId) ? { ...result, status: "INSUFFICIENT SOURCE DATA" } : result);
+  for (const id of ["lahi-ita-zaatar-munat", "pohjoisafrikkalainen-baghrir"]) {
+    const current = glycemicLoadPilotResults.find(result => result.recipeId === id);
+    assert.equal(current?.glycemicLoadPerServing, null, id + ": old GK is never the current estimate");
+    const locales = siteContent.recipes.filter(recipe => recipe.recipeId === id);
+    assert.equal(locales.length, 4, id);
+    for (const recipe of locales) {
+      const html = await readFile(path.join(dist, recipe.routePath.slice(1), "index.html"), "utf8");
+      assert.doesNotMatch(html, /data-gk-status="CALCULATED"/, recipe.routePath);
+      assert.match(html, /"@type":"NutritionInformation"/, recipe.routePath);
+    }
+  }
   const molletes = glycemicLoadPilotResults.find(result => result.recipeId === historicalMolletes?.recipeId);
   assert.equal(molletes?.glycemicLoadPerServing, null, "current molletes cannot display its historical estimate");
   assert.equal(glycemicLoadPilotResults.filter(result => result.status === "CALCULATED").length,

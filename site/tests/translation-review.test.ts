@@ -177,7 +177,7 @@ test("translation audit hashes the SHA-pinned public FI display for breakfast so
   assert.equal(baghrir.data.title,"Marokkolainen baghrir hunajalla");
   assert.match(baghrir.content,/Marokkolainen baghrir hunajalla/);
   assert.doesNotMatch(baghrir.content,/hunajavoilla/);
-  assert.equal(baghrir.data.image?.alt,"Marokkolainen baghrir hunajalla tarjoiltuna aamiaisella");
+  assert.equal(baghrir.data.image?.alt,"Reikäisiä mannalettuja lautasella ja hunajaa.");
   const pistachio = sources.get("lahi-ita-pistaasijogurtti");
   assert.ok(pistachio);
   assert.deepEqual(pistachio.data.cooking_method,["kylmävalmistus"]);
@@ -198,10 +198,10 @@ test("translation audit hashes the SHA-pinned public FI display for breakfast so
   const parsed=parseMarkdown(raw);
   assert.ok(parsed);
   const rawSource={data:recipeFrontmatterSchema.parse(parsed.data),content:parsed.content};
-  assert.match(rawSource.content,/hunajavoilla/);
-  assert.notEqual(semanticHash(rawSource),semanticHash(baghrir));
+  assert.doesNotMatch(rawSource.content,/hunajavoilla/);
+  assert.equal(semanticHash(rawSource),semanticHash(baghrir));
   assert.equal(baghrir.data.ingredients.length,7);
-  assert.equal(baghrir.data.carbs_net_per_serving_g,76.19);
+  assert.equal(baghrir.data.carbs_net_per_serving_g,74.61);
 });
 
 test("Thai onion bulb counter is a valid FI kpl translation in besan-chilla", async () => {

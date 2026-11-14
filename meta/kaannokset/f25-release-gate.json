@@ -29,7 +29,21 @@
       "source_risk": "HOLD-OMISSION-BOUND",
       "nutrition_input_at_baseline": "present-unapproved",
       "public_quarantine_at_baseline": false,
-      "approval": null
+      "approval": {
+        "status": "RELEASE_AUTHORIZED",
+        "reviewedAt": "2026-11-14",
+        "reviewReference": "https://github.com/ozirix-dev/Reseptit/issues/447",
+        "reviewerKind": "AI_EDITORIAL_WITH_INDEPENDENT_EVIDENCE",
+        "sourceSha256": "6ac1341514c02869749ec7f86c4cc8a046331fb19050bb31a7154bed6267d370",
+        "nutritionEvidenceSha256": "df5f43a7a104db70528eced3140b78cf7301dfdf7b81936354b4bd81c008aaae",
+        "gkRecipeBindingSha256": "4a89669cd0917f7fe536f62c88a468e7ab7ac759eca8c23d96265309fb6b65e2",
+        "gkCalculationInputSha256": "d34a68247fbcb7fbdff67f6f3c8effe2a3fb50892bd08b5c046c1d9dccacfdc2",
+        "gkCalculationEvidenceSha256": "823854c5ea1498d586eea96626cea8217d05b371b1e34b952696c1444c31b423",
+        "gkDisposition": "GK_UNAVAILABLE_EXPLICITLY_REVIEWED",
+        "cookingAndAllergensReviewed": true,
+        "ingredientUnitConversionsReviewed": true,
+        "translationMeaningReviewRequired": true
+      }
     },
     {
       "recipe_id": "japanilainen-hojicha-jogurtti-persimonilla",
@@ -74,7 +88,21 @@
       "source_risk": "HOLD-BATTER-AND-NAME",
       "nutrition_input_at_baseline": "present-unapproved",
       "public_quarantine_at_baseline": false,
-      "approval": null
+      "approval": {
+        "status": "RELEASE_AUTHORIZED",
+        "reviewedAt": "2026-11-14",
+        "reviewReference": "https://github.com/ozirix-dev/Reseptit/issues/447",
+        "reviewerKind": "AI_EDITORIAL_WITH_INDEPENDENT_EVIDENCE",
+        "sourceSha256": "e8608b647a266f666074be274774143c284c7b4e8667bfe095032fe6926e2205",
+        "nutritionEvidenceSha256": "c6a1ca258f0a4145490bef4625011a774a8bc6c01efff72de60c7c37247d5e1c",
+        "gkRecipeBindingSha256": "593a2d3ac2154d7ddb8990c38028285e887ad2cc6ede86d7291f8843a1f649bc",
+        "gkCalculationInputSha256": "f28783cbb610875acfb0a366a7ee03d2abeb9cc9b8d49cb322ead47b3f38fe3f",
+        "gkCalculationEvidenceSha256": "ce091a41562acaeda13574cc5d96e78229c34eaa8601466538b47e956920c609",
+        "gkDisposition": "GK_UNAVAILABLE_EXPLICITLY_REVIEWED",
+        "cookingAndAllergensReviewed": true,
+        "ingredientUnitConversionsReviewed": true,
+        "translationMeaningReviewRequired": true
+      }
     },
     {
       "recipe_id": "meksikolainen-chilaquiles-verdes",

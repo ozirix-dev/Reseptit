@@ -62,8 +62,8 @@ test("variant changes invalidate route JSON hashes without moving recipe routes"
   assert.equal(updated.recipes[0].routePath, original.recipes[0].routePath);
 });
 
-test("F25 eight unverified nutrition sources never emit stale public JSON-LD nutrition", () => {
-  assert.equal(f25UnverifiedNutritionSourceIds.length, 8);
+test("F25 unverified nutrition sources never emit stale public JSON-LD nutrition", () => {
+  assert.equal(f25UnverifiedNutritionSourceIds.length, 6);
   const blocked = new Set(f25UnverifiedNutritionSourceIds);
   for(const id of blocked) {
     assert.equal(withholdF25Nutrition(id,"fi"),true);

@@ -1,3 +1,4 @@
+import { sourceReleaseGateDecision } from "../scripts/f25-source-release-gate";
 import { molletesHistoricalText, molletesSourcePath, molletesRecipeId } from "../scripts/molletes-reviewed-source";
 import { koreanRiceBowlHistoricalText } from "../scripts/korean-rice-bowls-reviewed-source";
 import { originalForCoconutBananaHistory } from "./coconut-banana-history";
@@ -255,7 +256,14 @@ test('Live original results preserve frozen history plus the exact reviewed tran
     const historical = recipeTextForApprovedSnapshot(row.source_path, live);
     assert.notEqual(live, historical);
     assert.equal(row.source_content_hash, createHash("sha256").update(live).digest("hex"));
-    return {...row, ingredients: parseMarkdown(historical)!.data.ingredients, notes: "", source_content_hash: createHash("sha256").update(historical).digest("hex")};
+    const historicalHash = createHash("sha256").update(historical).digest("hex");
+    if (sourceReleaseGateDecision(row.recipe_id).reason === "REVIEWED_SOURCE_AND_EXACT_NUTRITION_AND_GK_BINDINGS") {
+      const baseline = json("docs/nutrition/audit.json").inventory.find((entry: {recipe_id:string}) => entry.recipe_id === row.recipe_id);
+      assert.equal(baseline?.source_content_hash, historicalHash, "sealed historical nutrition inventory");
+      assert.equal(row.status, "ESTIMATE WITH EVIDENCE");
+      return baseline;
+    }
+    return {...row, ingredients: parseMarkdown(historical)!.data.ingredients, notes: "", source_content_hash: historicalHash};
    }
    if (row.source_path === molletesSourcePath) {
     const live = read(row.source_path).replaceAll("\r\n", "\n");
