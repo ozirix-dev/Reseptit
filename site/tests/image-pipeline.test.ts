@@ -40,9 +40,11 @@ async function copyBuildCheckout(root: string) {
   // Keep historical Git blobs available to the build without sharing a checkout or index.
   git(repoDir, "clone", "--quiet", "--shared", "--no-checkout", "--", repoDir, checkout);
   git(checkout, "checkout", "--quiet", "--detach", head);
-  // Include tracked edits so a local run exercises the same source files as its caller.
-  const changed = git(repoDir, "diff", "--name-only", "-z", "--no-renames", "HEAD").split("\0").filter(Boolean);
-  for (const file of changed) {
+  // Exercise the caller's tracked edits and new build inputs, including unstaged images.
+  const tracked = git(repoDir, "diff", "--name-only", "-z", "--no-renames", "HEAD");
+  const untracked = git(repoDir, "ls-files", "--others", "--exclude-standard", "-z", "--",
+    "site", "reseptit", "kaannokset", "kuvat", "docs", "meta", "tuonti", "tools");
+  for (const file of new Set((tracked + untracked).split("\0").filter(Boolean))) {
     const target = path.join(checkout, file);
     try {
       await mkdir(path.dirname(target), { recursive: true });
