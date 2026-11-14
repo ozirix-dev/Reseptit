@@ -1,5 +1,5 @@
 ---
-title: "Eteläintialainen suolainen pongal"
+title: "Ven pongal kokonaisista mungpavuista"
 recipe_id: intialainen-ven-pongal
 url_slug: intialainen-ven-pongal
 category: aamupala
@@ -34,7 +34,7 @@ ingredients:
     unit: ""
     item: suolaa maun mukaan
 servings: 2
-time_total_min: 25
+time_total_min: 60
 difficulty: Helppo
 tags:
   - "aamupala"
@@ -42,7 +42,7 @@ tags:
   - "puuro"
 image:
   src: aamupalat/intialainen-ven-pongal.webp
-  alt: "Eteläintialainen suolainen pongal tarjoiltuna aamiaisella"
+  alt: "Suolaista riisi-mungpapupuuroa ja cashewpähkinöitä."
   width: 1536
   height: 1024
 carbs_net_per_serving_g: 71.1
@@ -51,19 +51,22 @@ protein_per_serving_g: 23.7
 fat_per_serving_g: 13.9
 ---
 
-# Eteläintialainen suolainen pongal
+# Ven pongal kokonaisista mungpavuista
 
 ## Kuvaus
 
-Tässä kotikeittiöön sovitetussa ohjeessa valmistetaan eteläintialainen suolainen pongal. Mausteisuutta ja lisukkeita voi säätää oman maun mukaan.
+Eteläintialaisen ven pongalin kotiversiossa riisi ja kokonaiset mungpavut keitetään pehmeäksi puuroksi. Gheessä paahdetut cashewpähkinät lisätään lopuksi.
 
 ## Ainekset
 
-Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
+Käytä kuivia kokonaisia vihreitä mungpapuja, kuivaa valkoista pitkäjyväistä riisiä, raakoja suolaamattomia cashewpähkinöitä ja jauhettua mustapippuria.
 
 ## Valmistus
 
-1. Mittaa riisi kattilaan ja lisää reseptin neste. Kuumenna kiehuvaksi samalla pohjaa myöten sekoittaen.
-2. Hauduta miedolla lämmöllä välillä sekoittaen, kunnes puuro on pehmeää ja sakeaa. Lisää nestettä vähän kerrallaan, jos rakenne tiivistyy liikaa.
-3. Kypsennä liha tai muut täytteet kypsiksi ja lisää puuroon. Tarkista suola ja mausteet.
-4. Huuhtele riisi ja mungpavut. Keitä niitä vedessä pehmeiksi ja mausta mustapippurilla. Paahda cashewpähkinät gheessä ja sekoita ne puuron joukkoon ennen tarjoamista.
+1. Huuhtele mungpavut ja riisi erikseen. Pane ne kattilaan ja lisää 700 ml vettä.
+2. Kiehauta ja hauduta kannen alla miedolla lämmöllä 40–50 minuuttia tai kunnes sekä pavut että riisi ovat täysin pehmeitä. Sekoita välillä pohjaa myöten. Jos puuro uhkaa kuivua ennen papujen kypsymistä, lisää hieman kuumaa vettä. Älä valuta keitinvettä.
+3. Kuumenna 1 rkl gheetä pienellä pannulla. Paahda cashewpähkinät gheessä kullanruskeiksi ja lisää mustapippuri. Sekoita pähkinät, pippuri ja ghee puuroon. Mausta halutessasi suolalla ja jaa kahteen annokseen.
+
+## Muistiinpanot
+
+Sisältää cashewpähkinää ja maitoa (ghee). Jäähdytä ylijäänyt puuro nopeasti matalassa astiassa tunnin kuluessa. Säilytä jääkaapissa ja käytä 24 tunnin kuluessa. Kuumenna vain kerran kauttaaltaan höyryävän kuumaksi.
