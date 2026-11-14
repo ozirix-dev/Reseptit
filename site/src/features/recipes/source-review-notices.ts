@@ -18,11 +18,6 @@ export const sourceReviewNotices: Readonly<Record<string, SourceReviewNotice>> =
     details: "Neljä varsinaista makroarvoa ja hyväksytty ainesosakohtainen laskentasyöte puuttuvat. Juustokuminan teelusikkapaino ja paistoöljyn syöty osuus pitää täsmentää. Ohjeessa ei ole korianterichutneyta eikä sitruunalohkoja, ellei niitä lisätä ainesluetteloon erikseen.",
     allergens: "Sisältää maitoa (paneer) ja kikhernejauhoa (palkokasvi). Tarkista pakkaukset.",
   },
-  "lahi-ita-zaatar-munat": {
-    heading: "Mausteseoksen ravintoarvot tarkistuksessa",
-    details: "Nykyinen laskenta jättää yhden teelusikallisen za’atar-mausteseosta ravintoarvojen ulkopuolelle. Esimerkiksi Mauste-Sallisen za’atar sisältää hiilihydraattia ja rasvaa, joten vanhat luvut ovat alustavia. Seoksen todellinen grammapaino ja tuoteversio pitää määrittää.",
-    allergens: "Za’atar-seos sisältää tässä vertailutuotteessa seesamia. Reseptissä on myös kananmunaa, vehnää (pita) ja maitoa (jogurtti).",
-  },
   "japanilainen-hojicha-jogurtti-persimonilla": {
     heading: "Syötävän teejauheen laskenta kesken",
     details: "Tämän ohjeen 2 g hienoa hojicha-jauhetta syödään kokonaan, mutta nykyiset ravintoarvot eivät sisällä jauheen hiilihydraatteja, kuitua, proteiinia ja rasvaa. Teetä ei tässä versiossa hauduteta ja siivilöidä pois.",
@@ -37,11 +32,6 @@ export const sourceReviewNotices: Readonly<Record<string, SourceReviewNotice>> =
     heading: "Vaalea bánh xèo -sovellus vaatii rakennevarmennuksen",
     details: "Nykyinen punnittu taikina sisältää 100 g riisijauhoa ja 200 ml kookosmaitoa, mutta ei vettä eikä kurkumaa. Se ei ole perinteisen keltaisen ohuen bánh xèon tarkka vastine. Paista katkaravut täysin kypsiksi, kuumenna pavunidut läpikotaisin ja paista letut yhdeltä puolelta. Rapeus ja taikinan levittyvyys on vielä varmistettava.",
     allergens: "Sisältää katkarapuja eli äyriäisiä. Tarkista myös kookosmaidon ja muiden tuotteiden pakkausmerkinnät.",
-  },
-  "pohjoisafrikkalainen-baghrir": {
-    heading: "Baghririn nestemäärä ei vastaa perinteistä ohutta taikinaa",
-    details: "Nykyisessä lähteessä on 200 g manna- ja vehnäjauhoja mutta vain 150 ml vettä. Seoksesta tulee selvästi paksumpi kuin perinteisestä toiselta puolelta paistettavasta reikäisestä baghrirista. Aiempi ravintolaskelma perustui tähän punnittuun versioon. Ravintoarvot on piilotettu lähdetarkistuksen ajaksi. Korjausehdotuksen noin 300 ml vettä ja uusi valmistusaika tarvitsevat vielä FI- ja GK-versiohyväksynnän.",
-    allergens: "Sisältää vehnää eli gluteenia. Hunajaa on vain 1 rkl koko reseptissä; voita ei ole ainesluettelossa.",
   },
   "meksikolainen-chilaquiles-verdes": {
     heading: "Tortillan, salsan ja juuston ravintolaskenta puuttuu",

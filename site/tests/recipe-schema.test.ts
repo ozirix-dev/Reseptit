@@ -184,11 +184,9 @@ test("F25 consumer-facing review notices are separate from GK-sealed recipe Mark
   const ids = [
     "rahka-marjakerroskulho",
     "intialainen-pinaatti-paneer-chilla",
-    "lahi-ita-zaatar-munat",
     "japanilainen-hojicha-jogurtti-persimonilla",
     "vietnamilainen-papaija-kookospuuro",
     "vietnamilainen-banh-xeo-aamiaisletut",
-    "pohjoisafrikkalainen-baghrir",
     "vietnamilainen-banh-cuon-sienilla",
     "meksikolainen-chilaquiles-verdes",
     "meksikolainen-paputostada-aamupalaksi",
@@ -206,12 +204,9 @@ test("F25 consumer-facing review notices are separate from GK-sealed recipe Mark
     assert.equal(sourceReviewNotice("thai-roti-munalla-banaanilla"), null);
     assert.ok(!JSON.stringify(recipe).includes(notice.heading), "separate UI notice must not rewrite recipe content");
   }
-  assert.match(sourceReviewNotice("lahi-ita-zaatar-munat")!.allergens, /seesamia/);
   assert.match(sourceReviewNotice("vietnamilainen-banh-cuon-sienilla")!.details, /porsaan jauhelihaa/);
   assert.match(sourceReviewNotice("japanilainen-hojicha-jogurtti-persimonilla")!.details, /2 g/);
-  assert.match(sourceReviewNotice("pohjoisafrikkalainen-baghrir")!.details, /150 ml vettä/);
   assert.match(sourceReviewNotice("rahka-marjakerroskulho")!.details, /ravintoarvot on piilotettu/i);
-  assert.match(sourceReviewNotice("pohjoisafrikkalainen-baghrir")!.details, /ravintoarvot on piilotettu/i);
   assert.match(sourceReviewNotice("vietnamilainen-banh-xeo-aamiaisletut")!.allergens, /äyriäisiä/);
   assert.match(sourceReviewNotice("vietnamilainen-papaija-kookospuuro")!.details, /15–20 minuutissa/);
   assert.match(sourceReviewNotice("meksikolainen-chilaquiles-verdes")!.details,/51,845 g/);

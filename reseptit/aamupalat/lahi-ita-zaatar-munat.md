@@ -5,63 +5,72 @@ url_slug: lahi-ita-zaatar-munat
 category: aamupala
 language: fi
 status: published
+translation_languages: [en, sv, th]
+translation_status: {en: published, sv: published, th: published}
 main_ingredient:
-  - "kananmuna"
-  - "pita"
-  - "zaatar"
+  - kananmuna
+  - pita
+  - zaatar
 cooking_method:
-  - "paistaminen"
+  - paistaminen
 ingredients:
+  - amount: 110
+    unit: g
+    item: "kananmunaa ilman kuorta"
+  - amount: 100
+    unit: g
+    item: "vehnäpitaa"
+  - amount: 100
+    unit: g
+    item: "maustamatonta jogurttia (rasvaa 3,9 %)"
+  - amount: 10
+    unit: g
+    item: "rypsiöljyä"
+  - amount: 3
+    unit: g
+    item: "kuorittuja seesaminsiemeniä"
   - amount: 2
-    unit: "kpl"
-    item: "kananmuna"
-  - amount: 100
-    unit: "g"
-    item: "pita"
+    unit: g
+    item: "kuivattua jauhettua timjamia"
   - amount: 1
-    unit: "tl"
-    item: "zaatar"
-  - amount: 100
-    unit: "g"
-    item: "jogurtti"
+    unit: g
+    item: "jauhettua sumakkia (ilman lisättyä suolaa)"
   - amount: 1
-    unit: "rkl"
-    item: "neutraalia paistoöljyä"
-  - amount: null
-    unit: ""
-    item: "suolaa maun mukaan"
+    unit: g
+    item: "hienoa suolaa"
 servings: 2
-time_total_min: 25
+time_total_min: 20
 difficulty: Helppo
 tags:
   - "aamupala"
   - "lähi-itä"
-  - "aamiaisruoka"
 image:
-  src: aamupalat/lahi-ita-zaatar-munat.webp
-  alt: "Za’atar-munat ja paahdettu pita tarjoiltuna aamiaisella"
+  src: aamupalat/lahi-ita-zaatar-munat-punnittu.webp
+  alt: "Za’atarilla maustetut kananmunat, pita ja jogurtti."
   width: 1536
   height: 1024
-carbs_net_per_serving_g: 24.91
-carbs_total_per_serving_g: 26.07
-protein_per_serving_g: 12.18
-fat_per_serving_g: 14.26
-
+carbs_net_per_serving_g: 25.19
+carbs_total_per_serving_g: 26.89
+protein_per_serving_g: 12.64
+fat_per_serving_g: 13.49
 ---
 
 # Za’atar-munat ja paahdettu pita
 
 ## Kuvaus
 
-Tässä kotikeittiöön sovitetussa ohjeessa valmistetaan za’atar-munat ja paahdettu pita. Mausteisuutta ja lisukkeita voi säätää oman maun mukaan.
+Kotitekoinen timjamia, seesamia ja sumakkia sisältävä za’atar maustaa pannulla kypsennetyt munat. Tarjoa ne pitan ja jogurtin kanssa.
 
 ## Ainekset
 
-Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
+Punnitse kananmunat ilman kuoria. Käytä maustamatonta, makeuttamatonta jogurttia.
 
 ## Valmistus
 
-1. Valmistele ainekset: paloittele kasvikset ja kypsennä pavut tai liha tarvittaessa erikseen. Kuumenna öljy pannulla.
-2. Lisää pannulle pisimpään kypsyvät ainekset ja kypsennä pehmeiksi. Lisää mausteet ja tilkka vettä, jos pannu uhkaa kuivua.
-3. Lisää lopuksi nopeasti kypsyvät ainekset, kuten muna tai lehtivihannekset. Kypsennä juuri valmiiksi ja maista suola.
-4. Paista kananmunat ja mausta za’atarilla; tarjoa jogurtin ja lämpimän pitan kanssa.
+1. Paahda seesaminsiemenet kuivalla pannulla vaalean kullanruskeiksi. Sekoita ne timjamiin, sumakkiin ja suolaan.
+2. Paahda pitaleivät kuivalla pannulla. Kypsennä munat kuivalla tarttumattomalla pannulla keskilämmöllä. Peitä tarvittaessa kannella ja kypsennä, kunnes sekä valkuainen että keltuainen ovat hyytyneet.
+3. Jaa munat, pita ja jogurtti tasan kahdelle. Ripottele mausteseos munille ja jaa öljy jogurtin päälle.
+
+## Muistiinpanot
+
+Sisältää kananmunaa, maitoa, vehnää (gluteenia) ja seesamia. Ravintoarvot ovat arvio; enintään 0,5 g sumakkia annosta kohti ei sisälly laskelmaan. GK: ei määritetty.
