@@ -16,6 +16,17 @@ test("docs-only changes select no site build or test suite", () => {
   assert.equal(plan.runBuild, false);
 });
 
+test("image checks reuse a fresh site build and run in their dedicated suite", () => {
+  for (const file of ["kuvat/paaruoat/kana.webp", "site/tests/image-pipeline.test.ts"]) {
+    const plan = classifyPaths([file]);
+    assert.equal(plan.runBuild, true);
+    assert.equal(plan.runImages, true);
+    assert.equal(plan.runStatic, true);
+    assert.equal(plan.runBrowser, false);
+    assert.deepEqual(plan.unitTests, []);
+  }
+});
+
 test("translation evidence selects one dedicated suite and no build", () => {
   const plan = classifyPaths(["meta/kaannokset/codex-review-evidence.json", "site/scripts/translation-semantic-review.ts"]);
   assert.equal(plan.runTranslationReview, true);
