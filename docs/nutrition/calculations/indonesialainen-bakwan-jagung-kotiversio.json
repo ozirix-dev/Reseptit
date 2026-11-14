@@ -1,0 +1,162 @@
+{
+  "recipeId": "indonesialainen-bakwan-jagung-kotiversio",
+  "sourceHash": "8ef2cd89ddbcec907c780dd6f334c149488a35e842d6c407e98a527ec52c1fac",
+  "calculatedAt": "2026-11-14",
+  "batchId": "batch-569",
+  "servings": 2,
+  "scope": "Two servings. All batter is apportioned. 30 g rapeseed frying oil is supplied to the pan; the retained mass is unknown.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "publicationStatus": "WITHHELD_SOURCE_INCOMPLETE",
+  "withholdingReason": "Unmeasured loss and retention of 30 g frying oil prevent publication of numerical nutrition values for the prepared fritters.",
+  "ingredients": [
+    {
+      "amount": 200,
+      "unit": "g",
+      "item": "tuoreita maissinjyviä",
+      "state": "raw kernels from fresh corn cob",
+      "matchEvidence": "AFCD Release 3 record F003209 is fresh raw corn on the cob; recipe now specifies 100 g edible kernels rather than an unweighed cob.",
+      "record": {
+        "id": "afcd-F003209-release-3",
+        "name": "Corn, fresh on cob, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "raw kernels from fresh corn cob",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 12.5,
+          "fibre": 4.2,
+          "polyols": 0,
+          "protein": 3.6,
+          "fat": 1.8
+        }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible input",
+      "retainedFraction": 1,
+      "retentionEvidence": "Batter is divided and cooked; estimate includes the entire batch of batter"
+    },
+    {
+      "amount": 80,
+      "unit": "g",
+      "item": "puolikarkeaa vehnäjauhoa",
+      "state": "medium wheat flour, as sold",
+      "matchEvidence": "Fineli Release 20 record 110 is medium wheat flour; the recipe amount is the dry flour mass.",
+      "record": {
+        "id": "fineli-110-release-20",
+        "name": "JAUHO, VEHNÄJAUHO, PUOLIKARKEA",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/110",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "medium wheat flour, as sold",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 73.998,
+          "FIBT": 3.5,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 73.998,
+          "fibre": 3.5,
+          "polyols": 0,
+          "protein": 11.6,
+          "fat": 1.56
+        }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible input",
+      "retainedFraction": 1,
+      "retentionEvidence": "Batter is divided and cooked; estimate includes the entire batch of batter"
+    },
+    {
+      "amount": 80,
+      "unit": "g",
+      "item": "vettä",
+      "state": "plain water",
+      "matchEvidence": "No contribution to modeled macronutrients",
+      "excludedReason": "No modeled energy or macros",
+      "omissionImpactEvidence": "Plain water or fine salt",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 0,
+        "netCarbohydrate": 0,
+        "totalCarbohydrate": 0,
+        "protein": 0,
+        "fat": 0
+      }
+    },
+    {
+      "amount": 12,
+      "unit": "g",
+      "item": "kevätsipulia",
+      "state": "raw spring onion, chopped",
+      "matchEvidence": "Raw spring onion; AFCD record F006250.",
+      "record": {
+        "id": "afcd-F006250-release-3",
+        "name": "Onion, spring, fresh, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia; Australian data limitation applies",
+        "state": "raw spring onion, chopped",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with/without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 4.6,
+          "fibre": 1.9,
+          "polyols": 0,
+          "protein": 1.7,
+          "fat": 0.2
+        }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible input",
+      "retainedFraction": 1,
+      "retentionEvidence": "Batter is divided and cooked; estimate includes the entire batch of batter"
+    },
+    {
+      "amount": 1.5,
+      "unit": "g",
+      "item": "hienoa suolaa",
+      "state": "plain salt",
+      "matchEvidence": "No contribution to modeled macronutrients",
+      "excludedReason": "No modeled energy or macros",
+      "omissionImpactEvidence": "Plain water or fine salt",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 0,
+        "netCarbohydrate": 0,
+        "totalCarbohydrate": 0,
+        "protein": 0,
+        "fat": 0
+      }
+    },
+    {
+      "amount": 30,
+      "unit": "g",
+      "item": "rypsiöljyä paistamiseen",
+      "state": "rapeseed oil for pan frying",
+      "matchEvidence": "All supplied oil bounds oil in fritters by 15 g per serving. The retained fraction is unresolved.",
+      "excludedReason": "Frying oil retention is unmeasured",
+      "omissionImpactEvidence": "30 g pan oil for two servings, at most 15 g per serving",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 135,
+        "netCarbohydrate": 0,
+        "totalCarbohydrate": 0,
+        "protein": 0,
+        "fat": 15
+      }
+    }
+  ]
+}

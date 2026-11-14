@@ -27,6 +27,17 @@ test("two B21 cooking methods now live in canonical FI; labneh retains SHA overl
     assert.equal(data.servings, 2);
     assert.match(source.content, step);
     assert.match(source.content, note);
+    if (id === "indonesialainen-bakwan-maissifritter") {
+      const current = siteContent.recipes.filter(r => r.recipeId === "indonesialainen-bakwan-jagung-kotiversio");
+      assert.deepEqual(current.map(r => r.locale).sort(), ["en", "fi", "sv", "th"]);
+      for (const page of current) {
+        assert.equal(page.slug, id);
+        assert.deepEqual(page.nutrition, {carbsNetG:null, carbsTotalG:null, proteinG:null, fatG:null});
+        assert.deepEqual(page.ingredients.map(x => x.amount), [200, 80, 80, 12, 1.5, 30]);
+      }
+      assert.ok(!siteContent.recipes.some(r => r.recipeId === id));
+      continue;
+    }
     const publicFi = siteContent.recipes.find(r => r.recipeId === id && r.locale === "fi");
     assert.ok(publicFi, id);
     assert.match(publicFi.instructionsText.join(" "), step);
