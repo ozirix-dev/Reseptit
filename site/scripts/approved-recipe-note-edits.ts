@@ -126,6 +126,16 @@ const editorialSnapshots: Readonly<Record<string, {
       ]
     ]
   },
+  "reseptit/aamupalat/korealainen-kimchi-jeon-aamiaiseksi.md": {
+    "currentSha256": "48f4aacb8db692421fb66f9db2d2b9e3f25921893cb9b147e7c27c324cde07d0",
+    "inverseEdits": [
+      [
+        0,
+        84,
+        "---\ntitle: \"Kimchi-jeon pannukakku aamiaiseksi\"\nrecipe_id: korealainen-kimchi-jeon-aamiaiseksi\nurl_slug: korealainen-kimchi-jeon-aamiaiseksi\ncategory: aamupala\nlanguage: fi\nstatus: published\nmain_ingredient:\n  - \"kimchi\"\n  - \"vehnäjauho\"\n  - \"kananmuna\"\ncooking_method:\n  - \"paistaminen\"\ningredients:\n  - amount: 150\n    unit: \"g\"\n    item: \"kimchi\"\n  - amount: 100\n    unit: \"g\"\n    item: \"vehnäjauho\"\n  - amount: 2\n    unit: \"kpl\"\n    item: \"kananmuna\"\n  - amount: 2\n    unit: \"rkl\"\n    item: \"kevätsipuli\"\n  - amount: 1\n    unit: \"rkl\"\n    item: \"neutraalia paistoöljyä\"\n  - amount: null\n    unit: \"\"\n    item: \"suolaa maun mukaan\"\nservings: 2\ntime_total_min: 25\ndifficulty: Helppo\ntags:\n  - \"aamupala\"\n  - \"korealainen\"\n  - \"aamiaisruoka\"\nimage:\n  src: aamupalat/korealainen-kimchi-jeon-aamiaiseksi.webp\n  alt: \"Kimchi-jeon pannukakku aamiaiseksi tarjoiltuna aamiaisella\"\n  width: 1536\n  height: 1024\n---\n\n# Kimchi-jeon pannukakku aamiaiseksi\n\n## Kuvaus\n\nTässä kotikeittiöön sovitetussa ohjeessa valmistetaan kimchi-jeon pannukakku aamiaiseksi. Mausteisuutta ja lisukkeita voi säätää oman maun mukaan.\n\n## Ainekset\n\nAinekset ovat annoslaskurin käytössä rakenteisista metatiedoista.\n\n## Valmistus\n\n1. Sekoita jauhot tai viljat ja muut kuivat ainekset kulhossa. Lisää neste vähitellen ja vatkaa tasaiseksi taikinaksi.\n2. Anna taikinan levätä 10 minuuttia. Jos käytät kokonaisia palkokasveja tai viljoja taikinapohjana, niiden tulee olla liotettuja ja hienonnettuja.\n3. Kuumenna öljytty pannu keskilämmölle. Paista taikina ohuina annoksina; käännä, kun reunat kuivuvat ja pinta alkaa asettua.\n4. Sekoita hienonnettu kimchi taikinaan ja paista pannukakku rapeaksi molemmin puolin.\n"
+      ]
+    ]
+  },
   "reseptit/aamupalat/intialainen-ven-pongal.md": {
     currentSha256: "77eea5fe9f4183fd5fda93b0a0c5e5fd346535d0cffbd0399a84d8a2887d2bd8",
     inverseEdits: [
@@ -1000,6 +1010,7 @@ export function recipeTextForApprovedSnapshot(file: string, text: string, purpos
 
 // These corrected FI versions retain their old source only for GK verification.
 export const reviewedRecipesWithHistoricalGk = new Set([
+  "reseptit/aamupalat/korealainen-kimchi-jeon-aamiaiseksi.md",
   "reseptit/aamupalat/intialainen-pinaatti-paneer-chilla.md",
   "reseptit/aamupalat/meksikolainen-paputostada-aamupalaksi.md",
   "reseptit/aamupalat/meksikolainen-chilaquiles-verdes.md",

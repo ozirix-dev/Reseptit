@@ -166,6 +166,7 @@ test("the Finnish breakfast and dessert collections exclude quarantined unsafe r
     ["valimerellinen-ricotta-persikkakulho", 8.27],
     ["korealainen-gyeran-mari-kasviksilla", 2.11],
     ["intialainen-besan-chilla", 22.78],
+    ["korealainen-kimchi-jeon-aamiaiseksi", 34.81],
     ["intialainen-pinaatti-paneer-chilla", 21.79],
     ["meksikolainen-chilaquiles-verdes", 26.44],
     ["meksikolainen-paputostada-aamupalaksi", 33.36],
