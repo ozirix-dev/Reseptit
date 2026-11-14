@@ -38,7 +38,7 @@ difficulty: lätt
 tags:
   - "frukost"
   - "ris"
-  - "japansk"
+  - "indisk"
 image:
   src: aamupalat/intialainen-masala-dosa.webp
   alt: "Frasig dosa med potatisfyllning och serveringstillbehör."

@@ -38,7 +38,7 @@ difficulty: Helppo
 tags:
   - "aamupala"
   - "riisi"
-  - "japanilainen"
+  - "intialainen"
 image:
   src: aamupalat/intialainen-masala-dosa.webp
   alt: "Rapea dosa perunatäytteellä ja tarjoilulisukkeilla."

@@ -87,14 +87,15 @@ const editorialSnapshots: Readonly<Record<string, {
     ],
   },
   "reseptit/aamupalat/intialainen-masala-dosa.md": {
-    currentSha256: "17aa56605dc1342ea04073ae0d4e45a1d91772ab93a2eb3d9156aa0fb3a3942b",
+    currentSha256: "4eb0f95211333cfe88128d52f6bf3824b5cc07c7ae5d8a280e19953461052e73",
     inverseEdits: [
       [60, 8, "1. Sekoita jauhot tai viljat ja muut kuivat ainekset kulhossa. Lisää neste vähitellen ja vatkaa tasaiseksi taikinaksi.\n2. Anna taikinan levätä 10 minuuttia. Jos käytät kokonaisia palkokasveja tai viljoja taikinapohjana, niiden tulee olla liotettuja ja hienonnettuja.\n3. Kuumenna öljytty pannu keskilämmölle. Paista taikina ohuina annoksina; käännä, kun reunat kuivuvat ja pinta alkaa asettua.\n4. Täytä rapea dosa maustetulla perunalla ja tarjoa sambar-kastikkeen kanssa.\n"],
       [56, 1, "Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.\n"],
       [52, 1, "Tässä kotikeittiöön sovitetussa ohjeessa valmistetaan masala dosa perunatäytteellä. Mausteisuutta ja lisukkeita voi säätää oman maun mukaan.\n"],
       [48, 1, "# Masala dosa perunatäytteellä\n"],
       [43, 1, "  alt: \"Masala dosa perunatäytteellä tarjoiltuna aamiaisella\"\n"],
-      [39, 2, "  - \"intialainen\"\n  - \"aamiaisruoka\"\n"],
+      [41, 0, "  - \"aamiaisruoka\"\n"],
+      [39, 1, ""],
       [35, 1, "time_total_min: 25\n"],
       [26, 8, "    unit: \"rkl\"\n    item: \"neutraalia paistoöljyä\"\n  - amount: null\n    unit: \"\"\n    item: \"suolaa maun mukaan\"\n"],
       [21, 4, "    item: \"sinapinsiemen\"\n"],

@@ -38,7 +38,7 @@ difficulty: easy
 tags:
   - "breakfast"
   - "rice"
-  - "Japanese"
+  - "Indian"
 image:
   src: aamupalat/intialainen-masala-dosa.webp
   alt: "Crisp dosa with potato filling and serving accompaniments."

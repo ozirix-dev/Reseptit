@@ -38,7 +38,7 @@ difficulty: ง่าย
 tags:
   - "อาหารเช้า"
   - "ข้าว"
-  - "ญี่ปุ่น"
+  - "อินเดีย"
 image:
   src: aamupalat/intialainen-masala-dosa.webp
   alt: "โดซากรอบไส้มันฝรั่งพร้อมเครื่องเคียง"
