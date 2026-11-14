@@ -7,8 +7,7 @@ import { originalForB21CanonicalHistory } from "./b21-canonical-historical-trans
 import { originalForC13CanonicalHistory } from "./c13-canonical-historical-transition";
 import { originalForThreeCanonicalHistory } from "./issue404-three-canonical-history";
 import { originalForJumeokbapHistory } from "./jumeokbap-history";
-import { originalForBissaraHistory } from "./bissara-history";
-import { originalForBindaetteokHistory } from "./bindaetteok-history";
+import { historicalSources } from "./history/historical-source-reader";
 import { originalForTamagoKakeGohanHistory } from "./tamago-kake-gohan-history";
 import { originalForKetoprakHistory } from "./ketoprak-history";
 import { execFileSync } from "node:child_process";
@@ -370,13 +369,21 @@ export function assertRecipeBaseline(root: string, baseline: string, ...protecte
       assert.equal(textHash(readFileSync(path.join(root, file), "utf8")), approved.sha256, change);
       continue;
     }
+    if (status === "M" && historicalSources.has(file)) {
+      const current = readFileSync(path.join(root, file), "utf8");
+      const { historicalGitBlob } = historicalSources.restore(file, current);
+      // Resolve the baseline tree entry without reading the old source blob.
+      const baselineBlob = execFileSync("git", ["rev-parse", baseline + ":" + file], { cwd: root, encoding: "utf8" }).trim();
+      assert.equal(historicalGitBlob, baselineBlob, change);
+      continue;
+    }
     if (status === "M" && (file.startsWith("reseptit/") || file.startsWith("kaannokset/"))) {
       const current = readFileSync(path.join(root, file), "utf8").replaceAll("\r\n", "\n");
       const snapshot = originalForThreeCanonicalHistory(root, file, originalForC13CanonicalHistory(root, file, originalForB21CanonicalHistory(root, file, originalForReviewedChefSafety(root, file, originalForChefHistoricalCheck(root, file,
         recipeTextForApprovedSnapshot(file,
           historicalRendangForApprovedVersion(file, historicalFarinataForApprovedPanVersion(file, current))))))));
-      const reviewedSnapshot = originalForKetoprakHistory(root, file, originalForBissaraHistory(root, file, originalForJumeokbapHistory(root, file, snapshot)));
-      const historicalSnapshot = originalForCoconutBananaHistory(root, file, originalForBindaetteokHistory(root, file, originalForTamagoKakeGohanHistory(root, file, reviewedSnapshot)));
+      const reviewedSnapshot = originalForKetoprakHistory(root, file, originalForJumeokbapHistory(root, file, snapshot));
+      const historicalSnapshot = originalForCoconutBananaHistory(root, file, originalForTamagoKakeGohanHistory(root, file, reviewedSnapshot));
       const recipeBeforeReview = molletesHistoricalText(file, koreanRiceBowlHistoricalText(file, historicalSnapshot));
       if (recipeBeforeReview !== current) {
         const original = execFileSync("git", ["show", baseline + ":" + file], { cwd: root, encoding: "utf8" });
