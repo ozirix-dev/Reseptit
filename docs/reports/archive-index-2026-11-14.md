@@ -7,8 +7,8 @@ ravintolaskenta-, käännös- tai julkaisuvaltuutus.
 
 **Lähtöcommit:** [`79dd59a475354cac4070f866ded3070af7029663`](https://github.com/ozirix-dev/Reseptit/tree/79dd59a475354cac4070f866ded3070af7029663)
 
-**Poistettu aktiivisesta tiedostopuusta:** 22 tiedostoa,
-3760230 tavua (3,59 MiB).
+**Poistettu aktiivisesta tiedostopuusta:** 21 tiedostoa,
+3751430 tavua (3,58 MiB).
 Tämä ei pienennä olemassa olevaa Git-historiaa; historiankirjoitusta ei tehdä.
 
 | Historiallinen aineisto | Tiedostoja | Koko (tavua) |
@@ -16,7 +16,7 @@ Tämä ei pienennä olemassa olevaa Git-historiaa; historiankirjoitusta ei tehd�
 | V1.5 kuvien selaimen ja Lighthouse-mittausten raakadata | 12 | 1063327 |
 | Cloudflare-kuvainventaarioiden vanhat tilannekuvat | 2 | 1570761 |
 | V1.3 resepti- ja käännösinventaarion CSV:t | 2 | 135144 |
-| V1.4 sisältö-, kuvakorjaus-, suorituskyky- ja SEO-JSONit | 4 | 273933 |
+| V1.4 sisältö-, suorituskyky- ja SEO-JSONit | 3 | 265133 |
 | Lokakuun käännösten itsearviointi | 1 | 53492 |
 | PR-jonon historiallinen V2-koneraportti | 1 | 663573 |
 
@@ -47,10 +47,9 @@ Tämä ei pienennä olemassa olevaa Git-historiaa; historiankirjoitusta ei tehd�
 - [`docs/reports/2026-10-21-reseptit-v1-3-audit.csv`](https://github.com/ozirix-dev/Reseptit/blob/79dd59a475354cac4070f866ded3070af7029663/docs/reports/2026-10-21-reseptit-v1-3-audit.csv)
 - [`docs/reports/2026-10-21-reseptit-v1-3-inventory.csv`](https://github.com/ozirix-dev/Reseptit/blob/79dd59a475354cac4070f866ded3070af7029663/docs/reports/2026-10-21-reseptit-v1-3-inventory.csv)
 
-### V1.4 sisältö-, kuvakorjaus-, suorituskyky- ja SEO-JSONit
+### V1.4 sisältö-, suorituskyky- ja SEO-JSONit
 
 - [`docs/reports/2026-10-22-v1-4-content-audit.json`](https://github.com/ozirix-dev/Reseptit/blob/79dd59a475354cac4070f866ded3070af7029663/docs/reports/2026-10-22-v1-4-content-audit.json)
-- [`docs/reports/2026-10-22-v1-4-image-corrections.json`](https://github.com/ozirix-dev/Reseptit/blob/79dd59a475354cac4070f866ded3070af7029663/docs/reports/2026-10-22-v1-4-image-corrections.json)
 - [`docs/reports/2026-10-22-v1-4-performance-data.json`](https://github.com/ozirix-dev/Reseptit/blob/79dd59a475354cac4070f866ded3070af7029663/docs/reports/2026-10-22-v1-4-performance-data.json)
 - [`docs/reports/2026-10-22-v1-4-public-seo.json`](https://github.com/ozirix-dev/Reseptit/blob/79dd59a475354cac4070f866ded3070af7029663/docs/reports/2026-10-22-v1-4-public-seo.json)
 
@@ -72,7 +71,8 @@ Tämä ei pienennä olemassa olevaa Git-historiaa; historiankirjoitusta ei tehd�
 - F25:n karanteenit ja release gate, GK-historia ja GK-regressiot,
   reseptien lähdetiedostot, kuvat, ravintolaskennan lähteet,
   `docs/nutrition/calculations/` ja hyväksyntärekisterit **säilyvät**.
-- GK-regressiotestin käyttämä `docs/nutrition/audit.json` säilyy.
+- GK-regressiotestin auditointiaineisto ja kuvaregressiotestin
+  käyttämä V1.4-korjausmanifesti säilyvät.
 - Uudet Cloudflare-inventaariot tuotetaan tarvittaessa hyväksytyn, ajantasaisen
   mainin pohjalta. Vanha 2.11.2026 mittaus ei ole tuotantopäätöksen lähtötieto.
 

@@ -88,7 +88,7 @@ alt-teksteistä. Pad see ew'n kuva tarkistettiin täydessä koossa: leveä nuude
 ei todista riisijauhoa, joten vahvistamatonta virhettä ei väitetä korjatuksi.
 Kaikki muuttuneet alt-tekstit päivitettiin FI/EN/SV/TH-versioihin.
 
-[Kuvien korjausmanifesti](https://github.com/ozirix-dev/Reseptit/blob/79dd59a475354cac4070f866ded3070af7029663/docs/reports/2026-10-22-v1-4-image-corrections.json) tallentaa
+[Kuvien korjausmanifesti](2026-10-22-v1-4-image-corrections.json) tallentaa
 alkuperäiset ja uudet SHA-256-tunnisteet, vaihtojen lähteet sekä kuvauspyyntöjen
 yhteenvedot. Regressiotesti varmistaa tarkistettujen tiedostojen säilymisen.
 Kuvat ovat kuvituksia; niitä ei esitetä koekeittiössä valmistettujen annosten kuvina.

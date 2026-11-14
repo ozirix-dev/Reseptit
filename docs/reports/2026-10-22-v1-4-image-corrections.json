@@ -1,0 +1,167 @@
+{
+  "date": "2026-10-22",
+  "source_commit": "8b97ca46114b133c7c41c7610b84b1c87941be1e",
+  "images": [
+    {
+      "recipe_id": "medu-vada",
+      "path": "kuvat/paaruoat/medu-vada.webp",
+      "method": "reassigned-existing-image",
+      "source_at_commit": "8b97ca46114b133c7c41c7610b84b1c87941be1e",
+      "source_path": "kuvat/paaruoat/idli-sambar.webp",
+      "old_sha256": "243949bdfd1170b84e4951e78632a824a0c8a7bb3c7f3404fc9fc38c1d7e3e47",
+      "sha256": "0e6718e91cec74a12843a06cfa9e5f8bb8a4c924a18623cb939dadccbac18417"
+    },
+    {
+      "recipe_id": "amritsari-kala",
+      "path": "kuvat/paaruoat/amritsari-kala.webp",
+      "method": "reassigned-existing-image",
+      "source_at_commit": "8b97ca46114b133c7c41c7610b84b1c87941be1e",
+      "source_path": "kuvat/paaruoat/medu-vada.webp",
+      "old_sha256": "416f58a16a0b5ca372ffe3604fda51b8d363eafbc1641a49df2a57244039e234",
+      "sha256": "243949bdfd1170b84e4951e78632a824a0c8a7bb3c7f3404fc9fc38c1d7e3e47"
+    },
+    {
+      "recipe_id": "idli-sambar",
+      "path": "kuvat/paaruoat/idli-sambar.webp",
+      "method": "reassigned-existing-image",
+      "source_at_commit": "8b97ca46114b133c7c41c7610b84b1c87941be1e",
+      "source_path": "kuvat/paaruoat/amritsari-kala.webp",
+      "old_sha256": "0e6718e91cec74a12843a06cfa9e5f8bb8a4c924a18623cb939dadccbac18417",
+      "sha256": "416f58a16a0b5ca372ffe3604fda51b8d363eafbc1641a49df2a57244039e234"
+    },
+    {
+      "recipe_id": "paneer-tikka",
+      "path": "kuvat/paaruoat/paneer-tikka.webp",
+      "method": "reassigned-existing-image",
+      "source_at_commit": "8b97ca46114b133c7c41c7610b84b1c87941be1e",
+      "source_path": "kuvat/paaruoat/aloo-paratha.webp",
+      "old_sha256": "523336468e6abcbbd581845891a28553bca7b2596431be8940477a46133afbc1",
+      "sha256": "e5fa13f81911c6d2cb7f86f053676f3a9470aac68a68476d90d5cf735c540899"
+    },
+    {
+      "recipe_id": "aloo-paratha",
+      "path": "kuvat/paaruoat/aloo-paratha.webp",
+      "method": "reassigned-existing-image",
+      "source_at_commit": "8b97ca46114b133c7c41c7610b84b1c87941be1e",
+      "source_path": "kuvat/paaruoat/rogan-josh.webp",
+      "old_sha256": "e5fa13f81911c6d2cb7f86f053676f3a9470aac68a68476d90d5cf735c540899",
+      "sha256": "65114df26c5925feeb8f210c4cd738f7849f2b4d4657c46909c0a8e10c2620a0"
+    },
+    {
+      "recipe_id": "rogan-josh",
+      "path": "kuvat/paaruoat/rogan-josh.webp",
+      "method": "imagegen-edit",
+      "source_at_commit": "8b97ca46114b133c7c41c7610b84b1c87941be1e",
+      "source_path": "kuvat/paaruoat/paneer-tikka.webp",
+      "old_sha256": "65114df26c5925feeb8f210c4cd738f7849f2b4d4657c46909c0a8e10c2620a0",
+      "sha256": "0c4d4933a515d3b4849832f1be4805558c15a007d6e2041272fe09aa0eb6ac89",
+      "generated_source": "exec-15f59b94-8c30-4b02-b1ad-71d3ed546150.png",
+      "prompt_summary": "Replace bone-in meat with boneless lamb shoulder cubes; preserve red curry sauce and composition.",
+      "width": 1280,
+      "height": 853,
+      "review": "Codex visual review; ingredients unchanged; generated illustration, not a photograph of a kitchen-tested recipe"
+    },
+    {
+      "recipe_id": "dal-makhani",
+      "path": "kuvat/paaruoat/dal-makhani.webp",
+      "method": "reassigned-existing-image",
+      "source_at_commit": "8b97ca46114b133c7c41c7610b84b1c87941be1e",
+      "source_path": "kuvat/paaruoat/tandoorikana.webp",
+      "old_sha256": "bb37110440bb9081df0a44c7d3d90584b5a62ce4fb1092c0ca0b548ac5abf604",
+      "sha256": "884d75255970b18d180c6de37f21c793d59090a3bd546a4a9fba72be74cdb624"
+    },
+    {
+      "recipe_id": "tandoorikana",
+      "path": "kuvat/paaruoat/tandoorikana.webp",
+      "method": "reassigned-existing-image",
+      "source_at_commit": "8b97ca46114b133c7c41c7610b84b1c87941be1e",
+      "source_path": "kuvat/paaruoat/dal-makhani.webp",
+      "old_sha256": "884d75255970b18d180c6de37f21c793d59090a3bd546a4a9fba72be74cdb624",
+      "sha256": "bb37110440bb9081df0a44c7d3d90584b5a62ce4fb1092c0ca0b548ac5abf604"
+    },
+    {
+      "recipe_id": "kantonilainen-hoyrytetty-kala",
+      "path": "kuvat/paaruoat/kantonilainen-hoyrytetty-kala.webp",
+      "method": "imagegen-edit",
+      "generated_source": "exec-19da71cf-55f3-4b36-8a0e-8f18ad4f50b9.png",
+      "prompt_summary": "Replace whole fish with boneless white fish fillets; preserve soy sauce, ginger, spring onion, coriander and composition.",
+      "old_sha256": "48b856362dd3a797ce1375b79915774b19388f5261e3e9bc21403e3cac8dbf9f",
+      "sha256": "3d46677355f251ee903561435867666d149c0a233051fc60671c4cf7b1a44f1f",
+      "width": 1279,
+      "height": 853,
+      "review": "Codex visual review; ingredients unchanged; generated illustration, not a photograph of a kitchen-tested recipe"
+    },
+    {
+      "recipe_id": "koshari",
+      "path": "kuvat/paaruoat/koshari.webp",
+      "method": "imagegen-edit",
+      "generated_source": "exec-f51f06c1-2db0-4942-b671-e474383db832.png",
+      "prompt_summary": "Remove chickpeas from dish and props; preserve rice, brown lentils, macaroni, tomato sauce and crispy onion.",
+      "old_sha256": "197b69acb6846606352a6901281656ad4bae80f9a3764180dd9809b759280fbf",
+      "sha256": "e0244d6a4dcf00142ec939812ffd0e2bfd042dd3587717a60f65933079ccf39d",
+      "width": 1279,
+      "height": 853,
+      "review": "Codex visual review; ingredients unchanged; generated illustration, not a photograph of a kitchen-tested recipe"
+    },
+    {
+      "recipe_id": "kung-pao-kana",
+      "path": "kuvat/paaruoat/kung-pao-kana.webp",
+      "method": "imagegen-edit",
+      "generated_source": "exec-c57a1d3e-461e-49b0-a6af-cafdcf793c7d.png",
+      "prompt_summary": "Remove fresh red bell pepper chunks; preserve dried chillies, chicken, peanuts, spring onion and sauce.",
+      "old_sha256": "4d941052fd1c33208533443337d4bdf1d4045e83e42193ae2f09044d0a1892b5",
+      "sha256": "2f6b2b377cc35461c13d6ad2839500f37314a9da0b4773dc8ec5b46a80118b6d",
+      "width": 1279,
+      "height": 853,
+      "review": "Codex visual review; ingredients unchanged; generated illustration, not a photograph of a kitchen-tested recipe"
+    },
+    {
+      "recipe_id": "paella-valenciana",
+      "path": "kuvat/paaruoat/paella-valenciana.webp",
+      "method": "imagegen-edit",
+      "generated_source": "exec-76c4ea00-ae69-462d-8ee8-7737387a7565.png",
+      "prompt_summary": "Remove broad beans; preserve green beans, rice and chicken. No peas or chickpeas.",
+      "old_sha256": "0c025996860f8aa7e801822a33c788296abfc656183b7586b281af561a6d7d85",
+      "sha256": "e7cdb9b580e4f24f53ec59c04a522556b2f2132babc04bbe1b9d10f943a7a7a8",
+      "width": 1279,
+      "height": 853,
+      "review": "Codex visual review; ingredients unchanged; generated illustration, not a photograph of a kitchen-tested recipe"
+    },
+    {
+      "recipe_id": "rahkapiirakka-vhh",
+      "path": "kuvat/jalkiruoat/rahkapiirakka-vhh.webp",
+      "method": "imagegen-edit",
+      "generated_source": "exec-dbe7a786-4e0c-4eef-8a9a-15aa60a0650b.png",
+      "prompt_summary": "Remove all berries from pie, slice and props; plain vanilla quark filling with browned surface and almond crust.",
+      "old_sha256": "cc041b1df5ef8e6260c30f836ba57528e94f66b5cd5751a6a538d2fa9dd189f1",
+      "sha256": "b06aeeb96574c0881ae23cb4ef6e8ff93190cb6622330b2b800eb990ae8e6f3a",
+      "width": 1280,
+      "height": 853,
+      "review": "Codex visual review; ingredients unchanged; generated illustration, not a photograph of a kitchen-tested recipe"
+    },
+    {
+      "recipe_id": "vhh-lihapiirakka",
+      "path": "kuvat/leivonnaiset/vhh-lihapiirakka.webp",
+      "method": "imagegen-edit",
+      "generated_source": "exec-0a4ddec9-d68a-4a45-b08d-5826b5add187.png",
+      "prompt_summary": "Remove pastry lid; show open minced meat, onion and egg-bound filling with pastry base and sides.",
+      "old_sha256": "333f69ffb7be865eb46f79a7ccc2987208d31206ba4443f8a1e06744458e2812",
+      "sha256": "a044cc45d5cd7e9571e30d4510a2df779ccce9844972d7d9ae953b0a49fc2511",
+      "width": 1280,
+      "height": 853,
+      "review": "Codex visual review; ingredients unchanged; generated illustration, not a photograph of a kitchen-tested recipe"
+    },
+    {
+      "recipe_id": "vhh-runebergintortut",
+      "path": "kuvat/leivonnaiset/vhh-runebergintortut.webp",
+      "method": "imagegen-edit",
+      "generated_source": "exec-8a13c042-a6ec-4043-8b33-c75d9a0fc35c.png",
+      "prompt_summary": "Remove jam and icing rings; each cake topped with one fresh raspberry.",
+      "old_sha256": "954d56bbc385dd46e5133ef166f9ee1f1a68c6b93c75a402eab88f53650b2dad",
+      "sha256": "757289da8035ebc54d20c05931a74862836a7a849db18f5a9576234e4073d0a7",
+      "width": 1280,
+      "height": 853,
+      "review": "Codex visual review; ingredients unchanged; generated illustration, not a photograph of a kitchen-tested recipe"
+    }
+  ]
+}
