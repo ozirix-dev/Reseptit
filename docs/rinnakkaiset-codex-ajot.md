@@ -136,6 +136,37 @@ ignored-tulokset tai paikallinen esikatselu vastaavat nykyistä HEADia.
 Vanhat raportit merkitään tilannekuviksi, ja nykytilan yhteenveto erotetaan
 niistä.
 
+## Reseptijulkaisun eräkoko
+
+Muodosta erä samassa vaiheessa olevista resepteistä, joiden hyväksynnät ovat
+toisistaan riippumattomia ja joiden riskit edellyttävät samoja tarkistuksia.
+Valmiita käännöksiä voi niputtaa, kun FI-lähteet ja merkityssidokset on
+katselmoitu. Uudet reseptit voi niputtaa, kun kunkin lähde-, turvallisuus-,
+ravinto- ja kuvaportit on läpäisty. Historiallisesti sidottuja korjauksia voi
+niputtaa, kun niiden lähde- ja versiosidokset eivät kytkeydy toisiinsa.
+Pidä vaikea GK- tai turvallisuustapaus omassa PR:ssä tai pienessä erässä ja
+vie muut valmiit reseptit eteenpäin.
+
+Aja site-hakemistossa `npm run queue:translations` ajantasaisesta mainista.
+Valitse työ julkaisukelpoisten FI-lähteiden ja jonon kieliparien perusteella.
+Tarkista epäselvä julkinen tila viimeisimmän buildin reiteistä ja seuraajat
+`meta/recipe-successors.json`-tiedostosta. Historialliset D30/E20-HOLD-listat
+ovat tausta-aineistoa. Jonon semanttinen lähdetiiviste sitoo kielikatselmoinnin
+auditoinnin lähteeseen. Julkisen sivun toimituksellisesti muodostettu FI-sisältö
+tarkistetaan buildista.
+
+Kirjaa erälle FI-lähdepolut ja reseptitunnisteet. Vertaile niitä toisten
+kirjoittajien sovittuun tiedostoalueeseen ja avoimiin PR:iin ennen valmistelua
+ja uudelleen ennen pushia. Valmistele CI:n aikana seuraavaa riippumatonta erää
+omassa työpuussa. Käytä paikallista buildia välitarkistuksiin. Päivitä
+Cloudflare-esikatselu tarvittaessa yhdellä varmennetulla buildilla valmiin
+erän täsmällisestä commitista. Erillinen väliesikatselu on perusteltu, kun
+tarkistus tarvitsee Cloudflare-ympäristön tai erillisen katselmointikohteen.
+
+Raportoi erän valmistuttua julkaistut reseptit, PR, merge-SHA, CI sekä
+todennetut julkaisukohteet. Nosta kesken työn esiin esteet, jotka muuttavat
+etenemistä tai edellyttävät päätöstä.
+
 ## Kolme tai neljä rinnakkaista ajoa
 
 Sama periaate säilyy: jokaisella kirjoittavalla ajolla on oma worktree ja
