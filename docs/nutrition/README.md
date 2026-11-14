@@ -7,10 +7,7 @@ laskentaa.
 Suorita `site/`-kansiossa `npm run audit:nutrition`.
 Tuloksena on `tmp/nutrition/audit.json`: kaikkien julkaistujen FI-lähteiden
 inventaariorivit ja kolmen keskeneräisen pilotin aineskohtaiset puutteet. `--snapshot`
-tallentaa tarkistuskierroksen tuloksen tähän hakemistoon paikallisena,
-Gitiltä ohitettuna tilannekuvana. Vanha snapshot löytyy
-[historian lähtöcommitista](https://github.com/ozirix-dev/Reseptit/blob/79dd59a475354cac4070f866ded3070af7029663/docs/nutrition/audit.json).
-Vanhaa auditointikuvaa ei pidä käyttää nykyisen laskennan tuloksena. Auditointikuva
+tallentaa tarkistuskierroksen tuloksen tähän hakemistoon. Auditointikuva
 päivitettiin 24.10.2026, ja laskentamuistiot sekä Fineli- ja AFCD-
 viiteaineistot sisältyvät lähdetiivisteeseen. Uudet irralliset
 laskentamuistiot pitää lisätä lähteiden inventaarioon erikseen.

@@ -7,8 +7,8 @@ ravintolaskenta-, käännös- tai julkaisuvaltuutus.
 
 **Lähtöcommit:** [`79dd59a475354cac4070f866ded3070af7029663`](https://github.com/ozirix-dev/Reseptit/tree/79dd59a475354cac4070f866ded3070af7029663)
 
-**Poistettu aktiivisesta tiedostopuusta:** 23 tiedostoa,
-4559153 tavua (4.35 MiB).
+**Poistettu aktiivisesta tiedostopuusta:** 22 tiedostoa,
+3760230 tavua (3,59 MiB).
 Tämä ei pienennä olemassa olevaa Git-historiaa; historiankirjoitusta ei tehdä.
 
 | Historiallinen aineisto | Tiedostoja | Koko (tavua) |
@@ -19,7 +19,6 @@ Tämä ei pienennä olemassa olevaa Git-historiaa; historiankirjoitusta ei tehd�
 | V1.4 sisältö-, kuvakorjaus-, suorituskyky- ja SEO-JSONit | 4 | 273933 |
 | Lokakuun käännösten itsearviointi | 1 | 53492 |
 | PR-jonon historiallinen V2-koneraportti | 1 | 663573 |
-| Laskennan lokakuinen auditointi-snapshot | 1 | 798923 |
 
 ## Alkuperäiset tiedostot commitin tarkkuudella
 
@@ -63,10 +62,6 @@ Tämä ei pienennä olemassa olevaa Git-historiaa; historiankirjoitusta ei tehd�
 
 - [`docs/reports/pr-cleanup-v2-2026-11-05.json`](https://github.com/ozirix-dev/Reseptit/blob/79dd59a475354cac4070f866ded3070af7029663/docs/reports/pr-cleanup-v2-2026-11-05.json)
 
-### Laskennan lokakuinen auditointi-snapshot
-
-- [`docs/nutrition/audit.json`](https://github.com/ozirix-dev/Reseptit/blob/79dd59a475354cac4070f866ded3070af7029663/docs/nutrition/audit.json)
-
 ## Mitä jäi ja miksi
 
 - V1.3–V1.5:n ja Cloudflare-migraation sanalliset yhteenvedot sekä
@@ -77,10 +72,7 @@ Tämä ei pienennä olemassa olevaa Git-historiaa; historiankirjoitusta ei tehd�
 - F25:n karanteenit ja release gate, GK-historia ja GK-regressiot,
   reseptien lähdetiedostot, kuvat, ravintolaskennan lähteet,
   `docs/nutrition/calculations/` ja hyväksyntärekisterit **säilyvät**.
-- `docs/nutrition/audit.json` on historiallisen ajon raportti.
-  Nykyinen auditointi tuottaa normaalisti tuloksen `tmp/nutrition/audit.json`:
-  `--snapshot` voi luoda paikallisen kopion `docs/nutrition/`-kansioon,
-  mutta se on nyt `.gitignore`-säännöllä suojattu satunnaiselta committaukselta.
+- GK-regressiotestin käyttämä `docs/nutrition/audit.json` säilyy.
 - Uudet Cloudflare-inventaariot tuotetaan tarvittaessa hyväksytyn, ajantasaisen
   mainin pohjalta. Vanha 2.11.2026 mittaus ei ole tuotantopäätöksen lähtötieto.
 

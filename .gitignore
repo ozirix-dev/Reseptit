@@ -170,8 +170,7 @@ site/public/data/
 site/src/generated/gk-only-variants.generated.ts
 site/src/generated/glycemic-load-filters.generated.ts
 
-# Historiallisten ajojen generaatiotuloksia ei palauteta Gitin seurantaan.
-docs/nutrition/audit.json
-docs/cloudflare-migration/images-main-*.json
-docs/cloudflare-migration/images-local-*.json
-docs/reports/2026-10-22-v1-5-data/
+# Historical generated reports archived in Git history.
+/docs/cloudflare-migration/images-main-20261102.json
+/docs/cloudflare-migration/images-local-20261102.json
+/docs/reports/2026-10-22-v1-5-data/
