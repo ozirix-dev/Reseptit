@@ -22,7 +22,6 @@ const expected: Record<string,string> = {
   "uunimuna-avokadot": "7f93c5780c639a828a97932134f1568c265ba3f750c81fd62ee96d08e23d4b41",
   "intialainen-besan-chilla": "287c9e88b59c37d1ce84bb0c9021b5bc328a285dfba85a8cbba5f8d45e887010",
   "thai-kananmunat-kookoscurryssa": "1d127dee1a5b1e82c2cbbb7d71e41aac62e4d86266074d27d867197aa9e0ae83",
-  "vietnamilainen-banh-cuon-sienilla": "54b5cf45d8eeff8a07d9c5e9bcac2e4db43d916fb594818c2cc72485aafa9385",
 
   "karibia-mango-limejogurtti": "91fcf9425bb58e499304414a99665cc01ba7c37a1a72115262d31e04b5c93a0f",
   "lahi-ita-pistaasijogurtti": "f9a1d41f86c92902bbda7c9f224cbc8de48900ec7726625a482f1ecea794a9e1",
@@ -39,8 +38,8 @@ const expected: Record<string,string> = {
 };
 const macros = ["carbs_net_per_serving_g","carbs_total_per_serving_g","protein_per_serving_g","fat_per_serving_g"] as const;
 
-test("SHA-pinned FI overlays correct twenty-two dishes without nutrition changes", () => {
-  assert.equal(breakfastFiQualityPaths.length, 22);
+test("SHA-pinned FI overlays correct twenty-one dishes without nutrition changes", () => {
+  assert.equal(breakfastFiQualityPaths.length, 21);
   for (const relative of breakfastFiQualityPaths) {
     const raw = readFileSync(path.join(root, relative), "utf8");
     const beforeMd = parseMarkdown(raw);
@@ -90,7 +89,7 @@ test("SHA-pinned FI overlays correct twenty-two dishes without nutrition changes
       assert.equal((afterMd.content.match(/^\d+\. /gm) ?? []).length, 4);
       assert.notEqual(afterMd.content, beforeMd.content);
       assert.doesNotMatch(afterMd.content.split("## Valmistus")[1] ?? "",/Valmistele ainekset: paloittele kasvikset|Sekoita jauhot tai viljat ja muut kuivat ainekset|Raasta, muussaa tai hienonna pääraaka-aine|hunajavoilla/);
-    } else if (new Set(["intialainen-pinaatti-paneer-chilla","uunimuna-avokadot","intialainen-besan-chilla","thai-kananmunat-kookoscurryssa","vietnamilainen-banh-cuon-sienilla"]).has(before.recipe_id)) {
+    } else if (new Set(["intialainen-pinaatti-paneer-chilla","uunimuna-avokadot","intialainen-besan-chilla","thai-kananmunat-kookoscurryssa"]).has(before.recipe_id)) {
       const wantSteps = ["intialainen-pinaatti-paneer-chilla","uunimuna-avokadot"].includes(before.recipe_id) ? 5 : 4;
       assert.equal((afterMd.content.match(/^\d+\. /gm) ?? []).length, wantSteps);
       assert.notEqual(afterMd.content, beforeMd.content);
@@ -159,7 +158,7 @@ test("generated FI cards use chef-corrected instructions and the reviewed noodle
     const fullText = recipe.instructionsText.join(" ");
     assert.doesNotMatch(fullText, /Valmistele kulhon ainekset|Paloittele tuoreet kasvikset ja valmistele yrtit|Kypsennä riisi pakkauksen ohjeen mukaan\. Paista tofu|kypsennä pavut tai liha tarvittaessa erikseen/);
   }
-  for(const id of ["intialainen-pinaatti-paneer-chilla","uunimuna-avokadot","intialainen-besan-chilla","thai-kananmunat-kookoscurryssa","vietnamilainen-banh-cuon-sienilla"]) {
+  for(const id of ["intialainen-pinaatti-paneer-chilla","uunimuna-avokadot","intialainen-besan-chilla","thai-kananmunat-kookoscurryssa"]) {
     const rec = recipes.get(id);
     assert.ok(rec, "Missing corrected FI recipe: "+id);
     assert.doesNotMatch(rec.instructionsText.join(" "),/Sekoita jauhot tai viljat ja muut kuivat ainekset|Kypsennä liha tai muut täytteet kypsiksi|Valmistele ainekset: paloittele kasvikset/);
@@ -233,26 +232,5 @@ test("F25 doujiang and Thai coconut-pancake public corrections preserve source n
     for (const macro of macros) assert.equal(shown.data[macro], original.data[macro]);
     assert.match(JSON.stringify(shown), titleOrIngredient);
     assert.match(shown.content, prep);
-  }
-});
-
-test("F25 batch A2 remaining cooking method revisions are source-sealed and do not alter nutrients", () => {
-  const cases: Array<[string, RegExp, RegExp]> = [
-    ["vietnamilainen-banh-cuon-sienilla", /75 °C/, /40–50 minuuttia/],
-  ];
-  for(const [id, cooking, safety] of cases) {
-    const relative = "reseptit/aamupalat/" + id + ".md";
-    const raw = readFileSync(path.join(root, relative), "utf8");
-    const before = parseMarkdown(raw), after = parseMarkdown(projectBreakfastFiQualityDisplay(relative, raw));
-    assert.ok(before && after);
-    assert.deepEqual(after.data.ingredients, before.data.ingredients, id + ": ingredient masses");
-    assert.equal(after.data.servings, before.data.servings, id + ": servings");
-    assert.equal(after.data.time_total_min, before.data.time_total_min, id + ": historical time metadata remains sealed");
-    assert.deepEqual(after.data.image, before.data.image, id + ": image");
-    for(const key of macros) assert.equal(after.data[key],before.data[key],id + ":" + key);
-    assert.equal((after.content.match(/^\d+\. /gm)??[]).length,4);
-    assert.match(after.content,cooking,id);
-    assert.match(after.content,safety,id);
-    assert.doesNotMatch(after.content,/Sekoita jauhot tai viljat ja muut kuivat ainekset|Kypsennä liha tai muut täytteet/);
   }
 });

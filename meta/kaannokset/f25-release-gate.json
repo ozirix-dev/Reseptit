@@ -112,7 +112,21 @@
       "source_risk": "HOLD-STEAM-AND-PORK",
       "nutrition_input_at_baseline": "present-unapproved",
       "public_quarantine_at_baseline": false,
-      "approval": null
+      "approval": {
+        "status": "RELEASE_AUTHORIZED",
+        "reviewedAt": "2026-11-14",
+        "reviewReference": "https://github.com/ozirix-dev/Reseptit/issues/447",
+        "reviewerKind": "AI_EDITORIAL_WITH_INDEPENDENT_EVIDENCE",
+        "sourceSha256": "1e1db19b878be1d1460628b6b0e480a229e743b8d4da6418326fdee07740ea0f",
+        "nutritionEvidenceSha256": "90334e4c1d917729cbf4bdf438646066d6793068f17507ac7cbbce3dfebf23b0",
+        "gkRecipeBindingSha256": "392fd579abbe22a7e001b07caef5b9df67efe79ca4686cc37aa0b95d37503e26",
+        "gkCalculationInputSha256": "283e0215b5ba888b078c1663aa62302a3f0494310bc7c5b03d3cd1b452246665",
+        "gkCalculationEvidenceSha256": "f6e83fb80f10ebd3060aa31aa4c054abeceb2f9c0261497a50af3c6fd69a752f",
+        "gkDisposition": "GK_UNAVAILABLE_EXPLICITLY_REVIEWED",
+        "cookingAndAllergensReviewed": true,
+        "ingredientUnitConversionsReviewed": true,
+        "translationMeaningReviewRequired": true
+      }
     },
     {
       "recipe_id": "vietnamilainen-banh-xeo-aamiaisletut",

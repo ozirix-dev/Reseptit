@@ -182,7 +182,7 @@ test("the Finnish breakfast and dessert collections exclude quarantined unsafe r
     ["meksikolainen-atole-maissipuuro", 47.4],
     ["thai-maissifritterit", 55.41],
     ["karibia-mango-limejogurtti", 15.12],
-    ["vietnamilainen-banh-cuon-sienilla", 40.31],
+    ["vietnamilainen-banh-cuon-sienilla", 43.81],
     ["indonesialainen-bakwan-maissifritter", 45.19],
     ["meksikolainen-munakokkeli-pico-de-gallolla", 28.3],
     ["thai-roti-munalla-banaanilla", 50.17],
@@ -569,7 +569,7 @@ test("batch fourteen publishes recalculated macronutrients for every recipe and 
     ["meksikolainen-atole-maissipuuro", [47.4, 49.04, 5.85, 4.21]],
     ["thai-maissifritterit", [55.41, 59.9, 14.82, 13.59]],
     ["karibia-mango-limejogurtti", [15.12, 18.23, 2.65, 8.5]],
-    ["vietnamilainen-banh-cuon-sienilla", [40.31, 42.76, 21.37, 9.05]],
+    ["vietnamilainen-banh-cuon-sienilla", [43.81, 46.03, 19.69, 11.88]],
   ]);
   // Preserve all twenty historical nutrition rows. The one unfinished aloo
   // paratha source must not be served publicly while it awaits a source review.

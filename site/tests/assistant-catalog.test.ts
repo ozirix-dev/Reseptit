@@ -134,21 +134,3 @@ test("build publishes per-locale content-addressed JSON with a verifiable manife
     assert.ok(parsed.recipes.every((recipe: { locale: string; image: unknown }) => recipe.locale === locale && recipe.image === null));
   }
 });
-
-test("F25 A2 historical FI nutrition is withheld from assistant results and GK search",()=>{
-  const catalog=createAssistantCatalog(siteContent.recipes,"fi",version);
-  const blocked=[
-    "vietnamilainen-banh-cuon-sienilla",
-  ];
-  for(const id of blocked){
-    const row=findAssistantRecipe(catalog,id);
-    assert.ok(row,id);
-    assert.deepEqual(row.nutritionPerServing,{carbsNetG:null,carbsTotalG:null,proteinG:null,fatG:null});
-    const original=siteContent.recipes.find(x=>x.recipeId===id&&x.locale==="fi");
-    assert.ok(original,id);
-    assert.equal(row.sourceVersion,version(original),"full source hash is not rewritten by display masking");
-    const result=searchAssistantCatalog(catalog,{...emptyRecipeFilters,gl:"high"},{[id]:"high"});
-    assert.equal(result.status,"ok");
-    assert.equal(result.recipes.some(x=>x.recipeId===id),false,"held source cannot appear in GK search");
-  }
-});
