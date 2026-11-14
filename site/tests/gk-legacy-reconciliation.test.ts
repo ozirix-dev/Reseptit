@@ -265,6 +265,14 @@ test('Live original results preserve frozen history plus the exact reviewed tran
           : json("docs/nutrition/audit.json").inventory.find((entry: {recipe_id:string}) => entry.recipe_id === row.recipe_id);
       assert.equal(baseline?.source_content_hash, historicalHash, "sealed historical nutrition inventory");
       assert.equal(row.status, "ESTIMATE WITH EVIDENCE");
+      const inventoryBeforeRelease = recipeTextForApprovedSnapshot(row.source_path, live, "original-gk");
+      if (inventoryBeforeRelease !== historical) {
+        const transition = json("docs/nutrition/gk-original-content-transition.json");
+        const sealedTransition = transition.changes[row.recipe_id]?.after?.inventory;
+        assert.ok(sealedTransition, row.recipe_id);
+        assert.equal(sealedTransition.source_content_hash, createHash("sha256").update(inventoryBeforeRelease).digest("hex"));
+        return sealedTransition;
+      }
       return baseline;
     }
     return {...row, ingredients: parseMarkdown(historical)!.data.ingredients, notes: "", source_content_hash: historicalHash};
