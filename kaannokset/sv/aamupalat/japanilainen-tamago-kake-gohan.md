@@ -56,7 +56,7 @@ Tamago kake gohan är en japansk rätt där ägg och soja rörs ner i varmt ris.
 
 ## Ingredienser
 
-Väg upp 100 g okokt ris. Använd medelstora ägg. Om äggen ska röras ner råa, välj pastöriserade ägg som enligt förpackningen kan ätas råa.
+Mängderna finns i ingredienslistan.
 
 ## Gör så här
 
@@ -67,4 +67,4 @@ Väg upp 100 g okokt ris. Använd medelstora ägg. Om äggen ska röras ner råa
 
 ## Anteckningar
 
-Innehåller ägg och soja. Kontrollera på sojasåsens förpackning om den innehåller vete. Sesamfrön, salladslök och tillbehör på bilden är serveringsförslag.
+Väg upp 100 g okokt ris. Använd medelstora ägg. Om äggen ska röras ner råa, välj pastöriserade ägg som enligt förpackningen kan ätas råa. Innehåller ägg och soja. Kontrollera på sojasåsens förpackning om den innehåller vete. Sesamfrön, salladslök och tillbehör på bilden är serveringsförslag.

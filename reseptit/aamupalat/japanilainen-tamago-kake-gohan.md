@@ -53,7 +53,7 @@ Japanilainen tamago kake gohan on lämmin riisikulho, jossa muna ja soijakastike
 
 ## Ainekset
 
-Mittaa 100 g riisiä kuivana. Valitse keskikokoiset munat. Jos sekoitat munat riisiin raakoina, käytä pastöroituja kananmunia, joiden pakkauksessa sallitaan käyttö raakana.
+Katso punnitut määrät aineslistasta.
 
 ## Valmistus
 
@@ -64,4 +64,4 @@ Mittaa 100 g riisiä kuivana. Valitse keskikokoiset munat. Jos sekoitat munat ri
 
 ## Muistiinpanot
 
-Sisältää kananmunaa ja soijaa. Tarkista soijakastikkeen pakkauksesta, sisältääkö se vehnää. Kuvan seesami, kevätsipuli ja lisukkeet ovat tarjoiluehdotuksia.
+Mittaa 100 g riisiä kuivana. Valitse keskikokoiset munat. Jos sekoitat munat riisiin raakoina, käytä pastöroituja kananmunia, joiden pakkauksessa sallitaan käyttö raakana. Sisältää kananmunaa ja soijaa. Tarkista soijakastikkeen pakkauksesta, sisältääkö se vehnää. Kuvan seesami, kevätsipuli ja lisukkeet ovat tarjoiluehdotuksia.

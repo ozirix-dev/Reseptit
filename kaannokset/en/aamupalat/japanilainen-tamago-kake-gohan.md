@@ -56,7 +56,7 @@ Tamago kake gohan is a Japanese warm rice bowl with egg and soy sauce stirred th
 
 ## Ingredients
 
-Weigh out 100 g of dry rice. Use medium eggs. If you stir them into the rice raw, use pasteurised eggs labelled as suitable for eating raw.
+See the ingredient list for quantities.
 
 ## Preparation
 
@@ -67,4 +67,4 @@ Weigh out 100 g of dry rice. Use medium eggs. If you stir them into the rice raw
 
 ## Notes
 
-Contains egg and soy. Check the soy sauce label for wheat. The sesame, spring onions and side dishes in the photo are serving suggestions.
+Weigh out 100 g of dry rice. Use medium eggs. If you stir them into the rice raw, use pasteurised eggs labelled as suitable for eating raw. Contains egg and soy. Check the soy sauce label for wheat. The sesame, spring onions and side dishes in the photo are serving suggestions.

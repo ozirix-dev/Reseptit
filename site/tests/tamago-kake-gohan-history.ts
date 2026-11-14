@@ -5,7 +5,7 @@ import { parseMarkdown } from "../src/content/markdown";
 import { recipeFrontmatterSchema } from "../src/content/schema";
 
 export const tamagoKakeGohanSourcePath = "reseptit/aamupalat/japanilainen-tamago-kake-gohan.md";
-const reviewedBlob = "1407a263548a2e9e7c8ae1fe9452b1d8a33b560b";
+const reviewedBlob = "bb53351c165630bbc4ca0ce0c88c25abeae770d7";
 const historicalBlob = "d51492200bb882497b036e05754064d1f837c9b7";
 
 // Reconstruct the exact frozen source for historical GK tests only.
