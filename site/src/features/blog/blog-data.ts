@@ -25,8 +25,6 @@ export interface BlogPost {
   related: { title: string; path: string }[];
 }
 export const blogIndexPath = "/ruokaopas/";
-export const blogIndexTitle = "Ruokaopas | Reseptit";
-export const blogIndexDescription = "Ruoanlaiton tekniikoita, reseptien taustoja ja ymmärrettävää ravitsemustietoa. Lähteistetyt artikkelit täydentävät reseptejä.";
 const siteBase = siteTarget.baseUrl;
 export const blogPosts: BlogPost[] = [
   {
@@ -163,8 +161,6 @@ export const blogPosts: BlogPost[] = [
   },
   ...moreBlogPosts
 ];
-export const blogRoutes = [blogIndexPath, ...blogPosts.map(post => post.routePath)];
-export const blogPostForRoute = (route: string) => blogPosts.find(post => post.routePath === route) ?? null;
 export function blogJsonLd(post: BlogPost) {
   return {
     "@context": "https://schema.org",
