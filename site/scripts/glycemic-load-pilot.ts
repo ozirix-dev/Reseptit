@@ -1,3 +1,4 @@
+import { molletesHistoricalText, molletesRecipeId, molletesSourcePath } from "./molletes-reviewed-source";
 import { koreanRiceBowlHistoricalText } from "./korean-rice-bowls-reviewed-source";
 import { coconutBananaHistoricalBindingText, coconutBananaRecipeId } from "./coconut-banana-reviewed-source";
 import { biryaniSourceBeforeReview, biryaniSourcePath } from "./biryani-reviewed-source";
@@ -153,6 +154,10 @@ const coconutBananaMarkdown = publishedRecipeSources.get(coconutBananaRecipeId)?
 const coconutBananaNeedsGkReview = coconutBananaMarkdown !== undefined &&
   coconutBananaHistoricalBindingText(coconutBananaMarkdown) !== coconutBananaMarkdown;
 
+const molletesMarkdown = publishedRecipeSources.get(molletesRecipeId)?.markdown;
+const molletesNeedsGkReview = molletesMarkdown !== undefined &&
+  molletesHistoricalText(molletesSourcePath, molletesMarkdown) !== molletesMarkdown;
+
 const koreanRiceBowlsNeedingGkReview = new Set<string>();
 const sourceHashes = Object.fromEntries(expectedRecipeIds.map((recipeId) => {
   const source = publishedRecipeSources.get(recipeId);
@@ -162,8 +167,10 @@ const sourceHashes = Object.fromEntries(expectedRecipeIds.map((recipeId) => {
     ? biryaniSourceBeforeReview(biryaniSourcePath, source.markdown)
     : recipeId === coconutBananaRecipeId
       ? coconutBananaHistoricalBindingText(source.markdown)
-      : koreanRiceBowlHistoricalText(`reseptit/aamupalat/${recipeId}.md`, source.markdown);
-  if (recipeId !== coconutBananaRecipeId && recipeId !== "hyderabadi-kanabiryani" && markdown !== source.markdown) {
+      : recipeId === molletesRecipeId
+        ? molletesHistoricalText(molletesSourcePath, source.markdown)
+        : koreanRiceBowlHistoricalText(`reseptit/aamupalat/${recipeId}.md`, source.markdown);
+  if (recipeId !== coconutBananaRecipeId && recipeId !== "hyderabadi-kanabiryani" && recipeId !== molletesRecipeId && markdown !== source.markdown) {
     koreanRiceBowlsNeedingGkReview.add(recipeId);
   }
   return [recipeId, recipeBindingHash(reviewedColdPuddingBindingText(`reseptit/aamupalat/${recipeId}.md`, markdown), recipeAliases.aliases)];
@@ -280,7 +287,8 @@ const publicResults = results.flatMap((result) => {
   if (result.recipeId === "maksalaatikko-kukkakaalilla" ||
       (result.recipeId === "hyderabadi-kanabiryani" && biryaniUsesReviewedMilk) ||
       (result.recipeId === coconutBananaRecipeId && coconutBananaNeedsGkReview) ||
-      koreanRiceBowlsNeedingGkReview.has(result.recipeId)) return {
+      koreanRiceBowlsNeedingGkReview.has(result.recipeId) ||
+      (result.recipeId === molletesRecipeId && molletesNeedsGkReview)) return {
     ...recipeIdentity,
     status: "INSUFFICIENT SOURCE DATA",
     glycemicLoadPerServing: null,
@@ -387,7 +395,7 @@ if (!isFixtureBuild && publicResults.length !== expectedPublicResultCount) {
 const publicGkOnlyVariants = isFixtureBuild ? [] :
   gkOnlyVariants.filter(variant => !isPublicRecipeQuarantined(variant.recipeId));
 const publicVersionCoverage = countGkVersions(
-  results.filter(result => !isPublicRecipeQuarantined(result.recipeId)),
+  isFixtureBuild ? results.filter(result => !isPublicRecipeQuarantined(result.recipeId)) : publicResults,
   publicGkOnlyVariants,
 );
 const gkOnlyModule = `/* Generated. Explicit GK-only version data; parent macros are separate. */\nimport type {GkOnlyVariant,GkVersionCoverage} from '../features/recipes/gk-only-types';\nexport const gkOnlyVariants:GkOnlyVariant[]=${JSON.stringify(publicGkOnlyVariants,null,2)};\nexport const gkVersionCoverage:GkVersionCoverage=${JSON.stringify(publicVersionCoverage,null,2)};\n`;
