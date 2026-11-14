@@ -1,8 +1,6 @@
 name: Repository hygiene
 
 'on':
-  pull_request:
-    types: [closed]
   schedule:
     - cron: '17 6 * * 0'
   workflow_dispatch:
@@ -12,54 +10,7 @@ permissions:
   pull-requests: read
 
 jobs:
-  retire-merged-branch:
-    if: >-
-      github.event_name == 'pull_request' &&
-      github.event.pull_request.merged == true &&
-      github.event.pull_request.head.repo.full_name == github.repository
-    runs-on: ubuntu-24.04
-    permissions:
-      contents: write
-      pull-requests: read
-    steps:
-      - name: Delete only unchanged, unreferenced merged task branch
-        shell: bash
-        env:
-          GH_TOKEN: ${{ github.token }}
-          REPO: ${{ github.repository }}
-          HEAD_REF: ${{ github.event.pull_request.head.ref }}
-          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
-          BASE_REF: ${{ github.event.pull_request.base.ref }}
-        run: |
-          set -euo pipefail
-          # Explicit allowlist: long-lived, release and user-managed branches stay.
-          case "$HEAD_REF" in
-            codex/*|chatgpt/*|chore/*|fix/*|quality/*|review/*) ;;
-            *) echo "Preserved outside maintenance prefix: $HEAD_REF"; exit 0 ;;
-          esac
-          if [[ -z "$HEAD_REF" || "$HEAD_REF" == "$BASE_REF" || "$HEAD_REF" == "main" ]]; then
-            echo "Protected default/base branch"; exit 0
-          fi
-          # The remote branch may already be gone or may have advanced after merge.
-          if ! current_sha="$(gh api "repos/$REPO/git/ref/heads/$HEAD_REF" --jq '.object.sha')"; then
-            echo "Ref unavailable: no deletion"; exit 0
-          fi
-          if [[ "$current_sha" != "$HEAD_SHA" ]]; then
-            echo "Head changed since merge: keep $HEAD_REF"; exit 0
-          fi
-          # A source branch may have another open PR against a different base.
-          active=$(gh api --paginate "repos/$REPO/pulls?state=open&per_page=100" |
-            jq -s --arg repo "$REPO" --arg head "$HEAD_REF" \
-              '[.[][] | select(.head.repo.full_name == $repo and .head.ref == $head)] | length')
-          if [[ "$active" != '0' ]]; then
-            echo "Branch has $active open PR(s): keep $HEAD_REF"; exit 0
-          fi
-          # No --force. GitHub branch protection and permissions still apply.
-          gh api --method DELETE "repos/$REPO/git/refs/heads/$HEAD_REF"
-          echo "Deleted merged and unchanged branch $HEAD_REF ($HEAD_SHA)" >> "$GITHUB_STEP_SUMMARY"
-
   weekly-report:
-    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-24.04
     steps:
       - name: Read-only remote branch inventory
@@ -75,6 +26,6 @@ jobs:
             echo '## Repository hygiene (read only)'
             echo "- Remote branches: $branches"
             echo "- Open PRs (including Draft): $pull_requests"
-            echo '- Existing old branches are **not** bulk deleted.'
-            echo '- Local Windows worktrees are **not** accessible to GitHub Actions.'
+            echo '- All branches are preserved.'
+            echo '- Local worktree inspection is run separately.'
           } >> "$GITHUB_STEP_SUMMARY"
