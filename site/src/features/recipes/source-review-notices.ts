@@ -8,25 +8,10 @@ export interface SourceReviewNotice {
 }
 
 export const sourceReviewNotices: Readonly<Record<string, SourceReviewNotice>> = Object.freeze({
-  "rahka-marjakerroskulho": {
-    heading: "Ravintoarvojen lähdetarkistus kesken",
-    details: "Aiemmat ravintoarvot on piilotettu lähdetarkistuksen ajaksi. Maitorahkan, turkkilaisen jogurtin, metsämustikan, hasselpähkinän, sitruunankuoren teelusikkapainon ja valinnaisen makeutuksen tuotevastaavuutta ei ole vielä kokonaan varmennettu. Tuotteen vaihto voi muuttaa hiilihydraatteja ja rasvaa.",
-    allergens: "Sisältää maitoa ja hasselpähkinää. Tarkista käyttämiesi tuotteiden pakkaukset.",
-  },
   "intialainen-pinaatti-paneer-chilla": {
     heading: "Ravintoarvojen laskenta kesken",
     details: "Neljä varsinaista makroarvoa ja hyväksytty ainesosakohtainen laskentasyöte puuttuvat. Juustokuminan teelusikkapaino ja paistoöljyn syöty osuus pitää täsmentää. Ohjeessa ei ole korianterichutneyta eikä sitruunalohkoja, ellei niitä lisätä ainesluetteloon erikseen.",
     allergens: "Sisältää maitoa (paneer) ja kikhernejauhoa (palkokasvi). Tarkista pakkaukset.",
-  },
-  "japanilainen-hojicha-jogurtti-persimonilla": {
-    heading: "Syötävän teejauheen laskenta kesken",
-    details: "Tämän ohjeen 2 g hienoa hojicha-jauhetta syödään kokonaan, mutta nykyiset ravintoarvot eivät sisällä jauheen hiilihydraatteja, kuitua, proteiinia ja rasvaa. Teetä ei tässä versiossa hauduteta ja siivilöidä pois.",
-    allergens: "Sisältää maitoa (jogurtti) ja seesamia. Tarkista myös hojicha-tuotteen pakkaus.",
-  },
-  "vietnamilainen-papaija-kookospuuro": {
-    heading: "Tapiokahelmen tuotteen ja kypsennysajan tarkistus kesken",
-    details: "Ohje on tarkoitettu kuivalle pienikokoiselle tapiokahelmelle, joka kypsyy pehmeäksi noin 15–20 minuutissa. Liotusta tai pidempää keittoa vaativilla tuotteilla 25 minuutin kokonaisaika ei riitä. Käytetty 700 ml keitinvettä pidetään puurossa, eikä helmiä huuhdella tai valuteta. Älä vaihda esikeitettyihin tai siirapissa oleviin kuplateehelmiin ilman uutta ravintolaskentaa.",
-    allergens: "Tarkista kookosmaidon ja tapiokahelmien pakkausmerkinnät, lisäaineet ja mahdolliset allergiat.",
   },
   "vietnamilainen-banh-xeo-aamiaisletut": {
     heading: "Vaalea bánh xèo -sovellus vaatii rakennevarmennuksen",

@@ -159,7 +159,7 @@ test("GK values link to centralized recipe details on every published translatio
   ]);
   const visibleReviewed = audit.results.filter(result => !isPublicRecipeQuarantined(result.recipeId)).map(result =>
     historicalOnly.has(result.recipeId) ? { ...result, status: "INSUFFICIENT SOURCE DATA" } : result);
-  for (const id of ["lahi-ita-zaatar-munat", "pohjoisafrikkalainen-baghrir"]) {
+  for (const id of ["lahi-ita-zaatar-munat", "pohjoisafrikkalainen-baghrir", "rahka-marjakerroskulho", "japanilainen-hojicha-jogurtti-persimonilla", "vietnamilainen-papaija-kookospuuro"]) {
     const current = glycemicLoadPilotResults.find(result => result.recipeId === id);
     assert.equal(current?.glycemicLoadPerServing, null, id + ": old GK is never the current estimate");
     const locales = siteContent.recipes.filter(recipe => recipe.recipeId === id);

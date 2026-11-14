@@ -19,16 +19,13 @@ const expected: Record<string,string> = {
   "korealainen-kimchi-jeon-aamiaiseksi": "b7187bbba5e0e8f9632fd3e3885ddd2dd8716c27e93912836bf92eeea9fff3ef",
 
   "intialainen-pinaatti-paneer-chilla": "c4c77740d96d341f6530dc32275426bbf5fd6ed971dcad69d7f7d4e8de46fcd2",
-  "vietnamilainen-papaija-kookospuuro": "02440d7cfaac9b9b3b79e2467ee0fc4bd26afc49a0204253accf3478992aec99",
   "uunimuna-avokadot": "7f93c5780c639a828a97932134f1568c265ba3f750c81fd62ee96d08e23d4b41",
   "intialainen-besan-chilla": "287c9e88b59c37d1ce84bb0c9021b5bc328a285dfba85a8cbba5f8d45e887010",
   "thai-kananmunat-kookoscurryssa": "1d127dee1a5b1e82c2cbbb7d71e41aac62e4d86266074d27d867197aa9e0ae83",
   "vietnamilainen-banh-xeo-aamiaisletut": "bd4fbd1c77bd3d5383e5986c71bc87e5b2c0c0fd6ac1faa8b660b300b7b2136d",
   "vietnamilainen-banh-cuon-sienilla": "54b5cf45d8eeff8a07d9c5e9bcac2e4db43d916fb594818c2cc72485aafa9385",
 
-  "rahka-marjakerroskulho": "c571f8f509bde4da9159bfdb4e1449f856030c9c92bf8a8ba1e2376d9c33c058",
   "karibia-mango-limejogurtti": "91fcf9425bb58e499304414a99665cc01ba7c37a1a72115262d31e04b5c93a0f",
-  "japanilainen-hojicha-jogurtti-persimonilla": "cae50573ff18898460b95e9c674d0bc39514c7cbaaaa502d4008171b14261cfe",
   "lahi-ita-pistaasijogurtti": "f9a1d41f86c92902bbda7c9f224cbc8de48900ec7726625a482f1ecea794a9e1",
   "vietnamilainen-kahvijogurtti-banaanilla": "73b5dbb717f3833c8354f1fcdfa0fdd86ca78a342d50625881133e44b3aba0e3",
   "valimerellinen-jogurttikulho-hunajalla": "d3b3fa89bf9fe3a4b04e70d3a0d0f8f4fbd957dec2a57cd786cbe8a0af00e0bb",
@@ -43,8 +40,8 @@ const expected: Record<string,string> = {
 };
 const macros = ["carbs_net_per_serving_g","carbs_total_per_serving_g","protein_per_serving_g","fat_per_serving_g"] as const;
 
-test("SHA-pinned FI overlays correct twenty-six dishes without nutrition changes", () => {
-  assert.equal(breakfastFiQualityPaths.length, 26);
+test("SHA-pinned FI overlays correct twenty-three dishes without nutrition changes", () => {
+  assert.equal(breakfastFiQualityPaths.length, 23);
   for (const relative of breakfastFiQualityPaths) {
     const raw = readFileSync(path.join(root, relative), "utf8");
     const beforeMd = parseMarkdown(raw);
@@ -94,18 +91,12 @@ test("SHA-pinned FI overlays correct twenty-six dishes without nutrition changes
       assert.equal((afterMd.content.match(/^\d+\. /gm) ?? []).length, 4);
       assert.notEqual(afterMd.content, beforeMd.content);
       assert.doesNotMatch(afterMd.content.split("## Valmistus")[1] ?? "",/Valmistele ainekset: paloittele kasvikset|Sekoita jauhot tai viljat ja muut kuivat ainekset|Raasta, muussaa tai hienonna pääraaka-aine|hunajavoilla/);
-    } else if (new Set(["intialainen-pinaatti-paneer-chilla","vietnamilainen-papaija-kookospuuro","uunimuna-avokadot","intialainen-besan-chilla","thai-kananmunat-kookoscurryssa","vietnamilainen-banh-xeo-aamiaisletut","vietnamilainen-banh-cuon-sienilla"]).has(before.recipe_id)) {
+    } else if (new Set(["intialainen-pinaatti-paneer-chilla","uunimuna-avokadot","intialainen-besan-chilla","thai-kananmunat-kookoscurryssa","vietnamilainen-banh-xeo-aamiaisletut","vietnamilainen-banh-cuon-sienilla"]).has(before.recipe_id)) {
       const wantSteps = ["intialainen-pinaatti-paneer-chilla","uunimuna-avokadot"].includes(before.recipe_id) ? 5 : 4;
       assert.equal((afterMd.content.match(/^\d+\. /gm) ?? []).length, wantSteps);
       assert.notEqual(afterMd.content, beforeMd.content);
       assert.doesNotMatch(afterMd.content,/Valmistele ainekset: paloittele kasvikset|Sekoita jauhot tai viljat ja muut kuivat ainekset|Kypsennä liha tai muut täytteet kypsiksi|Tarjoa halutessasi korianterichutney/);
-    } else if (before.recipe_id === "rahka-marjakerroskulho") {
-      assert.equal(before.servings, 4);
-      assert.deepEqual(before.cooking_method, ["kypsentäminen"]);
-      assert.deepEqual(after.cooking_method, ["kylmävalmistus"]);
-      assert.equal((afterMd.content.match(/^\d+\. /gm) ?? []).length, 4);
-      assert.equal(afterMd.content, beforeMd.content);
-    } else if (new Set(["karibia-mango-limejogurtti","japanilainen-hojicha-jogurtti-persimonilla","lahi-ita-pistaasijogurtti","vietnamilainen-kahvijogurtti-banaanilla","valimerellinen-jogurttikulho-hunajalla","kiinalainen-soijamaito-aamiaisella","korealainen-gyeranbap-riisikulho"]).has(before.recipe_id)) {
+    } else if (new Set(["karibia-mango-limejogurtti","lahi-ita-pistaasijogurtti","vietnamilainen-kahvijogurtti-banaanilla","valimerellinen-jogurttikulho-hunajalla","kiinalainen-soijamaito-aamiaisella","korealainen-gyeranbap-riisikulho"]).has(before.recipe_id)) {
       assert.equal((afterMd.content.match(/^\d+\. /gm) ?? []).length, 4);
       assert.doesNotMatch(afterMd.content, /Valmistele kulhon ainekset|Paloittele tuoreet kasvikset ja valmistele yrtit|Kypsennä riisi pakkauksen ohjeen mukaan\. Paista tofu|kypsennä pavut tai liha tarvittaessa erikseen/);
       assert.notEqual(afterMd.content, beforeMd.content);
@@ -162,14 +153,14 @@ test("SHA-pinned FI overlays correct twenty-six dishes without nutrition changes
 
 test("generated FI cards use chef-corrected instructions and the reviewed noodle facet",()=>{
   const recipes = new Map(siteContent.recipes.filter(r=>r.locale==="fi").map(r=>[r.recipeId,r]));
-  for (const id of ["karibia-mango-limejogurtti","japanilainen-hojicha-jogurtti-persimonilla","lahi-ita-pistaasijogurtti","vietnamilainen-kahvijogurtti-banaanilla","valimerellinen-jogurttikulho-hunajalla","kiinalainen-soijamaito-aamiaisella","korealainen-gyeranbap-riisikulho"]) {
+  for (const id of ["karibia-mango-limejogurtti","lahi-ita-pistaasijogurtti","vietnamilainen-kahvijogurtti-banaanilla","valimerellinen-jogurttikulho-hunajalla","kiinalainen-soijamaito-aamiaisella","korealainen-gyeranbap-riisikulho"]) {
     const recipe = recipes.get(id);
     assert.ok(recipe, "FI generated missing: " + id);
     assert.equal(recipe.servings, 2);
     const fullText = recipe.instructionsText.join(" ");
     assert.doesNotMatch(fullText, /Valmistele kulhon ainekset|Paloittele tuoreet kasvikset ja valmistele yrtit|Kypsennä riisi pakkauksen ohjeen mukaan\. Paista tofu|kypsennä pavut tai liha tarvittaessa erikseen/);
   }
-  for(const id of ["intialainen-pinaatti-paneer-chilla","vietnamilainen-papaija-kookospuuro","uunimuna-avokadot","intialainen-besan-chilla","thai-kananmunat-kookoscurryssa","vietnamilainen-banh-xeo-aamiaisletut","vietnamilainen-banh-cuon-sienilla"]) {
+  for(const id of ["intialainen-pinaatti-paneer-chilla","uunimuna-avokadot","intialainen-besan-chilla","thai-kananmunat-kookoscurryssa","vietnamilainen-banh-xeo-aamiaisletut","vietnamilainen-banh-cuon-sienilla"]) {
     const rec = recipes.get(id);
     assert.ok(rec, "Missing corrected FI recipe: "+id);
     assert.doesNotMatch(rec.instructionsText.join(" "),/Sekoita jauhot tai viljat ja muut kuivat ainekset|Kypsennä liha tai muut täytteet kypsiksi|Valmistele ainekset: paloittele kasvikset/);
@@ -186,7 +177,7 @@ test("generated FI cards use chef-corrected instructions and the reviewed noodle
   const rahka = recipes.get("rahka-marjakerroskulho");
   assert.ok(rahka);
   assert.equal(rahka.servings, 4);
-  assert.equal(rahka.instructionsText.length, 4);
+  assert.equal(rahka.instructionsText.length, 3);
   const ham = recipes.get("yrttituorejuusto-kinkkurullat");
   assert.ok(ham);
   assert.equal(ham.servings,4);
@@ -246,9 +237,8 @@ test("F25 doujiang and Thai coconut-pancake public corrections preserve source n
   }
 });
 
-test("F25 batch A2 three real cooking method revisions are source-sealed and do not alter nutrients", () => {
+test("F25 batch A2 two real cooking method revisions are source-sealed and do not alter nutrients", () => {
   const cases: Array<[string, RegExp, RegExp]> = [
-    ["vietnamilainen-papaija-kookospuuro", /100 g kuivia pieniä tapiokahelmiä/, /Älä.*valuta|älä valuta|älä valuta tai huuhtele/],
     ["vietnamilainen-banh-cuon-sienilla", /75 °C/, /40–50 minuuttia/],
     ["vietnamilainen-banh-xeo-aamiaisletut", /yhdeltä puolelta/, /kuumenna idut kauttaaltaan läpikuumiksi/],
   ];

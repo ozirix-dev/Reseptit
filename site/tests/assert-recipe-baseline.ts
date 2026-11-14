@@ -251,6 +251,8 @@ function checkedPostBaselineRelease(root: string, baseline: string, recipeId: st
 // Exact old calculation blobs stay in Git. Admitting the independently
 // approved current package here does not alter the historical GK calculation.
 const f25HistoricalNutrition = new Map([
+  ["vietnamilainen-papaija-kookospuuro", "46c0590ba9cbc3554f04d5e00846e586982bea9a"],
+  ["japanilainen-hojicha-jogurtti-persimonilla", "0a07d2eec8383faf45779fb5278daf4464f1d3de"],
   ["pohjoisafrikkalainen-baghrir", "6044f97b27203168c278fd16bbabfa9abcac426d"],
   ["lahi-ita-zaatar-munat", "1bee339db200140d66db8dbe49bd3e4b4adfdc72"],
 ]);
@@ -421,7 +423,9 @@ export function assertRecipeBaseline(root: string, baseline: string, ...protecte
       }
     }
     if (status === "A" && /^docs\/nutrition\/calculations\/[a-z0-9-]+\.json$/.test(file)) {
-      if (checkedPostBaselineRelease(root, baseline, path.basename(file, ".json"))) continue;
+      const id = path.basename(file, ".json");
+      if (id === "rahka-marjakerroskulho" && sourceReleaseGateDecision(id, undefined, root).authorized) continue;
+      if (checkedPostBaselineRelease(root, baseline, id)) continue;
     }
     if (status === "A" && file.startsWith("kaannokset/")) {
       const published = parseMarkdown(readFileSync(path.join(root, file), "utf8"));

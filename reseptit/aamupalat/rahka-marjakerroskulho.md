@@ -1,71 +1,69 @@
 ---
-title: Rahka-marjakerroskulho
+title: "Rahka-marjakerroskulho"
 recipe_id: rahka-marjakerroskulho
 url_slug: rahka-marjakerroskulho
 category: aamupala
 language: fi
 status: published
+translation_languages: [en, sv, th]
+translation_status: {en: published, sv: published, th: published}
 main_ingredient:
   - rahka
   - marjat
 cooking_method:
-  - kypsentäminen
-tags:
-  - aamupala
-  - rahka
-  - marjat
+  - kylmävalmistus
 ingredients:
   - amount: 250
     unit: g
-    item: maitorahkaa
+    item: "maustamatonta maitorahkaa (rasvaa alle 0,5 %)"
   - amount: 100
     unit: g
-    item: maustamatonta turkkilaista jogurttia
+    item: "maustamatonta turkkilaista jogurttia (rasvaa 10 %)"
   - amount: 100
     unit: g
-    item: mansikoita
+    item: "tuoreita mansikoita ilman kantoja"
   - amount: 50
     unit: g
-    item: mustikoita
+    item: "tuoreita pensasmustikoita"
   - amount: 20
     unit: g
-    item: hasselpähkinöitä
-  - amount: 1
-    unit: tl
-    item: sitruunankuorta
-  - amount: null
-    unit: ""
-    item: makeutusainetta maun mukaan
-carbs_net_per_serving_g: 6.32
-carbs_total_per_serving_g: 8.09
-protein_per_serving_g: 8.05
-fat_per_serving_g: 6.01
+    item: "kuorittuja suolaamattomia hasselpähkinöitä"
+  - amount: 2
+    unit: g
+    item: "hienoksi raastettua sitruunankuorta"
 servings: 4
 time_total_min: 10
 difficulty: Helppo
+tags:
+  - "aamupala"
+  - "rahka"
 image:
-  src: aamupalat/rahka-marjakerroskulho.webp
-  alt: Rahka-marjakerroskulho tarjoiltuna
+  src: aamupalat/rahka-marjakerroskulho-punnittu.webp
+  alt: "Kerroksittain rahkaa, mansikoita ja pensasmustikoita, pinnalla hasselpähkinöitä."
   width: 1536
   height: 1024
+carbs_net_per_serving_g: 5.9
+carbs_total_per_serving_g: 7.32
+protein_per_serving_g: 8.1
+fat_per_serving_g: 5.88
 ---
+
 # Rahka-marjakerroskulho
 
 ## Kuvaus
 
-Kerrostettu rahka-aamiainen yhdistää raikkaat marjat, sitruunan ja pähkinöiden rapeuden.
+Sileä rahka ja jogurtti kerrostetaan mansikoiden ja pensasmustikoiden kanssa. Hasselpähkinät tuovat rapeutta.
 
 ## Ainekset
 
-Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
+Punnitse marjat ilman kantoja. Raasta pestystä sitruunasta vain keltainen pinta.
 
 ## Valmistus
 
-1. Sekoita rahka, jogurtti ja sitruunankuori tasaiseksi. Makeuta halutessasi.
-2. Viipaloi mansikat ja rouhi hasselpähkinät.
-3. Lusikoi lasiin vuorotellen rahkaa ja marjoja.
-4. Ripottele pähkinät pinnalle juuri ennen tarjoamista.
+1. Sekoita kylmä rahka, jogurtti ja sitruunankuori sileäksi.
+2. Huuhtele marjat, valuta hyvin ja viipaloi mansikat. Rouhi hasselpähkinät.
+3. Jaa rahkaseos ja marjat neljään lasiin vuorotellen. Jaa pähkinärouhe pinnalle juuri ennen tarjoamista.
 
 ## Muistiinpanot
 
-Jos haluat kulhosta vähähiilihydraattisemman, vaihda mansikat vadelmiin ja vähennä marjojen määrää.
+Sisältää maitoa ja hasselpähkinää. Säilytä kylmässä. Ravintoarvio ei sisällä enintään 0,5 g sitruunankuorta annosta kohti. GK: ei määritetty. Kuva on kuvituskuva.

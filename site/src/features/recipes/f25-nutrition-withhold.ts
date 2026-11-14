@@ -6,10 +6,7 @@
 import type { RecipeLocale } from "@/types/content";
 
 export const f25UnverifiedNutritionSourceIds = Object.freeze([
-  "rahka-marjakerroskulho",
   "intialainen-pinaatti-paneer-chilla",
-  "japanilainen-hojicha-jogurtti-persimonilla",
-  "vietnamilainen-papaija-kookospuuro",
   "vietnamilainen-banh-cuon-sienilla",
   "vietnamilainen-banh-xeo-aamiaisletut",
 ] as const);
