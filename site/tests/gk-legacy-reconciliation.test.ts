@@ -1,3 +1,4 @@
+import { molletesHistoricalText, molletesSourcePath, molletesRecipeId } from "../scripts/molletes-reviewed-source";
 import { koreanRiceBowlHistoricalText } from "../scripts/korean-rice-bowls-reviewed-source";
 import { originalForCoconutBananaHistory } from "./coconut-banana-history";
 import {coconutBananaHistoricalBindingText, coconutBananaRecipeId, coconutBananaSourcePath} from "../scripts/coconut-banana-reviewed-source";
@@ -244,6 +245,13 @@ test('Live original results preserve frozen history plus the exact reviewed tran
    if (["reseptit/aamupalat/korealainen-bataatti-riisikulho.md", "reseptit/aamupalat/korealainen-tofu-kimchi-aamiaiskulho.md"].includes(row.source_path)) {
     const live = read(row.source_path).replaceAll("\r\n", "\n");
     const old = koreanRiceBowlHistoricalText(row.source_path, live);
+    assert.notEqual(live, old);
+    assert.equal(row.source_content_hash, createHash("sha256").update(live).digest("hex"));
+    return {...row, ingredients: parseMarkdown(old)!.data.ingredients, notes: "", source_content_hash: createHash("sha256").update(old).digest("hex")};
+   }
+   if (row.source_path === molletesSourcePath) {
+    const live = read(row.source_path).replaceAll("\r\n", "\n");
+    const old = molletesHistoricalText(row.source_path, live);
     assert.notEqual(live, old);
     assert.equal(row.source_content_hash, createHash("sha256").update(live).digest("hex"));
     return {...row, ingredients: parseMarkdown(old)!.data.ingredients, notes: "", source_content_hash: createHash("sha256").update(old).digest("hex")};
@@ -501,4 +509,20 @@ test("the two new rice bowls withhold an original GK number and keep the separat
   assert.deepEqual(Object.keys(published.localeRoutes).sort(), ["en", "fi", "sv", "th"]);
  }
  assert.equal(gkOnlyVariants.find(variant => variant.recipeId === ids[1])?.point, 25.16);
+});
+
+test("the historical molletes GK stays in the audit and out of the current recipe and public coverage", async () => {
+ const current = read(molletesSourcePath);
+ const modified = current.replace("amount: 120", "amount: 121");
+ assert.notEqual(current, modified);
+ assert.equal(molletesHistoricalText(molletesSourcePath, modified), modified);
+ const old = report.results.find((row: any) => row.recipeId === molletesRecipeId);
+ assert.equal(old.glycemicLoadPerServing, 20.01);
+ const {glycemicLoadPilotResults} = await import("../src/generated/glycemic-load-pilot.generated");
+ const {gkVersionCoverage} = await import("../src/generated/gk-only-variants.generated");
+ const published = glycemicLoadPilotResults.find(row => row.recipeId === molletesRecipeId)!;
+ assert.equal(published.status, "INSUFFICIENT SOURCE DATA");
+ assert.equal(published.glycemicLoadPerServing, null);
+ assert.deepEqual(published.sourceReferences, []);
+ assert.ok(!gkVersionCoverage.numericRecipeIds.includes(molletesRecipeId));
 });

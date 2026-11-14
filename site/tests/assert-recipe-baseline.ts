@@ -1,3 +1,4 @@
+import { molletesHistoricalText } from "../scripts/molletes-reviewed-source";
 import { koreanRiceBowlHistoricalText } from "../scripts/korean-rice-bowls-reviewed-source";
 import { originalForCoconutBananaHistory } from "./coconut-banana-history";
 import {mainAdditionFiles, postBaselineBriocheIds, postBaselineClassicIds} from "./original-content-transition";
@@ -376,7 +377,7 @@ export function assertRecipeBaseline(root: string, baseline: string, ...protecte
           historicalRendangForApprovedVersion(file, historicalFarinataForApprovedPanVersion(file, current))))))));
       const reviewedSnapshot = originalForKetoprakHistory(root, file, originalForBissaraHistory(root, file, originalForJumeokbapHistory(root, file, snapshot)));
       const historicalSnapshot = originalForCoconutBananaHistory(root, file, originalForBindaetteokHistory(root, file, originalForTamagoKakeGohanHistory(root, file, reviewedSnapshot)));
-      const recipeBeforeReview = koreanRiceBowlHistoricalText(file, historicalSnapshot);
+      const recipeBeforeReview = molletesHistoricalText(file, koreanRiceBowlHistoricalText(file, historicalSnapshot));
       if (recipeBeforeReview !== current) {
         const original = execFileSync("git", ["show", baseline + ":" + file], { cwd: root, encoding: "utf8" });
         assert.equal(recipeBeforeReview, original, change);

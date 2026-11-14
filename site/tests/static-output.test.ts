@@ -152,7 +152,12 @@ test("GK values link to centralized recipe details on every published translatio
   assert.ok(lasagneAuditRows[0]?.ingredients.every((ingredient) => ingredient.availableCarbohydratePerServingG === null && ingredient.gi === null && ingredient.fineliRecordId === null && ingredient.giRecordId === null));
   assert.equal(glycemicLoadPilotResults.length, sourceRecipeIds.size-pending.length,
     "new public FI3 GK-HOLD cases are tracked separately, never shown as approved GK");
-  const visibleReviewed = audit.results.filter(result => !isPublicRecipeQuarantined(result.recipeId));
+  const historicalMolletes = audit.results.find(result => result.recipeId === "meksikolainen-molletes-pico-de-gallolla");
+  assert.equal(historicalMolletes?.glycemicLoadPerServing, 20.01, "historical molletes audit remains exact");
+  const visibleReviewed = audit.results.filter(result => !isPublicRecipeQuarantined(result.recipeId)).map(result =>
+    result === historicalMolletes ? { ...result, status: "INSUFFICIENT SOURCE DATA" } : result);
+  const molletes = glycemicLoadPilotResults.find(result => result.recipeId === historicalMolletes?.recipeId);
+  assert.equal(molletes?.glycemicLoadPerServing, null, "current molletes cannot display its historical estimate");
   assert.equal(glycemicLoadPilotResults.filter(result => result.status === "CALCULATED").length,
     visibleReviewed.filter(result => result.status === "CALCULATED").length);
   assert.equal(glycemicLoadPilotResults.filter(result => result.status === "INSUFFICIENT SOURCE DATA").length,
