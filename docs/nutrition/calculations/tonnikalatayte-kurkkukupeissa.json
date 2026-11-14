@@ -1,0 +1,232 @@
+{
+  "recipeId": "tonnikalatayte-kurkkukupeissa",
+  "sourceHash": "5673eed2cbb8f377c3169fd6b39c4c654558f0485cfc987ea08b7862c9b4464f",
+  "calculatedAt": "2026-11-13",
+  "batchId": "batch-551",
+  "servings": 4,
+  "scope": "Four servings of three cups. Twelve cups use an estimated 25 g of cucumber and 20 g filling each. The tuna is weighed drained, and the cucumber is weighed after hollowing. AFCD F009300 matches the drained water-packed tuna type; fat content varies by brand. AFCD F003320 is a raw unpeeled cucumber composition proxy for cups after the centres are removed. Preparation was reviewed against two independent cucumber cup recipes. The exact mass and number were not physically tested.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "item": "vedessä säilöttyä tonnikalaa, valutettuna",
+      "amount": 150,
+      "unit": "g",
+      "state": "canned unflavoured tuna in water, drained",
+      "matchEvidence": "Source F009300 (canned unflavoured tuna in water, drained). The edible input is weighed directly.",
+      "edibleFraction": 1,
+      "edibleEvidence": "All quantities refer to the weighed edible ingredient.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Amounts are edible weights. Tuna is weighed after draining, cucumber after hollowing.",
+      "record": {
+        "id": "afcd-F009300-release-3",
+        "name": "Tuna, unflavoured, canned in water, drained",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia",
+        "state": "canned unflavoured tuna in water, drained",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrates with and without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 26.1,
+          "fat": 2.6
+        }
+      }
+    },
+    {
+      "item": "kurkkua kuorineen, punnittuna kuppien kovertamisen jälkeen",
+      "amount": 300,
+      "unit": "g",
+      "state": "raw unpeeled cucumber, weighed after removing the centres",
+      "matchEvidence": "Source F003320 (raw unpeeled cucumber, weighed after removing the centres). The edible input is weighed directly.",
+      "edibleFraction": 1,
+      "edibleEvidence": "All quantities refer to the weighed edible ingredient.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Amounts are edible weights. Tuna is weighed after draining, cucumber after hollowing.",
+      "record": {
+        "id": "afcd-F003320-release-3",
+        "name": "Cucumber, common, unpeeled, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/monitoringnutrition/afcd",
+        "retrievedAt": "2026-10-24",
+        "licence": "FSANZ AFCD Release 3; CC BY-SA 3.0 Australia",
+        "state": "raw unpeeled cucumber, weighed after removing the centres",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrates with and without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 1.2,
+          "fibre": 1.4,
+          "polyols": 0,
+          "protein": 0.8,
+          "fat": 0.1
+        }
+      }
+    },
+    {
+      "item": "täysrasvaista majoneesia (rasvaa noin 80 %)",
+      "amount": 40,
+      "unit": "g",
+      "state": "commercial full-fat mayonnaise, about 80 percent fat",
+      "matchEvidence": "Source 30925 (commercial full-fat mayonnaise, about 80 percent fat). The edible input is weighed directly.",
+      "edibleFraction": 1,
+      "edibleEvidence": "All quantities refer to the weighed edible ingredient.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Amounts are edible weights. Tuna is weighed after draining, cucumber after hollowing.",
+      "record": {
+        "id": "fineli-30925-release-20",
+        "name": "MAJONEESI, RASVAA 80 %",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/30925",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "commercial full-fat mayonnaise, about 80 percent fat",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "componentValues": {
+          "CHO": 1.029,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "per100g": {
+          "carbohydrate": 1.029,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 1.12,
+          "fat": 81.042
+        }
+      }
+    },
+    {
+      "item": "varsiselleriä",
+      "amount": 40,
+      "unit": "g",
+      "state": "raw celery stalk, trimmed",
+      "matchEvidence": "Source 339 (raw celery stalk, trimmed). The edible input is weighed directly.",
+      "edibleFraction": 1,
+      "edibleEvidence": "All quantities refer to the weighed edible ingredient.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Amounts are edible weights. Tuna is weighed after draining, cucumber after hollowing.",
+      "record": {
+        "id": "fineli-339-release-20",
+        "name": "LEHTISELLERI, VARSISELLERI",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/339",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "raw celery stalk, trimmed",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "componentValues": {
+          "CHO": 1.1,
+          "FIBT": 2.5,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "per100g": {
+          "carbohydrate": 1.1,
+          "fibre": 2.5,
+          "polyols": 0,
+          "protein": 1.12,
+          "fat": 0.2
+        }
+      }
+    },
+    {
+      "item": "laimentamatonta sitruunatäysmehua",
+      "amount": 10,
+      "unit": "g",
+      "state": "undiluted lemon juice",
+      "matchEvidence": "Source 11557 (undiluted lemon juice). The edible input is weighed directly.",
+      "edibleFraction": 1,
+      "edibleEvidence": "All quantities refer to the weighed edible ingredient.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Amounts are edible weights. Tuna is weighed after draining, cucumber after hollowing.",
+      "record": {
+        "id": "fineli-11557-release-20",
+        "name": "TÄYSMEHU, SITRUUNATÄYSMEHU, LAIMENTAMATON",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/11557",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "undiluted lemon juice",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "componentValues": {
+          "CHO": 1.6,
+          "FIBT": 0.1,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "per100g": {
+          "carbohydrate": 1.6,
+          "fibre": 0.1,
+          "polyols": 0,
+          "protein": 0.31,
+          "fat": 0
+        }
+      }
+    },
+    {
+      "item": "tuoretta tilliä",
+      "amount": 5,
+      "unit": "g",
+      "state": "fresh dill",
+      "matchEvidence": "Source 369 (fresh dill). The edible input is weighed directly.",
+      "edibleFraction": 1,
+      "edibleEvidence": "All quantities refer to the weighed edible ingredient.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Amounts are edible weights. Tuna is weighed after draining, cucumber after hollowing.",
+      "record": {
+        "id": "fineli-369-release-20",
+        "name": "TILLI, TUORE",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/369",
+        "retrievedAt": "2026-10-24",
+        "licence": "THL, Fineli Release 20, CC BY 4.0",
+        "state": "fresh dill",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "componentValues": {
+          "CHO": 0.9,
+          "FIBT": 2.8,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "per100g": {
+          "carbohydrate": 0.9,
+          "fibre": 2.8,
+          "polyols": 0,
+          "protein": 3.69,
+          "fat": 0.8
+        }
+      }
+    }
+  ]
+}

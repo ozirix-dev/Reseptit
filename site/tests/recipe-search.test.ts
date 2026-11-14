@@ -229,7 +229,12 @@ test("Recipavo homepage preview examples are deterministic, localized and all li
     assert.ok(new Set(picks.map((item) => item.category)).size >= 3, locale);
     assert.deepEqual(recipes.map((item) => item.recipeId), originalOrder, "selection must not mutate the original order");
     const topics = homepageTopics(recipes);
-    assert.ok(topics.length >= 4 && topics.length <= 6, locale);
+    assert.ok(topics.length >= 4 && topics.length <= 7, locale);
+    assert.equal(
+      topics.some((topic) => topic.kind === "category" && topic.value === "valipala"),
+      recipes.some((recipe) => recipe.category === "valipala"),
+      locale,
+    );
     assert.ok(topics.every((topic) => recipes.some((item) => topic.kind === "category"
       ? item.category === topic.value : topic.value === "keto" ? item.dietClass === "keto" : item.dietClass !== null)), locale);
     assert.ok(homepageLabels[locale].topics && homepageLabels[locale].picks && homepageLabels[locale].allRecipes(recipes.length), locale);

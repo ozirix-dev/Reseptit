@@ -16,7 +16,8 @@ import { toolUi } from "./recipe-tools";
 import { glycemicLoadPilotResults } from "@/generated/glycemic-load-pilot.generated";
 import { publishedGlycemicLoadForRecipe } from "./glycemic-load-display";
 import { sourceReviewNotice } from "./source-review-notices";
-import { withholdF25Nutrition, f25ExplicitUndefinedGkLabel } from "./f25-nutrition-withhold";
+import { f25ExplicitUndefinedGkLabel } from "./f25-nutrition-withhold";
+import { recipeNutritionPresentation } from "./nutrition-presentation";
 
 export function RecipePage() {
   const { pathname } = useLocation();
@@ -40,7 +41,7 @@ export function RecipePage() {
         details: "Sienistä huolimatta täytteessä on 150 g raakaa porsaan jauhelihaa: tämä ei ole kasvisruoka. Kypsennä jauheliha kauttaaltaan täysin kypsäksi. Ohuiden riisilevyjen valmistamiseen ja irrottamiseen on varattu noin 40–50 minuuttia. Sivun 50 minuutin kokonaisaika on toimituksellinen arvio, ei koepaistossa mitattu aika.",
       }
     : originalReviewNotice;
-  const withholdNutrition = withholdF25Nutrition(recipe.recipeId,recipe.locale);
+  const { sourceWithheld: withholdNutrition, partialNotice } = recipeNutritionPresentation(recipe.recipeId, recipe.locale);
   const undefinedGkLabel = f25ExplicitUndefinedGkLabel(recipe.recipeId,recipe.locale);
   const gkVariants = gkOnlyVariants.filter(variant => variant.recipeId === recipe.recipeId);
   const hasGkVariant = gkVariants.length > 0;
@@ -83,7 +84,7 @@ export function RecipePage() {
         {servings !== recipe.servings ? <p className="recipe-disclosure recipe-scaled-note">{tools.scaled(recipe.servings)}</p> : null}
         {hydrated && recipe.instructionStepsHtml?.length ? <><div className="step-controls"><p aria-live="polite">{tools.progress}: {completed.length}/{recipe.instructionStepsHtml.length}</p><button type="button" onClick={() => setCompleted([])}>{tools.reset}</button></div><div className="rich-text"><ol className="recipe-steps">{recipe.instructionStepsHtml.map((step, index) => <li key={index} data-complete={completed.includes(index)}><div><label className="recipe-step-toggle"><input type="checkbox" aria-label={`${tools.completed}: ${index + 1}`} checked={completed.includes(index)} onChange={(event) => { const checked = event.currentTarget.checked; setCompleted(values => checked ? [...values, index] : values.filter(value => value !== index)); }} /></label><div className="recipe-step-text" dangerouslySetInnerHTML={{ __html: step }} /></div></li>)}</ol></div></> : <div className="rich-text" dangerouslySetInnerHTML={{ __html: recipe.instructionsHtml }} />}
       </section>
-      <section className="recipe-panel" data-nutrition-scope="ORIGINAL_RECIPE"><h2>{hasGkVariant?gkScopeUi[locale].originalNutrition:labels.nutrition}</h2>{hasGkVariant?<p className="recipe-disclosure" data-macro-separation="gk-only"><strong>{gkScopeUi[locale].macroNotice}</strong></p>:null}<p className="recipe-disclosure" data-f25-nutrition-status={withholdNutrition ? "SOURCE_REVIEW_WITHHELD" : undefined}>{withholdNutrition ? "Ravintoarvojen julkaisu on keskeytetty, koska annoksen ainesosakohtainen laskenta tai tuotematch ei ole vielä hyväksyttävä. Lähtöarvoja ei näytetä virheellisen tarkkoina. Katso reseptin lähdehuomautus." : nutritionItems.length ? tools.nutrition : tools.missing}</p>{nutritionItems.length ? <dl className="nutrition-list">{nutritionItems.map(([key, value]) => <div key={key}><dt>{labels.nutrients[key]}</dt><dd>{formatIngredientAmount(value, 1, 1, numberLocale)} g</dd></div>)}</dl> : null}
+      <section className="recipe-panel" data-nutrition-scope="ORIGINAL_RECIPE"><h2>{hasGkVariant?gkScopeUi[locale].originalNutrition:labels.nutrition}</h2>{hasGkVariant?<p className="recipe-disclosure" data-macro-separation="gk-only"><strong>{gkScopeUi[locale].macroNotice}</strong></p>:null}<p className="recipe-disclosure" data-f25-nutrition-status={withholdNutrition ? "SOURCE_REVIEW_WITHHELD" : undefined}>{withholdNutrition ? "Ravintoarvojen julkaisu on keskeytetty, koska annoksen ainesosakohtainen laskenta tai tuotematch ei ole vielä hyväksyttävä. Lähtöarvoja ei näytetä virheellisen tarkkoina. Katso reseptin lähdehuomautus." : nutritionItems.length ? tools.nutrition : tools.missing}</p>{partialNotice ? <p className="recipe-disclosure">{partialNotice}</p> : null}{nutritionItems.length ? <dl className="nutrition-list">{nutritionItems.map(([key, value]) => <div key={key}><dt>{labels.nutrients[key]}</dt><dd>{formatIngredientAmount(value, 1, 1, numberLocale)} g</dd></div>)}</dl> : null}
         {withholdNutrition ? <div className="recipe-glycemic-load" data-gk-scope="ORIGINAL_RECIPE" data-gk-status={undefinedGkLabel ? "NOT_DEFINED" : "WITHHELD_SOURCE_REVIEW"}><p className="recipe-disclosure">{undefinedGkLabel ? <><strong>{undefinedGkLabel}</strong>. Tähän valmistusversioon ei ole riittävästi luotettavaa GI-lähdetietoa GK:n laskentaan.</> : "GK-arviota ei näytetä ennen tämän reseptin raaka-aine- ja ravintoarvoperustan uudelleentarkistusta."}</p></div> : glycemicLoad ? <div className="recipe-glycemic-load" data-gk-scope="ORIGINAL_RECIPE" data-gk-status="CALCULATED">
           <dl className="nutrition-list"><div>
             <dt>{glycemicLoad.assessmentType ? `${modelledLabel} ${labels.glycemicLoad}` : labels.glycemicLoad}</dt>

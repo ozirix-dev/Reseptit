@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "recipe_id": "taytetyt-kananmunat-yrteilla",
+  "source_path": "reseptit/valipalat/taytetyt-kananmunat-yrteilla.md",
+  "source_sha256": "5343e2daf2592a2b8b574faa47af389c1cdb291482e9e4e15f9d420e308ae656",
+  "decision": "approved",
+  "reviewed_by": "AI editorial reviewer (GPT-6)",
+  "reviewed_at": "2026-11-13",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://eggs.ca/recipes/herbed-devilled-eggs/",
+      "https://ask.fsis.usda.gov/article/How-long-does-it-take-to--hard-cook-an-egg",
+      "https://ask.fsis.usda.gov/article/How-do-you-handle-and-store-eggs-safely"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/taytetyt-kananmunat-yrteilla.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "The source slug is new. The prior same-name text is in the editorial review directory."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "All ingredients use edible gram weights. Allergen disclosures and the new illustration were checked against the ingredient list."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Six medium eggs at the Fineli 8513 edible portion of 55 g each give a 330 g reference batch for the estimate; the actual peeled weight varies. Use all six eggs for twelve filled halves. Use commercial full-fat mayonnaise and prepared mustard rather than brand-specific products whose fibre or polyol values are unavailable. The seasoning uses fresh chives. No physical preparation trial was performed."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Both white and yolk are cooked until firm. Cool under cold water, chill the prepared portions promptly and store in the refrigerator."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "6 portions with 35 minutes including the specified cooking and resting or cooling periods."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Fineli edible mass calculation verified against the current recipe input SHA-256. Six medium eggs at the Fineli 8513 edible portion of 55 g each give a 330 g reference batch for the estimate; the actual peeled weight varies. Use all six eggs for twelve filled halves. Use commercial full-fat mayonnaise and prepared mustard rather than brand-specific products whose fibre or polyol values are unavailable. The seasoning uses fresh chives. No physical preparation trial was performed."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "No approved glycemic load estimate exists for this recipe."
+    }
+  }
+}
