@@ -8,14 +8,14 @@ import manifest from "./history/historical-source-manifest.json";
 
 const fixture = (file: string) => readFileSync(new URL("./history/" + file, import.meta.url));
 const repoFile = (file: string) => readFileSync(new URL("../../" + file, import.meta.url), "utf8");
-const required = ["pohjoisafrikkalainen-bissara", "korealainen-bindaetteok-aamiaiseksi"];
-const [bissara, bindaetteok] = manifest;
+const required = ["pohjoisafrikkalainen-bissara", "korealainen-bindaetteok-aamiaiseksi", "japanilainen-kabocha-puuro"];
+const [bissara, bindaetteok, kabocha] = manifest;
 const source = repoFile(bissara.sourcePath).replaceAll("\r\n", "\n");
 const original = fixture(bissara.fixturePath);
 const sha256 = (bytes: Buffer) => createHash("sha256").update(bytes).digest("hex");
 const gitBlob = (bytes: Buffer) => createHash("sha1").update(`blob ${bytes.length}\0`).update(bytes).digest("hex");
 
-test("both reviewed sources restore exact fixture bytes in LF and CRLF checkouts", () => {
+test("the reviewed sources restore exact fixture bytes in LF and CRLF checkouts", () => {
   for (const record of manifest) {
     const current = repoFile(record.sourcePath).replaceAll("\r\n", "\n");
     for (const text of [current, current.replaceAll("\n", "\r\n")]) {
@@ -29,14 +29,14 @@ test("both reviewed sources restore exact fixture bytes in LF and CRLF checkouts
 });
 
 test("rejects incorrect SHA-256, changed bytes and a missing historical source", () => {
-  const incorrectHash = [{ ...bissara, historicalSha256: "0".repeat(64) }, bindaetteok];
+  const incorrectHash = [{ ...bissara, historicalSha256: "0".repeat(64) }, bindaetteok, kabocha];
   assert.throws(() => createHistoricalSourceReader(incorrectHash, fixture, required)
     .restore(bissara.sourcePath, source), /fixture SHA-256 mismatch/);
 
   const changed = Buffer.concat([original, Buffer.from("\n")]);
   assert.throws(() => createHistoricalSourceReader(manifest, () => changed, required)
     .restore(bissara.sourcePath, source), /fixture SHA-256 mismatch/);
-  const changedHash = [{ ...bissara, historicalSha256: sha256(changed) }, bindaetteok];
+  const changedHash = [{ ...bissara, historicalSha256: sha256(changed) }, bindaetteok, kabocha];
   assert.throws(() => createHistoricalSourceReader(changedHash, () => changed, required)
     .restore(bissara.sourcePath, source), /historical Git blob mismatch/);
 
@@ -46,12 +46,12 @@ test("rejects incorrect SHA-256, changed bytes and a missing historical source",
 
 test("rejects another recipe even if its fixture checksums match the manifest", () => {
   const otherSource = [{ ...bissara, historicalGitBlob: bindaetteok.historicalGitBlob,
-    historicalSha256: bindaetteok.historicalSha256 }, bindaetteok];
+    historicalSha256: bindaetteok.historicalSha256 }, bindaetteok, kabocha];
   assert.throws(() => createHistoricalSourceReader(otherSource, () => fixture(bindaetteok.fixturePath), required)
     .restore(bissara.sourcePath, source), /wrong historical recipe/);
 });
 
-test("requires both pilot records and rejects duplicate records and unknown recipes", () => {
+test("requires all sealed records and rejects duplicate records and unknown recipes", () => {
   for (const record of manifest) {
     assert.throws(() => createHistoricalSourceReader(manifest.filter(row => row !== record), fixture, required),
       new RegExp(record.recipeId + ": missing required historical record"));
@@ -64,13 +64,13 @@ test("requires both pilot records and rejects duplicate records and unknown reci
 });
 
 test("requires the reviewed version binding and a valid review reference", () => {
-  const wrongVersion = [{ ...bissara, reviewedGitBlob: bindaetteok.reviewedGitBlob }, bindaetteok];
+  const wrongVersion = [{ ...bissara, reviewedGitBlob: bindaetteok.reviewedGitBlob }, bindaetteok, kabocha];
   assert.throws(() => createHistoricalSourceReader(wrongVersion, fixture, required)
     .restore(bissara.sourcePath, source), /unreviewed source mutation/);
   const { reviewedGitBlob, ...withoutBinding } = bissara;
-  assert.throws(() => createHistoricalSourceReader([withoutBinding, bindaetteok], fixture, required), /reviewedGitBlob/);
+  assert.throws(() => createHistoricalSourceReader([withoutBinding, bindaetteok, kabocha], fixture, required), /reviewedGitBlob/);
   for (const reviewReference of ["", "../unknown.md"]) {
-    assert.throws(() => createHistoricalSourceReader([{ ...bissara, reviewReference }, bindaetteok], fixture, required),
+    assert.throws(() => createHistoricalSourceReader([{ ...bissara, reviewReference }, bindaetteok, kabocha], fixture, required),
       /reviewReference/);
   }
 });
@@ -90,12 +90,12 @@ test("an exact reviewed version is required for ingredient and preparation edits
     assert.throws(() => historicalSources.restore(bissara.sourcePath, changed), /unreviewed source mutation/, label);
   }
   const changed = source.replace("servings: 2", "servings: 3");
-  const repinned = [{ ...bissara, reviewedGitBlob: gitBlob(Buffer.from(changed)) }, bindaetteok];
+  const repinned = [{ ...bissara, reviewedGitBlob: gitBlob(Buffer.from(changed)) }, bindaetteok, kabocha];
   assert.throws(() => createHistoricalSourceReader(repinned, fixture, required)
     .restore(bissara.sourcePath, changed), /changed historical nutrition inputs/);
 });
 
-test("a third transition uses just a record and fixture", () => {
+test("an additional transition uses just a record and fixture", () => {
   const recipeId = "third-history-fixture";
   const sourcePath = `reseptit/aamupalat/${recipeId}.md`;
   const fixturePath = `fixtures/${recipeId}.md`;
