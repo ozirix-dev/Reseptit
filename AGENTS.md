@@ -8,6 +8,17 @@
   may incorrectly point there; use the verified Reseptit checkout or its worktree.
 - Keep unfinished recipes as `status: draft` and follow the README and recipe schema.
 
+## Autonomous Task Completion
+
+- Read the canonical workstation `AGENTS.md` at
+  `D:/Projects/_Hub/Master/AGENTS.md` where available and follow its Autonomous
+  Execution policy. Continue safe, authorized implementation, review, testing
+  and integration until the delegated objective is complete. A completed PR,
+  test or report may be an intermediate checkpoint.
+- Record blockers and continue independent, authorized work. Preserve the
+  approved scope, Repo Guard, required CI, branch and worktree ownership,
+  F25/GK approvals and deployment boundaries.
+
 ## Parallel Codex sessions
 
 - Give each parallel writing session its own named role, worktree, Git branch
