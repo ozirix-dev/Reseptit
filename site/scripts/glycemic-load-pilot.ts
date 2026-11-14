@@ -1,3 +1,4 @@
+import { coconutBananaHistoricalBindingText, coconutBananaRecipeId } from "./coconut-banana-reviewed-source";
 import { biryaniSourceBeforeReview, biryaniSourcePath } from "./biryani-reviewed-source";
 import {countPublishedGkEstimates} from '../src/features/recipes/gk-estimate';
 import {publicGiSourceNote} from "./gk-source-copy";
@@ -147,13 +148,19 @@ const biryaniMarkdown = publishedRecipeSources.get("hyderabadi-kanabiryani")?.ma
 const biryaniUsesReviewedMilk = biryaniMarkdown !== undefined &&
   biryaniSourceBeforeReview(biryaniSourcePath, biryaniMarkdown) !== biryaniMarkdown;
 
+const coconutBananaMarkdown = publishedRecipeSources.get(coconutBananaRecipeId)?.markdown;
+const coconutBananaNeedsGkReview = coconutBananaMarkdown !== undefined &&
+  coconutBananaHistoricalBindingText(coconutBananaMarkdown) !== coconutBananaMarkdown;
+
 const sourceHashes = Object.fromEntries(expectedRecipeIds.map((recipeId) => {
   const source = publishedRecipeSources.get(recipeId);
   if (!source) throw new Error("Published source recipe is missing from the current GK set: " + recipeId);
   // The legacy inputs still describe the historical biryani recipe.
   const markdown = recipeId === "hyderabadi-kanabiryani"
     ? biryaniSourceBeforeReview(biryaniSourcePath, source.markdown)
-    : source.markdown;
+    : recipeId === coconutBananaRecipeId
+      ? coconutBananaHistoricalBindingText(source.markdown)
+      : source.markdown;
   return [recipeId, recipeBindingHash(reviewedColdPuddingBindingText(`reseptit/aamupalat/${recipeId}.md`, markdown), recipeAliases.aliases)];
 }));
 
@@ -266,7 +273,8 @@ const publicResults = results.flatMap((result) => {
   };
   // Include this recipe in search while keeping its ingredient audit internal.
   if (result.recipeId === "maksalaatikko-kukkakaalilla" ||
-      (result.recipeId === "hyderabadi-kanabiryani" && biryaniUsesReviewedMilk)) return {
+      (result.recipeId === "hyderabadi-kanabiryani" && biryaniUsesReviewedMilk) ||
+      (result.recipeId === coconutBananaRecipeId && coconutBananaNeedsGkReview)) return {
     ...recipeIdentity,
     status: "INSUFFICIENT SOURCE DATA",
     glycemicLoadPerServing: null,
