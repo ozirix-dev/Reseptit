@@ -674,7 +674,7 @@ Repo-guardia ei muuteta toisessa repossa tämän tehtävän sivuvaikutuksena.
 ## Liite A. Päivätty kuvainventaario ja rajaukset
 
 
-[Mainin tiedostokohtainen inventaario](cloudflare-migration/images-main-20261102.json)
+[Mainin tiedostokohtainen inventaario](https://github.com/ozirix-dev/Reseptit/blob/79dd59a475354cac4070f866ded3070af7029663/docs/cloudflare-migration/images-main-20261102.json)
 sisältää jokaisen kuvan polun, tavumäärän, SHA-256:n, pikselimitat ja reseptiviittaukset.
 Inventaario perustuu Gitin seuraamiin tiedostoihin ja mainin reseptien frontmatteriin;
 se ei ole tuotantopalvelimen etäauditointi.
@@ -725,7 +725,7 @@ Gitin ulkopuolinen `kuvat/paaruoat/italian-pata.png` on 1536×1024,
 Se pitää säilyttää yksityisenä masterina ja selvittää sen reseptisidos.
 PNG:tä ei korvata WebP:stä takaisin muunnetulla tiedostolla.
 
-[Paikallinen manifesti](cloudflare-migration/images-local-20261102.json) kattaa
+[Paikallinen manifesti](https://github.com/ozirix-dev/Reseptit/blob/79dd59a475354cac4070f866ded3070af7029663/docs/cloudflare-migration/images-local-20261102.json) kattaa
 näiden kolmen kuvia sisältävän hakemiston 2659 tiedostoa ja 336 903 185 tavua.
 Muiden aktiivisten worktreeiden, `tmp/`-suorituskykyaineistojen, selaincachejen,
 liitteiden ja koneen muiden hakemistojen kuvat eivät kuulu tähän määrään.

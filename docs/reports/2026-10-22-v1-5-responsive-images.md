@@ -27,7 +27,7 @@ Lähdekuvien koko yhteensä on 25 137 624 tavua. Mitat:
 Aiemmassa julkaisussa ei ollut yhtään käytössä olevaa `srcset`-määritystä.
 Metatietojen ja tiedostojen välillä ei löytynyt mittaristiriitoja.
 Kaikkien 119 lähteen SHA-256 säilyi, samoin V1.4:n 15 korjauksen manifesti.
-[Inventaario ja lähde-SHA:t](2026-10-22-v1-5-data/source-audit.json)
+[Inventaario ja lähde-SHA:t](https://github.com/ozirix-dev/Reseptit/blob/79dd59a475354cac4070f866ded3070af7029663/docs/reports/2026-10-22-v1-5-data/source-audit.json)
 sisältävät kuvakohtaiset käyttäjät, kieliversiot, mitat ja tavumäärät.
 
 ## Toteutus ja laatu
@@ -45,7 +45,7 @@ lohen ja tillin rakenne, korin punos, sämpylöiden pinta ja vihanneskuutiot.
 Laadulla 78 yksityiskohdat säilyivät näkyvässä käyttökoossa hyvin; 82 kasvatti
 kokoa ilman tässä otoksessa olennaista näkyvää hyötyä. Valinta on visuaalinen
 oma tarkistus, ei häviöttömyysväite tai käyttäjien laatututkimus.
-[Laatukokeen tavumäärät](2026-10-22-v1-5-data/quality.json).
+[Laatukokeen tavumäärät](https://github.com/ozirix-dev/Reseptit/blob/79dd59a475354cac4070f866ded3070af7029663/docs/reports/2026-10-22-v1-5-data/quality.json).
 
 Esimerkiksi gazpacho: alkuperäinen 223 396 tavua, 480/q78 36 206 tavua,
 960/q78 96 594 tavua. Lohipata: alkuperäinen 342 986 tavua,
@@ -73,7 +73,7 @@ Tämä ei muuta reittidatan rakennetta. Korjauksen jälkeen mitattujen sivujen
 HTML-tavumäärät ja client-assetien hash-nimet olivat ennallaan.
 
 [Putken ylläpito ja mittausten toistaminen](../responsive-images.md).
-[Generoitu kuvamanifesti](2026-10-22-v1-5-data/image-manifest.json).
+[Generoitu kuvamanifesti](https://github.com/ozirix-dev/Reseptit/blob/79dd59a475354cac4070f866ded3070af7029663/docs/reports/2026-10-22-v1-5-data/image-manifest.json).
 
 ## Mittausmenetelmä
 
@@ -143,10 +143,10 @@ Reseptikirjastoa tai Sharpia ei lisätty client-bundleen.
 Hakemiston HTML ja upotettu data kasvavat responsiivisten URLien vuoksi;
 kuvien säästö ylittää tämän kasvun selvästi. Pyyntömäärä ei lisääntynyt.
 
-Raakadata: [ennen](2026-10-22-v1-5-data/lighthouse-before.json),
-[jälkeen](2026-10-22-v1-5-data/lighthouse-after.json),
-[60 ajon CSV](2026-10-22-v1-5-data/lighthouse-runs.csv),
-[mediaanit](2026-10-22-v1-5-data/medians.json).
+Raakadata: [ennen](https://github.com/ozirix-dev/Reseptit/blob/79dd59a475354cac4070f866ded3070af7029663/docs/reports/2026-10-22-v1-5-data/lighthouse-before.json),
+[jälkeen](https://github.com/ozirix-dev/Reseptit/blob/79dd59a475354cac4070f866ded3070af7029663/docs/reports/2026-10-22-v1-5-data/lighthouse-after.json),
+[60 ajon CSV](https://github.com/ozirix-dev/Reseptit/blob/79dd59a475354cac4070f866ded3070af7029663/docs/reports/2026-10-22-v1-5-data/lighthouse-runs.csv),
+[mediaanit](https://github.com/ozirix-dev/Reseptit/blob/79dd59a475354cac4070f866ded3070af7029663/docs/reports/2026-10-22-v1-5-data/medians.json).
 JSON sisältää myös verkkopyynnöt, simulaatioasetukset ja selainympäristön.
 Täydet Lighthouse LHR:t ovat paikallisessa ohitetussa `tmp/v15/`-kansiossa.
 
@@ -173,9 +173,9 @@ Ei tuotannon kuvahakuja, 404:iä, hydraatiovirheitä tai vaakavieritystä.
 `naturalWidth` on selaimen tiheyskorjattu arvo; CSV:n selectedPixelWidth on
 srcset-deskriptorin todellinen tiedostoleveys.
 
-[Valintojen CSV](2026-10-22-v1-5-data/browser-selections.csv),
-[selaindata ennen](2026-10-22-v1-5-data/browser-before.json) ja
-[selaindata jälkeen](2026-10-22-v1-5-data/browser-after.json).
+[Valintojen CSV](https://github.com/ozirix-dev/Reseptit/blob/79dd59a475354cac4070f866ded3070af7029663/docs/reports/2026-10-22-v1-5-data/browser-selections.csv),
+[selaindata ennen](https://github.com/ozirix-dev/Reseptit/blob/79dd59a475354cac4070f866ded3070af7029663/docs/reports/2026-10-22-v1-5-data/browser-before.json) ja
+[selaindata jälkeen](https://github.com/ozirix-dev/Reseptit/blob/79dd59a475354cac4070f866ded3070af7029663/docs/reports/2026-10-22-v1-5-data/browser-after.json).
 390/DPR2- ja 1440/DPR1-kuvakaappaukset tarkistettiin myös silmämääräisesti.
 Kuvat säilyivät terävinä, nykyinen CSS-rajaus ja asettelu ennallaan.
 
@@ -210,10 +210,10 @@ Simulaation client-JS kasvoi 437,70 kB:uun / 140,21 kB gzip, koska nykyinen
 reittimanifesti sisältää kaikkien reittien osoitteet. Tämä on säilytetyn
 arkkitehtuurin mittaustulos; julkaistun 119 lähteen bundle pysyi 116,46 kB gzip.
 
-[Skaalautuvuuden raakadata](2026-10-22-v1-5-data/scaling.json).
+[Skaalautuvuuden raakadata](https://github.com/ozirix-dev/Reseptit/blob/79dd59a475354cac4070f866ded3070af7029663/docs/reports/2026-10-22-v1-5-data/scaling.json).
 Myös kolmella eri rinnakkaisuudella kylmästi generoitujen manifestien ja kaikkien
 varianttien SHA-256:t verrattiin jokaisella aineistokoolla: identtiset.
-[Determinismivarmennus](2026-10-22-v1-5-data/scaling-determinism.json).
+[Determinismivarmennus](https://github.com/ozirix-dev/Reseptit/blob/79dd59a475354cac4070f866ded3070af7029663/docs/reports/2026-10-22-v1-5-data/scaling-determinism.json).
 Alkuperäinen keskeytynyt 500-koe ja sen TS2590-loki säilyvät paikallisessa
 `tmp/v15/scaling.log`-tiedostossa; niitä ei esitetä onnistuneena mittauksena.
 

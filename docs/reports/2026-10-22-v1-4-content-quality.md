@@ -17,7 +17,7 @@ ei väitetä. Kaikki 119 kuvaa katsottiin kuuden kontaktikartan kautta.
 Tarkistaja on Codex-kielimalli, ei äidinkielinen ihminen, ravitsemuslaskennan
 asiantuntija tai reseptejä koekeittiössä testaava kokki.
 
-- [Koneellinen puuteluettelo ja korjausluettelo](2026-10-22-v1-4-content-audit.json)
+- [Koneellinen puuteluettelo ja korjausluettelo](https://github.com/ozirix-dev/Reseptit/blob/79dd59a475354cac4070f866ded3070af7029663/docs/reports/2026-10-22-v1-4-content-audit.json)
   sisältää jokaisen lähteen, P0–P3-havainnot ja muuttuneiden kieliversioiden polut.
 - [Inventaario](https://github.com/ozirix-dev/Reseptit/blob/93d74174f2374cbdc60d897e1cb99700fc381d15/docs/reports/recipe-inventory-current.csv) sisältää kaikki julkaistut
   versiot, määrät, ajat, menetelmät, luokat, kuvat ja ravintokentät.

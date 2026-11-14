@@ -223,7 +223,7 @@ Mainin erillisestä worktreestä tuotettuja tietoja verrattiin integraatioon. Ka
 
 ## Näyttö ja historiaviitteiden käyttö
 
-Koneellinen liite sisältää jokaisen PR:n täydellisen HEAD-SHA:n, alkuperäisen base-haaran, kaikki muuttuneet tiedostot Git-blob-tunnisteineen, commit-sidotut tiedostolinkit, main-täsmäykset, CI-linkit ja keskustelu-/katselmointiviitteet. [Koneellinen kartoitus](pr-cleanup-v2-2026-11-05.json).
+Koneellinen liite sisältää jokaisen PR:n täydellisen HEAD-SHA:n, alkuperäisen base-haaran, kaikki muuttuneet tiedostot Git-blob-tunnisteineen, commit-sidotut tiedostolinkit, main-täsmäykset, CI-linkit ja keskustelu-/katselmointiviitteet. [Koneellinen kartoitus](https://github.com/ozirix-dev/Reseptit/blob/79dd59a475354cac4070f866ded3070af7029663/docs/reports/pr-cleanup-v2-2026-11-05.json).
 
 Historiallinen aineisto säilyy alkuperäisissä PR:issä ja niiden nimetyissä Git-haaroissa. Alla olevat linkit kiinnittyvät tutkittuihin committeihin. Kokonaisia vanhoja tutkimuspinoja ei kopioida tähän muutokseen. Alkuperäisten manifestien sisäiset SHA-256:t, lähteet, tarkkuusrajat, päätökset ja HOLD-perusteet löytyvät liitteen tiedostolinkeistä. Sulkemiskommentti yhdistää jokaisen PR:n tähän viitteeseen ja sen jatkopolkuun.
 

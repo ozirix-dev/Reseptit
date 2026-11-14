@@ -10,7 +10,7 @@ Työhaara: `codex/reseptit-v1-3-content-quality`
 - Julkaistuja käännöksiä: **117** (39 EN, 39 SV, 39 TH).
 - Julkaistuja reseptiversioita yhteensä: **156**.
 - Tuotantobuildin esirenderöimiä reittejä: **160**.
-- Automaattiseen inventaarioon ja käännösparien rakennetarkistukseen sisältyivät kaikki yllä olevat. Tiedostokohtaiset tiedot ovat samanaikaisessa `2026-10-21-reseptit-v1-3-inventory.csv`- ja käännösrivien tulokset `2026-10-21-reseptit-v1-3-audit.csv`-tiedostossa.
+- Automaattiseen inventaarioon ja käännösparien rakennetarkistukseen sisältyivät kaikki yllä olevat. Tiedostokohtaiset tiedot ovat samanaikaisessa [2026-10-21-reseptit-v1-3-inventory.csv](https://github.com/ozirix-dev/Reseptit/blob/79dd59a475354cac4070f866ded3070af7029663/docs/reports/2026-10-21-reseptit-v1-3-inventory.csv)- ja käännösrivien tulokset [2026-10-21-reseptit-v1-3-audit.csv](https://github.com/ozirix-dev/Reseptit/blob/79dd59a475354cac4070f866ded3070af7029663/docs/reports/2026-10-21-reseptit-v1-3-audit.csv)-tiedostossa.
 
 Tarkistus säilytti `recipe_id`- ja `url_slug`-arvot. Sisältöbuildi tuottaa 156 kieliversiota ja 160 reittiä. Käännösvertailu tarkistaa julkaisutilan ja käännösviitteet, kielen, kategorian, annokset, ainesosien määrän ja määrät, yksikkömuunnosten vastaavuuden, valmistusajan, ravintoarvot, ruokavalioluokan, valmistustavan, kuvatiedoston sekä valmistusvaiheiden määrän ja tunnistetut numeeriset aika- ja lämpötilat.
 
