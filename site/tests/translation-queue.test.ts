@@ -22,11 +22,10 @@ test("queue identifies missing and draft languages and keeps quarantines out of 
   assert.ok(queue.next_batch.some(entry => entry.recipe_id === "draft-queue-fixture"));
 });
 
-test("queue holds the three unresolved sources in each translation language", () => {
+test("queue holds the remaining unresolved sources in each translation language", () => {
   const queue = translationQueue(review, [], 10);
   const holds = [
     ["indonesialainen-bakwan-maissifritter", "bakwan_v2_frying_yield_oil_and_nutrition_review"],
-    ["indonesialainen-bubur-sumsum", "bubur_sumsum_pandan_source_owner_decision"],
     ["malesialainen-roti-jala-currykanalla", "roti_jala_batter_yield_curry_oil_and_nutrition_review"],
   ];
   for (const [id, reason] of holds) {
@@ -36,14 +35,21 @@ test("queue holds the three unresolved sources in each translation language", ()
     assert.ok(!queue.next_batch.some(row => row.recipe_id === id));
   }
 
+  const predecessor = "indonesialainen-bubur-sumsum";
+  const successor = predecessor + "-punnittu-v2";
+  assert.ok(queue.quarantined_recipe_ids.includes(predecessor));
+  assert.ok(!queue.queue.some(row => row.recipe_id === predecessor || row.recipe_id === successor));
+  assert.deepEqual(review.audit.publishedTranslations.filter(entry => entry.data.recipe_id === successor)
+    .map(entry => entry.data.language).sort(), ["en", "sv", "th"]);
+
   const target = structuredClone(review.audit.publishedTranslations[0]);
-  target.data.recipe_id = "indonesialainen-bubur-sumsum";
+  target.data.recipe_id = "indonesialainen-bakwan-maissifritter";
   const key = target.data.recipe_id + ":" + target.data.language;
   const proof = review.rows.find(row => row.codex_review)?.codex_review;
   assert.ok(proof);
   const audit = {...review.audit, publishedTranslations: [...review.audit.publishedTranslations, target]};
   assert.deepEqual(changedReviewLedgerErrors(audit, {}, {[key]: proof}), [
-    key + ": FI source has a translation HOLD (bubur_sumsum_pandan_source_owner_decision)",
+    key + ": FI source has a translation HOLD (bakwan_v2_frying_yield_oil_and_nutrition_review)",
   ]);
 });
 
