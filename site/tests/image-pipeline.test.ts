@@ -67,7 +67,7 @@ let productionScratch: string | undefined;
 
 before(async () => {
   // CI supplies a fresh publication; standalone runs build one in scratch.
-  if (process.env.TEST_IMAGE_REUSE_BUILD === "true") return;
+  if (process.env.GITHUB_ACTIONS === "true") return;
   productionScratch = await mkdtemp(path.join(await realpath(os.tmpdir()), "reseptit-image-production-"));
   productionSite = await copyBuildCheckout(productionScratch);
   runBuild(productionSite);

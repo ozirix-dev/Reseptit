@@ -281,8 +281,6 @@ jobs:
         if: steps.select.outputs.run_images == 'true'
         run: npm run test:image
         working-directory: site
-        env:
-          TEST_IMAGE_REUSE_BUILD: "true"
 
       - name: Run GI/GK coverage audit
         if: steps.select.outputs.run_glycemic == 'true' || steps.select.outputs.full == 'true'
