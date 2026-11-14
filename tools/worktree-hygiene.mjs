@@ -6,6 +6,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const REPO = 'ozirix-dev/Reseptit';
+const READ_ONLY_GIT = ['--no-optional-locks', '-c', 'core.fsmonitor=false'];
 const ORIGIN_PATTERN = /^(?:https:\/\/github\.com\/|git@github\.com:|ssh:\/\/git@github\.com\/)(?:ozirix-dev\/Reseptit)(?:\.git)?\/?$/i;
 
 export function parseWorktrees(porcelain) {
@@ -48,14 +49,23 @@ export function assessStatic(wt, { isPrimary = false, openBranches = null } = {}
   return reasons;
 }
 
+export function classifyWithoutActivityEvidence(reasons) {
+  // Git metadata cannot establish whether a process or another session uses the worktree.
+  return {
+    classification: 'KEEP',
+    review: reasons.length === 0 ? 'MANUAL_REVIEW' : null,
+    reasons: [...reasons, 'activity-unverified']
+  };
+}
+
 function git(repo, ...args) {
-  return execFileSync('git', ['-C', repo, ...args], {
+  return execFileSync('git', [...READ_ONLY_GIT, '-C', repo, ...args], {
     encoding: 'utf8', maxBuffer: 32 * 1024 * 1024, stdio: ['ignore', 'pipe', 'pipe']
   });
 }
 
 function gitExitCode(repo, ...args) {
-  const r = spawnSync('git', ['-C', repo, ...args], {
+  const r = spawnSync('git', [...READ_ONLY_GIT, '-C', repo, ...args], {
     encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe']
   });
   if (r.error) throw r.error;
@@ -117,7 +127,7 @@ export function inspect(root) {
     }
     worktrees.push({
       path: wt.path, branch: wt.branch ?? null, head: wt.head ?? null,
-      classification: reasons.length ? 'KEEP' : 'MANUAL_REVIEW', reasons
+      ...classifyWithoutActivityEvidence(reasons)
     });
   }
   return {
@@ -126,7 +136,7 @@ export function inspect(root) {
     openPrVerification: openBranches === null ? 'UNAVAILABLE' : 'OK',
     summary: {
       registered: worktrees.length,
-      manualReview: worktrees.filter(w => w.classification === 'MANUAL_REVIEW').length,
+      manualReview: worktrees.filter(w => w.review === 'MANUAL_REVIEW').length,
       keep: worktrees.filter(w => w.classification === 'KEEP').length
     },
     worktrees
@@ -148,7 +158,7 @@ function main(argv) {
   else {
     console.log(data.repository + ': ' + data.summary.registered +
       ' worktrees; ' + data.summary.manualReview + ' manual-review candidates; ' +
-      data.summary.keep + ' protected.');
+      data.summary.keep + ' kept.');
     console.log('Open PR check: ' + data.openPrVerification +
       '. No files, worktrees or branches have been deleted.');
     for (const w of data.worktrees.filter(x => x.classification === 'MANUAL_REVIEW').slice(0, 20)) {

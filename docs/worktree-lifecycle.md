@@ -6,7 +6,7 @@ ylläpitotarpeita kehityksen rinnalla.
 ## GitHubin viikoittainen haararaportti
 
 `.github/workflows/repository-hygiene.yml` laskee etähaarat ja avoimet PR:t
-sunnuntaisin sekä käsin käynnistettäessä. Tulokset näkyvät GitHub Actionsin
+Draftit mukaan lukien sunnuntaisin sekä käsin käynnistettäessä. Tulokset näkyvät GitHub Actionsin
 ajon yhteenvedossa. Työnkululla on vain lukuoikeudet, ja kaikki haarat
 säilyvät.
 
@@ -32,8 +32,10 @@ paikalliseen `origin/main`-viitteeseen. GitHub CLI:n (`gh`) pitää olla
 kirjautunut, jotta avoimet PR:t voidaan varmistaa. Jos tarkistus ei onnistu,
 tulos on `KEEP` — ei poistohyväksyntä.
 
-`MANUAL_REVIEW` tarkoittaa vain mahdollista jatkokatselmointia.
-Se ei ole automaattinen poistopäätös. Päivitä `origin/main` hyväksytyllä
+Git-tiedot eivät varmista, käyttääkö toinen prosessi tai istunto työpuuta.
+Tarkistin säilyttää työpuun luokassa `KEEP`. Kun Git-tarkistukset eivät löydä
+muita esteitä, erillinen `MANUAL_REVIEW`-merkintä ehdottaa omistajan ja
+käyttötilan tarkistamista. Merkintä ei anna poistovaltuutusta. Päivitä `origin/main` hyväksytyllä
 Repo Guard -menettelyllä erikseen, sillä paikallinen viite voi olla vanha.
 
 ## Turvallinen paikallinen poistoprosessi
@@ -51,5 +53,8 @@ hakemistolinkin kautta. Säilytä paikalliset haarat työpuiden poiston jälkeen
 ## Käyttöönotto
 
 - Tarkista GitHub-raportti yhdistämisen jälkeen ajon yhteenvedosta.
+- Raportti auttaa huoltotarpeen seuraamisessa. Repon siisteys edellyttää
+  erillistä katselmointia ja tarvittaessa hyväksyttyä manuaalista ylläpitoa.
+  Käyttöönotto säilyttää nykyiset paikalliset työpuut ja etähaarat.
 - Aja paikallinen tarkistin tarvittaessa yllä olevilla komennoilla.
 - Sivuston build ja tuotantojulkaisu käyttävät omaa työnkulkuaan.

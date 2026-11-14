@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { parseWorktrees, isExpectedOrigin, assessStatic } from './worktree-hygiene.mjs';
+import { parseWorktrees, isExpectedOrigin, assessStatic, classifyWithoutActivityEvidence } from './worktree-hygiene.mjs';
 
 const commit = 'f'.repeat(40);
 
@@ -36,8 +36,15 @@ test('detached and primary worktrees never qualify', () => {
 });
 
 test('clean non-PR branch only qualifies for manual review, never deletion', () => {
-  assert.deepEqual(assessStatic({ head: commit, branch: 'codex/old' },
-    { openBranches: new Set() }), []);
+  const reasons = assessStatic({ head: commit, branch: 'codex/old' },
+    { openBranches: new Set() });
+  assert.deepEqual(classifyWithoutActivityEvidence(reasons), {
+    classification: 'KEEP', review: 'MANUAL_REVIEW', reasons: ['activity-unverified']
+  });
+  assert.deepEqual(classifyWithoutActivityEvidence(['ignored-files-present']), {
+    classification: 'KEEP', review: null,
+    reasons: ['ignored-files-present', 'activity-unverified']
+  });
 });
 
 test('repository origin must match exactly', () => {
