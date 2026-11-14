@@ -238,6 +238,13 @@ test('Live original results preserve frozen history plus the exact reviewed tran
     assert.equal(normalNotes,notesOf(displayed),row.source_path+' audited public notes');
     return {...row,notes:notesOf(raw)};
    }
+   if (row.source_path === "reseptit/aamupalat/japanilainen-natto-riisikulho.md") {
+    const live = read(row.source_path).replaceAll("\r\n", "\n");
+    const historical = recipeTextForApprovedSnapshot(row.source_path, live);
+    assert.notEqual(historical, live);
+    assert.equal(row.source_content_hash, createHash("sha256").update(live).digest("hex"));
+    return {...row, notes: "", source_content_hash: createHash("sha256").update(historical).digest("hex")};
+   }
    if (["reseptit/paaruoat/baozi.md", "reseptit/paaruoat/congee-riisipuuro.md"].includes(row.source_path)) {
     const live = read(row.source_path).replaceAll("\r\n", "\n");
     const historical = recipeTextForApprovedSnapshot(row.source_path, live);
