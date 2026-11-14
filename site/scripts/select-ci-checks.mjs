@@ -75,7 +75,7 @@ function fullPlan(paths) {
   };
 }
 
-function classifyPaths(paths, { forceFull = false, classificationFailed = false } = {}) {
+function classifyPaths(paths, { forceFull = false, classificationFailed = false, cacheIgnoreOnly = false } = {}) {
   const valid = Array.isArray(paths) && paths.every(value => typeof value === "string" && value.trim());
   const normalized = valid ? paths.map((value) => value.replaceAll("\\", "/")) : [];
   const fallback = () => fullPlan(normalized);
@@ -99,6 +99,7 @@ function classifyPaths(paths, { forceFull = false, classificationFailed = false 
     publish: false,
   };
   for (const file of normalized) {
+    if (file === ".gitignore" && cacheIgnoreOnly) continue;
     if (planningJson.has(file)) continue;
     // Review prose can also be a sealed approval input.
     if (file.startsWith("docs/research/")) return fallback();
@@ -309,8 +310,20 @@ function getChangedPaths() {
     base = execFileSync("git", ["rev-parse", `${head}^`], { encoding: "utf8" }).trim();
   }
   if (!base || /^0+$/.test(base)) throw new Error("Base revision is unavailable.");
-  return execFileSync("git", ["diff", "--name-only", "-z", "--no-renames", "--diff-filter=ACDMRT", base, head], { encoding: "utf8" })
+  const paths = execFileSync("git", ["diff", "--name-only", "-z", "--no-renames", "--diff-filter=ACDMRT", base, head], { encoding: "utf8" })
     .split("\0").filter(Boolean);
+  return { paths, cacheIgnoreOnly: paths.includes(".gitignore") && isCacheIgnoreOnly(base, head) };
+}
+
+function isCacheIgnoreOnly(base, head) {
+  const change = execFileSync("git", ["diff", "--raw", "--no-renames", base, head, "--", ".gitignore"], { encoding: "utf8" });
+  if (!/^:100644 100644 [a-f0-9]+ [a-f0-9]+ M\t\.gitignore\r?\n$/.test(change)) return false;
+
+  const before = execFileSync("git", ["show", `${base}:.gitignore`], { encoding: "utf8" });
+  const after = execFileSync("git", ["show", `${head}:.gitignore`], { encoding: "utf8" });
+  const [longer, shorter] = before.length > after.length ? [before, after] : [after, before];
+  const rule = /^\/\.wrangler\/cache\/\n/gm;
+  return [...longer.matchAll(rule)].length === 1 && longer.replace(rule, "") === shorter;
 }
 
 function writeGithubOutputs(plan, paths, classificationError) {
@@ -346,8 +359,10 @@ function writeGithubOutputs(plan, paths, classificationError) {
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
   let paths = [];
   let classificationError = null;
+  let cacheIgnoreOnly = false;
   try {
-    paths = process.env.CHANGED_PATHS_JSON ? JSON.parse(process.env.CHANGED_PATHS_JSON) : getChangedPaths();
+    if (process.env.CHANGED_PATHS_JSON) paths = JSON.parse(process.env.CHANGED_PATHS_JSON);
+    else ({ paths, cacheIgnoreOnly } = getChangedPaths());
     if (!Array.isArray(paths) || paths.some(file => typeof file !== "string" || !file.trim())) throw new Error("Changed paths must be non-empty strings.");
   } catch (error) {
     classificationError = error instanceof Error ? error.message : String(error);
@@ -358,6 +373,7 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
   const plan = applyEventPolicy(classifyPaths(paths, {
     forceFull: process.env.FORCE_FULL === "true" || deletedTest,
     classificationFailed: Boolean(classificationError),
+    cacheIgnoreOnly,
   }), process.env.EVENT_NAME, { deploy: process.env.DEPLOY === "true" });
   writeGithubOutputs(plan, paths, classificationError);
   if (classificationError) console.warn(`Path classification failed; full checks selected: ${classificationError}`);
