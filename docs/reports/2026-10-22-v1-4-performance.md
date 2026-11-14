@@ -27,7 +27,7 @@ hidasta verkkoa/CPU:ta; työpöytä erillistä desktop-configia. Kuvat haettiin
 samoista julkisista osoitteista, joten verkkovaihtelu vaikuttaa tuloksiin.
 Keskeytynyt selaimen käynnistys jatkettiin puuttuvista ajoista.
 
-[Mittausdata](2026-10-22-v1-4-performance-data.json) sisältää asetukset ja
+[Mittausdata](https://github.com/ozirix-dev/Reseptit/blob/79dd59a475354cac4070f866ded3070af7029663/docs/reports/2026-10-22-v1-4-performance-data.json) sisältää asetukset ja
 jokaisen hyväksytyn ajon tulokset. INP:tä tai luotettavaa erillistä hydraation
 kestoa ei mitattu. TBT ei ole INP. Viten gzip ja palvelimen gzip-6 voivat erota.
 
