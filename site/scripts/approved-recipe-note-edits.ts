@@ -25,6 +25,30 @@ const editorialSnapshots: Readonly<Record<string, {
   currentSha256: string;
   inverseEdits: ReadonlyArray<readonly [start: number, count: number, historical: string]>;
 }>> = {
+  "reseptit/aamupalat/intialainen-ven-pongal.md": {
+    currentSha256: "77eea5fe9f4183fd5fda93b0a0c5e5fd346535d0cffbd0399a84d8a2887d2bd8",
+    inverseEdits: [
+      [65, 7, "1. Mittaa riisi kattilaan ja lisää reseptin neste. Kuumenna kiehuvaksi samalla pohjaa myöten sekoittaen.\n2. Hauduta miedolla lämmöllä välillä sekoittaen, kunnes puuro on pehmeää ja sakeaa. Lisää nestettä vähän kerrallaan, jos rakenne tiivistyy liikaa.\n3. Kypsennä liha tai muut täytteet kypsiksi ja lisää puuroon. Tarkista suola ja mausteet.\n4. Huuhtele riisi ja mungpavut. Keitä niitä vedessä pehmeiksi ja mausta mustapippurilla. Paahda cashewpähkinät gheessä ja sekoita ne puuron joukkoon ennen tarjoamista.\n"],
+      [61, 1, "Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.\n"],
+      [57, 1, "Tässä kotikeittiöön sovitetussa ohjeessa valmistetaan eteläintialainen suolainen pongal. Mausteisuutta ja lisukkeita voi säätää oman maun mukaan.\n"],
+      [53, 1, "# Eteläintialainen suolainen pongal\n"],
+      [44, 1, "  alt: \"Eteläintialainen suolainen pongal tarjoiltuna aamiaisella\"\n"],
+      [36, 1, "time_total_min: 25\n"],
+      [1, 1, "title: \"Eteläintialainen suolainen pongal\"\n"],
+    ],
+  },
+  "reseptit/aamupalat/korealainen-kongjuk-soijapapu-riisipuuro.md": {
+    currentSha256: "f24a72e09a8402c0f7aba85f634a2d5f36b411ed6a36d9d6ecb656ed35afa98f",
+    inverseEdits: [
+      [62, 8, "1. Mittaa riisi kattilaan ja lisää reseptin neste. Kuumenna kiehuvaksi samalla pohjaa myöten sekoittaen.\n2. Hauduta miedolla lämmöllä välillä sekoittaen, kunnes puuro on pehmeää ja sakeaa. Lisää nestettä vähän kerrallaan, jos rakenne tiivistyy liikaa.\n3. Kypsennä liha tai muut täytteet kypsiksi ja lisää puuroon. Tarkista suola ja mausteet.\n4. Liota kuivia soijapapuja yön yli ja valuta. Keitä pavut ja riisi vedessä pehmeiksi. Soseuta pavut osittain puuroon ja viimeistele seesaminsiemenillä.\n"],
+      [58, 1, "Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.\n"],
+      [54, 1, "Tässä kotikeittiöön sovitetussa ohjeessa valmistetaan kongjuk soijapapu-riisipuuro. Mausteisuutta ja lisukkeita voi säätää oman maun mukaan.\n"],
+      [50, 1, "# Kongjuk soijapapu-riisipuuro\n"],
+      [41, 1, "  alt: \"Kongjuk soijapapu-riisipuuro tarjoiltuna aamiaisella\"\n"],
+      [33, 1, "time_total_min: 25\n"],
+      [1, 1, "title: \"Kongjuk soijapapu-riisipuuro\"\n"],
+    ],
+  },
   "reseptit/aamupalat/japanilainen-kabocha-puuro.md": {
     currentSha256: "50e95cecf334bbff0d8c7b7725a02aaeafcacaa571b7a8b8cbbd8258a073774a",
     inverseEdits: [

@@ -77,5 +77,5 @@ export function createHistoricalSourceReader(
 export const historicalSources = createHistoricalSourceReader(
   JSON.parse(readFileSync(new URL("./historical-source-manifest.json", import.meta.url), "utf8")),
   file => readFileSync(new URL(file, import.meta.url)),
-  ["pohjoisafrikkalainen-bissara", "korealainen-bindaetteok-aamiaiseksi", "japanilainen-kabocha-puuro"],
+  ["pohjoisafrikkalainen-bissara", "korealainen-bindaetteok-aamiaiseksi", "japanilainen-kabocha-puuro", "intialainen-ven-pongal", "korealainen-kongjuk-soijapapu-riisipuuro"],
 );
