@@ -8,6 +8,12 @@ import { parseMarkdown } from "../src/content/markdown";
 import { recipeFrontmatterSchema } from "../src/content/schema";
 import { buildRegistry, contentHash, humanStatus, scopes, escapeHtml, evidenceSchema, loadCurrentReview, reviewSummary, type ReviewEvidence } from "../scripts/translation-review";
 const proof: ReviewEvidence = { recipe_id: "synthetic-fixture", locale: "en", evidence_id: "synthetic-test-not-a-real-approval", source_content_hash: contentHash("source"), translation_content_hash: contentHash("translation"), reviewed_at: "2026-10-20", scope: [...scopes], status: "complete", human_attestation: true };
+// Read-only test fixture. Clone individual entries before editing them.
+let fullAudit: ReturnType<typeof auditTranslations> | undefined;
+function loadFullAudit() {
+  return fullAudit ??= auditTranslations();
+}
+
 test("checked-in evidence is validated against real current file hashes", async () => {
   const { audit, rows } = await loadCurrentReview();
   assert.deepEqual(audit.errors, []);
@@ -31,7 +37,7 @@ test("evidence status and both content hashes protect approvals", () => {
   assert.throws(() => evidenceSchema.parse([{ ...proof, reviewer_email: "private@example.org" }]));
 });
 test("dynamic registry covers all published pairs, puts Thai first, no invented human approval", async () => {
-  const audit = await auditTranslations();
+  const audit = await loadFullAudit();
   const hashes = Object.fromEntries([...audit.publishedSources, ...audit.publishedTranslations].map((r) => [r.path, contentHash(JSON.stringify(r))]));
   const rows = buildRegistry(audit, hashes, []);
   assert.equal(rows.length, audit.publishedTranslations.length);
@@ -41,7 +47,7 @@ test("dynamic registry covers all published pairs, puts Thai first, no invented 
   assert.throws(() => buildRegistry(audit, hashes, [proof, proof]));
 });
 test("draft cannot satisfy published counterpart and amount/unit errors reach registry", async () => {
-  const all = await auditTranslations();
+  const all = await loadFullAudit();
   const source = structuredClone(all.publishedSources[0]); source.data.translation_status = { en: "published" }; source.data.translation_languages = ["en"];
   const target = structuredClone(all.publishedTranslations.find((r) => r.data.recipe_id === source.data.recipe_id && r.data.language === "en")!);
   const hashes = { [source.path]: contentHash("source"), [target.path]: contentHash("target") };
@@ -53,7 +59,7 @@ test("draft cannot satisfy published counterpart and amount/unit errors reach re
   assert.equal(row.structural_status, "FAIL"); assert.match(row.notes.join(" "), /amount=12345/);
 });
 test("known mistranslation and narrow negation guard remain visible", async () => {
-  const all = await auditTranslations();
+  const all = await loadFullAudit();
   const source = structuredClone(all.publishedSources.find((r) => r.data.recipe_id === "keto-kauralesesampylat")!);
   source.data.translation_status = { th: "published" }; source.data.translation_languages = ["th"];
   const target = structuredClone(all.publishedTranslations.find((r) => r.data.recipe_id === source.data.recipe_id && r.data.language === "th")!);
@@ -64,7 +70,7 @@ test("known mistranslation and narrow negation guard remain visible", async () =
   assert.equal(escapeHtml('<script>"&'), "&lt;script&gt;&quot;&amp;");
 });
 test("source-level failures prevent complete status on all affected translations", async () => {
-  const all = await auditTranslations();
+  const all = await loadFullAudit();
   const source = structuredClone(all.publishedSources[0]); source.data.translation_status = { en: "published" }; source.data.translation_languages = ["en"];
   const target = all.publishedTranslations.find((r) => r.data.recipe_id === source.data.recipe_id && r.data.language === "en")!;
   const hashes = { [source.path]: proof.source_content_hash, [target.path]: proof.translation_content_hash };
@@ -75,7 +81,7 @@ test("source-level failures prevent complete status on all affected translations
   assert.ok(rows.every((row) => row.notes.some((note) => note.includes(":fi: duplicate"))));
 });
 test("orphaned evidence fails for unknown recipe or removed translation", async () => {
-  const all = await auditTranslations();
+  const all = await loadFullAudit();
   const source = structuredClone(all.publishedSources[0]); source.data.translation_status = {}; source.data.translation_languages = [];
   const target = all.publishedTranslations.find((r) => r.data.recipe_id === source.data.recipe_id && r.data.language === "en")!;
   const hashes = { [source.path]: proof.source_content_hash, [target.path]: proof.translation_content_hash };
@@ -85,7 +91,7 @@ test("orphaned evidence fails for unknown recipe or removed translation", async 
   assert.throws(() => buildRegistry(auditRecipePairs([source], []), hashes, evidence), /0 matches/);
 });
 test("misdeclared source language invalidates every target locale", async () => {
-  const all = await auditTranslations();
+  const all = await loadFullAudit();
   const source = structuredClone(all.publishedSources[0]);
   const targets = all.publishedTranslations.filter((r) => r.data.recipe_id === source.data.recipe_id);
   const hashes = Object.fromEntries([source, ...targets].map((r) => [r.path, r === source ? proof.source_content_hash : proof.translation_content_hash]));
@@ -98,7 +104,7 @@ test("misdeclared source language invalidates every target locale", async () => 
   }
 });
 test("every participant of a source or translation route collision fails review", async () => {
-  const all = await auditTranslations();
+  const all = await loadFullAudit();
   for (const collideSource of [true, false]) {
     const sources = structuredClone(all.publishedSources.slice(0, 2));
     const targets = structuredClone(sources.map((s) => all.publishedTranslations.find((r) => r.data.recipe_id === s.data.recipe_id && r.data.language === "en")!));

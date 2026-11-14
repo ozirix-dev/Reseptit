@@ -7,6 +7,12 @@ import { parseMarkdown } from "../src/content/markdown";
 import { projectReviewedFiEditorialSource } from "../scripts/gk80-editorial-display";
 import { projectA8FiEditorialSource } from "../scripts/a8-editorial-display";
 
+// Read-only test fixture. Clone individual entries before editing them.
+let fullAudit: ReturnType<typeof auditTranslations> | undefined;
+function loadFullAudit() {
+  return fullAudit ??= auditTranslations();
+}
+
 test("A8 jerk and shoyu compare only to SHA-pinned public FI metadata", async () => {
   const ids = ["jerk-kana", "shoyu-kanakeitto-konjac"];
   const checked = await auditTranslations(ids);
@@ -39,7 +45,7 @@ test("A8 jerk and shoyu compare only to SHA-pinned public FI metadata", async ()
 });
 
 test("review backlog fixes stay aligned in all four recipe locales", async () => {
-  const real = await auditTranslations();
+  const real = await loadFullAudit();
   const all = [...real.publishedSources, ...real.publishedTranslations];
   for (const locale of ["fi", "en", "sv", "th"] as const) {
     const get = (id: string) => all.find(r => r.data.recipe_id === id && r.data.language === locale)!;
@@ -90,7 +96,7 @@ test("sealed coconut FI metadata is compared with only the SHA-pinned public coo
 });
 
 test("all published translations match the source structure and known critical terms", async () => {
-  const result = await auditTranslations();
+  const result = await loadFullAudit();
   const translatedSources = result.publishedSources;
   const expectedCount = translatedSources.reduce((sum, recipe) => sum +
     (["en", "sv", "th"] as const).filter((locale) => recipe.data.translation_status?.[locale] === "published").length, 0);
@@ -115,7 +121,7 @@ test("all published translations match the source structure and known critical t
 });
 
 test("a targeted translation audit contains only the requested recipe and its pairs", async () => {
-  const full = await auditTranslations();
+  const full = await loadFullAudit();
   const recipeId = full.publishedSources[0]!.data.recipe_id;
   const targeted = await auditTranslations([recipeId]);
   assert.deepEqual(targeted.errors, []);
@@ -125,7 +131,7 @@ test("a targeted translation audit contains only the requested recipe and its pa
 });
 
 test("metadata-driven pairs allow new sources and drafts but reject missing or duplicate published versions", async () => {
-  const real = await auditTranslations();
+  const real = await loadFullAudit();
   const source = structuredClone(real.publishedSources[0]);
   const target = structuredClone(real.publishedTranslations.find((r) => r.data.recipe_id === source.data.recipe_id && r.data.language === "en")!);
   source.data.translation_languages = ["en", "sv"];
@@ -149,7 +155,7 @@ test("metadata-driven pairs allow new sources and drafts but reject missing or d
 });
 
 test("pair audit detects changed servings, ingredient amounts, units and cooking method", async () => {
-  const real = await auditTranslations();
+  const real = await loadFullAudit();
   const source = structuredClone(real.publishedSources[0]);
   source.data.translation_languages = ["en"];
   source.data.translation_status = { en: "published" };
@@ -167,7 +173,7 @@ test("pair audit detects changed servings, ingredient amounts, units and cooking
 });
 
 test("pair audit checks source language and shared image dimensions", async () => {
-  const real = await auditTranslations();
+  const real = await loadFullAudit();
   const original = real.publishedSources.find((recipe) => recipe.data.image && recipe.data.translation_status?.en === "published")!;
   const source = structuredClone(original);
   source.data.translation_languages = ["en"];
@@ -207,7 +213,7 @@ test("V1.4 ingredient regressions distinguish species, dairy and raw ingredients
 });
 
 test("known cooking-method and development-copy regressions remain fixed", async () => {
-  const result = await auditTranslations();
+  const result = await loadFullAudit();
   const panRecipes = ["jauhelihakastike-kesakurpitsanuudeleilla", "kanakorma-kukkakaaliriisilla", "paistettu-maksa-pekonilla", "poronkaristys-kukkakaalimuusilla"];
   for (const recipe of [...result.publishedSources, ...result.publishedTranslations]) {
     if (panRecipes.includes(recipe.data.recipe_id)) {
@@ -246,7 +252,7 @@ test("known prose regressions are recipe-specific and cover captions", () => {
 });
 
 test("fish-stock prose regressions include titles, descriptions, notes and image captions", async () => {
-  const result = await auditTranslations();
+  const result = await loadFullAudit();
   const source = result.publishedSources.find((r) => r.data.recipe_id === "vhh-lohikeitto-kukkakaalilla")!;
   const target = result.publishedTranslations.find((r) => r.data.recipe_id === source.data.recipe_id && r.data.language === "th")!;
   const allTargets = result.publishedTranslations.filter((r) => r.data.recipe_id === source.data.recipe_id);
@@ -263,25 +269,25 @@ test("fish-stock prose regressions include titles, descriptions, notes and image
 });
 
 test("weighed butter chicken retains one13.5g olive oil input, fixed21g honey and all marinade in every locale", async () => {
- const result=await auditTranslations();const all=[...result.publishedSources,...result.publishedTranslations];
+ const result=await loadFullAudit();const all=[...result.publishedSources,...result.publishedTranslations];
  const terms={fi:{oil:"oliiviöljyä",honey:"hunajaa",all:/koko marinadi/,cook:/75/},en:{oil:"olive oil",honey:"honey",all:/all marinade/,cook:/75/},sv:{oil:"olivolja",honey:"honung",all:/hela marinaden/,cook:/75/},th:{oil:"น้ำมันมะกอก",honey:"น้ำผึ้ง",all:/น้ำหมักทั้งหมด/,cook:/75/}};
  for(const [locale,expected] of Object.entries(terms)){const r=all.find(r=>r.data.recipe_id==="butter-chicken"&&r.data.language===locale)!;assert.ok(r);const oil=r.data.ingredients.filter(i=>i.item===expected.oil);assert.equal(oil.length,1);assert.equal(oil[0].amount,13.5);assert.equal(oil[0].unit,"g");const honey=r.data.ingredients.find(i=>i.item===expected.honey)!;assert.ok(honey);assert.equal(honey.amount,21);assert.equal(honey.unit,"g");assert.match(r.content,expected.all);assert.match(r.content,expected.cook);assert.equal(r.data.servings,4);assert.equal(r.data.time_total_min,60);}
 });
 
 test("weighed Italian pan has consistent oil, no ordinary pasta and explicit approximate time in all locales", async () => {
- const result=await auditTranslations();const recipes=[...result.publishedSources,...result.publishedTranslations].filter(r=>r.data.recipe_id==='italian-pata');assert.equal(recipes.length,4);
+ const result=await loadFullAudit();const recipes=[...result.publishedSources,...result.publishedTranslations].filter(r=>r.data.recipe_id==='italian-pata');assert.equal(recipes.length,4);
  const terms={fi:{oil:'oliiviöljyä',estimate:/Arvioitu kokonaisaika/,scope:/Ei tavallista pastaa/},en:{oil:'olive oil',estimate:/Estimated total time/,scope:/no ordinary pasta/},sv:{oil:'olivolja',estimate:/Uppskattad totaltid/,scope:/Vanlig pasta ingår inte/},th:{oil:'น้ำมันมะกอก',estimate:/เวลารวมโดยประมาณ/,scope:/ไม่มีพาสต้าปกติ/}};
  for(const r of recipes){const e=terms[r.data.language as keyof typeof terms];assert.equal(r.data.time_total_min,60);assert.match(r.content,e.estimate);assert.match(r.content,e.scope);assert.equal(r.content.match(/^\d+\. /gm)?.length,3);const oil=r.data.ingredients.filter(i=>i.item===e.oil);assert.equal(oil.length,1);assert.equal(oil[0].amount,12);assert.equal(oil[0].unit,'g');}
 });
 
 test("audit output distinguishes structural passes from pending human language review", async () => {
-  const result = await auditTranslations();
+  const result = await loadFullAudit();
   assert.ok(result.rows.every((row) => row.language_review.includes("independent human language review pending")));
   assert.ok(result.rows.every((row) => row.review_status.includes("HUMAN REVIEW PENDING")));
 });
 
 test("V1.4 source safety and batter corrections remain aligned in all languages", async () => {
-  const result = await auditTranslations();
+  const result = await loadFullAudit();
   const recipes = [...result.publishedSources, ...result.publishedTranslations];
   for (const locale of ["fi", "en", "sv", "th"]) {
     const get = (id: string) => recipes.find((r) => r.data.recipe_id === id && r.data.language === locale)!;
@@ -304,7 +310,7 @@ test("V1.4 source safety and batter corrections remain aligned in all languages"
 });
 
 test("corrected image captions do not reintroduce absent fillings or toppings", async () => {
-  const result = await auditTranslations();
+  const result = await loadFullAudit();
   for (const recipe of [...result.publishedSources, ...result.publishedTranslations]) {
     const alt = recipe.data.image?.alt ?? "";
     if (recipe.data.recipe_id === "rahkapiirakka-vhh") assert.doesNotMatch(alt, /marj|berr|bär|เบอร์รี่/i);
@@ -315,7 +321,7 @@ test("corrected image captions do not reintroduce absent fillings or toppings", 
 });
 
 test("P2/P3 corrections include waiting time and ingredient use in every language", async () => {
-  const result = await auditTranslations();
+  const result = await loadFullAudit();
   const recipes = [...result.publishedSources, ...result.publishedTranslations];
   const times: Record<string, number> = { "pekingin-ankka": 510, gazpacho: 80, "pizza-margherita": 100, tandoorikana: 130, "char-siu": 90, "chole-bhature": 900 };
   const uses: Record<string, [number, RegExp]> = {
@@ -338,7 +344,7 @@ test("P2/P3 corrections include waiting time and ingredient use in every languag
 });
 
 test("keto-labelled recipes with documented calculations expose only the calculated values", async () => {
-  const result = await auditTranslations();
+  const result = await loadFullAudit();
   const ids = ["keto-joulutortut", "keto-korvapuustit"];
   const recipes = [...result.publishedSources, ...result.publishedTranslations].filter((r) => ids.includes(r.data.recipe_id));
   assert.equal(recipes.length, 8);
@@ -412,7 +418,7 @@ test("ingredient notes and tags reject observed false friends without rejecting 
 });
 
 test("translation audit checks notes and tags as well as prose negation and cooking meaning", async () => {
-  const result = await auditTranslations();
+  const result = await loadFullAudit();
   for (const [id, locale, field, bad, message] of [
     ["lihapullat-kermakastikkeessa-vhh", "en", "note", "to muse", "ingredient note"],
     ["nakkikeitto-kukkakaalilla", "sv", "tag", "smycke", "tag"],
@@ -450,7 +456,7 @@ test("translation audit checks notes and tags as well as prose negation and cook
 test("published snack sources are within the translation and nutrition audit inventory", async () => {
   assert.ok(sourceCategories.includes("valipalat"), "valipalat must be a source directory");
   assert.equal(new Set(sourceCategories).size, sourceCategories.length, "source directories must be unique");
-  const audit = await auditTranslations();
+  const audit = await loadFullAudit();
   const snacks = audit.publishedSources.filter((source) => source.data.category === "valipala");
   assert.ok(snacks.every((source) => source.path.startsWith("reseptit/valipalat/")));
   for (const recipe of snacks) {
