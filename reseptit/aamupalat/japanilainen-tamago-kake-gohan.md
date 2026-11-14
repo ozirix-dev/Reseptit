@@ -1,16 +1,16 @@
 ---
-title: "Tamago kake gohan seesamilla"
+title: Tamago kake gohan norilevällä
 recipe_id: japanilainen-tamago-kake-gohan
 url_slug: japanilainen-tamago-kake-gohan
 category: aamupala
 language: fi
 status: published
 main_ingredient:
-  - "riisi"
-  - "kananmuna"
-  - "soijakastike"
+  - riisi
+  - kananmuna
+  - soijakastike
 cooking_method:
-  - "paistaminen"
+  - paistaminen
 ingredients:
   - amount: 100
     unit: g
@@ -31,34 +31,37 @@ servings: 2
 time_total_min: 25
 difficulty: Helppo
 tags:
-  - "aamupala"
-  - "japanilainen"
-  - "aamiaisruoka"
+  - aamupala
+  - japanilainen
+  - aamiaisruoka
 image:
   src: aamupalat/japanilainen-tamago-kake-gohan.webp
-  alt: "Tamago kake gohan seesamilla tarjoiltuna aamiaisella"
+  alt: Riisikulho, jossa on munaa ja norilevää
   width: 1536
   height: 1024
 carbs_net_per_serving_g: 38.04
 carbs_total_per_serving_g: 38.79
 protein_per_serving_g: 11.37
 fat_per_serving_g: 5.58
-
 ---
 
-# Tamago kake gohan seesamilla
+# Tamago kake gohan norilevällä
 
 ## Kuvaus
 
-Tässä kotikeittiöön sovitetussa ohjeessa valmistetaan tamago kake gohan seesamilla. Mausteisuutta ja lisukkeita voi säätää oman maun mukaan.
+Japanilainen tamago kake gohan on lämmin riisikulho, jossa muna ja soijakastike sekoitetaan riisin joukkoon. Tässä versiossa päälle murennetaan noria.
 
 ## Ainekset
 
-Ainekset ovat annoslaskurin käytössä rakenteisista metatiedoista.
+Mittaa 100 g riisiä kuivana. Valitse keskikokoiset munat. Jos sekoitat munat riisiin raakoina, käytä pastöroituja kananmunia, joiden pakkauksessa sallitaan käyttö raakana.
 
 ## Valmistus
 
-1. Kypsennä riisi pakkauksen ohjeen mukaan. Paista tofu, muna tai muu lämmin täyte tarvittaessa erikseen.
-2. Paloittele tuoreet kasvikset ja valmistele yrtit sekä kastikkeen ainekset.
-3. Jaa lämmin pohja kulhoihin, asettele muut ainekset päälle ja lisää kastike juuri ennen tarjoamista.
-4. Huuhtele riisi ja kypsennä se. Annostele höyryävän kuuma riisi kulhoihin. Riko kummankin kulhon päälle kananmuna ja sekoita nopeasti kuumaan riisiin. Mausta soijakastikkeella ja viimeistele murennetulla norilevällä.
+1. Huuhtele riisi ja keitä se pakkauksen ohjeen mukaan. Jaa kuuma riisi kahteen kulhoon.
+2. Käytä kumpaankin kulhoon yksi muna. Perinteiseen tarjoilutapaan sekoita pastöroitu muna heti kuuman riisin joukkoon.
+3. Jos käytät tavallisia kananmunia tai tarjoat ruoan riskiryhmään kuuluvalle, kypsennä munat tarttumattomalla pannulla sekoittaen, kunnes ne ovat kauttaaltaan hyytyneet. Sekoita kypsät munat riisiin.
+4. Jaa soijakastike kulhoihin, murenna nori päälle ja lisää suolaa tarvittaessa. Tarjoa heti.
+
+## Muistiinpanot
+
+Sisältää kananmunaa ja soijaa. Tarkista soijakastikkeen pakkauksesta, sisältääkö se vehnää. Kuvan seesami, kevätsipuli ja lisukkeet ovat tarjoiluehdotuksia.
