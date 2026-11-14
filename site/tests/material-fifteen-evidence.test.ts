@@ -10,8 +10,8 @@ const load=async()=>JSON.parse(await readFile(path.join(root,material15ManifestP
 test("15 current FI evidence cards are exactly sealed and never imply GI/GK approval",async()=>{
   const result=await verifyMaterialFifteen(root);
   assert.equal(result.checked,15);
-  assert.equal(result.quarantine,11);
-  assert.equal(result.visible,4);
+  assert.equal(result.quarantine,12);
+  assert.equal(result.visible,3);
   assert.equal(new Set(result.ids).size,15);
 });
 
