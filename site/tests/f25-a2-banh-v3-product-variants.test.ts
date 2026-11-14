@@ -20,7 +20,7 @@ test("both V3 alternatives are separate from exact-blob historical FI sources an
     assert.equal(gitBlob(readF25HistoricalBlob(root,r.sourceGitBlob)),r.sourceGitBlob,r.recipeId);
     assert.equal(gitBlob(readFileSync(path.join(root,r.candidatePath))),r.candidateGitBlob,r.recipeId);
     assert.equal(gitBlob(readF25HistoricalBlob(root,r.oldNutritionGitBlob)),r.oldNutritionGitBlob,r.recipeId);
-    const old=read("docs/nutrition/calculations/"+r.recipeId+".json");
+    const old=JSON.parse(readF25HistoricalBlob(root,r.oldNutritionGitBlob).toString("utf8"));
     assert.equal(old.sourceHash,r.oldNutritionInputHash);
     assert.equal(gate.sources.find((x:any)=>x.recipe_id===r.recipeId)?.approval,null);
     assert.equal(r.nutritionApproved,false);
