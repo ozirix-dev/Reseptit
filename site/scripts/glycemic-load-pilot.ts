@@ -1,3 +1,4 @@
+import { koreanRiceBowlHistoricalText } from "./korean-rice-bowls-reviewed-source";
 import { coconutBananaHistoricalBindingText, coconutBananaRecipeId } from "./coconut-banana-reviewed-source";
 import { biryaniSourceBeforeReview, biryaniSourcePath } from "./biryani-reviewed-source";
 import {countPublishedGkEstimates} from '../src/features/recipes/gk-estimate';
@@ -152,6 +153,7 @@ const coconutBananaMarkdown = publishedRecipeSources.get(coconutBananaRecipeId)?
 const coconutBananaNeedsGkReview = coconutBananaMarkdown !== undefined &&
   coconutBananaHistoricalBindingText(coconutBananaMarkdown) !== coconutBananaMarkdown;
 
+const koreanRiceBowlsNeedingGkReview = new Set<string>();
 const sourceHashes = Object.fromEntries(expectedRecipeIds.map((recipeId) => {
   const source = publishedRecipeSources.get(recipeId);
   if (!source) throw new Error("Published source recipe is missing from the current GK set: " + recipeId);
@@ -160,7 +162,10 @@ const sourceHashes = Object.fromEntries(expectedRecipeIds.map((recipeId) => {
     ? biryaniSourceBeforeReview(biryaniSourcePath, source.markdown)
     : recipeId === coconutBananaRecipeId
       ? coconutBananaHistoricalBindingText(source.markdown)
-      : source.markdown;
+      : koreanRiceBowlHistoricalText(`reseptit/aamupalat/${recipeId}.md`, source.markdown);
+  if (recipeId !== coconutBananaRecipeId && recipeId !== "hyderabadi-kanabiryani" && markdown !== source.markdown) {
+    koreanRiceBowlsNeedingGkReview.add(recipeId);
+  }
   return [recipeId, recipeBindingHash(reviewedColdPuddingBindingText(`reseptit/aamupalat/${recipeId}.md`, markdown), recipeAliases.aliases)];
 }));
 
@@ -274,7 +279,8 @@ const publicResults = results.flatMap((result) => {
   // Include this recipe in search while keeping its ingredient audit internal.
   if (result.recipeId === "maksalaatikko-kukkakaalilla" ||
       (result.recipeId === "hyderabadi-kanabiryani" && biryaniUsesReviewedMilk) ||
-      (result.recipeId === coconutBananaRecipeId && coconutBananaNeedsGkReview)) return {
+      (result.recipeId === coconutBananaRecipeId && coconutBananaNeedsGkReview) ||
+      koreanRiceBowlsNeedingGkReview.has(result.recipeId)) return {
     ...recipeIdentity,
     status: "INSUFFICIENT SOURCE DATA",
     glycemicLoadPerServing: null,

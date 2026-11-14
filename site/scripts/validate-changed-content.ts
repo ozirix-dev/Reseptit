@@ -1,3 +1,4 @@
+import { koreanRiceBowlHistoricalText } from "./korean-rice-bowls-reviewed-source";
 import { coconutBananaHistoricalBindingText, coconutBananaSourcePath } from "./coconut-banana-reviewed-source";
 import { biryaniSourceBeforeReview, biryaniSourcePath } from "./biryani-reviewed-source";
 import {isScopedPolyolEvidence,validateScopedPolyolC} from './gk80-polyol-c';
@@ -217,7 +218,10 @@ for (const recipeId of recipeIds) {
       : changedSource.markdown;
     const reviewedCoconutBananaWithoutGk = historicalCoconutBanana !== changedSource.markdown &&
       recipeBindingHash(historicalCoconutBanana, recipeAliases.aliases ?? {}) === boundRecipeHash;
-    assert(currentRecipeHash === boundRecipeHash || reviewedBiryaniWithoutGk || reviewedCoconutBananaWithoutGk || await validateGk80Candidate(repoRoot, recipeId) || await validateRecovery(repoRoot,recipeId) || await validateScopedPolyolC(repoRoot,recipeId), `${recipeId}: GI/GK recipe binding is stale; review the related calculation before accepting this content change`);
+    const historicalRiceBowl = koreanRiceBowlHistoricalText(changedSource.path, changedSource.markdown);
+    const reviewedRiceBowlWithoutGk = historicalRiceBowl !== changedSource.markdown &&
+      recipeBindingHash(historicalRiceBowl, recipeAliases.aliases ?? {}) === boundRecipeHash;
+    assert(currentRecipeHash === boundRecipeHash || reviewedBiryaniWithoutGk || reviewedCoconutBananaWithoutGk || reviewedRiceBowlWithoutGk || await validateGk80Candidate(repoRoot, recipeId) || await validateRecovery(repoRoot,recipeId) || await validateScopedPolyolC(repoRoot,recipeId), `${recipeId}: GI/GK recipe binding is stale; review the related calculation before accepting this content change`);
   }
 
   const evidencePath = resolveRepoFile(`docs/nutrition/calculations/${recipeId}.json`);
