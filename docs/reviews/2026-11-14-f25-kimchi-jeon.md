@@ -21,3 +21,7 @@ Suomenkielinen plantain-resepti on julkinen. EN/SV/TH pysyvät F25-jonossa. Koti
 ## Kimchi-jeonin Pages-julkaisu
 
 PR:n CI kesti 7 min 9 s. Mainin build kesti 7 min 15 s ja Pagesin deploy-työ 11 s. Yhdistämisestä julkaisuun kului 7 min 36 s ja PR:n avaamisesta julkaisuun 15 min 25 s. Tuotannosta varmistettiin FI/EN/SV/TH-sivut ja niiden kielilinkit, kuvitus, ravintoarvio ja GK-tila. Nelikielinen kattavuus on 370/371 (99,73 %). [PR #617](https://github.com/ozirix-dev/Reseptit/pull/617) · [PR:n CI](https://github.com/ozirix-dev/Reseptit/actions/runs/43611679030) · [Mainin Pages-ajo](https://github.com/ozirix-dev/Reseptit/actions/runs/43612376454).
+
+## Plantain-aamiaislautasen poistopäätös
+
+Omistaja poisti plantain-aamiaislautasen julkaisusta ja käännösjonosta 14.11.2026. Lähdetiedosto ja F25:n aiempi arvio säilytetään jäljitettävyyttä varten.

@@ -17,7 +17,8 @@ test("queue identifies missing and draft languages and keeps quarantines out of 
   assert.ok(queue.queue.some(entry => entry.recipe_id === "draft-queue-fixture" && entry.locale === "en" && entry.reasons.includes("draft")));
   assert.ok(queue.queue.some(entry => entry.recipe_id === "draft-queue-fixture" && entry.locale === "sv" && entry.reasons.includes("missing")));
   assert.ok(!queue.queue.some(entry => queue.quarantined_recipe_ids.some(id => id === entry.recipe_id)));
-  assert.ok(queue.queue.some(entry => entry.recipe_id === "karibia-plantain-aamiaislautanen" && entry.hold?.startsWith("F25_SOURCE_HOLD")));
+  assert.ok(queue.quarantined_recipe_ids.includes("karibia-plantain-aamiaislautanen"));
+  assert.ok(!queue.queue.some(entry => entry.recipe_id === "karibia-plantain-aamiaislautanen"));
   assert.ok(!queue.next_batch.some(entry => entry.hold));
   assert.ok(queue.next_batch.some(entry => entry.recipe_id === "draft-queue-fixture"));
 });
