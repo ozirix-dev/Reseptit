@@ -1,0 +1,314 @@
+{
+  "recipeId": "korealainen-kimchi-jeon-aamiaiseksi",
+  "sourceHash": "9dc9619a05e61401b085ad2ff9741ebe4b579cacf1b33c7581845e87f635b0ad",
+  "calculatedAt": "2026-11-14",
+  "batchId": "batch-571",
+  "servings": 2,
+  "scope": "Two servings. Fresh seasoned cabbage and all released liquid go directly into the batter. All oil is mixed into the batter. No discarded liquor, pan oil or batter.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "amount": 160,
+      "unit": "g",
+      "item": "kiinankaalia",
+      "state": "raw napa cabbage, trimmed",
+      "matchEvidence": "AFCD Release 3: Cabbage, Chinese, raw",
+      "record": {
+        "id": "afcd-F001996-release-3",
+        "name": "Cabbage, Chinese, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F001996",
+        "retrievedAt": "2026-11-14",
+        "licence": "FSANZ AFCD Release 3 CC BY-SA 3.0 Australia",
+        "state": "raw napa cabbage, trimmed",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with and without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 0.9,
+          "fibre": 1.1,
+          "polyols": 0,
+          "protein": 1.1,
+          "fat": 0
+        }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible input after the listed preparation",
+      "retainedFraction": 1,
+      "retentionEvidence": "Whole weighed input enters the served dish without deliberate draining or discarded oil"
+    },
+    {
+      "amount": 14,
+      "unit": "g",
+      "item": "kevätsipulia",
+      "state": "raw spring onion, trimmed",
+      "matchEvidence": "AFCD Release 3: Onion, spring, fresh, raw",
+      "record": {
+        "id": "afcd-F006250-release-3",
+        "name": "Onion, spring, fresh, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F006250",
+        "retrievedAt": "2026-11-14",
+        "licence": "FSANZ AFCD Release 3 CC BY-SA 3.0 Australia",
+        "state": "raw spring onion, trimmed",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with and without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 4.6,
+          "fibre": 1.9,
+          "polyols": 0,
+          "protein": 1.7,
+          "fat": 0.2
+        }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible input after the listed preparation",
+      "retainedFraction": 1,
+      "retentionEvidence": "Whole weighed input enters the served dish without deliberate draining or discarded oil"
+    },
+    {
+      "amount": 4,
+      "unit": "g",
+      "item": "kuorittua valkosipulia",
+      "state": "fresh peeled garlic",
+      "matchEvidence": "AFCD Release 3: Garlic, peeled, fresh, raw",
+      "record": {
+        "id": "afcd-F004193-release-3",
+        "name": "Garlic, peeled, fresh, raw",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F004193",
+        "retrievedAt": "2026-11-14",
+        "licence": "FSANZ AFCD Release 3 CC BY-SA 3.0 Australia",
+        "state": "fresh peeled garlic",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with and without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 10.2,
+          "fibre": 16.9,
+          "polyols": 0,
+          "protein": 6.1,
+          "fat": 2.8
+        }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible input after the listed preparation",
+      "retainedFraction": 1,
+      "retentionEvidence": "Whole weighed input enters the served dish without deliberate draining or discarded oil"
+    },
+    {
+      "amount": 3,
+      "unit": "g",
+      "item": "gochugarua (korealaista kuivattua chilijauhetta)",
+      "state": "pure dried ground red chili (gochugaru)",
+      "matchEvidence": "AFCD Release 3: Chilli (chili), dried, ground",
+      "record": {
+        "id": "afcd-F002893-release-3",
+        "name": "Chilli (chili), dried, ground",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F002893",
+        "retrievedAt": "2026-11-14",
+        "licence": "FSANZ AFCD Release 3 CC BY-SA 3.0 Australia",
+        "state": "pure dried ground red chili (gochugaru)",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with and without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 12.9,
+          "fibre": 34.2,
+          "polyols": 0,
+          "protein": 12.3,
+          "fat": 14.3
+        }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible input after the listed preparation",
+      "retainedFraction": 1,
+      "retentionEvidence": "Whole weighed input enters the served dish without deliberate draining or discarded oil"
+    },
+    {
+      "amount": 8,
+      "unit": "g",
+      "item": "maustamatonta riisiviinietikkaa ilman lisättyä sokeria",
+      "state": "unseasoned rice vinegar without added sugar",
+      "matchEvidence": "AFCD Release 3: Vinegar (except balsamic vinegar)",
+      "record": {
+        "id": "afcd-F009498-release-3",
+        "name": "Vinegar (except balsamic vinegar)",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F009498",
+        "retrievedAt": "2026-11-14",
+        "licence": "FSANZ AFCD Release 3 CC BY-SA 3.0 Australia",
+        "state": "unseasoned rice vinegar without added sugar",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "AFCD paired available carbohydrate with and without sugar alcohols",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 0
+        }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible input after the listed preparation",
+      "retainedFraction": 1,
+      "retentionEvidence": "Whole weighed input enters the served dish without deliberate draining or discarded oil"
+    },
+    {
+      "amount": 2,
+      "unit": "g",
+      "item": "hienoa suolaa",
+      "state": "fine salt",
+      "matchEvidence": "Plain water and fine salt do not contribute to the modeled nutrients.",
+      "excludedReason": "Plain water and fine salt do not contribute to the modeled nutrients.",
+      "omissionImpactEvidence": "Plain water and fine salt do not contribute to the modeled nutrients.",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 0,
+        "netCarbohydrate": 0,
+        "totalCarbohydrate": 0,
+        "protein": 0,
+        "fat": 0
+      }
+    },
+    {
+      "amount": 90,
+      "unit": "g",
+      "item": "puolikarkeaa vehnäjauhoa",
+      "state": "medium plain wheat flour",
+      "matchEvidence": "Fineli Release 20 JAUHO, VEHNÄJAUHO, PUOLIKARKEA",
+      "record": {
+        "id": "fineli-110-release-20",
+        "name": "JAUHO, VEHNÄJAUHO, PUOLIKARKEA",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/110",
+        "retrievedAt": "2026-11-14",
+        "licence": "THL Fineli Release 20 CC BY 4.0",
+        "state": "medium plain wheat flour",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 73.998,
+          "FIBT": 3.5,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 73.998,
+          "fibre": 3.5,
+          "polyols": 0,
+          "protein": 11.6,
+          "fat": 1.56
+        }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible input after the listed preparation",
+      "retainedFraction": 1,
+      "retentionEvidence": "Whole weighed input enters the served dish without deliberate draining or discarded oil"
+    },
+    {
+      "amount": 50,
+      "unit": "g",
+      "item": "kananmunaa ilman kuorta (noin 1 kpl)",
+      "state": "raw whole egg without shell",
+      "matchEvidence": "Fineli Release 20 KANANMUNA, KUORETON",
+      "record": {
+        "id": "fineli-858-release-20",
+        "name": "KANANMUNA, KUORETON",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/858",
+        "retrievedAt": "2026-11-14",
+        "licence": "THL Fineli Release 20 CC BY 4.0",
+        "state": "raw whole egg without shell",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0.3,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0.3,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 12.61,
+          "fat": 9.24
+        }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible input after the listed preparation",
+      "retainedFraction": 1,
+      "retentionEvidence": "Whole weighed input enters the served dish without deliberate draining or discarded oil"
+    },
+    {
+      "amount": 95,
+      "unit": "g",
+      "item": "kylmää vettä",
+      "state": "plain water",
+      "matchEvidence": "Plain water and fine salt do not contribute to the modeled nutrients.",
+      "excludedReason": "Plain water and fine salt do not contribute to the modeled nutrients.",
+      "omissionImpactEvidence": "Plain water and fine salt do not contribute to the modeled nutrients.",
+      "omissionImpactUpperBoundPerServing": {
+        "kcal": 0,
+        "netCarbohydrate": 0,
+        "totalCarbohydrate": 0,
+        "protein": 0,
+        "fat": 0
+      }
+    },
+    {
+      "amount": 10,
+      "unit": "g",
+      "item": "rypsiöljyä taikinaan",
+      "state": "rapeseed oil in the batter",
+      "matchEvidence": "Fineli Release 20 RYPSIÖLJY",
+      "record": {
+        "id": "fineli-535-release-20",
+        "name": "RYPSIÖLJY",
+        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/535",
+        "retrievedAt": "2026-11-14",
+        "licence": "THL Fineli Release 20 CC BY 4.0",
+        "state": "rapeseed oil in the batter",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "componentValues": {
+          "CHO": 0,
+          "FIBT": 0,
+          "POLYL": 0
+        },
+        "componentIds": {
+          "CHO": 2034,
+          "FIBT": 2168,
+          "POLYL": 2260
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
+        "per100g": {
+          "carbohydrate": 0,
+          "fibre": 0,
+          "polyols": 0,
+          "protein": 0,
+          "fat": 100
+        }
+      },
+      "edibleFraction": 1,
+      "edibleEvidence": "Weighed edible input after the listed preparation",
+      "retainedFraction": 1,
+      "retentionEvidence": "Whole weighed input enters the served dish without deliberate draining or discarded oil"
+    }
+  ]
+}

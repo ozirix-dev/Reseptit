@@ -241,7 +241,21 @@
       "source_risk": "HOLD-WATER-AND-NUTRITION",
       "nutrition_input_at_baseline": "missing",
       "public_quarantine_at_baseline": false,
-      "approval": null
+      "approval": {
+        "status": "RELEASE_AUTHORIZED",
+        "reviewedAt": "2026-11-14",
+        "reviewReference": "https://github.com/ozirix-dev/Reseptit/issues/447",
+        "reviewerKind": "AI_EDITORIAL_WITH_INDEPENDENT_EVIDENCE",
+        "sourceSha256": "48f4aacb8db692421fb66f9db2d2b9e3f25921893cb9b147e7c27c324cde07d0",
+        "nutritionEvidenceSha256": "aa48103ae639f1abc64f23109514399f177e29189511f2e76a163caf2dfbe4e9",
+        "gkRecipeBindingSha256": "7aa5b42bc408d315e64c4d237585bacc13021bd2619097c254927cfd88ddc2b4",
+        "gkCalculationInputSha256": "9d2c7ed54701348b6f581417dc76f7cf0a91e1bdeef2af7503d9fc217ec36160",
+        "gkCalculationEvidenceSha256": "714d110067f5e95a4a7d2da4ac4503803efbe1859a40a2af3ab313c1cea4596d",
+        "gkDisposition": "GK_UNAVAILABLE_EXPLICITLY_REVIEWED",
+        "cookingAndAllergensReviewed": true,
+        "ingredientUnitConversionsReviewed": true,
+        "translationMeaningReviewRequired": true
+      }
     },
     {
       "recipe_id": "karibia-plantain-aamiaislautanen",
