@@ -1,3 +1,4 @@
+import { originalForCoconutBananaHistory } from "./coconut-banana-history";
 import {coconutBananaHistoricalBindingText, coconutBananaRecipeId, coconutBananaSourcePath} from "../scripts/coconut-banana-reviewed-source";
 import {biryaniSourceBeforeReview, biryaniSourcePath} from "../scripts/biryani-reviewed-source";
 import {parseMarkdown} from "../src/content/markdown";
@@ -241,7 +242,7 @@ test('Live original results preserve frozen history plus the exact reviewed tran
    }
    if (row.source_path === coconutBananaSourcePath) {
     const live = read(row.source_path).replaceAll("\r\n", "\n");
-    const old = execFileSync("git", ["show", "e127ab5720becdce56c3e8676fdbc0b36f613061"], {cwd:root,encoding:"utf8"});
+    const old = originalForCoconutBananaHistory(root, row.source_path, live);
     const before = parseMarkdown(old)!;
     const sourceHash = (text: string) => createHash("sha256").update(text).digest("hex");
     assert.equal(row.source_content_hash, sourceHash(live));
