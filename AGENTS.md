@@ -34,6 +34,31 @@
 - Detailed project workflow and handoff format:
   [Rinnakkaisten Codex-ajojen toimintatapa](docs/rinnakkaiset-codex-ajot.md).
 
+## Continuous repository hygiene
+
+- Keep repository hygiene as a continuous, separately scoped maintenance lane
+  alongside recipe, translation and feature development. Before each cleanup,
+  inspect the latest `main`, active PRs and file owners; do not duplicate work
+  already in progress or expand another session's write scope.
+- At the end of each development task, check for newly generated artifacts,
+  obsolete temporary outputs and possible branch/worktree leftovers **read-only**.
+  Record out-of-scope follow-ups rather than silently changing other files.
+- Prefer small, auditable cleanup PRs. Preserve recipe data, F25 gates, GK
+  evidence/history, approvals and review fixtures unless they are the explicitly
+  authorized scope of a separate reviewed change.
+- A clean Git status alone never proves a worktree safe to remove. Check tracked,
+  untracked and ignored files, locks, active use, open PRs and the relevant
+  `main` ancestry. Unknown evidence means **KEEP**; `MANUAL_REVIEW` is only a
+  candidate for human verification, not deletion permission.
+- Scheduled GitHub hygiene and local worktree inventories are **read-only**.
+  Do not automatically delete branches/worktrees, use force deletion, rewrite
+  history or clear caches containing uncertain local state. Any deletion needs
+  separate explicit authorization, ownership checks and a guarded procedure.
+- CI optimizations must preserve the required `Recipe site / build`, tested-SHA
+  verification and applicable F25, GK, translation and publication safeguards.
+  Compare like-for-like timings; a narrower test selection is not proof of a
+  faster full test run.
+
 ## Recipe translation quality
 
 - Publish recipe translations after automated checks and a Codex comparison
