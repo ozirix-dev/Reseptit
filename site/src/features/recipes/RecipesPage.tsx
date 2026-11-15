@@ -9,6 +9,7 @@ import "./home-preview.css";
 import { isRecipavoHeroEnabled, recipavoHeroCopy } from "./recipavo-hero";
 import { toolUi } from "./recipe-tools";
 import { cuisines, ingredientGroups } from "@/content/recipe-facets";
+import { recipeMatchesCategory } from "@/content/recipe-categories";
 import { emptyRecipeFilters, filterRecipes, parseRecipeFilters, recipeFiltersToSearch, type RecipeCategory, type RecipeDietFilter, type RecipeFilters, type GlycemicLoadFilterCategory } from "./recipe-search";
 import { glycemicLoadFilterCategories } from "@/generated/glycemic-load-filters.generated";
 
@@ -30,7 +31,7 @@ export function RecipesPage({ locale }: { locale: RecipeLocale }) {
   const navigate = useNavigate();
   const [filters, setFilters] = useState<RecipeFilters>(emptyRecipeFilters);
   const [hydrated, setHydrated] = useState(false);
-  const availableCategories = categories.filter((category) => recipes.some((recipe) => recipe.category === category));
+  const availableCategories = categories.filter((category) => recipes.some((recipe) => recipeMatchesCategory(recipe, category)));
   const hasDietClasses = recipes.some((recipe) => recipe.dietClass !== null);
   const hasKetoRecipes = recipes.some((recipe) => recipe.dietClass === "keto");
   const hasGlycemicLoad = recipes.some((recipe) => glycemicLoadFilterCategories[recipe.recipeId] !== undefined);
@@ -159,7 +160,7 @@ function RecipeCard({ recipe, index, locale, headingLevel = 2 }: { recipe: Recip
       {recipe.image && !imageFailed ? <img className="recipe-card__image" src={recipe.image.src} srcSet={recipe.image.srcSet ?? undefined} sizes={recipeCardSizes} alt={recipe.image.alt} width={recipe.image.width} height={recipe.image.height} loading={index === 0 ? "eager" : "lazy"} fetchPriority={index === 0 ? "high" : undefined} decoding="async" onError={() => setImageFailed(true)} />
         : <span className="recipe-card__image recipe-card__image--placeholder">{labels.imageUnavailable}</span>}
       <span className="recipe-card__content">
-        <span className="recipe-card__badges"><span className="recipe-card__category">{labels.category[recipe.category]}</span>{dietLabel ? <span className="recipe-card__diet">{dietLabel}</span> : null}</span>
+        <span className="recipe-card__badges">{[recipe.category, ...(recipe.additionalCategories ?? [])].map(category => <span key={category} className="recipe-card__category">{labels.category[category]}</span>)}{dietLabel ? <span className="recipe-card__diet">{dietLabel}</span> : null}</span>
         {meta ? <span className="recipe-card__meta">{meta}</span> : null}
         <Heading className="recipe-card__title">{recipe.title}</Heading>
         <span className="recipe-card__description">{recipe.description}</span>
