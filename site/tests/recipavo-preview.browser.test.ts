@@ -6,12 +6,15 @@ import test from "node:test";
 import { launchBrowser } from "./launch-browser";
 import { recipavoHeroCopy } from "../src/features/recipes/recipavo-hero";
 import { siteContent } from "../src/generated/content.generated";
+import { recipeLibraryPagePath, recipeLibraryPageSize } from "../src/features/recipes/recipe-pagination";
 
-const base = "http://127.0.0.1:4181/Reseptit";
+const production = process.env.RECIPAVO_BUILD_TARGET === "production";
+const prefix = production ? "" : "/Reseptit";
+const base = "http://127.0.0.1:4181" + prefix;
 const indexes = { fi: "/", en: "/en/recipes/", sv: "/sv/recept/", th: "/th/recipes/" } as const;
 
-test("preview HTML stays noindex after React hydration and keeps every locale reachable", async () => {
-  assert.equal(process.env.VITE_RECIPAVO_HERO_PREVIEW, "true", "Build and test must use the explicit preview flag");
+test("branded HTML keeps the target indexing policy, search and library working in every locale", async () => {
+  assert.ok(production || process.env.VITE_RECIPAVO_HERO_PREVIEW === "true", "Build and test must use the same branded target");
   const homePicksExpected = existsSync(path.resolve("src/features/recipes/home-preview.ts"));
   assert.equal(homePicksExpected, true, "H1 preview must be present on the integrated main before releasing this SEO fix");
   const server = spawn(process.execPath, [path.resolve("node_modules/vite/bin/vite.js"), "preview", "--host", "127.0.0.1", "--port", "4181", "--strictPort"], { stdio: "pipe" });
@@ -34,17 +37,16 @@ test("preview HTML stays noindex after React hydration and keeps every locale re
       const noJs = await browser.newPage({ javaScriptEnabled: false });
       await noJs.goto(base + route);
       assert.equal(await noJs.locator("h1").textContent(), recipavoHeroCopy[locale].title);
-      assert.match(await noJs.locator('meta[name="robots"]').getAttribute("content") ?? "", /noindex\s*,\s*nofollow/);
+      if (production) assert.equal(await noJs.locator('meta[name="robots"]').count(), 0);
+      else assert.match(await noJs.locator('meta[name="robots"]').getAttribute("content") ?? "", /noindex\s*,\s*nofollow/);
       assert.equal(await noJs.locator('link[rel="canonical"]').count(), 1);
       if (homePicksExpected) {
         assert.equal(await noJs.locator(".home-preview__picks > .recipe-card-grid .recipe-card").count(), 9, locale);
-        const detail = noJs.locator(".home-preview__more");
-        assert.equal(await detail.count(), 1, locale);
-        await detail.locator("summary").click();
-        assert.equal(await detail.getAttribute("open"), "", locale);
-        const rows = await noJs.locator(".home-preview__picks .recipe-card").count();
-        const published = siteContent.recipes.filter((recipe) => recipe.locale === locale).length;
-        assert.equal(rows, published, locale);
+        await noJs.locator(".recipe-library-link a").click();
+        assert.equal(new URL(noJs.url()).pathname, prefix + recipeLibraryPagePath(locale));
+        assert.equal(await noJs.locator(".recipe-card").count(), recipeLibraryPageSize);
+        await noJs.locator('.recipe-pagination a[rel="next"]').click();
+        assert.equal(new URL(noJs.url()).pathname, prefix + recipeLibraryPagePath(locale, 2));
       }
       await noJs.close();
 
@@ -53,8 +55,10 @@ test("preview HTML stays noindex after React hydration and keeps every locale re
       await page.goto(base + route);
       await page.locator("#recipe-search").waitFor();
       await page.waitForFunction(
-        (title) => document.title === title && /noindex\s*,\s*nofollow/.test(document.querySelector('meta[name="robots"]')?.getAttribute("content") ?? ""),
-        `${recipavoHeroCopy[locale].title} | Recipavo`,
+        ({ title, production }) => document.title === title && (production
+          ? !document.querySelector('meta[name="robots"]')
+          : /noindex\s*,\s*nofollow/.test(document.querySelector('meta[name="robots"]')?.getAttribute("content") ?? "")),
+        { title: recipavoHeroCopy[locale].title + " | Recipavo", production },
       );
       assert.equal(await page.locator("h1").textContent(), recipavoHeroCopy[locale].title);
       assert.equal(await page.locator("html").getAttribute("lang"), locale);
@@ -62,6 +66,12 @@ test("preview HTML stays noindex after React hydration and keeps every locale re
       if (homePicksExpected) {
         assert.equal(await page.locator(".home-preview__picks > .recipe-card-grid .recipe-card").count(), 9, locale);
         assert.ok(await page.locator(".home-preview__topic-list a").count() >= 4, locale);
+        const cards = await page.locator(".recipe-card__link").evaluateAll(links =>
+          links.map(link => (link as HTMLAnchorElement).pathname));
+        const outsideHome = siteContent.recipes.find(recipe => recipe.locale === locale && !cards.includes(prefix + recipe.routePath))!;
+        await page.locator("#recipe-search").fill(outsideHome.title);
+        await page.locator('.recipe-card__link[href="' + prefix + outsideHome.routePath + '"]').waitFor();
+        await page.goto(base + route);
         await page.locator(".home-preview__topic-list a").first().click();
         await page.waitForFunction(() => !document.querySelector(".home-preview__picks") && !!document.querySelector(".recipe-result-count"));
         assert.ok(page.url().includes("category=") || page.url().includes("diet="), `${locale}: topic filtering`);
@@ -71,7 +81,9 @@ test("preview HTML stays noindex after React hydration and keeps every locale re
     const fi = await browser.newPage();
     fi.on("pageerror", (error) => errors.push(`FI blog: ${error.message}`));
     await fi.goto(base + "/ruokaopas/");
-    await fi.waitForFunction(() => /noindex\s*,\s*nofollow/.test(document.querySelector('meta[name="robots"]')?.getAttribute("content") ?? ""));
+    await fi.waitForFunction(production => production
+      ? !document.querySelector('meta[name="robots"]')
+      : /noindex\s*,\s*nofollow/.test(document.querySelector('meta[name="robots"]')?.getAttribute("content") ?? ""), production);
     assert.ok(await fi.getByRole("heading", { name: "Ruokaopas", exact: true }).count());
     await fi.close();
     assert.deepEqual(errors, []);

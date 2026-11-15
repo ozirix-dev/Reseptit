@@ -1,3 +1,4 @@
+import type { SearchRecipe } from "../features/recipes/recipe-search";
 import { contentManifest, publishedLocales } from "../generated/routes.generated";
 import { normalizePath, type RouteContent } from "../content/route-data";
 import type { RecipeCategoryName } from "../types/content";
@@ -23,8 +24,19 @@ export function parseRouteContent(value: unknown, route: string): RouteContent {
         !Array.isArray(data.recipe.ingredients) || !validAdditionalCategories(data.recipe) || typeof data.recipe.instructionsHtml !== "string" || !data.recipe.nutrition || !(data.recipe.servings > 0)))) {
     throw new Error("Invalid recipe page data");
   }
+  if ((data.catalog && (!/^search-(fi|en|sv|th)-[a-f0-9]{20}\.json$/.test(data.catalog.searchFile) ||
+      !Array.isArray(data.catalog.categories) || !Array.isArray(data.catalog.diets) ||
+      !Array.isArray(data.catalog.cuisines) || !Array.isArray(data.catalog.ingredientGroups) || !Array.isArray(data.catalog.topics))) ||
+      (data.pagination && (data.pagination.canonicalPath !== data.path || !data.recipes.length)) ||
+      (data.glycemicRecipe && (!data.recipe || !Array.isArray(data.glycemicRecipe.variants) ||
+        (data.glycemicRecipe.result && data.glycemicRecipe.result.recipeId !== data.recipe.recipeId))) ||
+      (data.glycemicOverview && (!Array.isArray(data.glycemicOverview.results) ||
+        !Array.isArray(data.glycemicOverview.variants) || !data.glycemicOverview.coverage))) {
+    throw new Error("Invalid recipe page data");
+  }
   return data;
 }
+
 export function rememberContent(data: RouteContent): RouteContent {
   cache.set(data.path, data);
   if (cache.size > 24) cache.delete(cache.keys().next().value!);
@@ -40,4 +52,26 @@ export async function loadContent({ request }: { request: Request }): Promise<Ro
   const response = await fetch(`${import.meta.env.BASE_URL}data/${file}`, { signal: request.signal });
   if (!response.ok) throw new Error(`Recipe page data: HTTP ${response.status}`);
   return rememberContent(parseRouteContent(await response.json(), route));
+}
+
+const searches = new Map<string, Promise<SearchRecipe[]>>();
+
+export function loadRecipeSearch(file: string): Promise<SearchRecipe[]> {
+  const cached = searches.get(file);
+  if (cached) return cached;
+  const request = fetch(import.meta.env.BASE_URL + "data/" + file).then(async response => {
+    if (!response.ok) throw new Error("Recipe search: HTTP " + response.status);
+    const entries: unknown = await response.json();
+    if (!Array.isArray(entries) || !entries.every(entry =>
+      entry && typeof entry.searchText === "string" && typeof entry.title === "string" &&
+      typeof entry.routePath === "string" && validAdditionalCategories(entry))) {
+      throw new Error("Invalid recipe search index");
+    }
+    return entries as SearchRecipe[];
+  }).catch(error => {
+    searches.delete(file);
+    throw error;
+  });
+  searches.set(file, request);
+  return request;
 }

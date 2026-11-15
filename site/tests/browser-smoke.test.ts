@@ -185,7 +185,8 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
 
     await page.getByRole("link", { name: "Reseptit, etusivu" }).click();
     await page.getByRole("heading", { name: "Reseptit" }).waitFor();
-    await page.getByRole("link", { name: "Kermainen lohipata" }).click();
+    await page.locator("#recipe-search").fill("Kermainen lohipata");
+    await page.locator('.recipe-card__link[href="/Reseptit/kermainen-lohipata/"]').click();
     await page.getByRole("heading", { name: "Kermainen lohipata" }).waitFor();
     assert.equal(await page.locator(".serving-control output").innerText(), "4");
     assert.equal(await firstStep.isChecked(), false);
@@ -193,7 +194,7 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
     await page.goto(`${base}/?q=lohi`);
     await page.getByRole("searchbox", { name: "Hae reseptejä" }).waitFor();
     await page.waitForFunction(() => (document.querySelector<HTMLInputElement>("#recipe-search")?.value ?? "") === "lohi");
-    assert.ok(await page.locator(".recipe-card-grid .recipe-card").count() > 0);
+    await page.locator(".recipe-card-grid .recipe-card").first().waitFor();
     assert.ok((await page.locator('link[rel="canonical"]').getAttribute("href"))?.endsWith("/Reseptit/"));
     await page.getByLabel("Kategoria").selectOption("jalkiruoka");
     await page.getByRole("status").getByText("Löytyi 0 reseptiä").waitFor();
@@ -242,7 +243,7 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
       await page.getByLabel(toolUi[locale].time, { exact: true }).selectOption("60");
       await page.getByLabel(toolUi[locale].cuisine, { exact: true }).selectOption("thai");
       await page.getByLabel(toolUi[locale].ingredient, { exact: true }).selectOption("chicken");
-      assert.ok(await page.locator(".recipe-card").count() > 0);
+      await page.locator(".recipe-card").first().waitFor();
       assert.match(page.url(), /time=60&cuisine=thai&ingredient=chicken/);
       await page.getByLabel(toolUi[locale].gl, { exact: true }).selectOption("low");
       await page.waitForFunction(() => new URL(location.href).searchParams.get("gl") === "low");

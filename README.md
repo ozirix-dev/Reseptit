@@ -108,19 +108,25 @@ Automaattinen läpäisy ei korvaa sisällöllistä kielikatselmointia.
 ## Kehitys ja tarkistukset
 
 Valitse ensin muutoksen riskin mukaiset kohdennetut tarkistukset.
-Laajaa regressiota varten komennot suoritetaan `site/`-kansiossa:
+Käytä CI:n tavoin Node.js 22:ta. Kloonaa koko Git-historia, sillä osa
+resepti- ja käännöstesteistä lukee historiallisia Git-objekteja.
+Aja komennot `site/`-kansiossa. Build generoi testien tarvitseman datan
+ja tarkistaa etusivun HTML:n ja JavaScriptin kokorajat.
 
 ```powershell
 npm ci
+npm run build
 npm test
 npm run test:translations
 npm run test:image
-npm run build
 npm run test:static
 npm run test:browser
 npm audit --audit-level=low
 npm run preview
 ```
+
+Yksikkö- ja käännöstesteille riittää myös `npm run content:prepare` ennen testejä.
+Staattiset testit ja selaintestit ajavat valmista buildia.
 
 Selaintestit tarvitsevat Playwrightin Chromiumin (`npx playwright install chromium`)
 tai ympäristömuuttujan `PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH`, joka osoittaa
@@ -134,10 +140,12 @@ CI:tä ei ohiteta. Työhaarojen ja Repo Guardin säännöt ovat
 ## Lataus, SEO ja julkaisu
 
 Build tuottaa jokaiselle julkaistulle reitille valmiin HTML:n ja turvallisesti
-upotetun lähtödatan. Hakemisto käyttää yhden kielen hakutietoja ja reseptisivu
-yhden reseptin sisältöä. Siirtyminen toiselle reitille hakee tarvittaessa
-sisältötiivisteellä nimetyn JSON-tiedoston. Yhteinen JavaScript ei sisällä koko
-reseptikirjastoa. Haku ja suodattimet toimivat nykyisen hakemiston datassa.
+upotetun lähtödatan. Etusivulla ja kirjaston sivuilla on rajattu määrä
+kortteja. Haku lataa tarvittaessa yhden kielen hakuindeksin ja kohdistuu koko
+kielivalikoimaan. Ilman JavaScriptiä koko kirjasto on selattavissa sivutuslinkeillä.
+Reseptisivu saa vain oman reseptinsä sisällön ja GK-tiedot. GK-opas on oma
+reittinsä, jonka data sisältää koko GK-aineiston. Siirtyminen toiselle reitille
+hakee tarvittaessa sisältötiivisteellä nimetyn JSON-tiedoston.
 
 HTML sisältää reseptit ja linkit myös ilman JavaScriptiä. Hydraation jälkeen
 annoslaskuri, haku ja query-osoitteet toimivat. Canonicalit, hreflang,

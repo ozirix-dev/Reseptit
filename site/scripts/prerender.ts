@@ -1,6 +1,8 @@
 import { siteTarget } from "../src/content/site-target";
 import { recipeCardSizes } from "../src/features/recipes/image-layout";
-import { contentForRoute, serializeRouteContent } from "../src/content/route-data";
+import { contentForRoute, serializeRouteContent, type RouteContent } from "../src/content/route-data";
+import { contentManifest } from "../src/generated/routes.generated";
+import { libraryCopy, libraryTitle } from "../src/features/recipes/home-preview";
 import { mkdir, readFile, rm, writeFile } from "node:fs/promises";
 import path from "node:path";
 import React from "react";
@@ -31,10 +33,10 @@ function outputPaths(route: string): string[] {
   return [clean ? path.join(distDir, clean, "index.html") : path.join(distDir, "index.html")];
 }
 
-function routeMetadata(route: string) {
+function routeMetadata(route: string, content: RouteContent) {
   const privacyLocale = privacyLocaleFromPath(route);
   const privacy = privacyLocale ? privacyCopy[privacyLocale] : null;
-  const recipe = siteContent.recipes.find((item) => item.routePath === route);
+  const { recipe, pagination } = content;
   const methodLocale = (Object.keys(methodRoutes) as RecipeLocale[]).find((locale) => route === methodRoutes[locale]);
   const pilotPage = methodLocale !== undefined;
   const blogPost = articles.find(post => articlePath(post) === route);
@@ -42,15 +44,15 @@ function routeMetadata(route: string) {
   const isBlog = Boolean(blogPost || blogIndex);
   const indexLocale = (Object.keys(localeBase) as RecipeLocale[]).find((locale) =>
     locale === "fi" ? route === "/" : route === `${localeBase[locale]}/` || route === localeBase[locale]);
-  if (!privacy && !recipe && !pilotPage && !isBlog && indexLocale !== "fi" && (!indexLocale || !siteContent.recipes.some((item) => item.locale === indexLocale))) return null;
-  const locale = privacyLocale ?? recipe?.locale ?? methodLocale ?? indexLocale ?? "fi";
+  if (!pagination && !privacy && !recipe && !pilotPage && !isBlog && indexLocale !== "fi" && (!indexLocale || !siteContent.recipes.some((item) => item.locale === indexLocale))) return null;
+  const locale = privacyLocale ?? recipe?.locale ?? pagination?.locale ?? methodLocale ?? indexLocale ?? "fi";
   const preview = !siteTarget.production && process.env.VITE_RECIPAVO_HERO_PREVIEW === "true";
   const branded = siteTarget.production || preview;
-  const title = privacy ? `${privacy.title} | Recipavo` : blogPost ? `${blogPost.title} | Ruokaopas` : blogIndex ? "Ruokaopas | Reseptit" : branded && indexLocale ? `${recipavoHeroCopy[locale].title} | Recipavo` : pilotPage ? glycemicLoadMeta[locale].title : recipe ? `${recipe.title} | ${indexNames[locale]}` : `${indexNames[locale]} | Ozirix`;
-  const description = privacy?.description ?? blogPost?.description ?? (blogIndex ? "Ruoanlaiton tekniikoita ja luotettavaa ravitsemustietoa." : undefined) ?? (branded && indexLocale ? recipavoHeroCopy[locale].intro : pilotPage ? glycemicLoadMeta[locale].description : recipe?.description || recipeUi[locale].intro);
+  const title = pagination ? libraryTitle(locale, pagination.page) : privacy ? `${privacy.title} | Recipavo` : blogPost ? `${blogPost.title} | Ruokaopas` : blogIndex ? "Ruokaopas | Reseptit" : branded && indexLocale ? `${recipavoHeroCopy[locale].title} | Recipavo` : pilotPage ? glycemicLoadMeta[locale].title : recipe ? `${recipe.title} | ${indexNames[locale]}` : `${indexNames[locale]} | Ozirix`;
+  const description = (pagination ? libraryCopy[locale].description : undefined) ?? privacy?.description ?? blogPost?.description ?? (blogIndex ? "Ruoanlaiton tekniikoita ja luotettavaa ravitsemustietoa." : undefined) ?? (branded && indexLocale ? recipavoHeroCopy[locale].intro : pilotPage ? glycemicLoadMeta[locale].description : recipe?.description || recipeUi[locale].intro);
   const url = `${baseUrl}${route}`;
   const translations = recipe ? siteContent.recipes.filter((item) => item.recipeId === recipe.recipeId) : [];
-  const publishedLocales = privacy ? (Object.keys(privacyPaths) as RecipeLocale[]).map(locale => ({ locale, path: privacyPaths[locale] })) : isBlog ? [{locale: "fi" as RecipeLocale, path: route}] : pilotPage ? (Object.keys(methodRoutes) as RecipeLocale[]).map((itemLocale) => ({ locale: itemLocale, path: methodRoutes[itemLocale] })) : recipe
+  const publishedLocales = pagination ? [{ locale, path: route }] : privacy ? (Object.keys(privacyPaths) as RecipeLocale[]).map(locale => ({ locale, path: privacyPaths[locale] })) : isBlog ? [{locale: "fi" as RecipeLocale, path: route}] : pilotPage ? (Object.keys(methodRoutes) as RecipeLocale[]).map((itemLocale) => ({ locale: itemLocale, path: methodRoutes[itemLocale] })) : recipe
     ? translations.map((item) => ({ locale: item.locale, path: item.routePath }))
     : (Object.keys(localeBase) as RecipeLocale[])
         .filter((itemLocale) => siteContent.recipes.some((item) => item.locale === itemLocale))
@@ -67,8 +69,7 @@ function routeMetadata(route: string) {
     ? `<script id="recipe-jsonld" type="application/ld+json">${JSON.stringify(recipeJsonLd(recipe)).replaceAll("<", "\\u003c")}</script>`
     : "";
   // Match the card grid breakpoints. Do not eagerly fetch three cards on mobile.
-  const desktopImages = privacy || recipe || pilotPage || isBlog ? [] : siteContent.recipes.filter((item) => item.locale === locale)
-    .slice(1, 3).flatMap((item, index) => item.image ? [
+  const desktopImages = content.recipes.slice(1, 3).flatMap((item, index) => item.image ? [
       `<link rel="preload" as="image" fetchpriority="high" href="${escapeHtml(item.image.src)}" media="(min-width: ${index === 0 ? 700 : 1100}px)"${item.image.srcSet ? ` imagesrcset="${escapeHtml(item.image.srcSet)}"` : ""}${item.image.srcSet ? ` imagesizes="${escapeHtml(recipeCardSizes)}"` : ""} />`,
     ] : []);
   return {
@@ -111,21 +112,11 @@ try {
   if (!shell.includes('<div id="root"></div>')) {
     throw new Error("Prerender requires a fresh Vite build. Run npm run build.");
   }
-  const routes = [...new Set([
-    "/",
-    ...Object.values(privacyPaths),
-    blogRoot, ...articles.map(articlePath),
-    ...Object.values(methodRoutes),
-    ...(Object.keys(localeBase) as RecipeLocale[])
-      .filter((locale) => locale !== "fi" && siteContent.recipes.some((recipe) => recipe.locale === locale))
-      .map((locale) => `${localeBase[locale]}/`),
-    ...siteContent.recipes.map((recipe) => recipe.routePath),
-  ])];
-
+  const routes = Object.keys(contentManifest);
   for (const route of routes) {
-    const metadata = routeMetadata(route);
-    if (!metadata) continue;
-    const initial = contentForRoute(siteContent.recipes, route);
+    const initial: RouteContent = JSON.parse(await readFile(path.join(distDir, "data", contentManifest[route]), "utf8"));
+    const metadata = routeMetadata(route, initial);
+    if (!metadata) throw new Error("Missing prerender metadata for " + route);
     const router = createStaticRouter(route, initial);
     const body = renderToString(React.createElement(RouterProvider, { router }));
     const html = replaceDocument(shell, `${metadata.head}\n<script id="page-content" type="application/json">${serializeRouteContent(initial)}</script>`, metadata.lang, body);
