@@ -11,8 +11,8 @@ difficulty: helppo
 main_ingredient: [mustikka, jogurtti]
 cooking_method: [pakastus]
 tags: [jäätelö, mustikka, hunaja, jogurtti]
-translation_languages: []
-translation_status: {}
+translation_languages: [en, sv, th]
+translation_status: {en: published, sv: published, th: published}
 image:
   src: jalkiruoat/mustikka-jogurttijaatelo.webp
   alt: "Vaaleanviolettia mustikkajäätelöä metallivuoassa ja kaksi palloa lasikulhossa"

@@ -11,8 +11,8 @@ difficulty: helppo
 main_ingredient: [banaani, maapähkinävoi, tumma suklaa]
 cooking_method: [pakastus]
 tags: [banaani, maapähkinä, suklaa]
-translation_languages: []
-translation_status: {}
+translation_languages: [en, sv, th]
+translation_status: {en: published, sv: published, th: published}
 image:
   src: valipalat/jaaiset-banaani-suklaapalat.webp
   alt: "Jäisiä banaani-suklaapaloja, joissa näkyy suklaakerros ja paahdettua maapähkinärouhetta"

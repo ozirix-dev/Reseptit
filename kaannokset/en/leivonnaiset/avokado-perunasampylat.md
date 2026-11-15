@@ -4,7 +4,7 @@ recipe_id: avokado-perunasampylat
 url_slug: avokado-perunasampylat
 category: leivonnainen
 language: en
-status: draft
+status: published
 servings: 6
 time_total_min: 90
 difficulty: easy

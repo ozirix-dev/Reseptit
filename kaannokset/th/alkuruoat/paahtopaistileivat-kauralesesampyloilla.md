@@ -7,7 +7,7 @@ additional_categories:
 - aamupala
 - valipala
 language: th
-status: draft
+status: published
 servings: 4
 time_total_min: 20
 difficulty: ง่าย

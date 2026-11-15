@@ -4,7 +4,7 @@ recipe_id: mustikka-jogurttijaatelo
 url_slug: mustikka-jogurttijaatelo
 category: jalkiruoka
 language: th
-status: draft
+status: published
 servings: 4
 time_total_min: 265
 difficulty: ง่าย

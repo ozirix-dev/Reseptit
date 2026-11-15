@@ -11,8 +11,8 @@ difficulty: helppo
 main_ingredient: [raejuusto, kreikkalainen jogurtti, kaakao]
 cooking_method: [uuni]
 tags: [suklaa, juustokakku, pohjaton]
-translation_languages: []
-translation_status: {}
+translation_languages: [en, sv, th]
+translation_status: {en: published, sv: published, th: published}
 image:
   src: jalkiruoat/suklaa-raejuustokakku.webp
   alt: "Pohjaton ruskea suklaa-raejuustokakku ja leikattu pala vaalealla lautasella"

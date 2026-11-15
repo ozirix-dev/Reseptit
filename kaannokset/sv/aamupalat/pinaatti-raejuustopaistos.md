@@ -4,7 +4,7 @@ recipe_id: pinaatti-raejuustopaistos
 url_slug: pinaatti-raejuustopaistos
 category: aamupala
 language: sv
-status: draft
+status: published
 servings: 6
 time_total_min: 45
 difficulty: lätt

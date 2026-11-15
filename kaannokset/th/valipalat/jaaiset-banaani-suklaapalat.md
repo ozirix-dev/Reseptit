@@ -4,7 +4,7 @@ recipe_id: jaaiset-banaani-suklaapalat
 url_slug: jaaiset-banaani-suklaapalat
 category: valipala
 language: th
-status: draft
+status: published
 servings: 9
 time_total_min: 340
 difficulty: ง่าย

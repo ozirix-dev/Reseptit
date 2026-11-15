@@ -4,7 +4,7 @@ recipe_id: avokado-banaanijaatelo
 url_slug: avokado-banaanijaatelo
 category: jalkiruoka
 language: sv
-status: draft
+status: published
 servings: 3
 time_total_min: 265
 difficulty: lätt

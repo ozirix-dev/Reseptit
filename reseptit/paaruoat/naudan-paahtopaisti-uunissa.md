@@ -17,8 +17,8 @@ tags:
   - nauta
   - paahtopaisti
   - uuniruoka
-translation_languages: []
-translation_status: {}
+translation_languages: [en, sv, th]
+translation_status: {en: published, sv: published, th: published}
 image:
   src: paaruoat/naudan-paahtopaisti-uunissa.webp
   alt: Viipaloitu naudan paahtopaisti, timjamia ja valkosipulia vaalealla lautasella

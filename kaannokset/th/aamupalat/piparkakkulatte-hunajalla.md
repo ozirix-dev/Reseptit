@@ -4,7 +4,7 @@ recipe_id: piparkakkulatte-hunajalla
 url_slug: piparkakkulatte-hunajalla
 category: aamupala
 language: th
-status: draft
+status: published
 servings: 4
 time_total_min: 135
 difficulty: ง่าย

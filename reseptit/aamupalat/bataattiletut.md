@@ -11,8 +11,8 @@ difficulty: helppo
 main_ingredient: [bataatti, kananmuna]
 cooking_method: [paistaminen]
 tags: [bataatti, lettu, kaneli, jauhoton]
-translation_languages: []
-translation_status: {}
+translation_languages: [en, sv, th]
+translation_status: {en: published, sv: published, th: published}
 image:
   src: aamupalat/bataattiletut.webp
   alt: "Pino pieniä bataattilettuja, tuoreita mustikoita ja vaahterasiirappia"

@@ -11,8 +11,8 @@ difficulty: helppo
 main_ingredient: [banaani, avokado, jogurtti]
 cooking_method: [pakastus]
 tags: [jäätelö, avokado, banaani]
-translation_languages: []
-translation_status: {}
+translation_languages: [en, sv, th]
+translation_status: {en: published, sv: published, th: published}
 image:
   src: jalkiruoat/avokado-banaanijaatelo.webp
   alt: "Vaaleanvihreää avokado-banaanijäätelöä kulhossa ja metallivuoassa"

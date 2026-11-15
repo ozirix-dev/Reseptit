@@ -4,7 +4,7 @@ recipe_id: suklaa-raejuustokakku
 url_slug: suklaa-raejuustokakku
 category: jalkiruoka
 language: th
-status: draft
+status: published
 servings: 4
 time_total_min: 325
 difficulty: ง่าย

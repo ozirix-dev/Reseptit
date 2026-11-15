@@ -4,7 +4,7 @@ recipe_id: makea-banaanimunakas
 url_slug: makea-banaanimunakas
 category: aamupala
 language: en
-status: draft
+status: published
 servings: 1
 time_total_min: 15
 difficulty: easy

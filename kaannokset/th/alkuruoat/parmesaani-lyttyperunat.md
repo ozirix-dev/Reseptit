@@ -4,7 +4,7 @@ recipe_id: parmesaani-lyttyperunat
 url_slug: parmesaani-lyttyperunat
 category: alkuruoka
 language: th
-status: draft
+status: published
 servings: 4
 time_total_min: 40
 difficulty: ง่าย

@@ -4,7 +4,7 @@ recipe_id: bataattiletut
 url_slug: bataattiletut
 category: aamupala
 language: sv
-status: draft
+status: published
 servings: 2
 time_total_min: 25
 difficulty: lätt
@@ -20,7 +20,7 @@ tags:
 - jauhoton
 image:
   src: aamupalat/bataattiletut.webp
-  alt: En bunt små sötpotatisklyftor, färska blåbär och lönnsirap
+  alt: En bunt små sötpotatisplättar, färska blåbär och lönnsirap
   width: 1600
   height: 900
 ingredients:

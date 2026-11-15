@@ -21,8 +21,8 @@ tags:
   - piparjuuri
   - voileipä
   - kauralese
-translation_languages: []
-translation_status: {}
+translation_languages: [en, sv, th]
+translation_status: {en: published, sv: published, th: published}
 image:
   src: alkuruoat/paahtopaistileivat-kauralesesampyloilla.webp
   alt: Kauralesesämpylän puolikkaita paahtopaistilla, piparjuurikastikkeella ja kasviksilla

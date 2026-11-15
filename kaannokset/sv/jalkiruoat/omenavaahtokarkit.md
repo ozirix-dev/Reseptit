@@ -4,7 +4,7 @@ recipe_id: omenavaahtokarkit
 url_slug: omenavaahtokarkit
 category: jalkiruoka
 language: sv
-status: draft
+status: published
 servings: 16
 time_total_min: 235
 difficulty: lätt

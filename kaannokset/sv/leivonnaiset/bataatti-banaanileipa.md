@@ -4,7 +4,7 @@ recipe_id: bataatti-banaanileipa
 url_slug: bataatti-banaanileipa
 category: leivonnainen
 language: sv
-status: draft
+status: published
 servings: 10
 time_total_min: 125
 difficulty: lätt

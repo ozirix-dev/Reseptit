@@ -4,7 +4,7 @@ recipe_id: bataattibrowniet
 url_slug: bataattibrowniet
 category: leivonnainen
 language: th
-status: draft
+status: published
 servings: 9
 time_total_min: 65
 difficulty: ง่าย

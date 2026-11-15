@@ -11,8 +11,8 @@ difficulty: helppo
 main_ingredient: [banaani, kananmuna, mustikka]
 cooking_method: [paistaminen]
 tags: [banaani, munakas, kaneli, vanilja, mustikka]
-translation_languages: []
-translation_status: {}
+translation_languages: [en, sv, th]
+translation_status: {en: published, sv: published, th: published}
 image:
   src: aamupalat/makea-banaanimunakas.webp
   alt: "Puolikuuksi taitettu kullanruskea banaanimunakas, mustikoita ja hunajaa"

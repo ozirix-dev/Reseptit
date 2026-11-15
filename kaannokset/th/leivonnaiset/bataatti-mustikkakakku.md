@@ -4,7 +4,7 @@ recipe_id: bataatti-mustikkakakku
 url_slug: bataatti-mustikkakakku
 category: leivonnainen
 language: th
-status: draft
+status: published
 servings: 8
 time_total_min: 110
 difficulty: ง่าย

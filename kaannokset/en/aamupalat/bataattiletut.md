@@ -4,7 +4,7 @@ recipe_id: bataattiletut
 url_slug: bataattiletut
 category: aamupala
 language: en
-status: draft
+status: published
 servings: 2
 time_total_min: 25
 difficulty: easy
@@ -20,7 +20,7 @@ tags:
 - jauhoton
 image:
   src: aamupalat/bataattiletut.webp
-  alt: A stack of small sweet potato wedges, fresh blueberries and maple syrup
+  alt: A stack of small sweet potato pancakes, fresh blueberries and maple syrup
   width: 1600
   height: 900
 ingredients:

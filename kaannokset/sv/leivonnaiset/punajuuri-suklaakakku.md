@@ -4,7 +4,7 @@ recipe_id: punajuuri-suklaakakku
 url_slug: punajuuri-suklaakakku
 category: leivonnainen
 language: sv
-status: draft
+status: published
 servings: 10
 time_total_min: 180
 difficulty: lätt

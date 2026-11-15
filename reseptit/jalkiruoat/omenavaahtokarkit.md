@@ -11,8 +11,8 @@ difficulty: helppo
 main_ingredient: [omena, liivate]
 cooking_method: [keittäminen, vatkaaminen]
 tags: [omena, vaahtokarkki, liivate]
-translation_languages: []
-translation_status: {}
+translation_languages: [en, sv, th]
+translation_status: {en: published, sv: published, th: published}
 image:
   src: jalkiruoat/omenavaahtokarkit.webp
   alt: "Vaaleita omenavaahtokarkkineliöitä keraamisella lautasella"

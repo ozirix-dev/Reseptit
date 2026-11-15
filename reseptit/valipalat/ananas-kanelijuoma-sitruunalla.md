@@ -11,8 +11,8 @@ difficulty: helppo
 main_ingredient: [ananas]
 cooking_method: [soseutus]
 tags: [juoma, ananas, kaneli, sitruuna]
-translation_languages: []
-translation_status: {}
+translation_languages: [en, sv, th]
+translation_status: {en: published, sv: published, th: published}
 image:
   src: valipalat/ananas-kanelijuoma-sitruunalla.webp
   alt: "Vaaleankeltainen ananas-kanelijuoma lasissa ananaspalojen ja sitruunan vieressä"

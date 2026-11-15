@@ -11,8 +11,8 @@ difficulty: helppo
 main_ingredient: [punajuuri, mantelijauho, kaakao]
 cooking_method: [keittäminen, uuni]
 tags: [suklaakakku, punajuuri, mantelijauho, hunaja]
-translation_languages: []
-translation_status: {}
+translation_languages: [en, sv, th]
+translation_status: {en: published, sv: published, th: published}
 image:
   src: leivonnaiset/punajuuri-suklaakakku.webp
   alt: "Tumma punajuuri-suklaakakku ja yksi leikattu viipale vaalealla alustalla"

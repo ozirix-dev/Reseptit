@@ -11,8 +11,8 @@ difficulty: helppo
 main_ingredient: [bataatti, banaani, maapähkinävoi]
 cooking_method: [uuni]
 tags: [banaanileipä, bataatti, saksanpähkinä, suklaa, jauhoton]
-translation_languages: []
-translation_status: {}
+translation_languages: [en, sv, th]
+translation_status: {en: published, sv: published, th: published}
 image:
   src: leivonnaiset/bataatti-banaanileipa.webp
   alt: "Viipaloitu bataatti-banaanileipä, jossa näkyy suklaahippuja ja saksanpähkinöitä"

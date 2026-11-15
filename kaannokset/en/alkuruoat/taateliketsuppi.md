@@ -4,7 +4,7 @@ recipe_id: taateliketsuppi
 url_slug: taateliketsuppi
 category: alkuruoka
 language: en
-status: draft
+status: published
 servings: 8
 time_total_min: 25
 difficulty: easy

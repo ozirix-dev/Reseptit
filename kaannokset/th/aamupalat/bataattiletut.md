@@ -4,7 +4,7 @@ recipe_id: bataattiletut
 url_slug: bataattiletut
 category: aamupala
 language: th
-status: draft
+status: published
 servings: 2
 time_total_min: 25
 difficulty: ง่าย

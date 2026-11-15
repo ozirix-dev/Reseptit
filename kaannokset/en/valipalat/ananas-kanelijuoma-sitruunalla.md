@@ -4,7 +4,7 @@ recipe_id: ananas-kanelijuoma-sitruunalla
 url_slug: ananas-kanelijuoma-sitruunalla
 category: valipala
 language: en
-status: draft
+status: published
 servings: 2
 time_total_min: 10
 difficulty: easy

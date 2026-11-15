@@ -11,8 +11,8 @@ difficulty: helppo
 main_ingredient: [peruna, avokado, kananmuna]
 cooking_method: [uuni]
 tags: [sämpylä, suolainen leivonnainen, jauhoton, seesami]
-translation_languages: []
-translation_status: {}
+translation_languages: [en, sv, th]
+translation_status: {en: published, sv: published, th: published}
 image:
   src: leivonnaiset/avokado-perunasampylat.webp
   alt: "Kullanruskeita seesamipintaisia avokado-perunasämpylöitä, joista yksi on halkaistu"

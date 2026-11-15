@@ -4,7 +4,7 @@ recipe_id: naudan-paahtopaisti-uunissa
 url_slug: naudan-paahtopaisti-uunissa
 category: paaruoka
 language: th
-status: draft
+status: published
 servings: 8
 time_total_min: 180
 difficulty: ง่าย
