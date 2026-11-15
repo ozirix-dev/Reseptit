@@ -1,5 +1,5 @@
 import { siteTarget } from "../src/content/site-target";
-import { recipeCardSizes } from "../src/features/recipes/image-layout";
+import { recipeCardAvifMedia, recipeCardSizes, recipeHeroAvifMedia } from "../src/features/recipes/image-layout";
 import { contentForRoute, localeIndexes, serializeRouteContent, type RouteContent } from "../src/content/route-data";
 import { contentManifest } from "../src/generated/routes.generated";
 import { libraryCopy, libraryTitle } from "../src/features/recipes/home-preview";
@@ -61,6 +61,12 @@ function routeMetadata(route: string, content: RouteContent) {
     `<link rel="alternate" hreflang="${altLocale}" href="${escapeHtml(`${baseUrl}${altPath}`)}" />`);
   const defaultAlternate = publishedLocales.find((item) => item.locale === "fi") ?? publishedLocales[0];
   if (defaultAlternate) alternates.push(`<link rel="alternate" hreflang="x-default" href="${escapeHtml(`${baseUrl}${defaultAlternate.path}`)}" />`);
+  const cardAvifSrc = pagination ? content.recipes[0]?.image?.homeAvifSrc : undefined;
+  const avifSrc = recipe?.image?.heroAvifSrc ?? cardAvifSrc;
+  const avifMedia = cardAvifSrc ? recipeCardAvifMedia : recipeHeroAvifMedia;
+  const avifPreload = avifSrc
+    ? `<link rel="preload" as="image" type="image/avif" media="${avifMedia}" href="${escapeHtml(avifSrc)}" fetchpriority="high" />`
+    : "";
   const imageTags = recipe?.image ? [
     `<meta property="og:image" content="${escapeHtml(recipe.image.src)}" />`,
     `<meta name="twitter:image" content="${escapeHtml(recipe.image.src)}" />`,
@@ -75,8 +81,10 @@ function routeMetadata(route: string, content: RouteContent) {
     ] : []);
   return {
     lang: locale,
+    prioritizeImage: Boolean(avifSrc),
     head: [
       `<title>${escapeHtml(title)}</title>`,
+      avifPreload,
       `<meta name="description" content="${escapeHtml(description)}" />`,
       ...(preview || siteTarget.noIndex ? ['<meta name="robots" content="noindex, nofollow" />'] : []),
       `<link rel="canonical" href="${escapeHtml(url)}" />`,
@@ -120,6 +128,8 @@ try {
   const css = await readFile(path.join(distDir, stylesheet[1]), "utf8");
   if (/<\/style/i.test(css)) throw new Error("Vite stylesheet cannot be safely inlined.");
   const inlineStyleShell = shell.replace(stylesheet[0], () => `<style>${css}</style>`);
+  // Let the first visible image use the connection before the client entry.
+  const imagePriorityShell = inlineStyleShell.replace('<script type="module"', '<script type="module" fetchpriority="low"');
   const homeRoutes = new Set(Object.values(localeIndexes));
   const routes = Object.keys(contentManifest);
   for (const route of routes) {
@@ -129,9 +139,10 @@ try {
     const router = await createStaticRouter(route, initial);
     const body = renderToString(React.createElement(RouterProvider, { router }));
     const data = `<script id="page-content" type="application/json">${serializeRouteContent(initial)}</script>`;
-    const inlineStyle = homeRoutes.has(route) || Boolean(initial.pagination || initial.recipe?.image?.heroAvifSrc);
-    const html = inlineStyle
-      ? replaceDocument(inlineStyleShell, metadata.head, metadata.lang, body)
+    const routeShell = metadata.prioritizeImage ? imagePriorityShell
+      : homeRoutes.has(route) || initial.pagination ? inlineStyleShell : shell;
+    const html = routeShell !== shell
+      ? replaceDocument(routeShell, metadata.head, metadata.lang, body)
         .replace("</body>", () => `    ${data}\n  </body>`)
       : replaceDocument(shell, `${metadata.head}\n${data}`, metadata.lang, body);
     for (const outputPath of outputPaths(route)) {
