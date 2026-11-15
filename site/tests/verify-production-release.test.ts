@@ -15,13 +15,16 @@ test("production verification distinguishes stale headers from wrong bytes or pa
   const files = new Map<string, string>();
   const pages = [["fi", "/"], ["en", "/en/recipes/"], ["sv", "/sv/recept/"], ["th", "/th/recipes/"], ["fi", "/reseptit/sivu/2/"]];
   const asset = "/assets/index-abcd.js";
+  const entry = `<script type="module" src="${asset}"></script>`;
+  const library = "/reseptit/sivu/2/";
+  const english = "/en/recipes/";
   for (const [locale, route] of pages) {
     const url = origin + route;
     const article = route.includes("/sivu/") ? '<article class="recipe-card">Card</article>' : "";
     files.set(route + "index.html", [
       `<html lang="${locale}"><head><link rel="canonical" href="${url}">`,
       `<link rel="alternate" hreflang="${locale}" href="${url}">`,
-      `<script type="module" src="${asset}"></script></head>`,
+      entry + "</head>",
       `<body><div id="root"><h1>Recipes</h1>${article}</div></body></html>`,
     ].join(""));
   }
@@ -35,32 +38,68 @@ test("production verification distinguishes stale headers from wrong bytes or pa
     await writeFile(destination, body, "utf8");
   }
 
-  let fault: "robots-bytes" | "robots-revision" | "html-revision" | null = null;
-  const request: typeof fetch = async input => {
+  type Fault = "entry-mismatch" | "entry-missing" | "js-mime" | "cached-js-mime" |
+    "robots-bytes" | "robots-revision" | "html-revision";
+  const requestWithFault = (fault?: Fault): typeof fetch => async input => {
     const { pathname, search } = new URL(String(input));
+    const staleRevision = (pathname === "/robots.txt" && (!search || fault === "robots-revision")) ||
+      (pathname === "/" && fault === "html-revision") ||
+      (pathname === asset && !search && fault === "cached-js-mime");
     const headers = new Headers({
       "content-type": pathname.endsWith("/") ? "text/html" : "text/plain",
-      "X-Recipavo-Commit": (pathname === "/robots.txt" && (!search || fault === "robots-revision")) ||
-        (pathname === "/" && fault === "html-revision") ? old : sha,
+      "X-Recipavo-Commit": staleRevision ? old : sha,
     });
+    if (pathname === asset && fault !== "js-mime" && (search || fault !== "cached-js-mime")) {
+      headers.set("content-type", "Text/JavaScript; charset=UTF-8");
+    }
     if (pathname === missing) {
       return new Response('<meta name="robots" content="noindex,follow"><h1>Missing</h1>', { status: 404, headers });
     }
     const file = pathname.endsWith("/") ? pathname + "index.html" : pathname;
-    const body = pathname === "/robots.txt" && !search && fault === "robots-bytes" ? "wrong" : files.get(file);
-    assert.notEqual(body, undefined, file);
-    return new Response(body, { headers });
+    const body = files.get(file);
+    assert.ok(body !== undefined, file);
+    if (pathname === library && fault === "entry-mismatch") {
+      return new Response(body.replace(asset, "/assets/index-missing.js"), { headers });
+    }
+    if (pathname === english && fault === "entry-missing") {
+      const decoys = [
+        `<link rel="modulepreload" href="${asset}">`,
+        `<script type="module" src="https://analytics.example/analytics.js"></script>`,
+        `<template>${entry}</template>`,
+        `<!--${entry}-->`,
+      ].join("");
+      return new Response(body.replace(entry, decoys), { headers });
+    }
+    return new Response(pathname === "/robots.txt" && !search && fault === "robots-bytes" ? "wrong" : body, { headers });
   };
 
-  const result = await verifyProductionRelease(sha, origin, dir, request);
-  assert.deepEqual(result.summaries.filter(entry => entry.cachedMetadata), [
-    { route: "/robots.txt", revision: old, cachedMetadata: true },
-  ]);
-  fault = "robots-bytes";
-  await assert.rejects(verifyProductionRelease(sha, origin, dir, request), /robots\.txt content/);
-  fault = "robots-revision";
-  await assert.rejects(verifyProductionRelease(sha, origin, dir, request), /robots\.txt revision probe/);
-  fault = "html-revision";
-  await assert.rejects(verifyProductionRelease(sha, origin, dir, request), /\/ revision/);
-  await assert.rejects(verifyProductionRelease(sha, "https://recipavo-preview.pages.dev", dir, request), /production origin/);
+  const verify = (fault?: Fault) => verifyProductionRelease(sha, origin, dir, requestWithFault(fault));
+
+  await t.test("accepts the matching release and stale robots metadata", async () => {
+    const result = await verify();
+    assert.deepEqual(result.summaries.filter(entry => entry.cachedMetadata), [
+      { route: "/robots.txt", revision: old, cachedMetadata: true },
+    ]);
+    assert.deepEqual(result.summaries.filter(entry => entry.route === asset), [{ route: asset, revision: sha }]);
+  });
+
+  await t.test("rejects a mismatched library module entry", async () => {
+    await assert.rejects(verify("entry-mismatch"), /\/reseptit\/sivu\/2\/.*live module entry/);
+  });
+  await t.test("rejects an English page without an active first-party module entry", async () => {
+    await assert.rejects(verify("entry-missing"), /\/en\/recipes\/.*live module entry/);
+  });
+  await t.test("rejects text/plain JavaScript with matching bytes and revision", async () => {
+    await assert.rejects(verify("js-mime"), /index-abcd\.js.*Content-Type/);
+  });
+  await t.test("rejects text/plain at the ordinary URL even when a revision probe would succeed", async () => {
+    await assert.rejects(verify("cached-js-mime"), /index-abcd\.js.*Content-Type/);
+  });
+  await t.test("rejects wrong robots bytes or revision, stale HTML and preview origins", async () => {
+    await assert.rejects(verify("robots-bytes"), /robots\.txt content/);
+    await assert.rejects(verify("robots-revision"), /robots\.txt revision probe/);
+    await assert.rejects(verify("html-revision"), /\/ revision/);
+    await assert.rejects(verifyProductionRelease(sha, "https://recipavo-preview.pages.dev", dir, requestWithFault()),
+      /production origin/);
+  });
 });
