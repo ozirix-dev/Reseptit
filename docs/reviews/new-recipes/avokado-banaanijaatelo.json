@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "recipe_id": "avokado-banaanijaatelo",
+  "source_path": "reseptit/jalkiruoat/avokado-banaanijaatelo.md",
+  "source_sha256": "c3543ec9e65126281183edf7dd02e95f8def515a8b2bef95b5c2344f5f91c0fb",
+  "decision": "approved",
+  "reviewed_by": "Codex – kirjallinen toimituksellinen katselmointi",
+  "reviewed_at": "2026-11-15",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.facebook.com/reel/4585162721760171",
+      "https://feelgoodfoodie.net/recipe/avocado-ice-cream/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/avokado-banaanijaatelo.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Otsikko, reseptitunniste ja aiempi luonnos tarkistettu. Päähaaran julkaisuhakemistossa ei ole tällä reseptitunnisteella toista lähdettä."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Ainekset tarkistettiin Reelistä ja kirjallisesta vertailusta. Punnitut määrät ovat reseptin sovitusta, ja pyöristykset tai vaihtoehdot ilmenevät ohjeesta."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Pakastetuista banaaneista soseutettu jogurttiseos pakastetaan matalassa astiassa ja pehmennetään ennen annostelua."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Kypsennys, kylmäsäilytys tai pakastaminen tarkistettiin valmistustavan mukaan. Reseptin tunnetut allergeenit on ilmoitettu ja hunajan käyttö rajattu tarvittaessa."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Yhdestä ohjeesta tulee 3 annosta tai palaa. Kokonaisaika on 265 minuutin arvio ja huomioi tarvittavan kypsennyksen, jäähdytyksen tai pakastuksen."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Punnitut ainesrivit sidottiin ravintolähteisiin ja annosmäärään. Julkiset ravintoarvot jätetään pois kokonaispolyolien lähdepuutteen vuoksi."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Valmisteelle ei löytynyt reseptiversioon sidottua hyväksyttyä glykeemisen indeksin lähdettä. Numeerinen glykeeminen kuorma jää pois."
+    }
+  },
+  "supplementary_evidence": {
+    "food_safety": [],
+    "image_path": "kuvat/jalkiruoat/avokado-banaanijaatelo.webp",
+    "image_sha256": "f9a71338be7a85ae2d7d013f6455cb7f8ed25250d1dcba818a6a0dbd7f4fa13a",
+    "image_review": "Tekoälyllä tehty havainnekuva vastaa ohjeen muotoa ja tarjoiluehdotusta.",
+    "physical_cook_test": false
+  }
+}

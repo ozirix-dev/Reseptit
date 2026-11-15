@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "recipe_id": "omenavaahtokarkit",
+  "source_path": "reseptit/jalkiruoat/omenavaahtokarkit.md",
+  "source_sha256": "1875bea267397424f6c6b1cb891e3ee85a613f86860eb1932ac7f21d62333601",
+  "decision": "approved",
+  "reviewed_by": "Codex – kirjallinen toimituksellinen katselmointi",
+  "reviewed_at": "2026-11-15",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://fooby.ch/en/recipes/29148/apple-marshmallows",
+      "https://www.facebook.com/reel/1538173824787539"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/omenavaahtokarkit.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Otsikko, reseptitunniste ja aiempi luonnos tarkistettu. Päähaaran julkaisuhakemistossa ei ole tällä reseptitunnisteella toista lähdettä."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Ainekset tarkistettiin Reelistä ja kirjallisesta vertailusta. Punnitut määrät ovat reseptin sovitusta, ja pyöristykset tai vaihtoehdot ilmenevät ohjeesta."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Foobyn ohjeeseen suhteutetut omenat, vesi ja liivate vatkataan ja hyydytetään kylmässä. Paloille annetaan kahden päivän kylmäsäilytysohje."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Kypsennys, kylmäsäilytys tai pakastaminen tarkistettiin valmistustavan mukaan. Reseptin tunnetut allergeenit on ilmoitettu ja hunajan käyttö rajattu tarvittaessa."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Yhdestä ohjeesta tulee 16 annosta tai palaa. Kokonaisaika on 235 minuutin arvio ja huomioi tarvittavan kypsennyksen, jäähdytyksen tai pakastuksen."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Punnitut ainesrivit sidottiin ravintolähteisiin ja annosmäärään. Julkiset ravintoarvot jätetään pois kokonaispolyolien lähdepuutteen vuoksi."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Valmisteelle ei löytynyt reseptiversioon sidottua hyväksyttyä glykeemisen indeksin lähdettä. Numeerinen glykeeminen kuorma jää pois."
+    }
+  },
+  "supplementary_evidence": {
+    "food_safety": [],
+    "image_path": "kuvat/jalkiruoat/omenavaahtokarkit.webp",
+    "image_sha256": "9f0c20b93d8dc48378f689b4dfc0f2f7d7fa9dc3f59a87a0d6e7d69d678700d4",
+    "image_review": "Tekoälyllä tehty havainnekuva vastaa ohjeen muotoa ja tarjoiluehdotusta.",
+    "physical_cook_test": false
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "recipeId": "bataattiletut",
+  "sourceHash": "544572b424c0c04bb6fbd87e45b0df2351b91a3e4c36abab9b0e1f987ee38192",
+  "calculatedAt": "2026-11-15",
+  "batchId": "batch-575",
+  "servings": 2,
+  "scope": "Ingredient accounting for the written recipe against Fineli, AFCD, USDA and CNF reference data as applicable. No prepared yield measured.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "amount": 210,
+      "unit": "g",
+      "item": "kypsää bataattia",
+      "record": {
+        "id": "fineli-30600",
+        "name": "BATAATTI, UUNISSA",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/30600",
+        "retrievedAt": "2026-11-15",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "bataatti, uunissa",
+        "basis": "per100g-prepared",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 18.293,
+          "fibre": 2.717,
+          "polyols": 0.0,
+          "protein": 1.71,
+          "fat": 0.054
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Explicit sugar alcohol value in Fineli Release 20."
+      },
+      "state": "bataatti, uunissa",
+      "matchEvidence": "Ingredient 'kypsää bataattia' matched to reference BATAATTI, UUNISSA; brand or variety may differ.",
+      "edibleFraction": 1,
+      "retainedFraction": 1,
+      "edibleEvidence": "Edible charged input, excluding shells, pits and peels when directed.",
+      "retentionEvidence": "Accounts for full charged ingredient mass. No prepared yield or nutrient losses were measured."
+    },
+    {
+      "amount": 100,
+      "unit": "g",
+      "item": "kananmunaa ilman kuorta",
+      "record": {
+        "id": "fineli-858",
+        "name": "KANANMUNA, KUORETON",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/858",
+        "retrievedAt": "2026-11-15",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "kananmuna, kuoreton",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 0.3,
+          "fibre": 0.0,
+          "polyols": 0.0,
+          "protein": 12.61,
+          "fat": 9.24
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Explicit sugar alcohol value in Fineli Release 20."
+      },
+      "state": "kananmuna, kuoreton",
+      "matchEvidence": "Ingredient 'kananmunaa ilman kuorta' matched to reference KANANMUNA, KUORETON; brand or variety may differ.",
+      "edibleFraction": 1,
+      "retainedFraction": 1,
+      "edibleEvidence": "Edible charged input, excluding shells, pits and peels when directed.",
+      "retentionEvidence": "Accounts for full charged ingredient mass. No prepared yield or nutrient losses were measured."
+    },
+    {
+      "amount": 2,
+      "unit": "g",
+      "item": "leivinjauhetta",
+      "record": {
+        "id": "fineli-74",
+        "name": "LEIVINJAUHE",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/74",
+        "retrievedAt": "2026-11-15",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "leivinjauhe",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 37.8,
+          "fibre": 0.5,
+          "polyols": null,
+          "protein": 5.2,
+          "fat": 0.0
+        },
+        "polyolsSourceVerified": false
+      },
+      "state": "leivinjauhe",
+      "matchEvidence": "Ingredient 'leivinjauhetta' matched to reference LEIVINJAUHE; brand or variety may differ.",
+      "edibleFraction": 1,
+      "retainedFraction": 1,
+      "edibleEvidence": "Edible charged input, excluding shells, pits and peels when directed.",
+      "retentionEvidence": "Accounts for full charged ingredient mass. No prepared yield or nutrient losses were measured."
+    },
+    {
+      "amount": 1,
+      "unit": "g",
+      "item": "jauhettua kanelia",
+      "record": {
+        "id": "afcd-F002963",
+        "name": "Cinnamon, dried, ground",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F002963",
+        "retrievedAt": "2026-11-15",
+        "licence": "FSANZ, Australian Food Composition Database Release 3, Data User Licence Agreement based on CC BY-SA 3.0 Australia",
+        "state": "dry ground cinnamon",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 27.5,
+          "polyols": null,
+          "fibre": 53.1,
+          "protein": 4,
+          "fat": 1.2
+        },
+        "polyolsSourceVerified": false
+      },
+      "state": "dry ground cinnamon",
+      "matchEvidence": "Ingredient 'jauhettua kanelia' matched to reference Cinnamon, dried, ground; brand or variety may differ.",
+      "edibleFraction": 1,
+      "retainedFraction": 1,
+      "edibleEvidence": "Edible charged input, excluding shells, pits and peels when directed.",
+      "retentionEvidence": "Accounts for full charged ingredient mass. No prepared yield or nutrient losses were measured."
+    },
+    {
+      "amount": 5,
+      "unit": "g",
+      "item": "rypsiöljyä",
+      "record": {
+        "id": "fineli-535",
+        "name": "RYPSIÖLJY",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/535",
+        "retrievedAt": "2026-11-15",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "rypsiöljy",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 0.0,
+          "fibre": 0.0,
+          "polyols": 0.0,
+          "protein": 0.0,
+          "fat": 100.0
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Explicit sugar alcohol value in Fineli Release 20."
+      },
+      "state": "rypsiöljy",
+      "matchEvidence": "Ingredient 'rypsiöljyä' matched to reference RYPSIÖLJY; brand or variety may differ.",
+      "edibleFraction": 1,
+      "retainedFraction": 1,
+      "edibleEvidence": "Edible charged input, excluding shells, pits and peels when directed.",
+      "retentionEvidence": "Accounts for full charged ingredient mass. No prepared yield or nutrient losses were measured."
+    },
+    {
+      "amount": 60,
+      "unit": "g",
+      "item": "tuoreita pensasmustikoita",
+      "record": {
+        "id": "fineli-35596",
+        "name": "MUSTIKKA, PENSASMUSTIKKA",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/35596",
+        "retrievedAt": "2026-11-15",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "mustikka, pensasmustikka",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 12.52,
+          "fibre": null,
+          "polyols": null,
+          "protein": 0.3,
+          "fat": 0.35
+        },
+        "polyolsSourceVerified": false
+      },
+      "state": "mustikka, pensasmustikka",
+      "matchEvidence": "Ingredient 'tuoreita pensasmustikoita' matched to reference MUSTIKKA, PENSASMUSTIKKA; brand or variety may differ.",
+      "edibleFraction": 1,
+      "retainedFraction": 1,
+      "edibleEvidence": "Edible charged input, excluding shells, pits and peels when directed.",
+      "retentionEvidence": "Accounts for full charged ingredient mass. No prepared yield or nutrient losses were measured."
+    },
+    {
+      "amount": 20,
+      "unit": "g",
+      "item": "vaahterasiirappia",
+      "record": {
+        "id": "afcd-F009052",
+        "name": "Syrup, maple, pure",
+        "sourceUrl": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F009052",
+        "retrievedAt": "2026-11-15",
+        "licence": "FSANZ, Australian Food Composition Database Release 3, Data User Licence Agreement based on CC BY-SA 3.0 Australia",
+        "state": "pure maple syrup",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 67,
+          "polyols": null,
+          "fibre": 0,
+          "protein": 0,
+          "fat": 0.1
+        },
+        "polyolsSourceVerified": false
+      },
+      "state": "pure maple syrup",
+      "matchEvidence": "Ingredient 'vaahterasiirappia' matched to reference Syrup, maple, pure; brand or variety may differ.",
+      "edibleFraction": 1,
+      "retainedFraction": 1,
+      "edibleEvidence": "Edible charged input, excluding shells, pits and peels when directed.",
+      "retentionEvidence": "Accounts for full charged ingredient mass. No prepared yield or nutrient losses were measured."
+    }
+  ],
+  "publicationStatus": "WITHHELD_SOURCE_INCOMPLETE",
+  "withholdingReason": "At least one matched source lacks an aggregate polyol value. The public macro fields remain empty."
+}

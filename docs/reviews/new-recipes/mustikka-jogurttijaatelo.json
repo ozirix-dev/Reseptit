@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "recipe_id": "mustikka-jogurttijaatelo",
+  "source_path": "reseptit/jalkiruoat/mustikka-jogurttijaatelo.md",
+  "source_sha256": "cfebdc3c7b82dd90231fe6c7b045dc503b5434137dffb2571633be5046e3a7a6",
+  "decision": "approved",
+  "reviewed_by": "Codex – kirjallinen toimituksellinen katselmointi",
+  "reviewed_at": "2026-11-15",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/turvallisen-kayton-ohjeet/ulkomaiset-pakastemarjat/",
+      "https://www.facebook.com/reel/1622846009374391",
+      "https://www.foodnetwork.com/recipes/giada-de-laurentiis/blueberry-frozen-yogurt-2102384"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/mustikka-jogurttijaatelo.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Otsikko, reseptitunniste ja aiempi luonnos tarkistettu. Päähaaran julkaisuhakemistossa ei ole tällä reseptitunnisteella toista lähdettä."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Ainekset tarkistettiin Reelistä ja kirjallisesta vertailusta. Punnitut määrät ovat reseptin sovitusta, ja pyöristykset tai vaihtoehdot ilmenevät ohjeesta."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Matala astia, välineellä sekoittaminen pakastuksen aikana ja pehmentäminen palvelevat annostelua. Pakastemarjoille on Ruokaviraston kuumennusohje."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Kypsennys, kylmäsäilytys tai pakastaminen tarkistettiin valmistustavan mukaan. Reseptin tunnetut allergeenit on ilmoitettu ja hunajan käyttö rajattu tarvittaessa."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Yhdestä ohjeesta tulee 4 annosta tai palaa. Kokonaisaika on 265 minuutin arvio ja huomioi tarvittavan kypsennyksen, jäähdytyksen tai pakastuksen."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Punnitut ainesrivit sidottiin ravintolähteisiin ja annosmäärään. Julkiset ravintoarvot jätetään pois kokonaispolyolien lähdepuutteen vuoksi."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Valmisteelle ei löytynyt reseptiversioon sidottua hyväksyttyä glykeemisen indeksin lähdettä. Numeerinen glykeeminen kuorma jää pois."
+    }
+  },
+  "supplementary_evidence": {
+    "food_safety": [
+      "https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/turvallisen-kayton-ohjeet/ulkomaiset-pakastemarjat/"
+    ],
+    "image_path": "kuvat/jalkiruoat/mustikka-jogurttijaatelo.webp",
+    "image_sha256": "5159dc1d4d6290a29022a0848e7fcc8e5b33e593f233733946543b4641108108",
+    "image_review": "Tekoälyllä tehty havainnekuva vastaa ohjeen muotoa ja tarjoiluehdotusta.",
+    "physical_cook_test": false
+  }
+}

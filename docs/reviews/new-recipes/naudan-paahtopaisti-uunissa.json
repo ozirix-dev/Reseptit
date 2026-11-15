@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "recipe_id": "naudan-paahtopaisti-uunissa",
+  "source_path": "reseptit/paaruoat/naudan-paahtopaisti-uunissa.md",
+  "source_sha256": "1ea9ff6c8fcb496554c2fb8749536bc68adc9103417ac4b2bf82f1a30e740e51",
+  "decision": "approved",
+  "reviewed_by": "Codex – kirjallinen toimituksellinen katselmointi",
+  "reviewed_at": "2026-11-15",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://ammattilaiset.sydanmerkki.fi/resepti/paahtopaisti",
+      "https://www.valio.fi/reseptit/paahtopaisti-ja-piparjuurismetana/",
+      "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures",
+      "https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/kasittely-ja-sailyttaminen/hygienia-kotikeittiossa/liha/",
+      "https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/kasittely-ja-sailyttaminen/hygienia-kotikeittiossa/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/naudan-paahtopaisti-uunissa.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Tarkistin uuden julkisen tunnisteen ja otsikon päähaarasta. Ruis- ja sämpyläversioiden pohjat ja tunnisteet ovat erilliset."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Luonnoksen punnitut määrät ja kirjalliset vastineet tarkistettu. Täytteen annostus ja piparjuuren säätö on kuvattu."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Paistimittari ohjaa kypsennyksen 63 °C:seen. Ohje kuvaa kaikkien pintojen ruskistamisen, levon, nopean jäähdytyksen ja leikkaamisen poikkisyin."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Ruokaviraston kokolihan käsittely- ja kylmäsäilytysperiaatteet sekä FoodSafety.govin kokolihan lämpötilasuositus tarkistettiin. Allergeenit ilmoitetaan."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Aika kattaa ohjeen työvaiheet ja annosmäärä on 8. Leipien aika koskee kokoamista valmiista raaka-aineista."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Paistin kypsää saantoa ja pannurasvan hävikkiä ei mitattu. Mustapippurin polyolitietoa puuttuu. Ravintoarvoja ei näytetä sivulla."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Numeerista GK:ta ei anneta ilman valmistetun reseptin arvioon soveltuvaa lähde- ja annosdataa."
+    }
+  },
+  "supplementary_evidence": {
+    "food_safety": [
+      "https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/kasittely-ja-sailyttaminen/hygienia-kotikeittiossa/liha/",
+      "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures",
+      "https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/kasittely-ja-sailyttaminen/hygienia-kotikeittiossa/"
+    ],
+    "image_path": "kuvat/paaruoat/naudan-paahtopaisti-uunissa.webp",
+    "image_sha256": "e52c56723b03f750f24db828787bcf340eee52bbdba521a273d448e944bd68fb",
+    "image_review": "Aiempi havainnekuva näyttää oikean paistin tai leipäpohjan ja kirjallisen tarjoilun.",
+    "physical_cook_test": false
+  }
+}

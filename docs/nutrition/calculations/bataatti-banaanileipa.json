@@ -1,0 +1,223 @@
+{
+  "recipeId": "bataatti-banaanileipa",
+  "sourceHash": "7080c332575a15500bf3b1c083f4d5b93ab4a9bd67e838449bab24a11760ed64",
+  "calculatedAt": "2026-11-15",
+  "batchId": "batch-575",
+  "servings": 10,
+  "scope": "Ingredient accounting for the written recipe against Fineli, AFCD, USDA and CNF reference data as applicable. No prepared yield measured.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "amount": 240,
+      "unit": "g",
+      "item": "kypsää bataattia",
+      "record": {
+        "id": "fineli-30600",
+        "name": "BATAATTI, UUNISSA",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/30600",
+        "retrievedAt": "2026-11-15",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "bataatti, uunissa",
+        "basis": "per100g-prepared",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 18.293,
+          "fibre": 2.717,
+          "polyols": 0.0,
+          "protein": 1.71,
+          "fat": 0.054
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Explicit sugar alcohol value in Fineli Release 20."
+      },
+      "state": "bataatti, uunissa",
+      "matchEvidence": "Ingredient 'kypsää bataattia' matched to reference BATAATTI, UUNISSA; brand or variety may differ.",
+      "edibleFraction": 1,
+      "retainedFraction": 1,
+      "edibleEvidence": "Edible charged input, excluding shells, pits and peels when directed.",
+      "retentionEvidence": "Accounts for full charged ingredient mass. No prepared yield or nutrient losses were measured."
+    },
+    {
+      "amount": 230,
+      "unit": "g",
+      "item": "kypsää banaania",
+      "record": {
+        "id": "fineli-11049",
+        "name": "BANAANI, KUORITTU",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11049",
+        "retrievedAt": "2026-11-15",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "banaani, kuorittu",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 18.3,
+          "fibre": 1.7,
+          "polyols": 0.0,
+          "protein": 1.2,
+          "fat": 0.4
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Explicit sugar alcohol value in Fineli Release 20."
+      },
+      "state": "banaani, kuorittu",
+      "matchEvidence": "Ingredient 'kypsää banaania' matched to reference BANAANI, KUORITTU; brand or variety may differ.",
+      "edibleFraction": 1,
+      "retainedFraction": 1,
+      "edibleEvidence": "Edible charged input, excluding shells, pits and peels when directed.",
+      "retentionEvidence": "Accounts for full charged ingredient mass. No prepared yield or nutrient losses were measured."
+    },
+    {
+      "amount": 100,
+      "unit": "g",
+      "item": "kananmunaa ilman kuorta",
+      "record": {
+        "id": "fineli-858",
+        "name": "KANANMUNA, KUORETON",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/858",
+        "retrievedAt": "2026-11-15",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "kananmuna, kuoreton",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 0.3,
+          "fibre": 0.0,
+          "polyols": 0.0,
+          "protein": 12.61,
+          "fat": 9.24
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Explicit sugar alcohol value in Fineli Release 20."
+      },
+      "state": "kananmuna, kuoreton",
+      "matchEvidence": "Ingredient 'kananmunaa ilman kuorta' matched to reference KANANMUNA, KUORETON; brand or variety may differ.",
+      "edibleFraction": 1,
+      "retainedFraction": 1,
+      "edibleEvidence": "Edible charged input, excluding shells, pits and peels when directed.",
+      "retentionEvidence": "Accounts for full charged ingredient mass. No prepared yield or nutrient losses were measured."
+    },
+    {
+      "amount": 120,
+      "unit": "g",
+      "item": "sileää maapähkinävoita",
+      "record": {
+        "id": "fineli-34667",
+        "name": "MAAPÄHKINÄLEVITE, EI LISÄTTYÄ SUOLAA",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/34667",
+        "retrievedAt": "2026-11-15",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "maapähkinälevite, ei lisättyä suolaa",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 12.5,
+          "fibre": 8.1,
+          "polyols": 0.0,
+          "protein": 25.6,
+          "fat": 43.0
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Explicit sugar alcohol value in Fineli Release 20."
+      },
+      "state": "maapähkinälevite, ei lisättyä suolaa",
+      "matchEvidence": "Ingredient 'sileää maapähkinävoita' matched to reference MAAPÄHKINÄLEVITE, EI LISÄTTYÄ SUOLAA; brand or variety may differ.",
+      "edibleFraction": 1,
+      "retainedFraction": 1,
+      "edibleEvidence": "Edible charged input, excluding shells, pits and peels when directed.",
+      "retentionEvidence": "Accounts for full charged ingredient mass. No prepared yield or nutrient losses were measured."
+    },
+    {
+      "amount": 4,
+      "unit": "g",
+      "item": "leivinjauhetta",
+      "record": {
+        "id": "fineli-74",
+        "name": "LEIVINJAUHE",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/74",
+        "retrievedAt": "2026-11-15",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "leivinjauhe",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 37.8,
+          "fibre": 0.5,
+          "polyols": null,
+          "protein": 5.2,
+          "fat": 0.0
+        },
+        "polyolsSourceVerified": false
+      },
+      "state": "leivinjauhe",
+      "matchEvidence": "Ingredient 'leivinjauhetta' matched to reference LEIVINJAUHE; brand or variety may differ.",
+      "edibleFraction": 1,
+      "retainedFraction": 1,
+      "edibleEvidence": "Edible charged input, excluding shells, pits and peels when directed.",
+      "retentionEvidence": "Accounts for full charged ingredient mass. No prepared yield or nutrient losses were measured."
+    },
+    {
+      "amount": 60,
+      "unit": "g",
+      "item": "saksanpähkinöitä",
+      "record": {
+        "id": "fineli-376",
+        "name": "PÄHKINÄ, SAKSANPÄHKINÄ",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/376",
+        "retrievedAt": "2026-11-15",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "pähkinä, saksanpähkinä",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 3.2,
+          "fibre": 5.2,
+          "polyols": 0.0,
+          "protein": 15.23,
+          "fat": 65.21
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Explicit sugar alcohol value in Fineli Release 20."
+      },
+      "state": "pähkinä, saksanpähkinä",
+      "matchEvidence": "Ingredient 'saksanpähkinöitä' matched to reference PÄHKINÄ, SAKSANPÄHKINÄ; brand or variety may differ.",
+      "edibleFraction": 1,
+      "retainedFraction": 1,
+      "edibleEvidence": "Edible charged input, excluding shells, pits and peels when directed.",
+      "retentionEvidence": "Accounts for full charged ingredient mass. No prepared yield or nutrient losses were measured."
+    },
+    {
+      "amount": 80,
+      "unit": "g",
+      "item": "tummia suklaahippuja",
+      "record": {
+        "id": "fineli-32",
+        "name": "SUKLAA, TUMMA",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/32",
+        "retrievedAt": "2026-11-15",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "suklaa, tumma",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 53.26,
+          "fibre": 7.904,
+          "polyols": 0.0,
+          "protein": 4.88,
+          "fat": 31.0
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Explicit sugar alcohol value in Fineli Release 20."
+      },
+      "state": "suklaa, tumma",
+      "matchEvidence": "Ingredient 'tummia suklaahippuja' matched to reference SUKLAA, TUMMA; brand or variety may differ.",
+      "edibleFraction": 1,
+      "retainedFraction": 1,
+      "edibleEvidence": "Edible charged input, excluding shells, pits and peels when directed.",
+      "retentionEvidence": "Accounts for full charged ingredient mass. No prepared yield or nutrient losses were measured."
+    }
+  ],
+  "publicationStatus": "WITHHELD_SOURCE_INCOMPLETE",
+  "withholdingReason": "At least one matched source lacks an aggregate polyol value. The public macro fields remain empty."
+}
