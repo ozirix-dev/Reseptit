@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "recipe_id": "punajuuri-suklaakakku",
+  "source_path": "reseptit/leivonnaiset/punajuuri-suklaakakku.md",
+  "source_sha256": "c8a3d02f8db6ffe9aee9984c3bd6ece8112a0cff57294eadd7ea2e30e1ee2edc",
+  "decision": "approved",
+  "reviewed_by": "Codex – kirjallinen toimituksellinen katselmointi",
+  "reviewed_at": "2026-11-15",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.facebook.com/reel/3365104843674938",
+      "https://www.kingarthurbaking.com/learn/ingredient-weight-chart"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/punajuuri-suklaakakku.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Otsikko, reseptitunniste ja Reel etsittiin päähaaran resepteistä. Samalle reseptille ei löytynyt julkista lähdettä."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Reelissä on keitetty punajuuri, muna, mantelijauho, kaakao, hunaja ja leivinjauhe. Kupilliset on muunnettu painoiksi King Arthur Bakingin taulukolla. Punajuurille käytetään 300 gramman arvioitua yhteispainoa."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Reelin 350 °F ja 55 minuuttia sovellettiin 175 °C:seen ja noin 23 × 13 cm:n vuokaan. Kypsyys varmistetaan asettuneesta keskustasta ja kokeilutikulla, tarvittaessa lämpömittarilla."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Punajuuret pestään. Kananmuna kypsennetään taikinassa, tarvittaessa varmistetaan vähintään 71 °C. Muna ja manteli ilmoitetaan allergeeneina."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Yksi leipävuokakakku jaetaan kymmeneen viipaleeseen. Kolmen tunnin arvio sisältää punajuurten keittämisen ja kakun jäähdyttämisen."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Hunajan ja leivinjauheen polyoleille ei ole lähdearvoa. Mantelijauhon lähde vastaa täysrasvaista jauhettua mantelia. Ainesrivit sidottiin määrien ja annoskoon mukaan, julkisia makroja ei anneta."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Valmiille reseptille ei ole hyväksyttyä GI-lähdettä. Julkaisussa ei näytetä numeerista GK:ta."
+    }
+  },
+  "supplementary_evidence": {
+    "food_safety": [
+      "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
+    ],
+    "image_path": "kuvat/leivonnaiset/punajuuri-suklaakakku.webp",
+    "image_sha256": "f20302fa8cf312bd2d1c7ba75de9aec8873e74e7fe76ed48c0623c2cbfd7f4a5",
+    "image_review": "Näyttökaappauksen pohjalta tehty havainnekuvitus vastaa reseptin tarjoilua.",
+    "physical_cook_test": false
+  }
+}
