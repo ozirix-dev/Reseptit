@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "content:sync": "tsx scripts/build-content.ts",
-    "content:prepare": "npm run content:sync && npm run audit:nutrition -- --strict && npm run audit:glycemic-load && tsx scripts/prepare-routes.ts",
+    "content:prepare": "npm run content:sync && npm run audit:nutrition -- --strict && npm run audit:glycemic-load",
     "test": "node scripts/run-unit-tests.mjs",
     "typecheck": "tsc -p tsconfig.json",
     "audit:c5-market-labels": "tsx scripts/c5-market-label-audit.ts",
@@ -32,7 +32,7 @@
     "audit:seo:public": "tsx scripts/seo-public.ts",
     "nutrition:batch": "tsx scripts/nutrition-batch-builder.ts",
     "audit:nutrition": "tsx scripts/nutrition-audit.ts",
-    "audit:glycemic-load": "tsx scripts/glycemic-load-pilot.ts",
+    "audit:glycemic-load": "tsx scripts/glycemic-load-pilot.ts && tsx scripts/prepare-routes.ts",
     "audit:glycemic-coverage": "tsx scripts/glycemic-coverage-inventory.ts",
     "review:translations": "tsx scripts/translation-review.ts",
     "queue:translations": "tsx scripts/translation-queue-cli.ts",
