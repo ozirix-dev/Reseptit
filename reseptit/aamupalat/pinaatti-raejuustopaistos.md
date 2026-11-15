@@ -11,8 +11,8 @@ difficulty: helppo
 main_ingredient: [pinaatti, kananmuna, raejuusto]
 cooking_method: [uuni]
 tags: [pinaatti, raejuusto, mozzarella, munakas]
-translation_languages: [en, sv, th]
-translation_status: {en: published, sv: published, th: published}
+translation_languages: []
+translation_status: {}
 image:
   src: aamupalat/pinaatti-raejuustopaistos.webp
   alt: "Pala pinaatti-raejuustopaistosta lautasella ja loput palat uunivuoassa"

@@ -11,8 +11,8 @@ difficulty: helppo
 main_ingredient: [bataatti, kaakao, kananmuna]
 cooking_method: [uuni]
 tags: [brownie, bataatti, kaakao, jauhoton]
-translation_languages: [en, sv, th]
-translation_status: {en: published, sv: published, th: published}
+translation_languages: []
+translation_status: {}
 image:
   src: leivonnaiset/bataattibrowniet.webp
   alt: "Pieniä tummia bataattibrowniepaloja vaalealla lautasella"

@@ -13,8 +13,8 @@ main_ingredient:
   - parmesaani
 cooking_method:
   - uuni
-translation_languages: [en, sv, th]
-translation_status: {en: published, sv: published, th: published}
+translation_languages: []
+translation_status: {}
 tags:
   - peruna
   - parmesaani

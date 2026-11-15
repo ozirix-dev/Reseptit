@@ -11,8 +11,8 @@ difficulty: helppo
 main_ingredient: [tomaattipyree, taateli]
 cooking_method: [soseuttaminen]
 tags: [ketsuppi, kastike, tomaatti, taateli]
-translation_languages: [en, sv, th]
-translation_status: {en: published, sv: published, th: published}
+translation_languages: []
+translation_status: {}
 image:
   src: alkuruoat/taateliketsuppi.webp
   alt: "Punainen taateliketsuppi lasipurkissa ja pienessä dippikulhossa"

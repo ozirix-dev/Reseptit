@@ -20,8 +20,8 @@ tags:
   - ruisleipa
   - piparjuuri
   - voileipa
-translation_languages: [en, sv, th]
-translation_status: {en: published, sv: published, th: published}
+translation_languages: []
+translation_status: {}
 image:
   src: alkuruoat/paahtopaistileipa-piparjuurikastikkeella.webp
   alt: Kaksi avointa ruisleipää paahtopaistilla, piparjuurikastikkeella ja suolakurkulla

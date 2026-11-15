@@ -15,8 +15,8 @@ main_ingredient:
 cooking_method:
   - vatkaaminen
   - pakastus
-translation_languages: [en, sv, th]
-translation_status: {en: published, sv: published, th: published}
+translation_languages: []
+translation_status: {}
 tags:
   - latte
   - pikakahvi

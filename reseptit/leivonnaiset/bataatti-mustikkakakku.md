@@ -11,8 +11,8 @@ difficulty: helppo
 main_ingredient: [bataatti, mustikka, kananmuna]
 cooking_method: [uuni]
 tags: [bataatti, mustikka, kaneli, jauhoton, kakku]
-translation_languages: [en, sv, th]
-translation_status: {en: published, sv: published, th: published}
+translation_languages: []
+translation_status: {}
 image:
   src: leivonnaiset/bataatti-mustikkakakku.webp
   alt: "Pyöreä kullanruskea bataatti-mustikkakakku ja leikattu pala, jossa näkyy mustikoita"
