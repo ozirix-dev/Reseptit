@@ -76,12 +76,13 @@ Tämä ei pienennä olemassa olevaa Git-historiaa; historiankirjoitusta ei tehd�
 - Uudet Cloudflare-inventaariot tuotetaan tarvittaessa hyväksytyn, ajantasaisen
   mainin pohjalta. Vanha 2.11.2026 mittaus ei ole tuotantopäätöksen lähtötieto.
 
-## Valmisteltu GK-Markdown-erä — 15.11.2026
+## GK-Markdown-erä — 15.11.2026
 
-[Siivous-5:ssä](https://github.com/ozirix-dev/Reseptit/pull/662) tunnistettu
-erä odottaa erillistä poistopäätöstä. Kaikki viisi tiedostoa ovat edelleen
-versionhallinnassa. Myöhempi arkistointi vähentäisi aktiivisesta puusta
-5 tiedostoa ja 340 180 tavua (0,324 MiB).
+[Siivous-5:ssä](https://github.com/ozirix-dev/Reseptit/pull/662) tunnistetun
+erän viisi Markdown-näkymää poistetaan aktiivisesta tiedostopuusta
+[PR:ssä #663](https://github.com/ozirix-dev/Reseptit/pull/663). Erän koko
+on 340 180 tavua (0,324 MiB). Alla ovat alkuperäiset tiedostot
+palautuscommitien tarkkuudella.
 
 **Tarkistettu main:** [`4525cd1cd01febc3f9845c5298dc5e5cfc5ae23d`](https://github.com/ozirix-dev/Reseptit/tree/4525cd1cd01febc3f9845c5298dc5e5cfc5ae23d).
 
@@ -106,12 +107,9 @@ ja Run 0 -analyysin vertailuinventaariot ja lähtösnapshotit ovat nimettyjä
 JSON-tiedostoja. Kunkin ehdokkaan rinnalla on versionoitu 325 reseptirivin
 JSON. Päivätty yleisraportti ja 2B6D:n Markdown säilyvät GK-testien fixtuureina.
 
-Tarkista ennen mahdollista poistoa uudelleen ajantasaisen mainin riippuvuudet
-ja blobit. Vahvista erän tarkat polut ja työpuun tiedostojen SHA-256:t
-Repo Guardin poistomenettelyssä. Nykyinen `delete-reports`-sallintalista
-kattaa kolme käännösraporttia, joten tämä erä tarvitsee Repo Guardin
-tukeman erillisen poisto-operaation. Poistodiffi kuuluu GK-regressioiden ja
-kattavuusauditoinnin piiriin.
+Repo Guardin `delete-reports` tarkistaa tämän erän haaran ja lähtö-HEADin,
+kaikki viisi Git-blobia sekä työpuun tiedostojen SHA-256-tiivisteet.
+Poistodiffi kuuluu GK-regressioiden ja kattavuusauditoinnin piiriin.
 
 ## Paikallisten työpuiden erillinen siivous
 
