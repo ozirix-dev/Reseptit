@@ -11,13 +11,18 @@ auditointisnapshotia tarkoituksella, aja
 `npm run audit:nutrition -- --strict --snapshot`. Tällöin raportti kirjoitetaan
 polkuun `docs/nutrition/audit.json`.
 
-`npm run audit:glycemic-load` kirjoittaa GK-raportin polkuun
-`tmp/nutrition/glycemic-load-pilot.json`. Kattavuusinventaarion komento
-`npm run audit:glycemic-coverage` lukee näitä kahta `tmp/nutrition/`-raporttia.
-Oletuksena se päivittää versionhallittuja
-`docs/nutrition/glycemic-coverage-current-2026-10-25.json`- ja `.md`-tiedostoja.
-Kun tuotat uuden inventaarion erilliseen tiedostopariin, anna molemmat polut
-`--output-json`- ja `--output-markdown`-valinnoilla `docs/nutrition/`-hakemiston alta.
+Aja tuoreessa työpuussa ensin `npm run content:sync`, jotta GK-auditoinnin
+käyttämä sisältö on generoitu. `npm run audit:glycemic-load` kirjoittaa
+GK-raportin polkuun `tmp/nutrition/glycemic-load-pilot.json`.
+`npm run audit:glycemic-coverage` lukee tuoreen GK-raportin ja ravintoauditoinnin
+`tmp/nutrition/audit.json`-raportin. Se kirjoittaa tulokset repon juuren alle
+polkuihin `tmp/nutrition/glycemic-coverage/current.json` ja
+`tmp/nutrition/glycemic-coverage/current.md`.
+
+Voit antaa omat tulostepolut repon juureen suhteutettuina valinnoilla
+`--output-json` ja `--output-markdown` saman
+`tmp/nutrition/glycemic-coverage/`-hakemiston alta. Versionoidut päivätyt
+ja eräkohtaiset kattavuusraportit ovat historiallisia tilannekuvia.
 
 Laskentamuistiot sekä Fineli- ja AFCD-viiteaineistot sisältyvät
 lähdetiivisteeseen. Uudet irralliset laskentamuistiot pitää lisätä lähteiden
