@@ -15,6 +15,8 @@ import { glycemicLoadFilterCategories } from "@/generated/glycemic-load-filters.
 
 import type { RecipeSummary } from "@/content/route-data";
 
+import { track } from "@/features/privacy/analytics";
+
 const categories: RecipeSummary["category"][] = ["aamupala", "valipala", "alkuruoka", "paaruoka", "jalkiruoka", "leivonnainen"];
 
 export function RecipesPage({ locale }: { locale: RecipeLocale }) {
@@ -49,6 +51,7 @@ export function RecipesPage({ locale }: { locale: RecipeLocale }) {
   }, [location.search]);
 
   function updateFilters(patch: Partial<RecipeFilters>) {
+    if (!("query" in patch)) track("Filter Recipes");
     const next = { ...filters, ...patch };
     setFilters(next);
     const search = recipeFiltersToSearch(next);
@@ -65,11 +68,22 @@ export function RecipesPage({ locale }: { locale: RecipeLocale }) {
   }
 
   function resetFilters() {
+    track("Reset Filters");
     setFilters(emptyRecipeFilters);
     navigate(location.pathname, { replace: true, preventScrollReset: true });
   }
 
   const filteredRecipes = filterRecipes(recipes, filters, locale, glycemicLoadFilterCategories);
+  const hasSearchResults = filteredRecipes.length > 0;
+  useEffect(() => {
+    if (!filters.query.trim()) return;
+    const timer = window.setTimeout(() => {
+      track("Recipe Search");
+      if (!hasSearchResults) track("Search Without Results");
+    }, 600);
+    return () => window.clearTimeout(timer);
+  }, [filters.query, hasSearchResults]);
+
   const activeFilters: Array<{ key: string; label: string; clear: Partial<RecipeFilters> }> = [];
   if (filters.query) activeFilters.push({ key: "query", label: `“${filters.query}”`, clear: { query: "" } });
   if (filters.category !== "all") activeFilters.push({ key: "category", label: labels.category[filters.category], clear: { category: "all" } });
@@ -140,7 +154,7 @@ export function RecipesPage({ locale }: { locale: RecipeLocale }) {
     {homePreview ? <section className="home-preview__picks" aria-labelledby="home-preview-picks-heading">
       <h2 id="home-preview-picks-heading">{homeText.picks}</h2>
       <div className="recipe-card-grid">{picks.map((recipe, index) => <RecipeCard key={`${recipe.recipeId}-${recipe.locale}`} recipe={recipe} index={index} locale={locale} headingLevel={3} />)}</div>
-      {rest.length ? <details className="home-preview__more"><summary>{homeText.allRecipes(recipes.length)}</summary>
+      {rest.length ? <details className="home-preview__more" onToggle={event => { if (event.currentTarget.open) track("Browse More Recipes"); }}><summary>{homeText.allRecipes(recipes.length)}</summary>
         <div className="recipe-card-grid">{rest.map((recipe, index) => <RecipeCard key={`${recipe.recipeId}-${recipe.locale}`} recipe={recipe} index={index + picks.length} locale={locale} headingLevel={3} />)}</div>
       </details> : null}
     </section>

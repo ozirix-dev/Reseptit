@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { glycemicLoadPath, recipeIndexPath } from "@/features/recipes/recipe-i18n";
 import type { RecipeLocale } from "@/types/content";
 import type { TranslationLink } from "@/content/route-data";
+import { privacyLocaleFromPath, privacyPaths } from "@/features/privacy/privacy-copy";
+import { track } from "@/features/privacy/analytics";
 
 interface SiteNavigationProps {
   pathname: string;
@@ -25,6 +27,7 @@ const isMethod = (pathname: string) => localeOrder.some(code => glycemicLoadPath
 
 /** Switch to the corresponding translation when available; never invent untranslated article URLs. */
 export function languageDestination(target: RecipeLocale, pathname: string, translations: TranslationLink[]): string {
+  if (privacyLocaleFromPath(pathname)) return privacyPaths[target];
   if (isMethod(pathname)) return glycemicLoadPath(target);
   if (isBlog(pathname)) return target === "fi" ? pathname : recipeIndexPath(target);
   return translations.find(t => t.locale === target)?.routePath ?? recipeIndexPath(target);
@@ -63,11 +66,12 @@ export function SiteNavigation({ pathname, locale, availableLocales, translation
   const labels = copy[locale];
   const blog = isBlog(pathname);
   const method = isMethod(pathname);
+  const privacy = privacyLocaleFromPath(pathname) !== undefined;
   return <div className="site-header__navigation">
     <details className="site-primary-menu" ref={primary} open>
       <summary aria-label={labels.menu}>{labels.menu}<span aria-hidden="true"> ▾</span></summary>
       <nav className="site-primary-nav" aria-label={labels.sections}>
-        <Link to={recipeIndexPath(locale)} onClick={closeMobileMenus} aria-current={!blog && !method ? "page" : undefined}>{labels.recipes}</Link>
+        <Link to={recipeIndexPath(locale)} onClick={closeMobileMenus} aria-current={!blog && !method && !privacy ? "page" : undefined}>{labels.recipes}</Link>
         <Link to="/ruokaopas/" lang="fi" onClick={closeMobileMenus} aria-current={blog ? "page" : undefined}>{labels.blog}</Link>
         <Link to={glycemicLoadPath(locale)} onClick={closeMobileMenus} aria-current={method ? "page" : undefined}>{labels.method}</Link>
       </nav>
@@ -76,7 +80,10 @@ export function SiteNavigation({ pathname, locale, availableLocales, translation
       <summary aria-label={labels.languages + ": " + localeNames[locale]}>{localeShort[locale]}<span aria-hidden="true"> ▾</span></summary>
       <nav className="site-language-nav" aria-label={labels.languages}>
         {localeOrder.filter(code => availableLocales.includes(code)).map(code =>
-          <Link key={code} lang={code} hrefLang={code} to={languageDestination(code, pathname, translations)} onClick={closeMobileMenus} aria-current={locale === code ? "page" : undefined}>{localeNames[code]}</Link>
+          <Link key={code} lang={code} hrefLang={code} to={languageDestination(code, pathname, translations)} onClick={() => {
+            if (code !== locale) track("Switch Language");
+            closeMobileMenus();
+          }} aria-current={locale === code ? "page" : undefined}>{localeNames[code]}</Link>
         )}
       </nav>
     </details>}

@@ -6,6 +6,7 @@ import { localeIndexes } from "../src/content/route-data";
 import { resolveSiteTarget } from "../src/content/site-target";
 import { articles, articlePath, blogRoot, blogPosts, blogJsonLd } from "../src/features/blog/blog-data";
 import { glycemicLoadMeta, glycemicLoadPath, recipeUi } from "../src/features/recipes/recipe-i18n";
+import { privacyCopy, privacyPaths } from "../src/features/privacy/privacy-copy";
 import type { RecipeEntry, RecipeLocale } from "../src/types/content";
 import { withholdF25Nutrition } from "../src/features/recipes/f25-nutrition-withhold";
 
@@ -38,7 +39,12 @@ export function expectedPages(recipes: RecipeEntry[]): ExpectedPage[] {
   };
   const indexes = locales.map((locale) => ({ locale, routePath: localeIndexes[locale] }));
   const glycemicPages = (Object.keys(glycemicLoadMeta) as RecipeLocale[]).map((locale) => ({ locale, routePath: glycemicLoadPath(locale) }));
+  const privacyPages = (Object.keys(privacyPaths) as RecipeLocale[]).map(locale => ({ locale, routePath: privacyPaths[locale] }));
   return [
+    ...privacyPages.map(({ locale, routePath }) => ({
+      route: routePath, locale, h1: privacyCopy[locale].title, title: `${privacyCopy[locale].title} | Recipavo`,
+      description: privacyCopy[locale].description, alternates: alternateMap(privacyPages),
+    })),
     { route: blogRoot, locale: "fi" as RecipeLocale, h1: "Ruokaopas", title: "Ruokaopas | Reseptit", description: "Ruoanlaiton tekniikoita ja luotettavaa ravitsemustietoa.", alternates: alternateMap([{locale:"fi",routePath:blogRoot}]), blog: true },
     ...articles.map(post => ({ route: articlePath(post), locale: "fi" as RecipeLocale, h1: post.title, title: `${post.title} | Ruokaopas`, description: post.description, alternates: alternateMap([{locale:"fi",routePath:articlePath(post)}]), blog: true })),
     ...locales.map((locale) => ({ route: localeIndexes[locale], locale, h1: names[locale], title: `${names[locale]} | Ozirix`, description: recipeUi[locale].intro, alternates: alternateMap(indexes) })),
