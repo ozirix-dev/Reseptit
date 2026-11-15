@@ -20,9 +20,11 @@ näkyvät rajauksina. Käytä normaalia [kielikatselmointiohjetta](translation-r
 havaintojen tarkistamiseen.
 
 Käyttöönotto tarvitsee Reseptit-repon Actions-salaisuuden `CODEX_API_KEY`.
-Käytä vain pilotille omistetun OpenAI API -projektin avainta, jotta projektin
-Usage-näkymän toteuma on kohdistettavissa pilottiin. Säilytä avain sovitussa
-holvissa. Ajo käyttää GPT-6.1 Solia High-asetuksella, 8 minuutin
+Säilytä käytetty avain sovitussa holvissa. Jos avain kuuluu jaettuun OpenAI
+API -projektiin, Actionsin raportti erottaa pilotin ajot, mutta projektin
+Usage-näkymä sisältää myös muun käytön. Tarkkaan laskutäsmäytykseen voi
+käyttää pilotille omistettua API-projektia.
+Ajo käyttää GPT-6.1 Solia High-asetuksella, 8 minuutin
 agenttiaikarajaa ja 50 AI Creditsin gh-aw-arviorajaa per ajo.
 
 **Recipavo review pilot costs** kokoaa päivittäin klo 05.23 UTC edelliset
