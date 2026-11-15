@@ -1,17 +1,17 @@
-# Recipavon tuotanto ja GitHub Pages -staging
+# Recipavon julkaisuarkkitehtuuri
 
 ## Periaate
 
 `Reseptit` on reseptisisällön kanoninen lähde. Julkinen sivusto on
 [www.recipavo.com](https://www.recipavo.com/) Cloudflare Pagesissa.
-[GitHub Pages](https://ozirix-dev.github.io/Reseptit/) toimii stagingina.
+Esikatselut tehdään paikallisesti tai Cloudflare Pagesin esikatseluosoitteessa.
 
 ```text
 reseptit/*.md + kaannokset/**/*.md
     -> site/scripts/build-content.ts
     -> staattinen HTML + client-hydration
     -> site/dist
-    -> GitHub Pages -staging (/Reseptit/)
+    -> paikallinen tai Cloudflare-esikatselu (/, noindex)
     -> Cloudflare Pages -tuotanto (/, erikseen hyväksytty julkaisu)
 ```
 
@@ -39,8 +39,7 @@ PR:n head- ja base-SHA. TypeScript-testimuutos ajaa sisällön generoinnin,
 tyyppitarkistuksen ja kohdennetun testin. Laajempi julkaisu- tai
 rakennemuutos ajaa myös tarvittavat tuotantobuildin, staattisen tulosteen
 ja selaimen tarkistukset. Dokumentaatiomuutos voi käyttää kevyttä polkua.
-`main`-haaran muutokset julkaistaan
-GitHub Pages -stagingiin projektipolun `/Reseptit/` alle. Tuotantojulkaisu
+GitHub Actions tarkistaa `main`-haaran buildin. Tuotantojulkaisu
 Cloudflare Pagesiin edellyttää erikseen hyväksyttyä, testattua commit-SHA:ta.
 Tuotannon reitit alkavat verkkotunnuksen juuresta.
 
@@ -87,10 +86,10 @@ käyttöönotto on tehtävä ennen ensimmäistä julkaisua.
 - Tuotannon etusivu on `/`, suomenkielinen reseptikirjasto `/reseptit/` ja
   reseptin osoite `/<url_slug>/`.
 - Käännösten hakemistot ovat `/en/recipes/`, `/sv/recept/` ja `/th/recipes/`.
-  GitHub Pages -staging lisää samoihin reitteihin `/Reseptit`-etuliitteen.
+  Esikatselu käyttää samoja juuripolkuja.
 - Hakemisto- ja reseptisivujen HTML sisältää näkyvän tekstin jo ennen JavaScriptiä.
 - Canonical, hreflang ja sivukartta muodostuvat julkaistuista reiteistä. Reseptin `x-default` ohjaa julkaistuun suomenkieliseen versioon tai, jos sellaista ei ole, ensimmäiseen julkaistuun kieleen.
-- Tuntemattomalle reitille GitHub Pages palauttaa `404.html`-sivun. Se sisältää `noindex,follow`-merkinnän eikä canonical-osoitetta tai `Recipe`-JSON-LD:tä. Asiakasreitityksen tuntemattomat polut saavat saman noindex-käsittelyn.
+- Tuntemattomalle reitille Cloudflare Pages palauttaa `404.html`-sivun. Se sisältää `noindex,follow`-merkinnän eikä canonical-osoitetta tai `Recipe`-JSON-LD:tä. Asiakasreitityksen tuntemattomat polut saavat saman noindex-käsittelyn.
 - JSON-LD vastaa sivulla näkyviä tietoja. Kuvamerkintä lisätään vain, kun frontmatterissa määritetty ja repo-työpuusta löytyvä kuva on mukana.
 - Kielivalikoima, reseptit ja kuvat määräytyvät julkaistuista lähteistä. Ajantasainen inventaario: `cd site; npm run report:inventory`. Historiallisia reseptimääriä ei käytetä buildin oletuksena.
 
@@ -98,7 +97,7 @@ käyttöönotto on tehtävä ennen ensimmäistä julkaisua.
 
 Tuotannon [robots.txt](https://www.recipavo.com/robots.txt) osoittaa
 [tuotannon sivukarttaan](https://www.recipavo.com/sitemap.xml), joka sisältää
-julkaistut hakemistot ja reseptireitit. GitHub Pages -stagingin sivuilla on
+julkaistut hakemistot ja reseptireitit. Esikatselusivuilla on
 `noindex, nofollow`. Stagingin `robots.txt` sijaitsee projektipolun alla
 `/Reseptit/robots.txt`.
 

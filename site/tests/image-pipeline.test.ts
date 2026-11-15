@@ -1,3 +1,6 @@
+import { siteTarget } from "../src/content/site-target";
+
+const buildOriginPattern = siteTarget.baseUrl.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 import assert from "node:assert/strict";
 import { cp, mkdtemp, mkdir, readFile, readdir, realpath, rm, symlink, writeFile } from "node:fs/promises";
 import os from "node:os";
@@ -95,10 +98,10 @@ test("published image pipeline copies only safe, referenced images and removes s
     const copied = await readFile(path.join(buildSite, "public", "kuvat", "paaruoat", "test.webp"));
     assert.deepEqual(copied, fixtureWebp);
     const html = await readFile(path.join(buildSite, "dist", "testiresepti", "index.html"), "utf8");
-    assert.match(html, /src="https:\/\/ozirix-dev\.github\.io\/Reseptit\/kuvat\/paaruoat\/test\.webp"/);
+    assert.match(html, new RegExp(String.raw`src="${buildOriginPattern}/kuvat\/paaruoat\/test\.webp"`));
     const json = html.match(/<script id="recipe-jsonld" type="application\/ld\+json">([\s\S]*?)<\/script>/);
     assert.ok(json);
-    assert.deepEqual(JSON.parse(json[1]).image, ["https://ozirix-dev.github.io/Reseptit/kuvat/paaruoat/test.webp"]);
+    assert.deepEqual(JSON.parse(json[1]).image, [`${siteTarget.baseUrl}/kuvat/paaruoat/test.webp`]);
 
     await writeFile(path.join(root, "reseptit", "paaruoat", "test.md"), recipe("paaruoat/missing.webp"));
     const missing = run(buildSite, "content:sync", root);

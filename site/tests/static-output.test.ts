@@ -1,3 +1,6 @@
+import { siteTarget } from "../src/content/site-target";
+
+const buildOriginPattern = siteTarget.baseUrl.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 import { estimateBasis, evidenceLabel, gkCopy, missingReason } from "../src/features/glycemic-load/glycemic-load-copy";
 import {gkOnlyVariants,gkVersionCoverage} from '../src/generated/gk-only-variants.generated';
 import { gkVariantScope } from '../src/features/recipes/gk-estimate-scope';
@@ -35,7 +38,7 @@ test("generated route and search data satisfy the browser parser contracts", asy
       assert.ok(parseRecipeSearch(payload).length > 0, file);
       searchIndex ??= payload;
     } else {
-      assert.equal(parseRouteContent(payload, "/Reseptit" + payload.path).path, payload.path, file);
+      assert.equal(parseRouteContent(payload, payload.path).path, payload.path, file);
       pages++;
       if (payload.recipe) recipePage ??= payload;
     }
@@ -50,7 +53,7 @@ test("generated route and search data satisfy the browser parser contracts", asy
   }
   const invalid = structuredClone(recipePage) as { path: string; recipe: { ingredients: unknown[] } };
   invalid.recipe.ingredients = [null];
-  assert.throws(() => parseRouteContent(invalid, "/Reseptit" + invalid.path), /Invalid recipe page data/);
+  assert.throws(() => parseRouteContent(invalid, invalid.path), /Invalid recipe page data/);
 });
 
 test("recipe actions progressively enhance readable static pages in all four languages", async () => {
@@ -107,7 +110,7 @@ test("difficulty is localized in every affected recipe page and library card", a
       const library = await readFile(path.join(dist, libraryPath.slice(1), "index.html"), "utf8");
       const card = library.split('<article class="recipe-card">').slice(1)
         .map(fragment => fragment.split("</article>", 1)[0])
-        .find(fragment => fragment.includes(`href="/Reseptit${recipe.routePath}"`));
+        .find(fragment => fragment.includes(`href="${recipe.routePath}"`));
       assert.ok(card, context);
       assert.ok(card.includes(`${label}</span>`), context);
       assert.doesNotMatch(card, /Helppo/, context);
@@ -169,15 +172,15 @@ test("recipe index is prerendered and links only published languages", async () 
   const html = await readFile(path.join(dist, "index.html"), "utf8");
   assert.match(html, /<h1>Reseptit<\/h1>/);
   assert.equal([...html.matchAll(/class="recipe-card__link"/g)].length, 24);
-  assert.match(html, /href="\/Reseptit\/reseptit\/"/);
+  assert.match(html, /href="\/reseptit\/"/);
   assert.match(html, /<div class="recipe-card-grid">/);
   assert.doesNotMatch(html, /<form class="recipe-filters" role="search"/);
   assert.doesNotMatch(html, /id="recipe-search"/);
-  assert.match(html, /rel="canonical" href="https:\/\/ozirix-dev\.github\.io\/Reseptit\/"/);
+  assert.match(html, new RegExp(String.raw`rel="canonical" href="${buildOriginPattern}/"`));
   assert.match(html, /hreflang="fi"/);
-  assert.match(html, /hreflang="en" href="https:\/\/ozirix-dev\.github\.io\/Reseptit\/en\/recipes\//);
-  assert.match(html, /hreflang="sv" href="https:\/\/ozirix-dev\.github\.io\/Reseptit\/sv\/recept\//);
-  assert.match(html, /hreflang="th" href="https:\/\/ozirix-dev\.github\.io\/Reseptit\/th\/recipes\//);
+  assert.match(html, new RegExp(String.raw`hreflang="en" href="${buildOriginPattern}/en\/recipes\/`));
+  assert.match(html, new RegExp(String.raw`hreflang="sv" href="${buildOriginPattern}/sv\/recept\/`));
+  assert.match(html, new RegExp(String.raw`hreflang="th" href="${buildOriginPattern}/th\/recipes\/`));
   assert.doesNotMatch(html, /href="[^"]+\?q=/);
   assert.doesNotMatch(html, /recipe-jsonld/);
   const allPreloads = [...html.matchAll(/<link rel="preload" as="image"[^>]*>/g)];
@@ -200,7 +203,7 @@ test("vegetable lasagne publishes its supplied image and reviewed macros without
   assert.equal(lasagneResults[0]?.status, "INSUFFICIENT SOURCE DATA");
   assert.equal(lasagneResults[0]?.glycemicLoadPerServing, null);
   assert.ok(recipe.image);
-  assert.equal(recipe.image.src, "https://ozirix-dev.github.io/Reseptit/kuvat/munakoiso-kesakurpitsalasagne.webp");
+  assert.equal(recipe.image.src, `${siteTarget.baseUrl}/kuvat/munakoiso-kesakurpitsalasagne.webp`);
   assert.equal(recipe.image.width, 1448);
   assert.equal(recipe.image.height, 1086);
   const html = await readFile(path.join(dist, recipe.routePath.slice(1), "index.html"), "utf8");
@@ -327,7 +330,7 @@ test("GK values link to centralized recipe details on every published translatio
       if (result.status === "CALCULATED" && result.glycemicLoadPerServing !== null) {
         assert.ok(html.includes(recipeUi[recipe.locale].glycemicLoad));
         assert.ok(html.includes(gkCopy[recipe.locale].see));
-        assert.ok(html.includes(`${recipe.locale === "fi" ? "/Reseptit" : "/Reseptit"}${recipe.locale === "fi" ? "/glykeeminen-kuorma/" : recipe.locale === "en" ? "/en/glycemic-load/" : recipe.locale === "sv" ? "/sv/glykemisk-belastning/" : "/th/glycemic-load/"}#${result.recipeId}`));
+        assert.ok(html.includes(`${recipe.locale === "fi" ? "/glykeeminen-kuorma/" : recipe.locale === "en" ? "/en/glycemic-load/" : recipe.locale === "sv" ? "/sv/glykemisk-belastning/" : "/th/glycemic-load/"}#${result.recipeId}`));
         assert.ok(result.confidence && html.includes(gkCopy[recipe.locale].levelNotes[result.confidence]), `${result.recipeId}/${recipe.locale}: confidence is visible`);
         if (result.omittedAvailableCarbohydratePerServingG > 0) assert.ok(html.includes(recipeUi[recipe.locale].glycemicLoadOmission(new Intl.NumberFormat({ fi: "fi-FI", en: "en-GB", sv: "sv-SE", th: "th-TH" }[recipe.locale], { maximumSignificantDigits: 1 }).format(result.omittedAvailableCarbohydratePerServingG))), `${result.recipeId}/${recipe.locale}: omitted small carbohydrate is disclosed`);
         const displayNumber = new Intl.NumberFormat({ fi: "fi-FI", en: "en-GB", sv: "sv-SE", th: "th-TH" }[recipe.locale], result.assessmentType ? {maximumFractionDigits:0} : {maximumSignificantDigits:1,minimumSignificantDigits:1});
@@ -381,10 +384,10 @@ test("GI proxy matches remain visibly low confidence and incomplete totals are w
 
 test("localized central GL pages render complete SEO metadata with canonical and hreflang links", async () => {
   const pages = [
-    { route: "glykeeminen-kuorma", locale: "fi", ogLocale: "fi_FI", title: "Reseptien glykeeminen kuorma (GK) | Recipavo", description: "Löydä reseptien glykeemisen kuorman (GK) arviot, luotettavuustiedot ja tarvittaessa tarkat laskentalähteet.", canonical: "https://ozirix-dev.github.io/Reseptit/glykeeminen-kuorma/" },
-    { route: "en/glycemic-load", locale: "en", ogLocale: "en_GB", title: "Glycemic load (GL) of recipes | Recipavo", description: "Explore calculated glycemic load estimates for recipes, their reliability and detailed sources.", canonical: "https://ozirix-dev.github.io/Reseptit/en/glycemic-load/" },
-    { route: "sv/glykemisk-belastning", locale: "sv", ogLocale: "sv_SE", title: "Receptens glykemiska belastning (GL) | Recipavo", description: "Hitta uppskattningar av receptens glykemiska belastning, säkerhet och detaljerade källor.", canonical: "https://ozirix-dev.github.io/Reseptit/sv/glykemisk-belastning/" },
-    { route: "th/glycemic-load", locale: "th", ogLocale: "th_TH", title: "ค่าภาระน้ำตาลในเลือด (GL) ของสูตรอาหาร | Recipavo", description: "ค้นหาค่าภาระน้ำตาลในเลือด (GL) ของสูตรอาหาร พร้อมระดับความน่าเชื่อถือและแหล่งข้อมูลการคำนวณ", canonical: "https://ozirix-dev.github.io/Reseptit/th/glycemic-load/" },
+    { route: "glykeeminen-kuorma", locale: "fi", ogLocale: "fi_FI", title: "Reseptien glykeeminen kuorma (GK) | Recipavo", description: "Löydä reseptien glykeemisen kuorman (GK) arviot, luotettavuustiedot ja tarvittaessa tarkat laskentalähteet.", canonical: `${siteTarget.baseUrl}/glykeeminen-kuorma/` },
+    { route: "en/glycemic-load", locale: "en", ogLocale: "en_GB", title: "Glycemic load (GL) of recipes | Recipavo", description: "Explore calculated glycemic load estimates for recipes, their reliability and detailed sources.", canonical: `${siteTarget.baseUrl}/en/glycemic-load/` },
+    { route: "sv/glykemisk-belastning", locale: "sv", ogLocale: "sv_SE", title: "Receptens glykemiska belastning (GL) | Recipavo", description: "Hitta uppskattningar av receptens glykemiska belastning, säkerhet och detaljerade källor.", canonical: `${siteTarget.baseUrl}/sv/glykemisk-belastning/` },
+    { route: "th/glycemic-load", locale: "th", ogLocale: "th_TH", title: "ค่าภาระน้ำตาลในเลือด (GL) ของสูตรอาหาร | Recipavo", description: "ค้นหาค่าภาระน้ำตาลในเลือด (GL) ของสูตรอาหาร พร้อมระดับความน่าเชื่อถือและแหล่งข้อมูลการคำนวณ", canonical: `${siteTarget.baseUrl}/th/glycemic-load/` },
   ];
   for (const page of pages) {
     const html = await readFile(path.join(dist, page.route, "index.html"), "utf8");
@@ -436,22 +439,22 @@ test("prerendered recipe HTML includes useful content before JavaScript", async 
   assert.match(root[1], /<h2 id="recipe-instructions" tabindex="-1">Valmistus<\/h2>/);
   assert.match(root[1], /<h2>Ravintoarvot annosta kohti<\/h2>/);
   assert.match(html, /<html lang="fi">/);
-  assert.match(html, /rel="canonical" href="https:\/\/ozirix-dev\.github\.io\/Reseptit\/kermainen-lohipata\/"/);
-  assert.match(html, /hreflang="x-default" href="https:\/\/ozirix-dev\.github\.io\/Reseptit\/kermainen-lohipata\/"/);
+  assert.match(html, new RegExp(String.raw`rel="canonical" href="${buildOriginPattern}/kermainen-lohipata\/"`));
+  assert.match(html, new RegExp(String.raw`hreflang="x-default" href="${buildOriginPattern}/kermainen-lohipata\/"`));
   assert.match(root[1], /class="recipe-languages"/);
-  assert.match(root[1], /hrefLang="en" href="\/Reseptit\/en\/recipes\/kermainen-lohipata\/"/);
-  assert.match(root[1], /hrefLang="sv" href="\/Reseptit\/sv\/recept\/kermainen-lohipata\/"/);
-  assert.match(root[1], /hrefLang="th" href="\/Reseptit\/th\/recipes\/kermainen-lohipata\/"/);
+  assert.match(root[1], /hrefLang="en" href="\/en\/recipes\/kermainen-lohipata\/"/);
+  assert.match(root[1], /hrefLang="sv" href="\/sv\/recept\/kermainen-lohipata\/"/);
+  assert.match(root[1], /hrefLang="th" href="\/th\/recipes\/kermainen-lohipata\/"/);
   assert.match(html, /<meta name="twitter:card" content="summary_large_image"/);
-  assert.match(html, /property="og:image" content="https:\/\/ozirix-dev\.github\.io\/Reseptit\/kuvat\/paaruoat\/kermainen-lohipata\.webp"/);
-  assert.match(root[1], /<img class="recipe-image" src="https:\/\/ozirix-dev\.github\.io\/Reseptit\/kuvat\/paaruoat\/kermainen-lohipata\.webp"[^>]* alt="Kermainen lohipata lohipaloilla, pinaatilla ja tillillä" width="1254" height="1254"/);
+  assert.match(html, new RegExp(String.raw`property="og:image" content="${buildOriginPattern}/kuvat\/paaruoat\/kermainen-lohipata\.webp"`));
+  assert.match(root[1], new RegExp(String.raw`<img class="recipe-image" src="${buildOriginPattern}/kuvat\/paaruoat\/kermainen-lohipata\.webp"[^>]* alt="Kermainen lohipata lohipaloilla, pinaatilla ja tillillä" width="1254" height="1254"`));
   const jsonLdMatch = html.match(/<script id="recipe-jsonld" type="application\/ld\+json">([\s\S]*?)<\/script>/);
   assert.ok(jsonLdMatch);
   const jsonLd = JSON.parse(jsonLdMatch[1]);
   assert.equal(jsonLd["@type"], "Recipe");
   assert.equal(jsonLd.name, "Kermainen lohipata");
   assert.equal(jsonLd.recipeYield, "4");
-  assert.deepEqual(jsonLd.image, ["https://ozirix-dev.github.io/Reseptit/kuvat/paaruoat/kermainen-lohipata.webp"]);
+  assert.deepEqual(jsonLd.image, [`${siteTarget.baseUrl}/kuvat/paaruoat/kermainen-lohipata.webp`]);
   assert.equal("author" in jsonLd, false);
   assert.equal("datePublished" in jsonLd, false);
   assert.equal("aggregateRating" in jsonLd, false);
@@ -478,11 +481,11 @@ test("translated macaroni bake pages have localized content, SEO metadata and ma
     assert.ok(root[1].includes(`<h2 id="recipe-instructions" tabindex="-1">${translation.instructionHeading}</h2>`));
     assert.match(root[1], /class="recipe-languages"/);
     assert.match(root[1], /jauheliha-makaronilaatikko\.webp/);
-    assert.ok(html.includes(`rel="canonical" href="https://ozirix-dev.github.io/Reseptit${translation.route}"`));
+    assert.ok(html.includes(`rel="canonical" href="${siteTarget.baseUrl}${translation.route}"`));
     for (const [locale, route] of hreflangPaths) {
-      assert.ok(html.includes(`hreflang="${locale}" href="https://ozirix-dev.github.io/Reseptit${route}"`));
+      assert.ok(html.includes(`hreflang="${locale}" href="${siteTarget.baseUrl}${route}"`));
     }
-    assert.ok(html.includes("hreflang=\"x-default\" href=\"https://ozirix-dev.github.io/Reseptit/jauheliha-makaronilaatikko/\""));
+    assert.ok(html.includes(`hreflang="x-default" href="${siteTarget.baseUrl}/jauheliha-makaronilaatikko/"`));
     const jsonLdMatch = html.match(/<script id="recipe-jsonld" type="application\/ld\+json">([\s\S]*?)<\/script>/);
     assert.ok(jsonLdMatch);
     const jsonLd = JSON.parse(jsonLdMatch[1]);
@@ -491,7 +494,7 @@ test("translated macaroni bake pages have localized content, SEO metadata and ma
     assert.equal(jsonLd.recipeYield, "8");
     assert.equal(jsonLd.recipeInstructions.length, 7);
     assert.equal(jsonLd.nutrition.proteinContent, "47.63 g");
-    assert.deepEqual(jsonLd.image, ["https://ozirix-dev.github.io/Reseptit/kuvat/paaruoat/jauheliha-makaronilaatikko.webp"]);
+    assert.deepEqual(jsonLd.image, [`${siteTarget.baseUrl}/kuvat/paaruoat/jauheliha-makaronilaatikko.webp`]);
   }
 });
 
@@ -502,9 +505,9 @@ test("published keto bun page includes its content and omitted amounts remain om
   assert.match(html, /halutessasi pinnalle/);
   assert.match(html, /Psyllium sitoo pehmeää taikinaa/);
   assert.doesNotMatch(html, /raakileiden raejuustopohja/);
-  assert.match(html, /src="https:\/\/ozirix-dev\.github\.io\/Reseptit\/kuvat\/leivonnaiset\/keto-kauralesesampylat\.webp"/);
+  assert.match(html, new RegExp(String.raw`src="${buildOriginPattern}/kuvat\/leivonnaiset\/keto-kauralesesampylat\.webp"`));
   assert.match(html, /<meta name="twitter:card" content="summary_large_image"/);
-  assert.match(html, /"image":\["https:\/\/ozirix-dev\.github\.io\/Reseptit\/kuvat\/leivonnaiset\/keto-kauralesesampylat\.webp"\]/);
+  assert.match(html, new RegExp(String.raw`"image":\["${buildOriginPattern}/kuvat\/leivonnaiset\/keto-kauralesesampylat\.webp"\]`));
 });
 
 test("localized 404 pages never hydrate a recipe or emit indexable metadata", async () => {
@@ -512,7 +515,7 @@ test("localized 404 pages never hydrate a recipe or emit indexable metadata", as
     const html = await readFile(path.join(dist, directory, "404.html"), "utf8");
     assert.ok(html.includes('<html lang="' + locale + '">'));
     assert.ok(html.includes("<h1>" + recipeUi[locale].notFound + "</h1>"));
-    assert.ok(html.includes('<p><a href="/Reseptit' + indexPath + '"'));
+    assert.ok(html.includes('<p><a href="' + indexPath + '"'));
     assert.ok(html.includes('>' + recipeUi[locale].backToRecipes + '</a></p>'));
     assert.match(html, /name="robots" content="noindex, nofollow"/);
     assert.doesNotMatch(html, /rel="canonical"|recipe-jsonld|"@type":"Recipe"|hreflang=|x-default|<script type="module"/);
@@ -522,16 +525,16 @@ test("localized 404 pages never hydrate a recipe or emit indexable metadata", as
 test("staging sitemap keeps the Pages paths and robots lets crawlers read noindex", async () => {
   const sitemap = await readFile(path.join(dist, "sitemap.xml"), "utf8");
   const robots = await readFile(path.join(dist, "robots.txt"), "utf8");
-  assert.match(sitemap, /https:\/\/ozirix-dev\.github\.io\/Reseptit\/kermainen-lohipata\//);
-  assert.match(sitemap, /https:\/\/ozirix-dev\.github\.io\/Reseptit\/keto-kauralesesampylat\//);
-  assert.match(sitemap, /https:\/\/ozirix-dev\.github\.io\/Reseptit\/en\/recipes\/high-protein-beef-macaroni-bake\//);
-  assert.match(sitemap, /https:\/\/ozirix-dev\.github\.io\/Reseptit\/sv\/recept\/proteinrik-makaronilada-med-kottfars\//);
-  assert.match(sitemap, /https:\/\/ozirix-dev\.github\.io\/Reseptit\/th\/recipes\/makaroni-op-nuea-bot-protein-sung\//);
-  assert.doesNotMatch(sitemap, /https:\/\/ozirix-dev\.github\.io\/Reseptit\/kaalilaatikko\//);
+  assert.match(sitemap, new RegExp(String.raw`${buildOriginPattern}/kermainen-lohipata\/`));
+  assert.match(sitemap, new RegExp(String.raw`${buildOriginPattern}/keto-kauralesesampylat\/`));
+  assert.match(sitemap, new RegExp(String.raw`${buildOriginPattern}/en\/recipes\/high-protein-beef-macaroni-bake\/`));
+  assert.match(sitemap, new RegExp(String.raw`${buildOriginPattern}/sv\/recept\/proteinrik-makaronilada-med-kottfars\/`));
+  assert.match(sitemap, new RegExp(String.raw`${buildOriginPattern}/th\/recipes\/makaroni-op-nuea-bot-protein-sung\/`));
+  assert.doesNotMatch(sitemap, new RegExp(String.raw`${buildOriginPattern}/kaalilaatikko\/`));
   assert.doesNotMatch(sitemap, /raakileet|\.md/);
   assert.doesNotMatch(sitemap, /\?(?:q|category|diet)=/);
   assert.match(robots, /Project-path robots\.txt/);
-  assert.match(robots, /Allow: \/Reseptit\//);
+  assert.match(robots, /Allow: \//);
   assert.doesNotMatch(robots, /^Sitemap:/mi);
 });
 
@@ -553,7 +556,7 @@ test("P2/P3 corrections reach static titles, route data and Recipe JSON-LD", asy
     assert.equal(jsonld.name, recipe.title);
     assert.equal(page.recipe.title, recipe.title);
     assert.ok(html.includes(`<h1>${recipe.title}</h1>`));
-    assert.ok(html.includes(`rel="canonical" href="https://ozirix-dev.github.io/Reseptit${recipe.routePath}"`));
+    assert.ok(html.includes(`rel="canonical" href="${siteTarget.baseUrl}${recipe.routePath}"`));
     if (recipe.recipeId in times) assert.equal(jsonld.totalTime, `PT${times[recipe.recipeId]}M`);
     if (renamed.includes(recipe.recipeId)) {
       assert.equal(page.recipe.dietClass, null);
@@ -580,7 +583,7 @@ test("translation self-review corrections are present in static HTML and recipe 
     assert.ok(!html.includes(rejected), `${id}/${locale}: no old mistranslation`);
     const schema = JSON.parse(html.match(/<script id="recipe-jsonld" type="application\/ld\+json">([\s\S]*?)<\/script>/)![1]);
     assert.equal(schema.name, recipe.title);
-    assert.ok(html.includes(`rel="canonical" href="https://ozirix-dev.github.io/Reseptit${recipe.routePath}"`));
+    assert.ok(html.includes(`rel="canonical" href="${siteTarget.baseUrl}${recipe.routePath}"`));
   }
 });
 
@@ -616,8 +619,8 @@ test("responsive image metadata reaches every route, SEO and matching preloads",
       assert.equal(imgs.length, route === "/ruokaopas/" ? 12 : 1);
       for (const img of imgs) {
         assert.ok(img.alt, route);
-        assert.match(img.src, /^\/Reseptit\/ruokaopas\/(?:kuvitus\/[a-z0-9-]+|briossi|gk)\.svg$/);
-        assert.ok((await readFile(path.join(dist, img.src.replace(/^\/Reseptit\//, "")))).length > 0);
+        assert.match(img.src, /^\/ruokaopas\/(?:kuvitus\/[a-z0-9-]+|briossi|gk)\.svg$/);
+        assert.ok((await readFile(path.join(dist, img.src.replace(/^\//, "")))).length > 0);
       }
     } else {
       assert.equal(imgs.length, expected.filter((r: {image: unknown}) => r.image).length);
@@ -633,7 +636,7 @@ test("responsive image metadata reaches every route, SEO and matching preloads",
       assert.ok(img.alt);
       for (const candidate of img.srcset.split(", ")) {
         const [url, width] = candidate.split(" ");
-        assert.match(url, /^https:\/\/ozirix-dev\.github\.io\/Reseptit\/kuvat\//);
+        assert.match(url, new RegExp(String.raw`^${buildOriginPattern}/kuvat\/`));
         assert.match(width, /^\d+w$/);
         assert.ok((await readFile(path.join(dist, "kuvat", url.split("/kuvat/")[1]))).length);
       }
@@ -644,7 +647,7 @@ test("responsive image metadata reaches every route, SEO and matching preloads",
         const sources = [...html.matchAll(/<source\b[^>]*>/g)].map((match) => attributes(match[0]));
         assert.ok(sources.some((source) => source.type === preload.type &&
           source.media === preload.media && source.srcset === preload.href), 'AVIF preload must match a picture source at ' + route);
-        assert.match(preload.href, /^https:\/\/ozirix-dev\.github\.io\/Reseptit\/kuvat\/_variants\/.+\.avif$/);
+        assert.match(preload.href, new RegExp(String.raw`^${buildOriginPattern}/kuvat\/_variants\/.+\.avif$`));
         assert.ok((await readFile(path.join(dist, "kuvat", preload.href.split("/kuvat/")[1]))).length);
         continue;
       }
@@ -653,7 +656,7 @@ test("responsive image metadata reaches every route, SEO and matching preloads",
       assert.equal(preload.imagesizes, img.sizes);
       if (preload.href) assert.equal(preload.href, img.src);
     }
-    assert.ok(html.includes(`rel="canonical" href="https://ozirix-dev.github.io/Reseptit${route}"`));
+    assert.ok(html.includes(`rel="canonical" href="${siteTarget.baseUrl}${route}"`));
     if (recipe) {
       assert.deepEqual(payload.recipe.image, recipe.image);
       const structured = html.match(/<script id="recipe-jsonld" type="application\/ld\+json">([\s\S]*?)<\/script>/);
@@ -666,7 +669,7 @@ test("responsive image metadata reaches every route, SEO and matching preloads",
         assert.doesNotMatch(html, /property="og:image"|name="twitter:image"/);
       }
       for (const translation of siteContent.recipes.filter((r) => r.recipeId === recipe.recipeId)) {
-        assert.ok(html.includes(`hreflang="${translation.locale}" href="https://ozirix-dev.github.io/Reseptit${translation.routePath}"`));
+        assert.ok(html.includes(`hreflang="${translation.locale}" href="${siteTarget.baseUrl}${translation.routePath}"`));
       }
     }
   }
@@ -803,5 +806,18 @@ test("copyright policy is unobtrusive, accessible and prerendered in all four la
     assert.ok(footer.includes(copyrightUi[locale].sourceLabel), `${locale}: recognized guidance linked`);
     assert.ok(footer.includes(`href="${copyrightSourceUrl}"`), `${locale}: source URL`);
     assert.ok(footer.includes('href="https://github.com/ozirix-dev/Reseptit/issues"'), `${locale}: correction channel`);
+  }
+});
+
+
+test("reviewed historical recipe links resolve to public routes in the reader's language", async () => {
+  for (const prefix of ["", "/en/recipes", "/sv/recept", "/th/recipes"]) {
+    const roastBeef = await readFile(path.join(dist, prefix, "naudan-paahtopaisti-uunissa/index.html"), "utf8");
+    for (const slug of ["paahtopaistileipa-piparjuurikastikkeella", "paahtopaistileivat-kauralesesampyloilla"]) {
+      assert.ok(roastBeef.includes(` href="${prefix}/${slug}/"`), ` ${prefix}: ${slug}`);
+      const related = await readFile(path.join(dist, prefix, slug, "index.html"), "utf8");
+      assert.ok(related.includes(` href="${prefix}/naudan-paahtopaisti-uunissa/"`));
+      assert.doesNotMatch(related, /href="https:\/\/ozirix-dev\.github\.io\//);
+    }
   }
 });

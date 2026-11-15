@@ -1,3 +1,4 @@
+import { siteTarget } from "../src/content/site-target";
 import { gkCopy } from "../src/features/glycemic-load/glycemic-load-copy";
 import assert from "node:assert/strict";
 import { spawn, type ChildProcess } from "node:child_process";
@@ -8,7 +9,7 @@ import { launchBrowser } from "./launch-browser";
 import { recipeUi } from "../src/features/recipes/recipe-i18n";
 import { toolUi } from "../src/features/recipes/recipe-tools";
 
-const base = "http://127.0.0.1:4176/Reseptit";
+const base = "http://127.0.0.1:4176";
 let server: ChildProcess;
 let browser: Browser;
 let serverOutput = "";
@@ -32,7 +33,7 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
     t.after(async () => { await browser.close(); server.kill(); });
 
     const noJs = await browser.newPage({ javaScriptEnabled: false });
-      await noJs.route("https://ozirix-dev.github.io/Reseptit/kuvat/**", async (route) => {
+      await noJs.route(`${siteTarget.baseUrl}/kuvat/**`, async (route) => {
         await route.fulfill({ path: path.resolve("public/kuvat", new URL(route.request().url()).pathname.split("/kuvat/")[1]) });
       });
     await noJs.goto(`${base}/`);
@@ -49,7 +50,7 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
 
     const context = await browser.newContext({ viewport: { width: 320, height: 800 } });
     const page = await context.newPage();
-    await page.route("https://ozirix-dev.github.io/Reseptit/kuvat/**", async (route) => {
+    await page.route(`${siteTarget.baseUrl}/kuvat/**`, async (route) => {
       const imagePath = new URL(route.request().url()).pathname.split("/kuvat/")[1];
       await route.fulfill({ path: path.join(import.meta.dirname, "..", "public", "kuvat", ...imagePath.split("/")) });
     });
@@ -64,7 +65,7 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
       { path: "/th/glycemic-load/", locale: "th", ogLocale: "th_TH", title: "ค่าภาระน้ำตาลในเลือด (GL) ของสูตรอาหาร | Recipavo", description: "ค้นหาค่าภาระน้ำตาลในเลือด (GL) ของสูตรอาหาร พร้อมระดับความน่าเชื่อถือและแหล่งข้อมูลการคำนวณ" },
     ] as const;
     for (const [index, methodPage] of methodPages.entries()) {
-      const canonical = `https://ozirix-dev.github.io${base.replace("http://127.0.0.1:4176", "")}${methodPage.path}`;
+      const canonical = `${siteTarget.baseUrl}${methodPage.path}`;
       await page.goto(`${base}${methodPage.path}`);
       await page.waitForFunction((title) => document.title === title && Boolean(document.querySelector('link[rel="canonical"]')), methodPage.title);
       assert.equal(await page.locator("html").getAttribute("lang"), methodPage.locale);
@@ -82,9 +83,9 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
       assert.equal(await page.locator('link[rel="canonical"]').count(), 1);
       assert.equal(await page.locator('link[rel="alternate"][hreflang]').count(), 5);
       assert.equal(await page.locator('link[rel="alternate"][hreflang="x-default"]').count(), 1);
-      assert.equal(await page.locator('link[rel="alternate"][hreflang="fi"]').getAttribute("href"), "https://ozirix-dev.github.io/Reseptit/glykeeminen-kuorma/");
+      assert.equal(await page.locator('link[rel="alternate"][hreflang="fi"]').getAttribute("href"), `${siteTarget.baseUrl}/glykeeminen-kuorma/`);
       for (const [locale, route] of [["en", "en/glycemic-load/"], ["sv", "sv/glykemisk-belastning/"], ["th", "th/glycemic-load/"]] as const) {
-        assert.equal(await page.locator(`link[rel="alternate"][hreflang="${locale}"]`).getAttribute("href"), `https://ozirix-dev.github.io/Reseptit/${route}`);
+        assert.equal(await page.locator(`link[rel="alternate"][hreflang="${locale}"]`).getAttribute("href"), `${siteTarget.baseUrl}/${route}`);
       }
 
       const width = [320, 390, 768, 1440][index];
@@ -134,7 +135,7 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
       const recipePrefix = { fi: "", en: "/en/recipes", sv: "/sv/recept", th: "/th/recipes" }[methodPage.locale];
       await page.goto(`${base}${recipePrefix}/hummus/`);
       const href = await page.locator(".recipe-glycemic-load__caption a").getAttribute("href");
-      assert.equal(href, `/Reseptit${methodPage.path}#hummus`);
+      assert.equal(href, `${methodPage.path}#hummus`);
       const linkedPage = await context.newPage();
       await linkedPage.goto(new URL(href!, base).href);
       await linkedPage.waitForFunction(() => document.activeElement?.id === "hummus");
@@ -186,7 +187,7 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
     await page.getByRole("link", { name: "Reseptit, etusivu" }).click();
     await page.getByRole("heading", { name: "Reseptit" }).waitFor();
     await page.locator("#recipe-search").fill("Kermainen lohipata");
-    await page.locator('.recipe-card__link[href="/Reseptit/kermainen-lohipata/"]').click();
+    await page.locator('.recipe-card__link[href="/kermainen-lohipata/"]').click();
     await page.getByRole("heading", { name: "Kermainen lohipata" }).waitFor();
     assert.equal(await page.locator(".serving-control output").innerText(), "4");
     assert.equal(await firstStep.isChecked(), false);
@@ -195,7 +196,7 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
     await page.getByRole("searchbox", { name: "Hae reseptejä" }).waitFor();
     await page.waitForFunction(() => (document.querySelector<HTMLInputElement>("#recipe-search")?.value ?? "") === "lohi");
     await page.locator(".recipe-card-grid .recipe-card").first().waitFor();
-    assert.ok((await page.locator('link[rel="canonical"]').getAttribute("href"))?.endsWith("/Reseptit/"));
+    assert.ok((await page.locator('link[rel="canonical"]').getAttribute("href"))?.endsWith("/"));
     await page.getByLabel("Kategoria").selectOption("jalkiruoka");
     await page.getByRole("status").getByText("Löytyi 0 reseptiä").waitFor();
     assert.match(page.url(), /[?&]q=lohi/);
@@ -315,7 +316,7 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
     assert.equal(await page.getByRole("button", { name: "Tyhjennä haku", exact: true }).evaluate((button) => button.matches(":focus-visible")), true);
 
     await page.evaluate(() => {
-      history.pushState(null, "", "/Reseptit/no-such-recipe/");
+      history.pushState(null, "", "/no-such-recipe/");
       dispatchEvent(new PopStateEvent("popstate"));
     });
     await page.getByRole("heading", { name: "Sivua ei löytynyt" }).waitFor();
@@ -326,9 +327,9 @@ test("browser smoke: prerendered recipe pages, search filters, SEO, keyboard use
     assert.equal(await page.locator('link[rel="alternate"][hreflang="x-default"]').count(), 0);
 
     for (const missingPage of [
-      { path: "/Reseptit/en/recipes/no-such-recipe/", locale: "en", heading: "Page not found", title: "Page not found | Recipavo" },
-      { path: "/Reseptit/sv/recept/recept-som-inte-finns/", locale: "sv", heading: "Sidan kunde inte hittas", title: "Sidan kunde inte hittas | Recipavo" },
-      { path: "/Reseptit/th/recipes/no-such-recipe/", locale: "th", heading: "ไม่พบหน้านี้", title: "ไม่พบหน้านี้ | Recipavo" },
+      { path: "/en/recipes/no-such-recipe/", locale: "en", heading: "Page not found", title: "Page not found | Recipavo" },
+      { path: "/sv/recept/recept-som-inte-finns/", locale: "sv", heading: "Sidan kunde inte hittas", title: "Sidan kunde inte hittas | Recipavo" },
+      { path: "/th/recipes/no-such-recipe/", locale: "th", heading: "ไม่พบหน้านี้", title: "ไม่พบหน้านี้ | Recipavo" },
     ]) {
       await page.evaluate((path) => {
         history.pushState(null, "", path);

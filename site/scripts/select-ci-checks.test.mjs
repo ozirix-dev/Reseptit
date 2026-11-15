@@ -42,14 +42,13 @@ test("only the exact local Wrangler cache rule gets lightweight Git-based select
         env: {
           ...process.env, CHANGED_PATHS_JSON: "", GITHUB_OUTPUT: "",
           EVENT_NAME: "pull_request", BASE_SHA: base, HEAD_SHA: head,
-          FORCE_FULL: "false", DEPLOY: "false", ...extra,
+          FORCE_FULL: "false", ...extra,
         },
       }));
     };
     const allowed = plan(original + cacheRule);
     assert.equal(allowed.full, false);
     assert.equal(allowed.needsNode, false);
-    assert.equal(allowed.publish, false);
     assert.equal(plan(original + cacheRule, { FORCE_FULL: "true" }).full, true);
     assert.equal(plan(original + cacheRule, { CHANGED_PATHS_JSON: '[".gitignore"]' }).full, true);
     for (const contents of [cacheRule, original + ".wrangler/\n", original + cacheRule.repeat(2), original + cacheRule + "/dist/\n"]) {
@@ -134,7 +133,7 @@ test("deduplicate only the files run by scheduled dedicated npm suites", () => {
   assert.deepEqual(classifyPaths(testPaths, { forceFull: true }).unitTests, ["*"]);
 });
 
-test("PR and main push both audit recipe coverage; only main push publishes", () => {
+test("PR and main push both audit recipe coverage; main push also builds and checks static output", () => {
   const recipePath = ["reseptit/paaruoat/munakoiso-kesakurpitsalasagne.md"];
   const pullRequest = applyEventPolicy(classifyPaths(recipePath), "pull_request");
   const mainPush = applyEventPolicy(classifyPaths(recipePath), "push");
@@ -144,8 +143,6 @@ test("PR and main push both audit recipe coverage; only main push publishes", ()
     assert.equal(plan.runBuild, true);
     assert.equal(plan.runStatic, true);
   }
-  assert.equal(pullRequest.publish, false);
-  assert.equal(mainPush.publish, true);
 });
 
 test("separately passing recipe and GI/GK PR path sets remain audited when combined", () => {
@@ -170,8 +167,6 @@ test("separately passing recipe and GI/GK PR path sets remain audited when combi
     assert.equal(plan.runStatic, true);
     assert.deepEqual(plan.unitTests, []);
   }
-  assert.equal(combinedPr.publish, false);
-  assert.equal(combinedMainPush.publish, true);
 });
 
 test("GI/GK model changes retain calculation regression and build audits", () => {
@@ -325,12 +320,11 @@ test('malformed CLI input emits full-check outputs and a classification error', 
     const output = path.join(fixture, 'outputs');
     const result = JSON.parse(execFileSync(process.execPath, [fileURLToPath(new URL('./select-ci-checks.mjs', import.meta.url))], {
       env: {...process.env, CHANGED_PATHS_JSON: '[false]', GITHUB_OUTPUT: output,
-        EVENT_NAME: 'pull_request', FORCE_FULL: 'false', DEPLOY: 'false'},
+        EVENT_NAME: 'pull_request', FORCE_FULL: 'false'},
       encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'],
     }));
     assert.equal(result.full, true);
     assert.equal(result.runBuild, true);
-    assert.equal(result.publish, false);
     assert.ok(readFileSync(output, 'utf8').includes('classification_error=true'));
   } finally { rmSync(fixture, {recursive: true, force: true}); }
 });

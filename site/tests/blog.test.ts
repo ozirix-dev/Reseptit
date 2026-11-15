@@ -1,3 +1,4 @@
+import { siteTarget } from "../src/content/site-target";
 import test from "node:test";
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
@@ -36,18 +37,18 @@ test("Ruokaopas URLs are prerendered, linked and sourced without JS", async () =
   assert.match(index, /<h1>Ruokaopas<\/h1>/);
   for (const route of [blogRoot, ...articles.map(articlePath)]) {
     assert.ok(contentManifest[route], `Missing content manifest ${route}`);
-    assert.ok(sitemap.includes(`https://ozirix-dev.github.io/Reseptit${route}`));
+    assert.ok(sitemap.includes(`${siteTarget.baseUrl}${route}`));
   }
   for (const article of articles) {
     const route = articlePath(article);
     const html = await readFile(path.join(dist, route.slice(1), "index.html"), "utf8");
     assert.ok(html.includes(`<h1>${article.title}</h1>`));
-    assert.ok(html.includes(`rel="canonical" href="https://ozirix-dev.github.io/Reseptit${route}"`));
+    assert.ok(html.includes(`rel="canonical" href="${siteTarget.baseUrl}${route}"`));
     assert.ok(html.includes(`<script id="blog-jsonld" type="application/ld+json">`));
     assert.ok(html.includes("Lähteet ja lisätietoa"));
     const escapedAlt = article.alt.replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;").replaceAll("\'", "&#x27;");
     assert.ok(html.includes(`alt="${escapedAlt}"`), article.slug);
-    for (const related of article.related) assert.ok(html.includes(`href="/Reseptit${related.path}"`), related.path);
+    for (const related of article.related) assert.ok(html.includes(`href="${related.path}"`), related.path);
     const asset = path.join(dist, article.image.replace(/^\//, ""));
     const body = await readFile(asset);
     if(article.image.endsWith(".svg")) {
@@ -68,7 +69,7 @@ test("Ruokaopas URLs are prerendered, linked and sourced without JS", async () =
 test("Ruokaopas menu remains reachable across all four language indexes", async () => {
  for (const route of ["", "en/recipes", "sv/recept", "th/recipes"]) {
   const html = await readFile(path.join(dist, route, "index.html"), "utf8");
-  assert.ok(html.includes('href="/Reseptit/ruokaopas/"'), route);
+  assert.ok(html.includes('href="/ruokaopas/"'), route);
  }
 });
 
@@ -88,8 +89,8 @@ test("related recipes and their Finnish guides link back to each other in static
   for (const [guide, recipe] of pairs) {
     const [guideHtml, recipeHtml] = await Promise.all([guide, recipe].map(route =>
       readFile(path.join(dist, route.slice(1), "index.html"), "utf8")));
-    assert.ok(guideHtml.includes(`href="/Reseptit${recipe}"`), guide);
+    assert.ok(guideHtml.includes(`href="${recipe}"`), guide);
     assert.match(recipeHtml, /<h2 id="related-guides-title">Aiheesta Ruokaoppaassa<\/h2>/);
-    assert.ok(recipeHtml.includes(`href="/Reseptit${guide}"`), recipe);
+    assert.ok(recipeHtml.includes(`href="${guide}"`), recipe);
   }
 });

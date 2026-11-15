@@ -9,8 +9,7 @@ import { siteContent } from "../src/generated/content.generated";
 import { recipeLibraryPagePath, recipeLibraryPageSize } from "../src/features/recipes/recipe-pagination";
 
 const production = process.env.RECIPAVO_BUILD_TARGET === "production";
-const prefix = production ? "" : "/Reseptit";
-const base = "http://127.0.0.1:4181" + prefix;
+const base = "http://127.0.0.1:4181";
 const indexes = { fi: "/", en: "/en/recipes/", sv: "/sv/recept/", th: "/th/recipes/" } as const;
 
 test("branded HTML keeps the target indexing policy, search and library working in every locale", async () => {
@@ -49,10 +48,10 @@ test("branded HTML keeps the target indexing policy, search and library working 
       if (homePicksExpected) {
         assert.equal(await noJs.locator(".home-preview__picks > .recipe-card-grid .recipe-card").count(), 9, locale);
         await noJs.locator(".recipe-library-link a").click();
-        assert.equal(new URL(noJs.url()).pathname, prefix + recipeLibraryPagePath(locale));
+        assert.equal(new URL(noJs.url()).pathname, recipeLibraryPagePath(locale));
         assert.equal(await noJs.locator(".recipe-card").count(), recipeLibraryPageSize);
         await noJs.locator('.recipe-pagination a[rel="next"]').click();
-        assert.equal(new URL(noJs.url()).pathname, prefix + recipeLibraryPagePath(locale, 2));
+        assert.equal(new URL(noJs.url()).pathname, recipeLibraryPagePath(locale, 2));
       }
       await noJs.close();
 
@@ -74,9 +73,9 @@ test("branded HTML keeps the target indexing policy, search and library working 
         assert.ok(await page.locator(".home-preview__topic-list a").count() >= 4, locale);
         const cards = await page.locator(".recipe-card__link").evaluateAll(links =>
           links.map(link => (link as HTMLAnchorElement).pathname));
-        const outsideHome = siteContent.recipes.find(recipe => recipe.locale === locale && !cards.includes(prefix + recipe.routePath))!;
+        const outsideHome = siteContent.recipes.find(recipe => recipe.locale === locale && !cards.includes(recipe.routePath))!;
         await page.locator("#recipe-search").fill(outsideHome.title);
-        await page.locator('.recipe-card__link[href="' + prefix + outsideHome.routePath + '"]').waitFor();
+        await page.locator('.recipe-card__link[href="' + outsideHome.routePath + '"]').waitFor();
         await page.goto(base + route);
         await page.locator(".home-preview__topic-list a").first().click();
         await page.waitForFunction(() => !document.querySelector(".home-preview__picks") && !!document.querySelector(".recipe-result-count"));

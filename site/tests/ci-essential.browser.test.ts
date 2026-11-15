@@ -7,7 +7,7 @@ import { recipeUi } from "../src/features/recipes/recipe-i18n";
 import { siteContent } from "../src/generated/content.generated";
 import { paginateRecipeLibrary, recipeLibraryPagePath, recipeLibraryPageSize } from "../src/features/recipes/recipe-pagination";
 
-const base = "http://127.0.0.1:4192/Reseptit";
+const base = "http://127.0.0.1:4192";
 const routes = ["/", "/en/recipes/", "/sv/recept/", "/th/recipes/"];
 
 test("essential UI smoke: locales, search, a recipe, blog and no-JS navigation", async () => {
@@ -96,14 +96,14 @@ test("essential UI smoke: locales, search, a recipe, blog and no-JS navigation",
         links.map(link => (link as HTMLAnchorElement).pathname));
       assert.equal(initialCards.length, recipeLibraryPageSize);
       const outsideHome = siteContent.recipes.filter(recipe => recipe.locale === locale)
-        .reverse().find(recipe => !initialCards.includes("/Reseptit" + recipe.routePath))!;
+        .reverse().find(recipe => !initialCards.includes(recipe.routePath))!;
       assert.ok(outsideHome);
       await page.locator("#recipe-search").fill(outsideHome.title);
-      await page.locator('.recipe-card__link[href="/Reseptit' + outsideHome.routePath + '"]').waitFor();
+      await page.locator('.recipe-card__link[href="' + outsideHome.routePath + '"]').waitFor();
       await page.goto(base + route);
       const firstRecipeLink = (number: number) => {
         const first = paginateRecipeLibrary(siteContent.recipes, locale, number).items[0];
-        return page.locator('.recipe-card__link[href="/Reseptit' + first.routePath + '"]');
+        return page.locator('.recipe-card__link[href="' + first.routePath + '"]');
       };
       await page.locator(".recipe-library-link a").click();
       await page.waitForURL(base + recipeLibraryPagePath(locale));
@@ -139,9 +139,9 @@ test("essential UI smoke: locales, search, a recipe, blog and no-JS navigation",
     await noJs.goto(base + "/");
     assert.ok(await noJs.locator(".recipe-card__link").count() > 0, "prerendered recipe links");
     await noJs.locator(".recipe-library-link a").click();
-    assert.equal(new URL(noJs.url()).pathname, "/Reseptit" + recipeLibraryPagePath("fi"));
+    assert.equal(new URL(noJs.url()).pathname, recipeLibraryPagePath("fi"));
     await noJs.locator('.recipe-pagination a[rel="next"]').click();
-    assert.equal(new URL(noJs.url()).pathname, "/Reseptit" + recipeLibraryPagePath("fi", 2));
+    assert.equal(new URL(noJs.url()).pathname, recipeLibraryPagePath("fi", 2));
     await noJs.locator(".recipe-card__link").first().click();
     await noJs.locator(".ingredient-list li").first().waitFor();
     await noJs.close();

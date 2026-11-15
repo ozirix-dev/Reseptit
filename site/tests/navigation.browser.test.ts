@@ -4,7 +4,7 @@ import { spawn } from "node:child_process";
 import path from "node:path";
 import { launchBrowser } from "./launch-browser";
 
-const base = "http://127.0.0.1:4182/Reseptit";
+const base = "http://127.0.0.1:4182";
 test("navigation keeps separate menus and restores scroll correctly across all links", async t => {
   const server = spawn(process.execPath, [path.join(import.meta.dirname, "..", "node_modules", "vite", "bin", "vite.js"), "preview", "--host", "127.0.0.1", "--port", "4182", "--strictPort"], { stdio: "pipe" });
   t.after(() => server.kill());

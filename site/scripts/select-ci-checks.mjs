@@ -70,7 +70,6 @@ function fullPlan(paths) {
     runTypecheck: false,
     needsNode: true,
     unitTests: ["*"],
-    publish: false,
   };
 }
 
@@ -95,7 +94,6 @@ function classifyPaths(paths, { forceFull = false, classificationFailed = false,
     runTypecheck: false,
     needsNode: false,
     unitTests: new Set(),
-    publish: false,
   };
   for (const file of normalized) {
     if (file === ".gitignore" && cacheIgnoreOnly) continue;
@@ -284,17 +282,10 @@ function classifyPaths(paths, { forceFull = false, classificationFailed = false,
   return plan;
 }
 
-function applyEventPolicy(plan, eventName, { deploy = false } = {}) {
+function applyEventPolicy(plan, eventName) {
   if (eventName === "push" && plan.needsNode) {
     plan.runBuild = true;
     plan.runStatic = true;
-    plan.publish = true;
-  }
-  if (eventName === "workflow_dispatch" && deploy) {
-    plan.runBuild = true;
-    plan.runStatic = true;
-    plan.needsNode = true;
-    plan.publish = true;
   }
   if (plan.runBuild) {
     plan.runStatic = true;
@@ -348,7 +339,6 @@ function writeGithubOutputs(plan, paths, classificationError) {
         needsNode: "needs_node",
         runContentSync: "run_content_sync",
         runTypecheck: "run_typecheck",
-        publish: "publish",
       }[key]}=${String(value)}`),
     `unit_tests=${Array.isArray(plan.unitTests) ? plan.unitTests.join(" ") : "*"}`,
     `browser_suites=${plan.browserSuites.join(" ")}`,
@@ -375,7 +365,7 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
     forceFull: process.env.FORCE_FULL === "true" || deletedTest,
     classificationFailed: Boolean(classificationError),
     cacheIgnoreOnly,
-  }), process.env.EVENT_NAME, { deploy: process.env.DEPLOY === "true" });
+  }), process.env.EVENT_NAME);
   writeGithubOutputs(plan, paths, classificationError);
   if (classificationError) console.warn(`Path classification failed; full checks selected: ${classificationError}`);
   console.log(JSON.stringify({ ...plan, unitTests: Array.isArray(plan.unitTests) ? plan.unitTests : ["all unit tests"], changedPaths: paths.length }, null, 2));

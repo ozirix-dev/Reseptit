@@ -2,6 +2,10 @@
 import { siteContent } from "../src/generated/content.generated";
 import { expectedPages, inspectPage, inspectDiscovery, inspectNotFound, siteBase } from "./seo-audit";
 
+if (!process.env.RECIPAVO_PREVIEW_ORIGIN || process.env.RECIPAVO_BUILD_TARGET) {
+  throw new Error("Set RECIPAVO_PREVIEW_ORIGIN to the noindex Cloudflare Pages URL to audit");
+}
+
 const findings: unknown[] = [];
 let checked = 0;
 const pages = expectedPages(siteContent.recipes);

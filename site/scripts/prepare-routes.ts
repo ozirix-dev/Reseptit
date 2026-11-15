@@ -87,10 +87,6 @@ export const contentManifest: Record<string, string> = ${JSON.stringify(manifest
 
 const urls = routes.map(route => "  <url><loc>" + (siteTarget.baseUrl + route).replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;") + "</loc></url>").join("\n");
 await writeFile(path.join(publicDir, "sitemap.xml"), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>\n`, "utf8");
-const robots = (siteTarget.basePath === "/Reseptit/"
-  ? "# Project-path robots.txt; host-wide crawling policy is controlled at /robots.txt.\n"
-  : "")
-  + "User-agent: *\nAllow: " + siteTarget.basePath + "\n"
+const robots = "User-agent: *\nAllow: /\n"
   + (siteTarget.noIndex ? "" : "\nSitemap: " + siteTarget.baseUrl + "/sitemap.xml\n");
 await writeFile(path.join(publicDir, "robots.txt"), robots, "utf8");
-await writeFile(path.join(publicDir, ".nojekyll"), "", "utf8");
