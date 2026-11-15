@@ -6,6 +6,14 @@ ole avoinna. Riippumaton ihmistarkistus vaaditaan, jos olennainen
 turvallisuus- tai sisältöepäselvyys jää ratkaisematta. Muut julkaisu- ja
 hyväksyntäehdot määräytyvät projektin normaalin työnkulun mukaan.
 
+## Uuden reseptin kieliversiot
+
+Kun suomenkielinen resepti on toimituksellisesti valmis, valmistele sen
+englannin-, ruotsin- ja thaikieliset käännökset automaattisesti yhtenä eränä
+ilman erillistä käännöspyyntöä. Käytä valmista suomenkielistä reseptiä
+käännösten lähteenä. Ennen julkaisua käy läpi alla olevat käännösten
+tarkistukset ja kirjaa katselmointi.
+
 ## Tarkistus ennen julkaisua
 
 1. Tarkista PR:n automaattiset tulokset. Muuttuneiden reseptien CI-validaatio
