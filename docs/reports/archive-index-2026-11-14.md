@@ -76,6 +76,41 @@ Tämä ei pienennä olemassa olevaa Git-historiaa; historiankirjoitusta ei tehd�
 - Uudet Cloudflare-inventaariot tuotetaan tarvittaessa hyväksytyn, ajantasaisen
   mainin pohjalta. Vanha 2.11.2026 mittaus ei ole tuotantopäätöksen lähtötieto.
 
+## GK-Markdown-erä — 15.11.2026
+
+[Siivous-5:ssä](https://github.com/ozirix-dev/Reseptit/pull/662) tunnistetun
+erän viisi Markdown-näkymää poistetaan aktiivisesta tiedostopuusta
+[PR:ssä #663](https://github.com/ozirix-dev/Reseptit/pull/663). Erän koko
+on 340 180 tavua (0,324 MiB). Alla ovat alkuperäiset tiedostot
+palautuscommitien tarkkuudella.
+
+**Tarkistettu main:** [`4525cd1cd01febc3f9845c5298dc5e5cfc5ae23d`](https://github.com/ozirix-dev/Reseptit/tree/4525cd1cd01febc3f9845c5298dc5e5cfc5ae23d).
+
+| Tiedosto ja palautuscommit | Git-blob | Git-blobin SHA-256 | Tavua |
+| --- | --- | --- | ---: |
+| [`docs/nutrition/glycemic-coverage-batch-2b1-current.md`](https://github.com/ozirix-dev/Reseptit/blob/af92900821259a742c59bb94a9c036cb34536938/docs/nutrition/glycemic-coverage-batch-2b1-current.md) | `480eb8847765c2a48480c559cb47b124c5bdbe03` | `82ec66ebf2759c3c5c01423570f57d8f538f33c72c1faf98a672bfccec1c7c49` | 69437 |
+| [`docs/nutrition/glycemic-coverage-batch-2b5-current.md`](https://github.com/ozirix-dev/Reseptit/blob/27752bf169515271aadcf2cda2a9f84fb54e124b/docs/nutrition/glycemic-coverage-batch-2b5-current.md) | `50fe83c90bf450c0969ff4c1b621fa4350018e5f` | `e2aacdbf5cdaac5b6f9c5816341a605506bb85386dfb6af9c03ab3484fa8781e` | 68078 |
+| [`docs/nutrition/glycemic-coverage-batch-2b6a-current.md`](https://github.com/ozirix-dev/Reseptit/blob/5c0c8b378c7c358556c7799b3840978f4d1f3040/docs/nutrition/glycemic-coverage-batch-2b6a-current.md) | `a321131ad9a0c1752cc96de6ad98bc999d07c350` | `7afe9e2694238c9c4005b7378dbbf709bb44d5f94faaaf1b66ef704b95573070` | 67778 |
+| [`docs/nutrition/glycemic-coverage-batch-2b6b-current.md`](https://github.com/ozirix-dev/Reseptit/blob/87fd76db2f9510a09fd6afc51d1f98230867d8b8/docs/nutrition/glycemic-coverage-batch-2b6b-current.md) | `b13b888c99980cdbfa7989c06b605721285e83dd` | `3fd67a029eb511086f15664bb833e4304d4b9b14897df6418d5e7d580b9161d3` | 67554 |
+| [`docs/nutrition/glycemic-coverage-batch-2b6c-current.md`](https://github.com/ozirix-dev/Reseptit/blob/630ce130c4cc2d01a94eea20c4b12ce452f1531d/docs/nutrition/glycemic-coverage-batch-2b6c-current.md) | `e4676f76462ea57764c5085c836e969c246ffd91` | `8a8b6a2168b0d4fa98c9f55511d1a6f54fff323186b6594d038e5dcc7ec35213` | 67333 |
+
+Palautuscommitit kuuluvat tarkistetun mainin historiaan, ja linkitettyjen
+tiedostojen blobit täsmäävät mainiin. Alkuperäiset tavut saa tarvittaessa
+komennolla `git show <palautuscommit>:<polku>`.
+
+Tarkistetussa mainissa ei ollut viittauksia ehdokkaiden tiedostonimiin,
+blob-SHA:ihin tai SHA-256-tiivisteisiin. GK-pilotin Markdown-haku rajautuu
+`reseptit/`-hakemistoon. Ravintoauditointi luettelee erä- ja
+laskentahakemistot, lähdetiiviste käyttää rajattua syöteluetteloa ja
+julkaisuportit lukevat laskenta- ja hyväksyntäaineistoa. Kattavuusauditoinnin
+ja Run 0 -analyysin vertailuinventaariot ja lähtösnapshotit ovat nimettyjä
+JSON-tiedostoja. Kunkin ehdokkaan rinnalla on versionoitu 325 reseptirivin
+JSON. Päivätty yleisraportti ja 2B6D:n Markdown säilyvät GK-testien fixtuureina.
+
+Repo Guardin `delete-reports` tarkistaa tämän erän haaran ja lähtö-HEADin,
+kaikki viisi Git-blobia sekä työpuun tiedostojen SHA-256-tiivisteet.
+Poistodiffi kuuluu GK-regressioiden ja kattavuusauditoinnin piiriin.
+
 ## Paikallisten työpuiden erillinen siivous
 
 GitHubissa tehtävä PR **ei voi poistaa käyttäjän Windows-koneella sijaitsevia
