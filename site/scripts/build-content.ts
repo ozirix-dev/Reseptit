@@ -21,6 +21,7 @@ import { contentForRoute } from "../src/content/route-data";
 import { createAssistantCatalog } from "../src/features/assistant/catalog";
 import { mkdir, readdir, readFile, writeFile, rm } from "node:fs/promises";
 import path from "node:path";
+import { fileURLToPath } from "node:url";
 import { parseMarkdown, renderSafeMarkdown, renderInstructionSteps } from "../src/content/markdown";
 import { assertQuantifiedCriticalIngredients, assertUniqueRecipes, assertSnackPublicationReady } from "../src/content/recipe-validation";
 import { recipeFrontmatterSchema } from "../src/content/schema";
@@ -89,7 +90,7 @@ function recipeDescription(markdown: string, descriptionSection: string, locale:
 
 
 /** Temporary public presentation guard. Do not edit protected nutrition-bound source for safety copy. */
-function publicSafetyHold(recipeId: string, locale: RecipeLocale): { description: string; instructions: string } | null {
+export function publicSafetyHold(recipeId: string, locale: RecipeLocale): { description: string; instructions: string } | null {
   if (recipeId !== "karibia-ackee-ja-suolakala") return null;
   const source = "https://www.fda.gov/food/natural-toxins-food/hypoglycin-and-ackee-fruit";
   const copy: Record<RecipeLocale, { description: string; instructions: string }> = {
@@ -131,7 +132,7 @@ const editorialProjections = [
   projectC13FiDisplay,
 ];
 
-function projectPublishedMarkdown(relativePath: string, canonical: string): string {
+export function projectPublishedMarkdown(relativePath: string, canonical: string): string {
   return editorialProjections.reduce((text, project) => project(relativePath, text), canonical);
 }
 
@@ -290,4 +291,6 @@ export const contentManifest: Record<string, string> = ${JSON.stringify(manifest
   console.log(`Built ${recipes.length} published recipe translations from local Markdown.`);
 }
 
-await main();
+if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+  await main();
+}

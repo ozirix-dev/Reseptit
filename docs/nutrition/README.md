@@ -4,13 +4,29 @@ Toimituksellinen, paikallinen laskentatyökalu. Sivuston build ja tiukka
 ravintoarvoauditointi varmistavat, että julkaistut luvut vastaavat dokumentoitua
 laskentaa.
 
-Suorita `site/`-kansiossa `npm run audit:nutrition`.
-Tuloksena on `tmp/nutrition/audit.json`: kaikkien julkaistujen FI-lähteiden
-inventaariorivit ja kolmen keskeneräisen pilotin aineskohtaiset puutteet. `--snapshot`
-tallentaa tarkistuskierroksen tuloksen tähän hakemistoon. Auditointikuva
-päivitettiin 24.10.2026, ja laskentamuistiot sekä Fineli- ja AFCD-
-viiteaineistot sisältyvät lähdetiivisteeseen. Uudet irralliset
-laskentamuistiot pitää lisätä lähteiden inventaarioon erikseen.
+Suorita tavallinen tarkistus `site/`-kansiossa komennolla
+`npm run audit:nutrition -- --strict`. Raportti syntyy repon juuren alle
+polkuun `tmp/nutrition/audit.json`. Kun päivität versionhallittua
+auditointisnapshotia tarkoituksella, aja
+`npm run audit:nutrition -- --strict --snapshot`. Tällöin raportti kirjoitetaan
+polkuun `docs/nutrition/audit.json`.
+
+Aja tuoreessa työpuussa ensin `npm run content:sync`, jotta GK-auditoinnin
+käyttämä sisältö on generoitu. `npm run audit:glycemic-load` kirjoittaa
+GK-raportin polkuun `tmp/nutrition/glycemic-load-pilot.json`.
+`npm run audit:glycemic-coverage` lukee tuoreen GK-raportin ja ravintoauditoinnin
+`tmp/nutrition/audit.json`-raportin. Se kirjoittaa tulokset repon juuren alle
+polkuihin `tmp/nutrition/glycemic-coverage/current.json` ja
+`tmp/nutrition/glycemic-coverage/current.md`.
+
+Voit antaa omat tulostepolut repon juureen suhteutettuina valinnoilla
+`--output-json` ja `--output-markdown` saman
+`tmp/nutrition/glycemic-coverage/`-hakemiston alta. Versionoidut päivätyt
+ja eräkohtaiset kattavuusraportit ovat historiallisia tilannekuvia.
+
+Laskentamuistiot sekä Fineli- ja AFCD-viiteaineistot sisältyvät
+lähdetiivisteeseen. Uudet irralliset laskentamuistiot pitää lisätä lähteiden
+inventaarioon erikseen.
 
 `food-records.json` sisältää vain käytetyn pienen lähdeotoksen.
 `nutrition-model.ts` erottaa lähdetietueen, ainesmäärän, tuotteen vastaavuuden,
