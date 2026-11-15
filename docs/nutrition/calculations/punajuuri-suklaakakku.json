@@ -1,0 +1,192 @@
+{
+  "recipeId": "punajuuri-suklaakakku",
+  "sourceHash": "2664644570e0223380dbc5d738f46e4820332df0cfdfac9c0db9ded5ae32c0d7",
+  "calculatedAt": "2026-11-15",
+  "batchId": "batch-574",
+  "servings": 10,
+  "scope": "Recipe ingredient accounting using cited Fineli, AFCD or USDA reference composition. No measured cooked yield.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "publicationStatus": "WITHHELD_SOURCE_INCOMPLETE",
+  "withholdingReason": "Hunajan ja leivinjauheen polyoleille ei ole lähdearvoa. Mantelijauhon lähde vastaa täysrasvaista jauhettua mantelia.",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "amount": 300,
+      "unit": "g",
+      "item": "keitettyä punajuurta",
+      "record": {
+        "id": "fineli-30382",
+        "name": "PUNAJUURI, KEITETTY, SUOLATON",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/30382",
+        "retrievedAt": "2026-11-15",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "boiled, drained beetroot without salt",
+        "basis": "per100g-prepared",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 8.163,
+          "fibre": 2.551,
+          "polyols": 0.0,
+          "protein": 1.43,
+          "fat": 0.102
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Reported sugar alcohol value in pinned Fineli Release 20."
+      },
+      "state": "boiled, drained beetroot without salt",
+      "matchEvidence": "Generic cooked unsalted beetroot. The peel can be retained if tender.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Charged mass represents the edible ingredient.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Charged-mass estimate; uses full retention. No cooked yield or measured losses."
+    },
+    {
+      "amount": 200,
+      "unit": "g",
+      "item": "kananmunaa ilman kuorta",
+      "record": {
+        "id": "fineli-858",
+        "name": "KANANMUNA, KUORETON",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/858",
+        "retrievedAt": "2026-11-15",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "raw whole egg without shell",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 0.3,
+          "fibre": 0.0,
+          "polyols": 0.0,
+          "protein": 12.61,
+          "fat": 9.24
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Reported sugar alcohol value in pinned Fineli Release 20."
+      },
+      "state": "raw whole egg without shell",
+      "matchEvidence": "Shell-free eggs are weighed.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Charged mass represents the edible ingredient.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Charged-mass estimate; uses full retention. No cooked yield or measured losses."
+    },
+    {
+      "amount": 192,
+      "unit": "g",
+      "item": "hienoa mantelijauhoa",
+      "record": {
+        "id": "fineli-379",
+        "name": "MANTELI",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/379",
+        "retrievedAt": "2026-11-15",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "finely ground whole almonds",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 6.6,
+          "fibre": 7.2,
+          "polyols": 0.0,
+          "protein": 24.06,
+          "fat": 51.24
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Reported sugar alcohol value in pinned Fineli Release 20."
+      },
+      "state": "finely ground whole almonds",
+      "matchEvidence": "Generic almonds are a proxy for full-fat, finely ground almond flour.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Charged mass represents the edible ingredient.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Charged-mass estimate; uses full retention. No cooked yield or measured losses."
+    },
+    {
+      "amount": 42,
+      "unit": "g",
+      "item": "makeuttamatonta kaakaojauhetta",
+      "record": {
+        "id": "fineli-20",
+        "name": "KAAKAOJAUHE, EI LISÄTTYÄ SOKERIA",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/20",
+        "retrievedAt": "2026-11-15",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "dry unsweetened cocoa powder",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 11.0,
+          "fibre": 30.4,
+          "polyols": 0.0,
+          "protein": 18.5,
+          "fat": 21.7
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Reported sugar alcohol value in pinned Fineli Release 20."
+      },
+      "state": "dry unsweetened cocoa powder",
+      "matchEvidence": "Generic unsweetened cocoa powder.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Charged mass represents the edible ingredient.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Charged-mass estimate; uses full retention. No cooked yield or measured losses."
+    },
+    {
+      "amount": 168,
+      "unit": "g",
+      "item": "juoksevaa hunajaa",
+      "record": {
+        "id": "fineli-4",
+        "name": "HUNAJA",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/4",
+        "retrievedAt": "2026-11-15",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "honey as sold",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 80.8,
+          "fibre": 0.0,
+          "polyols": null,
+          "protein": 0.5,
+          "fat": 0.0
+        },
+        "polyolsSourceVerified": false
+      },
+      "state": "honey as sold",
+      "matchEvidence": "Generic honey used as a proxy for runny honey.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Charged mass represents the edible ingredient.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Charged-mass estimate; uses full retention. No cooked yield or measured losses."
+    },
+    {
+      "amount": 4,
+      "unit": "g",
+      "item": "leivinjauhetta",
+      "record": {
+        "id": "fineli-74",
+        "name": "LEIVINJAUHE",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/74",
+        "retrievedAt": "2026-11-15",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "dry baking powder",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 37.8,
+          "fibre": 0.5,
+          "polyols": null,
+          "protein": 5.2,
+          "fat": 0.0
+        },
+        "polyolsSourceVerified": false
+      },
+      "state": "dry baking powder",
+      "matchEvidence": "Generic baking powder; composition varies by brand.",
+      "edibleFraction": 1,
+      "edibleEvidence": "Charged mass represents the edible ingredient.",
+      "retainedFraction": 1,
+      "retentionEvidence": "Charged-mass estimate; uses full retention. No cooked yield or measured losses."
+    }
+  ]
+}

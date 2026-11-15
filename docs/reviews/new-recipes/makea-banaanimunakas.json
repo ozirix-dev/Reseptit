@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "recipe_id": "makea-banaanimunakas",
+  "source_path": "reseptit/aamupalat/makea-banaanimunakas.md",
+  "source_sha256": "50b359af852b04962c613129254c177a91ae06b16c4f3ac0df198a009c511677",
+  "decision": "approved",
+  "reviewed_by": "Codex – kirjallinen toimituksellinen katselmointi",
+  "reviewed_at": "2026-11-15",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.facebook.com/reel/1111232558038849",
+      "https://www.cookwithbenchi.com/banana-omelet/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/makea-banaanimunakas.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Otsikko, reseptitunniste ja Reel etsittiin päähaaran resepteistä. Samalle reseptille ei löytynyt julkista lähdettä."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Reel vahvistaa yhden banaanin, kaksi munaa, kanelin ja vaniljan. Vaniljauute on sovitus jauheesta. Öljy, mustikat ja hunaja sisältyvät tarjottuun annokseen."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Cook with Benchin vastaava banaanimunakas tukee banaanin ja munan paistamista mausteilla. Mieto lämpö ja kansi kypsentävät yhden tasaiseksi levitetyn munakkaan läpi ennen taittoa."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Munakkaan pinnan annetaan hyytyä kauttaaltaan ennen taittoa. Muna ilmoitetaan allergeenina. Mustikat ovat tuoreita."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Yksi banaani ja kaksi kananmunaa muodostavat yhden noin 20 cm:n pannulla paistettavan annoksen. 15 minuuttia sisältää sekoituksen ja tarjoilun."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Vaniljauutteen, kanelin, mustikoiden ja hunajan polyolitietoa puuttuu ja paistoöljyn toteutunutta määrää ei mitattu. Ainesrivit sidottiin määrien ja annoskoon mukaan, julkisia makroja ei anneta."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Valmiille reseptille ei ole hyväksyttyä GI-lähdettä. Julkaisussa ei näytetä numeerista GK:ta."
+    }
+  },
+  "supplementary_evidence": {
+    "food_safety": [
+      "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
+    ],
+    "image_path": "kuvat/aamupalat/makea-banaanimunakas.webp",
+    "image_sha256": "e619f7585cf9b1ac9250c2c214fe6c7a1d2b9fd0324d1e509182f1d82ef7e57b",
+    "image_review": "Näyttökaappauksen pohjalta tehty havainnekuvitus vastaa reseptin tarjoilua.",
+    "physical_cook_test": false
+  }
+}
