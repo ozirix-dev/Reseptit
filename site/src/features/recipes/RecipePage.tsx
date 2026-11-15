@@ -18,6 +18,7 @@ import { sourceReviewNotice } from "./source-review-notices";
 import { withholdF25Nutrition, f25ExplicitUndefinedGkLabel } from "./f25-nutrition-withhold";
 
 import { track } from "@/features/privacy/analytics";
+import { articles, articlePath } from "@/features/blog/blog-data";
 
 function RecipeHeroImage({ image }: { image: RecipeImage }) {
   const [avifFailed, setAvifFailed] = useState(false);
@@ -48,6 +49,9 @@ export function RecipePage() {
   const tools = toolUi[locale];
   useEffect(() => { setHydrated(true); setServings(recipe?.servings ?? 1); setCompleted([]); }, [recipe?.recipeId, recipe?.locale]);
   if (!recipe) return <section className="page-section"><div className="container container--narrow"><h1>{labels.notFound}</h1><p><Link to={recipeIndexPath(locale)}>{labels.backToRecipes}</Link></p></div></section>;
+  const relatedGuides = recipe.locale === "fi"
+    ? articles.filter(article => article.related.some(link => link.path === recipe.routePath))
+    : [];
   const originalReviewNotice = recipe.locale === "fi" ? sourceReviewNotice(recipe.recipeId) : null;
   // Keep the SHA-sealed historic FI recipe and the shared F25 B1 notice source
   // unchanged. The editorial time estimate belongs to this public view only.
@@ -138,6 +142,10 @@ export function RecipePage() {
         variant={variant} locale={recipe.locale} servings={servings} originalHasGk={Boolean(glycemicLoad)} originalRecipe={recipe} />)}
       <ChocolateComparison recipeId={recipe.recipeId} locale={recipe.locale} hasGlVariant={hasGkVariant} />
       {recipe.notesHtml ? <section className="recipe-panel"><h2>{labels.notes}</h2><div className="rich-text" dangerouslySetInnerHTML={{ __html: recipe.notesHtml }} /></section> : null}
+      {relatedGuides.length > 0 && <section className="recipe-panel" aria-labelledby="related-guides-title">
+        <h2 id="related-guides-title">Aiheesta Ruokaoppaassa</h2>
+        <ul>{relatedGuides.map(article => <li key={article.slug}><Link to={articlePath(article)}>{article.title}</Link></li>)}</ul>
+      </section>}
     </div>
   </div></article>;
 }

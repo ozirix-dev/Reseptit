@@ -40,6 +40,12 @@ test("branded HTML keeps the target indexing policy, search and library working 
       if (production) assert.equal(await noJs.locator('meta[name="robots"]').count(), 0);
       else assert.match(await noJs.locator('meta[name="robots"]').getAttribute("content") ?? "", /noindex\s*,\s*nofollow/);
       assert.equal(await noJs.locator('link[rel="canonical"]').count(), 1);
+      if (production && locale === "fi") {
+        const website = await noJs.locator("#website-jsonld").textContent();
+        assert.deepEqual(JSON.parse(website!), {
+          "@context": "https://schema.org", "@type": "WebSite", name: "Recipavo", url: "https://www.recipavo.com/",
+        });
+      }
       if (homePicksExpected) {
         assert.equal(await noJs.locator(".home-preview__picks > .recipe-card-grid .recipe-card").count(), 9, locale);
         await noJs.locator(".recipe-library-link a").click();
@@ -58,7 +64,7 @@ test("branded HTML keeps the target indexing policy, search and library working 
         ({ title, production }) => document.title === title && (production
           ? !document.querySelector('meta[name="robots"]')
           : /noindex\s*,\s*nofollow/.test(document.querySelector('meta[name="robots"]')?.getAttribute("content") ?? "")),
-        { title: recipavoHeroCopy[locale].title + " | Recipavo", production },
+        { title: recipavoHeroCopy[locale].tagline + " | Recipavo", production },
       );
       assert.equal(await page.locator("h1").textContent(), recipavoHeroCopy[locale].title);
       assert.equal(await page.locator("html").getAttribute("lang"), locale);
@@ -116,6 +122,15 @@ test("branded HTML keeps the target indexing policy, search and library working 
       ? !document.querySelector('meta[name="robots"]')
       : /noindex\s*,\s*nofollow/.test(document.querySelector('meta[name="robots"]')?.getAttribute("content") ?? ""), production);
     assert.ok(await fi.getByRole("heading", { name: "Ruokaopas", exact: true }).count());
+    await fi.getByRole("link", { name: /Pad thai kotona/ }).click();
+    await fi.getByRole("link", { name: "VHH-pad thai katkaravuilla ja konjaknuudeleilla" }).click();
+    await fi.waitForFunction(() => document.title === "VHH-pad thai katkaravuilla ja konjaknuudeleilla | Recipavo");
+    const description = "Valmista VHH-pad thai katkaravuista ja konjaknuudeleista. Kuivapaista nuudelit ennen wokkausta, jotta niistä haihtuu ylimääräinen neste.";
+    for (const selector of ['meta[name="description"]', 'meta[property="og:description"]', 'meta[name="twitter:description"]']) {
+      assert.equal(await fi.locator(selector).getAttribute("content"), description);
+    }
+    await fi.getByRole("link", { name: /Pad thai kotona/ }).click();
+    await fi.waitForFunction(() => document.title === "Pad thai kotona: mitkä ainekset tekevät siitä pad thain? | Recipavo");
     await fi.close();
     assert.deepEqual(errors, []);
   } finally {

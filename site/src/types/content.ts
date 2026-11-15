@@ -62,6 +62,7 @@ export interface RecipeEntry {
   routePath: string;
   image: RecipeImage | null;
   description: string;
+  seoDescription?: string;
   ingredients: RecipeIngredient[];
   instructionsHtml: string;
   instructionStepsHtml?: string[] | null;

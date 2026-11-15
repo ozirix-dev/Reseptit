@@ -59,6 +59,10 @@ export const moreBlogPosts: BlogPost[] = [
     ],
     "related": [
       {
+        "title": "Briossisämpylät tangzhongilla",
+        "path": "/briossisampylat-joshua-weissman/"
+      },
+      {
         "title": "Briossisämpylän viisi vaihetta",
         "path": "/ruokaopas/briossisampylan-onnistuminen/"
       }
@@ -119,6 +123,10 @@ export const moreBlogPosts: BlogPost[] = [
     ],
     "related": [
       {
+        "title": "VHH-pad thai katkaravuilla ja konjaknuudeleilla",
+        "path": "/pad-thai-vhh-konjac/"
+      },
+      {
         "title": "Thaimaalaisten raaka-aineiden korvaaminen Suomessa",
         "path": "/ruokaopas/thaimaalaiset-raaka-aineet-suomessa/"
       }
@@ -178,6 +186,10 @@ export const moreBlogPosts: BlogPost[] = [
       }
     ],
     "related": [
+      {
+        "title": "Karjalanpiirakat riisipuurolla",
+        "path": "/karjalanpiirakat-riisipuurolla/"
+      },
       {
         "title": "Annoskoon mittaaminen käytännössä",
         "path": "/ruokaopas/annoskoon-mittaaminen/"
@@ -419,6 +431,14 @@ export const moreBlogPosts: BlogPost[] = [
     ],
     "related": [
       {
+        "title": "Keto-kauralesesämpylät",
+        "path": "/keto-kauralesesampylat/"
+      },
+      {
+        "title": "VHH-kaalilaatikko ilman riisiä",
+        "path": "/vhh-kaalilaatikko/"
+      },
+      {
         "title": "GI ja GK – miksi annoskoko ratkaisee?",
         "path": "/ruokaopas/glykeeminen-indeksi-ja-kuorma/"
       }
@@ -478,6 +498,14 @@ export const moreBlogPosts: BlogPost[] = [
       }
     ],
     "related": [
+      {
+        "title": "Pizza margherita hiivataikinasta",
+        "path": "/pizza-margherita/"
+      },
+      {
+        "title": "Raejuustopizza kaurajauhopohjalla",
+        "path": "/raejuustopizza-kaurajauhopohjalla/"
+      },
       {
         "title": "Pizzapohjareseptit haussa",
         "path": "/"
@@ -539,6 +567,14 @@ export const moreBlogPosts: BlogPost[] = [
     ],
     "related": [
       {
+        "title": "Panang-curry kanalla",
+        "path": "/panang-curry-kanalla-vhh/"
+      },
+      {
+        "title": "VHH-khao soi konjaknuudeleilla",
+        "path": "/khao-soi-vhh-konjac/"
+      },
+      {
         "title": "Pad thai kotona – olennaiset ainekset",
         "path": "/ruokaopas/pad-thai-ainesosat/"
       }
@@ -598,6 +634,10 @@ export const moreBlogPosts: BlogPost[] = [
       }
     ],
     "related": [
+      {
+        "title": "Kermainen lohipata ja sen ravintoarvio",
+        "path": "/kermainen-lohipata/"
+      },
       {
         "title": "Miksi ravintolaskurit poikkeavat toisistaan?",
         "path": "/ruokaopas/ravintoarvolaskurit-eri-tulokset/"

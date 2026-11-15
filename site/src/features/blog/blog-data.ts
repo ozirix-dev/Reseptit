@@ -1,4 +1,5 @@
 import { moreBlogPosts } from "./blog-more";
+import { siteName } from "../../content/site-metadata";
 import { siteTarget } from "../../content/site-target";
 
 export interface BlogSection {
@@ -172,7 +173,7 @@ export function blogJsonLd(post: BlogPost) {
     datePublished: post.datePublished,
     dateModified: post.dateModified,
     author: { "@type": "Organization", name: post.author },
-    publisher: { "@type": "Organization", name: "Reseptit" },
+    publisher: { "@type": "Organization", name: siteName },
     mainEntityOfPage: `${siteBase}${post.routePath}`
   };
 }

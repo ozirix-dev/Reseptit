@@ -71,3 +71,25 @@ test("Ruokaopas menu remains reachable across all four language indexes", async 
   assert.ok(html.includes('href="/Reseptit/ruokaopas/"'), route);
  }
 });
+
+test("related recipes and their Finnish guides link back to each other in static HTML", async () => {
+  const pairs = [
+    ["/ruokaopas/pad-thai-ainesosat/", "/pad-thai-vhh-konjac/"],
+    ["/ruokaopas/hiivataikina-ei-kohoa/", "/briossisampylat-joshua-weissman/"],
+    ["/ruokaopas/riisin-keitto-eri-lajikkeet/", "/karjalanpiirakat-riisipuurolla/"],
+    ["/ruokaopas/keto-vhh-ero/", "/keto-kauralesesampylat/"],
+    ["/ruokaopas/keto-vhh-ero/", "/vhh-kaalilaatikko/"],
+    ["/ruokaopas/pizzapohjien-vertailu/", "/pizza-margherita/"],
+    ["/ruokaopas/pizzapohjien-vertailu/", "/raejuustopizza-kaurajauhopohjalla/"],
+    ["/ruokaopas/thaimaalaiset-raaka-aineet-suomessa/", "/panang-curry-kanalla-vhh/"],
+    ["/ruokaopas/thaimaalaiset-raaka-aineet-suomessa/", "/khao-soi-vhh-konjac/"],
+    ["/ruokaopas/ravintoarvio-epavarmuus/", "/kermainen-lohipata/"],
+  ];
+  for (const [guide, recipe] of pairs) {
+    const [guideHtml, recipeHtml] = await Promise.all([guide, recipe].map(route =>
+      readFile(path.join(dist, route.slice(1), "index.html"), "utf8")));
+    assert.ok(guideHtml.includes(`href="/Reseptit${recipe}"`), guide);
+    assert.match(recipeHtml, /<h2 id="related-guides-title">Aiheesta Ruokaoppaassa<\/h2>/);
+    assert.ok(recipeHtml.includes(`href="/Reseptit${guide}"`), recipe);
+  }
+});

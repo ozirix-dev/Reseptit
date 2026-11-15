@@ -1,12 +1,13 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { recipeJsonLd } from "@/features/recipes/schema";
-import { libraryCopy, libraryTitle } from "@/features/recipes/home-preview";
+import { librarySeoDescription, libraryTitle } from "@/features/recipes/home-preview";
 import { isRecipavoHeroEnabled, isRecipavoHeroPreviewEnabled, recipavoHeroCopy } from "@/features/recipes/recipavo-hero";
 import { glycemicLoadMeta, recipeLocaleFromPath, recipeUi } from "@/features/recipes/recipe-i18n";
 import { useContent } from "@/lib/content";
 import { articles, articlePath, blogRoot, blogPosts, blogJsonLd } from "@/features/blog/blog-data";
 import type { RecipeLocale } from "@/types/content";
+import { siteName, siteTitle, websiteJsonLd } from "@/content/site-metadata";
 import { siteTarget } from "@/content/site-target";
 import { privacyCopy, privacyLocaleFromPath, privacyPaths } from "@/features/privacy/privacy-copy";
 
@@ -37,7 +38,7 @@ function normalizeRoutePath(path: string): string {
 export function SeoMeta() {
   const { pathname } = useLocation();
 
-  const { recipe, translations, locales, pagination } = useContent();
+  const { recipe, recipes, translations, locales, pagination } = useContent();
 
   useEffect(() => {
     const normalizedPath = normalizeRoutePath(pathname);
@@ -55,15 +56,23 @@ export function SeoMeta() {
     const branded = isRecipavoHeroEnabled();
     // Keep unknown deep links' metadata in the same locale as the visible not-found page.
     const locale = privacyLocale ?? recipe?.locale ?? pagination?.locale ?? methodLocale ?? (isBlog ? "fi" : routeLocale) ?? recipeLocaleFromPath(pathname);
-    const title = pagination ? libraryTitle(locale, pagination.page) : privacy ? `${privacy.title} | Recipavo` : branded && indexExists ? `${recipavoHeroCopy[locale].title} | Recipavo` : blogPost ? `${blogPost.title} | Ruokaopas` : blogIndex ? "Ruokaopas | Reseptit" : isPilotPage ? glycemicLoadMeta[locale].title : known
-      ? recipe ? `${recipe.title} | ${titleByLocale[locale]}` : `${titleByLocale[locale]} | Ozirix`
-      : `${recipeUi[locale].notFound} | ${titleByLocale[locale]}`;
-    const description = (pagination ? libraryCopy[locale].description : undefined) ?? privacy?.description ?? (branded && indexExists ? recipavoHeroCopy[locale].intro : blogPost?.description ?? (blogIndex ? "Ruoanlaiton tekniikoita ja luotettavaa ravitsemustietoa." : undefined) ?? (isPilotPage ? glycemicLoadMeta[locale].description : recipe?.description || (!known ? recipeUi[locale].notFound : recipeUi[locale].intro)));
+    const title = pagination ? libraryTitle(locale, pagination.page)
+      : isPilotPage ? glycemicLoadMeta[locale].title
+      : siteTitle(privacy?.title ?? blogPost?.title ?? (blogIndex ? "Ruokaopas" : undefined)
+        ?? (branded && indexExists ? recipavoHeroCopy[locale].tagline : undefined)
+        ?? recipe?.title ?? (known ? titleByLocale[locale] : recipeUi[locale].notFound));
+    const description = (pagination ? librarySeoDescription(locale, pagination.page, recipes) : undefined)
+      ?? privacy?.description ?? blogPost?.description
+      ?? (blogIndex ? "Ruoanlaiton tekniikoita ja luotettavaa ravitsemustietoa." : undefined)
+      ?? (branded && indexExists ? recipavoHeroCopy[locale].intro : undefined)
+      ?? (isPilotPage ? glycemicLoadMeta[locale].description : undefined)
+      ?? (recipe?.seoDescription || recipe?.description || (known ? recipeUi[locale].intro : recipeUi[locale].notFound));
     const canonical = pagination ? siteBase + pagination.canonicalPath : privacyLocale ? `${siteBase}${privacyPaths[privacyLocale]}` : blogPost ? `${siteBase}${articlePath(blogPost)}` : blogIndex ? `${siteBase}${blogRoot}` : isPilotPage ? `${siteBase}${methodPaths[locale]}` : recipe ? `${siteBase}${recipe.routePath}` : indexExists ? `${siteBase}${indexPath(locale)}` : null;
     document.title = title;
     document.documentElement.lang = locale;
     upsertMeta("name", "description", description);
     upsertMeta("property", "og:title", title);
+    upsertMeta("property", "og:site_name", siteName);
     upsertMeta("property", "og:description", description);
     upsertMeta("property", "og:type", recipe || blogPost ? "article" : "website");
     upsertMeta("property", "og:locale", openGraphLocale[locale]);
@@ -71,7 +80,7 @@ export function SeoMeta() {
     upsertMeta("name", "twitter:card", recipe?.image || blogPost ? "summary_large_image" : "summary");
     upsertMeta("name", "twitter:title", title);
     upsertMeta("name", "twitter:description", description);
-    document.head.querySelectorAll('link[rel="canonical"], link[rel="alternate"][hreflang], meta[property="og:image"], meta[name="twitter:image"], script#recipe-jsonld, script#blog-jsonld, meta[name="robots"]').forEach((element) => element.remove());
+    document.head.querySelectorAll('link[rel="canonical"], link[rel="alternate"][hreflang], meta[property="og:image"], meta[name="twitter:image"], script#recipe-jsonld, script#blog-jsonld, script#website-jsonld, meta[name="robots"]').forEach((element) => element.remove());
     if (isRecipavoHeroPreviewEnabled() || siteTarget.noIndex) upsertMeta("name", "robots", "noindex,nofollow");
     else if (!known) upsertMeta("name", "robots", "noindex,follow");
     if (canonical) {
@@ -113,6 +122,13 @@ export function SeoMeta() {
       script.textContent = JSON.stringify(blogJsonLd(blogPosts.find(post => post.slug === blogPost.slug)!));
       document.head.append(script);
     }
+    if (siteTarget.production && pathname === "/") {
+      const script = document.createElement("script");
+      script.id = "website-jsonld";
+      script.type = "application/ld+json";
+      script.textContent = JSON.stringify(websiteJsonLd(siteBase + "/"));
+      document.head.append(script);
+    }
     if (recipe?.image) {
       const script = document.createElement("script");
       script.id = "recipe-jsonld";
@@ -120,7 +136,7 @@ export function SeoMeta() {
       script.textContent = JSON.stringify(recipeJsonLd(recipe));
       document.head.append(script);
     }
-  }, [pathname, recipe, translations, locales, pagination]);
+  }, [pathname, recipe, recipes, translations, locales, pagination]);
 
   return null;
 }

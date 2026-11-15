@@ -381,10 +381,10 @@ test("GI proxy matches remain visibly low confidence and incomplete totals are w
 
 test("localized central GL pages render complete SEO metadata with canonical and hreflang links", async () => {
   const pages = [
-    { route: "glykeeminen-kuorma", locale: "fi", ogLocale: "fi_FI", title: "Reseptien glykeeminen kuorma (GK) | Reseptit", description: "Löydä reseptien glykeemisen kuorman (GK) arviot, luotettavuustiedot ja tarvittaessa tarkat laskentalähteet.", canonical: "https://ozirix-dev.github.io/Reseptit/glykeeminen-kuorma/" },
-    { route: "en/glycemic-load", locale: "en", ogLocale: "en_GB", title: "Glycemic load (GL) of recipes | Recipes", description: "Explore calculated glycemic load estimates for recipes, their reliability and detailed sources.", canonical: "https://ozirix-dev.github.io/Reseptit/en/glycemic-load/" },
-    { route: "sv/glykemisk-belastning", locale: "sv", ogLocale: "sv_SE", title: "Receptens glykemiska belastning (GL) | Recept", description: "Hitta uppskattningar av receptens glykemiska belastning, säkerhet och detaljerade källor.", canonical: "https://ozirix-dev.github.io/Reseptit/sv/glykemisk-belastning/" },
-    { route: "th/glycemic-load", locale: "th", ogLocale: "th_TH", title: "ค่าภาระน้ำตาลในเลือด (GL) ของสูตรอาหาร | สูตรอาหาร", description: "ค้นหาค่าภาระน้ำตาลในเลือด (GL) ของสูตรอาหาร พร้อมระดับความน่าเชื่อถือและแหล่งข้อมูลการคำนวณ", canonical: "https://ozirix-dev.github.io/Reseptit/th/glycemic-load/" },
+    { route: "glykeeminen-kuorma", locale: "fi", ogLocale: "fi_FI", title: "Reseptien glykeeminen kuorma (GK) | Recipavo", description: "Löydä reseptien glykeemisen kuorman (GK) arviot, luotettavuustiedot ja tarvittaessa tarkat laskentalähteet.", canonical: "https://ozirix-dev.github.io/Reseptit/glykeeminen-kuorma/" },
+    { route: "en/glycemic-load", locale: "en", ogLocale: "en_GB", title: "Glycemic load (GL) of recipes | Recipavo", description: "Explore calculated glycemic load estimates for recipes, their reliability and detailed sources.", canonical: "https://ozirix-dev.github.io/Reseptit/en/glycemic-load/" },
+    { route: "sv/glykemisk-belastning", locale: "sv", ogLocale: "sv_SE", title: "Receptens glykemiska belastning (GL) | Recipavo", description: "Hitta uppskattningar av receptens glykemiska belastning, säkerhet och detaljerade källor.", canonical: "https://ozirix-dev.github.io/Reseptit/sv/glykemisk-belastning/" },
+    { route: "th/glycemic-load", locale: "th", ogLocale: "th_TH", title: "ค่าภาระน้ำตาลในเลือด (GL) ของสูตรอาหาร | Recipavo", description: "ค้นหาค่าภาระน้ำตาลในเลือด (GL) ของสูตรอาหาร พร้อมระดับความน่าเชื่อถือและแหล่งข้อมูลการคำนวณ", canonical: "https://ozirix-dev.github.io/Reseptit/th/glycemic-load/" },
   ];
   for (const page of pages) {
     const html = await readFile(path.join(dist, page.route, "index.html"), "utf8");

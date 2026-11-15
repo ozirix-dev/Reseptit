@@ -1,3 +1,4 @@
+import { siteTitle } from "../../content/site-metadata";
 import type { RecipeSummary } from "@/content/route-data";
 import type { RecipeLocale } from "@/types/content";
 import { recipeMatchesCategory } from "@/content/recipe-categories";
@@ -81,5 +82,16 @@ export const libraryCopy = {
 
 export function libraryTitle(locale: RecipeLocale, page: number): string {
   const labels = libraryCopy[locale];
-  return labels.title + (page > 1 ? " – " + labels.page + " " + page : "") + " | Recipavo";
+  return siteTitle(labels.title + (page > 1 ? " – " + labels.page + " " + page : ""));
+}
+
+export function librarySeoDescription(locale: RecipeLocale, page: number, recipes: readonly { title: string }[]): string {
+  const examples = recipes.slice(0, 2).map(recipe => recipe.title).join(", ");
+  if (!examples) return libraryCopy[locale].description;
+  return {
+    fi: `Suomenkielisen reseptikirjaston sivu ${page}. Tältä sivulta löydät esimerkiksi: ${examples}.`,
+    en: `Page ${page} of the English recipe library. Recipes on this page include ${examples}.`,
+    sv: `Sida ${page} i det svenska receptbiblioteket. Här hittar du bland annat ${examples}.`,
+    th: `คลังสูตรอาหารภาษาไทย หน้า ${page} ตัวอย่างเมนูในหน้านี้ ได้แก่ ${examples}`,
+  }[locale];
 }
