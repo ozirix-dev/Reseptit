@@ -25,6 +25,24 @@ Aamupalat ja välipalat ovat omia selailukategorioita. `reseptit/valipalat/`
 `status: draft` -tilassa eikä niitä julkaista automaattisesti.
 Ruokavalioluokka ja tagit tallennetaan metatietoihin.
 Pelkkä `status: published` ei ohita karanteenia, lähde- tai hyväksyntäportteja.
+
+Reseptillä on edelleen yksi **pääkategoria** (`category`). Samaa reseptiä voi
+näyttää muissakin kategorioissa lisäämällä suomenkielisen lähteen metatietoihin
+`additional_categories`-listan. Esimerkiksi:
+
+```yaml
+category: alkuruoka
+additional_categories:
+  - aamupala
+  - valipala
+```
+
+Lisäkategoriat eivät saa toistaa pääkategoriaa tai toisiaan. Build kopioi
+lisäkategoriat FI-lähteestä julkaistuihin EN/SV/TH-kieliversioihin; niiden
+ei tarvitse ylläpitää erillistä listaa. Yksi reseptitunnus, URL, ravintolaskenta
+ja julkaisuportti säilyvät. Kategoriat vaikuttavat selailuun ja hakusuodattimeen,
+eivät ruokavalio- tai GK-luokitukseen.
+
 Ajantasainen määrä saadaan lähteistä, ei tästä dokumentista:
 
 ```powershell
