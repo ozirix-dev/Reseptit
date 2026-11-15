@@ -10,7 +10,7 @@ export const imageSettings = {
 } as const;
 export const imageWorkers = 2;
 export interface ImageVariant { path: string; width: number; height: number; bytes: number; sha256: string }
-export interface PublishedImage extends ImageVariant { variants: ImageVariant[] }
+export interface PublishedImage extends ImageVariant { variants: ImageVariant[]; homeAvif?: ImageVariant }
 export interface ImageManifest { settings: typeof imageSettings; images: PublishedImage[] }
 const digest = (data: Buffer | string) => createHash("sha256").update(data).digest("hex");
 
@@ -27,6 +27,12 @@ async function boundedMap<T, R>(items: T[], work: (item: T) => Promise<R>, concu
   if (failed?.status === "rejected") throw failed.reason;
   return result;
 }
+
+// These three homepage photos were visually reviewed at the 720px AVIF settings.
+const homeAvifPaths = new Set([
+  "paaruoat/caponata.webp", "paaruoat/aloo-paratha.webp", "leivonnaiset/avokado-perunasampylat.webp",
+]);
+const homeVariantWidth = 720;
 
 const webpPathPattern = /^[a-z0-9][a-z0-9/_-]*\.webp$/i;
 
@@ -109,7 +115,7 @@ export async function rebuildPublishedImages(
       await writeFile(targetPath, bytes);
       const key = digest(sha256 + JSON.stringify(imageSettings)).slice(0, 24);
       const widths = homepageImagePaths.has(relativePath)
-        ? [...imageSettings.widths, 720].sort((a, b) => a - b)
+        ? [...imageSettings.widths, homeVariantWidth].sort((a, b) => a - b)
         : imageSettings.widths;
       const variants: ImageVariant[] = [];
       for (const targetWidth of widths.filter((candidate) => candidate < width)) {
@@ -139,7 +145,22 @@ export async function rebuildPublishedImages(
         generated.set(variantPath, variant);
         variants.push(await variant);
       }
-      return { path: relativePath, width, height, bytes: bytes.length, sha256, variants };
+      const image: PublishedImage = { path: relativePath, width, height, bytes: bytes.length, sha256, variants };
+      const mobileWebp = homeAvifPaths.has(relativePath) && variants.find(variant => variant.width === homeVariantWidth);
+      if (mobileWebp) {
+        const { data, info } = await sharp(bytes).resize({ width: mobileWebp.width, withoutEnlargement: true })
+          .avif({ quality: 60, effort: 6, chromaSubsampling: "4:2:0" }).toBuffer({ resolveWithObject: true });
+        if (info.width !== mobileWebp.width || info.height !== mobileWebp.height) {
+          throw new Error(`AVIF dimensions differ from the WebP variant: ${relativePath}`);
+        }
+        if (data.length < mobileWebp.bytes) {
+          const variantHash = digest(data);
+          const variantPath = `_variants/${variantHash.slice(0, 24)}-${mobileWebp.width}w.avif`;
+          await writeFile(path.join(stageDir, variantPath), data);
+          image.homeAvif = { path: variantPath, width: info.width, height: info.height, bytes: data.length, sha256: variantHash };
+        }
+      }
+      return image;
     }, workers);
     const manifest: ImageManifest = { settings: imageSettings, images };
     await mkdir(path.join(stageDir, "_variants"), { recursive: true });

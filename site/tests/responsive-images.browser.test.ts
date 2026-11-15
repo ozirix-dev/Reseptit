@@ -29,7 +29,8 @@ test("fresh browser contexts choose correctly sized local images without duplica
           const size = slot.startsWith("(") ? slot.slice(slot.indexOf(")") + 2) : slot;
           const probe = document.createElement("div"); probe.style.width = size; document.body.append(probe);
           const declaredWidth = probe.getBoundingClientRect().width; probe.remove();
-          return { src: image.src, srcSet: image.srcset, sizes: image.sizes, currentSrc: image.currentSrc, naturalWidth: image.naturalWidth,
+          const avifSrc = image.closest("picture")?.querySelector('source[type="image/avif"]')?.getAttribute("srcset") ?? null;
+          return { src: image.src, srcSet: image.srcset, avifSrc, sizes: image.sizes, currentSrc: image.currentSrc, naturalWidth: image.naturalWidth,
             renderedWidth: image.getBoundingClientRect().width, declaredWidth, dpr: devicePixelRatio, complete: image.complete,
             overflow: document.documentElement.scrollWidth > innerWidth,
             resources: performance.getEntriesByType("resource").map((entry) => ({ url: entry.name, bytes: (entry as PerformanceResourceTiming).transferSize })) };
@@ -41,19 +42,23 @@ test("fresh browser contexts choose correctly sized local images without duplica
         if (phase !== "before") {
           assert.ok(Math.abs(result.renderedWidth - result.declaredWidth) < 1, `sizes matches CSS: ${width} ${route}`);
           const candidates = result.srcSet.split(", ").map((part) => part.split(" ")[0]);
+          if (result.avifSrc) candidates.push(result.avifSrc);
           assert.ok(candidates.includes(result.currentSrc));
           assert.equal(requests.filter((url) => candidates.includes(url)).length, 1, `no fallback/preload double fetch ${width}/${dpr}/${route}`);
           if (dpr === 1 && width <= 390) assert.match(result.currentSrc, /480w\.webp$/);
           if (route === "/") {
             if (process.env.VITE_RECIPAVO_HERO_PREVIEW === "true" && (width === 390 || width === 412)) {
-              if (dpr === 2) assert.match(result.currentSrc, /720w\.webp$/);
+              if (dpr === 2) {
+                assert.ok(result.avifSrc, "the first home pick has an AVIF source");
+                assert.equal(result.currentSrc, result.avifSrc);
+              }
               if (dpr === 3) {
                 const selectedWidth = Number(result.srcSet.split(", ")
                   .find((candidate) => candidate.startsWith(result.currentSrc + " "))?.split(" ").at(-1)?.slice(0, -1));
                 assert.ok(selectedWidth >= result.renderedWidth * dpr, "3x gets a full-density image");
               }
             }
-            assert.equal(await page.locator('.recipe-card img[loading="eager"]').count(), 1);
+            assert.equal(await page.locator('.recipe-card img[loading="eager"]').count(), result.avifSrc ? 0 : 1);
             assert.equal(await page.locator('.recipe-card img[fetchpriority="high"]').count(), 1);
           }
         }
