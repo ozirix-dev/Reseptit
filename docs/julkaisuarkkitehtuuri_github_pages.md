@@ -1,15 +1,18 @@
-# Reseptisivuston julkaisu GitHub Pagesissa
+# Recipavon tuotanto ja GitHub Pages -staging
 
 ## Periaate
 
-`Reseptit`-repo on reseptien kanoninen lähde ja itsenäisen reseptisivuston koti. Jeesitiimi käsittelee tietokoneapua ja IT-ohjeita; reseptisivut kuuluvat tähän repoosi.
+`Reseptit` on reseptisisällön kanoninen lähde. Julkinen sivusto on
+[www.recipavo.com](https://www.recipavo.com/) Cloudflare Pagesissa.
+[GitHub Pages](https://ozirix-dev.github.io/Reseptit/) toimii stagingina.
 
 ```text
 reseptit/*.md + kaannokset/**/*.md
     -> site/scripts/build-content.ts
     -> staattinen HTML + client-hydration
     -> site/dist
-    -> GitHub Pages: https://ozirix-dev.github.io/Reseptit/
+    -> GitHub Pages -staging (/Reseptit/)
+    -> Cloudflare Pages -tuotanto (/, erikseen hyväksytty julkaisu)
 ```
 
 Build lukee Markdown-tiedostot, validoi julkaistujen reseptien metatiedot, poimii vain `status: published` -sisällön, sanitizoi ohjetekstin Markdownin ja esirenderöi koko sivun. Selain hydratoi saman sisällön annoslaskurin ja reitityksen toiminnallisuutta varten. Luonnokset, arkisto, raakileet ja mallipohjat eivät tule hakemistoon tai sivuille.
@@ -36,8 +39,10 @@ PR:n head- ja base-SHA. TypeScript-testimuutos ajaa sisällön generoinnin,
 tyyppitarkistuksen ja kohdennetun testin. Laajempi julkaisu- tai
 rakennemuutos ajaa myös tarvittavat tuotantobuildin, staattisen tulosteen
 ja selaimen tarkistukset. Dokumentaatiomuutos voi käyttää kevyttä polkua.
-Julkaisu GitHub Pagesiin tehdään `main`-haarasta. Sivuston base path on
-`/Reseptit/`.
+`main`-haaran muutokset julkaistaan
+GitHub Pages -stagingiin projektipolun `/Reseptit/` alle. Tuotantojulkaisu
+Cloudflare Pagesiin edellyttää erikseen hyväksyttyä, testattua commit-SHA:ta.
+Tuotannon reitit alkavat verkkotunnuksen juuresta.
 
 ### Reseptiversion julkaisu
 
@@ -66,8 +71,9 @@ käyttöönotto on tehtävä ennen ensimmäistä julkaisua.
 
 ## Sivureitit ja SEO
 
-- Suomen hakemisto on `/Reseptit/`; reseptin osoite on `/Reseptit/<url_slug>/`.
-- Käännösten reitit ovat `/Reseptit/en/recipes/`, `/Reseptit/sv/recept/` ja `/Reseptit/th/recipes/`.
+- Tuotannon hakemisto on `/` ja reseptin osoite `/<url_slug>/`.
+- Käännösten hakemistot ovat `/en/recipes/`, `/sv/recept/` ja `/th/recipes/`.
+  GitHub Pages -staging lisää samoihin reitteihin `/Reseptit`-etuliitteen.
 - Hakemisto- ja reseptisivujen HTML sisältää näkyvän tekstin jo ennen JavaScriptiä.
 - Canonical, hreflang ja sivukartta muodostuvat julkaistuista reiteistä. Reseptin `x-default` ohjaa julkaistuun suomenkieliseen versioon tai, jos sellaista ei ole, ensimmäiseen julkaistuun kieleen.
 - Tuntemattomalle reitille GitHub Pages palauttaa `404.html`-sivun. Se sisältää `noindex,follow`-merkinnän eikä canonical-osoitetta tai `Recipe`-JSON-LD:tä. Asiakasreitityksen tuntemattomat polut saavat saman noindex-käsittelyn.
@@ -76,22 +82,17 @@ käyttöönotto on tehtävä ennen ensimmäistä julkaisua.
 
 ### Robots.txt ja sitemap
 
-GitHub Pagesin projektisivuston `robots.txt` on projektipolun alla: `https://ozirix-dev.github.io/Reseptit/robots.txt`. Se **ei hallitse** käyttäjätunnuksen juuren osoitetta `https://ozirix-dev.github.io/robots.txt`. Sivuston tiedosto kertoo projektipolun sitemap-osoitteen; tunnuksen juuritason crawling-säännöt on hallittava erikseen, jos sellaisia tarvitaan.
-
-Sitemap on `https://ozirix-dev.github.io/Reseptit/sitemap.xml` ja sisältää vain julkaistut hakemistot ja reseptireitit.
+Tuotannon [robots.txt](https://www.recipavo.com/robots.txt) osoittaa
+[tuotannon sivukarttaan](https://www.recipavo.com/sitemap.xml), joka sisältää
+julkaistut hakemistot ja reseptireitit. GitHub Pages -stagingin sivuilla on
+`noindex, nofollow`. Stagingin `robots.txt` sijaitsee projektipolun alla
+`/Reseptit/robots.txt`.
 
 ### Google Search Console
 
-1. Lisää URL-prefix-ominaisuus osoitteelle `https://ozirix-dev.github.io/Reseptit/`.
-2. Valitse HTML-tiedostovahvistus ja tallenna Googlen antama tiedosto `site/public/`-kansioon täsmälleen annetulla nimellä ja sisällöllä.
-3. Rakenna ja julkaise sivusto, ja avaa vahvistustiedosto täsmällisessä julkaistussa osoitteessa.
-4. Suorita Search Consolessa vahvistus ja lisää sivukartaksi `https://ozirix-dev.github.io/Reseptit/sitemap.xml`.
-5. Tarkista URL-tarkastuksella hakemistosivu ja yksittäinen resepti. Lähettäminen ei takaa indeksointia tai rich result -näkyvyyttä.
-
-Reseptikuvat ja rakenteinen data ovat käytössä. Tekninen validointi ei takaa
-Googlen indeksointia tai rich result -näkyvyyttä. Kuva ja teksti täytyy tarkistaa
-myös sisällöllisesti. Vahvistustiedoston HTTP 200 todistaa vain tiedoston
-saatavuuden, ei Search Consolen omistajuusvahvistuksen onnistumista.
+Käytä tuotannon ominaisuutta ja tuotannon sivukarttaa. Tarkista tarvittaessa
+tuotannon hakemisto ja yksittäinen resepti URL-tarkastuksella. Tarkista
+indeksointi ja rakenteisen datan näkyvyys Search Consolesta.
 
 ## Kuvien lisääminen
 
@@ -148,9 +149,6 @@ Dependabot tarkistaa viikoittain npm-paketit ja GitHub Actions -versiot. Päivit
 
 ## Jeesitiimin vanhat osoitteet
 
-Kun GitHub Pages -julkaisu on tarkistettu, Jeesitiimin Cloudflare Pagesiin lisätään pysyvät uudelleenohjaukset vanhoille osoitteille:
-
-- `https://jeesitiimi.com/reseptit/` -> `https://ozirix-dev.github.io/Reseptit/`
-- `https://jeesitiimi.com/reseptit/<slug>/` -> `https://ozirix-dev.github.io/Reseptit/<slug>/`
-
-Tämä tekninen laatukierros ei muuta Jeesitiimin repo- tai hosting-asetuksia. Jeesitiimi ei sisällä reseptiartikkeleita, reseptivalikkoa, reseptien sitemap-osoitteita tai reseptisisällön build-vaihetta.
+Aiemmassa siirtosuunnitelmassa Jeesitiimin vanhojen reseptiosoitteiden
+kohteeksi ehdotettiin GitHub Pagesia. Recipavon nykyinen julkinen osoite on
+[www.recipavo.com](https://www.recipavo.com/).
