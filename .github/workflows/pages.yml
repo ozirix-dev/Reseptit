@@ -44,10 +44,10 @@ jobs:
       contents: read
       pages: write
     steps:
-      - uses: actions/checkout@v7
+      - uses: actions/checkout@v7.0.1
         with:
           fetch-depth: 0
-      - uses: actions/setup-node@v7
+      - uses: actions/setup-node@v7.1.0
         with:
           node-version: 22
           cache: npm
@@ -146,7 +146,7 @@ jobs:
 
       - name: Save chef quality pilot evidence
         if: steps.chef_pilot.outcome == 'success'
-        uses: actions/upload-artifact@v7
+        uses: actions/upload-artifact@v7.0.2
         with:
           name: chef-quality-pilot-five
           path: |
@@ -203,7 +203,7 @@ jobs:
 
       - name: Upload the translation work queue
         if: ${{ !cancelled() && (steps.select.outputs.run_content == 'true' || steps.select.outputs.run_translation_review == 'true') }}
-        uses: actions/upload-artifact@v7
+        uses: actions/upload-artifact@v7.0.2
         with:
           name: translation-queue
           path: tmp/translation-review/queue.json
@@ -229,7 +229,7 @@ jobs:
 
       - name: Upload full duplicate audit for editorial review
         if: contains(steps.select.outputs.changed_paths, 'recipe-similarity')
-        uses: actions/upload-artifact@v7
+        uses: actions/upload-artifact@v7.0.2
         with:
           name: recipe-similarity-inventory
           path: |
@@ -300,9 +300,18 @@ jobs:
           PLAYWRIGHT_BROWSER_CHANNEL: chrome
           BROWSER_SUITES: ${{ steps.select.outputs.browser_suites }}
 
-      - uses: actions/configure-pages@v6
+      - name: Preserve browser diagnostics on failure, if present
+        if: failure()
+        uses: actions/upload-artifact@v7.0.2
+        with:
+          name: recipe-site-browser-diagnostics
+          path: tmp/v15/
+          if-no-files-found: ignore
+          retention-days: 7
+
+      - uses: actions/configure-pages@v6.0.0
         if: steps.select.outputs.publish == 'true'
-      - uses: actions/upload-pages-artifact@v5
+      - uses: actions/upload-pages-artifact@v5.0.0
         if: steps.select.outputs.publish == 'true'
         with:
           path: site/dist
@@ -319,4 +328,4 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - id: deployment
-        uses: actions/deploy-pages@v5
+        uses: actions/deploy-pages@v5.0.1

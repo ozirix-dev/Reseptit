@@ -15,6 +15,8 @@ const dedicatedTests = new Set([
   "tests/navigation.test.ts",
   "tests/seo-audit.test.ts",
   "tests/static-output.test.ts",
+  "tests/f25-source-release-gate.test.ts",
+  "tests/translation-batch-partition.test.ts",
   "tests/translation-publication-index.test.ts",
   "tests/translation-review.test.ts",
   "tests/translations.test.ts",

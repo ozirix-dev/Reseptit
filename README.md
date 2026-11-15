@@ -2,10 +2,10 @@
 
 **Recipavo** on nelikielinen reseptisivusto. Tämä `Reseptit`-repo sisältää
 kanoniset Markdown-reseptit ja staattisen verkkosovelluksen.
-[Julkinen sivusto](https://ozirix-dev.github.io/Reseptit/) julkaistaan
-GitHub Pagesissa.
-[Cloudflare Pages -V1-esikatselu](https://final-recovery.recipavo-v1-preview.pages.dev/)
-on erillinen testijulkaisu, ei sama kuin GitHub Pagesin julkinen sivusto.
+[Tuotanto](https://www.recipavo.com/) toimii Cloudflare Pagesissa.
+[GitHub Pages](https://ozirix-dev.github.io/Reseptit/) toimii stagingina.
+[Cloudflare Pages -esikatselu](https://final-recovery.recipavo-v1-preview.pages.dev/)
+on erillinen esikatseluympäristö. Katso [julkaisuohje](docs/julkaisuarkkitehtuuri_github_pages.md).
 
 Suomi on lähdekieli; englanti, ruotsi ja thai ovat reseptikohtaisia käännöksiä.
 Hakemisto, haku, suodattimet ja annoslaskuri ovat käytössä.
@@ -108,9 +108,9 @@ Automaattinen läpäisy ei korvaa sisällöllistä kielikatselmointia.
 ## Kehitys ja tarkistukset
 
 Valitse ensin muutoksen riskin mukaiset kohdennetut tarkistukset.
-Käytä CI:n tavoin Node.js 22:ta. Tee tavallinen klooni ilman
-`--depth`- ja `--single-branch`-rajauksia, sillä osa resepti- ja käännöstesteistä
-lukee myös historiallisia Git-objekteja muista haaroista.
+Käytä CI:n tavoin Node.js 22:ta. Pidä mainin Git-historia saatavilla ilman
+`--depth`-rajausta. Chef- ja Brioche-kontrollit käyttävät versionhallinnassa
+olevia fixtureja ja neljän GK-version hyväksyntätarkistus käyttää mainin historiaa.
 Aja komennot `site/`-kansiossa. Build generoi testien tarvitseman datan
 ja tarkistaa etusivun HTML:n ja JavaScriptin kokorajat.
 
@@ -153,7 +153,7 @@ annoslaskuri, haku ja query-osoitteet toimivat. Canonicalit, hreflang,
 Recipe-JSON-LD ja sitemap syntyvät julkaistusta sisällöstä.
 
 GitHub Actions tarkistaa PR:t. `main`-haaran sivustomuutokset käynnistävät
-GitHub Pages -julkaisun; pelkkä PR tai vihreä PR-CI ei ole julkaisun todiste.
+GitHub Pages -stagingjulkaisun. Cloudflare-tuotantoon siirretään erikseen hyväksytty, testattu revisio.
 Cloudflare Pages -esikatselu varmennetaan erikseen täsmälliseen versioon
 sidottuna. Hyväksyttävät, toisistaan riippumattomat reseptit voidaan julkaista
 mukautuvissa erissä; vaikea GK- tai turvallisuustapaus ei saa estää muita
