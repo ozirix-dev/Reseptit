@@ -94,6 +94,7 @@ Yksi annos on **yksi piirakka** ilman munavoita. Erä tuottaa 24 samankokoista p
 
 ## Muistiinpanot
 
+- Yksi annos on yksi piirakka ilman munavoita. Ohjeesta tulee 24 piirakkaa.
 - **Allergeenit:** ruis ja vehnä (gluteeni) sekä maito. Munavoi on erillinen lisuke.
 - **Ravintoarvot ja glykeeminen kuorma:** luotettavaa reseptikohtaista laskelmaa ei ole vielä saatavilla. Puuttuva arvo ei tarkoita nollaa. Reseptiä ei luokitella ketoksi eikä vähähiilihydraattiseksi.
 - Kuva on tekoälyllä tuotettu havainnekuva, ei valokuva valmistetusta ruoasta.

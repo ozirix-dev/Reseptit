@@ -24,8 +24,8 @@ ingredients:
   - amount: 1
     unit: ""
     item: onion
-  - amount: 2
-    unit: tbsp
+  - amount: 32
+    unit: g
     item: Dijon mustard
   - amount: 100
     unit: g
@@ -47,10 +47,10 @@ image:
   alt: Baked sausage with onion and mustard topping
   width: 1536
   height: 1024
-carbs_net_per_serving_g: 12.02
-carbs_total_per_serving_g: 12.7
-protein_per_serving_g: 19.58
-fat_per_serving_g: 38.5
+carbs_net_per_serving_g: 12.72
+carbs_total_per_serving_g: 13.49
+protein_per_serving_g: 19.8
+fat_per_serving_g: 38.8
 source_language: fi
 source_recipe: reseptit/paaruoat/uunimakkara-sipulipedilla.md
 translation_of: uunimakkara-sipulipedilla

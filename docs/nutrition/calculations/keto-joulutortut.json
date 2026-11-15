@@ -1,10 +1,10 @@
 {
   "recipeId": "keto-joulutortut",
-  "sourceHash": "c136e12e8273a30a67ec30786dcbfe0c5c343fe6cc67560e50d6681bd6f526ad",
-  "calculatedAt": "2026-10-25",
+  "sourceHash": "dfd0e7326915cc0c18059d572bd3b5cb081282963c0f6577f8ac169665c4cbb3",
+  "calculatedAt": "2026-11-15",
   "batchId": "batch-17",
   "servings": 8,
-  "scope": "8 servings; measured ingredient quantities as listed: 150 g mantelijauhoa; 100 g voita; 100 g tuorejuustoa; 1 kpl kananmuna; 40 g luumuhilloa. Cooking mass changes are not modelled; recipe ingredients are counted at raw/as-sold edible amounts. Salt and only the documented small seasoning omissions are excluded.",
+  "scope": "8 servings; measured ingredient quantities as listed: 150 g mantelijauhoa; 100 g voita; 100 g plain 25% lactose-free cream cheese; 1 kpl kananmuna; 40 g luumuhilloa. Cooking mass changes are not modelled; recipe ingredients are counted at raw/as-sold edible amounts. Salt and only the documented small seasoning omissions are excluded.",
   "reviewerStatus": "AUTOMATED ONLY",
   "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
   "ingredients": [
@@ -79,28 +79,28 @@
       }
     },
     {
-      "item": "tuorejuustoa",
+      "item": "maustamatonta laktoositonta tuorejuustoa (25 % rasvaa)",
       "amount": 100,
       "unit": "g",
-      "state": "cream cheese, 30% fat",
-      "matchEvidence": "Fineli Release 20 record 641 is cream cheese, closest generic match to plain cream cheese.",
+      "state": "plain lactose-free cream cheese, 25% fat",
+      "matchEvidence": "Fineli Release 20 record 34764 is plain lactose-free cultured fresh cream cheese at 25% fat, matching the 100 g dough ingredient.",
       "edibleFraction": 1,
       "edibleEvidence": "Ingredient basis is the documented edible amount",
       "retainedFraction": 1,
       "retentionEvidence": "All ingredient mass is included; no discarded cooking liquid or fat",
       "record": {
-        "id": "fineli-641-release-20",
-        "name": "JUUSTO, KERMAJUUSTO, RASVAA 30 %, TURUNMAA/OLTERMANNI/KORSHOLM/MASURKKA",
-        "sourceUrl": "https://fineli.fi/fineli/api/v1/foods/641",
-        "retrievedAt": "2026-10-24",
+        "id": "fineli-34764-release-20",
+        "name": "TUOREJUUSTO, RASVAA 25 %, MAUSTAMATON, LAKTOOSITON",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/34764",
+        "retrievedAt": "2026-11-15",
         "licence": "THL, Fineli Release 20, CC BY 4.0",
-        "state": "cream cheese, 30% fat",
+        "state": "plain lactose-free cream cheese, 25% fat",
         "basis": "per100g-edible",
         "carbohydrateDefinition": "EU_AVAILABLE",
         "componentValues": {
-          "CHO": 0,
-          "FIBT": 0,
-          "POLYL": 0
+          "CHO": 2.724,
+          "FIBT": 0.0,
+          "POLYL": 0.0
         },
         "componentIds": {
           "CHO": 2034,
@@ -110,11 +110,11 @@
         "polyolsSourceVerified": true,
         "polyolsEvidence": "Fineli Release 20 POLYL component 2260",
         "per100g": {
-          "carbohydrate": 0,
-          "fibre": 0,
-          "polyols": 0,
-          "protein": 22.31,
-          "fat": 32
+          "carbohydrate": 2.724,
+          "fibre": 0.0,
+          "polyols": 0.0,
+          "protein": 6.28,
+          "fat": 25.031
         }
       }
     },

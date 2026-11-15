@@ -24,11 +24,11 @@ ingredients:
   - {amount: 200, unit: ml, item: kookosmaitoa, note: kastikkeeseen}
   - {amount: 16, unit: g, item: soijakastiketta, note: kastikkeeseen}
   - {amount: 9, unit: g, item: fariinisokeria, note: kastikkeeseen}
-  - {amount: 1, unit: kpl, item: limetti, note: lohkoina tarjoiluun}
-carbs_net_per_serving_g: 13.59
-carbs_total_per_serving_g: 17.87
-protein_per_serving_g: 45.52
-fat_per_serving_g: 29.69
+  - {amount: 1, unit: kpl, item: limetti, note: "lohkoina tarjoiluun, kuorta ei syödä"}
+carbs_net_per_serving_g: 13.74
+carbs_total_per_serving_g: 18.17
+protein_per_serving_g: 45.64
+fat_per_serving_g: 29.37
 
 ---
 

@@ -74,11 +74,11 @@ Punjabi Amritsari-fisken får sin krispiga skorpa från kikärtsmjöl, yoghurt o
 
 ## Beskrivning
 
-Punjabi Amritsari-fisken får sin krispiga skorpa från kikärtsmjöl, yoghurt och aromatiska kryddor.
+Punjabi Amritsari-fisken får sin krispiga skorpa från kikärtsmjöl, yoghurt och aromatiska kryddor. Räkna med 40 minuter från tinad fisk.
 
 ## Tillagning
 
-1. Tina sejen i kylskåp. Skär fisken i munsbitar och torka dem.
+1. Tina sejen i kylskåp i förväg. Skär den vid behov i munsbitar och klappa fisken torr.
 2. Blanda yoghurt, kikärtsmjöl, citronsaft, ajwain, paprika, chili, salt och vitlök till en smidig deg.
 3. Rulla in fiskbitarna i degen och låt marinera i kylen i 20 minuter.
 4. Hetta upp ett tunt lager olja i en stekpanna på medelvärme.

@@ -22,7 +22,7 @@ ingredients:
     item: plain cream cheese
   - amount: 150
     unit: g
-    item: thick sour cream (smetana)
+    item: "crème fraîche (28% fat)"
   - amount: 3
     unit: ""
     item: eggs
@@ -66,11 +66,13 @@ This rich baked cheesecake has an almond-flour crust. Lemon balances the sweetne
 
 1. Preheat the oven to 160 °C. Line the base of a 20 cm springform tin with baking parchment.
 2. Mix the almond flour and melted butter. Press the mixture into the base of the tin and prebake for 8 minutes.
-3. Mix the cream cheese and erythritol until smooth. Add the sour cream, the eggs one at a time, the vanilla and the lemon juice.
+3. Mix the cream cheese and erythritol until smooth. Add the crème fraîche, the eggs one at a time, the vanilla and the lemon juice.
 4. Pour the filling over the crust. Set the tin on the oven rack and bake for about 50 minutes. The centre can still wobble slightly.
 5. Turn off the oven, leave the door ajar and let the cake cool in the oven for 30 minutes.
 6. Chill in the fridge for at least four hours before slicing.
 
 ## Notes
+
+You can use thick smetana in place of crème fraîche. Smetana with about 40–42% fat makes a richer filling. The nutrition estimate uses crème fraîche with 28% fat.
 
 The filling ingredients mix more evenly at room temperature. The cake firms as it cools. Do not let the top darken during baking.

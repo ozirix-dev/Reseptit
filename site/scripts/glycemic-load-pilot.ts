@@ -59,11 +59,18 @@ async function markdownFiles(dir: string): Promise<string[]> {
   return nested.flat();
 }
 
-const [input, foodRecords, giSource] = await Promise.all([
+const [input, historicalFoodRecords, giSource, correctedCreamCheeseEvidence] = await Promise.all([
   readFile(path.join(root, "docs/nutrition/glycemic-load-pilot-input.json"), "utf8").then((text) => JSON.parse(text)),
   readFile(path.join(root, "docs/nutrition/food-records.json"), "utf8").then((text) => JSON.parse(text) as FoodRecord[]),
   readFile(path.join(root, "docs/nutrition/glycemic-index-records.json"), "utf8").then((text) => JSON.parse(text)),
+  readFile(path.join(root, "docs/nutrition/calculations/keto-joulutortut.json"), "utf8").then((text) => JSON.parse(text)),
 ]);
+const correctedCreamCheese = (correctedCreamCheeseEvidence.ingredients as { record?: FoodRecord }[])
+  .find(({ record }) => record?.id === "fineli-34764-release-20")?.record;
+if (!correctedCreamCheese || historicalFoodRecords.some(({ id }) => id === correctedCreamCheese.id)) {
+  throw new Error("Expected one scoped composition record for the corrected joulutortut cream cheese.");
+}
+const foodRecords = [...historicalFoodRecords, correctedCreamCheese];
 const publishedRecipeSources = new Map<string, { markdown: string; input: PublishedRecipeInputSource }>();
 for (const filename of await markdownFiles(path.join(root, "reseptit"))) {
   const markdown = (await readFile(filename, "utf8")).replaceAll("\r\n", "\n");

@@ -63,4 +63,4 @@ All measured ingredient quantities are in the structured list above.
 
 ## Notes
 
-The banana's edible gram weight and the particular condensed-milk product remain source-review items.
+Use sweetened condensed cow’s milk and plain yogurt with 3.9% fat. The nutrition estimate uses 125 g of peeled banana. Different products and banana sizes will affect the estimate.

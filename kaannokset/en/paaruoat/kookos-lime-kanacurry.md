@@ -36,6 +36,7 @@ ingredients:
   - amount: 1
     unit: ""
     item: lime
+    note: "for the final seasoning, about 44 g juice"
   - amount: 10
     unit: g
     item: Thai basil
@@ -50,10 +51,10 @@ image:
   alt: Coconut and lime chicken curry ready to serve
   width: 1536
   height: 1024
-carbs_net_per_serving_g: 5.66
-carbs_total_per_serving_g: 8.63
-protein_per_serving_g: 26.99
-fat_per_serving_g: 21.82
+carbs_net_per_serving_g: 5.74
+carbs_total_per_serving_g: 8.66
+protein_per_serving_g: 27.06
+fat_per_serving_g: 21.49
 source_language: fi
 source_recipe: reseptit/paaruoat/kookos-lime-kanacurry.md
 translation_of: kookos-lime-kanacurry

@@ -63,7 +63,3 @@ Mängderna anges i den strukturerade ingredienslistan ovan.
 2. Rosta eventuellt alla 20 g kokosflingor lätt i en torr stekpanna och låt svalna. Tillsätt ingen olja eller annat fett.
 3. Fördela yoghurt och mango lika mellan två kalla portionsskålar. Häll i hälften av limejuicen i vardera och använd endast det angivna saltet vid behov.
 4. Fördela kokosflingorna mellan skålarna (10 g per portion) och servera kallt. Bönor, tofu och extra sås ingår inte.
-
-## Anteckningar
-
-Detta är ett utkast som följer mängderna i den finska källan. Närings- och glykemiskt belastningsvärde kräver separat granskning.

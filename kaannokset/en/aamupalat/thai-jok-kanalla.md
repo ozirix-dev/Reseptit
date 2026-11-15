@@ -31,7 +31,7 @@ ingredients:
     unit: ""
     item: salt to taste
 servings: 2
-time_total_min: 25
+time_total_min: 60
 difficulty: easy
 tags:
   - breakfast
@@ -55,11 +55,11 @@ translation_of: thai-jok-kanalla
 
 ## Description
 
-This home-style version makes Thai chicken rice porridge. Adjust the seasoning and toppings to taste.
+This home-style version makes Thai chicken rice porridge. Adjust the seasoning and toppings to taste. Allow about an hour. The time it takes for the rice to soften can vary.
 
 ## Preparation
 
-1. Rinse the rice and simmer it gently in water until it becomes a soft porridge. Stir occasionally.
+1. Rinse the rice, then bring it to a boil in the water. Simmer gently for about 45 minutes until the grains break down and form a porridge, stirring occasionally.
 2. Add the diced chicken breast and grated ginger. Cook until the chicken is fully cooked through.
 3. Cook the eggs separately and serve them on top of the porridge.
 4. Season with salt and serve immediately.

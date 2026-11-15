@@ -65,7 +65,7 @@ Mörk choklad ger den här lilla kladdkakan en fyllig smak och mitten är mjuk o
 
 1. Värm ugnen till 175 °C och klä en rund form på cirka 20 cm i diameter med bakplåtspapper.
 2. Smält chokladen och smöret försiktigt i vattenbad eller i korta omgångar i mikrovågsugnen. Låt svalna något.
-3. Vispa äggen och erytritolen pösigt. Rör ner choklad- och smörblandningen.
+3. Vispa äggen och erytritolen pösigt. Rör ner choklad- och smörblandningen samt vaniljextraktet.
 4. Blanda mandelmjöl, kakao och salt. Vänd ner de torra ingredienserna i smeten.
 5. Häll smeten i formen och grädda i 12–16 minuter. Mitten ska vara mjuk.
 6. Låt svalna innan du skär upp kakan.

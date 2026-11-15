@@ -1,3 +1,5 @@
+import { restoreRecipeAuditSnapshot } from "../scripts/restore-recipe-audit-snapshot";
+import { restoreAuditGk } from "./recipe-correctness-calculation-history";
 import assert from "node:assert/strict";
 import transition from "../../docs/nutrition/gk-original-content-transition.json";
 import historicalBaseline from "../../docs/nutrition/gk-legacy-reconciliation/baseline.json";
@@ -181,6 +183,7 @@ function restoreRows(rows: any[], field: "results" | "calculationInputs") {
 }
 
 export function restoreBeforeOriginalContent(report: any) {
+  restoreAuditGk(report);
   const isReviewedFiBreakfast = (row: { recipeId: string }) => reviewedFiBreakfastIds.has(row.recipeId);
   const addedBreakfasts = report.results?.filter(isReviewedFiBreakfast) ?? [];
   if (addedBreakfasts.length) {
@@ -240,6 +243,7 @@ export function restoreBeforeOriginalContent(report: any) {
 }
 
 export function originalContentSourceBefore(file: string, text: string): string {
+  text = restoreRecipeAuditSnapshot(file, text);
   if (file === "docs/nutrition/glycemic-load-pilot-input.json") {
     const data = JSON.parse(text);
     data.recipes = restoreRows(data.recipes, "calculationInputs");
@@ -281,6 +285,7 @@ function assertMainAddition(report: any) {
 }
 
 export function assertOriginalContentTransition(report: any) {
+  report = restoreAuditGk(structuredClone(report));
   assertMainAddition(report);
   const addedBreakfasts = report.results.filter((row: { recipeId: string }) => reviewedFiBreakfastIds.has(row.recipeId));
   assert.deepEqual(addedBreakfasts.map((row: { recipeId: string }) => row.recipeId).sort(), [...reviewedFiBreakfastIds].sort());

@@ -60,6 +60,6 @@ Varma bananskivor och mjuka tapiokapärlor i kokosmjölk, toppade med mörk gula
 3. Värm kokosmjölken och saltet i en annan kastrull på låg värme. Skiva bananen, lägg den i kokosmjölken och värm försiktigt så att skivorna håller ihop.
 4. Fördela pärlorna, bananskivorna och kokosmjölken i två skålar. Ringla över sirapen och servera varmt.
 
-## Tips
+## Anteckningar
 
 Använd små pärlor med kokanvisningar på förpackningen. Tillagningstiden beror på pärlorna. Kokosflingorna på bilden är ett serveringsförslag.

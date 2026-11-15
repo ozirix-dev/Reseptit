@@ -6,7 +6,7 @@ category: alkuruoka
 language: sv
 status: published
 servings: 4
-time_total_min: 90
+time_total_min: 345
 main_ingredient:
   - sianliha
 cooking_method:
@@ -35,7 +35,7 @@ ingredients:
     item: buljong
   - amount: 5
     unit: g
-    item: gelatin
+    item: gelatinpulver
   - amount: 2
     unit: st
     item: vårlök
@@ -73,11 +73,11 @@ Hemgjorda soppdumplings har en fläskfyllning med kyld buljonggelé som smälter
 
 ## Description
 
-Hemgjorda soppdumplings har en fläskfyllning med kyld buljonggelé som smälter till buljong när de ångas.
+Hemgjorda soppdumplings har en fläskfyllning med kyld buljonggelé som smälter till buljong när de ångas. Räkna med cirka 5 timmar och 45 minuter totalt. Om buljonggelén redan har stelnat tar det cirka 90 minuter att göra dumplingarna.
 
 ## Preparation
 
-1. Lös upp gelatinet i buljongen och kyl i minst 30 minuter tills det stelnat. Skär sedan i små tärningar.
+1. Strö gelatinpulvret över 25 g kall buljong och låt det svälla i 5 minuter utan att röra om. Värm resten av buljongen tills den börjar ånga, ta kastrullen från värmen och rör ner det svällda gelatinet i den heta buljongen tills det har lösts upp. Häll i en grund form, låt svalna en kort stund och ställ i kylskåp i minst 4 timmar. Skär buljonggelén i små tärningar när den har stelnat helt.
 
 2. Blanda fläskfärs, vårlök, soja, sesamolja, ingefära och salt. Vänd försiktigt ner buljonggelén.
 

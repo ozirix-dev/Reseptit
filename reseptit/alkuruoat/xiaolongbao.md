@@ -6,7 +6,7 @@ category: alkuruoka
 language: fi
 status: published
 servings: 4
-time_total_min: 90
+time_total_min: 345
 main_ingredient:
   - sianliha
 cooking_method:
@@ -33,7 +33,6 @@ ingredients:
   - amount: 145
     unit: g
     item: lihalientä lihahyytelöön
-    note: pieninä kuutioina
   - amount: 5
     unit: g
     item: liivatejauhetta lihahyytelöön
@@ -79,11 +78,11 @@ Shanghailaiset keittodumplingit sisältävät mausteista porsastäytettä ja lih
 
 ## Kuvaus
 
-Shanghailaiset keittodumplingit sisältävät mausteista porsastäytettä ja lihahyytelöä, joka sulaa höyrytyksessä liemeksi.
+Shanghailaiset keittodumplingit sisältävät mausteista porsastäytettä ja lihahyytelöä, joka sulaa höyrytyksessä liemeksi. Varaa valmistukseen noin 5 tuntia 45 minuuttia. Valmiiksi jähmettyneestä liemihyytelöstä nyyttien valmistus vie noin 90 minuuttia.
 
 ## Valmistus
 
-1. Kuumenna lihaliemi ja liuota siihen liivatejauhe. Jäähdytä täysin jähmettyneeksi ja leikkaa pieniksi kuutioiksi.
+1. Ripottele liivatejauhe 25 grammaan kylmää lihalientä ja anna turvota 5 minuuttia sekoittamatta. Kuumenna loppu liemi höyryävän kuumaksi, nosta kattila liedeltä ja sekoita turvonnut liivate kuumaan liemeen, kunnes se on liuennut. Kaada liemi matalaan astiaan, anna jäähtyä hetki ja siirrä jääkaappiin hyytymään vähintään 4 tunniksi. Leikkaa täysin jähmettynyt liemihyytelö pieniksi kuutioiksi.
 2. Sekoita jauheliha, kevätsipuli, soijakastike, seesamiöljy, inkivääri ja suola. Kääntele lihahyytelökuutiot täytteeseen.
 3. Sekoita jauhoihin vesi ja vaivaa tasaiseksi taikinaksi. Peitä ja anna levätä 30 minuuttia. Jaa 24 osaan ja kauli pyöreiksi levyiksi.
 4. Laita kunkin levyn keskelle lusikallinen täytettä. Poimuta reunat ympäri ja nipistä keskeltä kiinni.
@@ -92,4 +91,4 @@ Shanghailaiset keittodumplingit sisältävät mausteista porsastäytettä ja lih
 
 ## Muistiinpanot
 
-- Lihahyytelö valmistetaan jäähdyttämällä maustettu liha- tai kanaliemi gelatiinilla. Anna täytteen pysyä kylmänä koko kokoamisen ajan.
+- Pidä täyte kylmänä nyyttien kokoamisen ajan.

@@ -15,7 +15,7 @@ const expected: Readonly<Record<string, string>> = {
   "jerk-kana": "9a5501f0f5a7e397f211ed3fc6017975122aa8ce7b3e3c9bbb741096157acafc",
   "kimchi-jjigae": "ddf90c6176447617f9e997b58c8587fb5a3979aa40656aec152cab4407afb561",
   "lanttulaatikko-kermainen": "a906f10835a76549a852da321ede912f3e2fdd2caf05ed115dd51a990bdfd7ad",
-  "lindstrominpihvit-kaalilla": "ea116b68468b429136a7d799a9e84530ab6d618b77aa4dcd2a18857599f77069",
+  "lindstrominpihvit-kaalilla": "983bea727befcb4f175674b3a9344496af60424d51eab03d3e1a0f9cc111651b",
   "maksalaatikko-kukkakaalilla": "0bc68c7f8a97e63f13b6dc778f1167979a4047b2e5f6a7286cd0c6bf185d0cb7",
   "shoyu-kanakeitto-konjac": "18003d3ee1ec7ebf29aa855c73244ce5a4e0ccb33312982dfa1eab0364eb4b68",
   "vhh-brita-kakku": "5e50ff8c97ab1c36729d732f7245b8f81b4d9c8fb984bd378f3bd3bcad3e608f",
