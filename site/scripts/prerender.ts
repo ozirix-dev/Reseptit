@@ -1,4 +1,4 @@
-import { siteName, siteTitle, websiteJsonLd } from "../src/content/site-metadata";
+import { recipePageTitle, siteName, siteTitle, websiteJsonLd } from "../src/content/site-metadata";
 import { siteTarget } from "../src/content/site-target";
 import { recipeCardAvifMedia, recipeCardSizes, recipeHeroAvifMedia } from "../src/features/recipes/image-layout";
 import { contentForRoute, localeIndexes, serializeRouteContent, type RouteContent } from "../src/content/route-data";
@@ -51,9 +51,10 @@ function routeMetadata(route: string, content: RouteContent) {
   const branded = siteTarget.production || preview;
   const title = pagination ? libraryTitle(locale, pagination.page)
     : pilotPage ? glycemicLoadMeta[locale].title
+    : recipe ? recipePageTitle(recipe)
     : siteTitle(privacy?.title ?? blogPost?.title ?? (blogIndex ? "Ruokaopas" : undefined)
       ?? (branded && indexLocale ? recipavoHeroCopy[locale].tagline : undefined)
-      ?? recipe?.title ?? indexNames[locale]);
+      ?? indexNames[locale]);
   const description = (pagination ? librarySeoDescription(locale, pagination.page, content.recipes) : undefined)
     ?? privacy?.description ?? blogPost?.description
     ?? (blogIndex ? "Ruoanlaiton tekniikoita ja luotettavaa ravitsemustietoa." : undefined)

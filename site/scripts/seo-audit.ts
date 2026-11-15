@@ -3,7 +3,7 @@ import path from "node:path";
 import { pathToFileURL } from "node:url";
 import { isDeepStrictEqual } from "node:util";
 import { localeIndexes, recipeLibraryRoutes } from "../src/content/route-data";
-import { siteTitle } from "../src/content/site-metadata";
+import { recipePageTitle, siteTitle } from "../src/content/site-metadata";
 import { paginateRecipeLibrary, parseRecipeLibraryPagePath } from "../src/features/recipes/recipe-pagination";
 import { libraryCopy, librarySeoDescription, libraryTitle } from "../src/features/recipes/home-preview";
 import { resolveSiteTarget } from "../src/content/site-target";
@@ -59,7 +59,7 @@ export function expectedPages(recipes: RecipeEntry[]): ExpectedPage[] {
     ...glycemicPages.map(({ locale, routePath }) => ({
       route: routePath, locale, ...glycemicLoadMeta[locale], alternates: alternateMap(glycemicPages),
     })),
-    ...recipes.map((recipe) => ({ route: recipe.routePath, locale: recipe.locale, h1: recipe.title, title: siteTitle(recipe.title), description: recipe.seoDescription || recipe.description || recipeUi[recipe.locale].intro, alternates: alternateMap(recipes.filter((r) => r.recipeId === recipe.recipeId)), recipe })),
+    ...recipes.map((recipe) => ({ route: recipe.routePath, locale: recipe.locale, h1: recipe.title, title: recipePageTitle(recipe), description: recipe.seoDescription || recipe.description || recipeUi[recipe.locale].intro, alternates: alternateMap(recipes.filter((r) => r.recipeId === recipe.recipeId)), recipe })),
   ];
 }
 

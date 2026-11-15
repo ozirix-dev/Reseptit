@@ -31,8 +31,11 @@ test("all generated routes, images, sitemap and metadata match published source"
 test("all indexable content templates use distinct descriptions and Recipavo titles", () => {
   const pages = expectedPages(siteContent.recipes);
   const descriptions = new Map<string, string>();
+  const titles = new Map<string, string>();
   for (const { route, title, description } of pages) {
     assert.match(title, / \| Recipavo$/, route);
+    assert.equal(titles.get(title), undefined, `Duplicate title on ${route} and ${titles.get(title)}`);
+    titles.set(title, route);
     assert.ok(description.trim(), route);
     assert.equal(descriptions.get(description), undefined, `Duplicate description on ${route} and ${descriptions.get(description)}`);
     descriptions.set(description, route);

@@ -7,7 +7,7 @@ import { glycemicLoadMeta, recipeLocaleFromPath, recipeUi } from "@/features/rec
 import { useContent } from "@/lib/content";
 import { articles, articlePath, blogRoot, blogPosts, blogJsonLd } from "@/features/blog/blog-data";
 import type { RecipeLocale } from "@/types/content";
-import { siteName, siteTitle, websiteJsonLd } from "@/content/site-metadata";
+import { recipePageTitle, siteName, siteTitle, websiteJsonLd } from "@/content/site-metadata";
 import { siteTarget } from "@/content/site-target";
 import { privacyCopy, privacyLocaleFromPath, privacyPaths } from "@/features/privacy/privacy-copy";
 
@@ -58,9 +58,10 @@ export function SeoMeta() {
     const locale = privacyLocale ?? recipe?.locale ?? pagination?.locale ?? methodLocale ?? (isBlog ? "fi" : routeLocale) ?? recipeLocaleFromPath(pathname);
     const title = pagination ? libraryTitle(locale, pagination.page)
       : isPilotPage ? glycemicLoadMeta[locale].title
+      : recipe ? recipePageTitle(recipe)
       : siteTitle(privacy?.title ?? blogPost?.title ?? (blogIndex ? "Ruokaopas" : undefined)
         ?? (branded && indexExists ? recipavoHeroCopy[locale].tagline : undefined)
-        ?? recipe?.title ?? (known ? titleByLocale[locale] : recipeUi[locale].notFound));
+        ?? (known ? titleByLocale[locale] : recipeUi[locale].notFound));
     const description = (pagination ? librarySeoDescription(locale, pagination.page, recipes) : undefined)
       ?? privacy?.description ?? blogPost?.description
       ?? (blogIndex ? "Ruoanlaiton tekniikoita ja luotettavaa ravitsemustietoa." : undefined)
