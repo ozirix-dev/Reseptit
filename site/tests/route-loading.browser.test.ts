@@ -37,6 +37,20 @@ test("bounded page data, navigation cache, failures, history and multilingual st
       if (url.includes("/data/search-")) searchRequests.push(url);
       else if (url.includes("/data/")) dataRequests.push(url);
     });
+    const initialScripts: string[] = [];
+    const recordInitialScripts = (request: import("playwright").Request) => {
+      if (request.resourceType() === "script") initialScripts.push(new URL(request.url()).pathname);
+    };
+    page.on("request", recordInitialScripts);
+    await page.goto(`${base}/`);
+    await page.locator(".recipe-filters").waitFor();
+    page.off("request", recordInitialScripts);
+    assert.equal(await page.locator('head link[rel="stylesheet"]').count(), 0, "home CSS is inlined");
+    assert.ok(await page.locator("head style").count());
+    assert.ok(initialScripts.some(url => /\/index-[\w-]+\.js$/.test(url)));
+    assert.equal(initialScripts.some(url => /\/(?:RecipePage|GlycemicLoadPilotPage|BlogPages|routes\.generated)-/.test(url)), false,
+      "the home page loads neither other route components nor the navigation manifest");
+
     for (const [locale, index] of Object.entries(localeIndexes)) {
       const recipe = siteContent.recipes.find((r) => r.locale === locale)!;
       for (const route of [index, recipe.routePath]) {
