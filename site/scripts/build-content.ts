@@ -53,6 +53,32 @@ async function markdownFiles(dir: string): Promise<string[]> {
   return files.flat();
 }
 
+const instructionHeadings = ["Valmistus", "Preparation", "Instructions", "Tillagning", "Gör så här", "การทำ", "วิธีทำ"];
+const descriptionHeadings = ["Kuvaus", "Description", "Beskrivning", "คำอธิบาย"];
+const noteHeadings = ["Muistiinpanot", "Huomioita", "Notes", "Anteckningar", "หมายเหตุ"];
+const nutritionBasisHeading = "Ravintoarvojen laskentaperuste";
+const publicNutritionBasis = new Set([
+  "karnivore-jauhelihakulho-munalla",
+  "karnivore-steak-and-eggs",
+  "karnivore-voilohi-pannulla",
+]);
+const sourceOnlyHeadings = [
+  "Ainekset", "Ingredients", "Ingredienser", "ส่วนผสม", "วัตถุดิบ",
+  "Täytteet ja kuorrutteet", "Annostus", "Perinne, lähde ja nimeäminen",
+  "Tausta ja erottuvuus", "Tausta", "Toimituksellinen alkuperä", "Tekijän tunnustus",
+];
+const classifiedHeadings = new Set([
+  ...instructionHeadings, ...descriptionHeadings, ...noteHeadings, ...sourceOnlyHeadings, nutritionBasisHeading,
+].map(heading => heading.toLowerCase()));
+
+function assertClassifiedRecipeSections(markdown: string, file: string): void {
+  for (const [, heading] of markdown.matchAll(/^##[ \t]+([^\r\n]+)$/gm)) {
+    if (!classifiedHeadings.has(heading.trim().toLowerCase())) {
+      throw new Error(`Unclassified public recipe section in ${file}: ${heading.trim()}`);
+    }
+  }
+}
+
 function section(markdown: string, titles: string[]): string {
   const heading = new RegExp(`^##\\s+(?:${titles.join("|")})\\s*$`, "im");
   const match = heading.exec(markdown);
@@ -180,13 +206,20 @@ async function buildRecipes(): Promise<RecipeEntry[]> {
       ? [data.image.src, ...(data.image.srcset ?? []).map((item) => item.src)]
       : [];
     imagePaths.forEach((imagePath) => publishedImagePaths.add(imagePath));
-    const instructions = section(parsed.content, ["Valmistus", "Preparation", "Instructions", "Tillagning", "Gör så här", "การทำ", "วิธีทำ"]);
+    assertClassifiedRecipeSections(parsed.content, relativePath);
+    const instructions = section(parsed.content, instructionHeadings);
     const safetyHold = publicSafetyHold(data.recipe_id, data.language);
     const visibleHold = safetyHold ?? publicRecipeQualityHold(data.recipe_id, data.language);
     const publicInstructions = visibleHold?.instructions ?? instructions;
     if (!instructions) throw new Error(`Published recipe has no instructions: ${filePath}`);
-    const descriptionSection = section(parsed.content, ["Kuvaus", "Description", "Beskrivning", "คำอธิบาย"]);
-    const notes = section(parsed.content, ["Muistiinpanot", "Huomioita", "Notes", "Anteckningar", "หมายเหตุ"]);
+    const descriptionSection = section(parsed.content, descriptionHeadings);
+    const nutritionBasis = data.language === "fi" && publicNutritionBasis.has(data.recipe_id)
+      ? section(parsed.content, [nutritionBasisHeading])
+      : "";
+    const notes = [
+      section(parsed.content, noteHeadings),
+      nutritionBasis && `### ${nutritionBasisHeading}\n\n${nutritionBasis}`,
+    ].filter(Boolean).join("\n\n");
     const dietTags = await reviewedDietTagsForSource(data.recipe_id, data.language, filePath, finnishSources.get(data.recipe_id));
     const instructionSteps = [...publicInstructions.matchAll(/^\s*\d+[.)]\s+(.+)$/gm)].map((match) => match[1].trim());
     recipes.push({

@@ -9,7 +9,7 @@ import { recipeHeroSizes } from "./image-layout";
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useContent } from "@/lib/content";
-import { glycemicLoadPath, recipeIndexPath, recipeLocaleFromPath, recipeLocaleName, recipeUi } from "./recipe-i18n";
+import { glycemicLoadPath, recipeDifficultyLabel, recipeIndexPath, recipeLocaleFromPath, recipeLocaleName, recipeUi } from "./recipe-i18n";
 import { formatIngredientAmount, nextServingCount } from "./servings";
 import { toolUi } from "./recipe-tools";
 import { publishedGlycemicLoadForRecipe } from "./glycemic-load-display";
@@ -29,6 +29,7 @@ export function RecipePage() {
   const tools = toolUi[locale];
   useEffect(() => { setHydrated(true); setServings(recipe?.servings ?? 1); setCompleted([]); }, [recipe?.recipeId, recipe?.locale]);
   if (!recipe) return <section className="page-section"><div className="container container--narrow"><h1>{labels.notFound}</h1><p><Link to={recipeIndexPath(locale)}>{labels.backToRecipes}</Link></p></div></section>;
+  const difficulty = recipeDifficultyLabel(recipe.difficulty, locale);
   const originalReviewNotice = recipe.locale === "fi" ? sourceReviewNotice(recipe.recipeId) : null;
   // Keep the SHA-sealed historic FI recipe and the shared F25 B1 notice source
   // unchanged. The editorial time estimate belongs to this public view only.
@@ -70,7 +71,7 @@ export function RecipePage() {
     <nav className="article-breadcrumbs" aria-label={labels.breadcrumb}><Link to={recipe.locale === "fi" ? "/" : `/${recipe.locale === "sv" ? "sv/recept" : `${recipe.locale}/recipes`}/`}>{labels.indexTitle}</Link><span aria-hidden="true">/</span><span>{recipe.title}</span></nav>
     <header className="recipe-header"><p className="eyebrow">{[recipe.category, ...(recipe.additionalCategories ?? [])].map(category => labels.category[category]).join(" · ")}</p><h1>{recipe.title}</h1><p className="article-excerpt">{recipe.description}</p>
       <div className="recipe-actions"><a href="#recipe-instructions" onClick={() => { track("View Instructions"); document.getElementById("recipe-instructions")?.focus(); }}>{tools.jump}</a>{hydrated ? <button type="button" onClick={() => { track("Print Recipe"); window.print(); }}>{tools.print}</button> : null}</div>
-      <div className="recipe-facts">{recipe.timeTotalMin ? <span>{recipe.timeTotalMin} {labels.minutes}</span> : null}{recipe.difficulty ? <span>{labels.difficulty}: {recipe.difficulty}</span> : null}</div>
+      <div className="recipe-facts">{recipe.timeTotalMin ? <span>{recipe.timeTotalMin} {labels.minutes}</span> : null}{difficulty ? <span>{labels.difficulty}: {difficulty}</span> : null}</div>
       {translations.length > 1 ? <nav className="recipe-languages" aria-label={labels.languages}>{translations.map((entry) => <Link key={entry.locale} hrefLang={entry.locale} aria-current={entry.locale === recipe.locale ? "page" : undefined} to={entry.routePath}>{recipeLocaleName(entry.locale)}</Link>)}</nav> : null}
     </header>
     {reviewNotice ? <aside className="recipe-panel" role="note" data-f25-source-hold={recipe.recipeId}><h2>{reviewNotice.heading}</h2><p>{reviewNotice.details}</p><p>{reviewNotice.allergens}</p></aside> : null}

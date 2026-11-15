@@ -43,3 +43,11 @@ export const glycemicLoadMeta: Record<RecipeLocale, { h1: string; title: string;
 export function glycemicLoadPath(locale: RecipeLocale): string {
   return ({ fi: '/glykeeminen-kuorma/', en: '/en/glycemic-load/', sv: '/sv/glykemisk-belastning/', th: '/th/glycemic-load/' })[locale];
 }
+
+const easyDifficulty: Readonly<Record<RecipeLocale, string>> = {
+  fi: "Helppo", en: "Easy", sv: "Lätt", th: "ง่าย",
+};
+
+export function recipeDifficultyLabel(difficulty: string | null, locale: RecipeLocale): string | null {
+  return difficulty?.trim().toLowerCase() === "helppo" ? easyDifficulty[locale] : difficulty;
+}
