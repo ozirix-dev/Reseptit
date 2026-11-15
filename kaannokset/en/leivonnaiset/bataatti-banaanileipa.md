@@ -28,7 +28,7 @@ image:
 ingredients:
 - amount: 240
   unit: g
-  item: ripe sweet potato
+  item: cooked sweet potato
   note: peeled and cooled pulp
 - amount: 230
   unit: g
@@ -73,6 +73,6 @@ Sweet potato puree and ripe banana form a moist dough. Peanut butter flavors the
 ## Notes
 
 - Contains egg, peanut and walnut. Check the chocolate packaging labels.
-- The banana bread in the video starts at about 26 seconds. The gram amounts and the size of the pan are estimates based on a written comparison. The total time is calculated from the already ripe sweet potato. [Comparison guide](https://empirecipes.com/flourless-banana-sweet-potato-cake/)
+- The banana bread in the video starts at about 26 seconds. The gram amounts and the size of the pan are estimates based on a written comparison. The total time is calculated from the already cooked sweet potato. [Comparison guide](https://empirecipes.com/flourless-banana-sweet-potato-cake/)
 - [Original Facebook Reel](https://www.facebook.com/reel/992043580064582)
 - The image is a perception image made with artificial intelligence.

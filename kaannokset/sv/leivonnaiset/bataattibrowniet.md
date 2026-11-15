@@ -54,13 +54,13 @@ Mogen sötpotatis ger kakaobrownies en mjuk inredning. Bred ut degen i ett grunt
 
 1. Värm ugnen till 175°C med konstant värme. Klä en form på 16 x 16 cm med bakplåtspapper.
 2. Mosa sötpotatisen tills den är slät. Blanda i ägg och honung. Sikta i kakaopulvret och blanda tills det är slätt.
-3. Bred ut degen i formen och grädda på medelhög nivå i ca 20-25 minuter. Kontrollera vid 20 minuter. Kanterna och mitten ska vara frysta och innertemperaturen ska vara minst 71 °C.
+3. Bred ut degen i formen och grädda på medelhög nivå i ca 20-25 minuter. Kontrollera vid 20 minuter. Kanterna och mitten ska ha stelnat och innertemperaturen ska vara minst 71 °C.
 4. Kyl i formen innan du skär skivan i nio bitar.
 
 ## Anteckningar
 
 - Innehåller ägg.
-- Brownie-delen av videon börjar vid cirka 15 sekunder. Kvantiteter och pannstorlek är uppskattningar. Den totala tiden beräknas från den redan mogen sötpotatis.
+- Brownie-delen av videon börjar vid cirka 15 sekunder. Kvantiteter och pannstorlek är uppskattningar. Den totala tiden beräknas från redan tillagad sötpotatis.
 - Förhållandet mellan sötpotatis, ägg och kakao utvärderades med hjälp av motsvarande recept från Bake It Paleo. [Jämförelseguide](https://bakeitpaleo.com/sweet-potato-brownies/)
 - [Original Facebook-rulle](https://www.facebook.com/reel/992043580064582)
 - Honung ges inte till barn under ett år.

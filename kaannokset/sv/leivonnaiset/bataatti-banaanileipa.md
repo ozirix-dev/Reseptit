@@ -73,6 +73,6 @@ Sötpotatispuré och mogen banan bildar en fuktig deg. Jordnötssmör smaksätte
 ## Anteckningar
 
 - Innehåller ägg, jordnöt och valnöt. Kontrollera etiketterna på chokladförpackningen.
-- Bananbrödet i videon börjar på cirka 26 sekunder. Grammängderna och pannans storlek är uppskattningar baserade på en skriftlig jämförelse. Den totala tiden beräknas från den redan mogen sötpotatis. [Jämförelseguide](https://empirecipes.com/flourless-banana-sweet-potato-cake/)
+- Bananbrödet i videon börjar på cirka 26 sekunder. Grammängderna och pannans storlek är uppskattningar baserade på en skriftlig jämförelse. Den totala tiden beräknas från redan tillagad sötpotatis. [Jämförelseguide](https://empirecipes.com/flourless-banana-sweet-potato-cake/)
 - [Original Facebook-rulle](https://www.facebook.com/reel/992043580064582)
 - Bilden är en perceptionsbild gjord med artificiell intelligens.

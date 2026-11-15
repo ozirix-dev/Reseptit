@@ -71,7 +71,7 @@ Mogen sötpotatis gör kakan saftig och ger den en varm orange nyans. De frysta 
 
 ## Anteckningar
 
-- Den angivna tiden är en uppskattning för redan mogen, kyld sötpotatis. Om du börjar med rå sötpotatis, skär den på mitten och tillaga med snittsidan nedåt på bakplåtspapper i 200 °C tills en gaffel lätt sjunker ner i malten. Låt svalna, gröp ur malten och väg 440 g.
+- Den angivna tiden är en uppskattning för redan tillagad, avsvalnad sötpotatis. Om du börjar med rå sötpotatis, skär den på mitten och tillaga med snittsidan nedåt på bakplåtspapper i 200 °C tills en gaffel lätt sjunker ner i fruktköttet. Låt svalna, gröp ur fruktköttet och väg 440 g.
 - Innehåller ägg. Om du använder utländska frysta bär istället för inhemska blåbär, koka dem först i 2 minuter och svalna innan du lägger i degen. [Livsmedelsverkets anvisningar för uppvärmning av frysta bär](https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/turvallisen-kayton-ohjeet/ulkomaiset-pakastemarjat/) · [Inre värme av äggrätter](https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures)
 - Instruktionerna är en viktad anpassning av de sex ingredienserna i videon och de skriftliga jämförelseinstruktionerna. [Wellness Tips USA's Reel](https://www.facebook.com/reel/2155888158647891) · [Farmor Ruths skriftliga instruktioner](https://grannyruthsredflags.com/blogs/news/flourless-sweet-potato-blueberry-cake)
 - Bilden är en perceptionsbild gjord med artificiell intelligens.

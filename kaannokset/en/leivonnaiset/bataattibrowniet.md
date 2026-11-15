@@ -27,7 +27,7 @@ image:
 ingredients:
 - amount: 230
   unit: g
-  item: ripe sweet potato
+  item: cooked sweet potato
   note: peeled and cooled pulp
 - amount: 100
   unit: g
@@ -48,7 +48,7 @@ source_recipe: reseptit/leivonnaiset/bataattibrowniet.md
 
 ## Description
 
-Ripe sweet potato gives cocoa brownies a soft interior. Spread the dough in a shallow layer and let the sheet cool in the pan before cutting.
+Cooked sweet potato gives cocoa brownies a soft interior. Spread the dough in a shallow layer and let the sheet cool in the pan before cutting.
 
 ## Instructions
 
@@ -60,7 +60,7 @@ Ripe sweet potato gives cocoa brownies a soft interior. Spread the dough in a sh
 ## Notes
 
 - Contains egg.
-- The brownie part of the video starts at about 15 seconds. Quantities and pan size are estimates. The total time is calculated from the already ripe sweet potato.
+- The brownie part of the video starts at about 15 seconds. Quantities and pan size are estimates. The total time is calculated from the already cooked sweet potato.
 - The ratio of sweet potato, egg and cocoa was evaluated using the corresponding recipe from Bake It Paleo. [Comparison guide](https://bakeitpaleo.com/sweet-potato-brownies/)
 - [Original Facebook Reel](https://www.facebook.com/reel/992043580064582)
 - Honey is not given to children under one year old.

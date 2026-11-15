@@ -26,7 +26,7 @@ image:
 ingredients:
 - amount: 210
   unit: g
-  item: ripe sweet potato
+  item: cooked sweet potato
   note: peeled and cooled pulp
 - amount: 100
   unit: g
@@ -65,12 +65,12 @@ Sweet potato puree and eggs make small, cinnamon-flavored buns. Serve warm with 
 
 1. Puree sweet potato and eggs until smooth. Mix in the baking powder and cinnamon.
 2. Heat a non-stick frying pan over medium heat and brush it with a thin layer of oil. Spoon small, about 7–8 cm long patties onto the pan.
-3. Fry for about 3 minutes on the first side, until the edges are set and the bottom is golden brown. Turn with a thin spatula and bake for another 2-3 minutes until the center has also set.
+3. Fry for about 3 minutes on the first side, until the edges are set and the bottom is golden brown. Turn with a thin spatula and cook for another 2–3 minutes until the center has also set.
 4. Bake the rest of the patties in the same way. Divide into two portions and add blueberries and maple syrup.
 
 ## Notes
 
 - Contains egg.
-- The slow part of the video starts at about 38 seconds. The frying oil, the gram amounts and the size of the pan are the adaptation of this version. The total time is calculated from the already ripe sweet potato. [Similar tutorial by Meghan Splawn](https://www.thekitchn.com/sweet-potato-pancakes-259059)
+- The pancake section of the video starts at about 38 seconds. The frying oil, the gram amounts and the pancake size are adaptations of this version. The total time is calculated from the already cooked sweet potato. [Similar tutorial by Meghan Splawn](https://www.thekitchn.com/sweet-potato-pancakes-259059)
 - [Original Facebook Reel](https://www.facebook.com/reel/992043580064582)
 - The image is a perception image made with artificial intelligence.

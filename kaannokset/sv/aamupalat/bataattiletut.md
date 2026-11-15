@@ -71,6 +71,6 @@ Sötpotatispuré och ägg gör små bullar med kanelsmak. Servera varm med blåb
 ## Anteckningar
 
 - Innehåller ägg.
-- Den långsamma delen av videon börjar på cirka 38 sekunder. Frityroljan, grammängderna och pannans storlek är anpassningen av denna version. Den totala tiden beräknas från den redan mogen sötpotatis. [Liknande handledning av Meghan Splawn](https://www.thekitchn.com/sweet-potato-pancakes-259059)
+- Avsnittet med sötpotatisplättar börjar på cirka 38 sekunder. Frityroljan, grammängderna och pannans storlek är anpassningen av denna version. Den totala tiden beräknas från redan tillagad sötpotatis. [Liknande handledning av Meghan Splawn](https://www.thekitchn.com/sweet-potato-pancakes-259059)
 - [Original Facebook-rulle](https://www.facebook.com/reel/992043580064582)
 - Bilden är en perceptionsbild gjord med artificiell intelligens.
