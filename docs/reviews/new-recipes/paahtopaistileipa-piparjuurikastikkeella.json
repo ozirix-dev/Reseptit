@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "recipe_id": "paahtopaistileipa-piparjuurikastikkeella",
+  "source_path": "reseptit/alkuruoat/paahtopaistileipa-piparjuurikastikkeella.md",
+  "source_sha256": "5447e11848bff0ee6fc22a4561182754bb9fa5061dd0a2acde24a5548ea18d5c",
+  "decision": "approved",
+  "reviewed_by": "Codex – kirjallinen toimituksellinen katselmointi",
+  "reviewed_at": "2026-11-15",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.valio.fi/reseptit/paahtopaisti-ja-piparjuurismetana/",
+      "https://www.uotilat.fi/reseptit/paahtopaisti-leikkeleeksi",
+      "https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/kasittely-ja-sailyttaminen/hygienia-kotikeittiossa/liha/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/paahtopaistileipa-piparjuurikastikkeella.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Tarkistin uuden julkisen tunnisteen ja otsikon päähaarasta. Ruis- ja sämpyläversioiden pohjat ja tunnisteet ovat erilliset."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Luonnoksen punnitut määrät ja kirjalliset vastineet tarkistettu. Täytteen annostus ja piparjuuren säätö on kuvattu."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Kylmät täytteet kootaan juuri ennen tarjoilua. Valion piparjuurismetana tukee makuyhdistelmää. Piparjuuri annostellaan aluksi 12 grammaan ja säädetään maun mukaan."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Ruokaviraston kokolihan käsittely- ja kylmäsäilytysperiaatteet sekä FoodSafety.govin kokolihan lämpötilasuositus tarkistettiin. Allergeenit ilmoitetaan."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Aika kattaa ohjeen työvaiheet ja annosmäärä on 4. Leipien aika koskee kokoamista valmiista raaka-aineista."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Smetanan ja kapristen polyolitietoa puuttuu. Täytteen loppupainoa ei mitattu. Ravintoarvoja ei näytetä sivulla."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Numeerista GK:ta ei anneta ilman valmistetun reseptin arvioon soveltuvaa lähde- ja annosdataa."
+    }
+  },
+  "supplementary_evidence": {
+    "food_safety": [
+      "https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/kasittely-ja-sailyttaminen/hygienia-kotikeittiossa/liha/",
+      "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures",
+      "https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/kasittely-ja-sailyttaminen/hygienia-kotikeittiossa/"
+    ],
+    "image_path": "kuvat/alkuruoat/paahtopaistileipa-piparjuurikastikkeella.webp",
+    "image_sha256": "0070ab867efbfd667d37b52eca27dd0d701b2eceeaf0cc72babcee91d3de56a3",
+    "image_review": "Aiempi havainnekuva näyttää oikean paistin tai leipäpohjan ja kirjallisen tarjoilun.",
+    "physical_cook_test": false
+  }
+}

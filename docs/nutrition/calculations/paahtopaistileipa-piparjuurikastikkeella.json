@@ -1,0 +1,371 @@
+{
+  "recipeId": "paahtopaistileipa-piparjuurikastikkeella",
+  "sourceHash": "2ade945b059ec075a896f5834cca92eb1c2b71b8d619ebc1a98615873f2f0ba0",
+  "calculatedAt": "2026-11-15",
+  "batchId": "batch-576",
+  "servings": 4,
+  "scope": "Ingredient input accounting using cited food-composition records. No cooked yield measured.",
+  "reviewerStatus": "AUTOMATED ONLY",
+  "publicationStatus": "WITHHELD_SOURCE_INCOMPLETE",
+  "withholdingReason": "Smetanan ja kapristen polyolitietoa puuttuu. Täytteen loppupainoa ei mitattu.",
+  "carbohydrateOutput": "AVAILABLE_EXCLUDING_FIBRE",
+  "ingredients": [
+    {
+      "amount": 240,
+      "unit": "g",
+      "item": "kypsä kylmä naudan paahtopaisti",
+      "record": {
+        "id": "fineli-7152",
+        "name": "NAUDANPAISTI, UUNISSA",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/7152",
+        "retrievedAt": "2026-11-15",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "naudanpaisti, uunissa",
+        "basis": "per100g-prepared",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 0.0,
+          "fibre": 0.0,
+          "polyols": 0.0,
+          "protein": 30.63,
+          "fat": 4.074
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Reported sugar alcohol value in the pinned Fineli Release 20 reference."
+      },
+      "state": "naudanpaisti, uunissa",
+      "matchEvidence": "Reference NAUDANPAISTI, UUNISSA used for kypsä kylmä naudan paahtopaisti; generic composition, brand or cut may differ.",
+      "edibleFraction": 1,
+      "retainedFraction": 1,
+      "edibleEvidence": "Edible charged ingredient input excluding inedible trim.",
+      "retentionEvidence": "Charged-mass accounting. Actual cooking losses, drained weight if applicable and retention are unmeasured."
+    },
+    {
+      "amount": 200,
+      "unit": "g",
+      "item": "ruisvuokaleipä",
+      "record": {
+        "id": "fineli-31824",
+        "name": "RUISLEIPÄ, OULULAINEN JÄLKIUUNIVUOKA, FAZER, TÄYSJYVÄRUISJAUHO, -LESE",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/31824",
+        "retrievedAt": "2026-11-15",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "ruisleipä, oululainen jälkiuunivuoka, fazer, täysjyväruisjauho, -lese",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 39.455,
+          "fibre": 9.807,
+          "polyols": 0.0,
+          "protein": 7.32,
+          "fat": 1.555
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Reported sugar alcohol value in the pinned Fineli Release 20 reference."
+      },
+      "state": "ruisleipä, oululainen jälkiuunivuoka, fazer, täysjyväruisjauho, -lese",
+      "matchEvidence": "Reference RUISLEIPÄ, OULULAINEN JÄLKIUUNIVUOKA, FAZER, TÄYSJYVÄRUISJAUHO, -LESE used for ruisvuokaleipä; generic composition, brand or cut may differ.",
+      "edibleFraction": 1,
+      "retainedFraction": 1,
+      "edibleEvidence": "Edible charged ingredient input excluding inedible trim.",
+      "retentionEvidence": "Charged-mass accounting. Actual cooking losses, drained weight if applicable and retention are unmeasured."
+    },
+    {
+      "amount": 80,
+      "unit": "g",
+      "item": "smetana",
+      "record": {
+        "id": "fineli-630",
+        "name": "SMETANA, RASVAA N. 40 %",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/630",
+        "retrievedAt": "2026-11-15",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "smetana, rasvaa n. 40 %",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 2.2,
+          "fibre": 0.0,
+          "polyols": null,
+          "protein": 2.13,
+          "fat": 42.0
+        },
+        "polyolsSourceVerified": false
+      },
+      "state": "smetana, rasvaa n. 40 %",
+      "matchEvidence": "Reference SMETANA, RASVAA N. 40 % used for smetana; generic composition, brand or cut may differ.",
+      "edibleFraction": 1,
+      "retainedFraction": 1,
+      "edibleEvidence": "Edible charged ingredient input excluding inedible trim.",
+      "retentionEvidence": "Charged-mass accounting. Actual cooking losses, drained weight if applicable and retention are unmeasured."
+    },
+    {
+      "amount": 40,
+      "unit": "g",
+      "item": "majoneesi",
+      "record": {
+        "id": "fineli-30925",
+        "name": "MAJONEESI, RASVAA 80 %",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/30925",
+        "retrievedAt": "2026-11-15",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "majoneesi, rasvaa 80 %",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 1.029,
+          "fibre": 0.0,
+          "polyols": 0.0,
+          "protein": 1.12,
+          "fat": 81.042
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Reported sugar alcohol value in the pinned Fineli Release 20 reference."
+      },
+      "state": "majoneesi, rasvaa 80 %",
+      "matchEvidence": "Reference MAJONEESI, RASVAA 80 % used for majoneesi; generic composition, brand or cut may differ.",
+      "edibleFraction": 1,
+      "retainedFraction": 1,
+      "edibleEvidence": "Edible charged ingredient input excluding inedible trim.",
+      "retentionEvidence": "Charged-mass accounting. Actual cooking losses, drained weight if applicable and retention are unmeasured."
+    },
+    {
+      "amount": 20,
+      "unit": "g",
+      "item": "tuore piparjuuri raastettuna",
+      "record": {
+        "id": "fineli-11589",
+        "name": "PIPARJUURI",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11589",
+        "retrievedAt": "2026-11-15",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "piparjuuri",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 14.061,
+          "fibre": 7.3,
+          "polyols": 0.0,
+          "protein": 3.929,
+          "fat": 0.254
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Reported sugar alcohol value in the pinned Fineli Release 20 reference."
+      },
+      "state": "piparjuuri",
+      "matchEvidence": "Reference PIPARJUURI used for tuore piparjuuri raastettuna; generic composition, brand or cut may differ.",
+      "edibleFraction": 1,
+      "retainedFraction": 1,
+      "edibleEvidence": "Edible charged ingredient input excluding inedible trim.",
+      "retentionEvidence": "Charged-mass accounting. Actual cooking losses, drained weight if applicable and retention are unmeasured."
+    },
+    {
+      "amount": 10,
+      "unit": "g",
+      "item": "Dijon-sinappi",
+      "record": {
+        "id": "fineli-28",
+        "name": "SINAPPI",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/28",
+        "retrievedAt": "2026-11-15",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "sinappi",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 14.1,
+          "fibre": 1.7,
+          "polyols": 0.0,
+          "protein": 4.38,
+          "fat": 6.0
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Reported sugar alcohol value in the pinned Fineli Release 20 reference."
+      },
+      "state": "sinappi",
+      "matchEvidence": "Reference SINAPPI used for Dijon-sinappi; generic composition, brand or cut may differ.",
+      "edibleFraction": 1,
+      "retainedFraction": 1,
+      "edibleEvidence": "Edible charged ingredient input excluding inedible trim.",
+      "retentionEvidence": "Charged-mass accounting. Actual cooking losses, drained weight if applicable and retention are unmeasured."
+    },
+    {
+      "amount": 10,
+      "unit": "g",
+      "item": "sitruunamehu",
+      "record": {
+        "id": "fineli-11557",
+        "name": "TÄYSMEHU, SITRUUNATÄYSMEHU, LAIMENTAMATON",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11557",
+        "retrievedAt": "2026-11-15",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "täysmehu, sitruunatäysmehu, laimentamaton",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 1.6,
+          "fibre": 0.1,
+          "polyols": 0.0,
+          "protein": 0.31,
+          "fat": 0.0
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Reported sugar alcohol value in the pinned Fineli Release 20 reference."
+      },
+      "state": "täysmehu, sitruunatäysmehu, laimentamaton",
+      "matchEvidence": "Reference TÄYSMEHU, SITRUUNATÄYSMEHU, LAIMENTAMATON used for sitruunamehu; generic composition, brand or cut may differ.",
+      "edibleFraction": 1,
+      "retainedFraction": 1,
+      "edibleEvidence": "Edible charged ingredient input excluding inedible trim.",
+      "retentionEvidence": "Charged-mass accounting. Actual cooking losses, drained weight if applicable and retention are unmeasured."
+    },
+    {
+      "amount": 30,
+      "unit": "g",
+      "item": "rucola",
+      "record": {
+        "id": "fineli-34159",
+        "name": "RUKOLA, RUCOLA, SINAPPIKAALI",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/34159",
+        "retrievedAt": "2026-11-15",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "rukola, rucola, sinappikaali",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 0.452,
+          "fibre": 1.6,
+          "polyols": 0.0,
+          "protein": 2.607,
+          "fat": 0.303
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Reported sugar alcohol value in the pinned Fineli Release 20 reference."
+      },
+      "state": "rukola, rucola, sinappikaali",
+      "matchEvidence": "Reference RUKOLA, RUCOLA, SINAPPIKAALI used for rucola; generic composition, brand or cut may differ.",
+      "edibleFraction": 1,
+      "retainedFraction": 1,
+      "edibleEvidence": "Edible charged ingredient input excluding inedible trim.",
+      "retentionEvidence": "Charged-mass accounting. Actual cooking losses, drained weight if applicable and retention are unmeasured."
+    },
+    {
+      "amount": 80,
+      "unit": "g",
+      "item": "suolakurkku",
+      "record": {
+        "id": "fineli-348",
+        "name": "MAUSTEKURKKU, HERKKUKURKKU, SOKERISUOLATTU",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/348",
+        "retrievedAt": "2026-11-15",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "maustekurkku, herkkukurkku, sokerisuolattu",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 3.0,
+          "fibre": 1.8,
+          "polyols": 0.0,
+          "protein": 0.69,
+          "fat": 0.1
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Reported sugar alcohol value in the pinned Fineli Release 20 reference."
+      },
+      "state": "maustekurkku, herkkukurkku, sokerisuolattu",
+      "matchEvidence": "Reference MAUSTEKURKKU, HERKKUKURKKU, SOKERISUOLATTU used for suolakurkku; generic composition, brand or cut may differ.",
+      "edibleFraction": 1,
+      "retainedFraction": 1,
+      "edibleEvidence": "Edible charged ingredient input excluding inedible trim.",
+      "retentionEvidence": "Charged-mass accounting. Actual cooking losses, drained weight if applicable and retention are unmeasured."
+    },
+    {
+      "amount": 40,
+      "unit": "g",
+      "item": "punasipuli",
+      "record": {
+        "id": "fineli-34234",
+        "name": "SIPULI, PUNASIPULI",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/34234",
+        "retrievedAt": "2026-11-15",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "sipuli, punasipuli",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 5.447,
+          "fibre": 1.2,
+          "polyols": 0.0,
+          "protein": 1.506,
+          "fat": 0.114
+        },
+        "polyolsSourceVerified": true,
+        "polyolsEvidence": "Reported sugar alcohol value in the pinned Fineli Release 20 reference."
+      },
+      "state": "sipuli, punasipuli",
+      "matchEvidence": "Reference SIPULI, PUNASIPULI used for punasipuli; generic composition, brand or cut may differ.",
+      "edibleFraction": 1,
+      "retainedFraction": 1,
+      "edibleEvidence": "Edible charged ingredient input excluding inedible trim.",
+      "retentionEvidence": "Charged-mass accounting. Actual cooking losses, drained weight if applicable and retention are unmeasured."
+    },
+    {
+      "amount": 15,
+      "unit": "g",
+      "item": "kaprikset",
+      "record": {
+        "id": "usda-172238",
+        "name": "Capers, canned",
+        "sourceUrl": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/172238/nutrients",
+        "retrievedAt": "2026-11-15",
+        "licence": "USDA FoodData Central SR Legacy, public domain",
+        "state": "drained canned capers",
+        "basis": "per100g-edible",
+        "carbohydrateDefinition": "US_TOTAL_INCLUDING_FIBRE",
+        "per100g": {
+          "carbohydrate": 4.89,
+          "fibre": 3.2,
+          "polyols": null,
+          "protein": 2.36,
+          "fat": 0.86
+        },
+        "polyolsSourceVerified": false
+      },
+      "state": "drained canned capers",
+      "matchEvidence": "Reference Capers, canned used for kaprikset; generic composition, brand or cut may differ.",
+      "edibleFraction": 1,
+      "retainedFraction": 1,
+      "edibleEvidence": "Edible charged ingredient input excluding inedible trim.",
+      "retentionEvidence": "Charged-mass accounting. Actual cooking losses, drained weight if applicable and retention are unmeasured."
+    },
+    {
+      "amount": 1,
+      "unit": "g",
+      "item": "mustapippuri",
+      "record": {
+        "id": "fineli-11177",
+        "name": "MUSTAPIPPURI",
+        "sourceUrl": "https://fineli.fi/fineli/fi/elintarvikkeet/11177",
+        "retrievedAt": "2026-11-15",
+        "licence": "THL Fineli Release 20, CC BY 4.0",
+        "state": "mustapippuri",
+        "basis": "per100g-as-sold",
+        "carbohydrateDefinition": "EU_AVAILABLE",
+        "per100g": {
+          "carbohydrate": 38.31,
+          "fibre": null,
+          "polyols": null,
+          "protein": 10.9,
+          "fat": 3.3
+        },
+        "polyolsSourceVerified": false
+      },
+      "state": "mustapippuri",
+      "matchEvidence": "Reference MUSTAPIPPURI used for mustapippuri; generic composition, brand or cut may differ.",
+      "edibleFraction": 1,
+      "retainedFraction": 1,
+      "edibleEvidence": "Edible charged ingredient input excluding inedible trim.",
+      "retentionEvidence": "Charged-mass accounting. Actual cooking losses, drained weight if applicable and retention are unmeasured."
+    }
+  ]
+}
