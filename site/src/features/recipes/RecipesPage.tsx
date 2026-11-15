@@ -208,7 +208,7 @@ export function RecipeLibraryPage() {
   return <section className="page-section recipe-index"><div className="container recipe-index__container">
     <div className="page-intro"><h1>{text.title}</h1><p>{text.description}</p></div>
     <p><Link to={recipeIndexPath(locale)}>{recipeUi[locale].backToRecipes}</Link></p>
-    <RecipeGrid recipes={recipes} locale={locale} />
+    <RecipeGrid recipes={recipes} locale={locale} library />
     <RecipePagination locale={locale} page={page} totalPages={totalPages} previous={previousPath} next={nextPath} />
   </div></section>;
 }
@@ -229,19 +229,21 @@ function RecipePagination({ locale, page, totalPages, previous, next }: {
   </nav>;
 }
 
-function RecipeGrid({ recipes, locale, headingLevel, homePicks }: {
+function RecipeGrid({ recipes, locale, headingLevel, homePicks, library }: {
   recipes: (RecipeSummary | SearchRecipe)[];
   locale: RecipeLocale;
   headingLevel?: 2 | 3;
   homePicks?: boolean;
+  library?: boolean;
 }) {
   return <div className="recipe-card-grid">{recipes.map((recipe, index) =>
-    <RecipeCard key={recipe.recipeId + '-' + locale} recipe={recipe} index={index} locale={locale} headingLevel={headingLevel} avifSrc={homePicks ? recipe.image?.homeAvifSrc : undefined} />
+    <RecipeCard key={recipe.recipeId + '-' + locale} recipe={recipe} index={index} locale={locale} headingLevel={headingLevel}
+      eagerAvif={library && index === 0} avifSrc={homePicks || (library && index === 0) ? recipe.image?.homeAvifSrc : undefined} />
   )}</div>;
 }
 
-function RecipeCard({ recipe, index, locale, headingLevel = 2, avifSrc }: {
-  recipe: RecipeSummary | SearchRecipe; index: number; locale: RecipeLocale; headingLevel?: 2 | 3; avifSrc?: string;
+function RecipeCard({ recipe, index, locale, headingLevel = 2, avifSrc, eagerAvif }: {
+  recipe: RecipeSummary | SearchRecipe; index: number; locale: RecipeLocale; headingLevel?: 2 | 3; avifSrc?: string; eagerAvif?: boolean;
 }) {
   const [imageFailed, setImageFailed] = useState(false);
   const [avifFailed, setAvifFailed] = useState(false);
@@ -251,7 +253,7 @@ function RecipeCard({ recipe, index, locale, headingLevel = 2, avifSrc }: {
   const meta = [recipe.timeTotalMin ? `${recipe.timeTotalMin} ${labels.minutes}` : null, recipe.difficulty].filter(Boolean).join(" · ");
   const webpFallback = recipe.image && !imageFailed ? <img className="recipe-card__image"
     src={recipe.image.src} srcSet={recipe.image.srcSet ?? undefined} sizes={recipeCardSizes} alt={recipe.image.alt}
-    width={recipe.image.width} height={recipe.image.height} loading={index === 0 && !avifSrc ? "eager" : "lazy"}
+    width={recipe.image.width} height={recipe.image.height} loading={index === 0 && (!avifSrc || eagerAvif) ? "eager" : "lazy"}
     fetchPriority={index === 0 ? "high" : undefined} decoding="async"
     ref={avifSrc && !avifFailed ? image => {
       // An AVIF can fail before React attaches the error listener.
