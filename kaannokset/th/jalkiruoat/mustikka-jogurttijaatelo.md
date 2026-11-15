@@ -59,7 +59,7 @@ source_recipe: reseptit/jalkiruoat/mustikka-jogurttijaatelo.md
 ## หมายเหตุ
 
 - มีส่วนผสมของนม
-- ตรวจสอบที่มาของผลเบอร์รี่แช่แข็ง หากใช้บลูเบอร์รี่แช่แข็งจากต่างประเทศ ให้ต้มเป็นเวลา 2 นาทีและทำให้ส่วนผสมเย็นลงก่อนที่จะบดเป็นน้ำซุปข้น [The Finnish Food Agency's instructions for foreign frozen berries](https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/turvallisen-kayton-ohjeet/ulkomaiset-pakastemarjat/)
+- ตรวจสอบที่มาของผลเบอร์รี่แช่แข็ง หากใช้บลูเบอร์รี่แช่แข็งจากต่างประเทศ ให้ต้มเป็นเวลา 2 นาทีและทำให้ส่วนผสมเย็นลงก่อนที่จะบดเป็นน้ำซุปข้น [คำแนะนำของหน่วยงานอาหารฟินแลนด์สำหรับผลเบอร์รีแช่แข็งนำเข้า](https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/turvallisen-kayton-ohjeet/ulkomaiset-pakastemarjat/)
 - The reel contains one US cup of each main ingredient. Yogurt is rounded to 2.4 deciliters and frozen blueberries to about 150 grams. ปริมาณการเสิร์ฟและเวลาแช่แข็งเป็นเพียงการประมาณการ [รีลเคล็ดลับอัจฉริยะ](https://www.facebook.com/reel/1622846009374391)
 - รูปภาพนี้เป็นภาพประกอบปัญญาประดิษฐ์ที่สร้างแบบจำลองจากภาพหน้าจอ
 - จานตื้นยังใช้สำหรับไอศกรีมโยเกิร์ตบลูเบอร์รี่ที่สอดคล้องกัน [คู่มือการเปรียบเทียบ Giada De Laurentiis](https://www.foodnetwork.com/recipes/giada-de-laurentiis/blueberry-frozen-yogurt-2102384)

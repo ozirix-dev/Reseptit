@@ -57,7 +57,7 @@ source_recipe: reseptit/paaruoat/naudan-paahtopaisti-uunissa.md
 
 ## คำอธิบาย
 
-ผัดเนื้อย่างทั้งตัวในกระทะแล้วปรุงในเตาอบปานกลางโดยใช้เกจวัดอาหาร ผ่าครึ่งแล้วเสิร์ฟเนื้อย่างแบบอุ่นหรือเย็นสำหรับเป็นก้อน
+จี่เนื้อวัวทั้งชิ้นในกระทะให้ผิวเป็นสีน้ำตาล แล้วอบด้วยไฟอ่อนโดยใช้เทอร์โมมิเตอร์วัดอุณหภูมิเนื้อ หั่นขวางเส้นใยแล้วเสิร์ฟอุ่น หรือพักให้เย็นเพื่อใช้ทำแซนด์วิช
 
 ## วิธีทำ
 
@@ -70,7 +70,7 @@ source_recipe: reseptit/paaruoat/naudan-paahtopaisti-uunissa.md
 ## หมายเหตุ
 
 - มีส่วนผสมของนม ใช้เนื้อย่างทั้งตัว ล้างมือ อุปกรณ์ และเขียงที่สัมผัสเนื้อดิบก่อนจับต้องเนื้อปรุงสุก [คำแนะนำในการจัดการเนื้อสัตว์ของสำนักงานอาหาร](https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/kasittely-ja-sailyttaminen/hygienia-kotikeittiossa/liha/)
-- เป้าหมายมาตรวัดที่ 63 °C สำหรับเนื้อย่างและส่วนที่เหลืออย่างน้อยสามนาทีนั้นขึ้นอยู่กับหลักเกณฑ์ของ FoodSafety.gov หากแนะนำให้รับประทานเนื้อสัตว์ ให้เตรียมส่วนที่ปรุงสุกให้ทั่ว [อุณหภูมิในการปรุงอาหาร](https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures)
+- อุณหภูมิแกนกลาง 63 °C และการพักเนื้ออย่างน้อยสามนาทีอ้างอิงคำแนะนำของ FoodSafety.gov หากผู้รับประทานควรกินเนื้อที่สุกทั่ว ให้ปรุงส่วนของเขาให้สุกทั่วทั้งชิ้น [อุณหภูมิในการปรุงอาหาร](https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures)
 - อุณหภูมิเตาอบ ความเกรียม และการหั่นจะขึ้นอยู่กับคำแนะนำในการคั่วที่เกี่ยวข้อง [สัญญาณหัวใจ](https://ammattilaiset.sydanmerkki.fi/resepti/paahtopaisti) · [แชมป์](https://www.valio.fi/reseptit/paahtopaisti-ja-piparjuurismetana/)
 - คุณสามารถทำเนื้อย่างเย็นได้ [ขนมปังข้าวไรย์มะรุม](https://ozirix-dev.github.io/Reseptit/paahtopaistileipa-piparjuurikastikkeella/) หรือ [เติมขนมปังรำข้าวโอ๊ต](https://ozirix-dev.github.io/Reseptit/paahtopaistileivat-kauralesesampyloilla/).
 - ภาพนี้เป็นภาพการรับรู้ที่สร้างขึ้นด้วยปัญญาประดิษฐ์

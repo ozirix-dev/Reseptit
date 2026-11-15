@@ -53,11 +53,11 @@ source_recipe: reseptit/jalkiruoat/omenavaahtokarkit.md
 2. แช่ใบเจลาตินในน้ำเย็นตามคำแนะนำบนบรรจุภัณฑ์ โดยปกติจะใช้เวลาประมาณ 5 นาที วางถาดอบขนาดเล็กประมาณ 15 x 15 ซม. ปูด้วยกระดาษรองอบ
 3. บดแอปเปิ้ลจนเนียน Squeeze the excess water from the bay leaves and mix them into the hot puree, taken off the stove, until they dissolve.
 4. โอนส่วนผสมลงในชามขนาดใหญ่ Beat with an electric mixer for about 15–20 minutes until the mixture has lightened, thickened and increased in volume. กระจายลงกระทะทันที
-5. Cover and let set in the fridge for at least 3 hours. Remove the sheet from the pan and cut it into 16 pieces.
+5. ปิดฝาแล้วแช่ตู้เย็นอย่างน้อย 3 ชั่วโมงจนเซตตัว ยกขนมออกจากพิมพ์แล้วตัดเป็น 16 ชิ้น
 
 ## หมายเหตุ
 
-- Keep the pieces in the refrigerator in a closed container and use within a couple of days.
+- เก็บขนมในภาชนะปิดในตู้เย็นและรับประทานภายในสองวัน
 - รอกบอกวิธีการผลิต The amounts and freezing time have been agreed on from Fooby's written instructions. [Apple Marshmallows ของ Phoebe](https://fooby.ch/en/recipes/29148/apple-marshmallows)
 - [Reel of the Health คือบัญชีสันติภาพ](https://www.facebook.com/reel/1538173824787539)
 - ภาพนี้เป็นภาพการรับรู้ที่สร้างขึ้นด้วยปัญญาประดิษฐ์

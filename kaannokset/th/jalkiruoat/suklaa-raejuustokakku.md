@@ -20,7 +20,7 @@ tags:
 - pohjaton
 image:
   src: jalkiruoat/suklaa-raejuustokakku.webp
-  alt: Bottomless brown chocolate cottage cheese cake and a cut piece on a light plate
+  alt: เค้กช็อกโกแลตคอตเทจชีสแบบไม่มีฐานและเค้กหนึ่งชิ้นบนจานสีอ่อน
   width: 1600
   height: 900
 ingredients:
