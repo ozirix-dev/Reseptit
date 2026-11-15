@@ -1,0 +1,34 @@
+name: Recipavo review pilot costs
+
+'on':
+  schedule:
+    - cron: '23 5 * * *'
+  workflow_dispatch:
+
+permissions:
+  actions: read
+  contents: read
+
+jobs:
+  report:
+    if: github.repository == 'ozirix-dev/Reseptit' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Install the pinned gh-aw reporting CLI
+        shell: bash
+        run: |
+          set -euo pipefail
+          bin="$RUNNER_TEMP/gh-aw"
+          curl --fail --silent --show-error --location \
+            https://github.com/github/gh-aw/releases/download/v1.2.2/linux-amd64 --output "$bin"
+          echo "c2378d85466d29cdbdfebd0e513557b5cbec18d34f44e7cc00c2fa323687a153  $bin" | sha256sum --check
+          chmod +x "$bin"
+      - name: Summarize the last seven Helsinki calendar days
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_AW_BIN: ${{ runner.temp }}/gh-aw
+        run: python3 .github/scripts/report-recipavo-review-costs.py
