@@ -12,7 +12,7 @@ test("queue identifies missing and draft languages and keeps quarantines out of 
   const draftSource = {...source, data:{...source.data, recipe_id:"draft-queue-fixture", translation_status:{en:"draft" as const}}};
   const queue = translationQueue({...review, audit:{...review.audit, publishedSources:[...review.audit.publishedSources,draftSource]}}, [
     {recipe_id:"draft-queue-fixture",locale:"en",path:"kaannokset/en/jalkiruoat/draft-queue-fixture.md"},
-  ], 2);
+  ], review.audit.publishedSources.length + 1);
   assert.equal(queue.published.fi, review.audit.publishedSources.filter(source => !queue.quarantined_recipe_ids.some(id => id === source.data.recipe_id)).length + 1);
   assert.ok(queue.queue.some(entry => entry.recipe_id === "draft-queue-fixture" && entry.locale === "en" && entry.reasons.includes("draft")));
   assert.ok(queue.queue.some(entry => entry.recipe_id === "draft-queue-fixture" && entry.locale === "sv" && entry.reasons.includes("missing")));
