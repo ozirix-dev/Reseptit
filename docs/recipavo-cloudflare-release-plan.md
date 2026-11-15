@@ -1,6 +1,12 @@
 # Recipavo – Cloudflare-tuotanto ja GitHub Pages -staging (V2)
 
-**Tila:** suunnitelma / Draft PR, EI julkaisuvaltuutus
+**Tila:** historiallinen julkaisu- ja siirtosuunnitelma (4.11.2026)
+
+Recipavon tuotanto toimii nykyisin [Cloudflare Pagesissa](https://www.recipavo.com/).
+Katso nykyinen [julkaisuohje](julkaisuarkkitehtuuri_github_pages.md) ja
+[SEO-seuranta](seo-monitoring.md). Alla olevat lähtötilan havainnot, Coming Soon
+ja cutover-vaiheet kuvaavat siirtoa edeltänyttä tilannetta.
+
 **Päivitetty:** 4.11.2026
 **Päälähderepo:** [ozirix-dev/Reseptit](https://github.com/ozirix-dev/Reseptit), työpolku `D:\Projects\Products\Reseptit`
 **Pohja:** main `de83657c52e0f018b10c3d5e7d26cdf671d5c85f`
