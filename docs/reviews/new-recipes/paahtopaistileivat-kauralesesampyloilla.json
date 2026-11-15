@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "recipe_id": "paahtopaistileivat-kauralesesampyloilla",
+  "source_path": "reseptit/alkuruoat/paahtopaistileivat-kauralesesampyloilla.md",
+  "source_sha256": "85d4b538615f61aae5aa84ef003a389c6e1b18a588a518de56b1345153b38d15",
+  "decision": "approved",
+  "reviewed_by": "Codex – kirjallinen toimituksellinen katselmointi",
+  "reviewed_at": "2026-11-15",
+  "origin": {
+    "kind": "adaptation",
+    "sources": [
+      "https://www.valio.fi/reseptit/paahtopaisti-ja-piparjuurismetana/",
+      "https://www.uotilat.fi/reseptit/paahtopaisti-leikkeleeksi",
+      "https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/kasittely-ja-sailyttaminen/hygienia-kotikeittiossa/liha/",
+      "https://ozirix-dev.github.io/Reseptit/keto-kauralesesampylat/"
+    ]
+  },
+  "nutrition_evidence": "docs/nutrition/calculations/paahtopaistileivat-kauralesesampyloilla.json",
+  "checks": {
+    "duplicates": {
+      "status": "pass",
+      "notes": "Tarkistin uuden julkisen tunnisteen ja otsikon päähaarasta. Ruis- ja sämpyläversioiden pohjat ja tunnisteet ovat erilliset."
+    },
+    "ingredients": {
+      "status": "pass",
+      "notes": "Luonnoksen punnitut määrät ja kirjalliset vastineet tarkistettu. Täytteen annostus ja piparjuuren säätö on kuvattu."
+    },
+    "method": {
+      "status": "pass",
+      "notes": "Kaksi valmista kauralesesämpylää jaetaan neljäksi puolikkaaksi. Käytetään samaa kylmää täytettä kuin ruisleipäversiossa."
+    },
+    "food_safety": {
+      "status": "pass",
+      "notes": "Ruokaviraston kokolihan käsittely- ja kylmäsäilytysperiaatteet sekä FoodSafety.govin kokolihan lämpötilasuositus tarkistettiin. Allergeenit ilmoitetaan."
+    },
+    "servings_and_time": {
+      "status": "pass",
+      "notes": "Aika kattaa ohjeen työvaiheet ja annosmäärä on 4. Leipien aika koskee kokoamista valmiista raaka-aineista."
+    },
+    "nutrition": {
+      "status": "pass",
+      "notes": "Smetanan ja kapristen polyolitietoa puuttuu. Täytteen loppupainoa ei mitattu. Kypsän sämpylän grammapainoa ei mitattu. Ravintoarvoja ei näytetä sivulla."
+    },
+    "glycemic": {
+      "status": "unavailable",
+      "notes": "Numeerista GK:ta ei anneta ilman valmistetun reseptin arvioon soveltuvaa lähde- ja annosdataa."
+    }
+  },
+  "supplementary_evidence": {
+    "food_safety": [
+      "https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/kasittely-ja-sailyttaminen/hygienia-kotikeittiossa/liha/",
+      "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures",
+      "https://www.ruokavirasto.fi/elintarvikkeet/ohjeita-kuluttajille/kasittely-ja-sailyttaminen/hygienia-kotikeittiossa/"
+    ],
+    "image_path": "kuvat/alkuruoat/paahtopaistileivat-kauralesesampyloilla.webp",
+    "image_sha256": "550c805befcdf8614b31c95ea57aa43aa04f4cb5c4aaea7b96725ff71d609ccc",
+    "image_review": "Aiempi havainnekuva näyttää oikean paistin tai leipäpohjan ja kirjallisen tarjoilun.",
+    "physical_cook_test": false
+  }
+}
